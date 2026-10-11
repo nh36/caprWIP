@@ -10,15 +10,211 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6182 evidence
-records,1395 actual consultations,6465 positions,485 comparisons and1061
+393 applicability screens per source. The database contains6246 evidence
+records,1395 actual consultations,6533 positions,487 comparisons and1089
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:345 core rows are bounded and48 unreviewed.
+explanation remain ongoing:353 core rows are bounded and40 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
-## Forty-third alignment: throw through way
+## Forty-fourth alignment: weapon through while
+
+Tranche43 is released as7109ebd2. This annotation-only increment reconciles
+all56 inherited identities for rows2278-2285;41 native occurrences and23
+scoped arguments add64 evidence records. Four focused positions reuse
+arguments, and28 rationales comprise27 position supports and one
+source-explicit explanation of a focused divergence. The124 positions link
+120 distinct records, not124 independently consulted sources. Sixty exact
+SOURCE amendments cover56 cells, three explicit dates and one argument.
+All1395 consultation identities survive; the sole status upgrade is the
+existing Fulk/weapon review, because its passage actually quotes a
+reconstructed plural [@Fulk2018, p.93].
+
+Native paragraphs, hashes and Unicode spans preserve the text holding
+beside earlier certified quotations. They do not silently restore missing
+quantity, correct extracted consonants, certify new images or independently
+consult originals reported by the held authors. Selected corpus fields,
+input stages, contexts, laws and scientific baselines remain unchanged.
+Completion of these eight bounded annotations is not resolution of their
+genealogies, completion of all393 alignments or permission to release44.
+
+### Weapon: the same n-stem proposal, incompatible warrants
+
+Kroonen accepts Lühr's n-stem account: nominative *wēbō*, genitive
+*wēp(p)az*, followed by thematicization. His citation explicitly points to
+Lühr's pp.253-254; the present evidence is Kroonen's endorsement of that
+account, not a newly verified reading of Lühr. Gothic establishes that the
+p-stem was already Proto-Germanic, exceptionally early in the proposed
+thematicization history. Nordic kn is explained as a development of pn,
+not a third independently inherited weapon stem. The iterative
+*wab/ppōn-* 'wave' supplies the proposed derivational family; the probable
+'brandish' semantic bridge retains its qualification
+[@Kroonen2013, pp.576-578, especially p.577].
+
+Ringe explicitly rejects Lühr's weapon proposal. The required n-stem is
+unattested, its semantics are implausible, and the bn/mn outcomes are better
+treated as rare dialectal cluster developments. Those are stated objections
+to the same proposal that Kroonen accepts. The focused comparison can
+therefore have a source-explicit explanation without pretending that Ringe
+names or directly rebuts Kroonen. Ringe's broader critique of Kluge's law
+also invokes counterexamples, inadequate sampling and the lack of a
+preponderance of n-stems among relevant words; his sound-symbolism
+alternative is an attributed account, not an adopted CAPR law
+[@Ringe2017, pp.137-140].
+
+This is more informative than a b/p string comparison: agreement on the
+weapon etymon coexists with disagreement about which paradigmatic and
+semantic premises can explain its consonants. The focused source-explicit
+cause does not recover every selected ending, establish a complete
+ancestral paradigm or automatically explain the whole-row case. Orel's
+Tocharian connection is endorsed, whereas the Sanskrit slay proposal is
+reported bibliographically; neither becomes an additional independent vote
+on the n-stem reconstruction [@Orel2003, pp.460-462].
+
+Fulk's actual *wēpnu* is a reconstructed plural, with Mercian *wēpen*
+'weapons'. It is genuine lexical evidence even though its passage does not
+explicitly date that precursor to Proto-Germanic. The formerly
+discussion-only disposition is therefore upgraded with a reversible
+one-field receipt, while the analytical date remains unknown. Originally
+monosyllabic weapon and crimes stems lose u before sonorant nuclearization;
+originally disyllabic, heavy-initial *īdelu* and *nētenu* retain u.
+Nuclearization versus epenthesis, metrical conservatism and the unproved
+Anglo-Frisian scope remain qualified. The footnote reference to Fulk2010b
+is a report in this holding, not another completed original consultation
+[@Fulk2018, pp.92-96, especially p.93 and pp.95-96 nn.7-8,12].
+
+Ringe-Taylor's singular and plural weapon citations on two different pages
+both fall under an explicit PGmc label. The exact two SOURCE date repairs
+retain separate occurrences rather than infer a plural date from spelling.
+Later bare and epenthetic West Saxon forms and Mercian *wépen* belong to a
+different cell/dialect question; they cannot silently replace Fulk's plural
+or settle the date of every intermediate
+[@RingeTaylor2014, pp.9-11,148-150,330-332].
+
+### Weasel: qualified ancestry is not uncertain word identity
+
+Orel's optional-u feminine weasel formation is retained beside the native
+text's missing quantity. The *wesalaz* 'destitute, poor' adjective is a
+proposed, more probable semantic base, not an alternative weasel noun with
+an interchangeable ending. The Greek connection is difficult or possible;
+vision, merry and polecat proposals in the bibliography remain reports,
+and the criticized Slavic reconstruction remains criticized. Neither
+qualified ancestry nor failed exact-cell correspondence dissolves the
+identity of the cited weasel word [@Orel2003, pp.458-460].
+
+Kroonen's bounded no-form disposition remains a recorded search result,
+not evidence that he rejected Orel's etymology. Dictionary-only scope is
+legitimate: no three fictitious grammar negatives are generated. The
+optional segment, exact selected stress and derivational pedigree remain
+named limits rather than a reason to normalize away the question.
+
+### Weather: cognate allocation and a conditional ancestral paradigm
+
+Kroonen's voiceless/voiced dental stems remain distinct, with native
+extracted p beside the previously certified þ. His possible mobile neuter
+has pre-Germanic nominative *uétr-om* and plural *uetr-éh₂*: these are
+ancestral cells of the same etymon, not unrelated comparisons. Under this
+account the usual Slavic clear-sky connection fails. Conversely, derivation
+from the ordinary blow root with a tro-suffix predicts rejected long
+*wēpra-*, because laryngeals are not lost before CR under the stated
+phonological premises. Retaining the blow-root connection would require a
+different extended formation, with its alternate dental interpretation
+[@Kroonen2013, pp.582-585, especially pp.583-584].
+
+Orel identifies weather with the Slavic good-weather family, while his wind
+alternative is bibliographical. The focused cognate-warrant comparison is
+substantive, but its cause remains unestablished: Kroonen's objections do
+not name Orel, and the two entries alone do not demonstrate the historical
+reason for Orel's allocation. This preserves a real disagreement without
+manufacturing either direct rebuttal or whole-paradigm resolution
+[@Orel2003, pp.451-452; @Kroonen2013, pp.583-584].
+
+### Weave: family, ancestral root and actual dialectal infinitives
+
+Kroonen's weave root and nasal/ablaut comparisons are not the same unit
+as the web collective ja-noun or wrap causative. The necessary web/wrap
+cross-references are read and retained as family evidence rather than
+assembled into a quoted weave infinitive. Ringe's possible PIE laryngeal
+does not change his PGmc *webaną*. Orel's external comparisons likewise
+do not supply every selected accented ending
+[@Kroonen2013, pp.563-564,576; @Orel2003, pp.450-452;
+@Ringe2017, pp.120-122].
+
+Ringe-Taylor's reconstructed OE *weban* is not an attestation. Mercian
+*weofan* and West Saxon *wefan* are the same infinitive in different dialects,
+not different inflectional cells. Non-West-Saxon back umlaut can be triggered
+by a/u across nonvelars; the West Saxon e-development is restricted to
+following u across l/r/labial. A cited dialectal conditioner is recorded
+as the author's history, without changing CAPR's executable domain
+[@RingeTaylor2014, pp.324-326].
+
+### West and wether: formation and commitment remain independent axes
+
+Kroonen's westward tero-family is not the exact from-West anē formation.
+His Sanskrit comparison has secondary accent; the evening connection is
+semantically attractive but its phonology remains uncertain. Orel supplies
+*westanē̆*, with native *westaně* separately retained, and OE *westan* rather
+than selected *westene*. The source-labelled neuter base and its adverbial
+reflex are not silently harmonized. Different directional formations cannot
+be equated by erasing their endings
+[@Kroonen2013, pp.582-583; @Orel2003, pp.458-460].
+
+Wether is lamb/yearling, not weather. Kroonen's native adv. label conflicts
+with masculine animal reflexes; the anomaly stays visible rather than
+being silently corrected in the diplomatic layer. His year derivation is
+conditional; Orel asserts the connection and preserves masculine u/a
+alternatives. A difference in degree of commitment need not become two
+mutually exclusive ancestries. Neither account establishes CAPR's selected
+i-vocalism and neuter ending or licenses a score-driven raising repair
+[@Kroonen2013, p.584; @Orel2003, pp.459-460].
+
+### Whale and while: related formations do not inherit a secure date
+
+Kroonen's masculine whale i-stem has conceivable hysterokinetic s-stem
+ancestry, with distinct nominative, genitive and accusative cells. His
+whale/catfish derivatives provide formation evidence; Schrijver's substrate
+account remains a reported alternative. The whaleskin *hwaljōn-* is
+explicitly quasi-PGmc, so its related-family status does not provide a
+secure PGmc date. Orel's masculine a-citation and partially Norse i-formation
+coexist with an explicitly unknown origin; the listed fish connections are
+not all endorsements [@Kroonen2013, pp.261-263, especially p.262;
+@Orel2003, pp.196-198].
+
+Ringe-Taylor's jointly labelled PNWGmc singular/plural warrants the third
+exact SOURCE date repair. The first PWGmc pair, subsequent independent
+intermediates, fronted cells and OE *hweel/hwalas* remain separate.
+Native onset and ending corruptions, including repeated-but-distinct
+tokens, are retained rather than used to manufacture one normalized chain.
+The selected PROTO's missing x relative to PROTOFORM remains a scientific
+watchlist question, not an annotation-only migration
+[@RingeTaylor2014, pp.49-51,193-195].
+
+While has rest/quiet ancestry and a related stay verb, not the whaleskin
+qualification from the neighboring dictionary entry. The native Kroonen
+header's missing quantity remains beside its certified citation; his
+l-suffixed IE precursor and *hwīlēn-* verb are distinct evidence units.
+Orel's time noun, Norse bed n-formation and derived verb likewise retain
+their separate functions [@Kroonen2013, pp.265-267;
+@Orel2003, pp.200-202].
+
+Ringe supplies the rest root, a derived noun and the zero grade in PGmc
+*hwīlō*, with compensatory lengthening. That supports a scoped quantity
+history, not CAPR's exact selected accent or a globally interchangeable
+glyph convention. The selected combined acute in PROTO and precomposed
+glyph in PROTOFORM remain untouched, independent of confidence
+[@Ringe2017, pp.96-98].
+
+### Boundary
+
+All eight core causes remain unestablished; weapon's source-explicit
+explanation belongs only to the focused n-stem question. The complete
+393-row alignment, source-backed class census, synthesis, consistency
+watchlist and specialist agenda remain unfinished. These receipts and
+bounded findings are persistent research, not a publication or approved
+choice of replacement inputs.
+
+## Forty-third alignment: throw through way (released7109ebd2)
 
 This increment follows the released forty-second checkpoint and reconciles
 all111 inherited analytical identities for rows2270-2277. Thirty-nine native

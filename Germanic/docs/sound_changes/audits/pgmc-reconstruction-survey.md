@@ -8,7 +8,140 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
-## Forty-third alignment checkpoint: throw through way
+## Forty-fourth alignment checkpoint: weapon through while
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base7109ebd2ef63ea927b409e36b3f1f5f57f01af77 on update; Tranche43 is
+committed and pushed. Authorized44 completion excludes44 release,
+45 preparation and scientific adoption. Immutable preparation pins6182
+forms,56 inherited identities and128 research hashes. Never recreate
+preparation or execute/import the persisted candidate.
+
+### Question
+
+Can the eight rows be reconciled without equating weapon's accepted
+n-stem pedigree with an explicit rejection, weasel noun with adjective
+base, weather with wether, dialectal weave infinitives with different
+inflections, west's directional formations, whale paradigms with related
+whaleskin, or while's time noun with its stay verb? The falsifiable claims
+concern source identity, endorsement, cell and actual date. A shared
+string, dictionary title or successful output cannot establish those axes.
+
+### Current state
+
+Before edits:345 bounded/48 unreviewed core rows,6182 forms,1395
+consultations,6465 positions,485 comparisons and1061 rationales.
+All eight selected input stages are pgmc. Whale retains PROTO *wálaz*
+versus PROTOFORM *xwálaz*; while retains its distinct acute encodings.
+Prior receipts and frozen packets are consulted as research history;
+no corpus, target, stage/context, FST, baseline or publication owner changes.
+
+### Diagnosis
+
+Executable firing census, new traces and counterfactuals: n/a, because
+annotation-only research adopts no input, law or order.
+All56 inherited identities survive individual reconciliation. Forty-one
+native occurrences and23 scoped processes add64 records; four focused
+positions reuse evidence. Twenty-eight rationales comprise27 supports and
+one focused divergence explanation. The124 positions link120 records.
+Exact60 SOURCE amendments comprise56 cells, three local dates and one
+argument. Candidate and receipts were validated and pre-serialized before
+single persistence; current SOURCE/receipts are now authority.
+
+Two RT weapon plurals share the explicitly dated PGmc singular/plural
+label; one whale plural shares the explicit PNWGmc label. These are local
+date repairs, not a global stage normalization
+[@RingeTaylor2014, pp.10,149,194].
+Fulk's actual reconstructed weapon plural upgrades an existing disposition
+with one reversible status receipt, while its date remains unknown
+[@Fulk2018, p.93]. No new review, target or scope identity is created.
+
+### Literature
+
+Complete relevant dictionary arguments and necessary cross-references:
+[@Kroonen2013, pp.261-263,265-267,563-564,576-578,582-585;
+@Orel2003, pp.196-198,200-202,450-452,458-462].
+Complete relevant grammar bodies, tables, footnotes and cross-references:
+[@Ringe2017, pp.96-98,120-122,137-140;
+@Fulk2018, pp.92-98;
+@RingeTaylor2014, pp.9-11,49-51,148-150,193-195,324-326,330-332].
+Provisional while leads at unrelated Orel/Kroonen pages are not presented
+as relevant arguments. Native text certification is not a new image check.
+
+Kroonen's accepted Lühr account and Ringe's explicit objections concern the
+same weapon proposal; Lühr remains a secondary report in this tranche
+[@Kroonen2013, p.577; @Ringe2017, pp.137-140].
+Fulk2010b is likewise a footnote reference, not a new original consultation
+[@Fulk2018, pp.93,95-96]. Schrijver's whale substrate account is reported,
+not adopted or independently read [@Kroonen2013, p.262].
+
+### Historical analysis
+
+Stage/scope stays individual: explicit PGmc weapon and PNWGmc whale labels,
+conditional pre-Germanic weather cells, reconstructed OE weave, and unknown
+dates where no statement warrants one. Confidence never gates or supplies
+stage. The quasi-PGmc whaleskin has a qualified formation and unknown
+analytical date; it is not the while noun
+[@RingeTaylor2014, pp.10,149,194,325; @Kroonen2013, pp.262,583-584].
+
+Historical phenomenon versus executable proxy: no new law characterization
+is adopted. Nuclearization and back-umlaut conditions are attributed
+histories, not new CAPR implementations
+[@Fulk2018, pp.92-96; @RingeTaylor2014, pp.324-326].
+Chronology edges promoted: none. No stage is inferred from an FST prefix,
+environment, chapter or successful final. Authors' paradigm and analogy
+accounts are reported without importing grammatical sound-law conditioning
+or lexical diffusion into CAPR.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+Registry-verdict: n/a, not an SC adjudication.
+Weapon's focused cause is source-explicit: Ringe states why he rejects
+the Lühr account accepted by Kroonen, not why he directly rebuts Kroonen.
+Weather's focused cause is unestablished; all eight whole-row causes remain
+unestablished [@Ringe2017, pp.139-140; @Kroonen2013, pp.577,583-584;
+@Orel2003, pp.451-452]. Source-explicit criticism does not select the
+preferred full genealogy or authorize scientific adoption.
+
+### Propagation
+
+SOURCE forms, analyses, comparisons, rationales and actual review
+supplements persist with three exact receipt tables. Substantial printed-page
+commentary and README checkpoint explain the distinctions. Focused
+regressions cover individual identities, stage/confidence, native spans,
+status-owner reversal, focused versus whole-row explanations and read-only
+query shapes. Canonical regeneration is exclusively
+`python3 Germanic/tools/adjudicate.py --refresh`.
+Independent verification reads frozen before-state and current SOURCE
+without executing/importing any persisted candidate; all prior receipts
+and46 ORIGINAL scientific hashes remain protected.
+
+All497 focused tests pass. Canonical refresh and independent artifact
+freshness report CONTROL PLANE CLEAN. Bibliography, section locators,
+all51 new-prose page references, nine headings and whitespace pass.
+Post-refresh verification preserves6182 inherited forms except60 exact
+fields,6409 outside positions,477 unaffected comparisons,1061 prior
+rationales,1372 outside consultations,121 untouched research hashes and46
+ORIGINAL science hashes. All41 native paragraph/hash/spans resolve.
+Deterministic queries reproduce353/40 and focused versus core causes;
+alignment refuses40 separately from the unchanged RT conventions gap.
+
+### Residue
+
+Current totals6246 forms,1395 consultations,6533 positions,487 comparisons
+and1089 rationales;353 bounded/40 unreviewed. Dictionary dispositions remain786
+with2330 records. Unresolved selected endings, stress, exact ancestry and
+formation premises are explicit row-local limits, not fabricated negatives.
+The full393-row alignment, source-backed class census, synthesis/watchlist
+and specialist agenda remain unfinished. The separate RT conventions gap
+still blocks fully verified reading. No44 release,45 start, input migration,
+new Foma assay, full Germanic suite or PDF is included; unrelated local
+files remain untouched.
+
+## Forty-third alignment checkpoint: throw through way (released7109ebd2)
 
 ### Identity
 

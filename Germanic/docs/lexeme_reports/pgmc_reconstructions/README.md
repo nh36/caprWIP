@@ -6,7 +6,55 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
-## Forty-third alignment checkpoint
+## Forty-fourth alignment checkpoint
+
+Tranche43 is committed and pushed as7109ebd2. Rows2278-2285 (weapon,
+weasel, weather, weave, west, wether, whale and while) are now individually
+reconciled:56 inherited identities,41 native occurrences,23 scoped processes
+and four reused focused positions. The28 rationales comprise27 position
+supports and one focused source-explicit divergence explanation.
+Sixty exact SOURCE amendments cover56 cells, three dates and one argument.
+One reversible Fulk/weapon status upgrade records its actual undated
+reconstructed plural, not a new consultation or selected singular
+[@Fulk2018, pp.92-96, especially p.93].
+
+Kroonen accepts Lühr's weapon n-stem account; Ringe explicitly rejects that
+same proposal for its unattested paradigm and implausible semantics.
+The focused cause is source-explicit, not a direct named rebuttal of Kroonen
+or a settled weapon genealogy [@Kroonen2013, p.577; @Ringe2017, pp.137-140].
+Weather's mobile-neuter and clear-sky cognate warrants are substantive but
+unexplained [@Kroonen2013, pp.583-584; @Orel2003, pp.451-452].
+All eight whole-row causes remain unestablished.
+
+Weasel's adjective base is not another noun cell; weave's Mercian/WS
+infinitives are dialectal, not distinct inflections. West's tero and from-West
+formations remain distinct; wether's conditional versus asserted year
+derivation does not resolve selected vocalism. Whale's quasi-PGmc whaleskin
+is not while, and while's rest root, noun and stay verb remain separate
+[@Orel2003, pp.458-460; @RingeTaylor2014, pp.324-326;
+@Kroonen2013, pp.262,266-267,582-584; @Ringe2017, pp.96-98].
+
+Totals6246 forms,1395 consultations,6533 positions,487 comparisons and1089
+rationales;353 bounded/40 unreviewed core rows. The124 tranche positions
+link120 distinct records. All786 dictionary dispositions survive with2330
+records. See the substantial commentary, full-nine-heading survey audit and
+three `reading_accountability/alignment-2278-2285-*.tsv` receipts.
+Native paragraphs/hashes/Unicode spans preserve text without new image
+certification. All46 ORIGINAL scientific protections, outside research
+and prior receipts remain unchanged. Tranche44 remains uncommitted;
+no44 release,45 preparation, scientific adoption or PDF is included.
+Full393-row alignment, class census and explanatory closeout remain open.
+
+All497 focused survey/analysis tests pass. Canonical refresh and independent
+freshness checks are clean; bibliography, locators,51 new-prose page citations,
+all nine audit headings and whitespace pass. Independent post-refresh
+verification preserves6182 old forms except60 exact fields,6409 outside
+positions,477 unaffected comparisons,1061 old rationales,1372 outside
+consultations,121 untouched research hashes and46 ORIGINAL science hashes.
+All41 native spans resolve. Alignment refuses40 separately from the
+unchanged RT conventions gap.
+
+## Forty-third alignment checkpoint (released7109ebd2)
 
 Rows2270-2277 (throw, wart, wash, wasp, water, wax noun, grow and way)
 are individually reconciled:111 inherited identities,39 native occurrences,
