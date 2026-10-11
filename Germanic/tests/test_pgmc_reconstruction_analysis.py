@@ -623,7 +623,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t313\nunreviewed\t80\n")
+        """), "alignment_status\trows\nbounded_limit\t321\nunreviewed\t72\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -817,7 +817,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t313\nunreviewed\t80\n")
+        """), "alignment_status\trows\nbounded_limit\t321\nunreviewed\t72\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -909,10 +909,45 @@ class LiveAnalyticalTests(unittest.TestCase):
         for row in map(str, range(2238, 2246)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
+    def test_fortieth_queries_keep_local_dates_cells_and_causes_independent(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT comparison_id,explanation_status FROM comparisons
+            WHERE comparison_id IN
+                ('thief-etymological-warrants','thirst-derivational-base','thousand-compound-warrants')
+            ORDER BY comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\n"
+                    "thief-etymological-warrants\tunestablished\n"
+                    "thirst-derivational-base\tunestablished\n"
+                    "thousand-compound-warrants\tunestablished\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS records
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2246 AND 2253
+        """), "positions\trecords\n131\t125\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,stage_interpretation,attribution_status FROM analyses
+            WHERE row_id='2247' AND evidence_id IN
+                ('ringe-complete-thing-time','ringe-complete-thing-oblique','rt-complete-2247-003')
+            ORDER BY evidence_id
+        """), "evidence_id\tstage_interpretation\tattribution_status\n"
+              "ringe-complete-thing-oblique\tpgmc\tconditional\n"
+              "ringe-complete-thing-time\tpgmc\tconditional\n"
+              "rt-complete-2247-003\tpgmc\tconditional\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS reasons,count(DISTINCT reason_target) AS targets
+            FROM rationales WHERE rationale_id LIKE 'r40-%'
+        """), "reasons\ttargets\n33\t1\n")
+        for row in map(str, range(2246, 2254)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 2136)
+                             for form in self.forms), 2179)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),

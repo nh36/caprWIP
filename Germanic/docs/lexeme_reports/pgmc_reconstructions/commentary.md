@@ -9,12 +9,12 @@ historical, not the current workload. The shorter introduction and
 new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
-193 Ringe,146 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5856 evidence
-records,1393 actual consultations,6119 positions,475 comparisons and924
+193 Ringe,146 Fulk and260 Ringe-Taylor consultations, separately from
+393 applicability screens per source. The database contains5924 evidence
+records,1394 actual consultations,6193 positions,478 comparisons and957
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:313 core rows are bounded and80 unreviewed.
+explanation remain ongoing:321 core rows are bounded and72 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,300 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Fortieth alignment: thief through thrash, with independent formations and dates
+
+This tranche reconciles all57 inherited analytical identities for thief2246,
+thing2247, think2248, thirst2249, thistle2250, thorn2251, thousand2252 and
+thrash2253. Forty-one native occurrences and27 scoped processes add68
+records; six focused positions reuse evidence, so131 positions link125
+distinct records. Exact56 SOURCE-field amendments comprise53 individually
+owned cell descriptions and three locally supported dates. Shared
+think/thought SOURCE and outside2330 analyses remain unchanged. One
+actually missed Ringe-Taylor thrash consultation and target have six
+reversible scope/applicability fields; the initial swing-gloss rejection
+survives as history. All786 dictionary review identities/statuses survive,
+with2179 dictionary records. The three focused cases below retain different
+warrants and unestablished causes; none asserts a named inter-author
+rebuttal, an exclusive opposition or a recovered complete genealogy.
+
+### Thief: a masculine citation, feminine thief and neuter theft
+
+The two dictionaries do not supply a shared settled thief etymology.
+Orel's masculine *þeubaz* is related in his own entry to Baltic keep/save.
+Blindness, striking, a rowing bench, Avestan coarseness, cowering and
+Germanic innovation belong to attributed bibliographical proposals, not
+six simultaneous endorsements. Kroonen's masculine *þeuba-* likewise has
+an unclear etymology, but the argument foregrounds feminine thief
+*þeufjō- ~ *þeubjō-* and their Verner alternation. Some compare the
+underlying root with Baltic cowering; a possible within-Germanic link to
+roaming/loitering points to iterative *þupp/bōn-*. The qualifiers attach to
+those connections, not to the existence of the thief citation itself
+[@Orel2003, p.422; @Kroonen2013, p.539].
+
+The feminine formations mean thief in Kroonen's comparison. They must
+not be labelled theft merely because Orel independently has a neuter
+theft/stolen-goods derivative *þeubjan*. Neither derivative supplies the
+selected masculine *-az*, nor does a Verner alternation establish the
+selected acute accent. The native Kroonen *peuba-* coexists with the
+inherited certified thorn quotation; no p-to-thorn normalization is made
+in diplomatic evidence [@Kroonen2013, p.539; @Orel2003, p.422].
+
+Ringe-Taylor explicitly gives PGmc *peubaz* and OE *péof* in the
+eu/iu-tensing discussion. This is an eu example, not evidence that this
+masculine cell underwent high-front-triggered eu-to-iu raising. The
+later theft derivative in the mutation discussion is a different
+formation. A source-backed eu/iu class membership is therefore useful
+without converting every related noun into the same conditioned history
+[@RingeTaylor2014, pp.172-174,249].
+
+The focused etymological-warrants case compares Orel's own Baltic
+keep/save connection with Kroonen's qualified cower/iterative family.
+Its substantive difference concerns the admitted evidence and derivational
+path, not a proved mutually exclusive sound law. The missing premises are
+the exact root identity, formation relation and Verner distribution needed
+to derive this particular masculine noun. Whole-row cause and focused
+cause remain unestablished [@Orel2003, p.422; @Kroonen2013, p.539].
+
+### Thing: locally dated z-stems do not become the assembly a-stem
+
+Orel pairs *þenʒaz ~ *þenxaz* under a neuter noun label for occasion/time,
+assembly and thing. The source's neuter label survives even though the
+citations end in *-az*. Their probable connection to thrive is not a
+quoted selected *þingą*, and the meeting/intercede verb and assembly
+compounds are separate derivatives/components. The actual thrive entry
+is read on421 rather than treating the preceding noun's cross-reference
+as a complete verbal argument [@Orel2003, pp.420-421].
+
+Kroonen's neuter *þinga-* can derive from the suitable/thrive verb,
+with a proposed scheduled-time to assembly to legal-case to object chain.
+His separate verb entry preserves the nasal-loss development and the
+split Old English verbal paradigms. None is an inflection of the thing
+noun; related time/legal-procedure *binhsa-* is also a different formation
+[@Kroonen2013, p.542].
+
+Two inherited Ringe records now receive the locally justified PGmc date.
+The governing paragraph says that neuter z-stem inflection can be
+reconstructed for PGmc and introduces the plausibly reconstructable list
+continuing onto311. Its *þinhaz ~ *þingiz-* 'appointed time' retains the
+questioned meaning and the distinction from daughter a-stem 'assembly'.
+The list is a local explicit scope statement, unlike an inference from a
+book title, index heading or confidence. Ringe immediately cautions that
+the etymologically expected stem forms conceal a more complex situation,
+with suffix zero grades and voiceless Verner alternants; a dated citation
+does not recover every full paradigm cell [@Ringe2017, pp.310-311].
+
+Ringe-Taylor's paragraph explicitly starts with PGmc time z-stems and a
+conditional *pinga* inherited through Verner alternation. This last record
+therefore becomes PGmc (?) independently of confidence. Subsequent
+PNWGmc *binga* and PWGmc *ping* have their own semantic/date assignments.
+PWGmc *saku* and OE *sacu* supply the sake semantic analogy, not a
+second thing ancestor. The Latin cause/legal-case comparison likewise
+illustrates semantic development [@RingeTaylor2014, pp.127-129].
+
+There is useful partial overlap across the histories, but no warrant to
+strip z-stem or a-stem endings globally and declare equivalence. The
+remaining question is which formation and remodeling relates the
+time-family citations to the selected assembly/thing cell, including
+its e/i, velar alternant and nasal ending. No new morphology or historical
+edge is adopted [@Ringe2017, pp.310-311; @RingeTaylor2014, p.128].
+
+### Think: a probable i-present is not a finite thought quotation
+
+The selected row is the think infinitive *þenċan*. Kroonen's shared
+think/thought evidence remains shared, with the outside finite-past row
+and its earlier SOURCE argument intact. The individual2248 position
+recognizes a present citation, not a dental preterite. Formal causative
+resemblance is explicitly qualified by the stative meaning, which leads
+Kroonen to favor a probable PIE o-grade i-present. Orel's Latin know and
+Tocharian please comparison is compatible evidence, not an explicit
+endorsement of an opposing ordinary causative account
+[@Kroonen2013, pp.533-534; @Orel2003, p.416].
+
+Ringe's PGmc *þankijaną* and *þanhtaz* are independently retained as
+present infinitive and participle. They bear on cluster development and
+the post-PIE root *tong-*, not a source-quoted finite *þōhte* history.
+His preference for pre-Germanic devoicing before Grimm's law is qualified:
+other relative orders can produce the same result. Neither the
+participial ending nor a convenient final output decides the selected
+past-cell analysis [@Ringe2017, pp.135-136].
+
+The older-volume addendum separates probably collective feminine thanks,
+masculine thought/thanks and their probably derivational-base verb.
+These are family positions with distinct gender/cell and uncertainty,
+not additional quotations of the selected infinitive. Their meanings
+have diverged, and the later volume is not an independent author vote.
+The spelling pair *bencan ~ pencean* is separately a present citation:
+written e after the palatal consonant need not represent an extra
+phonological vowel. The source's spellings survive unchanged rather
+than becoming competing proto suffixes [@RingeTaylor2014, pp.4-5,512].
+
+The bounded limit is therefore precise: the probable i-present account,
+cluster chronology, nominal base relationship and spelling convention
+do not jointly establish an exact selected accent or the finite-past
+history. No cause is manufactured from an apparent causative-versus-
+i-present contrast when only one source actually evaluates that choice
+[@Kroonen2013, pp.533-534; @Ringe2017, pp.135-136].
+
+### Thirst: tu, ti, n and feminine cells have different histories
+
+Kroonen's masculine *þurstu-* is a tu-stem directly derived from the dry
+verb; its replacement by an OE ti-stem and Nordic n-stem is a historical
+formation distinction, not several interchangeable citations of the
+selected u-ending. Orel lists masculine u/i alternatives and reports an
+explicitly unattested thirsty-adjective base with Heidermanns attribution.
+That reported premise is not promoted to an observed adjective reflex
+[@Kroonen2013, pp.539,553; @Orel2003, p.430].
+
+Orel's feminine *þurstīn*, denominal thirst verb, dry adjective, weak
+dry-up/thirst alternatives and strong dry-up verb remain separately
+classified. The native feminine *burstin* lacks the certified quotation's
+macron: both survive with their own evidence status. The strong-verb
+cross-reference on430 remains as earlier provenance, while the actual
+header/body on421-422 is added as a new occurrence; no stale pointer is
+silently overwritten [@Orel2003, pp.421-422,430].
+
+The old dry-out ie-present is not the denominal *þurstjan-* verb.
+Kroonen evaluates a proposed original participle for Nordic thirsty and
+prefers the denominal-verb participle because of its s. That is an
+explicit local warrant with a reported alternative, not an automatic
+two-author exclusive conflict. The old u-adjective and its later
+formations are also dry-family evidence, not thirst-noun endings
+[@Kroonen2013, pp.553-554].
+
+Ringe's possible Sievers exception for PGmc *þurzijaną* adds another
+independent distinction. A Caland u-adjective base could have produced
+the verb after syllabic-sonorant resolution within PGmc; unlike his
+work/seem examples, this does not require an inherited earlier
+formation. Explicit PGmc output and conditional formation chronology
+remain independent axes [@Ringe2017, pp.144-146].
+
+The focused direct-verb versus reported-adjective-base comparison
+records differing derivational warrants. They might describe related
+parts of a family rather than exclusive origins. Their exact relation
+and relative chronology remain the missing premises, and no focused
+warrant establishes the selected noun's whole-row cause
+[@Orel2003, p.430; @Kroonen2013, p.553].
+
+### Thistle: dictionary e and optional x do not quote the selected genitive
+
+The selected *þistles* is a genitive, while Orel's masculine *þe(x)stilaz*
+is a citation with e and an optional x. Its derivational identification
+with Latin woven *textilis* and connection to the swingle/weave verb
+are preserved. A bibliographical prick-root alternative is reported
+rather than merged into Orel's own argument. Neither optional x nor
+the comparison licenses erasing a segment or supplying an i-bearing
+selected genitive ending [@Orel2003, p.419].
+
+The scientific PROTO *θéstilaz* and input *θístilas* remain unchanged.
+Their difference is a non-adopting selected-cell/vocalism question:
+the dictionary does not quote the selected ending or prove its raising
+history. Kroonen's retained bounded negative concerns the completed
+thistle search, not opposition to Orel. A melancholy-thistle compound
+under a different plant word, thorn and cart-pole lookalikes are not
+thistle genealogy; none creates a fake new grammar consultation
+[@Orel2003, p.419; @Kroonen2013, pp.371,541-545,552-553].
+
+### Thorn: alternatives versus a secondary Gothic formation
+
+Kroonen argues for an old no-stem from PIE *ter-* and judges Gothic
+u-stem inflection likely secondary on the extra-Germanic evidence.
+Orel's Sanskrit grass and Slavic thorn connections accompany both u-
+and a-stem alternatives. Merely listing the u-stem is not an explicit
+claim that it must be the oldest formation and therefore not a named
+rebuttal of Kroonen [@Kroonen2013, pp.552-553; @Orel2003, p.430].
+
+Thorn-bush/briar and thicket formations have separate suffixes and
+genders; they are family derivatives, not additional case forms of the
+selected bare thorn. Native b/p representations coexist with certified
+thorn citations. The exact selected a-ending/stress and chronology are
+not established by those derivatives, nor may thorn evidence fill the
+thistle negative [@Kroonen2013, p.553; @Orel2003, p.430].
+
+### Thousand: a defended compound still has opposing formation warrants
+
+The corpus citation *θūs-undī* and selected pre-OE input *θūs-èndi*
+are independent existing scientific fields. The dictionaries and
+grammars do not jointly quote the latter by supplying bits of the former.
+Orel's feminine root-stem *þūs-(x)unđī* derives from a strong-hundred
+compound, with optional x and barred dental intact. Its native ordinary-d
+counterpart remains a separate occurrence. Reported borrowing and
+alternative reconstructions remain attributed bibliography
+[@Orel2003, p.431].
+
+Kroonen retains the traditional *þūs-hund-i-* collective but says the
+etymology is not undisputed. Slavic points straightforwardly to a
+participial-looking formation and Germanic scarcely preserves the
+hundred-element h. Counterevidence is not suppressed: Prussian m,
+Salian Frankish *thuschunde* and poetic Faroese *tús-hundrað* support
+the hundred component. Those are comparative arguments, not new
+non-OE runtime work or automatic proof of identical suffix pedigrees
+[@Kroonen2013, p.554].
+
+Ringe explicitly reconstructs PGmc *þūsundī* but calls the Baltic and
+Slavic cognates only approximate. His discussion of uncertain PIE
+thousand compares Greek/Indo-Iranian sharing and the Latin formation;
+it does not certify inherited PIE membership for the Germanic numeral
+[@Ringe2017, pp.230-231].
+
+Fulk's actual body232 gives PGmc *þūsund-* as strong plus hundred,
+with PIE *tū-s-* and hundred *xund-* as separate components. The
+hundred relationship must have been lost early; daughter inflections
+are Gothic jō, Norse i, OE neuter a, Saxon indeclinable and alternative
+OHG classes. These are explicitly different, not one recovered full
+Germanic ending. The index389 occurrence is independently undated
+and native acute-u, not silently repaired to the body's macron
+[@Fulk2018, pp.232,389].
+
+The focused compound-warrants comparison preserves acceptance and
+formal objections together, including the counterweight to those
+objections. It remains substantive but unexplained: exact suffix
+genealogy, h loss and Balto-Slavic relationship are the missing
+premises. A source's compound preference does not establish the
+selected pre-OE input's full formation [@Orel2003, p.431;
+@Kroonen2013, p.554; @Fulk2018, p.232].
+
+### Thrash: every principal part, plus a genuinely missed consultation
+
+Orel's strong thrash/thresh infinitive has Tocharian chew, Greek
+wound/kill and Baltic/Slavic crack comparisons. The difficult threshold
+compound and the thrush bird entry are separately read; neither is
+the selected verb. Bibliographical rub proposals do not overwrite
+the author's own comparative connections [@Orel2003, pp.425-427].
+
+Ringe explicitly reconstructs PGmc *þreskaną, *þrask, *þruskun,
+*þruskanaz* and separately gives OE *þerscan, þærsc, þurscon, þorscen*.
+Each actual cell receives its own occurrence and relation. The selected
+unmetathesized *þresċan* is not mechanically identified with a past
+singular, u-grade plural, o-grade participle or metathesized citation.
+The class-III account explains the origin of zero-grade u in CR roots
+and adjustment of uR to the full-grade order; extension to fight is a
+separate analogical statement, not an extra general sound law
+[@Ringe2017, pp.253-255,270-272].
+
+Fulk's ske/o discussion explicitly cannot determine the original
+suffix meaning with assurance. Iterative or consuetudinal meaning
+in Germanic is perhaps, with thrash compared to throw. His existing
+consultation remains discussion_only: the new process preserves the
+whole argument without hiding a reconstructed infinitive in lexical
+slots [@Fulk2018, pp.245-247].
+
+The actual Ringe-Taylor thrash occurrences on6 and341 establish a
+missed consultation. The early screen correctly rejected a swing
+verb merely glossed thrash, but missed *berscan* in the short-vowel
+contrast and post-breaking metathesis argument. The two real
+paragraphs receive distinct receipts; a new consultation/target and
+six exact scope/applicability amendments preserve the earlier
+screen as history. The complete neighboring argument contrasts
+Anglian burn/run and later WS metathesis; its reported nonuniformity
+is recorded without adopting lexical variability in CAPR's sound
+laws [@RingeTaylor2014, pp.6,339-342].
+
+The exact selected root pedigree, formative meaning and unmetathesized
+cell history remain bounded. Whole-row cause is unestablished; no
+new law, chronology edge or input is inferred from the newly found
+attestation [@Orel2003, p.426; @Fulk2018, p.246;
+@Ringe2017, p.271; @RingeTaylor2014, pp.340-341].
 
 ## Thirty-ninth alignment: swine formation, numeral inflection and thane ancestry
 

@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5856 evidence records,1393 actual consultations and6119
-analytical positions, with475 comparisons and924 rationales. The RT
+There are5924 evidence records,1394 actual consultations and6193
+analytical positions, with478 comparisons and957 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -136,6 +136,49 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The fortieth tranche completes thief, thing, think, thirst, thistle,
+thorn, thousand and thrash. All57 inherited identities are individually
+reconciled. Forty-one native occurrences and27 scoped processes add68
+records; six focused positions reuse evidence, yielding131 positions
+linked125 distinct records. Exact56 SOURCE fields cover53 owned cell
+descriptions and three explicit local dates. Shared think/thought
+SOURCE and outside2330 analyses remain unchanged. One actual missed
+Ringe-Taylor thrash consultation/target has six reversible scope/
+applicability fields; the initial swing-gloss rejection survives
+[@RingeTaylor2014, pp.6,340-341].
+
+There are321 bounded core rows and72 unreviewed. All786 dictionary
+review identities/statuses survive with2179 dictionary records.
+The three focused thief, thirst and thousand comparisons preserve
+distinct warrants but unestablished causes; all eight whole-row
+causes remain unestablished. No exclusive opposition or named
+rebuttal is manufactured from alternatives or partial overlap
+[@Orel2003, pp.422,430-431; @Kroonen2013, pp.539,553-554].
+
+Thing's PGmc z-stem list is explicitly scoped by the governing
+paragraph, and RT's conditional PGmc a-stem by the actual local
+construction; these repairs do not derive dates from confidence.
+Selected thistle genitive and thousand preoe input, nominal thirst
+and related dry verbs, feminine thief versus neuter theft, and
+all thrash paradigm cells remain independently classified
+[@Ringe2017, pp.310-311; @RingeTaylor2014, p.128;
+@Orel2003, pp.419,422,430-431; @Kroonen2013, pp.539,553-554;
+@Fulk2018, p.232; @Ringe2017, p.271].
+
+The full page-cited commentary and nine-heading audit, exact
+receipts and source-sensitive regressions persist. Canonical
+refresh and independent artifact checks report CONTROL PLANE CLEAN.
+The454-test focused run passes451; its three historical owner-chain
+expectations are corrected to verify the exact fortieth successor
+receipts without changing historical receipts. All14 selected
+new/corrected regressions then pass. Independent verification preserves
+107 untouched research hashes and all46 ORIGINAL scientific hashes,
+and resolves all41 native paragraph hashes and whole-token spans.
+All88 new-prose printed-page references and bibliography/locator
+checks pass. No corpus/input/stage/context/FST/baseline
+adoption, PDF, automatic40 release or41 preparation is included.
+The full393-row alignment and subsequent synthesis remain unfinished.
 
 The thirty-ninth tranche completes swine, sword, tap, team, ten,
 thane, thanks and thatch, rows2238-2245, from released

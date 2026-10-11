@@ -8,6 +8,158 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Fortieth alignment checkpoint: thief through thrash
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base10f23afb39936d5072269ac62ae24fa953ff27df on update;39 is committed
+and pushed. Rows2246-2253 are thief, thing, think, thirst, thistle,
+thorn, thousand and thrash. Immutable preparation pins5856 forms,
+57 inherited identities and117 research hashes. Complete40 is
+authorized, not its release,41 preparation or scientific adoption.
+Never recreate preparation or execute/import the persisted candidate.
+
+### Question
+
+Can every inherited identity be reconciled without conflating thief/
+theft genders, thing time/assembly formations, think/finite thought,
+thirst noun/dry verb, thistle citation/genitive, thorn alternatives,
+thousand source citation/input or thrash principal parts? A missing
+RT thrash passage must become an actual consultation with reversible
+owners, not retrospective source silence or a fabricated quote.
+Full arguments and exact receipts refute or confirm each decision.
+
+### Current state
+
+Eight formerly unreviewed core rows;313 previously bounded/80 unreviewed,
+5856 forms,1393 consultations,6119 positions,475 cases and924 reasons.
+Thousand's selected input is preoe; the other seven are pgmc.
+Thistle's selected genitive has a different input vowel. All original46
+scientific hashes remain protected. Shared think/thought SOURCE and
+outside2330 analyses survive; Fulk/thrash remains discussion_only.
+
+### Diagnosis
+
+Executable census, new traces, private variants and counterfactuals:
+n/a; no selected input, rule or canonical chronology changes.
+All57 inherited identities survive individual reconciliation.
+Forty-one literal occurrences and27 processes add68 records;
+six focused positions reuse evidence, so131 positions link125 records.
+Exact56 SOURCE fields comprise53 owned cells and three local dates.
+Shared SOURCE cells are not overwritten for one selected row.
+One genuinely missed RT thrash consultation and target have six
+scope/applicability field receipts; the initial swing-gloss rejection
+remains reversible history, not an erased negative.
+
+### Literature
+
+Complete relevant arguments, neighboring pages, footnotes and material
+cross-references are read. Dictionary blocks:
+[@Orel2003, pp.416,419-423,425-427,429-432;
+@Kroonen2013, pp.533-534,538-543,552-555].
+Grammar blocks: [@Ringe2017, pp.135-137,144-146,230-232,253-255,270-272,310-312;
+@Fulk2018, pp.231-233,245-247,389;
+@RingeTaylor2014, pp.4-6,127-129,172-174,249-253,339-342,511-513].
+
+Thief's own Baltic connection differs from qualified cower/iterative
+warrants; feminine thief and neuter theft are distinct
+[@Orel2003, p.422; @Kroonen2013, p.539].
+Thing's z-stem list has explicit local PGmc scope, while later
+assembly a-stem and semantic analogies remain separate
+[@Ringe2017, pp.310-311; @RingeTaylor2014, pp.127-129].
+Think's probable i-present, actual participle and written e convention
+do not produce an attributed finite past
+[@Kroonen2013, pp.533-534; @Ringe2017, pp.135-136;
+@RingeTaylor2014, pp.4-5,512].
+Thirst's direct tu derivation and reported unattested-adjective base
+have different warrants; old dry-out and denominal verbs differ
+[@Orel2003, pp.421-422,430; @Kroonen2013, pp.539,553-554;
+@Ringe2017, pp.144-146].
+Thistle's e/optional-x citation does not quote the selected i genitive,
+and thorn's listed u/a alternatives do not reject a secondary u-stem
+[@Orel2003, pp.419,430; @Kroonen2013, pp.552-553].
+Thousand's compound objections and counterevidence accompany
+explicit PGmc citation and distinct daughter inflections
+[@Orel2003, p.431; @Kroonen2013, p.554;
+@Ringe2017, pp.230-231; @Fulk2018, p.232].
+Thrash's every principal part, uncertain ske/o aspect and actual
+metathesis argument remain different propositions
+[@Ringe2017, pp.253-255,270-272; @Fulk2018, pp.245-247;
+@RingeTaylor2014, pp.6,340-341].
+
+### Historical analysis
+
+Dates, geographic scope, confidence, verification and selected-input
+conventions remain independent. The local PGmc z-stem list and RT
+conditional PGmc thing are not dated from title/index context or
+confidence; meaning and reconstructability remain qualified
+[@Ringe2017, pp.310-311; @RingeTaylor2014, p.128].
+Thousand's actual body is dated PGmc, while its starless index is
+independently undated. The source supplies a stem, not a missing
+whole selected ending [@Fulk2018, pp.232,389].
+
+Native p/b/z/d and absent macrons coexist with certified quotations.
+No normalization erases the actual source units. Nordic thirsty's
+s warrants a source-local participial preference; this is position
+support, not a whole noun genealogy or inter-author cause
+[@Kroonen2013, pp.539,553-554; @Orel2003, pp.422,430-431].
+Fulk's uncertainty about original ske/o meaning survives in
+discussion-only process evidence with blank lexical slots
+[@Fulk2018, pp.245-247].
+RT's reported metathesis nonuniformity is recorded, not adopted
+as lexical variability in CAPR's exceptionless sound laws
+[@RingeTaylor2014, pp.340-341].
+Historical edges: none adopted. No matching output selects ancestry.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+No registry verdict: this is not an SC adjudication.
+All eight whole-row alignments are bounded with unestablished causes.
+Thief, thirst and thousand focused cases retain substantive warrant
+differences without manufactured exclusivity or named rebuttal.
+All33 new reasons are position supports, not divergence explanations.
+No corpus/input/stage/context/FST/baseline adoption or PDF.
+
+### Propagation
+
+SOURCE, exact amendment/occurrence/owner receipts, page-cited
+commentary/README, this full nine-heading audit and source-sensitive
+regressions are persisted. Canonical refresh, independent artifact/
+source/native-span preservation and focused checks are complete.
+Canonical refresh and independent artifact checks report CONTROL PLANE
+CLEAN without a scientific rebuild. The454-test focused run passes451;
+three historical owner-chain expectations require the exact fortieth
+successor receipts. These expectations are corrected without changing
+historical receipts or scientific prose; all14 selected new/corrected
+regressions then pass.
+
+Independent post-refresh verification preserves5856 inherited forms
+except56 exact fields,6062 outside positions,467 unaffected comparisons,
+924 inherited rationales,1393 consultation identities/statuses and1367
+outside consultations. The one actual RT/thrash consultation is new.
+Reversing six exact owner fields and removing only one new target
+reproduces the frozen owner hashes. All107 untouched research hashes
+and46 ORIGINAL scientific hashes survive. All41 native paragraphs,
+hashes and whole-token Unicode spans independently resolve.
+Deterministic queries reproduce321 bounded/72 unreviewed rows and
+the separate alignment and RT-conventions gate refusals. All88
+new-prose printed-page references, nine headings, bibliography,
+section locators and whitespace checks pass. Tranche40 is complete
+and uncommitted; no41 preparation or scientific adoption is included.
+
+### Residue
+
+Actual research totals:5924 forms,1394 consultations,6193 positions,
+478 comparisons and957 rationales;321 bounded/72 unreviewed core rows.
+All786 dictionary identities/statuses remain, with2179 evidence
+records. Three focused causes and all eight whole-row causes remain
+unestablished. Original46 scientific owners remain unchanged.
+The full393 alignment, source-backed class census, explanatory
+synthesis, consistency watchlist and finite specialist agenda remain
+unfinished. No40 release or41 preparation is authorized.
+
 ## Thirty-ninth alignment checkpoint: swine through thatch
 
 ### Identity
