@@ -10,15 +10,249 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,147 Fulk and260 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains6323 evidence
-records,1395 actual consultations,6615 positions,489 comparisons and1123
+393 applicability screens per source. The database contains6392 evidence
+records,1395 actual consultations,6686 positions,490 comparisons and1158
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:361 core rows are bounded and32 unreviewed.
+explanation remain ongoing:369 core rows are bounded and24 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
-## Forty-fifth alignment: whine through the two wills
+## Forty-sixth alignment: wind through word
+
+Tranche45 is released as47615578. This increment individually reconciles
+all55 inherited analytical identities for rows2294-2301. Thirty-seven
+needed native occurrences and32 complete-argument processes add69 records;
+two focused positions reuse the wolf arguments. Thirty-four reasons support
+positions and one explains the focused regularity disagreement. The126
+positions link124 distinct records, not126 independent readings. Exact58
+reversible SOURCE fields comprise55 cells and three explicit dates. All1395
+consultation identities/statuses and786 dictionary dispositions survive.
+
+The receipts retain the actual paragraph, hash and Unicode whole-token span.
+They supplement certified quotations without replacing their glyphs or
+claiming new image verification. Separate ancestral nominative/plural and
+nominative/accusative occurrences remain separate evidence; unchanged
+existing quotations are not added again merely to reach an extraction
+quota [@Kroonen2013, pp.598-599; @Ringe2017, pp.172,242-243].
+No citation, selected input, stage/context sidecar, FST, scientific
+baseline, introduction or publication owner changes.
+
+### Winding: the weather noun cannot date the verb
+
+Kroonen's strong *windan-* is attached to a marginal European twist root,
+with Umbrian turning, Armenian ring and a qualified Indo-Aryan comparison.
+The neighboring weather noun has a different laryngeal, full-grade and
+Verner history. That unusually explicit account does not become evidence
+for the twisting verb just because the two headers share *wind-*.
+The cross-referenced *wandjan-* is a causative, *wandu-* a rod perhaps
+derived from winding, and *wantu-* a probably related mitten whose dental
+reflects a geminate. They are family formations, not alternative cells
+of the selected strong present [@Kroonen2013, pp.573,587].
+
+Orel's twisting infinitive preserves e and the certified barred dental;
+the native *wendanan* remains alongside it. The adjacent awry adjective,
+yarn and weather noun must be distinguished before discussing vocalism.
+The dictionary spelling alone supplies neither a realized pre-PGmc date
+nor proof of the same selected accent and ending convention
+[@Orel2003, pp.454-455]. Ringe actually prints *windaną* beside *wandijaną*,
+but expressly finds their semantic relationship unclear because of
+idiosyncratic development and insufficient external cognates. Morphological
+causative shape does not remove that qualification [@Ringe2017, pp.282-284].
+
+Fulk supplies two different arguments. Explicit PGmc *wundanaz* and OE
+*wunden* illustrate retention of u before a tautosyllabic nasal; these are
+participial, not selected present cells. His later present-stem account
+probably assigns a nasal infix extended into the preterite and compares
+Gothic *ga-widan*. Its inherited nasal-origin inference remains qualified,
+with the wider nasal-infix argument and footnotes retained
+[@Fulk2018, pp.55-57,245-248]. The starless participial index can therefore
+receive the body's explicit PGmc date without changing confidence or
+inventing a complete dated present infinitive [@Fulk2018, pp.56,389].
+The existing Cercignani consultation remains discussion-only: its general
+raising/date objection applies, but the wind-noun example does not quote
+the twisting verb [@Cercignani1980, pp.126-134].
+
+### Winter: formation, plural and epenthesis are different questions
+
+Kroonen rejects the conventional wet-root connection because it depends
+on analyzing Latin *unda* as *u-n-d-eh₂-* rather than *ud-neh₂-* with
+Thurneysen's law. The white-root comparison is semantically weak, and no
+certain etymology is offered [@Kroonen2013, p.588]. Orel likewise leaves
+the origin unclear while retaining the u-citation and a continental
+a-formation, plus the separate Norse root-stem plural and bibliographical
+proposals. These are not two authors asserting mutually exclusive full
+selected reconstructions [@Orel2003, pp.455-456].
+
+Fulk's OE neuter plural *wintru* is probably analogical, perhaps to light
+stems: the inherited PIE ending would not provide its retained u.
+This is an actual attestation and a qualified formation argument, not a
+new reconstructed selected word. Its consultation remains discussion-only
+[@Fulk2018, pp.163-165]. Ringe and Taylor instead supply the singular
+historical chain PGmc *wintruz*, PWGmc *wintru*, locally undated *wintr*,
+and OE *winter*. The final reflex is a citation, not a different inflected
+cell inferred merely from its being an attestation. Their complete cluster,
+metrical and glossary argument supports epenthesis after high-vowel loss,
+with a qualified mid-seventh/eighth-century interval rather than a
+universal fixed date [@RingeTaylor2014, pp.327-329].
+
+### Withy and wold: related material does not supply a selected formation
+
+Kroonen's osier/wattle *wīman-* belongs to a mon-formation with the twist
+root and the wall cross-reference. The tentative antecedent with *(?)*
+and the separate unmarked comparative occurrence retain their independent
+attribution. The native short-looking *wiman-* is not substituted for
+the certified long ī. The wall argument explicitly dates *wajju-* PGmc,
+but that does not date the osier formation or assemble the selected dental
+extension [@Kroonen2013, pp.568,587].
+
+Orel's long-ī masculine and feminine willow alternatives are distinct
+from short-i feminine withy/cord/fetter. The latter may be the immediate
+derivational base, but a proposed family connection is not an identical
+selected citation. OE masculine *wīðiġ* does not turn the feminine ending
+into its own paradigm cell [@Orel2003, pp.464,468]. CAPR's unchanged
+PROTO *wáiθiz* versus PROTOFORM *wḯθagą* therefore remains a consequential
+non-adopting quantity/formation watchlist. Neither the osier m-suffix nor
+the willow j-formation quotes the selected þaga extension. Dictionary-only
+scope is legitimate here; no three invented grammar negatives are added.
+
+Wold has a masculine tu-stem with wood/uncultivated-land senses and
+hair/panicle comparisons. Kroonen's European *uólH-tu-* and Orel's Greek,
+Irish and Baltic/Slavic connections do not automatically establish a
+PIE date. The native *walpu-* survives beside the certified thorn. It is
+not silently converted into the barred dental of the wield verb.
+Mountain-forest, valley and adjective-root proposals in the bibliography
+remain reported alternatives rather than the author's adopted genealogy
+[@Kroonen2013, pp.571-572; @Orel2003, p.445].
+
+### Wolf: agreement on the citation, disagreement over regularity
+
+Kroonen accepts the masculine wolf stem but calls `**wulhwaz` the expected
+counterfactual without the proposed labiovelar-to-p development. His
+comparison with five and throw supports a change that *seems* to occur
+after resonants in initially labial words; its qualification matters.
+The counterfactual is not an accepted competing citation. Archaic feminine
+*wulgiz* and secondary *wulbjō(n)-*, with a labial adopted from the
+masculine before Verner's law, are family formations rather than masculine
+case endings [@Kroonen2013, p.598].
+
+The introduction's before-j delabialization account conditions the change
+by an originally rounded vowel and explicitly rejects the Sievers premise
+of the older Ringe edition. That is not a newly discovered direct rebuttal
+of the 2017 edition. Likewise the entry's Kortlandt chronology is a qualified
+report, not independent consultation of Kortlandt's original argument
+[@Kroonen2013, pp.xxxii-xxxiii,598]. Ringe's later complete discussion
+retains several possibilities: an early delabialization chronology before
+sonorant resolution and renewed Sievers filtering, or a separate Norse
+delabialization, with further alternatives for the voiced labiovelar
+outcomes. It does not recover one uniquely settled female history
+[@Ringe2017, pp.127-133, especially pp.132-133].
+
+Ringe nevertheless endorses *wulfaz* while explicitly withholding confidence
+in a regular labiovelar-to-labial law. The few examples, she-wolf chronology
+and voice-family h/g counterexamples obstruct the narrower proposal;
+enlarging the conditioner to any preceding labial to admit five creates
+the *ferhu-/ferhw-* counterexample. These are stated objections, not an
+explanation invented from different strings. The focused case consequently
+has a source-explicit warrant explanation, without claiming a named
+Kroonen rebuttal, choosing a law by author count, or settling the whole
+wolf genealogy [@Ringe2017, pp.140-141; @Kroonen2013, p.598].
+
+Orel's assimilated masculine and pre-assimilation antecedent are different
+endpoints. His five cross-reference really leads to the native *fenfe*
+entry; it is not evidence of absence because a *femfe* search misses its
+header. The Latin Sabinian-loan/parallel-assimilation alternatives remain
+qualified [@Orel2003, pp.98,473-474]. Fulk's actual body *wulfaz*, explicitly
+PGmc, illustrates Norse medial f voicing. It dates the indexed wolf token
+but supports no earlier labialization argument [@Fulk2018, pp.124,389].
+Ringe's PGmc endingless vocative is another real cell, while Ringe and
+Taylor's wolf is a possible u-lowering exception, a different question
+[@Ringe2017, p.141; @RingeTaylor2014, pp.31-33].
+CAPR adopts no irregular or lexically conditioned sound law.
+
+### Wonder: a noun, a family proposal and an endpoint limit
+
+Orel derives the neuter wonder noun through a suffixal wish/love-root
+formation, citing the satisfied/remain/dwell verb as family evidence.
+Bibliographical wound and turn proposals are not his unqualified adoption.
+Kroonen's accustomed, wounded, suffering and wishing entries do not
+independently establish a wonder genealogy; the bounded negative survives
+[@Orel2003, pp.474-475; @Kroonen2013, pp.599-600].
+
+Fulk's actual *wundraz > wundr* illustrates final vowel loss followed by
+later dialectal sonorant nuclearization. Its az representation survives
+beside CAPR's selected neuter; it is not repaired to make agreement.
+Nor does the preceding explicitly PGmc day example independently label
+this token's stage [@Fulk2018, pp.91-96,389]. Ringe and Taylor give PNWGmc
+*wundra*, PWGmc *wundr* and OE *wundor*. These locally labeled stages and
+citation reflex are kept distinct from winter's high-vowel loss, although
+both feed the epenthesis discussion [@RingeTaylor2014, pp.327-329].
+
+### Wool: do not flatten the cells, laryngeals or retention accounts
+
+Kroonen's doubled l supports suffix stress; accent mobility and potential
+Hittite suffix ablaut favor a consonant-stem analysis, while a mobile
+neuter o-stem remains an alternative. Its nominative and plural are
+ancestral cells of the same etymon, not unrelated comparanda. Native
+dotless-i and mixed laryngeal glyphs remain beside certified quotations
+without making their uncertainty a different etymology
+[@Kroonen2013, pp.598-599]. Orel's feminine long-ō citation and wide
+comparative family do not supply the complete paradigm
+[@Orel2003, p.474].
+
+Ringe supplies distinct PIE nominative and accusative antecedents,
+PGmc nonnasal *wullō* and nasal *wullǭ*, and independent repeated later
+occurrences. Nominative PNWGmc *wullu* and accusative PWGmc *wullā*
+underlie different OE cells. The final nasal contrast is supported by
+systematic outcomes, with discussion of the underlying analysis; it is
+not spelling variation to erase [@Ringe2017, pp.171-173,241-244].
+The independent repeated receipts cannot be collapsed into one occurrence.
+
+Fulk actually prints PIE *h₂ulh₂-n-eh₂* before explicitly PGmc *wul-n-*
+in his ln-assimilation account. His h₂ is not silently harmonized to the
+other authors' h₁. The body-backed date applies to the starless
+pre-assimilation index stem; it does not independently date the resulting
+*wull-* index entry or supply a complete ending [@Fulk2018, pp.112-114,389].
+This observed representation/analysis difference does not by itself explain
+an inter-author cause.
+
+Ringe and Taylor allow u-restoration from other cases as one possibility
+for wool, but explicitly retain a genuine phonetic-exception alternative
+like full and wolf. Their love stem and ending belong to love; kick and
+kiss illustrate leveling/backformation, not wool cells. Their locally
+undated *wullu* is not dated by Ringe's identical but separately labeled
+token. The nonunique explanation is preserved as an author claim, not
+CAPR lexical variability [@RingeTaylor2014, pp.31-33;
+@Ringe2017, p.242].
+
+### Word: a conditional cognate is not an unconditional laryngeal
+
+Kroonen's European zero-grade points to *urdh-*, but the initial laryngeal
+depends on admitting the Hittite curse verb. His optional notation and
+qualified IE classification remain genuinely conditional
+[@Kroonen2013, p.600]. Orel retains Prussian word, Latin word and
+Lithuanian name comparisons; the adjacent become-derived fate is a
+separate etymon [@Orel2003, p.475]. Ringe's actual PIE 'said' adjective,
+its intervening dental and Verner voicing supply a different articulated
+ancestry, not authority to globally rewrite dental symbols or stress
+[@Ringe2017, pp.122-124]. Ringe and Taylor use the locally PGmc word
+token for u-lowering before a nonhigh vowel without a coda nasal or j
+blocker, not for complete normalization of the selected ending
+[@RingeTaylor2014, pp.26-28].
+
+### Limits and persistent outcome
+
+All eight whole-row causes remain unestablished. The focused wolf warrant
+explanation does not certify a masculine ancestry or propagate to its core
+cause; wool's cell distinctions do not choose one formation account.
+The current population is6392 forms,1395 consultations,6686 positions,
+490 comparisons and1158 rationales;369 bounded/24 unreviewed core rows,
+with2398 dictionary records and all786 dispositions. Tranche46 remains
+uncommitted. The full393-row alignment, source-backed class census,
+aggregate synthesis, consistency watchlist and specialist dispatch remain
+unfinished. No Tranche47 preparation or scientific adoption is included.
+
+## Forty-fifth alignment: whine through the two wills (released47615578)
 
 Tranche44 is released as6c956e61. This annotation-only increment reconciles
 all92 inherited identities for rows2286-2293, retaining distinct attribution,

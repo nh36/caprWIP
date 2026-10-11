@@ -6,7 +6,51 @@ now has complete Orel/Kroonen reading coverage and a citation-unit triage
 of all393 rows. Explaining every disagreement remains ongoing; a reviewed
 triage is not a collection of settled histories or an adoption decision.
 
-## Forty-fifth alignment checkpoint
+## Forty-sixth alignment checkpoint
+
+Tranche45 is committed and pushed as476155782954a1246ef9bf56cecd9d57edd5b20b.
+Rows2294-2301 (wind verb, winter, withy, wold, wolf, wonder, wool and word)
+are individually reconciled:55 inherited identities,37 native occurrences,
+32 scoped processes, two reused focused positions and35 rationales.
+Exact58 reversible SOURCE fields comprise55 cells and three explicit dates;
+no consultation/status/scope/target identity changes.
+
+Wolf's focused regularity disagreement has a source-explicit explanation:
+Kroonen tentatively supports a resonant/initial-labial conditioner, while
+Ringe explicitly withholds confidence because of the sample, chronology
+and counterexamples. This is not a named Kroonen rebuttal or recovered
+whole-row ancestry [@Kroonen2013, pp.xxxii-xxxiii,598;
+@Ringe2017, pp.127-133,140-141]. All eight core causes remain unestablished.
+Wool preserves ancestral mobile-neuter cells, PGmc nominative/accusative
+nasality, native h₁/h₂ representations and the nonunique u-retention
+account [@Kroonen2013, pp.598-599; @Ringe2017, pp.172,242-243;
+@Fulk2018, p.113; @RingeTaylor2014, pp.31-33].
+
+Actual Fulk bodies, not the index heading, date wind's participle, wolf
+and the pre-assimilation wool stem. Wonder's az token and the resulting
+wool stem stay locally undated; date and confidence remain independent
+[@Fulk2018, pp.56,91,113,124,389]. Withy's selected dental extension is
+not assembled from osier or willow family formations
+[@Kroonen2013, pp.568,587; @Orel2003, pp.464,468].
+
+Totals6392 forms,1395 consultations,6686 positions,490 comparisons and1158
+rationales;369 bounded/24 unreviewed rows. The126 tranche positions link124
+records;2398 dictionary records retain all786 dispositions. See the
+substantial page-cited commentary, full-nine-heading audit and the exact
+`reading_accountability/alignment-2294-2301-*.tsv` receipts. Current SOURCE
+and receipts are authority: never rerun/import the persisted candidate or
+recreate immutable preparation. Tranche46 remains uncommitted; no46 release,
+47 preparation, scientific adoption or PDF is included.
+
+All515 focused survey/analysis tests pass. Canonical refresh/freshness,
+bibliography, locators,71 new-prose printed-page references, nine audit
+headings and whitespace pass. Independent verification reverses58 fields
+and preserves6323 old forms,6560 outside positions,481 unaffected cases,
+1123 old rationales,1364 outside consultations,126 untouched research
+hashes and46 ORIGINAL scientific hashes. All37 native spans resolve.
+The independent alignment gate refuses24 separately from RT conventions.
+
+## Forty-fifth alignment checkpoint (released47615578)
 
 Tranche44 is committed and pushed as6c956e61733608d23851e97e1cbe6a4fb1971fa6.
 Rows2286-2293 (whine, whore, widow, wield, wife, wight, will verb and
@@ -38,10 +82,10 @@ survey audit and the two `reading_accountability/alignment-2286-2293-*.tsv`
 receipts. Current SOURCE/receipts are authority: never rerun/import the
 persisted candidate or recreate immutable preparation.
 
-Tranche45 remains uncommitted. No45 release,46 preparation, scientific
-adoption or PDF is included; all46 ORIGINAL scientific protections and
-outside research remain unchanged. The full393 alignment, class census
-and explanatory closeout remain unfinished.
+The later explicit request released Tranche45 as47615578 and authorized
+Tranche46 above. The original closeout excluded automatic release or next
+preparation. All46 ORIGINAL scientific protections and outside research
+remain unchanged; the full393 alignment and explanatory closeout are unfinished.
 
 All506 focused survey/analysis tests pass. Canonical refresh and freshness
 checks are clean; bibliography, section locators,64 new-prose printed-page

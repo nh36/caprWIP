@@ -627,7 +627,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t361\nunreviewed\t32\n")
+        """), "alignment_status\trows\nbounded_limit\t369\nunreviewed\t24\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -821,7 +821,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t361\nunreviewed\t32\n")
+        """), "alignment_status\trows\nbounded_limit\t369\nunreviewed\t24\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -912,6 +912,41 @@ class LiveAnalyticalTests(unittest.TestCase):
         """), "form_kind\tdiplomatic_form\tcomparison_form\nprocess\t\t\n")
         for row in map(str, range(2238, 2246)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
+    def test_forty_sixth_queries_separate_regular_warrant_cells_and_dates(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT comparison_id,comparability,explanation_status FROM comparisons
+            WHERE comparison_id='wolf-labialization-regularity-warrants'
+        """
+        expected = ("comparison_id\tcomparability\texplanation_status\n"
+                    "wolf-labialization-regularity-warrants\tsubstantive_difference\tsource_explicit\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS records
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2294 AND 2301
+        """), "positions\trecords\n126\t124\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT reason_target,count(*) AS reasons FROM rationales
+            WHERE rationale_id LIKE 'r46-%' GROUP BY reason_target ORDER BY reason_target
+        """), "reason_target\treasons\ndivergence_explanation\t1\nposition_support\t34\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,relation_to_row,stage_interpretation FROM analyses
+            WHERE row_id='2300' AND evidence_id IN (
+                'alignment46-wool-ringe-pnwgmc','kroonen-core-2300-3',
+                'rt-complete-2300-002','rt-complete-2300-003') ORDER BY evidence_id
+        """), "evidence_id\trelation_to_row\tstage_interpretation\n"
+              "alignment46-wool-ringe-pnwgmc\tselected_cell\tnorthwest_germanic\n"
+              "kroonen-core-2300-3\tsame_etymon_other_cell\tunspecified\n"
+              "rt-complete-2300-002\tcomparandum\tpgmc\n"
+              "rt-complete-2300-003\tsame_etymon_citation\tunspecified\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS rows FROM comparisons WHERE scope='core_triage'
+            AND CAST(substr(comparison_id,6) AS INTEGER) BETWEEN 2294 AND 2301
+            AND explanation_status='unestablished'
+        """), "rows\n8\n")
 
     def test_forty_fifth_queries_separate_weight_date_and_will_warrants(self):
         tables = {"forms": (survey.FORM_COLUMNS, self.forms),
@@ -1118,7 +1153,7 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 2362)
+                             for form in self.forms), 2398)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),

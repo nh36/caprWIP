@@ -8,7 +8,141 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
-## Forty-fifth alignment checkpoint: whine through the two wills
+## Forty-sixth alignment checkpoint: wind through word
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base476155782954a1246ef9bf56cecd9d57edd5b20b, branch update.
+Tranche45 is released;46 completion excludes46 release,47 preparation,
+scientific adoption and publication. Immutable preparation pins6323 forms,
+55 inherited analytical identities and133 research hashes. Never recreate
+it or execute/import a candidate after persistence starts.
+
+### Question
+
+Can all55 identities be reconciled without weather/winding, withy/osier,
+wold/wield, masculine/feminine wolf, wonder/wound, wool/love or word/fate
+conflation? Can actual bodies independently date indexed forms? Does
+wolf citation agreement conceal a source-supported regularity disagreement,
+and does wool nasality really represent different cells rather than
+notation? Each assertion can be confirmed or refuted by the held passage.
+
+### Current state
+
+Before edits:361 bounded/32 unreviewed rows;6323 forms,1395 consultations,
+6615 positions,489 comparisons and1123 rationales. All selected input
+stages are pgmc. Withy retains PROTO *wáiθiz* and input *wḯθagą*;
+the other seven rows retain their exact selected fields. Original46
+scientific protections, prior receipts and outside research are fixed.
+No previously completed source survey is restarted.
+
+### Diagnosis
+
+Firing census, new traces, counterfactuals: n/a, no executable edits.
+All55 inherited identities are individually reconciled. Thirty-seven
+needed native occurrences and32 processes add69 records, with two reused
+focused positions and35 reasons (34 supports, one focused explanation).
+The126 positions link124 records. Exact58 SOURCE amendments comprise55
+cells and three explicitly body-backed dates. No review identity/status,
+scope/target/applicability owner changes. Winter's attested plural remains
+in its actual discussion-only consultation.
+
+Fulk's actual PGmc participle, wolf and pre-assimilation wool stem date
+their index representations; the wonder token and resulting wool stem
+remain unspecified rather than being dated by adjacent examples or
+index headings [@Fulk2018, pp.56,91,113,124,389].
+Native corrupted symbols and optional forms remain alongside already
+certified quotations [@Kroonen2013, pp.571,587,598-599].
+
+### Literature
+
+Complete relevant dictionary bodies and load-bearing cross-references:
+[@Kroonen2013, pp.xxxii-xxxiii,568,570-573,586-588,597-601;
+@Orel2003, pp.98,444-446,453-456,463-465,467-469,472-476].
+Complete relevant grammar arguments, tables, footnotes and cross-references:
+[@Ringe2017, pp.122-133,139-141,171-173,241-244,282-284;
+@Fulk2018, pp.55-57,91-96,112-114,123-127,163-165,245-248,389;
+@RingeTaylor2014, pp.26-28,31-33,327-329].
+The previously read general wind-raising consultation is preserved,
+not a new lexical quote [@Cercignani1980, pp.126-134].
+Reported Kortlandt, Schaffner and other originals are not independently
+read just because their arguments occur in the held accounts
+[@Kroonen2013, pp.xxxii-xxxiii,598; @Ringe2017, pp.132-133].
+Native span verification is text-checked, not a new image campaign.
+
+### Historical analysis
+
+Stage/scope: explicit PGmc, PNWGmc/PWGmc and actual PIE ancestral cells
+remain separate from later OE attestations and unspecified intermediates.
+Identical *wullu* strings in two sources do not transfer dates
+[@Ringe2017, p.242; @RingeTaylor2014, p.32].
+Confidence does not derive, gate or alter a stage assignment.
+Kroonen's mobile-neuter wool nominative/plural are same-etymon ancestral
+cells, not unrelated comparanda [@Kroonen2013, pp.598-599].
+
+Wolf's focused explanation is the explicit warrant for rejecting confidence
+in regular labialization: sample size, female chronology, voice-family and
+expanded-condition counterexamples. Kroonen's qualified conditioned-law
+account and separate before-j argument remain visible, not caricatured as
+certainty [@Kroonen2013, pp.xxxii-xxxiii,598;
+@Ringe2017, pp.127-133,140-141]. No named Kroonen2013 rebuttal is claimed.
+Ringe's retained citation and actual vocative are independent of this
+regularity judgement [@Ringe2017, pp.140-141].
+
+Historical phenomenon versus executable proxy: no new rule characterization.
+Chronology edges promoted: none. No stage or historical domain is inferred
+from an identifier, executable environment, final-output fit or confidence.
+Authors' analogy and apparent phonetic exceptions are documented without
+adopting lexical variability or grammatical conditioning
+[@Fulk2018, p.164; @RingeTaylor2014, pp.31-33].
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+All eight core dispositions are bounded by precise remaining premises.
+Wolf's focused regularity cause is source-explicit; all eight whole-row
+causes remain unestablished. Wool's real cell/nasality distinction does
+not select a unique formation or explain all source representations.
+Registry-verdict: n/a, because no sound-change adjudication lands.
+
+### Propagation
+
+SOURCE: forms/coverage/analyses/comparisons/rationales TSVs, two exact
+reading-accountability receipts, commentary, README, this audit and
+source-sensitive tests. Validation and serialization preceded persistence
+exactly once. Current SOURCE/receipts/tests, not a persisted candidate,
+are authority. Independent46 verification uses frozen before-state,
+reverses amendments, resolves native coordinates and protects all outside
+research, previous receipts and ORIGINAL46 scientific hashes.
+Generated projections follow only `adjudicate.py --refresh`.
+No Foma/full Germanic assay or PDF is needed for this annotation increment.
+
+All515 focused survey/analysis tests pass in697.963s. Canonical
+refresh/freshness, bibliography, section locators,71 new-prose printed-page
+references, all nine headings and whitespace pass. Independent verification
+reverses58 fields and preserves6323 old forms,6560 outside positions,
+481 unaffected comparisons,1123 old rationales,1364 outside consultations,
+126 untouched research hashes and46 ORIGINAL scientific hashes.
+All37 distinct native paragraph/hash/Unicode spans resolve.
+
+### Residue
+
+Totals6392 forms,1395 consultations,6686 positions,490 comparisons and1158
+rationales;369 bounded/24 unreviewed core rows. All786 dictionary
+dispositions survive with2398 records. The independent alignment refusal
+remains separate from the unchanged RT conventions/typography gap.
+Exact winding ancestry, winter origin/plural history, withy dental extension,
+wold root, wolf chronology/regularity, wonder membership/az representation,
+wool formation/retention and word laryngeal admission remain the named
+non-adopting questions [@Kroonen2013, pp.571-573,587-588,598-600;
+@Orel2003, pp.445,455-456,464,468,474-475;
+@Ringe2017, pp.123,132-133,140-141,172,242-243;
+@Fulk2018, pp.91,113,164; @RingeTaylor2014, pp.31-33,327-329].
+Tranche46 remains uncommitted. No47 preparation, scientific adoption,
+introduction or PDF; the full393-row programme remains unfinished.
+
+## Forty-fifth alignment checkpoint: whine through the two wills (released47615578)
 
 ### Identity
 
