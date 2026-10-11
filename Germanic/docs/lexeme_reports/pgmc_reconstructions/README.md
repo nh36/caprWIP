@@ -118,8 +118,8 @@ gap. The fully verified three-source gate therefore still refuses
 completion; the held-text reading is finished with named limits, not
 newly image-certified.
 
-There are5792 evidence records,1393 actual consultations and6049
-analytical positions, with472 comparisons and890 rationales. The RT
+There are5856 evidence records,1393 actual consultations and6119
+analytical positions, with475 comparisons and924 rationales. The RT
 occurrence audit removed31 overlapping new extractions before integration;
 genuine repeated forms at different positions/cells/stages remain.
 The persisted occurrence, remap, passage, page and glyph-limit receipts
@@ -127,8 +127,8 @@ document that distinction. Only author attribution and appended notes
 change in the three named inherited RT records; their forms, pages,
 stages and verification remain intact.
 
-Three hundred five core rows now have individually reconciled, bounded alignment:
-1933-2237. The remaining88 are unreviewed. The second tranche builds on
+Three hundred thirteen core rows now have individually reconciled, bounded alignment:
+1933-2245. The remaining80 are unreviewed. The second tranche builds on
 the35 preparatory dictionary decisions rather than treating that preparation
 as finished all-source alignment. Each completed
 alignment retains all available member positions and names its specific
@@ -136,6 +136,60 @@ remaining formation, reflex, representation or selected-cell premise;
 none is a settled whole-word equivalence or established whole-case cause.
 Ringe's ask-specific following-j reason and RT's bake following-i/lost-trigger
 reason are position support, not a completed class census.
+
+The thirty-ninth tranche completes swine, sword, tap, team, ten,
+thane, thanks and thatch, rows2238-2245, from released
+8fcbcb339ea219aa3e7f125ee2b8a0df345873ca. All52 inherited
+identities are individually reconciled. Thirty-seven native
+occurrences and27 scoped arguments add64 records;122 positions
+link116 records. Sixty exact SOURCE fields cover52 cells, three
+arguments, two stages, one kind and two literal/comparison fields.
+All1393 consultation identities/statuses and786 dictionary reviews
+survive, with2136 dictionary records. Thirty-four new rationales
+comprise33 position supports and one focused divergence explanation.
+
+Swine compares diminutive/indirect Latin relatedness with
+substantivized of-pig adjective ancestry; its focused cause remains
+unestablished [@Orel2003, pp.389,397; @Kroonen2013, pp.490,502;
+@Ringe2017, pp.145-147]. Sword's *swerdra-* is an attractive
+precursor, not the rejected Nikolaev outcome **sawerda-; exact
+receipts repair the inherited classification without choosing
+the etymology [@Kroonen2013, pp.499-500].
+Tap keeps legitimate dictionary-only scope and a bounded Kroonen
+negative, not manufactured dissent [@Orel2003, pp.402,405;
+@Kroonen2013, pp.510-511].
+Team distinguishes original g-loss, literal x and the unrelated
+OF team translation [@Orel2003, pp.403,405;
+@Kroonen2013, pp.511,515; @RingeTaylor2014, pp.177-179].
+
+Ten retains stop-protected un and a qualified PWGmc i-stem
+date; shared-inflection PGmc versus probably later origin is a
+focused preference difference, still unexplained. Actual WS
+*tien* and unmutated *hund-tēon-tig* remain separate
+[@Ringe2017, pp.104-106,165-169,319-320;
+@Fulk2018, pp.225-228; @RingeTaylor2014, pp.252-254].
+Thane's traditional child-pedigree rejection has an explicit
+accent-dependent consonantal warrant, not a named Orel rebuttal
+or resolved whole genealogy. Ringe's conditional counterexample
+and disputed Kluge analysis remain visible; rare late epenthesis
+is not universal absence [@Orel2003, pp.418-419;
+@Kroonen2013, pp.535-537; @Ringe2017, pp.137-140;
+@RingeTaylor2014, pp.329-331].
+
+Thanks preserves masculine/feminine cells, probable collective
+and verb relationships, and actual PGmc body versus undated
+index occurrence [@Orel2003, p.416; @Kroonen2013, pp.533-534;
+@Ringe2017, pp.118-120; @Fulk2018, pp.67-69,389;
+@RingeTaylor2014, pp.511-513].
+Thatch's starred English covering gloss becomes process evidence;
+its exact old string survives reversible receipts and original
+extraction, not a reconstructed lexical slot
+[@RingeTaylor2014, pp.146-148]. Cover and burn remain distinct
+[@Orel2003, p.415; @Kroonen2013, pp.531-532].
+All eight core causes remain unestablished. Receipts are
+`alignment-2238-2245-amendments.tsv` and
+`alignment-2238-2245-occurrences.tsv`. No scientific adoption,
+automatic39 release,40 preparation or PDF is included.
 
 The thirty-eighth tranche completes summer, sun, sunder, sup,
 swallow bird, swan, swell and swim, rows2230-2237, from released

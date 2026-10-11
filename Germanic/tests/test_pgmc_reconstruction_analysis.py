@@ -623,7 +623,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t305\nunreviewed\t88\n")
+        """), "alignment_status\trows\nbounded_limit\t313\nunreviewed\t80\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -817,7 +817,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t305\nunreviewed\t88\n")
+        """), "alignment_status\trows\nbounded_limit\t313\nunreviewed\t80\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -875,10 +875,44 @@ class LiveAnalyticalTests(unittest.TestCase):
         for row in map(str, range(2166, 2174)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
+    def test_thirty_ninth_queries_preserve_scoped_causes_dates_and_process_gloss(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT comparison_id,comparability,explanation_status FROM comparisons
+            WHERE comparison_id IN
+                ('swine-formation-pedigree','ten-inflection-dating','thane-child-cognate-admission')
+            ORDER BY comparison_id
+        """
+        expected = ("comparison_id\tcomparability\texplanation_status\n"
+                    "swine-formation-pedigree\tsubstantive_difference\tunestablished\n"
+                    "ten-inflection-dating\tsubstantive_difference\tunestablished\n"
+                    "thane-child-cognate-admission\tsubstantive_difference\tsource_explicit\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2238 AND 2245
+        """), "positions\tevidence\n122\t116\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT evidence_id,stage_interpretation,attribution_status FROM analyses
+            WHERE row_id='2242' AND evidence_id IN
+                ('rt-complete-2242-001','rt-complete-2242-002')
+            ORDER BY evidence_id
+        """), "evidence_id\tstage_interpretation\tattribution_status\n"
+              "rt-complete-2242-001\tpwgmc\tconditional\n"
+              "rt-complete-2242-002\tunspecified\tillustrative\n")
+        self.assertEqual(analytical.query(tables, """
+            SELECT form_kind,diplomatic_form,comparison_form FROM forms
+            WHERE evidence_id='rt-complete-2245-002'
+        """), "form_kind\tdiplomatic_form\tcomparison_form\nprocess\t\t\n")
+        for row in map(str, range(2238, 2246)):
+            self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
+
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 2097)
+                             for form in self.forms), 2136)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
                              for review in self.reviews), 786)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),

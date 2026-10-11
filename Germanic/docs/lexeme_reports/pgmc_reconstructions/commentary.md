@@ -10,11 +10,11 @@ new publication remain subsequent work.
 
 Current held-source reading covers the relevant three comparative accounts:
 193 Ringe,146 Fulk and259 Ringe-Taylor consultations, separately from
-393 applicability screens per source. The database contains5792 evidence
-records,1393 actual consultations,6049 positions,472 comparisons and890
+393 applicability screens per source. The database contains5856 evidence
+records,1393 actual consultations,6119 positions,475 comparisons and924
 rationales. The fully verified reading gate still refuses the named
 Ringe-Taylor convention/typography gap; full feature alignment and
-explanation remain ongoing:305 core rows are bounded and88 unreviewed.
+explanation remain ongoing:313 core rows are bounded and80 unreviewed.
 Earlier measurements below are checkpoint
 history, not current totals or an exhaustive-library workload.
 
@@ -33,6 +33,227 @@ body-reading increment below adds actual evidence without completing the
 three-source programme. The completed Ringe/Fulk continuation below
 supersedes those initial scheduling counts; full analytical closeout
 remains separate.
+
+## Thirty-ninth alignment: swine formation, numeral inflection and thane ancestry
+
+Rows2238-2245 cover swine, sword, tap, team, ten, thane, thanks and
+thatch. All52 inherited identities are individually reconciled. Thirty-seven
+native occurrences and27 complete-argument processes add64 records;
+122 positions link116 distinct records, including six focused positions
+reusing evidence. Sixty reversible SOURCE fields comprise52 cells, three
+arguments, two asserted stages, one kind and two literal/comparison fields.
+No consultation identity or status changes. Native text quotations are not
+new image certifications, and selected scientific owners remain unchanged.
+
+### Swine: diminutive versus substantivized adjective
+
+Orel's certified *swīnan* and native *swinan* are the neuter pig/swine
+noun, not the adjacent fading verb. He identifies the noun with Latin
+*suīnus* 'of pig', a Slavic of-pig formation and Latvian 'dirty', from
+the Indo-European pig root. His sow cross-reference is a feminine root
+noun, not another citation of the selected neuter word. Its actual body
+is independently read rather than supplied with an invented swine ending
+[@Orel2003, pp.389,397].
+
+Kroonen instead specifies a neuter diminutive derivative of sow with
+*-ina-*, comparing the goat-kid formation, and says that the Latin pork
+adjective is only indirectly related. The inherited certified long-i
+stem and native macronless *swina-* both survive. His sow paradigm has
+a separate nominative/accusative history; neither its leveled velar nor
+its Nordic development belongs in the swine noun's selected ending
+[@Kroonen2013, pp.490,502]. Ringe explicitly gives PIE neuter
+*su(H)īnom* 'of pigs' to PGmc *swīną* 'pig': substantivization and
+initial CuV to CwV supply an actual morphological/phonological argument,
+not a root-to-output assembly attributed to an author
+[@Ringe2017, pp.145-147].
+
+The focused `swine-formation-pedigree` question preserves the adjective
+identification and diminutive/indirect-relatedness warrants. Its cause
+remains unestablished: exact inherited suffix history and the comparative
+identity premise are missing. The selected acute/diaeresis and complete
+input cell do not become authored quotations merely because long ī agrees.
+
+### Sword: proposed precursor is not rejected output
+
+Orel's certified *swerđan* supplies the sword noun and his own Slavic
+drill connection. The ache, sorb-tree, skin and Greek sword connections
+are separate bibliographical proposals, not simultaneous endorsements
+[@Orel2003, p.395]. Kroonen says that no certain etymology exists,
+possibly deriving the noun from the ulcerate/ache verb. He calls
+*swerda-* from *swerdra-* by dissimilation attractive, with instrumental
+*-dra-* from *-dhro-*. Only the separate Nikolaev proposal
+*sHu-er-tó-*, allegedly connected with the Luwian dagger word, is
+rejected: it would yield **sawerda-, not *swerdra-*
+[@Kroonen2013, pp.499-500].
+
+The inherited precursor had been misclassified as that rejected outcome.
+Both shared-entry argument annotations and its false hypothetical-output
+stage label are repaired with exact old/new receipts. Conditional
+attribution and unspecified precursor date remain independent of the
+unchanged verification and confidence. There is no license to choose the
+instrumental etymology or silently replace Orel's dental.
+
+Ringe-Taylor explicitly dates the sword precursor PNWGmc and cites
+Old English *sweord*. Northumbrian *sword* has a further weor-to-wor
+development after Anglian monophthongization; *werc* supplies the
+relative-order contrast. These are dialect and chronology observations,
+not another nominal case or a competing sword etymology
+[@RingeTaylor2014, pp.181-183]. The exact suffix pedigree and shared
+phonetic interpretation remain bounded; source preferences do not
+establish an exclusive drill-versus-ache dispute.
+
+### Tap: dictionary-only coverage remains legitimate
+
+Orel's masculine tap/plug n-stem has a questioned Sanskrit push/strike
+and Greek knead connection. Native *tappa* differs from selected *tæppa*;
+the source vowel is not silently corrected. The derived plug verb and
+the tip cross-reference are separately quoted from their actual bodies
+[@Orel2003, pp.402,405]. Kroonen's nearby lose/drop iterative is not a
+stopper genealogy; its reading does not reverse the inherited bounded
+negative [@Kroonen2013, pp.510-511]. No grammar consultation is invented,
+and neither absence nor the question mark becomes a scholarly opposition.
+The geminate and n-stem pedigree still lack an established explanation.
+
+### Team: original g, retained x and an unrelated translation
+
+Kroonen derives the masculine rein/bridle formation as a mo-stem of
+the pull verb. His *taugma-* is the original predecessor of *tauma-*,
+not a second final citation, and dream's *draugma-* supplies the
+g-loss comparison. The pull entry gives its own European derivation,
+without thereby dating every noun predecessor [@Kroonen2013, pp.511,515].
+Orel's *tauxmaz* retains literal x and the tie/offspring/family senses;
+its *teuxanan* pointer on403 is preserved beside a new actual body
+occurrence on405. Vries's opposition to Grassmann is bibliographical
+report, not a newly verified original argument [@Orel2003, pp.403,405].
+
+The conditional PWGmc arrange verb in Ringe-Taylor yields Old English
+*tiohhian* 'intend, judge'. Old Frisian *tiuche* is translated 'team;
+parcel of land', but that translation does not establish the selected
+Old English noun's lexical identity [@RingeTaylor2014, pp.177-179].
+Velar interpretation, loss date, mo-formation and full selected ending
+need separate premises; neither a global x/g mapping nor a translation
+match closes the row.
+
+### Ten: stop-protected nasal is not settled inflection dating
+
+The dictionaries quote the cardinal separately from tenth and a set of
+ten; Kroonen's ultimately fit-in-a-row connection is not the homographic
+pull verb [@Orel2003, pp.403-404; @Kroonen2013, pp.512,515].
+Ringe's actual PIE *déḱm̥ d* retains its combining signs and internal
+space. His *dékund* and *téhunt* are separate intermediates, not
+independently dated PGmc forms. Resolution of the syllabic sonorant,
+nasal assimilation and final-stop loss after earlier final-n loss
+explain retained un, unlike a short nasal vowel. The assimilation
+order is preferred for economy, not asserted uniquely certain
+[@Ringe2017, pp.104-106,165-169,243].
+
+Fulk probably prefers the older dental-final *dékmt* over *dékm* for
+that retention, but the WGmc reflexes require a *dékomt* preform
+unparalleled as such in Indo-European. His footnotes retain both the
+complex older-form controversy and reported analogical accounts.
+This does not create blanket opposition to stop-protected n. The
+existing discussion-only review receives process and attestation
+evidence, not reconstructed roots hidden in new lexical records
+[@Fulk2018, pp.225-228].
+
+Ringe considers a PGmc beginning of shared i-stem numeral inflections
+simplest, while explicitly allowing natural parallel innovation.
+Fulk instead judges the argument for post-PGmc origin much likelier.
+The focused `ten-inflection-dating` case preserves that genuine
+preference difference, without making their overlapping alternatives
+exclusive or treating the two Ringe books as independent votes
+[@Ringe2017, pp.319-320; @Fulk2018, pp.225-227].
+
+Ringe-Taylor actually prints PWGmc (?) before *tehuni-*; the exact
+asserted-stage repair keeps the qualification and does not change
+confidence. Its later breaking/double-umlaut intermediates stay undated.
+Actual WS *tien*, Kentish/Mercian *tén* and innovative Northumbrian
+*téno* remain distinct from selected unmutated *tēon*. Fulk locates
+that unmutated stem in *hund-tēon-tig*, not a demonstrated free
+citation. The dialect argument compares mountain and milk, rejecting
+early raising through u for the first two without claiming certainty
+for isolated milk [@RingeTaylor2014, pp.252-254;
+@Fulk2018, pp.226-227]. Complete selected-cell and inflection-origin
+causes remain unestablished.
+
+### Thane: an explicit rejection warrant, not a resolved genealogy
+
+Orel admits the Greek child/Sanskrit offspring connection in the
+give-birth family. His certified velar and native *þeznaz* survive
+separately. The adjacent request and servant entries are not silently
+adopted as the same ancestry [@Orel2003, pp.418-419]. Kroonen instead
+derives retainer from request/beg, interpreting patronage/service
+semantics. He explicitly rejects traditional *tek-no-* because
+accent alternatives predict **behna- or **þekka-**, the latter
+with Kluge's law, not the attested consonants. Native b in the
+first prediction is not silently repaired to thorn
+[@Kroonen2013, pp.535-537].
+
+This supplies a source-explicit rejection warrant for focused
+`thane-child-cognate-admission`, not a named rebuttal of Orel.
+Ringe's PGmc (?) membership is qualified by the absence of Gothic;
+if the Greek connection holds, g entails suffix accent and constitutes
+a counterexample to Kluge's law. The complete continuation rejects
+the proposed rescue assumptions and the law, instead favoring a
+sound-symbolic gemination account. That is Ringe's reported analysis,
+not a new CAPR sound law or an automatic endorsement of the request
+pedigree [@Ringe2017, pp.137-140].
+
+Ringe-Taylor's independent PNWGmc and PWGmc examples retain their
+native initials. Light final-Cn clusters usually lack epenthesis;
+rare late WS *begen* is likely a later development. “Usually” cannot
+be rewritten as “never”, nor can the later vowel reconstruct the
+selected earlier suffix [@RingeTaylor2014, pp.212-214,329-331].
+The focused warrant explains the explicit refusal; disputed law,
+cognate admission, PGmc membership and complete selected genealogy
+remain unresolved. All whole-row causes remain unestablished.
+
+### Thanks: collective, gender and actual body versus index
+
+Masculine thanks and Nordic feminine gratitude/pleasure are separate
+formations. Orel's irregular weak think verb and denominal thank
+verb are distinct. Kroonen's think verb probably continues an
+o-grade i-present despite its causative-like shape; this is not
+automatically a disagreement about the noun's derivation
+[@Orel2003, p.416; @Kroonen2013, pp.533-534].
+Ringe's post-PIE perceive/think root, explicitly PGmc noun and verb
+also remain distinct dated units [@Ringe2017, pp.118-120].
+
+The 2014 addendum probably treats feminine thanks as a collective
+of masculine thought/thanks and probably derives both from think,
+with divergent meanings and probable Gothic cognacy. Its two
+probabilities are retained; this is a correction/refinement to the
+older volume, not an independent author vote [@RingeTaylor2014, pp.511-513].
+Fulk's starless index *þankō* points to the actual body on68, where
+PGmc *þankō* passes through undated *þakku* to rounded *þokk*.
+That body date does not automatically date the index as a separately
+established selected endpoint or identify the masculine input
+[@Fulk2018, pp.67-69,389]. Exact collective and full selected
+formation premises remain unestablished; no artificial dispute is added.
+
+### Thatch: semantic gloss is not a reconstructed lexical item
+
+Both dictionary accounts connect the roof noun with covering,
+while preserving the separate derived cover verb and feminine
+roof/covering formations. Kroonen's thematic *(s)tég-e-* and following
+burn homonym are distinct etyma; the latter's native header is
+not clipped into the preceding cover occurrence
+[@Orel2003, p.415; @Kroonen2013, pp.531-532].
+Ringe-Taylor explicitly dates the PGmc/PWGmc roof examples and
+cites the actual Old English outcome. Latin *toga* is given with
+the original English meaning *“covering’* and a collective label:
+this starred gloss is metalinguistic, not a reconstructed word
+[@RingeTaylor2014, pp.146-148].
+
+The inherited false lexical record becomes process evidence.
+Its old literal and comparison strings survive in exact reversible
+receipts and the unchanged original extraction occurrence; they
+are removed only from lexical-form slots and retained in the
+argument. No evidence identity or original paragraph is deleted.
+The actual roof-fronting chain does not supply the complete
+selected formation, accent or ending. Three focused questions,
+34 new rationales and eight bounded rows do not complete the
+393-row alignment, conditioning census or explanatory synthesis.
 
 ## Thirty-eighth alignment: sun paradigms, bird naming and sonorant pedigrees
 

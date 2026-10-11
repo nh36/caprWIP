@@ -8,6 +8,178 @@ completed foundations, not the stopping point of this authorized stage.
 Earlier checkpoint counts and full-library obligations are historical,
 not current authority.
 
+## Thirty-ninth alignment checkpoint: swine through thatch
+
+### Identity
+
+SC/executable identifier: none; annotation-only reconstruction research.
+Base8fcbcb339ea219aa3e7f125ee2b8a0df345873ca on update;38 is committed
+and pushed. Rows2238-2245 cover swine, sword, tap, team, ten, thane,
+thanks and thatch. Immutable preparation pins5792 forms,52 inherited
+identities and115 research hashes. Complete39 is authorized, not
+its release,40 preparation or scientific adoption. Never recreate
+preparation or execute/import the persisted candidate.
+
+### Question
+
+Can all52 inherited identities be reconciled without conflating
+swine adjective/diminutive, sword precursor/rejected output, team
+ancestor/translation, numeral inflection, thane child/request
+pedigrees, thanks gender/collective or a starred semantic gloss
+with a reconstructed lexical word? Exact source context confirms
+or refutes each classification; token presence, erased qualifications
+and unreceipted changes do not establish completion.
+
+### Current state
+
+Eight unreviewed core rows;305 previously bounded/88 unreviewed,
+5792 forms,1393 consultations,6049 positions,472 comparisons and890
+rationales. Selected input stages are pgmc; swine's differing
+input already has its own sidecar. The original46 scientific
+hashes remain protected. Fulk/ten is discussion_only; tap has
+no grammar consultation and a bounded Kroonen negative.
+
+### Diagnosis
+
+Executable census, new traces, private variants and counterfactuals:
+n/a because no rule, selected input or canonical chronology changes.
+No Foma, full Germanic suite, private assay or PDF is required.
+All52 identities survive individual reconciliation. Thirty-seven
+native occurrences and27 processes add64 records; six reused
+focused positions yield122 positions/116 records. Exact60 SOURCE
+fields cover52 cells, three arguments, two stages, one kind and
+two literal/comparison fields. No consultation/status/target/
+scope/applicability amendment is needed.
+
+The sword predecessor is conditionally proposed, not rejected.
+The thatch semantic gloss becomes process evidence with blank
+lexical slots; exact old strings and the original occurrence
+remain, including the literal in its corrected argument.
+The ten i-stem is explicitly PWGmc (?) without changing confidence.
+
+### Literature
+
+Complete relevant arguments, neighboring pages, footnotes and
+load-bearing cross-references are read, not only favored quotations.
+Dictionary readings: [@Orel2003, pp.388-389,395-397,400-405,415-419;
+@Kroonen2013, pp.490,499-502,510-512,515-517,531-537].
+Grammar readings: [@Ringe2017, pp.100,104-106,118-120,137-141,144-148,164-169,242-244,319-321;
+@Fulk2018, pp.67-69,225-228,388-389;
+@RingeTaylor2014, pp.146-148,177-179,181-183,212-214,252-254,329-331,511-513].
+
+Swine's direct adjective versus diminutive/indirect Latin
+connection has a substantive focused formation question
+[@Orel2003, p.397; @Kroonen2013, pp.490,502;
+@Ringe2017, pp.145-147].
+Sword's attractive *swerdra-* predecessor and impossible
+**sawerda- prediction are different hypotheses, not interchangeable
+source outputs [@Kroonen2013, pp.499-500].
+Tap's questioned comparative connection does not reverse its
+dictionary-only scope [@Orel2003, pp.402,405;
+@Kroonen2013, pp.510-511].
+Team's original g-loss and retained x differ from the arrange
+verb with an OF team translation [@Orel2003, pp.403,405;
+@Kroonen2013, pp.511,515; @RingeTaylor2014, pp.177-179].
+
+Ten's protected final nasal and inflection onset are separable
+questions: the shared i-endings favor a PGmc beginning for Ringe
+with parallel innovation allowed, whereas Fulk judges post-PGmc
+origin likelier [@Ringe2017, pp.104-106,165-169,319-320;
+@Fulk2018, pp.225-228].
+Thane's child connection is admitted by Orel, explicitly rejected
+by Kroonen's accent-dependent consonant predictions and
+conditionally used by Ringe against Kluge's law
+[@Orel2003, pp.418-419; @Kroonen2013, pp.535-537;
+@Ringe2017, pp.137-140].
+Thanks has distinct masculine/feminine/collective and verb
+relationships, actual body versus index dates, and a qualified
+older-volume refinement rather than an independent vote
+[@Orel2003, p.416; @Kroonen2013, pp.533-534;
+@Ringe2017, pp.118-120; @Fulk2018, pp.67-69,389;
+@RingeTaylor2014, pp.511-513].
+Thatch's cover/burn homonyms and starred English meaning gloss
+must not manufacture lexical identity [@Orel2003, p.415;
+@Kroonen2013, pp.531-532; @RingeTaylor2014, pp.146-148].
+
+### Historical analysis
+
+Source dates, geographic scope, confidence, verification and
+selected-input conventions remain independent. Actual ten
+PWGmc (?) is not a certainty claim; later double-umlaut
+intermediates remain undated [@RingeTaylor2014, pp.252-254].
+Ringe's reconstructed numeral chapter context is not a new
+local date for its320 occurrence [@Ringe2017, pp.319-320].
+Native macronless swine, native thane z/b/p, combining ten
+syllabicity and original certified glyphs coexist rather than
+being silently normalized [@Orel2003, pp.397,418;
+@Kroonen2013, pp.502,536; @Ringe2017, p.105;
+@RingeTaylor2014, pp.213,330-331].
+Fulk/ten remains discussion_only; its reconstructed preforms
+are faithfully discussed, not added as new lexical quotations
+[@Fulk2018, pp.226-227].
+
+The thane source-explicit explanation concerns refusal of the
+traditional child pedigree by its predicted consonants, not
+a named rebuttal of Orel. Ringe's law/counterexample objection
+survives. Rare late WS epenthesis cannot imply either universal
+absence or an inherited suffix vowel
+[@Kroonen2013, p.536; @Ringe2017, pp.137-140;
+@RingeTaylor2014, pp.329-331].
+Historical edges: none adopted. No research chronology claim
+is promoted from executable environment or matching finals.
+
+### Verdict
+
+REFORMULATE research annotations / RETAIN scientific owners.
+No registry verdict: this is not an SC adjudication.
+All eight whole-row alignments are bounded and their causes
+unestablished. Swine formation and ten inflection-date causes
+remain unexplained; thane's focused traditional-pedigree
+rejection has a source-explicit warrant, not settled genealogy.
+Thirty-four new rationales comprise33 position supports and
+one divergence explanation. Author counts and output fit do
+not choose a history.
+
+### Propagation
+
+SOURCE forms/coverage/analyses/comparisons/rationales, exact
+amendment/occurrence receipts, page-cited commentary/README,
+this full nine-heading audit and source-sensitive regressions
+are persisted. The combined442-test survey/analysis run passes441;
+its sole failure is a new query expectation that calls the
+undated ten intermediate endorsed rather than illustrative.
+Only that expectation is corrected; all12 selected new/corrected
+regressions then pass, without rewriting SOURCE for a checker.
+Canonical refresh and independent artifact freshness report
+CONTROL PLANE CLEAN. Bibliography, section locators, all92
+new-prose printed-page references, nine headings and whitespace pass.
+
+Independent post-refresh verification preserves5792 inherited
+forms except60 exact receipted fields,5997 outside positions,
+464 unaffected comparisons,890 inherited rationales and1365
+outside consultations. All1393 consultation identities/statuses,
+786 dictionary reviews, selected corpus fields,108 untouched
+research hashes and46 ORIGINAL scientific hashes survive.
+All37 native paragraph hashes/whole-token Unicode spans resolve.
+Totals are5856 forms,6119 positions,475 comparisons and924
+rationales;122 tranche positions link116 records, with2136
+dictionary evidence records. Read-only repeated query evidence is
+session artifact `pgmc-313-alignments-query-results.txt`.
+Alignment independently refuses80 unreviewed rows; the unchanged
+Ringe-Taylor convention/typography gap is a separate reading refusal.
+Baseline/fingerprint effect: none. Tranche39 is completed,
+not released; full393-row alignment remains unfinished.
+
+### Residue
+
+Exact selected endings/accents, swine suffix identity, sword
+pedigree, team velar/date alignment, ten inflection onset,
+thane genealogy/membership, thanks collective formation and
+thatch whole-noun ancestry remain bounded.
+Full393 alignment, conditioning census, synthesis/watchlist,
+specialist dispatch and publication remain unfinished.
+No39 release,40 preparation or scientific adoption is included.
+
 ## Thirty-eighth alignment checkpoint: summer through swim
 
 ### Identity
