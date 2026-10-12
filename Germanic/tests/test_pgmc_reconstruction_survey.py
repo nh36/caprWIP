@@ -3616,7 +3616,10 @@ class LiveSurveyTests(unittest.TestCase):
         _, sources, _, _ = survey.load()
         readme = (survey.ROOT / survey.DIRECTORY / "README.md").read_text(
             encoding="utf-8")
-        self.assertIn("## Prioritized consultation programme", readme)
+        self.assertIn("sources.tsv", readme)
+        self.assertIn("consultation mode", readme)
+        self.assertIn("review_targets.tsv", readme)
+        self.assertIn("Cartesian workload is obsolete", readme)
         self.assertEqual(len(sources), 91)
         self.assertEqual(sum(row["role"] != "excluded" for row in sources), 82)
         self.assertTrue(all(row["consultation_mode"] and row["payoff"] for row in sources))
