@@ -5,6 +5,7 @@ import re
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
@@ -55,6 +56,53 @@ class SurveyValidationTests(unittest.TestCase):
         }])
         self.assertEqual([row["status"] for row in checks], ["evidence_found", "unchecked"])
         self.assertTrue(survey.incomplete(self.sources, checks))
+
+    def test_portable_missing_declared_original_is_not_a_new_verification(self):
+        self.sources[0]["holding_paths"] += ";docs/references/original.pdf"
+        self.forms[0]["basis"] = "docs/references/original.pdf"
+        self.forms[0]["verification"] = "page_image_checked"
+        before = copy.deepcopy(self.forms)
+        with patch.object(survey, "tracked_paths", return_value={"docs/references/source.txt"}):
+            survey.validate(self.sources, self.forms, self.reviews, self.corpus,
+                            {"Source"}, self.root, mode="portable")
+        self.assertEqual(self.forms, before)
+        with self.assertRaisesRegex(survey.SurveyError, "missing.*holding"):
+            self.validate()
+
+    def test_portable_still_requires_tracked_text_and_safe_original_paths(self):
+        with patch.object(survey, "tracked_paths", return_value=set()):
+            with self.assertRaisesRegex(survey.SurveyError, "must be tracked"):
+                survey.validate(self.sources, self.forms, self.reviews, self.corpus,
+                                {"Source"}, self.root, mode="portable")
+            self.sources[0]["holding_paths"] = "../outside.pdf"
+            with self.assertRaisesRegex(survey.SurveyError, "out-of-library"):
+                survey.validate(self.sources, self.forms, self.reviews, self.corpus,
+                                {"Source"}, self.root, mode="portable")
+
+    def test_full_missing_pdf_only_holding_fails_even_without_evidence(self):
+        self.sources[0]["holding_paths"] = "docs/references/original.pdf"
+        with self.assertRaisesRegex(survey.SurveyError, "missing.*holding"):
+            survey.validate(self.sources, [], [], self.corpus, {"Source"}, self.root)
+        with patch.object(survey, "tracked_paths", return_value=set()):
+            survey.validate(self.sources, [], [], self.corpus, {"Source"}, self.root,
+                            mode="portable")
+        with patch.object(survey, "tracked_paths",
+                          return_value={"docs/references/original.pdf"}):
+            with self.assertRaisesRegex(survey.SurveyError, "missing.*holding"):
+                survey.validate(self.sources, [], [], self.corpus, {"Source"}, self.root,
+                                mode="portable")
+
+    def test_reference_symlink_cannot_escape_library_in_either_mode(self):
+        outside = self.root / "outside.txt"
+        outside.write_text("outside library")
+        (self.root / "docs/references/escape.txt").symlink_to(outside)
+        self.sources[0]["holding_paths"] = "docs/references/escape.txt"
+        with patch.object(survey, "tracked_paths", return_value=set()):
+            for mode in ("full", "portable"):
+                with self.subTest(mode=mode):
+                    with self.assertRaisesRegex(survey.SurveyError, "out-of-library"):
+                        survey.validate(self.sources, [], [], self.corpus,
+                                        {"Source"}, self.root, mode=mode)
 
     def test_scoped_negative_needs_explicit_basis(self):
         self.reviews.append({

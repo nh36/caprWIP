@@ -883,6 +883,9 @@ class ControlPlaneDocTests(unittest.TestCase):
         self.assertNotIn("rename_migration_manifest", generated)
 
 
+VALIDATION_MODE = "full"
+
+
 class ArtifactGraphTests(unittest.TestCase):
     """ONE artifact graph owns every generated artifact; adjudicate.py is a
     front-end to it and carries no builder lists of its own."""
@@ -895,7 +898,9 @@ class ArtifactGraphTests(unittest.TestCase):
         "registry_views": "projection",
         "coverage_census": "projection",
         "reader_book": "projection",
+        "pgmc_reconstruction_survey": "projection",
         "lexical_sources": "runtime",
+        "pgmc_lexical_integration": "projection",
         "book_draft": "projection",
         "index_verborum": "regen",
         "interaction_matrix": "runtime",
@@ -939,7 +944,7 @@ class ArtifactGraphTests(unittest.TestCase):
         """Every host-side projection is fresh in a committed tree."""
         ag = _load("artifact_graph")
         problems = []
-        for node in ag.nodes():
+        for node in ag.nodes(mode=VALIDATION_MODE):
             if node.kind == "projection":
                 problems.extend(node.verify())
         self.assertEqual(problems, [])
@@ -948,7 +953,7 @@ class ArtifactGraphTests(unittest.TestCase):
         """artifact_graph.declared_outputs() is the machine-readable
         declaration of which files each node owns."""
         ag = _load("artifact_graph")
-        outs = ag.declared_outputs()
+        outs = ag.declared_outputs(mode=VALIDATION_MODE)
         self.assertEqual(set(outs), set(self.REQUIRED_NODES))
         for name, paths in outs.items():
             self.assertTrue(paths, f"node {name} declares no outputs")
@@ -988,7 +993,7 @@ class ArtifactGraphTests(unittest.TestCase):
         for path in archives:
             self.assertTrue(path.is_file(),
                             f"declared ARCHIVE file missing: {path}")
-        owned = {p for paths in ag.declared_outputs().values()
+        owned = {p for paths in ag.declared_outputs(mode=VALIDATION_MODE).values()
                  for p in paths}
         self.assertEqual(sorted(archives & owned), [],
                          "an ARCHIVE artifact appears among graph node "

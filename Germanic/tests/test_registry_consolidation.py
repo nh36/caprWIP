@@ -138,8 +138,7 @@ class MemoAgreementTests(unittest.TestCase):
         for r in reg:
             if r["adjudication_status"] != "adjudicated":
                 continue
-            rc = adjudicate.check(r["sc_id"])
-            self.assertEqual(rc, 0, f"adjudicate --check failed for {r['sc_id']}")
+            self.assertEqual(adjudicate.check_memo(r["sc_id"]), [], r["sc_id"])
 
 
 class ReadingListTests(unittest.TestCase):

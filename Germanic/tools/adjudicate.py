@@ -259,20 +259,21 @@ def next_sc():
     return pending[0][1] if pending else None
 
 
-def refresh() -> int:
+def refresh(*, mode: str = "full") -> int:
     """Control-plane refresh: drive the ONE artifact graph to a clean state."""
     print("== control-plane refresh (artifact graph) ==")
     try:
-        artifact_graph.refresh()
+        artifact_graph.refresh(mode=mode)
     except artifact_graph.GraphError as exc:
         print(f"REFRESH FAILED: {exc}", file=sys.stderr)
         return 1
-    problems = artifact_graph.verify_all()
+    problems = artifact_graph.verify_all(mode=mode)
     if problems:
         for p in problems:
             print(f"STALE AFTER REFRESH: {p}", file=sys.stderr)
         return 1
-    print("CONTROL PLANE CLEAN")
+    print("PORTABLE PROJECTIONS CLEAN; runtime and full holding-dependent checks NOT RUN"
+          if mode == "portable" else "CONTROL PLANE CLEAN")
     return 0
 
 
@@ -429,12 +430,11 @@ def finalize(sc_id) -> int:
     return check(sc_id)
 
 
-def check(sc_id) -> int:
+def check_memo(sc_id) -> list[str]:
     errors = []
     row = load_registry_row(sc_id)
     if row is None:
-        print(f"{sc_id} not found in registry", file=sys.stderr)
-        return 1
+        return [f"{sc_id} not found in registry"]
     if row["adjudication_status"] != "adjudicated":
         errors.append(f"registry adjudication_status is {row['adjudication_status']!r}, not 'adjudicated'")
     verdict = row["verdict"]
@@ -476,6 +476,11 @@ def check(sc_id) -> int:
                 f"retired SC still has a live define {row['fst_identifier']} "
                 f"at germanic.txt line {lineno}"
             )
+    return errors
+
+
+def check(sc_id) -> int:
+    errors = check_memo(sc_id)
     # the registry never stores positions; the executable model owns them,
     # and stale projections are caught by the artifact-graph check below
     # every generated artifact must be fresh (non-mutating graph check)
@@ -551,6 +556,8 @@ def main() -> int:
         return 0
     if args == ["--refresh"]:
         return refresh()
+    if args == ["--refresh", "--mode", "portable"]:
+        return refresh(mode="portable")
     if (len(args) != 2
             or args[1] not in ("--prepare", "--check", "--finalize",
                                "--evidence", "--refresh")

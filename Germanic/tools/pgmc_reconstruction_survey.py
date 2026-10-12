@@ -14,6 +14,7 @@ import io
 import json
 import re
 import sqlite3
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
@@ -132,7 +133,22 @@ def inventory(root: Path = ROOT) -> list[dict[str, str]]:
     return sorted(rows, key=lambda row: int(row["row_id"]))
 
 
-def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path) -> None:
+def tracked_paths(root: Path) -> set[str]:
+    result = subprocess.run(
+        ["git", "-C", str(root), "ls-files", "-z"], check=True,
+        capture_output=True, text=True)
+    return set(result.stdout.rstrip("\0").split("\0"))
+
+
+def validate_mode(mode: str) -> None:
+    if mode not in {"full", "portable"}:
+        raise ValueError(f"unknown validation mode: {mode}")
+
+
+def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path,
+             *, mode: str = "full") -> None:
+    validate_mode(mode)
+    tracked = tracked_paths(root) if mode == "portable" else set()
     source_map = {key[0]: row for key, row in unique(
         sources, ("source_key",), "sources").items()}
     evidence_map = {key[0]: row for key, row in unique(
@@ -142,6 +158,8 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
     if not row_ids or not any(source["role"] != "excluded" for source in sources):
         raise SurveyError("survey requires a nonempty corpus and included source universe")
     references = (root / "docs/references").resolve()
+    if not references.is_relative_to(root.resolve()):
+        raise SurveyError("reference library escapes repository containment")
     for source in sources:
         key = source["source_key"]
         if key not in bibliography or source["role"] not in ROLES:
@@ -165,8 +183,15 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
                 raise SurveyError(f"source {key}: invalid {field}")
         for relative in ids(source["holding_paths"]):
             path = (root / relative).resolve()
-            if not path.is_relative_to(references) or not path.exists():
+            if not path.is_relative_to(references):
                 raise SurveyError(f"source {key}: missing or out-of-library holding {relative}")
+            optional_original = (mode == "portable" and relative not in tracked
+                                 and path.suffix.lower() == ".pdf")
+            if not path.exists() and not optional_original:
+                raise SurveyError(f"source {key}: missing or out-of-library holding {relative}")
+            if path.is_file():
+                with path.open("rb") as stream:
+                    stream.read(1)
     for form in forms:
         evidence_id, key = form["evidence_id"], form["source_key"]
         linked = ids(form["row_ids"])
@@ -182,8 +207,18 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
             if not form[field]:
                 raise SurveyError(f"{evidence_id}: {field} must be explicit")
         basis = (root / form["basis"]).resolve()
-        if not basis.is_relative_to(root.resolve()) or not basis.is_file():
+        original_basis = (
+            mode == "portable" and form["basis"] not in tracked
+            and basis.suffix.lower() == ".pdf"
+            and form["basis"] in ids(source_map[key]["holding_paths"])
+            and basis.is_relative_to(references))
+        if not basis.is_relative_to(root.resolve()) or (not basis.is_file() and not original_basis):
             raise SurveyError(f"{evidence_id}: missing or out-of-repository verification basis")
+        if mode == "portable" and form["basis"] not in tracked and not original_basis:
+            raise SurveyError(f"{evidence_id}: verification basis must be tracked in portable mode")
+        if basis.is_file():
+            with basis.open("rb") as stream:
+                stream.read(1)
         if form["form_kind"] != "process" and not form["diplomatic_form"]:
             raise SurveyError(f"{evidence_id}: authored form is required")
         if form["form_kind"] == "process" and form["diplomatic_form"]:
@@ -215,14 +250,17 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
                 raise SurveyError(f"review {row_id}/{key}: discussion-only hides a reconstruction")
 
 
-def load(root: Path = ROOT):
+def load(root: Path = ROOT, *, mode: str = "full"):
     directory = root / DIRECTORY
     corpus = inventory(root)
     sources = read_table(directory / "sources.tsv", SOURCE_COLUMNS)
     forms = read_table(directory / "forms.tsv", FORM_COLUMNS)
     reviews = read_table(directory / "coverage.tsv", REVIEW_COLUMNS)
-    bibliography = {entry.key for entry in parse_entries((root / "docs/refs.bib").read_text())}
-    validate(sources, forms, reviews, corpus, bibliography, root)
+    bibliography_keys = [entry.key for entry in parse_entries((root / "docs/refs.bib").read_text())]
+    bibliography = set(bibliography_keys)
+    if len(bibliography) != len(bibliography_keys):
+        raise SurveyError("duplicate bibliography keys")
+    validate(sources, forms, reviews, corpus, bibliography, root, mode=mode)
     return corpus, sources, forms, reviews
 
 
@@ -510,8 +548,8 @@ def ledger_text(corpus, sources, forms, coverage) -> str:
     return "\n".join(lines).rstrip("\n") + "\n"
 
 
-def render(root: Path = ROOT) -> dict[Path, str]:
-    corpus, sources, forms, reviews = load(root)
+def render(root: Path = ROOT, *, mode: str = "full") -> dict[Path, str]:
+    corpus, sources, forms, reviews = load(root, mode=mode)
     directory = root / DIRECTORY
     targets = read_table(directory / "review_targets.tsv", TARGET_COLUMNS)
     scopes = load_scopes(root, corpus, sources, forms, targets)
@@ -538,17 +576,30 @@ def render(root: Path = ROOT) -> dict[Path, str]:
     inputs.update(directory / f"{name}.tsv" for name in analytical.TABLES)
     inputs.update((directory / "reading_accountability").glob("*.tsv"))
     inputs.update(root / form["basis"] for form in forms)
-    consulted_sources = ({row["source_key"] for row in coverage}
-                         | {scope["source_key"] for scope in scopes})
+    unavailable = []
     for source in sources:
-        if source["source_key"] not in consulted_sources:
-            continue
         for relative in ids(source["holding_paths"]):
             holding = root / relative
-            inputs.update(holding.rglob("*.txt") if holding.is_dir() else [holding])
+            if not holding.exists():
+                unavailable.append(relative)
+                continue
+            holding_files = list(holding.rglob("*.txt")) if holding.is_dir() else [holding]
+            references = (root / "docs/references").resolve()
+            for path in holding_files:
+                if not path.resolve().is_relative_to(references):
+                    raise SurveyError(f"holding descendant escapes reference library: {path}")
+            inputs.update(holding_files)
+    inputs.difference_update(root / relative for relative in unavailable)
+    def digest(path):
+        with path.open("rb") as stream:
+            value = hashlib.sha256()
+            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                value.update(chunk)
+            return value.hexdigest()
+
     provenance = {
         str(path.relative_to(root if path.is_relative_to(root) else ROOT)):
-        hashlib.sha256(path.read_bytes()).hexdigest()
+        digest(path)
         for path in sorted(inputs)
     }
     try:
@@ -571,6 +622,10 @@ def render(root: Path = ROOT) -> dict[Path, str]:
             corpus, sources, scopes, forms, targets, reviews),
         directory / "survey_provenance.json": json.dumps({
             "inputs": provenance,
+            **({"unavailable_holdings": sorted(unavailable),
+                "validation_mode": "portable",
+                "image_verification": "historical records only; not repeated"}
+               if mode == "portable" else {}),
             "population": len(corpus),
             "source_row_checks": len(coverage),
             "required_reading_targets": sum(row["review_required"] == "1" for row in coverage),
@@ -587,8 +642,36 @@ def render(root: Path = ROOT) -> dict[Path, str]:
     }
 
 
+def provenance_problems(root: Path = ROOT, *, mode: str = "full") -> list[str]:
+    path = root / DIRECTORY / "survey_provenance.json"
+    expected = json.loads(render(root, mode=mode)[path])
+    if not path.is_file():
+        return [f"missing survey provenance {path}; run python3 Germanic/tools/adjudicate.py --refresh"]
+    recorded = json.loads(path.read_text(encoding="utf-8"))
+    unavailable = set(expected.pop("unavailable_holdings", []))
+    expected.pop("validation_mode", None)
+    expected.pop("image_verification", None)
+    recorded_inputs = {
+        **recorded.pop("historical_unavailable_inputs", {}),
+        **recorded.pop("inputs")}
+    recorded.pop("unavailable_holdings", None)
+    recorded.pop("validation_mode", None)
+    recorded.pop("image_verification", None)
+    expected_inputs = expected.pop("inputs")
+    problems = [
+        f"survey provenance stale: {relative}; run python3 Germanic/tools/adjudicate.py --refresh"
+        for relative in sorted(set(recorded_inputs) | set(expected_inputs))
+        if relative not in unavailable
+        and recorded_inputs.get(relative) != expected_inputs.get(relative)]
+    if recorded != expected:
+        problems.append(f"survey provenance metadata stale: {path}; run python3 Germanic/tools/adjudicate.py --refresh")
+    return problems
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--mode", choices=("full", "portable"), default="full",
+                        help="full requires every declared holding; portable validates tracked evidence, not original images")
     parser.add_argument("--require-complete", action="store_true")
     parser.add_argument("--require-core-complete", action="store_true")
     parser.add_argument("--require-analysis-complete", action="store_true")
@@ -597,11 +680,14 @@ def main() -> int:
     parser.add_argument("--query", metavar="SQL", help="Read-only SQL over validated evidence and analysis tables.")
     args = parser.parse_args()
     try:
-        corpus, sources, forms, reviews = load()
+        corpus, sources, forms, reviews = load(mode=args.mode)
         targets = read_table(ROOT / DIRECTORY / "review_targets.tsv", TARGET_COLUMNS)
         scopes = load_scopes(ROOT, corpus, sources, forms, targets)
         coverage = coverage_rows(corpus, sources, reviews, targets)
         analysis = load_analysis(ROOT, corpus, forms)
+        problems = provenance_problems(mode=args.mode)
+        if problems:
+            raise SurveyError("\n".join(problems))
     except (SurveyError, analytical.AnalysisError, OSError) as exc:
         parser.exit(1, f"Reconstruction survey error: {exc}\n")
     reading_error = None
@@ -627,6 +713,15 @@ def main() -> int:
             parser.exit(1, f"Read-only query error: {exc}\n")
         return 0
     print(f"Valid evidence tables: {len(corpus)} OE rows, {len(forms)} evidence records.")
+    if args.mode == "portable":
+        print("PORTABLE ONLY: original page-image verification is not repeated; "
+              "historical verification records are preserved.")
+        tracked = tracked_paths(ROOT)
+        unavailable = sorted({
+            relative for source in sources for relative in ids(source["holding_paths"])
+            if relative not in tracked and not (ROOT / relative).exists()})
+        print(f"Original holding provenance unavailable ({len(unavailable)}): "
+              + ("; ".join(unavailable) or "none"))
     print(f"Row targets {'INCOMPLETE' if row_pending else 'REVIEWED WITH DECLARED LIMITS'}: "
           f"{Counter(row['status'] for row in coverage)['unchecked']} unchecked targets.")
     print(f"Core citation-unit triage: {len(analytical_pending)} unreviewed rows.")

@@ -196,18 +196,18 @@ def _render_book_draft() -> dict:
     return {mod.OUTPUT_PATH: mod.build_book_markdown()}
 
 
-def _render_pgmc_reconstruction_survey() -> dict:
+def _render_pgmc_reconstruction_survey(mode: str = "full") -> dict:
     try:
-        return pgmc_reconstruction_survey.render()
+        return pgmc_reconstruction_survey.render(mode=mode)
     except (pgmc_reconstruction_survey.SurveyError,
             pgmc_reconstruction_survey.analytical.AnalysisError, OSError) as exc:
         raise SystemExit(f"PGmc reconstruction research SOURCE error: {exc}") from exc
 
 
-def _render_pgmc_lexical_integration() -> dict:
+def _render_pgmc_lexical_integration(mode: str = "full") -> dict:
     import pgmc_lexical_integration
     try:
-        return pgmc_lexical_integration.render()
+        return pgmc_lexical_integration.render(mode=mode)
     except (ValueError, OSError, pgmc_reconstruction_survey.SurveyError,
             pgmc_reconstruction_survey.analytical.AnalysisError) as exc:
         raise SystemExit(f"PGmc lexical integration SOURCE error: {exc}") from exc
@@ -474,7 +474,48 @@ def _runtime(name: str, authority: str, verify, build,
 # the graph
 # --------------------------------------------------------------------------
 
-def nodes() -> tuple:
+def _survey_node(mode: str) -> Node:
+    authority = ("reconstruction evidence/coverage SOURCE + held sources + "
+                 "corpus and independent stage/context metadata")
+    outputs = lambda: [
+        REPO_ROOT / pgmc_reconstruction_survey.DIRECTORY / name
+        for name in pgmc_reconstruction_survey.PROJECTION_FILES]
+    provenance_path = REPO_ROOT / pgmc_reconstruction_survey.DIRECTORY / "survey_provenance.json"
+
+    def rendered():
+        result = _render_pgmc_reconstruction_survey(mode)
+        result.pop(provenance_path)
+        return result
+
+    projection = _projection("pgmc_reconstruction_survey", authority, rendered, outputs)
+
+    def verify():
+        return (projection.verify()
+                + pgmc_reconstruction_survey.provenance_problems(mode=mode))
+
+    def build():
+        changed = projection.build()
+        text = _render_pgmc_reconstruction_survey(mode)[provenance_path]
+        payload = json.loads(text)
+        if mode == "portable":
+            historical = json.loads(provenance_path.read_text()) if provenance_path.exists() else {}
+            historical_inputs = {
+                **historical.get("historical_unavailable_inputs", {}),
+                **historical.get("inputs", {})}
+            payload["historical_unavailable_inputs"] = {
+                relative: historical_inputs.get(relative)
+                for relative in payload["unavailable_holdings"]}
+            text = json.dumps(payload, indent=2, sort_keys=True) + "\n"
+        if not provenance_path.exists() or provenance_path.read_text() != text:
+            provenance_path.write_text(text, encoding="utf-8")
+            changed.append(_rel(provenance_path))
+        return changed
+
+    return Node(projection.name, projection.kind, authority, verify, build, outputs)
+
+
+def nodes(*, mode: str = "full") -> tuple:
+    pgmc_reconstruction_survey.validate_mode(mode)
     return (
         _projection("executable_order",
                     "Germanic/fsts/germanic.txt via oe_pipeline",
@@ -504,20 +545,14 @@ def nodes() -> tuple:
                     "reader SOURCE files + reader_manifest.tsv via "
                     "build_reader_book",
                     build_reader_book.render),
-        _projection("pgmc_reconstruction_survey",
-                    "reconstruction evidence/coverage SOURCE + held sources + "
-                    "corpus and independent stage/context metadata",
-                    _render_pgmc_reconstruction_survey,
-                    outputs=lambda: [
-                        REPO_ROOT / pgmc_reconstruction_survey.DIRECTORY / name
-                        for name in pgmc_reconstruction_survey.PROJECTION_FILES]),
+        _survey_node(mode),
         _runtime("lexical_sources",
                  "corpus + model entries + fresh bins via lexical builders",
                  _lexical_verify, _lexical_build,
                  lambda: _lexical_outputs() + [LEXICAL_PROVENANCE]),
         _projection("pgmc_lexical_integration",
                     "live populations + protected audit + provisional scoped editorial SOURCE",
-                    _render_pgmc_lexical_integration),
+                    lambda: _render_pgmc_lexical_integration(mode)),
         _projection("book_draft",
                     "assembly sources via build_capr_book_draft",
                     _render_book_draft),
@@ -530,14 +565,14 @@ def nodes() -> tuple:
     )
 
 
-def declared_outputs() -> dict:
+def declared_outputs(*, mode: str = "full") -> dict:
     """Machine-readable output declaration: node name -> sorted Paths.
 
     This is the §-mandated single declaration of which committed (or
     runtime) files each node owns.  ARCHIVE_PATHS must never appear here;
     a test enforces that invariant.
     """
-    return {node.name: sorted(node.outputs()) for node in nodes()}
+    return {node.name: sorted(node.outputs()) for node in nodes(mode=mode)}
 
 
 # census reads the inventory view and the views annotate from the census, so
@@ -547,7 +582,7 @@ _MAX_FIXED_POINT_PASSES = 4
 
 
 def refresh(printer: Callable[[str], None] = print,
-            force: frozenset = frozenset()) -> list:
+            force: frozenset = frozenset(), *, mode: str = "full") -> list:
     """Bring every node up to date; returns the list of changes made.
 
     Runtime nodes named in ``force`` are rebuilt unconditionally (used by
@@ -555,11 +590,16 @@ def refresh(printer: Callable[[str], None] = print,
     Raises GraphError with an authority-tied message on any failure.
     """
     changed: list = []
-    graph = {n.name: n for n in nodes()}
-    order = [n.name for n in nodes()]
+    graph = {n.name: n for n in nodes(mode=mode)}
+    order = list(graph)
+    if mode == "portable" and force:
+        raise GraphError("portable refresh cannot force runtime builds")
 
     def run(node: Node) -> None:
         if node.kind == "runtime":
+            if mode == "portable":
+                printer(f"  {node.name}: NOT RUN (runtime-dependent; portable mode)")
+                return
             problems = [] if node.name in force else node.verify()
             if not problems and node.name not in force:
                 printer(f"  {node.name}: fresh (recorded provenance matches)")
@@ -612,35 +652,48 @@ def refresh(printer: Callable[[str], None] = print,
     return changed
 
 
-def verify_all() -> list:
+def verify_all(*, mode: str = "full") -> list:
     problems: list = []
-    for node in nodes():
+    for node in nodes(mode=mode):
+        if mode == "portable" and node.kind == "runtime":
+            continue
         problems.extend(node.verify())
     return problems
 
 
 def main() -> int:
     args = sys.argv[1:]
+    mode = "full"
+    if args[-2:] == ["--mode", "portable"]:
+        mode = "portable"
+        args = args[:-2]
     if args == ["--check"]:
-        problems = verify_all()
+        problems = verify_all(mode=mode)
         for p in problems:
             print(f"STALE: {p}", file=sys.stderr)
         if problems:
             return 1
-        print("CONTROL PLANE CLEAN")
+        if mode == "portable":
+            for node in nodes(mode=mode):
+                if node.kind == "runtime":
+                    print(f"NOT RUN: {node.name} (runtime-dependent; requires provisioned Foma runner and verified bins)")
+            print("PORTABLE PROJECTIONS CLEAN; full local holding validation NOT RUN")
+        else:
+            print("CONTROL PLANE CLEAN")
         return 0
     if args == ["--refresh"]:
         try:
-            refresh()
+            refresh(mode=mode)
         except GraphError as exc:
             print(f"REFRESH FAILED: {exc}", file=sys.stderr)
             return 1
-        problems = verify_all()
+        problems = verify_all(mode=mode)
         if problems:
             for p in problems:
                 print(f"STALE AFTER REFRESH: {p}", file=sys.stderr)
             return 1
-        print("CONTROL PLANE CLEAN")
+        print("PORTABLE PROJECTIONS CLEAN; runtime and full holding checks NOT RUN"
+              if mode == "portable" else "CONTROL PLANE CLEAN")
         return 0
     print(__doc__.strip(), file=sys.stderr)
     return 2

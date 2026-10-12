@@ -98,8 +98,8 @@ def screen(comparisons: list[dict]) -> str:
     return "ordinary_evidence_review"
 
 
-def build(root: Path = ROOT) -> tuple[list[dict], list[dict], dict]:
-    corpus_rows, _, form_rows, reviews = survey.load(root)
+def build(root: Path = ROOT, *, mode: str = "full") -> tuple[list[dict], list[dict], dict]:
+    corpus_rows, _, form_rows, reviews = survey.load(root, mode=mode)
     analytical = survey.load_analysis(root, corpus_rows, form_rows)
     corpus = unique(corpus_rows, "row_id", "live audit population")
     forms = unique(form_rows, "evidence_id", "audit evidence")
@@ -205,8 +205,8 @@ def build(root: Path = ROOT) -> tuple[list[dict], list[dict], dict]:
     return crosswalk, inventory, stats
 
 
-def render(root: Path = ROOT) -> dict[Path, str]:
-    crosswalk, inventory, stats = build(root)
+def render(root: Path = ROOT, *, mode: str = "full") -> dict[Path, str]:
+    crosswalk, inventory, stats = build(root, mode=mode)
     summary = [
         "# Population reconciliation (GENERATED)", "",
         "Authority: live corpus/sidecars, validated audit, exact approved legacy migrations,",
@@ -234,10 +234,11 @@ def render(root: Path = ROOT) -> dict[Path, str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--mode", choices=("full", "portable"), default="full")
     parser.add_argument("--check", action="store_true", help="check committed projection freshness without writing")
     args = parser.parse_args()
     try:
-        rendered = render()
+        rendered = render(mode=args.mode)
         if args.check:
             stale = [str(path.relative_to(ROOT)) for path, text in rendered.items()
                      if not path.exists() or path.read_text(encoding="utf-8") != text]
