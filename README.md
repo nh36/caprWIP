@@ -11,7 +11,7 @@ This repository contains **three parallel research pipelines** sharing common in
 
 | Component | Description | Status |
 |-----------|-------------|--------|
-| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Research phase complete — 7 of 386 OE rows mismatched (all 7 documented exceptions; 0 actionable phonology) |
+| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Sequential per-SC adjudication; selected baseline: 7 documented mismatches in 387 runnable OE rows. See [current state](Germanic/docs/CURRENT_STATE.md). |
 | **[Burmish/](Burmish/)** | Proto-Burmish reconstruction | Maintenance mode |
 | **[Celtic/](Celtic/)** | Proto-Celtic → daughter languages (Old/Middle Irish, Welsh, Breton, Cornish, Gaulish, Celtiberian) | Early development |
 
@@ -65,7 +65,14 @@ capr-v3-working/
 
 The active focus is modeling Proto-Germanic → Old English sound changes via FST rules.
 
-**Current status:** research phase complete — **7 mismatches out of 386 OE lexemes** (**98.2% accuracy**), all 7 remaining mismatches documented exceptions, with **0 actionable phonology**. `Germanic/README.md` is the authoritative high-level status page, and `Germanic/docs/CANONICAL_STATE.md` defines the writing-phase source hierarchy.
+**Current status:** sequential per-SC adjudication with separately instructed
+scoped work; [Germanic/docs/CURRENT_STATE.md](Germanic/docs/CURRENT_STATE.md)
+owns the phase and commands. The selected baseline has **7 documented
+mismatches out of 387 runnable OE rows** (**98.2% accuracy**), not a declaration
+that research is complete. [Germanic/docs/README.md](Germanic/docs/README.md)
+defines the SOURCE/GENERATED/ARCHIVE hierarchy. Lexical publication has 387
+runnable derivation write-ups, 393 audit records and 160 elaborated assembled
+model entries; see the [generated population summary](Germanic/docs/lexeme_reports/pgmc_integration/population_summary.md).
 
 Key files:
 - `Germanic/fsts/germanic.txt` — Main FST with all sound change rules

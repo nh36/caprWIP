@@ -9,7 +9,7 @@ This ledger records the evidence used for the P3 pilot upgrade.
 | Pilot report | `*nḗdrōn`; `nǣdre` | Background confirmation that the row is treated as a regular control case. | no | `Germanic/docs/lexeme_reports/pilot/adder.md` | medium; pilot treated as background only |
 | Kroonen | `*nēdrōn-`; comparison to `*nadra-`; incidental masculine `*nēdra-`; OE `nǣdre, næddre` | The feminine headword is an ablauting formation beside `*nadra-`; the incidental masculine `*nēdra-` supports Northumbrian `neder`, not the selected feminine cell. | yes — `Kroonen2013`, pp. 381, 386 | `docs/references/kroonen_etymological_dictionary_pgmc.pdf`, sheets 421/426, printed 381/386; independent dictionary-survey extraction | masculine a-stem, feminine headword, incidental masculine quantity and running heads image checked; the comparative cross-reference is not an invented feminine alternative |
 | Orel | `*nēđrōn ~ *nađrōn`; related masculine `*nađraz` | The feminine entry explicitly cites OE nædre and presents both vowel alternatives; it relates them to the masculine formation. | yes — `Orel2003`, p. 286 | `docs/references/orel_handbook_germanic_etymology.pdf`, sheet 325, printed 286 | original headword and running head checked; preserve barred đ independently of normalized model comparisons |
-| Clark Hall; Fulk | `nædre`; `næddre` | Show the OE form and the secondary doubled-consonant variant. | yes — `ClarkHall1960`; `Fulk2018` | local dictionary and grammar files | high |
+| Clark Hall; Fulk | `nædre`; `næddre` | Show the OE form and the secondary doubled-consonant variant. | yes — `ClarkHall1960`; `Fulk2018`, printed 132 | Fulk Vision sheet149, lines 7895–7928; Clark Hall local dictionary | Fulk's qualified later-gemination account rechecked; Clark Hall locator not reverified in this pass |
 
 ## Citation-locator pilot 01 note
 
@@ -34,6 +34,11 @@ The separate masculine a-stem entry is printed p. 381 on sheet421;
 the current model cites both entries without merging their formations.
 
 ## Notes
+
+**Fulk locator erratum (2026-10-12):** sheet149 bears printed132 and
+discusses `næddre` beside `nædre`, probable shortening and obscure
+gemination motivation. The model's claim was legitimate; its locator149
+was not a printed folio. See `../pgmc_integration/errata.md`.
 
 - No row-local packet or research memo exists on disk for `1933`; the slice and pilot were the row-local project materials inspected.
 - Existing local vision-backed reference files were sufficient; no additional Google Vision rescue was needed.

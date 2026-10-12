@@ -1,5 +1,13 @@
 ### Lexeme report
 
+**Historical format test, not current scholarship.** `report_manifest.tsv`
+classifies this pilot as `format_test`. Its straightforward-control
+characterization below is superseded by
+[`1933-adder-nǣdre.model.md`](../model_entries/1933-adder-nǣdre.model.md)
+and the [scoped integration example](../pgmc_integration/examples/1933-adder.md):
+Orel's feminine entry retains both long-*ē* and short-*a* alternatives
+[@Orel2003, 286]. The selected input and regular output are unchanged.
+
 #### Reconstruction and early-stage alternatives
 
 The aligned row treats `PROTO` and `PROTOFORM` identically as `*nḗdrōn`. No repo-local note, known-problems entry, or DEV_NOTES dossier flags disagreement about the early reconstruction for this item. In the pilot set, `adder` therefore functions as the control case for a straightforward inherited noun.

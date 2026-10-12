@@ -61,5 +61,10 @@ or establishes renewed verification of the Clark Hall/Fulk pilot locators.
 
 ## Remaining human-review points
 
+**Fulk locator supersession (2026-10-12):** unlike the earlier unverified
+pilot locator149, the current model cites printed132, checked from the
+running head on sheet149. The secondary-gemination claim stands; this
+does not reverify Clark Hall. See `../pgmc_integration/errata.md`.
+
 1. Keep the feminine e-grade `*nēdrōn-` distinct from the masculine `*nadra-`.
 2. Keep `næddre` subordinate to `nǣdre` as a secondary OE variant.

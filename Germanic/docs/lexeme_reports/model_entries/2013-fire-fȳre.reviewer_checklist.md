@@ -54,6 +54,12 @@
 
 ## Citation-locator conditional-source pass
 
+**Supersession (2026-10-12):** the locator recorded below was a sheet/work
+misattribution, not a verified main-dictionary page. The corrected model and
+ledger cite the held Supplement, `Toller1921`, printed 276 (sheet 288).
+Main-dictionary verification remains unavailable; see
+`../pgmc_integration/errata.md`. Earlier review claims do not certify it.
+
 - Added page-specific locators for `BosworthToller1898, 288`.
 - This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

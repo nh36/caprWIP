@@ -4899,7 +4899,7 @@ the distinction between his notation and CAPR's derivational input.
 The Old English word is securely represented by [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32:1"} 'adder', with [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32:2"} 'adder' as a
 secondary variant. Clark Hall cross-references [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33:1"} to [_nædre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33:2"} 'adder', and Fulk
 treats [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:34:1"} as the later geminated form beside the older base [@ClarkHall1960,
-225; @Fulk2018, 149].
+225; @Fulk2018, 132].
 
 ### Development to Old English
 
@@ -18070,8 +18070,8 @@ The Old English target combines a regular inherited form
 
 ### Old English evidence
 
-Bosworth-Toller records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32:1"} 'fire' as the noun 'fire' and also preserves oblique
-[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33:1"} 'fire' in the Old English record [@BosworthToller1898, 288]. The first is the
+Toller's Supplement records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32:1"} 'fire' as a noun in its _fyr. Add_ entry and separately preserves oblique
+[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33:1"} 'fire', including _in fyre_ [@Toller1921, 276]. These attestations establish the forms, not the date or mechanism of restoration. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final _-e_ within the
 paradigm.

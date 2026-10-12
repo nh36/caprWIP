@@ -22,7 +22,7 @@
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 457
-- Broad-prose notation / compound expressions: 474
+- Broad-prose notation / compound expressions: 476
 - Broad-prose evidence suggestions: 298
 - Curated broad-prose deferred: 28
 - Curated broad-prose ignored: 7
@@ -828,6 +828,7 @@
 | `*fulgjan-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:23 | notation or compound expression |
 | `*fun-` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:21 | notation or compound expression |
 | `*fu(w)eri` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:23 | notation or compound expression |
+| `fyr. Add` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32 | notation or compound expression |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33 | intermediate or model-stage form in development chain |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 | intermediate or model-stage form in development chain |
 | `*g` | Germanic/docs/lexeme_reports/model_entries/2277-way-weġ.model.md:29 | intermediate or model-stage form in development chain |
@@ -888,6 +889,7 @@
 | `-ig` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:27 | notation or compound expression |
 | `-iġ` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:28 | notation or compound expression |
 | `*-ij-` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:29 | notation or compound expression |
+| `in fyre` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33 | notation or compound expression |
 | `*-ing-` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:21 | notation or compound expression |
 | `-ing` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:25 | notation or compound expression |
 | `-ing-` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:29 | notation or compound expression |

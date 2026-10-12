@@ -32,7 +32,7 @@ the distinction between his notation and CAPR's selected input.
 The Old English word is securely represented by [`nǣdre`]{.iv lang=oe sort=naedre} 'adder', with [`næddre`]{.iv lang=oe sort=naeddre} 'adder' as a
 secondary variant. Clark Hall cross-references [`næddre`]{.iv lang=oe sort=naeddre} to [`nædre`]{.iv lang=oe sort=naedre} 'adder', and Fulk
 treats [`næddre`]{.iv lang=oe sort=naeddre} as the later geminated form beside the older base [@ClarkHall1960,
-225; @Fulk2018, 149].
+225; @Fulk2018, 132].
 
 ### Development to Old English
 

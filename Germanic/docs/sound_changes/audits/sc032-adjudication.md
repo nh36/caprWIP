@@ -398,3 +398,30 @@ or a new early io tier is not justified merely to make terminology tidier.
   complete cascade-baseline authorities, frozen chronology cards, released
   recipes and lexical model-entry SOURCE bytes. No baseline is refrozen,
   no protected receipt is repinned and no corpus admission is made.
+
+### Coordinated prose-errata integration
+
+After the initial SC032 release `9faa93ab8d88e9067180bd634f28f3b88e271efb`,
+the coordinator authorized merging the completed prose-only errata release
+`b74e3ce3f60f05c8843555eb409b35020386dcf0`. The normal merge was conflict-free;
+canonical SC032 finalization then regenerated the combined projections and
+passed propagation checks with **CONTROL PLANE CLEAN**. No scientific runtime
+rebuild or protected-baseline adoption was needed. The isolated worktree's
+107 runtime bins remained fresh, and the queue still returns **SC034**.
+
+The two graph-authority failures were reproduced using the exact committed
+`7848f762` test and graph module sources, loaded in memory: **two tests,
+two failures, zero errors**. Both sources are byte-identical to the current
+files. The omitted pre-existing nodes are `pgmc_reconstruction_survey` and
+`pgmc_lexical_integration`; neither assertion was changed. The five separate
+index failures are independently reproduced against that same committed
+base in the merged integration errata receipt. Thus the full-suite account
+remains **nine initial failures, two SC032-related failures resolved, seven
+proved baseline failures remaining**, not a globally green suite.
+
+The post-merge focused SC032, registry, protocol and census guards pass
+**53 tests and five subtests**. A comparison against the initial SC032 release
+confirms unchanged FST/data, cascade-baseline authorities, registry SOURCE,
+Anglo-Frisian synthesis and recipes, and the SC032/queue tests. The lexical
+model prose and navigation changes in this merge are exactly the coordinated
+errata work, not new lexical or sound-change scientific decisions.

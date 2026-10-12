@@ -67,14 +67,25 @@ catalogued `Toller1921` Supplement. Its Vision sheet288 begins with printed
 occur there. Sheet300 is printed288 and GEARD / GEARO, not fire.
 The bibliography already distinguishes `BosworthToller1898` from `Toller1921`.
 The provisional example therefore corrects the attribution and folio.
-Existing pilot/source-ledger p.288/main-dictionary claims remain unchanged
-and are a separately authorized reporting-repair candidate.
+The production model and ledger now cite the Supplement, printed276;
+historical reviewer/implementation records carry supersession notices.
+The fire pilot has no p.288/main-dictionary citation to correct.
+The separately catalogued main dictionary is not locally held or verified;
+this correction does not deny independently possible main-dictionary evidence.
 
-Similarly, the older you source ledger's Fulk204–205 locator does not support
-the origin claim used here: the actual argument is 187–188. This example
-uses the correct pages without editing that protected ledger.
+The older you source ledger's Fulk204–205 locator counted extraction sheets,
+whose running heads are printed187–188. Those pages support both the reported
+origin discussion used here and the ledger's distinct consonantal-development
+claim: Fulk offers *-zw- > *-ww- as one alternative route to WGmc *iuwiz.
+The ledger now preserves that qualified claim with printed-page locators.
+Actual printed204–205 (sheets221–222) discusses relative/indefinite pronouns,
+not that assimilation. The original criticism conflated a locator error with
+an unsupported claim. Likewise, the adder model's Fulk149 was sheet149,
+printed132: the later-gemination claim is valid, and only its locator changed.
 Campbell §702 is printed283 as previously verified, not the misplaced OCR
 header from the subsequent extraction. Original-image limits remain explicit.
+
+Correction receipts and unchanged claims: [errata.md](errata.md).
 
 ## Comparability decisions
 

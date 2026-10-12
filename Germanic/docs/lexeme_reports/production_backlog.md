@@ -1,8 +1,22 @@
 # Old English lexeme-report production backlog
 
-This is the working production backlog for the lexical write-up phase. It is **not** a list of all OE words, and rows with source material are **still missing production reports** until they are promoted into `report_manifest.tsv` as `pilot` or `full`.
+The detailed backlog below is a **historical selective-production checkpoint**
+(148 required entries among the then-380 runnable rows), not the current
+missing-write-up list. Its 11 production pilots and one format test describe
+the historical report-manifest layer, not the elaborated model assembly.
 
 ## Current counts
+
+- **387 runnable derivation write-ups**, **393 reconstruction-audit records**,
+  and **160 elaborated assembled model entries** are distinct populations.
+- Current selective requirement: **157**, including **150** original-380 identities.
+- **152** required entries are assembled; the five required but unassembled
+  entries are **2055, 2120, 2327, 2328, 2329**. Eight assembled entries are optional.
+- These assembly gaps do **not** mean runnable entries lack derivation write-ups.
+- Current authority: the GENERATED [population summary](pgmc_integration/population_summary.md)
+  and [crosswalk](pgmc_integration/population_crosswalk.tsv). Do not hand-edit them.
+
+## Historical counts and backlog (retained checkpoint)
 
 - Total OE rows with real counterpart: **380**
 - Rows requiring lexeme report under the selective-report policy: **148**

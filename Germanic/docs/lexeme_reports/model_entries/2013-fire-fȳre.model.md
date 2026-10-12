@@ -29,8 +29,8 @@ The Old English target combines a regular inherited form
 
 ### Old English evidence
 
-Bosworth-Toller records [`fyr`]{.iv lang=oe sort=fyr role=comparison_form} 'fire' as the noun 'fire' and also preserves oblique
-[`fyre`]{.iv lang=oe sort=fyre role=target_form} 'fire' in the Old English record [@BosworthToller1898, 288]. The first is the
+Toller's Supplement records [`fyr`]{.iv lang=oe sort=fyr role=comparison_form} 'fire' as a noun in its `fyr. Add` entry and separately preserves oblique
+[`fyre`]{.iv lang=oe sort=fyre role=target_form} 'fire', including `in fyre` [@Toller1921, 276]. These attestations establish the forms, not the date or mechanism of restoration. The first is the
 regular inherited outcome of the phonological development from the selected
 input; the second shows the later restoration of a final `-e` within the
 paradigm.
