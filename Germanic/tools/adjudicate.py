@@ -430,9 +430,10 @@ def finalize(sc_id) -> int:
     return check(sc_id)
 
 
-def check_memo(sc_id) -> list[str]:
+def check_memo(sc_id, *, row=None) -> list[str]:
     errors = []
-    row = load_registry_row(sc_id)
+    if row is None:
+        row = load_registry_row(sc_id)
     if row is None:
         return [f"{sc_id} not found in registry"]
     if row["adjudication_status"] != "adjudicated":
@@ -480,7 +481,11 @@ def check_memo(sc_id) -> list[str]:
 
 
 def check(sc_id) -> int:
-    errors = check_memo(sc_id)
+    row = load_registry_row(sc_id)
+    if row is None:
+        print(f"{sc_id} not found in registry", file=sys.stderr)
+        return 1
+    errors = check_memo(sc_id, row=row)
     # the registry never stores positions; the executable model owns them,
     # and stale projections are caught by the artifact-graph check below
     # every generated artifact must be fresh (non-mutating graph check)

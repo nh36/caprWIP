@@ -188,3 +188,13 @@ def test_full_pytest_runtime_gate_fails_instead_of_skipping_missing_manifest():
     with patch.object(artifact_graph, "nodes", return_value=(node,)):
         with pytest.raises(AssertionError, match="build manifest missing"):
             test_full_runtime_node_freshness(request)
+
+
+def test_unknown_adjudication_still_fails_before_runtime_validation():
+    import adjudicate
+    with patch.object(adjudicate, "load_registry_row", return_value=None) as registry, \
+            patch.object(adjudicate.artifact_graph, "verify_all",
+                         side_effect=AssertionError("unknown SC must not reach runtime")) as runtime:
+        assert adjudicate.check("SC999") == 1
+        registry.assert_called_once_with("SC999")
+        runtime.assert_not_called()
