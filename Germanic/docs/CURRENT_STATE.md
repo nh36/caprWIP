@@ -39,11 +39,11 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `70bdaba537d8f6b6bb7d872d00eefbef75127d2d77689af7ba01b35a79ebce39`
+  `6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6`
 - selected-387 corpus fingerprint (`outputs_sha256`):
-  `47a901e9e4a7cd663b8eb574b87fe737382e8fc1b4f1bc8afc38701af0c96872`
+  `9d5adb68d97b0a280c3fa719e544236348cd3e771b01013cfe01f95f3579b6a5`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `90789094b8d8889bb478dd6077de75e1d8e1cb66b7b6d347b63e73a83d039c47`
+  `5c76b77eff81abfaf2cc54158a2e1dbf46eb7de2b8836f4832984142e93ef04d`
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.
@@ -63,6 +63,16 @@ changes both PROTO and PROTOFORM to *xíwją. Its separate receipt is
 The distinct `*_pre_sc033_hue.*` archive preserves the post-knee baseline;
 the knee receipt and all earlier archives are untouched. Hue lies outside
 original380, whose active and immutable fingerprints remain unchanged.
+
+The later SC034 straw correction preserves attested target `strēaw` and
+input `*stráwą`; the regular cascade now yields reconstructed `strēa`.
+This explicitly adds straw to the seven older mismatches: 379 matches /
+eight mismatches, all387 accepted and unambiguous. The exact output and
+match-flag receipt is `approved_sc034_output_migration.json`; separate
+`*_pre_sc034.*` archives preserve the post-hue baseline. Every older
+approval/archive and the other386 finals remain protected. Adoption uses
+`SC034 --adopt-cell-baseline --approval approved_sc034_output_migration.json`;
+routine refresh never changes it.
 
 The SC031/SC098 context adoption separately changes only you's assembled
 evaluator input; its lexical reconstruction and every final are unchanged.

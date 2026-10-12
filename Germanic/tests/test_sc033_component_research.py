@@ -91,12 +91,13 @@ class Sc033ComponentResearchTests(unittest.TestCase):
                                      re.sub(r"\s+", "", definition(source, name)))
             self.assertEqual(found, expected)
 
-    def test_post_hue_controls_match_current_sources_and_preserve_palatal_assertions(self):
+    def test_post_hue_controls_preserve_released_pins_and_palatal_assertions(self):
         data = experiments.load_recipes(DIRECTORY / "oe_post_hue_controls.json")
+        released = experiments.load_recipes(DIRECTORY / "oe_sc034_controls.json")
         self.assertEqual(data["baseline_fst_sha256"],
-                         hashlib.sha256((ROOT / "Germanic/fsts/germanic.txt").read_bytes()).hexdigest())
+                         released["baseline_fst_sha256"])
         self.assertEqual(data["baseline_corpus_sha256"],
-                         hashlib.sha256(experiments.layout().corpus_tsv.read_bytes()).hexdigest())
+                         released["baseline_corpus_sha256"])
         historical = experiments.load_recipes(DIRECTORY / "oe_adopted_palatal_controls.json")
         for field in ("component_checks", "staged_checks"):
             self.assertTrue(all(check in data["recipes"][1][field]

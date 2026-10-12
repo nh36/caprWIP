@@ -24,7 +24,7 @@ digraph first_break_chronology {
   "SC031" [label="SC031\nInherited short-Vww reanalysis"];
   "SC032" [label="SC032\nQuantity-distinct English diphthong realization"];
   "SC033" [label="SC033\nJ-created palatalized-glide reanalysis"];
-  "SC034" [label="SC034\nOE Aw Long Diphthong"];
+  "SC034" [label="SC034\nRetained show long-diphthong proxy"];
   "SC035" [label="SC035\nOE Prefix A Reduction Early"];
   "SC036" [label="SC036\nOE Inter Stress Raising"];
   "SC037" [label="SC037\nOE Compound Linking Syncope"];
@@ -144,7 +144,7 @@ digraph first_break_chronology {
   "SC045" -> "SC060" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC046" -> "SC043" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC046" -> "SC048" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC047" -> "SC034" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC047" -> "SC034" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC047" -> "SC048" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC048" -> "SC047" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC048" -> "SC059" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];

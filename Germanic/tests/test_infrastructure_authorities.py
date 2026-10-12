@@ -57,10 +57,12 @@ CARD_INDEX = (SC_DIR / "order_tests/chronology_cards"
 # differs from the previous baseline only in hay's input column and in the
 # added hue row, and the matched/mismatched split is unchanged at 7
 # documented mismatches.
+# SC034 subsequently authorizes only straw's regular output/match transition;
+# test_sc034_output_adoption protects the exact delta and earlier archives.
 EXPECTED_OUTPUTS_SHA256 = (
-    "90789094b8d8889bb478dd6077de75e1d8e1cb66b7b6d347b63e73a83d039c47")
+    "5c76b77eff81abfaf2cc54158a2e1dbf46eb7de2b8836f4832984142e93ef04d")
 EXPECTED_LEGACY_SUBSET_SHA256 = (
-    "70bdaba537d8f6b6bb7d872d00eefbef75127d2d77689af7ba01b35a79ebce39")
+    "6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6")
 EXPECTED_ROW_COUNT = 387
 
 
@@ -286,14 +288,13 @@ class NoDuplicateStageListTests(unittest.TestCase):
 class OutputIdentityTests(unittest.TestCase):
     """The refactor must not change corpus outputs (semantic fingerprints)."""
 
-    def test_semantic_fingerprints_unchanged(self):
+    def test_semantic_fingerprints_match_approved_sc034_output_transition(self):
         summary = json.loads(
             (BASELINE_DIR / "cascade_baseline_summary.json").read_text(
                 encoding="utf-8"))
         text = json.dumps(summary)
         self.assertIn(EXPECTED_OUTPUTS_SHA256, text,
-                      "corpus outputs fingerprint changed — the "
-                      "infrastructure refactor altered scientific outputs")
+                      "corpus fingerprint differs from the approved scientific baseline")
         self.assertIn(EXPECTED_LEGACY_SUBSET_SHA256, text)
         self.assertIn(str(EXPECTED_ROW_COUNT), text)
 

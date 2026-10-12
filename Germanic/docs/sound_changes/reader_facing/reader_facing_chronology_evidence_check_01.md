@@ -4,7 +4,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 99.
+- Sections checked: 100.
 - Sections with warnings: 67.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
@@ -42,7 +42,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 033-long-eow-diphthong.md | SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 033-long-eow-diphthong.md | SC106. Retained j-created glide compatibility (`OEJWWSimplification`) {#rule-OEJWWSimplification} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 033-long-eow-diphthong.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
-| 034-long-eaw-diphthong.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | no | no | no | no | no | yes | no | missing move-condition wording |
+| 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | no | no | no | no | no | yes | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
@@ -54,7 +54,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 044-045-breaking-and-velar-fricative-palatalization.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | no | yes | yes | yes | yes | yes | no | missing move-condition wording |
 | 044-045-breaking-and-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | yes | yes | yes | yes | yes | no | no | — |
 | 046-048-restoration-and-nasal-tail-changes.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 046-048-restoration-and-nasal-tail-changes.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 046-048-restoration-and-nasal-tail-changes.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | yes | yes | yes | yes | yes | no | no | — |
 | 046-048-restoration-and-nasal-tail-changes.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | no | yes | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
@@ -108,3 +108,4 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 102-hiatus-w-insertion.md | SC102. Generalized hiatus-breaking \emph{w} after long \emph{ā} (`EAFHiatusWInsertion`) {#rule-EAFHiatusWInsertion} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 103-pgmc-nasal-loss-before-x.md | SC103. Proto-Germanic nasal loss before \*x (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
 | 104-nasalized-low-vowel-rounding.md | SC104. Rounding of the long nasalized low vowel (`EAFNasalizedLowRounding`) {#rule-EAFNasalizedLowRounding} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 111-endingless-aw-fragment.md | SC111. Endingless \emph{aw} fragment (`PWGmcEndinglessAw`) {#rule-PWGmcEndinglessAw} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |

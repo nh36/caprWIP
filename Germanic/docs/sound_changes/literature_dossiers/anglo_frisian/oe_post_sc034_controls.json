@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "baseline_fst_sha256": "a5d53a0504e6dc2a5411a8e327826f97a75c5bcc60f5fc17f55da06c71be904e",
+  "baseline_corpus_sha256": "3af00bcafe049d2d2bd692e11c2e95488e7c72d76f60aede5c748ce266c67e1b",
+  "baseline_context_sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+  "baseline_context_helper_sha256": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961",
+  "fixture_file": "oe_post_hue_fixtures.tsv",
+  "recipes": [
+    {
+      "id": "identity",
+      "description": "Post-SC034 complete-wrapper identity.",
+      "definitions": "",
+      "insert_after": "",
+      "insert_rule": "",
+      "replace": {},
+      "sources": [],
+      "assumptions": "Technical control only.",
+      "limitations": "Successful finals do not establish historical conditioning."
+    },
+    {
+      "id": "post-sc034-controls",
+      "description": "Adopted regular straw branch, retained show proxy, and negative inherited-glide controls.",
+      "definitions": "",
+      "insert_after": "",
+      "insert_rule": "",
+      "replace": {},
+      "sources": [
+        {"key": "Campbell1959", "pages": "45-47,232-233"},
+        {"key": "SieversBrunner1965", "pages": "49,110,204-205"},
+        {"key": "RingeTaylor2014", "pages": "80,172-175,250,314,387"}
+      ],
+      "assumptions": "Regular endingless straw yields reconstructed strea, while the explicitly retained attested streaw target mismatches. Show remains a disclosed root-history proxy. Earlier source-pinned research recipes are unchanged.",
+      "limitations": "The narrow composed fragment does not make general final-a loss w-conditioned. No free regular simplex attestation, new show input, or independent dental-hardening chronology is asserted.",
+      "component_checks": [
+        {"id": "straw-accented", "component": "PWGmcEndinglessAw", "input": "*s*t*r*á*w*ą", "expected": "*s*t*r*áu"},
+        {"id": "straw-unaccented", "component": "PWGmcEndinglessAw", "input": "*s*t*r*a*w*ą", "expected": "*s*t*r*au"},
+        {"id": "nonfinal-negative", "component": "PWGmcEndinglessAw", "input": "*s*t*r*á*w*ą*n", "expected": "*s*t*r*á*w*ą*n"},
+        {"id": "geminate-negative", "component": "PWGmcEndinglessAw", "input": "*s*t*r*á*w*w*ą", "expected": "*s*t*r*á*w*w*ą"},
+        {"id": "other-ending-negative", "component": "PWGmcEndinglessAw", "input": "*s*t*r*á*w*a*z", "expected": "*s*t*r*á*w*a*z"}
+      ],
+      "staged_checks": [
+        {"id": "straw-regular-feeder", "stage": "PWGmcEndinglessAw", "side": "after", "input": "*s*t*r*áu", "expected": "strēa", "evidence": "RingeTaylor2014 pp.172-173,387; regular endingless branch, not attested free simplex."},
+        {"id": "straw-long-nucleus", "stage": "OEAwLongDiphthong", "side": "after", "input": "*s*t*r*ēa", "expected": "strēa", "evidence": "Campbell1959 pp.232-233; no analogically restored w in regular cascade."},
+        {"id": "show-infinitive", "stage": "OEAwLongDiphthong", "side": "after", "input": "*s*k*ḗa*w*ō*j*a*n*ą", "expected": "sċēawian", "evidence": "Campbell1959 p.45; retained proxy, unresolved root premise."},
+        {"id": "show-imperative", "stage": "OEAwLongDiphthong", "side": "after", "input": "*s*k*ḗa*w*ô", "expected": "sċēawa", "evidence": "RingeTaylor2014 p.314; suffix control, not a new root verdict."},
+        {"id": "show-third-singular", "stage": "OEAwLongDiphthong", "side": "after", "input": "*s*k*ḗa*w*ō*θ", "expected": "sċēawaþ", "evidence": "RingeTaylor2014 p.80; final i already lost at this checkpoint."},
+        {"id": "dew-inherited-negative", "stage": "OEWWSimplification", "side": "after", "input": "*d*áu*w*ō", "expected": "dēaw", "evidence": "Campbell1959 pp.46-47; earlier inherited-geminate feeder."},
+        {"id": "hew-inherited-negative", "stage": "OEWWSimplification", "side": "after", "input": "*x*áu*w*a*n*ą", "expected": "hēawan", "evidence": "Campbell1959 pp.46-47; earlier inherited-geminate feeder."},
+        {"id": "knee-preserved", "stage": "OEEwLongDiphthong", "side": "after", "input": "*k*n*é*w*ē", "expected": "cneowe", "evidence": "Campbell1959 p.233; adopted short-dative control."},
+        {"id": "hue-preserved", "stage": "OEEwLongDiphthong", "side": "after", "input": "*x*íu*w*j*ą", "expected": "hīew", "evidence": "RingeTaylor2014 p.250; adopted hue reanalysis control."}
+      ]
+    }
+  ],
+  "probes": [
+    {"id": "after_endingless", "stage": "PWGmcEndinglessAw", "side": "after"},
+    {"id": "after_sc034", "stage": "OEAwLongDiphthong", "side": "after"},
+    {"id": "after_sc033", "stage": "OEEwLongDiphthong", "side": "after"},
+    {"id": "after_realization", "stage": "OEDiphthongLeveling", "side": "after"},
+    {"id": "after_fronting", "stage": "OEBreaking", "side": "before"},
+    {"id": "after_palatal", "stage": "OEVelarPalatalization", "side": "after"},
+    {"id": "after_mutation", "stage": "OEIUmlaut", "side": "after"}
+  ]
+}

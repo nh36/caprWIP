@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (309) ===
+=== DERIVATION_CLASS: regular (308) ===
 
 
 
@@ -4886,7 +4886,7 @@ Outcome: sċēawian
 
 #### Project note
 
-Original TSV note: Normalized sċ: initial sc always [ʃ] in OE (Campbell §440).
+Original TSV note: Editorial sċ normalization. SC034 retained show support proxy, not a general singleton-aw law: dictionary singleton stems (Orel 2003 p.337; Kroonen 2013 p.442) differ from inherited-geminate handbook history (Campbell 1959 p.45; Brunner 1965 p.49). Root premise deferred; selected input, target and class unchanged.
 # shower
 PROTO: *skūrō
 EXPECTED: sċūr
@@ -5577,26 +5577,6 @@ English Proto Input: *stúrmaz
 ### Orthography & surface
 
 Outcome: storm
-# straw
-PROTO: *stráwą
-EXPECTED: strēaw
-OUTPUTS: strēaw
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *stráwą
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *strḗawą<br>OE Heavy Syllable Nasal Apocope: *strḗaw |
-
-
-
-### Orthography & surface
-
-Outcome: strēaw
 # stream
 PROTO: *stráumaz
 EXPECTED: strēam
@@ -8358,7 +8338,7 @@ Outcome: ġeoguþ
 #### Project note
 
 Original TSV note: PROTOFORM *jugunθ (without -iz): (1) Early i-apocope: R/T §6.8.1 shows final *-i lost after heavy syllable BEFORE i-umlaut. R/T vol.2 p.141: "*jugunþi > *juguþ". Campbell §332: "duguþ < *dugunþ-, and so geoguþ". (2) Medial u preserved: Campbell §373 "u always well preserved after accented u" (vowel harmony). Contrast *xaubudą > hēafod (au, not u, so u→o). See DEV_NOTES.md §14.9 for full documentation.
-=== DERIVATION_CLASS: late_analogy (28) ===
+=== DERIVATION_CLASS: late_analogy (29) ===
 
 
 
@@ -9286,7 +9266,7 @@ Outcome: sċēawaþ
 
 #### Project note
 
-Original TSV note: Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Normalized sċ: Campbell §440.
+Original TSV note: Class II present 3sg CAPR input assembly; stable -aþ (Campbell 1959 p.148; Ringe-Taylor 2014 p.80). Compiled final i is lost before SC034; absence of j alone is not the derivational explanation. Bright 1917 p.161 attests prefixed geondscēawað, not this normalized simplex quotation. SC034 root proxy retained with singleton/geminate premise deferred.
 # show (iptv.2sg)
 PROTO: *skáwô
 EXPECTED: sċēawa
@@ -9315,7 +9295,7 @@ Outcome: sċēawa
 
 #### Project note
 
-Original TSV note: Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.
+Original TSV note: Class II imperative singular CAPR input assembly; -a < *ō (Ringe-Taylor 2014 p.314), attested scēawa (Bright 1917 p.71). SC034 root proxy retained with singleton/geminate premise deferred. Editorial sċ normalization; selected input, target and class unchanged.
 # span
 PROTO: *spánnai
 EXPECTED: spanne
@@ -9376,6 +9356,34 @@ This is a `late_analogy` case. The nominative singular `*spannō` yields `span`,
 |:---|:---|:---|:---|:---|
 | nom.sg. | *spannō | span | no | Citation nominative singular. |
 | dat.sg. | *spánnai | spanne | yes | Chosen dative singular cell in TSV. |
+# straw
+PROTO: *stráwą
+EXPECTED: strēaw
+OUTPUTS: strēa
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *stráwą
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Endingless Aw: *stráu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *stráeu<br>OE Diphthong Leveling: *strēa |
+
+
+
+### Orthography & surface
+
+Outcome: strēa
+
+
+
+### Lexeme report
+
+#### Project note
+
+Original TSV note: Attested strēaw retained as comparison; regular inherited nominative/accusative cascade yields reconstructed *strēa, an explicit known mismatch (Brunner 1965 pp.49,110; Ringe-Taylor 2014 pp.172-173,387). Attested strēaw combines endingless long diphthong and analogically restored w; regular short obliques are also unattested. SC034 approved output-only transition; inherited input and attested target unchanged.
 # thistle
 PROTO: *θístilas
 EXPECTED: þistles

@@ -2,15 +2,15 @@
 
 - Total OE rows with real counterpart: 387
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 159
+- Rows requiring lexeme report: 160
 - Required rows with published SOURCE: 18
-- Required rows with no published SOURCE: 141
+- Required rows with no published SOURCE: 142
 - Rows selected independently for philological discussion: 8
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 144
+- Required rows with source material available but no manifest-backed production report: 145
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
-- Regular rows with empty NOTE but supporting material present: 229
+- Regular rows with empty NOTE but supporting material present: 228
 - Rows with STATUS=format_test manifest entries: 1
 - Regular rows with NOTE (report required): 79
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
@@ -22,9 +22,9 @@
 | attested_variant | 4 | 4 | 1 | 3 | 0 |
 | early_analogy | 36 | 36 | 2 | 34 | 0 |
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
-| late_analogy | 28 | 28 | 4 | 24 | 0 |
+| late_analogy | 29 | 29 | 4 | 25 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 309 | 81 | 0 | 77 | 4 |
+| regular | 308 | 81 | 0 | 77 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -155,6 +155,7 @@
 | 2212 | staff | stæf | early_analogy | yes | source_material | - | archive/dev_notes_slices/2212-staff-stæf.md, archive/packets/2212-staff-stæf.md, model_entries/2212-staff-stæf.model.md, model_entries/2212-staff-stæf.source_ledger.md, research_memos/2212-staff-stæf.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2216 | stem | stefn | early_analogy | yes | source_material | - | archive/dev_notes_slices/2216-stem-stefn.md, archive/packets/2216-stem-stefn.md, model_entries/2216-stem-stefn.model.md, model_entries/2216-stem-stefn.source_ledger.md, research_memos/2216-stem-stefn.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2217 | still | stillan | regular | yes | source_material | - | archive/dev_notes_slices/2217-still-stillan.md, archive/packets/2217-still-stillan.md, model_entries/2217-still-stillan.model.md, model_entries/2217-still-stillan.source_ledger.md, research_memos/2217-still-stillan.md | NOTE |
+| 2224 | straw | strēaw | late_analogy | yes | source_material | - | archive/dev_notes_slices/2224-straw-strēaw.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2227 | strew | strīeġan | reconstructed_oe | yes | source_material | - | archive/dev_notes_slices/2227-strew-strīeġan.md, model_entries/2227-strew-strīeġan.model.md, model_entries/2227-strew-strīeġan.source_ledger.md, research_memos/2227-strew-strīeġan.md | NOTE, DERIVATION_CLASS=reconstructed_oe |
 | 2230 | summer | sumer | regular | yes | source_material | - | archive/dev_notes_slices/2230-summer-sumer.md, archive/packets/2230-summer-sumer.md, model_entries/2230-summer-sumer.model.md, model_entries/2230-summer-sumer.source_ledger.md, research_memos/2230-summer-sumer.md | NOTE |
 | 2232 | sunder | sundrian | regular | yes | source_material | - | archive/dev_notes_slices/2232-sunder-sundrian.md, archive/packets/2232-sunder-sundrian.md, model_entries/2232-sunder-sundrian.model.md, model_entries/2232-sunder-sundrian.source_ledger.md, research_memos/2232-sunder-sundrian.md | NOTE |
@@ -405,7 +406,6 @@
 | 2221 | stool | stōl | regular | no | source_material | - | archive/dev_notes_slices/2221-stool-stōl.md | none |
 | 2222 | stork | storc | regular | no | source_material | - | archive/dev_notes_slices/2222-stork-storc.md | none |
 | 2223 | storm | storm | regular | no | source_material | - | archive/dev_notes_slices/2223-storm-storm.md | none |
-| 2224 | straw | strēaw | regular | no | source_material | - | archive/dev_notes_slices/2224-straw-strēaw.md | none |
 | 2225 | stream | strēam | regular | no | source_material | - | archive/dev_notes_slices/2225-stream-strēam.md | none |
 | 2226 | stretch | streċċan | regular | no | source_material | - | archive/dev_notes_slices/2226-stretch-streċċan.md | none |
 | 2228 | string | strenġ | regular | no | source_material | - | archive/dev_notes_slices/2228-string-strenġ.md | none |

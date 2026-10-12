@@ -22,6 +22,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC031 | Inherited short-Vww reanalysis | active | SPLIT/REORDER | `Germanic/docs/sound_changes/audits/sc031-glide-reanalysis-adjudication.md` |
 | SC032 | Quantity-distinct English diphthong realization | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc032-adjudication.md` |
 | SC033 | J-created palatalized-glide reanalysis | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc033-adjudication.md` |
+| SC034 | Retained show long-diphthong proxy | active | REFORMULATE/DEFER | `Germanic/docs/sound_changes/audits/sc034-adjudication.md` |
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-adjudication.md` |

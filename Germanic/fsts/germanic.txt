@@ -1835,6 +1835,14 @@ define PWGmcDentalHardening Ctx([
 ]
 ]);
 
+# SC111: corpus-visible endingless-aw fragment (Ringe-Taylor pp.172-173).
+# Combines final-a loss and final-w vocalization; general final-a loss
+# was not w-conditioned. This holding site does not date it against SC013.
+define PWGmcEndinglessAw [
+    {*a} {*w} {*ą} -> {*au} || _ .#. ,
+    {*á} {*w} {*ą} -> {*áu} || _ .#.
+];
+
 # NOTE: PWGmcPreFinalRShortening was here but has been consolidated into
 # PWGmcFinalOrLowering (line ~1175) to avoid duplication. Both rules did
 # the same thing: {*ō} -> {*a} || _ {*r} .#. (R/T §3.1.4). See the earlier
@@ -2004,6 +2012,7 @@ define EarlyEnglishLineChanges [ # capr:bundle
     .o. PNWGmcPreconsonantalXLoss
     .o. EAFLThVoicing
     .o. PWGmcDentalHardening
+    .o. PWGmcEndinglessAw
     # NOTE: PWGmcPreFinalRShortening removed - was duplicate of PWGmcFinalOrLowering
 ];
 
@@ -2193,11 +2202,10 @@ define OEJGlideIO [
     [{*iu}|{*íu}] -> {*īo} || _ {*w} {*j}
 ];
 
-# PGmc *aw before a vowel → OE ēaw (Campbell §272, Hogg §3.27).
-# Parallel to *au → ēa, but *w is preserved as a glide when followed by
-# a vowel. Placed before AFB so *a is still unfronted at this stage.
-# Context: *w immediately followed by a vocalic (excludes *j-initial
-# suffixes like *-jăną where *a fronts via i-umlaut instead).
+# SC034: retained show proxy, not an established singleton-aw sound law.
+# Dictionary singleton inputs (Orel p.337; Kroonen p.442) differ from
+# Campbell p.45/Brunner p.49 inherited-geminate analysis; history deferred.
+# Straw now follows SC111 -> SC030 -> SC032 to reconstructed strea.
 define OEAwLongDiphthong [
     {*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}],
     # Stressed variant (prosodic tier):

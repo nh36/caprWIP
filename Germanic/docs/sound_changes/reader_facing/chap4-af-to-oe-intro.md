@@ -198,8 +198,21 @@ paradigm comparison; later long obliques must not be confused with
 the selected short cell
 [@Campbell1959, pp. 232--233; @HoggGrammar2011, pp. 21--22, 86;
 @RingeTaylor2014, pp. 187--188, 387].
-[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) retains the singleton
-show/straw forms. The unchanged
+[SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) now supplies straw's
+regular endingless \emph{*strau}, feeding ordinary English realization
+to reconstructed \emph{*strēa}. The comparison remains attested
+*strēaw* 'straw': its restored final \emph{w} belongs to paradigm
+levelling, so this regular derivation explicitly mismatches the target.
+The sources mark the free regular simplex and short obliques as
+unattested; the compound *strēaberige* 'strawberry' is not substituted
+for the selected noun
+[@Campbell1959, pp. 232--233; @SieversBrunner1965, pp. 49, 110;
+@RingeTaylor2014, pp. 172--173, 387].
+[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) retains only the
+three show cells as a disclosed proxy. Dictionary singleton stems and
+the inherited-geminate handbook analysis remain distinct, unresolved
+premises [@Orel2003, p. 337; @Kroonen2013, p. 442;
+@Campbell1959, p. 45; @SieversBrunner1965, p. 49]. The unchanged
 [SC106 OEJWWSimplification](#rule-OEJWWSimplification) remains a
 technical compatibility operation, but hue now reaches it with
 singleton w and no longer feeds it.

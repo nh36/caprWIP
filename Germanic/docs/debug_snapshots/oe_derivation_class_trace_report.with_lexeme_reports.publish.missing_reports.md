@@ -1,6 +1,6 @@
 # Missing lexeme reports for publish mode
 
-- Missing required production reports: 141
+- Missing required production reports: 142
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Reason |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -96,6 +96,7 @@
 | 2212 | staff | stæf | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2216 | stem | stefn | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2217 | still | stillan | regular | yes | NOTE |
+| 2224 | straw | strēaw | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2227 | strew | strīeġan | reconstructed_oe | yes | NOTE, DERIVATION_CLASS=reconstructed_oe |
 | 2230 | summer | sumer | regular | yes | NOTE |
 | 2232 | sunder | sundrian | regular | yes | NOTE |

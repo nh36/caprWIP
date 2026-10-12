@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "baseline_fst_sha256": "f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953",
+  "baseline_corpus_sha256": "67fb85b3f944afe6f0f3f0a99536f9bd70bf707246d968577b16fca5b17aece6",
+  "baseline_context_sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+  "baseline_context_helper_sha256": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961",
+  "fixture_file": "oe_post_hue_fixtures.tsv",
+  "recipes": [
+    {
+      "id": "identity",
+      "description": "SC034 current full-wrapper identity.",
+      "definitions": "",
+      "insert_after": "",
+      "insert_rule": "",
+      "replace": {},
+      "sources": [],
+      "assumptions": "Technical composition control, not a historical verdict.",
+      "limitations": "Final-output agreement cannot establish singleton-aw lengthening."
+    },
+    {
+      "id": "sc034-skip",
+      "description": "Remove only SC034 privately to measure the complete selected-corpus dependency.",
+      "definitions": "define AF034Anchor [?*];\ndefine AF034Skip [?*];",
+      "insert_after": "OEDiphthongLeveling",
+      "insert_rule": "AF034Anchor",
+      "replace": {"OEAwLongDiphthong": "AF034Skip"},
+      "sources": [
+        {"key": "Campbell1959", "pages": "45-47,115,232-233"},
+        {"key": "RingeTaylor2014", "pages": "172-175,387"}
+      ],
+      "assumptions": "Ablation, not a proposed replacement history. Predicted final changes are confined to 2186,2224,2317,2318; dew and hew must remain unchanged. Straw without the incumbent quantity proxy is predicted to end as straew (CAPR ae glyph), not to acquire regular endingless au automatically.",
+      "limitations": "Skipping SC034 does not implement the missing endingless vocalization or paradigm levelling. Any new mismatch is an implementation dependency, not evidence against the cited historical analysis."
+    },
+    {
+      "id": "sc034-after-nasal-apocope",
+      "description": "Separate a late-SC034 fronting confound from the direct early-apocope counterfactual.",
+      "definitions": "define AF034Late [OEAwLongDiphthong];\ndefine AF034Skip [?*];",
+      "insert_after": "OEHeavySyllableNasalApocope",
+      "insert_rule": "AF034Late",
+      "replace": {"OEAwLongDiphthong": "AF034Skip"},
+      "sources": [
+        {"key": "Campbell1959", "pages": "46-47,115,232-233"},
+        {"key": "RingeTaylor2014", "pages": "172-173,387"}
+      ],
+      "assumptions": "Delaying SC034 across both SC043 and SC047 is predicted to affect all four singleton applications because fronting consumes their a. Inherited dew/hew controls should retain their finals.",
+      "limitations": "This does not reproduce the historical card's one-row experiment, which moved SC047 earlier instead. It separates the fronting confound from that direct apocope dependency; neither establishes historical chronology."
+    },
+    {
+      "id": "sc047-before-sc034",
+      "description": "Reproduce the old one-row straw boundary by moving only nasal apocope before SC034.",
+      "definitions": "define AF047Early [OEHeavySyllableNasalApocope];\ndefine AF047Skip [?*];",
+      "insert_after": "OEDiphthongLeveling",
+      "insert_rule": "AF047Early",
+      "replace": {"OEHeavySyllableNasalApocope": "AF047Skip"},
+      "sources": [
+        {"key": "Campbell1959", "pages": "46-47,115,232-233"},
+        {"key": "RingeTaylor2014", "pages": "172-173,387"}
+      ],
+      "assumptions": "Predicted changed final set is exactly straw2224. Its final nasal vowel should be lost before SC034, removing the following-vowel condition; without implemented final-w vocalization the suffix is predicted to yield short straew rather than regular endingless long strea. Show2186/2317/2318 and inherited dew/hew should retain their finals.",
+      "limitations": "This diagnoses the current proxy and missing endingless consumer. A short counterfactual straw output does not refute the sources' earlier endingless vocalization or establish an independent historical SC047-to-SC034 edge."
+    },
+    {
+      "id": "sc034-straw-regular-nominative",
+      "description": "Privately test the source-reconstructed inherited endingless straw line, leaving selected corpus fields and show's disputed proxy unchanged.",
+      "definitions": "define AF034End [\n    {*a} {*w} {*ą} -> {*au} || _ .#. ,\n    {*á} {*w} {*ą} -> {*áu} || _ .#.\n];",
+      "insert_after": "PWGmcDentalHardening",
+      "insert_rule": "AF034End",
+      "replace": {},
+      "sources": [
+        {"key": "Campbell1959", "pages": "46-47,232-233"},
+        {"key": "SieversBrunner1965", "pages": "49,110"},
+        {"key": "RingeTaylor2014", "pages": "172-173,387"}
+      ],
+      "assumptions": "The composed fragment serializes final short-a loss and resulting final-w vocalization together for the inherited aw-a endingless domain. It does not assert vowel loss was historically conditioned by w. The au product must feed existing SC030 and SC032 rather than a new singleton prevocalic lengthening law. Predicted changed final set is exactly straw2224: strea with long ea and no restored w.",
+      "limitations": "The free West Saxon endingless target is reconstructed, not attested. This is a private test of a regular historical branch, not adoption of a new selected target, a universal final-vowel-loss rule or a settled show history. The exact holding site does not establish chronology among unrelated early operations. The selected nasal vowel is CAPR's inherited-neuter notation. Unaccented, nonfinal and geminate component inputs are hypothetical notation/finality/class controls, not attested lexemes; Campbell pp.45-47 distinguishes the two glide histories.",
+      "component_checks": [
+        {"id": "endingless-aw-nasal-tail", "component": "AF034End", "input": "*s*t*r*á*w*ą", "expected": "*s*t*r*áu"},
+        {"id": "endingless-aw-unaccented", "component": "AF034End", "input": "*a*w*ą", "expected": "*au"},
+        {"id": "nonfinal-nasal-tail-negative", "component": "AF034End", "input": "*á*w*ą*n", "expected": "*á*w*ą*n"},
+        {"id": "geminate-negative", "component": "AF034End", "input": "*á*w*w*ą", "expected": "*á*w*w*ą"},
+        {"id": "show-vocalic-tail-negative", "component": "AF034End", "input": "*s*k*á*w*ō*j*a*n*ą", "expected": "*s*k*á*w*ō*j*a*n*ą"}
+      ]
+    },
+    {
+      "id": "sc034-straw-regular-spans",
+      "description": "Test source-distinct regular endingless and post-levelling straw suffixes without adopting either selected comparison.",
+      "definitions": "",
+      "insert_after": "",
+      "insert_rule": "",
+      "replace": {},
+      "sources": [
+        {"key": "Campbell1959", "pages": "46-47,232-233"},
+        {"key": "SieversBrunner1965", "pages": "49,110-111,204-205"},
+        {"key": "RingeTaylor2014", "pages": "172-173,387"}
+      ],
+      "assumptions": "The inherited endingless long diphthong without w is a reconstructed pre-levelling endpoint, not a free attested West Saxon simplex. The long diphthong with restored w is a post-levelling English-stage input, not PGmc. The suffix entry is an executable checkpoint, not independent historical dating of levelling.",
+      "limitations": "These suffix diagnostics cannot establish a surviving regular paradigm cell, date the analogy before the checkpoint, or authorize an input/target/stage/fingerprint migration. They quantify the bounded regular tails, rather than rescue the current selected PGmc-to-OE proxy.",
+      "staged_checks": [
+        {
+          "id": "straw-endingless-regular-tail",
+          "stage": "OEAwLongDiphthong",
+          "side": "after",
+          "input": "*s*t*r*ḗa",
+          "expected": "strēa",
+          "evidence": "Campbell1959 pp.46-47,232-233; RingeTaylor2014 pp.173,387. Reconstructed endingless form only."
+        },
+        {
+          "id": "straw-post-levelling-regular-tail",
+          "stage": "OEAwLongDiphthong",
+          "side": "after",
+          "input": "*s*t*r*ḗa*w",
+          "expected": "strēaw",
+          "evidence": "Campbell1959 pp.232-233; SieversBrunner1965 pp.204-205; RingeTaylor2014 p.387. Already levelled English stem, not PGmc."
+        }
+      ]
+    }
+  ],
+  "probes": [
+    {"id": "before_sc034", "stage": "OEAwLongDiphthong", "side": "before"},
+    {"id": "after_sc034", "stage": "OEAwLongDiphthong", "side": "after"},
+    {"id": "after_fronting", "stage": "EAFBrightening", "side": "after"},
+    {"id": "after_nasal_apocope", "stage": "OEHeavySyllableNasalApocope", "side": "after"},
+    {"id": "after_mutation", "stage": "OEIUmlaut", "side": "after"}
+  ]
+}

@@ -990,7 +990,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 721	ʃ au f ə l	*skuflō	ʃ - au f ə l ( - )	ʃaufəl	Schaufel	198	German						shovel	*skúflō	226
 1287	s x ɑu ʋ ə	*skawōjaną	s x ɑu ʋ - - ə - ( - - )	sxɑuʋə	schouwen	353	Dutch						show	*skáwōjaną	227
 1286	ʃ əʊ	*skawōjaną	ʃ - əʊ - - - - - ( - - )	ʃəʊ	show	353	English						show	*skáwōjaną	227
-2186	s ċ ē a w i a n	*skáwōjaną	ʃ - əʊ - - - - - ( - - )	ʃəʊ	sċēawian	353	Old_English	Normalized sċ: initial sc always [ʃ] in OE (Campbell §440).	Source: Wiktionary etymology (template:inh)	regular			show	*skáwōjaną	227
+2186	s ċ ē a w i a n	*skáwōjaną	ʃ - əʊ - - - - - ( - - )	ʃəʊ	sċēawian	353	Old_English	Editorial sċ normalization. SC034 retained show support proxy, not a general singleton-aw law: dictionary singleton stems (Orel 2003 p.337; Kroonen 2013 p.442) differ from inherited-geminate handbook history (Campbell 1959 p.45; Brunner 1965 p.49). Root premise deferred; selected input, target and class unchanged.	Source: Wiktionary etymology (template:inh)	regular			show	*skáwōjaną	227
 1285	ʃ au ə n	*skawōjaną	ʃ - au - - - ə n ( - - )	ʃauən	schauen	353	German						show	*skáwōjaną	227
 1194	ʃ aʊ ə	*skūrō	ʃ - aʊ ə r ( - )	ʃaʊə	shower	327	English						shower	*skūrō	356
 2187	s ċ ū r	*skūrō	ʃ - aʊ ə r ( - )	ʃaʊə	sċūr	327	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	regular			shower	*skūrō	356
@@ -1138,7 +1138,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 670	ʃ t ʊ r m	*stúrmaz	ʃ t ʊ r m ( - - )	ʃtʊrm	Sturm	184	German						storm	*stúrmaz	260
 1255	s t r oː	*stráwą	s t r oː ( - - - )	stroː	stro	344	Dutch						straw	*stráwą	261
 1254	s t r ɔː	*stráwą	s t r ɔː ( - - - )	strɔː	straw	344	English						straw	*stráwą	261
-2224	s t r ē a w	*stráwą	s t r ɔː ( - - - )	strɔː	strēaw	344	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	regular			straw	*stráwą	261
+2224	s t r ē a w	*stráwą	s t r ɔː ( - - - )	strɔː	strēaw	344	Old_English	Attested strēaw retained as comparison; regular inherited nominative/accusative cascade yields reconstructed *strēa, an explicit known mismatch (Brunner 1965 pp.49,110; Ringe-Taylor 2014 pp.172-173,387). Attested strēaw combines endingless long diphthong and analogically restored w; regular short obliques are also unattested. SC034 approved output-only transition; inherited input and attested target unchanged.	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	late_analogy			straw	*stráwą	261
 1253	ʃ t r oː	*stráwą	ʃ t r oː ( - - - )	ʃtroː	Stroh	344	German						straw	*stráwą	261
 1363	s t r oː m	*stráumaz	s t r oː m ( - - )	stroːm	stroom	373	Dutch						stream	*stráumaz	262
 1362	s t r iː m	*stráumaz	s t r iː m ( - - )	striːm	stream	373	English						stream	*stráumaz	262
@@ -1475,8 +1475,8 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 2314	l i o r n a þ	*líznōθi	l e o r n a θ	liornaθ	liornaþ	544	Old_English	Class II weak 3sg. Regular: *-ōθi → -aþ. Root has io from breaking before rn. No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Campbell §757).		late_analogy			learn (3sg)	*liznōjaną	373
 2315	l i c c a	*líkkô	l i k k a	likka	licca	545	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a.		late_analogy			lick (iptv.2sg)	*likkōną	374
 2316	l i c c a þ	*líkkōθi	l i k k a θ	likkaθ	liccaþ	546	Old_English	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Root has cc from WGmc gemination.		late_analogy			lick (3sg)	*likkōną	375
-2317	s ċ ē a w a	*skáwô	s k e a w a	skeawa	sċēawa	547	Old_English	Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.		late_analogy			show (iptv.2sg)	*skawōną	376
-2318	s ċ ē a w a þ	*skáwōθi	s k e a w a θ	skeawaθ	sċēawaþ	548	Old_English	Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Normalized sċ: Campbell §440.		late_analogy			show (3sg)	*skawōną	377
+2317	s ċ ē a w a	*skáwô	s k e a w a	skeawa	sċēawa	547	Old_English	Class II imperative singular CAPR input assembly; -a < *ō (Ringe-Taylor 2014 p.314), attested scēawa (Bright 1917 p.71). SC034 root proxy retained with singleton/geminate premise deferred. Editorial sċ normalization; selected input, target and class unchanged.		late_analogy			show (iptv.2sg)	*skawōną	376
+2318	s ċ ē a w a þ	*skáwōθi	s k e a w a θ	skeawaθ	sċēawaþ	548	Old_English	Class II present 3sg CAPR input assembly; stable -aþ (Campbell 1959 p.148; Ringe-Taylor 2014 p.80). Compiled final i is lost before SC034; absence of j alone is not the derivational explanation. Bright 1917 p.161 attests prefixed geondscēawað, not this normalized simplex quotation. SC034 root proxy retained with singleton/geminate premise deferred.		late_analogy			show (3sg)	*skawōną	377
 2319	ʋ i	*xwáz	ʋ i	ʋi	wie	549	Dutch						who	*xwáz	378
 2320	h uː	*xwáz	h uː	huː	who	549	English						who	*xwáz	378
 2321	v eː ɐ	*xwáz	v eː ɐ	veːɐ	wer	549	German						who	*xwáz	378

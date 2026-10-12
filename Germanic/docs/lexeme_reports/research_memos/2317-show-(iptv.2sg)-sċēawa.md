@@ -1,5 +1,19 @@
 # Research memo — 2317 show (iptv.2sg) / sċēawa
 
+## Current SC034 source-led disposition
+
+Input/target/class remain unchanged, but successful finite output is not
+a settled root history. Campbell1959 p.45 and Brunner1965 p.49 differ
+from the singleton stems in Orel2003 p.337 and Kroonen2013 p.442.
+SC034 remains a disclosed support proxy with that root premise deferred.
+CAPR assembles *skáwô using RingeTaylor2014 p.314, rather than quoting
+an Orel imperative. The held Bright1917 reader directly supplies scēawa
+on printed p.71; p.161 supplies prefixed3sg geondscēawað, not a
+simplex quotation. Editorial sċ does not assert that all prehistoric
+sc sequences were palatal. The older sections below preserve the prior
+review and superseded note wording; their settled-root claims and
+unpaginated attributions are not current authority.
+
 ## Starting point
 
 - **ID:** 2317

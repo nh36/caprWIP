@@ -19,19 +19,21 @@ DERIVATION_CLASS: late_analogy
 
 ### Reconstruction and comparative evidence
 
-Orel reconstructs the verb as [skawōjanan]{.recon} ‘show (iptv.2sg)’ and cites Old English `sceáwian` 'show' beside Old Frisian `skawia` 'show', Old Saxon `skawōn` 'show', and Old High German `scouwōn` 'show' [@Orel2003, 337]. The selected input in this entry is not that infinitive but the imperative singular [skáwô]{.recon} ‘show (iptv.2sg)’, a finite class-II cell with imperative `-a < *-ō` [@RingeTaylor2014, 314].
+Orel reconstructs the verb as [skawōjanan]{.recon} ‘show’ and cites Old English `sceáwian` 'show' beside Old Frisian `skawia` 'show', Old Saxon `skawōn` 'show', and Old High German `scouwōn` 'show' [@Orel2003, p. 337]. This is infinitive-family evidence, not a quotation of the selected imperative. CAPR assembles imperative singular [skáwô]{.recon} ‘show (iptv.2sg)’, using the finite class-II cell with imperative `-a < *-ō` [@RingeTaylor2014, p. 314].
 
 The imperative singular provides the direct comparison with the Old English form. The lexical history still belongs to the `sceáwian` 'show' verb, but the selected cell isolates the finite `-a` outcome more clearly than the citation form does.
 
 ### Old English evidence
 
-Bright lists `scēawian` 'show' and explicitly gives the imperative singular `scēawa` 'show' under that headword [@BrightCassidyRingler1971, 346]. The form treated here is therefore an attested finite paradigm form, not a reconstructed convenience form.
+The held fourth edition of Bright's reader contains `scēawian` 'show' and the imperative singular `scēawa` 'show' in the Blickling homily [@Bright1917, p. 71]. The form treated here is therefore an attested finite paradigm form, not a reconstructed convenience form; it is not attributed to an unverified passage in the separate Cassidy/Ringler edition.
 
-The spelling used in this entry is normalized `sċēawa` 'show', while Bright's glossary gives source spelling `scēawa` 'show'. The ordinary Old English headword remains `scēawian` 'show'; `sċēawa` 'show' is the imperative singular chosen beside it.
+The spelling used in this entry is normalized `sċēawa` 'show', while Bright's cited text gives source spelling `scēawa` 'show'. The ordinary Old English headword remains `scēawian` 'show'; `sċēawa` 'show' is the imperative singular chosen beside it.
 
 ### Development to Old English
 
-Campbell lists `scéawian` 'show' under the West Germanic [auw]{.recon} ‘show (iptv.2sg)’ developments [@Campbell1959, §120]. Ringe and Taylor's class-II weak imperative singular `-a < *-ō` supports the late finite ending that yields `sċēawa` 'show' [@RingeTaylor2014, 314]. The result is therefore the expected finite singular form of the `scēawian` 'show' family rather than an analogical replacement of the headword.
+Campbell lists `scéawian` 'show' among inherited-geminate developments, through an \emph{*auw} sequence; that sequence is not a reconstructed lexical imperative [@Campbell1959, p. 45]. The transducer retains a long-diphthong proxy for its singleton root input. This root-history premise remains unresolved rather than being proved by the successful finite output or silently replaced with a geminate input [@Orel2003, p. 337; @SieversBrunner1965, p. 49].
+
+Ringe and Taylor's class-II weak imperative singular `-a < *-ō` supports the finite ending that yields `sċēawa` 'show' [@RingeTaylor2014, p. 314]. The ending comparison is therefore justified independently of the unresolved root quantity history. The inherited `late_analogy` corpus classification is not changed by this root-only adjudication; it does not make the proxy a demonstrated analogical sound law.
 
 ### Paradigm comparison
 

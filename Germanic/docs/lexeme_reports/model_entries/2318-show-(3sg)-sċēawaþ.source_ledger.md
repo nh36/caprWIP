@@ -1,6 +1,23 @@
 # Source extraction ledger — show (3sg) / sċēawaþ
 
-This ledger records the 3sg finite-cell evidence and show-family support used before the model entry was drafted.
+## Current SC034 source review
+
+Orel2003 p.337 supplies infinitive-family evidence, not a full quotation
+of selected *skáwōθi. Campbell1959 p.148 (late shortening, §355.4,
+not the former §356.4 locator) and RingeTaylor2014 p.80 support stable
+class-II -aþ. In the actual cascade final i has already disappeared
+before SC034; absence of j alone does not explain the compiled lack of
+mutation. Bright1917 p.161 supplies prefixed geondscēawað, not a separately
+quoted simplex sċēawaþ; p.71 has infinitive/imperative. The former
+Cassidy/Ringler edition attribution is superseded. Campbell1959 p.45,
+Brunner1965 p.49 and Kroonen2013 p.442 preserve the unresolved root
+geminate/singleton distinction. Input, target and class remain unchanged.
+The earlier extraction record below is retained as history, not authority
+for the superseded attributions, locator or settled-history claims.
+
+## Earlier extraction record (superseded where specified above)
+
+This ledger recorded the 3sg evidence before the prior model was drafted.
 
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

@@ -48,183 +48,185 @@ define S016EAFLThVoicing S015PNWGmcPreconsonantalXLoss
     .o. EAFLThVoicing;
 define S017PWGmcDentalHardening S016EAFLThVoicing
     .o. PWGmcDentalHardening;
-define S018PNWGmcILowering S017PWGmcDentalHardening
+define S018PWGmcEndinglessAw S017PWGmcDentalHardening
+    .o. PWGmcEndinglessAw;
+define S019PNWGmcILowering S018PWGmcEndinglessAw
     .o. PNWGmcILowering;
-define S019PNWGmcULowering S018PNWGmcILowering
+define S020PNWGmcULowering S019PNWGmcILowering
     .o. PNWGmcULowering;
-define S020PNWGmcStressedMonosyllableORaising S019PNWGmcULowering
+define S021PNWGmcStressedMonosyllableORaising S020PNWGmcULowering
     .o. PNWGmcStressedMonosyllableORaising;
-define S021PNWGmcFinalLongORaising S020PNWGmcStressedMonosyllableORaising
+define S022PNWGmcFinalLongORaising S021PNWGmcStressedMonosyllableORaising
     .o. PNWGmcFinalLongORaising;
-define S022EAFFinalZDeletion S021PNWGmcFinalLongORaising
+define S023EAFFinalZDeletion S022PNWGmcFinalLongORaising
     .o. EAFFinalZDeletion;
-define S023PWGmcUnstressedWordFinalIApocope S022EAFFinalZDeletion
+define S024PWGmcUnstressedWordFinalIApocope S023EAFFinalZDeletion
     .o. PWGmcUnstressedWordFinalIApocope;
-define S024MonosyllabicFinalZLoss S023PWGmcUnstressedWordFinalIApocope
+define S025MonosyllabicFinalZLoss S024PWGmcUnstressedWordFinalIApocope
     .o. MonosyllabicFinalZLoss;
-define S025EAFRhotacism S024MonosyllabicFinalZLoss
+define S026EAFRhotacism S025MonosyllabicFinalZLoss
     .o. EAFRhotacism;
-define S026PNWGmcMnDissimilation S025EAFRhotacism
+define S027PNWGmcMnDissimilation S026EAFRhotacism
     .o. PNWGmcMnDissimilation;
-define S027PNWGmcNStemNLoss S026PNWGmcMnDissimilation
+define S028PNWGmcNStemNLoss S027PNWGmcMnDissimilation
     .o. PNWGmcNStemNLoss;
-define S028EAFNasalSpirantLengthening S027PNWGmcNStemNLoss
+define S029EAFNasalSpirantLengthening S028PNWGmcNStemNLoss
     .o. EAFNasalSpirantLengthening;
-define S029EAFNasalSpirantLoss S028EAFNasalSpirantLengthening
+define S030EAFNasalSpirantLoss S029EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss;
-define S030EAFHiatusWInsertion S029EAFNasalSpirantLoss
+define S031EAFHiatusWInsertion S030EAFNasalSpirantLoss
     .o. EAFHiatusWInsertion;
-define S031EAFLongANasalRounding S030EAFHiatusWInsertion
+define S032EAFLongANasalRounding S031EAFHiatusWInsertion
     .o. EAFLongANasalRounding;
-define S032EAFNasalizedLowRounding S031EAFLongANasalRounding
+define S033EAFNasalizedLowRounding S032EAFLongANasalRounding
     .o. EAFNasalizedLowRounding;
-define S033EAFLongAFronting S032EAFNasalizedLowRounding
+define S034EAFLongAFronting S033EAFNasalizedLowRounding
     .o. EAFLongAFronting;
-define S034EAFAiMonophthongization S033EAFLongAFronting
+define S035EAFAiMonophthongization S034EAFLongAFronting
     .o. EAFAiMonophthongization;
-define S035OEAwwjResolution S034EAFAiMonophthongization
+define S036OEAwwjResolution S035EAFAiMonophthongization
     .o. OEAwwjResolution;
-define S036OEAuBrightening S035OEAwwjResolution
+define S037OEAuBrightening S036OEAwwjResolution
     .o. OEAuBrightening;
-define S037OEEwLongDiphthong S036OEAuBrightening
+define S038OEEwLongDiphthong S037OEAuBrightening
     .o. OEEwLongDiphthong;
-define S038OEJWWSimplification S037OEEwLongDiphthong
+define S039OEJWWSimplification S038OEEwLongDiphthong
     .o. OEJWWSimplification;
-define S039OEJGlideIO S038OEJWWSimplification
+define S040OEJGlideIO S039OEJWWSimplification
     .o. OEJGlideIO;
-define S040OEDiphthongLeveling S039OEJGlideIO
+define S041OEDiphthongLeveling S040OEJGlideIO
     .o. OEDiphthongLeveling;
-define S041OEAwLongDiphthong S040OEDiphthongLeveling
+define S042OEAwLongDiphthong S041OEDiphthongLeveling
     .o. OEAwLongDiphthong;
-define S042OEPrefixAReduction S041OEAwLongDiphthong
+define S043OEPrefixAReduction S042OEAwLongDiphthong
     .o. OEPrefixAReduction;
-define S043OEInterStressRaising S042OEPrefixAReduction
+define S044OEInterStressRaising S043OEPrefixAReduction
     .o. OEInterStressRaising;
-define S044OECompoundLinkingSyncope S043OEInterStressRaising
+define S045OECompoundLinkingSyncope S044OEInterStressRaising
     .o. OECompoundLinkingSyncope;
-define S045OEStripSecondaryStress S044OECompoundLinkingSyncope
+define S046OEStripSecondaryStress S045OECompoundLinkingSyncope
     .o. OEStripSecondaryStress;
-define S046OEWICombinativeUUmlaut S045OEStripSecondaryStress
+define S047OEWICombinativeUUmlaut S046OEStripSecondaryStress
     .o. OEWICombinativeUUmlaut;
-define S047PWGmcFinalBareALoss S046OEWICombinativeUUmlaut
+define S048PWGmcFinalBareALoss S047OEWICombinativeUUmlaut
     .o. PWGmcFinalBareALoss;
-define S048PWGmcSurvivingBimoricOUnrounding S047PWGmcFinalBareALoss
+define S049PWGmcSurvivingBimoricOUnrounding S048PWGmcFinalBareALoss
     .o. PWGmcSurvivingBimoricOUnrounding;
-define S049EAFBrighteningUnstressed S048PWGmcSurvivingBimoricOUnrounding
+define S050EAFBrighteningUnstressed S049PWGmcSurvivingBimoricOUnrounding
     .o. EAFBrighteningUnstressed;
-define S050EAFBrightening S049EAFBrighteningUnstressed
+define S051EAFBrightening S050EAFBrighteningUnstressed
     .o. EAFBrightening;
-define S051EAFBrighteningLongFinal S050EAFBrightening
+define S052EAFBrighteningLongFinal S051EAFBrightening
     .o. EAFBrighteningLongFinal;
-define S052OEBreaking S051EAFBrighteningLongFinal
+define S053OEBreaking S052EAFBrighteningLongFinal
     .o. OEBreaking;
-define S053OEVelarFricativePalatalization S052OEBreaking
+define S054OEVelarFricativePalatalization S053OEBreaking
     .o. OEVelarFricativePalatalization;
-define S054OEARestoration S053OEVelarFricativePalatalization
+define S055OEARestoration S054OEVelarFricativePalatalization
     .o. OEARestoration;
-define S055OEHeavySyllableNasalApocope S054OEARestoration
+define S056OEHeavySyllableNasalApocope S055OEARestoration
     .o. OEHeavySyllableNasalApocope;
-define S056OESecondaryNasalization S055OEHeavySyllableNasalApocope
+define S057OESecondaryNasalization S056OEHeavySyllableNasalApocope
     .o. OESecondaryNasalization;
-define S057PGmcBAllophony S056OESecondaryNasalization
+define S058PGmcBAllophony S057OESecondaryNasalization
     .o. PGmcBAllophony;
-define S058SieversLawSyncope S057PGmcBAllophony
+define S059SieversLawSyncope S058PGmcBAllophony
     .o. SieversLawSyncope;
-define S059OESkPalatalization S058SieversLawSyncope
+define S060OESkPalatalization S059SieversLawSyncope
     .o. OESkPalatalization;
-define S060OEVelarPalatalization S059OESkPalatalization
+define S061OEVelarPalatalization S060OESkPalatalization
     .o. OEVelarPalatalization;
-define S061OEPostVelarWLoss S060OEVelarPalatalization
+define S062OEPostVelarWLoss S061OEVelarPalatalization
     .o. OEPostVelarWLoss;
-define S062OEWLossBeforeI S061OEPostVelarWLoss
+define S063OEWLossBeforeI S062OEPostVelarWLoss
     .o. OEWLossBeforeI;
-define S063OEWsPalatalDiphthongization S062OEWLossBeforeI
+define S064OEWsPalatalDiphthongization S063OEWLossBeforeI
     .o. OEWsPalatalDiphthongization;
-define S064OEIUmlaut S063OEWsPalatalDiphthongization
+define S065OEIUmlaut S064OEWsPalatalDiphthongization
     .o. OEIUmlaut;
-define S065OELatePalatalDiphthong S064OEIUmlaut
+define S066OELatePalatalDiphthong S065OEIUmlaut
     .o. OELatePalatalDiphthong;
-define S066OEJClusterCoalescence S065OELatePalatalDiphthong
+define S067OEJClusterCoalescence S066OELatePalatalDiphthong
     .o. OEJClusterCoalescence;
-define S067OEBackMutation S066OEJClusterCoalescence
+define S068OEBackMutation S067OEJClusterCoalescence
     .o. OEBackMutation;
-define S068OEWsPalatalUmlaut S067OEBackMutation
+define S069OEWsPalatalUmlaut S068OEBackMutation
     .o. OEWsPalatalUmlaut;
-define S069OEWeakTailNasalLoss S068OEWsPalatalUmlaut
+define S070OEWeakTailNasalLoss S069OEWsPalatalUmlaut
     .o. OEWeakTailNasalLoss;
-define S070OEWeightMarkers S069OEWeakTailNasalLoss
+define S071OEWeightMarkers S070OEWeakTailNasalLoss
     .o. OEWeightMarkers;
-define S071OEHighVowelApocope S070OEWeightMarkers
+define S072OEHighVowelApocope S071OEWeightMarkers
     .o. OEHighVowelApocope;
-define S072NWGmcInStemNLoss S071OEHighVowelApocope
+define S073NWGmcInStemNLoss S072OEHighVowelApocope
     .o. NWGmcInStemNLoss;
-define S073OEMedialSyncope S072NWGmcInStemNLoss
+define S074OEMedialSyncope S073NWGmcInStemNLoss
     .o. OEMedialSyncope;
-define S074OELAdjacentSyncope S073OEMedialSyncope
+define S075OELAdjacentSyncope S074OEMedialSyncope
     .o. OELAdjacentSyncope;
-define S075OEDentalAssimilation S074OELAdjacentSyncope
+define S076OEDentalAssimilation S075OELAdjacentSyncope
     .o. OEDentalAssimilation;
-define S076OEPreconsonantalDegemination S075OEDentalAssimilation
+define S077OEPreconsonantalDegemination S076OEDentalAssimilation
     .o. OEPreconsonantalDegemination;
-define S077OEEarlyOShortening S076OEPreconsonantalDegemination
+define S078OEEarlyOShortening S077OEPreconsonantalDegemination
     .o. OEEarlyOShortening;
-define S078OEUnstressedFrontingEarly S077OEEarlyOShortening
+define S079OEUnstressedFrontingEarly S078OEEarlyOShortening
     .o. OEUnstressedFrontingEarly;
-define S079OELateOShortening S078OEUnstressedFrontingEarly
+define S080OELateOShortening S079OEUnstressedFrontingEarly
     .o. OELateOShortening;
-define S080OEMedUnstressedORaising S079OELateOShortening
+define S081OEMedUnstressedORaising S080OELateOShortening
     .o. OEMedUnstressedORaising;
-define S081OEFinalUnstressedOLowering S080OEMedUnstressedORaising
+define S082OEFinalUnstressedOLowering S081OEMedUnstressedORaising
     .o. OEFinalUnstressedOLowering;
-define S082OEUnstressedLongVowelShortening S081OEFinalUnstressedOLowering
+define S083OEUnstressedLongVowelShortening S082OEFinalUnstressedOLowering
     .o. OEUnstressedLongVowelShortening;
-define S083OEUnstressedAEMerger S082OEUnstressedLongVowelShortening
+define S084OEUnstressedAEMerger S083OEUnstressedLongVowelShortening
     .o. OEUnstressedAEMerger;
-define S084OEMedUnstressedILowering1 S083OEUnstressedAEMerger
+define S085OEMedUnstressedILowering1 S084OEUnstressedAEMerger
     .o. OEMedUnstressedILowering1;
-define S085OEMedUnstressedILowering S084OEMedUnstressedILowering1
+define S086OEMedUnstressedILowering S085OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering;
-define S086OEMedUnstressedULowering S085OEMedUnstressedILowering
+define S087OEMedUnstressedULowering S086OEMedUnstressedILowering
     .o. OEMedUnstressedULowering;
-define S087OEPrefixIReduction S086OEMedUnstressedULowering
+define S088OEPrefixIReduction S087OEMedUnstressedULowering
     .o. OEPrefixIReduction;
-define S088OEWeakTailReduction S087OEPrefixIReduction
+define S089OEWeakTailReduction S088OEPrefixIReduction
     .o. OEWeakTailReduction;
-define S089OEJLossAfterHeavy S088OEWeakTailReduction
+define S090OEJLossAfterHeavy S089OEWeakTailReduction
     .o. OEJLossAfterHeavy;
-define S090OEFinalGeminateSimplification S089OEJLossAfterHeavy
+define S091OEFinalGeminateSimplification S090OEJLossAfterHeavy
     .o. OEFinalGeminateSimplification;
-define S091OEJStrengtheningAfterFrontDiphthong S090OEFinalGeminateSimplification
+define S092OEJStrengtheningAfterFrontDiphthong S091OEFinalGeminateSimplification
     .o. OEJStrengtheningAfterFrontDiphthong;
-define S092OEIntervocalicJVocalization S091OEJStrengtheningAfterFrontDiphthong
+define S093OEIntervocalicJVocalization S092OEJStrengtheningAfterFrontDiphthong
     .o. OEIntervocalicJVocalization;
-define S093OEUnstressedEIContraction S092OEIntervocalicJVocalization
+define S094OEUnstressedEIContraction S093OEIntervocalicJVocalization
     .o. OEUnstressedEIContraction;
-define S094OEWeightCleanup S093OEUnstressedEIContraction
+define S095OEWeightCleanup S094OEUnstressedEIContraction
     .o. OEWeightCleanup;
-define S095OEHLoss S094OEWeightCleanup
+define S096OEHLoss S095OEWeightCleanup
     .o. OEHLoss;
-define S096OEContraction S095OEHLoss
+define S097OEContraction S096OEHLoss
     .o. OEContraction;
-define S097OERMetathesis S096OEContraction
+define S098OERMetathesis S097OEContraction
     .o. OERMetathesis;
-define S098OEEpentheticVowel S097OERMetathesis
+define S099OEEpentheticVowel S098OERMetathesis
     .o. OEEpentheticVowel;
-define S099OELateUnstressedAgSuffix S098OEEpentheticVowel
+define S100OELateUnstressedAgSuffix S099OEEpentheticVowel
     .o. OELateUnstressedAgSuffix;
-define S100OEPalatalFricativeMerger S099OELateUnstressedAgSuffix
+define S101OEPalatalFricativeMerger S100OELateUnstressedAgSuffix
     .o. OEPalatalFricativeMerger;
-define S101OECjCleanup S100OEPalatalFricativeMerger
+define S102OECjCleanup S101OEPalatalFricativeMerger
     .o. OECjCleanup;
-define S102OEXsMerge S101OECjCleanup
+define S103OEXsMerge S102OECjCleanup
     .o. OEXsMerge;
-define S103OldEnglishOrthography S102OEXsMerge
+define S104OldEnglishOrthography S103OEXsMerge
     .o. OldEnglishOrthography;
-define S104OEWsPalatalGlide S103OldEnglishOrthography
+define S105OEWsPalatalGlide S104OldEnglishOrthography
     .o. OEWsPalatalGlide;
-define S105OldEnglishRemoveStars S104OEWsPalatalGlide
+define S106OldEnglishRemoveStars S105OEWsPalatalGlide
     .o. OldEnglishRemoveStars;
-define S106OldEnglishSurface S105OldEnglishRemoveStars
+define S107OldEnglishSurface S106OldEnglishRemoveStars
     .o. OldEnglishSurface;
 
 clear stack
@@ -296,357 +298,361 @@ regex S017PWGmcDentalHardening;
 save stack old_english_sandbox_after_pwgmc_dental_hardening.bin
 
 clear stack
-regex S018PNWGmcILowering;
+regex S018PWGmcEndinglessAw;
+save stack old_english_sandbox_after_pwgmc_endingless_aw.bin
+
+clear stack
+regex S019PNWGmcILowering;
 save stack old_english_sandbox_after_pnwgmc_i_lowering.bin
 
 clear stack
-regex S019PNWGmcULowering;
+regex S020PNWGmcULowering;
 save stack old_english_sandbox_after_pnwgmc_u_lowering.bin
 
 clear stack
-regex S020PNWGmcStressedMonosyllableORaising;
+regex S021PNWGmcStressedMonosyllableORaising;
 save stack old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin
 
 clear stack
-regex S021PNWGmcFinalLongORaising;
+regex S022PNWGmcFinalLongORaising;
 save stack old_english_sandbox_after_pnwgmc_final_long_o_raising.bin
 
 clear stack
-regex S022EAFFinalZDeletion;
+regex S023EAFFinalZDeletion;
 save stack old_english_sandbox_after_eaf_final_z_deletion.bin
 
 clear stack
-regex S023PWGmcUnstressedWordFinalIApocope;
+regex S024PWGmcUnstressedWordFinalIApocope;
 save stack old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin
 
 clear stack
-regex S024MonosyllabicFinalZLoss;
+regex S025MonosyllabicFinalZLoss;
 save stack old_english_sandbox_after_monosyllabic_final_z_loss.bin
 
 clear stack
-regex S025EAFRhotacism;
+regex S026EAFRhotacism;
 save stack old_english_sandbox_after_eaf_rhotacism.bin
 
 clear stack
-regex S026PNWGmcMnDissimilation;
+regex S027PNWGmcMnDissimilation;
 save stack old_english_sandbox_after_pnwgmc_mn_dissimilation.bin
 
 clear stack
-regex S027PNWGmcNStemNLoss;
+regex S028PNWGmcNStemNLoss;
 save stack old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin
 
 clear stack
-regex S028EAFNasalSpirantLengthening;
+regex S029EAFNasalSpirantLengthening;
 save stack old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin
 
 clear stack
-regex S029EAFNasalSpirantLoss;
+regex S030EAFNasalSpirantLoss;
 save stack old_english_sandbox_after_eaf_nasal_spirant_loss.bin
 
 clear stack
-regex S030EAFHiatusWInsertion;
+regex S031EAFHiatusWInsertion;
 save stack old_english_sandbox_after_eaf_hiatus_w_insertion.bin
 
 clear stack
-regex S031EAFLongANasalRounding;
+regex S032EAFLongANasalRounding;
 save stack old_english_sandbox_after_eaf_long_a_nasal_rounding.bin
 
 clear stack
-regex S032EAFNasalizedLowRounding;
+regex S033EAFNasalizedLowRounding;
 save stack old_english_sandbox_after_eaf_nasalized_low_rounding.bin
 
 clear stack
-regex S033EAFLongAFronting;
+regex S034EAFLongAFronting;
 save stack old_english_sandbox_after_eaf_long_a_fronting.bin
 
 clear stack
-regex S034EAFAiMonophthongization;
+regex S035EAFAiMonophthongization;
 save stack old_english_sandbox_after_eaf_ai_monophthongization.bin
 
 clear stack
-regex S035OEAwwjResolution;
+regex S036OEAwwjResolution;
 save stack old_english_sandbox_after_oe_awwj_resolution.bin
 
 clear stack
-regex S036OEAuBrightening;
+regex S037OEAuBrightening;
 save stack old_english_sandbox_after_oe_au_brightening.bin
 
 clear stack
-regex S037OEEwLongDiphthong;
+regex S038OEEwLongDiphthong;
 save stack old_english_sandbox_after_oe_ew_long_diphthong.bin
 
 clear stack
-regex S038OEJWWSimplification;
+regex S039OEJWWSimplification;
 save stack old_english_sandbox_after_oe_jww_simplification.bin
 
 clear stack
-regex S039OEJGlideIO;
+regex S040OEJGlideIO;
 save stack old_english_sandbox_after_oe_j_glide_io.bin
 
 clear stack
-regex S040OEDiphthongLeveling;
+regex S041OEDiphthongLeveling;
 save stack old_english_sandbox_after_oe_diphthong_leveling.bin
 
 clear stack
-regex S041OEAwLongDiphthong;
+regex S042OEAwLongDiphthong;
 save stack old_english_sandbox_after_oe_aw_long_diphthong.bin
 
 clear stack
-regex S042OEPrefixAReduction;
+regex S043OEPrefixAReduction;
 save stack old_english_sandbox_after_oe_prefix_a_reduction.bin
 
 clear stack
-regex S043OEInterStressRaising;
+regex S044OEInterStressRaising;
 save stack old_english_sandbox_after_oe_inter_stress_raising.bin
 
 clear stack
-regex S044OECompoundLinkingSyncope;
+regex S045OECompoundLinkingSyncope;
 save stack old_english_sandbox_after_oe_compound_linking_syncope.bin
 
 clear stack
-regex S045OEStripSecondaryStress;
+regex S046OEStripSecondaryStress;
 save stack old_english_sandbox_after_oe_strip_secondary_stress.bin
 
 clear stack
-regex S046OEWICombinativeUUmlaut;
+regex S047OEWICombinativeUUmlaut;
 save stack old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin
 
 clear stack
-regex S047PWGmcFinalBareALoss;
+regex S048PWGmcFinalBareALoss;
 save stack old_english_sandbox_after_pwgmc_final_bare_a_loss.bin
 
 clear stack
-regex S048PWGmcSurvivingBimoricOUnrounding;
+regex S049PWGmcSurvivingBimoricOUnrounding;
 save stack old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin
 
 clear stack
-regex S049EAFBrighteningUnstressed;
+regex S050EAFBrighteningUnstressed;
 save stack old_english_sandbox_after_eaf_brightening_unstressed.bin
 
 clear stack
-regex S050EAFBrightening;
+regex S051EAFBrightening;
 save stack old_english_sandbox_after_eaf_brightening.bin
 
 clear stack
-regex S051EAFBrighteningLongFinal;
+regex S052EAFBrighteningLongFinal;
 save stack old_english_sandbox_after_eaf_brightening_long_final.bin
 
 clear stack
-regex S052OEBreaking;
+regex S053OEBreaking;
 save stack old_english_sandbox_after_oe_breaking.bin
 
 clear stack
-regex S053OEVelarFricativePalatalization;
+regex S054OEVelarFricativePalatalization;
 save stack old_english_sandbox_after_oe_velar_fricative_palatalization.bin
 
 clear stack
-regex S054OEARestoration;
+regex S055OEARestoration;
 save stack old_english_sandbox_after_oe_a_restoration.bin
 
 clear stack
-regex S055OEHeavySyllableNasalApocope;
+regex S056OEHeavySyllableNasalApocope;
 save stack old_english_sandbox_after_oe_heavy_syllable_nasal_apocope.bin
 
 clear stack
-regex S056OESecondaryNasalization;
+regex S057OESecondaryNasalization;
 save stack old_english_sandbox_after_oe_secondary_nasalization.bin
 
 clear stack
-regex S057PGmcBAllophony;
+regex S058PGmcBAllophony;
 save stack old_english_sandbox_after_pgmc_b_allophony.bin
 
 clear stack
-regex S058SieversLawSyncope;
+regex S059SieversLawSyncope;
 save stack old_english_sandbox_after_sievers_law_syncope.bin
 
 clear stack
-regex S059OESkPalatalization;
+regex S060OESkPalatalization;
 save stack old_english_sandbox_after_oe_sk_palatalization.bin
 
 clear stack
-regex S060OEVelarPalatalization;
+regex S061OEVelarPalatalization;
 save stack old_english_sandbox_after_oe_velar_palatalization.bin
 
 clear stack
-regex S061OEPostVelarWLoss;
+regex S062OEPostVelarWLoss;
 save stack old_english_sandbox_after_oe_post_velar_w_loss.bin
 
 clear stack
-regex S062OEWLossBeforeI;
+regex S063OEWLossBeforeI;
 save stack old_english_sandbox_after_oe_w_loss_before_i.bin
 
 clear stack
-regex S063OEWsPalatalDiphthongization;
+regex S064OEWsPalatalDiphthongization;
 save stack old_english_sandbox_after_oe_ws_palatal_diphthongization.bin
 
 clear stack
-regex S064OEIUmlaut;
+regex S065OEIUmlaut;
 save stack old_english_sandbox_after_oe_i_umlaut.bin
 
 clear stack
-regex S065OELatePalatalDiphthong;
+regex S066OELatePalatalDiphthong;
 save stack old_english_sandbox_after_oe_late_palatal_diphthong.bin
 
 clear stack
-regex S066OEJClusterCoalescence;
+regex S067OEJClusterCoalescence;
 save stack old_english_sandbox_after_oe_j_cluster_coalescence.bin
 
 clear stack
-regex S067OEBackMutation;
+regex S068OEBackMutation;
 save stack old_english_sandbox_after_oe_back_mutation.bin
 
 clear stack
-regex S068OEWsPalatalUmlaut;
+regex S069OEWsPalatalUmlaut;
 save stack old_english_sandbox_after_oe_ws_palatal_umlaut.bin
 
 clear stack
-regex S069OEWeakTailNasalLoss;
+regex S070OEWeakTailNasalLoss;
 save stack old_english_sandbox_after_oe_weak_tail_nasal_loss.bin
 
 clear stack
-regex S070OEWeightMarkers;
+regex S071OEWeightMarkers;
 save stack old_english_sandbox_after_oe_weight_markers.bin
 
 clear stack
-regex S071OEHighVowelApocope;
+regex S072OEHighVowelApocope;
 save stack old_english_sandbox_after_oe_high_vowel_apocope.bin
 
 clear stack
-regex S072NWGmcInStemNLoss;
+regex S073NWGmcInStemNLoss;
 save stack old_english_sandbox_after_nwgmc_in_stem_n_loss.bin
 
 clear stack
-regex S073OEMedialSyncope;
+regex S074OEMedialSyncope;
 save stack old_english_sandbox_after_oe_medial_syncope.bin
 
 clear stack
-regex S074OELAdjacentSyncope;
+regex S075OELAdjacentSyncope;
 save stack old_english_sandbox_after_oe_l_adjacent_syncope.bin
 
 clear stack
-regex S075OEDentalAssimilation;
+regex S076OEDentalAssimilation;
 save stack old_english_sandbox_after_oe_dental_assimilation.bin
 
 clear stack
-regex S076OEPreconsonantalDegemination;
+regex S077OEPreconsonantalDegemination;
 save stack old_english_sandbox_after_oe_preconsonantal_degemination.bin
 
 clear stack
-regex S077OEEarlyOShortening;
+regex S078OEEarlyOShortening;
 save stack old_english_sandbox_after_oe_early_o_shortening.bin
 
 clear stack
-regex S078OEUnstressedFrontingEarly;
+regex S079OEUnstressedFrontingEarly;
 save stack old_english_sandbox_after_oe_unstressed_fronting_early.bin
 
 clear stack
-regex S079OELateOShortening;
+regex S080OELateOShortening;
 save stack old_english_sandbox_after_oe_late_o_shortening.bin
 
 clear stack
-regex S080OEMedUnstressedORaising;
+regex S081OEMedUnstressedORaising;
 save stack old_english_sandbox_after_oe_med_unstressed_o_raising.bin
 
 clear stack
-regex S081OEFinalUnstressedOLowering;
+regex S082OEFinalUnstressedOLowering;
 save stack old_english_sandbox_after_oe_final_unstressed_o_lowering.bin
 
 clear stack
-regex S082OEUnstressedLongVowelShortening;
+regex S083OEUnstressedLongVowelShortening;
 save stack old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin
 
 clear stack
-regex S083OEUnstressedAEMerger;
+regex S084OEUnstressedAEMerger;
 save stack old_english_sandbox_after_oe_unstressed_ae_merger.bin
 
 clear stack
-regex S084OEMedUnstressedILowering1;
+regex S085OEMedUnstressedILowering1;
 save stack old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin
 
 clear stack
-regex S085OEMedUnstressedILowering;
+regex S086OEMedUnstressedILowering;
 save stack old_english_sandbox_after_oe_med_unstressed_i_lowering.bin
 
 clear stack
-regex S086OEMedUnstressedULowering;
+regex S087OEMedUnstressedULowering;
 save stack old_english_sandbox_after_oe_med_unstressed_u_lowering.bin
 
 clear stack
-regex S087OEPrefixIReduction;
+regex S088OEPrefixIReduction;
 save stack old_english_sandbox_after_oe_prefix_i_reduction.bin
 
 clear stack
-regex S088OEWeakTailReduction;
+regex S089OEWeakTailReduction;
 save stack old_english_sandbox_after_oe_weak_tail_reduction.bin
 
 clear stack
-regex S089OEJLossAfterHeavy;
+regex S090OEJLossAfterHeavy;
 save stack old_english_sandbox_after_oe_j_loss_after_heavy.bin
 
 clear stack
-regex S090OEFinalGeminateSimplification;
+regex S091OEFinalGeminateSimplification;
 save stack old_english_sandbox_after_oe_final_geminate_simplification.bin
 
 clear stack
-regex S091OEJStrengtheningAfterFrontDiphthong;
+regex S092OEJStrengtheningAfterFrontDiphthong;
 save stack old_english_sandbox_after_oe_j_strengthening_after_front_diphthong.bin
 
 clear stack
-regex S092OEIntervocalicJVocalization;
+regex S093OEIntervocalicJVocalization;
 save stack old_english_sandbox_after_oe_intervocalic_j_vocalization.bin
 
 clear stack
-regex S093OEUnstressedEIContraction;
+regex S094OEUnstressedEIContraction;
 save stack old_english_sandbox_after_oe_unstressed_ei_contraction.bin
 
 clear stack
-regex S094OEWeightCleanup;
+regex S095OEWeightCleanup;
 save stack old_english_sandbox_after_oe_weight_cleanup.bin
 
 clear stack
-regex S095OEHLoss;
+regex S096OEHLoss;
 save stack old_english_sandbox_after_oe_h_loss.bin
 
 clear stack
-regex S096OEContraction;
+regex S097OEContraction;
 save stack old_english_sandbox_after_oe_contraction.bin
 
 clear stack
-regex S097OERMetathesis;
+regex S098OERMetathesis;
 save stack old_english_sandbox_after_oe_r_metathesis.bin
 
 clear stack
-regex S098OEEpentheticVowel;
+regex S099OEEpentheticVowel;
 save stack old_english_sandbox_after_oe_epenthetic_vowel.bin
 
 clear stack
-regex S099OELateUnstressedAgSuffix;
+regex S100OELateUnstressedAgSuffix;
 save stack old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin
 
 clear stack
-regex S100OEPalatalFricativeMerger;
+regex S101OEPalatalFricativeMerger;
 save stack old_english_sandbox_after_oe_palatal_fricative_merger.bin
 
 clear stack
-regex S101OECjCleanup;
+regex S102OECjCleanup;
 save stack old_english_sandbox_after_oe_cj_cleanup.bin
 
 clear stack
-regex S102OEXsMerge;
+regex S103OEXsMerge;
 save stack old_english_sandbox_after_oe_xs_merge.bin
 
 clear stack
-regex S103OldEnglishOrthography;
+regex S104OldEnglishOrthography;
 save stack old_english_sandbox_after_old_english_orthography.bin
 
 clear stack
-regex S104OEWsPalatalGlide;
+regex S105OEWsPalatalGlide;
 save stack old_english_sandbox_after_oe_ws_palatal_glide.bin
 
 clear stack
-regex S105OldEnglishRemoveStars;
+regex S106OldEnglishRemoveStars;
 save stack old_english_sandbox_after_old_english_remove_stars.bin
 
 clear stack
-regex S106OldEnglishSurface;
+regex S107OldEnglishSurface;
 save stack old_english_sandbox_after_old_english_surface.bin

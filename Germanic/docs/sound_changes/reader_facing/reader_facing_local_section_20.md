@@ -811,6 +811,48 @@ Comparative evidence establishes the sound law; the present lexicon leaves its e
 
 \newpage
 
+# Endingless \emph{aw}: the regular straw branch
+
+## Historical discussion
+
+The inherited nominative/accusative \emph{*stráwą} loses its final
+ending and vocalizes resulting final \emph{w}, giving \emph{*strau}.
+Ordinary English diphthong development then produces reconstructed
+\emph{*strēa}. Attested *strēaw* 'straw' instead combines that long
+diphthong with \emph{w} restored from inflected forms; the long nucleus
+also spreads into those forms. The regular free simplex and short
+obliques are explicitly unattested. The compound *strēaberige*
+'strawberry' preserves the endingless branch, but is not substituted
+for an attested free noun
+[@Campbell1959, pp. 46--47, 232--233;
+@SieversBrunner1965, pp. 49, 110, 204--205;
+@RingeTaylor2014, pp. 172--173, 387].
+
+The model keeps attested *strēaw* 'straw' as its comparison and produces
+regular reconstructed \emph{*strēa}: this is an explicit mismatch.
+The fragment below combines final-vowel loss and ensuing vocalization.
+Its narrow matcher does not make general final-vowel loss
+\emph{w}-conditioned.
+
+## SC111. Endingless \emph{aw} fragment (`PWGmcEndinglessAw`) {#rule-PWGmcEndinglessAw}
+
+```foma
+define PWGmcEndinglessAw [
+    {*a} {*w} {*ą} -> {*au} || _ .#. ,
+    {*á} {*w} {*ą} -> {*áu} || _ .#.
+];
+```
+
+The ordinary \emph{au} product feeds
+[SC030 OEAuBrightening](#rule-OEAuBrightening) and
+[SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), not the retained
+show proxy [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong).
+The early holding site is compatible with the source's West Germanic
+history, not evidence for strict relative order against unrelated
+dental hardening [@RingeTaylor2014, pp. 172--173].
+
+\newpage
+
 # Northwest Germanic u-lowering
 
 ## Historical discussion
@@ -2054,8 +2096,21 @@ paradigm comparison; later long obliques must not be confused with
 the selected short cell
 [@Campbell1959, pp. 232--233; @HoggGrammar2011, pp. 21--22, 86;
 @RingeTaylor2014, pp. 187--188, 387].
-[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) retains the singleton
-show/straw forms. The unchanged
+[SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) now supplies straw's
+regular endingless \emph{*strau}, feeding ordinary English realization
+to reconstructed \emph{*strēa}. The comparison remains attested
+*strēaw* 'straw': its restored final \emph{w} belongs to paradigm
+levelling, so this regular derivation explicitly mismatches the target.
+The sources mark the free regular simplex and short obliques as
+unattested; the compound *strēaberige* 'strawberry' is not substituted
+for the selected noun
+[@Campbell1959, pp. 232--233; @SieversBrunner1965, pp. 49, 110;
+@RingeTaylor2014, pp. 172--173, 387].
+[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) retains only the
+three show cells as a disclosed proxy. Dictionary singleton stems and
+the inherited-geminate handbook analysis remain distinct, unresolved
+premises [@Orel2003, p. 337; @Kroonen2013, p. 442;
+@Campbell1959, p. 45; @SieversBrunner1965, p. 49]. The unchanged
 [SC106 OEJWWSimplification](#rule-OEJWWSimplification) remains a
 technical compatibility operation, but hue now reaches it with
 singleton w and no longer feeds it.
@@ -2692,26 +2747,54 @@ nine-clause bundle follows from that one computational dependency.
 
 \newpage
 
-# Long \emph{ēaw} before following vowels
+# Endingless \emph{aw} and the retained show proxy
 
 ## Historical discussion
 
-Singleton \emph{aw} before a following vowel develops into long \emph{ēaw},
-as in *sċēawian* 'show' and *strēaw* 'straw'. This remaining singleton path
-must be distinguished from the inherited geminates of *dēaw* 'dew' and
-*hēawan* 'hew'. Those now undergo early
+The attested long nucleus does not establish one general law changing
+singleton \emph{aw} to \emph{ēaw} before every following vowel.
+For straw, the inherited nominative/accusative \emph{*stráwą} loses its
+ending and vocalizes final \emph{w}, giving \emph{*strau}; the ordinary
+English development then gives reconstructed \emph{*strēa}. Attested
+*strēaw* 'straw' combines that long diphthong with \emph{w} restored
+from inflected forms. Conversely, the long diphthong spreads into those
+forms. The regular free simplex and short obliques are explicitly
+unattested, although the endingless pattern survives in the compound
+*strēaberige* 'strawberry'
+[@Campbell1959, pp. 46--47, 232--233;
+@SieversBrunner1965, pp. 49, 110, 204--205;
+@RingeTaylor2014, pp. 172--173, 387].
+
+The model retains attested *strēaw* 'straw' as its comparison target and produces
+reconstructed \emph{*strēa} through the regular cascade. This is an
+explicit mismatch, not an attested reconstructed endpoint or a sound law
+for analogical restoration.
+[SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) supplies the narrow
+endingless fragment; it does not imply that general final-vowel loss
+was conditioned by an adjacent \emph{w}.
+
+The inherited geminates of *dēaw* 'dew' and *hēawan* 'hew' instead undergo
+early
 [SC031 OEWWSimplification](#rule-OEWWSimplification), producing
 \emph{*au} plus retained \emph{*w}, followed by English fronting and
 [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling).
 Campbell distinguishes the glide histories; Ringe and Taylor distinguish
 earlier reanalysis from later English realization
 [@Campbell1959, pp. 45--47, 53--54; @RingeTaylor2014, pp. 65--66, 171--175].
-The resulting long diphthong is \emph{ēaw}.
+These retained-glide histories differ from endingless straw.
 
-[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) retains its singleton
-operation before [SC043 EAFBrightening](#rule-EAFBrightening).
+For *sċēawian* 'show', Orel and Kroonen print singleton dictionary
+inputs, while Campbell and Brunner include the verb among inherited
+geminate examples. The class-II suffix places a vowel between root
+\emph{w} and \emph{j}; this excludes direct root \emph{aw+j}
+gemination but does not resolve the different root histories
+[@Orel2003, p. 337; @Kroonen2013, p. 442;
+@Campbell1959, p. 45; @SieversBrunner1965, p. 49].
+[SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) therefore remains
+a disclosed support proxy for the three selected show cells, not an
+established general singleton sound law or a newly dated West Saxon event.
 
-## SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong}
+## SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong}
 
 ```foma
 define OEAwLongDiphthong [
@@ -2720,13 +2803,17 @@ define OEAwLongDiphthong [
 ];
 ```
 
-The current operation changes four singleton show/straw forms. Dew and
+The current operation changes the show infinitive, imperative singular
+and present third singular. Straw already has its regular long nucleus
+without \emph{w} and is unchanged here. Dew and
 hew no longer demonstrate a local simplification-then-lengthening chain
 here: their earlier reanalysis has already removed that input shape.
 The older displacement results for those geminates describe the superseded
 representation, not independent dates for the adopted early event.
-The singleton operation itself remains unchanged; this decomposition
-does not give every glide history a new historical verdict
+The two proxy clauses remain unchanged; their successful show finals
+do not decide the unresolved singleton-versus-geminate source premise.
+The old straw displacement observation measured dependence on a
+following vowel in the superseded proxy, not independent historical order
 [@Campbell1959, pp. 45--47; @RingeTaylor2014, pp. 171--175].
 
 \newpage
@@ -3102,7 +3189,25 @@ define OEHeavySyllableNasalApocope [
 ];
 ```
 
-The evidence for final nasalized \emph{*ą} loss is sharply asymmetric. Before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), the single PGmc witness [stráwą]{.recon} ‘straw’ yields [*stræw*]{.pred} rather than expected OE *strēaw* ‘straw’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* ‘bind’, alongside a broad \emph{-en} failure set. One lower witness places apocope after long-diphthong formation; many reciprocal upper failures place it before secondary nasalization.
+The old lower-bound test depended on the superseded straw proxy:
+moving apocope before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong)
+made PGmc [stráwą]{.recon} ‘straw’ yield [*stræw*]{.pred} rather than
+attested OE *strēaw* 'straw'. The adopted regular endingless branch now reaches
+reconstructed \emph{*strēa} through
+[SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw), before this
+apocope. The attested target retains analogically restored \emph{w}
+and explicitly mismatches the regular output. The old failure therefore
+does not independently place nasal apocope after a universal singleton
+long-diphthong law
+[@Campbell1959, pp. 46--47, 232--233;
+@RingeTaylor2014, pp. 172--173, 387].
+
+The separate recorded upper-bound test is unchanged: after
+[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc
+[bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE
+*bacan*, and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred}
+rather than expected *bindan*, alongside a broad \emph{-en} failure set.
+That secondary-nasalization dependency is not newly adjudicated here.
 
 ## \CAPRRuleHeading{SC048. Secondary nasalization before final \emph{*n}}{OESecondaryNasalization} {#rule-OESecondaryNasalization}
 

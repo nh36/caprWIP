@@ -208,13 +208,13 @@
     },
     {
       "change_id": "SC034",
-      "display_name": "OE Aw Long Diphthong",
+      "display_name": "Retained show long-diphthong proxy",
       "lifecycle_status": "active",
       "rule_name": "OEAwLongDiphthong",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC034-oe-aw-long-diphthong.md",
       "card_type": "boundary_observation",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Current population four singleton show/straw forms; old dew/hew witnesses and reciprocal SC031 boundary superseded. Retained displacement observations are not independently established historical edges."
+      "short_summary": "Three show applications retained; straw follows the approved regular endingless branch. Old straw/SC047 and geminate displacement records are superseded proxy observations, not historical dates."
     },
     {
       "change_id": "SC035",
@@ -1641,16 +1641,16 @@
     {
       "source_change_id": "SC047",
       "target_change_id": "SC034",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "straw",
-      "representative_forms": "PGmc `*stráwą` yields expected OE `strēaw`, but the earlier-shifted variant yields `stræw`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "representative_forms": "Reproduced incumbent proxy dependency: early nasal-vowel loss disables old SC034 on straw, giving stræw. Approved regular straw branch no longer fires here.",
+      "strength": "technical",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Later boundary carries the reciprocal 87-row broad -en failure set with SC048 earlier."
+      "notes": "Superseded proxy observation, not independently established historical chronology; frozen card retained."
     },
     {
       "source_change_id": "SC047",

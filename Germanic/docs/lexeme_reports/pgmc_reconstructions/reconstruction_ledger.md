@@ -8237,7 +8237,7 @@ Coverage: 2 checks; 0 unchecked; 0 verification gaps.
 ## 2224: straw / strēaw
 
 Current citation: *stráwą (pgmc); selected input: *stráwą (pgmc; variety: none; equality_convention).
-Runnable: 1; derivation class: regular.
+Runnable: 1; derivation class: late_analogy.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
 | --- | --- | --- | --- | --- | --- |

@@ -91,7 +91,41 @@ approval archives and historical recipes are unchanged. Unwitnessed
 unaccented atomic alternatives and short split clauses retain formal
 behavior without an invented historical domain. The SC032 memo owns
 the complete component ledger, source/encoding distinctions and validation;
-SC034 remains pending.
+SC034's subsequent disposition is recorded next.
+
+## Adopted SC034 regular straw branch and deferred show premise
+
+SC034 is REFORMULATE/DEFER: the retained singleton long-output mapping
+is explicitly a support proxy for show's three selected cells, not a
+general West Saxon singleton-aw law. Dictionary singleton stems and the
+handbook inherited-geminate analysis remain different unresolved
+premises [@Orel2003, p.337; @Kroonen2013, p.442;
+@Campbell1959, p.45; @SieversBrunner1965, p.49].
+
+Straw's regular endingless branch now feeds unchanged SC030/SC032 through
+support SC111: inherited `*stráwą -> *strau -> *strēa`. Its actual
+`strēaw` involves restored w and paradigm levelling, while the sources
+explicitly mark the free regular simplex and short obliques as unattested
+[@Campbell1959, pp.46–47,232–233; @SieversBrunner1965, pp.49,110;
+@RingeTaylor2014, pp.172–173,387]. The user's corrected disposition
+retains attested `strēaw` as target: regular output `strēa` is an
+eighth known mismatch, not a reconstructed target counted as success.
+Input, context, stage and all other386 finals remain unchanged.
+
+The four-row incumbent ablation and two straw-only displacement effects
+are reproduced. The prediction that late SC034 would change all four
+was refuted; restored plain a permits show's later proxy application.
+The old SC047/straw boundary is superseded technical dependence, not
+historical order. SC111's holding site does not establish chronology
+against dental hardening. Historical recipe/report pins and all earlier
+scientific decisions remain unchanged.
+
+The SC034 memo owns exact transition hashes and per-word review.
+Three show models/ledgers correct locators, the held Bright edition,
+finite assemblies and the actual lost-i checkpoint; dew/hew need no
+mechanical revision. Straw's attested-target mismatch is propagated
+through the existing compact-report machinery, without extended-essay
+or editorial-certification manufacture.
 
 ## 1. Governing test and notation
 
@@ -1417,7 +1451,7 @@ corpus/stage/FST corrections require the consolidated approval packet.
 |---|---|---|---|---|
 | SC031 ww simplification | Distinguish literal deletion proxy from earlier Vww > Vuw reanalysis | RingeTaylor2014 pp. 41–42, 65–66; Fulk2018 p. 117; complete composed assay | 031-034 book dossier §§11–16,19; 031 reader | Implemented and published SPLIT/REORDER: early chew/dew/four/hew/you reanalysis, separate homorganic quantity and explicit long-Vww negatives. The original release exposed SC106 as hue's ww+j residual; the approved SC033/110 follow-up now removes that feeder, retaining SC106 unchanged as compatibility. Approved context baseline and its archives remain protected |
 | SC033 / SC110 | Separate knee's short pre-ending history from j-created offglide reanalysis and long-io realization | Campbell1959 pp.42,46,232–233; RingeTaylor2014 pp.53,187–188,250,387; Orel2003 pp.171–172; Kroonen2013 p.224; Fulk2018 pp.59,71–72,126 | SC033 memo; 031-034 dossier §§17–19; 033/044 readers; hue/knee models | Author-approved REFORMULATE/SPLIT after the completed knee restriction: hue PROTO = PROTOFORM = *xíwją; SC033 iww+j -> iu+w+j and separate SC110 long-io realization. No omitted early raising or invented support-stage date/confidence. SC106 remains unchanged compatibility, no longer fed by hue. Exact pre-hue baseline archive preserves all earlier transitions; new publication closeout belongs to the memo |
-| SC034 a+w | Quantity and retained glide, including secondary ww; exclude separately resolved j paths | RingeTaylor2014 pp. 65–66, 171–173; dew/hew, hay/strew controls | 031-034 dossier §§13, 16; 034 reader | Retained operation with changed feeder population: dew/hew complete through SC032; four singleton show/straw forms remain. No new historical verdict |
+| SC034 a+w | Retained show proxy; regular endingless straw separately feeds SC030/SC032 | Campbell1959 pp.45–47,232–233; Brunner1965 pp.49,110; RingeTaylor2014 pp.172–173,387 | SC034 memo; 031-034 dossier §21; 034 reader | REFORMULATE/DEFER: three show applications, root premise unresolved. Straw regular output strea versus retained attested target streaw is an eighth known mismatch; SC111 is composed support, not a new universal final-a-loss law |
 | SC032 atomic diphthongs | Separate au completion from eu/iu realization; not automatically one leveling law | RingeTaylor2014 pp. 171–175; bread and eu/iu controls | 031-034 dossier §§13, 16; 032 reader | Production population is 32 versus former 27, retaining the old population plus five early-reanalysis witnesses. Existing realization clauses retained; F interface remains separately specified |
 | SC032 split e/i+u | Determine representation equivalence and short/long/stress outcomes | Existing executable clauses; source mapping required, not inferred from notation | 031-034 dossier §13; 032 reader | Split e/é/i clauses mapped, including absent parallel í clause; historical equivalence not established |
 | SC029 awwj | Contextual control; preserve settled domain unless specifically challenged | RingeTaylor2014 p. 173; hay/strew versus hue | Existing SC029/030 memo; 028-030 dossier; 029-030 reader | Retain incumbent as control, not a new verdict |

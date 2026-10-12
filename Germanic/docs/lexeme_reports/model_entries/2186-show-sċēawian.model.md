@@ -18,16 +18,16 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Orel and Kroonen cite a Class II verb of the type [`*skawōjan-`]{.iv lang=pgmc sort=skawojan role=source_protoform}, with OE [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' among the reflexes [@Orel2003; @Kroonen2013, 482]. Brunner likewise records the Old English family as [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show', [`scāwian`]{.iv lang=oe sort=scawian role=comparison_form} 'show', confirming that it belongs to the ordinary show-verb set rather than to a special finite-cell formation [@SieversBrunner1965].
+Orel and Kroonen cite a Class II verb of the type [`*skawōjan-`]{.iv lang=pgmc sort=skawojan role=source_protoform}, with OE [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' among the reflexes [@Orel2003, p. 337; @Kroonen2013, p. 442]. The dictionary singleton stem is not silently identified with Campbell and Brunner's inherited-geminate analysis [@Campbell1959, p. 45; @SieversBrunner1965, p. 49]. Brunner also records the later West Saxon variant [`scāwian`]{.iv lang=oe sort=scawian role=comparison_form} 'show' in his discussion of diphthong accent shift; it is not evidence for the same prehistoric singleton quantity [@SieversBrunner1965, pp. 106--107].
 
 ### Old English evidence
 
-Bright lists [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' (W. II.) and also the related form [`scēawa`]{.iv lang=oe sort=sceawa role=comparison_form} 'show' [@BrightCassidyRingler1971]. The sources therefore use [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show', while [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show' supplies a normalized spelling.
+The held fourth edition of Bright's reader contains [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' and the related imperative [`scēawa`]{.iv lang=oe sort=sceawa role=comparison_form} 'show' in the Blickling homily [@Bright1917, p. 71]. This is not a newly verified passage in the separate Cassidy/Ringler edition. The sources use [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show', while [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show' supplies CAPR's normalized spelling.
 
 ### Development to Old English
 
-From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input} 'show', the inherited `aw` sequence before a following vowel develops into the `ēaw` diphthong, and `*ō` survives between `*w` and `*j` in the Class II suffix. The development therefore runs regularly to [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show', without the direct `aw+j` problem seen in other verb types [@Campbell1959; @Orel2003].
+From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input} 'show', the transducer retains a mapping to long `ea+w` before the class-II suffix. Its `*ō` separates root `*w` from `*j`, excluding direct `aw+j` gemination. Neither that exclusion nor the successful [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show' output establishes a general singleton lengthening law. The selected input and `regular` corpus classification remain unchanged, but the root-history premise is expressly unresolved: Campbell's inherited-geminate account differs from the dictionary singleton stem [@Campbell1959, pp. 45--46; @Orel2003, p. 337; @Kroonen2013, p. 442].
 
 ### Form note
 
-The difference between [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' and [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show' is orthographic normalization of initial `<sc>`, not a difference of lexeme or paradigm cell [@Campbell1959; @HoggGrammar1992].
+The difference between [`scēawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' and [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show' is CAPR's editorial normalization of initial `<sc>`, not a different lexeme or paradigm cell. It does not itself settle the consonant's prehistoric articulation.

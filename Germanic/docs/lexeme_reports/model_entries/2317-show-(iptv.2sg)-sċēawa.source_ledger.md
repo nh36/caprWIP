@@ -1,6 +1,21 @@
 # Source extraction ledger — show (iptv.2sg) / sċēawa
 
-This ledger records the finite-cell evidence and show-family support used before the model entry was drafted.
+## Current SC034 source review
+
+Orel2003 p.337 quotes the infinitive family, not selected *skáwô.
+The latter is CAPR's finite assembly using the imperative ending account
+in RingeTaylor2014 p.314. Bright1917 p.71 supplies actual scēawa in the
+held fourth-edition reader; the former Cassidy/Ringler1971 p.346
+attribution does not identify this holding. Campbell1959 p.45 discusses
+the inherited-geminate sequence, not a lexical imperative named auw;
+Brunner1965 p.49 corroborates that class. The singleton/geminate root
+premise remains unresolved and the selected input/target/class remain
+unchanged. The historical record below is superseded on these exact
+attributions, locators and root-history claims.
+
+## Earlier extraction record (superseded where specified above)
+
+This ledger recorded the finite-cell evidence before the prior model was drafted.
 
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

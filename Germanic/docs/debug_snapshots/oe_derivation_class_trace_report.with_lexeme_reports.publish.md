@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (309) ===
+=== DERIVATION_CLASS: regular (308) ===
 
 
 
@@ -5145,26 +5145,6 @@ English Proto Input: *stúrmaz
 ### Orthography & surface
 
 Outcome: storm
-# straw
-PROTO: *stráwą
-EXPECTED: strēaw
-OUTPUTS: strēaw
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *stráwą
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *strḗawą<br>OE Heavy Syllable Nasal Apocope: *strḗaw |
-
-
-
-### Orthography & surface
-
-Outcome: strēaw
 # stream
 PROTO: *stráumaz
 EXPECTED: strēam
@@ -7486,7 +7466,7 @@ English Proto Input: *júgunθ
 Old English Orthography: ġ*úguþ
 OE Ws Palatal Glide: ġ*éoguþ
 Outcome: ġeoguþ
-=== DERIVATION_CLASS: late_analogy (28) ===
+=== DERIVATION_CLASS: late_analogy (29) ===
 
 
 
@@ -8320,6 +8300,26 @@ This is a `late_analogy` case. The nominative singular `*spannō` yields `span`,
 |:---|:---|:---|:---|:---|
 | nom.sg. | *spannō | span | no | Citation nominative singular. |
 | dat.sg. | *spánnai | spanne | yes | Chosen dative singular cell in TSV. |
+# straw
+PROTO: *stráwą
+EXPECTED: strēaw
+OUTPUTS: strēa
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *stráwą
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Endingless Aw: *stráu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *stráeu<br>OE Diphthong Leveling: *strēa |
+
+
+
+### Orthography & surface
+
+Outcome: strēa
 # thistle
 PROTO: *θístilas
 EXPECTED: þistles

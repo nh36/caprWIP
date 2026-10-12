@@ -1,4 +1,5 @@
 import copy
+import csv
 import json
 import sys
 import tempfile
@@ -103,6 +104,14 @@ class CellAdoptionTests(unittest.TestCase):
             ):
                 (target / destination).write_bytes((BASE / source).read_bytes())
             old = (target / "cascade_baseline_outputs.tsv").read_bytes()
+            with (BASE / "approved_input_migrations.tsv").open() as handle:
+                reader = csv.DictReader(handle, delimiter="\t")
+                fields = reader.fieldnames
+                migrations = [row for row in reader if row["row_id"] != "2224"]
+            with (target / "approved_input_migrations.tsv").open("w") as handle:
+                writer = csv.DictWriter(handle, fields, delimiter="\t")
+                writer.writeheader()
+                writer.writerows(migrations)
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             self.assertEqual((target / "cascade_baseline_outputs_pre_sc033.tsv").read_bytes(), old)
             before = {path.name: path.read_bytes() for path in target.iterdir()}

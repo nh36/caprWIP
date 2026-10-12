@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "70bdaba537d8f6b6bb7d872d00eefbef75127d2d77689af7ba01b35a79ebce39"
+    ACTIVE_SHA = "6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -121,7 +121,7 @@ class LegacySubsetTests(unittest.TestCase):
             migrations = list(csv.DictReader(handle, delimiter="\t"))
         selected = mod.legacy_subset(self.current_rows, self.legacy_rows, migrations)
         self.assertEqual(len(selected), 380)
-        self.assertEqual([m["row_id"] for m in migrations], ["2040", "2085"])
+        self.assertEqual([m["row_id"] for m in migrations], ["2040", "2085", "2224"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -167,10 +167,20 @@ class LegacySubsetTests(unittest.TestCase):
             BASELINE_DIR / "cascade_baseline_summary_pre_sc033_hue.json",
         )
         approval = json.loads((BASELINE_DIR / "approved_hue_input_migration.json").read_text())
-        mod.validate_cell_transition(
-            previous, {"records": self.current_rows, "summary": self.summary}, approval,
+        post_hue = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc034.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc034.json",
         )
-        self.assertEqual(len(mod.legacy_subset(previous["records"], old, migrations)), 387)
+        mod.validate_cell_transition(
+            previous, post_hue, approval,
+        )
+        mod.validate_cell_transition(
+            post_hue, {"records": self.current_rows, "summary": self.summary},
+            json.loads((BASELINE_DIR / "approved_sc034_output_migration.json").read_text()),
+        )
+        self.assertEqual(len(mod.legacy_subset(
+            previous["records"], old, [m for m in migrations if m["row_id"] != "2224"],
+        )), 387)
 
 
 class OrderManifestTests(unittest.TestCase):

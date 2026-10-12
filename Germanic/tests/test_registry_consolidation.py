@@ -308,7 +308,7 @@ class ArchiveIsolationTests(unittest.TestCase):
 
 
 class FingerprintGuardTests(unittest.TestCase):
-    def test_frozen_fingerprints_unchanged(self):
+    def test_fingerprints_match_approved_sc034_output_transition(self):
         data = json.loads(BASELINE_SUMMARY.read_text(encoding="utf-8"))
         # outputs_sha256 rebaselined 2026-09-06 for the sow/laewan
         # follow-up (memo §12.4): two corpus rows added (sow, betray);
@@ -322,17 +322,19 @@ class FingerprintGuardTests(unittest.TestCase):
         # the legacy sha moves only because the legacy key file was repointed
         # to hay's corrected protoform, which the fingerprint hashes beside
         # the unchanged output.
+        # SC034 later changes only straw's output and match flag with an exact
+        # approval receipt; the pre-SC034 and immutable legacy archives remain.
         self.assertEqual(
             data["outputs_sha256"],
-            "47a901e9e4a7cd663b8eb574b87fe737382e8fc1b4f1bc8afc38701af0c96872",
+            "9d5adb68d97b0a280c3fa719e544236348cd3e771b01013cfe01f95f3579b6a5",
         )
         self.assertEqual(
             data["lexical_outputs_sha256"],
-            "90789094b8d8889bb478dd6077de75e1d8e1cb66b7b6d347b63e73a83d039c47",
+            "5c76b77eff81abfaf2cc54158a2e1dbf46eb7de2b8836f4832984142e93ef04d",
         )
         self.assertEqual(
             data["legacy_subset_sha256"],
-            "70bdaba537d8f6b6bb7d872d00eefbef75127d2d77689af7ba01b35a79ebce39",
+            "6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6",
         )
 
 

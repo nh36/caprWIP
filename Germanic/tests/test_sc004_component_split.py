@@ -179,8 +179,9 @@ class ProductionCascadeTests(unittest.TestCase):
     def setUp(self):
         self.src = FST_SOURCE.read_text(encoding="utf-8")
 
-    def test_frozen_outputs_preserved(self):
-        summary = json.loads(SUMMARY_JSON.read_text(encoding="utf-8"))
+    def test_pre_sc034_release_outputs_preserved(self):
+        summary = json.loads((SUMMARY_JSON.parent / "cascade_baseline_summary_pre_sc034.json")
+                             .read_text(encoding="utf-8"))
         self.assertEqual(summary["legacy_subset_sha256"], FROZEN_OUTPUTS_SHA,
                          "legacy-380 subset outputs drifted")
         self.assertEqual(summary["legacy_subset_count"], 380)

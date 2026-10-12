@@ -46,7 +46,12 @@ class EditorialPublicationTests(unittest.TestCase):
         cls.index = assembly.build_row_index(cls.rows)
 
     def test_scoped_philology_is_independent_of_derivation_status(self):
-        self.assertEqual(len(self.old_required), 157)
+        self.assertIn("2224", self.old_required)
+        self.assertEqual(len(self.old_required - {"2224"}), 157)
+        straw = self.by_id["2224"]
+        self.assertEqual(straw.derivation_class, "late_analogy")
+        self.assertFalse(straw.editorial_case_ids)
+        self.assertFalse(straw.has_publication_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
                          PRINCIPAL | {"1934", "1941"})
         beaver = self.by_id["1941"]

@@ -1,6 +1,5 @@
 import copy
 import csv
-import hashlib
 import json
 import sys
 import tempfile
@@ -29,7 +28,8 @@ class HueAdoptionTests(unittest.TestCase):
             BASE / "cascade_baseline_summary_pre_sc033_hue.json",
         )
         self.current = baseline.read_baseline(
-            BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json",
+            BASE / "cascade_baseline_outputs_pre_sc034.tsv",
+            BASE / "cascade_baseline_summary_pre_sc034.json",
         )
 
     def test_exact_hue_input_transition_preserves_every_final_and_context(self):
@@ -95,6 +95,14 @@ class HueAdoptionTests(unittest.TestCase):
                 "approved_cell_migration.json", "cascade_baseline_outputs_legacy380.tsv",
             )}
             old = (target / "cascade_baseline_outputs.tsv").read_bytes()
+            with (BASE / "approved_input_migrations.tsv").open() as handle:
+                reader = csv.DictReader(handle, delimiter="\t")
+                fields = reader.fieldnames
+                migrations = [row for row in reader if row["row_id"] != "2224"]
+            with (target / "approved_input_migrations.tsv").open("w") as handle:
+                writer = csv.DictWriter(handle, fields, delimiter="\t")
+                writer.writeheader()
+                writer.writerows(migrations)
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             self.assertEqual((target / "cascade_baseline_outputs_pre_sc033_hue.tsv").read_bytes(), old)
             self.assertEqual({name: (target / name).read_bytes() for name in preserved}, preserved)
@@ -155,12 +163,12 @@ class HueAdoptionTests(unittest.TestCase):
             },
         )
 
-    def test_current_protected_assay_and_historical_knee_controls(self):
+    def test_released_protected_assay_and_historical_knee_controls(self):
         data = experiments.load_recipes(RESEARCH / "oe_post_hue_controls.json")
         recipe = data["recipes"][1]
         self.assertEqual(
             data["baseline_fst_sha256"],
-            hashlib.sha256((ROOT / "Germanic/fsts/germanic.txt").read_bytes()).hexdigest(),
+            "f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953",
         )
         report = json.loads((RESEARCH / "oe_post_hue_result.json").read_text())
         self.assertEqual(report["recipe"], recipe)

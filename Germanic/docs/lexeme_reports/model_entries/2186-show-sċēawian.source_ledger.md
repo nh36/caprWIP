@@ -1,6 +1,22 @@
 # Source extraction ledger — show / sċēawian
 
-This ledger records the compact evidence used for the regular model entry rewrite.
+## Current SC034 source review
+
+The model now distinguishes successful output from the unresolved root
+history. Orel2003 p.337 and Kroonen2013 p.442 print singleton stems;
+Campbell1959 p.45 and Brunner1965 p.49 include show among inherited
+geminates. Brunner's late West Saxon scāwian discussion is pp.106–107.
+Bright's actual held fourth edition is Bright1917: infinitive and
+imperative occur on printed p.71, prefixed third singular on p.161.
+Kroonen482 was a PDF sheet, not the printed page; the former
+BrightCassidyRingler1971 attribution is not supported by this holding.
+The selected input, target and class are unchanged. The earlier
+extraction/review record below is preserved as history and is superseded
+on these locators and on its claim of a fully defended regular root path.
+
+## Earlier extraction record (superseded where specified above)
+
+This ledger recorded the compact evidence used for the prior model rewrite.
 
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

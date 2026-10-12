@@ -3,8 +3,9 @@
 Current dispositions are in sections16,18–19: approved early inherited-glide
 reanalysis/prosodic apocope, knee's regular short dative and hue's separate
 j-created reanalysis/long-io realization are implemented and published.
-SC032's current component adjudication is in section20; SC034 retains
-its independently pending operation. Unchanged SC106
+SC032's component adjudication is in section20; SC034's adopted
+regular straw branch and explicitly deferred show premise are in section21.
+Unchanged SC106
 is now compatibility, no longer a live hue residual.
 Sections 1–15 preserve the earlier scaffold, incumbent observations and
 private trials. Their old composition statements, displacement witnesses
@@ -844,6 +845,57 @@ The head/SC040 boundary is demoted to technical recognition: internal
 aeu is absent from the lowered rule's vowel class. The old displaced
 hēafud observation remains in its frozen card, but it does not establish
 historical offglide-conditioned lowering. Campbell documents hēafud/hēafod
-variation (pp.155–156). SC034's singleton population is not adjudicated.
+variation (pp.155–156). SC034's subsequent disposition is recorded below.
 Lexical SOURCE entries are separately owned; this verdict supplies editorial
 implications without changing their reconstructions, cells or targets.
+
+## 21. SC034: regular straw output and retained show proxy
+
+The source comparison and executed counterfactuals are in the SC034 memo.
+The four incumbent applications were show2186, straw2224, show imperative
+2317 and show3sg2318. Ablation changes all four; either delaying SC034
+past nasal apocope or advancing that apocope changes only straw.
+The all-four late-displacement prediction was refuted: show restores a
+plain-a nucleus before the delayed proxy. These results diagnose
+representation dependence, not independent historical dates.
+
+The adopted regular straw history is inherited `*stráwą -> *strau ->
+*strēa`, before paradigm levelling. The sources explicitly mark the free
+regular simplex and short obliques as unattested; the compound is not
+substituted for an attested case. Restored w and the extension of the
+long diphthong explain actual `strēaw(-)`
+[@Campbell1959, pp.46–47,232–233;
+@SieversBrunner1965, pp.49,110,204–205;
+@RingeTaylor2014, pp.172–173,387].
+
+The user explicitly requires keeping attested `strēaw` as comparison.
+Only regular native output changes to `strēa`: straw is an eighth
+known mismatch, with `late_analogy` classification. Input, stage,
+selected context, attested target and all other386 finals remain unchanged.
+SC111 exposes the corpus-visible composed endingless-aw fragment, feeding
+unchanged SC030/SC032. Its matcher does not assert w-conditioned general
+final-vowel loss; its early holding site is serialization, not a new
+SC013 chronology edge. The exact output/match transition preserves a
+separate pre-SC034 baseline and every prior archive/approval.
+
+SC034 retains its two clauses for the three show cells, now explicitly
+as support, verdict REFORMULATE/DEFER. Orel337 and Kroonen442 give
+singleton stems; Campbell45 and Brunner49 put show among inherited
+geminate examples. Intervening class-II ō rules out direct root aw+j
+gemination but does not resolve that source premise
+[@Orel2003, p.337; @Kroonen2013, p.442;
+@Campbell1959, p.45; @SieversBrunner1965, p.49].
+No show input/class change or unsupported historical metadata is adopted.
+The SC047/straw record is a superseded technical proxy observation;
+its frozen card remains unchanged.
+
+The three show models correct source edition/page/cell attribution and
+disclose the retained root proxy. Bright1917 pp.71,161 distinguishes
+actual infinitive/imperative from prefixed3sg evidence; Campbell148 and
+Ringe–Taylor80,314 support the separate finite endings
+[@Bright1917, pp.71,161; @Campbell1959, p.148;
+@RingeTaylor2014, pp.80,314].
+Dew/hew were inspected and require no prose revision. Straw receives
+concise source clarification, not a manufactured mature essay or changed
+editorial certification. Survey quotations and the separate noun/verb
+genealogy question remain unchanged.

@@ -1,5 +1,19 @@
 # Research memo — 2186 show / sċēawian
 
+## Current SC034 disposition
+
+The earlier "safe"/"straightforward"/"regular" root-history conclusions
+below are superseded, not independently confirmed by successful output.
+Orel2003 p.337 and Kroonen2013 p.442 give singleton stems; Campbell1959
+p.45 and Brunner1965 p.49 place show among inherited geminates. Intervening
+class-II ō excludes direct aw+j gemination but does not resolve inherited
+root quantity. SC034 is a retained support proxy with that exact premise
+deferred. Input/target/class remain unchanged; no geminate input is invented.
+The revised model preserves Brunner's later scāwian variant
+(pp.106–107) and uses actual Bright1917 pp.71,161, separating
+infinitive/imperative from prefixed3sg evidence. The remaining sections
+preserve the prior investigation as history, not current settled science.
+
 ## Starting point
 
 - **ID:** `2186`

@@ -4,7 +4,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 103.
+- Foma blocks checked: 104.
 - Blocks over the conservative 90-character threshold: 15.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
@@ -42,7 +42,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 033-long-eow-diphthong.md | SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 50 | 43 | no |
 | 033-long-eow-diphthong.md | SC106. Retained j-created glide compatibility (`OEJWWSimplification`) {#rule-OEJWWSimplification} | 84 | 31 | no |
 | 033-long-eow-diphthong.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | 99 | 41 | no |
-| 034-long-eaw-diphthong.md | SC034. Long \emph{ēaw} before following vowels (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 22 | 61 | no |
+| 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 50 | 61 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 17 | 59 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 36 | 54 | no |
 | 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 58 | 47 | no |
@@ -59,7 +59,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 044-045-breaking-and-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | 57 | 44 | no |
 | 046-048-restoration-and-nasal-tail-changes.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 11 | 63 | no |
 | 046-048-restoration-and-nasal-tail-changes.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 37 | 37 | no |
-| 046-048-restoration-and-nasal-tail-changes.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 47 | 32 | no |
+| 046-048-restoration-and-nasal-tail-changes.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 65 | 32 | no |
 | 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 21 | 38 | no |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | 18 | 72 | no |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | 26 | 77 | no |
@@ -113,6 +113,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 102-hiatus-w-insertion.md | SC102. Generalized hiatus-breaking \emph{w} after long \emph{ā} (`EAFHiatusWInsertion`) {#rule-EAFHiatusWInsertion} | 17 | 45 | no |
 | 103-pgmc-nasal-loss-before-x.md | SC103. Proto-Germanic nasal loss before \*x (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX} | 39 | 45 | no |
 | 104-nasalized-low-vowel-rounding.md | SC104. Rounding of the long nasalized low vowel (`EAFNasalizedLowRounding`) {#rule-EAFNasalizedLowRounding} | 58 | 32 | no |
+| 111-endingless-aw-fragment.md | SC111. Endingless \emph{aw} fragment (`PWGmcEndinglessAw`) {#rule-PWGmcEndinglessAw} | 26 | 38 | no |
 
 ## Lines that would have overflowed under the old rendering
 

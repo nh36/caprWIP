@@ -1,20 +1,20 @@
 === PROVENANCE ===
-germanic.txt sha256: f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953
-old_english_sandbox.txt sha256: f7f9462e3aba4bc15ecf7eab8d517763d792945449433cb45093d5a883d0f57f
-germanic-aligned-final.tsv sha256: 67fb85b3f944afe6f0f3f0a99536f9bd70bf707246d968577b16fca5b17aece6
+germanic.txt sha256: a5d53a0504e6dc2a5411a8e327826f97a75c5bcc60f5fc17f55da06c71be904e
+old_english_sandbox.txt sha256: efe38dec1b3edd28d46a64c4a69c5eb6253235236b487fdcfd074fc2c8001642
+germanic-aligned-final.tsv sha256: 3af00bcafe049d2d2bd692e11c2e95488e7c72d76f60aede5c748ce266c67e1b
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
 oe_input_context.py sha256: b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961
-old_english.bin sha256 (informational): 5c67385ad9cd282372d2eb30575b9bfceaf6b2ea571f9fefbac6066fa52f86a7
+old_english.bin sha256 (informational): f52e09390fdec6a1d17aedc2520a3a850abcd1d5853d789be62a9869a9c56a0d
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-10-04T08:59:36+0100
+build_manifest_built_at: 2026-10-12T23:33:35+0100
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
-build_manifest_expected_bins: 107
-manifest:germanic-aligned-final.tsv sha256: 67fb85b3f944afe6f0f3f0a99536f9bd70bf707246d968577b16fca5b17aece6
-manifest:germanic.txt sha256: f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953
-manifest:old_english_sandbox.txt sha256: f7f9462e3aba4bc15ecf7eab8d517763d792945449433cb45093d5a883d0f57f
+build_manifest_expected_bins: 108
+manifest:germanic-aligned-final.tsv sha256: 3af00bcafe049d2d2bd692e11c2e95488e7c72d76f60aede5c748ce266c67e1b
+manifest:germanic.txt sha256: a5d53a0504e6dc2a5411a8e327826f97a75c5bcc60f5fc17f55da06c71be904e
+manifest:old_english_sandbox.txt sha256: efe38dec1b3edd28d46a64c4a69c5eb6253235236b487fdcfd074fc2c8001642
 
-=== BUCKET: exact_match (380) ===
+=== BUCKET: exact_match (379) ===
 
 --- adder ---
 PROTO: *nḗdrōn
@@ -45,6 +45,7 @@ PWGmcSyllabicJ [no-change]: *n*ā*d*r*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *n*ā*d*r*ō*n
 EAFLThVoicing [no-change]: *n*ā*d*r*ō*n
 PWGmcDentalHardening [no-change]: *n*ā*d*r*ō*n
+PWGmcEndinglessAw [no-change]: *n*ā*d*r*ō*n
 PNWGmcILowering [no-change]: *n*ā*d*r*ō*n
 PNWGmcULowering [no-change]: *n*ā*d*r*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *n*ā*d*r*ō*n
@@ -173,6 +174,7 @@ PWGmcSyllabicJ [no-change]: *b*á*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*k*a*n*ą
 EAFLThVoicing [no-change]: *b*á*k*a*n*ą
 PWGmcDentalHardening [no-change]: *b*á*k*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*á*k*a*n*ą
 PNWGmcILowering [no-change]: *b*á*k*a*n*ą
 PNWGmcULowering [no-change]: *b*á*k*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*á*k*a*n*ą
@@ -301,6 +303,7 @@ PWGmcSyllabicJ [no-change]: *b*á*n*n*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*n*n*a*s
 EAFLThVoicing [no-change]: *b*á*n*n*a*s
 PWGmcDentalHardening [no-change]: *b*á*n*n*a*s
+PWGmcEndinglessAw [no-change]: *b*á*n*n*a*s
 PNWGmcILowering [no-change]: *b*á*n*n*a*s
 PNWGmcULowering [no-change]: *b*á*n*n*a*s
 PNWGmcStressedMonosyllableORaising [no-change]: *b*á*n*n*a*s
@@ -429,6 +432,7 @@ PWGmcSyllabicJ [no-change]: *b*é*r*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*é*r*g*ą
 EAFLThVoicing [no-change]: *b*é*r*g*ą
 PWGmcDentalHardening [no-change]: *b*é*r*g*ą
+PWGmcEndinglessAw [no-change]: *b*é*r*g*ą
 PNWGmcILowering [no-change]: *b*é*r*g*ą
 PNWGmcULowering [no-change]: *b*é*r*g*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*é*r*g*ą
@@ -557,6 +561,7 @@ PWGmcSyllabicJ [no-change]: *b*á*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*s*t*ą
 EAFLThVoicing [no-change]: *b*á*s*t*ą
 PWGmcDentalHardening [no-change]: *b*á*s*t*ą
+PWGmcEndinglessAw [no-change]: *b*á*s*t*ą
 PNWGmcILowering [no-change]: *b*á*s*t*ą
 PNWGmcULowering [no-change]: *b*á*s*t*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*á*s*t*ą
@@ -685,6 +690,7 @@ PWGmcSyllabicJ [no-change]: *b*á*θ*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*θ*ą
 EAFLThVoicing [no-change]: *b*á*θ*ą
 PWGmcDentalHardening [no-change]: *b*á*θ*ą
+PWGmcEndinglessAw [no-change]: *b*á*θ*ą
 PNWGmcILowering [no-change]: *b*á*θ*ą
 PNWGmcULowering [no-change]: *b*á*θ*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*á*θ*ą
@@ -813,6 +819,7 @@ PWGmcSyllabicJ [no-change]: *b*á*r*d*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*r*d*a*z
 EAFLThVoicing [no-change]: *b*á*r*d*a*z
 PWGmcDentalHardening [no-change]: *b*á*r*d*a*z
+PWGmcEndinglessAw [no-change]: *b*á*r*d*a*z
 PNWGmcILowering [no-change]: *b*á*r*d*a*z
 PNWGmcULowering [no-change]: *b*á*r*d*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*á*r*d*a*z
@@ -941,6 +948,7 @@ PWGmcSyllabicJ [no-change]: *b*é*b*r*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*é*b*r*u*z
 EAFLThVoicing [no-change]: *b*é*b*r*u*z
 PWGmcDentalHardening [no-change]: *b*é*b*r*u*z
+PWGmcEndinglessAw [no-change]: *b*é*b*r*u*z
 PNWGmcILowering [no-change]: *b*é*b*r*u*z
 PNWGmcULowering [no-change]: *b*é*b*r*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*é*b*r*u*z
@@ -1069,6 +1077,7 @@ PWGmcSyllabicJ [no-change]: *b*ō*k*ō
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*k*ō
 EAFLThVoicing [no-change]: *b*ō*k*ō
 PWGmcDentalHardening [no-change]: *b*ō*k*ō
+PWGmcEndinglessAw [no-change]: *b*ō*k*ō
 PNWGmcILowering [no-change]: *b*ō*k*ō
 PNWGmcULowering [no-change]: *b*ō*k*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ō*k*ō
@@ -1197,6 +1206,7 @@ PWGmcSyllabicJ [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*i*g*í*n*n*a*n*ą
 EAFLThVoicing [no-change]: *b*i*g*í*n*n*a*n*ą
 PWGmcDentalHardening [no-change]: *b*i*g*í*n*n*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcILowering [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcULowering [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*i*g*í*n*n*a*n*ą
@@ -1325,6 +1335,7 @@ PWGmcSyllabicJ [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 EAFLThVoicing [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *g*a*l*áu*b*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcILowering [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcULowering [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*a*l*áu*b*i*j*a*n*ą
@@ -1453,6 +1464,7 @@ PWGmcSyllabicJ [no-change]: *b*á*l*g*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*l*g*i*z
 EAFLThVoicing [no-change]: *b*á*l*g*i*z
 PWGmcDentalHardening [no-change]: *b*á*l*g*i*z
+PWGmcEndinglessAw [no-change]: *b*á*l*g*i*z
 PNWGmcILowering [no-change]: *b*á*l*g*i*z
 PNWGmcULowering [no-change]: *b*á*l*g*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*á*l*g*i*z
@@ -1581,6 +1593,7 @@ PWGmcSyllabicJ [no-change]: *b*á*z*j*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *b*á*z*j*a*s
 EAFLThVoicing [no-change]: *b*á*z*j*a*s
 PWGmcDentalHardening [no-change]: *b*á*z*j*a*s
+PWGmcEndinglessAw [no-change]: *b*á*z*j*a*s
 PNWGmcILowering [no-change]: *b*á*z*j*a*s
 PNWGmcULowering [no-change]: *b*á*z*j*a*s
 PNWGmcStressedMonosyllableORaising [no-change]: *b*á*z*j*a*s
@@ -1709,6 +1722,7 @@ PWGmcSyllabicJ [no-change]: *b*ā*r*ō
 PNWGmcPreconsonantalXLoss [no-change]: *b*ā*r*ō
 EAFLThVoicing [no-change]: *b*ā*r*ō
 PWGmcDentalHardening [no-change]: *b*ā*r*ō
+PWGmcEndinglessAw [no-change]: *b*ā*r*ō
 PNWGmcILowering [no-change]: *b*ā*r*ō
 PNWGmcULowering [no-change]: *b*ā*r*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ā*r*ō
@@ -1837,6 +1851,7 @@ PWGmcSyllabicJ [no-change]: *b*í*n*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*í*n*d*a*n*ą
 EAFLThVoicing [no-change]: *b*í*n*d*a*n*ą
 PWGmcDentalHardening [no-change]: *b*í*n*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*í*n*d*a*n*ą
 PNWGmcILowering [no-change]: *b*í*n*d*a*n*ą
 PNWGmcULowering [no-change]: *b*í*n*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*í*n*d*a*n*ą
@@ -1965,6 +1980,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*r*d*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*r*d*i*z
 EAFLThVoicing [no-change]: *b*ú*r*d*i*z
 PWGmcDentalHardening [no-change]: *b*ú*r*d*i*z
+PWGmcEndinglessAw [no-change]: *b*ú*r*d*i*z
 PNWGmcILowering [no-change]: *b*ú*r*d*i*z
 PNWGmcULowering [no-change]: *b*ú*r*d*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ú*r*d*i*z
@@ -2093,6 +2109,7 @@ PWGmcSyllabicJ [no-change]: *b*l*ō*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*l*ō*d*ą
 EAFLThVoicing [no-change]: *b*l*ō*d*ą
 PWGmcDentalHardening [no-change]: *b*l*ō*d*ą
+PWGmcEndinglessAw [no-change]: *b*l*ō*d*ą
 PNWGmcILowering [no-change]: *b*l*ō*d*ą
 PNWGmcULowering [no-change]: *b*l*ō*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*l*ō*d*ą
@@ -2221,6 +2238,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*r*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*r*d*ą
 EAFLThVoicing [no-change]: *b*ú*r*d*ą
 PWGmcDentalHardening [no-change]: *b*ú*r*d*ą
+PWGmcEndinglessAw [no-change]: *b*ú*r*d*ą
 PNWGmcILowering [no-change]: *b*ú*r*d*ą
 PNWGmcULowering: *b*ó*r*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ó*r*d*ą
@@ -2349,6 +2367,7 @@ PWGmcSyllabicJ [no-change]: *b*ái*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ái*n*ą
 EAFLThVoicing [no-change]: *b*ái*n*ą
 PWGmcDentalHardening [no-change]: *b*ái*n*ą
+PWGmcEndinglessAw [no-change]: *b*ái*n*ą
 PNWGmcILowering [no-change]: *b*ái*n*ą
 PNWGmcULowering [no-change]: *b*ái*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ái*n*ą
@@ -2477,6 +2496,7 @@ PWGmcSyllabicJ [no-change]: *b*ō*k
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*k
 EAFLThVoicing [no-change]: *b*ō*k
 PWGmcDentalHardening [no-change]: *b*ō*k
+PWGmcEndinglessAw [no-change]: *b*ō*k
 PNWGmcILowering [no-change]: *b*ō*k
 PNWGmcULowering [no-change]: *b*ō*k
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ō*k
@@ -2605,6 +2625,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*r*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*r*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *b*ú*r*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *b*ú*r*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*ú*r*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *b*ú*r*ō*j*a*n*ą
 PNWGmcULowering: *b*ó*r*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ó*r*ō*j*a*n*ą
@@ -2733,6 +2754,7 @@ PWGmcSyllabicJ [no-change]: *b*ō*s*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*s*m*a*z
 EAFLThVoicing [no-change]: *b*ō*s*m*a*z
 PWGmcDentalHardening [no-change]: *b*ō*s*m*a*z
+PWGmcEndinglessAw [no-change]: *b*ō*s*m*a*z
 PNWGmcILowering [no-change]: *b*ō*s*m*a*z
 PNWGmcULowering [no-change]: *b*ō*s*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ō*s*m*a*z
@@ -2861,6 +2883,7 @@ PWGmcSyllabicJ [no-change]: *b*ō
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō
 EAFLThVoicing [no-change]: *b*ō
 PWGmcDentalHardening [no-change]: *b*ō
+PWGmcEndinglessAw [no-change]: *b*ō
 PNWGmcILowering [no-change]: *b*ō
 PNWGmcULowering [no-change]: *b*ō
 PNWGmcStressedMonosyllableORaising: *b*ū
@@ -2989,6 +3012,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*t*t*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*t*t*m*a*z
 EAFLThVoicing [no-change]: *b*ú*t*t*m*a*z
 PWGmcDentalHardening [no-change]: *b*ú*t*t*m*a*z
+PWGmcEndinglessAw [no-change]: *b*ú*t*t*m*a*z
 PNWGmcILowering [no-change]: *b*ú*t*t*m*a*z
 PNWGmcULowering: *b*ó*t*t*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ó*t*t*m*a*z
@@ -3117,6 +3141,7 @@ PWGmcSyllabicJ [no-change]: *b*ō*g*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*ō*g*u*z
 EAFLThVoicing [no-change]: *b*ō*g*u*z
 PWGmcDentalHardening [no-change]: *b*ō*g*u*z
+PWGmcEndinglessAw [no-change]: *b*ō*g*u*z
 PNWGmcILowering [no-change]: *b*ō*g*u*z
 PNWGmcULowering [no-change]: *b*ō*g*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ō*g*u*z
@@ -3245,6 +3270,7 @@ PWGmcSyllabicJ [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*áu*g*i*j*a*n*ą
 EAFLThVoicing [no-change]: *b*áu*g*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *b*áu*g*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcILowering [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcULowering [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*áu*g*i*j*a*n*ą
@@ -3373,6 +3399,7 @@ PWGmcSyllabicJ [no-change]: *b*áu*g
 PNWGmcPreconsonantalXLoss [no-change]: *b*áu*g
 EAFLThVoicing [no-change]: *b*áu*g
 PWGmcDentalHardening [no-change]: *b*áu*g
+PWGmcEndinglessAw [no-change]: *b*áu*g
 PNWGmcILowering [no-change]: *b*áu*g
 PNWGmcULowering [no-change]: *b*áu*g
 PNWGmcStressedMonosyllableORaising [no-change]: *b*áu*g
@@ -3501,6 +3528,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*g*ô
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*g*ô
 EAFLThVoicing [no-change]: *b*ú*g*ô
 PWGmcDentalHardening [no-change]: *b*ú*g*ô
+PWGmcEndinglessAw [no-change]: *b*ú*g*ô
 PNWGmcILowering [no-change]: *b*ú*g*ô
 PNWGmcULowering: *b*ó*g*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ó*g*ô
@@ -3629,6 +3657,7 @@ PWGmcSyllabicJ [no-change]: *b*ū*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*ū*r*ą
 EAFLThVoicing [no-change]: *b*ū*r*ą
 PWGmcDentalHardening [no-change]: *b*ū*r*ą
+PWGmcEndinglessAw [no-change]: *b*ū*r*ą
 PNWGmcILowering [no-change]: *b*ū*r*ą
 PNWGmcULowering [no-change]: *b*ū*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ū*r*ą
@@ -3757,6 +3786,7 @@ PWGmcSyllabicJ [no-change]: *b*r*á*n*d*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*á*n*d*a*s
 EAFLThVoicing [no-change]: *b*r*á*n*d*a*s
 PWGmcDentalHardening [no-change]: *b*r*á*n*d*a*s
+PWGmcEndinglessAw [no-change]: *b*r*á*n*d*a*s
 PNWGmcILowering [no-change]: *b*r*á*n*d*a*s
 PNWGmcULowering [no-change]: *b*r*á*n*d*a*s
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*á*n*d*a*s
@@ -3885,6 +3915,7 @@ PWGmcSyllabicJ [no-change]: *b*r*áu*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*áu*d*ą
 EAFLThVoicing [no-change]: *b*r*áu*d*ą
 PWGmcDentalHardening [no-change]: *b*r*áu*d*ą
+PWGmcEndinglessAw [no-change]: *b*r*áu*d*ą
 PNWGmcILowering [no-change]: *b*r*áu*d*ą
 PNWGmcULowering [no-change]: *b*r*áu*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*áu*d*ą
@@ -4013,6 +4044,7 @@ PWGmcSyllabicJ [no-change]: *b*r*é*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*é*k*a*n*ą
 EAFLThVoicing [no-change]: *b*r*é*k*a*n*ą
 PWGmcDentalHardening [no-change]: *b*r*é*k*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*r*é*k*a*n*ą
 PNWGmcILowering [no-change]: *b*r*é*k*a*n*ą
 PNWGmcULowering [no-change]: *b*r*é*k*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*é*k*a*n*ą
@@ -4141,6 +4173,7 @@ PWGmcSyllabicJ [no-change]: *b*r*éu*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*éu*s*t*ą
 EAFLThVoicing [no-change]: *b*r*éu*s*t*ą
 PWGmcDentalHardening [no-change]: *b*r*éu*s*t*ą
+PWGmcEndinglessAw [no-change]: *b*r*éu*s*t*ą
 PNWGmcILowering [no-change]: *b*r*éu*s*t*ą
 PNWGmcULowering [no-change]: *b*r*éu*s*t*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*éu*s*t*ą
@@ -4269,6 +4302,7 @@ PWGmcSyllabicJ [no-change]: *b*r*ō*k*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*ō*k*i*z
 EAFLThVoicing [no-change]: *b*r*ō*k*i*z
 PWGmcDentalHardening [no-change]: *b*r*ō*k*i*z
+PWGmcEndinglessAw [no-change]: *b*r*ō*k*i*z
 PNWGmcILowering [no-change]: *b*r*ō*k*i*z
 PNWGmcULowering [no-change]: *b*r*ō*k*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*ō*k*i*z
@@ -4397,6 +4431,7 @@ PWGmcSyllabicJ [no-change]: *b*r*ū*d*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*ū*d*i*z
 EAFLThVoicing [no-change]: *b*r*ū*d*i*z
 PWGmcDentalHardening [no-change]: *b*r*ū*d*i*z
+PWGmcEndinglessAw [no-change]: *b*r*ū*d*i*z
 PNWGmcILowering [no-change]: *b*r*ū*d*i*z
 PNWGmcULowering [no-change]: *b*r*ū*d*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*ū*d*i*z
@@ -4525,6 +4560,7 @@ PWGmcSyllabicJ [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*í*n*g*a*n*ą
 EAFLThVoicing [no-change]: *b*r*í*n*g*a*n*ą
 PWGmcDentalHardening [no-change]: *b*r*í*n*g*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcILowering [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcULowering [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*í*n*g*a*n*ą
@@ -4653,6 +4689,7 @@ PWGmcSyllabicJ [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*ū*k*a*n*ą
 EAFLThVoicing [no-change]: *b*r*ū*k*a*n*ą
 PWGmcDentalHardening [no-change]: *b*r*ū*k*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcILowering [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcULowering [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*ū*k*a*n*ą
@@ -4781,6 +4818,7 @@ PWGmcSyllabicJ [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *b*r*é*s*t*a*n*ą
 EAFLThVoicing [no-change]: *b*r*é*s*t*a*n*ą
 PWGmcDentalHardening [no-change]: *b*r*é*s*t*a*n*ą
+PWGmcEndinglessAw [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcILowering [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcULowering [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *b*r*é*s*t*a*n*ą
@@ -4909,6 +4947,7 @@ PWGmcSyllabicJ [no-change]: *k*á*l*b*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *k*á*l*b*a*z
 EAFLThVoicing [no-change]: *k*á*l*b*a*z
 PWGmcDentalHardening [no-change]: *k*á*l*b*a*z
+PWGmcEndinglessAw [no-change]: *k*á*l*b*a*z
 PNWGmcILowering [no-change]: *k*á*l*b*a*z
 PNWGmcULowering [no-change]: *k*á*l*b*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *k*á*l*b*a*z
@@ -5037,6 +5076,7 @@ PWGmcSyllabicJ [no-change]: *k*éu*w*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*éu*w*a*n*ą
 EAFLThVoicing [no-change]: *k*éu*w*a*n*ą
 PWGmcDentalHardening [no-change]: *k*éu*w*a*n*ą
+PWGmcEndinglessAw [no-change]: *k*éu*w*a*n*ą
 PNWGmcILowering [no-change]: *k*éu*w*a*n*ą
 PNWGmcULowering [no-change]: *k*éu*w*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *k*éu*w*a*n*ą
@@ -5165,6 +5205,7 @@ PWGmcSyllabicJ [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*l*í*m*b*a*n*ą
 EAFLThVoicing [no-change]: *k*l*í*m*b*a*n*ą
 PWGmcDentalHardening [no-change]: *k*l*í*m*b*a*n*ą
+PWGmcEndinglessAw [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcILowering [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcULowering [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *k*l*í*m*b*a*n*ą
@@ -5293,6 +5334,7 @@ PWGmcSyllabicJ [no-change]: *k*á*m*b*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *k*á*m*b*a*z
 EAFLThVoicing [no-change]: *k*á*m*b*a*z
 PWGmcDentalHardening [no-change]: *k*á*m*b*a*z
+PWGmcEndinglessAw [no-change]: *k*á*m*b*a*z
 PNWGmcILowering [no-change]: *k*á*m*b*a*z
 PNWGmcULowering [no-change]: *k*á*m*b*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *k*á*m*b*a*z
@@ -5421,6 +5463,7 @@ PWGmcSyllabicJ [no-change]: *k*ú*r*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*ú*r*n*ą
 EAFLThVoicing [no-change]: *k*ú*r*n*ą
 PWGmcDentalHardening [no-change]: *k*ú*r*n*ą
+PWGmcEndinglessAw [no-change]: *k*ú*r*n*ą
 PNWGmcILowering [no-change]: *k*ú*r*n*ą
 PNWGmcULowering: *k*ó*r*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *k*ó*r*n*ą
@@ -5549,6 +5592,7 @@ PWGmcSyllabicJ [no-change]: *k*ū*i
 PNWGmcPreconsonantalXLoss [no-change]: *k*ū*i
 EAFLThVoicing [no-change]: *k*ū*i
 PWGmcDentalHardening [no-change]: *k*ū*i
+PWGmcEndinglessAw [no-change]: *k*ū*i
 PNWGmcILowering [no-change]: *k*ū*i
 PNWGmcULowering [no-change]: *k*ū*i
 PNWGmcStressedMonosyllableORaising [no-change]: *k*ū*i
@@ -5677,6 +5721,7 @@ PWGmcSyllabicJ [no-change]: *k*r*á*f*t*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *k*r*á*f*t*a*z
 EAFLThVoicing [no-change]: *k*r*á*f*t*a*z
 PWGmcDentalHardening [no-change]: *k*r*á*f*t*a*z
+PWGmcEndinglessAw [no-change]: *k*r*á*f*t*a*z
 PNWGmcILowering [no-change]: *k*r*á*f*t*a*z
 PNWGmcULowering [no-change]: *k*r*á*f*t*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *k*r*á*f*t*a*z
@@ -5805,6 +5850,7 @@ PWGmcSyllabicJ [no-change]: *k*r*ú*p*p*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *k*r*ú*p*p*a*z
 EAFLThVoicing [no-change]: *k*r*ú*p*p*a*z
 PWGmcDentalHardening [no-change]: *k*r*ú*p*p*a*z
+PWGmcEndinglessAw [no-change]: *k*r*ú*p*p*a*z
 PNWGmcILowering [no-change]: *k*r*ú*p*p*a*z
 PNWGmcULowering: *k*r*ó*p*p*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *k*r*ó*p*p*a*z
@@ -5933,6 +5979,7 @@ PWGmcSyllabicJ [no-change]: *k*w*é*ð*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *k*w*é*ð*u*z
 EAFLThVoicing [no-change]: *k*w*é*ð*u*z
 PWGmcDentalHardening: *k*w*é*d*u*z
+PWGmcEndinglessAw [no-change]: *k*w*é*d*u*z
 PNWGmcILowering [no-change]: *k*w*é*d*u*z
 PNWGmcULowering [no-change]: *k*w*é*d*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *k*w*é*d*u*z
@@ -6061,6 +6108,7 @@ PWGmcSyllabicJ [no-change]: *d*á*l*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*á*l*a*z
 EAFLThVoicing [no-change]: *d*á*l*a*z
 PWGmcDentalHardening [no-change]: *d*á*l*a*z
+PWGmcEndinglessAw [no-change]: *d*á*l*a*z
 PNWGmcILowering [no-change]: *d*á*l*a*z
 PNWGmcULowering [no-change]: *d*á*l*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*á*l*a*z
@@ -6189,6 +6237,7 @@ PWGmcSyllabicJ [no-change]: *d*á*g*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*á*g*a*z
 EAFLThVoicing [no-change]: *d*á*g*a*z
 PWGmcDentalHardening [no-change]: *d*á*g*a*z
+PWGmcEndinglessAw [no-change]: *d*á*g*a*z
 PNWGmcILowering [no-change]: *d*á*g*a*z
 PNWGmcULowering [no-change]: *d*á*g*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*á*g*a*z
@@ -6317,6 +6366,7 @@ PWGmcSyllabicJ [no-change]: *d*ái*l*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*ái*l*i*z
 EAFLThVoicing [no-change]: *d*ái*l*i*z
 PWGmcDentalHardening [no-change]: *d*ái*l*i*z
+PWGmcEndinglessAw [no-change]: *d*ái*l*i*z
 PNWGmcILowering [no-change]: *d*ái*l*i*z
 PNWGmcULowering [no-change]: *d*ái*l*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*ái*l*i*z
@@ -6445,6 +6495,7 @@ PWGmcSyllabicJ [no-change]: *d*ā*d*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*ā*d*i*z
 EAFLThVoicing [no-change]: *d*ā*d*i*z
 PWGmcDentalHardening [no-change]: *d*ā*d*i*z
+PWGmcEndinglessAw [no-change]: *d*ā*d*i*z
 PNWGmcILowering [no-change]: *d*ā*d*i*z
 PNWGmcULowering [no-change]: *d*ā*d*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*ā*d*i*z
@@ -6573,6 +6624,7 @@ PWGmcSyllabicJ [no-change]: *d*éu*z*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*éu*z*ą
 EAFLThVoicing [no-change]: *d*éu*z*ą
 PWGmcDentalHardening [no-change]: *d*éu*z*ą
+PWGmcEndinglessAw [no-change]: *d*éu*z*ą
 PNWGmcILowering [no-change]: *d*éu*z*ą
 PNWGmcULowering [no-change]: *d*éu*z*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *d*éu*z*ą
@@ -6701,6 +6753,7 @@ PWGmcSyllabicJ [no-change]: *d*áu*w*ō
 PNWGmcPreconsonantalXLoss [no-change]: *d*áu*w*ō
 EAFLThVoicing [no-change]: *d*áu*w*ō
 PWGmcDentalHardening [no-change]: *d*áu*w*ō
+PWGmcEndinglessAw [no-change]: *d*áu*w*ō
 PNWGmcILowering [no-change]: *d*áu*w*ō
 PNWGmcULowering [no-change]: *d*áu*w*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *d*áu*w*ō
@@ -6829,6 +6882,7 @@ PWGmcSyllabicJ [no-change]: *d*é*l*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*é*l*i*z
 EAFLThVoicing [no-change]: *d*é*l*i*z
 PWGmcDentalHardening [no-change]: *d*é*l*i*z
+PWGmcEndinglessAw [no-change]: *d*é*l*i*z
 PNWGmcILowering [no-change]: *d*é*l*i*z
 PNWGmcULowering [no-change]: *d*é*l*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*é*l*i*z
@@ -6957,6 +7011,7 @@ PWGmcSyllabicJ [no-change]: *d*ō*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*ō*n*ą
 EAFLThVoicing [no-change]: *d*ō*n*ą
 PWGmcDentalHardening [no-change]: *d*ō*n*ą
+PWGmcEndinglessAw [no-change]: *d*ō*n*ą
 PNWGmcILowering [no-change]: *d*ō*n*ą
 PNWGmcULowering [no-change]: *d*ō*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *d*ō*n*ą
@@ -7085,6 +7140,7 @@ PWGmcSyllabicJ [no-change]: *d*ú*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*ú*r*ą
 EAFLThVoicing [no-change]: *d*ú*r*ą
 PWGmcDentalHardening [no-change]: *d*ú*r*ą
+PWGmcEndinglessAw [no-change]: *d*ú*r*ą
 PNWGmcILowering [no-change]: *d*ú*r*ą
 PNWGmcULowering: *d*ó*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *d*ó*r*ą
@@ -7213,6 +7269,7 @@ PWGmcSyllabicJ [no-change]: *d*ái*g*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*ái*g*a*z
 EAFLThVoicing [no-change]: *d*ái*g*a*z
 PWGmcDentalHardening [no-change]: *d*ái*g*a*z
+PWGmcEndinglessAw [no-change]: *d*ái*g*a*z
 PNWGmcILowering [no-change]: *d*ái*g*a*z
 PNWGmcULowering [no-change]: *d*ái*g*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*ái*g*a*z
@@ -7341,6 +7398,7 @@ PWGmcSyllabicJ [no-change]: *d*r*áu*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*áu*m*a*z
 EAFLThVoicing [no-change]: *d*r*áu*m*a*z
 PWGmcDentalHardening [no-change]: *d*r*áu*m*a*z
+PWGmcEndinglessAw [no-change]: *d*r*áu*m*a*z
 PNWGmcILowering [no-change]: *d*r*áu*m*a*z
 PNWGmcULowering [no-change]: *d*r*áu*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*r*áu*m*a*z
@@ -7469,6 +7527,7 @@ PWGmcSyllabicJ [no-change]: *d*r*á*n*k*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*á*n*k*i*z
 EAFLThVoicing [no-change]: *d*r*á*n*k*i*z
 PWGmcDentalHardening [no-change]: *d*r*á*n*k*i*z
+PWGmcEndinglessAw [no-change]: *d*r*á*n*k*i*z
 PNWGmcILowering [no-change]: *d*r*á*n*k*i*z
 PNWGmcULowering [no-change]: *d*r*á*n*k*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *d*r*á*n*k*i*z
@@ -7597,6 +7656,7 @@ PWGmcSyllabicJ [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*í*n*k*a*n*ą
 EAFLThVoicing [no-change]: *d*r*í*n*k*a*n*ą
 PWGmcDentalHardening [no-change]: *d*r*í*n*k*a*n*ą
+PWGmcEndinglessAw [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcILowering [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcULowering [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *d*r*í*n*k*a*n*ą
@@ -7725,6 +7785,7 @@ PWGmcSyllabicJ [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *d*r*ḯ*b*a*n*ą
 EAFLThVoicing [no-change]: *d*r*ḯ*b*a*n*ą
 PWGmcDentalHardening [no-change]: *d*r*ḯ*b*a*n*ą
+PWGmcEndinglessAw [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcILowering [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcULowering [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *d*r*ḯ*b*a*n*ą
@@ -7853,6 +7914,7 @@ PWGmcSyllabicJ [no-change]: *é*r*θ*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *é*r*θ*ō*n
 EAFLThVoicing [no-change]: *é*r*θ*ō*n
 PWGmcDentalHardening [no-change]: *é*r*θ*ō*n
+PWGmcEndinglessAw [no-change]: *é*r*θ*ō*n
 PNWGmcILowering [no-change]: *é*r*θ*ō*n
 PNWGmcULowering [no-change]: *é*r*θ*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *é*r*θ*ō*n
@@ -7981,6 +8043,7 @@ PWGmcSyllabicJ [no-change]: *é*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *é*t*a*n*ą
 EAFLThVoicing [no-change]: *é*t*a*n*ą
 PWGmcDentalHardening [no-change]: *é*t*a*n*ą
+PWGmcEndinglessAw [no-change]: *é*t*a*n*ą
 PNWGmcILowering [no-change]: *é*t*a*n*ą
 PNWGmcULowering [no-change]: *é*t*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *é*t*a*n*ą
@@ -8109,6 +8172,7 @@ PWGmcSyllabicJ [no-change]: *ā*l*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *ā*l*a*z
 EAFLThVoicing [no-change]: *ā*l*a*z
 PWGmcDentalHardening [no-change]: *ā*l*a*z
+PWGmcEndinglessAw [no-change]: *ā*l*a*z
 PNWGmcILowering [no-change]: *ā*l*a*z
 PNWGmcULowering [no-change]: *ā*l*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *ā*l*a*z
@@ -8237,6 +8301,7 @@ PWGmcSyllabicJ [no-change]: *f*á*l*l*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*l*l*a*n*ą
 EAFLThVoicing [no-change]: *f*á*l*l*a*n*ą
 PWGmcDentalHardening [no-change]: *f*á*l*l*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*á*l*l*a*n*ą
 PNWGmcILowering [no-change]: *f*á*l*l*a*n*ą
 PNWGmcULowering [no-change]: *f*á*l*l*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*á*l*l*a*n*ą
@@ -8365,6 +8430,7 @@ PWGmcSyllabicJ [no-change]: *f*á*r*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*r*a*n*ą
 EAFLThVoicing [no-change]: *f*á*r*a*n*ą
 PWGmcDentalHardening [no-change]: *f*á*r*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*á*r*a*n*ą
 PNWGmcILowering [no-change]: *f*á*r*a*n*ą
 PNWGmcULowering [no-change]: *f*á*r*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*á*r*a*n*ą
@@ -8493,6 +8559,7 @@ PWGmcSyllabicJ [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*s*t*i*j*a*n*ą
 EAFLThVoicing [no-change]: *f*á*s*t*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *f*á*s*t*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcILowering [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcULowering [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*á*s*t*i*j*a*n*ą
@@ -8621,6 +8688,7 @@ PWGmcSyllabicJ [no-change]: *f*á*d*ē*r
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*d*ē*r
 EAFLThVoicing [no-change]: *f*á*d*ē*r
 PWGmcDentalHardening [no-change]: *f*á*d*ē*r
+PWGmcEndinglessAw [no-change]: *f*á*d*ē*r
 PNWGmcILowering [no-change]: *f*á*d*ē*r
 PNWGmcULowering [no-change]: *f*á*d*ē*r
 PNWGmcStressedMonosyllableORaising [no-change]: *f*á*d*ē*r
@@ -8749,6 +8817,7 @@ PWGmcSyllabicJ [no-change]: *f*é*x*u
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*x*u
 EAFLThVoicing [no-change]: *f*é*x*u
 PWGmcDentalHardening [no-change]: *f*é*x*u
+PWGmcEndinglessAw [no-change]: *f*é*x*u
 PNWGmcILowering [no-change]: *f*é*x*u
 PNWGmcULowering [no-change]: *f*é*x*u
 PNWGmcStressedMonosyllableORaising [no-change]: *f*é*x*u
@@ -8877,6 +8946,7 @@ PWGmcSyllabicJ [no-change]: *f*é*l*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*l*l*ą
 EAFLThVoicing [no-change]: *f*é*l*l*ą
 PWGmcDentalHardening [no-change]: *f*é*l*l*ą
+PWGmcEndinglessAw [no-change]: *f*é*l*l*ą
 PNWGmcILowering [no-change]: *f*é*l*l*ą
 PNWGmcULowering [no-change]: *f*é*l*l*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*é*l*l*ą
@@ -9005,6 +9075,7 @@ PWGmcSyllabicJ [no-change]: *f*á*r*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*r*n*a*z
 EAFLThVoicing [no-change]: *f*á*r*n*a*z
 PWGmcDentalHardening [no-change]: *f*á*r*n*a*z
+PWGmcEndinglessAw [no-change]: *f*á*r*n*a*z
 PNWGmcILowering [no-change]: *f*á*r*n*a*z
 PNWGmcULowering [no-change]: *f*á*r*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*á*r*n*a*z
@@ -9133,6 +9204,7 @@ PWGmcSyllabicJ [no-change]: *f*é*l*θ*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*l*θ*u*z
 EAFLThVoicing: *f*é*l*d*u*z
 PWGmcDentalHardening [no-change]: *f*é*l*d*u*z
+PWGmcEndinglessAw [no-change]: *f*é*l*d*u*z
 PNWGmcILowering [no-change]: *f*é*l*d*u*z
 PNWGmcULowering [no-change]: *f*é*l*d*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*é*l*d*u*z
@@ -9261,6 +9333,7 @@ PWGmcSyllabicJ [no-change]: *f*é*x*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*é*x*t*a*n*ą
 EAFLThVoicing [no-change]: *f*é*x*t*a*n*ą
 PWGmcDentalHardening [no-change]: *f*é*x*t*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*é*x*t*a*n*ą
 PNWGmcILowering [no-change]: *f*é*x*t*a*n*ą
 PNWGmcULowering [no-change]: *f*é*x*t*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*é*x*t*a*n*ą
@@ -9389,6 +9462,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*n*ð*a*n*ǭ
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*n*ð*a*n*ǭ
 EAFLThVoicing [no-change]: *f*ú*n*ð*a*n*ǭ
 PWGmcDentalHardening: *f*ú*n*d*a*n*ǭ
+PWGmcEndinglessAw [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcILowering [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcULowering [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ú*n*d*a*n*ǭ
@@ -9517,6 +9591,7 @@ PWGmcSyllabicJ [no-change]: *f*í*n*g*r*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*í*n*g*r*a*z
 EAFLThVoicing [no-change]: *f*í*n*g*r*a*z
 PWGmcDentalHardening [no-change]: *f*í*n*g*r*a*z
+PWGmcEndinglessAw [no-change]: *f*í*n*g*r*a*z
 PNWGmcILowering [no-change]: *f*í*n*g*r*a*z
 PNWGmcULowering [no-change]: *f*í*n*g*r*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*í*n*g*r*a*z
@@ -9645,6 +9720,7 @@ PWGmcSyllabicJ [no-change]: *f*í*s*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*í*s*k*a*z
 EAFLThVoicing [no-change]: *f*í*s*k*a*z
 PWGmcDentalHardening [no-change]: *f*í*s*k*a*z
+PWGmcEndinglessAw [no-change]: *f*í*s*k*a*z
 PNWGmcILowering [no-change]: *f*í*s*k*a*z
 PNWGmcULowering [no-change]: *f*í*s*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*í*s*k*a*z
@@ -9773,6 +9849,7 @@ PWGmcSyllabicJ [no-change]: *f*ū*x*s*t*i*z
 PNWGmcPreconsonantalXLoss: *f*ū*s*t*i*z
 EAFLThVoicing [no-change]: *f*ū*s*t*i*z
 PWGmcDentalHardening [no-change]: *f*ū*s*t*i*z
+PWGmcEndinglessAw [no-change]: *f*ū*s*t*i*z
 PNWGmcILowering [no-change]: *f*ū*s*t*i*z
 PNWGmcULowering [no-change]: *f*ū*s*t*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ū*s*t*i*z
@@ -9901,6 +9978,7 @@ PWGmcSyllabicJ [no-change]: *f*l*á*s*k*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*á*s*k*ō*n
 EAFLThVoicing [no-change]: *f*l*á*s*k*ō*n
 PWGmcDentalHardening [no-change]: *f*l*á*s*k*ō*n
+PWGmcEndinglessAw [no-change]: *f*l*á*s*k*ō*n
 PNWGmcILowering [no-change]: *f*l*á*s*k*ō*n
 PNWGmcULowering [no-change]: *f*l*á*s*k*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *f*l*á*s*k*ō*n
@@ -10029,6 +10107,7 @@ PWGmcSyllabicJ [no-change]: *f*l*á*x*s*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*á*x*s*ą
 EAFLThVoicing [no-change]: *f*l*á*x*s*ą
 PWGmcDentalHardening [no-change]: *f*l*á*x*s*ą
+PWGmcEndinglessAw [no-change]: *f*l*á*x*s*ą
 PNWGmcILowering [no-change]: *f*l*á*x*s*ą
 PNWGmcULowering [no-change]: *f*l*á*x*s*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*l*á*x*s*ą
@@ -10157,6 +10236,7 @@ PWGmcSyllabicJ [no-change]: *f*l*áu*x
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*áu*x
 EAFLThVoicing [no-change]: *f*l*áu*x
 PWGmcDentalHardening [no-change]: *f*l*áu*x
+PWGmcEndinglessAw [no-change]: *f*l*áu*x
 PNWGmcILowering [no-change]: *f*l*áu*x
 PNWGmcULowering [no-change]: *f*l*áu*x
 PNWGmcStressedMonosyllableORaising [no-change]: *f*l*áu*x
@@ -10285,6 +10365,7 @@ PWGmcSyllabicJ [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*éu*x*a*n*ą
 EAFLThVoicing [no-change]: *f*l*éu*x*a*n*ą
 PWGmcDentalHardening [no-change]: *f*l*éu*x*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcILowering [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcULowering [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*l*éu*x*a*n*ą
@@ -10413,6 +10494,7 @@ PWGmcSyllabicJ [no-change]: *f*l*ái*s*k*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*ái*s*k*i*z
 EAFLThVoicing [no-change]: *f*l*ái*s*k*i*z
 PWGmcDentalHardening [no-change]: *f*l*ái*s*k*i*z
+PWGmcEndinglessAw [no-change]: *f*l*ái*s*k*i*z
 PNWGmcILowering [no-change]: *f*l*ái*s*k*i*z
 PNWGmcULowering [no-change]: *f*l*ái*s*k*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*l*ái*s*k*i*z
@@ -10541,6 +10623,7 @@ PWGmcSyllabicJ [no-change]: *f*l*ō*d*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*ō*d*u*z
 EAFLThVoicing [no-change]: *f*l*ō*d*u*z
 PWGmcDentalHardening [no-change]: *f*l*ō*d*u*z
+PWGmcEndinglessAw [no-change]: *f*l*ō*d*u*z
 PNWGmcILowering [no-change]: *f*l*ō*d*u*z
 PNWGmcULowering [no-change]: *f*l*ō*d*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*l*ō*d*u*z
@@ -10669,6 +10752,7 @@ PWGmcSyllabicJ [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*l*éu*g*a*n*ą
 EAFLThVoicing [no-change]: *f*l*éu*g*a*n*ą
 PWGmcDentalHardening [no-change]: *f*l*éu*g*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcILowering [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcULowering [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*l*éu*g*a*n*ą
@@ -10797,6 +10881,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*l*ô
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*l*ô
 EAFLThVoicing [no-change]: *f*ú*l*ô
 PWGmcDentalHardening [no-change]: *f*ú*l*ô
+PWGmcEndinglessAw [no-change]: *f*ú*l*ô
 PNWGmcILowering [no-change]: *f*ú*l*ô
 PNWGmcULowering: *f*ó*l*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ó*l*ô
@@ -10925,6 +11010,7 @@ PWGmcSyllabicJ [no-change]: *f*ō*d*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*ō*d*r*ą
 EAFLThVoicing [no-change]: *f*ō*d*r*ą
 PWGmcDentalHardening [no-change]: *f*ō*d*r*ą
+PWGmcEndinglessAw [no-change]: *f*ō*d*r*ą
 PNWGmcILowering [no-change]: *f*ō*d*r*ą
 PNWGmcULowering [no-change]: *f*ō*d*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ō*d*r*ą
@@ -11053,6 +11139,7 @@ PWGmcSyllabicJ [no-change]: *f*á*l*θ*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*á*l*θ*a*n*ą
 EAFLThVoicing: *f*á*l*d*a*n*ą
 PWGmcDentalHardening [no-change]: *f*á*l*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*á*l*d*a*n*ą
 PNWGmcILowering [no-change]: *f*á*l*d*a*n*ą
 PNWGmcULowering [no-change]: *f*á*l*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*á*l*d*a*n*ą
@@ -11181,6 +11268,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*l*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*l*k*ą
 EAFLThVoicing [no-change]: *f*ú*l*k*ą
 PWGmcDentalHardening [no-change]: *f*ú*l*k*ą
+PWGmcEndinglessAw [no-change]: *f*ú*l*k*ą
 PNWGmcILowering [no-change]: *f*ú*l*k*ą
 PNWGmcULowering: *f*ó*l*k*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ó*l*k*ą
@@ -11309,6 +11397,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*l*g*i*j*a*n*ą
 EAFLThVoicing [no-change]: *f*ú*l*g*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *f*ú*l*g*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcILowering [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcULowering [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ú*l*g*i*j*a*n*ą
@@ -11437,6 +11526,7 @@ PWGmcSyllabicJ [no-change]: *l*éu*s*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*éu*s*a*n*ą
 EAFLThVoicing [no-change]: *l*éu*s*a*n*ą
 PWGmcDentalHardening [no-change]: *l*éu*s*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*éu*s*a*n*ą
 PNWGmcILowering [no-change]: *l*éu*s*a*n*ą
 PNWGmcULowering [no-change]: *l*éu*s*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*éu*s*a*n*ą
@@ -11565,6 +11655,7 @@ PWGmcSyllabicJ [no-change]: *f*éu*w*a*r
 PNWGmcPreconsonantalXLoss [no-change]: *f*éu*w*a*r
 EAFLThVoicing [no-change]: *f*éu*w*a*r
 PWGmcDentalHardening [no-change]: *f*éu*w*a*r
+PWGmcEndinglessAw [no-change]: *f*éu*w*a*r
 PNWGmcILowering [no-change]: *f*éu*w*a*r
 PNWGmcULowering [no-change]: *f*éu*w*a*r
 PNWGmcStressedMonosyllableORaising [no-change]: *f*éu*w*a*r
@@ -11693,6 +11784,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*x*s*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*x*s*a*z
 EAFLThVoicing [no-change]: *f*ú*x*s*a*z
 PWGmcDentalHardening [no-change]: *f*ú*x*s*a*z
+PWGmcEndinglessAw [no-change]: *f*ú*x*s*a*z
 PNWGmcILowering [no-change]: *f*ú*x*s*a*z
 PNWGmcULowering: *f*ó*x*s*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ó*x*s*a*z
@@ -11821,6 +11913,7 @@ PWGmcSyllabicJ [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*r*éu*s*a*n*ą
 EAFLThVoicing [no-change]: *f*r*éu*s*a*n*ą
 PWGmcDentalHardening [no-change]: *f*r*éu*s*a*n*ą
+PWGmcEndinglessAw [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcILowering [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcULowering [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*r*éu*s*a*n*ą
@@ -11949,6 +12042,7 @@ PWGmcSyllabicJ [no-change]: *f*r*íu*n*d*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*r*íu*n*d*z
 EAFLThVoicing [no-change]: *f*r*íu*n*d*z
 PWGmcDentalHardening [no-change]: *f*r*íu*n*d*z
+PWGmcEndinglessAw [no-change]: *f*r*íu*n*d*z
 PNWGmcILowering [no-change]: *f*r*íu*n*d*z
 PNWGmcULowering [no-change]: *f*r*íu*n*d*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*r*íu*n*d*z
@@ -12077,6 +12171,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*r*x*t*ī*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*r*x*t*ī*n*a*z
 EAFLThVoicing [no-change]: *f*ú*r*x*t*ī*n*a*z
 PWGmcDentalHardening [no-change]: *f*ú*r*x*t*ī*n*a*z
+PWGmcEndinglessAw [no-change]: *f*ú*r*x*t*ī*n*a*z
 PNWGmcILowering [no-change]: *f*ú*r*x*t*ī*n*a*z
 PNWGmcULowering [no-change]: *f*ú*r*x*t*ī*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ú*r*x*t*ī*n*a*z
@@ -12205,6 +12300,7 @@ PWGmcSyllabicJ [no-change]: *f*r*ú*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *f*r*ú*s*t*ą
 EAFLThVoicing [no-change]: *f*r*ú*s*t*ą
 PWGmcDentalHardening [no-change]: *f*r*ú*s*t*ą
+PWGmcEndinglessAw [no-change]: *f*r*ú*s*t*ą
 PNWGmcILowering [no-change]: *f*r*ú*s*t*ą
 PNWGmcULowering: *f*r*ó*s*t*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *f*r*ó*s*t*ą
@@ -12333,6 +12429,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*r*x
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*r*x
 EAFLThVoicing [no-change]: *f*ú*r*x
 PWGmcDentalHardening [no-change]: *f*ú*r*x
+PWGmcEndinglessAw [no-change]: *f*ú*r*x
 PNWGmcILowering [no-change]: *f*ú*r*x
 PNWGmcULowering [no-change]: *f*ú*r*x
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ú*r*x
@@ -12461,6 +12558,7 @@ PWGmcSyllabicJ [no-change]: *g*á*l*l*ô
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*l*l*ô
 EAFLThVoicing [no-change]: *g*á*l*l*ô
 PWGmcDentalHardening [no-change]: *g*á*l*l*ô
+PWGmcEndinglessAw [no-change]: *g*á*l*l*ô
 PNWGmcILowering [no-change]: *g*á*l*l*ô
 PNWGmcULowering [no-change]: *g*á*l*l*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *g*á*l*l*ô
@@ -12589,6 +12687,7 @@ PWGmcSyllabicJ [no-change]: *g*á*n*g*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*n*g*a*z
 EAFLThVoicing [no-change]: *g*á*n*g*a*z
 PWGmcDentalHardening [no-change]: *g*á*n*g*a*z
+PWGmcEndinglessAw [no-change]: *g*á*n*g*a*z
 PNWGmcILowering [no-change]: *g*á*n*g*a*z
 PNWGmcULowering [no-change]: *g*á*n*g*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *g*á*n*g*a*z
@@ -12717,6 +12816,7 @@ PWGmcSyllabicJ [no-change]: *g*ái*s*t*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *g*ái*s*t*a*z
 EAFLThVoicing [no-change]: *g*ái*s*t*a*z
 PWGmcDentalHardening [no-change]: *g*ái*s*t*a*z
+PWGmcEndinglessAw [no-change]: *g*ái*s*t*a*z
 PNWGmcILowering [no-change]: *g*ái*s*t*a*z
 PNWGmcULowering [no-change]: *g*ái*s*t*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *g*ái*s*t*a*z
@@ -12845,6 +12945,7 @@ PWGmcSyllabicJ [no-change]: *g*í*f*t*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *g*í*f*t*i*z
 EAFLThVoicing [no-change]: *g*í*f*t*i*z
 PWGmcDentalHardening [no-change]: *g*í*f*t*i*z
+PWGmcEndinglessAw [no-change]: *g*í*f*t*i*z
 PNWGmcILowering [no-change]: *g*í*f*t*i*z
 PNWGmcULowering [no-change]: *g*í*f*t*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *g*í*f*t*i*z
@@ -12973,6 +13074,7 @@ PWGmcSyllabicJ [no-change]: *g*é*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*é*b*a*n*ą
 EAFLThVoicing [no-change]: *g*é*b*a*n*ą
 PWGmcDentalHardening [no-change]: *g*é*b*a*n*ą
+PWGmcEndinglessAw [no-change]: *g*é*b*a*n*ą
 PNWGmcILowering [no-change]: *g*é*b*a*n*ą
 PNWGmcULowering [no-change]: *g*é*b*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*é*b*a*n*ą
@@ -13101,6 +13203,7 @@ PWGmcSyllabicJ [no-change]: *g*ú*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*ú*d*ą
 EAFLThVoicing [no-change]: *g*ú*d*ą
 PWGmcDentalHardening [no-change]: *g*ú*d*ą
+PWGmcEndinglessAw [no-change]: *g*ú*d*ą
 PNWGmcILowering [no-change]: *g*ú*d*ą
 PNWGmcULowering: *g*ó*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*ó*d*ą
@@ -13229,6 +13332,7 @@ PWGmcSyllabicJ [no-change]: *g*ú*l*θ*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*ú*l*θ*ą
 EAFLThVoicing: *g*ú*l*d*ą
 PWGmcDentalHardening [no-change]: *g*ú*l*d*ą
+PWGmcEndinglessAw [no-change]: *g*ú*l*d*ą
 PNWGmcILowering [no-change]: *g*ú*l*d*ą
 PNWGmcULowering: *g*ó*l*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*ó*l*d*ą
@@ -13357,6 +13461,7 @@ PWGmcSyllabicJ [no-change]: *g*á*n*s
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*n*s
 EAFLThVoicing [no-change]: *g*á*n*s
 PWGmcDentalHardening [no-change]: *g*á*n*s
+PWGmcEndinglessAw [no-change]: *g*á*n*s
 PNWGmcILowering [no-change]: *g*á*n*s
 PNWGmcULowering [no-change]: *g*á*n*s
 PNWGmcStressedMonosyllableORaising [no-change]: *g*á*n*s
@@ -13485,6 +13590,7 @@ PWGmcSyllabicJ [no-change]: *g*r*á*s*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*á*s*ą
 EAFLThVoicing [no-change]: *g*r*á*s*ą
 PWGmcDentalHardening [no-change]: *g*r*á*s*ą
+PWGmcEndinglessAw [no-change]: *g*r*á*s*ą
 PNWGmcILowering [no-change]: *g*r*á*s*ą
 PNWGmcULowering [no-change]: *g*r*á*s*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*r*á*s*ą
@@ -13613,6 +13719,7 @@ PWGmcSyllabicJ [no-change]: *g*r*á*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*á*b*a*n*ą
 EAFLThVoicing [no-change]: *g*r*á*b*a*n*ą
 PWGmcDentalHardening [no-change]: *g*r*á*b*a*n*ą
+PWGmcEndinglessAw [no-change]: *g*r*á*b*a*n*ą
 PNWGmcILowering [no-change]: *g*r*á*b*a*n*ą
 PNWGmcULowering [no-change]: *g*r*á*b*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*r*á*b*a*n*ą
@@ -13741,6 +13848,7 @@ PWGmcSyllabicJ [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*ḯ*p*a*n*ą
 EAFLThVoicing [no-change]: *g*r*ḯ*p*a*n*ą
 PWGmcDentalHardening [no-change]: *g*r*ḯ*p*a*n*ą
+PWGmcEndinglessAw [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcILowering [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcULowering [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*r*ḯ*p*a*n*ą
@@ -13869,6 +13977,7 @@ PWGmcSyllabicJ [no-change]: *g*r*ú*n*d*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *g*r*ú*n*d*u*z
 EAFLThVoicing [no-change]: *g*r*ú*n*d*u*z
 PWGmcDentalHardening [no-change]: *g*r*ú*n*d*u*z
+PWGmcEndinglessAw [no-change]: *g*r*ú*n*d*u*z
 PNWGmcILowering [no-change]: *g*r*ú*n*d*u*z
 PNWGmcULowering [no-change]: *g*r*ú*n*d*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *g*r*ú*n*d*u*z
@@ -13997,6 +14106,7 @@ PWGmcSyllabicJ [no-change]: *g*á*s*t*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*s*t*i*z
 EAFLThVoicing [no-change]: *g*á*s*t*i*z
 PWGmcDentalHardening [no-change]: *g*á*s*t*i*z
+PWGmcEndinglessAw [no-change]: *g*á*s*t*i*z
 PNWGmcILowering [no-change]: *g*á*s*t*i*z
 PNWGmcULowering [no-change]: *g*á*s*t*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *g*á*s*t*i*z
@@ -14125,6 +14235,7 @@ PWGmcSyllabicJ [no-change]: *x*á*g*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*l*ą
 EAFLThVoicing [no-change]: *x*á*g*l*ą
 PWGmcDentalHardening [no-change]: *x*á*g*l*ą
+PWGmcEndinglessAw [no-change]: *x*á*g*l*ą
 PNWGmcILowering [no-change]: *x*á*g*l*ą
 PNWGmcULowering [no-change]: *x*á*g*l*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*g*l*ą
@@ -14253,6 +14364,7 @@ PWGmcSyllabicJ [no-change]: *x*ā*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ā*r*ą
 EAFLThVoicing [no-change]: *x*ā*r*ą
 PWGmcDentalHardening [no-change]: *x*ā*r*ą
+PWGmcEndinglessAw [no-change]: *x*ā*r*ą
 PNWGmcILowering [no-change]: *x*ā*r*ą
 PNWGmcULowering [no-change]: *x*ā*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ā*r*ą
@@ -14381,6 +14493,7 @@ PWGmcSyllabicJ [no-change]: *x*á*l*l*ō
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*l*l*ō
 EAFLThVoicing [no-change]: *x*á*l*l*ō
 PWGmcDentalHardening [no-change]: *x*á*l*l*ō
+PWGmcEndinglessAw [no-change]: *x*á*l*l*ō
 PNWGmcILowering [no-change]: *x*á*l*l*ō
 PNWGmcULowering [no-change]: *x*á*l*l*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*l*l*ō
@@ -14509,6 +14622,7 @@ PWGmcSyllabicJ [no-change]: *x*á*m*a*r*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*m*a*r*a*s
 EAFLThVoicing [no-change]: *x*á*m*a*r*a*s
 PWGmcDentalHardening [no-change]: *x*á*m*a*r*a*s
+PWGmcEndinglessAw [no-change]: *x*á*m*a*r*a*s
 PNWGmcILowering [no-change]: *x*á*m*a*r*a*s
 PNWGmcULowering [no-change]: *x*á*m*a*r*a*s
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*m*a*r*a*s
@@ -14637,6 +14751,7 @@ PWGmcSyllabicJ [no-change]: *x*á*n*d*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*n*d*u*z
 EAFLThVoicing [no-change]: *x*á*n*d*u*z
 PWGmcDentalHardening [no-change]: *x*á*n*d*u*z
+PWGmcEndinglessAw [no-change]: *x*á*n*d*u*z
 PNWGmcILowering [no-change]: *x*á*n*d*u*z
 PNWGmcULowering [no-change]: *x*á*n*d*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*n*d*u*z
@@ -14765,6 +14880,7 @@ PWGmcSyllabicJ [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *x*á*n*d*l*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcULowering [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*n*d*l*ō*j*a*n*ą
@@ -14893,6 +15009,7 @@ PWGmcSyllabicJ [no-change]: *x*á*r*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*r*m*a*z
 EAFLThVoicing [no-change]: *x*á*r*m*a*z
 PWGmcDentalHardening [no-change]: *x*á*r*m*a*z
+PWGmcEndinglessAw [no-change]: *x*á*r*m*a*z
 PNWGmcILowering [no-change]: *x*á*r*m*a*z
 PNWGmcULowering [no-change]: *x*á*r*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*r*m*a*z
@@ -15021,6 +15138,7 @@ PWGmcSyllabicJ [no-change]: *x*á*r*b*i*s*t*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*r*b*i*s*t*u*z
 EAFLThVoicing [no-change]: *x*á*r*b*i*s*t*u*z
 PWGmcDentalHardening [no-change]: *x*á*r*b*i*s*t*u*z
+PWGmcEndinglessAw [no-change]: *x*á*r*b*i*s*t*u*z
 PNWGmcILowering [no-change]: *x*á*r*b*i*s*t*u*z
 PNWGmcULowering [no-change]: *x*á*r*b*i*s*t*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*r*b*i*s*t*u*z
@@ -15149,6 +15267,7 @@ PWGmcSyllabicJ [no-change]: *x*á*b*ē*θ
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*b*ē*θ
 EAFLThVoicing [no-change]: *x*á*b*ē*θ
 PWGmcDentalHardening [no-change]: *x*á*b*ē*θ
+PWGmcEndinglessAw [no-change]: *x*á*b*ē*θ
 PNWGmcILowering [no-change]: *x*á*b*ē*θ
 PNWGmcULowering [no-change]: *x*á*b*ē*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*b*ē*θ
@@ -15277,6 +15396,7 @@ PWGmcSyllabicJ [no-change]: *x*á*g*ô
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*ô
 EAFLThVoicing [no-change]: *x*á*g*ô
 PWGmcDentalHardening [no-change]: *x*á*g*ô
+PWGmcEndinglessAw [no-change]: *x*á*g*ô
 PNWGmcILowering [no-change]: *x*á*g*ô
 PNWGmcULowering [no-change]: *x*á*g*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*g*ô
@@ -15405,6 +15525,7 @@ PWGmcSyllabicJ [no-change]: *x*á*b*u*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*b*u*k*a*z
 EAFLThVoicing [no-change]: *x*á*b*u*k*a*z
 PWGmcDentalHardening [no-change]: *x*á*b*u*k*a*z
+PWGmcEndinglessAw [no-change]: *x*á*b*u*k*a*z
 PNWGmcILowering [no-change]: *x*á*b*u*k*a*z
 PNWGmcULowering [no-change]: *x*á*b*u*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*b*u*k*a*z
@@ -15533,6 +15654,7 @@ PWGmcSyllabicJ [no-change]: *x*á*w*w*j*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*w*w*j*ą
 EAFLThVoicing [no-change]: *x*á*w*w*j*ą
 PWGmcDentalHardening [no-change]: *x*á*w*w*j*ą
+PWGmcEndinglessAw [no-change]: *x*á*w*w*j*ą
 PNWGmcILowering [no-change]: *x*á*w*w*j*ą
 PNWGmcULowering [no-change]: *x*á*w*w*j*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*w*w*j*ą
@@ -15661,6 +15783,7 @@ PWGmcSyllabicJ [no-change]: *x*á*s*l*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*s*l*a*z
 EAFLThVoicing [no-change]: *x*á*s*l*a*z
 PWGmcDentalHardening [no-change]: *x*á*s*l*a*z
+PWGmcEndinglessAw [no-change]: *x*á*s*l*a*z
 PNWGmcILowering [no-change]: *x*á*s*l*a*z
 PNWGmcULowering [no-change]: *x*á*s*l*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*s*l*a*z
@@ -15789,6 +15912,7 @@ PWGmcSyllabicJ [no-change]: *x*áu*b*u*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*áu*b*u*d*ą
 EAFLThVoicing [no-change]: *x*áu*b*u*d*ą
 PWGmcDentalHardening [no-change]: *x*áu*b*u*d*ą
+PWGmcEndinglessAw [no-change]: *x*áu*b*u*d*ą
 PNWGmcILowering [no-change]: *x*áu*b*u*d*ą
 PNWGmcULowering [no-change]: *x*áu*b*u*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*áu*b*u*d*ą
@@ -15917,6 +16041,7 @@ PWGmcSyllabicJ [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ái*l*i*j*a*n*ą
 EAFLThVoicing [no-change]: *x*ái*l*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *x*ái*l*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcILowering [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcULowering [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ái*l*i*j*a*n*ą
@@ -16045,6 +16170,7 @@ PWGmcSyllabicJ [no-change]: *x*é*r*t*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*r*t*ō*n
 EAFLThVoicing [no-change]: *x*é*r*t*ō*n
 PWGmcDentalHardening [no-change]: *x*é*r*t*ō*n
+PWGmcEndinglessAw [no-change]: *x*é*r*t*ō*n
 PNWGmcILowering [no-change]: *x*é*r*t*ō*n
 PNWGmcULowering [no-change]: *x*é*r*t*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*r*t*ō*n
@@ -16173,6 +16299,7 @@ PWGmcSyllabicJ [no-change]: *x*é*r*θ*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*r*θ*a*z
 EAFLThVoicing [no-change]: *x*é*r*θ*a*z
 PWGmcDentalHardening [no-change]: *x*é*r*θ*a*z
+PWGmcEndinglessAw [no-change]: *x*é*r*θ*a*z
 PNWGmcILowering [no-change]: *x*é*r*θ*a*z
 PNWGmcULowering [no-change]: *x*é*r*θ*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*r*θ*a*z
@@ -16301,6 +16428,7 @@ PWGmcSyllabicJ [no-change]: *x*ái*θ*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*ái*θ*i*z
 EAFLThVoicing [no-change]: *x*ái*θ*i*z
 PWGmcDentalHardening [no-change]: *x*ái*θ*i*z
+PWGmcEndinglessAw [no-change]: *x*ái*θ*i*z
 PNWGmcILowering [no-change]: *x*ái*θ*i*z
 PNWGmcULowering [no-change]: *x*ái*θ*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ái*θ*i*z
@@ -16429,6 +16557,7 @@ PWGmcSyllabicJ [no-change]: *x*é*b*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*b*u*n
 EAFLThVoicing [no-change]: *x*é*b*u*n
 PWGmcDentalHardening [no-change]: *x*é*b*u*n
+PWGmcEndinglessAw [no-change]: *x*é*b*u*n
 PNWGmcILowering [no-change]: *x*é*b*u*n
 PNWGmcULowering [no-change]: *x*é*b*u*n
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*b*u*n
@@ -16557,6 +16686,7 @@ PWGmcSyllabicJ [no-change]: *x*á*g*g*j*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*g*j*a*z
 EAFLThVoicing [no-change]: *x*á*g*g*j*a*z
 PWGmcDentalHardening [no-change]: *x*á*g*g*j*a*z
+PWGmcEndinglessAw [no-change]: *x*á*g*g*j*a*z
 PNWGmcILowering [no-change]: *x*á*g*g*j*a*z
 PNWGmcULowering [no-change]: *x*á*g*g*j*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*g*g*j*a*z
@@ -16685,6 +16815,7 @@ PWGmcSyllabicJ [no-change]: *x*é*l*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*l*m*a*z
 EAFLThVoicing [no-change]: *x*é*l*m*a*z
 PWGmcDentalHardening [no-change]: *x*é*l*m*a*z
+PWGmcEndinglessAw [no-change]: *x*é*l*m*a*z
 PNWGmcILowering [no-change]: *x*é*l*m*a*z
 PNWGmcULowering [no-change]: *x*é*l*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*l*m*a*z
@@ -16813,6 +16944,7 @@ PWGmcSyllabicJ [no-change]: *x*é*l*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*l*p*a*n*ą
 EAFLThVoicing [no-change]: *x*é*l*p*a*n*ą
 PWGmcDentalHardening [no-change]: *x*é*l*p*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*é*l*p*a*n*ą
 PNWGmcILowering [no-change]: *x*é*l*p*a*n*ą
 PNWGmcULowering [no-change]: *x*é*l*p*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*l*p*a*n*ą
@@ -16941,6 +17073,7 @@ PWGmcSyllabicJ [no-change]: *x*é*l*p*ō
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*l*p*ō
 EAFLThVoicing [no-change]: *x*é*l*p*ō
 PWGmcDentalHardening [no-change]: *x*é*l*p*ō
+PWGmcEndinglessAw [no-change]: *x*é*l*p*ō
 PNWGmcILowering [no-change]: *x*é*l*p*ō
 PNWGmcULowering [no-change]: *x*é*l*p*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*l*p*ō
@@ -17069,6 +17202,7 @@ PWGmcSyllabicJ [no-change]: *x*é*r*d*ō
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*r*d*ō
 EAFLThVoicing [no-change]: *x*é*r*d*ō
 PWGmcDentalHardening [no-change]: *x*é*r*d*ō
+PWGmcEndinglessAw [no-change]: *x*é*r*d*ō
 PNWGmcILowering [no-change]: *x*é*r*d*ō
 PNWGmcULowering [no-change]: *x*é*r*d*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*r*d*ō
@@ -17197,6 +17331,7 @@ PWGmcSyllabicJ [no-change]: *x*áu*w*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*áu*w*a*n*ą
 EAFLThVoicing [no-change]: *x*áu*w*a*n*ą
 PWGmcDentalHardening [no-change]: *x*áu*w*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*áu*w*a*n*ą
 PNWGmcILowering [no-change]: *x*áu*w*a*n*ą
 PNWGmcULowering [no-change]: *x*áu*w*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*áu*w*a*n*ą
@@ -17325,6 +17460,7 @@ PWGmcSyllabicJ [no-change]: *x*é*n*d*j*ō
 PNWGmcPreconsonantalXLoss [no-change]: *x*é*n*d*j*ō
 EAFLThVoicing [no-change]: *x*é*n*d*j*ō
 PWGmcDentalHardening [no-change]: *x*é*n*d*j*ō
+PWGmcEndinglessAw [no-change]: *x*é*n*d*j*ō
 PNWGmcILowering [no-change]: *x*é*n*d*j*ō
 PNWGmcULowering [no-change]: *x*é*n*d*j*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *x*é*n*d*j*ō
@@ -17453,6 +17589,7 @@ PWGmcSyllabicJ [no-change]: *x*ú*z*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ú*z*d*ą
 EAFLThVoicing [no-change]: *x*ú*z*d*ą
 PWGmcDentalHardening [no-change]: *x*ú*z*d*ą
+PWGmcEndinglessAw [no-change]: *x*ú*z*d*ą
 PNWGmcILowering [no-change]: *x*ú*z*d*ą
 PNWGmcULowering: *x*ó*z*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ó*z*d*ą
@@ -17581,6 +17718,7 @@ PWGmcSyllabicJ [no-change]: *x*á*l*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*á*l*d*a*n*ą
 EAFLThVoicing [no-change]: *x*á*l*d*a*n*ą
 PWGmcDentalHardening [no-change]: *x*á*l*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*á*l*d*a*n*ą
 PNWGmcILowering [no-change]: *x*á*l*d*a*n*ą
 PNWGmcULowering [no-change]: *x*á*l*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*á*l*d*a*n*ą
@@ -17709,6 +17847,7 @@ PWGmcSyllabicJ [no-change]: *x*ái*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*ái*m*a*z
 EAFLThVoicing [no-change]: *x*ái*m*a*z
 PWGmcDentalHardening [no-change]: *x*ái*m*a*z
+PWGmcEndinglessAw [no-change]: *x*ái*m*a*z
 PNWGmcILowering [no-change]: *x*ái*m*a*z
 PNWGmcULowering [no-change]: *x*ái*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ái*m*a*z
@@ -17837,6 +17976,7 @@ PWGmcSyllabicJ [no-change]: *x*ú*n*a*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ú*n*a*g*ą
 EAFLThVoicing [no-change]: *x*ú*n*a*g*ą
 PWGmcDentalHardening [no-change]: *x*ú*n*a*g*ą
+PWGmcEndinglessAw [no-change]: *x*ú*n*a*g*ą
 PNWGmcILowering [no-change]: *x*ú*n*a*g*ą
 PNWGmcULowering [no-change]: *x*ú*n*a*g*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ú*n*a*g*ą
@@ -17965,6 +18105,7 @@ PWGmcSyllabicJ [no-change]: *x*ō*d*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*ō*d*a*z
 EAFLThVoicing [no-change]: *x*ō*d*a*z
 PWGmcDentalHardening [no-change]: *x*ō*d*a*z
+PWGmcEndinglessAw [no-change]: *x*ō*d*a*z
 PNWGmcILowering [no-change]: *x*ō*d*a*z
 PNWGmcULowering [no-change]: *x*ō*d*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ō*d*a*z
@@ -18093,6 +18234,7 @@ PWGmcSyllabicJ [no-change]: *x*ō*f*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*ō*f*a*z
 EAFLThVoicing [no-change]: *x*ō*f*a*z
 PWGmcDentalHardening [no-change]: *x*ō*f*a*z
+PWGmcEndinglessAw [no-change]: *x*ō*f*a*z
 PNWGmcILowering [no-change]: *x*ō*f*a*z
 PNWGmcULowering [no-change]: *x*ō*f*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ō*f*a*z
@@ -18221,6 +18363,7 @@ PWGmcSyllabicJ [no-change]: *x*ú*r*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*ú*r*n*ą
 EAFLThVoicing [no-change]: *x*ú*r*n*ą
 PWGmcDentalHardening [no-change]: *x*ú*r*n*ą
+PWGmcEndinglessAw [no-change]: *x*ú*r*n*ą
 PNWGmcILowering [no-change]: *x*ú*r*n*ą
 PNWGmcULowering: *x*ó*r*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ó*r*n*ą
@@ -18349,6 +18492,7 @@ PWGmcSyllabicJ [no-change]: *x*ú*n*d*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*ú*n*d*a*z
 EAFLThVoicing [no-change]: *x*ú*n*d*a*z
 PWGmcDentalHardening [no-change]: *x*ú*n*d*a*z
+PWGmcEndinglessAw [no-change]: *x*ú*n*d*a*z
 PNWGmcILowering [no-change]: *x*ú*n*d*a*z
 PNWGmcULowering [no-change]: *x*ú*n*d*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ú*n*d*a*z
@@ -18477,6 +18621,7 @@ PWGmcSyllabicJ [no-change]: *k*n*é*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*é*d*a*n*ą
 EAFLThVoicing [no-change]: *k*n*é*d*a*n*ą
 PWGmcDentalHardening [no-change]: *k*n*é*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *k*n*é*d*a*n*ą
 PNWGmcILowering [no-change]: *k*n*é*d*a*n*ą
 PNWGmcULowering [no-change]: *k*n*é*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *k*n*é*d*a*n*ą
@@ -18605,6 +18750,7 @@ PWGmcSyllabicJ [no-change]: *k*n*é*w*ē
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*é*w*ē
 EAFLThVoicing [no-change]: *k*n*é*w*ē
 PWGmcDentalHardening [no-change]: *k*n*é*w*ē
+PWGmcEndinglessAw [no-change]: *k*n*é*w*ē
 PNWGmcILowering [no-change]: *k*n*é*w*ē
 PNWGmcULowering [no-change]: *k*n*é*w*ē
 PNWGmcStressedMonosyllableORaising [no-change]: *k*n*é*w*ē
@@ -18733,6 +18879,7 @@ PWGmcSyllabicJ [no-change]: *k*n*é*x*t*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*é*x*t*a*z
 EAFLThVoicing [no-change]: *k*n*é*x*t*a*z
 PWGmcDentalHardening [no-change]: *k*n*é*x*t*a*z
+PWGmcEndinglessAw [no-change]: *k*n*é*x*t*a*z
 PNWGmcILowering [no-change]: *k*n*é*x*t*a*z
 PNWGmcULowering [no-change]: *k*n*é*x*t*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *k*n*é*x*t*a*z
@@ -18861,6 +19008,7 @@ PWGmcSyllabicJ [no-change]: *k*n*ú*b*b*ô
 PNWGmcPreconsonantalXLoss [no-change]: *k*n*ú*b*b*ô
 EAFLThVoicing [no-change]: *k*n*ú*b*b*ô
 PWGmcDentalHardening [no-change]: *k*n*ú*b*b*ô
+PWGmcEndinglessAw [no-change]: *k*n*ú*b*b*ô
 PNWGmcILowering [no-change]: *k*n*ú*b*b*ô
 PNWGmcULowering: *k*n*ó*b*b*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *k*n*ó*b*b*ô
@@ -18989,6 +19137,7 @@ PWGmcSyllabicJ [no-change]: *x*l*á*ð*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*l*á*ð*a*n*ą
 EAFLThVoicing [no-change]: *x*l*á*ð*a*n*ą
 PWGmcDentalHardening: *x*l*á*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*l*á*d*a*n*ą
 PNWGmcILowering [no-change]: *x*l*á*d*a*n*ą
 PNWGmcULowering [no-change]: *x*l*á*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*l*á*d*a*n*ą
@@ -19117,6 +19266,7 @@ PWGmcSyllabicJ [no-change]: *l*á*n*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*á*n*d*ą
 EAFLThVoicing [no-change]: *l*á*n*d*ą
 PWGmcDentalHardening [no-change]: *l*á*n*d*ą
+PWGmcEndinglessAw [no-change]: *l*á*n*d*ą
 PNWGmcILowering [no-change]: *l*á*n*d*ą
 PNWGmcULowering [no-change]: *l*á*n*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*á*n*d*ą
@@ -19245,6 +19395,7 @@ PWGmcSyllabicJ [no-change]: *l*á*p*p*ô
 PNWGmcPreconsonantalXLoss [no-change]: *l*á*p*p*ô
 EAFLThVoicing [no-change]: *l*á*p*p*ô
 PWGmcDentalHardening [no-change]: *l*á*p*p*ô
+PWGmcEndinglessAw [no-change]: *l*á*p*p*ô
 PNWGmcILowering [no-change]: *l*á*p*p*ô
 PNWGmcULowering [no-change]: *l*á*p*p*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *l*á*p*p*ô
@@ -19373,6 +19524,7 @@ PWGmcSyllabicJ [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*s*t*i*j*a*n*ą
 EAFLThVoicing [no-change]: *l*ái*s*t*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *l*ái*s*t*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcILowering [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcULowering [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ái*s*t*i*j*a*n*ą
@@ -19501,6 +19653,7 @@ PWGmcSyllabicJ [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*l*á*x*x*j*a*n*ą
 EAFLThVoicing [no-change]: *x*l*á*x*x*j*a*n*ą
 PWGmcDentalHardening [no-change]: *x*l*á*x*x*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcILowering [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcULowering [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*l*á*x*x*j*a*n*ą
@@ -19629,6 +19782,7 @@ PWGmcSyllabicJ [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*d*i*j*a*n*ą
 EAFLThVoicing [no-change]: *l*ái*d*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *l*ái*d*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcILowering [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcULowering [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ái*d*i*j*a*n*ą
@@ -19757,6 +19911,7 @@ PWGmcSyllabicJ [no-change]: *l*áu*b*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*áu*b*ą
 EAFLThVoicing [no-change]: *l*áu*b*ą
 PWGmcDentalHardening [no-change]: *l*áu*b*ą
+PWGmcEndinglessAw [no-change]: *l*áu*b*ą
 PNWGmcILowering [no-change]: *l*áu*b*ą
 PNWGmcULowering [no-change]: *l*áu*b*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*áu*b*ą
@@ -19885,6 +20040,7 @@ PWGmcSyllabicJ [no-change]: *l*í*z*n*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*z*n*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *l*í*z*n*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *l*í*z*n*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*í*z*n*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *l*í*z*n*ō*j*a*n*ą
 PNWGmcULowering [no-change]: *l*í*z*n*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*z*n*ō*j*a*n*ą
@@ -20013,6 +20169,7 @@ PWGmcSyllabicJ [no-change]: *l*é*θ*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*é*θ*r*ą
 EAFLThVoicing [no-change]: *l*é*θ*r*ą
 PWGmcDentalHardening [no-change]: *l*é*θ*r*ą
+PWGmcEndinglessAw [no-change]: *l*é*θ*r*ą
 PNWGmcILowering [no-change]: *l*é*θ*r*ą
 PNWGmcULowering [no-change]: *l*é*θ*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*é*θ*r*ą
@@ -20141,6 +20298,7 @@ PWGmcSyllabicJ [no-change]: *l*áu*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *l*áu*k*a*z
 EAFLThVoicing [no-change]: *l*áu*k*a*z
 PWGmcDentalHardening [no-change]: *l*áu*k*a*z
+PWGmcEndinglessAw [no-change]: *l*áu*k*a*z
 PNWGmcILowering [no-change]: *l*áu*k*a*z
 PNWGmcULowering [no-change]: *l*áu*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *l*áu*k*a*z
@@ -20269,6 +20427,7 @@ PWGmcSyllabicJ [no-change]: *l*ā*t*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ā*t*a*n*ą
 EAFLThVoicing [no-change]: *l*ā*t*a*n*ą
 PWGmcDentalHardening [no-change]: *l*ā*t*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*ā*t*a*n*ą
 PNWGmcILowering [no-change]: *l*ā*t*a*n*ą
 PNWGmcULowering [no-change]: *l*ā*t*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ā*t*a*n*ą
@@ -20397,6 +20556,7 @@ PWGmcSyllabicJ [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*k*k*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *l*í*k*k*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *l*í*k*k*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcULowering [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*k*k*ō*j*a*n*ą
@@ -20525,6 +20685,7 @@ PWGmcSyllabicJ [no-change]: *x*l*í*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*l*í*d*ą
 EAFLThVoicing [no-change]: *x*l*í*d*ą
 PWGmcDentalHardening [no-change]: *x*l*í*d*ą
+PWGmcEndinglessAw [no-change]: *x*l*í*d*ą
 PNWGmcILowering [no-change]: *x*l*í*d*ą
 PNWGmcULowering [no-change]: *x*l*í*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*l*í*d*ą
@@ -20653,6 +20814,7 @@ PWGmcSyllabicJ [no-change]: *l*ḯ*b*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*b*ą
 EAFLThVoicing [no-change]: *l*ḯ*b*ą
 PWGmcDentalHardening [no-change]: *l*ḯ*b*ą
+PWGmcEndinglessAw [no-change]: *l*ḯ*b*ą
 PNWGmcILowering [no-change]: *l*ḯ*b*ą
 PNWGmcULowering [no-change]: *l*ḯ*b*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ḯ*b*ą
@@ -20781,6 +20943,7 @@ PWGmcSyllabicJ [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*éu*x*t*i*j*a*n*ą
 EAFLThVoicing [no-change]: *l*éu*x*t*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *l*éu*x*t*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcILowering [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcULowering [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*éu*x*t*i*j*a*n*ą
@@ -20909,6 +21072,7 @@ PWGmcSyllabicJ [no-change]: *l*ḯ*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*m*ą
 EAFLThVoicing [no-change]: *l*ḯ*m*ą
 PWGmcDentalHardening [no-change]: *l*ḯ*m*ą
+PWGmcEndinglessAw [no-change]: *l*ḯ*m*ą
 PNWGmcILowering [no-change]: *l*ḯ*m*ą
 PNWGmcULowering [no-change]: *l*ḯ*m*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ḯ*m*ą
@@ -21037,6 +21201,7 @@ PWGmcSyllabicJ [no-change]: *l*í*n*d*ō
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*n*d*ō
 EAFLThVoicing [no-change]: *l*í*n*d*ō
 PWGmcDentalHardening [no-change]: *l*í*n*d*ō
+PWGmcEndinglessAw [no-change]: *l*í*n*d*ō
 PNWGmcILowering [no-change]: *l*í*n*d*ō
 PNWGmcULowering [no-change]: *l*í*n*d*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*n*d*ō
@@ -21165,6 +21330,7 @@ PWGmcSyllabicJ [no-change]: *l*ḯ*n*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*n*ō*n
 EAFLThVoicing [no-change]: *l*ḯ*n*ō*n
 PWGmcDentalHardening [no-change]: *l*ḯ*n*ō*n
+PWGmcEndinglessAw [no-change]: *l*ḯ*n*ō*n
 PNWGmcILowering [no-change]: *l*ḯ*n*ō*n
 PNWGmcULowering [no-change]: *l*ḯ*n*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ḯ*n*ō*n
@@ -21293,6 +21459,7 @@ PWGmcSyllabicJ [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *l*ḯ*s*t*ō*n
 EAFLThVoicing [no-change]: *l*ḯ*s*t*ō*n
 PWGmcDentalHardening [no-change]: *l*ḯ*s*t*ō*n
+PWGmcEndinglessAw [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcILowering [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcULowering [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ḯ*s*t*ō*n
@@ -21421,6 +21588,7 @@ PWGmcSyllabicJ [no-change]: *l*í*b*ē*θ
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*b*ē*θ
 EAFLThVoicing [no-change]: *l*í*b*ē*θ
 PWGmcDentalHardening [no-change]: *l*í*b*ē*θ
+PWGmcEndinglessAw [no-change]: *l*í*b*ē*θ
 PNWGmcILowering [no-change]: *l*í*b*ē*θ
 PNWGmcULowering [no-change]: *l*í*b*ē*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*b*ē*θ
@@ -21549,6 +21717,7 @@ PWGmcSyllabicJ [no-change]: *l*í*b*r*ō
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*b*r*ō
 EAFLThVoicing [no-change]: *l*í*b*r*ō
 PWGmcDentalHardening [no-change]: *l*í*b*r*ō
+PWGmcEndinglessAw [no-change]: *l*í*b*r*ō
 PNWGmcILowering [no-change]: *l*í*b*r*ō
 PNWGmcULowering [no-change]: *l*í*b*r*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*b*r*ō
@@ -21677,6 +21846,7 @@ PWGmcSyllabicJ [no-change]: *l*ái*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*m*ą
 EAFLThVoicing [no-change]: *l*ái*m*ą
 PWGmcDentalHardening [no-change]: *l*ái*m*ą
+PWGmcEndinglessAw [no-change]: *l*ái*m*ą
 PNWGmcILowering [no-change]: *l*ái*m*ą
 PNWGmcULowering [no-change]: *l*ái*m*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ái*m*ą
@@ -21805,6 +21975,7 @@ PWGmcSyllabicJ [no-change]: *l*ái*θ*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *l*ái*θ*a*z
 EAFLThVoicing [no-change]: *l*ái*θ*a*z
 PWGmcDentalHardening [no-change]: *l*ái*θ*a*z
+PWGmcEndinglessAw [no-change]: *l*ái*θ*a*z
 PNWGmcILowering [no-change]: *l*ái*θ*a*z
 PNWGmcULowering [no-change]: *l*ái*θ*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ái*θ*a*z
@@ -21933,6 +22104,7 @@ PWGmcSyllabicJ [no-change]: *l*ú*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ú*k*ą
 EAFLThVoicing [no-change]: *l*ú*k*ą
 PWGmcDentalHardening [no-change]: *l*ú*k*ą
+PWGmcEndinglessAw [no-change]: *l*ú*k*ą
 PNWGmcILowering [no-change]: *l*ú*k*ą
 PNWGmcULowering: *l*ó*k*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ó*k*ą
@@ -22061,6 +22233,7 @@ PWGmcSyllabicJ [no-change]: *l*ú*k*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *l*ú*k*k*a*z
 EAFLThVoicing [no-change]: *l*ú*k*k*a*z
 PWGmcDentalHardening [no-change]: *l*ú*k*k*a*z
+PWGmcEndinglessAw [no-change]: *l*ú*k*k*a*z
 PNWGmcILowering [no-change]: *l*ú*k*k*a*z
 PNWGmcULowering: *l*ó*k*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ó*k*k*a*z
@@ -22189,6 +22362,7 @@ PWGmcSyllabicJ [no-change]: *l*ū*s
 PNWGmcPreconsonantalXLoss [no-change]: *l*ū*s
 EAFLThVoicing [no-change]: *l*ū*s
 PWGmcDentalHardening [no-change]: *l*ū*s
+PWGmcEndinglessAw [no-change]: *l*ū*s
 PNWGmcILowering [no-change]: *l*ū*s
 PNWGmcULowering [no-change]: *l*ū*s
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ū*s
@@ -22317,6 +22491,7 @@ PWGmcSyllabicJ [no-change]: *l*ú*n*g*a*n*n*j*ō
 PNWGmcPreconsonantalXLoss [no-change]: *l*ú*n*g*a*n*n*j*ō
 EAFLThVoicing [no-change]: *l*ú*n*g*a*n*n*j*ō
 PWGmcDentalHardening [no-change]: *l*ú*n*g*a*n*n*j*ō
+PWGmcEndinglessAw [no-change]: *l*ú*n*g*a*n*n*j*ō
 PNWGmcILowering [no-change]: *l*ú*n*g*a*n*n*j*ō
 PNWGmcULowering [no-change]: *l*ú*n*g*a*n*n*j*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ú*n*g*a*n*n*j*ō
@@ -22445,6 +22620,7 @@ PWGmcSyllabicJ [no-change]: *l*ú*s*t*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *l*ú*s*t*u*z
 EAFLThVoicing [no-change]: *l*ú*s*t*u*z
 PWGmcDentalHardening [no-change]: *l*ú*s*t*u*z
+PWGmcEndinglessAw [no-change]: *l*ú*s*t*u*z
 PNWGmcILowering [no-change]: *l*ú*s*t*u*z
 PNWGmcULowering [no-change]: *l*ú*s*t*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ú*s*t*u*z
@@ -22573,6 +22749,7 @@ PWGmcSyllabicJ [no-change]: *l*áu*g*ō
 PNWGmcPreconsonantalXLoss [no-change]: *l*áu*g*ō
 EAFLThVoicing [no-change]: *l*áu*g*ō
 PWGmcDentalHardening [no-change]: *l*áu*g*ō
+PWGmcEndinglessAw [no-change]: *l*áu*g*ō
 PNWGmcILowering [no-change]: *l*áu*g*ō
 PNWGmcULowering [no-change]: *l*áu*g*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *l*áu*g*ō
@@ -22701,6 +22878,7 @@ PWGmcSyllabicJ [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*k*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *m*á*k*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *m*á*k*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcULowering [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*k*ō*j*a*n*ą
@@ -22829,6 +23007,7 @@ PWGmcSyllabicJ [no-change]: *m*á*l*t*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*l*t*a*z
 EAFLThVoicing [no-change]: *m*á*l*t*a*z
 PWGmcDentalHardening [no-change]: *m*á*l*t*a*z
+PWGmcEndinglessAw [no-change]: *m*á*l*t*a*z
 PNWGmcILowering [no-change]: *m*á*l*t*a*z
 PNWGmcULowering [no-change]: *m*á*l*t*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*l*t*a*z
@@ -22957,6 +23136,7 @@ PWGmcSyllabicJ [no-change]: *m*á*n*n*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*n*n*a*s
 EAFLThVoicing [no-change]: *m*á*n*n*a*s
 PWGmcDentalHardening [no-change]: *m*á*n*n*a*s
+PWGmcEndinglessAw [no-change]: *m*á*n*n*a*s
 PNWGmcILowering [no-change]: *m*á*n*n*a*s
 PNWGmcULowering [no-change]: *m*á*n*n*a*s
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*n*n*a*s
@@ -23085,6 +23265,7 @@ PWGmcSyllabicJ [no-change]: *m*á*r*k*ō
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*r*k*ō
 EAFLThVoicing [no-change]: *m*á*r*k*ō
 PWGmcDentalHardening [no-change]: *m*á*r*k*ō
+PWGmcEndinglessAw [no-change]: *m*á*r*k*ō
 PNWGmcILowering [no-change]: *m*á*r*k*ō
 PNWGmcULowering [no-change]: *m*á*r*k*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*r*k*ō
@@ -23213,6 +23394,7 @@ PWGmcSyllabicJ [no-change]: *m*á*s*t*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*s*t*a*z
 EAFLThVoicing [no-change]: *m*á*s*t*a*z
 PWGmcDentalHardening [no-change]: *m*á*s*t*a*z
+PWGmcEndinglessAw [no-change]: *m*á*s*t*a*z
 PNWGmcILowering [no-change]: *m*á*s*t*a*z
 PNWGmcULowering [no-change]: *m*á*s*t*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*s*t*a*z
@@ -23341,6 +23523,7 @@ PWGmcSyllabicJ [no-change]: *m*ā*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *m*ā*l*ą
 EAFLThVoicing [no-change]: *m*ā*l*ą
 PWGmcDentalHardening [no-change]: *m*ā*l*ą
+PWGmcEndinglessAw [no-change]: *m*ā*l*ą
 PNWGmcILowering [no-change]: *m*ā*l*ą
 PNWGmcULowering [no-change]: *m*ā*l*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *m*ā*l*ą
@@ -23469,6 +23652,7 @@ PWGmcSyllabicJ [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *m*ái*n*i*j*a*n*ą
 EAFLThVoicing [no-change]: *m*ái*n*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *m*ái*n*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcILowering [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcULowering [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *m*ái*n*i*j*a*n*ą
@@ -23597,6 +23781,7 @@ PWGmcSyllabicJ [no-change]: *m*í*z*d*ē
 PNWGmcPreconsonantalXLoss [no-change]: *m*í*z*d*ē
 EAFLThVoicing [no-change]: *m*í*z*d*ē
 PWGmcDentalHardening [no-change]: *m*í*z*d*ē
+PWGmcEndinglessAw [no-change]: *m*í*z*d*ē
 PNWGmcILowering: *m*é*z*d*ē
 PNWGmcULowering [no-change]: *m*é*z*d*ē
 PNWGmcStressedMonosyllableORaising [no-change]: *m*é*z*d*ē
@@ -23725,6 +23910,7 @@ PWGmcSyllabicJ [no-change]: *m*á*x*t*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*x*t*i*z
 EAFLThVoicing [no-change]: *m*á*x*t*i*z
 PWGmcDentalHardening [no-change]: *m*á*x*t*i*z
+PWGmcEndinglessAw [no-change]: *m*á*x*t*i*z
 PNWGmcILowering [no-change]: *m*á*x*t*i*z
 PNWGmcULowering [no-change]: *m*á*x*t*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*x*t*i*z
@@ -23853,6 +24039,7 @@ PWGmcSyllabicJ [no-change]: *m*é*l*u*k*z
 PNWGmcPreconsonantalXLoss [no-change]: *m*é*l*u*k*z
 EAFLThVoicing [no-change]: *m*é*l*u*k*z
 PWGmcDentalHardening [no-change]: *m*é*l*u*k*z
+PWGmcEndinglessAw [no-change]: *m*é*l*u*k*z
 PNWGmcILowering [no-change]: *m*é*l*u*k*z
 PNWGmcULowering [no-change]: *m*é*l*u*k*z
 PNWGmcStressedMonosyllableORaising [no-change]: *m*é*l*u*k*z
@@ -23981,6 +24168,7 @@ PWGmcSyllabicJ [no-change]: *m*ā*n*ō*θ*z
 PNWGmcPreconsonantalXLoss [no-change]: *m*ā*n*ō*θ*z
 EAFLThVoicing [no-change]: *m*ā*n*ō*θ*z
 PWGmcDentalHardening [no-change]: *m*ā*n*ō*θ*z
+PWGmcEndinglessAw [no-change]: *m*ā*n*ō*θ*z
 PNWGmcILowering [no-change]: *m*ā*n*ō*θ*z
 PNWGmcULowering [no-change]: *m*ā*n*ō*θ*z
 PNWGmcStressedMonosyllableORaising [no-change]: *m*ā*n*ō*θ*z
@@ -24109,6 +24297,7 @@ PWGmcSyllabicJ [no-change]: *m*ō*d*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *m*ō*d*a*z
 EAFLThVoicing [no-change]: *m*ō*d*a*z
 PWGmcDentalHardening [no-change]: *m*ō*d*a*z
+PWGmcEndinglessAw [no-change]: *m*ō*d*a*z
 PNWGmcILowering [no-change]: *m*ō*d*a*z
 PNWGmcULowering [no-change]: *m*ō*d*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *m*ō*d*a*z
@@ -24237,6 +24426,7 @@ PWGmcSyllabicJ [no-change]: *m*ō*d*ē*r
 PNWGmcPreconsonantalXLoss [no-change]: *m*ō*d*ē*r
 EAFLThVoicing [no-change]: *m*ō*d*ē*r
 PWGmcDentalHardening [no-change]: *m*ō*d*ē*r
+PWGmcEndinglessAw [no-change]: *m*ō*d*ē*r
 PNWGmcILowering [no-change]: *m*ō*d*ē*r
 PNWGmcULowering [no-change]: *m*ō*d*ē*r
 PNWGmcStressedMonosyllableORaising [no-change]: *m*ō*d*ē*r
@@ -24365,6 +24555,7 @@ PWGmcSyllabicJ [no-change]: *n*á*g*l*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*g*l*a*z
 EAFLThVoicing [no-change]: *n*á*g*l*a*z
 PWGmcDentalHardening [no-change]: *n*á*g*l*a*z
+PWGmcEndinglessAw [no-change]: *n*á*g*l*a*z
 PNWGmcILowering [no-change]: *n*á*g*l*a*z
 PNWGmcULowering [no-change]: *n*á*g*l*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *n*á*g*l*a*z
@@ -24493,6 +24684,7 @@ PWGmcSyllabicJ [no-change]: *n*á*m*ô
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*m*ô
 EAFLThVoicing [no-change]: *n*á*m*ô
 PWGmcDentalHardening [no-change]: *n*á*m*ô
+PWGmcEndinglessAw [no-change]: *n*á*m*ô
 PNWGmcILowering [no-change]: *n*á*m*ô
 PNWGmcULowering [no-change]: *n*á*m*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *n*á*m*ô
@@ -24621,6 +24813,7 @@ PWGmcSyllabicJ [no-change]: *n*á*b*ō
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*b*ō
 EAFLThVoicing [no-change]: *n*á*b*ō
 PWGmcDentalHardening [no-change]: *n*á*b*ō
+PWGmcEndinglessAw [no-change]: *n*á*b*ō
 PNWGmcILowering [no-change]: *n*á*b*ō
 PNWGmcULowering [no-change]: *n*á*b*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *n*á*b*ō
@@ -24749,6 +24942,7 @@ PWGmcSyllabicJ [no-change]: *n*á*b*u*l*ô
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*b*u*l*ô
 EAFLThVoicing [no-change]: *n*á*b*u*l*ô
 PWGmcDentalHardening [no-change]: *n*á*b*u*l*ô
+PWGmcEndinglessAw [no-change]: *n*á*b*u*l*ô
 PNWGmcILowering [no-change]: *n*á*b*u*l*ô
 PNWGmcULowering [no-change]: *n*á*b*u*l*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *n*á*b*u*l*ô
@@ -24877,6 +25071,7 @@ PWGmcSyllabicJ [no-change]: *x*n*é*k*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *x*n*é*k*k*ô
 EAFLThVoicing [no-change]: *x*n*é*k*k*ô
 PWGmcDentalHardening [no-change]: *x*n*é*k*k*ô
+PWGmcEndinglessAw [no-change]: *x*n*é*k*k*ô
 PNWGmcILowering [no-change]: *x*n*é*k*k*ô
 PNWGmcULowering [no-change]: *x*n*é*k*k*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *x*n*é*k*k*ô
@@ -25005,6 +25200,7 @@ PWGmcSyllabicJ [no-change]: *n*áu*d*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *n*áu*d*i*z
 EAFLThVoicing [no-change]: *n*áu*d*i*z
 PWGmcDentalHardening [no-change]: *n*áu*d*i*z
+PWGmcEndinglessAw [no-change]: *n*áu*d*i*z
 PNWGmcILowering [no-change]: *n*áu*d*i*z
 PNWGmcULowering [no-change]: *n*áu*d*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *n*áu*d*i*z
@@ -25133,6 +25329,7 @@ PWGmcSyllabicJ [no-change]: *n*ā*ð*l*ō
 PNWGmcPreconsonantalXLoss [no-change]: *n*ā*ð*l*ō
 EAFLThVoicing [no-change]: *n*ā*ð*l*ō
 PWGmcDentalHardening: *n*ā*d*l*ō
+PWGmcEndinglessAw [no-change]: *n*ā*d*l*ō
 PNWGmcILowering [no-change]: *n*ā*d*l*ō
 PNWGmcULowering [no-change]: *n*ā*d*l*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *n*ā*d*l*ō
@@ -25261,6 +25458,7 @@ PWGmcSyllabicJ [no-change]: *n*í*s*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *n*í*s*t*ą
 EAFLThVoicing [no-change]: *n*í*s*t*ą
 PWGmcDentalHardening [no-change]: *n*í*s*t*ą
+PWGmcEndinglessAw [no-change]: *n*í*s*t*ą
 PNWGmcILowering: *n*é*s*t*ą
 PNWGmcULowering [no-change]: *n*é*s*t*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *n*é*s*t*ą
@@ -25389,6 +25587,7 @@ PWGmcSyllabicJ [no-change]: *n*á*t*t*j*ą
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*t*t*j*ą
 EAFLThVoicing [no-change]: *n*á*t*t*j*ą
 PWGmcDentalHardening [no-change]: *n*á*t*t*j*ą
+PWGmcEndinglessAw [no-change]: *n*á*t*t*j*ą
 PNWGmcILowering [no-change]: *n*á*t*t*j*ą
 PNWGmcULowering [no-change]: *n*á*t*t*j*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *n*á*t*t*j*ą
@@ -25517,6 +25716,7 @@ PWGmcSyllabicJ [no-change]: *n*á*t*i*l*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*t*i*l*ō*n
 EAFLThVoicing [no-change]: *n*á*t*i*l*ō*n
 PWGmcDentalHardening [no-change]: *n*á*t*i*l*ō*n
+PWGmcEndinglessAw [no-change]: *n*á*t*i*l*ō*n
 PNWGmcILowering [no-change]: *n*á*t*i*l*ō*n
 PNWGmcULowering [no-change]: *n*á*t*i*l*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *n*á*t*i*l*ō*n
@@ -25645,6 +25845,7 @@ PWGmcSyllabicJ [no-change]: *n*á*x*t*i
 PNWGmcPreconsonantalXLoss [no-change]: *n*á*x*t*i
 EAFLThVoicing [no-change]: *n*á*x*t*i
 PWGmcDentalHardening [no-change]: *n*á*x*t*i
+PWGmcEndinglessAw [no-change]: *n*á*x*t*i
 PNWGmcILowering [no-change]: *n*á*x*t*i
 PNWGmcULowering [no-change]: *n*á*x*t*i
 PNWGmcStressedMonosyllableORaising [no-change]: *n*á*x*t*i
@@ -25773,6 +25974,7 @@ PWGmcSyllabicJ [no-change]: *m*á*r*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*r*ō*n
 EAFLThVoicing [no-change]: *m*á*r*ō*n
 PWGmcDentalHardening [no-change]: *m*á*r*ō*n
+PWGmcEndinglessAw [no-change]: *m*á*r*ō*n
 PNWGmcILowering [no-change]: *m*á*r*ō*n
 PNWGmcULowering [no-change]: *m*á*r*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*r*ō*n
@@ -25901,6 +26103,7 @@ PWGmcSyllabicJ [no-change]: *n*í*g*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *n*í*g*u*n
 EAFLThVoicing [no-change]: *n*í*g*u*n
 PWGmcDentalHardening [no-change]: *n*í*g*u*n
+PWGmcEndinglessAw [no-change]: *n*í*g*u*n
 PNWGmcILowering [no-change]: *n*í*g*u*n
 PNWGmcULowering [no-change]: *n*í*g*u*n
 PNWGmcStressedMonosyllableORaising [no-change]: *n*í*g*u*n
@@ -26029,6 +26232,7 @@ PWGmcSyllabicJ [no-change]: *n*ú*s*ō
 PNWGmcPreconsonantalXLoss [no-change]: *n*ú*s*ō
 EAFLThVoicing [no-change]: *n*ú*s*ō
 PWGmcDentalHardening [no-change]: *n*ú*s*ō
+PWGmcEndinglessAw [no-change]: *n*ú*s*ō
 PNWGmcILowering [no-change]: *n*ú*s*ō
 PNWGmcULowering: *n*ó*s*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *n*ó*s*ō
@@ -26157,6 +26361,7 @@ PWGmcSyllabicJ [no-change]: *ái*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *ái*n*a*z
 EAFLThVoicing [no-change]: *ái*n*a*z
 PWGmcDentalHardening [no-change]: *ái*n*a*z
+PWGmcEndinglessAw [no-change]: *ái*n*a*z
 PNWGmcILowering [no-change]: *ái*n*a*z
 PNWGmcULowering [no-change]: *ái*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *ái*n*a*z
@@ -26285,6 +26490,7 @@ PWGmcSyllabicJ [no-change]: *ú*f*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *ú*f*n*a*z
 EAFLThVoicing [no-change]: *ú*f*n*a*z
 PWGmcDentalHardening [no-change]: *ú*f*n*a*z
+PWGmcEndinglessAw [no-change]: *ú*f*n*a*z
 PNWGmcILowering [no-change]: *ú*f*n*a*z
 PNWGmcULowering: *ó*f*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *ó*f*n*a*z
@@ -26413,6 +26619,7 @@ PWGmcSyllabicJ [no-change]: *ú*x*s*ô
 PNWGmcPreconsonantalXLoss [no-change]: *ú*x*s*ô
 EAFLThVoicing [no-change]: *ú*x*s*ô
 PWGmcDentalHardening [no-change]: *ú*x*s*ô
+PWGmcEndinglessAw [no-change]: *ú*x*s*ô
 PNWGmcILowering [no-change]: *ú*x*s*ô
 PNWGmcULowering: *ó*x*s*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *ó*x*s*ô
@@ -26541,6 +26748,7 @@ PWGmcSyllabicJ [no-change]: *r*é*g*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*é*g*n*ą
 EAFLThVoicing [no-change]: *r*é*g*n*ą
 PWGmcDentalHardening [no-change]: *r*é*g*n*ą
+PWGmcEndinglessAw [no-change]: *r*é*g*n*ą
 PNWGmcILowering [no-change]: *r*é*g*n*ą
 PNWGmcULowering [no-change]: *r*é*g*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *r*é*g*n*ą
@@ -26669,6 +26877,7 @@ PWGmcSyllabicJ [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcPreconsonantalXLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
 EAFLThVoicing [no-change]: *r*é*g*n*a*b*ù*g*ô
 PWGmcDentalHardening [no-change]: *r*é*g*n*a*b*ù*g*ô
+PWGmcEndinglessAw [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcILowering [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcULowering [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *r*é*g*n*a*b*ù*g*ô
@@ -26797,6 +27006,7 @@ PWGmcSyllabicJ [no-change]: *x*r*á*b*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*r*á*b*n*a*z
 EAFLThVoicing [no-change]: *x*r*á*b*n*a*z
 PWGmcDentalHardening [no-change]: *x*r*á*b*n*a*z
+PWGmcEndinglessAw [no-change]: *x*r*á*b*n*a*z
 PNWGmcILowering [no-change]: *x*r*á*b*n*a*z
 PNWGmcULowering [no-change]: *x*r*á*b*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*r*á*b*n*a*z
@@ -26925,6 +27135,7 @@ PWGmcSyllabicJ [no-change]: *r*ā*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ā*d*a*n*ą
 EAFLThVoicing [no-change]: *r*ā*d*a*n*ą
 PWGmcDentalHardening [no-change]: *r*ā*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *r*ā*d*a*n*ą
 PNWGmcILowering [no-change]: *r*ā*d*a*n*ą
 PNWGmcULowering [no-change]: *r*ā*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ā*d*a*n*ą
@@ -27053,6 +27264,7 @@ PWGmcSyllabicJ [no-change]: *r*áu*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *r*áu*k*a*z
 EAFLThVoicing [no-change]: *r*áu*k*a*z
 PWGmcDentalHardening [no-change]: *r*áu*k*a*z
+PWGmcEndinglessAw [no-change]: *r*áu*k*a*z
 PNWGmcILowering [no-change]: *r*áu*k*a*z
 PNWGmcULowering [no-change]: *r*áu*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *r*áu*k*a*z
@@ -27181,6 +27393,7 @@ PWGmcSyllabicJ [no-change]: *r*á*s*t*ō*z
 PNWGmcPreconsonantalXLoss [no-change]: *r*á*s*t*ō*z
 EAFLThVoicing [no-change]: *r*á*s*t*ō*z
 PWGmcDentalHardening [no-change]: *r*á*s*t*ō*z
+PWGmcEndinglessAw [no-change]: *r*á*s*t*ō*z
 PNWGmcILowering [no-change]: *r*á*s*t*ō*z
 PNWGmcULowering [no-change]: *r*á*s*t*ō*z
 PNWGmcStressedMonosyllableORaising [no-change]: *r*á*s*t*ō*z
@@ -27309,6 +27522,7 @@ PWGmcSyllabicJ [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ḯ*d*a*n*ą
 EAFLThVoicing [no-change]: *r*ḯ*d*a*n*ą
 PWGmcDentalHardening [no-change]: *r*ḯ*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcILowering [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcULowering [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ḯ*d*a*n*ą
@@ -27437,6 +27651,7 @@ PWGmcSyllabicJ [no-change]: *r*í*n*d*ō
 PNWGmcPreconsonantalXLoss [no-change]: *r*í*n*d*ō
 EAFLThVoicing [no-change]: *r*í*n*d*ō
 PWGmcDentalHardening [no-change]: *r*í*n*d*ō
+PWGmcEndinglessAw [no-change]: *r*í*n*d*ō
 PNWGmcILowering [no-change]: *r*í*n*d*ō
 PNWGmcULowering [no-change]: *r*í*n*d*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *r*í*n*d*ō
@@ -27565,6 +27780,7 @@ PWGmcSyllabicJ [no-change]: *r*ú*k*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *r*ú*k*k*a*z
 EAFLThVoicing [no-change]: *r*ú*k*k*a*z
 PWGmcDentalHardening [no-change]: *r*ú*k*k*a*z
+PWGmcEndinglessAw [no-change]: *r*ú*k*k*a*z
 PNWGmcILowering [no-change]: *r*ú*k*k*a*z
 PNWGmcULowering: *r*ó*k*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ó*k*k*a*z
@@ -27693,6 +27909,7 @@ PWGmcSyllabicJ [no-change]: *r*ō*d*ō
 PNWGmcPreconsonantalXLoss [no-change]: *r*ō*d*ō
 EAFLThVoicing [no-change]: *r*ō*d*ō
 PWGmcDentalHardening [no-change]: *r*ō*d*ō
+PWGmcEndinglessAw [no-change]: *r*ō*d*ō
 PNWGmcILowering [no-change]: *r*ō*d*ō
 PNWGmcULowering [no-change]: *r*ō*d*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ō*d*ō
@@ -27821,6 +28038,7 @@ PWGmcSyllabicJ [no-change]: *r*ū*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ū*m*ą
 EAFLThVoicing [no-change]: *r*ū*m*ą
 PWGmcDentalHardening [no-change]: *r*ū*m*ą
+PWGmcEndinglessAw [no-change]: *r*ū*m*ą
 PNWGmcILowering [no-change]: *r*ū*m*ą
 PNWGmcULowering [no-change]: *r*ū*m*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ū*m*ą
@@ -27949,6 +28167,7 @@ PWGmcSyllabicJ [no-change]: *r*ái*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*ái*p*ą
 EAFLThVoicing [no-change]: *r*ái*p*ą
 PWGmcDentalHardening [no-change]: *r*ái*p*ą
+PWGmcEndinglessAw [no-change]: *r*ái*p*ą
 PNWGmcILowering [no-change]: *r*ái*p*ą
 PNWGmcULowering [no-change]: *r*ái*p*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ái*p*ą
@@ -28077,6 +28296,7 @@ PWGmcSyllabicJ [no-change]: *r*ō*θ*r*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *r*ō*θ*r*a*z
 EAFLThVoicing [no-change]: *r*ō*θ*r*a*z
 PWGmcDentalHardening [no-change]: *r*ō*θ*r*a*z
+PWGmcEndinglessAw [no-change]: *r*ō*θ*r*a*z
 PNWGmcILowering [no-change]: *r*ō*θ*r*a*z
 PNWGmcULowering [no-change]: *r*ō*θ*r*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ō*θ*r*a*z
@@ -28205,6 +28425,7 @@ PWGmcSyllabicJ [no-change]: *r*í*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *r*í*n*n*a*n*ą
 EAFLThVoicing [no-change]: *r*í*n*n*a*n*ą
 PWGmcDentalHardening [no-change]: *r*í*n*n*a*n*ą
+PWGmcEndinglessAw [no-change]: *r*í*n*n*a*n*ą
 PNWGmcILowering [no-change]: *r*í*n*n*a*n*ą
 PNWGmcULowering [no-change]: *r*í*n*n*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *r*í*n*n*a*n*ą
@@ -28333,6 +28554,7 @@ PWGmcSyllabicJ [no-change]: *r*ú*g*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *r*ú*g*i*z
 EAFLThVoicing [no-change]: *r*ú*g*i*z
 PWGmcDentalHardening [no-change]: *r*ú*g*i*z
+PWGmcEndinglessAw [no-change]: *r*ú*g*i*z
 PNWGmcILowering [no-change]: *r*ú*g*i*z
 PNWGmcULowering [no-change]: *r*ú*g*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ú*g*i*z
@@ -28461,6 +28683,7 @@ PWGmcSyllabicJ [no-change]: *s*é*g*l*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*g*l*ą
 EAFLThVoicing [no-change]: *s*é*g*l*ą
 PWGmcDentalHardening [no-change]: *s*é*g*l*ą
+PWGmcEndinglessAw [no-change]: *s*é*g*l*ą
 PNWGmcILowering [no-change]: *s*é*g*l*ą
 PNWGmcULowering [no-change]: *s*é*g*l*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*é*g*l*ą
@@ -28589,6 +28812,7 @@ PWGmcSyllabicJ [no-change]: *s*á*k*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*k*ō
 EAFLThVoicing [no-change]: *s*á*k*ō
 PWGmcDentalHardening [no-change]: *s*á*k*ō
+PWGmcEndinglessAw [no-change]: *s*á*k*ō
 PNWGmcILowering [no-change]: *s*á*k*ō
 PNWGmcULowering [no-change]: *s*á*k*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*á*k*ō
@@ -28717,6 +28941,7 @@ PWGmcSyllabicJ [no-change]: *s*á*l*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*l*t*ą
 EAFLThVoicing [no-change]: *s*á*l*t*ą
 PWGmcDentalHardening [no-change]: *s*á*l*t*ą
+PWGmcEndinglessAw [no-change]: *s*á*l*t*ą
 PNWGmcILowering [no-change]: *s*á*l*t*ą
 PNWGmcULowering [no-change]: *s*á*l*t*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*á*l*t*ą
@@ -28845,6 +29070,7 @@ PWGmcSyllabicJ [no-change]: *s*á*l*b*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*l*b*ō
 EAFLThVoicing [no-change]: *s*á*l*b*ō
 PWGmcDentalHardening [no-change]: *s*á*l*b*ō
+PWGmcEndinglessAw [no-change]: *s*á*l*b*ō
 PNWGmcILowering [no-change]: *s*á*l*b*ō
 PNWGmcULowering [no-change]: *s*á*l*b*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*á*l*b*ō
@@ -28973,6 +29199,7 @@ PWGmcSyllabicJ [no-change]: *s*á*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*p*ą
 EAFLThVoicing [no-change]: *s*á*p*ą
 PWGmcDentalHardening [no-change]: *s*á*p*ą
+PWGmcEndinglessAw [no-change]: *s*á*p*ą
 PNWGmcILowering [no-change]: *s*á*p*ą
 PNWGmcULowering [no-change]: *s*á*p*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*á*p*ą
@@ -29101,6 +29328,7 @@ PWGmcSyllabicJ [no-change]: *s*ái*w*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*ái*w*i*z
 EAFLThVoicing [no-change]: *s*ái*w*i*z
 PWGmcDentalHardening [no-change]: *s*ái*w*i*z
+PWGmcEndinglessAw [no-change]: *s*ái*w*i*z
 PNWGmcILowering [no-change]: *s*ái*w*i*z
 PNWGmcULowering [no-change]: *s*ái*w*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ái*w*i*z
@@ -29229,6 +29457,7 @@ PWGmcSyllabicJ [no-change]: *s*áu*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*áu*m*a*z
 EAFLThVoicing [no-change]: *s*áu*m*a*z
 PWGmcDentalHardening [no-change]: *s*áu*m*a*z
+PWGmcEndinglessAw [no-change]: *s*áu*m*a*z
 PNWGmcILowering [no-change]: *s*áu*m*a*z
 PNWGmcULowering [no-change]: *s*áu*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*áu*m*a*z
@@ -29357,6 +29586,7 @@ PWGmcSyllabicJ [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ō*k*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*ō*k*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*ō*k*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ō*k*i*j*a*n*ą
@@ -29485,6 +29715,7 @@ PWGmcSyllabicJ [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*n*d*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*á*n*d*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*á*n*d*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*á*n*d*i*j*a*n*ą
@@ -29613,6 +29844,7 @@ PWGmcSyllabicJ [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*t*t*j*a*n*ą
 EAFLThVoicing [no-change]: *s*á*t*t*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*á*t*t*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcILowering [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcULowering [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*á*t*t*j*a*n*ą
@@ -29741,6 +29973,7 @@ PWGmcSyllabicJ [no-change]: *s*é*b*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*b*u*n
 EAFLThVoicing [no-change]: *s*é*b*u*n
 PWGmcDentalHardening [no-change]: *s*é*b*u*n
+PWGmcEndinglessAw [no-change]: *s*é*b*u*n
 PNWGmcILowering [no-change]: *s*é*b*u*n
 PNWGmcULowering [no-change]: *s*é*b*u*n
 PNWGmcStressedMonosyllableORaising [no-change]: *s*é*b*u*n
@@ -29869,6 +30102,7 @@ PWGmcSyllabicJ [no-change]: *s*k*á*f*t*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*f*t*ą
 EAFLThVoicing [no-change]: *s*k*á*f*t*ą
 PWGmcDentalHardening [no-change]: *s*k*á*f*t*ą
+PWGmcEndinglessAw [no-change]: *s*k*á*f*t*ą
 PNWGmcILowering [no-change]: *s*k*á*f*t*ą
 PNWGmcULowering [no-change]: *s*k*á*f*t*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*á*f*t*ą
@@ -29997,6 +30231,7 @@ PWGmcSyllabicJ [no-change]: *s*k*á*m*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*m*ō
 EAFLThVoicing [no-change]: *s*k*á*m*ō
 PWGmcDentalHardening [no-change]: *s*k*á*m*ō
+PWGmcEndinglessAw [no-change]: *s*k*á*m*ō
 PNWGmcILowering [no-change]: *s*k*á*m*ō
 PNWGmcULowering [no-change]: *s*k*á*m*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*á*m*ō
@@ -30125,6 +30360,7 @@ PWGmcSyllabicJ [no-change]: *s*k*é*r*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*é*r*a*n*ą
 EAFLThVoicing [no-change]: *s*k*é*r*a*n*ą
 PWGmcDentalHardening [no-change]: *s*k*é*r*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*k*é*r*a*n*ą
 PNWGmcILowering [no-change]: *s*k*é*r*a*n*ą
 PNWGmcULowering [no-change]: *s*k*é*r*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*é*r*a*n*ą
@@ -30253,6 +30489,7 @@ PWGmcSyllabicJ [no-change]: *s*k*ái*θ*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ái*θ*i*z
 EAFLThVoicing [no-change]: *s*k*ái*θ*i*z
 PWGmcDentalHardening [no-change]: *s*k*ái*θ*i*z
+PWGmcEndinglessAw [no-change]: *s*k*ái*θ*i*z
 PNWGmcILowering [no-change]: *s*k*ái*θ*i*z
 PNWGmcULowering [no-change]: *s*k*ái*θ*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*ái*θ*i*z
@@ -30381,6 +30618,7 @@ PWGmcSyllabicJ [no-change]: *s*k*ā*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ā*p*ą
 EAFLThVoicing [no-change]: *s*k*ā*p*ą
 PWGmcDentalHardening [no-change]: *s*k*ā*p*ą
+PWGmcEndinglessAw [no-change]: *s*k*ā*p*ą
 PNWGmcILowering [no-change]: *s*k*ā*p*ą
 PNWGmcULowering [no-change]: *s*k*ā*p*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*ā*p*ą
@@ -30509,6 +30747,7 @@ PWGmcSyllabicJ [no-change]: *s*k*é*l*d*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*é*l*d*u*z
 EAFLThVoicing [no-change]: *s*k*é*l*d*u*z
 PWGmcDentalHardening [no-change]: *s*k*é*l*d*u*z
+PWGmcEndinglessAw [no-change]: *s*k*é*l*d*u*z
 PNWGmcILowering [no-change]: *s*k*é*l*d*u*z
 PNWGmcULowering [no-change]: *s*k*é*l*d*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*é*l*d*u*z
@@ -30637,6 +30876,7 @@ PWGmcSyllabicJ [no-change]: *s*k*í*l*l*i*n*g*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*í*l*l*i*n*g*a*z
 EAFLThVoicing [no-change]: *s*k*í*l*l*i*n*g*a*z
 PWGmcDentalHardening [no-change]: *s*k*í*l*l*i*n*g*a*z
+PWGmcEndinglessAw [no-change]: *s*k*í*l*l*i*n*g*a*z
 PNWGmcILowering [no-change]: *s*k*í*l*l*i*n*g*a*z
 PNWGmcULowering [no-change]: *s*k*í*l*l*i*n*g*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*í*l*l*i*n*g*a*z
@@ -30765,6 +31005,7 @@ PWGmcSyllabicJ [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ḯ*n*a*n*ą
 EAFLThVoicing [no-change]: *s*k*ḯ*n*a*n*ą
 PWGmcDentalHardening [no-change]: *s*k*ḯ*n*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcILowering [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcULowering [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*ḯ*n*a*n*ą
@@ -30893,6 +31134,7 @@ PWGmcSyllabicJ [no-change]: *s*k*ú*l*d*r*u*m*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ú*l*d*r*u*m*z
 EAFLThVoicing [no-change]: *s*k*ú*l*d*r*u*m*z
 PWGmcDentalHardening [no-change]: *s*k*ú*l*d*r*u*m*z
+PWGmcEndinglessAw [no-change]: *s*k*ú*l*d*r*u*m*z
 PNWGmcILowering [no-change]: *s*k*ú*l*d*r*u*m*z
 PNWGmcULowering [no-change]: *s*k*ú*l*d*r*u*m*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*ú*l*d*r*u*m*z
@@ -31021,6 +31263,7 @@ PWGmcSyllabicJ [no-change]: *s*k*áu*b
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*áu*b
 EAFLThVoicing [no-change]: *s*k*áu*b
 PWGmcDentalHardening [no-change]: *s*k*áu*b
+PWGmcEndinglessAw [no-change]: *s*k*áu*b
 PNWGmcILowering [no-change]: *s*k*áu*b
 PNWGmcULowering [no-change]: *s*k*áu*b
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*áu*b
@@ -31149,6 +31392,7 @@ PWGmcSyllabicJ [no-change]: *s*k*ú*f*l*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ú*f*l*ō
 EAFLThVoicing [no-change]: *s*k*ú*f*l*ō
 PWGmcDentalHardening [no-change]: *s*k*ú*f*l*ō
+PWGmcEndinglessAw [no-change]: *s*k*ú*f*l*ō
 PNWGmcILowering [no-change]: *s*k*ú*f*l*ō
 PNWGmcULowering: *s*k*ó*f*l*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*ó*f*l*ō
@@ -31277,6 +31521,7 @@ PWGmcSyllabicJ [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*w*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *s*k*á*w*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*k*á*w*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcULowering [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*á*w*ō*j*a*n*ą
@@ -31405,6 +31650,7 @@ PWGmcSyllabicJ [no-change]: *s*k*ū*r*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*ū*r*ō
 EAFLThVoicing [no-change]: *s*k*ū*r*ō
 PWGmcDentalHardening [no-change]: *s*k*ū*r*ō
+PWGmcEndinglessAw [no-change]: *s*k*ū*r*ō
 PNWGmcILowering [no-change]: *s*k*ū*r*ō
 PNWGmcULowering [no-change]: *s*k*ū*r*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*ū*r*ō
@@ -31533,6 +31779,7 @@ PWGmcSyllabicJ [no-change]: *s*ḯ*d*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *s*ḯ*d*ō*n
 EAFLThVoicing [no-change]: *s*ḯ*d*ō*n
 PWGmcDentalHardening [no-change]: *s*ḯ*d*ō*n
+PWGmcEndinglessAw [no-change]: *s*ḯ*d*ō*n
 PNWGmcILowering [no-change]: *s*ḯ*d*ō*n
 PNWGmcULowering [no-change]: *s*ḯ*d*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ḯ*d*ō*n
@@ -31661,6 +31908,7 @@ PWGmcSyllabicJ [no-change]: *s*í*b*i
 PNWGmcPreconsonantalXLoss [no-change]: *s*í*b*i
 EAFLThVoicing [no-change]: *s*í*b*i
 PWGmcDentalHardening [no-change]: *s*í*b*i
+PWGmcEndinglessAw [no-change]: *s*í*b*i
 PNWGmcILowering [no-change]: *s*í*b*i
 PNWGmcULowering [no-change]: *s*í*b*i
 PNWGmcStressedMonosyllableORaising [no-change]: *s*í*b*i
@@ -31789,6 +32037,7 @@ PWGmcSyllabicJ [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*í*n*g*w*a*n*ą
 EAFLThVoicing [no-change]: *s*í*n*g*w*a*n*ą
 PWGmcDentalHardening [no-change]: *s*í*n*g*w*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcILowering [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcULowering [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*í*n*g*w*a*n*ą
@@ -31917,6 +32166,7 @@ PWGmcSyllabicJ [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*á*n*g*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*á*n*g*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*á*n*g*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*á*n*g*i*j*a*n*ą
@@ -32045,6 +32295,7 @@ PWGmcSyllabicJ [no-change]: *s*w*é*s*t*ē*r
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*é*s*t*ē*r
 EAFLThVoicing [no-change]: *s*w*é*s*t*ē*r
 PWGmcDentalHardening [no-change]: *s*w*é*s*t*ē*r
+PWGmcEndinglessAw [no-change]: *s*w*é*s*t*ē*r
 PNWGmcILowering [no-change]: *s*w*é*s*t*ē*r
 PNWGmcULowering [no-change]: *s*w*é*s*t*ē*r
 PNWGmcStressedMonosyllableORaising [no-change]: *s*w*é*s*t*ē*r
@@ -32173,6 +32424,7 @@ PWGmcSyllabicJ [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*t*t*j*a*n*ą
 EAFLThVoicing [no-change]: *s*é*t*t*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*é*t*t*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcILowering [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcULowering [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*é*t*t*j*a*n*ą
@@ -32301,6 +32553,7 @@ PWGmcSyllabicJ [no-change]: *s*é*x*s
 PNWGmcPreconsonantalXLoss [no-change]: *s*é*x*s
 EAFLThVoicing [no-change]: *s*é*x*s
 PWGmcDentalHardening [no-change]: *s*é*x*s
+PWGmcEndinglessAw [no-change]: *s*é*x*s
 PNWGmcILowering [no-change]: *s*é*x*s
 PNWGmcULowering [no-change]: *s*é*x*s
 PNWGmcStressedMonosyllableORaising [no-change]: *s*é*x*s
@@ -32429,6 +32682,7 @@ PWGmcSyllabicJ [no-change]: *s*l*á*x*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*l*á*x*a*n*ą
 EAFLThVoicing [no-change]: *s*l*á*x*a*n*ą
 PWGmcDentalHardening [no-change]: *s*l*á*x*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*l*á*x*a*n*ą
 PNWGmcILowering [no-change]: *s*l*á*x*a*n*ą
 PNWGmcULowering [no-change]: *s*l*á*x*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*l*á*x*a*n*ą
@@ -32557,6 +32811,7 @@ PWGmcSyllabicJ [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*l*ā*p*a*n*ą
 EAFLThVoicing [no-change]: *s*l*ā*p*a*n*ą
 PWGmcDentalHardening [no-change]: *s*l*ā*p*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcILowering [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcULowering [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*l*ā*p*a*n*ą
@@ -32685,6 +32940,7 @@ PWGmcSyllabicJ [no-change]: *s*l*ḯ*m*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*l*ḯ*m*ą
 EAFLThVoicing [no-change]: *s*l*ḯ*m*ą
 PWGmcDentalHardening [no-change]: *s*l*ḯ*m*ą
+PWGmcEndinglessAw [no-change]: *s*l*ḯ*m*ą
 PNWGmcILowering [no-change]: *s*l*ḯ*m*ą
 PNWGmcULowering [no-change]: *s*l*ḯ*m*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*l*ḯ*m*ą
@@ -32813,6 +33069,7 @@ PWGmcSyllabicJ [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*m*é*r*w*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*m*é*r*w*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*m*é*r*w*i*j*a*n*ą
@@ -32941,6 +33198,7 @@ PWGmcSyllabicJ [no-change]: *s*n*ái*w*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*n*ái*w*a*z
 EAFLThVoicing [no-change]: *s*n*ái*w*a*z
 PWGmcDentalHardening [no-change]: *s*n*ái*w*a*z
+PWGmcEndinglessAw [no-change]: *s*n*ái*w*a*z
 PNWGmcILowering [no-change]: *s*n*ái*w*a*z
 PNWGmcULowering [no-change]: *s*n*ái*w*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*n*ái*w*a*z
@@ -33069,6 +33327,7 @@ PWGmcSyllabicJ [no-change]: *s*ú*r*g*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*ú*r*g*ō
 EAFLThVoicing [no-change]: *s*ú*r*g*ō
 PWGmcDentalHardening [no-change]: *s*ú*r*g*ō
+PWGmcEndinglessAw [no-change]: *s*ú*r*g*ō
 PNWGmcILowering [no-change]: *s*ú*r*g*ō
 PNWGmcULowering: *s*ó*r*g*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ó*r*g*ō
@@ -33197,6 +33456,7 @@ PWGmcSyllabicJ [no-change]: *s*ái*w*a*l*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*ái*w*a*l*ō
 EAFLThVoicing [no-change]: *s*ái*w*a*l*ō
 PWGmcDentalHardening [no-change]: *s*ái*w*a*l*ō
+PWGmcEndinglessAw [no-change]: *s*ái*w*a*l*ō
 PNWGmcILowering [no-change]: *s*ái*w*a*l*ō
 PNWGmcULowering [no-change]: *s*ái*w*a*l*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ái*w*a*l*ō
@@ -33325,6 +33585,7 @@ PWGmcSyllabicJ [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*n*n*a*n*ą
 EAFLThVoicing [no-change]: *s*p*á*n*n*a*n*ą
 PWGmcDentalHardening [no-change]: *s*p*á*n*n*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcILowering [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcULowering [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*á*n*n*a*n*ą
@@ -33453,6 +33714,7 @@ PWGmcSyllabicJ [no-change]: *s*p*á*n*n*ē
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*n*n*ē
 EAFLThVoicing [no-change]: *s*p*á*n*n*ē
 PWGmcDentalHardening [no-change]: *s*p*á*n*n*ē
+PWGmcEndinglessAw [no-change]: *s*p*á*n*n*ē
 PNWGmcILowering [no-change]: *s*p*á*n*n*ē
 PNWGmcULowering [no-change]: *s*p*á*n*n*ē
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*á*n*n*ē
@@ -33581,6 +33843,7 @@ PWGmcSyllabicJ [no-change]: *s*p*á*r*r*ô
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*r*r*ô
 EAFLThVoicing [no-change]: *s*p*á*r*r*ô
 PWGmcDentalHardening [no-change]: *s*p*á*r*r*ô
+PWGmcEndinglessAw [no-change]: *s*p*á*r*r*ô
 PNWGmcILowering [no-change]: *s*p*á*r*r*ô
 PNWGmcULowering [no-change]: *s*p*á*r*r*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*á*r*r*ô
@@ -33709,6 +33972,7 @@ PWGmcSyllabicJ [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*á*r*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *s*p*á*r*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*p*á*r*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcULowering [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*á*r*ō*j*a*n*ą
@@ -33837,6 +34101,7 @@ PWGmcSyllabicJ [no-change]: *s*p*é*r*u
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*é*r*u
 EAFLThVoicing [no-change]: *s*p*é*r*u
 PWGmcDentalHardening [no-change]: *s*p*é*r*u
+PWGmcEndinglessAw [no-change]: *s*p*é*r*u
 PNWGmcILowering [no-change]: *s*p*é*r*u
 PNWGmcULowering [no-change]: *s*p*é*r*u
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*é*r*u
@@ -33965,6 +34230,7 @@ PWGmcSyllabicJ [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*í*n*n*a*n*ą
 EAFLThVoicing [no-change]: *s*p*í*n*n*a*n*ą
 PWGmcDentalHardening [no-change]: *s*p*í*n*n*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcILowering [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcULowering [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*í*n*n*a*n*ą
@@ -34093,6 +34359,7 @@ PWGmcSyllabicJ [no-change]: *s*p*é*n*n*i*l*ō
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*é*n*n*i*l*ō
 EAFLThVoicing [no-change]: *s*p*é*n*n*i*l*ō
 PWGmcDentalHardening [no-change]: *s*p*é*n*n*i*l*ō
+PWGmcEndinglessAw [no-change]: *s*p*é*n*n*i*l*ō
 PNWGmcILowering [no-change]: *s*p*é*n*n*i*l*ō
 PNWGmcULowering [no-change]: *s*p*é*n*n*i*l*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*é*n*n*i*l*ō
@@ -34221,6 +34488,7 @@ PWGmcSyllabicJ [no-change]: *s*p*ā*n*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*ā*n*u*z
 EAFLThVoicing [no-change]: *s*p*ā*n*u*z
 PWGmcDentalHardening [no-change]: *s*p*ā*n*u*z
+PWGmcEndinglessAw [no-change]: *s*p*ā*n*u*z
 PNWGmcILowering [no-change]: *s*p*ā*n*u*z
 PNWGmcULowering [no-change]: *s*p*ā*n*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*ā*n*u*z
@@ -34349,6 +34617,7 @@ PWGmcSyllabicJ [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*p*r*ái*d*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*r*ái*d*i*j*a*n*ą
@@ -34477,6 +34746,7 @@ PWGmcSyllabicJ [no-change]: *s*p*ú*r*ô
 PNWGmcPreconsonantalXLoss [no-change]: *s*p*ú*r*ô
 EAFLThVoicing [no-change]: *s*p*ú*r*ô
 PWGmcDentalHardening [no-change]: *s*p*ú*r*ô
+PWGmcEndinglessAw [no-change]: *s*p*ú*r*ô
 PNWGmcILowering [no-change]: *s*p*ú*r*ô
 PNWGmcULowering: *s*p*ó*r*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *s*p*ó*r*ô
@@ -34605,6 +34875,7 @@ PWGmcSyllabicJ [no-change]: *s*t*á*b*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*á*b*a*z
 EAFLThVoicing [no-change]: *s*t*á*b*a*z
 PWGmcDentalHardening [no-change]: *s*t*á*b*a*z
+PWGmcEndinglessAw [no-change]: *s*t*á*b*a*z
 PNWGmcILowering [no-change]: *s*t*á*b*a*z
 PNWGmcULowering [no-change]: *s*t*á*b*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*á*b*a*z
@@ -34733,6 +35004,7 @@ PWGmcSyllabicJ [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*t*ú*r*t*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*ú*r*t*i*j*a*n*ą
@@ -34861,6 +35133,7 @@ PWGmcSyllabicJ [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*é*r*b*a*n*ą
 EAFLThVoicing [no-change]: *s*t*é*r*b*a*n*ą
 PWGmcDentalHardening [no-change]: *s*t*é*r*b*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcILowering [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcULowering [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*é*r*b*a*n*ą
@@ -34989,6 +35262,7 @@ PWGmcSyllabicJ [no-change]: *s*t*é*l*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*é*l*a*n*ą
 EAFLThVoicing [no-change]: *s*t*é*l*a*n*ą
 PWGmcDentalHardening [no-change]: *s*t*é*l*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*t*é*l*a*n*ą
 PNWGmcILowering [no-change]: *s*t*é*l*a*n*ą
 PNWGmcULowering [no-change]: *s*t*é*l*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*é*l*a*n*ą
@@ -35117,6 +35391,7 @@ PWGmcSyllabicJ [no-change]: *s*t*á*m*n*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*á*m*n*i*z
 EAFLThVoicing [no-change]: *s*t*á*m*n*i*z
 PWGmcDentalHardening [no-change]: *s*t*á*m*n*i*z
+PWGmcEndinglessAw [no-change]: *s*t*á*m*n*i*z
 PNWGmcILowering [no-change]: *s*t*á*m*n*i*z
 PNWGmcULowering [no-change]: *s*t*á*m*n*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*á*m*n*i*z
@@ -35245,6 +35520,7 @@ PWGmcSyllabicJ [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*é*l*l*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*t*é*l*l*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*é*l*l*i*j*a*n*ą
@@ -35373,6 +35649,7 @@ PWGmcSyllabicJ [no-change]: *s*t*ú*k*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ú*k*k*a*z
 EAFLThVoicing [no-change]: *s*t*ú*k*k*a*z
 PWGmcDentalHardening [no-change]: *s*t*ú*k*k*a*z
+PWGmcEndinglessAw [no-change]: *s*t*ú*k*k*a*z
 PNWGmcILowering [no-change]: *s*t*ú*k*k*a*z
 PNWGmcULowering: *s*t*ó*k*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*ó*k*k*a*z
@@ -35501,6 +35778,7 @@ PWGmcSyllabicJ [no-change]: *s*t*ái*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ái*n*a*z
 EAFLThVoicing [no-change]: *s*t*ái*n*a*z
 PWGmcDentalHardening [no-change]: *s*t*ái*n*a*z
+PWGmcEndinglessAw [no-change]: *s*t*ái*n*a*z
 PNWGmcILowering [no-change]: *s*t*ái*n*a*z
 PNWGmcULowering [no-change]: *s*t*ái*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*ái*n*a*z
@@ -35629,6 +35907,7 @@ PWGmcSyllabicJ [no-change]: *s*t*ō*l*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ō*l*a*z
 EAFLThVoicing [no-change]: *s*t*ō*l*a*z
 PWGmcDentalHardening [no-change]: *s*t*ō*l*a*z
+PWGmcEndinglessAw [no-change]: *s*t*ō*l*a*z
 PNWGmcILowering [no-change]: *s*t*ō*l*a*z
 PNWGmcULowering [no-change]: *s*t*ō*l*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*ō*l*a*z
@@ -35757,6 +36036,7 @@ PWGmcSyllabicJ [no-change]: *s*t*ú*r*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ú*r*k*a*z
 EAFLThVoicing [no-change]: *s*t*ú*r*k*a*z
 PWGmcDentalHardening [no-change]: *s*t*ú*r*k*a*z
+PWGmcEndinglessAw [no-change]: *s*t*ú*r*k*a*z
 PNWGmcILowering [no-change]: *s*t*ú*r*k*a*z
 PNWGmcULowering: *s*t*ó*r*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*ó*r*k*a*z
@@ -35885,6 +36165,7 @@ PWGmcSyllabicJ [no-change]: *s*t*ú*r*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ú*r*m*a*z
 EAFLThVoicing [no-change]: *s*t*ú*r*m*a*z
 PWGmcDentalHardening [no-change]: *s*t*ú*r*m*a*z
+PWGmcEndinglessAw [no-change]: *s*t*ú*r*m*a*z
 PNWGmcILowering [no-change]: *s*t*ú*r*m*a*z
 PNWGmcULowering: *s*t*ó*r*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*ó*r*m*a*z
@@ -35984,134 +36265,6 @@ OEWsPalatalGlide [no-change]: *s*t*ó*r*m
 OldEnglishRemoveStars: storm
 OldEnglishSurface [no-change]: storm
 
---- straw ---
-PROTO: *stráwą
-INPUT_CONTEXT: SC098; stress=stressed; finality=final
-EXPECTED: strēaw
-OUTPUTS: strēaw
-
-
-## Section 1: Proto-Germanic consonant inheritance
-
-EnglishProtoInput: *s*t*r*á*w*ą
-PGmcGmSimplification [no-change]: *s*t*r*á*w*ą
-PGmcNasalLossBeforeX [no-change]: *s*t*r*á*w*ą
-RootNounNomZLoss [no-change]: *s*t*r*á*w*ą
-
-## Section 2: Northwest and West Germanic developments
-
-PNWGmcUnstressedAiMonophthongization [no-change]: *s*t*r*á*w*ą
-PNWGmcAToUBeforeM [no-change]: *s*t*r*á*w*ą
-PNWGmcLongELowering [no-change]: *s*t*r*á*w*ą
-PWGmcEarlyIApocope [no-change]: *s*t*r*á*w*ą
-PWGmcFinalOrLowering [no-change]: *s*t*r*á*w*ą
-PWGmcCoronalWAssimilation [no-change]: *s*t*r*á*w*ą
-OEWWSimplification [no-change]: *s*t*r*á*w*ą
-PWGmcIjContraction [no-change]: *s*t*r*á*w*ą
-PWGmcJGemination [no-change]: *s*t*r*á*w*ą
-PWGmcSyllabicJ [no-change]: *s*t*r*á*w*ą
-PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*w*ą
-EAFLThVoicing [no-change]: *s*t*r*á*w*ą
-PWGmcDentalHardening [no-change]: *s*t*r*á*w*ą
-PNWGmcILowering [no-change]: *s*t*r*á*w*ą
-PNWGmcULowering [no-change]: *s*t*r*á*w*ą
-PNWGmcStressedMonosyllableORaising [no-change]: *s*t*r*á*w*ą
-PNWGmcFinalLongORaising [no-change]: *s*t*r*á*w*ą
-EAFFinalZDeletion [no-change]: *s*t*r*á*w*ą
-PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*r*á*w*ą
-MonosyllabicFinalZLoss [no-change]: *s*t*r*á*w*ą
-EAFRhotacism [no-change]: *s*t*r*á*w*ą
-PNWGmcMnDissimilation [no-change]: *s*t*r*á*w*ą
-PNWGmcNStemNLoss [no-change]: *s*t*r*á*w*ą
-EAFNasalSpirantLengthening [no-change]: *s*t*r*á*w*ą
-EAFNasalSpirantLoss [no-change]: *s*t*r*á*w*ą
-EAFHiatusWInsertion [no-change]: *s*t*r*á*w*ą
-EAFLongANasalRounding [no-change]: *s*t*r*á*w*ą
-EAFNasalizedLowRounding [no-change]: *s*t*r*á*w*ą
-EAFLongAFronting [no-change]: *s*t*r*á*w*ą
-
-## Section 3: Early Anglo-Frisian (North Sea Germanic)
-
-EAFAiMonophthongization [no-change]: *s*t*r*á*w*ą
-
-## Section 4: Old English
-
-OEAwwjResolution [no-change]: *s*t*r*á*w*ą
-OEAuBrightening [no-change]: *s*t*r*á*w*ą
-OEEwLongDiphthong [no-change]: *s*t*r*á*w*ą
-OEJWWSimplification [no-change]: *s*t*r*á*w*ą
-OEJGlideIO [no-change]: *s*t*r*á*w*ą
-OEDiphthongLeveling [no-change]: *s*t*r*á*w*ą
-OEAwLongDiphthong: *s*t*r*ḗa*w*ą
-OEPrefixAReduction [no-change]: *s*t*r*ḗa*w*ą
-OEInterStressRaising [no-change]: *s*t*r*ḗa*w*ą
-OECompoundLinkingSyncope [no-change]: *s*t*r*ḗa*w*ą
-OEStripSecondaryStress [no-change]: *s*t*r*ḗa*w*ą
-OEWICombinativeUUmlaut [no-change]: *s*t*r*ḗa*w*ą
-PWGmcFinalBareALoss [no-change]: *s*t*r*ḗa*w*ą
-PWGmcSurvivingBimoricOUnrounding [no-change]: *s*t*r*ḗa*w*ą
-EAFBrighteningUnstressed [no-change]: *s*t*r*ḗa*w*ą
-EAFBrightening [no-change]: *s*t*r*ḗa*w*ą
-EAFBrighteningLongFinal [no-change]: *s*t*r*ḗa*w*ą
-OEBreaking [no-change]: *s*t*r*ḗa*w*ą
-OEVelarFricativePalatalization [no-change]: *s*t*r*ḗa*w*ą
-OEARestoration [no-change]: *s*t*r*ḗa*w*ą
-OEHeavySyllableNasalApocope: *s*t*r*ḗa*w
-OESecondaryNasalization [no-change]: *s*t*r*ḗa*w
-PGmcBAllophony [no-change]: *s*t*r*ḗa*w
-SieversLawSyncope [no-change]: *s*t*r*ḗa*w
-OESkPalatalization [no-change]: *s*t*r*ḗa*w
-OEVelarPalatalization [no-change]: *s*t*r*ḗa*w
-OEPostVelarWLoss [no-change]: *s*t*r*ḗa*w
-OEWLossBeforeI [no-change]: *s*t*r*ḗa*w
-OEWsPalatalDiphthongization [no-change]: *s*t*r*ḗa*w
-OEIUmlaut [no-change]: *s*t*r*ḗa*w
-OELatePalatalDiphthong [no-change]: *s*t*r*ḗa*w
-OEJClusterCoalescence [no-change]: *s*t*r*ḗa*w
-OEBackMutation [no-change]: *s*t*r*ḗa*w
-OEWsPalatalUmlaut [no-change]: *s*t*r*ḗa*w
-OEWeakTailNasalLoss [no-change]: *s*t*r*ḗa*w
-OEWeightMarkers [no-change]: *s*t*r*ḗa*w
-OEHighVowelApocope [no-change]: *s*t*r*ḗa*w
-NWGmcInStemNLoss [no-change]: *s*t*r*ḗa*w
-OEMedialSyncope [no-change]: *s*t*r*ḗa*w
-OELAdjacentSyncope [no-change]: *s*t*r*ḗa*w
-OEDentalAssimilation [no-change]: *s*t*r*ḗa*w
-OEPreconsonantalDegemination [no-change]: *s*t*r*ḗa*w
-OEEarlyOShortening [no-change]: *s*t*r*ḗa*w
-OEUnstressedFrontingEarly [no-change]: *s*t*r*ḗa*w
-OELateOShortening [no-change]: *s*t*r*ḗa*w
-OEMedUnstressedORaising [no-change]: *s*t*r*ḗa*w
-OEFinalUnstressedOLowering [no-change]: *s*t*r*ḗa*w
-OEUnstressedLongVowelShortening [no-change]: *s*t*r*ḗa*w
-OEUnstressedAEMerger [no-change]: *s*t*r*ḗa*w
-OEMedUnstressedILowering1 [no-change]: *s*t*r*ḗa*w
-OEMedUnstressedILowering [no-change]: *s*t*r*ḗa*w
-OEMedUnstressedULowering [no-change]: *s*t*r*ḗa*w
-OEPrefixIReduction [no-change]: *s*t*r*ḗa*w
-OEWeakTailReduction [no-change]: *s*t*r*ḗa*w
-OEJLossAfterHeavy [no-change]: *s*t*r*ḗa*w
-OEFinalGeminateSimplification [no-change]: *s*t*r*ḗa*w
-OEJStrengtheningAfterFrontDiphthong [no-change]: *s*t*r*ḗa*w
-OEIntervocalicJVocalization [no-change]: *s*t*r*ḗa*w
-OEUnstressedEIContraction [no-change]: *s*t*r*ḗa*w
-OEWeightCleanup [no-change]: *s*t*r*ḗa*w
-OEHLoss [no-change]: *s*t*r*ḗa*w
-OEContraction [no-change]: *s*t*r*ḗa*w
-OERMetathesis [no-change]: *s*t*r*ḗa*w
-OEEpentheticVowel [no-change]: *s*t*r*ḗa*w
-OELateUnstressedAgSuffix [no-change]: *s*t*r*ḗa*w
-OEPalatalFricativeMerger [no-change]: *s*t*r*ḗa*w
-OECjCleanup [no-change]: *s*t*r*ḗa*w
-OEXsMerge [no-change]: *s*t*r*ḗa*w
-
-## Section 5: Orthography & surface
-
-OldEnglishOrthography [no-change]: *s*t*r*ḗa*w
-OEWsPalatalGlide [no-change]: *s*t*r*ḗa*w
-OldEnglishRemoveStars: strēaw
-OldEnglishSurface [no-change]: strēaw
-
 --- stream ---
 PROTO: *stráumaz
 INPUT_CONTEXT: SC098; stress=stressed; finality=final
@@ -36141,6 +36294,7 @@ PWGmcSyllabicJ [no-change]: *s*t*r*áu*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*áu*m*a*z
 EAFLThVoicing [no-change]: *s*t*r*áu*m*a*z
 PWGmcDentalHardening [no-change]: *s*t*r*áu*m*a*z
+PWGmcEndinglessAw [no-change]: *s*t*r*áu*m*a*z
 PNWGmcILowering [no-change]: *s*t*r*áu*m*a*z
 PNWGmcULowering [no-change]: *s*t*r*áu*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*r*áu*m*a*z
@@ -36269,6 +36423,7 @@ PWGmcSyllabicJ [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 EAFLThVoicing [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcILowering [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcULowering [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
@@ -36397,6 +36552,7 @@ PWGmcSyllabicJ [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*w*w*j*a*n*ą
 EAFLThVoicing [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*t*r*á*w*w*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PNWGmcILowering [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PNWGmcULowering [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*r*á*w*w*j*a*n*ą
@@ -36525,6 +36681,7 @@ PWGmcSyllabicJ [no-change]: *s*t*r*á*n*g*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*n*g*i*z
 EAFLThVoicing [no-change]: *s*t*r*á*n*g*i*z
 PWGmcDentalHardening [no-change]: *s*t*r*á*n*g*i*z
+PWGmcEndinglessAw [no-change]: *s*t*r*á*n*g*i*z
 PNWGmcILowering [no-change]: *s*t*r*á*n*g*i*z
 PNWGmcULowering [no-change]: *s*t*r*á*n*g*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*r*á*n*g*i*z
@@ -36653,6 +36810,7 @@ PWGmcSyllabicJ [no-change]: *s*t*ō*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*t*ō*d*ą
 EAFLThVoicing [no-change]: *s*t*ō*d*ą
 PWGmcDentalHardening [no-change]: *s*t*ō*d*ą
+PWGmcEndinglessAw [no-change]: *s*t*ō*d*ą
 PNWGmcILowering [no-change]: *s*t*ō*d*ą
 PNWGmcULowering [no-change]: *s*t*ō*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*t*ō*d*ą
@@ -36781,6 +36939,7 @@ PWGmcSyllabicJ [no-change]: *s*ú*m*a*r*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *s*ú*m*a*r*a*z
 EAFLThVoicing [no-change]: *s*ú*m*a*r*a*z
 PWGmcDentalHardening [no-change]: *s*ú*m*a*r*a*z
+PWGmcEndinglessAw [no-change]: *s*ú*m*a*r*a*z
 PNWGmcILowering [no-change]: *s*ú*m*a*r*a*z
 PNWGmcULowering [no-change]: *s*ú*m*a*r*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ú*m*a*r*a*z
@@ -36909,6 +37068,7 @@ PWGmcSyllabicJ [no-change]: *s*ú*n*n*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *s*ú*n*n*ō*n
 EAFLThVoicing [no-change]: *s*ú*n*n*ō*n
 PWGmcDentalHardening [no-change]: *s*ú*n*n*ō*n
+PWGmcEndinglessAw [no-change]: *s*ú*n*n*ō*n
 PNWGmcILowering [no-change]: *s*ú*n*n*ō*n
 PNWGmcULowering [no-change]: *s*ú*n*n*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ú*n*n*ō*n
@@ -37037,6 +37197,7 @@ PWGmcSyllabicJ [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 EAFLThVoicing [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PWGmcDentalHardening [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcILowering [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcULowering [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
@@ -37165,6 +37326,7 @@ PWGmcSyllabicJ [no-change]: *s*ū*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ū*p*a*n*ą
 EAFLThVoicing [no-change]: *s*ū*p*a*n*ą
 PWGmcDentalHardening [no-change]: *s*ū*p*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*ū*p*a*n*ą
 PNWGmcILowering [no-change]: *s*ū*p*a*n*ą
 PNWGmcULowering [no-change]: *s*ū*p*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ū*p*a*n*ą
@@ -37293,6 +37455,7 @@ PWGmcSyllabicJ [no-change]: *s*w*á*l*w*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*á*l*w*ō*n
 EAFLThVoicing [no-change]: *s*w*á*l*w*ō*n
 PWGmcDentalHardening [no-change]: *s*w*á*l*w*ō*n
+PWGmcEndinglessAw [no-change]: *s*w*á*l*w*ō*n
 PNWGmcILowering [no-change]: *s*w*á*l*w*ō*n
 PNWGmcULowering [no-change]: *s*w*á*l*w*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *s*w*á*l*w*ō*n
@@ -37421,6 +37584,7 @@ PWGmcSyllabicJ [no-change]: *s*w*á*n*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*á*n*a*s
 EAFLThVoicing [no-change]: *s*w*á*n*a*s
 PWGmcDentalHardening [no-change]: *s*w*á*n*a*s
+PWGmcEndinglessAw [no-change]: *s*w*á*n*a*s
 PNWGmcILowering [no-change]: *s*w*á*n*a*s
 PNWGmcULowering [no-change]: *s*w*á*n*a*s
 PNWGmcStressedMonosyllableORaising [no-change]: *s*w*á*n*a*s
@@ -37549,6 +37713,7 @@ PWGmcSyllabicJ [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*é*l*l*a*n*ą
 EAFLThVoicing [no-change]: *s*w*é*l*l*a*n*ą
 PWGmcDentalHardening [no-change]: *s*w*é*l*l*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcILowering [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcULowering [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*w*é*l*l*a*n*ą
@@ -37677,6 +37842,7 @@ PWGmcSyllabicJ [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*í*m*m*a*n*ą
 EAFLThVoicing [no-change]: *s*w*í*m*m*a*n*ą
 PWGmcDentalHardening [no-change]: *s*w*í*m*m*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcILowering [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcULowering [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*w*í*m*m*a*n*ą
@@ -37805,6 +37971,7 @@ PWGmcSyllabicJ [no-change]: *s*w*ḯ*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*ḯ*n*ą
 EAFLThVoicing [no-change]: *s*w*ḯ*n*ą
 PWGmcDentalHardening [no-change]: *s*w*ḯ*n*ą
+PWGmcEndinglessAw [no-change]: *s*w*ḯ*n*ą
 PNWGmcILowering [no-change]: *s*w*ḯ*n*ą
 PNWGmcULowering [no-change]: *s*w*ḯ*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*w*ḯ*n*ą
@@ -37933,6 +38100,7 @@ PWGmcSyllabicJ [no-change]: *s*w*é*r*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*w*é*r*d*ą
 EAFLThVoicing [no-change]: *s*w*é*r*d*ą
 PWGmcDentalHardening [no-change]: *s*w*é*r*d*ą
+PWGmcEndinglessAw [no-change]: *s*w*é*r*d*ą
 PNWGmcILowering [no-change]: *s*w*é*r*d*ą
 PNWGmcULowering [no-change]: *s*w*é*r*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*w*é*r*d*ą
@@ -38061,6 +38229,7 @@ PWGmcSyllabicJ [no-change]: *t*áu*m*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *t*áu*m*a*z
 EAFLThVoicing [no-change]: *t*áu*m*a*z
 PWGmcDentalHardening [no-change]: *t*áu*m*a*z
+PWGmcEndinglessAw [no-change]: *t*áu*m*a*z
 PNWGmcILowering [no-change]: *t*áu*m*a*z
 PNWGmcULowering [no-change]: *t*áu*m*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *t*áu*m*a*z
@@ -38189,6 +38358,7 @@ PWGmcSyllabicJ [no-change]: *t*é*x*u*n
 PNWGmcPreconsonantalXLoss [no-change]: *t*é*x*u*n
 EAFLThVoicing [no-change]: *t*é*x*u*n
 PWGmcDentalHardening [no-change]: *t*é*x*u*n
+PWGmcEndinglessAw [no-change]: *t*é*x*u*n
 PNWGmcILowering [no-change]: *t*é*x*u*n
 PNWGmcULowering [no-change]: *t*é*x*u*n
 PNWGmcStressedMonosyllableORaising [no-change]: *t*é*x*u*n
@@ -38317,6 +38487,7 @@ PWGmcSyllabicJ [no-change]: *θ*é*g*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *θ*é*g*n*a*z
 EAFLThVoicing [no-change]: *θ*é*g*n*a*z
 PWGmcDentalHardening [no-change]: *θ*é*g*n*a*z
+PWGmcEndinglessAw [no-change]: *θ*é*g*n*a*z
 PNWGmcILowering [no-change]: *θ*é*g*n*a*z
 PNWGmcULowering [no-change]: *θ*é*g*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*é*g*n*a*z
@@ -38445,6 +38616,7 @@ PWGmcSyllabicJ [no-change]: *θ*á*n*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *θ*á*n*k*a*z
 EAFLThVoicing [no-change]: *θ*á*n*k*a*z
 PWGmcDentalHardening [no-change]: *θ*á*n*k*a*z
+PWGmcEndinglessAw [no-change]: *θ*á*n*k*a*z
 PNWGmcILowering [no-change]: *θ*á*n*k*a*z
 PNWGmcULowering [no-change]: *θ*á*n*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*á*n*k*a*z
@@ -38573,6 +38745,7 @@ PWGmcSyllabicJ [no-change]: *θ*á*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*á*k*ą
 EAFLThVoicing [no-change]: *θ*á*k*ą
 PWGmcDentalHardening [no-change]: *θ*á*k*ą
+PWGmcEndinglessAw [no-change]: *θ*á*k*ą
 PNWGmcILowering [no-change]: *θ*á*k*ą
 PNWGmcULowering [no-change]: *θ*á*k*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*á*k*ą
@@ -38701,6 +38874,7 @@ PWGmcSyllabicJ [no-change]: *θ*éu*b*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *θ*éu*b*a*z
 EAFLThVoicing [no-change]: *θ*éu*b*a*z
 PWGmcDentalHardening [no-change]: *θ*éu*b*a*z
+PWGmcEndinglessAw [no-change]: *θ*éu*b*a*z
 PNWGmcILowering [no-change]: *θ*éu*b*a*z
 PNWGmcULowering [no-change]: *θ*éu*b*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*éu*b*a*z
@@ -38829,6 +39003,7 @@ PWGmcSyllabicJ [no-change]: *θ*í*n*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*í*n*g*ą
 EAFLThVoicing [no-change]: *θ*í*n*g*ą
 PWGmcDentalHardening [no-change]: *θ*í*n*g*ą
+PWGmcEndinglessAw [no-change]: *θ*í*n*g*ą
 PNWGmcILowering [no-change]: *θ*í*n*g*ą
 PNWGmcULowering [no-change]: *θ*í*n*g*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*í*n*g*ą
@@ -38957,6 +39132,7 @@ PWGmcSyllabicJ [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*á*n*k*i*j*a*n*ą
 EAFLThVoicing [no-change]: *θ*á*n*k*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *θ*á*n*k*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcILowering [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcULowering [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*á*n*k*i*j*a*n*ą
@@ -39085,6 +39261,7 @@ PWGmcSyllabicJ [no-change]: *θ*ú*r*s*t*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ú*r*s*t*u*z
 EAFLThVoicing [no-change]: *θ*ú*r*s*t*u*z
 PWGmcDentalHardening [no-change]: *θ*ú*r*s*t*u*z
+PWGmcEndinglessAw [no-change]: *θ*ú*r*s*t*u*z
 PNWGmcILowering [no-change]: *θ*ú*r*s*t*u*z
 PNWGmcULowering [no-change]: *θ*ú*r*s*t*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*ú*r*s*t*u*z
@@ -39213,6 +39390,7 @@ PWGmcSyllabicJ [no-change]: *θ*í*s*t*i*l*a*s
 PNWGmcPreconsonantalXLoss [no-change]: *θ*í*s*t*i*l*a*s
 EAFLThVoicing [no-change]: *θ*í*s*t*i*l*a*s
 PWGmcDentalHardening [no-change]: *θ*í*s*t*i*l*a*s
+PWGmcEndinglessAw [no-change]: *θ*í*s*t*i*l*a*s
 PNWGmcILowering [no-change]: *θ*í*s*t*i*l*a*s
 PNWGmcULowering [no-change]: *θ*í*s*t*i*l*a*s
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*í*s*t*i*l*a*s
@@ -39341,6 +39519,7 @@ PWGmcSyllabicJ [no-change]: *θ*ú*r*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ú*r*n*a*z
 EAFLThVoicing [no-change]: *θ*ú*r*n*a*z
 PWGmcDentalHardening [no-change]: *θ*ú*r*n*a*z
+PWGmcEndinglessAw [no-change]: *θ*ú*r*n*a*z
 PNWGmcILowering [no-change]: *θ*ú*r*n*a*z
 PNWGmcULowering: *θ*ó*r*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*ó*r*n*a*z
@@ -39469,6 +39648,7 @@ PWGmcSyllabicJ [no-change]: *θ*ū*s*è*n*d
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ū*s*è*n*d
 EAFLThVoicing [no-change]: *θ*ū*s*è*n*d
 PWGmcDentalHardening [no-change]: *θ*ū*s*è*n*d
+PWGmcEndinglessAw [no-change]: *θ*ū*s*è*n*d
 PNWGmcILowering [no-change]: *θ*ū*s*è*n*d
 PNWGmcULowering [no-change]: *θ*ū*s*è*n*d
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*ū*s*è*n*d
@@ -39597,6 +39777,7 @@ PWGmcSyllabicJ [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *θ*r*é*s*k*a*n*ą
 EAFLThVoicing [no-change]: *θ*r*é*s*k*a*n*ą
 PWGmcDentalHardening [no-change]: *θ*r*é*s*k*a*n*ą
+PWGmcEndinglessAw [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcILowering [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcULowering [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*r*é*s*k*a*n*ą
@@ -39725,6 +39906,7 @@ PWGmcSyllabicJ [no-change]: *θ*r*é*j*e*z
 PNWGmcPreconsonantalXLoss [no-change]: *θ*r*é*j*e*z
 EAFLThVoicing [no-change]: *θ*r*é*j*e*z
 PWGmcDentalHardening [no-change]: *θ*r*é*j*e*z
+PWGmcEndinglessAw [no-change]: *θ*r*é*j*e*z
 PNWGmcILowering [no-change]: *θ*r*é*j*e*z
 PNWGmcULowering [no-change]: *θ*r*é*j*e*z
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*r*é*j*e*z
@@ -39853,6 +40035,7 @@ PWGmcSyllabicJ [no-change]: *θ*ú*n*r*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ú*n*r*a*z
 EAFLThVoicing [no-change]: *θ*ú*n*r*a*z
 PWGmcDentalHardening [no-change]: *θ*ú*n*r*a*z
+PWGmcEndinglessAw [no-change]: *θ*ú*n*r*a*z
 PNWGmcILowering [no-change]: *θ*ú*n*r*a*z
 PNWGmcULowering [no-change]: *θ*ú*n*r*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*ú*n*r*a*z
@@ -39981,6 +40164,7 @@ PWGmcSyllabicJ [no-change]: *t*í*k*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *t*í*k*k*ô
 EAFLThVoicing [no-change]: *t*í*k*k*ô
 PWGmcDentalHardening [no-change]: *t*í*k*k*ô
+PWGmcEndinglessAw [no-change]: *t*í*k*k*ô
 PNWGmcILowering [no-change]: *t*í*k*k*ô
 PNWGmcULowering [no-change]: *t*í*k*k*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *t*í*k*k*ô
@@ -40109,6 +40293,7 @@ PWGmcSyllabicJ [no-change]: *t*ḯ*d*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *t*ḯ*d*i*z
 EAFLThVoicing [no-change]: *t*ḯ*d*i*z
 PWGmcDentalHardening [no-change]: *t*ḯ*d*i*z
+PWGmcEndinglessAw [no-change]: *t*ḯ*d*i*z
 PNWGmcILowering [no-change]: *t*ḯ*d*i*z
 PNWGmcULowering [no-change]: *t*ḯ*d*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *t*ḯ*d*i*z
@@ -40237,6 +40422,7 @@ PWGmcSyllabicJ [no-change]: *t*í*m*b*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*í*m*b*r*ą
 EAFLThVoicing [no-change]: *t*í*m*b*r*ą
 PWGmcDentalHardening [no-change]: *t*í*m*b*r*ą
+PWGmcEndinglessAw [no-change]: *t*í*m*b*r*ą
 PNWGmcILowering [no-change]: *t*í*m*b*r*ą
 PNWGmcULowering [no-change]: *t*í*m*b*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *t*í*m*b*r*ą
@@ -40365,6 +40551,7 @@ PWGmcSyllabicJ [no-change]: *t*ái*x*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *t*ái*x*ō*n
 EAFLThVoicing [no-change]: *t*ái*x*ō*n
 PWGmcDentalHardening [no-change]: *t*ái*x*ō*n
+PWGmcEndinglessAw [no-change]: *t*ái*x*ō*n
 PNWGmcILowering [no-change]: *t*ái*x*ō*n
 PNWGmcULowering [no-change]: *t*ái*x*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *t*ái*x*ō*n
@@ -40493,6 +40680,7 @@ PWGmcSyllabicJ [no-change]: *t*ái*k*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*ái*k*n*ą
 EAFLThVoicing [no-change]: *t*ái*k*n*ą
 PWGmcDentalHardening [no-change]: *t*ái*k*n*ą
+PWGmcEndinglessAw [no-change]: *t*ái*k*n*ą
 PNWGmcILowering [no-change]: *t*ái*k*n*ą
 PNWGmcULowering [no-change]: *t*ái*k*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *t*ái*k*n*ą
@@ -40621,6 +40809,7 @@ PWGmcSyllabicJ [no-change]: *t*á*n*g*ō
 PNWGmcPreconsonantalXLoss [no-change]: *t*á*n*g*ō
 EAFLThVoicing [no-change]: *t*á*n*g*ō
 PWGmcDentalHardening [no-change]: *t*á*n*g*ō
+PWGmcEndinglessAw [no-change]: *t*á*n*g*ō
 PNWGmcILowering [no-change]: *t*á*n*g*ō
 PNWGmcULowering [no-change]: *t*á*n*g*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *t*á*n*g*ō
@@ -40749,6 +40938,7 @@ PWGmcSyllabicJ [no-change]: *t*ú*n*g*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *t*ú*n*g*ō*n
 EAFLThVoicing [no-change]: *t*ú*n*g*ō*n
 PWGmcDentalHardening [no-change]: *t*ú*n*g*ō*n
+PWGmcEndinglessAw [no-change]: *t*ú*n*g*ō*n
 PNWGmcILowering [no-change]: *t*ú*n*g*ō*n
 PNWGmcULowering [no-change]: *t*ú*n*g*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *t*ú*n*g*ō*n
@@ -40877,6 +41067,7 @@ PWGmcSyllabicJ [no-change]: *t*ū*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*ū*n*ą
 EAFLThVoicing [no-change]: *t*ū*n*ą
 PWGmcDentalHardening [no-change]: *t*ū*n*ą
+PWGmcEndinglessAw [no-change]: *t*ū*n*ą
 PNWGmcILowering [no-change]: *t*ū*n*ą
 PNWGmcULowering [no-change]: *t*ū*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *t*ū*n*ą
@@ -41005,6 +41196,7 @@ PWGmcSyllabicJ [no-change]: *t*r*é*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*r*é*d*a*n*ą
 EAFLThVoicing [no-change]: *t*r*é*d*a*n*ą
 PWGmcDentalHardening [no-change]: *t*r*é*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *t*r*é*d*a*n*ą
 PNWGmcILowering [no-change]: *t*r*é*d*a*n*ą
 PNWGmcULowering [no-change]: *t*r*é*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *t*r*é*d*a*n*ą
@@ -41133,6 +41325,7 @@ PWGmcSyllabicJ [no-change]: *t*r*ú*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *t*r*ú*g*ą
 EAFLThVoicing [no-change]: *t*r*ú*g*ą
 PWGmcDentalHardening [no-change]: *t*r*ú*g*ą
+PWGmcEndinglessAw [no-change]: *t*r*ú*g*ą
 PNWGmcILowering [no-change]: *t*r*ú*g*ą
 PNWGmcULowering: *t*r*ó*g*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *t*r*ó*g*ą
@@ -41261,6 +41454,7 @@ PWGmcSyllabicJ [no-change]: *w*á*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*d*a*n*ą
 EAFLThVoicing [no-change]: *w*á*d*a*n*ą
 PWGmcDentalHardening [no-change]: *w*á*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*á*d*a*n*ą
 PNWGmcILowering [no-change]: *w*á*d*a*n*ą
 PNWGmcULowering [no-change]: *w*á*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*d*a*n*ą
@@ -41389,6 +41583,7 @@ PWGmcSyllabicJ [no-change]: *w*á*g*n*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*g*n*a*z
 EAFLThVoicing [no-change]: *w*á*g*n*a*z
 PWGmcDentalHardening [no-change]: *w*á*g*n*a*z
+PWGmcEndinglessAw [no-change]: *w*á*g*n*a*z
 PNWGmcILowering [no-change]: *w*á*g*n*a*z
 PNWGmcULowering [no-change]: *w*á*g*n*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*g*n*a*z
@@ -41517,6 +41712,7 @@ PWGmcSyllabicJ [no-change]: *w*á*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*k*a*n*ą
 EAFLThVoicing [no-change]: *w*á*k*a*n*ą
 PWGmcDentalHardening [no-change]: *w*á*k*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*á*k*a*n*ą
 PNWGmcILowering [no-change]: *w*á*k*a*n*ą
 PNWGmcULowering [no-change]: *w*á*k*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*k*a*n*ą
@@ -41645,6 +41841,7 @@ PWGmcSyllabicJ [no-change]: *w*á*r*p*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*r*p*ą
 EAFLThVoicing [no-change]: *w*á*r*p*ą
 PWGmcDentalHardening [no-change]: *w*á*r*p*ą
+PWGmcEndinglessAw [no-change]: *w*á*r*p*ą
 PNWGmcILowering [no-change]: *w*á*r*p*ą
 PNWGmcULowering [no-change]: *w*á*r*p*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*r*p*ą
@@ -41773,6 +41970,7 @@ PWGmcSyllabicJ [no-change]: *w*é*r*p*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*r*p*a*n*ą
 EAFLThVoicing [no-change]: *w*é*r*p*a*n*ą
 PWGmcDentalHardening [no-change]: *w*é*r*p*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*é*r*p*a*n*ą
 PNWGmcILowering [no-change]: *w*é*r*p*a*n*ą
 PNWGmcULowering [no-change]: *w*é*r*p*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*r*p*a*n*ą
@@ -41901,6 +42099,7 @@ PWGmcSyllabicJ [no-change]: *w*á*r*t*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*r*t*ō*n
 EAFLThVoicing [no-change]: *w*á*r*t*ō*n
 PWGmcDentalHardening [no-change]: *w*á*r*t*ō*n
+PWGmcEndinglessAw [no-change]: *w*á*r*t*ō*n
 PNWGmcILowering [no-change]: *w*á*r*t*ō*n
 PNWGmcULowering [no-change]: *w*á*r*t*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*r*t*ō*n
@@ -42029,6 +42228,7 @@ PWGmcSyllabicJ [no-change]: *w*á*s*k*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*s*k*a*n*ą
 EAFLThVoicing [no-change]: *w*á*s*k*a*n*ą
 PWGmcDentalHardening [no-change]: *w*á*s*k*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*á*s*k*a*n*ą
 PNWGmcILowering [no-change]: *w*á*s*k*a*n*ą
 PNWGmcULowering [no-change]: *w*á*s*k*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*s*k*a*n*ą
@@ -42157,6 +42357,7 @@ PWGmcSyllabicJ [no-change]: *w*á*b*s*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*b*s*a*z
 EAFLThVoicing [no-change]: *w*á*b*s*a*z
 PWGmcDentalHardening [no-change]: *w*á*b*s*a*z
+PWGmcEndinglessAw [no-change]: *w*á*b*s*a*z
 PNWGmcILowering [no-change]: *w*á*b*s*a*z
 PNWGmcULowering [no-change]: *w*á*b*s*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*b*s*a*z
@@ -42285,6 +42486,7 @@ PWGmcSyllabicJ [no-change]: *w*á*t*a*r
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*t*a*r
 EAFLThVoicing [no-change]: *w*á*t*a*r
 PWGmcDentalHardening [no-change]: *w*á*t*a*r
+PWGmcEndinglessAw [no-change]: *w*á*t*a*r
 PNWGmcILowering [no-change]: *w*á*t*a*r
 PNWGmcULowering [no-change]: *w*á*t*a*r
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*t*a*r
@@ -42413,6 +42615,7 @@ PWGmcSyllabicJ [no-change]: *w*á*x*s*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*x*s*ą
 EAFLThVoicing [no-change]: *w*á*x*s*ą
 PWGmcDentalHardening [no-change]: *w*á*x*s*ą
+PWGmcEndinglessAw [no-change]: *w*á*x*s*ą
 PNWGmcILowering [no-change]: *w*á*x*s*ą
 PNWGmcULowering [no-change]: *w*á*x*s*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*x*s*ą
@@ -42541,6 +42744,7 @@ PWGmcSyllabicJ [no-change]: *w*á*x*s*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*x*s*a*n*ą
 EAFLThVoicing [no-change]: *w*á*x*s*a*n*ą
 PWGmcDentalHardening [no-change]: *w*á*x*s*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*á*x*s*a*n*ą
 PNWGmcILowering [no-change]: *w*á*x*s*a*n*ą
 PNWGmcULowering [no-change]: *w*á*x*s*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*x*s*a*n*ą
@@ -42669,6 +42873,7 @@ PWGmcSyllabicJ [no-change]: *w*é*g*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*g*a*z
 EAFLThVoicing [no-change]: *w*é*g*a*z
 PWGmcDentalHardening [no-change]: *w*é*g*a*z
+PWGmcEndinglessAw [no-change]: *w*é*g*a*z
 PNWGmcILowering [no-change]: *w*é*g*a*z
 PNWGmcULowering [no-change]: *w*é*g*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*g*a*z
@@ -42797,6 +43002,7 @@ PWGmcSyllabicJ [no-change]: *w*ā*p*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ā*p*n*ą
 EAFLThVoicing [no-change]: *w*ā*p*n*ą
 PWGmcDentalHardening [no-change]: *w*ā*p*n*ą
+PWGmcEndinglessAw [no-change]: *w*ā*p*n*ą
 PNWGmcILowering [no-change]: *w*ā*p*n*ą
 PNWGmcULowering [no-change]: *w*ā*p*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ā*p*n*ą
@@ -42925,6 +43131,7 @@ PWGmcSyllabicJ [no-change]: *w*é*s*l*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*s*l*ō*n
 EAFLThVoicing [no-change]: *w*é*s*l*ō*n
 PWGmcDentalHardening [no-change]: *w*é*s*l*ō*n
+PWGmcEndinglessAw [no-change]: *w*é*s*l*ō*n
 PNWGmcILowering [no-change]: *w*é*s*l*ō*n
 PNWGmcULowering [no-change]: *w*é*s*l*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*s*l*ō*n
@@ -43053,6 +43260,7 @@ PWGmcSyllabicJ [no-change]: *w*é*d*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*d*r*ą
 EAFLThVoicing [no-change]: *w*é*d*r*ą
 PWGmcDentalHardening [no-change]: *w*é*d*r*ą
+PWGmcEndinglessAw [no-change]: *w*é*d*r*ą
 PNWGmcILowering [no-change]: *w*é*d*r*ą
 PNWGmcULowering [no-change]: *w*é*d*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*d*r*ą
@@ -43181,6 +43389,7 @@ PWGmcSyllabicJ [no-change]: *w*é*b*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*b*a*n*ą
 EAFLThVoicing [no-change]: *w*é*b*a*n*ą
 PWGmcDentalHardening [no-change]: *w*é*b*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*é*b*a*n*ą
 PNWGmcILowering [no-change]: *w*é*b*a*n*ą
 PNWGmcULowering [no-change]: *w*é*b*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*b*a*n*ą
@@ -43309,6 +43518,7 @@ PWGmcSyllabicJ [no-change]: *w*é*s*t*a*n*ē
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*s*t*a*n*ē
 EAFLThVoicing [no-change]: *w*é*s*t*a*n*ē
 PWGmcDentalHardening [no-change]: *w*é*s*t*a*n*ē
+PWGmcEndinglessAw [no-change]: *w*é*s*t*a*n*ē
 PNWGmcILowering [no-change]: *w*é*s*t*a*n*ē
 PNWGmcULowering [no-change]: *w*é*s*t*a*n*ē
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*s*t*a*n*ē
@@ -43437,6 +43647,7 @@ PWGmcSyllabicJ [no-change]: *w*í*θ*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*θ*r*ą
 EAFLThVoicing [no-change]: *w*í*θ*r*ą
 PWGmcDentalHardening [no-change]: *w*í*θ*r*ą
+PWGmcEndinglessAw [no-change]: *w*í*θ*r*ą
 PNWGmcILowering: *w*é*θ*r*ą
 PNWGmcULowering [no-change]: *w*é*θ*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*θ*r*ą
@@ -43565,6 +43776,7 @@ PWGmcSyllabicJ [no-change]: *x*w*á*l*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*á*l*a*z
 EAFLThVoicing [no-change]: *x*w*á*l*a*z
 PWGmcDentalHardening [no-change]: *x*w*á*l*a*z
+PWGmcEndinglessAw [no-change]: *x*w*á*l*a*z
 PNWGmcILowering [no-change]: *x*w*á*l*a*z
 PNWGmcULowering [no-change]: *x*w*á*l*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*w*á*l*a*z
@@ -43693,6 +43905,7 @@ PWGmcSyllabicJ [no-change]: *x*w*ḯ*l*ō
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*ḯ*l*ō
 EAFLThVoicing [no-change]: *x*w*ḯ*l*ō
 PWGmcDentalHardening [no-change]: *x*w*ḯ*l*ō
+PWGmcEndinglessAw [no-change]: *x*w*ḯ*l*ō
 PNWGmcILowering [no-change]: *x*w*ḯ*l*ō
 PNWGmcULowering [no-change]: *x*w*ḯ*l*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *x*w*ḯ*l*ō
@@ -43821,6 +44034,7 @@ PWGmcSyllabicJ [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*ḯ*n*a*n*ą
 EAFLThVoicing [no-change]: *x*w*ḯ*n*a*n*ą
 PWGmcDentalHardening [no-change]: *x*w*ḯ*n*a*n*ą
+PWGmcEndinglessAw [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcILowering [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcULowering [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*w*ḯ*n*a*n*ą
@@ -43949,6 +44163,7 @@ PWGmcSyllabicJ [no-change]: *x*ō*r*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *x*ō*r*ō*n
 EAFLThVoicing [no-change]: *x*ō*r*ō*n
 PWGmcDentalHardening [no-change]: *x*ō*r*ō*n
+PWGmcEndinglessAw [no-change]: *x*ō*r*ō*n
 PNWGmcILowering [no-change]: *x*ō*r*ō*n
 PNWGmcULowering [no-change]: *x*ō*r*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *x*ō*r*ō*n
@@ -44077,6 +44292,7 @@ PWGmcSyllabicJ [no-change]: *w*í*d*u*w*ō*n
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*d*u*w*ō*n
 EAFLThVoicing [no-change]: *w*í*d*u*w*ō*n
 PWGmcDentalHardening [no-change]: *w*í*d*u*w*ō*n
+PWGmcEndinglessAw [no-change]: *w*í*d*u*w*ō*n
 PNWGmcILowering [no-change]: *w*í*d*u*w*ō*n
 PNWGmcULowering [no-change]: *w*í*d*u*w*ō*n
 PNWGmcStressedMonosyllableORaising [no-change]: *w*í*d*u*w*ō*n
@@ -44205,6 +44421,7 @@ PWGmcSyllabicJ [no-change]: *w*á*l*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*l*d*a*n*ą
 EAFLThVoicing [no-change]: *w*á*l*d*a*n*ą
 PWGmcDentalHardening [no-change]: *w*á*l*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*á*l*d*a*n*ą
 PNWGmcILowering [no-change]: *w*á*l*d*a*n*ą
 PNWGmcULowering [no-change]: *w*á*l*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*l*d*a*n*ą
@@ -44333,6 +44550,7 @@ PWGmcSyllabicJ [no-change]: *w*ḯ*b*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ḯ*b*ą
 EAFLThVoicing [no-change]: *w*ḯ*b*ą
 PWGmcDentalHardening [no-change]: *w*ḯ*b*ą
+PWGmcEndinglessAw [no-change]: *w*ḯ*b*ą
 PNWGmcILowering [no-change]: *w*ḯ*b*ą
 PNWGmcULowering [no-change]: *w*ḯ*b*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ḯ*b*ą
@@ -44461,6 +44679,7 @@ PWGmcSyllabicJ [no-change]: *w*é*x*t*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*x*t*i*z
 EAFLThVoicing [no-change]: *w*é*x*t*i*z
 PWGmcDentalHardening [no-change]: *w*é*x*t*i*z
+PWGmcEndinglessAw [no-change]: *w*é*x*t*i*z
 PNWGmcILowering [no-change]: *w*é*x*t*i*z
 PNWGmcULowering [no-change]: *w*é*x*t*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*x*t*i*z
@@ -44589,6 +44808,7 @@ PWGmcSyllabicJ [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*l*l*j*a*n*ą
 EAFLThVoicing [no-change]: *w*é*l*l*j*a*n*ą
 PWGmcDentalHardening [no-change]: *w*é*l*l*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcILowering [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcULowering [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*l*l*j*a*n*ą
@@ -44717,6 +44937,7 @@ PWGmcSyllabicJ [no-change]: *w*é*l*l*j*ô
 PNWGmcPreconsonantalXLoss [no-change]: *w*é*l*l*j*ô
 EAFLThVoicing [no-change]: *w*é*l*l*j*ô
 PWGmcDentalHardening [no-change]: *w*é*l*l*j*ô
+PWGmcEndinglessAw [no-change]: *w*é*l*l*j*ô
 PNWGmcILowering [no-change]: *w*é*l*l*j*ô
 PNWGmcULowering [no-change]: *w*é*l*l*j*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*l*l*j*ô
@@ -44845,6 +45066,7 @@ PWGmcSyllabicJ [no-change]: *w*í*n*d*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*n*d*a*n*ą
 EAFLThVoicing [no-change]: *w*í*n*d*a*n*ą
 PWGmcDentalHardening [no-change]: *w*í*n*d*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*í*n*d*a*n*ą
 PNWGmcILowering [no-change]: *w*í*n*d*a*n*ą
 PNWGmcULowering [no-change]: *w*í*n*d*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*í*n*d*a*n*ą
@@ -44973,6 +45195,7 @@ PWGmcSyllabicJ [no-change]: *w*í*n*t*r*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*n*t*r*u*z
 EAFLThVoicing [no-change]: *w*í*n*t*r*u*z
 PWGmcDentalHardening [no-change]: *w*í*n*t*r*u*z
+PWGmcEndinglessAw [no-change]: *w*í*n*t*r*u*z
 PNWGmcILowering [no-change]: *w*í*n*t*r*u*z
 PNWGmcULowering [no-change]: *w*í*n*t*r*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*í*n*t*r*u*z
@@ -45101,6 +45324,7 @@ PWGmcSyllabicJ [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ḯ*θ*a*g*ą
 EAFLThVoicing [no-change]: *w*ḯ*θ*a*g*ą
 PWGmcDentalHardening [no-change]: *w*ḯ*θ*a*g*ą
+PWGmcEndinglessAw [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcILowering [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcULowering [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ḯ*θ*a*g*ą
@@ -45229,6 +45453,7 @@ PWGmcSyllabicJ [no-change]: *w*á*l*θ*u*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*á*l*θ*u*z
 EAFLThVoicing: *w*á*l*d*u*z
 PWGmcDentalHardening [no-change]: *w*á*l*d*u*z
+PWGmcEndinglessAw [no-change]: *w*á*l*d*u*z
 PNWGmcILowering [no-change]: *w*á*l*d*u*z
 PNWGmcULowering [no-change]: *w*á*l*d*u*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*á*l*d*u*z
@@ -45357,6 +45582,7 @@ PWGmcSyllabicJ [no-change]: *w*ú*n*d*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*n*d*r*ą
 EAFLThVoicing [no-change]: *w*ú*n*d*r*ą
 PWGmcDentalHardening [no-change]: *w*ú*n*d*r*ą
+PWGmcEndinglessAw [no-change]: *w*ú*n*d*r*ą
 PNWGmcILowering [no-change]: *w*ú*n*d*r*ą
 PNWGmcULowering [no-change]: *w*ú*n*d*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ú*n*d*r*ą
@@ -45485,6 +45711,7 @@ PWGmcSyllabicJ [no-change]: *w*ú*r*d*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*r*d*ą
 EAFLThVoicing [no-change]: *w*ú*r*d*ą
 PWGmcDentalHardening [no-change]: *w*ú*r*d*ą
+PWGmcEndinglessAw [no-change]: *w*ú*r*d*ą
 PNWGmcILowering [no-change]: *w*ú*r*d*ą
 PNWGmcULowering: *w*ó*r*d*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ó*r*d*ą
@@ -45613,6 +45840,7 @@ PWGmcSyllabicJ [no-change]: *w*í*r*à*l*d*u
 PNWGmcPreconsonantalXLoss [no-change]: *w*í*r*à*l*d*u
 EAFLThVoicing [no-change]: *w*í*r*à*l*d*u
 PWGmcDentalHardening [no-change]: *w*í*r*à*l*d*u
+PWGmcEndinglessAw [no-change]: *w*í*r*à*l*d*u
 PNWGmcILowering: *w*é*r*à*l*d*u
 PNWGmcULowering [no-change]: *w*é*r*à*l*d*u
 PNWGmcStressedMonosyllableORaising [no-change]: *w*é*r*à*l*d*u
@@ -45741,6 +45969,7 @@ PWGmcSyllabicJ [no-change]: *w*ú*r*m*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*r*m*i*z
 EAFLThVoicing [no-change]: *w*ú*r*m*i*z
 PWGmcDentalHardening [no-change]: *w*ú*r*m*i*z
+PWGmcEndinglessAw [no-change]: *w*ú*r*m*i*z
 PNWGmcILowering [no-change]: *w*ú*r*m*i*z
 PNWGmcULowering [no-change]: *w*ú*r*m*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ú*r*m*i*z
@@ -45869,6 +46098,7 @@ PWGmcSyllabicJ [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *w*r*í*n*g*a*n*ą
 EAFLThVoicing [no-change]: *w*r*í*n*g*a*n*ą
 PWGmcDentalHardening [no-change]: *w*r*í*n*g*a*n*ą
+PWGmcEndinglessAw [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcILowering [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcULowering [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *w*r*í*n*g*a*n*ą
@@ -45997,6 +46227,7 @@ PWGmcSyllabicJ [no-change]: *g*á*r*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *g*á*r*n*ą
 EAFLThVoicing [no-change]: *g*á*r*n*ą
 PWGmcDentalHardening [no-change]: *g*á*r*n*ą
+PWGmcEndinglessAw [no-change]: *g*á*r*n*ą
 PNWGmcILowering [no-change]: *g*á*r*n*ą
 PNWGmcULowering [no-change]: *g*á*r*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *g*á*r*n*ą
@@ -46125,6 +46356,7 @@ PWGmcSyllabicJ [no-change]: *j*ā*r*ą
 PNWGmcPreconsonantalXLoss [no-change]: *j*ā*r*ą
 EAFLThVoicing [no-change]: *j*ā*r*ą
 PWGmcDentalHardening [no-change]: *j*ā*r*ą
+PWGmcEndinglessAw [no-change]: *j*ā*r*ą
 PNWGmcILowering [no-change]: *j*ā*r*ą
 PNWGmcULowering [no-change]: *j*ā*r*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *j*ā*r*ą
@@ -46253,6 +46485,7 @@ PWGmcSyllabicJ [no-change]: *j*ú*k*ą
 PNWGmcPreconsonantalXLoss [no-change]: *j*ú*k*ą
 EAFLThVoicing [no-change]: *j*ú*k*ą
 PWGmcDentalHardening [no-change]: *j*ú*k*ą
+PWGmcEndinglessAw [no-change]: *j*ú*k*ą
 PNWGmcILowering [no-change]: *j*ú*k*ą
 PNWGmcULowering: *j*ó*k*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *j*ó*k*ą
@@ -46381,6 +46614,7 @@ PWGmcSyllabicJ [no-change]: *j*ú*g*u*n*θ
 PNWGmcPreconsonantalXLoss [no-change]: *j*ú*g*u*n*θ
 EAFLThVoicing [no-change]: *j*ú*g*u*n*θ
 PWGmcDentalHardening [no-change]: *j*ú*g*u*n*θ
+PWGmcEndinglessAw [no-change]: *j*ú*g*u*n*θ
 PNWGmcILowering [no-change]: *j*ú*g*u*n*θ
 PNWGmcULowering [no-change]: *j*ú*g*u*n*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *j*ú*g*u*n*θ
@@ -46509,6 +46743,7 @@ PWGmcSyllabicJ [no-change]: *m*á*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*k*ô
 EAFLThVoicing [no-change]: *m*á*k*ô
 PWGmcDentalHardening [no-change]: *m*á*k*ô
+PWGmcEndinglessAw [no-change]: *m*á*k*ô
 PNWGmcILowering [no-change]: *m*á*k*ô
 PNWGmcULowering [no-change]: *m*á*k*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*k*ô
@@ -46637,6 +46872,7 @@ PWGmcSyllabicJ [no-change]: *m*á*k*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *m*á*k*ō*θ
 EAFLThVoicing [no-change]: *m*á*k*ō*θ
 PWGmcDentalHardening [no-change]: *m*á*k*ō*θ
+PWGmcEndinglessAw [no-change]: *m*á*k*ō*θ
 PNWGmcILowering [no-change]: *m*á*k*ō*θ
 PNWGmcULowering [no-change]: *m*á*k*ō*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *m*á*k*ō*θ
@@ -46765,6 +47001,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*r*ô
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*r*ô
 EAFLThVoicing [no-change]: *b*ú*r*ô
 PWGmcDentalHardening [no-change]: *b*ú*r*ô
+PWGmcEndinglessAw [no-change]: *b*ú*r*ô
 PNWGmcILowering [no-change]: *b*ú*r*ô
 PNWGmcULowering: *b*ó*r*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ó*r*ô
@@ -46893,6 +47130,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*r*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*r*ō*θ
 EAFLThVoicing [no-change]: *b*ú*r*ō*θ
 PWGmcDentalHardening [no-change]: *b*ú*r*ō*θ
+PWGmcEndinglessAw [no-change]: *b*ú*r*ō*θ
 PNWGmcILowering [no-change]: *b*ú*r*ō*θ
 PNWGmcULowering: *b*ó*r*ō*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ó*r*ō*θ
@@ -47021,6 +47259,7 @@ PWGmcSyllabicJ [no-change]: *l*í*z*n*ô
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*z*n*ô
 EAFLThVoicing [no-change]: *l*í*z*n*ô
 PWGmcDentalHardening [no-change]: *l*í*z*n*ô
+PWGmcEndinglessAw [no-change]: *l*í*z*n*ô
 PNWGmcILowering [no-change]: *l*í*z*n*ô
 PNWGmcULowering [no-change]: *l*í*z*n*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*z*n*ô
@@ -47149,6 +47388,7 @@ PWGmcSyllabicJ [no-change]: *l*í*z*n*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*z*n*ō*θ
 EAFLThVoicing [no-change]: *l*í*z*n*ō*θ
 PWGmcDentalHardening [no-change]: *l*í*z*n*ō*θ
+PWGmcEndinglessAw [no-change]: *l*í*z*n*ō*θ
 PNWGmcILowering [no-change]: *l*í*z*n*ō*θ
 PNWGmcULowering [no-change]: *l*í*z*n*ō*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*z*n*ō*θ
@@ -47277,6 +47517,7 @@ PWGmcSyllabicJ [no-change]: *l*í*k*k*ô
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*k*k*ô
 EAFLThVoicing [no-change]: *l*í*k*k*ô
 PWGmcDentalHardening [no-change]: *l*í*k*k*ô
+PWGmcEndinglessAw [no-change]: *l*í*k*k*ô
 PNWGmcILowering [no-change]: *l*í*k*k*ô
 PNWGmcULowering [no-change]: *l*í*k*k*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*k*k*ô
@@ -47405,6 +47646,7 @@ PWGmcSyllabicJ [no-change]: *l*í*k*k*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *l*í*k*k*ō*θ
 EAFLThVoicing [no-change]: *l*í*k*k*ō*θ
 PWGmcDentalHardening [no-change]: *l*í*k*k*ō*θ
+PWGmcEndinglessAw [no-change]: *l*í*k*k*ō*θ
 PNWGmcILowering [no-change]: *l*í*k*k*ō*θ
 PNWGmcULowering [no-change]: *l*í*k*k*ō*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *l*í*k*k*ō*θ
@@ -47533,6 +47775,7 @@ PWGmcSyllabicJ [no-change]: *s*k*á*w*ô
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*w*ô
 EAFLThVoicing [no-change]: *s*k*á*w*ô
 PWGmcDentalHardening [no-change]: *s*k*á*w*ô
+PWGmcEndinglessAw [no-change]: *s*k*á*w*ô
 PNWGmcILowering [no-change]: *s*k*á*w*ô
 PNWGmcULowering [no-change]: *s*k*á*w*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*á*w*ô
@@ -47661,6 +47904,7 @@ PWGmcSyllabicJ [no-change]: *s*k*á*w*ō*θ
 PNWGmcPreconsonantalXLoss [no-change]: *s*k*á*w*ō*θ
 EAFLThVoicing [no-change]: *s*k*á*w*ō*θ
 PWGmcDentalHardening [no-change]: *s*k*á*w*ō*θ
+PWGmcEndinglessAw [no-change]: *s*k*á*w*ō*θ
 PNWGmcILowering [no-change]: *s*k*á*w*ō*θ
 PNWGmcULowering [no-change]: *s*k*á*w*ō*θ
 PNWGmcStressedMonosyllableORaising [no-change]: *s*k*á*w*ō*θ
@@ -47789,6 +48033,7 @@ PWGmcSyllabicJ [no-change]: *x*w*á*z
 PNWGmcPreconsonantalXLoss [no-change]: *x*w*á*z
 EAFLThVoicing [no-change]: *x*w*á*z
 PWGmcDentalHardening [no-change]: *x*w*á*z
+PWGmcEndinglessAw [no-change]: *x*w*á*z
 PNWGmcILowering [no-change]: *x*w*á*z
 PNWGmcULowering [no-change]: *x*w*á*z
 PNWGmcStressedMonosyllableORaising [no-change]: *x*w*á*z
@@ -47917,6 +48162,7 @@ PWGmcSyllabicJ [no-change]: *íu*w*i*z
 PNWGmcPreconsonantalXLoss [no-change]: *íu*w*i*z
 EAFLThVoicing [no-change]: *íu*w*i*z
 PWGmcDentalHardening [no-change]: *íu*w*i*z
+PWGmcEndinglessAw [no-change]: *íu*w*i*z
 PNWGmcILowering [no-change]: *íu*w*i*z
 PNWGmcULowering [no-change]: *íu*w*i*z
 PNWGmcStressedMonosyllableORaising [no-change]: *íu*w*i*z
@@ -48045,6 +48291,7 @@ PWGmcSyllabicJ [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*n*d*ō*d*ē
 EAFLThVoicing [no-change]: *w*ú*n*d*ō*d*ē
 PWGmcDentalHardening [no-change]: *w*ú*n*d*ō*d*ē
+PWGmcEndinglessAw [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcILowering [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcULowering [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ú*n*d*ō*d*ē
@@ -48173,6 +48420,7 @@ PWGmcSyllabicJ [no-change]: *s*ā*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *s*ā*a*n*ą
 EAFLThVoicing [no-change]: *s*ā*a*n*ą
 PWGmcDentalHardening [no-change]: *s*ā*a*n*ą
+PWGmcEndinglessAw [no-change]: *s*ā*a*n*ą
 PNWGmcILowering [no-change]: *s*ā*a*n*ą
 PNWGmcULowering [no-change]: *s*ā*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *s*ā*a*n*ą
@@ -48301,6 +48549,7 @@ PWGmcSyllabicJ [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcPreconsonantalXLoss [no-change]: *l*ā*w*i*j*a*n*ą
 EAFLThVoicing [no-change]: *l*ā*w*i*j*a*n*ą
 PWGmcDentalHardening [no-change]: *l*ā*w*i*j*a*n*ą
+PWGmcEndinglessAw [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcILowering [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcULowering [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *l*ā*w*i*j*a*n*ą
@@ -48429,6 +48678,7 @@ PWGmcSyllabicJ [no-change]: *θ*ã*x*t*ē
 PNWGmcPreconsonantalXLoss [no-change]: *θ*ã*x*t*ē
 EAFLThVoicing [no-change]: *θ*ã*x*t*ē
 PWGmcDentalHardening [no-change]: *θ*ã*x*t*ē
+PWGmcEndinglessAw [no-change]: *θ*ã*x*t*ē
 PNWGmcILowering [no-change]: *θ*ã*x*t*ē
 PNWGmcULowering [no-change]: *θ*ã*x*t*ē
 PNWGmcStressedMonosyllableORaising [no-change]: *θ*ã*x*t*ē
@@ -48557,6 +48807,7 @@ PWGmcSyllabicJ [no-change]: *x*í*w*w*j*ą
 PNWGmcPreconsonantalXLoss [no-change]: *x*í*w*w*j*ą
 EAFLThVoicing [no-change]: *x*í*w*w*j*ą
 PWGmcDentalHardening [no-change]: *x*í*w*w*j*ą
+PWGmcEndinglessAw [no-change]: *x*í*w*w*j*ą
 PNWGmcILowering [no-change]: *x*í*w*w*j*ą
 PNWGmcULowering [no-change]: *x*í*w*w*j*ą
 PNWGmcStressedMonosyllableORaising [no-change]: *x*í*w*w*j*ą
@@ -48657,6 +48908,138 @@ OldEnglishRemoveStars: hīew
 OldEnglishSurface [no-change]: hīew
 
 
+=== BUCKET: final_vowel_extra (1) ===
+
+--- straw ---
+PROTO: *stráwą
+INPUT_CONTEXT: SC098; stress=stressed; finality=final
+EXPECTED: strēaw
+OUTPUTS: strēa
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *s*t*r*á*w*ą
+PGmcGmSimplification [no-change]: *s*t*r*á*w*ą
+PGmcNasalLossBeforeX [no-change]: *s*t*r*á*w*ą
+RootNounNomZLoss [no-change]: *s*t*r*á*w*ą
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *s*t*r*á*w*ą
+PNWGmcAToUBeforeM [no-change]: *s*t*r*á*w*ą
+PNWGmcLongELowering [no-change]: *s*t*r*á*w*ą
+PWGmcEarlyIApocope [no-change]: *s*t*r*á*w*ą
+PWGmcFinalOrLowering [no-change]: *s*t*r*á*w*ą
+PWGmcCoronalWAssimilation [no-change]: *s*t*r*á*w*ą
+OEWWSimplification [no-change]: *s*t*r*á*w*ą
+PWGmcIjContraction [no-change]: *s*t*r*á*w*ą
+PWGmcJGemination [no-change]: *s*t*r*á*w*ą
+PWGmcSyllabicJ [no-change]: *s*t*r*á*w*ą
+PNWGmcPreconsonantalXLoss [no-change]: *s*t*r*á*w*ą
+EAFLThVoicing [no-change]: *s*t*r*á*w*ą
+PWGmcDentalHardening [no-change]: *s*t*r*á*w*ą
+PWGmcEndinglessAw: *s*t*r*áu
+PNWGmcILowering [no-change]: *s*t*r*áu
+PNWGmcULowering [no-change]: *s*t*r*áu
+PNWGmcStressedMonosyllableORaising [no-change]: *s*t*r*áu
+PNWGmcFinalLongORaising [no-change]: *s*t*r*áu
+EAFFinalZDeletion [no-change]: *s*t*r*áu
+PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*r*áu
+MonosyllabicFinalZLoss [no-change]: *s*t*r*áu
+EAFRhotacism [no-change]: *s*t*r*áu
+PNWGmcMnDissimilation [no-change]: *s*t*r*áu
+PNWGmcNStemNLoss [no-change]: *s*t*r*áu
+EAFNasalSpirantLengthening [no-change]: *s*t*r*áu
+EAFNasalSpirantLoss [no-change]: *s*t*r*áu
+EAFHiatusWInsertion [no-change]: *s*t*r*áu
+EAFLongANasalRounding [no-change]: *s*t*r*áu
+EAFNasalizedLowRounding [no-change]: *s*t*r*áu
+EAFLongAFronting [no-change]: *s*t*r*áu
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *s*t*r*áu
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *s*t*r*áu
+OEAuBrightening: *s*t*r*áeu
+OEEwLongDiphthong [no-change]: *s*t*r*áeu
+OEJWWSimplification [no-change]: *s*t*r*áeu
+OEJGlideIO [no-change]: *s*t*r*áeu
+OEDiphthongLeveling: *s*t*r*ēa
+OEAwLongDiphthong [no-change]: *s*t*r*ēa
+OEPrefixAReduction [no-change]: *s*t*r*ēa
+OEInterStressRaising [no-change]: *s*t*r*ēa
+OECompoundLinkingSyncope [no-change]: *s*t*r*ēa
+OEStripSecondaryStress [no-change]: *s*t*r*ēa
+OEWICombinativeUUmlaut [no-change]: *s*t*r*ēa
+PWGmcFinalBareALoss [no-change]: *s*t*r*ēa
+PWGmcSurvivingBimoricOUnrounding [no-change]: *s*t*r*ēa
+EAFBrighteningUnstressed [no-change]: *s*t*r*ēa
+EAFBrightening [no-change]: *s*t*r*ēa
+EAFBrighteningLongFinal [no-change]: *s*t*r*ēa
+OEBreaking [no-change]: *s*t*r*ēa
+OEVelarFricativePalatalization [no-change]: *s*t*r*ēa
+OEARestoration [no-change]: *s*t*r*ēa
+OEHeavySyllableNasalApocope [no-change]: *s*t*r*ēa
+OESecondaryNasalization [no-change]: *s*t*r*ēa
+PGmcBAllophony [no-change]: *s*t*r*ēa
+SieversLawSyncope [no-change]: *s*t*r*ēa
+OESkPalatalization [no-change]: *s*t*r*ēa
+OEVelarPalatalization [no-change]: *s*t*r*ēa
+OEPostVelarWLoss [no-change]: *s*t*r*ēa
+OEWLossBeforeI [no-change]: *s*t*r*ēa
+OEWsPalatalDiphthongization [no-change]: *s*t*r*ēa
+OEIUmlaut [no-change]: *s*t*r*ēa
+OELatePalatalDiphthong [no-change]: *s*t*r*ēa
+OEJClusterCoalescence [no-change]: *s*t*r*ēa
+OEBackMutation [no-change]: *s*t*r*ēa
+OEWsPalatalUmlaut [no-change]: *s*t*r*ēa
+OEWeakTailNasalLoss [no-change]: *s*t*r*ēa
+OEWeightMarkers [no-change]: *s*t*r*ēa
+OEHighVowelApocope [no-change]: *s*t*r*ēa
+NWGmcInStemNLoss [no-change]: *s*t*r*ēa
+OEMedialSyncope [no-change]: *s*t*r*ēa
+OELAdjacentSyncope [no-change]: *s*t*r*ēa
+OEDentalAssimilation [no-change]: *s*t*r*ēa
+OEPreconsonantalDegemination [no-change]: *s*t*r*ēa
+OEEarlyOShortening [no-change]: *s*t*r*ēa
+OEUnstressedFrontingEarly [no-change]: *s*t*r*ēa
+OELateOShortening [no-change]: *s*t*r*ēa
+OEMedUnstressedORaising [no-change]: *s*t*r*ēa
+OEFinalUnstressedOLowering [no-change]: *s*t*r*ēa
+OEUnstressedLongVowelShortening [no-change]: *s*t*r*ēa
+OEUnstressedAEMerger [no-change]: *s*t*r*ēa
+OEMedUnstressedILowering1 [no-change]: *s*t*r*ēa
+OEMedUnstressedILowering [no-change]: *s*t*r*ēa
+OEMedUnstressedULowering [no-change]: *s*t*r*ēa
+OEPrefixIReduction [no-change]: *s*t*r*ēa
+OEWeakTailReduction [no-change]: *s*t*r*ēa
+OEJLossAfterHeavy [no-change]: *s*t*r*ēa
+OEFinalGeminateSimplification [no-change]: *s*t*r*ēa
+OEJStrengtheningAfterFrontDiphthong [no-change]: *s*t*r*ēa
+OEIntervocalicJVocalization [no-change]: *s*t*r*ēa
+OEUnstressedEIContraction [no-change]: *s*t*r*ēa
+OEWeightCleanup [no-change]: *s*t*r*ēa
+OEHLoss [no-change]: *s*t*r*ēa
+OEContraction [no-change]: *s*t*r*ēa
+OERMetathesis [no-change]: *s*t*r*ēa
+OEEpentheticVowel [no-change]: *s*t*r*ēa
+OELateUnstressedAgSuffix [no-change]: *s*t*r*ēa
+OEPalatalFricativeMerger [no-change]: *s*t*r*ēa
+OECjCleanup [no-change]: *s*t*r*ēa
+OEXsMerge [no-change]: *s*t*r*ēa
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography [no-change]: *s*t*r*ēa
+OEWsPalatalGlide [no-change]: *s*t*r*ēa
+OldEnglishRemoveStars: strēa
+OldEnglishSurface [no-change]: strēa
+
+
 === BUCKET: front_expected_back_out (1) ===
 
 --- tap ---
@@ -48688,6 +49071,7 @@ PWGmcSyllabicJ [no-change]: *t*á*p*p*ô
 PNWGmcPreconsonantalXLoss [no-change]: *t*á*p*p*ô
 EAFLThVoicing [no-change]: *t*á*p*p*ô
 PWGmcDentalHardening [no-change]: *t*á*p*p*ô
+PWGmcEndinglessAw [no-change]: *t*á*p*p*ô
 PNWGmcILowering [no-change]: *t*á*p*p*ô
 PNWGmcULowering [no-change]: *t*á*p*p*ô
 PNWGmcStressedMonosyllableORaising [no-change]: *t*á*p*p*ô
@@ -48819,6 +49203,7 @@ PWGmcSyllabicJ [no-change]: *f*ū*r*i
 PNWGmcPreconsonantalXLoss [no-change]: *f*ū*r*i
 EAFLThVoicing [no-change]: *f*ū*r*i
 PWGmcDentalHardening [no-change]: *f*ū*r*i
+PWGmcEndinglessAw [no-change]: *f*ū*r*i
 PNWGmcILowering [no-change]: *f*ū*r*i
 PNWGmcULowering [no-change]: *f*ū*r*i
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ū*r*i
@@ -48950,6 +49335,7 @@ PWGmcSyllabicJ [no-change]: *b*ú*k*k*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *b*ú*k*k*a*z
 EAFLThVoicing [no-change]: *b*ú*k*k*a*z
 PWGmcDentalHardening [no-change]: *b*ú*k*k*a*z
+PWGmcEndinglessAw [no-change]: *b*ú*k*k*a*z
 PNWGmcILowering [no-change]: *b*ú*k*k*a*z
 PNWGmcULowering: *b*ó*k*k*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *b*ó*k*k*a*z
@@ -49078,6 +49464,7 @@ PWGmcSyllabicJ [no-change]: *f*ú*g*l*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *f*ú*g*l*a*z
 EAFLThVoicing [no-change]: *f*ú*g*l*a*z
 PWGmcDentalHardening [no-change]: *f*ú*g*l*a*z
+PWGmcEndinglessAw [no-change]: *f*ú*g*l*a*z
 PNWGmcILowering [no-change]: *f*ú*g*l*a*z
 PNWGmcULowering: *f*ó*g*l*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *f*ó*g*l*a*z
@@ -49206,6 +49593,7 @@ PWGmcSyllabicJ [no-change]: *r*ú*s*t*ō
 PNWGmcPreconsonantalXLoss [no-change]: *r*ú*s*t*ō
 EAFLThVoicing [no-change]: *r*ú*s*t*ō
 PWGmcDentalHardening [no-change]: *r*ú*s*t*ō
+PWGmcEndinglessAw [no-change]: *r*ú*s*t*ō
 PNWGmcILowering [no-change]: *r*ú*s*t*ō
 PNWGmcULowering: *r*ó*s*t*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *r*ó*s*t*ō
@@ -49334,6 +49722,7 @@ PWGmcSyllabicJ [no-change]: *w*ú*l*f*a*z
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*l*f*a*z
 EAFLThVoicing [no-change]: *w*ú*l*f*a*z
 PWGmcDentalHardening [no-change]: *w*ú*l*f*a*z
+PWGmcEndinglessAw [no-change]: *w*ú*l*f*a*z
 PNWGmcILowering [no-change]: *w*ú*l*f*a*z
 PNWGmcULowering: *w*ó*l*f*a*z
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ó*l*f*a*z
@@ -49462,6 +49851,7 @@ PWGmcSyllabicJ [no-change]: *w*ú*l*l*ō
 PNWGmcPreconsonantalXLoss [no-change]: *w*ú*l*l*ō
 EAFLThVoicing [no-change]: *w*ú*l*l*ō
 PWGmcDentalHardening [no-change]: *w*ú*l*l*ō
+PWGmcEndinglessAw [no-change]: *w*ú*l*l*ō
 PNWGmcILowering [no-change]: *w*ú*l*l*ō
 PNWGmcULowering: *w*ó*l*l*ō
 PNWGmcStressedMonosyllableORaising [no-change]: *w*ó*l*l*ō
@@ -49721,6 +50111,9 @@ field :: *félθuz, fold :: *fálθaną, gold :: *gúlθą, wold :: *wálθuz
 PWGmcDentalHardening: 4
 cud :: *kwéðuz, find :: *fúnðanǭ, lade :: *xláðaną, needle :: *nḗðlō
 
+PWGmcEndinglessAw: 1
+straw :: *stráwą
+
 PNWGmcILowering: 4
 meed :: *mízdai, nest :: *nístą, wether :: *wíθrą, world :: *wír-àldu
 
@@ -49775,8 +50168,8 @@ bone :: *báiną, deal :: *dáiliz, dough :: *dáigaz, flesh :: *fláiskiz, ghos
 OEAwwjResolution: 2
 hay :: *xáwją, strew :: *stráwjaną
 
-OEAuBrightening: 20
-believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz
+OEAuBrightening: 21
+believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz, straw :: *stráwą
 
 OEEwLongDiphthong: 1
 hue :: *xíwją
@@ -49786,11 +50179,11 @@ OEJWWSimplification: 0
 OEJGlideIO: 1
 hue :: *xíwją
 
-OEDiphthongLeveling: 32
-believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, breast :: *bréustą, chew :: *kéwwaną, deer :: *déuzą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, flee :: *fléuxaną, fly :: *fléuganą, forlorn :: *léusaną, four :: *fédwōr, freeze :: *fréusaną, friend :: *fríjōndz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, light :: *léuxtijaną, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz, thief :: *θéubaz, you :: *ízwiz
+OEDiphthongLeveling: 33
+believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, breast :: *bréustą, chew :: *kéwwaną, deer :: *déuzą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, flee :: *fléuxaną, fly :: *fléuganą, forlorn :: *léusaną, four :: *fédwōr, freeze :: *fréusaną, friend :: *fríjōndz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, light :: *léuxtijaną, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz, thief :: *θéubaz, you :: *ízwiz, straw :: *stráwą
 
-OEAwLongDiphthong: 4
-show :: *skáwōjaną, straw :: *stráwą, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi
+OEAwLongDiphthong: 3
+show :: *skáwōjaną, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi
 
 OEPrefixAReduction: 1
 believe :: *galáubijaną
@@ -49831,8 +50224,8 @@ hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, harm :: *xármaz, harvest 
 OEARestoration: 20
 bake :: *bákaną, fare :: *fáraną, flask :: *fláskōn, grave :: *grábaną, haw :: *xágô, hawk :: *xábukaz, lade :: *xláðaną, lap :: *láppô, make :: *mákōjaną, nave :: *nábō, navel :: *nábulô, nightmare :: *márōn, sake :: *sákō, spare :: *spárōjaną, wade :: *wádaną, wake :: *wákaną, wash :: *wáskaną, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, tap :: *táppô
 
-OEHeavySyllableNasalApocope: 160
-bake :: *bákaną, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, bind :: *bíndaną, blood :: *blōdą, board :: *búrdą, bone :: *báiną, bore :: *búrōjaną, bow :: *báugijaną, bower :: *būrą, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, chew :: *kéwwaną, climb :: *klímbaną, corn :: *kúrną, deer :: *déuzą, do :: *dōną, door :: *dúrą, drink :: *drínkaną, drive :: *drḯbaną, eat :: *étaną, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, fell :: *féllą, fight :: *féxtaną, flax :: *fláxsą, flee :: *fléuxaną, fly :: *fléuganą, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, freeze :: *fréusaną, frost :: *frústą, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, hail :: *xáglą, hair :: *xḗrą, handle :: *xándlōjaną, hay :: *xáwją, head :: *xáubudą, heal :: *xáilijaną, help :: *xélpaną, hew :: *xáwwaną, hoard :: *xúzdą, hold :: *xáldaną, honey :: *xúnagą, horn :: *xúrną, knead :: *knédaną, lade :: *xláðaną, land :: *lándą, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, loam :: *láimą, lock :: *lúką, make :: *mákōjaną, meal :: *mḗlą, mean :: *máinijaną, nest :: *nístą, net :: *nátją, rain :: *régną, read :: *rḗdaną, ride :: *rḯdaną, room :: *rūmą, rope :: *ráipą, run :: *rínnaną, sail :: *séglą, salt :: *sáltą, sap :: *sápą, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, shaft :: *skáftą, shear :: *skéraną, sheep :: *skḗpą, shine :: *skḯnaną, show :: *skáwōjaną, sing :: *síngwaną, singe :: *sángijaną, sit :: *sétjaną, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, span :: *spánnaną, spare :: *spárōjaną, spin :: *spínnaną, spread :: *spráidijaną, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, still :: *stéllijaną, straw :: *stráwą, stretch :: *strákkijaną, strew :: *stráwjaną, stud :: *stōdą, sunder :: *súndrōjaną, sup :: *sūpaną, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, thatch :: *θáką, thing :: *θíngą, think :: *θánkijaną, thrash :: *θréskaną, timber :: *tímbrą, token :: *táikną, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wash :: *wáskaną, wax :: *wáxsą, wax :: *wáxsaną, weapon :: *wḗpną, weather :: *wédrą, weave :: *wébaną, wether :: *wíθrą, whine :: *xwḯnaną, wield :: *wáldaną, wife :: *wḯbą, will :: *wéljaną, wind :: *wíndaną, withy :: *wḯθagą, wonder :: *wúndrą, word :: *wúrdą, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, sow :: *sḗaną, betray :: *lḗwijaną, hue :: *xíwją
+OEHeavySyllableNasalApocope: 159
+bake :: *bákaną, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, bind :: *bíndaną, blood :: *blōdą, board :: *búrdą, bone :: *báiną, bore :: *búrōjaną, bow :: *báugijaną, bower :: *būrą, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, chew :: *kéwwaną, climb :: *klímbaną, corn :: *kúrną, deer :: *déuzą, do :: *dōną, door :: *dúrą, drink :: *drínkaną, drive :: *drḯbaną, eat :: *étaną, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, fell :: *féllą, fight :: *féxtaną, flax :: *fláxsą, flee :: *fléuxaną, fly :: *fléuganą, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, freeze :: *fréusaną, frost :: *frústą, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, hail :: *xáglą, hair :: *xḗrą, handle :: *xándlōjaną, hay :: *xáwją, head :: *xáubudą, heal :: *xáilijaną, help :: *xélpaną, hew :: *xáwwaną, hoard :: *xúzdą, hold :: *xáldaną, honey :: *xúnagą, horn :: *xúrną, knead :: *knédaną, lade :: *xláðaną, land :: *lándą, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, loam :: *láimą, lock :: *lúką, make :: *mákōjaną, meal :: *mḗlą, mean :: *máinijaną, nest :: *nístą, net :: *nátją, rain :: *régną, read :: *rḗdaną, ride :: *rḯdaną, room :: *rūmą, rope :: *ráipą, run :: *rínnaną, sail :: *séglą, salt :: *sáltą, sap :: *sápą, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, shaft :: *skáftą, shear :: *skéraną, sheep :: *skḗpą, shine :: *skḯnaną, show :: *skáwōjaną, sing :: *síngwaną, singe :: *sángijaną, sit :: *sétjaną, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, span :: *spánnaną, spare :: *spárōjaną, spin :: *spínnaną, spread :: *spráidijaną, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, still :: *stéllijaną, stretch :: *strákkijaną, strew :: *stráwjaną, stud :: *stōdą, sunder :: *súndrōjaną, sup :: *sūpaną, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, thatch :: *θáką, thing :: *θíngą, think :: *θánkijaną, thrash :: *θréskaną, timber :: *tímbrą, token :: *táikną, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wash :: *wáskaną, wax :: *wáxsą, wax :: *wáxsaną, weapon :: *wḗpną, weather :: *wédrą, weave :: *wébaną, wether :: *wíθrą, whine :: *xwḯnaną, wield :: *wáldaną, wife :: *wḯbą, will :: *wéljaną, wind :: *wíndaną, withy :: *wḯθagą, wonder :: *wúndrą, word :: *wúrdą, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, sow :: *sḗaną, betray :: *lḗwijaną, hue :: *xíwją
 
 OESecondaryNasalization: 89
 bake :: *bákaną, begin :: *bigínnaną, believe :: *galáubijaną, bind :: *bíndaną, bore :: *búrōjaną, bow :: *báugijaną, break :: *brékaną, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, chew :: *kéwwaną, climb :: *klímbaną, drink :: *drínkaną, drive :: *drḯbaną, eat :: *étaną, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, fight :: *féxtaną, flee :: *fléuxaną, fly :: *fléuganą, fold :: *fálθaną, follow :: *fúlgijaną, forlorn :: *léusaną, freeze :: *fréusaną, give :: *gébaną, grave :: *grábaną, gripe :: *grḯpaną, handle :: *xándlōjaną, heal :: *xáilijaną, help :: *xélpaną, hew :: *xáwwaną, hold :: *xáldaną, knead :: *knédaną, lade :: *xláðaną, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, learn :: *líznōjaną, let :: *lḗtaną, lick :: *líkkōjaną, light :: *léuxtijaną, make :: *mákōjaną, mean :: *máinijaną, read :: *rḗdaną, ride :: *rḯdaną, run :: *rínnaną, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, shear :: *skéraną, shine :: *skḯnaną, show :: *skáwōjaną, sing :: *síngwaną, singe :: *sángijaną, sit :: *sétjaną, slay :: *sláxaną, sleep :: *slḗpaną, smear :: *smérwijaną, span :: *spánnaną, spare :: *spárōjaną, spin :: *spínnaną, spread :: *spráidijaną, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, still :: *stéllijaną, stretch :: *strákkijaną, strew :: *stráwjaną, sunder :: *súndrōjaną, sup :: *sūpaną, swell :: *swéllaną, swim :: *swímmaną, think :: *θánkijaną, thrash :: *θréskaną, tread :: *trédaną, wade :: *wádaną, wake :: *wákaną, warp :: *wérpaną, wash :: *wáskaną, wax :: *wáxsaną, weave :: *wébaną, whine :: *xwḯnaną, wield :: *wáldaną, will :: *wéljaną, wind :: *wíndaną, wring :: *wrínganą, sow :: *sḗaną, betray :: *lḗwijaną
@@ -49974,6 +50367,6 @@ OEWsPalatalGlide: 2
 yoke :: *júką, youth :: *júgunθ
 
 OldEnglishRemoveStars: 387
-adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féxu, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanǭ, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flask :: *fláskōn, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaras, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalō, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilō, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, straw :: *stráwą, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstanē, wether :: *wíθrą, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldu, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, tap :: *táppô, fire :: *fūri, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústō, wolf :: *wúlfaz, wool :: *wúllō
+adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féxu, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanǭ, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flask :: *fláskōn, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaras, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalō, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilō, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstanē, wether :: *wíθrą, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldu, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, straw :: *stráwą, tap :: *táppô, fire :: *fūri, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústō, wolf :: *wúlfaz, wool :: *wúllō
 
 OldEnglishSurface: 0

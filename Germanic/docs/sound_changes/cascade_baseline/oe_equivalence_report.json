@@ -6,8 +6,8 @@
   "sandbox_final_bin": "old_english_sandbox_after_old_english_surface.bin",
   "comparison": "identical output multisets per selected corpus row",
   "sources": {
-    "germanic.txt": "f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953",
-    "old_english_sandbox.txt": "f7f9462e3aba4bc15ecf7eab8d517763d792945449433cb45093d5a883d0f57f",
-    "germanic-aligned-final.tsv": "67fb85b3f944afe6f0f3f0a99536f9bd70bf707246d968577b16fca5b17aece6"
+    "germanic.txt": "a5d53a0504e6dc2a5411a8e327826f97a75c5bcc60f5fc17f55da06c71be904e",
+    "old_english_sandbox.txt": "efe38dec1b3edd28d46a64c4a69c5eb6253235236b487fdcfd074fc2c8001642",
+    "germanic-aligned-final.tsv": "3af00bcafe049d2d2bd692e11c2e95488e7c72d76f60aede5c748ce266c67e1b"
   }
 }

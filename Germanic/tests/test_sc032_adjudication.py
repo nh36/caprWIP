@@ -23,7 +23,7 @@ EXPECTED = {
     "áeu": {
         "1944", "1961", "1962", "1966", "1989", "1995", "2018", "2061",
         "2063", "2074", "2094", "2097", "2116", "2135", "2151", "2170",
-        "2184", "2225", "2227", "2241",
+        "2184", "2224", "2225", "2227", "2241",
     },
     "éu": {"1968", "1976", "1988", "2019", "2022", "2028", "2029",
            "2032", "2102", "2246"},
@@ -165,9 +165,13 @@ class SC032AdjudicationTests(unittest.TestCase):
         knee = self.records["2085"][2]
         self.assertEqual(knee["OEDiphthongLeveling"], "*k*n*é*w*ē")
         self.assertEqual(knee["OEBreaking"], "*k*n*éo*w*ē")
-        for identifier in ("2186", "2224", "2317", "2318"):
+        for identifier in ("2186", "2317", "2318"):
             forms = self.records[identifier][2]
             self.assertEqual(forms["OEJGlideIO"], forms["OEDiphthongLeveling"])
+        straw = self.records["2224"][2]
+        self.assertEqual(straw["PWGmcEndinglessAw"], "*s*t*r*áu")
+        self.assertEqual(straw["OEJGlideIO"], "*s*t*r*áeu")
+        self.assertEqual(straw["OEDiphthongLeveling"], "*s*t*r*ēa")
 
     def test_head_dependency_is_internal_vowel_recognition(self):
         text = (GERMANIC / "fsts/germanic.txt").read_text(encoding="utf-8")

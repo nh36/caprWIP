@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (309) ===
+=== DERIVATION_CLASS: regular (308) ===
 
 
 
@@ -4918,7 +4918,7 @@ English Proto Input: *skáwōjaną
 Old English Orthography: sċ*ḗawian
 Outcome: sċēawian
 
-NOTE: Normalized sċ: initial sc always [ʃ] in OE (Campbell §440).
+NOTE: Editorial sċ normalization. SC034 retained show support proxy, not a general singleton-aw law: dictionary singleton stems (Orel 2003 p.337; Kroonen 2013 p.442) differ from inherited-geminate handbook history (Campbell 1959 p.45; Brunner 1965 p.49). Root premise deferred; selected input, target and class unchanged.
 
 
 
@@ -5669,29 +5669,6 @@ English Proto Input: *stúrmaz
 ### Orthography & surface
 
 Outcome: storm
-
-
-
-# straw
-PROTO: *stráwą
-EXPECTED: strēaw
-OUTPUTS: strēaw
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *stráwą
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *strḗawą<br>OE Heavy Syllable Nasal Apocope: *strḗaw |
-
-
-
-### Orthography & surface
-
-Outcome: strēaw
 
 
 
@@ -8272,7 +8249,7 @@ NOTE: PROTOFORM *jugunθ (without -iz): (1) Early i-apocope: R/T §6.8.1 shows f
 
 
 
-=== DERIVATION_CLASS: late_analogy (28) ===
+=== DERIVATION_CLASS: late_analogy (29) ===
 
 
 
@@ -8910,7 +8887,7 @@ English Proto Input: *skáwōθi
 Old English Orthography: sċ*ḗawaþ
 Outcome: sċēawaþ
 
-NOTE: Class II weak 3sg pres. indic. Regular: *-ōθi → -aþ. No i-umlaut: 3sg ending never had -j-. Normalized sċ: Campbell §440.
+NOTE: Class II present 3sg CAPR input assembly; stable -aþ (Campbell 1959 p.148; Ringe-Taylor 2014 p.80). Compiled final i is lost before SC034; absence of j alone is not the derivational explanation. Bright 1917 p.161 attests prefixed geondscēawað, not this normalized simplex quotation. SC034 root proxy retained with singleton/geminate premise deferred.
 
 
 
@@ -8936,7 +8913,7 @@ English Proto Input: *skáwô
 Old English Orthography: sċ*ḗawa
 Outcome: sċēawa
 
-NOTE: Class II weak iptv. 2sg test. Trimoric *ō → OE -a. Normalized sċ: Campbell §440.
+NOTE: Class II imperative singular CAPR input assembly; -a < *ō (Ringe-Taylor 2014 p.314), attested scēawa (Bright 1917 p.71). SC034 root proxy retained with singleton/geminate premise deferred. Editorial sċ normalization; selected input, target and class unchanged.
 
 
 
@@ -8962,6 +8939,31 @@ English Proto Input: *spánnai
 Outcome: spanne
 
 NOTE: Dat.sg. paradigm-cell (Brunner §252). Fem. ō-stem dat.sg. *-ai preserves medial geminate; unstressed word-final *ai→ē (R/T §6.1.5; §17.12).
+
+
+
+# straw
+PROTO: *stráwą
+EXPECTED: strēaw
+OUTPUTS: strēa
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *stráwą
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Endingless Aw: *stráu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *stráeu<br>OE Diphthong Leveling: *strēa |
+
+
+
+### Orthography & surface
+
+Outcome: strēa
+
+NOTE: Attested strēaw retained as comparison; regular inherited nominative/accusative cascade yields reconstructed *strēa, an explicit known mismatch (Brunner 1965 pp.49,110; Ringe-Taylor 2014 pp.172-173,387). Attested strēaw combines endingless long diphthong and analogically restored w; regular short obliques are also unattested. SC034 approved output-only transition; inherited input and attested target unchanged.
 
 
 

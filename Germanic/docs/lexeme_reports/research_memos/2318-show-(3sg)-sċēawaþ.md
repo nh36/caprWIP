@@ -1,5 +1,20 @@
 # Research memo — 2318 show (3sg) / sċēawaþ
 
+## Current SC034 source-led disposition
+
+Input/target/class remain unchanged. Orel2003 p.337 is infinitive-family
+evidence, not a quotation of CAPR's assembled *skáwōθi. Stable -aþ is
+supported by Campbell1959 p.148 and RingeTaylor2014 p.80. The actual
+SC034 input checkpoint is *s*k*á*w*ō*θ, with final i already lost:
+absence of j alone does not explain the compiled lack of mutation.
+Bright1917 p.161 attests prefixed geondscēawað, not separately quoted
+simplex sċēawaþ; p.71 contains infinitive/imperative. The normalized
+simplex remains a cell comparison. Campbell1959 p.45 and Brunner1965
+p.49 preserve an inherited-geminate root account distinct from dictionary
+singleton stems (Kroonen2013 p.442). SC034's root proxy remains explicit
+and that premise deferred. The historical sections below are superseded
+on their settled-root claim, former note wording and unpaginated citations.
+
 ## Starting point
 
 - **ID:** 2318

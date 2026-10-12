@@ -23,7 +23,10 @@ class PalatalClassSplitTests(unittest.TestCase):
         knee = json.loads((directory / "oe_post_sc033_controls.json").read_text())
         self.assertEqual(knee["baseline_fst_sha256"],
                          "235fb9cf07cf40d0e00181c2959b7ada5c2852c85d231b6c1caa3dccad3074f9")
-        active = json.loads((directory / "oe_post_hue_controls.json").read_text())
+        post_hue = json.loads((directory / "oe_post_hue_controls.json").read_text())
+        self.assertEqual(post_hue["baseline_fst_sha256"],
+                         "f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953")
+        active = json.loads((directory / "oe_post_sc034_controls.json").read_text())
         self.assertEqual(active["baseline_fst_sha256"],
                          hashlib.sha256(SOURCE.read_bytes()).hexdigest())
         self.assertEqual(historical["baseline_fst_sha256"],
@@ -32,7 +35,7 @@ class PalatalClassSplitTests(unittest.TestCase):
         self.assertEqual(len(recipe["component_checks"]), 31)
         self.assertEqual(len(recipe["staged_checks"]), 7)
         for field in ("component_checks", "staged_checks"):
-            self.assertTrue(all(check in active["recipes"][1][field] for check in recipe[field]))
+            self.assertTrue(all(check in post_hue["recipes"][1][field] for check in recipe[field]))
 
     def test_production_matches_the_executed_coupled_components(self):
         data = json.loads((SC / "literature_dossiers/anglo_frisian/"

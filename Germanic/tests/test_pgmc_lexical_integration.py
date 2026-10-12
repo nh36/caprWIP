@@ -28,11 +28,18 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(len(self.rows), 393)
         self.assertEqual(len(self.editorial), 393)
         for key, value in {"legacy": 380, "selected": 387, "audit": 393,
-                           "legacy_current_required": 150, "required": 157,
                            "assembled": 160, "production_pilots": 11,
                            "format_tests": 1, "reviewed_rows": 10, "scoped_cases": 13}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
+        required = {row["row_id"] for row in self.crosswalk if row["old_policy_requires_report"]}
+        legacy_required = {identifier for identifier in required
+                           if self.rows[identifier]["legacy380"]}
+        self.assertIn("2224", legacy_required)
+        self.assertEqual(len(required - {"2224"}), 157)
+        self.assertEqual(len(legacy_required - {"2224"}), 150)
+        self.assertEqual(self.stats["required"], len(required))
+        self.assertEqual(self.stats["legacy_current_required"], len(legacy_required))
 
     def test_added_witnesses_and_research_only(self):
         self.assertEqual(self.stats["added_selected"],
@@ -47,7 +54,7 @@ class IntegrationTests(unittest.TestCase):
 
     def test_real_assembly_differences(self):
         self.assertEqual(self.stats["required_not_assembled"],
-                         ["2055", "2120", "2327", "2328", "2329"])
+                         ["2055", "2120", "2224", "2327", "2328", "2329"])
         self.assertEqual(self.stats["assembled_not_required"],
                          ["1933", "1955", "1989", "2018", "2029", "2044", "2074", "2113"])
         self.assertIn("/2055-", self.rows["2055"]["stable_id_material_paths"])
@@ -58,6 +65,7 @@ class IntegrationTests(unittest.TestCase):
             "1933": ("*nḗdrōn", "*nḗdrōn", "nǣdre", "regular", "nǣdre"),
             "2013": ("*fūri", "*fūri", "fȳre", "known_unmodelled", "fȳr"),
             "2085": ("*knéwą", "*knéwai", "cneowe", "late_analogy", "cneowe"),
+            "2224": ("*stráwą", "*stráwą", "strēaw", "late_analogy", "strēa"),
             "2326": ("*ízwiz", "*ízwiz", "ēow", "regular", "ēow"),
             "2330": ("*θánxtē", "*θánxtē", "þōhte", "regular", "þōhte"),
             "2332": ("*xíwją", "*xíwją", "hīew", "regular", "hīew"),

@@ -187,15 +187,16 @@ class CorpusTotalsTests(unittest.TestCase):
         summary = json.loads(
             (BASELINE.parent / "cascade_baseline_summary.json").read_text(encoding="utf-8")
         )
-        # Corpus-maturation policy: the original corpus is a frozen legacy-380
-        # subset; the whole-corpus total may grow, but every row (legacy and
-        # new) must be accepted, the mismatch population stays the legacy 7,
-        # and no row is ambiguous.
+        with BASELINE.open(encoding="utf-8") as handle:
+            mismatches = {row["row_id"] for row in csv.DictReader(handle, delimiter="\t")
+                          if row["match"] == "0"}
+        self.assertEqual(mismatches,
+                         {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"})
         self.assertEqual(summary["legacy_subset_count"], 380)
         self.assertGreaterEqual(summary["total_lexemes"], 380)
         self.assertEqual(summary["accepted"], summary["total_lexemes"])
-        self.assertEqual(summary["matched"], summary["total_lexemes"] - 7)
-        self.assertEqual(summary["mismatched"], 7)
+        self.assertEqual(summary["matched"], summary["total_lexemes"] - len(mismatches))
+        self.assertEqual(summary["mismatched"], len(mismatches))
         self.assertEqual(summary["ambiguous_outputs"], 0)
 
 

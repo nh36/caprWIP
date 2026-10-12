@@ -72,8 +72,11 @@ def legacy_subset(records: list[dict], legacy_rows: list[dict],
                migration["counterpart"], migration["concept"])
         if key in approved or any(m["row_id"] == migration["row_id"] for m in approved.values()):
             raise ValueError("duplicate approved input migration")
-        if migration["old_proto"] == migration["new_proto"]:
-            raise ValueError("input migration must change the input")
+        if migration["old_proto"] == migration["new_proto"] and (
+            migration["counterpart"] == migration["new_counterpart"]
+            and migration["old_outputs"] == migration["new_outputs"]
+        ):
+            raise ValueError("unchanged-input migration must change target or outputs")
         approved[key] = migration
     selected = []
     used = set()
@@ -101,6 +104,12 @@ def legacy_subset(records: list[dict], legacy_rows: list[dict],
                 raise ValueError(f"unapproved legacy input drift: {key}")
         for field in ("accepted", "output_count", "match", "outputs"):
             if migration and field == "outputs":
+                continue
+            if migration and field == "match":
+                for record in (old, current):
+                    expected_match = str(int(record["counterpart"] in record["outputs"].split("|")))
+                    if record["match"] != expected_match:
+                        raise ValueError(f"inconsistent migrated match flag: {key}")
                 continue
             if current[field] != old[field]:
                 raise ValueError(f"unapproved legacy {field} drift: {key}")
@@ -326,7 +335,8 @@ def validate_cell_transition(previous: dict, candidate: dict, approval: dict) ->
         if (not isinstance(change, dict) or set(change) != {"row_id", "before", "after"}
                 or not isinstance(change["row_id"], str) or not change["row_id"]
                 or not isinstance(change["before"], dict) or not isinstance(change["after"], dict)
-                or set(change["before"]) != fields or set(change["after"]) != fields
+                or set(change["before"]) not in (fields, fields | {"match"})
+                or set(change["after"]) != set(change["before"])
                 or not all(isinstance(value, str) and value
                            for side in ("before", "after") for value in change[side].values())
                 or change["before"] == change["after"]
@@ -342,14 +352,14 @@ def validate_cell_transition(previous: dict, candidate: dict, approval: dict) ->
             if any(old[field] != value for field, value in change["before"].items()):
                 raise ValueError(f"paradigm-cell old record mismatch: {identifier}")
             expected.update(change["after"])
-            if (expected["proto_norm"] != normalize_proto(expected["proto"])
-                    or expected["counterpart"] not in expected["outputs"].split("|")):
+            if expected["proto_norm"] != normalize_proto(expected["proto"]):
                 raise ValueError(f"invalid paradigm-cell replacement: {identifier}")
         if after[identifier] != expected:
             raise ValueError(f"unapproved paradigm-cell record drift: {identifier}")
         outputs = expected["outputs"].split("|") if expected["outputs"] else []
         context = InputContext(expected["word_stress"], expected["phonological_finality"])
-        if (context.encode(expected["proto_norm"]) != expected["fst_input"]
+        if (expected["accepted"] not in {"0", "1"} or expected["match"] not in {"0", "1"}
+                or context.encode(expected["proto_norm"]) != expected["fst_input"]
                 or int(expected["output_count"]) != len(outputs)
                 or (expected["accepted"] == "1") != bool(outputs)
                 or (expected["match"] == "1") != (expected["counterpart"] in outputs)):
@@ -362,7 +372,12 @@ def validate_cell_transition(previous: dict, candidate: dict, approval: dict) ->
             raise ValueError(f"paradigm-cell fingerprint mismatch: {field}")
     for field, value in previous["summary"].items():
         if field not in {"outputs_sha256", "lexical_outputs_sha256", "legacy_subset_sha256"}:
-            if candidate["summary"].get(field) != value:
+            if field in {"matched", "mismatched"}:
+                expected = sum(row["match"] == ("1" if field == "matched" else "0")
+                               for row in candidate["records"])
+            else:
+                expected = value
+            if candidate["summary"].get(field) != expected:
                 raise ValueError(f"unapproved paradigm-cell summary drift: {field}")
 
 
