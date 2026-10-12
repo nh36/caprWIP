@@ -14,6 +14,11 @@ def pytest_addoption(parser):
     parser.addoption("--validation-mode", choices=("full", "portable"), default="full")
 
 
+def pytest_configure(config):
+    config.addinivalue_line(
+        "markers", "runtime: strict provisioned-runtime validation, explicitly not run in portable mode")
+
+
 def pytest_sessionstart(session):
     mode = session.config.getoption("--validation-mode")
     try:

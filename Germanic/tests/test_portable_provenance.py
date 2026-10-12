@@ -163,3 +163,28 @@ def test_cli_capability_selection_does_not_turn_failures_into_success(mode):
             patch.object(adjudicate, "refresh", return_value=1) as refresh:
         assert adjudicate.main() == 1
         refresh.assert_called_once_with(mode=mode)
+
+
+@pytest.mark.runtime
+def test_full_runtime_node_freshness(request):
+    import artifact_graph
+    if request.config.getoption("--validation-mode") == "portable":
+        pytest.skip("runtime-dependent: full graph runtime_bins/full_trace/lexical_sources/"
+                    "interaction_matrix requires a provisioned Foma runner, bins and build manifests; "
+                    "portable capability explicitly does not run this gate")
+    problems = [f"{node.name}: {problem}"
+                for node in artifact_graph.nodes()
+                if node.kind == "runtime"
+                for problem in node.verify()]
+    assert not problems, "\n".join(problems)
+
+
+def test_full_pytest_runtime_gate_fails_instead_of_skipping_missing_manifest():
+    import artifact_graph
+    from types import SimpleNamespace
+    node = artifact_graph.Node("runtime_fixture", "runtime", "fixture",
+                               lambda: ["build manifest missing"], lambda: [], lambda: [])
+    request = SimpleNamespace(config=SimpleNamespace(getoption=lambda _: "full"))
+    with patch.object(artifact_graph, "nodes", return_value=(node,)):
+        with pytest.raises(AssertionError, match="build manifest missing"):
+            test_full_runtime_node_freshness(request)

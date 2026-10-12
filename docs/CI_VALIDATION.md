@@ -36,12 +36,17 @@ the pytest suite performs the same holding/evidence preflight once. Completeness
 flags such as `--require-feature-alignment-complete` retain their independent
 reading, attribution and analytical gates in either mode.
 
-Full graph validation additionally requires the canonical isolated Foma runner,
+Full pytest and graph validation additionally require the canonical isolated Foma runner,
 compiled stage bins and build manifests. Portable mode never executes the
 `runtime_bins`, `full_trace`, `lexical_sources` or `interaction_matrix` nodes,
 even if local binaries happen to exist. Synthetic runtime-validator tests and
 integrity checks over committed runtime receipts still run; these are not new
 runtime evidence.
+
+The pytest `runtime` category checks the full graph's runtime nodes once in
+full mode, not once per adjudicated SC. Missing runtime manifests are strict
+failures, not automatic success or availability-based skips. Portable selection
+records this category as explicitly not run, with the provisioning cause.
 
 ## Portable evidence and provenance
 
