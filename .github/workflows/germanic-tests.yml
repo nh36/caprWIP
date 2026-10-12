@@ -28,3 +28,4 @@ jobs:
             .ci-results/*.xml
             .ci-results/*.md
           if-no-files-found: error
+          include-hidden-files: true

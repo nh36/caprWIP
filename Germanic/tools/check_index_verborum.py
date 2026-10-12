@@ -1326,8 +1326,11 @@ def resolve_variety_audit_ref(audit: dict, forms: list[dict], root: Path = REPO_
         if 0 < number <= len(lines):
             current_tags = set(re.findall(r"\[[^\n]*?\]\{\.iv\b[^}]*\}", lines[number - 1]))
             anchors = historical_tags & current_tags
-            if any(f"variety={audit['proposed_variety']}" in tag
-                   and f"sort={audit['sort_key']}" in tag for tag in anchors):
+            if any(all(re.search(r"\b" + field + "=" + re.escape(value) + r"(?=\s|})", tag)
+                       for field, value in (("lang", "oe"),
+                                            ("variety", audit["proposed_variety"]),
+                                            ("sort", audit["sort_key"])))
+                   for tag in anchors):
                 supported.append(ref)
     if len(supported) != 1:
         raise ValueError(f"variety audit needs an unambiguous surviving source tag: {audit['source_ref']} -> {supported}")

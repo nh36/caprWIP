@@ -106,6 +106,14 @@ Registry/memo agreement now checks registry and memo verdicts directly, rather
 than rerunning the entire binary-dependent graph for every adjudicated SC.
 `adjudicate SCNNN --check` still performs the full strict propagation check.
 
+An actual dedicated-branch Actions run also exposed an output-introspection
+bug: listing the lexical-integration node's owners invoked its full renderer
+and unnecessarily required original PDFs. Its output declaration now uses the
+integration module's canonical `OUTPUT_NAMES`, without validation or builds.
+The renderer and freshness check retain their explicit capabilities. Hidden
+`.ci-results/` log uploads are explicitly enabled, with only log/XML/summary
+files selected, not scratch directories.
+
 The provenance refresh also exposed two pre-existing stale tracked
 reading-accountability hashes; canonical regeneration updates their hashes,
 not the evidence. All declared holdings now participate in provenance, rather

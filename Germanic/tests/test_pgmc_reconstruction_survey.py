@@ -104,6 +104,18 @@ class SurveyValidationTests(unittest.TestCase):
                         survey.validate(self.sources, [], [], self.corpus,
                                         {"Source"}, self.root, mode=mode)
 
+    def test_loader_rejects_duplicate_bibliography_keys(self):
+        (self.root / "docs/refs.bib").write_text(
+            "@book{Source,\n title = {One}\n}\n"
+            "@book{Source,\n title = {Two}\n}\n")
+        tables = {"sources.tsv": self.sources, "forms.tsv": self.forms,
+                  "coverage.tsv": self.reviews}
+        with patch.object(survey, "inventory", return_value=self.corpus), \
+                patch.object(survey, "read_table",
+                             side_effect=lambda path, columns: tables[path.name]):
+            with self.assertRaisesRegex(survey.SurveyError, "duplicate bibliography"):
+                survey.load(self.root, mode="full")
+
     def test_scoped_negative_needs_explicit_basis(self):
         self.reviews.append({
             "row_id": "2", "source_key": "Source", "status": "not_applicable",

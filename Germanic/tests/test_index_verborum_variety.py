@@ -34,13 +34,7 @@ from functools import lru_cache
 
 @lru_cache(maxsize=1)
 def current_source_production():
-    base = builder.build_production_rows(include_table_semantic=False)
-    tables = builder.collect_table_semantic_results(base)
-    initial = builder.build_production_rows(table_semantic_results=tables)
-    audit = builder.build_audit_rows(initial, table_semantic_results=tables)
-    _, broad = builder.apply_broad_prose_decisions(audit)
-    return builder.build_production_rows(
-        table_semantic_results=tables, broad_prose_decision_rows=broad)
+    return builder.build_complete_production()[0]
 
 
 def current_source_metrics():

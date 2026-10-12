@@ -96,6 +96,10 @@ def test_variety_locator_rebase_requires_unique_unchanged_source_anchor(tmp_path
     path.write_text("intro\n" + tag.replace("variety=lws", "variety=angl") + "\n")
     with pytest.raises(ValueError, match="unambiguous"):
         resolve_variety_audit_ref(audit, [row], tmp_path)
+    prefixed = tag.replace("sort=word", "sort=wordplus")
+    path.write_text("intro\n" + prefixed + "\n")
+    with pytest.raises(ValueError, match="unambiguous"):
+        resolve_variety_audit_ref(dict(audit, evidence_text=prefixed), [row], tmp_path)
 
 
 def test_reporter_stops_once_at_preflight_and_does_not_reuse_old_results(tmp_path):
@@ -135,3 +139,13 @@ def test_direct_memo_check_is_independent_but_strict_propagation_keeps_runtime_g
         memo.write_text("Registry-verdict: SC023=RETIRE\n")
         assert any("!= registry verdict" in error
                    for error in adjudicate.check_memo("SC023"))
+
+
+def test_integration_output_inventory_does_not_validate_or_build():
+    import artifact_graph
+    import pgmc_lexical_integration as integration
+    with patch.object(integration, "render",
+                      side_effect=AssertionError("output introspection must not render")):
+        output = artifact_graph.declared_outputs()["pgmc_lexical_integration"]
+    assert output == sorted(survey.ROOT / integration.DIRECTORY / name
+                            for name in integration.OUTPUT_NAMES)

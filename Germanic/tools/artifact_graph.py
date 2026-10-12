@@ -213,6 +213,12 @@ def _render_pgmc_lexical_integration(mode: str = "full") -> dict:
         raise SystemExit(f"PGmc lexical integration SOURCE error: {exc}") from exc
 
 
+def _pgmc_lexical_integration_outputs() -> list:
+    import pgmc_lexical_integration
+    return [REPO_ROOT / pgmc_lexical_integration.DIRECTORY / name
+            for name in pgmc_lexical_integration.OUTPUT_NAMES]
+
+
 def _lexical_outputs() -> list:
     names = ("regular", "attested_variant", "early_analogy", "late_analogy",
              "reconstructed_oe", "known_unmodelled", "unexplained", "all_by_class")
@@ -552,7 +558,8 @@ def nodes(*, mode: str = "full") -> tuple:
                  lambda: _lexical_outputs() + [LEXICAL_PROVENANCE]),
         _projection("pgmc_lexical_integration",
                     "live populations + protected audit + provisional scoped editorial SOURCE",
-                    lambda: _render_pgmc_lexical_integration(mode)),
+                    lambda: _render_pgmc_lexical_integration(mode),
+                    outputs=_pgmc_lexical_integration_outputs),
         _projection("book_draft",
                     "assembly sources via build_capr_book_draft",
                     _render_book_draft),

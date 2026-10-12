@@ -4143,6 +4143,16 @@ def ensure_print_decisions_file() -> None:
         writer.writeheader()
 
 
+def build_complete_production() -> tuple[list[ProductionOccurrence], dict]:
+    base_rows = build_production_rows(include_table_semantic=False)
+    tables = collect_table_semantic_results(base_rows)
+    initial = build_production_rows(table_semantic_results=tables)
+    audit = build_audit_rows(initial, table_semantic_results=tables)
+    _, broad = apply_broad_prose_decisions(audit)
+    return build_production_rows(
+        table_semantic_results=tables, broad_prose_decision_rows=broad), tables
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--strict", action="store_true", help="Alias for --strict-mode=all.")
@@ -4171,16 +4181,8 @@ def main() -> None:
     ensure_broad_prose_decisions_file()
     ensure_print_decisions_file()
     rewrite_readme_language_block()
-    base_rows = build_production_rows(include_table_semantic=False)
-    table_semantic_results = collect_table_semantic_results(base_rows)
+    production_rows, table_semantic_results = build_complete_production()
     write_table_suggestions(TABLE_SUGGESTIONS_PATH, table_semantic_results["suggestions"])
-    initial_production_rows = build_production_rows(table_semantic_results=table_semantic_results)
-    initial_audit_buckets = build_audit_rows(initial_production_rows, table_semantic_results=table_semantic_results)
-    _, broad_prose_decision_rows = apply_broad_prose_decisions(initial_audit_buckets)
-    production_rows = build_production_rows(
-        table_semantic_results=table_semantic_results,
-        broad_prose_decision_rows=broad_prose_decision_rows,
-    )
     print_decisions = load_print_decisions()
     print_main_rows, print_excluded_rows = split_print_main_rows(production_rows, print_decisions)
     print_unique_rows = build_print_unique_rows(print_main_rows)
