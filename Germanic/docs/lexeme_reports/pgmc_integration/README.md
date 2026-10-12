@@ -1,9 +1,9 @@
 # Proto-Germanic audit / lexical-volume integration
 
 Status: bounded publication integration pilot; no scientific adoption.
-The historical design began at `27c552bf`; the pilot uses completed ERRATA
-`b74e3ce3f60f05c8843555eb409b35020386dcf0` on isolated
-`workstream/lexical-integration`.
+The historical design began at `27c552bf`; the pilot used completed ERRATA
+`b74e3ce3f60f05c8843555eb409b35020386dcf0` and is integrated on `update`
+at `c06c896d`. The completed workstream is not a separate current authority.
 The completed 49-tranche alignment supplies evidence, not 393 settled histories.
 
 ## Artefacts and authority

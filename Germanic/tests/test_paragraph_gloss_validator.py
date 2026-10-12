@@ -20,7 +20,7 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         )
 
     def test_part_one_sound_notation_is_not_lexical(self):
-        for form in ("ā", "ō", "ą̄", "ēa", "īe", "sċ", "xst", "*ai", "*au"):
+        for form in ("ā", "ō", "ą̄", "ēa", "īe", "īo", "sċ", "xst", "*ai", "*au"):
             with self.subTest(form=form):
                 result = self.validate(f"The sequence *{form}* changes.\n")
                 self.assertEqual(result.returncode, 0, result.stderr)
@@ -38,9 +38,38 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
 
     def test_explicit_lexical_segments_are_not_silently_exempted(self):
         for cls in ("iv", "lex"):
-            with self.subTest(cls=cls):
-                result = self.validate(f"[ā]{{.{cls}}} survives.\n")
+            for form in ("ā", "īo"):
+                with self.subTest(cls=cls, form=form):
+                    result = self.validate(f"[{form}]{{.{cls}}} survives.\n")
+                    self.assertEqual(result.returncode, 2, result.stderr)
+
+    def test_sc032_explicit_variants_share_existing_paragraph_gloss(self):
+        result = self.validate(
+            "The input of *hēafod* 'head' is realized. "
+            "Campbell records both *hēafud* and *hēafod*, with varying vowels.\n"
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_shared_gloss_allowance_requires_context_and_prior_local_gloss(self):
+        variants = "Campbell records both *hēafud* and *hēafod*."
+        for markdown in (
+            variants,
+            "*hēafod* is realized. " + variants,
+            "*hēafod* 'head' is realized.\n\n" + variants,
+            "*hēafod* 'head' is realized. Another word is *hēafud*.",
+            variants + " Later *hēafod* 'head' is realized.",
+            "# Word-by-word derivations\n\n#### Old English evidence\n\n"
+            "*hēafod* 'head' is realized. " + variants,
+        ):
+            with self.subTest(markdown=markdown):
+                result = self.validate(markdown)
                 self.assertEqual(result.returncode, 2, result.stderr)
+                self.assertIn("missing gloss for *hēafud*", result.stderr)
+
+    def test_released_sc032_reader_passes_without_prose_edits(self):
+        reader = FILTER.parents[1] / "docs/sound_changes/reader_facing/032-diphthong-leveling.md"
+        result = self.validate(reader.read_text(encoding="utf-8"))
+        self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_glossed_forms_pass(self):
         result = self.validate(

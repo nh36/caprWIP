@@ -59,6 +59,14 @@ The pytest `runtime` category checks the full graph's runtime nodes once in
 full mode, not once per adjudicated SC. Missing runtime manifests are strict
 failures, not automatic success or availability-based skips. Portable selection
 records this category as explicitly not run, with the provisioning cause.
+The live `SC024 --evidence` integration tests belong to that category too:
+portable mode skips every runtime-marked test even when Docker happens to be
+available. Full mode retains the live rebuild and the strict runtime freshness
+gate. Container availability alone must not expand a portable invocation's
+declared capabilities.
+The older SC021--SC027 live-probe decorators and the local build-version
+comparison carry the same explicit marker; their committed-evidence and
+synthetic validator tests remain portable.
 
 ## Portable evidence and provenance
 

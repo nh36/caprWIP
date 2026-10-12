@@ -40,6 +40,7 @@ Interaction-matrix provenance
 Usage
     python3 Germanic/tools/artifact_graph.py --check     # verify all nodes
     python3 Germanic/tools/artifact_graph.py --refresh   # rebuild stale ones
+    python3 Germanic/tools/artifact_graph.py --inventory # read-only ownership JSON
 """
 
 from __future__ import annotations
@@ -591,6 +592,15 @@ def declared_outputs(*, mode: str = "full") -> dict:
     return {node.name: sorted(node.outputs()) for node in nodes(mode=mode)}
 
 
+def inventory() -> list[dict]:
+    """Describe the existing graph without verifying holdings or building."""
+    return [
+        {"name": node.name, "kind": node.kind, "authority": node.authority,
+         "outputs": sorted(_rel(path) for path in node.outputs())}
+        for node in nodes(mode="portable")
+    ]
+
+
 # census reads the inventory view and the views annotate from the census, so
 # these two projections are refreshed to a joint fixed point.
 _FIXED_POINT = ("registry_views", "coverage_census")
@@ -679,6 +689,9 @@ def verify_all(*, mode: str = "full") -> list:
 
 def main() -> int:
     args = sys.argv[1:]
+    if args == ["--inventory"]:
+        print(json.dumps(inventory(), indent=2, ensure_ascii=False))
+        return 0
     mode = "full"
     if len(args) >= 2 and args[-2] == "--mode" and args[-1] in {"full", "portable"}:
         mode = args[-1]

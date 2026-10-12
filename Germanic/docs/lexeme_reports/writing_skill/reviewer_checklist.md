@@ -1,6 +1,15 @@
 # Reviewer checklist for Old English lexeme entries
 
-Use this checklist before treating a draft as accepted.
+Use this shared checklist before treating a draft as accepted. Do not copy it
+into a per-entry pass table. Human judgement cannot be automated; record only
+unique conclusions, unresolved premises and checked-source limits in the ledger
+or existing memo.
+
+Mechanical coverage is supplied by `test_repository_cleanup.py` (model metadata,
+bibliography keys and historical migration), the citation/semantic/index checks,
+and `validate_oe_lexeme_report_assembly.py` (certification and selected identities).
+Run the canonical refresh and the validation commands in `docs/CI_VALIDATION.md`.
+A passing check never certifies a scholarly claim or uninspected source image.
 
 ## Genre and scope
 
@@ -25,8 +34,8 @@ Use this checklist before treating a draft as accepted.
 
 - [ ] Do all citations use bibliography keys present in `docs/refs.bib`?
 - [ ] Are sources cited in prose rather than hidden behind local file names?
-- [ ] If a cited source lacks a key, is that problem recorded in the ledger or
-      implementation report rather than silently patched over?
+- [ ] If a cited source lacks a key, is that problem recorded in the ledger
+      rather than silently patched over?
 
 ## Claims and certainty
 
@@ -48,12 +57,10 @@ Use this checklist before treating a draft as accepted.
 
 - [ ] Does it avoid mentioning packets, DEV_NOTES, backlog, manifest,
       implementation log, or project history in the final entry prose?
-- [ ] Are local tools discussed only in the ledger and implementation report?
+- [ ] Are local tools discussed only in the ledger or research memo?
 
-## Process record
+## Evidence record
 
-- [ ] Does the implementation report state what was checked?
-- [ ] Does the implementation report state what was **not** checked, when
-      relevant?
-- [ ] Does the implementation report confirm that no TSV, FST, manifest,
-      packet, memo, bibliography, derivation trace, or pilot report was changed?
+- [ ] Does the ledger retain the source pages, attribution and actual checks?
+- [ ] Does it state what was **not** checked when relevant?
+- [ ] Are scientific adoption and publication certification kept separate?

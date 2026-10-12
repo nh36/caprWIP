@@ -18,6 +18,15 @@ def pytest_configure(config):
     config.addinivalue_line(
         "markers", "runtime: strict provisioned-runtime validation, explicitly not run in portable mode")
 
+def pytest_collection_modifyitems(config, items):
+    if config.getoption("--validation-mode") == "portable":
+        skip = pytest.mark.skip(reason=(
+            "runtime-dependent: not executed in portable mode; "
+            "use --validation-mode=full with the provisioned Foma runtime"))
+        for item in items:
+            if item.get_closest_marker("runtime") is not None:
+                item.add_marker(skip)
+
 
 def pytest_sessionstart(session):
     mode = session.config.getoption("--validation-mode")

@@ -57,6 +57,8 @@ SCANNED_SUFFIXES = {".md", ".tsv", ".py", ".tex", ".txt", ".json", ".yml", ".yam
 # original never had.
 ARCHIVE_MARKERS = (
     "docs/archive/",
+    "lexeme_reports/archive/",
+    "assembly/archive/",
     "debug_snapshots/",
     "dev_notes_slices/",
     "citation_locator_",

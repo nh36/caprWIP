@@ -37,9 +37,6 @@ fi
 
 python3 Germanic/tools/adjudicate.py --refresh
 
-bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh
-bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
-
 if [[ -n "${strict_flag}" ]]; then
   python3 Germanic/tools/build_index_verborum.py ${strict_flag}
   python3 Germanic/tools/adjudicate.py --refresh
@@ -64,6 +61,9 @@ fi
 python3 Germanic/tools/check_index_verborum.py
 python3 Germanic/tools/check_book_occ_id_parity.py
 python3 Germanic/tools/check_bibliography_sanity.py
+
+bash Germanic/docs/sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh --check-fresh
+bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh --check-fresh
 
 docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   -v "${repo_root}":/data -w /data "${image}" -c "

@@ -22,7 +22,8 @@ ENTRY_POINTS = (
 
 
 class PublicationEntryTests(unittest.TestCase):
-    def run_entry(self, entry, refresh_status):
+    def run_entry(self, entry, refresh_status, *, args=(), check_status=0,
+                  render_status=77, semantic_status=0):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             for name in ENTRY_POINTS:
@@ -35,9 +36,13 @@ class PublicationEntryTests(unittest.TestCase):
             commands = {
                 "python3": ('printf "python3 %s\\n" "$*" >> "$CALL_LOG"\n'
                             'if [ "$*" = "Germanic/tools/adjudicate.py --refresh" ]; then\n'
-                            '  exit "$REFRESH_STATUS"\nfi\nexit 0\n'),
+                            '  exit "$REFRESH_STATUS"\nfi\n'
+                            'if [ "$*" = "Germanic/tools/artifact_graph.py --check" ]; then\n'
+                            '  exit "$CHECK_STATUS"\nfi\n'
+                            'if [ "$*" = "Germanic/tools/check_reader_facing_semantics.py" ]; then\n'
+                            '  exit "$SEMANTIC_STATUS"\nfi\nexit 0\n'),
                 "docker": ('printf "docker %s\\n" "$*" >> "$CALL_LOG"\n'
-                           'if [ "$1" = "info" ]; then exit 0; fi\nexit 77\n'),
+                           'if [ "$1" = "info" ]; then exit 0; fi\nexit "$RENDER_STATUS"\n'),
                 "pandoc": 'printf "pandoc\\n" >> "$CALL_LOG"\nexit 77\n',
             }
             for name, body in commands.items():
@@ -45,10 +50,12 @@ class PublicationEntryTests(unittest.TestCase):
                 command.write_text("#!/bin/sh\n" + body, encoding="utf-8")
                 command.chmod(0o755)
             env = dict(os.environ, PATH=f"{bin_dir}{os.pathsep}{os.environ['PATH']}",
-                       CALL_LOG=str(log), REFRESH_STATUS=str(refresh_status))
-            result = subprocess.run(["bash", str(root / entry)], cwd=root,
+                       CALL_LOG=str(log), REFRESH_STATUS=str(refresh_status),
+                       CHECK_STATUS=str(check_status), RENDER_STATUS=str(render_status),
+                       SEMANTIC_STATUS=str(semantic_status))
+            result = subprocess.run(["bash", str(root / entry), *args], cwd=root,
                                     env=env, capture_output=True, text=True)
-            return result, log.read_text(encoding="utf-8").splitlines()
+            return result, log.read_text(encoding="utf-8").splitlines() if log.exists() else []
 
     def test_every_entry_refreshes_before_checks_builders_or_rendering(self):
         for entry in ENTRY_POINTS:
@@ -68,6 +75,33 @@ class PublicationEntryTests(unittest.TestCase):
                                  ["python3 Germanic/tools/adjudicate.py --refresh"])
                 self.assertFalse(any(c.startswith(("docker run ", "pandoc"))
                                      for c in calls), calls)
+
+    def test_combined_build_refreshes_once_and_children_verify(self):
+        result, calls = self.run_entry(ENTRY_POINTS[0], 0, render_status=0)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(calls.count("python3 Germanic/tools/adjudicate.py --refresh"), 1)
+        self.assertEqual(calls.count("python3 Germanic/tools/artifact_graph.py --check"), 2)
+
+    def test_nested_mode_rejects_stale_inputs_before_render(self):
+        for entry in (ENTRY_POINTS[1], ENTRY_POINTS[3]):
+            with self.subTest(entry=entry):
+                result, calls = self.run_entry(
+                    entry, 0, args=("--check-fresh",), check_status=23)
+                self.assertEqual(result.returncode, 23, result.stderr)
+                self.assertEqual(calls, ["python3 Germanic/tools/artifact_graph.py --check"])
+
+    def test_common_semantic_failure_stops_before_nested_rendering(self):
+        result, calls = self.run_entry(ENTRY_POINTS[0], 0, semantic_status=29)
+        self.assertEqual(result.returncode, 29, result.stderr)
+        self.assertNotIn("python3 Germanic/tools/artifact_graph.py --check", calls)
+        self.assertFalse(any(c.startswith("docker run ") for c in calls), calls)
+
+    def test_unknown_nested_option_fails(self):
+        for entry in (ENTRY_POINTS[1], ENTRY_POINTS[3]):
+            with self.subTest(entry=entry):
+                result, calls = self.run_entry(entry, 0, args=("--skip-validation",))
+                self.assertEqual(result.returncode, 2, result.stderr)
+                self.assertEqual(calls, [])
 
 
 class LexicalFreshnessTests(unittest.TestCase):

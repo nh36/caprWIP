@@ -1,189 +1,70 @@
-# Germanic assembly pilot and lexical-volume design
+# Build the CAPR book
 
-This directory now contains three connected layers of work:
+The default publication is the combined sound-change and lexical book:
 
-1. the validated **pilot assembly** used to settle entry layout, trace display,
-   and citation behavior; and
-2. the **book-architecture and class-manifest design** for a future full lexical
-   derivation volume; and
-3. the first **full lexical assembly alpha** built from the seven-class manifest.
-
-The pilot remains deliberately small. The architecture layer defines the corpus
-ordering, and the current full assembly contains 160 elaborated model entries.
-This is distinct from 387 runnable derivation write-ups and 393 reconstruction
-audit records. Current selection/assembly counts are owned by the
-[generated integration summary](../lexeme_reports/pgmc_integration/population_summary.md),
-not by the historical pilot/alpha reports.
-
-The bounded reconstruction-audit integration pilot uses existing mature
-model SOURCE additively and certifies selected source prose through
-`../lexeme_reports/pgmc_integration/editorial_cases.tsv`. It does not expand
-this manuscript to all 387 entries. A generated-only selected case instead
-reuses the existing complete derivation-report insertion layer, with a
-short research-memo source rather than compulsory model boilerplate.
-Canonical `adjudicate.py --refresh` regenerates both publication routes.
-Default assembly preserves the full model prose; the optional regular
-`book_prose` mode remains a separate, unpromoted compact-prose workflow.
-
-## Pilot status
-
-The pilot format is now stable enough to serve as the basis for a full lexical
-assembly alpha:
-
-- generated derivation summary under each headword
-- boxed derivation trace
-- model-entry prose below the trace
-- live internal citation links in PDF output
-- Unicode-safe Docker-backed PDF rendering
-
-See `assembly_pilot_01_report.md` through `assembly_pilot_08_report.md` for the
-incremental pilot passes.
-
-## Pilot contents
-
-The pilot includes these eight model entries, in the stable order recorded in `pilot_manifest.tsv`:
-
-1. `1934-bake-bacan.model.md`
-2. `1962-bow-bēag.model.md`
-3. `1981-craft-cræft.model.md`
-4. `2030-fowl-fugol.model.md`
-5. `2250-thistle-þistles.model.md`
-6. `2278-weapon-wǣpn.model.md`
-7. `2293-will-willa.model.md`
-8. `2308-youth-ġeoguþ.model.md`
-
-## How to run the pilot
-
-From the repository root:
-
-```bash
-bash Germanic/docs/assembly/build_pilot.sh
+```sh
+bash Germanic/docs/assembly/build_capr_book_draft_docker.sh
 ```
 
-The script is path-stable and can also be run from other working directories.
+Run from the repository root with Docker and the locally provisioned scholarly
+holdings/runtime. The wrapper performs canonical refresh before checks and
+rendering. It fails rather than publishing stale inputs. Outputs are
+`capr_book_draft_alpha_01.md` and `.pdf`; `ASSEMBLY_KEEP_DEBUG_TEX=1` retains
+the intermediate TeX for diagnosis. Inspect the rendered pages after changes.
+For portable versus strict validation, see [CI validation](../../../docs/CI_VALIDATION.md).
 
-If local `pandoc` / LaTeX tools are unavailable but Docker is available, use:
+## Edit the source, not the assembly
 
-```bash
-bash Germanic/docs/assembly/build_pilot_docker.sh
-```
+| Material | Editable owner |
+| --- | --- |
+| Book introduction | `capr_book_intro_alpha_01.md` |
+| Sound-change prose and chapter membership | Reader sources and `sound_changes/registry/reader_files.tsv`, routed by `adjudicate.py SCNNN --prepare` |
+| Elaborated lexical prose | `../lexeme_reports/model_entries/*.model.md` |
+| Scoped lexical selection/certification | `../lexeme_reports/pgmc_integration/editorial_cases.tsv` and the existing report manifest |
+| Bibliography | `docs/refs.bib` |
+| Index decisions | `../book/` SOURCE registries and scoped overrides; never distort prose to appease a checker |
 
-That wrapper regenerates `pilot_assembled.md` locally, then renders `.tex` and
-`.pdf` inside a `pandoc/latex` container.
+`artifact_graph.py` is the sole generated-output owner. Its `--inventory`
+lists node kinds, authorities and outputs. `adjudicate.py --refresh` rebuilds
+stale products and checks the fixed points; never maintain another builder list.
+Class manifests, compact traces, lexical aggregate, reader aggregate, combined
+manuscript and index projections are generated.
 
-## Expected outputs
+## Distinct supported presentations
 
-- `pilot_assembled.md` — assembled Markdown with normalized heading levels
-- `pilot_assembled.tex` — LaTeX output, if `pandoc` is available
-- `pilot_assembled.pdf` — PDF output, if `pandoc` and a Unicode-capable LaTeX engine (`xelatex` or `lualatex`) are available
+The default class-manifest book consumes the 160 mature models, preserving
+their complete arguments and all seven derivation classes. The complete
+387-row compact derivation report has a separate selective commentary insertion
+route, currently 18 certified narratives with explicit outstanding obligations.
+The reconstruction survey covers 393 identities including six research-only rows.
+See the [generated population summary](../lexeme_reports/pgmc_integration/population_summary.md)
+for current counts; these are different populations, not competing corpus owners.
 
-## Historical pilot build results
+The optional `book_prose` regular-entry presentation is not the default.
+Cleanup neither promotes it nor turns every derivation into an extended essay.
 
-In the historical local host environment used for pilot 01:
+Standalone renderers remain supported:
 
-- assembled Markdown generation was exercised successfully;
-- `pandoc` was **not installed**, so `.tex` generation did not complete;
-- no PDF engine stage was reached.
+- `build_full_lexical_volume_docker.sh` (or `.sh` with local Pandoc/LaTeX):
+  the selective lexical volume.
+- `../sound_changes/reader_facing/build_reader_facing_local_section_20_docker.sh`:
+  the sound-change reader, with its source-level checks.
+- `build_pilot_docker.sh` (or `.sh`): the eight-entry layout/citation fixture,
+  not a production population or an unfinished mandatory rollout.
 
-Pilot 02 adds and validates a Docker-backed render path because Docker is
-available even where the host lacks local `pandoc`.
+The Python builders implement those presentations; invoke the wrappers for
+publication so freshness is enforced.
 
-In the validated Docker-backed pilot-02 path:
+The combined wrapper refreshes once. It passes `--check-fresh` to the two
+nested Docker renderers, which run the strict graph check and refuse stale
+inputs instead of refreshing again. Called without that option, each renderer
+still refreshes normally. This is not a validation-bypass option.
 
-- `pilot_assembled.md` regenerates on the host;
-- `pilot_assembled.tex` renders successfully in `pandoc/latex`;
-- `pilot_assembled.pdf` renders successfully with `xelatex`;
-- `Noto Serif` / `Noto Sans Mono` are used in the container to preserve the Old
-  English and reconstruction characters that the default Latin Modern fonts
-  dropped.
+## Historical designs and reports
 
-See the pilot reports for the exact build results and the layout decisions that
-landed during those passes.
-
-## Book architecture and class manifests
-
-The current design layer for full lexical assembly includes:
-
-- `book_architecture.md` — proposed structure of the lexical derivation volume
-- `book_architecture_01_report.md` — summary report for the architecture pass
-- `full_assembly_design.md` — design note for a future full assembly script
-- `section_introductions_draft.md` — placeholder section-opening prose
-- `build_class_manifests.py` — helper that scans current `.model.md` entries and
-  writes class-based manifests
-- `manifest_regular.tsv`
-- `manifest_attested_variant.tsv`
-- `manifest_early_analogy.tsv`
-- `manifest_late_analogy.tsv`
-- `manifest_reconstructed_oe.tsv`
-- `manifest_known_unmodelled.tsv`
-- `manifest_unexplained.tsv`
-- `manifest_all_by_class.tsv`
-- `manifest_summary.md`
-- `book_architecture_02_report.md`
-
-These files define the ordering and section architecture used by the full alpha.
-
-The standard full lexical-volume and combined-book shell wrappers first
-run `python3 Germanic/tools/adjudicate.py --refresh`. This regenerates
-stale canonical traces, compact lexical histories and manifests through
-the shared artifact graph before rendering; failure stops the build.
-Use these wrappers for publication rather than invoking individual
-assembly builders against potentially stale inputs.
-
-The class architecture now follows all **seven** current TSV
-`DERIVATION_CLASS` values as first-class book sections:
-
-1. `regular`
-2. `attested_variant`
-3. `early_analogy`
-4. `late_analogy`
-5. `reconstructed_oe`
-6. `known_unmodelled`
-7. `unexplained_unmodelled`
-
-## Full lexical alpha 01
-
-The current full-corpus alpha layer includes:
-
-- `build_full_lexical_volume.py` — assembles the current lexical volume from
-  `manifest_all_by_class.tsv`
-- `build_full_lexical_volume.sh` — host wrapper for Markdown generation and
-  local `pandoc` / PDF builds where available
-- `build_full_lexical_volume_docker.sh` — Docker-backed render path for `.tex`
-  and `.pdf`
-- `full_volume_metadata.yaml` — Pandoc metadata for the full lexical volume
-- `lexical_volume_alpha_01.md`
-- `lexical_volume_alpha_01.tex`
-- `lexical_volume_alpha_01.pdf`
-- `full_lexical_assembly_alpha_01_report.md`
-
-The full alpha uses all seven live TSV `DERIVATION_CLASS` values as first-class
-sections and keeps the pilot layout: derivation summary, boxed trace, and model
-prose.
-
-## How to run the full alpha
-
-From the repository root:
-
-```bash
-bash Germanic/docs/assembly/build_full_lexical_volume.sh
-```
-
-If local `pandoc` / LaTeX tools are unavailable but Docker is available, use:
-
-```bash
-bash Germanic/docs/assembly/build_full_lexical_volume_docker.sh
-```
-
-That wrapper regenerates `lexical_volume_alpha_01.md` locally, then renders
-`.tex` and `.pdf` inside a `pandoc/latex` container with `xelatex` and Noto
-fonts.
-
-## Full-alpha outputs
-
-- `lexical_volume_alpha_01.md` — full assembled Markdown in seven-part order
-- `lexical_volume_alpha_01.tex` — Pandoc-generated LaTeX
-- `lexical_volume_alpha_01.pdf` — Docker-rendered PDF with live citation links
-
-See `full_lexical_assembly_alpha_01_report.md` for counts, output sizes, and
-inspection notes.
+[archive/](archive/) retains the earlier pilot/alpha navigation and the
+[pre-implementation design](archive/full_assembly_design.md) verbatim.
+Future-tense instructions there describe the old design stage, not missing
+implementation. Layout fixtures and published reports are retained where they
+still have a distinct purpose; large generated products are not discarded
+merely because they can be rebuilt.

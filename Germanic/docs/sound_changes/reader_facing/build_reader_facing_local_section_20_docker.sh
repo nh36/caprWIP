@@ -13,7 +13,11 @@ assembled_pdf="${script_dir}/reader_facing_local_section_20.pdf"
 
 cd "${repo_root}"
 
-python3 Germanic/tools/adjudicate.py --refresh
+case "$*" in
+  "") python3 Germanic/tools/adjudicate.py --refresh ;;
+  --check-fresh) python3 Germanic/tools/artifact_graph.py --check ;;
+  *) echo "Usage: $0 [--check-fresh]" >&2; exit 2 ;;
+esac
 
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_style.py
 python3 Germanic/docs/sound_changes/reader_facing/check_reader_facing_citations.py

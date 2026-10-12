@@ -10,7 +10,11 @@ build_log="${script_dir}/lexical_volume_alpha_01_build.log"
 
 cd "${repo_root}"
 
-python3 Germanic/tools/adjudicate.py --refresh
+case "$*" in
+  "") python3 Germanic/tools/adjudicate.py --refresh ;;
+  --check-fresh) python3 Germanic/tools/artifact_graph.py --check ;;
+  *) echo "Usage: $0 [--check-fresh]" >&2; exit 2 ;;
+esac
 
 if ! command -v docker >/dev/null 2>&1; then
   echo "docker not found; cannot run Docker-based render." >&2

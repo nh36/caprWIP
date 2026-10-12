@@ -189,6 +189,35 @@ def test_full_pytest_runtime_gate_fails_instead_of_skipping_missing_manifest():
         with pytest.raises(AssertionError, match="build manifest missing"):
             test_full_runtime_node_freshness(request)
 
+@pytest.mark.parametrize("mode,expected_skips", [("portable", 1), ("full", 0)])
+def test_runtime_capability_selection_covers_live_evidence(mode, expected_skips):
+    from conftest import pytest_collection_modifyitems
+    from types import SimpleNamespace
+    from test_evidence_interface import EvidenceIntegrationTests
+
+    assert any(mark.name == "runtime" for mark in EvidenceIntegrationTests.pytestmark)
+    skipped = []
+    runtime = SimpleNamespace(get_closest_marker=lambda name: object(),
+                              add_marker=skipped.append)
+    portable = SimpleNamespace(get_closest_marker=lambda name: None,
+                               add_marker=lambda mark: pytest.fail("portable test skipped"))
+    pytest_collection_modifyitems(
+        SimpleNamespace(getoption=lambda name: mode), [runtime, portable])
+    assert len(skipped) == expected_skips
+
+@pytest.mark.parametrize("module_name", [
+    "test_sc021_adjudication", "test_sc023_adjudication", "test_sc024_adjudication",
+    "test_sc025_sc104_adjudication", "test_sc026_sc027_adjudication",
+])
+def test_live_probe_decorators_declare_runtime_capability(module_name):
+    module = __import__(module_name)
+
+    def test_probe():
+        pass
+
+    marked = module.requires_runtime(test_probe)
+    assert any(mark.name == "runtime" for mark in marked.pytestmark)
+
 
 def test_unknown_adjudication_still_fails_before_runtime_validation():
     import adjudicate

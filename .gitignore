@@ -1,5 +1,6 @@
 
 .DS_Store
+/.copilot/session-state/
 *_debug*.bin
 *_prev*.bin
 *_sandbox*.bin
