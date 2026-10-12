@@ -48,7 +48,8 @@ SC030	SC029	reciprocal_chronology	earlier_boundary	independently_demonstrated	fe
 SC030	SC032	reciprocal_chronology	later_boundary	independently_demonstrated	feeding	34	38
 SC008	SC031	one_sided_chronology	later_boundary	independently_demonstrated	feeding	8	9
 SC032	SC030	reciprocal_chronology	earlier_boundary	independently_demonstrated	feeding	38	34
-SC032	SC040	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	38	84
+SC032	SC040	technical_computational	later_boundary	technical	displacement_witness	38	84
+SC031	SC032	one_sided_chronology	later_boundary	independently_demonstrated	feeding	9	38
 SC035	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		40	
 SC035	SC107	technical_computational	later_boundary	technical	displacement_witness	40	47
 SC036	SC019	broad_far_chronology	earlier_boundary	independently_demonstrated	displacement_witness	41	19

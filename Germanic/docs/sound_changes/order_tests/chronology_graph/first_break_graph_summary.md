@@ -12,7 +12,7 @@ chronology constraints.
 ## Totals
 
 - total node count: `72`
-- total edge count: `138`
+- total edge count: `139`
 
 ### Node counts by card_type
 
@@ -23,10 +23,10 @@ chronology constraints.
 | `mixed` | 14 |
 | `negative_boundary` | 9 |
 | `one_sided_chronology` | 7 |
-| `reciprocal_or_near_reciprocal` | 25 |
+| `reciprocal_or_near_reciprocal` | 24 |
 | `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
-| `source_partial_chain` | 6 |
+| `source_partial_chain` | 7 |
 
 ### Edge counts by relation_type
 
@@ -38,7 +38,7 @@ chronology constraints.
 | `one_sided_chronology` | 40 |
 | `reciprocal_chronology` | 34 |
 | `runner_limited_boundary` | 19 |
-| `technical_computational` | 6 |
+| `technical_computational` | 7 |
 
 ## Chronology edges
 
@@ -67,7 +67,7 @@ chronology constraints.
 1. `SC030 -> SC032` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `believe; bow; bread; dream; flea`; forms: PGmc `*galáubijaną` yields expected OE `ġelīefan`, but the later-shifted variant yields `+?` (no output); PGmc `*bráudą` likewise yields no output instead of expected `brēad`; PGmc `*dráugmaz` yields no output instead of expected `drēam`
 1. `SC008 -> SC031` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `four; you`; forms: Coronal+w assimilation supplies ww, and short-Vww reanalysis supplies eu/iu plus retained w.
 1. `SC032 -> SC030` (reciprocal_chronology; independently_demonstrated; witness role: feeding) — lexemes: `believe; bow; bread; dream; flea`; forms: PGmc `*galáubijaną` yields expected OE `ġelīefan`, but the earlier-shifted variant yields `+?` (no output); PGmc `*báug` likewise yields no output instead of expected `bēag`; PGmc `*bráudą` yields no output instead of expected `brēad`
-1. `SC032 -> SC040` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `head`; forms: PGmc `*xáubudą` yields expected OE `hēafod`, but the later-shifted variant yields `hēafud`
+1. `SC031 -> SC032` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `chew; dew; four; hew; you`; forms: Inherited/coronal-created a/e/i+ww gives au/eu/iu plus retained w; SC030 fronts au and SC032 realizes the long English products.
 1. `SC036 -> SC019` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `soul`; forms: PGmc `*sáiwalō` yields expected OE `sāwol`, but the earlier-shifted variant yields `sāwel`
 1. `SC036 -> SC040` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `soul; world`; forms: PGmc `*sáiwalō` yields expected OE `sāwol`, but the later-shifted variant yields `sāwul`; PGmc `*wír-àldu` likewise yields `weoruld` instead of expected `weorold`
 1. `SC039 -> SC040` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `widow`; forms: PGmc `*wíduwōn` yields expected OE `wuduwe`, but the later-shifted variant yields `wudowe`
@@ -153,6 +153,7 @@ chronology constraints.
 1. `SC026 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC027 -> SC087` (no_break_search_boundary)
 1. `SC029 -> PWGmcChanges` (runner_limited_boundary)
+1. `SC032 -> SC040` (technical_computational)
 1. `SC035 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC035 -> SC107` (technical_computational)
 1. `SC037 -> PWGmcChanges` (runner_limited_boundary)

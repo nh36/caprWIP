@@ -3,7 +3,8 @@
 Current dispositions are in sections16,18–19: approved early inherited-glide
 reanalysis/prosodic apocope, knee's regular short dative and hue's separate
 j-created reanalysis/long-io realization are implemented and published.
-SC032/034 retain their independently pending operations; unchanged SC106
+SC032's current component adjudication is in section20; SC034 retains
+its independently pending operation. Unchanged SC106
 is now compatibility, no longer a live hue residual.
 Sections 1–15 preserve the earlier scaffold, incumbent observations and
 private trials. Their old composition statements, displacement witnesses
@@ -809,3 +810,40 @@ hue in section6.82, pp.185–187, and the SC033/106/110 rule blocks on
 pp.67–68. The SC033 memo records the complete closeout and archive/index
 checks. Remaining SC032 components follow this published disposition
 rather than being silently adjudicated by its realization interface.
+
+## 20. SC032 adjudication: quantity-distinct English realization
+
+The SC032 memo owns the fresh isolated-runtime census, all nine literal
+clauses, source ledger and REFORMULATE verdict. All32 selected applications
+are atomic long-tier realization:20 fronted-au,10 eu and2 iu; there are
+31 original380 applications and one additional you application. No row
+has overlapping clauses. The three unaccented atomic alternatives and
+three split short helpers have no current application. Their formal
+retention is not a historical witness or proof of the old palatal-glide
+comment. All executable bytes, corpus fields, selected contexts, adopted
+knee/hue decisions and frozen fingerprints are unchanged.
+
+SC032 is no longer characterized as one WS-specific smoothing/leveling
+law. English nucleus tensing, subsequent offglide developments and later
+io/eo convergence are distinct historical propositions
+([@RingeTaylor2014, pp.170–175; @Campbell1959, pp.53–54,116–118,124–126]).
+Au-to-ea has broader English distribution with Northumbrian negatives;
+eu realization is broader, whereas direct iu-to-eo packages the selected
+WS endpoint. English-stage/scope metadata summarizes that compound proxy,
+not a uniform date or an adopted single AF-stem change.
+
+SC030 feeding remains supported for fronted au alone; the reciprocal card
+row is the same earlier-boundary observation, not reverse history.
+Inherited/coronal-created SC031 products feed their later English
+realization. Friend's contraction-created iu and you's adopted weak-final
+path remain separately explained. Hue reaches separate long io before the
+ordinary matcher; knee retains short pre-w breaking. No strict order of
+the whole bundle against mutation or breaking is inferred.
+
+The head/SC040 boundary is demoted to technical recognition: internal
+aeu is absent from the lowered rule's vowel class. The old displaced
+hēafud observation remains in its frozen card, but it does not establish
+historical offglide-conditioned lowering. Campbell documents hēafud/hēafod
+variation (pp.155–156). SC034's singleton population is not adjudicated.
+Lexical SOURCE entries are separately owned; this verdict supplies editorial
+implications without changing their reconstructions, cells or targets.

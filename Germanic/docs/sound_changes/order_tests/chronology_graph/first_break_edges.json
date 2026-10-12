@@ -188,13 +188,13 @@
     },
     {
       "change_id": "SC032",
-      "display_name": "OE Diphthong Leveling",
+      "display_name": "Quantity-distinct English diphthong realization",
       "lifecycle_status": "active",
       "rule_name": "OEDiphthongLeveling",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC032-oe-diphthong-leveling.md",
-      "card_type": "reciprocal_or_near_reciprocal",
+      "card_type": "source_partial_chain",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC030 later, and the 18-row earlier failure set should be narrated as no-output (`+?`) derivations rather than as surface forms."
+      "short_summary": "SC030 feeds only the fronted-au component; SC031 feeds nonhomorganic glide products. Head/SC040 is token-recognition serialization, not independent historical chronology; archived +? failures do not date the event."
     },
     {
       "change_id": "SC033",
@@ -1305,16 +1305,30 @@
     {
       "source_change_id": "SC032",
       "target_change_id": "SC040",
+      "relation_type": "technical_computational",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "displacement_witness",
+      "representative_lexemes": "head",
+      "representative_forms": "Archived displacement: PGmc `*xáubudą` gives `hēafud` rather than selected `hēafod`; current SC032 changes *áeu to *ēa, allowing SC040 to recognize the preceding vowel.",
+      "strength": "technical",
+      "interpretation_category": "technical_computational",
+      "reciprocal_group_id": "",
+      "notes": "SC032 adjudication: atomic aeu/áeu is absent from EnglishStarVocalic; SC040 cannot see that internal vowel until SC032 realizes it. This is model-local serialization, not a source-proven offglide/lowering edge. Campbell 1959 pp.155-156 documents hēafud/hēafod variation. Frozen card/measurement unchanged."
+    },
+    {
+      "source_change_id": "SC031",
+      "target_change_id": "SC032",
       "relation_type": "one_sided_chronology",
       "direction_basis": "later_boundary",
       "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
-      "representative_lexemes": "head",
-      "representative_forms": "PGmc `*xáubudą` yields expected OE `hēafod`, but the later-shifted variant yields `hēafud`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "witness_role": "feeding",
+      "representative_lexemes": "chew; dew; four; hew; you",
+      "representative_forms": "Inherited/coronal-created a/e/i+ww gives au/eu/iu plus retained w; SC030 fronts au and SC032 realizes the long English products.",
+      "strength": "tight_local",
+      "interpretation_category": "source_partial_chain",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary reciprocates SC030 later, and the 18-row earlier failure set should be narrated as no-output (`+?`) derivations rather than as surface forms."
+      "notes": "Ringe-Taylor 2014 pp.41-42,65-66 independently supplies the early reanalysis and pp.172-175 its later English outcomes. Applies to the nonhomorganic products, not homorganic uww, all nine SC032 clauses or the date of later io/eo merger. No strict pre-j edge follows from serialization."
     },
     {
       "source_change_id": "SC035",

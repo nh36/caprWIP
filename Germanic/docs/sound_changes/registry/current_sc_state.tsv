@@ -46,7 +46,7 @@ SC030	OEAuBrightening	historical_sound_change	Old English	English brightening of
 SC033	OEEwLongDiphthong	support_stage	Old English	J-created palatalized-glide reanalysis				adjudicated	REFORMULATE/SPLIT	37	35
 SC106	OEJWWSimplification	support_stage	Old English	Retained j-created glide compatibility				unadjudicated		38	36
 SC110	OEJGlideIO	support_stage	Old English	Palatalized-glide long-io realization				unadjudicated		39	37
-SC032	OEDiphthongLeveling	historical_sound_change	Old English	OE Diphthong Leveling	ws_oe	west_saxon	A	unadjudicated		40	38
+SC032	OEDiphthongLeveling	historical_sound_change	Old English	Quantity-distinct English diphthong realization	oe	english_specific	A	adjudicated	REFORMULATE	40	38
 SC034	OEAwLongDiphthong	historical_sound_change	Old English	OE Aw Long Diphthong	ws_oe	west_saxon	A	unadjudicated		41	39
 SC035	OEPrefixAReduction	historical_sound_change	Old English	OE Prefix A Reduction Early	oe	english_specific	A	unadjudicated		42	40
 SC036	OEInterStressRaising	historical_sound_change	Old English	OE Inter Stress Raising	oe	english_specific	A	unadjudicated		43	41

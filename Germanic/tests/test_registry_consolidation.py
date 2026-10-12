@@ -204,7 +204,7 @@ class NextScTests(unittest.TestCase):
     def test_next_sc_derives_from_registry_state(self):
         reg = views.read_tsv(views.SC_REGISTRY)
         nxt = adjudicate.next_sc()
-        self.assertEqual(nxt, "SC032")
+        self.assertEqual(nxt, "SC034")
         row = {r["sc_id"]: r for r in reg}[nxt]
         self.assertEqual(row["lifecycle_status"], "active")
         self.assertNotEqual(row["adjudication_status"], "adjudicated")

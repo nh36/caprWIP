@@ -22,7 +22,7 @@ digraph first_break_chronology {
   "SC029" [label="SC029\nPre-OE resolution of *awj to *auj"];
   "SC030" [label="SC030\nEnglish brightening of *au to *æu"];
   "SC031" [label="SC031\nInherited short-Vww reanalysis"];
-  "SC032" [label="SC032\nOE Diphthong Leveling"];
+  "SC032" [label="SC032\nQuantity-distinct English diphthong realization"];
   "SC033" [label="SC033\nJ-created palatalized-glide reanalysis"];
   "SC034" [label="SC034\nOE Aw Long Diphthong"];
   "SC035" [label="SC035\nOE Prefix A Reduction Early"];
@@ -120,7 +120,8 @@ digraph first_break_chronology {
   "SC030" -> "SC032" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC008" -> "SC031" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC032" -> "SC030" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
-  "SC032" -> "SC040" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC032" -> "SC040" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC031" -> "SC032" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC035" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC035" -> "SC107" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC036" -> "SC019" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
