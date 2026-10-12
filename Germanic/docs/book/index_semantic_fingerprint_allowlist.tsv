@@ -1,4 +1,5 @@
 action	language	form	form_role	source_scope	source_ref	note
+remove	pgmc	*kwedu-2	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	Released ea5974c1 separated the dictionary homonym number from the phonological stem. Record that existing source correction without changing the frozen fingerprint snapshot or current scholarly prose.
 add	oe	cneowe	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md	SC033 approved regular dative target; HoggGrammar2011 pp.21-22,86 and Campbell1959 pp.232-233.
 add	oe	cneowe	target_form	lexical_heading	knee — OE cneowe	SC033 approved cell migration and detailed lexical model in late analogy/paradigm-cell selection.
 add	oe	cneowe	target_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md	Explicit selected dative comparison table; SC033 approved target.

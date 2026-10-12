@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT / "Germanic/docs/assembly"))
 import artifact_graph
 import build_class_manifests
 import check_repository_cleanup as cleanup
+import check_reader_facing_semantics as semantics
 import oe_lexeme_report_coverage as coverage
 from check_bibliography_sanity import parse_entries
 
@@ -81,6 +82,17 @@ class CleanupTests(unittest.TestCase):
             self.assertEqual(artifact_graph.inventory(), [{
                 "name": "fixture", "kind": "projection", "authority": "source fixture",
                 "outputs": ["fixture.md"]}])
+
+    def test_released_cud_index_removal_is_exact_and_still_guarded(self):
+        semantics.run_index_fingerprint_checks()
+        additions, removals, errors = semantics._load_allowlist()
+        key = ("pgmc", "", "*kwedu-2", "source_protoform", "broad_prose_decision",
+               "Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md")
+        self.assertIn(key, removals)
+        with patch.object(semantics, "_load_allowlist",
+                          return_value=(additions, removals - {key}, errors)):
+            with self.assertRaisesRegex(AssertionError, "fingerprint drift"):
+                semantics.run_index_fingerprint_checks()
 
 
 if __name__ == "__main__":

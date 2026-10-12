@@ -22,7 +22,8 @@ ENTRY_POINTS = (
 
 
 class PublicationEntryTests(unittest.TestCase):
-    def run_entry(self, entry, refresh_status, *, args=(), check_status=0, render_status=77):
+    def run_entry(self, entry, refresh_status, *, args=(), check_status=0,
+                  render_status=77, semantic_status=0):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             for name in ENTRY_POINTS:
@@ -37,7 +38,9 @@ class PublicationEntryTests(unittest.TestCase):
                             'if [ "$*" = "Germanic/tools/adjudicate.py --refresh" ]; then\n'
                             '  exit "$REFRESH_STATUS"\nfi\n'
                             'if [ "$*" = "Germanic/tools/artifact_graph.py --check" ]; then\n'
-                            '  exit "$CHECK_STATUS"\nfi\nexit 0\n'),
+                            '  exit "$CHECK_STATUS"\nfi\n'
+                            'if [ "$*" = "Germanic/tools/check_reader_facing_semantics.py" ]; then\n'
+                            '  exit "$SEMANTIC_STATUS"\nfi\nexit 0\n'),
                 "docker": ('printf "docker %s\\n" "$*" >> "$CALL_LOG"\n'
                            'if [ "$1" = "info" ]; then exit 0; fi\nexit "$RENDER_STATUS"\n'),
                 "pandoc": 'printf "pandoc\\n" >> "$CALL_LOG"\nexit 77\n',
@@ -48,7 +51,8 @@ class PublicationEntryTests(unittest.TestCase):
                 command.chmod(0o755)
             env = dict(os.environ, PATH=f"{bin_dir}{os.pathsep}{os.environ['PATH']}",
                        CALL_LOG=str(log), REFRESH_STATUS=str(refresh_status),
-                       CHECK_STATUS=str(check_status), RENDER_STATUS=str(render_status))
+                       CHECK_STATUS=str(check_status), RENDER_STATUS=str(render_status),
+                       SEMANTIC_STATUS=str(semantic_status))
             result = subprocess.run(["bash", str(root / entry), *args], cwd=root,
                                     env=env, capture_output=True, text=True)
             return result, log.read_text(encoding="utf-8").splitlines() if log.exists() else []
@@ -85,6 +89,12 @@ class PublicationEntryTests(unittest.TestCase):
                     entry, 0, args=("--check-fresh",), check_status=23)
                 self.assertEqual(result.returncode, 23, result.stderr)
                 self.assertEqual(calls, ["python3 Germanic/tools/artifact_graph.py --check"])
+
+    def test_common_semantic_failure_stops_before_nested_rendering(self):
+        result, calls = self.run_entry(ENTRY_POINTS[0], 0, semantic_status=29)
+        self.assertEqual(result.returncode, 29, result.stderr)
+        self.assertNotIn("python3 Germanic/tools/artifact_graph.py --check", calls)
+        self.assertFalse(any(c.startswith("docker run ") for c in calls), calls)
 
     def test_unknown_nested_option_fails(self):
         for entry in (ENTRY_POINTS[1], ENTRY_POINTS[3]):

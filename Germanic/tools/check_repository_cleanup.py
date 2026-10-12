@@ -59,8 +59,13 @@ def protected(path: str) -> bool:
         or path.startswith("Germanic/fsts/") and p.suffix == ".txt"
         or "/sound_changes/cascade_baseline/" in path
         or "/sound_changes/audits/" in path
+        or "/sound_changes/book_dossiers/" in path
+        or "/sound_changes/literature_dossiers/" in path
         or path.startswith("Germanic/docs/archive/")
         or path.endswith((".model.md", ".source_ledger.md"))
+        or path.startswith(str(LEXICAL / "research_memos") + "/")
+        and p.name.split("-", 1)[0].isdigit()
+        or "/assembly/book_prose/" in path
         or path == str(LEXICAL / "pgmc_integration/editorial_cases.tsv")
         or path == str(LEXICAL / "report_manifest.tsv")
         or path.startswith(str(LEXICAL / "pgmc_reconstructions") + "/")
@@ -100,7 +105,7 @@ def audit() -> dict:
         if not current.is_file() or blob_id(current) != old[path]:
             errors.append(f"protected cleanup SOURCE changed: {path}")
     listed = subprocess.check_output(
-        ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"],
+        ["git", "ls-files", "-z", "--cached"],
         cwd=ROOT).decode().split("\0")
     current = sorted({p for p in listed if p and (ROOT / p).is_file()})
     return {
