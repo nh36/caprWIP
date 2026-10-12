@@ -15,18 +15,10 @@ approval gate applies.
 Use the narrow canonical interface. Do not search the repository, inspect
 Docker mounts, locate `.bin` files, or run `foma`/`flookup` by hand.
 
-1. `python3 Germanic/tools/adjudicate.py --next`
-2. `python3 Germanic/tools/adjudicate.py SCNNN --prepare` — reading packet
-3. `python3 Germanic/tools/adjudicate.py SCNNN --evidence` — rebuilds the
-   FSTs in the container and prints the live firing census and witness
-   pre/post forms
-4. Investigate the scholarship; edit SOURCE files per
-   `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md`
-5. `python3 Germanic/tools/adjudicate.py SCNNN --finalize`
-6. `cd Germanic/tests && python3 -m pytest -q`
-7. Commit and push.
-
-Start at `Germanic/docs/README.md` for what is SOURCE / GENERATED / ARCHIVE.
+Start at `Germanic/docs/CURRENT_STATE.md` for the canonical commands and
+`Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` for the scientific procedure.
+`Germanic/docs/README.md` routes all other tasks and distinguishes
+SOURCE / GENERATED / ARCHIVE. Do not maintain another copy of that procedure here.
 
 ## Everything else
 
