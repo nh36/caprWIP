@@ -6,14 +6,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  pytest:
+  portable:
+    name: Portable validation (not full local science validation)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install test runner
         run: python -m pip install pytest
-      - name: Run Germanic host-side test suite
-        run: python -m pytest -q Germanic/tests
+      - name: Validate tracked science and portable projections
+        run: python Germanic/tools/run_portable_checks.py
+      - name: Upload complete validation logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portable-validation-logs
+          path: |
+            .ci-results/*.log
+            .ci-results/*.xml
+            .ci-results/*.md
+          if-no-files-found: error
+          include-hidden-files: true

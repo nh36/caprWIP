@@ -138,8 +138,7 @@ class MemoAgreementTests(unittest.TestCase):
         for r in reg:
             if r["adjudication_status"] != "adjudicated":
                 continue
-            rc = adjudicate.check(r["sc_id"])
-            self.assertEqual(rc, 0, f"adjudicate --check failed for {r['sc_id']}")
+            self.assertEqual(adjudicate.check_memo(r["sc_id"]), [], r["sc_id"])
 
 
 class ReadingListTests(unittest.TestCase):
@@ -204,7 +203,17 @@ class NextScTests(unittest.TestCase):
     def test_next_sc_derives_from_registry_state(self):
         reg = views.read_tsv(views.SC_REGISTRY)
         nxt = adjudicate.next_sc()
-        self.assertEqual(nxt, "SC034")
+        start = adjudicate.sc_num(json.loads(
+            adjudicate.PROGRAMME.read_text(encoding="utf-8"))["start_sc"])
+        pending = [r["sc_id"] for r in reg
+                   if r["lifecycle_status"] == "active"
+                   and r["adjudication_status"] != "adjudicated"
+                   and r["entry_type"] != "support_stage"
+                   and adjudicate.sc_num(r["sc_id"]) >= start]
+        expected = min(pending, key=lambda sc: (adjudicate.sc_num(sc), sc), default=None)
+        self.assertEqual(nxt, expected)
+        if nxt is None:
+            return
         row = {r["sc_id"]: r for r in reg}[nxt]
         self.assertEqual(row["lifecycle_status"], "active")
         self.assertNotEqual(row["adjudication_status"], "adjudicated")

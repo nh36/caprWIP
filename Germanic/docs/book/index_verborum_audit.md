@@ -18,9 +18,9 @@
 - Reader-facing example candidate rows: 1256
 - Reader-facing rows include_in_example_index=yes: 543
 - Reader-facing rows include_in_example_index=no: 713
-- Audit-only candidates needing review: 6
-- True remaining unresolved: 6
-- Table-scanned unresolved candidates: 4
+- Audit-only candidates needing review: 0
+- True remaining unresolved: 0
+- Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 458
 - Broad-prose notation / compound expressions: 478
 - Broad-prose evidence suggestions: 306
@@ -35,10 +35,10 @@
 - Table semantic ignored: 3
 - Table semantic notation / compound expressions: 15
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 362
+- Ignored fragments or sequences: 364
 - Possible extraction garbage: 13
 - Excluded intermediate trace forms: 1344
-- New unresolved candidates relative to baseline: 6
+- New unresolved candidates relative to baseline: 0
 - Baseline candidates now resolved or ignored: 0
 
 ## Internal production forms by language
@@ -2745,17 +2745,11 @@
 
 ## Likely Old English forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `cnēo` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:146 | table_candidate |
-| `cnēow` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:147 | table_candidate |
+_None._
 
 ## Likely Proto-Germanic forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `*knéwai` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:143 | table_candidate |
-| `reconstruction` | Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:62 | broad_prose_candidate |
+_None._
 
 ## Likely Proto-West Germanic forms
 
@@ -2787,9 +2781,7 @@ _None._
 
 ## Likely Gothic forms
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `*bu3-dē` | Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:41 | broad_prose_candidate |
+_None._
 
 ## Likely Old Dutch forms
 
@@ -2833,18 +2825,11 @@ _None._
 
 ## Likely ordinary-language false positives
 
-| Form | Source | Candidate origin |
-| --- | --- | --- |
-| `cneowes` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:145 | table_candidate |
+_None._
 
 ## Table-scanned unresolved candidates
 
-| Form | Source | Nearest heading | Context |
-| --- | --- | --- | --- |
-| `cnēo` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:146 | ### Paradigm comparison and confidence | | OE endingless singular | cnēo | Regular long offglide-derived form | |
-| `cnēow` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:147 | ### Paradigm comparison and confidence | | OE familiar nominative | cnēow | Endingless form with restored w | |
-| `cneowes` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:145 | ### Paradigm comparison and confidence | | OE regular genitive singular | cneowes | Independent short-stem comparison | |
-| `*knéwai` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:143 | ### Paradigm comparison and confidence | | Selected PGmc dative singular | *knéwai | Explicit inherited-cell construction under the preferred *-ai analysis | |
+_None._
 
 ## Table semantic suggestions
 
@@ -3261,6 +3246,7 @@ _None._
 | `*bāną` | Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33 |
 | `*bigínnan` | Germanic/docs/lexeme_reports/model_entries/1943-begin-beġinnan.model.md:33 |
 | `breaking` | Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29 |
+| `*bu3-dē` | Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:41 |
 | `cascade` | Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:167 |
 | `citation` | Germanic/docs/lexeme_reports/model_entries/2181-shilling-sċilling.model.md:25 |
 | `comparator` | Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:39 |
@@ -3279,6 +3265,7 @@ _None._
 | `long` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:63 |
 | `mutation` | Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:205 |
 | `mutation` | Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:230 |
+| `reconstruction` | Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:62 |
 | `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 |
 | `*wér-uldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:50 |
 
@@ -3357,39 +3344,19 @@ _None._
 
 ## Top repeated unresolved forms
 
-| Form | Count |
-| --- | --- |
-| `*bu3-dē` | 1 |
-| `cnēo` | 1 |
-| `cnēow` | 1 |
-| `cneowes` | 1 |
-| `*knéwai` | 1 |
-| `reconstruction` | 1 |
+_None._
 
 ## Unresolved forms by source file
 
-| Source file | Count |
-| --- | --- |
-| Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md | 4 |
-| Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md | 1 |
-| Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md | 1 |
+_None._
 
 ## Top unresolved table files
 
-| Source file | Count |
-| --- | --- |
-| Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md | 4 |
+_None._
 
 ## New unresolved candidates relative to baseline
 
-| Form | Source | Category | Nearest heading |
-| --- | --- | --- | --- |
-| `*bu3-dē` | Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:41 | likely_goth | ### The connectorless formation |
-| `cnēo` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:146 | likely_oe | ### Paradigm comparison and confidence |
-| `cnēow` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:147 | likely_oe | ### Paradigm comparison and confidence |
-| `cneowes` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:145 | likely_false_positive | ### Paradigm comparison and confidence |
-| `*knéwai` | Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:143 | likely_pgmc | ### Paradigm comparison and confidence |
-| `reconstruction` | Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:62 | likely_pgmc | ### Development to Old English |
+_None._
 
 ## Resolved or ignored baseline candidates
 

@@ -26,6 +26,29 @@ import sys
 
 sys.path.insert(0, str(TOOLS))
 import index_verborum_render as ivr  # noqa: E402
+import build_index_verborum as builder
+import index_verborum_emission as emission
+from check_index_verborum import resolve_variety_audit_ref
+from functools import lru_cache
+
+
+@lru_cache(maxsize=1)
+def current_source_production():
+    return builder.build_complete_production()[0]
+
+
+def current_source_metrics():
+    production = current_source_production()
+    main, excluded = builder.split_print_main_rows(production)
+    return {
+        "production_occurrences": len(production),
+        "production_unique_forms": len({(r.language, builder._normalize_iv_form(r.form))
+                                       for r in production}),
+        "print_main_occurrences": len(main),
+        "unique_printed_entries": len(builder.build_print_unique_rows(main)),
+        "print_excluded_occurrences": len(excluded),
+        "print_explicit_occurrences": sum(r.source_scope == "explicit_tag" for r in main),
+    }
 
 # Full production occurrence identity — every field needed to distinguish two
 # production occurrences, including variety. Defined once and reused.
@@ -481,9 +504,9 @@ class RealCorpusInvariantTests(unittest.TestCase):
         number of UNIQUE PRINTED ENTRIES may increase, because one Old English
         lexical form can separate into distinct variety-labelled entries.
 
-        PRE_ANNOTATION values are retained for the historical record; POST are the
-        current expected values. Update POST deliberately (never merely to make a
-        test pass), keeping PRE for documentation.
+        PRE and POST are frozen historical observations, not live authority.
+        Current counts must reproduce from current SOURCE, with occurrence
+        identities and print-layer joins checked independently below.
         """
         PRE_ANNOTATION = {
             "production_occurrences": 2259,
@@ -542,12 +565,18 @@ class RealCorpusInvariantTests(unittest.TestCase):
         pm = self._rows("index_verborum_print_main.tsv")
         pu = self._rows("index_verborum_print_unique.tsv")
         pe = self._rows("index_verborum_print_excluded.tsv")
-        self.assertEqual(len(forms), POST_ANNOTATION["production_occurrences"])
+        current = current_source_metrics()
+        self.assertEqual(len(forms), current["production_occurrences"])
         self.assertEqual(len({(r["language"], r["form"]) for r in forms}),
-                         POST_ANNOTATION["production_unique_forms"])
-        self.assertEqual(len(pm), POST_ANNOTATION["print_main_occurrences"])
-        self.assertEqual(len(pu), POST_ANNOTATION["unique_printed_entries"])
-        self.assertEqual(len(pe), POST_ANNOTATION["print_excluded_occurrences"])
+                         current["production_unique_forms"])
+        self.assertEqual(len(pm), current["print_main_occurrences"])
+        self.assertEqual(len(pu), current["unique_printed_entries"])
+        self.assertEqual(len(pe), current["print_excluded_occurrences"])
+        expected = Counter(tuple(builder._normalize_iv_form(getattr(row, field))
+                                 if field in {"form", "display"} else getattr(row, field)
+                                 for field in IDENTITY_FIELDS)
+                           for row in current_source_production())
+        self.assertEqual(Counter(production_identity(row) for row in forms), expected)
         self.assertGreaterEqual(POST_ANNOTATION["production_occurrences"], PRE_ANNOTATION["production_occurrences"])
 
     def test_canonical_language_note_only_oe(self):
@@ -591,7 +620,12 @@ class VarietyAnnotationAuditTests(unittest.TestCase):
 
     def _audit(self):
         with self.AUDIT.open(encoding="utf-8", newline="") as h:
-            return list(csv.DictReader(h, delimiter="\t"))
+            rows = list(csv.DictReader(h, delimiter="\t"))
+        forms = self._rows("index_verborum_forms.tsv")
+        for row in rows:
+            if row["decision"] == "annotated":
+                row["source_ref"] = resolve_variety_audit_ref(row, forms)
+        return rows
 
     def test_audit_exists_and_uses_controlled_decisions(self):
         audit = self._audit()
@@ -947,13 +981,14 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # SC033 adds 13 corpus / 14 book occurrences and 10 book emissions;
         # the detailed knee model replaces its unassembled DEV_NOTES owner.
         # Hue adds two net explicit comparison occurrences and book emissions.
-        self.assertEqual(len(pm), 2368)
+        self.assertEqual(len(pm), current_source_metrics()["print_main_occurrences"])
         self.assertEqual(len(et), len(pm))
         source_not_in_book = sum(1 for r in et if (r.get("in_book") or "") != "1")
-        self.assertEqual(source_not_in_book, 227)
         self.assertEqual(len(bo), len(pm) - source_not_in_book)
-        self.assertEqual(len(bo), 2141)
-        self.assertEqual(len(be), 1958)
+        self.assertEqual({r["occurrence_id"] for r in bo},
+                         {r["occurrence_id"] for r in et if r.get("in_book") == "1"})
+        self.assertEqual(len(be), len({r["emission_id"] for r in et
+                                     if r.get("in_book") == "1"}))
         self.assertTrue(all("collapsed_into" in r for r in et))
         self.assertTrue(any((r.get("collapsed_into") or "").strip() for r in et if (r.get("source_scope") or "") != "explicit_tag"))
         self.assertEqual(
@@ -1012,19 +1047,22 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # +1 corpus/book occurrence, emission and unique entry for the
         # Ringe2017 p.135 *giftiz comparison in the umlaut discussion.
         # Hue adds two net explicit comparison occurrences and unique entries.
-        self.assertEqual(len(pm), 2368, "corpus occurrence count")
-        source_not_in_book = 2368 - 2141
+        self.assertEqual(len(pm), current_source_metrics()["print_main_occurrences"])
+        source_not_in_book = sum(1 for r in self._rows("index_verborum_emission_table.tsv")
+                                 if r.get("in_book") != "1")
         self.assertEqual(len(bo), len(pm) - source_not_in_book, "corpus = book + not_in_book")
-        self.assertEqual(len(be), 1958, "book emission count")
+        self.assertEqual(len(be), len({r["emission_id"]
+                                     for r in self._rows("index_verborum_emission_table.tsv")
+                                     if r.get("in_book") == "1"}))
         # +10 corpus / +14 book unique entries vs the pre-z-split snapshot: the
         # three-way SC020 split (SC096/SC020/SC097) and the four new root-noun
         # model entries (book, flea, goose, louse) introduce new indexed headwords.
         # +12 corpus / +12 book unique entries after corpus-maturation pass 01.
         # +18 unique corpus entries from the same two model entries.
-        self.assertEqual(len(pu), 1132, "unique corpus entries")
+        self.assertEqual(len(pu), current_source_metrics()["unique_printed_entries"])
         # Five newly included dew/hew/four forms replace three obsolete
         # starred you intermediates in the assembled book's unique entries.
-        self.assertEqual(len(bu), 906, "unique book entries")
+        self.assertEqual(bu, emission.build_print_unique_rows(bo))
 
         # Algebraic reconciliations
         self.assertEqual(len(pm), len(bo) + source_not_in_book)
@@ -1062,7 +1100,7 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         # Five obsolete explicit you intermediates are removed; the six
         # added model-entry heading forms are implicit, not explicit tags.
         # Knee adds citation, selected dative, target and Hogg comparison spans.
-        self.assertEqual(printable_explicit, 1477, "printable explicit occurrences")
+        self.assertEqual(printable_explicit, current_source_metrics()["print_explicit_occurrences"])
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
         self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")

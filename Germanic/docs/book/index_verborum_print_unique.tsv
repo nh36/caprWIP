@@ -59,11 +59,11 @@ oe	ċealf	cealf			1	target_form	lexical_heading	calf — OE ċealf
 oe	cealfru	cealfru			2	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25
 oe	ciezan	ciezan			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:32
 oe	cnæp	cnaep			1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:58
-oe	cnēo	cneo			1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:138
+oe	cnēo	cneo			1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:146
 oe	cneohtas	cneohtas			4	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:34; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:45; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:59
-oe	cnēow	cneow			1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:139
+oe	cnēow	cneow			1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:147
 oe	cneowe	cneowe			3	target_form	explicit_tag; lexical_heading; table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:144; Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:59; knee — OE cneowe
-oe	cneowes	cneowes			1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:137
+oe	cneowes	cneowes			1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:145
 oe	cniht	cniht			5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:33; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:44; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:45; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:58; knight — OE cniht
 oe	*cnobba	cnobba			1	target_form	lexical_heading	knob — OE *cnobba
 oe	cnopp	cnopp			1	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:57
@@ -663,7 +663,7 @@ pgmc	*kéwwaną	kewwana			1	selected_input	trace_proto_input	chew — OE ċēowa
 pgmc	*klímbaną	klimbana			1	selected_input	trace_proto_input	climb — OE climban
 pgmc	*knédaną	knedana			1	selected_input	trace_proto_input	knead — OE cnedan
 pgmc	*knéwą	knewa			3	source_protoform	explicit_tag; lexical_proto; table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:142; Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:22; knee — OE cneowe
-pgmc	*knéwai	knewai			4	comparison_form; selected_input; source_protoform	explicit_tag; lexical_protoform; override; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:135; Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:29; knee — OE cneowe
+pgmc	*knéwai	knewai			4	comparison_form; selected_input; source_protoform	explicit_tag; lexical_protoform; override; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:143; Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:29; knee — OE cneowe
 pgmc	*knewaz	knewaz			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:158
 pgmc	*knextaz	knextaz			1	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:22
 pgmc	*knéxtaz	knextaz			6	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:24; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:29; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:43; Germanic/docs/lexeme_reports/model_entries/2086-knight-cniht.model.md:58; knight — OE cniht

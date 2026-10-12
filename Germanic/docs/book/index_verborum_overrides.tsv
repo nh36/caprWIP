@@ -1,8 +1,10 @@
 action	language	variety	form	display	sort_key	source_scope	source_ref	note
-add	oe		cneowes	cneowes	cneowes	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:137	Source-backed regular genitive comparison in the knee paradigm table.
-add	oe		cnēo	cnēo	cneo	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:138	Source-backed regular endingless knee comparison.
-add	oe		cnēow	cnēow	cneow	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:139	Source-backed knee nominative with restored w.
-add	pgmc		*knéwai	*knéwai	knewai	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:135	Selected inherited dative construction, repeated explicitly in the paradigm table.
+add	oe		cneowes	cneowes	cneowes	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:145	Source-backed regular genitive comparison in the knee paradigm table.
+add	oe		cnēo	cnēo	cneo	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:146	Source-backed regular endingless knee comparison.
+add	oe		cnēow	cnēow	cneow	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:147	Source-backed knee nominative with restored w.
+add	pgmc		*knéwai	*knéwai	knewai	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:143	Selected inherited dative construction, repeated explicitly in the paradigm table.
+ignore			reconstruction				Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:62	Ordinary English prose, not a lexical form.
+ignore			*bu3-dē				Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:41	Reported counterfactual buy illustration, not a selected thought cell or a separately staged index entry.
 add	ohg		backan	backan	backan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
 add	ohg		bahhan	bahhan	bahhan	override	Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21	Clearly labelled Old High German comparison form.
 add	ofris		dore	dore	dore	override	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21	Clearly labelled Old Frisian comparison form.

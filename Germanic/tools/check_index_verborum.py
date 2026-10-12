@@ -22,9 +22,11 @@ from build_index_verborum import (
     explicit_tag_occurrences,
     infer_broad_prose_language,
     infer_broad_prose_suggestion,
+    is_already_indexed_nearby,
     load_broad_prose_decisions,
     load_print_decisions,
     print_decision_matches_row,
+    production_line_occurrences,
     load_table_decisions,
     load_unresolved_baseline,
     split_print_main_rows,
@@ -616,6 +618,7 @@ def assert_already_indexed_nearby_bucket() -> None:
             encoding="utf-8",
         )
         tags = explicit_tag_occurrences(paths=[fixture])
+        source_path = tags[0]["source_ref"].rsplit(":", 1)[0]
         store = {}
         for row in tags:
             add_production(
@@ -631,15 +634,18 @@ def assert_already_indexed_nearby_bucket() -> None:
             )
         synthetic = CandidateOccurrence(
             form="cniht",
-            source_ref=f"{fixture.as_posix()}:3",
-            source_path=fixture.as_posix(),
+            source_ref=f"{source_path}:3",
+            source_path=source_path,
             line_no=3,
             heading="### Old English evidence",
             line_text="cniht",
             candidate_origin="broad_prose_candidate",
         )
         audit = build_audit_rows(list(store.values()), candidates=[synthetic], ignore_overrides=[])
-    assert any(entry["form"] == "cniht" for entry in audit.get("already_indexed_nearby", []))
+        assert is_already_indexed_nearby(
+            synthetic, production_line_occurrences(list(store.values())))
+    assert any(entry["form"] == "cniht"
+               for entry in audit.get("already_indexed_nearby", []))
 
 
 def assert_intermediate_trace_forms_excluded() -> None:
@@ -916,7 +922,8 @@ def assert_broad_prose_decisions_and_inference() -> None:
         ("oe", "boc", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:25"),
         # duru: was a broad-prose comparison_form; with .lex migration, .lex has no index semantics
         # so duru is correctly absent from production_keys — .lex ≠ .iv
-        ("pgmc", "*kwedu-2", "source_protoform", "Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md:21"),
+        # The cud entry no longer quotes *kwedu-2. Live tag coverage is checked
+        # by assert_iv_to_production_coverage, not by this historical example.
         ("pgmc", "*dēdiz", "source_protoform", "Germanic/docs/lexeme_reports/model_entries/1987-deed-dǣd.model.md:21"),
     }:
         assert key in production_keys
@@ -1296,6 +1303,38 @@ def assert_reconstructed_oe_index_commands() -> None:
         start = text.index(heading)
         window = text[start : start + 400]
         assert needle in window, f"Missing expected index command near {heading!r}: {needle!r}"
+
+
+def resolve_variety_audit_ref(audit: dict, forms: list[dict], root: Path = REPO_ROOT) -> str:
+    """Rebase a historical line locator only through one surviving exact iv tag."""
+    path, separator, _ = audit["source_ref"].rpartition(":")
+    if not separator or not (root / path).resolve().is_relative_to(root.resolve()):
+        raise ValueError(f"unsafe variety audit locator: {audit['source_ref']}")
+    candidates = {
+        row["source_ref"] for row in forms
+        if row["source_ref"].rpartition(":")[0] == path
+        and row["language"] == "oe"
+        and row["sort_key"] == audit["sort_key"]
+        and (row.get("variety") or "") == audit["proposed_variety"]}
+    if audit["source_ref"] in candidates:
+        return audit["source_ref"]
+    historical_tags = set(re.findall(r"\[[^\n]*?\]\{\.iv\b[^}]*\}", audit["evidence_text"]))
+    lines = (root / path).read_text(encoding="utf-8").splitlines()
+    supported = []
+    for ref in candidates:
+        number = int(ref.rpartition(":")[2])
+        if 0 < number <= len(lines):
+            current_tags = set(re.findall(r"\[[^\n]*?\]\{\.iv\b[^}]*\}", lines[number - 1]))
+            anchors = historical_tags & current_tags
+            if any(all(re.search(r"\b" + field + "=" + re.escape(value) + r"(?=\s|})", tag)
+                       for field, value in (("lang", "oe"),
+                                            ("variety", audit["proposed_variety"]),
+                                            ("sort", audit["sort_key"])))
+                   for tag in anchors):
+                supported.append(ref)
+    if len(supported) != 1:
+        raise ValueError(f"variety audit needs an unambiguous surviving source tag: {audit['source_ref']} -> {supported}")
+    return supported[0]
 
 
 def main() -> None:
