@@ -73,6 +73,20 @@ class IntegrationTests(unittest.TestCase):
         self.assertNotEqual(self.rows["2326"]["word_stress"], "unknown")
         self.assertNotEqual(self.rows["2326"]["phonological_finality"], "unknown")
 
+    def test_archived_research_links_remain_discoverable_by_stable_id(self):
+        for row in self.crosswalk:
+            for name in row["stable_id_material_paths"].split(";"):
+                if name:
+                    self.assertTrue((ROOT / name).is_file(), name)
+        adder = self.rows["1933"]["stable_id_material_paths"]
+        self.assertIn("/archive/dev_notes_slices/1933-", adder)
+        self.assertIn(".source_ledger.md", adder)
+        packets = sorted((ROOT / "Germanic/docs/lexeme_reports/archive/packets").glob("[0-9]*.md"))
+        self.assertTrue(packets)
+        for path in packets:
+            row = self.rows[path.name.split("-")[0]]
+            self.assertIn(str(path.relative_to(ROOT)), row["stable_id_material_paths"])
+
     def test_inventory_is_not_a_controversy_census(self):
         self.assertEqual(self.stats["routes"], {
             "candidate_comparison_review": 1, "focused_comparison_review": 91,

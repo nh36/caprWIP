@@ -176,7 +176,8 @@ def build(root: Path = ROOT, *, mode: str = "full") -> tuple[list[dict], list[di
         if not (root / model["model_entry_path"]).is_file():
             raise ValueError(f"missing model entry: {row_id}")
     material = defaultdict(list)
-    for directory in ("packets", "research_memos", "dev_notes_slices", "model_entries"):
+    for directory in ("packets", "research_memos", "dev_notes_slices", "model_entries",
+                      *coverage.HISTORICAL_MATERIAL_DIRS, "archive/model_entries"):
         for path in sorted((reports / directory).glob("*.md")):
             prefix = path.name.split("-", 1)[0]
             if prefix in corpus:
