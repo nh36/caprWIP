@@ -3,6 +3,13 @@
 Status: proposal for author review. `report_schema.md`, the current coverage
 helper, model entries and both publication manifests remain unchanged.
 
+Historical design statement above: the bounded 2026-10-12 pilot now adopts
+the independent selection dimension in the live `report_schema.md`.
+Its single decision owner is the existing `editorial_cases.tsv`, with
+explicit selection and certified publication-source pointers. The six
+prototype examples themselves remain unpromoted. The discussion below
+records the pre-adoption proposal, not current executable coverage policy.
+
 ## Two independent dimensions
 
 The derivation dimension keeps the existing classifications and their meanings.

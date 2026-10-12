@@ -47,6 +47,14 @@ the nominative's analogically restored consonant.
 
 ### Old English quantity and paradigm evidence
 
+The citation and dative are different cells, not rival reconstructions
+of one cell. The source comparison accordingly adds an uncertainty about
+the inherited ending, not another dispute over the already documented
+short dative. Fulk's preferred *-ai* account licenses the selected
+paradigm construction without establishing a uniquely recoverable complete
+ancestor [@Fulk2018, p. 147]. The detailed quantity and levelling
+evidence below remains independently necessary.
+
 Hogg explicitly uses
 [cneowe]{.iv lang=oe sort=cneowe role=target_form} 'knee (dat.sg.)'
 as an example of short *eo*. His adjacent long-diphthong example,

@@ -21,6 +21,7 @@ CATEGORIES = {
 CASE_FIELDS = [
     "case_id", "row_id", "scope", "category", "evidence_ids",
     "judgement", "missing_premise", "example_path",
+    "requires_extended_discussion", "publication_source",
 ]
 OUTPUT_NAMES = ("population_crosswalk.tsv", "editorial_inventory.tsv", "population_summary.md")
 
@@ -64,6 +65,21 @@ def load_cases(root: Path, corpus: dict, forms: dict) -> list[dict]:
             raise ValueError(f"missing scoped judgement: {case['case_id']}")
         if case["category"] == "qualified_alternative" and not case["missing_premise"]:
             raise ValueError(f"qualified alternative needs its missing premise: {case['case_id']}")
+        selected = case["requires_extended_discussion"]
+        if selected not in {"0", "1"}:
+            raise ValueError(f"explicit editorial decision required: {case['case_id']}")
+        if selected == "1":
+            if case["category"] not in {"substantive_disagreement", "qualified_alternative"}:
+                raise ValueError(f"non-substantive case cannot require extended discussion: {case['case_id']}")
+            source = Path(case["publication_source"])
+            if (not case["publication_source"] or source.is_absolute() or ".." in source.parts
+                    or source.parts[0] not in {"model_entries", "research_memos"}
+                    or not source.name.startswith(row_id + "-") or source.suffix != ".md"):
+                raise ValueError(f"unsafe or wrong-row publication source: {case['case_id']}")
+            if not (root / "Germanic/docs/lexeme_reports" / source).is_file():
+                raise ValueError(f"missing publication source: {source}")
+        elif case["publication_source"]:
+            raise ValueError(f"unselected case has publication source: {case['case_id']}")
         evidence_ids = survey.ids(case["evidence_ids"])
         if not evidence_ids:
             raise ValueError(f"uncited editorial judgement: {case['case_id']}")
@@ -84,6 +100,24 @@ def load_cases(root: Path, corpus: dict, forms: dict) -> list[dict]:
             if corpus[row_id]["target"] not in prose:
                 raise ValueError(f"example {relative} omits live target")
     return cases
+
+
+def publication_sources(root: Path = ROOT) -> dict[str, tuple[str, list[str]]]:
+    """Reuse the sole scoped judgement owner, never audit routing or type tags."""
+    audit = root / survey.DIRECTORY
+    corpus = unique(table(audit / "corpus_inventory.tsv"), "row_id", "audit population")
+    forms = unique(table(audit / "forms.tsv"), "evidence_id", "audit evidence")
+    selected: dict[str, tuple[str, list[str]]] = {}
+    for case in load_cases(root, corpus, forms):
+        if case["requires_extended_discussion"] != "1":
+            continue
+        row_id, source = case["row_id"], case["publication_source"]
+        if corpus[row_id]["runnable"] != "1":
+            raise ValueError(f"research-only editorial publication: {row_id}")
+        if row_id in selected and selected[row_id][0] != source:
+            raise ValueError(f"competing publication owners for row {row_id}")
+        selected.setdefault(row_id, (source, []))[1].append(case["case_id"])
+    return selected
 
 
 def screen(comparisons: list[dict]) -> str:
@@ -188,8 +222,13 @@ def build(root: Path = ROOT) -> tuple[list[dict], list[dict], dict]:
             "case_ids": ";".join(c["case_id"] for c in selected_cases),
             "comparison_ids": ";".join(c["comparison_id"] for c in comparisons_by_row[row_id]),
             "remaining_audit_premise": core["alignment_limits"],
+            "requires_extended_discussion": int(any(c["requires_extended_discussion"] == "1"
+                                                     for c in selected_cases)),
+            "publication_source": ";".join(sorted({c["publication_source"] for c in selected_cases
+                                                    if c["publication_source"]})),
         })
     required = {r.row_id for r in oe_rows if r.requires_report}
+    philological = {c["row_id"] for c in cases if c["requires_extended_discussion"] == "1"}
     stats = {
         "audit": len(corpus), "selected": len(runnable), "legacy": len(legacy_ids),
         "required": len(required), "legacy_current_required": len(required & legacy_ids),
@@ -201,6 +240,8 @@ def build(root: Path = ROOT) -> tuple[list[dict], list[dict], dict]:
         "assembled_not_required": sorted(set(models) - required, key=int),
         "routes": dict(sorted(Counter(r["screen_route"] for r in inventory).items())),
         "reviewed_rows": len({case["row_id"] for case in cases}), "scoped_cases": len(cases),
+        "philological_selected": len(philological),
+        "pilot_current_required": len(required | philological),
     }
     return crosswalk, inventory, stats
 
@@ -215,7 +256,8 @@ def render(root: Path = ROOT) -> dict[Path, str]:
         "| Measure | Count |", "| --- | ---: |",
     ]
     for key in ("legacy", "selected", "audit", "legacy_current_required", "required",
-                "assembled", "production_pilots", "format_tests", "reviewed_rows", "scoped_cases"):
+                "assembled", "production_pilots", "format_tests", "reviewed_rows", "scoped_cases",
+                "philological_selected", "pilot_current_required"):
         summary.append(f"| {key} | {stats[key]} |")
     for key in ("added_selected", "research_only", "required_not_assembled", "assembled_not_required"):
         summary.extend(["", f"{key}: " + ", ".join(stats[key]) + "."])
@@ -224,7 +266,9 @@ def render(root: Path = ROOT) -> dict[Path, str]:
         summary.append(f"- {route}: {count}")
     summary.extend(["", "A scoped review is not whole-row closure. All other rows retain",
                     "not_editorially_reviewed; bounded_limit and type tags assign no editorial category.",
-                    "See README.md for historical count provenance and schema-proposal.md for the policy.", ""])
+                    "required preserves the older selective policy; pilot_current_required also includes",
+                    "explicit scoped philological decisions. Prototype examples remain outside production.",
+                    "See README.md and the live report_schema.md for the pilot policy.", ""])
     return {
         root / DIRECTORY / OUTPUT_NAMES[0]: tsv(crosswalk, list(crosswalk[0])),
         root / DIRECTORY / OUTPUT_NAMES[1]: tsv(inventory, list(inventory[0])),

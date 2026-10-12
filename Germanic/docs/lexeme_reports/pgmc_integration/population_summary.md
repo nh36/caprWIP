@@ -14,8 +14,10 @@ report manifest and class assembly manifest. Regenerate only with
 | assembled | 160 |
 | production_pilots | 11 |
 | format_tests | 1 |
-| reviewed_rows | 7 |
-| scoped_cases | 9 |
+| reviewed_rows | 10 |
+| scoped_cases | 13 |
+| philological_selected | 8 |
+| pilot_current_required | 159 |
 
 added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332.
 
@@ -34,4 +36,6 @@ assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113.
 
 A scoped review is not whole-row closure. All other rows retain
 not_editorially_reviewed; bounded_limit and type tags assign no editorial category.
-See README.md for historical count provenance and schema-proposal.md for the policy.
+required preserves the older selective policy; pilot_current_required also includes
+explicit scoped philological decisions. Prototype examples remain outside production.
+See README.md and the live report_schema.md for the pilot policy.

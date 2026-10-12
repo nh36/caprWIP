@@ -30,7 +30,7 @@ class IntegrationTests(unittest.TestCase):
         for key, value in {"legacy": 380, "selected": 387, "audit": 393,
                            "legacy_current_required": 150, "required": 157,
                            "assembled": 160, "production_pilots": 11,
-                           "format_tests": 1, "reviewed_rows": 7, "scoped_cases": 9}.items():
+                           "format_tests": 1, "reviewed_rows": 10, "scoped_cases": 13}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
 
@@ -78,7 +78,7 @@ class IntegrationTests(unittest.TestCase):
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
             "ordinary_evidence_review": 293, "unit_comparability_review": 8})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
-        self.assertEqual(len(unreviewed), 386)
+        self.assertEqual(len(unreviewed), 383)
         self.assertTrue(all(not r["reviewed_categories"] for r in unreviewed))
         self.assertEqual(self.editorial["2085"]["reviewed_categories"],
                          "non_substantive_difference;qualified_alternative")
@@ -108,6 +108,8 @@ class IntegrationTests(unittest.TestCase):
     def check_case_fixture(self, changes, corpus=None, forms=None):
         case = copy.deepcopy(next(c for c in self.cases if c["category"] == "qualified_alternative"))
         case["example_path"] = ""
+        case["requires_extended_discussion"] = "0"
+        case["publication_source"] = ""
         case.update(changes)
         evidence_id = case["evidence_ids"].split(";")[0]
         case["evidence_ids"] = evidence_id
@@ -138,6 +140,18 @@ class IntegrationTests(unittest.TestCase):
     def test_provisional_paths_cannot_escape(self):
         with self.assertRaisesRegex(ValueError, "unsafe"):
             self.check_case_fixture({"example_path": "../production.md"})
+
+    def test_publication_requires_explicit_scoped_and_safe_decision(self):
+        with self.assertRaisesRegex(ValueError, "explicit editorial decision"):
+            self.check_case_fixture({"requires_extended_discussion": ""})
+        with self.assertRaisesRegex(ValueError, "unsafe or wrong-row"):
+            self.check_case_fixture({"requires_extended_discussion": "1",
+                                     "publication_source": "../other.md"})
+        with self.assertRaisesRegex(ValueError, "non-substantive"):
+            self.check_case_fixture({"requires_extended_discussion": "1",
+                                     "category": "no_special_discussion"})
+        with self.assertRaisesRegex(ValueError, "unselected case"):
+            self.check_case_fixture({"publication_source": "model_entries/1933-adder.model.md"})
 
     def test_six_examples_not_promoted_to_manifest(self):
         examples = sorted((ROOT / integration.DIRECTORY / "examples").glob("*.md"))
