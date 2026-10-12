@@ -4,7 +4,7 @@ _Generated from the introduction prose owned by the reader-facing book builder._
 
 ## Summary
 
-- Book builder: `/Users/nathanhill/Code/capr/Germanic/tools/build_reader_book.py`.
+- Book builder: `/Users/nathanhill/Code/capr-sc032-workstream/Germanic/tools/build_reader_book.py`.
 - Introduction paragraphs checked: 5.
 - Issues found: 0.
 

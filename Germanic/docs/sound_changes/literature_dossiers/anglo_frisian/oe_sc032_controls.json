@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "baseline_fst_sha256": "f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953",
+  "baseline_corpus_sha256": "67fb85b3f944afe6f0f3f0a99536f9bd70bf707246d968577b16fca5b17aece6",
+  "baseline_context_sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+  "baseline_context_helper_sha256": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961",
+  "fixture_file": "oe_post_hue_fixtures.tsv",
+  "recipes": [
+    {
+      "id": "identity",
+      "description": "SC032 unchanged full-wrapper identity.",
+      "definitions": "",
+      "insert_after": "",
+      "insert_rule": "",
+      "replace": {},
+      "sources": [],
+      "assumptions": "Technical composition control only.",
+      "limitations": "No historical chronology inference."
+    },
+    {
+      "id": "sc032-controls",
+      "description": "All nine retained clauses and paired quantity/representation negatives, without scientific intervention.",
+      "definitions": "",
+      "insert_after": "",
+      "insert_rule": "",
+      "replace": {},
+      "sources": [
+        {"key": "RingeTaylor2014", "pages": "170-175"},
+        {"key": "Campbell1959", "pages": "53-54,116-118,124-126"}
+      ],
+      "assumptions": "Atomic long and split short outputs are distinct. Component strings are literal formal inputs, not new lexical or PGmc witnesses. Direct iu-to-eo packages a selected later endpoint.",
+      "limitations": "Unaccented atomic and all split clauses lack selected-corpus applications. Their formal checks certify retained executable behavior, not historical origin/conditioning or an early io/eo merger. No source, corpus, context or recipe baseline is changed.",
+      "component_checks": [
+        {"id": "atomic-aeu", "component": "OEDiphthongLeveling", "input": "*aeu", "expected": "*ēa"},
+        {"id": "atomic-acute-aeu", "component": "OEDiphthongLeveling", "input": "*áeu", "expected": "*ēa"},
+        {"id": "atomic-eu", "component": "OEDiphthongLeveling", "input": "*eu", "expected": "*ēo"},
+        {"id": "atomic-acute-eu", "component": "OEDiphthongLeveling", "input": "*éu", "expected": "*ēo"},
+        {"id": "atomic-iu", "component": "OEDiphthongLeveling", "input": "*iu", "expected": "*ēo"},
+        {"id": "atomic-acute-iu", "component": "OEDiphthongLeveling", "input": "*íu", "expected": "*ēo"},
+        {"id": "split-eu-short", "component": "OEDiphthongLeveling", "input": "*e*u", "expected": "*eo"},
+        {"id": "split-acute-eu-short", "component": "OEDiphthongLeveling", "input": "*é*u", "expected": "*éo"},
+        {"id": "split-iu-short", "component": "OEDiphthongLeveling", "input": "*i*u", "expected": "*eo"},
+        {"id": "split-acute-i-absent", "component": "OEDiphthongLeveling", "input": "*í*u", "expected": "*í*u"},
+        {"id": "already-long-io-negative", "component": "OEDiphthongLeveling", "input": "*īo", "expected": "*īo"},
+        {"id": "already-long-ea-negative", "component": "OEDiphthongLeveling", "input": "*ēa", "expected": "*ēa"},
+        {"id": "split-eo-negative", "component": "OEDiphthongLeveling", "input": "*e*o", "expected": "*e*o"},
+        {"id": "singleton-ew-negative", "component": "OEDiphthongLeveling", "input": "*e*w", "expected": "*e*w"},
+        {"id": "singleton-iwj-negative", "component": "OEDiphthongLeveling", "input": "*i*w*j", "expected": "*i*w*j"},
+        {"id": "unfronted-au-negative", "component": "OEDiphthongLeveling", "input": "*au", "expected": "*au"}
+      ]
+    }
+  ],
+  "probes": [
+    {"id": "after_fronting", "stage": "OEBreaking", "side": "before"},
+    {"id": "after_palatal", "stage": "OEVelarPalatalization", "side": "after"},
+    {"id": "after_mutation", "stage": "OEIUmlaut", "side": "after"},
+    {"id": "after_merger", "stage": "OEPalatalFricativeMerger", "side": "after"},
+    {"id": "after_sc033", "stage": "OEEwLongDiphthong", "side": "after"},
+    {"id": "after_breaking", "stage": "OEBreaking", "side": "after"},
+    {"id": "after_gemination", "stage": "PWGmcJGemination", "side": "after"},
+    {"id": "after_realization", "stage": "OEJGlideIO", "side": "after"},
+    {"id": "after_sc106", "stage": "OEJWWSimplification", "side": "after"}
+  ]
+}

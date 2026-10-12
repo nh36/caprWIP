@@ -63,9 +63,35 @@ production and publication closeout: 713 tests/6,259 subtests and serial
 68/13/14 protected component/staged/corpus assertions pass. The inspected
 302-page book publishes hue in section6.82, pp.185–187, with the adopted
 SC033/106/110 blocks on pp.67–68; knee remains section9.9, now pp.250–252.
-Remaining ordinary SC032 components are the next case, not silently
-resolved by this interface. The project-wide author-form collection and
+At that release the ordinary SC032 components remained the next case,
+not silently resolved by hue's interface; their subsequent component
+adjudication is recorded below. The project-wide author-form collection and
 introduction discussion remain queued, not implemented by this increment.
+
+## Adopted SC032 component characterization
+
+SC032's 2026-10-12 adjudication reformulates the retained nine-clause
+network as quantity-distinct English realization, not one WS smoothing
+law. Fresh isolated canonical evidence gives32 atomic long-tier
+applications (20 fronted-au,10 eu,2 iu), with no overlap or split-helper
+application. English nucleus tensing, later offglide change and io/eo
+convergence remain separate historical propositions; direct iu-to-eo is
+a selected endpoint proxy, not proof of an early merger
+([@RingeTaylor2014, pp.170–175; @Campbell1959, pp.53–54,116–118,124–126]).
+This does not decide the comparative synthesis's alternative AF-stem
+allocations or repeat its completed source survey.
+
+SC030 feeds the fronted-au component, and SC031 supplies the inherited/
+coronal-created nonhomorganic glide products. Head's SC040 displacement
+is demoted to technical token recognition, not historical offglide/
+lowering evidence (Campbell1959 pp.155–156). Hue's SC033/110 long-io
+path and the short knee dative are protected negative controls.
+All executable clauses, selected linguistic fields/contexts, final outputs,
+approval archives and historical recipes are unchanged. Unwitnessed
+unaccented atomic alternatives and short split clauses retain formal
+behavior without an invented historical domain. The SC032 memo owns
+the complete component ledger, source/encoding distinctions and validation;
+SC034 remains pending.
 
 ## 1. Governing test and notation
 

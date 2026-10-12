@@ -38,7 +38,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 029-030-awj-glide-and-au-fronting.md | SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwwjResolution`) {#rule-OEAwwjResolution} | 72 | 38 | no |
 | 029-030-awj-glide-and-au-fronting.md | SC030. Brightening of \emph{*au} to \emph{*æu} (`OEAuBrightening`) {#rule-OEAuBrightening} | 128 | 24 | no |
 | 031-ww-simplification.md | SC031. Inherited short-Vww reanalysis (`OEWWSimplification`) {#rule-OEWWSimplification} | 33 | 33 | no |
-| 032-diphthong-leveling.md | SC032. Leveling of diphthongal outputs (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 33 | 28 | no |
+| 032-diphthong-leveling.md | SC032. Quantity-distinct diphthong realization (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 41 | 28 | no |
 | 033-long-eow-diphthong.md | SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 50 | 43 | no |
 | 033-long-eow-diphthong.md | SC106. Retained j-created glide compatibility (`OEJWWSimplification`) {#rule-OEJWWSimplification} | 84 | 31 | no |
 | 033-long-eow-diphthong.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | 99 | 41 | no |
