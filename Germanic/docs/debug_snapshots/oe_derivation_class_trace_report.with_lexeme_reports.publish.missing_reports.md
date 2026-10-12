@@ -1,10 +1,9 @@
 # Missing lexeme reports for publish mode
 
-- Missing required production reports: 137
+- Missing required production reports: 141
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Reason |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1934 | bake | bacan | regular | yes | NOTE |
 | 1942 | beech | bōc | regular | yes | NOTE |
 | 1943 | begin | beġinnan | regular | yes | NOTE |
 | 1949 | bier | bǣr | regular | yes | NOTE |
@@ -36,6 +35,7 @@
 | 2034 | fright | fyrhte | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2037 | gall | ġealla | early_analogy | no | DERIVATION_CLASS=early_analogy |
 | 2038 | gang | gang | regular | yes | NOTE |
+| 2040 | gift | ġift | regular | yes | NOTE |
 | 2041 | give | ġiefan | regular | yes | NOTE |
 | 2043 | gold | gold | regular | yes | NOTE |
 | 2046 | grave | grafan | regular | yes | NOTE |
@@ -45,7 +45,7 @@
 | 2055 | handle | handlian | regular | yes | NOTE |
 | 2057 | harvest | hierfest | regular | yes | NOTE |
 | 2058 | have | hæfeþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
-| 2068 | heaven | heofon | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
+| 2068 | heaven | heofon | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2069 | hedge | heġġ | regular | yes | NOTE |
 | 2070 | helm | helm | regular | yes | NOTE |
 | 2071 | help | helpan | regular | yes | NOTE |
@@ -141,4 +141,8 @@
 | 2316 | lick (3sg) | liccaþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2317 | show (iptv.2sg) | sċēawa | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2318 | show (3sg) | sċēawaþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
+| 2322 | who | hwā | regular | yes | NOTE |
+| 2327 | wound | wundude | regular | yes | NOTE |
+| 2328 | sow | sāwan | regular | yes | NOTE |
+| 2329 | betray | lǣwan | regular | yes | NOTE |
 

@@ -6,6 +6,9 @@ Production policy:
 2. A production lexeme report is required when DERIVATION_CLASS is not regular.
 3. A production lexeme report is required when a manifest-backed report has
    STATUS=pilot or STATUS=full.
+4. An independently source-checked editorial decision in
+   pgmc_integration/editorial_cases.tsv may require extended discussion and
+   certify an existing model or short research-memo source for publication.
 
 STATUS=format_test is tracked separately and does not make an otherwise ordinary
 regular empty-NOTE row count as requiring a production lexeme report.
@@ -53,6 +56,8 @@ class OERow:
     manifest_report_paths: list[str] = field(default_factory=list)
     manifest_statuses: list[str] = field(default_factory=list)
     source_material_paths: list[str] = field(default_factory=list)
+    editorial_case_ids: list[str] = field(default_factory=list)
+    editorial_report_path: str = ""
 
     @property
     def has_note(self) -> bool:
@@ -75,6 +80,10 @@ class OERow:
         return FORMAT_TEST_REPORT_STATUS in self.manifest_statuses
 
     @property
+    def has_publication_report(self) -> bool:
+        return self.has_production_manifest_report or bool(self.editorial_report_path)
+
+    @property
     def has_source_material(self) -> bool:
         return bool(self.source_material_paths)
 
@@ -84,7 +93,8 @@ class OERow:
 
     @property
     def requires_report(self) -> bool:
-        return self.has_note or self.is_nonregular or self.has_production_manifest_report
+        return (self.has_note or self.is_nonregular or self.has_production_manifest_report
+                or bool(self.editorial_case_ids))
 
     @property
     def requirement_basis(self) -> str:
@@ -95,10 +105,14 @@ class OERow:
             reasons.append(f"DERIVATION_CLASS={self.derivation_class}")
         if self.has_production_manifest_report:
             reasons.append("production_report")
+        if self.editorial_case_ids:
+            reasons.append("philological=" + ";".join(self.editorial_case_ids))
         return ", ".join(reasons) if reasons else "none"
 
     @property
     def coverage_source(self) -> str:
+        if self.editorial_report_path:
+            return "certified_editorial_source"
         if self.has_production_manifest_report:
             return "manifest"
         if self.has_format_test_manifest_report:
@@ -109,6 +123,8 @@ class OERow:
 
     @property
     def linked_paths(self) -> list[str]:
+        if self.editorial_report_path:
+            return [self.editorial_report_path]
         if self.has_manifest_report:
             return self.manifest_report_paths
         if self.has_source_material:
@@ -271,6 +287,18 @@ def apply_manifest(
         row.manifest_statuses.append(entry.status or "-")
 
     return diagnostics, listed_paths
+
+
+def apply_editorial_selection(rows: list[OERow], reports_root: Path) -> None:
+    from pgmc_lexical_integration import publication_sources
+
+    selected = publication_sources(reports_root.parents[2])
+    by_id = {row.row_id: row for row in rows}
+    for row_id, (source, case_ids) in selected.items():
+        if row_id not in by_id:
+            raise ValueError(f"editorial publication absent from runnable corpus: {row_id}")
+        by_id[row_id].editorial_report_path = source
+        by_id[row_id].editorial_case_ids = case_ids
 
 
 def occurrence_score(
@@ -455,6 +483,8 @@ def build_report(
     unmatched: list[str],
 ) -> str:
     required_rows = [row for row in rows if row.requires_report]
+    published_rows = [row for row in required_rows if row.has_publication_report]
+    missing_rows = [row for row in required_rows if not row.has_publication_report]
     manifest_backed_required = [
         row for row in required_rows if row.has_production_manifest_report
     ]
@@ -496,6 +526,10 @@ def build_report(
             "- Total OE rows with real counterpart: " + str(len(rows)),
             "- Manifest entries loaded: " + str(len(manifest_entries)),
             "- Rows requiring lexeme report: " + str(len(required_rows)),
+            "- Required rows with published SOURCE: " + str(len(published_rows)),
+            "- Required rows with no published SOURCE: " + str(len(missing_rows)),
+            "- Rows selected independently for philological discussion: "
+            + str(sum(bool(row.editorial_case_ids) for row in rows)),
             "- Required rows with manifest-backed production reports: "
             + str(len(manifest_backed_required)),
             "- Required rows with source material available but no manifest-backed production report: "
@@ -519,6 +553,10 @@ def build_report(
     lines.extend(render_class_count_table(rows))
     lines.append("")
 
+    lines.extend(
+        render_section("Required rows with certified editorial SOURCE",
+                       [row for row in required_rows if row.editorial_report_path])
+    )
     lines.extend(
         render_section(
             "Required rows with manifest-backed production reports",
@@ -623,6 +661,7 @@ def main() -> None:
     manifest_diagnostics, listed_paths = apply_manifest(
         rows, manifest_entries, reports_root, report_files
     )
+    apply_editorial_selection(rows, reports_root)
 
     source_material_candidate_files = [
         path

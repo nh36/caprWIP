@@ -15,6 +15,16 @@ audit records. Current selection/assembly counts are owned by the
 [generated integration summary](../lexeme_reports/pgmc_integration/population_summary.md),
 not by the historical pilot/alpha reports.
 
+The bounded reconstruction-audit integration pilot uses existing mature
+model SOURCE additively and certifies selected source prose through
+`../lexeme_reports/pgmc_integration/editorial_cases.tsv`. It does not expand
+this manuscript to all 387 entries. A generated-only selected case instead
+reuses the existing complete derivation-report insertion layer, with a
+short research-memo source rather than compulsory model boilerplate.
+Canonical `adjudicate.py --refresh` regenerates both publication routes.
+Default assembly preserves the full model prose; the optional regular
+`book_prose` mode remains a separate, unpromoted compact-prose workflow.
+
 ## Pilot status
 
 The pilot format is now stable enough to serve as the basis for a full lexical

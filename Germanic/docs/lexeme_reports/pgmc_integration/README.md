@@ -1,7 +1,9 @@
 # Proto-Germanic audit / lexical-volume integration
 
-Status: provisional integration design, not scientific adoption or publication
-promotion. Base: `27c552bf429ccbb563b365b8e72d5ee0bf5c905d`, branch `update`.
+Status: bounded publication integration pilot; no scientific adoption.
+The historical design began at `27c552bf`; the pilot uses completed ERRATA
+`b74e3ce3f60f05c8843555eb409b35020386dcf0` on isolated
+`workstream/lexical-integration`.
 The completed 49-tranche alignment supplies evidence, not 393 settled histories.
 
 ## Artefacts and authority
@@ -11,7 +13,9 @@ The completed 49-tranche alignment supplies evidence, not 393 settled histories.
 - [Editorial inventory](editorial_inventory.tsv): GENERATED inspection routes
   for the complete audit population, separate from reviewed judgements.
 - [Editorial cases](editorial_cases.tsv) and [source checks](source-checks.md):
-  SOURCE, nine scoped judgements covering six examples and a control.
+  SOURCE, thirteen scoped judgements covering ten reviewed rows.
+  Explicit selection and publication-source pointers live in this relation;
+  no parallel selection ledger or scientific fact owner is introduced.
 - [Schema proposal](schema-proposal.md): SOURCE proposal, not the live schema.
 - [Resumption plan](resumption.md): SOURCE routing and research proposal,
   subordinate to the existing scientific registry and comparative synthesis.
@@ -24,11 +28,25 @@ completed survey. No existing production text or publication manifest is replace
 The source checks retain evidence IDs and holding/page provenance outside the
 reader-facing argument.
 
+The pilot adopts arguments into the six mature models and bake, rather than
+inserting these prototypes. Knee's full quantity/paradigm scholarship and
+hue's full glide analysis are retained verbatim. Beaver's consequential
+formation question is certified in the existing `research_memos/` area and
+inserted into the complete report without creating a full model. Barrow and
+bind remain narrowly scoped negative controls, not whole-row closure.
+See the [pilot protocol record](../../sound_changes/audits/pgmc-lexical-publication-pilot.md).
+
 `Germanic/tools/pgmc_lexical_integration.py` reuses the audit validator,
 legacy migration resolver and existing report-selection logic. It has no
 generation/write switch: inspection is read-only, and `--check` checks freshness.
 The sole writing route is `python3 Germanic/tools/adjudicate.py --refresh`,
 through the new research projection in the existing artifact graph.
+The same graph now also calls the existing
+`oe_derivation_report_with_lexeme_reports.py` insertion layer and regenerates
+its audit/publish outputs plus coverage. Existing manifest pilots remain
+separate; adder's format test is excluded even when its mature model is
+independently certified. The older-policy crosswalk is preserved as such;
+the generated summary separately reports current pilot requirements.
 There is no second corpus, bibliography, sound-change registry or mutable database.
 Current selected forms in the crosswalk are generated from live owners, not edited
 in the editorial cases.
@@ -42,7 +60,8 @@ in the editorial cases.
 | 393 | All live OE data points admitted to the reconstruction survey, including six without runnable targets |
 | 148 | Selective requirement at the historical production-backlog commit `16fe8ad3`, on its then-380 runnable rows |
 | 150 | Those same original 380 identities under today's selective policy |
-| 157 | Current selective requirement across the 387 runnable rows |
+| 157 | Older NOTE/class/pilot selective requirement across the 387 runnable rows |
+| 159 | Pilot requirement including eight independently selected philological cases; only adder and beaver add to the older obligation set |
 | 147 | Earlier model-entry assembly stage described in the assembly README, not current report-manifest coverage |
 | 160 | Current class-assembly model entries actually consumed by the lexical-volume and combined-book builders |
 | 11 + 1 | Eleven pilot production records and one adder format-test record in the separate report manifest |
@@ -92,6 +111,8 @@ in the original 380: they are not ten new post-baseline witnesses.
 The report manifest and class assembly are separate production contracts.
 `oe_lexeme_report_coverage.py` validates the former and selects extended-report
 obligations from NOTE, nonregular class or pilot/full status.
+The bounded pilot adds the independent editorial criterion without changing
+those earlier axes. It certifies eight selected source entries, not all models.
 `build_class_manifests.py` assembles stable-ID `.model.md` entries;
 `build_full_lexical_volume.py` consumes its class manifest and compact traces;
 `build_capr_book_draft.py` consumes that lexical aggregate. The generated
@@ -113,8 +134,9 @@ adder 1933, book 1955, dew 1989, flea 2018, four 2029, goose 2044,
 hew 2074 and louse 2113. They are neither duplicates nor erroneous additions:
 the assembly has a broader editorial history than that policy.
 Adder's `format_test` alone does not activate the production requirement.
-Its current ordinary-control pilot is an author-review candidate for
-supersession, not silently corrected here.
+Its historical format-test body remains excluded; the completed ERRATA
+notice and independently selected mature model replace the old control claim
+for current publication purposes, without changing its manifest status.
 
 The old handle "no source material" warning came from fuzzy discovery that
 assigned handle-named files to hand 2054. Filename-prefix discovery now records
@@ -124,10 +146,10 @@ Shared batch summaries and unprefixed materials are deliberately not inferred
 to belong to every word they mention. Existing audit evidence supplies explicit
 shared links without duplicating author votes.
 
-The stale 148/147 narratives should eventually be replaced by links to generated
-counts. The historical assembly manifest at `97face4b` reproduces 147 entries.
-Those narratives are left untouched in this design assignment to preserve the
-requested production boundary. Likewise, do not promote all 160 models into
+The completed ERRATA routes current assembly/backlog navigation to generated
+counts, preserving dated production narratives as history. The historical
+assembly manifest at `97face4b` reproduces 147 entries.
+Do not promote all 160 models into
 the pilot/full manifest by assumption: author approval should select the
 production contract and validation status first.
 
@@ -161,8 +183,8 @@ reviews, one other candidate-comparison review, eight unit-comparability
 reviews and 293 ordinary-evidence reviews. Those are workloads, not counts of
 controversies. They use existing scoped comparisons and comparability outcomes,
 not `bounded_limit`, output success, source counts or `type_tags`.
-All 393 bounded audit alignments remain unchanged. Seven rows now have
-scoped manual assessments; the other 386 say `not_editorially_reviewed`.
+All 393 bounded audit alignments remain unchanged. Ten rows now have
+scoped manual assessments; the other 383 say `not_editorially_reviewed`.
 Even an ordinary inspection route does not grant "no special discussion".
 
 The calibration shows why classification must be scoped: adder is a qualified
@@ -175,11 +197,16 @@ are not a gender dispute, and the selected masculine hill/mound has ordinary
 support. Its remote etymology and phonemic sign interpretation are not declared
 settled by that scoped negative assessment.
 
+The bounded pilot adds beaver's source-stated opposed formation directions
+and bake's qualified present alternatives. Bind supplies a second negative
+control: selected realised-i support and distinct past cells do not resolve
+Orel's particular written e. Eight rows are explicitly selected for discussion.
+
 ## Author decisions and next bounded task
 
-Approve or revise the density and scope of the six examples and the two-axis
-policy before changing production. Decide which manifest certifies model-entry
-production; avoid maintaining two independently editable completion statuses.
+The current pilot adopts the two-axis policy and named source certification,
+not the provisional examples or a second editable completion-status ledger.
+Review the actual integrated prose and its density before broader scaling.
 Next, perform a bounded editorial review of a small subset of the 91
 focused-comparison routes, prioritizing comparisons relevant to selected inputs.
 Record scoped judgements and missing premises using the same SOURCE relation.
@@ -187,7 +214,7 @@ Include ordinary and non-substantive controls; do not generate 393 long reports.
 
 In parallel as a separate authorized scientific task, resume SC032's
 component specification using the existing sources and queue, not another
-thirteen-source comparative survey. After editorial approval, close the five
+thirteen-source comparative survey. Separately prioritize the five
 real assembly gaps before scaling optional regular-controversy entries.
 Keep reporting repairs, input legitimacy, sound-law validity and final-output
 correctness separately reviewable throughout.

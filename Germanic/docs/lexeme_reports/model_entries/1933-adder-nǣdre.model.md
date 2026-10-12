@@ -27,6 +27,24 @@ The selected input retains the long-*e* feminine alternative. The lexical
 comparison supports that formation without erasing Orel's alternative or
 the distinction between his notation and CAPR's selected input.
 
+### Reconstruction alternatives and their limits
+
+Orel's short-*a* feminine is an admitted alternative within his own
+account, not proof that he and Kroonen advocate exclusive histories.
+The unresolved premise is the reflex distribution and formation history
+licensing that alternative beside the selected long-*ē* feminine
+[@Orel2003, p. 286; @Kroonen2013, pp. 381, 386].
+Kroonen's uncertain sewing or 'winder' connection and masculine
+comparanda cannot substitute for that feminine argument. CAPR's acute
+marks its input stress; it is not independently quoted in these headwords.
+
+Fulk's probable shortening accompanying pre-*r* gemination concerns
+the later Old English variant. He calls the motivation obscure and
+considers analogical extension; this does not explain inherited
+*ē* versus *a* or supply another complete ancestral adder word
+[@Fulk2018, p. 132]. Regular production of *nǣdre* therefore
+supports the selected path without settling the alternative formation.
+
 ### Old English evidence
 
 The Old English word is securely represented by [`nǣdre`]{.iv lang=oe sort=naedre} 'adder', with [`næddre`]{.iv lang=oe sort=naeddre} 'adder' as a

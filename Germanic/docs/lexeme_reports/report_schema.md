@@ -16,6 +16,11 @@ final prose.
 - Packets, dev-note slices, research memos, batch summaries, and similar files
   are **source material for drafting**, not production-report prose unless they
   are explicitly promoted into the manifest.
+- The bounded lexical-integration pilot separately certifies publication
+  SOURCE through `pgmc_integration/editorial_cases.tsv`. Its explicit
+  `requires_extended_discussion=1` and `publication_source` reuse mature
+  model prose, or a short identity-checked research memo where no extended
+  model exists. This does not alter pilot/full/format-test manifest status.
 
 ## Selective-report policy
 
@@ -26,9 +31,29 @@ rows that satisfy at least one of these conditions:
 2. `DERIVATION_CLASS` is not `regular`;
 3. the row already has a manually supplied pilot/full lexeme report under
    `Germanic/docs/lexeme_reports/`.
+4. a source-checked scoped editorial judgement explicitly selects substantive
+   formation disagreement or a consequential qualified alternative.
 
-Ordinary `regular` rows with an empty TSV `NOTE` and no manual pilot/full
+The fourth trigger is independent of `DERIVATION_CLASS`, NOTE, audit
+alignment limits, routing flags, counts and successful output. The existing
+editorial relation is its only editable owner; it links protected evidence
+IDs but does not rewrite their quotations or adopt scientific inputs.
+Qualified cases carry both a missing premise and an explicit selection
+decision. Notation, different cells or endpoints alone do not select discussion.
+
+Ordinary `regular` rows with an empty TSV `NOTE`, no selected editorial case and no manual pilot/full
 report should **not** receive a generated `### Lexeme report`.
+
+The complete compact report retains all 387 runnable derivations. The
+existing insertion layer publishes certified commentary without duplicating
+those traces. The separate class-manifest book still assembles its 160
+mature models; absence from that selective manuscript is not absence of a
+derivation write-up. The provisional examples are never inserted as prose.
+
+Canonical refresh regenerates coverage and audit/publish insertion outputs.
+`validate_oe_lexeme_report_assembly.py` checks both certification routes,
+the 387-row identity set, missing-report placeholders and format-test exclusion.
+Scientific adoption remains a separate adjudication, never a publication effect.
 
 ## Entry structure inside the generated derivation report
 

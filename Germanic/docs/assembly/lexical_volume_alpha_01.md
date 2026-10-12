@@ -104,18 +104,36 @@ The derivational input retains the long-*e* feminine alternative. The lexical
 comparison supports that formation without erasing Orel's alternative or
 the distinction between his notation and CAPR's derivational input.
 
+#### Reconstruction alternatives and their limits
+
+Orel's short-*a* feminine is an admitted alternative within his own
+account, not proof that he and Kroonen advocate exclusive histories.
+The unresolved premise is the reflex distribution and formation history
+licensing that alternative beside the selected long-*ē* feminine
+[@Orel2003, p. 286; @Kroonen2013, pp. 381, 386].
+Kroonen's uncertain sewing or 'winder' connection and masculine
+comparanda cannot substitute for that feminine argument. CAPR's acute
+marks its input stress; it is not independently quoted in these headwords.
+
+Fulk's probable shortening accompanying pre-*r* gemination concerns
+the later Old English variant. He calls the motivation obscure and
+considers analogical extension; this does not explain inherited
+*ē* versus *a* or supply another complete ancestral adder word
+[@Fulk2018, p. 132]. Regular production of *nǣdre* therefore
+supports the selected path without settling the alternative formation.
+
 #### Old English evidence
 
-The Old English word is securely represented by [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32:1"} 'adder', with [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:32:2"} 'adder' as a
-secondary variant. Clark Hall cross-references [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33:1"} to [_nædre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:33:2"} 'adder', and Fulk
-treats [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:34:1"} as the later geminated form beside the older base [@ClarkHall1960,
+The Old English word is securely represented by [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:50:1"} 'adder', with [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:50:2"} 'adder' as a
+secondary variant. Clark Hall cross-references [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:51:1"} to [_nædre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:51:2"} 'adder', and Fulk
+treats [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:52" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:52:1"} as the later geminated form beside the older base [@ClarkHall1960,
 225; @Fulk2018, 132].
 
 #### Development to Old English
 
-From [nḗdrōn]{.iv .recon lang=pgmc sort=nedron role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:39:1"} 'adder', the stressed long mid vowel develops to Old English [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:39:2"} 'adder', and
-the weak feminine ending remains as final _-e_, giving [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:40:1"}. The doubled
-consonant of [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:41:1"} 'adder' is secondary and does not alter the inherited base form.
+From [nḗdrōn]{.iv .recon lang=pgmc sort=nedron role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:57:1"} 'adder', the stressed long mid vowel develops to Old English [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:57:2"} 'adder', and
+the weak feminine ending remains as final _-e_, giving [_nǣdre_]{.iv lang=oe sort=naedre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:58:1"}. The doubled
+consonant of [_næddre_]{.iv lang=oe sort=naeddre source_ref="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:59:1"} 'adder' is secondary and does not alter the inherited base form.
 
 ### bake — OE _bacan_
 
@@ -170,13 +188,34 @@ Old English form: _bacan_
 
 Orel reconstructs the verb as [bakanan]{.iv .recon lang=pgmc sort=bakanan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21:1"} 'bake' and cites Old English [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21:2"} 'bake' beside Old High German _backan, bahhan_ [@Orel2003]. Campbell gives [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21:3"} as one of the standard examples of Old English A-restoration before a single consonant, and Ringe and Taylor state the same development from [bakan]{.iv .recon lang=pwgmc sort=bakan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21:4"} ‘bake’ to Old English [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:21:5"} [@Campbell1959, 61; @RingeTaylor2014].
 
+#### Singleton and geminate present alternatives
+
+The selected infinitive keeps singleton *k*. Kroonen explicitly
+distinguishes \emph{*bakan-} beside \emph{*bakkan-}, considering
+contamination with, or back-formation from, the iterative
+\emph{*bak(k)ōn-}; a present *n*-suffix explanation is less likely
+[@Kroonen2013, p. 49]. Orel prints singleton \emph{*bakanan}
+and separately the long-*ō* preterite
+[@Orel2003, p. 33]. The inspected passages do not establish
+Orel's reason for excluding the geminate from this citation.
+This is a qualified present-formation question, not proof of a
+mutually exclusive reconstruction debate.
+
+Later finite-cell front vowels and the inherited preterite grade
+are not rival infinitive vowels. Ringe and Taylor distinguish
+West Saxon infinitive *bacan* 'bake' from second singular
+*becst* 'you bake', preserving the umlauted vowel in syncopated
+forms while *a* spread elsewhere
+[@RingeTaylor2014, pp. 232--233]. Regular infinitive production
+does not resolve the earlier singleton/geminate distribution.
+
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall both record [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:25:1"} 'bake' as the ordinary Old English verb [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
+Bosworth-Toller and Clark Hall both record [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:46:1"} 'bake' as the ordinary Old English verb [@BosworthToller1898, 72; @ClarkHall1960]. The target in this entry is therefore the attested infinitive headword itself, not a selected oblique or finite paradigm cell.
 
 #### Development to Old English
 
-From [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29:1"} 'bake', Anglo-Frisian brightening first gives [bækaną]{.recon} 'bake'. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29:2"} 'bake' [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29:3"} > [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:29:4"}.
+From [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:1"} 'bake', Anglo-Frisian brightening first gives [bækaną]{.recon} 'bake'. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:2"} 'bake' [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:3"} > [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:4"}.
 
 ### beech — OE _bōc_
 
@@ -5588,9 +5627,32 @@ Old English form: _ēow_
 
 The derivational input is the dative(-accusative) plural of the second-person plural pronoun, PGmc [ízwiz]{.iv .recon lang=pgmc sort=izwiz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:21:1"} 'you (dat. pl.)' (Gothic [izwis]{.iv lang=goth sort=izwis role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:21:2"} 'you'). Ringe and Taylor print the development in full: "PGmc \*izwiz 'you (dat. pl.)' (Goth. izwis) > \*iwwi > PWGmc \*iuwi ~ \*iuw (see 3.1.4) > OE īow, OF iū, OS, OHG iu" [@RingeTaylor2014, pp. 41--42], following Stiles's demonstration of the coronal-w assimilation [@Stiles1985, pp. 89--94]. Fulk's discussion of inherited geminate glides after short vowels supplies the wider reanalysis context, not a replacement citation for that assimilation [@Fulk2018, p. 117]. The oblique plural is the cell that survives as the Old English pronoun *ēow*.
 
+#### Competing origins of the inherited oblique
+
+Kroonen derives \emph{*izwiz} by metathesis from \emph{*iw-siz},
+with a suffix abstracted from the first-person plural, and separately
+distinguishes older \emph{*iwiz} and the dual formations
+[@Kroonen2013, pp. 275--276]. Fulk regards the reported
+Krahe--Meid reduplication \emph{*wiz-wiz} and initial-*w*
+dissimilation as probably most plausible, while explicitly stating
+that there is no consensus [@Fulk2018, pp. 187--188].
+This is his assessment of a reported theory, not a newly verified
+original argument or a named rebuttal of Kroonen.
+
+Ringe's Katz-based account instead combines case formation and
+sandhi history from Indo-European obliques including \emph{*uswé},
+with later prothetic *i*; he also records Weiss's dissimilatory
+alternative [@Ringe2017, pp. 233--235].
+The competing proposals concern the genealogy and segmentation of
+the same relevant plural oblique. Agreement on a later inherited
+input does not choose between metathesis and suffix abstraction,
+reduplication and dissimilation, or sandhi and case formation.
+The regular English path and its independently selected weak-final
+context cannot settle that earlier morphology.
+
 #### Old English evidence
 
-West Saxon [ēow]{.iv lang=oe sort=eow role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:25:1"} 'you' beside early West Saxon and Northumbrian [īow]{.iv lang=oe sort=iow role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:25:2"} 'you' shows the normal West Saxon treatment of the diphthong [@Campbell1959, §702, p. 283]. The corpus targets the West Saxon citation form.
+West Saxon [ēow]{.iv lang=oe sort=eow role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48:1"} 'you' beside early West Saxon and Northumbrian [īow]{.iv lang=oe sort=iow role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48:2"} 'you' shows the normal West Saxon treatment of the diphthong [@Campbell1959, §702, p. 283]. The corpus targets the West Saxon citation form.
 
 #### Development to Old English
 
@@ -5607,7 +5669,7 @@ The selected sentence context is weak and phonologically final at early
 apocope. It is recorded independently of the unchanged PGmc reconstruction
 and independently of the root accent: the acute is not a sentence-stress
 mark. Under a retained-i context the present model produces predicted
-[*īei*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:42:1"}, because w-loss before i intervenes before mutation.
+[*īei*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:65:1"}, because w-loss before i intervenes before mutation.
 That is a computational negative control, not an attested strong Old
 English spelling. Proclitic *ymbe* 'around', weak-final *and* 'and', and
 stressed *ġiest* 'guest' / *fȳr* 'fire' test the boundary and stress
@@ -5679,19 +5741,42 @@ The derivational input is the class I weak preterite third singular of the verb 
 
 The corpus already holds the present stem of the same verb as *think*, PGmc [θánkijaną]{.iv .recon lang=pgmc sort=thankijana role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:23:1"} 'think'. The preterite is entered as a separate row because the two stems have entirely different vowel histories, and only the preterite passes through the nasal-loss complex.
 
+#### The connectorless formation
+
+Ringe's full principal parts establish an inherited finite word,
+not a CAPR assembly from a present stem and a general ending.
+His set contains exactly five reconstructable Proto-Germanic
+class-I verbs with connectorless pasts; Ringe and Taylor distinguish
+that inherited set from later extension
+[@Ringe2017, p. 281; @RingeTaylor2014, pp. 71--75, 97--99].
+The selected third singular is the verb 'thought', not the noun.
+
+Its deeper formation is a different question. Fulk discusses
+\emph{*þaŋxta} and the cluster \emph{*þaŋk-t-}, reviewing retention
+of a present-only suffix, loss of an earlier connector, and analogical
+remodelling without finding a consensus
+[@Fulk2018, pp. 299--301]. Those morphological illustrations
+are not additional complete selected words. In particular, his
+counterfactual buy form \emph{*bu3-dē} predicts the wrong Gothic
+result; it is neither an endorsed input nor evidence for thought's
+finite cell [@Fulk2018, p. 300].
+Successful nasal-loss and rounding phonology does not explain
+the connector's absence. The inherited reconstruction is secure
+within this account while that formation-level premise remains qualified.
+
 #### Old English evidence
 
-West Saxon [þōhte]{.iv lang=oe sort=thohte role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:27:1"} 'thought' is the standard preterite singular of *þenċan* [@ClarkHall1960; @BosworthToller1898]. Fulk names this exact form as the Anglo-Frisian witness for the rounding of the lengthened nasalized low vowel: the lengthened vowels "may have remained nasalized for a considerable time, well past the close of the NWGmc. period, since \*ą̄ produced this way developed to ō in Anglo-Frisian (as in OE pret. sg. þōhte, OFris. thochte 'thought') and did not fall together with OE ā < ai or OFris. ā < ai, au" [@Fulk2018, §4.1, p. 55]. The Old Frisian counterpart [thochte]{.iv lang=ofris sort=thochte role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:27:2"} 'thought' confirms that the development is Anglo-Frisian and not an English innovation.
+West Saxon [þōhte]{.iv lang=oe sort=thohte role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:50:1"} 'thought' is the standard preterite singular of *þenċan* [@ClarkHall1960; @BosworthToller1898]. Fulk names this exact form as the Anglo-Frisian witness for the rounding of the lengthened nasalized low vowel: the lengthened vowels "may have remained nasalized for a considerable time, well past the close of the NWGmc. period, since \*ą̄ produced this way developed to ō in Anglo-Frisian (as in OE pret. sg. þōhte, OFris. thochte 'thought') and did not fall together with OE ā < ai or OFris. ā < ai, au" [@Fulk2018, §4.1, p. 55]. The Old Frisian counterpart [thochte]{.iv lang=ofris sort=thochte role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:50:2"} 'thought' confirms that the development is Anglo-Frisian and not an English innovation.
 
 #### Development to Old English
 
-The derivation has two firing stages and no others. Loss of the nasal before the dorsal fricative nasalizes and lengthens the preceding vowel, so \*θánxtē becomes \*θãxtē; the Anglo-Frisian rounding of the nasalized low vowel then gives \*θōxtē, which surfaces as *þōhte* with the fricative written *h* [@Ringe2017, p. 281; @Fulk2018, §4.1, p. 55].
+The diagnostic root-vowel history consists of nasal loss and rounding. Loss of the nasal before the dorsal fricative nasalizes and lengthens the preceding vowel, so \*θánxtē becomes \*θãxtē; the Anglo-Frisian rounding of the nasalized low vowel then gives \*θōxtē, which surfaces as *þōhte* with the fricative written *h* [@Ringe2017, p. 281; @Fulk2018, §4.1, p. 55]. The trace also records ordinary final-vowel shortening; that endpoint adjustment is separate from the diagnostic root-vowel history.
 
 Three non-firings matter as much as the firings. The Ingvaeonic nasal-spirant law does not apply, correctly, because the dorsal fricative is not one of the \*f, \*þ, \*s spirants that law governs. Preconsonantal loss of the dorsal fricative does not apply either, so the fricative survives to the surface; this is what makes the preterite a cleaner diagnostic than *fist* [@Ringe2017, p. 281]. Finally the rounding does not touch ordinary long low vowels of other origin, as *stone* and *home* show.
 
 #### Why this row is in the corpus
 
-The nasal-loss rule has a high-vowel branch and a low-vowel branch. Before this row only the high-vowel branch had a corpus witness, in *fist* \*fúnxstiz, whose input vowel is \*u and which never reaches the rounding rule at all. The low-vowel pathway \*aNx > \*ą̄x > \*ōx rested on the handbooks alone. This row supplies an attested instance of it, and with it the feeding relation between the nasal loss and the rounding, which was thereby promoted from stage entailment to an independently demonstrated ordering. See `docs/sound_changes/audits/sc025-sc104-nasalized-low-vowel-adjudication.md` §12.
+The nasal-loss rule has a high-vowel branch and a low-vowel branch. Before this row only the high-vowel branch had a corpus witness, in *fist* \*fúnxstiz, whose input vowel is \*u and which never reaches the rounding rule at all. The low-vowel pathway \*aNx > \*ą̄x > \*ōx rested on the handbooks alone. This row supplies an attested instance of it, and with it the feeding relation between the nasal loss and the rounding, which was thereby promoted from stage entailment to an independently demonstrated ordering. See [SC103 PGmcNasalLossBeforeX](#rule-PGmcNasalLossBeforeX) and [SC104 EAFNasalizedLowRounding](#rule-EAFNasalizedLowRounding).
 
 ### hue — OE _hīew_
 
@@ -5842,9 +5927,16 @@ reflex than in a uniquely recoverable phonemic analysis of palatalized
 w. The e reconstructions remain alternatives with positive published
 support; they have not been disproved or silently reclassified.
 
+These differences therefore warrant extended discussion despite a
+regular selected result: the authors' formation premises, citation
+endpoints and later phonemic uncertainties are distinct questions.
+No majority vote or normalization of final spellings resolves them.
+The existing source-led *i* choice and full glide analysis are retained,
+not replaced by a summary of dictionary vowels.
+
 #### Old English evidence
 
-Campbell prints [hīew]{.iv lang=oe sort=hiew role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:118" occ_id="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:118:1"} 'form' beside *hīow* 'form' in the section that derives this stem type, alongside *nīowe*, *nīewe* 'new' and *glīow*, *glīw* 'mirth' [@Campbell1959, §120.2, p. 46]. He distinguishes non-West-Saxon io from West Saxon ie. CAPR selects *hīew* as the source-supported West Saxon counterpart, not as the only attested spelling. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
+Campbell prints [hīew]{.iv lang=oe sort=hiew role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125" occ_id="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125:1"} 'form' beside *hīow* 'form' in the section that derives this stem type, alongside *nīowe*, *nīewe* 'new' and *glīow*, *glīw* 'mirth' [@Campbell1959, §120.2, p. 46]. He distinguishes non-West-Saxon io from West Saxon ie. CAPR selects *hīew* as the source-supported West Saxon counterpart, not as the only attested spelling. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
 
 #### Development to Old English
 
@@ -10558,8 +10650,16 @@ the nominative's analogically restored consonant.
 
 #### Old English quantity and paradigm evidence
 
+The citation and dative are different cells, not rival reconstructions
+of one cell. The source comparison accordingly adds an uncertainty about
+the inherited ending, not another dispute over the already documented
+short dative. Fulk's preferred *-ai* account licenses the selected
+paradigm construction without establishing a uniquely recoverable complete
+ancestor [@Fulk2018, p. 147]. The detailed quantity and levelling
+evidence below remains independently necessary.
+
 Hogg explicitly uses
-[cneowe]{.iv lang=oe sort=cneowe role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:51:1"} 'knee (dat.sg.)'
+[cneowe]{.iv lang=oe sort=cneowe role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:59:1"} 'knee (dat.sg.)'
 as an example of short *eo*. His adjacent long-diphthong example,
 *cnēowe* 'know (past subjunctive)', is a verb form, not an alternative
 knee dative. In the discussion of breaking he again names the knee
@@ -10658,7 +10758,7 @@ spread through knee's attested obliques. Neither uncertainty authorizes
 an unrestricted short-*ew* to long-*ēow* sound law.
 
 The authors' exact inputs are not silently harmonized. Hogg's breaking
-footnote prints [knewaz]{.iv .recon lang=pgmc sort=knewaz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:150" occ_id="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:150:1"}
+footnote prints [knewaz]{.iv .recon lang=pgmc sort=knewaz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:158" occ_id="Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:158:1"}
 'knee', whereas Ringe and Taylor give the neuter *knewą*
 [@HoggGrammar2011, p. 86, note 7; @RingeTaylor2014, p. 387].
 The latter supplies the retained citation reconstruction. This
@@ -12659,34 +12759,57 @@ Old English form: _fȳre_
 
 Kroonen places the lexeme in a heteroclitic family [fōr]{.recon} 'fire' ~ _\*fun-_ and explains
 the front-mutated West Germanic forms from an oblique form of the
-_\*fu(w)eri_ type [@Kroonen2013, 151]. The derivational input [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:23:1"} 'fire' therefore does not
-function as an arbitrary substitute for the headword: it represents the
-specific inherited cell that supplies the _i_ needed for i-umlaut.
+_\*fu(w)eri_ type [@Kroonen2013, 151]. The derivational input [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:23:1"} 'fire' is CAPR's oblique-input
+proxy supplying the _i_ needed for i-umlaut. The account does not
+independently certify that exact complete word, its long *ū*, or its cell.
 
 The Old English target combines a regular inherited form
-[_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28:1"} 'fire' with an attested analogical surface form [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28:2"} 'fire'.
+[_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28:1"} 'fire' with an attested oblique surface form [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:28:2"} 'fire', interpreted by CAPR as analogically restored.
+
+#### Competing ancestry and the legitimacy of the input
+
+Kroonen distinguishes the dative \emph{*fu(w)eni}, its *r*-remodelled
+\emph{*fu(w)eri}, and metathesized \emph{*feuri}. His preferred
+pre-Germanic nominative is \emph{*péh₂-ur}; the \emph{*ph₂-uōr}
+proposal reported from Simms is rejected, not endorsed
+[@Kroonen2013, p. 151]. Ringe instead supplies a reaccented
+zero-grade collective, printed \emph{*ph2uōŕ}, and separately considers
+post-Proto-Germanic oblique dissimilation and *n* replacement by *r*
+[@Ringe2017, pp. 147, 309]. These are consequential formation
+and accent alternatives, not interchangeable quoted dative inputs.
+
+Ringe and Taylor reconstruct apparently disyllabic West Germanic
+\emph{*fuir} with *r* levelled into the oblique stem, but doubt that
+the endingless dative evidence establishes inherited \emph{*fuiri}.
+A front-rounded intermediate in the history of *fȳr* is plausible;
+the intervening stages remain uncertain
+[@RingeTaylor2014, pp. 119, 225]. Neither passage endorses CAPR's
+exact long-*ū* proxy. Equal citation and input fields select the
+Proto-Germanic stage by project convention, not by a new scholarly
+quotation. Quantity, cell and historical input legitimacy require
+separate scientific assessment; no input migration is made here.
 
 #### Old English evidence
 
-Toller's Supplement records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:32:1"} 'fire' as a noun in its _fyr. Add_ entry and separately preserves oblique
-[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:33:1"} 'fire', including _in fyre_ [@Toller1921, 276]. These attestations establish the forms, not the date or mechanism of restoration. The first is the
-regular inherited outcome of the phonological development from the selected
-input; the second shows the later restoration of a final _-e_ within the
-paradigm.
+Toller's Supplement records [_fyr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:55" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:55:1"} 'fire' as a noun in its _fyr. Add_ entry and separately preserves oblique
+[_fyre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:56" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:56:1"} 'fire', including _in fyre_ [@Toller1921, 276]. These attestations establish the forms, not the date or mechanism of restoration. The first is the
+regular output of the phonological development from the selected
+input; the second is interpreted by CAPR as restoration of final _-e_
+within the paradigm, rather than demonstrated as such by the dictionary.
 
-The entry therefore concerns the relation between a regular inherited oblique
-input and an attested Old English surface form that has undergone later
-morphological remodeling.
+The entry therefore distinguishes a regular path from an adopted input
+proxy, the comparative legitimacy of that proxy, and an attested surface
+form whose additional inflection CAPR treats as morphological remodeling.
 
 #### Development to Old English
 
-From [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:44:1"} 'fire', i-umlaut changes _ū_ to _ȳ_ [@HoggPhonology1992, §3.3.3.1]. Subsequent
-loss of the final high vowel after a heavy syllable yields [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:45:1"} 'fire'
-[@Campbell1959, §345]. The inherited phonology is complete at that point.
+From [fūri]{.iv .recon lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:67:1"} 'fire', i-umlaut changes _ū_ to _ȳ_ [@HoggPhonology1992, §3.3.3.1]. Subsequent
+loss of the final high vowel after a heavy syllable yields [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:68:1"} 'fire'
+[@Campbell1959, §345]. The selected phonological path is complete at that point.
 
-[_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:48" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:48:1"} 'fire' is later than that inherited output. Its final _-e_ belongs to
-analogical restoration in the Old English paradigm rather than to the original
-Proto-Germanic ending. The form therefore remains a known but unmodelled
+CAPR interprets the final _-e_ of [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:71" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:71:1"} 'fire' as
+analogical restoration in the Old English paradigm rather than retention of
+the derivational input's ending. The form therefore remains a known but unmodelled
 remodelling: the deterministic phonology is regular, but the attested surface
 form includes later morphological rebuilding.
 
@@ -12699,8 +12822,8 @@ form and from the later analogical surface result.
 | PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
 | lexeme-level heteroclitic headword | [fōr]{.recon} 'fire' ~ _\*fun-_ | comparative background only | fire family | explains the wider lexeme, but not the selected oblique input |
-| inherited oblique cell | [_\*fūri_]{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63:1"} | regular output: [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63:2"} 'fire' | [_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:63:3"} 'fire' | regular inherited output from the derivational input |
-| later analogical surface form | — | attested [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:64" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:64:1"} 'fire' with restored _-e_ | [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:64" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:64:2"} 'fire' | genuine OE target, but not the direct phonological output |
+| selected oblique-input proxy | [_\*fūri_]{.iv lang=pgmc sort=furi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86:1"} | regular output: [_fȳr_]{.iv lang=oe sort=fyr role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86:2"} 'fire' | [_fȳr_]{.iv lang=oe sort=fyr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86:3"} 'fire' | regular output; exact ancestral cell remains qualified |
+| later analogical surface form | — | attested [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87:1"} 'fire' with restored _-e_ | [_fȳre_]{.iv lang=oe sort=fyre role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:87:2"} 'fire' | genuine OE target, but not the direct phonological output |
 
 ### tap — OE _tæppa_
 

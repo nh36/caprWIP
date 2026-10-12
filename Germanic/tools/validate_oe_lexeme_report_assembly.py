@@ -10,6 +10,7 @@ from pathlib import Path
 from oe_derivation_report_with_lexeme_reports import (
     BUCKET_PREFIX,
     build_production_report_map,
+    add_editorial_reports,
     build_row_index,
     extract_field,
     parse_bucket_name,
@@ -19,6 +20,7 @@ from oe_lexeme_report_coverage import (
     PRODUCTION_REPORT_STATUSES,
     OERow,
     apply_manifest,
+    apply_editorial_selection,
     load_manifest,
     load_oe_rows,
     load_report_files,
@@ -164,24 +166,25 @@ def main() -> None:
         )
 
     row_index = build_row_index(rows)
-    production_report_map = build_production_report_map(
+    apply_editorial_selection(rows, args.reports_root.expanduser().resolve())
+    production_report_map = add_editorial_reports(build_production_report_map(
         manifest_entries, args.reports_root.expanduser().resolve()
-    )
-    production_rows = [row for row in rows if row.has_production_manifest_report]
+    ), rows, args.reports_root.expanduser().resolve())
+    production_rows = [row for row in rows if row.has_publication_report]
     missing_required_rows = [
-        row for row in rows if row.requires_report and not row.has_production_manifest_report
+        row for row in rows if row.requires_report and not row.has_publication_report
     ]
     regular_empty_note_no_prod = [
         row
         for row in rows
         if row.derivation_class == "regular"
         and not row.has_note
-        and not row.has_production_manifest_report
+        and not row.has_publication_report
     ]
 
     coverage_text = args.coverage_audit.expanduser().resolve().read_text(encoding="utf-8")
-    expected_prod = parse_count(coverage_text, "Required rows with manifest-backed reports")
-    expected_missing = parse_count(coverage_text, "Required rows with no report")
+    expected_prod = parse_count(coverage_text, "Required rows with published SOURCE")
+    expected_missing = parse_count(coverage_text, "Required rows with no published SOURCE")
 
     audit_entries = parse_entries(
         args.audit_report.expanduser().resolve().read_text(encoding="utf-8"),
@@ -245,8 +248,6 @@ def main() -> None:
 
     adder_row = next(row for row in rows if row.row_id == "1933")
     adder_entry_publish = publish_entries[adder_row.row_id]
-    if "### Lexeme report" in "\n".join(adder_entry_publish):
-        errors.append("Adder format_test report was inserted into publish output.")
     adder_report_lines = trim_blank_edges(
         (
             args.reports_root.expanduser().resolve() / "pilot/adder.md"

@@ -20,6 +20,29 @@ DERIVATION_CLASS: regular
 
 The selected input is the dative(-accusative) plural of the second-person plural pronoun, PGmc [ízwiz]{.iv .recon lang=pgmc sort=izwiz role=selected_input} 'you (dat. pl.)' (Gothic [izwis]{.iv lang=goth sort=izwis role=comparison_form} 'you'). Ringe and Taylor print the development in full: "PGmc \*izwiz 'you (dat. pl.)' (Goth. izwis) > \*iwwi > PWGmc \*iuwi ~ \*iuw (see 3.1.4) > OE īow, OF iū, OS, OHG iu" [@RingeTaylor2014, pp. 41--42], following Stiles's demonstration of the coronal-w assimilation [@Stiles1985, pp. 89--94]. Fulk's discussion of inherited geminate glides after short vowels supplies the wider reanalysis context, not a replacement citation for that assimilation [@Fulk2018, p. 117]. The oblique plural is the cell that survives as the Old English pronoun *ēow*.
 
+### Competing origins of the inherited oblique
+
+Kroonen derives \emph{*izwiz} by metathesis from \emph{*iw-siz},
+with a suffix abstracted from the first-person plural, and separately
+distinguishes older \emph{*iwiz} and the dual formations
+[@Kroonen2013, pp. 275--276]. Fulk regards the reported
+Krahe--Meid reduplication \emph{*wiz-wiz} and initial-*w*
+dissimilation as probably most plausible, while explicitly stating
+that there is no consensus [@Fulk2018, pp. 187--188].
+This is his assessment of a reported theory, not a newly verified
+original argument or a named rebuttal of Kroonen.
+
+Ringe's Katz-based account instead combines case formation and
+sandhi history from Indo-European obliques including \emph{*uswé},
+with later prothetic *i*; he also records Weiss's dissimilatory
+alternative [@Ringe2017, pp. 233--235].
+The competing proposals concern the genealogy and segmentation of
+the same relevant plural oblique. Agreement on a later inherited
+input does not choose between metathesis and suffix abstraction,
+reduplication and dissimilation, or sandhi and case formation.
+The regular English path and its independently selected weak-final
+context cannot settle that earlier morphology.
+
 ### Old English evidence
 
 West Saxon [ēow]{.iv lang=oe sort=eow role=target_form} 'you' beside early West Saxon and Northumbrian [īow]{.iv lang=oe sort=iow role=comparison_form} 'you' shows the normal West Saxon treatment of the diphthong [@Campbell1959, §702, p. 283]. The corpus targets the West Saxon citation form.

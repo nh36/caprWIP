@@ -2,9 +2,9 @@
 """Assemble the compact OE derivation report with lexeme-report insertions.
 
 Modes:
-- audit: insert manifest-backed production reports plus placeholders for rows
+- audit: insert manifest-backed or certified editorial SOURCE plus placeholders for rows
   that require a report but do not yet have one.
-- publish: insert only manifest-backed production reports. Missing required rows
+- publish: insert only manifest-backed or certified editorial SOURCE. Missing required rows
   are recorded in a separate missing-report audit file instead of receiving
   long placeholders in the main report.
 
@@ -21,6 +21,7 @@ from oe_lexeme_report_coverage import (
     PRODUCTION_REPORT_STATUSES,
     OERow,
     apply_manifest,
+    apply_editorial_selection,
     load_manifest,
     load_oe_rows,
     load_report_files,
@@ -92,17 +93,50 @@ def build_audit_placeholder(row: OERow) -> list[str] | None:
             "",
             f"Original TSV note: {row.note}",
         ]
-    if row.derivation_class != "regular":
+    if row.requires_report:
         return [
             "### Lexeme report",
             "",
             "#### Project note",
             "",
             "A lexeme report is required for this row because "
-            f"DERIVATION_CLASS is `{row.derivation_class}`, but no manifest-backed "
-            "production report has been supplied yet.",
+            f"its requirement is {row.requirement_basis}, but no certified "
+            "publication SOURCE has been supplied yet.",
         ]
     return None
+
+
+def add_editorial_reports(
+    report_map: dict[str, list[str]], rows: list[OERow], reports_root: Path,
+) -> dict[str, list[str]]:
+    import sys
+
+    assembly_dir = reports_root.parents[2] / "Germanic/docs/assembly"
+    if str(assembly_dir) not in sys.path:
+        sys.path.insert(0, str(assembly_dir))
+    from build_full_lexical_volume import clean_reader_facing_prose, parse_model_entry, tidy_prose
+
+    combined = dict(report_map)
+    for row in rows:
+        if not row.editorial_report_path:
+            continue
+        source = reports_root / row.editorial_report_path
+        model = parse_model_entry(source)
+        expected = {"PROTO": row.proto, "PROTOFORM": row.protoform,
+                    "COUNTERPART": row.counterpart, "DERIVATION_CLASS": row.derivation_class}
+        if model["lexical_item"] != row.concept or any(
+                model["metadata"].get(k) != value for k, value in expected.items()):
+            raise ValueError(f"publication SOURCE/live identity mismatch: {row.row_id}/{source.name}")
+        prose = ["### Lexeme report", ""]
+        for heading, body in model["sections"]:
+            if heading == "### Transducer input and output":
+                continue
+            prose.extend(["#" + heading, "",
+                          clean_reader_facing_prose(tidy_prose(body)), ""])
+        if len(prose) == 2:
+            raise ValueError(f"publication SOURCE has no prose: {source}")
+        combined[row.row_id] = trim_blank_edges("\n".join(prose).splitlines())
+    return combined
 
 
 def insert_lexeme_block(entry_lines: list[str], lexeme_lines: list[str] | None) -> list[str]:
@@ -116,7 +150,7 @@ def insert_lexeme_block(entry_lines: list[str], lexeme_lines: list[str] | None) 
 
 def build_missing_report_audit(rows: list[OERow]) -> str:
     missing_rows = [
-        row for row in rows if row.requires_report and not row.has_production_manifest_report
+        row for row in rows if row.requires_report and not row.has_publication_report
     ]
     lines = ["# Missing lexeme reports for publish mode", ""]
     lines.append(f"- Missing required production reports: {len(missing_rows)}")
@@ -201,6 +235,38 @@ def default_missing_report_audit_path(output_path: Path) -> Path:
     return output_path.with_name(output_path.name + ".missing_reports.md")
 
 
+def render(root: Path | None = None) -> dict[Path, str]:
+    from oe_lexeme_report_coverage import assign_source_material_diagnostics, build_report
+
+    root = root or Path(__file__).resolve().parents[2]
+    reports_root = root / "Germanic/docs/lexeme_reports"
+    snapshots = root / "Germanic/docs/debug_snapshots"
+    rows = load_oe_rows(root / "Germanic/data/germanic-aligned-final.tsv")
+    entries = load_manifest(reports_root / "report_manifest.tsv")
+    files = load_report_files(reports_root)
+    diagnostics, listed = apply_manifest(rows, entries, reports_root, files)
+    if diagnostics:
+        raise ValueError("; ".join(diagnostics))
+    apply_editorial_selection(rows, reports_root)
+    report_map = add_editorial_reports(build_production_report_map(entries, reports_root),
+                                      rows, reports_root)
+    ambiguous, unmatched = assign_source_material_diagnostics(
+        rows, [p for p in files if p.relative_to(reports_root).as_posix() not in listed],
+        reports_root)
+    text = (snapshots / "oe_derivation_class_trace_report.compact.md").read_text(encoding="utf-8")
+    index = build_row_index(rows)
+    audit = assemble_report(text, index, report_map, mode="audit")
+    publish = assemble_report(text, index, report_map, mode="publish")
+    prefix = "oe_derivation_class_trace_report.with_lexeme_reports"
+    return {
+        reports_root / "coverage_audit.md": build_report(rows, entries, diagnostics, ambiguous, unmatched) + "\n",
+        snapshots / (prefix + ".md"): audit,
+        snapshots / (prefix + ".audit.md"): audit,
+        snapshots / (prefix + ".publish.md"): publish,
+        snapshots / (prefix + ".publish.missing_reports.md"): build_missing_report_audit(rows),
+    }
+
+
 def main() -> None:
     repo_root = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
@@ -275,9 +341,11 @@ def main() -> None:
             "Manifest diagnostics must be resolved before assembly:\n"
             + "\n".join(f"- {item}" for item in manifest_diagnostics)
         )
+    apply_editorial_selection(rows, reports_root)
 
     row_index = build_row_index(rows)
-    production_report_map = build_production_report_map(manifest_entries, reports_root)
+    production_report_map = add_editorial_reports(
+        build_production_report_map(manifest_entries, reports_root), rows, reports_root)
     assembled = assemble_report(
         input_path.read_text(encoding="utf-8"),
         row_index,

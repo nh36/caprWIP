@@ -213,6 +213,11 @@ def _render_pgmc_lexical_integration() -> dict:
         raise SystemExit(f"PGmc lexical integration SOURCE error: {exc}") from exc
 
 
+def _render_lexeme_publication() -> dict:
+    import oe_derivation_report_with_lexeme_reports
+    return oe_derivation_report_with_lexeme_reports.render()
+
+
 def _lexical_outputs() -> list:
     names = ("regular", "attested_variant", "early_analogy", "late_analogy",
              "reconstructed_oe", "known_unmodelled", "unexplained", "all_by_class")
@@ -518,6 +523,10 @@ def nodes() -> tuple:
         _projection("pgmc_lexical_integration",
                     "live populations + protected audit + provisional scoped editorial SOURCE",
                     _render_pgmc_lexical_integration),
+        _projection("lexeme_publication",
+                    "existing report manifest + certified scoped editorial SOURCE "
+                    "inserted into all runnable compact derivations",
+                    _render_lexeme_publication),
         _projection("book_draft",
                     "assembly sources via build_capr_book_draft",
                     _render_book_draft),

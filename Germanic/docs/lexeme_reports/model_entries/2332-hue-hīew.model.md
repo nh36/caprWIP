@@ -113,6 +113,13 @@ reflex than in a uniquely recoverable phonemic analysis of palatalized
 w. The e reconstructions remain alternatives with positive published
 support; they have not been disproved or silently reclassified.
 
+These differences therefore warrant extended discussion despite a
+regular selected result: the authors' formation premises, citation
+endpoints and later phonemic uncertainties are distinct questions.
+No majority vote or normalization of final spellings resolves them.
+The existing source-led *i* choice and full glide analysis are retained,
+not replaced by a summary of dictionary vowels.
+
 ### Old English evidence
 
 Campbell prints [hīew]{.iv lang=oe sort=hiew role=target_form} 'form' beside *hīow* 'form' in the section that derives this stem type, alongside *nīowe*, *nīewe* 'new' and *glīow*, *glīw* 'mirth' [@Campbell1959, §120.2, p. 46]. He distinguishes non-West-Saxon io from West Saxon ie. CAPR selects *hīew* as the source-supported West Saxon counterpart, not as the only attested spelling. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
