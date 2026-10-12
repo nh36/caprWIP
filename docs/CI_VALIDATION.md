@@ -110,6 +110,9 @@ inventory, with output ownership and archive exclusion checks retained.
 Registry/memo agreement now checks registry and memo verdicts directly, rather
 than rerunning the entire binary-dependent graph for every adjudicated SC.
 `adjudicate SCNNN --check` still performs the full strict propagation check.
+The next-SC test derives its expectation from current eligible registry rows
+and the administrative programme start, rather than pinning SC032 and failing
+when that adjudication completes.
 
 An actual dedicated-branch Actions run also exposed an output-introspection
 bug: listing the lexical-integration node's owners invoked its full renderer
