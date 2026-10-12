@@ -79,6 +79,10 @@ local PROSE_SECTIONS = {
 
 -- ── helpers ───────────────────────────────────────────────────────────────────
 
+local function lower_ascii(s)
+  return (s:gsub("[A-Z]", function(c) return string.char(c:byte() + 32) end))
+end
+
 local function normalize(s)
   if not s then return "" end
   local out = s
@@ -88,12 +92,9 @@ local function normalize(s)
   out = out:gsub("^%*+", "")
   out = out:gsub("[%.,;:!?]+$", "")
   out = out:gsub("%s+", " ")
-  -- Unicode-safe case folding: Lua string.lower only operates on ASCII bytes
-  -- (bytes 0x41–0x5A → 0x61–0x7A), leaving all multibyte UTF-8 sequences
-  -- (diacritics, non-Latin letters) intact. This means Macaþ → macaþ but
-  -- cū vs cȳ remain distinct — the desired behaviour.
-  out = string.lower(out)
-  return out
+  -- Locale-sensitive string.lower can corrupt multibyte UTF-8. Fold only ASCII
+  -- so Macaþ → macaþ while quantities and other linguistic distinctions survive.
+  return lower_ascii(out)
 end
 
 local function starts_with_opening_quote(text)
@@ -172,10 +173,6 @@ local function is_ascii_alpha_form(s)
       or s:match("^[A-Za-z]$") ~= nil
 end
 
-local function lower_ascii(s)
-  return (s:gsub("%u", function(c) return string.char(c:byte() + 32) end))
-end
-
 local LANGUAGE_CUES = {
   "oe", "pgmc", "on", "ohg", "os", "ofris", "goth", "gothic",
   "old english", "old norse", "old high german", "old saxon", "old frisian",
@@ -225,7 +222,7 @@ do
   local seqs = {
     -- OE vowel quality / diphthong notation (plain and long-vowel variants)
     "eo", "ea", "ie", "io", "ia", "oe",
-    "ēo", "ēa", "īe", "ōe",
+    "ēo", "ēa", "īe", "īo", "ōe",
     -- OE diphthong-plus-w sequences used in phonological description
     "eaw", "ēaw", "eow", "ēow",
     -- PGmc/NWGmc diphthong source sequences
@@ -285,6 +282,16 @@ end
 
 -- ── paragraph checker ─────────────────────────────────────────────────────────
 
+-- The released SC032 paragraph explicitly pairs these spellings after glossing
+-- head (Campbell1959, pp. 155–156). This is a contextual shared-gloss allowance,
+-- not spelling normalization or permission to omit the paragraph's first gloss.
+local SHARED_GLOSS_VARIANTS = {
+  ["hēafud"] = {
+    anchor = "hēafod",
+    context = "Campbell records both hēafud and hēafod",
+  },
+}
+
 local function check_para(el, is_p2, in_prose_section)
   if is_p2 then
     paras_p2_total = paras_p2_total + 1
@@ -295,6 +302,8 @@ local function check_para(el, is_p2, in_prose_section)
   end
 
   local seen = {}
+  local glossed = {}
+  local paragraph = utils.stringify(el):gsub("%s+", " ")
 
   for i, inline in ipairs(el.content) do
     local form     = nil
@@ -401,10 +410,15 @@ local function check_para(el, is_p2, in_prose_section)
 
     if form and form ~= "" then
       local norm = normalize(form)
+      local immediate_gloss = has_gloss_after(el.content, i)
+      local variant = SHARED_GLOSS_VARIANTS[norm]
+      local shared_gloss = not is_p2 and variant and glossed[variant.anchor]
+        and paragraph:find(variant.context, 1, true)
+      if immediate_gloss then glossed[norm] = true end
       if norm ~= "" and not seen[norm] then
         seen[norm] = true
         if is_p2 then cands_p2 = cands_p2 + 1 else cands_p1 = cands_p1 + 1 end
-        if not has_gloss_after(el.content, i) then
+        if not immediate_gloss and not shared_gloss then
           local entry = {
             para    = (is_p2 and paras_p2_total or paras_p1),
             entry   = p2_entry,
