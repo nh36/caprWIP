@@ -671,8 +671,8 @@ def verify_all(*, mode: str = "full") -> list:
 def main() -> int:
     args = sys.argv[1:]
     mode = "full"
-    if args[-2:] == ["--mode", "portable"]:
-        mode = "portable"
+    if len(args) >= 2 and args[-2] == "--mode" and args[-1] in {"full", "portable"}:
+        mode = args[-1]
         args = args[:-2]
     if args == ["--check"]:
         problems = verify_all(mode=mode)

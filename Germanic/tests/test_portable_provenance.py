@@ -149,3 +149,17 @@ def test_integration_output_inventory_does_not_validate_or_build():
         output = artifact_graph.declared_outputs()["pgmc_lexical_integration"]
     assert output == sorted(survey.ROOT / integration.DIRECTORY / name
                             for name in integration.OUTPUT_NAMES)
+
+
+@pytest.mark.parametrize("mode", ["full", "portable"])
+def test_cli_capability_selection_does_not_turn_failures_into_success(mode):
+    import artifact_graph
+    import adjudicate
+    with patch.object(artifact_graph.sys, "argv", ["artifact_graph.py", "--check", "--mode", mode]), \
+            patch.object(artifact_graph, "verify_all", return_value=["genuine fixture failure"]) as verify:
+        assert artifact_graph.main() == 1
+        verify.assert_called_once_with(mode=mode)
+    with patch.object(adjudicate.sys, "argv", ["adjudicate.py", "--refresh", "--mode", mode]), \
+            patch.object(adjudicate, "refresh", return_value=1) as refresh:
+        assert adjudicate.main() == 1
+        refresh.assert_called_once_with(mode=mode)

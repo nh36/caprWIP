@@ -556,8 +556,9 @@ def main() -> int:
         return 0
     if args == ["--refresh"]:
         return refresh()
-    if args == ["--refresh", "--mode", "portable"]:
-        return refresh(mode="portable")
+    if (len(args) == 3 and args[:2] == ["--refresh", "--mode"]
+            and args[2] in {"full", "portable"}):
+        return refresh(mode=args[2])
     if (len(args) != 2
             or args[1] not in ("--prepare", "--check", "--finalize",
                                "--evidence", "--refresh")
