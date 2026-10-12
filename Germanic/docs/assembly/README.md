@@ -55,6 +55,11 @@ Standalone renderers remain supported:
 The Python builders implement those presentations; invoke the wrappers for
 publication so freshness is enforced.
 
+The combined wrapper refreshes once. It passes `--check-fresh` to the two
+nested Docker renderers, which run the strict graph check and refuse stale
+inputs instead of refreshing again. Called without that option, each renderer
+still refreshes normally. This is not a validation-bypass option.
+
 ## Historical designs and reports
 
 [archive/](archive/) retains the earlier pilot/alpha navigation and the

@@ -909,8 +909,14 @@ class ArtifactGraphTests(unittest.TestCase):
 
     def test_graph_covers_the_control_plane(self):
         ag = _load("artifact_graph")
-        kinds = {n.name: n.kind for n in ag.nodes()}
-        self.assertEqual(kinds, self.REQUIRED_NODES)
+        nodes = ag.nodes()
+        kinds = {n.name: n.kind for n in nodes}
+        self.assertEqual(len(kinds), len(nodes), "duplicate graph node names")
+        for name, kind in self.REQUIRED_NODES.items():
+            self.assertEqual(kinds.get(name), kind)
+        for node in nodes:
+            self.assertIn(node.kind, {"projection", "runtime", "regen"})
+            self.assertTrue(node.authority, f"{node.name}: missing SOURCE authority")
 
     def test_adjudicate_has_no_hand_picked_builder_lists(self):
         src = (TOOLS / "adjudicate.py").read_text(encoding="utf-8")
@@ -955,9 +961,14 @@ class ArtifactGraphTests(unittest.TestCase):
         declaration of which files each node owns."""
         ag = _load("artifact_graph")
         outs = ag.declared_outputs(mode=VALIDATION_MODE)
-        self.assertEqual(set(outs), set(self.REQUIRED_NODES))
+        self.assertEqual(set(outs), {n.name for n in ag.nodes(mode=VALIDATION_MODE)})
+        owners = {}
         for name, paths in outs.items():
             self.assertTrue(paths, f"node {name} declares no outputs")
+            for path in paths:
+                self.assertNotIn(path, owners,
+                                 f"{path}: owned by both {owners.get(path)} and {name}")
+                owners[path] = name
 
     def test_book_index_join_converges_in_one_refresh(self):
         from unittest.mock import patch
@@ -999,6 +1010,7 @@ class ArtifactGraphTests(unittest.TestCase):
         self.assertEqual(sorted(archives & owned), [],
                          "an ARCHIVE artifact appears among graph node "
                          "outputs; archives must stay frozen")
+        self.assertFalse([p for p in owned if "archive" in p.parts])
 
 
 class PositionPinGuardrailTests(unittest.TestCase):
