@@ -12,7 +12,8 @@ approval gate applies.
 
 ## Germanic sound-change adjudication (the default active workstream)
 
-Use the narrow canonical interface. Do not search the repository, inspect
+Use the canonical `python3 Germanic/tools/adjudicate.py` interface.
+Do not search the repository, inspect
 Docker mounts, locate `.bin` files, or run `foma`/`flookup` by hand.
 
 Start at `Germanic/docs/CURRENT_STATE.md` for the canonical commands and
