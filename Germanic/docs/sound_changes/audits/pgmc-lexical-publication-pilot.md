@@ -36,6 +36,14 @@ bibliography and shared index projections. Historical pilots and dated
 147/148 counts are not current authorities. Absence of a model never
 means absence of a complete runnable derivation.
 
+Dormant limitation: the optional alternate adder SOURCE has reported
+Kroonen426/Orel325 locators that must not be activated as printed-page
+citations. The already verified receipts are sheet426 = printed386 for
+Kroonen's feminine entry (distinct from the masculine entry at printed381)
+and sheet325 = printed286 for Orel's two feminine alternatives.
+This pilot uses the corrected mature model, not that optional SOURCE;
+any future activation requires a scoped correction and decision.
+
 Consulted CURRENT_STATE, the SOURCE map, research protocol and template;
 six mature models and ledgers, available materials, traces, protected
 audit evidence/commentary, integration prototypes/design/source checks,
