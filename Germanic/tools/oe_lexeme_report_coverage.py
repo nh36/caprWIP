@@ -41,6 +41,7 @@ EXCLUDED_REPORT_FILES = {
 }
 PRODUCTION_REPORT_STATUSES = {"pilot", "full"}
 FORMAT_TEST_REPORT_STATUS = "format_test"
+HISTORICAL_MATERIAL_DIRS = ("archive/dev_notes_slices", "archive/packets")
 
 
 @dataclass
@@ -183,6 +184,11 @@ def load_report_files(reports_root: Path) -> list[Path]:
         path
         for path in reports_root.rglob("*.md")
         if path.name not in EXCLUDED_REPORT_FILES
+        and (
+            "archive" not in path.relative_to(reports_root).parts
+            or any(path.is_relative_to(reports_root / directory)
+                   for directory in HISTORICAL_MATERIAL_DIRS)
+        )
     )
 
 

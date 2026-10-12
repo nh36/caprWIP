@@ -17,8 +17,13 @@ Future entries should proceed in this order:
 
 1. extract a **source ledger**;
 2. draft a **book-style lexical entry**;
-3. run a **reviewer checklist**;
+3. use the shared **reviewer checklist** and automated publication checks;
 4. only then consider **manifest promotion**.
+
+Do not create a completed checklist and implementation report for each word.
+Record unique evidence, review qualifications and unresolved questions in the
+source ledger or existing research memo; Git and test logs record mechanics.
+Historical paired reports remain in `../archive/model_entries/`.
 
 This order matters. The source ledger is the place where local file paths,
 working uncertainties, and source-discovery notes belong. The final entry should
@@ -39,8 +44,8 @@ Entries are not all the same length.
 - `book_entry_template.md` — reusable book-style entry template
 - `reviewer_checklist.md` — acceptance checklist for draft review
 - `anti_patterns.md` — banned or discouraged prose habits with replacements
-- `scaling_plan.md` — recommended rollout plan for the next entries
-- `implementation_report.md` — record of how this skill was assembled
+- `../production_backlog.md` — current production routing
+- `../archive/writing_skill/` — superseded rollout plan and skill creation record
 
 ## Core principles
 
