@@ -896,6 +896,7 @@ class ArtifactGraphTests(unittest.TestCase):
         "coverage_census": "projection",
         "reader_book": "projection",
         "lexical_sources": "runtime",
+        "lexeme_publication": "projection",
         "book_draft": "projection",
         "index_verborum": "regen",
         "interaction_matrix": "runtime",

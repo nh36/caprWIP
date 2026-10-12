@@ -193,6 +193,23 @@ disabled, repinned or represented as passing. They block an unqualified
 all-green full-book release, not evidence of a new pilot regression.
 No full scientific suite or assay is claimed.
 
+Subsequent cross-stream full-suite evidence exposed an exact infrastructure
+node-inventory fixture that omitted two nodes already present at ERRATA:
+`pgmc_reconstruction_survey` and `pgmc_lexical_integration`.
+An independent in-memory comparison of committed ERRATA and pilot graph
+definitions proves that only `lexeme_publication=projection` is added by
+this pilot. Its directly coupled test expectation is now declared, with
+a focused test for freshness and sole ownership of all five publication
+outputs. The two inherited PGmc omissions remain deliberately unfixed;
+the exact-equality guards remain active rather than weakened to subsets.
+This adds two known inherited infrastructure failures to the broader
+release blockers, not two new failing test identities caused by the pilot.
+The focused follow-up run passes 36 tests and 16 subtests; only
+`ArtifactGraphTests.test_graph_covers_the_control_plane` and
+`ArtifactGraphTests.test_declared_outputs_cover_every_node` fail on those
+same two inherited PGmc omissions. All projection-freshness, archive,
+single-owner and book/index-join tests in that class pass.
+
 Byte comparison of 215 protected corpus/FST/registry/baseline/audit paths
 finds no scientific SOURCE or output change. The sole generated difference
 there is survey provenance: two unchanged Fulk receipt TSVs are LF in Git

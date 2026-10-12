@@ -57,6 +57,23 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertFalse(beaver.has_production_manifest_report)
         self.assertTrue(beaver.has_publication_report)
 
+    def test_publication_graph_node_is_fresh_and_has_one_output_owner(self):
+        import artifact_graph
+
+        nodes = [n for n in artifact_graph.nodes() if n.name == "lexeme_publication"]
+        self.assertEqual(len(nodes), 1)
+        self.assertEqual(nodes[0].kind, "projection")
+        expected = {REPORTS / "coverage_audit.md"} | {
+            SNAPSHOTS / ("oe_derivation_class_trace_report.with_lexeme_reports" + suffix)
+            for suffix in (".md", ".audit.md", ".publish.md", ".publish.missing_reports.md")
+        }
+        self.assertEqual(set(nodes[0].outputs()), expected)
+        self.assertEqual(nodes[0].verify(), [])
+        owners = artifact_graph.declared_outputs()
+        for path in expected:
+            self.assertEqual([name for name, outputs in owners.items() if path in outputs],
+                             ["lexeme_publication"])
+
     def test_qualified_cases_have_explicit_selected_decisions(self):
         cases = editorial.table(ROOT / editorial.DIRECTORY / "editorial_cases.tsv")
         selected = {c["case_id"] for c in cases if c["requires_extended_discussion"] == "1"}
