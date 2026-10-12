@@ -4,7 +4,7 @@ _Generated from the generated reader manifest's chapter files and their SC-numbe
 
 ## Summary
 
-- Reader manifest: `/Users/nathanhill/Code/capr-sc032-workstream/Germanic/docs/sound_changes/registry/reader_manifest.tsv`.
+- Reader manifest: `/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/registry/reader_manifest.tsv`.
 - Chapter files checked: 66.
 - Rule headings mapped from current chapter files: 98.
 - Sound-change links checked: 305.
