@@ -7,7 +7,7 @@
     "Germanic/docs/assembly/build_full_lexical_volume.py": "0cd0ee293d97ff4fa61e83ed0eba8769f4b9ffb869f72b688e4e19f150553340",
     "Germanic/docs/assembly/section_introductions_draft.md": "b3323e305363bddad444763ecf048bea6a7a7c2cfcd097c430d8b7d97d6098b4",
     "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "ec816e2a61ca92993f67986645391278cef504a23229bc0e5dcea4009b4db30b",
-    "Germanic/docs/lexeme_reports/model_entries/1933-adder-n\u01e3dre.model.md": "a500aa249a90d07c1148203277d93e935482375fddadb66cd8cdc2f8005483c1",
+    "Germanic/docs/lexeme_reports/model_entries/1933-adder-n\u01e3dre.model.md": "d6d6227da2a3502db2f1a059d658a89a1303058bcd029007be53e07ebc97bdd7",
     "Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md": "f60fa422c0ddf8b841015be790d9d66848e2354e7644cfed357eb956597da873",
     "Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md": "e14c2eb8eaa31c708bca41b5d2e1d6d147e3b3bffd66a323f3daa9c4f74d6164",
     "Germanic/docs/lexeme_reports/model_entries/1942-beech-b\u014dc.model.md": "e379b87065d96321614ddd61c41dd710b1553e4cdb85f5f16dde4d21710f1f8a",
@@ -40,7 +40,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md": "f6a495589d42b9361cfb2b3ad93559fac3c8d50d27815938cd8d7170fbaecfe3",
     "Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md": "7e1085a206e8f8d83295fc67c98bcc853817bb0fc90416486e11751841939a27",
     "Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md": "59c84676ea55ec8a6272714d0aff30723eb6ece94f4763fda274903a8d3a3be2",
-    "Germanic/docs/lexeme_reports/model_entries/2013-fire-f\u0233re.model.md": "cb12b053685df48076019e9fc3eb502dec42fb8063aa5c8212a58fe8a0976b11",
+    "Germanic/docs/lexeme_reports/model_entries/2013-fire-f\u0233re.model.md": "cc480ea7d27021a24bb0edd59086ac973a61b9944da47ce10b214d6c761a83a8",
     "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md": "b5d938dbe42f977f54a154e93b5610cbdf0d8d363cacc234433229e04fcad557",
     "Germanic/docs/lexeme_reports/model_entries/2018-flea-fl\u0113ah.model.md": "272f2ddb008a5dc708fc00418035d32e1cd92216383e03f49d58bb3e24168e2b",
     "Germanic/docs/lexeme_reports/model_entries/2022-fly-fl\u0113ogan.model.md": "a6773d832ef8bf73e315c214827db8b6ed47b65360fa18b64a5e3dad0ccadd60",
@@ -175,7 +175,7 @@
     "backend/oe_input_context.py": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961"
   },
   "outputs": {
-    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "9f61f2c9eafeab5b0521ce4c0322aaf6a8abcae6267a6f84479fc691fecd93f5",
+    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "e1259a9a4c7017d851b1ce3d41554efa81066e52a5738179a1da02d362cb3b34",
     "Germanic/docs/assembly/manifest_all_by_class.tsv": "6b65a37d82e22e255f1368d570a630b502d4208c6ef9c0bed018a71f26f055f9",
     "Germanic/docs/assembly/manifest_attested_variant.tsv": "2f5d6311c317a91906ef86d767382572b82e91bd1029406efb2ccc48f59ddea2",
     "Germanic/docs/assembly/manifest_early_analogy.tsv": "531d82d607df3eea1bed5af442de310fab06c1fc2d6400f91bd587f9de0ea767",

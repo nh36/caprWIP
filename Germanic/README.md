@@ -4,11 +4,26 @@ This directory contains the active FST development for modeling sound changes fr
 
 ## Current Status
 
-**Research phase complete (2026-04-30).**
+Current phase and commands are maintained in [docs/CURRENT_STATE.md](docs/CURRENT_STATE.md):
+sequential per-SC adjudication with separately instructed scoped work.
+The 2026-04-30 research-completion statement is a historical checkpoint,
+not the current programme status.
 
-**7 mismatches** out of 387 OE lexemes (**98.2% accuracy**, **0 actionable phonology**), as reported by `docs/sound_changes/cascade_baseline/cascade_baseline_summary.json`. All 7 remaining mismatches are documented exceptions in `data/oe_known_problems.tsv` (analogical levellings, lexical *u-preservation near labials). The original 380-row corpus is preserved as a frozen legacy subset (fingerprint `fae65652…`); corpus maturation has since added *who* (OE *hwā*) and *you* (OE *ēow*) as witnesses for the final-*z* and apocope chronology, *thought* (OE *þōhte*) for the nasal-spirant law, and *hue* (OE *hīew*) as the *iwj* witness for West Germanic gemination of *w before *j.
+The selected baseline has **7 documented mismatches out of 387 runnable OE rows**
+(**98.2% accuracy**); see `docs/sound_changes/cascade_baseline/cascade_baseline_summary.json`.
+This output count does not declare historical research complete. The immutable
+original-380 archive and the active migrated subset are distinct; their
+fingerprints are recorded in `docs/CURRENT_STATE.md`.
+Corpus maturation has since added *who* (OE *hwā*) and *you* (OE *ēow*) as
+witnesses for the final-*z* and apocope chronology, *thought* (OE *þōhte*)
+for the nasal-spirant law, and *hue* (OE *hīew*) as the *iwj* witness for
+West Germanic gemination of *w before *j.
 
-**Current phase:** lexical write-up and publication preparation, not further sound-change debugging. For the authoritative writing-phase source hierarchy, see `docs/CANONICAL_STATE.md`.
+For the SOURCE/GENERATED/ARCHIVE hierarchy, see [docs/README.md](docs/README.md).
+Lexical publication currently distinguishes **387 runnable derivation write-ups**,
+**393 reconstruction-audit records**, and **160 elaborated assembled model entries**;
+the [generated population summary](docs/lexeme_reports/pgmc_integration/population_summary.md)
+owns current assembly/selection counts. `docs/archive/CANONICAL_STATE.md` is historical.
 
 ## Directory Structure
 
@@ -31,9 +46,13 @@ Germanic/
     └── analysis/                     # Investigation notes
 ```
 
-## Sound-change workflow (for historical reference or if phonology is reopened)
+## Historical sound-change workflow
 
-The default current workflow is **write-up**, not mismatch fixing. Use `docs/CANONICAL_STATE.md`, `docs/lexeme_reports/report_schema.md`, `docs/lexeme_reports/report_manifest.tsv`, `docs/lexeme_reports/coverage_audit.md`, and the current compact derivation report when producing or polishing lexeme reports.
+The commands below record the earlier diagnostic workflow. For current work,
+use `docs/CURRENT_STATE.md` and the adjudication interface, not this historical
+sequence. Lexical writing uses the live TSV, compact derivation report,
+`docs/lexeme_reports/report_schema.md`, manifest, coverage audit and the
+generated integration population crosswalk.
 
 ### 1. Compile FST
 ```bash

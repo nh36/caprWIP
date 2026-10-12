@@ -97,7 +97,9 @@ the proposed component decision.
 Lexical production can proceed alongside that sequence: approve the editorial
 method and examples, reconcile the production certification contract, close
 the five real assembly gaps, then review a bounded subset of focused
-reconstruction cases. Treat fire's exact quantity/cell/stage and its stale
-dictionary reference, and you's stale Fulk locator, as separately scoped
-scientific/reporting candidates. Nothing here changes their selected inputs
-or silently repairs their production prose.
+reconstruction cases. Fire's exact quantity/cell/stage remains a separately
+scoped scientific candidate. The verified dictionary attribution and
+you/adder Fulk sheet-versus-folio reporting errors are now corrected in
+[errata.md](errata.md); you's qualified consonantal claim and adder's
+later-gemination claim remain valid. Nothing here changes selected inputs
+or resolves the scientific candidate.

@@ -65,6 +65,12 @@ Checked against `docs/refs.bib`:
 
 ## Citation-locator conditional-source pass
 
+**Supersession (2026-10-12):** the historical locator/key below is corrected
+in the model and source ledger to `Toller1921, 276` (Supplement sheet 288).
+The separately catalogued main dictionary is not locally verified. This is
+a bibliographic correction only; inputs, morphology and output are unchanged.
+See `../pgmc_integration/errata.md`.
+
 - Added page-specific locators for `BosworthToller1898, 288`.
 - This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
 - `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.

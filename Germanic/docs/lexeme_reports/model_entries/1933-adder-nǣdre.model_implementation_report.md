@@ -68,4 +68,9 @@ historical locator assertion, not a printed folio.
 
 ## Scope confirmation
 
+**Fulk locator supersession (2026-10-12):** the current model/ledger
+correct149 (sheet) to132 (printed folio), preserving the valid
+secondary-gemination claim. The historical implementation scope below
+is not the scope of this erratum. See `../pgmc_integration/errata.md`.
+
 - No TSV, FST, manifest, packet, memo, bibliography file, derivation trace, writing-skill file, pilot report, or existing model entry was changed.

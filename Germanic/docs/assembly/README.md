@@ -9,8 +9,11 @@ This directory now contains three connected layers of work:
 3. the first **full lexical assembly alpha** built from the seven-class manifest.
 
 The pilot remains deliberately small. The architecture layer defines the corpus
-ordering, and the full alpha exercises that design across all 147 current model
-entries.
+ordering, and the current full assembly contains 160 elaborated model entries.
+This is distinct from 387 runnable derivation write-ups and 393 reconstruction
+audit records. Current selection/assembly counts are owned by the
+[generated integration summary](../lexeme_reports/pgmc_integration/population_summary.md),
+not by the historical pilot/alpha reports.
 
 ## Pilot status
 
@@ -64,9 +67,9 @@ That wrapper regenerates `pilot_assembled.md` locally, then renders `.tex` and
 - `pilot_assembled.tex` — LaTeX output, if `pandoc` is available
 - `pilot_assembled.pdf` — PDF output, if `pandoc` and a Unicode-capable LaTeX engine (`xelatex` or `lualatex`) are available
 
-## Current local result
+## Historical pilot build results
 
-In the current local host environment used for pilot 01:
+In the historical local host environment used for pilot 01:
 
 - assembled Markdown generation was exercised successfully;
 - `pandoc` was **not installed**, so `.tex` generation did not complete;
@@ -132,7 +135,7 @@ The class architecture now follows all **seven** current TSV
 
 The current full-corpus alpha layer includes:
 
-- `build_full_lexical_volume.py` — assembles the 147-entry lexical volume from
+- `build_full_lexical_volume.py` — assembles the current lexical volume from
   `manifest_all_by_class.tsv`
 - `build_full_lexical_volume.sh` — host wrapper for Markdown generation and
   local `pandoc` / PDF builds where available
