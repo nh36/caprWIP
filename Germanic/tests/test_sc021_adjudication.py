@@ -8,6 +8,7 @@ import io
 import re
 import shutil
 import unittest
+import pytest
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -35,10 +36,13 @@ BIN_DIR = REPO_ROOT / "backend"
 # the local runtime build is absent (e.g. clean CI checkout).
 RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
                  and shutil.which("flookup") is not None)
-requires_runtime = unittest.skipUnless(
+_runtime_available = unittest.skipUnless(
     RUNTIME_BUILT,
     "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
     "and flookup on PATH")
+
+def requires_runtime(test):
+    return pytest.mark.runtime(_runtime_available(test))
 
 
 def load_trace_tool():

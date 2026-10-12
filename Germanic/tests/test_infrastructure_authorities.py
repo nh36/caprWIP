@@ -20,6 +20,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import pytest
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -1083,6 +1084,7 @@ class TraceBuildIdentityTests(unittest.TestCase):
         self.assertTrue(any("expected-bin count" in p for p in
                             self.mod.trace_provenance_problems(broken)))
 
+    @pytest.mark.runtime
     def test_mismatched_foma_version_is_rejected(self):
         manifest = REPO_ROOT / "backend" / "oe_build_manifest.json"
         if not manifest.is_file():

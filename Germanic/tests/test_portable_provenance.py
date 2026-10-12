@@ -205,6 +205,19 @@ def test_runtime_capability_selection_covers_live_evidence(mode, expected_skips)
         SimpleNamespace(getoption=lambda name: mode), [runtime, portable])
     assert len(skipped) == expected_skips
 
+@pytest.mark.parametrize("module_name", [
+    "test_sc021_adjudication", "test_sc023_adjudication", "test_sc024_adjudication",
+    "test_sc025_sc104_adjudication", "test_sc026_sc027_adjudication",
+])
+def test_live_probe_decorators_declare_runtime_capability(module_name):
+    module = __import__(module_name)
+
+    def test_probe():
+        pass
+
+    marked = module.requires_runtime(test_probe)
+    assert any(mark.name == "runtime" for mark in marked.pytestmark)
+
 
 def test_unknown_adjudication_still_fails_before_runtime_validation():
     import adjudicate

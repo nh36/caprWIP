@@ -64,6 +64,9 @@ portable mode skips every runtime-marked test even when Docker happens to be
 available. Full mode retains the live rebuild and the strict runtime freshness
 gate. Container availability alone must not expand a portable invocation's
 declared capabilities.
+The older SC021--SC027 live-probe decorators and the local build-version
+comparison carry the same explicit marker; their committed-evidence and
+synthetic validator tests remain portable.
 
 ## Portable evidence and provenance
 
