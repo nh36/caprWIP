@@ -14,9 +14,9 @@ report manifest and class assembly manifest. Regenerate only with
 | assembled | 161 |
 | production_pilots | 11 |
 | format_tests | 1 |
-| reviewed_rows | 11 |
-| scoped_cases | 14 |
-| philological_selected | 9 |
+| reviewed_rows | 12 |
+| scoped_cases | 15 |
+| philological_selected | 10 |
 | pilot_current_required | 160 |
 
 added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332.

@@ -326,15 +326,15 @@ class FingerprintGuardTests(unittest.TestCase):
         # approval receipt; the pre-SC034 and immutable legacy archives remain.
         self.assertEqual(
             data["outputs_sha256"],
-            "9d5adb68d97b0a280c3fa719e544236348cd3e771b01013cfe01f95f3579b6a5",
+            "1ef9f5df8f90c7b1e37ce438b3b0ecdbb313deeecf42ec1eb0f1d070027ea3ec",
         )
         self.assertEqual(
             data["lexical_outputs_sha256"],
-            "5c76b77eff81abfaf2cc54158a2e1dbf46eb7de2b8836f4832984142e93ef04d",
+            "a83b4d17f67d12cc0cd900e2e9975252dee6825cda1eed33efd9b766cac1a32d",
         )
         self.assertEqual(
             data["legacy_subset_sha256"],
-            "6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6",
+            "953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2",
         )
 
 

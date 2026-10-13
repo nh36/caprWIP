@@ -8,7 +8,7 @@ discussion in the eventual write-up of the project.
 ## Table of Contents
 
 1. [Medial high-vowel syncope: dental-obstruent conditioning](#1-medial-high-vowel-syncope-dental-obstruent-conditioning)
-2. [NWGmc u-lowering exceptions near labials: a non-Neogrammarian pattern](#2-nwgmc-u-lowering-exceptions-near-labials-a-non-neogrammarian-pattern)
+2. [NWGmc u-lowering residues: labial comparisons and rust](#2-nwgmc-u-lowering-residues-labial-comparisons-and-rust)
 3. [PWGmc \*j-related sound changes: formalization of under-specified rules](#3-pwgmc-j-related-sound-changes-formalization-of-under-specified-rules)
 4. [A-restoration trigger set: {*æ} is NOT a trigger](#4-a-restoration-trigger-set-æ-is-not-a-trigger)
 5. [The stefn/stemn problem: transponent versus reconstruction](#5-the-stefnstemn-problem-transponent-versus-reconstruction)
@@ -220,7 +220,7 @@ restriction is a good first approximation and has no known regressions.
 
 ---
 
-## 2. NWGmc u-lowering exceptions near labials: a non-Neogrammarian pattern
+## 2. NWGmc u-lowering residues: labial comparisons and rust
 
 **Date discovered:** Session 021 (NWGmc u-lowering investigation)
 
@@ -232,6 +232,16 @@ pp.27-33). However, a cluster of lexemes retains \*u where \*o is predicted:
 \*lubō → lufu (not ×lofu). OHG consistently shows the lowered forms (fol,
 wolf, fogal, boc, wolla), confirming the exceptions are specifically OE (and
 shared with OFris. and OS).
+
+The five retained-u mismatches currently assigned to SC017 are not all
+labial-environment examples. Rust is the nonlabial counterexample: selected
+masculine *rústaz predicts rost, against OE rust. Orel (2003, p.309) gives
+both *rustō and *rustaz; Ringe (2017, pp.247-248, citation p.248)
+independently supports the masculine alternative. The source-backed gender
+choice does not explain retained u, and *frústą > forst excludes a general
+st-cluster exemption. The supplementary `sc017-adjudication.md` records
+the output-neutral rust input migration; the labial comparisons below
+remain comparisons, not a universal account of all five CAPR mismatches.
 
 **What the literature says:**
 
@@ -275,23 +285,20 @@ lautgesetzlich derivation. The FST implementation thus confirmed
 R/T's assessment that these are genuine exceptions, while demonstrating
 more rigorously that no paradigm-cell workaround is available.
 
-**The observation:** The statistical clustering of exceptions near labial/velar
-consonants is real (confirmed by our systematic inventory) but cannot be
-formalized as a Neogrammarian rule because identical environments also show
-regular lowering (folc, wolcen, bolla, etc.). This is a case where the FST
-methodology demonstrates its own limits: **the pattern is gradient/probabilistic,
-not categorical**, and is therefore fundamentally outside the scope of a
-deterministic finite-state transducer. Bülbring's 1902 intuition about
-"incomplete lowering + reversion" may be the closest to a correct explanation,
-but it describes a phonetic tendency rather than a sound law.
+**The observation:** The labial/velar comparisons do not establish a general
+blocking law: the broad environments also show regular lowering (folc,
+wolcen, bolla; Bülbring 1902, pp.45-46; Ringe and Taylor 2014, pp.32-33).
+Rust additionally supplies a nonlabial residue. The unsuccessful probes
+establish only that the selected citation histories remain unexplained,
+not a gradient/probabilistic sound change or a fundamental limitation of
+deterministic formalization. Bülbring's proposed reversion remains an
+attributed historical hypothesis, not CAPR's adopted explanation.
 
-**Significance for the project:** This is an instructive negative result. The
-FST methodology is designed to test Neogrammarian sound laws; when it cannot
-model a pattern, that failure is itself informative. In this case, it confirms
-that the u-lowering exceptions resist formalization and are likely the result
-of a gradient phonetic effect — precisely the conclusion that successive
-generations of scholarship (Bülbring 1902, Luick 1914–40, R/T 2014) have
-been unable to improve upon.
+**Significance for the project:** CAPR retains SC017's general sound law
+without a consonant-cluster exemption. Selecting the supported masculine
+rust citation improves the reconstruction choice but leaves the endpoint
+mismatch unchanged. Neither unsuccessful probes nor the apparent clustering
+settle the historical cause of retained u.
 
 **Full analysis:** See DEV_NOTES.md, "NWGmc u-lowering Exceptions Near
 Labials" section.
@@ -1721,4 +1728,3 @@ dialect-relic-target treatment.
 - Hall, J. R. C. *Concise Anglo-Saxon Dictionary*. s.v. *meard* / *meord*
   (in repo at `docs/references/aconciseanglosa01hallgoog.txt:14793`).
 - DEV_NOTES.md §17.24 (full investigation), §17.24.7 (correction trail).
-

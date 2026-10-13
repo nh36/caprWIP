@@ -13190,18 +13190,18 @@ attested _fugol_ 'fowl'.
 
 ### rust — OE _rust_
 
-Derivation: _\*rústō_ yields regular [rost]{.recon form_role=regular_output}; the Old English form here is _rust_ (unexplained exception).
+Derivation: _\*rústaz_ yields regular [rost]{.recon form_role=regular_output}; the Old English form here is _rust_ (unexplained exception).
 
 #### Derivation trace
 
-Proto input: _\*rústō_
+Proto input: _\*rústaz_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.611\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.359\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -13210,8 +13210,8 @@ Proto input: _\*rústō_
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc U Lowering} & \emph{*róstō} \\
-\mbox{PNWGmc Final Long O Raising} & \emph{*róstu} \\
+\mbox{PNWGmc U Lowering} & \emph{*róstaz} \\
+\mbox{EAF Final Z Deletion} & \emph{*rósta} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -13225,7 +13225,7 @@ Proto input: _\*rústō_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE High Vowel Apocope} & \emph{*róst} \\
+\mbox{PWGmc Final Bare A Loss} & \emph{*róst} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -13240,49 +13240,71 @@ Old English form: _rust_
 
 #### Reconstruction and comparative evidence
 
-The comparative dictionaries do not support a single citation reconstruction
-uniformly. Orel cites [rustaz]{.recon} 'rust' (sb.m./f.) with Old English [_rust_]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:22:1"} 'rust' and Old Saxon
-and Old High German _rost_ 'rust' [@Orel2003, 308]. The form [rústō]{.recon} ‘rust’ therefore stands here
-as a competing citation reconstruction rather than as the best-supported
-inherited headword.
+Orel gives both [rustō]{.recon} 'rust' and [rustaz]{.recon} 'rust',
+with masculine/feminine alternatives and Old English
+[rust]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:23:1"} 'rust', Old Saxon
+[rost]{.iv lang=os sort=rost role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:24:1"} 'rust' and Old High German [rost]{.iv lang=ohg sort=rost role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:24:2"} 'rust' [@Orel2003, p. 309].
+The conventional feminine *ō*-stem and masculine *az*-stem are distinct
+morphological alternatives within his account. Ringe independently reconstructs
+[rustaz]{.recon} 'rust'; his discussion of alternative suffixal and cluster
+histories for _-st-_ concerns the formation, not the explanation of retained
+*u* [@Ringe2017, pp. 247--248, especially p. 248].
 
-That disagreement does not remove the central problem. Whether one starts from
-[rústō]{.recon} ‘rust’ or from source-supported [rustaz]{.recon} ‘rust’, the regular citation-form history
-points toward _rost_ 'rust', not toward the attested Old English noun.
+The masculine Old English noun favors the masculine citation reconstruction,
+selected here as [rústaz]{.recon} 'rust' with the project's acute stress notation.
+This is a morphological and comparative choice, not an exclusive disagreement
+between Orel and Ringe or a claim that Orel's *ō*-stem is unsupported.
+The comparative lowered forms provide context, but output agreement does not
+choose a stem class: both formations regularly predict [rost]{.recon form_role=regular_output}
+'rust', not the attested Old English noun.
 
 #### Old English evidence
 
-The Old English noun is attested, not reconstructed. Clark Hall gives [_rūst_]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:33:1"} 'rust' (m.)
-[@ClarkHall1960, 245], and Bosworth-Toller records [_rúst_]{.iv lang=oe sort=rúst role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:34:1"} 'rust' (also _rust_)
-[@BosworthToller1898, 677]. The form is normalized here as [_rust_]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:35" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:35:1"} 'rust' from that attested
-record.
-
-Those dictionary entries identify a masculine noun, which aligns better with
-Orel's [rustaz]{.recon} ‘rust’ than with the competing [rústō]{.recon} ‘rust’
-preserved in the header.
+The noun is attested, not reconstructed. Clark Hall gives
+[rūst]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:42:1"} 'rust' (m.)
+[@ClarkHall1960, p. 245], and Toller's supplement to Bosworth-Toller records
+[rúst]{.iv lang=oe sort=rúst role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:44:1"} 'rust', beside *rust*,
+with a qualification about quantity [@Toller1921, p. 691].
+Their lexicographical signs are retained as source spellings; the selected
+comparator remains normalized *rust*, without a newly adopted quantity
+interpretation. The evidence establishes the noun and masculine gender,
+not an independent explanation of its retained vowel.
 
 #### Development to Old English
 
-Under Campbell's regular lowering of stressed _u_ before a following mid or low
-vowel, the citation-form input gives _rost_ 'rust', not [_rust_]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:45:1"} 'rust' [@Campbell1959, §115].
-The same lowering would also affect comparative citation-form reconstructions
-such as [rustaz]{.recon} ‘rust’.
+[SC017 PNWGmcULowering](#rule-PNWGmcULowering) regularly lowers the root
+*u* of [rústaz]{.recon} 'rust' before the following non-high vowel, giving
+[róstaz]{.recon form_role=regular_output} 'rust'. Final-*z* loss and subsequent
+regular developments complete the predicted [rost]{.recon form_role=regular_output}
+'rust', not the attested comparator *rust*. Campbell describes the lowering
+and its unresolved retained-*u* residues [@Campbell1959, p. 43, §115];
+Ringe and Taylor discuss the remaining exceptions without establishing a
+general consonantal exemption [@RingeTaylor2014, pp. 27--34].
 
-A high-vowel comparator such as instrumental-type [rústu]{.recon} ‘rust’ would yield [_rust_]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:49" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:49:1"} 'rust'
-regularly, but that does not explain the attested citation form of the noun. No
-accepted regular pathway from the citation form to attested [_rust_]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:51:1"} 'rust' has been
-established.
+The control [frústą]{.recon} 'frost' regularly gives
+[forst]{.iv lang=oe sort=forst role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:63:1"} 'frost', so _-st-_ cannot
+be exempted generally. Selecting the masculine stem is not a phonological
+repair: *rust* remains an unexplained lexical retention and the mismatch
+total does not fall. No exception is inserted into the sound law.
 
-#### Expected and attested forms
+#### Paradigm comparison
 
-The comparison below sets the regular inherited outcomes beside the attested Old English noun.
+Fresh production and isolated-wrapper diagnostics give the following
+results. The oblique-type constructions test conditioning; they are not
+newly attested Proto-Germanic paradigm cells.
 
-| Form / interpretation | Status | Relevance to this entry |
+| Form | Role | Result |
 | :--- | :--- | :--- |
-| _\*rústō_ > _rost_ | computed regular output from one competing citation reconstruction | shows that this citation reconstruction does not reach attested _rust_ |
-| _\*rustaz_ > _rost_ | expected regular output from the source-supported citation reconstruction | shows that correcting the stem class does not solve the vowel problem |
-| _\*rústu_ > _rust_ | regular high-vowel comparator | useful negative control, but not a defensible citation-form solution |
-| _rust_ | attested Old English noun, normalized from _rūst_ / _rúst_ / _rust_ | attested Old English form; the citation-form development remains unexplained |
+| [rústaz]{.recon .iv lang=pgmc sort=rustaz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:76" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:76:1"} | Selected masculine citation form | [rost]{.recon form_role=regular_output}, mismatch |
+| [rústō]{.recon .iv lang=pgmc sort=rusto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:77" occ_id="Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:77:1"} | Orel's alternative *ō*-stem | [rost]{.recon form_role=regular_output}, mismatch |
+| [rústas]{.recon} | Genitive-singular-type probe | [rostes]{.recon form_role=regular_output} |
+| [rústai]{.recon} | Dative-singular-type probe | [roste]{.recon form_role=regular_output} |
+| [rústi]{.recon} | High-front-vowel diagnostic | [ryst]{.recon form_role=regular_output} |
+| [rústu]{.recon} | Marginal high-vowel diagnostic construction | [rust]{.recon form_role=regular_output} |
+
+The hypothetical instrumental-type [rústu]{.recon} 'rust' is a diagnostic construction,
+not an attested Proto-Germanic citation form or an adopted historical solution.
+Its matching output does not establish a source for the ordinary citation noun.
 
 ### wolf — OE _wulf_
 

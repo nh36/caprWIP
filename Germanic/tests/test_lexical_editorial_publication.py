@@ -54,7 +54,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertTrue(straw.has_publication_report)
         self.assertFalse(straw.has_production_manifest_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
-                         PRINCIPAL | {"1934", "1941", "2224"})
+                         PRINCIPAL | {"1934", "1941", "2162", "2224"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -134,6 +134,9 @@ class EditorialPublicationTests(unittest.TestCase):
         insertion = int(next(r["global_order"] for r in current if r["row_id"] == "2224"))
         unchanged = [r for r in current if r["row_id"] != "2224"]
         for now, before in zip(unchanged, old, strict=True):
+            if before["row_id"] == "2162":
+                self.assertEqual((before["proto"], before["protoform"]), ("*rústō", "*rústō"))
+                before = dict(before, proto="*rústaz", protoform="*rústaz")
             shifted = int(before["global_order"]) >= insertion
             self.assertEqual(int(now["global_order"]), int(before["global_order"]) + shifted)
             self.assertEqual(int(now["class_order"]), int(before["class_order"])

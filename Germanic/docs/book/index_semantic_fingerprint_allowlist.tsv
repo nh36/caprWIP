@@ -1,4 +1,16 @@
 action	language	form	form_role	source_scope	source_ref	note
+add	os	rost	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Accurate comparative source tagging, Orel2003 p.309; no Old Saxon corpus or runtime changes.
+add	ohg	rost	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Existing comparative evidence now explicitly attributed instead of broad-prose inference, Orel2003 p.309.
+remove	ohg	rost	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Superseded by the explicit OHG source tag on the same attested comparator; evidence preserved, not retracted.
+add	oe	forst	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	SC017 rust-input correction preserves the frost lowering control; Campbell1959 p.43, §115.
+add	oe	forst	comparison_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC017 rust discussion adds the unchanged frost control against an st exemption; Campbell1959 p.43, §115.
+add	oe	rust	comparison_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	Unchanged masculine rust comparator in the SC017 reader; Orel2003 p.309 and Ringe2017 pp.247-248.
+add	pgmc	*rústaz	selected_input	trace_proto_input	rust — OE rust	Exact authorized SC017 row2162 input migration; approved_rust_input_migration.json preserves rost and every other final.
+add	pgmc	*rústaz	source_protoform	lexical_protoform	rust — OE rust	Authorized masculine citation/input selection, Ringe2017 p.248 and one of Orel2003 p.309 alternatives.
+add	pgmc	rústaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Selected masculine citation in the paradigm table, not a new paradigm-cell target; Ringe2017 p.248.
+add	pgmc	rústō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Orel2003 p.309 alternative remains genuine source evidence, not the live selected input.
+remove	pgmc	*rústō	selected_input	trace_proto_input	rust — OE rust	Former input superseded only by the approved SC017 rust_input transition; original380 and exact post-SC034 archives remain immutable.
+remove	pgmc	*rústō	source_protoform	lexical_protoform	rust — OE rust	Former selected reconstruction replaced by the authorized masculine choice; Orel's real alternative remains in the lexical discussion and index.
 add	oe	strawes	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; reconstructed unattested short genitive, Brunner1965 pp.49,110.
 add	oe	strewu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; explicitly doubtful plural, Brunner1965 p.204.
 add	oe	strēa	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; reconstructed unattested free simplex, Brunner1965 pp.49,110.

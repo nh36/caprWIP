@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import csv
 import json
+import subprocess
 import sys
 import unittest
 from pathlib import Path
@@ -140,7 +141,7 @@ class SC034AdjudicationTests(unittest.TestCase):
         self.assertEqual((edge["relation_type"], edge["evidence_basis"]),
                          ("technical_computational", "technical"))
 
-    def test_post_adoption_protected_assay_preserves_all_finals_and_eight_mismatches(self):
+    def test_historical_post_sc034_assay_preserves_all_finals_and_eight_mismatches(self):
         directory = SC / "literature_dossiers/anglo_frisian"
         data = load_recipes(directory / "oe_post_sc034_controls.json")
         recipe = next(row for row in data["recipes"] if row["id"] == "post-sc034-controls")
@@ -162,11 +163,15 @@ class SC034AdjudicationTests(unittest.TestCase):
             ("baseline_context_sha256", GERMANIC / "data/entry_context_metadata.tsv"),
             ("baseline_context_helper_sha256", ROOT / "backend/oe_input_context.py"),
         ):
-            self.assertEqual(data[field], hashlib.sha256(path.read_bytes()).hexdigest())
+            content = path.read_bytes()
+            if field == "baseline_corpus_sha256":
+                content = subprocess.check_output(
+                    ["git", "show", f"757e36e0:{path.relative_to(ROOT)}"], cwd=ROOT)
+            self.assertEqual(data[field], hashlib.sha256(content).hexdigest())
             captured = [checksum for name, checksum in report["canonical_protected_hashes"].items()
                         if name.endswith("/" + path.name)]
             self.assertEqual(captured, [data[field]])
-        with (SC / "cascade_baseline/cascade_baseline_outputs.tsv").open() as handle:
+        with (SC / "cascade_baseline/cascade_baseline_outputs_pre_sc017_rust_input.tsv").open() as handle:
             expected = {row["row_id"]: row["outputs"].split("|")
                         for row in csv.DictReader(handle, delimiter="\t")}
         self.assertEqual({row["id"]: row["variant_outputs"] for row in report["rows"]}, expected)

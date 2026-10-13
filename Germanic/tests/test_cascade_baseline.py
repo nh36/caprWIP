@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6"
+    ACTIVE_SHA = "953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -121,7 +121,7 @@ class LegacySubsetTests(unittest.TestCase):
             migrations = list(csv.DictReader(handle, delimiter="\t"))
         selected = mod.legacy_subset(self.current_rows, self.legacy_rows, migrations)
         self.assertEqual(len(selected), 380)
-        self.assertEqual([m["row_id"] for m in migrations], ["2040", "2085", "2224"])
+        self.assertEqual([m["row_id"] for m in migrations], ["2040", "2085", "2224", "2162"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -175,11 +175,21 @@ class LegacySubsetTests(unittest.TestCase):
             previous, post_hue, approval,
         )
         mod.validate_cell_transition(
-            post_hue, {"records": self.current_rows, "summary": self.summary},
+            post_hue, mod.read_baseline(
+                BASELINE_DIR / "cascade_baseline_outputs_pre_sc017_rust_input.tsv",
+                BASELINE_DIR / "cascade_baseline_summary_pre_sc017_rust_input.json"),
             json.loads((BASELINE_DIR / "approved_sc034_output_migration.json").read_text()),
         )
+        mod.validate_cell_transition(
+            mod.read_baseline(
+                BASELINE_DIR / "cascade_baseline_outputs_pre_sc017_rust_input.tsv",
+                BASELINE_DIR / "cascade_baseline_summary_pre_sc017_rust_input.json"),
+            {"records": self.current_rows, "summary": self.summary},
+            json.loads((BASELINE_DIR / "approved_rust_input_migration.json").read_text()),
+        )
         self.assertEqual(len(mod.legacy_subset(
-            previous["records"], old, [m for m in migrations if m["row_id"] != "2224"],
+            previous["records"], old,
+            [m for m in migrations if m["row_id"] not in {"2224", "2162"}],
         )), 387)
 
 

@@ -99,7 +99,9 @@ class PublicationTests(unittest.TestCase):
             + ["# Local {#rule-Local}", "[local rule](#rule-Local)",
                "# Lexeme {#lexeme}", "[lexical entry](#lexeme)",
                "[website](https://example.org)", "[new companion](#rule-NewFutureRule)",
-               "[later span](#rule-Span)", "[destination]{#rule-Span}"])
+               "[later span](#rule-Span)", "[destination]{#rule-Span}",
+               "[absent lexical companion](#rust-oe-rust)",
+               "[broken local link](#missing-local)"])
         result = subprocess.run(
             ["pandoc", "--from=markdown", "--to=json",
              "--lua-filter=" + str(ROOT / "Germanic/tools/standalone_lexical_links.lua")],
@@ -118,7 +120,8 @@ class PublicationTests(unittest.TestCase):
                     collect(child)
 
         collect(document)
-        self.assertEqual(links, ["#rule-Local", "#lexeme", "https://example.org", "#rule-Span"])
+        self.assertEqual(links, ["#rule-Local", "#lexeme", "https://example.org",
+                                "#rule-Span", "#missing-local"])
         plain = subprocess.run(["pandoc", "--from=json", "--to=plain"], input=result.stdout,
                                text=True, capture_output=True, check=True).stdout
         for i, rule in enumerate(RULES):

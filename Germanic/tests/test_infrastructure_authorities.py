@@ -59,10 +59,11 @@ CARD_INDEX = (SC_DIR / "order_tests/chronology_cards"
 # documented mismatches.
 # SC034 subsequently authorizes only straw's regular output/match transition;
 # test_sc034_output_adoption protects the exact delta and earlier archives.
+# SC017 rust_input changes only rust's three input fields, never its output.
 EXPECTED_OUTPUTS_SHA256 = (
-    "5c76b77eff81abfaf2cc54158a2e1dbf46eb7de2b8836f4832984142e93ef04d")
+    "a83b4d17f67d12cc0cd900e2e9975252dee6825cda1eed33efd9b766cac1a32d")
 EXPECTED_LEGACY_SUBSET_SHA256 = (
-    "6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6")
+    "953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2")
 EXPECTED_ROW_COUNT = 387
 
 
@@ -899,6 +900,7 @@ class ArtifactGraphTests(unittest.TestCase):
         "full_trace": "runtime",
         "registry_views": "projection",
         "coverage_census": "projection",
+        "known_problems": "projection",
         "reader_book": "projection",
         "pgmc_reconstruction_survey": "projection",
         "lexical_sources": "runtime",

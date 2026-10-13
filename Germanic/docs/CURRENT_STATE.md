@@ -39,11 +39,11 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6`
+  `953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2`
 - selected-387 corpus fingerprint (`outputs_sha256`):
-  `9d5adb68d97b0a280c3fa719e544236348cd3e771b01013cfe01f95f3579b6a5`
+  `1ef9f5df8f90c7b1e37ce438b3b0ecdbb313deeecf42ec1eb0f1d070027ea3ec`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `5c76b77eff81abfaf2cc54158a2e1dbf46eb7de2b8836f4832984142e93ef04d`
+  `a83b4d17f67d12cc0cd900e2e9975252dee6825cda1eed33efd9b766cac1a32d`
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.
@@ -73,6 +73,15 @@ match-flag receipt is `approved_sc034_output_migration.json`; separate
 approval/archive and the other386 finals remain protected. Adoption uses
 `SC034 --adopt-cell-baseline --approval approved_sc034_output_migration.json`;
 routine refresh never changes it.
+
+The supplementary SC017 rust selection changes only row2162's PROTO and
+PROTOFORM from *rústō to masculine *rústaz, retaining rust, predicted rost
+and `unexplained_unmodelled`. `approved_rust_input_migration.json` authorizes
+the exact input-only baseline transition; `*_pre_sc017_rust_input.*`
+preserves the post-SC034 state. The original-380 archive remains immutable
+and the migration TSV makes its old rust identity recoverable. All387
+finals and the same eight mismatches are unchanged. SC017's earlier RETAIN
+verdict, registry reference, definition and chronology remain intact.
 
 The SC031/SC098 context adoption separately changes only you's assembled
 evaluator input; its lexical reconstruction and every final are unchanged.

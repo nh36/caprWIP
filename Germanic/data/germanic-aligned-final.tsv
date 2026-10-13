@@ -896,7 +896,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 965	r ɪ n ə n	*rínnaną	r ɪ n ə n ( - - )	rɪnən	rinnen	265	German						run	*rínnaną	353
 737	r uː s t	*rustō	r uː s t ( - )	ruːst	roest	202	Dutch						rust	*rústō	205
 736	r ʌ s t	*rustō	r ʌ s t ( - )	rʌst	rust	202	English						rust	*rústō	205
-2162	r u s t	*rústō	r ʌ s t ( - )	rʌst	rust	202	Old_English	DOCUMENTED EXCEPTION (per §17.10.34): regular sound change gives **rost (Stiles 2012 §4.1.1.2 env. b: low *ō triggers a-umlaut). Campbell §115 groups with the u-preservation exceptions. No lautgesetzlich paradigm cell available: i-stem/gen.sg. cells with high *i would instead trigger i-umlaut (→ **ryst).		unexplained_unmodelled			rust	*rústō	205
+2162	r u s t	*rústaz	r ʌ s t ( - )	rʌst	rust	202	Old_English	Documented SC017 lexical exception. Old English rust is a masculine noun; the selected Proto-Germanic citation/input *rústaz is supported by Ringe (2017 pp.247-248) and is one of Orel's alternatives (2003 p.309 also gives *rustō). Regular u-lowering from *rústaz yields rost, not attested rust. The alternative *rústō likewise yields rost. A hypothetical high-vowel instrumental-type *rústu yields rust, but is not an adequately supported source of the ordinary citation form; an i-bearing comparator yields ryst. The retained u remains unexplained. No sound-law exception or paradigm-cell retargeting is adopted. The selection is scoped to this Old English row, not the other doculects of cognate set 202.		unexplained_unmodelled			rust	*rústaz	205
 735	r ɔ s t	*rustō	r ɔ s t ( - )	rɔst	Rost	202	German						rust	*rústō	205
 1464	r ɔ ɣ ə	*rúgiz	r ɔ ɣ ə ( - )	rɔɣə	rogge	400	Dutch						rye	*rúgiz	206
 1463	r aɪ	*rúgiz	r aɪ - - ( - )	raɪ	rye	400	English						rye	*rúgiz	206

@@ -64,6 +64,7 @@ import cascade_order_manifest  # noqa: E402
 import executable_facts  # noqa: E402
 import generate_registry_views  # noqa: E402
 import oe_pipeline  # noqa: E402
+import oe_known_problems_report  # noqa: E402
 import pgmc_reconstruction_survey  # noqa: E402
 import rule_coverage_census  # noqa: E402
 from capr_runtime import (  # noqa: E402
@@ -112,6 +113,12 @@ ARCHIVE_PATHS = tuple(
         "cascade_baseline/cascade_baseline_summary_pre_sc031_sc098.json",
         "cascade_baseline/cascade_baseline_outputs_pre_sc033.tsv",
         "cascade_baseline/cascade_baseline_summary_pre_sc033.json",
+        "cascade_baseline/cascade_baseline_outputs_pre_sc033_hue.tsv",
+        "cascade_baseline/cascade_baseline_summary_pre_sc033_hue.json",
+        "cascade_baseline/cascade_baseline_outputs_pre_sc034.tsv",
+        "cascade_baseline/cascade_baseline_summary_pre_sc034.json",
+        "cascade_baseline/cascade_baseline_outputs_pre_sc017_rust_input.tsv",
+        "cascade_baseline/cascade_baseline_summary_pre_sc017_rust_input.json",
         "registry/archival_orders.tsv",
         "order_tests/chronology_cards/chronology_card_index.tsv",
         "order_tests/chronology_cards/chronology_graph_nodes.tsv",
@@ -217,6 +224,19 @@ def _render_pgmc_lexical_integration(mode: str = "full") -> dict:
 def _render_lexeme_publication() -> dict:
     import oe_derivation_report_with_lexeme_reports
     return oe_derivation_report_with_lexeme_reports.render()
+
+
+def _render_known_problems() -> dict:
+    import cascade_baseline
+    baseline = cascade_baseline.read_baseline(
+        BASELINE_DIR / "cascade_baseline_outputs.tsv",
+        BASELINE_DIR / "cascade_baseline_summary.json",
+    )
+    mismatches = oe_known_problems_report.baseline_mismatches(baseline["records"])
+    ledger = oe_known_problems_report.load_ledger(
+        REPO_ROOT / "Germanic/data/oe_known_problems.tsv")
+    return {FULL_TRACE.with_name("oe_known_problems_report.txt"):
+            oe_known_problems_report.render_report(mismatches, ledger)}
 
 
 def _pgmc_lexical_integration_outputs() -> list:
@@ -553,6 +573,9 @@ def nodes(*, mode: str = "full") -> tuple:
                     "committed full trace + registry via rule_coverage_census",
                     _render_census,
                     outputs=lambda: [rule_coverage_census.OUTPUT]),
+        _projection("known_problems",
+                    "adopted cascade baseline + known-problems ledger",
+                    _render_known_problems),
         _projection("reader_book",
                     "reader SOURCE files + reader_manifest.tsv via "
                     "build_reader_book",

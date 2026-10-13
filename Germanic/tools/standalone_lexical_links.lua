@@ -1,4 +1,4 @@
--- Companion rule references have destinations only in the combined book.
+-- Cross-volume references have destinations only in the combined book.
 function Pandoc(doc)
   local destinations = {}
   local function collect(el)
@@ -14,6 +14,7 @@ function Pandoc(doc)
   return doc:walk({
     Link = function(el)
       local target = el.target:match("^#(rule%-.+)$")
+        or el.target:match("^#(.+%-oe%-.+)$")
       if target and not destinations[target] then
         return el.content
       end

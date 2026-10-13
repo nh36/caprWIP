@@ -9287,7 +9287,7 @@ NOTE: DOCUMENTED EXCEPTION (per §17.10.34): Campbell §115 names fugol as excep
 
 
 # rust
-PROTO: *rústō
+PROTO: *rústaz
 EXPECTED: rust
 OUTPUTS: rost
 
@@ -9295,11 +9295,11 @@ OUTPUTS: rost
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *rústō
+English Proto Input: *rústaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc U Lowering: *róstō<br>PNWGmc Final Long O Raising: *róstu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *róst |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *róstaz<br>EAF Final Z Deletion: *rósta<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *róst |
 
 
 
@@ -9307,7 +9307,7 @@ English Proto Input: *rústō
 
 Outcome: rost
 
-NOTE: DOCUMENTED EXCEPTION (per §17.10.34): regular sound change gives *rost (Stiles 2012 §4.1.1.2 env. b: low *ō triggers a-umlaut). Campbell §115 groups with the u-preservation exceptions. No lautgesetzlich paradigm cell available: i-stem/gen.sg. cells with high *i would instead trigger i-umlaut (→ *ryst).
+NOTE: Documented SC017 lexical exception. Old English rust is a masculine noun; the selected Proto-Germanic citation/input *rústaz is supported by Ringe (2017 pp.247-248) and is one of Orel's alternatives (2003 p.309 also gives *rustō). Regular u-lowering from *rústaz yields rost, not attested rust. The alternative *rústō likewise yields rost. A hypothetical high-vowel instrumental-type *rústu yields rust, but is not an adequately supported source of the ordinary citation form; an i-bearing comparator yields ryst. The retained u remains unexplained. No sound-law exception or paradigm-cell retargeting is adopted. The selection is scoped to this Old English row, not the other doculects of cognate set 202.
 
 
 

@@ -1,6 +1,6 @@
 # Missing lexeme reports for publish mode
 
-- Missing required production reports: 141
+- Missing required production reports: 140
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Reason |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -79,7 +79,6 @@
 | 2143 | nose | nosu | early_analogy | no | DERIVATION_CLASS=early_analogy |
 | 2152 | rest | ræste | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2155 | coat | rocc | regular | yes | NOTE |
-| 2162 | rust | rust | unexplained_unmodelled | yes | NOTE, DERIVATION_CLASS=unexplained_unmodelled |
 | 2168 | sap | sæp | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2169 | sea | sǣ | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2179 | sheep | sċēap | regular | yes | NOTE |

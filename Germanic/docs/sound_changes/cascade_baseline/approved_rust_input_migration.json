@@ -1,0 +1,30 @@
+{
+  "adjudication": "SC017",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc017-adjudication.md",
+  "transition_id": "rust_input",
+  "previous_summary": {
+    "outputs_sha256": "9d5adb68d97b0a280c3fa719e544236348cd3e771b01013cfe01f95f3579b6a5",
+    "lexical_outputs_sha256": "5c76b77eff81abfaf2cc54158a2e1dbf46eb7de2b8836f4832984142e93ef04d",
+    "legacy_subset_sha256": "6e4ee75a2cb225cd9da445bce3b4251a0ad11d93e7381eb87028357519f1c3f6"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "2162",
+      "before": {
+        "proto": "*rústō",
+        "proto_norm": "rústō",
+        "fst_input": "rústō",
+        "counterpart": "rust",
+        "outputs": "rost"
+      },
+      "after": {
+        "proto": "*rústaz",
+        "proto_norm": "rústaz",
+        "fst_input": "rústaz",
+        "counterpart": "rust",
+        "outputs": "rost"
+      }
+    }
+  ]
+}

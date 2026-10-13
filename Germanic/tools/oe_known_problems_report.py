@@ -15,7 +15,10 @@ exception / open). Also flags stale ledger entries whose proto no longer
 mismatches.
 
 Usage:
+  python3 Germanic/tools/adjudicate.py --refresh
+    Canonically projects this report from the adopted, evaluated baseline.
   python3 Germanic/tools/oe_known_problems_report.py
+    Optional diagnostic recomputation in the provisioned Foma runner.
 """
 
 from __future__ import annotations
@@ -101,11 +104,26 @@ def collect_mismatches(
     return mismatches
 
 
-def write_report(
+def baseline_mismatches(records: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """Project the already evaluated, adopted baseline without rerunning Foma."""
+    mismatches = []
+    for row in records:
+        if row["match"] == "1":
+            continue
+        outputs = row["outputs"].split("|") if row["outputs"] else []
+        out = outputs[0] if outputs else "+?"
+        bucket = base_bucket(row["proto_norm"], out, row["counterpart"]) if outputs else "no_output"
+        if bucket == "other":
+            bucket += "__" + other_subtype(out, row["counterpart"], row["proto_norm"])
+        mismatches.append({"proto": row["proto"], "output": out,
+                           "expected": row["counterpart"], "bucket": bucket})
+    return mismatches
+
+
+def render_report(
     mismatches: List[Dict[str, str]],
     ledger: Dict[str, Dict[str, str]],
-    output_path: Path,
-) -> None:
+) -> str:
     # Partition mismatches by ledger lookup.
     tractable: List[Dict[str, str]] = []
     triaged: Dict[str, List[Tuple[Dict[str, str], Dict[str, str]]]] = defaultdict(list)
@@ -211,8 +229,16 @@ def write_report(
         lines.append("  (none)")
     lines.append("")
 
+    return "\n".join(lines) + "\n"
+
+
+def write_report(
+    mismatches: List[Dict[str, str]],
+    ledger: Dict[str, Dict[str, str]],
+    output_path: Path,
+) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    output_path.write_text(render_report(mismatches, ledger), encoding="utf-8")
 
 
 def main() -> None:

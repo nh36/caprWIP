@@ -21,6 +21,23 @@ The clearest corpus witnesses are [ġeoc]{.iv lang=oe sort=geoc role=evidence_fo
 high vowel the lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
 survived [@SieversBrunner1965, pp. 64--65, §92.1].
 
+Regular lowering does not imply that every attested inherited word preserves
+the lowered vowel. The masculine noun
+[rust]{.iv lang=oe sort=rust role=comparison_form} 'rust' is a lexical residue:
+selected PGmc [rústaz]{.recon} 'rust' regularly predicts
+[rost]{.recon form_role=regular_output} 'rust'. Orel's alternative
+[rustō]{.recon} 'rust' gives the same lowered root; his masculine alternative
+is independently supported by Ringe [@Orel2003, p. 309;
+@Ringe2017, pp. 247--248]. Since [frústą]{.recon} 'frost' regularly gives
+[forst]{.iv lang=oe sort=forst role=comparison_form} 'frost', a general
+_-st-_ exemption is unwarranted. The retained *u* remains unexplained,
+alongside the other retained-*u* cases such as *bucc* 'buck', *fugol*
+'bird', *wulf* 'wolf' and *wulle* 'wool'; their consonantal environments
+do not establish a general replacement law [@Campbell1959, p. 43, §115;
+@RingeTaylor2014, pp. 27--34]. [SC017 PNWGmcULowering](#rule-PNWGmcULowering) is retained unchanged; the
+[rust lexical discussion](#rust-oe-rust) distinguishes the selected
+masculine citation, Orel's alternative and diagnostic paradigm constructions.
+
 ## SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering}
 
 ```foma

@@ -2,9 +2,9 @@
 OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
-Total mismatches:         7
+Total mismatches:         8
   Tractable (no ledger):  0
-  exception               2
+  exception               3
   open                    0
   parked                  0
   wontfix                 5
@@ -32,17 +32,19 @@ PARKED  (0)
 ========================================================================
 WONTFIX  (5)
 ========================================================================
---- u_lowering_near_labial (5) ---
+--- u_lowering_lexical_retention (1) ---
+  *rústaz            -> rost                 (expected rust)
+    reason: SC017 predicts rost from masculine *rústaz; OE masculine rust retains u. *frústą > forst excludes a general -st- exemption. Orel's alternative *rústō also yields rost; available paradigm alternatives do not establish a regular citation-form derivation.
+    refs:   Campbell1959 p.43 §115;Orel2003 p.309;Ringe2017 pp.247-248;Germanic/docs/sound_changes/audits/sc017-adjudication.md
+    added:  2026-04-25
+
+--- u_lowering_near_labial (4) ---
   *búkkaz            -> bocc                 (expected bucc)
     reason: NWGmc u-lowering near labials non-Neogrammarian: u retained sporadically before labials/velars in lexical items (Luick §105-6)
     refs:   notable_findings#2;DEV_NOTES.md u-lowering
     added:  2026-04-25
   *fúglaz            -> fogol                (expected fugol)
     reason: Same u-lowering near labials issue (R/T vol.2 §2.3.1 explicit example)
-    refs:   notable_findings#2
-    added:  2026-04-25
-  *rústō             -> rost                 (expected rust)
-    reason: u retention before /st/; also separate metathesis bug (orst output)
     refs:   notable_findings#2
     added:  2026-04-25
   *wúlfaz            -> wolf                 (expected wulf)
@@ -55,7 +57,7 @@ WONTFIX  (5)
     added:  2026-04-25
 
 ========================================================================
-EXCEPTION  (2)
+EXCEPTION  (3)
 ========================================================================
 --- analogical_dat_e (1) ---
   *fūri              -> fȳr                  (expected fȳre)
@@ -68,6 +70,12 @@ EXCEPTION  (2)
     reason: FST correctly produces tappa (lautgesetzlich nom.sg. of n-stem masc *táppô with A-restoration before back *-ô; cf. crabba, racca, maþa per R/T p.207); attested tæppa has analogical æ — every paradigm cell traps into either A-restoration → tappa/tappan or i-umlaut → teppan, so no PGmc input yields lautgesetzlich tæpp- (Fulk §12.19 n.6 stæppan parallel; plausibly levelled from co-radical j-stems)
     refs:   DEV_NOTES.md §3097, §14077, §17.10.16a-c, §17.27
     added:  2026-04-26
+
+--- analogical_w_restoration (1) ---
+  *stráwą            -> strēa                (expected strēaw)
+    reason: Already-approved SC034 regular inherited branch yields strēa against selected strēaw; retained final w requires the separately discussed levelling, not a sound-law repair. This eighth mismatch precedes the rust input migration.
+    refs:   RingeTaylor2014 pp.174-175;Campbell1959 pp.46-47 §120;Germanic/docs/sound_changes/audits/sc034-adjudication.md
+    added:  2026-10-13
 
 ========================================================================
 OPEN  (0)

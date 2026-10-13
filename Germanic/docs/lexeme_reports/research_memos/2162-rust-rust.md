@@ -1,6 +1,46 @@
 # Research memo — 2162 rust / rust
 
-## Starting point
+## Adopted decision: masculine citation input
+
+The authorized supplementary SC017 decision selects PROTO = PROTOFORM =
+`*rústaz` for Old English row 2162. Target `rust`, class
+`unexplained_unmodelled` and predicted `rost` are unchanged. The choice
+is scoped to this doculect, leaving the cognate-set siblings unchanged;
+equality still denotes an ordinary Proto-Germanic input without a sidecar.
+
+Orel (2003, printed p. 309) gives BOTH `*rustō ~ *rustaz`, `sb.m./f.`,
+not only the masculine formation. The old analysis below incompletely
+reported his alternatives and overstates the case against the ō-stem.
+Ringe (2017, pp. 247-248, actual citation p. 248) independently supports
+`*rustaz`; his st-formation alternatives do not explain the vowel retention.
+Clark Hall (1960, p. 245) and Toller's Bosworth-Toller Supplement
+(1921, printed p. 691, visually verified on sheet703) support the
+masculine noun. Their `rūst`/`rúst` signs remain source spellings, not a
+new quantity decision for normalized `rust`.
+
+Fresh production and isolated derived-wrapper probes agree on all six
+forms in the historical probe list: citation and ō-stem both give `rost`,
+genitive-type `rostes`, dative-type `roste`, high-front diagnostic `ryst`,
+and high-vowel diagnostic `rust`. `*frústą > forst` excludes a universal
+st exemption. `*rústu` is a diagnostic construction, not an attested
+Proto-Germanic citation or an adopted solution. Campbell (1959, p. 43,
+§115) supplies the general lowering/residue context, not a direct rust
+example.
+
+The precise decision, approval, original-380 mapping and preserved
+post-SC034 baseline are recorded in
+`Germanic/docs/sound_changes/audits/sc017-adjudication.md`. No rule,
+chronology, target, derivation class or mismatch is repaired by this choice.
+Earlier packets and DEV_NOTES slices preserve their former *rústō state
+as historical evidence; they are superseded, not rewritten.
+
+## Historical pre-adoption analysis
+
+Everything below records the earlier investigation and recommendations,
+not the live selected input or a current exclusive-Orel claim. Its negative
+probe evidence remains useful; its incomplete Orel account is corrected above.
+
+## Starting point (pre-adoption)
 
 - **ID:** 2162
 - **CONCEPT:** rust

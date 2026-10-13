@@ -1,4 +1,10 @@
 action	language	variety	form	display	sort_key	source_scope	source_ref	note
+ignore			*róstaz				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:55	SC017 computed intermediate, not a separate source citation; the regular-output span is already semantically excluded.
+ignore			rústas				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:78	Genitive-type diagnostic construction, not an attested or adopted lexical citation.
+ignore			rústai				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:79	Dative-type diagnostic construction, not an attested or adopted lexical citation.
+ignore			rústi				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:80	High-front diagnostic construction, not a source-backed lexical citation.
+ignore			rústu				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:81	Marginal high-vowel diagnostic, explicitly not an attested or adopted citation.
+ignore			*rústu				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:83	Repeated hypothetical instrumental-type diagnostic; not newly established source evidence.
 ignore			*stráu				Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28	SC111 mechanical intermediate, not a separate lexical citation or attested form.
 ignore			*stráeu				Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28	SC030 mechanical intermediate, not a separate lexical citation or attested form.
 add	oe		cneowes	cneowes	cneowes	override	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md:145	Source-backed regular genitive comparison in the knee paradigm table.

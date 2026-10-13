@@ -3,9 +3,9 @@
 - Total OE rows with real counterpart: 387
 - Manifest entries loaded: 12
 - Rows requiring lexeme report: 160
-- Required rows with published SOURCE: 19
-- Required rows with no published SOURCE: 141
-- Rows selected independently for philological discussion: 9
+- Required rows with published SOURCE: 20
+- Required rows with no published SOURCE: 140
+- Rows selected independently for philological discussion: 10
 - Required rows with manifest-backed production reports: 11
 - Required rows with source material available but no manifest-backed production report: 145
 - Required rows with no source material found: 4
@@ -36,6 +36,7 @@
 | 1941 | beaver | befer | regular | no | certified_editorial_source | - | research_memos/1941-beaver-befer.md | philological=beaver-formation-direction |
 | 2013 | fire | fȳre | known_unmodelled | yes | certified_editorial_source | pilot | model_entries/2013-fire-fȳre.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report, philological=fire-input-and-genealogy |
 | 2085 | knee | cneowe | late_analogy | yes | certified_editorial_source | - | model_entries/2085-knee-cneowe.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=knee-ending |
+| 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
 | 2224 | straw | strēaw | late_analogy | yes | certified_editorial_source | - | model_entries/2224-straw-strēaw.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=straw-endingless-and-levelling |
 | 2326 | you | ēow | regular | yes | certified_editorial_source | - | model_entries/2326-you-ēow.model.md | NOTE, philological=you-oblique-origin |
 | 2330 | thought | þōhte | regular | yes | certified_editorial_source | - | model_entries/2330-thought-þōhte.model.md | NOTE, philological=thought-connectorless-origin |
@@ -139,7 +140,7 @@
 | 2143 | nose | nosu | early_analogy | no | source_material | - | archive/dev_notes_slices/2143-nose-nosu.md, archive/packets/2143-nose-nosu.md, model_entries/2143-nose-nosu.model.md, model_entries/2143-nose-nosu.source_ledger.md, research_memos/2143-nose-nosu.md | DERIVATION_CLASS=early_analogy |
 | 2152 | rest | ræste | late_analogy | yes | source_material | - | archive/dev_notes_slices/2152-rest-ræste.md, archive/packets/2152-rest-ræste.md, model_entries/2152-rest-ræste.model.md, model_entries/2152-rest-ræste.source_ledger.md, research_memos/2152-rest-ræste.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2155 | coat | rocc | regular | yes | source_material | - | archive/dev_notes_slices/2155-coat-rocc.md, archive/packets/2155-coat-rocc.md, model_entries/2155-coat-rocc.model.md, model_entries/2155-coat-rocc.source_ledger.md, research_memos/2155-coat-rocc.md | NOTE |
-| 2162 | rust | rust | unexplained_unmodelled | yes | source_material | - | archive/dev_notes_slices/2162-rust-rust.md, archive/dev_notes_slices/PILOT_SUMMARY.md, model_entries/2162-rust-rust.model.md, model_entries/2162-rust-rust.source_ledger.md, research_memos/2162-rust-rust.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled |
+| 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
 | 2168 | sap | sæp | early_analogy | yes | source_material | - | archive/dev_notes_slices/2168-sap-sæp.md, archive/packets/2168-sap-sæp.md, model_entries/2168-sap-sæp.model.md, model_entries/2168-sap-sæp.source_ledger.md, research_memos/2168-sap-sæp.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2169 | sea | sǣ | early_analogy | yes | source_material | - | archive/dev_notes_slices/2169-sea-sǣ.md, archive/packets/2169-sea-sǣ.md, model_entries/2169-sea-sǣ.model.md, model_entries/2169-sea-sǣ.source_ledger.md, research_memos/2169-sea-sǣ.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2179 | sheep | sċēap | regular | yes | source_material | - | archive/dev_notes_slices/2179-sheep-sċēap.md, archive/packets/2179-sheep-sċēap.md, model_entries/2179-sheep-sċēap.model.md, model_entries/2179-sheep-sċēap.source_ledger.md, research_memos/2179-sheep-sċēap.md | NOTE |

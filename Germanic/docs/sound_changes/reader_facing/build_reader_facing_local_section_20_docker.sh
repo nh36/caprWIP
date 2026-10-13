@@ -51,6 +51,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     pandoc Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md \
       --standalone \
       --from=markdown+raw_tex+citations \
+      --lua-filter=Germanic/tools/standalone_lexical_links.lua \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
       --lua-filter=Germanic/tools/lex_form_filter.lua \

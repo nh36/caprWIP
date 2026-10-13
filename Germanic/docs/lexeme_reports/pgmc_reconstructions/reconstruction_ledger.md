@@ -6479,7 +6479,7 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 ## 2162: rust / rust
 
-Current citation: *rústō (pgmc); selected input: *rústō (pgmc; variety: none; equality_convention).
+Current citation: *rústaz (pgmc); selected input: *rústaz (pgmc; variety: none; equality_convention).
 Runnable: 1; derivation class: unexplained_unmodelled.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |

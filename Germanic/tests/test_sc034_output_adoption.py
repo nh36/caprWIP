@@ -23,7 +23,8 @@ class StrawOutputAdoptionTests(unittest.TestCase):
             BASE / "cascade_baseline_summary_pre_sc034.json",
         )
         self.current = baseline.read_baseline(
-            BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json",
+            BASE / "cascade_baseline_outputs_pre_sc017_rust_input.tsv",
+            BASE / "cascade_baseline_summary_pre_sc017_rust_input.json",
         )
 
     def test_exact_output_match_delta_preserves_all_other_fields_and_386_rows(self):
@@ -88,7 +89,8 @@ class StrawOutputAdoptionTests(unittest.TestCase):
 
     def test_legacy_migration_rejects_noop_and_false_match_flags(self):
         with (BASE / "approved_input_migrations.tsv").open() as handle:
-            migrations = list(csv.DictReader(handle, delimiter="\t"))
+            migrations = [row for row in csv.DictReader(handle, delimiter="\t")
+                          if row["row_id"] != "2162"]
         with (BASE / "cascade_baseline_outputs_legacy380.tsv").open() as handle:
             legacy = list(csv.DictReader(handle, delimiter="\t"))
         for kind in ("no_op", "wrong_old", "wrong_new", "false_match"):
@@ -118,6 +120,14 @@ class StrawOutputAdoptionTests(unittest.TestCase):
                 (target / destination).write_bytes((BASE / source).read_bytes())
             old = (target / "cascade_baseline_outputs.tsv").read_bytes()
             legacy = (target / "cascade_baseline_outputs_legacy380.tsv").read_bytes()
+            with (BASE / "approved_input_migrations.tsv").open() as handle:
+                reader = csv.DictReader(handle, delimiter="\t")
+                fields = reader.fieldnames
+                migrations = [row for row in reader if row["row_id"] != "2162"]
+            with (target / "approved_input_migrations.tsv").open("w") as handle:
+                writer = csv.DictWriter(handle, fields, delimiter="\t")
+                writer.writeheader()
+                writer.writerows(migrations)
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             self.assertEqual((target / "cascade_baseline_outputs_pre_sc034.tsv").read_bytes(), old)
             self.assertEqual((target / "cascade_baseline_outputs_legacy380.tsv").read_bytes(), legacy)

@@ -29,7 +29,7 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(len(self.editorial), 393)
         for key, value in {"legacy": 380, "selected": 387, "audit": 393,
                            "assembled": 161, "production_pilots": 11,
-                           "format_tests": 1, "reviewed_rows": 11, "scoped_cases": 14}.items():
+                           "format_tests": 1, "reviewed_rows": 12, "scoped_cases": 15}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
         required = {row["row_id"] for row in self.crosswalk if row["old_policy_requires_report"]}
@@ -65,6 +65,7 @@ class IntegrationTests(unittest.TestCase):
             "1933": ("*nḗdrōn", "*nḗdrōn", "nǣdre", "regular", "nǣdre"),
             "2013": ("*fūri", "*fūri", "fȳre", "known_unmodelled", "fȳr"),
             "2085": ("*knéwą", "*knéwai", "cneowe", "late_analogy", "cneowe"),
+            "2162": ("*rústaz", "*rústaz", "rust", "unexplained_unmodelled", "rost"),
             "2224": ("*stráwą", "*stráwą", "strēaw", "late_analogy", "strēa"),
             "2326": ("*ízwiz", "*ízwiz", "ēow", "regular", "ēow"),
             "2330": ("*θánxtē", "*θánxtē", "þōhte", "regular", "þōhte"),
@@ -100,12 +101,13 @@ class IntegrationTests(unittest.TestCase):
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
             "ordinary_evidence_review": 293, "unit_comparability_review": 8})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
-        self.assertEqual(len(unreviewed), 382)
+        self.assertEqual(len(unreviewed), 381)
         self.assertTrue(all(not r["reviewed_categories"] for r in unreviewed))
         self.assertEqual(self.editorial["2085"]["reviewed_categories"],
                          "non_substantive_difference;qualified_alternative")
         self.assertEqual(self.editorial["1937"]["reviewed_categories"],
                          "no_special_discussion;non_substantive_difference")
+        self.assertEqual(self.editorial["2162"]["reviewed_categories"], "qualified_alternative")
         self.assertTrue(all(r["audit_alignment"] == "bounded_limit" for r in self.crosswalk))
 
     def test_screen_ignores_alignment_types_and_output(self):
@@ -128,7 +130,7 @@ class IntegrationTests(unittest.TestCase):
                 integration.unique(records, "id", "fixture")
 
     def check_case_fixture(self, changes, corpus=None, forms=None):
-        case = copy.deepcopy(next(c for c in self.cases if c["category"] == "qualified_alternative"))
+        case = copy.deepcopy(next(c for c in self.cases if c["case_id"] == "adder-feminine-vocalism"))
         case["example_path"] = ""
         case["requires_extended_discussion"] = "0"
         case["publication_source"] = ""
@@ -147,7 +149,8 @@ class IntegrationTests(unittest.TestCase):
             return integration.load_cases(root, corpus, forms)
 
     def test_wrong_row_missing_page_and_missing_premise_refused(self):
-        evidence_id = self.cases[0]["evidence_ids"].split(";")[0]
+        case = next(c for c in self.cases if c["case_id"] == "adder-feminine-vocalism")
+        evidence_id = case["evidence_ids"].split(";")[0]
         with self.assertRaisesRegex(ValueError, "wrong-row"):
             self.check_case_fixture({}, forms={evidence_id: {
                 "row_ids": "2085", "printed_pages": "286", "source_key": "Orel2003"}})
