@@ -4900,9 +4900,11 @@ Regular derivations establish the reach of the sound laws. The remaining
 classes mark, without concealment, the places where attestation, morphology,
 analogy, or an unresolved mismatch intervenes.
 
-The catalogue proceeds from words; the preceding part proceeds from rules.
+The catalogue proceeds from words; the sound-change account proceeds from rules.
 Together they allow each proposed sound law to be tested against its lexical
 witnesses and each etymology against the complete ordered history.
+SC-numbered rules cited in these entries are discussed in the companion
+sound-change volume, or in the sound-change chapters of the combined book.
 
 ## Data and sources {.unnumbered}
 
@@ -4921,7 +4923,7 @@ The lexical catalogue is ordered by seven derivation classes in the current mani
 - Regular derivations: 82
 - Attested variants: 4
 - Early analogy: 36
-- Late analogy: 28
+- Late analogy: 29
 - Reconstructed Old English comparators: 3
 - Known but unmodelled developments: 2
 - Unexplained or deliberately unmodelled exceptions: 5
@@ -7521,7 +7523,7 @@ Proto input: _\*xárbistuz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*xárbistu} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -7593,7 +7595,7 @@ Proto input: _\*xágjaz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*xággjaz} \\
 \mbox{EAF Final Z Deletion} & \emph{*xággja} \\
 \end{tabularx}
@@ -7804,7 +7806,7 @@ Proto input: _\*xáwwaną_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{OE WW Simplification} & \emph{*xáuwaną} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -8670,7 +8672,7 @@ Proto input: _\*nátją_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*náttją} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -8945,7 +8947,7 @@ Proto input: _\*skíllingaz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*skíllinga} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -9056,11 +9058,13 @@ The held fourth edition of Bright's reader contains [_scēawian_]{.iv lang=oe so
 
 ### Development to Old English
 
-From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29:1"} 'show', the transducer retains a mapping to long _ea+w_ before the class-II suffix. Its _\*ō_ separates root _\*w_ from _\*j_, excluding direct _aw+j_ gemination. Neither that exclusion nor the successful [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29:2"} 'show' output establishes a general singleton lengthening law. The derivational input and _regular_ corpus classification remain unchanged, but the root-history premise is expressly unresolved: Campbell's inherited-geminate account differs from the dictionary singleton stem [@Campbell1959, pp. 45--46; @Orel2003, p. 337; @Kroonen2013, p. 442].
+From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29:1"} 'show', the transducer retains [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) as a computational proxy mapping to long _ea+w_ before the class-II suffix. Its _\*ō_ separates root _\*w_ from _\*j_, excluding direct _aw+j_ gemination. Neither that exclusion nor the successful [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29:2"} 'show' output establishes an exceptionless singleton lengthening law. The derivational input and _regular_ computational classification remain unchanged, conditional on this retained proxy; their historical basis is provisional, not a resolution of the root-history premise. Campbell and Brunner's inherited-geminate account differs from the dictionary singleton stem [@Campbell1959, pp. 45--46; @SieversBrunner1965, p. 49; @Orel2003, p. 337; @Kroonen2013, p. 442].
+
+The finite companions select an imperative singular and a present third singular, not alternative dictionary infinitives. Their class-II endings are independently supported even though successful root outputs cannot decide the disputed prehistoric quantity [@RingeTaylor2014, pp. 80, 314; @Campbell1959, p. 148].
 
 ### Form note
 
-The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33:1"} 'show' and [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33:2"} 'show' is CAPR's editorial normalization of initial <_sc_>, not a different lexeme or paradigm cell. It does not itself settle the consonant's prehistoric articulation.
+The difference between [_scēawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:35" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:35:1"} 'show' and [_sċēawian_]{.iv lang=oe sort=sceawian role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:35" occ_id="Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:35:2"} 'show' is CAPR's editorial normalization of initial <_sc_>, not a different lexeme or paradigm cell. It does not itself settle the consonant's prehistoric articulation.
 
 ## sleep — OE _slǣpan_
 
@@ -9086,7 +9090,7 @@ Proto input: _\*slḗpaną_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc Long E Lowering} & \emph{*slāpaną} \\
 \mbox{EAF Long A Fronting} & \emph{*slǣpaną} \\
 \end{tabularx}
@@ -9427,7 +9431,7 @@ Proto input: _\*súmaraz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*súmara} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -9567,7 +9571,7 @@ Proto input: _\*swálwōn_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc N Stem N Loss} & \emph{*swálwǭ} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -10447,7 +10451,7 @@ Proto input: _\*wéljô_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*wélljô} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -10995,7 +10999,7 @@ Proto input: _\*xíwją_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc J Gemination} & \emph{*xíwwją} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -12174,7 +12178,7 @@ Proto input: _\*fláskōn_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc N Stem N Loss} & \emph{*fláskǭ} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -12686,7 +12690,7 @@ Proto input: _\*knéxtaz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*knéxta} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -12780,7 +12784,7 @@ Proto input: _\*xláðaną_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*xládaną} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -14338,7 +14342,7 @@ Proto input: _\*θūsèndi_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*θūsènd} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -15004,7 +15008,7 @@ Proto input: _\*wíràldu_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc I Lowering} & \emph{*wéràldu} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -15306,7 +15310,7 @@ Proto input: _\*bázjas_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Rhotacism} & \emph{*bárjas} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -15604,7 +15608,7 @@ Proto input: _\*fúnðanǭ_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Dental Hardening} & \emph{*fúndanǭ} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -15703,7 +15707,7 @@ Proto input: _\*fúrxtīnaz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Final Z Deletion} & \emph{*fúrxtīna} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -16706,7 +16710,7 @@ Proto input: _\*skúldramiz_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{OE Sk Palatalization} & \emph{*ʃúldrum} \\
 \end{tabularx}
 \end{minipage}
@@ -16920,6 +16924,86 @@ compared here.
 | :--- | :--- | :--- | :--- | :--- |
 | citation nominative singular | [_\*spannō_]{.iv lang=pgmc sort=spanno role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:46:1"} | regular output: [_span_]{.iv lang=oe sort=span role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:46:2"} 'span' | [_spann_]{.iv lang=oe sort=spann role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:46:3"} 'span' | useful citation-form background, but not the form compared here |
 | dative singular compared here | [_\*spánnai_]{.iv lang=pgmc sort=spannai role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:47:1"} | regular output: [_spanne_]{.iv lang=oe sort=spanne role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:47:2"} 'span' | [_spanne_]{.iv lang=oe sort=spanne role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2203-span-spanne.model.md:47:3"} 'span' | exact match for that conservative form |
+
+## straw — OE _strēaw_
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!streaw@\iventry{strēaw}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!strawa@\iventry{*stráwą}{}}
+
+Derivation: _\*stráwą_ yields regular [strēa]{.recon form_role=regular_output}; the Old English form here is _strēaw_ (late analogy).
+
+### Derivation trace
+
+Proto input: _\*stráwą_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc Endingless Aw} & \emph{*stráu} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Au Brightening} & \emph{*stráeu} \\
+\mbox{OE Diphthong Leveling} & \Recon{strēa} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Regular outcome: [strēa]{.recon form_role=regular_output}
+
+Old English form: _strēaw_
+
+### Reconstruction and comparative evidence
+
+Kroonen cites the neuter stem [strawa-]{.iv .recon lang=pgmc sort=strawa role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20:1"} 'straw' and Old English [_strēa(w)_]{.iv lang=oe sort=streaw role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20:2"} 'straw' [@Kroonen2013, p. 484]. The selected [stráwą]{.iv .recon lang=pgmc sort=strawa role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20:3"} 'straw' is CAPR's accented nominative/accusative singular, not Kroonen's verbatim full-word quotation. His derivation of the noun from the strew formation concerns genealogical direction; it does not explain the later restoration of the glide [@Kroonen2013, p. 484].
+
+### Old English evidence
+
+The comparison remains attested [_strēaw_]{.iv lang=oe sort=streaw role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24:1"} 'straw', not reconstructed [strēa]{.iv .recon lang=oe sort=strea role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24:2"} 'straw'. Campbell discusses restoration of the glide and the compound [_strēaberige_]{.iv lang=oe sort=streaberige role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24:3"} 'strawberry' [@Campbell1959, pp. 46--47, 232--233]. Brunner explicitly treats the regular free simplex and short obliques as unattested; his paradigm note limits the West Saxon straw evidence to nominative/accusative singular and a doubtful plural. The compound preserves an endingless pattern, not an independently attested free noun or a complete surviving regular paradigm [@SieversBrunner1965, pp. 49, 110, 204--205; @RingeTaylor2014, pp. 173, 387].
+
+### Development to Old English
+
+The regular endingless branch loses the final vowel and vocalizes final [w]{.recon}: [stráwą]{.recon} 'straw' > [stráu]{.recon} 'straw'. The narrow fragment [SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) combines those operations; its computational holding site does not establish their order against unrelated changes. Its product feeds [SC030 OEAuBrightening](#rule-OEAuBrightening), giving [stráeu]{.recon} 'straw', and [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), giving regular [strēa]{.iv .recon lang=oe sort=strea role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28:1"} 'straw' [@Campbell1959, pp. 46--47; @RingeTaylor2014, pp. 172--173].
+
+Attested [_strēaw_]{.iv lang=oe sort=streaw role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:30" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:30:1"} 'straw' combines that long diphthong with a glide restored from inflected forms. Reciprocally, the long diphthong spreads into the formerly short oblique stem. This mutual levelling explains the long-plus-glide form without inventing a sound law that preserves final singleton [w]{.recon} in the regular endingless branch [@Campbell1959, pp. 232--233; @SieversBrunner1965, pp. 204--205; @RingeTaylor2014, p. 387]. The cascade stops before that levelling: its reconstructed output remains an explicit mismatch, while the attested comparison and derivational input are unchanged.
+
+### Paradigm comparison
+
+The table distinguishes source-supported historical comparisons from the one selected compiled derivation; it is not a set of newly compiled oblique inputs.
+
+| Cell or evidence | Regular development | Attested comparison and qualification |
+| :--- | :--- | :--- |
+| selected nominative/accusative singular | [stráwą]{.recon} > [strēa]{.iv .recon lang=oe sort=strea role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:38:1"} | [_strēaw_]{.iv lang=oe sort=streaw role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:38:2"} 'straw': restored glide; regular free simplex unattested |
+| short oblique stem, exemplified by genitive singular | [strawes]{.iv .recon lang=oe sort=strawes role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:39:1"} 'of straw'; corresponding short dative also reconstructed | Brunner's regular short obliques are unattested; long quantity is extended from the endingless cells, not demonstrated by a surviving short straw paradigm |
+| remodelled singular and limited plural evidence | long diphthong plus restored glide | West Saxon [_strēaw_]{.iv lang=oe sort=streaw role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:40:1"} 'straw'; Brunner records plural [_strewu_]{.iv lang=oe sort=strewu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:40:2"} 'straws' with a question mark, not as a secure complete paradigm |
+| compound witness | endingless pattern | [_strēaberige_]{.iv lang=oe sort=streaberige role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:41:1"} 'strawberry', not an attested free [strēa]{.iv .recon lang=oe sort=strea role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:41:2"} 'straw' |
+
+These qualifications follow Brunner's paradigm and attestation discussion and Ringe and Taylor's explicit mutual levelling account [@SieversBrunner1965, pp. 49, 110, 204--205; @RingeTaylor2014, pp. 173, 387]. The noun/verb genealogical direction remains a separate qualified question; this entry adopts neither a new ancestry nor an analogical transducer rule.
 
 ## thistle — OE _þistles_
 
@@ -17695,7 +17779,7 @@ Proto input: _\*líkkōθi_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*líkkōθ} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -17816,7 +17900,7 @@ The spelling used in this entry is normalized _sċēawa_ 'show', while Bright's 
 
 ### Development to Old English
 
-Campbell lists _scéawian_ 'show' among inherited-geminate developments, through an \emph{*auw} sequence; that sequence is not a reconstructed lexical imperative [@Campbell1959, p. 45]. The transducer retains a long-diphthong proxy for its singleton root input. This root-history premise remains unresolved rather than being proved by the successful finite output or silently replaced with a geminate input [@Orel2003, p. 337; @SieversBrunner1965, p. 49].
+The infinitive entry and [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) distinguish the dictionary singleton stem from Campbell and Brunner's inherited-geminate analysis. The same computational proxy is retained here; successful finite output does not resolve that prehistoric root history [@Orel2003, p. 337; @Campbell1959, p. 45; @SieversBrunner1965, p. 49].
 
 Ringe and Taylor's class-II weak imperative singular -a < _\*-ō_ supports the finite ending that yields _sċēawa_ 'show' [@RingeTaylor2014, p. 314]. The ending comparison is therefore justified independently of the unresolved root quantity history. The inherited _late_analogy_ corpus classification is not changed by this root-only adjudication; it does not make the proxy a demonstrated analogical sound law.
 
@@ -17856,7 +17940,7 @@ Proto input: _\*skáwōθi_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*skáwōθ} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -17899,7 +17983,7 @@ The form written here as [_sċēawaþ_]{.iv lang=oe sort=sceawath role=target_fo
 
 ### Development to Old English
 
-Campbell includes [_scéawian_]{.iv lang=oe sort=sceawian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:34:1"} 'show' among inherited-geminate developments through \emph{*auw}; this is a sound sequence, not a quoted reconstructed 3sg word [@Campbell1959, p. 45]. The dictionary singleton root and that handbook analysis remain distinct premises [@Orel2003, p. 337; @Kroonen2013, p. 442; @SieversBrunner1965, p. 49]. The transducer retains its long-diphthong proxy without claiming that output fit settles this root history.
+The infinitive entry and [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) explain the dictionary-singleton versus handbook-geminate root premise. The same computational proxy remains here without claiming that output fit resolves it [@Orel2003, p. 337; @Kroonen2013, p. 442; @Campbell1959, p. 45; @SieversBrunner1965, p. 49].
 
 The complete trace of [skáwōθi]{.iv .recon lang=pgmc sort=skawothi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:36" occ_id="Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:36:1"} ‘show (3sg)’ has already lost final _i_ before that proxy: the actual checkpoint is _\*s\*k\*á\*w\*ō\*θ_. Thus absence of _j_ alone is not the explanation of the compiled lack of mutation. Campbell's late-shortening account and Ringe and Taylor's stable-_a_ discussion independently support _-aþ_, not _-eþ_ [@Campbell1959, p. 148; @RingeTaylor2014, p. 80].
 
@@ -17946,7 +18030,7 @@ Proto input: _\*knúbbô_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc U Lowering} & \emph{*knóbbô} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -18220,7 +18304,7 @@ status without pretending that no historical account exists.
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyre@\iventry{fȳre}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furi@\iventry{*fūri}{}}
 
-Derivation: _\*fūri_ yields regular _fȳr_; the Old English form here is _fȳre_ (known but unmodelled development).
+Derivation: _\*fūri_ yields regular [fȳr]{.recon form_role=regular_output}; the Old English form here is _fȳre_ (known but unmodelled development).
 
 ### Derivation trace
 
@@ -18253,7 +18337,7 @@ Proto input: _\*fūri_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{OE I Umlaut} & \emph{*fȳri} \\
-\mbox{OE High Vowel Apocope} & \emph{*fȳr} \\
+\mbox{OE High Vowel Apocope} & \Recon{fȳr} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -18262,7 +18346,7 @@ Proto input: _\*fūri_
 }
 \endgroup
 
-Regular outcome: _fȳr_
+Regular outcome: [fȳr]{.recon form_role=regular_output}
 
 Old English form: _fȳre_
 
@@ -18341,7 +18425,7 @@ form and from the later analogical surface result.
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!taeppa@\iventry{tæppa}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tappo@\iventry{*táppô}{}}
 
-Derivation: _\*táppô_ yields regular _tappa_; the Old English form here is _tæppa_ (known but unmodelled development).
+Derivation: _\*táppô_ yields regular [tappa]{.recon form_role=regular_output}; the Old English form here is _tæppa_ (known but unmodelled development).
 
 ### Derivation trace
 
@@ -18375,7 +18459,7 @@ Proto input: _\*táppô_
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Brightening} & \emph{*tæppô} \\
 \mbox{OE A Restoration} & \emph{*tappô} \\
-OE Unstressed Long Vowel Shortening & \emph{*tappa} \\
+OE Unstressed Long Vowel Shortening & \Recon{tappa} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -18384,7 +18468,7 @@ OE Unstressed Long Vowel Shortening & \emph{*tappa} \\
 }
 \endgroup
 
-Regular outcome: _tappa_
+Regular outcome: [tappa]{.recon form_role=regular_output}
 
 Old English form: _tæppa_
 
@@ -18432,7 +18516,7 @@ mismatch.
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bucc@\iventry{bucc}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bukkaz@\iventry{*búkkaz}{}}
 
-Derivation: _\*búkkaz_ yields regular _bocc_; the Old English form here is _bucc_ (unexplained exception).
+Derivation: _\*búkkaz_ yields regular [bocc]{.recon form_role=regular_output}; the Old English form here is _bucc_ (unexplained exception).
 
 ### Derivation trace
 
@@ -18476,7 +18560,7 @@ Proto input: _\*búkkaz_
 }
 \endgroup
 
-Regular outcome: _bocc_
+Regular outcome: [bocc]{.recon form_role=regular_output}
 
 Old English form: _bucc_
 
@@ -18524,7 +18608,7 @@ paradigm-cell survival.
 \index[iv]{09on@\ivlangheader{Old Norse}{}!fugl@\iventry{fugl}{}}
 \index[iv]{10ohg@\ivlangheader{Old High German}{}!fogal@\iventry{fogal}{}}
 
-Derivation: _\*fúglaz_ yields regular _fogol_; the Old English form here is _fugol_ (unexplained exception).
+Derivation: _\*fúglaz_ yields regular [fogol]{.recon form_role=regular_output}; the Old English form here is _fugol_ (unexplained exception).
 
 ### Derivation trace
 
@@ -18569,7 +18653,7 @@ Proto input: _\*fúglaz_
 }
 \endgroup
 
-Regular outcome: _fogol_
+Regular outcome: [fogol]{.recon form_role=regular_output}
 
 Old English form: _fugol_
 
@@ -18632,7 +18716,7 @@ attested _fugol_ 'fowl'.
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rusto@\iventry{*rústō}{}}
 \index[iv]{10ohg@\ivlangheader{Old High German}{}!rost@\iventry{rost}{}}
 
-Derivation: _\*rústō_ yields regular _rost_; the Old English form here is _rust_ (unexplained exception).
+Derivation: _\*rústō_ yields regular [rost]{.recon form_role=regular_output}; the Old English form here is _rust_ (unexplained exception).
 
 ### Derivation trace
 
@@ -18676,7 +18760,7 @@ Proto input: _\*rústō_
 }
 \endgroup
 
-Regular outcome: _rost_
+Regular outcome: [rost]{.recon form_role=regular_output}
 
 Old English form: _rust_
 
@@ -18733,7 +18817,7 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wulfaz@\iventry{*wúlfaz}{}}
 \index[iv]{10ohg@\ivlangheader{Old High German}{}!wolf@\iventry{wolf}{}}
 
-Derivation: _\*wúlfaz_ yields regular _wolf_; the Old English form here is _wulf_ (unexplained exception).
+Derivation: _\*wúlfaz_ yields regular [wolf]{.recon form_role=regular_output}; the Old English form here is _wulf_ (unexplained exception).
 
 ### Derivation trace
 
@@ -18777,7 +18861,7 @@ Proto input: _\*wúlfaz_
 }
 \endgroup
 
-Regular outcome: _wolf_
+Regular outcome: [wolf]{.recon form_role=regular_output}
 
 Old English form: _wulf_
 
@@ -18836,7 +18920,7 @@ The comparison below sets the regular inherited outcomes beside the attested Old
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wull@\iventry{wull}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wullo@\iventry{*wúllō}{}}
 
-Derivation: _\*wúllō_ yields regular _woll_; the Old English form here is _wull_ (unexplained exception).
+Derivation: _\*wúllō_ yields regular [woll]{.recon form_role=regular_output}; the Old English form here is _wull_ (unexplained exception).
 
 ### Derivation trace
 
@@ -18880,7 +18964,7 @@ Proto input: _\*wúllō_
 }
 \endgroup
 
-Regular outcome: _woll_
+Regular outcome: [woll]{.recon form_role=regular_output}
 
 Old English form: _wull_
 

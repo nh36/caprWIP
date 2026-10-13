@@ -34,6 +34,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --standalone \
       --from=markdown+raw_tex+citations \
       --to=latex \
+      --lua-filter=Germanic/tools/standalone_lexical_links.lua \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
       --lua-filter=Germanic/tools/lex_form_filter.lua \
@@ -45,6 +46,7 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
     pandoc Germanic/docs/assembly/lexical_volume_alpha_01.md \
       --standalone \
       --from=markdown+raw_tex+citations \
+      --lua-filter=Germanic/tools/standalone_lexical_links.lua \
       --lua-filter=Germanic/tools/predicted_form_filter.lua \
       --lua-filter=Germanic/tools/reconstructed_form_filter.lua \
       --lua-filter=Germanic/tools/lex_form_filter.lua \
@@ -55,6 +57,10 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
       --pdf-engine=xelatex \
       -o Germanic/docs/assembly/lexical_volume_alpha_01.pdf
   " 2>&1 | tee "${build_log}"
+
+python3 Germanic/tools/check_publication_references.py \
+  --tex-path "${script_dir}/lexical_volume_alpha_01.tex" \
+  --log-path "${build_log}" --pdf-path "${script_dir}/lexical_volume_alpha_01.pdf"
 
 echo "Generated ${script_dir}/lexical_volume_alpha_01.tex"
 echo "Generated ${script_dir}/lexical_volume_alpha_01.pdf"

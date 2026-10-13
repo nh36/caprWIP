@@ -485,6 +485,12 @@ def display_entry_form(metadata: dict[str, str], form: str) -> str:
     return form
 
 
+def regular_output_markup(metadata: dict[str, str], form: str) -> str:
+    if form and form != metadata.get("COUNTERPART", ""):
+        return f"[{normalize_print_text(form).removeprefix('*')}]{{.recon form_role=regular_output}}"
+    return italicize_form(display_entry_form(metadata, form))
+
+
 def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | None) -> str:
     metadata = model["metadata"]
     citation = metadata.get("PROTO", "")
@@ -501,7 +507,7 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
         )
 
     output = trace_entry["outcome"]
-    display_output = display_entry_form(metadata, output)
+    display_output = regular_output_markup(metadata, output)
     if citation == selected and output == target:
         return f"Derivation: {italicize_form(selected)} {arrow} {italicize_form(display_target)} ({label})."
     if citation != selected and output == target:
@@ -511,12 +517,12 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
         )
     if citation == selected and output != target:
         return (
-            f"Derivation: {italicize_form(selected)} yields regular {italicize_form(display_output)}; "
+            f"Derivation: {italicize_form(selected)} yields regular {display_output}; "
             f"the Old English form here is {italicize_form(display_target)} ({label})."
         )
     return (
         f"Derivation: citation reconstruction {italicize_form(citation)}; "
-        f"form followed here {italicize_form(selected)} yields {italicize_form(display_output)}; "
+        f"form followed here {italicize_form(selected)} yields {display_output}; "
         f"the Old English form here is {italicize_form(display_target)} ({label})."
     )
 
@@ -621,6 +627,9 @@ def choose_panel_column_widths(panel_width: float, stats: dict[str, int]) -> tup
     elif stats["max_form_length"] >= 8:
         form_width = 0.18
 
+    if panel_width <= 0.40 and stats["max_form_length"] >= 7:
+        form_width = max(form_width, 0.24)
+
     if stats["rows"] >= DENSE_TRACE_PANEL_ROWS and stats["max_form_length"] >= LONG_TRACE_FORM_LENGTH:
         form_width = min(form_width + 0.02, 0.26)
     elif stats["rows"] >= 4 and stats["max_form_length"] >= VERY_LONG_TRACE_FORM_LENGTH:
@@ -675,6 +684,7 @@ def render_trace_panel(
     suppress_old_english_stage: bool = False,
     label_column_width: float = 0.62,
     form_column_width: float = 0.24,
+    reconstructed_outcome: str = "",
 ) -> list[str]:
     lines = [r"\raggedright"]
 
@@ -707,8 +717,13 @@ def render_trace_panel(
             if change == "[no change]" and not form:
                 lines.append(r"\multicolumn{2}{@{}l@{}}{[no change]} \\")
             elif form:
+                rendered_form = (
+                    rf"\Recon{{{latex_escape(normalize_print_text(form).removeprefix('*'))}}}"
+                    if reconstructed_outcome and form.removeprefix("*") == reconstructed_outcome.removeprefix("*")
+                    else latex_form(form)
+                )
                 lines.append(
-                    rf"{format_trace_change_label(change, label_column_width=label_column_width)} & {latex_form(form)} \\"
+                    rf"{format_trace_change_label(change, label_column_width=label_column_width)} & {rendered_form} \\"
                 )
             else:
                 lines.append(
@@ -746,16 +761,22 @@ def render_trace_table(trace_entry: dict[str, str]) -> list[str]:
     left_label_width, left_form_width = choose_panel_column_widths(left_width, left_stats)
     right_label_width, right_form_width = choose_panel_column_widths(right_width, right_stats)
     trace_font_size = choose_trace_font_size(left_stats, right_stats)
+    reconstructed_outcome = (
+        trace_entry.get("outcome", "")
+        if trace_entry.get("outcome") != trace_entry.get("expected") else ""
+    )
     left_panel = render_trace_panel(
         left_blocks,
         label_column_width=left_label_width,
         form_column_width=left_form_width,
+        reconstructed_outcome=reconstructed_outcome,
     )
     right_panel = render_trace_panel(
         right_blocks,
         suppress_old_english_stage=True,
         label_column_width=right_label_width,
         form_column_width=right_form_width,
+        reconstructed_outcome=reconstructed_outcome,
     )
 
     return [
@@ -961,7 +982,7 @@ def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) 
         if trace_entry["outcome"] == model["metadata"].get("COUNTERPART", ""):
             out.append(f"Old English form: {italicize_form(display_entry_form(model['metadata'], trace_entry['outcome']))}")
         else:
-            out.append(f"Regular outcome: {italicize_form(display_entry_form(model['metadata'], trace_entry['outcome']))}")
+            out.append(f"Regular outcome: {regular_output_markup(model['metadata'], trace_entry['outcome'])}")
             out.append("")
             out.append(
                 f"Old English form: {italicize_form(display_entry_form(model['metadata'], model['metadata'].get('COUNTERPART', '')))}"

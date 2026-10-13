@@ -3,9 +3,9 @@
 - Total OE rows with real counterpart: 387
 - Manifest entries loaded: 12
 - Rows requiring lexeme report: 160
-- Required rows with published SOURCE: 18
-- Required rows with no published SOURCE: 142
-- Rows selected independently for philological discussion: 8
+- Required rows with published SOURCE: 19
+- Required rows with no published SOURCE: 141
+- Rows selected independently for philological discussion: 9
 - Required rows with manifest-backed production reports: 11
 - Required rows with source material available but no manifest-backed production report: 145
 - Required rows with no source material found: 4
@@ -36,6 +36,7 @@
 | 1941 | beaver | befer | regular | no | certified_editorial_source | - | research_memos/1941-beaver-befer.md | philological=beaver-formation-direction |
 | 2013 | fire | fȳre | known_unmodelled | yes | certified_editorial_source | pilot | model_entries/2013-fire-fȳre.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report, philological=fire-input-and-genealogy |
 | 2085 | knee | cneowe | late_analogy | yes | certified_editorial_source | - | model_entries/2085-knee-cneowe.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=knee-ending |
+| 2224 | straw | strēaw | late_analogy | yes | certified_editorial_source | - | model_entries/2224-straw-strēaw.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=straw-endingless-and-levelling |
 | 2326 | you | ēow | regular | yes | certified_editorial_source | - | model_entries/2326-you-ēow.model.md | NOTE, philological=you-oblique-origin |
 | 2330 | thought | þōhte | regular | yes | certified_editorial_source | - | model_entries/2330-thought-þōhte.model.md | NOTE, philological=thought-connectorless-origin |
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
@@ -155,7 +156,7 @@
 | 2212 | staff | stæf | early_analogy | yes | source_material | - | archive/dev_notes_slices/2212-staff-stæf.md, archive/packets/2212-staff-stæf.md, model_entries/2212-staff-stæf.model.md, model_entries/2212-staff-stæf.source_ledger.md, research_memos/2212-staff-stæf.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2216 | stem | stefn | early_analogy | yes | source_material | - | archive/dev_notes_slices/2216-stem-stefn.md, archive/packets/2216-stem-stefn.md, model_entries/2216-stem-stefn.model.md, model_entries/2216-stem-stefn.source_ledger.md, research_memos/2216-stem-stefn.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2217 | still | stillan | regular | yes | source_material | - | archive/dev_notes_slices/2217-still-stillan.md, archive/packets/2217-still-stillan.md, model_entries/2217-still-stillan.model.md, model_entries/2217-still-stillan.source_ledger.md, research_memos/2217-still-stillan.md | NOTE |
-| 2224 | straw | strēaw | late_analogy | yes | source_material | - | archive/dev_notes_slices/2224-straw-strēaw.md | NOTE, DERIVATION_CLASS=late_analogy |
+| 2224 | straw | strēaw | late_analogy | yes | certified_editorial_source | - | model_entries/2224-straw-strēaw.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=straw-endingless-and-levelling |
 | 2227 | strew | strīeġan | reconstructed_oe | yes | source_material | - | archive/dev_notes_slices/2227-strew-strīeġan.md, model_entries/2227-strew-strīeġan.model.md, model_entries/2227-strew-strīeġan.source_ledger.md, research_memos/2227-strew-strīeġan.md | NOTE, DERIVATION_CLASS=reconstructed_oe |
 | 2230 | summer | sumer | regular | yes | source_material | - | archive/dev_notes_slices/2230-summer-sumer.md, archive/packets/2230-summer-sumer.md, model_entries/2230-summer-sumer.model.md, model_entries/2230-summer-sumer.source_ledger.md, research_memos/2230-summer-sumer.md | NOTE |
 | 2232 | sunder | sundrian | regular | yes | source_material | - | archive/dev_notes_slices/2232-sunder-sundrian.md, archive/packets/2232-sunder-sundrian.md, model_entries/2232-sunder-sundrian.model.md, model_entries/2232-sunder-sundrian.source_ledger.md, research_memos/2232-sunder-sundrian.md | NOTE |

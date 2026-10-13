@@ -1103,7 +1103,8 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         self.assertEqual(printable_explicit, current_source_metrics()["print_explicit_occurrences"])
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
-        self.assertEqual(excluded_explicit, 79, "excluded explicit occurrences")
+        # Straw adds three reconstructed regular-output spans, excluded from print.
+        self.assertEqual(excluded_explicit, 82, "excluded explicit occurrences")
 
         # Every excluded explicit must retain its occurrence_id
         self.assertTrue(

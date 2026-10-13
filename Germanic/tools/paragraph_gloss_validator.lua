@@ -357,6 +357,9 @@ local function check_para(el, is_p2, in_prose_section)
         -- always exempt
       elseif span_has_class(inline, 'ex') then
         -- .ex (example phrase) is always exempt from paragraph gloss rule
+      elseif span_has_class(inline, 'recon')
+        and (inline.attributes['form_role'] or inline.attributes['role']) == 'regular_output' then
+        -- A model prediction is not a new lexical evidence citation.
       elseif span_has_class(inline, 'recon') then
         -- .recon: check in all sections (Part I and Part II)
         if is_p2 then recon_p2 = recon_p2 + 1 else emph_p1 = emph_p1 + 1 end

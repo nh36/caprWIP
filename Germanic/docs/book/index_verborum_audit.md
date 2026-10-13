@@ -1,16 +1,16 @@
 # Index verborum audit
 
-- Internal production occurrences: 2452
-- Internal production unique forms: 1122
-- Printed main-index occurrences: 2364
-- Printed main-index unique forms: 1112
-- Print-excluded occurrences: 88
-- Print-excluded unique forms: 69
-- Print exclusions (regular_output_default_exclusion): 88
+- Internal production occurrences: 2468
+- Internal production unique forms: 1128
+- Printed main-index occurrences: 2377
+- Printed main-index unique forms: 1118
+- Print-excluded occurrences: 91
+- Print-excluded unique forms: 70
+- Print exclusions (regular_output_default_exclusion): 91
 - Print exclusions (reader_facing_pedagogical_example): 0
 - Print exclusions (deferred_by_print_decision): 0
 - Print exclusions (excluded_by_print_decision): 0
-- Internal-only rows (regular_output_default_exclusion): 88
+- Internal-only rows (regular_output_default_exclusion): 91
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 0
@@ -21,9 +21,9 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 455
+- Already indexed in same entry: 456
 - Broad-prose notation / compound expressions: 475
-- Broad-prose evidence suggestions: 307
+- Broad-prose evidence suggestions: 306
 - Curated broad-prose deferred: 28
 - Curated broad-prose ignored: 7
 - Reader-facing examples quarantined (separate example index policy): 1178
@@ -35,7 +35,7 @@
 - Table semantic ignored: 3
 - Table semantic notation / compound expressions: 15
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 366
+- Ignored fragments or sequences: 368
 - Possible extraction garbage: 14
 - Excluded intermediate trace forms: 1345
 - New unresolved candidates relative to baseline: 0
@@ -45,8 +45,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1330 | 483 |
-| Proto-Germanic | 976 | 539 |
+| Old English | 1343 | 488 |
+| Proto-Germanic | 979 | 540 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -180,19 +180,19 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 396 |
-| source_protoform | 348 |
-| selected_input | 549 |
-| comparison_form | 850 |
-| regular_output | 88 |
+| target_form | 401 |
+| source_protoform | 350 |
+| selected_input | 550 |
+| comparison_form | 855 |
+| regular_output | 91 |
 | evidence_form | 221 |
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1242 | 473 |
-| Proto-Germanic | 976 | 539 |
+| Old English | 1252 | 478 |
+| Proto-Germanic | 979 | 540 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -212,17 +212,17 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 396 |
-| source_protoform | 348 |
-| selected_input | 549 |
-| comparison_form | 850 |
+| target_form | 401 |
+| source_protoform | 350 |
+| selected_input | 550 |
+| comparison_form | 855 |
 | evidence_form | 221 |
 
 ## Internal-only rows by reason
 
 | Reason | Occurrences |
 | --- | ---: |
-| regular_output_default_exclusion | 88 |
+| regular_output_default_exclusion | 91 |
 
 ## Already indexed in same entry
 
@@ -561,6 +561,7 @@
 | `stillan` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `stillan` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `stillan` | Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:33 | ### Form note | same form already indexed in this entry |
+| `*stráwą` | Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28 | ### Development to Old English | same form already indexed in this entry |
 | `*stráwjaną` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:49 | ### Development to Old English | same form already indexed in this entry |
 | `*strīeġan` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:52 | ### Development to Old English | same form already indexed in this entry |
 | `*súmaraz` | Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
@@ -1020,7 +1021,7 @@
 | `*rúkkaz` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:29 | intermediate or model-stage form in development chain |
 | `*-s` | Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:30 | notation or compound expression |
 | `*saiwi-` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:21 | notation or compound expression |
-| `<sc>` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33 | notation or compound expression |
+| `<sc>` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:35 | notation or compound expression |
 | `sC` | Germanic/docs/lexeme_reports/model_entries/2272-wash-wascan.model.md:29 | phonological environment notation |
 | `sċ-` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:33 | notation or compound expression |
 | `sċ-` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39 | notation or compound expression |
@@ -1330,7 +1331,6 @@
 | `scēap` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `sceáwian` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:22 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `sceáwian` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:24 | oe | comparison_form | attested Old English comparison form in surrounding prose |
-| `scéawian` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:34 | oe | comparison_form | attested Old English comparison form in development prose |
 | `scép` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `scip` | Germanic/docs/lexeme_reports/model_entries/2179-sheep-sċēap.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `separate` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:23 | oe | comparison_form | attested Old English comparison form in surrounding prose |
@@ -2963,8 +2963,6 @@ _None._
 | `*au` | Germanic/docs/lexeme_reports/model_entries/1962-bow-bēag.model.md:43 |
 | `*au` | Germanic/docs/lexeme_reports/model_entries/2074-hew-hēawan.model.md:11 |
 | `*au` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:36 |
-| `*auw` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:34 |
-| `*auw` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:34 |
 | `*b` | Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:37 |
 | `b` | Germanic/docs/lexeme_reports/model_entries/2046-grave-grafan.model.md:29 |
 | `b` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:36 |
@@ -3225,6 +3223,8 @@ _None._
 | `*w` | Germanic/docs/lexeme_reports/model_entries/2074-hew-hēawan.model.md:12 |
 | `*w` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:26 |
 | `*w` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:40 |
+| `*w` | Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28 |
+| `*w` | Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:30 |
 | `*warp` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:21 |
 | `x` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:24 |
 | `y` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33 |
@@ -3280,6 +3280,8 @@ _None._
 | `reconstruction` | Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:62 |
 | `*s*k*á*w*ō*θ` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:36 |
 | `*skúldramiz` | Germanic/docs/assembly/capr_book_intro_alpha_01.md:33 |
+| `*stráeu` | Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28 |
+| `*stráu` | Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:28 |
 | `*wér-uldu` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:50 |
 
 ## Possible extraction garbage

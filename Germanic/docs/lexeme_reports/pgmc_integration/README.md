@@ -13,7 +13,7 @@ The completed 49-tranche alignment supplies evidence, not 393 settled histories.
 - [Editorial inventory](editorial_inventory.tsv): GENERATED inspection routes
   for the complete audit population, separate from reviewed judgements.
 - [Editorial cases](editorial_cases.tsv) and [source checks](source-checks.md):
-  SOURCE, thirteen scoped judgements covering ten reviewed rows.
+  SOURCE, fourteen scoped judgements covering eleven reviewed rows.
   Explicit selection and publication-source pointers live in this relation;
   no parallel selection ledger or scientific fact owner is introduced.
 - [Schema proposal](schema-proposal.md): SOURCE proposal, not the live schema.
@@ -35,6 +35,11 @@ formation question is certified in the existing `research_memos/` area and
 inserted into the complete report without creating a full model. Barrow and
 bind remain narrowly scoped negative controls, not whole-row closure.
 See the [pilot protocol record](../../sound_changes/audits/pgmc-lexical-publication-pilot.md).
+
+The subsequent SC034 publication integration explicitly selects straw's concise
+late-analogy model for the compact report. This narrow editorial decision reuses
+the adopted endingless development and documented levelling evidence; it neither
+settles the noun/verb genealogical direction nor certifies the full survey.
 
 `Germanic/tools/pgmc_lexical_integration.py` reuses the audit validator,
 legacy migration resolver and existing report-selection logic. It has no
@@ -61,9 +66,9 @@ in the editorial cases.
 | 148 | Selective requirement at the historical production-backlog commit `16fe8ad3`, on its then-380 runnable rows |
 | 150 | Those same original 380 identities under today's selective policy |
 | 157 | Older NOTE/class/pilot selective requirement across the 387 runnable rows |
-| 159 | Pilot requirement including eight independently selected philological cases; only adder and beaver add to the older obligation set |
+| 159 | Current requirement including nine independently selected philological cases; only adder and beaver add to the older obligation set |
 | 147 | Earlier model-entry assembly stage described in the assembly README, not current report-manifest coverage |
-| 160 | Current class-assembly model entries actually consumed by the lexical-volume and combined-book builders |
+| 161 | Current class-assembly model entries actually consumed by the lexical-volume and combined-book builders |
 | 11 + 1 | Eleven pilot production records and one adder format-test record in the separate report manifest |
 
 The strict legacy resolver uses frozen selected-input/target/concept identities

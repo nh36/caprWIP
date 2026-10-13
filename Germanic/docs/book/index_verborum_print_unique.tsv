@@ -338,9 +338,8 @@ oe	sċēawa	sceawa			3	evidence_form; target_form	explicit_tag; lexical_heading	
 oe	sceawað	sceawad			1	comparison_form	table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:46
 oe	sċēawaþ	sceawath			6	evidence_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:46; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:30; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:46; show (3sg) — OE sċēawaþ
 oe	sceáwian	sceawian			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:22
-oe	scéawian	sceawian			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:34
-oe	scēawian	sceawian			7	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:21; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:25; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33; Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:44; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:28
-oe	sċēawian	sceawian			5	evidence_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:25; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:33; Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:44; show — OE sċēawian
+oe	scēawian	sceawian			7	comparison_form; evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:21; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:25; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:35; Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:44; Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:28
+oe	sċēawian	sceawian			5	evidence_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:25; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29; Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:35; Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:44; show — OE sċēawian
 oe	scēofan	sceofan			3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:22; Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:28; Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:49
 oe	sċēofan	sceofan			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2184-shove-sċēaf.model.md:49
 oe	sceoldor	sceoldor			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:31
@@ -397,11 +396,17 @@ oe	still	still			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/mod
 oe	stillan	stillan			1	target_form	lexical_heading	still — OE stillan
 oe	stille	stille			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:25; Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:33
 oe	stofn	stofn			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:118; Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:44
+oe	*strawes	strawes			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:39
+oe	*strēa	strea			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:41
+oe	strēaberige	streaberige			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24; Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:41
+oe	strēa(w)	streaw			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20
+oe	strēaw	streaw			5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:24; Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:30; Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:38; Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:40; straw — OE strēaw
 oe	strēawian	streawian			3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:39; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:55; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:65
 oe	strēgan	stregan			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:26
 oe	strēgan	stregan	Angl.	angl	3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:38; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:54; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:63
 oe	streowian	streowian			5	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:23; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:27; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:39; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:55; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:65
 oe	strewian	strewian			3	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:39; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:55; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:65
+oe	strewu	strewu			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:40
 oe	strēzan	strezan	Angl.	angl	1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:31
 oe	*strīeġan	striegan			3	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:43; Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:64; strew — OE *strīeġan
 oe	sumer	sumer			4	comparison_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:25; Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:29; Germanic/docs/lexeme_reports/model_entries/2230-summer-sumer.model.md:33; summer — OE sumer
@@ -870,7 +875,8 @@ pgmc	*strákkijaną	strakkijana			1	selected_input	trace_proto_input	stretch —
 pgmc	*strángiz	strangiz			1	selected_input	trace_proto_input	string — OE strenġ
 pgmc	*straujan-	straujan			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:22
 pgmc	*stráumaz	straumaz			1	selected_input	trace_proto_input	stream — OE strēam
-pgmc	*stráwą	strawa			1	selected_input	trace_proto_input	straw — OE strēaw
+pgmc	*strawa-	strawa			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20
+pgmc	*stráwą	strawa			3	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md:20; straw — OE strēaw
 pgmc	*stráwjaną	strawjana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	strew — OE *strīeġan
 pgmc	*stúkkaz	stukkaz			1	selected_input	trace_proto_input	stock — OE stocc
 pgmc	*stúrkaz	sturkaz			1	selected_input	trace_proto_input	stork — OE storc

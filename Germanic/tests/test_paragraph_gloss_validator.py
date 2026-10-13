@@ -87,6 +87,16 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         result = self.validate("[cȳ]{.pred} and [giftiz]{.ex}.\n")
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_reconstructed_regular_output_is_not_a_new_lexical_citation(self):
+        for key in ("role", "form_role"):
+            with self.subTest(key=key):
+                result = self.validate(f"[strēa]{{.recon .iv {key}=regular_output}}.\n")
+                self.assertEqual(result.returncode, 0, result.stderr)
+        for role in ("evidence_form", "input", "target"):
+            with self.subTest(role=role):
+                result = self.validate(f"[strēa]{{.recon form_role={role}}}.\n")
+                self.assertEqual(result.returncode, 2, result.stderr)
+
     def test_combining_marks_do_not_hide_lexical_forms(self):
         result = self.validate("*cū* survives.\n")
         self.assertEqual(result.returncode, 2, result.stderr)

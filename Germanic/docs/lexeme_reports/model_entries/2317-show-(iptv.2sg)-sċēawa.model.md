@@ -31,7 +31,7 @@ The spelling used in this entry is normalized `sċēawa` 'show', while Bright's 
 
 ### Development to Old English
 
-Campbell lists `scéawian` 'show' among inherited-geminate developments, through an \emph{*auw} sequence; that sequence is not a reconstructed lexical imperative [@Campbell1959, p. 45]. The transducer retains a long-diphthong proxy for its singleton root input. This root-history premise remains unresolved rather than being proved by the successful finite output or silently replaced with a geminate input [@Orel2003, p. 337; @SieversBrunner1965, p. 49].
+The infinitive entry and [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) distinguish the dictionary singleton stem from Campbell and Brunner's inherited-geminate analysis. The same computational proxy is retained here; successful finite output does not resolve that prehistoric root history [@Orel2003, p. 337; @Campbell1959, p. 45; @SieversBrunner1965, p. 49].
 
 Ringe and Taylor's class-II weak imperative singular `-a < *-ō` supports the finite ending that yields `sċēawa` 'show' [@RingeTaylor2014, p. 314]. The ending comparison is therefore justified independently of the unresolved root quantity history. The inherited `late_analogy` corpus classification is not changed by this root-only adjudication; it does not make the proxy a demonstrated analogical sound law.
 

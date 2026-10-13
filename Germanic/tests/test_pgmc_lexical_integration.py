@@ -28,8 +28,8 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(len(self.rows), 393)
         self.assertEqual(len(self.editorial), 393)
         for key, value in {"legacy": 380, "selected": 387, "audit": 393,
-                           "assembled": 160, "production_pilots": 11,
-                           "format_tests": 1, "reviewed_rows": 10, "scoped_cases": 13}.items():
+                           "assembled": 161, "production_pilots": 11,
+                           "format_tests": 1, "reviewed_rows": 11, "scoped_cases": 14}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
         required = {row["row_id"] for row in self.crosswalk if row["old_policy_requires_report"]}
@@ -54,7 +54,7 @@ class IntegrationTests(unittest.TestCase):
 
     def test_real_assembly_differences(self):
         self.assertEqual(self.stats["required_not_assembled"],
-                         ["2055", "2120", "2224", "2327", "2328", "2329"])
+                         ["2055", "2120", "2327", "2328", "2329"])
         self.assertEqual(self.stats["assembled_not_required"],
                          ["1933", "1955", "1989", "2018", "2029", "2044", "2074", "2113"])
         self.assertIn("/2055-", self.rows["2055"]["stable_id_material_paths"])
@@ -100,7 +100,7 @@ class IntegrationTests(unittest.TestCase):
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
             "ordinary_evidence_review": 293, "unit_comparability_review": 8})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
-        self.assertEqual(len(unreviewed), 383)
+        self.assertEqual(len(unreviewed), 382)
         self.assertTrue(all(not r["reviewed_categories"] for r in unreviewed))
         self.assertEqual(self.editorial["2085"]["reviewed_categories"],
                          "non_substantive_difference;qualified_alternative")

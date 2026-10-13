@@ -32,10 +32,10 @@ manuscript and index projections are generated.
 
 ## Distinct supported presentations
 
-The default class-manifest book consumes the 160 mature models, preserving
+The default class-manifest book consumes the 161 mature models, preserving
 their complete arguments and all seven derivation classes. The complete
 387-row compact derivation report has a separate selective commentary insertion
-route, currently 18 certified narratives with explicit outstanding obligations.
+route, currently 19 certified narratives with explicit outstanding obligations.
 The reconstruction survey covers 393 identities including six research-only rows.
 See the [generated population summary](../lexeme_reports/pgmc_integration/population_summary.md)
 for current counts; these are different populations, not competing corpus owners.
@@ -55,10 +55,68 @@ Standalone renderers remain supported:
 The Python builders implement those presentations; invoke the wrappers for
 publication so freshness is enforced.
 
+Both standalone lexical renderers use the same citation and semantic-form
+filters. Companion `#rule-...` links without local destinations become readable
+non-clickable references only in standalone output. Local links remain active;
+the combined book keeps its clickable sound-change references. Both lexical
+wrappers and the combined wrapper check actual generated TeX destinations and
+PDF-build warnings, failing on unresolved internal references.
+
 The combined wrapper refreshes once. It passes `--check-fresh` to the two
 nested Docker renderers, which run the strict graph check and refuse stale
 inputs instead of refreshing again. Called without that option, each renderer
 still refreshes normally. This is not a validation-bypass option.
+
+## SC034 publication integration receipt
+
+This editorial integration follows scientific release `25d931d5`; it does not
+change SC034/SC111, selected inputs, targets or protected scientific baselines.
+The standard combined wrapper newly built all four PDFs below. Targeted rendered
+pages were inspected, including straw's summary, complete trace and paradigm
+table; the three show cells; SC111/SC034; lexical introductions; bibliography
+and both relevant index sections.
+
+| PDF | Measured pages | Inspection locations |
+| --- | ---: | --- |
+| `capr_book_draft_alpha_01.pdf` | 308 | Straw 9.18, printed 266--267; show 6.54, 165--166; imperative 9.28, 278--280; third singular 9.29, 280--281; SC111 30; SC034 72 |
+| `lexical_volume_alpha_01.pdf` | 152 | Introduction 1; show 37--38; straw 125--126; imperative 136--137; third singular 137--138 |
+| `../sound_changes/reader_facing/reader_facing_local_section_20.pdf` | 123 | SC111 32; SC034 74 |
+| `capr_book_intro_alpha_01.pdf` | 4 | Opening page |
+
+Combined-book page numbers above are printed locators; its two front-matter
+pages make the corresponding PDF sheet number two greater. Bibliography is
+printed 297--299; the Old English and Proto-Germanic straw/show index entries
+are on 303 and 305. Standalone locations are PDF page numbers.
+
+Both actual lexical and combined builds pass the unresolved-reference gate.
+Independent PDF destination inspection resolves every named internal link;
+combined straw/show links reach the actual companion rule sections. Standalone
+companion rule references retain their descriptive text without invalid links.
+The complete compact report still has 387 identities, with 19 certified
+narratives; straw's selection is editorial, not survey-wide certification.
+
+Final strict local validation passed 1,362 tests and 8,507 subtests, including
+the provisioned runtime checks. The independent portable runner passed all five
+gates: 1,329 tests and 8,482 subtests passed; 33 runtime-dependent tests were
+explicitly skipped. Portable validation does not repeat original-image
+verification or certify the runtime capabilities exercised by the full run.
+Strict scholarly-holding validation and the final strict artifact-graph check
+also passed.
+
+An independent byte comparison against `25d931d5` preserves 61 scientific
+files, including the FST, corpus, registry TSVs and complete baseline directory.
+The selected population remains 387 accepted, 379 matching and eight
+mismatching, without ambiguity or rejection; straw still yields `strēa`
+against `strēaw`. The new default assembly has 161 models, including 29
+late-analogy entries. A shared narrow-panel form-column correction was
+re-inspected in both PDFs; it removes the show third-singular trace collision.
+
+The Docker publication wrappers were executed; the equivalent host-local
+lexical wrapper was covered by filter/parity regressions but not executed.
+Existing source-image certifications were reused, not comprehensively repeated.
+The Ringe--Taylor reconstruction-conventions verification gap, show's disputed
+prehistoric root history and straw's qualified noun/verb genealogy remain
+explicit limits, not newly certified conclusions.
 
 ## Historical designs and reports
 

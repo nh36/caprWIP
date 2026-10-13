@@ -7,7 +7,7 @@ Current manifest counts from the live `.model.md` corpus:
 - regular: **70**
 - attested variant: **4**
 - early analogy: **34**
-- late analogy: **28**
+- late analogy: **29**
 - reconstructed Old English comparator: **3**
 - known unmodelled development: **3**
 - unexplained / deliberately unmodelled: **5**
@@ -65,6 +65,8 @@ mismatch.
 
 ## Note on the later sound-change volume / report
 
-The catalogue proceeds from words; the preceding part proceeds from rules.
+The catalogue proceeds from words; the sound-change account proceeds from rules.
 Together they allow each proposed sound law to be tested against its lexical
 witnesses and each etymology against the complete ordered history.
+SC-numbered rules cited in these entries are discussed in the companion
+sound-change volume, or in the sound-change chapters of the combined book.

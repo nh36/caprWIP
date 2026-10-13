@@ -26,7 +26,9 @@ The held fourth edition of Bright's reader contains [`scēawian`]{.iv lang=oe so
 
 ### Development to Old English
 
-From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input} 'show', the transducer retains a mapping to long `ea+w` before the class-II suffix. Its `*ō` separates root `*w` from `*j`, excluding direct `aw+j` gemination. Neither that exclusion nor the successful [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show' output establishes a general singleton lengthening law. The selected input and `regular` corpus classification remain unchanged, but the root-history premise is expressly unresolved: Campbell's inherited-geminate account differs from the dictionary singleton stem [@Campbell1959, pp. 45--46; @Orel2003, p. 337; @Kroonen2013, p. 442].
+From [skáwōjaną]{.iv .recon lang=pgmc sort=skawojana role=selected_input} 'show', the transducer retains [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) as a computational proxy mapping to long `ea+w` before the class-II suffix. Its `*ō` separates root `*w` from `*j`, excluding direct `aw+j` gemination. Neither that exclusion nor the successful [`sċēawian`]{.iv lang=oe sort=sceawian role=target_form} 'show' output establishes an exceptionless singleton lengthening law. The selected input and `regular` computational classification remain unchanged, conditional on this retained proxy; their historical basis is provisional, not a resolution of the root-history premise. Campbell and Brunner's inherited-geminate account differs from the dictionary singleton stem [@Campbell1959, pp. 45--46; @SieversBrunner1965, p. 49; @Orel2003, p. 337; @Kroonen2013, p. 442].
+
+The finite companions select an imperative singular and a present third singular, not alternative dictionary infinitives. Their class-II endings are independently supported even though successful root outputs cannot decide the disputed prehistoric quantity [@RingeTaylor2014, pp. 80, 314; @Campbell1959, p. 148].
 
 ### Form note
 

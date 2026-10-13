@@ -31,7 +31,7 @@ The form written here as [`sċēawaþ`]{.iv lang=oe sort=sceawath role=target_fo
 
 ### Development to Old English
 
-Campbell includes [`scéawian`]{.iv lang=oe sort=sceawian role=comparison_form} 'show' among inherited-geminate developments through \emph{*auw}; this is a sound sequence, not a quoted reconstructed 3sg word [@Campbell1959, p. 45]. The dictionary singleton root and that handbook analysis remain distinct premises [@Orel2003, p. 337; @Kroonen2013, p. 442; @SieversBrunner1965, p. 49]. The transducer retains its long-diphthong proxy without claiming that output fit settles this root history.
+The infinitive entry and [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong) explain the dictionary-singleton versus handbook-geminate root premise. The same computational proxy remains here without claiming that output fit resolves it [@Orel2003, p. 337; @Kroonen2013, p. 442; @Campbell1959, p. 45; @SieversBrunner1965, p. 49].
 
 The complete trace of [skáwōθi]{.iv .recon lang=pgmc sort=skawothi role=selected_input} ‘show (3sg)’ has already lost final `i` before that proxy: the actual checkpoint is `*s*k*á*w*ō*θ`. Thus absence of `j` alone is not the explanation of the compiled lack of mutation. Campbell's late-shortening account and Ringe and Taylor's stable-`a` discussion independently support `-aþ`, not `-eþ` [@Campbell1959, p. 148; @RingeTaylor2014, p. 80].
 

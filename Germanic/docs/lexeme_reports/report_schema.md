@@ -46,7 +46,7 @@ report should **not** receive a generated `### Lexeme report`.
 
 The complete compact report retains all 387 runnable derivations. The
 existing insertion layer publishes certified commentary without duplicating
-those traces. The separate class-manifest book still assembles its 160
+those traces. The separate class-manifest book still assembles its 161
 mature models; absence from that selective manuscript is not absence of a
 derivation write-up. The provisional examples are never inserted as prose.
 

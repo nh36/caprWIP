@@ -1,22 +1,22 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2452
-- Internal production unique forms: 1122
-- Printed main occurrences: 2364
-- Printed main unique forms: 1112
-- Printed excluded occurrences: 88
-- Printed excluded unique forms: 69
+- Internal production occurrences: 2468
+- Internal production unique forms: 1128
+- Printed main occurrences: 2377
+- Printed main unique forms: 1118
+- Printed excluded occurrences: 91
+- Printed excluded unique forms: 70
 
 ## Print exclusions by reason
 
-- `regular_output_default_exclusion`: 88
+- `regular_output_default_exclusion`: 91
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1242 | 473 |
-| Proto-Germanic | 976 | 539 |
+| Old English | 1252 | 478 |
+| Proto-Germanic | 979 | 540 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -36,15 +36,15 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 396 |
-| source_protoform | 348 |
-| selected_input | 549 |
-| comparison_form | 850 |
+| target_form | 401 |
+| source_protoform | 350 |
+| selected_input | 550 |
+| comparison_form | 855 |
 | evidence_form | 221 |
 
 ## Internal-only rows by reason
 
-- `regular_output_default_exclusion`: 88
+- `regular_output_default_exclusion`: 91
 
 ## Pre-OE review rows by proposed status
 
@@ -65,7 +65,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1131
+- Unique printed entries: 1137
 - Print anomaly rows: 51
 - Hard print anomalies: 0
 

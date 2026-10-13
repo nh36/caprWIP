@@ -50,10 +50,11 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertEqual(len(self.old_required - {"2224"}), 157)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
-        self.assertFalse(straw.editorial_case_ids)
-        self.assertFalse(straw.has_publication_report)
+        self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])
+        self.assertTrue(straw.has_publication_report)
+        self.assertFalse(straw.has_production_manifest_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
-                         PRINCIPAL | {"1934", "1941"})
+                         PRINCIPAL | {"1934", "1941", "2224"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -127,8 +128,19 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertEqual(source, "research_memos/1941-beaver-befer.md")
         self.assertIn("opposed derivational directions", "\n".join(self.report_map["1941"]))
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
-        self.assertEqual(manifest.read_text(), committed(manifest))
-        self.assertEqual(len(list(csv.DictReader(manifest.open(), delimiter="\t"))), 160)
+        current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
+        old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
+        self.assertEqual(len(current), 161)
+        insertion = int(next(r["global_order"] for r in current if r["row_id"] == "2224"))
+        unchanged = [r for r in current if r["row_id"] != "2224"]
+        for now, before in zip(unchanged, old, strict=True):
+            shifted = int(before["global_order"]) >= insertion
+            self.assertEqual(int(now["global_order"]), int(before["global_order"]) + shifted)
+            self.assertEqual(int(now["class_order"]), int(before["class_order"])
+                             + (shifted and now["derivation_class"] == "late_analogy"))
+            self.assertEqual({k: v for k, v in now.items() if k not in {"global_order", "class_order"}},
+                             {k: v for k, v in before.items() if k not in {"global_order", "class_order"}})
+        self.assertEqual(sum(r["derivation_class"] == "late_analogy" for r in current), 29)
 
     def test_superior_knee_and_hue_sections_are_retained(self):
         for row_id in ("2085", "2332"):
@@ -210,7 +222,7 @@ class EditorialPublicationTests(unittest.TestCase):
             if not row.editorial_report_path:
                 continue
             path = REPORTS / row.editorial_report_path
-            old = "" if row.row_id == "1941" else committed(path)
+            old = "" if row.row_id in {"1941", "2224"} else committed(path)
             pattern = r"\[[^\]\n]*@[^\]\n]*(?:\n[^\]]*)?\]"
             added = Counter(re.findall(pattern, path.read_text())) - Counter(re.findall(pattern, old))
             for block in added:

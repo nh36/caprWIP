@@ -1,4 +1,16 @@
 action	language	form	form_role	source_scope	source_ref	note
+add	oe	strawes	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; reconstructed unattested short genitive, Brunner1965 pp.49,110.
+add	oe	strewu	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; explicitly doubtful plural, Brunner1965 p.204.
+add	oe	strēa	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; reconstructed unattested free simplex, Brunner1965 pp.49,110.
+add	oe	strēa	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; reconstructed regular output remains a mismatch, RingeTaylor2014 pp.173,387.
+add	oe	strēa(w)	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; dictionary citation, Kroonen2013 p.484.
+add	oe	strēaberige	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; compound witness, Campbell1959 pp.232-233.
+add	oe	strēaw	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; unchanged attested comparator, Campbell1959 pp.232-233.
+add	oe	strēaw	target_form	lexical_heading	straw — OE strēaw	Authorized new late-analogy model heading; no scientific identity migration.
+add	pgmc	*stráwą	source_protoform	lexical_protoform	straw — OE strēaw	Authorized new model; unchanged live reconstruction/input and PGmc stage.
+add	pgmc	strawa-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; dictionary neuter stem, Kroonen2013 p.484.
+add	pgmc	stráwą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2224-straw-strēaw.model.md	Authorized straw publication; unchanged CAPR nominative/accusative input, not a new attributed quotation.
+remove	oe	scéawian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md	Finite entry now refers to the principal infinitive/SC034 account; Campbell1959 p.45 premise and citation retained.
 remove	pgmc	*kwedu-2	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/1983-cud-cwedu.model.md	Released ea5974c1 separated the dictionary homonym number from the phonological stem. Record that existing source correction without changing the frozen fingerprint snapshot or current scholarly prose.
 add	oe	cneowe	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2085-knee-cneowe.model.md	SC033 approved regular dative target; HoggGrammar2011 pp.21-22,86 and Campbell1959 pp.232-233.
 add	oe	cneowe	target_form	lexical_heading	knee — OE cneowe	SC033 approved cell migration and detailed lexical model in late analogy/paradigm-cell selection.

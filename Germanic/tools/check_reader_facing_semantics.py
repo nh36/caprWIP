@@ -2210,29 +2210,31 @@ def run_recon_iv_index_display_check() -> None:
 
     For each canonical source occurrence with combined .recon .iv, this check:
     1. Derives the occurrence identity (language, form, role, source_ref) from the source.
-    2. Locates the corresponding row in the authoritative generated print_main.tsv.
+    2. Locates the corresponding row in the generated main/excluded print partition.
     3. Requires that: the row exists, its display begins with exactly one *, its sort_key
        does not begin with *, and no unstarred twin exists for that source occurrence.
 
     Also exercises the production extraction function directly via subprocess.
     """
     pm_path = ROOT / "docs" / "book" / "index_verborum_print_main.tsv"
+    excluded_path = ROOT / "docs" / "book" / "index_verborum_print_excluded.tsv"
     if not pm_path.exists():
         return
 
-    # Load generated print_main.tsv indexed by occurrence identity
+    # Regular outputs are intentionally excluded from the printed index.
     pm_by_occ: dict[tuple[str, str, str, str], list[dict[str, str]]] = {}
-    with pm_path.open(encoding="utf-8") as handle:
-        for row in csv.DictReader(handle, delimiter="\t"):
-            if (row.get("source_scope") or "").strip() != "explicit_tag":
-                continue
-            key = (
-                (row.get("language") or "").strip(),
-                (row.get("form") or "").strip(),
-                (row.get("form_role") or "evidence_form").strip(),
-                (row.get("source_ref") or "").strip(),
-            )
-            pm_by_occ.setdefault(key, []).append(row)
+    for path in (pm_path, excluded_path):
+        with path.open(encoding="utf-8") as handle:
+            for row in csv.DictReader(handle, delimiter="\t"):
+                if (row.get("source_scope") or "").strip() != "explicit_tag":
+                    continue
+                key = (
+                    (row.get("language") or "").strip(),
+                    (row.get("form") or "").strip(),
+                    (row.get("form_role") or "evidence_form").strip(),
+                    (row.get("source_ref") or "").strip(),
+                )
+                pm_by_occ.setdefault(key, []).append(row)
 
     # Self-contained span parser (mirrors iter_explicit_tags essentials)
     EXPLICIT_SPAN_RE = re.compile(r'\[(?P<content>[^\[\]]+)\]\{(?P<attrs>[^}]+)\}')

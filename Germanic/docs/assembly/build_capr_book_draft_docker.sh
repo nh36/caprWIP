@@ -114,6 +114,9 @@ docker run --rm --platform "${platform}" --entrypoint /bin/sh \
   "
 
 python3 Germanic/tools/check_book_draft_tex_indexes.py --tex-path "${combined_tex}"
+python3 Germanic/tools/check_publication_references.py \
+  --tex-path "${combined_tex}" --log-path "${script_dir}/capr_book_draft_alpha_01.log" \
+  --pdf-path "${combined_pdf}"
 python3 Germanic/tools/check_sound_change_heading_wrapping.py \
   --markdown-path "${repo_root}/Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md" \
   --tex-path "${combined_tex}"
