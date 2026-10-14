@@ -381,7 +381,7 @@
 | 2178 | sheath | sċēaþ | regular | no | source_material | - | archive/dev_notes_slices/2178-sheath-sċēaþ.md | none |
 | 2180 | shield | sċield | regular | no | source_material | - | archive/dev_notes_slices/2180-shield-sċield.md | none |
 | 2182 | shine | sċīnan | regular | no | source_material | - | archive/dev_notes_slices/2182-shine-sċīnan.md | none |
-| 2185 | shovel | sċofl | regular | no | source_material | - | archive/dev_notes_slices/2185-shovel-sċofl.md | none |
+| 2185 | shovel | sċofl | regular | no | source_material | - | archive/dev_notes_slices/2185-shovel-sċofl.md, model_entries/2185-shovel-sċofl.model.md | none |
 | 2187 | shower | sċūr | regular | no | source_material | - | archive/dev_notes_slices/2187-shower-sċūr.md | none |
 | 2188 | side | sīde | regular | no | source_material | - | archive/dev_notes_slices/2188-side-sīde.md | none |
 | 2190 | sing | singan | regular | no | source_material | - | archive/dev_notes_slices/2190-sing-singan.md | none |
@@ -392,7 +392,7 @@
 | 2195 | slay | slēan | regular | no | source_material | - | archive/dev_notes_slices/2195-slay-slēan.md | none |
 | 2197 | slime | slīm | regular | no | source_material | - | archive/dev_notes_slices/2197-slime-slīm.md | none |
 | 2199 | snow | snāw | regular | no | source_material | - | archive/dev_notes_slices/2199-snow-snāw.md | none |
-| 2200 | sorrow | sorg | regular | no | source_material | - | archive/dev_notes_slices/2200-sorrow-sorg.md | none |
+| 2200 | sorrow | sorg | regular | no | source_material | - | archive/dev_notes_slices/2200-sorrow-sorg.md, model_entries/2200-sorrow-sorg.model.md | none |
 | 2201 | soul | sāwol | regular | no | source_material | - | archive/dev_notes_slices/2201-soul-sāwol.md | none |
 | 2206 | spear | speoru | regular | no | source_material | - | archive/dev_notes_slices/2206-spear-speoru.md, archive/packets/2102-light-līehtan.md | none |
 | 2207 | spin | spinnan | regular | no | source_material | - | archive/dev_notes_slices/2207-spin-spinnan.md | none |

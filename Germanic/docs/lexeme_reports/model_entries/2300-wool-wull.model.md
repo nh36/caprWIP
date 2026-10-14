@@ -10,50 +10,63 @@ DERIVATION_CLASS: unexplained_unmodelled
 | Item | Value |
 | :--- | :--- |
 | lexical item | wool |
-| citation reconstruction / lexeme label | *wúllō |
-| selected input form | *wúllō |
+| citation reconstruction / selected input | *wúllō |
 | Old English target | wull |
 | classification | unexplained_unmodelled |
-| derivational result | *wúllō > woll (regular output), but target `wull` |
+| regular output | woll |
 
-### Reconstruction and comparative evidence
+### The inherited paradigm
 
-The inherited form is a feminine ō-stem [wúllō]{.recon} ‘wool’. In the ordinary phonological
-history of West Germanic, stressed `u` lowers before a following non-high vowel,
-so the regular Old English outcome is an `o`-form. Campbell's discussion of the
-parallel adjective `full`, with OHG [foll]{.iv lang=ohg sort=foll role=comparison_form} 'full' as the regular comparator, shows that
-the handbooks treat this as a genuine exception cluster rather than as a place
-where the rule itself is doubtful [@Campbell1959, §115].
+The selected [wúllō]{.recon} 'wool' represents the feminine nominative
+singular. It must be distinguished from accusative \emph{*wúllǭ},
+whose final vowel was nasalized. Ringe explicitly reconstructs both
+cells; Orel and Kroonen discuss the inherited formation and its
+comparative history [@Ringe2017, pp. 171--173, 241--244;
+@Orel2003, p. 474; @Kroonen2013, pp. 598--599].
+Attested [*wull*]{.iv lang=oe role=target_form} 'wool' and
+[*wulle*]{.iv lang=oe role=comparison_form} 'wool' preserve a high root vowel.
+The latter is not, merely by its shape, evidence that the whole noun
+was originally a weak n-stem [@Campbell1959, p. 43, §115;
+@Bulbring1902, pp. 45--46, §116].
 
-Bülbring likewise lists [`wulle`]{.iv lang=oe sort=wulle role=comparison_form} 'wool' among the traditional `u`-preserving
-exceptions [@Bulbring1902, §116]. The comparative evidence therefore establishes
-two things at once: the regular result should be `woll`, and Old English still
-has a lexical exception of the [`wull`]{.iv lang=oe sort=wull role=comparison_form} 'wool' / [`wulle`]{.iv lang=oe sort=wulle role=comparison_form} 'wool' type.
+### Regular development and the alternative explanation
 
-### Old English evidence
+CAPR provisionally follows Fulk's lowering-before-final-raising
+chronology [@Fulk2018, p. 56]. Both oral \emph{*ō} and nasal
+\emph{*ǭ} condition root lowering before their distinct subsequent
+developments:
 
-The Old English target is given here as [`wull`]{.iv lang=oe sort=wull role=target_form} 'wool', a normalized lexeme form. Handbook discussion often cites [`wulle`]{.iv lang=oe sort=wulle role=comparison_form} 'wool', the feminine weak form of the noun [@Bulbring1902, §116]. Both point to the same lexical item and to the same exceptional preservation of root `u`.
-
-The OE evidence therefore does not remove the problem. It confirms that the
-language has a `u`-form where the regular phonology would have produced `o`.
-
-### Development to Old English
-
-From [wúllō]{.recon} ‘wool’, the regular sequence is lowering of stressed `u` before a
-non-high vowel, followed by the ordinary later reductions of the ending. The
-regular outcome is therefore **`woll`**.
-
-That regular derivation is not the attested Old English form. Luick rejects a
-simple phonological rule that would protect this word alone, and Ringe and
-Taylor state the larger problem plainly: we do not really know why `*u` failed
-to lower in forms of this sort [@Luick1914, 148; @RingeTaylor2014, §2.3.1].
-
-### What remains unexplained
-
-The comparison below sets the regular result beside the attested lexical exception.
-
-| Form | Status | Relevance to this entry |
+| Inherited cell | Preferred chronology | Raising before lowering |
 | :--- | :--- | :--- |
-| `*wúllō > woll` | regular output | shows what the deterministic sound laws produce |
-| `wull / wulle` | attested OE exception | attested Old English form to be recorded |
-| high-vowel escape from another paradigm cell | unsupported for this noun | rejected because the feminine ō-stem paradigm supplies no suitable escape cell |
+| nominative \emph{*wúllō} | \emph{*wóllō} → \emph{*wóllu} → regular \emph{*woll} | \emph{*wúllu} → regular \emph{*wull} |
+| accusative \emph{*wúllǭ} | \emph{*wóllǭ} → regular \emph{*wolle} | \emph{*wóllǭ} → regular \emph{*wolle} |
+
+These are sound-law predictions, not additional attestations. Earlier
+raising supplies a genuine nominative \emph{*wullu} with high root
+vowel and an independently conditioned low-root oblique. Generalization
+of the nominative vowel could then produce the attested high-root
+paradigm: this is Ringe and Taylor's plausible but unproved explanation,
+not an impossible escape cell [@RingeTaylor2014, p. 32].
+Old Frisian [*wolle*]{.iv lang=ofris role=comparison_form} 'wool' and
+Old High German [*wolla*]{.iv lang=ohg role=comparison_form} 'wool' support
+the comparative reality of a lowered root, but do not attest that
+particular early English accusative [@Kroonen2013, pp. 598--599].
+
+The main comparison of the two chronologies, the evidence from other
+ō-stems and the costs of the proposed analogies is in
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising).
+The preferred ordering does not regularly derive the attested high
+root here. The selected input, target and classification therefore
+remain unchanged: regular [woll]{.iv .recon lang=oe role=regular_output}
+'wool', not attested *wull*, is what the
+current sound laws produce. No lexical exception or analogical
+levelling has been inserted into those laws.
+
+Luick discusses the alternations in §§77--79, especially §78
+(printed pp. 105--106), not §§105--106. He rejects a proposed
+labial protection rule using regular low-root counterexamples
+[@Luick1914, pp. 104--106, §§77--79]. The separate trimoric
+genitive \emph{*-ôz} must not be substituted for either cell above:
+its analysis differs from the bimoric genitive and its complete
+computational pathway remains unmodeled [@Fulk2018, p. 155;
+@RingeTaylor2014, pp. 59, 299].

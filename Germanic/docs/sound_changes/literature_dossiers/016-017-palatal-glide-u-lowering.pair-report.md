@@ -1,5 +1,21 @@
 # SC016 / SC017 palatal-glide and u-lowering pair report
 
+## Supplementary SC017/SC019 qualification
+
+The later `audits/sc017-sc019-adoption.md` retains the SC016 spelling
+decision and the historical report below, but qualifies any inference
+that nose/shovel/sorrow independently prove lowering before final oral
+raising. Fulk2018 p.56's *scolu* argument is conditional on an
+unremodeled inherited nominative root. Stiles2012 p.45 explicitly
+states the opposite order; RingeTaylor2014 p.32 supplies the coherent,
+plausible but unproved nominative-u generalization account for wool.
+The general nasal-*ǭ* repair establishes that account's genuine
+low-root accusative without adopting it or adding analogy to the FST.
+CAPR provisionally retains SC017 → SC018 → SC019 on comparative
+explanatory economy; the reciprocal displacement measurements remain
+computational observations. This supplement does not alter the
+separately established SC019/020 relation.
+
 ## 0. 2026 adjudication supersession
 
 This report predates the SC016/SC017 chronology repair recorded in

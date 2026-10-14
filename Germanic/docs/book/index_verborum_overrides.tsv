@@ -1,4 +1,6 @@
 action	language	variety	form	display	sort_key	source_scope	source_ref	note
+add	pgmc		*wúllǭ	*wúllǭ	wullǭ	override	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:21	Source-backed nasal accusative, distinct from the selected oral nominative.
+ignore			*wullu				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:45	Conditional Northwest Germanic intermediate under raising-first, not a PGmc citation.
 ignore			*róstaz				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:55	SC017 computed intermediate, not a separate source citation; the regular-output span is already semantically excluded.
 ignore			rústas				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:78	Genitive-type diagnostic construction, not an attested or adopted lexical citation.
 ignore			rústai				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:79	Dative-type diagnostic construction, not an attested or adopted lexical citation.

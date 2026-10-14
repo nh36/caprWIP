@@ -1,0 +1,987 @@
+{
+  "protected_files": 163,
+  "unchanged": 48,
+  "authorized_source_repairs": 1,
+  "required_generated_rebuilds": 114,
+  "frozen_investigation_verified": true,
+  "files": [
+    {
+      "path": "backend/german.bin",
+      "before": "fcd67c7337dbccc8b1e0e6b2e9ba3f741909a99ea61bbc3962099025637fc0ba",
+      "after": "96866e3bf76d248f8813de5033e15f07aeef2a081aa6b6007c144c84292ba77b",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_j_gemination.bin",
+      "before": "2c85771c254a0bc64a573ab0fcb9441918f7b5f8bb82ab5a72dcfb19844399a3",
+      "after": "bde27a96863564f5701407fc9aa4cf5a69163f3113ef2b0eaee4b6a05e71b67b",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin",
+      "before": "8fc3d0d7974bc89fae016e7789a7cf1c654579744721d0f3e44c9d32833ef237",
+      "after": "355e23ab03102036406ca25fedf42622589b5bf317f1581518bd114f39e5675d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin",
+      "before": "4cc80377ebbde0012b7b14ac6521f4b000cfa7da52d22bf7f1d4fc1f71b15ab1",
+      "after": "93af5cff11171b6d6ecc7fdb7e6aaff119a440375ef83f1b261cce15d0576067",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_w_loss_before_i.bin",
+      "before": "5a97d9ded59379ad3a811af5717850ce051753f075a5b27de033295b784acd4e",
+      "after": "1437cfc0744e5f519d334af7141e65e9fdc2bb2abcf7d3456a04e3fb06010aae",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin",
+      "before": "881a94edaa78f8ead8bf025cb128cbe403c5088f7c5f9c7ac42bf655f08d1f31",
+      "after": "8201de0b1bc96ee7eda501c208834fcc0a26bad6f658872ecc1d799a51996ae5",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_weight_markers.bin",
+      "before": "53b9e60167342d5d97a9d0099d1c6ce8fa5479c25e6dc706e82ce879da910ac0",
+      "after": "d716fbc80cbaacfef2be67760c876e70c2cb37db1a692d7b6a1d3b2db6b7af3d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_final_z_deletion.bin",
+      "before": "e1858682d061353bff985801e26edc8ed198e6ac2a30e13c6f51c1f2202ef450",
+      "after": "bfe5e92e479c0f1794f87a578505555b7caebe1ebc2e681473f06e73a6bc5fc4",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_velar_fricative_palatalization.bin",
+      "before": "8cf3720128506611b5c727fa1b7f0254515f4602e2af318547e161e0e41d7d8f",
+      "after": "12c4ef3b1fa78c630f708ca60fc781ac27a170e927202eaf6b3063976b9956e6",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_old_english_surface.bin",
+      "before": "0d73262b96b45d61e199c70caec32b7dc4539d09ca0cb3f49114d1d9f4e6ee3c",
+      "after": "90ec26b1faf5bd6535e52315279dd350009faf228bb0832deb9beb53b0525fe1",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin",
+      "before": "2aec65bc4331747406fc615abe01ba8478f9a907d5f68251dadb678f105bc322",
+      "after": "44009482890e2275023df5e1f67b064c2fd3b75cc1adc440e59e48475f38a517",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_inter_stress_raising.bin",
+      "before": "13afbdb93fcb7bae498af9ed8fc734d619e4c57317923dbe07b9062cb1a7847b",
+      "after": "ed3a3fe4a60b6ed312d4a76234d8c6752736b5227d27a64002e6583cb2e1490d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_unstressed_ae_merger.bin",
+      "before": "f4de6d4763a9f324022049776029586428e8caefa4772415c7f1566dece32d7e",
+      "after": "8c9541d508ea57828f7ca96dba72da203452ff0d18236034552a67619f897673",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_prefix_a_reduction.bin",
+      "before": "d29e909cd50f90b6c80f9c8b1bfccf65c4492078e304300ad0b3f8e63454a21d",
+      "after": "3e7bcec0715238b2d42c7d2c2972eecbdb4d0e965574871b9bc5c6c1da693013",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_med_unstressed_o_raising.bin",
+      "before": "13069a216192ef35270a32cda021a8a527ab941ef410531ff9bf54e9096f811a",
+      "after": "8d755f9a92f7e65188e6eb8862e03cff14b6745d39e39c0bae22e41ed69c18e1",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_j_loss_after_heavy.bin",
+      "before": "b14a167dcb48e3b4749403e2b127fb11c06016bd98b2052ce66223d3959b120d",
+      "after": "de16700f4c1e9b971c0483c7efccfdab090b0d86e95c9598e0ae752cfb87de5f",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_palatal_fricative_merger.bin",
+      "before": "0bf915da9a655f47f1f07d86ff22a62743064a8d227225b7dbc28cf55b980166",
+      "after": "14fab9d8528bcda704fcb107c419e711915c49acaf15f583048e6bbb27ddb57f",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_syllabic_j.bin",
+      "before": "9ab18b6236e87d2b2d04a90997d8953aafb6cde849d3f4c2ffb78ea53df645a5",
+      "after": "875eca938d5eb1a72c97b9ca92fd673478f8051d0cc09067d57066839bd198c7",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_early_o_shortening.bin",
+      "before": "fad08c1af4ed95c68c357d8b00b9132e65291115bd392438998bc0c8e7e80152",
+      "after": "b580b7f53ffe9f421959e069004fa633076194af7c9d3cb4b00fde6102a2863c",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin",
+      "before": "ace7eb6b4b540ea1b02a83443b2faa28370054aee911d2368064238449e21887",
+      "after": "56f500988a34e3b5e19b2c70a498481c07bf68b67ebdd9f0e2951be320499eb5",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_endingless_aw.bin",
+      "before": "e2d6a9782e4f66fc0cb65d6c3e05c31193cfbd24f1ba6392429fba6d2e268bd7",
+      "after": "dd9f50f1376f3ca35395b3bd93ea6bf0ce6d8d079b2a4d1fab6cd73e1ef05c58",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_j_cluster_coalescence.bin",
+      "before": "04f8384afbd15f6a9b8521b452578443a35a135554816bd5dc2781be8c3b1448",
+      "after": "f67287869e525ba74d10b417c60622638244e9c81ec58ebd3a95583f9c3a5b0e",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_velar_palatalization.bin",
+      "before": "7a156252e46c3a3647cec6f84f0d8dd7f2a2c7a4ef2f8e8ede492da076a2cd69",
+      "after": "7762f06ec1c7c3d305ff7e85b958e06ffac7ce095d39859c0c36c90c7044f37d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_medial_syncope.bin",
+      "before": "59d437d557426a6fbb2d908d0b3506ebb1b5fe87f0b9420cf2e8e9df16945c4e",
+      "after": "1c08a387d50205f8315b8dc62d531a5e968277a65feaf9b2c3261304416be998",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_compound_linking_syncope.bin",
+      "before": "ccfb788e12f30186bc5387972d0a89688b68a0fc43b5c3dace0f679937857ea0",
+      "after": "5596e50c470c6bbc0b4ea0b8cd2b7ecac27c0a81f4d71ecd0b7161e7678978da",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_epenthetic_vowel.bin",
+      "before": "61865c4e01625ea908b7813923600505f50f5907cf03df7034b7079932cb6f79",
+      "after": "3098c43c5e797007113945a0aa89570e4f70c77b5c4bbb720fd3a7575f472ad6",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_final_unstressed_o_lowering.bin",
+      "before": "4579c33249b4a2b8fe27a208a3684882bbc79dec77c6473c8033b46c81642a73",
+      "after": "4e991490722e18b6f36f3ed4aa04f6479de17828ed1f37f4b41b9d7dac5a08a6",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pgmc_b_allophony.bin",
+      "before": "3b1c43e60956de90a6358522f0b1ee7b61306026500cfbe1be8c16ee06903ca3",
+      "after": "ca9cca03b247f54eb7c3fe0f2ebc0ac35672fbd371d664669c19dc2fc28b4a54",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_brightening.bin",
+      "before": "c58527ba0d13c867783b1a0bd61b3595fc8f2b023784e4e1fc9da75610316370",
+      "after": "872ef0e1b88b420ab533af831402709180e63e183a2b66be36ba0e6b10b996ea",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_med_unstressed_i_lowering.bin",
+      "before": "e7fdca8999d2d926eb4c12b5b4d68e5ba1f423d64a04474a8f36cbf15456cad4",
+      "after": "ee2922082bd2209270f52f7302b49424e328505d172937ab2958bf308060eff7",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_old_english_orthography.bin",
+      "before": "a85cc773d8b5d3a0b689b0923111c578ef3e2fecf1a56815519f212bd143991c",
+      "after": "c93220f270928be38a1b6685d03e696dddb988c378537e76a3ea8e2c586ff746",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_rhotacism.bin",
+      "before": "01a044f2570da82a5c69ba5c1488d5808ebcfff73157181ed558373daf4694f7",
+      "after": "f086331a6e827986bfdeb2cab5a5c7371eb15b1eb5557a3829388c5e62603f76",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_h_loss.bin",
+      "before": "c6b5f582abd92fa8334c18c4dd4e246437eb18c8377f8ca5de641611cb1e6dc8",
+      "after": "d6871803b8333a37b24ddc1f835624fca7094b6154863ffe64f1a81bad5f5ba7",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_dental_assimilation.bin",
+      "before": "7595572e5633fcfc6c4866e8da91feeed7a917d41300503428ed96087b56cf33",
+      "after": "d38696a8f9cd92533755d376e84b61036032e3b808375ddaff3435108617701d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_final_long_o_raising.bin",
+      "before": "f8ba6f5ea3d539a279af8fad68a1c24769eaaef0d6d5993d782462de22bbb971",
+      "after": "27f3100f332858ccc3eb5e3763507e499e3b76a0a3f5dc627401abc0c23a38d9",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_i_lowering.bin",
+      "before": "ec228c2f9e95da01022857c02b3e6f109e438fa96cb04df697f261ded434356c",
+      "after": "f921912d88789aae3dd28decb9ffd5c31ebb89892bc8b0c0900af718ff8c17dd",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_sievers_law_syncope.bin",
+      "before": "9b37e59b8daba952d0b89e4c4774d5b63813a7c9709c1745cd1480022649e8e6",
+      "after": "b116b249f7cb3b266f17105289ae4abbc22b9a5beb0512a21910700b5ed18c8a",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_nwgmc_in_stem_n_loss.bin",
+      "before": "baf0a1bd6e4d1d4ac5c638aa8925f990fabf9b3c06bafbe83abbd2c57450257e",
+      "after": "b237ee57e228f5d23d28309015e23414f8ca7f398d543ded7babca17748ccef6",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin",
+      "before": "d9be8cbef117beec2af7d9e3ea6b5729b37cea5b3dd8a304615ee90cb298e7dd",
+      "after": "25e96c851c0f2ec7071186a4c02d882f9e6e8bb1c418059037dd021de1fd3c09",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox.bin",
+      "before": "ac7901b2931f541790a267214d8925c7c70b8eaf9edbbba6fb457792b0bbd68f",
+      "after": "ac7901b2931f541790a267214d8925c7c70b8eaf9edbbba6fb457792b0bbd68f",
+      "classification": "unchanged"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_back_mutation.bin",
+      "before": "2b233024c0e61abb4e2d97627bb6669830d6044426fea10c0718e3d4d5f356a2",
+      "after": "6eb59e5c1e26bdba3c35dbaf94b3b020a6c088e4361137dabd382a26b60cf62d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_strip_secondary_stress.bin",
+      "before": "23dd0651c82e8c712207f7b69e39830fc2e067e6858bb07f28b83e47fe237dfd",
+      "after": "16ae73994245f2917dd6a71b13482890c4e5b4464870ab614c586f58dbeaf82c",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_post_velar_w_loss.bin",
+      "before": "9956704a5d768dda82805a9a4d0a271f9daa584ca0fa4dace64991cea0ba2667",
+      "after": "faf72cd635ab6e826f76dc2fd3d65a7a18ee5578b4032fd20b66f898b001d1a7",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_nasal_spirant_loss.bin",
+      "before": "2b2a9a86786cf127cf98fdfbbe181b42cf223486c9501d7ae8fceff799a864a7",
+      "after": "a119d08b692104ea12bfb4e6b7c270fd6f1da88d9c2ac0085be700eac54b325b",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_aw_long_diphthong.bin",
+      "before": "40f413de89b7a45012ef5ec7fe7f02c15fabb911648b1c2b38b68670a019aa3f",
+      "after": "aabf31be87023c0892286f6e18984fa18e795275e480b061d8bd57037f893f7d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_ij_contraction.bin",
+      "before": "50f29152db9a9a805efcea9217d05a57d11ffe60a6629a5e8bc142cde9d70321",
+      "after": "a3940e1152cc3904b9d0f7a8465e508d5692e7b6951bb30f2d452e5562d39d7e",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_awj_glide_formation.bin",
+      "before": "05089e703cde4816d07dae511d6ae6d4ee4a50fa764b4ef01bae8a8ddddbe61a",
+      "after": "05089e703cde4816d07dae511d6ae6d4ee4a50fa764b4ef01bae8a8ddddbe61a",
+      "classification": "unchanged"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_awwj_resolution.bin",
+      "before": "eae34ef7335e1e29887459ddf2b4705f08e98e31985c68f44b51c5d5289d2c87",
+      "after": "48144be6415161a10364ec44ff643b0547450e444d18e5267a836a9991f4f396",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english.bin",
+      "before": "5a564d23f7c8ec9537907723bb4c71ed21770b2505e46d895cda10f0aafdd505",
+      "after": "4d865541d78a2ea3589401737ddc4137d01054fe99cfa345097c1d3af8624db8",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_weight_cleanup.bin",
+      "before": "6e8ecf958386f90989d49458459b6d282a911505c5a58548b05c64071b1716e8",
+      "after": "a2d960f922b7811b243cbf00fac12739e90174dd800f7505535c94b42a4e722b",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_final_or_lowering.bin",
+      "before": "76d2e6638014e12022fbf8801233db7d180e385f0fcdf275d6d03d183e168aac",
+      "after": "7178a9abec280d7dd9830041b8ea5222a7dde6d674e637bb6586c5785d7311db",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_ws_palatal_umlaut.bin",
+      "before": "972f25213926092ced2f89f2c7a01df4da017e10ce652163f446195e19e0416d",
+      "after": "cd46dd01c95ab163e015ec53038b17e7b23f6b8bad615b272ae90a5f70ffa2bf",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_secondary_nasalization.bin",
+      "before": "a465b268cd874bbdfe1528b5643785c1b5f30e93cfb274dade0079541f71796a",
+      "after": "babd830bbdf51ba508ec6e4427757f64b95802bc117627934a3a8a00506d1adf",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_mn_dissimilation.bin",
+      "before": "d4fab11ad3bcf89b7510f994027b5dd0d9722b1cffab62ec1ae11483f07a8ae5",
+      "after": "2188135f53b585710e010097d2913841ca3a852f2118528c8a3e859043c13373",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_ww_simplification.bin",
+      "before": "50e441e5d4b5c1f22286454c5dda1fc151e35ad0d819121811e80512ff7b6bdc",
+      "after": "88c8c3a4cbd815f62561c729dbadd6b3425c8b99926608488eea9ddb06ddcf6e",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_ew_long_diphthong.bin",
+      "before": "be7c9b01d6c71c85542ab1d3f0650329a80b258568aa9ce64fd878492dc2bea7",
+      "after": "d7114451aecb647ddca8fa87811feba7948ff84b4382215aad297c697ab5d2c0",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_ws_palatal_glide.bin",
+      "before": "62d64f578fe2c511684e25787a08ca60fa4286bd420f1262c62ff25ed33503df",
+      "after": "11d3e84430fee31b5450d8ddf6245bfd7dbd7177865260c8969cf8d29c4cd05c",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_nasalized_low_rounding.bin",
+      "before": "a66209064543d024dba435f26bfea4eedef374d3132642d420e9dda85338d8ff",
+      "after": "38dd79493a6393f22ab5ff9dfa49f3706451caff6fa34ef7f3de9f7c337a82dd",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_i_umlaut.bin",
+      "before": "e499aa7933c037113d72a6370f215ed179ef9effa94771dc34571fe45ab207ff",
+      "after": "05067ff51223a8b1aa22f7968f4905ee4f79b59ba758e2097c1f0929bf55326d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin",
+      "before": "bdd40ed8d7f4fafaaa709ef90c26d1c32af06cd101ed86b3eb978b48f8c468db",
+      "after": "1898a216a4de4b040be09418c5404a5c8c14502c349d92e307d09b94d4ac758a",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_sk_palatalization.bin",
+      "before": "dc9eace37cca463d148e828b7dadd34cb372d0d744515a3fcac808acd7b29193",
+      "after": "9f1912148c56dc8a4379cbbfc86a9b9d95885602f271af779d5e9cf74049a58d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_heavy_syllable_nasal_apocope.bin",
+      "before": "0ba7728226b8b1b52f583c6552c9c457c2752fc2df52ec0c9c921867c7e3a034",
+      "after": "3a1959488f54a8bb261693af2b88e936ce7c7ba2caa4d29a57fc04aa59490c9b",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_final_geminate_simplification.bin",
+      "before": "20499300c2b84a6623546eb97430aeef13057faaaae456f0fbe95aff27ee6b8a",
+      "after": "fc96e80fd7d0ba98df3a14f116a2646e70ed90ecb23ead20ad6580d83af77f92",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_l_th_voicing.bin",
+      "before": "d6ea37d6c3203ad79ce778f8c8be046f031f81d81103af1fb62152179b145f85",
+      "after": "bc6e961cffffa72fd9f6820aaa3466397922940457c60010636c570c27fc4dfd",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_breaking.bin",
+      "before": "9803d5795469a4d98af634b0858e46b1da57531833feed0f05db7061666ba6f9",
+      "after": "81be68c9ada9784d84642239d44959ffb5583e250934ab40e85561b9e58b2960",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_unstressed_fronting_early.bin",
+      "before": "afcef4920a78ad975c9d3c7671acb6d45ca3b4cb2217b1af46b2d145e565e8ce",
+      "after": "fc0f4653bbf1cda4df2b5b2987d8788130622b7da126a5606e80713ff3d61673",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_a_restoration.bin",
+      "before": "7fae762f92a15de2c2437e64e38f4c9ea8201d87b3fa70ac673dabd02699c00a",
+      "after": "1553ee78d760e4c8bd49de38474e916f0187f4b3ed539a12def6017f63ecc5f7",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_weak_tail_reduction.bin",
+      "before": "376e95ca52b0fb4ec35f3a4f3b31c51df9df8772652a5d4dc791d3263d37b3a4",
+      "after": "3132751065722668a1ce7248a93b29efdff6ab71180af0f9c7f89f96e17df5e7",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_english_proto_input.bin",
+      "before": "89940b5b075e7d2bc42f1e32cf4cc5a489d56ce5d027b2bfc137c32b63711546",
+      "after": "8dc676cdbefb667b665f94ca9df96f0d6869525090e6d0c22c33caf6288639d0",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_xs_merge.bin",
+      "before": "c6b13b1ecddbd38fc0ca0dd54f78df076d05acc0ddd61b935e9b06f886c77388",
+      "after": "367571feaf1e3916bd7437ee20ef2938fca55c90d784f0e60deb4ef8b6502ed5",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pgmc_gm_simplification.bin",
+      "before": "161969c8896367cdb42f87030e1b2fd8a8f27473f211207da5048c7a8febf7d6",
+      "after": "906794f1a9877975a30a109f915d32d9bec20b637c5134734cee06cca81ae859",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin",
+      "before": "a135490b39c99673b6a044b39f314fbbc8685d84903e9f3bf4d723f99809bfde",
+      "after": "0b6c08f4022c9b08cada1107755e5b22eca597a63b0bf7f901c931a999d4d2f2",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_late_o_shortening.bin",
+      "before": "a386acb2e4fe4c7f8914b28efdbcdad60c45af5cfc07b810ed5f50a2dbee9f4f",
+      "after": "2b7cbd049512bff1172eadc4aa6ea45101dc79f83debbbb35c5393372b9ebc06",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_u_lowering.bin",
+      "before": "46ba2d03f5dbde9b92d27bb94f653ecaf0c6ece01453c05aa07bb8b84ccdbe38",
+      "after": "96d6bbde174b76aa59f4bea5175fb68af0f0c9ad9fe80fdd5945d86f084c5c50",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_brightening_long_final.bin",
+      "before": "f101007ea6b3ef024d7a5938694e872968d1a7261ebdc1c0bbe9ea84c7d8ffdb",
+      "after": "2cca163e037b830baad882f4869aa94048b07b6d374ecb37c59968857853d332",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_monosyllabic_final_z_loss.bin",
+      "before": "944bc74f83ec3b3ead2f0a94839482687209c691ca8b7c1b518cd258d5344370",
+      "after": "840acf38b19dd804b55323d3abd69d6c02d0c17ae101afac74514c50e0a29ee4",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_dental_hardening.bin",
+      "before": "6a00c03398caaab55093b3e0dd521f3a9967d04f61c5ac7f02c05376a14e3e79",
+      "after": "eea02286f24c740a5eaa0127c99fe2a9526a036175e6010f2ff5f844fad6beb2",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_unstressed_ei_contraction.bin",
+      "before": "21eb1931426f8364bc042b75361cda8c68fcd1f7515072cd787968e001d94a6b",
+      "after": "8c453db7946ba95b3a165a4bf4dc92eaf316ca123e0cb4f5039745dcac4b4435",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_med_unstressed_u_lowering.bin",
+      "before": "8719ab293a3740738946e3f3adb5584c51f50641005c52485a9ffedcf52c1483",
+      "after": "399ce7a71f59f69ef2f6a725487575be0f17b53434729104612b6b0b7cd7be65",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_root_noun_nom_z_loss.bin",
+      "before": "15d302d019b391873976d868f7ea53f9e43ef30d6c5d4d951b66981119ebc267",
+      "after": "6f08bba13343d093070089d440ab12515c3ea4fe15b612912e2edf2d9edf01e4",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_jww_simplification.bin",
+      "before": "b225a1f11740f19d4c4f0e0bfa748d0f315e3de523cad5671f55b8c2b538c7d5",
+      "after": "c51b877c4fdb8dda6224f97619704239597106adb4c38e1fa8316e6420d260c4",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_long_a_nasal_rounding.bin",
+      "before": "719835562b5e743d88a74af2b80ad72f6620f39e2dcdf36b3822185b71819fb7",
+      "after": "452717720a9d9cb058c4ea538b0099db9cd64a8bbe631306ae4f019f0fdc4dc8",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_old_english_remove_stars.bin",
+      "before": "93485f5c0ff4f46302572865177fa9f9a21da3c95a5e7b94c97b30067c861d3d",
+      "after": "91e06dbc1bce6dcfda2446cab81a4a4111c51c9a4ab6ea9c633945061720e42b",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_late_palatal_diphthong.bin",
+      "before": "72cc48bde4ae7089462e8796d781c41c667f21f3489776a4b7c8ba4352cb1403",
+      "after": "4b7af04273b63a0b046fffe5f15fe7345e3c0eab51ce66e8dba30d39f14c5aee",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_early_i_apocope.bin",
+      "before": "216ea352fcad605f6c136c21f798d61b2ba48108f45301ac99047f6ab3040dff",
+      "after": "50d47c9682c50236ee4d918e0275e43fa9bf9561f5e7b29bf4588cf264a4e629",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/english.bin",
+      "before": "3892f2edde9573edeec8518e6205c5017d96f2f23948df75f0d3e54d6ee60482",
+      "after": "5d1f04883f6401a0ace45d27574cfc37234b60664e9809b0e13f448304deda6e",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_long_e_lowering.bin",
+      "before": "700b908ab94d4564c9cbd5aa41989be2738ab258fa42e0ac3d974221c9b1fd05",
+      "after": "51be3738c06255d3ff9f7eb781448be619a15b0523e0f722954a27d8ddb6605d",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pgmc_nasal_loss_before_x.bin",
+      "before": "dadd218e8c22c91b3687e0951543cf94aeba5176271f06e000504fafbaf072a1",
+      "after": "20461c56b4d7450d4d84a091e9099b878cf32d7aa5874fc89bb77c6b9bfe6143",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_long_a_fronting.bin",
+      "before": "228c2396bf60da5c4adc070ecad258b67e5caac6acd56b73acfe7196d8985adf",
+      "after": "bc43a1e9e9c8e2e129c09b7c82e1fb7f17a05dd68729f2bef32b4d6142fb8173",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_weak_tail_nasal_loss.bin",
+      "before": "acb70b896cd8e0ba35bfd1ba04e4f450b05fa07586b957fe3ab28d1727461f2f",
+      "after": "58f20ec934b3790ada06b905f8701e0de2aca76eb3666ab4b637f7db21789521",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_diphthong_leveling.bin",
+      "before": "e029f0a7b28d40fc8dd60531b478ccc2b39c4fcfead6c03dc2fcd8309da75e4d",
+      "after": "80f1ce546dec84c73e0933082ffecd162e2d7034443c96c391c62c7e4559b820",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_j_glide_io.bin",
+      "before": "83ddc406ea85cf4bb77ec50fd2d543812d047897a1dd2cbd5554da17a7eb3c90",
+      "after": "fb2a6453421fd2fb40a1a64b47a5ba438a950087dc0220665b33110ebc728bf4",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_prefix_i_reduction.bin",
+      "before": "8cd138b24eb6df9f5ce0eb2687f78b0fe96c936c0d216076a9a89ed9c5cab78a",
+      "after": "3b667075e947c735edb03ed59c0236da9ba367c39bd6f024d68015e8a8be5c30",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_ws_palatal_diphthongization.bin",
+      "before": "e2b1f14330e6288349e12dac720b4f74c90e5a75202b34c7f6d6b7218c33cbac",
+      "after": "4e904b47616d6cd91fb108f113344496b22915779aef179d28d90f2098f89139",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin",
+      "before": "c2c96038a0e6127481fa8b917cfdcb62f97d6a4c15de814f968c1bbbf16c7228",
+      "after": "458c51615595f7362bfeacb41d855c58fc592c7656fcd652ed19c1bdeee23e79",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_hiatus_w_insertion.bin",
+      "before": "edbd6233485a4cd8416004fdacbce0b1159e86b88eda9d166de9cc3bf0bcb086",
+      "after": "ff875adb85223952aeb49b0479d09f43b60a812a59c9c6103f36a1af0d7b75a3",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_ai_monophthongization.bin",
+      "before": "f0e526d18353d66b368aea551f7c580046dbe3e67cda22e5ee2a86efa71a56ce",
+      "after": "46ac212f3f4a18fea585a01fa26d1aa4068e03a06f9f3c6813c84fb6e0c2e7b9",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_contraction.bin",
+      "before": "c99afdd58f247a47cbce9bdc42dd44c15eba172a666f59dccd22010911602361",
+      "after": "a20c23373e4ed0db689d2083f2684aebbbceab76ea6376cf4f821ca73ffb8015",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_intervocalic_j_vocalization.bin",
+      "before": "04d625c5ef99833fb28c1ae12a986dc90ac32bf083054c90f45475b343b02430",
+      "after": "7ebad54ccd4b5362cddc04c6c70fe09c485da0eef89385886303abeff2c202c7",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_r_metathesis.bin",
+      "before": "08d7cd7defd025cb7d0fd0b52984d807866aa3f51e96b1170a36422beabd1adc",
+      "after": "78932536598934d5add245af3b33fd63d1209f48f0b3eceb248dc849c1bc495f",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin",
+      "before": "27e6ea2ad72d0e0c525de6d1e5137142360dcc5cd9043ccc7e369015828f2aaa",
+      "after": "abea5da708e5dc9d11b09599caf433afd1e4c69f9d1c77c29cf554074ccbc0ae",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_preconsonantal_degemination.bin",
+      "before": "d41fd875094477b1c1cf38553bab67a771d88e96a609ce008b022529dc98eeef",
+      "after": "22b48aa83af2f88f4daae60a482e824aba0105cb165eff3b193e24d8b868afef",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_final_bare_a_loss.bin",
+      "before": "808a6d42fef647712810731827fd6c1af1658c5e7d82bd278fe63a2cceb5cec2",
+      "after": "21929fa1cdb53d91eb449d4fdefa6bcee9c512284a4fe1f81470aa1703d20357",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_l_adjacent_syncope.bin",
+      "before": "ea474818d2c9c2e86b93b4ee6811eb0a0f8e7cf86260640dc98ac63a8c4286ab",
+      "after": "e47cf6b50db1910a4e65f9ca44d24285889eb6d51a87d7ba48d7021e738a382f",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_cj_cleanup.bin",
+      "before": "b26528086136db3323a885aad14cc383f95819aa2e45050d5aef410440cd4eb0",
+      "after": "5b5230a94c6b990869ca6ae4c13a543c6be3bc6e2faaf7a65e34312ddbea852a",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pwgmc_coronal_w_assimilation.bin",
+      "before": "f18c76d1218a2646eea9e67e2e5053fe32ac054f64b9428ccb3848fd0fa130fb",
+      "after": "19042bd7a403b3e2f4238c4daf56bafff7d97e017b8e00a44ed44a1315a9f18c",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_au_brightening.bin",
+      "before": "fd3136730941ba2931341691723fe331e0caea8e8caf8f5bcba8e197123db70f",
+      "after": "acf6966ad95a677e3e58fdba9fcce351ba31a86f7d075ecc1c948350b9566130",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/dutch.bin",
+      "before": "ef46b9596cd5c5050acb88e62247ee0ffbb1ca5b7b0466b66734122fd29c28ee",
+      "after": "0931a8f07b985a4042e6806f397604f3bc5a59de65d38706e5260f3249824b5b",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin",
+      "before": "54dec679f14af7e118e8450e15e8c7422135eddb5f73c9c51167e8fa9aa27690",
+      "after": "1b4edca4a790afb766cdb3f11764d393a69f126344e5ba85ff7fd227830f1d40",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_au_fronting.bin",
+      "before": "fdf8b2100fa196b1bba2fdf7e073a7856e3b96295e42fe817e7e64378c15cfeb",
+      "after": "fdf8b2100fa196b1bba2fdf7e073a7856e3b96295e42fe817e7e64378c15cfeb",
+      "classification": "unchanged"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin",
+      "before": "44c9f819cde8880b68ed0f4b56e9f0604c2da3c008391193f0c972b975355977",
+      "after": "7ac222629fd1b23cb90d2098806f7d63d00f4c5cb519b3ea03a54efd0bf9f123",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_j_strengthening_after_front_diphthong.bin",
+      "before": "707ced299eff68ee697ebc792b2af666a82ef47d2592b335b0a8c1fa69a8979f",
+      "after": "35253b7fae3108c3287e797512492d711feb24039fd40ab5f5b138d8690c60c3",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_eaf_brightening_unstressed.bin",
+      "before": "d39b911fc85d4d6afa18234e1b93a11a8e99eacf7baa59f485f328568f98f981",
+      "after": "75b3d0051da255cd62c5792289545e520795df27ac9748e7a0725cf5f12b56ca",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/old_english_sandbox_after_oe_high_vowel_apocope.bin",
+      "before": "5a098f383e94fabe77c1836154fb27d77323175d1d73e9e8f6017f027776932e",
+      "after": "ba344dd040e878cb94eeced9235fc0e3e0368fb11f08a9842703b6a3a7536dd4",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "backend/oe_build_manifest.json",
+      "before": "e763a0327a029da3f2d3b6306ae428d0d6322300e076288da394327fc044b879",
+      "after": "427026cd2d3cba2eac16cbd6696b544948ffea83e1354a13a2d79ab59d7c49dd",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "Germanic/fsts/germanic.txt",
+      "before": "a5d53a0504e6dc2a5411a8e327826f97a75c5bcc60f5fc17f55da06c71be904e",
+      "after": "6c33b3c723150b61de4a41c89e228f32eeceb8280114b573e182eb8baf6ff51f",
+      "classification": "authorized_source_repair"
+    },
+    {
+      "path": "Germanic/data/germanic-aligned-final.tsv",
+      "before": "165f859329efee0fc3bda0fbc9d4030de340ec9e5ad5341a738dfbf8e494699b",
+      "after": "165f859329efee0fc3bda0fbc9d4030de340ec9e5ad5341a738dfbf8e494699b",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs.tsv",
+      "before": "d60785700fde7579b09c11ec5c0afe5248722e4f5506d426da456fd14cf2b8c0",
+      "after": "d60785700fde7579b09c11ec5c0afe5248722e4f5506d426da456fd14cf2b8c0",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/canonical_stage_scope_ontology.md",
+      "before": "b6b82cd3bcd44a58eacc1865d10436c5c092d83e333aae2acf953e79558cfc77",
+      "after": "b6b82cd3bcd44a58eacc1865d10436c5c092d83e333aae2acf953e79558cfc77",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/historical_partial_order.tsv",
+      "before": "3272b998470ee526b245646544d5428916de1c0bb43c5a01a724ab104bcdd1fa",
+      "after": "3272b998470ee526b245646544d5428916de1c0bb43c5a01a724ab104bcdd1fa",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/rename_migration_manifest.tsv",
+      "before": "e0089f43a14e71817be5f8395a201a0bdb1958e65970bad25a3dc0131cde5629",
+      "after": "e0089f43a14e71817be5f8395a201a0bdb1958e65970bad25a3dc0131cde5629",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/queued_review_gated_tasks.md",
+      "before": "917f8fbb0a088bce949049ef76f40344e7fec728188b4fbf278ceed12217ae29",
+      "after": "917f8fbb0a088bce949049ef76f40344e7fec728188b4fbf278ceed12217ae29",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/approved_sc034_output_migration.json",
+      "before": "aa78435a74efec2a09f373b6e3884ac37d6555ce83c93594132899fb650666ef",
+      "after": "aa78435a74efec2a09f373b6e3884ac37d6555ce83c93594132899fb650666ef",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc017_rust_input.tsv",
+      "before": "6fde3bf5318401feb8cb7e5d57f3b381639b3b9e24de2bf3fb99357614a58ac9",
+      "after": "6fde3bf5318401feb8cb7e5d57f3b381639b3b9e24de2bf3fb99357614a58ac9",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc056.json",
+      "before": "6a560e752a50c8aa23b442aaeda31151025c1ce5eeda7728b4a30776c6742e6c",
+      "after": "6a560e752a50c8aa23b442aaeda31151025c1ce5eeda7728b4a30776c6742e6c",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/rule_coverage_census.tsv",
+      "before": "1885a67f04b99a081fd89dbb650fac49a47ae0419419613f55c6ce7021a677d9",
+      "after": "1885a67f04b99a081fd89dbb650fac49a47ae0419419613f55c6ce7021a677d9",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/approved_context_migration.json",
+      "before": "8de9b1bb1bf2abd971b86bbdd0bb354c7a00d7159d6c860b3f03150ad8e19b4e",
+      "after": "8de9b1bb1bf2abd971b86bbdd0bb354c7a00d7159d6c860b3f03150ad8e19b4e",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/rename_former_name_allowlist.tsv",
+      "before": "b1b43db413eb18934fe738982567d4d844a36afd178be26da9bf808cbe585faf",
+      "after": "b1b43db413eb18934fe738982567d4d844a36afd178be26da9bf808cbe585faf",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/historical_audit_evidence_inventory.tsv",
+      "before": "6779218c5b8eaa1228d3395a6f5dd94c7a511a058efdd1039db3e2a106c85b84",
+      "after": "6779218c5b8eaa1228d3395a6f5dd94c7a511a058efdd1039db3e2a106c85b84",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json",
+      "before": "06715e6fd5441ba69c8f34ef6b88621d62327a8e459b12dd871e45ebe2a7b70e",
+      "after": "2d8c5cac50f5ad17e0cbace82eeb5085e4c186cb4110501a8317a6042e589486",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc031_sc098.json",
+      "before": "cc895d7f23075de91a7505ec93b019db0e88ae358e28a1d256757158951d03c8",
+      "after": "cc895d7f23075de91a7505ec93b019db0e88ae358e28a1d256757158951d03c8",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc031_sc098.tsv",
+      "before": "d6c02720e6c2db7973e220b9b3fd5c64f7ef1270e8938160ee13ba8d4ef08d61",
+      "after": "d6c02720e6c2db7973e220b9b3fd5c64f7ef1270e8938160ee13ba8d4ef08d61",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_interaction_matrix.tsv",
+      "before": "8333c9fc3bacfdf9ba773977820dc9f61a48e85b3d4633ea33fe509f5136843c",
+      "after": "8333c9fc3bacfdf9ba773977820dc9f61a48e85b3d4633ea33fe509f5136843c",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/approved_input_migrations.tsv",
+      "before": "90e2da191f7ad115a99be4ad01c6370c0d5bf36db587da4d5a1dec0d1a6297b0",
+      "after": "90e2da191f7ad115a99be4ad01c6370c0d5bf36db587da4d5a1dec0d1a6297b0",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc017_rust_input.json",
+      "before": "1ce5d1c00f1221bfdfb76c8a0add58aeea626ac95c52a0e2ba7081178f0b3e57",
+      "after": "1ce5d1c00f1221bfdfb76c8a0add58aeea626ac95c52a0e2ba7081178f0b3e57",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv",
+      "before": "d2120039e72861573056f9aa015a28f9d85573d5b1e391cdd5fdabb60781849a",
+      "after": "d2120039e72861573056f9aa015a28f9d85573d5b1e391cdd5fdabb60781849a",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc033_hue.tsv",
+      "before": "82c618b5477081c3eb9889eba7cb6886dbaabafcff4f245d5371c75434b36386",
+      "after": "82c618b5477081c3eb9889eba7cb6886dbaabafcff4f245d5371c75434b36386",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/post_sc004_split_semantic_baseline.tsv",
+      "before": "cd6b610269621abcfc2b70a20fe1353b046f85d486f66a25a4896e115e10f2ca",
+      "after": "cd6b610269621abcfc2b70a20fe1353b046f85d486f66a25a4896e115e10f2ca",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/historical_cascade_proposal.md",
+      "before": "bb7a211c5eb0965a549eeb14d2b9b0a7706d6b91a8e27a865dff67d32c43e6fb",
+      "after": "bb7a211c5eb0965a549eeb14d2b9b0a7706d6b91a8e27a865dff67d32c43e6fb",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/approved_rust_input_migration.json",
+      "before": "1b6a264aba1060511940dd0a3561766b413459f995f52873b6f9de8cdd17ed30",
+      "after": "1b6a264aba1060511940dd0a3561766b413459f995f52873b6f9de8cdd17ed30",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_interaction_provenance.json",
+      "before": "5604cfc751f9c3afa05024632f5896b8d960f3eb374c2c93940a21d2e5873eb5",
+      "after": "270fef260ffd8028dfd272936cb4a404b3a85e12215f5d36f058beed6cda08ea",
+      "classification": "required_generated_rebuild"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc033.tsv",
+      "before": "4c1d72e74c287c49f9f4a6d09cffcb3eccc10aafcbb57245c77ba4eadcf87f28",
+      "after": "4c1d72e74c287c49f9f4a6d09cffcb3eccc10aafcbb57245c77ba4eadcf87f28",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/README.md",
+      "before": "f735eec779590d47c70a730d6e518f480be3df578afc423f65094de3437a4cac",
+      "after": "f735eec779590d47c70a730d6e518f480be3df578afc423f65094de3437a4cac",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/historical_audit_table.tsv",
+      "before": "503c4b588f00f10bbb1e6c691a84d08da97edd3fb7ff633debf2187a2187204b",
+      "after": "503c4b588f00f10bbb1e6c691a84d08da97edd3fb7ff633debf2187a2187204b",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/approved_hue_input_migration.json",
+      "before": "ea9dccd3402486a83fdbbdd48c99573d02ab0a8d8920da0138b39e86a306a076",
+      "after": "ea9dccd3402486a83fdbbdd48c99573d02ab0a8d8920da0138b39e86a306a076",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_interaction_report.md",
+      "before": "db9b2d95401f292c3cb839d65cd3eb6777f1c40e3bd2e2ad97b68cf45688f073",
+      "after": "db9b2d95401f292c3cb839d65cd3eb6777f1c40e3bd2e2ad97b68cf45688f073",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_order_manifest.tsv",
+      "before": "6292af191bd6ddfd5170afcb84d117eff8fe35aa8533c3d4d9173b9ee7e153e3",
+      "after": "6292af191bd6ddfd5170afcb84d117eff8fe35aa8533c3d4d9173b9ee7e153e3",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/executable_model.tsv",
+      "before": "977c5e9b085ec0cf861ffedb969e40fc6ddd98cb57eb1dc2655384453ddf89be",
+      "after": "977c5e9b085ec0cf861ffedb969e40fc6ddd98cb57eb1dc2655384453ddf89be",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc033.json",
+      "before": "3e807636a6b1223d314de0d4a9772b41899584a8dc1c649a5d4c61ac15a3186e",
+      "after": "3e807636a6b1223d314de0d4a9772b41899584a8dc1c649a5d4c61ac15a3186e",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc034.tsv",
+      "before": "983d1d54b931c125932c4d8be68a915c583f4fd30ac99557ba1af2de3e39d930",
+      "after": "983d1d54b931c125932c4d8be68a915c583f4fd30ac99557ba1af2de3e39d930",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/approved_cell_migration.json",
+      "before": "d5dfea8b7ee5605ec987af86bf1aa2572b25a5a77f926efca40331f1ee123ff4",
+      "after": "d5dfea8b7ee5605ec987af86bf1aa2572b25a5a77f926efca40331f1ee123ff4",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/post_rename_semantic_baseline.tsv",
+      "before": "addce1d8c651a666d393c30dca230104bfdcc5f6148aad95052ddb9132f49bb3",
+      "after": "addce1d8c651a666d393c30dca230104bfdcc5f6148aad95052ddb9132f49bb3",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/historical_reconciliation.md",
+      "before": "c1c896bcfc38d4b71fb253a63cfa9b8720697dbb702763f72c2cdcf50c43d5ae",
+      "after": "c1c896bcfc38d4b71fb253a63cfa9b8720697dbb702763f72c2cdcf50c43d5ae",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json",
+      "before": "3fa19f84361f74345f7983fe83c5ca2bf0cbf39ee31e3e08a8b0e1854b01b775",
+      "after": "3fa19f84361f74345f7983fe83c5ca2bf0cbf39ee31e3e08a8b0e1854b01b775",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc034.json",
+      "before": "d29d07330022401f3b0a4e0afebfc1c60d995536eb0968c83d2b36ed5058cd91",
+      "after": "d29d07330022401f3b0a4e0afebfc1c60d995536eb0968c83d2b36ed5058cd91",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc033_hue.json",
+      "before": "d199a4a3d1a9afcc06c837f1cd9f97fae05edea976133007daf2621d73ae90db",
+      "after": "d199a4a3d1a9afcc06c837f1cd9f97fae05edea976133007daf2621d73ae90db",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/historical_correction_dossier.md",
+      "before": "0bec325871401b59071597368af9fc5adb17f36bbef7aec7ab46bf7bae14d12f",
+      "after": "0bec325871401b59071597368af9fc5adb17f36bbef7aec7ab46bf7bae14d12f",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/sc004_correction_rebuild_status.md",
+      "before": "1a9747f396027d577f096766d62a5b87b0149513b614d68d840c853a94d551f4",
+      "after": "1a9747f396027d577f096766d62a5b87b0149513b614d68d840c853a94d551f4",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/sc004_historical_options_report.md",
+      "before": "f45774ca8efad362c07f22f6a2a0d3d193fa63d60326b71f5c4ee09507ba1f49",
+      "after": "f45774ca8efad362c07f22f6a2a0d3d193fa63d60326b71f5c4ee09507ba1f49",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc056.tsv",
+      "before": "cb518bf3be8bc1a01d69565072428f3251743da03095448f9dc36cdeb160c982",
+      "after": "cb518bf3be8bc1a01d69565072428f3251743da03095448f9dc36cdeb160c982",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/post_rename_integrity_report.md",
+      "before": "5d35c41c54a595681a668e7eb8a9fbadaa422e4bbe29052f69a557af4430f8e6",
+      "after": "5d35c41c54a595681a668e7eb8a9fbadaa422e4bbe29052f69a557af4430f8e6",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/sc004_split_stale_claim_audit.md",
+      "before": "80adb5d9595b72f1fd9547bd34ff401c7f5b57f331534b47804a27408967cfa9",
+      "after": "80adb5d9595b72f1fd9547bd34ff401c7f5b57f331534b47804a27408967cfa9",
+      "classification": "unchanged"
+    },
+    {
+      "path": "Germanic/docs/sound_changes/cascade_baseline/cascade_order_manifest_frozen.tsv",
+      "before": "b3d6b6bad597884c72016f48c3d379d2cfbd79bac900cf6758a6848a877636ee",
+      "after": "b3d6b6bad597884c72016f48c3d379d2cfbd79bac900cf6758a6848a877636ee",
+      "classification": "unchanged"
+    }
+  ]
+}

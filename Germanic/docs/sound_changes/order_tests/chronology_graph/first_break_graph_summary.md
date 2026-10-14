@@ -20,10 +20,10 @@ chronology constraints.
 | --- | ---: |
 | `boundary_observation` | 2 |
 | `broad_far` | 7 |
-| `mixed` | 14 |
+| `mixed` | 16 |
 | `negative_boundary` | 9 |
 | `one_sided_chronology` | 7 |
-| `reciprocal_or_near_reciprocal` | 24 |
+| `reciprocal_or_near_reciprocal` | 22 |
 | `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
 | `source_partial_chain` | 7 |
@@ -36,17 +36,15 @@ chronology constraints.
 | `near_reciprocal_chronology` | 2 |
 | `no_break_search_boundary` | 21 |
 | `one_sided_chronology` | 39 |
-| `reciprocal_chronology` | 34 |
+| `reciprocal_chronology` | 32 |
 | `runner_limited_boundary` | 19 |
-| `technical_computational` | 8 |
+| `technical_computational` | 10 |
 
 ## Chronology edges
 
 1. `SC015 -> SC036` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `world`; forms: PGmc `*wír-àldu` yields expected OE `weorold`, but the later-shifted variant yields `wuruld`
 1. `SC016 -> SC017` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `yoke`; forms: PGmc `*júką` yields expected OE `ġeoc`, but the later-shifted variant yields `ġoc`
 1. `SC017 -> SC016` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `yoke`; forms: PGmc `*júką` yields expected OE `ġeoc`, but the earlier-shifted variant yields `ġoc`
-1. `SC017 -> SC019` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `nose; shovel; sorrow`; forms: PGmc `*núsō` yields expected OE `nosu`, but the later-shifted variant yields `nusu`; PGmc `*skúflō` likewise yields `sċufl` instead of expected `sċofl`; PGmc `*súrgō` yields `surg` instead of expected `sorg`
-1. `SC019 -> SC017` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `nose; shovel; sorrow`; forms: PGmc `*núsō` yields expected OE `nosu`, but the earlier-shifted variant yields `nusu`; PGmc `*skúflō` likewise yields `sċufl` instead of expected `sċofl`; PGmc `*súrgō` yields `surg` instead of expected `sorg`
 1. `SC019 -> SC020` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `rest`; forms: PGmc `*rástōz` yields expected OE `ræste`, but the later-shifted variant yields `rast`
 1. `SC020 -> SC019` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `rest`; forms: PGmc `*rástōz` yields expected OE `ræste`, but the earlier-shifted variant yields `rast`
 1. `SC020 -> SC040` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `beaver; bough; cud; field; flood`; forms: PGmc `*bébruz` yields expected OE `befer`, but the later-shifted variant yields `befro`; PGmc `*kwéðuz` likewise yields `cwedo` instead of expected `cwedu`; PGmc `*félθuz` yields `feldo` instead of `feld`
@@ -140,8 +138,10 @@ chronology constraints.
 1. `SC014 -> SC087` (no_break_search_boundary)
 1. `SC015 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC016 -> PWGmcChanges` (runner_limited_boundary)
+1. `SC017 -> SC019` (technical_computational)
 1. `SC018 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC018 -> SC087` (no_break_search_boundary)
+1. `SC019 -> SC017` (technical_computational)
 1. `SC022 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC022 -> SC087` (no_break_search_boundary)
 1. `SC023 -> PWGmcChanges` (runner_limited_boundary)

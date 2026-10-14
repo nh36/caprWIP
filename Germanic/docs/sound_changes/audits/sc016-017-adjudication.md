@@ -260,6 +260,23 @@ historical edge SC017 < SC016 (feeding, yoke).
 
 ## Sources
 
+### Supplementary SC017/SC019 qualification
+
+The later authorized adoption in `sc017-sc019-adoption.md` qualifies
+this memo's SC017 chronology claims without erasing its historical
+diagnosis, measurements or SC016 spelling decision. SC017's general
+nasal-*ǭ* input/conditioning repair is documented separately. Its
+unchanged rewrite and SC017 → SC018 → SC019 serialization are retained
+provisionally, following Fulk2018 p.56's conditional *scolu* argument,
+not a claim of unanimous scholarship or independent proof from
+nose/shovel/sorrow outputs. Stiles2012 p.45 explicitly states the
+opposite order; RingeTaylor2014 p.32's nominative-u generalization
+for wool is plausible but unproved. The newly corrected accusative
+domain supplies the genuine low-root oblique in that alternative.
+The current SC017 registry memo/verdict points to the new qualification;
+the original SC016 verdict and record below remain historical authority
+for that separate spelling decision.
+
 - Campbell, A. 1959. Old English Grammar. §44 (p. 19), §115 (p. 43),
   §§172–175 (pp. 65–67), §176.
 - Ringe, D. & A. Taylor. 2014. The Development of Old English. p. 5

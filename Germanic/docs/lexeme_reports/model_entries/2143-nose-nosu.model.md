@@ -20,8 +20,8 @@ DERIVATION_CLASS: early_analogy
 
 Kroonen reconstructs a Germanic ablaut pair `*nasō- ~ *nusō-` and adds that the
 root `*nus-` is likely to have arisen as a secondary zero grade after a
-remodeling of the older paradigm [@Kroonen2013, 423]. Campbell is more specific for
-Old English, citing `nosu` 'nose' < [nusō]{.recon} 'nose' [@Campbell1959, 44].
+remodeling of the older paradigm [@Kroonen2013, p. 383]. Campbell is more specific for
+Old English, citing `nosu` 'nose' < [nusō]{.recon} 'nose' [@Campbell1959, p. 43].
 
 The citation reconstruction [nasō]{.recon} 'nose' is therefore best treated as the full-grade
 comparative headword, while the selected input [núsō]{.recon} 'nose' represents the remodeled
@@ -34,7 +34,7 @@ lines should not be collapsed without comment [@Orel2003, 320].
 `Nosu` 'nose' is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives `nosu f.` 'nose', with genitive-dative singular `nosa`, and cross-refers
-[`nasu`]{.iv lang=oe sort=nasu role=comparison_form} 'nose' to `nosu` 'nose' [@ClarkHall1960, 810].
+[`nasu`]{.iv lang=oe sort=nasu role=comparison_form} 'nose' to `nosu` 'nose' [@ClarkHall1960, pp. 211, 217].
 
 The selected OE target is therefore attested `nosu` 'nose', not a reconstructed
 placeholder. The lexicographical record also gives [`nasu`]{.iv lang=oe sort=nasu role=comparison_form} 'nose' for the full-grade
@@ -48,6 +48,16 @@ zero-grade input, not in any late Old English repair.
 
 With that input chosen, the OE development is straightforward. The full-grade
 line behind [nasō]{.recon} 'nose' instead points toward [`nasu`]{.iv lang=oe sort=nasu role=comparison_form} 'nose', not to the form treated here.
+
+The low root of *nosu* 'nose' supports the economy of lowering before
+final oral raising, but only conditional on that selected remodeled
+stem. Reversing the changes yields a high-root nominative, whose
+replacement by a lowered oblique root would be an additional,
+individually unproved levelling. The word is therefore not a pristine
+inherited nominative proving the chronology. The comparative argument
+and its limits are developed in
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising)
+[@Fulk2018, p. 56; @Kroonen2013, p. 383].
 
 ### Stem comparison
 

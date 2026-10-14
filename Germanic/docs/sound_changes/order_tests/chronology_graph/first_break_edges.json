@@ -42,9 +42,9 @@
       "lifecycle_status": "active",
       "rule_name": "PNWGmcULowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC017-nwgmc-u-lowering.md",
-      "card_type": "reciprocal_or_near_reciprocal",
+      "card_type": "mixed",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC016 later around yoke; later boundary reciprocates SC019 earlier around nose, shovel, and sorrow, with `rust` / `wool` only as changed-output context."
+      "short_summary": "Lowering feeds the later yoke spelling; reciprocal SC019 displacements are conditional computational observations. Lowering before final oral raising is provisionally preferred on comparative explanatory economy, not established by output agreement."
     },
     {
       "change_id": "SC018",
@@ -62,9 +62,9 @@
       "lifecycle_status": "active",
       "rule_name": "PNWGmcFinalLongORaising",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC019-nwgmc-final-long-o-raising.md",
-      "card_type": "reciprocal_or_near_reciprocal",
+      "card_type": "mixed",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC017 later around nose, shovel, and sorrow; later boundary reciprocates the already interpreted SC020 earlier rest relation."
+      "short_summary": "SC017 displacements are conditional computational observations; retain lowering before oral raising provisionally following Fulk 2018 p.56. The separately established raising-before-final-z-loss relation remains unchanged."
     },
     {
       "change_id": "SC020",
@@ -829,16 +829,16 @@
     {
       "source_change_id": "SC017",
       "target_change_id": "SC019",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "nose; shovel; sorrow",
       "representative_forms": "PGmc `*núsō` yields expected OE `nosu`, but the later-shifted variant yields `nusu`; PGmc `*skúflō` likewise yields `sċufl` instead of expected `sċofl`; PGmc `*súrgō` yields `surg` instead of expected `sorg`",
       "strength": "tight_local",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG02_SC017_SC019",
-      "notes": "Earlier boundary reciprocates SC016 later around yoke; later boundary reciprocates SC019 earlier around nose, shovel, and sorrow, with `rust` / `wool` only as changed-output context."
+      "notes": "Measured displacement preserved, not independent historical proof. Provisionally prefer lowering before raising by comparative explanatory economy (Fulk 2018 p.56); RT2014 p.32 and Stiles2012 p.45 support a coherent alternative with separate analogy. Nose already has earlier morphological remodelling (Kroonen2013 p.383). Specific low-root generalization is not disproved. See sc017-sc019-adoption.md."
     },
     {
       "source_change_id": "SC018",
@@ -871,16 +871,16 @@
     {
       "source_change_id": "SC019",
       "target_change_id": "SC017",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "nose; shovel; sorrow",
       "representative_forms": "PGmc `*núsō` yields expected OE `nosu`, but the earlier-shifted variant yields `nusu`; PGmc `*skúflō` likewise yields `sċufl` instead of expected `sċofl`; PGmc `*súrgō` yields `surg` instead of expected `sorg`",
       "strength": "tight_local",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG02_SC017_SC019",
-      "notes": "Earlier boundary reciprocates SC017 later around nose, shovel, and sorrow; later boundary reciprocates the already interpreted SC020 earlier rest relation."
+      "notes": "Measured reciprocal displacement preserved as a conditional computational boundary, not an independent before-edge. Fulk2018 p.56 supplies a conditional lexical argument; Runic dates do not by themselves establish strict order (pp.56,82). The distinct SC019-SC020 relation is unchanged. See sc017-sc019-adoption.md."
     },
     {
       "source_change_id": "SC019",

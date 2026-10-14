@@ -161,7 +161,7 @@ def assert_iv_to_production_coverage() -> None:
     sentinel_keys = {
         ("mlg", "schulder", "comparison_form"),
         ("me", "stam", "comparison_form"),
-        ("ohg", "foll", "comparison_form"),
+        ("ohg", "wolla", "comparison_form"),
         ("oe", "duru", "comparison_form"),
         ("pnwgmc", "brōkiz", "comparison_form"),
     }
@@ -204,7 +204,7 @@ def assert_evidence_audit_sentinels() -> None:
     required_in_production: list[tuple[str, str]] = [
         ("mlg", "schulder"),    # shoulder: MLG comparator
         ("me", "stam"),         # stem: ME comparator
-        ("ohg", "foll"),        # full: OHG comparator
+        ("ohg", "wolla"),       # wool: OHG comparator in the adopted account
         ("oe", "heofon"),       # heaven: canonical OE target
         ("oe", "wull"),         # wool: OE target (role corrected 2026-07-30)
     ]
@@ -806,7 +806,7 @@ def assert_table_semantic_rows() -> None:
         ("oe", "rast", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59"),
         ("oe", "hlæhhan", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58"),
         ("oe", "hlehhan", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58"),
-        ("oe", "nasu", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59"),
+        ("oe", "nasu", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:69"),
     }:
         assert key in production_keys
     for key in {
@@ -815,8 +815,8 @@ def assert_table_semantic_rows() -> None:
         ("pgmc", "*kōz", "source_protoform", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:64"),
         ("pgmc", "*kūi", "selected_input", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66"),
         ("pgmc", "*kūiz", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67"),
-        ("pgmc", "*nasō", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:59"),
-        ("pgmc", "*núsō", "selected_input", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:60"),
+        ("pgmc", "*nasō", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:69"),
+        ("pgmc", "*núsō", "selected_input", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:70"),
         ("preoe", "*nḗdlō", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:59"),
     }:
         assert key in {

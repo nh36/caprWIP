@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import subprocess
 import unittest
 
 from test_sc043_component_split import SC, SOURCE, definition, rows
@@ -28,7 +29,13 @@ class PalatalClassSplitTests(unittest.TestCase):
                          "f0c69af7233a17dc0e0d15c0c45b97054f6c071947fa85d3f66192596943a953")
         active = json.loads((directory / "oe_post_sc034_controls.json").read_text())
         self.assertEqual(active["baseline_fst_sha256"],
-                         hashlib.sha256(SOURCE.read_bytes()).hexdigest())
+                         hashlib.sha256(subprocess.check_output(
+                             ["git", "show", "812cc437:Germanic/fsts/germanic.txt"],
+                             cwd=SOURCE.parents[2],
+                         )).hexdigest())
+        nasal = json.loads((SC / "audits/sc017-nasal-vowel-adoption-receipt.json").read_text())
+        self.assertEqual(nasal["fst_sha256"], hashlib.sha256(SOURCE.read_bytes()).hexdigest())
+        self.assertEqual(nasal["changed_derivation_ids"], [])
         self.assertEqual(historical["baseline_fst_sha256"],
                          "c51b8e4077194f4cc6f65e54a0c8a899366b5570152c6415cba117907d1a225c")
         recipe = current["recipes"][1]

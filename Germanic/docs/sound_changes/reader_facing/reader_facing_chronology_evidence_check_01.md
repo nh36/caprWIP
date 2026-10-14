@@ -5,7 +5,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 ## Summary
 
 - Sections checked: 100.
-- Sections with warnings: 67.
+- Sections with warnings: 66.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 016-west-saxon-palatal-glide.md | SC016. West Saxon palatal-glide spelling before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 017-nwgmc-u-lowering.md | SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 018-stressed-monosyllable-o-raising.md | SC018. Raising of final stressed monosyllabic \emph{*ō} (`PNWGmcStressedMonosyllableORaising`) {#rule-PNWGmcStressedMonosyllableORaising} | no | no | no | yes | no | yes | no | missing move-condition wording |
-| 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`PNWGmcFinalLongORaising`) {#rule-PNWGmcFinalLongORaising} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`PNWGmcFinalLongORaising`) {#rule-PNWGmcFinalLongORaising} | yes | no | yes | yes | yes | yes | no | — |
 | 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 021-unstressed-o-raising.md | SC021. Retired PNWGmc unstressed \emph{*o}-raising (`RetiredPNWGmcUnstressedORaising`) {#rule-RetiredPNWGmcUnstressedORaising} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 022-mn-dissimilation.md | SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | yes | no | no | yes | no | yes | no | — |

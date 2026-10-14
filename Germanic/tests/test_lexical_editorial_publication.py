@@ -130,17 +130,20 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 161)
-        insertion = int(next(r["global_order"] for r in current if r["row_id"] == "2224"))
-        unchanged = [r for r in current if r["row_id"] != "2224"]
+        self.assertEqual(len(current), 163)
+        added = [r for r in current if r["row_id"] in {"2185", "2200", "2224"}]
+        self.assertEqual({r["row_id"] for r in added}, {"2185", "2200", "2224"})
+        unchanged = [r for r in current if r["row_id"] not in {"2185", "2200", "2224"}]
         for now, before in zip(unchanged, old, strict=True):
             if before["row_id"] == "2162":
                 self.assertEqual((before["proto"], before["protoform"]), ("*rústō", "*rústō"))
                 before = dict(before, proto="*rústaz", protoform="*rústaz")
-            shifted = int(before["global_order"]) >= insertion
-            self.assertEqual(int(now["global_order"]), int(before["global_order"]) + shifted)
+            preceding = [r for r in added
+                         if int(r["global_order"]) < int(now["global_order"])]
+            self.assertEqual(int(now["global_order"]), int(before["global_order"]) + len(preceding))
             self.assertEqual(int(now["class_order"]), int(before["class_order"])
-                             + (shifted and now["derivation_class"] == "late_analogy"))
+                             + sum(r["derivation_class"] == now["derivation_class"]
+                                   for r in preceding))
             self.assertEqual({k: v for k, v in now.items() if k not in {"global_order", "class_order"}},
                              {k: v for k, v in before.items() if k not in {"global_order", "class_order"}})
         self.assertEqual(sum(r["derivation_class"] == "late_analogy" for r in current), 29)

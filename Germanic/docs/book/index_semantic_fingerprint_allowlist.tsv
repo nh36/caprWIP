@@ -1,4 +1,16 @@
 action	language	form	form_role	source_scope	source_ref	note
+add	oe	sorg	target_form	lexical_heading	sorrow — OE sorg	New authored model for the existing selected row2200; no corpus or target change.
+add	oe	sċofl	target_form	lexical_heading	shovel — OE sċofl	New authored model for the existing selected row2185; no corpus or target change.
+add	ofris	wolle	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Source-backed comparative low root, Kroonen2013 pp.598-599; no Frisian runtime work.
+add	ohg	wolla	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Source-backed wool comparator replaces the older full-law comparator, Kroonen2013 pp.598-599.
+add	pgmc	*skúflō	source_protoform	lexical_protoform	shovel — OE sċofl	Existing selected input in the new authored shovel account, Orel2003 p.347.
+add	pgmc	*súrgō	source_protoform	lexical_protoform	sorrow — OE sorg	Existing selected input in the new authored sorrow account, Kroonen2013 p.493.
+add	pgmc	*wúllǭ	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Explicit nasal accusative comparison, Ringe2017 pp.242-243; no selected cell change.
+add	oe	woll	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Regular unattested output remains explicitly indexed for semantic exclusion, replacing the former broad-prose inference.
+remove	oe	full	evidence_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Replaced obsolete full-law comparison with the actual wool paradigm discussion; no claim that the attested control is false.
+remove	oe	woll	regular_output	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Regular predicted woll remains explicit in prose and paradigm table, not an attested index headword.
+remove	oe	wull	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Selected target is indexed under its existing target_form role, not a duplicate comparator.
+remove	ohg	foll	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Old full-law comparison replaced by the actual wool cognate wolla; evidence sentinel follows the revised source account.
 add	os	rost	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Accurate comparative source tagging, Orel2003 p.309; no Old Saxon corpus or runtime changes.
 add	ohg	rost	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Existing comparative evidence now explicitly attributed instead of broad-prose inference, Orel2003 p.309.
 remove	ohg	rost	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md	Superseded by the explicit OHG source tag on the same attested comparator; evidence preserved, not retracted.

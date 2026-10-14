@@ -1,24 +1,24 @@
 # Source extraction ledger — wool / wull
 
-This ledger records the evidence for the unexplained exception before the final
-entry was drafted.
+This current-owner ledger supersedes the earlier no-escape-cell conclusion;
+it does not rewrite the frozen investigation or historical experiments.
 
-| Source | Date / position | Form(s) given | Morphology / status | Old English form(s) | Claim used for the entry | Citation key available? | Local path | Confidence / review note |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| TSV row 2300 | live row | `*wúllō`; regular `woll`; target `wull` | unexplained_unmodelled | `wull` | The row explicitly treats `wull` as a documented exception to regular lowering. | no | `Germanic/data/germanic-aligned-final.tsv:1436` | high |
-| Compact trace | current trace | `PROTO *wúllō`; `EXPECTED wull`; `OUTPUTS woll` | regular trace vs target | `wull`, `woll` | Confirms that the FST produces regular `woll`, not the attested target. | no | `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md:9154-9161` | high |
-| Campbell | OE grammar | `full` as an exception; OHG `foll` as regular comparator | documented exception cluster | by analogy `wull` | Supports the exception class and the regularity of `o` in the corresponding environment. | yes — `Campbell1959` | cited in packet/memo/slice | high |
-| Bülbring | OE grammar | `wulle`, `full`, and related `u`-preserving exceptions | lexical exception list | `wulle` | Places wool among the traditional `u`-preserving exceptions. | yes — `Bulbring1902` | cited in packet/memo/slice | high |
-| Luick | OE grammar | rejection of a simple phonological conditioning for the exception cluster | unresolved explanatory status | `wull` family | Supports keeping the exception unresolved rather than inventing a rule. | yes — `Luick1914` | cited in packet/memo/slice | medium |
-| Ringe & Taylor | comparative grammar | explicit uncertainty about why `*u` failed to lower in this cluster | unresolved historical explanation | exception cluster including wool | Provides the clearest modern handbook statement that the cause remains unknown. | yes — `RingeTaylor2014` | cited in packet/memo/slice | high |
-| Local memo / slice synthesis | current project analysis | no high-vowel escape cell in the feminine ō-stem paradigm | negative paradigm result | `wull` | Distinguishes wool from other members of the exception cluster that permit paradigm-cell retargeting. | no | `Germanic/docs/lexeme_reports/research_memos/2300-wool-wull.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2300-wool-wull.md` | high |
+| Source and printed locator | Actual claim / scope | Verification and adoption limit |
+| --- | --- | --- |
+| Ringe 2017, pp. 171–173, 241–244, especially 242–243 | Oral nominative `*wullō` versus nasal accusative `*wullǭ`; inherited quantity and morphology | Original PDF checked; neither cell may be replaced by a trimoric genitive |
+| Ringe and Taylor 2014, pp. 15–16, 27–34, especially 32 | Oral raising; lowering; possible nominative-u generalization for wool and love, with genuine exceptions left possible | Original-page investigation verified; plausible but unproved, not a quoted attested `*woll-` oblique |
+| Ringe and Taylor 2014, pp. 58–60, 284–289, 298–300, 377–379 | Ending quantities, apocope, shortening and inflectional generalization | Retain distinct cells and earlier prosodic versus later ordinary apocope |
+| Fulk 2018, pp. 55–57, especially 56 | `*skulō → scolu` argues lowering before final raising | Original PDF checked; assumes an unremodeled nominative root |
+| Fulk 2018, pp. 82–86, 154–156 | Runic raising witness; oral/nasal/trimoric endings; continental accusative-to-nominative extension | Original PDF checked; trimoric genitive differs from RT's bimoric analysis |
+| Stiles 2012, pp. 45, 47–48, 54–60 | Explicit opposite order; conditioned Runic forms and analogy; realization versus phonemicization | Held original checked; predates RT, so not a response to their book |
+| Luick 1921, pp. 104–106, §§77–79, especially §78 | Alternating paradigms, wool/love, inferred shovel doublet; rejects a labial protection rule | Held original checked; “§§105–106” confused section numbers with printed pages |
+| Campbell 1959, p. 43, §115 | Lowering and high-root exceptions | Text checked; original-page image certification remains unavailable in this investigation |
+| Bülbring 1902, pp. 45–46, §116 | High-root wool among exceptions | Text checked; same documented original-image limitation |
+| Orel 2003, p. 474 | Wool formation and comparative evidence | Original page checked during investigation; not an English case attestation |
+| Kroonen 2013, pp. 598–599 | Wool's formation and low-root Old Frisian / Old High German comparanda | Original pages checked; does not date an English `*woll-` oblique |
 
-## Citation-locator conditional-source pass
-
-- Added page-specific locators for `Luick1914, 148`.
-- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
-- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
-
-## Prose-regression audit 02
-
-- Prose-regression audit 02: corrected structural/project-facing wording or table formatting.
+Selected metadata remains `*wúllō / *wúllō / wull /
+unexplained_unmodelled`. Corrected current phonology predicts nominative
+`woll` and accusative `wolle`. Earlier oral raising predicts `wull / wolle`;
+separate nominative-root generalization could then account for the
+attested high-root paradigm (Ringe and Taylor 2014, p. 32).

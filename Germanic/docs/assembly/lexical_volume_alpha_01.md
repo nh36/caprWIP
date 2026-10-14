@@ -29,7 +29,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:
 
-- Regular derivations: 82
+- Regular derivations: 84
 - Attested variants: 4
 - Early analogy: 36
 - Late analogy: 29
@@ -3886,6 +3886,73 @@ From [skíllingaz]{.recon} ‘shilling’, loss of final _-az_ yields [skílling
 
 Kroonen's _\*skellinga-_ ~ _\*skillinga-_ and his internal analysis _\*skeld-linga-_ belong to the etymological background of the cognate set. The derivational input [skíllingaz]{.recon} ‘shilling’ is the specific form used for the derivation represented here [@Kroonen2013].
 
+### shovel — OE _sċofl_
+
+Derivation: _\*skúflō_ > _sċofl_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*skúflō_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*skóflō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*skóflu} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Sk Palatalization} & \emph{*ʃóflu} \\
+\mbox{OE High Vowel Apocope} & \emph{*ʃófl} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _sċofl_
+
+#### Reconstruction and development
+
+The selected short-root-vowel [skúflō]{.recon} 'shovel' follows the
+feminine formation discussed by Orel [@Orel2003, p. 347].
+With lowering before final oral raising, its root becomes \emph{*o}
+before the ending becomes \emph{*u}; subsequent apocope and consonant
+development give *sċofl* 'shovel'. No later root-vowel levelling is
+needed for the form compared here.
+
+This is a conditional witness, not independent proof of the order.
+Earlier raising instead predicts a high-root nominative beside a
+lowered oblique. Luick's inferred \emph{*scufel} beside *scofel*
+'shovel' makes alternation credible but does not directly establish
+o-generalization in the early English paradigm [@Luick1914,
+pp. 105--106, §78]. The assessment of that additional analogy,
+alongside wool and the other ō-stems, belongs to
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising).
+
 ### show — OE _sċēawian_
 
 Derivation: _\*skáwōjaną_ > _sċēawian_ (regular).
@@ -4089,6 +4156,72 @@ From [smérwijaną]{.recon} ‘smear’, breaking before _r + consonant_ yields 
 #### Dialect note
 
 The entry therefore represents the West Saxon member of a broader OE family: [_smierwan_]{.iv lang=oe sort=smierwan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33:1"} 'smear' in West Saxon, [_smirwan_]{.iv lang=oe sort=smirwan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33:2"} 'smear' in Anglian or Mercian, and related later class-II forms such as _smirian_ or _smyrian_ in the same lexical field [@RingeTaylor2014; @ClarkHall1960].
+
+### sorrow — OE _sorg_
+
+Derivation: _\*súrgō_ > _sorg_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*súrgō_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.611\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.359\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc U Lowering} & \emph{*sórgō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*sórgu} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*sórg} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _sorg_
+
+#### Reconstruction and development
+
+The selected [súrgō]{.recon} 'sorrow' belongs to the feminine formation
+discussed by Kroonen [@Kroonen2013, p. 493]. Lowering before final
+oral raising gives a low root before the ending becomes \emph{*u};
+later apocope yields *sorg* 'sorrow'. This accounts for the selected
+form without an additional root-vowel generalization.
+
+Earlier raising would instead protect the nominative root while leaving
+the nasal accusative's non-high conditioner available for lowering.
+Generalization of that oblique root could recover the low-root paradigm,
+but has not been independently established for this particular early
+English noun. Generic evidence for such levelling is not specific
+attestation of this operation [@RingeTaylor2014, pp. 32--34;
+@Stiles2012, pp. 47--48]. The comparative economy argument and its
+limits are developed in
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising).
 
 ### span — OE _spannan_
 
@@ -8273,8 +8406,8 @@ Old English form: _nosu_
 
 Kroonen reconstructs a Germanic ablaut pair _\*nasō-_ ~ _\*nusō-_ and adds that the
 root _\*nus-_ is likely to have arisen as a secondary zero grade after a
-remodeling of the older paradigm [@Kroonen2013, 423]. Campbell is more specific for
-Old English, citing _nosu_ 'nose' < [nusō]{.recon} 'nose' [@Campbell1959, 44].
+remodeling of the older paradigm [@Kroonen2013, p. 383]. Campbell is more specific for
+Old English, citing _nosu_ 'nose' < [nusō]{.recon} 'nose' [@Campbell1959, p. 43].
 
 The citation reconstruction [nasō]{.recon} 'nose' is therefore best treated as the full-grade
 comparative headword, while the derivational input [núsō]{.recon} 'nose' represents the remodeled
@@ -8287,7 +8420,7 @@ lines should not be collapsed without comment [@Orel2003, 320].
 _Nosu_ 'nose' is an attested Old English noun. Ringe and Taylor list it among the few
 surviving early Old English feminine u-stems [@RingeTaylor2014, 385]. Clark Hall
 likewise gives _nosu f._ 'nose', with genitive-dative singular _nosa_, and cross-refers
-[_nasu_]{.iv lang=oe sort=nasu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:37:1"} 'nose' to _nosu_ 'nose' [@ClarkHall1960, 810].
+[_nasu_]{.iv lang=oe sort=nasu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:37:1"} 'nose' to _nosu_ 'nose' [@ClarkHall1960, pp. 211, 217].
 
 The selected OE target is therefore attested _nosu_ 'nose', not a reconstructed
 placeholder. The lexicographical record also gives [_nasu_]{.iv lang=oe sort=nasu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:40:1"} 'nose' for the full-grade
@@ -8301,6 +8434,16 @@ zero-grade input, not in any late Old English repair.
 
 With that input chosen, the OE development is straightforward. The full-grade
 line behind [nasō]{.recon} 'nose' instead points toward [_nasu_]{.iv lang=oe sort=nasu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:50:1"} 'nose', not to the form treated here.
+
+The low root of *nosu* 'nose' supports the economy of lowering before
+final oral raising, but only conditional on that selected remodeled
+stem. Reversing the changes yields a high-root nominative, whose
+replacement by a lowered oblique root would be an additional,
+individually unproved levelling. The word is therefore not a pristine
+inherited nominative proving the chronology. The comparative argument
+and its limits are developed in
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising)
+[@Fulk2018, p. 56; @Kroonen2013, p. 383].
 
 #### Stem comparison
 
@@ -13455,47 +13598,61 @@ Regular outcome: [woll]{.recon form_role=regular_output}
 
 Old English form: _wull_
 
-#### Reconstruction and comparative evidence
+#### The inherited paradigm
 
-The inherited form is a feminine ō-stem [wúllō]{.recon} ‘wool’. In the ordinary phonological
-history of West Germanic, stressed _u_ lowers before a following non-high vowel,
-so the regular Old English outcome is an _o_-form. Campbell's discussion of the
-parallel adjective _full_, with OHG [foll]{.iv lang=ohg sort=foll role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:24:1"} 'full' as the regular comparator, shows that
-the handbooks treat this as a genuine exception cluster rather than as a place
-where the rule itself is doubtful [@Campbell1959, §115].
+The selected [wúllō]{.recon} 'wool' represents the feminine nominative
+singular. It must be distinguished from accusative \emph{*wúllǭ},
+whose final vowel was nasalized. Ringe explicitly reconstructs both
+cells; Orel and Kroonen discuss the inherited formation and its
+comparative history [@Ringe2017, pp. 171--173, 241--244;
+@Orel2003, p. 474; @Kroonen2013, pp. 598--599].
+Attested [*wull*]{.iv lang=oe role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:26" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:26:1"} 'wool' and
+[*wulle*]{.iv lang=oe role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:27:1"} 'wool' preserve a high root vowel.
+The latter is not, merely by its shape, evidence that the whole noun
+was originally a weak n-stem [@Campbell1959, p. 43, §115;
+@Bulbring1902, pp. 45--46, §116].
 
-Bülbring likewise lists [_wulle_]{.iv lang=oe sort=wulle role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:28:1"} 'wool' among the traditional _u_-preserving
-exceptions [@Bulbring1902, §116]. The comparative evidence therefore establishes
-two things at once: the regular result should be _woll_, and Old English still
-has a lexical exception of the [_wull_]{.iv lang=oe sort=wull role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:31" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:31:1"} 'wool' / [_wulle_]{.iv lang=oe sort=wulle role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:31" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:31:2"} 'wool' type.
+#### Regular development and the alternative explanation
 
-#### Old English evidence
+CAPR provisionally follows Fulk's lowering-before-final-raising
+chronology [@Fulk2018, p. 56]. Both oral \emph{*ō} and nasal
+\emph{*ǭ} condition root lowering before their distinct subsequent
+developments:
 
-The Old English target is given here as [_wull_]{.iv lang=oe sort=wull role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:35" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:35:1"} 'wool', a normalized lexeme form. Handbook discussion often cites [_wulle_]{.iv lang=oe sort=wulle role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:35" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:35:2"} 'wool', the feminine weak form of the noun [@Bulbring1902, §116]. Both point to the same lexical item and to the same exceptional preservation of root _u_.
-
-The OE evidence therefore does not remove the problem. It confirms that the
-language has a _u_-form where the regular phonology would have produced _o_.
-
-#### Development to Old English
-
-From [wúllō]{.recon} ‘wool’, the regular sequence is lowering of stressed _u_ before a
-non-high vowel, followed by the ordinary later reductions of the ending. The
-regular outcome is therefore _woll_.
-
-That regular derivation is not the attested Old English form. Luick rejects a
-simple phonological rule that would protect this word alone, and Ringe and
-Taylor state the larger problem plainly: we do not really know why _\*u_ failed
-to lower in forms of this sort [@Luick1914, 148; @RingeTaylor2014, §2.3.1].
-
-#### What remains unexplained
-
-The comparison below sets the regular result beside the attested lexical exception.
-
-| Form | Status | Relevance to this entry |
+| Inherited cell | Preferred chronology | Raising before lowering |
 | :--- | :--- | :--- |
-| _\*wúllō_ > _woll_ | regular output | shows what the deterministic sound laws produce |
-| _wull_ / _wulle_ | attested OE exception | attested Old English form to be recorded |
-| high-vowel escape from another paradigm cell | unsupported for this noun | rejected because the feminine ō-stem paradigm supplies no suitable escape cell |
+| nominative \emph{*wúllō} | \emph{*wóllō} → \emph{*wóllu} → regular \emph{*woll} | \emph{*wúllu} → regular \emph{*wull} |
+| accusative \emph{*wúllǭ} | \emph{*wóllǭ} → regular \emph{*wolle} | \emph{*wóllǭ} → regular \emph{*wolle} |
+
+These are sound-law predictions, not additional attestations. Earlier
+raising supplies a genuine nominative \emph{*wullu} with high root
+vowel and an independently conditioned low-root oblique. Generalization
+of the nominative vowel could then produce the attested high-root
+paradigm: this is Ringe and Taylor's plausible but unproved explanation,
+not an impossible escape cell [@RingeTaylor2014, p. 32].
+Old Frisian [*wolle*]{.iv lang=ofris role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:50:1"} 'wool' and
+Old High German [*wolla*]{.iv lang=ohg role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:51:1"} 'wool' support
+the comparative reality of a lowered root, but do not attest that
+particular early English accusative [@Kroonen2013, pp. 598--599].
+
+The main comparison of the two chronologies, the evidence from other
+ō-stems and the costs of the proposed analogies is in
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising).
+The preferred ordering does not regularly derive the attested high
+root here. The derivational input, target and classification therefore
+remain unchanged: regular [woll]{.iv .recon lang=oe role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:60:1"}
+'wool', not attested *wull*, is what the
+current sound laws produce. No lexical exception or analogical
+levelling has been inserted into those laws.
+
+Luick discusses the alternations in §§77--79, especially §78
+(printed pp. 105--106), not §§105--106. He rejects a proposed
+labial protection rule using regular low-root counterexamples
+[@Luick1914, pp. 104--106, §§77--79]. The separate trimoric
+genitive \emph{*-ôz} must not be substituted for either cell above:
+its analysis differs from the bimoric genitive and its complete
+computational pathway remains unmodeled [@Fulk2018, p. 155;
+@RingeTaylor2014, pp. 59, 299].
 
 \clearpage
 

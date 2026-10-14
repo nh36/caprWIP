@@ -4,6 +4,20 @@ This ledger is an evidence-gathering aid for the lexical entry. It records the
 forms, claims, and local discovery paths extracted from the current source stack
 before the book-style prose was drafted.
 
+## Current adoption qualification
+
+The dated locator-repair notes below are retained as history, not renewed
+verification. The checked locators are Campbell1959 p. 43, §115,
+Kroonen2013 p. 383, Orel2003 p. 320, RingeTaylor2014 p. 385 and
+ClarkHall1960 pp. 211, 217 (the printed running heads, not the extract's
+sheet labels). Campbell remains text-checked, not newly image-certified.
+Kroonen's secondary zero-grade account means nose already involves
+morphological remodelling. Its low-root nominative conditionally supports
+the economy of lowering before final raising; it does not independently
+exclude later oblique-root generalization under the reverse chronology.
+See `Germanic/docs/sound_changes/audits/sc017-sc019-adoption.md` and the
+main SC019 reader. Selected fields and `early_analogy` are unchanged.
+
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Campbell | 1959, sound history | `nosu < *nusō` | zero-grade/remodeled preform with final long `ō` later raised in OE | `nosu` | Campbell explicitly supports `*nusō` as the pre-OE form behind `nosu`, not full-grade `*nasō`. | yes — `Campbell1959` | `Germanic/docs/lexeme_reports/dev_notes_slices/2143-nose-nosu.md:25-34,42-52`; `docs/references/campbell_old_english_grammar.txt:3796-3797` | high |

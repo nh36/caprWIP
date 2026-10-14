@@ -28,7 +28,7 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(len(self.rows), 393)
         self.assertEqual(len(self.editorial), 393)
         for key, value in {"legacy": 380, "selected": 387, "audit": 393,
-                           "assembled": 161, "production_pilots": 11,
+                           "assembled": 163, "production_pilots": 11,
                            "format_tests": 1, "reviewed_rows": 12, "scoped_cases": 15}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
@@ -56,7 +56,8 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(self.stats["required_not_assembled"],
                          ["2055", "2120", "2327", "2328", "2329"])
         self.assertEqual(self.stats["assembled_not_required"],
-                         ["1933", "1955", "1989", "2018", "2029", "2044", "2074", "2113"])
+                         ["1933", "1955", "1989", "2018", "2029", "2044", "2074",
+                          "2113", "2185", "2200"])
         self.assertIn("/2055-", self.rows["2055"]["stable_id_material_paths"])
         self.assertNotIn("/2055-", self.rows["2054"]["stable_id_material_paths"])
 

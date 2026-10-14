@@ -16,7 +16,7 @@ in the class I weak verbs of the *cnyssan* 'strike' type
 Proto-West Germanic paradigm of 'yoke' with the lowering applied
 [@RingeTaylor2014, p. 129].
 
-The clearest corpus witnesses are [ġeoc]{.iv lang=oe sort=geoc role=evidence_form} 'yoke', *nosu* 'nose',
+Regular corpus witnesses include [ġeoc]{.iv lang=oe sort=geoc role=evidence_form} 'yoke', *nosu* 'nose',
 *sċofl* 'shovel', and *sorg* 'sorrow'. Where the following syllable kept a
 high vowel the lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
 survived [@SieversBrunner1965, pp. 64--65, §92.1].
@@ -34,7 +34,12 @@ _-st-_ exemption is unwarranted. The retained *u* remains unexplained,
 alongside the other retained-*u* cases such as *bucc* 'buck', *fugol*
 'bird', *wulf* 'wolf' and *wulle* 'wool'; their consonantal environments
 do not establish a general replacement law [@Campbell1959, p. 43, §115;
-@RingeTaylor2014, pp. 27--34]. [SC017 PNWGmcULowering](#rule-PNWGmcULowering) is retained unchanged; the
+@RingeTaylor2014, pp. 27--34]. The lowering law is retained; its non-high
+conditioning class includes nasalized long \emph{*ǭ}, not just oral
+\emph{*ō}. The independently reconstructed accusative \emph{*wullǭ}
+therefore lowers just as the nominative \emph{*wullō} does under the
+preferred chronology [@Ringe2017, pp. 242--243]. This does not merge either
+ending with trimoric \emph{*ô}. The
 [rust lexical discussion](#rust-oe-rust) distinguishes the selected
 masculine citation, Orel's alternative and diagnostic paradigm constructions.
 
@@ -42,6 +47,7 @@ masculine citation, Orel's alternative and diagnostic paradigm constructions.
 
 ```foma
 define PNWGmcULowering Ctx([
+    [
     {*u} -> {*o}
         || .#. EnglishStarConsonant* _
            [EnglishStarConsonantNoJ - EnglishStarNasal]
@@ -50,22 +56,33 @@ define PNWGmcULowering Ctx([
         || .#. EnglishStarConsonant* _
            [EnglishStarConsonantNoJ - EnglishStarNasal]
            EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+    ]
 ]);
 ```
 
-Lowering of \emph{u} to \emph{o} is fixed on both sides by *ġeoc* 'yoke',
-*nosu*, *sċofl* 'shovel', and *sorg*.
+The implementation lowers the first nucleus through a consonantal interval
+without \emph{*j}; the immediately following consonant must not be nasal.
+This literal guard is not a claim that every nasal anywhere in the interval
+blocks the historical process. Fulk distinguishes tautosyllabic and
+heterosyllabic nasal environments [@Fulk2018, p. 56].
 
 The lowering feeds the much later West Saxon palatal-glide spelling
 ([SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide)): the \emph{o} that the
 scribes wrote in *ġeoc* 'yoke' is the output of this change, so PGmc
 [júką]{.recon} 'yoke' passes through \emph{*joką} on its way to the
 attested spelling [@Fulk2018, p. 56, §4.3; @RingeTaylor2014, p. 129].
-After [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc
+If lowering is placed after
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), selected
 [núsō]{.recon} 'nose' yields [*nusu*]{.pred} rather than expected *nosu*,
 PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred} rather than expected
 *sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred} rather
-than expected *sorg*. These witnesses place
-[SC017 PNWGmcULowering](#rule-PNWGmcULowering) before final long-\emph{o}
-raising, and the *ġeoc* spelling shows its output surviving into the
-written record.
+than expected *sorg*. These are conditional computational consequences,
+not independent proof that those paradigms underwent no levelling.
+CAPR provisionally prefers lowering before final raising because it
+regularly accounts for these low-root forms without additional,
+individually unproved analogical generalizations. Nose already involves
+earlier stem remodelling, and the retained high vowels of wool and love
+remain a genuine cost of that preference. The main comparison of Fulk,
+Ringe and Taylor, and Stiles, including the Runic evidence and the
+plausible but unproved nominative-generalization account of wool, is in
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising).

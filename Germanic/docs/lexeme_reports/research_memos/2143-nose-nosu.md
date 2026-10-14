@@ -1,5 +1,24 @@
 # Research memo — 2143 nose / nosu
 
+## Supplement: SC017–SC019 adoption
+
+The following memo is the historical account of the selected stem repair.
+Its “right order” language describes a computational dependency under
+unchanged inputs, not proof excluding analogical remodelling. CAPR now
+provisionally retains lowering before final oral raising on comparative
+explanatory economy, with the main argument in the SC019 reader and
+`Germanic/docs/sound_changes/audits/sc017-sc019-adoption.md`.
+Nose already has an earlier remodeled zero-grade input; further
+oblique-root generalization under raising-first is possible but
+individually unproved [@Kroonen2013, p. 383; @Fulk2018, p. 56;
+@RingeTaylor2014, pp. 32--34].
+
+The corrected current locators are Campbell1959 p. 43, §115 (text-checked,
+not newly image-certified), Kroonen2013 p. 383, Orel2003 p. 320,
+RingeTaylor2014 p. 385 and ClarkHall1960 pp. 211, 217. Older unpaginated
+citations below record the original research trail, not additional
+verification. No selected field, class, or TSV note is changed here.
+
 ## Starting point
 
 - **ID:** 2143

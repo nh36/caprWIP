@@ -26,9 +26,9 @@ SC012	EAFLThVoicing	historical_sound_change	Northern West Germanic	Northern West
 SC013	PWGmcDentalHardening	historical_sound_change	Proto-West Germanic developments	PWGmc Dental Hardening	pwgmc	pan_wgmc	A	unadjudicated		17	15
 SC111	PWGmcEndinglessAw	support_stage	Proto-West Germanic developments	Endingless-aw regular-branch fragment				unadjudicated		18	16
 SC015	PNWGmcILowering	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic I Lowering	pnwgmc	pan_pnwgmc	A	unadjudicated		19	17
-SC017	PNWGmcULowering	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic U Lowering	pnwgmc	pan_pnwgmc	A	adjudicated	RETAIN	20	18
+SC017	PNWGmcULowering	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic U Lowering	pnwgmc	pan_pnwgmc	A	adjudicated	REFORMULATE/RETAIN	20	18
 SC018	PNWGmcStressedMonosyllableORaising	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic Stressed Monosyllable O Raising	pnwgmc	pan_pnwgmc	B	unadjudicated		21	19
-SC019	PNWGmcFinalLongORaising	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic Final Long O Raising	pnwgmc	pan_pnwgmc	A	unadjudicated		22	20
+SC019	PNWGmcFinalLongORaising	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic Final Long O Raising	pnwgmc	pan_pnwgmc	A	adjudicated	REFORMULATE/RETAIN	22	20
 SC020	EAFFinalZDeletion	historical_sound_change	West Germanic	West Germanic final *z*-deletion	pwgmc	pan_wgmc	B	adjudicated	SPLIT	23	21
 SC098	PWGmcUnstressedWordFinalIApocope	historical_sound_change	West Germanic	Early apocope in unstressed words	pwgmc	pan_wgmc	B	adjudicated	REFORMULATE	24	22
 SC097	MonosyllabicFinalZLoss	historical_sound_change	Early Anglo-Frisian	Northern West Germanic monosyllabic final *z*-loss	eaf	north_wgmc	B	unadjudicated		25	23
