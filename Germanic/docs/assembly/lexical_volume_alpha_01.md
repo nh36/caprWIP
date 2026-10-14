@@ -29,7 +29,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:
 
-- Regular derivations: 84
+- Regular derivations: 85
 - Attested variants: 4
 - Early analogy: 36
 - Late analogy: 29
@@ -5387,6 +5387,112 @@ noun-class discussion also preserves unbroken _wépn_ 'weapon' beside broken
 _wépen_ 'weapon'-type forms [@Campbell1959, 150; @Campbell1959, 226–227]. _wǣpnes_ 'weapon'
 remains the regular unbroken oblique comparator
 [@BrightCassidyRingler1971, 29; @ClarkHall1960, 355].
+
+### wether — OE _weþer_
+
+Derivation: _\*wéθruz_ > _weþer_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*wéθruz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*wéθru} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE High Vowel Apocope} & \emph{*wéθr} \\
+\mbox{OE Epenthetic Vowel} & \emph{*wéθer} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _weþer_
+
+#### Comparative reconstruction and development
+
+Old English *weþer* 'wether, ram' belongs with Gothic
+[wiþrus]{.lex lang=goth} 'lamb, young ram', Old Norse
+[veðr]{.lex lang=on} 'ram', Old Saxon
+[withar]{.lex lang=os} 'wether' and Old High German
+[widar]{.lex lang=ohg} 'ram'. These are masculine animal names,
+not the neuter weather noun, despite the similar spellings.
+Kroonen reconstructs \emph{*weþru-}; Kluge--Seebold likewise gives a
+masculine Germanic \emph{*weþru-}, while allowing a similar stem
+formation [@Kroonen2013, p. 584; @KlugeSeebold2011, p. 985].
+
+The inherited root has short \emph{*e}. Gothic *i* does not require
+Proto-Germanic \emph{*i}: inherited short \emph{*e} and \emph{*i}
+merged as *i* in Gothic outside its breaking environments
+[@Fulk2018, p. 59]. The continental *i*-forms require equal care.
+Raising before a following *u* is independently documented in Old
+Saxon and Old High German, but it is not universal there; that
+general development is not a complete, independently dated history
+of every cell of this noun [@Fulk2018, p. 69].
+The comparison consequently supports inherited \emph{*e} without
+requiring every daughter-language vowel to preserve it unchanged.
+
+The principal formation question concerns the inflection, not the root
+vowel or masculine gender. Orel records both \emph{*weþruz} and
+\emph{*weþraz}, respectively masculine *u*- and *a*-stem alternatives,
+and notes traces of *u*-inflection in Norse
+[@Orel2003, pp. 459--460]. Gothic nominative *wiþrus* supplies
+particularly useful positive evidence for the older *u*-stem.
+CAPR therefore adopts the masculine nominative singular
+\emph{*weþruz}, represented as \emph{*wéθruz}, while retaining
+\emph{*weþraz} as a legitimate alternative. The latter may represent
+early inflectional remodelling; the dictionaries do not establish
+its precise date.
+
+The Old English masculine paradigm, including genitive *weþeres*,
+does not decide the original Germanic stem class. Bosworth--Toller
+records *weþer, es; m.* and the senses 'a wether, a ram'
+[@BosworthToller1898, p. 1212]. Masculine *u*-stems underwent
+reclassification towards other declensions in West Germanic, and
+heavy-stem nominatives lost their final short \emph{*u}
+[@Fulk2018, p. 163]. In the selected nominative, loss of final
+\emph{*-z} and \emph{*-u} leaves the consonantal ending resolved
+as unstressed *-er* in *weþer*, consistent with the vocalization
+of final postconsonantal sonorants [@Fulk2018, pp. 91--92].
+The root vowel is already \emph{*e}; no early lowering of
+\emph{*i} is needed for this derivation.
+
+The further etymology is less secure. Orel connects the noun with
+the Indo-European word for 'year', comparing Hittite, Greek and
+Albanian year-words and names for young cattle
+[@Orel2003, pp. 459--460]. Kroonen makes that connection conditional:
+if correct, the original designation was 'yearling, one-year-old
+animal', with Sanskrit [vatsá-]{.lex lang=skt} 'calf' among the comparanda
+[@Kroonen2013, p. 584]. A young-animal designation could develop
+into 'ram' or 'wether', but this attractive semantic account is
+not as secure as the Germanic masculine *u*-stem reconstruction.
 
 ### will — OE _willa_
 

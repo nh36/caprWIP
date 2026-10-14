@@ -54,7 +54,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertTrue(straw.has_publication_report)
         self.assertFalse(straw.has_production_manifest_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
-                         PRINCIPAL | {"1934", "1941", "2162", "2224"})
+                         PRINCIPAL | {"1934", "1941", "2162", "2224", "2283"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -130,10 +130,10 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 163)
-        added = [r for r in current if r["row_id"] in {"2185", "2200", "2224"}]
-        self.assertEqual({r["row_id"] for r in added}, {"2185", "2200", "2224"})
-        unchanged = [r for r in current if r["row_id"] not in {"2185", "2200", "2224"}]
+        self.assertEqual(len(current), 164)
+        added = [r for r in current if r["row_id"] in {"2185", "2200", "2224", "2283"}]
+        self.assertEqual({r["row_id"] for r in added}, {"2185", "2200", "2224", "2283"})
+        unchanged = [r for r in current if r["row_id"] not in {"2185", "2200", "2224", "2283"}]
         for now, before in zip(unchanged, old, strict=True):
             if before["row_id"] == "2162":
                 self.assertEqual((before["proto"], before["protoform"]), ("*rústō", "*rústō"))
@@ -228,7 +228,7 @@ class EditorialPublicationTests(unittest.TestCase):
             if not row.editorial_report_path:
                 continue
             path = REPORTS / row.editorial_report_path
-            old = "" if row.row_id in {"1941", "2224"} else committed(path)
+            old = "" if row.row_id in {"1941", "2224", "2283"} else committed(path)
             pattern = r"\[[^\]\n]*@[^\]\n]*(?:\n[^\]]*)?\]"
             added = Counter(re.findall(pattern, path.read_text())) - Counter(re.findall(pattern, old))
             for block in added:

@@ -90,7 +90,7 @@ class StrawOutputAdoptionTests(unittest.TestCase):
     def test_legacy_migration_rejects_noop_and_false_match_flags(self):
         with (BASE / "approved_input_migrations.tsv").open() as handle:
             migrations = [row for row in csv.DictReader(handle, delimiter="\t")
-                          if row["row_id"] != "2162"]
+                          if row["row_id"] not in {"2162", "2283"}]
         with (BASE / "cascade_baseline_outputs_legacy380.tsv").open() as handle:
             legacy = list(csv.DictReader(handle, delimiter="\t"))
         for kind in ("no_op", "wrong_old", "wrong_new", "false_match"):
@@ -123,7 +123,7 @@ class StrawOutputAdoptionTests(unittest.TestCase):
             with (BASE / "approved_input_migrations.tsv").open() as handle:
                 reader = csv.DictReader(handle, delimiter="\t")
                 fields = reader.fieldnames
-                migrations = [row for row in reader if row["row_id"] != "2162"]
+                migrations = [row for row in reader if row["row_id"] not in {"2162", "2283"}]
             with (target / "approved_input_migrations.tsv").open("w") as handle:
                 writer = csv.DictWriter(handle, fields, delimiter="\t")
                 writer.writeheader()

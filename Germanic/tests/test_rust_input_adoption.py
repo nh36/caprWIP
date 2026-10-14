@@ -35,7 +35,8 @@ class RustInputAdoptionTests(unittest.TestCase):
             BASE / "cascade_baseline_outputs_pre_sc017_rust_input.tsv",
             BASE / "cascade_baseline_summary_pre_sc017_rust_input.json")
         self.current = baseline.read_baseline(
-            BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json")
+            BASE / "cascade_baseline_outputs_pre_sc015_wether_input.tsv",
+            BASE / "cascade_baseline_summary_pre_sc015_wether_input.json")
         self.approval = json.loads((BASE / "approved_rust_input_migration.json").read_text())
 
     def test_exact_input_only_transition_and_unchanged_387_outputs(self):
@@ -57,7 +58,8 @@ class RustInputAdoptionTests(unittest.TestCase):
 
     def test_original380_rust_identity_requires_exact_migration(self):
         legacy = read_tsv(BASE / "cascade_baseline_outputs_legacy380.tsv")
-        migrations = read_tsv(BASE / "approved_input_migrations.tsv")
+        migrations = [row for row in read_tsv(BASE / "approved_input_migrations.tsv")
+                      if row["row_id"] != "2283"]
         original = next(row for row in legacy
                         if (row["concept"], row["counterpart"]) == ("rust", "rust"))
         self.assertEqual(original["proto"], "*rústō")
@@ -96,6 +98,12 @@ class RustInputAdoptionTests(unittest.TestCase):
                 ("approved_input_migrations.tsv", "approved_input_migrations.tsv"),
             ):
                 (target / destination).write_bytes((BASE / source).read_bytes())
+            migrations_path = target / "approved_input_migrations.tsv"
+            migrations = [row for row in read_tsv(migrations_path) if row["row_id"] != "2283"]
+            with migrations_path.open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=list(migrations[0]), delimiter="\t")
+                writer.writeheader()
+                writer.writerows(migrations)
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             for name in ("outputs", "summary"):
                 archived = BASE / f"cascade_baseline_{name}_pre_sc017_rust_input.{'tsv' if name == 'outputs' else 'json'}"
@@ -143,7 +151,7 @@ class RustInputAdoptionTests(unittest.TestCase):
         self.assertIn("not CAPR's adopted explanation", lowering)
         self.assertNotIn("the pattern is gradient/probabilistic", lowering)
         census = read_tsv(BASE / "rule_coverage_census.tsv")
-        for identifier, count in (("SC017", "39"), ("SC019", "28"), ("SC020", "112")):
+        for identifier, count in (("SC017", "39"), ("SC019", "28"), ("SC020", "113")):
             row = next(row for row in census if row["sc_id"] == identifier)
             self.assertEqual(row["corpus_firing_count"], count)
         ledger = known.load_ledger(ROOT / "Germanic/data/oe_known_problems.tsv")

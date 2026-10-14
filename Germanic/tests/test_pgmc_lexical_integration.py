@@ -28,8 +28,8 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(len(self.rows), 393)
         self.assertEqual(len(self.editorial), 393)
         for key, value in {"legacy": 380, "selected": 387, "audit": 393,
-                           "assembled": 163, "production_pilots": 11,
-                           "format_tests": 1, "reviewed_rows": 12, "scoped_cases": 15}.items():
+                           "assembled": 164, "production_pilots": 11,
+                           "format_tests": 1, "reviewed_rows": 13, "scoped_cases": 16}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
         required = {row["row_id"] for row in self.crosswalk if row["old_policy_requires_report"]}
@@ -57,7 +57,7 @@ class IntegrationTests(unittest.TestCase):
                          ["2055", "2120", "2327", "2328", "2329"])
         self.assertEqual(self.stats["assembled_not_required"],
                          ["1933", "1955", "1989", "2018", "2029", "2044", "2074",
-                          "2113", "2185", "2200"])
+                          "2113", "2185", "2200", "2283"])
         self.assertIn("/2055-", self.rows["2055"]["stable_id_material_paths"])
         self.assertNotIn("/2055-", self.rows["2054"]["stable_id_material_paths"])
 
@@ -68,6 +68,7 @@ class IntegrationTests(unittest.TestCase):
             "2085": ("*knéwą", "*knéwai", "cneowe", "late_analogy", "cneowe"),
             "2162": ("*rústaz", "*rústaz", "rust", "unexplained_unmodelled", "rost"),
             "2224": ("*stráwą", "*stráwą", "strēaw", "late_analogy", "strēa"),
+            "2283": ("*wéθruz", "*wéθruz", "weþer", "regular", "weþer"),
             "2326": ("*ízwiz", "*ízwiz", "ēow", "regular", "ēow"),
             "2330": ("*θánxtē", "*θánxtē", "þōhte", "regular", "þōhte"),
             "2332": ("*xíwją", "*xíwją", "hīew", "regular", "hīew"),
@@ -102,7 +103,7 @@ class IntegrationTests(unittest.TestCase):
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
             "ordinary_evidence_review": 293, "unit_comparability_review": 8})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
-        self.assertEqual(len(unreviewed), 381)
+        self.assertEqual(len(unreviewed), 380)
         self.assertTrue(all(not r["reviewed_categories"] for r in unreviewed))
         self.assertEqual(self.editorial["2085"]["reviewed_categories"],
                          "non_substantive_difference;qualified_alternative")

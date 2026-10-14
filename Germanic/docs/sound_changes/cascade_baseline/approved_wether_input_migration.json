@@ -1,0 +1,30 @@
+{
+  "adjudication": "SC015",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc015-adjudication.md",
+  "transition_id": "wether_input",
+  "previous_summary": {
+    "outputs_sha256": "1ef9f5df8f90c7b1e37ce438b3b0ecdbb313deeecf42ec1eb0f1d070027ea3ec",
+    "lexical_outputs_sha256": "a83b4d17f67d12cc0cd900e2e9975252dee6825cda1eed33efd9b766cac1a32d",
+    "legacy_subset_sha256": "953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "2283",
+      "before": {
+        "proto": "*wíθrą",
+        "proto_norm": "wíθrą",
+        "fst_input": "wíθrą",
+        "counterpart": "weþer",
+        "outputs": "weþer"
+      },
+      "after": {
+        "proto": "*wéθruz",
+        "proto_norm": "wéθruz",
+        "fst_input": "wéθruz",
+        "counterpart": "weþer",
+        "outputs": "weþer"
+      }
+    }
+  ]
+}

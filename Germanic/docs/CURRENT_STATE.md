@@ -39,14 +39,19 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2`
+  `3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f`
 - selected-387 corpus fingerprint (`outputs_sha256`):
-  `1ef9f5df8f90c7b1e37ce438b3b0ecdbb313deeecf42ec1eb0f1d070027ea3ec`
+  `3caa0d07ba4f63c7ba512a22e48a7be86f975e573ae01d7cbea830eb08d4b1e0`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `a83b4d17f67d12cc0cd900e2e9975252dee6825cda1eed33efd9b766cac1a32d`
+  `32d551ca5bc6317a6e528f00259159915599c6e08d265af170e2be7341edb522`
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.
+The authorized wether lexical selection uses masculine `*wéθruz`, preserving
+all 387 finals and the eight established mismatches. Its exact named receipt
+is `approved_wether_input_migration.json`; the separate
+`*_pre_sc015_wether_input.*` archive preserves the preceding active baseline.
+This changes no sound law, SC015 verdict, stage/context or chronology.
 The SC056 adjudication explicitly migrates gift's input by stable row ID.
 The SC033 adjudication selects knee's regular dative: *knéwai → cneowe,
 preserving citation *knéwą. Its exact input/target/output transition is

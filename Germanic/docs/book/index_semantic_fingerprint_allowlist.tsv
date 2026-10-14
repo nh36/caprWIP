@@ -1,4 +1,8 @@
 action	language	form	form_role	source_scope	source_ref	note
+add	oe	weþer	target_form	lexical_heading	wether — OE weþer	Authorized historical lexical discussion for existing regular row2283; unchanged Old English target.
+add	pgmc	*wéθruz	selected_input	trace_proto_input	wether — OE weþer	Exact authorized lexical input migration, approved_wether_input_migration.json; all387 final outputs preserved.
+add	pgmc	*wéθruz	source_protoform	lexical_protoform	wether — OE weþer	Source-supported masculine nominative singular u-stem, Kroonen2013 p.584 and Orel2003 pp.459-460.
+remove	pgmc	*wíθrą	selected_input	trace_proto_input	wether — OE weþer	Superseded only by the authorized wether_input transition; the separate pre-wether and original380 archives remain immutable.
 add	oe	sorg	target_form	lexical_heading	sorrow — OE sorg	New authored model for the existing selected row2200; no corpus or target change.
 add	oe	sċofl	target_form	lexical_heading	shovel — OE sċofl	New authored model for the existing selected row2185; no corpus or target change.
 add	ofris	wolle	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md	Source-backed comparative low root, Kroonen2013 pp.598-599; no Frisian runtime work.

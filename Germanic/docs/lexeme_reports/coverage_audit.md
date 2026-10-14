@@ -2,12 +2,12 @@
 
 - Total OE rows with real counterpart: 387
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 160
-- Required rows with published SOURCE: 20
+- Rows requiring lexeme report: 161
+- Required rows with published SOURCE: 21
 - Required rows with no published SOURCE: 140
-- Rows selected independently for philological discussion: 10
+- Rows selected independently for philological discussion: 11
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 145
+- Required rows with source material available but no manifest-backed production report: 146
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 228
@@ -24,7 +24,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 29 | 29 | 4 | 25 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 308 | 81 | 0 | 77 | 4 |
+| regular | 308 | 82 | 0 | 78 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -38,6 +38,7 @@
 | 2085 | knee | cneowe | late_analogy | yes | certified_editorial_source | - | model_entries/2085-knee-cneowe.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=knee-ending |
 | 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
 | 2224 | straw | strēaw | late_analogy | yes | certified_editorial_source | - | model_entries/2224-straw-strēaw.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=straw-endingless-and-levelling |
+| 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
 | 2326 | you | ēow | regular | yes | certified_editorial_source | - | model_entries/2326-you-ēow.model.md | NOTE, philological=you-oblique-origin |
 | 2330 | thought | þōhte | regular | yes | certified_editorial_source | - | model_entries/2330-thought-þōhte.model.md | NOTE, philological=thought-connectorless-origin |
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
@@ -182,6 +183,7 @@
 | 2276 | wax | weaxan | regular | yes | source_material | - | archive/dev_notes_slices/2276-wax-weaxan.md, model_entries/2276-wax-weaxan.model.md, model_entries/2276-wax-weaxan.source_ledger.md, research_memos/2276-wax-weaxan.md | NOTE |
 | 2277 | way | weġ | regular | yes | source_material | - | archive/dev_notes_slices/2277-way-weġ.md, archive/packets/2277-way-weġ.md, model_entries/2277-way-weġ.model.md, model_entries/2277-way-weġ.source_ledger.md, research_memos/2277-way-weġ.md | NOTE |
 | 2278 | weapon | wǣpn | regular | yes | source_material | - | archive/dev_notes_slices/2278-weapon-wǣpn.md, archive/packets/2278-weapon-wǣpn.md, model_entries/2278-weapon-wǣpn.model.md, model_entries/2278-weapon-wǣpn.source_ledger.md, research_memos/2278-weapon-wǣpn.md | NOTE |
+| 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
 | 2284 | whale | hwæl | early_analogy | yes | source_material | - | archive/dev_notes_slices/2284-whale-hwæl.md, archive/packets/2284-whale-hwæl.md, model_entries/2284-whale-hwæl.model.md, model_entries/2284-whale-hwæl.source_ledger.md, research_memos/2284-whale-hwæl.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2286 | whine | hwīnan | early_analogy | no | source_material | - | archive/dev_notes_slices/2286-whine-hwīnan.md, archive/packets/2286-whine-hwīnan.md, model_entries/2286-whine-hwīnan.model.md, model_entries/2286-whine-hwīnan.source_ledger.md, research_memos/2286-whine-hwīnan.md | DERIVATION_CLASS=early_analogy |
 | 2293 | will | willa | regular | yes | source_material | - | archive/dev_notes_slices/2293-will-willa.md, archive/packets/2293-will-willa.md, model_entries/2293-will-willa.model.md, model_entries/2293-will-willa.source_ledger.md, research_memos/2293-will-willa.md | NOTE |
@@ -440,7 +442,7 @@
 | 2280 | weather | weder | regular | no | source_material | - | archive/dev_notes_slices/2280-weather-weder.md | none |
 | 2281 | weave | wefan | regular | no | source_material | - | archive/dev_notes_slices/2281-weave-wefan.md | none |
 | 2282 | west | westene | regular | no | source_material | - | archive/dev_notes_slices/2282-west-westene.md | none |
-| 2283 | wether | weþer | regular | no | source_material | - | archive/dev_notes_slices/2283-wether-weþer.md | none |
+| 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
 | 2285 | while | hwīl | regular | no | source_material | - | archive/dev_notes_slices/2285-while-hwīl.md | none |
 | 2287 | whore | hōre | regular | no | source_material | - | archive/dev_notes_slices/2287-whore-hōre.md | none |
 | 2288 | widow | wuduwe | regular | no | source_material | - | archive/dev_notes_slices/2288-widow-wuduwe.md | none |
@@ -469,7 +471,6 @@
 - pgmc_integration/README.md -> ambiguous among 2054:hand, 2194:six
 - pgmc_integration/examples/2330-thought.md -> ambiguous among 1992:dor, 2301:word
 - pgmc_integration/schema-proposal.md -> ambiguous among 2072:help, 2194:six, 2301:word
-- pgmc_reconstructions/README.md -> ambiguous among 1992:dor, 2111:loc, 2194:six, 2301:word
 - writing_skill/anti_patterns.md -> ambiguous among 1992:dor, 2054:hand, 2111:loc, 2301:word
 
 ## Unmatched source-material files

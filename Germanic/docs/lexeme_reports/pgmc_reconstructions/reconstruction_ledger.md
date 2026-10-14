@@ -10042,7 +10042,7 @@ Coverage: 2 checks; 0 unchecked; 0 verification gaps.
 
 ## 2283: wether / weþer
 
-Current citation: *wíθrą (pgmc); selected input: *wíθrą (pgmc; variety: none; equality_convention).
+Current citation: *wéθruz (pgmc); selected input: *wéθruz (pgmc; variety: none; equality_convention).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |

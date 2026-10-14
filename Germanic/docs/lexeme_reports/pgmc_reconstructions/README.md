@@ -28,6 +28,14 @@ source dating, analytical interpretation, confidence and page-image verification
 are separate axes. A quoted or rejected theory is not an author's endorsement.
 Never assemble an ending onto a stem and attribute the whole word to its author.
 
+The authorized wether adoption selects row 2283's masculine nominative singular
+`*wéθruz` in both live reconstructed fields (Orel 2003, pp. 459–460;
+Kroonen 2013, p. 584). Orel's `*weþraz` remains an alternative. Current
+assessments and commentary reflect the adoption; the tranche-44 receipts
+and earlier SC015 experimental report retain their historical inputs.
+See the lexical source ledger and supplementary `sc015-adjudication.md`;
+no SC015 sound-law verdict or rule change is implied.
+
 The generated inventory, ledger, comparison map, coverage, priorities,
 reading progress and provenance are views, not editable authorities.
 The exact output declaration comes from

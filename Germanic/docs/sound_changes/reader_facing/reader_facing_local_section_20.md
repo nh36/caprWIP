@@ -587,15 +587,14 @@ would leave the dental-stop context untouched without that prohibition.
 This identifies a weakness in the present approximation, while leaving
 the historical status of a replacement to be decided.
 
-### The four live witnesses and conditional chronology
+### The three live witnesses and conditional chronology
 
-The current rule changes exactly four selected forms:
+The current rule changes exactly three selected forms:
 
 | Selection | Selected input | Root-vowel change | Final output |
 | --- | --- | --- | --- |
 | Meed | [mízdai]{.recon} 'meed' | \emph{*í > *é} before \emph{*zdē} | OE [meorde]{.lex lang=oe} 'meed' |
 | Nest | [nístą]{.recon} 'nest' | \emph{*í > *é} before \emph{*stą} | OE [nest]{.lex lang=oe} 'nest' |
-| Wether | [wíθrą]{.recon} 'wether' | \emph{*í > *é} before \emph{*θrą} | OE [weþer]{.lex lang=oe} 'wether' |
 | World | [wír-àldu]{.recon} 'world' | \emph{*í > *é} before \emph{*rà} | OE [weorold]{.lex lang=oe} 'world' |
 
 These witnesses have different evidential weight. OE [nest]{.lex lang=oe}
@@ -609,12 +608,15 @@ loss or rhotacism and vowel quantity. CAPR's selected
 whole-word reconstructions [@Kroonen2013, pp. 370, 391;
 @Hill2017, p. 153].
 
-For OE [weþer]{.lex lang=oe} 'wether', the selected
-[wíθrą]{.recon} 'wether' has a less secure independent basis. Kroonen's
-[weþru-]{.recon} 'yearling' supplies neither the selected root
-\emph{*i} nor its neuter ending. The present input is consequently
-not independent evidence that \emph{*θr} permitted lowering
-[@Kroonen2013, p. 584].
+OE [weþer]{.lex lang=oe} 'wether' instead has the selected masculine
+\emph{*wéθruz}, with inherited \emph{*e}. Kroonen's
+[weþru-]{.recon} 'yearling' and Orel's masculine
+\emph{*weþruz}, alongside alternative \emph{*weþraz}, support
+that reconstruction. Gothic [wiþrus]{.lex lang=goth} 'lamb, young ram'
+provides positive evidence for the *u*-stem. This noun does not require
+lowering and is not a live application of
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+[@Kroonen2013, p. 584; @Orel2003, pp. 459--460].
 
 OE [weorold]{.lex lang=oe} 'world' likewise depends on the chosen
 analysis. The selected [wír-àldu]{.recon} 'world' is a mixed-stage

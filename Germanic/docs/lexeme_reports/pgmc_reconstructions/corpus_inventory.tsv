@@ -349,7 +349,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2280	weather	weder	*wédrą	pgmc	*wédrą	pgmc		equality_convention	regular	1	stressed	final
 2281	weave	wefan	*wébaną	pgmc	*wébaną	pgmc		equality_convention	regular	1	stressed	final
 2282	west	westene	*wéstanē	pgmc	*wéstanē	pgmc		equality_convention	regular	1	stressed	final
-2283	wether	weþer	*wíθrą	pgmc	*wíθrą	pgmc		equality_convention	regular	1	stressed	final
+2283	wether	weþer	*wéθruz	pgmc	*wéθruz	pgmc		equality_convention	regular	1	stressed	final
 2284	whale	hwæl	*wálaz	pgmc	*xwálaz	pgmc		explicit_sidecar	early_analogy	1	stressed	final
 2285	while	hwīl	*xwī́lō	pgmc	*xwḯlō	pgmc		explicit_sidecar	regular	1	stressed	final
 2286	whine	hwīnan	*wainōjaną	pgmc	*xwḯnaną	pgmc		explicit_sidecar	early_analogy	1	stressed	final

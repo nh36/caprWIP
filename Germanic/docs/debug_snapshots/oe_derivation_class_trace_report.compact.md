@@ -6826,7 +6826,7 @@ Outcome: westene
 
 
 # wether
-PROTO: *wíθrą
+PROTO: *wéθruz
 EXPECTED: weþer
 OUTPUTS: weþer
 
@@ -6834,11 +6834,11 @@ OUTPUTS: weþer
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *wíθrą
+English Proto Input: *wéθruz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc I Lowering: *wéθrą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *wéθr<br>OE Epenthetic Vowel: *wéθer |
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *wéθru<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE High Vowel Apocope: *wéθr<br>OE Epenthetic Vowel: *wéθer |
 
 
 

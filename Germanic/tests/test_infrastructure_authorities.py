@@ -60,10 +60,11 @@ CARD_INDEX = (SC_DIR / "order_tests/chronology_cards"
 # SC034 subsequently authorizes only straw's regular output/match transition;
 # test_sc034_output_adoption protects the exact delta and earlier archives.
 # SC017 rust_input changes only rust's three input fields, never its output.
+# SC015 wether_input likewise selects the masculine u-stem without changing finals.
 EXPECTED_OUTPUTS_SHA256 = (
-    "a83b4d17f67d12cc0cd900e2e9975252dee6825cda1eed33efd9b766cac1a32d")
+    "32d551ca5bc6317a6e528f00259159915599c6e08d265af170e2be7341edb522")
 EXPECTED_LEGACY_SUBSET_SHA256 = (
-    "953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2")
+    "3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f")
 EXPECTED_ROW_COUNT = 387
 
 

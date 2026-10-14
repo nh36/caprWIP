@@ -1424,8 +1424,16 @@ with masculine animal reflexes; the anomaly stays visible rather than
 being silently corrected in the diplomatic layer. His year derivation is
 conditional; Orel asserts the connection and preserves masculine u/a
 alternatives. A difference in degree of commitment need not become two
-mutually exclusive ancestries. Neither account establishes CAPR's selected
-i-vocalism and neuter ending or licenses a score-driven raising repair
+mutually exclusive ancestries. The authorized lexical adoption now selects
+masculine nominative singular *wéθruz in both PROTO and PROTOFORM, following
+the source-supported e-vowel u-stem and especially Gothic *wiþrus*.
+Orel's masculine *weþraz remains a legitimate formation alternative, not
+a selected input. This corrects the earlier unsupported i-vocalism and
+neuter-shaped selection without a new raising or lowering law. The
+original tranche-44 receipts and the SC015 experimental report describe
+the earlier corpus state; neither is rewritten as if it used the new input.
+The competing degree of commitment to the deeper year etymology remains
+an open historical question
 [@Kroonen2013, p.584; @Orel2003, pp.459-460].
 
 ### Whale and while: related formations do not inherit a secure date
