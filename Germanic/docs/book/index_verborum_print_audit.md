@@ -53,15 +53,15 @@
 
 ## Reader-facing example rows by role
 
-- `diagnostic_comparator`: 205
-- `example_input`: 76
-- `expected_output`: 83
-- `model_stage`: 113
-- `notation_or_segment`: 734
-- `yielded_output`: 65
+- `diagnostic_comparator`: 224
+- `example_input`: 75
+- `expected_output`: 82
+- `model_stage`: 116
+- `notation_or_segment`: 772
+- `yielded_output`: 64
 
-- Reader-facing include_in_example_index=yes: 542
-- Reader-facing include_in_example_index=no: 734
+- Reader-facing include_in_example_index=yes: 561
+- Reader-facing include_in_example_index=no: 772
 
 ## Print-unique entry audit
 
@@ -154,37 +154,37 @@
 
 ### Included rows by role
 
-- `diagnostic_comparator`: 205
-- `example_input`: 76
-- `expected_output`: 83
-- `model_stage`: 113
-- `yielded_output`: 65
+- `diagnostic_comparator`: 224
+- `example_input`: 75
+- `expected_output`: 82
+- `model_stage`: 116
+- `yielded_output`: 64
 
 ### Included rows by inferred language
 
-- `unknown`: 93
+- `unknown`: 104
 - `goth`: 17
 - `nsgmc`: 4
-- `oe`: 70
+- `oe`: 77
 - `ofris`: 4
-- `ohg`: 7
+- `ohg`: 9
 - `on`: 10
 - `os`: 3
-- `pgmc`: 172
+- `pgmc`: 173
 - `pie`: 5
 - `pnwgmc`: 3
-- `preoe`: 120
+- `preoe`: 118
 - `pwgmc`: 34
 
 ### Included rows by main-index overlap
 
-- `no`: 365
-- `yes`: 177
+- `no`: 379
+- `yes`: 182
 
-- Included whole-form rows with asterisks: 422
-- Included whole-form rows without asterisks: 120
+- Included whole-form rows with asterisks: 431
+- Included whole-form rows without asterisks: 130
 - Included rows inferred_language=oe with leading asterisk: 25
-- Included rows inferred_language=pgmc but OE-output-like form shape: 30
+- Included rows inferred_language=pgmc but OE-output-like form shape: 31
 
 ## Included main-index rows (sample)
 
@@ -225,11 +225,11 @@ _None._
 
 ## Reader-facing example rows (sample)
 
-- `*skulō` (, example_input; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1007)
-- `*u` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1008)
-- `*ō` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1008)
-- `*u` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1010)
-- `*scufel` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1024)
-- `*ō` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1035)
-- `*u` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1037)
+- `*s` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1002)
+- `*funxstiz` (, model_stage; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1011)
+- `*x` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1011)
+- `*s` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1024)
+- `*x` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1025)
+- `*xx` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1026)
 - `*a` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:104)
+- `*i` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:104)

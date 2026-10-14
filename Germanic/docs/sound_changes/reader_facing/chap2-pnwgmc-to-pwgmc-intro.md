@@ -37,21 +37,31 @@ daughters shows any ending in this class [@RingeTaylor2014, p. 118]. It is
 the earliest of the three historically distinct final-`*z` developments; the
 other two (SC020 and SC097) open Chapter 3.
 
-The unstressed `*ai > *ē` development (SC014) represents one of the most
-pervasive shared NW–West Germanic vowel shifts, turning unstressed endings
-such as the dative singular and strong-adjective plural to longer vowels.
-Ringe and Taylor treat this as one of the clearest post-PNWGmc shared
-developments [@RingeTaylor2014, pp. 40--41]; Fulk groups it among the
-North/West-Germanic shared innovations that distinguish the period from
-Gothic [@Fulk2018, §5.2]. The corresponding stressed monophthongization
-(SC004) belongs later in the cascade and is treated in Chapter 3.
+The unstressed \emph{*ai > *ē} development
+([SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization))
+is one of the widespread Northwest Germanic vowel shifts. Unstressed
+dative-singular and strong-adjective plural endings provide examples of
+monophthongization and merger with inherited unstressed \emph{*ē}.
+Ringe and Taylor distinguish this broad correspondence from the more
+questionable claim of a single completed Proto-Northwest Germanic event
+[@RingeTaylor2014, pp. 25--26]. The stressed monophthongization is treated
+separately under [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
+
+The adjacent [SC015 PNWGmcILowering](#rule-PNWGmcILowering) concerns
+stressed first-syllable \emph{*i}, not further unstressed-vowel reduction.
+Its following-vowel hypothesis has traditional authority, but its
+comparative regularity and precise consonantal conditioning remain
+disputed. The section compares vowel-conditioned and consonant-conditioned
+accounts and explains the provisional restrictions of the current
+implementation [@Campbell1959, p. 43, §§114--116;
+@Fulk2018, pp. 56--57; @Hill2017, pp. 149--158].
 
 The West Germanic consonant changes of this chapter — j-gemination (SC010),
 early i-apocope (SC006), coronal-w assimilation (SC008), and related rules —
 represent the most productive phonological territory for the CAPR derivations.
 They feed a large proportion of the distinctive consonant clusters of Old
 English. Handbooks vary in exactly how they group and name these changes
-[@Campbell1959, §§ 404, 406; @HoggGrammar1992, §4.11].
+[@Campbell1959, §§ 404, 406; @HoggGrammar1992, p. 71, §4.11 (held 2011 reissue)].
 
 Coronal assimilation also supplies the geminate in *fēower* 'four' and
 *ēow* 'you', before inherited short-vowel-plus-geminate-glide reanalysis.
