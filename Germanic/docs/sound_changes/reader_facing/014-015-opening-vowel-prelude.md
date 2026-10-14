@@ -262,7 +262,7 @@ whole-word reconstructions [@Kroonen2013, pp. 370, 391;
 
 OE [weþer]{.lex lang=oe} 'wether' instead has the selected masculine
 \emph{*wéθruz}, with inherited \emph{*e}. Kroonen's
-[weþru-]{.recon} 'yearling' and Orel's masculine
+[weþru-]{.recon} 'wether' and Orel's masculine
 \emph{*weþruz}, alongside alternative \emph{*weþraz}, support
 that reconstruction. Gothic [wiþrus]{.lex lang=goth} 'lamb, young ram'
 provides positive evidence for the *u*-stem. This noun does not require

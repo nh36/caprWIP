@@ -145,7 +145,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2276-wax-weaxan.model.md": "f81bdfbba7efbe58c6c93e7c1983cdbc51338b040ff437f4e252d102fe02ab9e",
     "Germanic/docs/lexeme_reports/model_entries/2277-way-we\u0121.model.md": "fa929cd63adc1ef2245227cd720fb2cc203bf3cd3527a068a51d2887b2bef689",
     "Germanic/docs/lexeme_reports/model_entries/2278-weapon-w\u01e3pn.model.md": "a606eaae3b52dbe0f3d92fd7dfbac80b6b9e1fa2dbd075351b9178719d9c4fdf",
-    "Germanic/docs/lexeme_reports/model_entries/2283-wether-we\u00feer.model.md": "e417ae43d0e481bc5b46fcaacc46fb8451b0cd6812cea549dabec9997fa3a77d",
+    "Germanic/docs/lexeme_reports/model_entries/2283-wether-we\u00feer.model.md": "e9f9121ce7098f0b8d871015041b27d444c8b1d05bd7c469a005cf428551036d",
     "Germanic/docs/lexeme_reports/model_entries/2284-whale-hw\u00e6l.model.md": "e018eb2098eb3a9d736a579d298b0f1bb78f8fa41c039b29c1b9dadf68bcbc53",
     "Germanic/docs/lexeme_reports/model_entries/2286-whine-hw\u012bnan.model.md": "734680f3208f27c43f743e0bfcd9c4e3744047ad2afd5f5530a31adfffb4ee7f",
     "Germanic/docs/lexeme_reports/model_entries/2293-will-willa.model.md": "d84c4525603d85236d69abae58ca83bcbd3e2e2d45e2dd2a79bca7cbd179e8fa",
@@ -179,7 +179,7 @@
     "backend/oe_input_context.py": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961"
   },
   "outputs": {
-    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "d34d18bfb77ee50452f213e2b930060f94b87c4ca353f1b6c086dd468f3fc632",
+    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "6bb0dddb7ba6d50ad3482234c891310dbca3ba3f6fe6711d94e7358456cecc90",
     "Germanic/docs/assembly/manifest_all_by_class.tsv": "bd4dac3585685548ee2e9709a3189e4ba3eca8a437e79698ab5840735d698abb",
     "Germanic/docs/assembly/manifest_attested_variant.tsv": "cfd85af7824902dacb5b0a6117e81d9447523a872347c5a60fac71c712269abd",
     "Germanic/docs/assembly/manifest_early_analogy.tsv": "cf14bddb7a534150cccdae9c9b89d6fdb900fd45f93bb3d9ada6dffb2bc670dd",

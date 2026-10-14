@@ -692,7 +692,7 @@ whole-word reconstructions [@Kroonen2013, pp. 370, 391;
 
 OE [weþer]{.lex lang=oe} 'wether' instead has the selected masculine
 \emph{*wéθruz}, with inherited \emph{*e}. Kroonen's
-[weþru-]{.recon} 'yearling' and Orel's masculine
+[weþru-]{.recon} 'wether' and Orel's masculine
 \emph{*weþruz}, alongside alternative \emph{*weþraz}, support
 that reconstruction. Gothic [wiþrus]{.lex lang=goth} 'lamb, young ram'
 provides positive evidence for the *u*-stem. This noun does not require
@@ -11111,7 +11111,11 @@ Albanian year-words and names for young cattle
 [@Orel2003, pp. 459--460]. Kroonen makes that connection conditional:
 if correct, the original designation was 'yearling, one-year-old
 animal', with Sanskrit [vatsá-]{.lex lang=skt} 'calf' among the comparanda
-[@Kroonen2013, p. 584]. A young-animal designation could develop
+[@Kroonen2013, p. 584]. Kluge--Seebold notes phonological difficulties
+with the traditional comparison involving Latin
+[vitulus]{.lex lang=lat} 'calf', and also considers derivation from a
+root meaning 'sheep' [@KlugeSeebold2011, pp. 985--986].
+A young-animal designation could develop
 into 'ram' or 'wether', but this attractive semantic account is
 not as secure as the Germanic masculine *u*-stem reconstruction.
 
