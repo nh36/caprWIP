@@ -1,0 +1,367 @@
+{
+  "fst_sha256": "6c33b3c723150b61de4a41c89e228f32eeceb8280114b573e182eb8baf6ff51f",
+  "driver_sha256": "6c15ecb85e9211f307889387d392dd0dab88f4eafa6fa9781617bfd730769921",
+  "recipe": {
+    "id": "sc015-r-lengthening-supplement",
+    "definitions": "define AFTrad [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel, {*í} -> {*é} || .#. EnglishStarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel ]) ];\ndefine AFHill [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [{*z} | {*s} {*t} | {*r}], {*í} -> {*é} || .#. EnglishStarConsonant* _ [{*z} | {*s} {*t} | {*r}] ]) ];\ndefine AFTauto [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [{*z} [EnglishStarConsonant | .#.] | {*s} {*t} | {*r}], {*í} -> {*é} || .#. EnglishStarConsonant* _ [{*z} [EnglishStarConsonant | .#.] | {*s} {*t} | {*r}] ]) ];\ndefine AFBroad [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [EnglishStarConsonant - EnglishStarNasal - {*j}]+ EnglishStarNonHighVowel, {*í} -> {*é} || .#. EnglishStarConsonant* _ [EnglishStarConsonant - EnglishStarNasal - {*j}]+ EnglishStarNonHighVowel ]) ];\ndefine AFSkip [?*];\ndefine AFNoop [?*];\ndefine AFLate [PNWGmcILowering];\ndefine AFLength [Ctx([{*e} -> {*ē} || .#. EnglishStarConsonant* _ {*r} .#.,{*é} -> {*ḗ} || .#. EnglishStarConsonant* _ {*r} .#.])];\ndefine AFRLength [Ctx([\n  {*i} -> {*ī} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*í} -> {*ī} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*e} -> {*ē} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*é} -> {*ḗ} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*a} -> {*ā} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*á} -> {*ā} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*u} -> {*ū} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*ú} -> {*ū} || .#. EnglishStarConsonant* _ {*r} .#.\n])];\n",
+    "replace": {},
+    "insert_rule": "",
+    "component_checks": [
+      {
+        "component": "AFRLength"
+      },
+      {
+        "component": "AFHill"
+      },
+      {
+        "component": "AFTauto"
+      },
+      {
+        "component": "PNWGmcILowering"
+      },
+      {
+        "component": "EnglishStarNonHighVowel"
+      }
+    ]
+  },
+  "citation": "Hill2017:148-149,156-158;Kroonen2013:270",
+  "normalization": "Source h -> CAPR x; source thorn -> CAPR theta.",
+  "limit": "Component experiment, not an adopted law or a complete native history. Close source e is represented by CAPR e. The u mapping is a schematic short-vowel completeness control, not an additional lexical witness.",
+  "r_order": {
+    "hir": {
+      "input": "*x*i*r",
+      "lower_first": [
+        "*x*e*r"
+      ],
+      "lower_then_lengthen": [
+        "*x*ē*r"
+      ],
+      "lengthen_first": [
+        "*x*ī*r"
+      ],
+      "lengthen_then_lower": [
+        "*x*ī*r"
+      ]
+    },
+    "xír": {
+      "input": "*x*í*r",
+      "lower_first": [
+        "*x*é*r"
+      ],
+      "lower_then_lengthen": [
+        "*x*ḗ*r"
+      ],
+      "lengthen_first": [
+        "*x*ī*r"
+      ],
+      "lengthen_then_lower": [
+        "*x*ī*r"
+      ]
+    },
+    "hīr": {
+      "input": "*x*ī*r",
+      "lower_first": [
+        "*x*ī*r"
+      ],
+      "lower_then_lengthen": [
+        "*x*ī*r"
+      ],
+      "lengthen_first": [
+        "*x*ī*r"
+      ],
+      "lengthen_then_lower": [
+        "*x*ī*r"
+      ]
+    },
+    "hwar": {
+      "input": "*x*w*a*r",
+      "lower_first": [
+        "*x*w*a*r"
+      ],
+      "lower_then_lengthen": [
+        "*x*w*ā*r"
+      ],
+      "lengthen_first": [
+        "*x*w*ā*r"
+      ],
+      "lengthen_then_lower": [
+        "*x*w*ā*r"
+      ]
+    },
+    "þar": {
+      "input": "*θ*a*r",
+      "lower_first": [
+        "*θ*a*r"
+      ],
+      "lower_then_lengthen": [
+        "*θ*ā*r"
+      ],
+      "lengthen_first": [
+        "*θ*ā*r"
+      ],
+      "lengthen_then_lower": [
+        "*θ*ā*r"
+      ]
+    }
+  },
+  "domain_inputs": {
+    "nir-a": "*n*i*r*a",
+    "nir-ā": "*n*i*r*ā",
+    "nir-ą": "*n*i*r*ą",
+    "nir-e": "*n*i*r*e",
+    "nir-ē": "*n*i*r*ē",
+    "nir-ḗ": "*n*i*r*ḗ",
+    "nir-o": "*n*i*r*o",
+    "nir-ō": "*n*i*r*ō",
+    "nir-ǭ": "*n*i*r*ǭ",
+    "nir-ɔ̆": "*n*i*r*ɔ̆",
+    "nir-ô": "*n*i*r*ô",
+    "nir-à": "*n*i*r*à",
+    "nir-è": "*n*i*r*è",
+    "nir-ò": "*n*i*r*ò",
+    "nir-i": "*n*i*r*i",
+    "nir-u": "*n*i*r*u",
+    "nir-ī": "*n*i*r*ī",
+    "nir-ū": "*n*i*r*ū",
+    "irha-inherited-counterexample": "*i*r*x*a",
+    "iz-between-vowels": "*w*i*z*a*n*a",
+    "nasal-z-control": "*n*i*n*z*a"
+  },
+  "domain_outputs": {
+    "AFHill": {
+      "nir-a": [
+        "*n*e*r*a"
+      ],
+      "nir-ā": [
+        "*n*e*r*ā"
+      ],
+      "nir-ą": [
+        "*n*e*r*ą"
+      ],
+      "nir-e": [
+        "*n*e*r*e"
+      ],
+      "nir-ē": [
+        "*n*e*r*ē"
+      ],
+      "nir-ḗ": [
+        "*n*e*r*ḗ"
+      ],
+      "nir-o": [
+        "*n*e*r*o"
+      ],
+      "nir-ō": [
+        "*n*e*r*ō"
+      ],
+      "nir-ǭ": [
+        "*n*e*r*ǭ"
+      ],
+      "nir-ɔ̆": [],
+      "nir-ô": [
+        "*n*e*r*ô"
+      ],
+      "nir-à": [
+        "*n*e*r*à"
+      ],
+      "nir-è": [
+        "*n*e*r*è"
+      ],
+      "nir-ò": [
+        "*n*e*r*ò"
+      ],
+      "nir-i": [
+        "*n*e*r*i"
+      ],
+      "nir-u": [
+        "*n*e*r*u"
+      ],
+      "nir-ī": [
+        "*n*e*r*ī"
+      ],
+      "nir-ū": [
+        "*n*e*r*ū"
+      ],
+      "irha-inherited-counterexample": [
+        "*e*r*x*a"
+      ],
+      "iz-between-vowels": [
+        "*w*e*z*a*n*a"
+      ],
+      "nasal-z-control": [
+        "*n*i*n*z*a"
+      ]
+    },
+    "AFTauto": {
+      "nir-a": [
+        "*n*e*r*a"
+      ],
+      "nir-ā": [
+        "*n*e*r*ā"
+      ],
+      "nir-ą": [
+        "*n*e*r*ą"
+      ],
+      "nir-e": [
+        "*n*e*r*e"
+      ],
+      "nir-ē": [
+        "*n*e*r*ē"
+      ],
+      "nir-ḗ": [
+        "*n*e*r*ḗ"
+      ],
+      "nir-o": [
+        "*n*e*r*o"
+      ],
+      "nir-ō": [
+        "*n*e*r*ō"
+      ],
+      "nir-ǭ": [
+        "*n*e*r*ǭ"
+      ],
+      "nir-ɔ̆": [],
+      "nir-ô": [
+        "*n*e*r*ô"
+      ],
+      "nir-à": [
+        "*n*e*r*à"
+      ],
+      "nir-è": [
+        "*n*e*r*è"
+      ],
+      "nir-ò": [
+        "*n*e*r*ò"
+      ],
+      "nir-i": [
+        "*n*e*r*i"
+      ],
+      "nir-u": [
+        "*n*e*r*u"
+      ],
+      "nir-ī": [
+        "*n*e*r*ī"
+      ],
+      "nir-ū": [
+        "*n*e*r*ū"
+      ],
+      "irha-inherited-counterexample": [
+        "*e*r*x*a"
+      ],
+      "iz-between-vowels": [
+        "*w*i*z*a*n*a"
+      ],
+      "nasal-z-control": [
+        "*n*i*n*z*a"
+      ]
+    },
+    "PNWGmcILowering": {
+      "nir-a": [
+        "*n*e*r*a"
+      ],
+      "nir-ā": [
+        "*n*e*r*ā"
+      ],
+      "nir-ą": [
+        "*n*e*r*ą"
+      ],
+      "nir-e": [
+        "*n*e*r*e"
+      ],
+      "nir-ē": [
+        "*n*e*r*ē"
+      ],
+      "nir-ḗ": [
+        "*n*e*r*ḗ"
+      ],
+      "nir-o": [
+        "*n*e*r*o"
+      ],
+      "nir-ō": [
+        "*n*e*r*ō"
+      ],
+      "nir-ǭ": [
+        "*n*e*r*ǭ"
+      ],
+      "nir-ɔ̆": [],
+      "nir-ô": [
+        "*n*e*r*ô"
+      ],
+      "nir-à": [
+        "*n*e*r*à"
+      ],
+      "nir-è": [
+        "*n*e*r*è"
+      ],
+      "nir-ò": [
+        "*n*e*r*ò"
+      ],
+      "nir-i": [
+        "*n*i*r*i"
+      ],
+      "nir-u": [
+        "*n*i*r*u"
+      ],
+      "nir-ī": [
+        "*n*i*r*ī"
+      ],
+      "nir-ū": [
+        "*n*i*r*ū"
+      ],
+      "irha-inherited-counterexample": [
+        "*i*r*x*a"
+      ],
+      "iz-between-vowels": [
+        "*w*e*z*a*n*a"
+      ],
+      "nasal-z-control": [
+        "*n*i*n*z*a"
+      ]
+    }
+  },
+  "nonhigh_acceptance": {
+    "*a": [
+      "*a"
+    ],
+    "*ā": [
+      "*ā"
+    ],
+    "*ą": [
+      "*ą"
+    ],
+    "*e": [
+      "*e"
+    ],
+    "*ē": [
+      "*ē"
+    ],
+    "*ḗ": [
+      "*ḗ"
+    ],
+    "*o": [
+      "*o"
+    ],
+    "*ō": [
+      "*ō"
+    ],
+    "*ǭ": [
+      "*ǭ"
+    ],
+    "*ɔ̆": [],
+    "*ô": [
+      "*ô"
+    ],
+    "*à": [
+      "*à"
+    ],
+    "*è": [
+      "*è"
+    ],
+    "*ò": [
+      "*ò"
+    ],
+    "*i": [],
+    "*u": [],
+    "*ī": [],
+    "*ū": []
+  }
+}

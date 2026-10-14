@@ -143,6 +143,20 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 
 ## Articles and special studies
 
+- `hill_2017_west_germanic_lengthening.txt` / `.pdf`
+  Hill, "West Germanic monosyllabic lengthening and Gothic breaking as
+  partially Proto-Germanic developments: The evidence of pronominal place
+  adverbs 'here', 'where' and 'there'" (*NOWELE* 70.2, 2017, 135–170;
+  `Hill2017`, DOI 10.1075/nowele.70.2.02hil). All 36 PDF sheets are
+  retained, with printed-page markers 135–170. Born-digital
+  `pdftotext -layout` extraction; 36 spurious U+0008 controls before
+  reconstruction asterisks are removed, with no normalization of linguistic
+  signs. The extraction header records the PDF hash, page mapping and
+  verification limits. Printed pp.149–158 were checked against rendered
+  originals, including the close-vowel signs, quantities, tables and
+  footnotes. This verifies the holding, not adoption of Hill's hypothesis.
+  The original PDF is retained locally under the usual ignored-PDF policy.
+
 - `luehr_article.txt` / `.pdf`
   Lühr, "Zur Semantifizierung von Zahlwörtern: Das Wort 'Tausend' —
   eine germanisch-baltoslavische Isoglosse?" (*Linguistica* 33, 1993,

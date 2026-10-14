@@ -1,0 +1,1737 @@
+Eugen Hill (2017), West Germanic monosyllabic lengthening and Gothic breaking
+as partially Proto-Germanic developments: The evidence of pronominal place
+adverbs 'here', 'where' and 'there'. NOWELE 70.2, pp.135-170.
+DOI: 10.1075/nowele.70.2.02hil. Citation key: Hill2017.
+PDF SHA256: 73278c5e5e7cdc845fc09b160993c43f2673b0e83fb58ef9091ceedeb530659e
+
+Extraction: pdftotext -layout (native text, not OCR); all 36 sheets retained.
+Printed folio = PDF sheet + 134. Each folio self-confirms at a page edge;
+opening p.135 self-confirms in the journal citation rather than a running head.
+Repair: remove exactly 36 U+0008 BACKSPACE controls immediately before '*'.
+No linguistic character substitutions, Unicode normalization, or typo correction.
+Page markers below denote PRINTED folios, not PDF sheet numbers.
+Verification: all pp.149-158 checked against rendered originals, including
+close-vowel notation, quantity, reconstruction tables and footnotes. Complete
+36-page extraction and final bibliography verified; other pages have not
+received exhaustive diplomatic glyph checking. Original p.158 says 'raising'
+in its opening paragraph although the argument and conclusion concern lowering;
+that apparent authorial typo is preserved. The source's two-stage symbols such
+as e-with-underdot plus combining macron remain diplomatic, not Foma tokens.
+
+=== page 135 ===
+
+West Germanic monosyllabic lengthening
+and Gothic breaking as partially
+Proto-Germanic developments
+The evidence of pronominal place adverbs ‘here’,
+‘where’ and ‘there’
+
+Eugen Hill
+
+
+The paper deals with two Germanic sound changes which are traditionally be-
+lieved to postdate the disintegration of the Proto-Germanic parent language. The
+lengthening in several monosyllables, attested in West Germanic languages, is
+usually believed to be an innovation of this branch. The so-called Gothic break-
+ing is similarly thought of as belonging exclusively to East Germanic. The paper
+shows that there is evidence suggesting a Proto-Germanic age for parts of both
+sound changes, in particular for a lengthening in monosyllabic words ending
+in PGmc *-r and for a lowering of PGmc *i if followed by *r. Proto-Germanic
+possessed at least three pronoun-based place adverbs formed with PGmc *-r, cf.
+Goth ƕar ‘where’ from ƕa- ‘what’, þar ‘there’ from þa- ‘that’ and hēr ‘here’ from
+hi- ‘this here’. The vocalism of these adverbs did not match that of the corre-
+sponding pronouns on two points. First, the vowels of the adverbs were probably
+long. Second, the close PGmc *ẹ̄ (Goth ē, OHG ia) of ‘here’ did not match PGmc
+*i in the corresponding pronoun. The paper assumes that the long vowels of the
+place adverbs emerged by a lengthening of etymologically short vowels in mon-
+osyllablic words ending in PGmc *-r. The timbre difference between PGmc *ẹ̄
+in ‘here’ and PGmc *i in the corresponding pronoun for ‘this here’ is accounted
+for by a lowering of PGmc *i before *r. Both postulated developments must have
+been operating already in Proto-Germanic times but the lowering must have
+chronologically preceded the lengthening. The paper introduces the data sup-
+porting the assumptions made and discusses the apparent counterevidence.
+
+Keywords: historical phonology, Proto-Germanic, West Germanic, Gothic, place
+adverbs
+
+
+
+
+NOWELE 70:2 (2017), 135–170. doi 10.1075/nowele.70.2.02hil
+issn 0108-8416 / e-issn 2212-9715 © John Benjamins Publishing Company
+
+=== page 136 ===
+
+136 Eugen Hill
+
+
+
+    1.   Introduction
+
+    The paper deals with two sound changes which are traditionally described as com-
+    paratively recent developments in the Germanic daughter-languages. First, the
+    lengthening in several monosyllabic words ending in r, which is attested in West
+    Germanic dialects such as Old High German and Old English, is usually believed to
+    be an innovation of Proto-West-Germanic. Second, the so-called Gothic breaking –
+    the lowering of i und u before r, h and ƕ – is commonly seen as a recent Gothic or
+    Proto-East-Germanic development. I will argue that there is evidence suggesting a
+    Proto-Germanic age for parts of both sound changes.
+         This evidence is provided by the phonology of the Proto-Germanic adverb for
+    ‘here’ in different daughter-languages. In Section 2 I will describe the system of
+    Proto-Germanic pronoun-based place adverbs, to which the adverb ‘here’ belongs,
+    and point out the peculiar features of this particular member of the group, the un-
+    expected length and the unexpected timbre of its vowel. In Section 3 the previous
+    attempts at explaining these unexpected features of ‘here’ will be sketched. I will
+    demonstrate that none of these attempts satisfactorily resolves the problem. In the
+    following Section 4 I will discuss the quantity of the vowel in the Germanic place
+    adverbs ‘where’ and ‘there’. I will show that these adverbs, derivationally reminiscent
+    of ‘here’, probably underlie the same secondary lengthening of the root vowel due
+    to their monosyllabic pronunciation. The parallelism in the phonological develop-
+    ment of ‘here’ on the one hand and ‘where’ and ‘there’ on the other suggests a Proto-
+    Germanic date for this sound change. Section 5 will deal with the timbre of the root
+    vowel of ‘here’. I will introduce evidence suggesting that the lowering of high vowels
+    traditionally known as Gothic breaking may partly, i.e. as far as PGmc *i before
+    Goth r is concerned, reflect a Proto-Germanic development. In Section 6, I will
+    summarize how the assumptions reached in the previous sections of the paper, i.e.
+    the Proto-Germanic age of parts of the two sound changes traditionally attributed
+    to later times, explain the unexpected phonology of Germanic ‘here’ in a coherent
+    and non-aprioristic way. In the last section of the paper, Section 7, I will discuss
+    the Gothic imperative hiri ‘come here!’, which is traditionally assumed somehow
+    to derive from the place adverb ‘here’. I will specify the exact relation between the
+    imperative and the place adverb and demonstrate that the shape of Goth hiri is best
+    explained without direct reference to the development of Germanic ‘here’.
+
+
+    2. The Proto-Germanic place adverbs in *-r
+
+    Proto-Germanic possessed a class of pronoun-based place adverbs ending in PGmc
+    *-r. These adverbs are well preserved in Gothic.
+
+=== page 137 ===
+
+                                               West Germanic lengthening and Gothic breaking 137
+
+
+
+    (1) Gothic
+        adverb         pronoun
+                       (dat.sg.masc. and nt.)
+         ƕar ‘where’   ƕamma ‘who, what’
+         þar ‘there’ ~ þamma ‘that’
+         hēr ‘here’    himma ‘this here’
+
+Adverbs of this kind are found in all three branches of Germanic. Cf. the situation
+in the West Germanic languages Old High German and Old English
+    (2) OHG                                         OE
+        adverb         pronoun                      adverb
+                                                     pronoun
+                       (nom.sg. nt.)                 (nom.sg. nt.)
+         hwār ‘where’ hwaz ‘what’ and hwǣr ‘where’   hwæt ‘what’
+         dār ‘there’ ~ daz ‘that’     ðǣr ‘there’  ~ ðæt ‘that’
+         hiar ‘here’   –              hēr ‘here’     hit ‘it’
+
+as well as in Old Norse, which is the best attested ancient member of the North
+Germanic branch
+    (3) ON
+        adverb         pronoun
+                       (nom.sg. nt.)
+         hvar ‘where’  hvat ‘what’
+         þar ‘there’ ~ þat ‘that’
+         hér ‘here’    –
+
+The evidence of these descendants of Proto-Germanic shows that the vocalism of
+Proto-Germanic ‘here’ did not match that of the corresponding pronoun ‘this here’
+on the following two points.
+    First, the timbre of PGmc *ẹ̄ (Goth ē, OHG ia, OE ē, ON é) in ‘here’ 1 did not
+match PGmc *i in the corresponding pronoun PGmc *hi- ‘this here’. That we are
+actually dealing with PGmc *i and not PGmc *e (secondarily raised in Gothic and,
+for whatever reason, also in West Germanic), is shown by the reflexes of this same
+pronoun in several non-Germanic members of the Indo-European language family.
+
+
+
+
+1. Concerning the Frisian development of *ẹ̄ to ī, cf. Hofmann (1964) and, most recently,
+Kümmel (2014: 246–247). It is essential that OFr ī is found not only in the adverb ‘here’ but also
+in other words in which reflexes of a more ancient close *ẹ̄ have to be assumed in a West Germanic
+dialect, cf. OFr mīde corresponding to OHG miata ‘reward’ or 3sg.prt. OFr hīt corresponding to
+OHG hiaz ‘ordered’. On the situation in Old Saxon, where the reflex of *ẹ̄ appears as 〈e〉, 〈ie〉 and
+〈i〉, cf. Krogh (1996: 258–262) and Stiles (2004: 388).
+
+=== page 138 ===
+
+138 Eugen Hill
+
+
+
+        (4) Latin       prp. cis ‘on this side of ’, cf. adj. ci-ter ‘lying on this side’,
+                        adv. ci-trā ‘on this side’
+             Hittite    nom.-acc.sg. nt. kī ‘this’
+             Lithuanian nom.sg. masc. šìs ‘this’
+
+    This data suggests a PIE *ḱí- ‘this here’ yielding PGmc *hi- ‘this here’ with PGmc *i
+    in the root. Note that, contrary to an opinion widespread in the scholarly literature,
+    the vocalism of OE hē, OS hē, hī, Franconian OHG her ‘he’ does not presuppose
+    a PGmc *e for the masculine form of the nominative singular in this pronoun.
+    Rather, the attested spellings reflect a recent lowering of an older stressed *i before a
+    tautosyllabic PGmc *z. Cf. similarly OHG er ‘he’ (in Upper German sources) which
+    must reflect PGmc *iz descending from PIE *ís (cf. Lat is ‘this, that’). 2
+         To sum up, the place adverb PGmc *hẹ̄r ‘here’ must have been derived from
+    the pronoun PGmc *hi- ‘this here’ with an obvious and unexplained deviation in
+    the timbre of the root vowel.
+         Second, the quantity of PGmc *ẹ̄ (Goth ē, OHG ia, OE ē, ON é) in ‘here’ did
+    not match the short PGmc *i in the corresponding pronoun PGmc *hi- ‘this here’.
+    The long pronunciation of the vowel in ‘here’ is securely established by its consist-
+    ent spelling with 〈e〉 in Gothic. In the West Germanic branch, the length and the
+    timbre of the vowel in ‘here’ are clearly indicated by its diphthongization in OHG
+    hiar ‘here’. The diphthong OHG ia presupposes a pre-OHG long close *ẹ̄. Cf. for
+    this vowel the evidence of Latin loanwords
+        (5) Latin    late-Latin   PWGmc     OHG
+            brevis > brēve      > *brẹ̄fi > briaf ‘letter’
+            beta > bēta         > *bẹ̄to  > biaza ‘beetroot’
+
+    and the compensatory lengthening in at least one inherited lexeme
+        (6) Goth    PGmc      PWGmc    OS   OHG
+            mizdō ⇒ *mizdōn > *mẹzdo > mēda miata ‘reward’
+
+
+    2. Cf. most recently Seebold (1984: 16–19). The said lowering evidently did not operate on un-
+    stressed *i, cf. the nom. sg. of masc. i-stems in PGmc *-iz yielding OHG, OS -i (cf. OHG, OS wini
+    ‘friend’). The lowering did not affect the dative of the 1 and 2sg. personal pronouns OS mi, thi,
+    OHG mir, dir because this case form was originally disyllabic (probably loc. sg. *mi, *ti which
+    should be expected beside dat. sg. *moi̯ reflected in OAv mōi, Gk moi and OAv tōi, Gk dial. toi,
+    cf. Hill (2013: 175), secondarily enlarged by PGmc *-zi of unclear provenance). The timbre of the
+    vowel in the dat. sg. OE mē, þē and Runic mez (Opedal), OSw mǽr, þǽr, ON mér, þér is due to
+    later developments. These are the lowering of every unstressed *i in pre-Old English (cf. nom.
+    sg. OE wine ‘friend’) and the lowering of unstressed *i with its subsequent lengthening before
+    tautosyllabic *z in Proto-Norse monosyllables (cf. originally unstressed ON vér beside the stressed
+    variant OSw vír, Goth weis ‘we’).
+
+=== page 139 ===
+
+                                               West Germanic lengthening and Gothic breaking 139
+
+
+
+Both anomalies – the unexpected timbre and the unexpected length of the vowel
+in PGmc *hẹ̄r ‘here’ – have not yet been accounted for with any certainty. In the
+following section I will review the most recent attempts to resolve these problems.
+
+
+3. Explaining Proto-Germanic ‘here’
+
+The vocalism of Goth hēr ‘here’ and its counterparts in the other Germanic lan-
+guages is a firmly established problem of Germanic historical phonology. However,
+this problem does not seem to have received much attention during roughly two
+centuries of research into Germanic. In the older literature, the matter is often
+mentioned but not investigated in a satisfactory, non-aprioristic way. This was un-
+doubtedly caused by the obvious uniqueness of the problem. The lack of other
+Proto-Germanic lexemes with comparable unexpected features prevented scholars
+from applying the most efficient method of investigation, i.e. from looking for re-
+current correlations in the data. For this reason, most of the opinions found in the
+literature are necessarily ad hoc and, therefore, of a merely historical interest today.3
+     In this section, I shall only discuss the two most recent attempts to resolve
+the problem in a less aprioristic manner. Both theories try to find the way out by
+re-examining the morphological assumptions on which the traditional derivation
+of ‘here’ is based. The attempts seem to be equally unsuccessful precisely in their
+morphology.
+     According to Ringe (1984: 139–145), the adverb Goth hēr etc. was not nec-
+essarily derived from PGmc *hi- ‘this here’ (cf. Goth dat.sg. masc. hi-mma) in
+the same way in which Goth ƕar ‘where’ and þar ‘there’ were derived from PGmc
+*hwa- ‘who, what’ (cf. Goth dat.sg. masc. ƕa-mma) and PGmc *þa- ‘that’ (cf. Goth
+dat.sg. masc. þa-mma). Ringe assumes that Goth hēr and its peers in the other
+Germanic languages reflect the hypothetical instrumental singular of the pronoun,
+PGmc *hī, 4 secondarily enlarged by the element *-r taken over from the adverbs
+for ‘where’ and ‘there’. The long *ī of PGmc *hīr is assumed to have been regularly
+lowered to PGmc *ẹ̄ due to the influence of the following tautosyllabic *r.
+
+
+3. Cf. the overviews in G. Schmidt (1962: 50–78), Antonsen (1972: 124–125, 131, 140), Ringe
+(1984: 139–142) and, most recently, Dunkel (2014: 408). The general uneasiness about the prob-
+lem is nicely documented, for instance, in van Coetsem’s (1994: 112) treatment of the adverb.
+4. Reflexes of this case form are not directly attested in Germanic. However, such an instru-
+mental singular may be assumed to have existed beside PGmc nom.sg. masc. *hiz (< PIE *ḱi-s,
+cf. Lat cis, Lith šìs) due to the evidence of related languages with more ancient attestation. Cf.
+in the inflection of Indo-Iranian nouns such as Sanskrit nom.sg. utís ~ instr.sg. utī ́ ‘help’, Old
+Avestan nom.sg. aṣ̌iš ~ instr.sg. aṣ̌ī ‘wage’ etc.
+
+=== page 140 ===
+
+140 Eugen Hill
+
+
+
+         A similar position is taken by Lloyd & Lühr (2009: 1010), who, however, start
+    not with the instrumental but with the locative singular of the pronoun (assumed
+    to be directly preserved in Gk keĩ, kē̃ ‘there’). Enlarged by *-r taken from ‘where’
+    and ‘there’, this case form would also yield PGmc *hīr whose vowel would then be
+    subject to secondary lowering. 5
+         Ringe’s and Lloyd & Lühr’s accounts suffer from two problems which make it
+    difficult to agree with their explanations. First, both assume that the influence of
+    the adverbs Goth ƕar ‘where’ and þar ‘there’, which are clearly derived from the
+    stems of the respective pronouns, allowed the use of not the stem but of an inflected
+    case form of PGmc *hi-. This is unexpected and in need of an explanation itself.
+    Second, the assumed development of PGmc *ī to *ẹ̄ before a tautosyllabic *r is not
+    corroborated by any additional evidence and remains therefore entirely ad hoc.
+         Kortlandt’s (2006) approach to the problem of Goth hēr and its equivalents in
+    the other Germanic languages also starts with an unexpected morphological as-
+    sumption. Kortlandt believes that the Proto-Germanic pronoun for ‘this here’ was
+    not the traditionally assumed i-stem PGmc *hi- but rather an io-stem PGmc *hia-.
+    Consequently, the adverb ‘here’ should be reconstructed as PGmc *hiar which,
+    after secondary contractions, became Goth hēr, OE hēr and ON hér. The original
+    pronunciation of PGmc *hiar may be preserved in OHG hiar ‘here’. 6
+         However, the inflection of the ‘this here’ pronoun in the Germanic daugh-
+    ter-languages demonstrates beyond reasonable doubt that one is dealing with PGmc
+    *hi-, not *hia-. This becomes obvious if one compares the attested case forms of
+    this pronoun, for instance, in Gothic with the corresponding inflections of other
+    pronominal stems.
+        (7)                         ‘this here’   ‘he, it’   ‘that’
+              dat.sg. masc.         hi-mma        i-mma      þa-mma
+              acc.sg. masc.         hi-na         i-na       þa-na
+              acc.sg. neuter        hi-ta         i-ta       þa-ta
+
+
+    5. A link between Germanic ‘here’ and Gk keĩ, kē̃ ‘there’ is also assumed by Prósper (1995: 81)
+    and, as it seems, by Seebold (1984: 68) as well.
+    6. A very similar hypothesis has been proposed as early as in Mahlow (1879: 163) and justly
+    rejected already by Jellinek (1891: 297–298). Kortlandt’s approach was recently advocated also
+    by Kroonen (2013: 225), who, however, speaks of PGmc *hiar ‘here’ as built from the pronoun
+    *hi- and a “suffix” *-ar taken from PGmc *þar ‘there’ (cf. somewhat similarly already Lüdtke
+    1957: 158, more explicitly Meid (1971: 94) and Knapp (1974: 214–215)). This position is equally
+    implausible. As already stated by Jellinek, the pattern PGmc *þa- ‘that’ ~ *þa-r ‘there’, *hwa-
+    ‘what’ ~ *hwa-r ‘where’ would necessarily have generated *hi- ‘this here’ ~ *hi-r ‘here’. I fail to
+    see how the assumed reanalysis of PGmc *þa-r, *hwa-r as *þ-ar, *hw-ar can be motivated for
+    Proto-Germanic times.
+
+=== page 141 ===
+
+                                             West Germanic lengthening and Gothic breaking 141
+
+
+
+Proto-Gmc *hi- ‘this here’ as the derivational base of ‘here’ is additionally con-
+firmed by the phonology of derived adverbs such as Goth hi-drē and OE hi-der,
+which mean ‘here to, hither’ and cannot be etymologically separated from hēr ‘here’.
+Cf. the system of Gothic place and directional adverbs and the remnants of a similar
+system in Old English: 7
+   (8) Gothic
+       ƕar ‘where’        ƕaþrō ‘from where’        ƕadrē ‘where to’
+       þar ‘there’        þaþrō ‘from there’        –
+       hēr ‘here’         –                         hidrē ‘here to’
+         Old English
+         hwǣr ‘where’     hwæðer ‘where to’         –
+         ðǣr ‘there’      ðæðer ‘there to’ 7        –
+         hēr ‘here’       –                         hider ‘here to’
+
+Moreover, PGmc *hi-, firmly established on these grounds, is the only expected
+reflex of PIE *ḱí- which has to be reconstructed on the basis of Lat cis ‘on this side
+of ’ and Hitt nom.-acc.sg. nt. kī ‘this’ (cf. the data given in 4). Only Lith šìs, Latv šis
+‘this’ might, in theory, reflect a more ancient io-stem due to such case forms as gen.
+sg. masc. Lith šiõ, Latv šà or instr.sg. masc. Lith šiuõ, Latv šuõ. However, the tra-
+ditionally assumed secondary transfer from i- to io-inflection is most trivial in East
+Baltic, where i-stems and masculine io-stems secondarily became indistinguishable
+in the accusative singular due to a well-known recent sound change. 8 Therefore
+Kortlandt’s ingenious hypothesis must be rejected on morphological grounds.
+      However, the most serious objection applies equally to Ringe’s or Lloyd &
+Lühr’s and Kortlandt’s theories in the same way. Both hypotheses are directly con-
+tradicted by evidence found in Old High German. This evidence is the adverbs
+OHG hĕra and hĕrōt ‘here to, hither’ which clearly cannot be separated from OHG
+hiar ‘here’ and must somehow be derived from the latter. 9 The morphological pat-
+tern in which OHG hĕra, hĕrōt and hiar are embedded will be discussed in detail
+in Section 4. Here it is sufficient to point out that the short ĕ of OHG hĕra, hĕrōt
+
+
+7. The variant forms OE hwider, ðider are generally seen as recent analogical creations and
+may be ignored here. After the well-known regular development of hwǣr, ðǣr into hwēr, ðēr in
+Anglian dialects of Old English, the variant forms hwider, ðider emerged beside the correspond-
+ing place adverbs on the model of hēr ~ hider.
+8. Cf. handbooks on historical phonology and morphology of Baltic such as Stang (1966: 188–
+197) and Endzelīns (1971: 138–140).
+9. Pace Lloyd & Lühr (2009: 962–963, 1010), where OHG hera ‘here to’ and hiar ‘here’, although
+both derived from PGmc *hi- ‘this here’ by means of the same place adverbs’ marker *-r, are
+assumed to be morphologically independent of each other.
+
+=== page 142 ===
+
+142 Eugen Hill
+
+
+
+    speaks neither in favour of PGmc *ī secondarily raised before a tautosyllabic *r, as
+    Ringe and probably also Lloyd & Lühr would have it, nor for PGmc *ia as proposed
+    by Kortlandt.
+        The main reason why the vocalism of PGmc *hẹ̄r ‘here’ could not be accounted
+    for satisfactorily seems to be the following: all scholars who have tried to find a
+    solution conceived the adverb to be the only Germanic word with the given prob-
+    lem. In the following section I will demonstrate that at least with respect to vowel
+    length this assumption may be questioned.
+
+
+    4. The vowel of Proto-Germanic ‘where’ and ‘there’: Short or long?
+
+    As already stated above, the vowel of Goth hēr ‘here’ must have been long since
+    Proto-Germanic times. By contrast, the root vowel of Goth ƕar ‘where’ and þar
+    ‘there’ is traditionally believed to be short. 10 However, in Ulfila’s alphabet the letter
+    〈a〉 can also represent a long ā. Cf. the well-known preterite forms of such verbs as
+    Goth briggan ‘to bring’ and þagkjan ‘to think’ contrasted with their West Germanic
+    counterparts in which reflexes of a long nasalized PGmc *ą̄ are clearly visible.
+        (9) Goth                         OHG OE          PGmc
+            briggan → 1sg.pret. brahta ~ brāhta brōhte < *brą̄htōn
+            þagkjan → 1sg.pret. þahta ~ dāhta þōhte < *þą̄htōn
+
+    This means that Goth 〈ƕar〉 and 〈þar〉 may equally well represent ƕăr and þăr,
+    which would match our theoretical expectations, 11 or ƕār and þār with the same
+    unexpected vowel length as in Goth hēr.
+        The Old High German counterparts of Goth 〈ƕar〉 ‘where’ and 〈þar〉 ‘there’
+    were pronounced with a long ā. This is clearly shown by the spelling in the Old
+    High German texts that at least occasionally indicate the difference in the vocalic
+    quantity.
+      (10) OHG                  Lex Salica       Notker
+           hwār ‘where’         –                〈uuâr〉
+           dār ‘there’          〈đaar〉           〈dâr〉 or 〈târ〉
+
+    In Old English, the adverbs for ‘where’ and ‘there’ were also spoken with a long
+    vowel. This is clearly indicated by their spellings with 〈æ〉 in West Saxon but 〈e〉 in
+    Anglian sources.
+
+    10. Cf. Wilmanns (1899: 641).
+    11. Cf., recently univerbated with the particle hí ‘indeed’, Skt kár-hi ‘when’ and tár-hi ‘then’ from
+    ká- ‘who, what’ and tá- ‘that’, respectively.
+
+=== page 143 ===
+
+                                               West Germanic lengthening and Gothic breaking 143
+
+
+
+  (11) OE                    OE
+       (West Saxon)          (Anglian)
+       hwǣr                  hwēr            ‘where’
+       ðǣr                   ðēr             ‘there’
+
+The reflexes of a PWGmc long *ā in OHG hwār, dār and OE hwǣr, ðǣr are tradi-
+tionally attributed to a comparatively recent Proto-West-Germanic vowel length-
+ening. 12 The conditioning of this lengthening remains, however, unclear. The only
+point which seems to be clear, is the fact that the lengthening somehow correlated
+with the monosyllabicity of the adverbs. This is most clearly shown by the follow-
+ing data:
+  (12) OHG
+       place adverb   directional adverbs
+       hwār ‘where’ ~ hwăra, hwărōt ‘where to, whither’
+       dār ‘there’    dăra, dărōt ‘there to, thither’
+       cf. also
+       hiar ‘here’  ~ hĕra, hĕrōt ‘here to, hither’
+
+The evidence for a short vowel in the Old High German disyllabic directional ad-
+verbs is provided by their spelling (cf. 〈uuára〉 and 〈dára〉 or 〈tára〉 in Notker’s writ-
+ings) and confirmed by a well-known Middle High German sound change. In the
+‘classical’ Middle High German texts written around 1200 and later, the unstressed
+e (which is the regular reflex of all Old High German monophthongs in unstressed
+position) is systematically lost after resonants preceded by a short vowel but re-
+tained after resonants preceded by long vowels. Cf. the inflection of Middle High
+German descendants of OHG hār ‘hair’ (with a long vowel in the root) and kăr
+‘pot’ (with a short vowel):
+
+
+
+
+12. Cf. already Bezzenberger (1873: 114) and Mahlow (1879: 163), more recently Rösel
+(1962: 16, 76), Lühr (1982: 644–645), Ringe (1984: 139) and Stiles (2004: 388–389). Theoretically,
+OHG hwār, dār and OE hwǣr, ðǣr can also reflect PGmc *hwēr, *þēr. This latter assumption,
+advocated for instance by Bremer (1886: 31), Jellinek (1891: 298), Sievers (1892: 245–248), Walde
+(1900: 65–66), G. Schmidt (1962: 68–78), Bammesberger (1991: 630–631) and mentioned also
+in Lloyd, Lühr & Springer (1998: 533–535) and Lühr (2000: 38, 43), is implausible because it
+necessarily separates the West Germanic adverbs from their counterparts in East Germanic.
+Goth ƕar, þar cannot contain a reflex of PGmc *ē (> Goth ē). Hirt’s (1892: 29) suggestion of a
+secondary shortening of PGmc *ē to Goth a in ƕar, þar under weak stress (cf. similarly PGmc
+*fadēr ‘father’ > OHG fater, ON faðir but Goth fadar) is directly contradicted by the derivative
+Goth ƕarjis ‘which’, which must reflect a Proto-Germanic pronoun (cf. below in the main text
+of the present section).
+
+=== page 144 ===
+
+144 Eugen Hill
+
+
+
+      (13)             OHG          MHG            MHG
+                       (ca. 900)    (ca. 1100)     (ca. 1200)
+             gen.sg. hāres, kăres   hāres, kăres   hāres, kărs
+             instr.sg. hāru, kăru > hāre, kăre   > hāre, kăr
+             dat.pl. hārum, kărum   hāren, kăren   hāren, kărn
+
+    The development of the Old High German disyllabic directional adverbs in Middle
+    High German, where the unstressed e (< unstressed OHG a and ō) in the second
+    syllable was lost, provides clear proof of the shortness of the root vowel.
+      (14) OHG               MHG           MHG
+                             (ca. 1100)    (ca. 1200)
+             hwăra, hwărōt > wăre, –     > war, –     ‘where to, whither’
+             dăra, dărōt     dăre, dăret   dar, dart ‘there to, thither’
+             cf. also
+             hĕra, hĕrōt   > hĕre, –     > her, –     ‘here to, hither’
+
+    Therefore the evidence of the disyllabic directional adverbs demonstrates that the
+    secondary length in OHG hwār, dār and OE hwǣr, ðǣr was somehow caused by
+    the monosyllabic pronunciation of these adverbs.
+        How to explain this secondary length? It is conceivable that the lengthening
+    was ultimately caused by the same sound change which was responsible for the
+    lengthening of vowels in the following West Germanic words: 13
+      (15) PGmc   Goth   OHG                 OE
+          *bi    bi     bī, bi-             bī, be-  ‘around, by’
+          *ju    ju     jū, jo              giū      ‘earlier, already’
+          *ja  ~ ja   > jā                  gēa, iā  ‘yes, certainly’
+          *swa   swa    sō, so              swā, swǣ ‘so, thus’
+          *ni    ni     nī, ne-             ne-      ‘no, not’
+
+    The short pronunciation of i in Goth bi ‘around’ is shown by its spelling with 〈i〉.
+    That this shortness must be of Proto-Germanic age, hardly resulting from a more
+    recent developement, is shown by the etymology of the adverb, cf. most recently
+    Hill (2012: 184–185). Similarly, the shortness of u and a in Goth ju and ja and,
+    therefore, also in their Proto-Germanic ancestors is suggested by the etymology,
+    cf. Lühr et al. (2014: 249–251, 301–303). Goth swa ‘so, thus’ seems to be a closer
+
+
+
+
+    13. Cf. Behaghel (1928: 275), Lloyd, Lühr & Springer (1998: 1–3) and Grønvik (1998: 92–93).
+    Somewhat differently Müller (2007: 72), who seeks the cause of the lengthening in the semantics
+    of the West Germanic place adverbs.
+
+=== page 145 ===
+
+                                                   West Germanic lengthening and Gothic breaking 145
+
+
+
+match for OHG sō, OE swā than Goth swē ‘such as, like’. 14 The negation PGmc *ni
+is a regular reflex of PIE *né (cf. Skt ná, Lith nè, ORu ne), the raising of inherited
+short *e to PGmc *i is known to be regular under weak stress.
+     The long pronunciation of the vowel in OHG, OE bī ‘around, by’ is secured
+firstly by the spellings 〈pii〉 in Old High German glosses as well as 〈bî〉, 〈pî〉 in Notker’s
+writings, secondly by the diphthongization in the contemporary descendants of the
+adverb, cf. MoG bei and MoE by. The variant forms with a short vowel, i.e. the verbal
+prefix OHG bĭ- (often spelled 〈be〉, 〈pe〉 in glosses and Notker’s writings), OE be- >
+MoG, MoE be-, reflect the weak stress use of the same adverb as verbal prefix.15 As
+for OHG jū ‘earlier, already’ the long pronunciation of the vowel is indicated by its
+several occurrences as 〈iû〉 in Notker’s texts (beside slightly more frequent spellings
+〈íu〉 and 〈îu〉). Similarly, OHG jā, sō and nī are transmitted as 〈jâ〉, 〈sô〉 and 〈nî〉 respec-
+tively in Notker’s writings. 16 When these words are used as weakly stressed particles,
+their vowels remain short and the words appear as OHG jŭ (often spelled 〈io〉) and sŏ
+(attested also as 〈sa〉 or 〈se〉). Similarly, the negation appears with a short vowel when
+used proclitically as verbal prefix, i.e. nĭ- (always written 〈ne〉 by Notker), cf. OE ne-.
+     This data provides clear evidence for a secondary lengthening in several West
+Germanic stressed monosyllabic words. However, the lack of lengthening in, for
+instance, OHG er ‘he’ (always spelled 〈ér〉 by Notker) – seems to suggest that the as-
+sumed Proto-West-Germanic monosyllabic lengthening operated only on stressed
+monosyllabics which ended in a vowel.17 As is widely known, a typologically similar
+but probably independent lengthening must have occurred in North Germanic:
+  (16) PGmc   Goth   ON OSw OGu
+      *sa    sa     sá sá   –  ‘this’ (nom.sg. masc.)
+      *ja  > ja   ~ já já   –  ‘yes, certainly’
+      *swa   swa    svá swá só ‘so, thus’
+      *ni    ni     né nǽ –    ‘no, not’
+
+
+
+14. Pace Kroonen (2013: 496–497). Historically, Goth swa and swē seem to reflect respectively
+the neuter form of the nominative-accusative and the instrumental singular of an inherited pro-
+noun, cf. PIE *su̯ó- ‘self ’ (Skt sva-tas, YAv xνa-tō ‘by itself ’, Gk acc.sg. hé, dat.sg. hoĩ, in dialects
+respectively 〈ϝε〉, 〈ϝοι〉, ‘himself, him’). The pattern Goth swa ‘so, thus’ (< ‘itself (again)’) ~ swē
+‘such as, like’ (< ‘by itself (again)’) closely resembles the well-known pattern ƕa ‘what’ ~ ƕē ‘with
+what, by what’.
+15. Cf. already Loewe (1927).
+16. The use of PGmc *ni ‘not’ – originally a weak stress form with a regular raising of inherited
+*e to *i – as a stressed word in Old High German must reflect a West Germanic innovation.
+17. Cf. Reis (1974: 194–195, 300). As for the length in MHG īn, MoG ein ‘into’, which seems to
+correspond to Goth, ON inn ‘into’, cf. Kroonen (2010: 368–369, 374–375).
+
+=== page 146 ===
+
+146 Eugen Hill
+
+
+
+    The restriction of the West Germanic lengthening on stressed monosyllabics ending
+    in vowels means that the long vocalism of OHG hwār, dār, OE hwǣr, ðǣr beside
+    OHG hwăra, hwărōt and dăra, dărōt must be explained by a distinct process, a
+    special lengthening in monosyllabic words ending in PGmc *-r. However, if this is
+    so, the following question arises. The pair OHG hiar, OE hēr ~ OHG hĕra, hĕrōt
+    also participates in the described morphological pattern. The long vocalism of OHG
+    hiar, OE hēr is inherited from Proto-Germanic as shown by Goth hēr, ON hér. Why
+    not assume that the lengthening in monosyllabic words ending in PGmc *-r was al-
+    ready a Proto-Germanic development in all three adverbs, ‘where’, ‘there’ and ‘here’?
+          This assumption is usually not made for two seemingly obvious reasons. In the
+    following fparagraphs I will show that both reasons, although apparently obvious,
+    are actually inconclusive and should not prevent us from assuming already a Proto-
+    Germanic age of the postulated lengthening in monosyllabic words ending in *-r.
+          The first piece of evidence speaking against a Proto-Germanic date for vowel
+    length in the place adverbs for ‘where’ and ‘there’ is the shape of these adverbs in
+    the North Germanic languages. Whereas ON hér, OSw hǽr ‘here’ has a long vowel,
+    ON hvar, OSw hwar ‘where’ and ON, OSw þar ‘there’ are usually assumed to have
+    a short a due to their pronunciation in more recent times.
+          However, the North Germanic place adverbs must originally have participated
+    in a system very similar to that of Old High German where monosyllabic place ad-
+    verbs with a long vowel or a diphthong hiar ‘here’, hwār ‘where’, dār ‘there’ possess
+    disyllabic counterparts with directional meanings and a short vocalism hĕra ‘here
+    to’, hwăra ‘where to’, dăra ‘there to’. That a similar pattern has to be assumed also
+    for North Germanic is shown by OSw hǽr ‘here’, which has a by-form OSw hiær,
+    OGu hier, where iæ or ie can only reflect the well-known a-breaking of a Proto-
+    Germanic short *e:
+      (17) PGmc       OHG      OSw     OGu
+          *helpan-   helpfan  hiælpa hielpa ‘to help’
+          *geldan- > geltan ~ giælda –      ‘to pay’
+          *bergan-   bergan   biærgha –     ‘to retrieve’
+
+    That OSw hiær, OGu hier must be identified with OHG hĕra was established as
+    early as Noreen (1904: 366–367) and Kock (1916: 251–252). Why the Old Swedish
+    and Old Gutnic counterpart of OHG -a in hĕra does not surface in OSw hiær, OGu
+    hier is not entirely clear. A possible explanation is frequent use of this adverb before
+    vowel-initial words (such as af, áf ‘from’, at, át ‘to’ etc.) where the second syllable of
+    OSw *hiæra, OGu *hiera would be regularly lost.
+         It is remarkable that, unlike the situation in Old High German, both the genu-
+    inely monosyllabic OSw hǽr and the formerly disyllabic OSw hiær, OGu hiar seem
+
+=== page 147 ===
+
+                                            West Germanic lengthening and Gothic breaking 147
+
+
+
+to be equally used as a place adverb ‘here’ and directional adverb ‘here to’. This
+failure to discriminate between the place adverb and the corresponding directional
+adverb led eventually to a generalization of the variant hǽr in Old Swedish. The
+same must be true for Old Norse, where only hér is attested.
+     If the adverb ‘here’ had an originally disyllabic short-vowel variant not only
+in Old High German but also in the most recent prehistory of the attested North
+Germanic dialects, it is only consistent to assume a similar pattern also for North
+Germanic ‘where’ and ‘there’. However, the difference between, for instance, ON
+hvár, þár on the one hand and hvăr(a), þăr(a) on the other would hardly be de-
+tectable in the oldest texts. Due to the well known inconsistency of the sources, the
+lack of spellings with 〈á〉 or 〈aa〉 is no proof of a short pronunciation. The reflexes
+of a short a in the modern descendants of Old Norse and Old Swedish are easily
+explained by a secondary generalization very similar to that which must be assumed
+for ‘here’. ON hvā̆r, OSw hwā̆r attested in the texts also mean both ‘where’ and
+‘where to’. No disctinction between ‘there’ and ‘there to’ is made by ON, OSw þā̆r.
+     From this it follows that North Germanic languages actually provide no con-
+clusive evidence against a long vowel in Proto-Germanc adverbs *hwār ‘where’ and
+*þār ‘there’.
+     The second reason for attributing vowel length in the West Germanic descend-
+ants of ‘where’ and ‘there’ to a recent post-Proto-Germanic development is a par-
+ticular derivative of Goth ƕar ‘where’. The pronoun Goth ƕarjis ‘which’, clearly
+based on Goth ƕar ‘where’, has a short a in its root. In Gothic, ji in a second sylla-
+ble of a disyllabic stem was in principle only possible after a so-called “short” first
+syllable; after a “long” first syllable ei is to be expected. This distribution of Goth ji
+and ei can be deduced, for instance, from the nominative and genitive of masculine
+io-stems (cf. niþjis ‘kinsman’ ~ lēkeis ‘physician’) and from present tense inflection
+of class I weak verbs (cf. 2sg. lagjis ‘lay’ ~ rōdeis ‘talk’). 18 Now, the relevant case
+forms of Goth ƕarjis – nom.sg. masc. and gen.sg. masc. and nt. ƕarjis (cf. also
+ƕarjiz-uh ‘each’, ain-ƕarjiz-uh ‘each one’) – point to a short a in the root of the
+pronoun. This seems to imply a short a also in the root of its derivational base, the
+place adverb ƕar ‘where’.
+     However, Goth ƕarjis was not a recent innovation in Gothic but inherited from
+Proto-Germanic. This is demonstrated by its North Germanic counterpart pre-
+served in ON hverr ‘who, which’. Goth ƕarjiz and ON hverr presuppose a disyllabic
+
+
+18. Cf. on this handbooks on Gothic such as Streitberg (1910: 103–105, 125–126, 148–151),
+Jellinek (1926: 102–105, 132, 155), Kieckers (1928: 109–111, 155–156, 223–234), Krause
+(1968: 151–152, 179–180) as well as Braune & Heidermanns (2004: 58, 91–92, 117–119, 158–161).
+A more detailed presentation of the facts can be found in Seebold (1972: 64–78).
+
+=== page 148 ===
+
+148 Eugen Hill
+
+
+
+    pronoun PGmc *hwarja- ‘which’, which could have emerged prior to the assumed
+    lengthening of the vowel in its monosyllabic derivational base. The short root vow-
+    els of Goth ƕarjis and ON hverr are therefore not unexpected given the distribution
+    of length in OHG hĕra, hĕrōt, dăra, dărōt and hwăra, hwărōt beside hiar, dār, hwār.
+         It may be concluded that neither ON hvar, þar, OSw hwar, þar with their alleged
+    short a nor Goth ƕarjis, ON hverr constitute decisive arguments against a Proto-
+    Germanic age of the vowel length in ‘where’ and ‘there’. This makes it possible to
+    attribute the emergence of the unexpected vowel length in all three place adverbs –
+    ‘where’, ‘there’ (evidence for length in West Germanic) and ‘here’ (evidence for
+    length in all of Germanic) – to one and the same Proto-Germanic development.
+    This development should probably be described as a secondary lengthening of a
+    vowel in stressed monosyllabic words ending in PGmc *r.
+
+
+    5. The lowering in ‘here’
+
+    If this is true, the theoretically unexpected length of the vowel in PGmc *hẹ̄r ‘here’
+    may be considered satisfactorily explained. The second problem with this adverb
+    is the unexpected timbre of its vowel. PGmc *hwa- ‘who, what’ ~ *hwar (> *hwār)
+    ‘where’ and *þa- ‘that’ ~ *þar (> *þār) ‘there’ make one expect PGmc *hi- ‘this
+    here’ ~ *hir > *hīr ‘here’, not *hẹ̄r (required by Goth hēr, ON hér, OE hēr and OHG
+    hiar). How to account for this second deviation from the theoretical expectations?
+         This is only possible by proposing a secondary lowering of the inherited high
+    vowel due to its position before PGmc *r. This lowering can be theoretically as-
+    sumed to have occurred after the Proto-Germanic lengthening of the vowel, i.e.
+      (18) early-PGmc *hir > *hīr > late-PGmc *hẹ̄r
+
+    or prior to this lengthening, i.e.
+
+      (19) early-PGmc *hir > *hẹr > late-PGmc *hẹ̄r
+
+    In both cases late-PGmc *ẹ̄, originally an allophone, would have achieved phonemic
+    status by merger with *ẹ̄ in such Latin loans as reflected in Goth mēs ‘dish, table’,
+    OHG biaza ‘beetroot’ (from Latin mēnsa, bēta) etc. 19 Which of the two possibilities
+    mentioned is the more plausible can only be decided empirically; we must look for
+    corroborating evidence in different parts of the Germanic grammar and lexicon.
+
+
+    19. A similar merger has to be assumed for *ā in late-PGmc *hwār ‘where’, *þār ‘there’, whose
+    vowel must have been close to that in the suffixes of such nouns as Goth bōkāreis ‘scribe’, MHG
+    lērǣre ‘teacher’ etc. (from Latin -ārius).
+
+=== page 149 ===
+
+                                             West Germanic lengthening and Gothic breaking 149
+
+
+
+Such a look reveals that PGmc *ī may indeed be lowered to something like *ẹ̄
+(> OHG ia) but this development seems to occur only in the most recent prehistory
+of one Germanic language, Old High German, and clearly cannot be assumed for
+Proto-Germanic times. 20
+  (20) Goth                  ON                   OE                OHG
+       reiran ‘to tremble’ –                      –                 –
+       skeirs ‘clear, lucid’ skírr ‘clear’        scīr ‘clear’      skiari ‘bright, clear’
+       –                     tírr ‘glory, honour’ tīr ‘glory’       ziari ‘beauty’
+       –                     –                    wīr ‘filigree’    wiara ‘filigree’
+
+Similarly, a lowering of a short i to something like ẹ before r is also known to occur
+in just one Germanic language, Gothic, where it is usually subsumed under the term
+Gothic breaking. Cf. the situation within the strong verbs of class IV
+  (21) Gothic
+       niman, 3sg. pret. nam ‘to take’ but bairan, 3sg. pret. bar ‘to carry’
+       stilan, 3sg. pret. stal ‘to steal’  -tairan, 3sg. pret. -tar ‘to tear’
+       qiman, 3sg. pret. qam ‘to come’
+
+This development is generally believed to be a recent sound change in Gothic.
+However, there is evidence suggesting a very similar change of Proto-Germanic
+short *i specifically in the position before *r also in the North and the West Germanic
+languages. To make this evidence visible, the behaviour of Proto-Germanic high
+vowels in North and West Germanic has to be discussed in more detail.
+    According to a widespread view, the Proto-Germanic short high vowels *u and
+*i have been lowered in Proto-North-West-Germanic to something like *ọ and *ẹ,
+respectively when followed by a non-high vowel in the next syllable. This assump-
+tion is needed for explaining issues of the following kind:
+  (22) nom.sg. PGmc *guðan > PNWGmc *goða              ‘deity’
+       (Goth guþ)            (OHG got, OE god, ON goð)
+
+Apparent inconsistencies and exceptions can be, for the most part, plausibly at-
+tributed to morphological analogy. 21 Cf., for example, the descendants of PGmc
+*wulfa- ‘wolf ’:
+
+
+
+
+20. Cf. Ringe (1984: 145–149).
+21. Cf. already Paul (1879: 82–84) and, more recently, Hock (1973: 343–344).
+
+=== page 150 ===
+
+150 Eugen Hill
+
+
+
+      (23) nom.sg. PGmc *wulfaz ‘wolf ’ > OHG wolf, Runic -wolafz but
+           (Goth wulfs)                   OS, OE wulf, ON ulfr (> úlfr)
+
+    The obvious inconsistency of lowering (o in Old High German and Runic Norse but
+    u in Old Saxon, Old English and Old Norse) is most easily explained by secondary
+    levelling in an inflectional paradigm which originally, i.e. in Proto-North-West-
+    Germanic times, must have comprised case forms with both high and non-high
+    vowels in their inflectional endings.
+      (24)           PGmc        PNWGmc     OHG                   OS
+             nom.sg. *wulfaz     *wolfaz    wolf                  wulf
+             acc.sg. *wulfan   > *wolfa   > wolf                  wulf
+             dat.pl. *wulfamiz   *wulfumz   wolfum                wulfum
+
+    The model for this levelling would have been provided by those members of the
+    given inflectional class which did not participate in the alternation because they
+    did not contain Proto-Germanic high vowels in their roots. Cf., for instance, PGmc
+    *daga- ‘day’ (Goth dags):
+      (25)           PGmc     PNWGmc    OHG OS
+             nom.sg. *dagaz   *dagaz    tag   dag
+             acc.sg. *dagan > *daga   > tag   dag
+             dat.pl. *dagamiz *dagumz   tagum dagum
+
+    This traditional doctrine of PGmc *u and *i lowering seems to be supported by
+    so much material that today it is only rarely questioned. However, there is strong
+    evidence suggesting that in North-West Germanic originally only PGmc *u was
+    lowered by *a in the next syllable whereas PGmc *i did not participate in this de-
+    velopment. 22 The clearest piece of this evidence is the phonology of the preterite
+    tense participle in two classes of strong verbs. In strong verbs of class II, PGmc *u
+    in the root of the preterite tense participle is always reflected as PNWGmc *o, i.e.
+    it is secondarily lowered due to the influence of the non-high vowel in the suffix
+    PGmc masc. *-anaz, fem. *-anō (Goth -ans, -ana). By contrast, in strong verbs of
+    class I PGmc *i in the root of the preterite tense participle was followed by the same
+    suffix but nevertheless resisted lowering and appears as PNWGmc *i.
+
+
+
+
+    22. Cf. already Bremer (1909: 149–151), in more recent times Lloyd (1966), similarly Connolly
+    (1977, 1979, 1984).
+
+=== page 151 ===
+
+                                             West Germanic lengthening and Gothic breaking 151
+
+
+
+  (26)                 infinitive prt. prcp.        prt. prcp.
+                       in NWGmc in NWGmc            in Gothic
+                                  (nom.sg. masc.)   (nom.sg. masc.)
+          class II OHG biotan     gi-botan          budans          ‘to offer’
+                       liogan     gi-logan        ~ lugans          ‘to lie’
+                       giozan     gi-gozzan         gutans          ‘to pour’
+                   OE  bēodan     ge-boden
+                       lēogan     ge-logen
+                       gēotan     ge-goten
+                   ON bjóða       boðinn
+                       ljúga      loginn            prt. prcp.
+                       gjóta      gotinn            in Gothic
+          class I OHG bīzan       gi-bizzan         bitans          ‘to bite’
+                       stīgan     gi-stigan       ~ stigans         ‘to step’
+                       bītan      gi-bitan          bidans          ‘to await’
+                   OE  bītan      ge-biten
+                       stīgan     ge-stigen
+                       bīdan      ge-biden
+                   ON bíta        bitinn
+                       stíga      stiginn
+                       bíða       biðinn
+
+Many scholars tried to explain the lack of lowering in the class I preterite tense
+participles in morphological terms. The older proposals are reviewed and justly
+rejected by Hock (1973: 340–341), who correctly observes that the Proto-North-
+West-Germanic conjugation system provides no plausible model for the alleged
+replacement of theoretically expected PNWGmc *bẹtanaz, *stẹganaz, *bẹðanaz by
+the *bitanaz, *stiganaz, *biðanaz required by the evidence.
+     This justified criticism applies equally to Hock’s own attempt at a morpholog-
+ical explanation by influence of the infinitive: 23
+  (27) PNWGmc
+       prt. prcp.        prt. prcp.                 infin.
+                         (nom.sg. masc.)
+         *bẹtanaz     > *bitanaz                   *bītana
+         *stẹganaz    > *stiganaz       because of *stīgana
+         *bẹðanaz     > *biðanaz                   *bīðana
+
+
+
+
+23. Cf. similarly Cercignani (1980a: 130).
+
+=== page 152 ===
+
+152 Eugen Hill
+
+
+
+    If the preterite tense participle of class I had been really remodelled on the basis
+    of the infinitive, this remodelling would have followed the pre-existent pattern of
+    classes VI und VII where the vocalism of the preterite tense participle is the same
+    as in the infinitive.
+      (28) PNWGmc                                  OHG
+           infin.             prt. prcp. (nom.     infin.   prt. prcp. (nom.
+                              sg. masc.)                    sg. masc.)
+            *farana          *faranaz             faran    gi-faran         ‘to travel’
+            *grabana       ~ *grabanaz        cf. graban ~ gi-graban        ‘to dig’
+            *slāpana         *slāpanaz            slāfan   gi-slāfan        ‘to sleep’
+            *stautana        *stautanaz           stōzan   gi-stōzan        ‘to push’
+
+    This means that Hock’s remodelling of the hypothetical participles PNWGmc
+    *bẹtanaz, *stẹganaz, *bẹðanaz under the influence of the corresponding infinitives
+    should have created PNWGmc *bītanaz, *stīganaz, *bīðanaz and not PNWGmc
+    *bitanaz, *stiganaz, *biðanaz suggested by the evidence.
+         More evidence for the resistance of PGmc *i to participating in the lowering be-
+    fore non-high vowels is provided by derivatives of PGmc *hi- (< PIE *ḱí- ‘this here’,
+    cf. Section 2) and PGmc *ni- ‘beneath, below’ (< PIE *ni-, cf. Skt ní, OAv nī ‘down’):
+      (29) PGmc                    OHG OE
+          *hi- ‘this here’      > hina   hinan, hionan ‘from here’
+          *ni- ‘beneath, below’ > nidana niðan, nioðan ‘from below’
+
+    This evidence indicates that lowering or non-lowering of PGmc *i in North-West-
+    Germanic was conditioned not by the following vowels, as in the case of PGmc
+    *u, but rather by some different factor or set of factors. 24 One of these different
+
+    24. The oscillation between i and e when followed by a in ON hiðra, heðra ‘here’, higat, hegat ‘here
+    to, hither’, OSw niþan, næþan ‘from below’ (cf. Noreen 1904: 151–152, 1923: 53–54) is probably
+    caused by a more recent and exclusively North Germanic development (cf. already Kock 1898,
+    less clear Kock 1916: 2–13). For lack of inflection, the i ~ e-variation in these adverbs cannot be
+    explained by reference to different paradigmatic forms and hence projected into pre-Proto-Norse
+    times. The recent Proto-Norse open i-vowel to be assumed on these grounds is already attested in
+    Runic inscriptions from the 7th c. Cf. in the case of ON hiðra, heðra ‘here’ the spellings hedera
+    (Stentoften), haidera (Björketorp) (Krause & Jankuhn 1966: 215 and Krause 1971: 62). The same
+    Proto-Norse open i seems also to be reflected in weak verbs like ON dvina, dvena ‘to vanish’ (on
+    the etymology, cf. Seebold 1970: 171, 483–484) and in the strong verb ON viga, vega ‘to fight’ (cf.
+    Seebold 1970: 544–545). – Instances of e from PGm *i in only one West Germanic language seem
+    to be all secondary. For instance, OHG leckōn ‘to lick’ beside OS likkon, OE liccian ‘to lick’ (PGmc
+    *i in the root is secured by Gk leíkʰō, Old Irish ligim ‘to lick) might be influenced by semantically
+    close but etymologically unrelated OHG lecken ‘to moisten, wet’ (cf. OE leccan ‘to moisten’, on
+    the etymology cf. Seebold 1972: 330).
+
+=== page 153 ===
+
+                                                West Germanic lengthening and Gothic breaking 153
+
+
+
+factors might have been the consonants immediately following PGmc *i. As already
+mentioned in Section 2 above, it is already established that accented PGmc *i was
+systematically lowered before a tautosyllabic PGmc *z. This is demonstrated by the
+West Germanic reflexes of PGmc nom.sg. masc. *hiz ‘this here’ (< PIE *ḱís, cf. Lat
+cis, Lith šìs), of PGmc nom.sg. masc. *iz ‘he’ (< PIE *ís ‘this’, cf. Goth is ‘he’, Lat is
+‘this, that’) and, finally, also of PGmc *mizdōn ‘reward’ (< PIE *misdʰó-, cf. Goth
+mizdō and Old Avestan mīždǝm, Skt mīḍhám, Gk misthós):
+  (30) PGmc      PNWGmc   OE         OS     OHG
+      *iz     > *ẹz    > –          –      er  ‘he’
+      *hiz    > *hẹz   > hē         hē, hī her ‘this here’
+      *mizdōn > *mẹzdō > meord, mēd mēda miata ‘reward’
+
+A similar lowering of PGmc *i seems to have occurred also before PGmc *st but,
+paradoxically, never before PGmc *sk.
+    The lowering of PGmc *i before *st follows from the West Germanic reflex of
+PGmc *nistan ‘nest’ (< PIE *nisdó-, cf. Lat nīdus, Skt nīḍás) which is only attested
+with e-timbre:
+  (31) PGmc      PNWGmc   OE OHG ODu
+      *nistan > *nẹsta > nest nest nest ‘nest’
+
+The unexpected i-timbre in the root of several items with *i followed by a tauto-
+syllabic *z or by *st may be explained by the North and West Germanic i-mutation
+which can be assumed to be a more recent development: 25
+  (32) OE nistan, OHG nisten                 < PNWGmc *nẹstijana (derived from *nẹsta
+       ‘to nest’                             ‘nest’)
+       OE, OHG, ON list ‘skills’             < PNWGmc *lẹstiz (cf. Goth acc.pl. listins,
+                                             related to Goth 3sg. pres. lais ‘knows’)
+          OE liornian, OS līnon,             < PNWGmc *lẹznijana (also related to Goth
+          OHG lirnen ‘to learn’              3sg. pres. lais ‘knows’) 25
+
+The i-timbre in the root of OHG, OS kista, OE (West Saxon) cist ‘box’ does not
+contradict the assumed development, either. The word is borrowed from Lat cista
+
+
+
+
+25. In weak verbs of class III (the bulk of which was secondarily intergrated into class II in Old
+Saxon and Old English), the i-mutation originally occurred only in part of the paradigm. For
+this reason, forms with retained e-timbre in the root are also attested, cf. OE leornian side by side
+with liornian (in West Saxon as well as Anglian sources) and OHG lernēn (mostly Franconian)
+beside lirnēn (mostly Upper German).
+
+=== page 154 ===
+
+154 Eugen Hill
+
+
+
+    ‘box’; it might, therefore, have entered the language only after the proposed lower-
+    ing of inherited *i was completed. 26
+         The lack of lowering of PGmc *i before PGmc *sk is demonstrated by the North
+    and West Germanic counterparts of Lat piscis ‘fish’ and of Lat virga ‘twig, shoot’,
+    dialectal Lith vizgà ‘branch of silver birch, sedge’ (< PIE *u̯ísgah₂-), finally, probably
+    also by the phonology of the North and West Germanic borrowing from Lat discus
+    ‘plate, saucer’: 27
+      (33) PGmc      PNWGmc    ON OE OS                          OHG
+          *fiskaz > *fiskaz > fiskr fisc fisk                   fisk  ‘fish’
+          *wiskō > *wisku   > visk -wisc –                      -wisk ‘wisp’ 27
+                     *diskaz > diskr disc disk                   tisk ‘plate’
+
+    The o-stem inflection of Proto-Germanic ‘fish’ is secured by Goth dat.pl. fiskam,
+    acc.pl. fiskans and ON acc.pl. fiska.
+         ON visk is a feminine ā-stem, as might also be OE -wisc. OHG -wisk with its
+    deviating later gender (masculine or neuter due to the descendants in more recent
+    times) is easily explained as a recent back-formation, based on the nominative
+    singular of the feminine ā-stem secondarily reinterpreted as nominative plural of
+    a neuter o-stem. Both case forms originally ended in PGmc *-ō > PNWGmc *-u
+    (cf. Goth -a, OE -u and the u-mutation in the root of ON nom.sg. fem. grǫf ‘grave’
+    beside pl. grafar and nom.pl. nt. bǫrn ‘children’ beside sg. barn).
+         The o-stem inflection of the loan ‘plate, saucer’ is suggested by the fact
+    that Latin masculine o-stems were probably integrated as o-stems into the
+
+
+    26. Contrary to what is traditionally assumed (cf. Pfeifer et al. 1993: 657, Lühr et al. 2014: 544
+    etc.), the date of this borrowing need not precede the late-Latin palatalization of c before front
+    vowels. Prior to the High German sound shift, which created the affricate OHG z (out of the
+    more ancient *t in several positions), the late-Latin palatalized c was most likely to be replaced
+    with an allophone of k in the West Germanic predecessors of Old High German and Old Saxon.
+    As for the Anglian OE cest ‘box’ and its unexpected e, this variant might have been borrowed
+    not directly from Latin but from Brythonic after the emigration to Britain, cf. Welsh cest, Breton
+    kest ‘basket’.
+    27. The Old English noun is directly attested only in gran-wisc ‘chaff ’ (with granu ‘moustache’,
+    etymologically ‘awn’), the simplex is presupposed by wioscian (spelled 〈weoxian〉) ‘to wipe’. In
+    Old High German, the noun is also found only in compounds such as ofan-wisk ‘stove-brush’.
+    The simplex wisk ‘wisp’ occurrs in Middle High German and Middle Low German sources.
+    The standard etymological connection with Lat virga is advocated, for instance, in Pfeifer et al.
+    (1993: 1573–1574), Seebold (2011: 992), de Vaan (2008: 682). As for Lith vizgà (attested as
+    ‘branch of silver birch’ in Šatės and as ‘sedge’ in Kvėdarna), cf. Fraenkel (1965: 1269) and Derksen
+    (2015: 508–509). For wisge, wysge ‘oats’ in Grunau’s Old Prussian vocabulary, cf. Mažiulis &
+    Rinkevičius (2013: 975).
+
+=== page 155 ===
+
+                                              West Germanic lengthening and Gothic breaking 155
+
+
+
+North-West-Germanic declension system (not as u-stems as is the case in Gothic,
+cf. Goth sakkus, kubitus from Lat saccus ‘sack’, cubitus ‘feast’). This is shown by OHG
+koh, ODu, MDu kok ‘cook’ which is an o-stem borrowed from Lat cocus ‘cook’ (a
+vernacular by-form of Classical Latin coquus) prior to the secondary lengthening
+of stressed short vowels in late-Latin open syllables (cf. Lühr et al. 2014: 672–673).
+Cf. also OS dat.sg. koka ‘cook’ (once in the Freckenhorst Urbarium), which prob-
+ably also belongs to an o-stem. In early West Germanic spoken on the continent,
+a masculine u-stem with a short root vowel followed by a single consonant would
+have preserved the u-inflection (cf. OHG situ, OS sidu corresponding to Goth sidus
+‘custom’ etc.). A particularly early date of the borrowing of Lat discus is indicated
+by another member of the semantic field to which this loan belongs. Here beside
+late-Lat cocus ‘cook’ and discus ‘plate, saucer’ also cocīna ‘kitchen’ (for Classical
+Latin coquīna) is found, cf. OHG kuhhīna, OE cycene ‘kitchen, inn’ (cf. Lühr et al.
+2014: 855–856). In this latter word, the substitution of *u for Lat o before a high
+vowel in the next syllable implies that the term had found its way into Germanic
+earlier than the Runic inscription of Gallehus (ca. 400), where o was already possi-
+ble before ij (as attested by the form holtijaz). It seems not unreasonable to assume
+that discus ‘plate, saucer’ was borrowed at least not much later than cocīna ‘kitchen’.
+     The observed correlation between the lowering of PGmc *i and its position
+before *sk (where no lowering occurred) or *st (where the lowering worked) seems
+to be, again, valid for stressed syllables only. In unstressed syllables, PGmc *i seems
+always to be preserved at least in West Germanic, also before reflexes of PGmc *st.
+This follows from the consistent spelling 〈i〉 in the suffix of denominal adjectives
+such as OHG, OS himilisk ‘celestial’, mennisk ‘human’ etc. but also in superlatives
+such as OHG, OS wirsisto ‘worst’, nāhisto ‘nearest’ etc. In both cases, OHG, OS i
+reflects PGmc *i from more ancient *i. 28
+     These considerations on the fate of PGmc *i in North- and West-Germanic lead
+one to the following conclusion which is highly relevant for the main topic of the
+present paper. If the lowering of stressed PGmc *i in North- and West-Germanic
+did indeed depend not on the vocalism of the following syllable but on the conso-
+nants immediately following the vowel, it necessarily has to be assumed that PGmc
+*i was lowered in North-West-Germanic also in the position before a reflex of PGmc
+
+
+28. The lattter point is secured by well-known counterparts of both suffixes in other Indo-
+European languages. For adjectives in OHG, OS -isk, cf. Baltic and Slavonic adjectives such as
+Lith mer̃g-iškas of mergà ‘girl’, Old Russian žen-ĭskŭ of žena ‘woman’ and Greek diminutive nouns
+of the type anthrōp-ískos of ánthrōpos ‘person, human’. On this derivational pattern, cf. Kluge
+(1926: 104–105), Krahe & Meid (1967: 196–197), Schwyzer (1953: 541–542). For superlatives in
+OHG, OS -isto, cf. the well-known superlative formations of Indo-Iranian and Greek such as Skt
+vás-iṣṭhas ‘best’, ój-iṣṭhas ‘strongest’ and Gk hḗd-istos ‘sweetest’, mḗk-istos ‘biggest’ etc.
+
+=== page 156 ===
+
+156 Eugen Hill
+
+
+
+    *r. 29 This is clearly shown by the phonology of the North- and West-Germanic
+    counterpart of Skt vīrás ‘hero’, Lat vir ‘man’ (cf. Goth wair). The Germanic word is
+    again attested exclusively with an e-timbre vowel in the root:
+      (34) PGmc     PNWGmc   ON OHG OS OE
+          *wiraz > *wẹraz > verr wer wer wer
+
+    Perhaps the most unexpected fact about the assumed lowering of stressed PGmc
+    *i by several consonants including PGmc *r is the fact that the age of this sound
+    change can hardly be established. Since traces of the lowering are equally found in
+    West and North Germanic, the development cannot be younger than Proto-North-
+    West-Germanic. The question whether the lowering was even more ancient, i.e.
+    operated already in Proto-Germanic times, cannot be answered with any certainty
+    because it cannot be established or excluded for Gothic. On the surface, Goth is
+    ‘he’ (< PGmc *iz, cf. OHG er) and mizdō ‘reward’ (< PGmc *mizdōn, cf. OHG
+    miata) seem to have preserved PGmc *i unchanged. It is, however, well known
+    that in Gothic PGmc *e was secondarily raised to i (cf. Goth giban, hilpan from
+    PGmc *geban- ‘to give’, *helpan- ‘to help’). It is possible that this Gothic raising also
+    affected PGmc *ẹ recently developed out of *i before a tautosyllabic *z. Goth wair
+    ‘man’ (< PGmc *wiraz, cf. Lat vir) seems to exhibit a vowel secondarily lowered from
+    PGmc *i. It is, however, well known that in Gothic every i of whatever origin was
+    lowered to ai before r by Gothic breaking. It is possible that PGmc *i in this word
+    was preserved unchanged until the time of Gothic breaking.
+         Thus, the age of the established lowering of *i before several consonants
+    including *r cannot be posited with any degree of certainty. The sound change
+    might equally well be assumed for Proto-North-West-Germanic or even for Proto-
+    Germanic. But this means that this potentially Proto-Germanic development can
+    be used to explain the vowel timbre in PGmc *hẹ̄r ‘here’ beside PGmc *hi- ‘this
+    here’. If the lowering was already Proto-Germanic, the following chain of events
+    may be reconstructed: 30
+      (35) early-PGmc            late-PGmc   Goth ON OHG OE
+          *wiraz     > *wẹraz > *wẹraz    > wair verr wer wer
+          *hir       > *hẹr   > *hẹ̄r     > hēr hér hiar hēr
+
+
+    29. As was assumed as early as in van Helten (1909: 124).
+    30. Cf. J. Schmidt (1875: 417, 424) and Grønvik (1998: 92). The assumed lowering of PGmc *i
+    before *r would be contradicted by OHG irh ‘chamois leather’, if this were an inherited lexeme
+    as assumed by Kroonen (2013: 270). However, this noun is probably a loan, cf. at first somewhat
+    uncertain, then more positive Frings (1932: 82, 1966: 80) and, most recently, Gasterstädt, Frings
+    & Grosse (1986–2002: 1706) as well as Lühr et al. (2014: 152–153).
+
+=== page 157 ===
+
+                                              West Germanic lengthening and Gothic breaking 157
+
+
+
+The second deviation from theoretical expectations in the Proto-Germanic adverb
+for ‘here’, the unexpected timbre of its vowel, would then be satisfactorily explained.
+     It is certainly true that one should be very cautious when ascribing a Proto-
+Germanic age to sound changes which seem to be directly visible only in the West
+and North Germanic languages. However, there is nothing inherently implausible
+in such an assumption if it can be supported by indirect evidence. Note that the
+Proto-Germanic lowering of *i before *r hypothetically assumed here is no more
+spectacular than, for instance, a securely established Proto-Germanic sound change
+with an opposite effect, the raising of *e before a tautosyllabic *n. The reasoning un-
+derlying the former assumption follows the path on which the latter sound change
+has been successfully established for the Proto-Germanic parent language.
+     The raising of PGmc *e before a tautosyllabic *n is clearly shown for West and
+North Germanic by strong verbs of class III where, for instance, OHG helpfan with
+3sg. pret. halpf ‘to help’ is accompanied by bintan with 3sg. pret. bant ‘to bind’,
+sinkan with 3sg. pret. sank ‘to sink, drop’ etc. Since in Gothic every inherited *e
+is secondarily raised to i, cf. Goth hilpan ‘to help’, the vocalism of Goth bindan ‘to
+bind’, sigqan ‘to sink, drop’ etc. may also be attributed to this recent development
+and does not demonstrate the Proto-Germanic age of the raising caused by a tau-
+tosyllabic *n.
+     The situation is roughly the same as in the case of ON verr, OHG, OE wer vs.
+Goth wair where the lowering of the inherited *i before *r in Gothic may also be
+attributed to Gothic breaking, which is fairly recent.
+     However, one piece of evidence shows that the raising of PGmc *e before a
+tautosyllabic *n must have preceded a sound change found in all Germanic dia-
+lects, and for this reason it is generally assumed to be of Proto-Germanic age. Goth
+þreihan ‘to push, press’ reflects PGmc *þrīhan- whose long *ī can be only explained
+by the well-known loss of *n before PGmc *h (with compensatory lengthening of
+the preceding vowel). Traces of this latter process are securely attested in all three
+branches of Germanic. The *n lost in the root of the infinitive PGmc *þrīhan-
+(> Goth þreihan) is retained in the paradigmatic forms with root ending in PGmc
+*g instead of *h by Verner’s Law, cf. 3pl. pret. OE þrungon, OHG drungun. 31 Now,
+the root of PGmc *þrīhan- (> Goth þreihan), which reflects a more ancient *þrin-
+han-, originally had an *e, cf. PIE *trenk- ‘to push, press’ (Lith treñkti, YAv part.
+pss. θraxta-). 32 It follows that the raising of PGmc *e before a tautosyllabic *n must
+have been a Proto-Germanic development.
+
+
+
+31. On which the new infinitive OE þringan, OHG dringan is based.
+32. Cf. Seebold (1970: 520–521), Rix et al. (2001: 649), Hock et al. (2015: 1121–1122).
+
+=== page 158 ===
+
+158 Eugen Hill
+
+
+
+         In a similar vein, the e-timbre of the vowel in Goth hēr shows that the lowering
+    of PGmc *i in this word necessarily preceded the lengthening of vowels in mon-
+    osyllabic place adverbs. Since Goth hēr, ON hér, OSw hǽr also proves that said
+    lengthening was not a comparatively recent West Germanic but a more ancient
+    Proto-Germanic development (cf. Section 4), the raising of *i before *r can be
+    attributed to Proto-Germanic times as well.
+
+
+    6. Conclusions
+
+    The phonology of Germanic pronoun-based place adverbs in PGmc *-r is best
+    explained by the following two assumptions. First, PGmc *i had been secondarily
+    lowered to *ẹ in the position before *r already in Proto-Germanic times:
+         (36) early-PGmc
+             *hwar      > *hwar ‘where’
+             *þar       > *þar ‘there’
+             *hir       > *hẹr ‘here’
+
+    Second, the vowels of monosyllabic words ending in *r were secondarily lengthened
+    already in Proto-Germanic times:
+         (37) early-PGmc   late-PGmc   Goth         OHG OE
+             *hwar      > *hwār     > 〈ƕar〉        hwār hwǣr ‘where’
+             *þar       > *þār      > 〈þar〉        dār ðǣr ‘there’
+             *hẹr       > *hẹ̄r     > 〈her〉        hiar hēr ‘here’
+
+
+
+    7.    The phonology of Gothic hiri ‘come here!’
+
+    The only point which remains to be discussed is a peculiar lexeme which is found
+    only in Gothic and cannot be etymologically separated from the Germanic place
+    adverb for ‘here’. This lexeme is Goth hiri ‘come here!’. Its four occurrences in the
+    transmitted Gothic texts are used to translate Gk deũro and érkhọ̄ ‘come here!’. Goth
+    hiri is accompanied by hirjats and hirjiþ, which translate the corresponding Greek
+    plural form deũte ‘come here (many of you)!’. The ending -ts of hirjats implies a 2nd
+    dual. This is confirmed by the syntax of the relevant sentence (Mark 1,17) where
+    two persons are addressed. The ending -þ of hirjiþ characterizes the form as 2nd
+    plural, which is, again, confirmed by the meaning of the text passage (Mark 12,7),
+    where many persons are talking among themselves.
+
+=== page 159 ===
+
+                                           West Germanic lengthening and Gothic breaking 159
+
+
+
+     Goth hiri is traditionally assumed to be somehow related to the place adverb
+hēr ‘here’. This assumption is undoubtedly correct due to the obvious similarity in
+phonology and semantics of the lexemes. For this reason, any account of Goth hēr
+‘here’ remains necessarily incomplete until it is shown how Goth hiri, hirjats and
+hirjiþ fit into the proposed hypothesis. What has to be clarified is first the precise
+derivational history of the imperative form hiri and second its highly unexpected
+phonology. Goth hiri and its counterparts in the dual and plural (hirjats and hirjiþ)
+are very unusual for the lack of breaking i > ai which is systematically required in
+Gothic before h, ƕ or r. As is well known, this breaking is always to be expected
+in the root morpheme of a Gothic word as evidenced by strong verbs of classes IV
+and V
+  (38) qiman ‘to come’ but saiƕan ‘to see’
+       giban ‘to give’     bairan ‘to carry’
+       brikan ‘to destroy’ -tairan ‘to tear’
+
+In the remaining part of this section, I will summarize what is known or can be
+assumed about the morphology of the imperatives in question and sketch the at-
+tempts to explain their phonology that have already been proposed in the field.
+The section will close with a new explanation, which seems to be more in line with
+facts already securely established for Gothic. I will demonstrate that the phonolo-
+gy of Goth hiri, hirjats and hirjiþ does not contradict the explanation of hēr ‘here’
+established in the previous sections of the paper.
+     The 2nd dual Goth hirjats and the 2nd plural Goth hirjiþ show that these im-
+peratives were conceived of by speakers of Gothic as belonging to a verb whose
+infinitive should end in -jan. Gothic grammar displays two classes of such verbs.
+These are, first, class I weak verbs such as lagjan ‘to lay’, laisjan ‘to teach’ (cf. 2pl.
+lagjiþ). Second, a subgroup within classes V and VI of strong verbs, such as bidjan
+‘to ask’, -hafjan ‘to lift’ (cf. 2du. bidjats). Unfortunately, the 2sg. imperative Goth
+hiri ‘come here!’ suits neither the weak verbs of lagjan-type nor the strong verbs of
+bidjan-type. In both cases, the attested 2sg. imperative forms always end in -ei (cf.
+Goth lagei, laisei for weak and bidei, -hafei for strong verbs).
+     However, the corresponding desinences outside of Germanic strongly suggest
+Goth -ei only for weak jan-verbs. In the case of a strong jan-verb the ending *-i
+should be expected. Cf., for Gothic weak verbs, the 2sg. imperative in Skt -áya
+such as in Skt tāpáya ‘make hot!’ of tāpáyati. This ending implies PIE *-éi̯e-Ø >
+PGmc *-iji-Ø which might have led to Goth -ei at least in verbs with a ‘long’ first
+syllable such as Goth laisjan. For strong jan-verbs of Gothic cf., by contrast, the
+2sg. imperative ending in Skt -ya such as, for instance, in Skt náśya ‘disappear!’ of
+náśyati. This 2sg. imperative ending implies PIE *-i ̯e-Ø > PGmc *-ji-Ø > Goth *-i
+
+=== page 160 ===
+
+160 Eugen Hill
+
+
+
+    (by vocalization of *j after the regular apocope of the short vowel) which would be
+    indistinguishable from the desinence of Goth hiri.
+         For this reason, it is usually assumed that 2sg imperative of Gothic strong jan-
+    verbs originally ended in Goth *-i which has only been very recently replaced by
+    -ei on the model of the weak jan-verbs. It is not implausible to assume that, prior
+    to this development, the whole set of ‘come here!’-imperatives in Gothic emerged
+    on the basis of hiri ‘come here!’, secondarily reinterpreted as the 2sg imperative
+    of a strong jan-verb of the bidjan-type (cf. similarly already Brugmann 1881). But
+    how to explain this hiri?
+         Traditionally, Goth hiri is either assumed to be an adverb somehow related
+    to the place adverb hēr ‘here’ or believed to be a verb derived from this adverb by
+    means of a suffix. 33 Neither of these assumptions, plausible as they may be in der-
+    ivational terms, does by itself offer an explanation for the lack of i > ai-breaking in
+    the root of hiri, hirjats and hirjiþ. This unexpected phonological feature remains to
+    be explained by additional assumptions.
+         The lack of breaking has often been explained by reference to the semantics of
+    hiri, hirjats and hirjiþ. It was assumed that these imperatives were often pronounced
+    as exclamations with a particularly high pitch voice or a particularly weak stress
+    and for this reason did not follow the sound changes obligatory for the rest of the
+    Gothic vocabulary.34 Though this explanation cannot be demonstrated to be wrong,
+    the influence of high pitch voice or weak word stress on Gothic breaking is also not
+    confirmed by any other data and therefore remains ad hoc.
+         Equally ad hoc is Paul’s (1894) suggestion that i in hiri, hirjats and hirjiþ resisted
+    breaking due to the influence of i and j in the second syllable. The counterevidence,
+    such as Goth 3sg. pres. saiƕiþ ‘sees’, bairiþ ‘carries’ and fairina ‘accusation’, Paul
+    explained partly by paradigmatic analogy, partly by the additional assumption that
+    only a reflex of PGmc *i could resist the breaking, not that of PGmc *e as well.
+    As correctly criticized already by Streitberg (1910: 68), the latter point, although
+
+
+
+    33. The former position is advocated, for instance, in Ehrismann (1899: 384), Loewe (1916: 297–
+    302), Kieckers (1928: 233), the latter in Brugmann (1881) and Ebbinghaus (1979, reprinted in
+    Ebbinghaus 2003: 54–56). The position taken by van der Hoek (2007) remains unclear to me.
+    34. A high pitch voice is assumed by Loewe (1916: 304–312), Jacobsohn (1920: 200–202), van
+    Haeringen (1922: 184–187), Jellinek (1926: 83–84), Kieckers (1928: 14) and Rauch (1981: 398–
+    399). For Vennemann (1971: 100), Goth hiri, despite its inflection for number, is not a word in
+    the strict sense but rather a “syntactically integrated vocal gesture” which does not have to obey
+    phonological rules obligatory for words. Vennemann does not support this surprising anlysis
+    of hiri by any evidence. Although he assumes the imperative to be etymologically related to the
+    place adverb hēr, he does not elaborate on the process by which the alleged “vocal gesture” is
+    supposed to have emerged from proper lexical material.
+
+=== page 161 ===
+
+                                                West Germanic lengthening and Gothic breaking 161
+
+
+
+essential to the whole theory, remained unsupported by any further instances of
+breaking or non-breaking in Gothic. 35
+     Several attempts started with the assumption that Gothic 〈i〉 in hiri, hirjats and
+hirjiþ was not necessarily a short vowel. Although the letter 〈i〉 is otherwise used
+only for a short i in Gothic, the imperatives, being related to Goth hēr ‘here’, might
+be assumed to have contained a long monophthong of a special kind. Luft (1898)
+and Ehrismann (1899) thought of a special, possibly shortened variant of PGmc *ẹ̄
+(preserved as Goth ē, written 〈e〉, in hēr) caused by word-stress, which they simply
+assumed to be on the second syllable of hiri. 36 Ebbinghaus (1979, 2003) hypothe-
+sized that the vowel in the root of Goth hiri etc. emerged through a raising of PGmc
+*ẹ̄ to a long open į ,̄ written 〈i〉, when followed by*i, *ī or *j in the next syllable. The
+open pronunciation of this hypothetical į ̄allegedly prevented Gothic scribes from
+using the digraph 〈ei〉 which designated a long close ī in the Gothic alphabet. The
+sound changes suggested by these scholars cannot be confirmed or rejected for
+the lack of other Gothic lexemes or inflectional forms with a reflex of PGmc *ẹ̄ in
+unstressed syllables or followed by *ī ̆ or *j. Finally, van der Hoek (2007) explained
+the root vowel of hiri as irregularly shortened from ē (preserved in Goth hēr ‘here’)
+by the desire to make the word more convenient for bellowing a command. The lack
+of breaking is explained by the particularly recent date of the assumed shortening
+which is believed to have occurred after the breaking ceased to operate in Gothic.
+Since no other instances of irregular shortening of ē to i in Gothic commands are
+provided, this explanation is as plausible or implausible as all its above mentioned
+predecessors.
+     These different attempts to explain the unusual phonology of hiri, hirjats and
+hirjiþ have one thing in common. All of them try to find an explanation not among
+the facts already known about Gothic but rather in the domain of possible assump-
+tions about it. This methodology generates accounts which often cannot be checked
+against hard data and are therefore necessarily unconvincing.
+     A more promising attempt at explaining Goth hiri (and hence also hirjats,
+hirjiþ) should start with an investigation of similar cases which are known to exist
+in Gothic grammar. It is already an established assumption that breaking is not
+
+
+35. Cf. Antonsen (1965: 29) who sees in Goth hiri etc. remnants of the original conditioning of
+Gothic breaking not by the following consonant but by the vowel in the next syllable. Antonsen
+fails to explain why the alleged redistribution of ai and i did not affect Goth hiri (cf. critique by
+Cercignani 1980b: 209).
+36. Following J. Schmidt (1875: 423–424) who saw in Goth hiri etc. a compound of ‘here’ with
+the imperative of an inherited verb and explained the lack of breaking by reference to the weak
+stress of the place adverb functioning as verbal prefix. This theory was later advocated also by
+Güntert (1929). Its most obvious problem is the lack of supporting evidence.
+
+=== page 162 ===
+
+162 Eugen Hill
+
+
+
+    a synchronic process in Gothic which would automatically turn every i into ai
+    whenever this vowel precedes h, ƕ or r within one and the same word. On the
+    contrary, breaking fails systematically to operate at least in three distinct categories
+    of Gothic lexemes.
+         The first category are verbs containing Goth bi- and a root beginning with h,
+    ƕ or r, cf. Goth bi-hlahjan of hlahjan ‘to laugh’, bi-ƕairban of ƕairban ‘to change’,
+    bi-rinnan of rinnan ‘to run’ etc. These and similar verbs are traditionally explained
+    as recent creations on the model of such cases as, for instance, bi-maitan or bi-ni-
+    man from maitan ‘to cut’, niman ‘to take’, where the prefix bi- was followed by con-
+    sonants not capable of causing breaking. Since the prefix Goth bi- descended from
+    a free adverb (cf. its use as preposition Goth bi ‘by, around’), it is also conceivable
+    that verbs like bi-rinnan reflect recent univerbations of this adverb with the relevant
+    verbal simplex. That the assumed univerbation must have been completed at the
+    time of text transmission at the latest is shown by derived nouns such as birōdeins
+    ‘defamation’ of bi-rōdjan ‘to gossip’ based on rōdjan ‘to talk’. Both explanations
+    presuppose that verbs like Goth bi-rinnan were created at a time when Gothic
+    breaking had already ceased to operate in the language.
+         The second category of words in which Goth i unexpectedly fails to turn into ai
+    is constituted by the compounded adverb Goth bi-ƕē ‘where’, whose first element is
+    the same bi ‘by, around’ as in the verbs of the first category. The second member of
+    bi-ƕē belongs to the interrogative pronoun ƕa, dat. sg. ƕamma ‘what’. The original
+    semantics of bi-ƕē may be described as ‘by what’, cf. Goth du-ƕē ‘why, what for’
+    constructed with the preposition du ‘to’ and therefore reflecting something like ‘to
+    what’. Goth bi-ƕē ‘where’, du-ƕē ‘why’ have the same structure as bi-þē ‘then, after-
+    ward’, du-þē ‘hence, therefore’, whose second element belongs to the demonstrative
+    pronoun þata, dat. sg. þamma ‘this, that’. The second members of both compounds
+    are also attested in free use, cf. Goth ƕē ‘with whom, with what’, þē ‘by that’ (only in
+    ni þē haldis ‘by no means’) and ni þē-ei ‘not that, not so that’ (with ei ‘that, so that’).
+    The lack of breaking in Goth bi-ƕē may be explained in the same way as in the case
+    of Goth bi-rinnan etc., i.e. either by a recent analogy after bi-þē, where no breaking
+    was possible, or by a particularly recent date of the univerbation of bi with ƕē.
+         The third and last category of Gothic words with an unexpected lack of break-
+    ing comprises again just one lexeme, Goth ni-h ‘and not, also not, not even’, which
+    is based on the negation ni ‘not’. Goth ni-h belongs to a group of particles and con-
+    junctions such as swa-h ‘so, and so’, nū-h ‘now, though’ based on swa ‘so, thus’, nū
+    ‘now’ respectively. Since in the latter cases no mutation of the involved vowels was
+    possible, it is legitimate to assume that Goth ni-h just followed their pattern in the
+    same manner as Goth bi-rinnan etc. might have followed bi-maitan, bi-niman etc.
+         To sum up, in all three categories Goth i and the consonant which should
+    cause its breaking into ai but fails to do so are separated by a synchronically clear
+
+=== page 163 ===
+
+                                                West Germanic lengthening and Gothic breaking 163
+
+
+
+morpheme boundary. This means that the lexemes in question may be either recent
+analogical creations or recent univerbations of two free lexemes into one word. In
+the case of Goth ni-h only the former explanation seems to work (for the lack of a
+vowel, -h is not usable as a free lexeme in Gothic). In both other categories the latter
+is equally conceivable. Since the assumed analogy or univerbation might be a recent
+development, the lack of breaking can be explained simply by their particularly late
+occurrence in the language when the breaking might already have ceased to be an
+operative sound change.
+     Applied to Goth hiri, all this means that we have to assume a morpheme bound-
+ary between the i and the r. This precludes any attempt of deriving Goth hiri ‘come
+here!’ directly from the adverb hēr ‘here’. Fortunately enough, Goth hiri is not nec-
+essarily directly dependent on hēr or its Proto-Germanic predecessor. Both words
+can be safely assumed to descend ultimately from the pronoun Goth hi- (< PGmc
+*hi- < PIE *ḱí- ‘this here’), whose semantics already contains the idea of ‘here’ (cf.
+Section 2 above). 37 Therefore, Goth hiri ‘come here!’ probably reflects a hi-ri that
+might be either a recent analogical creation or a recent univerbation.
+     The former assumption is ruled out by the lack of a model. Gothic or its rela-
+tives do not contain anything comparable to hi-ri in derivational terms. The latter
+is more promising. The first element of Goth hi-ri may reflect the Germanic de-
+scendant of the PIE adverb *ḱe ‘here’, which must have existed beside the pronoun
+*ḱí- ‘this here’, and which was obviously related to it.
+     PIE *ḱe ‘here’ is directly preserved in ORu se, Lith (dial.) šè, Latv (dial.) sȩ, se,
+which are used as an adverb ‘here’ as well as an interjection ‘look (here)!’. In Italic,
+a reflex of PIE *ḱe ‘here’ is found first in two verb forms. Lat 2sg.imp. ce-do, 2pl.
+imp. ce-tte ‘give (here)!’ contains a reflex of the PIE aorist imperative 2sg. *dóh₃-Ø,
+2pl. *dǝ3-té ‘give!’ (cf. dial. Lith 2sg.imp. duõ). Oscan 3sg.fut.II ce-bnust ‘will have
+come (here)’ belongs to a verb otherwise attested as 3sg.perf. kúm-bened ‘has been
+agreed’ (literally ‘has come together’). 38 The second reflex of PIE *ḱe ‘here’ in Italic
+is Latin -ce, later -c, which may be attached to case forms of pronouns. Cf. Old Latin
+gen.sg. masc. cuius-ce, ipsius-ce of quī ‘who’, ipse ‘oneself ’ etc.
+
+
+
+37. This was occasionally realized earlier, cf. for instance Cercignani (1984: 316–320) who, how-
+ever, makes no attempt to explain the second syllable of Goth hiri in dervational terms. For Voyles
+(1968: 740), the r in Goth hiri was a “later addition” to the stem hi- only attached to it after the
+breaking ceased to operate in Gothic. Voyles seems to think of a simple analogy (on the model
+of þata ‘that’ ~ þar ‘there’) which might work but fails to explain how his particularly recent
+construct became enlarged by -i.
+38. Cf. Walde & Hofmann (1938: 192–193), Klingenschmitt (1987: 177), Untermann (2000: 143–
+145) and de Vaan (2008: 102–103).
+
+=== page 164 ===
+
+164 Eugen Hill
+
+
+
+        As for the morphological relation between the pronoun PIE *ḱí- ‘this here’
+    and the adverb PIE *ḱe ‘here’, it seems to fit in into a well-established pattern: 39 40
+      (39) pronoun                                   adverb
+           PIE *ḱí- ‘this here’                 ~ PIE *ḱe ‘here (to)’
+                                                like
+              PIE *dí- ‘that (over there)’      ~ PIE *de ‘there (to)’ 39
+              PIE *í- ‘that (mentioned before)’ ~ PIE *e ‘back then, at that time’ 40
+
+    For Germanic, a reflex of the PIE adverb *ḱe ‘here’ is secured by the Gothic par-
+    ticle -h, which may be attached to case forms of pronouns in a manner closely
+    resembling Latin. 41 Cf. Goth nom. sg. masc. sa-h, fem. sō-h, nom. pl. masc. þai-h
+    as variants of sa, sō ‘this’, þai ‘these’, respectively. The lack of a vowel in -h shows
+    that, in this particular case, the univerbation must have preceded the well-known
+    apocope of word-final short vowels in the prehistory of Gothic. Since this apocope
+    did not operate on monosyllablic words (cf. Goth ni ‘not’ < PIE *né reflected also
+    in Skt ná, Lith nè, ORu ne), the univerbation in such structures as Goth sa-h, sō-h
+    or þai-h must have been completed prior to it.
+         The free reflex of the adverb PIE *ḱe ‘here’ in Gothic should have the shape
+    *hi. It might be identified with the first element of Goth hi-ri ‘come here!’. 42 The
+    second member of Goth hi-ri might be a reflex of PIE *re ‘back’. This PIE lexeme
+    is preserved in the Latin verbal prefix re- ‘back, reverse’, found for instance in re-
+    ferō ‘to bring back’ of ferō ‘to carry’, re-parō ‘to restore’ of parō ‘to prepair’ etc. The
+
+
+    39. The pronoun is reconstructed on the basis of its enclitic descendants in West Baltic and
+    Iranian, cf. acc.sg. masc. Old Prussian, Young Avestan, Old Persian -dim ‘him’, nt. YAv -dit̰
+    ‘it’, acc.pl. masc. OPr -dins, YAv, OP -dīš ‘them’. The corresponding adverb is preserved as
+    the enclitic -de ‘to, into’ of Greek and the deictic -de of Latin. Cf. Gk agorḗn-de, hála-de with
+    directional accusative of respectively agorḗ ‘gathering’, háls ‘sea’ etc. in Homer’s epics, and Latin
+    quan-de ‘then’, in-de ‘thence’, whose first members also look like fossilized directional accusatives,
+    cf. Frisk (1954–1972: 354) and, most recently, de Vaan (2008: 162) and Mažiulis & Rinkevičius
+    (2013: 116–117, 122–123).
+    40. The pronoun is well known from Lat is ‘that (aforementioned), he’, Goth is, OHG er ‘he’. The
+    corresponding adverb is preserved as the so-called “augment” Skt a-, Gk é-, Armenian e- which,
+    attached to verbs, has the function of assigning past tense value to atemporal finite forms. As
+    regards the pronoun, cf. de Vaan (2008: 309–310) and Kroonen (2013: 268); the adverb is treated
+    in Strunk (1994), cf. Mumm (2004).
+    41. I thank Oliver Plötz for having pointed this out to me.
+    42. As tentatively suggested by Kluge (1911: 11), who assumed that Goth hiri ‘come here!’ must
+    be somehow related to lat. ce-do ‘give (here)!’ but was unable to plausibly explain the remaining
+    part of the Gothic word.
+
+=== page 165 ===
+
+                                                 West Germanic lengthening and Gothic breaking 165
+
+
+
+prefix is also attested in Umbrian, cf. 3sg. future imperative RE-STATU ‘should
+restore’, which is obviously related to Umbr 1sg.pres. stahu, Osc 3sg.pres. STAÍT,
+3pl.pres. STAHÍNT ‘to stand’. 43
+     Unlike several other monosyllabic indeclinables, PIE *ḱe ‘here’ not only fol-
+lowed words with which it eventually univerbated but could also precede them,
+cf. OLat cuius-ce, ipsius-ce but Lat ce-do, Osc ce-bnust. This strongly suggests that
+PIE *ḱe was not an enclitic particle but rather a stressed adverb. According to
+Wackernagel’s Law, Proto-Indo-European enclitic particles always occupied the
+second position after the first stressed word in a clause, being thus bound to fol-
+low their hosts in case of eventual univerbation. The same reasoning is applicable
+to PIE *re, whose reflex in Latin precedes verb forms as do all originally stressed
+adverbs which eventually became verbal prefixes in Latin (such as Latin per- from
+per ‘through’ etc., cf. the adverb Skt pári ‘around’ and the preposition Lith per̃
+‘through’).
+     From this it follows that Goth hi-ri ‘come here!’ probably reflects a recent uni-
+verbation of two stressed adverbs, Goth *hi (< PIE *ḱé ‘here, hither’) and Goth *ri
+(< PIE *ré ‘back’). The original meaning of Goth hi-ri must have been something
+like ‘back here!’, which typologically resembles such adverbially based quasi-im-
+peratives as, for instance, MoG her-ein ‘come in!’ (literally ‘here in!’). The lack of
+breaking in Goth hi-ri can be explained by the recent date of this univerbation,
+which only occurred after breaking had ceased to operate. An even more recent
+reanalysis of Goth hi-ri as hir-i, i.e. an ordinary 2sg. imperative form, gave birth to
+secondary 2dual hir-jats and 2plural hir-jiþ.
+     To conclude, the unexpected root vocalism of Goth hiri, hirjats, hirjiþ does
+not interfere with the explanation of Goth hēr and its counterparts in the other
+Germanic languages.
+
+
+
+
+43. On the Italic forms, cf. Untermann (2000: 678–679, 697–700). On possible traces of PIE *re
+outside of Italic cf. most recently Dunkel (2009: 50–51, 2014: 664–670) with copious references.
+De Vaan (2008: 516) reconstructs PIE *u̯re because of Albanian rrë- in rrë-qaset ‘to depart’ of qaset
+‘to approach’ etc. However, the Albanian prefix might be a loan from Latin. The correspondance
+Lat r- ~ Alb rr- seems to be regular, cf. such loanwords as Alb rrem ‘oar’, rripë ‘hillslope’ from Lat
+rēmus ‘oar’, rīpa ‘bank, coast’ etc. Dunkel (2014: 664) repeats the possibilty of explaining Goth
+hiri as hi-ri but fails to account for the lack of breaking and eventually prefers hir-i with a variant
+form of hēr (cf. 2014: 410). This latter analysis explains basically nothing.
+
+=== page 166 ===
+
+166 Eugen Hill
+
+
+
+    References
+
+    Antonsen, E. H. 1965. On Defining Stages in Prehistoric Germanic. Language 41.19–35.
+        doi: 10.2307/411849
+    Antonsen, E. H. 1972. The Proto-Germanic Syllabics (Vowels). In F. van Coetsem & H. L. Kufner
+        (eds.), Toward a Grammar of Proto-Germanic, 117–140. Tübingen: Niemeyer.
+        doi: 10.1515/9783111549040.117
+    Bammesberger, A. 1991. Franks Casket: Editor’s Notes. In A. Bammesberger (ed.), Old English
+        Runes and their Continental Background, 630–631. Heidelberg: Winter.
+    Behaghel, O. 1928. Geschichte der deutschen Sprache (5. Auflage). Berlin–Leipzig: De Gruyter.
+    Bezzenberger, A. 1873. Untersuchungen über die gotischen Adverbien und Partikeln. Halle: Buch­
+        handlung des Waisenhauses.
+    Braune, W. 2004. Gotische Grammatik mit Lesestücken und Wörterverzeichnis (20. Auflage, neu
+        bearbeitet von F. Heidermanns). Tübingen: Niemeyer. doi: 10.1515/9783110945089
+    Bremer, O. 1886. Germanisches ē. Beiträge zur Geschichte der deutschen Sprache und Literatur
+        11.1–76. doi: 10.1515/bgsl.1886.1886.11.1
+    Bremer, O. 1909. Die germanische ‘Brechung’. Indogermanische Forschungen 26.148–173.
+    Brugmann, K. 1881. Die gotische imperativform hiri und die denominativa von consonantischen
+        stämmen. In Brugmann, K. & H. Osthoff. Morphologische Untersuchungen auf dem Gebiete
+        der indogermanischen Sprachen, Vierter Theil, 414–417. Leipzig: Hirzel.
+    Cercignani, F. 1980a. Early ‘Umlaut’ Phenomena in the Germanic Languages. Language
+        56.126–136. doi: 10.2307/412645
+    Cercignani, F. 1980b. Alleged Gothic Umlauts. Indogermanische Forschungen 85.207–213.
+    Cercignani, F. 1984. The enfants terribles of Gothic ‘breaking’: hiri, aiþþau, etc. Journal of Indo-
+        European Studies 12.315–344.
+    van Coetsem, F. 1994. The Vocalism of the Germanic Parent Language. Systemic evolution and
+        sociohistorical context. Heidelberg: Winter.
+    Connolly, L. A. 1977. Indo-European i > Germanic e. An explanation by the laryngeal theory.
+        Bei­träge zur Geschichte der deutschen Sprache und Literatur 99.173–205, 333–358.
+    Connolly, L. A. 1979. Laryngeal Theory. Beiträge zur Geschichte der deutschen Sprache und Lite­
+        ratur 101.1–29. doi: 10.1515/bgsl.1979.101.1.1
+    Connolly, L. A. 1984. Altnordisch e < indogermanisch i. Zeitschrift für vergleichende Sprach­
+        forschung 97.267–280.
+    Derksen, R. 2015. Etymological Dictionary of the Baltic Inherited Lexicon. Leiden: Brill.
+    Dunkel, G. 2009. Lithuanian Chips from an Aptotologist’s Workshop. Baltistica 44.37–57.
+    Dunkel, G. 2014. Lexikon der indogermanischen Partikeln und Pronominalstämme. Bd. 2. Lexikon.
+        Heidelberg: Winter.
+    Ebbinghaus, E. A. 1979. Gotica XV. On the appearence of i before r in hiri, hirjats, hirjiþ. General
+        Linguistics 19.30–32.
+    Ebbinghaus, E. A. 2003. Gotica. Kleine Schriften zur gotischen Philologie. Piergiuseppe Scardigli &
+        Wolfgang Meid (eds.). Innsbruck: Institut für Sprachwissenschaft der Universität Innsbruck.
+    Ehrismann, G. 1899. Got. hiri. Zeitschrift für deutsche Philologie 31.384.
+    Enzelīns, J. 1971. Comparative Phonology and Morphology of the Baltic Languages. Translated by
+        W. R. Schmalstieg & B. Jēgers. The Hague–Paris: Mouton. doi: 10.1515/9783110869750
+
+=== page 167 ===
+
+                                                West Germanic lengthening and Gothic breaking 167
+
+
+
+Fraenkel, E. 1965. Litauisches etymologisches Wörterbuch. Unter Mitarbeit von Annemarie Slupski
+     fortgeführt von E. Hofmann & E. Tangl. Heidelberg–Göttingen: Winter–Vandenhoeck &
+     Ruprecht.
+Frings, Th. 1932. Germania romana. Halle (Saale): Niemeyer.
+Frings, Th. 1966. Germania romana (2. Auflage von G. Müller). Halle (Saale): Niemeyer.
+Frisk, Hj. 1954–1972. Griechisches etymologisches Wörterbuch. Bd. 1–3. Heidelberg: Winter.
+Gasterstädt, E. & Th. Frings. 1986–2002. Althochdeutsches Wörterbuch. Bd. IV: G. -J. Hrsg. von
+     R. Grosse. Bearbeitet von S. Blum et al. Berlin: Akademie Verlag.
+Grønvik, O. 1998. Untersuchungen zur älteren nordischen und germanischen Sprachgeschichte.
+     Frankfurt: Lang.
+Güntert, H. 1929. Gotisch hiri. In St. W. J. Teeuwen et al. (eds.), Donum natalicum Schrijnen,
+     488–491. Nijmegen–Utrecht: Dekker–van de Vegt.
+van Haeringen, C. B. 1922. Aantekeningen bij de gotische ‘breking’. Neophilologus 7.181–190.
+     doi: 10.1007/BF01508450
+van Helten, W. 1909. Zur entwickelung von westgermanisch e und o aus i und u. Beiträge zur
+      Geschichte der deutschen Sprache und Literatur 34.101–127.
+Hill, E. 2012. Hidden Sound Laws in the Inflectional Morphology of Proto-Indo-European. A
+      phonological account of the primary first singular of thematic verbs and the instrumental
+      of thematic nouns and adjectives. In B. Nielsen Whitehead, Th. Olander, B. A. Olsen & J. E.
+      Rasmussen (eds.), The Sound of Indo-European. Phonetics, phonemics, and morphophone-
+      mics, 169–207. Copenhagen: Museum Tusculanum Press.
+Hill, E. 2013. Historical Phonology in Service of Subgrouping. Two laws of final syllables in the
+      common prehistory of Baltic and Slavonic. Baltistica 48.161–204.
+     doi: 10.15388/Baltistica.48.2.2170
+Hirt, H. 1892. Vom schleifenden und gestossenen Ton in den indogermanischen Sprachen. Indo­
+      ger­manische Forschungen 1.1–42.
+Hock, H. H. 1973. On the Phonemic Status of Germanic e and i. In B. B. Kachru, R. B. Lees, Y.
+      Malkiel, A. Pietrangeli & S. Saporta (eds.), Issues in Linguistics. Papers in Honor of Henry and
+      Renée Kahane, 319–351. Urbana–Chicago–London: University of Illinois Press.
+Hock, W., R. Fecht, A. H. Feulner, E. Hill & D. S. Wodtko. 2015. Altlitauisches etymologisches
+      Wörterbuch. Unter der Mitarbeit von Elvira-Julia Bukevičiūtė und Christiane Schiller.
+      Hamburg: Baar.
+van der Hoek, M. 2007. The Origin of Gothic hiri. North-Western European Language Evolution
+      52.9–21. doi: 10.1075/nowele.52.02hoe
+Hofmann, D. 1964. ‘Germanisch’ ẹ̄2 im Friesischen. In Förste, W. & K. H. Borck (eds.), Festschrift
+      für Jost Trier zum 70. Geburtstag, 160–185. Köln–Graz: Böhlau.
+Jacobsohn, H. 1920. Zwei Probleme der gotischen Lautgeschichte. II. Zum gotischen Satzsandhi.
+      Zeitschrift für vergleichende Sprachforschung 49.129–218.
+Jellinek, M. H. 1891. Germanisch ê2. Beiträge zur Geschichte der deutschen Sprache und Literatur
+      15.297–301.
+Jellinek, M. H. 1926. Geschichte der gotischen Sprache. Berlin–Leipzig: De Gruyter.
+Kieckers, E. 1928. Handbuch der vergleichenden gotischen Grammatik. München: Hueber.
+Klingenschmitt, G. 1987. Erbe und Neuerung beim germanischen Demonstrativpronomen. In
+      R. Bergmann, H. Tiefenbach & L. Voetz (eds.), Althochdeutsch. Bd. I. Grammatik. Glossen
+      und Texte. Heidelberg: Winter.
+Kluge, F. 1911. Die Elemente des Gotischen. Eine erste Einführung in die deutsche Sprachwissenschaft.
+      Strassburg: Trübner.
+
+=== page 168 ===
+
+168 Eugen Hill
+
+
+
+    Kluge, F. 1926. Nominale Stammbildungslehre der altgermanischen Dialekte (3. Auflage bearbeitet
+        von L. Sütterlin & E. Ochs). Halle (Saale): Niemeyer.
+    Knapp, F. P. 1974. Wiederum germanisch ē2. Beiträge zur Geschichte der deutschen Sprache und
+        Literatur 96.207–240.
+    Kock, A. 1898. Zur frage nach dem a-umlaut von i in den altnordischen sprachen. Beiträge zur
+        Geschichte der deutschen Sprache und Literatur 23.544–554.
+    Kock, A. 1916. Umlaut und Brechung im Altschwedischen. Eine Übersicht. Lund–Leipzig: Gleerup–
+        Harrassowitz.
+    Kortlandt, F. 2006. Germanic *ē1 and *ē2. North-Western European Language Evolution 49.51–54.
+        doi: 10.1075/nowele.49.03kor
+    Krahe, H. & W. Meid. 1967. Germanische Sprachwissenschaft. Bd. 3. Wortbildungslehre. Berlin:
+         De Gruyter.
+    Krause, W. 1968. Handbuch des Gotischen (3., neubearbeitete Auflage). München: Beck.
+    Krause, W. 1971. Die Sprache der urnordischen Runeninschriften. Heidelberg: Winter.
+    Krause, W. & H. Jankuhn. 1966. Die Runeninschriften im älteren Futhark. I. Text. Göttingen:
+         Vandenhoeck & Ruprecht.
+    Krogh, St. 1996. Die Stellung des Altsächsischen im Rahmen der germanischen Sprachen. Göttingen:
+         Vandenhoeck & Ruprecht.
+    Kroonen, G. 2010. On Gothic iup and the Germanic Directionals. North-Western European
+         Language Evolution 58/59.367–380. doi: 10.1075/nowele.58-59.13kro
+    Kroonen, G. 2013. Etymological Dictionary of Proto-Germanic. Leiden–Boston: Brill.
+    Kümmel, M. J. 2014. Zur Rekonstruktion der altinselnordfriesischen Phonologie. Amsterdamer
+         Beiträge zur älteren Germanistik 73.243–260. doi: 10.1163/9789401211918_010
+    Lloyd, A. L. 1966. Is There a-Umlaut of i in Germanic? Language 42.738–745. doi: 10.2307/411829
+    Lloyd, A. L., R. Lühr & O. Springer. 1998. Etymologisches Wörterbuch des Althochdeutschen. Bd. II:
+         bî – ezzo. Göttingen–Zürich: Vandenhoeck & Ruprecht.
+    Lloyd, Albert L. & Rosemarie Lühr. 2009. Etymologisches Wörterbuch des Althochdeutschen.
+         Bd. IV: gâba – hylare. Göttingen–Zürich: Vandenhoeck & Ruprecht.
+    Loewe, R. 1916. Gotisch hiri. Beiträge zur Geschichte der deutschen Sprache und Literatur
+         41.295–312.
+    Loewe, R. 1927. Die Dehnung von Vocalen einsilbiger Wörter im Althochdeutschen und
+         Mittelhochdeutschen. Beiträge zur Geschichte der deutschen Sprache und Literatur 51.271–287.
+    Luft, W. 1898. Got. hiri, hirjats, hirjiþ. Zeitschrift für deutsche Philologie 30.426–428.
+    Lühr, R. 1982. Studien zur Sprache des Hildebrandliedes. Bd. 1: Herkunft und Sprache. Bd. 2:
+         Kommentar. Bern: Lang.
+    Lühr, R. 2000. Die Gedichte des Skalden Egill. Dettelbach: Röll.
+    Lühr, R., H. Bichlmeier, M. Kozianka & R. Schuhmann. 2014. Etymologisches Wörterbuch des
+         Althochdeutschen. Bd. V: iba – luzzilo. Mit Beiträgen von A. L. Lloyd unter Mitarbeit von
+         K. K. Purdy. Göttingen: Vandenhoeck & Ruprecht.
+    Lüdtke, H. 1957. Der Ursprung des germanischen ē2 und die Reduplikationspräterita. Phonetica
+         1.157–183. doi: 10.1159/000257789
+    Mahlow, G. H. 1879. Die langen Vocale A E O in den europäischen Sprachen. Ein Beitrag zur ver-
+         gleichenden Lautlehre der indogermanischen Sprachen. Berlin: Hermann.
+    Mažiulis, V. 2013. Prūsų kalbos etimologijos žodynas. Antrasis pataisytas ir papildytas leidimas.
+         Parengė Vytautas Rinkevičius. Vilnius: Mokslo ir enciklopedijų leidybos centras.
+
+=== page 169 ===
+
+                                              West Germanic lengthening and Gothic breaking 169
+
+
+
+Meid, W. 1971. Das germanische Praeteritum. Indogermanische Grundlagen und Ausbreitung im
+     Germanischen. Innsbruck: Institut für Vergleichende Sprachwissenschaft der Universität
+     Innsbruck.
+Mumm, P. -A. 2004. Zur Funktion des homerischen Augments. In Th. Krisch, Th. Lindner &
+     U. Müller (eds.), Analecta homini universali dicata. Festschrift für Oswald Panagl zum 65.
+     Geburtstag, 148–158. Stuttgart: Heinz & Akademischer Verlag.
+Müller, St. 2007. Zum Germanischen aus laryngaltheoretischer Sicht. Mit einer Einführung in die
+     Grundlagen. Berlin–New York: De Gruyter. doi: 10.1515/9783110958171
+Noreen, A. 1904. Altnordische Grammatik II. Altschwedische Grammatik mit Einschluss des Altgut­
+     nischen. Halle: Niemeyer.
+Noreen, A. 1923. Altnordische Grammatik I. Altisländische und altnorwegische Grammatik (Laut-
+     und Flexionslehre) unter Berücksichtigung des Urnordischen. Halle: Niemeyer.
+Paul, H. 1879. Zur geschichte des germanischen vocalismus. Beiträge zur Geschichte der deutschen
+     Sprache und Literatur 6.1–256. doi: 10.1515/bgsl.1879.6.1.1
+Paul, H. 1894. Gotisch aí vor r. Indogermanische Forschungen 4.334–335.
+Prósper, B. 1995. Über die Etymologie von griechisch κιδνόν. Historische Sprachforschung
+     108.75–83.
+Pfeifer, W. et al. 1993. Etymologisches Wörterbuch des Deutschen (2. Auflage, durchgesehen und
+     ergänzt von W. Pfeifer). Berlin: Akademie-Verlag.
+Rauch, I. 1981. Toward a schwa in Gothic. Beiträge zur Geschichte der deutschen Sprache und
+     Literatur 103.392–401.
+Reis, M. 1974. Lauttheorie und Lautgeschichte. Untersuchungen am Beispiel der Dehnungs- und
+     Kürzungsvorgänge im Deutschen. München: Fink.
+Ringe, D. A. 1984. Germanic ‘ē2’ and *r. Sprache 30.138–155.
+Rix, H., M. Kümmel, Th. Zehnder, R. Lipp & B. Schirmer. 2001. Lexikon der indogermanischen
+     Verben. Die Wurzeln und ihre Primärstammbildungen (2., erweiterte und verbesserte Auflage
+     von M. Kümmel & H. Rix). Wiesbaden: Reichert.
+Rösel, L. 1962. Die Gliederung der germanischen Sprachen nach dem Zeugnis ihrer Flexionsformen.
+     Nürnberg: Hans Carl.
+Schmidt, G. 1962. Studien zum germanischen Adverb. Berlin: Ernst-Reuter-Gesellschaft.
+Schmidt, J. 1875. Zur Geschichte des indogermanischen Vocalismus. Weimar: Böhlau.
+Schwyzer, E. 1953. Griechische Grammatik. Bd. 1. Allgemeiner Teil. Lautlehre. Wortbildung.
+     Flexion (2. Auflage). München: Beck.
+Seebold, E. 1970. Vergleichendes und etymologisches Wörterbuch der germanischen starken Verben.
+     The Hague: De Gruyter. doi: 10.1515/9783110821956
+Seebold, E. 1972. Das System der indogermanischen Halbvokale. Untersuchungen zum sogenann-
+     ten ‘Sieversschen Gesetz’ und zu den halbvokalhaltigen Suffixen in den indogermanischen
+     Sprachen, besonders im Vedischen. Heidelberg: Winter.
+Seebold, E. 1984. Das System der Personalpronomina in den frühgermanischen Sprachen.
+     Göttingen: Vandenhoeck & Ruprecht.
+Seebold, E. 2011. Kluge. Etymologisches Wörterbuch der deutschen Sprache (25., durchgesehene
+     und erweiterte Auflage). Berlin: De Gruyter.
+Sievers, E. 1892. Grammatische miscellen. 2. Zum germanischen geschlossenen ê. Beiträge zur
+     Geschichte der deutschen Sprache und Literatur 16.238–257.
+Stang, Ch. S. 1966. Vergleichende Grammatik der baltischen Sprachen. Oslo–Bergen–Tromsö:
+     Universitetsforlaget.
+
+=== page 170 ===
+
+170 Eugen Hill
+
+
+
+    Stiles, P. V. 2004. Place Adverbs and the Development of Proto-Germanic Long *ē1 in Early
+         West Germanic. In Hyvärinen, Irma, Petri Kallio, Jarmo Korhonen & Leena Kolehmainen
+         (eds.), Etymologie, Entlehnungen und Entwicklungen: Festschrift für Jorma Koivulehto zum
+         70. Geburtstag, 385–396. Helsinki: Société Néophilologique.
+    Streitberg, W. 1910. Gotisches Elementarbuch (3. und 4. verbesserte Auflage). Heidelberg: Winter.
+    Strunk, K. 1994. Der Ursprung des verbalen Augments – Ein Problem Franz Bopps in heutiger
+         Sicht. In R. Sternemann (ed.), Bopp-Symposium 1992 der Humboldt-Universität zu Berlin.
+         Akten der Konferenz vom 24.3. – 26.3.1992 aus Anlaß von Franz Bopps zweihundertjährigem
+         Geburtstag am 14.9.1991, 270–284. Heidelberg: Winter.
+    Untermann, J. 2000. Wörterbuch des Oskisch-Umbrischen. Heidelberg: Winter.
+    de Vaan, M. 2008. Etymological Dictionary of Latin and the other Italic Languages. Leiden–Boston:
+         Brill.
+    Vennemann, Th. 1971. The Phonology of Gothic Vowels. Language 47.90–140. doi: 10.2307/412190
+    Voyles, J. B. 1968. Gothic and Germanic. Language 44.720–746. doi: 10.2307/411895
+    Walde, A. 1900. Die germanischen Auslautgesetze. Eine sprachwissenschaftliche Untersuchung mit
+         vornehmlicher Berücksichtigung der Zeitfolge der Auslautsveränderungen. Halle: Niemeyer.
+    Walde, A. 1938. Lateinisches etymologisches Wörterbuch (3., neubearbeitete Auflage von J. B.
+         Hofmann). Erster Band. A–L. Heidelberg: Winter.
+    Wilmanns, W. 1899. Deutsche Grammatik. Gotisch, Alt-, Mittel- und Neuhochdeutsch. Zweite
+         Abteilung: Wortbildung (2. Auflage). Straßburg: Trübner.
+
+    Author’s address
+    Eugen Hill
+    Universität zu Köln
+    Institut für Linguistik, Historisch-Vergleichende Sprachwissenschaft
+    D-50923 Köln
+    Germany
+    eugen.hill@uni-koeln.de
