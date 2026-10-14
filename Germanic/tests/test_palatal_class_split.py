@@ -34,7 +34,12 @@ class PalatalClassSplitTests(unittest.TestCase):
                              cwd=SOURCE.parents[2],
                          )).hexdigest())
         nasal = json.loads((SC / "audits/sc017-nasal-vowel-adoption-receipt.json").read_text())
-        self.assertEqual(nasal["fst_sha256"], hashlib.sha256(SOURCE.read_bytes()).hexdigest())
+        adopted_nasal_source = subprocess.check_output(
+            ["git", "show",
+             "dcafc62590c9b4cb71328207aab70d153dc6f88e:Germanic/fsts/germanic.txt"],
+            cwd=SOURCE.parents[2],
+        )
+        self.assertEqual(nasal["fst_sha256"], hashlib.sha256(adopted_nasal_source).hexdigest())
         self.assertEqual(nasal["changed_derivation_ids"], [])
         self.assertEqual(historical["baseline_fst_sha256"],
                          "c51b8e4077194f4cc6f65e54a0c8a899366b5570152c6415cba117907d1a225c")

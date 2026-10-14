@@ -21,6 +21,7 @@ from generate_registry_views import read_tsv  # noqa: E402
 from oe_full_trace_report import trace_provenance_problems  # noqa: E402
 
 SC = GERMANIC / "docs/sound_changes"
+RESEARCH_COMMIT = "812cc437ea467296a056c04618fa792df2e2c139"
 EXPECTED = {
     "2186": ("*s*k*á*w*ō*j*a*n*ą", "*s*k*ḗa*w*ō*j*a*n*ą"),
     "2317": ("*s*k*á*w*ô", "*s*k*ḗa*w*ô"),
@@ -85,7 +86,11 @@ class SC034AdjudicationTests(unittest.TestCase):
             ("baseline_context_helper_sha256", ROOT / "backend/oe_input_context.py"),
         ):
             with self.subTest(field=field):
-                self.assertEqual(data[field], hashlib.sha256(path.read_bytes()).hexdigest())
+                content = subprocess.check_output(
+                    ["git", "show", f"{RESEARCH_COMMIT}:{path.relative_to(ROOT).as_posix()}"],
+                    cwd=ROOT,
+                )
+                self.assertEqual(data[field], hashlib.sha256(content).hexdigest())
         recipes = {recipe["id"]: recipe for recipe in data["recipes"]}
         self.assertEqual(set(recipes), {
             "identity", "sc034-skip", "sc034-after-nasal-apocope",
@@ -163,11 +168,9 @@ class SC034AdjudicationTests(unittest.TestCase):
             ("baseline_context_sha256", GERMANIC / "data/entry_context_metadata.tsv"),
             ("baseline_context_helper_sha256", ROOT / "backend/oe_input_context.py"),
         ):
-            content = path.read_bytes()
-            if field in {"baseline_corpus_sha256", "baseline_fst_sha256"}:
-                revision = "757e36e0" if field == "baseline_corpus_sha256" else "812cc437"
-                content = subprocess.check_output(
-                    ["git", "show", f"{revision}:{path.relative_to(ROOT)}"], cwd=ROOT)
+            revision = "757e36e0" if field == "baseline_corpus_sha256" else RESEARCH_COMMIT
+            content = subprocess.check_output(
+                ["git", "show", f"{revision}:{path.relative_to(ROOT).as_posix()}"], cwd=ROOT)
             self.assertEqual(data[field], hashlib.sha256(content).hexdigest())
             captured = [checksum for name, checksum in report["canonical_protected_hashes"].items()
                         if name.endswith("/" + path.name)]

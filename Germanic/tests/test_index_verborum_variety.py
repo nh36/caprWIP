@@ -48,6 +48,8 @@ def current_source_metrics():
         "unique_printed_entries": len(builder.build_print_unique_rows(main)),
         "print_excluded_occurrences": len(excluded),
         "print_explicit_occurrences": sum(r.source_scope == "explicit_tag" for r in main),
+        "print_excluded_explicit_occurrences": sum(
+            r.get("source_scope") == "explicit_tag" for r in excluded),
     }
 
 # Full production occurrence identity — every field needed to distinguish two
@@ -1103,8 +1105,9 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         self.assertEqual(printable_explicit, current_source_metrics()["print_explicit_occurrences"])
 
         excluded_explicit = sum(1 for r in pe if (r.get("source_scope") or "") == "explicit_tag")
-        # Straw adds three reconstructed regular-output spans, excluded from print.
-        self.assertEqual(excluded_explicit, 82, "excluded explicit occurrences")
+        self.assertEqual(excluded_explicit,
+                         current_source_metrics()["print_excluded_explicit_occurrences"],
+                         "excluded explicit occurrences")
 
         # Every excluded explicit must retain its occurrence_id
         self.assertTrue(

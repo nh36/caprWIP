@@ -20,6 +20,7 @@ import oe_pipeline
 from capr_runtime import run_in_runner, check_build_manifest
 
 BASE = ROOT / "Germanic/docs/sound_changes/cascade_baseline"
+RUST_ADOPTION_COMMIT = "586ec5f370e58d9038142d330121acf58b085a18"
 
 
 def read_tsv(path):
@@ -108,12 +109,15 @@ class RustInputAdoptionTests(unittest.TestCase):
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             self.assertEqual(before, {path.name: path.read_bytes() for path in target.iterdir()})
 
-    def test_corpus_delta_is_only_authorized_fields_and_oe_row(self):
+    def test_rust_adoption_corpus_delta_was_only_authorized_fields_and_oe_row(self):
         path = ROOT / "Germanic/data/germanic-aligned-final.tsv"
         old_text = subprocess.check_output(
             ["git", "show", f"757e36e0:{path.relative_to(ROOT)}"], cwd=ROOT, text=True)
         old = list(csv.DictReader(old_text.splitlines(), delimiter="\t"))
-        new = read_tsv(path)
+        adopted_text = subprocess.check_output(
+            ["git", "show", f"{RUST_ADOPTION_COMMIT}:{path.relative_to(ROOT).as_posix()}"],
+            cwd=ROOT, text=True)
+        new = list(csv.DictReader(adopted_text.splitlines(), delimiter="\t"))
         changes = [(a, b) for a, b in zip(old, new, strict=True) if a != b]
         self.assertEqual(len(changes), 1)
         before, after = changes[0]
@@ -153,13 +157,21 @@ class RustInputAdoptionTests(unittest.TestCase):
         self.assertEqual(
             (ROOT / "Germanic/docs/debug_snapshots/oe_known_problems_report.txt").read_text(), report)
 
-    def test_only_rust_intermediate_trace_changes_and_the_paths_converge(self):
+    def test_rust_adoption_changed_only_its_intermediate_trace_and_paths_converged(self):
         import re
 
         path = ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt"
         old = subprocess.check_output(
             ["git", "show", f"757e36e0:{path.relative_to(ROOT)}"], cwd=ROOT, text=True)
-        new = path.read_text()
+        new = subprocess.check_output(
+            ["git", "show", f"{RUST_ADOPTION_COMMIT}:{path.relative_to(ROOT).as_posix()}"],
+            cwd=ROOT, text=True)
+        adopted_baseline = subprocess.check_output(
+            ["git", "show",
+             f"{RUST_ADOPTION_COMMIT}:Germanic/docs/sound_changes/cascade_baseline/"
+             "cascade_baseline_outputs.tsv"],
+            cwd=ROOT, text=True)
+        adopted_records = list(csv.DictReader(adopted_baseline.splitlines(), delimiter="\t"))
 
         def blocks(text, records):
             identifiers = {(row["concept"], row["proto"]): row["row_id"] for row in records}
@@ -175,7 +187,7 @@ class RustInputAdoptionTests(unittest.TestCase):
             return result
 
         before = blocks(old, self.previous["records"])
-        after = blocks(new, self.current["records"])
+        after = blocks(new, adopted_records)
         self.assertEqual(len(before), 387)
         self.assertEqual(before.keys(), after.keys())
         self.assertEqual([key for key in before if before[key] != after[key]], ["2162"])

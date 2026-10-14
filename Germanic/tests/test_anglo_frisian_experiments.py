@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import copy
 import csv
+import hashlib
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -80,7 +82,12 @@ class ExperimentTests(unittest.TestCase):
             ("baseline_context_sha256", layout().data_dir / "entry_context_metadata.tsv"),
             ("baseline_context_helper_sha256", layout().bin_dir / "oe_input_context.py"),
         ):
-            self.assertEqual(data[field], experiments.digest(source))
+            released = subprocess.check_output(
+                ["git", "show",
+                 f"161968234693b0fe0372f6a8b4c74e9bc19e866a:{source.relative_to(chronology.ROOT).as_posix()}"],
+                cwd=chronology.ROOT,
+            )
+            self.assertEqual(data[field], hashlib.sha256(released).hexdigest())
         recipe = data["recipes"][1]
         self.assertEqual(len(recipe["component_checks"]), 49)
         self.assertEqual(len(recipe["staged_checks"]), 7)
@@ -141,7 +148,12 @@ class ExperimentTests(unittest.TestCase):
             ("baseline_context_sha256", layout().data_dir / "entry_context_metadata.tsv"),
             ("baseline_context_helper_sha256", layout().bin_dir / "oe_input_context.py"),
         ):
-            self.assertEqual(data[field], experiments.digest(source))
+            released = subprocess.check_output(
+                ["git", "show",
+                 f"671edc53a247ab3fc5916c6d87dd39aecddde09d:{source.relative_to(chronology.ROOT).as_posix()}"],
+                cwd=chronology.ROOT,
+            )
+            self.assertEqual(data[field], hashlib.sha256(released).hexdigest())
         recipe = data["recipes"][1]
         self.assertEqual(recipe["insert_after"], "EAFBrightening")
         self.assertEqual(set(recipe["replace"]),

@@ -1,6 +1,7 @@
 """Production admission and complete-derivation receipt for nasal bimoric o."""
 
 import json
+import subprocess
 import sys
 import unittest
 from pathlib import Path
@@ -60,10 +61,23 @@ class NasalBimoricTests(unittest.TestCase):
                       checks)
 
     def test_consumer_audit_is_complete_and_not_a_second_cascade(self):
-        self.assertEqual(self.receipt["class_consumers"], consumer_audit(self.source))
+        adopted_source = subprocess.check_output(
+            ["git", "show",
+             "dcafc62590c9b4cb71328207aab70d153dc6f88e:Germanic/fsts/germanic.txt"],
+            cwd=ROOT,
+            text=True,
+        )
+        self.assertEqual(self.receipt["class_consumers"], consumer_audit(adopted_source))
         self.assertIn("PNWGmcILowering", self.receipt["class_consumers"]["EnglishStarNonHighVowel"])
         self.assertIn("EAFFinalZDeletion", self.receipt["class_consumers"]["PGmcStarVowel"])
         self.assertIn("OEHighVowelApocope", self.receipt["class_consumers"]["EnglishStarLongVowel"])
+
+    def test_current_consumers_preserve_lowering_and_distinct_vowel_domains(self):
+        consumers = consumer_audit(self.source)
+        for name in ("PNWGmcILowering", "PNWGmcULowering"):
+            self.assertIn(name, consumers["EnglishStarNonHighVowel"])
+        self.assertIn("EAFFinalZDeletion", consumers["PGmcStarVowel"])
+        self.assertIn("OEHighVowelApocope", consumers["EnglishStarLongVowel"])
         self.assertNotIn("{*ǭ}", self.definitions["PNWGmcFinalLongORaising"].body)
         self.assertNotIn("{*ô}", self.definitions["PGmcStarVowel"].body)
 
