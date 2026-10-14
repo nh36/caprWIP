@@ -1,0 +1,661 @@
+{
+  "fst_sha256": "6c33b3c723150b61de4a41c89e228f32eeceb8280114b573e182eb8baf6ff51f",
+  "corpus_sha256": "165f859329efee0fc3bda0fbc9d4030de340ec9e5ad5341a738dfbf8e494699b",
+  "selected_rows": 387,
+  "checkpoint_count": 107,
+  "identical_row_checkpoints": 41409,
+  "changed_derivation_ids": [],
+  "changed_final_ids": [],
+  "mismatch_ids": [
+    "1973",
+    "2013",
+    "2030",
+    "2162",
+    "2224",
+    "2240",
+    "2298",
+    "2300"
+  ],
+  "rejected_ids": [],
+  "ambiguous_ids": [],
+  "component_checks": [
+    {
+      "component": "PGmcStarVowel",
+      "input": "*ǭ",
+      "outputs": [
+        "*ǭ"
+      ]
+    },
+    {
+      "component": "PGmcStarBackVowel",
+      "input": "*ǭ",
+      "outputs": [
+        "*ǭ"
+      ]
+    },
+    {
+      "component": "EnglishStarLongVowel",
+      "input": "*ǭ",
+      "outputs": [
+        "*ǭ"
+      ]
+    },
+    {
+      "component": "EnglishStarNonHighVowel",
+      "input": "*ǭ",
+      "outputs": [
+        "*ǭ"
+      ]
+    },
+    {
+      "component": "EnglishWeakTailVowelStar",
+      "input": "*ǭ",
+      "outputs": [
+        "*ǭ"
+      ]
+    },
+    {
+      "component": "pgrmLongVowel",
+      "input": "ō",
+      "outputs": [
+        "*ō"
+      ]
+    },
+    {
+      "component": "pgrmLongVowel",
+      "input": "ǭ",
+      "outputs": [
+        "*ǭ"
+      ]
+    },
+    {
+      "component": "pgrmLongVowel",
+      "input": "ô",
+      "outputs": [
+        "*ô"
+      ]
+    },
+    {
+      "component": "pgrmWeakTailVowel",
+      "input": "ō",
+      "outputs": [
+        "*ō"
+      ]
+    },
+    {
+      "component": "pgrmWeakTailVowel",
+      "input": "ǭ",
+      "outputs": [
+        "*ǭ"
+      ]
+    },
+    {
+      "component": "pgrmWeakTailVowel",
+      "input": "ô",
+      "outputs": [
+        "*ô"
+      ]
+    },
+    {
+      "component": "EnglishProtoInput",
+      "input": "wúllō",
+      "outputs": [
+        "*w*ú*l*l*ō"
+      ]
+    },
+    {
+      "component": "EnglishProtoInput",
+      "input": "wúllǭ",
+      "outputs": [
+        "*w*ú*l*l*ǭ"
+      ]
+    },
+    {
+      "component": "EnglishProtoInput",
+      "input": "wullǭ",
+      "outputs": [
+        "*w*u*l*l*ǭ"
+      ]
+    },
+    {
+      "component": "EnglishProtoInput",
+      "input": "wúllô",
+      "outputs": [
+        "*w*ú*l*l*ô"
+      ]
+    },
+    {
+      "component": "EnglishProtoInput",
+      "input": "wúllôz",
+      "outputs": []
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*l*ō",
+      "outputs": [
+        "*w*ó*l*l*ō"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*l*ǭ",
+      "outputs": [
+        "*w*ó*l*l*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*l*ô",
+      "outputs": [
+        "*w*ó*l*l*ô"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*l*ą",
+      "outputs": [
+        "*w*ó*l*l*ą"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*l*ę",
+      "outputs": [
+        "*w*ú*l*l*ę"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*l*ų",
+      "outputs": [
+        "*w*ú*l*l*ų"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*l*u",
+      "outputs": [
+        "*w*ú*l*l*u"
+      ]
+    },
+    {
+      "component": "PNWGmcILowering",
+      "input": "*n*í*s*ǭ",
+      "outputs": [
+        "*n*é*s*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcILowering",
+      "input": "*n*í*s*ų",
+      "outputs": [
+        "*n*í*s*ų"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*n*d*ǭ",
+      "outputs": [
+        "*w*ú*n*d*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*w*ú*l*j*ǭ",
+      "outputs": [
+        "*w*ú*l*j*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*l*ō",
+      "outputs": [
+        "*ᵘ*w*ó*l*l*ō"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*l*ǭ",
+      "outputs": [
+        "*ᵘ*w*ó*l*l*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*l*ô",
+      "outputs": [
+        "*ᵘ*w*ó*l*l*ô"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*l*ą",
+      "outputs": [
+        "*ᵘ*w*ó*l*l*ą"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*l*ę",
+      "outputs": [
+        "*ᵘ*w*ú*l*l*ę"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*l*ų",
+      "outputs": [
+        "*ᵘ*w*ú*l*l*ų"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*l*u",
+      "outputs": [
+        "*ᵘ*w*ú*l*l*u"
+      ]
+    },
+    {
+      "component": "PNWGmcILowering",
+      "input": "*ᵘ*n*í*s*ǭ",
+      "outputs": [
+        "*ᵘ*n*é*s*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcILowering",
+      "input": "*ᵘ*n*í*s*ų",
+      "outputs": [
+        "*ᵘ*n*í*s*ų"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*n*d*ǭ",
+      "outputs": [
+        "*ᵘ*w*ú*n*d*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᵘ*w*ú*l*j*ǭ",
+      "outputs": [
+        "*ᵘ*w*ú*l*j*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*l*ō",
+      "outputs": [
+        "*ᶜ*w*ó*l*l*ō"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*l*ǭ",
+      "outputs": [
+        "*ᶜ*w*ó*l*l*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*l*ô",
+      "outputs": [
+        "*ᶜ*w*ó*l*l*ô"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*l*ą",
+      "outputs": [
+        "*ᶜ*w*ó*l*l*ą"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*l*ę",
+      "outputs": [
+        "*ᶜ*w*ú*l*l*ę"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*l*ų",
+      "outputs": [
+        "*ᶜ*w*ú*l*l*ų"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*l*u",
+      "outputs": [
+        "*ᶜ*w*ú*l*l*u"
+      ]
+    },
+    {
+      "component": "PNWGmcILowering",
+      "input": "*ᶜ*n*í*s*ǭ",
+      "outputs": [
+        "*ᶜ*n*é*s*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcILowering",
+      "input": "*ᶜ*n*í*s*ų",
+      "outputs": [
+        "*ᶜ*n*í*s*ų"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*n*d*ǭ",
+      "outputs": [
+        "*ᶜ*w*ú*n*d*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcULowering",
+      "input": "*ᶜ*w*ú*l*j*ǭ",
+      "outputs": [
+        "*ᶜ*w*ú*l*j*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcFinalLongORaising",
+      "input": "*w*ó*l*l*ō",
+      "outputs": [
+        "*w*ó*l*l*u"
+      ]
+    },
+    {
+      "component": "PNWGmcFinalLongORaising",
+      "input": "*w*ó*l*l*ǭ",
+      "outputs": [
+        "*w*ó*l*l*ǭ"
+      ]
+    },
+    {
+      "component": "PNWGmcFinalLongORaising",
+      "input": "*w*ó*l*l*ô",
+      "outputs": [
+        "*w*ó*l*l*ô"
+      ]
+    },
+    {
+      "component": "PNWGmcStressedMonosyllableORaising",
+      "input": "*d*ō",
+      "outputs": [
+        "*d*ū"
+      ]
+    }
+  ],
+  "wool_raw_cells": {
+    "wúllō": [
+      "woll"
+    ],
+    "wúllǭ": [
+      "wolle"
+    ],
+    "wullō": [
+      "woll"
+    ],
+    "wullǭ": [
+      "wolle"
+    ]
+  },
+  "you_context_input": "ᵘízwiz",
+  "you_output": [
+    "ēow"
+  ],
+  "class_consumers": {
+    "pgrmLongVowel": [
+      "English",
+      "EnglishProtoInput",
+      "EnglishReflexes",
+      "German",
+      "GermanAfterApocope",
+      "GermanAfterAu",
+      "GermanAfterAzLoss",
+      "GermanAfterCleanup",
+      "GermanAfterConsonant",
+      "GermanAfterEw",
+      "GermanAfterFinalDevoice",
+      "GermanAfterLongV",
+      "GermanAfterNasal",
+      "GermanAfterOrthography",
+      "GermanAfterPalatal",
+      "GermanAfterStarDrop",
+      "GermanAfterStopShift",
+      "GermanAfterVowelAdj",
+      "GermanProtoInput",
+      "GermanReflexes",
+      "OldEnglish",
+      "OldEnglishAfterEpenthesis",
+      "OldEnglishCore",
+      "OldEnglishReflexes",
+      "OldEnglishRules",
+      "pgrmCompoundFirst",
+      "pgrmCompoundSecond",
+      "pgrmCompoundWord",
+      "pgrmSimpleWord",
+      "pgrmStrongPlain",
+      "pgrmStrongPlainHeavy",
+      "pgrmStrongPlainHeavyPrefixed",
+      "pgrmStrongPlainPrefixed",
+      "pgrmWord"
+    ],
+    "pgrmWeakTailVowel": [
+      "English",
+      "EnglishLMEShortVowelSplit",
+      "EnglishOEToModern",
+      "EnglishProtoInput",
+      "EnglishProtoToOE",
+      "EnglishReflexes",
+      "EnglishShortVowelContextual",
+      "EnglishStrutRescue",
+      "EnglishVowelRules",
+      "EnglishVowelRulesPreRhotic",
+      "EnglishWeakTailReductions",
+      "EnglishWeakTailVowel",
+      "German",
+      "GermanAfterApocope",
+      "GermanAfterAu",
+      "GermanAfterAzLoss",
+      "GermanAfterCleanup",
+      "GermanAfterConsonant",
+      "GermanAfterEw",
+      "GermanAfterFinalDevoice",
+      "GermanAfterLongV",
+      "GermanAfterNasal",
+      "GermanAfterOrthography",
+      "GermanAfterPalatal",
+      "GermanAfterStarDrop",
+      "GermanAfterStopShift",
+      "GermanAfterVowelAdj",
+      "GermanProtoInput",
+      "GermanReflexes",
+      "OEARestoration",
+      "OEARestorationWeakTailVowel",
+      "OldEnglish",
+      "OldEnglishAfterEpenthesis",
+      "OldEnglishCore",
+      "OldEnglishReflexes",
+      "OldEnglishRules",
+      "pgrmCompoundSecond",
+      "pgrmCompoundWord",
+      "pgrmSimpleWord",
+      "pgrmWord"
+    ],
+    "PGmcStarVowel": [
+      "Ctx",
+      "EAFBrighteningLongFinal",
+      "EAFFinalZDeletion",
+      "EAFFinalZLoss",
+      "EAFHiatusWInsertion",
+      "EAFLThVoicing",
+      "EAFRhotacism",
+      "EarlyEnglishLineChanges",
+      "EarlyGermanicConsonantPipeline",
+      "English",
+      "EnglishBreakingWContext",
+      "EnglishBreakingXContextNonWeakA",
+      "EnglishGhDeletion",
+      "EnglishGhMarker",
+      "EnglishGlideDeletion",
+      "EnglishLMEShortVowelSplit",
+      "EnglishOEToModern",
+      "EnglishOFrontContext",
+      "EnglishORaisedFront",
+      "EnglishOpenSyllableLengthening",
+      "EnglishProtoToOE",
+      "EnglishReflexes",
+      "EnglishShortVowelContextual",
+      "EnglishStarAlphabet",
+      "EnglishStarNonVelar",
+      "EnglishStarVocalic",
+      "EnglishVowelRules",
+      "EnglishVowelRulesPostRhotic",
+      "EnglishVowelRulesPreRhotic",
+      "German",
+      "GermanAfterApocope",
+      "GermanAfterAzLoss",
+      "GermanAfterCleanup",
+      "GermanAfterConsonant",
+      "GermanAfterFinalDevoice",
+      "GermanAfterOrthography",
+      "GermanAfterPalatal",
+      "GermanAfterStarDrop",
+      "GermanAfterStopShift",
+      "GermanAfterVowelAdj",
+      "GermanConsonantShift",
+      "GermanReflexes",
+      "GermanRules",
+      "MonosyllabicFinalZLoss",
+      "OEAwLongDiphthong",
+      "OEBreaking",
+      "OEBreakingA",
+      "OEBreakingE",
+      "OEBreakingI",
+      "OEEarlyOShortening",
+      "OEFinalUnstressedOLowering",
+      "OEGFricativePalatal",
+      "OEHLoss",
+      "OEInterStressRaising",
+      "OEIntervocalicJVocalization",
+      "OEJStrengtheningAfterFrontDiphthong",
+      "OELateOShortening",
+      "OELateUnstressedAgSuffix",
+      "OEMedUnstressedILowering1",
+      "OEMedUnstressedORaising",
+      "OEMedUnstressedULowering",
+      "OEPrefixAReduction",
+      "OEPrefixIReduction",
+      "OEUnstressedAEMerger",
+      "OEUnstressedAFronting",
+      "OEUnstressedEIContraction",
+      "OEUnstressedFrontingEarly",
+      "OEUnstressedLongVowelShortening",
+      "OEUnstressedLongVowelShortening1",
+      "OEUnstressedLongVowelShortening2",
+      "OEUnstressedLongVowelShortening3",
+      "OEUnstressedLongVowelShortening5",
+      "OEUnstressedLongVowelShortening6",
+      "OEUnstressedLongVowelShortening7",
+      "OEUnstressedLongVowelShortening8",
+      "OEVelarFricativePalatalization",
+      "OEVelarPalatalization",
+      "OEWLossBeforeI",
+      "OEWWSimplification",
+      "OEWeakTailReduction3",
+      "OldEnglish",
+      "OldEnglishAfterEpenthesis",
+      "OldEnglishCore",
+      "OldEnglishReflexes",
+      "OldEnglishRules",
+      "PGmcBAllophony",
+      "PGmcGmSimplification",
+      "PGmcNasalLossBeforeX",
+      "PGmcStarVocalic",
+      "PNWGmcAToUBeforeM",
+      "PNWGmcFinalLongORaising",
+      "PNWGmcILowering",
+      "PNWGmcLongELowering",
+      "PNWGmcMnDissimilation",
+      "PNWGmcPreconsonantalXLoss",
+      "PNWGmcStressedMonosyllableORaising",
+      "PNWGmcULowering",
+      "PNWGmcUnstressedAiMonophthongization",
+      "PWGmcAiMonophthongization",
+      "PWGmcCoronalWAssimilation",
+      "PWGmcDentalHardening",
+      "PWGmcEarlyIApocope",
+      "PWGmcFinalOrLowering",
+      "PWGmcIjContraction",
+      "PWGmcJGemination",
+      "PWGmcSurvivingBimoricOUnrounding",
+      "PWGmcSyllabicJ",
+      "PWGmcUnstressedWordFinalIApocope",
+      "RootNounNomZLoss"
+    ],
+    "PGmcStarBackVowel": [
+      "English",
+      "EnglishBackMutationTrigger",
+      "EnglishProtoToOE",
+      "EnglishReflexes",
+      "EnglishStarBackVowel",
+      "OEARestoration",
+      "OEARestorationTriggerVowel",
+      "OEBackMutation",
+      "OEEpentheticBackShift",
+      "OEEpentheticInsertion",
+      "OEEpentheticVowel",
+      "OldEnglish",
+      "OldEnglishAfterEpenthesis",
+      "OldEnglishCore",
+      "OldEnglishReflexes",
+      "OldEnglishRules"
+    ],
+    "EnglishStarLongVowel": [
+      "English",
+      "EnglishProtoToOE",
+      "EnglishReflexes",
+      "OEHighVowelApocope",
+      "OEJLossAfterHeavy",
+      "OELAdjacentSyncope",
+      "OEMedialSyncope",
+      "OldEnglish",
+      "OldEnglishAfterEpenthesis",
+      "OldEnglishCore",
+      "OldEnglishReflexes",
+      "OldEnglishRules",
+      "PWGmcUnstressedWordFinalIApocope"
+    ],
+    "EnglishWeakTailVowelStar": [
+      "English",
+      "EnglishBreakingXContextNonWeakA",
+      "EnglishBreakingXContextWeakTail",
+      "EnglishProtoToOE",
+      "EnglishReflexes",
+      "OEBreaking",
+      "OEBreakingA",
+      "OldEnglish",
+      "OldEnglishAfterEpenthesis",
+      "OldEnglishCore",
+      "OldEnglishReflexes",
+      "OldEnglishRules"
+    ],
+    "EnglishStarNonHighVowel": [
+      "English",
+      "EnglishProtoToOE",
+      "EnglishReflexes",
+      "OldEnglish",
+      "OldEnglishAfterEpenthesis",
+      "OldEnglishCore",
+      "OldEnglishReflexes",
+      "OldEnglishRules",
+      "PNWGmcILowering",
+      "PNWGmcULowering"
+    ]
+  },
+  "canonical_artifacts_unchanged": true
+}

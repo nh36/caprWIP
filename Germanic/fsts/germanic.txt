@@ -139,7 +139,7 @@ define pgrmNasalVowel [
 ];
 
 define pgrmLongVowel [
-    ā:{*ā} | ē:{*ē} | ī:{*ī} | ō:{*ō} | ū:{*ū} | ô:{*ô} |
+    ā:{*ā} | ē:{*ē} | ī:{*ī} | ō:{*ō} | ǭ:{*ǭ} | ū:{*ū} | ô:{*ô} |
     # §17.46 stressed long-vowel tier (acute over macron). *ḯ and *ḗ
     # are plumbed in; other long vowels (āˊ ṓ ūˊ ǣˊ ȳˊ) will follow on
     # a separate branch.
@@ -445,6 +445,9 @@ define pgrmWeakTailVowel [
     ī:{*ī} n:{*n} ų:{*ų} |
     ī:{*ī} n:{*n} i:{*i} z:{*z} |
     ō:{*ō} |
+    # Inherited nasal bimoric accusative, distinct from oral ō and trimoric ô
+    # (Ringe 2017 pp. 242-243; Fulk 2018 p. 155).
+    ǭ:{*ǭ} |
     # *-anjō derivational suffix: forms feminine nouns (body parts, abstracts)
     # e.g. *lunganjō 'lung' → OE lungen (i-umlaut of *a → *e, j-loss)
     a:{*a} n:{*n} j:{*j} ō:{*ō} |
@@ -548,6 +551,7 @@ define PGmcStarVowel [
     {*ę} |
     {*ī} |
     {*ō} |
+    {*ǭ} |
     {*œ} |
     {*ū} |
     {*ų} |
@@ -657,6 +661,7 @@ define PGmcStarBackVowel [
     {*u} |
     {*ā} |
     {*ō} |
+    {*ǭ} |
     {*ū} |
     {*ã} |  # long nasalized low vowel (*ą̄) — back, like its oral counterpart *ā
     {*ɑ} |
@@ -991,7 +996,7 @@ define EnglishStarLongDiphthong [
 
 define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
 
-define EnglishStarLongVowel [{*ā} | {*ē} | {*ḗ} | {*ī} | {*ō} | {*ū} | {*ȳ} | {*ǣ} | {*ḯ} | {*ã}];
+define EnglishStarLongVowel [{*ā} | {*ē} | {*ḗ} | {*ī} | {*ō} | {*ǭ} | {*ū} | {*ȳ} | {*ǣ} | {*ḯ} | {*ã}];
 
 define EnglishStarShortVowel [
     {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ą} |
@@ -1126,6 +1131,7 @@ define EnglishWeakTailVowelStar [
     {*ē} {*r} |
     {*ī} {*n} |
     {*ō} |
+    {*ǭ} |
     {*ō} {*j} {*a} {*n} {*ą} |
     {*ō} {*n} |
     {*ō} {*n} {*d} {*z} |
@@ -2351,7 +2357,7 @@ define AngloFrisianVelarShortening [
 define EnglishStarNonHighVowel [
     {*a} | {*ā} | {*ą} |
     {*e} | {*ē} | {*ḗ} |
-    {*o} | {*ō} | {*ɔ̆} |
+    {*o} | {*ō} | {*ǭ} | {*ɔ̆} |
     {*ô} |
     # DEV_NOTES §16.6: Nebenton-graves count as their plain counterparts
     # for right-context classes (before OEStripSecondaryStress fires).

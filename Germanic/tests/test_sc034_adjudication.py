@@ -164,9 +164,10 @@ class SC034AdjudicationTests(unittest.TestCase):
             ("baseline_context_helper_sha256", ROOT / "backend/oe_input_context.py"),
         ):
             content = path.read_bytes()
-            if field == "baseline_corpus_sha256":
+            if field in {"baseline_corpus_sha256", "baseline_fst_sha256"}:
+                revision = "757e36e0" if field == "baseline_corpus_sha256" else "812cc437"
                 content = subprocess.check_output(
-                    ["git", "show", f"757e36e0:{path.relative_to(ROOT)}"], cwd=ROOT)
+                    ["git", "show", f"{revision}:{path.relative_to(ROOT)}"], cwd=ROOT)
             self.assertEqual(data[field], hashlib.sha256(content).hexdigest())
             captured = [checksum for name, checksum in report["canonical_protected_hashes"].items()
                         if name.endswith("/" + path.name)]
