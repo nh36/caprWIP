@@ -1,0 +1,681 @@
+{
+  "schema_version": 1,
+  "fixture_file": "wull_fixtures.tsv",
+  "baseline_fst_sha256": "a5d53a0504e6dc2a5411a8e327826f97a75c5bcc60f5fc17f55da06c71be904e",
+  "baseline_corpus_sha256": "165f859329efee0fc3bda0fbc9d4030de340ec9e5ad5341a738dfbf8e494699b",
+  "baseline_context_sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+  "baseline_context_helper_sha256": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961",
+  "probes": [
+    {
+      "id": "k001",
+      "stage": "EnglishProtoInput",
+      "side": "after"
+    },
+    {
+      "id": "k002",
+      "stage": "PGmcGmSimplification",
+      "side": "after"
+    },
+    {
+      "id": "k003",
+      "stage": "PGmcNasalLossBeforeX",
+      "side": "after"
+    },
+    {
+      "id": "k004",
+      "stage": "RootNounNomZLoss",
+      "side": "after"
+    },
+    {
+      "id": "k005",
+      "stage": "PNWGmcUnstressedAiMonophthongization",
+      "side": "after"
+    },
+    {
+      "id": "k006",
+      "stage": "PNWGmcAToUBeforeM",
+      "side": "after"
+    },
+    {
+      "id": "k007",
+      "stage": "PNWGmcLongELowering",
+      "side": "after"
+    },
+    {
+      "id": "k008",
+      "stage": "PWGmcEarlyIApocope",
+      "side": "after"
+    },
+    {
+      "id": "k009",
+      "stage": "PWGmcFinalOrLowering",
+      "side": "after"
+    },
+    {
+      "id": "k010",
+      "stage": "PWGmcCoronalWAssimilation",
+      "side": "after"
+    },
+    {
+      "id": "k011",
+      "stage": "OEWWSimplification",
+      "side": "after"
+    },
+    {
+      "id": "k012",
+      "stage": "PWGmcIjContraction",
+      "side": "after"
+    },
+    {
+      "id": "k013",
+      "stage": "PWGmcJGemination",
+      "side": "after"
+    },
+    {
+      "id": "k014",
+      "stage": "PWGmcSyllabicJ",
+      "side": "after"
+    },
+    {
+      "id": "k015",
+      "stage": "PNWGmcPreconsonantalXLoss",
+      "side": "after"
+    },
+    {
+      "id": "k016",
+      "stage": "EAFLThVoicing",
+      "side": "after"
+    },
+    {
+      "id": "k017",
+      "stage": "PWGmcDentalHardening",
+      "side": "after"
+    },
+    {
+      "id": "k018",
+      "stage": "PWGmcEndinglessAw",
+      "side": "after"
+    },
+    {
+      "id": "k019",
+      "stage": "PNWGmcILowering",
+      "side": "after"
+    },
+    {
+      "id": "k020",
+      "stage": "PNWGmcULowering",
+      "side": "after"
+    },
+    {
+      "id": "k021",
+      "stage": "PNWGmcStressedMonosyllableORaising",
+      "side": "after"
+    },
+    {
+      "id": "k022",
+      "stage": "PNWGmcFinalLongORaising",
+      "side": "after"
+    },
+    {
+      "id": "k023",
+      "stage": "EAFFinalZDeletion",
+      "side": "after"
+    },
+    {
+      "id": "k024",
+      "stage": "PWGmcUnstressedWordFinalIApocope",
+      "side": "after"
+    },
+    {
+      "id": "k025",
+      "stage": "MonosyllabicFinalZLoss",
+      "side": "after"
+    },
+    {
+      "id": "k026",
+      "stage": "EAFRhotacism",
+      "side": "after"
+    },
+    {
+      "id": "k027",
+      "stage": "PNWGmcMnDissimilation",
+      "side": "after"
+    },
+    {
+      "id": "k028",
+      "stage": "PNWGmcNStemNLoss",
+      "side": "after"
+    },
+    {
+      "id": "k029",
+      "stage": "EAFNasalSpirantLengthening",
+      "side": "after"
+    },
+    {
+      "id": "k030",
+      "stage": "EAFNasalSpirantLoss",
+      "side": "after"
+    },
+    {
+      "id": "k031",
+      "stage": "EAFHiatusWInsertion",
+      "side": "after"
+    },
+    {
+      "id": "k032",
+      "stage": "EAFLongANasalRounding",
+      "side": "after"
+    },
+    {
+      "id": "k033",
+      "stage": "EAFNasalizedLowRounding",
+      "side": "after"
+    },
+    {
+      "id": "k034",
+      "stage": "EAFLongAFronting",
+      "side": "after"
+    },
+    {
+      "id": "k035",
+      "stage": "EAFAiMonophthongization",
+      "side": "after"
+    },
+    {
+      "id": "k036",
+      "stage": "OEAwwjResolution",
+      "side": "after"
+    },
+    {
+      "id": "k037",
+      "stage": "OEAuBrightening",
+      "side": "after"
+    },
+    {
+      "id": "k038",
+      "stage": "OEEwLongDiphthong",
+      "side": "after"
+    },
+    {
+      "id": "k039",
+      "stage": "OEJWWSimplification",
+      "side": "after"
+    },
+    {
+      "id": "k040",
+      "stage": "OEJGlideIO",
+      "side": "after"
+    },
+    {
+      "id": "k041",
+      "stage": "OEDiphthongLeveling",
+      "side": "after"
+    },
+    {
+      "id": "k042",
+      "stage": "OEAwLongDiphthong",
+      "side": "after"
+    },
+    {
+      "id": "k043",
+      "stage": "OEPrefixAReduction",
+      "side": "after"
+    },
+    {
+      "id": "k044",
+      "stage": "OEInterStressRaising",
+      "side": "after"
+    },
+    {
+      "id": "k045",
+      "stage": "OECompoundLinkingSyncope",
+      "side": "after"
+    },
+    {
+      "id": "k046",
+      "stage": "OEStripSecondaryStress",
+      "side": "after"
+    },
+    {
+      "id": "k047",
+      "stage": "OEWICombinativeUUmlaut",
+      "side": "after"
+    },
+    {
+      "id": "k048",
+      "stage": "PWGmcFinalBareALoss",
+      "side": "after"
+    },
+    {
+      "id": "k049",
+      "stage": "PWGmcSurvivingBimoricOUnrounding",
+      "side": "after"
+    },
+    {
+      "id": "k050",
+      "stage": "EAFBrighteningUnstressed",
+      "side": "after"
+    },
+    {
+      "id": "k051",
+      "stage": "EAFBrightening",
+      "side": "after"
+    },
+    {
+      "id": "k052",
+      "stage": "EAFBrighteningLongFinal",
+      "side": "after"
+    },
+    {
+      "id": "k053",
+      "stage": "OEBreaking",
+      "side": "after"
+    },
+    {
+      "id": "k054",
+      "stage": "OEVelarFricativePalatalization",
+      "side": "after"
+    },
+    {
+      "id": "k055",
+      "stage": "OEARestoration",
+      "side": "after"
+    },
+    {
+      "id": "k056",
+      "stage": "OEHeavySyllableNasalApocope",
+      "side": "after"
+    },
+    {
+      "id": "k057",
+      "stage": "OESecondaryNasalization",
+      "side": "after"
+    },
+    {
+      "id": "k058",
+      "stage": "PGmcBAllophony",
+      "side": "after"
+    },
+    {
+      "id": "k059",
+      "stage": "SieversLawSyncope",
+      "side": "after"
+    },
+    {
+      "id": "k060",
+      "stage": "OESkPalatalization",
+      "side": "after"
+    },
+    {
+      "id": "k061",
+      "stage": "OEVelarPalatalization",
+      "side": "after"
+    },
+    {
+      "id": "k062",
+      "stage": "OEPostVelarWLoss",
+      "side": "after"
+    },
+    {
+      "id": "k063",
+      "stage": "OEWLossBeforeI",
+      "side": "after"
+    },
+    {
+      "id": "k064",
+      "stage": "OEWsPalatalDiphthongization",
+      "side": "after"
+    },
+    {
+      "id": "k065",
+      "stage": "OEIUmlaut",
+      "side": "after"
+    },
+    {
+      "id": "k066",
+      "stage": "OELatePalatalDiphthong",
+      "side": "after"
+    },
+    {
+      "id": "k067",
+      "stage": "OEJClusterCoalescence",
+      "side": "after"
+    },
+    {
+      "id": "k068",
+      "stage": "OEBackMutation",
+      "side": "after"
+    },
+    {
+      "id": "k069",
+      "stage": "OEWsPalatalUmlaut",
+      "side": "after"
+    },
+    {
+      "id": "k070",
+      "stage": "OEWeakTailNasalLoss",
+      "side": "after"
+    },
+    {
+      "id": "k071",
+      "stage": "OEWeightMarkers",
+      "side": "after"
+    },
+    {
+      "id": "k072",
+      "stage": "OEHighVowelApocope",
+      "side": "after"
+    },
+    {
+      "id": "k073",
+      "stage": "NWGmcInStemNLoss",
+      "side": "after"
+    },
+    {
+      "id": "k074",
+      "stage": "OEMedialSyncope",
+      "side": "after"
+    },
+    {
+      "id": "k075",
+      "stage": "OELAdjacentSyncope",
+      "side": "after"
+    },
+    {
+      "id": "k076",
+      "stage": "OEDentalAssimilation",
+      "side": "after"
+    },
+    {
+      "id": "k077",
+      "stage": "OEPreconsonantalDegemination",
+      "side": "after"
+    },
+    {
+      "id": "k078",
+      "stage": "OEEarlyOShortening",
+      "side": "after"
+    },
+    {
+      "id": "k079",
+      "stage": "OEUnstressedFrontingEarly",
+      "side": "after"
+    },
+    {
+      "id": "k080",
+      "stage": "OELateOShortening",
+      "side": "after"
+    },
+    {
+      "id": "k081",
+      "stage": "OEMedUnstressedORaising",
+      "side": "after"
+    },
+    {
+      "id": "k082",
+      "stage": "OEFinalUnstressedOLowering",
+      "side": "after"
+    },
+    {
+      "id": "k083",
+      "stage": "OEUnstressedLongVowelShortening",
+      "side": "after"
+    },
+    {
+      "id": "k084",
+      "stage": "OEUnstressedAEMerger",
+      "side": "after"
+    },
+    {
+      "id": "k085",
+      "stage": "OEMedUnstressedILowering1",
+      "side": "after"
+    },
+    {
+      "id": "k086",
+      "stage": "OEMedUnstressedILowering",
+      "side": "after"
+    },
+    {
+      "id": "k087",
+      "stage": "OEMedUnstressedULowering",
+      "side": "after"
+    },
+    {
+      "id": "k088",
+      "stage": "OEPrefixIReduction",
+      "side": "after"
+    },
+    {
+      "id": "k089",
+      "stage": "OEWeakTailReduction",
+      "side": "after"
+    },
+    {
+      "id": "k090",
+      "stage": "OEJLossAfterHeavy",
+      "side": "after"
+    },
+    {
+      "id": "k091",
+      "stage": "OEFinalGeminateSimplification",
+      "side": "after"
+    },
+    {
+      "id": "k092",
+      "stage": "OEJStrengtheningAfterFrontDiphthong",
+      "side": "after"
+    },
+    {
+      "id": "k093",
+      "stage": "OEIntervocalicJVocalization",
+      "side": "after"
+    },
+    {
+      "id": "k094",
+      "stage": "OEUnstressedEIContraction",
+      "side": "after"
+    },
+    {
+      "id": "k095",
+      "stage": "OEWeightCleanup",
+      "side": "after"
+    },
+    {
+      "id": "k096",
+      "stage": "OEHLoss",
+      "side": "after"
+    },
+    {
+      "id": "k097",
+      "stage": "OEContraction",
+      "side": "after"
+    },
+    {
+      "id": "k098",
+      "stage": "OERMetathesis",
+      "side": "after"
+    },
+    {
+      "id": "k099",
+      "stage": "OEEpentheticVowel",
+      "side": "after"
+    },
+    {
+      "id": "k100",
+      "stage": "OELateUnstressedAgSuffix",
+      "side": "after"
+    },
+    {
+      "id": "k101",
+      "stage": "OEPalatalFricativeMerger",
+      "side": "after"
+    },
+    {
+      "id": "k102",
+      "stage": "OECjCleanup",
+      "side": "after"
+    },
+    {
+      "id": "k103",
+      "stage": "OEXsMerge",
+      "side": "after"
+    },
+    {
+      "id": "k104",
+      "stage": "OldEnglishOrthography",
+      "side": "after"
+    },
+    {
+      "id": "k105",
+      "stage": "OEWsPalatalGlide",
+      "side": "after"
+    },
+    {
+      "id": "k106",
+      "stage": "OldEnglishRemoveStars",
+      "side": "after"
+    },
+    {
+      "id": "k107",
+      "stage": "OldEnglishSurface",
+      "side": "after"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "identity",
+      "description": "Released source and full-wrapper identity",
+      "definitions": "",
+      "insert_after": "",
+      "insert_rule": "",
+      "replace": {},
+      "sources": [],
+      "assumptions": "No intervention.",
+      "limitations": "Executable checkpoints are not historical dates. Missing nasal trigger recognition and input admission are separate questions."
+    },
+    {
+      "id": "a-order-only",
+      "description": "A: unchanged SC018 and SC019 before unchanged SC017",
+      "definitions": "define AFEarly [PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising];\ndefine AFId18 [Ctx([[EnglishStarAlphabet]*])];\ndefine AFId19 [Ctx([[EnglishStarAlphabet]*])];",
+      "insert_after": "PNWGmcILowering",
+      "insert_rule": "AFEarly",
+      "replace": {
+        "PNWGmcStressedMonosyllableORaising": "AFId18",
+        "PNWGmcFinalLongORaising": "AFId19"
+      },
+      "sources": [
+        {
+          "key": "RingeTaylor2014",
+          "pages": "15-16,27-34,58-60,267,298-300"
+        },
+        {
+          "key": "Ringe2017",
+          "pages": "171-173,242-244"
+        },
+        {
+          "key": "Fulk2018",
+          "pages": "55-57,82-86,154-156"
+        },
+        {
+          "key": "Stiles2012",
+          "pages": "44-60"
+        }
+      ],
+      "assumptions": "Historical quantities and inflectional cells remain distinct. Selected corpus inputs and contexts are unchanged; analogy is not a sound law.",
+      "limitations": "Executable checkpoints are not historical dates. Missing nasal trigger recognition and input admission are separate questions."
+    },
+    {
+      "id": "b-conditioning-only",
+      "description": "B: admit nasal ǭ into SC017 trigger domain only",
+      "definitions": "define AFPass [Ctx([[EnglishStarAlphabet]*])];\ndefine AFUL [Ctx([\n    {*u} -> {*o}, {*ú} -> {*ó} ||\n    .#. EnglishStarConsonant* _\n    [EnglishStarConsonantNoJ - EnglishStarNasal]\n    EnglishStarConsonantNoJ* [EnglishStarNonHighVowel | {*ǭ}]\n])];",
+      "insert_after": "PNWGmcILowering",
+      "insert_rule": "AFPass",
+      "replace": {
+        "PNWGmcULowering": "AFUL"
+      },
+      "sources": [
+        {
+          "key": "RingeTaylor2014",
+          "pages": "15-16,27-34,58-60,267,298-300"
+        },
+        {
+          "key": "Ringe2017",
+          "pages": "171-173,242-244"
+        },
+        {
+          "key": "Fulk2018",
+          "pages": "55-57,82-86,154-156"
+        },
+        {
+          "key": "Stiles2012",
+          "pages": "44-60"
+        }
+      ],
+      "assumptions": "Historical quantities and inflectional cells remain distinct. Selected corpus inputs and contexts are unchanged; analogy is not a sound law.",
+      "limitations": "Executable checkpoints are not historical dates. Missing nasal trigger recognition and input admission are separate questions."
+    },
+    {
+      "id": "c-combined",
+      "description": "C: early SC018/SC019 and corrected SC017 trigger domain",
+      "definitions": "define AFEarly [PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising];\ndefine AFId18 [Ctx([[EnglishStarAlphabet]*])];\ndefine AFId19 [Ctx([[EnglishStarAlphabet]*])];\ndefine AFUL [Ctx([\n    {*u} -> {*o}, {*ú} -> {*ó} ||\n    .#. EnglishStarConsonant* _\n    [EnglishStarConsonantNoJ - EnglishStarNasal]\n    EnglishStarConsonantNoJ* [EnglishStarNonHighVowel | {*ǭ}]\n])];",
+      "insert_after": "PNWGmcILowering",
+      "insert_rule": "AFEarly",
+      "replace": {
+        "PNWGmcStressedMonosyllableORaising": "AFId18",
+        "PNWGmcFinalLongORaising": "AFId19",
+        "PNWGmcULowering": "AFUL"
+      },
+      "sources": [
+        {
+          "key": "RingeTaylor2014",
+          "pages": "15-16,27-34,58-60,267,298-300"
+        },
+        {
+          "key": "Ringe2017",
+          "pages": "171-173,242-244"
+        },
+        {
+          "key": "Fulk2018",
+          "pages": "55-57,82-86,154-156"
+        },
+        {
+          "key": "Stiles2012",
+          "pages": "44-60"
+        }
+      ],
+      "assumptions": "Historical quantities and inflectional cells remain distinct. Selected corpus inputs and contexts are unchanged; analogy is not a sound law.",
+      "limitations": "Executable checkpoints are not historical dates. Missing nasal trigger recognition and input admission are separate questions."
+    },
+    {
+      "id": "d-live-allophony",
+      "description": "D: early lowering, final raising, then live-allophone revaluation",
+      "definitions": "define AFUL [Ctx([\n    {*u} -> {*o}, {*ú} -> {*ó} ||\n    .#. EnglishStarConsonant* _\n    [EnglishStarConsonantNoJ - EnglishStarNasal]\n    EnglishStarConsonantNoJ* [EnglishStarNonHighVowel | {*ǭ}]\n])];\ndefine AFReval [Ctx([\n    {*o} -> {*u}, {*ó} -> {*ú} ||\n    .#. EnglishStarConsonant* _\n    [EnglishStarConsonantNoJ - EnglishStarNasal]\n    EnglishStarConsonantNoJ* {*u} .#.\n])];",
+      "insert_after": "PNWGmcFinalLongORaising",
+      "insert_rule": "AFReval",
+      "replace": {
+        "PNWGmcULowering": "AFUL"
+      },
+      "sources": [
+        {
+          "key": "RingeTaylor2014",
+          "pages": "15-16,27-34,58-60,267,298-300"
+        },
+        {
+          "key": "Ringe2017",
+          "pages": "171-173,242-244"
+        },
+        {
+          "key": "Fulk2018",
+          "pages": "55-57,82-86,154-156"
+        },
+        {
+          "key": "Stiles2012",
+          "pages": "44-60"
+        }
+      ],
+      "assumptions": "Historical quantities and inflectional cells remain distinct. Selected corpus inputs and contexts are unchanged; analogy is not a sound law.",
+      "limitations": "D specifically ASSUMES that conditioned [o] remains synchronically reversible until AFTER final oral ō becomes u. Stiles 2012 pp.54-59 allows reversion as a possibility, not an inevitable consequence; pp.47-48 show early runic o outside its original conditioning. The new operation is a research counterfactual, NOT a proposed attested historical law or evidence for its date."
+    }
+  ]
+}

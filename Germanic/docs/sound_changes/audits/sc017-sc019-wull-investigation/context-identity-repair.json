@@ -1,0 +1,33 @@
+{
+  "original_sha256": "51f56977dc590da4fc158a116d95506f33349ea353583b36978e580d32f77c2a",
+  "revision_sha256": "b2a601fdf7f58ac08825589e982934497f35b9a1e2afb5cd6f854e12cabe1488",
+  "changes": [
+    {
+      "recipe": "a-order-only",
+      "before": "define AFId18 [[EnglishStarAlphabet]*];",
+      "after": "define AFId18 [Ctx([[EnglishStarAlphabet]*])];"
+    },
+    {
+      "recipe": "a-order-only",
+      "before": "define AFId19 [[EnglishStarAlphabet]*];",
+      "after": "define AFId19 [Ctx([[EnglishStarAlphabet]*])];"
+    },
+    {
+      "recipe": "b-conditioning-only",
+      "before": "define AFPass [[EnglishStarAlphabet]*];",
+      "after": "define AFPass [Ctx([[EnglishStarAlphabet]*])];"
+    },
+    {
+      "recipe": "c-combined",
+      "before": "define AFId18 [[EnglishStarAlphabet]*];",
+      "after": "define AFId18 [Ctx([[EnglishStarAlphabet]*])];"
+    },
+    {
+      "recipe": "c-combined",
+      "before": "define AFId19 [[EnglishStarAlphabet]*];",
+      "after": "define AFId19 [Ctx([[EnglishStarAlphabet]*])];"
+    }
+  ],
+  "operational_failure": "A's segment-only transparent placeholder rejected selected you2326 (raw ᵘízwiz), because EnglishStarAlphabet excludes the word-unstressed context prefix. This is a private helper defect, not a sound-law result.",
+  "scientific_definitions_order_predictions_source_pins_unchanged": true
+}

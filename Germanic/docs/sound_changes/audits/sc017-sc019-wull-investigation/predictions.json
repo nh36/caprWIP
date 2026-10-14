@@ -1,0 +1,39 @@
+{
+  "a-order-only": {
+    "wool_nom_after_sc017": "*w*ú*l*l*u",
+    "wool_acc_after_sc017": "*w*ú*l*l*ǭ",
+    "expected_changed_final_ids": [
+      "2143",
+      "2185",
+      "2200",
+      "2300"
+    ]
+  },
+  "b-conditioning-only": {
+    "wool_nom_after_sc017": "*w*ó*l*l*ō",
+    "wool_acc_after_sc017": "*w*ó*l*l*ǭ",
+    "expected_changed_final_ids": []
+  },
+  "c-combined": {
+    "wool_nom_after_sc017": "*w*ú*l*l*u",
+    "wool_acc_after_sc017": "*w*ó*l*l*ǭ",
+    "expected_changed_final_ids": [
+      "2143",
+      "2185",
+      "2200",
+      "2300"
+    ]
+  },
+  "d-live-allophony": {
+    "wool_nom_after_sc017": "*w*ó*l*l*ō",
+    "wool_nom_after_revaluation": "*w*ú*l*l*u",
+    "wool_acc_after_sc017": "*w*ó*l*l*ǭ",
+    "expected_changed_final_ids": [
+      "2143",
+      "2185",
+      "2200",
+      "2300"
+    ]
+  },
+  "important_limit": "Bare accusative ǭ is absent from the production weak-tail parser. These predictions concern properly tokenized PGmc cells entered AFTER EnglishProtoInput, not a silent production parser repair. The separate pathway assay will measure actual input rejection."
+}

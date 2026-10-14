@@ -1,0 +1,81 @@
+variant	id	lexeme	case	stage	source	quotation_status	corpus_id	raw_input	tokenized_input	attested_target	outputs	rejected	ambiguous
+identity	wool-nom-sg	wool	nom-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllō	*w*ú*l*l*ō	wull	"[""woll""]"	0	0
+identity	wool-acc-sg	wool	acc-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllǭ	*w*ú*l*l*ǭ	wulle	"[""wulle""]"	0	0
+identity	love-nom-sg	love	nom-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbō	*l*ú*b*ō	lufu	"[""lofu""]"	0	0
+identity	love-acc-sg	love	acc-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbǭ	*l*ú*b*ǭ	lufe	"[""lufe""]"	0	0
+identity	shoal-nom-sg	shoal	nom-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlō	*s*k*ú*l*ō	scolu	"[""sċolu""]"	0	0
+identity	shoal-acc-sg	shoal	acc-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlǭ	*s*k*ú*l*ǭ		"[""sċule""]"	0	0
+identity	nose-nom-sg	nose	nom-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsō	*n*ú*s*ō	nosu	"[""nosu""]"	0	0
+identity	nose-acc-sg	nose	acc-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsǭ	*n*ú*s*ǭ		"[""nuse""]"	0	0
+identity	shovel-nom-sg	shovel	nom-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflō	*s*k*ú*f*l*ō	sċofl	"[""sċofl""]"	0	0
+identity	shovel-acc-sg	shovel	acc-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflǭ	*s*k*ú*f*l*ǭ		"[""sċufle""]"	0	0
+identity	sorrow-nom-sg	sorrow	nom-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgō	*s*ú*r*g*ō	sorg	"[""sorg""]"	0	0
+identity	sorrow-acc-sg	sorrow	acc-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgǭ	*s*ú*r*g*ǭ	sorge	"[""surge""]"	0	0
+identity	palm-nom-sg	palm	nom-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmō	*f*ú*l*m*ō	folm	"[""folm""]"	0	0
+identity	palm-acc-sg	palm	acc-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmǭ	*f*ú*l*m*ǭ		"[""fulme""]"	0	0
+identity	wool-rt-gen-sg-bimoric	wool	rt-gen-sg-bimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllōz	*w*ú*l*l*ō*z	wulle	"[""wolle""]"	0	0
+identity	wool-fulk-gen-sg-trimoric	wool	fulk-gen-sg-trimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllôz	*w*ú*l*l*ô*z	wulle	[]	1	0
+a-order-only	wool-nom-sg	wool	nom-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllō	*w*ú*l*l*ō	wull	"[""wull""]"	0	0
+a-order-only	wool-acc-sg	wool	acc-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllǭ	*w*ú*l*l*ǭ	wulle	"[""wulle""]"	0	0
+a-order-only	love-nom-sg	love	nom-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbō	*l*ú*b*ō	lufu	"[""lufu""]"	0	0
+a-order-only	love-acc-sg	love	acc-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbǭ	*l*ú*b*ǭ	lufe	"[""lufe""]"	0	0
+a-order-only	shoal-nom-sg	shoal	nom-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlō	*s*k*ú*l*ō	scolu	"[""sċulu""]"	0	0
+a-order-only	shoal-acc-sg	shoal	acc-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlǭ	*s*k*ú*l*ǭ		"[""sċule""]"	0	0
+a-order-only	nose-nom-sg	nose	nom-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsō	*n*ú*s*ō	nosu	"[""nusu""]"	0	0
+a-order-only	nose-acc-sg	nose	acc-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsǭ	*n*ú*s*ǭ		"[""nuse""]"	0	0
+a-order-only	shovel-nom-sg	shovel	nom-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflō	*s*k*ú*f*l*ō	sċofl	"[""sċufl""]"	0	0
+a-order-only	shovel-acc-sg	shovel	acc-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflǭ	*s*k*ú*f*l*ǭ		"[""sċufle""]"	0	0
+a-order-only	sorrow-nom-sg	sorrow	nom-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgō	*s*ú*r*g*ō	sorg	"[""surg""]"	0	0
+a-order-only	sorrow-acc-sg	sorrow	acc-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgǭ	*s*ú*r*g*ǭ	sorge	"[""surge""]"	0	0
+a-order-only	palm-nom-sg	palm	nom-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmō	*f*ú*l*m*ō	folm	"[""fulm""]"	0	0
+a-order-only	palm-acc-sg	palm	acc-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmǭ	*f*ú*l*m*ǭ		"[""fulme""]"	0	0
+a-order-only	wool-rt-gen-sg-bimoric	wool	rt-gen-sg-bimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllōz	*w*ú*l*l*ō*z	wulle	"[""wolle""]"	0	0
+a-order-only	wool-fulk-gen-sg-trimoric	wool	fulk-gen-sg-trimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllôz	*w*ú*l*l*ô*z	wulle	[]	1	0
+b-conditioning-only	wool-nom-sg	wool	nom-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllō	*w*ú*l*l*ō	wull	"[""woll""]"	0	0
+b-conditioning-only	wool-acc-sg	wool	acc-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllǭ	*w*ú*l*l*ǭ	wulle	"[""wolle""]"	0	0
+b-conditioning-only	love-nom-sg	love	nom-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbō	*l*ú*b*ō	lufu	"[""lofu""]"	0	0
+b-conditioning-only	love-acc-sg	love	acc-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbǭ	*l*ú*b*ǭ	lufe	"[""lofe""]"	0	0
+b-conditioning-only	shoal-nom-sg	shoal	nom-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlō	*s*k*ú*l*ō	scolu	"[""sċolu""]"	0	0
+b-conditioning-only	shoal-acc-sg	shoal	acc-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlǭ	*s*k*ú*l*ǭ		"[""sċole""]"	0	0
+b-conditioning-only	nose-nom-sg	nose	nom-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsō	*n*ú*s*ō	nosu	"[""nosu""]"	0	0
+b-conditioning-only	nose-acc-sg	nose	acc-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsǭ	*n*ú*s*ǭ		"[""nose""]"	0	0
+b-conditioning-only	shovel-nom-sg	shovel	nom-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflō	*s*k*ú*f*l*ō	sċofl	"[""sċofl""]"	0	0
+b-conditioning-only	shovel-acc-sg	shovel	acc-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflǭ	*s*k*ú*f*l*ǭ		"[""sċofle""]"	0	0
+b-conditioning-only	sorrow-nom-sg	sorrow	nom-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgō	*s*ú*r*g*ō	sorg	"[""sorg""]"	0	0
+b-conditioning-only	sorrow-acc-sg	sorrow	acc-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgǭ	*s*ú*r*g*ǭ	sorge	"[""sorge""]"	0	0
+b-conditioning-only	palm-nom-sg	palm	nom-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmō	*f*ú*l*m*ō	folm	"[""folm""]"	0	0
+b-conditioning-only	palm-acc-sg	palm	acc-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmǭ	*f*ú*l*m*ǭ		"[""folme""]"	0	0
+b-conditioning-only	wool-rt-gen-sg-bimoric	wool	rt-gen-sg-bimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllōz	*w*ú*l*l*ō*z	wulle	"[""wolle""]"	0	0
+b-conditioning-only	wool-fulk-gen-sg-trimoric	wool	fulk-gen-sg-trimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllôz	*w*ú*l*l*ô*z	wulle	[]	1	0
+c-combined	wool-nom-sg	wool	nom-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllō	*w*ú*l*l*ō	wull	"[""wull""]"	0	0
+c-combined	wool-acc-sg	wool	acc-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllǭ	*w*ú*l*l*ǭ	wulle	"[""wolle""]"	0	0
+c-combined	love-nom-sg	love	nom-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbō	*l*ú*b*ō	lufu	"[""lufu""]"	0	0
+c-combined	love-acc-sg	love	acc-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbǭ	*l*ú*b*ǭ	lufe	"[""lofe""]"	0	0
+c-combined	shoal-nom-sg	shoal	nom-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlō	*s*k*ú*l*ō	scolu	"[""sċulu""]"	0	0
+c-combined	shoal-acc-sg	shoal	acc-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlǭ	*s*k*ú*l*ǭ		"[""sċole""]"	0	0
+c-combined	nose-nom-sg	nose	nom-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsō	*n*ú*s*ō	nosu	"[""nusu""]"	0	0
+c-combined	nose-acc-sg	nose	acc-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsǭ	*n*ú*s*ǭ		"[""nose""]"	0	0
+c-combined	shovel-nom-sg	shovel	nom-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflō	*s*k*ú*f*l*ō	sċofl	"[""sċufl""]"	0	0
+c-combined	shovel-acc-sg	shovel	acc-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflǭ	*s*k*ú*f*l*ǭ		"[""sċofle""]"	0	0
+c-combined	sorrow-nom-sg	sorrow	nom-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgō	*s*ú*r*g*ō	sorg	"[""surg""]"	0	0
+c-combined	sorrow-acc-sg	sorrow	acc-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgǭ	*s*ú*r*g*ǭ	sorge	"[""sorge""]"	0	0
+c-combined	palm-nom-sg	palm	nom-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmō	*f*ú*l*m*ō	folm	"[""fulm""]"	0	0
+c-combined	palm-acc-sg	palm	acc-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmǭ	*f*ú*l*m*ǭ		"[""folme""]"	0	0
+c-combined	wool-rt-gen-sg-bimoric	wool	rt-gen-sg-bimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllōz	*w*ú*l*l*ō*z	wulle	"[""wolle""]"	0	0
+c-combined	wool-fulk-gen-sg-trimoric	wool	fulk-gen-sg-trimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllôz	*w*ú*l*l*ô*z	wulle	[]	1	0
+d-live-allophony	wool-nom-sg	wool	nom-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllō	*w*ú*l*l*ō	wull	"[""wull""]"	0	0
+d-live-allophony	wool-acc-sg	wool	acc-sg	pgmc	Ringe2017 pp.242-243	whole wool cell from Ringe, with CAPR acute stress	2300	wúllǭ	*w*ú*l*l*ǭ	wulle	"[""wolle""]"	0	0
+d-live-allophony	love-nom-sg	love	nom-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbō	*l*ú*b*ō	lufu	"[""lufu""]"	0	0
+d-live-allophony	love-acc-sg	love	acc-sg	pgmc	RingeTaylor2014 p.32; Orel2003 p.249	source stem plus independently supported inflectional cell, CAPR assembly		lúbǭ	*l*ú*b*ǭ	lufe	"[""lofe""]"	0	0
+d-live-allophony	shoal-nom-sg	shoal	nom-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlō	*s*k*ú*l*ō	scolu	"[""sċulu""]"	0	0
+d-live-allophony	shoal-acc-sg	shoal	acc-sg	pgmc	Fulk2018 p.56; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		skúlǭ	*s*k*ú*l*ǭ		"[""sċole""]"	0	0
+d-live-allophony	nose-nom-sg	nose	nom-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsō	*n*ú*s*ō	nosu	"[""nusu""]"	0	0
+d-live-allophony	nose-acc-sg	nose	acc-sg	pgmc	Campbell1959 p.43; Kroonen2013 p.383	source stem plus independently supported inflectional cell, CAPR assembly	2143	núsǭ	*n*ú*s*ǭ		"[""nose""]"	0	0
+d-live-allophony	shovel-nom-sg	shovel	nom-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflō	*s*k*ú*f*l*ō	sċofl	"[""sċufl""]"	0	0
+d-live-allophony	shovel-acc-sg	shovel	acc-sg	pgmc	Orel2003 p.347; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly	2185	skúflǭ	*s*k*ú*f*l*ǭ		"[""sċofle""]"	0	0
+d-live-allophony	sorrow-nom-sg	sorrow	nom-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgō	*s*ú*r*g*ō	sorg	"[""surg""]"	0	0
+d-live-allophony	sorrow-acc-sg	sorrow	acc-sg	pgmc	RingeTaylor2014 p.299; Kroonen2013 p.493	source stem plus independently supported inflectional cell, CAPR assembly	2200	súrgǭ	*s*ú*r*g*ǭ	sorge	"[""sorge""]"	0	0
+d-live-allophony	palm-nom-sg	palm	nom-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmō	*f*ú*l*m*ō	folm	"[""fulm""]"	0	0
+d-live-allophony	palm-acc-sg	palm	acc-sg	pgmc	Orel2003 p.118; ending Fulk2018 p.155	source stem plus independently supported inflectional cell, CAPR assembly		fúlmǭ	*f*ú*l*m*ǭ		"[""folme""]"	0	0
+d-live-allophony	wool-rt-gen-sg-bimoric	wool	rt-gen-sg-bimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllōz	*w*ú*l*l*ō*z	wulle	"[""wolle""]"	0	0
+d-live-allophony	wool-fulk-gen-sg-trimoric	wool	fulk-gen-sg-trimoric	pgmc	RingeTaylor2014 pp.59,299 vs Fulk2018 pp.85,155	CAPR assembly of competing generic genitive endings; not an attributed full wool quotation		wúllôz	*w*ú*l*l*ô*z	wulle	[]	1	0

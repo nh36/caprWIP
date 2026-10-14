@@ -1,0 +1,108 @@
+exec_index	cascade_position	identifier	kind	origin_block	sc_id	hist_stage	hist_scope	confidence	adjudication_status	verdict
+1		EnglishProtoInput	named	OldEnglishCore	SC001				unadjudicated	
+2		PGmcGmSimplification	named	EarlyGermanicConsonantPipeline	SC002				unadjudicated	
+3	1	PGmcNasalLossBeforeX	named	EnglishProtoToOE	SC103	pgmc	pan_germanic	A	adjudicated	SPLIT/REORDER
+4	2	RootNounNomZLoss	named	EnglishProtoToOE	SC096	pnwgmc	pan_pnwgmc	B	unadjudicated	
+5	3	PNWGmcUnstressedAiMonophthongization	named	EarlyEnglishLineChanges	SC014	pnwgmc	pan_pnwgmc	A	unadjudicated	
+6	4	PNWGmcAToUBeforeM	named	EarlyEnglishLineChanges	SC005	pnwgmc	pan_pnwgmc	A	unadjudicated	
+7	5	PNWGmcLongELowering	named	EarlyEnglishLineChanges	SC024	pnwgmc	pan_pnwgmc	B	adjudicated	SPLIT/REFORMULATE/REORDER
+8	6	PWGmcEarlyIApocope	named	EarlyEnglishLineChanges	SC006	pwgmc	pan_wgmc	A	unadjudicated	
+9	7	PWGmcFinalOrLowering	named	EarlyEnglishLineChanges	SC007	pwgmc	pan_wgmc	A	unadjudicated	
+10	8	PWGmcCoronalWAssimilation	named	EarlyEnglishLineChanges	SC008	pwgmc	pan_wgmc	A	unadjudicated	
+11	9	OEWWSimplification	named	EarlyEnglishLineChanges	SC031	pwgmc	pan_wgmc	A	adjudicated	SPLIT/REORDER
+12	10	PWGmcIjContraction	named	EarlyEnglishLineChanges	SC009	pwgmc	pan_wgmc	A	unadjudicated	
+13	11	PWGmcJGemination	named	EarlyEnglishLineChanges	SC010	pwgmc	pan_wgmc	A	unadjudicated	
+14	12	PWGmcSyllabicJ	named	EarlyEnglishLineChanges	SC011	pwgmc	pan_wgmc	A	unadjudicated	
+15	13	PNWGmcPreconsonantalXLoss	named	EarlyEnglishLineChanges	SC028	pwgmc	north_wgmc	B	adjudicated	RETAIN/REORDER
+16	14	EAFLThVoicing	named	EarlyEnglishLineChanges	SC012	eaf	north_wgmc	B	unadjudicated	
+17	15	PWGmcDentalHardening	named	EarlyEnglishLineChanges	SC013	pwgmc	pan_wgmc	A	unadjudicated	
+18	16	PWGmcEndinglessAw	named	EarlyEnglishLineChanges	SC111				unadjudicated	
+19	17	PNWGmcILowering	named	EnglishProtoToOE	SC015	pnwgmc	pan_pnwgmc	A	unadjudicated	
+20	18	PNWGmcULowering	named	EnglishProtoToOE	SC017	pnwgmc	pan_pnwgmc	A	adjudicated	RETAIN
+21	19	PNWGmcStressedMonosyllableORaising	named	EnglishProtoToOE	SC018	pnwgmc	pan_pnwgmc	B	unadjudicated	
+22	20	PNWGmcFinalLongORaising	named	EnglishProtoToOE	SC019	pnwgmc	pan_pnwgmc	A	unadjudicated	
+23	21	EAFFinalZDeletion	named	EnglishProtoToOE	SC020	pwgmc	pan_wgmc	B	adjudicated	SPLIT
+24	22	PWGmcUnstressedWordFinalIApocope	named	EnglishProtoToOE	SC098	pwgmc	pan_wgmc	B	adjudicated	REFORMULATE
+25	23	MonosyllabicFinalZLoss	named	EnglishProtoToOE	SC097	eaf	north_wgmc	B	unadjudicated	
+26	24	EAFRhotacism	named	EnglishProtoToOE	SC003	eaf	pan_wgmc	A	unadjudicated	
+27	25	PNWGmcMnDissimilation	named	EnglishProtoToOE	SC022	pgmc	pan_germanic	B	adjudicated	REFORMULATE/RETAIN
+28	26	PNWGmcNStemNLoss	named	EnglishProtoToOE	SC023	pgmc	pan_germanic	A	adjudicated	REFORMULATE/RETAIN
+29	27	EAFNasalSpirantLengthening	named	EnglishProtoToOE	SC026	eaf	north_sea_germanic	A	adjudicated	SPLIT/RESTRICT/REFORMULATE
+30	28	EAFNasalSpirantLoss	named	EnglishProtoToOE	SC027	eaf	north_sea_germanic	A	adjudicated	SPLIT/RESTRICT/REFORMULATE
+31	29	EAFHiatusWInsertion	named	EnglishProtoToOE	SC102	eaf	anglo_frisian	A	adjudicated	SPLIT
+32	30	EAFLongANasalRounding	named	EnglishProtoToOE	SC025	eaf	north_sea_germanic	B	adjudicated	SPLIT/REFORMULATE
+33	31	EAFNasalizedLowRounding	named	EnglishProtoToOE	SC104	eaf	anglo_frisian	A	adjudicated	SPLIT
+34	32	EAFLongAFronting	named	EnglishProtoToOE	SC101	eaf	north_sea_germanic	B	adjudicated	SPLIT/RESTRICT
+35	33	EAFAiMonophthongization	named	EnglishProtoToOE	SC004	preoe	english_specific	B	adjudicated	REFORMULATE
+36	34	OEAwwjResolution	named	EnglishProtoToOE	SC029	preoe	english_specific	B	adjudicated	RETAIN
+37	35	OEAuBrightening	named	EnglishProtoToOE	SC030	preoe	english_specific	A	adjudicated	RETAIN
+38	36	OEEwLongDiphthong	named	EnglishProtoToOE	SC033				adjudicated	REFORMULATE/SPLIT
+39	37	OEJWWSimplification	named	EnglishProtoToOE	SC106				unadjudicated	
+40	38	OEJGlideIO	named	EnglishProtoToOE	SC110				unadjudicated	
+41	39	OEDiphthongLeveling	named	EnglishProtoToOE	SC032	oe	english_specific	A	adjudicated	REFORMULATE
+42	40	OEAwLongDiphthong	named	EnglishProtoToOE	SC034				adjudicated	REFORMULATE/DEFER
+43	41	OEPrefixAReduction	named	EnglishProtoToOE	SC035	oe	english_specific	A	unadjudicated	
+44	42	OEInterStressRaising	named	EnglishProtoToOE	SC036	oe	english_specific	A	unadjudicated	
+45	43	OECompoundLinkingSyncope	named	EnglishProtoToOE	SC037	oe	english_specific	A	unadjudicated	
+46	44	OEStripSecondaryStress	named	EnglishProtoToOE	SC038				unadjudicated	
+47	45	OEWICombinativeUUmlaut	named	EnglishProtoToOE	SC039	oe	english_specific	A	unadjudicated	
+48	46	PWGmcFinalBareALoss	named	EnglishProtoToOE	SC041	pwgmc	pan_wgmc	B	unadjudicated	
+49	47	PWGmcSurvivingBimoricOUnrounding	named	EnglishProtoToOE	SC042	pwgmc	pan_wgmc	B	unadjudicated	
+50	48	EAFBrighteningUnstressed	named	EnglishProtoToOE	SC107				unadjudicated	
+51	49	EAFBrightening	named	EnglishProtoToOE	SC043	preoe	english_specific	A	adjudicated	REFORMULATE/SPLIT
+52	50	EAFBrighteningLongFinal	named	EnglishProtoToOE	SC108				unadjudicated	
+53	51	OEBreaking	named	EnglishProtoToOE	SC044	oe	english_specific	A	unadjudicated	
+54	52	OEVelarFricativePalatalization	named	EnglishProtoToOE	SC045	oe	english_specific	A	adjudicated	RESTRICT/SPLIT
+55	53	OEARestoration	named	EnglishProtoToOE	SC046	oe	english_specific	A	unadjudicated	
+56	54	OEHeavySyllableNasalApocope	named	EnglishProtoToOE	SC047	oe	english_specific	A	unadjudicated	
+57	55	OESecondaryNasalization	named	EnglishProtoToOE	SC048	oe	english_specific	A	unadjudicated	
+58	56	PGmcBAllophony	named	EnglishProtoToOE	SC049	pgmc	pan_germanic	A	unadjudicated	
+59	57	SieversLawSyncope	named	EnglishProtoToOE	SC050	pwgmc	pan_wgmc	B	unadjudicated	
+60	58	OESkPalatalization	named	EnglishProtoToOE	SC051	oe	english_specific	A	unadjudicated	
+61	59	OEVelarPalatalization	named	EnglishProtoToOE	SC052	preoe	english_specific	A	adjudicated	REFORMULATE/SPLIT
+62	60	OEPostVelarWLoss	named	EnglishProtoToOE	SC053	oe	english_specific	A	unadjudicated	
+63	61	OEWLossBeforeI	named	EnglishProtoToOE	SC054	oe	english_specific	A	unadjudicated	
+64	62	OEWsPalatalDiphthongization	named	EnglishProtoToOE	SC056	ws_oe	west_saxon	A	adjudicated	SPLIT/REORDER
+65	63	OEIUmlaut	named	EnglishProtoToOE	SC055	oe	english_specific	A	unadjudicated	
+66	64	OELatePalatalDiphthong	named	EnglishProtoToOE	SC105				unadjudicated	
+67	65	OEJClusterCoalescence	named	EnglishProtoToOE	SC057	oe	english_specific	A	unadjudicated	
+68	66	OEBackMutation	named	EnglishProtoToOE	SC059	oe	english_specific	A	unadjudicated	
+69	67	OEWsPalatalUmlaut	named	EnglishProtoToOE	SC060	ws_oe	west_saxon	A	unadjudicated	
+70	68	OEWeakTailNasalLoss	named	EnglishProtoToOE	SC061	oe	english_specific	A	unadjudicated	
+71	69	OEWeightMarkers	named	EnglishProtoToOE	SC062				unadjudicated	
+72	70	OEHighVowelApocope	named	EnglishProtoToOE	SC063	oe	english_specific	A	unadjudicated	
+73	71	NWGmcInStemNLoss	named	EnglishProtoToOE	SC064	nwgmc	pan_nwgmc	C	unadjudicated	
+74	72	OEMedialSyncope	named	EnglishProtoToOE	SC065	oe	english_specific	A	unadjudicated	
+75	73	OELAdjacentSyncope	named	EnglishProtoToOE	SC066	oe	english_specific	A	unadjudicated	
+76	74	OEDentalAssimilation	named	EnglishProtoToOE	SC067	oe	english_specific	A	unadjudicated	
+77	75	OEPreconsonantalDegemination	named	EnglishProtoToOE	SC068	oe	english_specific	A	unadjudicated	
+78	76	OEEarlyOShortening	named	EnglishProtoToOE	SC069	oe	english_specific	A	unadjudicated	
+79	77	OEUnstressedFrontingEarly	named	EnglishProtoToOE	SC070	oe	english_specific	A	unadjudicated	
+80	78	OELateOShortening	named	EnglishProtoToOE	SC071	oe	english_specific	A	unadjudicated	
+81	79	OEMedUnstressedORaising	named	EnglishProtoToOE	SC099	oe	west_saxon	A	unadjudicated	
+82	80	OEFinalUnstressedOLowering	named	EnglishProtoToOE	SC100	oe	english_specific	A	unadjudicated	
+83	81	OEUnstressedLongVowelShortening	named	EnglishProtoToOE	SC072	oe	english_specific	A	unadjudicated	
+84	82	OEUnstressedAEMerger	named	EnglishProtoToOE	SC073	oe	english_specific	A	unadjudicated	
+85	83	OEMedUnstressedILowering1	named	EnglishProtoToOE	SC074	oe	english_specific	A	unadjudicated	
+86	84	OEMedUnstressedILowering	named	EnglishProtoToOE	SC075	oe	english_specific	A	unadjudicated	
+87	85	OEMedUnstressedULowering	named	EnglishProtoToOE	SC040	oe	english_specific	A	unadjudicated	
+88	86	OEPrefixIReduction	named	EnglishProtoToOE	SC076	oe	english_specific	A	unadjudicated	
+89	87	OEWeakTailReduction	named	EnglishProtoToOE	SC078	oe	english_specific	A	unadjudicated	
+90	88	OEJLossAfterHeavy	named	EnglishProtoToOE	SC079	oe	english_specific	A	unadjudicated	
+91	89	OEFinalGeminateSimplification	named	EnglishProtoToOE	SC080	oe	english_specific	A	unadjudicated	
+92	90	OEJStrengtheningAfterFrontDiphthong	named	EnglishProtoToOE	SC081	oe	english_specific	A	unadjudicated	
+93	91	OEIntervocalicJVocalization	named	EnglishProtoToOE	SC082	oe	english_specific	B	adjudicated	RESTRICT/REFORMULATE
+94	92	OEUnstressedEIContraction	named	EnglishProtoToOE	SC083	oe	english_specific	A	unadjudicated	
+95	93	OEWeightCleanup	named	EnglishProtoToOE	SC084				unadjudicated	
+96	94	OEHLoss	named	EnglishProtoToOE	SC085	oe	english_specific	A	unadjudicated	
+97	95	OEContraction	named	EnglishProtoToOE	SC086	oe	english_specific	A	unadjudicated	
+98	96	OERMetathesis	named	EnglishProtoToOE	SC087	oe	english_specific	A	unadjudicated	
+99	97	OEEpentheticVowel	named	OldEnglishAfterEpenthesis	SC088				unadjudicated	
+100	98	OELateUnstressedAgSuffix	named	OldEnglishRules	SC089	oe	english_specific	B	adjudicated	REFORMULATE
+101	99	OEPalatalFricativeMerger	named	OldEnglishRules	SC109				unadjudicated	
+102	100	OECjCleanup	named	OldEnglishRules	SC090				unadjudicated	
+103	101	OEXsMerge	named	OldEnglishRules	SC091				unadjudicated	
+104	102	OldEnglishOrthography	named	OldEnglishRules	SC092				unadjudicated	
+105	103	OEWsPalatalGlide	named	OldEnglishRules	SC016	oe_ws	west_saxon	A	adjudicated	REFORMULATE/REORDER
+106	104	OldEnglishRemoveStars	named	OldEnglishRules	SC094				unadjudicated	
+107		OldEnglishSurface	named	OldEnglishReflexes	SC095				unadjudicated	

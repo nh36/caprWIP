@@ -1,0 +1,69 @@
+rule	id	concept	selected_input	before	after	witness_role
+PNWGmcULowering	1953	board	*búrdą	"[""*b*ú*r*d*ą""]"	"[""*b*ó*r*d*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	1956	bore	*búrōjaną	"[""*b*ú*r*ō*j*a*n*ą""]"	"[""*b*ó*r*ō*j*a*n*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	1959	bottom	*búttmaz	"[""*b*ú*t*t*m*a*z""]"	"[""*b*ó*t*t*m*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	1963	bow	*búgô	"[""*b*ú*g*ô""]"	"[""*b*ó*g*ô""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	1973	buck	*búkkaz	"[""*b*ú*k*k*a*z""]"	"[""*b*ó*k*k*a*z""]"	live application; selected lexical history is an unresolved exception
+PNWGmcULowering	1979	corn	*kúrną	"[""*k*ú*r*n*ą""]"	"[""*k*ó*r*n*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	1982	crop	*krúppaz	"[""*k*r*ú*p*p*a*z""]"	"[""*k*r*ó*p*p*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	1992	door	*dúrą	"[""*d*ú*r*ą""]"	"[""*d*ó*r*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2023	foal	*fúlô	"[""*f*ú*l*ô""]"	"[""*f*ó*l*ô""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2026	folk	*fúlką	"[""*f*ú*l*k*ą""]"	"[""*f*ó*l*k*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2030	fowl	*fúglaz	"[""*f*ú*g*l*a*z""]"	"[""*f*ó*g*l*a*z""]"	live application; selected lexical history is an unresolved exception
+PNWGmcULowering	2031	fox	*fúxsaz	"[""*f*ú*x*s*a*z""]"	"[""*f*ó*x*s*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2035	frost	*frústą	"[""*f*r*ú*s*t*ą""]"	"[""*f*r*ó*s*t*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2042	god	*gúdą	"[""*g*ú*d*ą""]"	"[""*g*ó*d*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2043	gold	*gúlθą	"[""*g*ú*l*d*ą""]"	"[""*g*ó*l*d*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2076	hoard	*xúzdą	"[""*x*ú*z*d*ą""]"	"[""*x*ó*z*d*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2082	horn	*xúrną	"[""*x*ú*r*n*ą""]"	"[""*x*ó*r*n*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2087	knob	*knúbbô	"[""*k*n*ú*b*b*ô""]"	"[""*k*n*ó*b*b*ô""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2111	lock	*lúką	"[""*l*ú*k*ą""]"	"[""*l*ó*k*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2112	lock	*lúkkaz	"[""*l*ú*k*k*a*z""]"	"[""*l*ó*k*k*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2143	nose	*núsō	"[""*n*ú*s*ō""]"	"[""*n*ó*s*ō""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2145	oven	*úfnaz	"[""*ú*f*n*a*z""]"	"[""*ó*f*n*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2146	ox	*úxsô	"[""*ú*x*s*ô""]"	"[""*ó*x*s*ô""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2155	coat	*rúkkaz	"[""*r*ú*k*k*a*z""]"	"[""*r*ó*k*k*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2162	rust	*rústaz	"[""*r*ú*s*t*a*z""]"	"[""*r*ó*s*t*a*z""]"	live application; selected lexical history is an unresolved exception
+PNWGmcULowering	2185	shovel	*skúflō	"[""*s*k*ú*f*l*ō""]"	"[""*s*k*ó*f*l*ō""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2200	sorrow	*súrgō	"[""*s*ú*r*g*ō""]"	"[""*s*ó*r*g*ō""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2211	spur	*spúrô	"[""*s*p*ú*r*ô""]"	"[""*s*p*ó*r*ô""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2219	stock	*stúkkaz	"[""*s*t*ú*k*k*a*z""]"	"[""*s*t*ó*k*k*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2222	stork	*stúrkaz	"[""*s*t*ú*r*k*a*z""]"	"[""*s*t*ó*r*k*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2223	storm	*stúrmaz	"[""*s*t*ú*r*m*a*z""]"	"[""*s*t*ó*r*m*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2251	thorn	*θúrnaz	"[""*θ*ú*r*n*a*z""]"	"[""*θ*ó*r*n*a*z""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2265	trough	*trúgą	"[""*t*r*ú*g*ą""]"	"[""*t*r*ó*g*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2298	wolf	*wúlfaz	"[""*w*ú*l*f*a*z""]"	"[""*w*ó*l*f*a*z""]"	live application; selected lexical history is an unresolved exception
+PNWGmcULowering	2300	wool	*wúllō	"[""*w*ú*l*l*ō""]"	"[""*w*ó*l*l*ō""]"	live application; selected lexical history is an unresolved exception
+PNWGmcULowering	2301	word	*wúrdą	"[""*w*ú*r*d*ą""]"	"[""*w*ó*r*d*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2307	yoke	*júką	"[""*j*ú*k*ą""]"	"[""*j*ó*k*ą""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2311	bore (iptv.2sg)	*búrô	"[""*b*ú*r*ô""]"	"[""*b*ó*r*ô""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcULowering	2312	bore (3sg)	*búrōθi	"[""*b*ú*r*ō*θ""]"	"[""*b*ó*r*ō*θ""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcStressedMonosyllableORaising	1958	both	*bō	"[""*b*ō""]"	"[""*b*ū""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	1942	beech	*bōkō	"[""*b*ō*k*ō""]"	"[""*b*ō*k*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	1949	bier	*bḗrō	"[""*b*ā*r*ō""]"	"[""*b*ā*r*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	1989	dew	*dáwwō	"[""*d*áu*w*ō""]"	"[""*d*áu*w*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2052	hall	*xállō	"[""*x*á*l*l*ō""]"	"[""*x*á*l*l*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2072	help	*xélpō	"[""*x*é*l*p*ō""]"	"[""*x*é*l*p*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2073	herd	*xérdō	"[""*x*é*r*d*ō""]"	"[""*x*é*r*d*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2075	hind	*xéndjō	"[""*x*é*n*d*j*ō""]"	"[""*x*é*n*d*j*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2104	linden	*líndō	"[""*l*í*n*d*ō""]"	"[""*l*í*n*d*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2108	liver	*líbrō	"[""*l*í*b*r*ō""]"	"[""*l*í*b*r*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2114	lung	*lúnganjō	"[""*l*ú*n*g*a*n*n*j*ō""]"	"[""*l*ú*n*g*a*n*n*j*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2116	lye	*láugō	"[""*l*áu*g*ō""]"	"[""*l*áu*g*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2120	march	*márkō	"[""*m*á*r*k*ō""]"	"[""*m*á*r*k*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2132	nave	*nábō	"[""*n*á*b*ō""]"	"[""*n*á*b*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2136	needle	*nḗðlō	"[""*n*ā*d*l*ō""]"	"[""*n*ā*d*l*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2143	nose	*núsō	"[""*n*ó*s*ō""]"	"[""*n*ó*s*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2154	rind	*ríndō	"[""*r*í*n*d*ō""]"	"[""*r*í*n*d*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2157	rood	*rōdō	"[""*r*ō*d*ō""]"	"[""*r*ō*d*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2165	sake	*sákō	"[""*s*á*k*ō""]"	"[""*s*á*k*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2167	salve	*sálbō	"[""*s*á*l*b*ō""]"	"[""*s*á*l*b*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2176	shame	*skámō	"[""*s*k*á*m*ō""]"	"[""*s*k*á*m*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2185	shovel	*skúflō	"[""*s*k*ó*f*l*ō""]"	"[""*s*k*ó*f*l*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2187	shower	*skūrō	"[""*s*k*ū*r*ō""]"	"[""*s*k*ū*r*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2200	sorrow	*súrgō	"[""*s*ó*r*g*ō""]"	"[""*s*ó*r*g*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2201	soul	*sáiwalō	"[""*s*ái*w*a*l*ō""]"	"[""*s*ái*w*a*l*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2208	spindle	*spénnilō	"[""*s*p*é*n*n*i*l*ō""]"	"[""*s*p*é*n*n*i*l*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2261	tongs	*tángō	"[""*t*á*n*g*ō""]"	"[""*t*á*n*g*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2285	while	*xwḯlō	"[""*x*w*ḯ*l*ō""]"	"[""*x*w*ḯ*l*u""]"	live application; root lowering or quantity change in stated executable domain
+PNWGmcFinalLongORaising	2300	wool	*wúllō	"[""*w*ó*l*l*ō""]"	"[""*w*ó*l*l*u""]"	live application; root lowering or quantity change in stated executable domain

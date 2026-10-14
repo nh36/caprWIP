@@ -1,0 +1,74 @@
+# Adjudication packet: SC017
+
+## Protocol
+Follow Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md and fill Germanic/docs/sound_changes/audits/ADJUDICATION_TEMPLATE.md (copy to Germanic/docs/sound_changes/audits/sc017-adjudication.md).
+
+## Registry row (canonical metadata)
+- sc_id: SC017
+- lifecycle_status: active
+- entry_type: historical_sound_change
+- pipeline_stage: Northwest Germanic developments
+- canonical_change_id: SC017
+- staging_row: yes
+- fst_identifier: PNWGmcULowering
+- display_name: Proto-Northwest Germanic U Lowering
+- inventory_display_name: NWGmc U Lowering
+- stage_label: Northwest Germanic developments
+- historical_stage_label: Northwest Germanic
+- hist_stage: pnwgmc
+- hist_scope: pan_pnwgmc
+- confidence: A
+- source_reader_facing_file: 017-nwgmc-u-lowering.md
+- include_in_volume: yes
+- is_reader_facing: yes
+- adjudication_status: adjudicated
+- verdict: RETAIN
+- adjudication_memo: Germanic/docs/sound_changes/audits/sc016-017-adjudication.md
+- chronology_profile: reciprocal_or_near_reciprocal
+- chronology_card: Germanic/docs/sound_changes/order_tests/chronology_cards/SC017-nwgmc-u-lowering.md
+- chronology_has_reciprocal_boundary: yes
+- chronology_summary: Earlier boundary reciprocates SC016 later around yoke; later boundary reciprocates SC019 earlier around nose, shovel, and sorrow, with `rust` / `wool` only as changed-output context.
+- action_status: rename_completed
+- capr_evidence: 016-017-palatal-glide-u-lowering.pair-report.md; 016-020-early-vocalic-final-corridor.book-dossier.md
+- chronology_problem: none
+- staging_notes: Now in standalone 017-nwgmc-u-lowering.md; split from 016-017
+
+## Executable rule
+- PNWGmcULowering at Germanic/fsts/germanic.txt line 2374:
+  define PNWGmcULowering Ctx([
+- executable cascade position (order manifest): 18
+
+## Chronology relations (canonical edge registry)
+- SC016 -> SC017 [reciprocal_chronology; independently_demonstrated; role: displacement_witness] lexemes: yoke
+- SC017 -> SC016 [reciprocal_chronology; independently_demonstrated; role: displacement_witness] lexemes: yoke
+- SC017 -> SC019 [reciprocal_chronology; independently_demonstrated; role: displacement_witness] lexemes: nose; shovel; sorrow
+- SC019 -> SC017 [reciprocal_chronology; independently_demonstrated; role: displacement_witness] lexemes: nose; shovel; sorrow
+
+## Reading list (registry-driven; no repository searching needed)
+
+### REQUIRED CURRENT SOURCES
+- Germanic/fsts/germanic.txt  (define PNWGmcULowering)
+- Germanic/docs/sound_changes/book_dossiers/016-020-early-vocalic-final-corridor.book-dossier.md
+
+### EXISTING ADJUDICATION
+- Germanic/docs/sound_changes/audits/sc016-017-adjudication.md
+
+### CHRONOLOGY EVIDENCE
+- Germanic/docs/sound_changes/order_tests/chronology_cards/SC017-nwgmc-u-lowering.md
+
+### PUBLICATION PROSE (inspect/update after verdict)
+- Germanic/docs/sound_changes/book_dossiers/016-020-early-vocalic-final-corridor.book-dossier.md
+- Germanic/docs/sound_changes/reader_facing/017-nwgmc-u-lowering.md
+
+### OPTIONAL / HISTORICAL SUPPORT
+- Germanic/docs/sound_changes/literature_dossiers/016-017-palatal-glide-u-lowering.pair-report.md
+
+## Frozen fingerprints (observations, not goals)
+- expanded-387: 1ef9f5df8f90c7b1e37ce438b3b0ecdbb313deeecf42ec1eb0f1d070027ea3ec
+- legacy-380: 953de7b8646fbfe8e0dcce7ed398f182ac45a4ca04af2802dde549f623f654d2
+
+## Standard commands
+- executable evidence (rebuild + firing census): python3 Germanic/tools/adjudicate.py SC017 --evidence
+- finalize after SOURCE edits: python3 Germanic/tools/adjudicate.py SC017 --finalize
+- full suite: cd Germanic/tests && python3 -m pytest -q
+All container FST work (rebuild, freshness checks, firing census, witness pre/post) is encapsulated by --evidence; never compile or probe transducers by hand.

@@ -1,0 +1,3545 @@
+{
+  "scientific_source": "Ringe2017 pp.242-243; Fulk2018 pp.82,155",
+  "general_adapter_definition": "define AFPass [Ctx([[EnglishStarAlphabet]*])];\ndefine AFUL [Ctx([\n    {*u} -> {*o}, {*ú} -> {*ó} ||\n    .#. EnglishStarConsonant* _\n    [EnglishStarConsonantNoJ - EnglishStarNasal]\n    EnglishStarConsonantNoJ* [EnglishStarNonHighVowel | {*ǭ}]\n])];\ndefine AFInput [\n    EnglishProtoInput |\n    [{ᵘ}:{*ᵘ}|{ᶜ}:{*ᶜ}|0]\n    [pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed |\n     pgrmStrongNasal | pgrmStrongNasalPrefixed] ǭ:{*ǭ}\n];\n",
+  "raw_baseline_parser": [
+    {
+      "input": "fúlmō",
+      "outputs": [
+        "*f*ú*l*m*ō"
+      ]
+    },
+    {
+      "input": "fúlmǭ",
+      "outputs": []
+    },
+    {
+      "input": "lúbō",
+      "outputs": [
+        "*l*ú*b*ō"
+      ]
+    },
+    {
+      "input": "lúbǭ",
+      "outputs": []
+    },
+    {
+      "input": "núsō",
+      "outputs": [
+        "*n*ú*s*ō"
+      ]
+    },
+    {
+      "input": "núsǭ",
+      "outputs": []
+    },
+    {
+      "input": "skúflō",
+      "outputs": [
+        "*s*k*ú*f*l*ō"
+      ]
+    },
+    {
+      "input": "skúflǭ",
+      "outputs": []
+    },
+    {
+      "input": "skúlō",
+      "outputs": [
+        "*s*k*ú*l*ō"
+      ]
+    },
+    {
+      "input": "skúlǭ",
+      "outputs": []
+    },
+    {
+      "input": "súrgō",
+      "outputs": [
+        "*s*ú*r*g*ō"
+      ]
+    },
+    {
+      "input": "súrgǭ",
+      "outputs": []
+    },
+    {
+      "input": "wullō",
+      "outputs": [
+        "*w*u*l*l*ō"
+      ]
+    },
+    {
+      "input": "wullǭ",
+      "outputs": []
+    },
+    {
+      "input": "wúllanǭ",
+      "outputs": [
+        "*w*ú*l*l*a*n*ǭ"
+      ]
+    },
+    {
+      "input": "wúllô",
+      "outputs": [
+        "*w*ú*l*l*ô"
+      ]
+    },
+    {
+      "input": "wúllôz",
+      "outputs": []
+    },
+    {
+      "input": "wúllō",
+      "outputs": [
+        "*w*ú*l*l*ō"
+      ]
+    },
+    {
+      "input": "wúllōn",
+      "outputs": [
+        "*w*ú*l*l*ō*n"
+      ]
+    },
+    {
+      "input": "wúllōz",
+      "outputs": [
+        "*w*ú*l*l*ō*z"
+      ]
+    },
+    {
+      "input": "wúllǭ",
+      "outputs": []
+    }
+  ],
+  "raw_extended_parser": [
+    {
+      "input": "fúlmō",
+      "outputs": [
+        "*f*ú*l*m*ō"
+      ]
+    },
+    {
+      "input": "fúlmǭ",
+      "outputs": [
+        "*f*ú*l*m*ǭ"
+      ]
+    },
+    {
+      "input": "lúbō",
+      "outputs": [
+        "*l*ú*b*ō"
+      ]
+    },
+    {
+      "input": "lúbǭ",
+      "outputs": [
+        "*l*ú*b*ǭ"
+      ]
+    },
+    {
+      "input": "núsō",
+      "outputs": [
+        "*n*ú*s*ō"
+      ]
+    },
+    {
+      "input": "núsǭ",
+      "outputs": [
+        "*n*ú*s*ǭ"
+      ]
+    },
+    {
+      "input": "skúflō",
+      "outputs": [
+        "*s*k*ú*f*l*ō"
+      ]
+    },
+    {
+      "input": "skúflǭ",
+      "outputs": [
+        "*s*k*ú*f*l*ǭ"
+      ]
+    },
+    {
+      "input": "skúlō",
+      "outputs": [
+        "*s*k*ú*l*ō"
+      ]
+    },
+    {
+      "input": "skúlǭ",
+      "outputs": [
+        "*s*k*ú*l*ǭ"
+      ]
+    },
+    {
+      "input": "súrgō",
+      "outputs": [
+        "*s*ú*r*g*ō"
+      ]
+    },
+    {
+      "input": "súrgǭ",
+      "outputs": [
+        "*s*ú*r*g*ǭ"
+      ]
+    },
+    {
+      "input": "wullō",
+      "outputs": [
+        "*w*u*l*l*ō"
+      ]
+    },
+    {
+      "input": "wullǭ",
+      "outputs": [
+        "*w*u*l*l*ǭ"
+      ]
+    },
+    {
+      "input": "wúllanǭ",
+      "outputs": [
+        "*w*ú*l*l*a*n*ǭ"
+      ]
+    },
+    {
+      "input": "wúllô",
+      "outputs": [
+        "*w*ú*l*l*ô"
+      ]
+    },
+    {
+      "input": "wúllôz",
+      "outputs": []
+    },
+    {
+      "input": "wúllō",
+      "outputs": [
+        "*w*ú*l*l*ō"
+      ]
+    },
+    {
+      "input": "wúllōn",
+      "outputs": [
+        "*w*ú*l*l*ō*n"
+      ]
+    },
+    {
+      "input": "wúllōz",
+      "outputs": [
+        "*w*ú*l*l*ō*z"
+      ]
+    },
+    {
+      "input": "wúllǭ",
+      "outputs": [
+        "*w*ú*l*l*ǭ"
+      ]
+    }
+  ],
+  "classes": {
+    "PGmcStarVowel": [
+      {
+        "input": "*ō",
+        "outputs": [
+          "*ō"
+        ]
+      },
+      {
+        "input": "*ǭ",
+        "outputs": []
+      },
+      {
+        "input": "*ô",
+        "outputs": []
+      },
+      {
+        "input": "*u",
+        "outputs": [
+          "*u"
+        ]
+      },
+      {
+        "input": "*ą",
+        "outputs": [
+          "*ą"
+        ]
+      }
+    ],
+    "PGmcStarVocalic": [
+      {
+        "input": "*ō",
+        "outputs": [
+          "*ō"
+        ]
+      },
+      {
+        "input": "*ǭ",
+        "outputs": []
+      },
+      {
+        "input": "*ô",
+        "outputs": []
+      },
+      {
+        "input": "*u",
+        "outputs": [
+          "*u"
+        ]
+      },
+      {
+        "input": "*ą",
+        "outputs": [
+          "*ą"
+        ]
+      }
+    ],
+    "EnglishStarNonHighVowel": [
+      {
+        "input": "*ō",
+        "outputs": [
+          "*ō"
+        ]
+      },
+      {
+        "input": "*ǭ",
+        "outputs": []
+      },
+      {
+        "input": "*ô",
+        "outputs": [
+          "*ô"
+        ]
+      },
+      {
+        "input": "*u",
+        "outputs": []
+      },
+      {
+        "input": "*ą",
+        "outputs": [
+          "*ą"
+        ]
+      }
+    ],
+    "EnglishStarAlphabet": [
+      {
+        "input": "*ō",
+        "outputs": [
+          "*ō"
+        ]
+      },
+      {
+        "input": "*ǭ",
+        "outputs": [
+          "*ǭ"
+        ]
+      },
+      {
+        "input": "*ô",
+        "outputs": [
+          "*ô"
+        ]
+      },
+      {
+        "input": "*u",
+        "outputs": [
+          "*u"
+        ]
+      },
+      {
+        "input": "*ą",
+        "outputs": [
+          "*ą"
+        ]
+      }
+    ]
+  },
+  "weak_tail_parser": [
+    {
+      "input": "ō",
+      "outputs": [
+        "*ō"
+      ]
+    },
+    {
+      "input": "ǭ",
+      "outputs": []
+    },
+    {
+      "input": "ô",
+      "outputs": [
+        "*ô"
+      ]
+    },
+    {
+      "input": "anǭ",
+      "outputs": [
+        "*a*n*ǭ"
+      ]
+    },
+    {
+      "input": "ōz",
+      "outputs": [
+        "*ō*z"
+      ]
+    },
+    {
+      "input": "ôz",
+      "outputs": []
+    }
+  ],
+  "sound_law_domains": {
+    "PNWGmcULowering": [
+      {
+        "input": "*w*u*l*l*ō",
+        "outputs": [
+          "*w*o*l*l*ō"
+        ]
+      },
+      {
+        "input": "*w*u*l*l*ǭ",
+        "outputs": [
+          "*w*u*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō",
+        "outputs": [
+          "*w*ó*l*l*ō"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ǭ",
+        "outputs": [
+          "*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô",
+        "outputs": [
+          "*w*ó*l*l*ô"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*z",
+        "outputs": [
+          "*w*ó*l*l*ō*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô*z",
+        "outputs": [
+          "*w*ó*l*l*ô*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*n",
+        "outputs": [
+          "*w*ó*l*l*ō*n"
+        ]
+      },
+      {
+        "input": "*ᵘ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᵘ*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*ᶜ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᶜ*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*d*ō",
+        "outputs": [
+          "*d*ō"
+        ]
+      },
+      {
+        "input": "*d*ū",
+        "outputs": [
+          "*d*ū"
+        ]
+      }
+    ],
+    "AFUL": [
+      {
+        "input": "*w*u*l*l*ō",
+        "outputs": [
+          "*w*o*l*l*ō"
+        ]
+      },
+      {
+        "input": "*w*u*l*l*ǭ",
+        "outputs": [
+          "*w*o*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō",
+        "outputs": [
+          "*w*ó*l*l*ō"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ǭ",
+        "outputs": [
+          "*w*ó*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô",
+        "outputs": [
+          "*w*ó*l*l*ô"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*z",
+        "outputs": [
+          "*w*ó*l*l*ō*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô*z",
+        "outputs": [
+          "*w*ó*l*l*ô*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*n",
+        "outputs": [
+          "*w*ó*l*l*ō*n"
+        ]
+      },
+      {
+        "input": "*ᵘ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᵘ*w*ó*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*ᶜ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᶜ*w*ó*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*d*ō",
+        "outputs": [
+          "*d*ō"
+        ]
+      },
+      {
+        "input": "*d*ū",
+        "outputs": [
+          "*d*ū"
+        ]
+      }
+    ],
+    "PNWGmcFinalLongORaising": [
+      {
+        "input": "*w*u*l*l*ō",
+        "outputs": [
+          "*w*u*l*l*u"
+        ]
+      },
+      {
+        "input": "*w*u*l*l*ǭ",
+        "outputs": [
+          "*w*u*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō",
+        "outputs": [
+          "*w*ú*l*l*u"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ǭ",
+        "outputs": [
+          "*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô",
+        "outputs": [
+          "*w*ú*l*l*ô"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*z",
+        "outputs": [
+          "*w*ú*l*l*ō*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô*z",
+        "outputs": [
+          "*w*ú*l*l*ô*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*n",
+        "outputs": [
+          "*w*ú*l*l*ō*n"
+        ]
+      },
+      {
+        "input": "*ᵘ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᵘ*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*ᶜ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᶜ*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*d*ō",
+        "outputs": [
+          "*d*ō"
+        ]
+      },
+      {
+        "input": "*d*ū",
+        "outputs": [
+          "*d*ū"
+        ]
+      }
+    ],
+    "PNWGmcStressedMonosyllableORaising": [
+      {
+        "input": "*w*u*l*l*ō",
+        "outputs": [
+          "*w*u*l*l*ō"
+        ]
+      },
+      {
+        "input": "*w*u*l*l*ǭ",
+        "outputs": [
+          "*w*u*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō",
+        "outputs": [
+          "*w*ú*l*l*ō"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ǭ",
+        "outputs": [
+          "*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô",
+        "outputs": [
+          "*w*ú*l*l*ô"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*z",
+        "outputs": [
+          "*w*ú*l*l*ō*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ô*z",
+        "outputs": [
+          "*w*ú*l*l*ô*z"
+        ]
+      },
+      {
+        "input": "*w*ú*l*l*ō*n",
+        "outputs": [
+          "*w*ú*l*l*ō*n"
+        ]
+      },
+      {
+        "input": "*ᵘ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᵘ*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*ᶜ*w*ú*l*l*ǭ",
+        "outputs": [
+          "*ᶜ*w*ú*l*l*ǭ"
+        ]
+      },
+      {
+        "input": "*d*ō",
+        "outputs": [
+          "*d*ū"
+        ]
+      },
+      {
+        "input": "*d*ū",
+        "outputs": [
+          "*d*ū"
+        ]
+      }
+    ]
+  },
+  "selected_parser_rows": 387,
+  "selected_tokenizations_unchanged": true,
+  "selected_tokenizations": [
+    {
+      "id": "1933",
+      "input": "nḗdrōn",
+      "outputs": [
+        "*n*ḗ*d*r*ō*n"
+      ]
+    },
+    {
+      "id": "1934",
+      "input": "bákaną",
+      "outputs": [
+        "*b*á*k*a*n*ą"
+      ]
+    },
+    {
+      "id": "1936",
+      "input": "bánnas",
+      "outputs": [
+        "*b*á*n*n*a*s"
+      ]
+    },
+    {
+      "id": "1937",
+      "input": "bérgą",
+      "outputs": [
+        "*b*é*r*g*ą"
+      ]
+    },
+    {
+      "id": "1938",
+      "input": "bástą",
+      "outputs": [
+        "*b*á*s*t*ą"
+      ]
+    },
+    {
+      "id": "1939",
+      "input": "báθą",
+      "outputs": [
+        "*b*á*θ*ą"
+      ]
+    },
+    {
+      "id": "1940",
+      "input": "bárdaz",
+      "outputs": [
+        "*b*á*r*d*a*z"
+      ]
+    },
+    {
+      "id": "1941",
+      "input": "bébruz",
+      "outputs": [
+        "*b*é*b*r*u*z"
+      ]
+    },
+    {
+      "id": "1942",
+      "input": "bōkō",
+      "outputs": [
+        "*b*ō*k*ō"
+      ]
+    },
+    {
+      "id": "1943",
+      "input": "bigínnaną",
+      "outputs": [
+        "*b*i*g*í*n*n*a*n*ą"
+      ]
+    },
+    {
+      "id": "1944",
+      "input": "galáubijaną",
+      "outputs": [
+        "*g*a*l*áu*b*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "1945",
+      "input": "bálgiz",
+      "outputs": [
+        "*b*á*l*g*i*z"
+      ]
+    },
+    {
+      "id": "1946",
+      "input": "bázjas",
+      "outputs": [
+        "*b*á*z*j*a*s"
+      ]
+    },
+    {
+      "id": "1949",
+      "input": "bḗrō",
+      "outputs": [
+        "*b*ḗ*r*ō"
+      ]
+    },
+    {
+      "id": "1950",
+      "input": "bíndaną",
+      "outputs": [
+        "*b*í*n*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "1951",
+      "input": "búrdiz",
+      "outputs": [
+        "*b*ú*r*d*i*z"
+      ]
+    },
+    {
+      "id": "1952",
+      "input": "blōdą",
+      "outputs": [
+        "*b*l*ō*d*ą"
+      ]
+    },
+    {
+      "id": "1953",
+      "input": "búrdą",
+      "outputs": [
+        "*b*ú*r*d*ą"
+      ]
+    },
+    {
+      "id": "1954",
+      "input": "báiną",
+      "outputs": [
+        "*b*ái*n*ą"
+      ]
+    },
+    {
+      "id": "1955",
+      "input": "bōkz",
+      "outputs": [
+        "*b*ō*k*z"
+      ]
+    },
+    {
+      "id": "1956",
+      "input": "búrōjaną",
+      "outputs": [
+        "*b*ú*r*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "1957",
+      "input": "bōsmaz",
+      "outputs": [
+        "*b*ō*s*m*a*z"
+      ]
+    },
+    {
+      "id": "1958",
+      "input": "bō",
+      "outputs": [
+        "*b*ō"
+      ]
+    },
+    {
+      "id": "1959",
+      "input": "búttmaz",
+      "outputs": [
+        "*b*ú*t*t*m*a*z"
+      ]
+    },
+    {
+      "id": "1960",
+      "input": "bōguz",
+      "outputs": [
+        "*b*ō*g*u*z"
+      ]
+    },
+    {
+      "id": "1961",
+      "input": "báugijaną",
+      "outputs": [
+        "*b*áu*g*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "1962",
+      "input": "báug",
+      "outputs": [
+        "*b*áu*g"
+      ]
+    },
+    {
+      "id": "1963",
+      "input": "búgô",
+      "outputs": [
+        "*b*ú*g*ô"
+      ]
+    },
+    {
+      "id": "1964",
+      "input": "būrą",
+      "outputs": [
+        "*b*ū*r*ą"
+      ]
+    },
+    {
+      "id": "1965",
+      "input": "brándas",
+      "outputs": [
+        "*b*r*á*n*d*a*s"
+      ]
+    },
+    {
+      "id": "1966",
+      "input": "bráudą",
+      "outputs": [
+        "*b*r*áu*d*ą"
+      ]
+    },
+    {
+      "id": "1967",
+      "input": "brékaną",
+      "outputs": [
+        "*b*r*é*k*a*n*ą"
+      ]
+    },
+    {
+      "id": "1968",
+      "input": "bréustą",
+      "outputs": [
+        "*b*r*éu*s*t*ą"
+      ]
+    },
+    {
+      "id": "1969",
+      "input": "brōkiz",
+      "outputs": [
+        "*b*r*ō*k*i*z"
+      ]
+    },
+    {
+      "id": "1970",
+      "input": "brūdiz",
+      "outputs": [
+        "*b*r*ū*d*i*z"
+      ]
+    },
+    {
+      "id": "1971",
+      "input": "brínganą",
+      "outputs": [
+        "*b*r*í*n*g*a*n*ą"
+      ]
+    },
+    {
+      "id": "1972",
+      "input": "brūkaną",
+      "outputs": [
+        "*b*r*ū*k*a*n*ą"
+      ]
+    },
+    {
+      "id": "1973",
+      "input": "búkkaz",
+      "outputs": [
+        "*b*ú*k*k*a*z"
+      ]
+    },
+    {
+      "id": "1974",
+      "input": "bréstaną",
+      "outputs": [
+        "*b*r*é*s*t*a*n*ą"
+      ]
+    },
+    {
+      "id": "1975",
+      "input": "kálbaz",
+      "outputs": [
+        "*k*á*l*b*a*z"
+      ]
+    },
+    {
+      "id": "1976",
+      "input": "kéwwaną",
+      "outputs": [
+        "*k*é*w*w*a*n*ą"
+      ]
+    },
+    {
+      "id": "1977",
+      "input": "klímbaną",
+      "outputs": [
+        "*k*l*í*m*b*a*n*ą"
+      ]
+    },
+    {
+      "id": "1978",
+      "input": "kámbaz",
+      "outputs": [
+        "*k*á*m*b*a*z"
+      ]
+    },
+    {
+      "id": "1979",
+      "input": "kúrną",
+      "outputs": [
+        "*k*ú*r*n*ą"
+      ]
+    },
+    {
+      "id": "1980",
+      "input": "kūi",
+      "outputs": [
+        "*k*ū*i"
+      ]
+    },
+    {
+      "id": "1981",
+      "input": "kráftaz",
+      "outputs": [
+        "*k*r*á*f*t*a*z"
+      ]
+    },
+    {
+      "id": "1982",
+      "input": "krúppaz",
+      "outputs": [
+        "*k*r*ú*p*p*a*z"
+      ]
+    },
+    {
+      "id": "1983",
+      "input": "kwéðuz",
+      "outputs": [
+        "*k*w*é*ð*u*z"
+      ]
+    },
+    {
+      "id": "1984",
+      "input": "dálaz",
+      "outputs": [
+        "*d*á*l*a*z"
+      ]
+    },
+    {
+      "id": "1985",
+      "input": "dágaz",
+      "outputs": [
+        "*d*á*g*a*z"
+      ]
+    },
+    {
+      "id": "1986",
+      "input": "dáiliz",
+      "outputs": [
+        "*d*ái*l*i*z"
+      ]
+    },
+    {
+      "id": "1987",
+      "input": "dḗdiz",
+      "outputs": [
+        "*d*ḗ*d*i*z"
+      ]
+    },
+    {
+      "id": "1988",
+      "input": "déuzą",
+      "outputs": [
+        "*d*éu*z*ą"
+      ]
+    },
+    {
+      "id": "1989",
+      "input": "dáwwō",
+      "outputs": [
+        "*d*á*w*w*ō"
+      ]
+    },
+    {
+      "id": "1990",
+      "input": "déliz",
+      "outputs": [
+        "*d*é*l*i*z"
+      ]
+    },
+    {
+      "id": "1991",
+      "input": "dōną",
+      "outputs": [
+        "*d*ō*n*ą"
+      ]
+    },
+    {
+      "id": "1992",
+      "input": "dúrą",
+      "outputs": [
+        "*d*ú*r*ą"
+      ]
+    },
+    {
+      "id": "1993",
+      "input": "dáigaz",
+      "outputs": [
+        "*d*ái*g*a*z"
+      ]
+    },
+    {
+      "id": "1995",
+      "input": "dráugmaz",
+      "outputs": [
+        "*d*r*áu*g*m*a*z"
+      ]
+    },
+    {
+      "id": "1996",
+      "input": "dránkiz",
+      "outputs": [
+        "*d*r*á*n*k*i*z"
+      ]
+    },
+    {
+      "id": "1997",
+      "input": "drínkaną",
+      "outputs": [
+        "*d*r*í*n*k*a*n*ą"
+      ]
+    },
+    {
+      "id": "1998",
+      "input": "drḯbaną",
+      "outputs": [
+        "*d*r*ḯ*b*a*n*ą"
+      ]
+    },
+    {
+      "id": "1999",
+      "input": "érθōn",
+      "outputs": [
+        "*é*r*θ*ō*n"
+      ]
+    },
+    {
+      "id": "2000",
+      "input": "étaną",
+      "outputs": [
+        "*é*t*a*n*ą"
+      ]
+    },
+    {
+      "id": "2001",
+      "input": "ḗlaz",
+      "outputs": [
+        "*ḗ*l*a*z"
+      ]
+    },
+    {
+      "id": "2002",
+      "input": "fállaną",
+      "outputs": [
+        "*f*á*l*l*a*n*ą"
+      ]
+    },
+    {
+      "id": "2003",
+      "input": "fáraną",
+      "outputs": [
+        "*f*á*r*a*n*ą"
+      ]
+    },
+    {
+      "id": "2004",
+      "input": "fástijaną",
+      "outputs": [
+        "*f*á*s*t*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2005",
+      "input": "fádēr",
+      "outputs": [
+        "*f*á*d*ē*r"
+      ]
+    },
+    {
+      "id": "2006",
+      "input": "féxu",
+      "outputs": [
+        "*f*é*x*u"
+      ]
+    },
+    {
+      "id": "2007",
+      "input": "féllą",
+      "outputs": [
+        "*f*é*l*l*ą"
+      ]
+    },
+    {
+      "id": "2008",
+      "input": "fárnaz",
+      "outputs": [
+        "*f*á*r*n*a*z"
+      ]
+    },
+    {
+      "id": "2009",
+      "input": "félθuz",
+      "outputs": [
+        "*f*é*l*θ*u*z"
+      ]
+    },
+    {
+      "id": "2010",
+      "input": "féxtaną",
+      "outputs": [
+        "*f*é*x*t*a*n*ą"
+      ]
+    },
+    {
+      "id": "2011",
+      "input": "fúnðanǭ",
+      "outputs": [
+        "*f*ú*n*ð*a*n*ǭ"
+      ]
+    },
+    {
+      "id": "2012",
+      "input": "fíngraz",
+      "outputs": [
+        "*f*í*n*g*r*a*z"
+      ]
+    },
+    {
+      "id": "2013",
+      "input": "fūri",
+      "outputs": [
+        "*f*ū*r*i"
+      ]
+    },
+    {
+      "id": "2014",
+      "input": "fískaz",
+      "outputs": [
+        "*f*í*s*k*a*z"
+      ]
+    },
+    {
+      "id": "2015",
+      "input": "fúnxstiz",
+      "outputs": [
+        "*f*ú*n*x*s*t*i*z"
+      ]
+    },
+    {
+      "id": "2016",
+      "input": "fláskōn",
+      "outputs": [
+        "*f*l*á*s*k*ō*n"
+      ]
+    },
+    {
+      "id": "2017",
+      "input": "fláxsą",
+      "outputs": [
+        "*f*l*á*x*s*ą"
+      ]
+    },
+    {
+      "id": "2018",
+      "input": "fláuxz",
+      "outputs": [
+        "*f*l*áu*x*z"
+      ]
+    },
+    {
+      "id": "2019",
+      "input": "fléuxaną",
+      "outputs": [
+        "*f*l*éu*x*a*n*ą"
+      ]
+    },
+    {
+      "id": "2020",
+      "input": "fláiskiz",
+      "outputs": [
+        "*f*l*ái*s*k*i*z"
+      ]
+    },
+    {
+      "id": "2021",
+      "input": "flōduz",
+      "outputs": [
+        "*f*l*ō*d*u*z"
+      ]
+    },
+    {
+      "id": "2022",
+      "input": "fléuganą",
+      "outputs": [
+        "*f*l*éu*g*a*n*ą"
+      ]
+    },
+    {
+      "id": "2023",
+      "input": "fúlô",
+      "outputs": [
+        "*f*ú*l*ô"
+      ]
+    },
+    {
+      "id": "2024",
+      "input": "fōdrą",
+      "outputs": [
+        "*f*ō*d*r*ą"
+      ]
+    },
+    {
+      "id": "2025",
+      "input": "fálθaną",
+      "outputs": [
+        "*f*á*l*θ*a*n*ą"
+      ]
+    },
+    {
+      "id": "2026",
+      "input": "fúlką",
+      "outputs": [
+        "*f*ú*l*k*ą"
+      ]
+    },
+    {
+      "id": "2027",
+      "input": "fúlgijaną",
+      "outputs": [
+        "*f*ú*l*g*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2028",
+      "input": "léusaną",
+      "outputs": [
+        "*l*éu*s*a*n*ą"
+      ]
+    },
+    {
+      "id": "2029",
+      "input": "fédwōr",
+      "outputs": [
+        "*f*é*d*w*ō*r"
+      ]
+    },
+    {
+      "id": "2030",
+      "input": "fúglaz",
+      "outputs": [
+        "*f*ú*g*l*a*z"
+      ]
+    },
+    {
+      "id": "2031",
+      "input": "fúxsaz",
+      "outputs": [
+        "*f*ú*x*s*a*z"
+      ]
+    },
+    {
+      "id": "2032",
+      "input": "fréusaną",
+      "outputs": [
+        "*f*r*éu*s*a*n*ą"
+      ]
+    },
+    {
+      "id": "2033",
+      "input": "fríjōndz",
+      "outputs": [
+        "*f*r*í*j*ō*n*d*z"
+      ]
+    },
+    {
+      "id": "2034",
+      "input": "fúrxtīnaz",
+      "outputs": [
+        "*f*ú*r*x*t*ī*n*a*z"
+      ]
+    },
+    {
+      "id": "2035",
+      "input": "frústą",
+      "outputs": [
+        "*f*r*ú*s*t*ą"
+      ]
+    },
+    {
+      "id": "2036",
+      "input": "fúrx",
+      "outputs": [
+        "*f*ú*r*x"
+      ]
+    },
+    {
+      "id": "2037",
+      "input": "gállô",
+      "outputs": [
+        "*g*á*l*l*ô"
+      ]
+    },
+    {
+      "id": "2038",
+      "input": "gángaz",
+      "outputs": [
+        "*g*á*n*g*a*z"
+      ]
+    },
+    {
+      "id": "2039",
+      "input": "gáistaz",
+      "outputs": [
+        "*g*ái*s*t*a*z"
+      ]
+    },
+    {
+      "id": "2040",
+      "input": "gíftiz",
+      "outputs": [
+        "*g*í*f*t*i*z"
+      ]
+    },
+    {
+      "id": "2041",
+      "input": "gébaną",
+      "outputs": [
+        "*g*é*b*a*n*ą"
+      ]
+    },
+    {
+      "id": "2042",
+      "input": "gúdą",
+      "outputs": [
+        "*g*ú*d*ą"
+      ]
+    },
+    {
+      "id": "2043",
+      "input": "gúlθą",
+      "outputs": [
+        "*g*ú*l*θ*ą"
+      ]
+    },
+    {
+      "id": "2044",
+      "input": "gánsz",
+      "outputs": [
+        "*g*á*n*s*z"
+      ]
+    },
+    {
+      "id": "2045",
+      "input": "grásą",
+      "outputs": [
+        "*g*r*á*s*ą"
+      ]
+    },
+    {
+      "id": "2046",
+      "input": "grábaną",
+      "outputs": [
+        "*g*r*á*b*a*n*ą"
+      ]
+    },
+    {
+      "id": "2047",
+      "input": "grḯpaną",
+      "outputs": [
+        "*g*r*ḯ*p*a*n*ą"
+      ]
+    },
+    {
+      "id": "2048",
+      "input": "grúnduz",
+      "outputs": [
+        "*g*r*ú*n*d*u*z"
+      ]
+    },
+    {
+      "id": "2049",
+      "input": "gástiz",
+      "outputs": [
+        "*g*á*s*t*i*z"
+      ]
+    },
+    {
+      "id": "2050",
+      "input": "xáglą",
+      "outputs": [
+        "*x*á*g*l*ą"
+      ]
+    },
+    {
+      "id": "2051",
+      "input": "xḗrą",
+      "outputs": [
+        "*x*ḗ*r*ą"
+      ]
+    },
+    {
+      "id": "2052",
+      "input": "xállō",
+      "outputs": [
+        "*x*á*l*l*ō"
+      ]
+    },
+    {
+      "id": "2053",
+      "input": "xámaras",
+      "outputs": [
+        "*x*á*m*a*r*a*s"
+      ]
+    },
+    {
+      "id": "2054",
+      "input": "xánduz",
+      "outputs": [
+        "*x*á*n*d*u*z"
+      ]
+    },
+    {
+      "id": "2055",
+      "input": "xándlōjaną",
+      "outputs": [
+        "*x*á*n*d*l*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2056",
+      "input": "xármaz",
+      "outputs": [
+        "*x*á*r*m*a*z"
+      ]
+    },
+    {
+      "id": "2057",
+      "input": "xárbistuz",
+      "outputs": [
+        "*x*á*r*b*i*s*t*u*z"
+      ]
+    },
+    {
+      "id": "2058",
+      "input": "xábēθi",
+      "outputs": [
+        "*x*á*b*ē*θ*i"
+      ]
+    },
+    {
+      "id": "2059",
+      "input": "xágô",
+      "outputs": [
+        "*x*á*g*ô"
+      ]
+    },
+    {
+      "id": "2060",
+      "input": "xábukaz",
+      "outputs": [
+        "*x*á*b*u*k*a*z"
+      ]
+    },
+    {
+      "id": "2061",
+      "input": "xáwją",
+      "outputs": [
+        "*x*á*w*j*ą"
+      ]
+    },
+    {
+      "id": "2062",
+      "input": "xáslaz",
+      "outputs": [
+        "*x*á*s*l*a*z"
+      ]
+    },
+    {
+      "id": "2063",
+      "input": "xáubudą",
+      "outputs": [
+        "*x*áu*b*u*d*ą"
+      ]
+    },
+    {
+      "id": "2064",
+      "input": "xáilijaną",
+      "outputs": [
+        "*x*ái*l*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2065",
+      "input": "xértōn",
+      "outputs": [
+        "*x*é*r*t*ō*n"
+      ]
+    },
+    {
+      "id": "2066",
+      "input": "xérθaz",
+      "outputs": [
+        "*x*é*r*θ*a*z"
+      ]
+    },
+    {
+      "id": "2067",
+      "input": "xáiθiz",
+      "outputs": [
+        "*x*ái*θ*i*z"
+      ]
+    },
+    {
+      "id": "2068",
+      "input": "xébun",
+      "outputs": [
+        "*x*é*b*u*n"
+      ]
+    },
+    {
+      "id": "2069",
+      "input": "xágjaz",
+      "outputs": [
+        "*x*á*g*j*a*z"
+      ]
+    },
+    {
+      "id": "2070",
+      "input": "xélmaz",
+      "outputs": [
+        "*x*é*l*m*a*z"
+      ]
+    },
+    {
+      "id": "2071",
+      "input": "xélpaną",
+      "outputs": [
+        "*x*é*l*p*a*n*ą"
+      ]
+    },
+    {
+      "id": "2072",
+      "input": "xélpō",
+      "outputs": [
+        "*x*é*l*p*ō"
+      ]
+    },
+    {
+      "id": "2073",
+      "input": "xérdō",
+      "outputs": [
+        "*x*é*r*d*ō"
+      ]
+    },
+    {
+      "id": "2074",
+      "input": "xáwwaną",
+      "outputs": [
+        "*x*á*w*w*a*n*ą"
+      ]
+    },
+    {
+      "id": "2075",
+      "input": "xéndjō",
+      "outputs": [
+        "*x*é*n*d*j*ō"
+      ]
+    },
+    {
+      "id": "2076",
+      "input": "xúzdą",
+      "outputs": [
+        "*x*ú*z*d*ą"
+      ]
+    },
+    {
+      "id": "2077",
+      "input": "xáldaną",
+      "outputs": [
+        "*x*á*l*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2078",
+      "input": "xáimaz",
+      "outputs": [
+        "*x*ái*m*a*z"
+      ]
+    },
+    {
+      "id": "2079",
+      "input": "xúnagą",
+      "outputs": [
+        "*x*ú*n*a*g*ą"
+      ]
+    },
+    {
+      "id": "2080",
+      "input": "xōdaz",
+      "outputs": [
+        "*x*ō*d*a*z"
+      ]
+    },
+    {
+      "id": "2081",
+      "input": "xōfaz",
+      "outputs": [
+        "*x*ō*f*a*z"
+      ]
+    },
+    {
+      "id": "2082",
+      "input": "xúrną",
+      "outputs": [
+        "*x*ú*r*n*ą"
+      ]
+    },
+    {
+      "id": "2083",
+      "input": "xúndaz",
+      "outputs": [
+        "*x*ú*n*d*a*z"
+      ]
+    },
+    {
+      "id": "2084",
+      "input": "knédaną",
+      "outputs": [
+        "*k*n*é*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2085",
+      "input": "knéwai",
+      "outputs": [
+        "*k*n*é*w*ai"
+      ]
+    },
+    {
+      "id": "2086",
+      "input": "knéxtaz",
+      "outputs": [
+        "*k*n*é*x*t*a*z"
+      ]
+    },
+    {
+      "id": "2087",
+      "input": "knúbbô",
+      "outputs": [
+        "*k*n*ú*b*b*ô"
+      ]
+    },
+    {
+      "id": "2088",
+      "input": "xláðaną",
+      "outputs": [
+        "*x*l*á*ð*a*n*ą"
+      ]
+    },
+    {
+      "id": "2089",
+      "input": "lándą",
+      "outputs": [
+        "*l*á*n*d*ą"
+      ]
+    },
+    {
+      "id": "2090",
+      "input": "láppô",
+      "outputs": [
+        "*l*á*p*p*ô"
+      ]
+    },
+    {
+      "id": "2091",
+      "input": "láistijaną",
+      "outputs": [
+        "*l*ái*s*t*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2092",
+      "input": "xláxjaną",
+      "outputs": [
+        "*x*l*á*x*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2093",
+      "input": "láidijaną",
+      "outputs": [
+        "*l*ái*d*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2094",
+      "input": "láubą",
+      "outputs": [
+        "*l*áu*b*ą"
+      ]
+    },
+    {
+      "id": "2095",
+      "input": "líznōjaną",
+      "outputs": [
+        "*l*í*z*n*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2096",
+      "input": "léθrą",
+      "outputs": [
+        "*l*é*θ*r*ą"
+      ]
+    },
+    {
+      "id": "2097",
+      "input": "láukaz",
+      "outputs": [
+        "*l*áu*k*a*z"
+      ]
+    },
+    {
+      "id": "2098",
+      "input": "lḗtaną",
+      "outputs": [
+        "*l*ḗ*t*a*n*ą"
+      ]
+    },
+    {
+      "id": "2099",
+      "input": "líkkōjaną",
+      "outputs": [
+        "*l*í*k*k*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2100",
+      "input": "xlídą",
+      "outputs": [
+        "*x*l*í*d*ą"
+      ]
+    },
+    {
+      "id": "2101",
+      "input": "lḯbą",
+      "outputs": [
+        "*l*ḯ*b*ą"
+      ]
+    },
+    {
+      "id": "2102",
+      "input": "léuxtijaną",
+      "outputs": [
+        "*l*éu*x*t*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2103",
+      "input": "lḯmą",
+      "outputs": [
+        "*l*ḯ*m*ą"
+      ]
+    },
+    {
+      "id": "2104",
+      "input": "líndō",
+      "outputs": [
+        "*l*í*n*d*ō"
+      ]
+    },
+    {
+      "id": "2105",
+      "input": "lḯnōn",
+      "outputs": [
+        "*l*ḯ*n*ō*n"
+      ]
+    },
+    {
+      "id": "2106",
+      "input": "lḯstōn",
+      "outputs": [
+        "*l*ḯ*s*t*ō*n"
+      ]
+    },
+    {
+      "id": "2107",
+      "input": "líbēθi",
+      "outputs": [
+        "*l*í*b*ē*θ*i"
+      ]
+    },
+    {
+      "id": "2108",
+      "input": "líbrō",
+      "outputs": [
+        "*l*í*b*r*ō"
+      ]
+    },
+    {
+      "id": "2109",
+      "input": "láimą",
+      "outputs": [
+        "*l*ái*m*ą"
+      ]
+    },
+    {
+      "id": "2110",
+      "input": "láiθaz",
+      "outputs": [
+        "*l*ái*θ*a*z"
+      ]
+    },
+    {
+      "id": "2111",
+      "input": "lúką",
+      "outputs": [
+        "*l*ú*k*ą"
+      ]
+    },
+    {
+      "id": "2112",
+      "input": "lúkkaz",
+      "outputs": [
+        "*l*ú*k*k*a*z"
+      ]
+    },
+    {
+      "id": "2113",
+      "input": "lūsz",
+      "outputs": [
+        "*l*ū*s*z"
+      ]
+    },
+    {
+      "id": "2114",
+      "input": "lúnganjō",
+      "outputs": [
+        "*l*ú*n*g*a*n*j*ō"
+      ]
+    },
+    {
+      "id": "2115",
+      "input": "lústuz",
+      "outputs": [
+        "*l*ú*s*t*u*z"
+      ]
+    },
+    {
+      "id": "2116",
+      "input": "láugō",
+      "outputs": [
+        "*l*áu*g*ō"
+      ]
+    },
+    {
+      "id": "2117",
+      "input": "mákōjaną",
+      "outputs": [
+        "*m*á*k*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2118",
+      "input": "máltaz",
+      "outputs": [
+        "*m*á*l*t*a*z"
+      ]
+    },
+    {
+      "id": "2119",
+      "input": "mánnas",
+      "outputs": [
+        "*m*á*n*n*a*s"
+      ]
+    },
+    {
+      "id": "2120",
+      "input": "márkō",
+      "outputs": [
+        "*m*á*r*k*ō"
+      ]
+    },
+    {
+      "id": "2121",
+      "input": "mástaz",
+      "outputs": [
+        "*m*á*s*t*a*z"
+      ]
+    },
+    {
+      "id": "2122",
+      "input": "mḗlą",
+      "outputs": [
+        "*m*ḗ*l*ą"
+      ]
+    },
+    {
+      "id": "2123",
+      "input": "máinijaną",
+      "outputs": [
+        "*m*ái*n*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2124",
+      "input": "mízdai",
+      "outputs": [
+        "*m*í*z*d*ai"
+      ]
+    },
+    {
+      "id": "2125",
+      "input": "máxtiz",
+      "outputs": [
+        "*m*á*x*t*i*z"
+      ]
+    },
+    {
+      "id": "2126",
+      "input": "mélukz",
+      "outputs": [
+        "*m*é*l*u*k*z"
+      ]
+    },
+    {
+      "id": "2127",
+      "input": "mḗnōθz",
+      "outputs": [
+        "*m*ḗ*n*ō*θ*z"
+      ]
+    },
+    {
+      "id": "2128",
+      "input": "mōdaz",
+      "outputs": [
+        "*m*ō*d*a*z"
+      ]
+    },
+    {
+      "id": "2129",
+      "input": "mōdēr",
+      "outputs": [
+        "*m*ō*d*ē*r"
+      ]
+    },
+    {
+      "id": "2130",
+      "input": "náglaz",
+      "outputs": [
+        "*n*á*g*l*a*z"
+      ]
+    },
+    {
+      "id": "2131",
+      "input": "námô",
+      "outputs": [
+        "*n*á*m*ô"
+      ]
+    },
+    {
+      "id": "2132",
+      "input": "nábō",
+      "outputs": [
+        "*n*á*b*ō"
+      ]
+    },
+    {
+      "id": "2133",
+      "input": "nábulô",
+      "outputs": [
+        "*n*á*b*u*l*ô"
+      ]
+    },
+    {
+      "id": "2134",
+      "input": "xnékkô",
+      "outputs": [
+        "*x*n*é*k*k*ô"
+      ]
+    },
+    {
+      "id": "2135",
+      "input": "náudiz",
+      "outputs": [
+        "*n*áu*d*i*z"
+      ]
+    },
+    {
+      "id": "2136",
+      "input": "nḗðlō",
+      "outputs": [
+        "*n*ḗ*ð*l*ō"
+      ]
+    },
+    {
+      "id": "2137",
+      "input": "nístą",
+      "outputs": [
+        "*n*í*s*t*ą"
+      ]
+    },
+    {
+      "id": "2138",
+      "input": "nátją",
+      "outputs": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    {
+      "id": "2139",
+      "input": "nátilōn",
+      "outputs": [
+        "*n*á*t*i*l*ō*n"
+      ]
+    },
+    {
+      "id": "2140",
+      "input": "náxti",
+      "outputs": [
+        "*n*á*x*t*i"
+      ]
+    },
+    {
+      "id": "2141",
+      "input": "márōn",
+      "outputs": [
+        "*m*á*r*ō*n"
+      ]
+    },
+    {
+      "id": "2142",
+      "input": "nígun",
+      "outputs": [
+        "*n*í*g*u*n"
+      ]
+    },
+    {
+      "id": "2143",
+      "input": "núsō",
+      "outputs": [
+        "*n*ú*s*ō"
+      ]
+    },
+    {
+      "id": "2144",
+      "input": "áinaz",
+      "outputs": [
+        "*ái*n*a*z"
+      ]
+    },
+    {
+      "id": "2145",
+      "input": "úfnaz",
+      "outputs": [
+        "*ú*f*n*a*z"
+      ]
+    },
+    {
+      "id": "2146",
+      "input": "úxsô",
+      "outputs": [
+        "*ú*x*s*ô"
+      ]
+    },
+    {
+      "id": "2147",
+      "input": "régną",
+      "outputs": [
+        "*r*é*g*n*ą"
+      ]
+    },
+    {
+      "id": "2148",
+      "input": "régna-bùgô",
+      "outputs": [
+        "*r*é*g*n*a*b*ù*g*ô"
+      ]
+    },
+    {
+      "id": "2149",
+      "input": "xrábnaz",
+      "outputs": [
+        "*x*r*á*b*n*a*z"
+      ]
+    },
+    {
+      "id": "2150",
+      "input": "rḗdaną",
+      "outputs": [
+        "*r*ḗ*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2151",
+      "input": "ráukaz",
+      "outputs": [
+        "*r*áu*k*a*z"
+      ]
+    },
+    {
+      "id": "2152",
+      "input": "rástōz",
+      "outputs": [
+        "*r*á*s*t*ō*z"
+      ]
+    },
+    {
+      "id": "2153",
+      "input": "rḯdaną",
+      "outputs": [
+        "*r*ḯ*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2154",
+      "input": "ríndō",
+      "outputs": [
+        "*r*í*n*d*ō"
+      ]
+    },
+    {
+      "id": "2155",
+      "input": "rúkkaz",
+      "outputs": [
+        "*r*ú*k*k*a*z"
+      ]
+    },
+    {
+      "id": "2157",
+      "input": "rōdō",
+      "outputs": [
+        "*r*ō*d*ō"
+      ]
+    },
+    {
+      "id": "2158",
+      "input": "rūmą",
+      "outputs": [
+        "*r*ū*m*ą"
+      ]
+    },
+    {
+      "id": "2159",
+      "input": "ráipą",
+      "outputs": [
+        "*r*ái*p*ą"
+      ]
+    },
+    {
+      "id": "2160",
+      "input": "rōθraz",
+      "outputs": [
+        "*r*ō*θ*r*a*z"
+      ]
+    },
+    {
+      "id": "2161",
+      "input": "rínnaną",
+      "outputs": [
+        "*r*í*n*n*a*n*ą"
+      ]
+    },
+    {
+      "id": "2162",
+      "input": "rústaz",
+      "outputs": [
+        "*r*ú*s*t*a*z"
+      ]
+    },
+    {
+      "id": "2163",
+      "input": "rúgiz",
+      "outputs": [
+        "*r*ú*g*i*z"
+      ]
+    },
+    {
+      "id": "2164",
+      "input": "séglą",
+      "outputs": [
+        "*s*é*g*l*ą"
+      ]
+    },
+    {
+      "id": "2165",
+      "input": "sákō",
+      "outputs": [
+        "*s*á*k*ō"
+      ]
+    },
+    {
+      "id": "2166",
+      "input": "sáltą",
+      "outputs": [
+        "*s*á*l*t*ą"
+      ]
+    },
+    {
+      "id": "2167",
+      "input": "sálbō",
+      "outputs": [
+        "*s*á*l*b*ō"
+      ]
+    },
+    {
+      "id": "2168",
+      "input": "sápą",
+      "outputs": [
+        "*s*á*p*ą"
+      ]
+    },
+    {
+      "id": "2169",
+      "input": "sáiwiz",
+      "outputs": [
+        "*s*ái*w*i*z"
+      ]
+    },
+    {
+      "id": "2170",
+      "input": "sáumaz",
+      "outputs": [
+        "*s*áu*m*a*z"
+      ]
+    },
+    {
+      "id": "2171",
+      "input": "sōkijaną",
+      "outputs": [
+        "*s*ō*k*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2172",
+      "input": "sándijaną",
+      "outputs": [
+        "*s*á*n*d*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2173",
+      "input": "sátjaną",
+      "outputs": [
+        "*s*á*t*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2174",
+      "input": "sébun",
+      "outputs": [
+        "*s*é*b*u*n"
+      ]
+    },
+    {
+      "id": "2175",
+      "input": "skáftą",
+      "outputs": [
+        "*s*k*á*f*t*ą"
+      ]
+    },
+    {
+      "id": "2176",
+      "input": "skámō",
+      "outputs": [
+        "*s*k*á*m*ō"
+      ]
+    },
+    {
+      "id": "2177",
+      "input": "skéraną",
+      "outputs": [
+        "*s*k*é*r*a*n*ą"
+      ]
+    },
+    {
+      "id": "2178",
+      "input": "skáiθiz",
+      "outputs": [
+        "*s*k*ái*θ*i*z"
+      ]
+    },
+    {
+      "id": "2179",
+      "input": "skḗpą",
+      "outputs": [
+        "*s*k*ḗ*p*ą"
+      ]
+    },
+    {
+      "id": "2180",
+      "input": "skélduz",
+      "outputs": [
+        "*s*k*é*l*d*u*z"
+      ]
+    },
+    {
+      "id": "2181",
+      "input": "skíllingaz",
+      "outputs": [
+        "*s*k*í*l*l*i*n*g*a*z"
+      ]
+    },
+    {
+      "id": "2182",
+      "input": "skḯnaną",
+      "outputs": [
+        "*s*k*ḯ*n*a*n*ą"
+      ]
+    },
+    {
+      "id": "2183",
+      "input": "skúldramiz",
+      "outputs": [
+        "*s*k*ú*l*d*r*a*m*i*z"
+      ]
+    },
+    {
+      "id": "2184",
+      "input": "skáub",
+      "outputs": [
+        "*s*k*áu*b"
+      ]
+    },
+    {
+      "id": "2185",
+      "input": "skúflō",
+      "outputs": [
+        "*s*k*ú*f*l*ō"
+      ]
+    },
+    {
+      "id": "2186",
+      "input": "skáwōjaną",
+      "outputs": [
+        "*s*k*á*w*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2187",
+      "input": "skūrō",
+      "outputs": [
+        "*s*k*ū*r*ō"
+      ]
+    },
+    {
+      "id": "2188",
+      "input": "sḯdōn",
+      "outputs": [
+        "*s*ḯ*d*ō*n"
+      ]
+    },
+    {
+      "id": "2189",
+      "input": "síbi",
+      "outputs": [
+        "*s*í*b*i"
+      ]
+    },
+    {
+      "id": "2190",
+      "input": "síngwaną",
+      "outputs": [
+        "*s*í*n*g*w*a*n*ą"
+      ]
+    },
+    {
+      "id": "2191",
+      "input": "sángijaną",
+      "outputs": [
+        "*s*á*n*g*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2192",
+      "input": "swéstēr",
+      "outputs": [
+        "*s*w*é*s*t*ē*r"
+      ]
+    },
+    {
+      "id": "2193",
+      "input": "sétjaną",
+      "outputs": [
+        "*s*é*t*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2194",
+      "input": "séxs",
+      "outputs": [
+        "*s*é*x*s"
+      ]
+    },
+    {
+      "id": "2195",
+      "input": "sláxaną",
+      "outputs": [
+        "*s*l*á*x*a*n*ą"
+      ]
+    },
+    {
+      "id": "2196",
+      "input": "slḗpaną",
+      "outputs": [
+        "*s*l*ḗ*p*a*n*ą"
+      ]
+    },
+    {
+      "id": "2197",
+      "input": "slḯmą",
+      "outputs": [
+        "*s*l*ḯ*m*ą"
+      ]
+    },
+    {
+      "id": "2198",
+      "input": "smérwijaną",
+      "outputs": [
+        "*s*m*é*r*w*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2199",
+      "input": "snáiwaz",
+      "outputs": [
+        "*s*n*ái*w*a*z"
+      ]
+    },
+    {
+      "id": "2200",
+      "input": "súrgō",
+      "outputs": [
+        "*s*ú*r*g*ō"
+      ]
+    },
+    {
+      "id": "2201",
+      "input": "sáiwalō",
+      "outputs": [
+        "*s*ái*w*a*l*ō"
+      ]
+    },
+    {
+      "id": "2202",
+      "input": "spánnaną",
+      "outputs": [
+        "*s*p*á*n*n*a*n*ą"
+      ]
+    },
+    {
+      "id": "2203",
+      "input": "spánnai",
+      "outputs": [
+        "*s*p*á*n*n*ai"
+      ]
+    },
+    {
+      "id": "2204",
+      "input": "spárrô",
+      "outputs": [
+        "*s*p*á*r*r*ô"
+      ]
+    },
+    {
+      "id": "2205",
+      "input": "spárōjaną",
+      "outputs": [
+        "*s*p*á*r*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2206",
+      "input": "spéru",
+      "outputs": [
+        "*s*p*é*r*u"
+      ]
+    },
+    {
+      "id": "2207",
+      "input": "spínnaną",
+      "outputs": [
+        "*s*p*í*n*n*a*n*ą"
+      ]
+    },
+    {
+      "id": "2208",
+      "input": "spénnilō",
+      "outputs": [
+        "*s*p*é*n*n*i*l*ō"
+      ]
+    },
+    {
+      "id": "2209",
+      "input": "spḗnuz",
+      "outputs": [
+        "*s*p*ḗ*n*u*z"
+      ]
+    },
+    {
+      "id": "2210",
+      "input": "spráidijaną",
+      "outputs": [
+        "*s*p*r*ái*d*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2211",
+      "input": "spúrô",
+      "outputs": [
+        "*s*p*ú*r*ô"
+      ]
+    },
+    {
+      "id": "2212",
+      "input": "stábaz",
+      "outputs": [
+        "*s*t*á*b*a*z"
+      ]
+    },
+    {
+      "id": "2213",
+      "input": "stúrtijaną",
+      "outputs": [
+        "*s*t*ú*r*t*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2214",
+      "input": "stérbaną",
+      "outputs": [
+        "*s*t*é*r*b*a*n*ą"
+      ]
+    },
+    {
+      "id": "2215",
+      "input": "stélaną",
+      "outputs": [
+        "*s*t*é*l*a*n*ą"
+      ]
+    },
+    {
+      "id": "2216",
+      "input": "stámniz",
+      "outputs": [
+        "*s*t*á*m*n*i*z"
+      ]
+    },
+    {
+      "id": "2217",
+      "input": "stéllijaną",
+      "outputs": [
+        "*s*t*é*l*l*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2219",
+      "input": "stúkkaz",
+      "outputs": [
+        "*s*t*ú*k*k*a*z"
+      ]
+    },
+    {
+      "id": "2220",
+      "input": "stáinaz",
+      "outputs": [
+        "*s*t*ái*n*a*z"
+      ]
+    },
+    {
+      "id": "2221",
+      "input": "stōlaz",
+      "outputs": [
+        "*s*t*ō*l*a*z"
+      ]
+    },
+    {
+      "id": "2222",
+      "input": "stúrkaz",
+      "outputs": [
+        "*s*t*ú*r*k*a*z"
+      ]
+    },
+    {
+      "id": "2223",
+      "input": "stúrmaz",
+      "outputs": [
+        "*s*t*ú*r*m*a*z"
+      ]
+    },
+    {
+      "id": "2224",
+      "input": "stráwą",
+      "outputs": [
+        "*s*t*r*á*w*ą"
+      ]
+    },
+    {
+      "id": "2225",
+      "input": "stráumaz",
+      "outputs": [
+        "*s*t*r*áu*m*a*z"
+      ]
+    },
+    {
+      "id": "2226",
+      "input": "strákkijaną",
+      "outputs": [
+        "*s*t*r*á*k*k*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2227",
+      "input": "stráwjaną",
+      "outputs": [
+        "*s*t*r*á*w*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2228",
+      "input": "strángiz",
+      "outputs": [
+        "*s*t*r*á*n*g*i*z"
+      ]
+    },
+    {
+      "id": "2229",
+      "input": "stōdą",
+      "outputs": [
+        "*s*t*ō*d*ą"
+      ]
+    },
+    {
+      "id": "2230",
+      "input": "súmaraz",
+      "outputs": [
+        "*s*ú*m*a*r*a*z"
+      ]
+    },
+    {
+      "id": "2231",
+      "input": "súnnōn",
+      "outputs": [
+        "*s*ú*n*n*ō*n"
+      ]
+    },
+    {
+      "id": "2232",
+      "input": "súndrōjaną",
+      "outputs": [
+        "*s*ú*n*d*r*ō*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2233",
+      "input": "sūpaną",
+      "outputs": [
+        "*s*ū*p*a*n*ą"
+      ]
+    },
+    {
+      "id": "2234",
+      "input": "swálwōn",
+      "outputs": [
+        "*s*w*á*l*w*ō*n"
+      ]
+    },
+    {
+      "id": "2235",
+      "input": "swánas",
+      "outputs": [
+        "*s*w*á*n*a*s"
+      ]
+    },
+    {
+      "id": "2236",
+      "input": "swéllaną",
+      "outputs": [
+        "*s*w*é*l*l*a*n*ą"
+      ]
+    },
+    {
+      "id": "2237",
+      "input": "swímmaną",
+      "outputs": [
+        "*s*w*í*m*m*a*n*ą"
+      ]
+    },
+    {
+      "id": "2238",
+      "input": "swḯną",
+      "outputs": [
+        "*s*w*ḯ*n*ą"
+      ]
+    },
+    {
+      "id": "2239",
+      "input": "swérdą",
+      "outputs": [
+        "*s*w*é*r*d*ą"
+      ]
+    },
+    {
+      "id": "2240",
+      "input": "táppô",
+      "outputs": [
+        "*t*á*p*p*ô"
+      ]
+    },
+    {
+      "id": "2241",
+      "input": "táugmaz",
+      "outputs": [
+        "*t*áu*g*m*a*z"
+      ]
+    },
+    {
+      "id": "2242",
+      "input": "téxun",
+      "outputs": [
+        "*t*é*x*u*n"
+      ]
+    },
+    {
+      "id": "2243",
+      "input": "θégnaz",
+      "outputs": [
+        "*θ*é*g*n*a*z"
+      ]
+    },
+    {
+      "id": "2244",
+      "input": "θánkaz",
+      "outputs": [
+        "*θ*á*n*k*a*z"
+      ]
+    },
+    {
+      "id": "2245",
+      "input": "θáką",
+      "outputs": [
+        "*θ*á*k*ą"
+      ]
+    },
+    {
+      "id": "2246",
+      "input": "θéubaz",
+      "outputs": [
+        "*θ*éu*b*a*z"
+      ]
+    },
+    {
+      "id": "2247",
+      "input": "θíngą",
+      "outputs": [
+        "*θ*í*n*g*ą"
+      ]
+    },
+    {
+      "id": "2248",
+      "input": "θánkijaną",
+      "outputs": [
+        "*θ*á*n*k*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2249",
+      "input": "θúrstuz",
+      "outputs": [
+        "*θ*ú*r*s*t*u*z"
+      ]
+    },
+    {
+      "id": "2250",
+      "input": "θístilas",
+      "outputs": [
+        "*θ*í*s*t*i*l*a*s"
+      ]
+    },
+    {
+      "id": "2251",
+      "input": "θúrnaz",
+      "outputs": [
+        "*θ*ú*r*n*a*z"
+      ]
+    },
+    {
+      "id": "2252",
+      "input": "θūs-èndi",
+      "outputs": [
+        "*θ*ū*s*è*n*d*i"
+      ]
+    },
+    {
+      "id": "2253",
+      "input": "θréskaną",
+      "outputs": [
+        "*θ*r*é*s*k*a*n*ą"
+      ]
+    },
+    {
+      "id": "2254",
+      "input": "θréjez",
+      "outputs": [
+        "*θ*r*é*j*e*z"
+      ]
+    },
+    {
+      "id": "2255",
+      "input": "θúnraz",
+      "outputs": [
+        "*θ*ú*n*r*a*z"
+      ]
+    },
+    {
+      "id": "2256",
+      "input": "tíkkô",
+      "outputs": [
+        "*t*í*k*k*ô"
+      ]
+    },
+    {
+      "id": "2257",
+      "input": "tḯdiz",
+      "outputs": [
+        "*t*ḯ*d*i*z"
+      ]
+    },
+    {
+      "id": "2258",
+      "input": "tímbrą",
+      "outputs": [
+        "*t*í*m*b*r*ą"
+      ]
+    },
+    {
+      "id": "2259",
+      "input": "táixōn",
+      "outputs": [
+        "*t*ái*x*ō*n"
+      ]
+    },
+    {
+      "id": "2260",
+      "input": "táikną",
+      "outputs": [
+        "*t*ái*k*n*ą"
+      ]
+    },
+    {
+      "id": "2261",
+      "input": "tángō",
+      "outputs": [
+        "*t*á*n*g*ō"
+      ]
+    },
+    {
+      "id": "2262",
+      "input": "túngōn",
+      "outputs": [
+        "*t*ú*n*g*ō*n"
+      ]
+    },
+    {
+      "id": "2263",
+      "input": "tūną",
+      "outputs": [
+        "*t*ū*n*ą"
+      ]
+    },
+    {
+      "id": "2264",
+      "input": "trédaną",
+      "outputs": [
+        "*t*r*é*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2265",
+      "input": "trúgą",
+      "outputs": [
+        "*t*r*ú*g*ą"
+      ]
+    },
+    {
+      "id": "2266",
+      "input": "wádaną",
+      "outputs": [
+        "*w*á*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2267",
+      "input": "wágnaz",
+      "outputs": [
+        "*w*á*g*n*a*z"
+      ]
+    },
+    {
+      "id": "2268",
+      "input": "wákaną",
+      "outputs": [
+        "*w*á*k*a*n*ą"
+      ]
+    },
+    {
+      "id": "2269",
+      "input": "wárpą",
+      "outputs": [
+        "*w*á*r*p*ą"
+      ]
+    },
+    {
+      "id": "2270",
+      "input": "wérpaną",
+      "outputs": [
+        "*w*é*r*p*a*n*ą"
+      ]
+    },
+    {
+      "id": "2271",
+      "input": "wártōn",
+      "outputs": [
+        "*w*á*r*t*ō*n"
+      ]
+    },
+    {
+      "id": "2272",
+      "input": "wáskaną",
+      "outputs": [
+        "*w*á*s*k*a*n*ą"
+      ]
+    },
+    {
+      "id": "2273",
+      "input": "wábsaz",
+      "outputs": [
+        "*w*á*b*s*a*z"
+      ]
+    },
+    {
+      "id": "2274",
+      "input": "wátōr",
+      "outputs": [
+        "*w*á*t*ō*r"
+      ]
+    },
+    {
+      "id": "2275",
+      "input": "wáxsą",
+      "outputs": [
+        "*w*á*x*s*ą"
+      ]
+    },
+    {
+      "id": "2276",
+      "input": "wáxsaną",
+      "outputs": [
+        "*w*á*x*s*a*n*ą"
+      ]
+    },
+    {
+      "id": "2277",
+      "input": "wégaz",
+      "outputs": [
+        "*w*é*g*a*z"
+      ]
+    },
+    {
+      "id": "2278",
+      "input": "wḗpną",
+      "outputs": [
+        "*w*ḗ*p*n*ą"
+      ]
+    },
+    {
+      "id": "2279",
+      "input": "wéslōn",
+      "outputs": [
+        "*w*é*s*l*ō*n"
+      ]
+    },
+    {
+      "id": "2280",
+      "input": "wédrą",
+      "outputs": [
+        "*w*é*d*r*ą"
+      ]
+    },
+    {
+      "id": "2281",
+      "input": "wébaną",
+      "outputs": [
+        "*w*é*b*a*n*ą"
+      ]
+    },
+    {
+      "id": "2282",
+      "input": "wéstanē",
+      "outputs": [
+        "*w*é*s*t*a*n*ē"
+      ]
+    },
+    {
+      "id": "2283",
+      "input": "wíθrą",
+      "outputs": [
+        "*w*í*θ*r*ą"
+      ]
+    },
+    {
+      "id": "2284",
+      "input": "xwálaz",
+      "outputs": [
+        "*x*w*á*l*a*z"
+      ]
+    },
+    {
+      "id": "2285",
+      "input": "xwḯlō",
+      "outputs": [
+        "*x*w*ḯ*l*ō"
+      ]
+    },
+    {
+      "id": "2286",
+      "input": "xwḯnaną",
+      "outputs": [
+        "*x*w*ḯ*n*a*n*ą"
+      ]
+    },
+    {
+      "id": "2287",
+      "input": "xōrōn",
+      "outputs": [
+        "*x*ō*r*ō*n"
+      ]
+    },
+    {
+      "id": "2288",
+      "input": "wíduwōn",
+      "outputs": [
+        "*w*í*d*u*w*ō*n"
+      ]
+    },
+    {
+      "id": "2289",
+      "input": "wáldaną",
+      "outputs": [
+        "*w*á*l*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2290",
+      "input": "wḯbą",
+      "outputs": [
+        "*w*ḯ*b*ą"
+      ]
+    },
+    {
+      "id": "2291",
+      "input": "wéxtiz",
+      "outputs": [
+        "*w*é*x*t*i*z"
+      ]
+    },
+    {
+      "id": "2292",
+      "input": "wéljaną",
+      "outputs": [
+        "*w*é*l*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2293",
+      "input": "wéljô",
+      "outputs": [
+        "*w*é*l*j*ô"
+      ]
+    },
+    {
+      "id": "2294",
+      "input": "wíndaną",
+      "outputs": [
+        "*w*í*n*d*a*n*ą"
+      ]
+    },
+    {
+      "id": "2295",
+      "input": "wíntruz",
+      "outputs": [
+        "*w*í*n*t*r*u*z"
+      ]
+    },
+    {
+      "id": "2296",
+      "input": "wḯθagą",
+      "outputs": [
+        "*w*ḯ*θ*a*g*ą"
+      ]
+    },
+    {
+      "id": "2297",
+      "input": "wálθuz",
+      "outputs": [
+        "*w*á*l*θ*u*z"
+      ]
+    },
+    {
+      "id": "2298",
+      "input": "wúlfaz",
+      "outputs": [
+        "*w*ú*l*f*a*z"
+      ]
+    },
+    {
+      "id": "2299",
+      "input": "wúndrą",
+      "outputs": [
+        "*w*ú*n*d*r*ą"
+      ]
+    },
+    {
+      "id": "2300",
+      "input": "wúllō",
+      "outputs": [
+        "*w*ú*l*l*ō"
+      ]
+    },
+    {
+      "id": "2301",
+      "input": "wúrdą",
+      "outputs": [
+        "*w*ú*r*d*ą"
+      ]
+    },
+    {
+      "id": "2302",
+      "input": "wír-àldu",
+      "outputs": [
+        "*w*í*r*à*l*d*u"
+      ]
+    },
+    {
+      "id": "2303",
+      "input": "wúrmiz",
+      "outputs": [
+        "*w*ú*r*m*i*z"
+      ]
+    },
+    {
+      "id": "2304",
+      "input": "wrínganą",
+      "outputs": [
+        "*w*r*í*n*g*a*n*ą"
+      ]
+    },
+    {
+      "id": "2305",
+      "input": "gárną",
+      "outputs": [
+        "*g*á*r*n*ą"
+      ]
+    },
+    {
+      "id": "2306",
+      "input": "jḗrą",
+      "outputs": [
+        "*j*ḗ*r*ą"
+      ]
+    },
+    {
+      "id": "2307",
+      "input": "júką",
+      "outputs": [
+        "*j*ú*k*ą"
+      ]
+    },
+    {
+      "id": "2308",
+      "input": "júgunθ",
+      "outputs": [
+        "*j*ú*g*u*n*θ"
+      ]
+    },
+    {
+      "id": "2309",
+      "input": "mákô",
+      "outputs": [
+        "*m*á*k*ô"
+      ]
+    },
+    {
+      "id": "2310",
+      "input": "mákōθi",
+      "outputs": [
+        "*m*á*k*ō*θ*i"
+      ]
+    },
+    {
+      "id": "2311",
+      "input": "búrô",
+      "outputs": [
+        "*b*ú*r*ô"
+      ]
+    },
+    {
+      "id": "2312",
+      "input": "búrōθi",
+      "outputs": [
+        "*b*ú*r*ō*θ*i"
+      ]
+    },
+    {
+      "id": "2313",
+      "input": "líznô",
+      "outputs": [
+        "*l*í*z*n*ô"
+      ]
+    },
+    {
+      "id": "2314",
+      "input": "líznōθi",
+      "outputs": [
+        "*l*í*z*n*ō*θ*i"
+      ]
+    },
+    {
+      "id": "2315",
+      "input": "líkkô",
+      "outputs": [
+        "*l*í*k*k*ô"
+      ]
+    },
+    {
+      "id": "2316",
+      "input": "líkkōθi",
+      "outputs": [
+        "*l*í*k*k*ō*θ*i"
+      ]
+    },
+    {
+      "id": "2317",
+      "input": "skáwô",
+      "outputs": [
+        "*s*k*á*w*ô"
+      ]
+    },
+    {
+      "id": "2318",
+      "input": "skáwōθi",
+      "outputs": [
+        "*s*k*á*w*ō*θ*i"
+      ]
+    },
+    {
+      "id": "2322",
+      "input": "xwáz",
+      "outputs": [
+        "*x*w*á*z"
+      ]
+    },
+    {
+      "id": "2326",
+      "input": "ᵘízwiz",
+      "outputs": [
+        "*ᵘ*í*z*w*i*z"
+      ]
+    },
+    {
+      "id": "2327",
+      "input": "wúndōdē",
+      "outputs": [
+        "*w*ú*n*d*ō*d*ē"
+      ]
+    },
+    {
+      "id": "2328",
+      "input": "sḗaną",
+      "outputs": [
+        "*s*ḗ*a*n*ą"
+      ]
+    },
+    {
+      "id": "2329",
+      "input": "lḗwijaną",
+      "outputs": [
+        "*l*ḗ*w*i*j*a*n*ą"
+      ]
+    },
+    {
+      "id": "2330",
+      "input": "θánxtē",
+      "outputs": [
+        "*θ*á*n*x*t*ē"
+      ]
+    },
+    {
+      "id": "2332",
+      "input": "xíwją",
+      "outputs": [
+        "*x*í*w*j*ą"
+      ]
+    }
+  ],
+  "canonical_protected_hashes": {
+    "/usr/app/fsts/germanic.txt": "a5d53a0504e6dc2a5411a8e327826f97a75c5bcc60f5fc17f55da06c71be904e",
+    "/usr/app/fsts/old_english_sandbox.txt": "efe38dec1b3edd28d46a64c4a69c5eb6253235236b487fdcfd074fc2c8001642",
+    "/usr/app/data/germanic-aligned-final.tsv": "165f859329efee0fc3bda0fbc9d4030de340ec9e5ad5341a738dfbf8e494699b",
+    "/usr/app/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "/usr/app/oe_input_context.py": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961",
+    "/usr/app/oe_build_manifest.json": "e763a0327a029da3f2d3b6306ae428d0d6322300e076288da394327fc044b879",
+    "/usr/app/old_english.bin": "5a564d23f7c8ec9537907723bb4c71ed21770b2505e46d895cda10f0aafdd505",
+    "/usr/app/old_english_sandbox_after_english_proto_input.bin": "89940b5b075e7d2bc42f1e32cf4cc5a489d56ce5d027b2bfc137c32b63711546",
+    "/usr/app/old_english_sandbox_after_pgmc_gm_simplification.bin": "161969c8896367cdb42f87030e1b2fd8a8f27473f211207da5048c7a8febf7d6",
+    "/usr/app/old_english_sandbox_after_pgmc_nasal_loss_before_x.bin": "dadd218e8c22c91b3687e0951543cf94aeba5176271f06e000504fafbaf072a1",
+    "/usr/app/old_english_sandbox_after_root_noun_nom_z_loss.bin": "15d302d019b391873976d868f7ea53f9e43ef30d6c5d4d951b66981119ebc267",
+    "/usr/app/old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin": "44c9f819cde8880b68ed0f4b56e9f0604c2da3c008391193f0c972b975355977",
+    "/usr/app/old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin": "bdd40ed8d7f4fafaaa709ef90c26d1c32af06cd101ed86b3eb978b48f8c468db",
+    "/usr/app/old_english_sandbox_after_pnwgmc_long_e_lowering.bin": "700b908ab94d4564c9cbd5aa41989be2738ab258fa42e0ac3d974221c9b1fd05",
+    "/usr/app/old_english_sandbox_after_pwgmc_early_i_apocope.bin": "216ea352fcad605f6c136c21f798d61b2ba48108f45301ac99047f6ab3040dff",
+    "/usr/app/old_english_sandbox_after_pwgmc_final_or_lowering.bin": "76d2e6638014e12022fbf8801233db7d180e385f0fcdf275d6d03d183e168aac",
+    "/usr/app/old_english_sandbox_after_pwgmc_coronal_w_assimilation.bin": "f18c76d1218a2646eea9e67e2e5053fe32ac054f64b9428ccb3848fd0fa130fb",
+    "/usr/app/old_english_sandbox_after_oe_ww_simplification.bin": "50e441e5d4b5c1f22286454c5dda1fc151e35ad0d819121811e80512ff7b6bdc",
+    "/usr/app/old_english_sandbox_after_pwgmc_ij_contraction.bin": "50f29152db9a9a805efcea9217d05a57d11ffe60a6629a5e8bc142cde9d70321",
+    "/usr/app/old_english_sandbox_after_pwgmc_j_gemination.bin": "2c85771c254a0bc64a573ab0fcb9441918f7b5f8bb82ab5a72dcfb19844399a3",
+    "/usr/app/old_english_sandbox_after_pwgmc_syllabic_j.bin": "9ab18b6236e87d2b2d04a90997d8953aafb6cde849d3f4c2ffb78ea53df645a5",
+    "/usr/app/old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin": "a135490b39c99673b6a044b39f314fbbc8685d84903e9f3bf4d723f99809bfde",
+    "/usr/app/old_english_sandbox_after_eaf_l_th_voicing.bin": "d6ea37d6c3203ad79ce778f8c8be046f031f81d81103af1fb62152179b145f85",
+    "/usr/app/old_english_sandbox_after_pwgmc_dental_hardening.bin": "6a00c03398caaab55093b3e0dd521f3a9967d04f61c5ac7f02c05376a14e3e79",
+    "/usr/app/old_english_sandbox_after_pwgmc_endingless_aw.bin": "e2d6a9782e4f66fc0cb65d6c3e05c31193cfbd24f1ba6392429fba6d2e268bd7",
+    "/usr/app/old_english_sandbox_after_pnwgmc_i_lowering.bin": "ec228c2f9e95da01022857c02b3e6f109e438fa96cb04df697f261ded434356c",
+    "/usr/app/old_english_sandbox_after_pnwgmc_u_lowering.bin": "46ba2d03f5dbde9b92d27bb94f653ecaf0c6ece01453c05aa07bb8b84ccdbe38",
+    "/usr/app/old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin": "d9be8cbef117beec2af7d9e3ea6b5729b37cea5b3dd8a304615ee90cb298e7dd",
+    "/usr/app/old_english_sandbox_after_pnwgmc_final_long_o_raising.bin": "f8ba6f5ea3d539a279af8fad68a1c24769eaaef0d6d5993d782462de22bbb971",
+    "/usr/app/old_english_sandbox_after_eaf_final_z_deletion.bin": "e1858682d061353bff985801e26edc8ed198e6ac2a30e13c6f51c1f2202ef450",
+    "/usr/app/old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin": "27e6ea2ad72d0e0c525de6d1e5137142360dcc5cd9043ccc7e369015828f2aaa",
+    "/usr/app/old_english_sandbox_after_monosyllabic_final_z_loss.bin": "944bc74f83ec3b3ead2f0a94839482687209c691ca8b7c1b518cd258d5344370",
+    "/usr/app/old_english_sandbox_after_eaf_rhotacism.bin": "01a044f2570da82a5c69ba5c1488d5808ebcfff73157181ed558373daf4694f7",
+    "/usr/app/old_english_sandbox_after_pnwgmc_mn_dissimilation.bin": "d4fab11ad3bcf89b7510f994027b5dd0d9722b1cffab62ec1ae11483f07a8ae5",
+    "/usr/app/old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin": "8fc3d0d7974bc89fae016e7789a7cf1c654579744721d0f3e44c9d32833ef237",
+    "/usr/app/old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin": "ace7eb6b4b540ea1b02a83443b2faa28370054aee911d2368064238449e21887",
+    "/usr/app/old_english_sandbox_after_eaf_nasal_spirant_loss.bin": "2b2a9a86786cf127cf98fdfbbe181b42cf223486c9501d7ae8fceff799a864a7",
+    "/usr/app/old_english_sandbox_after_eaf_hiatus_w_insertion.bin": "edbd6233485a4cd8416004fdacbce0b1159e86b88eda9d166de9cc3bf0bcb086",
+    "/usr/app/old_english_sandbox_after_eaf_long_a_nasal_rounding.bin": "719835562b5e743d88a74af2b80ad72f6620f39e2dcdf36b3822185b71819fb7",
+    "/usr/app/old_english_sandbox_after_eaf_nasalized_low_rounding.bin": "a66209064543d024dba435f26bfea4eedef374d3132642d420e9dda85338d8ff",
+    "/usr/app/old_english_sandbox_after_eaf_long_a_fronting.bin": "228c2396bf60da5c4adc070ecad258b67e5caac6acd56b73acfe7196d8985adf",
+    "/usr/app/old_english_sandbox_after_eaf_ai_monophthongization.bin": "f0e526d18353d66b368aea551f7c580046dbe3e67cda22e5ee2a86efa71a56ce",
+    "/usr/app/old_english_sandbox_after_oe_awwj_resolution.bin": "eae34ef7335e1e29887459ddf2b4705f08e98e31985c68f44b51c5d5289d2c87",
+    "/usr/app/old_english_sandbox_after_oe_au_brightening.bin": "fd3136730941ba2931341691723fe331e0caea8e8caf8f5bcba8e197123db70f",
+    "/usr/app/old_english_sandbox_after_oe_ew_long_diphthong.bin": "be7c9b01d6c71c85542ab1d3f0650329a80b258568aa9ce64fd878492dc2bea7",
+    "/usr/app/old_english_sandbox_after_oe_jww_simplification.bin": "b225a1f11740f19d4c4f0e0bfa748d0f315e3de523cad5671f55b8c2b538c7d5",
+    "/usr/app/old_english_sandbox_after_oe_j_glide_io.bin": "83ddc406ea85cf4bb77ec50fd2d543812d047897a1dd2cbd5554da17a7eb3c90",
+    "/usr/app/old_english_sandbox_after_oe_diphthong_leveling.bin": "e029f0a7b28d40fc8dd60531b478ccc2b39c4fcfead6c03dc2fcd8309da75e4d",
+    "/usr/app/old_english_sandbox_after_oe_aw_long_diphthong.bin": "40f413de89b7a45012ef5ec7fe7f02c15fabb911648b1c2b38b68670a019aa3f",
+    "/usr/app/old_english_sandbox_after_oe_prefix_a_reduction.bin": "d29e909cd50f90b6c80f9c8b1bfccf65c4492078e304300ad0b3f8e63454a21d",
+    "/usr/app/old_english_sandbox_after_oe_inter_stress_raising.bin": "13afbdb93fcb7bae498af9ed8fc734d619e4c57317923dbe07b9062cb1a7847b",
+    "/usr/app/old_english_sandbox_after_oe_compound_linking_syncope.bin": "ccfb788e12f30186bc5387972d0a89688b68a0fc43b5c3dace0f679937857ea0",
+    "/usr/app/old_english_sandbox_after_oe_strip_secondary_stress.bin": "23dd0651c82e8c712207f7b69e39830fc2e067e6858bb07f28b83e47fe237dfd",
+    "/usr/app/old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin": "881a94edaa78f8ead8bf025cb128cbe403c5088f7c5f9c7ac42bf655f08d1f31",
+    "/usr/app/old_english_sandbox_after_pwgmc_final_bare_a_loss.bin": "808a6d42fef647712810731827fd6c1af1658c5e7d82bd278fe63a2cceb5cec2",
+    "/usr/app/old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin": "4cc80377ebbde0012b7b14ac6521f4b000cfa7da52d22bf7f1d4fc1f71b15ab1",
+    "/usr/app/old_english_sandbox_after_eaf_brightening_unstressed.bin": "d39b911fc85d4d6afa18234e1b93a11a8e99eacf7baa59f485f328568f98f981",
+    "/usr/app/old_english_sandbox_after_eaf_brightening.bin": "c58527ba0d13c867783b1a0bd61b3595fc8f2b023784e4e1fc9da75610316370",
+    "/usr/app/old_english_sandbox_after_eaf_brightening_long_final.bin": "f101007ea6b3ef024d7a5938694e872968d1a7261ebdc1c0bbe9ea84c7d8ffdb",
+    "/usr/app/old_english_sandbox_after_oe_breaking.bin": "9803d5795469a4d98af634b0858e46b1da57531833feed0f05db7061666ba6f9",
+    "/usr/app/old_english_sandbox_after_oe_velar_fricative_palatalization.bin": "8cf3720128506611b5c727fa1b7f0254515f4602e2af318547e161e0e41d7d8f",
+    "/usr/app/old_english_sandbox_after_oe_a_restoration.bin": "7fae762f92a15de2c2437e64e38f4c9ea8201d87b3fa70ac673dabd02699c00a",
+    "/usr/app/old_english_sandbox_after_oe_heavy_syllable_nasal_apocope.bin": "0ba7728226b8b1b52f583c6552c9c457c2752fc2df52ec0c9c921867c7e3a034",
+    "/usr/app/old_english_sandbox_after_oe_secondary_nasalization.bin": "a465b268cd874bbdfe1528b5643785c1b5f30e93cfb274dade0079541f71796a",
+    "/usr/app/old_english_sandbox_after_pgmc_b_allophony.bin": "3b1c43e60956de90a6358522f0b1ee7b61306026500cfbe1be8c16ee06903ca3",
+    "/usr/app/old_english_sandbox_after_sievers_law_syncope.bin": "9b37e59b8daba952d0b89e4c4774d5b63813a7c9709c1745cd1480022649e8e6",
+    "/usr/app/old_english_sandbox_after_oe_sk_palatalization.bin": "dc9eace37cca463d148e828b7dadd34cb372d0d744515a3fcac808acd7b29193",
+    "/usr/app/old_english_sandbox_after_oe_velar_palatalization.bin": "7a156252e46c3a3647cec6f84f0d8dd7f2a2c7a4ef2f8e8ede492da076a2cd69",
+    "/usr/app/old_english_sandbox_after_oe_post_velar_w_loss.bin": "9956704a5d768dda82805a9a4d0a271f9daa584ca0fa4dace64991cea0ba2667",
+    "/usr/app/old_english_sandbox_after_oe_w_loss_before_i.bin": "5a97d9ded59379ad3a811af5717850ce051753f075a5b27de033295b784acd4e",
+    "/usr/app/old_english_sandbox_after_oe_ws_palatal_diphthongization.bin": "e2b1f14330e6288349e12dac720b4f74c90e5a75202b34c7f6d6b7218c33cbac",
+    "/usr/app/old_english_sandbox_after_oe_i_umlaut.bin": "e499aa7933c037113d72a6370f215ed179ef9effa94771dc34571fe45ab207ff",
+    "/usr/app/old_english_sandbox_after_oe_late_palatal_diphthong.bin": "72cc48bde4ae7089462e8796d781c41c667f21f3489776a4b7c8ba4352cb1403",
+    "/usr/app/old_english_sandbox_after_oe_j_cluster_coalescence.bin": "04f8384afbd15f6a9b8521b452578443a35a135554816bd5dc2781be8c3b1448",
+    "/usr/app/old_english_sandbox_after_oe_back_mutation.bin": "2b233024c0e61abb4e2d97627bb6669830d6044426fea10c0718e3d4d5f356a2",
+    "/usr/app/old_english_sandbox_after_oe_ws_palatal_umlaut.bin": "972f25213926092ced2f89f2c7a01df4da017e10ce652163f446195e19e0416d",
+    "/usr/app/old_english_sandbox_after_oe_weak_tail_nasal_loss.bin": "acb70b896cd8e0ba35bfd1ba04e4f450b05fa07586b957fe3ab28d1727461f2f",
+    "/usr/app/old_english_sandbox_after_oe_weight_markers.bin": "53b9e60167342d5d97a9d0099d1c6ce8fa5479c25e6dc706e82ce879da910ac0",
+    "/usr/app/old_english_sandbox_after_oe_high_vowel_apocope.bin": "5a098f383e94fabe77c1836154fb27d77323175d1d73e9e8f6017f027776932e",
+    "/usr/app/old_english_sandbox_after_nwgmc_in_stem_n_loss.bin": "baf0a1bd6e4d1d4ac5c638aa8925f990fabf9b3c06bafbe83abbd2c57450257e",
+    "/usr/app/old_english_sandbox_after_oe_medial_syncope.bin": "59d437d557426a6fbb2d908d0b3506ebb1b5fe87f0b9420cf2e8e9df16945c4e",
+    "/usr/app/old_english_sandbox_after_oe_l_adjacent_syncope.bin": "ea474818d2c9c2e86b93b4ee6811eb0a0f8e7cf86260640dc98ac63a8c4286ab",
+    "/usr/app/old_english_sandbox_after_oe_dental_assimilation.bin": "7595572e5633fcfc6c4866e8da91feeed7a917d41300503428ed96087b56cf33",
+    "/usr/app/old_english_sandbox_after_oe_preconsonantal_degemination.bin": "d41fd875094477b1c1cf38553bab67a771d88e96a609ce008b022529dc98eeef",
+    "/usr/app/old_english_sandbox_after_oe_early_o_shortening.bin": "fad08c1af4ed95c68c357d8b00b9132e65291115bd392438998bc0c8e7e80152",
+    "/usr/app/old_english_sandbox_after_oe_unstressed_fronting_early.bin": "afcef4920a78ad975c9d3c7671acb6d45ca3b4cb2217b1af46b2d145e565e8ce",
+    "/usr/app/old_english_sandbox_after_oe_late_o_shortening.bin": "a386acb2e4fe4c7f8914b28efdbcdad60c45af5cfc07b810ed5f50a2dbee9f4f",
+    "/usr/app/old_english_sandbox_after_oe_med_unstressed_o_raising.bin": "13069a216192ef35270a32cda021a8a527ab941ef410531ff9bf54e9096f811a",
+    "/usr/app/old_english_sandbox_after_oe_final_unstressed_o_lowering.bin": "4579c33249b4a2b8fe27a208a3684882bbc79dec77c6473c8033b46c81642a73",
+    "/usr/app/old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin": "2aec65bc4331747406fc615abe01ba8478f9a907d5f68251dadb678f105bc322",
+    "/usr/app/old_english_sandbox_after_oe_unstressed_ae_merger.bin": "f4de6d4763a9f324022049776029586428e8caefa4772415c7f1566dece32d7e",
+    "/usr/app/old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin": "54dec679f14af7e118e8450e15e8c7422135eddb5f73c9c51167e8fa9aa27690",
+    "/usr/app/old_english_sandbox_after_oe_med_unstressed_i_lowering.bin": "e7fdca8999d2d926eb4c12b5b4d68e5ba1f423d64a04474a8f36cbf15456cad4",
+    "/usr/app/old_english_sandbox_after_oe_med_unstressed_u_lowering.bin": "8719ab293a3740738946e3f3adb5584c51f50641005c52485a9ffedcf52c1483",
+    "/usr/app/old_english_sandbox_after_oe_prefix_i_reduction.bin": "8cd138b24eb6df9f5ce0eb2687f78b0fe96c936c0d216076a9a89ed9c5cab78a",
+    "/usr/app/old_english_sandbox_after_oe_weak_tail_reduction.bin": "376e95ca52b0fb4ec35f3a4f3b31c51df9df8772652a5d4dc791d3263d37b3a4",
+    "/usr/app/old_english_sandbox_after_oe_j_loss_after_heavy.bin": "b14a167dcb48e3b4749403e2b127fb11c06016bd98b2052ce66223d3959b120d",
+    "/usr/app/old_english_sandbox_after_oe_final_geminate_simplification.bin": "20499300c2b84a6623546eb97430aeef13057faaaae456f0fbe95aff27ee6b8a",
+    "/usr/app/old_english_sandbox_after_oe_j_strengthening_after_front_diphthong.bin": "707ced299eff68ee697ebc792b2af666a82ef47d2592b335b0a8c1fa69a8979f",
+    "/usr/app/old_english_sandbox_after_oe_intervocalic_j_vocalization.bin": "04d625c5ef99833fb28c1ae12a986dc90ac32bf083054c90f45475b343b02430",
+    "/usr/app/old_english_sandbox_after_oe_unstressed_ei_contraction.bin": "21eb1931426f8364bc042b75361cda8c68fcd1f7515072cd787968e001d94a6b",
+    "/usr/app/old_english_sandbox_after_oe_weight_cleanup.bin": "6e8ecf958386f90989d49458459b6d282a911505c5a58548b05c64071b1716e8",
+    "/usr/app/old_english_sandbox_after_oe_h_loss.bin": "c6b5f582abd92fa8334c18c4dd4e246437eb18c8377f8ca5de641611cb1e6dc8",
+    "/usr/app/old_english_sandbox_after_oe_contraction.bin": "c99afdd58f247a47cbce9bdc42dd44c15eba172a666f59dccd22010911602361",
+    "/usr/app/old_english_sandbox_after_oe_r_metathesis.bin": "08d7cd7defd025cb7d0fd0b52984d807866aa3f51e96b1170a36422beabd1adc",
+    "/usr/app/old_english_sandbox_after_oe_epenthetic_vowel.bin": "61865c4e01625ea908b7813923600505f50f5907cf03df7034b7079932cb6f79",
+    "/usr/app/old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin": "c2c96038a0e6127481fa8b917cfdcb62f97d6a4c15de814f968c1bbbf16c7228",
+    "/usr/app/old_english_sandbox_after_oe_palatal_fricative_merger.bin": "0bf915da9a655f47f1f07d86ff22a62743064a8d227225b7dbc28cf55b980166",
+    "/usr/app/old_english_sandbox_after_oe_cj_cleanup.bin": "b26528086136db3323a885aad14cc383f95819aa2e45050d5aef410440cd4eb0",
+    "/usr/app/old_english_sandbox_after_oe_xs_merge.bin": "c6b13b1ecddbd38fc0ca0dd54f78df076d05acc0ddd61b935e9b06f886c77388",
+    "/usr/app/old_english_sandbox_after_old_english_orthography.bin": "a85cc773d8b5d3a0b689b0923111c578ef3e2fecf1a56815519f212bd143991c",
+    "/usr/app/old_english_sandbox_after_oe_ws_palatal_glide.bin": "62d64f578fe2c511684e25787a08ca60fa4286bd420f1262c62ff25ed33503df",
+    "/usr/app/old_english_sandbox_after_old_english_remove_stars.bin": "93485f5c0ff4f46302572865177fa9f9a21da3c95a5e7b94c97b30067c861d3d",
+    "/usr/app/old_english_sandbox_after_old_english_surface.bin": "0d73262b96b45d61e199c70caec32b7dc4539d09ca0cb3f49114d1d9f4e6ee3c",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs.tsv": "d60785700fde7579b09c11ec5c0afe5248722e4f5506d426da456fd14cf2b8c0",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv": "d2120039e72861573056f9aa015a28f9d85573d5b1e391cdd5fdabb60781849a",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc017_rust_input.tsv": "6fde3bf5318401feb8cb7e5d57f3b381639b3b9e24de2bf3fb99357614a58ac9",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc031_sc098.tsv": "d6c02720e6c2db7973e220b9b3fd5c64f7ef1270e8938160ee13ba8d4ef08d61",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc033.tsv": "4c1d72e74c287c49f9f4a6d09cffcb3eccc10aafcbb57245c77ba4eadcf87f28",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc033_hue.tsv": "82c618b5477081c3eb9889eba7cb6886dbaabafcff4f245d5371c75434b36386",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc034.tsv": "983d1d54b931c125932c4d8be68a915c583f4fd30ac99557ba1af2de3e39d930",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc056.tsv": "cb518bf3be8bc1a01d69565072428f3251743da03095448f9dc36cdeb160c982",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json": "3fa19f84361f74345f7983fe83c5ca2bf0cbf39ee31e3e08a8b0e1854b01b775",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc017_rust_input.json": "1ce5d1c00f1221bfdfb76c8a0add58aeea626ac95c52a0e2ba7081178f0b3e57",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc031_sc098.json": "cc895d7f23075de91a7505ec93b019db0e88ae358e28a1d256757158951d03c8",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc033.json": "3e807636a6b1223d314de0d4a9772b41899584a8dc1c649a5d4c61ac15a3186e",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc033_hue.json": "d199a4a3d1a9afcc06c837f1cd9f97fae05edea976133007daf2621d73ae90db",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc034.json": "d29d07330022401f3b0a4e0afebfc1c60d995536eb0968c83d2b36ed5058cd91",
+    "/usr/app/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc056.json": "6a560e752a50c8aa23b442aaeda31151025c1ce5eeda7728b4a30776c6742e6c",
+    "/usr/app/docs/sound_changes/cascade_baseline/approved_cell_migration.json": "d5dfea8b7ee5605ec987af86bf1aa2572b25a5a77f926efca40331f1ee123ff4",
+    "/usr/app/docs/sound_changes/cascade_baseline/approved_context_migration.json": "8de9b1bb1bf2abd971b86bbdd0bb354c7a00d7159d6c860b3f03150ad8e19b4e",
+    "/usr/app/docs/sound_changes/cascade_baseline/approved_hue_input_migration.json": "ea9dccd3402486a83fdbbdd48c99573d02ab0a8d8920da0138b39e86a306a076",
+    "/usr/app/docs/sound_changes/cascade_baseline/approved_rust_input_migration.json": "1b6a264aba1060511940dd0a3561766b413459f995f52873b6f9de8cdd17ed30",
+    "/usr/app/docs/sound_changes/cascade_baseline/approved_sc034_output_migration.json": "aa78435a74efec2a09f373b6e3884ac37d6555ce83c93594132899fb650666ef",
+    "/usr/app/docs/sound_changes/cascade_baseline/approved_input_migrations.tsv": "90e2da191f7ad115a99be4ad01c6370c0d5bf36db587da4d5a1dec0d1a6297b0",
+    "/usr/app/docs/sound_changes/registry/sc_registry.tsv": "baef3d1960a2da19826157590c2025094f19799a00300e8a5e35907ea429a110",
+    "/usr/app/docs/sound_changes/registry/chronology_edges.tsv": "3b44b2b858a368eb6a6a7dcc94143c6372a0ccd7beaef3494676bb3f44ac8d07",
+    "/usr/app/docs/sound_changes/registry/sc_inventory_notes.tsv": "80d4bf2eb403a7de93d33980f6ef5f3a51e24f9c3b155424310998ff3e36bb18"
+  },
+  "canonical_artifacts_unchanged": true,
+  "interpretation": "Bare inherited accusative ǭ is distinct from accepted anǭ and citation ōn. The general private admission control is parser-only, not an analogical sound law and not an adopted production repair. Full historical paradigm assays enter already-tokenized PGmc cells after EnglishProtoInput."
+}

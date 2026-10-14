@@ -1,0 +1,183 @@
+{
+  "identity": {
+    "selected_rows": 387,
+    "changed_ids": [],
+    "changed_intermediate_ids": [],
+    "variant_mismatch_ids": [
+      "1973",
+      "2013",
+      "2030",
+      "2162",
+      "2224",
+      "2240",
+      "2298",
+      "2300"
+    ],
+    "missing_output_ids": [],
+    "ambiguous_output_ids": [],
+    "elapsed_seconds": 118.34474847093225,
+    "canonical_artifacts_unchanged": true
+  },
+  "a-order-only": {
+    "selected_rows": 387,
+    "changed_ids": [
+      "2143",
+      "2185",
+      "2200",
+      "2300"
+    ],
+    "changed_intermediate_ids": [
+      "1942",
+      "1949",
+      "1958",
+      "1989",
+      "2052",
+      "2072",
+      "2073",
+      "2075",
+      "2104",
+      "2108",
+      "2114",
+      "2116",
+      "2120",
+      "2132",
+      "2136",
+      "2143",
+      "2154",
+      "2157",
+      "2165",
+      "2167",
+      "2176",
+      "2185",
+      "2187",
+      "2200",
+      "2201",
+      "2208",
+      "2261",
+      "2285",
+      "2300"
+    ],
+    "variant_mismatch_ids": [
+      "1973",
+      "2013",
+      "2030",
+      "2143",
+      "2162",
+      "2185",
+      "2200",
+      "2224",
+      "2240",
+      "2298"
+    ],
+    "missing_output_ids": [],
+    "ambiguous_output_ids": [],
+    "elapsed_seconds": 118.55358322104439,
+    "canonical_artifacts_unchanged": true
+  },
+  "b-conditioning-only": {
+    "selected_rows": 387,
+    "changed_ids": [],
+    "changed_intermediate_ids": [],
+    "variant_mismatch_ids": [
+      "1973",
+      "2013",
+      "2030",
+      "2162",
+      "2224",
+      "2240",
+      "2298",
+      "2300"
+    ],
+    "missing_output_ids": [],
+    "ambiguous_output_ids": [],
+    "elapsed_seconds": 116.78624163614586,
+    "canonical_artifacts_unchanged": true
+  },
+  "c-combined": {
+    "selected_rows": 387,
+    "changed_ids": [
+      "2143",
+      "2185",
+      "2200",
+      "2300"
+    ],
+    "changed_intermediate_ids": [
+      "1942",
+      "1949",
+      "1958",
+      "1989",
+      "2052",
+      "2072",
+      "2073",
+      "2075",
+      "2104",
+      "2108",
+      "2114",
+      "2116",
+      "2120",
+      "2132",
+      "2136",
+      "2143",
+      "2154",
+      "2157",
+      "2165",
+      "2167",
+      "2176",
+      "2185",
+      "2187",
+      "2200",
+      "2201",
+      "2208",
+      "2261",
+      "2285",
+      "2300"
+    ],
+    "variant_mismatch_ids": [
+      "1973",
+      "2013",
+      "2030",
+      "2143",
+      "2162",
+      "2185",
+      "2200",
+      "2224",
+      "2240",
+      "2298"
+    ],
+    "missing_output_ids": [],
+    "ambiguous_output_ids": [],
+    "elapsed_seconds": 117.59258922096342,
+    "canonical_artifacts_unchanged": true
+  },
+  "d-live-allophony": {
+    "selected_rows": 387,
+    "changed_ids": [
+      "2143",
+      "2185",
+      "2200",
+      "2300"
+    ],
+    "changed_intermediate_ids": [
+      "2143",
+      "2185",
+      "2200",
+      "2300"
+    ],
+    "variant_mismatch_ids": [
+      "1973",
+      "2013",
+      "2030",
+      "2143",
+      "2162",
+      "2185",
+      "2200",
+      "2224",
+      "2240",
+      "2298"
+    ],
+    "missing_output_ids": [],
+    "ambiguous_output_ids": [],
+    "elapsed_seconds": 118.71499651297927,
+    "canonical_artifacts_unchanged": true
+  }
+}

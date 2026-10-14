@@ -1,0 +1,54 @@
+{
+  "scope": "Final investigation reading accountability; supplements, does not overwrite the initial RT access receipt",
+  "RingeTaylor2014": {
+    "sha256": "278f94f6076a31278ecca75d8d0429f0822728e5efe0ec3011186a694cf8d6f2",
+    "original_pdf_sheets": 629,
+    "original_pdf_extraction_readings": ["15-16", "27-34", "57-60", "267", "284-289", "298-300", "377-379"],
+    "original_images_inspected": [15, 32],
+    "footnotes_and_surrounding_argument": true,
+    "holding_gap_resolved_by_supplied_original": true
+  },
+  "Fulk2018": {
+    "read_printed_pages": ["55-57", "82-86", "154-156"],
+    "original_images_inspected": [56, 57, 82, 155],
+    "p57_note1_direct_rt_citation_verified": true
+  },
+  "Ringe2017": {
+    "read_printed_pages": ["171-173", "241-244"],
+    "original_images_inspected": [172, 242, 243]
+  },
+  "Stiles2012": {
+    "complete_chapter_argument_and_notes_read": true,
+    "load_bearing_printed_pages": ["44-48", "49-60"],
+    "original_images_inspected": [45]
+  },
+  "Orel2003": {
+    "read_printed_pages": [118, 249, 347, 474],
+    "original_images_inspected_for_this_investigation": [474]
+  },
+  "Kroonen2013": {
+    "read_printed_pages": ["383", "493", "598-599"],
+    "original_images_inspected": [598, 599]
+  },
+  "Luick": {
+    "holding": "Part I, held 1921 printing of conventionally cited 1914-40 work",
+    "relevant_printed_pages": "105-106, sections77-79, especially78",
+    "literal_sections105_106": "Printed120-121, separately read; not the often-intended lowering passage",
+    "original_images_inspected": [105, 106]
+  },
+  "Campbell1959": {
+    "read_printed_pages": "43, section115, including nosu note",
+    "verification": "text-only; no original page image available for certification"
+  },
+  "Bulbring1902": {
+    "read_printed_pages": "45-46, section116",
+    "verification": "text-only; no original page image available for certification"
+  },
+  "external_response_search": {
+    "status": "bounded search completed, not an absence proof",
+    "verified_specific_response": "Fulk2018 p57 note1 cites RT2014 pp27-34, but does not expressly reject their wool account",
+    "not_counted": "General reviews and unverified AI search conclusions",
+    "unverified_public_lead": "10.1163/22125892-00301001; Brill access403; no original wool-specific passage examined"
+  },
+  "production_scientific_source_changed": false
+}
