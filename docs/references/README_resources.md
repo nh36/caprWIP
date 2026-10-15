@@ -156,6 +156,74 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
   originals, including the close-vowel signs, quantities, tables and
   footnotes. This verifies the holding, not adoption of Hill's hypothesis.
   The original PDF is retained locally under the usual ignored-PDF policy.
+  The copy in the `A-Ablaut` collection (`nowele.70.2.02hil.pdf`) is
+  byte-identical to this holding and was not re-ingested.
+
+### SC015 *i > e* packet (A-Ablaut collection)
+
+Six sources collected for the SC015 (`PNWGmcILowering`) investigation.
+Five are born-digital and extracted with `pdftotext -layout`; **one —
+Jasanoff 1973 — is a JSTOR scan whose embedded layer destroys macrons**
+(`habOn`, `hab&t` for *habēn*, *habēt*) and was sent through the
+established Vision PDF runner instead, hence its `.vision.txt` suffix.
+Every text opens with a header recording the PDF SHA256, the extraction
+method, each deterministic glyph repair with its count, and the
+sheet-to-printed-folio map; `=== page NNN ===` markers carry **printed
+folios**. Two publisher fonts emit the reconstruction asterisk as a
+mathematical operator (Howell U+2217, Kostakis U+22C6); these are mapped
+to ASCII `*` for searchability, and the mapping is recorded in each header.
+Unconfirmed edge folios are the chapter/article opening pages only.
+Ingestion does not adjudicate any author's hypothesis.
+
+- `cercignani_2022_distance_assimilation.txt` / `.pdf`
+  Cercignani, "On the Germanic and Old High German distance assimilation
+  changes", *Linguistik online* 116, 4/22 (2022), pp. 41–59
+  (`Cercignani2022`, DOI 10.13092/lo.116.8889). 19 sheets, folio = sheet + 40;
+  18/19 edge-confirmed. Nine Symbol-font list dashes (U+F02D) are restored
+  as U+2212. Restates the 1979/1980 five-phoneme position; not an independent
+  vote for it.
+
+- `howell_2024_gothic_breaking.txt` / `.pdf`
+  Howell, "What do we really know about Gothic breaking? On the problem of
+  consonantally conditioned vowel mutations in Germanic", ch. 4 of Klein &
+  Ratkus (eds), *Studies in Gothic* (OUP, 2024), pp. 75–91 (`Howell2024`,
+  DOI 10.1093/oso/9780198896692.003.0004). 17 sheets, folio = sheet + 74;
+  16/17 edge-confirmed. Access watermarks removed. Phonetic account of
+  rhotic- and glottal-conditioned lowering across Germanic (pp. 81–82, 85–88).
+
+- `jasanoff_1973_germanic_third_weak_class.vision.txt` / `.pdf`
+  Jasanoff, "The Germanic Third Weak Class", *Language* 49.4 (1973),
+  pp. 850–870 (`Jasanoff1973`, DOI 10.2307/412065). Sheet 1 is the JSTOR
+  cover; folio = sheet + 848 for sheets 2–22; 21/21 edge-confirmed. Vision
+  text, NFC; þ is occasionally read as `b`/`p`. The *learn* passages (p. 865
+  *liznaiþ(i)*; p. 868 "Upper German *lirnên* (for phonologically regular
+  *lernên*) ... a lost 3sg. *lizniþ*") were checked against page renders.
+
+- `kostakis_2025_coda_nasals.txt` / `.pdf`
+  Kostakis, "Coda nasals in early Germanic languages", *JCGL* 28:6 (2025),
+  32 pp. (`Kostakis2025`, DOI 10.1007/s10828-025-09166-0; Open Access).
+  Article-number pagination: cite "28:6, p. N"; article page = sheet;
+  32/32 confirmed via "Page N of 32". fi/fl ligatures decomposed.
+
+- `tarsi_laker_2026_know_teach_learn.txt` / `.pdf`
+  Tarsi & Laker, "'to know', 'to teach', and 'to learn' in Germanic",
+  *Journal of Germanic Linguistics* 38 (2026), pp. 40–58 (`TarsiLaker2026`,
+  DOI 10.1017/S1470542726100178). 19 sheets, folio = sheet + 39; 19/19
+  edge-confirmed. Two math-font `+` signs emitted as U+0001 restored from
+  page renders (p. 43 n. 6, p. 50). CUP footers removed. Treats PGmc
+  *\*lais-/liz-* and the *learn* verb's morphology.
+
+- `scheungraber_2010_nasalpraesentien.txt` / `.pdf`
+  Scheungraber, *Die Entwicklung der urindogermanischen Nasalpräsentien im
+  Germanischen*, Magisterarbeit LMU München, 2010; Mubahis Bd. 2
+  (`Scheungraber2010`). 247 sheets: sheet 1 unnumbered series cover, sheet 2
+  = p. 1 (title), folio = sheet − 1; 245/246 edge-confirmed. Five PUA/control
+  code points (`i̯`, `ā́`, `ī`, two list bullets) repaired from context and
+  listed in the header. §2.2.2.4 (p. 74) treats WGmc *\*liznō/ē-*. A
+  Magisterarbeit (supervisor E. Hill), cited as such.
+
+Not in the collection and still not held directly: **Hock 1973** (on the
+strong-verb participles and *a*-umlaut), cited by Hill (2017: 150, 154–155) and discussed in the earlier SC015 report.
 
 - `luehr_article.txt` / `.pdf`
   Lühr, "Zur Semantifizierung von Zahlwörtern: Das Wort 'Tausend' —

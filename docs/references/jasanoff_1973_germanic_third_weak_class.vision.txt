@@ -1,0 +1,1133 @@
+Jay H. Jasanoff, "The Germanic Third Weak Class".
+Language 49.4 (December 1973), pp. 850-870. JSTOR stable URL
+http://www.jstor.org/stable/412065. DOI 10.2307/412065. Citation key: Jasanoff1973.
+PDF SHA256: e2895c8774b90d79332397857a0f29140509de57e7d568a9411e91130c7a477b
+
+SOURCE AND METHOD
+-----------------
+The local, gitignored PDF is a JSTOR scan with an embedded OCR layer. That
+layer destroys exactly the content-bearing characters: it renders OHG
+habēn/habēta as "habOn", "habgta", "hab&t" and contains 0 macrons
+across 22 sheets. It was therefore rejected as a reference text.
+Google Cloud Vision asyncBatchAnnotateFiles, DOCUMENT_TEXT_DETECTION, was
+run on the original PDF through the established Code/Vision/ocr.py runner
+with its existing staging-bucket configuration (language hint en). The
+Vision text contains 241 macrons. Text is NFC-normalized. The raw
+per-page JSON is retained locally alongside the runner, not committed.
+44 JSTOR download/terms footer lines are removed. Sheet 1 is the JSTOR
+cover sheet (retained, unnumbered).
+
+OCR CAUTIONS
+------------
+Jasanoff marks OHG long vowels with the circumflex (lirnên, lernên, habên);
+Vision preserves this. Known residual misreads seen in spot checks: thorn is
+occasionally read as "b" or "p" (e.g. "*libib" for *libiþ, p. 868), the
+non-syllabic glide "i̯" and some sub-/superscripts are dropped or garbled.
+Page 868 (the *learn* passage: "a form without a-umlaut like Upper German
+lirnên (for phonologically regular lernên) can as easily be attributed to a
+lost 3sg. lizniþ ... as to a questionable 1sg. *lizn(i)jō") and p. 865
+(*liznaiþ(i)) were checked against 130 dpi page renders. Any other
+load-bearing glyph must be checked against the retained PDF page image.
+
+PAGE NUMBERING
+--------------
+Printed pages 850-870; sheets 2-22. Printed folio = PDF sheet + 848.
+Folios self-confirmed at page edges: 21/21.
+Page markers below denote PRINTED folios.
+
+=== unnumbered sheet 1 ===
+
+Linguistic Society of America
+The Germanic Third Weak Class
+Author(s): Jay H. Jasanoff
+Source: Language, Vol. 49, No. 4 (Dec., 1973), pp. 850-870
+Published by: Linguistic Society of America
+Stable URL: http://www.jstor.org/stable/412065
+Accessed: 16-03-2016 05:17 UTC
+Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at http://www.jstor.org/page/
+info/about/policies/terms.jsp
+JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range of content
+in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new forms of scholarship.
+For more information about JSTOR, please contact support@jstor.org.
+Linguistic Society of America is collaborating with JSTOR to digitize, preserve and extend access to Language.
+STOR
+http://www.jstor.org
+
+=== page 850 ===
+
+THE GERMANIC THIRD WEAK CLASS
+JAY H. JASANOFF
+Harvard University
+Germanic verbs of the 3rd weak class form presents characterized by an
+alternation between predesinential *ai (e.g. Go. 3sg. habaiþ) and *a (e.g. 1pl.
+habam). These verbs are usually compared with the ‘ē-verbs' of Italic and Balto-
+Slavic, but no IE present built on the stative suffix *-ē- will account phonologi-
+cally for the form of the suffix in Germanic. Instead, it can be shown that the
+characteristic Germanic paradigm results from the 'activization' of an older
+middle paradigm in which a 3sg. in *-ai (< IE *-oi; cf. Skt. duhé 'milks') was
+further suffixed by the productive active ending *-þi (< IE *-ti).
+1. The inflection of the third class of weak verbs (exemplified by the verb
+'to have': Gothic haban, Old Norse hafa,¹ Old High German habên, Old Saxon
+hebbian, Old English habban) presents one of the classic problems in the historical
+morphology of Germanic. Not only do the verbs of this class show peculiarities in
+all the older Germanic languages, but they differ remarkably in their conjugation
+from one language to another, so that it is not at all obvious how the Common
+Germanic paradigm should be reconstructed. Given this diversity of forms, we
+will do well to begin with a short review of the morphological facts themselves.
+The situation is simplest in Old High German. The entire conjugation of
+habên is athematic (to the extent that this term still has any meaning), and is
+based on the single stem habê-: 1sg. habêm, 3sg. habêt, 3pl. habênt, impv. 2sg.
+habe, opt. 3sg. habe, habêe, pret. 1sg. habêta, pres. ptc. habênti, past ptc. gihabêt.
+Except for the ē of the stem, this paradigm is completely parallel to that of a
+2nd class weak verb like salbôn ‘anoint' (1sg. salbôm, 3sg. salbôt, like habêm,
+habêt etc.) The resemblance between the two classes extends to at least one set
+of forms which cannot be old. These are the longer optatives 3sg. habée, salbôe,
+2sg. habêês, salbôês etc., which seem to have been created analogically. The
+genesis of this formation, which will not concern us further in this paper, is
+discussed by Cowgill (1959:11–12).
+The OHG pattern is not found in any other Germanic language. In Gothic the
+corresponding verb haban exhibits a systematic opposition between stem forms
+habai (phonetically probably [habɛ--]) and haba-. To the habai- group belong
+2sg. habais, 3sg. habaiþ, 2pl. habaib, the corresponding imperatives (2sg. habai
+etc.), the weak preterit 1-3sg. habaida etc., and the past ptc. habaips. The rest
+of the paradigm is indistinguishable from that of a normal strong verb: 1sg. haba,
+1pl. habam, 3pl. haband (with impv. 3pl. habandau), opt. 1sg. habau, 3sg. habai,
+passive 1-3sg. habada etc., pres. ptc. habands. The Gothic alternation of stems
+habai- and haba- is not completely isolated. It recurs almost exactly in Old Norse,
+where a typical 3rd class weak verb, vaka 'wake', is conjugated in the pres.
+1 Here and below, 'Old Norse' will be understood to mean 'Old Icelandic' unless other-
+wise specified.
+This paper has benefited greatly from extended discussions with Calvert Watkins, Warren
+Cowgill, Patrick Hollifield, and F. Roger Higgins. Needless to say, responsibility for errors
+is entirely my own.
+850
+
+=== page 851 ===
+
+THE GERMANIC THIRD WEAK CLASS
+==
+851
+indic. as 1sg. vaki, 2-3sg. vakir, 1pl. vokum, 2pl. vakið, 3pl. vaka. Except for
+1sg. vaki, each term is directly equatable with its Gothic counterpart; and vaki
+itself is almost certainly an analogical form, created to conform to the otherwise
+regular pattern 1sg. 3sg. minus -r (cf. 3sg. grefr 'digs', 1sg. gref; 3sg. heyrir
+'hears', 1sg. heyri). In the other moods and tenses the picture is the same, Old
+Norse in general showing forms in -i- < older *-ē- < *-ai- where Gothic has
+-ai- (e.g. impv. sg. vaki, syncopated pret. vakða), and forms in -a- where Gothic
+has a (e.g. inf. vaka, pres. ptc. vakandi). This inflection is documented in North
+Germanic from the 7th century; cf. the archaic runic compound wita(n)daha-
+laiban 'protector of the bread', semantically parallel to OE hläford 'bread-guard,
+lord'. (For ON hafa, segja ‘say', and þegja ‘be silent', see §3 below).
+The greatest complexity is found in Old Saxon and Old English. In both lan-
+guages, the 3rd weak class is a mere vestige of a category, the great majority of
+originally 3rd class verbs having been absorbed into the productive 2nd, or ō-class.
+Old Saxon has carried this development to an extreme, and only two verbs,
+hebbian ‘have' and seggian ‘say', are usually considered to represent the unmixed
+type. Their inflection is characterized by an alternation between a stem in -e-
+(or -a-), from older *-ē- < *-ai-, and a stem in -ja-. The forms in -e- correspond
+in distribution to the -ai- forms of Gothic (e.g. 2sg. habes, habas, 3sg. habed, habad)
+with the significant exception of the short preterit 1-3sg. habda and the matching
+ptc. gihabd, which have the appearance of archaisms. The remaining forms, cor-
+responding to those with the simple thematic vowel in Gothic, show general
+agreement with the 1st weak class: 1sg. hebbiu, pl. hebbiad, opt. 1sg. hebbie, pres.
+ptc. *hebbiandi (cf. libbiandi 'living'), inf. hebbian; to these must be added the
+umlauted forms habbiu, habbiad etc., which occur with considerable frequency
+in the Monacensis manuscript of the Heliand. The situation is very similar in Old
+English. Habban, secgan ‘say', and one or two others follow a paradigm essen-
+tially identical to that of Old Saxon; the relevant West Saxon forms of habban
+(the absence of umlaut is no doubt secondary) are 1sg. hæbbe, 2sg. hæfst, 3sg.
+hæfþ, pl. habbap, opt. 1sg. hæbbe, pres. ptc. hæbbende, inf. habban, pret. 1-3sg.
+hæfde, past ptc. (3e-)hæfd. In a number of other verbs, however, Old English
+has introduced a regularized paradigm (type Anglian lifzan 'live', 1sg. lifze)
+which has no counterpart in Old Saxon. This type appears to have been created
+analogically on the basis of the inherited 2sg. and 3sg. forms with *ē stem vocalism
+(earlier *ai). It is itself subject to replacement by the productive 2nd class (cf.
+Cowgill 1959:13–14).
+Although it displays an extraordinary degree of paradigmatic diversity in the
+older Germanic languages, the 3rd class is not a late category. Its archaic charac-
+ter can be seen from the fact that a significant number of 3rd class verbs corre-
+spond outside Germanic to formations built on a late IE deverbative suffix
+*-ē-: typical examples are OHG dagên ‘be silent', Lat. tacēre; Go. witan ‘watch',
+Lat. vidĕre 'see', OCS viděti, Lith. pavydėti ‘envy' (both < *u̟īdē-, with the Balto-
+Slavic lengthened zero-grade discussed by Kuryłowicz 1956:291–3); OHG
+dolên 'suffer', Lith. tyléti 'be silent'; OHG habên, Lat. habēre (from parallel roots
+OS libbian 'live' already represents a significant departure from the pattern of hebbian
+and seggian. It is discussed in §4, below.
+
+=== page 852 ===
+
+852
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+*kap- and *ghabh-). This suffix, in which a 'stative' value is usually clearly
+recognizable, has enjoyed considerable productivity in a central group of IE
+languages comprising Germanic, Italic, Balto-Slavic, and Greek. It is very prob-
+ably related to a homonymous suffix *-ē-, equally well-established in IE but
+somewhat less prominent in Germanic, which serves to derive stative and in-
+choative verbs from nouns and adjectives. Denominative 3rd class verbs are
+synchronically important only in OHG, but their IE pedigree is assured by the
+important word equation OHG rotên 'turn red', Lith. rudéti ‘rust', Russian
+Church Slavic roděti sę ‘blush', OIr ·ruidi ‘blush’, Lat. rubēre ‘be red', all pre-
+supposing a verbal stem *rudh-ē- < adj. *rudh-ro- (cf. Watkins 1972). It is
+hardly surprising that scholars have been virtually unanimous in connecting
+both Germanic types with the ‘ē-verbs' of other IE traditions. But while the fact
+of the relationship has been universally admitted, there has been very little
+agreement on how the morphological details of the Germanic situation are to
+be explained. Accordingly, it will not be amiss to survey a few of the IE and
+Pre-Germanic formations most commonly assumed to have played a role in the
+prehistory of the 3rd class.
+ATHEMATIC PRESENTS IN *-ē-. The OHG inflection habêm, -ês, -êt etc. suggests
+the possibility of an inherited athematic present in *-ē-mi, *-ē-si, *-ē-ti. Such a
+formation is actually found in Hittite verbs of the denominative type (e.g.
+dannattet 'became empty', dannattaš 'empty'; cf. Watkins 1972) and may lie at
+the root of a Lat. 3pl. like lucent ‘shine' < *-ēnti if this is not simply analogical.
+But while perfectly acceptable from an IE standpoint, the hypothesis of an
+athematic ē-conjugation is not easy to reconcile with the Germanic forms. The
+view that OHG habêt continues a Common Germanic *habēþ(i)³ has most re-
+cently been argued, and with considerable resourcefulness, by Polomé (1967:83-
+92), who is quite correct in noting that there are no insurmountable obstacles to
+his theory as far as West Germanic is concerned. On the other hand, his iden-
+tification of *habēþ(i) as the source of Go. habaib seems wrong, and leaves the
+simple thematic forms haba, habam, haband unexplained.* Perhaps the most telling
+objection to his view is the state of affairs in Old Saxon: Why, if Old Saxon in-
+herited 1sg. *haben < *-ēm, did it replace this form by the wholly irregular
+hebbiu while retaining—if not actually creating-the parallel 1sg. salbon in the
+second class? It seems more likely that 1sg. *haben never existed in Old Saxon;
+and that the athematic (and thoroughly 'regular') appearance of OHG habêm,
+3 Here and below, I have somewhat arbitrarily chosen to ignore the effects of Verner's
+Law on the Common Germanic verbal endings of the 2nd and 3rd persons, singular and
+plural. In the reconstructions that follow, these endings will appear with a uniformly voice-
+less spirant; the actual situation, of course, must have been considerably more complicated.
+* Even assuming that haband is the regular reflex of CGmc. *habēnþ(i)—and this is by no
+means certain-I find it hard to understand why this 3pl. form should have served as the
+starting point for a new and anomalous paradigm, when in the parallel 2nd class the regular
+3pl. *salband < *-ōnþ(i) has simply been remade to salbond. There seems to be little to rec-
+ommend Polomé's suggestion (p. 90) that 1sg. haba derives phonologically from *habēm (i).
+In fact, the Latin inscriptional forms Lubaini (= Go. lubains ‘hope') and Vanaenia
+(= Go. wanains ‘lack') argue rather forcefully that the ai of Go. habaiþ etc. is an etymo-
+logical diphthong (for discussion see Krahe 1961:37-9).
+
+=== page 853 ===
+
+THE GERMANIC THIRD WEAK CLASS
+853
+====
+-ês, -êt is an innovation based on the inherited forms where ē, of whatever origin,
+is old. But if this is so, then the assumption of an athematic conjugation in
+*-ē- is superfluous: there are no forms in any Germanic language which require it.
+THEMATIC PRESENTS IN *-ēį/-. The equation 3sg. Go. habaiþ == OHG habêt
+OS habed (-ad) points most naturally to a Common Germanic 3sg. *habaiþ(i),
+from which the development of *habēþ in North and West Germanic would be
+entirely regular. Many scholars, before and after Brugmann, have in turn sought
+to derive *habaiþ(i) from *kapēžeti, an ē-present extended by the productive
+thematic suffix *-/-. While not necessarily an IE formation, presents of this
+type are common in Balto-Slavic, where they are found only with denominatives,
+e.g. Lith. rudéti, rudéja; Russian Church Slavic roděti sę, rodějeto sę (but Lith.
+smirdėti, smirdi ‘stink', OCS smróděti, smródité). Even though no other examples
+are known for the putative development *-ēie-> *-ēji- > *-ēi- > *-ai- in Ger-
+manic, there are no very serious phonological obstacles to explaining the ai-forms
+in this way. The real difficulty lies in the cases where the thematic vowel is IE
+*o, i.e. in the 1sg., 1pl, and 3pl. Neither Go. haba, -am, -and nor OS hebbiu, -ad
+can represent the normal phonological continuation of a pre-Germanic *habējō,
+*habējamĕ(s), *habējanþi; thus, while it is not impossible that a suffix *-ēṛ*-
+may have played some role in the creation of the 3rd weak class, this suffix alone
+will not account for the attested paradigm in any Germanic language. One is
+inevitably led to speculate on the possibility of admixture with one or more other
+inflectional types, but explanations of this kind have proved difficult to motivate.
+ο
+PRESENTS IN *ē(i)-/-ī-. Certain scholars, most recently and notably Schmid
+(1963:94–7), have taken as original the alternation of 1sg. OS hebbiu, OE hæbbe
+with 3sg. OS habed, OE hæfþ, comparing these forms with Lith. 1sg. smirdžiu,
+inf. smirdéti; Wagner (1950:50-54) would add Hitt. 3sg. halzai, 3pl. halziyanzi
+'call'. Schmid's reconstruction assumes an ablauting suffix *-ēi- with zero-grade
+*--, both optionally followed by the thematic vowel and so distributed as to
+yield a paradigm 1sg. *kapįō, 2sg. *kapēįesi, 3sg. *kapēžeti, 1pl. *kapiome, 2pl.
+*kapēžete, 3pl. *kapįonti. In IE terms this is an unlikely inflection at best, and
+the extra-Germanic evidence adduced in its support will not stand scrutiny.
+As Kuryłowicz (1964:79–84) has now shown, the Balto-Slavic 'semi-thematic'
+i-presents ultimately reflect a transformation of the IE perfect, while the Hittite
+forms are in all probability an Anatolian innovation (cf. Jasanoff 1968:19-55).
+5
+5 I am indebted to Warren Cowgill for pointing out several difficulties with Kuryłowicz'
+explanation as presented in the work cited. In particular, there seem to be serious phono-
+logical objections to deriving the theme vowel of the Baltic forms from an i-diphthong
+shortened in final position; Latvian and Old Prussian evidence points rather to Common
+Baltic short i. In my opinion, this i has been analogically generalized from an athematic
+3pl. ending *-int < *-ņt or *-ir < *-r, but a detailed presentation of the arguments which
+support this conclusion must be reserved for a separate study. For present purposes, it is
+enough to say that Kuryłowicz' theory, while needing some revision in detail, is substan-
+tially correct in explaining the Balto-Slavic ž-verbs as the reflex of an athematic formation
+built directly on the root. Whether this formation should be thought of as identical to the
+IE perfect (rather than, e.g., the athematic middle) is an important and still unresolved
+question; it does not, however, affect the interpretation of the Germanic forms in any im-
+mediate way.
+
+=== page 854 ===
+
+854
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+or
+Even on a-priori grounds, there are good reasons for regarding the Old Saxon
+and Old English forms in *-ja- as secondary. Old Saxon and Old English are
+precisely the languages in which the 3rd class, as a moribund category, is most
+open to influences from the other weak types; note such borrowings from the 2nd
+class as OE 2sg. hafast, 3sg. hafaþ, OS 2sg. libos, 3sg. libod (cf. libbian 'live'),
+forms like OE inf. lifzan <*libaijan, pl. lif3ab < *libaijanb etc., ultimately
+created on the model of the 1st (nerian) class. The genesis of the characteristic
+Northern West Germanic paradigm 1sg. *habjō, 2sg. *habais, 3sg. *habaiþ, pl.
+*habjan is a problem that will concern us at greater length in §3; for the moment
+it is enough to observe that neither internal evidence from Germanic nor com-
+parative data from any other IE language suggests that this type is anything but
+the late creation of one specific dialect area (cf. the conclusion reached on other
+grounds by Polomé, 85).
+It emerges, then, that all three major West Germanic languages have innovated
+significantly in their treatment of the 3rd class. We can now assert that the Com-
+mon Germanic paradigm is essentially preserved in Gothic and Old Norse, and is
+to be reconstructed in the present as 1sg. *habō, 2sg. *habais(i), 3sg. *habaiþ(i),
+1pl. *habamě(s), 2pl. *habaiþ(e), 3pl. *habanþ(i). The mere agreement of Gothic
+and Old Norse, as against West Germanic, in showing this inflection, is strong
+prima-facie evidence for its Common Germanic character. But as a matter of
+fact and the importance of this seems not to have been properly appreciated
+before West Germanic itself directly attests reflexes of at least one diag-
+nostic member of the Gothic-Norse paradigm, the 1sg. *habō. The regular 1sg.
+of habban in the Northumbrian dialect of Old English is hafo (-u), a form which
+notably contrasts with West Saxon hæbbe. Hafo is matched by sæ30 (: WS
+secge); the usual pattern in the Northumbrian Lindisfarne Gospels is 1sg. hafo
+(sæ30), 2sg. hæfes (sæzes), 3sg. hæfeþ (sæzeþ), pl. habbaþ (sæcgaþ). These forms
+have been explained as due to analogy with the normal strong paradigm
+(e.g. by Flasdieck, 23), but this is most unlikely in view of the frequency with
+which Northumbrian maintains the geminated/ungeminated alternation in
+regular ja-presents. Further evidence that hafo and sæ30 are archaisms comes
+from Old High German, where Tatian (scribe y) preserves the completely iso-
+lated 1sg. forms habu (2X), sagu (1×) beside normal haben, sagen < habêm,
+sagêm. These are not, as has sometimes been asserted, back formations froms
+the problematic 2sg. hebis, segis, 3sg. hebit, segit, which do not occur in Tatian.
+Habu and sagu are found embedded in the normal ê-paradigm in two interesting
+contexts:
+87.5 Antuurtanti daz uib inti quad: ni habu gomman. Tho quad iru der heilant: uuola
+quadi thaz thu ni habes gomman.
+'Respondit mulier et dixit: non habeo virum. Dicit ei Jhesus: bene dixisti, quia
+non habeo virum.'
+88.10 Oba ih giuuizscaf sagu (corr. 5: sagen) uon mir min giuuizscaf nist uuar. Ander
+ist der dar giuuizscaf saget uon mir
+'Si ergo testimonium perhibeo de me, testimonium meum non est verum. Alius
+est qui testimonium perhibet de me
+,
+6 Cf. further 1sg. liofo (Lindisfarne), lifo (Rushworth II). Here and elsewhere, Old Eng-
+lish forms are quoted after Flasdieck 1935.
+
+=== page 855 ===
+
+THE GERMANIC THIRD WEAK CLASS
+855
+The pattern habu, habes, habet (sagu, sages, saget) which emerges from these
+passages accords perfectly with Northumbrian hafo, hæfes, hæfeþ and Go. haba,
+habais, habaib. It is hard to escape the conclusion that this inflection is old."
+The distribution of forms in -a- and -ai- in the Gothic (and Common Ger-
+manic) 3rd class paradigm is not easy to motivate historically. A recent attempt
+to go beyond vacuous 'mixture' theories is that of Bennett (1962:136–41),
+who proposes to derive all the principal Gothic forms from a single earlier type
+in *-- 1sg. *kapǝi̟ō, 2sg. *kapǝiesi, 3sg. *kapǝjeti > CGmc. *habō, *habais(i),
+*habaib(i) > Go. haba, habais, habaib. Bennett considers *ǝ the zero grade of the
+suffix *-ē- (i.e. *-e21-); his rules call for the loss of antevocalic * except before
+*i < *e, where *ǝi > a. This is not a convincing reconstruction. The suffix *-ē-
+is notable for not showing a clear zero grade in any other IE language. Besides
+being completely ad hoc, Bennett's rules assume the retention of * as a separate
+vowel until well into the Germanic period-an assumption which other evidence,
+such as the form of the word 'daughter' (Go. dauhtar etc. < IE *dhug(h)ǝter-),
+speaks rather strongly against. For us the main interest of Bennett's theory lies
+not in the details of his reconstruction, but rather in his explicit recognition that
+the Germanic paradigm *habo, *habais(i) etc. CANNOT be explained on the basis
+of an inherited present in *-ē- or *-ēį(/)-.
+There should be nothing too surprising in this result, for there is very little
+evidence that the deverbative suffix *-ē- played a role in the formation of an IE
+present. In Greek the main older function of the suffix is to provide aorists, de-
+noting entry into a state, to otherwise characterized presents-ekhárēn to
+kharō 'rejoice', ekáēn to karō ‘burn', emánēn (post-Hom.) to marnomai ‘rage'.
+This is the usage from which the classical aorist passive in -the- develops (cf.
+Chantraine 1925:105, and Prévot 1935:86–100). Particularly in view of its
+expanding role in the formation of the future (skhésō < ékhō ‘have', pithésō <
+perthō ‘persuade') and perfect (nenémēka < némō ‘distribute', meménēka < ménō
+'wait'), the exclusion of -ē- from the present system is remarkable. This aspect
+of the Greek situation recalls the state of affairs in Baltic and Slavic, where the
+suffix *-ē- supplies preterits (aorists) and infinitives to ‘stative' verbs whose pres-
+ents typically continue a formation akin to the IE perfect. Parallel to Gk. aor.
+emánēn, pres. maínomai, Lithuanian has inf. minéti ‘remember', pret. 3sg.
+minėjo, but pres. 3sg. mini < pf. 3sg. *mone-i; the matching OCS forms are inf.
+mÚněti, aor. 3sg. múně, pres. 3sg. mənitʊ < *mone-i + 3sg. pronoun to (cf. Kury-
+łowicz 1964:81-3, Watkins 1969:222-5). Only Latin, with ē-presents like habeō
+'have', maneō ‘remain', taceō ‘be silent' etc. departs significantly from the Greek
+and Balto-Slavic pattern. It is far from clear that this situation is old. The Latin
+2nd conjugation is notoriously a mixed category, comprising in addition to the
+habeō type both denominal formations (e.g. albeō ‘be white', seneō, be old',
+rubeō ‘be red') and iterative-causatives in *-eie/。- (e.g. moneō ‘warn’, посеб
+'harm', doceō 'teach'). In all probability the ē-inflection of deverbal statives in the
+present tense is an innovation of Latin; a stative present like habeō follows the
+model of denominal rubeō (and/or causative moneō, where -ē- < *-eie-) in
+7 The later forms habo and sago (Notker etc.) do not seem to belong here. They can easily
+be motivated analogically, and are best omitted from the present discussion.
+
+=== page 856 ===
+
+856
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+precisely the same way that the dialectal Lith. pres. 3sg. minėja (for mini <
+*mone-i) follows that of denominal 3sg. rudéja ‘rubet'.
+These facts bear importantly on the problem of the 3rd weak class. We have
+seen that while the stems *habē-, *witē-, *munē- (< *kap-ē-, *uid-ē-, *m¸n-ē-)
+may be old in Germanic, it is difficult to interpret them as directly underlying
+the corresponding 3sg. presents *habaiþ(i), *witaiþ(i), *munaiþ(i). The con-
+clusion suggested is that in the oldest Germanic, as in the oldest Greek and
+Balto-Slavic, the stative suffix *-ē- was restricted to one or more non-present
+functions. Such a function might well have been that of aorist, but the exact
+original value of the e-extended stem forms is of no special importance to the
+present discussion. My main assumption will simply be this: at some time in the
+pre-history of Germanic, a verb like 'have' was characterized by an opposition
+between a stem *habē-, serving in a non-present function, and an independently
+formed second stem, unsuffixed by *-ē- and supplying the present. The origin
+of the historical -ai-/-a- present may therefore reasonably be sought in some
+semantically and formally appropriate IE category which, like the Greek in-
+trans. pres. middle in *-**- (maínomai) and the Balto-Slavic perfect (mini,
+mɩnit), has come to be secondarily associated with the extra-present formation
+in *-ē- (cf. emánēn, minėjo, môně). Such a category can indeed be found in
+Germanic, as I shall attempt to demonstrate in the following discussion.
+2. The Gothic verb hahan 'hang' (tr.) agrees with its cognates in the other
+old Gmc. languages (OHG hâhan, OE hōn etc.) in belonging to the 7th strong
+(reduplicating) class. In meaning, hahan contrasts with the partly homonymous
+3rd class weak verb hahan ‘hang' (intr.); the semantic relation between the two
+is the same as that which Greek expresses by an opposition of voice (krémnēmi,
+kremánnumi vs. krémamai) and Latin by the presence vs. absence of the suffix
+*-ē- (pendō vs. pendeō). The functional opposition between strong hahan and
+weak hahan, which recurs exactly in OHG hâhan vs. hangên, gives the appear-
+ance of an archaism; note that the later languages typically utilize more ‘modern'
+devices to express the same contrast-e.g. earlier New High German, which
+opposes hängen (tr., < iterative-causative *hangjan) to hangen (intr.) The Com-
+mon Germanic 3rd class weak verb *hangai-/*hanga- ‘hang' (intr.), 3sg.
+*hangaib(i), is not etymologically isolated. It is clearly to be connected with the
+Sanskrit thematic deponent śánkate ‘hesitates, doubts', a verb first directly at-
+tested only in the Brahmanas, but presupposed by the deverbative Rigvedic
+hapax sankú- ‘hanging'. Šánkate in turn is related to Lat. cunctor, -ārī ‘hesitate”,
+frequentative to a lost deponent most naturally to be restored as *concor, -ī.
+Hittite gangahhi ‘I hang' (tr.) is a further cognate; though transitive and active,
+this verb resembles other thematic members of the hi-conjugation in seeming to
+presuppose the former existence of a thematic middle 1sg. *gangahḥa ‘I hang'
+(intr.) (cf. Meid 1971:77-8, Watkins 1969:117). The root *konk- thus appears
+to have been inflected in the middle voice from a very early period; outside Ger-
+manic no fewer than three independent IE traditions attest directly or indirectly
+to a thematic middle paradigm with intransitive meaning. This fact can be ex-
+ploited to provide an explanation for the formally problematic 3sg. *hangaiþ(i).
+I propose to see in 3sg. *hangaiþ(i) the reflex of an archaic 3sg. middle in
+
+=== page 857 ===
+
+THE GERMANIC THIRD WEAK CLASS
+857
+*-ai < IE *-oi (*-0 + deictic *i), suffixed secondarily by the normal Gmc. 3sg.
+pres. termination *-b(i). The position of the ending *-o(i) in the scheme of the
+IE verb has recently been discussed exhaustively by Watkins (1969, passim),
+who shows how an inherited 3sg. in *-
+*-0 (apophonically an alternant of the 3sg.
+perfect in *-e) is renewed as *-to, *-eto, and *-oto in the majority of IE traditions.
+These dental-extended forms of the basic ending, themselves subject to optional
+enlargement by the particles *r and *i, underlie the 'classical' 3sg. middles in
+*-to(i), *-eto(i), *-oto(i) (Indo-Iranian, Greek, Germanic) and *-tor(i), *-etor(i),
+*-otor(i) (Hittite, Tocharian, Italic, Celtic). However, the archaic t-less forms
+*-o(i), *-or(i) are not purely hypothetical constructs; they are preserved intact
+in 3sg. middles, athematic and thematic, in Indo-Iranian (Vedic athematic
+duhé ‘milks', later dugdhe, impf. áduha(t); thematic śóbhe 'praises', later sobhate)
+and Hittite (athematic eša, ešari ‘sits' beside pret. eštat; thematic neya, neyari
+'leads' beside neyatta). Cf. further Umbrian ferar ‘ferātur' and OIr. passive berar
+'is carried', beside deponents like do moinethar ‘thinks'. Within Germanic, where
+the IE middle is continued in the Gothic passive (e.g. 1-3sg. bairada ‘am, is
+carried' < *berapai), a similar replacement must be assumed: the 3sg. desinence
+Go. -ada, CGmc. *-abai ultimately points to an older ending *-a (or suffixed,
+*-ai) which is nowhere attested as such. However, interesting indirect evidence
+for a 3sg. in *-ai is still to be seen in the peculiar and isolated use of the Gothic
+ending -ada in the 1sg., a feature which recurs in OE hätte ‘am, is called' = Go.
+haitada. Since IE *a and *o both appear as a in Germanic, the inherited ending
+of the 1sg. middle *-ai < *-oi must early have fallen together—at least in the
+athematic type with the 3sg. *-ai < *-oi. Following their phonological merger,
+the two endings were treated as identical, and the subsequent replacement of
+*-ai by *-abai affected the 1st and 3rd persons equally (cf. Watkins 1969:138).
+It is therefore reasonable to assume dentalless *hangai, *berai etc. as the oldest
+forms of the 3sg. middle in Germanic. Such forms, I shall argue, have had a
+twofold development in the historical languages-yielding, on the one hand, the
+Gothic (and Common Germanic) passive in 3sg. -ada (< *-aþai); and on the
+other, via a process now to be described, the Common Germanic 3rd weak class
+in active 3sg. *-aiþ(i). At the earliest stage of Germanic accessible to us, the
+middle 3sg. *hangai must have been bifunctional: like the Greek middle, it
+invested the root meaning 'hang' with intransitive value, and at the same time
+optionally signaled the grammatical passive to the transitive active 3sg.
+*hanhip(i). This situation, of a type frequently encountered in older IE lan-
+guages, was conducive to the introduction of a new formal contrast to differen-
+tiate the two functions. In the passive (in Kuryłowicz' terms, 'primary') func-
+tion, the 3sg. hanga(i) was renewed via the replacement *-a(i) > *aþa(i) as the
+* In this respect the Germanic hierarchy of functions is the exact opposite of that in
+Indo-Iranian, where the dentalless ending *-ai (Skt. -e) is typically specialized as a mark
+of the passive (skt. grné ‘is praised', bruvé ‘is said', śrṇvé ‘is heard'). There is no real contra-
+diction here. In Indo-Iranian the passive function of the old middle is taken over by a new
+category, the derived passive in -yá-; the use of inherited middle forms with the same value
+is a marginal archaism. In Germanic, on the other hand, the (originally peripheral) passive
+signification of the IE middle is developed as its sole productive function, and it is as a
+mark of the passive that the inherited middle ending of the 3sg. undergoes formal renewal
+(cf. Watkins 1969:88 and Kuryłowicz 1960:79).
+8
+
+=== page 858 ===
+
+858
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+familiar Germanic passive of the handbooks, *hangaþai, Go. *hahada (with
+regular loss of grammatischer Wechsel). The spread of the dental ending thus
+came to be associated with the growth of a new grammatical category, the pas-
+sive, while the dentalless ending was restricted to intransitive ('secondary') func-
+tions alone. With the subsequent loss of the middle as an autonomous category
+in Germanic, the status of the archaic *hangai, now re-interpreted as a derived
+present unmarked for voice, would have become precarious in the extreme. Like
+over-short 3rd singulars generally, it was liable to be resegmented as a bare stem
+form with desinence zero, i.e. as hangai+Ø instead of the historically correct
+*hang+ai. But this new segmentation made possible the accretion of a new and
+overt mark of the 3sg. in place of the null ending. The result was the suffixation
+of *hangai by the unmarked (active) 3sg. desinence *-(i), and the creation of
+CGmc. 38g. *hangaiþ(i)-the form directly accessible to us through compari-
+son.
+Once established as a 3sg. active in form, *hangaiþ(i) was free to serve as the
+starting point for a new active paradigm. It is possible to give a sketch of how
+the transformation from a middle to active might have proceeded outside the
+3sg.: Germanic, like Hittite, Tocharian, and the neighboring Baltic, appears to
+have inherited from dialectal IE a thematic conjugation with persistent o-color
+of the thematic vowel. This is directly visible in the Go. passive 1sg. haitada,
+2sg. haitaza, 3sg. haitada, pl. haitanda; cf. further Hitt. middle 1sg. neyaḥha(ri),
+2sg. neyatta(ti), 3sg. neya(ri), 3pl. neyanta(ri); Toch. deponent 1sg. A mäskamār,
+B mäskemar ‘I am, ich befinde mich', 2sg. A mäskatār, B mäsketar, 3sg. A mäska-
+tär, B mäsketär, 3pl. A mäskantär, B mäskentär;³ Lith. 1sg. vedù < *-ō ‘lead',
+2sg. vedì < *-ai, 3sg. věda etc. Following Watkins (1969:213), we may display
+the terminations of this type, so far as known, as follows:
+1sg. *-0-220
+2sg. *-o(-tạo)
+3sg.
+*
+1pl.
+2pl.
+3pl. *-o-r (?)
+Replacing the unattested r-ending of the 3rd plural by its successor *-nto, and
+adding the particle *i of the hic et nunc, we obtain, after regular phonological
+changes,
+1sg. *hangō (-õi ?)
+2sg. *hangar 10
+1pl.
+2pl.
+3pl. *hanganbai
+3sg. *hangai
+This is the paradigm which is ‘activized', via the 3sg. *hangai, in the manner
+described above. Re-interpreted as a bare stem, *hangai engenders the new 3sg.
+*hangaiþ(i) and the corresponding 2sg. *hangais(i). These active forms in turn
+lead to the elimination of the remaining middle endings: the 1sg. and 3pl. appear
+This verb is representative of the Krause-Thomas 3rd present class (1960:200–201).
+The correspondence a(A) = e(B) points to IE *ē or *o as the predesinential vowel in this
+type, but only *o will explain the consistent non-palatalization of the root-final consonant.
+10 I see no need to assume a 1st person ending *-ōi for Germanic; on the putative 1sg.
+*haitōi 'I am called', see below. In the 2nd person it is simplest to reconstruct *-ai, an end-
+ing which recurs in Baltic; but this choice is of no particular importance. In principle we
+could just as easily operate with a form *hangasai, or even *hanga þai.
+
+=== page 859 ===
+
+THE GERMANIC THIRD WEAK CLASS
+859
+with the regular active endings as *hangō and *hanganþi respectively, while the
+1pl. and 2pl., discarding older middle forms, become *hangamě(s) and
+*hangaib(e). Note that the 2pl. shows an assimilation in stem form to the 3sg.,
+in conformity with the normal pattern elsewhere in Germanic (e.g. Go. 3sg.
+bairiþ = 2pl. bairip etc.) The result is a new paradigm, from which the histori-
+cal forms of *hangana(n) ‘hang' (intr.) are derived:
+1sg. *hangō
+2sg. *hangais(i)
+3sg. *hangaiþ(i)
+1pl. *hangamě(s)
+2pl. *hangaip(e)
+3pl. *hanganþ(i)
+The importance of the verb ‘hang' for the history of the 3rd class as a whole
+should now be quite clear. Comparative data indicate that the root *konk- in-
+herited a thematic middle inflection from late PIE, while there is no evidence
+outside Germanic to support the assumption of an e-extended stem *konk-ē-.
+Our derivation of *hangaiþ(i) and its associated paradigm from an old thematic
+middle is consistent with these findings, and at the same time provides a fairly
+natural explanation for some of the historically troublesome details of the 3rd
+weak class inflection. This suggests in turn that the hypothetical renewal
+*hangai → *hangaiþ(i), rather than being an isolated analogical replacement
+affecting only one lexical item, may in fact be part of a quite general Germanic
+process which has led to the creation of the characteristic, and hitherto unex-
+plained, present type in *-ai-/*-a-.
+It should be noted that no part of the development assumed for ‘hang' lacks
+clear typological parallels elsewhere in IE. We have already seen examples in
+Indo-Iranian (śóbhe → śóbhate) and Hittite (neya →neyatta) of a formal renewal
+in these languages directly comparable to the Germanic replacement of *hangai
+by *hangapai in the passive function. A third branch of the family, Celtic, shows
+evidence of the same replacement, and agrees further with Germanic in special-
+izing the endings *-o and *-to in different values-the first as the normal the-
+matic passive 3sg. (OIr. berar ‘is carried'), the second as the deponent 3sg.
+(OIr. do moinethar 'thinks'). The Germanic replacement of middle by active
+forms outside the 3rd singular (3pl. *hanganbai → *hanganþ(i) etc.) is quite
+unremarkable in itself, and ultimately comparable to the loss of deponent inflec-
+tion in Late Middle Indo-Aryan and Vulgar Latin (cf. already in Old Latin
+morō for moror 'delay', nāscō for nāscor 'be born', pacisco for paciscor 'bar-
+gain', etc.) The special aspect of the development which may seem bizarre-the
+direct application of the ending 3sg. *-(i) to the already complete middle 3sg.
+*hangai-has in fact an almost exact parallel in the history of Vedic imperfects
+like áduhat 'milked', áśayat 'lay': these, as Wackernagel showed long ago, owe
+their final -t to a secondary amplification of older dentalless forms áduha, *áśaya.
+There is a second and even more striking example of the same process in Hittite,
+where, particularly in the later language, certain apparently thematic hi-conju-
+gation verbs like tarna- 'leave' (1sg. tarnaḥhi, 2sg. tarnatti, 3sg. tarnai) tend to
+develop an alternative mi-conjugation inflection. The starting point for the new
+paradigm is the dentalless 3sg. tarnai, which is directly suffixed by the produc-
+tive 3sg. ending -zi < *-ti; the resulting mi-conjugation forms *tarnami (cf.
+išgāmi < išgaḥhi ‘I anoint'), 2sg. tarnaši, 3sg. tarnaizzi are quite reminiscent of
+
+=== page 860 ===
+
+860
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+the reconstructed Gmc. *hangō, *hangais(i), *hangaiþ(i). A morphological re-
+placement of this kind appears to be responsible for the creation of a consider-
+able number of Hittite verbs in 3sg. -aizzi (for discussion cf. Watkins 1969:102,
+Jasanoff 1968:69-92).11
+It would be well to observe, before proceeding further, that Germanic pre-
+serves a well-known example of a thematic middle which has been refashioned
+to an active in a manner strikingly similar to that sketched above. The Old
+Norse strong verb heita ‘bid, call' has two presents: one the regular 1sg. heit,
+2-3sg. heitr etc.; the other, in the special meaning ‘be named, be called, heissen',
+1sg. heiti, 2-3sg. heitir etc. The latter forms are clearly medial in origin and con-
+nected in some way with Go. 1-3sg. haitada, OE 1-3sg. hätte, both regularly
+reflecting a CGmc. passive *haitapai. Neither heiti nor heitir can directly con-
+tinue *haitapai, however; the expected reflex of this form in Old Norse would
+be *heitti. Accordingly, many scholars have seen in 1sg. heiti the persistence of
+an IE middle desinence *-ai (< *-320-1), as in Skt. bháre, or (more plausibly)
+*-ōi (< *-0-320-1)-as, formally at least, in Old Hittite tarnaḥhe ‘I leave' (1sg.
+hi-conjugation) (for discussion, see Cowgill 1968:24-31). Such scholars implicitly
+regard 3sg. heitir as an analogical form, created by adding the productive ending
+-r to the inherited 1sg. heiti. The difficulty with this view lies in the fact that,
+as already noted, elsewhere in Old Norse the 1sg. tends to be remade on the
+model of the 3sg., not vice versa. From both a typological and a purely Norse
+standpoint, an analogical progression heiti → heitir would be an anomaly, com-
+pletely at variance with later re-formations like grefr 'digs' → gref and vakir
+'wakes' vaki. We shall do better to seek an explanation for heitir on its own
+terms; and such an explanation is in fact available if we see in heitir the continu-
+ation of a pre-form *haitaiþ(i), remade from an old dentalless 3sg. *haitai via
+suffixation of the ending *-(i). In this way we account directly for the fact that
+the present tense paradigm of heita is completely identical to that of a 3rd class
+weak verb. The twofold development of *haitai to *haitaiþ(i) in North Ger-
+manic, *haitapai in East and West Germanic, would then reflect the real seman-
+tic ambiguity inherent in the notion of 'being called', which is variously treated
+as a middle or as a true passive in the individual IE languages. 12
+"However, it must be noted that, outside the 3sg., the correspondence between Hittite
+and Germanic is not exact. Forms like 3sg. tarnaizzi were identified in Hittite with inherited
+3rd singulars like hatraizzi 'he writes', where -aizzi apparently continues older * -āžeti;
+thus *tarnāmi, tarnasi etc. are not simply thematic, but rather imitate ḥatrāmi, hatrāši
+etc., where the connecting vowel a (usually written with the scriptio plena) reflects original
+*-āio-.
+12 The Runic 1sg. forms haite and haiteka, found as early as the fifth century (haite,
+Kragehul, early 6th century; h(a)ite, Jursberg, 500-550; ha(i)teka, Lindholm, early 6th
+century; haitika, Seeland II, 450-550; cf. Krause-Jankuhn 1966) do not constitute a real
+argument against the assumption of an original 3rd class 1sg. *haitō, even though the 1sg.
+ending -u < *-ō is retained in strong verbs during this period. In view of the absence of an
+attested 1sg. to a 3rd class weak verb in early Runic Norse, it is perfectly possible that the
+inherited 1sg. in *-ō had already been remade to *-ē after the 3sg. in *-ēþ < *-ai þ. The model
+for this development would have been supplied by the 2nd weak class (cf. Go. 1sg. salbo,
+3sg. salbob), where the rule 1sg. 3sg. minus *- (i) is Common Germanic; given the second-
+ary creation of OHG 1sg. habêm after the model of 1sg. salbôm, a like analogical origin for
+
+=== page 861 ===
+
+THE GERMANIC THIRD WEAK CLASS
+861
+3. In conformity with the preliminary conclusion reached at the end of §1,
+I am now prepared to make the following claim: THE THIRD WEAK CLASS ULTI-
+MATELY CONTINUES AN EARLY GERMANIC TYPE IN WHICH A THEMATIC MIDDLE
+INFLECTION IN THE PRESENT CONTRASTED WITH FORMS BUILT ON A STEM IN *-ē-
+IN ONE OR MORE NON-PRESENT CATEGORIES. If this is correct, it means that at
+some time in its pre-history, Germanic came secondarily to pair its inherited
+(late IE aorist?) stems in *-ē- with presents of an etymologically entirely un-
+related type.13 This, of course, parallels completely the situation we have seen
+in Balto-Slavic, where the present of ‘ē-verbs' is supplied by a congener of the
+IE perfect (Lith. pret. minėjo, turéjo; pres. mìni, tùri < *mone-i, *ture-i). But
+it should hardly be necessary to emphasize that I do not mean to imply that all,
+or indeed even most, attested 3rd class weak verbs were originally middle or
+deponent. Thus verbs meaning 'have' are not characteristically middle in the
+older IE languages; and there is little reason to believe that, in the oldest stages
+of Germanic, the ancestor of Go. haban, OHG habên etc. was an exception. By
+the same token OCS vidito 'sees', Lith. pavýdi ‘envies' cannot be old as perfects;
+the inherited perfect of the root *ueid- is still preserved with its original mean-
+ing in the archaic Slavic 1sg. vědě ‘I know' < *u̟oidai. Both cases must be ex-
+plained from the fact that the association of stative stems in *-ē- with middles
+in Germanic and perfects in Balto-Slavic has become productive. Starting from
+relatively small beginnings in both traditions, a new pattern has established
+itself and spread. In Balto-Slavic the infinitive-aorist stems *ųīdē-, *turē- auto-
+matically entail perfect-presents *чīdei, *turei (> -výdi, tùri); in Germanic the
+corresponding stems imply middle (deponent) presents *witai, *habai (> Go.
+witaip, habaib).14
+1sg. haitē would hardly be surprising. The tendency of the 1sg. to be remade on the model
+of the 3sg. is old in any event; cf. 1sg. gibu for gebu on the same bracteate as the form 1sg.
+haitika. In the case of heita in particular, the creation of the new 1sg. haite would have been
+favored by the need to distinguish the active and middle senses of the inherited *haitō,
+and perhaps also by the ambiguity of the common form haiteka (either *haitō + *eka or
+*haitē *eka).
+The interpretation of heita offered here should lead us to expect a 3rd class weak pret.
+1sg. *haitaidōm, standing in the same relation to the present *haitaiþ(i) as Go. habaida
+stands in relation to habai þ. No such form can be traced in Gothic or Old Norse, where the
+preterit of this verb in the intransitive sense is simply supplied by the copula + past parti-
+ciple. Yet *haitaidōm, I would suggest, has survived; it is the direct antecedent of OE
+hätte, pl. hātton, the anomalous preterit to the ‘passive' pres. 1-3sg. hätte discussed above.
+Taken together in this way, Old English and Old Norse attest the complete 3rd class para-
+digm.
+===
+13 In fact, my only reason for assuming the former existence of stems in *-ē- in Germanic
+is that they provide a convenient way of accounting for word equations like Go. þahan
+Lat. tacere 'be silent' or Go. bulan 'endure' Lith. tylėti. Forms like *pag-ē- and *þul-ē-
+have left no direct trace in any Germanic language.
+====
+14 Indeed, it is perfectly possible that the productivity of the 3rd class may belong partly
+to a period later than the restructuring of the thematic middle as an active in 3sg. *-aiþ(i).
+In particular, note that if the phonological reflex of IE *-ējeti is *-aiþ(i) in Germanic, then
+the membership of denominatives like OHG rotên in the 3rd class could simply reflect the
+merger in the 3sg. of a thematic type in *-ēžeti (cf. Lith. rudėja) with the renewed 3sg. middle
+in *-ai + *-þ(i). This would make it unnecessary to assume the former existence of a middle
+paradigm for denominatives.
+
+=== page 862 ===
+
+862
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+It is a significant fact, as observed before, that 3rd class weak verbs in Ger-
+manic commonly correspond semantically to middles in other IE languages
+(cf. Meid 1971:7). This is hardly surprising, for the ‘internal' value of the IE
+middle (see especially Benveniste 1966:168-75) is very close to the stative,
+generally intransitive, value of formations in *-ē-: one is reminded of the devel-
+opment of the Greek aorist passive in *-(th)ē- from such pairings as phaínomai
+'I appear', ephánēn (aor.) ‘I appeared'; trépomai ‘I turn', etrápēn (aor.) 'I turned'.
+Among the Germanic 3rd class verbs which translate the middle or deponent
+presents of other languages, we may cite Go. sifan ‘rejoice', Skt. hárşate, Lat.
+laetor; OHG *hogên 'ponder, meditate', Gk. dianoéomai, Lat. mēditor; Go. pulan
+'suffer, endure', Skt. kşamyate, Lat. patior; OHG folgen 'follow', Skt. sácate, Gk.
+hépomai, Lat. sequor etc. Further examples are not hard to find. Special interest,
+of course, attaches to those cases where a Germanic 3rd class weak verb can be
+related etymologically as well as semantically to middle formations elsewhere.
+We have already seen that Go. hahan, OHG hangên is such a verb; another may
+be the Germanic verb 'live' (OE libban, OS libbian etc.), which has a striking
+formal counterpart in the Tocharian 3rd class present lipetär ‘is left, remains' <
+*lipotor. Yet another lexical item is 3sg. *wunaiþ(i) ‘is content' (represented by
+OHG wonêt, Go. unwunands 'unsatisfied' etc.), which it is tempting to compare
+with Skt. vánate ‘desires'; both verbs can be derived from a thematic middle
+prototype 3sg. *u̟on-ói, contrasting with the inherited active 3sg. *u̟n-néu-ti,
+Skt. vanóti 'overcomes', OE thematized winne < *winwiþ ‘struggles'. (On the
+semantics of the root van-, cf. Grassmann 1873, sub voce.)
+Important historical information is furnished by an archaic group of 3rd class
+weak verbs which occur beside preterit-presents formed from the same roots.
+This type is well represented in Gothic: munai ‘thinks', man 'remembers';
+-kunnaip (ga-kunnaiþ 'finds out', uf-kunnaiþ 'realizes' etc.), kann 'knows';
+witaip 'watches', wait ‘knows’; gaþarbaiþ sik ‘abstains', þarf ‘lacks, needs'. To
+these we may add *agaip ‘takes fright', og ‘is afraid' on the strength of the ad-
+jective unagands ‘unafraid', wrongly taken by Krause (1968:234) to represent
+a lost strong verb *agan (3sg. *agib). The former existence of several other such
+pairs can be concluded from the evidence of North and West Germanic forms:
+ON dugir 'helps, is useful' is the 3rd weak class counterpart to Go. impersonal
+daug 'is useful', and OHG lirnêt ‘learns', though with a nasal suffix, otherwise
+stands in the same relation to Go. lais ‘knows, understands'. Besides confirming
+several of the Gothic pairs, OHG preserves the 3rd class weak verbs magêt 'is
+strong', sculêt 'owes', alongside the preterit-presents mag 'can', scal ‘ought'. The
+co-occurrence of preterit-presents and 3rd class weak verbs cannot be motivated
+synchronically in Germanic, and must be regarded as continuing an old pattern.
+Wagner (passim) has explained weak verbs like *kunnaiþ(i), *dugaiþ(i) etc. as
+the product of a derivational process whereby stative stems in *-ē- were formed
+to underlying perfects in late IE. This view is probably correct as far as it goes:
+within Germanic at least two pairs-Go. munaib, man and witaip, wait-corre-
+spond term for term to ē-statives and perfects in other branches of the family.
+The root *men- attests both formations in Gk. mémona (= Lat. memini) vs.
+emánen (post-Hom.); Lith. mìni vs. minéti; OCS monito vs. mÚněti; *чeid-,
+
+=== page 863 ===
+
+THE GERMANIC THIRD WEAK CLASS
+863
+beside its familiar perfect *чóida ‘I know' (Gk. (w)oida, Skt. veda etc.), shows
+the stative stem *uidē- seen in Lat. videō, Lith. pavyděti, OCS viděti. But while
+the association of the perfect and ē-stative may indeed date back to a very early
+period, it seems even more important in an IE context to take note of the rela-
+tionship of the perfect to a third and older verbal category-one to which it
+may ultimately be etymologically identical. This is the IE middle.
+I have already alluded above (§2) to the common origin of the perfect and
+middle in IE. A mechanism whereby the two categories may originally have
+come to be differentiated is suggested by Kuryłowicz (1964:62-3); see further
+Watkins (1969:112-3) and, for a somewhat different view, Meid (1971:32-9).
+Although some of the details of the intervening stages lie outside our view and
+probably always will, the basic identity of the perfect and middle endings (in
+particular the pf. 3sg. in *-e and the middle 3sg. in *-o) is as firmly established
+a result as any IE morphology, and may be taken as a point of departure. The
+assumption of a common origin for both categories helps explain the fact that a
+significant number of verbs whose perfects are of IE date also preserve traces of
+an old middle inflection. Two striking examples are the roots *men- and *u̟eid-
+just discussed. In Vedic, where both are well-attested, the most archaic non-
+perfect forms are the aorists άmata and ávidat. Of these, the former is a hapax
+root-aorist middle, superseded in the later Vedic language by the sigmatic
+ámamsta; the latter is a thematic aorist, quite possibly the original representa-
+tive of its type. The nature of the relationship between these two aorist forma-
+tions has now been elucidated by Watkins (1969:88 ff. et passim), who shows that
+both the athematic middle in -ta and the thematic active in at presuppose an
+old middle 3sg. in **6. Amata, like ámrta 'died', ágata 'went' etc., ultimately
+continues a 3sg. *m¸n-* (*mr-*, *g*m-*/6), which has been remade to *mn-to
+(*mr-to, *g*m-to) via the now familiar replacement *-o→ *-to. The thematic aorist
+ávidat rests on a different renewal, the same as the one seen above in discussing
+the forms áduhat < áduha and áśayat < *áśaya. We may set up, with Watkins,
+a pre-Indic *ávida, or in IE terms a 3sg. *uid-*/; this hypothetical form is in
+fact directly confirmed by the archaic dentalless 3sg. present vidé ‘is found'.
+For IE it is legitimate to assume perfects *(me)món-e, *yóid-e and middles
+*m¸n-ó, *u̟id-ó (with the usual generalization of o-timbre in the middle ending).
+The assignment of the latter two forms to the aorist category in Sanskrit seems
+to have been a relatively late and, it would seem, incomplete development: in
+the case of *uid-ó it was probably the aoristic nuance of the root itself, in that
+of *mn-ó the encroachment of a specially characterized present *mn-1/- (Skt.
+manyate, cf. Gk. marnomai) which led to the specialization of ávidat, ámata as
+aorists. In most of the remaining IE languages, the middles *mon-ó, *µid-ó,
+unlike the comparatively stable perfects *(me)món-e, *yóid-e, were eliminated
+or drastically restructured; and only in one branch of the family, Germanic,
+were they actually maintained as part of a coherent system in which the func-
+tional opposition of perfect and middle is preserved intact. This opposition, I
+suggest, is still perceptible in Go. man 'remembers' vs. munaip 'thinks' and Go.
+wait ‘knows' vs. witaip ‘watches', where the 'middle' terms munaib and witaip
+represent the normal Gmc. reflexes of presents *mon-ói and *uid-ói (= Vedic
+
+=== page 864 ===
+
+864
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+vidé), transformed by the process detailed in the preceding pages. The same
+contrast of state vs. what we may call 'internal activity' is typical of several
+other such pairs: ‘know, understand' vs. ‘learn', 'be able' vs. 'become able',
+‘lack' vs. ‘abstain from' etc. Formally and functionally, 3rd class weak verbs of
+this type continue an IE category with remarkable fidelity.
+The Vedic present vidé constitutes an important support for the assumption
+of a pre-Germanic 3sg. *witai (> Go. witaip etc.) Beside the double equation
+véda : vidé = wait : witaiþ, I now propose to add a second, Vedic duduhé
+(2sg. active dudóhitha) : duhé == Go. daug ON dugir. The etymological con-
+nections of the Indo-Iranian root *dhugh- have long been disputed; most scholars
+have been hesitant on semantic grounds to accept an equation with Gmc. forms
+meaning 'be suitable, help' (see literature in Mayrhofer 1953). Yet the phono-
+logical side of the comparison is unexceptionable, and the semantic objections
+have been persuasively answered by Meid in his recent study of the Gmc.
+preterit. Meid's remarks (1971:24-5) on the IE root *dheugh- deserve to be
+quoted at some length:
+daug. Das Verbum stammt ab von idg. *dheugh-, dessen ursprüngliche Bedeutung im
+weitesten Sinne etwa mit ‘Ertrag produzieren, nutzbar machen' (Akt.), 'Ertrag geben,
+Nutzen bringen' (Med.) angesetzt werden kann. Die Bedeutung impliziert den Begriff
+der MENGE, FÜLLE, auch der QUALITÄT. Im ALTINDISCHEN, das hier früheste idg. Vieh-
+züchterkultur wiederspiegelt, ist duh- ein Begriff der Milchwirtschaft und erst von da aus
+bildlich erweitert: duh- bedeutet . a) aktivisch‘(heraus)melken' (auch bildl.), b) ‘Milch
+geben', übertr. ‘(reichlich) strömen, spenden' u. dgl. Vgl. RV 3, 57, 1: '(Wer sich meine
+Dichtung ausersehen hat, hat eine) Milchkuh (gefunden), die viel an Labung milcht':
+dhenúm... ya duduhé bhuri dhāsér.
+...
+The peculiar sense of the root duh- is thus secondary, the result of its early in-
+corporation into the expanding Indo-Iranian lexicon of terms connected with
+cattle breeding. The ON 3sg. dugir 'helps, avails' (< *dugaib) continues, in the
+guise of a 3rd class weak verb, the same isolated IE form *dhugh-ói that survives
+almost unchanged in Skt. duhé. In both Germanic and Indo-Iranian, the reten-
+tion of the corresponding pf. *(dhe-)dhóugh-e (daug; *dudóha, duduhé) is a
+characteristic archaism, entirely comparable to the survival of véda beside vidé
+in Sanskrit, and wait beside witaip in Gothic.
+We can now appreciate the significance of the verbs just discussed for the
+3rd weak class as a whole. Pairs like *uóide vs. *uidó(i), *móne vs. *mnó(i),
+*dhóughe vs. *dhughó(i) are inherited, and ultimately reflect the common origin
+of the perfect and middle in IE. In a central group of languages including Ger-
+manic, such pairs appear to have been augmented by a third series of forms built
+on a stem in *-ē-: *u̟idē-, *m。nē-, *dhughē-. These forms were probably aorists;
+but while their original function in Germanic is impossible to determine exactly,
+we can be reasonably sure that they did NOT play a role in the formation of the
+presents *witaiþ(i), *munaiþ(i), *dugaiþ(i). It seems instead that, at some time
+in the pre-history of Germanic, the middle paradigms corresponding to 3sg.
+*uidó(i), *mnó(i), *dhughó(i) were thematized owing to the identity of the
+thematic and athematic types in the 3sg.; from this point on, their history in
+the present system became indistinguishable from that of originally thematic
+middles like Go. intrans. hahan and (probably) ON heita. Thus these verbs sup-
+
+=== page 865 ===
+
+THE GERMANIC THIRD WEAK CLASS
+865
+ply an early set of examples in which a thematic middle present (3sg. *uidói >
+*witai(pi) etc.) came to stand beside a non-present form in *-ē- elsewhere in an
+extended paradigm. Once established in the language, this pattern was free to
+spread to verbs like 'have', where the stem in *-ē- is apparently old, but where
+middle inflection in the present can only be secondary.
+The OHG 3rd class weak verb lirnên, lernên (= OE liornian, also with 3rd
+class forms) belongs etymologically with the Gothic preterit-present lais ‘knows,
+understands'; the two verbs constitute a pair that cannot be separated from
+those discussed above. Formally, however, CGmc. *liznaiþ(i) presents a prob-
+lem: since IE deverbal *-ē- was applied directly to roots rather than present
+stems, the seeming occurrence of a present in *-nē- is difficult to account for in
+traditional views of the 3rd class. In terms of the theory just put forth, nothing is
+more natural than to assume that *liznaiþ(i) continues an older *liznai, the
+form we would expect as the regular middle 3sg. to an IE nasal present (cf. Skt.
+grné 'is praised' < *g*r-ną₂-ói beside active grṇáti < *g*r-neǝ-ti). In the same
+fashion it is possible to derive Go. kunnaiþ (= OHG kunnêt) from a pre-Germanic
+prototype *kunnai < *gn-ną-ói. This etymology has the advantage of accounting
+for the -nn- of the historical forms without appeal to an ad-hoc phonetic rule,
+and at the same time permits us to explain the difficult forms Go. kann, OHG
+kann etc. as a CGmc. back formation from *kunnaiþ(i), after the model of other
+such pairs. *Liznaiþ(i) and *kunnaiþ(i) are not the only 3rd class weak verbs
+with a nasal suffix. A small but significant number of others, such as OHG
+hlinên (= OE hlinian) ‘lean', OHG mornên ‘grieve', and ON tolla 'stick to'-all
+intransitive show fairly clearly that the type is old, and that a group of 3rd
+weak class nasal presents must be assumed for Common Germanic. Apart from
+their interest for the history of the 3rd class as a whole, these forms are important
+for a second reason: they may shed valuable light on the prehistory of another
+problematic category, the so-called 4th weak class of nasal inchoatives (type
+fra-lusnan 'become lost') in Gothic.
+The Gothic nasal inchoative class is characterized by a 'strong' present (3sg.
+fra-lusnip) beside a weak preterit formally indistinguishable from a preterit of the
+2nd class (fra-lusnoda). While these verbs do not form a distinct conjugation in
+any other Germanic language, Old Norse has a large number of nasal presents
+like vakna ‘wake up', losna ‘become loose', and sortna ‘become dark', which be-
+long to the 2nd class and clearly continue the same original category as the Gothic
+type. On the strength of the Norse forms and the Gothic preterit, most scholars
+(e.g. Meid 1967:252-4; Krause, 246) have sought to derive the Germanic nasal
+inchoatives from the IE present type in *-ne22-/-nə- (whence *-nā-/-nə-, Gmc.
+*-nō-/-na-) which underlies the Skt. 9th class (3sg. krīņāti ‘buys', 3pl. krīṇanti).
+The Germanic and Sanskrit formations are clearly related in some way. Two
+facts, however, stand in the way of equating them directly: first, the Gothic
+present, unlike the IE type, is thematic; second, the Germanic forms are incho-
+ative and intransitive, while the IE type is characteristically transitive and even
+causative (cf. Skt. rámate ‘rests', ramņáti ‘brings to rest').
+Both the form and function of the Gothic 4th class can be explained on the
+assumption that the Germanic nasal inchoatives were originally inflected as
+
+=== page 866 ===
+
+866
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+16
+15
+middles. We have just noted that Germanic preserves remnants of a group of
+nasal presents which belong to the third class. Several of these verbs, such as OE
+3inian (OHG ginên) ‘yawn' beside 3īnan, or OHG mornên beside OE murnan,
+exhibit a tendency to appear with strong but synonymous by-forms. Within the
+context of the theory presented above, it is natural to interpret such doublets
+as the result of an original contrast, in at least some nasal presents, between
+active and middle forms; when Germanic subsequently lost the active vs. middle
+opposition, there resulted, in semantically favorable cases, synonymous or
+nearly synonymous pairs which could provide a model for other originally middle
+verbs to adopt active inflection. It is probable that the Gothic verbs in -nan,
+3sg. -nip represent the result of just such a transfer. At the outset of the Ger-
+manic development we may assume three present types: an athematic active in
+3sg. *-nōþ(i) < IE *-nez2-ti, e.g. *waknōþ(i) ‘wakes' (tr.); a thematic active in
+3sg. *-nib(i), probably thematized from the preceding type, e.g. *wakniþ(i)
+‘id.'; and a thematic middle in 3sg. *-nai < IE *-ną2-oi, e.g. *waknai 'wakes up'
+(intr.) A-priori, we might expect that this state of affairs would be reflected in
+the attested stages of Germanic by three formations, two transitive and one in-
+transitive. In fact, however, the existence of isofunctional pairs like OE zinian
+vs. 3īnan, OHG mornên vs. OE murnan, together with the expansion of the
+iterative-causative type in *-ja- < IE *-e¿/- (*wakiþ(i) > Go. wakjiþ ‘wakes',
+tr.) led to a breakdown in the inherited system of oppositions. The nasal suffix,
+replaced in its transitive functions by the formally unrelated causative suffix,
+was re-interpreted as a mark of intransitivity, thereby rendering the 3rd class
+(originally middle) inflection of intransitive-inchoatives entirely redundant. The
+3rd class presents were thus free to be replaced by the inherited active types in
+3sg. *-nōp(i) and 3sg. *-nip(i), Old Norse in general preferring the former al-
+ternative and Gothic the latter. In the more or less confused situation of the
+attested languages, the nasal presents continue three distinct types in form-
+but only one, the middle, in function.
+17
+4. In the preceding pages I have tried to show that an archaic core of 3rd
+class weak verbs can most easily be derived, at least in the present system, from
+a Common Germanic transformation of the IE middle. Before concluding this
+study, I will briefly survey, language by language, the major formal innovations
+which have occurred between the Common Germanic period and the time of our
+written records. The point of departure, it will be recalled, is the type presented
+in §2, with endings 1sg. -ō, 2sg. -ais(i), 3sg. -aiþ(i), 1pl. -amě(s), 2pl. -aiþ(e), 3pl.
+-anp(i).
+15 The long here (and in the rhyming strong verbs cīnan ‘gape', dwīnan 'waste away',
+scīnan ‘shine') is surely secondary; perhaps it arose by back formation from the earlier
+forms of the preterits gān, cān, dwān, scān, either before or after these had acquired their
+nasal from the present.
+16 Pairs of this kind, of course, are not confined to the nasal presents. We may assume
+a transfer of the same kind in Go. bauan 'live, dwell', strong pres. 3sg. bauiþ, but 3rd class
+weak pret. bauaida. The weak pres. *bauaiþ is still normal in East Norse and has left traces
+elsewhere in Germanic (see Flasdieck, 89-93, for an inventory of forms).
+17 On the semantic overlap of the IE middle with the Gothic 4th class, see now Meid
+(1971:7).
+
+=== page 867 ===
+
+THE GERMANIC THIRD WEAK CLASS
+=
+867
+=
+GOTHIC: The Gothic 3rd class paradigm preserves the Common Germanic
+situation essentially unchanged. The only analogical form in the present is the
+2sg. impv. habai (for phonologically regular *haba), probably created to 3sg.
+habaib on the model of the 2nd class impv. salbo beside 3sg. salbop. The optative
+2sg. habais, 3sg. habai etc. is indistinguishable from that of any other thematic
+present, and continues the Common Germanic type intact; note that, since I
+have assumed the exclusion of *-ē- from the present system, there is no need to
+envisage an athematic optative *habē-ī-s, *habē-ī etc. An archaic feature seems
+to be preserved in the anomalous pret. 3sg. uf-kunþa to (weak) uf-kunnan
+‘recognize'; cf. OS habda, sagda etc., likewise formed without a connecting vowel.
+The regular type habaida, although perhaps already Common Germanic, rests
+on an analogy with the other weak classes: habaiþ: habaida salbop: salboda
+*nasib (replaced by nasjib): nasida.
+OLD NORSE: The treatment of the 3rd weak class in North Germanic is quite
+conservative: in verbs of the normal type only the 1sg. in -i is not an inherited
+form; and this, as already seen, reflects a very general Norse repatterning. The
+three verbs hafa, segja, and þegja are conjugated irregularly. Hafa shows umlaut
+in the singular, but not in the plural: 1sg. hef, hefi, 2-3sg. hefr, hefir, 1pl. hofum,
+2pl. hafið, 3pl. hafa. In the longer sg. forms hefi, hefir, it is simplest to see the
+result of a contamination of the short forms hef, hefr with the regular 3rd class
+forms *hafi, *hafir. (These latter have also played a role in the formation of Old
+Swedish haver < *hafr; cf. Flasdieck, 117–22.) The remaining present forms of
+hafa, in particular hef, hefr and the entire plural, are indistinguishable from
+those of a normal strong verb of the 6th class. From a Norse point of view, it is
+simplest to assume the original presence of two paradigms, one originally middle
+(*habō, *habais, *habaib etc.), the other originally active (*habō, *habis, *habip
+etc.); the relation between the two would be entirely comparable to that between
+pre-Norse *buaiþ and *būiþ ‘lives' or pre-English *ginaiþ and *giniþ ‘yawns'.
+Note that there is no unambiguous Norse evidence for a stem *habja-. In North
+Germanic, stems in *-ja- play a role in the 3rd weak class only insofar as they
+are needed to account for the forms of segja and its rhyming companion þegja,
+which have the same forms as hafa in the singular but resemble verbs of the 1st
+weak class in the plural (1pl. segjum, 2pl. segið, 3pl. segja). The absence of gemina-
+tion in the plural and the long forms segi, segir in the singular point to a mixture
+of two inherited paradigms-*sagō, *sagais, *sagaiþ etc. (3rd class), and *sagjō
+*sagis, *sagip etc. (1st class). The latter forms will be discussed below in con-
+nection with the situation in Old English and Old Saxon.
+OLD HIGH GERMAN has drastically simplified the inherited 3rd class paradigm
+by generalizing the stem *habai- (> OHG habê-) and utilizing it to create a
+new athematic paradigm modeled on that of salbon (cf. 1sg. habêm, opt. habêe
+etc.) The isolated 1sg. forms habu, sagu (Tatian) are the only relics of the old
+system in the present; in the preterit, hapta (cf. OS habda) is archaic beside
+regularized habêta and secondary hebita. The difficult 2sg. and 3sg. forms hebis
+hebit, segis segit, libis libit are probably to be taken at face value and compared
+with ON hefr, segr. This would imply that OHG, like Old Norse, inherited al-
+ternate paradigms *habō, *habis, *habib etc. and *sagjō, *sagis, *sagiþ etc.
+
+=== page 868 ===
+
+868
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+(*libjō, *lībis, *libib etc.) beside the normal 3rd class presents *habō, *habais,
+*habaib etc. Ad hoc as it may appear, this interpretation of the OHG facts seems
+far preferable to assuming that hebis, hebit etc. somehow reflect an older paradigm
+*habjō, *habais, *habaiþ etc. (as maintained, e.g., by Flasdieck, 157-8) in which
+the 1sg. *habjō (> *hebbu) gave rise to analogical *habis, *habib (> hebis, hebit),
+then disappeared without a trace. In any case, note that neither habên, sagên,
+lebên nor any other OHG verb provides direct evidence for an original alternation
+between stems in *-ja- and *-ai- within a single paradigm. Pace Flasdieck, a
+form without a-umlaut like Upper German lirnên (for phonologically regular
+lernên) can as easily be attributed to a lost 3sg. lizniþ (cf. Go. fra-lusniþ) as to a
+questionable 1sg. *lizn(i)jō.
+OLD ENGLISH AND OLD SAXON: Very little remains of the 3rd class as an
+autonomous category in Northern West Germanic. We have already seen how
+Old English has created a new type in 1sg. *-aijō (1sg. lifze < *libaijō beside
+libbe), which itself loses ground to the expanding 2nd class. The 2nd class has
+expanded enormously at the expense of the 3rd in Old Saxon also; as in Old
+English, only the three verbs 'have', ‘say', 'live' retain any features of mor-
+phological interest. The characteristic innovation of both languages is the replace-
+ment of simple thematic forms like 1sg. *sagō, pl. *sagan etc. by corresponding
+forms in *-ja-: OE secge secgap; OS seggiu, seggiad < *sagjō, *sagjan þ.
+In my opinion, these ja-forms belong properly not to the 3rd class, but to the
+alternate paradigms *sagjō, -is, -iþ etc., and *libjõ, -is, -iþ etc., attested in-
+directly in Old Norse (*sagjō only) and in OHG. (The pattern of these two verbs
+seems to have been extended to produce *habjō, -is, -ip etc. in Northern West
+Germanic, as against pre-Norse *habō, -is, -iþ etc.) The co-occurrence of 1st and
+3rd class presents in the same verb is not confined to the handful of verbs under
+discussion, but recurs in such pairs as Go. hugjan ‘ponder' vs. OHG *hogên
+(pret. hogêta; cf. hycgan and hozian in Old English), ON fylgja 'follow' vs. OHG
+folgên, Go. hatjan 'hate' (cf. OE hettend ‘enemy') vs. hatan, OHG hazzên. Here
+the 1st class present probably reflects the IE type in *-- which can be
+seen in Gk. marínomai, Skt. púşyati 'prospers' etc. Within the present framework,
+the simplest way to account for the twofold inflection of *hug-, *fulg-, and *hat-
+is to assume that they originally opposed a non-present stem in *-ē- to an in-
+herited present with the suffix *-ja-; in keeping with the productive Germanic
+pattern, the ‘aorists' *hugē, *fulgē, *hate would then have given rise to new and
+regular 3rd class presents *hugaiþ(i), *fulgaiþ(i), *hataiþ(i). Some similar set of
+circumstances may well be responsible for the creation of the doublets *libjō,
+*libō, and later, *habjō, *habō; in the case of *sagjō, *sagō, the forms in *-ja-can
+most plausibly be taken from an iterative *sokejō. In each case the link con-
+necting the two presents must have been the non-present stem in *-ē-.
+18
+The subsequent fate of the three verbs ‘have', 'say', and 'live' has been dictated
+in large part by the fact that, in the inherited 3rd class paradigm, the two stems
+in *-ai- and *-a- (West Germanic *-ē- and *-a-) are, from a descriptive point of
+view, suppletive-i.e., they cannot be predicted from each other on the basis
+18 This suggestion is due to Patrick Hollifield.
+
+=== page 869 ===
+
+THE GERMANIC THIRD WEAK CLASS
+869
+of any other morphophonemic alternation in Germanic. Given the gradual re-
+duction of the 3rd class to a mere three lexical items, and the existence of com-
+peting 1st class paradigms for each of these, it is not hard to see why forms in
+*-ja- have tended to become more common. In the 1sg. (and, mutatis mutandis,
+the 3pl., infinitive etc.) neither *sagō nor *sagjō is 'regular' with respect to 3sg.
+*sagaiþ. *Sagjō, however, has at least the advantage of being normal in a produc-
+tive class of weak verbs; it has spread at the expense of *sagō, replacing this form
+in Old Saxon and the 'Saxon' dialects of Old English (but cf. Northumbrian
+sago). By the same token, the 2sg. and 3sg. may be replaced without reference to
+the form of the 1sg.: Old Saxon (Heliand C) has habis habit, sagis sagit-forms
+which cannot be separated from OHG hebis hebit, segis segit, and where the
+absence of umlaut is clearly the result of contamination with the proper 3rd class
+forms habes -as, habed -ad (Heliand M). In Old English the 2sg. and 3sg. forms
+hafas (t) hafab, sagas(t) sagap, leofas(t) leofab show a different substitution,
+reflecting the now familiar tendency of the 2nd class to encroach upon the third;
+one may compare further OS libos, libot for *libes -as, *libed -ad. These 2nd class
+forms, like those in *-ja-, are comparatively late intruders in the 3rd class
+paradigm. The manner in which 1st and 2nd class forms have penetrated into
+the normal inflection of the verbs ‘have', ‘say', and 'live' is instructive: even when
+inherited 3rd class forms are eliminated, the new forms which replace them
+preserve intact the archaic opposition of two synchronically unrelated stems,
+one characteristic of the 2sg. and 3sg., the other of the remaining members of
+the paradigm.
+REFERENCES
+BENNETT, WILLIAM H. 1962. The parent suffix in Germanic weak verbs of class III. Lg.
+38.135-41.
+BENVENISTE, ÉMILE. 1966. Actif et moyen dans le verbe. Problèmes de linguistique
+générale, 168–75. Paris.
+CHANTRAINE, PIERRE. 1925. Les verbes grecs en thō. Mélanges linguistiques offerts
+à M. Joseph Vendryes par ses amis et ses élèves, 93–108. Paris.
+COWGILL, WARREN. 1959. The inflection of the Germanic ō-presents. Lg. 35.1-15.
+1968. The first person singular medio-passive in Indo-Iranian. Pratidānam: Indian,
+Iranian, and Indo-European studies presented to F. B. J. Kuiper, ed. by J. C.
+Heesterman et al., 24-31. The Hague.
+FLASDIECK, HERMANN. 1935. Untersuchungen über die germanischen schwachen Verben
+III. Klasse. Anglia 59.1-192.
+GRASSMAN, HERMANN. 1873. Wörterbuch zum Rigveda. Leipzig.
+JASANOFF, JAY. 1968. Studies in the historical morphology of the Hittite verb. Harvard
+dissertation.
+KRAHE, HANS. 1961. Altgermanische Kleinigkeiten. IF 66.35-43.
+KRAUSE, WOLFGANG. 1968. Handbuch des Gotischen. Munich.
+and HERBERT JANKUHN. 1966. Die Runeninschriften im älteren Futhark. Göt-
+tingen.
+and WERNER THOMAS. 1960. Tocharisches Elementarbuch I. Heidelberg.
+KURYŁOWICZ, JERZY. 1956. L'apophonie en indo-européen. Wrocław.
+1960. Esquisses linguistiques. Wrocław.
+1964. The inflectional categories of Indo-European. Heidelberg.
+MAYRHOFER, MANFRED. 1953. Kurzgefasstes etymologisches Wörterbuch des Altindischen.
+Heidelberg.
+
+=== page 870 ===
+
+870
+LANGUAGE, VOLUME 49, NUMBER 4 (1973)
+MEID, WOLFGANG. 1967. Germanische Sprachwissenschaft, III: Wortbildungslehre. Berlin.
+1971. Das germanische Präteritum. Innsbruck.
+NOREEN, ADOLF. 1923. Altnordische Grammatik, II. Halle.
+POLOMÉ, EDGAR. 1967. On the origin of the Germanic class III of weak verbs. Beiträge zur
+Indogermanistik und Keltologie: Julius Pokorny zum 80. Geburtstag, ed. by Wolf-
+gang Meid, 83-92. Innsbruck.
+PRÉVOT, ANDRÉ. 1935. L'aoriste grec en -then. Paris.
+SCHMID, WOLFGANG P. 1963. Studien zum baltischen und slavischen Verbum. Wiesbaden.
+WAGNER, HEINRICH. 1950. Zur Herkunft der ē-Verba in den indo-germanischen Sprachen.
+Zürich.
+WATKINS, CALVERT. 1969. Indogermanische Grammatik, III.1: Geschichte der indo-
+germanischen Verbalflexion. Heidelberg.
+1972. The Indo-European denominative statives in *-ē-. To appear in TPS.
+[Received 3 November 1972.]

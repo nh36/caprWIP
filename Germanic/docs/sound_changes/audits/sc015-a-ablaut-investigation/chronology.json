@@ -1,0 +1,431 @@
+{
+  "fst_sha256": "6c33b3c723150b61de4a41c89e228f32eeceb8280114b573e182eb8baf6ff51f",
+  "driver_sha256": "2850caf0905fbd26639e8590d8479386c1e7914fe8ebd9663e5982e1fedb81d3",
+  "recipe": {
+    "id": "sc015-a-ablaut-chronology",
+    "definitions": "define AFTrad [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel, {*í} -> {*é} || .#. EnglishStarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel ]) ];\ndefine AFHill [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [{*z} | {*s} {*t} | {*r}], {*í} -> {*é} || .#. EnglishStarConsonant* _ [{*z} | {*s} {*t} | {*r}] ]) ];\ndefine AFTauto [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [{*z} [EnglishStarConsonant | .#.] | {*s} {*t} | {*r}], {*í} -> {*é} || .#. EnglishStarConsonant* _ [{*z} [EnglishStarConsonant | .#.] | {*s} {*t} | {*r}] ]) ];\ndefine AFBroad [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [EnglishStarConsonant - EnglishStarNasal - {*j}]+ EnglishStarNonHighVowel, {*í} -> {*é} || .#. EnglishStarConsonant* _ [EnglishStarConsonant - EnglishStarNasal - {*j}]+ EnglishStarNonHighVowel ]) ];\ndefine AFTradA [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [EnglishStarConsonant - EnglishStarNasal - {*j}]* EnglishStarNonHighVowel, {*í} -> {*é} || .#. EnglishStarConsonant* _ [EnglishStarConsonant - EnglishStarNasal - {*j}]* EnglishStarNonHighVowel ]) ];\ndefine AFHillB [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [{*z} [EnglishStarConsonant | .#.] | {*s} {*t} | {*r}], {*í} -> {*é} || .#. EnglishStarConsonant* _ [{*z} [EnglishStarConsonant | .#.] | {*s} {*t} | {*r}] ]) ];\ndefine AFHillBz [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ [{*z} | {*s} {*t} | {*r}], {*í} -> {*é} || .#. EnglishStarConsonant* _ [{*z} | {*s} {*t} | {*r}] ]) ];\ndefine AFHillR [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ {*r}, {*í} -> {*é} || .#. EnglishStarConsonant* _ {*r} ]) ];\ndefine AFHillZ [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ {*z} [EnglishStarConsonant | .#.], {*í} -> {*é} || .#. EnglishStarConsonant* _ {*z} [EnglishStarConsonant | .#.] ]) ];\ndefine AFHillSt [ Ctx([ {*i} -> {*e} || .#. EnglishStarConsonant* _ {*s} {*t}, {*í} -> {*é} || .#. EnglishStarConsonant* _ {*s} {*t} ]) ];\ndefine AFCRZS [AFHillR .o. AFHillZ .o. AFHillSt];\ndefine AFCRSZ [AFHillR .o. AFHillSt .o. AFHillZ];\ndefine AFCZRS [AFHillZ .o. AFHillR .o. AFHillSt];\ndefine AFCZSR [AFHillZ .o. AFHillSt .o. AFHillR];\ndefine AFCSRZ [AFHillSt .o. AFHillR .o. AFHillZ];\ndefine AFCSZR [AFHillSt .o. AFHillZ .o. AFHillR];\ndefine AFSkip [?*];\ndefine AFNoop [?*];\ndefine AFLate [PNWGmcILowering];\ndefine AFLength [Ctx([{*e} -> {*ē} || .#. EnglishStarConsonant* _ {*r} .#.,{*é} -> {*ḗ} || .#. EnglishStarConsonant* _ {*r} .#.])];\ndefine AFRLength [Ctx([\n  {*i} -> {*ī} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*í} -> {*ī} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*e} -> {*ē} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*é} -> {*ḗ} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*a} -> {*ā} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*á} -> {*ā} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*u} -> {*ū} || .#. EnglishStarConsonant* _ {*r} .#.,\n  {*ú} -> {*ū} || .#. EnglishStarConsonant* _ {*r} .#.\n])];\n",
+    "replace": {},
+    "insert_rule": "",
+    "component_checks": [
+      {
+        "component": "PNWGmcILowering"
+      },
+      {
+        "component": "OEInterStressRaising"
+      },
+      {
+        "component": "MonosyllabicFinalZLoss"
+      },
+      {
+        "component": "EAFFinalZDeletion"
+      },
+      {
+        "component": "EAFRhotacism"
+      },
+      {
+        "component": "OEIUmlaut"
+      },
+      {
+        "component": "AFHillB"
+      },
+      {
+        "component": "AFHillR"
+      },
+      {
+        "component": "AFHillZ"
+      },
+      {
+        "component": "AFHillSt"
+      },
+      {
+        "component": "AFTradA"
+      },
+      {
+        "component": "AFRLength"
+      }
+    ]
+  },
+  "normalization": "Source h -> CAPR x; source thorn -> CAPR theta; CAPR close short e for Hill's lowered vowel.",
+  "limit": "Pairwise component ordering only. AFRLength is a schematic monosyllabic r-lengthening proxy (Hill 2017), not an adopted law. Inputs are controlled segment strings or the live CAPR PROTOFORMs named below.",
+  "r_lengthening": {
+    "PNWGmcILowering": {
+      "hir": {
+        "input": "*x*i*r",
+        "PNWGmcILowering_then_AFRLength": "*x*ī*r",
+        "AFRLength_then_PNWGmcILowering": "*x*ī*r"
+      },
+      "xír": {
+        "input": "*x*í*r",
+        "PNWGmcILowering_then_AFRLength": "*x*ī*r",
+        "AFRLength_then_PNWGmcILowering": "*x*ī*r"
+      },
+      "hwar": {
+        "input": "*x*w*a*r",
+        "PNWGmcILowering_then_AFRLength": "*x*w*ā*r",
+        "AFRLength_then_PNWGmcILowering": "*x*w*ā*r"
+      }
+    },
+    "AFHillB": {
+      "hir": {
+        "input": "*x*i*r",
+        "AFHillB_then_AFRLength": "*x*ē*r",
+        "AFRLength_then_AFHillB": "*x*ī*r"
+      },
+      "xír": {
+        "input": "*x*í*r",
+        "AFHillB_then_AFRLength": "*x*ḗ*r",
+        "AFRLength_then_AFHillB": "*x*ī*r"
+      },
+      "hwar": {
+        "input": "*x*w*a*r",
+        "AFHillB_then_AFRLength": "*x*w*ā*r",
+        "AFRLength_then_AFHillB": "*x*w*ā*r"
+      }
+    },
+    "AFHillR": {
+      "hir": {
+        "input": "*x*i*r",
+        "AFHillR_then_AFRLength": "*x*ē*r",
+        "AFRLength_then_AFHillR": "*x*ī*r"
+      },
+      "xír": {
+        "input": "*x*í*r",
+        "AFHillR_then_AFRLength": "*x*ḗ*r",
+        "AFRLength_then_AFHillR": "*x*ī*r"
+      },
+      "hwar": {
+        "input": "*x*w*a*r",
+        "AFHillR_then_AFRLength": "*x*w*ā*r",
+        "AFRLength_then_AFHillR": "*x*w*ā*r"
+      }
+    }
+  },
+  "sc036_world": {
+    "PNWGmcILowering": {
+      "wír-àldu": {
+        "input": "*w*í*r*à*l*d*u",
+        "PNWGmcILowering_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_PNWGmcILowering": "*w*í*r*u*l*d*u"
+      },
+      "wér-àldu": {
+        "input": "*w*é*r*à*l*d*u",
+        "PNWGmcILowering_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_PNWGmcILowering": "*w*é*r*u*l*d*u"
+      }
+    },
+    "AFHillB": {
+      "wír-àldu": {
+        "input": "*w*í*r*à*l*d*u",
+        "AFHillB_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_AFHillB": "*w*é*r*u*l*d*u"
+      },
+      "wér-àldu": {
+        "input": "*w*é*r*à*l*d*u",
+        "AFHillB_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_AFHillB": "*w*é*r*u*l*d*u"
+      }
+    },
+    "AFHillR": {
+      "wír-àldu": {
+        "input": "*w*í*r*à*l*d*u",
+        "AFHillR_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_AFHillR": "*w*é*r*u*l*d*u"
+      },
+      "wér-àldu": {
+        "input": "*w*é*r*à*l*d*u",
+        "AFHillR_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_AFHillR": "*w*é*r*u*l*d*u"
+      }
+    },
+    "AFTradA": {
+      "wír-àldu": {
+        "input": "*w*í*r*à*l*d*u",
+        "AFTradA_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_AFTradA": "*w*í*r*u*l*d*u"
+      },
+      "wér-àldu": {
+        "input": "*w*é*r*à*l*d*u",
+        "AFTradA_then_OEInterStressRaising": "*w*é*r*u*l*d*u",
+        "OEInterStressRaising_then_AFTradA": "*w*é*r*u*l*d*u"
+      }
+    }
+  },
+  "z_loss": {
+    "MonosyllabicFinalZLoss": {
+      "PNWGmcILowering": {
+        "iz": {
+          "input": "*i*z",
+          "PNWGmcILowering_then_MonosyllabicFinalZLoss": "*ī",
+          "MonosyllabicFinalZLoss_then_PNWGmcILowering": "*ī"
+        },
+        "hiz": {
+          "input": "*x*i*z",
+          "PNWGmcILowering_then_MonosyllabicFinalZLoss": "*x*ī",
+          "MonosyllabicFinalZLoss_then_PNWGmcILowering": "*x*ī"
+        },
+        "wiraz": {
+          "input": "*w*i*r*a*z",
+          "PNWGmcILowering_then_MonosyllabicFinalZLoss": "*w*e*r*a*z",
+          "MonosyllabicFinalZLoss_then_PNWGmcILowering": "*w*e*r*a*z"
+        },
+        "mizdai": {
+          "input": "*m*í*z*d*ē",
+          "PNWGmcILowering_then_MonosyllabicFinalZLoss": "*m*é*z*d*ē",
+          "MonosyllabicFinalZLoss_then_PNWGmcILowering": "*m*é*z*d*ē"
+        }
+      },
+      "AFHillB": {
+        "iz": {
+          "input": "*i*z",
+          "AFHillB_then_MonosyllabicFinalZLoss": "*ē",
+          "MonosyllabicFinalZLoss_then_AFHillB": "*ī"
+        },
+        "hiz": {
+          "input": "*x*i*z",
+          "AFHillB_then_MonosyllabicFinalZLoss": "*x*ē",
+          "MonosyllabicFinalZLoss_then_AFHillB": "*x*ī"
+        },
+        "wiraz": {
+          "input": "*w*i*r*a*z",
+          "AFHillB_then_MonosyllabicFinalZLoss": "*w*e*r*a*z",
+          "MonosyllabicFinalZLoss_then_AFHillB": "*w*e*r*a*z"
+        },
+        "mizdai": {
+          "input": "*m*í*z*d*ē",
+          "AFHillB_then_MonosyllabicFinalZLoss": "*m*é*z*d*ē",
+          "MonosyllabicFinalZLoss_then_AFHillB": "*m*é*z*d*ē"
+        }
+      },
+      "AFHillZ": {
+        "iz": {
+          "input": "*i*z",
+          "AFHillZ_then_MonosyllabicFinalZLoss": "*ē",
+          "MonosyllabicFinalZLoss_then_AFHillZ": "*ī"
+        },
+        "hiz": {
+          "input": "*x*i*z",
+          "AFHillZ_then_MonosyllabicFinalZLoss": "*x*ē",
+          "MonosyllabicFinalZLoss_then_AFHillZ": "*x*ī"
+        },
+        "wiraz": {
+          "input": "*w*i*r*a*z",
+          "AFHillZ_then_MonosyllabicFinalZLoss": "*w*i*r*a*z",
+          "MonosyllabicFinalZLoss_then_AFHillZ": "*w*i*r*a*z"
+        },
+        "mizdai": {
+          "input": "*m*í*z*d*ē",
+          "AFHillZ_then_MonosyllabicFinalZLoss": "*m*é*z*d*ē",
+          "MonosyllabicFinalZLoss_then_AFHillZ": "*m*é*z*d*ē"
+        }
+      }
+    },
+    "EAFFinalZDeletion": {
+      "PNWGmcILowering": {
+        "iz": {
+          "input": "*i*z",
+          "PNWGmcILowering_then_EAFFinalZDeletion": "*i*z",
+          "EAFFinalZDeletion_then_PNWGmcILowering": "*i*z"
+        },
+        "hiz": {
+          "input": "*x*i*z",
+          "PNWGmcILowering_then_EAFFinalZDeletion": "*x*i*z",
+          "EAFFinalZDeletion_then_PNWGmcILowering": "*x*i*z"
+        },
+        "wiraz": {
+          "input": "*w*i*r*a*z",
+          "PNWGmcILowering_then_EAFFinalZDeletion": "*w*e*r*a",
+          "EAFFinalZDeletion_then_PNWGmcILowering": "*w*e*r*a"
+        },
+        "mizdai": {
+          "input": "*m*í*z*d*ē",
+          "PNWGmcILowering_then_EAFFinalZDeletion": "*m*é*z*d*ē",
+          "EAFFinalZDeletion_then_PNWGmcILowering": "*m*é*z*d*ē"
+        }
+      },
+      "AFHillB": {
+        "iz": {
+          "input": "*i*z",
+          "AFHillB_then_EAFFinalZDeletion": "*e*z",
+          "EAFFinalZDeletion_then_AFHillB": "*e*z"
+        },
+        "hiz": {
+          "input": "*x*i*z",
+          "AFHillB_then_EAFFinalZDeletion": "*x*e*z",
+          "EAFFinalZDeletion_then_AFHillB": "*x*e*z"
+        },
+        "wiraz": {
+          "input": "*w*i*r*a*z",
+          "AFHillB_then_EAFFinalZDeletion": "*w*e*r*a",
+          "EAFFinalZDeletion_then_AFHillB": "*w*e*r*a"
+        },
+        "mizdai": {
+          "input": "*m*í*z*d*ē",
+          "AFHillB_then_EAFFinalZDeletion": "*m*é*z*d*ē",
+          "EAFFinalZDeletion_then_AFHillB": "*m*é*z*d*ē"
+        }
+      },
+      "AFHillZ": {
+        "iz": {
+          "input": "*i*z",
+          "AFHillZ_then_EAFFinalZDeletion": "*e*z",
+          "EAFFinalZDeletion_then_AFHillZ": "*e*z"
+        },
+        "hiz": {
+          "input": "*x*i*z",
+          "AFHillZ_then_EAFFinalZDeletion": "*x*e*z",
+          "EAFFinalZDeletion_then_AFHillZ": "*x*e*z"
+        },
+        "wiraz": {
+          "input": "*w*i*r*a*z",
+          "AFHillZ_then_EAFFinalZDeletion": "*w*i*r*a",
+          "EAFFinalZDeletion_then_AFHillZ": "*w*i*r*a"
+        },
+        "mizdai": {
+          "input": "*m*í*z*d*ē",
+          "AFHillZ_then_EAFFinalZDeletion": "*m*é*z*d*ē",
+          "EAFFinalZDeletion_then_AFHillZ": "*m*é*z*d*ē"
+        }
+      }
+    }
+  },
+  "rhotacism": {
+    "PNWGmcILowering": {
+      "mizdai": {
+        "input": "*m*í*z*d*ē",
+        "PNWGmcILowering_then_EAFRhotacism": "*m*é*r*d*ē",
+        "EAFRhotacism_then_PNWGmcILowering": "*m*é*r*d*ē"
+      },
+      "liznojana": {
+        "input": "*l*í*z*n*ō*j*a*n*ą",
+        "PNWGmcILowering_then_EAFRhotacism": "*l*í*r*n*ō*j*a*n*ą",
+        "EAFRhotacism_then_PNWGmcILowering": "*l*í*r*n*ō*j*a*n*ą"
+      },
+      "iz": {
+        "input": "*i*z",
+        "PNWGmcILowering_then_EAFRhotacism": "*i*z",
+        "EAFRhotacism_then_PNWGmcILowering": "*i*z"
+      }
+    },
+    "AFHillB": {
+      "mizdai": {
+        "input": "*m*í*z*d*ē",
+        "AFHillB_then_EAFRhotacism": "*m*é*r*d*ē",
+        "EAFRhotacism_then_AFHillB": "*m*é*r*d*ē"
+      },
+      "liznojana": {
+        "input": "*l*í*z*n*ō*j*a*n*ą",
+        "AFHillB_then_EAFRhotacism": "*l*é*r*n*ō*j*a*n*ą",
+        "EAFRhotacism_then_AFHillB": "*l*é*r*n*ō*j*a*n*ą"
+      },
+      "iz": {
+        "input": "*i*z",
+        "AFHillB_then_EAFRhotacism": "*e*z",
+        "EAFRhotacism_then_AFHillB": "*e*z"
+      }
+    },
+    "AFHillR": {
+      "mizdai": {
+        "input": "*m*í*z*d*ē",
+        "AFHillR_then_EAFRhotacism": "*m*í*r*d*ē",
+        "EAFRhotacism_then_AFHillR": "*m*é*r*d*ē"
+      },
+      "liznojana": {
+        "input": "*l*í*z*n*ō*j*a*n*ą",
+        "AFHillR_then_EAFRhotacism": "*l*í*r*n*ō*j*a*n*ą",
+        "EAFRhotacism_then_AFHillR": "*l*é*r*n*ō*j*a*n*ą"
+      },
+      "iz": {
+        "input": "*i*z",
+        "AFHillR_then_EAFRhotacism": "*i*z",
+        "EAFRhotacism_then_AFHillR": "*i*z"
+      }
+    },
+    "AFHillZ": {
+      "mizdai": {
+        "input": "*m*í*z*d*ē",
+        "AFHillZ_then_EAFRhotacism": "*m*é*r*d*ē",
+        "EAFRhotacism_then_AFHillZ": "*m*í*r*d*ē"
+      },
+      "liznojana": {
+        "input": "*l*í*z*n*ō*j*a*n*ą",
+        "AFHillZ_then_EAFRhotacism": "*l*é*r*n*ō*j*a*n*ą",
+        "EAFRhotacism_then_AFHillZ": "*l*í*r*n*ō*j*a*n*ą"
+      },
+      "iz": {
+        "input": "*i*z",
+        "AFHillZ_then_EAFRhotacism": "*e*z",
+        "EAFRhotacism_then_AFHillZ": "*e*z"
+      }
+    }
+  },
+  "umlaut_recovery": {
+    "PNWGmcILowering": {
+      "nistijana": {
+        "input": "*n*i*s*t*i*j*a*n*a",
+        "PNWGmcILowering_then_OEIUmlaut": "*n*i*s*t*i*j*a*n*a",
+        "OEIUmlaut_then_PNWGmcILowering": "*n*i*s*t*i*j*a*n*a"
+      },
+      "listiz": {
+        "input": "*l*i*s*t*i*z",
+        "PNWGmcILowering_then_OEIUmlaut": "*l*i*s*t*i*z",
+        "OEIUmlaut_then_PNWGmcILowering": "*l*i*s*t*i*z"
+      },
+      "liznijana": {
+        "input": "*l*i*z*n*i*j*a*n*a",
+        "PNWGmcILowering_then_OEIUmlaut": "*l*i*z*n*i*j*a*n*a",
+        "OEIUmlaut_then_PNWGmcILowering": "*l*i*z*n*i*j*a*n*a"
+      }
+    },
+    "AFHillB": {
+      "nistijana": {
+        "input": "*n*i*s*t*i*j*a*n*a",
+        "AFHillB_then_OEIUmlaut": "*n*i*s*t*i*j*a*n*a",
+        "OEIUmlaut_then_AFHillB": "*n*e*s*t*i*j*a*n*a"
+      },
+      "listiz": {
+        "input": "*l*i*s*t*i*z",
+        "AFHillB_then_OEIUmlaut": "*l*i*s*t*i*z",
+        "OEIUmlaut_then_AFHillB": "*l*e*s*t*i*z"
+      },
+      "liznijana": {
+        "input": "*l*i*z*n*i*j*a*n*a",
+        "AFHillB_then_OEIUmlaut": "*l*i*z*n*i*j*a*n*a",
+        "OEIUmlaut_then_AFHillB": "*l*e*z*n*i*j*a*n*a"
+      }
+    },
+    "AFHillSt": {
+      "nistijana": {
+        "input": "*n*i*s*t*i*j*a*n*a",
+        "AFHillSt_then_OEIUmlaut": "*n*i*s*t*i*j*a*n*a",
+        "OEIUmlaut_then_AFHillSt": "*n*e*s*t*i*j*a*n*a"
+      },
+      "listiz": {
+        "input": "*l*i*s*t*i*z",
+        "AFHillSt_then_OEIUmlaut": "*l*i*s*t*i*z",
+        "OEIUmlaut_then_AFHillSt": "*l*e*s*t*i*z"
+      },
+      "liznijana": {
+        "input": "*l*i*z*n*i*j*a*n*a",
+        "AFHillSt_then_OEIUmlaut": "*l*i*z*n*i*j*a*n*a",
+        "OEIUmlaut_then_AFHillSt": "*l*i*z*n*i*j*a*n*a"
+      }
+    },
+    "AFHillZ": {
+      "nistijana": {
+        "input": "*n*i*s*t*i*j*a*n*a",
+        "AFHillZ_then_OEIUmlaut": "*n*i*s*t*i*j*a*n*a",
+        "OEIUmlaut_then_AFHillZ": "*n*i*s*t*i*j*a*n*a"
+      },
+      "listiz": {
+        "input": "*l*i*s*t*i*z",
+        "AFHillZ_then_OEIUmlaut": "*l*i*s*t*i*z",
+        "OEIUmlaut_then_AFHillZ": "*l*i*s*t*i*z"
+      },
+      "liznijana": {
+        "input": "*l*i*z*n*i*j*a*n*a",
+        "AFHillZ_then_OEIUmlaut": "*l*i*z*n*i*j*a*n*a",
+        "OEIUmlaut_then_AFHillZ": "*l*e*z*n*i*j*a*n*a"
+      }
+    }
+  }
+}

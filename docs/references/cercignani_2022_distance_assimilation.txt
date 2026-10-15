@@ -1,0 +1,1047 @@
+Fausto Cercignani, "On the Germanic and Old High German distance
+assimilation changes". Linguistik online 116, 4/22 (2022), pp. 41-59.
+DOI 10.13092/lo.116.8889. Citation key: Cercignani2022. CC BY 3.0.
+PDF SHA256: 7149856ecd989a93450d2edfa6a8eb51e363090cfb33c62b67304bc750a815bf
+
+SOURCE AND METHOD
+-----------------
+Born-digital journal PDF (Word 'Print To PDF' export carrying the journal's
+running heads, ISSN and folios 41-59); extracted with `pdftotext -layout`.
+No OCR. The PDF stays untracked under docs/references/ per .gitignore.
+
+ENCODING REPAIR
+---------------
+The Symbol font emits its list dash as U+F02D (private use). All 9
+occurrences are replaced by U+2212 MINUS SIGN, which is what Symbol 0x2D
+encodes; they are list bullets introducing the OHG phonemic splits (p. 56-57),
+never linguistic notation. No other substitution, NFC normalization or
+correction was applied. Close-vowel dots (e.g. "ẹ"), length colons and IPA
+remain as the publisher emitted them.
+
+PAGE NUMBERING
+--------------
+Printed pages 41-59; 19 sheets. Printed folio = PDF sheet + 40.
+Folios self-confirmed at page edges: 18/19 (unconfirmed: 41).
+The opening p. 41 is anchored by the article's own first-page citation line
+("Linguistik online 116, 4/22") and the following folio 42.
+Page markers below denote PRINTED folios.
+
+RELATION TO OTHER HOLDINGS
+--------------------------
+Cercignani's 1979 (JEGP 78) and 1980 (Language 56) articles are separate
+holdings; this 2022 article restates and extends their position on the
+five-phoneme short-vowel system and is not an independent vote for it.
+
+=== page 41 ===
+
+                    On the Germanic and Old High German
+                         distance assimilation changes
+
+                                     Fausto Cercignani (Milano)
+
+
+
+                                                 Abstract
+This article revisits a vexed question, namely the phonological interpretation of the Germanic
+and Old High German distance assimilation changes. It will be argued that 1) the prehistoric
+Germanic subsystem of short vowels should be reconstructed with five phonemes (/i/, /e/, /u/,
+/o/, /a/), not with four (/i/, /e/, /u ~ o/, /a/) or with three (/i ~ e/, /u ~ o/, /a/); 2) the Old High
+German umlaut phenomena produced phonemic changes before the factors that triggered them
+off changed or disappeared, because the umlaut allophones gradually shifted to such a degree
+that they became distinctive in the phonological system of the language and contrastive at a
+lexical level.
+
+
+
+
+    The inheritance from twentieth century structuralists still shapes our contemporary landscape in
+    many ways, whether we are building on structuralist insights, sharpening them, or challenging
+    them.
+                                                                      (Honeybone/Salmons 2015: 32)
+
+1       Introduction
+It is a well-known fact that the stressed vowels of the early North and West Germanic languages
+underwent distance assimilation changes that affected the short mid and high vowels *[i], *[e],
+*[u], and *[o], as well as the diphthong *[eu]. The subsequent Old High German developments
+generally known as i-umlauts affected a great number of vowels, both short and long, as well
+as the inherited diphthongs.
+The early and later changes were triggered off by similar factors, and their phonological
+consequences have been traditionally described by having recourse to similar assumptions. The
+first assumption is that the changes caused by specific sounds in unstressed or weakly stressed
+syllables resulted in complementary distributions of the relevant stressed vowels. The second
+assumption is that the new allophones became phonemes when the relevant sounds in the
+following syllable changed or disappeared.
+Before analysing in detail the developments in question, it will be necessary to discuss the
+assumption on which the whole traditional description rests, namely that the new allophones
+became phonemes when the relevant sounds in the following syllable changed or disappeared.
+
+
+
+
+                     Linguistik online 116, 4/22 − http://dx.doi.org/10.13092/lo.116.8889
+                                                 CC by 3.0
+
+=== page 42 ===
+
+42                                   Linguistik online 116, 4/22
+
+
+There seems to be no doubt that distance assimilation changes operate across syllable
+boundaries and begin as low-level phonetic processes. What is still controversial in a diachronic
+perspective is the subsequent development of the relevant allophones.
+Yet it seems reasonable to assume that it all depends on the degree of differentiation between
+the original phone and the new phone. If the assimilation process is weak or still at an early
+stage then the new phone shares with the original phone its basic position in the phonological
+system. If the assimilation process is strong or has already reached an advanced stage, then the
+new phone belongs to a different basic position in the phonological system. In the former case
+the loss or disappearance of the factors that triggered off the assimilation results in a reversal
+of the new phone to its original phonetic features, so that the umlaut allophone is lost. In the
+latter case, the umlaut allophone becomes a phoneme before the loss of the factors that triggered
+off the assimilation. This does not imply that the phonemicization takes place immediately,
+since the relevant allophone reaches its final stage through a gradual development. Take, for
+example, the assimilation produced by an i-sound on the vowel /u/ in the preceding syllable. At
+an early stage the new phone would be a somewhat advanced back vowel [u̟], which would
+disappear if the triggering factors were lost. But at a later stage the new phone would be a front
+vowel [y], which would obviously belong to a different basic position in the phonological
+system.
+What has just been said requires a reconsideration of the definition of phoneme. The view that
+two phones belong to different phonemes only if they occur in opposition at a lexical level is
+misleading, because it ignores the systemic level. To decide whether a phone is an allophone
+or a phoneme it is necessary to take account also of the distinctions in the phonological system
+of the language. This can be shown by having recourse to the well-known case of the glottal
+fricative [h] and of the velar nasal [ŋ]. In today’s standard German, [h] occurs only before a
+vowel (as in Hut), whereas [ŋ] occurs only after a vowel (as in Ding, singen, Banke). If we
+refused to take account of the distinctions that can be established in the phonological system of
+the language, we would have to conclude that these two consonants do not possess phonemic
+status only because they never occur in mutual opposition. However, since we do take account
+of the systemic distinctions between fricatives and nasals, we assign the glottal phone to a
+fricative phoneme /h/ and the velar phone to the nasal phoneme /ŋ/.
+The definition of phoneme should therefore be reformulated by taking account not only of the
+lexical level, but also of the distinctions that can be established in the phonological system of
+the language.
+Having clarified this point, we can define the phoneme as a sound unit which is phonologically
+unique at any given stage of the language. Its uniqueness can be established by comparing the
+phones of the relevant language. Two cases are possible.
+The first case has been anticipated above. Two phones possess phonemic status because they
+are distinctive in the phonological system of the language. They are mutually exclusive at a
+lexical level but occur in opposition to other phones of the same category. Relevant examples
+
+
+
+
+                                        ISSN 1615-3014
+
+=== page 43 ===
+
+      Fausto Cercignani: On the Germanic and Old High German distance assimilation changes                         43
+
+
+in today’s German are /h/ and /ŋ/, which occur in oppositions like halten ↔ falten and singen
+↔ sinnen, lang ↔ Lamm.1
+In the second case, two phones possess phonemic status because they are distinctive in the
+phonological system of the language and are contrastive in equivalent or nearly equivalent
+proximity contexts. Examples of equivalent proximity context in today’s German are offen ↔
+Ofen, which shows the opposition /ɔ/ ↔ /o:/, and Hunden (dat. pl.) ↔ Hündin, which can be
+adduced to show the opposition /ʊ/ ↔ /ʏ/. The nearly equivalent proximity context can be
+exemplified by a pair like Miete ↔ Mode (/i:/ ↔ /o:/), or by a pair like wecken ↔ backen (/ɛ/
+↔ /a/).
+Having reconsidered the definition of phoneme2 so as to take account of the systemic level as
+well as of the lexical level, we may now proceed to consider the possible structural conse-
+quences of distance assimilation.
+As already mentioned, distance assimilation changes operate across syllable boundaries and
+begin as low-level phonetic processes. However, under certain conditions the gradual changes
+triggered off by specific sounds in the following syllable may result in the phonemicization of
+the relevant allophones. This may happen in two ways: 1) the new allophone of the relevant
+phoneme becomes identical with that of another phoneme; 2) the phonetic features of the new
+allophone become distinctive within the system and contrastive in equivalent or nearly
+equivalent proximity contexts. In either case, the specific factors that triggered off the
+assimilation change are still present.
+In the first case, the type of phonological change is a split with merger.3 The phoneme /A/ splits
+into /A/ and to identity with the pre-existing phoneme /B/. The result is a decrease in the
+incidence of /A/ and an increase in the incidence of /B/. This type of phonological change may
+me assumed to have occurred when */u/ was lowered to a pre-existing */o/ before a low or mid
+vowel sound in the next syllable, except when a nasal plus consonant intervened (see Chapter
+4, below).
+In the second case, the type of phonological change is a simple split. The phoneme /C/ splits
+into /C/ and the new phoneme /D/. The result is a decrease in the incidence of /C/ to the benefit
+of /D/. In this second case, the phonetic features of the allophone [D] become distinctive within
+the system and contrastive in equivalent or nearly equivalent proximity contexts, so that the
+allophone becomes the phoneme /D/. When this happens, the conditioning factors of the change
+are still present. This can be illustrated with instances that underwent the Old High German i-
+umlaut.4 When the gradual fronting of back vowels before i-sounds in the next syllable reached
+
+
+1 Obviously, the pairs singen ↔ sinnen and lang ↔ Lamm could not be adduced for the old period of the language,
+
+since at that time instances like singen and lang exhibited the sequence /ŋg/, so that the velar nasal did not possess
+phonemic status.
+2 For different theoretical approaches to the notion of phoneme and phonological change cf. Historical Phonology
+
+(2015), which provides numerous cross-references throughout the volume.
+3 Sometimes called “primary split” as opposed to “secondary split”, the latter also known as simple split. On split
+
+with merger and other types of phonemic change cf. Honeybone/Salmons (2015: 42–43).
+4 The Old High German i-umlaut is frequently cited in discussions on phonologization. Cf., e. g., Kiparsky (2015:
+
+563 et passim), who uses the “Stratal Optimality Theory” framework.
+
+                                                ISSN 1615-3014
+
+=== page 44 ===
+
+44                                       Linguistik online 116, 4/22
+
+
+its final target, the vowel system came to exhibit a new series of rounded front vowels, which
+were obviously distinct from the old unrounded front vowels, as well as from the rounded back
+vowels. Thus, the new vowel [ø:], for example, was now systemically distinct not only from
+[e:], but also from [o:]. Moreover, the new [ø:] now contrasted with both [e:] and [o:] in
+equivalent or nearly equivalent proximity contexts, irrespective of what followed in unstressed
+syllables. The new /ø:/, as in ōri (MHG ȫre) ‘Öhr, Nadelöhr’, contrasted both with /e:/, as in
+ērī beside ēra (MHG ēre) ‘Ehre’, and with /o:/, as in ōra (MHG ōre) ‘Ohr’.5
+As mentioned above, however, distance assimilation does not necessarily result in the phone-
+micization of the relevant allophone. This is because the trend to innovation may be weak or
+because the incipient rise of the allophone is interrupted by the loss of the factors that produced
+it. In the latter case the allophone simply “disappears”, in that it reverts to its original phonetic
+features. Thus, if we wanted to ascribe to Proto-Germanic the early distance assimilation
+changes in spite of the fact that they are not attested in Gothic, we would probably have to
+postulate weaker assimilation trends in Gothic than in the other Germanic languages.
+Having established how an allophone can become a phoneme before the conditioning context
+changes or disappears, we may now proceed to analyse both the early and the later distance
+assimilation changes.
+
+2       The early distance assimilation changes
+The developments in question may be provisionally summarized as follows: early raising and
+lowering affecting *[i] and *[e] as well as *[u] and *[o] before specific sounds in the next
+syllable.
+The traditional phonological interpretation of the these developments – which are often ascribed
+to Proto-Germanic – goes back, substantially, to a study by Moulton (1961: 5–14).6 It rests on
+the two assumptions mentioned above, namely that 1) the changes caused by specific sounds in
+unstressed or weakly stressed syllables resulted in complementary distributions of the relevant
+stressed vowels and 2) the new allophones became phonemes when the relevant sounds in the
+following syllable changed or disappeared.
+This view is still widely (and sometimes tacitly) accepted, at least in part. Thus,
+Braune/Heidermanns (2018: 32) reports the status of PGmc [i] and [e] as still controversial, and
+explicitly state that PGmc [u] and [o] were allophones of a phoneme /u/ (cf. ibd.: 32, 53).
+Similarly, Fulk states that “it has sometimes been argued that there was no asymmetry in the
+PGmc. short vowels, rather that e and i were allophones, just as o and u were” (ibd.: 57).
+However, the first point postulated by the traditional interpretation cannot be accepted at its
+face value, since it is by no means certain that the changes in question resulted in genuine
+complementary distributions dependent on the following syllable in either Proto-Germanic or
+in the pre-literary stages of Old High German. Irrespective of whether we prefer to reconstruct
+
+
+5 When not otherwise stated, all the examples cited in this article are taken from AWB (1952–); Köbler (2014)
+
+and MWB (2006–).
+6 For a recent discussion (with ample bibliography) of umlaut phenomena in the Germanic languages and of the
+
+preceding assimilatory changes of stressed vowels in Germanic cf. Fulk (2018: 55–59.)
+
+                                            ISSN 1615-3014
+
+=== page 45 ===
+
+         Fausto Cercignani: On the Germanic and Old High German distance assimilation changes                   45
+
+
+these developments for Proto-Germanic or pre-literary Old High German, this appears to be
+true not only for *[i] and *[e], but also for *[u] and *[o].7
+
+3          *[i] and *[e]
+The original incidence and distribution of these two vowels was altered by two splits with
+merger:
+– the raising of stressed *[e] to *[i] before nasal plus consonant or before a high vowel sound
+in the next syllable, as in *wenda- > *winda- > OHG wint ‘Wind’, *esti- > *isti- > OHG ist
+‘ist’, *rebja- > ribja- > OHG rippi ‘Rippe’8, *felu- > *filu- > OHG filu, filo ‘viel’9;
+– the lowering of *[i] to *[e] before a low or mid vowel sound in the next syllable, as in
+*spik(k)a- > *spek(k)a- > OHG spek ‘Speck’, *libēn > *lebēn > OHG lebēn ‘leben’, *likkōn >
+lekkōn > OHG leccōn ‘lecken’.
+These changes cannot be shown to have occurred in Gothic (cf. Fulk 2018: 57–60), and the
+raising of *[e] to *[i] before *[u] in the next syllable can be assumed only for the prehistory of
+Old Saxon and Old High German (cf. Cercignani 1979: 81). And even if an u-umlaut of *[e] to
+*[i] could be assumed for North and West Germanic as a whole, it would still be impossible to
+postulate a complementary distribution of *[i] and *[e] dependent on the following syllable in
+the prehistory of any of the relevant languages. For not only in North Germanic, but also in Old
+Saxon and Old High German there were positions in which the contrast */i/ ↔ */e/ was
+preserved. The relevant contexts are those in which either *[e] or no vowel occurred in the
+following syllable, since the opposition */i/ ↔ */e/ can be shown to have been preserved at
+least in originally disyllabic forms in *[-e] as well as in monosyllables (Cercignani 1979: 80).
+A reconstructed disyllabic minimal pair is provided by the 2.sg. imp. forms *wige ↔ *wege,10
+whereas the monosyllabic pair *it (OHG iz; MHG iz, ez11) ‘es’ ↔ *sehs (OHG MHG sehs)
+‘sechs’ confirms that *[i] and *[e] were not in complementary distribution dependent on the
+following syllable.
+Moreover, forms like OHG fisk ‘Fisch’ (< *fiska-), OHG linēn, ‘lehnen’ (< *hlinēn), OHG
+skidōn ‘scheiden’ (< *skidōn), OHG pl. feldir ‘Felder’ (cf. feld < *felþa-), OHG dat. herzin
+‘Herzen’ (cf. herza < *hertōn-) and, with variation, OHG skif, skef ‘Schiff’ (< *skipa-), OHG
+
+
+7 The exact phonetic value of *[e] and *[o] cannot of course be established, but the tendency to lower *[u] to *[o]
+
+(see Chapter 4, below) and the variation between *[i] and *[e] (see Chapter 3, below) favours the assumption that
+*[o] and *[e] were mid-close, not mid-open vowels.
+8 The raising of *[e] to *[i] occurred also before an intervening /ww/, as in *trewwja- > *trewwi- > *triwwi- >
+
+OHG triuwi (triuuui, triuui) ‘treu’ vs. *trewwō- > OHG trewwa (treuua) ‘Treue’. But the first two elements of the
+sequence /eww/ soon merged with the diphthong */iu/ from */eu/ (see Chapter 5, below), so that an instance like
+OHG trewwa became triuwa (triuua). No need, therefore, to postulate a new pre-OHGm *[eu], which Moulton
+(1961: 15–16) ascribed to a phoneme */eu ~ eo/.
+9 The instance *sedu- > *sidu- > OHG situ is inconclusive, since it may have original -i- (cf. Köbler 2014: s. v.
+
+situ).
+10 Pre-OHG *wigan (~ *wihan) > OHG *wigan, MHG (er)wigen ‘ermatten’, ‘kämpfen’ and Pre-OHG *wegan >
+
+OHG wegan, MHG wegen ‘bewegen’. For the loss of the final vowel in the original imperative forms cf. Fulk
+(2018: 282–283).
+11 The form ez beside iz is first attested in the eleventh century (cf. KSW 2018: 385).
+
+
+                                               ISSN 1615-3014
+
+=== page 46 ===
+
+46                                          Linguistik online 116, 4/22
+
+
+fihu, fehu ‘Vieh’ (< *fehu-), show that the original vowels were not infrequently preserved or
+reintroduced.12
+Although we should be aware of the fact that analogy cannot explain everything (Moulton 1961:
+9; Russ 1978: 41), many of these instances can be explained as due to the analogy of related
+forms. However, at least a few (e. g. ebur < *ebura- ‘Eber’) suggest that the changes in question
+may well have been the result of tendencies rather than of regular phonological changes.
+In any case, even if we chose, for the sake of the argument, to interpret all the instances as
+analogical forms, we should nevertheless conclude that the two front vowels preserved their
+phonemic status as */i/ and */e/, because their analogical reintroduction in specific forms could
+only occur if the two vowels had been retained as separate, independent phonemes. It is a well-
+known fact that allophones cannot be used analogically by the speaker, since they are produced
+automatically in a specific context.13 One might object that the analogy of related forms
+operated after the loss or change of the factors that triggered off or prevented umlaut, but the
+extensive interparadigmatic and intraparadigmatic changes produced by analogy in the
+Germanic languages suggest that these developments operated at an early period, when those
+factors were still present.
+But this is not all. Also the second point postulated by the traditional interpretation cannot be
+accepted at its face value. To assume that umlaut phenomena produced allophones which
+became phonemes when the relevant sounds in the following syllable changed or disappeared
+amounts to disregarding the fact that an umlaut allophone can become a phoneme before the
+loss of the factors that triggered off the assimilation (see Chapter 1, above).
+Thus, even if we chose to ignore the evidence presented above, we would not be entitled to
+consider the two phones *[i] and *[e] as allophones of a single phoneme. On the contrary, we
+should conclude that the two vowels possessed phonemic status, because they would be
+distinctive at a systemic level and contrastive at a lexical level. At a systemic level, they would
+be distinct from their long counterparts */i:/ and */e:/ and, consequently, they would be distinct
+from each other. Moreover, they would be contrastive with */i:/ and */e:/, respectively, as well
+as mutually contrastive in equivalent or nearly equivalent proximity contexts, irrespective of
+what followed in unaccented syllables. This may be exemplified with forms like *wisō- (OHG
+wisa ‘Wiese’) and *wīsō- (OHG wīsa ‘Weisheit’), in which the short */i/ would contrast with
+*/i:/, as well as with forms like *skerō- (OHG skero ‘Scher’, ‘Schermaus’) and *skēro (OHG
+skiero ‘schier’ = ‘bald’), in which the short */e/ would contrast with */e:/ despite the well-
+known scarcity of instances exhibiting the long vowel.14 The contrast between the two short
+vowels may be exemplified with forms like *wistiz < *westiz (OHG wist ‘das Wesen’) and
+
+
+
+
+12 More instances in Braune/Heidermanns (2018: 50–53) and Fulk (2018: 55–59).
+13 It is a well-known fact that speakers are normally unaware of allophonic variation and sometimes resist sugges-
+
+tions that the phones involved are different.
+14 The long vowel /e:/, as in OHG hēr, hear, hiar (< *hēr), ‘hier’, reflects PGmc secondary */e:/ (/ē2/) of contro-
+
+versial origin (cf. Fulk 2018: 51–52).
+
+                                                ISSN 1615-3014
+
+=== page 47 ===
+
+      Fausto Cercignani: On the Germanic and Old High German distance assimilation changes                           47
+
+
+*westan (OHG westan ‘Westen’), as well as with many other instances exhibiting different
+equivalent or nearly equivalent proximity contexts.15
+We may then conclude that the changes presented above affected the incidence and distribution
+of */i/ and */e/, not their status as phonemes. The sounds in the second syllable triggered off or
+prevented the changes in question, but could not alter the fact that *[i] and *[e] in the first
+syllable remained distinctive at a systemic level as well as contrastive in equivalent or nearly
+equivalent proximity contexts.
+
+4        *[u] and *[o]
+It is usually assumed that PIE */o/ merged with */a/ in early Proto-Germanic (as in *gosti- >
+*gasti- ‘Gast’), so that */o/ was eliminated from the vowel system until the lowering of *[u] in
+favourable contexts produced an allophone *[o], which eventually split off from */u/ as the new
+phoneme */o/.
+This is the predominant view, despite the fact that there is some indication that the original */o/
+may have been retained in certain non-initial syllables (cf. Fulk 2018: 55–57, 87–90 and the
+literature cited there), for example in the acc. sg. of an-stems (*-on-m̥ > *-on-um > *-un) – cf.
+OHG gomon, gomun ‘Mann’. Moreover, */o/ was preserved in the old natural interjections
+*oh > OHG oh (beside ō) and *foi > OHG foi ‘ei’, while instances like *und, *unt > OHG unz
+‘bis’16 and *uz (> OHG ur) ‘aus, außer’ show that *[u] could also occur in monosyllabic words.
+On the strength of this evidence we may then conclude that the alleged complementary
+distribution of *[u] and *[o] should be rejected in favour of an opposition */u/ ↔ */o/. One
+might object that *[o] could be found only in interjections and in unstressed syllables, but this
+cannot obscure the fact that *[o] did occur at a lexical level.
+The low incidence of */o/ was of course increased by the lowering of */u/ before a low or mid
+vowel sound in the next syllable, except when a nasal plus consonant intervened.17 This split
+with merger of */u/ can be exemplified with instances like *wurda- > *worda- > OHG wort
+‘Wort’, *fulla- > folla- > OHG fol ‘voll’, *budan- > *bodan- > OHG boto ‘Bote’, etc., which
+should be compared with *kuzi- > OHG kuri ‘Kür’, *sunu- > OHG sunu ‘Sohn’, *wundō- >
+OHG wunta ‘Wunde’, etc.
+However, there are exceptions also to this lowering development. An instance like *sumara- >
+OHG sumar ‘Sommer’ and the well attested phonological variation between /u/ and /o/ in Old
+High German as well as in other Germanic languages (cf. Fulk 2018: 55–57),18 suggest that the
+original vowel was not infrequently preserved or reintroduced. Examples of this variation are
+
+
+15 These and other examples are necessarily presented in their prehistoric forms. It would be pointless to give only
+
+the corresponding attested forms. Moulton (1961: 9–12, 15) adduced the reconstructed pair *wistiz ‘das Wesen’ –
+*westaz ‘West’ in support of his */i ~ e/ theory.
+16 On the etymology of OHG unz cf. Köbler (2014: s. v. unz) and Lühr (1979: 117).
+17 Even if one accepted the traditional view that the early Proto-Germanic vocalic subsystem did not exhibit a
+
+short vowel */o/ (cf. e. g., Ringe 2006: 214), one should still explain the lowering of */u/ as part of the assimilatory
+trends of the period rather than as a mere system adjustment to eliminate asymmetry.
+18 Noreen (1923: 55) gives numerous examples for Old Norse, for example sonr, sunr (OHG sunu < *sunu-,
+
+‘Sohn’).
+
+                                                 ISSN 1615-3014
+
+=== page 48 ===
+
+48                                         Linguistik online 116, 4/22
+
+
+*kuman- > OHG cuman, coman ‘kommen’, *fruma- > OHG fruma, froma ‘Fromme’, *fugla- >
+OHG fugal, fogal ‘Vogel’, *uber- > OHG ubar, obar ‘über’, etc.19
+These instances can frequently be explained as due to analogical levelling, which – as we have
+seen – presupposes the existence of two independent phonemes, in this case */u/ and */o/.
+Moreover, at least some of these instances suggest that the lowering did not operate with
+regularity, so that the change in question cannot be adduced in favour of a complementary
+distribution of *[u] and *[o] dependent on the following syllable.
+In any case, even if we could assume a genuine complementary distribution of *[u] and *[o]
+dependent on the following syllable, we would not be entitled to consider the two phones as
+allophones of a single phoneme. On the contrary, we should conclude that the two vowels had
+phonemic status, because they would be distinctive at a systemic level and contrastive at a
+lexical level. At a systemic level, they would be distinct from their long counterparts */u:/ and
+*/o:/ and, consequently, they would be distinct from each other. Moreover, they would be
+contrastive with */u:/ and */o:/, respectively, as well as mutually contrastive, in equivalent or
+nearly equivalent proximity contexts, irrespective of what followed in unaccented syllables.
+This may be exemplified with forms like *budila- (OHG butil ‘Büttel, Diener’) and *būdila-
+(OHG būtil ‘Beutel’), in which the short */u/ would contrast with */u:/20, just as in instances
+like *gomō- < *gumō- (OHG gomo ‘Mann’) and *gōmō- (OHG guomo ‘Gaumen’21) the short
+*/o/ would contrast with */o:/. The contrast between the two short vowels may be exemplified
+with forms like *wordan < *wurdan (OHG wort ‘Wort’) and *wurdiz (OHG wurt ‘Schick-
+sal’),22 as well as with many other instances in equivalent or nearly equivalent proximity
+contexts.
+We may then conclude that the changes presented above affected the incidence and distribution
+of */u/ and */o/, not their status as phonemes. The sounds in the second syllable triggered off
+or prevented the changes in question, but could not alter the fact that *[u] and *[o] in the first
+syllable remained distinctive at a systemic level as well as contrastive in equivalent or nearly
+equivalent proximity contexts.
+
+5       *[eu]
+The developments affecting this diphthong appear to have been similar to those already
+discussed for *[e] and *[u]. The raising of the first element of the diphthong is generally
+ascribed to Proto-Germanic, whereas the lowering of the second element appears to belong to
+the prehistory of the individual Germanic languages.23
+
+
+19 More examples in Braune/Heidermanns (2018: 53–56).
+20 In these examples, the contrast between */u/ and */u:/ obviously refers to the reconstructed forms *budila- and
+
+*būdila-, since the Old High German forms butil and būtil exhibited */y/ and */y:/, respectively (see Chapter 9,
+below).
+21 Today’s ‘Gaumen’ reflects an Old High German variant goumo from *gaumō- beside gōmō-.
+22 This pair was proposed by Moulton (1961: 15) in support of his */u ~ o/ theory and is sometimes taken up in
+
+other treatments – see, for example, Russ (1978: 40).
+23 Yet Prokosch (1939: 103) assumed that PGmc “eu appears normally as eo before a, as iu elsewhere”. Cf. Fulk
+
+(2018: 57–59 and fn. 4).
+
+                                              ISSN 1615-3014
+
+=== page 49 ===
+
+     Fausto Cercignani: On the Germanic and Old High German distance assimilation changes               49
+
+
+With regard to Old High German, we should in any case assume a pre-literary split of */eu/ into
+*/iu/ and */eo/, with dialect differences:
+– */eu/ became */iu/ before a high vowel sound in the next syllable, as in *deurja- > OHG tiuri
+‘teuer’, *leugu > OHG liugu ‘(ich) lüge’, etc. But in Upper German, though not in Franconian,
+the raising of the first element of the diphthong occurred also before a labial or velar consonant
+irrespective of the vowel sound in the next syllable, as in *leugan- > Upper German liugan,
+Franconian liogan ‘lügen’.
+– */eu/ became */eo/ (which subsequently changed to /io/ by dissimilation) before a low or mid
+vowel sound in the next syllable, as in *deuza- > OHG teor, tior ‘Tier’, *geutō- > OHG giozo
+‘fließendes Wasser’, etc. But in Upper German, *[eu] became *[iu] also before a labial or velar
+consonant irrespective of the vowel sound in the next syllable, as in *leugan- > Upper German
+liugan, Franconian liogan ‘lügen’.24
+As in the case of *[e] and *[u], we are not entitled to assume an allophonic variation */iu ~ eo/
+(cf. Moulton 1961: 12; Russ 1978: 54), since the split in question produced two units which
+were systemically distinctive among the diphthongs (*/iu/, */eo/, */ai/, */au/) as well as
+contrastive in equivalent or nearly equivalent proximity contexts, irrespective of what followed
+in unaccented syllables.
+This may be exemplified with forms like *liubjan < *leubjan (OHG liuben ‘lieben’), *laibjan
+(OHG leiben ‘leiben = übriglassen’) and *laubjan (OHG louben ‘erlauben’), in which */iu/
+contrasts with */ai/ and */au/, just as in instances like *leobō < *leubō (OHG lioba ‘Liebe’),
+*laibō (OHG leiba ‘Überbleibsel’) and *lauba- (OHG loub ‘Laub’) the diphthong */eo/ con-
+trasts with */ai/ and */au/. The contrast between */iu/ and */eo/ may be exemplified with forms
+like *niusen < *neuhsjan (OHG MHG niusen = nüsen ‘versuchen’) and *[h]niosan < *hneusan
+(OHG [h]niosan, MHG niesen ‘niesen’).
+
+6       Interim summary
+Neither the two front vowels nor the two back vowels discussed above can be assumed to have
+been allophones of a single phoneme in the prehistory of the Germanic languages. The same
+applies to the two diphthongs developed from */eu/. At an early stage of its pre-literary
+development,25 the Old High German short vowel subsystem exhibited five phonemes: */i/ and
+*/e/, */u/ and */o/, as well as */a/ (as in *halsa- > OHG hals ‘Hals’); the subsystem of
+diphthongs exhibited four phonemes: */iu/ and */eo/, as well as */ai/ and */au/. Examples of
+*/ai/ are *baina- > OHG bain > bein ‘Bein’ and *aizō- > OHG ēra ‘Ehre’. Examples of /au/ are
+*hlaupan- > OHG hlauffan > loufan ‘laufen’ and *rauda- > OHG rōt ‘rot’.
+
+
+
+
+24 As Salmons (2012: 129) notes, “Franconian has generalized more vowel lowering than Upper German”.
+25 The two subsystems mentioned above are here ascribed to the prehistory of Old High German rather than to
+
+Proto-Germanic or North and West Germanic, because the developments of the individual Germanic languages,
+though strikingly similar, are by no means identical, and the main focus here is on Old High German.
+
+                                           ISSN 1615-3014
+
+=== page 50 ===
+
+50                                         Linguistik online 116, 4/22
+
+
+7       The Old High German i-umlaut26
+The traditional phonological interpretation of the Old High German i-umlaut goes back,
+substantially, to studies by Twaddell (1938); Penzl (1949); Marchand (1956); Moulton (1961);
+Antonsen (1964); Penzl (1974); and others.
+As in the case of the older developments, this interpretation rests on the assumption that 1) the
+changes caused by specific sounds in unstressed or weakly stressed syllables resulted in
+complementary distributions of the relevant stressed vowels and 2) the new allophones became
+phonemes when the relevant sounds in the following syllable changed or disappeared.
+Handbooks on German historical phonology and on sound change normally accept this view –
+cf., for example, Russ (1978: 56–57) and Salmons (2021: 13–14).
+The pre-literary Old High German vowels affected by i-umlaut were [a], [a:], [o], [o:], [u], [u:],
+[iu], [uo], [ou] before i-sounds ([i], [i:], [j]) in the next syllable. The products of the relevant
+changes were (approximately) [æ] and [e], [æ:], [ø], [ø:], [y], [y:], [iy], [yø], [øy].
+Of these changes, the raising and fronting of [a] to [e] (traditionally called “primary umlaut of
+a”) is indicated in the Old High German sources (from ca. 750): generally by ⟨e⟩ like the reflex
+of PGmc */e/, occasionally also by the digraphs ⟨ae⟩ and ⟨ei⟩, the ligature ⟨æ⟩, and the caudata
+⟨ę⟩, which are occasionally used also for the reflex of PGmc */e/. The latter appears as ⟨ai⟩ only
+in the oldest sources – cf. Braune/Heidermanns (2018: 48, fn. 2; 44, fn. 4). In dictionaries and
+grammars the product of the new e-sound is often represented with ẹ (or ė) as opposed to ë from
+PGmc */e/.27 Normally, the two vowels are not distinguished in either the Middle or New High
+German orthography, but their separate identity appears to be confirmed by Middle High
+German rhymes and by recent dialects that show different reflexes of the two vowels –
+references in Braune/Heidermanns (2018: 48, fn. 1).
+The partial raising and fronting of [a] to [æ] (frequently called “secondary umlaut of a”) is
+occasionally indicated by ⟨e⟩ in Old High German and more frequently, though not consistently,
+with ⟨e⟩ and ⟨æ⟩ in the early Middle High German sources.28 If we take into account instances
+like Otfrid’s mehti and wehsit (see below, Chapter 8.1), we may conclude that in the Old High
+German period the letter ⟨e⟩ could represent three different short vowels: [e], [ɛ], and [æ].
+Attempts to indicate the other products of i-umlaut are found only in late Old High German,
+especially in the case of [y:], which is sometimes rendered with ⟨iu⟩ after the merger of /iu/
+(< PGmc */eu/) with umlauted /u:/ (cf. Braune/Heidermanns 2018: 79). However, the repre-
+
+
+
+26 For a review of various attempts to explain the umlaut phenomena in question cf. Fertig (1996), Simmler (2000:
+
+1322–1325) and Fulk (2018: 61–67 and fn. 18). The Old High German umlaut phenomena are discussed by various
+scholars in terms of different theoretical approaches also in Historical Phonology (2015), which provides numer-
+ous cross-references throughout the volume. For a psychophysical phonetic interpretation of the Old High German
+umlaut cf. Schulze (2010). Liberman (2007: 19 et passim) suggests that i-umlaut was due to intervening palatalized
+consonants and rejects all explanations based on assimilation, as if the alleged palatalized consonants could be
+produced without some kind of assimilation. In an earlier attack on assimilation, he had tried to explain umlaut as
+a compensatory process caused by the weakening of і-sounds in unaccented syllables (cf. Liberman 1991: 132).
+27 But KSW (2018: 989) adopts ę instead of ë.
+28 Braune/Heidermanns (2018: 45–46, fn. 2). The letter ⟨e⟩ occurs also for [æ] at least in Otfrid.
+
+
+                                               ISSN 1615-3014
+
+=== page 51 ===
+
+     Fausto Cercignani: On the Germanic and Old High German distance assimilation changes                  51
+
+
+sentation of the other umlauted vowels remained incomplete until into the early New High
+German period.
+Since i-umlaut is caused by i-sounds in the following syllable, the relevant changes must have
+taken place before the factors that triggered them off changed or disappeared. This means that
+i-umlaut was completed before or during the Old High German period (ca. 750–1050)29, even
+if it is not normally indicated in the available sources (but see below, Chapters 8.1, 9). The gap
+between the time when the relevant changes occurred and the time when the available sources
+indicate (though not invariably) the umlauted vowels has generally been regarded as a difficulty
+in the reconstruction of the processes involved. Some scholars have postulated two different
+periods in which i-umlaut was active, but this hypothesis conflicts with the available evidence,
+since the i-sounds in unstressed or weakly stressed syllables changed or disappeared by the end
+of the Old High German period at the latest: [i] and [i:] were weakened to approximately [ǝ],
+while [j] disappeared even earlier (cf. Braune/Heidermanns 2018: 87–88; 158, fn. 2).
+In a well-known article published in 1938, William F. Twaddell tried to resolve this difficulty
+by maintaining that there was no reason for the scribes to indicate the Old High German
+umlauted vowels, since these were merely allophones of the original phonemes. This approach
+was taken up and expanded by Herbert Penzl (1949), while the allophone theory in connection
+with i-umlaut was elaborated by other scholars, Marchand (1956) and Moulton (1961) among
+others.
+In a generally neglected article published in 1960, Henry Kratz (1960: 471) argued that
+“Twaddell and Penzl’s theories explaining OHG umlaut are not only not supported by any
+evidence”, but “are rather contradicted by what evidence is available”. Yet, Kratz failed to provide
+a satisfactory explanation of i-umlaut, in that he suggested that “the product of mutation was a
+series of central rather than front vowels” and that these “became fronted at different times,
+varying considerably from vowel to vowel and for different instances of the same vowel
+(depending on phonetic environment)”, and that all this happened over a long period extending
+from the eighth century to Middle High German times (cf. Kratz 1960: 473).30
+As we have seen, however, the Old High German i-umlaut was completed before or during the
+Old High German period, since the gradual phonetic developments in question require the
+presence of the triggering factors in the following syllable.
+In a later article published in 1972, Peter H. Erdmann lamented that Kratz’s objections to
+Twaddell and Penzl had not received the attention they deserved and set out to explain i-umlaut
+in structuralistic terms. The gist of his argumentation is that the Old High German umlaut
+should be described by having recourse to the phonological development known as conditioned
+or combinatory change (cf. Erdmann 1972: 22–23). However, this type of change can have
+different results, and Erdmann failed to offer a specific interpretation and description of the Old
+High German situation with special regard to how i-umlaut produced the new vowel phonemes.
+
+29 Iverson/Davis/Salmons (1994: 131–132) accept the view that only “primary umlaut” should be ascribed to Old
+
+High German. However, in a later article Iverson/Salmons state that both “primary” and “secondary” umlaut,
+though “structurally distinct”, “took place well within the OHG period” (1996: 69).
+30 Cf. Panieri (2012–2013), where the umlaut of OHG /a/ to /e/ is explained as having occurred through a stage
+
+[ǝ].
+
+                                             ISSN 1615-3014
+
+=== page 52 ===
+
+52                                         Linguistik online 116, 4/22
+
+
+8       The i-umlaut of OHG /a/
+The available evidence shows that the change in question produced two different results: 1) a
+vowel /æ/, when the raising and fronting influence of the i-sounds in the next syllable was
+counteracted by certain consonant clusters; 2) a vowel /e/ in other contexts. The first case will
+be referred to as “weak i-umlaut of /a/”; the second, as “strong i-umlaut of /a/”. The traditional
+terms “primary umlaut” and “secondary umlaut” were devised to indicate that the stage [e] was
+reached in Old High German and that the stage [æ] belongs to Middle High German. However,
+these terms are doubly misleading: chronologically as well as phonologically (see below).31
+Since the strong i-umlaut of /a/ is usually assumed to have interfered with the reflex of PGmc
+/e/, the point has been extensively discussed from a phonological point of view on the traditional
+assumption that the development in question implied a complex interplay of allophones.
+Marchand (1956: 89) gives the most detailed description of this interpretation, which substan-
+tially goes back to Twaddell (1938: 180–181) and Penzl (1949: 225–226), and which has been
+taken up (with variations) also by Fourquet (1952); Moulton (1961: 22–23); Antonsen (1964:
+189–190); Schulze (2010: 88–89), and others. As to phonemicization, the traditional view is
+always the same: the relevant allophones became phonemes when the i-sounds in the following
+syllable merged with other vowels or disappeared.
+With regard to the developments related to the i-umlaut of /a/, Marchand (1956: 89f.) assumes
+three periods of phonemic umlaut (including PGmc */e/ > */i/) and a single period of phonetic
+umlaut “from Proto-Germanic down to MHG times”. However, as already emphasized above,
+all the i-umlaut phenomena under discussion must have been completed in the Old High
+German period, and the phonemicization of the relevant allophones occurred when the
+triggering factors were still present.
+The raising and fronting of /a/ produced a split into /a/, /æ/ and /ë ̣/32. Both /æ/ and /ë ̣/ became
+systemically distinctive among the unrounded front vowels, since they were clearly distinct
+from the pre-existing front vowels /e/ and /i/. At a lexical level, they contrasted with other short
+front vowels in equivalent or nearly equivalent proximity contexts. Consequently they con-
+trasted also with /a/. Thus, for example, the /æ/ in [gi]slahti (MHG geslähte) ‘Geschlecht’
+contrasted with the /e/ and /i/ of sleht, sliht (< *slihtaz > *slehtaz) ‘schlicht’ and with the /a/ of
+slahta (< *slahtō) ‘Schlacht’, while the /ë ̣/ of [ir]belgen (< *balgjan) ‘(obsolete) bälgen’33
+contrasted with the /e/ of belgan (< *belgan) ‘(obsolete) belgen’34 and with the /a/ of balg
+(< *balgiz) ‘Balg’.
+A subsequent re-adjustment of the unrounded front vowels resulted in a lowering and fronting
+of the new /ë ̣/ to /e/ and, consequently, in a lowering of the pre-existing /e/ (< PGmc */e/) to
+/ɛ/. It is a well-known fact that the appearance of a new phoneme can trigger off the shift of
+
+31 Iverson/Salmons (1996) argue unconvincingly that “primary umlaut” did antecede “secondary umlaut”. All ef-
+
+forts in this direction are conciously or unconciously prompted by the fact that, unlike the weak i-umlaut of /a/,
+the strong i-umlaut of /a/ is normally indicated by the Old High German orthography (see Chapter 7, above).
+32 The symbol [ë ̣] stands for a slightly centralized [ẹ].
+33 Cf. Grimm/Grimm (1965–2018): s. v. bälgen (to flay or skin), which has ⟨ä⟩ instead of ⟨e⟩ on the analogy of
+
+Balg.
+34 Cf. Grimm/Grimm (1965–2018): s. v. belgen (to quarrel or wrangle). Cf. the new formation balgen from Balg.
+
+
+                                              ISSN 1615-3014
+
+=== page 53 ===
+
+      Fausto Cercignani: On the Germanic and Old High German distance assimilation changes         53
+
+
+another. However, the lowering of the old vowel did not affect forms in which /e/ had come to
+stand before a syllable containing an i-sound (see 8.2, below).
+As a result of these developments, Old High German came to exhibit three types of short e-
+sounds. This state of affairs is not surprising, especially if one considers that three types of short
+e-sounds are reported from Modern Swiss German (Russ 1990: 369), where their distribution
+is, however, somewhat different. In the line of development that led to Present Standard
+German, the three vowels were later reduced to one, the antecedent of today’s /ɛ/.
+
+8.1     The weak i-umlaut of /a/
+In the whole of the Old High German area (Franconian and Upper German) the weak i-umlaut
+of /a/ produced the new phoneme /æ/ before i-sounds in the next syllable, when the clusters /ht/,
+/hs/ or consonant plus /w/ intervened. This change is not normally indicated in the relevant
+sources until the Middle High German period, when this phoneme is rendered, though not
+consistently, with ⟨e⟩ or ⟨ä⟩. However, the letter ⟨e⟩ for /æ/ is occasionally used also in the Old
+High German period. Examples: mahti, mehti (in Otfrid) ‘Mächte’ (cf. maht ‘Macht’
+< *mahti-), gislahti (< *gislahti-) > MHG geslehte, geslähte ‘Geschlecht’, wahsit, wehsit (in
+Otfrid) ‘(er) wächst’ (cf. wahsan ‘wachsen’ < *wahsan-), etc. Before consonant plus /w/:
+garwen (< *garwjan-) ‘bereiten’.
+In Upper German, though not in Franconian, the new /æ/ developed also when the intervening
+clusters were /l/ or /r/ plus consonant,35 /h(h)/ < PGmc /k/, or /h/ < PGmc /h/. Examples:
+haltit/heltit ‘(er) hält’ (cf. haltan < *haldan-), warmen/wermen (< *warmjan-) ‘warmen’,
+sahhit/sehhit ‘(er) streitet’ (cf. sahhan < *sakan-) ‘streiten’, ahir/ehir (< *ahiz-) ‘Ähre’, etc.
+The fact that OHG /æ/ was not rendered with a specific letter should be explained with the
+circumstance that in the Middle Ages the Latin ligature ⟨æ⟩ and its variants ⟨ae⟩, ⟨ę⟩, though
+known to the scribes, were perceived as equivalents of ⟨e⟩, which in Old High German was
+used both for the reflex of PGm */e/ (as in erda < *erþō- ‘Erde’) and for the product of the
+strong i-umlaut of /a/ (as in festi < *fastja- ‘fest’). Moreover, in many instances there was
+morphological alternation between forms with /a/ and forms with /æ/ (as in maht – mahti,
+wahsan – wahsit, etc.), so that the forms with /æ/ were orthographically associated with the
+corresponding forms with /a/, which were obviously written with ⟨a⟩.
+As anticipated above (Chapter 8), the weak i-umlaut of /a/ produced a new phoneme, since this
+change made [æ] systemically distinctive among the unrounded front vowels and contrastive in
+equivalent or nearly equivalent proximity contexts, irrespective of what followed in unaccented
+syllables. Thus, for example, a pair like slahta (< *slahtō) ‘Schlacht’ – (gi)slahti/slehti
+(< *slahtja-) ‘Geschlecht’ (MHG geslehte, geslähte) could not be adduced as evidence of an
+allophonic variation /a ~ æ/, since in this case the two vowels were in contrast between /l/ and
+/h/, just as they contrasted in other equivalent or nearly equivalent proximity contexts. The same
+obviously applies also to an Upper German pair like haltan ‘halten’ – haltit/heltit (MHG hältet)
+‘(er) hält’, in which the two vowels were in contrast between /h/ and /l/ plus consonant.
+
+
+
+35 On the phonetic features of OHG /r/ cf. Kostakis (2019).
+
+
+                                              ISSN 1615-3014
+
+=== page 54 ===
+
+54                                          Linguistik online 116, 4/22
+
+
+8.2      The strong i-umlaut of /a/
+As a result of this change, [a] was raised and fronted to [ë ̣] before i-sounds in the next syllable,
+except when certain consonant clusters intervened (see Chapter 8.1, above). Examples: festi
+(< *fastja-) ‘fest’ (cf. fasto < *fasta- ‘fast’), ferit (< *fariþ) ‘(er) fährt’ (cf. faran ‘fahren’
+< faran-), etc.36
+As anticipated above (Chapter 8), the strong i-umlaut of /a/ produced a new phoneme, since [ë ̣]
+(subsequently [e]) became systemically distinctive among the unrounded front vowels and
+contrastive in equivalent or nearly equivalent proximity contexts, irrespective of what followed
+in unaccented syllables. Thus, for example, a pair like fasto ‘fast’ (< *fasta-) – festi ‘fest’
+(< *fastja-) could not be adduced as evidence of an allophonic variation /a ~ ë ̣/, since in this
+case the two vowels were in contrast between /f/ and /s/, just as they contrasted in other
+equivalent or nearly equivalent proximity contexts. For the same reasons a pair like erda
+(< *erþō-) ‘Erde’ – herti (< *harti-) ‘hart’ (cf. Braune/Heidermanns 2018: 48, fn. 1) cannot be
+adduced to show that [ɛ] (< PGmc /e/) and [e] (< umlauted /a/) were allophones of the same
+phoneme.
+The raising and fronting of /a/ to /ë ̣/ was followed by a re-adjustment of the unrounded front
+vowels, which resulted in a lowering of the new /ë ̣/ to /e/ (as in festi < *fastja- ‘fest’) and,
+consequently, of the old /e/ to /ɛ/ (as in erda < *erþō- ‘Erde’). However, the lowering of the old
+vowel did not affect forms in which /e/ had come to stand before a syllable containing an i-
+sound. No need, therefore, to postulate (despite Braune/Heidermanns 2018: 48, fn. 1) an i-
+umlaut of OHG /ɛ/ to /e/ when it came to stand before a syllable containing an i-sound, since in
+forms like ledīg (< *led+īg) ‘ledig’ and pelliz (< L pellīcia) ‘Pelz’ we can assume that the reflex
+of PGmc /e/ was not lowered to /ɛ/.37
+
+9        The i-umlaut of OHG /a:/, /o/, /o:/, /u/, /u:/, /iu/, /uo/, /ou/
+As mentioned above, the products of i-umlaut are not normally indicated in Old High German,
+except in the case of umlauted /a/ and /u:/ (see Chapters 7, 8.1, above), occasionally also of
+umlauted /a:/ (written ⟨e⟩), /o:/ (written ⟨oe⟩, ⟨oi⟩), /u/ (written ⟨ui⟩, ⟨i⟩, ⟨iu⟩, ⟨y⟩), and /uo/
+(written ⟨ui⟩)38. However, i-umlaut must have affected all vowels and diphthongs in the oldest
+period of the language, since the i-sounds in unstressed or weakly stressed syllables changed or
+disappeared by the end of the Old High German period at the latest (see 7, above).
+The i-umlaut of the relevant vowels resulted in splits when their respective allophones reached
+front values. At this stage, the new [æ:] came to be distinct from the pre-existing [e:] as well as
+from [a:], while the allophones of the back vowels became distinctive because the features of
+the other front vowels – [i(:)] and [e(:)] – were not rounded. Thus, not only [æ:], but also the
+
+
+36 The early loss of /i/ in the suffix /-it-/ explains such alternations as OHG brennen (*brannjan) – branta
+
+(< *brann[i]ta < *brannida) ‘brannte’, for which Grimm’s somewhat misleading term “Rückumlaut” (or retro-
+grade mutation) is still often used (KSW 2018: 785 and the literature cited there).
+37 But an instance like felis (< *felesa-, *falisa-) ‘Fels’ is in any case ambiguous, since the reflex of OHG /e/ in
+
+modern dialects may reflect the strong i-umlaut of /a/ (cf. Kroonen 2013, s. v. *fel[e]sa-). On *leþ- (> OHG led-)
+beside *liþ- cf. Kroonen (2013, s. v. liþu-).
+38 For these four cases cf. Braune/Heidermanns (2018: 57, fn. 2; 72–73, fn. 4; 55, fn. 5; 64, fn. 3).
+
+
+                                               ISSN 1615-3014
+
+=== page 55 ===
+
+      Fausto Cercignani: On the Germanic and Old High German distance assimilation changes                        55
+
+
+allophones of the back vowels became distinctive at a systemic level and contrastive at a lexical
+level in equivalent or nearly equivalent proximity contexts.
+The relevant changes may be presented as follows:
+− split of /a:/ into /a:/ and /æ:/, as in gāha (MHG gāhe) ‘Eile’ (obsolete ‘Gach’39) and gāhi
+  ‘jäh, jähe’ (MHG gæhe).
+− split of /o/ into /o/ and /ø/, as in holo (MHG hole, hol) ‘Loch’ (obsolete ‘Hohle’) and holī40
+  (MHG höle, höl) ‘Höhle’.
+− split of /o:/ into /o:/ and /ø:/, as in scōno (MHG schōne) ‘schon’ and scōni (MHG schȫne)
+  ‘schön’.
+− split of /u/ into /u/ and /y/, as in brunno (MHG brunne, burne41) ‘Brunnen’ (obsolete
+  ‘Brunne’) and brunnī (MHG brünne) ‘Brünne’.
+− split of /u:/ into /u:/ and /y:/, as in (h)lūtēn (MHG lūten) ‘lauten’ and (h)lūten, (h)liuten
+  (MHG liuten) ‘läuten’42.
+The i-umlaut of the diphthongs /iu/, /ou/, /uo/ resulted in splits when their elements came to
+exhibit front values. At this stage, they became distinctive at a systemic level and contrastive
+at a lexical level. Within the vowel system, the rounded front features of their second elements
+made them distinct from the pre-existing /ai/ > /ei/, which had unrounded front features in the
+second element. At a lexical level, /iy/, /øy/, /yø/ were now in opposition to /iu/, /ou/, /uo/ in
+equivalent or nearly equivalent proximity contexts.
+The changes that produced a new series of diphthongs exhibiting a second element with rounded
+front features may be presented as follows:
+− split of /iu/ into /iu/ and /iy/, as in hiuru (MHG hiure = hǖre) ‘heuer’ and hiuri (MHG
+  [ge]hiure = hǖre) ‘geheuer, einfältig’43.
+− split of /ou/ into /ou/ and /øy/, as in houwa (MHG houwe) ‘Haue’ and houwi (MHG höuwe)
+  ‘Heu’.
+− split of /uo/ into /uo/ and /yø/, as in suozo (MHG sueze, adv.)44 and suozi (MHG süeze)
+  ‘süß’45.
+
+39 Not to be confused with the adverb gach (OHG gāho, MHG gāch) – cf. Grimm/Grimm (1965–2018): s. v. Gach,
+f. and gach.
+40 For the obsolete form Hohle cf. Grimm/Grimm (1965–2018): s. v. Hohle. The form holī (originally *hulī- >
+MHG hüle) appears to derive from a new formation *holī- on the analogy of *hola- < *hula- (OHG hol). Both
+MHG höle and hole (*hulō-) underwent open syllable lengthening.
+41 Like the variant borne (NHG Born), MHG burne shows r-metathesis – cf. Grimm/Grimm (1965–2018): s. v.
+Born and Brunne.
+42 The ⟨ä⟩ in läuten is due to the analogy of the ⟨a⟩ in laut, the historical spelling of OHG MHG liuten being leuten
+
+(Grimm/Grimm (1965–2018): s. v. läuten), which has ⟨eu⟩ representing earlier /øy/ (/y:/ > /ʏy/ > /øy/ > /œʏ/ >
+/ɔɪ/). Cf. Leute (OHG liuti, MHG liute), with /y:/ from /iy/ (umlauted /iu/), and heute (OHG hiutu, MHG hiute)
+with /y:/ from /iu/.
+43 Soon after its rise, the phoneme /iy/ generally merged with /y:/ from umlauted /u:/. Before the end of the Old
+High German period a similar merger affected /iu/ in vast areas of Alemannic and Franconian (cf. Wiesinger 1970:
+233–236).
+44 Cf. also fruoi (MHG vrüeje) ‘früh’ vs. fruo (MHG frue, adj.) – KSW (2018: 335–336).
+45 For the subsequent development of the High German umlauted vowels cf. Cercignani (2022).
+
+
+                                                ISSN 1615-3014
+
+=== page 56 ===
+
+56                                          Linguistik online 116, 4/22
+
+
+That in the original sources the indication of all these changes was only sporadic (and
+sometimes dubious) is only apparently perplexing if we keep in mind that in the Old High
+German period little attempt was made to distinguish between short and long vowels and that
+the letter ⟨e⟩ was used for three different e-vowels: [ɛ] (erda < *erþō-), [e] (festi < *fastja-,
+Chapter 8.2), [æ] (mehti, Chapter 8.1), occasionally also for [æ:], as in gesprechi for gisprāhhi
+‘Gespräch’ (cf. Braune/Heidermanns 2018: 57, fn. 2). Even in the Middle High German period
+the situation was substantially the same as it was in late Old High German. Understandably
+enough, our handbooks and editions provide us with normalized lists of sounds and letters, but
+the old manuscripts offer a very different, and sometimes chaotic, picture. This can be seen
+even in an old book like Victor Michels’s primer, which provides an overall picture of how the
+Middle High German vowels were actually rendered by contemporary scribes (cf. Michels
+1921: 41–51).46 A more detailed presentation is to be found throughout the grammar of Klein,
+Solms and Wegera, in which the symbols used for umlauted vowels are given with regard to
+specific lexical or grammatical uses and with dialectal differentiations (KSW 2018: 76 et
+passim; KSW 2009: 106 et passim). Generally speaking, it should be noted that the letter ⟨o⟩,
+for example, continued to be used for both /ø/ and /ø:/, and the same applies to the new ⟨oͥ⟩ and
+⟨oͤ⟩. The confusion is even worse if we consider other vowels and diphthongs, since /u/ and /u:/,
+/y/ and /y:/, /uo/ and /yø/, as well as /ou/ and /øy/ were not infrequently rendered with the same
+letters, while the new ⟨uͥ⟩ was used for both /y/ and /y:/47.
+The lack of a distinction between short and long vowels reflects common Medieval Latin
+practice, the use of an acute (ʹ) or circumflex (ˆ) accent on long vowels being by no means
+regular. However, the confusion between umlauted and unumlauted vowels shows that the
+letters of the Latin alphabet were slowly and gradually adapted to the needs of the German
+language, and that this process of adaptation was probably to a certain extent delayed by the
+fact that in many instances there was morphological alternation between forms with unumlauted
+vowels and forms with umlauted vowels, so that the forms with umlauted vowels were
+orthographically associated with forms with the corresponding unumlauted vowels.
+
+10       Umlaut and morphology
+Both the early assimilation changes and the Old High German i-umlauts gave rise from the start
+to morphological alternations, which in turn opened the way to analogical formations. Thus, for
+example, we find that the /ɛ/ of OHG geban (< * geban-) ‘geben’ regularly alternates with the
+/i/ of OHG gibu (< *gebu) ‘(ich) gebe’, whereas OHG gebu (dat. sg. of geba ‘Gabe’) has /ɛ/
+from the accusative and nominative, the latter being itself analogically formed on the
+accusative: *gibu replaced by *geba.
+The morphological alternations connected with the products of the Old High German i-umlaut
+phenomena were obviously more extensive and became more and more important in producing
+new formations. Thus, for example, umlauted vowels came to be used as markers of the plural
+
+
+46 For the situation in early New High German cf. Wolf (2000: 1530–1532).
+47 The new uͥ derives from ui, just as aͤ derives from ae and oͤ from oe. When the rarer variant uͤ became frequent,
+
+the way was open for the reduction of the small letter ⟨e⟩ (in German cursive script: ⟨e⟩) to ʺ, and to the subsequent
+change of ⟨a̋⟩, ⟨ő⟩, ⟨ű⟩ to ⟨ä⟩, ⟨ö⟩, ⟨ü⟩.
+
+                                                ISSN 1615-3014
+
+=== page 57 ===
+
+     Fausto Cercignani: On the Germanic and Old High German distance assimilation changes                     57
+
+
+number at least from the early New High German period, as can be seen from such instances as
+NHG Hals (OHG hals < *halsa-), which exhibits a new formation Hälse (OHG halsa, MHG
+halse), and NHG Hof (OHG hof < *hufa-) which exhibits the new plural Höfe (OHG hofa,
+MHG hofe). However, the fact that the origins of the alternations in question were closely
+related to i-umlaut does not entitle us to make phonemicization dependent on morphological
+alternations.48 As emphasized above, allophones cannot be used analogically by the speaker,
+since they are produced automatically in a specific context.
+
+11      General conclusions
+A critical analysis of the available material has led to the following conclusions.
+(1) Neither the two front vowels *[i] and *[e] nor the two back vowels *[u] and *[o] can be
+    assumed to have been allophones of a single phoneme in the prehistory of the Germanic
+    languages. The same applies to the two diphthongs developed from */eu/. At an early stage
+    of its pre-literary development, the Old High German short vowel subsystem exhibited five
+    phonemes: */i/ and */e/, */u/ and */o/, as well as */a/ (as in *halsa- > OHG hals ‘Hals’); the
+    subsystem of diphthongs exhibited four phonemes: */iu/, */eo/, */ai/, and */au/ (Chapters
+    2–6).
+(2) The Old High German umlaut phenomena produced phonemic changes before the factors
+    that triggered them off changed or disappeared, because the umlaut allophones gradually
+    became distinctive in the phonological system of the language and contrastive at a lexical
+    level. (Chapters 7–10).
+
+References
+Antonsen, Elmer H. (1964): „Zum Umlaut im Deutschen“. Beiträge zur Geschichte der deut-
+  schen Sprache und Literatur 86/2,3: 177–197.
+AWB (1952–) = Althochdeutsches Wörterbuch. Auf Grund der von Elias von Steinmeyer hin-
+  terlassenen Sammlungen im Auftrag der Sächsischen Akademie der Wissenschaften zu
+  Leipzig, Bearbeitet und herausgegeben von Elisabeth Karg-Gasterstädt und Theodor Frings.
+  Leipzig: SAW.
+Braune, Wilhelm/Reiffenstein (2004) = Wilhelm Braune, Althochdeutsche Grammatik I: Laut-
+  und Formenlehre, 15. Auflage. Bearbeitet von Ingo Reiffenstein. Tübingen: Niemeyer.
+Braune, Wilhelm/Heidermanns (2018) = Wilhelm Braune, Althochdeutsche Grammatik I:
+  Laut- und Formenlehre, 16. Auflage. Neu bearbeitet von Frank Heidermanns. Berlin/Bos-
+  ton: de Gruyter.
+Cercignani, Fausto (1979): “Proto-Germanic */i/ and */e/ Revisited”. The Journal of English
+  and Germanic Philology 78/1: 72–82.
+Cercignani, Fausto (2022): “The development of the Old High German umlauted vowels and
+  the reflex of New High German /ɛ:/ in Present Standard German”. Linguistik online 113,
+  1/22: 45–57.
+
+
+48 Referring to Dal (1971: 39f.), Voyles (1991: 172f.), and van Coetsem (1997: 424f.), Braune/Reiffenstein (2004:
+55–57) suggest that the phonemicization of the alleged i-umlaut allophones is closely linked to (or has as a pre-
+requisite) the morphologization of umlaut. For a more detailed presentation of the question cf. Braune/Heider-
+manns (2018: 82–85).
+
+                                              ISSN 1615-3014
+
+=== page 58 ===
+
+58                                 Linguistik online 116, 4/22
+
+
+Coetsem, Frans van (1997): “Reconditioning and umlaut in Germanic, and the question of ē2”.
+   In: Goblirsch, Kurt Gustav/Mayou, Martha/Taylor, Marvin (eds.): Germanic Studies in
+   Honor of Anatoly Liberman. Odense, Odense University Press: 423–437.
+Dal, Ingerid (1971): Untersuchungen zur germanischen und deutschen Sprachgeschichte. Oslo:
+   Universitetsforlaget.
+Erdmann, Peter (1972): „Zur strukturalistischen Erklärung des i-Umlautes“. Linguistics 78: 16–
+   24.
+Fertig, David (1996): “Phonology, orthography and the umlaut puzzle”. In: Lippi-Green,
+   Rosina L./Salmons, Joseph C. (eds.): Germanic linguistics: Syntactic and diachronic. Am-
+   sterdam: Benjamins: 169–184.
+Fourquet, Jean (1952): “The two e’s of Middle High German. A diachronic phonemic ap-
+   proach”. Word 8/2: 122–135.
+Fulk, Robert D. (2018): A comparative grammar of the early Germanic languages. Amster-
+   dam/Philadelphia: Benjamins.
+Grimm, Jakob/Grimm, Wilhelm (1965–2018): Deutsches Wörterbuch. Digitalisierte Version
+   im Digitalen Wörterbuch der deutschen Sprache. dwds.de/d/wb-2dwb [12.05.2022].
+Historical Phonology (2015) = Honeybone, Patrick/Salmons, Joseph (eds.): The Oxford Hand-
+   book of Historical Phonology. Oxford: Oxford University Press.
+Honeybone, Patrick/Salmons, Joseph (2015): “Structuralist Historical Phonology: Systems in
+   Segmental Change”. Historical Phonology: 32–46.
+Iverson, Gregory K./Davis, Garry W./Salmons, Joseph C. (1994): “Blocking environments in
+   Old High German umlaut”. Folia Linguistica Historica 15: 131–148.
+Iverson, Gregory K./Salmons, Joseph C. (1996): „The Primacy of Primary Umlaut“. Beiträge
+   zur Geschichte der deutschen Sprache und Literatur 118: 69–86.
+Kiparsky, Paul (2015): “Phonologization”. Historical Phonology: 563–580.
+Köbler, Gerhard (2014): Althochdeutsches Wörterbuch. koeblergerhard.de/ahdwbhin.html
+   [12.05.2022].
+Kostakis, Andrew (2019): “Gothic ⟨r⟩ and Old High German ⟨r⟩: Implications from phonological
+   patterning”. Glossa: a journal of general linguistics 4/1: 1–26.
+Kratz, Henry (1960): “The Phonemic Approach to Umlaut in Old High German and Old Norse”.
+   The Journal of English and Germanic Philology 59/3: 463–479.
+Kroonen, Guus (2013): Etymological dictionary of Proto-Germanic. Leiden: Brill.
+KSW (2009) = Klein, Thomas/Solms, Hans-Joachim/Wegera, Klaus-Peter: Mittelhochdeutsche
+   Grammatik III. Tübingen: Niemeyer.
+KSW (2018) = Klein, Thomas/Solms, Hans-Joachim/Wegera, Klaus-Peter: Mittelhochdeutsche
+   Grammatik II.1. Berlin/Boston: de Gruyter.
+Liberman, Anatoly (1991): “Phonologization in Germanic: Umlauts and vowel shifts”. In: An-
+   tonsen, Elmer H./Hock, Hans Henrich (eds.): Stæfcræft: Studies in Germanic linguistics.
+   Philadelphia/Amsterdam, Benjamins: 125–137.
+Liberman, Anatoly (2007): “Palatalized and velarized consonants in English against their Ger-
+   manic background, with special reference to i-umlaut”. In: Cain, Chistopher M./Russom,
+   Geoffrey (eds.): Studies in the History of the English Language III. Managing Chaos: Strat-
+   egies for Identifying Change in English. Berlin/Boston, de Gruyter Mouton: 5–36.
+
+
+
+                                      ISSN 1615-3014
+
+=== page 59 ===
+
+    Fausto Cercignani: On the Germanic and Old High German distance assimilation changes     59
+
+
+Lühr, Rosemarie (1979): „Das Wort ‘und’ im Westgermanischen“. Münchener Studien zur
+   Sprachwissenschaft 38: 117–154.
+Marchand, James W. (1956): “The Phonemic Status of OHG e”. Word 12/1: 82–90.
+Michels, Victor (1921): Mittelhochdeutsches Elementarbuch. Heidelberg:Winter.
+Moulton, William G. (1961): „Zur Geschichte des deutschen Vokalsystems“. Beiträge zur Ge-
+   schichte der deutschen Sprache und Literatur 83: 1–35.
+MWB (2006–) = Mittelhochdeutsches Wörterbuch. Mainzer Akademie der Wissenschaften und
+   der Literatur: Akademie der Wissenschaften zu Göttingen. mhdwb-online.de/ [12.05.2022].
+Noreen, Adolf (1923): Altnordische Grammatik I. Altisländische und altnorwegische Gramma-
+   tik. Halle: Niemeyer.
+Panieri, Luca (2012–2013): „Eine neue phonetische Hypothese zum primären Umlaut von
+   germ. */a/ im Althochdeutschen“. Linguistik Online 53, 3/12: 85–98.
+Penzl, Herbert (1949): „Umlaut and Secondary Umlaut in Old High German“. Language 25/3:
+   223–240.
+Penzl, Herbert (1974): „Zur Entstehung der frühneuhochdeutschen Diphthongierung“. In: Be-
+   sch, Werner et al. (eds.): Studien zur deutschen Literatur und Sprache des Mittelalters. Ber-
+   lin, Schmidt: 345–357.
+Prokosch, Eduard (1939): A comparative Germanic grammar. Philadelphia: Linguistic Society
+   of America.
+Ringe, Don (2006): From Proto-Indo-European to Proto-Germanic. Oxford: Oxford Univer-
+   sity Press.
+Russ, Charles, V. J. (1978): Historical German Phonology and Morphology. Oxford: Oxford
+   University Press.
+Russ, Charles, V. J. (ed.) (1990): The Dialects of Modern German: A Linguistic Survey. Lon-
+   don: Routledge.
+Salmons, Joseph (2012): A History of German. What the past reveals about today’s language,
+   Oxford: Oxford University Press.
+Salmons, Joseph (2021): Sound Change. Edinburgh: Edinburgh University Press.
+Simmler, Franz (2000): „Phonetik und Phonologie, Graphetik und Graphemik des Mittelhoch-
+   deutschen“. In: Besch, Werner et al. (eds.): Sprachgeschichte: Ein Handbuch zur Geschichte
+   der deutschen Sprache und ihrer Erforschung II. Berlin/New York: de Gruyter: 1320–1331.
+Schulze, Jan Henning (2010): Der i-Umlaut im Althochdeutschen. Theorie, Phonetik und Ty-
+   pologie sowie eine optimalitätstheoretische Analyse. Bamberg: Bamberg University Press.
+Twaddell, William Freeman (1938): „A Note on Old High German Umlaut“. Monatshefte für
+   Deutschen Unterricht 30/3,4: 177–181.
+Wiesinger, Peter (1970): Phonetisch-phonologische Untersuchungen zur Vokalentwicklung in
+   den deutschen Dialekten II. Berlin: de Gruyter.
+Voyles, Joseph B. (1991): „A History of OHG i-umlaut“. Beiträge zur Geschichte der deut-
+   schen Sprache und Literatur 113: 159–194.
+Wolf, Norbert Richard (2000): „Phonetik und Phonologie, Graphetik und Graphemik des Früh-
+   neuhochdeutschen“. In: Besch, Werner et al. (eds.): Sprachgeschichte: Ein Handbuch zur
+   Geschichte der deutschen Sprache und ihrer Erforschung II. Berlin/New York: de Gruyter:
+   1527–1542.
+
+
+
+                                       ISSN 1615-3014

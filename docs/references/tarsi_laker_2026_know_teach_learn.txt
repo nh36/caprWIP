@@ -1,0 +1,1080 @@
+Matteo Tarsi and Stephen Laker, "'to know', 'to teach', and 'to learn' in
+Germanic". Journal of Germanic Linguistics 38 (2026), pp. 40-58.
+DOI 10.1017/S1470542726100178. Citation key: TarsiLaker2026.
+PDF SHA256: be6f804376d3cba068ec93f29ca8b5846e648923056e10d15066f97c6a15a41f
+
+SOURCE AND METHOD
+-----------------
+Born-digital Cambridge PDF; extracted with `pdftotext -layout`. No OCR.
+The PDF stays untracked under docs/references/ per .gitignore.
+
+REPAIRS (deterministic, documented)
+-----------------------------------
+1. 19 repeated "Published online by Cambridge University Press" footer
+   lines are removed.
+2. The math font emits "+" as the control character U+0001; both (2)
+   occurrences ("PIE+ [±Anatolian and Albanian]", p. 43 n. 6; "causative verb
+   + refl. pron.", p. 50 table) were read off 150 dpi page renders and
+   restored as "+".
+No other substitution or normalization. Non-syllabic glides (u̯, i̯), Greek,
+Indic diacritics and laryngeal subscripts are the publisher's own.
+
+PAGE NUMBERING
+--------------
+Printed pages 40-58; 19 sheets. Printed folio = PDF sheet + 39.
+Folios self-confirmed at page edges: 19/19.
+Page markers below denote PRINTED folios.
+
+=== page 40 ===
+
+             Journal of Germanic Linguistics (2026), 38, 40–58
+             doi:10.1017/S1470542726100178
+
+             ARTICLE
+
+
+
+             ‘to know’, ‘to teach’, and ‘to learn’ in Germanic
+             Matteo Tarsi1           and Stephen Laker2
+             1
+              Dipartimento di Studi Umanistici, Università di Pavia, Italy and 2Faculty of Languages and Cultures,
+             Kyushu University, Japan
+             Corresponding author: Matteo Tarsi; email: matteo.tarsi@unipv.it
+
+             Abstract
+             Three Germanic verbs with the meanings ‘to know’, ‘to teach’, and ‘to learn’ can all be traced back
+             to the same PIE root *lei̯s- ‘to follow a track’. While evidence for all three verbs is recoverable from
+             Gothic, only two verbal derivates passed down into the West Germanic languages, and none
+             survived into North Germanic (although there was later reborrowing from Old English). This
+             article charts these developments as well as subsequent ones, including the emergence of new
+             verbs that came to express these key concepts in West and North Germanic up to present times.
+             This etymological trail is guided by insights from Conceptual Metaphor Theory, which seeks to
+             understand how more familiar concrete concepts (e.g. ‘to follow a track’, ‘to grasp’, ‘to see’)
+             capture more abstract ones like ‘to know’, ‘to teach’, and ‘to learn’ in language. The main findings
+             are: (i) that the original system “stative ∼ causative ∼ present” reconstructible for Proto-
+             Germanic on the PIE root *lei̯s- is best continued today in German, whereas English already
+             refashioned it early on in its history. North Germanic does not directly continue any verbal
+             formation on that root, whereas Gothic displays a “perfect” system; (ii) formations on PIE *ǵneh3-
+             ‘to recognize’ and *u̯ei̯d- ‘to see’ are of common Indo-European heritage, whereas those on *lei̯s-,
+             also found in nominal formations in Italic, may have arisen polygenetically in the two branches, as
+             also possibly those on PIE *teng-. Finally, (iii) only one conceptual metaphor among those found
+             can be said to be of common Indo-European descent, namely TO KNOW IS TO RECOGNIZE/HAVE
+             RECOGNIZED.*
+
+
+                *This article constitutes a part of the output of the project “Conceptual metaphors and the
+             organization of the lexicon: The case of verba cogitandi, cognoscendi, and dicendi,” funded by the Japan
+             Society for the Promotion of Science (JSPS) and run at Kyushu University, Fukuoka, Japan, between
+             March 2024 and March 2025. A conference paper delivered at the Small Languages, Big Ideas conference in
+             Uppsala on June 14, 2024 underlies the present text. The article is the result of a sustained collaborative
+             effort of both authors. The first author conceived the study as part of his JSPS-funded postdoctoral
+             project. While the second author was mainly involved in writing sections 2 and 5, the first author wrote
+             section 3 and did the majority of the work on section 4 in addition of gathering all data underlying this
+             research. Sections 1 and 6 were a collaborative effort. Both authors reviewed and commented on the
+             manuscript. We wish to thank the funding agency for generously supporting this research. Also, we wish
+             to thank our colleagues, with whom we have consulted and who have helped us revise some of the
+             gathered data: Sergio Neri (Basel), Malo Adeux (Brest), Kanehiro Nishimura (Hyogo), Giulio Imberciadori
+             (Munich), Raffaele Esposito (Napoli Orientale), Erica Biagetti, Lucrezia Carnesale, and Michele Tron
+             (Pavia), Reiner Lipp (Prague), Alessandro del Tomba, Marco Fattori (Roma Sapienza), Guglielmo Inglese
+             (Turin), Yoko Yamazaki (Stockholm), and Piotr Kocharov (Würzburg).
+
+             © The Author(s), 2026. Published by Cambridge University Press on behalf of Society for Germanic Linguistics. This is an
+             Open Access article, distributed under the terms of the Creative Commons Attribution licence (https://
+             creativecommons.org/licenses/by/4.0/), which permits unrestricted re-use, distribution and reproduction, provided
+             the original article is properly cited.
+
+=== page 41 ===
+
+                                                                              Journal of Germanic Linguistics    41
+
+           Keywords: verbs of knowledge; Conceptual Metaphor Theory; etymology; lexical typology
+
+
+           1. Introduction
+           This article is concerned with the verb-meaning triad ‘to know’, ‘to teach’, and ‘to
+           learn’ in Germanic. All three meanings can be traced to the PIE root *lei̯s- in Gothic
+           (i.e. Go. lais, (ga)laisjan, (ga)laisjan sik), while two continue in West Germanic, namely
+           ‘to teach’ and ‘to learn’ (OE lēran and leornian, liornan; OHG lēren and lernōn [→ lernēn,
+           lirnēn] etc.). North Germanic has borrowed the root from Old English. The root’s basic
+           meaning as reported by LIV2 is ‘to learn’, but arguments in favor of an original
+           meaning ‘to follow’ have been produced over the years (chiefly Marstrander 1929,
+           Meid 1971, Tanaka 2011, and most recently Tarsi 2023 with a complete critical
+           overview of the literature and arguments in favor of a basic meaning ‘to follow a
+           track’).1 This analysis is based on the more economical explanation that the root in
+           question acquired the sense ‘to learn’ by a metaphorical process from concrete to
+           abstract (cf. also expressions such as Eng. to follow a teaching). The meaning ‘to learn’ is
+           found at the core of both verbal and noun formations in Germanic and it is also
+           possibly seen in Umbrian (-)lērā- ‘teaching, instruction, lore’. On the other hand, the
+           meaning ‘to follow a track’ is attested not only in Germanic, but also indirectly in
+           Baltic (OPr. lyso ‘flowerbed’; Lith. lýsė ‘vegetable patch’), Slavic (OCS lěxa ‘cultivated
+           plot’), and Italic (Lat. līra ‘the earth thrown up between two furrows, ridge’; possibly
+           Osc. luisarifs ‘the month in which furrows are traced’ (see in detail Tarsi 2023, with
+           extensive arguments and references).
+               The meanings ‘to know’, ‘to teach’, and ‘to learn’ are also represented by other
+           verbs throughout Germanic in both space and time. This article explores how these
+           words came into being in this branch of Indo-European and asks, from the standpoint
+           of lexical typology, what “systems” these formations instantiate, and what
+           developments they testify.2 Such a description of lexical “systems” involves a
+           lexical-morphological analysis of the relevant components throughout time and is
+           aimed at assessing what kind of relationship there is between lexical items in the set
+           of complementary meanings under focus. In particular, the analysis ought to evaluate
+           the typology of the systems encountered, and whether a tendency towards some
+           particular intra-systemic relationship type can be observed. Such a description is
+           inspired by the typology of valency orientation of transitive/intransitive verb pairs
+           developed by Nichols et al. (2004). Here, however, the focus is on a semantically
+           complementary verb triad and its lexical realizations. Of interest is the extent to
+           which the addressed languages lexicalize the selected meanings from one or more
+           roots, through which morphological processes, and whether there are any tendencies
+
+
+
+
+              1
+                Against this analysis, of chief importance are the contributions of Benveniste (1947–1948), Vine
+           (2011), and Ziegler (2012, on whose proposal see Tarsi 2023: §§ 3.16.1–2), who is followed in EWAhd (s.v.
+           lesa1 and elsewhere).
+              2
+                For overviews of the state-of-the-art, objectives, and ongoing research strands of lexical typology,
+           see Koptjevskaja-Tamm (2008), Koptjevskaja-Tamm, Rakhilina, & Vanhove (2016), and Koptjevskaja-
+           Tamm & Veselinova (2020).
+
+=== page 42 ===
+
+             42         Matteo Tarsi and Stephen Laker
+
+             Table 1. The system of attested verb forms based on PIE *lei̯s-
+
+                Root                  Language                  ‘to know’                  ‘to teach’    ‘to learn’
+
+                PIE *lei̯s-           Gothic                       lais                    (ga)laisjan   (ga)laisjan sik
+
+                                      West Gmc                      –                      *laizijan-    *liznōn-
+
+
+
+             to be seen diachronically, for example towards suppletion or lability, and to evaluate
+             contact-induced effects.3
+                Furthermore, the present study also addresses the lexical make-up of ‘to know’, ‘to
+             teach’, and ‘to learn’ in Germanic within the framework of Conceptual Metaphor
+             Theory (Lakoff & Johnson 1980, Kövecses 2002) as employed in cognitive historical
+             linguistic studies with an etymological focus (e.g. Kölligan 2020, 2021, 2022, Ginevra
+             2024a, b). The main question that this research addresses thus concerns the patterns
+             of human conceptualization from concrete to abstract. Of interest to the enquiry is
+             which concrete domains are selected to convey the meanings addressed and whether
+             the same choice can be claimed to be of common Indo-European descent, polygenetic,
+             or as arising as an effect of contact. With respect to this latter point, the present study
+             seeks to further develop a well-known line of research within cognitive linguistics,
+             namely the cognitively motivated lexical make-up of a selected portion of the
+             lexicon.4
+
+             2. “Germanic systems”
+             2.1. The oldest stages
+             The oldest attested Germanic system encompassing the verb meaning triad ‘to know’,
+             ‘to teach’, and ‘to learn’ is that of Gothic, where the root PIE *lei̯s- underlies verbs for
+             all three meanings: (1) a stative verb (preterite-present) only attested twice as lais
+             ‘oἶδα; I know’, beside witan; (2) a causative verb (ga)laisjan ‘to teach’, beside the
+             marginal denominal (ga)talzjan; and (3) a “proto-reflexive middle” (ga)laisjan sik ‘to
+             learn’, beside ganiman. West Germanic attests to a similar system, differing from
+             Gothic in its formation of the verb for ‘to learn’, besides lacking a stative ‘to know’
+             from PIE *lei̯s- and resorting instead primarily to PIE *u̯ei̯d- ‘to see’. A summary is
+             provided in table 1.
+                 As proposed in Tarsi (2023: § 7 and summarized in § 8.1.5), stative and causative
+             verbs formed on PIE *lei̯s-, namely PGmc *lais-/liz- and *laizijan-, were likely found
+             prehistorically throughout the Germanic linguistic continuum, whereas the
+             formation of a nasal present was restricted to those dialects which later gave rise
+             to West Germanic. Revising the proposal by Lühr (2008), it has been advanced in Tarsi
+             & Zanchi (2025:279) that the Germanic reflexive construction is primary in respect to
+
+
+                  3
+                  Reviewer B suggests a distinction between paradigmatic suppletion, as in go : went, and lexical
+             suppletion, as in kill : die. We see both kinds of suppletion as faces of the same coin, namely the use of
+             different roots within a well-defined lexical relationship, be that within a paradigm or between
+             complementary meanings. At any rate, the kind of suppletion which is actually represented in the
+             Germanic data put forth here is of the latter type (as e.g. in teach : learn).
+                4
+                  Notable works within this area include, for example, Sweetser (1990) and Fortescue (2000).
+
+=== page 43 ===
+
+                                                                              Journal of Germanic Linguistics            43
+
+           nō/na-verbs in being the competitor of the inherited middle, namely the synthetic
+           passive, as the noncausal end of the anticausative alternation.5 Hence it can be
+           proposed that the inherited middle of PGmc *laizijan- and the reflexive form *laizijan-
+           sik once competed with one another in East and North Germanic.
+               The demise of PGmc *lais-/liz- in West and North Germanic, and nearly so in East
+           Germanic (note incidentally that we do not have the same quality sources for North
+           and West Germanic from the same period as the Gothic Bible), was in all likelihood
+           provoked by the synchronically synonymous verb PGmc *witan-, a formation on PIE
+           *u̯ei̯d-, which is certainly shared by more than one branch of Indo-European (on this
+           issue see below, section 3). On the same root, a causative is also found, namely PGmc.
+           *waitijan- ‘to let see (vel sim.)’, attested in Old High German (weizzen ‘to show, hint,
+           call’) and Old Icelandic (veita ‘to grant, give’) and reconstructable for Gothic, also on
+           the basis of comparanda in Indo-Iranian and Celtic (cf. LIV2, s.r. u̯ei̯d-).
+               What is more, the meaning ‘to know’ was shared by another Germanic formation,
+           also a preterite-present, namely *kunnan-, based on PIE *ǵneh3- ‘to recognize’ and
+           newly formed within Germanic (cf. Harðarson 1993:80–81, Tanaka 2011:145–180, Ringe
+           2017:178–179, and Jasanoff 2023:4), with a corresponding causative, PGmc *kannijan-,
+           which in North Germanic acquires the meaning ‘to teach’ (OIcel. kenna etc.).6,7
+
+              5
+                 On the details concerning this interpretation of the Gothic data, see Tarsi & Zanchi (2025:270–272
+           and 278–279).
+              6
+                 A distinction is made, as much as possible, between ‘to know (= Lat. scire)’, represented by PGmc
+           *lais-/liz- and *witan-, and ‘to know (= Lat. cognoscere)’, testified by PGmc *kunnan-. A relative chronology
+           for these verbs can be envisaged, whereby PGmc *witan- is the oldest formation (PIE+ [±Anatolian and
+           Albanian]; see section 3) and PGmc *lais-/liz-, which acquires the meaning ‘to know’ within Germanic,
+           possibly denoted a different modality of knowledge acquisition (similarly so already Meillet 1909 and
+           Benveniste 1947–1948), but later semantically coalesced with PGmc *witan-, and was then (after the
+           fourth century) dismissed. PGmc *kunnan- is refashioned within Germanic as a preterite-present verb.
+           From the original present semantics ‘to recognize’, the meaning ‘to know (as having recognized)’ is
+           derived (cf. also Jasanoff 2023:4–5)
+              7
+                 Reviewer B notes that PIE *ǵneh3- would not instantiate a concrete-to-abstract conceptual metaphor,
+           as its meaning is already within the sphere of human cognition. PIE *ǵneh3- belongs to a group of roots of
+           general perception for which no “concrete” sense is immediately recoverable (but a semantic
+           overlapping between sensual to cognitive recognition is possibly found in Homeric Greek, the former
+           semantics being seen in Iliad 11.651 as suggested by Olav Hackstein, p.c.), for example, PIE *bheudh- ‘to
+           awaken, become attentive’ (found e.g. in the meanings under discussion here in Pā. bujjhati ‘to know [=
+           Lat. scire]’, Sogd. ptβyδ-, ptbyd- ‘to know [= Lat. cognoscere]’, and Khot. bud- ‘to know [= Lat. scire,
+           cognoscere]’) and PIE *ku̯ei̯t- ‘to perceive, notice’ (Ved. cikéta ‘to know [= Lat. cognoscere]’; MP ncyh-, wcyh-
+           ‘to teach’). In addition, there are PIE *mers- ‘to forget’ and *(s)mer- ‘to think, remember’ (so LIV2). The
+           basic semantics of the former root has recently been challenged by Tarsi (2025), who connects the root to
+           PIE *mer- ‘to disappear, die’ (on which see Ginevra 2024b:103–104; this connection is already noted in
+           EDHIL, s.v. maršant- without discussion), and van Beek (p.c.), who holds the view that PIE *mers- ‘to forget’
+           could instantiate the Event Structure Metaphor in the domain of Obstruction. He thinks that the source
+           meaning is preserved in Germanic *marzijan- ‘to obstruct, hinder’ and argues that the Germanic verb is a
+           causative, which allows *mers- ‘to forget’ to be derived from an intransitive middle ‘to get stuck, fail to
+           reach’ (the Sanskrit verb has middle inflection: pres. mr´̥ ṣ yate, Ved. aor. marṣ anta). In view of the general
+           semantic developments from concrete to abstract within the sphere of human cognition, there are good
+           reasons to believe that these roots with no actual primary concrete meaning formerly had one, hence the
+           present analysis. We disagree with Reviewer A’s analysis which, mutatis mutandis, reconstructs a
+           homophone root with the meaning ‘to know’ underlying Go. witan etc., as the domain of vision
+           constitutes the basis for many other formations within human cognition in Indo-European, such as PIE
+
+=== page 44 ===
+
+             44         Matteo Tarsi and Stephen Laker
+
+             Table 2. Primary verbs related to the meanings ‘to know’, ‘to teach’, and ‘to learn’ in the oldest stages of
+             Germanic
+
+                                                    ‘to
+                Root           Language             know’          ‘to teach’                      ‘to learn’
+
+                PIE *lei̯s-    Gothic               lais        (ga)laisjan       (ga)laisjan sik (∼ synthetic passive)
+                               NGmc                 *lais-/liz- *laizijan-        *laizijan- sik (∼ synthetic passive)
+                               WGmc                                               *liznōn- (∼ synthetic passive)
+                PIE *u̯ei̯d-   Germanic             *witan-     *waitijan- ‘to                         –
+                                                                  let see’
+                PIE *ǵneh3-    Germanic             *kunnan- *kannijan-                                –
+                PIE *nem-      Gothic and                  –            –         ganiman, nema
+                                NGmc
+
+
+
+                 Besides the aforementioned verbs, East and North Germanic also attest another
+             synonym for ‘to learn’, namely PGmc *(ga)neman- (Go. ganiman, OIcel. nema), with the
+             concrete meaning ‘to take’ (< PIE *nem- ‘to assign’ → middle ‘to assign oneself’ →
+             PGmc ‘to take’, LIV2, s.r. footnote 2).
+                 The overall situation reconstructable for primary verbs in the oldest stages of
+             Germanic is summarized in table 2.
+                 No verb meaning ‘to learn (vel sim.)’ is either attested or reconstructed for PIE
+             *u̯ei̯d- or *ǵneh3- for lack of comparative evidence. It is a matter of speculation
+             whether PGmc *waitijan- and *kannijan- could convey the meaning ‘to learn’ in the
+             passive but this issue does not affect the present argument. It appears that Germanic
+             diverged in the realization of the verb for ‘to learn’ formed on PIE *lei̯s- in response to
+             the gradual fall of the synthetic passive. However, stative and causative verbs were
+             created from this root by productive patterns for whichever of the three roots in
+             which these are found. Overall, Proto-Germanic testified to a lexical system for the
+             meanings under scrutiny, which made use of productive morphological patterns, with
+             the addition of an outlier, namely PGmc *(ga)neman-, whose meaning ‘to learn’ is at
+             least shared by Gothic and North Germanic.8
+
+
+
+
+             *dheH(i)- (so Add.Corr.LIV2) ‘to seize with the eye’ (whence [O]Alb. di ‘to know’), PIE *kwek- ‘to catch a
+             glimpse’ (whence YAv. cašte, MP c’š- ‘to teach’, Khot. kät’- ‘to think’), and PIE *pret- ‘to see, discern,
+             perceive, recognize’, whence OPr. issprestun ‘to understand’ and Baltic cognates (see in detail Tarsi 2025).
+                8
+                  One can hypothesize either that PGmc *(ga)neman- in its metaphorical meaning ‘to learn’ constitutes
+             an East–North isogloss or that both branches innovated independently. From the same root, West
+             Germanic has verbs for ‘to understand’ (OE geniman, OLF farniman, ODu. farneman, and MHG vernemen).
+             Given that the semantic extension from ‘to take, grasp’ to ‘to understand’ is cross-linguistically and
+             diachronically common (e.g. Late Lat. capire [Lat. capere] ‘to seize’ → ‘to understand’, comprehendere ‘to
+             take together’ → ‘to understand’; Eng. get and grasp also ‘to understand’; Ger. begreifen ‘to understand’; cf.
+             furthermore the preliminary typological study by Vanhove 2008), it is not possible to make any certain
+             claims about the semantic status of PGmc *(ga)neman-, also with regard to the meaning ‘to learn’; cf., for
+             example, Eng. to take on/to adopt/to acquire a habit, It. prendere un’abitudine, Ger. eine Gewohnheit annehmen
+             ‘to acquire a habit’.
+
+=== page 45 ===
+
+                                                                              Journal of Germanic Linguistics       45
+
+           2.2. Evolution
+           Having seen that the situation, attested or hypothesized, is valid for the oldest layer of
+           Germanic, one can now trace the developments in the different languages of the
+           western and northern branches and evaluate the systematization of the lexicon with
+           regard to the meaning triad under scrutiny. Data was sampled from the following
+           selection of languages:
+              West Germanic: English (OE, ME, Eng.), Scots (OSc., Sc.), High German (OHG, MHG,
+           Ger.), Old Saxon, Middle Low German, Frisian (OFris., WFris., EFris., NFris.), Old Low
+           Franconian, Dutch (ODu., MDu., Du.), Luxembourgish, Swiss German, Cimbrian
+           (Lusérn), Yiddish;
+              North Germanic: Danish (ODan., Dan.), Swedish (OSw., Sw.), Icelandic (OIcel., Icel.),
+           Elfdalian.
+
+
+           West Germanic
+           In describing the situation in West Germanic, English and German are taken as main
+           languages, but data from a range other languages is covered with reference to them.
+
+
+           English
+           The continuants of the Proto-Germanic causative and nasal present verbs *laizijan-
+           (OE lǣran) and *liznōn- (OE leornian, liornian) are found in Middle English (lēren and
+           lē rnen) and Modern English (though lere is nowadays obsolete). However, Old English
+           displays a number of other synonyms for ‘to teach’, namely (ge)tǣcan, the ancestor of
+           present-day teach; getȳan beside tēon, where the meaning ‘to teach’ is derived
+           figuratively from ‘to train (vel sim.)’; getyhtan (‘to draw the mind to something’ → ‘to
+           teach, instruct’); gewissian, a deadjectival formation from gewis(s) ‘certain’; and, finally,
+           the “dubious” docan*.9 Beside (ge)tǣcan and gewissian, continuing into Middle English
+           as wissen before dropping out of use except in Scots (wis ‘to direct, guide, show,
+           instruct’), the other Old English verbs, OE docan* aside, likely died out in this meaning
+           around 1250 at the latest (cf. OED, s.vv. tee, tight, wis). In Middle English, the verb
+           kennen is used with the meanings ‘to teach’ and ‘to know’.10 It has sometimes been
+           proposed that the latter meaning arose through Norse influence (e.g. OED, s.v. ken;
+              9
+                 The verb, listed in the DOE, is only found twice in the whole of the Old English corpus, namely as two
+           glosses in the Salisbury Psalter (information provided by Dr. Robert Getz of the DOE, whom we thank):
+              (i) doce me don willan þinne
+                   doce me facere uoluntatem tuam
+                   ‘Teach me to do your will’
+                   (PsGlK 142,10. ABCDFGIJL lær, E lære)
+              (ii) þa doceþ handa mine to feohte & he sette swa bogan cyperen earmas
+                   qui docet manus meas ad pręlium et posuisti ut arcum ęreum brachia mea
+                   ‘He who teaches my hands to fight and he has set my arms like a copper bow’
+                   (PsGlK 17.35. ABCDEGHIJ forms of læran, F tæcð)
+              It seems doubtful whether the verb docan*, which would thus be a loan from Lat. docere, existed in any
+           productive sense in Old English. The only two occurrences of the verb reflect the Latin original text and
+           could well be instances where the Latin verb was simply slipped into the Old English text.
+              10
+                  This meaning contrasts with its predecessor OE cennan ‘to bring forth from the mind, to declare,
+           choose, ascribe, clear, prove’.
+
+=== page 46 ===
+
+             46        Matteo Tarsi and Stephen Laker
+
+             Table 3. Synoptic diachronic overview of verbs found in English
+
+                                      Old English                 Middle English             Modern English
+
+                ‘to know’             cunnan                      connen
+                                      witan                       witen                      wit†
+                                      gecnāwan                    (i)knouen                  know
+                                                                  kennen                     ken†
+                ‘to teach’            lǣran                      lēren (also ‘to learn’)    lere† (also ‘to learn’)
+                                      (ge)tǣcan                  tēchen                     teach
+                                      gewissian                   wissen
+                                      docan* (?)
+                                      tēon, gety¯an               tēn
+                                      getyhtan                    tighten
+                                                                  kennen
+                                                                  sheuen                     show
+                ‘to learn’            leornian, liornian          lērnen (also ‘to teach’)   learn (also ‘to teach’)
+
+                                                                  apprehenden                apprehend†
+
+
+
+
+             MED, s.v. kennen v.1). However, due to the fact that the verb carries this sense in
+             several early Middle English texts well outside of the Danelaw, recent scholarship has
+             cast doubt on this explanation. Instead, we may have to do with an independent
+             native development, though Norse could have supported it especially in northern and
+             eastern dialects (see Dance et al. 2019, s.v. kenne). In addition ME sheuen ‘to show’ can
+             be used in the meaning ‘to teach’, like Eng. show today. The meaning ‘to learn’ acquires
+             a synonym from French in the Middle English period, namely apprehenden (< Fr.
+             appréhender, OED, s.v. apprehend), continued in the modern language (but after 1680 no
+             longer in the meaning ‘to learn’, OED, s.v.). ME lērnen is also used in the meaning ‘to
+             teach’, and this nonstandard use is continued in English varieties worldwide. The
+             same tendency is found with ME lēren. Finally, ‘to know’ is conveyed by three well-
+             known old formations beside ME kennen: OE cunnan, continued in that sense also in
+             Middle English but not in the modern language, where it only has modal force, can;
+             witan, whose modern continuant wit is obsolete (except in Scots and in the phrase to
+             wit), and gecnāwan (ME [i]knouen, Eng. know). A summary is given in table 3.
+                To complete the overview of the English situation, it needs to be said that in Old
+             Scots (up to 1700), lere and lern(e) were used interchangeably in the respective
+             complementary meanings (cf. the Middle English situation), and this persisted at least
+             up to the nineteenth century (DSL, s.v. lair n.3, v.3). As for ‘to know’, Sc. ken (< ME
+             kennen ‘to make known, teach, know’ [< PGmc *kannijan-]) replaced knaw, know in the
+             broad variety. Wit is found in Scots up until the nineteenth and early twentieth
+             century too (DSL, s.v. wit v.1, v.2).
+
+=== page 47 ===
+
+                                                                                Journal of Germanic Linguistics             47
+
+           Table 4. Synoptic diachronic overview of verbs found in German
+
+                                  Old High German                 Middle High German             Modern High German
+
+              ‘to know’           wizzan                          wizzen                         wissen
+                                  kunnan                          kunnen, künnen
+                                  bikennen                        kennen                         kennen
+                                  irknāen
+              ‘to teach’          (gi)lēren                       lēren (also ‘to learn’)        lehren (also ‘to learn’)
+                                                                  anebringen                     beibringen
+                                                                  underrihten                    unterrichten
+                                                                  underwīsen                     unterweisen
+              ‘to learn’          lernōn, lernēn, lirnēn          lernen                         lernen (also ‘to teach’)
+                                                                  nemen                          (nehmen?)
+
+
+
+
+               Overall, the system found nowadays in English, which is one of suppletion (know ∼
+           teach ∼ learn), has its roots already in the Old English period (gecnāwan ∼ [ge]tǣcan ∼
+           leornian, liornian). The general tendency was lexical reduction en route from Middle to
+           Modern English. Contact-induced effects are found in the form of loanwords such as
+           Eng. apprehend and (maybe) OE docan*. Since the Middle English period, learn can carry
+           also the meaning ‘to teach’ dialectally, hence becoming a (marginally) labile verb, the
+           causative lere took a similar path but has since fallen out of use.
+
+
+           German
+           Starting from the same core West Germanic system found in English, namely that of
+           the causative and nasal present verbs from PIE *lei̯s- and the main stative verb from
+           PIE *u̯ei̯d-, German (table 4) displays many affinities with English in the oldest period,
+           with the exception of bikennen ‘to know’ and a number of synonyms for ‘to teach’ only
+           found in English. In the middle period, German solidly continues the inherited core
+           system but adds, for ‘to teach’, the following: a preverbed form of bringen ‘to bring’,
+           continued in the modern language with a different preverb (MHG ane- : Ger. bei-);
+           preverbed forms of richten ‘to direct’ and weisen ‘to show’ (factitives from PGmc *rehta-
+           ‘straight’ and PGmc *wīsa- ‘wise’, respectively), MHG underwīsen and underrihten; MHG
+           lē ren and nemen also for ‘to learn’. Modern High German is substantially in line with
+           Middle High German, with the addition of lernen used also with the meaning ‘to teach’
+           in nonstandard usage (from at least the fifteenth century; see FWB, s.v.). Although Ger.
+           nehmen does not seem to preserve the meaning ‘to learn’, it appears reasonable to
+           assume that the verb might, in preverbed form, occasionally be used in something
+           approaching that sense, for example, eine Gewohnheit annehmen (see also footnote 8).11
+              11
+                Cf. Eng. acquire in similar senses, e.g. ‘to acquire a new language (or some other skill)’, as well as the
+           phrasal verb pick up, and perhaps gain. Conversely, pass on/down can be used for the other direction,
+           namely, ‘to teach (vel sim.)’; cf. also Eng. transmit and relative Latin and Romance cognates, e.g. he passed
+           on his knowledge or he passed on/transmitted the passion for fishing to his son. So it appears the concrete
+
+=== page 48 ===
+
+             48        Matteo Tarsi and Stephen Laker
+
+                 Other continental West Germanic languages generally show a conflation of the
+             meanings ‘to learn’ and ‘to teach’ through time in verbs formed on PIE *lei̯s-, whereby
+             it is usually the causative that takes on the meaning of the nasal present (e.g. Du. leren,
+             WFris. leare, EFris. [Saterland] lere, NFris. [Fering-Öömrang] liar all ‘teach, learn’).
+             However, the opposite direction of semantic coalescence is attested in Cimbrian
+             (Lusérn) and Yiddish, the latter eventually reflexivizing the verb in the meaning ‘to
+             learn’, namely lernen zikh.12 Moreover, Dutch and Frisian also show a compound of
+             ‘bring’, as well as forms akin to Ger. unterrichten and unterweisen: in Du. bijbrengen,
+             onderrichten, onderwijzen (all attested first in Middle Dutch), WFris. bybringe,
+             ûnderrjochtsje, ûnderwize, EFris. (Saterland) biebrange, unnergjuchte, unnerwise, NFris.
+             (Fering-Öömrang) bibring, onerracht, onerwise (the latter verb attested in late Old
+             Frisian). Luxembourgish also has enseignéieren ‘to teach’ from French. For ‘to know’,
+             the sampled languages either preserve a three-verb system, such as Dutch (weten,
+             kennen, kunnen), or have reduced it to two, such as Luxembourgish (wëssen, kennen),
+             with the continuant of PGmc *kunnan- taking on modal functions exclusively.
+                 In summary, German preserves the original system of West Germanic best among
+             modern languages (wissen ∼ lehren ∼ lernen), with a mild degree of suppletion due to
+             the early loss of PGmc *lais-/liz-. The widespread tendency of conflating the meanings
+             ‘to teach’ and ‘to learn’ is seen already in the middle period, and this gives rise to the
+             situation in a number of other languages and dialects, such as Cimbrian, Dutch,
+             Luxembourgish, Swiss German, and Yiddish. Lexical borrowing aside, contact-induced
+             effects are relevant in Yiddish, which makes use of reflexivization as a detransitivizing
+             strategy. Although this feature was no doubt found already in the oldest period of
+             Germanic (cf. Go. laisjan sik), its morphosyntactic use in Yiddish stems from contact
+             with Slavic (see footnote 12).
+
+
+
+             North Germanic
+             The situation in North Germanic is less varied. An overview of the relevant Icelandic,
+             Swedish, and Danish verbs is presented in table 5. Elfdalian aligns closely with
+             Swedish.13
+                From table 5 it is clear that not only Icelandic is semantically conservative.
+             Icelandic preserves the meaning ‘to learn’ for nema (in line with Gothic and the other
+             old Nordic languages), yet the continental languages preserve the original meaning in
+             which OE lǣran was borrowed. Swedish does this entirely, whereas both meanings
+             have coalesced in one form in Danish. Icelandic innovates by a complementary
+
+             concepts for teach and learn can be (i) of the follow and lead type in one concrete sense (TO LEARN IS TO
+             FOLLOW A TRACK), but there is also (ii) the give and take concrete sense, hence instantiating the TO LEARN IS
+             TO GET HOLD OF SOMETHING conceptual metaphor.
+                  12
+                   As in Slavic, the Yiddish reflexive pronoun does not change with the subject; cf. the parallel
+             structure of OCS učiti ‘to teach’ and učiti sę ‘to learn’ and cognates (Russ. učit’ and učit’sja, Pol. uczyć and
+             uczyć się, Cz. uč it and uč it se etc.). On Yidd. zikh as intransitivity, viz. valency reducing, marker see briefly
+             Katz (1987: § 7.3.2 and esp. 7.3.2.1 on Yidd. lernen).
+                13
+                   Elfdalian aligns closely with Swedish in that Elfd. kunna overlaps with Swedish in the meaning ‘to
+             know’ (= ‘to have learned sth’), yet it has a more delimited use than its Swedish counterpart. Sw. kunna
+             can be used in the senses ‘to be physically able’ and ‘to have the possibility’, where Elfdalian instead
+             employs the verbs dugå and bella, respectively (Mikael Tsiouris, p.c.).
+
+=== page 49 ===
+
+                                                                              Journal of Germanic Linguistics   49
+
+           Table 5. Synoptic overview of verbs found in Icelandic, Swedish, and Danish
+
+                          Old            Modern              Old           Modern          Old        Modern
+                          Icelandic      Icelandic           Swedish       Swedish         Danish     Danish
+
+              ‘to know’ vita             vita                veta          veta            vite       vide
+                          kunna          kunna               kunna         kunna           kunne      kunne
+                                                             känna         känna           kænne      kende
+                          þekkja         þekkja
+              ‘to teach’ læra                                lära          lära ut         lære       lære
+                          kenna          kenna               känna                         kænne
+              ‘to learn’ nema            nema                nima                          nime
+                          lærask                             lära sik      lära sig        læræs
+                                         læra                                                         lære
+
+
+
+           semantic change ‘to teach’ → ‘to learn’. Danish nowadays has a labile verb lære, which
+           has arisen in all likelihood due to the loss of reflexivization, as seen in ODan. læræs and
+           common also to Old and Modern Swedish as well as Old Icelandic and Gothic (on this
+           issue cf. Tarsi & Zanchi 2025:274–275). Contact-induced effects are seen in Danish and
+           Swedish, where the causative formation is also used in the meaning ‘to know’, this
+           likely stemming from Middle Low German (kennen). Icel. kenna only marginally attests
+           to that meaning in Middle Icelandic, where the verb translates Eng. know in a couple of
+           translated ævintýri (see ONP, s.v. kenna).
+               In summary, North Germanic shows stability in its systems throughout time. Most
+           of all, the system of Modern Icelandic continues that of Old Icelandic with the sole, yet
+           paramount, exception of the semantic shift of læra. In comparison to the system
+           reconstructible for Proto-Germanic, North Germanic does not continue any of the
+           verbs based on PIE *lei̯s-, but rather acquires the corresponding causative from Old
+           English. The continuants of PIE *u̯ei̯d-, *ǵneh3-, and *nem- are found everywhere, but
+           are faithfully preserved to the fullest only in Icelandic (with the exception of PGmc
+           *waitijan- > OIcel. veita ‘to grant, give’ rather than ‘to let know [vel sim.]’, as in Ved. -
+           vedáya- ‘to announce’),14 where a further lexeme for ‘to know (= Lat. cognoscere)’ is
+           found, namely þekkja, a causative formation on PIE *teng- ‘to come to mind’ (on which
+           see below, section 3).
+               Finally, a summary of the different strategies found for the meanings ‘to teach’ and
+           ‘to learn’ in Germanic formations based on PIE *lei̯s- is given in table 6. The verbs for
+           ‘to know’ are consistently formed on roots other than PIE *lei̯s- from early on.
+
+           3. Indo-European background
+           In light of the current lexical typological investigation, it is worth returning to a key
+           issue presented in section 1, namely the observable connections between the
+
+               On the semantic development of the Icelandic verb, cf. similarly OAv. -uuaēdaiia- ‘to allocate’ and,
+              14
+
+           more indirectly, OIr. foídid ‘sends’ (LIV2, s.r. u̯ei̯d- and footnote 15).
+
+=== page 50 ===
+
+             50        Matteo Tarsi and Stephen Laker
+
+             Table 6. Different lexicalization strategies for ‘to teach’ and ‘to learn’ in Germanic
+
+                                                                                                      Language
+                       ‘to teach’           ‘to learn’                        Verbs                   (not exhaustive list)
+
+                1      causative verb       nō/na-verb                       lehren : lernen         German
+                2      causative verb       causative verb + refl. pron.      laisjan : laisjan sik   Gothic
+                                                                              lära (ut) : lära sig    Swedish
+                3a               lability (causative ∼ causative)             leren : leren           Dutch
+                3b              lability (nō/na-verb ∼ nō/na-verb)            learn : learn           English (dial.)
+                4                          suppletion                         learn : teach           English
+                                                                              læra, nema : kenna      Icelandic
+                5      active               middle                            læra : lærask           Old Icelandic
+
+
+
+             Germanic formations and their Indo-European background. This is done in two steps:
+             firstly with a focus on the Proto-Indo-European roots involved, and secondly by
+             looking into the conceptual metaphors instantiated. The latter issue is the focal point
+             of the next section.
+                 As summarized in table 2, Proto-Germanic originally had a system for the meaning
+             triad ‘to know’, ‘to teach’, and ‘to learn’ based on at least three different roots: *ǵneh3-
+             ‘to recognize’, *lei̯s- ‘to follow a track’, and *u̯ei̯d- ‘to see’, to which can be added *nem-
+             ‘to assign’ → middle ‘to assign oneself’ → PGmc ‘to take’ (LIV2, s.r. *nem-1, footnote 2).
+             This system is best attested in Gothic, which uniquely preserves a preterite-present
+             lais ‘oἶδα; I know’, once very likely spread throughout Germanic (Tarsi 2023: § 7), and
+             Old Icelandic.
+                 In addition to these three roots, Icelandic also attests to a verb for ‘to know’ formed
+             on PIE *teng- ‘to let come to mind’ (so Add.Corr.LIV2), OIcel. þekkja, but this represents
+             an inner-Icelandic semantic innovation ‘to think’ → ‘to know’.15 The same formation
+             is otherwise well attested with its basic meaning throughout Germanic (and later
+             borrowed from Middle Low German into Icelandic as þenkja; Óskarsson 2003:343–344)
+             and paralleled by a single verbal occurrence in Latin, namely tongē re ‘noscere’ (Ennius
+             apud Paulus Diaconus’ Epitoma Festi; cf. furthermore tongitio* ‘notion’ and Osc. tanginom
+             ‘sententiam’; LIV2, s.r. *teng/ǵ-2, footnote 2). Zero-grade present formations such as Go.
+             þugkjan ‘to seem, believe’ etc., a few verbal formations in Tocharian B, and other
+             scattered nominal formations in Italic and Tocharian A and B complete the apparent
+             reflexes of PIE *teng- ‘to come to mind’ (cf. LIV2, s.r. 2.*teng/ǵ-, footnote 2, and
+             Add.Corr.LIV2, s.r. 2.?*teng-, with lit.).
+                 Of the roots on which Germanic forms verbs for the meaning triad under scrutiny,
+             two may be candidates for formations of common Indo-European descent, namely
+             *ǵneh3- and *u̯ei̯d-. The remarkably sparse attestation of PIE *lei̯s- ‘to follow a track’ in
+             intellectual meanings in Italic (possibly U. [-]lērā- ‘teaching, instruction, lore’) solidly
+
+
+               15
+                  Cleasby & Vigfússon (1975, s.v.) claim that the meaning ‘to think’ in Old Icelandic “was still
+             undeveloped.” In light of comparative evidence, it appears instead clear that the meaning ‘to think’
+             should have existed in the precursor of Icelandic but was then lost (cf. LIV2, s.r. *teng/ǵ-2, footnote 3).
+
+=== page 51 ===
+
+                                                                               Journal of Germanic Linguistics               51
+
+           backs up the thesis of polygenesis.16 As for the intellectual meanings connected with
+           PIE *teng-, they may also have arisen polygenetically, in particular if Seebold’s (Kluge/
+           Seebold 2011, s.v. denken) proposal on the connection with PIE *tengh- ‘to weigh’ is
+           taken as valid (see most recently and convincingly Kümmel 2016), and hence the
+           semantic shift from ‘to pull, weigh’ to ‘to think’, which is somewhat paralleled, for
+           instance, in Lat. pēnsāre from PIE *(s)pend- ‘to stretch’.17 Evidence in favor of this
+           proposal is, however, less compelling than that for PIE *lei̯s-. Finally, it is important to
+           note that no contact-induced effects can be claimed for the oldest Germanic
+           formations.
+               As far as PIE *ǵneh3- is concerned, it is solidly attested throughout the Indo-
+           European family and is therefore transparent in terms of origin. Morphologically, the
+           attested formations continue those of the proto-language, albeit with language-
+           specific innovations. In terms of semantics, the core meaning ‘to recognize’ underlies
+           all semantic developments reflected in the particular languages. The semantic span of
+           the attested formations is ‘to recognize’, ‘to teach’, ‘to understand, ‘to know’.
+               The canonically reconstructed core meaning for PIE *u̯ei̯d- is ‘to see’. In addition to
+           Germanic, the root attests to perfect formations in the sense ‘to know’ in Armenian
+           (CArm. gitem), Baltic (OPr. waist), Celtic (OIr. ro-fetar, MW gwyr, MBret. goar), Hellenic
+           (Gk oἶδα), Indo-Iranian (Ved. véda, OAv. vaēdā), and Slavic (OCS vědě). Morphologically,
+           LIV2 (s.r., footnote 9) reconstructs a nonreduplicated formation, whose origin is not
+           clear. The root is moreover apparently attested in its metaphorical sense in Tocharian
+           B (ūwe ‘learned, skillful’),18 and is hence well and widely enough attested that its
+           common Indo-European origin is hardly to be disputed. Therefore, the most
+           economical explanation available is that the specific metaphorical development
+           related to sight was common to Indo-European in its earliest stage, and that the root
+           was lost in Albanian19 and Anatolian, hence at very different times and places,20 or,
+           alternatively, it was not present in Anatolian and lost much later in Albanian.
+
+           4. Conceptual metaphors: Germanic and elsewhere
+           Finally, we can turn to the results of this research with respect to Conceptual
+           Metaphor Theory and ask which of the identified conceptual metaphors find parallels
+           in other Indo-European languages.
+              Within the oldest layer of Germanic, four main conceptual metaphors arise,
+           namely TO LEARN IS TO FOLLOW A TRACK, TO LEARN IS TO GET HOLD OF SOMETHING, TO KNOW IS TO
+
+               16
+                  Cf. also Lat. delīrāre ‘to go insane’, a hypostasis from de līrā(d) (īre) ‘(to go) off the track’ (EDLat., s.v.
+           līra, Vine 2011:333, Tarsi 2023: § 4.4.3). The hypostatic origin of the word does not change the outcome
+           that a cognitive, psychological meaning for the root is likely attested in Italic.
+               17
+                  Cf. also Lat. pondero, whence Fr. pondérer and, subsequently, Eng. ponder, and Ger. abwägen. This
+           further parallel was kindly pointed out by Reviewer B.
+               18
+                  So Adams (2013, s.v., contra van Windekens 1976:539). Toch. B īme ‘consciousness, awareness;
+           thought, memory, recollection’ could also be related (Adams 2013, s.v., with lit.).
+               19
+                  Sergio Neri (p.c.) informs us that the root has in fact entered Albanian through loanwords such as
+           dialectal vid ‘vision’ from Serbo-Croatian.
+               20
+                  This is incidentally further confirmed by, for example, the Greek suppletive paradigm of ὁράω ‘to
+           see’, of denominative origin (LIV2, s.r. 1. *ser-, footnote 3), which makes use of three different stems. In
+           the perfect, the use of PIE *u̯ei̯d- is replaced by that from PIE *h3eku̯- ‘to catch with the eye, observe’
+           (ὄπωπα).
+
+=== page 52 ===
+
+             52        Matteo Tarsi and Stephen Laker
+
+             HAVE SEEN, and TO KNOW IS TO RECOGNIZE/HAVE RECOGNIZED.21 All the oldest attested
+             Germanic verbs for the meaning triad ‘to know’, ‘to teach’, and ‘to learn’ belong to one
+             of these metaphors, namely the PIE roots *lei̯s- ‘to follow a track’, *nem- ‘to take’,
+             *u̯ei̯d- ‘to see’, and *ǵneh3- ‘to recognize’. In addition to these, verbs of teaching
+             relating to activities such as pulling (whence ‘to train’ → ‘to teach’: OE tēon, ME tē n),22
+             drawing (sc. the mind to something → ‘to teach’: OE getyhtan), bringing (MHG
+             anebringen, Ger. beibringen), showing (OE [ge]tācan etc., MHG underwīsen etc.), and
+             giving direction (MHG underrihten etc., possibly to be classified under the TO LEARN IS TO
+             FOLLOW A TRACK metaphor) are recorded.
+                 Quite a few etymologically unrelated parallels are found throughout Indo-
+             European for these conceptual metaphors, besides those relating to recognition on
+             the one hand and to bringing on the other (but see below), which would support the
+             polygenetic hypothesis. The parallels, with short etymological discussions, are
+             given below:
+
+
+             TO LEARN IS TO FOLLOW A TRACK
+             This conceptual metaphor is apparent in the Scottish Gaelic verb ionnsaich ‘to learn’
+             and, secondarily, ‘to teach, educate, instruct, train’ (Am Faclair Beag, s.v.). The verb
+             goes back to OIr. indsaig ‘to approach, go to, reach’, a preverbed form of saig ‘to go
+             towards, approach; to seek out, strive after’ (eDIL, s.vv. ind-saig ?, 1 saigid), which is
+             formed on PIE *seh2g- ‘to follow a track’, like, for example, Lat. sāgīre ‘to perceive
+             keenly, discern acutely’; Go. sakan ‘to quarrel, scold’, sokjan ‘to search’ (and cognates)
+             and a number of other verbs, among which are verbs of perception such as OAlb. /
+             gjegjetë/ ‘hears’ and, in affixed form, sheh ‘to see, look’ (LIV2, s.v. *seh2g/ǵ-,
+             Add.Corr.LIV2, s.v. *seh2g-, and Imberciadori & Demiraj 2023).23
+
+
+             TO LEARN IS TO GET HOLD OF SOMETHING
+             The conceptualization of learning as getting hold of something is paralleled by that of
+             understanding.24 In Indo-European, this is seen in Lat. apprehendere ‘to seize’ and
+             western and central continuants, Fr. apprendre, It. apprendere, Sp. aprender etc., or with
+             a different preverb, OIt. imprendere, Rom. imprender, here with a semantic change from
+                  21
+                   On this last conceptual metaphor, see what is said about PIE *ǵneh3- in footnote 7.
+                  22
+                   Cf. other metaphorical semantic shifts concerned with motion such as TO LEARN IS TO FOLLOW A TRACK
+             and TO THINK IS TO DRIVE SOMETHING SOMEWHERE as testified by, for example, Lat. cogito (compound of con
+             ‘with’ and agitāre, frequentative of agere ‘to conduct’ [< PIE *h2eǵ- ‘to drive’]).
+                23
+                   OAlb. sheh is traditionally connected with PIE *seku̯- ‘to join, accompany’ like synonymous Go. saiƕan
+             and cognates, but see Schumacher & Matzinger (2014:996) for discussion and most recently Imberciadori
+             & Demiraj (2023), who are followed here. The formation could also be from *seh1p- ‘to take notice’ (Lat.
+             sapere etc.), whose semantics would then not be limited to ‘to take notice (through taste)’ as instead
+             reported in LIV2.
+                24
+                   In the collected data, the conceptual metaphor TO UNDERSTAND IS TO GET HOLD OF SOMETHING is found in
+             all clades with the exception of Albanian, Anatolian, and Celtic (e.g. Go. ganiman, MHG vernemen; CArm.
+             imanal; Lith. zgrìbti; Gk λαμβάνω; Sogd. γrβ-, γrb-; Lat. comprehendere, Med.Lat. capere, -ire; Russ. ponimat’;
+             Toch. A eṃts-, Toch. B eṅk-). It cannot be ruled out, however, that the conceptual metaphor arises in
+             nouns and/or phraseologically in those branches of Indo-European, where it seems otherwise unattested,
+             or even in a verb form which has presently eluded data collection.
+
+=== page 53 ===
+
+                                                                              Journal of Germanic Linguistics            53
+
+           ‘to undertake’ to ‘to learn’ (cf. REW, s.vv., and, for example, It. impresa ‘endeavor,
+           undertaking, business, enterprise’). Similarly, also It. imparare (Lat. parāre ‘to procure,
+           obtain, get’). Finally, the present conceptualization is also appreciable in (O)Alb. nxë, a
+           prefixed form of zë ‘to seize’.25
+
+
+           TO KNOW IS TO HAVE SEEN
+           This conceptual metaphor is mainly represented by formations on PIE *u̯ei̯d- (cf.
+           above, section 3). In Albanian the root is not preserved but the language nevertheless
+           attests to a verb, (O)Alb. di, instantiating the conceptual metaphor. The Albanian verb
+           is built on PIE *dheH(i)- ‘to seize with the eye’ (cf. Khot. daiyä ‘sees’ and other forms in
+           Iranian, EDIrV, s.v. *daiH1). Although it constitutes a present formation, it derives its
+           semantics from the perfect (‘to have seized with the eye’ → ‘to know’, Demiraj & Neri
+           2020, with exhaustive discussion and literature).
+
+
+           TO TEACH IS TO SHOW
+           This conceptual metaphor is found outside of Germanic in Anatolian and Iranian. The
+           Anatolian witness to ‘showing as a means of teaching’ is the fientive formation
+           maniyaḫḫ-, whose core meanings cover the sphere of distributing and assigning but
+           can secondarily mean also ‘to teach, show’ (so eCHD, s.v.), allegedly ‘to teach by
+           showing with the hand (vel sim.)’. The Hittite formation, for which a nominal base has
+           not (yet) been recorded, is traditionally compared to Lat. manus ‘hand’, OIcel. mund
+           ‘id.’, OIr. muin ‘patronage, protection’ (Tischler 1990:120–121; cf. also Lgb.-Lat.
+           mundium ‘id.’ and mundoaldus ‘guardian, tutor’ and Ger. -mund in Vormund ‘guardian,
+           tutor’). The Iranian witnesses for formations on roots whose primary semantics is ‘to
+           show’ are found at least in Avestan, namely daxš- ‘to teach’ (LIV2, s.v. ?*dek(u̯)s-, esp.
+           footnote 1 on the root’s semantics; EDIrV, s.v. *daxš) and, possibly, also in Av. sāh- ‘to
+           teach’, if the PIE root *keHs- ‘to give instructions’ (on which see Kümmel 1998:201–
+           202) originally meant ‘to show’.
+               As for the metaphor TO KNOW IS TO RECOGNIZE/ HAVE RECOGNIZED, the Indo-European
+           parallels all go back to the same root as the Germanic formations, namely *ǵneh3- (Alb.
+           njoh, OArm. čanač‘el, OLith. žinóti, OPr. °sinnat; Go. kunnan, OIr. adgnin, Gk γιγνώσκω,
+           Ved. jānā́ti, OAv., YAv. zā̆n-, Lat. (co)gnosco, SPic. KNÚSKEM, OCS znati).
+               Finally, the verbs of teaching related to the activity of bringing into proximity
+           found in Middle and Modern High German (anebringen, beibringen) do not constitute an
+           isolated conceptualization but can be compared to verbs and expressions meaning ‘to
+           remember’ found throughout Indo-European and going back to the concrete idea of
+           ‘driving to, bringing forth in the mind’ as in Toch. A opyāc kälā-/B epiyac käl- lit. ‘to
+           bring to mind/to memory’ – the Tocharian word for ‘mind, memory’ being an Iranian
+           loan (Adams 2013, s.v. epiyac), Sw. komma ihåg, Rum. aducere aminte, It. portare alla
+           mente and others, not least Eng. to call/bring to mind. Similarly, there is also OFr.
+           amoutevoir from Lat. *ad mente habere ‘to have in mind’ (REW, s.v.).26
+              25
+                According to the newest analysis of Neri (2021), with extensive references, Alb. zë could either go
+           back to PIE * gu̯eu̯H- ‘to gain, receive’ or PIE *gu̯hen- ‘to beat’. In both cases, however, the end-point of the
+           semantic development would be ‘to seize’.
+             26
+                On cognitive verbs in Indo-European and their cognitive-metaphorical basis see Tarsi (2025).
+
+=== page 54 ===
+
+             54        Matteo Tarsi and Stephen Laker
+
+             5. Excursus: OE (ge)tǣcan (Eng. teach)
+             West Germanic attests to a possible candidate for a contact-induced semantic
+             extension, namely OE (ge)tǣcan (and continuants, whence Eng. teach). Given the lato
+             sensu similarity between Lat. insignāre ‘to point out, signify, indicate’ → ‘to teach’ (⇐
+             signum ‘sign’, It. insegnare, Lad. ensegné, Fr. enseigner, Sp. enseñar etc., REW, s.v.
+             *insignāre), the lexical family of the Old English verb (among which is tācn ‘token,
+             sign’), and the importance of Latin as a language of instruction in the Middle Ages, it is
+             worth investigating whether the semantics of the Old English verb could have been
+             influenced by Latin.
+                 According to some scholars, the Old English lexical family apparently attests to a
+             Proto-Indo-European root ?*dei̯g/ǵ- (e.g. Seebold 1970, s.v. TEIH-A-; Lehmann 1986, s.v.
+             taikn). This in turn is assumed to be a synonymous variant of PIE *dei̯k- ‘to show, point
+             at’, which not infrequently shows a metaphorical semantic change towards the sphere
+             of saying for example in Germanic and Italic.27 Formations, such as Go. taikn(s), OHG
+             zeihhan, OIcel. teikn ‘sign’ (tákn being an Old English loan), would then go back to PIE ?
+             *dei̯g/ǵ-. Go. gateihan ‘to show, announce’, OHG zīhan ‘to blame, accuse’ beside zeigōn
+             ‘to show’, OFris. tīgia ‘to blame, accuse’, ON tjá ‘to relate’ etc. are instead regular
+             reflexes of PIE *dei̯k-. Lat. digitus ‘finger’ could go back to the same root variant (see
+             EDLat., s.v. for an overview of the relevant literature). If the Old English verb indeed
+             goes back to the Proto-Indo-European root hypothesized above, it would constitute a
+             causative-iterative formation PIE ?*doi̯g/ǵ-éi̯e/o- ‘to show repeatedly (vel sim.)’.
+             A parallel to this formation is OE rāc(e)an ‘to reach’, OFris. rētsa beside rēka ‘to give,
+             pay’ (< PIE *roi̯g/ǵ-éi̯e/o-) beside OHG reihhōn, -ēn ‘to reach, refer’ (cf. furthermore
+             EWAhd, s.v. reichen).
+                 Whatever the exact background of the Old English lexical family, the formal and
+             semantic connection between (ge)tācan and tācn was in all likelihood synchronically
+             transparent enough to have been influenced by Latin as a form of calquing, given the
+             semantic shift from ‘to show, point’ to ‘to teach’ with this root being isolated to the
+             history of English (attested from the ninth century on, Bosworth/Toller, s.vv. getácan
+             and tácan).
+                 However, by comparing the relevant Old English attestations listed in Bosworth/
+             Toller with their Latin equivalent, it is readily seen that OE (ge)tācan never translates
+             Lat. insignāre, but rather corresponds to dirigere ‘to give a particular direction, direct’,
+             indicare ‘to show’, monstrare ‘id.’, offerre ‘to present’, ostendere ‘to show, point out’,
+             praescribere ‘to prescribe’, significare ‘to signify’.
+                 Therefore, Latin influence seems invalidated, and the verb’s semantic extension
+             comes via a different route and is thus not connected with “leaving a mark” – this
+             having repercussions on the conceptual metaphorical system to which the verb
+             belongs (see section 4 above).
+                 From the available data, the meaning ‘to teach’ appears to have arisen in
+             connection with the original root semantics, namely ‘to show’. This is readily seen
+             from a handful of examples (from Bosworth/Toller, s.v. tácan):
+
+
+               27
+                  Compare also Lat. dīcere and Osc. dicust, U. dersicust ‘will have said’ (contrast with Lat. indicāre ‘to
+             point’ ⇐ index ‘one who indicates’); Lat. iūdex ‘judge; lit. he who recites the law’; Gk δίκη ‘custom, usage,
+             order, right’.
+
+=== page 55 ===
+
+                                                                              Journal of Germanic Linguistics   55
+
+           (1) ‘to offer, view, present’
+                  Táhte hé ðá ðam pápan sumne munuc ðæs nama wæs Andreas
+                  cum monachum quemdam, nomine Andream, pontifici offerret
+                  ‘He presented to the Pope a monk, whose name was Andreas.’
+           (2) ‘to present sb with sth’
+                  Him mon setl táhte and hé sæt æt ðam symble
+                  ‘He was shewn a seat, and sat at the feast.’
+           (3) ‘to show an object, the way’
+                  Ic táce sumum men his weg
+                  dirigo
+                  ‘I show to some men their way, I direct.’
+           (4) absol. ‘to show the way’
+                  On niht hé táhte eów þurh fýr
+                  nocte ostendens vobis iter per ignem
+                  ‘Showing you the way at night by means of fire.’
+           (5) ‘to show the direction that must be taken’
+                  Nán man ne táce his getihtledan man fram him
+                  ‘Let no one send his accused man away from himself.’
+
+               Whence the intellectual meaning ‘to show (the direction) to the mind’ → ‘to teach’.
+               As for the conceptual metaphorical system involved, it seems that the Old English
+           lexical innovation does not depart in any significant way from the original Germanic
+           system represented by the verb triad formed on PIE *lei̯s- and exemplified by the
+           conceptual metaphor TO LEARN IS TO FOLLOW A TRACK, if the present proposal is valid,
+           namely that ‘to teach’ is the outcome of the following semantic extension: ‘to show’ →
+           ‘to show the direction’ → ‘to show the direction to the mind’ (hence learning would
+           still be following such a showed direction, and teaching would be showing the way; cf.
+           also MHG underwīsen etc.).
+
+           6. Conclusions
+           In this article, the developments of the meaning triad ‘to know’, ‘to teach’, and ‘to
+           learn’ in Germanic were traced and their Indo-European background illuminated. It
+           was shown that Proto-Germanic devised a system which made use of productive
+           morphological patterns, but also further supplied the meaning ‘to learn’ with PGmc
+           *(ga)neman-, with certainty in East and North Germanic, whereas in West Germanic
+           the verb is attested with the meaning ‘to understand’ (see footnote 8).
+              In West Germanic, a twofold scenario appears: Whereas English, already in its
+           oldest stage, refashioned its system as a suppletive one, where each of the three
+           meanings is also (and later on only) rendered by a formation based on a different root,
+           German continues the core system inherited from West Germanic, which is mildly
+           suppletive due to the demise of the preterite-present PGmc *lais-/liz-, once likely
+           found throughout the Germanic language continuum (Tarsi 2023: §§ 7, 8.1.5).
+           Everywhere in West Germanic a conflation of the meanings ‘to teach’ and ‘to learn’ is
+           appreciable at different times and places. Middle English attests ‘to teach’ → ‘to learn’
+           and vice versa, whereas Cimbrian and Yiddish have ‘to learn’ → ‘to teach’. Relevant
+           contact-induced effects in the West Germanic linguistic area are a few loans, such as
+           ME apprehenden, Lux. enseignéieren, and possibly the Frisian and Dutch equivalents of
+
+=== page 56 ===
+
+             56        Matteo Tarsi and Stephen Laker
+
+             Ger. unterrichten and unterweisen, and morphosyntactic calquing from Slavic into
+             Yiddish lernen zikh. This latter phenomenon, namely reflexivization, is of interest as it
+             resurfaces at different times, places, and under different circumstances in Gothic and
+             North Germanic as well.
+                 North Germanic does not directly continue any formation on PIE * lei̯s-, but
+             acquires the causative from Old English. The status of Icelandic is deemed to be
+             partially conservative, as are Danish and Swedish for their part. Specifically, Icelandic
+             preserves a no doubt very old lexical specimen in nema ‘to learn’, also found in Gothic
+             and other old North Germanic languages, whereas primarily Swedish, but also Danish
+             with the rise of lability, continue the original meaning in which the verb for ‘to teach’
+             was borrowed. Another innovation of Icelandic is a verb for ‘to know’ based on PIE
+             *teng-, which other Germanic languages use as the main verb to express thinking.
+             Here, we see a semantic development in Icelandic, which necessarily has gone
+             through the stage of ‘to think’ (see section 3 and footnote 15).
+                 As for the roots involved in shaping the portion of the lexicon under focus in the
+             Indo-European language family, it can be claimed that those based on PIE *ǵneh3- ‘to
+             recognize’ and *u̯ei̯d- ‘to see’ constitute common heritage, whereas the formations on
+             PIE * lei̯s- ‘to follow a track’ would constitute a case of polygenesis, as meanings
+             related to cognitive activities are only reconstructible for Germanic and, in all
+             likelihood, Italic. Similarly, those formations based on PIE *teng- could also have
+             arisen polygenetically in Germanic and Italic, in particular if the connection with PIE
+             *tengh- ‘to weigh’ is valid.
+                 Finally, of the conceptual metaphors observed in the data gathered for Indo-
+             European, only one can be claimed to be of common Indo-European descent, namely
+             TO KNOW IS TO RECOGNIZE/HAVE RECOGNIZED, as all formations are based on PIE *ǵneh3- (see
+             footnote 7). Instead, the conceptual metaphors TO LEARN IS TO FOLLOW A TRACK, TO LEARN
+             IS TO GET HOLD OF SOMETHING, TO KNOW IS TO HAVE SEEN, and TO TEACH IS TO SHOW all surface
+             in some branches of Indo-European at some point in time in a way, which, through the
+             use of different formations based on different roots, points to the polygenetic nature
+             of the conceptual semantic shift.
+
+             References
+             Adams, Douglas Q. 2013. A dictionary of Toch. Arian B: Revised and greatly enlarged (Leiden Studies in Indo-
+                European 10). Amsterdam: Rodopi.
+             Add.Corr.LIV2 = Kümmel, Martin. 2023. Addenda und Corrigenda zu LIV2 [Version: August 10, 2023].
+             Am Faclair Beag = Am Faclair Beag – An English–Scottish Gaelic dictionary incorporating Dwelly. www.faclair.
+                com (accessed on August 24, 2024).
+             Benveniste, Émile. 1947–1948. La famille étymologique de learn. English and Germanic Studies 1, 1–5.
+             Bosworth/Toller = Bosworth, Joseph. 1972. An Anglo-Saxon dictionary, ed. T. Northcote Toller. Oxford:
+                Oxford University Press (online version at https://bosworthtoller.com).
+             ChWdW9 = Seebold, Elmar. 2001. Chronologisches Wörterbuch des deutschen Wortschatzes (9. Jh.). Berlin: De Gruyter.
+             Cleasby, Richard & Guðbrandur Vigfússon. 1975. An Icelandic–English dictionary, 2nd edn. Oxford:
+                Clarendon Press.
+             Dance, Richard, Sara Pons-Sanz, & Brittany Schorn. 2019. The Gersum Project: The Scandinavian influence on
+                English vocabulary. Cambridge, Cardiff, and Sheffield. www.gersum.org (accessed on August 24, 2024).
+             Demiraj, Bardhyl & Sergio Neri. 2020. di ∼ -ti ∼ -tur. In Digitales Philologisch-Etymologisches Wörterbuch des
+                Altalbanischen (15.–18. Jh.). Ludwig-Maximilians-Universität München. www.dpwa.gwi.uni-muenchen.de
+                (accessed on August 24, 2024).
+
+=== page 57 ===
+
+                                                                              Journal of Germanic Linguistics           57
+
+           DOE = Dictionary of Old English. University of Toronto. https://doe.artsci.utoronto.ca/ (accessed on August
+              24, 2024).
+           DSL = Dictionaries of the Scots language/Dictionars o the Scots Leid. 2004. Scottish Language Dictionaries Ltd.
+              www.dsl.ac.uk (accessed on August 24, 2024).
+           eCHD = Electronic Chicago Hittite dictionary. University of Chicago. https://isac.uchicago.edu/research/
+              projects/chicago-hittite-dictionary-project/electronic-chicago-hittite-dictionary
+           EDHIL = Kloekhorst, Alwin. 2008. Etymological dictionary of the Hittite inherited lexicon (Leiden Indo-
+              European Etymological Dictionary Series 5). Leiden and Boston: Brill.
+           eDIL = An electronic dictionary of the Irish language, based on the Contributions to a Dictionary of the Irish
+              language (Dublin: Royal Irish Academy, 1913–1976). https://dil.ie/
+           EDIrV = Cheung, Johnny. 2007. Etymological dictionary of the Iranian verb (Leiden Indo-European
+              Etymological Dictionary Series 2). Leiden and Boston: Brill.
+           EDLat. = De Vaan, Michiel. 2008. Etymological dictionary of Latin and the other italic languages (Leiden Indo-
+              European Etymological Dictionary Series 7). Leiden: Brill.
+           EWAhd = Lloyd, Albert L., Otto Springer, & Rosemarie Lühr (eds.). 1988–. Etymologisches Wörterbuch des
+              Althochdeutschen. Göttingen: Vandenhoeck & Ruprecht.
+           Fortescue, Michael. 2000. Thoughts about thought. Cognitive Linguistics 12(1), 15–45.
+           FWB = Frühneuhochdeutsches Wörterbuch. Akademie der Wissenschaften zu Göttingen. https://fwb-online.
+              de/ (accessed on January 23, 2025).
+           Ginevra, Riccardo. 2024a. From etymology to Conceptual Metaphor Theory: Ancient Greek θνῄσκω ‘to die’
+              and the metaphor DEATH IS DEPARTURE in Indo-European. In Irene de Felice & Chiara Fedriani (eds.),
+              Studies in cognitive classical semantics, 111–146. Alessandria: Edizioni dell’Orso.
+           Ginevra, Riccardo. 2024b. To die is ‘to run (away)’: The semantics of Proto-Germanic *daw-ja- ‘to run; to
+              die’ from a historical and comparative perspective. NOWELE 77(2), 87–109.
+           Harðarson, Jón Axel. 1993. Studien zum urindogermanischen Wurzelaorist und dessen Vertretung im
+              Indoarischen und Griechischen (Innsbrucker Beiträge zur Sprachwissenschaft 74). Innsbruck: Institut für
+              Sprachwissenschaft der Universität Innsbruck.
+           Imberciadori, Giulio & Bardhyl Demiraj. 2023. SHEH 3.sg.prs.ind. ∼ (↑) pa 3.sg.aor. ∼ párë ptc. In Digitales
+              Philologisch-Etymologisches Wörterbuch des Altalbanischen (15.–18. Jh.). www.dpwa.gwi.uni-muenchen.de
+           Jasanoff, Jay H. 2023. Gk. ἔγνωκα and the perfect of PIE *ǵneh3- ‘know’. In Darya Kavitskaya & Alan C. L. Yu
+              (eds.), The life circle of a language – past, present, and future, 118–124. Oxford: Oxford University Press.
+           Katz, Dovid. 1987. Grammar of the Yiddish language. London: Duckworth.
+           Kluge/Seebold = Kluge, Friedrich. 2011. Etymologisches Wörterbuch der deutschen Sprache. Bearbeitet von
+              Elmar Seebold, 25th edn. Berlin: De Gruyter.
+           Kölligan, Daniel. 2020. Seething anger: Latin furor. In Luka Repanšek, Harald Bichlmeier, & Velizar
+              Sadovski (eds.), vácāmsi miśrā́ kr̥ṇavāmahai – Proceedings of the international conference of the Society for
+              Indo-European Studies and IWoBA XII, Ljubljana 4–7 June 2019, 397–412. Hamburg: Baar.
+           Kölligan, Daniel. 2021. Getting there? Greek δύναμαι ‘be able’. In Georgios K. Giannakis, Luz Conti, Jesús de
+              la Villa, & Raquel Fornieles (eds.), Synchrony and diachrony of Ancient Greek, 151–162. Berlin: De Gruyter.
+           Kölligan, Daniel. 2022. Full and calm: Notes on Greek ἥσυχoς and Latin tranquillus. Colloquia Classica et
+              Indogermanica VII. Miscellanea in honorem Nikolai N. Kazansky septuagenarii. Acta Linguistica Petropolitana
+              18(1), 165–186.
+           Koptjevskaja-Tamm, M. 2008. Approaching lexical typology. In Martine Vanhove (ed.), From polysemy to
+              semantic change, 3–52. Amsterdam: John Benjamins.
+           Koptjevskaja-Tamm, Maria & Ljuba N. Veselinova. 2020. Lexical typology in morphology. In Rachelle
+              Lieber (ed.), Oxford research encyclopaedia of linguistics. Oxford: Oxford University Press.
+           Koptjevskaja-Tamm, Maria, Ekaterina Rakhilina, & Martine Vanhove. 2016. The semantics of lexical
+              typology. In Nick Riemer (ed.), The Routledge handbook of semantics, 434–454. Abingdon: Routledge.
+           Kövecses, Zoltán. 2002. Metaphor: A practical introduction. Oxford: Oxford University Press.
+           Kümmel, Martin J. 1998. Würzelpräsens neben Würzelaorist im Indogermanischen. Historische
+              Sprachforschung 111, 191–208.
+           Kümmel, Martin. 2016. Das dünkt mich dunkel. In Bjarne Simmelkjær Sandgaard Hansen, Benedicte
+              Nielsen Whitehead, Thomas Olander, & Birgit Anette Olsen (eds), Etymology and the European lexicon,
+              219–233. Wiesbaden: Reichert Verlag.
+           Lakoff, George & Mark Johnson. 1980. Metaphors we live by. Chicago: University of Chicago Press.
+
+=== page 58 ===
+
+             58        Matteo Tarsi and Stephen Laker
+
+             Lehmann, Winfred P. 1986. A Gothic etymological dictionary. Leiden: Brill.
+             LIV2 = Rix, Helmut & Martin Kümmel. 2001. Lexikon der Indogermanischen Verben, 2nd edn. Wiesbaden:
+                Reichert.
+             Lühr, Rosemarie. 2008. Loss and emergence of grammatical categories. Sprachwissenschaft 33(3), 317–349.
+             Marstrander, Carl J. S. 1929. Zum ältesten germanischen Verbum. Norsk tidskrift for sprogvidenskap 2, 99–106.
+             MED = Middle English dictionary. Ed. Robert E. Lewis et al. 1952–2001. Ann Arbor: University of Michigan
+                Press. Online edition in Middle English compendium. Ed. Frances McSparran et al. Ann Arbor: University
+                of Michigan Library, 2000–2018. https://quod.lib.umich.edu/m/middle-english-dictionary/ (accessed
+                on August 24, 2024).
+             Meid, Wolfgang. 1971. Das germanische Praeteritum (Innsbrucker Beiträge zur Sprachwissenschaft 3).
+                Innsbruck: Institut für Vergleichende Sprachwissenschaft der Universität Innsbruck.
+             Meillet, A. 1909. Sur le prétérito-présent got. lais. Indogermanische Forschungen 26, 200–202.
+             Neri, Sergio. 2021. zë. In Digitales Philologisch-Etymologisches Wörterbuch des Altalbanischen (15.–18. Jh.). www.
+                dpwa.gwi.uni-muenchen.de
+             Nichols, Johanna, David A. Peterson, & Jonathan Barnes. 2004. Transitivising and detransitivising
+                languages. Linguistic Typology 8(2), 149–211.
+             OED = Oxford English Dictionary. www.oed.com (accessed on August 24, 2024).
+             ONP = Ordbog over det norrøne prosasprog. https://onp.ku.dk (accessed on September 10, 2024).
+             Óskarsson, Veturliði. 2003. Middelnedertyske låneord i islandsk diplomsprog frem til år 1500 (Bibliotheca
+                Arnamagnæana XLIII). Copenhagen: C. A. Reitzel.
+             REW = Meyer-Lübke, Wilhelm. 1935. Romanisches etymologisches Wörterbuch, 3rd edn. Heidelberg: Carl
+                Winter (online version at www.rew-online.gwi.uni-muenchen.de).
+             Ringe, Don. 2017. From Proto-Indo-European to Proto-Germanic, 2nd edn. (A linguistic history of English, vol. I).
+                Oxford: Oxford University Press.
+             Schumacher, Stephan & Joachim Matzinger. 2014. Die Verben des Altalbanischen – Belegwörterbuch,
+                Vorgeschichte und Etymologie (Albanische Forschungen 33). Wiesbaden: Harassowitz.
+             Seebold, Elmar. 1970. Vergleichendes und etymologisches Wörterbuch der germanischen starken Verben (Janua
+                Linguarum 85). The Hague and Paris: Mouton.
+             Sweetser, Eve. 1990. From etymology to pragmatics. Cambridge: Cambridge University Press.
+             Tanaka, Toshiya. 2011. A morphological conflation approach to the historical development of preterite-present
+                verbs: Old English, Proto-Germanic, and Proto-Indo-European (The Faculty of Languages and Cultures
+                Library 2). Fukuoka: Hana Shoin.
+             Tarsi, Matteo. 2023. PIE *lei̯s-. Historische Sprachforschung 136, 226–256.
+             Tarsi, Matteo. 2025. Verbs of cognition in Indo-European: Conceptualization patterns and diachrony.
+                Unpublished manuscript.
+             Tarsi, Matteo & Chiara Zanchi. 2025. Basic valency orientation in Gothic. Indogermanische Forschungen 130,
+                257–283.
+             Tischler, Johann. 1990. Hethitisches etymologisches Glossar, Teil II (Lieferungen 5 und 6) (Innsbrucker Beiträge
+                zur Sprachwissenschaft 20). Innsbruck: Institut für Sprachwissenschaft der Universität Innsbruck.
+             Van Windekens, A. J. 1976. Le Tokharien confronté avec les autres langues indo-européennes, vol. I: La phonétique
+                et le vocabulaire. Louvain: Centre International de Dialectologie Générale.
+             Vanhove, Martine. 2008. Semantic associations between sensory modalities, prehension and mental
+                perceptions: A crosslinguistic perspective. In Martine Vanhove (ed.), From polysemy to semantic change:
+                Towards a typology of lexical semantic associations (Studies in Language Companion Series 106), 341–370
+                Amsterdam: John Benjamins.
+             Vine, Brent. 2011. Umbrian disleralinsust. In Giovanna Rocca (ed.), Atti del convegno internazionale in
+                memoriam Helmut Rix (’Aλεξάνδρεια/Alessandria 5), 331–344. Alessandria: Edizioni dell’Orso.
+             Ziegler, Sabine. 2012. Liere, liese. In Sergio Neri & Sabine Ziegler, “Horde Nöss” – Etymologische Studien zu
+                den Thüringer Dialekten, 142–146. Bremen: Hempen Verlag.
+
+
+
+
+             Cite this article: Tarsi, M. and Laker, S. (2026). ‘‘to know’, ‘to teach’, and ‘to learn’ in Germanic’. Journal of
+             Germanic Linguistics 38, 40–58. https://doi.org/10.1017/S1470542726100178

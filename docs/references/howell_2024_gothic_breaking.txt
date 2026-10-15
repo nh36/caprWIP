@@ -1,0 +1,844 @@
+Robert B. Howell, "What do we really know about Gothic breaking? On the
+problem of consonantally conditioned vowel mutations in Germanic". Chapter 4
+of Jared S. Klein and Artūras Ratkus (eds), *Studies in Gothic*, Oxford
+University Press, 2024, pp. 75-91. DOI 10.1093/oso/9780198896692.003.0004.
+Citation key: Howell2024.
+PDF SHA256: 060ce5f832f765a51cee031d84177889fddf2648aa6b96a5fb050c9f1b643391
+
+SOURCE AND METHOD
+-----------------
+Born-digital publisher PDF (XeLaTeX); extracted with `pdftotext -layout`.
+No OCR. The PDF stays untracked under docs/references/ per .gitignore.
+
+REPAIRS (deterministic, documented)
+-----------------------------------
+1. 17 repeated access-watermark lines ("Downloaded from academic.oup.com
+   ... by Catherine Sharp user on 14 October 2026") are removed. They are not
+   part of the chapter text.
+2. The font emits the reconstruction asterisk as U+2217 ASTERISK OPERATOR;
+   all 192 occurrences are mapped to ASCII "*" so that reconstructed forms
+   are searchable alongside the other holdings. The typeset spacing
+   ("* /r/") is the publisher's and is preserved.
+No other substitution. The editor's name appears in the copyright line as
+"Artuˉras" (spacing macron) exactly as emitted by the PDF.
+
+PAGE NUMBERING
+--------------
+Printed pages 75-91; 17 sheets. Printed folio = PDF sheet + 74.
+Folios self-confirmed at page edges: 16/17 (unconfirmed: 75).
+The chapter-opening p. 75 carries no running folio; it is anchored by the
+copyright block's chapter DOI and by the following folio 76.
+Page markers below denote PRINTED folios.
+
+RELATION TO OTHER HOLDINGS
+--------------------------
+Howell & Salmons (AJGLL 9, 1997) is a separate holding
+(howell_salmons_1988_lowering_of_i.*). This chapter cites Howell 1988a/b and
+1991a/b, which CAPR does not hold directly.
+
+=== page 75 ===
+
+                                                           4
+         What do we really know about Gothic
+                      breaking?
+     On the problem of consonantally conditioned vowel
+                  mutations in Germanic
+                                               Robert B. Howell
+
+
+
+                                              4.1 Introduction
+
+Gothic is well known as the only attested early Germanic dialect that shows no
+evidence of Umlaut processes; the only conditioned vocalic mutations in Gothic
+are effected by following consonants, and the most salient of these is the so-
+called Gothic breaking (or Gothic lowering), the lowering (or non-raising) of
+PGmc. * /i/, * /e/, * /u/ before Gothic <h>, <ƕ>, and <r>. The use of graphemic
+brackets < > with <h>, <ƕ>, and <r> is intentional, since we are on the one hand
+poorly informed about what these orthographic symbols represent phonetically,
+but on the other hand, the phonetic realization of these graphemes is crucial to our
+understanding of Gothic breaking as a process. The purpose of this contribution
+is to (re)sift the data in order to determine what we can and perhaps cannot ever
+know about Gothic breaking. In her recent brilliant work on the history of Old
+English palatalization of PGmc. * /k/ and * /g/ Minkova (2003, 2014, 2015) lays
+bare the challenge:
+
+   While the primacy of written sources in historical phonology seems self-evident,
+   the interpretation of spelling in relation to the inventory of contrastive entities is
+   riddled with problems. The accessible ‘facts’ in the history of Western languages
+   are recorded in alphabetic writing systems … yet no written document, at least
+   prior to the IPA, can be taken as a precise record of pronunciation.
+                                                                  Minkova 2015: 72–3
+
+The fact is, we have only clues regarding the phonetic qualities represented by the
+Gothic graphemes <h>, <ƕ>, and <r>, which in turn makes it difficult to isolate
+what is going on in the Gothic breaking process. That said, we will argue that
+
+
+
+
+Robert B. Howell, What do we really know about Gothic breaking?. In: Studies in Gothic. Edited by: Jared S. Klein and
+Artuˉras Ratkus, Oxford University Press. © Robert B. Howell (2024). DOI: 10.1093/oso/9780198896692.003.0004
+
+=== page 76 ===
+
+76    HOWELL
+
+there does indeed seem to be a phonological feature unifying virtually all of the
+Germanic consonants that condition mutations of adjacent vowels.
+
+
+                         4.2 An overview of Gothic breaking
+Gothic breaking is a remarkably regular process unaffected by analogical innov-
+ations and relatively unburdened by troubling exceptions or irregularities.¹ As is
+well known, the Gothic system of short vowels develops from a reconstructed
+Proto-Germanic system of four vowels. A salient feature of Gothic is the uncondi-
+tioned merger of PGmc. * /e/ and * /i/ as Gothic /i/, though this otherwise regular
+merger is disrupted or, alternatively, subsequently lowered before <h>, <ƕ>, and
+<r>, where we find the Gothic digraph <ai>, generally accepted as representing
+a low mid front vowel [ɛ].² There is no parallel raising in the back vowels since
+Proto-Germanic lacks a mid back /o/, but reflexes of PGmc. * /u/ are realized by
+the Gothic digraph <au> in the same environments, i.e. before <h>, <ƕ>, and <r>.
+Graphemic <au> is generally thought to represent a low mid back vowel [ɔ]:
+(1) PGmc.                                                 Gothic
+
+
+       */i/                                         /i/
+
+
+       */e/                                         /ɛ/ (<ai> /       /h/, /ƕ/, /r/ Gothic breaking)
+
+       Examples
+       Gothic merger
+       PGmc. * /i/ > Gothic /i/: PGmc. * fiskaz ‘fish’ > Go. fisks; PGmc. * stigum
+       ‘(we) climbed’ > Go. stigum; PGmc. * witana ‘know’ > Go. witan.
+
+       PGmc. * /e/ > Gothic /i/: PGmc. * etana ‘eat’ > Go. itan; PGmc. * wegaz
+       ‘way’ > Go. wigs; PGmc. * nemana ‘take’ > Go. niman.
+
+       Gothic breaking
+       PGmc. * /i/ > Gothic /ɛ/ (<ai>): PGmc. * wiraz ‘man’ > Go. wair; PGmc.
+       *
+         mihstuz ‘dung’ > Go. maihstus; PGmc. * li(g)w um ‘(we) lent’ > Go.
+       laíƕum.
+
+   ¹ There are some heavily discussed issues on the periphery of breaking, including the apparent reten-
+tion of PGmc. * /e/ in Gothic waila ‘well’, the status of the digraph <ai> in the reduplicating syllable
+of the class VII strong verbs, etc. The relevant literature on these issues is summarized in Cercignani
+1986 and is referenced also in Lehmann 1986. Since we focus here on the nature of the conditioning
+factors of breaking, these issues fall outside of the scope of this discussion.
+   ² Many scholars assume a merger of PGmc. * /i/ and * /e/ as pre-Gothic * /i/, followed by breaking,
+but it is just as likely that PGmc. * /e/ never raised to * /i/ before * /h/, * /ƕ/, and * /r/ in pre-Gothic.
+Resolution of this issue is not important here. For a review of the literature on the topic see Braune and
+Heidermanns 2004: 39, note 1.
+
+=== page 77 ===
+
+                                                           GOTHIC BRE AKING         77
+
+    PGmc. * /e/ > Gothic /ɛ/ (<ai>): PGmc. * berana ‘bear’ > Go. bairan;
+    PGmc. * rextaz ‘straight’ > Go. raíhts; PGmc. * sexw ana ‘see’ > Go. saíƕan.
+
+     PGmc.                                  Gothic
+     */u/                                   /u/
+
+                                            [ɔ] (<au> /    /h/, /ƕ/, /r/ Gothic breaking)
+
+     Examples
+     PGmc. * /u/ > Gothic /u/: PGmc. * hundaz ‘dog’ > Go. hunds; PGmc. * nutum
+     ‘(we) enjoyed’ > Go. nutum; PGmc. * hubum ‘(we) cried’ > Go. hufum.
+
+     Gothic breaking
+     PGmc. * /u/ > Gothic /ɔ/ (<au>): PGmc. * wurdum ‘(we) became’ > Go.
+     waúrþum; PGmc. * tugum ‘(we) pulled’ > Go. taúhum; PGmc. * suxtinz
+     ‘illnesses’ (acc.pl.) > Go. saúhtins.
+
+   Exceptions to Gothic breaking are few. Reflexes of PGmc. * /i/ and * /u/ do
+not undergo breaking as seen in the verbal and nominal prefix bi- (Go. biháitja
+‘boaster’, biƕaírband ‘(they) crowd around’; birinnan ‘run about’) or in the
+particle -uh (Go. ƕazuh ‘each’). Furthermore, a rhotacized PGmc. * /z/ in the
+preposition/prefix * uz ‘out’ does not cause breaking (* uz-rīsan > Go. urreisan
+‘arise’; * uz * rikw iza > Go. ur riqiza ‘out of the darkness’). The adverbial compound
+du-ƕe ‘why’ does not show breaking, nor does Gothic fidur- ‘four’, found only
+in compounds. Finally, the defective verb attested six times in apparent impera-
+tives only, hiri, hirjats, hirjiþ ‘come hither’ does not show breaking (see Cercignani
+1984, 1986). The most comprehensive and convincing treatment of these appar-
+ent exceptions to breaking is provided by Hill 2017, who notes that all of these
+forms are compounds with original morpheme boundaries between a short vowel
+and the potential breaking conditioner and that the compounds could well have
+originated after the period of breaking was complete.
+   It has often been noted that there are a number of consonantally conditioned
+vowel changes in early Germanic and indeed in modern dialects of Germanic
+languages that bear striking similarity to Gothic breaking (see for example Ven-
+nemann 1971, 1972; Howell 1988a, b, 1991a, b; Harbert 1997; Kostakis 2015). All
+involve changes conditioned by post-vocalic r, h, and sometimes other conson-
+ants and all result in lowering and/or backing of the affected vowels. While each
+of these changes must be viewed as independent of the others, they obviously share
+characteristics and should be weighed as we attempt to determine the phonetics
+of the Gothic breaking process. A representative set of changes in early Germanic
+is given in example (2):
+
+=== page 78 ===
+
+78   HOWELL
+
+(2) Early Germanic vocalic mutations conditioned by r, h, hw :
+
+     Old High         WGmc. * /i/, * /u/ > OHG /e/, /o/ /___ r, h:
+     German             WGmc. * wir ‘we’ > OHG wer; * widarbirgja ‘uphill’ >
+     (all dialects)     widarbergi; * wihta ‘little creature’ > weht;
+                        *
+                          druhtina ‘lord’ > trohtin; * furhtjan ‘fear’ > forhten;
+                        *
+                          wurta ‘root’ > worz; * suhti ‘illness’ > soht;
+                        *
+                          luhsa ‘lynx’ > lohs
+                        (Braune and Reiffenstein 2004: 34 note 3, 36 note 3).
+                      WGmc. * /ai/ > OHG /ē/ /___ h, r, w:
+                        WGmc. * taih ‘excused’ > OHG zēh;
+                        *
+                          laihw ‘lent’ > lēh; * aihtiz ‘possession’> ēht;
+                        *
+                          lairjan ‘teach’ > lēren; * mairo ‘more’ > mēro;
+                        *
+                          aiwa ‘law’ > ēwa
+                      WGmc. * /au/ > OHG /ō/ /___ h, r, dentals:
+                        WGmc. * hauha ‘high’ > OHG hōh; * tauh ‘pulled > zōh;
+                        WGmc. * aura ‘ear’ > ōra; * kaus ‘chose’ > OHG kōs;
+                        *
+                          launa ‘wage, reward’ > lōn; * dauþu ‘death’ > tōd
+                        (Braune and Reiffenstein 2004: 44–9).
+
+     Old English      pre-OE * æ > OE ea /___ rC, lC, h:
+                          pre-OE * bærn ‘child’ > OE bearn;
+                          *
+                            hældan ‘hold’ > healdan; * sæhw ‘saw’ > seah
+                      pre-OE * e > OE eo /___ rC, lh/lf, h:
+                          pre-OE * werþan ‘become’ > OE weorðan;
+                          *
+                            elh ‘elk’ > eolh; * self > seolf ; * feh ‘cattle’ > feoh
+                      pre-OE * i > OE io/eo /___ rC, h:
+                          pre-OE * hirdi ‘shepherd’ > OE hiorde, hierde;
+                          *
+                            tihhōjan ‘consider’ > tiohhian (Hogg 2011: 82–92).
+
+     Old Norse        NWGmc. * ai > ON á /___ h (which subsequently is lost), r:
+                        NWGmc. * faihar ‘shimmering’ > ON fár;
+                        *
+                          air ‘early’ > ár (Noreen 1970: 50–1).
+                      NWGmc. * i, * u > ON é, ó /___ h (which subsequently is lost):
+                        NWGmc. * rihtjan > ON rétta;
+                        NWGmc. * suhtiz ‘illness’ > ON sótt
+                        (Prokosch 1939: 115).
+
+The repeated conditioning of vocalic lowering (and in OE backing and lowering)
+by * /r/, * /h/ (< * /x/) in dialects of early Germanic is certainly striking. While
+
+=== page 79 ===
+
+                                                          GOTHIC BRE AKING        79
+
+these changes are independent of Gothic breaking, their parallel conditioning and
+effects can certainly inform our consideration of the Gothic process.
+
+
+                   4.3 Gothic breaking in the literature
+Standard handbooks on early Germanic and Gothic generally remain silent on
+breaking as a phonetic process and simply state the facts with no commentary (cf.
+Streitberg 1910: 66–7; Prokosch 1939: 114; Krause 1953: 77–81; Hempel 1966: 21;
+Braune and Heidermanns 2004: 32–6). Only occasionally is an oblique reference
+to breaking to be detected in the discussion of the pronunciation of one of the
+conditioning consonants, and there seems to be a somewhat widespread view that
+breaking could only have been conditioned by ‘strongly’ articulated consonants.
+Streitberg (1920: 61), who recognizes that Gothic /h/ must have been a phonetic
+[h] by the time of the origin of the extant manuscripts (i.e. sixth century AD),
+but claims that the precursor of this [h] must have been a buccal spirant: ‘Zur
+Zeit der Brechung kann die Verminderung des Reibegeräusches bei der urgerm.
+x noch nicht weit vorgeschritten sein.’ [‘At the time of breaking the reduction of
+the fricative Proto-Germanic x cannot have proceeded very far.’ ] In a similar vein,
+Janko (1908: 62) states without evidence or justification ‘Ohne Zweifel kann die
+sogenannte gotische Brechung des i und u . . . bloß von kräftig artikulierten Lauten
+h und r verursacht worden sein. Für das h jener vorwulfianischen Periode folgt
+aber daraus notwendig das, daß es ein voller Spirant war.’ [‘Without a doubt the
+so-called Gothic breaking of i and u can only have been caused by strongly articu-
+lated h and r sounds. For the h of that pre-Wulfian period it necessarily follows
+that it was a full spirant.’ ] Braune and Heidermanns (2004: 68) also reference the
+phonetics of /h/ in breaking environments: ‘in allen anderen Stellungen ist noch
+die Aussprache als Spirant (schwächer als der nhd. ach-Laut) anzusetzen’ [‘in all
+other positions the pronunciation as a spirant (weaker than the NHG ach-Laut) is
+still to be assumed’]. These are interesting claims given the fact that consonantal
+conditioning factors from earliest Germanic to the present tend to be weakened
+and lost immediately after the vocalic mutations they condition, as we will see
+below.
+   Some literature attempts to find ways to characterize the Gothic breaking con-
+ditioners /r/, /h/, /ƕ/ as a natural class of some sort. Runge (1973, 1974) argues
+that the frequent co-conditioning of vocalic mutations by reflexes of PGmc. * /r/
+and * /x/ point to a uvular [R] in early Germanic. This runs afoul of the fact
+that rhotacisms of PGmc. * /z/ in Northwest Germanic and in Gothic point to a
+phonetic realization of PGmc. * /r/ as an apical trill or flap.
+   Vennemann (1972), no doubt constrained by the shortcomings of early binary
+feature representations of vowels and consonants, argues that Gothic /r/, /h/, /ƕ/
+share only the feature [–high] that might be construed as a possible conditioning of
+
+=== page 80 ===
+
+80   HOWELL
+
+a vowel lowering. He makes an important point that the feature [–high] ‘is shared
+by several consonants not involved in this rule’ (Vennemann 1972: 872). But Ven-
+nemann also admits that there is no particular reason to characterize Gothic /r/,
+/h/, /ƕ/ as [+low]: ‘I simply write [+low] although the segments /h hw r/ are not
+low in an absolute sense’ (Vennemann 1972: 873).
+   A recent study by Kostakis (2015) provides a completely different analysis,
+characterizing Gothic Lowering (= Gothic breaking) as a dissimilatory process
+conditioned by [r], [x], and [xw ] which are assigned the feature [HIGH]. Aside
+from the general concern that dissimilatory processes are relatively rare compared
+to assimilatory ones, it is not at all clear that any of the conditioning factors of
+Gothic breaking can be characterized as [HIGH], and Kostakis has to make some
+rather unconventional assumptions, including the claim that the phonetic value
+of Gothic <h> and <ƕ> was a velar fricative [x] and [xw ] respectively. In order
+to make this work, Gothic <g> is represented in all positions as a stop [g] via
+‘gamma fortition’ (Kostakis 2015: 191), a possibility that has been rejected by most
+scholars who assume a medial fricative [Ɣ ] or final [x] as the phonetic realization
+of the Gothic grapheme <g> (see Roberge 1984 for a lucid discussion of the rather
+extensive literature on Gothic final -g).
+   To date the ‘natural class’ arguments suffer from two main weaknesses. First,
+they fail to account for Gothic-internal evidence that sheds light on the phonet-
+ics of the conditioning consonants and prematurely assign phonological features
+for which there is little or no evidence. Second, they offer no explanation for the
+fact that only Gothic /r/, /h/, /ƕ/ condition breaking even though other conson-
+ants possess the alleged crucial phonological feature. Kostakis (2015) does not, for
+example, explain why other consonants with the feature [HIGH], such as /k/, /kw /,
+/g/ do not condition breaking.
+
+
+
+                        4.4 A return to the evidence
+
+Before making any decision about what might unify Gothic /r/, /h/, /ƕ/ as condi-
+tioners of breaking, it is worth reviewing the evidence for the phonetic realization
+of each of these conditioning factors yielded by the extant Gothic texts. For Gothic
+/r/ this is a relatively simple matter, but for /h/, /ƕ/ a number of issues arise
+that have generated a fairly substantial scholarly debate, most of which is sum-
+marized in Roberge (1984). In particular, the status of Gothic /g/ on the one hand
+and /h/, /ƕ/ on the other has generated considerable discussion. In any event,
+the graphemes <h>, <ƕ>, <r> all represent phonemes that have a wide range of
+phonetic realizations across Germanic, so careful sifting of the limited evidence
+yielded by the extant Gothic manuscripts is essential.
+
+=== page 81 ===
+
+                                                                GOTHIC BRE AKING     81
+
+   Vocalic lowering before rhotics is one of the most common phonological devel-
+opments in the history of the Germanic languages and the place of articulation
+of the word-initial or syllable-initial contextual variant of the rhotic is of little
+importance. The lowering effect of all rhotics, regardless of the point of greatest
+constriction, is accounted for in the phonetic literature in Fujimura and Erick-
+son (1997: 81): ‘Spectrographically, in English and many other languages, /r/. . . is
+characterized by an unmistakably low F3 . Interestingly, this low F3 is observed for
+various phonetic variants of /r/, including syllable initial and final positions, and
+apical and uvular productions.’ Some examples of vowel lowering before various
+types of rhotics in English, Dutch and German are given in example (3):³
+(3) Vowel lowerings before rhotics in West Germanic
+
+      Fourteenth-century English e > a /___r: OE dēor appears as darling; OE
+      fēorþing > farthing; OE stēor+bord > starboard (Minkova 2014: 276–7)
+
+      Thirteenth-century Flemish e > a /___rC: werden > warden ‘become’; verde >
+      varde ‘peace’; kerke > kark ‘church; werk > warc ‘work’; Antwerpen >
+      Antwarpen ‘Antwerp’ (Loey 1976: 8)
+
+      Taubergrund (Baden) /r/ = [R]: MHG ë, e, i > æ /___ rC stæRwɛ ‘sterben’;
+      kærl ‘Kerl’; wæRfɛ ‘werfen’; wæRt ‘Wirt’; hæRš ‘Hirsch’ (Heilig 1898: 91–2)
+
+      Kalbach (Rhenish Franconian) /r/ = [r]: MHG i > ä /___ rC: bärk ‘Birke’;
+      härn ‘Hirn’; härš ‘Hirsch’; kärx ‘Kirche’; wärt ‘Wirt’ (Christmann 1927:
+      18, 20)
+   Across Germanic, the influence of rhotics on preceding vowels occurs primar-
+ily when the rhotic is in the syllable coda—in very many instances it is the only
+environment in which vocalic mutations occur. When a post-vocalic rhotic in
+syllable-initial position affects a preceding vowel, as in Gothic (e.g. baíran ‘bear’),
+the same effect is found before the rhotic in the coda (e.g. waír ‘man’). In short,
+there is an implicational hierarchy which sees the coda rhotics as the primary
+conditioning environment for vocalic mutations and the syllable-initial rhotics as
+secondary conditioners.
+   In Gothic, the few bits of evidence we have concerning the phonetic quality
+of /r/ point to an apical trill or flap in word-initial and word-final positions. The
+rhotacism found in sequences of * z-r- > Gothic -rr- clearly points to an apical [r]
+in word-initial or pre-tonic position (* uz-rîsan > Go. urreisan ‘arise’; * uz-runiz >
+urruns ‘rising’; * uz * rikw iza > Go. ur riqiza ‘out of the darkness’ [the latter given
+in 2 Cor 4:6 as ur-riqiza by Streitberg 2000: 293]). Similarly, the development of
+
+  ³ For scores of additional examples see Howell 1991a: 22–8.
+
+=== page 82 ===
+
+82   HOWELL
+
+word-final sequences of * -r-V-z to Gothic -r points to an apical realization of /r/:
+PGmc. * wiraz ‘man’ > pre-Gothic * wirz > Gothic waír. Given the fact that many
+realizations of rhotics result in lowering of preceding vowels, resolution of this
+issue is not terribly important, but the facts point towards an apical [r] in Gothic,
+or, in the case of breaking, of a reduced variant of the word-initial apical trill or
+flap to a flap or approximant.
+   Far more controversial is the status of Gothic /h/ and /ƕ/, which condition
+breaking and Gothic /g/, which does not. The normal operation of Grimm’s Law
+on PIE * /k/, * /kw / yields PGmc. * /x/, * /xw /, assumed to be voiceless velar fricatives.
+The assignment of this approximate phonetic value is justified by the alternation of
+PGmc. * /x/ with * /ɣ/ as a result of Verner’s Law. Despite the fact that the output of
+Verner’s Law is heavily disrupted in Gothic, enough relic alternations of * /x/ with
+*
+  /ɣ/ are retained in Gothic to allow us to assume that this relationship existed at
+one point in pre-Gothic:
+
+(4) <h> - <g> alternations retained in Gothic:
+    filhan ‘hide’   -fulgins ‘hidden’
+    áih ‘I have’    -áigum ‘we have’
+    weihan ‘fight’ -du wigana ‘to the battle’
+    faheþs ‘joy’    -faginon ‘rejoice’
+    taíhan ‘ten’    -tigus ‘decad’
+    (Krause 1953: 127–8)
+
+   By the time of Wulfila’s original translations and the later extant manuscripts,
+this original relationship between * /x/ and * /ɣ/ no longer holds. While Gothic
+final devoicing shows that PGmc. * /b/ and * /d/ were fricatives medially between
+vowels and in final position, Gothic /g/ does not show this devoicing:
+
+(5) Gothic reflexes of PGmc. final * /z/, * /b/, * /d/, * /g/
+     <z> - <s>: ƕazuh ‘every’                  - ƕas ‘someone’
+     <b> - <f>: hláibis gen. sg. ‘loaf ’       - hláifs nom.sg. ‘loaf ’
+     <d> - <þ>: anabiudan ‘command’            - anabáuþ ‘commanded’
+     but
+     <g> - <g>: dagos nom.pl. ‘days’           - dags nom.sg. ‘day’
+
+   The non-alternation of Gothic <g> with the <h> grapheme representing reflexes
+of PGmc. * /x/ indicates that these two phonemes, Gothic /g/ and /h/ no longer
+stood in a simple voiced–voiceless relationship with each other. Resolution
+of exactly what may have happened here is obviously of importance to our
+understanding of breaking, given the central conditioning role of /h/, /ƕ/ and,
+for that matter, the failure of /g/ to condition breaking.
+
+=== page 83 ===
+
+                                                               GOTHIC BRE AKING             83
+
+   The graphemic non-alternation of reflexes of PGmc. * /x/ and * /ɣ/ in Gothic
+forces us to accept that one or the other phoneme has undergone a phonetic change
+which makes it impossible for <h> to be used for /g/ in final position. One sug-
+gestion with a long tradition is that PGmc. * /ɣ/ had become a voiced stop /g/ in
+Gothic, a position most recently taken by Ebbinghaus (1981); Voyles (1981); and
+Kostakis (2015). But this type of development has never found favour in the bulk
+of the literature. Streitberg (1910: 61) states with regard to the apparent failure of
+devoicing of Gothic final <g>:
+
+  Manche Forscher haben daraus gefolgert, daß g überall einen Verschlußlaut
+  bezeichne. Aber der ganze Verlauf der germanischen Lautentwicklung wider-
+  spricht dieser Annahme. Wahrscheinlicher ist, daß unter der gleichförmigen
+  Decke der Orthographie lautliche Unterschiede verborgen sind, daß der Wech-
+  sel stimmhafter und stimmloser Spirans in der Gutturalreihe ebenso bestanden
+  hat wie in der Labial- und dear Dentalreihe. Da die stimmlose Spirans (x) nur in
+  einer einzigen ganz bestimmten Stellung auftreten konnte, bedurfte es zu ihrer
+  Bezeichnung keines eigenen Buchstabens. [Quite a few researchers have con-
+  cluded from this that g represents a stop everywhere. But the entire course of
+  Germanic phonetic development contradicts this assumption. It is more probable
+  that phonetic differences are hidden under the cover of uniform orthography,
+  that the alternation of voiced and voiceless spirant existed in the guttural series
+  just as it did in the labial and dental series. Because the voiceless spirant (x) could
+  only appear in a few very specific positions, it did not need its own letter to
+  express it.]
+
+Streitberg here refers to the fact that across Germanic there are no instances of
+reflexes of PGmc. * /ɣ/ developing into a stop when reflexes of * /ƀ/ and * /đ/ do not.
+That said, it must be conceded that Gothic could simply have evolved in its own
+way and that PGmc. * /ɣ/ became a stop in all positions. More recently, Roberge
+(1984) states of this ‘null hypothesis’ (= <g> = [g]) ‘even on a priori grounds there
+are good reasons to reject the null hypothesis’. Among other things, even if reflexes
+of PGmc. * /ɣ/ had become stops in all positions, one would still expect coda /g/
+to devoice. But our Gothic texts show no evidence of devoicing of -g in dags, dag,
+‘day’ etc., even though the grapheme <k> was available. Certainly the /g/ in dags
+would have been voiceless given final devoiced -s.
+   The more generally accepted explanation for the non-alternation of final <g>
+and <h> in Gothic is that Gothic /h/ had become a phonetic [h] in all positions,
+with the result that the grapheme <h> would make little sense as the representative
+of devoiced /ɣ/. As Roberge (1984: 327) states, ‘the prevailing view holds that
+the segment corresponding to Gothic h had become a glottal continuant . . . in
+
+=== page 84 ===
+
+84    HOWELL
+
+all positions by Wulfilian times’. Jasanoff (2004: 884) characterizes phonetic real-
+ization of Gothic <h> and <ƕ> as ‘probably indistinguishable from the English
+sounds spelled h and wh [. . .]. (This was doubtless also the case in syllable-final
+position, as, e.g. in saƕ ‘saw’ [1st, 3rd sg.], nahts ‘night’ and saƕt ‘saw’ [2nd sg.];
+the development of [h] to velar [x] in this position in German [cf. Nacht, etc.] had
+no parallel in Gothic).’
+    Aside from the non-alternation of <h> with <g> in final devoicing, the jus-
+tification for positing phonetic [h] in Gothic rests on manuscript evidence of
+/h/-loss. This evidence consists of well-known instances of (i) non-representation
+of etymological /h/, (ii) insertion of a non-etymological <h>, and (iii) sandhi
+phenomena:
+
+(6) Evidence for weakly articulated [h] and h-loss
+
+      1. Non-representation of etymological /h/ (Marchand 1973: 53, fourteen
+         examples; four additional examples in the recently discovered Codex
+         Bononiensis (CB), Schuhmann 2016: 56f )
+          attested form
+          attested form        expected form
+                               expected form                    gloss
+                                                                gloss
+          als (Mk 15:38)       alhs                             ‘temple’
+          uswaurts (2 Cor 9:9) uswaurhts                        ‘justice’
+          ƕarjano (Sk 5:22)    ƕarjanoh                         ‘each’ (acc.sg.masc.)
+          hiuma (Lk 6:17; 8:4) hiuhma                           ‘crowd’
+          þair (CB)            þairh                            ‘through’
+          hauhairt- (CB 3x)    hauhhairt-                       ‘haughty’
+          drausnos⁴ (Sk 7:24)  drauhsnos                        ‘scrap, leftover’
+
+      2. Insertion of non-etymological <h>
+          attested form
+          attested form                             expected
+                                                    expected form
+                                                             form         gloss
+                                                                          gloss
+          waurhtai (Rom 11:17)                      waurtai               ‘root’ (dat.sg.fem.)
+          gawaurhtai (Eph 3:18A & B)                gawaurtai             ‘rooted’ (dat.sg.fem.)
+          gahnipnands⁵ (Mk 10:22)                   ganipnands            ‘being sorrowful’
+
+    ⁴ The etymology is disputed here. The attested acc. pl. form drausnos (Sk 7:24) might allow an
+etymological connection to driusan ‘fall’, a possibility that Lehmann (1986: 94) characterizes as a ‘prob-
+lem simplified’. Since, however, the acc. pl. variant drauhsnos (Jh 6:12) as well as dat. pl. drauhsnom (Mk
+7:28) and gen. pl. drauhsno (Lk 16:21) are attested, and all three show breaking, the <h> in drauhsnos
+is to be assumed as original. As a result, Casaretto (2004: 376–7) argues for PGmc. * đruhsnō-.
+    ⁵ Lehmann (1986: 146) rejects the suggestion that the <h> is original without explanation.
+
+=== page 85 ===
+
+                                                           GOTHIC BRE AKING         85
+
+      3. Assimilation of final -h preceded by unstressed vowel to following k, s, b,
+         þ, d, g, m, n, l, r
+         (occurs circa 130 times according to Marchand 1973: 53)
+           attested form
+           attested  form             expected form
+                                      expected  form
+           nuk kannt (1 Cor 7:16)     nuh kannt
+           nis sijai (Lk 20:16)       nih sijai
+           jab biudis (1 Cor 10:21)   jah biudis
+           jar ragin (2 Cor 8:10A)    jah ragin (attested in 2 Cor 8:10B)
+
+   While we need to be mindful of Roberge’s (1984: 329) admonition that ‘these
+idiosyncrasies probably reveal more about the languages of the [fifth–sixth cen-
+tury] scribes than that of the translator’ [i.e. Wulfila], it is worth noting that they
+tend to indicate loss of /h/ in certain environments, the precondition of which
+would be a phonetic realization as a glottal fricative.
+   Evidence from the early runic inscriptions shows loss of /h/ already around AD
+500, which in turn means that the development of earlier PGmc. * /x/ to a glottal
+fricative [h] could even be a late PGmc. phenomenon:
+(7)   Runic evidence for loss of /h/
+      1.    Reflexes of PGmc. * /x/ retained:
+            Vetteland stone (c. 350)     faihido < * faihidōn ‘I painted’
+            Einang stone (c. 350–400) fahido < * faihidōn ‘I painted’
+            Tune stone (c. 400)          worahto < * wurhtōn ‘I did, made’
+            Rö stone (c. 400)           fahido < * faihidōn ‘I painted’
+      2.    Reflexes of PGmc. * /x/ lost:
+            Etelhem clasp (c. 500)      wortaa < * wurhtōn ‘I made’
+            By stone (c. 500–550)       worte < * wurhtǣ ‘he made’
+            Tjürko bracteate (c. 500) wurte < * wurhtǣ ‘he made’
+            Björketorp stone (c. 600) sba < * spahō ‘prophecy’
+            Helnæs (c. 800)             faþi < * faihidǣ ‘he painted’
+            Flemløse (c. 800)           faaþi < * faihidǣ ‘he painted’
+            (Antonsen 1975; Noreen 1923[1970]: 167)
+The loss of <h> by circa 500 presupposes a weakened form [h] in the preced-
+ing centuries, perhaps dating back to late PGmc. The fact that vocalic lowerings
+conditioned by reflexes of PGmc. * /x/ across the early Germanic languages are
+immediately followed by loss of the conditioning factor in some or all positions
+certainly points in the direction of a sequence as follows:
+
+=== page 86 ===
+
+86    HOWELL
+
+(8)   Sequence of weakening and loss of reflexes of PGmc. * /x/
+
+       1. PGmc. * /x/ > 2. later PGmc. * /h/ > 3. vocalic mutations > 4. loss of /h/
+       Old Norse: PGmc. * faixar ‘shimmering’ > pre-ON * faihar > * fāhar
+                   (monophthongization) > ON fár
+       Old English: PGmc. * sexw an ‘see’ > pre-OE * sehan > * seohan (breaking) >
+                    sēon
+       Old High German: * hauxista ‘highest’ > pre-OHG * hauhista > OHG
+                         hōhista (monophthongization) > OHG hōista
+
+   One could argue that the phonetic realization of reflexes of PGmc. * /x/ as [x]
+or [ç] in modern varieties of German in words such as Nacht, Recht, Licht are
+necessarily counterexamples to the claim that * /x/ had weakened to something like
+a glottal spirant in early Germanic; but it is important to recognize that as long as
+a reflex of * /x/ has a phonetic realization, it can weaken, disappear, or strengthen:
+[k] < > [x] < > [h] > ø.⁶ For OHG there is ample evidence of the weakness of reflexes
+of * /x/, even where a fricative appears today: Gothic taihswo, maihstus, niuhsjan
+‘right hand’, ‘dung’, ‘spy’ vs. OHG zeswa, mist, niusen; Murbach Hymns liotfaz,
+leotkar, trutines for liohtfaz, leohtkar, truhtines ‘lamp’, ‘lamp’ ‘of the Lord’; Trier
+Capitulary ret, reto, retu for reht(o) ‘right’ (for additional examples see Braune and
+Reiffenstein 2004: 150).
+   In the modern continental West-Germanic dialects the presence of a buccal
+fricative in German Nacht, Recht, Licht, sechs and Dutch nacht, recht, licht presents
+a much more unified picture than that provided by the dialectal evidence. The
+OHG sequence -hs- does develop to -ks- dialectally, but a complete assimilation
+to -ss- is already present in OHG (e.g. Isidor folwassan ‘fully grown’; Monsee
+Fragments flas ‘flax’, Braune and Reiffenstein 2004: 150). From the twelfth cen-
+tury onwards -ss- is widely attested in Upper German dialects (Boesch 1946: 173;
+Kranzmeyer 1956: section 33e). This development is also characteristic of Dutch
+(e.g. os, zes, vos, vlas, wassen ‘ox, six, fox, flax, wax’ and Low German (Lasch 1974:
+187). In West Central Franconian the original sequences -ft- and -ht- merge in
+-ht-, indicating that place features of voiceless fricatives in coda position before
+-t- were very weakly articulated. Examples from the OHG period include ahter
+(< after ‘behind’), Trier Capitulary; luht, scaht, ahter (< luft ‘air’, scaft ‘shaft’, after
+
+
+
+
+  ⁶ See Hall (2012) for a dissenting view. For extensive examples of all of these changes see Howell
+1988a, b, 1991a, b.
+
+=== page 87 ===
+
+                                                           GOTHIC BRE AKING          87
+
+‘behind’), Summarium Heinrici (Braune and Reiffenstein 2004: 134). This change
+is well attested in Middle Low German (Lasch 1974: 187) and in Non-Hollandic
+dialects of Dutch (e.g. Dutch zacht ‘soft’; achter ‘behind; lucht ‘air’; kocht
+‘bought’, etc.).
+   Vowel lowerings before glottal continuants are represented in the literature on
+non-Germanic languages, including various dialects of Spanish (e.g. Andalusian,
+Puerto Rican) in which the development of post-vocalic sibilants to [h] results in
+the lowering of the preceding vowel:
+(9)    Lowering of vowels before [h] in dialects of Spanish.
+       [dios] ‘God’ > [diɔh] vs. [dio] ‘s/he gave’, 3rd sg. pret.
+       [toros] ‘bulls’ > [torɔh] vs. [toro] ‘bull’
+       [pies] ‘feet’ > [piɛh] vs. [pie] ‘s/he whined’
+       [perdiz] ‘partridge’ > [perdɨh] vs. [perdi] ‘I lost’
+       (Castellano and Palacia 1948: 387; Navarro Tomás 1968: 37; 1966: 66)
+   Post-vocalic [h] can be quite unstable diachronically and is often subject to loss,
+so that the lowered vowel can become the sole marker of morphological distinc-
+tions * e.g. [toro] ‘bull’ vs. [torɔ] ‘bulls’. If we did not have synchronic evidence
+of the development of [-os] to [-ɔh] to [-ɔ], the intermediate stage responsible for
+lowering of [-os] to [-ɔ] would be masked and one might erroneously assume that
+postvocalic [s] effected the lowering of the preceding vowel. There is consider-
+able evidence that this type of masking can lead us to believe that early PGmc.
+*
+  [x] caused the lowering of preceding vowels. Across the early dialects, lower-
+ing/backing effects exerted by reflexes of PGmc. * [x] are immediately followed by
+their loss. And when the reflexes of * [x] are retained in strengthened form (such
+as in the widespread development of * [hs] to [ks] as in English six, wax, etc.),
+the lowering/backing effect does not occur or is reversed (e.g. Anglian smooth-
+ing; cf. Howell and Somers 2007). Old Norse provides a perfect example, where
+reflexes of PGmc. * [x] in the syllable coda cause vowel lowering and then disap-
+pear except before -s, where the original [x] is strengthened to [k] and no vowel
+lowering occurs:
+
+(10)    Old Norse lowering of PGmc. * /i/, * /u/ to ON /é/, /ó/ before reflexes of
+        PGmc. * /x/:
+        a)   no lowering/lengthening before reflexes of PGmc. * /x/
+             strengthened to [k] before [s]:
+             PGmc. * -Vxs- > ON -Vks-: uxe ‘ox’ (Go. gen.pl. auhsne; OE oxa;
+                                          OHG/OS ohso)
+                                          vixl ‘change’ (OHG wehsal).
+
+=== page 88 ===
+
+88    HOWELL
+
+        b) lowering/lengthening before reflexes of PGmc. * /x/ that are
+           subsequently lost or assimilated:
+           PGmc. * -i/īx- > ON -é-:     héla (< PGmc. * xixlōn) ‘ripe’; rétta (OHG
+                                        rihten) ‘set up’; vét(t)r (OHG wiht) ‘little
+                                        creature’; téa (Go. gateihan; OHG
+                                        gizīhan) ‘show’; léa (Go. leiƕan; OHG
+                                        līhan) ‘lend’; léttr (OHG līhti) ‘light, easy’.
+                  *
+           PGmc. -u/ūx- > ON -ú-: gnótt (OHG ginuht) ‘abundance’; flótte
+                                        (OHG fluht) ‘flight’; bóla (OHG buhil)
+                                        ‘boil; fóa (OHG vōha) ‘vixen’; ótta (Go.
+                                        ūhtwō; Du. ochtend) ‘early morning’; þró
+                                        (ODu. þrūh) ‘trough’. (Noreen 1970: 100)
+
+Given the fact that this lowering/lengthening is paralleled by a lowering before
+ON /r/ (From PGmc. * /z/) as in PGmc. * miz, * þiz, * wiz > ON mér, þér, wér ‘me,
+thee, we’ (Noreen 1970: 99–100), the similarity to Gothic breaking in conditioning
+and output is remarkable. The evidence provided by the early Runic inscriptions
+(see example (7) above) indicates that reflexes of PGmc. * /x/ have weakened and
+in some instances been lost by circa AD 500. So the Old Norse phenomenon is
+likely to be conditioned by a weakened [h]-like consonant.
+
+
+              4.5 Pressing questions and a possible answer
+
+As we review all of the discussion above, a number of questions present them-
+selves:
+
+     1) Why does a specific subset of post-vocalic consonants (liquids, glides,
+        and weakened reflexes of PGmc. * /x/) repeatedly condition vowel muta-
+        tions in early Germanic while other consonants (stops and fricatives)
+        rarely do?
+     2) What phonetic characteristic(s) do liquids, glides, and [h] share?
+     3) While early and modern data give us some clues to the phonetics
+        behind these mutations, is there a way to accommodate these data
+        phonologically?
+
+One key shared diachronic tendency of post-vocal or syllable coda liquids, glides,
+and weakened reflexes of PGmc. * /x/ is that they tend to vocalize over time, though
+they tend to yield different vocalized forms. Laterals show a strong tendency to
+vocalize as high vowels (e.g. PGmc. * ald ‘old’, Du. oud
+                                                     oud, Bavarian oit) while rhotics
+and [h] tend to vocalize as [a]-like vowels:
+
+=== page 89 ===
+
+                                                                     GOTHIC BRE AKING   89
+
+(11)   -r and -h vocalization in modern German dialects:
+
+       Rhine-Mosel Warmsroth: hęɒt, hęɒš, khęɒš vęɒt, hęɒt, šęɒf for ‘Hirt, Hirsch
+                              Kirche, Wirt, Härte, scharf ’ (Martin 1922: 9, 18)
+       Alemannic Höri:       xnę:ɒḍ, šlę:ɒḍ, rę:ɒḍ for ‘Knecht, schlecht, recht’
+                              (Singer 1965: 66)⁷
+   Obviously, the glides [j] and [w] develop into their vocalic counterparts.
+   If we look at the group laterals, glides, and [h] it is apparent that they tend to
+lack the abrupt disruption of air flow characteristic of stops and buccal fricatives in
+syllable codas. This leads to a more gradual transition between vowel and follow-
+ing consonant, which can lead to reinterpretation by young language learners for
+whom the border between vowel and consonant is not distinct. This gradual tran-
+sition is easily visible on spectrograms showing vowel–liquid–vowel transitions
+(Figure 4.1).
+
+
+                        4 kHz
+
+
+                        3
+
+
+
+            FREQUENCY
+                            F3                         F3
+                        2
+
+
+                        1 F2                           F2
+                            F1                         F1
+                        0
+                                 e   r   a   t              e    l     a    t
+            Figure 4.1 Vowel–liquid–vowel transitions
+            (Pickett 1985: 116)
+
+
+   This gradual transition contrasts sharply with the more abrupt transition in a
+vowel–nasal–vowel sequence (Figure 4.2).
+   The transition between a high front vowel and an a-like rhotic can lead to an
+assimilatory lowering of the high vowel as in Warmsroth MHG hirt > Warmsroth
+hęɒt, a very common development in modern continental West Germanic dialects
+which shows obvious parallels to Gothic breaking.
+   While this phonetic discussion in the context of actual data from early Germanic
+is interesting, it would be desirable to accommodate these data within modern
+models of phonological theory.
+
+
+  ⁷ For scores of similar examples see Howell 1988a and 1991a.
+
+=== page 90 ===
+
+90   HOWELL
+
+                     kHz                              A MIRE
+                              4
+                                                   Weak F2
+                                                   in murmur of (m)
+
+
+                              3
+                              2
+
+
+
+                              1
+                                   F1
+
+                       100    0
+                                           Low frequency
+                       ms                   murmur with
+                                           abrupt borders
+
+                     Figure 4.2 Vowel–nasal–vowel sequence
+                     (Pickett 1985: 122)
+
+
+
+   Already in 1977 Catford began to develop a definition of a new major class
+feature approximant: ‘. . . an articulatory channel just a very little wider than
+that of a fricative, is called an approximant. . . . a voiced approximant has non-
+turbulent air-flow through a channel slightly larger than that of a fricative’ (Catford
+1977: 119). Clements 1990 sees the major class feature of [approximant] as neces-
+sary, since it captures natural classes not expressed by other features. McCarthy
+(1994) argues that given the Catford/Clements definition of approximants, all
+Semitic gutturals including [h] are approximants. Hall (2009: 316) characterizes
+approximants (including vowels, glides, and liquids) as ‘those segments which
+have constriction in the vocal tract which allows frictionless escape of air, while
+this is not the case for [–approximant] sounds (i.e. for stops, fricatives, and nasals)’.
+   Given this definition of approximants, if we return to the small array of early
+Germanic consonantally conditioned sound changes presented in (2) above,
+including Gothic breaking, it is immediately apparent that all of these changes
+are conditioned by some subset of the class of approximants. It therefore seems
+obvious that the key to interaction between vowels and following consonants in
+Germanic is the feature [approximant], or, if one prefers a purely phonetic charac-
+terization, ‘those segments which have constriction in the vocal tract which allows
+frictionless escape of air’.
+   It is important to note that [approximant] only explains the blurring of bound-
+aries between vowel and approximant segments; the phonetic nature of the
+individual approximants will determine the nature of their influence on preceding
+vowels. This fact is clear in developments such as Old English breaking, where the
+conditioning factors are lC, rC, h, w, but the vocalic segments affected are different.
+Only h, for example, causes breaking of long front vowels and l causes breaking
+
+=== page 91 ===
+
+                                                                        GOTHIC BRE AKING             91
+
+only of non-high short front vowels (i.e. of pre-OE * /æ/ and sometimes * /e/).
+So the feature [approximant] only serves as the catalyst for the vowel–consonant
+interaction, it does not determine the actual phonetic character of the vocalic
+mutation, though approximants with less stricture of the vocal tract (i.e. rhotics
+and [h]) would tend to promote lowering of adjacent vowels. The many variants
+of laterals and rhotics, often present in different phonetic contexts in the same
+dialect, can be expected to exert different types of influence.⁸
+
+
+                                        4.6 Conclusion
+
+The issue of consonantally conditioned sound changes has vexed Germanic lin-
+guists since the nineteenth century, but little consensus emerged on how to
+account for developments in the various early Germanic dialects that are on the
+one hand strikingly similar but on the other hand different in the particulars of
+conditioning and outcome. While it is clear that reflexes of specific early Ger-
+manic consonants, especially of PGmc. * /x/, * /xw /, * /r/ were particularly active
+in these processes across Germanic, there was no clear indication that these con-
+ditioners form any kind of a natural class. A number of red herring assumptions
+have clouded the picture. First of all, many researchers assumed that the reflexes
+of PGmc. * /x/ causing so many vocalic mutations, among them Gothic breaking,
+must have been a phonetic [x]. This assumption, despite the fact that the data point
+to a close association between vocalic mutations and reduction and loss of reflexes
+of * /x/, led some scholars to seek an answer in consonantal place features unifying
+the two conditioners (e.g. that h and r were both uvular).
+   We argue here that PGmc. * /x/ developed to [h] in all positions at a very early
+period, conditioned vocalic mutations, and then in very many instances was lost
+entirely. This [h], along with glides and liquids, belonged to a class of approximants
+that tended to interact diachronically with preceding vowels as a result of the non-
+abrupt transition from vowel to following approximant. Gothic breaking is but
+one manifestation of this broader tendency across Germanic.
+
+
+
+
+   ⁸ In Nuremberg, for example, the phoneme /r/ is realized as an apical trill/flap in most positions but
+as uvular [R] before alveolars (Gebhardt 1907: 58).

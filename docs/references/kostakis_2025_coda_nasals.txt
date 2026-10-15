@@ -1,0 +1,1893 @@
+Andrew Kostakis, "Coda nasals in early Germanic languages".
+The Journal of Comparative Germanic Linguistics 28, article 6 (2025), 32 pp.
+DOI 10.1007/s10828-025-09166-0. Open Access (CC BY 4.0). Citation key: Kostakis2025.
+PDF SHA256: f96c469643f146980c75827bf8b8753ad5b710145e30230c55c5bf7906c288a2
+
+SOURCE AND METHOD
+-----------------
+Born-digital Springer PDF; extracted with `pdftotext -layout`. No OCR.
+The PDF stays untracked under docs/references/ per .gitignore.
+
+REPAIRS (deterministic, documented)
+-----------------------------------
+The font emits the reconstruction asterisk as U+22C6 STAR OPERATOR; all
+242 occurrences are mapped to ASCII "*". 149 fi/fl ligatures are
+decomposed for searchability. No other substitution or normalization; the
+Greek, IPA and length marks are the publisher's.
+
+PAGE NUMBERING
+--------------
+This journal uses article-number pagination: the citable locator is
+"28:6, p. N" with N = 1-32, printed as "Page N of 32" in the running head.
+Printed article page = PDF sheet. 32/32 sheets self-confirm (the opening
+sheet through the article number and DOI, the rest through "Page N of 32").
+Page markers below denote the article's printed page N.
+
+=== page 1 ===
+
+The Journal of Comparative Germanic Linguistics (2025)28:6
+https://doi.org/10.1007/s10828-025-09166-0(0123456789().,-volV)(0123456789().,-volV)
+
+
+
+
+RESEARCH
+
+
+
+
+Coda nasals in early Germanic languages
+
+Andrew Kostakis1
+
+
+
+
+Received: 10 July 2023 / Accepted: 21 August 2025
+© The Author(s) 2025
+
+
+Abstract A growing body of research on phonological features claims that they are
+not universal elements of language. Rather, it argues that they are emergent, meaning
+that they are encoded based on phonetic cues as well as sociohistorical factors. In
+emergent feature theory, features are probabilistically encoded. The clearest phonetic
+cues result in the clearest featural encoding. But phonetic cues can be blurrier for
+certain segments and in certain contexts. In these situations, multiple feature
+encodings are possible. Little research has explored the range of emergent specifi-
+cations that are possible. This paper argues that coda nasals in early Germanic
+languages were marked with the feature [low], while onsets were not. Due to the
+lowness specification of coda nasals, the blocking of Northwest Germanic a-umlaut,
+Proto-Germanic pre-nasal raising, and high vowel lowering conditioned by coda
+nasals and post-velar fricatives in Old Norse can be accounted for in a novel and
+straightforward manner.
+
+Keywords Nasals · Rhinoglottophilia · a-umlaut · Pre-nasal raising ·
+Vowel lowering · Germanic phonology
+
+
+1 Introduction
+
+In Germanic language history, it is well understood that the high back tonic vowel
+of Northwest Germanic (NWGmc) languages, *[u], lowered to the corresponding
+mid vowel, *[o], when a non-high vowel followed in a neighboring syllable. This
+height harmonic process is often referred to as a-umlaut (or a-mutation). It has been
+
+
+& Andrew Kostakis
+  kostakisa@apsu.edu
+1
+    Department of Languages and Literature, Austin Peay State University, Harned Hall 115, P.
+    O. Box 4487, Clarksville, TN 37044, USA
+
+
+                                                                                         123
+
+=== page 2 ===
+
+6 Page 2 of 32                                                           A. Kostakis
+
+
+described for at least 200 years, with preliminary observations going back to Grimm
+(1822, 84–85), if not earlier. The change accounts for the [o] in examples like horn
+(which shares its form and meaning across all NWGmc languages) from Proto-
+Germanic (PGmc) *hurnan ‘horn’ (Orel 2003, 195). One curious aspect of a-umlaut,
+which has been observed for nearly as long (cf. Grimm 1840, 77, 79), is that the
+process was blocked by a coda nasal. For this reason, the *[u] in PGmc *hunđaz
+‘dog’ is retained in the NWGmc languages, e.g. Old Norse (ON) hundr, Old Saxon
+(OS) hund, Old High German (OHG) hunt, and Old English (OE) hund (Orel 2003,
+193).
+   While there are formal analyses of NWGmc a-umlaut (e.g., Voyles 1992, 51;
+Scheer 1995), there is, to my knowledge, no account that captures the blocking effect
+of intervening coda nasals. For the last 180 years, linguists have simply noted the
+blocking effect of nasals as an asterisk. That asterisk is perhaps indicative that the
+phonetics of nasal sounds is better understood than their phonological properties.
+This article aims to fill that gap, not only by providing a phonological account of
+a-umlaut blocking, but also by considering how the phonological structure of nasals
+can be reconciled with their behavior in other processes, namely, PGmc pre-nasal
+raising, and the lowering of high vowels in ON. It is claimed that all these changes
+can be captured straightforwardly in segmental terms if coda nasals in Early
+Germanic languages were marked with the vocalic feature [low], while onset nasals
+were not marked with that feature.
+   The concept of a [low] nasal is unconventional in phonology. No mainstream
+theory of phonological features explicitly specifies nasal sounds with height features.
+However, the notion of a [low] nasal does capture one undeniable fact: nasals often
+exhibit interactions with vocalic height in numerous languages of the world. Thus,
+there are reasons why such a specification should be expected. Furthermore,
+mainstream theories of phonology are embedded within an increasingly questioned
+belief that phonological features comprise an innate component of universal
+grammar.
+   Emergent feature theory (Mielke 2008, 2011) departs from the traditional
+hypothesis of innate feature specifications and, instead, focuses on phonetic and
+sociohistorical factors that shape learned phonological encoding. Despite this
+departure, phonetics maintains an outsized role in the feature encoding process. For
+this reason, traditional features, which are based on phonetic information, generally
+make accurate natural class predictions. Mielke’s (2008, 118) analysis of a cross-
+linguistic database comprising 6,077 natural class patterns reveals that the Chomsky
+and Halle (1968) feature system successfully captures 70.97% of these patterns.
+However, this also underscores the inadequacy of traditional feature assumptions, as
+they fail to account for 29.03% of observed natural class patterns. One important
+limitation of traditional feature models is that they struggle to capture contexts that
+are phonetically ambiguous. Mielke (2005) illustrates this limitation with the
+variability observed in how nasals and laterals are classified in different languages,
+sometimes as [ continuant] sounds, and other times as [+continuant] sounds. This
+
+
+
+
+123
+
+=== page 3 ===
+
+Coda nasals in early Germanic languages                             Page 3 of 32 6
+
+
+variability occurs because the phonetic cues for continuancy in nasals and liquids are
+not as clear as they are for obstruents. Without accounting for ambiguous features,
+there are many natural class patterns that remain under-researched and poorly
+understood. I argue that the height features of nasal sounds are but one of these
+patterns.
+   The feature [low] that marks coda nasals of Germanic languages should be
+understood as an emergent feature. There are many reasons to suppose that this
+specification has phonetic groundings. For example, nasal sounds and low sounds
+occur articulatorily along the pharynx, specifically the nasopharynx, oropharynx and
+laryngopharynx. With respect to acoustics, the nasal formant overlaps with the
+perceptual space of F1, the most significant perceptual cue of vocalic height. Nasal
+lowness can also be related to Matisoff (1975), who argues for ‘rhinoglottophilia’,
+the fact that nasal sounds and post-velar sounds sometimes pattern together as a
+natural class. The convergence of these factors has not been subject to much
+phonological inquiry. But one implication is that nasal sounds should be found with
+emergent vocalic phonologizations in some languages of the world: the early
+Germanic language data taken up in this article suggest that nasal lowness is at least
+one such phonologization.
+   This article is organized as follows. Section 2 presents and analyzes phonological
+processes in early Germanic languages in which coda nasals can be shown to pattern
+as [low] sounds. These include NWGmc a-Umlaut and nasal blocking (Sect. 2.1),
+PGmc pre-nasal raising (Sect. 2.2), and ON lowering (Sect. 2.3). A discussion
+follows in Sect. 3, and conclusions are stated in Sect. 4.
+
+
+2 Coda nasals as [low] sounds in early Germanic languages
+
+In this section, I present and analyze the processes of NWGmc a-umlaut (Sect. 2.1),
+PGmc pre-nasal raising (Sect. 2.2), and ON lowering (Sect. 2.3). It is claimed that
+these processes support the specification of coda nasals with the feature [low] in early
+Germanic languages. A final section (Sect. 2.4) considers cases of vowel nasalization
+in languages where coda nasals are marked with the feature [low].
+
+2.1 NWGmc a-Umlaut and lowness blocking
+
+NWGmc a-umlaut refers to the lowering of PGmc *[u] to NWGmc *[o] before a
+non-high vowel in a following syllable. Some examples are provided in (1a) and
+(1b). The first column provides PGmc reconstructions from Orel (2003). The stem
+vowel of each form is *[u]. That stem vowel is followed in the PGmc forms in (1a)
+by the low vowel *[a]; the forms in (1b) show reconstructions in which the stem
+vowel is followed by a mid vowel, namely, *[ē] and *[ō]. Those low and mid
+vowels triggered NWGmc a-umlaut. As a result, representative NWGmc languages
+like ON, OHG and OS have a mid back vowel that corresponds to the PGmc high
+
+
+
+
+                                                                            123
+
+=== page 4 ===
+
+6 Page 4 of 32                                                                          A. Kostakis
+
+
+back vowel. The PGmc triggers of the lowering were generally lost due to later,
+independent sound changes. In (1c), some examples are presented showing that
+PGmc *[u] was retained before a high vowel.
+
+(1)      PGmc             ON         OHG        OS
+      a. *hrussan         hross      (h)ros     hros         ‘horse’
+         *rukkaz          rokkr      (h)roc     rok          ‘skirt’
+         *hulþaz          hollr      hold       hold         ‘kind’
+         *huzđan          hodd       hort       hord         ‘treasure’
+         *đuxtar          dóttir     tohter     dohtar       ‘daughter’
+      b. *husōn           hosa       hosa       hosa         ‘trousers’
+         *mulđōn          mold       molta      n/a          ‘mold’
+         *þulēnan         þola       dolēn      tholian      ‘to endure/suffer’
+         *murnēnan        n/a        mornēn     mornian      ‘to worry/mourn’
+      c. *burđiz          burðr gi-burt         bi-burd      ‘birth’
+         *fluǥiz           flugr flug              flugi         ‘flight’
+         *ǥrunđuz         grunnr grunt          grund        ‘bottom/ground’
+
+
+   Although it is traditionally maintained that a-umlaut was a common development
+of NWGmc languages, Ringe and Taylor (2014, 27–31) suggest that these lowerings
+may actually represent independent processes. For the present discussion, it will be
+assumed that the changes, if independent, were so similar that they may be treated in
+the same way analytically.
+   There is also some debate as to whether or not [i] shifted to [e] in parallel to the
+change above. The evidence in support of the parallel development is most apparent
+in OHG (see Braune and Heidermanns 2018, 51–53). However, across NWGmc
+languages as a whole, the evidence largely rests on two examples (Ringe and Taylor
+2014, 34), OE and OHG nest ‘nest’ < PGmc *nistaz and OE, OS, OHG wer ‘man’
+< PGmc *wiraz. The much more robust tendency is for NWGmc languages to retain
+*[i]. Hence, NWGmc reflexes of forms like PGmc *fiskaz ‘fish’, *skipan ‘ship’,
+*witōn ‘weak’ faithfully reflect inherited PGmc *[i], cf. ON fiskr, skip, witi; OS fisk,
+skip, -wito, etc.1
+   A significant aspect of NWGmc a-umlaut is that it was blocked by an intervening
+coda or geminate nasal (Grimm 1840, 77,79; Prokosch 1939, 112–113; Russ 1978,
+40–41; Salmons 2012, 121; Ringe and Taylor 2014, 27; Voyles 1992, 51; inter alios).
+Some examples of a-umlaut blocking by coda nasals are shown in (2a); blocking by
+nasal geminates are given in (2b). In these examples, PGmc *[u] is retained as [u] in
+the NWGmc daughter languages.
+
+
+
+
+1
+  Early runic evidence corroborates the generalization that a-umlaut applied to NWGmc *[u], but not *[i],
+cf. Krause (1971, 27–28).
+
+
+123
+
+=== page 5 ===
+
+Coda nasals in early Germanic languages                                               Page 5 of 32 6
+
+
+(2)          PGmc            ON              OHG              OS
+          a. *đrunkanaz      drunkkinn       win-truncan      n/a          ‘drunk’
+             *đumƀaz         dumbr           tumb             dumb         ‘dumb’
+             *hunđaz         hundr           hunt             hund         ‘dog’
+             *hunǥruz        hungr           hungar           hungar       ‘hunger’
+             *junǥaz         ungr            jung             jung         ‘young’
+             *munđō          mund            munt             mund         ‘hand’
+             *slunđaz        slund-          slunt            slund        ‘gullet’
+             *stunđō         stund           stunta           stunda       ‘period of time’
+             *sunđraz        sundr           suntar           sundar       ‘asunder’
+             *tunǥōn         tunga           zunga            tunga        ‘tongue’
+          b. *ƀrunnōn        brunnr          brunno           brunno ‘well, spring’
+             *sunnōn         sunna           sunna            sunno ‘sun’
+             *unnanan        unna            gi-unnan         unnan ‘love’
+
+
+   The retained [u] in the NWGmc reflexes is the result of a blocking effect and not
+the result of early apocope of the PGmc non-high vowel triggers after nasal clusters.
+That can be ascertained from the earliest available runic data. For example, the names
+Iuþingaz (N KJ74) and Widuhudaz (DR EM85;128B) < *Widuhundaz indicate that
+non-high vowels in unstressed final syllables were retained after such clusters well
+into the NWGmc stage. The former example is dated to 160–530 CE, the latter to
+210–260 CE (Scandinavian Runic-text Database 2020a, 2020b).
+   To analyze the data in (2), I assume the features in (3).
+    (3)                         [i, u]            [a]             [e, o]
+               [high]
+               [low]
+
+
+
+   The features [high] and [low] are interpretable as the phonologization of
+articulatory or acoustic properties of high and low vowels. The most widely held
+definition of vowel height is articulatory, based on the physical degree of tongue
+raising within the oral cavity (Chomsky and Halle 1968, 304–305). However,
+phonological height has also been argued to be encoded through acoustic
+information, such as the spread of spectral energy (Jakobson et al. 1956) or F1
+frequency ranges (Ladefoged 1971).2 Most work in feature theory maintains that
+high vowels are marked with the feature [high] and that low vowels are marked with
+the feature [low], as in (3).3
+   From the perspective of articulation and acoustics, mid vowels occupy an
+intermediate position between high vowels and low vowels. That makes them more
+difficult to interpret, which is to say phonetically ambiguous. While phonological
+analyses generally treat these sounds as non-[high] and non-[low] (Chomsky and
+
+2
+    See Pulleyblank (2011) for critical discussion of F1 as a basis for phonological height.
+3
+    There are occasionally different labels that are used for [high] and [low], e.g. [close] and [open].
+
+
+                                                                                                123
+
+=== page 6 ===
+
+6 Page 6 of 32                                                                       A. Kostakis
+
+
+Halle 1968; Lahiri and Reetz 2010), there is a long-standing alternative analysis
+under which mid vowels are simultaneously [high] and [low]. Goldsmith (1985, 254)
+described this representation of mid vowels as an ‘age-old’ idea. It is most
+characteristic of Element Theory (Backley 2011) and antecedent frameworks like
+Dependency Phonology (Anderson and Durand 1986; Anderson and Ewen 1987)
+and Government Phonology (Harris 1994). Such a representation has been argued to
+characterize early Germanic languages (Kostakis 2024), NWGmc (Scheer 1995), ON
+(Haugen 1982, 31) and OHG (cf. Kostakis 2019; Kostakis and Noelliste 2022). That
+representation is adopted in (3) and can also be regarded as a kind of emergent
+feature specification.4
+   Based on the feature assumptions in (3), a-umlaut can be analyzed straightforwardly
+as the spreading of the feature [low] onto a high, back vowel, akin to the Government
+Phonological account by Scheer (1995). That analysis is presented in (4).
+(4)                 PGmc                                 NWGmc
+
+                [high]                                [high]
+                  |                                     |
+                [u] … [a]                   >         [o] … [a]
+                         |                                     |
+                       [low]                                 [low]
+              [back]                                [back]
+
+   In (4), NWGmc a-umlaut occurs when the feature [low] that is associated with the
+low vowel in an unstressed syllable spreads regressively onto the high, back vowel of
+the stressed syllable. Due to that spreading, the tonic vowel shifts from a high vowel
+that is marked with the feature [high] to a doubly-marked mid vowel that is marked
+with the features [high] and [low].
+   The representation of mid vowels as doubly-marked segments is also supported by
+the data in (1b), where it was seen that mid vowels themselves trigger the lowering of
+[u] to [o]. An analysis of that lowering is shown in (5).
+(5)                 PGmc                                 NWGmc
+
+               [high] [high]                         [high] [high]
+                  |      |                              |      |
+                [u] … [ō]                   >          [o] … [ō]
+                         |                                     |
+                       [low]                                 [low]
+              [back]                                [back]
+
+
+   The spreading process in (5) is the same as the one in (4): the feature [low]
+spreads regressively from the non-high umlaut trigger (to wit, [ē] or [ō]) onto the
+4
+  Several independent processes in NWGmc language appear to corroborate this representation. For
+example, the change known as ON Breaking involves the unpacking of the [high] and [low] components of
+PGmc *[e] into the ON sequence [ja]. OS monophthongization coalesces the [low] and [high] components
+of the PGmc diphthongs *[au] and *[ai] into the OS mid vowels [ō] and [ē].
+
+
+123
+
+=== page 7 ===
+
+Coda nasals in early Germanic languages                                              Page 7 of 32 6
+
+
+preceding target ([u]). The only difference is that the mid vowel triggers of
+a-umlaut, in contrast to the low vowel trigger, are also specified with the feature
+[high].
+   What, to my knowledge, has not been accounted for within any theoretical
+framework are the examples of nasal-blocking data in (2). I argue that coda nasals are
+distinct from onset nasals insofar as they are marked with the feature [low].5 These
+vocalic features are shown in (6).
+(6)                                 σ[n, m]            [n, m, ŋ]σ
+                [high]
+                [low]
+
+
+   Feature geometrical representations predict that spreading processes will be
+blocked if they involve a violation of the ‘no-crossing constraint’ (Goldsmith 1976).
+Due to the no-crossing constraint, the only segments that should be expected to block
+a process of lowness spreading are those which are marked with the feature [low]
+since they are on the same auto-segmental tier. The strong implication of the analyses
+in (4) and (5) is that coda nasals (indicated below as ‘N]σ’) are marked with the
+feature [low], as in (6).6 The analysis of coda nasal blocking is presented in (7).
+(7)                    PGmc                                   NWGmc
+
+              [high]                               [high]
+                 |                                    |
+               [u]       N]σ … [a]               > [u]           N]σ … [a]
+
+
+            [back]     [low]      [low]             [back]     [low]       [low]
+
+
+   In (7), spreading of the feature [low] from the a-umlaut trigger onto the target is
+blocked once the process encounters the lowness specification of the intervening
+coda nasal.7 Because the change in (7) can be regarded furthermore as a series of
+temporally and geographically separate developments across NWGmc languages (cf.
+Ringe and Taylor 2014, 27), each iteration of the change should be taken as
+
+
+
+5
+  I follow Hayes (1989) and Davis (1994) in the understanding that geminate nasals are coda nasals that
+are also associated with an onset.
+6
+    Additional support for nasal lowness is taken up in Sect. 2.4 and Sect. 4.
+7
+   Autosegmental approaches to feature theory remain in wide use for analyzing assimilatory processes in
+phonological theory. Despite their utility, some fundamental challenges remain unresolved. These include
+questions about why certain segments serve as triggers or targets, why assimilation occurs in a regressive
+or progressive direction, and how locality may constrain these processes. For more detailed discussions,
+see Rose (2011), Walker (2011), and Zsiga (2011), along with the references cited therein. This article will
+not address these well-known limitations of theory. The key point from the diagram in (7) is that the feature
+[low] is active, forming a natural class that not only encompasses low vowels but also coda nasals.
+
+
+                                                                                                123
+
+=== page 8 ===
+
+6 Page 8 of 32                                                                             A. Kostakis
+
+
+independent evidence for the features in question (it should not be understood as a single
+datapoint).8 In the next section, pre-nasal raising is discussed and analyzed as additional
+independent evidence for the [low]-specification of early Germanic coda nasals.
+
+2.2 PGmc pre-nasal raising
+
+In PGmc, all instances of an inherited PIE *[e] shifted to PGmc *[i] before a nasal in coda
+position. As a result, [i] in Germanic languages corresponds to [e] in vocalically
+conservative Indo-European languages like Latin, Greek, and Lithuanian (cf. Clackson
+2007, 39). In the first column of (8a), Latin forms are provided, which retain PIE *[e] before
+a nasal. The corresponding PGmc reconstructions based on Orel (2003) and Kroonen
+(2013) show that PIE *[e] has shifted to PGmc *[i] when the nasal came to be situated in
+coda position. Cognates from Germanic languages, given in parentheses in the final
+column, corroborate the PGmc reconstruction with a high front vowel. In (8b),
+representative Greek examples with a mid front vowel (<ε>) before a nasal (<ν> or <μ>)
+are presented. These forms also correspond to PGmc reconstructions with pre-nasal raising,
+as the Germanic forms in the final column further support. Additional examples of pre-nasal
+raising can be seen in (8c) when representative Lithuanian forms are compared to the
+Germanic cognates that support the reconstructed high vowel in the PGmc forms.9
+
+(8)      Latin                                      PGmc
+      a. genitus          ‘given birth’             *kinþan            (OS kind, OHG kind ‘child’)
+         gena             ‘cheek’                   *kinnuz            (ON kinn, OE cin ‘chin’)
+         lentus           ‘slow’                    *linþaz            (OS līth, OHG lindi ‘mild’)
+         sentiō           ‘to perceive’             *sinþanan          (OE sinnan ‘to care for’)
+         uentus           ‘wind’                    *winđaz            (ON vindr, OE/OS wind ‘wind’)
+         tremō            ‘to shake’                *þrimmanan         (OS thrimman ‘to jump’)
+         uenus            ‘love’                    *winnanan          (OE/OS/OHG winnan ‘work’)
+
+      b. Greek                                      PGmc
+         ἐντός            ‘within, inside’          *instran           (MLG inster ‘intestines’)
+         πέντε            ‘five’                     *finfe              (ON fimm, OE/OS fīf ‘five’)
+         γένυς            ‘chin’                    *kinnuz            (ON kinn, OE cin ‘chin’)
+         τρέμω            ‘to tremble’              *þrimmanan         (OS thrimman ‘to jump’)
+         ῥέμβω            ‘to turn in circles’      *wrimpanan         (MLG wrimpen ‘to wince’)
+
+8
+  According to Ringe and Taylor (2014), examples like PGmc *hugja- ‘think’ and *kunja- ‘lineage’ did
+not undergo a-mutation. In their view, the glide [j] blocks the application of the change. I leave this open
+here since it does not concern the representation of coda nasals. I note, however, that if these are true
+examples of a blocking effect, an independent principle, such as a linking constraint (Hayes 1986) might
+account for the exception, namely, if *[u] and *[j] are linked as [high] segments.
+9
+  In Gothic, PGmc *[e] raised to [i] as part of a context-free sound change. However, independent
+developments enable pre-nasal raising to be reconstructed as a PGmc process. For example, [n] was deleted
+before a dorsal fricative and the preceding vowel was compensatorily lengthened. Due to those changes,
+the reflex of *[enx] is [īx] (cf. Go þeihan ‘thrive’ < *þinx- < PIE *tenk-). Such examples make clear that
+pre-nasal raising feeds compensatory lengthening and that pre-nasal raising was necessarily a PGmc
+phenomenon. Note also that the reason why [o] did not raise to [u] in this context was likely accidental. At
+an earlier stage, all instances of PIE *[o] were lowered to PGmc *[a], whereby PGmc was left without a
+mid back vowel.
+
+
+123
+
+=== page 9 ===
+
+Coda nasals in early Germanic languages                                              Page 9 of 32 6
+
+
+       c. Lithuanian                                PGmc
+          sténgti    ‘to exert oneself’             *stinkwanan         (OE stincan ‘to leap’)
+          treñkti    ‘to push roughly’              *þrinǥwanan         (OHG dringan ‘to press’)
+          tveñkti    ‘to dam’                       *þwinǥanan          (OS thwingan ‘oppress’)
+          reñgti     ‘to set up’                    *wrinǥanan          (OE wringan ‘to wring’)
+          grȩsti     ‘to rub, to scrape’            *grinđanan          (OE grindan ‘grind’)
+          témti      ‘to become dark’               *þimstraz           (OHG dinster ‘dark’)
+
+
+   Where nasals following PIE *[e] came to be situated in onset position in PGmc,
+no raising is observed. Thus, the Greek and Germanic cognates in (9) all reflect
+retained PIE *[e] before a nasal.
+
+(9)      Greek                     PGmc
+         στένω ‘moan’              *stenanan (OE stenan, MLG stenen ‘to groan’)
+         νέμω ‘distribute’         *nemanan (ON nema, OHG neman ‘to take’)
+         δέμω ‘build’              *temanan (OHG zeman ‘to fit/befit’)
+
+
+  PIE *[e] is retained as PGmc *[e] in other contexts as well. For example, PGmc
+*[e] in *međuz ‘mead’ can be reconstructed internally from forms like OE as medu
+and OHG metu.10 It is also supported by external evidence in forms like Lithuanian
+medùs ‘honey’ and Greek μέθυ ‘wine’.11
+  Because of pre-nasal raising, mid vowels could never occur before a coda nasal.12
+However, a low vowel still could occur in this context, as the examples in (10) make
+explicit.
+
+(10)      PGmc
+          *kamƀaz        ‘comb’             (ON kambr, OE camb)
+          *đampaz        ‘steam’            (OHG dampf, MLG damp)
+          *ǥanǥaz        ‘street/going’     (Go gagg, ON gangr)
+          *ǥansz         ‘goose’            (ON gás, OHG gans)
+          *hanđuz        ‘hand’             (Go handus, OE/OS hand)
+
+
+
+
+10
+  OHG mito is attested in rare instances, which I take as a later, sporadic development that is unique to
+OHG.
+11
+    In PGmc, *[e] also raised to *[i] when situated before a high vowel or glide, e.g. early PGmc *ǥeftiz >
+later PGmc *ǥiftiz. I follow Kostakis’ (2024, 134–137) analysis of this change in understanding this
+development as a kind of total height harmony: all of the height features of the harmony triggers, *[i] and
+*[j], overwrite the height features of the harmony target, *[e].
+12
+    In PGmc, the mid back vowel, *[o], lowered to *[a] in all contexts. For this reason, the initial low stem
+vowel in forms like PGmc *langaz ‘long’ corresponds to a mid vowel in other Indo-European languages
+(cf. Latin longus ‘long’). It is likely that the lowering of *[o] was implemented before pre-nasal raising
+(otherwise we might expect forms like PGmc **lung- ‘long’). Ringe (2017, 176) maintains that the
+relative chronology of [o]-lowering and pre-nasal raising is uncertain.
+
+
+                                                                                                123
+
+=== page 10 ===
+
+6 Page 10 of 32                                                                   A. Kostakis
+
+
+   In Sect. 2, I argued that NWGmc a-umlaut was blocked by coda nasals because
+nasals in coda position were marked with the feature [low]. In the remainder of this
+section, I will argue that PGmc pre-nasal raising also falls out from the lowness
+specification of coda nasals, namely, as a process of lowness dissimilation.
+Dissimilations are generally said to result from a violation of the Obligatory
+Contour Principle (OCP), which avoids the adjacency of identical structure (Leben
+1973; Goldsmith 1976; McCarthy 1988; Odden 1988; Yip 1988; Hall 2008). Since
+mid vowels are complex segments that are simultaneously [high] and [low] and coda
+nasals are also [low], abutting mid vowels and nasal segments form an illicit
+sequence of contiguous [low] segments.13
+(11)               Early PGmc                            PGmc
+
+           [high]                            [high]
+              |                                 |
+            [e]    N]σ                     > [i]          N]σ
+                    |                                       |
+           [low] [low]                                   [low]
+
+
+   In (11), ‘Early PGmc’ is shown as an informal stage, in which the inherited PIE
+mid front vowel is retained before coda nasals. The mid vowel, as in (3), is doubly-
+marked with the features [high] and [low]. As in (6), the coda nasal is also marked
+with the feature [low]. Accordingly, Early PGmc forms like *[fenþ-] ‘find’ have two
+neighboring low sounds and violate the OCP. To resolve that OCP violation, the
+Early PGmc mid vowel delinked its [low] feature and shifted to PGmc *[i].
+   Following Ohala (1993) and Kiparsky (1995), processes of dissimilation are
+generally claimed to be structure preserving (though see Hall 2008 and Bye 2011 for
+critical discussion). That is, the output resulting from a dissimilatory process must be
+an existing phoneme. It is for this reason that the examples like PGmc *hanđuz
+‘hand’ in (10) do not change to satisfy the OCP constraint, even though they are
+characterized by a [low] vowel that is followed by a [low] coda nasal. The delinking
+rule shown in (11) was not possible in PGmc because deleting the feature [low]
+would involve creating a vowel that did not exist, namely, one that is not specified
+with any height features. The diagram in (12) shows that deleting [low] results in a
+non-existing vowel, indicated as ‘X’, which would be a non-high, non-low vowel.
+(12)               Early PGmc                            PGmc
+
+
+             [a]   N]σ                     >     X         N]σ
+                    |                                       |
+           [low] [low]                                   [low]
+
+
+
+13
+   I leave open whether OCP violations are contextualized to VC-sequences or if they also apply to
+abutting vowels.
+
+
+123
+
+=== page 11 ===
+
+Coda nasals in early Germanic languages                                 Page 11 of 32 6
+
+
+   In sum, coda nasals in the analysis of PGmc pre-nasal raising are consistent with
+the phonological composition of coda nasals in NWGmc. In this way, the arguments
+are embedded within the comparative method: the phonological structure of a later
+stage is a priori evidence of the phonological structure of an earlier stage. In the next
+section, further evidence for the [low] specification of coda nasals in ON is presented
+and analyzed.
+
+2.3 Old Norse lowering
+
+In the pre-literary history of ON, the PGmc high vowels *[i] and *[u] lowered to the
+corresponding mid vowels [e] and [o] in two contexts. The first conditioner of high-
+vowel lowering was a following coda nasal. The second was a following post-velar
+fricative (discussed further below).
+    Some examples of lowering before a coda nasal are given in (13a) and (13b). In
+the first column, informal, pre-ON reconstructions are provided to make the change
+clear. Each form was characterized by a high vowel followed by a coda nasal (a nasal
+followed by one or two obstruents and a vowel-initial suffix). The high vowel and
+coda nasal were inherited from PGmc/NWGmc and were generally preserved in
+other NWGmc languages, as exemplified by reflexes of the verb drink: OE drincan,
+OFris drinka, OS drinkan, OHG trinkan. In ON, however, the coda nasal caused the
+high vowel to lower to a mid vowel. When the Pre-ON vowel-nasal sequence was
+followed by a stop, as in (13a), the nasal was deleted and the following stop became a
+geminate. When the coda nasal was followed by a fricative, as in (13b), the
+development differed according to additional conditioning factors. For the purposes
+of this paper, it is only important that the lowering process in (13b) is related to the
+lowering process in (13a).
+
+(13)      Pre-ON        ON
+       a. *drink-       drekka       ‘drink’
+          *klint-       klettr       ‘cliff’
+          *klimp-       kleppr       ‘lump’
+          *unk-         okkarr       ‘we two’
+          *krump-       kroppenn     ‘withered’
+       b. *minþl-       mél          ‘mouth-bit’
+          *wunsk-       ósk          ‘wish’
+          *tumft-       tópt         ‘construction site’
+
+
+  In (14), the second conditioning environment for high vowel lowering is
+exemplified, namely, before a post-velar fricative. I use the term ‘post-velar’ here
+because the precise phonetic value of the segment at the time of the change is
+contentious. All that is certain is that the fricative in question was initially velar, since
+
+
+
+
+                                                                                  123
+
+=== page 12 ===
+
+6 Page 12 of 32                                                                           A. Kostakis
+
+
+it derived from PIE *[k].14 It is commonly assumed that PGmc *[x] shifted to uvular
+*[χ], and subsequently to glottal *[h], before ultimately deleting. In other words, in
+the transition from PGmc *[x] to that segment’s ultimate deletion in ON, the sound
+passed through one or more ‘post-velar’ stages. Since the timing and evidence for
+each transitional stage is a matter of debate (see discussion in Vennemann 1972;
+Barrack 1987), I assume here that the pre-ON reflex of the PGmc velar fricatives had
+retracted to some post-velar point of articulation before deleting. In the below pre-
+ON forms, the post-velar fricative is represented as *h.
+    The forms in the first column show reconstructions in which a high vowel is
+followed by a post-velar fricative. Other NWGmc languages frequently retain this
+sequence. The reflexes of PGmc *suxtiz ‘sickness’ are representative, e.g. OHG
+suht, OS suht.15 In these forms, the phonetic value of the sound represented by the
+grapheme <h> (and occasionally <ch>) is as uncertain as the post-velar fricatives in
+the below pre-ON reconstructions.16
+    In (14a), examples of forms with Pre-ON tonic *[u] are given. These forms are all
+reflexes of PGmc i-stems, e.g. Pre-ON *suht- < PGmc *suhtiz. That fact ensures that
+the mid vowel in the ON forms is triggered by Pre-ON *h (and is not the result of
+NWGmc a-umlaut). Pre-ON forms with a tonic *[i] are provided in (14b).17 These
+examples make clear that Pre-ON *[i] also lowered to a mid vowel in ON before a
+post-velar fricative.18
+
+(14)        Pre-ON         ON
+         a. *suht-         sótt       ‘sickness’
+            *buht-         bót19      ‘patch’
+            *druht-        drótt      ‘people, body guard’
+            *nuht-         gnótt20    ‘abundance, plenty’
+            *þruht-        þrótt      ‘strength, might’
+
+
+
+14
+   The regular shift from PIE*[k] to PGmc *[x] was part of Grimm’s Law. Additional velar fricatives
+developed before PGmc *[t] as part of the so-called ‘Primärberührungseffekt’. For example, PGmc
+*suxtiz ‘sickness’ is a deverbal noun that derives from *seukaną ‘to be sick’ (Ringe 2017, 134–135).
+15
+    OE -siht and OFris secht both show the expected reflex of *[u] after i-umlaut applies (alongside other
+later changes).
+16
+   Iverson, Davis, and Salmons (1994), following Howell (1991), contend that OHG <h> represented [h].
+Vennemann (1972) maintains that OHG <h> represented [χ]. Kostakis (2019) argues that OHG <h> was
+[x]. See additional discussion in Hall (2009).
+17
+   I follow, inter alios Luick (1921, 176), Ringe (2017, 151–153), and Ringe and Taylor (2014, 220) in
+that PGmc *[e] raised to *[i] before *[i] or *[j] in a following syllable. The last three pre-ON forms in
+(14b) reflect this early raising, even though they are reconstructed in Orel (2003) with *[e].
+18
+    Although all of the examples in (14) involve a post-velar fricative followed by *[t], there are some
+examples with a different shape, e.g. ON þrennr ‘triple’ < Pre-ON *þrihn-. Additionally, there are sporadic
+examples that did not undergo lowering. For instance, ON al-vitr < PGmc *alja-wixtiz. Such exceptions
+may suggest that the post-velar fricative was lost earlier in some words than others. However, frequent
+allomorphic alternations between *[e] and *[i] also admit analogy as an alternative explanation.
+19
+     It is unclear why bót lacks a final geminate t.
+20
+     The initial g- derives from the comitative marker *ga-.
+
+
+123
+
+=== page 13 ===
+
+Coda nasals in early Germanic languages                                   Page 13 of 32 6
+
+
+
+b.         *spiht-      spettr      ‘woodpecker’
+           *stiht-      stétt       ‘pavement’
+           *wiht-       véttr       ‘weight’
+           *friht-      frétt       ‘enquiry’
+           *rihting-    rétting     ‘correction’
+
+
+    To analyze ON Lowering, I adopt the features in (15). As in NWGmc and PGmc,
+ON high vowels are marked with the feature [high] and mid vowels are marked with
+the features [high] and [low]. Coda nasals in ON are likewise marked with the feature
+[low]. The important addition to these feature specifications concerns the post-velar
+fricative, which is also argued to be marked for the feature [low]. Accordingly, coda
+nasals and the post-velar fricative patterned together in ON as a natural class of [low]
+consonants. Put differently, the ON data exemplify something similar to rhinoglot-
+tophilia (in the sense of Matisoff 1975). See further discussion in Sect. 3.2.
+
+(15)                              [i, u]       [e, o]        [n, m, ŋ]σ            ‘h’
+            [high]
+            [low]
+   Given the feature specifications in (15), ON lowering can be understood as a
+process of regressive height assimilation. The low feature of the Pre-ON coda nasal
+or post-velar fricative spread regressively onto the preceding vowel. As a result of
+that spreading, a new, doubly-marked mid vowel was created. The analysis is given
+in (16).
+(16)               NWGmc                                Pre-ON
+
+           [high]                            [high]
+              |                                 |
+            [i]/[u] … ‘h’/N]σ              > [e]/[o] … ‘h’/N]σ
+                          |                                |
+                       [low]                            [low]
+
+
+   The strength of the above analysis is that it maintains a consistent phonology of
+coda nasals throughout Germanic language history, while simultaneously accounting
+for various other facts that lack previous analytical treatment, most especially, the
+blocking effect exacted by coda nasals in a-umlaut, the role of coda nasals as
+
+
+
+
+                                                                                   123
+
+=== page 14 ===
+
+6 Page 14 of 32                                                                            A. Kostakis
+
+
+conditioners of pre-nasal raising in PGmc, and the natural class patterning of coda
+nasals with a post-velar consonant in ON.
+
+2.4 A Note on Nasalization
+
+Phonetically, the difference between a vowel + nasal consonant sequence and a
+nasalized vowel is blurry. It can be conceptualized as a temporal continuum, as in
+(17). Here a non-nasalized vowel ‘V’ is situated before a coda nasal consonant ‘N]σ’,
+which is specified with features that would be expected in early Germanic languages.
+The diagram shows that, in the transition from the vowel to the consonant, some
+nasalization colors the right boundary of the vowel. The more the vowel and coda
+nasal coalesce temporally, the more likely a nasal vowel is to be perceived.
+(17)                                           N]σ
+                               V
+
+                                         [nas] [low]
+
+                                             [cons]
+   Any time two segments meld into one, it is almost always the case that some
+features are retained, and others are not. In this case, a resulting nasalized vowel
+clearly retains the feature [nas] and clearly loses the feature [cons]. But what of the
+feature [low]? In this section, I examine vowel nasalization in the Ingveonic
+languages (OE, OS, OFris), which, as early Germanic languages, are also expected to
+have [low] coda nasals. I argue that, in these languages, the feature [low] is lost
+alongside the consonantal feature in the process of vowel nasalization. The
+implication of this claim is that processes of vowel nasalization, due to feature
+deletion, are not always helpful for understanding the phonology of coda nasals.
+   In the Ingveonic languages, coda nasals (in nasal-fricative sequences) triggered
+compensatory lengthening. Some examples are given in (18) from Orel (2003) and
+Ringe and Taylor (2014, 139–141). Spellings have been normalized for consistency
+across sources. In the first two columns of (18), informal Ingveonic forms are
+reconstructed. The Early Ingveonic (Early Ingv) forms in the first column preserve
+the nasal-fricative sequence from PGmc. The Late Ingveonic (Late Ingv) forms in the
+second column present a generally assumed reconstruction where compensatory
+lengthening has occurred. That is, the nasal consonant deletes and the tonic vowel
+lengthens.21 The new long vowels additionally take on the nasality of the former
+nasal consonant. Thus, the Early Ingv forms in (18a) contain a high front tonic vowel
+followed by a nasal-fricative sequence, and the forms in (18b) have a high back tonic
+vowel followed by a nasal-fricative sequence. In the attested Ingveonic reflexes, the
+21
+   Throughout this section, I assume a moraic analysis (in line with Hayes 1989) of compensatory
+lengthening. According to such an analysis, the stem vowel and following nasal consonant are both moraic
+and the mora that is associated with the nasal consonant transfers to the preceding vowel upon its deletion,
+whereby lengthening occurs, e.g. *[uμnμs] > *[ũːμμs].
+22
+   The phoneme /θ/ is variably spelled as <ð>, <þ>, and <th> in Ingveonic languages. It represents [ð]
+between sonorants and is elsewhere realized as [θ].
+
+
+123
+
+=== page 15 ===
+
+Coda nasals in early Germanic languages                                              Page 15 of 32 6
+
+
+forms have all denasalized and retained a long, high vowel followed by a fricative.22
+While the OE, OFris, and OS forms show no indication that the Late Ingv long vowel
+was necessarily nasalized, nasalization is widely assumed, both because it is
+typologically expected and because of observed changes to Early Ingv *[a] before a
+nasal-fricative sequence (discussed further below).
+
+(18)      Early Ingv          Late Ingv     OE     OFrs         OS
+       a. *fimf-               *fĩːf         fīf    fīf          fīf      ‘five’
+          *hrinθ-             *hrĩːθ        hrīðer hrīther      hrīð     ‘head of cattle’
+          *linθ-              *lĩːθ         līð    n/a          līð      ‘lithe, mild’
+          *sinθ-              *sĩːθ         sīð    n/a          sīð      ‘journey, way’
+          *stinθ-             *stĩːθ        stīð   stīth        n/a      ‘stiff’
+          *swinθ-             *swĩːθ        swīð swīthe         swīði    ‘strong’
+       b. *funs-              *fũːs         fūs      n/a        fūs      ‘ready’
+          *kunθ-              *kũːθ         cūð      kūth       kūð      ‘known’
+          *munθ-              *mũːθ         mūð      mūth       mūð      ‘mouth’
+          *sunθan-            *sũːθan       sūðan    sūther     sūðan    ‘from the south’
+          *uns-               *ũːs          ūs       ūs         ūs       ‘us’
+
+
+   Analytically, Late Ingv nasalization can be understood as the coalescence of two
+Early Ingv segments, as in (19a), into a single Late Ingv segment, as in (19b). The
+new segment inherited the feature [high] from the Early Ingv nucleus and the feature
+[nas] from the Early Ingv coda, while the features [cons] and [low] from the original
+nasal consonant were lost.23 Since the outcome is a high vowel across the Ingveonic
+daughter languages, the strongest conclusion to draw is that the feature [low] must
+have been deleted with [cons] in Late Ingv.24
+
+(19) a.                 Early Ingv                            b.               Late Ingv
+                       [i]            N]σ                                     [i]     [ĩ]
+
+                     [high]      [nas] [low]                                    [high] [nas]
+                                    [cons]
+   At a later pre-literary time, *[ĩ:] and *[ũ:] denasalized. Consequently, there is no
+direct evidence to reconstruct a stage with nasalized high vowels. Support for such a
+stage comes from the reflexes of compensatory lengthening of Ingveonic low vowels
+23
+   It is unclear why certain features are preserved and others are deleted. There are many other examples of
+coalescence that demonstrate the arbitrary selection of retained features in coalescence. For example, in the
+monophthongization of [au] to [o], which is a fairly widely-attested process, the unroundedness (and
+laxness) of the first diphthongal element is lost.
+24
+   This is an Occam’s Razor-type conclusion. In theory, it is possible that the feature [low] was retained
+and that Late Ingv [ĩ] is [high], [low], and [nas], akin to a mid vowel. While it may seem counterintuitive to
+have a high vowel that is marked with the feature [low], Ingveonic languages did not have a contrast
+between high vowels and mid vowels before nasal-fricative sequences. Further research would be
+necessary to investigate whether high, nasalized vowels like [ĩ] and [ũ] can ever be shown to pattern with
+other [low] sounds, a possibility which I leave open here.
+
+
+                                                                                                 123
+
+=== page 16 ===
+
+6 Page 16 of 32                                                                          A. Kostakis
+
+
+before a nasal fricative sequence, as shown in (20). Similar to the data in (18), the
+informally reconstructed Early Ingv forms retain the nasal-fricative sequence
+inherited from PGmc; the Late Ingv forms reflect compensatory lengthening with
+vowel nasalization. The resulting nasalized low vowel, *[ã:], is a widely accepted
+stage (cf. Hogg 2011, 56) because the Ingveonic daughter languages exhibit the
+reflex *[o:], and the shift from [ã:] to [o:] is cross-linguistically well-attested (cf.
+inter alios Beddor 1993). OE and OFris preserve *[o:] most faithfully; the OS words
+for tooth and company likely show borrowed or blended forms with nasal-consonant
+sequences due to contact with High German dialects (see Ringe and Taylor 2014,
+141).
+
+(20) Early Ingv       Late Ingv      OE     OFrs     OS
+     *anθar-          *ãːθar         ōðer   ōther    Ōðar ‘other’
+     *gans-           *gãːs          ȝōs    gōs      gōs   ‘goose’
+     *sanθ-           *sãːθ          sōð    sōth     sōð   ‘true’
+     *tanθ-           *tãːθ          tōð    tōth     tand ‘tooth’
+     *hans-           *hãːs          hōs    n/a      hanse ‘company’
+
+
+   The nasalization processes affecting the high vowels applies similarly to the low
+vowels. As in (19), the coda nasal loses the features [low] and [cons], while the new
+nasalized vowel retains the feature [nas] from the old coda consonant and the height
+feature, in this case [low], from the old nucleus.
+
+(21) a.                Early Ingv                          b.               Late Ingv
+                      [a]            N]σ                                   [i]     [ã]
+
+                     [low]      [nas] [low]                                  [low] [nas]
+                                   [cons]
+   Unlike the high vowel data, the OE, OFris, and OS forms in (20) make clear that
+the nasalized low vowels in the Late Ingv forms not only lost their nasality, but also
+sustained a change in vowel height, raising to mid vowels. This raising can be
+analyzed as a rule of feature insertion. The diagram in (22a) provides a more
+conventional feature representation of the continuum in (21b). It shows a
+representation of a nasalized low vowel, specified with the features [nasal] and
+[low].25 The process of raising is shown in (22b). The raising effect has nothing to do
+with the feature [low] (neither from the low vowel nor the original coda nasal). On
+the contrary, raising occurs when the feature [high] is added by a rule of feature
+insertion. The final change, shown in (22c), is the delinking of the feature [nasal],
+which also occurred to nasalized high vowels.
+
+
+
+25
+    I leave as an open question whether the two lowness features of earlier sequences in forms like *gans-
+(in which the [a] and coda nasal are both marked with the feature [low]) come to reinforce, in some way,
+the resulting nasalized vowel in the later reflex *gãːs. See also fn. 24.
+
+
+123
+
+=== page 17 ===
+
+Coda nasals in early Germanic languages                                             Page 17 of 32 6
+
+
+
+(22)     a. Late Ingv                      b.     Later Ingv                   c.     Latest Ingv
+
+                [ROOT]                              [ROOT]                              [ROOT]
+                    |                                   |                                   |
+                  [ã ]                 >              [õ ]                 >              [o ]
+
+                          [nas]              [high]           [nas]              [high]           [nas]
+                 [low]                                [low]                               [low]
+   The insertion rule in (22b) is consistent with the cross-linguistic tendency for
+nasalized low vowels to raise to mid vowels. (Plain low vowels did not undergo
+raising.) However, a final word of caution is due here: not all processes that have the
+same phonetic description are implemented in the same way phonologically. As will
+be discussed in further detail below (Sect. 3.1), the study of laryngeal realism has led
+researchers to understand that some processes of final devoicing involve the
+delinking of a [voice] feature, while others fall out from the insertion of [spread
+glottis]. Similarly, the raising of nasalized low vowels may be implemented
+differently in different languages. Based on the findings in this section, an analysis
+with insertion of the feature [high] best aligns with the broader picture of early
+Germanic nasal phonology.26
+
+
+3 Discussion
+
+In this section, I provide some additional context for the patterning of nasals in
+Germanic languages. Section 3.1 discusses some assumptions that fall out from
+innate models of phonological features, which do not necessarily follow in emergent
+feature theory. Section 3.2 considers three cross-linguistic patterns which suggest that
+nasals might sometimes emerge as [low] sounds. Since emergent feature theory also
+allows for the possibility of [high] coda nasals, Sect. 3.3 offers some specific
+arguments against the emergence of [high] nasals in early Germanic languages.
+
+3.1 Revising some traditional assumptions
+
+One issue that is particularly relevant to this article concerns the fact that consonantal
+features and vocalic features were traditionally kept apart. While Chomsky and Halle
+(1968) still did characterize certain consonants with vocalic features like [±high] and
+[±low] (akin to [±compact] and [±diffuse] in Jakobson et al. (1956)), subsequent
+revisions to theory found those features were less consequential for consonantal
+contrasts. As a result, articulator theory and the first autosegmental representations (e.
+g., inter alios Sagey 1986) started to codify a formal separation between consonantal
+features and vocalic features. That bifurcation, in turn, made it difficult to predict any
+
+26
+   Although it goes beyond the scope of this paper, a similar analysis may apply to variable forms like
+nama and noma ‘name’ in Old English. The [o] in noma is often ascribed to earlier vowel nasalization (see
+discussion in Ringe and Taylor 2014, 75–76). Nasalized vowels can trigger raising through a rule of feature
+addition, as in (22b).
+
+
+                                                                                              123
+
+=== page 18 ===
+
+6 Page 18 of 32                                                                       A. Kostakis
+
+
+consonant-vowel interactions – a difficulty, which has endured to the present time.
+Unified feature theory (e.g., inter alios Clements and Hume 1995) among other
+proposals (like Lahiri and Evers 1991) did (and does) help address some of these
+difficulties – particularly, those involving interactions between obstruents and
+vowels.27 However, interactions between sonorant consonants and vowels remain
+enigmatic, even though such consonants have an undeniably robust proclivity to alter
+properties of neighboring vowels.
+   A separate issue is that traditional feature models do not distinguish between a
+phonologically active class of features and a phonetically natural class of features.
+Following Mielke (2008; 2011), phonologically active classes make crucial
+reference to a group of sounds involved in the targeting, triggering, or blocking of a
+phonological process. Phonetically natural classes, by contrast, simply define
+groups of sounds that have common phonetic properties. While overlap between
+the two is predicted when the sounds involved have clear phonetic correlates, there
+are many instances when such correlates are ambiguous, causing differences
+between phonetics and phonology. Mielke (2005), for example, finds that the
+phonetic correlates of continuancy are ambiguous for nasal and lateral sounds. Due
+to this ambiguity, languages differ in their phonological specifications. On the one
+hand, there are languages in which these sounds pattern as [+cont] sounds, aligned,
+as it were, with their phonetically natural class. On the other hand, continuancy is
+not as clear in nasals and laterals as it is in stops and fricatives. As a result, nasals
+belong to the phonologically active class of [-cont] sounds in about 36.2% of the
+languages of the world and laterals pattern as [-cont] sounds in approximately
+45.5% of languages.
+   While the approach taken in Sect. 2 reflects an analytical improvement28 because
+it captures with a uniform analysis multiple sound changes that have lacked any
+coherent treatment for centuries, there are some traditional assumptions of phonology
+that are contravened. For example, the nasal allophony that develops in coda position
+may obtain from the rule of feature addition in (23), which states that the feature
+[low] is added to nasals in coda position.
+(23)        [nas]       [ low] / _]σ
+
+
+   In some featural approaches, such a rule is unexpected because coda position is
+often the site of neutralized contrasts and simplified feature structures, processes
+which are implemented by feature deletion. However, emergent feature theory makes
+different predictions.29 Research on laryngeal realism (see Iverson and Salmons
+(2011) and sources therein), which, in my view, aligns with key assumptions of
+emergent feature theory, well exemplifies this point. Iverson and Salmons (2011)
+27
+   See recent discussion in Morén-Duolljá (2011), Rice (2011), Uffmann (2011), Mielke (2011), and
+sources therein.
+28
+   I allude to Mielke’s (2011, 409) summation of Halle (2002), “the position that phonologically active
+classes are featurally natural has led to improvements in analyses of phonological phenomena.”
+29
+   As Harris (1996, 312) notes, many processes that involve feature deletion in traditional feature
+approaches still must be “mopped up” with default rules. These are commonly rules of feature addition.
+Accordingly, older approaches are more permissive of feature insertions than sometimes claimed.
+
+
+123
+
+=== page 19 ===
+
+Coda nasals in early Germanic languages                                             Page 19 of 32 6
+
+
+note that processes of final devoicing “clearly conflate a number of different
+phonological phenomena.” That conflation occurs because [voice] was largely
+regarded as a universal feature. There was no distinction made between phonetically
+natural classes and phonologically active classes. As such, devoicing was tradition-
+ally assumed to be the universal result of removing the feature [voice] from syllable
+final obstruents. With emergent features, however, laryngeal realism is possible: the
+phonetic cues for a contrast between voiced and voiceless obstruents differ across
+languages. As a result, final devoicing (which is a phonetic description) is the result
+of different phonological processes. In some languages (like Dutch), final devoicing
+is implemented through the deletion of the feature [voice]. In other languages (like
+German), however, the process involves the insertion of a different feature, namely,
+[spread glottis]. In a similar way, the feature addition rule in (23) should not be
+altogether unexpected.30
+    Another traditional assumption that is strongly questioned is that regular
+dissimilations are uncommon. Bye (2011) notes, “Regular synchronic alternations
+involving dissimilatory processes are far more rare and, as a result, dissimilation has
+been afforded somewhat less systematic attention than other more common
+segmental patterns like assimilation.” However, phonological studies of dissimilation
+have been based largely on innate feature assumptions, which inter alia do not
+capture how sonorants interact with vowel height. The field of phonology knows
+vanishingly little about the dissimilation of emergent features, perhaps most
+emphatically in the context of vowel-consonant interactions. Accordingly, Bye’s
+(2011) generalization may not be supported with sufficient evidence.
+    While regular dissimilatory patterns may be rare cross-linguistically, it is worth
+noting that they are not all that uncommon in Germanic languages. A non-exhaustive
+list might note the following: (a) in the morpho-phonology of English a reduced
+vowel is inserted between a stem final sibilant and the plural morpheme /-z/ to
+prevent a contiguous sequence of sibilants (cf. Yip 1998); (b) in Southern German
+Dialects regular dissimilation of [s] to [ʃ] is argued for by Hall and Scott (2007); (c) a
+comparable dissimilatory development from Middle High German into Early New
+High German is argued for by Hall (2008); (d) Noelliste (2017, 128–129) argues for
+regular vowel dissimilation in certain Bavarian German dialects; (e) concerning
+earlier Germanic languages, the so-called Primärberührungseffekt is a process of
+regular dissimilation that caused stops to shift to fricatives before [t] (cf. Wisniewski
+1963; Ringe 2017, 134-136); (f) Kostakis (2019) argues that Gothic Lowering was a
+regular process of height dissimilation; (g) [x] dissimilated to [k] before [s] indepen-
+dently in Old English (Hogg 2011, 247–249) and Middle High German (Russ 1978,
+83–84), cf. fox and Fuchs [fuks] ‘fox’ < PGmc *fuxsaz.
+
+
+
+30
+    The rule in (23) suggests that [low] nasals were new sounds in early Germanic languages. It is unclear if
+this analysis is correct. An alternative possibility is that [low] nasals were old sounds in Germanic
+languages and that the feature [low] was deleted from onsets, creating new, non-[low] nasals. This is left
+open here, since it goes beyond the scope of this article. Further research could investigate this
+testable hypothesis by identifying any patterns of nasal lowness in other Indo-European languages and
+applying the comparative method.
+
+
+                                                                                                123
+
+=== page 20 ===
+
+6 Page 20 of 32                                                                         A. Kostakis
+
+
+3.2 Why nasals might emerge as [low] sounds
+
+The traditional SPE definitions of the features [nasal] and [low] are incompatible
+with each other. Specifically, Chomsky and Halle (1968, 305, 316) define nasals as
+sounds that “are produced with a lowered velum which allows the air to escape
+through the nose...” By contrast, the feature [low] characterizes vowels and
+consonants that are “produced by lowering the body of the tongue below the level it
+occupies in the neutral position” (the tongue posture in a state of rest that
+approximates [ɛ]).31 Thus, the articulatory definition of nasals does not overlap with
+that of low sounds: they crucially depend on separate speech organs.
+   There are, however, several phonetic properties of nasals – which the original SPE
+definitions simply do not capture – that may support the phonologization of the
+feature [low]. From an articulatory perspective, velic height is not only important to
+nasal sounds, but also to vowels. Phonetic research going back to the mid-nineteenth
+century has shown that low vowels, like nasal consonants, have lower velic height
+than high vowels (Bell-Berti 1993). This is one way that nasal sounds and low
+sounds share phonetic properties. Krakow and Huffmann (1993, 6) also demonstrate
+that the lateral pharyngeal walls, apart from the position of the velum, are important
+for effectively articulating nasals. Accordingly, nasal sounds (which might some-
+times be better understood as nasopharyngeal sounds) also have an articulatory
+commonality with the pharyngeal place.
+   Perceptual studies have often demonstrated an affinity between low vowels and
+nasalization. Beddor (1993, 172–173), citing Hattori et al. (1958) and Takeuchi et al.
+(1975), notes that nasalization of low vowels can be achieved by weakening the F1
+signal. In high vowels, however, additional manipulations are sometimes necessary
+to perceive nasalization. This finding seems consistent with the observation –
+sometimes regarded as a linguistic universal – that nasalization processes generally
+begin with low vowels, move on to mid vowels, and affect high vowels last (see
+Hajak 1997, 116). Counter to this generalization, however, Kingston (2007, 416–
+418) finds that ‘gutless’ inventories, those that lack nasalized mid vowels, are more
+common than ‘headless’ inventories, those that lack nasalized high vowels.
+Otherwise, Kingston reaches a similar conclusion: ‘footless’ inventories of nasal
+vowels, those that lack nasalized low vowels but have nasalized high and mid
+vowels, are rare. This paucity is expected given that low sounds are the most likely to
+nasalize.
+   The nasal formant (FN) in nasal consonants and nasalized vowels is broader than
+the F1 of oral vowels (Ladefoged and Maddieson 1996, 116–118, 298–300;
+Ladefoged 2005, 55–56,180–182). Due to this difference in bandwidth, Beddor
+(1993, 181) finds that the result of vowel nasalization is for listeners to perceive
+vowel height between FN and F1. For this reason, nasalized high vowels may be
+perceived with higher than usual F1 values (yielding perceptual mid vowels), while
+nasalized low vowels may be perceived with lower than usual F1 values (also
+
+31
+   For additional discussion about the phonological structure of nasal segments and proposed positions of
+the feature [nasal] within a feature model, see Backley (2011, 145–151), Botma (2011), Hall (2007, 319–
+320), and Rice and Avery (1991).
+
+
+123
+
+=== page 21 ===
+
+Coda nasals in early Germanic languages                                              Page 21 of 32 6
+
+
+yielding perceptual mid vowels). This middling effect suggests that the nasal formant
+has some mid-vowel-like qualities. Thus, in languages where mid vowels are
+specified with the features [high] and [low], acoustic qualities of the nasal formant
+may help capture why nasal sounds and mid vowels can both phonologize with the
+feature [low].32
+   Some research on nasals and nasalization is vexingly paradoxical. If the
+middling effect that Beddor (1993) finds were universally true, it is unclear why
+Kingston (2007) does not find that ‘gutless’ languages are the typologically rarest
+ones. That is, Beddor’s middling effect should be feeding the gut (which is to say,
+producing more nasalized mid vowels). The notion of a universal spreading of
+nasalization from low vowels to high vowels also does not follow clearly from
+Beddor’s conclusions. In this case, middling should rarify nasalized high and low
+vowels. Furthermore, it is notable that the FN of nasal consonants has prominence
+around 250Hz33 (Kurowski and Blumstein 1993, 198) and that it ranges from 200–
+400 Hz for nasalized vowels (Beddor 1993, 180). Prominence in these frequency
+ranges is far closer to the F1 of high vowels than it is to mid or (especially) low
+vowels.34 These measurements suggest that [low] phonologizations are phoneti-
+cally less expected. However, that expectation only follows when prominence is
+understood to be more fundamental to feature encoding. If there are more
+languages like the early Germanic languages, in which nasals pattern as [low]
+sounds, the [low] encoding should predictably have more to do with bandwidth
+than with prominence. That prediction is left open here.
+   According to Mielke (2008), emergent features do not always fall out from
+phonetic information. They can also be a consequence of sociohistorical factors.35
+Findings from Hall (1993) might be taken as a case in point. Hall (1993) finds that
+the uvular [ʀ] of Modern Standard German patterns as a natural class with alveolar
+coronal sounds. This observation aligns with emergent feature theory insofar as
+present-day German [ʀ] is a regular reflex of earlier [r]. Thus, a sound change that
+was implemented in most dialects of German well over a century ago (cf. Curme
+1891, 3),36 a kind of sociohistorical factor, affects the featural encoding and natural
+
+
+
+
+32
+   As I argue below, coda nasals in early Germanic languages were not marked with the feature [high] (in
+addition to [low]); but, based on acoustic information, it is conceivable that nasals may pattern in this
+manner in some languages of the world.
+33
+   Ladefoged and Maddieson (1996, 117) show a slightly broader range from 250–300 for Catalan nasals,
+according to their place of articulation.
+34
+   I take this as an indication that languages with [high] nasal phonologizations should not be ruled out
+(see further discussion in Sect. 3.3).
+35
+   Note also Drescher (2014), who finds that emergent features obtain from a universal mechanism (the
+successive division algorithm), which assigns contrastive features that are prioritized through a contrastive
+hierarchy.
+36
+    I refer to the change from [r] to [ʀ] in the sense that one widely-used social standard shifted to another
+widely-used social standard. There has always been a diverse range of rhotic forms across German dialects
+(cf. Natvig and Salmons 2020 for additional discussion as well as some representational justifications for
+why multiple kinds of rhotics are licensed in synchronic grammar).
+
+
+                                                                                                 123
+
+=== page 22 ===
+
+6 Page 22 of 32                                                                            A. Kostakis
+
+
+class patterns of the present day.37 Emergent feature theory predicts the lower
+frequency of unusual natural class patterns because such patterns are not supported
+by phonetic cues that are synchronically obvious. Nevertheless, it is clear that such
+rules can be perpetuated or transmitted (in the sense of Labov 2007) for long periods
+of time. See Scheer (2015) for additional examples of and discussion of so-called
+‘crazy rules’.
+   There is some evidence suggesting that the patterns of nasal lowness in early
+Germanic languages are phonetically grounded and should thus not be understood as
+crazy rules. Matisoff (1975), for example, coined the term ‘rhinoglottophilia’ to refer
+to the natural class of nasals and glottal sounds. Some of the processes that Matisoff’s
+work reported are similar to ones discussed in Sect. 2. For example, Matisoff (1975,
+266), notes that in Bangkok Thai, low vowels are nasalized after nasal onsets, as in
+(24a), and glottal onsets, as in (24b) and (24c).38 If Matisoff’s original natural class is
+expanded to include nasals and all post-velar sounds, the Bangkok Thai example is
+similar to ON Lowering (Sect. 2.3) because nasal sounds and post-velar sounds are
+patterning together as a natural class. Such an expansion may be syllogistically
+justified by previous phonological research. More concretely, McCarthy (1994)
+argues that pharyngeal and glottal sounds serve as a natural class of gutturals. These
+arguments, in turn, connect to other phonological patterns. On the one hand, Element
+Theory (Backely 2011) uses the |A| element to capture, with acoustic evidence, the
+natural class of non-high vowels and pharyngeals. Rhinoglottophilia, on the other
+hand, connects glottal sounds and nasals. The conjunction of these investigations
+suggests that the phonologization of nasals, post-velars, and non-high vowels as a
+natural class is possible.
+
+(24)      Bangkok Thai
+       a. /maa/        [mãã] ‘come’
+       b. /hɛɛ/                 [hæ̃ æ̃] ‘parade’
+          /hâa/                 [hãã] ‘five’
+       c. /ʔɔɔk/                [ʔɔ̃ɔ̃k] ‘leave, depart’
+          /ʔaw/                 [ʔãw] ‘take’
+
+
+   Matisoff’s (1975) unexpected natural class has been observed by other scholars.
+For example, de Lacy (2006, 38–39) argues that “a nasal stop phonologically
+specified as [glottal] is not articulatorily impossible...” and argues that in a language
+variety like Kagoshima Japanese obstruents debuccalize to [ʔ], while nasals
+debuccalize to a glottal nasal, transcribed as [N]. This nasal is often reported as
+velar [ŋ], but its patterning with other syllable-final glottals supports the notion of
+
+37
+   In a meticulous study of æ-tensing through dialects of American English, Labov (2007) provides
+significant evidence that first language acquirers are able to perpetuate phonological rules for which there is
+lacking phonetic support (diffusion of dialect features to adult acquirers is where imperfect learning is
+observed, and conditioning environments may shift or simplify).
+38
+   In Bangkok Thai, Matisoff (1975, 266) notes, nasal onsets nasalize high vowels as well, while in
+Northeastern Thai, both nasal and glottal onsets nasalize high vowels.
+
+
+123
+
+=== page 23 ===
+
+Coda nasals in early Germanic languages                                                     Page 23 of 32 6
+
+
+rhinoglottophilia. For additional arguments and discussion see Trigo (1988), and de
+Lacy (2006, 39–42).39
+   Even when nasals and post-velars do not specifically pattern together as a natural
+class, there is enough evidence that both segments condition the same kind of
+changes cross-linguistically to merit special consideration. High vowel lowering is a
+case in point. In many languages, high vowels lower to mid vowels before coda
+nasals. Some French examples from Pope (1934, 174–176) are presented in (25).
+These data show that the pre-nasal high vowels of Older French correspond to the
+nasalized mid vowels of later French.40
+
+(25)       Older French            Later French
+        a. pr[i]ntsə               pr[ẽ]sə              ‘prince’
+           ts[i]nkãntə             s[ẽ]kãtə             ‘fifty’
+           f[i]n                   f[ẽ](n)              ‘end’
+           l[i]n                   l[ẽ](n)              ‘flax’
+        b. [y]mblə                 [ø̃ ]blə             ‘humble’
+           l[y]n(z)di              l[ø̃ ]di             ‘Monday’
+           [y]n                    [ø̃](n)              ‘one.m’
+        c. [u]mbrə                 [ɔ̃]brə              ‘shadow’
+           f[u]nts                 f[ɔ̃](z)             ‘bottom’
+           k[u]ntə                 k[ɔ̃]tə              ‘count’
+           p[u]nt                  p[ɔ̃]t               ‘bridge’
+
+
+   Lowering effects conditioned by post-velar segments are also well-attested.
+Pharyngeal consonants (which, following Shahin 2011, include uvular sounds), are
+known to condition high vowel lowering. Cochabamba Quechua is a representative
+example. Some data from Gallagher (2016), following Bills et al. (1969), Adelaar
+and Muysken (2004), and Hoggarth (2004), are presented in (26).41 The examples in
+(26a) show instances where an underlying high vowel is preceded by a uvular stop.
+In (26b), high vowels are followed by a uvular stop. In all instances, the underlying
+high vowel is realized as a mid vowel on the surface.
+
+39
+   Low vowels also appear to have the ability to nasalize without a clear trigger. Matisoff (1975, 269)
+notes that upper-class dialects of British English frequently nasalize /a:/ as well. This occurs in words with
+a syllable-initial vowel (e.g., [ɑ̃ ːə] ‘hour’, [ɑ̃ ːt] ‘art’), but also following [h] (e.g. [hɑ̃ ːt] ‘heart’, [hɑ̃ ːf]
+‘half’). Hajek and Maeda (2000) note that Proto-Eastern Algonquian */a:/ can have nasalized reflexes as
+represented by West Abenaki /səkɔ̃ kw / ‘skunk’ < /ʃekaːkwa/ but do not give a sense of how productive the
+process was.
+40
+    The French data are more complicated for a number of reasons. For example, I am not considering the
+typologically unusual fact that nasalized mid vowels developed into nasalized low vowels prior to the
+advent of high vowel lowering. Additionally, as the presented data show, high front vowels lowered to
+tense mid vowels, while the high back vowel lowers to a lax vowel. See Sampson (1999), Terry and Webb
+(2013), and Dow (2020) for more careful discussions. For the purpose of this discussion, the relevant fact
+is that a nasal can condition a phonological shift from a high vowel to a mid vowel.
+41
+   Ladefoged and Maddieson (1996, 26–27) observe that vocalic pharyngealization, like nasalization, can
+condition phonetic lowering.
+
+
+                                                                                                        123
+
+=== page 24 ===
+
+6 Page 24 of 32                                                         A. Kostakis
+
+
+(26)        Cochabamba Quechua
+         a. /q’ipij/ [q’epij]     ‘to carry’
+            /qhiʎu/  [qheʎu]      ‘lazy’
+            /qusa/   [qosa]       ‘husband’
+            /q’usɲi/ [q’osɲi]     ‘garbage’
+         b. /liq’i/    [leq’e]    ‘hat’
+            /siq’uj/   [seq’oj]   ‘to smack’
+            /huq’u/    [hoq’o]    ‘damp’
+            /muq’ij/   [moq’ej]   ‘to want, love’
+
+
+   While lowering processes that are conditioned by coda nasals, like the one in
+French, and by post-velar segments, like the one in Quechua, are well-known, it is
+unclear how common it is for these processes to co-occur, as they do in ON (in Sect.
+2.3). Future research is needed here. The paucity of similar examples could suggest,
+on the one hand, that such patterns do not truly exist. On the other hand, the wanting
+data could be an indication that these patterns have not been sought out because past
+and current theories do not predict them.
+
+3.3 Coda nasals in Germanic languages did not emerge as [high] sounds:
+    implications of the no-crossing constraint
+
+Just as laryngeal realism has found that the cross-linguistically common process of
+final devoicing can obtain from distinct phonological processes (Iverson and
+Salmons 2011), so too can changes involving nasals have different phonological
+motivations, depending on the features that are phonologically active. Since the
+phonological ambiguity of nasal segments, particularly with respect to height
+features, has not been systematically investigated, there is no reason why a coda
+nasal could not be phonologized with the feature [high] in some languages of the
+world.42 This section reviews recent work suggesting that the feature [high] is a
+phonologically active specification for certain consonants in early Germanic
+languages and argues that nasal sounds do not pattern together with [high]
+consonants.
+   Key evidence for [high] consonants comes from OHG. In OHG, [high] sounds,
+following Kostakis (2019), block the application of Primary Umlaut, which refers to
+a metaphonic process in which an unstressed, high, front vowel (or glide) caused a
+short, preceding tonic [a], and no other vowel, to raise to [e]. Some representative
+examples of this development are presented in (27). The PGmc reconstructions in the
+first column are from Orel (2003). Inflectional endings are based on Ringe (2017). In
+(27a), the PGmc forms have a short [a] followed by a high front vowel. In (27b),
+[a] is followed by a high front glide. In all the examples, the OHG reflexes show an
+[e] corresponding to PGmc *[a].
+
+
+42
+     See fn. 34.
+
+
+123
+
+=== page 25 ===
+
+Coda nasals in early Germanic languages                                 Page 25 of 32 6
+
+
+(27)      PGmc            OHG
+       a. *ǥastīz         gesti     ‘guests’
+          *aǥīn           egī       ‘fear’
+          *alđīn          eltī      ‘age’
+          *fastīn         festī     ‘strength’
+          *halđiþi        heltit    ‘s/he stops’
+          *farisi         feris     ‘you travel’
+       b. *ƀađjan         betti     ‘bed’
+          *atjanan        ezzen     ‘eat’
+          *haftjanan      heften    ‘bind’
+          *fanjan         fenni     ‘swamp, fen’
+
+
+   Following Kostakis (2019), OHG Primary Umlaut is analyzed as a spreading of
+the feature [high] from the umlaut trigger, [i, ī, j], onto the umlaut target, [a]. The
+upshot of this spreading is a vowel that is doubly-marked for the features [high] and
+[low], which, in line with the analyses from above, is a mid vowel. The change is
+shown in (28).
+(28)              PGmc/WGmc                             OHG
+
+                       [high]                             [high]
+                          |                                  |
+                  [a] … [i]               >          [e] … [i]
+                   |                                  |
+                [low]                              [low]
+                            [front]                                [front]
+
+
+   The spreading rule in (28) makes a strong prediction. Segments that are marked
+with the feature [high] should block the application of the rule due to the no-crossing
+constraint, as indicated in (29).
+(29)                       OHG
+
+                        [high] [high]
+                           |     |
+                   [a] … C … [i]
+                    |
+                 [low]
+                                   [front]
+
+
+   In this way, OHG primary umlaut can be used as a diagnostic for consonantal
+height features. Initially described by Braune (1877), it is well known that coda
+rhotics, coda laterals, and the velar fricative [x] (represented as <h> or <ch>) all
+
+
+
+
+                                                                                 123
+
+=== page 26 ===
+
+6 Page 26 of 32                                                                            A. Kostakis
+
+
+block primary umlaut. Some representative examples are shown in (30). Because
+primary umlaut is blocked, these forms each retain an unumlauted tonic vowel, [a].
+Accordingly, < r >, < l >, < h >, as Kostakis (2019) contends, must be encoded with the
+feature [high].43
+
+(30)      OHG
+          a< r >bi         ‘inheritance’
+          ha< l >tit       ‘hold’
+          wa< h >sit       ‘grows’
+          ma< ch >tīg      ‘powerful’
+
+
+   By that logic, examples like the ones in (31) are important because they show that
+coda nasals were not marked with the feature [high]. They do not interfere with
+primary umlaut.44
+
+(31)      PGmc              OHG
+          *lanđīn           lentī          ‘loins’
+          *lanǥīn           lengī          ‘length’
+          *lamƀaz           lembir         ‘lambs’
+          *anstīz           ensti          ‘favors’
+          *manniskaz        mennisko       ‘person’
+
+
+    As with OHG primary umlaut, NWGmc a-umlaut can also be used as a diagnostic for
+lowness. That is, the analysis in Sect. 2.1 makes a strong prediction about the feature
+specification of segments that block the process: any sound intervening between the
+umlaut target and trigger that is marked with the feature [low] should block the spreading
+of the feature [low] (from /a/) on account of the no-crossing constraint. For this reason,
+NWGmc a-umlaut can also be used to evaluate the status of certain segments as non-
+[low] sounds. For example, the data in (32) indicate that the coda rhotic (32a), coda
+lateral (32b), and velar fricative (32c) are not marked with a lowness feature.45
+
+43
+   Blocking is most characteristic of Bavarian dialects of German and has slightly different realizations in
+different OHG dialects. Kostakis and Noelliste (2022) also argue that coda [w] blocked Primary Umlaut.
+See Iverson, Davis, and Salmons (1994), Braune and Reiffenstein (2004), and Kostakis and Noelliste
+(2022) for additional details, references, and discussion. In Iverson, Davis, and Salmons (1994) OHG <r>,
+<l>, and <h> are argued to be the natural class of vocalizing segments. Kostakis (2019) is critical of this
+approach because of its treatment of <h>. OHG <h> generally derives from PGmc *[k] and *[x],
+suggesting its velar place of articulation. In addition, there words like OHG fuhs ‘fox’ and sehs ‘six’ that
+show a historical *[x] – and not some other dorsal fricative – dissimilating back to [k] before [s], cf.
+Present-Day German Fuchs [fuks] ‘fox’ and sechs [zɛks] ‘six’.
+44
+   In fact, Boutilier (2019) finds that primary umlaut is attested before nasal clusters earlier on in OHG
+than it is attested in other contexts.
+45
+   In OHG, there are examples like luhs ‘lynx’ with unexpected tonic [u]. It is unclear what the cause of
+these exceptions are. Orel (2003, 250) reconstructs a morphological doublet, PGmc *luxaz * *luxsuz,
+suggesting that analogy may account for such an exception. Kroonen (2013, 342) similarly reconstructs
+PGmc *luh- from feminine PIE *luk-eh2 and PGmc *luhs- from masculine PIE *luk-so-. Both authors
+note irregular correspondences that make the reconstruction a bit difficult.
+
+
+123
+
+=== page 27 ===
+
+Coda nasals in early Germanic languages                                            Page 27 of 32 6
+
+
+(32)      PGmc    ON              OHG OS
+       a. *ƀurđan borð            bort bord           ‘board’
+          *hurnan horn            horn horn           ‘horn’
+       b. *fulkan folk            folc      folk      ‘folk’
+          *fulđōn fold            –         folda     ‘field’
+       c. *fuxōn fóa     foha foha ‘vixen’
+          *đuxtēr dóttir tohter dohtar ‘daughter’
+
+
+   In sum, the developing picture of emergent features in early Germanic languages
+is that coda liquids (and the velar fricative) were specified with the feature [high],
+while coda nasals (and post-velar fricatives) were marked with the feature [low].46
+
+
+4 Conclusion
+
+In this article, I have argued that coda nasals in early Germanic languages were marked
+with the feature [low]. That lowness specification is manifest from several processes. In
+NWGmc a-mutation, the feature [low] spreads from a non-high vocalic trigger onto a
+high back vowel. The no-crossing constraint makes a strong prediction that any
+segment that is marked with the feature [low] should block the application of that
+change. Since coda nasals do block a-umlaut, it follows that they are [low] segments.
+   The lowness specification of coda nasals can also account for pre-nasal raising.
+Mid-vowels – doubly-marked with the features [high] and [low] – violate an OCP
+constraint when they are situated before coda nasals, which are also [low]. This
+dissimilatory analysis and the representations assumed are corroborated by the fact
+that the low vowel [a] is permitted before a coda nasal. Dissimilations are widely
+reported to be structure preserving developments. Repairing this sequence would
+result in a non-existing segment.
+   Cross-linguistically, natural class patterns of lowness are also observable given
+that nasals and post-velar consonants trigger the lowering of high vowels. One
+implication of this observation is that there should be evidence of [low] nasals
+patterning as a natural class with post-velar consonants. Indeed, there is such
+evidence in ON, where exactly those sounds trigger the lowering of pre-ON *[i] and
+*[u]. Those high vowels become doubly-marked mid vowels when the [low] feature
+of the coda nasal and the post-velar fricative spread regressively onto the preceding
+high vowel.
+   Emergent feature theory comes with an ability to work past the limitations of
+traditional models because it distinguishes between phonologically active classes and
+phonetically natural classes. Nasals have phonetic and acoustic properties that may
+endow these sounds with the potential to phonologize with the feature [low]. This
+46
+   Any account arguing that nasals were high would also have to explain why a coda rhotic (but not a coda
+nasal) conditions palatalization of [s] in Middle High German hirsch ‘deer’ < OHG hirs (Kostakis 2019),
+or why [r] (< PGmc *z), but not [n], patterns with [i] in ON to front all back vowels to corresponding front
+vowels (Noreen 1970).
+
+
+                                                                                               123
+
+=== page 28 ===
+
+6 Page 28 of 32                                                                               A. Kostakis
+
+
+feature specification, in turn, has several phonological implications: It captures nasals
+and post-velar segments as a possible natural class; it corroborates a claim of
+laryngeal realism, namely, that syllable-final position can be as much a site for
+feature insertion as feature deletion; finally, it accounts for consonant-vowel
+interactions that have been phonologically difficult to understand (and suggests that
+certain processes like regular dissimilation are likely more common than previously
+thought).
+   While the data discussed and analyzed in this article have been deliberated for two
+centuries, there is, to my knowledge, no analytical treatment which accounts for the
+behavior of coda nasals in Germanic languages. I have argued that the enigmatic
+empirical evidence can be straightforwardly captured when coda nasals are analyzed
+as members of the natural class of [low] sounds. That analysis, in turn, can be
+embedded within a broader picture of early Germanic phonology, in which
+allophones of liquids and /x/ pattern as [high] sounds, while post-velar sounds and
+coda nasals pattern as [low] sounds.
+
+Acknowledgements I would like to express my gratitude to Tracy Alan Hall, Katherine Honea, and Megan
+Barrett for their valuable comments on earlier drafts of this article. Thanks also to Tyler Kniess for his
+helpful feedback on a later draft, as well as the audiences at the 28th Manchester Phonology Meeting and
+Leipzig University’s Phonology Colloquium. I am furthermore grateful to the three anonymous reviewers,
+whose critical feedback greatly improved this article. All errors are my own.
+
+
+
+
+Author contributions The author is solely responsible for this article.
+
+Funding Not applicable.
+
+Data availability All data generated or analyzed during this study are included in this published article.
+
+Declarations
+
+Competing interests The author declares that they have no competing interests.
+
+Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDer-
+ivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and
+reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and
+the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed
+material. You do not have permission under this licence to share adapted material derived from this article
+or parts of it. The images or other third party material in this article are included in the articleâ s Creative
+Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in
+the articleâ s Creative Commons licence and your intended use is not permitted by statutory regulation or
+exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a
+copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+
+
+
+References
+
+Adelaar, Willem F. H., and Pieter C. Muysken. 2004. The languages of the Andes. Cambridge: Cambridge
+    University Press. https://doi.org/10.1017/CBO9780511486852.
+
+
+
+
+123
+
+=== page 29 ===
+
+Coda nasals in early Germanic languages                                            Page 29 of 32 6
+
+
+Anderson, John M., and Jacques Durand. 1986. Dependency phonology. In Dependency and non-linear
+      phonology, ed. Jacques Durand, 1–54. London: Croom Helm.
+Anderson, John M., and Colin J. Ewen. 1987. Principles of dependency phonology. Cambridge:
+      Cambridge University Press. https://doi.org/10.1017/CBO9780511753442.
+Backley, Philip. 2011. An introduction to element theory. Edinburgh: Edinburgh University Press. https://
+      doi.org/10.1515/9780748637447.
+Barrack, Charles M.. 1987. The fate of Proto-Germanic *x. Zeitschrift Für Dialektologie und Linguistik 54
+      (3): 340–344.
+Beddor, Patrice S. 1993. The perception of nasal vowels. In Nasals, nasalization, and the velum, eds. Marie
+      K. Huffman and Rena A. Krakow, volume 5 of Phonetics and phonology, 171–196. San Diego:
+      Academic Press. https://doi.org/10.1016/B978-0-12-360380-7.50011-9
+Bell-Berti, Fredericka. 1993. Understanding velic motor control: Studies of segmental context. In Nasals,
+      nasalization, and the velum, eds. Marie K. Huffman and Rena A. Krakow, volume 5 of Phonetics and
+      phonology, 63–85. San Diego: Academic Press. https://doi.org/10.1016/B978-0-12-360380-7.50007-
+      7
+Bills, Garland, Rudolph C.. Troike, and Bernardo Vallejo. 1969. An introduction to spoken Bolivian
+      Quechua. Austin: University of Texas Press.
+Botma, Bert. 2011. Sonorants. In The Blackwell companion to phonology, ed. Marc van Oostendorp, Colin
+      J. Ewen, Elizabeth Hume, and Keren Rice, 171–194. Malden: Blackwell. https://doi.org/10.1002/
+      9781444335262.wbctp0008.
+Boutilier, Matthew G. 2019. Phonological and morphological patterns in Old High German umlaut.
+      Madison, WI: University of Wisconsin dissertation.
+Braune, Wilhelm. 1877. Zur althochdeutschen Lautlehre. Bgsl 4:540–566. https://doi.org/10.1515/bgsl.
+      1877.1877.4.540.
+Braune, Wilhelm, and Frank Heidermanns. 2018. Althochdeutsche Grammatik. Berlin: de Gruyter. https://
+      doi.org/10.1515/9783110515114.
+Braune, Wilhelm, and Ingo Reiffenstein. 2004. Althochdeutsche Grammatik. Tübingen: Max Niemeyer
+      Verlag. https://doi.org/10.1515/9783110930887.
+Bye, Patrik. 2011. Dissimilation. In The Blackwell companion to phonology, ed. Marc van Oostendorp,
+      Colin J. Ewen, Elizabeth Hume, and Keren Rice, 1408–1433. Malden: Blackwell. https://doi.org/10.
+      1002/9781444335262.wbctp0060.
+Chomsky, Noam, and Morris Halle. 1968. The sound pattern of English. Cambridge, MA: MIT Press.
+Clackson, James. 2007. Indo-European linguistics: An introduction. Cambridge: Cambridge University
+      Press. https://doi.org/10.1017/CBO9780511808616.
+Clements, George N., and Elizabeth V. Hume. 1995. The internal organization of speech sounds. In
+      Handbook of phonological theory, ed. John A. Goldsmith, 245–306. Oxford: Blackwell.
+Curme, George O. 1891. Pronunciation of R and G in Germany. Modern Language Notes 6:3–4. https://
+      doi.org/10.2307/2919180.
+Davis, Stuart. 1994. Geminate consonants in moraic phonology. Proceedings of the West Coast Conference
+      on Formal Linguistics 13:32–45.
+de Lacy, Paul. 2006. Markedness: Reduction and preservation in phonology. Cambridge: Cambridge
+      University Press. https://doi.org/10.1017/CBO9780511486388.
+Dow, Michael. 2020. A phonetic-phonological study of vowel height and nasal coarticulation in French.
+      Journal of French Language Studies 30 (3): 239–274. https://doi.org/10.1017/S0959269520000083.
+Dresher, B. Elan. 2014. The arch not the stones: Universal feature theory without universal features.
+      Nordlyd 41 (2): 165–181. https://doi.org/10.7557/12.3412.
+Trigo Ferre, Rosa L. 1988. On the phonological derivation and behavior of nasal glides. Cambridge, MA:
+      Massachusetts Institute of Technology dissertation.
+Gallagher, Gillian. 2016. Vowel height allophony and dorsal place contrasts in Cochabamba Quechua.
+      Phonetica 73 (2): 101–119. https://doi.org/10.1159/000443651.
+Goldsmith, John. 1976. An overview of autosegmental phonology. Linguistic Analysis 2:23–68.
+Goldsmith, John. 1985. Vowel harmony in Khalkha Mongolian, Yaka, Finnish, and Hungarian. Phonology
+      Yearbook 2:253–275. https://doi.org/10.1017/S0952675700000452.
+Grimm, Jacob. 1822. Deutsche Grammatik. Göttingen: Dieterische Buchhandlung.
+Grimm, Jacob. 1840. Deutsche Grammatik, 3rd ed. Göttingen: Dieterische Buchhandlung.
+Hajek, John. 1997. Universals of sound change in nasalization. Oxford: Blackwell.
+Hajek, John, and Shinji Maeda. 2000. Investigating universals of sound change: The effect of vowel height
+      and duration on the development of distinctive nasalization. In Papers in Laboratory Phonology V:
+
+
+                                                                                              123
+
+=== page 30 ===
+
+6 Page 30 of 32                                                                            A. Kostakis
+
+
+      Acquisition and the lexicon, ed. Michael B. Broe and Janet B. Pierrehumbert, 52–69. Cambridge:
+      Cambridge University Press.
+Hall, Tracy A. 1993. The phonology of German /ʀ/. Phonology 10:83–105. https://doi.org/10.1017/
+      S0952675700001743.
+Hall, Tracy A. 2007. Segmental features. In The Cambridge handbook of phonology, ed. Paul de Lacy,
+      311–334. Cambridge: Cambridge University Press.
+Hall, Tracy A. 2008. Middle High German [rs] > [rʃ] as height dissimilation. Journal of Comparative
+      Germanic Linguistics 11:213–248. https://doi.org/10.1007/s10828-008-9021-5.
+Hall, Tracy A. 2009. On the status of [h] [x] alternations in German dialects: The case for buccalization. In
+      Between the regular and the particular in speech and language, ed. Susanne Fuchs, Philip Hoole,
+      Christine Mooshammer, and Martine Zygis, 29–56. Berlin: Peter Lang Verlag.
+Hall, Tracy A.., and John H. G.. Scott. 2007. Inflectional paradigms have a base: Evidence from
+      s-dissimilation in Southern German dialects. Morphology 17:151–178. https://doi.org/10.1007/
+      s11525-007-9112-z.
+Halle, Morris. 2002. From memory to speech and back: Papers on phonetics and phonology 1954–2002.
+      Berlin: Mouton de Gruyter. https://doi.org/10.1515/9783110871258.
+Harris, John. 1994. English sound structure. Oxford: Blackwell.
+Harris, John. 1996. Phonological output is redundancy-free and fully interpretable. In Current trends in
+      phonology: Models and methods, ed. Jacques Durand and Bernard Laks, 305–332. Salford: ESRI.
+Hattori, Shiro, Kengo Yamamoto, and Osamu Fujimura. 1958. Nasalization of vowels in relation to nasals.
+      Journal of the Acoustical Society of America 30:267–274. https://doi.org/10.1121/1.1909563.
+Haugen, Einar. 1982. Scandinavian language structures: A comparative historical survey. Minneapolis:
+      University of Minnesota Press.
+Hayes, Bruce. 1986. Inalterability in CV phonology. Language 62 (2): 321–351. https://doi.org/10.2307/
+      414676.
+Hayes, Bruce. 1989. Compensatory lengthening in moraic phonology. Linguistic Inquiry 20 (2): 253–306.
+Hoggarth, Leslie. 2004. Contributions to Cuzco Quechua grammar. Bonner Amerikanistische Studien.
+      Aachen: Shaker Verlag GmbH.
+Howell, Robert B.. 1991. Old English breaking and its Germanic analogues. Tübingen: Max Niemeyer
+      Verlag. https://doi.org/10.1515/9783111356501.
+Iverson, Gregory K., and Joseph C. Salmons. 2011. Final devoicing and final laryngeal neutralization. In
+      The Blackwell companion to phonology, ed. Marc van Oostendorp, Colin J. Ewen, Elizabeth Hume,
+      and Keren Rice, 1622–1643. Malden: Blackwell. https://doi.org/10.1002/9781444335262.
+      wbctp0069.
+Iverson, Gregory K.., Gary W.. Davis, and Joseph C.. Salmons. 1994. Blocking environments in Old High
+      German umlaut. Folia Linguistica Historica 15:131–148. https://doi.org/10.1515/flih.1994.15.1-2.
+      131.
+Jakobson, Roman, Gunnar Fant, and Morris Halle. 1956. Preliminaries to speech analysis: The distinctive
+      features and their correlates. Cambridge, MA: MIT Press.
+Kingston, John. 2007. The phonetics-phonology interface. In The Cambridge handbook of phonology, ed.
+      Paul de Lacy, 401–434. Cambridge: Cambridge University Press. https://doi.org/10.1017/
+      CBO9780511486371.018.
+Kiparsky, Paul. 1995. The phonological basis of sound change. In The handbook of phonological theory,
+      ed. John A. Goldsmith, 640–670. Cambridge, MA: Blackwell.
+Kostakis, Andrew. 2019. Gothic and Old High German: Implications from phonological patterning. Glossa
+      Journal of General Linguistics 4 (1): 1–26. https://doi.org/10.5334/gjgl.792.
+Kostakis, Andrew. 2024. The phonology of mid vowels in Germanic languages. Journal of Germanic
+      Linguistics. https://doi.org/10.1017/S1470542724000023.
+Kostakis, Andrew, and Erin Noelliste. 2022. The status of /w/ in Old High German. Folia Linguistica
+      Historica 56 (s43–s1): 169–212. https://doi.org/10.1515/flin-2022-2018.
+Krakow, Rena A., and Marie K. Huffman. 1993. Instruments and techniques for investigating nasalization
+      and velopharyngeal function in the laboratory: An introduction. In Nasals, nasalization, and the
+      velum, vol. 5 of Phonetics and phonology, eds. Marie K. Huffman and Rena A. Krakow, 3–59. San
+      Diego: Academic Press. https://doi.org/10.1016/B978-0-12-360380-7.50006-5
+Krause, Wolfgang. 1971. Die Sprache der urnordischen Runeninschriften. Heidelberg: Winter.
+Kroonen, Guss. 2013. Etymological dictionary of Proto-Germanic. Leiden: Brill.
+Kurowski, Kathleen M., and Sheila E. Blumstein. 1993. Acoustic properties for the perception of nasal
+      consonants. In Nasals, nasalization, and the velum, vol. 5 of Phonetics and phonology, eds. Marie K.
+
+
+123
+
+=== page 31 ===
+
+Coda nasals in early Germanic languages                                              Page 31 of 32 6
+
+
+     Huffman and Rena A. Krakow, 197–224. San Diego: Academic Press. https://doi.org/10.1016/B978-
+     0-12-360380-7.50012-0
+Labov, William. 2007. Transmission and diffusion. Language 83:344–387. https://doi.org/10.1353/lan.
+     2007.0082.
+Ladefoged, Peter. 1971. Preliminaries to linguistic phonetics. Chicago: University of Chicago Press.
+Ladefoged, Peter. 2005. Vowels and consonants, 2nd ed. Malden: Blackwell.
+Ladefoged, Peter, and Ian Maddieson. 1996. The sounds of the world’s languages. Malden: Blackwell.
+Lahiri, Aditi, and Vincent Evers. 1991. Palatalization and coronality. In The special status of coronals:
+     Internal and external evidence, ed. Carole Paradis and Jean-François. Prunet, 79–100. San Diego:
+     Academic Press. https://doi.org/10.1016/B978-0-12-544966-3.50011-7.
+Lahiri, Aditi, and Henning Reetz. 2010. Distinctive features: Phonological underspecification in representation
+     and processing. Journal of Phonetics 38:44–59. https://doi.org/10.1016/j.wocn.2010.01.002.
+Leben, William R. 1973. Suprasegmental phonology. Cambridge, MA: Massachusetts Institute of
+     Technology dissertation.
+Luick, Karl. 1921. Historische Grammatik der englischen Sprache, vol. 1. Leipzig: Christian Hermann
+     Tauchnitz.
+Matisoff, James A. 1975. Rhinoglottophilia: The mysterious connection between nasality and glottality. In
+     Nasalfest: Papers from a symposium on nasals and nasalization, ed. Charles A. Ferguson, Larry M.
+     Hyman, and John J. Ohala, 265–287. Berkeley: Stanford University Department of Linguistics.
+McCarthy, John J.. 1988. Feature geometry and dependency: A review. Phonetica 43:84–108. https://doi.
+     org/10.1159/000261820.
+McCarthy, John J. 1994. The phonetics and phonology of Semitic pharyngeals. In Phonological structure
+     and phonetic form: Papers in Laboratory Phonology III, ed. Patricia A. Keating, 191–233.
+     Cambridge: Cambridge University Press. https://doi.org/10.1017/CBO9780511659461.012
+Mielke, Jeff. 2005. Ambivalence and ambiguity in laterals and nasals. Phonology 22:169–203. https://doi.
+     org/10.1017/S0952675705000539.
+Mielke, Jeff. 2008. The emergence of distinctive features. Oxford: Oxford University Press. https://doi.org/
+     10.1093/oso/9780199207916.001.0001.
+Mielke, Jeff. 2011. Distinctive features. In The Blackwell companion to phonology, ed. Marc van
+     Oostendorp, Colin J. Ewen, Elizabeth Hume, and Keren Rice, 391–415. Malden: Blackwell. https://
+     doi.org/10.1002/9781444335262.wbctp0017.
+Morén-Duolljá, Bruce. 2011. Vowel place. In The Blackwell companion to phonology, ed. Marc van
+     Oostendorp, Colin J. Ewen, Elizabeth Hume, and Keren Rice, 440–464. Malden: Blackwell.
+Natvig, David, and Joseph Salmons. 2020. Fully accepting variation in (pre)history: The pervasive
+     heterogeneity of Germanic rhotics. In The polymath intellectual: A festschrift in honor of Professor
+     Robert D. King, ed. Patricia C. Sutcliffe, 81–102. Dripping Springs: Agarita Press.
+Noelliste, Erin. 2017. The phonology of Bavarian German sonorants. Bloomington, IN: Indiana University
+     dissertation.
+Noreen, Adolf. 1970. Altnordische Grammatik. University, AL: The University of Alabama Press.
+Odden, David. 1988. Anti anti-gemination and the OCP. Linguistic Inquiry 19:451–475.
+Ohala, John J. 1993. The phonetics of sound change. In Historical linguistics: Problems and perspectives,
+     ed. Charles Jones, 237–278. London: Longman Academic.
+Orel, Vladimir. 2003. A handbook of Germanic etymology. Leiden: Brill.
+Pope, Mildred K.. 1934. From Latin to modern French, with especial consideration of Anglo-Norman:
+     Phonology and morphology. Manchester: Manchester University Press.
+Prokosch, Eduard. 1939. A comparative Germanic grammar. Philadelphia: Linguistic Society of America.
+Pulleyblank, Douglas. 2011. Vowel height. In The Blackwell companion to phonology, vol. 1, eds. Marc
+     van Oostendorp, Colin Ewen, Elizabeth Hume, and Keren Rice, 491–518. Malden: Wiley-Blackwell.
+     https://doi.org/10.1002/9781444335262.wbctp0021
+Rice, Keren. 2011. Consonantal place of articulation. In The Blackwell companion to phonology, ed. Marc
+     van Oostendorp, Colin J. Ewen, Elizabeth Hume, and Keren Rice, 519–549. Malden: Blackwell.
+     https://doi.org/10.1002/9781444335262.wbctp0022.
+Rice, Keren, and Peter Avery. 1991. On the relationship between laterality and coronality. In The special
+     status of coronals: Internal and external evidence, ed. Carole Paradis and Jean-François. Prunet, 101–
+     124. San Diego: Academic Press.
+Ringe, Don. 2017. From Proto-Indo-European to Proto-Germanic, 2nd ed. Oxford: Oxford University
+     Press. https://doi.org/10.1093/oso/9780198792581.001.0001.
+
+
+
+                                                                                                 123
+
+=== page 32 ===
+
+6 Page 32 of 32                                                                           A. Kostakis
+
+
+Ringe, Don, and Ann Taylor. 2014. The development of Old English. Oxford: Oxford University Press.
+     https://doi.org/10.1093/acprof:oso/9780199207848.001.0001.
+Rose, Sharon. 2011. Long-distance assimilation of consonants. In The Blackwell companion to phonology,
+     vol. 1, eds. Marc van Oostendorp, Colin Ewen, Elizabeth Hume, and Keren Rice, 1811–1837.
+     Malden: Wiley-Blackwell. https://doi.org/10.1002/9781444335262.wbctp0077
+Russ, Charles V. J.. 1978. Historical German phonology and morphology. Oxford: Oxford University Press.
+Sagey, Elizabeth C. 1986. The representation of features and relations in non-linear phonology.
+     Cambridge, MA: Massachusetts Institute of Technology dissertation.
+Salmons, Joseph C.. 2012. A history of German: What the past reveals about today’s language. Oxford:
+     Oxford University Press.
+Sampson, Rodney. 1999. Nasal vowel evolution in Romance. Oxford: Oxford University Press. https://doi.
+     org/10.1093/oso/9780198238485.001.0001.
+Scandinavian Runic-text Database. 2020a. Runic inscription N KJ74. Department of Scandinavian
+     Languages,       Uppsala      University.  http://kulturarvsdata.se/uu/srdb/a2932cd4-fa57-4453-9404-
+     7208cc93e5df. Accessed 2 September 2024.
+Scandinavian Runic-text Database. 2020b. Runic inscription DR EM85;128B. Department of Scandina-
+     vian Languages, Uppsala University. http://kulturarvsdata.se/uu/srdb/5a675f1f-c16e-4a48-b07b-
+     e2f637c198df. Accessed 2 September 2024.
+Scheer, Tobias. 1995. Halbechte Rektion in germanischem Wandel und althochdeutscher Brechung.
+     Linguistische Berichte 160:470–511.
+Scheer, Tobias. 2015. How diachronic is synchronic grammar?: Crazy rules, regularity, and naturalness. In
+     The Oxford handbook of historical phonology, ed. Patrick Honeybone and Joseph Salmons, 313–336.
+     Oxford: Oxford University Press.
+Shahin, Kimary. 2011. Pharyngeals. In The Blackwell companion to phonology, ed. Marc van Oostendorp,
+     Colin Ewen, Elizabeth Hume, and Keren Rice, 604–6275. Malden: Wiley-Blackwell. https://doi.org/
+     10.1002/9781444335262.wbctp0025.
+Takeuchi, Shoji, Hideaki Kasuya, and Kimio Kido. 1975. On the acoustic correlate of nasality. Journal of
+     the Acoustical Society of Japan 31:291–309.
+Terry, Kristen K., and Eric R. Webb. 2013. Modeling the emergence of a typological anomaly: Vowel
+     nasalization in French. In Proceedings of the 37th Annual Meeting of the Berkeley Linguistics Society,
+     eds. Chundra Cathcart, I-Hsuan Chen, Greg Finley, Shinae Kang, Clare S. Sandy, and Elise Stickles,
+     155–169. eLanguage. https://doi.org/10.3765/bls.v37i1.840
+Uffmann, Christian. 2011. The organization of features. In The Blackwell companion to phonology, vol. 1,
+     eds. Marc van Oostendorp, Colin Ewen, Elizabeth Hume, and Keren Rice, 643–668. Malden: Wiley-
+     Blackwell. https://doi.org/10.1002/9781444335262.wbctp0027
+Vennemann, Theo. 1972. Phonetic detail in assimilation: Problems in Germanic phonology. Language 48
+     (4): 863–892. https://doi.org/10.2307/411992.
+Voyles, Joseph B.. 1992. Early Germanic grammar: Pre-, proto-, and post-Germanic languages. San
+     Diego: Academic Press. https://doi.org/10.1163/9789004657236.
+Walker, Rachel. 2011. Nasal harmony. In The Blackwell companion to phonology, vol. 1, eds. Marc van
+     Oostendorp, Colin Ewen, Elizabeth Hume, and Keren Rice, 1838–1865. Malden: Wiley-Blackwell.
+     https://doi.org/10.1002/9781444335262.wbctp0078
+Wisniewski, Roswitha. 1963. Die Bildung des schwachen Präteritums und die primären Berührungsef-
+     fekte. Bgsl 85:1–17. https://doi.org/10.1515/bgsl.1963.1963.85.1.
+Yip, Moira. 1988. The obligatory contour principle and phonological rules: A loss of identity. Linguistic
+     Inquiry 19:65–100.
+Yip, Moira. 1998. Identity avoidance in phonology and morphology. In Morphology and its relation to
+     phonology and syntax, ed. Stephen G. Lapointe, Diane K. Brentari, and Patrick M. Farrell, 216–246.
+     Stanford: CSLI Publications.
+Zsiga, Elizabeth C. 2011. Local assimilation. In The Blackwell companion to phonology, vol. 1, eds. Marc
+     van Oostendorp, Colin Ewen, Elizabeth Hume, and Keren Rice, 1919–1944. Malden: Wiley-
+     Blackwell. https://doi.org/10.1002/9781444335262.wbctp0081
+
+
+
+
+Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps
+and institutional affiliations.
+
+
+
+123
