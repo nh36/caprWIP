@@ -18,11 +18,14 @@
   "primary_uncompressed_sha256": "6c266896be26a1d53ed6fa9d3331a3fce20b435aedef34abde4218bc68b2cefd",
   "bundle_sha256": {
     "INGESTION_MANIFEST.md": "8bf4de818568a973123a11f13f7ab41e86213e3e6f5bbc5fe1f8d4cda7b76ec8",
-    "REPORT.md": "698165831fd8de8ed2b87c9bb861a8ea8e9fd7dcc7bc2eb44b3b1524cc56c252",
+    "REPORT.md": "eaf03c993cae25c4441ac3158fbd69a69cc4b6bfd931a013ce6299dcec4d2354",
     "chronology.json": "75c49846b35fbe474cfee9becd93e8b9114d3c6e76da7c6654c139833deb3b1a",
     "chronology.py": "2850caf0905fbd26639e8590d8479386c1e7914fe8ebd9663e5982e1fedb81d3",
     "experiment.py": "20ca9fff60532fac07d572473b24f792e782ff933259dc7492fe16c1da0cfb92",
-    "experiments.json.gz": "65eadf9cbdefcb2df4fca31f2ca586c481aca35504fdaaf7bfd938cf76826218"
+    "experiments.json.gz": "65eadf9cbdefcb2df4fca31f2ca586c481aca35504fdaaf7bfd938cf76826218",
+    "COUNTEREVIDENCE_SUPPLEMENT.md": "6064bedb752fbca0d5f0b2b0ba37a218be628256ad63941ecdce6852848b3690",
+    "supplement_experiment.py": "8a65cf19f63db794489b07128aacadee2db7b6420595fad882890514f4b5b05b",
+    "supplement_experiments.json.gz": "934394fc6ca8312a39c91aaf3aed7394dc650a05befe09cc43f89d928b7b4d43"
   },
   "selected_rows": 387,
   "live_firing_ids": [
@@ -481,5 +484,320 @@
     "docker compose exec -T backend python3 /usr/app/docs/sound_changes/audits/sc015-a-ablaut-investigation/chronology.py /usr/app/docs/sound_changes/audits/sc015-a-ablaut-investigation/experiments.json /usr/app/docs/sound_changes/audits/sc015-a-ablaut-investigation/chronology.json",
     "python3 Germanic/tools/adjudicate.py SC015 --prepare",
     "python3 Germanic/tools/adjudicate.py SC015 --evidence"
-  ]
+  ],
+  "supplement": {
+    "date": "2026-10-16",
+    "base_commit": "ca1b3cd8c9a28d72b756ca4c5d8e90eb4bfc41e4",
+    "research_status": "RETAIN incumbent executable; DEFER replacement; restricted-z diagnostic is not an adopted historical rule",
+    "executed_driver_sha256": "241d1bd62b1cb88d3d4e51561ba96921ac5736e06fcaf552f6ef0972",
+    "post_run_editorial_corrections": "Only comments and lexical_probe_sources metadata changed after execution: schematic twizna/liznona/hina status and false dictionary attributions corrected, EWA citation key and supplement section pointer fixed. Inputs, definitions, recipes and measured outputs unchanged.",
+    "uncompressed_sha256": "58eb51843c3269a42643525ea102a36adbb009a6d153b49977ce2bf32e1e3a2a",
+    "selected_rows": 387,
+    "live_firing_ids": [
+      "2124",
+      "2137",
+      "2302"
+    ],
+    "baseline_mismatch_ids": [
+      "1973",
+      "2013",
+      "2030",
+      "2162",
+      "2224",
+      "2240",
+      "2298",
+      "2300"
+    ],
+    "canonical_protection": {
+      "count": 215,
+      "unchanged": true
+    },
+    "all_six_component_orders_equal_on_supplementary_inputs": true,
+    "variant_summary": [
+      {
+        "id": "incumbent",
+        "exact": 379,
+        "changed_final_ids": [],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2030",
+          "2162",
+          "2224",
+          "2240",
+          "2298",
+          "2300"
+        ],
+        "checkpoint_difference_ids": []
+      },
+      {
+        "id": "A-trad",
+        "exact": 371,
+        "changed_final_ids": [
+          "2014",
+          "2099",
+          "2100",
+          "2107",
+          "2108",
+          "2256",
+          "2315",
+          "2316"
+        ],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2014",
+          "2030",
+          "2099",
+          "2100",
+          "2107",
+          "2108",
+          "2162",
+          "2224",
+          "2240",
+          "2256",
+          "2298",
+          "2300",
+          "2315",
+          "2316"
+        ],
+        "checkpoint_difference_ids": [
+          "2014",
+          "2099",
+          "2100",
+          "2107",
+          "2108",
+          "2256",
+          "2315",
+          "2316"
+        ]
+      },
+      {
+        "id": "A-trad-nasal-cluster",
+        "exact": 368,
+        "changed_final_ids": [
+          "2014",
+          "2095",
+          "2099",
+          "2100",
+          "2107",
+          "2108",
+          "2256",
+          "2313",
+          "2314",
+          "2315",
+          "2316"
+        ],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2014",
+          "2030",
+          "2095",
+          "2099",
+          "2100",
+          "2107",
+          "2108",
+          "2162",
+          "2224",
+          "2240",
+          "2256",
+          "2298",
+          "2300",
+          "2313",
+          "2314",
+          "2315",
+          "2316"
+        ],
+        "checkpoint_difference_ids": [
+          "2014",
+          "2095",
+          "2099",
+          "2100",
+          "2107",
+          "2108",
+          "2256",
+          "2313",
+          "2314",
+          "2315",
+          "2316"
+        ]
+      },
+      {
+        "id": "A-trad-nasal-cluster-light",
+        "exact": 375,
+        "changed_final_ids": [
+          "2100",
+          "2107",
+          "2124",
+          "2137"
+        ],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2030",
+          "2100",
+          "2107",
+          "2124",
+          "2137",
+          "2162",
+          "2224",
+          "2240",
+          "2298",
+          "2300"
+        ],
+        "checkpoint_difference_ids": [
+          "2100",
+          "2107",
+          "2124",
+          "2137"
+        ]
+      },
+      {
+        "id": "B-hill-tauto",
+        "exact": 376,
+        "changed_final_ids": [
+          "2095",
+          "2313",
+          "2314"
+        ],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2030",
+          "2095",
+          "2162",
+          "2224",
+          "2240",
+          "2298",
+          "2300",
+          "2313",
+          "2314"
+        ],
+        "checkpoint_difference_ids": [
+          "2095",
+          "2250",
+          "2313",
+          "2314"
+        ]
+      },
+      {
+        "id": "C-RZS",
+        "exact": 376,
+        "changed_final_ids": [
+          "2095",
+          "2313",
+          "2314"
+        ],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2030",
+          "2095",
+          "2162",
+          "2224",
+          "2240",
+          "2298",
+          "2300",
+          "2313",
+          "2314"
+        ],
+        "checkpoint_difference_ids": [
+          "2095",
+          "2250",
+          "2313",
+          "2314"
+        ]
+      },
+      {
+        "id": "B-hill-z-obstruent",
+        "exact": 379,
+        "changed_final_ids": [],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2030",
+          "2162",
+          "2224",
+          "2240",
+          "2298",
+          "2300"
+        ],
+        "checkpoint_difference_ids": [
+          "2250"
+        ]
+      },
+      {
+        "id": "C-r-z-obstruent-no-st",
+        "exact": 378,
+        "changed_final_ids": [
+          "2137"
+        ],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2030",
+          "2137",
+          "2162",
+          "2224",
+          "2240",
+          "2298",
+          "2300"
+        ],
+        "checkpoint_difference_ids": [
+          "2137"
+        ]
+      },
+      {
+        "id": "skip",
+        "exact": 376,
+        "changed_final_ids": [
+          "2124",
+          "2137",
+          "2302"
+        ],
+        "mismatch_ids": [
+          "1973",
+          "2013",
+          "2030",
+          "2124",
+          "2137",
+          "2162",
+          "2224",
+          "2240",
+          "2298",
+          "2300",
+          "2302"
+        ],
+        "checkpoint_difference_ids": [
+          "2124",
+          "2137",
+          "2302"
+        ]
+      }
+    ],
+    "commands": [
+      "docker compose exec -T backend python3 /usr/app/docs/sound_changes/audits/sc015-a-ablaut-investigation/supplement_experiment.py /usr/app/docs/sound_changes/audits/sc015-a-ablaut-investigation/supplement_experiments.json",
+      "python3 Germanic/tools/check_bibliography_sanity.py",
+      "python3 Germanic/tools/adjudicate.py --refresh",
+      "python3 Germanic/tools/artifact_graph.py --check"
+    ],
+    "additional_online_sources": [
+      {
+        "key": "LloydLuhrSpringer1998",
+        "locator": "col. 784, driror",
+        "url": "https://ewa.saw-leipzig.de/articles/28300/de"
+      },
+      {
+        "key": "deVaan2016",
+        "locator": "unpaginated; Verwante vormen / Zowel paragraphs",
+        "url": "https://neerlandistiek.nl/2016/10/etymologie-tweern-twijn/"
+      },
+      {
+        "key": "Koebler2014",
+        "locator": "unpaginated; zwiro, zwiror, driror; source sigla only",
+        "url": "http://www.koeblergerhard.de/ahdwbhin.html"
+      }
+    ]
+  }
 }

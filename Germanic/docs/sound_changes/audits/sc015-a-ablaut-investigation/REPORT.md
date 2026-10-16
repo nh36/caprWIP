@@ -8,6 +8,15 @@ was changed. The earlier bundle
 as the historical record of the first (pre-*wether*-correction) round; this
 report supersedes its experimental figures but not its archival status.
 
+**Supplementary assessment, 16 October 2026.** Read
+[`COUNTEREVIDENCE_SUPPLEMENT.md`](COUNTEREVIDENCE_SUPPLEMENT.md) for the
+current research recommendation. It withdraws the unrestricted B/C adoption
+recommendation below: *twizna-* challenges the broad *z* component, the
+numeral adverbs remain conditional controls, *beðinn* corrects the Norse
+participle evidence, and a corrected nasal-plus-consonant A has now been
+tested. The historical experimental observations below are preserved.
+Production and the canonical verdict remain unchanged.
+
 | Item | Value |
 |---|---|
 | Base commit | `a4c4aa5a803d5c6004a3ea92220d798c5c91ad92` (`update`) |
@@ -338,7 +347,7 @@ the three live corpus witnesses are marked.
 **nest (live, 2137, `*nístą` → `nest`).** PIE *nisdós* > PGmc *nistaz*,
 but OE/OS/OHG *nest* "reconstruct" *nestaz??*, North and East Germanic
 lacking the noun [@Ringe2017, p. 121; @RingeTaylor2014, p. 34]. Kroonen
-*nista-* [@Kroonen2013, p. 431]; Orel *nistan* with Skt. *nīḍá-*, Lat.
+*nista-* [@Kroonen2013, p. 391]; Orel *nistan* with Skt. *nīḍá-*, Lat.
 *nīdus*, Lith. *lizdas* [@Orel2003, p. 287]. Environment: stressed *i*, *st*
 from PIE *sd*, following *a*. Both the traditional rule and Hill's *st*
 component predict *e*. It is the sole secure positive for *st*.
@@ -346,7 +355,7 @@ component predict *e*. It is the sole secure positive for *st*.
 **meed (live, 2124, `*mízdai` → `meorde`).** PIE *misdʰó-* > PGmc *mizdō*,
 OE *mēd ~ meord* [@Ringe2017, p. 121]; Kroonen explains WGmc *mēdō/miadō*
 by sporadic loss of *z* before dentals with OE retaining a doublet
-[@Kroonen2013, p. 410]; Orel *mizđō(n) ~ mēđō* [@Orel2003, p. 272]; later
+[@Kroonen2013, p. 370]; Orel *mizđō(n) ~ mēđō* [@Orel2003, p. 272]; later
 cluster history in Ringe–Taylor [@RingeTaylor2014, p. 85]. Hill's positive
 for tautosyllabic *z* [@Hill2017, p. 153]. Both traditional (following
 *ō/ai*) and Hill (*zd*) predict *e*. Discriminates only together with
@@ -354,7 +363,7 @@ for tautosyllabic *z* [@Hill2017, p. 153]. Both traditional (following
 
 **wer 'man' (probe `wiraz`; in corpus only via world).** PIE *wih₁rós* >
 PGmc *wiraz*, OE/OHG *wer* "irregular" lowering [@Ringe2017, p. 97];
-Kroonen *wira-* with Goth *wair*, ON *verr* [@Kroonen2013, p. 628]; Orel
+Kroonen *wira-* with Goth *wair*, ON *verr* [@Kroonen2013, p. 588]; Orel
 [@Orel2003, p. 463]; RT *wiraz* (*weraz??*) [@RingeTaylor2014, p. 34]. Hill's
 paradigm *r* case [@Hill2017, p. 156]. Both hypotheses predict *e*; Gothic
 *wair* is ambiguous because of breaking [@Hill2017, p. 156; @Howell2024,
@@ -364,7 +373,7 @@ pp. 76–82].
 *hē/her* from *hiz*, grouped with *mizdōn* [@Hill2017, p. 153]; for *hēr* he
 argues PGmc *hir > hẹr > hẹ̄r* before monosyllabic *-r* lengthening, yielding
 Goth *hēr*, ON *hér*, OHG *hiar*, OE *hēr* [@Hill2017, pp. 156–158]. Kroonen
-*hēra-* notes Goth *hiri* presupposes *hi-* [@Kroonen2013, p. 265]; Hill
+*hiar* notes Goth *hiri* presupposes *ki-r* [@Kroonen2013, p. 225]; Hill
 analyses *hiri* as *hi-ri* with a morpheme boundary [@Hill2017, pp. 157–158].
 *iz/hiz* are **not** following-*a* cases: a traditional rule cannot lower
 them without an additional assumption (the following vowel is absent or
@@ -381,14 +390,14 @@ It is excluded from the diagnostics.
 
 **world (live, 2302, `*wír-àldu` → `weorold`).** Orel *wira-aldiz*,
 explicitly "compound of *wiraz* and *aldiz*", with ON *verǫld*, OE *weorold*,
-OFris *warld*, OHG *weralt* [@Orel2003, pp. 501–502]. The first member is
+OFris *warld*, OHG *weralt* [@Orel2003, p. 462]. The first member is
 either inherited *wir-* (a parallel to *wiraz*) or already-established
 *wer-*. Because *wer* 'man' is secure independently, world adds no evidence
 beyond *wiraz*; it is a weak discriminant. Its role in CAPR is purely
 chronological (§8, §12).
 
 **fish, wisp, dish (negative controls).** Kroonen *fiska-* with Goth
-*fisks*, ON *fiskr*, Lat. *piscis* [@Kroonen2013, p. 182]; Orel
+*fisks*, ON *fiskr*, Lat. *piscis* [@Kroonen2013, p. 142]; Orel
 [@Orel2003, p. 103]. Hill emphasizes that *fiskaz* is an a-stem secured by
 Goth *fiskam, fiskans* and ON *fiska* with no lowering before *sk*
 [@Hill2017, p. 154]. Orel *wiskō* with ON *visk*, OE *wisc* [@Orel2003,
@@ -412,14 +421,14 @@ analogical restoration is assumed; neutral for Hill (single dental, no
 **nidana, hina.** Hill lists OHG *nidana*, OE *niðan, nioðan* and OHG *hina*,
 OE *hinan, hionan* as unlowered *i* before *a* [@Hill2017, p. 152]; Orel
 *niþanē*, *niþr(a)* [@Orel2003, pp. 287–288]; Kroonen *niþera-*
-[@Kroonen2013, p. 431]. The ON *neðan* a-umlaut variation is Norse-specific
+[@Kroonen2013, p. 391]. The ON *neðan* a-umlaut variation is Norse-specific
 and cannot be projected to WGmc [@Noreen1923, pp. 53–54; @Hill2017, p. 152
 n. 24]. Strong negatives against the traditional rule; neutral for Hill.
 
 **lid (`*xlídą`, live corpus row 2100, not an SC015 witness).** Lloyd's
 list of unchanged *i* includes OE *hlid*, OHG *(h)lit* [@Lloyd1966,
-p. 738]; cf. Kroonen *liþu-* [@Kroonen2013, p. 380], Orel [@Orel2003,
-p. 286]. Single *d* + *a*: a negative for the traditional rule, neutral for
+p. 738]; cf. Orel *xliđan* [@Orel2003, p. 176] (Kroonen has no
+lemma for this noun). Single *d* + *a*: a negative for the traditional rule, neutral for
 Hill. In CAPR it is protected only by the onset-velar guard (§9, §10).
 
 **irh- 'chamois leather'.** Hill notes OHG *irh* would contradict lowering
@@ -429,7 +438,7 @@ before *r* if inherited, as Kroonen assumes, but judges it probably a loan
 **learn (live corpus rows 2095 `*líznōjaną`, 2313 `*líznô`, 2314
 `*líznōθi`; targets *liornian, liorna, liornaþ*).** Kroonen *liznōn-* with
 OE *leornian*, OFris *lirna/lerna*, OS *līnōn*, OHG *lernōn/lernēn/lirnēn*
-[@Kroonen2013, p. 380]; Orel *liznōjanan ~ liznēnan* [@Orel2003, p. 286];
+[@Kroonen2013, p. 340]; Orel *liznōjanan ~ liznēnan* [@Orel2003, p. 247];
 Jasanoff's *liznaiþ(i)* and the *lizniþ* explanation of *lirnēn*
 [@Jasanoff1973, pp. 865, 868]; Scheungraber's rhotacism derivation
 [@Scheungraber2010, pp. 74–75]; Tarsi–Laker's lexical-semantic placement of
@@ -447,7 +456,7 @@ consequential probe for the executable comparison (§10).
 **nest-derivative, list, thistle (masking tests).** Hill treats OE/OHG
 *nistan*, *list* and *liornian/lirnēn* as forms whose *i* may result from
 later i-mutation after earlier lowering [@Hill2017, p. 153]; Kroonen *listi-*
-[@Kroonen2013, p. 379]; Orel *listiz* [@Orel2003, p. 246]; Orel
+[@Kroonen2013, p. 339]; Orel *listiz* [@Orel2003, p. 246]; Orel
 *þe(x)stilaz* for thistle [@Orel2003, p. 419]. These cannot discriminate
 unless the chronology of i-mutation is fixed; §12 tests whether CAPR's
 `OEIUmlaut` actually performs the recovery.
@@ -461,6 +470,12 @@ stratum and must not be folded into SC015.
 ---
 
 ## 7. The evidence of strong-verb participles and weak class III morphology
+
+**Correction, 16 October 2026:** the attested Norse participle of *bíða*
+is *beðinn*, not *biðinn*. The supplement §3 reassesses this evidence
+against Noreen pp. 326, 332, Seebold pp. 94–95 and Fulk pp. 58–59, 286;
+its §4 qualifies the earlier confidence in the reconstructed *learn*
+paradigm. The old experimental inputs and outputs remain unchanged.
 
 Two morphological systems carry disproportionate weight.
 
@@ -523,7 +538,7 @@ counterexample.
 Phonetics: no approximant rationale. Chronology: must precede the stage at
 which *z* is no longer recoverable — i.e. before monosyllabic final *z*-loss
 (which gives *ī*, not *ē*, if lowering has not applied; §12) and before the
-sporadic *z*-loss before dentals that produces *mēd* [@Kroonen2013, p. 410;
+sporadic *z*-loss before dentals that produces *mēd* [@Kroonen2013, p. 370;
 @RingeTaylor2014, p. 85]. Rhotacism is a different matter: once *z > r*, the
 *r*-component itself would lower *mird- > merd-* (§12), so the *z*
 component is strictly necessary only for word-final *z* (*iz, hiz*) where
@@ -787,7 +802,7 @@ component is **strictly required only for word-final *z***; preconsonantal
 *zd*/*zn* cases could in principle be handled by *r*-lowering after
 rhotacism — but that alternative would date the lowering of *mizdō* after
 rhotacism, contradicting *mēd* (z-loss variant without *r*) which shows *e*
-before *z* was lost [@Kroonen2013, p. 410]. The *z* component is therefore
+before *z* was lost [@Kroonen2013, p. 370]. The *z* component is therefore
 retained as a pre-rhotacism process.
 
 **12.4 i-mutation recovery.**
@@ -821,6 +836,12 @@ pretending to a chronology the evidence does not supply.
 
 ## 13. Comparative evaluation and recommended historical reconstruction
 
+**Historical assessment, superseded in part:** the supplement §§2–10
+withdraws “no secure counterexample”, the claim that the *z/st* domain is
+securely NWGmc, and the implication that only the *learn* paradigm blocks
+adoption. Its corrected traditional comparator replaces the any-nasal
+implementation for evaluation of that specific classical formulation.
+
 Evaluated on the four independent dimensions required by the brief.
 
 **A. Exact selected-target accuracy (387 rows).** Incumbent 379/387;
@@ -830,7 +851,7 @@ rows, all *learn*, where its advantage derives from *not* lowering before
 
 **B. Historically acceptable Old English outcomes.** Treating OE
 *leornian* as an attested, regular alternative to *liornian*
-[@Kroonen2013, p. 380; @RingeTaylor2014, pp. 38, 84], B/C produce 379/387
+[@Kroonen2013, p. 340; @RingeTaylor2014, pp. 38, 84], B/C produce 379/387
 acceptable outcomes — equal to the incumbent. Candidate A produces eight
 outcomes (*fesċ, leccian, hled, lefeþ, lefer, tecca …*) that are not
 attested in any Old English dialect: 371/387.
@@ -866,11 +887,15 @@ preceding-velar restriction operated in West Germanic.
 
 ## 14. Outstanding questions and the precise evidence needed to resolve them
 
+**Historical question list:** supplement §10 replaces this list for the
+current recommendation. In particular, *learn* is no longer considered the
+only obstacle to adopting B/C.
+
 1. **The *learn* selections (rows 2095, 2313, 2314).** Must *liornian* be
    derived regularly, or is *leornian* the regular form with *liornian*
    from a lost *-iþ/-ja-* cell (Jasanoff) or from i-mutation? Needed: a
    lexical adjudication of the three PROTOFORMs against Jasanoff 1973
-   pp. 865, 868, Ringe–Taylor pp. 38, 84, Kroonen p. 380, with an explicit
+   pp. 865, 868, Ringe–Taylor pp. 38, 84, Kroonen p. 340, with an explicit
    stage decision (Tarsi–Laker's WGmc-innovation dating, pp. 42–43). This
    is the *only* corpus obstacle to adopting B/C.
 2. **Monosyllabic lengthening.** The cascade contains no law producing
@@ -894,6 +919,12 @@ preceding-velar restriction operated in West Germanic.
 ---
 
 ## Verdict
+
+**Supersession notice, 16 October 2026:** this is the preceding research
+recommendation, not the current adoption proposal. The supplement §10
+recommends RETAIN executable / DEFER replacement. In particular, the exact
+broad-*z* patch below is no longer recommended for adoption; the narrower
+diagnostic tested in the supplement is not independently licensed either.
 
 A prospective, evidence-weighted recommendation; not an adopted registry
 verdict. The incumbent executable rule is **retained unchanged** for now,
@@ -1127,11 +1158,11 @@ Keys as in `docs/refs.bib`. Page references are printed pagination.
 - Howell, R. B. & J. C. Salmons. 1988/1997. "Umlautless Residues in Germanic." pp. 84–87. [@HowellSalmons1988]
 - Jasanoff, J. 1973. "The Germanic Third Weak Class." pp. 865, 868. [@Jasanoff1973]
 - Kostakis, A. 2025. "Early Germanic Coda Nasals." pp. 1–7. [@Kostakis2025]
-- Kroonen, G. 2013. *Etymological Dictionary of Proto-Germanic*. pp. 182, 265, 379, 380, 410, 431, 584, 628. [@Kroonen2013]
+- Kroonen, G. 2013. *Etymological Dictionary of Proto-Germanic*. pp. 142, 225, 339, 340, 370, 391, 584, 588. [@Kroonen2013]
 - Lloyd, A. L. 1966. "Is There an a-Umlaut of i in Germanic?" pp. 738–745. [@Lloyd1966]
 - Luick, K. 1914. *Historische Grammatik der englischen Sprache* I. pp. 104–105, 108–109. [@Luick1914]
 - Noreen, A. 1923. *Altnordische Grammatik* I. pp. 50–51, 53–54. [@Noreen1923]
-- Orel, V. 2003. *A Handbook of Germanic Etymology*. pp. 103, 246, 272, 286–288, 419, 459–460, 463, 501–502. [@Orel2003]
+- Orel, V. 2003. *A Handbook of Germanic Etymology*. pp. 103, 176, 246–247, 272, 287–288, 419, 459–460, 462–463. [@Orel2003]
 - Ringe, D. 2017. *From Proto-Indo-European to Proto-Germanic*. pp. 97, 121. [@Ringe2017]
 - Ringe, D. & A. Taylor. 2014. *The Development of Old English*. pp. 33–36, 38, 84–85, 135. [@RingeTaylor2014]
 - Scheungraber, C. 2010. *Die Nasalpräsentien im Germanischen*. pp. 74–75. [@Scheungraber2010]
