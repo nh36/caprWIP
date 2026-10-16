@@ -1,8 +1,8 @@
-# learn (iptv.2sg) — OE liorna
+# learn (iptv.2sg) — OE leorna
 
 PROTO: *liznōjaną
 PROTOFORM: *líznô
-COUNTERPART: liorna
+COUNTERPART: leorna
 DERIVATION_CLASS: late_analogy
 
 ### Transducer input and output
@@ -12,51 +12,49 @@ DERIVATION_CLASS: late_analogy
 | lexical item | learn (iptv.2sg) |
 | citation reconstruction / lexeme label | *liznōjaną |
 | selected input form | *líznô |
-| Old English target | liorna |
+| Old English target | leorna |
 | classification | late_analogy |
-| documented output | *líznô -> liorna |
+| documented output | *líznô -> leorna |
 
-### Reconstruction and comparative evidence
+### The imperative singular
 
-Ringe and Taylor give Old English [`liornian`]{.iv lang=oe sort=liornian role=comparison_form} 'learn' and
-[`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn' from a learn-family base of the
-`*lizn-` type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb
-as `*liznōn-` [@Kroonen2013, 380]. Fulk cites the same Old English family from
-`*liznō-` [@Fulk2018, 127].
+Old English [leorna]{.iv lang=oe sort=leorna role=target_form}
+'learn!' is the second-person singular imperative,
+not an abbreviated infinitive. Deuteronomy14:23
+prints the command followed by *þæt þu ondræde
+Drihten* 'that you fear the Lord'. The addressee
+is singular, and the form is read directly in the
+edited biblical text [@Crawford1922, p. 351].
 
-The selected input [líznô]{.iv .recon lang=pgmc sort=lizno role=selected_input} 'learn (iptv.2sg)' is a finite imperative
-cell of that family, not the citation form of the verb.
+The selected input
+[líznô]{.iv .recon lang=pgmc sort=lizno role=selected_input}
+'learn!' is the imperative cell, distinct from the
+lexeme-level infinitive label. The inherited
+\emph{*lizn-} family is supported by the comparative
+dictionaries; its historical weak class III
+formation and later remodelling remain uncertain
+[@Kroonen2013, p. 340; @Orel2003, p. 247;
+@Jasanoff1973, pp. 865, 868].
 
-### Old English evidence
+Under [SC015 PNWGmcILowering](#rule-PNWGmcILowering),
+lowering before preconsonantal \emph{*z} produces
+\emph{*léznô}; rhotacism gives \emph{*lérnô},
+and English breaking and ending reduction lead
+to *leorna*. The companion infinitive *leornian*
+and present third singular *leornaþ* are different
+cells of the same family. Their agreement does
+not multiply the independent etymological
+evidence [@Hill2017, p. 153;
+@Crawford1922, pp. 71, 351; @Miller1891, p. 380].
 
-Clark Hall gives the ordinary headword as `leornian` [@ClarkHall1960, 186].
-Brunner explicitly records `leornian, nordh. auch liorna`, and Campbell notes
-Northumbrian forms with `io` beside `leornian`
-[@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
-
-[`Liorna`]{.iv lang=oe sort=liorna role=target_form} can therefore be treated as an
-attested Northumbrian finite form, while [`leornian`]{.iv lang=oe sort=leornian role=comparison_form}
-'learn' remains the better-known dictionary headword.
-
-### Development to Old English
-
-The selected form develops regularly as [líznô]{.recon} 'learn' > [lírnô]{.recon} 'learn' by rhotacism, then
-[líornô]{.recon} 'learn (iptv.2sg)' by breaking before `rn`, and finally
-[líorna]{.recon} 'learn' > `liorna` by late shortening of the unstressed long vowel.
-
-Campbell's Northumbrian `io` evidence and Ringe and Taylor's explicit statement
-that no form of `liornian` stood in an i-umlauting environment support this
-stem shape [@Campbell1959, §123 n. 2; @RingeTaylor2014, 247]. The
-West-Saxon-looking `eo` forms belong to a different dialectal presentation of
-the same family.
-
-### Paradigm comparison
-
-The comparison below is manual. It distinguishes the selected imperative cell
-from the learn-family infinitive and from the companion 3sg form.
-
-| PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [`*liznōjaną`]{.iv lang=pgmc sort=liznojana role=source_protoform} | Northumbrian [`liornian`]{.iv lang=oe variety=north sort=liornian role=comparison_form} 'learn'; dictionary headword often [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | [`liornian`]{.iv lang=oe variety=north sort=liornian role=comparison_form} 'learn' / [`leornian`]{.iv lang=oe sort=leornian role=comparison_form} 'learn' | family background, but not the selected cell |
-| selected imperative singular | [`*líznô`]{.iv lang=pgmc sort=lizno role=selected_input} | trace output and Brunner's Northumbrian [`liorna`]{.iv lang=oe variety=north sort=liorna role=regular_output} | [`liorna`]{.iv lang=oe sort=liorna role=target_form} | exact match |
-| 3sg present companion | [`*líznōθi`]{.iv lang=pgmc sort=liznothi role=comparison_form} | related finite form [`liornaþ`]{.iv lang=oe sort=liornath role=comparison_form} | [`liornaþ`]{.iv lang=oe sort=liornath role=comparison_form} | useful control, but not the target |
+The attested alternative [liorna]{.lex lang=oe}
+'learn!' remains relevant to the *liorn-/leorn-*
+distribution. Mutation in an earlier paradigm,
+later levelling and dialect history must be
+considered rather than identifying every high
+vowel as unchanged inheritance. The retained
+family classification marks conjugational
+remodelling, not finite-cell selection or an
+extra replacement needed for this imperative
+[@Campbell1959, pp. 48, 59, 125;
+@Jasanoff1973, pp. 865, 868].

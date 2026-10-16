@@ -1,5 +1,15 @@
 # Research memo — 2313 learn (iptv.2sg) / liorna
 
+## Superseded selected-target recommendation: 16 October 2026
+
+The authorized selection is `leorna`, imperative2sg, directly verified
+in Crawford1922 p.351 (Deut14:23). The inherited PROTOFORM `*líznô`
+and the finite row's remodelling classification remain unchanged.
+The old *liorna* selection is retained as an attested alternative.
+All current-policy and trace statements below describe the earlier
+state. See [SC015's adoption](../../sound_changes/audits/sc015-adjudication.md)
+and the [primary record](../../sound_changes/audits/sc015-adoption/learn-attestations.md).
+
 ## Starting point
 
 - **ID:** 2313

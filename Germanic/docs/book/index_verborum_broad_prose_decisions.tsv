@@ -100,11 +100,10 @@ accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:4
 accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:47	*hlahtraz	pgmc		comparison_form	related PGmc noun cited as comparison evidence
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:46	*neahti	preoe		comparison_form	intermediate model-stage form in the night development chain
 defer	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33	*nihtmare	pgmc		comparison_form	unattested compound label kept for review only
-defer	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:52	*wér-uldu	preoe		comparison_form	intermediate compound stage in the world development chain
+defer	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:66	*wér-uldu	preoe		comparison_form	intermediate compound stage in the world development chain
+defer	Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:94	*lizniþ	pgmc		source_protoform	Jasanoff1973 p.868 conditional lost third-singular proposal, not the selected cell or recovered paradigm.
 ignore	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53	Mönch				German translation gloss in Brunner citation, not a comparison form for this entry
 ignore	Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53	Jugend				German translation gloss in Brunner citation, not a comparison form for this entry
-defer	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:44	*líornô	preoe		comparison_form	Intermediate reconstructed stage retained for derivational exposition.
-defer	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:52	*líornōθ	preoe		comparison_form	Intermediate reconstructed stage retained for derivational exposition.
 defer	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:31	strēzan	oe		comparison_form	Anglian comparative form retained as contextual evidence, not promoted to main index.
 defer	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33	*saiui	pgmc		comparison_form	comparative headword variant cited in same entry
 defer	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:39	*sāwiz	pwgmc		comparison_form	intermediate development stage in the sea derivation chain
@@ -122,8 +121,6 @@ ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:82	cl
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:69	PNWGmcMnDissimilation				FST rule name; not a lexical form (updated line reference)
 ignore	Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29	aw+j				Phonological cluster notation (aw+j); not a lexical form
 ignore	Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:85	cluster				English linguistic term 'cluster' (phonological); not Germanic lexical form
-defer	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:45	*líorna	pgmc		source_protoform	Pre-OE development stage for learn iptv; deferred
-defer	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:53	*líornaθ	pgmc		source_protoform	Pre-OE development stage for learn 3sg; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46	*mákōθ	pgmc		source_protoform	Pre-OE development stage for make 3sg; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49	*næxti	pgmc		source_protoform	Intermediate night dev stage; deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:45	*neahti	pgmc		source_protoform	Intermediate night dev stage; deferred

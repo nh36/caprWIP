@@ -1,5 +1,17 @@
 # Source extraction ledger — learn / liornian
 
+## Current decision: 16 October 2026
+
+SC015's authorized adoption selects `leornian`, preserving both inherited
+`*líznōjaną` fields. Crawford1922 p.71 supplies the actual infinitive
+after `scealt`. Campbell1959 pp.48,59,125 documents a more complex
+*liorn-/leorn-* distribution than the categorical dialect story below.
+The original ledger is retained as pre-adoption research, not current
+target or trace authority. Kroonen's actual learn entry is printed340,
+not PDF sheet380. See
+[the primary attestation record](../../sound_changes/audits/sc015-adoption/learn-attestations.md)
+and [the canonical adjudication](../../sound_changes/audits/sc015-adjudication.md).
+
 This ledger records the evidence gathered before drafting the compact book-style
 entry.
 

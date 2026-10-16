@@ -61,10 +61,11 @@ CARD_INDEX = (SC_DIR / "order_tests/chronology_cards"
 # test_sc034_output_adoption protects the exact delta and earlier archives.
 # SC017 rust_input changes only rust's three input fields, never its output.
 # SC015 wether_input likewise selects the masculine u-stem without changing finals.
+# The separate SC015 rule/target adoption changes only the three learn finals.
 EXPECTED_OUTPUTS_SHA256 = (
-    "32d551ca5bc6317a6e528f00259159915599c6e08d265af170e2be7341edb522")
+    "e495ab40d4fb34f2117c6d8590ee11e18166271e01712755b99507bf9933aef2")
 EXPECTED_LEGACY_SUBSET_SHA256 = (
-    "3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f")
+    "43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce")
 EXPECTED_ROW_COUNT = 387
 
 
@@ -290,15 +291,15 @@ class NoDuplicateStageListTests(unittest.TestCase):
 class OutputIdentityTests(unittest.TestCase):
     """The refactor must not change corpus outputs (semantic fingerprints)."""
 
-    def test_semantic_fingerprints_match_approved_sc034_output_transition(self):
+    def test_semantic_fingerprints_match_approved_sc015_target_transition(self):
         summary = json.loads(
             (BASELINE_DIR / "cascade_baseline_summary.json").read_text(
                 encoding="utf-8"))
-        text = json.dumps(summary)
-        self.assertIn(EXPECTED_OUTPUTS_SHA256, text,
-                      "corpus fingerprint differs from the approved scientific baseline")
-        self.assertIn(EXPECTED_LEGACY_SUBSET_SHA256, text)
-        self.assertIn(str(EXPECTED_ROW_COUNT), text)
+        self.assertEqual(summary["lexical_outputs_sha256"], EXPECTED_OUTPUTS_SHA256)
+        self.assertEqual(summary["outputs_sha256"],
+                         "b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb")
+        self.assertEqual(summary["legacy_subset_sha256"], EXPECTED_LEGACY_SUBSET_SHA256)
+        self.assertEqual(summary["total_lexemes"], EXPECTED_ROW_COUNT)
 
 
 class NoIndependentOrderParserTests(unittest.TestCase):

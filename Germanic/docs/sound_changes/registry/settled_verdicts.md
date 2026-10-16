@@ -6,6 +6,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC | Display name | Lifecycle | Verdict | Memo |
 | --- | --- | --- | --- | --- |
 | SC004 | English stressed ai contraction | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc004-adjudication.md` |
+| SC015 | Northwest Germanic consonant-conditioned I Lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc015-adjudication.md` |
 | SC016 | OE Ws Palatal Glide | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc016-017-adjudication.md` |
 | SC017 | Proto-Northwest Germanic U Lowering | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc017-sc019-adoption.md` |
 | SC019 | Proto-Northwest Germanic Final Long O Raising | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc017-sc019-adoption.md` |

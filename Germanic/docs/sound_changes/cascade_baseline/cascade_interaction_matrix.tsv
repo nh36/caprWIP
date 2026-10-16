@@ -57,11 +57,11 @@ PNWGmcLongELowering	PWGmcSurvivingBimoricOUnrounding	yes
 PNWGmcLongELowering	SieversLawSyncope	yes
 PNWGmcILowering	PWGmcEarlyIApocope	yes
 PNWGmcILowering	PWGmcFinalOrLowering	yes
-PNWGmcILowering	PWGmcCoronalWAssimilation	yes
+PNWGmcILowering	PWGmcCoronalWAssimilation	no
 PNWGmcILowering	OEWWSimplification	yes
 PNWGmcILowering	PWGmcIjContraction	yes
 PNWGmcILowering	PWGmcJGemination	yes
-PNWGmcILowering	PWGmcSyllabicJ	yes
+PNWGmcILowering	PWGmcSyllabicJ	no
 PNWGmcILowering	PNWGmcPreconsonantalXLoss	no
 PNWGmcILowering	PWGmcDentalHardening	yes
 PNWGmcILowering	EAFFinalZDeletion	yes

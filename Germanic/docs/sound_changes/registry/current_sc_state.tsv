@@ -25,7 +25,7 @@ SC028	PNWGmcPreconsonantalXLoss	historical_sound_change	Northern West Germanic	N
 SC012	EAFLThVoicing	historical_sound_change	Northern West Germanic	Northern West Germanic *lþ*-voicing	eaf	north_wgmc	B	unadjudicated		16	14
 SC013	PWGmcDentalHardening	historical_sound_change	Proto-West Germanic developments	PWGmc Dental Hardening	pwgmc	pan_wgmc	A	unadjudicated		17	15
 SC111	PWGmcEndinglessAw	support_stage	Proto-West Germanic developments	Endingless-aw regular-branch fragment				unadjudicated		18	16
-SC015	PNWGmcILowering	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic I Lowering	pnwgmc	pan_pnwgmc	A	unadjudicated		19	17
+SC015	PNWGmcILowering	historical_sound_change	Northwest Germanic developments	Northwest Germanic consonant-conditioned I Lowering	pnwgmc	pan_pnwgmc	B	adjudicated	REFORMULATE	19	17
 SC017	PNWGmcULowering	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic U Lowering	pnwgmc	pan_pnwgmc	A	adjudicated	REFORMULATE/RETAIN	20	18
 SC018	PNWGmcStressedMonosyllableORaising	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic Stressed Monosyllable O Raising	pnwgmc	pan_pnwgmc	B	unadjudicated		21	19
 SC019	PNWGmcFinalLongORaising	historical_sound_change	Northwest Germanic developments	Proto-Northwest Germanic Final Long O Raising	pnwgmc	pan_pnwgmc	A	adjudicated	REFORMULATE/RETAIN	22	20

@@ -1,246 +1,275 @@
-# SC015 supplementary wether-input decision
+# SC015: adoption of consonant-conditioned short-*i* lowering
 
 ## Identity
 
-- SC id: SC015; executable identifier: `PNWGmcILowering`.
-- Branch/base: `update`, `695609f33ebd039c46a1c53bad173699b7b7fcef`.
-- This is the user's explicitly authorized lexical selection for Old English
-  row 2283, not a historical adjudication of SC015. The existing registry
-  remains unadjudicated, with empty verdict and memo fields. Its historical
-  metadata, rule, conditions, order and chronology relations are unchanged.
-- The standard strict input-adoption interface requires this SC-numbered memo
-  path. That technical association does not confer a sound-law verdict.
+- SC015; stable executable `PNWGmcILowering`.
+- 16 October 2026, `update`, base
+  `23c146eddd2d9f7527a05363b6768e352eddeb54`.
+- Explicit user authorization adopts Candidate B, three independently
+  verified *leorn-* selections, strict baseline migration and publication.
+- The preceding lexical decision is preserved byte-for-byte in
+  [the wether-input memo](sc015-wether-input-adjudication.md).
+  Earlier approvals referencing this canonical path refer to that
+  preserved lexical decision, not to permission for this later rule change.
 
 ## Question
 
-Does the comparative evidence support masculine nominative singular PGmc
-*weþruz, CAPR *wéθruz, instead of the selected *wíθrą? Gothic wiþrus,
-masculine cognates and an explicitly attested reconstructed nominative would
-support it; missing u-stem evidence or an incompatible complete derivation
-would require reconsideration. Output convergence cannot choose between
-the source-supported u- and a-stems.
+Does the selected unified lowering before preconsonantal/final *z*, *st*
+and inherited *r* execute as previously tested, changing only the three
+*learn* finals and thistle's concealed intermediate history? Additional
+final drift, missing outputs or changed mismatch membership would refute
+that implementation claim. Adoption is a working scientific choice, not
+a claim that known comparative counterevidence has been resolved.
 
 ## Current state (before any edits)
 
-Both reconstructed fields of row 2283 were *wíθrą; target weþer and class
-regular. The shared representations in cognate set 307 were identical for
-German 1119, English 1120 and Dutch 1121. Those are shared etymological
-fields, not permission to alter daughter-language forms or research their
-runtime cascades. Weather 2280 is a different etymon and remains unchanged.
+Northwest Germanic / `pnwgmc`, `pan_pnwgmc`, confidence A, unadjudicated.
+The incumbent lowers first-syllable short *i/í* before a following non-high
+vowel across one or more nonnasal coronals, excluding any preceding velar
+in the word-initial interval. Its physical position is retained (parsed
+position 17; tracer snapshot 18, including its input tier).
 
-The selected corpus has 387 runnable rows, six additional research-only OE
-rows, 379 matches and eight mismatches: 1973, 2013, 2030, 2162, 2224, 2240,
-2298, 2300. There are no rejected or ambiguous selections.
+FST SHA256:
+`6c33b3c723150b61de4a41c89e228f32eeceb8280114b573e182eb8baf6ff51f`;
+corpus SHA256:
+`1fd8ec257581a54603b59835a46ca764ee2ba0f438c9b497b874a58ee2fe8f73`.
+Selected387 fingerprint:
+`3caa0d07ba4f63c7ba512a22e48a7be86f975e573ae01d7cbea830eb08d4b1e0`;
+active original380:
+`3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f`;
+lexical projection:
+`32d551ca5bc6317a6e528f00259159915599c6e08d265af170e2be7341edb522`.
+The immutable original380 archive remains
+`fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.
 
-The SC015 registry records `pnwgmc/pan_pnwgmc`, confidence A, unadjudicated.
-The unchanged rule lowers first-syllable i/í before one or more permitted
-coronals and a following non-high vowel, excluding preceding velars. Its
-derived position is 17; executable position is not historical dating evidence.
-The stressed clause is `{*í} -> {*é} || .#. EnglishStarNonVelarConsonant* _
-EnglishStarCoronal+ EnglishStarNonHighVowel`; the unmarked i clause is parallel.
-The existing Hill investigation and current reader supply the qualified
-historical analysis; this lexical correction does not reopen it.
+All 387 inputs have one output: 379 matches, eight mismatches, IDs
+1973, 2013, 2030, 2162, 2224, 2240, 2298, 2300.
+Wether retains masculine `*wéθruz`; *world* retains the mixed-stage
+transponent `*wír-àldu`. No inherited *lizn-* input or selected context
+is changed. Historical experiments and their original conclusions remain
+in the two SC015 investigation directories.
 
 ## Diagnosis
 
-Fresh `SC015 --prepare` and `--evidence` established every pre-adoption live
-application, not just the disputed noun:
+The pre-edit `--evidence` census is exhaustive:
 
-| Row | Input | Immediately before → after SC015 | Final |
+| ID | Selection | Before | After |
 | --- | --- | --- | --- |
-| 2124 meed | *mízdai | *m*í*z*d*ē → *m*é*z*d*ē | meorde |
-| 2137 nest | *nístą | *n*í*s*t*ą → *n*é*s*t*ą | nest |
-| 2283 wether | *wíθrą | *w*í*θ*r*ą → *w*é*θ*r*ą | weþer |
-| 2302 world | *wír-àldu | *w*í*r*à*l*d*u → *w*é*r*à*l*d*u | weorold |
+| 2124 | meed, dative | `*m*í*z*d*ē` | `*m*é*z*d*ē` |
+| 2137 | nest | `*n*í*s*t*ą` | `*n*é*s*t*ą` |
+| 2302 | world | `*w*í*r*à*l*d*u` | `*w*é*r*à*l*d*u` |
 
-The first, second and fourth remain live applications. New wether is an
-inherited-e negative, not an exemption added to the rule. World's existing
-conditional SC015–SC036 relation is neither tested anew nor promoted here.
+These are applications, not three independent proofs of chronology.
+The compiled adopted cascade has this complete seven-selection census:
 
-`wether-input-trials.py` and its deterministic gzip receipt record both
-source-supported input-only alternatives against the exact pre-adoption
-source and corpus hashes. Each protected isolated complete wrapper reproduces
-all 387 canonical finals. All 107 named canonical checkpoints are compared
-for every row, using provenance-checked snapshot bins: the laws are identical,
-so recompiling every prefix is unnecessary. Every checkpoint of the other
-386 selections is unchanged. Both alternatives retain the same eight
-mismatches, without rejection, ambiguity or protected-artifact mutation.
-
-| Checkpoint | Former input | Selected u-stem | Alternative a-stem |
+| ID | Selection | Immediately before SC015 | Immediately after SC015 |
 | --- | --- | --- | --- |
-| Input | *wíθrą | *wéθruz | *wéθraz |
-| SC015 lowering | *wéθrą | *wéθruz, unchanged | *wéθraz, unchanged |
-| SC020 final z loss | *wéθrą | *wéθru | *wéθra |
-| SC041 bare a loss | *wéθrą | *wéθru, unchanged | *wéθr |
-| SC047 nasal apocope | *wéθr | *wéθru, unchanged | *wéθr, unchanged |
-| SC063 high-vowel loss | *wéθr, unchanged | *wéθr | *wéθr, unchanged |
-| Epenthesis | *wéθer | *wéθer | *wéθer |
-| Native orthography | weþer | weþer | weþer |
+| 2095 | learn infinitive | `*l*í*z*n*ō*j*a*n*ą` | `*l*é*z*n*ō*j*a*n*ą` |
+| 2124 | meed dative | `*m*í*z*d*ē` | `*m*é*z*d*ē` |
+| 2137 | nest | `*n*í*s*t*ą` | `*n*é*s*t*ą` |
+| 2250 | thistle | `*θ*í*s*t*i*l*a*s` | `*θ*é*s*t*i*l*a*s` |
+| 2302 | world transponent | `*w*í*r*à*l*d*u` | `*w*é*r*à*l*d*u` |
+| 2313 | learn imperative2sg | `*l*í*z*n*ô` | `*l*é*z*n*ô` |
+| 2314 | learn present3sg | `*l*í*z*n*ō*θ` | `*l*é*z*n*ō*θ` |
 
-The u-stem differs from the former path at 71 named checkpoints, converging
-at SC063. The a-stem differs at 55, converging at SC047. The complete receipt
-retains every state, including unchanged ones. Only four application statuses
-change for the adopted u-stem: SC015 −1, SC020 +1, SC047 −1, SC063 +1.
-No other rule gains or loses a live application as a result of this selection.
+The three *learn* cells share an etymology; thistle is a mutation-masked
+positive, later returning to `*θ*i*s*t*i*l*æ*s` at OEIUmlaut.
+These seven applications represent five lexical families.
+Fish, participles, *nidana* and lid are negative controls. Twine is a
+disputed comparative prediction, not a validated target.
 
-The first attempt to compile all prefixes redundantly exceeded the existing
-600-second compiler limit; it made no canonical change and is not a failed
-historical prediction. The completed input-only assay instead uses the same
-protected full-wrapper control plus all existing, provenance-checked prefixes.
+The immutable `sc015-adoption/before.json.gz` and `after.json.gz` receipts
+record all387 selections at all107 named checkpoints. Exactly2095,
+2313,2314 and2250 have changed intermediate histories; exactly the three
+learn cells change final output. The measured match counts are
+379 (incumbent/original targets),376 (adopted rule/original targets),
+379 (adopted rule/authorized targets). No selection is rejected or ambiguous;
+all other384 finals and the eight mismatch identities are unchanged.
 
 ## Literature
 
-- Kroonen (2013, p. 584), original sheet 624: *weþru-; masculine Gothic
-  wiþrus 'lamb, young ram', ON veðr 'ram', OE weðer, OS withar and OHG widar.
-  The printed headword label “adv.” is anomalous and retained in diplomatic
-  evidence, not silently corrected into a quotation. The connection with
-  the PIE year root is expressly conditional; if correct, the original
-  meaning was 'yearling, one-year-old animal'.
-- Orel (2003, pp. 459–460), original sheets 498–499: explicitly
-  *weþruz ~ *weþraz, masculine; Norse retains u-stem traces. The year
-  etymology is asserted more affirmatively, with Hittite, Greek and Albanian
-  year comparanda. The complete nominative is printed, not assembled from
-  Kroonen's citation stem and an unacknowledged ending.
-- Kluge–Seebold (2011, 25th edition, pp. 985–986), original sheets
-  1056–1057, edition verified on sheets 4–5: masculine *weþru-, or a similar
-  formation. The year connection is conditional, the Latin calf comparison
-  phonologically difficult, and an alternative sheep-root account is noted.
-  No noun-specific, settled OHG raising chronology is supplied.
-- Bosworth–Toller (1898, main dictionary p. 1212), actual entry and printed
-  facsimile at `https://bosworthtoller.com/35485`: weþer, es; m., 'a wether,
-  a ram', hence genitive weþeres. The locally held PDF is the separately
-  catalogued Supplement, not a verified original of this main-volume page.
-- Fulk (2018, p. 59): Gothic short e/i merger; p. 69: continental
-  u-conditioned raising with failures; pp. 91–92: final sonorant
-  vocalization and high-vowel loss; p. 163: heavy u-stems and
-  inflectional reclassification. The general continental development is
-  not promoted into a completely demonstrated history of every wether cell.
+Consulted the existing Hill investigation, A-Ablaut report and
+counterevidence supplement, the routed 014–015 dossiers and their retained
+originals. Core anchors: Hill2017 pp.149–158; Lloyd1966 pp.738–745;
+Cercignani1979 pp.72–82 and 1980 pp.126–134; RingeTaylor2014 pp.33–37;
+Fulk2018 pp.55–59; Campbell1959 pp.43–44 §§114–116.
+Component-specific evidence includes Jasanoff1973 pp.865,868;
+Howell2024 pp.81–82,90–91; KlugeSeebold2011 p.1021;
+Orel2003 p.414; Kroonen2013 p.530; Noreen1923 pp.326,332.
+De Vaan2016 is unpaginated and identified by paragraph anchors in the
+supplement. No private correspondence is used as published authority.
 
-The Gothic and Norse lexical forms were checked in the original comparative
-dictionaries, not falsely attributed to independent newly consulted lexica.
-Masculine Norse veðr 'ram' is separate from neuter veðr 'weather'.
-The lexical source ledger records the full source and page provenance.
-The existing reconstruction survey, its tranche-44 evidence and the frozen
-SC015 report (especially its wether section) were consulted and reconciled.
+The comparative preference is consonantal: it accounts for *wer*, the
+reward family and *nest*, while preserving *sk*, ordinary class-I
+participles and non-rhotic adverbs without unspecified universal analogy
+(Hill2017 pp.153–158; Lloyd1966 pp.740–745). It does not discharge
+*twizna-* or every *beðinn* history (supplement, source-verified sections
+2–4). The traditional vowel-conditioned rule is rejected as a general
+early exceptionless law, not because its numerical fit is worse.
+The incumbent adds a West Germanic onset-velar prohibition unsupported
+by the Norse restriction cited for it (Cercignani1980 pp.129–131), and an
+arbitrary all-coronal transparency domain. Lid needs neither under the
+selected immediate consonantal rule.
 
 ## Historical analysis
 
-Both selected reconstructed fields are the masculine nominative singular at
-the Proto-Germanic stage. No exceptional entry-stage sidecar is needed because
-PROTO and PROTOFORM agree. Confidence and historical stage remain independent.
-Gothic wiþrus positively supports an older u-stem; its i does not establish
-inherited i because Gothic raised short e. The West Germanic masculine
-paradigm can reflect reclassification and does not require an inherited a-stem.
+Stage and scope remain `pnwgmc/pan_pnwgmc`: a qualified Northwest Germanic
+working placement, not a date inferred from the identifier. The *r*
+component has the strongest positive and phonetic case; *z* has substantial
+positive evidence but serious twine counterevidence; *st* rests principally
+on nest (Hill2017 pp.153–158; Howell2024 pp.81–82).
+Hill's *hir > her > hēr* ordering argument dates *r*-lowering only
+conditionally on his monosyllabic-lengthening reconstruction
+(Hill2017 pp.156–158). It does not independently date *z* or *st*.
 
-CAPR theta and acute stress are transcription conventions. The endpoint
-derivation verifies the complete nominated cell, including loss of z and u
-and subsequent epenthesis; its success is not the reason for preferring it.
-The a-stem is legitimate but has less positive evidence for original
-inflection here. Its exact remodelling date and the deeper year etymology
-remain unresolved. No new historical edge, stage assignment or independence
-claim about dialectal lowering is made.
+The executable models stressed first nuclei using a consonant-only onset;
+it handles plain and acute short *i*, never long *ī*. Preconsonantal/final
+*z* approximates tautosyllabicity, not an independently proved
+syllabification of every *zn*. No lexical exception or sonorant exclusion
+is licensed. Original *r* and rhotacized *r* must not be equated: retaining
+the present position before rhotacism keeps their contributions distinct.
+
+Remove the canonical SC015–SC036 independently-demonstrated edge.
+Its old *world* result depends on the rejected following-vowel condition:
+interstress raising removed that trigger. Candidate B lowers before *r*
+on either side of SC036; an already *wer-* input also removes the old
+dependency (A-Ablaut investigation, `chronology.json`).
+The archived chronology card and experimental receipts retain that
+conditional observation. The runner-limited PWGmcChanges boundary
+remains a boundary observation, not a historical before-edge.
+No new strict historical edge or executable reorder is adopted.
 
 ## Verdict
 
-ADOPT the authorized lexical reconstruction and selected nominative
-*wéθruz; RETAIN every production law, context and order. This is not an SC015
-historical verdict, so there is deliberately no machine-readable
-`Registry-verdict:` declaration. SC015 remains unadjudicated in its existing
-registry. The positive u-stem evidence, not a model score, chooses the input;
-the alternative *wéθraz remains in the research record and book.
+REFORMULATE historical characterization and executable conditioning;
+retain identifier, executable position and qualified stage/scope.
+
+Registry-verdict: SC015=REFORMULATE
+
+Confidence B replaces A: this is a source-supported working reconstruction
+with substantive unresolved counterevidence, not an exceptionally secure
+unified law. The environments remain separately assessed without
+inventing separately positioned rules. Explicit adoption supersedes
+earlier RETAIN/DEFER recommendations, not their observations.
 
 ## Propagation (only after verdict)
 
-Exactly PROTO and PROTOFORM change on rows 1119, 1120, 1121 and 2283; every
-other corpus field, daughter target, class and sidecar is preserved. The new
-regular-class `.model.md` is selected through the existing combined-book
-class manifest and independently certified through `editorial_cases.tsv`
-for the complete derivation report. It adds only wether, not a new assembly
-route or unrelated entry. The book contains historical argument only.
+The three target selections are a separate lexical decision supported by
+[the primary attestation record](sc015-adoption/learn-attestations.md):
+leornian2095, leorna2313, leornaþ2314. All PROTO/PROTOFORM fields stay
+byte-identical. TOKENS change i to e; finite IPA fields change consistently,
+while infinitive IPA `lɜːn` is a Modern English comparison and stays
+untouched. Existing ALIGNMENT fields retain their independent comparison
+values. Stable IDs, cognate/gloss IDs and all non-OE records are preserved.
 
-Current survey coverage, comparison and commentary supersede the unsupported
-selected-input conclusion without altering source-native forms, analyses,
-consultation identities or original tranche-44 receipts. The old SC015
-investigation and all its experimental receipts remain byte-identical
-historical research; the current reader identifies three live applications.
+The inherited `late_analogy` class of the finite rows is retained for the
+family's weak-class remodelling (Jasanoff1973 pp.865,868;
+TarsiLaker2026 pp.42–43), not because any finite cell is inherently
+analogical. The selected vowel now follows regular lowering; no claim of
+late vowel-restoration is needed. The historical paradigm remains uncertain.
 
-The strict `approved_wether_input_migration.json` and exact original380
-mapping authorize only row 2283's three baseline input fields. All 387 final
-outputs and match flags stay identical. Before migration, the input-sensitive
-fingerprint consequences were calculated explicitly:
+Baseline adoption uses the existing exact selected-cell transition:
+`SC015 --adopt-cell-baseline --approval approved_sc015_targets_migration.json`.
+It preserves separate `*_pre_sc015.*` snapshots and all previous archives
+and approvals. Only rows2095/2313/2314 may change target and output;
+the measured 379/387 matches and eight mismatch identities are unchanged.
+Stable-ID legacy mappings apply only to identities actually in original380.
+No unguarded refreeze is permitted.
 
-| Projection | Authorized new SHA256 |
+Affected owners: FST, three corpus rows, registry/human notes/edges,
+routed dossier and reader, learn/meed/world lexical sources, directly
+affected current summaries, strict approval and scoped tests. Derived
+traces, censuses, indexes and volumes follow canonical regeneration.
+Finalization, full-corpus/legacy guards, component positives/negatives,
+three-cell paradigm, chronology checks and the full suite precede release.
+
+### Measured migration and provenance
+
+The deterministic `sc015-adoption/migration.json` records the complete
+before/after corpus rows, exact changed fields, primary attestations,
+baseline summaries and every protected preceding approval/archive hash.
+Rebuilding its in-memory value also checks the original corpus at the
+released base commit, rather than trusting a hand-maintained before-row.
+The two new pre-SC015 snapshots are byte-identical to that actual release.
+Neither capture receipt is regenerated during routine validation.
+
+Measured adopted fingerprints:
+
+| Projection | SHA256 |
 | --- | --- |
-| Evaluator input plus output | `3caa0d07ba4f63c7ba512a22e48a7be86f975e573ae01d7cbea830eb08d4b1e0` |
-| Lexical input plus output | `32d551ca5bc6317a6e528f00259159915599c6e08d265af170e2be7341edb522` |
-| Active original380 | `3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f` |
+| selected387 evaluator | `b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb` |
+| lexical inputs | `e495ab40d4fb34f2117c6d8590ee11e18166271e01712755b99507bf9933aef2` |
+| active original380 | `43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce` |
+| immutable original380 | `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf` |
 
-Adoption uses `SC015 --adopt-cell-baseline --approval
-approved_wether_input_migration.json`. The named `*_pre_sc015_wether_input.*`
-archive preserves the previous active baseline separately from rust, straw,
-hue, knee, context and gift archives. Immutable legacy380 remains
-`fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.
-Canonical propagation uses `adjudicate.py --refresh`, not SC015 finalization.
-Focused tests protect the exact fields, both full-corpus trials, all
-checkpoints, unchanged laws/registry/history, strict transition failures,
-archive idempotence and the historical-only certified book note.
+The saved component receipt has22 assertions plus the three actual
+selected-cell evaluations. The component assertions deliberately distinguish
+source comparanda from synthetic boundary controls, and the lowered twine
+prediction from a historically correct reflex.
 
-The strict adopter completed successfully and independently reproduced all
-three predicted fingerprints. Canonical refresh reports CONTROL PLANE CLEAN.
-The current coverage census has exactly the four predicted deltas:
-SC015 4 -> 3, SC020 112 -> 113, SC047 159 -> 158, SC063 63 -> 64.
-The actual full trace, not merely the private receipt, preserves every state
-of the other 386 lexical entries. The 80-file immutable preparation audit
-finds only seven declared changed files: the corpus, approved migration map,
-active baseline and summary, and generated equivalence report, coverage
-census and annotations. All 73 other protected hashes and all 18 pre-existing
-baseline archives/approval files are unchanged.
+Publication index changes are explicitly scoped to the three rewritten
+learn entries and the new account of existing regular nest. Four former
+Northumbrian labels are removed rather than silently reasserted.
+Obsolete table/line decisions are removed or reanchored through editable
+index owners, not by rewriting the scholarly argument. The adjacent
+SC003/071/083 readers retain their unaffected meed/bore/lick chronology
+examples instead of publishing obsolete learn counterfactual outputs
+against the former targets; their archived experimental observations
+remain untouched. No new displacement result or law change is asserted.
 
-The complete Germanic run recorded 1,386 passing tests, five failures and
-8,555 passing subtests. The failures exposed historical migration fixtures
-incorrectly including the later wether
-mapping, or the undeclared publication fingerprint delta. Those historical
-fixtures now retain their exact earlier migration scope and all old hash
-assertions. The exact semantic additions/removal are declared in
-`index_semantic_fingerprint_allowlist.tsv`, with negative controls proving
-that each remains necessary. The combined final coupled run passes all
-189 tests and 1,221 subtests, including all five corrections, the new
-all-entry full-trace check and the exact four application deltas. No production
-validation rule or scientific invariant was relaxed.
+### Final validation and publication receipt
 
-After publication, the coupled adoption, archive, index and editorial checks
-passed 116 tests and 1,113 subtests. A fresh official `SC015 --evidence`
-rebuild again confirmed all 387 selections and exactly the three current
-lowering applications. Final nonmutating artifact-graph verification reports
-CONTROL PLANE CLEAN. The SC-specific adjudication check is not a completion
-gate for this lexical-only decision: it requires an adjudicated registry
-record, which this task deliberately does not create.
+The final complete `python3 -m pytest -q Germanic/tests` run passed
+1,402 tests and8,555 subtests in1,258.91 seconds. This run followed the
+final reader-source correction and successful standard publication build.
+It includes exact scientific-delta, three-cell migration, original380,
+archive-integrity, chronology, negative-control, publication and generated
+freshness guards. Historical hue/rust/straw replay tests exclude only the
+three explicitly later learn migrations; their historical approvals and
+archives are not rewritten. Current fingerprint assertions use the exact
+named evaluator/lexical/legacy fields, not permissive substring checks.
 
-The standard, unbypassed combined-book build completed. Its semantic,
-predicted-form, paragraph-gloss, bibliography, citation-locator, reference,
-heading-wrap, index-emission/parity, print-readiness and 18 index negative
-checks pass. The combined PDF has 318 pages; wether is section 6.77,
-printed pp. 188–189. The three-row SC015 census and inherited-e wether
-paragraph are on p. 17. Native and reconstruction index entries are on
-pp. 313 and 315 and point to the wether heading on p. 188. The standalone
-lexical PDF has 154 pages. Actual rendered prose, quantities, dental signs,
-citations, ending trace and both index entries were visually inspected.
-The final note has approximately 415 words (416 whitespace tokens including
-lexical-span attributes). Sanskrit uses the existing explicit lexical-span
-markup so the assembly cannot consume its stem-final emphasis delimiter;
-the historical wording and calf gloss are unchanged.
+The unbypassed `build_capr_book_draft_docker.sh` completed with319 PDF
+pages, zero unresolved internal references, zero paragraph-gloss violations,
+all99 sound-change headings checked (53 long headings wrapped),18 negative
+index fixtures passed, and no residual sect/sects citation locators in
+TeX or PDF. Bibliography, page-locator, semantic, index-emission and print
+readiness gates passed. The genuinely unpaginated deVaan2016 citation has
+one source-specific paragraph-anchor exception, not invented pagination
+or a general missing-page exemption.
 
-The inspected combined PDF SHA256 is
-`d3ed19d1702f51ab493ddebd3e5d025a4215444d96b7ca8ec7aec280dc015fd8`.
-The render still prints unrelated existing missing-character warnings for
-angle brackets/control characters elsewhere in the volume; none occurs in
-the inspected wether passage. They did not bypass or fail a publication gate.
+Actual rendered pages were inspected, not merely their Markdown sources:
+SC015 section2.7, printed pp.14–19 (including the corrected here-chain
+on p.16 and the literal rule on p.18); learn infinitive section6.42,
+pp.163–164; nest section6.49, p.169; unchanged wether discussion,
+pp.190–191; world section8.35, pp.250–251; meed section9.12,
+pp.269–270; imperative section9.24, pp.284–285; third singular
+section9.25, pp.285–286. Crawford and Miller bibliography entries were
+inspected on pp.308–309, native learn/nest/meed index entries on p.313,
+and reconstructed learn inputs on p.315. PDF sheet numbers are two
+greater than those printed body folios.
+
+Visual inspection caught an unsupported display-math arrow sequence in
+the newly added here argument. Ordinary reconstruction-marked prose
+replaced that display; the rebuilt PDF and a narrow regression verify the
+correction without changing the history. The standard build retains
+font warnings, including angle brackets in three byte-identical inherited
+paragraphs outside this revision; this receipt is not an exhaustive
+font audit of unrelated book matter.
+
+The non-writing `migration.build()` independently reproduces the saved
+rich receipt and verifies every preceding approval/archive against the
+actual released baseline. It confirms exactly three final deltas and
+four intermediate-history deltas,379 matches in the authorized final
+state, unchanged inputs and contexts, and the fingerprint table above.
+The two immutable checkpoint captures are not recaptured during closeout.
 
 ## Residue
 
-The a-stem's date and relation to the u-stem, precise continental vocalism
-history and ultimate year connection remain qualified. These do not prevent
-the positively supported masculine u-stem selection. The broader SC015
-formulation, historical verdict and chronology are expressly outside this
-decision. The lexical correction and its publication are complete; they do
-not select a new SC015 formulation or settle the remaining historical questions.
+Twine's native versus borrowed history and retained High German *i*;
+numeral-adverb sibilants and syllabification; ON *beðinn* versus analogy;
+OHG *irh* inheritance versus borrowing; weak-III learn morphology,
+mutation and levelling; component-specific dates. These remain scholarly
+questions, not a reopened adoption decision. Former *liorn-* selections
+remain explicit in the lexical record, with the precise third-singular
+token-evidence limitation acknowledged rather than fabricated.

@@ -3020,8 +3020,8 @@ English Proto Input: *láubą
 Outcome: lēaf
 # learn
 PROTO: *líznōjaną
-EXPECTED: liornian
-OUTPUTS: liornian
+EXPECTED: leornian
+OUTPUTS: leornian
 
 
 
@@ -3031,13 +3031,13 @@ English Proto Input: *líznōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Rhotacism: *lírnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōjaną<br>OE Heavy Syllable Nasal Apocope: *líornōjan<br>OE Secondary Nasalization: *líornōjąn<br>OE I Umlaut: *líornējąn<br>OE Unstressed Long Vowel Shortening: *líornejąn<br>OE Weak Tail Reduction: *líornejan<br>OE Intervocalic J Vocalization: *líorneian<br>OE Unstressed EI Contraction: *líornian |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *léznōjaną<br>EAF Rhotacism: *lérnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornōjaną<br>OE Heavy Syllable Nasal Apocope: *léornōjan<br>OE Secondary Nasalization: *léornōjąn<br>OE I Umlaut: *léornējąn<br>OE Unstressed Long Vowel Shortening: *léornejąn<br>OE Weak Tail Reduction: *léornejan<br>OE Intervocalic J Vocalization: *léorneian<br>OE Unstressed EI Contraction: *léornian |
 
 
 
 ### Orthography & surface
 
-Outcome: liornian
+Outcome: leornian
 # leather
 PROTO: *léθrą
 EXPECTED: leþer
@@ -7999,8 +7999,8 @@ selected obliques used for cow, night and meed: distinguish the history
 of the lexeme's paradigm from the sound-law path of the chosen cell.
 # learn (3sg)
 PROTO: *líznōθi
-EXPECTED: liornaþ
-OUTPUTS: liornaþ
+EXPECTED: leornaþ
+OUTPUTS: leornaþ
 
 
 
@@ -8010,18 +8010,18 @@ English Proto Input: *líznōθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líznōθ<br>EAF Rhotacism: *lírnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōθ<br>OE Late O Shortening: *líornoθ<br>OE Final Unstressed O Lowering: *líornaθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líznōθ<br>PNWGmc I Lowering: *léznōθ<br>EAF Rhotacism: *lérnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornōθ<br>OE Late O Shortening: *léornoθ<br>OE Final Unstressed O Lowering: *léornaθ |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: *líornaþ
-Outcome: liornaþ
+Old English Orthography: *léornaþ
+Outcome: leornaþ
 # learn (iptv.2sg)
 PROTO: *líznô
-EXPECTED: liorna
-OUTPUTS: liorna
+EXPECTED: leorna
+OUTPUTS: leorna
 
 
 
@@ -8031,13 +8031,13 @@ English Proto Input: *líznô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Rhotacism: *lírnô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornô<br>OE Unstressed Long Vowel Shortening: *líorna |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *léznô<br>EAF Rhotacism: *lérnô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornô<br>OE Unstressed Long Vowel Shortening: *léorna |
 
 
 
 ### Orthography & surface
 
-Outcome: liorna
+Outcome: leorna
 # lick (3sg)
 PROTO: *líkkōθi
 EXPECTED: liccaþ
@@ -8430,13 +8430,13 @@ English Proto Input: *θístilas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θístilæs<br>OE L Adjacent Syncope: *θístlæs<br>OE Unstressed AE Merger: *θístles |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *θéstilas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θéstilæs<br>OE I Umlaut: *θistilæs<br>OE L Adjacent Syncope: *θistlæs<br>OE Unstressed AE Merger: *θistles |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: þ*ístles
+Old English Orthography: þ*istles
 Outcome: þistles
 
 

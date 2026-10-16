@@ -1,5 +1,16 @@
 # Source extraction ledger — learn (iptv.2sg) / liorna
 
+## Current decision: 16 October 2026
+
+The authorized selection is imperative2sg `leorna`, directly printed
+in Crawford1922 p.351, Deut14:23, with a singular addressee.
+PROTO `*liznōjaną`, PROTOFORM `*líznô` and the historical remodelling
+classification remain unchanged. *Liorna* remains an attested alternative;
+the categorical dialect account and trace below are pre-adoption research.
+Kroonen's actual learn entry is printed340, not sheet380.
+See [the primary record](../../sound_changes/audits/sc015-adoption/learn-attestations.md)
+and [SC015's decision](../../sound_changes/audits/sc015-adjudication.md).
+
 This ledger records the finite-cell evidence and learn-family background used before drafting the lexical entry.
 
 | Source | Date / position | Form(s) given | Morphology / dialect | Old English form(s) | Claim used for the entry | Citation key available? | Local path | Confidence / review note |

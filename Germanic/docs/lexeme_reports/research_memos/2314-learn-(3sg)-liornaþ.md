@@ -1,5 +1,16 @@
 # Research memo — 2314 learn (3sg) / liornaþ
 
+## Superseded selected-target recommendation: 16 October 2026
+
+The authorized selection is `leornaþ`, present indicative3sg.
+Miller1891 p.380 lines26–27 prints `leornað` with a singular subject.
+The inherited PROTOFORM `*líznōθi` and remodelling classification
+remain unchanged. The former normalized *liornaþ* comparison remains
+recorded below, but no newly inspected exact token is claimed for it.
+All “current” statements below are historical. See
+[the adoption](../../sound_changes/audits/sc015-adjudication.md)
+and the [primary attestation record](../../sound_changes/audits/sc015-adoption/learn-attestations.md).
+
 ## Starting point
 
 - **ID:** 2314

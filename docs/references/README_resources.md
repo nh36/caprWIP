@@ -114,6 +114,22 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 
 ## Old English primers and readers
 
+- `crawford_1922_heptateuch.pdf`
+  S. J. Crawford (ed.), *The Old English Version of the Heptateuch*
+  (1922; `Crawford1922`), original scan retained locally.
+  Title sheet9 verifies the year; sheets91/375 are printed pp.71/351.
+  Those two pages were visually checked for infinitive *leornian* and
+  singular imperative *leorna*. Navigation OCR is not a certified
+  whole-volume text; see the SC015 adoption attestation record.
+
+- `miller_1891_oe_bede_part1_2.pdf`
+  Thomas Miller (ed.), *The Old English Version of Bede's Ecclesiastical
+  History*, Part I, second half (1891; `Miller1891`), original scan retained
+  locally. The preliminary publisher notice identifies the 1891 part;
+  there is no conventional title page in this scan. Sheet180, printed
+  p.380, lines26-27, was visually checked for third-singular *leornað*.
+  Navigation OCR is not a certified whole-volume text.
+
 - `sweet_anglo_saxon_primer.txt` / `.pdf`  
   Henry Sweet, *An Anglo-Saxon Primer* (seventh edition, Clarendon Press,
   1893; `Sweet1893`), as the held title identifies.

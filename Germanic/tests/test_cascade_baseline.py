@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f"
+    ACTIVE_SHA = "43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -121,7 +121,8 @@ class LegacySubsetTests(unittest.TestCase):
             migrations = list(csv.DictReader(handle, delimiter="\t"))
         selected = mod.legacy_subset(self.current_rows, self.legacy_rows, migrations)
         self.assertEqual(len(selected), 380)
-        self.assertEqual([m["row_id"] for m in migrations], ["2040", "2085", "2224", "2162", "2283"])
+        self.assertEqual([m["row_id"] for m in migrations],
+                         ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -193,12 +194,22 @@ class LegacySubsetTests(unittest.TestCase):
             mod.read_baseline(
                 BASELINE_DIR / "cascade_baseline_outputs_pre_sc015_wether_input.tsv",
                 BASELINE_DIR / "cascade_baseline_summary_pre_sc015_wether_input.json"),
-            {"records": self.current_rows, "summary": self.summary},
+            mod.read_baseline(
+                BASELINE_DIR / "cascade_baseline_outputs_pre_sc015.tsv",
+                BASELINE_DIR / "cascade_baseline_summary_pre_sc015.json"),
             json.loads((BASELINE_DIR / "approved_wether_input_migration.json").read_text()),
+        )
+        mod.validate_cell_transition(
+            mod.read_baseline(
+                BASELINE_DIR / "cascade_baseline_outputs_pre_sc015.tsv",
+                BASELINE_DIR / "cascade_baseline_summary_pre_sc015.json"),
+            {"records": self.current_rows, "summary": self.summary},
+            json.loads((BASELINE_DIR / "approved_sc015_targets_migration.json").read_text()),
         )
         self.assertEqual(len(mod.legacy_subset(
             previous["records"], old,
-            [m for m in migrations if m["row_id"] not in {"2224", "2162", "2283"}],
+            [m for m in migrations if m["row_id"] not in {
+                "2224", "2162", "2283", "2095", "2313", "2314"}],
         )), 387)
 
 

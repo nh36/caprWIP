@@ -10,7 +10,6 @@ source_change_id	target_change_id	relation_type	direction_basis	evidence_basis	w
 SC014	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		3	
 SC014	SC087	no_break_search_boundary	later_boundary	boundary_observation		3	96
 SC015	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		17	
-SC015	SC036	broad_far_chronology	later_boundary	independently_demonstrated	displacement_witness	17	42
 SC016	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		103	
 SC016	SC017	reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	103	18
 SC017	SC016	reciprocal_chronology	earlier_boundary	independently_demonstrated	displacement_witness	18	103

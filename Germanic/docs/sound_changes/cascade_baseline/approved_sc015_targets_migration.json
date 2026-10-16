@@ -1,0 +1,45 @@
+{
+  "adjudication": "SC015",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc015-adjudication.md",
+  "previous_summary": {
+    "outputs_sha256": "3caa0d07ba4f63c7ba512a22e48a7be86f975e573ae01d7cbea830eb08d4b1e0",
+    "lexical_outputs_sha256": "32d551ca5bc6317a6e528f00259159915599c6e08d265af170e2be7341edb522",
+    "legacy_subset_sha256": "3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "2095",
+      "before": {
+        "proto": "*líznōjaną", "proto_norm": "líznōjaną", "fst_input": "líznōjaną",
+        "counterpart": "liornian", "outputs": "liornian", "match": "1"
+      },
+      "after": {
+        "proto": "*líznōjaną", "proto_norm": "líznōjaną", "fst_input": "líznōjaną",
+        "counterpart": "leornian", "outputs": "leornian", "match": "1"
+      }
+    },
+    {
+      "row_id": "2313",
+      "before": {
+        "proto": "*líznô", "proto_norm": "líznô", "fst_input": "líznô",
+        "counterpart": "liorna", "outputs": "liorna", "match": "1"
+      },
+      "after": {
+        "proto": "*líznô", "proto_norm": "líznô", "fst_input": "líznô",
+        "counterpart": "leorna", "outputs": "leorna", "match": "1"
+      }
+    },
+    {
+      "row_id": "2314",
+      "before": {
+        "proto": "*líznōθi", "proto_norm": "líznōθi", "fst_input": "líznōθi",
+        "counterpart": "liornaþ", "outputs": "liornaþ", "match": "1"
+      },
+      "after": {
+        "proto": "*líznōθi", "proto_norm": "líznōθi", "fst_input": "líznōθi",
+        "counterpart": "leornaþ", "outputs": "leornaþ", "match": "1"
+      }
+    }
+  ]
+}

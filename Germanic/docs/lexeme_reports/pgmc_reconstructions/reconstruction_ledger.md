@@ -4549,7 +4549,7 @@ Coverage: 3 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2095"></a>
 
-## 2095: learn / liornian
+## 2095: learn / leornian
 
 Current citation: *líznōjaną (pgmc); selected input: *líznōjaną (pgmc; variety: none; equality_convention).
 Runnable: 1; derivation class: regular.
@@ -10944,7 +10944,7 @@ Coverage: 2 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2313"></a>
 
-## 2313: learn (iptv.2sg) / liorna
+## 2313: learn (iptv.2sg) / leorna
 
 Current citation: *liznōjaną (pgmc); selected input: *líznô (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: late_analogy.
@@ -11001,7 +11001,7 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2314"></a>
 
-## 2314: learn (3sg) / liornaþ
+## 2314: learn (3sg) / leornaþ
 
 Current citation: *liznōjaną (pgmc); selected input: *líznōθi (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: late_analogy.

@@ -135,9 +135,9 @@ row_id	concept	proto	proto_norm	fst_input	word_stress	phonological_finality	coun
 2099	lick	*líkkōjaną	líkkōjaną	líkkōjaną	stressed	final	liccian	1	1	1	liccian
 2316	lick (3sg)	*líkkōθi	líkkōθi	líkkōθi	stressed	final	liccaþ	1	1	1	liccaþ
 2104	linden	*líndō	líndō	líndō	stressed	final	lind	1	1	1	lind
-2313	learn (iptv.2sg)	*líznô	líznô	líznô	stressed	final	liorna	1	1	1	liorna
-2095	learn	*líznōjaną	líznōjaną	líznōjaną	stressed	final	liornian	1	1	1	liornian
-2314	learn (3sg)	*líznōθi	líznōθi	líznōθi	stressed	final	liornaþ	1	1	1	liornaþ
+2313	learn (iptv.2sg)	*líznô	líznô	líznô	stressed	final	leorna	1	1	1	leorna
+2095	learn	*líznōjaną	líznōjaną	líznōjaną	stressed	final	leornian	1	1	1	leornian
+2314	learn (3sg)	*líznōθi	líznōθi	líznōθi	stressed	final	leornaþ	1	1	1	leornaþ
 2112	lock	*lúkkaz	lúkkaz	lúkkaz	stressed	final	locc	1	1	1	locc
 2111	lock	*lúką	lúką	lúką	stressed	final	loc	1	1	1	loc
 2114	lung	*lúnganjō	lúnganjō	lúnganjō	stressed	final	lungen	1	1	1	lungen

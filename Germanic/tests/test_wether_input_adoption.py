@@ -23,6 +23,7 @@ BASE = ROOT / "Germanic/docs/sound_changes/cascade_baseline"
 AUDITS = ROOT / "Germanic/docs/sound_changes/audits"
 REPORTS = ROOT / "Germanic/docs/lexeme_reports"
 BEFORE = "695609f33ebd039c46a1c53bad173699b7b7fcef"
+WETHER_RELEASE = "23c146eddd2d9f7527a05363b6768e352eddeb54"
 MISMATCHES = {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"}
 
 
@@ -37,6 +38,17 @@ def committed(path):
         ["git", "show", f"{BEFORE}:{path.relative_to(ROOT).as_posix()}"], cwd=ROOT)
 
 
+def released(path):
+    return subprocess.check_output(
+        ["git", "show", f"{WETHER_RELEASE}:{path.relative_to(ROOT).as_posix()}"], cwd=ROOT)
+
+
+def released_table(path):
+    return list(csv.DictReader(
+        (line for line in released(path).decode().splitlines() if not line.startswith("#")),
+        delimiter="\t"))
+
+
 class WetherInputAdoptionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -44,7 +56,8 @@ class WetherInputAdoptionTests(unittest.TestCase):
             BASE / "cascade_baseline_outputs_pre_sc015_wether_input.tsv",
             BASE / "cascade_baseline_summary_pre_sc015_wether_input.json")
         cls.current = baseline.read_baseline(
-            BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json")
+            BASE / "cascade_baseline_outputs_pre_sc015.tsv",
+            BASE / "cascade_baseline_summary_pre_sc015.json")
         cls.approval = json.loads((BASE / "approved_wether_input_migration.json").read_text())
         cls.receipt = json.loads(gzip.decompress(
             (AUDITS / "wether-input-trials.json.gz").read_bytes()))
@@ -52,7 +65,7 @@ class WetherInputAdoptionTests(unittest.TestCase):
     def test_exact_shared_etymology_fields_and_no_other_corpus_change(self):
         path = ROOT / "Germanic/data/germanic-aligned-final.tsv"
         old = list(csv.DictReader(committed(path).decode().splitlines(), delimiter="\t"))
-        new = table(path)
+        new = released_table(path)
         changes = [(a, b) for a, b in zip(old, new, strict=True) if a != b]
         self.assertEqual({b["ID"] for a, b in changes}, {"1119", "1120", "1121", "2283"})
         for before, after in changes:
@@ -65,6 +78,13 @@ class WetherInputAdoptionTests(unittest.TestCase):
         self.assertEqual((wether["COUNTERPART"], wether["DERIVATION_CLASS"]), ("weþer", "regular"))
         weather = next(row for row in new if row["ID"] == "2280")
         self.assertEqual((weather["PROTO"], weather["COUNTERPART"]), ("*wédrą", "weder"))
+        self.assertEqual(next(row for row in table(path) if row["ID"] == "2283"), wether)
+
+    def test_preserved_pre_sc015_state_is_the_complete_wether_release(self):
+        for stem, suffix in (("outputs", "tsv"), ("summary", "json")):
+            self.assertEqual(
+                (BASE / f"cascade_baseline_{stem}_pre_sc015.{suffix}").read_bytes(),
+                released(BASE / f"cascade_baseline_{stem}.{suffix}"))
 
     def test_named_migration_preserves_all_final_outputs_and_mismatches(self):
         baseline.validate_cell_transition(self.previous, self.current, self.approval)
@@ -119,14 +139,16 @@ class WetherInputAdoptionTests(unittest.TestCase):
                      if path.is_file())
         for path in paths:
             with self.subTest(path=path):
-                self.assertEqual(path.read_bytes(), committed(path))
-        registry = table(ROOT / "Germanic/docs/sound_changes/registry/sc_registry.tsv")
+                self.assertEqual(released(path), committed(path))
+        registry = released_table(ROOT / "Germanic/docs/sound_changes/registry/sc_registry.tsv")
         sc015 = next(row for row in registry if row["sc_id"] == "SC015")
         self.assertEqual(sc015["adjudication_status"], "unadjudicated")
         self.assertEqual(sc015["verdict"], "")
-        memo = (AUDITS / "sc015-adjudication.md").read_text()
+        memo = released(AUDITS / "sc015-adjudication.md").decode()
         self.assertNotRegex(memo, r"(?m)^Registry-verdict:")
         self.assertEqual(len(re.findall(r"(?m)^## ", memo)), 9)
+        self.assertEqual((AUDITS / "sc015-wether-input-adjudication.md").read_bytes(),
+                         released(AUDITS / "sc015-adjudication.md"))
 
     def test_ending_history_and_only_authorized_application_changes(self):
         census_path = BASE / "rule_coverage_census.tsv"
@@ -134,7 +156,7 @@ class WetherInputAdoptionTests(unittest.TestCase):
             (line for line in committed(census_path).decode().splitlines()
              if not line.startswith("#")), delimiter="\t"))
         old = {row["sc_id"]: row for row in old}
-        current = table(census_path)
+        current = released_table(census_path)
         deltas = {row["sc_id"]: int(row["corpus_firing_count"])
                   - int(old[row["sc_id"]]["corpus_firing_count"])
                   for row in current
@@ -165,7 +187,7 @@ class WetherInputAdoptionTests(unittest.TestCase):
     def test_actual_full_trace_preserves_every_other_lexical_entry(self):
         path = ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt"
         before = re.split(r"(?m)^--- (.+) ---$", committed(path).decode())
-        after = re.split(r"(?m)^--- (.+) ---$", path.read_text())
+        after = re.split(r"(?m)^--- (.+) ---$", released(path).decode())
         self.assertEqual(before[1:775:2], after[1:775:2])
         self.assertEqual(len(after[1:775:2]), 387)
         changed = [after[index] for index in range(1, 775, 2)
@@ -174,7 +196,7 @@ class WetherInputAdoptionTests(unittest.TestCase):
 
     def test_legacy380_requires_the_exact_wether_mapping(self):
         legacy = table(BASE / "cascade_baseline_outputs_legacy380.tsv")
-        migrations = table(BASE / "approved_input_migrations.tsv")
+        migrations = released_table(BASE / "approved_input_migrations.tsv")
         self.assertEqual(len(baseline.legacy_subset(self.current["records"], legacy, migrations)), 380)
         for kind in ("missing", "wrong_old", "wrong_new", "wrong_output"):
             approved = copy.deepcopy(migrations)
@@ -207,7 +229,9 @@ class WetherInputAdoptionTests(unittest.TestCase):
                 ("cascade_baseline_outputs_legacy380.tsv", "cascade_baseline_outputs_legacy380.tsv"),
                 ("approved_input_migrations.tsv", "approved_input_migrations.tsv"),
             ):
-                (target / destination).write_bytes((BASE / source).read_bytes())
+                data = (released(BASE / source) if source == "approved_input_migrations.tsv"
+                        else (BASE / source).read_bytes())
+                (target / destination).write_bytes(data)
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             for name, suffix in (("outputs", "tsv"), ("summary", "json")):
                 path = BASE / f"cascade_baseline_{name}_pre_sc015_wether_input.{suffix}"
@@ -251,7 +275,7 @@ class WetherInputAdoptionTests(unittest.TestCase):
         }
         path = ROOT / "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv"
         before = list(csv.DictReader(committed(path).decode().splitlines(), delimiter="\t"))
-        added = [row for row in table(path) if row not in before]
+        added = [row for row in released_table(path) if row not in before]
         self.assertEqual({tuple(row[key] for key in (
             "action", "language", "form", "form_role", "source_scope", "source_ref"))
             for row in added}, expected)

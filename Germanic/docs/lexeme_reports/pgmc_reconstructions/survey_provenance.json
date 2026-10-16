@@ -5,7 +5,7 @@
   "inputs": {
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
     "Germanic/data/entry_stage_metadata.tsv": "75dd0babfd13b140c575fc9f533bce7ae5e03c1d251aa7cd045e61defa97bcde",
-    "Germanic/data/germanic-aligned-final.tsv": "1fd8ec257581a54603b59835a46ca764ee2ba0f438c9b497b874a58ee2fe8f73",
+    "Germanic/data/germanic-aligned-final.tsv": "514cfe096b636ea6790361787a154a70e6dafb7d8bf3e4936fced51f3b1b2a6f",
     "Germanic/docs/assembly/build_class_manifests.py": "56220c90df9a3dd73a5a678e18cf3cef8ea47d74dc4f81f475b4f5099753ea3e",
     "Germanic/docs/lexeme_reports/model_entries/2040-gift-\u0121ift.model.md": "53960957958afadcea0f3b4b788d7e25d6ccd45723cfc5f21d2ae4f64ae101de",
     "Germanic/docs/lexeme_reports/model_entries/2332-hue-h\u012bew.source_ledger.md": "b2390923a6d59dde723786212f6f8a457deb585717af1212a364092e5958bd39",
@@ -965,7 +965,7 @@
     "docs/references/versloot_2025_reconstructing_historical_phonology_of_oe.txt": "b2840038a3eea8205004c4f4d92b67494c5c2956b45bd2b1820a04ef875b3e52",
     "docs/references/vine_2019_greek_stomylos.txt": "2cc1ca95846b3bf5ac8ed42156f8eeb53e2306a1bca2987fac99fbbdab611004",
     "docs/references/waxenberger_2019_absolute_chronology_pre_oe_runic.txt": "94cbe811cf7b74d6f178dacc6795850d334e761112760fc857a756fff2474ab7",
-    "docs/refs.bib": "7a00b203d05942762e4de9206613a075c410aafa9ee5312406b956dc8f3edb29"
+    "docs/refs.bib": "55b52675dd0e9ae5d88fe1e218de82be08cb72b35d8abde1b1a7c39f8000ef00"
   },
   "population": 393,
   "reading_scope_statuses": {

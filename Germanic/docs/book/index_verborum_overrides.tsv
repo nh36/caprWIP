@@ -31,7 +31,6 @@ add	ohg		scouwōn	scouwōn	scouwon	override	Germanic/docs/lexeme_reports/model_e
 ignore			attestation				Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md:68	Ordinary English prose false positive.
 ignore			attested_variant				Germanic/docs/assembly/capr_book_intro_alpha_01.md:101	Derivation-class label, not a lexical form.
 ignore			breaking				Germanic/docs/lexeme_reports/model_entries/2204-spar-spearra.model.md:29	Process label, not an indexed form.
-ignore			*liornian				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:33	Northumbrian discussion-only form; the indexed control is leornian.
 ignore			friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:183	English gloss/family label, not a historical form.
 ignore			friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:185	English gloss/family label, not a historical form.
 ignore			friend				Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_19.md:202	English gloss/family label, not a historical form.
@@ -41,7 +40,6 @@ ignore			comparator				Germanic/docs/lexeme_reports/model_entries/2086-knight-cn
 ignore			derivation				Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:23	Ordinary English prose false positive.
 ignore			development				Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:28	Ordinary English prose false positive.
 ignore			development				Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:49	Ordinary English prose false positive.
-ignore			evidence				Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:40	Ordinary English prose false positive.
 ignore			evidence				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:40	Ordinary English prose false positive.
 ignore			family				Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33	Ordinary English prose false positive.
 ignore			learn				Germanic/docs/assembly/capr_book_intro_alpha_01.md:83	English gloss in prose, not a historical-language form.
@@ -51,7 +49,6 @@ ignore			*bigínnan				Germanic/docs/lexeme_reports/model_entries/1943-begin-be�
 ignore			*bāną				Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33	Mechanical intermediate trace state in derivational prose, not a cited evidence form.
 ignore			*fláux				Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:56	Intermediate developmental stage in derivational prose, not a cited evidence form.
 ignore			*skúldramiz				Germanic/docs/assembly/capr_book_intro_alpha_01.md:33	Display-attribute duplicate of the indexed .iv span on the same line; already indexed at this ref.
-ignore			*wér-uldu				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:50	Intermediate developmental stage in derivational prose, not a cited evidence form.
 ignore			cascade				Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:167	Ordinary English description of the computational pipeline, not a historical form.
 ignore			date				Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:150	Ordinary English discussion of historical dating, not a reconstructed form.
 ignore			date				Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:215	Ordinary English discussion of historical dating, not a reconstructed form.

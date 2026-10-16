@@ -12,14 +12,15 @@ chronology constraints.
 ## Totals
 
 - total node count: `72`
-- total edge count: `139`
+- total edge count: `138`
 
 ### Node counts by card_type
 
 | card_type | count |
 | --- | ---: |
+| `boundary_limited` | 1 |
 | `boundary_observation` | 2 |
-| `broad_far` | 7 |
+| `broad_far` | 6 |
 | `mixed` | 16 |
 | `negative_boundary` | 9 |
 | `one_sided_chronology` | 7 |
@@ -32,7 +33,7 @@ chronology constraints.
 
 | relation_type | count |
 | --- | ---: |
-| `broad_far_chronology` | 16 |
+| `broad_far_chronology` | 15 |
 | `near_reciprocal_chronology` | 2 |
 | `no_break_search_boundary` | 21 |
 | `one_sided_chronology` | 39 |
@@ -42,7 +43,6 @@ chronology constraints.
 
 ## Chronology edges
 
-1. `SC015 -> SC036` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `world`; forms: PGmc `*wír-àldu` yields expected OE `weorold`, but the later-shifted variant yields `wuruld`
 1. `SC016 -> SC017` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `yoke`; forms: PGmc `*júką` yields expected OE `ġeoc`, but the later-shifted variant yields `ġoc`
 1. `SC017 -> SC016` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `yoke`; forms: PGmc `*júką` yields expected OE `ġeoc`, but the earlier-shifted variant yields `ġoc`
 1. `SC019 -> SC020` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `rest`; forms: PGmc `*rástōz` yields expected OE `ræste`, but the later-shifted variant yields `rast`

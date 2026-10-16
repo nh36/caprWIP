@@ -161,7 +161,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2092	laugh	hliehhan	*lákaną	pgmc	*xláxjaną	pgmc		explicit_sidecar	early_analogy	1	stressed	final
 2093	lead	lǣdan	*láidijaną	pgmc	*láidijaną	pgmc		equality_convention	regular	1	stressed	final
 2094	leaf	lēaf	*láubą	pgmc	*láubą	pgmc		equality_convention	regular	1	stressed	final
-2095	learn	liornian	*líznōjaną	pgmc	*líznōjaną	pgmc		equality_convention	regular	1	stressed	final
+2095	learn	leornian	*líznōjaną	pgmc	*líznōjaną	pgmc		equality_convention	regular	1	stressed	final
 2096	leather	leþer	*léθrą	pgmc	*léθrą	pgmc		equality_convention	regular	1	stressed	final
 2097	leek	lēac	*láukaz	pgmc	*láukaz	pgmc		equality_convention	regular	1	stressed	final
 2098	let	lǣtan	*lḗtaną	pgmc	*lḗtaną	pgmc		equality_convention	regular	1	stressed	final
@@ -379,8 +379,8 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2310	make (3sg)	macaþ	*makōną	pgmc	*mákōθi	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2311	bore (iptv.2sg)	bora	*burōną	pgmc	*búrô	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2312	bore (3sg)	boraþ	*burōną	pgmc	*búrōθi	pgmc		explicit_sidecar	late_analogy	1	stressed	final
-2313	learn (iptv.2sg)	liorna	*liznōjaną	pgmc	*líznô	pgmc		explicit_sidecar	late_analogy	1	stressed	final
-2314	learn (3sg)	liornaþ	*liznōjaną	pgmc	*líznōθi	pgmc		explicit_sidecar	late_analogy	1	stressed	final
+2313	learn (iptv.2sg)	leorna	*liznōjaną	pgmc	*líznô	pgmc		explicit_sidecar	late_analogy	1	stressed	final
+2314	learn (3sg)	leornaþ	*liznōjaną	pgmc	*líznōθi	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2315	lick (iptv.2sg)	licca	*likkōną	pgmc	*líkkô	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2316	lick (3sg)	liccaþ	*likkōną	pgmc	*líkkōθi	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2317	show (iptv.2sg)	sċēawa	*skawōną	pgmc	*skáwô	pgmc		explicit_sidecar	late_analogy	1	stressed	final

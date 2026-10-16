@@ -58,7 +58,7 @@
 | 2090 | lap | lappa | early_analogy | no | DERIVATION_CLASS=early_analogy |
 | 2092 | laugh | hliehhan | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2093 | lead | lǣdan | regular | yes | NOTE |
-| 2095 | learn | liornian | regular | yes | NOTE |
+| 2095 | learn | leornian | regular | yes | NOTE |
 | 2100 | lid | hlid | regular | yes | NOTE |
 | 2102 | light | līehtan | regular | yes | NOTE |
 | 2104 | linden | lind | regular | yes | NOTE |
@@ -134,8 +134,8 @@
 | 2310 | make (3sg) | macaþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2311 | bore (iptv.2sg) | bora | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2312 | bore (3sg) | boraþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
-| 2313 | learn (iptv.2sg) | liorna | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
-| 2314 | learn (3sg) | liornaþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
+| 2313 | learn (iptv.2sg) | leorna | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
+| 2314 | learn (3sg) | leornaþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2315 | lick (iptv.2sg) | licca | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2316 | lick (3sg) | liccaþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2317 | show (iptv.2sg) | sċēawa | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |

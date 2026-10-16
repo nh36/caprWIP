@@ -74,8 +74,8 @@ class NasalBimoricTests(unittest.TestCase):
 
     def test_current_consumers_preserve_lowering_and_distinct_vowel_domains(self):
         consumers = consumer_audit(self.source)
-        for name in ("PNWGmcILowering", "PNWGmcULowering"):
-            self.assertIn(name, consumers["EnglishStarNonHighVowel"])
+        self.assertIn("PNWGmcULowering", consumers["EnglishStarNonHighVowel"])
+        self.assertNotIn("PNWGmcILowering", consumers["EnglishStarNonHighVowel"])
         self.assertIn("EAFFinalZDeletion", consumers["PGmcStarVowel"])
         self.assertIn("OEHighVowelApocope", consumers["EnglishStarLongVowel"])
         self.assertNotIn("{*ǭ}", self.definitions["PNWGmcFinalLongORaising"].body)

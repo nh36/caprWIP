@@ -1,5 +1,12 @@
 # The Conditioning of Early Germanic *i > e*: Historiography, Comparative Evidence, Chronology, and Computational Adjudication
 
+Adoption cross-reference, 16 October 2026: the explicit subsequent decision
+adopts Candidate B and independently attested *leorn-* selections; see
+[`sc015-adjudication.md`](../sc015-adjudication.md).
+The recommendations, counts and receipts below describe the historical
+research state, not the subsequently adopted corpus or canonical verdict.
+Its counterevidence remains substantive and is retained in the adoption.
+
 **Internal research report on SC015 (`PNWGmcILowering`).** Research and
 experimental adjudication only. No production sound law, lexical selection,
 chronology edge, registry verdict, frozen baseline or reader-facing chapter

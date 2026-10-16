@@ -130,14 +130,18 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 164)
-        added = [r for r in current if r["row_id"] in {"2185", "2200", "2224", "2283"}]
-        self.assertEqual({r["row_id"] for r in added}, {"2185", "2200", "2224", "2283"})
-        unchanged = [r for r in current if r["row_id"] not in {"2185", "2200", "2224", "2283"}]
+        self.assertEqual(len(current), 165)
+        added_ids = {"2137", "2185", "2200", "2224", "2283"}
+        added = [r for r in current if r["row_id"] in added_ids]
+        self.assertEqual({r["row_id"] for r in added}, added_ids)
+        unchanged = [r for r in current if r["row_id"] not in added_ids]
         for now, before in zip(unchanged, old, strict=True):
             if before["row_id"] == "2162":
                 self.assertEqual((before["proto"], before["protoform"]), ("*rústō", "*rústō"))
                 before = dict(before, proto="*rústaz", protoform="*rústaz")
+            if before["row_id"] in {"2095", "2313", "2314"}:
+                selected = {"2095": "leornian", "2313": "leorna", "2314": "leornaþ"}
+                before = dict(before, counterpart=selected[before["row_id"]])
             preceding = [r for r in added
                          if int(r["global_order"]) < int(now["global_order"])]
             self.assertEqual(int(now["global_order"]), int(before["global_order"]) + len(preceding))

@@ -1,5 +1,11 @@
 # SC015: consonant-conditioned lowering, its counterevidence, and its computational consequences
 
+Adoption notice, 16 October 2026: the later explicit scientific decision
+adopts unified Candidate B and three independently attested *leorn-* targets.
+See [the canonical adjudication](../sc015-adjudication.md).
+The research-only recommendations and measurements below retain their
+original historical scope; no experimental receipt has been revised.
+
 ## Identity
 
 SC015, executable identifier `PNWGmcILowering`. Research base:

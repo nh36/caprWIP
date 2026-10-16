@@ -23,7 +23,7 @@ SC011	PWGmcSyllabicJ	12	0		synthetic_only	Zero corpus firings; validated by synt
 SC028	PNWGmcPreconsonantalXLoss	13	1	fist	witnessed	
 SC012	EAFLThVoicing	14	4	field, fold, gold, wold	witnessed	
 SC013	PWGmcDentalHardening	15	4	cud, find, lade, needle	witnessed	
-SC015	PNWGmcILowering	17	3	meed, nest, world	witnessed	
+SC015	PNWGmcILowering	17	7	learn, meed, nest, thistle, world, learn (iptv.2sg), learn (3sg)	witnessed	
 SC017	PNWGmcULowering	18	39	board, bore, bottom, bow, corn, crop, door, foal, folk, fox, frost, god, gold, hoard, horn, knob, lock, nose, oven, ox, coat, shovel, sorrow, spur, stock, stork, storm, thorn, trough, word, yoke, bore (iptv.2sg), bore (3sg), buck, fowl, rust, wolf, wool	witnessed	
 SC018	PNWGmcStressedMonosyllableORaising	19	1	both	witnessed	
 SC019	PNWGmcFinalLongORaising	20	28	beech, bier, dew, hall, help, herd, hind, linden, liver, lung, lye, march, nave, needle, nose, rind, rood, sake, salve, shame, shovel, shower, sorrow, soul, spindle, tongs, while, wool	witnessed	
@@ -62,7 +62,7 @@ SC052	OEVelarPalatalization	59	32	begin, believe, belly, bow, breeches, calf, ch
 SC053	OEPostVelarWLoss	60	1	sing	witnessed	
 SC054	OEWLossBeforeI	61	1	sea	witnessed	
 SC056	OEWsPalatalDiphthongization	62	7	give, guest, shaft, shear, sheep, shield, year	witnessed	
-SC055	OEIUmlaut	63	67	believe, belly, berry, birth, bore, bow, breeches, bride, cow, deal, dill, drench, fast, fist, flesh, follow, fright, guest, handle, harvest, hay, heal, heath, hedge, hind, last, laugh, lead, learn, lick, light, lung, make, mean, might, need, net, nettle, night, rye, sea, seek, send, set, sheath, show, singe, sit, smear, spare, spindle, spread, start, stem, still, stretch, strew, string, sunder, think, three, wight, will, worm, hue, fire	witnessed	
+SC055	OEIUmlaut	63	68	believe, belly, berry, birth, bore, bow, breeches, bride, cow, deal, dill, drench, fast, fist, flesh, follow, fright, guest, handle, harvest, hay, heal, heath, hedge, hind, last, laugh, lead, learn, lick, light, lung, make, mean, might, need, net, nettle, night, rye, sea, seek, send, set, sheath, show, singe, sit, smear, spare, spindle, spread, start, stem, still, stretch, strew, string, sunder, think, thistle, three, wight, will, worm, hue, fire	witnessed	
 SC057	OEJClusterCoalescence	65	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
 SC059	OEBackMutation	66	5	heaven, milk, seven, spear, world	witnessed	
 SC060	OEWsPalatalUmlaut	67	5	knight, might, night, six, wight	witnessed	

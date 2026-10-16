@@ -1,4 +1,56 @@
-action	language	form	form_role	source_scope	source_ref	note
+action	language	form	form_role	source_scope	source_ref	note	variety
+add	oe	leorna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	SC015 authorized attested imperative; Crawford1922 p.351.
+add	oe	leorna	target_form	lexical_heading	learn (iptv.2sg) — OE leorna	SC015 authorized target migration, unchanged inherited input.
+add	oe	leornaþ	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	SC015 authorized attested third singular; Miller1891 p.380.
+add	oe	leornaþ	target_form	lexical_heading	learn (3sg) — OE leornaþ	SC015 authorized target migration, unchanged inherited input.
+add	oe	leornian	target_form	lexical_heading	learn — OE leornian	SC015 authorized infinitive; Crawford1922 p.71.
+add	oe	nest	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2137-nest-nest.model.md	New authored account for unchanged existing regular target; Kroonen2013 p.391.
+add	oe	nest	target_form	lexical_heading	nest — OE nest	New authored account for unchanged existing regular target.
+add	pgmc	*liznōjaną	source_protoform	lexical_proto	learn (3sg) — OE leornaþ	Unchanged citation reconstruction under authorized new target heading.
+add	pgmc	*liznōjaną	source_protoform	lexical_proto	learn (iptv.2sg) — OE leorna	Unchanged citation reconstruction under authorized new target heading.
+add	pgmc	*líznô	selected_input	trace_proto_input	learn (iptv.2sg) — OE leorna	Unchanged selected input under authorized new target heading.
+add	pgmc	*líznô	source_protoform	lexical_protoform	learn (iptv.2sg) — OE leorna	Unchanged selected input under authorized new target heading.
+add	pgmc	*líznōjaną	selected_input	trace_proto_input	learn — OE leornian	Unchanged selected input under authorized new target heading.
+add	pgmc	*líznōjaną	source_protoform	lexical_protoform	learn — OE leornian	Unchanged selected input under authorized new target heading.
+add	pgmc	*líznōθi	selected_input	trace_proto_input	learn (3sg) — OE leornaþ	Unchanged selected input under authorized new target heading.
+add	pgmc	*líznōθi	source_protoform	lexical_protoform	learn (3sg) — OE leornaþ	Unchanged selected input under authorized new target heading.
+add	pgmc	*nístą	source_protoform	lexical_protoform	nest — OE nest	New authored nest account preserves its inherited input.
+add	pgmc	líznōjaną	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md	Explicit selected-input markup in expanded reconstruction discussion.
+add	pgmc	nístą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2137-nest-nest.model.md	Explicit selected-input markup in new nest account.
+remove	oe	Liorna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Former target superseded by authorized attested leorna.
+remove	oe	leornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Companion infinitive now discussed in principal entry rather than duplicate finite-entry comparator.
+remove	oe	leornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Companion infinitive now discussed in principal entry rather than duplicate finite-entry comparator.
+remove	oe	leornian	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md	Obsolete comparison table replaced by full attestation and morphology discussion.
+remove	oe	liorna	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Alternatives discussed in principal entry; no retraction of liorn tradition.
+remove	oe	liorna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Former selected target superseded only through approved SC015 transition.
+remove	oe	liorna	target_form	lexical_heading	learn (iptv.2sg) — OE liorna	Former selected target superseded only through approved SC015 transition.
+remove	oe	liornaþ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Former normalized companion selection no longer treated as verified token evidence.
+remove	oe	liornaþ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Former normalized selection no longer treated as verified token evidence.
+remove	oe	liornaþ	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	SC015 authorized rule now predicts leornaþ; historical receipts preserved.
+remove	oe	liornaþ	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Former selected target superseded only through approved SC015 transition.
+remove	oe	liornaþ	target_form	lexical_heading	learn (3sg) — OE liornaþ	Former selected target superseded only through approved SC015 transition.
+remove	oe	liornes	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Rewritten cell-specific account removes unrelated finite comparison.
+remove	oe	liornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Alternatives discussed in principal entry, without duplicate finite-entry tags.
+remove	oe	liornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Alternatives discussed in principal entry, without duplicate finite-entry tags.
+remove	oe	liornian	target_form	lexical_heading	learn — OE liornian	Former selected infinitive superseded only through approved SC015 transition.
+remove	oe	liorna	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Removed unsupported blanket Northumbrian assignment; Campbell1959 pp.48,59,125.	north
+remove	oe	liorna	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Former output superseded; blanket Northumbrian assignment is not supported.	north
+remove	oe	liornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Removed unsupported blanket Northumbrian assignment; Campbell1959 pp.48,59,125.	north
+remove	oe	liornian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Removed unsupported blanket Northumbrian assignment; Campbell1959 pp.48,59,125.	north
+remove	pgmc	*liznōjaną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Unchanged citation remains in generated PROTO metadata; redundant prose tag removed.
+remove	pgmc	*liznōjaną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Unchanged citation remains in generated PROTO metadata; redundant prose tag removed.
+remove	pgmc	*liznōjaną	source_protoform	lexical_proto	learn (3sg) — OE liornaþ	Unchanged citation now indexed under approved leornaþ heading.
+remove	pgmc	*liznōjaną	source_protoform	lexical_proto	learn (iptv.2sg) — OE liorna	Unchanged citation now indexed under approved leorna heading.
+remove	pgmc	*líznô	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Finite-entry account focuses on its own selected cell.
+remove	pgmc	*líznô	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Selected input preserved with corrected reconstructed-form markup.
+remove	pgmc	*líznô	selected_input	trace_proto_input	learn (iptv.2sg) — OE liorna	Unchanged selected input now indexed under approved leorna heading.
+remove	pgmc	*líznô	source_protoform	lexical_protoform	learn (iptv.2sg) — OE liorna	Unchanged selected input now indexed under approved leorna heading.
+remove	pgmc	*líznōjaną	selected_input	trace_proto_input	learn — OE liornian	Unchanged selected input now indexed under approved leornian heading.
+remove	pgmc	*líznōjaną	source_protoform	lexical_protoform	learn — OE liornian	Unchanged selected input now indexed under approved leornian heading.
+remove	pgmc	*líznōθi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	Finite-entry account focuses on its own selected cell.
+remove	pgmc	*líznōθi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	Selected input preserved with corrected reconstructed-form markup.
+remove	pgmc	*líznōθi	selected_input	trace_proto_input	learn (3sg) — OE liornaþ	Unchanged selected input now indexed under approved leornaþ heading.
+remove	pgmc	*líznōθi	source_protoform	lexical_protoform	learn (3sg) — OE liornaþ	Unchanged selected input now indexed under approved leornaþ heading.
 add	oe	weþer	target_form	lexical_heading	wether — OE weþer	Authorized historical lexical discussion for existing regular row2283; unchanged Old English target.
 add	pgmc	*wéθruz	selected_input	trace_proto_input	wether — OE weþer	Exact authorized lexical input migration, approved_wether_input_migration.json; all387 final outputs preserved.
 add	pgmc	*wéθruz	source_protoform	lexical_protoform	wether — OE weþer	Source-supported masculine nominative singular u-stem, Kroonen2013 p.584 and Orel2003 pp.459-460.

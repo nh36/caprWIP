@@ -11,7 +11,7 @@ report manifest and class assembly manifest. Regenerate only with
 | audit | 393 |
 | legacy_current_required | 151 |
 | required | 158 |
-| assembled | 164 |
+| assembled | 165 |
 | production_pilots | 11 |
 | format_tests | 1 |
 | reviewed_rows | 13 |
@@ -25,7 +25,7 @@ research_only: 1935, 1947, 1948, 1994, 2156, 2218.
 
 required_not_assembled: 2055, 2120, 2327, 2328, 2329.
 
-assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113, 2185, 2200, 2283.
+assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113, 2137, 2185, 2200, 2283.
 
 ## Automated inspection routes, not controversy counts
 

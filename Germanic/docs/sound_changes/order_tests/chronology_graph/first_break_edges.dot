@@ -5,7 +5,7 @@ digraph first_break_chronology {
   rankdir=LR;
   node [shape=box, style="rounded,filled", fillcolor="#ebf8ff", fontname="Helvetica"];
   "SC014" [label="SC014\nProto-Northwest Germanic Unstressed Ai Monophthongization"];
-  "SC015" [label="SC015\nProto-Northwest Germanic I Lowering"];
+  "SC015" [label="SC015\nNorthwest Germanic consonant-conditioned I Lowering"];
   "SC016" [label="SC016\nOE Ws Palatal Glide"];
   "SC017" [label="SC017\nProto-Northwest Germanic U Lowering"];
   "SC018" [label="SC018\nProto-Northwest Germanic Stressed Monosyllable O Raising"];
@@ -82,7 +82,6 @@ digraph first_break_chronology {
   "SC014" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC014" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC015" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC015" -> "SC036" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC016" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC016" -> "SC017" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC017" -> "SC016" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];

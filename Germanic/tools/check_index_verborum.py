@@ -801,7 +801,6 @@ def assert_table_semantic_rows() -> None:
     for key in {
         ("oe", "creft", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:48"),
         ("oe", "craft", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:49"),
-        ("oe", "leornian", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:59"),
         ("oe", "næfla", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60"),
         ("oe", "rast", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59"),
         ("oe", "hlæhhan", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58"),
@@ -809,6 +808,9 @@ def assert_table_semantic_rows() -> None:
         ("oe", "nasu", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:69"),
     }:
         assert key in production_keys
+    # SC015 replaces the former learn comparison table with selected-cell prose.
+    assert ("oe", "leornian", "comparison_form",
+            "Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:59") not in production_keys
     for key in {
         ("oe", "cū", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:65"),
         ("oe", "cā", "comparison_form", "Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67"),

@@ -2385,41 +2385,20 @@ define PNWGmcULowering Ctx([
 ]
 ]);
 
-# NWGmc *i → *e lowering before non-high vowels (Campbell §114, Fulk §4.3).
-# Campbell: "i > e before mid and low vowels. In OE this change is shown only by
-# the common Gmc. words *nest* nest, and *wer* man... and by *spec* bacon beside *spic*."
-# Fulk §4.3: "PGmc. i might be lowered to e in parallel fashion before a mid or low
-# vowel in the next syllable. Undeniable examples are OE OHG nest < PIE *nizdos."
-# Fulk notes the change is "much less systematic" than u-lowering and subject to
-# analogical leveling — "leveling away of e being the commonest result."
-# Hogg (1992) p.45: treats this as a PGmc/early WGmc change yielding *nesta-.
-# Bülbring §81d: "*nëstoz 'Nest' aus älterem *nistoz" — explicit derivation.
-# Campbell §116: Redistribution blocked before nasal + consonant (same as u-lowering).
-#
-# CONSONANT CONDITIONING (Howell & Salmons 1997, Cercignani 1980):
-# - Velars and labials BLOCK i-lowering (they share place features with high vowels)
-# - Coronals are TRANSPARENT to i-lowering
-# - This explains why *nest, *wer show lowering (coronal clusters)
-#   but *fish, *lick, *liver retain *i (velar/labial in coda)
-#
-# ONSET-VELAR BLOCKING (extending Cercignani 1980 to OE):
-# Cercignani notes that in Old Icelandic, *i was retained AFTER *k and *g.
-# Our OE data suggests this also applies to OE: *xlidą → hlid (not *hled).
-# We implement this by requiring no velar ANYWHERE from word-start to *i.
-#
-# The rule: *i → *e before a non-high vowel, BUT ONLY IF:
-# 1. No velar appears anywhere before *i (onset blocking)
-# 2. All intervening consonants after *i are coronals (coda blocking)
-# 3. *i is in first syllable (stressed) — no vowel appears before *i
-# This prevents lowering of UNSTRESSED medial *i (which triggers i-umlaut).
-define EnglishStarNonVelar [EnglishStarAlphabet - EnglishStarVelar];
-define EnglishStarNonVelarConsonant [EnglishStarConsonant - EnglishStarVelar];
+# SC015: selected consonant-conditioned account (Hill 2017, pp. 153-158).
+# Preconsonantal/final z approximates tautosyllabicity; *twizna- remains
+# counterevidence, not a lexical exception. See sc015-adjudication.md.
 define PNWGmcILowering Ctx([
-    [
-    {*i} -> {*e} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel,
-    # Stressed variant (stress preserved):
-    {*í} -> {*é} || .#. EnglishStarNonVelarConsonant* _ EnglishStarCoronal+ EnglishStarNonHighVowel
-]
+    {*i} -> {*e} ||
+        .#. EnglishStarConsonant* _
+        [{*z} [EnglishStarConsonant | .#.]
+         | {*s} {*t}
+         | {*r}],
+    {*í} -> {*é} ||
+        .#. EnglishStarConsonant* _
+        [{*z} [EnglishStarConsonant | .#.]
+         | {*s} {*t}
+         | {*r}]
 ]);
 
 # N-stem final -n loss with nasalization (R/T vol.2 §3.1.4, §3.3.1).

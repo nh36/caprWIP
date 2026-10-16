@@ -18,13 +18,13 @@
     },
     {
       "change_id": "SC015",
-      "display_name": "Proto-Northwest Germanic I Lowering",
+      "display_name": "Northwest Germanic consonant-conditioned I Lowering",
       "lifecycle_status": "active",
       "rule_name": "PNWGmcILowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC015-nwgmc-i-lowering.md",
-      "card_type": "broad_far",
+      "card_type": "boundary_limited",
       "has_reciprocal_boundary": "no",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC036 and is broad/far rather than local."
+      "short_summary": "Former SC036 dependency belongs to the rejected following-vowel condition and mixed-stage world input; no independent historical edge survives. PWGmcChanges limit remains a runner observation."
     },
     {
       "change_id": "SC016",
@@ -768,21 +768,7 @@
       "strength": "runner_boundary",
       "interpretation_category": "runner_boundary",
       "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC036 and is broad/far rather than local."
-    },
-    {
-      "source_change_id": "SC015",
-      "target_change_id": "SC036",
-      "relation_type": "broad_far_chronology",
-      "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
-      "representative_lexemes": "world",
-      "representative_forms": "PGmc `*wír-àldu` yields expected OE `weorold`, but the later-shifted variant yields `wuruld`",
-      "strength": "broad_far",
-      "interpretation_category": "broad_far",
-      "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC036 and is broad/far rather than local."
+      "notes": "Preserved runner-boundary observation, not an independently demonstrated historical edge. The former SC036 dependency belongs to the superseded following-vowel condition."
     },
     {
       "source_change_id": "SC016",

@@ -3308,8 +3308,8 @@ English Proto Input: *láubą
 Outcome: lēaf
 # learn
 PROTO: *líznōjaną
-EXPECTED: liornian
-OUTPUTS: liornian
+EXPECTED: leornian
+OUTPUTS: leornian
 
 
 
@@ -3319,13 +3319,13 @@ English Proto Input: *líznōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Rhotacism: *lírnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōjaną<br>OE Heavy Syllable Nasal Apocope: *líornōjan<br>OE Secondary Nasalization: *líornōjąn<br>OE I Umlaut: *líornējąn<br>OE Unstressed Long Vowel Shortening: *líornejąn<br>OE Weak Tail Reduction: *líornejan<br>OE Intervocalic J Vocalization: *líorneian<br>OE Unstressed EI Contraction: *líornian |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *léznōjaną<br>EAF Rhotacism: *lérnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornōjaną<br>OE Heavy Syllable Nasal Apocope: *léornōjan<br>OE Secondary Nasalization: *léornōjąn<br>OE I Umlaut: *léornējąn<br>OE Unstressed Long Vowel Shortening: *léornejąn<br>OE Weak Tail Reduction: *léornejan<br>OE Intervocalic J Vocalization: *léorneian<br>OE Unstressed EI Contraction: *léornian |
 
 
 
 ### Orthography & surface
 
-Outcome: liornian
+Outcome: leornian
 
 
 
@@ -3333,7 +3333,7 @@ Outcome: liornian
 
 #### Project note
 
-Original TSV note: Northumbrian form (Campbell §154.3 fn.3). WS leornian has analogical eo from paradigm leveling + io/eo merger (§296).
+Original TSV note: Selected attested infinitive leornian (Crawford 1922 p.71); liornian retained as an attested alternative. SC015 early consonant-conditioned lowering gives leorn-. Weak-III prehistory, later mutation, dialect developments and levelling remain uncertain; io spelling does not alone establish oldest timbre. See sc015-adjudication.md and learn-attestations.md.
 # leather
 PROTO: *léθrą
 EXPECTED: leþer
@@ -8935,8 +8935,8 @@ selected obliques used for cow, night and meed: distinguish the history
 of the lexeme's paradigm from the sound-law path of the chosen cell.
 # learn (3sg)
 PROTO: *líznōθi
-EXPECTED: liornaþ
-OUTPUTS: liornaþ
+EXPECTED: leornaþ
+OUTPUTS: leornaþ
 
 
 
@@ -8946,14 +8946,14 @@ English Proto Input: *líznōθi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líznōθ<br>EAF Rhotacism: *lírnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornōθ<br>OE Late O Shortening: *líornoθ<br>OE Final Unstressed O Lowering: *líornaθ |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *líznōθ<br>PNWGmc I Lowering: *léznōθ<br>EAF Rhotacism: *lérnōθ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornōθ<br>OE Late O Shortening: *léornoθ<br>OE Final Unstressed O Lowering: *léornaθ |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: *líornaþ
-Outcome: liornaþ
+Old English Orthography: *léornaþ
+Outcome: leornaþ
 
 
 
@@ -8961,11 +8961,11 @@ Outcome: liornaþ
 
 #### Project note
 
-Original TSV note: Class II weak 3sg. Regular: *-ōθi → -aþ. Root has io from breaking before rn. No i-umlaut: 3sg ending never had -j-. Forms with -eþ are dialectal (Campbell §757).
+Original TSV note: Selected present indicative3sg leornaþ: Miller 1891 p.380 lines26-27 prints leornað with singular swa hwylc swa; final eth normalized to thorn. Former liornaþ retained as previous normalized selection, with exact-token attestation not established. SC015 lowers inherited lizn-; weak-III prehistory, mutation and levelling remain uncertain. late_analogy describes family remodelling, not finite-cell selection. See learn-attestations.md.
 # learn (iptv.2sg)
 PROTO: *líznô
-EXPECTED: liorna
-OUTPUTS: liorna
+EXPECTED: leorna
+OUTPUTS: leorna
 
 
 
@@ -8975,13 +8975,13 @@ English Proto Input: *líznô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Rhotacism: *lírnô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *líornô<br>OE Unstressed Long Vowel Shortening: *líorna |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *léznô<br>EAF Rhotacism: *lérnô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornô<br>OE Unstressed Long Vowel Shortening: *léorna |
 
 
 
 ### Orthography & surface
 
-Outcome: liorna
+Outcome: leorna
 
 
 
@@ -8989,7 +8989,7 @@ Outcome: liorna
 
 #### Project note
 
-Original TSV note: Northumbrian iptv.2sg. Uses io from regular breaking; WS leorna has leveled eo.
+Original TSV note: Selected attested imperative2sg leorna (Deut.14:23; Crawford 1922 p.351). Former liorna retained as a cited alternative. SC015 lowers inherited lizn-; weak-III prehistory, later mutation and levelling are not settled. late_analogy retains the inherited family-remodelling classification, not a claim that selecting a finite cell is analogy. See learn-attestations.md.
 # lick (3sg)
 PROTO: *líkkōθi
 EXPECTED: liccaþ
@@ -9486,13 +9486,13 @@ English Proto Input: *θístilas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θístilæs<br>OE L Adjacent Syncope: *θístlæs<br>OE Unstressed AE Merger: *θístles |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *θéstilas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θéstilæs<br>OE I Umlaut: *θistilæs<br>OE L Adjacent Syncope: *θistlæs<br>OE Unstressed AE Merger: *θistles |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: þ*ístles
+Old English Orthography: þ*istles
 Outcome: þistles
 
 

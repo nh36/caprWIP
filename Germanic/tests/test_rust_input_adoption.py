@@ -59,7 +59,7 @@ class RustInputAdoptionTests(unittest.TestCase):
     def test_original380_rust_identity_requires_exact_migration(self):
         legacy = read_tsv(BASE / "cascade_baseline_outputs_legacy380.tsv")
         migrations = [row for row in read_tsv(BASE / "approved_input_migrations.tsv")
-                      if row["row_id"] != "2283"]
+                      if row["row_id"] not in {"2283", "2095", "2313", "2314"}]
         original = next(row for row in legacy
                         if (row["concept"], row["counterpart"]) == ("rust", "rust"))
         self.assertEqual(original["proto"], "*rústō")
@@ -99,7 +99,8 @@ class RustInputAdoptionTests(unittest.TestCase):
             ):
                 (target / destination).write_bytes((BASE / source).read_bytes())
             migrations_path = target / "approved_input_migrations.tsv"
-            migrations = [row for row in read_tsv(migrations_path) if row["row_id"] != "2283"]
+            migrations = [row for row in read_tsv(migrations_path)
+                          if row["row_id"] not in {"2283", "2095", "2313", "2314"}]
             with migrations_path.open("w", encoding="utf-8", newline="") as handle:
                 writer = csv.DictWriter(handle, fieldnames=list(migrations[0]), delimiter="\t")
                 writer.writeheader()

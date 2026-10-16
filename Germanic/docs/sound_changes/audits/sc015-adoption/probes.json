@@ -1,0 +1,278 @@
+{
+  "fst_sha256": "da04db7a21664bf9a606e331c5dd484a023d00e00a5ecf7c19ea3e8e310789e9",
+  "corpus_sha256": "514cfe096b636ea6790361787a154a70e6dafb7d8bf3e4936fced51f3b1b2a6f",
+  "components": [
+    {
+      "id": "nistan",
+      "component": "PNWGmcILowering",
+      "input": "*n*i*s*t*a*n",
+      "expected": "*n*e*s*t*a*n",
+      "role": "positive",
+      "basis": "Hill2017 p.153",
+      "outputs": [
+        "*n*e*s*t*a*n"
+      ]
+    },
+    {
+      "id": "mizdon",
+      "component": "PNWGmcILowering",
+      "input": "*m*i*z*d*ō*n",
+      "expected": "*m*e*z*d*ō*n",
+      "role": "positive",
+      "basis": "Hill2017 p.153",
+      "outputs": [
+        "*m*e*z*d*ō*n"
+      ]
+    },
+    {
+      "id": "wiraz",
+      "component": "PNWGmcILowering",
+      "input": "*w*i*r*a*z",
+      "expected": "*w*e*r*a*z",
+      "role": "positive",
+      "basis": "Hill2017 p.156",
+      "outputs": [
+        "*w*e*r*a*z"
+      ]
+    },
+    {
+      "id": "iz",
+      "component": "PNWGmcILowering",
+      "input": "*i*z",
+      "expected": "*e*z",
+      "role": "positive",
+      "basis": "Hill2017 p.153",
+      "outputs": [
+        "*e*z"
+      ]
+    },
+    {
+      "id": "hiz",
+      "component": "PNWGmcILowering",
+      "input": "*x*i*z",
+      "expected": "*x*e*z",
+      "role": "positive",
+      "basis": "Hill2017 p.153; h normalized x",
+      "outputs": [
+        "*x*e*z"
+      ]
+    },
+    {
+      "id": "hir",
+      "component": "PNWGmcILowering",
+      "input": "*x*i*r",
+      "expected": "*x*e*r",
+      "role": "positive",
+      "basis": "Hill2017 pp.156–158; conditional precursor",
+      "outputs": [
+        "*x*e*r"
+      ]
+    },
+    {
+      "id": "fish",
+      "component": "PNWGmcILowering",
+      "input": "*f*i*s*k*a*z",
+      "expected": "*f*i*s*k*a*z",
+      "role": "negative",
+      "basis": "Hill2017 p.154",
+      "outputs": [
+        "*f*i*s*k*a*z"
+      ]
+    },
+    {
+      "id": "wisko",
+      "component": "PNWGmcILowering",
+      "input": "*w*i*s*k*ō",
+      "expected": "*w*i*s*k*ō",
+      "role": "negative",
+      "basis": "Hill2017 pp.154–155",
+      "outputs": [
+        "*w*i*s*k*ō"
+      ]
+    },
+    {
+      "id": "bitanaz",
+      "component": "PNWGmcILowering",
+      "input": "*b*i*t*a*n*a*z",
+      "expected": "*b*i*t*a*n*a*z",
+      "role": "negative",
+      "basis": "Hill2017 pp.151–152; participial probe",
+      "outputs": [
+        "*b*i*t*a*n*a*z"
+      ]
+    },
+    {
+      "id": "bithanaz",
+      "component": "PNWGmcILowering",
+      "input": "*b*i*ð*a*n*a*z",
+      "expected": "*b*i*ð*a*n*a*z",
+      "role": "negative",
+      "basis": "Hill2017 pp.151–152; Verner participial probe",
+      "outputs": [
+        "*b*i*ð*a*n*a*z"
+      ]
+    },
+    {
+      "id": "nidana",
+      "component": "PNWGmcILowering",
+      "input": "*n*i*d*a*n*a",
+      "expected": "*n*i*d*a*n*a",
+      "role": "negative",
+      "basis": "Hill2017 p.152; schematic WGmc adverb",
+      "outputs": [
+        "*n*i*d*a*n*a"
+      ]
+    },
+    {
+      "id": "lid",
+      "component": "PNWGmcILowering",
+      "input": "*x*l*í*d*ą",
+      "expected": "*x*l*í*d*ą",
+      "role": "negative",
+      "basis": "live row2100; Lloyd1966 p.738",
+      "outputs": [
+        "*x*l*í*d*ą"
+      ]
+    },
+    {
+      "id": "long",
+      "component": "PNWGmcILowering",
+      "input": "*w*ī*r*a*z",
+      "expected": "*w*ī*r*a*z",
+      "role": "domain_control",
+      "basis": "synthetic long-vowel exclusion",
+      "outputs": [
+        "*w*ī*r*a*z"
+      ]
+    },
+    {
+      "id": "later_nucleus",
+      "component": "PNWGmcILowering",
+      "input": "*a*n*i*s*t*ą",
+      "expected": "*a*n*i*s*t*ą",
+      "role": "domain_control",
+      "basis": "synthetic noninitial nucleus",
+      "outputs": [
+        "*a*n*i*s*t*ą"
+      ]
+    },
+    {
+      "id": "intervocalic_z",
+      "component": "PNWGmcILowering",
+      "input": "*w*i*z*a*m",
+      "expected": "*w*i*z*a*m",
+      "role": "domain_control",
+      "basis": "synthetic z-before-vowel",
+      "outputs": [
+        "*w*i*z*a*m"
+      ]
+    },
+    {
+      "id": "velar_onset",
+      "component": "PNWGmcILowering",
+      "input": "*k*i*r*a*z",
+      "expected": "*k*e*r*a*z",
+      "role": "domain_control",
+      "basis": "synthetic onset-velar contrast",
+      "outputs": [
+        "*k*e*r*a*z"
+      ]
+    },
+    {
+      "id": "acute",
+      "component": "PNWGmcILowering",
+      "input": "*n*í*s*t*ą",
+      "expected": "*n*é*s*t*ą",
+      "role": "domain_control",
+      "basis": "acute notation of selected nest",
+      "outputs": [
+        "*n*é*s*t*ą"
+      ]
+    },
+    {
+      "id": "high_following",
+      "component": "PNWGmcILowering",
+      "input": "*n*i*s*t*i*j*a*n",
+      "expected": "*n*e*s*t*i*j*a*n",
+      "role": "domain_control",
+      "basis": "Hill2017 p.153; mutation precursor",
+      "outputs": [
+        "*n*e*s*t*i*j*a*n"
+      ]
+    },
+    {
+      "id": "list",
+      "component": "PNWGmcILowering",
+      "input": "*l*i*s*t*i*z",
+      "expected": "*l*e*s*t*i*z",
+      "role": "domain_control",
+      "basis": "Hill2017 p.153; before mutation",
+      "outputs": [
+        "*l*e*s*t*i*z"
+      ]
+    },
+    {
+      "id": "twine",
+      "component": "PNWGmcILowering",
+      "input": "*t*w*i*z*n*a",
+      "expected": "*t*w*e*z*n*a",
+      "role": "counterevidence",
+      "basis": "Orel2003 p.414; NOT a correct reflex",
+      "outputs": [
+        "*t*w*e*z*n*a"
+      ]
+    },
+    {
+      "id": "nistijan_mutation",
+      "component": "AFMut",
+      "input": "*n*i*s*t*i*j*a*n",
+      "expected": "*n*i*s*t*i*j*a*n",
+      "role": "masking_control",
+      "basis": "Hill2017 p.153",
+      "outputs": [
+        "*n*i*s*t*i*j*a*n"
+      ]
+    },
+    {
+      "id": "listiz_mutation",
+      "component": "AFMut",
+      "input": "*l*i*s*t*i*z",
+      "expected": "*l*i*s*t*i*z",
+      "role": "masking_control",
+      "basis": "Hill2017 p.153",
+      "outputs": [
+        "*l*i*s*t*i*z"
+      ]
+    }
+  ],
+  "learn_paradigm": [
+    {
+      "row_id": "2095",
+      "cell": "infinitive",
+      "input": "*líznōjaną",
+      "target": "leornian",
+      "outputs": [
+        "leornian"
+      ]
+    },
+    {
+      "row_id": "2313",
+      "cell": "imperative2sg",
+      "input": "*líznô",
+      "target": "leorna",
+      "outputs": [
+        "leorna"
+      ]
+    },
+    {
+      "row_id": "2314",
+      "cell": "present_indicative3sg",
+      "input": "*líznōθi",
+      "target": "leornaþ",
+      "outputs": [
+        "leornaþ"
+      ]
+    }
+  ],
+  "scope": "Supplementary comparative and synthetic component probes, not corpus admissions. Twine's lowered prediction is documented counterevidence, not historical validation."
+}

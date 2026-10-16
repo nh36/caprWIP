@@ -4,3 +4,6 @@ row_id	concept	counterpart	new_counterpart	old_proto	new_proto	old_outputs	new_o
 2224	straw	strēaw	strēaw	*stráwą	*stráwą	strēaw	strēa	Germanic/docs/sound_changes/audits/sc034-adjudication.md
 2162	rust	rust	rust	*rústō	*rústaz	rost	rost	Germanic/docs/sound_changes/audits/sc017-adjudication.md
 2283	wether	weþer	weþer	*wíθrą	*wéθruz	weþer	weþer	Germanic/docs/sound_changes/audits/sc015-adjudication.md
+2095	learn	liornian	leornian	*líznōjaną	*líznōjaną	liornian	leornian	Germanic/docs/sound_changes/audits/sc015-adjudication.md
+2313	learn (iptv.2sg)	liorna	leorna	*líznô	*líznô	liorna	leorna	Germanic/docs/sound_changes/audits/sc015-adjudication.md
+2314	learn (3sg)	liornaþ	leornaþ	*líznōθi	*líznōθi	liornaþ	leornaþ	Germanic/docs/sound_changes/audits/sc015-adjudication.md

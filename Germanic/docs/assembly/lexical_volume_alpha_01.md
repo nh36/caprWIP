@@ -29,7 +29,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:
 
-- Regular derivations: 85
+- Regular derivations: 86
 - Attested variants: 4
 - Early analogy: 36
 - Late analogy: 29
@@ -3060,9 +3060,9 @@ Clark Hall and Bosworth-Toller both record _lædan_ 'lead' / _lǣdan_ 'lead' as 
 
 From [láidijaną]{.recon} ‘lead’, monophthongization of _\*ai_ first gives a _\*lād-_ stage. Later syncope, i-mutation, weak-tail reduction, and loss of _j_ after a heavy stem yield _lǣdan_ 'lead', so the development represented here is fully regular [@RingeTaylor2014].
 
-### learn — OE _liornian_
+### learn — OE _leornian_
 
-Derivation: _\*líznōjaną_ > _liornian_ (regular).
+Derivation: _\*líznōjaną_ > _leornian_ (regular).
 
 #### Derivation trace
 
@@ -3082,7 +3082,8 @@ Proto input: _\*líznōjaną_
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Rhotacism} & \emph{*lírnōjaną} \\
+\mbox{PNWGmc I Lowering} & \emph{*léznōjaną} \\
+\mbox{EAF Rhotacism} & \emph{*lérnōjaną} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -3096,14 +3097,14 @@ Proto input: _\*líznōjaną_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.26\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Breaking} & \emph{*líornōjaną} \\
-OE Heavy Syllable Nasal Apocope & \emph{*líornōjan} \\
-\mbox{OE Secondary Nasalization} & \emph{*líornōjąn} \\
-\mbox{OE I Umlaut} & \emph{*líornējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*líornejąn} \\
-\mbox{OE Weak Tail Reduction} & \emph{*líornejan} \\
-OE Intervocalic J Vocalization & \emph{*líorneian} \\
-\mbox{OE Unstressed EI Contraction} & \emph{*líornian} \\
+\mbox{OE Breaking} & \emph{*léornōjaną} \\
+OE Heavy Syllable Nasal Apocope & \emph{*léornōjan} \\
+\mbox{OE Secondary Nasalization} & \emph{*léornōjąn} \\
+\mbox{OE I Umlaut} & \emph{*léornējąn} \\
+OE Unstressed Long Vowel Shortening & \emph{*léornejąn} \\
+\mbox{OE Weak Tail Reduction} & \emph{*léornejan} \\
+OE Intervocalic J Vocalization & \emph{*léorneian} \\
+\mbox{OE Unstressed EI Contraction} & \emph{*léornian} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -3112,49 +3113,127 @@ OE Intervocalic J Vocalization & \emph{*líorneian} \\
 }
 \endgroup
 
-Old English form: _liornian_
+Old English form: _leornian_
 
-#### Reconstruction and comparative evidence
+#### Comparative reconstruction and the inherited formation
 
-Ringe and Taylor place the verb in a class-II weak family of the _\*liznō-_
-type [@RingeTaylor2014], and Kroonen keeps the same comparative base for the
-Germanic lexeme [@Kroonen2013]. The derivational input therefore requires no change
-of stem class or paradigm cell.
+Old English [leornian]{.lex lang=oe} 'learn' belongs with
+Old High German [lernēn]{.lex lang=ohg} 'learn' beside
+[lirnēn]{.lex lang=ohg} 'learn', and Old Saxon [līnon]{.lex lang=os}
+'learn'. Kroonen reconstructs the weak verb \emph{*liznōn-};
+Orel likewise preserves a high-vowel comparative formation.
+The reconstructed \emph{*z} is important both to the nasal
+formation and to the later rhotic of English. Neither the
+dictionary spelling of the English lemma nor its modern
+pronunciation establishes an inherited \emph{*e}
+[@Kroonen2013, p. 340; @Orel2003, p. 247].
 
-The non-obvious issue is dialectal. Campbell records Northumbrian _liornian_ 'learn'
-beside _leornian_ 'learn', and he states that the _eo_ of _leornian_ 'learn' is secondary,
-while Northumbrian preserves forms with _io_, where original _eo_ and _io_
-remain distinct [@Campbell1959, §123 n. 2].
+The selected infinitive [líznōjaną]{.iv .recon lang=pgmc sort=liznojana role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:32:1"}
+'learn' retains that inherited root. Its extended weak-verb
+shape should not be confused with a verbatim quotation of
+Kroonen's citation stem, or with the distinct imperative and
+third-singular cells. The family underwent conjugational
+remodelling; an English class II paradigm does not by itself
+recover every Proto-Germanic ending. Ringe and Taylor discuss
+the earlier formation separately from its later English
+continuation [@RingeTaylor2014, pp. 38, 84].
 
-#### Old English evidence
+#### Attested vowels and selected cells
 
-[liornian]{.recon} 'learn' is the Northumbrian member of the Old English family. Dictionary practice more often privileges _leornian_ 'learn' as the ordinary headword [@ClarkHall1960; @BrightCassidyRingler1971], but Campbell's dialect evidence shows that _liornian_ 'learn' is a genuine Old English form [@Campbell1959, §123 n. 2].
+The infinitive selected here is independently attested.
+In Ælfric's Treatise the clause beginning *Gif þu nelt witan*
+continues *þu scealt leornian*: the modal requires an
+infinitive, so the grammatical identification does not
+depend on a dictionary headword. The edition prints this
+on p.71. The same volume gives the singular imperative
+[leorna]{.lex lang=oe} 'learn!' in Deuteronomy14:23,
+followed by a clause with the singular addressee *þu*.
+These are textual occurrences, not cells generated
+from an instructional paradigm
+[@Crawford1922, pp. 71, 351].
 
-This entry therefore remains compact. The point is to state clearly that the
-Old English form here belongs to the Northumbrian side of the OE evidence rather than
-to the leveled _leornian_ 'learn' headword tradition.
+For the companion present indicative third singular,
+Miller's Bede prints [leornað]{.lex lang=oe} 'learns'
+after *swa hwylc swa* 'whoever', coordinated with
+*rædeð* 'reads'. The singular subject disambiguates
+the ending, which in isolation could resemble a plural.
+CAPR represents final dental-fricative spelling with
+thorn and therefore selects [leornaþ]{.lex lang=oe}
+'learns', without changing the root vowel, ending
+vowel or grammatical cell [@Miller1891, p. 380, ll. 26--27].
 
-#### Development to Old English
+The alternative [liornian]{.lex lang=oe} 'learn' and
+finite [liorna]{.lex lang=oe} 'learn!' remain important.
+Campbell's traditional account relates *io/eo* to
+breaking, later vowel developments and levelling.
+It must not be compressed into a universal equation
+of *liorn- with conservative Northumbrian and *leorn-
+with secondary West Saxon: early West Saxon also has
+the high-vowel spelling. A conservative spelling is
+not necessarily an unchanged inherited vowel
+[@Campbell1959, pp. 48, 59, 125].
 
-From [líznōjaną]{.recon} ‘learn’, the expected Old English developments include rhotacism of
-_z_, followed by breaking before _r_ plus consonant, and the ordinary reduction
-of the weak verbal ending. The result is _liornian_ 'learn', preserving the _io_
-spelling that Campbell associates with Northumbrian where original _eo_ and
-_io_ remain distinct [@Campbell1959, §123 n. 2].
+#### Lowering, mutation and the weak paradigm
 
-_Leornian_ reflects the later _eo_ development that Campbell treats as
-secondary [@Campbell1959, §123 n. 2; §296]. The selected Northumbrian target is
-therefore the regular comparison form for the _i_-grade member of the family.
+The account adopted in
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+lowers \emph{*i} before preconsonantal \emph{*z},
+independently of the following vowel. For the selected
+infinitive, early \emph{*lizn- > lezn-} is followed
+by rhotacism and English breaking before \emph{*rn}.
+The resulting *leorn- is not obtained by selecting
+an inherited mid-vowel reconstruction.
+Hill explains the competing high-vowel forms through
+later i-mutation in extended stems and subsequent
+paradigmatic history [@Hill2017, p. 153, n. 25].
 
-#### Form comparison
+That explanation is plausible but not a recovered
+complete paradigm. Jasanoff had already connected
+the family with the history of weak class III.
+He considers a lost third-singular \emph{*lizniþ}
+as a possible source of the high vowel of OHG
+*lirnēn*, rather than requiring a disputed
+first-singular reconstruction. The proposal matters
+because it supplies a particular morphological
+source for mutation or levelling, not a general
+appeal to analogy wherever the desired vowel is
+missing [@Jasanoff1973, pp. 865, 868].
 
-The comparison below sets the relevant forms side by side. It distinguishes the regular Northumbrian form
-modeled here from the better-known West Saxon headword.
+The original distribution of suffixes, their
+extension and the direction of later levelling
+remain uncertain. Later class II morphology cannot
+be projected backwards merely to exclude every
+earlier high-front trigger; conversely, one possible
+trigger does not establish that all three selected
+cells once contained it. The modern discussion of
+the class III family preserves these limitations
+[@RingeTaylor2014, pp. 38, 84;
+@TarsiLaker2026, pp. 42--43].
 
-| Form | Status | Relevance to this entry |
-| :--- | :--- | :--- |
-| _\*líznōjaną_ > _liornian_ | computed regular output; attested Northumbrian comparison form | selected comparison |
-| _leornian_ | attested later _eo_ form and dictionary headword | useful control, but not the target of this entry |
+#### Interpretation of the selected derivation
+
+The three entries represent one etymological family:
+an infinitive, an imperative singular and a present
+third singular, not three independent proofs of a
+sound law. Their inherited inputs remain distinct,
+while the selected *leorn- vocalism receives a
+regular consonant-conditioned history. Selection
+of these textually supported vowels does not
+disprove the *liorn- tradition or resolve the
+whole weak-verb paradigm
+[@Crawford1922, pp. 71, 351; @Miller1891, p. 380;
+@Jasanoff1973, pp. 865, 868].
+
+The finite entries retain an analogical family
+classification for the conjugational remodelling,
+not because finite-cell selection is itself
+analogy. No additional analogical replacement of
+the selected root vowel is required. The distinction
+between regular phonology of the form compared here
+and uncertain earlier paradigm history is
+essential to interpreting the derivations
+[@Jasanoff1973, pp. 865, 868;
+@TarsiLaker2026, pp. 42--43].
 
 ### lid — OE _hlid_
 
@@ -3557,6 +3636,90 @@ From [mōdēr]{.recon} ‘mother’, the regular suffixal development yields _m�
 #### Form comparison
 
 The note therefore concerns inherited vocalism rather than a different lexeme: _mōder_ 'mother' is the regularized nominative represented here, but dictionaries usually print _mōdor_ / _modor_ 'mother', and the oblique evidence survives in _mēder_ 'mother' [@ClarkHall1960; @RingeTaylor2014].
+
+### nest — OE _nest_
+
+Derivation: _\*nístą_ > _nest_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*nístą_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc I Lowering} & \emph{*néstą} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+OE Heavy Syllable Nasal Apocope & \emph{*nést} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _nest_
+
+#### Comparative formation and lowering
+
+Old English [nest]{.iv lang=oe sort=nest role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2137-nest-nest.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2137-nest-nest.model.md:21:1"}
+'nest' continues an inherited neuter formation.
+Kroonen reconstructs \emph{*nista-}, Orel the
+full-word \emph{*nistan}. Their comparanda include
+Latin [nīdus]{.lex lang=lat} 'nest' and Sanskrit
+[nīḍá-]{.lex lang=skt} 'nest'. The traditional
+analysis combines an element meaning 'down'
+with a zero-grade formation of the root 'sit'.
+The English word must not be confused with
+the separate food noun also spelled *nest*
+[@Kroonen2013, pp. 388, 391; @Orel2003, p. 287].
+
+The selected
+[nístą]{.iv .recon lang=pgmc sort=nista role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2137-nest-nest.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2137-nest-nest.model.md:34:1"}
+'nest' retains the inherited high vowel.
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+lowers it immediately before \emph{*st}, rather
+than because of the next vowel. This is the
+principal independent lexical support for
+Hill's \emph{*st} condition. The contrast with
+\emph{*sk} in the fish family is useful,
+but it does not turn one inherited nest
+etymon into numerous independent witnesses
+[@Hill2017, pp. 153--155].
+
+Later mutation in a derivative with a high-front
+trigger can conceal an earlier mid vowel.
+Such derivatives test chronological compatibility;
+they do not establish every detail of a lost
+paradigm. The general productivity of lowering
+before \emph{*st} is less securely demonstrated
+than lowering before inherited \emph{*r}, and
+the adopted unified law retains that evidential
+qualification [@Hill2017, pp. 153--156].
 
 ### net — OE _nett_
 
@@ -9927,28 +10090,44 @@ Old English form: _weorold_
 
 #### Reconstruction and comparative evidence
 
-The word is the old compound 'age of men'. Orel and the _\*wira-_ tradition
-reconstruct the older _i_-vocalism, while Ringe and Taylor discuss the lowered form
+The word is the old compound 'age of men'. Orel reconstructs
+an already mid-vowelled compound, and Ringe and Taylor discuss the form
 [weraldiz]{.recon} 'world' and its pre-Old-English chain [weraldu]{.recon} 'world' > [weruld]{.recon} 'world'
-[@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
+[@Orel2003, p. 462; @RingeTaylor2014, p. 326]. Kluge-Seebold gives the
 compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English _weorold_ 'world'
 [@KlugeSeebold2011, 981].
 
 The derivational input [wír-àldu]{.iv .recon lang=pgmc variety=transponent sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:28:1"} ‘world’ therefore combines the older _\*wir-_ vowel of the comparative headword with
 the early shift of the compound into the ō-stems that Ringe and
-Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
+Taylor note for this lexeme [@RingeTaylor2014, p. 326]. The early analogical step lies
 in that stem-class reassignment; the later phonological developments can then run
 regularly.
+
+The form compared here is a transponent combining an earlier
+first-element vowel with a later inflectional formation,
+not an independently quoted single historical stage.
+An already \emph{*wer-} compound requires no lowering
+in its own derivation. Accordingly the selected
+transponent cannot prove that
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+historically preceded
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising).
+The adopted consonantal lowering has no following-vowel
+trigger for interstress raising to remove. The two
+processes remain compatible in this derivation without
+that supposed ordering argument
+[@Orel2003, p. 462; @RingeTaylor2014, p. 326;
+@Hill2017, pp. 153--156].
 
 #### Old English evidence
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
-Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37:1"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37:2"} 'world', Mercian [_weoruld_]{.iv lang=oe variety=merc sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37:3"} 'world', Northumbrian
-[_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:38:1"} 'world', and Kentish [_wiarald_]{.iv lang=oe variety=kent sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:38:2"} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
-set, including the syncopated [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:39:1"} 'world' and later rounded [_wurold_]{.iv lang=oe sort=wurold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:39:2"} 'world'
+Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:53:1"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:53:2"} 'world', Mercian [_weoruld_]{.iv lang=oe variety=merc sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:53:3"} 'world', Northumbrian
+[_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:54" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:54:1"} 'world', and Kentish [_wiarald_]{.iv lang=oe variety=kent sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:54" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:54:2"} 'world' [@RingeTaylor2014, p. 326]. Sievers-Brunner and Bright present the same wider
+set, including the syncopated [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:55" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:55:1"} 'world' and later rounded [_wurold_]{.iv lang=oe sort=wurold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:55" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:55:2"} 'world'
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
-The Old English form used here is the West Saxon form [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:42:1"} 'world'. It is an attested Old
+The Old English form used here is the West Saxon form [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:58:1"} 'world'. It is an attested Old
 English form within that broader variant cluster, not the only form the lexeme
 ever shows.
 
@@ -9962,7 +10141,7 @@ _weorold_ 'world'.
 
 This sequence matches the comparative background in Ringe and Taylor's
 literature-stage chain for the word while preserving the _\*wir-_ notation of
-the comparative label [@RingeTaylor2014, 341]. The modeled Old English form
+the comparative label [@RingeTaylor2014, p. 326]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
 
@@ -9973,10 +10152,10 @@ OE-facing stage chosen for the derivation.
 
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:67:1"} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
-| literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:1"} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:2"} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:3"} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:4"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:68:5"} 'world' | explains the older comparative literature cited for the word |
-| Old English-facing input | [_\*wír-àldu_]{.iv lang=pgmc variety=transponent sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:69:2"} 'world' | exact match for the West Saxon form used here |
-| broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:1"} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:2"} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:3"} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:4"} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70:5"} 'world' | real attested comparanda that remain outside that West Saxon line |
+| comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:83:1"} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
+| literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84:1"} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84:2"} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84:3"} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84:4"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84:5"} 'world' | explains the older comparative literature cited for the word |
+| Old English-facing input | [_\*wír-àldu_]{.iv lang=pgmc variety=transponent sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:85" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:85:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:85" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:85:2"} 'world' | exact match for the West Saxon form used here |
+| broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86:1"} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86:2"} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86:3"} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86:4"} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:86:5"} 'world' | real attested comparanda that remain outside that West Saxon line |
 
 ### youth — OE _ġeoguþ_
 
@@ -11266,8 +11445,8 @@ evidence for the [_meord_]{.iv lang=oe sort=meord role=comparison_form source_re
 
 The wider history of competing [_mēd_]{.iv lang=oe sort=med role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:25:1"} 'meed, reward' remains disputed. Kroonen and Fulk
 explain it through some form of _z_-loss and compensatory lengthening
-[@Kroonen2013, 410; @Fulk2018, 69], while Orel keeps
-a doublet analysis [@Orel2003, 311]. The comparison here concerns the
+[@Kroonen2013, p. 370; @Fulk2018, p. 52], while Orel keeps
+a doublet analysis [@Orel2003, p. 272]. The comparison here concerns the
 attested oblique line _meorde_.
 
 #### Old English evidence
@@ -11285,14 +11464,35 @@ _mēd_ 'meed'.
 #### Development to Old English
 
 Ringe and Taylor give the broader noun history as [mizdo]{.recon} 'reward' > [mizdu]{.recon} 'reward'
-> OE meord ~ méd [@RingeTaylor2014, 99]. The fuller oblique-cell path modeled
-here spells out the intermediate rhotacism, monophthongization, lowering,
+> OE meord ~ méd [@RingeTaylor2014, p. 84]. The fuller oblique-cell path modeled
+here spells out the intermediate monophthongization, lowering, rhotacism,
 breaking, and unstressed-shortening steps needed for the selected dative-singular
 comparison.
 
 This entry therefore follows the attested oblique line within the broader
 development. It does not depend on a full decision about the history of the
 competing [_mēd_]{.iv lang=oe sort=med role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:53:1"} 'meed, reward' tradition.
+
+The consonantal distinction is substantial. Retained
+\emph{*z} can become a rhotic, producing the consonantal
+group that conditions English breaking in *meord-.
+Loss of the sibilant with compensatory lengthening
+instead leads toward the long-vowel *mēd* tradition.
+These are alternative histories of the consonantal
+sequence, not two interchangeable spellings of the
+selected dative [@Kroonen2013, p. 370;
+@Crist2002, pp. 3--6].
+
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+places lowering before either continuation: its
+condition is the original preconsonantal \emph{*z},
+not the later rhotic or a particular following
+vowel. The selected \emph{*mízdai} therefore supplies
+a positive application with a historically relevant
+consonant group. It does not independently establish
+the entire history of the rival nominative or the
+absolute date of every lowering environment
+[@Hill2017, p. 153; @Crist2002, pp. 3--6].
 
 #### Paradigm comparison
 
@@ -11301,10 +11501,10 @@ the broader lemma history.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [_\*mizdō_]{.iv lang=pgmc sort=mizdo role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:62:1"} | inferred lemma outcome [_meord_]{.iv lang=oe sort=meord role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:62:2"} 'meed' | [_meord_]{.iv lang=oe sort=meord role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:62:3"} 'meed' | useful background, but the bare lemma is reconstructed rather than directly attested |
-| selected dative singular | [_\*mízdai_]{.iv lang=pgmc sort=mizdai role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:63:1"} | regular output: [_meorde_]{.iv lang=oe sort=meorde role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:63:2"} 'meed' | [_meorde_]{.iv lang=oe sort=meorde role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:63:3"} 'meed' | exact match between derivational input and attested target |
-| genitive singular | [_\*mizdōz_]{.iv lang=pgmc sort=mizdoz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:64" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:64:1"} | regular output: [_meorde_]{.iv lang=oe sort=meorde role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:64" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:64:2"} 'meed' | [_meorde_]{.iv lang=oe sort=meorde role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:64" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:64:3"} 'meed' | converges on the same attested string, but the dat.sg. has the clearest direct support |
-| genitive plural control | plural oblique line | attested [_meorda_]{.iv lang=oe sort=meorda role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:65:1"} 'meed' | [_meorda_]{.iv lang=oe sort=meorda role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:65:2"} 'meed' | confirms the broader oblique tradition, but not the chosen singular target |
+| citation nominative singular | [_\*mizdō_]{.iv lang=pgmc sort=mizdo role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:83:1"} | inferred lemma outcome [_meord_]{.iv lang=oe sort=meord role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:83:2"} 'meed' | [_meord_]{.iv lang=oe sort=meord role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:83:3"} 'meed' | useful background, but the bare lemma is reconstructed rather than directly attested |
+| selected dative singular | [_\*mízdai_]{.iv lang=pgmc sort=mizdai role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:84:1"} | regular output: [_meorde_]{.iv lang=oe sort=meorde role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:84:2"} 'meed' | [_meorde_]{.iv lang=oe sort=meorde role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:84:3"} 'meed' | exact match between derivational input and attested target |
+| genitive singular | [_\*mizdōz_]{.iv lang=pgmc sort=mizdoz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:85" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:85:1"} | regular output: [_meorde_]{.iv lang=oe sort=meorde role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:85" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:85:2"} 'meed' | [_meorde_]{.iv lang=oe sort=meorde role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:85" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:85:3"} 'meed' | converges on the same attested string, but the dat.sg. has the clearest direct support |
+| genitive plural control | plural oblique line | attested [_meorda_]{.iv lang=oe sort=meorda role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:86:1"} 'meed' | [_meorda_]{.iv lang=oe sort=meorda role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:86:2"} 'meed' | confirms the broader oblique tradition, but not the chosen singular target |
 
 ### night — OE _niht_
 
@@ -11833,7 +12033,9 @@ Proto input: _\*θístilas_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\raggedright [no change]\par
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc I Lowering} & \emph{*θéstilas} \\
+\end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
 \raggedright
@@ -11846,9 +12048,10 @@ Proto input: _\*θístilas_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening Unstressed} & \emph{*θístilæs} \\
-\mbox{OE L Adjacent Syncope} & \emph{*θístlæs} \\
-\mbox{OE Unstressed AE Merger} & \emph{*θístles} \\
+\mbox{EAF Brightening Unstressed} & \emph{*θéstilæs} \\
+\mbox{OE I Umlaut} & \emph{*θistilæs} \\
+\mbox{OE L Adjacent Syncope} & \emph{*θistlæs} \\
+\mbox{OE Unstressed AE Merger} & \emph{*θistles} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -12261,9 +12464,9 @@ bore-family lemma and from the companion imperative form.
 | 3sg present | [_\*búrōθi_]{.iv lang=pgmc sort=burothi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58:1"} | regular output [_boraþ_]{.iv lang=oe sort=borath role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58:2"} 'bores' | [_boraþ_]{.iv lang=oe sort=borath role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:58:3"} 'bores' | exact match |
 | imperative singular companion | [_\*búrô_]{.iv lang=pgmc sort=buro role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:59:1"} | related finite form [_bora_]{.iv lang=oe sort=bora role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:59:2"} 'bore' | [_bora_]{.iv lang=oe sort=bora role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:59:3"} 'bore' | useful control, but not the target |
 
-### learn (iptv.2sg) — OE _liorna_
+### learn (iptv.2sg) — OE _leorna_
 
-Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznô_ > _liorna_ (late analogy).
+Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznô_ > _leorna_ (late analogy).
 
 #### Derivation trace
 
@@ -12274,7 +12477,7 @@ Proto input: _\*líznô_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -12283,7 +12486,8 @@ Proto input: _\*líznô_
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Rhotacism} & \emph{*lírnô} \\
+\mbox{PNWGmc I Lowering} & \emph{*léznô} \\
+\mbox{EAF Rhotacism} & \emph{*lérnô} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -12297,8 +12501,8 @@ Proto input: _\*líznô_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Breaking} & \emph{*líornô} \\
-OE Unstressed Long Vowel Shortening & \emph{*líorna} \\
+\mbox{OE Breaking} & \emph{*léornô} \\
+OE Unstressed Long Vowel Shortening & \emph{*léorna} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -12307,56 +12511,54 @@ OE Unstressed Long Vowel Shortening & \emph{*líorna} \\
 }
 \endgroup
 
-Old English form: _liorna_
+Old English form: _leorna_
 
-#### Reconstruction and comparative evidence
+#### The imperative singular
 
-Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:21:1"} 'learn' and
-[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:22:1"} 'learn' from a learn-family base of the
-_\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb
-as _\*liznōn-_ [@Kroonen2013, 380]. Fulk cites the same Old English family from
-_\*liznō-_ [@Fulk2018, 127].
+Old English [leorna]{.iv lang=oe sort=leorna role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:21:1"}
+'learn!' is the second-person singular imperative,
+not an abbreviated infinitive. Deuteronomy14:23
+prints the command followed by *þæt þu ondræde
+Drihten* 'that you fear the Lord'. The addressee
+is singular, and the form is read directly in the
+edited biblical text [@Crawford1922, p. 351].
 
-The derivational input [líznô]{.iv .recon lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:27:1"} 'learn (iptv.2sg)' is a finite imperative
-cell of that family, not the citation form of the verb.
+The derivational input
+[líznô]{.iv .recon lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:30" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:30:1"}
+'learn!' is the imperative cell, distinct from the
+lexeme-level infinitive label. The inherited
+\emph{*lizn-} family is supported by the comparative
+dictionaries; its historical weak class III
+formation and later remodelling remain uncertain
+[@Kroonen2013, p. 340; @Orel2003, p. 247;
+@Jasanoff1973, pp. 865, 868].
 
-#### Old English evidence
+Under [SC015 PNWGmcILowering](#rule-PNWGmcILowering),
+lowering before preconsonantal \emph{*z} produces
+\emph{*léznô}; rhotacism gives \emph{*lérnô},
+and English breaking and ending reduction lead
+to *leorna*. The companion infinitive *leornian*
+and present third singular *leornaþ* are different
+cells of the same family. Their agreement does
+not multiply the independent etymological
+evidence [@Hill2017, p. 153;
+@Crawford1922, pp. 71, 351; @Miller1891, p. 380].
 
-Clark Hall gives the ordinary headword as _leornian_ [@ClarkHall1960, 186].
-Brunner explicitly records _leornian, nordh. auch liorna_, and Campbell notes
-Northumbrian forms with _io_ beside _leornian_
-[@SieversBrunner1965, §417 Anm. 10; @Campbell1959, §123 n. 2].
+The attested alternative [liorna]{.lex lang=oe}
+'learn!' remains relevant to the *liorn-/leorn-
+distribution. Mutation in an earlier paradigm,
+later levelling and dialect history must be
+considered rather than identifying every high
+vowel as unchanged inheritance. The retained
+family classification marks conjugational
+remodelling, not finite-cell selection or an
+extra replacement needed for this imperative
+[@Campbell1959, pp. 48, 59, 125;
+@Jasanoff1973, pp. 865, 868].
 
-[_Liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:37:1"} can therefore be treated as an
-attested Northumbrian finite form, while [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:38:1"}
-'learn' remains the better-known dictionary headword.
+### learn (3sg) — OE _leornaþ_
 
-#### Development to Old English
-
-The form compared here develops regularly as [líznô]{.recon} 'learn' > [lírnô]{.recon} 'learn' by rhotacism, then
-[líornô]{.recon} 'learn (iptv.2sg)' by breaking before _rn_, and finally
-[líorna]{.recon} 'learn' > _liorna_ by late shortening of the unstressed long vowel.
-
-Campbell's Northumbrian _io_ evidence and Ringe and Taylor's explicit statement
-that no form of _liornian_ stood in an i-umlauting environment support this
-stem shape [@Campbell1959, §123 n. 2; @RingeTaylor2014, 247]. The
-West-Saxon-looking _eo_ forms belong to a different dialectal presentation of
-the same family.
-
-#### Paradigm comparison
-
-The comparison below sets the relevant forms side by side. It distinguishes the selected imperative cell
-from the learn-family infinitive and from the companion 3sg form.
-
-| PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60:1"} | Northumbrian [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60:2"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60:3"} 'learn' | [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60:4"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:60:5"} 'learn' | family background, but not the cell compared here |
-| imperative singular | [_\*líznô_]{.iv lang=pgmc sort=lizno role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61:1"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe variety=north sort=liorna role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61:2"} | [_liorna_]{.iv lang=oe sort=liorna role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:61:3"} | exact match |
-| 3sg present companion | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62:1"} | related finite form [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62:2"} | [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:62:3"} | useful control, but not the target |
-
-### learn (3sg) — OE _liornaþ_
-
-Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznōθi_ > _liornaþ_ (late analogy).
+Derivation: citation reconstruction _\*liznōjaną_; form followed here _\*líznōθi_ > _leornaþ_ (late analogy).
 
 #### Derivation trace
 
@@ -12377,7 +12579,8 @@ Proto input: _\*líznōθi_
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*líznōθ} \\
-\mbox{EAF Rhotacism} & \emph{*lírnōθ} \\
+\mbox{PNWGmc I Lowering} & \emph{*léznōθ} \\
+\mbox{EAF Rhotacism} & \emph{*lérnōθ} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -12391,9 +12594,9 @@ Proto input: _\*líznōθi_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Breaking} & \emph{*líornōθ} \\
-\mbox{OE Late O Shortening} & \emph{*líornoθ} \\
-OE Final Unstressed O Lowering & \emph{*líornaθ} \\
+\mbox{OE Breaking} & \emph{*léornōθ} \\
+\mbox{OE Late O Shortening} & \emph{*léornoθ} \\
+OE Final Unstressed O Lowering & \emph{*léornaθ} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -12402,59 +12605,60 @@ OE Final Unstressed O Lowering & \emph{*líornaθ} \\
 }
 \endgroup
 
-Old English form: _liornaþ_
+Old English form: _leornaþ_
 
-#### Reconstruction and comparative evidence
+#### A textually attested third singular
 
-Ringe and Taylor give Old English [_liornian_]{.iv lang=oe sort=liornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:21:1"} 'learn' and
-[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:22:1"} 'learn' from a learn-family base of the
-_\*lizn-_ type [@RingeTaylor2014, 38], and Kroonen likewise keeps the weak verb
-as _\*liznōn-_ [@Kroonen2013, 380]. The derivational input
-[líznōθi]{.iv .recon lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:25:1"} 'learns' is the finite 3sg cell
-of that family, not the citation form of the verb.
+The selected Old English
+[leornaþ]{.iv lang=oe sort=leornath role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:22:1"}
+'learns' corresponds to Miller's printed
+[leornað]{.lex lang=oe} 'learns'. In the Bede
+passage, *swa hwylc swa* 'whoever' governs
+coordinated *rædeð* 'reads' and *leornað*.
+The singular indefinite-relative subject
+establishes the person and number; the
+ending alone would not suffice. Final eth
+is represented by thorn without changing
+the vowel or cell [@Miller1891, p. 380, ll. 26--27].
 
-For the ending, Campbell's class-II _-aþ_ (< _-ōþi)_ and Ringe and Taylor's
-discussion of stable class-II _a_ in finite forms make the non-_j_ 3sg cell
-the relevant comparison point [@Campbell1959, §356.4; @RingeTaylor2014, 80].
+The input
+[líznōθi]{.iv .recon lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:34:1"}
+'learns' is a finite third-singular selection,
+not the infinitive citation label. Its
+inherited \emph{*lizn-} root remains distinct
+from the later lowered intermediate.
+The wider family has a class III prehistory
+and subsequent conjugational remodelling;
+the English class II form does not recover
+that complete earlier paradigm
+[@Kroonen2013, p. 340; @Orel2003, p. 247;
+@Jasanoff1973, pp. 865, 868].
 
-#### Old English evidence
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+lowers the selected root before \emph{*zn}.
+Rhotacism, English breaking, ending reduction
+and dental spelling then give *leornaþ*.
+This explanation leaves the inherited input
+high-vowelled. It does not select an
+\emph{*e}-grade just because the Old English
+word contains *eo* [@Hill2017, p. 153;
+@RingeTaylor2014, pp. 38, 84].
 
-Clark Hall gives the ordinary headword as
-[_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:35" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:35:1"} 'learn'
-[@ClarkHall1960, 186]. Brunner records Northumbrian finite forms in _liorn-_,
-including [_liorna_]{.iv lang=oe sort=liorna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:37:1"} 'learn' and
-[_liornes_]{.iv lang=oe sort=liornes role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:38:1"} 'learning', beside the
-West-Saxon-oriented [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:39:1"} tradition
-[@SieversBrunner1965, §417 Anm. 10]. Campbell likewise notes Northumbrian
-forms with _io_ beside _leornian_ [@Campbell1959, §123 n. 2].
-
-The relevant comparison form here is the normalized 3sg
-[_liornaþ_]{.iv lang=oe sort=liornath role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:44:1"} 'learns'. The directly cited
-Old English evidence supports the finite stem _liorn-_; the _-aþ_ ending
-follows the regular class-II 3sg pattern.
-
-#### Development to Old English
-
-The form compared here develops as [líznōθi]{.recon} 'learns' > [lírnōθi]{.recon} 'learns' by rhotacism, then
-[lírnōθ]{.recon} 'learns' after early apocope of final _-i_, then
-[líornōθ]{.recon} 'learns' by breaking before _rn_, and finally
-[líornaθ]{.recon} 'learns' > [_liornaþ_]{.iv lang=oe sort=liornath role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:53:1"} 'learns' by late shortening of the unstressed long vowel.
-
-Campbell's Northumbrian _io_ evidence and Ringe and Taylor's statement that no
-form of _liornian_ stood in an i-umlauting environment support the stem, while
-Campbell's class-II ending evidence supports the final _-aþ_
-[@Campbell1959, §123 n. 2; @Campbell1959, §356.4; @RingeTaylor2014, 247].
-
-#### Paradigm comparison
-
-The comparison below sets the relevant forms side by side. It distinguishes the selected 3sg cell from
-the learn-family infinitive and from the companion imperative form.
-
-| PGmc cell / interpretation | Candidate input | OE outcome or comparison | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| lexeme-level infinitive | [_\*liznōjaną_]{.iv lang=pgmc sort=liznojana role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67:1"} | Northumbrian [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67:2"} 'learn'; dictionary headword often [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67:3"} 'learn' | [_liornian_]{.iv lang=oe variety=north sort=liornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67:4"} 'learn' / [_leornian_]{.iv lang=oe sort=leornian role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:67:5"} 'learn' | family background, but not the cell compared here |
-| 3sg present | [_\*líznōθi_]{.iv lang=pgmc sort=liznothi role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68:1"} | regular output [_liornaþ_]{.iv lang=oe sort=liornath role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68:2"} 'learns' | [_liornaþ_]{.iv lang=oe sort=liornath role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:68:3"} 'learns' | exact match |
-| imperative singular companion | [_\*líznô_]{.iv lang=pgmc sort=lizno role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69:1"} | regular output and Brunner's Northumbrian [_liorna_]{.iv lang=oe variety=north sort=liorna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69:2"} | [_liorna_]{.iv lang=oe variety=north sort=liorna role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md:69:3"} | useful control, but not the target |
+The high-vowel *liorn- tradition remains
+important, but the infinitive's spelling
+cannot establish the prehistory of this
+specific cell. Jasanoff's proposed lost
+\emph{*lizniþ} and Hill's later-mutation
+account identify possible morphological
+sources of high vowels; neither yields a
+fully certain inherited paradigm.
+The family classification accordingly
+retains conjugational remodelling without
+claiming that the selected vowel itself
+requires analogical replacement
+[@Jasanoff1973, pp. 865, 868;
+@Hill2017, p. 153, n. 25;
+@TarsiLaker2026, pp. 42--43].
 
 ### lick (iptv.2sg) — OE _licca_
 

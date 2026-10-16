@@ -1,5 +1,16 @@
 # Research memo — 2095 learn / liornian
 
+## Superseded selected-target recommendation: 16 October 2026
+
+The authorized SC015 adoption selects independently attested `leornian`
+(Crawford1922 p.71), without changing either `*líznōjaną` field.
+The older *liornian* selection and reasoning below remain historical
+research, not current selection authority. Campbell1959 pp.48,59,125
+requires a more nuanced dialect/mutation account; Jasanoff1973 pp.865,868
+and TarsiLaker2026 pp.42–43 leave the inherited weak-III paradigm uncertain.
+See [the adoption](../../sound_changes/audits/sc015-adjudication.md)
+and its [primary attestation record](../../sound_changes/audits/sc015-adoption/learn-attestations.md).
+
 ## Starting point
 
 - **ID:** 2095

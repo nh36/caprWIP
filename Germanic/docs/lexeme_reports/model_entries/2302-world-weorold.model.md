@@ -18,24 +18,40 @@ DERIVATION_CLASS: early_analogy
 
 ### Reconstruction and comparative evidence
 
-The word is the old compound 'age of men'. Orel and the `*wira-` tradition
-reconstruct the older `i`-vocalism, while Ringe and Taylor discuss the lowered form
+The word is the old compound 'age of men'. Orel reconstructs
+an already mid-vowelled compound, and Ringe and Taylor discuss the form
 [weraldiz]{.recon} 'world' and its pre-Old-English chain [weraldu]{.recon} 'world' > [weruld]{.recon} 'world'
-[@Orel2003, 501; @RingeTaylor2014, 341]. Kluge-Seebold likewise gives the
+[@Orel2003, p. 462; @RingeTaylor2014, p. 326]. Kluge-Seebold gives the
 compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold` 'world'
 [@KlugeSeebold2011, 981].
 
 The selected input [wír-àldu]{.iv .recon lang=pgmc variety=transponent sort=wiraldu role=selected_input} ‘world’ therefore combines the older `*wir-` vowel of the comparative headword with
 the early shift of the compound into the ō-stems that Ringe and
-Taylor note for this lexeme [@RingeTaylor2014, 341]. The early analogical step lies
+Taylor note for this lexeme [@RingeTaylor2014, p. 326]. The early analogical step lies
 in that stem-class reassignment; the later phonological developments can then run
 regularly.
+
+The selected form is a transponent combining an earlier
+first-element vowel with a later inflectional formation,
+not an independently quoted single historical stage.
+An already \emph{*wer-} compound requires no lowering
+in its own derivation. Accordingly the selected
+transponent cannot prove that
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+historically preceded
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising).
+The adopted consonantal lowering has no following-vowel
+trigger for interstress raising to remove. The two
+processes remain compatible in this derivation without
+that supposed ordering argument
+[@Orel2003, p. 462; @RingeTaylor2014, p. 326;
+@Hill2017, pp. 153--156].
 
 ### Old English evidence
 
 Old English does not preserve a single isolated form. Ringe and Taylor give West
 Saxon [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world', Mercian [`weoruld`]{.iv lang=oe variety=merc sort=weoruld role=comparison_form} 'world', Northumbrian
-[`woruld`]{.iv lang=oe sort=woruld role=comparison_form} 'world', and Kentish [`wiarald`]{.iv lang=oe variety=kent sort=wiarald role=comparison_form} 'world' [@RingeTaylor2014, 341]. Sievers-Brunner and Bright present the same wider
+[`woruld`]{.iv lang=oe sort=woruld role=comparison_form} 'world', and Kentish [`wiarald`]{.iv lang=oe variety=kent sort=wiarald role=comparison_form} 'world' [@RingeTaylor2014, p. 326]. Sievers-Brunner and Bright present the same wider
 set, including the syncopated [`world`]{.iv lang=oe sort=world role=comparison_form} 'world' and later rounded [`wurold`]{.iv lang=oe sort=wurold role=comparison_form} 'world'
 [@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
 
@@ -53,7 +69,7 @@ back mutation yields [wéor-oldu]{.recon} ‘world'; final high-vowel apocope th
 
 This sequence matches the comparative background in Ringe and Taylor's
 literature-stage chain for the word while preserving the `*wir-` notation of
-the comparative label [@RingeTaylor2014, 341]. The modeled Old English form
+the comparative label [@RingeTaylor2014, p. 326]. The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
 

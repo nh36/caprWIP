@@ -1,5 +1,11 @@
 # SC015: twine, numeral adverbs, and the limits of consonant-conditioned lowering
 
+Adoption cross-reference, 16 October 2026: a subsequent explicit decision
+supersedes this supplement's RETAIN/DEFER recommendation, not its evidence.
+See [`sc015-adjudication.md`](../sc015-adjudication.md) for Candidate B
+adoption and the independently sourced three *leorn-* target selections.
+The original observations and experimental receipts remain historical records.
+
 Internal supplementary research assessment, 16 October 2026; branch `update`,
 base `ca1b3cd8c9a28d72b756ca4c5d8e90eb4bfc41e4`.
 

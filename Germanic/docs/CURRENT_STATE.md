@@ -39,11 +39,11 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `3a676cc3d591bb2d7ae34784c30b07e62b1f9ff880b40292b5e6e020dcde247f`
+  `43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce`
 - selected-387 corpus fingerprint (`outputs_sha256`):
-  `3caa0d07ba4f63c7ba512a22e48a7be86f975e573ae01d7cbea830eb08d4b1e0`
+  `b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `32d551ca5bc6317a6e528f00259159915599c6e08d265af170e2be7341edb522`
+  `e495ab40d4fb34f2117c6d8590ee11e18166271e01712755b99507bf9933aef2`
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.
@@ -51,7 +51,14 @@ The authorized wether lexical selection uses masculine `*wéθruz`, preserving
 all 387 finals and the eight established mismatches. Its exact named receipt
 is `approved_wether_input_migration.json`; the separate
 `*_pre_sc015_wether_input.*` archive preserves the preceding active baseline.
-This changes no sound law, SC015 verdict, stage/context or chronology.
+That lexical-only decision changed no sound law, verdict or chronology.
+The subsequent authorized SC015 adoption is a separate transition:
+`approved_sc015_targets_migration.json` preserves `*_pre_sc015.*`
+and selects independently attested `leornian`, `leorna`, `leornaþ`
+for2095/2313/2314, with unchanged inherited inputs. All387 selections
+remain deterministic,379 match and the same eight mismatches remain.
+The canonical memo records the working hypothesis and unresolved
+comparative counterevidence; no stage/context or rule-order change is made.
 The SC056 adjudication explicitly migrates gift's input by stable row ID.
 The SC033 adjudication selects knee's regular dative: *knéwai → cneowe,
 preserving citation *knéwą. Its exact input/target/output transition is

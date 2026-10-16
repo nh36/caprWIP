@@ -1,5 +1,19 @@
 # Source extraction ledger — learn (3sg) / liornaþ
 
+## Current decision: 16 October 2026
+
+The authorized selection is present indicative3sg `leornaþ`.
+Miller1891 p.380 lines26–27 prints `leornað` governed by singular
+`swa hwylc swa`, coordinated with `rædeð`. CAPR normalizes final
+eth to thorn. PROTO `*liznōjaną`, PROTOFORM `*líznōθi` and the
+conjugational-remodelling classification are unchanged.
+The former normalized `liornaþ` selection remains historical evidence:
+the old ledger did not verify an exact manuscript token. Do not upgrade
+its attestation status. Kroonen's learn entry is printed340, not sheet380.
+See [the primary record](../../sound_changes/audits/sc015-adoption/learn-attestations.md)
+and [the decision](../../sound_changes/audits/sc015-adjudication.md).
+All “current” statements below describe the preceding research state.
+
 This ledger records the finite-cell evidence and learn-family background used before drafting the lexical entry.
 
 | Source | Date / position | Form(s) given | Morphology / dialect | Old English form(s) | Claim used for the entry | Citation key available? | Local path | Confidence / review note |

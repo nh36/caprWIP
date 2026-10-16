@@ -121,6 +121,8 @@ ARCHIVE_PATHS = tuple(
         "cascade_baseline/cascade_baseline_summary_pre_sc017_rust_input.json",
         "cascade_baseline/cascade_baseline_outputs_pre_sc015_wether_input.tsv",
         "cascade_baseline/cascade_baseline_summary_pre_sc015_wether_input.json",
+        "cascade_baseline/cascade_baseline_outputs_pre_sc015.tsv",
+        "cascade_baseline/cascade_baseline_summary_pre_sc015.json",
         "registry/archival_orders.tsv",
         "order_tests/chronology_cards/chronology_card_index.tsv",
         "order_tests/chronology_cards/chronology_graph_nodes.tsv",
