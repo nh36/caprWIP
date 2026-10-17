@@ -3,7 +3,10 @@
 import csv
 import io
 import re
+import shutil
+import subprocess
 import unittest
+import importlib.util
 from pathlib import Path
 
 
@@ -14,6 +17,7 @@ CORPUS = GERMANIC / "data" / "germanic-aligned-final.tsv"
 BASELINE = GERMANIC / "docs/sound_changes/cascade_baseline/cascade_baseline_outputs.tsv"
 PREVIOUS = GERMANIC / "docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc112_expansion.tsv"
 LEGACY = GERMANIC / "docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv"
+RUNTIME = ROOT / "backend" / "old_english.bin"
 
 
 def rows(path):
@@ -41,6 +45,118 @@ class Sc112Tests(unittest.TestCase):
         ).group(1)
         self.assertIn("EnglishStarConsonant* _ {*r} .#.", body)
         self.assertNotIn("concept", body)
+
+    def test_live_sc015_definition_remains_the_adopted_rule(self):
+        body = re.search(
+            r"define PNWGmcILowering .*?\[(.*?)\n\]\);", self.text, re.S
+        ).group(1)
+        normalized = re.sub(r"\s+", "", body)
+        expected = re.sub(r"\s+", "", """
+    {*i} -> {*e} ||
+        .#. EnglishStarConsonant* _
+        [{*z} [EnglishStarConsonant | .#.]
+         | {*s} {*t}
+         | {*r}],
+    {*í} -> {*é} ||
+        .#. EnglishStarConsonant* _
+        [{*z} [EnglishStarConsonant | .#.]
+         | {*s} {*t}
+         | {*r}]
+""")
+        self.assertEqual(normalized, expected)
+
+    def test_executable_manifest_order_and_inventory_census(self):
+        manifest = rows(
+            GERMANIC / "docs/sound_changes/cascade_baseline/cascade_order_manifest.tsv"
+        )
+        positions = {row["foma_identifier"]: int(row["position"]) for row in manifest}
+        self.assertEqual(
+            positions["PNWGmcMonosyllabicFinalRLengthening"] + 1,
+            positions["EAFRhotacism"],
+        )
+        census_lines = [
+            line for line in (
+                GERMANIC / "docs/sound_changes/cascade_baseline/rule_coverage_census.tsv"
+            ).read_text(encoding="utf-8").splitlines()
+            if line and not line.startswith("#")
+        ]
+        census = next(
+            row for row in csv.DictReader(census_lines, delimiter="\t")
+            if row["sc_id"] == "SC112"
+        )
+        self.assertEqual(census["foma_identifier"], "PNWGmcMonosyllabicFinalRLengthening")
+        self.assertEqual(census["corpus_firing_count"], "2")
+        self.assertEqual(census["lexical_witnesses"], "there, where")
+
+    @unittest.skipUnless(shutil.which("flookup") and RUNTIME.exists(),
+                         "canonical flookup runtime unavailable")
+    def test_production_transducer_executes_current_population_and_controls(self):
+        inputs = [row["fst_input"] for row in self.current.values()]
+        result = subprocess.run(
+            ["flookup", "-i", str(RUNTIME)],
+            input="\n".join(inputs) + "\n",
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=120,
+        )
+        outputs = {}
+        for line in result.stdout.splitlines():
+            if not line.strip():
+                continue
+            source, output = line.split("\t", 1)
+            outputs.setdefault(source, []).append(output)
+        self.assertEqual(len(outputs), 389)
+        self.assertTrue(
+            all(len(set(values)) == 1 and values[0] != "+?" for values in outputs.values())
+        )
+        self.assertEqual(outputs["θár"], ["þǣr"])
+        self.assertEqual(outputs["xwár"], ["hwǣr"])
+        self.assertEqual(
+            {row_id: outputs[row["fst_input"]][0] for row_id, row in self.current.items()},
+            {row_id: row["outputs"] for row_id, row in self.current.items()},
+        )
+        controls = subprocess.run(
+            ["flookup", "-i", str(RUNTIME)],
+            input="θárą\nbázą\ndúrą\n",
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=30,
+        )
+        control_outputs = {
+            source: output
+            for line in controls.stdout.splitlines()
+            if line.strip()
+            for source, output in [line.split("\t", 1)]
+        }
+        self.assertEqual(control_outputs, {"θárą": "þær", "bázą": "bær", "dúrą": "dor"})
+
+    def test_original_population_preserves_approved_identity_context_and_outputs(self):
+        fields = ("concept", "proto", "proto_norm", "fst_input", "word_stress",
+                  "phonological_finality", "counterpart", "outputs")
+        for row_id, previous in self.previous.items():
+            with self.subTest(row_id=row_id):
+                self.assertEqual(
+                    tuple(self.current[row_id][field] for field in fields),
+                    tuple(previous[field] for field in fields),
+                )
+
+    def test_experimental_early_condition_matches_production_relevant_semantics(self):
+        path = (
+            GERMANIC / "docs/sound_changes/audits/"
+            "sc015-r-adverb-lengthening-investigation/followup_experiment.py"
+        )
+        spec = importlib.util.spec_from_file_location("sc112_experiment", path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        experimental = module.lengthening_expression()
+        for source, target in (("á", "ā"), ("é", "ē"), ("í", "ī"),
+                               ("ó", "ō"), ("ú", "ū")):
+            self.assertIn(f"{{*{source}}} -> {{*{target}}}", experimental)
+        self.assertIn("EnglishStarConsonant* _ {*r} .#.", experimental)
+        self.assertIn("EnglishStarConsonant* _ {*r} .#.", self.text)
+        self.assertNotIn("{*æ} -> {*ǣ}", experimental)
 
     def test_new_rows_and_targets(self):
         self.assertEqual(

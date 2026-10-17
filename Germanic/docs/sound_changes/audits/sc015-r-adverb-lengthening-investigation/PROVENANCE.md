@@ -245,3 +245,11 @@ The completed experimental results supersede the initial status above
 that the compilation gate remained closed. That gate was opened only
 after the source corrections and recipe pins were reconciled; the
 completed Foma run did not modify production files.
+
+## Candidate versus canonical IPA serialization
+
+The isolated candidate table intentionally preserves segment-spaced IPA for
+experimental inspection. Thus row 2334 is recorded there as `ʍ æː r`,
+whereas the canonical corpus uses the compact IPA string `ʍæːr`. This is
+only a serialization convention; it does not alter the verified Foma input
+`*xwár`, the source-backed witness, or the selected output *hwǣr*.

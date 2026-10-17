@@ -1,4 +1,8 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+add	oe	þǣr	target_form	lexical_heading	there — OE þǣr	SC112 authorized source-backed witness.
+add	oe	hwǣr	target_form	lexical_heading	where — OE hwǣr	SC112 authorized source-backed witness.
+add	pgmc	*xwár	selected_input	trace_proto_input	where — OE hwǣr	SC112 authorized selected input.
+add	pgmc	*θár	selected_input	trace_proto_input	there — OE þǣr	SC112 authorized selected input.
 add	oe	leorna	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md	SC015 authorized attested imperative; Crawford1922 p.351.
 add	oe	leorna	target_form	lexical_heading	learn (iptv.2sg) — OE leorna	SC015 authorized target migration, unchanged inherited input.
 add	oe	leornaþ	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2314-learn-(3sg)-liornaþ.model.md	SC015 authorized attested third singular; Miller1891 p.380.

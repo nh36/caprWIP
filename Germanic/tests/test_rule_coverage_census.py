@@ -25,6 +25,8 @@ GERMANIC = REPO_ROOT / "Germanic"
 CENSUS = (GERMANIC / "docs" / "sound_changes" / "cascade_baseline"
           / "rule_coverage_census.tsv")
 TOOL = GERMANIC / "tools" / "rule_coverage_census.py"
+REGISTRY = GERMANIC / "docs" / "sound_changes" / "registry" / "sc_registry.tsv"
+MANIFEST = GERMANIC / "docs" / "sound_changes" / "cascade_baseline" / "cascade_order_manifest.tsv"
 
 VALID_STATUSES = {
     "witnessed",
@@ -70,6 +72,24 @@ class CensusFreshnessTests(unittest.TestCase):
                 self.assertTrue(row["note"].strip(),
                                 f"{sc}: zero-firing rule must cite its "
                                 "validation or adjudication")
+
+    def test_every_active_executable_historical_rule_has_census_coverage(self):
+        registry_lines = [
+            line for line in REGISTRY.read_text(encoding="utf-8").splitlines()
+            if line and not line.startswith("#")
+        ]
+        registry = list(csv.DictReader(registry_lines, delimiter="\t"))
+        manifest = list(csv.DictReader(MANIFEST.open(encoding="utf-8"), delimiter="\t"))
+        executable = {row["foma_identifier"] for row in manifest}
+        census = read_census()
+        missing = [
+            row["sc_id"] for row in registry
+            if row["lifecycle_status"] == "active"
+            and row["entry_type"] == "historical_sound_change"
+            and row["fst_identifier"] in executable
+            and row["sc_id"] not in census
+        ]
+        self.assertEqual(missing, [])
 
 
 class CorpusMaturationCoverageTests(unittest.TestCase):

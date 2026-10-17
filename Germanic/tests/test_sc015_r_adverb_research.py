@@ -2,12 +2,15 @@
 import importlib.util
 import csv
 import json
+import subprocess
+import tempfile
 import unittest
 from types import SimpleNamespace
 from pathlib import Path
 from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
+HISTORICAL_COMMIT = "3f3deb56f81a76324eefcc68401887f03a15a674"
 DRIVER = ROOT / "docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/experiment.py"
 SPEC = importlib.util.spec_from_file_location("sc015_r_research", DRIVER)
 research = importlib.util.module_from_spec(SPEC)
@@ -34,9 +37,41 @@ def specification():
 
 
 class ResearchDriverTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.fixture_dir = Path(tempfile.mkdtemp(prefix="sc015-historical-"))
+        for relative in (
+            "Germanic/fsts/germanic.txt",
+            "Germanic/data/germanic-aligned-final.tsv",
+            "Germanic/data/entry_context_metadata.tsv",
+            "backend/oe_input_context.py",
+        ):
+            destination = cls.fixture_dir / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(subprocess.check_output(
+                ["git", "show", f"{HISTORICAL_COMMIT}:{relative}"], cwd=ROOT.parent))
+        cls.historical_source = cls.fixture_dir / "Germanic/fsts/germanic.txt"
+        cls.historical_corpus = cls.fixture_dir / "Germanic/data/germanic-aligned-final.tsv"
+        cls.historical_runtime = SimpleNamespace(
+            germanic_fst=cls.historical_source,
+            corpus_tsv=cls.historical_corpus,
+            data_dir=cls.fixture_dir / "Germanic/data",
+            fsts_dir=cls.fixture_dir / "Germanic/fsts",
+            tools_dir=cls.fixture_dir / "Germanic/tools",
+            docs_dir=cls.fixture_dir / "Germanic/docs",
+            bin_dir=cls.fixture_dir / "backend",
+            build_manifest=cls.fixture_dir / "backend/oe_build_manifest.json",
+            germanic_dir=cls.fixture_dir / "Germanic",
+            is_container=False,
+        )
+        cls.historical_baseline = (
+            ROOT / "docs/sound_changes/cascade_baseline/"
+            "cascade_baseline_outputs_pre_sc112_expansion.tsv"
+        )
+
     def setUp(self):
         self.spec = specification()
-        self.source = ROOT / "fsts/germanic.txt"
+        self.source = self.historical_source
 
     def test_validation_never_runs_subprocess(self):
         with patch.object(research.subprocess, "run", side_effect=AssertionError("Foma prohibited")):
@@ -146,15 +181,14 @@ class ResearchDriverTests(unittest.TestCase):
 
     def test_frozen_selected387_comparison_is_fail_closed(self):
         runtime = research.layout()
-        rows = research.assay.corpus_rows(runtime.corpus_tsv)
-        with (runtime.docs_dir / "sound_changes/cascade_baseline/cascade_baseline_outputs.tsv").open(
-                encoding="utf-8", newline="") as handle:
+        rows = research.assay.corpus_rows(self.historical_corpus)
+        with self.historical_baseline.open(encoding="utf-8", newline="") as handle:
             frozen = list(csv.DictReader(handle, delimiter="\t"))
         outputs = {row["row_id"]: [row["outputs"]] for row in frozen}
-        research.verify_baseline(rows, outputs, runtime)
+        research.verify_baseline(rows, outputs, runtime, self.historical_baseline)
         outputs[rows[0]["id"]] = []
         with self.assertRaisesRegex(ValueError, "differs from frozen"):
-            research.verify_baseline(rows, outputs, runtime)
+            research.verify_baseline(rows, outputs, runtime, self.historical_baseline)
 
     def test_lookup_failures_are_not_replaced_by_identity_outputs(self):
         with patch.object(research.assay, "batch_apply_down", side_effect=TimeoutError("bounded lookup")):
@@ -165,12 +199,19 @@ class ResearchDriverTests(unittest.TestCase):
 class RecipeBuilderTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.source = ROOT / "fsts/germanic.txt"
+        cls.source = ResearchDriverTests.historical_source
+        cls.runtime = ResearchDriverTests.historical_runtime
+        cls.original_layout = builder.driver.layout
+        builder.driver.layout = lambda: cls.runtime
         cls.before = research.digest(cls.source)
         with patch.object(research.subprocess, "run", side_effect=AssertionError("Foma prohibited")):
             cls.plan = builder.build_spec("0" * 64, [])
         cls.recipes = {recipe["id"]: recipe for recipe in cls.plan["recipes"]}
         cls.order = research.source_order(cls.source)
+
+    @classmethod
+    def tearDownClass(cls):
+        builder.driver.layout = cls.original_layout
 
     def test_builds_twenty_one_validated_hypotheses_without_witness_inputs(self):
         self.assertEqual(len(self.recipes), 21)

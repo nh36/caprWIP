@@ -351,8 +351,11 @@ def evaluate(source_text, recipe, order, rows, probes, directory):
             "source_native_outputs": apply(directory / "old_english.bin", inputs)}
 
 
-def verify_baseline(rows, outputs, rt):
-    with (rt.docs_dir / "sound_changes/cascade_baseline/cascade_baseline_outputs.tsv").open(
+def verify_baseline(rows, outputs, rt, frozen_path=None):
+    frozen_path = frozen_path or (
+        rt.docs_dir / "sound_changes/cascade_baseline/cascade_baseline_outputs.tsv"
+    )
+    with frozen_path.open(
             encoding="utf-8", newline="") as handle:
         frozen = list(csv.DictReader(handle, delimiter="\t"))
     require(len(rows) == len(frozen) == 387, "full selected387 corpus required")

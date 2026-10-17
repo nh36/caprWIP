@@ -25,6 +25,11 @@ SC = ROOT / "Germanic/docs/sound_changes"
 BASE = SC / "cascade_baseline"
 ADOPTION = SC / "audits/sc015-adoption"
 FST = ROOT / "Germanic/fsts/germanic.txt"
+HISTORICAL_AFTER_COMMIT = "3f3deb56f81a76324eefcc68401887f03a15a674"
+HISTORICAL_FST = subprocess.check_output(
+    ["git", "show", f"{HISTORICAL_AFTER_COMMIT}:Germanic/fsts/germanic.txt"],
+    cwd=ROOT, text=True)
+HISTORICAL_CORPUS = ROOT / "Germanic/data/germanic-aligned-final.tsv"
 TARGETS = {"2095": "leornian", "2313": "leorna", "2314": "leornaþ"}
 MISMATCHES = {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"}
 RULE = """Ctx([
@@ -62,10 +67,11 @@ class SC015AdoptionTests(unittest.TestCase):
             BASE / "cascade_baseline_outputs_pre_sc015.tsv",
             BASE / "cascade_baseline_summary_pre_sc015.json")
         cls.current = baseline.read_baseline(
-            BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json")
+            BASE / "cascade_baseline_outputs_pre_sc112_expansion.tsv",
+            BASE / "cascade_baseline_summary_pre_sc112_expansion.json")
 
     def test_exact_candidate_and_only_authorized_definition_change(self):
-        source = FST.read_text()
+        source = HISTORICAL_FST
         old_source = subprocess.check_output([
             "git", "show", "23c146ed:Germanic/fsts/germanic.txt"], cwd=ROOT, text=True)
         old, new = parse_defines(old_source), parse_defines(source)
@@ -114,9 +120,13 @@ class SC015AdoptionTests(unittest.TestCase):
             self.assertEqual(probes[name]["outputs"], [probes[name]["input"]], name)
         self.assertEqual(probes["twine"]["role"], "counterevidence")
         self.assertIn("NOT a correct reflex", probes["twine"]["basis"])
-        for key, path in (("fst_sha256", FST),
-                          ("corpus_sha256", ROOT / "Germanic/data/germanic-aligned-final.tsv")):
-            self.assertEqual(self.probes[key], hashlib.sha256(path.read_bytes()).hexdigest())
+        self.assertEqual(self.probes["fst_sha256"],
+                         hashlib.sha256(HISTORICAL_FST.encode()).hexdigest())
+        historical_corpus = subprocess.check_output(
+            ["git", "show", f"{HISTORICAL_AFTER_COMMIT}:Germanic/data/germanic-aligned-final.tsv"],
+            cwd=ROOT)
+        self.assertEqual(self.probes["corpus_sha256"],
+                         hashlib.sha256(historical_corpus).hexdigest())
         self.assertEqual({r["row_id"]: r["outputs"] for r in self.probes["learn_paradigm"]},
                          {key: [value] for key, value in TARGETS.items()})
 
@@ -161,6 +171,14 @@ class SC015AdoptionTests(unittest.TestCase):
             for path in BASE.iterdir():
                 if path.is_file() and path.suffix in {".tsv", ".json"}:
                     shutil.copyfile(path, target / path.name)
+            shutil.copyfile(
+                BASE / "cascade_baseline_outputs_pre_sc112_expansion.tsv",
+                target / "cascade_baseline_outputs.tsv",
+            )
+            shutil.copyfile(
+                BASE / "cascade_baseline_summary_pre_sc112_expansion.json",
+                target / "cascade_baseline_summary.json",
+            )
             initial = {p.name: p.read_bytes() for p in target.iterdir()}
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             self.assertEqual(initial, {p.name: p.read_bytes() for p in target.iterdir()})
@@ -207,15 +225,15 @@ class SC015AdoptionTests(unittest.TestCase):
         old_keys = {tuple(row[field] for field in fields) for row in old}
         added = [row for row in table(path)
                  if tuple(row[field] for field in fields) not in old_keys]
-        self.assertEqual(len(added), 52)
-        self.assertEqual(sum(row["action"] == "add" for row in added), 18)
+        self.assertEqual(len(added), 56)
+        self.assertEqual(sum(row["action"] == "add" for row in added), 22)
         self.assertEqual(sum(row["action"] == "remove" for row in added), 34)
         self.assertEqual(sum(row.get("variety") == "north" for row in added), 4)
         for row in added:
             self.assertTrue(any(token in row["source_ref"] for token in (
                 "2095-learn-", "2313-learn-", "2314-learn-", "2137-nest-",
                 "learn — OE ", "learn (3sg) — OE ", "learn (iptv.2sg) — OE ",
-                "nest — OE nest")), row)
+                "nest — OE nest", "there — OE þǣr", "where — OE hwǣr")), row)
         audit = table(ROOT / "Germanic/docs/book/index_verborum_variety_annotation_audit.tsv")
         withdrawn = [row for row in audit
                      if any(f"/{identifier}-learn-" in row["source_ref"]

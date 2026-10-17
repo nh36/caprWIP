@@ -17,8 +17,11 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import cascade_baseline as baseline
 
 BASE_COMMIT = "23c146eddd2d9f7527a05363b6768e352eddeb54"
+HISTORICAL_AFTER_COMMIT = "3f3deb56f81a76324eefcc68401887f03a15a674"
 BASE = ROOT / "Germanic/docs/sound_changes/cascade_baseline"
 CORPUS = ROOT / "Germanic/data/germanic-aligned-final.tsv"
+HISTORICAL_AFTER_BASELINE = BASE / "cascade_baseline_outputs_pre_sc112_expansion.tsv"
+HISTORICAL_AFTER_SUMMARY = BASE / "cascade_baseline_summary_pre_sc112_expansion.json"
 TARGETS = {"2095": "leornian", "2313": "leorna", "2314": "leornaþ"}
 SOURCES = {
     "2095": "Crawford1922 p.71; Ælfric's Treatise: þu scealt leornian (infinitive)",
@@ -27,9 +30,9 @@ SOURCES = {
 }
 
 
-def committed(path: Path) -> bytes:
+def committed(path: Path, commit: str) -> bytes:
     return subprocess.check_output(
-        ["git", "show", f"{BASE_COMMIT}:{path.relative_to(ROOT).as_posix()}"], cwd=ROOT)
+        ["git", "show", f"{commit}:{path.relative_to(ROOT).as_posix()}"], cwd=ROOT)
 
 
 def rows(data: bytes) -> list[dict]:
@@ -37,15 +40,15 @@ def rows(data: bytes) -> list[dict]:
 
 
 def build() -> dict:
-    old, new = rows(committed(CORPUS)), rows(CORPUS.read_bytes())
+    old = rows(committed(CORPUS, BASE_COMMIT))
+    new = rows(committed(CORPUS, HISTORICAL_AFTER_COMMIT))
     if [r["ID"] for r in old] != [r["ID"] for r in new]:
         raise ValueError("corpus row identities or order changed")
     changes = {}
     before = baseline.read_baseline(
         BASE / "cascade_baseline_outputs_pre_sc015.tsv",
         BASE / "cascade_baseline_summary_pre_sc015.json")
-    after = baseline.read_baseline(
-        BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json")
+    after = baseline.read_baseline(HISTORICAL_AFTER_BASELINE, HISTORICAL_AFTER_SUMMARY)
     approval = json.loads((BASE / "approved_sc015_targets_migration.json").read_text())
     baseline.validate_cell_transition(before, after, approval)
     previous = {r["row_id"]: r for r in before["records"]}
@@ -78,7 +81,7 @@ def build() -> dict:
             raise ValueError(f"pre-existing approval/archive changed: {name}")
     for stem, suffix in (("outputs", "tsv"), ("summary", "json")):
         if (BASE / f"cascade_baseline_{stem}_pre_sc015.{suffix}").read_bytes() != committed(
-                BASE / f"cascade_baseline_{stem}.{suffix}"):
+                BASE / f"cascade_baseline_{stem}.{suffix}", BASE_COMMIT):
             raise ValueError("pre-SC015 archive differs from actual incumbent")
     return {
         "base_commit": BASE_COMMIT, "adjudication": "SC015",
