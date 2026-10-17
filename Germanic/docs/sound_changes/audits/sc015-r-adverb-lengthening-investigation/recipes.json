@@ -1,0 +1,3163 @@
+{
+  "schema_version": 1,
+  "base_commit": "c92cbd9d541785986998ab2ab99a416f87da4f68",
+  "witness_sha256": "b9d346112fafb27a5de26b91eed1696ef622ed2c5f12970e21f38fdfd6651a87",
+  "pins": {
+    "germanic_fst": "da04db7a21664bf9a606e331c5dd484a023d00e00a5ecf7c19ea3e8e310789e9",
+    "corpus_tsv": "514cfe096b636ea6790361787a154a70e6dafb7d8bf3e4936fced51f3b1b2a6f",
+    "context": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "context_helper": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961"
+  },
+  "recipes": [
+    {
+      "id": "a-before-sc024-existing",
+      "architecture": "A",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "a-after-sc015-existing",
+      "architecture": "A",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "PNWGmcILowering",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "a-before-fronting-existing",
+      "architecture": "A",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nLate bare r is origin-insensitive: do not interpret a successful final output as evidence that its r was inherited.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nThis later anchor follows rhotacism and several early losses. Consequently inherited-r identity is NOT enforced by the bare-r rule; rhotacized-r and newly monosyllabic controls test its overgeneration.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "EAFLongAFronting",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "b-before-sc024-existing",
+      "architecture": "B",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "move",
+          "rule": "PNWGmcILowering",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "PNWGmcILowering",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "c-before-sc024-existing",
+      "architecture": "C",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLowerR": "Ctx([\n    {*i} -> {*e} ||\n        .#. EnglishStarConsonant* _\n        {*r},\n    {*í} -> {*é} ||\n        .#. EnglishStarConsonant* _\n        {*r}\n])",
+        "XRLowerZS": "Ctx([\n    {*i} -> {*e} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}],\n    {*í} -> {*é} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}]\n])"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLowerZS"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLowerR",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLowerR",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "b-before-sc024-existing-reverse",
+      "architecture": "B",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "move",
+          "rule": "PNWGmcILowering",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "PNWGmcILowering",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "d-before-fronting-existing",
+      "architecture": "D",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nLate bare r is origin-insensitive: do not interpret a successful final output as evidence that its r was inherited.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nThis later anchor follows rhotacism and several early losses. Consequently inherited-r identity is NOT enforced by the bare-r rule; rhotacized-r and newly monosyllabic controls test its overgeneration.\nComparator interpretation requires the lead's separately sourced already-long here probe, not selection of that input from fit. Later r-lengthening is a competing conditional account, not an approved law.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "EAFLongAFronting",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      },
+      "comparator_probe_ids": [
+        "ringe-here-long-high",
+        "orel-here-long-mid",
+        "orel-here-long-mid"
+      ],
+      "comparator_limitation": "All probes are evaluated under every recipe; comparator IDs identify the lead's independently sourced alternative inputs, not a recipe-specific corpus input override."
+    },
+    {
+      "id": "b-before-sc024-existing-collision",
+      "architecture": "B",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nDeliberately naive collision control: acute é lengthens to ḗ before SC024; plain e lengthens to ē. This is not a proposed valid representation.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ḗ},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "move",
+          "rule": "PNWGmcILowering",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "PNWGmcILowering",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "hill-lengthen-then-lower-long-i",
+      "architecture": "A",
+      "representation": "Existing short e/é; newly lengthened e uses ē, never early ē₁-tier ḗ.",
+      "evidence": "Hill2017 p.148 explicitly gives *hir > *hīr > *hẹ̄r as the alternative order; the rule and its domain here are an isolated formalization for testing, not an adopted sound change.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nHill-order sensitivity: first lengthen short i to existing long ī/ḯ, then apply a separately stated long-ī lowering to long ē before final r. This operation is not SC015's adopted short-i lowering. It applies to all long ī/ḯ in the stated environment, not only newly lengthened adverb vowels; inspect all selected-row and negative-control effects. The output uses CAPR ē, distinct from inherited ē₁ serialization ḗ.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLongILower": "[ {*ī} -> {*ē}, {*ḯ} -> {*ē} || .#. EnglishStarConsonant* _ {*r} .#. ]"
+      },
+      "source_replacements": [],
+      "symbols": [],
+      "edits": [
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLongILower",
+          "target": "XRLen",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "existing",
+        "short_merger_timing": "not applicable",
+        "direct_class_consumers": {},
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions."
+      }
+    },
+    {
+      "id": "a-after-sc015-explicit-immediate",
+      "architecture": "A",
+      "representation": "Explicit lowered close-mid short ẹ, acute-tier surrogate ḙ, long surrogate ệ; all labels are single Unicode scalars. Neither the spelling ḙ/ệ nor its diacritics assert a phoneme or a phonetic value beyond the declared technical serialization.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort and explicit long labels merge immediately after lengthening; C separately merges newly produced late z/st lowering. Distinct-short duration is a declared implementation/chronology assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ệ},\n    {*é} -> {*ệ},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ẹ} -> {*ệ},\n    {*ḙ} -> {*ệ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ẹ} -> {*e}, {*ḙ} -> {*é}, {*ệ} -> {*ē} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ḙ} |",
+          "reason": "Research-only explicit membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ẹ} | {*ḙ} |",
+          "reason": "Research-only explicit membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        },
+        {
+          "old": "define EnglishStarLongVowel [",
+          "new": "define EnglishStarLongVowel [\n    {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarLongVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarLongVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ẹ",
+          "role": "plain-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ḙ",
+          "role": "acute-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ệ",
+          "role": "single-scalar long close-mid technical label; merges to existing ē",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "XRLen",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "explicit",
+        "short_merger_timing": "immediate",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ],
+          "EnglishStarLongVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "a-after-sc015-explicit-before-z-loss",
+      "architecture": "A",
+      "representation": "Explicit lowered close-mid short ẹ, acute-tier surrogate ḙ, long surrogate ệ; all labels are single Unicode scalars. Neither the spelling ḙ/ệ nor its diacritics assert a phoneme or a phonetic value beyond the declared technical serialization.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort/long labels persist until immediately before MonosyllabicFinalZLoss, then merge before its explicit e/é compensatory-lengthening clauses, rhotacism, diphthong leveling, breaking and umlaut. Compare the immediate merger to test the distinct-short duration assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ệ},\n    {*é} -> {*ệ},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ẹ} -> {*ệ},\n    {*ḙ} -> {*ệ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ẹ} -> {*e}, {*ḙ} -> {*é}, {*ệ} -> {*ē} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ḙ} |",
+          "reason": "Research-only explicit membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ẹ} | {*ḙ} |",
+          "reason": "Research-only explicit membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        },
+        {
+          "old": "define EnglishStarLongVowel [",
+          "new": "define EnglishStarLongVowel [\n    {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarLongVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarLongVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ẹ",
+          "role": "plain-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ḙ",
+          "role": "acute-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ệ",
+          "role": "single-scalar long close-mid technical label; merges to existing ē",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "MonosyllabicFinalZLoss",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "explicit",
+        "short_merger_timing": "before-z-loss",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ],
+          "EnglishStarLongVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "a-after-sc015-origin-immediate",
+      "architecture": "A",
+      "representation": "Transient lowered-origin short labels ị/plain and ỉ/acute, not new reconstructed phonemes; lengthening enters existing ē directly.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort and explicit long labels merge immediately after lengthening; C separately merges newly produced late z/st lowering. Distinct-short duration is a declared implementation/chronology assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ị} -> {*ē},\n    {*ỉ} -> {*ē}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ị} -> {*e}, {*ỉ} -> {*é} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ị",
+          "role": "plain-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ỉ",
+          "role": "acute-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "XRLen",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "origin",
+        "short_merger_timing": "immediate",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "a-after-sc015-origin-before-z-loss",
+      "architecture": "A",
+      "representation": "Transient lowered-origin short labels ị/plain and ỉ/acute, not new reconstructed phonemes; lengthening enters existing ē directly.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort/long labels persist until immediately before MonosyllabicFinalZLoss, then merge before its explicit e/é compensatory-lengthening clauses, rhotacism, diphthong leveling, breaking and umlaut. Compare the immediate merger to test the distinct-short duration assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ị} -> {*ē},\n    {*ỉ} -> {*ē}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ị} -> {*e}, {*ỉ} -> {*é} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ị",
+          "role": "plain-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ỉ",
+          "role": "acute-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "MonosyllabicFinalZLoss",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "origin",
+        "short_merger_timing": "before-z-loss",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "b-before-sc024-explicit-immediate",
+      "architecture": "B",
+      "representation": "Explicit lowered close-mid short ẹ, acute-tier surrogate ḙ, long surrogate ệ; all labels are single Unicode scalars. Neither the spelling ḙ/ệ nor its diacritics assert a phoneme or a phonetic value beyond the declared technical serialization.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort and explicit long labels merge immediately after lengthening; C separately merges newly produced late z/st lowering. Distinct-short duration is a declared implementation/chronology assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ệ},\n    {*é} -> {*ệ},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ẹ} -> {*ệ},\n    {*ḙ} -> {*ệ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ẹ} -> {*e}, {*ḙ} -> {*é}, {*ệ} -> {*ē} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ḙ} |",
+          "reason": "Research-only explicit membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ẹ} | {*ḙ} |",
+          "reason": "Research-only explicit membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        },
+        {
+          "old": "define EnglishStarLongVowel [",
+          "new": "define EnglishStarLongVowel [\n    {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarLongVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarLongVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ẹ",
+          "role": "plain-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ḙ",
+          "role": "acute-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ệ",
+          "role": "single-scalar long close-mid technical label; merges to existing ē",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "move",
+          "rule": "XRLower",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "XRLen",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "explicit",
+        "short_merger_timing": "immediate",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ],
+          "EnglishStarLongVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "b-before-sc024-explicit-before-z-loss",
+      "architecture": "B",
+      "representation": "Explicit lowered close-mid short ẹ, acute-tier surrogate ḙ, long surrogate ệ; all labels are single Unicode scalars. Neither the spelling ḙ/ệ nor its diacritics assert a phoneme or a phonetic value beyond the declared technical serialization.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort/long labels persist until immediately before MonosyllabicFinalZLoss, then merge before its explicit e/é compensatory-lengthening clauses, rhotacism, diphthong leveling, breaking and umlaut. Compare the immediate merger to test the distinct-short duration assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ệ},\n    {*é} -> {*ệ},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ẹ} -> {*ệ},\n    {*ḙ} -> {*ệ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ẹ} -> {*e}, {*ḙ} -> {*é}, {*ệ} -> {*ē} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ḙ} |",
+          "reason": "Research-only explicit membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ẹ} | {*ḙ} |",
+          "reason": "Research-only explicit membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        },
+        {
+          "old": "define EnglishStarLongVowel [",
+          "new": "define EnglishStarLongVowel [\n    {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarLongVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarLongVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ẹ",
+          "role": "plain-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ḙ",
+          "role": "acute-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ệ",
+          "role": "single-scalar long close-mid technical label; merges to existing ē",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "move",
+          "rule": "XRLower",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "MonosyllabicFinalZLoss",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "explicit",
+        "short_merger_timing": "before-z-loss",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ],
+          "EnglishStarLongVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [
+          {
+            "event": "PNWGmcLongELowering",
+            "literals": [
+              "ḗ"
+            ]
+          },
+          {
+            "event": "OEWWSimplification",
+            "literals": [
+              "e",
+              "é"
+            ]
+          }
+        ],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "b-before-sc024-origin-immediate",
+      "architecture": "B",
+      "representation": "Transient lowered-origin short labels ị/plain and ỉ/acute, not new reconstructed phonemes; lengthening enters existing ē directly.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort and explicit long labels merge immediately after lengthening; C separately merges newly produced late z/st lowering. Distinct-short duration is a declared implementation/chronology assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ị} -> {*ē},\n    {*ỉ} -> {*ē}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ị} -> {*e}, {*ỉ} -> {*é} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ị",
+          "role": "plain-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ỉ",
+          "role": "acute-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "move",
+          "rule": "XRLower",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "XRLen",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "origin",
+        "short_merger_timing": "immediate",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "b-before-sc024-origin-before-z-loss",
+      "architecture": "B",
+      "representation": "Transient lowered-origin short labels ị/plain and ỉ/acute, not new reconstructed phonemes; lengthening enters existing ē directly.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort/long labels persist until immediately before MonosyllabicFinalZLoss, then merge before its explicit e/é compensatory-lengthening clauses, rhotacism, diphthong leveling, breaking and umlaut. Compare the immediate merger to test the distinct-short duration assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ị} -> {*ē},\n    {*ỉ} -> {*ē}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLower": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}],\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.]\n         | {*s} {*t}\n         | {*r}]\n])",
+        "XRMerge": "[ {*ị} -> {*e}, {*ỉ} -> {*é} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ị",
+          "role": "plain-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ỉ",
+          "role": "acute-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLower",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLower"
+        },
+        {
+          "action": "move",
+          "rule": "XRLower",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLower",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "MonosyllabicFinalZLoss",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "origin",
+        "short_merger_timing": "before-z-loss",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [
+          {
+            "event": "PNWGmcLongELowering",
+            "literals": [
+              "ḗ"
+            ]
+          },
+          {
+            "event": "OEWWSimplification",
+            "literals": [
+              "e",
+              "é"
+            ]
+          }
+        ],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "c-before-sc024-explicit-immediate",
+      "architecture": "C",
+      "representation": "Explicit lowered close-mid short ẹ, acute-tier surrogate ḙ, long surrogate ệ; all labels are single Unicode scalars. Neither the spelling ḙ/ệ nor its diacritics assert a phoneme or a phonetic value beyond the declared technical serialization.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort and explicit long labels merge immediately after lengthening; C separately merges newly produced late z/st lowering. Distinct-short duration is a declared implementation/chronology assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ệ},\n    {*é} -> {*ệ},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ẹ} -> {*ệ},\n    {*ḙ} -> {*ệ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLowerR": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        {*r},\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        {*r}\n])",
+        "XRLowerZS": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}],\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}]\n])",
+        "XRMerge": "[ {*ẹ} -> {*e}, {*ḙ} -> {*é}, {*ệ} -> {*ē} ]",
+        "XRLateMerge": "[ {*ẹ} -> {*e}, {*ḙ} -> {*é}, {*ệ} -> {*ē} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ḙ} |",
+          "reason": "Research-only explicit membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ẹ} | {*ḙ} |",
+          "reason": "Research-only explicit membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        },
+        {
+          "old": "define EnglishStarLongVowel [",
+          "new": "define EnglishStarLongVowel [\n    {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarLongVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarLongVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ẹ",
+          "role": "plain-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ]
+        },
+        {
+          "symbol": "ḙ",
+          "role": "acute-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ]
+        },
+        {
+          "symbol": "ệ",
+          "role": "single-scalar long close-mid technical label; merges to existing ē",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge",
+            "XRLateMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge",
+            "XRLateMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLowerZS"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLowerR",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLowerR",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "XRLen",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLateMerge",
+          "target": "XRLowerZS",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "explicit",
+        "short_merger_timing": "immediate",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ],
+          "EnglishStarLongVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "c-before-sc024-explicit-before-z-loss",
+      "architecture": "C",
+      "representation": "Explicit lowered close-mid short ẹ, acute-tier surrogate ḙ, long surrogate ệ; all labels are single Unicode scalars. Neither the spelling ḙ/ệ nor its diacritics assert a phoneme or a phonetic value beyond the declared technical serialization.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort/long labels persist until immediately before MonosyllabicFinalZLoss, then merge before its explicit e/é compensatory-lengthening clauses, rhotacism, diphthong leveling, breaking and umlaut. Compare the immediate merger to test the distinct-short duration assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ệ},\n    {*é} -> {*ệ},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ẹ} -> {*ệ},\n    {*ḙ} -> {*ệ}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLowerR": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        {*r},\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        {*r}\n])",
+        "XRLowerZS": "Ctx([\n    {*i} -> {*ẹ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}],\n    {*í} -> {*ḙ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}]\n])",
+        "XRMerge": "[ {*ẹ} -> {*e}, {*ḙ} -> {*é}, {*ệ} -> {*ē} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ḙ} |",
+          "reason": "Research-only explicit membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ẹ} | {*ḙ} |",
+          "reason": "Research-only explicit membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ẹ} | {*ḙ} | {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        },
+        {
+          "old": "define EnglishStarLongVowel [",
+          "new": "define EnglishStarLongVowel [\n    {*ệ} |",
+          "reason": "Research-only explicit membership in EnglishStarLongVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarLongVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ẹ",
+          "role": "plain-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ḙ",
+          "role": "acute-tier short lowered vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ệ",
+          "role": "single-scalar long close-mid technical label; merges to existing ē",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarNonHighVowel",
+            "EnglishStarLongVowel",
+            "XRLen",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLowerZS"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLowerR",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLowerR",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "MonosyllabicFinalZLoss",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "explicit",
+        "short_merger_timing": "before-z-loss",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ],
+          "EnglishStarLongVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [
+          {
+            "event": "PNWGmcLongELowering",
+            "literals": [
+              "ḗ"
+            ]
+          },
+          {
+            "event": "OEWWSimplification",
+            "literals": [
+              "e",
+              "é"
+            ]
+          }
+        ],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "c-before-sc024-origin-immediate",
+      "architecture": "C",
+      "representation": "Transient lowered-origin short labels ị/plain and ỉ/acute, not new reconstructed phonemes; lengthening enters existing ē directly.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort and explicit long labels merge immediately after lengthening; C separately merges newly produced late z/st lowering. Distinct-short duration is a declared implementation/chronology assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ị} -> {*ē},\n    {*ỉ} -> {*ē}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLowerR": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        {*r},\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        {*r}\n])",
+        "XRLowerZS": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}],\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}]\n])",
+        "XRMerge": "[ {*ị} -> {*e}, {*ỉ} -> {*é} ]",
+        "XRLateMerge": "[ {*ị} -> {*e}, {*ỉ} -> {*é} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ị",
+          "role": "plain-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ]
+        },
+        {
+          "symbol": "ỉ",
+          "role": "acute-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge",
+            "XRLateMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLowerZS"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLowerR",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLowerR",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "XRLen",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLateMerge",
+          "target": "XRLowerZS",
+          "side": "after"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "origin",
+        "short_merger_timing": "immediate",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    },
+    {
+      "id": "c-before-sc024-origin-before-z-loss",
+      "architecture": "C",
+      "representation": "Transient lowered-origin short labels ị/plain and ỉ/acute, not new reconstructed phonemes; lengthening enters existing ē directly.",
+      "evidence": "Hill2017 pp.137–149,153–158: proposed lowering and monosyllabic lengthening hypotheses only; inherited-r restriction, precise executable domain and dating remain assumptions to assess against the supplied witnesses.",
+      "assumptions": "Hypothesis, not adoption: consonant-only onset plus a single short nucleus and inherited final r at this stage; word-boundary .#. on both sides.\nPlain short first nuclei count as stressed citation roots; acute and plain serializations remain distinct. The rule is not a three-lexeme rewrite.\nThe formal quality domain is oral a/e/i/o/u/y/æ and their available acute tiers, with existing long counterparts; o/u/y/æ are generality controls, not a claim that Hill independently attests each case. Reduced ĕ, secondary-stress grave vowels and nasal vowels are excluded.\nWeak context markers are identity paths while present. After PWGmcUnstressedWordFinalIApocope consumes weak-final marking, late placements cannot independently recover that lost word-stress metadata; interpret late stress-sensitive controls accordingly.\nInherited-r identity is an ordering assumption: after EAFRhotacism a bare r could not distinguish its origin; these proposed anchors precede it.\nThe explicit representation labels only lowered products, not every inherited short e; phonemic interpretation requires independent evidence.\nShort/long labels persist until immediately before MonosyllabicFinalZLoss, then merge before its explicit e/é compensatory-lengthening clauses, rhotacism, diphthong leveling, breaking and umlaut. Compare the immediate merger to test the distinct-short duration assumption.",
+      "definitions": {
+        "XRLen": "[ [?* [{*ᵘ}|{*ᶜ}] ?*] | [ [EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. [\n    {*a} -> {*ā},\n    {*á} -> {*ā},\n    {*e} -> {*ē},\n    {*é} -> {*ē},\n    {*i} -> {*ī},\n    {*í} -> {*ḯ},\n    {*o} -> {*ō},\n    {*ó} -> {*ō},\n    {*u} -> {*ū},\n    {*ú} -> {*ū},\n    {*y} -> {*ȳ},\n    {*æ} -> {*ǣ},\n    {*ị} -> {*ē},\n    {*ỉ} -> {*ē}\n    || .#. EnglishStarConsonant* _ {*r} .#.\n] ] ]",
+        "XRLowerR": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        {*r},\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        {*r}\n])",
+        "XRLowerZS": "Ctx([\n    {*i} -> {*ị} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}],\n    {*í} -> {*ỉ} ||\n        .#. EnglishStarConsonant* _\n        [{*z} [EnglishStarConsonant | .#.] | {*s} {*t}]\n])",
+        "XRMerge": "[ {*ị} -> {*e}, {*ỉ} -> {*é} ]"
+      },
+      "source_replacements": [
+        {
+          "old": "define PGmcStarVowel [",
+          "new": "define PGmcStarVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarVowel",
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ]
+        },
+        {
+          "old": "define PGmcStarFrontVowel [",
+          "new": "define PGmcStarFrontVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarFrontVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarFrontVowel",
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ]
+        },
+        {
+          "old": "define PGmcStarAcuteVowel [",
+          "new": "define PGmcStarAcuteVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarAcuteVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarAcuteVowel",
+            "OECompoundLinkingSyncope"
+          ]
+        },
+        {
+          "old": "define PGmcStarStressedVowel [",
+          "new": "define PGmcStarStressedVowel [\n    {*ỉ} |",
+          "reason": "Research-only origin membership in PGmcStarStressedVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "PGmcStarStressedVowel",
+            "PWGmcEarlyIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarShortVowel [",
+          "new": "define EnglishStarShortVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarShortVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarShortVowel",
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ]
+        },
+        {
+          "old": "define EnglishStarNonHighVowel [",
+          "new": "define EnglishStarNonHighVowel [\n    {*ị} | {*ỉ} |",
+          "reason": "Research-only origin membership in EnglishStarNonHighVowel; preserve plain/acute distinction, front-vowel and quantity behavior. The nonhigh extension deliberately exposes the same lowered vowel to PNWGmcULowering's following-vowel test. Long ệ shares ē's default-root-stress class, not its acute class.",
+          "consumers": [
+            "EnglishStarNonHighVowel",
+            "PNWGmcULowering"
+          ]
+        }
+      ],
+      "symbols": [
+        {
+          "symbol": "ị",
+          "role": "plain-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ]
+        },
+        {
+          "symbol": "ỉ",
+          "role": "acute-tier transient lowered-origin short vowel",
+          "consumers": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ],
+          "class_memberships": [
+            "PGmcStarVowel",
+            "PGmcStarFrontVowel",
+            "PGmcStarAcuteVowel",
+            "PGmcStarStressedVowel",
+            "EnglishStarShortVowel",
+            "EnglishStarNonHighVowel",
+            "XRLen",
+            "XRLowerR",
+            "XRLowerZS",
+            "XRMerge"
+          ]
+        }
+      ],
+      "edits": [
+        {
+          "action": "replace",
+          "target": "PNWGmcILowering",
+          "rule": "XRLowerZS"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLowerR",
+          "target": "PNWGmcLongELowering",
+          "side": "before"
+        },
+        {
+          "action": "insert",
+          "rule": "XRLen",
+          "target": "XRLowerR",
+          "side": "after"
+        },
+        {
+          "action": "insert",
+          "rule": "XRMerge",
+          "target": "MonosyllabicFinalZLoss",
+          "side": "before"
+        }
+      ],
+      "representation_audit": {
+        "implementation": "origin",
+        "short_merger_timing": "before-z-loss",
+        "direct_class_consumers": {
+          "PGmcStarVowel": [
+            "GermanConsonantShift",
+            "OEInterStressRaising",
+            "PGmcStarVocalic"
+          ],
+          "PGmcStarFrontVowel": [
+            "EnglishStarFrontVowel",
+            "PGmcStarFrontTrigger"
+          ],
+          "PGmcStarAcuteVowel": [
+            "OECompoundLinkingSyncope"
+          ],
+          "PGmcStarStressedVowel": [
+            "PWGmcEarlyIApocope"
+          ],
+          "EnglishStarShortVowel": [
+            "OEHighVowelApocope",
+            "OEJLossAfterHeavy",
+            "OELAdjacentSyncope",
+            "OEMedialSyncope",
+            "PWGmcJGemination",
+            "PWGmcSyllabicJ",
+            "PWGmcUnstressedWordFinalIApocope"
+          ],
+          "EnglishStarNonHighVowel": [
+            "PNWGmcULowering"
+          ]
+        },
+        "input_stage": "No pgrm input classes/mappings are extended: technical symbols are introduced after EnglishProtoInput only. Full-entry probes must use native input inventory; explicit technical inputs require declared stage-entry probes and are not native corpus reconstructions.",
+        "crossed_native_literal_events": [
+          {
+            "event": "PNWGmcLongELowering",
+            "literals": [
+              "ḗ"
+            ]
+          },
+          {
+            "event": "OEWWSimplification",
+            "literals": [
+              "e",
+              "é"
+            ]
+          }
+        ],
+        "literal_audit_limit": "These exact native leaf expressions mention e-tier literals while technical labels may be present. Class extensions do not extend their literal rewrite clauses; applicability must be checked in the traces. This list is not a historical interaction claim."
+      }
+    }
+  ],
+  "probes": [
+    {
+      "id": "hill-here",
+      "fst_input": "xír",
+      "kind": "focal historical hypothesis",
+      "evidence": "Hill2017 pp.137–141,153–158; short antecedent is a morphological inference, not the dictionary citation reconstruction.",
+      "historical_stage": "early Germanic antecedent under Hill's hypothesis",
+      "reconstruction_level": "B; not an adopted C input"
+    },
+    {
+      "id": "hill-where",
+      "fst_input": "xwár",
+      "kind": "focal historical hypothesis",
+      "evidence": "Hill2017 pp.142–148; Kroonen2013 p.263; interrogative stem plus locative r.",
+      "historical_stage": "before proposed monosyllabic lengthening",
+      "reconstruction_level": "B; not an adopted C input"
+    },
+    {
+      "id": "hill-there",
+      "fst_input": "θár",
+      "kind": "focal historical hypothesis",
+      "evidence": "Hill2017 pp.142–148; Kroonen2013 p.534; demonstrative stem plus locative r.",
+      "historical_stage": "before proposed monosyllabic lengthening",
+      "reconstruction_level": "B; not an adopted C input"
+    },
+    {
+      "id": "orel-here-long-mid",
+      "fst_input": "xēr",
+      "kind": "independently sourced already-long comparator",
+      "evidence": "Orel2003 p.172, comparative citation *xē₂r; xēr is its CAPR long-mid serialization and tests the inherited-long route, not the origin of quantity.",
+      "historical_stage": "comparative Proto-Germanic citation",
+      "reconstruction_level": "A serialized experimentally; not selected C"
+    },
+    {
+      "id": "ringe-here-long-high",
+      "fst_input": "xḯr",
+      "kind": "source-backed alternative antecedent",
+      "evidence": "Ringe1984 pp.138,142–143, already-long /hīr/ plus lowering of long ī before final r. None of these recipes implements that separate long-vowel lowering rule.",
+      "historical_stage": "Ringe's Proto-Germanic long-high antecedent",
+      "reconstruction_level": "B; ḯ is CAPR's stressed-long-i serialization"
+    },
+    {
+      "id": "kroonen-here-hiatus",
+      "fst_input": "xíar",
+      "kind": "source-backed alternative formation; representation diagnostic",
+      "evidence": "Kroonen2013 p.225, *hiar from *ki-or; native ia sequence is only a serialization diagnostic, not an implementation of Kortlandt's proposed merger.",
+      "historical_stage": "comparative formation before the proposed ia/ē2 merger",
+      "reconstruction_level": "A/B alternative; no claim that native ia is one diphthong"
+    },
+    {
+      "id": "plain-here",
+      "fst_input": "xir",
+      "kind": "stress-tier serialization control",
+      "evidence": "Same conditional short antecedent as hill-here; plain first nucleus is default citation stress in this experiment.",
+      "historical_stage": "same as hill-here",
+      "reconstruction_level": "B technical variant"
+    },
+    {
+      "id": "plain-where",
+      "fst_input": "xwar",
+      "kind": "stress-tier serialization control",
+      "evidence": "Same conditional short antecedent as hill-where; not a second independent historical witness.",
+      "historical_stage": "same as hill-where",
+      "reconstruction_level": "B technical variant"
+    },
+    {
+      "id": "plain-there",
+      "fst_input": "θar",
+      "kind": "stress-tier serialization control",
+      "evidence": "Same conditional short antecedent as hill-there; not a second independent historical witness.",
+      "historical_stage": "same as hill-there",
+      "reconstruction_level": "B technical variant"
+    },
+    {
+      "id": "ohg-directional-here",
+      "fst_input": "xéra",
+      "kind": "comparative short disyllabic control",
+      "evidence": "Hill2017 pp.140–144, OHG hĕra; experimental short-e ancestral pattern, NOT an OE target or an adopted PGmc citation.",
+      "historical_stage": "comparative directional formation, projected into the OE wrapper only diagnostically",
+      "reconstruction_level": "comparative control"
+    },
+    {
+      "id": "ohg-directional-where",
+      "fst_input": "xwára",
+      "kind": "comparative short disyllabic control",
+      "evidence": "Hill2017 pp.143–144, OHG hwăra; projected short-a pattern, not an OE selection.",
+      "historical_stage": "before directional final-vowel loss",
+      "reconstruction_level": "comparative control"
+    },
+    {
+      "id": "ohg-directional-there",
+      "fst_input": "θára",
+      "kind": "comparative short disyllabic control",
+      "evidence": "Hill2017 pp.143–144, OHG dăra; θ represents its earlier dental stage, not the OHG surface spelling.",
+      "historical_stage": "before directional final-vowel loss",
+      "reconstruction_level": "comparative control"
+    },
+    {
+      "id": "gothic-extended-where",
+      "fst_input": "xwárjis",
+      "kind": "comparative morphological control",
+      "evidence": "Hill2017 pp.146–147, Gothic ƕarjis and ON hverr; a pattern exposing the second nucleus, not a reconstructed OE paradigm cell.",
+      "historical_stage": "extended interrogative formation",
+      "reconstruction_level": "comparative control; no OE output target"
+    },
+    {
+      "id": "gothic-hiri",
+      "fst_input": "xíri",
+      "kind": "comparative morphological control",
+      "evidence": "Hill2017 pp.139–141; Kroonen2013 p.225: Gothic hiri is a distinct formation, not automatically an unlengthened allomorph of hēr.",
+      "historical_stage": "separate suffixed formation",
+      "reconstruction_level": "comparative control; no OE output target"
+    },
+    {
+      "id": "pronoun-iz",
+      "fst_input": "íz",
+      "kind": "comparative secondary-r negative control",
+      "evidence": "Hill2017 pp.138–139,153, *iz and OHG er. The OE wrapper has independent final-z loss; its output must not be presented as OHG er.",
+      "historical_stage": "early Germanic pronoun",
+      "reconstruction_level": "B comparative control"
+    },
+    {
+      "id": "pronoun-hiz",
+      "fst_input": "xíz",
+      "kind": "comparative z-environment control",
+      "evidence": "Hill2017 pp.138–139,153, *hiz, OE hē; quantity and lowering are distinct.",
+      "historical_stage": "early Germanic pronoun",
+      "reconstruction_level": "B comparative control"
+    },
+    {
+      "id": "hill-man-r-lowering",
+      "fst_input": "wíraz",
+      "kind": "comparative positive quality control",
+      "evidence": "Hill2017 pp.151–157, *wiraz > *wẹraz > wer. Disyllabic and not word-final-r lengthening evidence.",
+      "historical_stage": "PGmc lexical input",
+      "reconstruction_level": "comparative control; not a selected OE row"
+    },
+    {
+      "id": "fish-sk-negative",
+      "fst_input": "fískaz",
+      "kind": "comparative negative quality control",
+      "evidence": "Hill2017 pp.154–155, *fiskaz retains i before *sk; pattern control, not an OE selection.",
+      "historical_stage": "PGmc lexical input",
+      "reconstruction_level": "comparative control; not a selected OE row"
+    },
+    {
+      "id": "reward-z-control",
+      "fst_input": "mízdōn",
+      "kind": "comparative mixed-outcome control",
+      "evidence": "Hill2017 pp.138–139,153–154, *mizdōn > OE meord/mēd and West Germanic reflexes; spelling distinguishes input stages only approximately.",
+      "historical_stage": "PGmc lexical input",
+      "reconstruction_level": "comparative control; no unique OE output is stipulated"
+    },
+    {
+      "id": "hill-here-weak-final",
+      "fst_input": "xír",
+      "kind": "synthetic prosodic negative control",
+      "evidence": "Same segmental string as hill-here with explicit weak word context; tests the rule's stress boundary, not an attested independent lexeme.",
+      "historical_stage": "hypothetical weak-final context",
+      "reconstruction_level": "synthetic",
+      "context": {
+        "word_stress": "unstressed",
+        "phonological_finality": "final"
+      }
+    },
+    {
+      "id": "hill-here-weak-nonfinal",
+      "fst_input": "xír",
+      "kind": "synthetic prosodic negative control",
+      "evidence": "Same segmental string as hill-here with explicit weak nonfinal context; no new historical attestation is asserted.",
+      "historical_stage": "hypothetical weak-nonfinal context",
+      "reconstruction_level": "synthetic",
+      "context": {
+        "word_stress": "unstressed",
+        "phonological_finality": "nonfinal"
+      }
+    },
+    {
+      "id": "synthetic-other-final",
+      "fst_input": "xít",
+      "kind": "synthetic boundary negative control",
+      "evidence": "Invented minimal contrast r/t; not a sourced Germanic lexeme.",
+      "historical_stage": "formal early-input control",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-r-cluster",
+      "fst_input": "xárt",
+      "kind": "synthetic boundary negative control",
+      "evidence": "Invented contrast r#/rt#; not a sourced Germanic lexeme.",
+      "historical_stage": "formal early-input control",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-extra-nucleus",
+      "fst_input": "xárar",
+      "kind": "synthetic boundary negative control",
+      "evidence": "Invented two-nucleus string; verifies whole-word monosyllabicity rather than merely final Vr.",
+      "historical_stage": "formal early-input control",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-other-onset",
+      "fst_input": "tár",
+      "kind": "synthetic generality positive control",
+      "evidence": "Invented consonant-onset monosyllable. A purely phonological inherited-r rule must not be a whitelist for the three adverbs.",
+      "historical_stage": "formal early-input control",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-onsetless",
+      "fst_input": "ár",
+      "kind": "synthetic generality positive control",
+      "evidence": "Invented onsetless monosyllable; C* explicitly permits zero onset consonants.",
+      "historical_stage": "formal early-input control",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-long-a",
+      "fst_input": "xwār",
+      "kind": "synthetic quantity negative control",
+      "evidence": "Already-long serialization of the proposed post-lengthening state; no second application should occur.",
+      "historical_stage": "formal post-lengthening comparator",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-inherited-e1",
+      "fst_input": "xḗr",
+      "kind": "synthetic inherited-vowel control",
+      "evidence": "Deliberate ē1-tier comparator; contrasted with Orel's xēr. This is NOT a proposed reconstruction of here.",
+      "historical_stage": "before SC024",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-final-z-e",
+      "fst_input": "xéz",
+      "kind": "synthetic representation consumer control",
+      "evidence": "Invented short-e plus final-z input; exposes compensatory lengthening and technical-label merger timing.",
+      "historical_stage": "before final-z loss",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-final-z-i",
+      "fst_input": "xíz",
+      "kind": "synthetic representation consumer control",
+      "evidence": "Same spelling as the sourced pronoun, but specifically a formal lowered-label/final-z consumer test; not another lexical witness.",
+      "historical_stage": "before final-z loss",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-umlaut",
+      "fst_input": "tístijaną",
+      "kind": "synthetic representation consumer control",
+      "evidence": "Invented st-lowering plus later i-mutation environment; tests literal e/é consumers, not a historical reconstruction.",
+      "historical_stage": "formal early-input control",
+      "reconstruction_level": "synthetic"
+    },
+    {
+      "id": "synthetic-rhotacism-tail",
+      "fst_input": "*á*z*a",
+      "kind": "synthetic stage-entry negative control",
+      "evidence": "Invented z+a tail before rhotacism; records exactly when secondary r and subsequent monosyllabicity arise. No inferred OHG output.",
+      "historical_stage": "immediately before EAFRhotacism",
+      "reconstruction_level": "synthetic",
+      "entry_stage": "EAFRhotacism",
+      "side": "before"
+    },
+    {
+      "id": "synthetic-apocope-tail",
+      "fst_input": "*x*w*á*r*a",
+      "kind": "synthetic stage-entry negative control",
+      "evidence": "Invented disyllabic tail before later bare-a loss; tests that an earlier lengthening is not retroactively applied after apocope.",
+      "historical_stage": "immediately before EAFRhotacism",
+      "reconstruction_level": "synthetic",
+      "entry_stage": "EAFRhotacism",
+      "side": "before"
+    },
+    {
+      "id": "synthetic-post-rhotacism-r",
+      "fst_input": "*á*r",
+      "kind": "synthetic origin-information control",
+      "evidence": "Explicitly supplied post-rhotacism monosyllable with secondary r. Once ancestry is erased from its string, a late bare-r rule cannot recover it.",
+      "historical_stage": "immediately after EAFRhotacism",
+      "reconstruction_level": "synthetic",
+      "entry_stage": "EAFRhotacism",
+      "side": "after"
+    }
+  ]
+}
