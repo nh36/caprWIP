@@ -11,14 +11,14 @@ chronology constraints.
 
 ## Totals
 
-- total node count: `72`
+- total node count: `73`
 - total edge count: `138`
 
 ### Node counts by card_type
 
 | card_type | count |
 | --- | ---: |
-| `boundary_limited` | 1 |
+| `boundary_limited` | 2 |
 | `boundary_observation` | 2 |
 | `broad_far` | 6 |
 | `mixed` | 16 |

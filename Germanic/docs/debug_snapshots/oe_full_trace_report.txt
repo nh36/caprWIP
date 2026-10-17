@@ -1,20 +1,20 @@
 === PROVENANCE ===
-germanic.txt sha256: da04db7a21664bf9a606e331c5dd484a023d00e00a5ecf7c19ea3e8e310789e9
-old_english_sandbox.txt sha256: efe38dec1b3edd28d46a64c4a69c5eb6253235236b487fdcfd074fc2c8001642
-germanic-aligned-final.tsv sha256: 514cfe096b636ea6790361787a154a70e6dafb7d8bf3e4936fced51f3b1b2a6f
+germanic.txt sha256: d9b8e0f8698870d73a78e505c9615ce6040239be66d5f7c845c0e2d8093c0a21
+old_english_sandbox.txt sha256: b58b37de1ef84f484680af87954ca92e5bd579f3b81e65581c8665e3e8007af3
+germanic-aligned-final.tsv sha256: d40b6e65280d4cbe8acb08271803ef8acc64b3ff8e6b2656d416951aebdfa0a0
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
 oe_input_context.py sha256: b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961
-old_english.bin sha256 (informational): f96ad12ff41b1af55e492daa65030503d28d1f4354e87a316a17571feef6ab44
+old_english.bin sha256 (informational): 94b677cf53422341e72c6bad1fdd51a45fbd95d9e2dfcf0854a54bad27fec259
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-10-16T09:26:30+0100
+build_manifest_built_at: 2026-10-17T16:08:04+0100
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
-build_manifest_expected_bins: 108
-manifest:germanic-aligned-final.tsv sha256: 514cfe096b636ea6790361787a154a70e6dafb7d8bf3e4936fced51f3b1b2a6f
-manifest:germanic.txt sha256: da04db7a21664bf9a606e331c5dd484a023d00e00a5ecf7c19ea3e8e310789e9
-manifest:old_english_sandbox.txt sha256: efe38dec1b3edd28d46a64c4a69c5eb6253235236b487fdcfd074fc2c8001642
+build_manifest_expected_bins: 109
+manifest:germanic-aligned-final.tsv sha256: d40b6e65280d4cbe8acb08271803ef8acc64b3ff8e6b2656d416951aebdfa0a0
+manifest:germanic.txt sha256: d9b8e0f8698870d73a78e505c9615ce6040239be66d5f7c845c0e2d8093c0a21
+manifest:old_english_sandbox.txt sha256: b58b37de1ef84f484680af87954ca92e5bd579f3b81e65581c8665e3e8007af3
 
-=== BUCKET: exact_match (379) ===
+=== BUCKET: exact_match (381) ===
 
 --- adder ---
 PROTO: *nḗdrōn
@@ -53,6 +53,7 @@ PNWGmcFinalLongORaising [no-change]: *n*ā*d*r*ō*n
 EAFFinalZDeletion [no-change]: *n*ā*d*r*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*ā*d*r*ō*n
 MonosyllabicFinalZLoss [no-change]: *n*ā*d*r*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*ā*d*r*ō*n
 EAFRhotacism [no-change]: *n*ā*d*r*ō*n
 PNWGmcMnDissimilation [no-change]: *n*ā*d*r*ō*n
 PNWGmcNStemNLoss: *n*ā*d*r*ǭ
@@ -182,6 +183,7 @@ PNWGmcFinalLongORaising [no-change]: *b*á*k*a*n*ą
 EAFFinalZDeletion [no-change]: *b*á*k*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*á*k*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*á*k*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*á*k*a*n*ą
 EAFRhotacism [no-change]: *b*á*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*á*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*á*k*a*n*ą
@@ -311,6 +313,7 @@ PNWGmcFinalLongORaising [no-change]: *b*á*n*n*a*s
 EAFFinalZDeletion [no-change]: *b*á*n*n*a*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*á*n*n*a*s
 MonosyllabicFinalZLoss [no-change]: *b*á*n*n*a*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*á*n*n*a*s
 EAFRhotacism [no-change]: *b*á*n*n*a*s
 PNWGmcMnDissimilation [no-change]: *b*á*n*n*a*s
 PNWGmcNStemNLoss [no-change]: *b*á*n*n*a*s
@@ -440,6 +443,7 @@ PNWGmcFinalLongORaising [no-change]: *b*é*r*g*ą
 EAFFinalZDeletion [no-change]: *b*é*r*g*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*é*r*g*ą
 MonosyllabicFinalZLoss [no-change]: *b*é*r*g*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*é*r*g*ą
 EAFRhotacism [no-change]: *b*é*r*g*ą
 PNWGmcMnDissimilation [no-change]: *b*é*r*g*ą
 PNWGmcNStemNLoss [no-change]: *b*é*r*g*ą
@@ -569,6 +573,7 @@ PNWGmcFinalLongORaising [no-change]: *b*á*s*t*ą
 EAFFinalZDeletion [no-change]: *b*á*s*t*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*á*s*t*ą
 MonosyllabicFinalZLoss [no-change]: *b*á*s*t*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*á*s*t*ą
 EAFRhotacism [no-change]: *b*á*s*t*ą
 PNWGmcMnDissimilation [no-change]: *b*á*s*t*ą
 PNWGmcNStemNLoss [no-change]: *b*á*s*t*ą
@@ -698,6 +703,7 @@ PNWGmcFinalLongORaising [no-change]: *b*á*θ*ą
 EAFFinalZDeletion [no-change]: *b*á*θ*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*á*θ*ą
 MonosyllabicFinalZLoss [no-change]: *b*á*θ*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*á*θ*ą
 EAFRhotacism [no-change]: *b*á*θ*ą
 PNWGmcMnDissimilation [no-change]: *b*á*θ*ą
 PNWGmcNStemNLoss [no-change]: *b*á*θ*ą
@@ -827,6 +833,7 @@ PNWGmcFinalLongORaising [no-change]: *b*á*r*d*a*z
 EAFFinalZDeletion: *b*á*r*d*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*á*r*d*a
 MonosyllabicFinalZLoss [no-change]: *b*á*r*d*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*á*r*d*a
 EAFRhotacism [no-change]: *b*á*r*d*a
 PNWGmcMnDissimilation [no-change]: *b*á*r*d*a
 PNWGmcNStemNLoss [no-change]: *b*á*r*d*a
@@ -956,6 +963,7 @@ PNWGmcFinalLongORaising [no-change]: *b*é*b*r*u*z
 EAFFinalZDeletion: *b*é*b*r*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*é*b*r*u
 MonosyllabicFinalZLoss [no-change]: *b*é*b*r*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*é*b*r*u
 EAFRhotacism [no-change]: *b*é*b*r*u
 PNWGmcMnDissimilation [no-change]: *b*é*b*r*u
 PNWGmcNStemNLoss [no-change]: *b*é*b*r*u
@@ -1085,6 +1093,7 @@ PNWGmcFinalLongORaising: *b*ō*k*u
 EAFFinalZDeletion [no-change]: *b*ō*k*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ō*k*u
 MonosyllabicFinalZLoss [no-change]: *b*ō*k*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ō*k*u
 EAFRhotacism [no-change]: *b*ō*k*u
 PNWGmcMnDissimilation [no-change]: *b*ō*k*u
 PNWGmcNStemNLoss [no-change]: *b*ō*k*u
@@ -1214,6 +1223,7 @@ PNWGmcFinalLongORaising [no-change]: *b*i*g*í*n*n*a*n*ą
 EAFFinalZDeletion [no-change]: *b*i*g*í*n*n*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*i*g*í*n*n*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*i*g*í*n*n*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*i*g*í*n*n*a*n*ą
 EAFRhotacism [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*i*g*í*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*i*g*í*n*n*a*n*ą
@@ -1343,6 +1353,7 @@ PNWGmcFinalLongORaising [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *g*a*l*áu*b*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 EAFRhotacism [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*a*l*áu*b*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*a*l*áu*b*i*j*a*n*ą
@@ -1472,6 +1483,7 @@ PNWGmcFinalLongORaising [no-change]: *b*á*l*g*i*z
 EAFFinalZDeletion: *b*á*l*g*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*á*l*g*i
 MonosyllabicFinalZLoss [no-change]: *b*á*l*g*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*á*l*g*i
 EAFRhotacism [no-change]: *b*á*l*g*i
 PNWGmcMnDissimilation [no-change]: *b*á*l*g*i
 PNWGmcNStemNLoss [no-change]: *b*á*l*g*i
@@ -1601,6 +1613,7 @@ PNWGmcFinalLongORaising [no-change]: *b*á*z*j*a*s
 EAFFinalZDeletion [no-change]: *b*á*z*j*a*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*á*z*j*a*s
 MonosyllabicFinalZLoss [no-change]: *b*á*z*j*a*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*á*z*j*a*s
 EAFRhotacism: *b*á*r*j*a*s
 PNWGmcMnDissimilation [no-change]: *b*á*r*j*a*s
 PNWGmcNStemNLoss [no-change]: *b*á*r*j*a*s
@@ -1730,6 +1743,7 @@ PNWGmcFinalLongORaising: *b*ā*r*u
 EAFFinalZDeletion [no-change]: *b*ā*r*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ā*r*u
 MonosyllabicFinalZLoss [no-change]: *b*ā*r*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ā*r*u
 EAFRhotacism [no-change]: *b*ā*r*u
 PNWGmcMnDissimilation [no-change]: *b*ā*r*u
 PNWGmcNStemNLoss [no-change]: *b*ā*r*u
@@ -1859,6 +1873,7 @@ PNWGmcFinalLongORaising [no-change]: *b*í*n*d*a*n*ą
 EAFFinalZDeletion [no-change]: *b*í*n*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*í*n*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*í*n*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*í*n*d*a*n*ą
 EAFRhotacism [no-change]: *b*í*n*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*í*n*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*í*n*d*a*n*ą
@@ -1988,6 +2003,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ú*r*d*i*z
 EAFFinalZDeletion: *b*ú*r*d*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ú*r*d*i
 MonosyllabicFinalZLoss [no-change]: *b*ú*r*d*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ú*r*d*i
 EAFRhotacism [no-change]: *b*ú*r*d*i
 PNWGmcMnDissimilation [no-change]: *b*ú*r*d*i
 PNWGmcNStemNLoss [no-change]: *b*ú*r*d*i
@@ -2117,6 +2133,7 @@ PNWGmcFinalLongORaising [no-change]: *b*l*ō*d*ą
 EAFFinalZDeletion [no-change]: *b*l*ō*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*l*ō*d*ą
 MonosyllabicFinalZLoss [no-change]: *b*l*ō*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*l*ō*d*ą
 EAFRhotacism [no-change]: *b*l*ō*d*ą
 PNWGmcMnDissimilation [no-change]: *b*l*ō*d*ą
 PNWGmcNStemNLoss [no-change]: *b*l*ō*d*ą
@@ -2246,6 +2263,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ó*r*d*ą
 EAFFinalZDeletion [no-change]: *b*ó*r*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ó*r*d*ą
 MonosyllabicFinalZLoss [no-change]: *b*ó*r*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ó*r*d*ą
 EAFRhotacism [no-change]: *b*ó*r*d*ą
 PNWGmcMnDissimilation [no-change]: *b*ó*r*d*ą
 PNWGmcNStemNLoss [no-change]: *b*ó*r*d*ą
@@ -2375,6 +2393,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ái*n*ą
 EAFFinalZDeletion [no-change]: *b*ái*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ái*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*ái*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ái*n*ą
 EAFRhotacism [no-change]: *b*ái*n*ą
 PNWGmcMnDissimilation [no-change]: *b*ái*n*ą
 PNWGmcNStemNLoss [no-change]: *b*ái*n*ą
@@ -2504,6 +2523,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ō*k
 EAFFinalZDeletion [no-change]: *b*ō*k
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ō*k
 MonosyllabicFinalZLoss [no-change]: *b*ō*k
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ō*k
 EAFRhotacism [no-change]: *b*ō*k
 PNWGmcMnDissimilation [no-change]: *b*ō*k
 PNWGmcNStemNLoss [no-change]: *b*ō*k
@@ -2633,6 +2653,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ó*r*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *b*ó*r*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ó*r*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*ó*r*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ó*r*ō*j*a*n*ą
 EAFRhotacism [no-change]: *b*ó*r*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*ó*r*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*ó*r*ō*j*a*n*ą
@@ -2762,6 +2783,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ō*s*m*a*z
 EAFFinalZDeletion: *b*ō*s*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ō*s*m*a
 MonosyllabicFinalZLoss [no-change]: *b*ō*s*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ō*s*m*a
 EAFRhotacism [no-change]: *b*ō*s*m*a
 PNWGmcMnDissimilation [no-change]: *b*ō*s*m*a
 PNWGmcNStemNLoss [no-change]: *b*ō*s*m*a
@@ -2891,6 +2913,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ū
 EAFFinalZDeletion [no-change]: *b*ū
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ū
 MonosyllabicFinalZLoss [no-change]: *b*ū
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ū
 EAFRhotacism [no-change]: *b*ū
 PNWGmcMnDissimilation [no-change]: *b*ū
 PNWGmcNStemNLoss [no-change]: *b*ū
@@ -3020,6 +3043,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ó*t*t*m*a*z
 EAFFinalZDeletion: *b*ó*t*t*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ó*t*t*m*a
 MonosyllabicFinalZLoss [no-change]: *b*ó*t*t*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ó*t*t*m*a
 EAFRhotacism [no-change]: *b*ó*t*t*m*a
 PNWGmcMnDissimilation [no-change]: *b*ó*t*t*m*a
 PNWGmcNStemNLoss [no-change]: *b*ó*t*t*m*a
@@ -3149,6 +3173,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ō*g*u*z
 EAFFinalZDeletion: *b*ō*g*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ō*g*u
 MonosyllabicFinalZLoss [no-change]: *b*ō*g*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ō*g*u
 EAFRhotacism [no-change]: *b*ō*g*u
 PNWGmcMnDissimilation [no-change]: *b*ō*g*u
 PNWGmcNStemNLoss [no-change]: *b*ō*g*u
@@ -3278,6 +3303,7 @@ PNWGmcFinalLongORaising [no-change]: *b*áu*g*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *b*áu*g*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*áu*g*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*áu*g*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*áu*g*i*j*a*n*ą
 EAFRhotacism [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*áu*g*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*áu*g*i*j*a*n*ą
@@ -3407,6 +3433,7 @@ PNWGmcFinalLongORaising [no-change]: *b*áu*g
 EAFFinalZDeletion [no-change]: *b*áu*g
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*áu*g
 MonosyllabicFinalZLoss [no-change]: *b*áu*g
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*áu*g
 EAFRhotacism [no-change]: *b*áu*g
 PNWGmcMnDissimilation [no-change]: *b*áu*g
 PNWGmcNStemNLoss [no-change]: *b*áu*g
@@ -3536,6 +3563,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ó*g*ô
 EAFFinalZDeletion [no-change]: *b*ó*g*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ó*g*ô
 MonosyllabicFinalZLoss [no-change]: *b*ó*g*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ó*g*ô
 EAFRhotacism [no-change]: *b*ó*g*ô
 PNWGmcMnDissimilation [no-change]: *b*ó*g*ô
 PNWGmcNStemNLoss [no-change]: *b*ó*g*ô
@@ -3665,6 +3693,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ū*r*ą
 EAFFinalZDeletion [no-change]: *b*ū*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ū*r*ą
 MonosyllabicFinalZLoss [no-change]: *b*ū*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ū*r*ą
 EAFRhotacism [no-change]: *b*ū*r*ą
 PNWGmcMnDissimilation [no-change]: *b*ū*r*ą
 PNWGmcNStemNLoss [no-change]: *b*ū*r*ą
@@ -3794,6 +3823,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*á*n*d*a*s
 EAFFinalZDeletion [no-change]: *b*r*á*n*d*a*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*á*n*d*a*s
 MonosyllabicFinalZLoss [no-change]: *b*r*á*n*d*a*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*á*n*d*a*s
 EAFRhotacism [no-change]: *b*r*á*n*d*a*s
 PNWGmcMnDissimilation [no-change]: *b*r*á*n*d*a*s
 PNWGmcNStemNLoss [no-change]: *b*r*á*n*d*a*s
@@ -3923,6 +3953,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*áu*d*ą
 EAFFinalZDeletion [no-change]: *b*r*áu*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*áu*d*ą
 MonosyllabicFinalZLoss [no-change]: *b*r*áu*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*áu*d*ą
 EAFRhotacism [no-change]: *b*r*áu*d*ą
 PNWGmcMnDissimilation [no-change]: *b*r*áu*d*ą
 PNWGmcNStemNLoss [no-change]: *b*r*áu*d*ą
@@ -4052,6 +4083,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*é*k*a*n*ą
 EAFFinalZDeletion [no-change]: *b*r*é*k*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*é*k*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*r*é*k*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*é*k*a*n*ą
 EAFRhotacism [no-change]: *b*r*é*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*é*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*é*k*a*n*ą
@@ -4181,6 +4213,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*éu*s*t*ą
 EAFFinalZDeletion [no-change]: *b*r*éu*s*t*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*éu*s*t*ą
 MonosyllabicFinalZLoss [no-change]: *b*r*éu*s*t*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*éu*s*t*ą
 EAFRhotacism [no-change]: *b*r*éu*s*t*ą
 PNWGmcMnDissimilation [no-change]: *b*r*éu*s*t*ą
 PNWGmcNStemNLoss [no-change]: *b*r*éu*s*t*ą
@@ -4310,6 +4343,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*ō*k*i*z
 EAFFinalZDeletion: *b*r*ō*k*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*ō*k*i
 MonosyllabicFinalZLoss [no-change]: *b*r*ō*k*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*ō*k*i
 EAFRhotacism [no-change]: *b*r*ō*k*i
 PNWGmcMnDissimilation [no-change]: *b*r*ō*k*i
 PNWGmcNStemNLoss [no-change]: *b*r*ō*k*i
@@ -4439,6 +4473,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*ū*d*i*z
 EAFFinalZDeletion: *b*r*ū*d*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*ū*d*i
 MonosyllabicFinalZLoss [no-change]: *b*r*ū*d*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*ū*d*i
 EAFRhotacism [no-change]: *b*r*ū*d*i
 PNWGmcMnDissimilation [no-change]: *b*r*ū*d*i
 PNWGmcNStemNLoss [no-change]: *b*r*ū*d*i
@@ -4568,6 +4603,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*í*n*g*a*n*ą
 EAFFinalZDeletion [no-change]: *b*r*í*n*g*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*í*n*g*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*r*í*n*g*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*í*n*g*a*n*ą
 EAFRhotacism [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*í*n*g*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*í*n*g*a*n*ą
@@ -4697,6 +4733,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*ū*k*a*n*ą
 EAFFinalZDeletion [no-change]: *b*r*ū*k*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*ū*k*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*r*ū*k*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*ū*k*a*n*ą
 EAFRhotacism [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*ū*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*ū*k*a*n*ą
@@ -4826,6 +4863,7 @@ PNWGmcFinalLongORaising [no-change]: *b*r*é*s*t*a*n*ą
 EAFFinalZDeletion [no-change]: *b*r*é*s*t*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*r*é*s*t*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *b*r*é*s*t*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*r*é*s*t*a*n*ą
 EAFRhotacism [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *b*r*é*s*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *b*r*é*s*t*a*n*ą
@@ -4955,6 +4993,7 @@ PNWGmcFinalLongORaising [no-change]: *k*á*l*b*a*z
 EAFFinalZDeletion: *k*á*l*b*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*á*l*b*a
 MonosyllabicFinalZLoss [no-change]: *k*á*l*b*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*á*l*b*a
 EAFRhotacism [no-change]: *k*á*l*b*a
 PNWGmcMnDissimilation [no-change]: *k*á*l*b*a
 PNWGmcNStemNLoss [no-change]: *k*á*l*b*a
@@ -5084,6 +5123,7 @@ PNWGmcFinalLongORaising [no-change]: *k*éu*w*a*n*ą
 EAFFinalZDeletion [no-change]: *k*éu*w*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*éu*w*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *k*éu*w*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*éu*w*a*n*ą
 EAFRhotacism [no-change]: *k*éu*w*a*n*ą
 PNWGmcMnDissimilation [no-change]: *k*éu*w*a*n*ą
 PNWGmcNStemNLoss [no-change]: *k*éu*w*a*n*ą
@@ -5213,6 +5253,7 @@ PNWGmcFinalLongORaising [no-change]: *k*l*í*m*b*a*n*ą
 EAFFinalZDeletion [no-change]: *k*l*í*m*b*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*l*í*m*b*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *k*l*í*m*b*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*l*í*m*b*a*n*ą
 EAFRhotacism [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *k*l*í*m*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *k*l*í*m*b*a*n*ą
@@ -5342,6 +5383,7 @@ PNWGmcFinalLongORaising [no-change]: *k*á*m*b*a*z
 EAFFinalZDeletion: *k*á*m*b*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*á*m*b*a
 MonosyllabicFinalZLoss [no-change]: *k*á*m*b*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*á*m*b*a
 EAFRhotacism [no-change]: *k*á*m*b*a
 PNWGmcMnDissimilation [no-change]: *k*á*m*b*a
 PNWGmcNStemNLoss [no-change]: *k*á*m*b*a
@@ -5471,6 +5513,7 @@ PNWGmcFinalLongORaising [no-change]: *k*ó*r*n*ą
 EAFFinalZDeletion [no-change]: *k*ó*r*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*ó*r*n*ą
 MonosyllabicFinalZLoss [no-change]: *k*ó*r*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*ó*r*n*ą
 EAFRhotacism [no-change]: *k*ó*r*n*ą
 PNWGmcMnDissimilation [no-change]: *k*ó*r*n*ą
 PNWGmcNStemNLoss [no-change]: *k*ó*r*n*ą
@@ -5600,6 +5643,7 @@ PNWGmcFinalLongORaising [no-change]: *k*ū*i
 EAFFinalZDeletion [no-change]: *k*ū*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*ū*i
 MonosyllabicFinalZLoss [no-change]: *k*ū*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*ū*i
 EAFRhotacism [no-change]: *k*ū*i
 PNWGmcMnDissimilation [no-change]: *k*ū*i
 PNWGmcNStemNLoss [no-change]: *k*ū*i
@@ -5729,6 +5773,7 @@ PNWGmcFinalLongORaising [no-change]: *k*r*á*f*t*a*z
 EAFFinalZDeletion: *k*r*á*f*t*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*r*á*f*t*a
 MonosyllabicFinalZLoss [no-change]: *k*r*á*f*t*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*r*á*f*t*a
 EAFRhotacism [no-change]: *k*r*á*f*t*a
 PNWGmcMnDissimilation [no-change]: *k*r*á*f*t*a
 PNWGmcNStemNLoss [no-change]: *k*r*á*f*t*a
@@ -5858,6 +5903,7 @@ PNWGmcFinalLongORaising [no-change]: *k*r*ó*p*p*a*z
 EAFFinalZDeletion: *k*r*ó*p*p*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*r*ó*p*p*a
 MonosyllabicFinalZLoss [no-change]: *k*r*ó*p*p*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*r*ó*p*p*a
 EAFRhotacism [no-change]: *k*r*ó*p*p*a
 PNWGmcMnDissimilation [no-change]: *k*r*ó*p*p*a
 PNWGmcNStemNLoss [no-change]: *k*r*ó*p*p*a
@@ -5987,6 +6033,7 @@ PNWGmcFinalLongORaising [no-change]: *k*w*é*d*u*z
 EAFFinalZDeletion: *k*w*é*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*w*é*d*u
 MonosyllabicFinalZLoss [no-change]: *k*w*é*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*w*é*d*u
 EAFRhotacism [no-change]: *k*w*é*d*u
 PNWGmcMnDissimilation [no-change]: *k*w*é*d*u
 PNWGmcNStemNLoss [no-change]: *k*w*é*d*u
@@ -6116,6 +6163,7 @@ PNWGmcFinalLongORaising [no-change]: *d*á*l*a*z
 EAFFinalZDeletion: *d*á*l*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*á*l*a
 MonosyllabicFinalZLoss [no-change]: *d*á*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*á*l*a
 EAFRhotacism [no-change]: *d*á*l*a
 PNWGmcMnDissimilation [no-change]: *d*á*l*a
 PNWGmcNStemNLoss [no-change]: *d*á*l*a
@@ -6245,6 +6293,7 @@ PNWGmcFinalLongORaising [no-change]: *d*á*g*a*z
 EAFFinalZDeletion: *d*á*g*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*á*g*a
 MonosyllabicFinalZLoss [no-change]: *d*á*g*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*á*g*a
 EAFRhotacism [no-change]: *d*á*g*a
 PNWGmcMnDissimilation [no-change]: *d*á*g*a
 PNWGmcNStemNLoss [no-change]: *d*á*g*a
@@ -6374,6 +6423,7 @@ PNWGmcFinalLongORaising [no-change]: *d*ái*l*i*z
 EAFFinalZDeletion: *d*ái*l*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*ái*l*i
 MonosyllabicFinalZLoss [no-change]: *d*ái*l*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*ái*l*i
 EAFRhotacism [no-change]: *d*ái*l*i
 PNWGmcMnDissimilation [no-change]: *d*ái*l*i
 PNWGmcNStemNLoss [no-change]: *d*ái*l*i
@@ -6503,6 +6553,7 @@ PNWGmcFinalLongORaising [no-change]: *d*ā*d*i*z
 EAFFinalZDeletion: *d*ā*d*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*ā*d*i
 MonosyllabicFinalZLoss [no-change]: *d*ā*d*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*ā*d*i
 EAFRhotacism [no-change]: *d*ā*d*i
 PNWGmcMnDissimilation [no-change]: *d*ā*d*i
 PNWGmcNStemNLoss [no-change]: *d*ā*d*i
@@ -6632,6 +6683,7 @@ PNWGmcFinalLongORaising [no-change]: *d*éu*z*ą
 EAFFinalZDeletion [no-change]: *d*éu*z*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*éu*z*ą
 MonosyllabicFinalZLoss [no-change]: *d*éu*z*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*éu*z*ą
 EAFRhotacism: *d*éu*r*ą
 PNWGmcMnDissimilation [no-change]: *d*éu*r*ą
 PNWGmcNStemNLoss [no-change]: *d*éu*r*ą
@@ -6761,6 +6813,7 @@ PNWGmcFinalLongORaising: *d*áu*w*u
 EAFFinalZDeletion [no-change]: *d*áu*w*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*áu*w*u
 MonosyllabicFinalZLoss [no-change]: *d*áu*w*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*áu*w*u
 EAFRhotacism [no-change]: *d*áu*w*u
 PNWGmcMnDissimilation [no-change]: *d*áu*w*u
 PNWGmcNStemNLoss [no-change]: *d*áu*w*u
@@ -6890,6 +6943,7 @@ PNWGmcFinalLongORaising [no-change]: *d*é*l*i*z
 EAFFinalZDeletion: *d*é*l*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*é*l*i
 MonosyllabicFinalZLoss [no-change]: *d*é*l*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*é*l*i
 EAFRhotacism [no-change]: *d*é*l*i
 PNWGmcMnDissimilation [no-change]: *d*é*l*i
 PNWGmcNStemNLoss [no-change]: *d*é*l*i
@@ -7019,6 +7073,7 @@ PNWGmcFinalLongORaising [no-change]: *d*ō*n*ą
 EAFFinalZDeletion [no-change]: *d*ō*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*ō*n*ą
 MonosyllabicFinalZLoss [no-change]: *d*ō*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*ō*n*ą
 EAFRhotacism [no-change]: *d*ō*n*ą
 PNWGmcMnDissimilation [no-change]: *d*ō*n*ą
 PNWGmcNStemNLoss [no-change]: *d*ō*n*ą
@@ -7148,6 +7203,7 @@ PNWGmcFinalLongORaising [no-change]: *d*ó*r*ą
 EAFFinalZDeletion [no-change]: *d*ó*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*ó*r*ą
 MonosyllabicFinalZLoss [no-change]: *d*ó*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*ó*r*ą
 EAFRhotacism [no-change]: *d*ó*r*ą
 PNWGmcMnDissimilation [no-change]: *d*ó*r*ą
 PNWGmcNStemNLoss [no-change]: *d*ó*r*ą
@@ -7277,6 +7333,7 @@ PNWGmcFinalLongORaising [no-change]: *d*ái*g*a*z
 EAFFinalZDeletion: *d*ái*g*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*ái*g*a
 MonosyllabicFinalZLoss [no-change]: *d*ái*g*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*ái*g*a
 EAFRhotacism [no-change]: *d*ái*g*a
 PNWGmcMnDissimilation [no-change]: *d*ái*g*a
 PNWGmcNStemNLoss [no-change]: *d*ái*g*a
@@ -7406,6 +7463,7 @@ PNWGmcFinalLongORaising [no-change]: *d*r*áu*m*a*z
 EAFFinalZDeletion: *d*r*áu*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*r*áu*m*a
 MonosyllabicFinalZLoss [no-change]: *d*r*áu*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*r*áu*m*a
 EAFRhotacism [no-change]: *d*r*áu*m*a
 PNWGmcMnDissimilation [no-change]: *d*r*áu*m*a
 PNWGmcNStemNLoss [no-change]: *d*r*áu*m*a
@@ -7535,6 +7593,7 @@ PNWGmcFinalLongORaising [no-change]: *d*r*á*n*k*i*z
 EAFFinalZDeletion: *d*r*á*n*k*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*r*á*n*k*i
 MonosyllabicFinalZLoss [no-change]: *d*r*á*n*k*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*r*á*n*k*i
 EAFRhotacism [no-change]: *d*r*á*n*k*i
 PNWGmcMnDissimilation [no-change]: *d*r*á*n*k*i
 PNWGmcNStemNLoss [no-change]: *d*r*á*n*k*i
@@ -7664,6 +7723,7 @@ PNWGmcFinalLongORaising [no-change]: *d*r*í*n*k*a*n*ą
 EAFFinalZDeletion [no-change]: *d*r*í*n*k*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*r*í*n*k*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *d*r*í*n*k*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*r*í*n*k*a*n*ą
 EAFRhotacism [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *d*r*í*n*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *d*r*í*n*k*a*n*ą
@@ -7793,6 +7853,7 @@ PNWGmcFinalLongORaising [no-change]: *d*r*ḯ*b*a*n*ą
 EAFFinalZDeletion [no-change]: *d*r*ḯ*b*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *d*r*ḯ*b*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *d*r*ḯ*b*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *d*r*ḯ*b*a*n*ą
 EAFRhotacism [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *d*r*ḯ*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *d*r*ḯ*b*a*n*ą
@@ -7922,6 +7983,7 @@ PNWGmcFinalLongORaising [no-change]: *é*r*θ*ō*n
 EAFFinalZDeletion [no-change]: *é*r*θ*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *é*r*θ*ō*n
 MonosyllabicFinalZLoss [no-change]: *é*r*θ*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *é*r*θ*ō*n
 EAFRhotacism [no-change]: *é*r*θ*ō*n
 PNWGmcMnDissimilation [no-change]: *é*r*θ*ō*n
 PNWGmcNStemNLoss: *é*r*θ*ǭ
@@ -8051,6 +8113,7 @@ PNWGmcFinalLongORaising [no-change]: *é*t*a*n*ą
 EAFFinalZDeletion [no-change]: *é*t*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *é*t*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *é*t*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *é*t*a*n*ą
 EAFRhotacism [no-change]: *é*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *é*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *é*t*a*n*ą
@@ -8180,6 +8243,7 @@ PNWGmcFinalLongORaising [no-change]: *ā*l*a*z
 EAFFinalZDeletion: *ā*l*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *ā*l*a
 MonosyllabicFinalZLoss [no-change]: *ā*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *ā*l*a
 EAFRhotacism [no-change]: *ā*l*a
 PNWGmcMnDissimilation [no-change]: *ā*l*a
 PNWGmcNStemNLoss [no-change]: *ā*l*a
@@ -8309,6 +8373,7 @@ PNWGmcFinalLongORaising [no-change]: *f*á*l*l*a*n*ą
 EAFFinalZDeletion [no-change]: *f*á*l*l*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*á*l*l*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*á*l*l*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*á*l*l*a*n*ą
 EAFRhotacism [no-change]: *f*á*l*l*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*l*l*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*l*l*a*n*ą
@@ -8438,6 +8503,7 @@ PNWGmcFinalLongORaising [no-change]: *f*á*r*a*n*ą
 EAFFinalZDeletion [no-change]: *f*á*r*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*á*r*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*á*r*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*á*r*a*n*ą
 EAFRhotacism [no-change]: *f*á*r*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*r*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*r*a*n*ą
@@ -8567,6 +8633,7 @@ PNWGmcFinalLongORaising [no-change]: *f*á*s*t*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *f*á*s*t*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*á*s*t*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*á*s*t*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*á*s*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*s*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*s*t*i*j*a*n*ą
@@ -8696,6 +8763,7 @@ PNWGmcFinalLongORaising [no-change]: *f*á*d*ē*r
 EAFFinalZDeletion [no-change]: *f*á*d*ē*r
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*á*d*ē*r
 MonosyllabicFinalZLoss [no-change]: *f*á*d*ē*r
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*á*d*ē*r
 EAFRhotacism [no-change]: *f*á*d*ē*r
 PNWGmcMnDissimilation [no-change]: *f*á*d*ē*r
 PNWGmcNStemNLoss [no-change]: *f*á*d*ē*r
@@ -8825,6 +8893,7 @@ PNWGmcFinalLongORaising [no-change]: *f*é*x*u
 EAFFinalZDeletion [no-change]: *f*é*x*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*é*x*u
 MonosyllabicFinalZLoss [no-change]: *f*é*x*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*é*x*u
 EAFRhotacism [no-change]: *f*é*x*u
 PNWGmcMnDissimilation [no-change]: *f*é*x*u
 PNWGmcNStemNLoss [no-change]: *f*é*x*u
@@ -8954,6 +9023,7 @@ PNWGmcFinalLongORaising [no-change]: *f*é*l*l*ą
 EAFFinalZDeletion [no-change]: *f*é*l*l*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*é*l*l*ą
 MonosyllabicFinalZLoss [no-change]: *f*é*l*l*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*é*l*l*ą
 EAFRhotacism [no-change]: *f*é*l*l*ą
 PNWGmcMnDissimilation [no-change]: *f*é*l*l*ą
 PNWGmcNStemNLoss [no-change]: *f*é*l*l*ą
@@ -9083,6 +9153,7 @@ PNWGmcFinalLongORaising [no-change]: *f*á*r*n*a*z
 EAFFinalZDeletion: *f*á*r*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*á*r*n*a
 MonosyllabicFinalZLoss [no-change]: *f*á*r*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*á*r*n*a
 EAFRhotacism [no-change]: *f*á*r*n*a
 PNWGmcMnDissimilation [no-change]: *f*á*r*n*a
 PNWGmcNStemNLoss [no-change]: *f*á*r*n*a
@@ -9212,6 +9283,7 @@ PNWGmcFinalLongORaising [no-change]: *f*é*l*d*u*z
 EAFFinalZDeletion: *f*é*l*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*é*l*d*u
 MonosyllabicFinalZLoss [no-change]: *f*é*l*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*é*l*d*u
 EAFRhotacism [no-change]: *f*é*l*d*u
 PNWGmcMnDissimilation [no-change]: *f*é*l*d*u
 PNWGmcNStemNLoss [no-change]: *f*é*l*d*u
@@ -9341,6 +9413,7 @@ PNWGmcFinalLongORaising [no-change]: *f*é*x*t*a*n*ą
 EAFFinalZDeletion [no-change]: *f*é*x*t*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*é*x*t*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*é*x*t*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*é*x*t*a*n*ą
 EAFRhotacism [no-change]: *f*é*x*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*é*x*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*é*x*t*a*n*ą
@@ -9470,6 +9543,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ú*n*d*a*n*ǭ
 EAFFinalZDeletion [no-change]: *f*ú*n*d*a*n*ǭ
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ú*n*d*a*n*ǭ
 MonosyllabicFinalZLoss [no-change]: *f*ú*n*d*a*n*ǭ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ú*n*d*a*n*ǭ
 EAFRhotacism [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcMnDissimilation [no-change]: *f*ú*n*d*a*n*ǭ
 PNWGmcNStemNLoss [no-change]: *f*ú*n*d*a*n*ǭ
@@ -9599,6 +9673,7 @@ PNWGmcFinalLongORaising [no-change]: *f*í*n*g*r*a*z
 EAFFinalZDeletion: *f*í*n*g*r*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*í*n*g*r*a
 MonosyllabicFinalZLoss [no-change]: *f*í*n*g*r*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*í*n*g*r*a
 EAFRhotacism [no-change]: *f*í*n*g*r*a
 PNWGmcMnDissimilation [no-change]: *f*í*n*g*r*a
 PNWGmcNStemNLoss [no-change]: *f*í*n*g*r*a
@@ -9728,6 +9803,7 @@ PNWGmcFinalLongORaising [no-change]: *f*í*s*k*a*z
 EAFFinalZDeletion: *f*í*s*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*í*s*k*a
 MonosyllabicFinalZLoss [no-change]: *f*í*s*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*í*s*k*a
 EAFRhotacism [no-change]: *f*í*s*k*a
 PNWGmcMnDissimilation [no-change]: *f*í*s*k*a
 PNWGmcNStemNLoss [no-change]: *f*í*s*k*a
@@ -9857,6 +9933,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ū*s*t*i*z
 EAFFinalZDeletion: *f*ū*s*t*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ū*s*t*i
 MonosyllabicFinalZLoss [no-change]: *f*ū*s*t*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ū*s*t*i
 EAFRhotacism [no-change]: *f*ū*s*t*i
 PNWGmcMnDissimilation [no-change]: *f*ū*s*t*i
 PNWGmcNStemNLoss [no-change]: *f*ū*s*t*i
@@ -9986,6 +10063,7 @@ PNWGmcFinalLongORaising [no-change]: *f*l*á*s*k*ō*n
 EAFFinalZDeletion [no-change]: *f*l*á*s*k*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*á*s*k*ō*n
 MonosyllabicFinalZLoss [no-change]: *f*l*á*s*k*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*á*s*k*ō*n
 EAFRhotacism [no-change]: *f*l*á*s*k*ō*n
 PNWGmcMnDissimilation [no-change]: *f*l*á*s*k*ō*n
 PNWGmcNStemNLoss: *f*l*á*s*k*ǭ
@@ -10115,6 +10193,7 @@ PNWGmcFinalLongORaising [no-change]: *f*l*á*x*s*ą
 EAFFinalZDeletion [no-change]: *f*l*á*x*s*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*á*x*s*ą
 MonosyllabicFinalZLoss [no-change]: *f*l*á*x*s*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*á*x*s*ą
 EAFRhotacism [no-change]: *f*l*á*x*s*ą
 PNWGmcMnDissimilation [no-change]: *f*l*á*x*s*ą
 PNWGmcNStemNLoss [no-change]: *f*l*á*x*s*ą
@@ -10244,6 +10323,7 @@ PNWGmcFinalLongORaising [no-change]: *f*l*áu*x
 EAFFinalZDeletion [no-change]: *f*l*áu*x
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*áu*x
 MonosyllabicFinalZLoss [no-change]: *f*l*áu*x
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*áu*x
 EAFRhotacism [no-change]: *f*l*áu*x
 PNWGmcMnDissimilation [no-change]: *f*l*áu*x
 PNWGmcNStemNLoss [no-change]: *f*l*áu*x
@@ -10373,6 +10453,7 @@ PNWGmcFinalLongORaising [no-change]: *f*l*éu*x*a*n*ą
 EAFFinalZDeletion [no-change]: *f*l*éu*x*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*éu*x*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*l*éu*x*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*éu*x*a*n*ą
 EAFRhotacism [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*l*éu*x*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*l*éu*x*a*n*ą
@@ -10502,6 +10583,7 @@ PNWGmcFinalLongORaising [no-change]: *f*l*ái*s*k*i*z
 EAFFinalZDeletion: *f*l*ái*s*k*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*ái*s*k*i
 MonosyllabicFinalZLoss [no-change]: *f*l*ái*s*k*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*ái*s*k*i
 EAFRhotacism [no-change]: *f*l*ái*s*k*i
 PNWGmcMnDissimilation [no-change]: *f*l*ái*s*k*i
 PNWGmcNStemNLoss [no-change]: *f*l*ái*s*k*i
@@ -10631,6 +10713,7 @@ PNWGmcFinalLongORaising [no-change]: *f*l*ō*d*u*z
 EAFFinalZDeletion: *f*l*ō*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*ō*d*u
 MonosyllabicFinalZLoss [no-change]: *f*l*ō*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*ō*d*u
 EAFRhotacism [no-change]: *f*l*ō*d*u
 PNWGmcMnDissimilation [no-change]: *f*l*ō*d*u
 PNWGmcNStemNLoss [no-change]: *f*l*ō*d*u
@@ -10760,6 +10843,7 @@ PNWGmcFinalLongORaising [no-change]: *f*l*éu*g*a*n*ą
 EAFFinalZDeletion [no-change]: *f*l*éu*g*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*éu*g*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*l*éu*g*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*éu*g*a*n*ą
 EAFRhotacism [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*l*éu*g*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*l*éu*g*a*n*ą
@@ -10889,6 +10973,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ó*l*ô
 EAFFinalZDeletion [no-change]: *f*ó*l*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ó*l*ô
 MonosyllabicFinalZLoss [no-change]: *f*ó*l*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ó*l*ô
 EAFRhotacism [no-change]: *f*ó*l*ô
 PNWGmcMnDissimilation [no-change]: *f*ó*l*ô
 PNWGmcNStemNLoss [no-change]: *f*ó*l*ô
@@ -11018,6 +11103,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ō*d*r*ą
 EAFFinalZDeletion [no-change]: *f*ō*d*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ō*d*r*ą
 MonosyllabicFinalZLoss [no-change]: *f*ō*d*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ō*d*r*ą
 EAFRhotacism [no-change]: *f*ō*d*r*ą
 PNWGmcMnDissimilation [no-change]: *f*ō*d*r*ą
 PNWGmcNStemNLoss [no-change]: *f*ō*d*r*ą
@@ -11147,6 +11233,7 @@ PNWGmcFinalLongORaising [no-change]: *f*á*l*d*a*n*ą
 EAFFinalZDeletion [no-change]: *f*á*l*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*á*l*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*á*l*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*á*l*d*a*n*ą
 EAFRhotacism [no-change]: *f*á*l*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*á*l*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*á*l*d*a*n*ą
@@ -11276,6 +11363,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ó*l*k*ą
 EAFFinalZDeletion [no-change]: *f*ó*l*k*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ó*l*k*ą
 MonosyllabicFinalZLoss [no-change]: *f*ó*l*k*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ó*l*k*ą
 EAFRhotacism [no-change]: *f*ó*l*k*ą
 PNWGmcMnDissimilation [no-change]: *f*ó*l*k*ą
 PNWGmcNStemNLoss [no-change]: *f*ó*l*k*ą
@@ -11405,6 +11493,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ú*l*g*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *f*ú*l*g*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ú*l*g*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*ú*l*g*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ú*l*g*i*j*a*n*ą
 EAFRhotacism [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*ú*l*g*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*ú*l*g*i*j*a*n*ą
@@ -11534,6 +11623,7 @@ PNWGmcFinalLongORaising [no-change]: *l*éu*s*a*n*ą
 EAFFinalZDeletion [no-change]: *l*éu*s*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*éu*s*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*éu*s*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*éu*s*a*n*ą
 EAFRhotacism [no-change]: *l*éu*s*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*éu*s*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*éu*s*a*n*ą
@@ -11663,6 +11753,7 @@ PNWGmcFinalLongORaising [no-change]: *f*éu*w*a*r
 EAFFinalZDeletion [no-change]: *f*éu*w*a*r
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*éu*w*a*r
 MonosyllabicFinalZLoss [no-change]: *f*éu*w*a*r
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*éu*w*a*r
 EAFRhotacism [no-change]: *f*éu*w*a*r
 PNWGmcMnDissimilation [no-change]: *f*éu*w*a*r
 PNWGmcNStemNLoss [no-change]: *f*éu*w*a*r
@@ -11792,6 +11883,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ó*x*s*a*z
 EAFFinalZDeletion: *f*ó*x*s*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ó*x*s*a
 MonosyllabicFinalZLoss [no-change]: *f*ó*x*s*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ó*x*s*a
 EAFRhotacism [no-change]: *f*ó*x*s*a
 PNWGmcMnDissimilation [no-change]: *f*ó*x*s*a
 PNWGmcNStemNLoss [no-change]: *f*ó*x*s*a
@@ -11921,6 +12013,7 @@ PNWGmcFinalLongORaising [no-change]: *f*r*éu*s*a*n*ą
 EAFFinalZDeletion [no-change]: *f*r*éu*s*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*r*éu*s*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *f*r*éu*s*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*r*éu*s*a*n*ą
 EAFRhotacism [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcMnDissimilation [no-change]: *f*r*éu*s*a*n*ą
 PNWGmcNStemNLoss [no-change]: *f*r*éu*s*a*n*ą
@@ -12050,6 +12143,7 @@ PNWGmcFinalLongORaising [no-change]: *f*r*íu*n*d*z
 EAFFinalZDeletion: *f*r*íu*n*d
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*r*íu*n*d
 MonosyllabicFinalZLoss [no-change]: *f*r*íu*n*d
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*r*íu*n*d
 EAFRhotacism [no-change]: *f*r*íu*n*d
 PNWGmcMnDissimilation [no-change]: *f*r*íu*n*d
 PNWGmcNStemNLoss [no-change]: *f*r*íu*n*d
@@ -12179,6 +12273,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ú*r*x*t*ī*n*a*z
 EAFFinalZDeletion: *f*ú*r*x*t*ī*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ú*r*x*t*ī*n*a
 MonosyllabicFinalZLoss [no-change]: *f*ú*r*x*t*ī*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ú*r*x*t*ī*n*a
 EAFRhotacism [no-change]: *f*ú*r*x*t*ī*n*a
 PNWGmcMnDissimilation [no-change]: *f*ú*r*x*t*ī*n*a
 PNWGmcNStemNLoss [no-change]: *f*ú*r*x*t*ī*n*a
@@ -12308,6 +12403,7 @@ PNWGmcFinalLongORaising [no-change]: *f*r*ó*s*t*ą
 EAFFinalZDeletion [no-change]: *f*r*ó*s*t*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*r*ó*s*t*ą
 MonosyllabicFinalZLoss [no-change]: *f*r*ó*s*t*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*r*ó*s*t*ą
 EAFRhotacism [no-change]: *f*r*ó*s*t*ą
 PNWGmcMnDissimilation [no-change]: *f*r*ó*s*t*ą
 PNWGmcNStemNLoss [no-change]: *f*r*ó*s*t*ą
@@ -12437,6 +12533,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ú*r*x
 EAFFinalZDeletion [no-change]: *f*ú*r*x
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ú*r*x
 MonosyllabicFinalZLoss [no-change]: *f*ú*r*x
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ú*r*x
 EAFRhotacism [no-change]: *f*ú*r*x
 PNWGmcMnDissimilation [no-change]: *f*ú*r*x
 PNWGmcNStemNLoss [no-change]: *f*ú*r*x
@@ -12566,6 +12663,7 @@ PNWGmcFinalLongORaising [no-change]: *g*á*l*l*ô
 EAFFinalZDeletion [no-change]: *g*á*l*l*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*á*l*l*ô
 MonosyllabicFinalZLoss [no-change]: *g*á*l*l*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*á*l*l*ô
 EAFRhotacism [no-change]: *g*á*l*l*ô
 PNWGmcMnDissimilation [no-change]: *g*á*l*l*ô
 PNWGmcNStemNLoss [no-change]: *g*á*l*l*ô
@@ -12695,6 +12793,7 @@ PNWGmcFinalLongORaising [no-change]: *g*á*n*g*a*z
 EAFFinalZDeletion: *g*á*n*g*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*á*n*g*a
 MonosyllabicFinalZLoss [no-change]: *g*á*n*g*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*á*n*g*a
 EAFRhotacism [no-change]: *g*á*n*g*a
 PNWGmcMnDissimilation [no-change]: *g*á*n*g*a
 PNWGmcNStemNLoss [no-change]: *g*á*n*g*a
@@ -12824,6 +12923,7 @@ PNWGmcFinalLongORaising [no-change]: *g*ái*s*t*a*z
 EAFFinalZDeletion: *g*ái*s*t*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*ái*s*t*a
 MonosyllabicFinalZLoss [no-change]: *g*ái*s*t*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*ái*s*t*a
 EAFRhotacism [no-change]: *g*ái*s*t*a
 PNWGmcMnDissimilation [no-change]: *g*ái*s*t*a
 PNWGmcNStemNLoss [no-change]: *g*ái*s*t*a
@@ -12953,6 +13053,7 @@ PNWGmcFinalLongORaising [no-change]: *g*í*f*t*i*z
 EAFFinalZDeletion: *g*í*f*t*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*í*f*t*i
 MonosyllabicFinalZLoss [no-change]: *g*í*f*t*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*í*f*t*i
 EAFRhotacism [no-change]: *g*í*f*t*i
 PNWGmcMnDissimilation [no-change]: *g*í*f*t*i
 PNWGmcNStemNLoss [no-change]: *g*í*f*t*i
@@ -13082,6 +13183,7 @@ PNWGmcFinalLongORaising [no-change]: *g*é*b*a*n*ą
 EAFFinalZDeletion [no-change]: *g*é*b*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*é*b*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *g*é*b*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*é*b*a*n*ą
 EAFRhotacism [no-change]: *g*é*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*é*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*é*b*a*n*ą
@@ -13211,6 +13313,7 @@ PNWGmcFinalLongORaising [no-change]: *g*ó*d*ą
 EAFFinalZDeletion [no-change]: *g*ó*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*ó*d*ą
 MonosyllabicFinalZLoss [no-change]: *g*ó*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*ó*d*ą
 EAFRhotacism [no-change]: *g*ó*d*ą
 PNWGmcMnDissimilation [no-change]: *g*ó*d*ą
 PNWGmcNStemNLoss [no-change]: *g*ó*d*ą
@@ -13340,6 +13443,7 @@ PNWGmcFinalLongORaising [no-change]: *g*ó*l*d*ą
 EAFFinalZDeletion [no-change]: *g*ó*l*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*ó*l*d*ą
 MonosyllabicFinalZLoss [no-change]: *g*ó*l*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*ó*l*d*ą
 EAFRhotacism [no-change]: *g*ó*l*d*ą
 PNWGmcMnDissimilation [no-change]: *g*ó*l*d*ą
 PNWGmcNStemNLoss [no-change]: *g*ó*l*d*ą
@@ -13469,6 +13573,7 @@ PNWGmcFinalLongORaising [no-change]: *g*á*n*s
 EAFFinalZDeletion [no-change]: *g*á*n*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*á*n*s
 MonosyllabicFinalZLoss [no-change]: *g*á*n*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*á*n*s
 EAFRhotacism [no-change]: *g*á*n*s
 PNWGmcMnDissimilation [no-change]: *g*á*n*s
 PNWGmcNStemNLoss [no-change]: *g*á*n*s
@@ -13598,6 +13703,7 @@ PNWGmcFinalLongORaising [no-change]: *g*r*á*s*ą
 EAFFinalZDeletion [no-change]: *g*r*á*s*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*r*á*s*ą
 MonosyllabicFinalZLoss [no-change]: *g*r*á*s*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*r*á*s*ą
 EAFRhotacism [no-change]: *g*r*á*s*ą
 PNWGmcMnDissimilation [no-change]: *g*r*á*s*ą
 PNWGmcNStemNLoss [no-change]: *g*r*á*s*ą
@@ -13727,6 +13833,7 @@ PNWGmcFinalLongORaising [no-change]: *g*r*á*b*a*n*ą
 EAFFinalZDeletion [no-change]: *g*r*á*b*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*r*á*b*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *g*r*á*b*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*r*á*b*a*n*ą
 EAFRhotacism [no-change]: *g*r*á*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*r*á*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*r*á*b*a*n*ą
@@ -13856,6 +13963,7 @@ PNWGmcFinalLongORaising [no-change]: *g*r*ḯ*p*a*n*ą
 EAFFinalZDeletion [no-change]: *g*r*ḯ*p*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*r*ḯ*p*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *g*r*ḯ*p*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*r*ḯ*p*a*n*ą
 EAFRhotacism [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *g*r*ḯ*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *g*r*ḯ*p*a*n*ą
@@ -13985,6 +14093,7 @@ PNWGmcFinalLongORaising [no-change]: *g*r*ú*n*d*u*z
 EAFFinalZDeletion: *g*r*ú*n*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*r*ú*n*d*u
 MonosyllabicFinalZLoss [no-change]: *g*r*ú*n*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*r*ú*n*d*u
 EAFRhotacism [no-change]: *g*r*ú*n*d*u
 PNWGmcMnDissimilation [no-change]: *g*r*ú*n*d*u
 PNWGmcNStemNLoss [no-change]: *g*r*ú*n*d*u
@@ -14114,6 +14223,7 @@ PNWGmcFinalLongORaising [no-change]: *g*á*s*t*i*z
 EAFFinalZDeletion: *g*á*s*t*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*á*s*t*i
 MonosyllabicFinalZLoss [no-change]: *g*á*s*t*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*á*s*t*i
 EAFRhotacism [no-change]: *g*á*s*t*i
 PNWGmcMnDissimilation [no-change]: *g*á*s*t*i
 PNWGmcNStemNLoss [no-change]: *g*á*s*t*i
@@ -14243,6 +14353,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*g*l*ą
 EAFFinalZDeletion [no-change]: *x*á*g*l*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*g*l*ą
 MonosyllabicFinalZLoss [no-change]: *x*á*g*l*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*g*l*ą
 EAFRhotacism [no-change]: *x*á*g*l*ą
 PNWGmcMnDissimilation [no-change]: *x*á*g*l*ą
 PNWGmcNStemNLoss [no-change]: *x*á*g*l*ą
@@ -14372,6 +14483,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ā*r*ą
 EAFFinalZDeletion [no-change]: *x*ā*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ā*r*ą
 MonosyllabicFinalZLoss [no-change]: *x*ā*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ā*r*ą
 EAFRhotacism [no-change]: *x*ā*r*ą
 PNWGmcMnDissimilation [no-change]: *x*ā*r*ą
 PNWGmcNStemNLoss [no-change]: *x*ā*r*ą
@@ -14501,6 +14613,7 @@ PNWGmcFinalLongORaising: *x*á*l*l*u
 EAFFinalZDeletion [no-change]: *x*á*l*l*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*l*l*u
 MonosyllabicFinalZLoss [no-change]: *x*á*l*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*l*l*u
 EAFRhotacism [no-change]: *x*á*l*l*u
 PNWGmcMnDissimilation [no-change]: *x*á*l*l*u
 PNWGmcNStemNLoss [no-change]: *x*á*l*l*u
@@ -14630,6 +14743,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*m*a*r*a*s
 EAFFinalZDeletion [no-change]: *x*á*m*a*r*a*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*m*a*r*a*s
 MonosyllabicFinalZLoss [no-change]: *x*á*m*a*r*a*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*m*a*r*a*s
 EAFRhotacism [no-change]: *x*á*m*a*r*a*s
 PNWGmcMnDissimilation [no-change]: *x*á*m*a*r*a*s
 PNWGmcNStemNLoss [no-change]: *x*á*m*a*r*a*s
@@ -14759,6 +14873,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*n*d*u*z
 EAFFinalZDeletion: *x*á*n*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*n*d*u
 MonosyllabicFinalZLoss [no-change]: *x*á*n*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*n*d*u
 EAFRhotacism [no-change]: *x*á*n*d*u
 PNWGmcMnDissimilation [no-change]: *x*á*n*d*u
 PNWGmcNStemNLoss [no-change]: *x*á*n*d*u
@@ -14888,6 +15003,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*á*n*d*l*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 EAFRhotacism [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*á*n*d*l*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*á*n*d*l*ō*j*a*n*ą
@@ -15017,6 +15133,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*r*m*a*z
 EAFFinalZDeletion: *x*á*r*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*r*m*a
 MonosyllabicFinalZLoss [no-change]: *x*á*r*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*r*m*a
 EAFRhotacism [no-change]: *x*á*r*m*a
 PNWGmcMnDissimilation [no-change]: *x*á*r*m*a
 PNWGmcNStemNLoss [no-change]: *x*á*r*m*a
@@ -15146,6 +15263,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*r*b*i*s*t*u*z
 EAFFinalZDeletion: *x*á*r*b*i*s*t*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*r*b*i*s*t*u
 MonosyllabicFinalZLoss [no-change]: *x*á*r*b*i*s*t*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*r*b*i*s*t*u
 EAFRhotacism [no-change]: *x*á*r*b*i*s*t*u
 PNWGmcMnDissimilation [no-change]: *x*á*r*b*i*s*t*u
 PNWGmcNStemNLoss [no-change]: *x*á*r*b*i*s*t*u
@@ -15275,6 +15393,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*b*ē*θ
 EAFFinalZDeletion [no-change]: *x*á*b*ē*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*b*ē*θ
 MonosyllabicFinalZLoss [no-change]: *x*á*b*ē*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*b*ē*θ
 EAFRhotacism [no-change]: *x*á*b*ē*θ
 PNWGmcMnDissimilation [no-change]: *x*á*b*ē*θ
 PNWGmcNStemNLoss [no-change]: *x*á*b*ē*θ
@@ -15404,6 +15523,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*g*ô
 EAFFinalZDeletion [no-change]: *x*á*g*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*g*ô
 MonosyllabicFinalZLoss [no-change]: *x*á*g*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*g*ô
 EAFRhotacism [no-change]: *x*á*g*ô
 PNWGmcMnDissimilation [no-change]: *x*á*g*ô
 PNWGmcNStemNLoss [no-change]: *x*á*g*ô
@@ -15533,6 +15653,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*b*u*k*a*z
 EAFFinalZDeletion: *x*á*b*u*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*b*u*k*a
 MonosyllabicFinalZLoss [no-change]: *x*á*b*u*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*b*u*k*a
 EAFRhotacism [no-change]: *x*á*b*u*k*a
 PNWGmcMnDissimilation [no-change]: *x*á*b*u*k*a
 PNWGmcNStemNLoss [no-change]: *x*á*b*u*k*a
@@ -15662,6 +15783,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*w*w*j*ą
 EAFFinalZDeletion [no-change]: *x*á*w*w*j*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*w*w*j*ą
 MonosyllabicFinalZLoss [no-change]: *x*á*w*w*j*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*w*w*j*ą
 EAFRhotacism [no-change]: *x*á*w*w*j*ą
 PNWGmcMnDissimilation [no-change]: *x*á*w*w*j*ą
 PNWGmcNStemNLoss [no-change]: *x*á*w*w*j*ą
@@ -15791,6 +15913,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*s*l*a*z
 EAFFinalZDeletion: *x*á*s*l*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*s*l*a
 MonosyllabicFinalZLoss [no-change]: *x*á*s*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*s*l*a
 EAFRhotacism [no-change]: *x*á*s*l*a
 PNWGmcMnDissimilation [no-change]: *x*á*s*l*a
 PNWGmcNStemNLoss [no-change]: *x*á*s*l*a
@@ -15920,6 +16043,7 @@ PNWGmcFinalLongORaising [no-change]: *x*áu*b*u*d*ą
 EAFFinalZDeletion [no-change]: *x*áu*b*u*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*áu*b*u*d*ą
 MonosyllabicFinalZLoss [no-change]: *x*áu*b*u*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*áu*b*u*d*ą
 EAFRhotacism [no-change]: *x*áu*b*u*d*ą
 PNWGmcMnDissimilation [no-change]: *x*áu*b*u*d*ą
 PNWGmcNStemNLoss [no-change]: *x*áu*b*u*d*ą
@@ -16049,6 +16173,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ái*l*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *x*ái*l*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ái*l*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*ái*l*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ái*l*i*j*a*n*ą
 EAFRhotacism [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*ái*l*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*ái*l*i*j*a*n*ą
@@ -16178,6 +16303,7 @@ PNWGmcFinalLongORaising [no-change]: *x*é*r*t*ō*n
 EAFFinalZDeletion [no-change]: *x*é*r*t*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*r*t*ō*n
 MonosyllabicFinalZLoss [no-change]: *x*é*r*t*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*r*t*ō*n
 EAFRhotacism [no-change]: *x*é*r*t*ō*n
 PNWGmcMnDissimilation [no-change]: *x*é*r*t*ō*n
 PNWGmcNStemNLoss: *x*é*r*t*ǭ
@@ -16307,6 +16433,7 @@ PNWGmcFinalLongORaising [no-change]: *x*é*r*θ*a*z
 EAFFinalZDeletion: *x*é*r*θ*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*r*θ*a
 MonosyllabicFinalZLoss [no-change]: *x*é*r*θ*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*r*θ*a
 EAFRhotacism [no-change]: *x*é*r*θ*a
 PNWGmcMnDissimilation [no-change]: *x*é*r*θ*a
 PNWGmcNStemNLoss [no-change]: *x*é*r*θ*a
@@ -16436,6 +16563,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ái*θ*i*z
 EAFFinalZDeletion: *x*ái*θ*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ái*θ*i
 MonosyllabicFinalZLoss [no-change]: *x*ái*θ*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ái*θ*i
 EAFRhotacism [no-change]: *x*ái*θ*i
 PNWGmcMnDissimilation [no-change]: *x*ái*θ*i
 PNWGmcNStemNLoss [no-change]: *x*ái*θ*i
@@ -16565,6 +16693,7 @@ PNWGmcFinalLongORaising [no-change]: *x*é*b*u*n
 EAFFinalZDeletion [no-change]: *x*é*b*u*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*b*u*n
 MonosyllabicFinalZLoss [no-change]: *x*é*b*u*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*b*u*n
 EAFRhotacism [no-change]: *x*é*b*u*n
 PNWGmcMnDissimilation [no-change]: *x*é*b*u*n
 PNWGmcNStemNLoss [no-change]: *x*é*b*u*n
@@ -16694,6 +16823,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*g*g*j*a*z
 EAFFinalZDeletion: *x*á*g*g*j*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*g*g*j*a
 MonosyllabicFinalZLoss [no-change]: *x*á*g*g*j*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*g*g*j*a
 EAFRhotacism [no-change]: *x*á*g*g*j*a
 PNWGmcMnDissimilation [no-change]: *x*á*g*g*j*a
 PNWGmcNStemNLoss [no-change]: *x*á*g*g*j*a
@@ -16823,6 +16953,7 @@ PNWGmcFinalLongORaising [no-change]: *x*é*l*m*a*z
 EAFFinalZDeletion: *x*é*l*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*l*m*a
 MonosyllabicFinalZLoss [no-change]: *x*é*l*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*l*m*a
 EAFRhotacism [no-change]: *x*é*l*m*a
 PNWGmcMnDissimilation [no-change]: *x*é*l*m*a
 PNWGmcNStemNLoss [no-change]: *x*é*l*m*a
@@ -16952,6 +17083,7 @@ PNWGmcFinalLongORaising [no-change]: *x*é*l*p*a*n*ą
 EAFFinalZDeletion [no-change]: *x*é*l*p*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*l*p*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*é*l*p*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*l*p*a*n*ą
 EAFRhotacism [no-change]: *x*é*l*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*é*l*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*é*l*p*a*n*ą
@@ -17081,6 +17213,7 @@ PNWGmcFinalLongORaising: *x*é*l*p*u
 EAFFinalZDeletion [no-change]: *x*é*l*p*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*l*p*u
 MonosyllabicFinalZLoss [no-change]: *x*é*l*p*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*l*p*u
 EAFRhotacism [no-change]: *x*é*l*p*u
 PNWGmcMnDissimilation [no-change]: *x*é*l*p*u
 PNWGmcNStemNLoss [no-change]: *x*é*l*p*u
@@ -17210,6 +17343,7 @@ PNWGmcFinalLongORaising: *x*é*r*d*u
 EAFFinalZDeletion [no-change]: *x*é*r*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*r*d*u
 MonosyllabicFinalZLoss [no-change]: *x*é*r*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*r*d*u
 EAFRhotacism [no-change]: *x*é*r*d*u
 PNWGmcMnDissimilation [no-change]: *x*é*r*d*u
 PNWGmcNStemNLoss [no-change]: *x*é*r*d*u
@@ -17339,6 +17473,7 @@ PNWGmcFinalLongORaising [no-change]: *x*áu*w*a*n*ą
 EAFFinalZDeletion [no-change]: *x*áu*w*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*áu*w*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*áu*w*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*áu*w*a*n*ą
 EAFRhotacism [no-change]: *x*áu*w*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*áu*w*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*áu*w*a*n*ą
@@ -17468,6 +17603,7 @@ PNWGmcFinalLongORaising: *x*é*n*d*j*u
 EAFFinalZDeletion [no-change]: *x*é*n*d*j*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*é*n*d*j*u
 MonosyllabicFinalZLoss [no-change]: *x*é*n*d*j*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*é*n*d*j*u
 EAFRhotacism [no-change]: *x*é*n*d*j*u
 PNWGmcMnDissimilation [no-change]: *x*é*n*d*j*u
 PNWGmcNStemNLoss [no-change]: *x*é*n*d*j*u
@@ -17597,6 +17733,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ó*z*d*ą
 EAFFinalZDeletion [no-change]: *x*ó*z*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ó*z*d*ą
 MonosyllabicFinalZLoss [no-change]: *x*ó*z*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ó*z*d*ą
 EAFRhotacism: *x*ó*r*d*ą
 PNWGmcMnDissimilation [no-change]: *x*ó*r*d*ą
 PNWGmcNStemNLoss [no-change]: *x*ó*r*d*ą
@@ -17726,6 +17863,7 @@ PNWGmcFinalLongORaising [no-change]: *x*á*l*d*a*n*ą
 EAFFinalZDeletion [no-change]: *x*á*l*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*l*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*á*l*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*l*d*a*n*ą
 EAFRhotacism [no-change]: *x*á*l*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*á*l*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*á*l*d*a*n*ą
@@ -17855,6 +17993,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ái*m*a*z
 EAFFinalZDeletion: *x*ái*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ái*m*a
 MonosyllabicFinalZLoss [no-change]: *x*ái*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ái*m*a
 EAFRhotacism [no-change]: *x*ái*m*a
 PNWGmcMnDissimilation [no-change]: *x*ái*m*a
 PNWGmcNStemNLoss [no-change]: *x*ái*m*a
@@ -17984,6 +18123,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ú*n*a*g*ą
 EAFFinalZDeletion [no-change]: *x*ú*n*a*g*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ú*n*a*g*ą
 MonosyllabicFinalZLoss [no-change]: *x*ú*n*a*g*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ú*n*a*g*ą
 EAFRhotacism [no-change]: *x*ú*n*a*g*ą
 PNWGmcMnDissimilation [no-change]: *x*ú*n*a*g*ą
 PNWGmcNStemNLoss [no-change]: *x*ú*n*a*g*ą
@@ -18113,6 +18253,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ō*d*a*z
 EAFFinalZDeletion: *x*ō*d*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ō*d*a
 MonosyllabicFinalZLoss [no-change]: *x*ō*d*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ō*d*a
 EAFRhotacism [no-change]: *x*ō*d*a
 PNWGmcMnDissimilation [no-change]: *x*ō*d*a
 PNWGmcNStemNLoss [no-change]: *x*ō*d*a
@@ -18242,6 +18383,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ō*f*a*z
 EAFFinalZDeletion: *x*ō*f*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ō*f*a
 MonosyllabicFinalZLoss [no-change]: *x*ō*f*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ō*f*a
 EAFRhotacism [no-change]: *x*ō*f*a
 PNWGmcMnDissimilation [no-change]: *x*ō*f*a
 PNWGmcNStemNLoss [no-change]: *x*ō*f*a
@@ -18371,6 +18513,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ó*r*n*ą
 EAFFinalZDeletion [no-change]: *x*ó*r*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ó*r*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*ó*r*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ó*r*n*ą
 EAFRhotacism [no-change]: *x*ó*r*n*ą
 PNWGmcMnDissimilation [no-change]: *x*ó*r*n*ą
 PNWGmcNStemNLoss [no-change]: *x*ó*r*n*ą
@@ -18500,6 +18643,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ú*n*d*a*z
 EAFFinalZDeletion: *x*ú*n*d*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ú*n*d*a
 MonosyllabicFinalZLoss [no-change]: *x*ú*n*d*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ú*n*d*a
 EAFRhotacism [no-change]: *x*ú*n*d*a
 PNWGmcMnDissimilation [no-change]: *x*ú*n*d*a
 PNWGmcNStemNLoss [no-change]: *x*ú*n*d*a
@@ -18629,6 +18773,7 @@ PNWGmcFinalLongORaising [no-change]: *k*n*é*d*a*n*ą
 EAFFinalZDeletion [no-change]: *k*n*é*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*n*é*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *k*n*é*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*n*é*d*a*n*ą
 EAFRhotacism [no-change]: *k*n*é*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *k*n*é*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *k*n*é*d*a*n*ą
@@ -18758,6 +18903,7 @@ PNWGmcFinalLongORaising [no-change]: *k*n*é*w*ē
 EAFFinalZDeletion [no-change]: *k*n*é*w*ē
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*n*é*w*ē
 MonosyllabicFinalZLoss [no-change]: *k*n*é*w*ē
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*n*é*w*ē
 EAFRhotacism [no-change]: *k*n*é*w*ē
 PNWGmcMnDissimilation [no-change]: *k*n*é*w*ē
 PNWGmcNStemNLoss [no-change]: *k*n*é*w*ē
@@ -18887,6 +19033,7 @@ PNWGmcFinalLongORaising [no-change]: *k*n*é*x*t*a*z
 EAFFinalZDeletion: *k*n*é*x*t*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*n*é*x*t*a
 MonosyllabicFinalZLoss [no-change]: *k*n*é*x*t*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*n*é*x*t*a
 EAFRhotacism [no-change]: *k*n*é*x*t*a
 PNWGmcMnDissimilation [no-change]: *k*n*é*x*t*a
 PNWGmcNStemNLoss [no-change]: *k*n*é*x*t*a
@@ -19016,6 +19163,7 @@ PNWGmcFinalLongORaising [no-change]: *k*n*ó*b*b*ô
 EAFFinalZDeletion [no-change]: *k*n*ó*b*b*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *k*n*ó*b*b*ô
 MonosyllabicFinalZLoss [no-change]: *k*n*ó*b*b*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *k*n*ó*b*b*ô
 EAFRhotacism [no-change]: *k*n*ó*b*b*ô
 PNWGmcMnDissimilation [no-change]: *k*n*ó*b*b*ô
 PNWGmcNStemNLoss [no-change]: *k*n*ó*b*b*ô
@@ -19145,6 +19293,7 @@ PNWGmcFinalLongORaising [no-change]: *x*l*á*d*a*n*ą
 EAFFinalZDeletion [no-change]: *x*l*á*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*l*á*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*l*á*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*l*á*d*a*n*ą
 EAFRhotacism [no-change]: *x*l*á*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*l*á*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*l*á*d*a*n*ą
@@ -19274,6 +19423,7 @@ PNWGmcFinalLongORaising [no-change]: *l*á*n*d*ą
 EAFFinalZDeletion [no-change]: *l*á*n*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*á*n*d*ą
 MonosyllabicFinalZLoss [no-change]: *l*á*n*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*á*n*d*ą
 EAFRhotacism [no-change]: *l*á*n*d*ą
 PNWGmcMnDissimilation [no-change]: *l*á*n*d*ą
 PNWGmcNStemNLoss [no-change]: *l*á*n*d*ą
@@ -19403,6 +19553,7 @@ PNWGmcFinalLongORaising [no-change]: *l*á*p*p*ô
 EAFFinalZDeletion [no-change]: *l*á*p*p*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*á*p*p*ô
 MonosyllabicFinalZLoss [no-change]: *l*á*p*p*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*á*p*p*ô
 EAFRhotacism [no-change]: *l*á*p*p*ô
 PNWGmcMnDissimilation [no-change]: *l*á*p*p*ô
 PNWGmcNStemNLoss [no-change]: *l*á*p*p*ô
@@ -19532,6 +19683,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ái*s*t*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *l*ái*s*t*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ái*s*t*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*ái*s*t*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ái*s*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ái*s*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ái*s*t*i*j*a*n*ą
@@ -19661,6 +19813,7 @@ PNWGmcFinalLongORaising [no-change]: *x*l*á*x*x*j*a*n*ą
 EAFFinalZDeletion [no-change]: *x*l*á*x*x*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*l*á*x*x*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*l*á*x*x*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*l*á*x*x*j*a*n*ą
 EAFRhotacism [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*l*á*x*x*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*l*á*x*x*j*a*n*ą
@@ -19790,6 +19943,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ái*d*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *l*ái*d*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ái*d*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*ái*d*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ái*d*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ái*d*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ái*d*i*j*a*n*ą
@@ -19919,6 +20073,7 @@ PNWGmcFinalLongORaising [no-change]: *l*áu*b*ą
 EAFFinalZDeletion [no-change]: *l*áu*b*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*áu*b*ą
 MonosyllabicFinalZLoss [no-change]: *l*áu*b*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*áu*b*ą
 EAFRhotacism [no-change]: *l*áu*b*ą
 PNWGmcMnDissimilation [no-change]: *l*áu*b*ą
 PNWGmcNStemNLoss [no-change]: *l*áu*b*ą
@@ -20048,6 +20203,7 @@ PNWGmcFinalLongORaising [no-change]: *l*é*z*n*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *l*é*z*n*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*é*z*n*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*é*z*n*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*é*z*n*ō*j*a*n*ą
 EAFRhotacism: *l*é*r*n*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*é*r*n*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*é*r*n*ō*j*a*n*ą
@@ -20177,6 +20333,7 @@ PNWGmcFinalLongORaising [no-change]: *l*é*θ*r*ą
 EAFFinalZDeletion [no-change]: *l*é*θ*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*é*θ*r*ą
 MonosyllabicFinalZLoss [no-change]: *l*é*θ*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*é*θ*r*ą
 EAFRhotacism [no-change]: *l*é*θ*r*ą
 PNWGmcMnDissimilation [no-change]: *l*é*θ*r*ą
 PNWGmcNStemNLoss [no-change]: *l*é*θ*r*ą
@@ -20306,6 +20463,7 @@ PNWGmcFinalLongORaising [no-change]: *l*áu*k*a*z
 EAFFinalZDeletion: *l*áu*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*áu*k*a
 MonosyllabicFinalZLoss [no-change]: *l*áu*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*áu*k*a
 EAFRhotacism [no-change]: *l*áu*k*a
 PNWGmcMnDissimilation [no-change]: *l*áu*k*a
 PNWGmcNStemNLoss [no-change]: *l*áu*k*a
@@ -20435,6 +20593,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ā*t*a*n*ą
 EAFFinalZDeletion [no-change]: *l*ā*t*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ā*t*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*ā*t*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ā*t*a*n*ą
 EAFRhotacism [no-change]: *l*ā*t*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ā*t*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ā*t*a*n*ą
@@ -20564,6 +20723,7 @@ PNWGmcFinalLongORaising [no-change]: *l*í*k*k*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *l*í*k*k*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*í*k*k*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*í*k*k*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*í*k*k*ō*j*a*n*ą
 EAFRhotacism [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*í*k*k*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*í*k*k*ō*j*a*n*ą
@@ -20693,6 +20853,7 @@ PNWGmcFinalLongORaising [no-change]: *x*l*í*d*ą
 EAFFinalZDeletion [no-change]: *x*l*í*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*l*í*d*ą
 MonosyllabicFinalZLoss [no-change]: *x*l*í*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*l*í*d*ą
 EAFRhotacism [no-change]: *x*l*í*d*ą
 PNWGmcMnDissimilation [no-change]: *x*l*í*d*ą
 PNWGmcNStemNLoss [no-change]: *x*l*í*d*ą
@@ -20822,6 +20983,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ḯ*b*ą
 EAFFinalZDeletion [no-change]: *l*ḯ*b*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ḯ*b*ą
 MonosyllabicFinalZLoss [no-change]: *l*ḯ*b*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ḯ*b*ą
 EAFRhotacism [no-change]: *l*ḯ*b*ą
 PNWGmcMnDissimilation [no-change]: *l*ḯ*b*ą
 PNWGmcNStemNLoss [no-change]: *l*ḯ*b*ą
@@ -20951,6 +21113,7 @@ PNWGmcFinalLongORaising [no-change]: *l*éu*x*t*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *l*éu*x*t*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*éu*x*t*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*éu*x*t*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*éu*x*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*éu*x*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*éu*x*t*i*j*a*n*ą
@@ -21080,6 +21243,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ḯ*m*ą
 EAFFinalZDeletion [no-change]: *l*ḯ*m*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ḯ*m*ą
 MonosyllabicFinalZLoss [no-change]: *l*ḯ*m*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ḯ*m*ą
 EAFRhotacism [no-change]: *l*ḯ*m*ą
 PNWGmcMnDissimilation [no-change]: *l*ḯ*m*ą
 PNWGmcNStemNLoss [no-change]: *l*ḯ*m*ą
@@ -21209,6 +21373,7 @@ PNWGmcFinalLongORaising: *l*í*n*d*u
 EAFFinalZDeletion [no-change]: *l*í*n*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*í*n*d*u
 MonosyllabicFinalZLoss [no-change]: *l*í*n*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*í*n*d*u
 EAFRhotacism [no-change]: *l*í*n*d*u
 PNWGmcMnDissimilation [no-change]: *l*í*n*d*u
 PNWGmcNStemNLoss [no-change]: *l*í*n*d*u
@@ -21338,6 +21503,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ḯ*n*ō*n
 EAFFinalZDeletion [no-change]: *l*ḯ*n*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ḯ*n*ō*n
 MonosyllabicFinalZLoss [no-change]: *l*ḯ*n*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ḯ*n*ō*n
 EAFRhotacism [no-change]: *l*ḯ*n*ō*n
 PNWGmcMnDissimilation [no-change]: *l*ḯ*n*ō*n
 PNWGmcNStemNLoss: *l*ḯ*n*ǭ
@@ -21467,6 +21633,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ḯ*s*t*ō*n
 EAFFinalZDeletion [no-change]: *l*ḯ*s*t*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ḯ*s*t*ō*n
 MonosyllabicFinalZLoss [no-change]: *l*ḯ*s*t*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ḯ*s*t*ō*n
 EAFRhotacism [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcMnDissimilation [no-change]: *l*ḯ*s*t*ō*n
 PNWGmcNStemNLoss: *l*ḯ*s*t*ǭ
@@ -21596,6 +21763,7 @@ PNWGmcFinalLongORaising [no-change]: *l*í*b*ē*θ
 EAFFinalZDeletion [no-change]: *l*í*b*ē*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*í*b*ē*θ
 MonosyllabicFinalZLoss [no-change]: *l*í*b*ē*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*í*b*ē*θ
 EAFRhotacism [no-change]: *l*í*b*ē*θ
 PNWGmcMnDissimilation [no-change]: *l*í*b*ē*θ
 PNWGmcNStemNLoss [no-change]: *l*í*b*ē*θ
@@ -21725,6 +21893,7 @@ PNWGmcFinalLongORaising: *l*í*b*r*u
 EAFFinalZDeletion [no-change]: *l*í*b*r*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*í*b*r*u
 MonosyllabicFinalZLoss [no-change]: *l*í*b*r*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*í*b*r*u
 EAFRhotacism [no-change]: *l*í*b*r*u
 PNWGmcMnDissimilation [no-change]: *l*í*b*r*u
 PNWGmcNStemNLoss [no-change]: *l*í*b*r*u
@@ -21854,6 +22023,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ái*m*ą
 EAFFinalZDeletion [no-change]: *l*ái*m*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ái*m*ą
 MonosyllabicFinalZLoss [no-change]: *l*ái*m*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ái*m*ą
 EAFRhotacism [no-change]: *l*ái*m*ą
 PNWGmcMnDissimilation [no-change]: *l*ái*m*ą
 PNWGmcNStemNLoss [no-change]: *l*ái*m*ą
@@ -21983,6 +22153,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ái*θ*a*z
 EAFFinalZDeletion: *l*ái*θ*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ái*θ*a
 MonosyllabicFinalZLoss [no-change]: *l*ái*θ*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ái*θ*a
 EAFRhotacism [no-change]: *l*ái*θ*a
 PNWGmcMnDissimilation [no-change]: *l*ái*θ*a
 PNWGmcNStemNLoss [no-change]: *l*ái*θ*a
@@ -22112,6 +22283,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ó*k*ą
 EAFFinalZDeletion [no-change]: *l*ó*k*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ó*k*ą
 MonosyllabicFinalZLoss [no-change]: *l*ó*k*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ó*k*ą
 EAFRhotacism [no-change]: *l*ó*k*ą
 PNWGmcMnDissimilation [no-change]: *l*ó*k*ą
 PNWGmcNStemNLoss [no-change]: *l*ó*k*ą
@@ -22241,6 +22413,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ó*k*k*a*z
 EAFFinalZDeletion: *l*ó*k*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ó*k*k*a
 MonosyllabicFinalZLoss [no-change]: *l*ó*k*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ó*k*k*a
 EAFRhotacism [no-change]: *l*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *l*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *l*ó*k*k*a
@@ -22370,6 +22543,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ū*s
 EAFFinalZDeletion [no-change]: *l*ū*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ū*s
 MonosyllabicFinalZLoss [no-change]: *l*ū*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ū*s
 EAFRhotacism [no-change]: *l*ū*s
 PNWGmcMnDissimilation [no-change]: *l*ū*s
 PNWGmcNStemNLoss [no-change]: *l*ū*s
@@ -22499,6 +22673,7 @@ PNWGmcFinalLongORaising: *l*ú*n*g*a*n*n*j*u
 EAFFinalZDeletion [no-change]: *l*ú*n*g*a*n*n*j*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ú*n*g*a*n*n*j*u
 MonosyllabicFinalZLoss [no-change]: *l*ú*n*g*a*n*n*j*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ú*n*g*a*n*n*j*u
 EAFRhotacism [no-change]: *l*ú*n*g*a*n*n*j*u
 PNWGmcMnDissimilation [no-change]: *l*ú*n*g*a*n*n*j*u
 PNWGmcNStemNLoss [no-change]: *l*ú*n*g*a*n*n*j*u
@@ -22628,6 +22803,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ú*s*t*u*z
 EAFFinalZDeletion: *l*ú*s*t*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ú*s*t*u
 MonosyllabicFinalZLoss [no-change]: *l*ú*s*t*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ú*s*t*u
 EAFRhotacism [no-change]: *l*ú*s*t*u
 PNWGmcMnDissimilation [no-change]: *l*ú*s*t*u
 PNWGmcNStemNLoss [no-change]: *l*ú*s*t*u
@@ -22757,6 +22933,7 @@ PNWGmcFinalLongORaising: *l*áu*g*u
 EAFFinalZDeletion [no-change]: *l*áu*g*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*áu*g*u
 MonosyllabicFinalZLoss [no-change]: *l*áu*g*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*áu*g*u
 EAFRhotacism [no-change]: *l*áu*g*u
 PNWGmcMnDissimilation [no-change]: *l*áu*g*u
 PNWGmcNStemNLoss [no-change]: *l*áu*g*u
@@ -22886,6 +23063,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*k*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *m*á*k*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*k*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *m*á*k*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*k*ō*j*a*n*ą
 EAFRhotacism [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *m*á*k*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *m*á*k*ō*j*a*n*ą
@@ -23015,6 +23193,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*l*t*a*z
 EAFFinalZDeletion: *m*á*l*t*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*l*t*a
 MonosyllabicFinalZLoss [no-change]: *m*á*l*t*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*l*t*a
 EAFRhotacism [no-change]: *m*á*l*t*a
 PNWGmcMnDissimilation [no-change]: *m*á*l*t*a
 PNWGmcNStemNLoss [no-change]: *m*á*l*t*a
@@ -23144,6 +23323,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*n*n*a*s
 EAFFinalZDeletion [no-change]: *m*á*n*n*a*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*n*n*a*s
 MonosyllabicFinalZLoss [no-change]: *m*á*n*n*a*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*n*n*a*s
 EAFRhotacism [no-change]: *m*á*n*n*a*s
 PNWGmcMnDissimilation [no-change]: *m*á*n*n*a*s
 PNWGmcNStemNLoss [no-change]: *m*á*n*n*a*s
@@ -23273,6 +23453,7 @@ PNWGmcFinalLongORaising: *m*á*r*k*u
 EAFFinalZDeletion [no-change]: *m*á*r*k*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*r*k*u
 MonosyllabicFinalZLoss [no-change]: *m*á*r*k*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*r*k*u
 EAFRhotacism [no-change]: *m*á*r*k*u
 PNWGmcMnDissimilation [no-change]: *m*á*r*k*u
 PNWGmcNStemNLoss [no-change]: *m*á*r*k*u
@@ -23402,6 +23583,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*s*t*a*z
 EAFFinalZDeletion: *m*á*s*t*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*s*t*a
 MonosyllabicFinalZLoss [no-change]: *m*á*s*t*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*s*t*a
 EAFRhotacism [no-change]: *m*á*s*t*a
 PNWGmcMnDissimilation [no-change]: *m*á*s*t*a
 PNWGmcNStemNLoss [no-change]: *m*á*s*t*a
@@ -23531,6 +23713,7 @@ PNWGmcFinalLongORaising [no-change]: *m*ā*l*ą
 EAFFinalZDeletion [no-change]: *m*ā*l*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*ā*l*ą
 MonosyllabicFinalZLoss [no-change]: *m*ā*l*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*ā*l*ą
 EAFRhotacism [no-change]: *m*ā*l*ą
 PNWGmcMnDissimilation [no-change]: *m*ā*l*ą
 PNWGmcNStemNLoss [no-change]: *m*ā*l*ą
@@ -23660,6 +23843,7 @@ PNWGmcFinalLongORaising [no-change]: *m*ái*n*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *m*ái*n*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*ái*n*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *m*ái*n*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*ái*n*i*j*a*n*ą
 EAFRhotacism [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *m*ái*n*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *m*ái*n*i*j*a*n*ą
@@ -23789,6 +23973,7 @@ PNWGmcFinalLongORaising [no-change]: *m*é*z*d*ē
 EAFFinalZDeletion [no-change]: *m*é*z*d*ē
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*é*z*d*ē
 MonosyllabicFinalZLoss [no-change]: *m*é*z*d*ē
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*é*z*d*ē
 EAFRhotacism: *m*é*r*d*ē
 PNWGmcMnDissimilation [no-change]: *m*é*r*d*ē
 PNWGmcNStemNLoss [no-change]: *m*é*r*d*ē
@@ -23918,6 +24103,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*x*t*i*z
 EAFFinalZDeletion: *m*á*x*t*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*x*t*i
 MonosyllabicFinalZLoss [no-change]: *m*á*x*t*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*x*t*i
 EAFRhotacism [no-change]: *m*á*x*t*i
 PNWGmcMnDissimilation [no-change]: *m*á*x*t*i
 PNWGmcNStemNLoss [no-change]: *m*á*x*t*i
@@ -24047,6 +24233,7 @@ PNWGmcFinalLongORaising [no-change]: *m*é*l*u*k*z
 EAFFinalZDeletion: *m*é*l*u*k
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*é*l*u*k
 MonosyllabicFinalZLoss [no-change]: *m*é*l*u*k
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*é*l*u*k
 EAFRhotacism [no-change]: *m*é*l*u*k
 PNWGmcMnDissimilation [no-change]: *m*é*l*u*k
 PNWGmcNStemNLoss [no-change]: *m*é*l*u*k
@@ -24176,6 +24363,7 @@ PNWGmcFinalLongORaising [no-change]: *m*ā*n*ō*θ*z
 EAFFinalZDeletion: *m*ā*n*ō*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*ā*n*ō*θ
 MonosyllabicFinalZLoss [no-change]: *m*ā*n*ō*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*ā*n*ō*θ
 EAFRhotacism [no-change]: *m*ā*n*ō*θ
 PNWGmcMnDissimilation [no-change]: *m*ā*n*ō*θ
 PNWGmcNStemNLoss [no-change]: *m*ā*n*ō*θ
@@ -24305,6 +24493,7 @@ PNWGmcFinalLongORaising [no-change]: *m*ō*d*a*z
 EAFFinalZDeletion: *m*ō*d*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*ō*d*a
 MonosyllabicFinalZLoss [no-change]: *m*ō*d*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*ō*d*a
 EAFRhotacism [no-change]: *m*ō*d*a
 PNWGmcMnDissimilation [no-change]: *m*ō*d*a
 PNWGmcNStemNLoss [no-change]: *m*ō*d*a
@@ -24434,6 +24623,7 @@ PNWGmcFinalLongORaising [no-change]: *m*ō*d*ē*r
 EAFFinalZDeletion [no-change]: *m*ō*d*ē*r
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*ō*d*ē*r
 MonosyllabicFinalZLoss [no-change]: *m*ō*d*ē*r
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*ō*d*ē*r
 EAFRhotacism [no-change]: *m*ō*d*ē*r
 PNWGmcMnDissimilation [no-change]: *m*ō*d*ē*r
 PNWGmcNStemNLoss [no-change]: *m*ō*d*ē*r
@@ -24563,6 +24753,7 @@ PNWGmcFinalLongORaising [no-change]: *n*á*g*l*a*z
 EAFFinalZDeletion: *n*á*g*l*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*á*g*l*a
 MonosyllabicFinalZLoss [no-change]: *n*á*g*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*á*g*l*a
 EAFRhotacism [no-change]: *n*á*g*l*a
 PNWGmcMnDissimilation [no-change]: *n*á*g*l*a
 PNWGmcNStemNLoss [no-change]: *n*á*g*l*a
@@ -24692,6 +24883,7 @@ PNWGmcFinalLongORaising [no-change]: *n*á*m*ô
 EAFFinalZDeletion [no-change]: *n*á*m*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*á*m*ô
 MonosyllabicFinalZLoss [no-change]: *n*á*m*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*á*m*ô
 EAFRhotacism [no-change]: *n*á*m*ô
 PNWGmcMnDissimilation [no-change]: *n*á*m*ô
 PNWGmcNStemNLoss [no-change]: *n*á*m*ô
@@ -24821,6 +25013,7 @@ PNWGmcFinalLongORaising: *n*á*b*u
 EAFFinalZDeletion [no-change]: *n*á*b*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*á*b*u
 MonosyllabicFinalZLoss [no-change]: *n*á*b*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*á*b*u
 EAFRhotacism [no-change]: *n*á*b*u
 PNWGmcMnDissimilation [no-change]: *n*á*b*u
 PNWGmcNStemNLoss [no-change]: *n*á*b*u
@@ -24950,6 +25143,7 @@ PNWGmcFinalLongORaising [no-change]: *n*á*b*u*l*ô
 EAFFinalZDeletion [no-change]: *n*á*b*u*l*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*á*b*u*l*ô
 MonosyllabicFinalZLoss [no-change]: *n*á*b*u*l*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*á*b*u*l*ô
 EAFRhotacism [no-change]: *n*á*b*u*l*ô
 PNWGmcMnDissimilation [no-change]: *n*á*b*u*l*ô
 PNWGmcNStemNLoss [no-change]: *n*á*b*u*l*ô
@@ -25079,6 +25273,7 @@ PNWGmcFinalLongORaising [no-change]: *x*n*é*k*k*ô
 EAFFinalZDeletion [no-change]: *x*n*é*k*k*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*n*é*k*k*ô
 MonosyllabicFinalZLoss [no-change]: *x*n*é*k*k*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*n*é*k*k*ô
 EAFRhotacism [no-change]: *x*n*é*k*k*ô
 PNWGmcMnDissimilation [no-change]: *x*n*é*k*k*ô
 PNWGmcNStemNLoss [no-change]: *x*n*é*k*k*ô
@@ -25208,6 +25403,7 @@ PNWGmcFinalLongORaising [no-change]: *n*áu*d*i*z
 EAFFinalZDeletion: *n*áu*d*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*áu*d*i
 MonosyllabicFinalZLoss [no-change]: *n*áu*d*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*áu*d*i
 EAFRhotacism [no-change]: *n*áu*d*i
 PNWGmcMnDissimilation [no-change]: *n*áu*d*i
 PNWGmcNStemNLoss [no-change]: *n*áu*d*i
@@ -25337,6 +25533,7 @@ PNWGmcFinalLongORaising: *n*ā*d*l*u
 EAFFinalZDeletion [no-change]: *n*ā*d*l*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*ā*d*l*u
 MonosyllabicFinalZLoss [no-change]: *n*ā*d*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*ā*d*l*u
 EAFRhotacism [no-change]: *n*ā*d*l*u
 PNWGmcMnDissimilation [no-change]: *n*ā*d*l*u
 PNWGmcNStemNLoss [no-change]: *n*ā*d*l*u
@@ -25466,6 +25663,7 @@ PNWGmcFinalLongORaising [no-change]: *n*é*s*t*ą
 EAFFinalZDeletion [no-change]: *n*é*s*t*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*é*s*t*ą
 MonosyllabicFinalZLoss [no-change]: *n*é*s*t*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*é*s*t*ą
 EAFRhotacism [no-change]: *n*é*s*t*ą
 PNWGmcMnDissimilation [no-change]: *n*é*s*t*ą
 PNWGmcNStemNLoss [no-change]: *n*é*s*t*ą
@@ -25595,6 +25793,7 @@ PNWGmcFinalLongORaising [no-change]: *n*á*t*t*j*ą
 EAFFinalZDeletion [no-change]: *n*á*t*t*j*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*á*t*t*j*ą
 MonosyllabicFinalZLoss [no-change]: *n*á*t*t*j*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*á*t*t*j*ą
 EAFRhotacism [no-change]: *n*á*t*t*j*ą
 PNWGmcMnDissimilation [no-change]: *n*á*t*t*j*ą
 PNWGmcNStemNLoss [no-change]: *n*á*t*t*j*ą
@@ -25724,6 +25923,7 @@ PNWGmcFinalLongORaising [no-change]: *n*á*t*i*l*ō*n
 EAFFinalZDeletion [no-change]: *n*á*t*i*l*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*á*t*i*l*ō*n
 MonosyllabicFinalZLoss [no-change]: *n*á*t*i*l*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*á*t*i*l*ō*n
 EAFRhotacism [no-change]: *n*á*t*i*l*ō*n
 PNWGmcMnDissimilation [no-change]: *n*á*t*i*l*ō*n
 PNWGmcNStemNLoss: *n*á*t*i*l*ǭ
@@ -25853,6 +26053,7 @@ PNWGmcFinalLongORaising [no-change]: *n*á*x*t*i
 EAFFinalZDeletion [no-change]: *n*á*x*t*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*á*x*t*i
 MonosyllabicFinalZLoss [no-change]: *n*á*x*t*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*á*x*t*i
 EAFRhotacism [no-change]: *n*á*x*t*i
 PNWGmcMnDissimilation [no-change]: *n*á*x*t*i
 PNWGmcNStemNLoss [no-change]: *n*á*x*t*i
@@ -25982,6 +26183,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*r*ō*n
 EAFFinalZDeletion [no-change]: *m*á*r*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*r*ō*n
 MonosyllabicFinalZLoss [no-change]: *m*á*r*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*r*ō*n
 EAFRhotacism [no-change]: *m*á*r*ō*n
 PNWGmcMnDissimilation [no-change]: *m*á*r*ō*n
 PNWGmcNStemNLoss: *m*á*r*ǭ
@@ -26111,6 +26313,7 @@ PNWGmcFinalLongORaising [no-change]: *n*í*g*u*n
 EAFFinalZDeletion [no-change]: *n*í*g*u*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*í*g*u*n
 MonosyllabicFinalZLoss [no-change]: *n*í*g*u*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*í*g*u*n
 EAFRhotacism [no-change]: *n*í*g*u*n
 PNWGmcMnDissimilation [no-change]: *n*í*g*u*n
 PNWGmcNStemNLoss [no-change]: *n*í*g*u*n
@@ -26240,6 +26443,7 @@ PNWGmcFinalLongORaising: *n*ó*s*u
 EAFFinalZDeletion [no-change]: *n*ó*s*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *n*ó*s*u
 MonosyllabicFinalZLoss [no-change]: *n*ó*s*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*ó*s*u
 EAFRhotacism [no-change]: *n*ó*s*u
 PNWGmcMnDissimilation [no-change]: *n*ó*s*u
 PNWGmcNStemNLoss [no-change]: *n*ó*s*u
@@ -26369,6 +26573,7 @@ PNWGmcFinalLongORaising [no-change]: *ái*n*a*z
 EAFFinalZDeletion: *ái*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *ái*n*a
 MonosyllabicFinalZLoss [no-change]: *ái*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *ái*n*a
 EAFRhotacism [no-change]: *ái*n*a
 PNWGmcMnDissimilation [no-change]: *ái*n*a
 PNWGmcNStemNLoss [no-change]: *ái*n*a
@@ -26498,6 +26703,7 @@ PNWGmcFinalLongORaising [no-change]: *ó*f*n*a*z
 EAFFinalZDeletion: *ó*f*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *ó*f*n*a
 MonosyllabicFinalZLoss [no-change]: *ó*f*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *ó*f*n*a
 EAFRhotacism [no-change]: *ó*f*n*a
 PNWGmcMnDissimilation [no-change]: *ó*f*n*a
 PNWGmcNStemNLoss [no-change]: *ó*f*n*a
@@ -26627,6 +26833,7 @@ PNWGmcFinalLongORaising [no-change]: *ó*x*s*ô
 EAFFinalZDeletion [no-change]: *ó*x*s*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *ó*x*s*ô
 MonosyllabicFinalZLoss [no-change]: *ó*x*s*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *ó*x*s*ô
 EAFRhotacism [no-change]: *ó*x*s*ô
 PNWGmcMnDissimilation [no-change]: *ó*x*s*ô
 PNWGmcNStemNLoss [no-change]: *ó*x*s*ô
@@ -26756,6 +26963,7 @@ PNWGmcFinalLongORaising [no-change]: *r*é*g*n*ą
 EAFFinalZDeletion [no-change]: *r*é*g*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*é*g*n*ą
 MonosyllabicFinalZLoss [no-change]: *r*é*g*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*é*g*n*ą
 EAFRhotacism [no-change]: *r*é*g*n*ą
 PNWGmcMnDissimilation [no-change]: *r*é*g*n*ą
 PNWGmcNStemNLoss [no-change]: *r*é*g*n*ą
@@ -26885,6 +27093,7 @@ PNWGmcFinalLongORaising [no-change]: *r*é*g*n*a*b*ù*g*ô
 EAFFinalZDeletion [no-change]: *r*é*g*n*a*b*ù*g*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*é*g*n*a*b*ù*g*ô
 MonosyllabicFinalZLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*é*g*n*a*b*ù*g*ô
 EAFRhotacism [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcMnDissimilation [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcNStemNLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
@@ -27014,6 +27223,7 @@ PNWGmcFinalLongORaising [no-change]: *x*r*á*b*n*a*z
 EAFFinalZDeletion: *x*r*á*b*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*r*á*b*n*a
 MonosyllabicFinalZLoss [no-change]: *x*r*á*b*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*r*á*b*n*a
 EAFRhotacism [no-change]: *x*r*á*b*n*a
 PNWGmcMnDissimilation [no-change]: *x*r*á*b*n*a
 PNWGmcNStemNLoss [no-change]: *x*r*á*b*n*a
@@ -27143,6 +27353,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ā*d*a*n*ą
 EAFFinalZDeletion [no-change]: *r*ā*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ā*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *r*ā*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ā*d*a*n*ą
 EAFRhotacism [no-change]: *r*ā*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *r*ā*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *r*ā*d*a*n*ą
@@ -27272,6 +27483,7 @@ PNWGmcFinalLongORaising [no-change]: *r*áu*k*a*z
 EAFFinalZDeletion: *r*áu*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*áu*k*a
 MonosyllabicFinalZLoss [no-change]: *r*áu*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*áu*k*a
 EAFRhotacism [no-change]: *r*áu*k*a
 PNWGmcMnDissimilation [no-change]: *r*áu*k*a
 PNWGmcNStemNLoss [no-change]: *r*áu*k*a
@@ -27401,6 +27613,7 @@ PNWGmcFinalLongORaising [no-change]: *r*á*s*t*ō*z
 EAFFinalZDeletion: *r*á*s*t*ō
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*á*s*t*ō
 MonosyllabicFinalZLoss [no-change]: *r*á*s*t*ō
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*á*s*t*ō
 EAFRhotacism [no-change]: *r*á*s*t*ō
 PNWGmcMnDissimilation [no-change]: *r*á*s*t*ō
 PNWGmcNStemNLoss [no-change]: *r*á*s*t*ō
@@ -27530,6 +27743,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ḯ*d*a*n*ą
 EAFFinalZDeletion [no-change]: *r*ḯ*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ḯ*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *r*ḯ*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ḯ*d*a*n*ą
 EAFRhotacism [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *r*ḯ*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *r*ḯ*d*a*n*ą
@@ -27659,6 +27873,7 @@ PNWGmcFinalLongORaising: *r*í*n*d*u
 EAFFinalZDeletion [no-change]: *r*í*n*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*í*n*d*u
 MonosyllabicFinalZLoss [no-change]: *r*í*n*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*í*n*d*u
 EAFRhotacism [no-change]: *r*í*n*d*u
 PNWGmcMnDissimilation [no-change]: *r*í*n*d*u
 PNWGmcNStemNLoss [no-change]: *r*í*n*d*u
@@ -27788,6 +28003,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ó*k*k*a*z
 EAFFinalZDeletion: *r*ó*k*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ó*k*k*a
 MonosyllabicFinalZLoss [no-change]: *r*ó*k*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ó*k*k*a
 EAFRhotacism [no-change]: *r*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *r*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *r*ó*k*k*a
@@ -27917,6 +28133,7 @@ PNWGmcFinalLongORaising: *r*ō*d*u
 EAFFinalZDeletion [no-change]: *r*ō*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ō*d*u
 MonosyllabicFinalZLoss [no-change]: *r*ō*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ō*d*u
 EAFRhotacism [no-change]: *r*ō*d*u
 PNWGmcMnDissimilation [no-change]: *r*ō*d*u
 PNWGmcNStemNLoss [no-change]: *r*ō*d*u
@@ -28046,6 +28263,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ū*m*ą
 EAFFinalZDeletion [no-change]: *r*ū*m*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ū*m*ą
 MonosyllabicFinalZLoss [no-change]: *r*ū*m*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ū*m*ą
 EAFRhotacism [no-change]: *r*ū*m*ą
 PNWGmcMnDissimilation [no-change]: *r*ū*m*ą
 PNWGmcNStemNLoss [no-change]: *r*ū*m*ą
@@ -28175,6 +28393,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ái*p*ą
 EAFFinalZDeletion [no-change]: *r*ái*p*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ái*p*ą
 MonosyllabicFinalZLoss [no-change]: *r*ái*p*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ái*p*ą
 EAFRhotacism [no-change]: *r*ái*p*ą
 PNWGmcMnDissimilation [no-change]: *r*ái*p*ą
 PNWGmcNStemNLoss [no-change]: *r*ái*p*ą
@@ -28304,6 +28523,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ō*θ*r*a*z
 EAFFinalZDeletion: *r*ō*θ*r*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ō*θ*r*a
 MonosyllabicFinalZLoss [no-change]: *r*ō*θ*r*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ō*θ*r*a
 EAFRhotacism [no-change]: *r*ō*θ*r*a
 PNWGmcMnDissimilation [no-change]: *r*ō*θ*r*a
 PNWGmcNStemNLoss [no-change]: *r*ō*θ*r*a
@@ -28433,6 +28653,7 @@ PNWGmcFinalLongORaising [no-change]: *r*í*n*n*a*n*ą
 EAFFinalZDeletion [no-change]: *r*í*n*n*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*í*n*n*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *r*í*n*n*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*í*n*n*a*n*ą
 EAFRhotacism [no-change]: *r*í*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *r*í*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *r*í*n*n*a*n*ą
@@ -28562,6 +28783,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ú*g*i*z
 EAFFinalZDeletion: *r*ú*g*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ú*g*i
 MonosyllabicFinalZLoss [no-change]: *r*ú*g*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ú*g*i
 EAFRhotacism [no-change]: *r*ú*g*i
 PNWGmcMnDissimilation [no-change]: *r*ú*g*i
 PNWGmcNStemNLoss [no-change]: *r*ú*g*i
@@ -28691,6 +28913,7 @@ PNWGmcFinalLongORaising [no-change]: *s*é*g*l*ą
 EAFFinalZDeletion [no-change]: *s*é*g*l*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*é*g*l*ą
 MonosyllabicFinalZLoss [no-change]: *s*é*g*l*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*é*g*l*ą
 EAFRhotacism [no-change]: *s*é*g*l*ą
 PNWGmcMnDissimilation [no-change]: *s*é*g*l*ą
 PNWGmcNStemNLoss [no-change]: *s*é*g*l*ą
@@ -28820,6 +29043,7 @@ PNWGmcFinalLongORaising: *s*á*k*u
 EAFFinalZDeletion [no-change]: *s*á*k*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*á*k*u
 MonosyllabicFinalZLoss [no-change]: *s*á*k*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*á*k*u
 EAFRhotacism [no-change]: *s*á*k*u
 PNWGmcMnDissimilation [no-change]: *s*á*k*u
 PNWGmcNStemNLoss [no-change]: *s*á*k*u
@@ -28949,6 +29173,7 @@ PNWGmcFinalLongORaising [no-change]: *s*á*l*t*ą
 EAFFinalZDeletion [no-change]: *s*á*l*t*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*á*l*t*ą
 MonosyllabicFinalZLoss [no-change]: *s*á*l*t*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*á*l*t*ą
 EAFRhotacism [no-change]: *s*á*l*t*ą
 PNWGmcMnDissimilation [no-change]: *s*á*l*t*ą
 PNWGmcNStemNLoss [no-change]: *s*á*l*t*ą
@@ -29078,6 +29303,7 @@ PNWGmcFinalLongORaising: *s*á*l*b*u
 EAFFinalZDeletion [no-change]: *s*á*l*b*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*á*l*b*u
 MonosyllabicFinalZLoss [no-change]: *s*á*l*b*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*á*l*b*u
 EAFRhotacism [no-change]: *s*á*l*b*u
 PNWGmcMnDissimilation [no-change]: *s*á*l*b*u
 PNWGmcNStemNLoss [no-change]: *s*á*l*b*u
@@ -29207,6 +29433,7 @@ PNWGmcFinalLongORaising [no-change]: *s*á*p*ą
 EAFFinalZDeletion [no-change]: *s*á*p*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*á*p*ą
 MonosyllabicFinalZLoss [no-change]: *s*á*p*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*á*p*ą
 EAFRhotacism [no-change]: *s*á*p*ą
 PNWGmcMnDissimilation [no-change]: *s*á*p*ą
 PNWGmcNStemNLoss [no-change]: *s*á*p*ą
@@ -29336,6 +29563,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ái*w*i*z
 EAFFinalZDeletion: *s*ái*w*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ái*w*i
 MonosyllabicFinalZLoss [no-change]: *s*ái*w*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ái*w*i
 EAFRhotacism [no-change]: *s*ái*w*i
 PNWGmcMnDissimilation [no-change]: *s*ái*w*i
 PNWGmcNStemNLoss [no-change]: *s*ái*w*i
@@ -29465,6 +29693,7 @@ PNWGmcFinalLongORaising [no-change]: *s*áu*m*a*z
 EAFFinalZDeletion: *s*áu*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*áu*m*a
 MonosyllabicFinalZLoss [no-change]: *s*áu*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*áu*m*a
 EAFRhotacism [no-change]: *s*áu*m*a
 PNWGmcMnDissimilation [no-change]: *s*áu*m*a
 PNWGmcNStemNLoss [no-change]: *s*áu*m*a
@@ -29594,6 +29823,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ō*k*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*ō*k*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ō*k*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*ō*k*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ō*k*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ō*k*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ō*k*i*j*a*n*ą
@@ -29723,6 +29953,7 @@ PNWGmcFinalLongORaising [no-change]: *s*á*n*d*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*á*n*d*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*á*n*d*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*á*n*d*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*á*n*d*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*á*n*d*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*á*n*d*i*j*a*n*ą
@@ -29852,6 +30083,7 @@ PNWGmcFinalLongORaising [no-change]: *s*á*t*t*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*á*t*t*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*á*t*t*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*á*t*t*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*á*t*t*j*a*n*ą
 EAFRhotacism [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*á*t*t*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*á*t*t*j*a*n*ą
@@ -29981,6 +30213,7 @@ PNWGmcFinalLongORaising [no-change]: *s*é*b*u*n
 EAFFinalZDeletion [no-change]: *s*é*b*u*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*é*b*u*n
 MonosyllabicFinalZLoss [no-change]: *s*é*b*u*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*é*b*u*n
 EAFRhotacism [no-change]: *s*é*b*u*n
 PNWGmcMnDissimilation [no-change]: *s*é*b*u*n
 PNWGmcNStemNLoss [no-change]: *s*é*b*u*n
@@ -30110,6 +30343,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*á*f*t*ą
 EAFFinalZDeletion [no-change]: *s*k*á*f*t*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*á*f*t*ą
 MonosyllabicFinalZLoss [no-change]: *s*k*á*f*t*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*á*f*t*ą
 EAFRhotacism [no-change]: *s*k*á*f*t*ą
 PNWGmcMnDissimilation [no-change]: *s*k*á*f*t*ą
 PNWGmcNStemNLoss [no-change]: *s*k*á*f*t*ą
@@ -30239,6 +30473,7 @@ PNWGmcFinalLongORaising: *s*k*á*m*u
 EAFFinalZDeletion [no-change]: *s*k*á*m*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*á*m*u
 MonosyllabicFinalZLoss [no-change]: *s*k*á*m*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*á*m*u
 EAFRhotacism [no-change]: *s*k*á*m*u
 PNWGmcMnDissimilation [no-change]: *s*k*á*m*u
 PNWGmcNStemNLoss [no-change]: *s*k*á*m*u
@@ -30368,6 +30603,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*é*r*a*n*ą
 EAFFinalZDeletion [no-change]: *s*k*é*r*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*é*r*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*k*é*r*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*é*r*a*n*ą
 EAFRhotacism [no-change]: *s*k*é*r*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*k*é*r*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*k*é*r*a*n*ą
@@ -30497,6 +30733,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*ái*θ*i*z
 EAFFinalZDeletion: *s*k*ái*θ*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*ái*θ*i
 MonosyllabicFinalZLoss [no-change]: *s*k*ái*θ*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*ái*θ*i
 EAFRhotacism [no-change]: *s*k*ái*θ*i
 PNWGmcMnDissimilation [no-change]: *s*k*ái*θ*i
 PNWGmcNStemNLoss [no-change]: *s*k*ái*θ*i
@@ -30626,6 +30863,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*ā*p*ą
 EAFFinalZDeletion [no-change]: *s*k*ā*p*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*ā*p*ą
 MonosyllabicFinalZLoss [no-change]: *s*k*ā*p*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*ā*p*ą
 EAFRhotacism [no-change]: *s*k*ā*p*ą
 PNWGmcMnDissimilation [no-change]: *s*k*ā*p*ą
 PNWGmcNStemNLoss [no-change]: *s*k*ā*p*ą
@@ -30755,6 +30993,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*é*l*d*u*z
 EAFFinalZDeletion: *s*k*é*l*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*é*l*d*u
 MonosyllabicFinalZLoss [no-change]: *s*k*é*l*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*é*l*d*u
 EAFRhotacism [no-change]: *s*k*é*l*d*u
 PNWGmcMnDissimilation [no-change]: *s*k*é*l*d*u
 PNWGmcNStemNLoss [no-change]: *s*k*é*l*d*u
@@ -30884,6 +31123,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*í*l*l*i*n*g*a*z
 EAFFinalZDeletion: *s*k*í*l*l*i*n*g*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*í*l*l*i*n*g*a
 MonosyllabicFinalZLoss [no-change]: *s*k*í*l*l*i*n*g*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*í*l*l*i*n*g*a
 EAFRhotacism [no-change]: *s*k*í*l*l*i*n*g*a
 PNWGmcMnDissimilation [no-change]: *s*k*í*l*l*i*n*g*a
 PNWGmcNStemNLoss [no-change]: *s*k*í*l*l*i*n*g*a
@@ -31013,6 +31253,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*ḯ*n*a*n*ą
 EAFFinalZDeletion [no-change]: *s*k*ḯ*n*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*ḯ*n*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*k*ḯ*n*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*ḯ*n*a*n*ą
 EAFRhotacism [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*k*ḯ*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*k*ḯ*n*a*n*ą
@@ -31142,6 +31383,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*ú*l*d*r*u*m*z
 EAFFinalZDeletion: *s*k*ú*l*d*r*u*m
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*ú*l*d*r*u*m
 MonosyllabicFinalZLoss [no-change]: *s*k*ú*l*d*r*u*m
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*ú*l*d*r*u*m
 EAFRhotacism [no-change]: *s*k*ú*l*d*r*u*m
 PNWGmcMnDissimilation [no-change]: *s*k*ú*l*d*r*u*m
 PNWGmcNStemNLoss [no-change]: *s*k*ú*l*d*r*u*m
@@ -31271,6 +31513,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*áu*b
 EAFFinalZDeletion [no-change]: *s*k*áu*b
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*áu*b
 MonosyllabicFinalZLoss [no-change]: *s*k*áu*b
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*áu*b
 EAFRhotacism [no-change]: *s*k*áu*b
 PNWGmcMnDissimilation [no-change]: *s*k*áu*b
 PNWGmcNStemNLoss [no-change]: *s*k*áu*b
@@ -31400,6 +31643,7 @@ PNWGmcFinalLongORaising: *s*k*ó*f*l*u
 EAFFinalZDeletion [no-change]: *s*k*ó*f*l*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*ó*f*l*u
 MonosyllabicFinalZLoss [no-change]: *s*k*ó*f*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*ó*f*l*u
 EAFRhotacism [no-change]: *s*k*ó*f*l*u
 PNWGmcMnDissimilation [no-change]: *s*k*ó*f*l*u
 PNWGmcNStemNLoss [no-change]: *s*k*ó*f*l*u
@@ -31529,6 +31773,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*á*w*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*k*á*w*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*á*w*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*k*á*w*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*á*w*ō*j*a*n*ą
 EAFRhotacism [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*k*á*w*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*k*á*w*ō*j*a*n*ą
@@ -31658,6 +31903,7 @@ PNWGmcFinalLongORaising: *s*k*ū*r*u
 EAFFinalZDeletion [no-change]: *s*k*ū*r*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*ū*r*u
 MonosyllabicFinalZLoss [no-change]: *s*k*ū*r*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*ū*r*u
 EAFRhotacism [no-change]: *s*k*ū*r*u
 PNWGmcMnDissimilation [no-change]: *s*k*ū*r*u
 PNWGmcNStemNLoss [no-change]: *s*k*ū*r*u
@@ -31787,6 +32033,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ḯ*d*ō*n
 EAFFinalZDeletion [no-change]: *s*ḯ*d*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ḯ*d*ō*n
 MonosyllabicFinalZLoss [no-change]: *s*ḯ*d*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ḯ*d*ō*n
 EAFRhotacism [no-change]: *s*ḯ*d*ō*n
 PNWGmcMnDissimilation [no-change]: *s*ḯ*d*ō*n
 PNWGmcNStemNLoss: *s*ḯ*d*ǭ
@@ -31916,6 +32163,7 @@ PNWGmcFinalLongORaising [no-change]: *s*í*b*i
 EAFFinalZDeletion [no-change]: *s*í*b*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*í*b*i
 MonosyllabicFinalZLoss [no-change]: *s*í*b*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*í*b*i
 EAFRhotacism [no-change]: *s*í*b*i
 PNWGmcMnDissimilation [no-change]: *s*í*b*i
 PNWGmcNStemNLoss [no-change]: *s*í*b*i
@@ -32045,6 +32293,7 @@ PNWGmcFinalLongORaising [no-change]: *s*í*n*g*w*a*n*ą
 EAFFinalZDeletion [no-change]: *s*í*n*g*w*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*í*n*g*w*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*í*n*g*w*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*í*n*g*w*a*n*ą
 EAFRhotacism [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*í*n*g*w*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*í*n*g*w*a*n*ą
@@ -32174,6 +32423,7 @@ PNWGmcFinalLongORaising [no-change]: *s*á*n*g*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*á*n*g*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*á*n*g*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*á*n*g*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*á*n*g*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*á*n*g*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*á*n*g*i*j*a*n*ą
@@ -32303,6 +32553,7 @@ PNWGmcFinalLongORaising [no-change]: *s*w*é*s*t*ē*r
 EAFFinalZDeletion [no-change]: *s*w*é*s*t*ē*r
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*w*é*s*t*ē*r
 MonosyllabicFinalZLoss [no-change]: *s*w*é*s*t*ē*r
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*w*é*s*t*ē*r
 EAFRhotacism [no-change]: *s*w*é*s*t*ē*r
 PNWGmcMnDissimilation [no-change]: *s*w*é*s*t*ē*r
 PNWGmcNStemNLoss [no-change]: *s*w*é*s*t*ē*r
@@ -32432,6 +32683,7 @@ PNWGmcFinalLongORaising [no-change]: *s*é*t*t*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*é*t*t*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*é*t*t*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*é*t*t*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*é*t*t*j*a*n*ą
 EAFRhotacism [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*é*t*t*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*é*t*t*j*a*n*ą
@@ -32561,6 +32813,7 @@ PNWGmcFinalLongORaising [no-change]: *s*é*x*s
 EAFFinalZDeletion [no-change]: *s*é*x*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*é*x*s
 MonosyllabicFinalZLoss [no-change]: *s*é*x*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*é*x*s
 EAFRhotacism [no-change]: *s*é*x*s
 PNWGmcMnDissimilation [no-change]: *s*é*x*s
 PNWGmcNStemNLoss [no-change]: *s*é*x*s
@@ -32690,6 +32943,7 @@ PNWGmcFinalLongORaising [no-change]: *s*l*á*x*a*n*ą
 EAFFinalZDeletion [no-change]: *s*l*á*x*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*l*á*x*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*l*á*x*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*l*á*x*a*n*ą
 EAFRhotacism [no-change]: *s*l*á*x*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*l*á*x*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*l*á*x*a*n*ą
@@ -32819,6 +33073,7 @@ PNWGmcFinalLongORaising [no-change]: *s*l*ā*p*a*n*ą
 EAFFinalZDeletion [no-change]: *s*l*ā*p*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*l*ā*p*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*l*ā*p*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*l*ā*p*a*n*ą
 EAFRhotacism [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*l*ā*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*l*ā*p*a*n*ą
@@ -32948,6 +33203,7 @@ PNWGmcFinalLongORaising [no-change]: *s*l*ḯ*m*ą
 EAFFinalZDeletion [no-change]: *s*l*ḯ*m*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*l*ḯ*m*ą
 MonosyllabicFinalZLoss [no-change]: *s*l*ḯ*m*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*l*ḯ*m*ą
 EAFRhotacism [no-change]: *s*l*ḯ*m*ą
 PNWGmcMnDissimilation [no-change]: *s*l*ḯ*m*ą
 PNWGmcNStemNLoss [no-change]: *s*l*ḯ*m*ą
@@ -33077,6 +33333,7 @@ PNWGmcFinalLongORaising [no-change]: *s*m*é*r*w*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*m*é*r*w*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*m*é*r*w*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*m*é*r*w*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*m*é*r*w*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*m*é*r*w*i*j*a*n*ą
@@ -33206,6 +33463,7 @@ PNWGmcFinalLongORaising [no-change]: *s*n*ái*w*a*z
 EAFFinalZDeletion: *s*n*ái*w*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*n*ái*w*a
 MonosyllabicFinalZLoss [no-change]: *s*n*ái*w*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*n*ái*w*a
 EAFRhotacism [no-change]: *s*n*ái*w*a
 PNWGmcMnDissimilation [no-change]: *s*n*ái*w*a
 PNWGmcNStemNLoss [no-change]: *s*n*ái*w*a
@@ -33335,6 +33593,7 @@ PNWGmcFinalLongORaising: *s*ó*r*g*u
 EAFFinalZDeletion [no-change]: *s*ó*r*g*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ó*r*g*u
 MonosyllabicFinalZLoss [no-change]: *s*ó*r*g*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ó*r*g*u
 EAFRhotacism [no-change]: *s*ó*r*g*u
 PNWGmcMnDissimilation [no-change]: *s*ó*r*g*u
 PNWGmcNStemNLoss [no-change]: *s*ó*r*g*u
@@ -33464,6 +33723,7 @@ PNWGmcFinalLongORaising: *s*ái*w*a*l*u
 EAFFinalZDeletion [no-change]: *s*ái*w*a*l*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ái*w*a*l*u
 MonosyllabicFinalZLoss [no-change]: *s*ái*w*a*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ái*w*a*l*u
 EAFRhotacism [no-change]: *s*ái*w*a*l*u
 PNWGmcMnDissimilation [no-change]: *s*ái*w*a*l*u
 PNWGmcNStemNLoss [no-change]: *s*ái*w*a*l*u
@@ -33593,6 +33853,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*á*n*n*a*n*ą
 EAFFinalZDeletion [no-change]: *s*p*á*n*n*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*á*n*n*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*p*á*n*n*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*á*n*n*a*n*ą
 EAFRhotacism [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*á*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*á*n*n*a*n*ą
@@ -33722,6 +33983,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*á*n*n*ē
 EAFFinalZDeletion [no-change]: *s*p*á*n*n*ē
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*á*n*n*ē
 MonosyllabicFinalZLoss [no-change]: *s*p*á*n*n*ē
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*á*n*n*ē
 EAFRhotacism [no-change]: *s*p*á*n*n*ē
 PNWGmcMnDissimilation [no-change]: *s*p*á*n*n*ē
 PNWGmcNStemNLoss [no-change]: *s*p*á*n*n*ē
@@ -33851,6 +34113,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*á*r*r*ô
 EAFFinalZDeletion [no-change]: *s*p*á*r*r*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*á*r*r*ô
 MonosyllabicFinalZLoss [no-change]: *s*p*á*r*r*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*á*r*r*ô
 EAFRhotacism [no-change]: *s*p*á*r*r*ô
 PNWGmcMnDissimilation [no-change]: *s*p*á*r*r*ô
 PNWGmcNStemNLoss [no-change]: *s*p*á*r*r*ô
@@ -33980,6 +34243,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*á*r*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*p*á*r*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*á*r*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*p*á*r*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*á*r*ō*j*a*n*ą
 EAFRhotacism [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*á*r*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*á*r*ō*j*a*n*ą
@@ -34109,6 +34373,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*é*r*u
 EAFFinalZDeletion [no-change]: *s*p*é*r*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*é*r*u
 MonosyllabicFinalZLoss [no-change]: *s*p*é*r*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*é*r*u
 EAFRhotacism [no-change]: *s*p*é*r*u
 PNWGmcMnDissimilation [no-change]: *s*p*é*r*u
 PNWGmcNStemNLoss [no-change]: *s*p*é*r*u
@@ -34238,6 +34503,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*í*n*n*a*n*ą
 EAFFinalZDeletion [no-change]: *s*p*í*n*n*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*í*n*n*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*p*í*n*n*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*í*n*n*a*n*ą
 EAFRhotacism [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*í*n*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*í*n*n*a*n*ą
@@ -34367,6 +34633,7 @@ PNWGmcFinalLongORaising: *s*p*é*n*n*i*l*u
 EAFFinalZDeletion [no-change]: *s*p*é*n*n*i*l*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*é*n*n*i*l*u
 MonosyllabicFinalZLoss [no-change]: *s*p*é*n*n*i*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*é*n*n*i*l*u
 EAFRhotacism [no-change]: *s*p*é*n*n*i*l*u
 PNWGmcMnDissimilation [no-change]: *s*p*é*n*n*i*l*u
 PNWGmcNStemNLoss [no-change]: *s*p*é*n*n*i*l*u
@@ -34496,6 +34763,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*ā*n*u*z
 EAFFinalZDeletion: *s*p*ā*n*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*ā*n*u
 MonosyllabicFinalZLoss [no-change]: *s*p*ā*n*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*ā*n*u
 EAFRhotacism [no-change]: *s*p*ā*n*u
 PNWGmcMnDissimilation [no-change]: *s*p*ā*n*u
 PNWGmcNStemNLoss [no-change]: *s*p*ā*n*u
@@ -34625,6 +34893,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*p*r*ái*d*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*p*r*ái*d*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*p*r*ái*d*i*j*a*n*ą
@@ -34754,6 +35023,7 @@ PNWGmcFinalLongORaising [no-change]: *s*p*ó*r*ô
 EAFFinalZDeletion [no-change]: *s*p*ó*r*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*p*ó*r*ô
 MonosyllabicFinalZLoss [no-change]: *s*p*ó*r*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*p*ó*r*ô
 EAFRhotacism [no-change]: *s*p*ó*r*ô
 PNWGmcMnDissimilation [no-change]: *s*p*ó*r*ô
 PNWGmcNStemNLoss [no-change]: *s*p*ó*r*ô
@@ -34883,6 +35153,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*á*b*a*z
 EAFFinalZDeletion: *s*t*á*b*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*á*b*a
 MonosyllabicFinalZLoss [no-change]: *s*t*á*b*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*á*b*a
 EAFRhotacism [no-change]: *s*t*á*b*a
 PNWGmcMnDissimilation [no-change]: *s*t*á*b*a
 PNWGmcNStemNLoss [no-change]: *s*t*á*b*a
@@ -35012,6 +35283,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*t*ú*r*t*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*ú*r*t*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*ú*r*t*i*j*a*n*ą
@@ -35141,6 +35413,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*é*r*b*a*n*ą
 EAFFinalZDeletion [no-change]: *s*t*é*r*b*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*é*r*b*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*t*é*r*b*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*é*r*b*a*n*ą
 EAFRhotacism [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*é*r*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*é*r*b*a*n*ą
@@ -35270,6 +35543,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*é*l*a*n*ą
 EAFFinalZDeletion [no-change]: *s*t*é*l*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*é*l*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*t*é*l*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*é*l*a*n*ą
 EAFRhotacism [no-change]: *s*t*é*l*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*é*l*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*é*l*a*n*ą
@@ -35399,6 +35673,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*á*m*n*i*z
 EAFFinalZDeletion: *s*t*á*m*n*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*á*m*n*i
 MonosyllabicFinalZLoss [no-change]: *s*t*á*m*n*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*á*m*n*i
 EAFRhotacism [no-change]: *s*t*á*m*n*i
 PNWGmcMnDissimilation: *s*t*á*β*n*i
 PNWGmcNStemNLoss [no-change]: *s*t*á*β*n*i
@@ -35528,6 +35803,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*é*l*l*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*é*l*l*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*t*é*l*l*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*é*l*l*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*é*l*l*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*é*l*l*i*j*a*n*ą
@@ -35657,6 +35933,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*ó*k*k*a*z
 EAFFinalZDeletion: *s*t*ó*k*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*ó*k*k*a
 MonosyllabicFinalZLoss [no-change]: *s*t*ó*k*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*ó*k*k*a
 EAFRhotacism [no-change]: *s*t*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *s*t*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *s*t*ó*k*k*a
@@ -35786,6 +36063,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*ái*n*a*z
 EAFFinalZDeletion: *s*t*ái*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*ái*n*a
 MonosyllabicFinalZLoss [no-change]: *s*t*ái*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*ái*n*a
 EAFRhotacism [no-change]: *s*t*ái*n*a
 PNWGmcMnDissimilation [no-change]: *s*t*ái*n*a
 PNWGmcNStemNLoss [no-change]: *s*t*ái*n*a
@@ -35915,6 +36193,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*ō*l*a*z
 EAFFinalZDeletion: *s*t*ō*l*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*ō*l*a
 MonosyllabicFinalZLoss [no-change]: *s*t*ō*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*ō*l*a
 EAFRhotacism [no-change]: *s*t*ō*l*a
 PNWGmcMnDissimilation [no-change]: *s*t*ō*l*a
 PNWGmcNStemNLoss [no-change]: *s*t*ō*l*a
@@ -36044,6 +36323,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*ó*r*k*a*z
 EAFFinalZDeletion: *s*t*ó*r*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*ó*r*k*a
 MonosyllabicFinalZLoss [no-change]: *s*t*ó*r*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*ó*r*k*a
 EAFRhotacism [no-change]: *s*t*ó*r*k*a
 PNWGmcMnDissimilation [no-change]: *s*t*ó*r*k*a
 PNWGmcNStemNLoss [no-change]: *s*t*ó*r*k*a
@@ -36173,6 +36453,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*ó*r*m*a*z
 EAFFinalZDeletion: *s*t*ó*r*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*ó*r*m*a
 MonosyllabicFinalZLoss [no-change]: *s*t*ó*r*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*ó*r*m*a
 EAFRhotacism [no-change]: *s*t*ó*r*m*a
 PNWGmcMnDissimilation [no-change]: *s*t*ó*r*m*a
 PNWGmcNStemNLoss [no-change]: *s*t*ó*r*m*a
@@ -36302,6 +36583,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*r*áu*m*a*z
 EAFFinalZDeletion: *s*t*r*áu*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*r*áu*m*a
 MonosyllabicFinalZLoss [no-change]: *s*t*r*áu*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*r*áu*m*a
 EAFRhotacism [no-change]: *s*t*r*áu*m*a
 PNWGmcMnDissimilation [no-change]: *s*t*r*áu*m*a
 PNWGmcNStemNLoss [no-change]: *s*t*r*áu*m*a
@@ -36431,6 +36713,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*r*á*k*k*i*j*a*n*ą
@@ -36560,6 +36843,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*r*á*w*w*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*r*á*w*w*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*t*r*á*w*w*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*r*á*w*w*j*a*n*ą
 EAFRhotacism [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*t*r*á*w*w*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*t*r*á*w*w*j*a*n*ą
@@ -36689,6 +36973,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*r*á*n*g*i*z
 EAFFinalZDeletion: *s*t*r*á*n*g*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*r*á*n*g*i
 MonosyllabicFinalZLoss [no-change]: *s*t*r*á*n*g*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*r*á*n*g*i
 EAFRhotacism [no-change]: *s*t*r*á*n*g*i
 PNWGmcMnDissimilation [no-change]: *s*t*r*á*n*g*i
 PNWGmcNStemNLoss [no-change]: *s*t*r*á*n*g*i
@@ -36818,6 +37103,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*ō*d*ą
 EAFFinalZDeletion [no-change]: *s*t*ō*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*ō*d*ą
 MonosyllabicFinalZLoss [no-change]: *s*t*ō*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*ō*d*ą
 EAFRhotacism [no-change]: *s*t*ō*d*ą
 PNWGmcMnDissimilation [no-change]: *s*t*ō*d*ą
 PNWGmcNStemNLoss [no-change]: *s*t*ō*d*ą
@@ -36947,6 +37233,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ú*m*a*r*a*z
 EAFFinalZDeletion: *s*ú*m*a*r*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ú*m*a*r*a
 MonosyllabicFinalZLoss [no-change]: *s*ú*m*a*r*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ú*m*a*r*a
 EAFRhotacism [no-change]: *s*ú*m*a*r*a
 PNWGmcMnDissimilation [no-change]: *s*ú*m*a*r*a
 PNWGmcNStemNLoss [no-change]: *s*ú*m*a*r*a
@@ -37076,6 +37363,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ú*n*n*ō*n
 EAFFinalZDeletion [no-change]: *s*ú*n*n*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ú*n*n*ō*n
 MonosyllabicFinalZLoss [no-change]: *s*ú*n*n*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ú*n*n*ō*n
 EAFRhotacism [no-change]: *s*ú*n*n*ō*n
 PNWGmcMnDissimilation [no-change]: *s*ú*n*n*ō*n
 PNWGmcNStemNLoss: *s*ú*n*n*ǭ
@@ -37205,6 +37493,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 EAFFinalZDeletion [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 EAFRhotacism [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ú*n*d*r*ō*j*a*n*ą
@@ -37334,6 +37623,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ū*p*a*n*ą
 EAFFinalZDeletion [no-change]: *s*ū*p*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ū*p*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*ū*p*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ū*p*a*n*ą
 EAFRhotacism [no-change]: *s*ū*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ū*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ū*p*a*n*ą
@@ -37463,6 +37753,7 @@ PNWGmcFinalLongORaising [no-change]: *s*w*á*l*w*ō*n
 EAFFinalZDeletion [no-change]: *s*w*á*l*w*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*w*á*l*w*ō*n
 MonosyllabicFinalZLoss [no-change]: *s*w*á*l*w*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*w*á*l*w*ō*n
 EAFRhotacism [no-change]: *s*w*á*l*w*ō*n
 PNWGmcMnDissimilation [no-change]: *s*w*á*l*w*ō*n
 PNWGmcNStemNLoss: *s*w*á*l*w*ǭ
@@ -37592,6 +37883,7 @@ PNWGmcFinalLongORaising [no-change]: *s*w*á*n*a*s
 EAFFinalZDeletion [no-change]: *s*w*á*n*a*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*w*á*n*a*s
 MonosyllabicFinalZLoss [no-change]: *s*w*á*n*a*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*w*á*n*a*s
 EAFRhotacism [no-change]: *s*w*á*n*a*s
 PNWGmcMnDissimilation [no-change]: *s*w*á*n*a*s
 PNWGmcNStemNLoss [no-change]: *s*w*á*n*a*s
@@ -37721,6 +38013,7 @@ PNWGmcFinalLongORaising [no-change]: *s*w*é*l*l*a*n*ą
 EAFFinalZDeletion [no-change]: *s*w*é*l*l*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*w*é*l*l*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*w*é*l*l*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*w*é*l*l*a*n*ą
 EAFRhotacism [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*w*é*l*l*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*w*é*l*l*a*n*ą
@@ -37850,6 +38143,7 @@ PNWGmcFinalLongORaising [no-change]: *s*w*í*m*m*a*n*ą
 EAFFinalZDeletion [no-change]: *s*w*í*m*m*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*w*í*m*m*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*w*í*m*m*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*w*í*m*m*a*n*ą
 EAFRhotacism [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*w*í*m*m*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*w*í*m*m*a*n*ą
@@ -37979,6 +38273,7 @@ PNWGmcFinalLongORaising [no-change]: *s*w*ḯ*n*ą
 EAFFinalZDeletion [no-change]: *s*w*ḯ*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*w*ḯ*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*w*ḯ*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*w*ḯ*n*ą
 EAFRhotacism [no-change]: *s*w*ḯ*n*ą
 PNWGmcMnDissimilation [no-change]: *s*w*ḯ*n*ą
 PNWGmcNStemNLoss [no-change]: *s*w*ḯ*n*ą
@@ -38108,6 +38403,7 @@ PNWGmcFinalLongORaising [no-change]: *s*w*é*r*d*ą
 EAFFinalZDeletion [no-change]: *s*w*é*r*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*w*é*r*d*ą
 MonosyllabicFinalZLoss [no-change]: *s*w*é*r*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*w*é*r*d*ą
 EAFRhotacism [no-change]: *s*w*é*r*d*ą
 PNWGmcMnDissimilation [no-change]: *s*w*é*r*d*ą
 PNWGmcNStemNLoss [no-change]: *s*w*é*r*d*ą
@@ -38237,6 +38533,7 @@ PNWGmcFinalLongORaising [no-change]: *t*áu*m*a*z
 EAFFinalZDeletion: *t*áu*m*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*áu*m*a
 MonosyllabicFinalZLoss [no-change]: *t*áu*m*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*áu*m*a
 EAFRhotacism [no-change]: *t*áu*m*a
 PNWGmcMnDissimilation [no-change]: *t*áu*m*a
 PNWGmcNStemNLoss [no-change]: *t*áu*m*a
@@ -38366,6 +38663,7 @@ PNWGmcFinalLongORaising [no-change]: *t*é*x*u*n
 EAFFinalZDeletion [no-change]: *t*é*x*u*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*é*x*u*n
 MonosyllabicFinalZLoss [no-change]: *t*é*x*u*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*é*x*u*n
 EAFRhotacism [no-change]: *t*é*x*u*n
 PNWGmcMnDissimilation [no-change]: *t*é*x*u*n
 PNWGmcNStemNLoss [no-change]: *t*é*x*u*n
@@ -38495,6 +38793,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*é*g*n*a*z
 EAFFinalZDeletion: *θ*é*g*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*é*g*n*a
 MonosyllabicFinalZLoss [no-change]: *θ*é*g*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*é*g*n*a
 EAFRhotacism [no-change]: *θ*é*g*n*a
 PNWGmcMnDissimilation [no-change]: *θ*é*g*n*a
 PNWGmcNStemNLoss [no-change]: *θ*é*g*n*a
@@ -38624,6 +38923,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*á*n*k*a*z
 EAFFinalZDeletion: *θ*á*n*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*á*n*k*a
 MonosyllabicFinalZLoss [no-change]: *θ*á*n*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*á*n*k*a
 EAFRhotacism [no-change]: *θ*á*n*k*a
 PNWGmcMnDissimilation [no-change]: *θ*á*n*k*a
 PNWGmcNStemNLoss [no-change]: *θ*á*n*k*a
@@ -38753,6 +39053,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*á*k*ą
 EAFFinalZDeletion [no-change]: *θ*á*k*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*á*k*ą
 MonosyllabicFinalZLoss [no-change]: *θ*á*k*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*á*k*ą
 EAFRhotacism [no-change]: *θ*á*k*ą
 PNWGmcMnDissimilation [no-change]: *θ*á*k*ą
 PNWGmcNStemNLoss [no-change]: *θ*á*k*ą
@@ -38882,6 +39183,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*éu*b*a*z
 EAFFinalZDeletion: *θ*éu*b*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*éu*b*a
 MonosyllabicFinalZLoss [no-change]: *θ*éu*b*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*éu*b*a
 EAFRhotacism [no-change]: *θ*éu*b*a
 PNWGmcMnDissimilation [no-change]: *θ*éu*b*a
 PNWGmcNStemNLoss [no-change]: *θ*éu*b*a
@@ -39011,6 +39313,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*í*n*g*ą
 EAFFinalZDeletion [no-change]: *θ*í*n*g*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*í*n*g*ą
 MonosyllabicFinalZLoss [no-change]: *θ*í*n*g*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*í*n*g*ą
 EAFRhotacism [no-change]: *θ*í*n*g*ą
 PNWGmcMnDissimilation [no-change]: *θ*í*n*g*ą
 PNWGmcNStemNLoss [no-change]: *θ*í*n*g*ą
@@ -39140,6 +39443,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*á*n*k*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *θ*á*n*k*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*á*n*k*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *θ*á*n*k*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*á*n*k*i*j*a*n*ą
 EAFRhotacism [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *θ*á*n*k*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *θ*á*n*k*i*j*a*n*ą
@@ -39269,6 +39573,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*ú*r*s*t*u*z
 EAFFinalZDeletion: *θ*ú*r*s*t*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*ú*r*s*t*u
 MonosyllabicFinalZLoss [no-change]: *θ*ú*r*s*t*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*ú*r*s*t*u
 EAFRhotacism [no-change]: *θ*ú*r*s*t*u
 PNWGmcMnDissimilation [no-change]: *θ*ú*r*s*t*u
 PNWGmcNStemNLoss [no-change]: *θ*ú*r*s*t*u
@@ -39398,6 +39703,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*é*s*t*i*l*a*s
 EAFFinalZDeletion [no-change]: *θ*é*s*t*i*l*a*s
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*é*s*t*i*l*a*s
 MonosyllabicFinalZLoss [no-change]: *θ*é*s*t*i*l*a*s
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*é*s*t*i*l*a*s
 EAFRhotacism [no-change]: *θ*é*s*t*i*l*a*s
 PNWGmcMnDissimilation [no-change]: *θ*é*s*t*i*l*a*s
 PNWGmcNStemNLoss [no-change]: *θ*é*s*t*i*l*a*s
@@ -39527,6 +39833,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*ó*r*n*a*z
 EAFFinalZDeletion: *θ*ó*r*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*ó*r*n*a
 MonosyllabicFinalZLoss [no-change]: *θ*ó*r*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*ó*r*n*a
 EAFRhotacism [no-change]: *θ*ó*r*n*a
 PNWGmcMnDissimilation [no-change]: *θ*ó*r*n*a
 PNWGmcNStemNLoss [no-change]: *θ*ó*r*n*a
@@ -39656,6 +39963,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*ū*s*è*n*d
 EAFFinalZDeletion [no-change]: *θ*ū*s*è*n*d
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*ū*s*è*n*d
 MonosyllabicFinalZLoss [no-change]: *θ*ū*s*è*n*d
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*ū*s*è*n*d
 EAFRhotacism [no-change]: *θ*ū*s*è*n*d
 PNWGmcMnDissimilation [no-change]: *θ*ū*s*è*n*d
 PNWGmcNStemNLoss [no-change]: *θ*ū*s*è*n*d
@@ -39785,6 +40093,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*r*é*s*k*a*n*ą
 EAFFinalZDeletion [no-change]: *θ*r*é*s*k*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*r*é*s*k*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *θ*r*é*s*k*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*r*é*s*k*a*n*ą
 EAFRhotacism [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *θ*r*é*s*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *θ*r*é*s*k*a*n*ą
@@ -39914,6 +40223,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*r*é*j*e*z
 EAFFinalZDeletion: *θ*r*é*j*e
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*r*é*j*e
 MonosyllabicFinalZLoss [no-change]: *θ*r*é*j*e
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*r*é*j*e
 EAFRhotacism [no-change]: *θ*r*é*j*e
 PNWGmcMnDissimilation [no-change]: *θ*r*é*j*e
 PNWGmcNStemNLoss [no-change]: *θ*r*é*j*e
@@ -40043,6 +40353,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*ú*n*r*a*z
 EAFFinalZDeletion: *θ*ú*n*r*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*ú*n*r*a
 MonosyllabicFinalZLoss [no-change]: *θ*ú*n*r*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*ú*n*r*a
 EAFRhotacism [no-change]: *θ*ú*n*r*a
 PNWGmcMnDissimilation [no-change]: *θ*ú*n*r*a
 PNWGmcNStemNLoss [no-change]: *θ*ú*n*r*a
@@ -40172,6 +40483,7 @@ PNWGmcFinalLongORaising [no-change]: *t*í*k*k*ô
 EAFFinalZDeletion [no-change]: *t*í*k*k*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*í*k*k*ô
 MonosyllabicFinalZLoss [no-change]: *t*í*k*k*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*í*k*k*ô
 EAFRhotacism [no-change]: *t*í*k*k*ô
 PNWGmcMnDissimilation [no-change]: *t*í*k*k*ô
 PNWGmcNStemNLoss [no-change]: *t*í*k*k*ô
@@ -40301,6 +40613,7 @@ PNWGmcFinalLongORaising [no-change]: *t*ḯ*d*i*z
 EAFFinalZDeletion: *t*ḯ*d*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*ḯ*d*i
 MonosyllabicFinalZLoss [no-change]: *t*ḯ*d*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*ḯ*d*i
 EAFRhotacism [no-change]: *t*ḯ*d*i
 PNWGmcMnDissimilation [no-change]: *t*ḯ*d*i
 PNWGmcNStemNLoss [no-change]: *t*ḯ*d*i
@@ -40430,6 +40743,7 @@ PNWGmcFinalLongORaising [no-change]: *t*í*m*b*r*ą
 EAFFinalZDeletion [no-change]: *t*í*m*b*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*í*m*b*r*ą
 MonosyllabicFinalZLoss [no-change]: *t*í*m*b*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*í*m*b*r*ą
 EAFRhotacism [no-change]: *t*í*m*b*r*ą
 PNWGmcMnDissimilation [no-change]: *t*í*m*b*r*ą
 PNWGmcNStemNLoss [no-change]: *t*í*m*b*r*ą
@@ -40559,6 +40873,7 @@ PNWGmcFinalLongORaising [no-change]: *t*ái*x*ō*n
 EAFFinalZDeletion [no-change]: *t*ái*x*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*ái*x*ō*n
 MonosyllabicFinalZLoss [no-change]: *t*ái*x*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*ái*x*ō*n
 EAFRhotacism [no-change]: *t*ái*x*ō*n
 PNWGmcMnDissimilation [no-change]: *t*ái*x*ō*n
 PNWGmcNStemNLoss: *t*ái*x*ǭ
@@ -40688,6 +41003,7 @@ PNWGmcFinalLongORaising [no-change]: *t*ái*k*n*ą
 EAFFinalZDeletion [no-change]: *t*ái*k*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*ái*k*n*ą
 MonosyllabicFinalZLoss [no-change]: *t*ái*k*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*ái*k*n*ą
 EAFRhotacism [no-change]: *t*ái*k*n*ą
 PNWGmcMnDissimilation [no-change]: *t*ái*k*n*ą
 PNWGmcNStemNLoss [no-change]: *t*ái*k*n*ą
@@ -40817,6 +41133,7 @@ PNWGmcFinalLongORaising: *t*á*n*g*u
 EAFFinalZDeletion [no-change]: *t*á*n*g*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*á*n*g*u
 MonosyllabicFinalZLoss [no-change]: *t*á*n*g*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*á*n*g*u
 EAFRhotacism [no-change]: *t*á*n*g*u
 PNWGmcMnDissimilation [no-change]: *t*á*n*g*u
 PNWGmcNStemNLoss [no-change]: *t*á*n*g*u
@@ -40946,6 +41263,7 @@ PNWGmcFinalLongORaising [no-change]: *t*ú*n*g*ō*n
 EAFFinalZDeletion [no-change]: *t*ú*n*g*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*ú*n*g*ō*n
 MonosyllabicFinalZLoss [no-change]: *t*ú*n*g*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*ú*n*g*ō*n
 EAFRhotacism [no-change]: *t*ú*n*g*ō*n
 PNWGmcMnDissimilation [no-change]: *t*ú*n*g*ō*n
 PNWGmcNStemNLoss: *t*ú*n*g*ǭ
@@ -41075,6 +41393,7 @@ PNWGmcFinalLongORaising [no-change]: *t*ū*n*ą
 EAFFinalZDeletion [no-change]: *t*ū*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*ū*n*ą
 MonosyllabicFinalZLoss [no-change]: *t*ū*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*ū*n*ą
 EAFRhotacism [no-change]: *t*ū*n*ą
 PNWGmcMnDissimilation [no-change]: *t*ū*n*ą
 PNWGmcNStemNLoss [no-change]: *t*ū*n*ą
@@ -41204,6 +41523,7 @@ PNWGmcFinalLongORaising [no-change]: *t*r*é*d*a*n*ą
 EAFFinalZDeletion [no-change]: *t*r*é*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*r*é*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *t*r*é*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*r*é*d*a*n*ą
 EAFRhotacism [no-change]: *t*r*é*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *t*r*é*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *t*r*é*d*a*n*ą
@@ -41333,6 +41653,7 @@ PNWGmcFinalLongORaising [no-change]: *t*r*ó*g*ą
 EAFFinalZDeletion [no-change]: *t*r*ó*g*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*r*ó*g*ą
 MonosyllabicFinalZLoss [no-change]: *t*r*ó*g*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*r*ó*g*ą
 EAFRhotacism [no-change]: *t*r*ó*g*ą
 PNWGmcMnDissimilation [no-change]: *t*r*ó*g*ą
 PNWGmcNStemNLoss [no-change]: *t*r*ó*g*ą
@@ -41462,6 +41783,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*d*a*n*ą
 EAFFinalZDeletion [no-change]: *w*á*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*á*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*d*a*n*ą
 EAFRhotacism [no-change]: *w*á*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*d*a*n*ą
@@ -41591,6 +41913,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*g*n*a*z
 EAFFinalZDeletion: *w*á*g*n*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*g*n*a
 MonosyllabicFinalZLoss [no-change]: *w*á*g*n*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*g*n*a
 EAFRhotacism [no-change]: *w*á*g*n*a
 PNWGmcMnDissimilation [no-change]: *w*á*g*n*a
 PNWGmcNStemNLoss [no-change]: *w*á*g*n*a
@@ -41720,6 +42043,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*k*a*n*ą
 EAFFinalZDeletion [no-change]: *w*á*k*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*k*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*á*k*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*k*a*n*ą
 EAFRhotacism [no-change]: *w*á*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*k*a*n*ą
@@ -41849,6 +42173,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*r*p*ą
 EAFFinalZDeletion [no-change]: *w*á*r*p*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*r*p*ą
 MonosyllabicFinalZLoss [no-change]: *w*á*r*p*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*r*p*ą
 EAFRhotacism [no-change]: *w*á*r*p*ą
 PNWGmcMnDissimilation [no-change]: *w*á*r*p*ą
 PNWGmcNStemNLoss [no-change]: *w*á*r*p*ą
@@ -41978,6 +42303,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*r*p*a*n*ą
 EAFFinalZDeletion [no-change]: *w*é*r*p*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*r*p*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*é*r*p*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*r*p*a*n*ą
 EAFRhotacism [no-change]: *w*é*r*p*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*é*r*p*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*é*r*p*a*n*ą
@@ -42107,6 +42433,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*r*t*ō*n
 EAFFinalZDeletion [no-change]: *w*á*r*t*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*r*t*ō*n
 MonosyllabicFinalZLoss [no-change]: *w*á*r*t*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*r*t*ō*n
 EAFRhotacism [no-change]: *w*á*r*t*ō*n
 PNWGmcMnDissimilation [no-change]: *w*á*r*t*ō*n
 PNWGmcNStemNLoss: *w*á*r*t*ǭ
@@ -42236,6 +42563,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*s*k*a*n*ą
 EAFFinalZDeletion [no-change]: *w*á*s*k*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*s*k*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*á*s*k*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*s*k*a*n*ą
 EAFRhotacism [no-change]: *w*á*s*k*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*s*k*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*s*k*a*n*ą
@@ -42365,6 +42693,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*b*s*a*z
 EAFFinalZDeletion: *w*á*b*s*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*b*s*a
 MonosyllabicFinalZLoss [no-change]: *w*á*b*s*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*b*s*a
 EAFRhotacism [no-change]: *w*á*b*s*a
 PNWGmcMnDissimilation [no-change]: *w*á*b*s*a
 PNWGmcNStemNLoss [no-change]: *w*á*b*s*a
@@ -42494,6 +42823,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*t*a*r
 EAFFinalZDeletion [no-change]: *w*á*t*a*r
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*t*a*r
 MonosyllabicFinalZLoss [no-change]: *w*á*t*a*r
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*t*a*r
 EAFRhotacism [no-change]: *w*á*t*a*r
 PNWGmcMnDissimilation [no-change]: *w*á*t*a*r
 PNWGmcNStemNLoss [no-change]: *w*á*t*a*r
@@ -42623,6 +42953,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*x*s*ą
 EAFFinalZDeletion [no-change]: *w*á*x*s*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*x*s*ą
 MonosyllabicFinalZLoss [no-change]: *w*á*x*s*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*x*s*ą
 EAFRhotacism [no-change]: *w*á*x*s*ą
 PNWGmcMnDissimilation [no-change]: *w*á*x*s*ą
 PNWGmcNStemNLoss [no-change]: *w*á*x*s*ą
@@ -42752,6 +43083,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*x*s*a*n*ą
 EAFFinalZDeletion [no-change]: *w*á*x*s*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*x*s*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*á*x*s*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*x*s*a*n*ą
 EAFRhotacism [no-change]: *w*á*x*s*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*x*s*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*x*s*a*n*ą
@@ -42881,6 +43213,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*g*a*z
 EAFFinalZDeletion: *w*é*g*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*g*a
 MonosyllabicFinalZLoss [no-change]: *w*é*g*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*g*a
 EAFRhotacism [no-change]: *w*é*g*a
 PNWGmcMnDissimilation [no-change]: *w*é*g*a
 PNWGmcNStemNLoss [no-change]: *w*é*g*a
@@ -43010,6 +43343,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ā*p*n*ą
 EAFFinalZDeletion [no-change]: *w*ā*p*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ā*p*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*ā*p*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ā*p*n*ą
 EAFRhotacism [no-change]: *w*ā*p*n*ą
 PNWGmcMnDissimilation [no-change]: *w*ā*p*n*ą
 PNWGmcNStemNLoss [no-change]: *w*ā*p*n*ą
@@ -43139,6 +43473,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*s*l*ō*n
 EAFFinalZDeletion [no-change]: *w*é*s*l*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*s*l*ō*n
 MonosyllabicFinalZLoss [no-change]: *w*é*s*l*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*s*l*ō*n
 EAFRhotacism [no-change]: *w*é*s*l*ō*n
 PNWGmcMnDissimilation [no-change]: *w*é*s*l*ō*n
 PNWGmcNStemNLoss: *w*é*s*l*ǭ
@@ -43268,6 +43603,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*d*r*ą
 EAFFinalZDeletion [no-change]: *w*é*d*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*d*r*ą
 MonosyllabicFinalZLoss [no-change]: *w*é*d*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*d*r*ą
 EAFRhotacism [no-change]: *w*é*d*r*ą
 PNWGmcMnDissimilation [no-change]: *w*é*d*r*ą
 PNWGmcNStemNLoss [no-change]: *w*é*d*r*ą
@@ -43397,6 +43733,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*b*a*n*ą
 EAFFinalZDeletion [no-change]: *w*é*b*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*b*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*é*b*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*b*a*n*ą
 EAFRhotacism [no-change]: *w*é*b*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*é*b*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*é*b*a*n*ą
@@ -43526,6 +43863,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*s*t*a*n*ē
 EAFFinalZDeletion [no-change]: *w*é*s*t*a*n*ē
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*s*t*a*n*ē
 MonosyllabicFinalZLoss [no-change]: *w*é*s*t*a*n*ē
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*s*t*a*n*ē
 EAFRhotacism [no-change]: *w*é*s*t*a*n*ē
 PNWGmcMnDissimilation [no-change]: *w*é*s*t*a*n*ē
 PNWGmcNStemNLoss [no-change]: *w*é*s*t*a*n*ē
@@ -43655,6 +43993,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*θ*r*u*z
 EAFFinalZDeletion: *w*é*θ*r*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*θ*r*u
 MonosyllabicFinalZLoss [no-change]: *w*é*θ*r*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*θ*r*u
 EAFRhotacism [no-change]: *w*é*θ*r*u
 PNWGmcMnDissimilation [no-change]: *w*é*θ*r*u
 PNWGmcNStemNLoss [no-change]: *w*é*θ*r*u
@@ -43784,6 +44123,7 @@ PNWGmcFinalLongORaising [no-change]: *x*w*á*l*a*z
 EAFFinalZDeletion: *x*w*á*l*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*w*á*l*a
 MonosyllabicFinalZLoss [no-change]: *x*w*á*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*w*á*l*a
 EAFRhotacism [no-change]: *x*w*á*l*a
 PNWGmcMnDissimilation [no-change]: *x*w*á*l*a
 PNWGmcNStemNLoss [no-change]: *x*w*á*l*a
@@ -43913,6 +44253,7 @@ PNWGmcFinalLongORaising: *x*w*ḯ*l*u
 EAFFinalZDeletion [no-change]: *x*w*ḯ*l*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*w*ḯ*l*u
 MonosyllabicFinalZLoss [no-change]: *x*w*ḯ*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*w*ḯ*l*u
 EAFRhotacism [no-change]: *x*w*ḯ*l*u
 PNWGmcMnDissimilation [no-change]: *x*w*ḯ*l*u
 PNWGmcNStemNLoss [no-change]: *x*w*ḯ*l*u
@@ -44042,6 +44383,7 @@ PNWGmcFinalLongORaising [no-change]: *x*w*ḯ*n*a*n*ą
 EAFFinalZDeletion [no-change]: *x*w*ḯ*n*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*w*ḯ*n*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *x*w*ḯ*n*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*w*ḯ*n*a*n*ą
 EAFRhotacism [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcMnDissimilation [no-change]: *x*w*ḯ*n*a*n*ą
 PNWGmcNStemNLoss [no-change]: *x*w*ḯ*n*a*n*ą
@@ -44171,6 +44513,7 @@ PNWGmcFinalLongORaising [no-change]: *x*ō*r*ō*n
 EAFFinalZDeletion [no-change]: *x*ō*r*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*ō*r*ō*n
 MonosyllabicFinalZLoss [no-change]: *x*ō*r*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*ō*r*ō*n
 EAFRhotacism [no-change]: *x*ō*r*ō*n
 PNWGmcMnDissimilation [no-change]: *x*ō*r*ō*n
 PNWGmcNStemNLoss: *x*ō*r*ǭ
@@ -44300,6 +44643,7 @@ PNWGmcFinalLongORaising [no-change]: *w*í*d*u*w*ō*n
 EAFFinalZDeletion [no-change]: *w*í*d*u*w*ō*n
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*í*d*u*w*ō*n
 MonosyllabicFinalZLoss [no-change]: *w*í*d*u*w*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*í*d*u*w*ō*n
 EAFRhotacism [no-change]: *w*í*d*u*w*ō*n
 PNWGmcMnDissimilation [no-change]: *w*í*d*u*w*ō*n
 PNWGmcNStemNLoss: *w*í*d*u*w*ǭ
@@ -44429,6 +44773,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*l*d*a*n*ą
 EAFFinalZDeletion [no-change]: *w*á*l*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*l*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*á*l*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*l*d*a*n*ą
 EAFRhotacism [no-change]: *w*á*l*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*á*l*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*á*l*d*a*n*ą
@@ -44558,6 +44903,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ḯ*b*ą
 EAFFinalZDeletion [no-change]: *w*ḯ*b*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ḯ*b*ą
 MonosyllabicFinalZLoss [no-change]: *w*ḯ*b*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ḯ*b*ą
 EAFRhotacism [no-change]: *w*ḯ*b*ą
 PNWGmcMnDissimilation [no-change]: *w*ḯ*b*ą
 PNWGmcNStemNLoss [no-change]: *w*ḯ*b*ą
@@ -44687,6 +45033,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*x*t*i*z
 EAFFinalZDeletion: *w*é*x*t*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*x*t*i
 MonosyllabicFinalZLoss [no-change]: *w*é*x*t*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*x*t*i
 EAFRhotacism [no-change]: *w*é*x*t*i
 PNWGmcMnDissimilation [no-change]: *w*é*x*t*i
 PNWGmcNStemNLoss [no-change]: *w*é*x*t*i
@@ -44816,6 +45163,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*l*l*j*a*n*ą
 EAFFinalZDeletion [no-change]: *w*é*l*l*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*l*l*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*é*l*l*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*l*l*j*a*n*ą
 EAFRhotacism [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*é*l*l*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*é*l*l*j*a*n*ą
@@ -44945,6 +45293,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*l*l*j*ô
 EAFFinalZDeletion [no-change]: *w*é*l*l*j*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*l*l*j*ô
 MonosyllabicFinalZLoss [no-change]: *w*é*l*l*j*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*l*l*j*ô
 EAFRhotacism [no-change]: *w*é*l*l*j*ô
 PNWGmcMnDissimilation [no-change]: *w*é*l*l*j*ô
 PNWGmcNStemNLoss [no-change]: *w*é*l*l*j*ô
@@ -45074,6 +45423,7 @@ PNWGmcFinalLongORaising [no-change]: *w*í*n*d*a*n*ą
 EAFFinalZDeletion [no-change]: *w*í*n*d*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*í*n*d*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*í*n*d*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*í*n*d*a*n*ą
 EAFRhotacism [no-change]: *w*í*n*d*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*í*n*d*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*í*n*d*a*n*ą
@@ -45203,6 +45553,7 @@ PNWGmcFinalLongORaising [no-change]: *w*í*n*t*r*u*z
 EAFFinalZDeletion: *w*í*n*t*r*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*í*n*t*r*u
 MonosyllabicFinalZLoss [no-change]: *w*í*n*t*r*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*í*n*t*r*u
 EAFRhotacism [no-change]: *w*í*n*t*r*u
 PNWGmcMnDissimilation [no-change]: *w*í*n*t*r*u
 PNWGmcNStemNLoss [no-change]: *w*í*n*t*r*u
@@ -45332,6 +45683,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ḯ*θ*a*g*ą
 EAFFinalZDeletion [no-change]: *w*ḯ*θ*a*g*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ḯ*θ*a*g*ą
 MonosyllabicFinalZLoss [no-change]: *w*ḯ*θ*a*g*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ḯ*θ*a*g*ą
 EAFRhotacism [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcMnDissimilation [no-change]: *w*ḯ*θ*a*g*ą
 PNWGmcNStemNLoss [no-change]: *w*ḯ*θ*a*g*ą
@@ -45461,6 +45813,7 @@ PNWGmcFinalLongORaising [no-change]: *w*á*l*d*u*z
 EAFFinalZDeletion: *w*á*l*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*á*l*d*u
 MonosyllabicFinalZLoss [no-change]: *w*á*l*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*á*l*d*u
 EAFRhotacism [no-change]: *w*á*l*d*u
 PNWGmcMnDissimilation [no-change]: *w*á*l*d*u
 PNWGmcNStemNLoss [no-change]: *w*á*l*d*u
@@ -45590,6 +45943,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ú*n*d*r*ą
 EAFFinalZDeletion [no-change]: *w*ú*n*d*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ú*n*d*r*ą
 MonosyllabicFinalZLoss [no-change]: *w*ú*n*d*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ú*n*d*r*ą
 EAFRhotacism [no-change]: *w*ú*n*d*r*ą
 PNWGmcMnDissimilation [no-change]: *w*ú*n*d*r*ą
 PNWGmcNStemNLoss [no-change]: *w*ú*n*d*r*ą
@@ -45719,6 +46073,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ó*r*d*ą
 EAFFinalZDeletion [no-change]: *w*ó*r*d*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ó*r*d*ą
 MonosyllabicFinalZLoss [no-change]: *w*ó*r*d*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ó*r*d*ą
 EAFRhotacism [no-change]: *w*ó*r*d*ą
 PNWGmcMnDissimilation [no-change]: *w*ó*r*d*ą
 PNWGmcNStemNLoss [no-change]: *w*ó*r*d*ą
@@ -45848,6 +46203,7 @@ PNWGmcFinalLongORaising [no-change]: *w*é*r*à*l*d*u
 EAFFinalZDeletion [no-change]: *w*é*r*à*l*d*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*é*r*à*l*d*u
 MonosyllabicFinalZLoss [no-change]: *w*é*r*à*l*d*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*é*r*à*l*d*u
 EAFRhotacism [no-change]: *w*é*r*à*l*d*u
 PNWGmcMnDissimilation [no-change]: *w*é*r*à*l*d*u
 PNWGmcNStemNLoss [no-change]: *w*é*r*à*l*d*u
@@ -45977,6 +46333,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ú*r*m*i*z
 EAFFinalZDeletion: *w*ú*r*m*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ú*r*m*i
 MonosyllabicFinalZLoss [no-change]: *w*ú*r*m*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ú*r*m*i
 EAFRhotacism [no-change]: *w*ú*r*m*i
 PNWGmcMnDissimilation [no-change]: *w*ú*r*m*i
 PNWGmcNStemNLoss [no-change]: *w*ú*r*m*i
@@ -46106,6 +46463,7 @@ PNWGmcFinalLongORaising [no-change]: *w*r*í*n*g*a*n*ą
 EAFFinalZDeletion [no-change]: *w*r*í*n*g*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*r*í*n*g*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *w*r*í*n*g*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*r*í*n*g*a*n*ą
 EAFRhotacism [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcMnDissimilation [no-change]: *w*r*í*n*g*a*n*ą
 PNWGmcNStemNLoss [no-change]: *w*r*í*n*g*a*n*ą
@@ -46235,6 +46593,7 @@ PNWGmcFinalLongORaising [no-change]: *g*á*r*n*ą
 EAFFinalZDeletion [no-change]: *g*á*r*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *g*á*r*n*ą
 MonosyllabicFinalZLoss [no-change]: *g*á*r*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *g*á*r*n*ą
 EAFRhotacism [no-change]: *g*á*r*n*ą
 PNWGmcMnDissimilation [no-change]: *g*á*r*n*ą
 PNWGmcNStemNLoss [no-change]: *g*á*r*n*ą
@@ -46364,6 +46723,7 @@ PNWGmcFinalLongORaising [no-change]: *j*ā*r*ą
 EAFFinalZDeletion [no-change]: *j*ā*r*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *j*ā*r*ą
 MonosyllabicFinalZLoss [no-change]: *j*ā*r*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *j*ā*r*ą
 EAFRhotacism [no-change]: *j*ā*r*ą
 PNWGmcMnDissimilation [no-change]: *j*ā*r*ą
 PNWGmcNStemNLoss [no-change]: *j*ā*r*ą
@@ -46493,6 +46853,7 @@ PNWGmcFinalLongORaising [no-change]: *j*ó*k*ą
 EAFFinalZDeletion [no-change]: *j*ó*k*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *j*ó*k*ą
 MonosyllabicFinalZLoss [no-change]: *j*ó*k*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *j*ó*k*ą
 EAFRhotacism [no-change]: *j*ó*k*ą
 PNWGmcMnDissimilation [no-change]: *j*ó*k*ą
 PNWGmcNStemNLoss [no-change]: *j*ó*k*ą
@@ -46622,6 +46983,7 @@ PNWGmcFinalLongORaising [no-change]: *j*ú*g*u*n*θ
 EAFFinalZDeletion [no-change]: *j*ú*g*u*n*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *j*ú*g*u*n*θ
 MonosyllabicFinalZLoss [no-change]: *j*ú*g*u*n*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *j*ú*g*u*n*θ
 EAFRhotacism [no-change]: *j*ú*g*u*n*θ
 PNWGmcMnDissimilation [no-change]: *j*ú*g*u*n*θ
 PNWGmcNStemNLoss [no-change]: *j*ú*g*u*n*θ
@@ -46751,6 +47113,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*k*ô
 EAFFinalZDeletion [no-change]: *m*á*k*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*k*ô
 MonosyllabicFinalZLoss [no-change]: *m*á*k*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*k*ô
 EAFRhotacism [no-change]: *m*á*k*ô
 PNWGmcMnDissimilation [no-change]: *m*á*k*ô
 PNWGmcNStemNLoss [no-change]: *m*á*k*ô
@@ -46880,6 +47243,7 @@ PNWGmcFinalLongORaising [no-change]: *m*á*k*ō*θ
 EAFFinalZDeletion [no-change]: *m*á*k*ō*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*k*ō*θ
 MonosyllabicFinalZLoss [no-change]: *m*á*k*ō*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*k*ō*θ
 EAFRhotacism [no-change]: *m*á*k*ō*θ
 PNWGmcMnDissimilation [no-change]: *m*á*k*ō*θ
 PNWGmcNStemNLoss [no-change]: *m*á*k*ō*θ
@@ -47009,6 +47373,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ó*r*ô
 EAFFinalZDeletion [no-change]: *b*ó*r*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ó*r*ô
 MonosyllabicFinalZLoss [no-change]: *b*ó*r*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ó*r*ô
 EAFRhotacism [no-change]: *b*ó*r*ô
 PNWGmcMnDissimilation [no-change]: *b*ó*r*ô
 PNWGmcNStemNLoss [no-change]: *b*ó*r*ô
@@ -47138,6 +47503,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ó*r*ō*θ
 EAFFinalZDeletion [no-change]: *b*ó*r*ō*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ó*r*ō*θ
 MonosyllabicFinalZLoss [no-change]: *b*ó*r*ō*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ó*r*ō*θ
 EAFRhotacism [no-change]: *b*ó*r*ō*θ
 PNWGmcMnDissimilation [no-change]: *b*ó*r*ō*θ
 PNWGmcNStemNLoss [no-change]: *b*ó*r*ō*θ
@@ -47267,6 +47633,7 @@ PNWGmcFinalLongORaising [no-change]: *l*é*z*n*ô
 EAFFinalZDeletion [no-change]: *l*é*z*n*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*é*z*n*ô
 MonosyllabicFinalZLoss [no-change]: *l*é*z*n*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*é*z*n*ô
 EAFRhotacism: *l*é*r*n*ô
 PNWGmcMnDissimilation [no-change]: *l*é*r*n*ô
 PNWGmcNStemNLoss [no-change]: *l*é*r*n*ô
@@ -47396,6 +47763,7 @@ PNWGmcFinalLongORaising [no-change]: *l*é*z*n*ō*θ
 EAFFinalZDeletion [no-change]: *l*é*z*n*ō*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*é*z*n*ō*θ
 MonosyllabicFinalZLoss [no-change]: *l*é*z*n*ō*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*é*z*n*ō*θ
 EAFRhotacism: *l*é*r*n*ō*θ
 PNWGmcMnDissimilation [no-change]: *l*é*r*n*ō*θ
 PNWGmcNStemNLoss [no-change]: *l*é*r*n*ō*θ
@@ -47525,6 +47893,7 @@ PNWGmcFinalLongORaising [no-change]: *l*í*k*k*ô
 EAFFinalZDeletion [no-change]: *l*í*k*k*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*í*k*k*ô
 MonosyllabicFinalZLoss [no-change]: *l*í*k*k*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*í*k*k*ô
 EAFRhotacism [no-change]: *l*í*k*k*ô
 PNWGmcMnDissimilation [no-change]: *l*í*k*k*ô
 PNWGmcNStemNLoss [no-change]: *l*í*k*k*ô
@@ -47654,6 +48023,7 @@ PNWGmcFinalLongORaising [no-change]: *l*í*k*k*ō*θ
 EAFFinalZDeletion [no-change]: *l*í*k*k*ō*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*í*k*k*ō*θ
 MonosyllabicFinalZLoss [no-change]: *l*í*k*k*ō*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*í*k*k*ō*θ
 EAFRhotacism [no-change]: *l*í*k*k*ō*θ
 PNWGmcMnDissimilation [no-change]: *l*í*k*k*ō*θ
 PNWGmcNStemNLoss [no-change]: *l*í*k*k*ō*θ
@@ -47783,6 +48153,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*á*w*ô
 EAFFinalZDeletion [no-change]: *s*k*á*w*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*á*w*ô
 MonosyllabicFinalZLoss [no-change]: *s*k*á*w*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*á*w*ô
 EAFRhotacism [no-change]: *s*k*á*w*ô
 PNWGmcMnDissimilation [no-change]: *s*k*á*w*ô
 PNWGmcNStemNLoss [no-change]: *s*k*á*w*ô
@@ -47912,6 +48283,7 @@ PNWGmcFinalLongORaising [no-change]: *s*k*á*w*ō*θ
 EAFFinalZDeletion [no-change]: *s*k*á*w*ō*θ
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*á*w*ō*θ
 MonosyllabicFinalZLoss [no-change]: *s*k*á*w*ō*θ
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*á*w*ō*θ
 EAFRhotacism [no-change]: *s*k*á*w*ō*θ
 PNWGmcMnDissimilation [no-change]: *s*k*á*w*ō*θ
 PNWGmcNStemNLoss [no-change]: *s*k*á*w*ō*θ
@@ -48041,6 +48413,7 @@ PNWGmcFinalLongORaising [no-change]: *x*w*á*z
 EAFFinalZDeletion [no-change]: *x*w*á*z
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*w*á*z
 MonosyllabicFinalZLoss: *x*w*ā
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*w*ā
 EAFRhotacism [no-change]: *x*w*ā
 PNWGmcMnDissimilation [no-change]: *x*w*ā
 PNWGmcNStemNLoss [no-change]: *x*w*ā
@@ -48170,6 +48543,7 @@ PNWGmcFinalLongORaising [no-change]: *íu*w*i*z
 EAFFinalZDeletion: *íu*w*i
 PWGmcUnstressedWordFinalIApocope: *íu*w
 MonosyllabicFinalZLoss [no-change]: *íu*w
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *íu*w
 EAFRhotacism [no-change]: *íu*w
 PNWGmcMnDissimilation [no-change]: *íu*w
 PNWGmcNStemNLoss [no-change]: *íu*w
@@ -48299,6 +48673,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ú*n*d*ō*d*ē
 EAFFinalZDeletion [no-change]: *w*ú*n*d*ō*d*ē
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ú*n*d*ō*d*ē
 MonosyllabicFinalZLoss [no-change]: *w*ú*n*d*ō*d*ē
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ú*n*d*ō*d*ē
 EAFRhotacism [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcMnDissimilation [no-change]: *w*ú*n*d*ō*d*ē
 PNWGmcNStemNLoss [no-change]: *w*ú*n*d*ō*d*ē
@@ -48428,6 +48803,7 @@ PNWGmcFinalLongORaising [no-change]: *s*ā*a*n*ą
 EAFFinalZDeletion [no-change]: *s*ā*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*ā*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *s*ā*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*ā*a*n*ą
 EAFRhotacism [no-change]: *s*ā*a*n*ą
 PNWGmcMnDissimilation [no-change]: *s*ā*a*n*ą
 PNWGmcNStemNLoss [no-change]: *s*ā*a*n*ą
@@ -48557,6 +48933,7 @@ PNWGmcFinalLongORaising [no-change]: *l*ā*w*i*j*a*n*ą
 EAFFinalZDeletion [no-change]: *l*ā*w*i*j*a*n*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *l*ā*w*i*j*a*n*ą
 MonosyllabicFinalZLoss [no-change]: *l*ā*w*i*j*a*n*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ā*w*i*j*a*n*ą
 EAFRhotacism [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcMnDissimilation [no-change]: *l*ā*w*i*j*a*n*ą
 PNWGmcNStemNLoss [no-change]: *l*ā*w*i*j*a*n*ą
@@ -48686,6 +49063,7 @@ PNWGmcFinalLongORaising [no-change]: *θ*ã*x*t*ē
 EAFFinalZDeletion [no-change]: *θ*ã*x*t*ē
 PWGmcUnstressedWordFinalIApocope [no-change]: *θ*ã*x*t*ē
 MonosyllabicFinalZLoss [no-change]: *θ*ã*x*t*ē
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *θ*ã*x*t*ē
 EAFRhotacism [no-change]: *θ*ã*x*t*ē
 PNWGmcMnDissimilation [no-change]: *θ*ã*x*t*ē
 PNWGmcNStemNLoss [no-change]: *θ*ã*x*t*ē
@@ -48815,6 +49193,7 @@ PNWGmcFinalLongORaising [no-change]: *x*í*w*w*j*ą
 EAFFinalZDeletion [no-change]: *x*í*w*w*j*ą
 PWGmcUnstressedWordFinalIApocope [no-change]: *x*í*w*w*j*ą
 MonosyllabicFinalZLoss [no-change]: *x*í*w*w*j*ą
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*í*w*w*j*ą
 EAFRhotacism [no-change]: *x*í*w*w*j*ą
 PNWGmcMnDissimilation [no-change]: *x*í*w*w*j*ą
 PNWGmcNStemNLoss [no-change]: *x*í*w*w*j*ą
@@ -48907,6 +49286,266 @@ OEWsPalatalGlide [no-change]: h*īe*w
 OldEnglishRemoveStars: hīew
 OldEnglishSurface [no-change]: hīew
 
+--- there ---
+PROTO: *θár
+INPUT_CONTEXT: SC098; stress=stressed; finality=final
+EXPECTED: þǣr
+OUTPUTS: þǣr
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *θ*á*r
+PGmcGmSimplification [no-change]: *θ*á*r
+PGmcNasalLossBeforeX [no-change]: *θ*á*r
+RootNounNomZLoss [no-change]: *θ*á*r
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *θ*á*r
+PNWGmcAToUBeforeM [no-change]: *θ*á*r
+PNWGmcLongELowering [no-change]: *θ*á*r
+PWGmcEarlyIApocope [no-change]: *θ*á*r
+PWGmcFinalOrLowering [no-change]: *θ*á*r
+PWGmcCoronalWAssimilation [no-change]: *θ*á*r
+OEWWSimplification [no-change]: *θ*á*r
+PWGmcIjContraction [no-change]: *θ*á*r
+PWGmcJGemination [no-change]: *θ*á*r
+PWGmcSyllabicJ [no-change]: *θ*á*r
+PNWGmcPreconsonantalXLoss [no-change]: *θ*á*r
+EAFLThVoicing [no-change]: *θ*á*r
+PWGmcDentalHardening [no-change]: *θ*á*r
+PWGmcEndinglessAw [no-change]: *θ*á*r
+PNWGmcILowering [no-change]: *θ*á*r
+PNWGmcULowering [no-change]: *θ*á*r
+PNWGmcStressedMonosyllableORaising [no-change]: *θ*á*r
+PNWGmcFinalLongORaising [no-change]: *θ*á*r
+EAFFinalZDeletion [no-change]: *θ*á*r
+PWGmcUnstressedWordFinalIApocope [no-change]: *θ*á*r
+MonosyllabicFinalZLoss [no-change]: *θ*á*r
+PNWGmcMonosyllabicFinalRLengthening: *θ*ā*r
+EAFRhotacism [no-change]: *θ*ā*r
+PNWGmcMnDissimilation [no-change]: *θ*ā*r
+PNWGmcNStemNLoss [no-change]: *θ*ā*r
+EAFNasalSpirantLengthening [no-change]: *θ*ā*r
+EAFNasalSpirantLoss [no-change]: *θ*ā*r
+EAFHiatusWInsertion [no-change]: *θ*ā*r
+EAFLongANasalRounding [no-change]: *θ*ā*r
+EAFNasalizedLowRounding [no-change]: *θ*ā*r
+EAFLongAFronting: *θ*ǣ*r
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *θ*ǣ*r
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *θ*ǣ*r
+OEAuBrightening [no-change]: *θ*ǣ*r
+OEEwLongDiphthong [no-change]: *θ*ǣ*r
+OEJWWSimplification [no-change]: *θ*ǣ*r
+OEJGlideIO [no-change]: *θ*ǣ*r
+OEDiphthongLeveling [no-change]: *θ*ǣ*r
+OEAwLongDiphthong [no-change]: *θ*ǣ*r
+OEPrefixAReduction [no-change]: *θ*ǣ*r
+OEInterStressRaising [no-change]: *θ*ǣ*r
+OECompoundLinkingSyncope [no-change]: *θ*ǣ*r
+OEStripSecondaryStress [no-change]: *θ*ǣ*r
+OEWICombinativeUUmlaut [no-change]: *θ*ǣ*r
+PWGmcFinalBareALoss [no-change]: *θ*ǣ*r
+PWGmcSurvivingBimoricOUnrounding [no-change]: *θ*ǣ*r
+EAFBrighteningUnstressed [no-change]: *θ*ǣ*r
+EAFBrightening [no-change]: *θ*ǣ*r
+EAFBrighteningLongFinal [no-change]: *θ*ǣ*r
+OEBreaking [no-change]: *θ*ǣ*r
+OEVelarFricativePalatalization [no-change]: *θ*ǣ*r
+OEARestoration [no-change]: *θ*ǣ*r
+OEHeavySyllableNasalApocope [no-change]: *θ*ǣ*r
+OESecondaryNasalization [no-change]: *θ*ǣ*r
+PGmcBAllophony [no-change]: *θ*ǣ*r
+SieversLawSyncope [no-change]: *θ*ǣ*r
+OESkPalatalization [no-change]: *θ*ǣ*r
+OEVelarPalatalization [no-change]: *θ*ǣ*r
+OEPostVelarWLoss [no-change]: *θ*ǣ*r
+OEWLossBeforeI [no-change]: *θ*ǣ*r
+OEWsPalatalDiphthongization [no-change]: *θ*ǣ*r
+OEIUmlaut [no-change]: *θ*ǣ*r
+OELatePalatalDiphthong [no-change]: *θ*ǣ*r
+OEJClusterCoalescence [no-change]: *θ*ǣ*r
+OEBackMutation [no-change]: *θ*ǣ*r
+OEWsPalatalUmlaut [no-change]: *θ*ǣ*r
+OEWeakTailNasalLoss [no-change]: *θ*ǣ*r
+OEWeightMarkers [no-change]: *θ*ǣ*r
+OEHighVowelApocope [no-change]: *θ*ǣ*r
+NWGmcInStemNLoss [no-change]: *θ*ǣ*r
+OEMedialSyncope [no-change]: *θ*ǣ*r
+OELAdjacentSyncope [no-change]: *θ*ǣ*r
+OEDentalAssimilation [no-change]: *θ*ǣ*r
+OEPreconsonantalDegemination [no-change]: *θ*ǣ*r
+OEEarlyOShortening [no-change]: *θ*ǣ*r
+OEUnstressedFrontingEarly [no-change]: *θ*ǣ*r
+OELateOShortening [no-change]: *θ*ǣ*r
+OEMedUnstressedORaising [no-change]: *θ*ǣ*r
+OEFinalUnstressedOLowering [no-change]: *θ*ǣ*r
+OEUnstressedLongVowelShortening [no-change]: *θ*ǣ*r
+OEUnstressedAEMerger [no-change]: *θ*ǣ*r
+OEMedUnstressedILowering1 [no-change]: *θ*ǣ*r
+OEMedUnstressedILowering [no-change]: *θ*ǣ*r
+OEMedUnstressedULowering [no-change]: *θ*ǣ*r
+OEPrefixIReduction [no-change]: *θ*ǣ*r
+OEWeakTailReduction [no-change]: *θ*ǣ*r
+OEJLossAfterHeavy [no-change]: *θ*ǣ*r
+OEFinalGeminateSimplification [no-change]: *θ*ǣ*r
+OEJStrengtheningAfterFrontDiphthong [no-change]: *θ*ǣ*r
+OEIntervocalicJVocalization [no-change]: *θ*ǣ*r
+OEUnstressedEIContraction [no-change]: *θ*ǣ*r
+OEWeightCleanup [no-change]: *θ*ǣ*r
+OEHLoss [no-change]: *θ*ǣ*r
+OEContraction [no-change]: *θ*ǣ*r
+OERMetathesis [no-change]: *θ*ǣ*r
+OEEpentheticVowel [no-change]: *θ*ǣ*r
+OELateUnstressedAgSuffix [no-change]: *θ*ǣ*r
+OEPalatalFricativeMerger [no-change]: *θ*ǣ*r
+OECjCleanup [no-change]: *θ*ǣ*r
+OEXsMerge [no-change]: *θ*ǣ*r
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography: þ*ǣ*r
+OEWsPalatalGlide [no-change]: þ*ǣ*r
+OldEnglishRemoveStars: þǣr
+OldEnglishSurface [no-change]: þǣr
+
+--- where ---
+PROTO: *xwár
+INPUT_CONTEXT: SC098; stress=stressed; finality=final
+EXPECTED: hwǣr
+OUTPUTS: hwǣr
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *x*w*á*r
+PGmcGmSimplification [no-change]: *x*w*á*r
+PGmcNasalLossBeforeX [no-change]: *x*w*á*r
+RootNounNomZLoss [no-change]: *x*w*á*r
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *x*w*á*r
+PNWGmcAToUBeforeM [no-change]: *x*w*á*r
+PNWGmcLongELowering [no-change]: *x*w*á*r
+PWGmcEarlyIApocope [no-change]: *x*w*á*r
+PWGmcFinalOrLowering [no-change]: *x*w*á*r
+PWGmcCoronalWAssimilation [no-change]: *x*w*á*r
+OEWWSimplification [no-change]: *x*w*á*r
+PWGmcIjContraction [no-change]: *x*w*á*r
+PWGmcJGemination [no-change]: *x*w*á*r
+PWGmcSyllabicJ [no-change]: *x*w*á*r
+PNWGmcPreconsonantalXLoss [no-change]: *x*w*á*r
+EAFLThVoicing [no-change]: *x*w*á*r
+PWGmcDentalHardening [no-change]: *x*w*á*r
+PWGmcEndinglessAw [no-change]: *x*w*á*r
+PNWGmcILowering [no-change]: *x*w*á*r
+PNWGmcULowering [no-change]: *x*w*á*r
+PNWGmcStressedMonosyllableORaising [no-change]: *x*w*á*r
+PNWGmcFinalLongORaising [no-change]: *x*w*á*r
+EAFFinalZDeletion [no-change]: *x*w*á*r
+PWGmcUnstressedWordFinalIApocope [no-change]: *x*w*á*r
+MonosyllabicFinalZLoss [no-change]: *x*w*á*r
+PNWGmcMonosyllabicFinalRLengthening: *x*w*ā*r
+EAFRhotacism [no-change]: *x*w*ā*r
+PNWGmcMnDissimilation [no-change]: *x*w*ā*r
+PNWGmcNStemNLoss [no-change]: *x*w*ā*r
+EAFNasalSpirantLengthening [no-change]: *x*w*ā*r
+EAFNasalSpirantLoss [no-change]: *x*w*ā*r
+EAFHiatusWInsertion [no-change]: *x*w*ā*r
+EAFLongANasalRounding [no-change]: *x*w*ā*r
+EAFNasalizedLowRounding [no-change]: *x*w*ā*r
+EAFLongAFronting: *x*w*ǣ*r
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *x*w*ǣ*r
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *x*w*ǣ*r
+OEAuBrightening [no-change]: *x*w*ǣ*r
+OEEwLongDiphthong [no-change]: *x*w*ǣ*r
+OEJWWSimplification [no-change]: *x*w*ǣ*r
+OEJGlideIO [no-change]: *x*w*ǣ*r
+OEDiphthongLeveling [no-change]: *x*w*ǣ*r
+OEAwLongDiphthong [no-change]: *x*w*ǣ*r
+OEPrefixAReduction [no-change]: *x*w*ǣ*r
+OEInterStressRaising [no-change]: *x*w*ǣ*r
+OECompoundLinkingSyncope [no-change]: *x*w*ǣ*r
+OEStripSecondaryStress [no-change]: *x*w*ǣ*r
+OEWICombinativeUUmlaut [no-change]: *x*w*ǣ*r
+PWGmcFinalBareALoss [no-change]: *x*w*ǣ*r
+PWGmcSurvivingBimoricOUnrounding [no-change]: *x*w*ǣ*r
+EAFBrighteningUnstressed [no-change]: *x*w*ǣ*r
+EAFBrightening [no-change]: *x*w*ǣ*r
+EAFBrighteningLongFinal [no-change]: *x*w*ǣ*r
+OEBreaking [no-change]: *x*w*ǣ*r
+OEVelarFricativePalatalization [no-change]: *x*w*ǣ*r
+OEARestoration [no-change]: *x*w*ǣ*r
+OEHeavySyllableNasalApocope [no-change]: *x*w*ǣ*r
+OESecondaryNasalization [no-change]: *x*w*ǣ*r
+PGmcBAllophony [no-change]: *x*w*ǣ*r
+SieversLawSyncope [no-change]: *x*w*ǣ*r
+OESkPalatalization [no-change]: *x*w*ǣ*r
+OEVelarPalatalization [no-change]: *x*w*ǣ*r
+OEPostVelarWLoss [no-change]: *x*w*ǣ*r
+OEWLossBeforeI [no-change]: *x*w*ǣ*r
+OEWsPalatalDiphthongization [no-change]: *x*w*ǣ*r
+OEIUmlaut [no-change]: *x*w*ǣ*r
+OELatePalatalDiphthong [no-change]: *x*w*ǣ*r
+OEJClusterCoalescence [no-change]: *x*w*ǣ*r
+OEBackMutation [no-change]: *x*w*ǣ*r
+OEWsPalatalUmlaut [no-change]: *x*w*ǣ*r
+OEWeakTailNasalLoss [no-change]: *x*w*ǣ*r
+OEWeightMarkers [no-change]: *x*w*ǣ*r
+OEHighVowelApocope [no-change]: *x*w*ǣ*r
+NWGmcInStemNLoss [no-change]: *x*w*ǣ*r
+OEMedialSyncope [no-change]: *x*w*ǣ*r
+OELAdjacentSyncope [no-change]: *x*w*ǣ*r
+OEDentalAssimilation [no-change]: *x*w*ǣ*r
+OEPreconsonantalDegemination [no-change]: *x*w*ǣ*r
+OEEarlyOShortening [no-change]: *x*w*ǣ*r
+OEUnstressedFrontingEarly [no-change]: *x*w*ǣ*r
+OELateOShortening [no-change]: *x*w*ǣ*r
+OEMedUnstressedORaising [no-change]: *x*w*ǣ*r
+OEFinalUnstressedOLowering [no-change]: *x*w*ǣ*r
+OEUnstressedLongVowelShortening [no-change]: *x*w*ǣ*r
+OEUnstressedAEMerger [no-change]: *x*w*ǣ*r
+OEMedUnstressedILowering1 [no-change]: *x*w*ǣ*r
+OEMedUnstressedILowering [no-change]: *x*w*ǣ*r
+OEMedUnstressedULowering [no-change]: *x*w*ǣ*r
+OEPrefixIReduction [no-change]: *x*w*ǣ*r
+OEWeakTailReduction [no-change]: *x*w*ǣ*r
+OEJLossAfterHeavy [no-change]: *x*w*ǣ*r
+OEFinalGeminateSimplification [no-change]: *x*w*ǣ*r
+OEJStrengtheningAfterFrontDiphthong [no-change]: *x*w*ǣ*r
+OEIntervocalicJVocalization [no-change]: *x*w*ǣ*r
+OEUnstressedEIContraction [no-change]: *x*w*ǣ*r
+OEWeightCleanup [no-change]: *x*w*ǣ*r
+OEHLoss [no-change]: *x*w*ǣ*r
+OEContraction [no-change]: *x*w*ǣ*r
+OERMetathesis [no-change]: *x*w*ǣ*r
+OEEpentheticVowel [no-change]: *x*w*ǣ*r
+OELateUnstressedAgSuffix [no-change]: *x*w*ǣ*r
+OEPalatalFricativeMerger [no-change]: *x*w*ǣ*r
+OECjCleanup [no-change]: *x*w*ǣ*r
+OEXsMerge [no-change]: *x*w*ǣ*r
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography: h*w*ǣ*r
+OEWsPalatalGlide [no-change]: h*w*ǣ*r
+OldEnglishRemoveStars: hwǣr
+OldEnglishSurface [no-change]: hwǣr
+
 
 === BUCKET: final_vowel_extra (1) ===
 
@@ -48947,6 +49586,7 @@ PNWGmcFinalLongORaising [no-change]: *s*t*r*áu
 EAFFinalZDeletion [no-change]: *s*t*r*áu
 PWGmcUnstressedWordFinalIApocope [no-change]: *s*t*r*áu
 MonosyllabicFinalZLoss [no-change]: *s*t*r*áu
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*t*r*áu
 EAFRhotacism [no-change]: *s*t*r*áu
 PNWGmcMnDissimilation [no-change]: *s*t*r*áu
 PNWGmcNStemNLoss [no-change]: *s*t*r*áu
@@ -49079,6 +49719,7 @@ PNWGmcFinalLongORaising [no-change]: *t*á*p*p*ô
 EAFFinalZDeletion [no-change]: *t*á*p*p*ô
 PWGmcUnstressedWordFinalIApocope [no-change]: *t*á*p*p*ô
 MonosyllabicFinalZLoss [no-change]: *t*á*p*p*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *t*á*p*p*ô
 EAFRhotacism [no-change]: *t*á*p*p*ô
 PNWGmcMnDissimilation [no-change]: *t*á*p*p*ô
 PNWGmcNStemNLoss [no-change]: *t*á*p*p*ô
@@ -49211,6 +49852,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ū*r*i
 EAFFinalZDeletion [no-change]: *f*ū*r*i
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ū*r*i
 MonosyllabicFinalZLoss [no-change]: *f*ū*r*i
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ū*r*i
 EAFRhotacism [no-change]: *f*ū*r*i
 PNWGmcMnDissimilation [no-change]: *f*ū*r*i
 PNWGmcNStemNLoss [no-change]: *f*ū*r*i
@@ -49343,6 +49985,7 @@ PNWGmcFinalLongORaising [no-change]: *b*ó*k*k*a*z
 EAFFinalZDeletion: *b*ó*k*k*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *b*ó*k*k*a
 MonosyllabicFinalZLoss [no-change]: *b*ó*k*k*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *b*ó*k*k*a
 EAFRhotacism [no-change]: *b*ó*k*k*a
 PNWGmcMnDissimilation [no-change]: *b*ó*k*k*a
 PNWGmcNStemNLoss [no-change]: *b*ó*k*k*a
@@ -49472,6 +50115,7 @@ PNWGmcFinalLongORaising [no-change]: *f*ó*g*l*a*z
 EAFFinalZDeletion: *f*ó*g*l*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *f*ó*g*l*a
 MonosyllabicFinalZLoss [no-change]: *f*ó*g*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*ó*g*l*a
 EAFRhotacism [no-change]: *f*ó*g*l*a
 PNWGmcMnDissimilation [no-change]: *f*ó*g*l*a
 PNWGmcNStemNLoss [no-change]: *f*ó*g*l*a
@@ -49601,6 +50245,7 @@ PNWGmcFinalLongORaising [no-change]: *r*ó*s*t*a*z
 EAFFinalZDeletion: *r*ó*s*t*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *r*ó*s*t*a
 MonosyllabicFinalZLoss [no-change]: *r*ó*s*t*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*ó*s*t*a
 EAFRhotacism [no-change]: *r*ó*s*t*a
 PNWGmcMnDissimilation [no-change]: *r*ó*s*t*a
 PNWGmcNStemNLoss [no-change]: *r*ó*s*t*a
@@ -49730,6 +50375,7 @@ PNWGmcFinalLongORaising [no-change]: *w*ó*l*f*a*z
 EAFFinalZDeletion: *w*ó*l*f*a
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ó*l*f*a
 MonosyllabicFinalZLoss [no-change]: *w*ó*l*f*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ó*l*f*a
 EAFRhotacism [no-change]: *w*ó*l*f*a
 PNWGmcMnDissimilation [no-change]: *w*ó*l*f*a
 PNWGmcNStemNLoss [no-change]: *w*ó*l*f*a
@@ -49859,6 +50505,7 @@ PNWGmcFinalLongORaising: *w*ó*l*l*u
 EAFFinalZDeletion [no-change]: *w*ó*l*l*u
 PWGmcUnstressedWordFinalIApocope [no-change]: *w*ó*l*l*u
 MonosyllabicFinalZLoss [no-change]: *w*ó*l*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *w*ó*l*l*u
 EAFRhotacism [no-change]: *w*ó*l*l*u
 PNWGmcMnDissimilation [no-change]: *w*ó*l*l*u
 PNWGmcNStemNLoss [no-change]: *w*ó*l*l*u
@@ -50135,6 +50782,9 @@ you :: *ízwiz
 MonosyllabicFinalZLoss: 1
 who :: *xwáz
 
+PNWGmcMonosyllabicFinalRLengthening: 2
+there :: *θár, where :: *xwár
+
 EAFRhotacism: 7
 berry :: *bázjas, deer :: *déuzą, hoard :: *xúzdą, learn :: *líznōjaną, meed :: *mízdai, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi
 
@@ -50159,8 +50809,8 @@ month :: *mḗnōθz, spoon :: *spḗnuz
 EAFNasalizedLowRounding: 4
 goose :: *gánsz, month :: *mḗnōθz, spoon :: *spḗnuz, thought :: *θánxtē
 
-EAFLongAFronting: 14
-adder :: *nḗdrōn, bier :: *bḗrō, deed :: *dḗdiz, eel :: *ḗlaz, hair :: *xḗrą, let :: *lḗtaną, meal :: *mḗlą, needle :: *nḗðlō, read :: *rḗdaną, sheep :: *skḗpą, sleep :: *slḗpaną, weapon :: *wḗpną, year :: *jḗrą, betray :: *lḗwijaną
+EAFLongAFronting: 16
+adder :: *nḗdrōn, bier :: *bḗrō, deed :: *dḗdiz, eel :: *ḗlaz, hair :: *xḗrą, let :: *lḗtaną, meal :: *mḗlą, needle :: *nḗðlō, read :: *rḗdaną, sheep :: *skḗpą, sleep :: *slḗpaną, weapon :: *wḗpną, year :: *jḗrą, betray :: *lḗwijaną, there :: *θár, where :: *xwár
 
 EAFAiMonophthongization: 23
 bone :: *báiną, deal :: *dáiliz, dough :: *dáigaz, flesh :: *fláiskiz, ghost :: *gáistaz, heal :: *xáilijaną, heath :: *xáiθiz, home :: *xáimaz, last :: *láistijaną, lead :: *láidijaną, loam :: *láimą, loath :: *láiθaz, mean :: *máinijaną, one :: *áinaz, rope :: *ráipą, sea :: *sáiwiz, sheath :: *skáiθiz, snow :: *snáiwaz, soul :: *sáiwalō, spread :: *spráidijaną, stone :: *stáinaz, toe :: *táixōn, token :: *táikną
@@ -50360,13 +51010,13 @@ OECjCleanup: 0
 OEXsMerge: 6
 flax :: *fláxsą, fox :: *fúxsaz, ox :: *úxsô, six :: *séxs, wax :: *wáxsą, wax :: *wáxsaną
 
-OldEnglishOrthography: 130
-bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, earth :: *érθōn, fee :: *féxu, fight :: *féxtaną, fish :: *fískaz, flea :: *fláuxz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, furrow :: *fúrx, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaras, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knight :: *knéxtaz, lade :: *xláðaną, laugh :: *xláxjaną, leather :: *léθrą, lid :: *xlídą, light :: *léuxtijaną, live :: *líbēθi, loath :: *láiθaz, might :: *máxtiz, month :: *mḗnōθz, nail :: *náglaz, neck :: *xnékkô, night :: *náxti, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, rudder :: *rōθraz, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, singe :: *sángijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, wain :: *wágnaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, wight :: *wéxtiz, withy :: *wḯθagą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, thought :: *θánxtē, hue :: *xíwją
+OldEnglishOrthography: 132
+bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, earth :: *érθōn, fee :: *féxu, fight :: *féxtaną, fish :: *fískaz, flea :: *fláuxz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, furrow :: *fúrx, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaras, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knight :: *knéxtaz, lade :: *xláðaną, laugh :: *xláxjaną, leather :: *léθrą, lid :: *xlídą, light :: *léuxtijaną, live :: *líbēθi, loath :: *láiθaz, might :: *máxtiz, month :: *mḗnōθz, nail :: *náglaz, neck :: *xnékkô, night :: *náxti, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, rudder :: *rōθraz, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, singe :: *sángijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, wain :: *wágnaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, wight :: *wéxtiz, withy :: *wḯθagą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár
 
 OEWsPalatalGlide: 2
 yoke :: *júką, youth :: *júgunθ
 
-OldEnglishRemoveStars: 387
-adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féxu, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanǭ, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flask :: *fláskōn, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaras, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalō, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilō, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstanē, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldu, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, straw :: *stráwą, tap :: *táppô, fire :: *fūri, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
+OldEnglishRemoveStars: 389
+adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féxu, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanǭ, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flask :: *fláskōn, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaras, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalō, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilō, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstanē, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldu, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, straw :: *stráwą, tap :: *táppô, fire :: *fūri, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
 
 OldEnglishSurface: 0

@@ -725,6 +725,16 @@
       "card_type": "mixed",
       "has_reciprocal_boundary": "no",
       "short_summary": "Pre-OE/Anglo-Frisian hiatus-filling *w in the vowel-final strong-verb roots (verba pura): *sāana (< *sēana by SC024) > *sāwan-. Earlier boundary independently demonstrated: displaced before SC024 the rule can never fire (no *ā exists yet), so sow loses its consonant. Later boundary historically asserted (R/T p.151: the insertion happened early enough to prevent fronting of *ā in pre-OE), but executable displacement after SC101 commutes because SC101 is preconsonantal; the position encodes the historical chronology."
+    },
+    {
+      "change_id": "SC112",
+      "display_name": "Stressed monosyllabic lengthening before inherited r",
+      "lifecycle_status": "active",
+      "rule_name": "PNWGmcMonosyllabicFinalRLengthening",
+      "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC112-monosyllabic-final-r-lengthening.md",
+      "card_type": "boundary_limited",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Admitted *þǣr and *hwǣr support a general stressed monosyllabic lengthening before inherited final *r, but do not fix its date or establish an SC015/SC024 edge. Early executable placement before rhotacism preserves inherited-r conditioning and avoids secondary-r overapplication."
     }
   ],
   "edges": [

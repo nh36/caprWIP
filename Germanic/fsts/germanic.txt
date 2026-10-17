@@ -1161,6 +1161,24 @@ define EnglishPalatalisation EnglishEarlyPalatalisation;
 
 define EnglishWGlideRule [{*w} -> {*ʋ}];
 
+# SC112: general stressed monosyllabic vowel lengthening before inherited
+# final *r.  The source-backed *þar and *hwar witnesses motivate the
+# process, but do not establish whether it belongs in Proto-Germanic or
+# a later West-Germanic corridor.  The executable position is therefore a
+# qualified early working placement: before rhotacism, while inherited *r
+# remains distinguishable from secondary *r < *z.  The preceding-vocalic
+# guard excludes disyllabic forms.
+define PNWGmcMonosyllabicFinalRLengthening [
+    [
+        {*á} -> {*ā},
+        {*é} -> {*ē},
+        {*í} -> {*ī},
+        {*ó} -> {*ō},
+        {*ú} -> {*ū}
+        || .#. EnglishStarConsonant* _ {*r} .#.
+    ]
+];
+
 # Rhotacism: surviving *z > *r (R/T vol.2 p.87: "first *z was lost in
 # a variety of environments ..., then all surviving *z became *r
 # across the whole WGmc area"). Executable position matches that
@@ -3701,6 +3719,9 @@ define EnglishProtoToOE ( # capr:bundle
     # *kō must not feed monosyllabic ō-raising). Corpus witness: who
     # *xwáz > hwā (corpus-maturation pass 01).
     .o. MonosyllabicFinalZLoss
+    # SC112: early working placement preserves inherited final *r and
+    # prevents secondary *r created by the following rhotacism from feeding.
+    .o. PNWGmcMonosyllabicFinalRLengthening
     # SC003 rhotacism: surviving (non-final) *z → *r. Composed AFTER all
     # three final-*z losses, matching the historical chronology (R/T
     # vol.2 p.87; Crist 2002 §6: deletion is *z-sensitive, so must

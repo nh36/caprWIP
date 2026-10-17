@@ -1,18 +1,18 @@
 # Old English lexeme-report coverage audit
 
-- Total OE rows with real counterpart: 387
+- Total OE rows with real counterpart: 389
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 161
+- Rows requiring lexeme report: 163
 - Required rows with published SOURCE: 21
-- Required rows with no published SOURCE: 140
+- Required rows with no published SOURCE: 142
 - Rows selected independently for philological discussion: 11
 - Required rows with manifest-backed production reports: 11
 - Required rows with source material available but no manifest-backed production report: 146
-- Required rows with no source material found: 4
+- Required rows with no source material found: 6
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 228
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 79
+- Regular rows with NOTE (report required): 81
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
 
 ## Counts by DERIVATION_CLASS
@@ -24,7 +24,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 29 | 29 | 4 | 25 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 308 | 82 | 0 | 78 | 4 |
+| regular | 310 | 84 | 0 | 78 | 6 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -218,6 +218,8 @@
 | 2327 | wound | wundude | regular | yes | none | - | - | NOTE |
 | 2328 | sow | sāwan | regular | yes | none | - | - | NOTE |
 | 2329 | betray | lǣwan | regular | yes | none | - | - | NOTE |
+| 2333 | there | þǣr | regular | yes | none | - | - | NOTE |
+| 2334 | where | hwǣr | regular | yes | none | - | - | NOTE |
 
 ## Regular rows with empty NOTE and no report required
 

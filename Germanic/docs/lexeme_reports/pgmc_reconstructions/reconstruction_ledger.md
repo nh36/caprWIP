@@ -4,8 +4,8 @@ GENERATED from research SOURCE tables and the live corpus. Never hand-edit.
 
 Row-target status: **READING TARGETS REVIEWED WITH DECLARED LIMITS**. Row coverage is not passage or analytical completion.
 The separately generated [reading progress](reading_progress.md) tracks the three-source passages and applicability screens.
-Population: 393 OE rows; 387 runnable.
-Required source/row targets: 1383; retained actual consultations: 12; unchecked targets: 0; declared verification gaps: 0.
+Population: 395 OE rows; 389 runnable.
+Required source/row targets: 1387; retained actual consultations: 16; unchecked targets: 0; declared verification gaps: 0.
 
 Current CAPR fields below are observations, not new endorsements or approvals.
 A PGmc equality stage is the encoding convention, not independent author evidence.
@@ -11396,3 +11396,35 @@ Runnable: 1; derivation class: regular.
 | alignment49-hue-rt-phonemics | RingeTaylor2014 pp.173-175,219-221,249-251 | (process discussion, no quoted form) | not_explicitly_dated / process / Native PGmc hiwja, nongeminated PWGmc hiwi and geminated pre-ending hiw'w'a are different units. Later hiow/- is queried; endingless hi is not another PGmc noun. Proposed iww-to-iuw-to-iow with palatalizing semivowel has explicitly unclear phonemic analysis; height-harmony rejection is separate. |   Native PGmc hiwja, nongeminated PWGmc hiwi and geminated pre-ending hiw'w'a are different units. Later hiow/- is queried; endingless hi is not another PGmc noun. Proposed iww-to-iuw-to-iow with palatalizing semivowel has explicitly unclear phonemic analysis; height-harmony rejection is separate. | text_checked |
 
 Coverage: 6 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2333"></a>
+
+## 2333: there / þǣr
+
+Current citation: *θár (pgmc); selected input: *θár (pgmc; variety: none; equality_convention).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| there-kroonen-2333 | Kroonen2013 pp.534 | *þar | pgmc_dictionary_context / stem / locative place-adverb stem plus final *r | *þar Retain Kroonen's short-a stem and source notation; CAPR *θár adds its input stress and dental convention separately. Dictionary evidence for the earlier short-a antecedent; it does not itself date the later long-vowel outcome. | page_image_checked |
+| there-orel-2333 | Orel2003 pp.416 | *þar ~ *þēr | germanic_dictionary_context / stem / place-adverb stem; short and later long alternatives kept distinct | *þar ~ *þēr Do not treat Orel's short and long alternatives as one quantity or as a single dated endpoint. Orel preserves the relevant short-a and long-vowel alternatives, but does not by itself settle their relative chronology. | page_image_checked |
+| there-hill-2333 | Hill2017 pp.142-148 | (process discussion, no quoted form) | pgmc_to_oe / process / earlier short-a antecedent versus later long-vowel endpoint |  Normalize Hill's discussion into separate antecedent and endpoint records; do not attribute CAPR *θár verbatim to Hill. Hill supports the short-a antecedent and records competing accounts of when and where lengthening occurred. | text_checked |
+| there-rt-2333 | RingeTaylor2014 pp.64-66 | (process discussion, no quoted form) | late_pwgmc / process / short antecedent versus later West-Germanic lengthening account |  Retain Ringe and Taylor's alternative chronology as a later account, not as proof that the selected short input is their exact notation. The source supplies a competing chronology and does not establish equivalence with Orel's dictionary endpoints. | text_checked |
+
+Coverage: 4 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2334"></a>
+
+## 2334: where / hwǣr
+
+Current citation: *xwár (pgmc); selected input: *xwár (pgmc; variety: none; equality_convention).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| where-kroonen-2334 | Kroonen2013 pp.263 | *hwar | pgmc_dictionary_context / stem / locative place-adverb stem plus final *r | *hwar Retain Kroonen's short-a stem and source notation; CAPR *xwár adds its input stress and dorsal convention separately. Dictionary evidence for the earlier short-a antecedent and a West-Germanic lengthening discussion; it does not fix the date. | page_image_checked |
+| where-orel-2334 | Orel2003 pp.198 | *xwar ~ *xwēr | germanic_dictionary_context / stem / place-adverb stem; short and later long alternatives kept distinct | *xwar ~ *xwēr Do not collapse Orel's short and long alternatives into one reconstruction. Orel preserves the relevant short-a and long-vowel alternatives, while leaving the historical transition separate. | page_image_checked |
+| where-hill-2334 | Hill2017 pp.142-148 | (process discussion, no quoted form) | pgmc_to_oe / process / earlier short-a antecedent versus later long-vowel endpoint |  Normalize Hill's discussion into separate antecedent and endpoint records; do not attribute CAPR *xwár verbatim to Hill. Hill supports the short-a antecedent and records competing accounts of when and where lengthening occurred. | text_checked |
+| where-rt-2334 | RingeTaylor2014 pp.64-66 | (process discussion, no quoted form) | late_pwgmc / process / short antecedent versus later West-Germanic lengthening account |  Retain Ringe and Taylor's alternative chronology as a later account, not as proof that the selected short input is their exact notation. The source supplies a competing chronology and does not establish equivalence with Orel's dictionary endpoints. | text_checked |
+
+Coverage: 4 checks; 0 unchecked; 0 verification gaps.

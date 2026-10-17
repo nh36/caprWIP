@@ -34,3 +34,17 @@
 - Full-cascade receipt status: complete; receipt hash and source pins are in `PROVENANCE.md`.
 - Protected start manifest: 4,108 files rehashed, zero changed or missing.
 - Remaining release steps: rerun the focused research tests after the final report edits, run `git diff --check`, inspect staged paths, and commit/push research artifacts only. Exclude the unrelated `Germanic/fsts/tmp_probe.foma`, Node OOM report, caches, and scratch directories.
+## Follow-up adoption: SC112
+
+The bounded three-placement experiment is complete. Early placement before
+`EAFRhotacism` yields `*θár > þǣr` and `*xwár > hwǣr`, with zero changes among
+the original 387 selected outputs. Intermediate placement yields `þār/hwār`;
+late placement requires post-brightening `æ` handling and changes the existing
+door row. SC112 is therefore adopted as the smallest early working
+formalization, without claiming a strict date or an SC015/SC024 edge.
+
+The canonical expansion adds rows 2333 and 2334. The active baseline is now
+389 rows, 381 exact matches, and the same eight mismatches as before. The
+legacy-380 archive and all original selected identities are preserved. The
+machine-readable experiment receipt and `cascade_baseline/corpus_expansion_sc112.tsv`
+record the hashes and output comparison.

@@ -199,8 +199,8 @@ def build(root: Path = ROOT, *, mode: str = "full") -> tuple[list[dict], list[di
         core = next(c for c in comparisons_by_row[row_id] if c["scope"] == "core_triage")
         crosswalk.append({
             "row_id": row_id, "concept": row["concept"], "target": row["target"],
-            "legacy380": int(row_id in legacy_ids), "selected387": int(row_id in runnable),
-            "audit393": 1, "proto": row["proto"], "proto_stage": row["proto_stage"],
+            "legacy380": int(row_id in legacy_ids), "selected_current": int(row_id in runnable),
+            "audit_current": 1, "proto": row["proto"], "proto_stage": row["proto_stage"],
             "protoform": row["protoform"], "input_stage": row["input_stage"],
             "input_variety": row["input_variety"], "stage_basis": row["stage_basis"],
             "word_stress": row["word_stress"], "phonological_finality": row["phonological_finality"],

@@ -36,3 +36,4 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC102 | EAF Generalization of Hiatus-Breaking W | active | SPLIT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
 | SC103 | Proto-Germanic nasal loss before *x | active | SPLIT/REORDER | `Germanic/docs/sound_changes/audits/sc025-sc104-nasalized-low-vowel-adjudication.md` |
 | SC104 | Anglo-Frisian rounding of the long nasalized low vowel | active | SPLIT | `Germanic/docs/sound_changes/audits/sc025-sc104-nasalized-low-vowel-adjudication.md` |
+| SC112 | Stressed monosyllabic lengthening before inherited r | active | RETAIN | `Germanic/docs/sound_changes/audits/sc112-monosyllabic-final-r-lengthening.md` |

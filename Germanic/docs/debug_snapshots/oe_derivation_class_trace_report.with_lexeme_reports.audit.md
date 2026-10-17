@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (308) ===
+=== DERIVATION_CLASS: regular (310) ===
 
 
 
@@ -5955,6 +5955,35 @@ English Proto Input: *θáką
 
 Old English Orthography: þ*æk
 Outcome: þæc
+# there
+PROTO: *θár
+EXPECTED: þǣr
+OUTPUTS: þǣr
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *θár
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Monosyllabic Final R Lengthening: *θār<br>EAF Long A Fronting: *θǣr<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
+
+
+
+### Orthography & surface
+
+Old English Orthography: þ*ǣr
+Outcome: þǣr
+
+
+
+### Lexeme report
+
+#### Project note
+
+Original TSV note: Old English West Saxon there; source-backed early short-a antecedent *þar represented as experimental input *θár. CAPR thorn normalizes the dental; quantity and date of monosyllabic lengthening remain explicitly qualified.
 # thief
 PROTO: *θéubaz
 EXPECTED: þēof
@@ -6808,6 +6837,35 @@ root meaning 'sheep' [@KlugeSeebold2011, pp. 985--986].
 A young-animal designation could develop
 into 'ram' or 'wether', but this attractive semantic account is
 not as secure as the Germanic masculine *u*-stem reconstruction.
+# where
+PROTO: *xwár
+EXPECTED: hwǣr
+OUTPUTS: hwǣr
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *xwár
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Monosyllabic Final R Lengthening: *xwār<br>EAF Long A Fronting: *xwǣr<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>[no change] |
+
+
+
+### Orthography & surface
+
+Old English Orthography: h*wǣr
+Outcome: hwǣr
+
+
+
+### Lexeme report
+
+#### Project note
+
+Original TSV note: Old English West Saxon where; source-backed early short-a antecedent *hwar represented as experimental input *xwár. CAPR x normalizes the Germanic dorsal; quantity and date of monosyllabic lengthening remain explicitly qualified.
 # while
 PROTO: *xwḯlō
 EXPECTED: hwīl
