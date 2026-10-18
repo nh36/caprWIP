@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import gzip
 import hashlib
 import json
 import sys
@@ -181,6 +182,12 @@ def selected_summary(rows: list[dict], outputs: dict[str, list[str]]) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--candidate-tsv", type=Path, required=True)
+    parser.add_argument("--source-fst", type=Path,
+                        help="historical Foma source to replay without changing the live source")
+    parser.add_argument("--corpus-tsv", type=Path,
+                        help="historical selected-387 corpus to replay without changing the live corpus")
+    parser.add_argument("--order-receipt", type=Path,
+                        help="preserved receipt whose historical executable order must be replayed")
     parser.add_argument("--work-dir", type=Path, required=True)
     parser.add_argument("--receipt", type=Path, required=True)
     args = parser.parse_args()
@@ -190,25 +197,39 @@ def main() -> int:
     if args.receipt.exists():
         raise SystemExit(f"refusing to overwrite {args.receipt}")
     candidates = read_candidates(args.candidate_tsv.resolve())
-    original = assay.corpus_rows(rt.corpus_tsv)
+    source_path = (args.source_fst or rt.germanic_fst).resolve()
+    corpus_path = (args.corpus_tsv or rt.corpus_tsv).resolve()
+    original = assay.corpus_rows(corpus_path)
     if len(original) != 387:
         raise SystemExit(f"expected 387 existing selected rows, got {len(original)}")
     rows = original + candidates
-    source = rt.germanic_fst.read_text(encoding="utf-8")
+    source = source_path.read_text(encoding="utf-8")
     probes = probe_set()
     recipes = [
         recipe("early-before-rhotacism", "EAFRhotacism", "before"),
         recipe("intermediate-before-short-a-brightening", "EAFBrightening", "before"),
         recipe("late-after-short-a-brightening", "OEHighVowelApocope", "after", late=True),
     ]
-    base_order = base.source_order(rt.germanic_fst)
+    if args.order_receipt:
+        opener = gzip.open if args.order_receipt.suffix == ".gz" else open
+        with opener(args.order_receipt, "rt", encoding="utf-8") as handle:
+            pinned = json.load(handle)
+        try:
+            base_order = [
+                event for event in pinned["models"][0]["order"]
+                if event != "XRAdverbLen"
+            ]
+        except (KeyError, IndexError, TypeError):
+            raise SystemExit("order receipt lacks models[0].order")
+    else:
+        base_order = base.source_order(source_path)
     before = base.protected_hashes(rt)
     report = {
         "schema_version": 1,
         "status": "started",
         "candidate_sha256": digest(args.candidate_tsv.resolve()),
-        "source_sha256": digest(rt.germanic_fst),
-        "canonical_corpus_sha256": digest(rt.corpus_tsv),
+        "source_sha256": digest(source_path),
+        "canonical_corpus_sha256": digest(corpus_path),
         "candidate_rows": candidates,
         "recipes": recipes,
         "rows": rows,

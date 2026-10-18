@@ -73,7 +73,7 @@ class InputContextTests(unittest.TestCase):
         sys.path.insert(0, str(ROOT / "Germanic/tools"))
         from oe_pipeline import evaluation_input, load_rows, normalize_proto
         rows = load_rows(ROOT / "Germanic/data/germanic-aligned-final.tsv")
-        self.assertEqual(len(rows), 387)
+        self.assertEqual(len(rows), 389)
         marked = [row for row in rows if evaluation_input(row) != row["proto_norm"]]
         self.assertEqual([row["row_id"] for row in marked], ["2326"])
         self.assertEqual((marked[0]["proto"], marked[0]["proto_norm"], marked[0]["fst_input"]),

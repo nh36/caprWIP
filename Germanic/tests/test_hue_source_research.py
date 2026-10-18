@@ -45,8 +45,10 @@ class HueSourceResearchTests(unittest.TestCase):
                 self.assertEqual(len(report["rows"]), 387)
                 self.assertEqual(
                     {row["id"] for row in report["rows"]},
-                    {row["id"] for row in experiments.corpus_rows(
-                        experiments.layout().corpus_tsv
+                    {row["row_id"] for row in csv.DictReader(
+                        (ROOT / "Germanic/docs/sound_changes/cascade_baseline/"
+                         "cascade_baseline_outputs_pre_sc112_expansion.tsv").open(),
+                        delimiter="\t"
                     )},
                 )
                 self.assertEqual(report["input_changed_ids"], ["2332"])

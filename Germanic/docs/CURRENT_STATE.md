@@ -41,9 +41,9 @@ and pinned by `Germanic/tests/test_cascade_baseline.py`:
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
   `43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce`
 - selected-387 corpus fingerprint (`outputs_sha256`):
-  `b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb`
+  `53769ef582dd6d119bacc18f808612980a1f02dfed2f94a6e30645bb9de00a9e`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `e495ab40d4fb34f2117c6d8590ee11e18166271e01712755b99507bf9933aef2`
+  `c44d73698e2fa2717366e951a75bbb02d19aa677faf51fc86dfa25187556b6da`
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.

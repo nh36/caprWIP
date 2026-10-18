@@ -10,6 +10,7 @@ These tests enforce the SOURCE / GENERATED / ARCHIVE contract:
 """
 
 import importlib.util
+import csv
 import json
 import re
 import sys
@@ -29,6 +30,8 @@ ARCHIVE_DIRS = (
 FST = REPO_ROOT / "Germanic/fsts/germanic.txt"
 ORDER_MANIFEST = SC_DIR / "cascade_baseline/cascade_order_manifest.tsv"
 BASELINE_SUMMARY = SC_DIR / "cascade_baseline/cascade_baseline_summary.json"
+BASELINE = SC_DIR / "cascade_baseline"
+BASELINE_OUTPUTS = BASELINE / "cascade_baseline_outputs.tsv"
 
 
 def _load(name):
@@ -309,6 +312,11 @@ class ArchiveIsolationTests(unittest.TestCase):
 
 class FingerprintGuardTests(unittest.TestCase):
     def test_fingerprints_match_approved_sc015_target_transition(self):
+        historical = json.loads(
+            (BASELINE / "cascade_baseline_summary_pre_sc112_expansion.json").read_text(
+                encoding="utf-8"
+            )
+        )
         data = json.loads(BASELINE_SUMMARY.read_text(encoding="utf-8"))
         # outputs_sha256 rebaselined 2026-09-06 for the sow/laewan
         # follow-up (memo §12.4): two corpus rows added (sow, betray);
@@ -327,17 +335,52 @@ class FingerprintGuardTests(unittest.TestCase):
         # SC015 subsequently changes only three learn targets/finals, retaining
         # every inherited input and the same eight mismatch identities.
         self.assertEqual(
-            data["outputs_sha256"],
+            historical["outputs_sha256"],
             "b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb",
         )
         self.assertEqual(
-            data["lexical_outputs_sha256"],
+            historical["lexical_outputs_sha256"],
             "e495ab40d4fb34f2117c6d8590ee11e18166271e01712755b99507bf9933aef2",
         )
         self.assertEqual(
             data["legacy_subset_sha256"],
             "43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce",
         )
+        self.assertEqual(
+            data["outputs_sha256"],
+            "53769ef582dd6d119bacc18f808612980a1f02dfed2f94a6e30645bb9de00a9e",
+        )
+        previous = {
+            row["row_id"]: row
+            for row in csv.DictReader(
+                (BASELINE / "cascade_baseline_outputs_pre_sc112_expansion.tsv").open(
+                    encoding="utf-8"
+                ),
+                delimiter="\t",
+            )
+        }
+        current = {
+            row["row_id"]: row
+            for row in csv.DictReader(
+                BASELINE_OUTPUTS.open(encoding="utf-8"), delimiter="\t"
+            )
+        }
+        self.assertEqual(set(current) - set(previous), {"2333", "2334"})
+        for row_id in previous:
+            self.assertEqual(
+                tuple(current[row_id][field] for field in (
+                    "concept", "proto", "proto_norm", "fst_input",
+                    "word_stress", "phonological_finality", "counterpart",
+                    "outputs",
+                )),
+                tuple(previous[row_id][field] for field in (
+                    "concept", "proto", "proto_norm", "fst_input",
+                    "word_stress", "phonological_finality", "counterpart",
+                    "outputs",
+                )),
+            )
+        self.assertEqual(current["2333"]["outputs"], "þǣr")
+        self.assertEqual(current["2334"]["outputs"], "hwǣr")
 
 
 if __name__ == "__main__":

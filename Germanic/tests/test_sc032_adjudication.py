@@ -72,7 +72,11 @@ class SC032AdjudicationTests(unittest.TestCase):
 
     def test_trace_is_fresh_and_complete(self):
         self.assertEqual(trace_provenance_problems(TRACE.read_text(encoding="utf-8")), [])
-        self.assertEqual(len(self.records), 387)
+        self.assertEqual(len(self.records), 389)
+        self.assertEqual({"2333", "2334"} <= set(self.records), True)
+        for identifier in ("2333", "2334"):
+            forms = self.records[identifier][2]
+            self.assertEqual(forms["OEJGlideIO"], forms["OEDiphthongLeveling"])
 
     def test_nine_clauses_preserve_atomic_long_and_split_short_quantities(self):
         text = (GERMANIC / "fsts/germanic.txt").read_text(encoding="utf-8")

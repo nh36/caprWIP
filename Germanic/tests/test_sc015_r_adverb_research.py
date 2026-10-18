@@ -2,6 +2,7 @@
 import importlib.util
 import csv
 import json
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -36,38 +37,47 @@ def specification():
     }
 
 
+def historical_fixture():
+    directory = Path(tempfile.mkdtemp(prefix="sc015-historical-"))
+    for relative in (
+        "Germanic/fsts/germanic.txt",
+        "Germanic/data/germanic-aligned-final.tsv",
+        "Germanic/data/entry_context_metadata.tsv",
+        "backend/oe_input_context.py",
+    ):
+        destination = directory / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(subprocess.check_output(
+            ["git", "show", f"{HISTORICAL_COMMIT}:{relative}"], cwd=ROOT.parent))
+    runtime = SimpleNamespace(
+        germanic_fst=directory / "Germanic/fsts/germanic.txt",
+        corpus_tsv=directory / "Germanic/data/germanic-aligned-final.tsv",
+        data_dir=directory / "Germanic/data",
+        fsts_dir=directory / "Germanic/fsts",
+        tools_dir=directory / "Germanic/tools",
+        docs_dir=directory / "Germanic/docs",
+        bin_dir=directory / "backend",
+        build_manifest=directory / "backend/oe_build_manifest.json",
+        germanic_dir=directory / "Germanic",
+        is_container=False,
+    )
+    return directory, runtime
+
+
 class ResearchDriverTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.fixture_dir = Path(tempfile.mkdtemp(prefix="sc015-historical-"))
-        for relative in (
-            "Germanic/fsts/germanic.txt",
-            "Germanic/data/germanic-aligned-final.tsv",
-            "Germanic/data/entry_context_metadata.tsv",
-            "backend/oe_input_context.py",
-        ):
-            destination = cls.fixture_dir / relative
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            destination.write_bytes(subprocess.check_output(
-                ["git", "show", f"{HISTORICAL_COMMIT}:{relative}"], cwd=ROOT.parent))
-        cls.historical_source = cls.fixture_dir / "Germanic/fsts/germanic.txt"
-        cls.historical_corpus = cls.fixture_dir / "Germanic/data/germanic-aligned-final.tsv"
-        cls.historical_runtime = SimpleNamespace(
-            germanic_fst=cls.historical_source,
-            corpus_tsv=cls.historical_corpus,
-            data_dir=cls.fixture_dir / "Germanic/data",
-            fsts_dir=cls.fixture_dir / "Germanic/fsts",
-            tools_dir=cls.fixture_dir / "Germanic/tools",
-            docs_dir=cls.fixture_dir / "Germanic/docs",
-            bin_dir=cls.fixture_dir / "backend",
-            build_manifest=cls.fixture_dir / "backend/oe_build_manifest.json",
-            germanic_dir=cls.fixture_dir / "Germanic",
-            is_container=False,
-        )
+        cls.fixture_dir, cls.historical_runtime = historical_fixture()
+        cls.historical_source = cls.historical_runtime.germanic_fst
+        cls.historical_corpus = cls.historical_runtime.corpus_tsv
         cls.historical_baseline = (
             ROOT / "docs/sound_changes/cascade_baseline/"
             "cascade_baseline_outputs_pre_sc112_expansion.tsv"
         )
+
+    @classmethod
+    def tearDownClass(cls):
+        shutil.rmtree(cls.fixture_dir)
 
     def setUp(self):
         self.spec = specification()
@@ -199,19 +209,25 @@ class ResearchDriverTests(unittest.TestCase):
 class RecipeBuilderTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.source = ResearchDriverTests.historical_source
-        cls.runtime = ResearchDriverTests.historical_runtime
+        cls.fixture_dir, cls.runtime = historical_fixture()
+        cls.source = cls.runtime.germanic_fst
         cls.original_layout = builder.driver.layout
         builder.driver.layout = lambda: cls.runtime
-        cls.before = research.digest(cls.source)
-        with patch.object(research.subprocess, "run", side_effect=AssertionError("Foma prohibited")):
-            cls.plan = builder.build_spec("0" * 64, [])
+        try:
+            cls.before = research.digest(cls.source)
+            with patch.object(research.subprocess, "run", side_effect=AssertionError("Foma prohibited")):
+                cls.plan = builder.build_spec("0" * 64, [])
+        except BaseException:
+            builder.driver.layout = cls.original_layout
+            shutil.rmtree(cls.fixture_dir)
+            raise
         cls.recipes = {recipe["id"]: recipe for recipe in cls.plan["recipes"]}
         cls.order = research.source_order(cls.source)
 
     @classmethod
     def tearDownClass(cls):
         builder.driver.layout = cls.original_layout
+        shutil.rmtree(cls.fixture_dir)
 
     def test_builds_twenty_one_validated_hypotheses_without_witness_inputs(self):
         self.assertEqual(len(self.recipes), 21)

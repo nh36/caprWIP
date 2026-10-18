@@ -123,11 +123,10 @@ class Sc033ComponentResearchTests(unittest.TestCase):
             fixtures = list(csv.DictReader(handle, delimiter="\t"))
         self.assertEqual(experiments.check_fixture_predictions(report, fixtures),
                          report["checked_fixture_ids"])
-        selected = {row["id"]: row for row in
-                    experiments.corpus_rows(experiments.layout().corpus_tsv)}
         with (ROOT / "Germanic/docs/sound_changes/cascade_baseline/"
               "cascade_baseline_outputs_pre_sc033_hue.tsv").open() as handle:
             historical = {row["row_id"]: row for row in csv.DictReader(handle, delimiter="\t")}
+        selected = historical
         self.assertEqual({row["id"] for row in report["rows"]}, set(selected))
         for row in report["rows"]:
             self.assertEqual(row["variant_fst_input"],

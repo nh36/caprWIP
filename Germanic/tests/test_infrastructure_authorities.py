@@ -67,6 +67,7 @@ EXPECTED_OUTPUTS_SHA256 = (
 EXPECTED_LEGACY_SUBSET_SHA256 = (
     "43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce")
 EXPECTED_ROW_COUNT = 387
+EXPECTED_ACTIVE_ROW_COUNT = 389
 
 
 def _load(name):
@@ -293,7 +294,7 @@ class OutputIdentityTests(unittest.TestCase):
 
     def test_semantic_fingerprints_match_approved_sc015_target_transition(self):
         summary = json.loads(
-            (BASELINE_DIR / "cascade_baseline_summary.json").read_text(
+            (BASELINE_DIR / "cascade_baseline_summary_pre_sc112_expansion.json").read_text(
                 encoding="utf-8"))
         self.assertEqual(summary["lexical_outputs_sha256"], EXPECTED_OUTPUTS_SHA256)
         self.assertEqual(summary["outputs_sha256"],
@@ -467,7 +468,7 @@ class SandboxEquivalenceTests(unittest.TestCase):
                         "container)")
         report = json.loads(path.read_text(encoding="utf-8"))
         self.assertEqual(report["status"], "equivalent")
-        self.assertEqual(report["rows_compared"], EXPECTED_ROW_COUNT)
+        self.assertEqual(report["rows_compared"], EXPECTED_ACTIVE_ROW_COUNT)
         from capr_runtime import sha256_of
         rt = layout()
         live = {

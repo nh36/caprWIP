@@ -203,7 +203,9 @@ class LegacySubsetTests(unittest.TestCase):
             mod.read_baseline(
                 BASELINE_DIR / "cascade_baseline_outputs_pre_sc015.tsv",
                 BASELINE_DIR / "cascade_baseline_summary_pre_sc015.json"),
-            {"records": self.current_rows, "summary": self.summary},
+            mod.read_baseline(
+                BASELINE_DIR / "cascade_baseline_outputs_pre_sc112_expansion.tsv",
+                BASELINE_DIR / "cascade_baseline_summary_pre_sc112_expansion.json"),
             json.loads((BASELINE_DIR / "approved_sc015_targets_migration.json").read_text()),
         )
         self.assertEqual(len(mod.legacy_subset(

@@ -188,14 +188,15 @@ class ExperimentTests(unittest.TestCase):
             self.assertEqual(report[field], [])
         self.assertEqual(report["baseline_mismatch_ids"], report["variant_mismatch_ids"])
         self.assertEqual(len(report["baseline_mismatch_ids"]), 7)
-        live = {row["id"]: row for row in experiments.corpus_rows(layout().corpus_tsv)}
-        self.assertEqual({row["id"] for row in report["rows"]}, set(live))
         baseline_dir = RECIPES.parents[2] / "cascade_baseline"
-        with (baseline_dir / "cascade_baseline_outputs_pre_sc033.tsv").open() as handle:
+        with (baseline_dir / "cascade_baseline_outputs_pre_sc112_expansion.tsv").open() as handle:
             historical = {row["row_id"]: row for row in csv.DictReader(handle, delimiter="\t")}
+        self.assertEqual({row["id"] for row in report["rows"]}, set(historical))
+        with (baseline_dir / "cascade_baseline_outputs_pre_sc033.tsv").open() as handle:
+            historical_outputs = {row["row_id"]: row for row in csv.DictReader(handle, delimiter="\t")}
         for row in report["rows"]:
-            self.assertEqual(row["variant_fst_input"], historical[row["id"]]["fst_input"])
-            self.assertEqual(row["baseline_outputs"], historical[row["id"]]["outputs"].split("|"))
+            self.assertEqual(row["variant_fst_input"], historical_outputs[row["id"]]["fst_input"])
+            self.assertEqual(row["baseline_outputs"], historical_outputs[row["id"]]["outputs"].split("|"))
             self.assertEqual(row["baseline_outputs"], row["variant_outputs"])
             self.assertEqual(len(row["variant_outputs"]), 1)
         for probe, count in (("after_sc030", 20), ("after_sc032", 20),
@@ -373,8 +374,8 @@ class ExperimentTests(unittest.TestCase):
 
     def test_live_selection_has_all_stable_ids(self):
         rows = experiments.corpus_rows(layout().corpus_tsv)
-        self.assertEqual(len(rows), 387)
-        self.assertEqual(len({row["id"] for row in rows}), 387)
+        self.assertEqual(len(rows), 389)
+        self.assertEqual(len({row["id"] for row in rows}), 389)
         self.assertEqual(next(row["proto"] for row in rows if row["id"] == "2061"), "*xáwją")
 
     def test_fixtures_match_live_inputs_and_recipe_provenance(self):

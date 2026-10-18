@@ -225,15 +225,30 @@ class SC015AdoptionTests(unittest.TestCase):
         old_keys = {tuple(row[field] for field in fields) for row in old}
         added = [row for row in table(path)
                  if tuple(row[field] for field in fields) not in old_keys]
-        self.assertEqual(len(added), 56)
-        self.assertEqual(sum(row["action"] == "add" for row in added), 22)
-        self.assertEqual(sum(row["action"] == "remove" for row in added), 34)
-        self.assertEqual(sum(row.get("variety") == "north" for row in added), 4)
-        for row in added:
+        sc112 = [
+            row for row in added
+            if row["source_ref"] in {"there — OE þǣr", "where — OE hwǣr"}
+        ]
+        self.assertEqual(len(sc112), 4)
+        self.assertEqual(
+            {(row["language"], row["form"], row["source_ref"]) for row in sc112},
+            {
+                ("oe", "þǣr", "there — OE þǣr"),
+                ("oe", "hwǣr", "where — OE hwǣr"),
+                ("pgmc", "*θár", "there — OE þǣr"),
+                ("pgmc", "*xwár", "where — OE hwǣr"),
+            },
+        )
+        sc015 = [row for row in added if row not in sc112]
+        self.assertEqual(len(sc015), 52)
+        self.assertEqual(sum(row["action"] == "add" for row in sc015), 18)
+        self.assertEqual(sum(row["action"] == "remove" for row in sc015), 34)
+        self.assertEqual(sum(row.get("variety") == "north" for row in sc015), 4)
+        for row in sc015:
             self.assertTrue(any(token in row["source_ref"] for token in (
                 "2095-learn-", "2313-learn-", "2314-learn-", "2137-nest-",
                 "learn — OE ", "learn (3sg) — OE ", "learn (iptv.2sg) — OE ",
-                "nest — OE nest", "there — OE þǣr", "where — OE hwǣr")), row)
+                "nest — OE nest")), row)
         audit = table(ROOT / "Germanic/docs/book/index_verborum_variety_annotation_audit.tsv")
         withdrawn = [row for row in audit
                      if any(f"/{identifier}-learn-" in row["source_ref"]

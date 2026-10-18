@@ -38,6 +38,7 @@ ALLOWED_STAGE_LABELS = {
     "pnwgmc": {"Northwest Germanic"},
     "nwgmc": {"Northwest Germanic"},
     "pwgmc": {"Proto-West Germanic", "Northern West Germanic"},
+    "wgmc": {"West Germanic"},
     # EAF is CAPR's post-PWGmc executable corridor; the reader-facing label may
     # record the finer historical stage established by adjudication.
     "eaf": {"Early Anglo-Frisian", "Anglo-Frisian", "North Sea Germanic",

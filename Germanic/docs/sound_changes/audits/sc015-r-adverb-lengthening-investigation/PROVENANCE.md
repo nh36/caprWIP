@@ -253,3 +253,33 @@ experimental inspection. Thus row 2334 is recorded there as `ʍ æː r`,
 whereas the canonical corpus uses the compact IPA string `ʍæːr`. This is
 only a serialization convention; it does not alter the verified Foma input
 `*xwár`, the source-backed witness, or the selected output *hwǣr*.
+
+## Historical receipt replay
+
+The compressed follow-up receipt remains a replay of the pre-SC112 selected
+387-row state. The driver accepts `--source-fst` and `--corpus-tsv` overrides
+for this purpose; the live corpus guard remains fail-closed at 387 rows.
+Inside the backend container, materialize the two pinned files without
+touching canonical sources, then run:
+
+```sh
+git show 3f3deb56f81a76324eefcc68401887f03a15a674:Germanic/fsts/germanic.txt > /tmp/sc015-pre-sc112.foma
+git show 3f3deb56f81a76324eefcc68401887f03a15a674:Germanic/data/germanic-aligned-final.tsv > /tmp/sc015-pre-sc112.tsv
+git show 3f3deb56f81a76324eefcc68401887f03a15a674:Germanic/data/entry_context_metadata.tsv > /tmp/entry_context_metadata.tsv
+cp /tmp/entry_context_metadata.tsv Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/entry_context_metadata.tsv
+python3 Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/followup_experiment.py \
+  --source-fst /tmp/sc015-pre-sc112.foma \
+  --corpus-tsv /tmp/sc015-pre-sc112.tsv \
+  --order-receipt Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/followup-receipt.json.gz \
+  --candidate-tsv Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/candidate_expansion.tsv \
+  --work-dir Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/replay-work \
+  --receipt Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/replay-receipt.json
+```
+
+The command must report 389 rows including exactly the two candidate rows,
+and writes a new receipt; it must not overwrite `followup-receipt.json.gz`.
+The historical source and corpus hashes in the new receipt are checked
+against the pinned commit before comparing model identifiers and candidate
+results with the preserved compressed receipt.
+Remove the temporary metadata, work directory and replay receipt after the
+comparison.
