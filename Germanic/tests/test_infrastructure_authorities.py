@@ -290,7 +290,7 @@ class NoDuplicateStageListTests(unittest.TestCase):
 
 
 class OutputIdentityTests(unittest.TestCase):
-    """The refactor must not change corpus outputs (semantic fingerprints)."""
+    """Preserve the approved historical SC015 semantic fingerprints."""
 
     def test_semantic_fingerprints_match_approved_sc015_target_transition(self):
         summary = json.loads(

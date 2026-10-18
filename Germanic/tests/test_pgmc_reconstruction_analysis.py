@@ -305,7 +305,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         cls.cases = {case["comparison_id"]: case for case in cls.tables["comparisons"]}
         cls.evidence = {form["evidence_id"]: form for form in cls.forms}
 
-    def test_all393_core_citation_units_retain_every_alternative(self):
+    def test_current_core_citation_units_retain_every_alternative(self):
         analytical.require_complete(self.corpus, self.tables["comparisons"])
         core = [case for case in self.cases.values() if case["scope"] == "core_triage"]
         self.assertEqual(len(core), 395)

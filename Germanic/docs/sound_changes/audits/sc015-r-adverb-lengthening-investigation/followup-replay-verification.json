@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "status": "equivalent",
+  "historical_commit": "3f3deb56f81a76324eefcc68401887f03a15a674",
+  "receipt_sha256": "059993fe139d03b5cdd1475e0a22e29f79844020201db959055f15a3300ac252",
+  "compressed_receipt_sha256": "1c10e6908f8aa309693e9c7c6b9ccf859aa7ce5ab40cb6ed5617b15f262b760c",
+  "source_sha256": "da04db7a21664bf9a606e331c5dd484a023d00e00a5ecf7c19ea3e8e310789e9",
+  "corpus_sha256": "514cfe096b636ea6790361787a154a70e6dafb7d8bf3e4936fced51f3b1b2a6f",
+  "context_sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+  "context_helper_sha256": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961",
+  "baseline": {
+    "origin": "isolated compilation of pinned historical Foma source",
+    "binary_sha256": "d1e9418cfa04b920f17197f1ef6720cbb082274b70a26e55c900f690d80f93fc",
+    "script_sha256": "bc9c8d95c03ce580579756ab8697b8c48903c8fa98e43df1473aef333248eff1",
+    "foma_version": "foma 0.10.0alpha",
+    "summary": {
+      "selected_rows": 387,
+      "matched": 379,
+      "mismatched": 8,
+      "mismatches": [
+        {
+          "id": "1973",
+          "concept": "buck",
+          "outputs": [
+            "bocc"
+          ],
+          "target": "bucc"
+        },
+        {
+          "id": "2013",
+          "concept": "fire",
+          "outputs": [
+            "fȳr"
+          ],
+          "target": "fȳre"
+        },
+        {
+          "id": "2030",
+          "concept": "fowl",
+          "outputs": [
+            "fogol"
+          ],
+          "target": "fugol"
+        },
+        {
+          "id": "2162",
+          "concept": "rust",
+          "outputs": [
+            "rost"
+          ],
+          "target": "rust"
+        },
+        {
+          "id": "2224",
+          "concept": "straw",
+          "outputs": [
+            "strēa"
+          ],
+          "target": "strēaw"
+        },
+        {
+          "id": "2240",
+          "concept": "tap",
+          "outputs": [
+            "tappa"
+          ],
+          "target": "tæppa"
+        },
+        {
+          "id": "2298",
+          "concept": "wolf",
+          "outputs": [
+            "wolf"
+          ],
+          "target": "wulf"
+        },
+        {
+          "id": "2300",
+          "concept": "wool",
+          "outputs": [
+            "woll"
+          ],
+          "target": "wull"
+        }
+      ]
+    }
+  },
+  "compared_scientific_fields": [
+    "recipe",
+    "order",
+    "traces",
+    "census",
+    "outputs",
+    "probes",
+    "source_native_outputs",
+    "summary",
+    "candidate_results",
+    "probe_results"
+  ],
+  "excluded_fields": {
+    "compiler": "logs and absolute workspace paths vary; order/traces/native outputs checked",
+    "original_deltas": "legacy comparison used inconsistent baselines; recomputed by stable ID"
+  },
+  "models": [
+    {
+      "id": "early-before-rhotacism",
+      "scientific_sha256": "4f30e09ac30048335d65017a4ada3b8da5e6dbe7e69c982ca53b02534e201540",
+      "original_rows_compared": 387,
+      "candidate_rows_compared": 2,
+      "events_compared": 108,
+      "summary": {
+        "selected_rows": 389,
+        "matched": 381,
+        "mismatched": 8,
+        "mismatches": [
+          {
+            "id": "1973",
+            "concept": "buck",
+            "outputs": [
+              "bocc"
+            ],
+            "target": "bucc"
+          },
+          {
+            "id": "2013",
+            "concept": "fire",
+            "outputs": [
+              "fȳr"
+            ],
+            "target": "fȳre"
+          },
+          {
+            "id": "2030",
+            "concept": "fowl",
+            "outputs": [
+              "fogol"
+            ],
+            "target": "fugol"
+          },
+          {
+            "id": "2162",
+            "concept": "rust",
+            "outputs": [
+              "rost"
+            ],
+            "target": "rust"
+          },
+          {
+            "id": "2224",
+            "concept": "straw",
+            "outputs": [
+              "strēa"
+            ],
+            "target": "strēaw"
+          },
+          {
+            "id": "2240",
+            "concept": "tap",
+            "outputs": [
+              "tappa"
+            ],
+            "target": "tæppa"
+          },
+          {
+            "id": "2298",
+            "concept": "wolf",
+            "outputs": [
+              "wolf"
+            ],
+            "target": "wulf"
+          },
+          {
+            "id": "2300",
+            "concept": "wool",
+            "outputs": [
+              "woll"
+            ],
+            "target": "wull"
+          }
+        ]
+      },
+      "candidate_results": [
+        {
+          "id": "2333",
+          "concept": "there",
+          "input": "θár",
+          "target": "þǣr",
+          "outputs": [
+            "þǣr"
+          ],
+          "match": true
+        },
+        {
+          "id": "2334",
+          "concept": "where",
+          "input": "xwár",
+          "target": "hwǣr",
+          "outputs": [
+            "hwǣr"
+          ],
+          "match": true
+        }
+      ],
+      "historical_baseline_deltas": []
+    },
+    {
+      "id": "intermediate-before-short-a-brightening",
+      "scientific_sha256": "b02b8c982fcc28597ccb7c6471737516f5740614ddcc9dd3a6a1d40dab6a3edb",
+      "original_rows_compared": 387,
+      "candidate_rows_compared": 2,
+      "events_compared": 108,
+      "summary": {
+        "selected_rows": 389,
+        "matched": 379,
+        "mismatched": 10,
+        "mismatches": [
+          {
+            "id": "1973",
+            "concept": "buck",
+            "outputs": [
+              "bocc"
+            ],
+            "target": "bucc"
+          },
+          {
+            "id": "2013",
+            "concept": "fire",
+            "outputs": [
+              "fȳr"
+            ],
+            "target": "fȳre"
+          },
+          {
+            "id": "2030",
+            "concept": "fowl",
+            "outputs": [
+              "fogol"
+            ],
+            "target": "fugol"
+          },
+          {
+            "id": "2162",
+            "concept": "rust",
+            "outputs": [
+              "rost"
+            ],
+            "target": "rust"
+          },
+          {
+            "id": "2224",
+            "concept": "straw",
+            "outputs": [
+              "strēa"
+            ],
+            "target": "strēaw"
+          },
+          {
+            "id": "2240",
+            "concept": "tap",
+            "outputs": [
+              "tappa"
+            ],
+            "target": "tæppa"
+          },
+          {
+            "id": "2298",
+            "concept": "wolf",
+            "outputs": [
+              "wolf"
+            ],
+            "target": "wulf"
+          },
+          {
+            "id": "2300",
+            "concept": "wool",
+            "outputs": [
+              "woll"
+            ],
+            "target": "wull"
+          },
+          {
+            "id": "2333",
+            "concept": "there",
+            "outputs": [
+              "þār"
+            ],
+            "target": "þǣr"
+          },
+          {
+            "id": "2334",
+            "concept": "where",
+            "outputs": [
+              "hwār"
+            ],
+            "target": "hwǣr"
+          }
+        ]
+      },
+      "candidate_results": [
+        {
+          "id": "2333",
+          "concept": "there",
+          "input": "θár",
+          "target": "þǣr",
+          "outputs": [
+            "þār"
+          ],
+          "match": false
+        },
+        {
+          "id": "2334",
+          "concept": "where",
+          "input": "xwár",
+          "target": "hwǣr",
+          "outputs": [
+            "hwār"
+          ],
+          "match": false
+        }
+      ],
+      "historical_baseline_deltas": []
+    },
+    {
+      "id": "late-after-short-a-brightening",
+      "scientific_sha256": "329b1c2183baf7881b503b5a31da90fe90716a952f8541da3a6a9f2056ebbdb2",
+      "original_rows_compared": 387,
+      "candidate_rows_compared": 2,
+      "events_compared": 108,
+      "summary": {
+        "selected_rows": 389,
+        "matched": 380,
+        "mismatched": 9,
+        "mismatches": [
+          {
+            "id": "1973",
+            "concept": "buck",
+            "outputs": [
+              "bocc"
+            ],
+            "target": "bucc"
+          },
+          {
+            "id": "1992",
+            "concept": "door",
+            "outputs": [
+              "dōr"
+            ],
+            "target": "dor"
+          },
+          {
+            "id": "2013",
+            "concept": "fire",
+            "outputs": [
+              "fȳr"
+            ],
+            "target": "fȳre"
+          },
+          {
+            "id": "2030",
+            "concept": "fowl",
+            "outputs": [
+              "fogol"
+            ],
+            "target": "fugol"
+          },
+          {
+            "id": "2162",
+            "concept": "rust",
+            "outputs": [
+              "rost"
+            ],
+            "target": "rust"
+          },
+          {
+            "id": "2224",
+            "concept": "straw",
+            "outputs": [
+              "strēa"
+            ],
+            "target": "strēaw"
+          },
+          {
+            "id": "2240",
+            "concept": "tap",
+            "outputs": [
+              "tappa"
+            ],
+            "target": "tæppa"
+          },
+          {
+            "id": "2298",
+            "concept": "wolf",
+            "outputs": [
+              "wolf"
+            ],
+            "target": "wulf"
+          },
+          {
+            "id": "2300",
+            "concept": "wool",
+            "outputs": [
+              "woll"
+            ],
+            "target": "wull"
+          }
+        ]
+      },
+      "candidate_results": [
+        {
+          "id": "2333",
+          "concept": "there",
+          "input": "θár",
+          "target": "þǣr",
+          "outputs": [
+            "þǣr"
+          ],
+          "match": true
+        },
+        {
+          "id": "2334",
+          "concept": "where",
+          "input": "xwár",
+          "target": "hwǣr",
+          "outputs": [
+            "hwǣr"
+          ],
+          "match": true
+        }
+      ],
+      "historical_baseline_deltas": [
+        {
+          "id": "1992",
+          "concept": "door",
+          "baseline": [
+            "dor"
+          ],
+          "variant": [
+            "dōr"
+          ]
+        }
+      ]
+    }
+  ],
+  "temporary_workspace_cleaned": true,
+  "protected_unchanged": true
+}

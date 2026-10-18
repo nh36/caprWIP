@@ -1,0 +1,106 @@
+{
+  "reviewed_source_commit": "8e14930b26f7b0c57ad6566970212bd727d88ad1",
+  "source_sha256": "d9b8e0f8698870d73a78e505c9615ce6040239be66d5f7c845c0e2d8093c0a21",
+  "production_binary_sha256": "da3ba5adebbe459499ec96397acd76dc41b7d8a3857f39682c28ae49c70a11ef",
+  "runner": "docker",
+  "foma_version": "foma 0.10.0alpha",
+  "build_timestamp": "2026-10-18T10:39:51+0100",
+  "capabilities": [
+    "fresh supported backend-container production/sandbox rebuild",
+    "actual production and stage-bin flookup execution",
+    "full original-holding/evidence validation",
+    "full Germanic pytest; no availability skips",
+    "historical isolated replay; full traces and firing censuses"
+  ],
+  "audit_rows": 395,
+  "selected_rows": 389,
+  "original_rows_preserved": 387,
+  "new_ids": [
+    "2333",
+    "2334"
+  ],
+  "matched": 381,
+  "mismatch_ids": [
+    "1973",
+    "2013",
+    "2030",
+    "2162",
+    "2224",
+    "2240",
+    "2298",
+    "2300"
+  ],
+  "original_identity_fields_checked": [
+    "concept",
+    "proto",
+    "proto_norm",
+    "fst_input",
+    "word_stress",
+    "phonological_finality",
+    "counterpart",
+    "outputs"
+  ],
+  "production_controls": {
+    "θárą": "þær",
+    "bázą": "bær",
+    "dúrą": "dor"
+  },
+  "sc112_firings": [
+    {
+      "row_id": "2333",
+      "concept": "there",
+      "input": "θár",
+      "before": "*θ*á*r",
+      "after": "*θ*ā*r"
+    },
+    {
+      "row_id": "2334",
+      "concept": "where",
+      "input": "xwár",
+      "before": "*x*w*á*r",
+      "after": "*x*w*ā*r"
+    }
+  ],
+  "new_outputs": {
+    "2333": "þǣr",
+    "2334": "hwǣr"
+  },
+  "protected_scientific_files_verified_against_reviewed_commit": 68,
+  "full_suite": {
+    "passed_tests": 1453,
+    "passed_subtests": 9003,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "focused_closure_suite": {
+    "passed_tests": 92,
+    "passed_subtests": 425,
+    "failed": 0,
+    "skipped": 0
+  },
+  "survey_validation": {
+    "mode": "full",
+    "audit_rows": 395,
+    "evidence_records": 6554,
+    "core_pairs": 790,
+    "unreviewed_core_rows": 0,
+    "unchecked_row_targets": 0,
+    "preserved_limit": "RingeTaylor2014 identity/conventions not verified; rt-conventions verification_gap"
+  },
+  "historical_applicability_rows_per_source": 393,
+  "status": "verified",
+  "control_plane": {
+    "refresh": "CONTROL PLANE CLEAN",
+    "SC112_check": "propagation checks passed",
+    "full_graph_check": "CONTROL PLANE CLEAN"
+  },
+  "reader_facing_semantics": "passed",
+  "lexical_integration": "full-mode projection check passed",
+  "validation_environment": "Host Python and local declared holdings; all Foma/flookup execution routed to the supported backend container. The temporary validation-only CLI adapters were outside the repository.",
+  "resolved_validation_adapter_failure": {
+    "test": "test_final_z_firing_populations.py::Sc097SyntheticControlTests::test_synthetic_controls_behave_as_adjudicated",
+    "message": "Error reading file '/dev/stdin'",
+    "repair": "Temporary validation adapter materialized a real temporary script inside the container; no production or test expectation changed. Targeted test and final full suite passed."
+  }
+}

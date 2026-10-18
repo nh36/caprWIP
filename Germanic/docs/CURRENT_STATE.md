@@ -40,10 +40,16 @@ and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
   `43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce`
-- selected-387 corpus fingerprint (`outputs_sha256`):
+- selected-389 corpus fingerprint (`outputs_sha256`):
   `53769ef582dd6d119bacc18f808612980a1f02dfed2f94a6e30645bb9de00a9e`
 - lexical-input projection (`lexical_outputs_sha256`):
   `c44d73698e2fa2717366e951a75bbb02d19aa677faf51fc86dfa25187556b6da`
+
+The SC112 expansion adds only rows 2333 and 2334 (*there* and *where*):
+389 selected rows, 381 matches and the same eight mismatches. Every prior
+387 input, target, context and output is preserved in `*_pre_sc112_expansion.*`;
+the original-393 comparative survey remains a distinct historical scope
+from the current 395-row audit inventory.
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.

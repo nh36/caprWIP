@@ -256,30 +256,68 @@ only a serialization convention; it does not alter the verified Foma input
 
 ## Historical receipt replay
 
-The compressed follow-up receipt remains a replay of the pre-SC112 selected
-387-row state. The driver accepts `--source-fst` and `--corpus-tsv` overrides
-for this purpose; the live corpus guard remains fail-closed at 387 rows.
-Inside the backend container, materialize the two pinned files without
-touching canonical sources, then run:
+The compressed follow-up receipt preserves the pre-SC112 selected 387-row
+state plus the two candidate rows. Run this command from the host repository
+root with the supported backend container running:
 
 ```sh
-git show 3f3deb56f81a76324eefcc68401887f03a15a674:Germanic/fsts/germanic.txt > /tmp/sc015-pre-sc112.foma
-git show 3f3deb56f81a76324eefcc68401887f03a15a674:Germanic/data/germanic-aligned-final.tsv > /tmp/sc015-pre-sc112.tsv
-git show 3f3deb56f81a76324eefcc68401887f03a15a674:Germanic/data/entry_context_metadata.tsv > /tmp/entry_context_metadata.tsv
-cp /tmp/entry_context_metadata.tsv Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/entry_context_metadata.tsv
-python3 Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/followup_experiment.py \
-  --source-fst /tmp/sc015-pre-sc112.foma \
-  --corpus-tsv /tmp/sc015-pre-sc112.tsv \
-  --order-receipt Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/followup-receipt.json.gz \
-  --candidate-tsv Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/candidate_expansion.tsv \
-  --work-dir Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/replay-work \
-  --receipt Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/replay-receipt.json
+python3 -B Germanic/docs/sound_changes/audits/sc015-r-adverb-lengthening-investigation/followup_experiment.py \
+  --report /tmp/sc112-historical-verification.json
 ```
 
-The command must report 389 rows including exactly the two candidate rows,
-and writes a new receipt; it must not overwrite `followup-receipt.json.gz`.
-The historical source and corpus hashes in the new receipt are checked
-against the pinned commit before comparing model identifiers and candidate
-results with the preserved compressed receipt.
-Remove the temporary metadata, work directory and replay receipt after the
-comparison.
+The optional report path must not already exist; omitting it prints only to
+stdout. No manual metadata copying or cleanup is required. Historical FST,
+corpus, context metadata and helper sources come from
+`3f3deb56f81a76324eefcc68401887f03a15a674`; the frozen pre-SC112 output table
+comes from reviewed checkpoint `8e14930b26f7b0c57ad6566970212bd727d88ad1`.
+The host validates the pinned inputs before launching Foma. The container
+repeats validation, including exact imported-helper hashes, and compiles an
+isolated identity baseline with the existing experimental compiler. Native
+and parsed-order baseline execution must agree with the frozen 387 rows.
+The live production binary is never used as a historical baseline.
+
+The executable order is parsed from the pinned FST, not supplied by a
+receipt or the live cascade. Every experimental order must equal the
+preserved receipt's order before execution. Context metadata is mandatory:
+in particular, row 2326 retains its unstressed evaluator input. The old
+source/corpus/order overrides have been replaced by this fail-closed replay.
+
+The receipt's compressed SHA256 is
+`1c10e6908f8aa309693e9c7c6b9ccf859aa7ce5ab40cb6ed5617b15f262b760c`;
+its decompressed SHA256 is
+`059993fe139d03b5cdd1475e0a22e29f79844020201db959055f15a3300ac252`.
+Both identities are checked without rewriting the receipt. Verification
+compares every original and candidate output, complete row/probe traces,
+event censuses, model recipes and orders, native-wrapper outputs, candidate
+results and summaries. The small report records per-model scientific hashes,
+baseline binary/script provenance, Foma version and corrected baseline
+deltas. Compiler logs and absolute temporary paths are execution diagnostics,
+not scientific equivalence fields; binary hashes identify the particular
+build but are not expected to be byte-deterministic across Foma builds.
+
+The original receipt's `original_deltas` is explicitly not an equivalence
+authority: the old code compared the first model with a production binary
+and later models with the first experimental model. Each replayed model now
+compares against the same isolated historical baseline by stable row ID.
+The original receipt and its reported results remain unchanged.
+
+All source copies, metadata, bins and intermediate traces live in
+`TemporaryDirectory` workspaces outside the repository, cleaned on success
+and exceptions. No diagnostic-preservation option is provided. Only an
+explicitly requested small report persists. Repository-protection hashes
+must remain unchanged; do not run canonical rebuilds concurrently with
+historical replay.
+
+The closure run is recorded in `followup-replay-verification.json`
+(10,442 bytes, complete scientific-field digests rather than raw traces)
+and `closure-verification.json` (fresh production binary provenance,
+explicit invariant checks and strict validation counts). All three replayed
+models matched all scientific fields of the preserved receipt. Corrected
+historical-baseline comparisons found no original-row deltas for the early
+or intermediate models, and only row 1992, *door*, for the late model.
+The complete strict suite passed 1,453 tests and 9,003 subtests with zero
+failures, errors or skips. The supported backend container executed the
+binary-dependent checks, including the production controls yielding *þær*,
+*bær* and *dor*. No original-page reading status was upgraded: the existing
+Ringe--Taylor conventions verification gap remains a declared survey limit,
+not a newly completed source consultation.

@@ -3,8 +3,7 @@
 import csv
 import io
 import re
-import shutil
-import subprocess
+import sys
 import unittest
 import importlib.util
 from pathlib import Path
@@ -17,7 +16,10 @@ CORPUS = GERMANIC / "data" / "germanic-aligned-final.tsv"
 BASELINE = GERMANIC / "docs/sound_changes/cascade_baseline/cascade_baseline_outputs.tsv"
 PREVIOUS = GERMANIC / "docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc112_expansion.tsv"
 LEGACY = GERMANIC / "docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv"
-RUNTIME = ROOT / "backend" / "old_english.bin"
+sys.path.insert(0, str(GERMANIC / "tools"))
+import pytest
+import oe_pipeline
+from capr_runtime import check_build_manifest, layout, run_in_runner
 
 
 def rows(path):
@@ -88,12 +90,14 @@ class Sc112Tests(unittest.TestCase):
         self.assertEqual(census["corpus_firing_count"], "2")
         self.assertEqual(census["lexical_witnesses"], "there, where")
 
-    @unittest.skipUnless(shutil.which("flookup") and RUNTIME.exists(),
-                         "canonical flookup runtime unavailable")
+    @pytest.mark.runtime
     def test_production_transducer_executes_current_population_and_controls(self):
+        self.assertEqual(check_build_manifest(
+            oe_pipeline.expected_snapshot_bins() + ["old_english.bin"], layout()
+        ), [])
         inputs = [row["fst_input"] for row in self.current.values()]
-        result = subprocess.run(
-            ["flookup", "-i", str(RUNTIME)],
+        result = run_in_runner(
+            "flookup -i old_english.bin",
             input="\n".join(inputs) + "\n",
             text=True,
             capture_output=True,
@@ -116,8 +120,8 @@ class Sc112Tests(unittest.TestCase):
             {row_id: outputs[row["fst_input"]][0] for row_id, row in self.current.items()},
             {row_id: row["outputs"] for row_id, row in self.current.items()},
         )
-        controls = subprocess.run(
-            ["flookup", "-i", str(RUNTIME)],
+        controls = run_in_runner(
+            "flookup -i old_english.bin",
             input="θárą\nbázą\ndúrą\n",
             text=True,
             capture_output=True,
