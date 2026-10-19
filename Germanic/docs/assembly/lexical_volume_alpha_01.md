@@ -29,7 +29,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:
 
-- Regular derivations: 86
+- Regular derivations: 88
 - Attested variants: 4
 - Early analogy: 36
 - Late analogy: 29
@@ -6411,6 +6411,212 @@ control for [SC029 OEAwwjResolution](#rule-OEAwwjResolution).
 The corrected input and distinct intermediate history now make that
 contrast scientifically informative rather than merely spelling-compatible.
 No additional lexeme or analogical mechanism is introduced.
+
+### there — OE _þǣr_
+
+Derivation: _\*θár_ > _þǣr_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*θár_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.611\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.359\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PNWGmc Monosyllabic Final R Lengthening & \emph{*θār} \\
+\mbox{EAF Long A Fronting} & \emph{*θǣr} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _þǣr_
+
+#### Old English evidence
+
+Old English [þǣr]{.iv lang=oe sort=thaer role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:21:1"} 'there'
+is the normalized West Saxon adverb. Clark Hall lemmatizes
+[ðǣr]{.iv lang=oe sort=thaer role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:23:1"} 'there';
+the substitution of thorn for eth does not change the vowel or the
+identity of the word [@ClarkHall1960, p. 305]. Hill contrasts West
+Saxon *ðǣr* with Anglian
+[ðēr]{.iv lang=oe sort=ther role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:27:1"} 'there':
+both have long vowels, with different dialectal qualities
+[@Hill2017, pp. 142--143]. These are normalized lexical and dialect
+forms, rather than diplomatic transcriptions of individual manuscripts.
+
+#### Reconstruction and comparative evidence
+
+Kroonen reconstructs [þar]{.iv .recon lang=pgmc sort=thar role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:34:1"}
+'there', formed from the demonstrative stem \emph{*þa-} with locative
+\emph{*-r} [@Kroonen2013, p. 534]. Orel likewise identifies the
+demonstrative formation, but prints the alternatives \emph{*þar} and
+\emph{*þēr} [@Orel2003, p. 416]. His long-vowel citation must be
+kept distinct from the earlier short-vowel antecedent.
+The selected [θár]{.iv .recon lang=pgmc sort=thar role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md:40:1"}
+'there' represents the short antecedent with an explicit root accent
+and a phonological dental symbol; neither addition is a literal
+quotation of the dictionaries.
+
+The comparative distribution leaves the date of lengthening open.
+Gothic [þar]{.lex lang=goth} 'there' has a spelling that does not
+distinguish short *a* from long *ā*. More informative for conditioning
+is the contrast between Old High German
+[dār]{.lex lang=ohg} 'there' and the short vowels of
+[dăra]{.lex lang=ohg} 'thither' and
+[dărōt]{.lex lang=ohg} 'thither'. Hill uses this contrast to support
+lengthening in monosyllables ending in inherited *r*
+[@Hill2017, pp. 142--148].
+
+#### Development to Old English
+
+The adopted derivation applies
+[SC112, stressed monosyllabic lengthening before inherited final *r*](#rule-PNWGmcMonosyllabicFinalRLengthening),
+giving \emph{*þar} > \emph{*þār}. Subsequent
+[SC101, long-*ā* fronting](#rule-EAFLongAFronting) supplies
+\emph{*þǣr}, yielding West Saxon *þǣr* without a change of formation
+or an analogical replacement. The vowel becomes long while it is
+still back; this is distinct from lengthening an already fronted
+short vowel.
+
+Hill argues for a Proto-Germanic date, whereas Ringe and Taylor
+place the lengthening in West Germanic and discuss deictic stress
+and reanalysis as possible explanations
+[@Hill2017, pp. 146--148; @RingeTaylor2014, p. 65].
+The regular short-*a*-to-*ǣ* development is conditional on the
+chosen antecedent and early lengthening. Its successful outcome does
+not establish that absolute date, and a word without inherited
+\emph{*i} cannot independently order SC015 relative to lengthening.
+
+### where — OE _hwǣr_
+
+Derivation: _\*xwár_ > _hwǣr_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*xwár_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.611\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.359\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PNWGmc Monosyllabic Final R Lengthening & \emph{*xwār} \\
+\mbox{EAF Long A Fronting} & \emph{*xwǣr} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\raggedright [no change]\par
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _hwǣr_
+
+#### Old English evidence
+
+Clark Hall records [hwǣr]{.iv lang=oe sort=hwaer role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:21:1"}
+'where', the West Saxon comparison form used here
+[@ClarkHall1960, p. 170]. Hill sets it beside Anglian
+[hwēr]{.iv lang=oe sort=hwer role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:24:1"} 'where'
+[@Hill2017, pp. 142--143]. The contrast concerns the quality of a
+long vowel, not lengthening in West Saxon alone. The macrons belong
+to normalized scholarly forms; they do not imply that every
+manuscript token explicitly marks quantity.
+
+#### Reconstruction and comparative evidence
+
+Kroonen gives [hwar]{.iv .recon lang=pgmc sort=hwar role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:32:1"}
+'where', an interrogative formation with locative \emph{*-r}.
+He explicitly derives the long-vowel West Germanic forms by
+monosyllabic lengthening, rejecting inherited \emph{*hwēr} as their
+source [@Kroonen2013, p. 263]. Orel instead preserves both
+[xwar]{.iv .recon lang=pgmc sort=xwar role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:37:1"} 'where'
+and \emph{*xwēr} as citation alternatives, connecting the formation
+with pronominal \emph{*xwa-} [@Orel2003, p. 198].
+The selected [xwár]{.iv .recon lang=pgmc sort=xwar role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:40:1"}
+'where' follows the short-vowel line. Its acute marks the accented
+root, while \emph{*xw-} represents the Germanic dorsal-plus-glide sequence
+corresponding to the dictionaries' \emph{*hw-} or \emph{*xw-}.
+
+The extended interrogative supplies an important morphological
+comparison. Gothic [ƕarjis]{.lex lang=goth} 'which' and Old Norse
+[hverr]{.lex lang=on} 'who, which' support an inherited disyllabic
+\emph{*hwarja-} with short root vowel. Hill argues that such a
+formation could precede lengthening of the monosyllabic adverb;
+its short vowel therefore need not date lengthening to West Germanic.
+Gothic adverbial [ƕar]{.lex lang=goth} 'where' itself leaves quantity
+ambiguous in writing [@Hill2017, pp. 142, 147--148].
+
+#### Development to Old English
+
+From short \emph{*hwar},
+[SC112, stressed monosyllabic lengthening before inherited final *r*](#rule-PNWGmcMonosyllabicFinalRLengthening)
+gives \emph{*hwār}; then
+[SC101, long-*ā* fronting](#rule-EAFLongAFronting) gives
+\emph{*hwǣr}. The initial consonant sequence is represented
+orthographically as \emph{hw-}. The derivational input with short \emph{*a} thus reaches
+*hwǣr* through lengthening followed by fronting, without inflectional
+retargeting. The parallel *þǣr* 'there' makes the same vowel
+development visible in a different pronominal formation.
+
+The historical interpretation remains narrower than a uniquely
+dated reconstruction. Hill's Proto-Germanic account depends in part
+on his explanation of the Scandinavian short-vowel forms, while Ringe
+and Taylor retain a later West Germanic lengthening
+[@Hill2017, pp. 146--148; @RingeTaylor2014, p. 65].
+The early placement adopted here preserves inherited-*r*
+conditioning before rhotacism could obscure consonant ancestry.
+That analytical choice does not establish an independently dated
+ordering against SC015 or the lowering of inherited \emph{*ē₁}
+in SC024.
 
 \clearpage
 

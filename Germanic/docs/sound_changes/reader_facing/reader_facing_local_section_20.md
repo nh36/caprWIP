@@ -2081,9 +2081,10 @@ The corpus derivation of *hwā* 'who' now fixes this rule's position empirically
 The model admits Old English *þǣr* ‘there’ and *hwǣr* ‘where’ from
 source-supported short-*a* antecedents. Their quantity and the date of the
 lengthening remain qualified: the forms do not establish a Proto-Germanic
-date, and they do not determine the order of SC015.
+date, and they do not determine the order of
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering).
 
-## SC112. Stressed monosyllabic lengthening before inherited final \emph{r} {#rule-PNWGmcMonosyllabicFinalRLengthening}
+## \CAPRRuleHeading{SC112. Stressed monosyllabic lengthening before inherited final \emph{r}}{PNWGmcMonosyllabicFinalRLengthening} {#rule-PNWGmcMonosyllabicFinalRLengthening}
 
 ```foma
 define PNWGmcMonosyllabicFinalRLengthening [
@@ -2102,7 +2103,9 @@ The early working placement preserves inherited final \emph{r} before
 rhotacism, so secondary \emph{r} does not trigger the rule. The guard also
 excludes disyllabic forms. This is a general formalization of the two
 admitted witnesses, not a lexical exception list or a claim of strict
-relative chronology against SC015 or SC024.
+relative chronology against
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering) or
+[SC024 PNWGmcLongELowering](#rule-PNWGmcLongELowering).
 
 \newpage
 

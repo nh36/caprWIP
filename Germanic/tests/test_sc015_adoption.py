@@ -223,23 +223,13 @@ class SC015AdoptionTests(unittest.TestCase):
             cwd=ROOT, text=True).splitlines(), delimiter="\t"))
         fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
         old_keys = {tuple(row[field] for field in fields) for row in old}
-        added = [row for row in table(path)
+        post_sc015 = list(csv.DictReader(subprocess.check_output([
+            "git", "show", "c92cbd9d541785986998ab2ab99a416f87da4f68:"
+            + str(path.relative_to(ROOT))],
+            cwd=ROOT, text=True).splitlines(), delimiter="\t"))
+        added = [row for row in post_sc015
                  if tuple(row[field] for field in fields) not in old_keys]
-        sc112 = [
-            row for row in added
-            if row["source_ref"] in {"there — OE þǣr", "where — OE hwǣr"}
-        ]
-        self.assertEqual(len(sc112), 4)
-        self.assertEqual(
-            {(row["language"], row["form"], row["source_ref"]) for row in sc112},
-            {
-                ("oe", "þǣr", "there — OE þǣr"),
-                ("oe", "hwǣr", "where — OE hwǣr"),
-                ("pgmc", "*θár", "there — OE þǣr"),
-                ("pgmc", "*xwár", "where — OE hwǣr"),
-            },
-        )
-        sc015 = [row for row in added if row not in sc112]
+        sc015 = added
         self.assertEqual(len(sc015), 52)
         self.assertEqual(sum(row["action"] == "add" for row in sc015), 18)
         self.assertEqual(sum(row["action"] == "remove" for row in sc015), 34)

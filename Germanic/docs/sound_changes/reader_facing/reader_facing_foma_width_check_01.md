@@ -4,7 +4,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 104.
+- Foma blocks checked: 105.
 - Blocks over the conservative 90-character threshold: 15.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
@@ -114,6 +114,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 103-pgmc-nasal-loss-before-x.md | SC103. Proto-Germanic nasal loss before \*x (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX} | 39 | 45 | no |
 | 104-nasalized-low-vowel-rounding.md | SC104. Rounding of the long nasalized low vowel (`EAFNasalizedLowRounding`) {#rule-EAFNasalizedLowRounding} | 58 | 32 | no |
 | 111-endingless-aw-fragment.md | SC111. Endingless \emph{aw} fragment (`PWGmcEndinglessAw`) {#rule-PWGmcEndinglessAw} | 26 | 38 | no |
+| 112-monosyllabic-final-r-lengthening.md | SC112. Stressed monosyllabic lengthening before inherited final \emph{r} (`PNWGmcMonosyllabicFinalRLengthening`) {#rule-PNWGmcMonosyllabicFinalRLengthening} | 11 | 47 | no |
 
 ## Lines that would have overflowed under the old rendering
 

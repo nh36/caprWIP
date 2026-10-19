@@ -130,8 +130,9 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 165)
-        added_ids = {"2137", "2185", "2200", "2224", "2283"}
+        self.assertEqual(len(current), 167)
+        # Five earlier publications plus SC112's two existing regular witnesses.
+        added_ids = {"2137", "2185", "2200", "2224", "2283", "2333", "2334"}
         added = [r for r in current if r["row_id"] in added_ids]
         self.assertEqual({r["row_id"] for r in added}, added_ids)
         unchanged = [r for r in current if r["row_id"] not in added_ids]

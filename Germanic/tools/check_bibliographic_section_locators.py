@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import re
 import sys
 
+from check_bibliographic_locator_render import PDF_LOCATOR_RE
+
 ROOT = Path(__file__).resolve().parent.parent
-PATTERN = re.compile(r"\bsects?\.?\b", re.IGNORECASE)
+PATTERN = PDF_LOCATOR_RE
 # Files to skip (documentation and helpers)
 SKIP_NAMES = {"style_guide.md", "README.md"}
 
@@ -29,7 +30,7 @@ def main():
             report.append((f.relative_to(ROOT), hits))
             total_hits += len(hits)
     if report:
-        print('Found bibliographic section-locator tokens (sect/sects) in source files:')
+        print('Found bibliographic section locators (sect/sects plus number) in source files:')
         for fp, hits in report:
             print(f'\nFile: {fp}')
             for ln, line in hits[:10]:
@@ -40,7 +41,7 @@ def main():
         print('Please replace bibliographic locator labels with §/§§ or use explicit § markers in citation suffixes.')
         sys.exit(2)
     else:
-        print('No sect/sects tokens found in source Markdown.')
+        print('No sect/sects citation locators found in source Markdown.')
         return 0
 
 if __name__ == '__main__':

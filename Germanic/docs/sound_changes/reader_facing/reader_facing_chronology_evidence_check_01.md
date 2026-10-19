@@ -4,8 +4,8 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 
 ## Summary
 
-- Sections checked: 100.
-- Sections with warnings: 66.
+- Sections checked: 101.
+- Sections with warnings: 67.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -109,3 +109,4 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 103-pgmc-nasal-loss-before-x.md | SC103. Proto-Germanic nasal loss before \*x (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
 | 104-nasalized-low-vowel-rounding.md | SC104. Rounding of the long nasalized low vowel (`EAFNasalizedLowRounding`) {#rule-EAFNasalizedLowRounding} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
 | 111-endingless-aw-fragment.md | SC111. Endingless \emph{aw} fragment (`PWGmcEndinglessAw`) {#rule-PWGmcEndinglessAw} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 112-monosyllabic-final-r-lengthening.md | SC112. Stressed monosyllabic lengthening before inherited final \emph{r} (`PNWGmcMonosyllabicFinalRLengthening`) {#rule-PNWGmcMonosyllabicFinalRLengthening} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |

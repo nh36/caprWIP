@@ -1,4 +1,16 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+add	oe	hwēr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md	SC112 lexical publication: Hill2017 pp.142-143, normalized Anglian comparator.
+add	oe	hwǣr	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md	SC112 lexical publication: ClarkHall1960 p.170, unchanged selected target.
+add	oe	ðēr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md	SC112 lexical publication: Hill2017 pp.142-143, normalized Anglian comparator.
+add	oe	ðǣr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md	SC112 lexical publication: ClarkHall1960 p.305, dictionary dental spelling.
+add	oe	þǣr	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md	SC112 lexical publication: unchanged normalized West Saxon selected target.
+add	pgmc	*xwár	source_protoform	lexical_protoform	where — OE hwǣr	SC112 lexical publication: existing PROTOFORM displayed in new model metadata.
+add	pgmc	*θár	source_protoform	lexical_protoform	there — OE þǣr	SC112 lexical publication: existing PROTOFORM displayed in new model metadata.
+add	pgmc	hwar	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md	SC112 lexical publication: Kroonen2013 p.263 short antecedent.
+add	pgmc	xwar	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md	SC112 lexical publication: Orel2003 p.198 short citation alternative.
+add	pgmc	xwár	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md	SC112 lexical publication: unchanged selected accented input, separate from source notation.
+add	pgmc	þar	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md	SC112 lexical publication: Kroonen2013 p.534 short antecedent.
+add	pgmc	θár	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md	SC112 lexical publication: unchanged selected accented input, separate from source notation.
 add	oe	þǣr	target_form	lexical_heading	there — OE þǣr	SC112 authorized source-backed witness.
 add	oe	hwǣr	target_form	lexical_heading	where — OE hwǣr	SC112 authorized source-backed witness.
 add	pgmc	*xwár	selected_input	trace_proto_input	where — OE hwǣr	SC112 authorized selected input.
