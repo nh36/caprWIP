@@ -32,11 +32,13 @@ manuscript and index projections are generated.
 
 ## Distinct supported presentations
 
-The default class-manifest book consumes the 161 mature models, preserving
-their complete arguments and all seven derivation classes. The complete
-387-row compact derivation report has a separate selective commentary insertion
-route, currently 19 certified narratives with explicit outstanding obligations.
-The reconstruction survey covers 393 identities including six research-only rows.
+The default class-manifest book consumes the 167 mature models, including
+88 regular entries, preserving their complete arguments and all seven derivation
+classes. The complete 389-row compact derivation report has a separate selective
+commentary insertion route, currently 21 certified narratives with explicit
+outstanding obligations. The current audit covers 395 identities including
+six research-only rows; the original reconstruction survey's 393-row scope
+remains historical.
 See the [generated population summary](../lexeme_reports/pgmc_integration/population_summary.md)
 for current counts; these are different populations, not competing corpus owners.
 
@@ -67,7 +69,10 @@ nested Docker renderers, which run the strict graph check and refuse stale
 inputs instead of refreshing again. Called without that option, each renderer
 still refreshes normally. This is not a validation-bypass option.
 
-## SC034 publication integration receipt
+## Historical SC034 publication integration receipt
+
+The counts, page locations and validation results below describe the SC034
+publication state, not the current populations linked above.
 
 This editorial integration follows scientific release `25d931d5`; it does not
 change SC034/SC111, selected inputs, targets or protected scientific baselines.

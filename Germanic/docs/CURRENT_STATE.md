@@ -5,9 +5,15 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
-Sequential per-SC adjudication, with separately instructed scoped research
-and implementation decisions. The next SC is derived from the registry
-and the explicit programme policy, never stated here:
+SC112 scientific implementation and lexical publication are complete; the
+[publication receipt](sound_changes/audits/sc112-lexical-publication.md)
+records the evidence and validation. Current lexical counts live in the
+[generated population summary](lexeme_reports/pgmc_integration/population_summary.md).
+The next priority is the separate paved-road architecture for cheaper coding
+agents; that work must first inspect its existing worktree and foundation commits.
+
+For subsequently authorized per-SC adjudication, the next SC is derived from
+the registry and the explicit programme policy, never stated here:
 `python3 Germanic/tools/adjudicate.py --next`
 
 `registry/adjudication_programme.json` owns the administrative programme

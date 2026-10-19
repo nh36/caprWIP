@@ -44,15 +44,15 @@ decision. Notation, different cells or endpoints alone do not select discussion.
 Ordinary `regular` rows with an empty TSV `NOTE`, no selected editorial case and no manual pilot/full
 report should **not** receive a generated `### Lexeme report`.
 
-The complete compact report retains all 387 runnable derivations. The
+The complete compact report retains all 389 runnable derivations. The
 existing insertion layer publishes certified commentary without duplicating
-those traces. The separate class-manifest book still assembles its 161
+those traces. The separate class-manifest book assembles its 167
 mature models; absence from that selective manuscript is not absence of a
 derivation write-up. The provisional examples are never inserted as prose.
 
 Canonical refresh regenerates coverage and audit/publish insertion outputs.
 `validate_oe_lexeme_report_assembly.py` checks both certification routes,
-the 387-row identity set, missing-report placeholders and format-test exclusion.
+the 389-row selected identity set, missing-report placeholders and format-test exclusion.
 Scientific adoption remains a separate adjudication, never a publication effect.
 
 ## Entry structure inside the generated derivation report
