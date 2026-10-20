@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import csv
 import re
+import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -58,6 +59,87 @@ def resolve_stages(row_id: str, proto: str, protoform: str, sidecar: dict[str, d
 
 
 REQUIRED_METADATA = ("PROTO", "PROTOFORM", "COUNTERPART", "DERIVATION_CLASS")
+
+# Editorial presentation order. Entries appear by derivation class and, within a
+# class, alphabetically by English headword. Stable row IDs, filenames and corpus
+# order never decide a position. The only SOURCE for departures from the
+# alphabetical default is the exceptions table below (empty unless an editorial
+# decision requires an exception); manifest_all_by_class.tsv is generated from it.
+EDITORIAL_ORDER_PATH = ASSEMBLY_DIR / "lexical_editorial_order.tsv"
+EDITORIAL_ORDER_COLUMNS = ("row_id", "sort_as", "reason")
+# Plain a-z headword with an optional parenthetical qualifier, e.g. "make (3sg)".
+# Anything else needs an explicit sort_as exception rather than an implicit rule.
+HEADWORD_PATTERN = re.compile(r"^([a-z]+)(?: \(([a-z0-9.]+)\))?$")
+
+
+def load_editorial_order(path: Path = EDITORIAL_ORDER_PATH) -> dict[str, dict[str, str]]:
+    """row_id -> exception row (sort_as, reason). Fails closed on malformed rows."""
+    with path.open(encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        if tuple(reader.fieldnames or ()) != EDITORIAL_ORDER_COLUMNS:
+            raise ValueError(f"{path.name}: columns must be {', '.join(EDITORIAL_ORDER_COLUMNS)}")
+        exceptions: dict[str, dict[str, str]] = {}
+        for line, row in enumerate(reader, 2):
+            where = f"{path.name}:{line}"
+            clean = {key: (value or "").strip() for key, value in row.items()}
+            if not clean["row_id"].isdigit():
+                raise ValueError(f"{where}: row_id {clean['row_id']!r} is not a numeric row ID")
+            if clean["row_id"] in exceptions:
+                raise ValueError(f"{where}: duplicate exception for row_id {clean['row_id']}")
+            if not HEADWORD_PATTERN.fullmatch(clean["sort_as"]):
+                raise ValueError(f"{where}: sort_as {clean['sort_as']!r} is not a plain a-z headword")
+            if not clean["reason"]:
+                raise ValueError(f"{where}: an exception must state its editorial reason")
+            exceptions[clean["row_id"]] = clean
+    return exceptions
+
+
+def headword_key(headword: str, where: str) -> tuple[str, str]:
+    match = HEADWORD_PATTERN.fullmatch(headword.strip())
+    if match is None:
+        raise ValueError(
+            f"{where}: headword {headword!r} is outside plain a-z collation; "
+            f"add a sort_as exception to {EDITORIAL_ORDER_PATH.name}"
+        )
+    return match.group(1), match.group(2) or ""
+
+
+def counterpart_key(counterpart: str) -> str:
+    """Tie-break collation for the Old English counterpart: diacritics folded, ae/th spelled out."""
+    folded = unicodedata.normalize("NFD", counterpart.casefold())
+    folded = "".join(char for char in folded if not unicodedata.combining(char))
+    return folded.replace("æ", "ae").replace("þ", "th").replace("ð", "th")
+
+
+def editorial_sort_key(model: dict[str, object], exceptions: dict[str, dict[str, str]]) -> tuple:
+    row_id = str(model["row_id"]) if model["row_id"] is not None else ""
+    exception = exceptions.get(row_id)
+    headword = exception["sort_as"] if exception else str(model["lexical_item"])
+    return (
+        model["class_rank"],
+        headword_key(headword, model["path"].name),
+        counterpart_key(str(model["metadata"].get("COUNTERPART", ""))),
+    )
+
+
+def order_models(models: list[dict[str, object]], exceptions: dict[str, dict[str, str]]) -> list[dict[str, object]]:
+    """Return models in editorial order after validating the exceptions against them."""
+    row_ids = [str(model["row_id"]) for model in models if model["row_id"] is not None]
+    duplicated = sorted(item for item, count in Counter(row_ids).items() if count > 1)
+    if duplicated:
+        raise ValueError(f"duplicate model entries for row_id: {', '.join(duplicated)}")
+    unknown = sorted(set(exceptions) - set(row_ids))
+    if unknown:
+        raise ValueError(f"{EDITORIAL_ORDER_PATH.name} references unknown row_id: {', '.join(unknown)}")
+    keyed = [(editorial_sort_key(model, exceptions), model) for model in models]
+    ties = [key for key, count in Counter(key for key, _ in keyed).items() if count > 1]
+    if ties:
+        raise ValueError(
+            f"entries tie in editorial order {ties[:3]}; resolve with a sort_as exception in {EDITORIAL_ORDER_PATH.name}"
+        )
+    return [model for _, model in sorted(keyed, key=lambda pair: pair[0])]
+
+
 CLASS_CONFIG = {
     "regular": ("regular", "Regular derivations", 1),
     "attested_variant": ("attested_variant", "Attested variants and selected comparison forms", 2),
@@ -267,13 +349,8 @@ def main() -> None:
     models = [parse_model_entry(path) for path in sorted(MODEL_DIR.glob("*.model.md"))]
     stage_map = load_stage_metadata()
 
-    models.sort(
-        key=lambda model: (
-            model["class_rank"],
-            model["row_id"] if model["row_id"] is not None else 999999,
-            model["path"].name,
-        )
-    )
+    editorial_exceptions = load_editorial_order()
+    models = order_models(models, editorial_exceptions)
 
     by_bucket: dict[str, list[dict[str, object]]] = defaultdict(list)
     count_by_raw_class: Counter[str] = Counter()
@@ -358,6 +435,12 @@ def main() -> None:
         "## Counts by derivation class",
         "",
         *format_count_table(count_by_raw_class),
+        "",
+        "## Editorial order",
+        "",
+        "- Entries are ordered by derivation class, then alphabetically by English headword;"
+        " row IDs and filenames do not decide position.",
+        f"- Explicit editorial exceptions (`{EDITORIAL_ORDER_PATH.name}`): **{len(editorial_exceptions)}**",
         "",
         "## Trace-match status",
         "",

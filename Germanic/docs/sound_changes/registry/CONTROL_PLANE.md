@@ -5,6 +5,17 @@ state. Rule: for each fact there is exactly one editable SOURCE; everything
 else is GENERATED from it or ARCHIVE. Never hand-edit a GENERATED file;
 never treat an ARCHIVE file as current authority.
 
+Presentation principle: the published book is an editorial projection of the
+scientific database, not a transcription of its storage or computational
+order. Stable identifiers (SC IDs, row IDs, filenames), corpus order and
+executable cascade order identify and compute things; they never decide where
+anything is published. Sound-law chapters follow `reader_chapters.tsv` /
+`reader_files.tsv` with order derived into the generated `reader_manifest.tsv`;
+lexical entries follow derivation class, then alphabetical headword, with
+explicit exceptions only in `lexical_editorial_order.tsv`; the index has its
+own sort keys. Reordering a projection never changes reconstructions,
+selections, rules, derivations, baselines or identifiers.
+
 ## SOURCE (hand-edited, authoritative)
 
 Three kinds: **machine-state** (structured facts), **scientific-reasoning**
@@ -32,6 +43,7 @@ are GENERATED or ARCHIVE.
 | `cascade_baseline/approved_sc034_output_migration.json` | machine-state | Exact approved straw output and match-flag transition, unchanged input/attested target. Apply with `adjudicate.py SC034 --adopt-cell-baseline --approval approved_sc034_output_migration.json`; preserves separate pre-SC034 snapshots and every earlier approval/archive |
 | `cascade_baseline/approved_sc015_targets_migration.json` | machine-state | Exact authorized three-learn target/output transition accompanying SC015's reformulation, with unchanged inherited inputs and match flags. Apply with `adjudicate.py SC015 --adopt-cell-baseline --approval approved_sc015_targets_migration.json`; preserves separate pre-SC015 snapshots and every older approval/archive |
 | `Germanic/docs/CURRENT_STATE.md` | publication-prose | Current phase and standard commands (the next SC is derived: `adjudicate.py --next`) |
+| `Germanic/docs/assembly/lexical_editorial_order.tsv` | publication-prose | Explicit exceptions to the default lexical presentation order (derivation class, then alphabetical English headword): `row_id`, `sort_as` headword, `reason`. Empty unless a scholarly decision requires an exception. Consumed only by `build_class_manifests.py`; it never alters an entry's data or identity |
 | `Germanic/docs/README.md`, `sound_changes/README.md` | publication-prose | Navigation |
 | `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md`, `audits/ADJUDICATION_TEMPLATE.md` | publication-prose | Method |
 
@@ -74,7 +86,7 @@ inventory ordinal; no archival positions are invented for them.
 | `Germanic/fsts/old_english_sandbox.txt` | `tools/generate_oe_sandbox.py` (oe_pipeline projection) |
 | `cascade_baseline/rule_coverage_census.tsv` | `tools/rule_coverage_census.py` (fails closed if the canonical trace evidence is stale — the refresh rebuilds the trace first) |
 | `docs/assembly/capr_book_draft_alpha_01.md` | `docs/assembly/build_capr_book_draft.py` |
-| `debug_snapshots/oe_derivation_class_trace_report.{txt,compact.md}`, `docs/assembly/manifest_*.tsv`, `manifest_summary.md`, `lexical_volume_alpha_01.md`, `lexical_source_provenance.json` | `lexical_sources` node: pure projection of the fresh canonical full trace + corpus + model entries + entry-stage sidecar, via existing compact/manifest/assembly builders. Input and output digests prevent stale lexical histories from silently entering the book |
+| `debug_snapshots/oe_derivation_class_trace_report.{txt,compact.md}`, `docs/assembly/manifest_*.tsv`, `manifest_summary.md`, `lexical_volume_alpha_01.md`, `lexical_source_provenance.json` | `lexical_sources` node: pure projection of the fresh canonical full trace + corpus + model entries + entry-stage sidecar + `lexical_editorial_order.tsv`, via existing compact/manifest/assembly builders. `build_class_manifests.py` alone fixes lexical presentation order (derivation class, then alphabetical headword, then the exceptions SOURCE); every other consumer reads the manifest order. Input and output digests prevent stale lexical histories from silently entering the book |
 | `docs/book/index_verborum_*` + `docs/assembly/book_draft_index_registry.tex` | `tools/build_index_verborum.py` |
 
 Runtime evidence (container-built; the graph rebuilds these ONLY when their

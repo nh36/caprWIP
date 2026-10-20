@@ -1056,9 +1056,9 @@ def build_front_matter(
 ) -> list[str]:
     compact_regular_active = regular_book_prose_dir is not None
     alpha_blurb = (
-        "_Alpha 01 compact lexical volume. This volume assembles the current lexeme-report corpus in manifest order. Regular entries use the compact book-prose layer; non-regular entries retain their current entry prose._"
+        "_Alpha 01 compact lexical volume. This volume assembles the current lexeme-report corpus in editorial order. Regular entries use the compact book-prose layer; non-regular entries retain their current entry prose._"
         if compact_regular_active
-        else "_Alpha 01 lexical volume. This volume assembles the current lexeme-report corpus in manifest order without revising entry-level prose, citations, locators, or transducer logic._"
+        else "_Alpha 01 lexical volume. This volume assembles the current lexeme-report corpus in editorial order without revising entry-level prose, citations, locators, or transducer logic._"
     )
     method_paragraph = (
         "Regular entries use the compact book-prose layer, while the remaining derivation classes retain their fuller entry prose. Each entry keeps a derivational summary and a boxed trace divided between Earlier Germanic and Old English developments."
@@ -1093,7 +1093,7 @@ def build_front_matter(
         "## Derivation classes",
         "",
         normalize_print_text(
-            "The lexical catalogue is ordered by seven derivation classes in the current manifest. Counts in this alpha are:"
+            "The lexical catalogue is ordered by seven derivation classes and, within each class, alphabetically by headword. Counts in this alpha are:"
         ),
         "",
         f"- Regular derivations: {counts['regular']}",

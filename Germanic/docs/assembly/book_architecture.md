@@ -161,8 +161,22 @@ evidence for further rule repair in the lexical volume.
   5. reconstructed Old English comparator
   6. known but unmodelled remodelling
   7. unexplained / unmodelled
-- order entries within each part by numeric row ID
-- break ties lexicographically by filename if needed
+- order entries within each part alphabetically by English headword (a
+  parenthetical qualifier such as `(3sg)` sorts after the bare headword; the
+  Old English counterpart is the secondary key)
+- record any scholarly departure from that default as an explicit row in
+  `lexical_editorial_order.tsv` (`row_id`, `sort_as`, `reason`), the only
+  hand-edited source of lexical presentation order
+
+Presentation order is editorial. Stable row IDs, model-entry filenames, corpus
+order and derivation order identify and compute entries but never position them;
+renumbering an entry or adding one in any order cannot move another. The
+published book is an editorial projection of the scientific database, not a
+transcription of its storage order. `build_class_manifests.py` is the only
+place that sorts: it writes `manifest_all_by_class.tsv`, and the lexical volume,
+combined book, tables of contents and index projections all consume that
+generated order. Positions (`global_order`, `class_order`) are therefore
+presentation columns only; address entries by `row_id`.
 
 ### Heading hierarchy
 

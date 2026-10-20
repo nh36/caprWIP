@@ -18,6 +18,11 @@
 | `known_unmodelled` (Known but unmodelled remodellings) | 2 |
 | `unexplained_unmodelled` (Unexplained or deliberately unmodelled exceptions) | 5 |
 
+## Editorial order
+
+- Entries are ordered by derivation class, then alphabetically by English headword; row IDs and filenames do not decide position.
+- Explicit editorial exceptions (`lexical_editorial_order.tsv`): **0**
+
 ## Trace-match status
 
 | Trace-match status | Count |

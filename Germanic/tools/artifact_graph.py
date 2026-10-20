@@ -264,6 +264,7 @@ def _lexical_input_hashes() -> dict:
               REPO_ROOT / "backend/oe_input_context.py",
               ASSEMBLY / "section_introductions_draft.md",
               ASSEMBLY / "build_class_manifests.py",
+              ASSEMBLY / "lexical_editorial_order.tsv",
               ASSEMBLY / "build_full_lexical_volume.py",
               TOOLS / "oe_derivation_class_trace_report.py",
               TOOLS / "oe_full_trace_report.py", TOOLS / "compact_trace_report.py",
