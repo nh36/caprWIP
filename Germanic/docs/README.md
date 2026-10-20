@@ -12,6 +12,43 @@ GENERATED (never hand-edited), or ARCHIVE (historical; never authoritative).
 | CI failure diagnosis | [Validation capabilities](../../docs/CI_VALIDATION.md) |
 | Superseded lexical research/process | [Lexical archive](lexeme_reports/archive/README.md) |
 
+## Routine operations (the paved road)
+
+Use these entry points instead of searching the repository. Each states what
+it changes, what it checks, and what you must not touch. The control plane and
+the SOURCE/GENERATED/ARCHIVE map below decide which files are which.
+
+| Operation | Entry point | Checks | Do not |
+| --- | --- | --- | --- |
+| Pick the next SC | `python3 Germanic/tools/adjudicate.py --next` | derived from the registry | state it by hand |
+| Prepare, gather evidence, finalize one SC | `adjudicate.py SCNNN --prepare`, `--evidence`, `--finalize` | reading list, container rebuild and firing census, propagation | run `foma`/`flookup` or trace scripts by hand |
+| Regenerate after any SOURCE edit | `adjudicate.py --refresh` (ends `CONTROL PLANE CLEAN`) | every generated artefact via the artifact graph | hand-edit a generated file or pick generators |
+| Verify without mutating | `python3 Germanic/tools/artifact_graph.py --check [--mode full]` | freshness and provenance | |
+| Change where a lexical entry is published | add a row to `assembly/lexical_editorial_order.tsv`, then `--refresh` | `tests/test_lexical_editorial_order.py` | reorder generated manifests or renumber entries |
+| Publish the book | `INDEX_VERBORUM_STRICT=1 bash Germanic/docs/assembly/build_capr_book_draft_docker.sh` | semantic, citation, index and PDF checks | skip inspecting the rendered pages |
+| Diagnose CI | `python3 Germanic/tools/run_portable_checks.py` | portable validation only; it does not certify original PDFs or fresh Foma runs | read a portable pass as full science validation |
+| Full strict validation | `cd Germanic/tests && python3 -m pytest -q` with holdings and Docker | everything, including runtime execution | run the protected Anglo-Frisian assays in the same session |
+
+Four kinds of file, never mixed: authoritative scientific SOURCE (registries,
+FST, corpus, adjudication memos, frozen baselines); editorial SOURCE
+(publication prose, `reader_chapters.tsv`/`reader_files.tsv`,
+`lexical_editorial_order.tsv`, index decisions); GENERATED projections
+(manifests, volumes, indexes, provenance); ARCHIVE (never authoritative).
+Editorial SOURCE decides how the book presents the science and can never
+change it: sound-law and lexical order, chapters and indexes are projections
+of the scientific database, not transcriptions of its identifiers or
+execution order.
+
+Failure modes recorded from SC112; guard against them in every task:
+
+- comparing against an inconsistent experimental baseline: use only the frozen baselines and named receipts in `CURRENT_STATE.md`;
+- historical replay that depends on a live binary: verify recorded hashes, never trust a rebuilt `.bin` as history;
+- receipt and source identities taken on trust: verify them explicitly;
+- tests that silently skip runtime execution: strict validation must execute the runtime, and portable passes are labelled portable;
+- treating scientific completion as publication completion: the lexical and book publication, with its receipt, is a separate step;
+- stale publication documentation: update the phase pointer and README tables in the same change as the work;
+- unbounded repair loops: after two distinct failed repairs, stop and report the evidence.
+
 ## What you may edit (SOURCE)
 
 SOURCE files come in three kinds; all are hand-edited, everything else is
@@ -61,6 +98,9 @@ generated or archived.
   judgements and explicit publication-source certification, independent of
   scientific classifications or adoption. A certified short entry may reuse
   `lexeme_reports/research_memos/`; unselected materials remain drafting evidence.
+- `assembly/lexical_editorial_order.tsv` — explicit exceptions to the default
+  lexical presentation order (derivation class, then alphabetical English
+  headword). Position is editorial and never derived from row IDs or filenames.
 - `assembly/book_prose/` — optional shorter regular-entry prose, used only
   when explicitly selected; not a replacement for default mature models.
 - `sound_changes/reader_facing/*.md` chapters and

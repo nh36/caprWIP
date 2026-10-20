@@ -9,8 +9,12 @@ SC112 scientific implementation and lexical publication are complete; the
 [publication receipt](sound_changes/audits/sc112-lexical-publication.md)
 records the evidence and validation. Current lexical counts live in the
 [generated population summary](lexeme_reports/pgmc_integration/population_summary.md).
-The next priority is the separate paved-road architecture for cheaper coding
-agents; that work must first inspect its existing worktree and foundation commits.
+The next priority is the paved-road architecture for cheaper coding agents. It
+has no separate worktree: it extends the control plane, adjudication interface,
+CI validation and cleanup commits already on `update`. Entry points and the
+editorial-projection principle are in [README.md](README.md) ("Routine
+operations"); lexical presentation order is now editorial
+(`assembly/lexical_editorial_order.tsv`).
 
 For subsequently authorized per-SC adjudication, the next SC is derived from
 the registry and the explicit programme policy, never stated here:
