@@ -263,6 +263,7 @@ def _lexical_input_hashes() -> dict:
               REPO_ROOT / "Germanic/data/entry_context_metadata.tsv",
               REPO_ROOT / "backend/oe_input_context.py",
               ASSEMBLY / "section_introductions_draft.md",
+              TOOLS / "entry_stages.py",
               ASSEMBLY / "build_class_manifests.py",
               ASSEMBLY / "lexical_editorial_order.tsv",
               ASSEMBLY / "build_full_lexical_volume.py",

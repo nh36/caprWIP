@@ -23,9 +23,9 @@ from check_bibliography_sanity import parse_entries
 from oe_pipeline import load_rows as load_selected_rows
 import pgmc_reconstruction_analysis as analytical
 
+from entry_stages import resolve_stages
+
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "Germanic/docs/assembly"))
-from build_class_manifests import resolve_stages
 
 DIRECTORY = Path("Germanic/docs/lexeme_reports/pgmc_reconstructions")
 CORE_SOURCES = ("Orel2003", "Kroonen2013")
@@ -566,7 +566,7 @@ def render(root: Path = ROOT, *, mode: str = "full") -> dict[Path, str]:
         root / "Germanic/data/entry_context_metadata.tsv",
         ROOT / "Germanic/tools/pgmc_reconstruction_survey.py",
         ROOT / "Germanic/tools/oe_pipeline.py",
-        ROOT / "Germanic/docs/assembly/build_class_manifests.py",
+        ROOT / "Germanic/tools/entry_stages.py",
         directory / "sources.tsv", directory / "forms.tsv", directory / "coverage.tsv",
         directory / "commentary.md",
         directory / "review_targets.tsv",

@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import csv
 import re
-import unicodedata
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -12,59 +12,21 @@ ASSEMBLY_DIR = Path(__file__).resolve().parent
 REPO_ROOT = ASSEMBLY_DIR.parents[2]
 MODEL_DIR = REPO_ROOT / "Germanic/docs/lexeme_reports/model_entries"
 TRACE_REPORT = REPO_ROOT / "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md"
-# Historical-stage sidecar for reconstructed selected inputs, keyed by row_id.
-# Lives with the corpus data (upstream of assembly) because it encodes scholarly
-# historical judgments, not assembly output.
-#
-# CAPR project convention (author decision): PROTO is the Proto-Germanic
-# lexeme-level reconstruction, so proto_stage is always pgmc. When PROTOFORM ==
-# PROTO the selected input IS that PGmc reconstruction, so protoform_stage = pgmc
-# automatically. The sidecar therefore records ONLY the exceptional rows where
-# PROTOFORM != PROTO, whose stage is a separate historical question. A PROTOFORM
-# != PROTO row with no sidecar entry fails closed (it is never silently pgmc).
-STAGE_METADATA_PATH = REPO_ROOT / "Germanic/data/entry_stage_metadata.tsv"
-
-
-def load_stage_metadata() -> dict[str, dict[str, str]]:
-    """row_id -> {protoform_stage, protoform_variety} for the PROTOFORM != PROTO exception rows."""
-    with STAGE_METADATA_PATH.open(encoding="utf-8") as handle:
-        return {
-            row["row_id"].strip(): {
-                "protoform_stage": (row.get("protoform_stage") or "").strip(),
-                "protoform_variety": (row.get("protoform_variety") or "").strip(),
-            }
-            for row in csv.DictReader(handle, delimiter="\t")
-        }
-
-
-def resolve_stages(row_id: str, proto: str, protoform: str, sidecar: dict[str, dict[str, str]]) -> tuple[str, str, str, list[str]]:
-    """Resolve (proto_stage, protoform_stage, protoform_variety) under the CAPR convention.
-
-    proto_stage is always pgmc (PROTO is the PGmc lexeme reconstruction). When
-    PROTOFORM == PROTO, protoform_stage is pgmc by convention. When they differ,
-    protoform_stage must come from an explicit sidecar decision; a missing entry
-    is reported (fail closed), never defaulted to pgmc. protoform_variety is a
-    separate orthogonal axis (e.g. 'transponent') and is blank unless the sidecar
-    declares one; equality rows never carry a variety.
-    """
-    notes: list[str] = []
-    proto_stage = "pgmc"
-    if (proto or "").strip() and (proto or "").strip() == (protoform or "").strip():
-        return proto_stage, "pgmc", "", notes
-    entry = sidecar.get(str(row_id))
-    if entry and entry.get("protoform_stage"):
-        return proto_stage, entry["protoform_stage"], entry.get("protoform_variety", ""), notes
-    notes.append("PROTOFORM != PROTO but no explicit stage decision (unresolved)")
-    return proto_stage, "", "", notes
-
+# Stage resolution is scientific code shared with the reconstruction survey; this
+# assembler only consumes it and holds presentation logic alone.
+sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
+from entry_stages import load_stage_metadata, resolve_stages  # noqa: E402
 
 REQUIRED_METADATA = ("PROTO", "PROTOFORM", "COUNTERPART", "DERIVATION_CLASS")
 
-# Editorial presentation order. Entries appear by derivation class and, within a
-# class, alphabetically by English headword. Stable row IDs, filenames and corpus
-# order never decide a position. The only SOURCE for departures from the
-# alphabetical default is the exceptions table below (empty unless an editorial
-# decision requires an exception); manifest_all_by_class.tsv is generated from it.
+# Editorial presentation order (a revisable editorial policy, not a scientific
+# convention). Entries appear by derivation class and, within a class,
+# alphabetically by Modern English headword. Old English forms, Proto-Germanic
+# reconstructions, row IDs, filenames and corpus order never decide a position.
+# The only SOURCE for departures from the alphabetical default, and for any
+# headword outside plain a-z collation or any tie, is the exceptions table below
+# (empty unless an editorial decision requires an exception);
+# manifest_all_by_class.tsv is generated from it.
 EDITORIAL_ORDER_PATH = ASSEMBLY_DIR / "lexical_editorial_order.tsv"
 EDITORIAL_ORDER_COLUMNS = ("row_id", "sort_as", "reason")
 # Plain a-z headword with an optional parenthetical qualifier, e.g. "make (3sg)".
@@ -104,22 +66,11 @@ def headword_key(headword: str, where: str) -> tuple[str, str]:
     return match.group(1), match.group(2) or ""
 
 
-def counterpart_key(counterpart: str) -> str:
-    """Tie-break collation for the Old English counterpart: diacritics folded, ae/th spelled out."""
-    folded = unicodedata.normalize("NFD", counterpart.casefold())
-    folded = "".join(char for char in folded if not unicodedata.combining(char))
-    return folded.replace("æ", "ae").replace("þ", "th").replace("ð", "th")
-
-
 def editorial_sort_key(model: dict[str, object], exceptions: dict[str, dict[str, str]]) -> tuple:
     row_id = str(model["row_id"]) if model["row_id"] is not None else ""
     exception = exceptions.get(row_id)
     headword = exception["sort_as"] if exception else str(model["lexical_item"])
-    return (
-        model["class_rank"],
-        headword_key(headword, model["path"].name),
-        counterpart_key(str(model["metadata"].get("COUNTERPART", ""))),
-    )
+    return (model["class_rank"], headword_key(headword, model["path"].name))
 
 
 def order_models(models: list[dict[str, object]], exceptions: dict[str, dict[str, str]]) -> list[dict[str, object]]:
@@ -132,10 +83,12 @@ def order_models(models: list[dict[str, object]], exceptions: dict[str, dict[str
     if unknown:
         raise ValueError(f"{EDITORIAL_ORDER_PATH.name} references unknown row_id: {', '.join(unknown)}")
     keyed = [(editorial_sort_key(model, exceptions), model) for model in models]
-    ties = [key for key, count in Counter(key for key, _ in keyed).items() if count > 1]
-    if ties:
+    counts = Counter(key for key, _ in keyed)
+    tied = sorted(str(model["path"].name) for key, model in keyed if counts[key] > 1)
+    if tied:
         raise ValueError(
-            f"entries tie in editorial order {ties[:3]}; resolve with a sort_as exception in {EDITORIAL_ORDER_PATH.name}"
+            f"entries tie in editorial order ({', '.join(tied)}); order them with sort_as "
+            f"exceptions (e.g. 'headword (1)', 'headword (2)') in {EDITORIAL_ORDER_PATH.name}"
         )
     return [model for _, model in sorted(keyed, key=lambda pair: pair[0])]
 
@@ -438,8 +391,8 @@ def main() -> None:
         "",
         "## Editorial order",
         "",
-        "- Entries are ordered by derivation class, then alphabetically by English headword;"
-        " row IDs and filenames do not decide position.",
+        "- Editorial policy (revisable): entries are ordered by derivation class, then alphabetically by"
+        " Modern English headword; Old English forms, reconstructions, row IDs and filenames do not decide position.",
         f"- Explicit editorial exceptions (`{EDITORIAL_ORDER_PATH.name}`): **{len(editorial_exceptions)}**",
         "",
         "## Trace-match status",

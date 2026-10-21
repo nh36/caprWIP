@@ -43,7 +43,7 @@ are GENERATED or ARCHIVE.
 | `cascade_baseline/approved_sc034_output_migration.json` | machine-state | Exact approved straw output and match-flag transition, unchanged input/attested target. Apply with `adjudicate.py SC034 --adopt-cell-baseline --approval approved_sc034_output_migration.json`; preserves separate pre-SC034 snapshots and every earlier approval/archive |
 | `cascade_baseline/approved_sc015_targets_migration.json` | machine-state | Exact authorized three-learn target/output transition accompanying SC015's reformulation, with unchanged inherited inputs and match flags. Apply with `adjudicate.py SC015 --adopt-cell-baseline --approval approved_sc015_targets_migration.json`; preserves separate pre-SC015 snapshots and every older approval/archive |
 | `Germanic/docs/CURRENT_STATE.md` | publication-prose | Current phase and standard commands (the next SC is derived: `adjudicate.py --next`) |
-| `Germanic/docs/assembly/lexical_editorial_order.tsv` | publication-prose | Explicit exceptions to the default lexical presentation order (derivation class, then alphabetical English headword): `row_id`, `sort_as` headword, `reason`. Empty unless a scholarly decision requires an exception. Consumed only by `build_class_manifests.py`; it never alters an entry's data or identity |
+| `Germanic/docs/assembly/lexical_editorial_order.tsv` | publication-prose | Explicit exceptions to the default lexical presentation order (derivation class, then alphabetical Modern English headword; a revisable editorial policy): `row_id`, `sort_as` headword, `reason`. Empty unless a scholarly decision requires an exception. Consumed only by `build_class_manifests.py`; it never alters an entry's data or identity |
 | `Germanic/docs/README.md`, `sound_changes/README.md` | publication-prose | Navigation |
 | `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md`, `audits/ADJUDICATION_TEMPLATE.md` | publication-prose | Method |
 
@@ -88,6 +88,7 @@ inventory ordinal; no archival positions are invented for them.
 | `docs/assembly/capr_book_draft_alpha_01.md` | `docs/assembly/build_capr_book_draft.py` |
 | `debug_snapshots/oe_derivation_class_trace_report.{txt,compact.md}`, `docs/assembly/manifest_*.tsv`, `manifest_summary.md`, `lexical_volume_alpha_01.md`, `lexical_source_provenance.json` | `lexical_sources` node: pure projection of the fresh canonical full trace + corpus + model entries + entry-stage sidecar + `lexical_editorial_order.tsv`, via existing compact/manifest/assembly builders. `build_class_manifests.py` alone fixes lexical presentation order (derivation class, then alphabetical headword, then the exceptions SOURCE); every other consumer reads the manifest order. Input and output digests prevent stale lexical histories from silently entering the book |
 | `docs/book/index_verborum_*` + `docs/assembly/book_draft_index_registry.tex` | `tools/build_index_verborum.py` |
+| `lexeme_reports/pgmc_reconstructions/` survey projections and `survey_provenance.json` | `tools/pgmc_reconstruction_survey.py` (graph node `pgmc_reconstruction_survey`). Its provenance hashes scientific code only: stage resolution lives in `tools/entry_stages.py`, shared with the lexical assembler, and no `docs/assembly/` presentation file is a survey input |
 
 Runtime evidence (container-built; the graph rebuilds these ONLY when their
 recorded input provenance shows them stale, so a no-op refresh never touches
@@ -201,6 +202,20 @@ graph, adjudicate front-end, or projection renderers change materially.
    without bins): `--check` names exactly what is stale and the refresh
    command to run; one `--refresh` restores runtime evidence without tribal
    knowledge.
+
+## Provenance migrations (dependency changes, never scientific results)
+
+- 2026-10-21: stage resolution (`resolve_stages`, `load_stage_metadata`,
+  `STAGE_METADATA_PATH`) moved byte-for-byte from `docs/assembly/build_class_manifests.py`
+  to `tools/entry_stages.py`, because the survey receipt had been hashing the
+  editorial assembler. `survey_provenance.json` now differs from the SC112
+  closure receipt in exactly three code-input keys (assembler removed,
+  `entry_stages.py` added, survey script re-hashed for its import line); every
+  output digest, the stage assignments of all 395 corpus rows, the survey
+  projections, lexical manifests, books and index tables are unchanged.
+  `test_sc112_lexical_publication.py` pins this exact migration (retire it when
+  the next scientific closure re-pins its base) and
+  `test_stage_resolution_authority.py` keeps the separation permanent.
 
 ## Known remaining duplications (accepted, machine-checked where possible)
 

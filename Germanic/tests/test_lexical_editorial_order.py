@@ -78,10 +78,16 @@ class EditorialOrderSourceTests(unittest.TestCase):
 
     def test_indistinguishable_entries_must_be_separated_editorially(self):
         first, second = models()[:2]
+        first = dict(first, metadata=dict(first["metadata"], COUNTERPART="aaa"))
         second = dict(second, lexical_item=first["lexical_item"], class_rank=first["class_rank"],
-                      metadata=dict(second["metadata"], COUNTERPART=first["metadata"].get("COUNTERPART", "")))
+                      metadata=dict(second["metadata"], COUNTERPART="zzz"))
+        # Differing Old English forms must not break the tie: only an editorial exception may.
         with self.assertRaisesRegex(ValueError, "tie in editorial order"):
             manifests.order_models([first, second], {})
+        key = str(second["row_id"])
+        ordered = manifests.order_models(
+            [first, second], {key: {"row_id": key, "sort_as": f"{first['lexical_item']} (2)", "reason": "x"}})
+        self.assertEqual([m["path"] for m in ordered], [first["path"], second["path"]])
 
 
 class EditorialOrderPolicyTests(unittest.TestCase):
@@ -161,7 +167,7 @@ class GeneratedManifestTests(unittest.TestCase):
 
     def test_generated_summary_states_the_policy_and_exception_count(self):
         summary = (ASSEMBLY / "manifest_summary.md").read_text(encoding="utf-8")
-        self.assertIn("alphabetically by English headword", summary)
+        self.assertIn("alphabetically by Modern English headword", summary)
         self.assertIn(f"**{len(self.exceptions)}**", summary)
 
 

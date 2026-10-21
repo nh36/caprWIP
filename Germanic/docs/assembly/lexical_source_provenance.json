@@ -3,7 +3,7 @@
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
     "Germanic/data/entry_stage_metadata.tsv": "75dd0babfd13b140c575fc9f533bce7ae5e03c1d251aa7cd045e61defa97bcde",
     "Germanic/data/germanic-aligned-final.tsv": "d40b6e65280d4cbe8acb08271803ef8acc64b3ff8e6b2656d416951aebdfa0a0",
-    "Germanic/docs/assembly/build_class_manifests.py": "dd01d71ba065cb26f8f2806a8c6432d1338ecc53473e643bb38ecdb18431e5dd",
+    "Germanic/docs/assembly/build_class_manifests.py": "9f1606d6ab0bbdc9187f90888112ee7150373abf7225f944d2cad806112c4e7d",
     "Germanic/docs/assembly/build_full_lexical_volume.py": "e82655263a105c73077ada18ae12be8db7926dd2d621562eaf4b979a5df811e9",
     "Germanic/docs/assembly/lexical_editorial_order.tsv": "7cdafe042fb24f8be02533b762841917351e0e10037a7f79f23096cdc2240a5d",
     "Germanic/docs/assembly/section_introductions_draft.md": "d2af1bd13554449b7053b038ce493ea90c98cbe8e41da6b8c362d276b59867bd",
@@ -176,8 +176,9 @@
     "Germanic/docs/lexeme_reports/model_entries/2333-there-\u00fe\u01e3r.model.md": "82d25242cfa4f5641b4c83a802127e8ba113f66b1b1c09778d1b7f905ecff436",
     "Germanic/docs/lexeme_reports/model_entries/2334-where-hw\u01e3r.model.md": "3aa0f860d546e84c82f9f5a8522da3e84ea12a540c7d0b4580d414795ffcdc30",
     "Germanic/fsts/old_english_sandbox.txt": "b58b37de1ef84f484680af87954ca92e5bd579f3b81e65581c8665e3e8007af3",
-    "Germanic/tools/artifact_graph.py": "17ee871eb0651297415ce92db65cb9107b1be0fc4676b7c098f53b963dbe36de",
+    "Germanic/tools/artifact_graph.py": "3200d49b4a586bf39739f575214a15764e0a23c1c27c8b6bcc9d7876ac40db2f",
     "Germanic/tools/compact_trace_report.py": "b5dbb5d467d0dabe7dc1ba4e55646dd3c33d4d0fb841bfa09f4cd11da8505707",
+    "Germanic/tools/entry_stages.py": "63317b032ce41030f85af64a4c5d9823604f1bde0c9b833f2dca11933e15abdd",
     "Germanic/tools/oe_derivation_class_trace_report.py": "dc3cc09015e0ac25638fe17b1697a3e05179a3d2e17d3408a98b3d1ee3041f65",
     "Germanic/tools/oe_full_trace_report.py": "168a8abdc6d4fc9388163acf888a36c18edbb1aa0a5dd80ae9298b1650e55cf8",
     "backend/oe_input_context.py": "b770b83ffc2bd863c9cd5dec6bcae67ecda60efe8ce0af7fa8cdf136e077b961"
@@ -191,7 +192,7 @@
     "Germanic/docs/assembly/manifest_late_analogy.tsv": "4ccc32459ed536633c72af879f957a74b92c69fd5c0f8eb75a11dca2a8596ded",
     "Germanic/docs/assembly/manifest_reconstructed_oe.tsv": "cfa7bb8da636d274d5a98bf09d6c9b132544cbd946f114a54d03ac2abf07a6dc",
     "Germanic/docs/assembly/manifest_regular.tsv": "fa8c1cc42df9cde6cf256ed1e1474f9f757d7670f29e5148c2f49dcf2d1fa340",
-    "Germanic/docs/assembly/manifest_summary.md": "d813fc9c21e43d711daccaca1258effe47d2517f6153da2d783b590b267f5452",
+    "Germanic/docs/assembly/manifest_summary.md": "af6e8497fd90458e4815998e34cdf14c4e17adf484a60e374be076a8434490cf",
     "Germanic/docs/assembly/manifest_unexplained.tsv": "ec2a4fca6a57e98598f9ee63703edcdcb1770492b129647768c15269e78e3a26",
     "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md": "58b03f41395bab0e1ec5919eb78a47854e27272bc92db2325a0325923a4baa12",
     "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt": "d5d1e446dd1df61cf458061c431bdcbc97aaab940b572796a37c76750b4385c4"

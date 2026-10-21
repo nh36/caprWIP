@@ -20,7 +20,7 @@
 
 ## Editorial order
 
-- Entries are ordered by derivation class, then alphabetically by English headword; row IDs and filenames do not decide position.
+- Editorial policy (revisable): entries are ordered by derivation class, then alphabetically by Modern English headword; Old English forms, reconstructions, row IDs and filenames do not decide position.
 - Explicit editorial exceptions (`lexical_editorial_order.tsv`): **0**
 
 ## Trace-match status

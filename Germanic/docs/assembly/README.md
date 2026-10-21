@@ -21,7 +21,7 @@ For portable versus strict validation, see [CI validation](../../../docs/CI_VALI
 | Sound-change prose and chapter membership | Reader sources and `sound_changes/registry/reader_files.tsv`, routed by `adjudicate.py SCNNN --prepare` |
 | Elaborated lexical prose | `../lexeme_reports/model_entries/*.model.md` |
 | Scoped lexical selection/certification | `../lexeme_reports/pgmc_integration/editorial_cases.tsv` and the existing report manifest |
-| Lexical presentation order | `lexical_editorial_order.tsv` (explicit exceptions only; the default is derivation class, then alphabetical English headword) |
+| Lexical presentation order | `lexical_editorial_order.tsv` (explicit exceptions only; the default editorial policy is derivation class, then alphabetical Modern English headword) |
 | Bibliography | `docs/refs.bib` |
 | Index decisions | `../book/` SOURCE registries and scoped overrides; never distort prose to appease a checker |
 
@@ -38,6 +38,8 @@ reconstructions, selections, sound laws or baselines. To depart from alphabetica
 order, add a `row_id`, `sort_as` headword and `reason` row to
 `lexical_editorial_order.tsv`, then run `adjudicate.py --refresh`; never
 rearrange `manifest_*.tsv`, the lexical volume or the combined draft by hand.
+A nonstandard headword (compound, hyphenated, non-`a-z`) or a tie stops the
+build until such a row exists.
 `tests/test_lexical_editorial_order.py` checks coverage, duplicates, exception
 references, the approved sequence and downstream propagation.
 

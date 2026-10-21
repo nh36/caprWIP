@@ -161,12 +161,23 @@ evidence for further rule repair in the lexical volume.
   5. reconstructed Old English comparator
   6. known but unmodelled remodelling
   7. unexplained / unmodelled
-- order entries within each part alphabetically by English headword (a
-  parenthetical qualifier such as `(3sg)` sorts after the bare headword; the
-  Old English counterpart is the secondary key)
+- order entries within each part alphabetically by Modern English headword (a
+  parenthetical qualifier such as `(3sg)` sorts after the bare headword, so
+  paired forms stay adjacent under their shared lemma)
 - record any scholarly departure from that default as an explicit row in
   `lexical_editorial_order.tsv` (`row_id`, `sort_as`, `reason`), the only
   hand-edited source of lexical presentation order
+
+This is an explicit, revisable editorial policy, not a scientific convention:
+the collation can be changed by editorial decision without touching any
+scientific data. Old English spellings, Proto-Germanic reconstructions, row IDs,
+filenames and the order in which entries were added play no part in position.
+The collation is deliberately restricted to plain `a-z` headwords with an
+optional qualifier. A compound, hyphenated or otherwise nonstandard headword,
+or two entries that would tie, stops the build until an explicit exception
+assigns a position; nothing is placed by implicit guesswork. The current
+exceptions table is empty; paradigm-order presentation of paired verbal forms
+is a separate, later editorial question.
 
 Presentation order is editorial. Stable row IDs, model-entry filenames, corpus
 order and derivation order identify and compute entries but never position them;

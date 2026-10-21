@@ -1,6 +1,9 @@
 """Two-entry publication delta against the reviewed SC112 scientific closure."""
 
+import ast
 import csv
+import difflib
+import hashlib
 from io import StringIO
 import json
 from pathlib import Path
@@ -32,6 +35,13 @@ def committed(path):
 
 def table(text):
     return list(csv.DictReader(StringIO(text), delimiter="\t"))
+
+
+def function_source(source, name):
+    for node in ast.parse(source).body:
+        if isinstance(node, ast.FunctionDef) and node.name == name:
+            return ast.get_source_segment(source, node)
+    raise AssertionError(f"{name} not found")
 
 
 class Sc112LexicalPublicationTests(unittest.TestCase):
@@ -165,17 +175,9 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         )
         changed = subprocess.check_output(
             ["git", "diff", BASE, "--name-only", "--", *paths], cwd=ROOT, text=True).split()
-        # The survey receipt hashes the class-manifest generator it imports
-        # resolve_stages from; a presentation-order edit to that generator
-        # legitimately refreshes only that one code-input hash.
         receipt = "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json"
         if receipt in changed:
-            generator = "Germanic/docs/assembly/build_class_manifests.py"
-            now = json.loads((ROOT / receipt).read_text(encoding="utf-8"))
-            base = json.loads(committed(ROOT / receipt))
-            for record in (now, base):
-                record["inputs"].pop(generator)
-            self.assertEqual(now, base)
+            self.assert_stage_resolution_provenance_migration(receipt)
             changed.remove(receipt)
         # CONTROL_PLANE.md is the prose SOURCE/GENERATED map living beside the
         # registries; documenting a new editorial SOURCE there is not a change
@@ -183,6 +185,48 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         changed = [path for path in changed
                    if path != "Germanic/docs/sound_changes/registry/CONTROL_PLANE.md"]
         self.assertEqual(changed, [])
+
+    def assert_stage_resolution_provenance_migration(self, receipt):
+        """The one documented difference from the SC112 closure receipt.
+
+        Stage resolution moved unchanged from the lexical assembler to
+        tools/entry_stages.py so presentation edits cannot alter scientific
+        provenance. This is a dependency migration, not a new scientific result:
+        only the three code-input keys below may differ, every output digest and
+        other field is identical, and the moved functions are byte-identical.
+        """
+        generator = "Germanic/docs/assembly/build_class_manifests.py"
+        stages = "Germanic/tools/entry_stages.py"
+        survey = "Germanic/tools/pgmc_reconstruction_survey.py"
+        now = json.loads((ROOT / receipt).read_text(encoding="utf-8"))
+        base = json.loads(committed(ROOT / receipt))
+        differing = {key for key in set(now["inputs"]) | set(base["inputs"])
+                     if now["inputs"].get(key) != base["inputs"].get(key)}
+        self.assertEqual(differing, {generator, stages, survey})
+        self.assertNotIn(generator, now["inputs"])
+        self.assertNotIn(stages, base["inputs"])
+        self.assertEqual(
+            now["inputs"][stages],
+            hashlib.sha256((ROOT / stages).read_bytes()).hexdigest())
+        for record in (now, base):
+            record.pop("inputs")
+        self.assertEqual(now, base)
+
+        old_generator = committed(ROOT / generator)
+        moved = (ROOT / stages).read_text(encoding="utf-8")
+        for name in ("load_stage_metadata", "resolve_stages"):
+            self.assertEqual(function_source(moved, name), function_source(old_generator, name))
+        old_lines = committed(ROOT / survey).splitlines()
+        new_lines = (ROOT / survey).read_text(encoding="utf-8").splitlines()
+        edits = [line for line in difflib.ndiff(old_lines, new_lines)
+                 if line[:2] in ("- ", "+ ") and line[2:].strip()]
+        self.assertEqual(sorted(edits), sorted([
+            '- sys.path.insert(0, str(ROOT / "Germanic/docs/assembly"))',
+            "- from build_class_manifests import resolve_stages",
+            "+ from entry_stages import resolve_stages",
+            '-         ROOT / "Germanic/docs/assembly/build_class_manifests.py",',
+            '+         ROOT / "Germanic/tools/entry_stages.py",',
+        ]))
 
 
 if __name__ == "__main__":
