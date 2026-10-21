@@ -20,14 +20,21 @@ the SOURCE/GENERATED/ARCHIVE map below decide which files are which.
 
 | Operation | Entry point | Checks | Do not |
 | --- | --- | --- | --- |
-| Pick the next SC | `python3 Germanic/tools/adjudicate.py --next` | derived from the registry | state it by hand |
-| Prepare, gather evidence, finalize one SC | `adjudicate.py SCNNN --prepare`, `--evidence`, `--finalize` | reading list, container rebuild and firing census, propagation | run `foma`/`flookup` or trace scripts by hand |
-| Regenerate after any SOURCE edit | `adjudicate.py --refresh` (ends `CONTROL PLANE CLEAN`) | every generated artefact via the artifact graph | hand-edit a generated file or pick generators |
+| Pick the next SC (read-only) | `python3 Germanic/tools/adjudicate.py --next` | derived from the registry | state it by hand |
+| Prepare one SC (read-only) | `adjudicate.py SCNNN --prepare` | reading list, authoritative files, permitted edits and commands | start adjudicating before reading it |
+| Gather evidence, finalize one SC (rewrite GENERATED files; need Docker, see below) | `adjudicate.py SCNNN --evidence`, `--finalize` | container rebuild and firing census, propagation | run `foma`/`flookup` or trace scripts by hand |
+| Regenerate after any SOURCE edit (rewrites GENERATED files; needs Docker) | `adjudicate.py --refresh` (ends `CONTROL PLANE CLEAN`) | every generated artefact via the artifact graph | hand-edit a generated file or pick generators |
 | Verify without mutating | `python3 Germanic/tools/artifact_graph.py --check [--mode full]` | freshness and provenance | |
 | Change where a lexical entry is published | add a row to `assembly/lexical_editorial_order.tsv`, then `--refresh` | `tests/test_lexical_editorial_order.py` | reorder generated manifests or renumber entries |
 | Publish the book | `INDEX_VERBORUM_STRICT=1 bash Germanic/docs/assembly/build_capr_book_draft_docker.sh` | semantic, citation, index and PDF checks | skip inspecting the rendered pages |
 | Diagnose CI | `python3 Germanic/tools/run_portable_checks.py` | portable validation only; it does not certify original PDFs or fresh Foma runs | read a portable pass as full science validation |
 | Full strict validation | `cd Germanic/tests && python3 -m pytest -q` with holdings and Docker | everything, including runtime execution | run the protected Anglo-Frisian assays in the same session |
+
+Docker prerequisite: `--evidence`, `--finalize` and `--refresh` run
+`foma`/`flookup` through the backend container. Start Docker, run
+`docker compose up -d`, and confirm `docker compose ps` is healthy first.
+`--next`, `--prepare`, `--check` and `artifact_graph.py --check` need no
+container and change nothing.
 
 Four kinds of file, never mixed: authoritative scientific SOURCE (registries,
 FST, corpus, adjudication memos, frozen baselines); editorial SOURCE

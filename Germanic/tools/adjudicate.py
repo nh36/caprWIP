@@ -410,6 +410,15 @@ def prepare(sc_id) -> int:
     print("All container FST work (rebuild, freshness checks, firing census, "
           "witness pre/post) is encapsulated by --evidence; never compile or "
           "probe transducers by hand.")
+    print("\n## Procedure and permitted operations")
+    print("- Steps and the SOURCE files you may edit: "
+          "Germanic/docs/sound_changes/registry/CONTROL_PLANE.md, "
+          "\"Standard workflow for one SC adjudication\".")
+    print("- Read-only: --next, --prepare, --check. Regenerate GENERATED files only: "
+          "--refresh, --evidence, --finalize (--evidence and --finalize need the "
+          "backend container running: `docker compose ps`).")
+    print("- Never hand-edit GENERATED files or ARCHIVE records; frozen baselines "
+          "change only through an approved receipt (protocol step 13).")
     return 0
 
 
@@ -558,6 +567,8 @@ def main() -> int:
             print("no pending active historical change remains in the adjudication programme")
             return 1
         print(nxt)
+        print(f"next step: python3 Germanic/tools/adjudicate.py {nxt} --prepare",
+              file=sys.stderr)
         return 0
     if args == ["--refresh"]:
         return refresh()

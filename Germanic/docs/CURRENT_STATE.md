@@ -9,12 +9,15 @@ SC112 scientific implementation and lexical publication are complete; the
 [publication receipt](sound_changes/audits/sc112-lexical-publication.md)
 records the evidence and validation. Current lexical counts live in the
 [generated population summary](lexeme_reports/pgmc_integration/population_summary.md).
-The next priority is the paved-road architecture for cheaper coding agents. It
-has no separate worktree: it extends the control plane, adjudication interface,
-CI validation and cleanup commits already on `update`. Entry points and the
-editorial-projection principle are in [README.md](README.md) ("Routine
-operations"); lexical presentation order is now editorial
-(`assembly/lexical_editorial_order.tsv`).
+The paved-road architecture is complete and was validated by a read-only dry
+run (`--next`, then `--prepare`). It has no separate worktree: it extends the
+control plane, adjudication interface, CI validation and cleanup commits
+already on `update`. Entry points and the editorial-projection principle are
+in [README.md](README.md) ("Routine operations"). Lexical presentation order
+is editorial (`assembly/lexical_editorial_order.tsv`, Modern English headword
+order by default); stage resolution is a single scientific module
+(`tools/entry_stages.py`) shared by the survey and the assembler. The next
+phase is substantive linguistic research.
 
 For subsequently authorized per-SC adjudication, the next SC is derived from
 the registry and the explicit programme policy, never stated here:
