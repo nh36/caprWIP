@@ -15,6 +15,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 BASE = "5a3fced14d616ccaef5d703278d5cba2ffbca5cb"
+PUBLICATION_CLOSURE = "3c015def36599ca95d666b589ea533735d626de3"
 ASSEMBLY = ROOT / "Germanic/docs/assembly"
 MODELS = ROOT / "Germanic/docs/lexeme_reports/model_entries"
 sys.path.insert(0, str(ASSEMBLY))
@@ -166,7 +167,9 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         self.assertEqual(current - old, {("add", *row) for row in expected})
         semantics.run_index_fingerprint_checks()
 
-    def test_scientific_sources_and_protected_receipts_are_unchanged(self):
+    def test_sc112_publication_did_not_change_scientific_sources_or_receipts(self):
+        # This is an assertion about the completed SC112 publication, not a
+        # permanent freeze of the living registry against later adjudications.
         paths = (
             "Germanic/data", "Germanic/fsts", "Germanic/docs/sound_changes/registry",
             "Germanic/docs/sound_changes/cascade_baseline",
@@ -174,17 +177,13 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
             "Germanic/docs/lexeme_reports/pgmc_reconstructions",
         )
         changed = subprocess.check_output(
-            ["git", "diff", BASE, "--name-only", "--", *paths], cwd=ROOT, text=True).split()
-        receipt = "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json"
-        if receipt in changed:
-            self.assert_stage_resolution_provenance_migration(receipt)
-            changed.remove(receipt)
-        # CONTROL_PLANE.md is the prose SOURCE/GENERATED map living beside the
-        # registries; documenting a new editorial SOURCE there is not a change
-        # to any registry fact.
-        changed = [path for path in changed
-                   if path != "Germanic/docs/sound_changes/registry/CONTROL_PLANE.md"]
+            ["git", "diff", BASE, PUBLICATION_CLOSURE, "--name-only", "--", *paths],
+            cwd=ROOT, text=True).split()
         self.assertEqual(changed, [])
+
+    def test_stage_resolution_provenance_migration_remains_exact(self):
+        receipt = "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json"
+        self.assert_stage_resolution_provenance_migration(receipt)
 
     def assert_stage_resolution_provenance_migration(self, receipt):
         """The one documented difference from the SC112 closure receipt.

@@ -2869,12 +2869,12 @@ define OEPrefixIReduction [
     {*i} -> {*ĕ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
 ];
 
-# ga- prefix: *ga- → *gĕ- (R/T vol.2 §6.9.2-3: unstressed *a in prefixes → *e)
-# PGmc *ga- is the perfective/collective prefix (cf. Goth. ga-, OHG gi-/ge-, OE ge-).
-# The change *a → *e in unstressed syllables is part of unstressed vowel reduction.
-# Use *ĕ (e-breve) to mark the reduced vowel as unstressed, preventing it from
-# undergoing palatal diphthongization (*e → *ie after palatals in stressed syllables).
-# Restrict to word-initial *g *a followed by consonant + vowel to ensure prefix structure.
+# SC035 compresses weak *ga- vocalism (Ringe/Taylor 2014 pp.206,335):
+# fronting and later *gi- > ge-, not a separately dated early *a > e law.
+# *ĕ is an unstressed representation token, bypassing SC107 and inappropriate
+# palatal diphthongization; it does not assert a historical [ĕ] stage.
+# Initial unaccented gaCV is a narrow proxy, not a prefix-boundary detector:
+# genuine ga- before a cluster is excluded. See audits/sc035-adjudication.md.
 define OEPrefixAReduction [
     {*a} -> {*ĕ} || .#. {*g} _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
 ];

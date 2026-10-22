@@ -218,13 +218,13 @@
     },
     {
       "change_id": "SC035",
-      "display_name": "OE Prefix A Reduction Early",
+      "display_name": "English unstressed ga-prefix vocalism",
       "lifecycle_status": "active",
       "rule_name": "OEPrefixAReduction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC035-oe-prefix-a-reduction-early.md",
-      "card_type": "one_sided_chronology",
+      "card_type": "runner_limited_or_technical",
       "has_reciprocal_boundary": "no",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC043."
+      "short_summary": "SC035 precedes SC107 only as a reduced-vowel representation constraint; no historical boundary before ordinary stressed SC043 is demonstrated. The earlier PWGmcChanges boundary is runner-limited, not a historical terminus."
     },
     {
       "change_id": "SC036",
@@ -1338,7 +1338,7 @@
       "strength": "runner_boundary",
       "interpretation_category": "runner_boundary",
       "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided chronology boundary across SC043."
+      "notes": "Historical runner limit, not evidence that prefix vocalism followed the whole bundle; no earlier historical terminus demonstrated. SC035 adjudication preserves the experiment-time record."
     },
     {
       "source_change_id": "SC035",
@@ -1348,11 +1348,11 @@
       "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "believe",
-      "representative_forms": "Old composite displacement: PGmc `*galáubijaną` yields expected OE `ġelīefan`, but the later-shifted variant yields `ġealīefan`",
+      "representative_forms": "PGmc `*galáubijaną`: live prefix `*g*a-` > `*g*ĕ-`, final `ġelīefan`; skipping SC035 or delaying it past SC107 gives prefix `*g*æ-`, later `*ʝ*ea-`, final `ġealīefan`",
       "strength": "one_sided",
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "",
-      "notes": "Prefix reduction concerns the unstressed helper, not a date for ordinary stressed SC043. Historical composite card preserved; technical reclassification in sc043-adjudication.md."
+      "notes": "Fresh SC035 full-corpus assay isolates the unstressed helper and later palatal diphthongization; SC043 leaves the prefix unchanged. Technical representation constraint, not a historical date before stressed fronting or proof that reduction preceded unstressed fronting. Historical card preserved."
     },
     {
       "source_change_id": "SC036",

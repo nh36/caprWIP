@@ -23,10 +23,10 @@ chronology constraints.
 | `broad_far` | 6 |
 | `mixed` | 16 |
 | `negative_boundary` | 9 |
-| `one_sided_chronology` | 7 |
+| `one_sided_chronology` | 6 |
 | `reciprocal_or_near_reciprocal` | 22 |
 | `retired` | 1 |
-| `runner_limited_or_technical` | 1 |
+| `runner_limited_or_technical` | 2 |
 | `source_partial_chain` | 7 |
 
 ### Edge counts by relation_type

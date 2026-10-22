@@ -1,5 +1,12 @@
 # SC035-SC037: Prefix and Compound Adjustments
 
+SC035's current authority is `audits/sc035-adjudication.md` (2026-10-21):
+REFORMULATE its historical characterization, RETAIN its literal executable
+law and order. The earlier SC035 card records a composite displacement
+experiment; current chronology distinguishes SC107 from stressed SC043.
+The grouping and the assessments of SC036/SC037 below are not new
+adjudications of either neighbour.
+
 ## 1. Role in the book
 
 This row is a compact derivational seam between the promoted `SC031-SC034`
@@ -17,9 +24,10 @@ notes.
 
 ## 2. Name and basic formulation
 
-- **SC035:** OE Prefix A Reduction Early
+- **SC035:** English unstressed ga-prefix vocalism
   - **FOMA rule:** `OEPrefixAReduction`
-  - **Current role:** narrow early prefix-vowel reduction with one real later boundary at SC043
+  - **Current role:** narrow compressed prefix-vowel proxy; model-local
+    protection before SC107, not an independently dated boundary at SC043
 - **SC036:** OE Inter Stress Raising
   - **FOMA rule:** `OEInterStressRaising`
   - **Current role:** strongest member of the row, with real two-sided chronology between SC019 and SC040
@@ -31,11 +39,24 @@ notes.
 
 ## 3. Traditional description and literature
 
-The literature supports the row unevenly rather than uniformly. SC035 is
-historically plausible because the handbooks do describe reduced pretonic
-prefix vowels and stress-weak `ge-`, but not as a major standalone chapter
-matching CAPR's narrow rule [@Campbell1959, §354; @HoggPhonology1992, §3.3.1.3;
-@HoggPhonology1992, pp. 99--100; @RingeTaylor2014, p. 245]. SC036 is much stronger: Campbell's low-stress
+The literature supports the row unevenly rather than uniformly. For SC035,
+the weak English reflex of inherited *ga-* is secure, but the exact Foma
+rule is a narrower, compressed representation, not a handbook's single
+early *a* > *e* law. Campbell p.31 §74/n.5 and Hogg pp.99–100 support the
+stress distinction; Campbell pp.140–141 §§333–334 support unstressed
+fronting, and pp.153–155 §§369–370 the later front-vowel merger.
+Ringe–Taylor p.206 gives PGmc/PWGmc *ga-*, Gothic *ga-*, OS/OHG *gi-*,
+OE *ge-* and OF *e-*; pp.245 and 267 give the believe present/past
+derivations, while p.335 explicitly discusses *gi-* > *ge-* and the
+uncertain regular-raising versus *bi-*-influence account.
+Hogg §3.3.1.3 (p.88) concerns the unstressed-vowel system, not a date
+for this exact rule. Campbell p.147 §354 concerns pretonic *i*-loss
+in *bi-*/*ni-* and is withdrawn as support for SC035.
+These claims were checked in the local text holdings; no new original
+page-image verification is asserted
+[@Campbell1959, p. 31; @Campbell1959, pp. 140--141, 147, 153--155;
+@HoggPhonology1992, pp. 88, 99--100; @RingeTaylor2014, pp. 206, 245, 267, 335].
+SC036 is much stronger: Campbell's low-stress
 `weorold` / `weoruld` discussion and Ringe and Taylor's comparative `world`
 derivation place it squarely inside a real unstressed-vowel corridor
 [@Campbell1959, §§338--339; @RingeTaylor2014, §6.3.3].
@@ -53,13 +74,25 @@ SC037 are the necessary flanks.
 In CAPR terms the row is best understood as three different kinds of rule kept
 adjacent for chronological visibility.
 
-1. **SC035** reduces an early prefix vowel in weakly stressed prefixed forms.
+1. **SC035** compresses fronting and later reduced-vowel history in
+   selected weak-prefix forms. `*ĕ` is an unstressed technical token,
+   not an independently attested phonetic stage or early schwa.
 2. **SC036** adjusts medial unstressed vocalism between stronger stress peaks.
 3. **SC037** removes or suppresses a linking vowel in compound structure.
 
 That formulation already suggests the book problem. SC036 sounds like something
 that can support a chapter center. SC035 and SC037 sound more like left and
 right implementation notes that happen to belong in the same local stretch.
+
+SC035 matches initial unaccented `gaCV`, not a morphological boundary.
+Current selected389 and migration-aware legacy380 views each contain
+one firing: row1944 believe, `*g*a*l*ēa*b*i*j*a*n*ą` >
+`*g*ĕ*l*ēa*b*i*j*a*n*ą` > *ġelīefan*. Stressed root controls
+gall/guest remain unchanged. The source's *gistīga/gestīga* 'climb into/onto'
+is a genuine cluster-prefixed shape excluded by the proxy
+[@RingeTaylor2014, p. 335]. Synthetic component controls establish
+stress/position restrictions and the absence of boundary recognition;
+they are not new historical attestations or corpus admissions.
 
 ## 5. Place in the cascade
 
@@ -71,7 +104,8 @@ traditional chapter.
 
 The outward links matter, but they should remain cross-references only:
 
-- **SC035** points rightward to promoted SC043 through `believe`.
+- **SC035** points to the retained unstressed component SC107 through
+  `believe`; the discussion of SC043 explains the component distinction.
 - **SC036** points rightward to SC040 through `soul` and `world`.
 - **SC037** matters later again at the left edge of promoted SC049 through `rainbow`.
 
@@ -81,7 +115,11 @@ production unit.
 ## 6. Order-testing evidence
 
 - SC035 has no positive earlier boundary; its earlier side is runner-bounded.
-- SC035 must precede SC043, with `believe`.
+- SC035 must precede SC107 in the current representation, with `believe`;
+  this is a technical constraint, not an independent historical date
+  before ordinary stressed SC043. Without the breve marking, SC107
+  produces prefix `*æ`; SC043 leaves it unchanged and later palatal
+  diphthongization wrongly yields *ġealīefan*.
 - SC036 must follow SC019, with `soul`.
 - SC036 must precede SC040, with `soul` and `world`.
 - SC037 has no positive earlier historical boundary.
@@ -89,25 +127,29 @@ production unit.
 
 The practical consequence is that SC036 carries the strongest ordinary
 chronology in the row. SC035 and SC037 are still book-relevant, but their
-evidence is either one-sided or non-historical on the card itself.
+current ordering evidence is technical or runner-limited. SC035's
+historical existence is not made doubtful by that evidential distinction.
 
 ## 7. Interpretation for the book
 
 The row can still work as a cautious derivational bridge report, but only if
 the prose is explicit about the hierarchy inside it.
 
-1. **SC035** should be brief and should not overclaim its runner-bounded earlier side.
+1. **SC035** should distinguish the source-backed pre-OE-to-OE prefix
+   history from the one-step proxy; neither its runner-bounded earlier
+   side nor its SC107 dependency dates it before stressed fronting.
 2. **SC036** should be the historical center if the row stays grouped.
 3. **SC037** should probably be narrated as a technical or compound-juncture note, not as a coequal named law.
 
-That means the next move does not have to be more source collection. The real
-decision is chapter shape.
+The existing grouping is retained. A future chapter-shape decision is
+editorial and is not a prerequisite for the completed SC035 adjudication.
 
 ## 8. Relation to neighbouring changes
 
 - **Left neighbour:** promoted `SC031-SC034` West Saxon diphthong chain
 - **Immediate right neighbour:** promoted `SC039-SC040` medial-vowel core, followed by scaffold `SC041` final-loss note
-- **SC035 rightward cross-reference:** promoted `SC043` Anglo-Frisian Brightening
+- **SC035 rightward cross-reference:** `SC107` retained unstressed fronting;
+  ordinary stressed `SC043` is not the displaced prefix component
 - **SC036 rightward cross-reference:** `SC040` OE Med Unstressed U Lowering
 - **SC037 rightward cross-reference:** promoted `SC049` PGmc B Allophony, via `rainbow`
 
@@ -117,10 +159,12 @@ order.
 ## 9. Remaining uncertainty
 
 - cautious grouped bridge versus later split around SC036
-- how much source space SC035 deserves given its one-sided chronology
+- exact comparative dating of the reduced prefixes, and regular raising
+  versus analogical influence in early *gi-*; no new historical edge follows
 - whether SC037 should be treated explicitly as a technical note
 - how much of the `soul` / `world` evidence to foreground if SC036 becomes the center
-- how strongly to point forward to SC043, SC040, and SC049 without making the prose feel non-local
+- how strongly to point forward to the SC043/SC107 distinction, SC040,
+  and SC049 without making the prose feel non-local
 
 ## 10. Proposed book-section outline
 
@@ -130,7 +174,7 @@ order.
 2. SC035 as a narrow prefix-reduction left flank
 3. SC036 as the source-backed interstress center
 4. SC037 as a compound-linking / technical right flank
-5. Order evidence and outward cross-references to SC043, SC040, and SC049
+5. Technical prefix ordering versus stressed SC043, and cross-references to SC040/SC049
 
 ### Option B: later split around SC036
 
@@ -141,6 +185,11 @@ order.
 
 ## 11. Editorial status
 
-Prepared for chapter-shape review. The present dossier does not recommend
-immediate promotion, but it does reduce the uncertainty to one main question:
-keep the cautious grouped bridge, or split later around SC036.
+SC035 scholarship and reader prose are updated under the completed
+adjudication; the existing grouped chapter is retained without deciding
+SC036/SC037. Confidence A concerns the secure weak-prefix development,
+not a known single date or universal `gaCV` conditioner. The stage label
+and `preoe` code identify the pre-Old English onset, with Old English
+completion stated separately; `english_specific` identifies the English trajectory
+without denying comparable continental reduction.
+The historical card and frozen displacement records remain unchanged.

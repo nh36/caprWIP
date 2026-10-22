@@ -1,0 +1,368 @@
+{
+  "base_commit": "60b91080d2adadf431c92f7388ab1dd6199a4c7a",
+  "source_sha256": "d9b8e0f8698870d73a78e505c9615ce6040239be66d5f7c845c0e2d8093c0a21",
+  "selected_rows": 389,
+  "legacy380_identity_rows": 380,
+  "live_census": [
+    {
+      "row_id": "1944",
+      "concept": "believe",
+      "proto": "*galáubijaną",
+      "proto_norm": "galáubijaną",
+      "fst_input": "galáubijaną",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "ġelīefan",
+      "before": [
+        "*g*a*l*ēa*b*i*j*a*n*ą"
+      ],
+      "after": [
+        "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+      ],
+      "final": [
+        "ġelīefan"
+      ],
+      "legacy380_identity": true
+    }
+  ],
+  "live_negative_controls": [
+    {
+      "row_id": "2037",
+      "concept": "gall",
+      "proto": "*gállô",
+      "proto_norm": "gállô",
+      "fst_input": "gállô",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "ġealla",
+      "before": [
+        "*g*á*l*l*ô"
+      ],
+      "after": [
+        "*g*á*l*l*ô"
+      ],
+      "final": [
+        "ġealla"
+      ]
+    },
+    {
+      "row_id": "2049",
+      "concept": "guest",
+      "proto": "*gástiz",
+      "proto_norm": "gástiz",
+      "fst_input": "gástiz",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "ġiest",
+      "before": [
+        "*g*á*s*t*i"
+      ],
+      "after": [
+        "*g*á*s*t*i"
+      ],
+      "final": [
+        "ġiest"
+      ]
+    },
+    {
+      "row_id": "2044",
+      "concept": "goose",
+      "proto": "*gánsz",
+      "proto_norm": "gánsz",
+      "fst_input": "gánsz",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "gōs",
+      "before": [
+        "*g*ō*s"
+      ],
+      "after": [
+        "*g*ō*s"
+      ],
+      "final": [
+        "gōs"
+      ]
+    }
+  ],
+  "component_inputs": {
+    "believe-prefix": "*g*a*l*ēa*b*i*j*a*n*ą",
+    "gall-stressed-root": "*g*á*l*l*ā",
+    "guest-stressed-cluster": "*g*á*s*t*i",
+    "climb-prefix-cluster": "*g*a*s*t*ī*g*a*n",
+    "stressed-ga-structural-control": "*g*á*l*ēa*b*i*j*a*n*ą",
+    "grave-ga-structural-control": "*g*à*l*ēa*b*i*j*a*n*ą",
+    "noninitial-ga-structural-control": "*a*g*a*l*á",
+    "prevocalic-ga-structural-control": "*g*a*á",
+    "unsegmented-gaCV-structural-control": "*g*a*t*á"
+  },
+  "component_outputs": {
+    "believe-prefix": [
+      "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+    ],
+    "gall-stressed-root": [
+      "*g*á*l*l*ā"
+    ],
+    "guest-stressed-cluster": [
+      "*g*á*s*t*i"
+    ],
+    "climb-prefix-cluster": [
+      "*g*a*s*t*ī*g*a*n"
+    ],
+    "stressed-ga-structural-control": [
+      "*g*á*l*ēa*b*i*j*a*n*ą"
+    ],
+    "grave-ga-structural-control": [
+      "*g*à*l*ēa*b*i*j*a*n*ą"
+    ],
+    "noninitial-ga-structural-control": [
+      "*a*g*a*l*á"
+    ],
+    "prevocalic-ga-structural-control": [
+      "*g*a*á"
+    ],
+    "unsegmented-gaCV-structural-control": [
+      "*g*ĕ*t*á"
+    ]
+  },
+  "variants": {
+    "identity": {
+      "changed": [],
+      "believe": {
+        "final": [
+          "ġelīefan"
+        ],
+        "OEPrefixAReduction-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEPrefixAReduction-after": [
+          "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-before": [
+          "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-after": [
+          "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-before": [
+          "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-after": [
+          "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-before": [
+          "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-after": [
+          "*g*ĕ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEWsPalatalDiphthongization-before": [
+          "*ʝ*ĕ*l*ēa*β*j*ą*n"
+        ],
+        "OEWsPalatalDiphthongization-after": [
+          "*ʝ*ĕ*l*ēa*β*j*ą*n"
+        ]
+      }
+    },
+    "skip": {
+      "changed": [
+        {
+          "row_id": "1944",
+          "concept": "believe",
+          "input": "galáubijaną",
+          "baseline": [
+            "ġelīefan"
+          ],
+          "variant": [
+            "ġealīefan"
+          ]
+        }
+      ],
+      "believe": {
+        "final": [
+          "ġealīefan"
+        ],
+        "OEPrefixAReduction-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEPrefixAReduction-after": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEWsPalatalDiphthongization-before": [
+          "*ʝ*æ*l*ēa*β*j*ą*n"
+        ],
+        "OEWsPalatalDiphthongization-after": [
+          "*ʝ*ea*l*ēa*β*j*ą*n"
+        ]
+      }
+    },
+    "after-sc107": {
+      "changed": [
+        {
+          "row_id": "1944",
+          "concept": "believe",
+          "input": "galáubijaną",
+          "baseline": [
+            "ġelīefan"
+          ],
+          "variant": [
+            "ġealīefan"
+          ]
+        }
+      ],
+      "believe": {
+        "final": [
+          "ġealīefan"
+        ],
+        "OEPrefixAReduction-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEPrefixAReduction-after": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEWsPalatalDiphthongization-before": [
+          "*ʝ*æ*l*ēa*β*j*ą*n"
+        ],
+        "OEWsPalatalDiphthongization-after": [
+          "*ʝ*ea*l*ēa*β*j*ą*n"
+        ]
+      }
+    },
+    "after-sc043": {
+      "changed": [
+        {
+          "row_id": "1944",
+          "concept": "believe",
+          "input": "galáubijaną",
+          "baseline": [
+            "ġelīefan"
+          ],
+          "variant": [
+            "ġealīefan"
+          ]
+        }
+      ],
+      "believe": {
+        "final": [
+          "ġealīefan"
+        ],
+        "OEPrefixAReduction-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEPrefixAReduction-after": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEWsPalatalDiphthongization-before": [
+          "*ʝ*æ*l*ēa*β*j*ą*n"
+        ],
+        "OEWsPalatalDiphthongization-after": [
+          "*ʝ*ea*l*ēa*β*j*ą*n"
+        ]
+      }
+    },
+    "after-breaking": {
+      "changed": [
+        {
+          "row_id": "1944",
+          "concept": "believe",
+          "input": "galáubijaną",
+          "baseline": [
+            "ġelīefan"
+          ],
+          "variant": [
+            "ġealīefan"
+          ]
+        }
+      ],
+      "believe": {
+        "final": [
+          "ġealīefan"
+        ],
+        "OEPrefixAReduction-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEPrefixAReduction-after": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-before": [
+          "*g*a*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrighteningUnstressed-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "EAFBrightening-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-before": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEBreaking-after": [
+          "*g*æ*l*ēa*b*i*j*a*n*ą"
+        ],
+        "OEWsPalatalDiphthongization-before": [
+          "*ʝ*æ*l*ēa*β*j*ą*n"
+        ],
+        "OEWsPalatalDiphthongization-after": [
+          "*ʝ*ea*l*ēa*β*j*ą*n"
+        ]
+      }
+    }
+  },
+  "canonical_artifacts_unchanged": true
+}

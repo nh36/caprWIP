@@ -43,9 +43,9 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 033-long-eow-diphthong.md | SC106. Retained j-created glide compatibility (`OEJWWSimplification`) {#rule-OEJWWSimplification} | 84 | 31 | no |
 | 033-long-eow-diphthong.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | 99 | 41 | no |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 50 | 61 | no |
-| 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 17 | 59 | no |
-| 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 36 | 54 | no |
-| 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 58 | 47 | no |
+| 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 43 | 59 | no |
+| 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 94 | 54 | no |
+| 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 116 | 47 | no |
 | 039-040-medial-unstressed-vowel-changes.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 56 | no |
 | 039-040-medial-unstressed-vowel-changes.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 32 | 68 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 12 | 28 | no |
