@@ -13,6 +13,8 @@ if TYPE_CHECKING:
 WEAK_FINAL_MARK = "ᵘ"
 WEAK_NONFINAL_MARK = "ᶜ"
 CONTEXT_MARKS = (WEAK_FINAL_MARK, WEAK_NONFINAL_MARK)
+FOOT_MARK = "ᶠ"
+ANNOTATION_MARKS = (*CONTEXT_MARKS, FOOT_MARK)
 METADATA_FILENAME = "entry_context_metadata.tsv"
 FIELDS = (
     "row_id", "baseline_input", "word_stress", "phonological_finality",
@@ -42,7 +44,7 @@ class InputContext:
         )
 
     def encode(self, segmental_input: str) -> str:
-        if not segmental_input or any(mark in segmental_input for mark in CONTEXT_MARKS):
+        if not segmental_input or any(mark in segmental_input for mark in ANNOTATION_MARKS):
             raise ValueError("expected a nonempty, unannotated segmental input")
         return self.marker + segmental_input
 
@@ -75,7 +77,7 @@ def load_context_metadata(path: Path) -> dict[str, ContextEntry]:
             if not re.fullmatch(r"[0-9]+(?:-[0-9]+)?(?:,[0-9]+(?:-[0-9]+)?)*",
                                 row["printed_pages"]):
                 raise ValueError(f"{path}:{line}: printed page numbers required")
-            if any(mark in row["baseline_input"] for mark in CONTEXT_MARKS):
+            if any(mark in row["baseline_input"] for mark in ANNOTATION_MARKS):
                 raise ValueError(f"{path}:{line}: context annotation in reconstruction")
             entries[identifier] = ContextEntry(
                 row["baseline_input"],
@@ -103,7 +105,7 @@ def validate_context_rows(entries: dict[str, ContextEntry], row_ids: set[str]) -
 
 
 def display_form(form: str) -> str:
-    for mark in CONTEXT_MARKS:
+    for mark in ANNOTATION_MARKS:
         form = form.replace("*" + mark, "").replace(mark, "")
     return form
 

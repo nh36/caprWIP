@@ -25,11 +25,13 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC032 | Quantity-distinct English diphthong realization | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc032-adjudication.md` |
 | SC033 | J-created palatalized-glide reanalysis | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc033-adjudication.md` |
 | SC034 | Retained show long-diphthong proxy | active | REFORMULATE/DEFER | `Germanic/docs/sound_changes/audits/sc034-adjudication.md` |
-| SC035 | English unstressed ga-prefix vocalism | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-model-comparison-adjudication.md` |
+| SC035 | Pretonic front-vowel raising after a palatal fricative | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-adjudication.md` |
-| SC056 | Ordinary West Saxon palatal diphthongization | active | SPLIT/REORDER | `Germanic/docs/sound_changes/audits/sc056-ordinary-palatal-diphthongization-adjudication.md` |
+| SC056 | Ordinary West Saxon palatal diphthongization | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
+| SC073 | OE Unstressed AE Merger | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
+| SC076 | Pretonic i-lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC082 | Bounded inherited-j normalization | active | RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc082-adjudication.md` |
 | SC089 | Late unstressed ag-suffix raising | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc089-adjudication.md` |
 | SC098 | Early apocope in unstressed words | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc098-context-apocope-adjudication.md` |

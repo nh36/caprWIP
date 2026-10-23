@@ -159,6 +159,69 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 
 ## Articles and special studies
 
+### SC035 prosody reconsideration (2026-10-23)
+
+The following complete sources were acquired from their publishers or
+institutional repository, not inferred from abstracts or search snippets.
+The searchable holdings retain every PDF sheet with explicit sheet markers;
+the extraction headers record original hashes, methods and glyph repairs.
+Printed locators must be read from the retained page heads/folios, not
+confused with PDF sheet numbers.
+
+- `minkova_zhou_2022_functional_stress_shifts.{pdf,txt}`:
+  Donka Minkova and **Z. L. Zhou**, *English Language & Linguistics* 26(3),
+  **533–558**, DOI `10.1017/S1360674322000144` (`MinkovaZhou2022`).
+  Publisher's published-version PDF obtained through its `citation_pdf_url`
+  on 2026-10-23; original URL:
+  https://www.cambridge.org/core/services/aop-cambridge-core/content/view/59A438B9E1FFCC863DB66024C1FAECEE/S1360674322000144a.pdf/early-metrical-and-lexicographical-evidence-for-functional-stress-shifts.pdf.
+  All 26 sheets correspond to printed pp.533–558. The first page explicitly
+  licenses reuse under CC BY 4.0. Page images535–536 were checked for the
+  root-stress, weak-prefix and verse-evidence claims. Incorrect alternative
+  author expansions and pagination returned by web search were rejected
+  against the actual publication.
+- `riegger_bogel_walkden_2024_prosody_ge.{pdf,txt}`:
+  Chiara Riegger, Tina Bögel and George Walkden, *Interspeech 2024*,
+  pp.2065–2069, DOI `10.21437/Interspeech.2024-289`
+  (`RieggerBogelWalkden2024`). Published five-sheet proceedings paper,
+  obtained 2026-10-23 from
+  https://www.isca-archive.org/interspeech_2024/riegger24_interspeech.pdf.
+  Pages2065–2068 distinguish the three manuscript studies, their
+  interpretation and the modern German production experiment.
+  Full-text access is not itself a redistribution licence. On 2026-10-23
+  the user supplied an author's permission after consultation with the
+  publishers and co-authors: "I can grant you unrestricted permission
+  to use our article in your project." The complete PDF and searchable
+  extract may therefore be included here under that permission, not
+  under an invented CC licence or a blanket ISCA redistribution policy.
+- `berg_2014_old_english_unstressed_vowels.{pdf,txt}`:
+  Joakim P. Berg, complete May2014 Oslo MA thesis (`Berg2014`),
+  104 PDF sheets. The supplied CORE URL
+  https://core.ac.uk/download/pdf/30829936.pdf returned403. The verified
+  institutional record is https://hdl.handle.net/10852/39907, now
+  https://nva.sikt.no/registration/019c8f22d9fe-877dde99-897e-4c4e-8e9c-ea68e4446b07.
+  The public repository API's `filelink` for open artifact
+  `1bfde0f0-cd8c-45d4-9b52-e255955b49f7` supplied the complete `Thesis.pdf`.
+  The temporary signed download URL is not a persistent citation or
+  credential to commit. Printed p.60 is PDF sheet72; that page was
+  image-checked, including the analogy argument and Pforzen qualification.
+  NVA labels this work with general copyright terms permitting private
+  professional consultation, not unrestricted republication:
+  https://nva.sikt.no/license/copyright-act/1.0.
+  The user supplied explicit public-repository permission on 2026-10-23:
+  "it is no problem to use this in your research including to put it in
+  the public github repo." This permits the complete PDF and searchable
+  extract in this repository; it is permission, not a CC licence.
+
+Hogg's existing grammar holding was not duplicated. The 2011 reprint's
+printed p.104 (PDF sheet117), §5.48 n.1, was image-checked: the relevant
+palatal begins a stress foot, not necessarily a word; *sċeaft* and
+*ġesċeaft* illustrate the contrast. Cite `HoggGrammar1992` by section and
+identify the reprint explicitly when using its page number. This is not
+the chapter cited as `HoggPhonology1992`. Merger evidence at §§6.50–6.54
+has independent evidential force from that foot-conditioning claim.
+
+### SC112 spatial-adverb source
+
 - `hill_2017_west_germanic_lengthening.txt` / `.pdf`
   Hill, "West Germanic monosyllabic lengthening and Gothic breaking as
   partially Proto-Germanic developments: The evidence of pronominal place

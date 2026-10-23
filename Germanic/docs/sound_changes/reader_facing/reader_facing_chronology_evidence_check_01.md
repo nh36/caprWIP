@@ -5,7 +5,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 ## Summary
 
 - Sections checked: 101.
-- Sections with warnings: 67.
+- Sections with warnings: 68.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -43,9 +43,9 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 033-long-eow-diphthong.md | SC106. Retained j-created glide compatibility (`OEJWWSimplification`) {#rule-OEJWWSimplification} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 033-long-eow-diphthong.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | no | no | no | no | no | yes | no | missing move-condition wording |
-| 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | no | no | no | yes | yes | yes | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
+| 035-037-prefix-and-compound-adjustments.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 039-040-medial-unstressed-vowel-changes.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 039-040-medial-unstressed-vowel-changes.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
@@ -66,7 +66,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 052-velar-palatalization.md | SC109. Postmutation merger serialization (`OEPalatalFricativeMerger`) {#rule-OEPalatalFricativeMerger} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 053-054-pre-umlaut-bridge-and-w-loss.md | SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | yes | no | no | yes | no | yes | no | — |
 | 053-054-pre-umlaut-bridge-and-w-loss.md | SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 055-056-i-umlaut-core.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | no | no | no | no | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing SC-plus-rule reference in chronology prose |
+| 055-056-i-umlaut-core.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 055-056-i-umlaut-core.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | yes | no | yes | no | yes | no | no | missing expected-form wording; missing SC-plus-rule reference in chronology prose |
 | 055-056-i-umlaut-core.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | no | no | no | no | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing SC-plus-rule reference in chronology prose |
 | 055-056-i-umlaut-core.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | no | no | no | no | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing SC-plus-rule reference in chronology prose |
@@ -90,7 +90,7 @@ _Generated from the current SC-numbered rule sections in the reader-facing chapt
 | 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | yes | yes | yes | yes | yes | no | no | — |
 | 074-075-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | yes | yes | yes | yes | yes | no | no | — |
 | 074-075-medial-unstressed-i-lowering.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | yes | yes | yes | yes | yes | no | no | — |
-| 076-prefix-i-reduction.md | SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | yes | yes | yes | yes | yes | no | no | — |
+| 076-prefix-i-reduction.md | SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | no | no | yes | no | yes | no | no | missing move-condition wording; missing expected-form wording; missing SC-plus-rule reference in chronology prose |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | yes | yes | yes | yes | yes | yes | no | — |
 | 079-080-final-j-loss-and-final-geminate-simplification.md | SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | yes | yes | yes | yes | yes | no | no | — |
 | 079-080-final-j-loss-and-final-geminate-simplification.md | SC080. Simplification of final geminates (`OEFinalGeminateSimplification`) {#rule-OEFinalGeminateSimplification} | yes | yes | yes | yes | yes | no | no | — |

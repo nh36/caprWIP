@@ -25,7 +25,7 @@ digraph first_break_chronology {
   "SC032" [label="SC032\nQuantity-distinct English diphthong realization"];
   "SC033" [label="SC033\nJ-created palatalized-glide reanalysis"];
   "SC034" [label="SC034\nRetained show long-diphthong proxy"];
-  "SC035" [label="SC035\nEnglish unstressed ga-prefix vocalism"];
+  "SC035" [label="SC035\nPretonic front-vowel raising after a palatal fricative"];
   "SC036" [label="SC036\nOE Inter Stress Raising"];
   "SC037" [label="SC037\nOE Compound Linking Syncope"];
   "SC039" [label="SC039\nOE WI Combinative U Umlaut"];
@@ -64,7 +64,7 @@ digraph first_break_chronology {
   "SC073" [label="SC073\nOE Unstressed AE Merger"];
   "SC074" [label="SC074\nOE Med Unstressed I Lowering1"];
   "SC075" [label="SC075\nOE Med Unstressed I Lowering"];
-  "SC076" [label="SC076\nOE Prefix I Reduction"];
+  "SC076" [label="SC076\nPretonic i-lowering"];
   "SC078" [label="SC078\nOE Weak Tail Reduction"];
   "SC079" [label="SC079\nOE J Loss After Heavy"];
   "SC080" [label="SC080\nOE Final Geminate Simplification"];
@@ -122,8 +122,6 @@ digraph first_break_chronology {
   "SC032" -> "SC030" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC032" -> "SC040" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC031" -> "SC032" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC035" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC035" -> "SC107" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC036" -> "SC019" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC036" -> "SC040" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC037" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
@@ -218,4 +216,6 @@ digraph first_break_chronology {
   "SC087" -> "SC044" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC087" -> "RUNNER_LIMIT" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC056" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC035" -> "SC107" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC035" -> "SC052" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
 }

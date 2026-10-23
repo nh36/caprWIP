@@ -15,6 +15,7 @@ RECORD = SC / "audits/sc035-model-comparison/evidence.json"
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from capr_runtime import run_in_runner
 import adjudicate
+from historical_sc035 import historical_runtime
 
 
 def record():
@@ -111,21 +112,19 @@ def test_cluster_coverage_advantage_is_not_hidden_by_selected_output_equality():
 
 def test_current_decision_links_followup_without_claiming_a_unique_history():
     row = adjudicate.load_registry_row("SC035")
-    assert row["adjudication_memo"].endswith("sc035-model-comparison-adjudication.md")
-    assert row["verdict"] == "REFORMULATE"
-    assert "provisionally" in row["chronology_problem"]
+    assert row["adjudication_memo"].endswith("sc035-prosody-adjudication.md")
+    assert row["verdict"] == "REFORMULATE/REORDER"
     assert adjudicate.check_memo("SC035", row=row) == []
 
 
 @pytest.mark.runtime
 def test_fresh_foma_comparison_reproduces_every_recorded_intermediate():
-    executed = run_in_runner(
-        "python3 docs/sound_changes/audits/sc035-model-comparison/experiment.py",
-        text=True, capture_output=True, check=True, timeout=1800)
+    with historical_runtime(BASE) as execute:
+        executed = execute(
+            "python3 docs/sound_changes/audits/sc035-model-comparison/experiment.py")
     current = json.loads(executed.stdout)
-    assert current["source_sha256"] == hashlib.sha256(
-        (ROOT / "Germanic/fsts/germanic.txt").read_bytes()).hexdigest()
     historical = record()
+    assert current["source_sha256"] == historical["source_sha256"]
     for key in ("accepted_base_commit", "selected_rows", "legacy380_identity_rows",
                 "stages_compared", "controls", "models", "canonical_artifacts_unchanged"):
         assert current[key] == historical[key], key

@@ -1,11 +1,25 @@
 # SC035-SC037: Prefix and Compound Adjustments
 
-SC035's current authority is the linked follow-up
-`audits/sc035-model-comparison-adjudication.md` (2026-10-22), supplementing
-the preserved closure `audits/sc035-adjudication.md` (2026-10-21):
-REFORMULATE its comparative justification, provisionally RETAIN its literal
-executable law and order. The earlier SC035 card records a composite displacement
-experiment; current chronology distinguishes SC107 from stressed SC043.
+SC035's current authority is
+`audits/sc035-prosody-adjudication.md` (2026-10-23): REFORMULATE/REORDER.
+It supersedes the provisional preference for compression in
+`audits/sc035-model-comparison-adjudication.md`, while preserving that
+comparison, the original closure and both frozen assays. Adopt ordinary
+pretonic fronting, regular ae-raising after the palatal fricative, and later
+i-lowering. The shared positive-stress context replaces the gaCV proxy,
+not one grammatical flag with another. SC056 uses headed-foot initiality;
+SC073 extends ae/e merger to weak pretonic vowels; SC076 keeps the later
+i-lowering separate and removes the context annotation.
+
+Hogg Grammar 5.48 n.1 (held 2011 p.104), 6.50-6.54; Minkova/Zhou
+2022:535-536; Riegger/Bogel/Walkden 2024:2065-2068; Berg 2014:60-61;
+and Ringe/Taylor 2014:334-335 have distinct evidential roles recorded in
+the new memo. The raising reconstruction has confidence B, independently
+of the historical stage label and the secure gi/ge outcome.
+
+The SC035 assessments below record the earlier editorial history and are
+superseded where they describe the proxy as current. They are retained
+to preserve the development of the argument, not as competing authority.
 The grouping and the assessments of SC036/SC037 below are not new
 adjudications of either neighbour.
 

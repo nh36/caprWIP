@@ -5,7 +5,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 ## Summary
 
 - Foma blocks checked: 105.
-- Blocks over the conservative 90-character threshold: 15.
+- Blocks over the conservative 90-character threshold: 14.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -43,9 +43,9 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 033-long-eow-diphthong.md | SC106. Retained j-created glide compatibility (`OEJWWSimplification`) {#rule-OEJWWSimplification} | 84 | 31 | no |
 | 033-long-eow-diphthong.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | 99 | 41 | no |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 50 | 61 | no |
-| 035-037-prefix-and-compound-adjustments.md | SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 43 | 59 | no |
-| 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 132 | 54 | no |
-| 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 154 | 47 | no |
+| 035-037-prefix-and-compound-adjustments.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 11 | 54 | no |
+| 035-037-prefix-and-compound-adjustments.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 33 | 47 | no |
+| 035-037-prefix-and-compound-adjustments.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 87 | 51 | no |
 | 039-040-medial-unstressed-vowel-changes.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 56 | no |
 | 039-040-medial-unstressed-vowel-changes.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 32 | 68 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 12 | 28 | no |
@@ -71,11 +71,11 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 053-054-pre-umlaut-bridge-and-w-loss.md | SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | 21 | 28 | no |
 | 053-054-pre-umlaut-bridge-and-w-loss.md | SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | 31 | 46 | no |
 | 055-056-i-umlaut-core.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | 76 | 117 | yes |
-| 055-056-i-umlaut-core.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 104 | 70 | no |
-| 055-056-i-umlaut-core.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | 139 | 69 | no |
-| 055-056-i-umlaut-core.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | 162 | 72 | no |
-| 055-056-i-umlaut-core.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 194 | 34 | no |
-| 055-056-i-umlaut-core.md | Retained late palatal-diphthongization approximation {#rule-OELatePalatalDiphthong} | 215 | 116 | yes |
+| 055-056-i-umlaut-core.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 119 | 70 | no |
+| 055-056-i-umlaut-core.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | 154 | 69 | no |
+| 055-056-i-umlaut-core.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | 177 | 72 | no |
+| 055-056-i-umlaut-core.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 209 | 34 | no |
+| 055-056-i-umlaut-core.md | Retained late palatal-diphthongization approximation {#rule-OELatePalatalDiphthong} | 230 | 116 | yes |
 | 057-j-cluster-coalescence.md | SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence} | 16 | 30 | no |
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | 15 | 90 | no |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | 14 | 56 | no |
@@ -91,11 +91,11 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 070-071-early-unstressed-fronting-shortening-bridge.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | 38 | 140 | yes |
 | 070-071-early-unstressed-fronting-shortening-bridge.md | SC099. Medial raising of shortened unstressed \emph{*o} (`OEMedUnstressedORaising`) {#rule-OEMedUnstressedORaising} | 52 | 159 | yes |
 | 070-071-early-unstressed-fronting-shortening-bridge.md | SC100. Final lowering of shortened unstressed \emph{*o} (`OEFinalUnstressedOLowering`) {#rule-OEFinalUnstressedOLowering} | 67 | 144 | yes |
-| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} | 20 | 71 | no |
-| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | 43 | 49 | no |
+| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} | 20 | 79 | no |
+| 072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | 43 | 48 | no |
 | 074-075-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | 20 | 90 | no |
 | 074-075-medial-unstressed-i-lowering.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | 39 | 33 | no |
-| 076-prefix-i-reduction.md | SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | 17 | 107 | yes |
+| 076-prefix-i-reduction.md | SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | 19 | 48 | no |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | 14 | 48 | no |
 | 079-080-final-j-loss-and-final-geminate-simplification.md | SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | 17 | 141 | yes |
 | 079-080-final-j-loss-and-final-geminate-simplification.md | SC080. Simplification of final geminates (`OEFinalGeminateSimplification`) {#rule-OEFinalGeminateSimplification} | 37 | 38 | no |
@@ -140,7 +140,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 - `117` chars — `    {*é} -> {*íe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],`
 - `116` chars — `    {*ḗ} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]`
 
-### 055-056-i-umlaut-core.md:215 — Retained late palatal-diphthongization approximation {#rule-OELatePalatalDiphthong}
+### 055-056-i-umlaut-core.md:230 — Retained late palatal-diphthongization approximation {#rule-OELatePalatalDiphthong}
 
 - `116` chars — `    {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]`
 
@@ -184,10 +184,6 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 ### 070-071-early-unstressed-fronting-shortening-bridge.md:67 — SC100. Final lowering of shortened unstressed \emph{*o} (`OEFinalUnstressedOLowering`) {#rule-OEFinalUnstressedOLowering}
 
 - `144` chars — `    {*o} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* .#.`
-
-### 076-prefix-i-reduction.md:17 — SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
-
-- `107` chars — `    {*i} -> {*ĕ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic`
 
 ### 079-080-final-j-loss-and-final-geminate-simplification.md:17 — SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy}
 

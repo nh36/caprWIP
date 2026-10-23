@@ -98,6 +98,27 @@ exactly — with page numbers — what the source supports, and separately
 state what is CAPR's own modelling decision. Do not launder a modelling
 convenience into a historical claim by citation proximity.
 
+#### Regular phonology and analogy
+
+Regular phonological change has explanatory priority over analogy. Where
+both accounts fit the evidence, prefer the regular account unless concrete
+positive evidence favours analogy or demonstrates that the proposed
+phonological account is inadequate. Resemblance, possible influence and
+an author's preference alone do not establish analogy. State the regular
+conditioning, seek counterexamples, and record the positive evidence
+(if any) for invoking analogy; do not invent a regular law to avoid a
+genuine evidential gap.
+
+Sound changes are not grammatically conditioned: state ordinary sound
+laws in phonological, phonetic or prosodic terms, never by grammatical
+category, morphological class or morpheme identity. Morphological evidence
+may inform reconstructed inputs, stress, boundaries and foot structure;
+those independently justified phonological properties, not membership
+in a particular prefix, condition the law. Independently supported
+morphological analogy is a separate explanatory mechanism, not a hidden
+sound-law condition. Apply these requirements in future adjudications;
+they do not themselves reopen completed decisions.
+
 ### 7. Never infer stage or scope from an FST identifier
 
 Identifiers like `PNWGmcMnDissimilation` (SC022, historically Common

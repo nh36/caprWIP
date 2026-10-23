@@ -40,11 +40,10 @@ SC102	EAFHiatusWInsertion	30	1	sow	witnessed
 SC025	EAFLongANasalRounding	31	2	month, spoon	witnessed	
 SC104	EAFNasalizedLowRounding	32	4	goose, month, spoon, thought	witnessed	
 SC101	EAFLongAFronting	33	16	adder, bier, deed, eel, hair, let, meal, needle, read, sheep, sleep, weapon, year, betray, there, where	witnessed	
-SC004	EAFAiMonophthongization	34	23	bone, deal, dough, flesh, ghost, heal, heath, home, last, lead, loam, loath, mean, one, rope, sea, sheath, snow, soul, spread, stone, toe, token	witnessed	
-SC029	OEAwwjResolution	35	2	hay, strew	witnessed	
-SC030	OEAuBrightening	36	21	believe, bow, bread, dew, dream, flea, hay, head, hew, leaf, leek, lye, need, reek, seam, shove, stream, strew, team, straw	witnessed	
-SC032	OEDiphthongLeveling	40	33	believe, bow, bread, breast, chew, deer, dew, dream, flea, flee, fly, forlorn, four, freeze, friend, hay, head, hew, leaf, leek, light, lye, need, reek, seam, shove, stream, strew, team, thief, you, straw	witnessed	
-SC035	OEPrefixAReduction	42	1	believe	witnessed	
+SC004	EAFAiMonophthongization	35	23	bone, deal, dough, flesh, ghost, heal, heath, home, last, lead, loam, loath, mean, one, rope, sea, sheath, snow, soul, spread, stone, toe, token	witnessed	
+SC029	OEAwwjResolution	36	2	hay, strew	witnessed	
+SC030	OEAuBrightening	37	21	believe, bow, bread, dew, dream, flea, hay, head, hew, leaf, leek, lye, need, reek, seam, shove, stream, strew, team, straw	witnessed	
+SC032	OEDiphthongLeveling	41	33	believe, bow, bread, breast, chew, deer, dew, dream, flea, flee, fly, forlorn, four, freeze, friend, hay, head, hew, leaf, leek, light, lye, need, reek, seam, shove, stream, strew, team, thief, you, straw	witnessed	
 SC036	OEInterStressRaising	43	2	soul, world	witnessed	
 SC037	OECompoundLinkingSyncope	44	1	rainbow	witnessed	
 SC039	OEWICombinativeUUmlaut	46	1	widow	witnessed	
@@ -60,39 +59,40 @@ SC049	PGmcBAllophony	57	28	beaver, believe, calf, drive, give, grave, harvest, h
 SC050	SieversLawSyncope	58	19	believe, bow, fast, follow, heal, last, lead, light, mean, seek, send, singe, smear, spread, start, still, stretch, think, betray	witnessed	
 SC051	OESkPalatalization	59	18	fish, flesh, shaft, shame, shear, sheath, sheep, shield, shilling, shine, shoulder, shove, shovel, show, shower, thrash, show (iptv.2sg), show (3sg)	witnessed	
 SC052	OEVelarPalatalization	60	32	begin, believe, belly, bow, breeches, calf, chew, day, drench, follow, gall, gift, give, guest, hail, hedge, honey, nail, rain, rainbow, rye, sail, seek, singe, stretch, string, thane, think, wain, way, withy, yarn	witnessed	
-SC053	OEPostVelarWLoss	61	1	sing	witnessed	
-SC054	OEWLossBeforeI	62	1	sea	witnessed	
-SC056	OEWsPalatalDiphthongization	63	7	give, guest, shaft, shear, sheep, shield, year	witnessed	
-SC055	OEIUmlaut	64	68	believe, belly, berry, birth, bore, bow, breeches, bride, cow, deal, dill, drench, fast, fist, flesh, follow, fright, guest, handle, harvest, hay, heal, heath, hedge, hind, last, laugh, lead, learn, lick, light, lung, make, mean, might, need, net, nettle, night, rye, sea, seek, send, set, sheath, show, singe, sit, smear, spare, spindle, spread, start, stem, still, stretch, strew, string, sunder, think, thistle, three, wight, will, worm, hue, fire	witnessed	
-SC057	OEJClusterCoalescence	66	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
-SC059	OEBackMutation	67	5	heaven, milk, seven, spear, world	witnessed	
-SC060	OEWsPalatalUmlaut	68	5	knight, might, night, six, wight	witnessed	
-SC061	OEWeakTailNasalLoss	69	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
-SC063	OEHighVowelApocope	71	64	beaver, beech, belly, bier, birth, bough, breeches, bride, cow, deal, deed, dew, drench, fee, field, fist, flesh, flood, gift, ground, guest, hall, hand, harvest, heath, help, herd, hind, linden, liver, lung, lust, lye, march, might, need, needle, night, rind, rood, salve, sea, sheath, shield, shovel, shower, sorrow, soul, spindle, spoon, stem, string, thirst, tide, tongs, wether, while, wight, winter, wold, world, worm, fire, wool	witnessed	
-SC064	NWGmcInStemNLoss	72	1	fright	witnessed	
-SC065	OEMedialSyncope	73	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
-SC066	OELAdjacentSyncope	74	3	nettle, spindle, thistle	witnessed	
-SC067	OEDentalAssimilation	75	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
-SC068	OEPreconsonantalDegemination	76	2	bottom, spindle	witnessed	
-SC069	OEEarlyOShortening	77	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
-SC070	OEUnstressedFrontingEarly	78	2	find, west	witnessed	
-SC071	OELateOShortening	79	7	month, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg), wound	witnessed	
-SC099	OEMedUnstressedORaising	80	1	wound	witnessed	
-SC100	OEFinalUnstressedOLowering	81	6	month, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg)	witnessed	
-SC072	OEUnstressedLongVowelShortening	82	61	adder, bore, bow, earth, father, find, flask, foal, fright, gall, handle, have, haw, heart, knee, knob, lap, learn, lick, line, list, live, make, meed, mother, name, navel, neck, nettle, nightmare, ox, rainbow, rest, show, side, sister, span, spar, spare, spur, sun, sunder, swallow, tick, toe, tongue, wart, weasel, west, whore, widow, will, youth, make (iptv.2sg), bore (iptv.2sg), learn (iptv.2sg), lick (iptv.2sg), show (iptv.2sg), wound, thought, tap	witnessed	
-SC073	OEUnstressedAEMerger	83	32	adder, ban, berry, brand, earth, find, flask, four, hammer, heart, honey, line, list, man, nettle, nightmare, rest, side, summer, sun, swallow, swan, thistle, toe, tongue, wart, water, weasel, west, whore, widow, withy	witnessed	
-SC074	OEMedUnstressedILowering1	84	6	dill, fright, harvest, rye, shilling, sieve	witnessed	
-SC075	OEMedUnstressedILowering	85	1	shilling	witnessed	
-SC040	OEMedUnstressedULowering	86	11	hawk, head, heaven, milk, navel, nine, rainbow, seven, soul, ten, world	witnessed	
-SC076	OEPrefixIReduction	87	1	begin	witnessed	
-SC078	OEWeakTailReduction	88	89	bake, begin, believe, bind, bore, bow, break, bring, brook, burst, chew, climb, drink, drive, eat, fall, fare, fast, fight, flee, fly, fold, follow, forlorn, freeze, give, grave, gripe, handle, heal, help, hew, hold, knead, lade, last, laugh, lead, learn, let, lick, light, make, mean, read, ride, run, seek, send, set, shear, shine, show, sing, singe, sit, slay, sleep, smear, span, spare, spin, spread, start, starve, steal, still, stretch, strew, sunder, sup, swell, swim, think, thrash, tread, wade, wake, warp, wash, wax, weave, whine, wield, will, wind, wring, sow, betray	witnessed	
-SC079	OEJLossAfterHeavy	89	29	believe, bow, fast, follow, heal, hedge, hind, last, laugh, lead, light, lung, mean, net, seek, send, set, singe, sit, smear, spread, start, still, stretch, think, will, betray, hue	witnessed	
-SC080	OEFinalGeminateSimplification	90	1	lung	witnessed	
-SC081	OEJStrengtheningAfterFrontDiphthong	91	1	strew	witnessed	
-SC082	OEIntervocalicJVocalization	92	9	bore, handle, learn, lick, make, show, spare, sunder, three	witnessed	
-SC083	OEUnstressedEIContraction	93	8	bore, handle, learn, lick, make, show, spare, sunder	witnessed	
-SC085	OEHLoss	95	4	flee, slay, ten, toe	witnessed	
-SC086	OEContraction	96	5	flee, slay, ten, three, toe	witnessed	
-SC087	OERMetathesis	97	2	burst, frost	witnessed	
-SC088	OEEpentheticVowel	98	13	beaver, finger, fodder, leather, liver, rudder, thunder, timber, weather, wether, winter, wonder, fowl	witnessed	
-SC089	OELateUnstressedAgSuffix	99	2	honey, withy	witnessed	
+SC035	OEPrefixAReduction	61	1	believe	witnessed	
+SC053	OEPostVelarWLoss	62	1	sing	witnessed	
+SC054	OEWLossBeforeI	63	1	sea	witnessed	
+SC056	OEWsPalatalDiphthongization	64	7	give, guest, shaft, shear, sheep, shield, year	witnessed	
+SC055	OEIUmlaut	65	68	believe, belly, berry, birth, bore, bow, breeches, bride, cow, deal, dill, drench, fast, fist, flesh, follow, fright, guest, handle, harvest, hay, heal, heath, hedge, hind, last, laugh, lead, learn, lick, light, lung, make, mean, might, need, net, nettle, night, rye, sea, seek, send, set, sheath, show, singe, sit, smear, spare, spindle, spread, start, stem, still, stretch, strew, string, sunder, think, thistle, three, wight, will, worm, hue, fire	witnessed	
+SC057	OEJClusterCoalescence	67	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
+SC059	OEBackMutation	68	5	heaven, milk, seven, spear, world	witnessed	
+SC060	OEWsPalatalUmlaut	69	5	knight, might, night, six, wight	witnessed	
+SC061	OEWeakTailNasalLoss	70	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
+SC063	OEHighVowelApocope	72	64	beaver, beech, belly, bier, birth, bough, breeches, bride, cow, deal, deed, dew, drench, fee, field, fist, flesh, flood, gift, ground, guest, hall, hand, harvest, heath, help, herd, hind, linden, liver, lung, lust, lye, march, might, need, needle, night, rind, rood, salve, sea, sheath, shield, shovel, shower, sorrow, soul, spindle, spoon, stem, string, thirst, tide, tongs, wether, while, wight, winter, wold, world, worm, fire, wool	witnessed	
+SC064	NWGmcInStemNLoss	73	1	fright	witnessed	
+SC065	OEMedialSyncope	74	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
+SC066	OELAdjacentSyncope	75	3	nettle, spindle, thistle	witnessed	
+SC067	OEDentalAssimilation	76	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
+SC068	OEPreconsonantalDegemination	77	2	bottom, spindle	witnessed	
+SC069	OEEarlyOShortening	78	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
+SC070	OEUnstressedFrontingEarly	79	2	find, west	witnessed	
+SC071	OELateOShortening	80	7	month, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg), wound	witnessed	
+SC099	OEMedUnstressedORaising	81	1	wound	witnessed	
+SC100	OEFinalUnstressedOLowering	82	6	month, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg)	witnessed	
+SC072	OEUnstressedLongVowelShortening	83	61	adder, bore, bow, earth, father, find, flask, foal, fright, gall, handle, have, haw, heart, knee, knob, lap, learn, lick, line, list, live, make, meed, mother, name, navel, neck, nettle, nightmare, ox, rainbow, rest, show, side, sister, span, spar, spare, spur, sun, sunder, swallow, tick, toe, tongue, wart, weasel, west, whore, widow, will, youth, make (iptv.2sg), bore (iptv.2sg), learn (iptv.2sg), lick (iptv.2sg), show (iptv.2sg), wound, thought, tap	witnessed	
+SC073	OEUnstressedAEMerger	84	32	adder, ban, berry, brand, earth, find, flask, four, hammer, heart, honey, line, list, man, nettle, nightmare, rest, side, summer, sun, swallow, swan, thistle, toe, tongue, wart, water, weasel, west, whore, widow, withy	witnessed	
+SC074	OEMedUnstressedILowering1	85	6	dill, fright, harvest, rye, shilling, sieve	witnessed	
+SC075	OEMedUnstressedILowering	86	1	shilling	witnessed	
+SC040	OEMedUnstressedULowering	87	11	hawk, head, heaven, milk, navel, nine, rainbow, seven, soul, ten, world	witnessed	
+SC076	OEPrefixIReduction	88	2	begin, believe	witnessed	
+SC078	OEWeakTailReduction	89	89	bake, begin, believe, bind, bore, bow, break, bring, brook, burst, chew, climb, drink, drive, eat, fall, fare, fast, fight, flee, fly, fold, follow, forlorn, freeze, give, grave, gripe, handle, heal, help, hew, hold, knead, lade, last, laugh, lead, learn, let, lick, light, make, mean, read, ride, run, seek, send, set, shear, shine, show, sing, singe, sit, slay, sleep, smear, span, spare, spin, spread, start, starve, steal, still, stretch, strew, sunder, sup, swell, swim, think, thrash, tread, wade, wake, warp, wash, wax, weave, whine, wield, will, wind, wring, sow, betray	witnessed	
+SC079	OEJLossAfterHeavy	90	29	believe, bow, fast, follow, heal, hedge, hind, last, laugh, lead, light, lung, mean, net, seek, send, set, singe, sit, smear, spread, start, still, stretch, think, will, betray, hue	witnessed	
+SC080	OEFinalGeminateSimplification	91	1	lung	witnessed	
+SC081	OEJStrengtheningAfterFrontDiphthong	92	1	strew	witnessed	
+SC082	OEIntervocalicJVocalization	93	9	bore, handle, learn, lick, make, show, spare, sunder, three	witnessed	
+SC083	OEUnstressedEIContraction	94	8	bore, handle, learn, lick, make, show, spare, sunder	witnessed	
+SC085	OEHLoss	96	4	flee, slay, ten, toe	witnessed	
+SC086	OEContraction	97	5	flee, slay, ten, three, toe	witnessed	
+SC087	OERMetathesis	98	2	burst, frost	witnessed	
+SC088	OEEpentheticVowel	99	13	beaver, finger, fodder, leather, liver, rudder, thunder, timber, weather, wether, winter, wonder, fowl	witnessed	
+SC089	OELateUnstressedAgSuffix	100	2	honey, withy	witnessed	

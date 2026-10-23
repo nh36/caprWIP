@@ -289,7 +289,10 @@ def trace_lexeme(proto_norm: str, bin_dir: Path,
             label = f"{label} [no-change]"
         else:
             outputs = usable
-            if last_outputs is not None and outputs == last_outputs:
+            if last_outputs is not None and (
+                [display_form(form) for form in outputs]
+                == [display_form(form) for form in last_outputs]
+            ):
                 label = f"{label} [no-change]"
         last_outputs = outputs
         trace.append((label, outputs))
@@ -316,6 +319,7 @@ def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path,
         ("germanic-aligned-final.tsv", tsv_path),
         ("entry_context_metadata.tsv", tsv_path.with_name("entry_context_metadata.tsv")),
         ("oe_input_context.py", layout().bin_dir / "oe_input_context.py"),
+        ("oe_full_trace_report.py", Path(__file__)),
     ]:
         lines.append(f"{label} sha256: {sha256_of(path)}")
     lines.append(f"old_english.bin sha256 (informational): {sha256_of(bin_path)}")
@@ -384,13 +388,14 @@ def trace_provenance_problems(text: str) -> List[str]:
         "germanic-aligned-final.tsv": rt.corpus_tsv,
         "entry_context_metadata.tsv": rt.data_dir / "entry_context_metadata.tsv",
         "oe_input_context.py": rt.bin_dir / "oe_input_context.py",
+        "oe_full_trace_report.py": Path(__file__),
     }
     for label, path in live.items():
         if label not in recorded:
             problems.append(f"trace PROVENANCE lacks a hash for {label}")
         elif recorded[label] != sha256_of(path):
             problems.append(f"trace report is STALE w.r.t. {label}")
-        if label in {"entry_context_metadata.tsv", "oe_input_context.py"}:
+        if label in {"entry_context_metadata.tsv", "oe_input_context.py", "oe_full_trace_report.py"}:
             continue
         manifest_label = f"manifest:{label}"
         if manifest_label not in recorded:
@@ -529,7 +534,10 @@ def write_report(
                     lines.append("")
                     lines.append(header)
                     lines.append("")
-                if prev_outputs is not None and outputs != prev_outputs:
+                if prev_outputs is not None and (
+                    [display_form(form) for form in outputs]
+                    != [display_form(form) for form in prev_outputs]
+                ):
                     stage_fires[base_label].append(lexeme_label)
                 prev_outputs = outputs
                 pretty = ", ".join(display_form(form) for form in outputs)

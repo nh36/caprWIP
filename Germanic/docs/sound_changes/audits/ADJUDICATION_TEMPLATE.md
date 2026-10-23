@@ -48,6 +48,12 @@ but never delete a section — write "none" or "n/a" with a reason.
 
 - **Historical stage:**
 - **Historical scope (geographical/genealogical):**
+- **Regular phonological conditioning** (phonetic/prosodic environment;
+  independently justified stress/boundaries, not grammatical membership):
+- **Counterexamples and falsification** (including non-morpheme-matched
+  forms sharing the proposed phonological environment; evidential gaps):
+- **Positive evidence for analogy** (if none, say so; distinguish
+  demonstrated failure of a regular account from resemblance or preference):
 - **Relationship between historical phenomenon and executable proxy**
   (narrower proxy? overgeneration? exact match? why):
 - **Chronology evidence** — list each edge and mark it

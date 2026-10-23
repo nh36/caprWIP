@@ -6,12 +6,12 @@ import re
 import subprocess
 import unittest
 
-from test_sc043_component_split import SC, SOURCE, definition, rows
+from test_sc043_component_split import SC, SOURCE, definition, rows, segmental_definition
 import oe_pipeline
 
 
 def compact(text, name):
-    return re.sub(r"\s+", "", definition(text, name))
+    return re.sub(r"\s+", "", segmental_definition(text, name))
 
 
 class PalatalClassSplitTests(unittest.TestCase):
@@ -49,7 +49,7 @@ class PalatalClassSplitTests(unittest.TestCase):
         for field in ("component_checks", "staged_checks"):
             self.assertTrue(all(check in post_hue["recipes"][1][field] for check in recipe[field]))
 
-    def test_production_matches_the_executed_coupled_components(self):
+    def test_production_retains_segmental_kernels_of_executed_coupled_components(self):
         data = json.loads((SC / "literature_dossiers/anglo_frisian/"
                            "oe_palatal_class_recipes.json").read_text())
         recipe = next(row for row in data["recipes"] if row["id"] == "p-coupled")

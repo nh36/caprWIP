@@ -1066,6 +1066,7 @@ define EnglishStarVelarOrLabial [EnglishStarVelar | EnglishStarLabial];
 define EnglishStarCoronal [EnglishStarConsonant - EnglishStarVelarOrLabial - {*j} - EnglishStarNasal];
 
 define EnglishPalatalConsonant [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*ç} | {*ʒ} | {*j}];
+define OEAnyConsonant [EnglishStarConsonant | EnglishPalatalConsonant];
 
 # Broaden sigma for early OE rules to avoid rejecting symbols not referenced in a rule.
 define EnglishStarAlphabet [
@@ -1078,11 +1079,31 @@ define EnglishStarAlphabet [
     {*ô}
 ];
 
-# Context annotations are outside each early rule's segmental domain.
-define Ctx(T) [
+# Nonsegmental context is lifted once around a rule's phonological domain.
+# The transient *áeu must remain visible before diphthong leveling.
+define ContextSegments [[EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]] | {*áeu}];
+define SentenceCtx(T) [
     [{*ᵘ}|{*ᶜ}|0]
-    [[EnglishStarAlphabet - [{*ᵘ}|{*ᶜ}]]* .o. T]
+    [[ContextSegments|{*ᶠ}]* .o. T]
 ];
+define Ctx(T) SentenceCtx([[{*ᶠ}|0] [ContextSegments* .o. T]]);
+
+# Positive primary stress identifies one pretonic syllable before the root
+# accent is consumed. No prefix identity, grammatical class or inferred
+# absence of a late accent is used (SC035 prosody reconsideration).
+define OEHeadedVowel [PGmcStarAcuteVowel|{*ái}|{*áu}|{*éu}|{*íu}];
+define OEPretonicInput [
+    OEAnyConsonant* [{*a}|{*e}|{*i}|{*o}|{*u}|{*æ}]
+    OEAnyConsonant+ OEHeadedVowel EnglishStarAlphabet*
+];
+define OEStressFootContext SentenceCtx([
+    [0:{*ᶠ} OEPretonicInput]
+    | [EnglishStarAlphabet* - OEPretonicInput]
+]);
+define FootCtx(T) SentenceCtx([
+    {*ᶠ} OEAnyConsonant* EnglishStarVocalic [ContextSegments* .o. T]
+    | [ContextSegments* .o. T]
+]);
 
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
 
@@ -1144,12 +1165,12 @@ define EnglishInitialKnMarkers [
     {*g} {*n} -> {*Gn} || .#. _
 ];
 
-define OEJClusterCoalescence (
+define OEJClusterCoalescence Ctx((
     # *bj coalescence removed: BAllophony (*b→*β) + JLossAfterHeavy handle
     # non-geminated *bj; for geminated *bbj, *j is consumed by JLossAfterHeavy.
     [{*g} {*j} -> {*ʤ}]
     .o. [{*k} {*j} -> {*ʧ}]
-);
+));
 
 define EnglishEarlyPalatalisation [
     [{*s} {*k} -> {*ʃ} || _ EnglishStarFrontVowel]
@@ -1369,9 +1390,9 @@ define MonosyllabicFinalZLoss [
 # shortening (§6.8.3).
 # See DEV_NOTES §17.10.14 for the cross-source survey and
 # Germanic/docs/debug_snapshots/reorder_audit.txt for the audit.
-define PWGmcFinalBareALoss [
+define PWGmcFinalBareALoss Ctx([
     {*a} -> 0 || _ .#.
-];
+]);
 
 # PWGmc/WGmc surviving-bimoric *-ō unrounding (R/T vol.2 §3.1, pp.58-59).
 # After z-loss has exposed a new crop of word-final *-ō (from *-ōz), and
@@ -1392,9 +1413,9 @@ define PWGmcFinalBareALoss [
 # with PNWGmcFinalLongORaising. Stressed monosyllabic *ō is raised to *ū
 # by PNWGmcStressedMonosyllableORaising upstream and so does not reach
 # this rule; the guard belt-and-braces against any future re-ordering.
-define PWGmcSurvivingBimoricOUnrounding [
+define PWGmcSurvivingBimoricOUnrounding Ctx([
     {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
-];
+]);
 
 # §17.13: OEFinalSchwaApocope removed — body was {*ă} -> 0 || _ .#.,
 # vacuous after breve elimination (no {*ă} ever introduced).
@@ -1405,12 +1426,12 @@ define PWGmcSurvivingBimoricOUnrounding [
 # In OE, [β] was written f (since OE f = [v] between vowels).
 # Geminate *bb always remains a stop — the second .o. undoes spirantization
 # of the first element when followed by another *b.
-define PGmcBAllophony [
+define PGmcBAllophony Ctx([
     {*b} -> {*β} || PGmcStarVocalic _,
     {*b} -> {*β} || [{*l} | {*r}] _
 ] .o. [
     {*β} -> {*b} || _ {*b}
-];
+]);
 
 # NOTE (2026-02-06): OEFinalSchwaApocope moved to EnglishProtoToOE
 # after OEARestoration to fix chronology. A-restoration must see the
@@ -1673,9 +1694,9 @@ define PNWGmcUnstressedAiMonophthongization Ctx([
     {*ai} -> {*ē}
 ]
 ]);
-define EAFAiMonophthongization [
+define EAFAiMonophthongization Ctx([
     {*ái} -> {*ā}
-];
+]);
 # Former identifier, retained as a documented compatibility alias only
 # (SC014 .o. SC004); NOT composed in any production pipeline.
 define PWGmcAiMonophthongization [
@@ -2110,9 +2131,9 @@ define OEBreakingI [
     {*í} -> {*ío} || _ EnglishBreakingWContext
 ];
 
-define OEBreaking OEBreakingA
+define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
-    .o. OEBreakingI;
+    .o. OEBreakingI);
 
 # Inter-stress raising: *a → *u in medial position before *u specifically (R/T §6.3.3).
 # In compounds like wir-aldu 'world', the medial *a assimilates to the following *u.
@@ -2123,7 +2144,7 @@ define OEBreaking OEBreakingA
 # Counter-example: *lunganjō stays unchanged (j before u blocks the rule).
 # This rule MUST apply BEFORE AFB (which would convert *a → *æ) and BEFORE breaking
 # (which would convert *a → *ea before lC).
-define OEInterStressRaising [
+define OEInterStressRaising Ctx([
     {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
     # DEV_NOTES §16.6: Nebenton-conditioned raising of compound
     # second-element root *a. Luick §306, Brunner §402, R/T vol.2
@@ -2134,20 +2155,20 @@ define OEInterStressRaising [
     # position is encoded directly in the PROTOFORM.
     # Example: *wír-àldu → *wír-uldu → (u-lowering) → weorold.
     {*à} -> {*u}
-];
+]);
 
 # DEV_NOTES §16.6.3 (architecture option C): Neutralise any remaining
 # Nebenton marks to plain short vowels so the rest of the OE cascade
 # (breaking, AFB, i-umlaut, u-lowering) sees only acute-primary or
 # plain short vowels. Fires AFTER OEInterStressRaising so the grave
 # remains visible to that rule.
-define OEStripSecondaryStress [
+define OEStripSecondaryStress Ctx([
     {*à} -> {*a},
     {*è} -> {*e},
     {*ì} -> {*i},
     {*ò} -> {*o},
     {*ù} -> {*u}
-];
+]);
 
 # OEAwwjResolution (SC029): resolution of the PWGmc geminate
 # *aww + *j to *au + *j. The Foma identifier is retained for this
@@ -2181,17 +2202,17 @@ define OEStripSecondaryStress [
 #
 # Stress preserved where present; the two branches are CAPR notation
 # variants, not a historical stress condition.
-define OEAwwjResolution [
+define OEAwwjResolution Ctx([
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
     {*a} {*w} {*w} {*j} -> {*au} {*j}
-];
+]);
 
-define OEAuBrightening [
+define OEAuBrightening Ctx([
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
-];
+]);
 
-define OEDiphthongLeveling [
+define OEDiphthongLeveling Ctx([
     {*aeu} -> {*ēa},
     {*áeu} -> {*ēa},
     {*eu} -> {*ēo},
@@ -2202,12 +2223,12 @@ define OEDiphthongLeveling [
     {*e} {*u} -> {*eo},
     {*é} {*u} -> {*éo},
     {*i} {*u} -> {*eo}
-];
+]);
 
 # SC106: retained j-created representation residual, not a new sound law.
-define OEJWWSimplification [
+define OEJWWSimplification Ctx([
     {*w} {*w} -> {*w} || _ {*j}
-];
+]);
 
 # SC033: j-created palatalized-glide reanalysis (Ringe-Taylor p.250).
 # Hue enters with inherited PGmc i; ww+j carries palatal conditioning,
@@ -2215,26 +2236,26 @@ define OEJWWSimplification [
 # Singleton knee remains governed by short breaking.
 define OEEwLongContext [{*w} {*j}];
 
-define OEEwLongDiphthong [
+define OEEwLongDiphthong Ctx([
     {*i} {*w} {*w} -> {*iu} {*w} || _ {*j},
     {*í} {*w} {*w} -> {*íu} {*w} || _ {*j}
-];
+]);
 
 # SC110: distinct long-io realization, before ordinary SC032.
 # Ringe-Taylor p.250; inherited iu without palatal w remains separate.
-define OEJGlideIO [
+define OEJGlideIO Ctx([
     [{*iu}|{*íu}] -> {*īo} || _ {*w} {*j}
-];
+]);
 
 # SC034: retained show proxy, not an established singleton-aw sound law.
 # Dictionary singleton inputs (Orel p.337; Kroonen p.442) differ from
 # Campbell p.45/Brunner p.49 inherited-geminate analysis; history deferred.
 # Straw now follows SC111 -> SC030 -> SC032 to reconstructed strea.
-define OEAwLongDiphthong [
+define OEAwLongDiphthong Ctx([
     {*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}],
     # Stressed variant (prosodic tier):
     {*á} {*w} -> {*ḗa} {*w} || _ [EnglishStarVocalic | {*ô}]
-];
+]);
 
 # SC043 ordinary English stressed fronting (Campbell 1939:90-91;
 # Campbell 1959:52-53). Earlier restricted ancestral tendencies remain open.
@@ -2251,9 +2272,9 @@ define OEAwLongDiphthong [
 # composed separately because foma's parallel-rewrite `,` unions the
 # contexts across clauses even when targets differ (see DEV_NOTES
 # §17.10.13, "Foma parallel-rule context-merging gotcha").
-define EAFBrighteningUnstressed [
+define EAFBrighteningUnstressed Ctx([
     {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
-];
+]);
 define EAFBrighteningStressed [
     {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
 ];
@@ -2273,12 +2294,12 @@ define EAFBrighteningStressed [
 # exist"; Brunner §137 Anm.1 p.129: no æ/ē forms beside hwā). See
 # DEV_NOTES §17.10.23 and
 # docs/sound_changes/audits/corpus-maturation-01-candidate-adjudication.md §1.
-define EAFBrighteningLongFinal [
+define EAFBrighteningLongFinal Ctx([
     {*ā} -> {*ǣ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
-];
-define EAFBrightening [
+]);
+define EAFBrightening Ctx([
     EAFBrighteningStressed
-];
+]);
 
 # A-restoration: */æ/ > */a/ before a back vowel (or AFB-fronted *a) in the following syllable.
 # Per Ringe/Taylor Vol 2 §6.3.1: "Those stressed *æ which were immediately followed
@@ -2351,11 +2372,11 @@ define OEARestorationWeakTailVowel [
 # NOTE: In foma replacement rules, parentheses around the context make it OPTIONAL.
 # Use `_ A` for required context, `_ (A)` for optional context.
 # The context here MUST be required, not optional.
-define OEARestoration (
+define OEARestoration FootCtx((
     {*æ} -> {*a} || _
         OEARestorationIntervening OEARestorationTriggerVowel
         - OEARestorationIntervening OEARestorationWeakTailVowel
-);
+));
 
 # NOTE (2026-02-06): EnglishLiquidLowering DELETED. Investigation showed no
 # evidence in literature for "lowering *ō before liquids". The real change is
@@ -2465,7 +2486,7 @@ define PNWGmcNStemNLoss [
 # a separate rule because the ōn-stem rule nasalizes (*-ōn → *-ǭ),
 # whereas the in-stem rule simply deletes (no nasalization survives,
 # per all sources). See DEV_NOTES §17.45.3c for the full dossier.
-define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
+define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
 
 # Campbell §122 / Fulk §4.11 / R/T 2.1.1 + 3.1.4 (PWGmc lengthening of
 # final vowels in stressed monosyllables): final *ō in a stressed
@@ -2644,10 +2665,10 @@ define EAFLongAFronting [
     {*ā} -> {*ǣ} || _ {*w} EnglishIUmlautTrigger
 ];
 
-define OEWeakTailNasalLoss [
+define OEWeakTailNasalLoss Ctx([
     {*n} {*ą} -> {*n} || _ .#.,
     {*m} {*ą} -> {*m} || _ .#.
-];
+]);
 
 # R/T vol.2 §6.8.3: unstressed long vowels were shortened after syncope/apocope.
 # Restrict to non-initial syllables (after at least one vowel + consonant(s)).
@@ -2678,13 +2699,13 @@ define OEUnstressedLongVowelShortening3 [
 #   - Weak II present: *-ōsi → -as, *-ōþi → -aþ (lufas, macaþ)
 #   - R/T vol.2 p.80: "weak II pres. 2sg -as(t), 3sg -aþ have stable a"
 
-define OEEarlyOShortening [
+define OEEarlyOShortening Ctx([
     # EARLY: *ō → *a before nasals (runs BEFORE fronting)
     # This *a will undergo fronting: *a → *æ → e (Campbell §333, §369)
     {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ EnglishStarNasal
-];
+]);
 
-define OELateOShortening [
+define OELateOShortening Ctx([
     # LATE: *ō → *o elsewhere (runs AFTER fronting; Campbell §355: the late
     # product is "of too late origin to become æ").
     # Stausland Johnsen 2015:28-30: unstressed long vowels shorten regularly in
@@ -2700,7 +2721,7 @@ define OELateOShortening [
     # refuted conditioning aside, medial *ō would have surfaced wrongly as a:
     # **wundade).
     {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
-];
+]);
 
 # SC099: Stausland Johnsen's law. The shortened *o (< PWGmc *ō) raises to *u
 # in unstressed MEDIAL syllables, where unstressed vowels are phonetically
@@ -2710,9 +2731,9 @@ define OELateOShortening [
 # The raising's output u is what the earliest (8th-c.) texts write
 # (2015:21-22), so it MUST precede the 9th-c. u > o lowering tendency (SC040
 # OEMedUnstressedULowering) in the executable cascade.
-define OEMedUnstressedORaising [
+define OEMedUnstressedORaising Ctx([
     {*o} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic
-];
+]);
 
 # SC100: in FINAL syllables the shortened *o undergoes the general development
 # of pre-OE unstressed *o to a (Stausland Johnsen 2015:28-29, *wundod >
@@ -2723,9 +2744,9 @@ define OEMedUnstressedORaising [
 # 9th-c. lowering runs AFTER it — otherwise SC040's output o (heofon) would
 # be swept to **heofan. That is the historical order in any case (Campbell
 # §373 is late; this split feeds the 8th-c. u/a distribution).
-define OEFinalUnstressedOLowering [
+define OEFinalUnstressedOLowering Ctx([
     {*o} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* .#.
-];
+]);
 define OEUnstressedLongVowelShortening5 [
     {*ū} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
 ];
@@ -2745,14 +2766,14 @@ define OEUnstressedLongVowelShortening8 [
 ];
 
 # Composite shortening rule (without *ō, which is handled separately in two stages)
-define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
+define OEUnstressedLongVowelShortening FootCtx(OEUnstressedLongVowelShortening1
     .o. OEUnstressedLongVowelShortening2
     .o. OEUnstressedLongVowelShortening3
     # OEUnstressedLongVowelShortening4 removed — replaced by OEEarlyOShortening + OELateOShortening
     .o. OEUnstressedLongVowelShortening5
     .o. OEUnstressedLongVowelShortening6
     .o. OEUnstressedLongVowelShortening7
-    .o. OEUnstressedLongVowelShortening8;
+    .o. OEUnstressedLongVowelShortening8);
 
 # Medial unstressed *u → *o in OE (WS/Northumbrian).
 # This is DISTINCT from PNWGmcULowering (stressed u-lowering).
@@ -2812,9 +2833,9 @@ define OEUnstressedLongVowelShortening OEUnstressedLongVowelShortening1
 # not implemented here pending need. See DEV_NOTES §17.41 and
 # dossier-medial-u-lowering-conditioning-2026.md.
 #
-define OEMedUnstressedULowering [
+define OEMedUnstressedULowering FootCtx([
     {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
-];
+]);
 
 # ===========================================================================
 # UNSTRESSED *i LOWERING (§17.36)
@@ -2840,9 +2861,9 @@ define OEMedUnstressedULowering [
 #             OEMedUnstressedILowering1.
 # ===========================================================================
 
-define OEMedUnstressedILowering1 [
+define OEMedUnstressedILowering1 FootCtx([
     {*i} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
-];
+]);
 
 # Restore *e → *i before *ng: derivational suffixes *-ing-, *-ung-
 # preserve their unstressed vowel uniformly across OE (Campbell §380,
@@ -2854,30 +2875,29 @@ define OEMedUnstressedILowering1 [
 # (The *-ig, *-isc, *-iht suffixes mentioned in older comments are
 # protected by EnglishPalatalConsonant context handling elsewhere.)
 # See DEV_NOTES §17.35 and Germanic/docs/dossier-ing-lowering-2026.md.
-define OEMedUnstressedILowering [
+define OEMedUnstressedILowering Ctx([
     {*e} -> {*i} || _ {*n} {*g}
-];
+]);
 
 # R/T vol.2 p.303: "So also bi- > be-, ni 'not' > ne."
 # Unstressed prefix *i > *ĕ. Use *ĕ (e-breve) for reduced prefix vowels to mark them
 # as unstressed and exclude them from subsequent stressed-vowel changes (e.g., palatal
 # diphthongization). The *ĕ will later merge with surface e in orthography.
-# Restrict to *b and *n to avoid overapplication to root-initial CiC-.
-# Further restrict: require the consonant after *i to be followed by a vowel,
-# to distinguish prefix bi- (bi-ginn-) from root bind- (b-ind-).
-define OEPrefixIReduction [
-    {*i} -> {*ĕ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
-];
+# Later pretonic i-lowering (Hogg Grammar 6.50-6.54; R/T 2014:335),
+# after the ae/e merger. Positive prosody replaces the old bi/ni proxy.
+# The annotation is no longer needed after this stage.
+define OEPrefixIReduction SentenceCtx([
+    [{*i} -> {*e} || .#. {*ᶠ} OEAnyConsonant* _]
+    .o. [{*ᶠ} -> 0]
+]);
 
-# SC035 compresses weak *ga- vocalism (Ringe/Taylor 2014 pp.206,335):
-# fronting and later *gi- > ge-, not a separately dated early *a > e law.
-# *ĕ is an unstressed representation token, bypassing SC107 and inappropriate
-# palatal diphthongization; it does not assert a historical [ĕ] stage.
-# Initial unaccented gaCV is a narrow proxy, not a prefix-boundary detector:
-# genuine ga- before a cluster is excluded. See audits/sc035-adjudication.md.
-define OEPrefixAReduction [
-    {*a} -> {*ĕ} || .#. {*g} _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
-];
+# SC035: regular working reconstruction of pretonic raising after the
+# palatal fricative (Ringe/Taylor 2014:335), not a morpheme-specific law.
+# Ordinary SC107 fronting and palatalization must supply the environment;
+# the later SC076 lowering yields ge-. See sc035-prosody-adjudication.md.
+define OEPrefixAReduction SentenceCtx([
+    {*æ} -> {*i} || .#. {*ᶠ} OEAnyConsonant* {*ʝ} _
+]);
 
 # Split into separate composed rules to avoid foma parallel rule context leakage.
 # When using [R1, R2] syntax, contextual restrictions can affect all rules.
@@ -2920,9 +2940,9 @@ define OEPrefixAReduction [
 # Examples:
 #   Infinitive *bakaną: *bak-a-ną → *bak-ą-ną (nasalized) → bacan
 #   Participle *fundanăz: *fund-an-ăz → no match → *fund-æn-ăz → funden
-define OESecondaryNasalization [
+define OESecondaryNasalization Ctx([
     {*a} -> {*ą} || _ {*n} .#.
-];
+]);
 
 define OEUnstressedAFronting [
     # Campbell §333: unaccented *a > *æ (later *e, §369) EXCEPT before a
@@ -2970,11 +2990,14 @@ define OEWeakTailReduction3 [
 # The merger (§369) is separate from and later than fronting (§333).
 
 # Anglo-Frisian fronting only (runs early, between early and late *ō shortening)
-define OEUnstressedFrontingEarly OEUnstressedAFronting;
+define OEUnstressedFrontingEarly FootCtx(OEUnstressedAFronting);
 
 # Unstressed vowel merger (runs late, after ALL shortening including *ǭ → *æ)
 # Campbell §369: "æ, e, and i fell together in a sound written e"
-define OEUnstressedAEMerger OEWeakTailReduction3;
+define OEUnstressedAEMerger SentenceCtx([
+    [{*æ} -> {*e} || .#. {*ᶠ} OEAnyConsonant* _]
+    .o. FootCtx(OEWeakTailReduction3)
+]);
 
 # Remaining weak tail reductions (runs after merger).
 # §17.36.2: OEWeakTailReduction2 removed (folded into OEMedUnstressedILowering).
@@ -3065,13 +3088,13 @@ define OEIUmlautDiphthong [
 # Non-word-initial *w was regularly lost before fully unstressed *i.
 # Example: PGmc *saiwiz 'sea' > *sāwi > *sǣi > OE sǣ
 # Must apply BEFORE i-umlaut (so *ā can umlaut to *ǣ) but AFTER ai monophthongization.
-define OEWLossBeforeI [
+define OEWLossBeforeI Ctx([
     {*w} -> 0 || EnglishStarVocalic _ {*i} .#.
-];
+]);
 
-define OEIUmlaut OEIUmlautFronting
+define OEIUmlaut FootCtx(OEIUmlautFronting
     .o. OEIUmlautRaising
-    .o. OEIUmlautDiphthong;
+    .o. OEIUmlautDiphthong);
 
 # Sievers' Law Syncope (PWGmc): *-CijV- → *-CjV-
 # R/T vol.2 p.157: "the sequence *-CijV- was syncopated to *-CjV-"
@@ -3095,9 +3118,9 @@ define OEIUmlaut OEIUmlautFronting
 #
 # Note: This rule must be ordered AFTER PWGmcJGemination (so heavy stems avoid
 # gemination) and BEFORE palatalization (so *kj → *ċ can apply).
-define SieversLawSyncope [
+define SieversLawSyncope Ctx([
     {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
-];
+]);
 
 # Loss of internal j after heavy syllables; block after r.
 define OEJLossAfterHeavy [
@@ -3165,12 +3188,12 @@ define OEUnstressedEIContraction [
 # NOTE: Use separate symbols {*e} {*o} not multichar {*eo} for proper pipeline handling.
 # NOTE: Context must NOT be optional — [X | Y] not (X | Y).
 
-define OEBackMutation [
+define OEBackMutation Ctx([
     {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
     {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
     # Stressed variant (stress preserved on first element):
     {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
-];
+]);
 
 # §17.51.A1: OE combinative u-umlaut on *í (the "w-effect").
 # Sources: Bülbring §264; Campbell §218; Brunner §114b; Luick §221;
@@ -3190,9 +3213,9 @@ define OEBackMutation [
 # remains visible in the right context, and so that u-lowering's
 # stressed-*u left-context exclusion preserves the medial *u under
 # the now-stressed *ú.
-define OEWICombinativeUUmlaut [
+define OEWICombinativeUUmlaut Ctx([
     {*í} -> {*ú} || .#. {*w} _ EnglishStarConsonant [{*u} | {*o}]
-];
+]);
 
 # R/T vol.2 §6.9.7: WS palatal umlaut.
 # Short diphthongs eo, io, ie → i before ht, hp, hs when word-final
@@ -3201,7 +3224,7 @@ define OEWICombinativeUUmlaut [
 # Counter-examples: *feohtan stays feohtan (ht + back vowel, no change).
 # NOTE: only SHORT diphthongs; long diphthongs (ēo, etc.) remain in WS.
 define OEHCluster [{*x} [{*t} | {*p} | {*s}]];
-define OEWsPalatalUmlaut [
+define OEWsPalatalUmlaut Ctx([
     {*eo} -> {*i} || _ OEHCluster .#.,
     {*io} -> {*i} || _ OEHCluster .#.,
     {*ie} -> {*i} || _ OEHCluster .#.,
@@ -3215,7 +3238,7 @@ define OEWsPalatalUmlaut [
     {*éo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*ío} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*íe} -> {*i} || _ OEHCluster EnglishStarFrontVowel
-];
+]);
 
 # SC103 Proto-Germanic nasal loss before *x
 # (Campbell §119, p. 44; Fulk §4.1; Ringe 2006 [vol. 1]: "*VN was realized as a
@@ -3311,7 +3334,7 @@ define EAFNasalSpirantLoss [
     EnglishStarNasal -> 0 || _ EnglishStarNSGmcSpirant
 ];
 
-define OESkPalatalization [
+define OESkPalatalization Ctx([
     {*s} {*k} -> {*ʃ} || .#. _
 ] .o. [
     {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.)
@@ -3321,7 +3344,7 @@ define OESkPalatalization [
     {*s} {*k} -> {*ʃ} || _ {*j}
 ] .o. [
     {*s} {*k} -> {*ʃ} || {*j} _
-];
+]);
 
 # R/T §6.4.1: *k and *g palatalization.
 # IMPORTANT: *k and *g rules must be in SEPARATE replacement blocks (.o.)
@@ -3376,9 +3399,9 @@ define OEVelarPalatalizationStops [
     {*g} -> {*ʤ} || _ {*j}
 ];
 
-define OEVelarPalatalization [
+define OEVelarPalatalization Ctx([
     OEGFricativePalatal .o. OEVelarPalatalizationStops
-];
+]);
 
 # R/T 2014:204: postmutation merger; Hogg 1979:102-111 disputes it.
 # SC109 exposes a late serialization zone, not an exact historical date.
@@ -3393,7 +3416,7 @@ define OEPalatalFricativeMerger [
 # Ordinary process before i-mutation (Fulk 2018:74; R/T 2014:215-217).
 # NOTE: {*e} must not match inside diphthongs {*ea}/{*eo} — use right context
 # to exclude sequences where {*e} is followed by {*a}/{*o}.
-define OEWsPalatalDiphthongization [
+define OEWsPalatalDiphthongization FootCtx([
     {*æ} -> {*ea} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
     {*e} -> {*ie} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],
@@ -3403,20 +3426,20 @@ define OEWsPalatalDiphthongization [
     # §17.46 stressed long *ḗ — same diphthongization, stress dropped on output
     # (no *ī́e this branch).
     {*ḗ} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
-];
+]);
 
 # Retained late approximation, not an adjudicated complete sc-conditioner.
 # R/T 2014:235; Campbell 1959:68-69 distinguish this from ordinary PD.
-define OELatePalatalDiphthong [
+define OELatePalatalDiphthong Ctx([
     {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
-];
+]);
 
-define OEVelarFricativePalatalization [
+define OEVelarFricativePalatalization Ctx([
     {*x} -> {*ç} || _ EnglishStarFrontVowel,
     {*x} -> {*ç} || EnglishStarFrontVowel _,
     {*x} -> {*ç} || _ {*j}
 ]
-    .o. EnglishStarAlphabet*;
+    .o. EnglishStarAlphabet*);
 
 # NOTE (SC016 repair, sc016-017-adjudication.md): OEWsPalatalGlide formerly
 # stood here as an early phonological *e-insertion between initial palatals
@@ -3434,11 +3457,10 @@ define OEVelarFricativePalatalization [
 # Heavy syllable = long vowel/diphthong + any consonants, OR short vowel + 2+ consonants.
 # OEAnyConsonant broadens the consonant class to include palatalized consonants
 # produced by earlier OE rules (e.g. *ʤ from palatalization).
-define OEAnyConsonant [EnglishStarConsonant | EnglishPalatalConsonant];
 define OEHeavyMarker ?*;  # identity — no marking needed
-define OEWeightMarkers OEHeavyMarker;
+define OEWeightMarkers Ctx(OEHeavyMarker);
 
-define OEHighVowelApocope [
+define OEHighVowelApocope Ctx([
     # Disyllabic: long syllable (long vowel + consonant(s)) + final vowel
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
@@ -3496,14 +3518,14 @@ define OEHighVowelApocope [
     {*u} -> 0 || {*x} _ .#.,
     {*ų} -> 0 || {*x} _ .#.,
     {*i} -> 0 || {*x} _ .#.
-] .o. [{*ᶜ} -> 0];
+] .o. [{*ᶜ} -> 0]);
 
 # Apocope of word-final neuter *-ą. Unlike *i/*u apocope, this appears to be
 # unconditional (not restricted to heavy syllables). The original system's
 # marker-based approach effectively deleted *ą after any consonant.
-define OEHeavySyllableNasalApocope [
+define OEHeavySyllableNasalApocope Ctx([
     {*ą} -> 0 || OEAnyConsonant _ .#.
-];
+]);
 
 define OEWeightCleanup ?*;  # identity — no markers to clean up
 
@@ -3516,11 +3538,11 @@ define OEWeightCleanup ?*;  # identity — no markers to clean up
 # Restricted to pre-dental context to avoid overapplication before laterals
 # (*þistilaz → þistel, not *þistl), glides (*wīþijaz → wīþiġ, not *wīþ),
 # and sibilants (*xarbistuz → hierfest, not *hierf+st).
-define OEMedialSyncope [
+define OEMedialSyncope FootCtx([
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
     {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
-];
+]);
 
 # R/T §6.7.4: l-adjacent syncope.
 # "Unstressed *i in open syllables is often syncopated next to l."
@@ -3535,11 +3557,11 @@ define OEMedialSyncope [
 # R/T §6.7.4: "unstressed *i in open syllables is often syncopated next to l"
 # R/T explicitly mentions only *i (not *e). The medial vowel is still *i at this
 # point because OEMedUnstressedILowering fires AFTER syncope in the pipeline.
-define OELAdjacentSyncope [
+define OELAdjacentSyncope Ctx([
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
-];
+]);
 
 # Compound linking vowel syncope (§17.11, Option T — trough-conditioned).
 # The unstressed linking vowel between a primary-stressed first-element syllable
@@ -3548,17 +3570,17 @@ define OELAdjacentSyncope [
 # / R&T vol.2 §6.3.3 p.200–202 / Fulk §2.2. No morphological marker is needed:
 # the rule reads off the acute/grave prosodic tiers directly.
 #   e.g. *régna-bùgô → *régn-bùgô → reġnboga
-define OECompoundLinkingSyncope [
+define OECompoundLinkingSyncope Ctx([
     [{*a}|{*i}|{*u}] -> 0
         || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
-];
+]);
 
 # Post-syncope dental cluster simplification: *tθ → *t.
 # When medial syncope brings *t and *θ into contact (e.g. *fyrhtiθu → *fyrhtθu),
 # the dental fricative assimilates to the preceding stop.
-define OEDentalAssimilation [
+define OEDentalAssimilation Ctx([
     {*θ} -> 0 || {*t} _
-];
+]);
 
 # R/T §6.8.1: geminate consonants were degeminated next to another consonant.
 # General formulation: any geminate CC before a following consonant simplifies
@@ -3577,16 +3599,16 @@ define OEPreconsonantalDegemTT [
 define OEPreconsonantalDegemNN [
     {*n} -> 0 || {*n} _ OESonorant
 ];
-define OEPreconsonantalDegemination OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN;
+define OEPreconsonantalDegemination Ctx(OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN);
 
 # R/T §6.4.2: *w lost after non-initial velars (after palatalization).
 # In *ngw clusters, *g is a stop: *w is lost (*singwan → singan).
 # Post-vocalic *gw: *g (= [ɣ] fricative) was lost, *w survives.
 # Our TSV corrects post-vocalic *gw etyma at source (snow, swallow).
 # This rule handles the *ngw → *ng simplification.
-define OEPostVelarWLoss [
+define OEPostVelarWLoss Ctx([
     {*w} -> 0 || {*n} {*g} _
-];
+]);
 
 define OEHLoss [
     {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
@@ -3756,6 +3778,8 @@ define EnglishProtoToOE ( # capr:bundle
     # oral *ā < *ai (hām, stān) can never be an input.
     .o. EAFNasalizedLowRounding
     .o. EAFLongAFronting
+    # Technical prosodic annotation, not a numbered sound change.
+    .o. OEStressFootContext
     .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; see sc004_split_movement_proofs.md
     .o. OEAwwjResolution
     .o. OEAuBrightening
@@ -3766,11 +3790,8 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OEJGlideIO
     .o. OEDiphthongLeveling
     .o. OEAwLongDiphthong
-    # SC035: provisional compression of weak ga- vocalism, not an early date.
-    # The marker bypasses SC107's unstressed fronting and later inappropriate
-    # palatal diphthongization, not ordinary stressed SC043. Staged alternatives
-    # work if weak-prefix/root context is retained; see the model-comparison memo.
-    .o. OEPrefixAReduction
+    # SC035 now follows SC107 and palatalization; the old protective
+    # operation and its model-local early dependency are superseded.
     # Inter-stress raising: *a → *u in compounds before back vowel (R/T §6.3.3).
     # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
     # E.g., *weraldu → *weruldu, so back mutation applies: *e → *eo before r+u.
@@ -3842,6 +3863,7 @@ define EnglishProtoToOE ( # capr:bundle
     .o. SieversLawSyncope
     .o. OESkPalatalization
     .o. OEVelarPalatalization
+    .o. OEPrefixAReduction
     # WS palatal glide moved earlier (before u-lowering) at line ~2023
     .o. OEPostVelarWLoss
     # Loss of *w before unstressed *i (R/T §6.7.1): *saiwiz > *sāi > sǣ

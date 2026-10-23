@@ -41,6 +41,7 @@ import csv
 import re
 import unittest
 from pathlib import Path
+from test_sc043_component_split import segmental_definition
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 GERMANIC = REPO_ROOT / "Germanic"
@@ -95,11 +96,7 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
         cls.reader = READER.read_text(encoding="utf-8")
 
     def define_body(self, name: str) -> str:
-        match = re.search(
-            r"define\s+" + re.escape(name) + r"\s*\[(.*?)\n\];",
-            self.uncommented, re.S)
-        self.assertIsNotNone(match, f"missing define {name}")
-        return match.group(1)
+        return segmental_definition(self.uncommented, name)
 
     def edge(self, source: str, target: str):
         for e in self.edges:

@@ -1,126 +1,5 @@
 # Prefix and compound adjustments
 
-## Historical discussion of prefixal \emph{*a}-reduction
-
-Old English *ġelīefan* 'believe' continues a formation with inherited
-\emph{*ga-}. Gothic *ga-* preserves the older vowel, while Old Saxon and
-Old High German *gi-* and Old English *ge-* exhibit reduced reflexes;
-Ringe and Taylor reconstruct \emph{*ga-} for both Proto-Germanic and
-Proto-West-Germanic. Comparable reduced prefixes do not by themselves
-establish a single shared West Germanic reduction event
-[@RingeTaylor2014, p. 206].
-
-The English development is not one securely dated replacement of
-\emph{*a} by \emph{*e}. Ordinary unstressed fronting supplies an
-\emph{*æ}-type vowel; early *gi-* and later *ge-* belong to the subsequent
-history of unstressed front vowels. Campbell describes the general
-fronting and later merger separately, while Ringe and Taylor discuss
-the prefix's early *i*-spellings and eventual *e*. They leave open
-whether raising after the palatal consonant was wholly regular or
-influenced by the parallel prefix *bi-*; the present model does not
-make that possible analogy a sound-law condition
-[@Campbell1959, pp. 140--141, §§333--334; @Campbell1959, pp. 153--155,
-§§369--370; @RingeTaylor2014, pp. 334--335].
-
-Stress is crucial. The ordinary prefix is unstressed even in nouns,
-unlike many other prefixes. The exceptional accented form associated
-with *ġeatwe* 'armour' must be distinguished from that weak form.
-Thus the historical conditioning is prosodic, not a rule applying
-because a word belongs to a grammatical class
-[@Campbell1959, p. 31, §74 and n. 5; @HoggPhonology1992, pp. 99--100;
-@RingeTaylor2014, p. 335].
-
-[SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) compresses this
-pre-Old English to Old English history into a single operation.
-The weak prefix in *ġelīefan* 'believe' is source-backed, as are the different
-West Saxon and Anglian root-vowel outcomes. Those derivations establish
-the history to be represented, not the exact date or intermediate
-symbols of the compressed rule
-[@RingeTaylor2014, pp. 245, 267].
-
-## SC035. Reduction of prefixal \emph{*a} (`OEPrefixAReduction`) {#rule-OEPrefixAReduction}
-
-```foma
-define OEPrefixAReduction [
-    {*a} -> {*ĕ}
-        || .#. {*g} _
-           [EnglishStarConsonant | EnglishPalatalConsonant]
-           EnglishStarVocalic
-];
-```
-
-The breve in \emph{*ĕ} marks a reduced unstressed vowel in the
-representation. It is not an independently reconstructed phonetic stage
-or a claim of early schwa. Its surface reflex is *e*, and the marking
-prevents later operations appropriate to stressed vowels from
-diphthongizing the prefix. This is consistent with the historical
-absence of palatal diphthongization in the weak prefix
-[@RingeTaylor2014, p. 206].
-
-This compression is a provisional choice between historical models, not
-evidence for a separate early prefix-specific sound law. An expanded
-account can let the weak vowel front normally, preserve its unstressed
-status through the intervening changes, and give it the later merger
-to *e*. Alternatively, raising after the palatal fricative can supply
-*gi-* before the merger. The first account does not by itself explain
-the early *gi-* spellings; the second makes the regular raising which
-Ringe and Taylor explicitly leave open into an obligatory change.
-Both staged accounts are computationally viable, but their agreement
-in the later forms does not establish either pathway or its exact
-chronology. The compressed representation is retained because it
-commits to the secure weak outcome without silently deciding that
-historical question, not because a staged derivation is impossible
-[@RingeTaylor2014, pp. 334--335].
-
-The distinction needed by a staged account is genuine weak prosody,
-not simply the absence of an accent in an intermediate transcription.
-Ordinary stressed fronting has already absorbed the accent of some
-roots by this point. In *ġiest* 'guest', palatal diphthongization still
-feeds mutation; *ġiefan* 'give' and *sċēap* 'sheep' likewise retain
-their independently supported diphthongization. In *ġealla* 'gall',
-breaking has already supplied the diphthong. A general ban on
-diphthongizing unaccented symbols would therefore confuse notation
-with historical stress. Equally, extending
-[SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) to every initial
-front vowel would not distinguish a weak prefix from a stressed root.
-Its present preceding-vowel guard describes the post-tonic fragment
-implemented there, not a historical exclusion of pretonic prefixes
-[@Campbell1959, pp. 69--70, §§185--188;
-@Campbell1959, pp. 153--155, §§369--370;
-@RingeTaylor2014, pp. 215--217, 335].
-
-The consonant-plus-vowel context is deliberately narrower than the
-historical phenomenon. It covers the prefix before the root of
-*ġelīefan* 'believe', but neither encodes a prefix boundary nor recognizes all
-prefixed words. Ringe and Taylor's *gistīga* 'climb into/onto' >
-*gestīga* 'climb into/onto', with West Saxon *ġestīgan* 'climb into/onto',
-illustrates a genuine prefix shape outside this rule. The expanded
-weak-prefix models correctly reach the West Saxon form, whereas the
-restricted present grammar gives [*ġiestīgan*]{.pred}. This coverage
-advantage is real: the compressed rule must not be presented as a
-complete grammar of inherited prefixes. Conversely, the accented root
-vowel of *ġealla* 'gall' is not eligible for its early reduction.
-The selected stress representation, not the initial letters alone,
-protects such roots. The choice to retain the restricted proxy leaves
-the fuller staged account available without declaring its disputed
-internal pathway uniquely reconstructed
-[@RingeTaylor2014, p. 335].
-
-The implementation's ordering dependency concerns
-SC107 EAFBrighteningUnstressed, the retained unstressed component
-discussed with [SC043 EAFBrightening](#rule-EAFBrightening), not that
-ordinary stressed fronting law.
-Without the protective representation, the unstressed component fronts
-the prefix to \emph{*æ}; later palatal diphthongization then gives
-[*ġealīefan*]{.pred} rather than *ġelīefan* 'believe'. That dependency explains
-the model's order but does not date a separate historical reduction
-before stressed fronting: the compressed operation already represents
-part of the weak vowel's fronting and merger history.
-Nor does the limit of an earlier displacement experiment establish a
-historical terminus after all West Germanic changes.
-The development itself is secure; its precise date and the full
-conditioning of the compressed proxy are less certain.
-
 ## Historical discussion of inter-stress raising
 
 [SC036 OEInterStressRaising](#rule-OEInterStressRaising) has the strongest evidence of the three. Campbell's discussion of *weorold* 'world' / *weoruld* 'world' and Ringe and Taylor's derivation of [weraldu]{.recon} 'world' > [weruldu]{.recon} 'world' > OE *weorold* place the rule squarely in the history of low-stress medial vowels [@Campbell1959, pp. 141--142, §§338--339; @RingeTaylor2014, p. 322, §6.3.3].
@@ -160,3 +39,128 @@ define OECompoundLinkingSyncope [
 ```
 
 The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc [régna-bùgô]{.recon} ‘rainbow’ yields [*reġnefoga*]{.pred} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
+
+## Historical discussion of prefixal \emph{*a}-reduction
+
+Old English *ġelīefan* 'believe' continues a formation with inherited
+\emph{*ga-}. Gothic *ga-* preserves the older vowel, while Old Saxon and
+Old High German *gi-* and Old English *ge-* exhibit reduced reflexes;
+Ringe and Taylor reconstruct \emph{*ga-} for both Proto-Germanic and
+Proto-West-Germanic. Comparable reduced prefixes do not by themselves
+establish a single shared West Germanic reduction event
+[@RingeTaylor2014, p. 206].
+
+The English development comprises several changes, not an immediate
+replacement of \emph{*a} by \emph{*e}. Ordinary unstressed fronting supplies
+\emph{*æ}; early *gi-* and later *ge-* attest subsequent changes in the
+weak vowel. Campbell distinguishes fronting from the later merger,
+and Ringe and Taylor explicitly consider regular raising of pretonic
+\emph{*æ} after a palatal fricative. CAPR adopts that regular account
+as its working reconstruction: fronting, palatalization, raising, and
+later lowering. It does not formulate a sound law conditioned by the
+identity of a prefix
+[@Campbell1959, pp. 140--141, §§333--334; @Campbell1959, pp. 153--155,
+§§369--370; @RingeTaylor2014, pp. 334--335].
+
+Stress supplies the decisive distinction. The ordinarily weak vowel
+must be distinguished from the exceptional accented form in
+*ġeatwe* 'armour'. Metrical evidence independently supports the weakness
+of *ge-* and *be-* alongside stress on the following root; grammatical
+structure can help recover that stress, but is not itself the condition
+of the vowel change
+[@Campbell1959, p. 31, §74 and n. 5; @HoggPhonology1992, pp. 99--100;
+@RingeTaylor2014, p. 335; @MinkovaZhou2022, pp. 535--536].
+
+Morphological and prosodic boundaries need not coincide. Manuscript
+grouping in Old English, Old Saxon and Old High German sometimes joins
+weak *ge-* to preceding material rather than to the following root.
+This supports distinguishing the weak syllable from the headed root
+foot, not a universal prosodic boundary at every morpheme boundary.
+The accompanying modern German experiment concerns a different period
+and does not date English vowel raising. Here the derivations represent
+citation words with one weak pretonic syllable, not every possible
+sentence-level regrouping
+[@RieggerBogelWalkden2024, pp. 2065--2068].
+
+## SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction}
+
+```foma
+define OEPrefixAReduction SentenceCtx([
+    {*æ} -> {*i} || .#. {*ᶠ} OEAnyConsonant* {*ʝ} _
+]);
+```
+
+The vowel raises because it is short, pretonic and immediately follows
+the palatal fricative, not because it belongs to inherited
+\emph{*ga-}. The superscript `*ᶠ` is a nonsegmental annotation of
+one weak syllable before a positively identified headed foot. It is
+not a reconstructed sound. The context operations preserve that
+information after vowel changes consume the original accent marks;
+they do not introduce a phonetic intermediate vowel. The reconstruction
+itself has ordinary \emph{*æ} and \emph{*i}, not a protected breve-e.
+
+Ringe and Taylor's regular-raising proposal provides the phonological
+account adopted here. They also mention possible influence from
+*bi-*. Berg prefers analogy because he finds the direct development
+unattractive, but does not supply positive evidence of substitution in
+that discussion. His Pforzen *ga-* is important comparative evidence
+against projecting *gi-* back indiscriminately into common West Germanic;
+it does not refute a later English development after palatalization.
+Regular phonology therefore has explanatory priority in the present
+account. The precise date of raising and its independently attested
+breadth remain less secure than the early *gi-* and later *ge-* sequence:
+no independent non-*ga-* word sharing the complete early environment
+has yet supplied a positive comparison
+[@RingeTaylor2014, p. 335; @Berg2014, pp. 60--61].
+
+The later evidence is wider than one derivation. Early Northumbrian
+*gistīga* 'climb into/onto' becomes *gestīga* 'climb into/onto', beside
+West Saxon *ġestīgan* 'climb into/onto'. Early Mercian *gidyrstig* 'bold'
+and *gibēaten* 'beaten' likewise have later *ge-* forms.
+These are historical spellings, not records of every reconstructed
+intermediate. The English *gi-* evidence is not exclusively Northumbrian.
+Hogg places the later lowering of unstressed *i*, including *be-* and
+*ge-*, marginally after the earlier front-vowel merger. Accordingly
+[SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) merges weak
+\emph{*æ} with \emph{*e}, while
+[SC076 OEPrefixIReduction](#rule-OEPrefixIReduction) subsequently lowers
+pretonic \emph{*i}. Neither process changes a stressed root vowel
+[@RingeTaylor2014, pp. 334--335;
+@HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239)].
+
+The absence of diphthongization in a weak vowel follows from the
+conditioning of
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization),
+not from an exceptional ban on particular prefixes. Hogg requires a
+palatal immediately before a stressed vowel at the beginning of a stress
+foot, not necessarily at the beginning of a word. Thus *sċeaft* 'shaft'
+and *ġesċeaft* 'creation' both diphthongize the root vowel after the
+sh-sound, but the weak first vowel of the latter does not diphthongize
+after its j-sound. The adopted model derives both this comparison and
+*ġestīgan* 'climb into/onto'; the earlier compressed rule did not
+[@HoggGrammar1992, §5.48 n. 1 (held 2011 reprint, p. 104);
+@RingeTaylor2014, p. 335].
+
+In *ġelīefan* 'believe', ordinary weak fronting gives a pretonic
+\emph{*æ}, palatalization supplies the fricative trigger, raising gives
+\emph{*i}, and late lowering gives *ge-*. The independently supported
+root-vowel history continues separately. This derivation establishes
+that the phonological account is coherent, not the unique date of
+raising. A fronting-and-merger account without raising reaches the same
+late vowel but leaves early *gi-* unexplained; the earlier protected-vowel
+compression obscures the distinction and excludes genuine clustered
+forms. These are the reasons for preferring the staged account, not
+merely its agreement with one final form
+[@RingeTaylor2014, pp. 245, 267, 335].
+
+Preserving stress-foot structure also preserves the real stressed
+developments: *ġiest* 'guest', *ġiefan* 'give' and *sċēap* 'sheep'
+retain ordinary palatal diphthongization, whereas *ġealla* 'gall'
+already has a diphthong from breaking. A plain vowel symbol is not
+therefore assumed to be weak: earlier fronting or diphthong leveling
+may have consumed its accent. SC107 EAFBrighteningUnstressed supplies
+the pretonic front vowel; the old requirement that a protective
+operation precede it was computational, not a historical date before
+[SC043 EAFBrightening](#rule-EAFBrightening)
+[@Campbell1959, pp. 69--70, §§185--188;
+@RingeTaylor2014, pp. 215--217, 335].

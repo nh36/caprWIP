@@ -137,6 +137,26 @@ class ProtocolDocumentsTests(unittest.TestCase):
         self.assertIn("FROZEN HISTORICAL CHECKPOINT", canonical)
         self.assertIn("CURRENT_STATE.md", canonical)
 
+    def test_regular_phonology_and_non_grammatical_conditioning_are_required(self):
+        protocol = PROTOCOL.read_text(encoding="utf-8")
+        template = TEMPLATE.read_text(encoding="utf-8")
+        for phrase in (
+            "Regular phonological change has explanatory priority over analogy",
+            "positive evidence",
+            "Sound changes are not grammatically conditioned",
+            "phonological, phonetic or prosodic",
+            "morpheme identity",
+            "separate explanatory mechanism",
+            "do not themselves reopen completed decisions",
+        ):
+            self.assertIn(phrase, protocol)
+        for field in (
+            "Regular phonological conditioning",
+            "Counterexamples and falsification",
+            "Positive evidence for analogy",
+        ):
+            self.assertIn(field, template)
+
     def test_agent_instructions_require_protocol(self):
         text = COPILOT_INSTRUCTIONS.read_text(encoding="utf-8")
         self.assertIn("RESEARCH_ADJUDICATION_PROTOCOL.md", text)

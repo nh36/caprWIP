@@ -1,0 +1,392 @@
+SOURCE: riegger_bogel_walkden_2024_prosody_ge
+ACQUIRED: 2026-10-23
+ORIGINAL: https://www.isca-archive.org/interspeech_2024/riegger24_interspeech.pdf
+VERSION: 5 sheets; printed pp.2065-2069; published proceedings version
+PDF SHA256: ce258d6cb4f5012b92bd98a42786f884717dfdf5030c1dc6299b7eca2ad62107
+METHOD: pdftotext -layout, all sheets retained. PDF sheet markers are not printed folios.
+GLYPH REPAIRS: none
+
+
+=== PDF sheet 001 ===
+Interspeech 2024
+1-5 September 2024, Kos, Greece
+
+
+
+
+    The prosody of the verbal prefix ge-: historical and experimental evidence
+
+                                    Chiara Riegger1, , Tina Bögel1 , George Walkden1
+                                               1
+                                                   University of Konstanz, Germany
+                                             firstname.lastname@uni-konstanz.de
+
+
+
+                           Abstract                                           his German readers on how to correctly pronounce English
+                                                                              sentences. He frequently groups several words into one unit,
+     This study investigates whether prosodic words in West                   but there are also instances where the morphological unity of a
+Germanic languages are determined by morphological structure                  word is split by a prosodic unit as in aim@) (freid ‘I’m afraid’
+or rhythmic principles, i.e., the trochaic foot. To investigate this          [12, p. 74]. In German, [13] provides examples like in (1),
+question, we looked at the unstressed verbal prefix ge- diachron-             where he prosodically groups the unstressed participle prefix
+ically and synchronically. A corpus study of three Old English,               ge- with the preceding unit, forming trochaic feet (p. 136).
+Old Saxon, and Old High German manuscripts showed that ge-
+often attaches to preceding auxiliaries and negation particles but             (1) morph.: Frisch       gewagt           ist    halb    gewonnen
+not content words. The findings of the corpus study were veri-                       phon.:   (Frisch   ge) (wagt        ist)   (halb   ge) (wonnen)
+fied through a production study in Modern German, measuring                                    fresh    PTCP -dare       is     half    PTCP -win
+                                                                                     fig.:    ‘Enthusiastically tried is half won’
+the closure duration of [g] as an indication of boundary strength
+between the prefix and the preceding word. Results showed that                [14] conducted a small production experiment on the phrasing
+closure duration is reduced if the verb follows a monosyllabic                of the prefix ge- in Modern German, where the prefixed verb
+auxiliary. Furthermore, we found no indicators that the prefix                was preceded by either monosyllabic or disyllabic object nouns
+interacts with preceding content words or negation. Both re-                  in simple NPs. The disyllabic nouns varied in stress distribu-
+sults taken together support the trochaic foot structure based on             tion, with stress either on the first or the second syllable. Re-
+rhythmic principles, but only in very restricted contexts.                    sults showed a significantly shorter closure duration if ge- di-
+Index Terms: trochaic foot, rhythmic prosodic phrasing, ge-                   rectly followed the stressed syllable, suggesting the formation
+prefix, diachronic/synchronic data, West Germanic                             of a trochaic foot over the last syllable of the object noun and
+                                                                              the following prefix.
+                     1. Introduction                                               Evidence for phrasing based on rhythmic principles is also
+                                                                              found in early West Germanic (WG) orthography. Word divi-
+Prosodic phrasing is generally assumed to reflect syntactic con-              sion in early WG manuscripts often does not match the division
+stituency to some extent [1, 2]. For instance, Match Theory                   into morphosyntactic units as found in Modern WG languages.
+[3] assumes that by default each syntactic clause corresponds                 For instance, function words often group together, while com-
+to an intonational phrase (ι), each syntactic phrase corresponds              pounds are often divided into two words. One possible expla-
+to a phonological phrase (φ), and each syntactic word corre-                  nation is that these groupings reflect prosodic units [15, 16], an
+sponds to a prosodic word (ω). However, there is also ample                   artefact of the scriptio continua in Ancient Greek, where the
+evidence for nonisomorphism between syntactic and prosodic                    written text was a representation of the spoken word [17, 18].
+constituency in the literature [4, 5, 6], especially with function                 The unstressed prefix ge- occurs in several medieval WG
+words, which led to the proposal that the matching between                    languages with a number of word categories. Although uni-
+syntactic and prosodic constituents only applies to lexical cate-             formly written as ge- in manuscripts, pronunciation was likely
+gories and their projections, but not to functional ones [7].                 [j@] in Old Saxon (OS) and Old English (OE) and [g@] in Old
+     An alternative view proposes that prosodic phrasing in Ger-              High German (OHG). The common origin, Proto-Germanic
+manic languages is determined by rhythmic principles driven by                *ga/gi, is assumed to have marked perfectivity and resultativity
+the trochaic foot [8, 9, 10]. Specifically, a ‘leftwards’ encliti-            in preverbal position [19, 20, 21]. In early WG orthography,
+cisation of function words to previous material, regardless of                ge- occasionally detaches from the verbal stem and attaches
+syntactic structure, is proposed. For example, in an experiment               to previous material as shown below in (2) from the OE
+measuring speaker latency time in Dutch, [11] showed that the                 Parker/Winchester chronicles [22].
+article preceding a noun is prosodically grouped with the pre-
+ceding verb instead of the following noun with which it forms                  (2)
+a syntactic unit. Such findings support the assumption that the
+rhythmic phrasing of function words can account for the non-                           ... and him wiþ gefuhton and hie gefliemdon ...
+isomorphisms found between syntactic and prosodic phrasing.                            ‘.. and fought with them and put them to flight...’
+     One question that has received little attention so far is                                                (Corp. Chris. MS 173, year 917)
+whether morphologically complete words can be prosodically
+‘split’ in such a way that the initial part of these words becomes            The synchronic and diachronic examples discussed above pre-
+part of the previous prosodic unit. Indications that this might be            dict the formation of trochaic feet across word boundaries not
+the case come from prescriptive works concerned with correct                  only for enclitics but also for unstressed prefixes of the follow-
+pronunciation. In his book on spoken English, [12] instructs                  ing words, especially if the preceding word ends with a stressed
+
+
+
+
+                                                                       2065                               10.21437/Interspeech.2024-289
+
+=== PDF sheet 002 ===
+syllable. In contrast, theories of the syntax-prosody interface            Table 1: Distribution of ge- in OS in percent, sorted by preced-
+such as Match Theory would predict the prefix to be firmly as-             ing word type.
+sociated with the following verb. In addition, these theories                                                     Preceding word type
+would also predict the placement of larger prosodic boundaries                       Distribution        Total    function     lexical
+after object nouns that might prevent the formation of trochaic                1 word ge-verb:          91.8%       27%         73%
+feet across word boundaries.                                                   2 word-ge verb:           3.8%      85.3%       14.7%
+     This paper aims to investigate this relationship between                  3 word-ge-verb:            3%       66.7%       33.3%
+morphologically complete words and rhythmic phrasing with                      4 word ge verb:           1.4%       46%         54%
+focus on the verbal prefix ge-. We will first report on three di-
+achronic corpus studies of ge- in OS, OE, and OHG in Sec-                  In 27 cases the ge- prefix was preceded by the negation marker
+tion 2. Based on the findings and previous research, we then               ne. In these cases, the following ge- was either attached only
+conducted a production experiment on the verbal prefix ge- in              to the negation marker (distr. 2; 59%) or attached to both, nega-
+Modern German, which we report on in Section 3.                            tion and following verb (distr. 3; 33.3%). ge- also occurred by
+                                                                           itself (7.4%), but never in the expected position (distr. 1) if a
+                   2. Corpus Studies                                       negation marker was present. With regard to the auxiliaries (68
+                                                                           cases), ge- mostly showed the expected distribution (87%), but
+2.1. Methods                                                               also stood by itself in 10% of the cases, and occurred attached
+2.1.1. Material                                                            to both neighboring elements in one case.
+
+ For the corpus studies, one manuscript for each language was              2.2.2. Old English
+ chosen:
+                                                                           The total analysed number of instances of ge- preceding verbs
+a) Old English (OE): Manuscript A of the Anglo-Saxon
+                                                                           in the OE manuscript was 385.
+   Chronicles (commonly referred to as the ‘Parker chronicle’),
+   which ends in the year 1070.                                            Table 2: Distribution of ge- in OE in percent, sorted by preced-
+b) Old Saxon (OS): Manuscript C of the Old Saxon Heliand,                  ing word type and including ET, the Tironian symbol , which
+   which is dated to the 10th century [23].                                represents the conjunction ‘and’ in the manuscript.
+c) Old High German (OHG): The first book (liberus primus)                                                        Preceding word type
+   of De nuptiis Philologiae et Mercurii (Codex Sangallensis                      Distribution        Total       function      lexical
+   871). The text is a translation from Latin to German dating              1    word ge-verb:       55.8%         33.4%        64.6%
+   to the 11th century [24].                                                2    word-ge verb:       10.4%     87.5% ( : 37.5%) 12,5%
+                                                                            3    word-ge-verb:       22.6%     88.5% ( : 24.1%) 11.5%
+2.1.2. Data Analysis                                                        4    word ge verb:       11.2%         41.8%        55.8%
+ For the OS data, we first used the HeliPaD [25], a parsed corpus
+ of OS based on Siever’s Edition [26] to extract all occurrences           Several preceding word categories showed a greater likelihood
+ of ge- occurring with verbs. No such corpora exist for the OE             for ge- to attach to. Of the 40 auxiliaries which directly pre-
+ and OHG data.                                                             ceded the verb, 13 (32.5%) had ge- attached. If sentence-initial
+      All manuscripts were then manually checked for occur-                adverbs like ‘here’, ‘there’ were followed by ge- (29 cases), ge-
+ rences of ge- and the distribution with respect to the previous           attached in 93.1% of the cases. The negation marker ne oc-
+ word and the following verb. There were four possible distribu-           curred only once before the verb, but in this case, ge- attached
+ tions of ge-:                                                             as well.
+1. word ge-verb, where ge- attaches to the following verb (cor-
+    responding to modern word division)                                    2.2.3. Old High German
+2. word-ge verb, where ge- attaches to the previous word and               The total analysed number of instances of ge- preceding verbs
+    detaches from the following verb                                       in the OHG manuscript was 177.
+3. word-ge-verb, where the verb and the previous word form                 Table 3: Distribution of ge- in OHG in percent, sorted by pre-
+    one unit                                                               ceding word type.
+4. word ge verb, where ge- stands by itself                                                                     Preceding word type
+ In addition, the word category of the preceding word was                            Distribution       Total  function      lexical
+ recorded, especially with regard to whether the preceding word                1 word ge-verb:         92.6%     38.4%       60.4%
+ was a function word or a lexical word.                                        2 word-ge verb:           0%       0%           0%
+      It was sometimes difficult to decide whether a short white               3 word-ge-verb:          3.9%      86%         14%
+ space clearly indicated a word division or whether it was simply              4 word ge verb:          3.3%      50%         50%
+ a widening in the handwriting. These uncertain cases made up
+                                                                           Of the 6 instances in which the negation marker ne directly pre-
+ only a small percentage (1-2%) and were not included in the
+                                                                           ceded the verb, ge- attached in 50% of the cases to the marker as
+ results. Cases where a line break occurred between ge- and the
+                                                                           well as the following word (distr. 3). With respect to the auxil-
+ verbal stem were also not included.
+                                                                           iaries (11 cases), most cases had the expected grouping, except
+                                                                           for one case where ge- stood by itself.
+2.2. Results: corpus studies
+2.2.1. Old Saxon                                                           2.3. Discussion: corpus studies
+The total analysed number of instances of ge-preceding verbs in            The majority of ge-prefixed verbs in OS, OE, and OHG
+the OS manuscript was 899.                                                 show the orthographic distribution expected based on morpho-
+
+
+
+
+                                                                    2066
+
+=== PDF sheet 003 ===
+syntactic phrasing (distr. 1). In the marked distributions, a com-              is usually considered to be unstressed, it is likely that it carries
+mon trend can be observed: when preceded by a function word,                    more stress than the following ge-, allowing the two elements to
+ge- often attaches to the previous material. Albeit the languages               form a trochaic foot theoretically. Hence, bin is considered to
+show slight differences in the details, there are common pat-                   be stressed in the following analysis. For the negation, the mod-
+terns: In all three languages, distribution types 2 and 3 occur                 ern equivalent of the negative marker would be nicht. However,
+most consistently when ge- follows the negation particle ne.                    the final [t] would most likely lead to segmentation problems
+Moreover, preceding auxiliaries seem to trigger non-expected                    with the following [g] and there is no disyllabic counterpart.
+attachments of ge- across the three languages: ge- is more likely               We therefore chose two negative indefinites, monosyllabic nie
+to occur on its own following auxiliaries in OS and OHG, and                    (‘never’) and disyllabic, trochaic nirgends (‘nowhere’). Thus,
+frequently attaches to preceding auxiliaries in OE.                             in both the auxiliary and the negation condition, ge- was ei-
+      This behaviour of the prefix ge- could be ascribed to the fact            ther preceded by a monosyllabic degenerate foot or a complete
+that function words like ne and the auxiliaries are often mono-                 trochaic foot.
+syllabic and unstressed. The attachment of the prefix would add                      For the objects, we used mono-, di-, and trisyllabic object
+more prosodic ‘weight’ to the function words, incidentally also                 nouns with lexical stress either on the first or the last syllable
+forming a complete trochaic foot: (ne.ge). Since lexical words                  (the trisyllabic nouns always had secondary stress as well), end-
+are stressed and form prosodic words, ge- is less likely to attach              ing in a sonorant. Table 4 gives an overview:
+to preceding lexical words. Another aspect is that the negation
+marker and the auxiliaries are both part of the verbal complex,
+                                                                                         Table 4: Metrical frames for the object nouns
+i.e., they most likely form a larger prosodic unit with the fol-
+lowing verb. In contrast, the object nouns are part of a separate
+                                                                                             Metr.Frame        Example       Translation
+prosodic phrase – as a result, a larger boundary can be assumed
+between the lexical word and the following verb, which is likely                        a.   (X)               "Spiel        game
+to prevent attachment.                                                                  b.   (X –)             "Gar.ten      garden
+                                                                                        c.   (X – x)           "Te.le.­fon   telephone
+      With respect to the sentence-initial adverbs in OE, these
+                                                                                        d.   (– X)             Ben."zin      fuel
+are topicalized elements where modern transcriptions would as-
+                                                                                        e.   (x – X)           ­Me.lo."die   melody
+sume a prosodic phrase boundary following the adverb (as in
+‘In this year, ...’, ‘here, ....’). The expectation would thus be that
+ge- remains with the following verb. One possible explanation                   To enforce the trochaic patterns, each noun was also directly
+for the contradicting results is that the position following the                preceded by an adjective with a complete trochaic foot struc-
+adverb is a typical Wackernagel/second position [27, 28]. As                    ture.
+this is beyond the scope of this paper, we leave this for further                    Given previous findings, we expected the prefix to be more
+research.                                                                       inclined to rhythmically group with the monosyllabic auxiliary
+      Summing up, the results of the corpus study show that the                 and negation indefinite, and object nouns with final stress, and
+prefix attaches to the following verb in a majority of the cases.               to prefer auxiliaries and negation indefinites over object nouns
+However, the results also showed that the ge- prefixes show al-                 in general.
+ternative attachment patterns if preceded by a function word in
+the same prosodic unit, where it often seems to form a trochaic
+                                                                                3.1.2. Participants
+foot.
+                                                                                10 Native German speakers from the allemanic speaking area
+             3. Production Experiment                                           participated in the experiment (∅ age 26.2, 4 males, 6 females).
+                                                                                They were all members of the University of Konstanz and re-
+The findings of the orthographic distribution of ge- in the WG                  ceived a small payment for their participation.
+manuscripts and in previous research were used as a basis for a
+production experiment in Modern German, which, to this day,
+                                                                                3.1.3. Procedure
+retains the unstressed verbal prefix ge-/[g@]. Our hypotheses
+were that if the prefix is phrased into trochaic feet, it is more               The recordings were made in the soundproof booth of the pho-
+likely to do so a) with material within the same phonological                   netics laboratory in Konstanz with a condenser microphone
+phrase, and b) with material that ends in a degenerated trochaic                (sampling rate 44.1 kHz, 16-Bit, stereo). All target sentences
+foot (i.e., a stressed syllable). Differences in phrasing should                were randomized and interspersed with fillers. Each target sen-
+be visible at the boundary-related interval between the previous                tence was presented on a screen for participants to produce at
+word and the prefix [29], especially in the closure duration of                 ‘natural speed’. The procedure took approximately 30 minutes.
+[g]: if [g] is phrased with preceding material, the closure dura-
+tion should decrease. In contrast, the following vowel [@], which               3.1.4. Data Analysis
+is not part of the boundary interval, should show no difference
+in duration between the different conditions.                                   Each sentence was manually annotated in Praat [30] for the clo-
+                                                                                sure duration of the prefix-initial [g], the duration of [@], and
+3.1. Methods                                                                    the duration of the entire prefix [g]+[@], following standard seg-
+                                                                                mentation criteria [31]. The duration of each of these intervals
+3.1.1. Material
+                                                                                was extracted automatically via a Praat script from a total of
+The material included lexical and function words, where the                     642 recordings. Of these, 61 had to be excluded. In a majority
+prefix followed a) auxiliaries, b) negation particles, or c) object             of these cases (40), [g] was realised as [j], which can be another
+nouns, each with varying stress patterns. For the auxiliaries,                  pointer towards the prosodic phrasing. For reasons of space, we
+we used monosyllabic bin (‘be.1S G’)and disyllabic, trochaic                    leave this phenomenon to further research and focus here on the
+haben (‘have.1/3P L’). Although bin, being a function word,                     cases that allowed for the measurement of closure duration.
+
+
+
+
+                                                                         2067
+
+=== PDF sheet 004 ===
+3.2. Results: production experiment                                          = 0.01261, SE = 0.00228, df = 269, t = 5.5, p < 0.001; 33%),
+                                                                             while the closure duration after the negative indefinites is longer
+We calculated the durations using a linear mixed effects regres-
+                                                                             compared to both the auxiliaries (β = 0.02948, SE = 0.00134, df
+sion model with stress patterns and word category as fixed fac-
+                                                                             = 486, t = 21,9, p < 0.001; 54%) and the objects (β = 0.016875,
+tors and participants and items as crossed-random factors with
+                                                                             SE = 0.002105 df = 213, t = 8, p < 0.001; 31%).
+the Satterthwaite approximation implemented in the R-library
+lmerTest [32, 33].
+     If the prefix followed an auxiliary, the duration of the whole                     4. Discussion and Conclusion
+prefix was significantly longer in the unstressed condition (p <             In this paper, we investigated whether the formation of prosodic
+0.05). This difference was driven by the closure duration of                 units is driven by syntactic constituency or based on rhythmic
+[g] (β = 0.0098, SE = 0.002647 t = 3.692, p < 0.01; 3.13%);                  principles, i.e., the trochaic foot. We were particularly inter-
+no difference in duration was found for the prefix’s [@]-vowel               ested in whether the rhythmic formation is possible across the
+(Figure 1).                                                                  boundary of morphosyntactic words. To this end, we studied
+                                                                             the verbal prefix ge- from a diachronic and a synchronic per-
+                                                                             spective.
+                                                                                  The results of the production experiment confirm some of
+                                                                             the assumptions made about the relation between prosodic and
+                                                                             syntactic constituency. The prosodic phrase boundary follow-
+                                                                             ing the object-NP seems to prevent the ge- prefix from incorpo-
+                                                                             rating prosodically with the previous material. However, these
+                                                                             findings are in contrast to previous research [14]. A possible
+                                                                             explanation is that in the present experiment the nouns were
+                                                                             preceded by a modifying adjective. This addition might have
+                                                                             caused the prosodic phrase (encompassing adjective and noun)
+                                                                             to have ‘enough weight’, while the singular nouns in [14] were
+                                                                             more prone to group with the following prefix. More research
+                                                                             is needed in this direction.
+                                                                                  No larger prosodic boundary exists after the auxiliary which
+                                                                             forms a phonological phrase with the following verb. Within
+                                                                             this domain, the rhythmic reorganisation is possible across word
+Figure 1: Duration of [g], [@], and [g@] following auxiliaries,              boundaries: in the presence of a degenerated prosodic foot
+separated by whether the preceding syllable was stressed or un-              (monosyllabic bin), ge- seems to be used to ‘repair’ the foot
+stressed.                                                                    structure. Such a repair mechanism is not needed after the di-
+No difference in duration in either [g], [@], or [g@] was found if           syllabic auxiliary haben, resulting in a longer closure duration
+the prefix followed an object or a negative indefinite.                      for [g].
+     The comparison of the three categories over both conditions                  Both object and auxiliary results confirm the patterns found
+showed a significant difference in the duration of the whole pre-            in the historical data. In contrast, the results for the negation
+fix (p < 0.001), driven by the closure duration of [g] (p < 0.001)           condition are in stark opposition to the historical findings: pre-
+for all categories and all conditions. Figure 2 shows the closure            fixes following negation have the longest closure duration over-
+duration of [g] in the three categories separated by the stress              all. One reason for this result might be that in the historical data,
+condition.                                                                   the negation marker ne was a clitic [34], while, in the current
+                                                                             stage of the Jespersen cycle, negation markers form separate
+                                                                             prosodic words. In fact, its position suggests a strong prosodic
+                                                                             (focus) accent [35] which would also indicate a strong bound-
+                                                                             ary directly following the negation marker [36]. This question
+                                                                             is left for further research.
+                                                                                  Summing up, both diachronic and synchronic data suggest
+                                                                             that the formation of trochaic feet across word boundaries is
+                                                                             possible, but that the process most likely occurs within the
+                                                                             domain of a prosodic phrase. However, there are also indi-
+                                                                             cators for a ‘hierarchical’ classification of different types of
+                                                                             prosodic phrase boundaries, where weaker boundaries (e.g., af-
+                                                                             ter unmarked, non-modified objects) might allow for rephras-
+                                                                             ing, while larger units form stronger boundaries (e.g., modified
+                                                                             objects), and preceding elements in focus form a crisp boundary
+                                                                             to the following prefix.
+
+                                                                                              5. Acknowledgements
+Figure 2: Closure duration of [g] following different types of
+word categories, separated by whether the preceding syllable                 This research was funded by the Committee on Research (AFF)
+was stressed or unstressed.                                                  at the University of Konstanz as part of the research initiative
+                                                                             Meaningful silence and noise. We would also like to thank the
+An analysis of the overall data showed that the closure duration             PhonLab, part of the core facilities LingLab at the University of
+after the object is longer than the duration after the auxiliary (β          Konstanz, for the use of their recording facilities.
+
+
+
+
+                                                                      2068
+
+=== PDF sheet 005 ===
+                        6. References                                             [24] “St. Gallen, Stiftsbibliothek, Cod. Sang. 871: Juvenal, Satiren mit
+                                                                                       Glosse.”
+ [1] E. O. Selkirk, “On derived domains in sentence phonology,”
+     Phonology Yearbook, vol. 3, pp. 371–405, May 1986.                           [25] G. Walkden, “Helipad: the Heliand Parsed Database. version 0.9,”
+                                                                                       2015.
+ [2] M. Nespor and I. Vogel, Prosodic Phonology. Dordrecht: Foris,
+     1986.                                                                        [26] E. Sievers, Ed., Heliand.    Halle: Verlag der Buchhandlung des
+                                                                                       Waisenhauses, 1878.
+ [3] E. O. Selkirk, “The syntax-phonology interface,” in The Hand-
+     book of Phonological Theory, J. Goldsmith, J. Riggle, and A. Yu,             [27] J. Wackernagel, “Über ein Gesetz der indogermanischen Wortstel-
+     Eds. Malden, MA: Blackwell, 2011, pp. 435–484.                                    lung,” Indogermanische Forschung, no. 1, pp. 333–436, 1892.
+ [4] S. A. Jun, “The phonetics and phonology of Korean prosody,”                  [28] J. Wackernagel, G. Walkden, C. Sevdali, and M. Macleod, On
+     Ph.D. dissertation, Ohio State University, Columbus, 1993.                        a law of Indo-European word order, ser. Classics in Linguistics.
+                                                                                       Berlin: Language Science Press, 2020, no. 7.
+ [5] C.-C. Cheng, A synchronic phonology of Mandarin Chinese. The
+     Hague: Mouton, 1973.                                                         [29] C. Fougeron and P. A. Keating, “Articulatory strengthening at
+                                                                                       edges of prosodic domains,” Journal of the Acoustical Society of
+ [6] F. Ferreira, “The creation of prosody during sentence production,”
+                                                                                       America, vol. 101, pp. 3728–3740, Jun 1997.
+     Psychological Review, vol. 100, no. 2, pp. 233–253, Apr 1993.
+                                                                                  [30] P. Boersma and D. Weenink, “Praat: doing phonetics by computer
+ [7] H. Truckenbrodt, “On the Relation between Syntactic Phrases and
+                                                                                       [computer program],” 2023.
+     Phonological Phrases,” Linguistic Inquiry, vol. 30, no. 2, pp. 219–
+     255, 1999.                                                                   [31] A. Turk, S. Nakai, and M. Sugahara, Acoustic segment durations
+                                                                                       in prosodic research: A practical guide, ser. Language, Context
+ [8] A. Lahiri and F. Plank, “Phonological phrasing in Germanic: the
+                                                                                       and Cognition. Mouton de Gruyter, Jul. 2006, pp. 1–28.
+     judgement of history, confirmed through experiment,” Transac-
+     tions of the Philological Society, vol. 108, no. 3, pp. 372–398,             [32] R. Baayen, D. Davidson, and D. Bates, “Mixed-effects modeling
+     Nov 2010.                                                                         with crossed random effects for subjects and items,” Journal of
+                                                                                       Memory and Language, vol. 59, no. 4, pp. 390–412, Nov 2008,
+ [9] D. Abercrombie, “Syllable quantity and enclitics in English,” in
+                                                                                       special Issue: Emerging Data Analysis.
+     Studies in Phonetics and Linguistics, 3rd ed., D. Abercrombie,
+     Ed. London: Oxford University Press, 1971, pp. 26–34.                        [33] A. Kuznetsova, P. Brockhoff, and R. Christensen, “lmerTest pack-
+[10] A. Cutler, “Prosody and the word boundary problem,” in Signal to                  age: Tests in linear mixed effects models,” Journal of Statistical
+     syntax: bootstrapping from speech to grammar in early acquisi-                    Software, vol. 82, no. 13, Dec 2017.
+     tion, J. L. Morgan and K. Demuth, Eds. Mahwah, NJ: Lawrence                  [34] A. Jäger, “Negation in Old High German,” Zeitschrift für Sprach-
+     Erlbaum, 1996, pp. 87–99.                                                         wissenschaft, vol. 24, no. 2, pp. 227–262, Nov 2005.
+[11] L. Wheeldon and A. Lahiri, “Prosodic units in speech production,”            [35] C. Féry and F. Kügler, “Pitch accent scaling on given, new and
+     Journal of Memory and Language, vol. 37, no. 3, pp. 356–381,                      focused constituents in German,” Journal of Phonetics, vol. 36,
+     Oct 1997.                                                                         no. 4, pp. 680–703, Oct 2008.
+[12] H. Sweet, Elementarbuch des gesprochenen Englisch, 3rd ed.                   [36] B. Hayes and A. Lahiri, “Bengali intonational phonology,” Natu-
+     Leipzig: Tauchnitz [u.a.], 1904.                                                  ral Language and Linguistic Theory, vol. 9, no. 1, pp. 47–96, Feb
+[13] P. Eisenberg, Grundriss der deutschen Grammatik: Das Wort,                        1991.
+     3rd ed. Stuttgart; Weimar: Metzler, 2006.
+[14] T. Bögel, “Rhythmic phrasing of prosodic words: a diachronic
+     perspective from Old English, supported by experimental evi-
+     dence from German,” in Proceedings of the 50th Annual Meet-
+     ing of the North Eastern Linguistic Society (NELS 50), vol. 1.
+     Amherst: GLSA, 2020, pp. 59–72.
+[15] D. Nübling, Klitika im Deutschen: Schriftsprache, Um-
+     gangssprache, Alemannische Dialekte. Tübingen: Gunter Narr
+     Verlag, 1992.
+[16] J. Fleischer, “Paleographic cues to prosody?       - Accents,
+     word separation, and related phenomena in Old High German
+     manuscripts,” in Information Structure and Language Change,
+     R. Hinterhölz and S. Petrova, Eds. Berlin: Mouton de Gruyter,
+     2009, pp. 161–189.
+[17] E. Frey, “Wortteilung und Silbenstruktur im Althochdeutschen,”
+     Ph.D. dissertation, Universität München, München, 1988.
+[18] M. B. Parkes, Pause and Effect. An Introduction to the History of
+     Punctuation in the West. Aldershot: Scolar Press, 1992.
+[19] W. Streitberg, “Perfective und imperfective Actionsart im Ger-
+     manischen,” Beiträge zur Geschichte der deutschen Sprache und
+     Literatur, no. 15 (Jahresband), pp. 70–177, 1891.
+[20] A. van Kemenade and B. Los, “Particles and perfixes in Dutch and
+     English,” in Yearbook of Morphology, G. Booij and J. van Marle,
+     Eds. Dordrecht: Springer Netherlands, 2003, pp. 79–118.
+[21] A. Lloyd, Anatomy of the Verb: The Gothic verb as a model for
+     a Unified Theory of Aspect, Actional Types, and Verbal Velocity.
+     Amsterdam: John Benjamins, 1979.
+[22] R. Flower and H. Smith, Eds., The Parker Chronicle and Laws –
+     a Facsimile. London: Oxford University Press, 1941.
+[23] “British Library: Cotton Caligula A. VII.”
+
+
+
+
+                                                                           2069

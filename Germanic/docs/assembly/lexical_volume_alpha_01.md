@@ -315,9 +315,9 @@ Proto input: _\*bigínnaną_
 OE Heavy Syllable Nasal Apocope & \emph{*bigínnan} \\
 \mbox{OE Secondary Nasalization} & \emph{*bigínnąn} \\
 \mbox{OE Velar Palatalization} & \emph{*biʝínnąn} \\
-\mbox{OE Prefix I Reduction} & \emph{*bĕʝínnąn} \\
-\mbox{OE Weak Tail Reduction} & \emph{*bĕʝínnan} \\
-\mbox{OE Palatal Fricative Merger} & \emph{*bĕjínnan} \\
+\mbox{OE Prefix I Reduction} & \emph{*beʝínnąn} \\
+\mbox{OE Weak Tail Reduction} & \emph{*beʝínnan} \\
+\mbox{OE Palatal Fricative Merger} & \emph{*bejínnan} \\
 \end{tabularx}
 \end{minipage}
 \\

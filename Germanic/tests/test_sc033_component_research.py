@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import anglo_frisian_experiments as experiments
 import generate_registry_views as registry_views
-from test_sc043_component_split import definition, rows
+from test_sc043_component_split import segmental_definition, rows
 
 DIRECTORY = ROOT / "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian"
 
@@ -87,8 +87,8 @@ class Sc033ComponentResearchTests(unittest.TestCase):
                 name = names[0]
                 if name in expected:
                     found.add(name)
-                    self.assertEqual(re.sub(r"\s+", "", definition(block, name)),
-                                     re.sub(r"\s+", "", definition(source, name)))
+                    self.assertEqual(re.sub(r"\s+", "", segmental_definition(block, name)),
+                                     re.sub(r"\s+", "", segmental_definition(source, name)))
             self.assertEqual(found, expected)
 
     def test_post_hue_controls_preserve_released_pins_and_palatal_assertions(self):

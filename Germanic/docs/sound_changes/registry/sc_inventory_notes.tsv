@@ -58,7 +58,7 @@ SC031	Inherited short-Vww reanalysis	source_partial_chain	chew; dew; four; hew; 
 SC032	Quantity-distinct English diphthong realization	source_partial_chain	bread; chew; dew; four; friend; head; you	Atomic fronted-au/eu/iu long realization is distinct from retained short split helpers; ordinary iu-to-eo packages a selected WS endpoint. Not one WS smoothing law. Ringe-Taylor 2014 pp.170-175; Campbell 1959 pp.53-54,116-118,124-126.	SC030 and SC031 feeding is component-scoped; head/SC040 is technical vowel recognition. Unused clauses do not establish a historical domain. See sc032-adjudication.md.	no
 SC033	J-created palatalized-glide reanalysis	adjudicated	hue; knee dative contrast	Hue enters with inherited PGmc i and receives j-conditioned offglide reanalysis; distinct long-io realization is SC110. The regular short knee dative remains excluded.	Fulk 2018 pp.71-72 disputes dismantling; Ringe-Taylor 2014 p.250 leaves phonemic analysis unclear. No independent historical stage/scope/confidence assigned.	no
 SC034	Retained show long-diphthong proxy	adjudicated	show	Retained two clauses for three show cells; singleton/geminate root history deferred.	Old straw boundary is superseded; regular reconstructed straw follows SC111/SC030/SC032.	yes
-SC035	English unstressed ga-prefix vocalism	runner_limited_or_technical	believe	Provisional compression of pre-OE fronting and later OE weak-prefix merger; gaCV is a boundary-free selected-input proxy, not the historical domain. Technical breve protects the weak vowel, not an independently attested phonetic stage.	Model comparison preserves all selected finals with staged alternatives and improves source-backed cluster coverage; early gi- regular raising versus bi-influence remains unresolved. Retain compression provisionally, not as uniquely necessary. Believe's displacement concerns SC107 and later palatal diphthongization, not stressed SC043. Confidence A concerns existence only; old closure, evidence and historical card preserved.	no
+SC035	Pretonic front-vowel raising after a palatal fricative	source_partial_chain	believe; climb; creation	Adopt regular raising after ordinary fronting and palatalization, with later i-lowering; positive prosody replaces the gaCV identity proxy.	Specific raising reconstruction has confidence B; secure gi/ge outcomes do not prove its exact date. Earlier compression verdict superseded, records preserved.	no
 SC036	OE Inter Stress Raising	not_started				no
 SC037	OE Compound Linking Syncope	not_started				no
 SC038	OE Strip Secondary Stress	not_started			Marker-stripping cleanup for secondary-stress graves; keep only as methodological appendix material.	no
@@ -79,7 +79,7 @@ SC052	Class-distinct velar palatalization		day; hedge; singe	Singleton ʝ contra
 SC053	OE Post Velar W Loss	not_started				no
 SC054	OE W Loss Before I	not_started				no
 SC055	OE I Umlaut	source_partial_chain		SC056 ordinary-before-mutation split adopted; old gift/sheath composite dating superseded. SC105 retains unchanged late approximation with unresolved conditioner.		no
-SC056	OE Ws Palatal Diphthongization	source_partial_chain		SC056 ordinary-before-mutation split adopted; old gift/sheath composite dating superseded. SC105 retains unchanged late approximation with unresolved conditioner.		no
+SC056	OE Ws Palatal Diphthongization	source_partial_chain		Retain ordinary-before-mutation; headed-foot rather than word-initial domain (Hogg Grammar 5.48 n.1). Prefixed gesceaft diphthongizes its root, not its weak initial syllable.	Earlier ordinary/late split is preserved; SC105 is unchanged.	no
 SC057	OE J Cluster Coalescence	not_started				no
 SC059	OE Back Mutation	not_started				no
 SC060	OE Ws Palatal Umlaut	not_started				no
@@ -95,10 +95,10 @@ SC069	OE Early O Shortening	not_started				no
 SC070	OE Unstressed Fronting Early	not_started				no
 SC071	OE Late O Shortening	not_started		Shortens unstressed *ō to *o, whose medial/final outcomes are SC099/SC100; see Stausland Johnsen 2015 pp.28-31 and sc021-adjudication.md.		no
 SC072	OE Unstressed Long Vowel Shortening	not_started				no
-SC073	OE Unstressed AE Merger	not_started				no
+SC073	OE Unstressed AE Merger	source_partial_chain		Extend ae/e merger to positively identified pretonic vowels while retaining the existing post-tonic domain. Later i-lowering remains SC076.	Scoped direct dependency of the SC035 prosody reconsideration.	no
 SC074	OE Med Unstressed I Lowering1	not_started				no
 SC075	OE Med Unstressed I Lowering	not_started				no
-SC076	OE Prefix I Reduction	not_started				no
+SC076	Pretonic i-lowering	source_partial_chain	begin; believe; climb	Short pretonic i > e after ae/e merger; no grammatical prefix identity condition.	General pretonic law replaces bi/ni proxy; standalone weak particles remain outside this bounded representation.	no
 SC078	OE Weak Tail Reduction	not_started				no
 SC079	OE J Loss After Heavy	not_started				no
 SC080	OE Final Geminate Simplification	not_started				no
@@ -131,3 +131,4 @@ SC109	Postmutation merger serialization		day; key	Technical holding zone for the
 SC110	Palatalized-glide long-io realization		hue	Separate source-backed long-io realization before ordinary diphthong completion (Ringe-Taylor 2014 p.250).	Palatal conditioning is carried by w+j without resolving the author's phonemic question; no independent historical stage/scope/confidence assigned.	yes
 SC111	Endingless-aw regular-branch fragment		straw	Approved regular output strea against unchanged attested target streaw: eighth known mismatch (Ringe-Taylor 2014 pp.172-173,387; Brunner 1965 pp.49,110).	Restored w belongs to paradigm levelling; no independent general final-vowel-law verdict.	yes
 SC112	Stressed monosyllabic lengthening before inherited final *r	order_sensitive	there; where	Selected early executable working architecture for source-supported short-*a* place-adverb witnesses *θár > þǣr and *xwár > hwǣr. The rule is general and excludes disyllabic forms; its position before rhotacism preserves inherited-r conditioning and is not a claim that the process was absent from Proto-Germanic. Exact date, geographical scope and relation to SC015/SC024 remain qualified; see the SC112 dossier and chronology card.	No strict SC015/SC024 chronology edge is established. The two admitted witnesses support the generalization and the selected working position, while intermediate and late alternatives remain documented in the bounded experiment receipt.	no
+SC113	Positive pretonic stress-foot annotation			Technical capture of one weak pretonic syllable before a positively stressed nucleus loses its accent marking.	No historical event, stage, scope or date is inferred from this operation.	yes

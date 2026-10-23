@@ -1,0 +1,1441 @@
+SOURCE: minkova_zhou_2022_functional_stress_shifts
+ACQUIRED: 2026-10-23
+ORIGINAL: https://doi.org/10.1017/S1360674322000144
+VERSION: 26 sheets; printed pp.533-558; published version; CC BY 4.0
+PDF SHA256: 4f93aa967f531772a57629690c10e317f6dc155a95c0edf8c3a7f5cedfcd6b34
+METHOD: pdftotext -layout, all sheets retained. PDF sheet markers are not printed folios.
+GLYPH REPAIRS: none
+
+
+=== PDF sheet 001 ===
+                    English Language and Linguistics, 26.3: 533–558. © The Authors, 2022. Published by
+                   Cambridge University Press. This is an Open Access article, distributed under the terms of the
+                 Creative Commons Attribution licence (http://creativecommons.org/licenses/by/4.0/), which permits
+                   unrestricted re-use, distribution and reproduction, provided the original article is properly cited.
+                                                   doi:10.1017/S1360674322000144
+
+
+
+                                      Early metrical and lexicographical evidence
+                                             for functional stress-shifts1
+
+
+                                            D O N K A M I N K O VA and Z . L . Z H O U
+                                                          University of California
+                                            (Received 29 October 2021; revised 23 January 2022)
+
+
+
+                      Only three English diatones, outlaw, rebel, record, out of the current 235-item list in Hotta
+                      (2015), are on record prior to the seventeenth century; the latest record of diatonic outlaw is
+                      1786 (Sherman 1975: 63). Whether this type of functional prosodic contrast was inherited or
+                      innovative is controversial. We revisit the Old English metrical evidence for functional
+                      stress-shifting and present new attestations of verb–noun pairs in Middle English verse in
+                      an effort to establish if the limited inherited stress-shifting model survives, and, if so,
+                      whether or how it accommodates the incoming loan vocabulary. The additional verse
+                      attestations support the idea of continuity, yet the scarcity of data falls short of statistical
+                      veriﬁability. A search into detailed lexicographical information for 1200–1550 reinforces
+                      the hypothesis of continuity by documenting the differential patterns of borrowing of
+                      nouns and verbs, preﬁxed and unpreﬁxed. Taken together, these two sources endorse a
+                      proposal that in its earliest stages functional stress-shifting was predicated on preﬁxation,
+                      and that the ongoing conﬂict between preﬁxal defooting and ALIGN-L (Root, PrWd) in
+                      ME is a necessary component of the diachronic account of English prosody.
+                      Keywords: noun–verb diatone(s), preﬁxation, stress, Middle English verse, lexicographical
+                      records
+
+
+                                                                                    Two thyngys owyth euery clerk
+                                                                                    To aduertysyn, begynnyng a werk,
+                                                                                    If he procedyn wyl ordeneelly:
+                                                                                    The fyrste is ‘what’, the secunde is ‘why’.
+                                                                                             Osbern Bockenham (1393–1447?)
+                                                                                             Legendys of Hooly Wummen
+
+
+
+
+                 1
+                     Sincere thanks to our reviewers for their extraordinary collegial commitment and generosity; their sharp, insightful,
+                     helpful comments could only have come from colleagues who know and value the article’s subject. The ﬁnal
+                     product is better for their contribution, the imperfections are all on us.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 002 ===
+                      534                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                                              1 Introduction: the what and the why of the project
+                      The prosodic contrasts in pairs such as úpset, n. – upsét, v., cónvict, n. – convíct, v. are
+                      known as functional stress-shifts, also referred to as diatones. In some estimates
+                      (Dabouis et al. 2014; Kiparsky 2016: 467) about 30 percent of the eligible
+                      homographic noun–verb pairs in Present-Day English (PDE) can alternate. Whether
+                      this type of prosodic contrast was an Old English (OE) inheritance, or a post-Middle
+                      English (ME) innovation is controversial, not least because some pieces of the
+                      diachronic account of English stress are missing and worth revisiting. So, one answer
+                      to the ‘what’ of this project are some lacunae in our records of pre-seventeenth-century
+                      stress with focus on functional stress-shifting.
+                         The ‘why’ rationale of the endeavor is that verse evidence for possible prosodic
+                      changes in English is conspicuously absent from the records of the post-Chaucerian
+                      stretch of about 150 years. Halle & Keyser’s foundational 1971 account of stress in
+                      early English verse jumps from Chaucer to Shakespeare and Milton, and so does the
+                      section on ‘Accentuation’ in Lass (1992: 89–90). Dobson’s coverage of stress (1957,
+                      vol. II: 445–9) starts at 1500, ofﬁcially, but his ﬁrst relevant comments are to the late
+                      sixteenth century when the ﬁrst English–English rhyming dictionary appeared (Levins
+                      1570). The testimony of orthoepists before the end of the sixteenth century (Dobson
+                      1957, vol. II: 827–30, 1020–2) is mostly silent on stress, and the relevant section in
+                      Lass (1999: 128–33) also picks up from Levins’ (1570) Manipulus Vocabulorum.
+                      Further, even diachronic dictionary-based searches for diatones (Dabouis et al. 2014;
+                      Hotta 2015) focus on post-sixteenth-century information. The otherwise valuable
+                      testimony of spelling is of little use for stress reconstruction; art verse remains the most
+                      promising source of prosodic information diachronically, so one of the aims of this
+                      study is to examine the way poets treat stress, and more narrowly, to attempt an
+                      extended record of the attestations of prosodic contrasts based on lexical category:
+                      nouns versus verbs.
+                         Turning to the rapidly expanding ME lexicon, and especially late ME (1400–1550), we
+                      also present new records of the noun–verb pairs in an effort to see if the limited inherited
+                      stress-shifting model survives, and, if so, whether or how it accommodates the incoming
+                      loan vocabulary. The early history of differential stressing of nouns and verbs is discussed
+                      in the larger context of morphological versus phonological factors prior to the ﬁrst
+                      contemporary records of stress (Levins 1570). A renewed scrutiny of the data on early
+                      functional stress-shifting relates directly to a widely held view of the evolution of the
+                      parameters deﬁning the direction of stress assignment in PDE, as elaborated in
+                      section 5, and highlights some of its problematic aspects.
+                         The outline of the article is as follows. Section 2 presents evidence for the differential
+                      stressability of preﬁxed OE nouns and verbs. Section 3 adduces stress-shift data extracted
+                      from the ME poetic corpus, including a range of previously unidentiﬁed attestations. The
+                      relevant lexicographical records in the Dictionary of Old English (DOE) and the Oxford
+                      English Dictionary (OED) are presented in section 4, which explores the morphological
+                      and phonological properties of pairs recorded up to 1550. The discussion in section 5
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 003 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S   535
+
+
+
+
+                 reconsiders the continuity of functional stress-shifting, the link between preﬁxation and
+                 the rise of diatones after the middle of the sixteenth century, and underscores the effect
+                 of verbal preﬁxation on the changing balance between morphological and rhythmic
+                 components in the history of stress assignment. Some implications and prospects for
+                 further research are addressed in the ﬁnal section.
+
+
+                                       2 Old English stress and noun–verb prosodic contrasts
+                 In OE, primary stress falls on the ﬁrst root syllable, marking the left edge of the semantic
+                 core of the word. This model of stress assignment, familiar from inherited vocabulary as in
+                 búsy, kéttle, bróther, ópen, útter, and historically shared with all other Germanic
+                 languages, is known as the Germanic Stress Rule (GSR). In OE it also applied to
+                 loanwords, often against the stress in the donor language: OE ábbot, Lat. abbā́ dem
+                 ‘abbot’, OE cā́ lend, Lat. kaléndae ‘ﬁrst day of the month’, OE cándel, Lat. kandḗ la
+                 ‘candle’, OE cúmyn, Lat. cumī́num ‘cumin’. All accounts of OE stress, including
+                 accounts based on the moraic trochee, acknowledge that OE primary stress falls on the
+                 ﬁrst syllable of the root regardless of its weight.
+                    Inﬂectional sufﬁxes do not affect primary stress. Derivational sufﬁxes, even if they are
+                 transparently derived from independent roots, either etymologically or synchronically,
+                 e.g. (-)hād ‘-hood’; (-)lēas ‘-less’; (-)līc ‘-like, -ly’; (-)tȳne ‘-teen’, never shift the
+                 primary stress away from the base, though they may have secondary stress. The
+                 non-occurrence of primary stress on sufﬁxes applies to all word types:
+                 (1) Sufﬁxation and primary stress in Old English:
+                     cýrice    ‘church’, cýric-līc, cýric-hād
+                     dúru     ‘door’, dúru-lēas
+                     fḗower ‘four’, fḗower-tig, fḗower-tȳne
+                     býrnan ‘to burn’, býrn-ende
+                     hǣ́ þen ‘heathen’, hǣ́ þen-isc, hǣ́ þen-nes, hǣ́ þen-scipe
+                 The stability of primary stress is testable in the verse: sufﬁxed forms may behave like
+                 compounds, allowing the sufﬁxal syllable to ﬁll a metrical ictus, yet that syllable’s
+                 onset does not alliterate by itself, indicating that it could not have held primary stress.
+                 Put differently, the primary stress-shifts triggered by Latinate sufﬁxes as in Látin –
+                 Latín-ity, pérson – persón-ify, dráma – dramá-tic, a central feature of English stress
+                 today, are all post-OE innovations.
+                    Preﬁxation presents a more complex picture. OE treated preﬁxed items differently
+                 depending on the stem’s morphological class. Though often posited (Campbell 1959:
+                 30–1; Hogg 1992a: 48–9), scribal evidence for preﬁxal allomorphy, e.g., ánd- vs. on-,
+                 bí(ġ)- vs. be-, ínn- vs. in-, depending on whether the preﬁx is attached to a nominal or
+                 verbal/adverbial base, is inconsistent (Minkova 2008: 26–7), leaving verse as the best
+                 source of information on preﬁxal prominence in nouns and verbs. Simplifying
+                 somewhat, there are three types of preﬁxes in OE: (a), preﬁxes which are never
+                 stressed, nor used in alliterating positions (be-, ge-, for-); (b), stressed adverbial
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 004 ===
+                      536                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      preﬁxes which were originally attached to nominal stems (and- ‘against’, ed- ‘back’), and
+                      the verbs derived from them preserved the stress contour; and (c), preﬁxes which were
+                      stressed variably depending on the word class of the base:2
+                      (2) Variably stressed preﬁxes in OE: æt-, of-, in-, on-, wiþ-, ymb-:3
+                          æt ðam ǽtstèalle / óðres mónnes                    (Waldere 21)
+                          fēt ond fólma. / Fórð nēar ætstṓ p               (Beo 745)
+                          Ƿær him ā́ glǣ̀ ca / ǽtgrǣ̀ pe wearþ              (Beo 1269)
+                          He þā his fḗondas sloh / and him ætfǽste eac (Paris Psalter 77.184)
+                          oð þæt him ǣ́ ghwylc / þāra ýmbsìttèndra          (Beo 9)
+                          sylf in þām sólere, / and ymbséteð ū́ tan         (The Phoenix 204)
+                      The preﬁx æt- in the nouns ǽtstèalle ‘station, position’ in Waldere 21, or ǽtgrǣ̀ pe
+                      ‘grasping, aggressive’ in Beo 1269 has primary stress and alliterates, while in the
+                      inﬂected verbs ætstṓ p ‘stopped’ in Beo 745 and ætfǽste ‘cast/inﬂict hurt on’ cannot
+                      alliterate; similarly, ymb- in ýmbsìttèndra ‘(of) the neighboring people’ has vowel
+                      alliteration, while inﬂected ymbséteð ‘surrounds’ alliterates on [s-]. Nouns (and
+                      adjectives) derived with the preﬁxes in (2) are thus not subject to ‘preﬁx defooting’
+                      (Selkirk 1980).
+                         OE verse supports an assumption of some degree of prosodic distinction of any
+                      unemphatically used nouns versus verbs; we return brieﬂy to this in section 6. Further
+                      details aside for now, scholarly opinions converge on one point: functional contrast can
+                      be reconstructed beyond doubt only for preﬁxed items as in (2). They present the key
+                      metrical evidence for positing prosodic prominence asymmetry between ﬁnite verbs and
+                      other lexical words in OE, an asymmetry attested and much tested and discussed for PDE.4
+
+
+                                                           3 Stress-shifts in pre-1550 verse
+                      From the earliest strictly stress-alternating septenarius poems, through the blossoming of
+                      the tetrameter, and Chaucer’s and Gower’s innovative pentameter, preﬁxes on Germanic
+                      verbal bases remain uniformly unstressed. Newly borrowed non-Germanic preﬁxed verbs
+                      ﬁt into the native framework; monosyllabic preﬁxes such as ad-, co-, ex-, pre- solidiﬁed
+                      and expanded the already well-established native pattern.5
+
+                      2
+                        While the prosody of adjectives aligns with nouns, for reasons of space we mostly address nouns vs. verbs here. We
+                        exclude non-monosyllabic preﬁxal elements: ofer-, under-, umbe-, wither-. Their prominence relative to the stems
+                        they attach to cannot be reliably tested in the tetrameters and pentameters of ME; besides, umbe- and wither- were
+                        unproductive in ME. The main criterion we consider for what constitutes a preﬁx and what constitutes a particle is
+                        separability: in the verse separable particles can ﬁll an ictic position.
+                      3
+                        Alliterating onsets are in boldface. Further noun–verb stress contrasts in OE verse are recorded in Minkova (2008).
+                      4
+                        For discussion and statistics on the prosodic unevenness of verbs and nouns in PDE see, e.g., Sherman (1975), Kelly
+                        & Bock (1988), Burzio (1994), Berg (1999, 2000), Hurrell (2001), Schlüter (2005: 40–2, 60–4), Sonderegger
+                        (2010/2016), Sonderegger & Niyogi (2013), Smith (2016), Hofmann (2020).
+                      5
+                        We treat etymologically preﬁxed items in ME as having transparent preﬁxes, following the OED headword
+                        etymologization. This includes Anglo-Norman (AN) and Old French (OF) items for which the preﬁx-stem
+                        boundary may have been opaque from the start (e.g. rebel, n., v.; proﬁt, n., v.; promise, n., v.; envy, n., v.; exile,
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 005 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                              537
+
+
+
+
+                 (3) Continuity of # σ σ́ (σ) # for preﬁxed verbs in ME:6
+                     (a) Germanic preﬁxes and stems
+                         & swá bilámmp þatt wíddwe þá                                   (Ormulum 8681 c.1180)
+                         Sché wiþbráid and fél vpríʒt.                (Arth. & M. (Auch) 8449 c.1330 (?a.1300))
+                         Men máy the óldẹ atrénnẹ and nát atréde.                       (Chaucer CT KnT 2449)
+                         Béuẹs is swérd anón vpswápte                     (Bevis (Auch) 95/1899 1330 (?c.1300))
+
+                      (b) Latinate preﬁxes and stems
+                          It tó corréctẹ and éek to rúbbẹ and scrápe                               (Chaucer Adam 6 c.1385)
+                          If théy presúmed mé to cóuntreféte                                   (Chaucer CT PhyT.18 c.1390)
+                          Wheróf the Gréks afférmẹ and séie                                 (Gower CA (Frf 3) 5.857 a.1393)
+                          Texíte mén to yíue fáls credénce                          (Lydgate FP (Bod 263) 4.3447 (?a.1439))
+
+                 The usage recorded in (3) may seem like an effort to show the obvious, but the single most
+                 extensive documentation of stress-shifts in late ME verse (Nakao 1977: 33–4, 105–6) uses
+                 rhymes and marks stress on verbal preﬁxes (béwrappen ‘bewrap’, púrsu ‘pursue’, pórvey
+                 ‘purvey’) based on examples from ME alliterative verse; this then becomes part of the
+                 argumentation against the existence of noun–verb diatones in ME. We believe that
+                 both rhyme- and alliterative attestations should be left out of the evidential basis.7
+                    Recognition of the persistence of # σ σ́ (σ) # for preﬁxed verbs still leaves open the
+                 question of the coexistence of noun–verb prosodic contrasts in ME. For the native
+                 lexicon, the only Germanic noun–verb pair recognized as a diatone in Levins (1570) is
+                 outlaw, OE ū́ tlàga. The ﬁrst possible # σ σ́ (σ) # record for the verb is post-1400 and it
+                 can be ambiguous in the verse, in line with the treatment of compounds in stress-
+                 alternating verse. Searching for further contrasting noun–verb pairs is prohibitively
+                 time-consuming – the Middle English Dictionary (MED) allows no search option for
+                 ‘verse’ attestations – without the development of specialized tools.8 Still, the placement
+                 of the boldfaced nouns in (4) would be hard to account for unless we assume continuity
+                 of at least optional functional stress-shifting; a (?) is added after a line if an alternative
+                 scansion cannot be ruled out:
+
+                   n., v.). We have no access to the way speakers perceived them, but we hypothesize that by contravening the
+                   transparent model of non-initial stress on preﬁxed items they must have played a role in expanding the diatonic
+                   set. We refer to noun–verb pairs as ‘homographic’, following the OED headwords; for the ME data we use the
+                   variant spelling for the cited line.
+                 6
+                   We follow the common editorial practice of under-dotting presumed ‘silent’ <-e(-)>’s line-internally.
+                 7
+                   Nakao’s extensive database (1977: 13–130) is is thus of limited usefulness; he follows Halle & Keyser’s (1971)
+                   methodological misstep of relying on rhyme for σ σ́ (σ) and alliterative evidence for σ́ σ (σ) stress reconstruction.
+                   The problems of using rhyming as evidence for ME stress are discussed in Minkova (1997); increased non-oral
+                   text composition and transmission renders ME alliteration unreliable; see Minkova (2009: 99–101) and references
+                   there. We look only at non-line-ﬁnal attestations in tetrameter and pentameter verse and treat as inconclusive rare
+                   alliterative verse attestations as, e.g., project, n. in On þe propurest of proiecte þat euire prince bere (Wars Alex.
+                   (Ashm 44) 3332 c.1450).
+                 8
+                   Thanks to one reviewer for making us aware of the existence of one potential tool: the RNNTagger described in
+                   Schmid (2019). Schmid’s results are promising, with ‘the accuracy… comparable to that of the manual
+                   annotation’. Nonetheless, there exists no pretrained model for ME and sowe must leave this possibility to future work.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 006 ===
+                      538                                 D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      (4) Noun–verb possible early Germanic, or mixed etymology, diatones:
+                          (a) Germanic stems:
+
+                                 Seint Dúnstan wás of Éngelónd incómẹ of góde móre
+                                                                             (St. Dunstan, Harl 2277, 57, c.1305–10)
+                                 At þẹ íncomẹ óf þe fírth monét,
+                                 (Ioséph him wént to názaréth)             (Cursor (Vsp A.3)11127 a.1400 (a.1325))
+
+                                 of wám we béoþ of-sprónge                                     (Laȝamon Brut (Otho) 13185b c.1300)
+                                 And ál his óf-spring fórth with-ál.                             (Havelok (LdMisc 108) 2565 c.1300)
+
+                                 Ánd thou wérẹ outláwdẹ ther-fóre (?)                                          (7 Sages 2964 a.1450)
+                                 And át the lást, this óutlaw stóde                                (Metrical Homilies fourteenth cent.)
+
+                                 Fortúnẹ, mysháppyng mákith mén to sé (?)
+                                                                    (Chaucer Rom(Hunterian) 5543 a.1425 (?a.1400))
+                                 Schal hé his míshap wíte mé              (Owl & N. (Clg A.9)1249 c.1275 (?c.1250))
+
+                                 Iésus wás vp-stéi til héuen                               (Cursor (Vsp A.3)18863 a.1400 (a.1325))
+                                 Éfter þẹ v́ pstei ó þat dríghtin (?)                      (Cursor (Vsp A.3)20831 a.1400 (a.1325))
+
+                                 Hé vprós and v́ s forbóuʒte                                       (Castle Love (1) (Vrn)1414 c.1390)9
+                                 Abíde þóu min v́ prist, Þóu be hónged.                            (7 Sages (1) (Auch)70/1639 c.1330)
+
+                            (b) Mixed etymology:
+
+                                 The blóod outcríeth ón yourẹ cúrsed déde                               (Chaucer PrT B.1768 c.1390)
+                                 Ál the wórld out críeth ón vs twéyne                         (Lydgate FP (Bod 263)1.7005 ?a.1439)
+                                 Mákẹ an óutcri ón hir dóubilnésse                               (Lydgate FP (Bod 263) 2.71?a.1439)
+                                 Gret cáusẹ hauẹ Í an óutcry fór to make                        (Lydgate Minor Poems II 504 a.1449)
+
+
+                      In some of these pairs the verbal preﬁxes have subsequently become particles: come in,
+                      spring off, rise up, or the lexeme is obsolete: †upsty ‘resurrect’, but note that diatonic
+                      outcry (4b) is attested long before its assumed ﬁrst date, mid-nineteenth century (Hotta
+                      2015). Looking for more potential Germanic noun–verb contrasts, e.g., upcast, upset,
+                      upbrud ‘reproof’, uphold ‘support’, uplift, upspring ‘sunrise’, outcome, outryde, outfar
+                      ‘expedition’, outgate ‘exit’, outstrai ‘deviation’, has not been revealing; even if a pair
+
+
+
+                      9
+                          Vprist here is ‘resurrection’. In the ﬁfteenth century the literal meaning is also diatonic:
+                             A knýʒt vp rós, and Péntheús he híʒt        Lydgate TB (Aug A.4)2.3152: c.1425 (a.1420)
+                             At þẹ v́ prist óf þe mórwe stérre           Lydgate TB (AugA.4)2.7996: c.1425 (a.1420)
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 007 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                                539
+
+
+
+
+                 is attested pre-1550, the stress placement is not recoverable.10 The pickings are slim;
+                 nevertheless, the attestations in (4) clearly duplicate the OE pattern in (2).
+                    For the non-Germanic portion of the lexicon, the only surviving diatones identiﬁed in
+                 Levins (1570) are rebel and record; the non-surviving ones are depute, divine, mischief,
+                 quarrel.
+                    A manual search in the OED, the Corpus of Middle English Prose and Verse (https://
+                 quod.lib.umich.edu/c/cme), as well as individual texts, yields attestations of noun-initial
+                 versus verb-ﬁnal stress in verse that have not previously been considered potential inputs
+                 to the later history of diatones. The examples in (5) and (7) are arranged roughly
+                 chronologically by the date of the # σ́ σ # noun:
+
+                 (5) Possible early Latin/Romance diatones:11
+                     So þóu respítẹ þi sónes líf                                            (Seven Sages (Auch.) (1710) c.1330)
+                     And ȝíf him réspitẹ óf his bále                                         (Seven Sages (Auch.) (691) c.1330)
+
+                      The quéen texílẹ and slén hir chíldre twéyne
+                                                                                    (Lydgate FP (Bod 263) 4: 3409 ?a.1439)12
+                      Hóu her kíng en éxilẹ ȝéde (?)                                               (Sir Orfeo (493) c.1330)13
+
+                      Whan mén conséillid wél, y hérdẹ it náght(?)                                   (Hoccleve ASM 311?c.1422)
+                      By ál the cónseil ánd the báronáge                                            (Chaucer KnT A.3096 c.1385)
+
+                      Tó conquést the lánd all hálelý                                (J. Barbour Bruce xvi. 315 1487 (a.1380))
+                      That nédes tó the cónquest of Ytáyle.                               (Chaucer LGW 1298 c.1430 (c.1386))
+
+                      He cástẹ, and háth compássed ófte                                        (Gower CA 7, 2252 (a.1393))14
+                      Fór to fést, wit cómpas sléi                                    (Cursor (Vsp A.3)8797 a.1400 (a.1325))
+
+                 10
+                    Compare the verb in ‘Of yóure hértẹ up cásteth thé viságe’ (Chaucer Tr 5.1838 [c.1385]), yet the earliest OED
+                    record for (testable) úpcast, n., is 1616; similarly, outrýde, v. The noun upset ‘revolt’ is attested in the ﬁfteenth
+                    century (1463-4, ‘Upset n.’ Dictionary of the Scots Language. www.dsl.ac.uk/entry/dost/upset_n.; accessed 3
+                    September 2021) but only in prose; the current meaning of úpset, n. is nineteenth century. The verb upsét is
+                    attested in verse since c.1440 (OED).
+                 11
+                    A reviewer asks if there are examples of non-rhyme nouns following the verbal iambic pattern in verse, or even of
+                    verbs following the trochaic nominal pattern in the poetic records, and the answer is yes, thus:
+                        For þár-of wíll i cónsail mé.                 (Cursor (Vesp)13151 a.1400 (a.1325))
+                        Herẹ-óf in cónsail súld þai spék              (Cursor (Vesp.) 10696 a.1400 (a.1325))
+                        Bot fórto cónseile óf mi péines               (Gower CA (Frf 3)4.3464 a.1393)
+                        That dái mai nó consáil aváile                (Gower CA (Frf 3)2.3415 a.1393)
+                        We seek to establish stress variables, but the low numbers do not allow meaningful quantiﬁcation.
+                 12
+                    Earlier attested verb forms are trisyllabic; stress on the middle syllable is the default, e.g. Out of lond exíled him,
+                    Roland and Vernagu (39) (c.1330)
+                 13
+                    The OED dates both noun and verb exile c. 1300. Chaucer uses exile, n. only in the prose Tale of Melibee (x2). The
+                    preﬁx was non-separable from the Latin stem; similarly envy.
+                 14
+                    Both examples illustrate the obsolete meaning of the noun as ‘artiﬁce’ and of the verb as ‘to contrive’ (OED).
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 008 ===
+                      540                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                            Þou schóldest ús preséntẹ & gýve                       (Robert Mannyng, Chronicle (3219) c.1338)
+                            A présent wé havẹ bróght in hýe                (Bone Florence of Rome (199) late fourteenth cent.)15
+
+                            Who kán confórten nów yourẹ hértes wérre?        (Chaucer TC 5.234 a.1425 (c.1385))
+                            Good hópẹ such cómfort háth hym yíve
+                                                                 (Chaucer Rom (Htrn 409)2760 a.1425 (?a.1400))16
+
+                            I nýl envýe nó virgínitée (?)                                            (Chaucer WB. D.142 c.1395)17
+                            Thórgh al érth of énvyẹ ánd debát                              (Lydgate Siege of Thebes 4669 c.1421–2)
+                      Isolating un-paired # σ σ́ (σ) # preﬁxed verbs, or # σ́ σ # preﬁxed nouns, in, roughly,
+                      pre-1400 records yields more examples, see (6). These cannot be considered
+                      ‘evidence’ for synchronic noun–verb contrasts since matching nouns for # σ σ́ (σ) #
+                      verbs, or verbs matching # σ́ σ # nouns, did not appear in the verse citations in the
+                      OED and the Corpus of Middle English Prose and Verse.
+                      (6) Preﬁxed loanwords in the pre-1400 poetic records:
+                          Þat gáme shé refúse nólde                                                 (King Alisaunder (396) c.1300)
+                          With Júpitér compóuned só was shé                                          (Chaucer LGW (2585) c.1386)
+
+                            In íncestẹ schóllẹ ʒe lýbbe (?)
+                                                                               (Shoreham (Add 17376)68/1929 c.1350 (a.1333))
+                            And ín the réscus / óf this Pálamón                            (Chaucer KnT 2643, also Tr I 478)18
+                            Ánd a cónduyt þárẹ-bi-síde (?)                                (S Engl Legendary (381/160) c.1300)
+                            In réward óf my dóughter Sháme                                        (Chaucer Rom 3254?a.1400)
+                            Of cóntractẹs, ánd of lákkẹ of sácraméntz                            (Chaucer FrT D.1308 c.1395)
+                         Additional pairs can be posited for the post-1400 period, yet once again the rarity of
+                      such contrastive noun–verb attestations in the verse does not allow more than a
+                      tentative conclusion regarding the item’s ‘preferred’ prosodic contour in the poet’s or
+                      the scribe’s language.
+                      (7) Noun–verb possible ﬁfteenth-century Latin/Romance diatones:
+                          He wéep, and hým excúseth pítouslý                       (Chaucer MLT B.1059 c.1390)
+                          Bút for éxskus fírst of mý rudnésse (?)       (Lydgate FP (Hrl 1766)9.3366 ?a.1439)19
+
+                      15
+                         Possible earlier examples would be (Ȝétẹ þou shált wiþ Gódes míȝt) / Mo présantës and ȝíftẹs him diȝt in Arthour &
+                         of Merlin (4172) (c.1330 [c.1300?]), which allows scansion as a headless line with syncope Mó presántẹs… Also:
+                         In présaunt héo him bróuʒten, SLeg.(LdMisc 108)178/22 (c.1300).
+                      16
+                         Also: Is cómfortẹ ánd refrésshing tó thairẹ kýnde, On Husbondrie 42:294. # σ σ́ (σ) # stress on the verb continues
+                         into the ﬁfteenth century: Thus shé comfórtydẹ hyr amonge (Ipomydon 512 c.1440); also: Yow tó counfórt is
+                         hóly myn enténte (Gener. (2) (Trin-C O.5.2) 76 a.1500, a.1450).
+                      17
+                         A headless scansion (Í nyl énvyẹ…) is unlikely because Chaucer’s headless lines are overwhelmingly syntactically
+                         enjambed with the previous line, while this is an independent sentence.
+                      18
+                         All disyllabic attestations rescowe ‘to rescue’ in Chaucer (Tr III 857, Tr V 231) are in rhyme position.
+                      19
+                         Excuse, n., ﬁrst recorded 1374. Headless lines constitute over 65 percent of the ‘irregular’ lines in The Fall of
+                         Princes (Myklebust 2012: 697).
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 009 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                                541
+
+
+
+
+                      And wílfullý rebéllẹ & díssobéye                               (Hoccleve Reg Princes (190) a.1450/1412)
+                      As blýuẹ, his rébel góost it mórtifíeþ;                       (Hoccleve Reg Princes (608) a.1450/1412)
+
+                      O trýnẹ and óon, God Lórdẹ, recórdẹ I thé                       (On Husbondrie Bk 8 July, l.163 c.1444)
+                      This sáide Xérxẹs, be récord óff auctórs (?)                     (Lydgate FP (Bod 263) 3.2234 ?a.1439)
+
+                      And hárdi prówessẹ you tó condúctẹ and léede          (Lydgate FP 3.2348-50 c.1439)20
+                      How gód hath mádẹ this cónductẹ ánd convéye
+                                                                 (Lydgate Marg of Anjoy’s Entry, l.127, [1445])
+
+                      That ár subiéctit tó tharẹ ȝóke                                                      (Lauder 1556)21
+                      For cráftẹ ys súget v́ n-to kýnde                    (Lydgate Reson and Sensuallyte 6133, c.1408-12)
+
+
+
+                 The attestations in (4)–(7) illustrate options available to the poets; they are selective and do
+                 not preclude ﬁnal stress for the nouns, typically in rhyme position; see fn. 11. In addition
+                 to the items identiﬁed here, desert and incense have been identiﬁed as diatones for the
+                 period 1567–1700, but we have not found any testable attestations of a noun–verb
+                 contrast for them in verse before Levins (1570).22
+                    This is a disappointingly short report on pre-1550 stress-shifts as found in verse. The
+                 demise of the ‘classical’ OE alliterative tradition with its robust link between stress and
+                 alliteration, and the transition to binary foot structure in ME isosyllabic verse, make the
+                 post-1150 verse materials much less informative about word prosody. The difﬁculty of
+                 tracking the metrical behavior of noun–verb pairs in the verse is compounded by the
+                 interference of paraphonological variants in the matching of the various metrical
+                 templates to the shape of lexical units whose prosodic contour is the target of
+                 discovery. The relative regularity of the metrical templates of some pre-1400
+                 compositions, such as the septenarius of the Ormulum, or the tetrameters and
+                 pentameters of Chaucer and Gower, may allow more dependable, even quantiﬁable,
+                 parsing and testing of hypothetical prosodic contours of individual lexemes as in (6);
+                 see Duffell (2018), Duffell & Billy (2004). Yet the problems of ﬁnal -e’s elision,
+                 optional inﬂectional syncope, stem-internal and compound-internal syncope, apocope
+                 in proclitics, [ɪ, ʊ] + [ə] contraction (synizesis), persist and appear to be much more
+
+                 20
+                    Scanned as Lydgate’s Type B: an extra w after the second beat, similarly the line illustrating record, n. in Lydgate FP
+                    (Bod 263) 3.2234. For the typology of Lydgate’s lines see Myklebust (2012: ch. 7).
+                 21
+                    This takes us into the sixteenth century: W. Lauder Compend. Tractate Dewtie of Kyngis sig. B4v. All pre-Levins
+                    citations of subject, v. in the OED are either in prose, or, if in verse, the verb rhymes. We have checked all
+                    attestations in the MED, Lydgate, Bokenham, On Husbondrie.
+                 22
+                    Genesis and Exodus a.1325 (c.1250) has 7 instances of désert n. ‘a barren area’ (975, 1248, 2770, 2852, 3308,
+                    3734, 3883) versus 9 instances of desért (2737, 2867, 3296, 3352, 3562, 3646, 3744, 3845, 3879). Desert,
+                    v. ‘to abandon’ is ﬁrst attested in 1539, but the ﬁrst verse citation in the OED is Milton 1667, Paradise Lost
+                    563: Of Wisdom; she desérts thee not. For incense we found: That fyry ﬂambẹs ensénsed álway óut in Hawes,
+                    Pastime of Pleasure i. xv (1509), but no attestation of éncense, n. (# σ́ σ #) before: Offer pure íncense to so
+                    pure a shrine (Shakespeare Lucrece sig. C1v,1594).
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 010 ===
+                      542                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      text- and author-variable in the ﬁfteenth century. Two of the leading poets in the
+                      ﬁfteenth-century illustrate the hazards of any automated data-collection: Hoccleve
+                      counted ten syllables per line meticulously (Jefferson 2000), but the iambic rhythm
+                      takes a back seat; and Lydgate adds idiosyncratic patterns such as pre-sonorant
+                      disyllabic long vowels in monosyllables, e.g., gold, child, ﬁre, and schwa epenthesis in
+                      some [l] + [obstr.] coda clusters: -lk, -lf, thus follek for folk, selef for self. Both poets
+                      were ﬂuent in Latin and French, a further complication.
+                         Excluding attestations in rhyme, and discounting ME alliteration as evidence for
+                      preﬁxal stress, we have quadrupled the list of early diatonic pairs and have conﬁrmed
+                      the likelihood of continuity of the OE subpattern. Nevertheless, the results still call for
+                      a quantiﬁable foundation for positing that the ME loanwords were undergoing change
+                      in line with the native diatonic model.
+                         The sociocultural shift in the mode of versiﬁcation in ME is accompanied by rapid
+                      accrual of Latin and OF/AN vocabulary. Quantifying the French and Latin contributions
+                      to ME, Durkin (2014: 256–7) ﬁnds that 48 percent of the MED headwords and 44
+                      percent of the OED headwords ﬁrst recorded in ME are from French or Latin. The sheer
+                      bulk of new items in which the original stress assignment rests on different principles
+                      eventually impacts the entire prosodic system and complicates further the issue of
+                      inherited asymmetry of verbal versus nominal prominence. Searching for more
+                      information on the interaction of native and borrowed vocabulary, we turned to
+                      lexicographical records that might be illuminating with regard to the continuity and/or
+                      signiﬁcance of the pattern of preﬁxed diatones in OE as adumbrated in (2).
+
+                                   4 Revisiting the lexicographical records on functional stress-shifting
+                      The strongly articulated dismissal of the possibility of functional stress-shifting in late ME
+                      in Nakao (1977: 152–61) emphasizes the discontinuity of the OE pattern of preﬁxal stress
+                      and yet posits a separate ‘rule’ for stress in preﬁxed items in late ME.23 It is precisely the
+                      preﬁxed items and their relation to stress-shifting that we want to explore further. This
+                      section addresses data that may help us evaluate existing proposals on the continuity
+                      and triggers of diatonic stress-shifting for the period up to Levins’ (1570) ﬁrst
+                      contemporary records of stress.
+
+                                               4.1 Stress and preﬁxal productivity in Old English
+                      As demonstrated in section 2, testable stress-shifting in OE occurs only within a subset of
+                      the preﬁxed items. Turning to the correlation between preﬁxal stress and preﬁxal
+                      productivity in the OE lexicon, it is clear that some preﬁxes combine much more
+
+
+                      23
+                           Kastovsky (1992: 361) states that stress alternations of preﬁxed items in OE was ‘the source’ of PDE recórd, v.,
+                           récord, n. but his preﬁxation data (1992: 377–81) include only a few examples, no discussion. Minkova (2013:
+                           310–12), Online Companion (2014: 9.6.1) addresses the fuzziness of the continuity of functional stress-shifting
+                           in OE and PDE.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 011 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                        543
+
+
+
+
+                            Table 1. DOE lexical entries with and-, ed-, æt-, in-, be-, for- (types)
+                 Preﬁx              Inﬁnitive             Unsufﬁxed noun                   -end        -ing, -ung            -nes
+                 and-                   15                         41                       0               4                  8
+                 ed-                    18                         29                       5              11                  1
+                 æt-                    74                          9                       1               2                  5
+                 in-                    89                         47                       3              28                 20
+                 be-                   423                         14                      12              29                 26
+                 for-                  228                         34                      17              25                 47
+
+
+
+
+                 readily with either nominal or verbal bases. A DOE search for the stress-shifting preﬁx æt-
+                 shows 74 verb headwords versus only 9 noun headwords. A search for in- shows 89 verbs
+                 and 47 nouns. We exclude preﬁxed verb derivatives in -end, -ing/-ung, -nes – they are not
+                 used in the poetry.24
+                    The search for ‘exact’ numbers is often hampered by ambivalence on preﬁxal versus
+                 adverbial units, prompting an analytical equivalence between preﬁxed nouns and
+                 compounds (Kendall 1991: 176).25 With this preamble in mind, we collected the
+                 complete set of DOE entries for two preﬁxes, and- and ed-, which are always stressed,
+                 two stress-shifting preﬁxes, æt- and in-, and the consistently unstressed be- and for-.
+                 Table 1 presents the raw data on the correlation between preﬁxal stress and preﬁxal
+                 productivity.
+                    It is only with and- and ed- that preﬁxed nouns (and adjectives) outnumber the verbal
+                 forms and they all preserve the prosodic contour of the input, e.g. éd-lḕ an ‘reward’ (c.300
+                 tokens) versus éd-lḕ anian (8 tokens), also ge·éd-lḕ anian, ge·éd-lḕ anod, éd-lḕ aniend,
+                 ge·éd-lḕ aniend, éd-lḕ anung, ge·éd-lḕ anung. Both and- and ed- are lost very early in
+                 ME (OED, Molineaux 2012), leaving OE ánd-swaru, ánd-sawarian, ‘answer’, n., v. as
+                 the sole trace of that preﬁxal pattern.
+                    For the variable and the unstressable preﬁxes, noun preﬁxation in OE is a more limited
+                 pattern compared to sufﬁxation, both in terms of types and in terms of tokens,
+                 e.g. æt-hrīnan, v. ‘to touch’ (c.110 tokens), æt-hrine, n. ‘touch’ (17 tokens); belimpan,
+                 v. ‘pertain, occur’ (c.225 tokens) vs. belimp, n. ‘occurrence’ (11 tokens). In a lexical
+                 basis of 16,694 nouns, González Torres (2010: 23) reports that ‘sufﬁxation outnumbers
+
+
+                 24
+                    These are the only stress-shifting preﬁxes in DOE’s current version. The count for the nouns in in- excludes
+                    compounds of inwit-, innan-. Kendall (1991: 100) lists a-, for-, geond-, of-, oþ-, to-, þurh-, wiþ- in verbs as
+                    always unstressed; these preﬁxes are not attested in nouns in Beowulf.
+                 25
+                    The DOE’s marking for preﬁxes versus adverbs and prepositions is ambivalent; hyphenation is used both after
+                    preﬁxes and after the ﬁrst element of a compound. A search for be-, preﬁx, deﬁnes the entry as ‘The unstressed
+                    form of the prepositional adverb be, which forms a ﬁrst element mainly in compound verbs.’ The entry lists
+                    530 be- verbs in the database. The be- nouns are all verbal derivatives. The entry ed- ‘again-’ has ed-wīt
+                    ‘opprobrium’ hyphenated, but not edwitscipe ‘disgrace’. On attested particle–noun compounds, mostly
+                    non-monosyllabic, in ME, see Sauer (1992: 176–85).
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 012 ===
+                      544                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                                                    Figure 1. Noun–verb ratios for æt-, be-, for-, in-
+
+
+                      preﬁxation at practically a ratio of 9 to 1 [(351 derived by preﬁxation and 3,137 by
+                      sufﬁxation)].’ This prompts us to set aside the sufﬁxed noun forms in table 1. Focusing
+                      just on the noun–verb ratios for the other two types of preﬁxes, stress-shifting æt-, in-,
+                      and the unstressed be-, for-, the ratio graph in ﬁgure 1 illustrates the strong preference
+                      for preﬁxes to attach to verbal stems.
+                         The clear preference for monosyllabic preﬁxes to combine with verb stems in the
+                      Germanic lexicon creates a competing model of stress assignment in which left-edge
+                      word-alignment is overridden by the presence of a (C)V(C)- preﬁx. The numerically
+                      most productive preﬁxes in table 1, be- and for-, plus over 2,000 ge- entries in the
+                      DOE, are thus entirely outside the stress template, irrespective of the grammatical
+                      nature of the stem. This, we believe, is a plausible lexicon-based starting point for
+                      assessing the role of preﬁxes in the historical trajectory of stress assignment.26
+
+
+
+
+                      26
+                           A reviewer points out that the case would be even more convincing if we were able to supply token frequencies.
+                           Unfortunately, token frequencies are not so readily available: the DOE as of Jan 2022 is currently only A to
+                           I. LAEME (2013) has token numbers but only covers selections until c.1325. LALME (2013) has only
+                           approximate estimates of token frequency. The impossibility of matching written-to-spoken frequency is
+                           obvious. Even in contemporary corpora of transcribed speech there are signiﬁcant differences in the frequencies
+                           of very common words: Brysbaert et al. (2012) report such in a comparison of SUBTLEX-US, a corpus of
+                           mostly social interactions from ﬁlm and television, and COCA, a corpus of TV and radio talk shows and
+                           written sources.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 013 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                        545
+
+
+
+
+                               4.2 Germanic versus Latin and OF/AN preﬁxes in Middle English
+                 In ME the productivity of Germanic verbal preﬁxation continued along with the
+                 development and spread of phrasal verbs and the obsolescence of some OE preﬁxes
+                 (Lutz 1997; van Kemenade & Los 2003; Schröder 2008; Molineaux 2012; Thim
+                 2012). Some monosyllabic preﬁxes (and-, æt-, ed-, forð-, on-, or-, oð-, þurh-, ymb-)
+                 lost their productivity during ME and some Germanic preﬁxes merged with their
+                 Romance homophones: mis-, in-.27 The reduced allomorph [ǝ-] of OE ǣ-, at-, on-, or-,
+                 and Lat. ad-, en-, ends up as ‘not a real preﬁx’ (Marchand 1969: 139), though new
+                 derivatives, all in predicative use (aﬂame, alee, aswoon), continue to be coined in ME.
+                     The loss of predominantly heavy, stressable OE preﬁxes (Molineaux 2012) in ME
+                 increases the proportion of unstressable preﬁxes in the lexicon. The inseparable and
+                 always unstressed be- is very robustly productive. Petré (2006) records a steady rise in
+                 verbal be- preﬁxation up to 1350; a quick check of the timeline of the frequency of be-
+                 verbs in the OED shows a rising trajectory with both native and mixed etymology
+                 forms (begrudge, betray, bedoubt, beglue). After 1350, the numbers are doubled and
+                 even trebled, reaching a peak for 1600–50. The same OED search for verbs with for(e)-
+                 shows a peak in the 1350–1400 span for both native and mixed etymology verbs such
+                 as forchase, foreclose, forjoust. Such overlaps, as well as the density of new derivatives
+                 with unstressed Germanic preﬁxes, potentially enriches the input for noun–verb pairings
+                 both in the Germanic and in the new Latin and Romance vocabulary for the extended
+                 ME period.
+                     A further rationale for a closer look at the lexicographical information for our period
+                 comes from the database of diatonic pairs in PDE. Hotta (2015: 16) expands the earlier
+                 list in Sherman (1975) from 150 to 235. Only 3 out of the 69 pre-1800 recorded pairs
+                 (torment, cement, bombard) are not preﬁxed items. Of the remaining more recently
+                 attested pairs, only 12 are not transparently preﬁxed. The role of preﬁxes in PDE
+                 diatonic stress assignment has been recognized (Hurrell 2001), and the ‘morphology
+                 hypothesis’ (Fournier 2007; Dabouis & Fournier 2017) has been tested and conﬁrmed
+                 statistically, but pre-1550 data were not included in these studies.
+
+
+                                          4.3 OED data on preﬁxed nouns and verbs in ME
+                 Turning to the attestations of preﬁxed nouns and verbs in the OED, we present in ﬁgure 2 a
+                 graph showing the ﬁrst attestation dates that the OED cites for Latin/Romance nouns and
+                 verbs borrowed between 1200 and 1550. We chose the 1550 cut-off date, 20 years before
+                 the publication of Levins’ Manipulus vocabulorum (1570), assuming that he was
+                 recording prosodic patterns typical of his adult speech. We have ﬁltered out
+                 compounds, sufﬁxed and derived forms, as we are interested primarily in base forms;
+
+                 27
+                      The MED entry on in-, preﬁx reads: ‘The preﬁx in- loses its original sense … Perhaps because of its frequent
+                      occurrence in L & OF borrowings in which the original sense of the preﬁx had been forgotten (impugnacioun,
+                      incantacioun, etc.), in- is often a semantically empty addition to OE or ON roots (esp. verbs) used for
+                      translating foreign words in in-: … inknouen, inlouen, etc.’
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 014 ===
+                      546                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      Figure 2. Proportions and counts for borrowed Latin/Romance nouns and verbs. For visual clarity,
+                      here and in ﬁgures 3–4, x-axis labels for the date of ﬁrst attestation have been abbreviated: 1200
+                                           refers to the period 1200–50; 1250, to 1250–1300; etc.
+
+
+                      we have also attempted to ﬁlter out monosyllables,28 as they do not give any evidence for
+                      stress.
+                         A total of 8,295 words comprise this dataset. As we see, the number of non-Germanic
+                      nouns borrowed into ME vastly outnumbers that of verbs, 6,297 to 1998. We ﬁnd that
+                      about 76 percent of all borrowings are nouns – and this trend is stable, with none of the
+                      half-century periods under consideration diverging notably from this proportion. The
+                      result is congruent with an earlier study sampling MED entries A–O ﬁrst recorded
+                      1100–1500, ﬁnding that ‘the bulk of lexical borrowing from the Romance languages
+                      (more than 2/3) consists of nouns’ (Dekeyser 1986: 261); the same study also records a
+                      drop in OF nominal borrowing from 87.5 percent of all Old French (OF) loans before
+                      1200 to 61.25 percent in the latter half of the ﬁfteenth century.
+                         The picture is very different when we consider only preﬁxed items. Figure 3 displays a
+                      subset of the data presented in ﬁgure 2 where we have ﬁltered out all words which,
+                      orthographically, must be unpreﬁxed. A total of 2,173 words comprise this dataset,
+                      including 256 noun–verb pairs.29 Under these conditions, we ﬁnd that preﬁxed nouns and
+                      verbs were borrowed into ME at much more similar rates. Though even within the
+                      preﬁxed population more nouns are borrowed than verbs (1,218 to 955), there are 50-year
+                      spans where the margin of error bars for nouns and verbs do overlap, unlike in ﬁgure 2.
+
+
+
+                      28
+                         Avery basic attempt: we removed all entries with exactly one orthographic
+                         vowel.
+                      29
+                         A reviewer asked us to take this opportunity to see if there is a preferential
+                         order for pair borrowings: i.e. if nouns tend to be borrowed before or after
+                         their verb counterparts. We calculated the difference in years for when
+                         nouns were borrowed and when verbs were borrowed for our 256 pairs
+                         and found the differences were approximately normal, with a mean of 2 years
+                         toward verbs and a standard deviation of 101.6 years. We interpret this to
+                         mean there is no evidence of bias.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 015 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S       547
+
+
+
+
+                      Figure 3. Proportions and counts for preﬁxed, borrowed Latin/Romance nouns and verbs
+
+
+                    It is when we compare preﬁxed to unpreﬁxed nouns and preﬁxed to unpreﬁxed verbs
+                 that the picture becomes most clear. As shown in the bottom left panel of ﬁgure 4, preﬁxed
+                 nouns are a minority of borrowed nouns, 1,230 to 5,144 across the 350-year span, and the
+                 margin of error bars for the proportions in the upper left panel do not overlap. In contrast,
+
+
+
+
+                 Figure 4. Top, proportions and bottom, counts for preﬁxed, borrowed Latin/Romance nouns and
+                                   verbs. Nouns are presented on the left and verbs on the right.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 016 ===
+                      548                                D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      the bottom right panel shows that preﬁxed verbs are very close in number to unpreﬁxed
+                      verbs, 957 to 1,045 for the same period, and that while the margin of error bars for the ﬁrst
+                      50-year span for verbs do not overlap, this is not so for any of the following spans, as the
+                      proportion of preﬁxed verbs continuously increases.
+                         Considering the root-aligned stress pattern of ME, the righthand charts thus show that
+                      there has been consistent lexical pressure to model verbs as a sublexicon with noninitial
+                      stress. Yet, before moving onto the discussion, we wish to address the thought-provoking
+                      alternative possibility raised by a reviewer: preﬁxed verbs could have been more readily
+                      borrowed because they ﬁt the established, right-strong stress pattern while preﬁxed nouns
+                      were blocked by strong left-strong stress. The best response we can give relies on what we
+                      know of borrowing patterns in contemporary languages. Though we are not experts in this
+                      ﬁeld, we are unaware of research examining purely phonological factors that facilitate
+                      loanword adoption. That said, the idea that phonological factors may inhibit borrowing
+                      seems to us difﬁcult to defend, as, impressionistically cross-linguistically, nearly every
+                      form of phonological process has been deployed to nativize borrowed, ungrammatical
+                      structures.30
+
+
+
+                                                                        5 Discussion
+                      Our ﬁrst remit in this article was to track and record evidence for the perseverance of the
+                      inherited OE subpattern of preﬁxed noun–verb stress-shifts in ME verse. Our expectations
+                      were partially validated in section 3; we more than quadrupled the known number of
+                      individual lexical items whose placement in ME verse bears out the hypothesis of
+                      continuity, yet due to the scarcity of data, the results fall short of statistical veriﬁability.
+                      The addition of lexicographical information (ﬁgure 4) reinforces the hypothesis of
+                      continuity by documenting that, whereas borrowed nouns came into ME with a
+                      preponderance of them unpreﬁxed, preﬁxed verbs grew in proportion to unpreﬁxed
+                      verbs quite early on. Taken together, these two angles on the evidence endorse a
+                      hypothesis that, in its earliest stages, functional stress-shifting was predicated on
+                      preﬁxation, in line with the ‘morphological hypothesis’ (Fournier 2007; Dabouis et al.
+                      2014) formulated on the basis of later data. This inquiry into the early history of
+                      diatones suggests a signiﬁcant lexical pressure to model verbs as a sublexicon with
+                      noninitial stress which affects the account of the overall evolution of the prosodic
+                      system of English.
+
+
+
+
+                      30
+                           If this were so, we might expect a language such as Japanese to borrow more words that conform to its strict
+                           phonotactics than otherwise expected, separate from prestige and topic-related factors. The ideal test case would
+                           be a language in contact with multiple languages with similar levels of prestige, similar perceived cultural
+                           strengths and starkly different phonotactic constraints. The ﬁnding of such a case is unfortunately beyond the
+                           scope of this article, though our interest has been piqued.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 017 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                             549
+
+
+
+
+                    Examining stress patterns up to and including Chaucer, but not beyond, Minkova
+                 (1997) rejected earlier proposals that either the OF/AN, or the Latin stress rule had
+                 displaced the left-edge Germanic stress in pre-1400 English; similarly, Redford (2003),
+                 adding a hypothesis of ‘hovering’ stress for doublets in verse.31 McCully (2002) looks
+                 at post-1500 OED data, and McCully (2003: 355) talks of ‘the phonological crisis
+                 provided by the spectacle of incoming romance rules’, and provides arguments against
+                 what he labels ‘the catastrophe model’; his focus is on evaluating the empirical validity
+                 of competing descriptive models, but as far as source ME data go, it is still Chaucer/
+                 Chaucerian versus later, or contemporary English, as in the most recent study of
+                 historical noun–verb stress contrasts (Hofmann 2020). Should one need further
+                 justiﬁcation for our diachronic fact-ﬁnding mission, one particular recurrent statement
+                 about the chronology of prosodic change in English attempts a more explicit timeline
+                 for the stress innovations in PDE:
+                 (8) Sequence of changes in stress parameters:
+
+                         1400: Foot direction Leftward, Main stress Left (as in OE)
+                         1530: Foot direction Rightward, Main stress Left
+                         1660: Foot direction Rightward, Main stress Right
+                         (Cited from Fikkert, Dresher & Lahiri (2006: 146); also in Dresher & Lahiri (2005: 82–3),
+                         Dresher (2013: 61), Lahiri (2015: 231), Dresher & Lahiri (2015)32
+                    Obviously, any attempt to pin down cut-off dates has to draw arbitrary lines in a
+                 continuum, yet it is quite clear why the history of noun–verb contrasts and other
+                 pre-seventeenth-century developments call for a magnifying glass.33 Again, the
+                 consensus on the issue of MAIN STRESS LEFT / ALIGN-L (Root, PrWd) is that
+                 the exposure to the borrowed lexicon did not affect stress parameters before the
+                 sixteenth century. Recall also that in ME, most unpreﬁxed disyllabic loanwords
+                 followed the GSR by default, except words borrowed directly from OF in which
+                 the ultima was not a light syllable (L), [-ǝ]; these items are readily assimilated to
+                 the GSR. All Latin disyllabic words obeyed the GSR, as did trisyllables with a
+                 light penult:
+
+
+
+
+                 31
+                    Redford (2003: 173) argues that ‘the weak-strong pattern is subject to a speciﬁc condition, namely it only occurs at
+                    the edge of a phrasal domain’, and he considers the possibility of hovering stress as in ten Brink (1881) and Nakao
+                    (1977).
+                 32
+                    Dresher & Lahiri (2015) skip the 1400-stage in the evolution of stress and amend their earlier timeline, leaving the
+                    OE model in force until around 1570. Drawing on Danielsson (1948), Poldauf (1981) and others, they associate the
+                    post-1560 change in the direction of parsing to the increased borrowing of Latinate sufﬁxes such as -able/-ible,
+                    -ation, -ic(al), -ity, -ator, etc.
+                 33
+                    Compare Speyer (2009: 25) on German acquiring the Latin Stress Rule: ‘The shift towards the Latin stress occurred
+                    around the 17th century, to judge from the scarce data which is offered by the poetic scanning of the few native
+                    polysyllabic quasi-simplex words which exist in German.’
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 018 ===
+                      550                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      (9) Stress in disyllabic monomorphemic loans:
+
+
+
+
+                      With trisyllabic and longer non-Germanic words the patterns are more varied, but in
+                      that set, too, the potential of left-edge stress for underived words exists for σ́ L σ strings
+                      as in ábacus, Lúcifer, lítany, símile. Alternating stress in borrowed derivatives: crèatúre,
+                      pìlgrimáge, chìvalríe is another prosodic contour compatible with OE sufﬁxed words:
+                      bíterlī̀ ce ‘bitterly’, crísten-dṑ mes ‘of Christianity’. These structural overlaps and the fact
+                      that English continued to be the ﬁrst language of the majority of the population underlie
+                      the entrenchment of initial stress in the unpreﬁxed lexicon throughout ME.
+                         Against this background, the new component in the timeline is the persistent
+                      violation of left-alignment for a considerable portion of the lexicon: the preﬁxed verbs
+                      irrespective of etymology, plus the overwhelming majority of paired preﬁxed nouns.
+                      While preﬁxes are accommodated by extrametricality/defooting for verbs, some
+                      preﬁxes lose their extrametricality in nouns in favor of satisfying MAIN STRESS LEFT /
+                      ALIGN-L (Root, PrWd). This was already the case in OE, providing a landing site for
+                      the expansion of the diatonic model in ME. On the other hand, the new non-Germanic
+                      preﬁxed lexicon strengthens preﬁxal defooting, creating ongoing competition between
+                      the two types of stress assignment. We submit, therefore, that the trajectory of
+                      stress-shifts in (8), which leaves the OE system intact into the middle of the sixteenth
+                      century, must be elaborated.
+                         To recap, some factors that suggest a revised account of the ME ‘roots’ of functional
+                      stress-shifting are:
+                      ◊ Survival and considerable growth of OE unstressable preﬁxation (e.g. be-, for-, [ǝ-])
+                      ◊ Extrametricality of all borrowed monosyllabic preﬁxes in ME
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 019 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                               551
+
+
+
+
+                 ◊ Different noun–verb ratios for unpreﬁxed and preﬁxed loanwords
+                      Additional factors that inﬂuence the trajectory of diatonic stress-shifts are:
+
+                 ◊ Decreased transparency of borrowed monosyllabic preﬁxes, see fn. 5
+                 ◊ Persistence of left-alignment for nouns, both preﬁxed and unpreﬁxed
+                 ◊ Increased exposure to stress-attracting sufﬁxation
+                    The combination of these factors presumably leads to the weakening of the essential
+                 principle of the GSR:
+
+                 ◊ Demotion of ALIGN-L (Root, PrWd)
+                    The ranking of these factors is a matter we cannot address yet, nor do we have the
+                 numbers or methodologies that might clear up the picture (Elkins 2020; Zuraw et al.
+                 2021). Our ﬁndings nevertheless support a hypothesis that treats preﬁxes as the ﬁfth
+                 column undermining the GSR from the earliest records on. The ‘future’ of diatonic
+                 pairs is foreshadowed by the prosodic asymmetry of preﬁxed nouns and verbs in OE.
+                 In ME, only a very small subset of OE preﬁxed nouns survives, while the verbal
+                 portion of the preﬁxed lexicon gains strength.34
+                    All attempts to identify the factors for the rise and growth of diatones in English, a
+                 spectacularly unidirectional graph (Hotta 2015), take the middle of the sixteenth century
+                 as their starting point. We revisited the whole issue of how ME poets chose to position
+                 preﬁxed words and the status of these items in the ambient lexicon. The ﬁndings are
+                 thus relevant to the two central prosodic issues for ME: continuity of root-based primary
+                 stress, and continuity/evidence for variably stressed preﬁxed nouns and verbs. Going
+                 back to Sweet (1888: 887), Jespersen (1909: 174–82), Halle & Keyser (1971: 112–18),
+                 Kastovsky (1992: 361), we read that the OE model in (2) continued in Middle English.
+
+                 (10) Halle & Keyser on dating the Middle English stress-shifts:
+                      … the generalization of the Stress Retraction Rule did not at ﬁrst extend to verb-noun pairs of
+                      the permit type … it is not until 1634 that we have reliable evidence of stress retraction in the
+                      nouns of this class. (1971: 112, n. 16)35
+                      … in the earlier stage of the language, verb-noun stress doublets did not occur in the Romance
+                      portion of the vocabulary but were restricted to the Germanic portion. (1971: 118)
+
+                 Similarly, recall that Nakao’s study concludes that ‘There is little or no coherent
+                 correlation observable between preﬁxal stress and lexical categories’ (1977: 91).36 Our
+                 renewed, closer look at relevant pre-seventeenth-century data highlights previously
+
+                 34
+                    We agree with Fournier’s (2007: 226) statement on preﬁxed non-nouns: ‘If the preﬁxed part is an independent unit,
+                    its pronunciation is not changed. We contend that these historical preﬁxes are still part of the synchronic system of
+                    English.’
+                 35
+                    Their Stress Retraction Rule posited for OE and restricted to nouns (1971: 90), ‘retracts the stress from the last, or
+                    only, syllable of the stem to the ﬁrst syllable of the word’. Sufﬁxation does not affect the rule’s operation.
+                 36
+                    Nakao (1984: 99) acknowledges that preﬁxes ‘merit consideration’ in the evolution of stress, but only as secondary
+                    to sufﬁxes, and without further discussion.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 020 ===
+                      552                                D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      ignored morphological and lexical factors in play throughout the history of the language.
+                      This leads us to suggest that the diatonic pattern was never interrupted, though the metrical
+                      evidential basis for the assumption was found to be slim, slight and slender. That part of
+                      the data remains disappointingly unobtainable.
+                         Nevertheless, the newly documented high rates of verbal preﬁxation in the lexicons
+                      of OE and ME reveal a fresh angle on the role of preﬁxed verbs: they have been
+                      destabilizing ALIGN-L (Root, PrWd) from OE on. At the same time, while newly
+                      borrowed, preﬁxed nouns did enter the ME lexicon, the majority of borrowed nouns
+                      were not preﬁxed and so immediately or near-immediately conformed to the native
+                      stress pattern.
+                         This is in partial agreement with Kiparsky (2016: 467) who comments on the various
+                      approaches to the growth of diatones, stating: ‘This is obviously not sound change but
+                      the analogical spread of a morphological stress rule within the lexicon.’ Is there a
+                      phonological component? Kelly (1988: 213) noted the relevance of stem codas for
+                      stress contrasts in noun–verb homographs in PDE, and Minkova (1997) treats
+                      ME nouns and verbs separately on account of the lag-time in inﬂectional loss in
+                      verbs, compared to nouns, an observation bolstered by subsequent digging into
+                      the prevalence of alveolar codas in verb loans exhibiting the shift (see also
+                      Sonderegger 2010/2016: 415; Hotta 2015). It is possible that phonological factors
+                      were involved in the non-survival of earlier diatonic pairs as in envy, exile,
+                      council cited in (5). Thus, we are not ready to reject the ‘sound change’ aspect
+                      of the early development until we have more data on the phonological details of
+                      the material in ﬁgures 2–4.
+
+                                                              6 Implications and prospects
+                      Recent research that looks into ME verse evidence for the noun–verb prosodic asymmetry
+                      (Hofmann 2020) seeks to establish the effect of rhythmic context for the attested patterns
+                      as found in Chaucer. Hofmann’s tentative conclusion is that rhythmic context is an
+                      additional factor in the behavior of verbs and nouns. However, he does note (2020:
+                      480) that other conditioning factors, including derivational morphology, have not been
+                      addressed, singling out the prosodic status of preﬁxes as one of those possible or
+                      probable aspects of the reconstruction that has not been dealt with. We concur, and this
+                      article endeavors to address preﬁxation and its interaction with prosody, meter and the
+                      structure of the lexicon.
+                         Our ﬁndings here are not as complete as we would like. Consider Molineaux’s (2012)
+                      argument that the heavy, stressable, monosyllabic preﬁxes of OE were lost in the transition
+                      to ME, motivated by stress-clash avoidance.37 The extent to which this avoidance is a
+                      factor in the accommodation and later history of borrowed preﬁxes is unclear. The
+
+                      37
+                           Molineaux (2012) argues for a prosodic component in the account of the loss of native preﬁxation in ME verbs: ‘In
+                           this new situation, words with heavy monosyllabic preﬁxes displayed an undesirable succession of stressed
+                           syllables at the preﬁx–root boundary, which ultimately brought about preﬁx loss and lexicalisation.’ Preﬁxal
+                           weight is isolated as a phonological factor in Nakao (1977: 182), who states: ‘We have seen that LME word
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 021 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S                             553
+
+
+
+
+                 majority of preﬁxed borrowed words (1200–1550) have heavy preﬁxes, with already
+                 reduced OF/AN de-, pre-, pro-, re- as our only exceptions. However, words with these
+                 light preﬁxes comprise a large portion of our data, which would align them with
+                 the robustly productive and unstressable a-, be-, for- in the native input. Moreover, the
+                 issue of preﬁx weight is not fully addressable without considering the weight of the
+                 ﬁrst post-preﬁxal syllable and the composition of its onset. This involves future work
+                 on the creation of a database that includes the OED’s IPA transcriptions; see Smith (2016).
+                    The roots and causes of the spread of stress-shifting in sixteenth–twenty-ﬁrst-century
+                 vocabulary remain a troubled topic. Although the focus of this study is on continuous or
+                 newly emerging functional prosodic contrasts as in présent, n., adj. – presént, v., both the
+                 methodology and the results bear directly on mapping the overall evolution of stress
+                 patterns in earlier English. The correlation between morphological structure and
+                 diatonic shifts in homographic pairs is addressed here only on the level of word stress.
+                 The extent to which the assumed presence of diatones in OE and ME correlates with
+                 the general prosody of the language with respect to higher-level prominence for
+                 different word classes is not a straightforward matter either. In OE, variable
+                 verb-placement in different types of clauses (VS, VO, SV, OV) may interact with right
+                 prominent phrasal stress, and the type of verb (auxiliary, pre-modal, or full) also affects
+                 its prosodic prominence. Thus, despite the long tradition of citing preﬁxed
+                 category-speciﬁc shifts in OE (Campbell 1959; Hogg 1992; Lass 1994) for the variably
+                 stressed preﬁxes, further discussion of the preﬁxation condition for # σ́ σ- in nouns and
+                 adjectives versus # σ σ́ - in ﬁnite verbs has to take into account the well-documented
+                 differential behavior of unpreﬁxed verbs and nouns/adjectives as in gripe ‘grip, sword’
+                 vs. grīpeð ‘grasps’ or cearu ‘care, sorrow’ vs. cearað ‘cares, is anxious’:
+                 (11) Variably stressed noun–verb unpreﬁxed pairs in OE verse:
+                        oððe gripe mēces, / oððe gāres ﬂiht,                                       (Beo 1765)
+                        mōdwlonc meowle, / þæt heo on mec grīpeð                                   (Riddle 25.7)
+                        cūþe folme; / cearu wæs genīwod                                            (Beo 1303)
+                        longsumne lōf; / nā ymb his līf cearað                                     (Beo 1536)
+                    The pattern of non-alliteration of unpreﬁxed verbs illustrated in (11) is not categorical;
+                 in Beowulf, 23.6 percent of the ﬁnite verbs alliterate (Getty 2002: 62).38 Finite verbs are
+                 treated differently verse-initially and verse-ﬁnally, and the main alliterative templates
+
+                    stress is by and large predictable from underlying segmental composition of words, without being sensitive to the
+                    distinction of the categories that they belong to.’
+                 38
+                    Russom (2022) discusses the relationship between early OE V-ﬁnal syntax, which favors ﬁnite verbs line-ﬁnally in
+                    the meter of Beowulf. In that position ﬁnite verbs other than be and auxiliaries are metrically prominent, but less
+                    prominent than earlier in the line. Also, the semantic nature of the verb and its frequency have an effect on the
+                    prominence of the ﬁnite verb (see also Getty 2002; Los et al. 2012; Grifﬁth 2016). Getty (2000) expresses a
+                    very skeptical view of the verse-based assumption of ‘weaker’ prominence for lexical ﬁnite verbs in OE: ‘one
+                    is left having to say that ﬁnite verbs are stressless except when they aren’t’ (2000: 47); ‘the idea that the stress
+                    properties of ﬁnite verbs, especially robustly lexical verbs … can be swept aside is suspect, if not altogether
+                    bafﬂing’ (2000: 48). How this can be tested in ME – maybe with monosyllabic pairs – is a separate issue which
+                    deserves to be recorded under ‘future directions’.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 022 ===
+                      554                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      (a b : a x, or a a : a x) preclude correspondence between alliteration and metrical
+                      prominence at the end of the b-verse. Again, the verbs’ variable behavior in verse
+                      depends on their position in the clause; initial, medial, ﬁnal; on the nature of adjacent
+                      lexical items in the verse; and not least, on the ‘poetic register’, a topic of much
+                      attention and disagreement; see Bliss (1967), Russom (1987: 33–8, 2022), Kendall
+                      (1991: 26–36), Los (2015: 226–9), Grifﬁth (2016), Donoghue (2018: 143–51) and
+                      references there. For PDE, Kelly & Bock (1988) turn to metrical evidence to
+                      corroborate their experimental ﬁndings. They report that the alignment of words with
+                      strong beats depends on grammatical class: monosyllabic nouns ﬁll strong metrical
+                      positions 94 percent of the time in samples of Milton’s and Shakespeare’s verse, while
+                      verbs ﬁll such positions only 76 percent of the time.
+                         How these questions play out in ME is still unclear; they warrant a separate treatment. In
+                      this connection we note that experimental research on the prosodic asymmetry in PDE
+                      (Kelly & Bock 1988; Guion et al. 2003, conﬁrmed in Smith 2016) ﬁnds that disyllabic
+                      nouns are signiﬁcantly more often trochaic, while disyllabic verbs are iambic.
+                         Finally, the role of lexical frequency in the earlier history of functional stress-shifting
+                      also remains murky. Phillips (2006: 121) found that ‘low entrenchment’ of the new,
+                      low-frequency homographic words allowed nouns to get initial stress – they were treated
+                      as ‘new’ words. Hotta (2015) ﬁnds the frequency effect ‘difﬁcult to evaluate’, and
+                      Sonderegger (2010/2016) makes a convincing case for combining the frequency factor
+                      with the structural factor of preﬁxation in the account of the smaller diatonic database in
+                      Sherman (1975). How these positions jibe with the high productivity and token density
+                      of items with inherited unstressable preﬁxes (be-, for-, a-) has not yet been elucidated.
+                      Further, current research suggests that separate lexical entries are maintained for not only
+                      phonologically identical content words (Gahl 2008) and inﬂectional morphemes (Plag
+                      et al. 2017), but also homophonous, homographic, zero-derived noun–verb pairs
+                      (Lohmann 2018, 2020a, 2020b). Though we will likely never know if the durational
+                      correlations discussed in these articles can be projected back to OE and ME, it is clear
+                      that lexical frequency should not be ruled out as a factor without cause.
+
+                      Authors’ addresses:
+                      Department of English
+                      University of California, Los Angeles
+                      Renée & David Kaplan Hall
+                      Los Angeles, CA 90095–1530
+                      USA
+                      minkova@humnet.ucla.edu
+
+                      Department of Linguistics
+                      University of California, Los Angeles
+                      3125 Campbell Hall
+                      Los Angeles, CA 90095-1543
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 023 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S        555
+
+
+
+
+                 USA
+                 zlzhou@ucla.edu
+
+
+                                                                     References
+                 Berg, Thomas. 1999. Stress variation in British and American English. World Englishes 18(2),
+                   123–43.
+                 Berg, Thomas. 2000. The position of adjectives on the noun–verb continuum. English Language
+                   and Linguistics 4, 269–93.
+                 Bliss, Alastair J. 1967. The metre of ‘Beowulf’. Revised edn. Oxford: Blackwell.
+                 Brysbaert, Marc, Boris New & Emmanuel Keuleers. 2012. Adding part-of-speech information to
+                   the SUBTLEX-US word frequencies. Behavior Research Methods 44(4), 991–7.
+                 Burzio, Luigi. 1994. Principles of English stress. Cambridge: Cambridge University Press.
+                 Campbell, Alistair. 1959. Old English grammar. Oxford: Clarendon Press.
+                 Dabouis Quentin, Jean-Michel Fournier & Marjolaine Martin. 2014. Testing parameters for stress
+                   placement: The case of dissyllabic preﬁxed verb/noun pairs. Paper presented at the Old World
+                   Conference in Phonology, January 2014, Leiden. https://hal.archives-ouvertes.fr/hal-01346865/
+                   document
+                 Dabouis, Quentin & Jean-Michel Fournier. 2017. The stress pattern of English verbs. Paper
+                   presented at the Thirteenth PAC (Phonologie de l’Anglais Contemporain) Conference,
+                   Université Paris Nanterre, 28–30 September 2017.
+                 Danielsson, Bror Axel. 1948. Studies on the accentuation of polysyllabic Latin, Greek, and
+                   Romance loan-words in English, etc. Stockholm: Almqvist & Wiksell.
+                 Dekeyser, Xavier. 1986. Romance loans in Middle English: A reassessment. In D. Kastovsky &
+                   A. Szwedek (eds.), Linguistics across historical and geographical boundaries, 253–65. Berlin:
+                   Mouton de Gruyter.
+                 Dobson, Eric. 1957. English pronunciation 1500-1700. Oxford: Oxford University Press.
+                 DOE: The Dictionary of Old English: A to I online. 2018. https://tapor.library.utoronto.ca/doe/
+                 Donoghue, Daniel. 2018. How the Anglo-Saxons read their poems. Philadelphia: University of
+                   Pennsylvania Press.
+                 Dresher, B. Elan. 2013. The inﬂuence of loanwords on Norwegian and English stress. Nordlyd
+                   40(1), 55–65.
+                 Dresher, B. Elan & Aditi Lahiri. 2005. Main stress left in Early Middle English. In
+                   Michael Fortescue, Eva Skafte Jensen, Jens Erik Mogensen & Lene Schøsler (eds.), Historical
+                   Linguistics 2003. Selected papers from the 16th International Conference on Historical
+                   Linguistics, Copenhagen 11–15 August 2003, 75–85. Amsterdam: John Benjamins.
+                 Dresher, B. Elan & Aditi Lahiri. 2015. Romance loanwords and stress-shift in English: A
+                   quantitative approach. Talk presented at the Second Edinburgh Symposium on Historical
+                   Phonology, University of Edinburgh, 3–4 December 2015.
+                 Duffell, Martin. 2018. Chaucer’s verse art in its European context. Tempe, AZ: Arizona Center for
+                   Medieval & Renaissance Studies.
+                 Duffell Martin J. & Dominique Billy. 2004. From decasyllable to pentameter: Gower’s
+                   contribution to English metrics. The Chaucer Review 38(4), 383–400.
+                 Durkin, Philip. 2014. Borrowed words: A history of loanwords in English. Oxford: Oxford
+                   University Press.
+                 Elkins, Noah Eli. 2020. Preﬁx independence: Typology and theory. PhD dissertation, University of
+                   California, Los Angeles. ProQuest Dissertations Publishing 28152198.
+                 Fikkert, Paula. 2003. The prosodic structure of preﬁxed words in the history of West Germanic. In
+                   Paula Fikkert & Haike Jacobs (eds.), Development in prosodic systems, 315-48. Berlin: Mouton
+                   de Gruyter.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 024 ===
+                      556                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      Fikkert, Paula, B., Elan Dresher & Aditi Lahiri. 2006. Prosodic preferences: From Old English to
+                        Early Modern English. In Ans van Kemenade & Bettelou Los (eds.), The handbook of the
+                        history of English, 125-50. Oxford: Blackwell.
+                      Fournier, Jean-Michel. 2007. From a Latin syllable-driven stress system to a Romance versus
+                        Germanic morphology-driven dynamics: In honour of Lionel Guierre. Language Sciences 29,
+                        218–36.
+                      Gahl, Susanne. 2008. Time and thyme are not homophones: The effect of lemma frequency on
+                        word durations in spontaneous speech. Language 84(3), 474–96.
+                      Getty, Michael. 2000. Differences in the metrical behavior of Old English ﬁnite verbs: Evidence for
+                        grammaticalization. English Language and Linguistics 4(1), 37–67.
+                      Getty, Michael 2002. The metre of Beowulf: A constraint-based approach. Berlin: Mouton de
+                        Gruyter.
+                      González Torres, Elisa. 2010. The bases of derivation of Old English afﬁxed nouns: Status and
+                        category. Studia Anglica Posnaniensia 46(2), 21–33.
+                      Grifﬁth, Mark. 2016. Alliterating ﬁnite verbs and the origin of rank in Old English poetry.
+                        In Leonard Neidorf, Rafael Pascual & Tom Shippey (eds.), Old English philology: Studies in
+                        honour of R. D. Fulk, 103–21. Cambridge: D. S. Brewer.
+                      Guion, Susan G., J. J. Clark, Tetsuo Harada & Ratree P. Wayland. 2003. Factors affecting stress
+                        placement for English nonwords include syllabic structure, lexical class, and stress patterns of
+                        phonologically similar words. Language and Speech 46, 403–26.
+                      Halle, Morris & Samuel J. Keyser 1971. English stress: Its form, its growth, and its role in verse.
+                        New York: Harper and Row.
+                      Hofmann, Klaus. 2020. Stress in real time: The noun–verb stress contrast and the rhythmic context
+                        hypothesis in the history of English. Journal of Historical Linguistics 10(3), 452–86.
+                      Hogg, Richard. 1992a. A grammar of Old English, vol. I: Phonology. Oxford: Blackwell.
+                      Hogg, Richard. 1992b. Phonology and morphology. In Hogg (ed.), 67–168.
+                      Hogg, Richard (ed.). 1992c. The Cambridge history of the English language, vol. I: The
+                        beginnings to 1066, 67–168. Cambridge: Cambridge University Press.
+                      Hotta, Ryuichi. 2015. A phonological motivation behind the diatonic stress-shift in Modern
+                        English. In Dag T. T. Haug (ed.), Historical linguistics: Selected papers from the 21st
+                        International Conference on Historical Linguistics, 3–18. Amsterdam: John Benjamins.
+                      Hurrell, Esther. 2001. The morphology and phonology of English noun–verb stress doublets. PhD
+                        dissertation, Edinburgh University.
+                      Jefferson, Judith A. 2000. The Hoccleve holographs and Hoccleve’s metrical practice: More than
+                        counting syllables? Parergon 18(1), 203–26.
+                      Jespersen, Otto. 1909. A modern English grammar on historical principles. Part I: Sounds and
+                        spellings. Heidelberg: Carl Winter.
+                      Kastovsky, Dieter. 1992. Semantics and vocabulary. In Hogg (ed.), 290–408.
+                      Kelly, Michael H. 1988. Rhythmic alternation. Cognition 30, 107–37.
+                      Kelly, Michael H. & J. Kathryn Bock. 1988. Stress in time. Journal of Experimental Psychology
+                        14(3), 389–403.
+                      Kemenade, Ans van & Bettelou Los. 2003. Particles and preﬁxes in Dutch and English. In
+                        Yearbook of Morphology 2003, 79–117. Dordrecht: Springer.
+                      Kendall, Calvin B. 1991. The metrical grammar of ‘Beowulf’. Cambridge: Cambridge University
+                        Press.
+                      Kiparsky, Paul. 1977. The rhythmic structure of English verse. Linguistic Inquiry 8(2), 189–247.
+                      Kiparsky, Paul. 2016. Labov, sound change, and phonological theory. Journal of Sociolinguistics
+                        20(4), 464–88.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 025 ===
+                                    E AR LY E V I D EN C E FO R FU N C TI ON A L S T RE S S ‐S HI FT S           557
+
+
+
+
+                 Lahiri, Aditi. 2015. Change in word prosody: Stress and quantity. In Patrick Honeybone &
+                   Joseph Salmons (eds.), The handbook of historical phonology, 219–44. Oxford: Oxford
+                   University Press.
+                 Lass, Roger 1992. Phonology and morphology. In Norman Blake (ed.), The Cambridge history of
+                   the English language, vol. II: 1066–1476, 23–154. Cambridge: Cambridge University Press.
+                 Lass, Roger. 1994. Old English: A historical linguistic companion. Cambridge: Cambridge
+                   University Press
+                 Lass, Roger (ed.), 1999. Cambridge history of the English language, vol. III: 1476–1776.
+                   Cambridge: Cambridge University Press.
+                 LAEME. 2013. A Linguistic Atlas of Early Middle English, 1150–1325, version 3.2, compiled by
+                   Margaret Laing. www.lel.ed.ac.uk/ihd/laeme2/laeme2.html
+                 Levins, Peter. 1570. Manipulus vocabulorum: A rhyming dictionary of the English language.
+                   Reissued 1867 (EETS o.s. 27). London: Trübner in Komm.
+                 Lohmann, Arne. 2018. Cut (n) and cut (v) are not homophones: Lemma frequency affects the
+                   duration of noun–verb conversion pairs. Journal of Linguistics, 54(4), 753–77.
+                 Lohmann, Arne. 2020a. Nouns and verbs in the speech signal: Are there phonetic correlates of
+                   grammatical category? Linguistics 58(6), 1877–911.
+                 Lohmann, Arne. 2020b. No acoustic correlates of grammatical class – Failure to replicate Sereno &
+                   Jongman (1995). Phonetica. https://doi.org/10.1159/000506138
+                 Los, Bettelou. 2015. Historical syntax of English. Edinburgh: Edinburgh University Press.
+                 Los, Bettelou, Corrien Blom, Geert Booij, Marion Elenbaas & Ans Van Kemenade. 2012.
+                   Morphosyntactic change: A comparative study of particles and preﬁxes. Cambridge: Cambridge
+                   University Press.
+                 Lutz, Angelika. 1997. Sound change, word formation and the lexicon: The history of the English
+                   preﬁx verbs. English Studies 3, 258–90.
+                 Marchand, Hans. 1969. The categories and types of present-day English word-formation, 2nd edn.
+                   Munich: C. H. Beck.
+                 McCully, Christopher B. 2002. Exaptation and English stress. Language Sciences 24(3/4), 323–44.
+                 McCully, Christopher B. 2003. Left-hand word-stress in the history of English. In
+                   Paula Fikkert & Haike Jacobs (eds.), Development in prosodic systems, 349–94 Berlin: De
+                   Gruyter Mouton.
+                 Minkova, Donka. 1997. Constraint ranking in Middle English stress-shifting. English Language
+                   and Linguistics 1(1), 135–75.
+                 Minkova, Donka. 2008. Preﬁxation and stress in Old English. Word Structure 1, 21–52.
+                 Minkova, Donka. 2009. Diagnostics of metricality in Middle English alliterative verse. In
+                   Judith Jefferson & Ad Putter (eds.), Approaches to the metres of alliterative verse, 77–113.
+                   Leeds: Leeds Texts and Monographs.
+                 Minkova, Donka. 2013. A historical phonology of English. Online Companion (2014) at https://
+                   edinburghuniversitypress.com/pub/media/resources/Historical_Phonology_of_English_-_Online_
+                   Companion.pdf. Edinburgh University Press.
+                 Molineaux, Benjamin. J. 2012. Prosodically conditioned morphological change: Preservation vs
+                   loss in Early English preﬁxes. English Language and Linguistics 16(3), 427–58.
+                 Myklebust, Nicholas. 2012. Misreading English meter: 1400–1514. PhD dissertation, University
+                   of Texas, Austin.
+                 Nakao, Toshio. 1977. The prosodic phonology of late Middle English. Tokyo: Shinozaki Shorin.
+                 Nakao, Toshio. 1984. On late Middle English word stress. In N. F. Blake & Charles Jones (eds.),
+                   English historical linguistics: Studies in development, 87–100. Shefﬁeld: University of
+                   Shefﬁeld.
+                 Petré, Peter. 2006. The preﬁx be-/bi- as a marker of verbs of deception in late Old and early Middle
+                   English. BELL: Belgian Journal of English Language and Literatures 4, 109–27.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press
+
+=== PDF sheet 026 ===
+                      558                               D O N KA M I N KOVA A ND Z .L . ZH O U
+
+
+
+
+                      Phillips, Betty S. 1998. Word frequency and lexical diffusion in English stress-shifts. In
+                        Richard Hogg & Linda van Bergen (eds.), Germanic linguistics, 223–32. Amsterdam: John
+                        Benjamins.
+                      Phillips, Betty. 2006. Word frequency and lexical diffusion. New York: Palgrave.
+                      Plag, Ingo, Julia Homann & Gero Kunter. 2017. Homophony and morphology: The acoustics of
+                        word-ﬁnal S in English. Journal of Linguistics 53(1), 181–216.
+                      Poldauf, Ivan. 1981. The genesis of terminational stress in English. Lingua 54(4), 335–59.
+                      Redford, Michael. 2003. English stress doubles: New evidence from Chaucer’s meter. In
+                        Paula Fikkert & Haike Jacobs (eds.), Development in prosodic systems (Studies in Generative
+                        Grammar 58), 159–96. Berlin: Mouton de Gruyter.
+                      Russom, Geoffrey. 1987. Old English meter and linguistic theory. Cambridge: Cambridge
+                        University Press.
+                      Russom, Geoffrey. 2022. Metrical evidence for the evolution of English syntax. English Language
+                        and Linguistics 26(3), 583–601.
+                      Sauer, Hans. 1992. Nominalkomposita im Frühmittelenglischen. Tübingen: Max Niemeyer
+                        Verlag.
+                      Schlüter, Julia. 2005. Rhythmic grammar: The inﬂuence of rhythm on grammatical variation and
+                        change in English. Berlin: Walter de Gruyter.
+                      Schmid, Helmut. 2019. Deep learning-based morphological taggers and lemmatizers for
+                        annotating historical texts. DATeCH: Proceedings of the 3rd International Conference on Digital
+                        Access to Textual Cultural Heritage. May 2019, Brussels, Belgium, 133–7. New York:
+                        Association for Computing Machinery.
+                      Schröder, Anne. 2008. Investigating the morphological productivity of verbal preﬁxation in the
+                        history of English. AAA: Arbeiten aus Anglistik und Amerikanistik, 47–69.
+                      Selkirk, Elisabeth O. 1980. The role of prosodic categories in English word stress. Linguistic
+                        Inquiry 11(3), 563–605.
+                      Sherman, Donald. 1975. Noun–verb stress alternation: An example of the lexical diffusion of
+                        sound chance in English. Linguistics 13(159), 43–72.
+                      Smith, Jennifer L. 2016. Segmental noun/verb phonotactic differences are productive too. In
+                        Patrick Farrell (ed.), Proceedings of the Linguistic Society of America, vol. 1, art. 3717.
+                        Washington, DC: LSA. http://journals.linguisticsociety.org/proceedings/index.php/PLSA/
+                        article/view/3717
+                      Sonderegger, Morgan. 2010/2016. Testing for frequency and structural effects in an English
+                        stress-shift. Proceedings of the 36th Annual Meeting of the Berkeley Linguistics Society, 411–25.
+                      Sonderegger, Morgan & Partha Niyogi. 2013. Variation and change in English noun/verb pair
+                        stress: Data, dynamical systems models, and their interaction. In Alan C. L. Yu (ed.), Origins of
+                        sound patterns: Approaches to phonologization, 262–84. Oxford: Oxford University Press.
+                      Speyer, Augustin. 2009. On the change of word stress in the history of German. Beiträge zur
+                        Geschichte der deutschen Sprache und Literatur 131(3), 413–41.
+                      Sweet, Henry. 1888. A history of English sounds from the earliest period: With full word-lists.
+                        Oxford: Clarendon Press.
+                      Ten Brink, Bernhardt. 1881. Chaucers Sprache und Verskunst. Leipzig: T. O. Weigel.
+                      Thim, Stefan. 2012. Phrasal verbs: The English verb-particle construction and its history (Topics
+                        in English linguistics 78). Berlin: Walter de Gruyter.
+                      Zuraw, Kie, Isabelle Lin, Meng Yang & Sharon Peperkamp. 2021. Competition between whole-word
+                        and decomposed representations of English preﬁxed words. Morphology 31, 201–37.
+
+
+
+
+https://doi.org/10.1017/S1360674322000144 Published online by Cambridge University Press

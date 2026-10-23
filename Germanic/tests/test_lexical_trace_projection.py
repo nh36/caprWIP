@@ -73,6 +73,19 @@ class LexicalProjectionTests(unittest.TestCase):
             )
         self.assertEqual(cached, scalar)
 
+    def test_annotation_only_steps_are_not_published_as_vowel_changes(self):
+        stages = [("First", "first.bin"), ("Context", "context.bin"), ("Fronting", "front.bin")]
+        with patch.object(full_report, "STAGES", stages):
+            traced = full_report.trace_lexeme("ga", Path("."), {
+                "first.bin": ["*g*a"], "context.bin": ["*ᶠ*g*a"],
+                "front.bin": ["*ᶠ*g*æ"],
+            })
+        self.assertEqual(traced, [
+            ("First", ["*g*a"]),
+            ("Context [no-change]", ["*ᶠ*g*a"]),
+            ("Fronting", ["*ᶠ*g*æ"]),
+        ])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,3607 @@
+SOURCE: berg_2014_old_english_unstressed_vowels
+ACQUIRED: 2026-10-23
+ORIGINAL: https://hdl.handle.net/10852/39907
+VERSION: 104 sheets; May2014 thesis; printed p.60 = sheet72; local private-professional copy; public redistribution permission pending
+PDF SHA256: 9c5d105f8e3373ad2205e7edc3fa10de62e6e54a956e151bd08380880a8a0d77
+METHOD: pdftotext -layout, all sheets retained. PDF sheet markers are not printed folios.
+GLYPH REPAIRS: {'U+001B': {'replacement': 'ff', 'count': 91}, 'U+001C': {'replacement': 'fi', 'count': 181}, 'U+001D': {'replacement': 'fl', 'count': 98}, 'U+001E': {'replacement': 'ffi', 'count': 28}, 'U+0015': {'replacement': '–', 'count': 48}, 'U+0016': {'replacement': '—', 'count': 105}, 'U+0010': {'replacement': '“', 'count': 109}, 'U+0011': {'replacement': '”', 'count': 110}}
+LIMIT: isolated U+0001/U+0019 font artifacts remain; decisive linguistic signs must be checked against page images.
+
+
+=== PDF sheet 001 ===
+Old English
+Unstressed Vowels:
+Dialects and Diachrony
+Joakim P. Berg
+Master’s Thesis Spring 2014
+
+=== PDF sheet 002 ===
+
+=== PDF sheet 003 ===
+Old English Unstressed Vowels:
+
+
+        Dialects and Diachrony
+
+
+
+
+                     Joakim P. Berg
+
+
+
+                         May 2014
+
+
+
+
+Thesis submitted to the Department of Literature, Area Studies and
+ European Languages, University of Oslo, in partial fullment of the
+          requirements for the degree of Master of Arts.
+               This thesis is worth 60 ECTS credits.
+
+=== PDF sheet 004 ===
+                             ⃝ 2014 – Joakim P. Berg
+                             c
+Old English Unstressed Vowels: Dialects and Diachrony
+                              http://www.duo.uio.no/
+        Printed by Reprosentralen, Universitetet i Oslo
+
+=== PDF sheet 005 ===
+                                                                          iii
+
+
+The Old English Unstressed Vowels:
+Dialects and Diachrony
+   Abstract. Master's thesis, submitted spring 2014
+   The primary aim of this thesis has been to investigate the de-
+   velopment of unstressed vowels from early Old English and into
+   the late Old English period, and to tie the observed changes to
+   the later merger of unstressed vowels in English to [@].
+       Texts from the four principal dialect areas of Old English are
+   examined and compared, drawing where possible on previous
+   scholarship. Although it must be noted that the process of re-
+   duction in unstressed syllables is an inherited linguistic trait ob-
+   servable in cognate languages, two intralinguistic explanations
+   for the phonological changes seen in Old English are offered in
+   addition to a discussion on the effects of language contact.
+       The thesis finds that unstressed vowels in some pretonic suf-
+   fixes behave differently from vowels in grammatical endings, and
+   that while front vowels underwent an earlier merger in the north-
+   ern dialects, the back vowels appear to have merged earlier in
+   the southern areas.
+
+=== PDF sheet 006 ===
+
+=== PDF sheet 007 ===
+                                                                      v
+
+
+Acknowledgements
+   In writing this thesis, I was reminded on every page of the
+   enormous benefit I have had of discussing language with friends
+   and colleagues at the universities of Oslo and Vienna. I am
+   reminded of an anonymous byword: “if you are the smartest
+   person in the room, you are in the wrong room”.
+       I find myself rarely in the wrong room, and have benefited
+   in particular from the input of Sverre S. Johnsen and Michael
+   Frotscher as well as Kjetil E. Albertsen, whose comments on my
+   drafts left the text in a much improved state. My supervisor
+   Michael Benskin finds the weaknesses of every flawed argument;
+   any inadequacies which remain are mine alone.
+       I am grateful to my parents who taught me how to play with
+   language, and whose double holiday regimes introduced me to
+   the world and the usefulness of polyglossia.
+       Finally, I am thankful to the Department of Literature, Area
+   Studies and European Languages at the University of Oslo for
+   generously financing my attendance at the FGLS conference at
+   Newnham College, Cambridge this January; to the Erasmus
+   Programme for facilitating my studies at the University of Vi-
+   enna for one year; and to the Norwegian Institute of Palaeo-
+   graphy and Historical Philology (F) for granting me an MA
+   scholarship, enabling me to focus on the present work.
+
+=== PDF sheet 008 ===
+vi
+
+
+
+
+Abbreviations used
+ CP                =   The OE Cura Pastoralis
+ e (as in “eWS”)   =   early
+ Gk.               =   Ancient Greek
+ Gmc.              =   Germanic
+ Kt.               =   Kentish
+ l (as in “lWS”)   =   late
+ ME                =   Middle English
+ MHG               =   Middle High German
+ ModE              =   Modern English
+ ModG              =   Modern German
+ MS                =   manuscript
+ OF                =   Old Frisian
+ OE                =   Old English
+ OEG               =   Old English Grammar, Campbell (1969).
+ OET               =   Oldest English Texts, Sweet (1885).
+ OHG               =   Old High German
+ OI                =   Old Icelandic
+ OS                =   Old Saxon
+ PIE               =   Proto-Indo-European
+ St ppl.           =   Strong perfect (past) participle
+ St pret pl.       =   Strong preterite plural
+ VP                =   The Vespasian Psalter gloss
+ WGmc.             =   West Germanic
+ WS                =   West Saxon
+Such abbreviations as are conventional, such as sg. for “singular” and “acc.”
+for accusative, will also be used. Charters will be referred to by the numbers
+assigned to them in OET.
+
+=== PDF sheet 009 ===
+Contents
+
+        Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    iii
+        Acknowledgements . . . . . . . . . . . . . . . . . . . . . . .         v
+        Abbreviations used . . . . . . . . . . . . . . . . . . . . . . .      vi
+
+1 Introduction                                                                 1
+  1.1   Method . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       2
+        1.1.1   Definitions . . . . . . . . . . . . . . . . . . . . . . . .     4
+        1.1.2   Dialects and Geography . . . . . . . . . . . . . . . .         5
+        1.1.3   Selection of texts . . . . . . . . . . . . . . . . . . . .     7
+        1.1.4   The dating of texts . . . . . . . . . . . . . . . . . . .      9
+        1.1.5   The written representation of speech . . . . . . . . .         9
+        1.1.6   Grammatical forms . . . . . . . . . . . . . . . . . . .       13
+
+2 Kentish                                                                     15
+  2.1   The Old Kentish data      . . . . . . . . . . . . . . . . . . . . .   17
+        2.1.1   Texts . . . . . . . . . . . . . . . . . . . . . . . . . . .   17
+        2.1.2   Unstressed vowels in frequently found forms . . . . .         19
+        2.1.3   Discussion of less frequent forms . . . . . . . . . . . .     19
+  2.2   Tendencies in Old Kentish . . . . . . . . . . . . . . . . . . .       23
+  2.3   Later developments in Kentish . . . . . . . . . . . . . . . . .       24
+
+3 Mercian                                                                     27
+  3.1   The Old Mercian data . . . . . . . . . . . . . . . . . . . . .        27
+        3.1.1   Texts . . . . . . . . . . . . . . . . . . . . . . . . . . .   28
+        3.1.2   Unstressed vowels in frequently found forms . . . . .         29
+        3.1.3   Discussion of less common forms       . . . . . . . . . . .   30
+
+                                     vii
+
+=== PDF sheet 010 ===
+viii                                                                   CONTENTS
+
+
+
+
+       3.2   Tendencies in Old Mercian . . . . . . . . . . . . . . . . . . .       34
+       3.3   Later developments in Mercian       . . . . . . . . . . . . . . . .   34
+
+4 Northumbrian                                                                     37
+       4.1   The Old Northumbrian data . . . . . . . . . . . . . . . . . .         39
+             4.1.1   Texts . . . . . . . . . . . . . . . . . . . . . . . . . . .   39
+             4.1.2   Unstressed vowels in frequently found forms . . . . .         42
+             4.1.3   Discussion of less frequent forms . . . . . . . . . . . .     42
+       4.2   Tendencies in Old Northumbrian . . . . . . . . . . . . . . .          48
+       4.3   Later developments in Northumbrian . . . . . . . . . . . . .          49
+
+5 West Saxon                                                                       51
+       5.1   The Old West Saxon data . . . . . . . . . . . . . . . . . . .         51
+             5.1.1   Texts . . . . . . . . . . . . . . . . . . . . . . . . . . .   51
+             5.1.2   Unstressed vowels in frequently found forms . . . . .         53
+             5.1.3   Discussion of less frequent forms . . . . . . . . . . . .     53
+       5.2   Tendencies in Old West Saxon . . . . . . . . . . . . . . . . .        56
+       5.3   Later developments in West Saxon . . . . . . . . . . . . . .          56
+
+6 The early OE unstressed vowels                                                   59
+       6.1   An Overview . . . . . . . . . . . . . . . . . . . . . . . . . .       59
+             6.1.1   Unstressed vowels and the transition to Middle English 63
+             6.1.2   Inherited root nouns in the OE dialects . . . . . . . .       65
+       6.2   Dialectal continuity as evidenced by unstressed vowels . . . .        66
+
+7 Causes for phonological change                                                   67
+       7.1   Loss or change of final consonants . . . . . . . . . . . . . . .       68
+       7.2   Speech tempo as a catalyst for change       . . . . . . . . . . . .   68
+       7.3   Linguistic Neighbours . . . . . . . . . . . . . . . . . . . . . .     69
+             7.3.1   Celtic . . . . . . . . . . . . . . . . . . . . . . . . . .    71
+             7.3.2   British Latin . . . . . . . . . . . . . . . . . . . . . .     73
+             7.3.3   Old Norse . . . . . . . . . . . . . . . . . . . . . . . .     75
+
+8 Conclusion                                                                       77
+
+=== PDF sheet 011 ===
+CONTENTS                                                                ix
+
+
+  8.1   Foreign influence on early English phonology, regional variation 77
+  8.2   The Old English unstressed vowel processes . . . . . . . . .   78
+
+Bibliography                                                           81
+
+=== PDF sheet 012 ===
+
+=== PDF sheet 013 ===
+Chapter 1
+
+Introduction
+
+     From the OE. period down to the present day there has always
+     been a tendency to weaken the vowels in unaccented syllables,
+     and then often for the weakened vowels to disappear, cp. EOE.
+     Gr. ch.iv and EME. Gr.1 ch. iv. In dealing with the changes
+     which the accented vowels underwent in the earlier period of
+     the language it is generally possible to fix approximately the
+     date of the changes, but it is practically impossible to do the
+     same with the vowel-changes in unaccented syllables . . . (Wright,
+     1924, 141)
+
+This thesis aims to investigate the development of the unstressed vowels in
+the various dialects of early English until the early tenth century, when West
+Saxon slowly began to influence the other dialects, resulting in a Koine-like
+English Schriftsprache.
+   The sequential loss of variation in unstressed vowel phonemes will be
+evaluated individually for each dialect, and linguistic contact will be taken
+into consideration.
+   Finally, for any given change in the vocalism of a grammatical prefix
+or ending, it must be considered whether the substitution is, in fact, phon-
+ological (and if so, whether phonological merger was enabled by loss of
+phonemic status), or whether it may instead be the result of analogy, gram-
+   1 Wright (1923) and Wright (1928), respectively.
+
+
+
+                                          1
+
+=== PDF sheet 014 ===
+2                                             CHAPTER 1.         INTRODUCTION
+
+
+
+
+matical processes, or other factors not to be explained through historical
+phonology.
+    The later loss of phonemic contrast was grammatically driven in some
+areas (Kitson, 1997), and the information conveyed only by inflectional
+syllables was frequently redundant, even in early OE (Benskin, 2001).2
+
+
+
+1.1 Method
+Initially, it must be said that both the number, geographical distribution,
+and scope of extant texts from this very early period is severely limited.
+Where we have very early texts, almost nothing is found a few hundred
+years later; vice versa for the areas which are well covered in the later
+period. The usefulness of any given text is also quite often very limited:
+runes are notoriously difficult to interpret with any confidence; the same
+can be said for some MSS.
+    The quantity and quality of the unstressed vowels will be evaluated on
+the basis of comparative data. The monuments and texts examined are
+selected on criteria defined in the following sections. Dialectal variation
+will be of particular interest.
+    However, it is a matter of some difficulty to assess the unstressed vow-
+els of Old English: northern forms differ from southern and earlier forms
+from later, but one must be careful to mind the possible causes of these
+differences.
+    Localisation is also a problem. For example, though a runic monument
+can be considered a direct record of the language of that time, and is unlikely
+to have moved too far from where it was originally made, it still constitutes
+nothing more than a likely testament to the language of that area: not
+only could the rune master have moved from elsewhere in the country —
+or even from the continent — he could also have been trained by someone
+
+    2 Though Benskin's analysis is from Cynewulf and Cyneheard (Earle and Plummer,
+1965, 46 ff., Parker MS 755 AD), an early WS text, there is little reason to believe the
+results had been much different in prose of other OE dialects.
+
+=== PDF sheet 015 ===
+1.1.   METHOD                                                               3
+
+
+of a different dialect and thus connected sounds and symbols in a different
+fashion from what we might expect.
+   Because of this, this thesis will rest largely upon an investigation of
+sound correspondence between the various Old English dialects and the
+continental Germanic languages.
+   The pre-history of English is not covered here: good accounts are found
+in the OEG, in Wright (1925), Ringe (2006), Brunner (1956); Fortson
+(2010), Streitberg (1974), and Hirt (1932). The situation resulting from
+the linguistic pre-history of English was that “OE had the unaccented vow-
+els a, æ, e, i, and u ” (OEG, 368).
+   The variation during the early Old English period will be examined,
+focusing where possible on grammatical endings, as these provide the most
+stable and comparable context for unstressed vowels: sound-change in suf-
+fixes behaves differently from sound-change in inflectional endings because
+of the half-stress of derivational syllables.
+   The tendencies of vowels in the individual grammatical categories will
+be considered in a dialectal and diachronic context, explaining some of the
+observable developments. As a mode of explanation, intra-linguistic factors
+will be preferred where they are plausible: see section 7.
+   However, some recent claims regarding the substrate influence of Celtic
+and British Latin spoken by Celts will be considered: “language shifts are
+almost invariably preceded by widespread bilingualism” (Weinreich, 1953,
+94), and the imperfect learning of phonology is one hallmark of adult-onset
+bilingualism (Baetens Beardsmore, 1982, 60). Thus, one may expect some
+colouring (“interference”) from the first language of the conquered (Wein-
+reich, 1953, 14-28).
+   Possible causes of phoneme merger may range from language contact
+and imperfect L2 learning, general linguistic drift (syncretism) from a higher
+level of inflection to a reduced level of inflection (as is common in the Indo-
+European languages), loss of phonemic quality due to other phonological
+processes within the linguistic system of English, or influence from prestige
+languages.
+   It may be hazardous to limit oneself to one model for explaining a com-
+
+=== PDF sheet 016 ===
+4                                              CHAPTER 1.         INTRODUCTION
+
+
+
+
+plex linguistic shift which consists of many smaller phonological mergers.
+Did the back vowels [o] and [u] merge at an early date for a different reason
+from what caused the later merger of [i] and [y]? And how may this be
+tested?
+    The example of the confusion of e and u /o in the first-person singular
+verbal ending in early south-eastern texts is a convenient one: one finds
+that u and o are confused in other grammatical inflections as well; thus,
+they have probably undergone a phonological merger. However, e is never
+confused with back vowels in other grammatical categories; hence, the con-
+fusion is likely to have been grammatical and not phonological.
+    In this case, it seems clear enough that the generalisation of the old
+subjunctive inflection in the first-person singular — perhaps for politeness
+— is the cause of confusion.3
+    The intention is here to examine individually each shift, and suggest the
+model that in each case seems the simpler (i.e. better) explanation. For
+example, one may explain the spread of initial [v] and [z] in English through
+the influence of Anglo-Norman, which had both phonemes in initial position
+and held a prestige position within the linguistic landscape of late mediaeval
+England.
+
+
+1.1.1 Definitions
+Early and Late Old English; Middle English
+The divide between early and late OE is not straightforward. In the words
+of Joseph Wright (1925),
+
+      [t]he division of a language into fixed periods must of necessity
+      be more or less arbitrary. What are given as the characteristics
+      of one period have generally had their beginnings in the previous
+      period, and it is impossible to say with perfect accuracy when
+      one period begins and another ends. For practical purposes Old
+    3 Another possibility is analogy from the second- and third-person inflectional vowels
+(Bryan, 1921); in either case a phonological explanation is ruled out.
+
+=== PDF sheet 017 ===
+1.1.   METHOD                                                              5
+
+
+       English may be conveniently divided into two periods: early OE.
+       from about 700 to 900; and late OE. from 900 to 1100.
+
+The above, while true, only covers part of the story: for not only is the
+divide between “early” and “late” fuzzy within one homogeneous spoken
+language; dialects, too, change at different rates. Thus, when one dialect
+was already “late”, another would remain “early” or vice versa. Hogg (1997)
+adds: “By naming a particular period of the language “Old English” or
+“Middle English”, we actually reify that period.” Another approach is to
+admit that the dating is arbitrary, and simply posit that it is the year that
+defines “early” and “late”, and that the archaic features of one dialect when
+compared with another is simply an archaic feature within that dialect.
+For the sake of this thesis, it is useful to delimit the material to early
+texts; defined as early is any OE text written before 900 and extant in a
+contemporary source.
+   As “Old English” is defined any Germanic dialect spoken in England
+from the landing of the first ships until the transition to Middle English.
+Placing this transition around the year 1100 “probably represents the con-
+sensus, insofar as there is one, of current scholars” (Kitson, 1997, 222),
+though in many areas it would have been later (idem, 250). Contrarily,
+Malone (1930, 110-117) puts the beginning of the ME period “at 1000 or
+thereabouts” on the grounds of inflectional morphology. Distinguishing by
+lexicon would also have been possible: (Lutz, 2002).
+   In practice, the age of the texts investigated range from the runic monu-
+ments of around AD 700 until late Old English; texts later than the trans-
+ition to Middle English around 1100 will only be briefly mentioned to
+provide a rough overview of the later developments within the individual
+dialects.
+
+
+1.1.2 Dialects and Geography
+The OE dialects may be divided as illustrated in Crystal (2004, 51), and
+with the reservations given in OEG (19). This map includes the major
+routes as well as the “Main area of Scandinavian settlement”:
+
+=== PDF sheet 018 ===
+6                                        CHAPTER 1.      INTRODUCTION
+
+
+
+
+    In ME terms, these dialectal areas appear significantly different: “if one
+tries to map onto such OE dialects [i.e. dialects delimited by the four king-
+doms traditionally acknowledged in OE dialectology] the far more sophistic-
+ated results of Middle English dialectology, this mismatch of methodologies
+is likely to be troublesome” (Hogg, 1997, 213).
+    It makes sense, then, to think of the dialect of any given text as the
+dialect of the scribe or, at most, the diocese or town in which the scribe
+was active. This means that dialect borders, particularly in OE, should be
+avoided; Brook (1963, 43; 62) provides them for the map of ME dialects
+but has not included them on the map of OE dialects.
+
+=== PDF sheet 019 ===
+1.1.    METHOD                                                              7
+
+
+   This causes problems because the division of OE texts into four chapters,
+one for each dialect area, inevitably means that some texts cannot be placed
+with any certainty into either chapter; where this is the case (such as the
+Durham Admonition, which is certainly southern but may be either early
+West Saxon or early Kentish: this uncertainty is reflected in the comment-
+ary to the text in OET, 175-6), the authority of other scholars provides the
+foundation for the decisions made here.
+   On the ME dialects, see also Burrow and Turville-Petre (1992, section
+1.2).
+
+
+1.1.3 Selection of texts
+Initially, a general examination of the earliest English texts will have to be
+made. The texts used are generally those listed by Toon (1992, 427), see
+the below table (which is the same as Toon's, but adapted for the different
+page format used in this text), with some additional texts mentioned in the
+OEG, as well as some minor runic inscriptions.
+
+ Date    North                Midlands              Southwest        Southeast
+
+ 675     Rune Auzon
+ 700     PsScholia, RuthCr    Ch., EpGl
+ 725     Bede, Cæd, BDS       Ch.
+ 750     LRid                 Bede, Ch.                              Ch.
+ 775                          Ch., BlGl, ErfGl                       Ch.
+ 800                          Corp
+ 825                          VP, LorPr, LorGL                       Ch.
+ 850                                                Ch.              Ch., Med
+ 875                                                Ch., Gn, Mart
+ 900                                                CP, ASC
+ 925                                                Or, ASC
+ 950                          RoyGl                 ASC, Med         Ch., KtHy,
+                                                                     KtGl, KtPs
+ 975     Ru2, LiGl, DurRit    Ru1
+
+   The most striking fact presented by the above table is that the north
+is entirely unrepresented for 150 years — with its earliest safely dateable
+
+=== PDF sheet 020 ===
+8                                                   CHAPTER 1.       INTRODUCTION
+
+
+
+
+inscription, St Cuthbert's coffin, of AD 687 — and that the southwest (i.e.
+primarily WS) barely presents any useful data until about 875. In the
+south-east, short texts are all there is, and because Canterbury had clergy
+from all over England, much of the writing may not represent the local
+dialect; the Mercian area appears to present the most useful data across
+this timespan.
+    As is evident from the discussion of Northumbrian, many runic spellings
+found simply cannot have been accurate representations of the spoken lan-
+guage.
+    Looking beyond these problems, however, there is still some useful ma-
+terial for the examination of unstressed vowels. It is worth noting that stress
+is not a binary system of either stressed or unstressed: the OE metrical sys-
+tem suggests that half-stress was also possible.4 And though half-stress
+may have been non-phonemic (cf. Ladefoged (1975, 104-110) on ModE),
+some retentions in the vowels of half-stressed syllables will show that it was
+nevertheless a factor in the development of the English vowel system.
+    Of particular interest are pretonic prefixes and verbal endings, because
+they provide historically distinct unstressed vowels in similar phonetic con-
+texts, and because they may be compared with those endings found in
+cognate Gmc. languages. On the other hand, the comparative practice is
+very difficult in the case of composite nouns: frequently, un-etymological
+connecting vowels are inserted, no cognate forms can be found, and so on.5
+    The end result of an examination of these texts will result in a sketch of
+the geographical distribution of the various unstressed vowels in different
+contexts, which will provide useful background information for an exam-
+ination of the late Old English as well as early Middle English unstressed
+vowels until their final merger to [@] (the dating of which is controversial
+and dialectally sensitive).
+
+    4 Metrically, tertiary stress may be invoked: Fulk (1992, ch. VII, particularly B).
+    5 On the topic of the unusual words used to translate Latin in glossaries and other
+translated texts, Sweet (1896, Preface, viii) writes: “As the Old-English literature consists
+largely of translations, we may expect to find in it a certain number of words which are
+contrary to the genius of the language, some of them being positive monstrosities, the
+result of over-literal rendering of Latin words”.
+
+=== PDF sheet 021 ===
+1.1.   METHOD                                                                              9
+
+
+1.1.4 The dating of texts
+Individual texts are listed chronologically in the chapters on the respective
+dialects. The year listed for the texts is generally that provided by the editor
+of the individual texts6 . Unless otherwise specified, the dating supplied in
+OET and by Toon (1992) is used.
+    The extent to which this reflects the actual age of the texts with perfect
+accuracy is, of course, highly variable. It may be worth noting that even
+where we do, in fact, know the exact year a text was written, another
+unpredictable variable comes into consideration: the age of the scribe. A
+scribe may have been active for as much as 50 years, and during those years,
+his language may have changed: see Davis (1952).
+    Thus, any value given as the age of a text must be seen as a range
+of as much as 100 years of linguistic continuation. For the same reason,
+palaeographical dating must be taken with a grain of salt.
+
+
+1.1.5 The written representation of speech
+Any investigation of the phonology of a dead language rests heavily on the
+presumed correspondence between writing system and sound.
+
+       Old English scribes are very consistent in their representation of
+       accented vowel sounds, but every accented syllable did not have
+       the same vowel sound in every dialect, or even at every time
+       within one dialect. . . . The vowels of OE unaccented syllables
+       are expressed with the same symbols which are used in accented
+       syllables. Naturally the values of these symbols would here be
+       only approximately the same as in accented syllables (OEG,
+       48).
+
+    Throughout the present work, the following must be kept in mind:
+    6 For the sake of saving space in the tables only, where a range is given (e.g. 870-890),
+the average will be used (i.e. in this case 880), and where the value is given as e.g. “late
+10th century”, this will be listed as 975, i.e. the middle of the latter half of the century
+
+=== PDF sheet 022 ===
+10                                              CHAPTER 1.          INTRODUCTION
+
+
+
+
+     1. The futhorc of the earliest texts is not a monolithic, internally con-
+          sistent entity;7 see Page (1973, Ch. 3).
+
+     2. Neither is the Latin script: one example is the interchange of i and y
+          described by Sweet (1871, Introduction, xxvii).
+
+     3. The phonetic value of any given symbol did not necessarily remain
+          constant throughout the early English period, nor even within the
+          same text (the difference between ModE stressed and unstressed vow-
+          els being just one example to the contrary).
+
+     Hogg (1992, 84) writes:
+
+          Three of the principal parameters for phonological contrasts in
+          Old English were similar to those today: backness, height, and
+          lip-rounding. But in addition vowel length formed a significant
+          contrast. Let us take these in turn. For backness there was a
+          two-way contrast, i.e. [front] vs. [back]. For height there was
+          probably a three-way contrast, so that vowels were either [high],
+          [mid] or [low].
+
+     Though this may be true for the stressed vowels of late WS, the sys-
+tem outlined by Chomsky and Halle (1968) with binary categories of, e.g.,
+[+front] or [-back], does not work particularly well for a discussion of
+phonological merger as a diachronic process where what one is looking for is
+something more similar to [±central-ish]. The clear-cut correspondence
+between the symbols and the matching sounds, too, fails to apply to the
+unstressed vowels (Hogg (1992, 88) covers this, albeit briefly).
+     One could, in theory, remedy this by simply adding more categories:
+more levels of frontness, backness, highness and lowness as well as rounded-
+ness, but the appeal of the system lies largely in its simplicity, which would
+be entirely lost were one to increase its possible number of combinations to
+one facilitating its use in this context.
+     7 Keep in mind also the First Law of Runo-dynamics (attributed to David M. Wilson):
+“for every inscription there shall be as many interpretations as there are scholars working
+on it”.
+
+=== PDF sheet 023 ===
+1.1.     METHOD                                                                     11
+
+
+   Instead, a set of vowel/sound correspondences for the OE dialects, based
+largely upon the vowel quality of Latin and the correspondence with con-
+tinental Gmc. vowels will have to be used. This will not be constant and
+consistent for all texts at all times, but generally, it is still the better option.
+   Another assumption which will be necessary to make here is that the
+choice of vowel symbols in stressed syllables in some way, or to some extent,
+corresponds to the choices made in unstressed syllables. Though an a would
+certainly have sounded different in a stressed initial position from an a in
+an unstressed final syllable, they would have resembled one another more
+than, say, an unstressed i and an unstressed o.
+   More specifically, the opposition postulated between stressed and un-
+stressed variants of the same vowel is that of one non-reduced and one
+reduced (i.e. centralised) allophone corresponding to each vowel symbol.
+Though not meant to be an exact representation of the Old English vowel
+phonology (indeed, no such thing existed because the dialects are bound to
+have sounded dissimilar from one another), the following chart should be a
+helpful representation of this idea (with the reduced vowels on the left):8
+
+
+
+
+   Page (1973, 59 f.) writes: “The general Anglo-Saxonist usually wants
+the editor to do the rune-master's work for him, and so make the inscription
+more accessible”, yet Page also implicitly reminds the reader of the dangers
+   8 For obvious reasons, this chart is not based on Old English. Rather, it represents
+vowel reduction in “the Queen's Christmas broadcasts of the 1980s” (Harrington et al.,
+2000).
+
+=== PDF sheet 024 ===
+12                                             CHAPTER 1.         INTRODUCTION
+
+
+
+
+of this approach in the discussion of the right panel of the Franks Casket :
+“The main inscription . . . has arbitrary or cryptic forms for most of its vowels
+. . . scholars differ over whether to give these their common values or to
+disregard them as too cryptic. It seems best to transliterate them in the
+usual way, 'e' and 'a'” (idem, 181; on the Franks Casket symbols, see also
+Eichner (1991) and Bammesberger (1991))
+
+      Though the vowel runes do not by necessity correspond exactly to the
+Latin vowel symbols into which they are transcribed,9 the differences were
+negligible,10 but that the nature of these differences is impossible to estab-
+lish convincingly.
+
+      One obvious case of peculiar runic vowels is the right panel (the Bergallo
+panel) of the Franks Casket ; see the discussion in the chapter on Northum-
+brian and the above paragraphs.
+
+      Finally, it will be assumed that a vowel symbol represents roughly the
+same phonetic realisation in WS as in Northumbrian, and that a transcribed
+runic <u> (generally: u) corresponds roughly to an u in Latin script, and
+accordingly for the other vowel symbols.
+
+
+
+
+The interface between text and speech
+
+The interface between text and speech may be illustrated as follows (Samuels,
+1972, 1.3):
+
+
+     9 See also (Page, 1973, 220): “we must always keep in mind, when dealing with runic
+texts, that we may face a rather different system of representing sounds from that we
+are usd to. We can never equate runic and manuscript spellings unthinkingly.”
+     10 This due to later developments in English, where the outcomes of those vowels
+written in runes does not differ from the outcomes of those writen in Latin script, as
+well as the similarity between the vowel choice in, say, Cædmon's Hymn and the Franks
+Casket. Of particular help is the fact that one Latin word on that casket — afitatores )
+— is written in runes, which helps us establish the sound correspondence between the
+remaining vowel runes on the casket and the sound value of the Latin.
+
+=== PDF sheet 025 ===
+1.1.   METHOD                                                            13
+
+
+
+
+Samuels adds that “a majority of linguistic changes arise in the spoken lan-
+guage, and may or may not ultimately spread to the written medium. . . the
+main influence of the written language is a conservative one”. Because of
+this, written forms in the early language will be understood as representa-
+tions of the spoken language.
+
+
+
+1.1.6 Grammatical forms
+In order to compare on an equal basis the unstressed vowels of different
+dialects, one needs to compare occurrences in the same grammatical forms,
+be they inflectional endings, unstressed prefixes, or derivational suffixes.
+Additional forms which regularly feature unstressed vowels are the oblique
+stems of certain noun classes (e.g. byrig, dogor ), as well as svarabhakti
+vowels in, particularly, the root nouns (which are covered separately in
+section 6.1.2).
+   Only a few forms are found with any frequency and can thus be com-
+pared across the entire corpus:
+
+=== PDF sheet 026 ===
+14                                          CHAPTER 1.       INTRODUCTION
+
+
+
+
+Unstressed prefixes The pretonic prefix ge - (gi -) in particular is common
+       in all dialects on both verbs and nouns; be - (bi -) slightly less so.
+
+Verbal endings Frequently occurring are 1sg present ind., the st pret pl.,
+       the infinitive, and the strong past participle.
+
+Nominal endings The following are found with any consistency: the gen.sg.
+       of the a -stems and the non-nominative of the n -stems; the dat.sg., and
+       the dat.pl.
+
+Svarabhakti Often found in the root nouns, but also elsewhere, e.g. gearuwe
+       next to gearwe.
+
+In addition, several rarely occurring forms add interesting comparative in-
+formation, and are included where possible.
+
+
+     In chapters two through five I will cover the Kentish, Mercian, Northum-
+brian and West Saxon dialects, respectively; chapter six will provide an
+overview of the data I have collected, and chapter seven will discuss some
+potential causes for phonological change.
+     Finally, chapter eight will contain a conclusion.
+
+=== PDF sheet 027 ===
+Chapter 2
+
+Kentish
+
+In this chapter, the unstressed vowels found in the earliest texts from Kent
+and Surrey will be examined. Kentish is a difficult dialect to assess in
+the very early days of OE simply because, as with the southern dialects
+of England in general, there are extremely few texts of significant quantity
+or reliable provenance. It should be kept in mind throughout this chapter,
+and similarly through the discussions of the other OE dialects, that “the
+differentiation of Kentish from other dialects is due to the isolation of the
+area rather than to the descent of the inhabitants from the Jutes. In fact,
+the most obvious Kentish features can be observed gradually making their
+appearance in documents of the ninth century.” OEG, 5
+
+   Indeed, the Kentish dialect is more strikingly different in the ME period
+than in OE, but earlier Kentish texts are also interesting: some (presum-
+ably) Kentish names may be found found in Latin charters (Sweet (1885,
+5-8, pps. 428-9); OEG, 8) as early as the eight century; and in the ninth
+century, charters in English begin to appear: of particular importance are
+ch. 34 and 37-42.
+
+   The minor inscriptions, such as the Dover stone, will be omitted: many
+are entirely without interesting vowel information; others are impossible to
+localise; finally, it is extremely difficult to determine their age. What we
+are left with are primarily charters and, later, the Durham Admonition and
+the so-called Kentish hymn (though it has a strong WS colouring), as well
+
+                                    15
+
+=== PDF sheet 028 ===
+16                                                        CHAPTER 2.         KENTISH
+
+
+
+
+as the Kentish glosses and Psalm 50 from the same MS.11
+
+      The Kentish dialect belongs to the south-east of England, and in ad-
+dition to the texts produced within Kent proper, “[t]he Codex Aureus in-
+scription and Sweet's charter 45 represent the practically identical dialect
+of Surrey in the same period” (OEG, 8), and are included here (indeed,
+Sweet (1887, VI) lists the Codex Aureus inscription as Kentish). After
+900, only texts with mixed dialect with WS elements appear (such as the
+Kentish Hymn); during the periods of Mercian political dominance, Anglian
+forms are found in Kentish charters. For a discussion on the origins of these
+— whether through Mercian scribes or copying of Anglian originals — see
+Bryan (1915).
+
+      The Kentish dialect is associated with a fronting of [æ] to [e] (in a
+separate process from the west Mercian second fronting found in the VP ),
+rising diphthongs, and absence of smoothing.
+
+      The dialects are also distinguished in terms of lexicon used. One Kentish
+example is the derived nominal forms for an area of arable land: sulung
+(with various written forms) < sulh “plough”.
+
+      Grammatically, however, the main difference in eOE is that the first-
+person singular ending of the verb in -o (u ) is more common than in West
+Saxon, and that the forms in -io -, -ia - are more common in Kentish. In
+charter 42, the forms cyðo, hato, biddo, and writo appear next to selle ;
+in 37, we find selle, bidde, and biddo. Perhaps the grammatically driven
+process of replacing the back vowel with -e created a back/front opposition
+in this form which made -a equivalent to -o and -u ; it does not appear
+to have been interchangeable in other grammatical endings, such as the
+oblique forms of n -stems or the strong infinitive of consonant stems (always
+-an, though scarcely attested).
+
+
+
+     11 Cotton Vespasian D.VI, written in the late tenth century. (Dobbie, 1942, Introduc-
+tion, LXXVIII ff.; 87 ff.)
+
+=== PDF sheet 029 ===
+2.1.   THE OLD KENTISH DATA                                                 17
+
+
+2.1 The Old Kentish data
+This section provides first an overview of the texts used; subsequently, a
+table of the unstressed vowels of commonly occuring forms in Old Kentish is
+found. Finally, a discussion of less common forms in the individual texts fol-
+lows (passim for the discussion of individual texts in the following chapters
+on the other three OE dialects).
+
+
+2.1.1 Texts
+The following texts are used, based mostly upon the table found in Toon
+(1992, 427) and reproduced in section 1.1.3. As we can see, the pickings are
+rather meagre, particularly in the eight and ninth centuries. The table is
+chronologically organised; the descriptions are grouped for convenience but
+largely follow the chronology.
+
+Charters:
+
+         1. Several of the charters edited by Sweet (1885) are of Kentish
+            provenance. Many are preserved only in much later MSS; others
+            are written in Latin and of little use to the student of English.
+            The following (as suggested in OEG, 14) are not excluded by
+            these criteria: ch. 34 and 37-42, as well as the endorsements on
+            ch. 28, 30 and 44.
+         2. Additionally, ch. 45 is from Surrey, and of a piece with the
+            Kentish dialect.
+
+The Codex Aureus inscription:
+       This inscription is from “about 870” (Sweet, 1885, 174), and the identi-
+       fication of Aelfred dux with the Aelfred of ch. 45 (idem, 451) identifies
+       it as being from Surrey.
+
+The Durham Admonition:
+       The same MS contains some Northumbrian glosses, but the Admoni-
+       tion was probably written in the south: “I came to the conclusion that
+
+=== PDF sheet 030 ===
+18                                                CHAPTER 2.      KENTISH
+
+
+
+
+     it was in the Kentish dialect of the ninth century, and Prof. Skeat'
+     agrees.” (Sweet, 1885, 175-6).
+
+
+
+
+     As revealed by the above excerpt, though a Kentish provenance is
+     assumed here too, it is difficult to localise this text with any certainty.
+     It may equally well represent an early West Saxon dialect as a Kentish
+     one.
+
+
+
+
+Bede Glosses (OET: Bede2 ):
+     “of the end of the ninth or beginning of the tenth century, apparently
+     in the Kentish dialect” (OET, 179).
+
+
+
+
+Cotton Vespasian D.vi :
+     This MS is of the “late tenth century” (Dobbie, 1942), and contains
+     the Kentish Hymn as well as Psalm 50, also printed in Dobbie (1942),
+     immediately following the Hymn itself (87 ff.). Also found in the same
+     MS are the Kentish glosses, printed in Sweet (1887, 152 ff.), which are
+     extremely useful: most other texts contain only one or two occurrences
+     of each grammatical form; the glosses are much more encompassing.
+
+=== PDF sheet 031 ===
+2.1.   THE OLD KENTISH DATA                                                     19
+
+
+2.1.2 Unstressed vowels in frequently found forms
+                    gV-    bV-    1sg           pret pl    Gen.sg.   Dat.sg.   AD ca.
+ Charter 34         ge-    —      —             —          -es       -e        805
+ Charter 37         ge-    be-    -e, -o        -on        -es       -e        820
+ Charter 38         ge-    be-    -e            —          -es       -e        831
+ Charter 39         ge-    be-    -e            —          -es       -e        831
+ Charter 40         ge-    be-    -e            —          -es       -e        832
+ Charter 41         ge-    be-    -e            —          -es       -e        835
+ Charter 42         ge-    be-    -o, -e        —          -es       -e        837
+ Charter 28         ge-    —      —             -an        -es       -e        858
+ Charter 30         ge-    —      -o, -u, -e    —          -es       -e        863
+ Cod. Aureus        ge-    —      -e            —          -es       -e        870
+ Charter 44         —      be-    —             —          -es       -e        878
+ Charter 45         ge-    be-    -o, -u        -on, -an   -es       -e        880
+ Bede2              ge-    be-    —             —          -es       -e        900
+ Durham Adm.        ge-    —      -e            —          -es       -e        900
+ Kentish H.         ge-    —      —             —          -es       -e        975
+ Psalm 50           ge-    be-    -e?           -on        -es       -e        975
+ Kentish Gl.        ge-    be-    e-            -on, -an   -es       -e        975
+
+2.1.3 Discussion of less frequent forms
+The individual texts contain, of course, some peculiarities which do not fit
+into the above table. These include the following (line numbers in par-
+antheses where available):
+
+Charter 34
+
+
+         1. æðelnoðo (2): this form, and many like it, should not be mistaken
+            for an OE grammatical ending; it is a Latin dative: ego cuðredus
+            . . . dabo æðelnoðo . . . terram.
+         2. dogor (16): this unusual form is explained in Wyatt (1929, 25-
+            26).
+
+=== PDF sheet 032 ===
+20                                                          CHAPTER 2.         KENTISH
+
+
+
+
+           3. Generally, this charter (as noted in OEG, 289) shows an unusual
+              number of æ spellings where one normally finds e in Kentish, the
+              same is true for Ch. 41.
+
+Charter 37
+
+
+           1. The variation in the 1sg -e/-o does not appear to be caused by
+              subjunctive meaning, and is probably an indication of an ongoing
+              analogical process.
+           2. The dat.sg. byrg (2) shows i -Umlaut, but the mutation dative
+              -i - itself is gone.
+           3. The genitive pl. namon (43) is unusual; generally, the n -stems
+              terminate in -an in the oblique and plural. The form may be ana-
+              logous to the feminine n -stems, e.g. mid vii tungon (Bosworth
+              and Toller, 1972, “ge-w 
+                                     ægnian”, 443), or it may reflect an older
+              state, compare OHG gen. pl. namno ; in Gothic, the nom.sg.
+              is namo (cf. WS nama ) whereas in the pl. only the acc. form
+              namna is attested, cf. OHG acc. pl. namin ; see also Streitberg
+              (1974, 161), Hirt (1932, 52, vol. II).
+
+Charter 38 12
+
+
+           1. ðet, wes, etc. are worth noting, as in the other Kentish texts;
+              where WS generally has -æ -, Kentish tends towards -e -; see OEG,
+              288.
+           2. modar, broðar, dohtar (12): A nom.sg, gen.sg, and nom.sg, re-
+              spectively, the r -stems appear to have been levelled to -ar outside
+              the dative (WS -or, dat. -er ).
+     12 This charter has the curious forms hlabard (2) and hebfað (7) . These are retentions
+rather than innovations, cf. OHG hleib, haben, and are a Kentish peculiarity (Colman,
+2004). The form meihanda (4) < ∼mæg - appears to show very early palatalisation of
+postvocalic g. However, on (11) it appears as meghond ; note the root vowel alternation
+in the second constituent handa /hond.
+
+=== PDF sheet 033 ===
+2.1.   THE OLD KENTISH DATA                                               21
+
+
+Charter 39
+
+
+        1. cirican (10): here, this word terminates in -an as expected, cf.
+           ch. 37 -on.
+
+Charter 40
+
+
+        1. wiaralde (20): This form looks highly unusual next to lWS we-
+           orold, woruld (though similar root vowel outcomes are found in
+           eWS), but see also hiabenlice (22) as well as agiaban in ch. 39
+           (3).
+
+Charter 41
+
+
+        1. Generally, this charter preserves a lot of æ spellings where e is
+           expected, though deg (58) next to ðæm (59) suggests the dis-
+           tinction was not very clear.
+        2. to habanne 7 to brucanne (12): inflected infinitives in -anne are
+           found in southern OE next to forms in enne ; in the VP, only -
+           enne is found. Later texts sometimes have -onne ; in the Kentish
+           glosses, this is the only form found (OEG, 735i).
+
+Charter 42
+
+
+        1. noman (12): see comments on ch. 41.
+        2. higon : a plural of hiwa.
+        3. The 1sg present ind. of the verb here appears to be in free vari-
+           ation between -o and -e ; this is not the case in other forms with
+           unstressed vowels (such as the pretonic prefixes); thus, this text
+           provides strong indications that this is a grammatical process
+           rather than a phonological one.
+
+=== PDF sheet 034 ===
+22                                               CHAPTER 2.       KENTISH
+
+
+
+
+Charters 28, 30, and 44
+     In ch. 28, -an for -on is found: siondan (18, 25); this suggests that
+     the low back vowel a was confused with the high back vowels in the
+     south-east very early. In ch. 30, the 1sg present ind. forms in -u
+     and -o confuse the two high back vowels, whereas the form bidde is a
+     subjunctive: ic . . . bidde þet hit minre sawle nyt gedeo.
+
+Codex Aureus (Surrey):
+
+
+
+       1. uncre claene feo; mid clæne golde (5): instrumentals (judging by
+          the adjective) in -e by analogy from the dat. form. After uncre,
+          a weak adjective would be expected; why it is not so cannot be
+          deduced from this text.
+
+       2. noman (15): the inflectional syllable -an is regular.
+
+Charter 45 (Surrey)
+
+
+       1. The 1sg present ind. ending in this text is -o, except for one
+          occurrence of -u (interestingly, on line 1) and one of -Ø: onn (4).
+
+       2. e˛ ðelwalde minum sunu (23): unambiguously a dative; cf. WS
+          dat. suna in the u -stems (but WS also dat.sg. duru : OEG,
+          613.
+
+       3. seondan (12): another occurrence of -an for -on.
+
+Durham Admonition:
+
+
+       1. on fæder naman 7 on suna naman (1): these forms match lWS
+          forms (though WS also fæderes ), both the r -stem dative in -er,
+          the u -stem dative in -a and the n -stem oblique in -an.
+
+       2. ðaet (1): this form also matches lWS; Kentish more frequently
+          has ðet.
+
+=== PDF sheet 035 ===
+2.2.   TENDENCIES IN OLD KENTISH                                            23
+
+
+        3. for, fer (4-8): for is found on lines 2 and 4; fer on 5, 6, 7, and
+           8. This suggests that the confusion of front and back vowels
+           was active not just in grammatical endings, but in unstressed
+           grammatical words as well. Both e and o are central vowels,
+           which makes the distance between them shorter than between
+           e.g. i and a.
+
+The Kentish Hymn and Psalm 50:
+
+        1. Psalm 50 is a curious specimen in terms of dialect. Forms like
+           heht (100) appear Anglian, but are common in poetry in other
+           dialects, too (e.g. in Ælfred's Boethius ). In the 1sg present ind.,
+           though forms in -e are all that occur, but it is difficult to judge
+           whether these were intended to be subjunctives or whether the
+           forms have fully merged at this stage of the language, or whether
+           -e had entirely displaced the forms in -o, -u.
+
+The Kentish Glosses:
+
+        1. to burge (287): the non-mutation dative found here is not un-
+           usual, but nevertheless forms a contrast to the mutation form
+           byrig (note also the absence of i -Umlaut). Sprockel (1965, 78)
+           notes that in WS, the dat.sg. -burge commonly appears as a
+           compound while the simplex is more commonly byrig.
+        2. The 1sg present ind. is always -e, making this the only form
+           occuring in this MS.
+        3. Latin subjunctives are often translated as indicatives, possibly
+           reflecting native idiom.
+
+
+2.2 Tendencies in Old Kentish
+As illustrated in the above table, as well as in the subsequent commentary,
+Kentish is remarkably stable throughout the attested period - the explana-
+
+=== PDF sheet 036 ===
+24                                                          CHAPTER 2.         KENTISH
+
+
+
+
+tion for this may be partly its geographical proximity to West Saxon, which
+would come to dominate as a literary language until the Norman conquest;
+eWS also shows several typically “Kentish” traits (-io -, -ia - root vowels;
+back-vowel endings in the 1sg present ind.), and there is reason to believe
+that the dialects would have had similar developments independently of
+each other even if they were geographically more divided (Samuels, 1971).
+      The tendencies that do emerge are a drift towards 1sg present ind. end-
+ings in -e (though this in all likelihood is not a phonological process, but
+a grammatical one: OEG, 735 ) and a confusion between u and o in the
+grammatical endings -on /-un, -ong /-ung ; the n -stems generalised the forms
+in -an rather than -on (but see OEG, 377).
+
+
+
+2.3 Later developments in Kentish
+In Middle Kentish, the plural formation of the n -stems spread to other noun
+classes. Whereas in the north only words like eyen, oxen and schon form
+their plurals with -n, a long list of examples from the southern dialects
+is found in Morris (1866, xi ff.); an example of another stem type with
+generalised -n inflection in ModE “brethren”, cf. northern brether (Franks
+Casket: gibroþær ) and the early loss of -n (e.g. on the Ruthwell Cross).
+      The southern dialect long preserved non-s forms of the genitive in the
+feminine and the plural. Another conservative trait is the retention of the
+strong/weak adjective declensions (Morris, 1866, xxxvi), which merged in
+the north.
+      The st pret pl. is generally -en, though the -n is sometimes dropped (as
+in the Midlands dialects); so, too, with the past participle in the sg.
+      The unstressed vowels are all -e, except for the prefix eKentish ge - >
+MKentish i -, y - (though this is probably a retention rather of the palatalised
+consonant than of the vowel) (Morris, 1866, lxv); other exceptions are found
+in the derivational forms, e.g. the participial forms in -ing(e), -yng(e) as
+well as -ind(e) 13 and the adjectival -lich (OEG, 371). This mirrors the
+     13 On the distribution of the various forms of the present participle in mediaeval Eng-
+lish, see McIntosh et al. (1986, vol.    I, 391-2); on the later spread of the -ing forms,
+
+=== PDF sheet 037 ===
+2.3.   LATER DEVELOPMENTS IN KENTISH                                                    25
+
+
+development in MHG, and is probably a result of half-stress (see discussion
+and references in section 6.1.1).
+    In general, when comparing the language of the Ayenbite of Inwyt to
+texts of similar age from other parts of the country, and particularly the
+North, the most striking difference in the inflectional system is the num-
+ber of categories which have been retained. Though the inflectional vowel
+is always -e - apart from in derivational suffixes, the fact that it has not
+been dropped suggests a conservative system, and possibly one where the
+phonetic contrast in unstressed syllables was retained comparatively late.
+    Notably in the modern dialect of Kent, initial unstressed syllables are
+often dropped (Wright, 1905, 232); compare the relatively late retention of
+OE ge - (ME y -) in the south-western dialects (Sisam (1967, 292); see further
+section 5.3), though this may be a result of London English spreading south
+(cf. also the recent development of “Estuary English”).
+
+
+
+
+Jespersen (1905, 207) writes: “The coalescence in form of the verbal substantive and
+of the present participle is, of course, one of the chief factors of this development.” See
+further Sisam (1967, 290).
+
+=== PDF sheet 038 ===
+
+=== PDF sheet 039 ===
+Chapter 3
+
+Mercian
+
+Mercian and Northumbrian, which is treated separately following this sec-
+tion, constitute the Anglian dialects of OE. Of the two Anglian dialects,
+Merc. is defined not by its special traits, but rather by the absence of the
+various specifically Northumbrian. features. Another distinction between
+Northumbrian and Mercian is the type of texts available to us: whereas in
+Northumbria primarily short inscriptions are found, we find in Mercian the
+encompassing Vespasian Psalter (VP ).14
+   The hallmark feature of the Anglian dialects is the so-called 'smoothing':
+see OEG (222-233), Bülbring (1902, 193 ff.).
+   Since this feature groups Mercian and Northumbrian into Anglian, it
+will not be repeated in the following chapter on Northumbrian (page 37).
+
+
+
+3.1 The Old Mercian data
+The earliest Mercian language is known mostly from charters, but Camp-
+bell (1969, 10) considers all but eight to be later than 900. The English
+place-names found in the remaining six are generally of little use for the
+
+  14 The Kentish provenance of the MS and its Mercian language has been the cause
+of some discussion:   Zeuner (1881) suggests that the language, too, is Kentish; later,
+suggestions such as a Kentish scribe copying a Mercian original MS have come to be
+more accepted (Ball, 1970).
+
+
+
+                                          27
+
+=== PDF sheet 040 ===
+28                                               CHAPTER 3.      MERCIAN
+
+
+
+
+consideration of unstressed vowels other than derivational suffixes and con-
+necting vowels.
+     Though the data from the VP is very important to the study of the
+Mercian dialects, it must be noted that it represents a subdialect different
+from that found in many other Mercian texts: the hallmark feature is the
+second fronting (OEG, 259; 164-9).
+
+
+3.1.1 Texts
+The following texts (chronologically organised) are used:
+
+Glossaries:
+
+         1. An important source Mercian (though they represent divergent
+           subdialects) is the language of the glosses and glossaries that
+           have come down to us. The most important is the VP, edited
+           by Sweet (1885, 183-420), who describes it as being ”mainly in a
+           very fine hand, which cannot well be earlier or later than the first
+           half of the ninth century, and this date is fully supported by the
+           language, which shows a remarkably consistent type, uniformly
+           but not excessively archaic“ (idem, 184).
+         2. The Corpus glossary, from the “eight to ninth century” (Lowe,
+           as cited in OEG, 12) is the oldest glossary available to us, and
+           “more convenient and less clumsy than that of Épinal” (Sweet,
+           1885, 3).
+         3. The Épinal glossary, in a continental hand, represents very ar-
+           chaic language, though the MS is later than that of Corpus.
+         4. As with Épinal, the Erfurt glossary is in a continental hand,
+           copied by a scribe who “was evidently unacquainted with Eng-
+           lish, as shown by his constant errors, and his nationality is un-
+           mistakeably betrayed by the intrusion of several OHG words”
+           (Sweet, 1885, 4). In the table in section 4.2.2. it will be listed
+           under the Épinal headword due to their similarity; any striking
+
+=== PDF sheet 041 ===
+3.1.   THE OLD MERCIAN DATA                                                29
+
+
+          differences will be discussed independently in the section follow-
+          ing the table.
+        5. The Leiden glosary, as with the Erfurt glossary, was written ”by
+          a High German scribe” (ibid ); “the scribe excuses himself by
+          the remark at the end, sicut inveni scripsi, ne reputes scriptori ”
+          (idem, 5). Like the Corpus, Épinal, and Erfurt glossaries, it is
+          reproduced in OET (111-121); a more complete edition is that
+          of Hessels (2011). Like the Erfurt glossary, it is listed under the
+          Épinal headword, for its accidence does not significantly differ
+          from either of the two.
+        6. The Lorica glosses and the Lorica prayer, both from the same
+          MS., are difficult to localise: Sweet (idem, 171-2) believes them
+          to be Kentish, while Campbell (1969, 12) writes that they are
+          “not rich in decisive dialect forms, but to be regarded as Mercian”;
+          so, too, with the glosses to the Blickling Psalter (OET, 122).
+          These will all be included in the Mercian chapter here, but the
+          uncertainty regarding their provenance must be kept in mind.
+        7. The Rushworth glosses (Mercian), conventionally Ru1 , are much
+          later — Toon (1992, 427) suggests 975 — published by Skeat,
+          they are reproduced by Sweet (1887, 125 ff.).
+
+Charters:
+
+
+        1. Original charters of Mercian origin are ch. 47 and 48 (OEG,
+          10).
+        2. Ch. 9-14 contain English place- and personal names only, but
+          will nonetheless be examined.
+
+
+
+3.1.2 Unstressed vowels in frequently found forms
+In the Mercian dialect in particular, it must be kept in mind that forms
+found in the charters represent few occurrences, whereas those in the VP
+
+=== PDF sheet 042 ===
+30                                                 CHAPTER 3.     MERCIAN
+
+
+
+
+may represent hundreds.
+                gV- bV-        1sg       pret pl        Gen.sg.   Dat.sg.   AD ca.
+     Épinal       gi-   bi-    -u        -un (-on)      -es       -e (-i)   700
+     Corpus       ge-   bi-    -o (-u)   -un (-on)      -es       -e (-i)   725
+     Blickling    ge-   —      —         —              —         -e?       725
+     Ch. 9 - 14   —     bi-    —         —              -es       -æ?       737-802
+     VP           ge-   bi-    -o (-u)   -un (-on)      -es       -e        825
+     Lorica gl.   ge-   be-    -o        —              -es       —         825
+     Lorica pr.   ge-   bi-    —         -on            -es       —         825
+     Charter 47   ge-   bi-    —         —              -es       -e        836
+     Charter 48   ge-   bi-    -e        -un            -es       -e        840
+     Ru1          ge-   be-    -e        -un, -on/-an   -es       -e (-æ)   975
+
+
+3.1.3 Discussion of less common forms
+The Épinal Glossary
+
+
+        1. gi-: an unusual form in Mercian, but the most common one in
+           the Épinal glossary: it appears 40 times, whereas ge - appears
+           14 times; gy - is found once (Dieter, 1885, 46). Similarly, bi- is
+           found frequently while *be - is not found (ibid ).
+
+        2. The 1sg present ind. in -u occurs once.
+
+        3. -un is by far the most common st pret pl. ending; -on (MS:
+           <or>) occurs once (idem, 68).
+
+        4. The dative terminates in -e ; instrumentals in -i are found in the
+           ja - and wa -stems (idem, 80; 82), cf. Corpus.
+
+The Corpus Glossary
+
+
+        1. The pretonic prefix ge- outnumbers gi - 150 to one; be - does not
+           occur, whereas bi- is frequent. (Dieter, 1885, 29).
+
+=== PDF sheet 043 ===
+3.1.   THE OLD MERCIAN DATA                                                  31
+
+
+        2. In the 1sg present ind., forms in -o and -u are in free variation. So
+           too for the st pret pl. ind., though -un is slightly more common
+           there. The gen.sg. is -es ; the n -stems have -an (once: -on ).
+        3. The dative, under which is included the instrumental in the
+           above table, is interesting. The forms in -i appear to be in-
+           strumentals (Dieter, 1885, 79); thus, they appear not to reflect
+           the inherited WGmc. instrumental (*-u, cf. OHG -u ) but rather
+           a dative form with confusion of the front vowels, cf. Ruthwell
+           rodi — though rodi is a feminine o -stem whereas in Corpus the
+           -i ending is found on masculine a -stems.
+
+The Blickling Glosses
+
+
+        1. berende (3): though this form could be a noun in the dative
+           or plural, the word which it glosses, fecundae (which could also
+           be a dative or a plural), makes it much more likely a present
+           participle.
+        2. tinde bogan (18): though this glosses tetenderunt arcem (plural
+           perfect), bogan is probably to be read as an infinitive and not as
+           a st pret pl.
+
+Charters 9-14:
+
+
+        1. Ch. 9 (736 AD): No interesting unstressed vowels, though the
+           reference to a rex suutanglorum may be of interest from a philo-
+           logical point of view.
+        2. Ch. 13 (770): the -æ in final position in saluuerpæ is unusual:
+           here, -e would be expected.
+        3. Ch. 14 (779): This text has two genitive singular forms in -es.
+
+The Vespasian Psalter
+
+=== PDF sheet 044 ===
+32                                               CHAPTER 3.      MERCIAN
+
+
+
+
+       1. Prefixes, Zeuner (1881, 62): always ge -; 200 bi - as against 20
+          be -).
+       2. The 1sg present ind. of the strong thematic verbs is “-u, daneben
+          findet sich vereinzelt -o und ganz selten -a und -e.” (idem, 92-
+          3); ie. 99 occurrences of -u, 7 -o, and one -a ; “die formen auf
+          -e . . . sind möglicherweise gar nicht die indik.-formen, sondern
+          konjunktive, indem der übersetzer die futurformen auf -am mit
+          dem konj. verwechselte.” (ibid ). In the weak verbs, -o is more
+          common, particularly in the ja -verbs; one form has -a, and two
+          forms have -e — “diese beiden formen lassen sich nicht als konj.
+          auffassen, es liegt also hier wirklich die (im ws. gewöhnliche)
+          indikativendung -e vor.”
+          The -e form is spreading, whereas the back vowels u and o in
+          particular are confused. It is interesting that forms in a appear;
+          this may perhaps indicate the next stage of the vowel merger.
+
+       3. The st pret pl. is “durchaus -un : gegenüber 235 -un finden sich
+          nur 16 -on ” (idem, 98); the situation in the present (e.g. sindon,
+          sindun ) mirrors the preterite. No forms in -an are found.
+       4. The dat.sg is -e ; an instrumental in -a appears rarely (Zeuner,
+          1881, 120). The n -stems have -an throughout.
+
+The Lorica glosses
+     ic sio wegen (74): this glosses vehor (-ar), making it either “I am
+     being carried” (present) or “I will be carried” (future).
+
+The Lorica Prayer
+
+
+       1. Sweet classifies this text as Kentish (OET, 174), whereas in the
+          OEG (12), it is regarded as Mercian: but as stated in the OEG,
+          they are not rich in decisive forms, and may originate from a
+          Mercian scribe in Kent or from a dialect otherwise not attested.
+          For example, the form deg is commonplace in Kentish, but is also
+
+=== PDF sheet 045 ===
+3.1.   THE OLD MERCIAN DATA                                                 33
+
+
+           found in the VP ; the rising diphthong found in iorðan could also
+           belong to either dialect.
+
+        2. The n -stems all terminate in -an ; the form noman has seen some
+           discussion already. Of forms in ge - there are several; bi - occurs
+           once (10).
+
+Charter 47
+
+
+        1. in heanbyrg (1): the dat.sg. form shows i -Umlaut, but the -i -
+           has been syncopated; see, however, aet heanbyrig (13-14).
+
+        2. aet, ðaem, ðaes (9, 10): cf. the Kentish forms with -e - as well
+           as ðes (9) in the same charter.
+
+        3. ðy (13): the particle WS þe.
+
+Charter 48
+
+
+        1. hiobanne 7 to siollanne (2-3): note the inflected infinitive in -
+           anne.
+        2. werun (17): “nearly illegible from wear” (Sweet, 1885, 454, note
+           2).
+
+Rushworth Glosses (Ru1 )
+
+
+        1. The Ru1 shows a remarkable amount of mixing of the back vow-
+           els: though the st pret pl. is generally (121 occurrences) -un, -on
+           appears 55 times and -an 39. Additionally, -en and -aen make
+           up 9 occurrences (Brown, 1892, 49-50).
+
+        2. The gen.sg. is usually -es, though rarely -as, -os (idem, 71).
+
+        3. The dat.sg. is usually -e, though rarely -æ (ibid ).
+
+        4. The n -stems terminate in -an, ibid, 79 ff.
+
+=== PDF sheet 046 ===
+34                                                        CHAPTER 3.        MERCIAN
+
+
+
+
+           5. The prefixes are all be Ce -, though be - is not well attested. See,
+              however, Sweet (1887, 143).
+
+           6. The gen.pl. of dæg appears in the forms -ena, -ona, -ana (OEG,
+              572), as in some late Northumbrian texts.
+
+
+
+3.2 Tendencies in Old Mercian
+As illustrated in the above table, the interchange between u and o is at-
+testable throughout the OE period. This is the case not just in the endings
+shown in the table, and can hardly be seen as anything else than a phono-
+logical merger of these two Gmc. phonemes in the unstressed syllables.
+      As far as the dat./loc. forms are concerned, it would be careless to
+attribute the -i -forms to phonological confusion of all unstressed e /i vowels:
+the situation in the pretonic prefixes suggests that e and i were indeed
+separate throughout the period (as ge - and bi - are the forms normally
+found), though Épinal gi - is an anomaly.15 The prefixes appear to have been
+following a different development than the vowels found in final syllables.
+      The (infrequent) -as -spellings of the gen.sg. in the Rushworth glosses
+suggests that [a], too, was being approximated to the [o]∼[u] continuum.
+      In the front vowels, e and æ are sometimes confused; going by the above
+explanation for i and e, this suggests two distinct front vowel phonemes,
+one high (∼[i]) and one low-mid ([e]∼[æ]).
+
+
+
+3.3 Later developments in Mercian
+Mercia encompasses what is now (and was during the ME period) the Mid-
+lands. This means that the Midlands dialect which would later flourish in
+London is largely a continuant of the Mercian dialect, and that the same
+is true for the ModE standard language. The later texts examined for the
+Mercian (i.e. Midlands) dialect in the ME period are the Peterborough
+     15 Possibly, the forms found in Épinal may be explained geographically, cf. the table
+for the Northumbrian dialect in section 4.1.2.
+
+=== PDF sheet 047 ===
+3.3.   LATER DEVELOPMENTS IN MERCIAN                                        35
+
+
+Chronicle and the Orrmulum from the East Midlands and the Ancrene
+Wisse from the West Midlands (see the map in section 1.1.2).
+  The Peterborough Chronicle partially retains the contrast of the st pret
+pl. (-on 126, -en 56, -an 45) and the st ppl (-en 109, -on 13, -an 11), but
+there are obvious signs of confusion, and the merger to @ was probably well
+underway even in this twelfth-century text (Krygier, 1994).
+   The Orrmulum, also of the twelfth century, is clearly the most divergent
+of these texts. Orm has devised his own writing system, and his language
+is also notable for having many loan-words of ON origin and few of French.
+While the unstressed vowels in the grammatical endings are all e (e.g. infin-
+itive, st pret pl. -enn ), notably the prefix bi - retains the i -vocalism found
+in Old Mercian.
+   In the Ancrene Wisse — also: Ancrene Riwle — of the early thirteenth
+century is written in the AB language first recognised by Tolkien (1929), “an
+English older than Dan Michel's and richer, as regular in spelling as Orm's
+but less queer; one that has preserved something of its former cultivation.
+. . . This is the language first and foremost of the Corpus Christi MS. of the
+Ancrene Wisse (106). Characteristic of this language is “the weakening of
+unaccented vowels to e ” (118); see also Tolkien's (1962) edition of the text.
+   Based on this very limited sample size, the levelling to @ was largely
+completed by 1300, though some areas in the central midlands (around
+Peterborough) may have retained a contrast between front and back vowels.
+This would be supported by the accidence found in the fourteenth-century
+Ashburnham XXVII MS as reproduced in Sisam (1967, 117 ff.).
+   Notably, the Midlands dialects distinguish the endings of the 3sg present
+ind. and the pl. present ind.: in the North, both endings had become -es,
+whereas in the south, both forms had become -eþ; the Midlands dialects
+had 3sg present ind. -(e)þ and pl. present ind. forms in -en (Brunner,
+1953, 74), cf. the distinction in ModE: -s /-Ø.
+
+=== PDF sheet 048 ===
+
+=== PDF sheet 049 ===
+Chapter 4
+
+Northumbrian
+
+Northumbrian shares with Mercian the Anglian smoothing of diphthongs
+(see page 27); it is defined as a dialect apart from Mercian by several unique
+features, some of which encompass the unstressed syllables.
+
+   1. The loss of final -n : not uncommonly, final -n following an unstressed
+      vowel, particularly -u -, will fade. Such is the case with the st pret pl.
+      verb forms (commonly Northumbrian -u ), the word “seven” (PsScho-
+      lia: sifu ), and n -stems (Ruthwell Cr.: galgu ).16
+
+   2. /æ/ > /a/ before rC (“but invades some Mercian texts”, OEG 258:
+      144).
+
+   3. Products of the second fronting are rarely found in Northumbrian.
+
+   4. “The chief dialectal distinction arising from vowel contraction is the
+      development of diphthongs with mid or high first elements and un-
+      rounded second elements, e +a, i +a in North. and VP, 238” (OEG,
+      264.
+
+   5. Campbell (1969, 260) writes: “W-S and North. are distinguished
+      from Kt. and Merc. by much more extensive diphthongization of vow-
+  16 The connection between Old Northumbrian loss of final -n (e.g.   sibu and that in
+Old Norse is tempting (e.g.   siau — both forms in opposition to e.g. WS seofon and
+ModE “seven”), but this appears anachronistic and unnecessary: the Ruthwell cross is
+pre-viking, and ON did in any event not lose the 3pl.pret ending -un.
+
+
+
+                                          37
+
+=== PDF sheet 050 ===
+38                                                CHAPTER 4.          NORTHUMBRIAN
+
+
+
+
+         els by the influence of preceding palatal consonants . . . This agreement
+         of North. with W-S against the intervening Merc. is puzzling from the
+         point of view of dialect geography”. But it need not be, see Samuels
+         (1971, particularly 4-5) (explaining another problem, but making a
+         point which is equally relevant to this one): “The late appearance of
+         correspondences does not prove that there was no original connection.
+         Phonetic change is determined largely by the suprasegmental features
+         of juncture, stress, pitch and intonation, which are never recorded
+         in early writings. The same change may appear, therefore, centuries
+         after the two groups of speakers have separated, yet be the result of
+         the same conditioning factors that have been operating ever since the
+         separation.”
+
+      The Northumbrian dialect
+
+         is above all to be identified by means of the inscription in runes
+         on the Ruthwell Cross, a bulky monument17 which belongs to a
+         spot in the heart of Northumbrian territory (Ruthwell in Dum-
+         friesshire). General linguistic agreement with this inscription
+         allows us to regard as Northumbrian a number of short pieces
+         of the same, or perhaps of a slightly earlier, period: the two
+         earliest MSS of Cædmon's Hymn, the earliest MSS of Bede's
+         Death-song and of the Leiden Riddle, and the runic inscriptions
+         of the Franks Casket (OEG, 4).
+
+This constitutes the early section of the Northumbrian corpus18 , though
+the Bewcastle Column19 may be added to the list; of the later texts, the
+     17 Howlett (1997, 290) is more generous than Campbell: “The Ruthwell Cross, one
+of the most glorious relics of Anglo-Saxon culture, exhibits an extensive programme of
+sculpture, the longest extant series of Anglo-Latin inscriptions, the longest Old English
+runic inscription, and the most beautiful poem in the Old Northumbrian dialect, which
+exhibits Biblical style in the disposition of its metrical forms, words, and runes.”
+     18 Other minor inscriptions have been tied to the pre-migration Anglian dialects: an
+example of this is the Undley bracteate, on which Nielsen (1991a) finds “no linguistic
+evidence to support a Schleswig (or Angeln) origin”.        In any case, items found on the
+continent which cannot with certainty be linked to OE and its dialects are excluded here.
+     19 It was dated by Sweet (1885, 124) to “? 670”. Later scholarship puts it slightly later:
+Page (1995, 47-70) posits a date of 750-850 as “possible” on linguistic grounds; according
+
+=== PDF sheet 051 ===
+4.1.   THE OLD NORTHUMBRIAN DATA                                                       39
+
+
+Durham Ritual, the Lindisfarne Gospels, and Ru2 will be examined.
+
+
+4.1 The Old Northumbrian data
+The most remarkable problem of the corpus of the Northumbrian dialect
+is that while the early and late texts are, in fact, represented rather well,
+there is a 150-year hiatus in the data set; what happened between these
+two groups of texts can only be inferred.
+
+
+4.1.1 Texts
+The following texts have been examined, based upon the table reproduced
+in section 1.1.3. As usual, they are listed chronologically, with the oldest
+texts appearing first.
+
+The Franks Casket:
+       This magnificent casket, made from whale's bone20 and silver decor-
+       ations and hinges (which are now gone) is presently in the British
+       Museum, apart from the right panel, which is in the Bargello mu-
+       seum. The casket bears carvings of what appears to be Germanic
+       tradition, Celtic mythology, a Christian adoration, as well as graeco-
+       roman imagery. The runes are legible and bear their usual values
+       (except on the right panel, which is discussed in the commentary on
+       unusual forms), and some Latin script is also found; both scripts are
+       used alternatingly for English and Latin.
+to Campbell (1969, 4) it can “be assigned to the eight century without hazard”
+  20 Eichner (1990) points out that in the inscription hranæs ban, hran “könnte auch
+ein ganz anderes Tier bezeichnen, nämlich das Walroÿ, und das Kästchen könnte aus
+Knochen (vielleicht Stoÿzähnen) des Walrosses geschnitzt sein”); this may be possible
+(and is supported by the opposition hron- :    hual- in the PsScholia glosses, i.e.   con-
+temporary Northumbrian usage; see further the reference to clearly different animals in
+Ohthere (Bately, 1980, 15.15 ff.), though hwales bane ), but unlikely given the size of the
+casket: the largest panel measures 22.9 by 19 centimetres.
+  I would like to thank Arne Bjørge at the Norwegian Institute of Marine Research for
+confirming this: “Det er nok mulig å finne hvalbein med en diameter som er stor nok for
+å danne flater på 23 x 19 cm (for eksempel underkjevebein på retthval). Hvalrossen har
+ingen bein eller tenner som er store nok til de målene du oppgir.” (e-mail correspondence,
+April 25th, 2014).
+
+=== PDF sheet 052 ===
+40                                     CHAPTER 4.      NORTHUMBRIAN
+
+
+
+
+The Bewcastle Column:
+     This very early runic monument, presently in St Cuthbert's church-
+     yard in northern Cumbria, contains a shortish runic inscription of 13
+     lines as printed in Sweet (1887, 86); the column and the contemporary
+     Ruthwell cross have been referred to as “the greatest achievement of
+     their date in the whole of Europe” (Pevsner, 1967).
+
+The Ruthwell Cross:
+     The Ruthwell cross bears an inscription connected with the poem
+     The Dream of the Rood, attested elsewhere no earlier than in the 10th
+     century Vercelli book. It stands now in Dumfriesshire in Scotland,
+     and has been noted for archaic language as well as for its aesthetics.
+     Sweet's editions in OET (125) and 1887 (p. 97) give a useful impres-
+     sion of the difficulty in reading the cross; a reconstruction of the poem
+     is found in Ball (1991, 112-3); see also Howlett (2005, 208 ff.). The
+     line numbers referred to in the subsequent discussion are those used
+     by Sweet (1887).
+
+PsScholia:
+     Though it provides only a few glosses to various psalms, the text is
+     interesting because of its age. It has been edited and published by
+     Napier (1900, 54).
+
+Bede Glosses:
+     The Bede glosses (Arula : hearth; destina : feurstud; jugulum : stic-
+     ung, Bede1 , OET 123) represent too little material to warrant inclu-
+     sion beyond this list.
+
+Cædmon's Hymn :
+     Of this hymn — the first produced by Cædmon, and the only one
+     preserved — four copies in the Northumbrian dialect exist next to a
+     later WS translation. The exemplar found in the Moore MS is the
+     oldest, “written about 737” (Sweet, 1984, 181), see also Bede's account
+     of the poet Cædmon, idem, 45-50.
+
+=== PDF sheet 053 ===
+4.1.   THE OLD NORTHUMBRIAN DATA                                             41
+
+
+Bede's Death Song:
+       The oldest MS (St. Gall 254) is of the ninth century (idem, 182),
+       “evidently an accurate copy of an Old Northumbrian original” (OET,
+       149). Line references are to Sweet (1984, 183).
+
+
+The Leiden Riddle:
+       “The riddle is written at the end of the MS. Voss 106 . . . in [a] con-
+       tinental hand of the 9th century”; “evidently a direct copy of an Old
+       Northumbrian original” (OET, 149-150). It is a “translation of Ald-
+       helm's riddle De lorica ” (Sweet, 1984, 183); line references ibid.
+
+
+The Rushworth Glosses (Ru2 ):
+       The Northumbrian Rushworth glosses, conventionally Ru2 , repres-
+       ent the language of southern Northumbria in the 10th century; see
+       Lindelöf (1901).
+
+
+The Lindisfarne Gospels:
+       These glosses were produced “by Aldred the priest in the second half
+       of the tenth century, probably at Chester-le-Street, Durham” (Sweet,
+       1984, 215); their accidence has been thoroughly examined by Ross
+       (1937).
+
+
+The Durham Ritual
+       Lindelöf (1890, Preface, ii-iii) writes: “Die Handschrift des Rituale
+       Ecclesiae Dunelmensis befindet sich in der Bibliothek der Domkirche
+       zu Durham, wo sie mit A. IV. 19 bezeichnet ist . . . Über die mundart-
+       liche Stellung des Rit. ist soviel ich weiss immer nur eine Meinung
+       ausgesprochen worden. Die charakteristischen Eigentümlichkeiten des
+       northumbrischen Dialektes . . . treten sogar bei einer oberflächlichen
+       Betrachtung der Glosse gleich zum Vorschein.” Toon (1992, 427) dates
+       the gloss to around AD 975.
+
+=== PDF sheet 054 ===
+42                                            CHAPTER 4.     NORTHUMBRIAN
+
+
+
+
+4.1.2 Unstressed vowels in frequently found forms
+                 gV-         bV-         1sg           pret pl     Gen.sg.     Dat.sg.      AD ca.
+ Franks C.       gi-         —           —             —           -es         -e (-i)      675
+ Bewcastle       ge-         —           —             -on         -es         —            700
+ Ruthwell        gi-         bi-         —             -un         -æs         -æ, -i       700
+ PsScholia       —           —           —             -u          -aes        -e           725
+ Cædmon          gi-         —           —             -un         -æs         -e/-æ        737
+ BDS             —           —           —             —           -aes        -ae (-e)     750
+ Leiden R.       gi-         bi-         -æ            -un         —           -æ           750
+ Ru2             gi- (ge-)   bi-         -o (-u, -e)   -un (-on)   -es         -e           975
+ Lindisf.        ge-         be-         -o (-a, -e)   —           -es         -e (-o)      970
+ Durham R.       gi- (ge-)   bi- (be-)   -o ((-e))     -on         -es (-æs)   -e (-æ/-i)   975
+
+
+4.1.3 Discussion of less frequent forms
+The Bewcastle Column:
+
+
+        1. The stressed vowels are largely conventional: as in other OE
+             dialects, the neuter nom./acc. demonstrative þis shows an -i-
+             vocalism (like OF), as opposed to the north and southwest Gmc.
+             outcomes with -e- (OI þessi, OHG deser )
+
+        2. þecn (2): note the monosyllabicity of this form; the second vowel
+             of ModE token is a later addition, as is that of ModG Zeichen
+             (compare also OI tákn ). The word -burug is polysyllabic - not a
+             particularly common outcome in eOE, but see also the uncom-
+             mon OHG buruc as well as section 6.1.2.
+
+        3. The adjective þun “slender” is also somewhat unusual: the form
+             usually found in WS is þyn(ne), but the Bewcastle form is a
+             neuter singular in concordance with þecn (with strong declension
+             appositively), and thus a reflex of Gmc. *þunnu, a u -stem. The
+             later forms may be the result of a generalisation of the plural,
+
+=== PDF sheet 055 ===
+4.1.   THE OLD NORTHUMBRIAN DATA                                              43
+
+
+           oblique, or feminine forms - or simply from the weak declension
+           - and thus show the i -Umlaut lacking here.
+        4. aft Alcfriþu (3): “In its more usual senses æfter can govern three
+           cases, the accusative, dative, and instrumental. . . . the accus-
+           ative usage is found quite frequently in certain Northumbrian
+           texts. . . . the ending of the following name [on the early main
+           inscription of Bewcastle] has an unusual rune or bind-rune form
+           which has not yet been satisfactorily deciphered” (Page, 1995,
+           17, 20).
+        5. kyniq (4), kyninges (6), kyng (11); burug (9): interesting and
+           inconsistent svarabhakti vowels (see on the king-word also Pieper
+           (1991, 357)).
+
+The Ruthwell Cross:
+
+
+        1. -æ (1, passim): The -e in final position is usually -æ in Old
+           Northumbrian; here, due to the weathered state of the monu-
+           ment, we cannot be quite certain of its manifestation; see Page
+           (1995, 29 ff.).
+        2. galgu (2): an old an -stem, this ought probably to be equivalated
+           to foldu, also an acc.sg. n -stem (Cædmon's Hymn, Leningrad
+           MS) - the loss of final -n is not unheard of in Northumbrian (Ball,
+           1991, 120), but the vowel nonetheless tends to appear rather as
+           -a (n ).
+        3. rodi (11): perhaps the most famous unstressed vowel in OE,
+           this form has been the subject of much debate. Ball (1991, 121)
+           believes it to be an error; but this aside, there are other options to
+           be considered. Either, it shows a confusion of /e/ and /i/, i.e. a
+           phonological process, or there is a grammatical explanation, e.g.
+           that the form is a distinct locative form rather than a dative.
+           The better explanation seems to be a phonological process where
+           the front vowels e and i were confused (as happened also in the
+
+=== PDF sheet 056 ===
+44                                     CHAPTER 4.     NORTHUMBRIAN
+
+
+
+
+         3sg present ind.: Franks -iþ; later -eþ). This confusion also
+         included the low front vowel æ, which is supported by the fre-
+         quent æ -spellings in Northumbrian of the gen.sg and the dat.sg.
+         æ, e, and i -spellings are found in both the prefixes and in the
+         gen./dat.sg.     In the same inscription blodæ (instrumental) is
+         found; this suggests that all three front vowels were confused
+         very early.
+         Another option entirely is to postulate an origin where blodæ
+         < OE dat. and rodi < Gmc. locative (see also Bammesberger
+         (1994)), only one of those cases would have to be merged with
+         the dative for the attested forms on the Ruthwell cross to be
+         consistent with this view. The -i locative (“locative” here in
+         the functional sense rather than necessarily the formal sense)
+         romæcæstri on the Franks Casket (left panel) would support the
+         view that the locative was distinct, whereas the instrumental was
+         formally merged with the dative; further, an inherited locative
+         resulting in OE -i is not unthinkable considering the PIE locative
+         *-(e/o)i.
+         The problems with positing a distinct OE locative are the fol-
+         lowing: (1) the inflectional vowels are confused elsewhere, and
+         make for uncertain evidence; (2) there are very few possible at-
+         testations even within OE; and (3) other Gmc. languages do not
+         have locative forms; the nearest languages which have attested
+         locative forms are Latin (sparingly, but e.g. domi ) and Greek
+         (again, sparingly, but e.g. pólei or Homeric eôthen ). There may
+         have been a locative in Celtic, but it is not attested as such in
+         Old Irish (McCone (1978) connects the PIE locative *-i to the
+         short dative).
+      4. kwomu (12): st pret pl. with loss of -n, cf. galgu.
+
+The Franks Casket:
+
+      1. One significant problem in examining the vowels on the Franks
+
+=== PDF sheet 057 ===
+4.1.   THE OLD NORTHUMBRIAN DATA                                             45
+
+
+            Casket is the comparative strangeness of the vowel symbols on
+            the right panel (on which see e.g. Eichner (1991, 608)).
+            The central controversy of this issue is the form on harmbergV,
+            where the final vowel may be either -a (Page, 1973, 178-9) or
+            “in Hinblick auf in romæcæstri der Romulusplatte und auf on
+            bergi auf dem Kreuz Thornhill III [9. Jh.] natürlich als -be2 rgi4
+            aufzulösen ist, aber doch auch als -be2 rgæ2 noch akzeptabel er-
+            schiene” (Eichner, 1991, 609).
+         2. romæcæstri : the final vowel here may be considered together
+            with Ruthwell rodi. Whether this is, in fact, two words romæ
+            cæstri with a Latin gen. romae as the first constituent (rather
+            than a native English compound) is arguable (Bammesberger,
+            1991, 631), but reading cæstri as a Latin gen. makes little sense
+            in this context. As with rodi on the Ruthwell Cross, a locative
+            form is theoretically possible, but confusion of the front vowels
+            is the better explanation.
+
+PsScholia:
+       There is not a lot of material here; it may be noting, if nothing else,
+       that the loss of final -n is found throughout (sifu, fyllu ), and that /a/
+       > /o/ before n (hron-) in stressed syllables, cf. Franks Casket. The
+       form hiru “indeed” is problematic: Holthausen (1934, “huru”).
+
+Cædmon's Hymn :
+
+         1. scylun (1): This form has been cited as evidence for OE pro-
+            drop; however, this need not be an example of pro-drop: see
+            Mitchell (1985).
+         2. hergan (1): This is the form of the Moore MS; Leningrad has
+            herga.
+         3. hrofe (6): cf. Leningrad hrofæ.
+         4. middungeard (7): Interestingly, Leningrad has middingeard here.
+            The Gmc. ja -stem *midjaz (Gothic midjis, midjungards ) tends
+
+=== PDF sheet 058 ===
+46                                           CHAPTER 4.        NORTHUMBRIAN
+
+
+
+
+             to produce -i - (OS middilgard, OHG mittingeard ) in WGmc.; WS
+             has middangeard (Sweet, 1984, 47), arguably making the Lenin-
+             grad form the most phonologically regular outcome in OE; Moore
+             -un and WS -an may be explained by analogy to the n -stems,
+             whose vocalism they equivalate in their respective dialects.
+          5. foldu (Moore: foldv ) (9): an n -stem, Northumbrian n -loss in the
+             acc. and the same vocalism in the unstressed syllable as seen in
+             galgu (Ruthwell Cr.).
+
+Bede's Death Song:
+        The retention of -i - in the 3sg present ind. ending is worth noting;
+        it is also found on e.g. the Franks Casket (twice, both on the rigth
+        panel, though see the discussion above on the vowel symbols of that
+        particular panel).
+
+The Leiden Riddle:
+
+
+          1. eorðu (11): an n -stem with loss of final -n. Note that final -n is
+             not always lost in the Leiden Riddle; intervocalic position may
+             help preserve it. Alternatively, one may argue that the word is
+             not an n -stem in this text.21
+          2. The 1sg present in -æ is the only early 1sg form in early Northum-
+             brian; unfortunately it may be a subjunctive.
+
+The Rushworth Glosses:
+
+
+          1. The prefixes gi -, bi - are by far the more frequent forms. Whereas
+             ge - occurs in 6-7% of the cases (Lindelöf, 1901, 79), be - is not
+             found once. Once, a syncopated form groefa is found.
+     21 This word appears to have had both strong and weak paradigms at the time of
+WGmc. splitting into the daughter languages: cf. ModG auf Erden, but otherwise an
+a -stem, and the twin paradigms in OS (dat. erthu : erthun ); in Gothic, the dative is
+airþai, i.e. either the weak inflection is a WGmc. innovation, or both paradigms existed
+in common Gmc. and Gothic generalised the strong inflection.
+
+=== PDF sheet 059 ===
+4.1.   THE OLD NORTHUMBRIAN DATA                                             47
+
+
+        2. The st pret pl. in -un occurs about 500 times; -on around 90.
+
+        3. The n -stems generally terminate in -a, though some forms in -o,
+           -u are found. The form sade may be considered an error (for it
+           appears but once); in the acc., -a appears more common. In the
+           nom./acc. pl., -u appears 33 times, -o 17, and -a 7; -æ and -e
+           both appear once (Lindelöf, 1901, 114-5).
+           The back vowels appear to be confused; the spread of -a - may
+           be a result of WS influence, though for some reason it is less
+           common in the plural - perhaps false analogy from the dat.pl. in
+           -um.
+
+        4. The 1sg present ind. has the following distribution: -o is found
+           200 times; -u 2; -e 4; -a once.
+
+The Lindisfarne Gospels:
+
+
+        1. The nom./acc.pl. neut. n -stems end in -o ; the acc.sg. of monno
+           appears as monne in 5% of the cases (Ross, 1937, 35).
+
+        2. The dat.sg. normally appears as -e, but six times, a form in -o is
+           found. A confusion of [e] and [o] is not supported given the reg-
+           ularity of gen.sg. -es and of the Northumbrian dative in general
+           (consistently -æ and -e ), so too with the st pret pl. -un, -on ; [u]
+           and [o] are, however, confused in nearly every early Northum-
+           brian text, and a shared origin with the OHG, OS instrumentals
+           in -u cannot be conclusively dismissed (Ross, 1937, 54-5).
+
+        3. One gen.pl. appears as taceno ; Ross (1937, 33) considers this an
+           “obvious archaism”.
+
+The Durham Ritual:
+
+
+        1. In the Durham Ritual, it is particularly interesting that the st
+           pret pl. forms in -un are entirely absent.
+
+=== PDF sheet 060 ===
+48                                        CHAPTER 4.      NORTHUMBRIAN
+
+
+
+
+          2. In the dat.sg., the ending is usually -e ; “[d]aneben kommen als
+             Endungen vor: æ in heofnæ 194,16 und -i (wahrscheinlich eine
+             alte Locativform): dægi . . . u. voegi 168, 6 (Skeat). 171, 4”
+             (Lindelöf, 1890, 103); see the previous comments on possible
+             locative forms on the Ruthwell Cross, Franks Casket inscriptions.
+
+          3. In the n -stems, the “Gen. Dat. Acc. Sg. u. Nom. Acc. Plur
+             gehen auf verschiedene Vocale aus” (idem, 114); the gen.sg. fre-
+             quently has -es by analogy from the a -stems.
+
+
+
+4.2 Tendencies in Old Northumbrian
+The most striking facts that emerge from the above study of the Northum-
+brian unstressed vowels is that forms in æ and e are confused throughout
+the period in the gen./dat.sg forms, whereas æ is never confused with the
+i of the pretonic prefixes (only the Bewcastle column has <e> once).
+     Later, the prefixes start to show e ; only in the Durham Ritual does i
+appear in the dat.sg. This may indicate one high and one low front vowel,
+both of which could appear similar to [e] but neither of which was actually
+confused in speech. In the back vowels, the same confusion of u and o is
+found as elsewhere; once, a appears in the 1sg present ind. in the gloss to
+the Lindisfarne glosses of the tenth century.
+     In the grammatical endings, -e and -æ are confused frequently; probably,
+the high vowel -i is also confused with the former. Though some of the forms
+in -i could represent inherited locative forms, the confusion of the vowel in
+the final syllable of the 3sg present ind. suggests a phonological explanation
+is better.
+     Front and back vowels are never confused in the earliest texts, if the 1sg
+present ind. in -e is considered a grammatical process.
+     The early loss of final -e in northern ME can probably be at least partly
+attributed to the loss of final -n observed as early as the Ruthwell Cross
+(however, the -n later appears more frequently in the st pret pl.: OEG,
+735f).
+
+=== PDF sheet 061 ===
+4.3.   LATER DEVELOPMENTS IN NORTHUMBRIAN                                  49
+
+
+4.3 Later developments in Northumbrian
+Though final unstressed -e was lost in all English dialects by the 1500s (see
+discussion in section 6.1.1), this loss occurred much earlier in the north
+(Brook, 1963, 64), and was likely accelerated by the eOE loss of final -n
+described by Luick (1940, 654; 715)
+   Where a consonant was retained, the penultimate vowel e became i ;
+phonologically, this probably entails a raising of centralish [e] (for which
+the only OE tangent that comes to mind is the late retention of the 3sg
+present ind. in -i -).
+   An important text in northern ME is the metrical English psalter, of
+which a sample is provided by Skeat (1912, 25 f.); later, Bruce and the
+Cursor Mundi (extracts are found in Brook (1963), 73-4; Bruce : Sisam
+(1967), 107 ff.) are prominent examples.
+   The northern dialects of Middle English and of the present day are, of
+course, most prominent for the heavy Norse influence they retain. And the
+ON influence is not limited to the vocabulary: Brook (1963, 61 ff.) provides
+many examples of ON influence on the northern dialects.
+   But these examples all cover aspects of phonology which are not relevant
+to the unstressed syllables, partly because they disappeared so early. Town-
+end (2012, 102) suggests that language contact may have contributed to this
+loss, but see discussion in section 7; the arguments are not convincing.
+   In the modern dialects of the North, the present participle is often -@n,
+whereas in the rest of the country it is -in. The northern forms are probably
+reflexes of the older participial formation -ande rather than southern -ing.
+The i -vocalism is, however, common in unstressed prefixes in the north (be -,
+de -), where some other dialects have @ (Wright, 1905, 227 ff.).
+   Another northern feature particular to the unstressed vowels is the half-
+stress that appears more often than in the south (for examples, see Brook
+(1963, 98)); a result of the half-stress is the non-reduction to [@].
+
+=== PDF sheet 062 ===
+
+=== PDF sheet 063 ===
+Chapter 5
+
+West Saxon
+
+WS is the dialect most copiously covered in the grammars of OE, and
+presents us with problems quite different from the northern areas: later
+texts are in abundance, while earlier texts are few and far between.
+
+
+
+5.1 The Old West Saxon data
+There are few WS texts from before ca. 900. From these, Ch. 3 and Ch. 20,
+the Cura Pastoralis, and selections from the Anglo-Saxon Chronicle have
+been examined.
+   Later, the Lauderdale MS of the OE Orosius provides a good example
+of native WS prose, particularly the tale of Ohthere's voyage, which is not
+a translation of a Latin original.
+
+
+5.1.1 Texts
+Charters:
+      Ch. 3 is from 778; 20, from 847 (OET, 427; 433). The two charters
+      have been selected from the body of available WS charters (Sweet's
+      Ch. 1-3; 20) because they are the only ones extant in contemporary
+      MSS and thus unlikely to be subject to later interference (OEG, 16).
+
+Martyrology fragment:
+
+                                     51
+
+=== PDF sheet 064 ===
+52                                           CHAPTER 5.       WEST SAXON
+
+
+
+
+     The OE Martyrology is preserved in several MSS of disparate origins.
+     MS Add. 23211 is “evidently of the second half of the 9th century,
+     which is confirmed by the West-Saxon genealogy not coming further
+     down than Alfred. The genealogies being exclusively Saxon seems
+     to point to that dialect, but both texts show several un-Saxon forms
+     . . . alongside of specifically Saxon ones . . . ; perhaps the MS. is a copy
+     of a West-Saxon original by a Kentish scribe” (OET, 177); the origin
+     of the Martyrology is probably Mercian (Sisam, 1953).
+
+
+Cura Pastoralis :
+     MS Cotton Tiberius B XI, as reproduced in Sweet (1871), is thought
+     to be contemporary. It thus stems from the later years of king Alfred's
+     reign in the late ninth century.
+
+
+The Old English Orosius :
+     Sweet (1883) is a good edition of the text; a later edition with com-
+     mentary on the different MSS is that of Bately (1980).
+
+     The Voyage of Ohthere is a tale presented to King Ælfred by a Norse-
+     man, and may have carried over peculiarities from ON; nevertheless,
+     it is interesting because it was not translated from Latin.
+
+
+The Anglo-Saxon Chronicle :
+     The Anglo-Saxon Chronicle is a very important OE text, which is
+     reflected by the many MSS it has been preserved in.
+
+     The Parker MS represents the best example of older WS language;
+     it can be dated to ca. 925 (Toon, 1992), and is edited by Earle and
+     Plummer (1965). A linguistic sketch is founds in Sprockel (1965, esp.
+     vol. I).
+
+=== PDF sheet 065 ===
+5.1.   THE OLD WEST SAXON DATA                                                 53
+
+
+5.1.2 Unstressed vowels in frequently found forms
+                gV-   bV-    1sg        pret pl     Gen.sg.          Dat.sg.   AD ca.
+ Charter 3      —     —      —          —           -es              -e        778
+ Charter 20     —     —      —          —           -es              -e        847
+ Mart.          ge-   —      -o         -on         -es              -e?       875
+ Cura P.        ge-   be-    -e (-o)    -on         -es (-as, -æs)   -e (-a)   900
+ Chronicle      ge-   be-    —          -on (-un)   -es (-æs)        -e (-æ)   925
+ Orosius        ge-   be-    —          -on         -es              -e        925
+
+5.1.3 Discussion of less frequent forms
+The less frequent forms found in WS texts include the following:
+
+Charters:
+       Charter 3 is not, in grammatical endings, significantly different from
+       the later WS standard language which would eventually spread to a
+       large part of England by the time of the Norman conquest. In Ch.
+       20, the situation is the same.
+
+Martyrology fragment:
+
+
+
+         1. wildo (17): later WS -u (cf. Sweet (1970, 29)): perhaps an
+             indication of confusion of [u] and [o] in eWS; interestingly, the
+             st pret pl. -on appears quite consistently in WS, whereas the
+             adjective inflection drifts toward -u. See also limo (18), with
+             the expected acc.pl. ending -u (cf. ricu ); see also Bjorvand and
+             Lindeman (2007, 647).
+         2. biddo (47): because of the somewhat uncertain MS tradition
+             this form may be considered an example of Mercian or Kentish
+             influence (cf. Sisam (1953); OET, 177); but given the -o form
+             found in the Cura Pastoralis — see the following paragraph —
+             it may equally well be another attestation of WS -o ; see also the
+             Leiden Riddle “found in West Saxon in the Exeter Book” (Sweet,
+             1984, 183): hafu (5), OET, 151.
+
+=== PDF sheet 066 ===
+54                                         CHAPTER 5.        WEST SAXON
+
+
+
+
+The Cura Pastoralis :
+
+      1. As in Kentish, [t]he use of io for eo is common in early W.S.,
+         and appears but rarely in MSS. of the late W.S. period. Examples
+         offer themselves on every page of the Pastoral. (Sweet, 1871,
+         xxv); although this may not be directly relevant to the evaluation
+         of the unstressed vowels, it supports a shared origin of WS. and
+         Kentish.
+      2. The gen.sg. and dat.sg. inflections sporadically appear (in the
+         a -stems; the other stem types had generalised -e - in WGmc.)
+         with the archaic forms -as, -a. “The gen. gæsðæs (291.9) shows
+         the intermediate stage” (idem, xxxvi).
+      3. The old WGmc. ending -o of the 1sg present ind. appears once
+         in the Cura Pastoralis. The later date of the WS texts compared
+         with the Kentish may camouflage a common south-eastern trait
+         in the retention of the -o until the eight or ninth century, see also
+         the chapter on Mercian (pps. 27 ff.). Otherwise, the language
+         is plain eWS; see, however, Sweet's (idem, xxxvii) note on the
+         inflection of adjectives as a distinctive marker of early as opposed
+         to late WS language.
+
+The Anglo-Saxon Chronicle :
+
+      1. Sprockel (1965, 78) notes that the svarabhakti vowel in the word
+         byrig (dat.sg.) always appears in the simplex (also: berig ), but
+         -burg appears in the compounds.
+      2. The dat.pl. appears as -on twice, cf. mid horsan in Ohthere.
+         In the ASC, these are both tribal names: myrceon, -seaxon, cf.
+         the unusual inflections found in place-names, e.g. merce in the
+         acc.pl. (discussed on the following page).
+
+The Old English Orosius :
+
+=== PDF sheet 067 ===
+5.1.   THE OLD WEST SAXON DATA                                                           55
+
+
+           1. A u -stem acc. form in -o appears once (Ohthere): medo, <
+             WGmc. *medo. This form is probably an archaism, see also the
+             possible archaic nominative u -stem found on the Franks Casket
+             of Northumbria, flodu.22 Possibly, archaic forms were retained
+             in some forms of the u -stems because of very frequent words like
+             sunu (though our limited early data may reveal only a very small
+             subset of an otherwise thriving paradigm).
+
+           2. mid horsan : this form appears to be an early levelling of the
+             dat.pl., otherwise in -um. Since the form horsan appears as
+             a sg. n -stem as a proper noun in the Chronicle (455:                   7   his
+             broðor Horsan man ofsloh, Earle and Plummer (1965, 13)), it is
+             tempting to consider whether this is the case here, too (for the
+             sg. need not specify only the numeral sense “one”, but may also
+             signify a concept or manner), but the word does not appear to
+             be an n -stem here: þær beoð þa swiftan hors ungefoge dyre.
+
+
+    Place-names, as in the other dialects, occasionally appear with the end-
+ing -e (e.g. merce, charter 20), see Sweet (1970, 14) for the acc. plural
+instead of the expected -as ; some common nouns have the same tendency.
+Sweet does not explain the origins of this ending (and neither, to the know-
+ledge of the present writer, has anyone else); it is tempting, considering how
+these endings tend to appear in place-names, to interpret this as analogy
+from the strong adjective inflection in plural -e.
+
+   22 Though orthographically the form on the Franks Casket is -u, it does not necessarily
+entail [u]; in fact, there are parallel possible reflexes in Anglo-Frisian runic inscriptions
+of an hypothesised generic back vowel WGmc. *-ż:       skanomodu on a solidus, Honorius,
+fifth (?)   century (though Page (1973, 35 f.)     places it in the sixth; however, on p.
+186, idem, the dating is questioned. Page also questions whether it is, in fact, English)
+Page further (188, idem ) writes: “the ending has the unstressed vowel -u found in other
+Frisian runic texts”; this refers to, among others, the specimens mentioned by Euler
+(2013, 43). In comparison with the Franks Casket form flodu, then, what is interesting
+to note is that these forms are all a -stems (if one ties -modu to later OE mod etc., which
+is reasonable), i.e. the -u is not necessarily a retention of an old stem vowel. Interesting
+on the skanomodu inscription is Bammesberger (1990); on the “generic back vowel” and
+runic Anglo-Frisian unstressed vowels, see also Nielsen (1991b).
+
+=== PDF sheet 068 ===
+56                                          CHAPTER 5.       WEST SAXON
+
+
+
+
+5.2 Tendencies in Old West Saxon
+In comparison with the other OE dialects WS immediately appears quite
+regular in orthography and accidence. It is notable that syncopation of
+Gmc. long vowels is unusual in WS and that the n -stems have merged to
+-an in the oblique cases. The unique acc. form medo in the Orosius is also
+very interesting, and represents unchanged a WGmc. vowel not commonly
+found in OE as late as the ninth century.
+     Sometimes, the high back vowels o /u are confused, and, later (e.g. in
+the Orosius) these are mixed with a, too, thus giving the impression of only
+a single back vowel phoneme, perhaps with allophones (approx.) [a], [u],
+and [o]. See also Cosijn (1883, 2. Hälfte: 124-5) for the vowel in the st pret
+pl. ending -Vn. As is noted in the discussion on Kentish, this confusion
+of back phonemes appears to have been common to the southern dialects
+from the ninth century and on.
+     The verbal prefixes WGmc. *be -, *ge - appear only as ge -, be-. The
+same is true for the nominal prefix ge - of the same origin. The first person
+singular present is -e. In CP, the form cweðo occurs once; in the Martyrology
+fragment in (Sweet, 1885, 177-8), the form biddo (from MS. Add. 23211) is
+found. Sweet (ibid ) suggests “a copy of a West-Saxon original by a Kentish
+scribe”; whereas (Sisam, 1953, 216) suggests a “mixture of Anglian and West
+Saxon forms”. The origin of the Martyrology is probably Mercian.
+     The ending of the 3sg present ind., generally in OE -eð, -iþ or some
+variation thereof, is usually syncopated in WS.
+     The dative and genitive sg. of the abstract nouns in -ung is generally
+-unga ; in other forms, -es and -e are found (Cosijn, 1883, 2. Hälfte: 17).
+
+
+
+5.3 Later developments in West Saxon
+Later, the dative plural -um appears more frequently as -on, -an. As the
+written language of Wessex eventually became a sort of Koine English, it
+is difficult to establish just what defines it as a particular dialect: many
+
+=== PDF sheet 069 ===
+5.3.   LATER DEVELOPMENTS IN WEST SAXON                                   57
+
+
+features from other dialects are found in WS; and other dialects borrow
+features from WS.
+   What is apparent, is that the language changes rapidly even from the
+time of Ælfred to that of Ælfric; later, the text of the Owl and the Night-
+ingale may represent the language of Wessex or the south-west Midlands,
+though localising the dialect is difficult.
+   After about 1300, the London dialect with its largely Midlands origin
+becomes the literary standard. Authors like Chaucer have been important
+in English literature through to the present day, and must have contributed
+to the prestige of the London dialect, which after the import of Caxton's
+printing press was allowed to spread. An important source to the south-
+western ME dialect is John of Trevisa: see Sisam (1967, 145 ff.)
+   Generally, the unstressed vowels of inflectional endings had all become
+e, implying that regardless of whether they were all phonetically identical,
+they were no longer phonemically distinct. The weak declension left traces
+in the plural until the fourteenth century in the south (ModE children,
+brethren, and kine : see Skeat (1912, 61)). Commonly, the weak adjective
+declension is retained after demonstratives. The infinitive is generally -e in
+the south, though -en occurs sporadically, seemingly for metrical reasons.
+   The past participle (< OE -en ) had, like the infinitive (< OE -an,
+become -e, with -en appearing sporadically; the prefix ge - had mostly been
+reduced to y - by the fourteenth century, as in Chaucer's London dialect;
+Gower rarely uses the prefix (Sisam, 1967, 292) though he was Kentish
+(Skeat, 1912, 62).
+   Generally, both of the southern dialects remained conservative into the
+ME era as far as the unstressed vowels are concerned (Brook, 1963, 71-3).
+Wright (1905, 266) notes that in ModE, adjectives in -en (e.g. “silken”) are
+more widespread in the south-west; some SW dialects retain a prefix @ - in
+the st ppl (idem, 297).
+
+=== PDF sheet 070 ===
+
+=== PDF sheet 071 ===
+Chapter 6
+
+The early OE unstressed vowels
+
+This chapter summarises the information provided in the previous chapters
+on the individual dialects. The development of frequently found grammat-
+ical categories is discussed, and explanations are presented for the develop-
+ments found where the evidence supports an hypothesis.
+
+
+
+6.1 An Overview
+The inflectional syllables the OE dialects are as follows (with comparat-
+ive data from Rauch (1992), Steller (1928), Holthausen (1921), Streitberg
+(1974), Braune and Eggers (1987), Euler (2013), Brunner (1956)):
+            Kent Merc.        North.    WS       OF      OS            OHG        WGmc.
+ gV-           ge-    ge-        gi-        ge-      (g)i-    gi-      gi-        *ga- > *gi-
+ bV-           be-    bi-        bi-        be-      bi-      bi-      gi-        *bi-
+ 1sg.          -o/u   -o/u       -o         -e       -u/o     -u/o     -u/o       *-o
+ st pt pl.     -on    -un/on     -un/on     -on      -un/on   -un/on   -un/on     *-un
+ dat.sg.       -e     -e         -æ/e       -e       -e/a/i   -e/a     -e/a       *-e
+ instr.        —      -a? (VP)   -o?        —        —        -u/o     -u/o       *-u
+ loc.          —      —          -i?        —        —        —        —          *-?
+ gen.sg        -es    -es        -æs/-es    -es/as   -es/is   -es/as   -es/as     *as
+ n -st. obl.   -an    -an        -u/o/an    -an      -a       -on/an   -on, -in   *-on, *-in
+ r -st. n.sg   -ar    -or        -or        -or      -er      -er/ar   -er        *-er
+
+                                       59
+
+=== PDF sheet 072 ===
+60              CHAPTER 6.      THE EARLY OE UNSTRESSED VOWELS
+
+
+
+
+     For the instr./loc., no forms are given in the above table unless these
+are distinct from the dative. In the n -stem oblique forms, the OHG and
+WGmc. forms represent, respectively, the acc. (-on ) and the gen./dat.
+forms (-en /in ). The WS gen.sg. form in -as is from the Cura Pastoralis.
+     The confusion in later texts of u /o and a probably indicates a gradual
+approximation of the high and low back vowels into a single back vowel
+phoneme. This back vowel phoneme is hardly ever confused with a front
+vowel; the -as gen.sg. form in the CP may be a result of analogy from
+the plural, or it may represent the first signs of confusion of these phoneme
+groups.
+     In the front vowels, æ and e appear to be in free variation in Northum-
+brian grammatical endings, though not in the prefixes. This tendency is
+also found in the Mercian Ru1 . Occasionally, there is reason to suspect
+that i and æ /e are confused, such as the Épinal instrumental forms in
+-i ). Further, the confusion of i and e in the prefixes in later Northum-
+brian (whereas earlier, i was very consistent) may point towards a merger
+of the front vowels, too (though perhaps the [i]∼[e] high vowel confusion
+did not include the [æ] sound — however, the two forms of the gen.sg. in
+the Durham Ritual suggests that the phonetic space of [æ], too, was being
+encroached on).
+     The inflectional prefixes and grammatical endings which occur regularly
+can be summarised thus:
+
+*ga -
+        The prefix gV- appears in OE as either gi- or ge-. The outcomes in the
+        other WGmc. languages is generally gi-, but a form WGmc. *ga- must
+        be the origin of e.g. the Pforzen buckle, found as far south as Swabia,
+        with a form ga-: Nedoma (2004). This makes the development to gi-
+        either a later change within WGmc or a development in the northern
+        WGmc. areas.
+
+        The change to gi- is probably by analogy from the other common
+        unstressed prefix bi- (as a phonological development from *ga- to gi-
+        seems very unattractive).
+
+=== PDF sheet 073 ===
+6.1.    AN OVERVIEW                                                           61
+
+
+        Importantly, the OE gi- forms are northern: perhaps the form in
+        pre-OE was *gi-; later, a development to ge- (i.e. a phonological
+        weakening, cf. the similar development of *bi- in the following section)
+        took place in the south and gradually spread to the north (later texts
+        such as Ru2 , Lindisfarne and the Durham ritual show ge- forms).
+
+*bi -
+        Similarly for the unstressed prefix bV-: the PGmc. form appears to
+        have been retained in WGmc., but a form be - is found in southern
+        England. Where it differs from gV- is the geographical spread of the
+        -e - forms: both Mercian and Northumbrian retain bi - forms.
+
+        A similar development is possible here: a weakened form in be - ap-
+        pears in the south, and spreads graduallly to the northern dialects.
+        The reason why the ge - form was allowed to spread further and faster
+        is that it was not synchronically transparent, whereas bi appears also
+        as an indepdendent word in OE, i.e. the association between the prefix
+        bV- and the adposition bi made it more resistant to vowel reduction
+        than gV-.
+
+1sg present ind.
+        The 1sg present ind. in -e, which appears to have spread from the
+        south (whether Kentish underwent the same process as WS or if the
+        trend was a sign of south-western influence, cannot be decided from
+        the data found here), is hardly a phonological process for the reasons
+        stated above, i.e. that the vowels -u /o and -e do not appear to be
+        confused anywhere else than in this grammatical ending.
+
+        The forms in -o /-u found in eWS and eKentish may represent lexical
+        patterning or a habitual rendering of set expressions rather than a
+        productive ending.
+
+st pret pl.
+        As in the non-e forms of the 1sg present ind., the endings of the st pret
+        pl. varies between -on and -un even in very early text, and is as clear
+
+=== PDF sheet 074 ===
+62           CHAPTER 6.       THE EARLY OE UNSTRESSED VOWELS
+
+
+
+
+     a sign of phonological change as one could hope for. No grammatical
+     inflections retain a clear distinction between the two.
+
+Dat.sg. and minor cases
+     The a -stem (i.e. PIE *o -stem) dat.sg. ending is generally -e, though
+     -æ is found in the North. The possible retention of distinct instru-
+     mental or locative endings remains a complex discussion, see therefore
+     the relevant sections (3; 3.1.3).
+
+Gen.sg
+     As with the dative forms, the gen.sg. of the a -stems is generally -es,
+     with -æs appearing primarily in the North. Extraordinarily, forms in
+     -as are found in the CP (WS).
+
+The n -stems
+     Here, the anomalous dialect is once again Northumbrian, where the
+     final -n is often lost (Luick, 1940, 654). As a result, seemingly, the
+     vowel is more open to variation (i.e. confusion); the n -declension was
+     destined to spread in the south (Morris, 1866, xi ff.).
+
+The r -stems
+     In the nom.sg. of the r -stems (where WS fæder and its variants is not
+     taken into consideration), the Kentish forms in -ar is the most unusual
+     form.; otherwise, “[n]ormal variation between -er, -or, -ur is found in
+     final syllables” (OEG, 629). In the gen.sg. the forms feadur, fadur,
+     fador etc. have been the topic of much discussion, and the parallel
+     to Vedic pitúr is often made: see Lane (1951) for examples as well as
+     a discussion on the issue, cf. also the more recent summary in Hogg
+     and Fulk (2011, vol. II: 55). It may be noted that the Anglian forms
+     match ON fo˛ ður, while the southern forms are akin to OF feder.
+
+     The form gibroþær (Franks Casket) “appears to represent an earlier
+     form of the ablaut vowel” (idem, 57); this hardly explains anything,
+     but other explanations cause problems, too: though a dual form is
+     an appealing prospect, it would be a unique occurrence in the Gmc.
+
+=== PDF sheet 075 ===
+6.1.   AN OVERVIEW                                                       63
+
+
+       noun system; further, the parallel to e.g. Gk. phrátere (dual) is not
+       perfect.
+
+   Many of the parallels between the different OE dialects and their con-
+tinental siblings are commented on by Nielsen (1981, particularly Ch. ix).
+
+
+6.1.1 Unstressed vowels and the transition to Middle
+      English
+The communis opinio has long been that the unstressed vowels gradually
+merged to @ during the transition from Old to Middle English (Wright
+(1925, 134), Wright (1928), Sisam (1967, 283 ff.), Jordan (1968, 133 ff.),
+Barber (1993, 157 ff.), Fortson (2010, 15.65), etc.); Brunner (1953, 24 ff.)
+writes:
+
+       ae. a, o, u im Auslaut und in Flexionsendungen sind im 10.
+       und 11. Jahrhundert zu einem zuerst unregelmäÿig, dann mit
+       e bezeichneten Laut geworden. æ und i waren in diesen Stel-
+       lungen schon früh-ae. zu e geworden. Es gab daher me. in
+       Endungssilben auÿer e nur noch: i in den Nachtonsilben -isch
+       und -ing, -inde, -liche und -y . . .
+
+   Importantly, this account highlights the non-weakening of the deriva-
+tional suffixes and diminutives. This is probably a result of half-stress, and
+is mirrored by the development in MHG (Wright (1968, 6 ff.); Fortson
+(2010, 15.77); Paul (1884, 58), etc.). As far as the inflectional endings
+not in half-stressed position are concerned, the merger to @ appears to have
+been the most commonly found outcome, though some much later MSS
+from the central Midlands area (such as the Ashburnham XXVII MS, see
+Sisam (1967, 117 ff.) for an extract) retain the contrast in e.g. the st.
+ppl. in -en and the st pret pl. -un, thereby showing that the above is a
+simplification. We have seen that the loss of vowel contrast, or of the final
+vowel as a whole, was most progressive in the North. This makes language
+contact an appealing mode of explanation (the area under Norse control is
+shown on the map in section 1.1.2):
+
+=== PDF sheet 076 ===
+64             CHAPTER 6.      THE EARLY OE UNSTRESSED VOWELS
+
+
+
+
+       In a situation in which speakers of two languages were repeatedly
+       in contact with one another, it is quite possible that these in-
+       flexional differences became eroded or ignored, as they played
+       no role (or were even a hinderance) in effective communication
+       between speakers of two languages (Townend, 2012, 102).
+
+
+
+     While it certainly seems natural that superfluous inflections are dropped,
+it is a leap to assume that this would only be the case in a contact situation;
+indeed, Benskin (2001) has shown just how little the inflections contributed
+to the meaning of monolingual early West Saxon. Thus it seems unneces-
+sary to attribute this shift to extralinguistic factors. Contact may have
+accelerated this process, but not effected it.
+     Importantly, the gradation of unstressed vowels was not a change through
+which all vowels collapsed to @ at the same time; the process was sequential:
+the high back vowels u and o are used interchangeably from the very begin-
+ning of OE (attested) literacy, whereas the back and front vowels remain
+separate even in the fourteenth century. The back vowels u and o were also
+confused with a in the Anglian dialects in the tenth century, in the Ru1
+and the glosses to the Lindisfarne gospels. In the Cura Pastoralis (WS),
+a is confused with e in the gen. and dat. sg. forms; similarly, gerundive
+forms in -onne (OEG, 375) suggest that at least in WS, a was becoming
+indistinguishable from o. See further OEG, 377: OE had virtually two
+unaccented back vowels, o /u and a. The distinction of these is clearly seen
+to be weakening in Kt. charters of the ninth century, -a sometimes appear-
+ing for -o /-u. So, too, in the Kentish glosses, where the vowels are “freely
+interchangeable” (OEG, 377).
+     At or around the same time, the front vowels i and e were confused, too.
+In Northumbrian, the unstressed prefixes ge-/gi- are confused particularly
+in the Durham Ritual (as is the dat.sg.); some confusion is also found in
+the Ru2 . Similarly in Northumbrian, the 3sg present ind. is -iþ early (e.g.
+on the Franks Casket); later, forms in -e - replace them. In the south, the
+3sg present ind. is often syncopated.
+
+=== PDF sheet 077 ===
+6.1.   AN OVERVIEW                                                                       65
+
+
+6.1.2 Inherited root nouns in the OE dialects
+The unstressed vowels occurring in the OE root nouns inherited from PIE
+make up a slightly different category from that of the vowels of grammatical
+pre- and suffixes. Often, these have no etymological reason to have vowels
+before the final consonants in the nom. and acc., whereas the dat. often
+terminates in -CiC (with corresponding Umlaut of the root vowel, e.g. byrig,
+sylh. Examples include burug (OEG, 366) (commonly burg, burh ; but see
+also OHG buruc and ModE borough ) and suluh (sulh ; derived: sulung ).
+    Not all root nouns which occur in OE have consonants between which
+vowels were inserted: ac, bok, broc (for vowels are never inserted in stressed
+syllables), duru (though it has been made into a u -stem), fot, gat, cu, lus,
+mus ; so, too, with gos, where the Gmc. *-an -> OE -o - (OHG gans ). Some
+that do, are not attested with extra vowels: spyrd, turf, þruh, wloh.23 The
+same is true for ealh (< *alX -, but OS, OHG alah ).
+    Others do occur with inserted vowels in OE: in addition to the above
+mentioned burug, suluh, we find furuh. Meoloc appears to be etymologically
+disyllabic (Griepentrog, 1995, 287-304), at least in Gmc. Next to burg, we
+find berg : this ablaut variation of the same root noun24 occurs with an
+inserted vowel, too: e.g. -berig on the Franks Casket. The Franks Casket
+form is a dative, where normally byrig is found, particularly in the simplex;
+often as a second constituent in a compound word (such as a personal
+name), the dative is -burge (Sprockel, 1965, 78).
+    The development of svarabhakti vowels in OE (Wright, 1925, 220) con-
+tinued in ME (Wright, 1928, 135): this appears to have been a process
+found in all OE dialects as well as in OS and OHG, though syllabic r ap-
+                                                                  ˚
+  23 For all of these, variant forms are also attested; for a more complete list of attested
+forms, see Healey et al. (1980).
+  24 ModG. Berg /Burg and their cognates seem to be variants of the same root, with
+-ur- from the zero-grade and -er- from the e -grade. Bjorvand and Lindeman (2007,
+85-6) provide an IE etymology for Norwegian berg, but suggest that borg may have a
+Wanderwort etymology. Certainly it is difficult to explain particularly non-IE forms
+(such as Arabic burj ) otherwise; the Greek púrgos also fails to match the Germanic
+forms. Grimm and Grimm (1860, vol. II, 534) supplies an alternate form phúrkos,
+which also fails to match.   See also Pokorny (1959, 140).    However, regardless of any
+unetymological siblings within IE, the reflexes within Gmc. may be regular variants of
+the same root.
+
+=== PDF sheet 078 ===
+66             CHAPTER 6.       THE EARLY OE UNSTRESSED VOWELS
+
+
+
+
+pears in the oldest glosses; syllabic l is less common but occasionally found
+                                     ˚
+(Bülbring, 1902, 443-4).
+     Due to the very limited data available from the early OE period, it
+is difficult to claim whether any one dialect developed svarabhakti vowels
+earlier or at a higher rate than elsewhere — but in the modern dialects,
+the phenomenon is much more common in the north (Wright, 1905, 234):
+the tendency in Old Northumbrian to accentuate the svarabhakti vowel
+(Bülbring, 1902, 448) is one likely cause of this.
+     The quality of the inserted vowel is dependant on surrounding sounds:
+Brunner (1956, 156-6)
+
+
+6.2 Dialectal continuity as evidenced by
+    unstressed vowels
+In the two southern dialects, though the unstressed vowels were already
+merged by the time of John of Trevisa or Dan Michel, the retentions of
+OE inflectional categories remain conservative when compared with the
+northern dialects.
+     The inflections with final -n spread to other categories; in the north, the
+final -n was already gone in several eight-century texts (Luick, 1940, 715;
+654).
+     That unstressed vowels are retained more faithfully where there is a final
+consonant to protect it is commonplace in linguistic evolution (see section
+7.1).
+     The development of svarabhakti vowels in OE discussed in the previ-
+ous section is difficult to assign to any dialect in particular. Possibly, the
+Northumbrian accentuation of these vowels lead to the higher rate of svar-
+abhakti vowels in ModE.
+
+=== PDF sheet 079 ===
+Chapter 7
+
+Causes for phonological change
+
+Whether the causes for phonological change in the OE unstressed vowels is
+intralinguistic or extralinguistic is not a question which may with ease be
+answered decisively. In this chapter, two possible intralinguistic causes for
+the changes observed in the previous chapter will be discussed, as well as
+possible language contact features in the English phonology.
+    Though the chapter finds no significant reason to attribute directly the
+reduction in the variety of unstressed vowels to language contact, other con-
+tact features in the English language may have contributed to the changes
+described here: for example, the unpalatalised consonants found in the
+northern dialects are the result of Old Norse influence (Luick, 1940, 701
+ff.) and could have indirectly affected the vowel changes in northern OE.
+    It is also important to consider the reduction of variation within English
+not as a process which began in OE and turned the language into ME, but
+rather as a gradual reduction of the complexity of inflectional morphology
+from (pre-) PIE through Common Germanic and up to the present day.
+This drift can be observed everywhere in Indo-European languages: from
+Sanskrit to Hindi, from Latin to French, from Old Norse to Norwegian, and
+from Old Church Slavonic to Bulgarian.25
+
+  25 Some IE languages have added new grammatical categories: the Tocharian case
+system has added new categories; Latin, Indo-Iranian, and Greek have innovative future
+tense systems, and so on — but the overall direction of change is undeniable.
+
+
+
+                                          67
+
+=== PDF sheet 080 ===
+68             CHAPTER 7.       CAUSES FOR PHONOLOGICAL CHANGE
+
+
+
+
+7.1 Loss or change of final consonants
+The northern dialects lost the variation in unstressed syllables earlier than
+the southern (sections 4.1.2; 4.3, cf. 5.3, 2.3). This correlates with an early
+loss of a final consonant -n in the North, whereas the southern dialects
+reatined final -n and spread it by analogy to other inflectional classes.
+     In one instance in particular, a southern dialect is more innovative than
+the Anglian dialects: the dat.pl. in -um shows little variation in the North,
+but in eWS the -m begins to appear as -n ; in lWS, -on and -un appear side
+by side (Cosijn, 1883, 2. Hälfte: 17). And whereas there is variation in e.g.
+the st pret pl. (-un, -on ) is found in all dialects, a dat. pl. in **-om is never
+found in the texts examined; probably, the development was -um > -un >
+-on (OEG, 572). The implication is that -m more effectively retained the
+original vowel quality in this ending.
+     This is comparable to the earlier shifts in English (Bülbring (1902, 357),
+Wright (1925, 211), Brunner (1956, 143), OEG, 331, 347), and suggests
+a sequential weakening process repeating itself.
+
+
+
+7.2 Speech tempo as a catalyst for change
+Roach (1998) found no significant difference in the speech tempo of dif-
+ferent languages, but called for more research on the subject. In 2011,
+Pellegrino et al. published a highly influential paper which concludes with
+the following two hypotheses:
+
+       Two hypotheses motivate the approach taken in this article. The
+       first one states that, for functional reasons, the rate of linguistic
+       information transmitted during speech communication is, to
+       some extent, similar across languages. The second hypothesis is
+       that this regulation results in a density/rate trade-off between
+       the average information density carried by speech chunks and
+       the number of chunks transmitted per second. . . . These results
+       support the idea that, despite the large variation observed in
+
+=== PDF sheet 081 ===
+7.3.   LINGUISTIC NEIGHBOURS                                               69
+
+
+       phonological complexity among languages, a trend toward reg-
+       ulation of the information rate is at work, as illustrated here
+       . . . The existence of this density/rate trade-off may thus illus-
+       trate a twofold least-effort equilibrium in terms of ease of in-
+       formation encoding and decoding on the one hand, vs. efficiency
+       of information transfer through the speech channel on the other.
+
+In other words, languages which convey more information per syllable are
+spoken at a reduced syllable rate and vice versa. In terms of English histor-
+ical phonology, this allows us to hypothesise on a purely speculative level
+that the speech tempo of OE was similar to that of ModG (which has a
+similar rate of inflectional complexity), and it would follow that the speech
+tempo, i.e. syllables per second, of English increased significantly through-
+out the middle ages.
+   The relevance of such an hypothesis lies in the articulation of short syl-
+lables: if the language carries less information per syllable, this correlates
+with a narrower interval between stressed syllables, which means less time
+for the intermediate unstressed syllables (unless they are dropped, as for
+example the final -e in late Middle English: this complicates matters, and a
+more thorough study on syllable counts is required). Less time per syllable
+would imply reduced time for the articulatory organs to move into the “cor-
+rect” position, and Fry (1955) finds that unstressed vowels are shorter than
+stressed vowels. Lindblom (1963) illustrates the reduction in these syllables
+(though his examples are from Swedish); these results are interesting when
+compared with the OE phonological processes of merger, particularly in
+the back vowels — though a separate study would have to be carried out
+in order to establish a credible connection between the processes.
+
+
+
+7.3 Linguistic Neighbours
+Any historical discussion on the English language is incomplete without
+some mention of language contact, and it “is a factor that is to some extent
+present in all changes” (Samuels, 1972, 178).
+
+=== PDF sheet 082 ===
+70             CHAPTER 7.      CAUSES FOR PHONOLOGICAL CHANGE
+
+
+
+
+     This cannot explain all of the linguistic changes in the history of Eng-
+lish: certainly, one may well argue that certain aspects of English linguistic
+history stem from ON (and rightly so), but where an intralinguistic cause
+can be identified with reasonable certainty, it must always be the preferred
+mode of explanation. Where there are no credible intralinguistic explan-
+ations, looking to language contact becomes more attractive. Note that
+though dialect contact also constitutes language contact, it is not taken
+into consideration in this chapter: the difficulties of the subject are out-
+lined by Samuels (1972, 97 ff.)
+     But in any language shift where the population is not displaced, a period
+of bilingualism, though it may only be 1-2 generations, is necessary. In
+earlier literature (cited in Laker (2008)), a displacement of the pre-invasion
+English population (regardless of whether they spoke a Celtic language,
+Latin, or something else entirely) was assumed; more recently, genetic evid-
+ence has confirmed that the indigenous population was not displaced (Op-
+penheimer, 2006); hence, bilingualism must at some point have been a factor
+across England.
+     Contact with Celtic and Latin are the most important to a study of the
+early OE language; accordingly, these receive the more complete treatment,
+whereas ON will be considered only summarily. Norman French, though it
+influences the ME data compared to the OE data here, will not be taken
+into consideration.
+     Samuels (1972, 93 ff.) distinguishes between two main categories of lan-
+guage contact, into which each specimen is grouped according to “whether
+the contact takes place via competent bilinguals or not.” The main prob-
+lem with this distinction lies in the word “competent”, which is obviously
+not a binary value (“[m]utual understanding is a relative concept”, Wein-
+reich (1953, Preface, viii)); nonetheless, if one were to categorise according
+to the types of contact features which are transferred, certainly patterns
+would emerge where certain types of transfer would correlate with either
+Samuels' type A (“competent bilinguals”) or type B (shortage of competent
+bilinguals).
+     The reason for supposing that a substrate language like Celtic would
+
+=== PDF sheet 083 ===
+7.3.   LINGUISTIC NEIGHBOURS                                                 71
+
+
+influence English phonology and other aspects of the language lies in pre-
+cedence: Samuels (1972, 95 f.) writes that
+
+       grammatical, phonological and phonetic features may also cross
+       language boundaries, as is shown by the spread of uvular [R]
+       to replace the original [r] in much of western Europe, or by
+       the spread of retroflex consonants from Dravidian to the Indo-
+       European languages of India. . . . English, because of its geo-
+       graphical separation from the Continent, provides fewer and less
+       obvious examples.
+
+   Synchronically, the implications are the same:
+
+       [I]f present trends are not reversed, it is possible to envisage
+       a situation where the English dialects of Wales and north-west
+       Scotland will have outlived Welsh and Gaelic, yet will still retain
+       special phonetic features derived from the period of bilingual-
+       ism . . . the intonation- and stress-patterns surviving from Welsh
+       or Gaelic 'substrata' might well have led to further phonetic
+       changes in the English of those areas.
+
+   The idea of phonetic transfer during a period of bilingualism is generally
+accepted; in the following sections, some of these topics will be addressed.
+
+
+7.3.1 Celtic
+The first Indo-European language to settle on the British Isles was Celtic,
+displacing whatever ancestral language(s) that may have been present on
+the island.
+   Received knowledge is that Celtic has had little influence on English: the
+yardstick has been the (diminutive) number of Celtic loan-words in English;
+however, as we shall see, the domain of syntax suggests that that influence
+was significant. The influence of Celtic upon English in pre-literate times
+can be divided into two subcategories, which may only with some difficulty
+be cleanly separated: (1) direct Celtic influence, and (2) influence through
+
+=== PDF sheet 084 ===
+72            CHAPTER 7.       CAUSES FOR PHONOLOGICAL CHANGE
+
+
+
+
+British Latin, which may have had a significant Celtic element (Schrijver,
+2002). The latter will see more discussion in the following section.
+     As to the former, namely direct influence from Celtic, the practical
+absence of loan-words as well as the historical context imply that Celtic
+was the low-status language of the two. Where we must look for evidence
+of such influence is rather in the phonology and syntax. Jespersen (1905,
+39) writes:
+
+
+       There was nothing to induce the ruling classes to learn the lan-
+       guage of the inferior natives; it could never be fashionable for
+       them to show an acquaintance with that despised tongue by us-
+       ing now and then a Celtic word. On the other hand the Celt
+       would have to learn the language of his masters, and learn it well
+       . . . the influence they themselves exercised on English would be
+       infinitesimal.
+
+
+Later, Jespersen writes: “If Keltic ever had 'a finger in the pie,' it must
+have been immediately on the taking over of the new language” (Jespersen,
+1922).
+     Several syntactic features of English have been tied to Celtic influence;
+the value of these transfers from Celtic lies in the implications this would
+have for the nature of the contact between the two languages.
+     The fact that such cases of syntactical interference only became apparent
+in the ME period is commonly mentioned as a caveat to their Celtic origins.
+But there is good reason to believe that our extant OE texts are derived from
+a narrow social strata, which was unlikely to have been influenced by Celtic
+language practice. Many syntactic features of English are, from a Gmc.
+point of view, pure innovations, and their presence neighbouring languages
+seems too much of a coincidence to ignore. Rather, these constructions
+would have gradually made their way into the English language: first into
+the language of L2 speakers of English, and after the Norman invasion,
+which made the Celtic and the English both into conquered languages, it
+spread into a larger segment of the English-speaking population.
+
+=== PDF sheet 085 ===
+7.3.   LINGUISTIC NEIGHBOURS                                                73
+
+
+   However, the presence of Celtic syntactic features in English does not
+automatically entail that (1) these do, in fact, stem from Celtic, and (2) even
+if they stem from Celtic, that any phonetic features were necessarily trans-
+ferred with them. Shared innovation between neighbouring languages irre-
+spective of language contact is no logical impossibility; and secondly, Eng-
+lish L1 speakers may very well have imitated Celtic constructions, thereby
+excluding phonetic transfer from the equation.
+   And though some features may be the result of Celtic influence (for one
+possible example, see Benskin (2011)), other claims can hardly be called
+anything else than presumption. In terms of phonology, the proof is too
+diffuse: where the English innovations are concerned, these can be explained
+intralinguistically; and where English retentions unique amongst the Gmc.
+languages are concerned, these constitute no more than negative proof, i.e.
+they prove that — as an example — the retention of /T/ and /ð/ in English
+as opposed to their loss elsewhere in Gmc. may have been influenced by
+Celtic, since Brittonic, too, has both phonemes (see also Tolkien (1983)).
+   Similarly with the loss of final syllables: though Brittonic did indeed
+undergo the same process as did OE, it was probably completed by the
+time of the battle of Deorham (Sims-Williams (1990); Evans (1990); Jackson
+(1953), particularly 694 ff.) and thus too early to be considered a parallel
+change to that of English.
+
+
+
+7.3.2 British Latin
+It has been a matter of some dispute to what extent Latin was, in fact, a
+prominent spoken language in England at the time of the Germanic inva-
+sions following 499. Irvine (2012, 41) goes so far as to say that only runes
+had been available for writing English before the Christening of 597 AD,
+but the Celtic population would have to be at least partly literate before
+the Germanic tribes arrived, and they certainly did not write in runes.
+   Schrijver (2009), on the other hand, holds the view is that the Celtic
+population of England shifted gradually to Latin, and thus carried on a
+
+=== PDF sheet 086 ===
+74               CHAPTER 7.         CAUSES FOR PHONOLOGICAL CHANGE
+
+
+
+
+Celtic substratum through their Latin phonology.26 Stotz (1996-2004, vol.
+I, 36 ff.), however, does not believe that the Celts spoke Latin:
+
+        England ist die einzige Region Europas, in welcher die lat. Sprache
+        nacheinander in zwei voneinander völlig getrennten Vorgängen
+        eingeführt wurde.       Damit, daÿ dies möglich war, ist bereits
+        gesagt, daÿ der erste von ihnen keine dauerhaften Ergebnisse
+        gezeitigt hatte. . . . Seit dem Anfang des 5. Jh's war die Insel
+        sich selber überlassen.
+
+      Though it is clear that Latin loan-words remained, the question of
+whether the language was spoken as a first language remains unclear. The
+Latin spoken in Britain would initially be undistinguishable from Latin any-
+where else in the Roman world where soldiers from different parts of the
+empire met and colonised. But there are signs of “a Romanised Celtic popu-
+lation which had not received any sort of literary education” (Adams, 2007,
+579): the 'curse tablets' of southern Britain betray non-standard Latin;
+several of the linguistic peculiarities of these (such as a merger of /e/ and
+/i/) are mirrored by Latin inscriptions found in Gaul (idem, 596 ff.; 640
+ff.; 652 ff.); [t]here is reason to think that [the curse tablets] spring from a
+Celtic population which had taken up Latin (idem, 634; 583 ff.).
+      The curse tablets are dated to “roughly the second to fourth centuries
+AD” (Adams, 1992, 1); they share features not only with some Latin inscrip-
+tions of Gaul, but with Welsh, particularly the shift -er- to -ar-. However,
+the opening of e to a before r occurred in Vulgar Latin in other areas of the
+empire, too — and whether there was a significant share of bilinguals, or
+whether the Latin had fallen into disuse when the Germanic tribes arrived,
+remains difficult to establish. Independent innovation remains a possibility.
+      Spoken Latin may have absorbed phonological features from Celtic L2
+speakers of Latin. This, however, does not imply that Celtic was displaced,
+     26 A very similar idea was raised by Jespersen (1960, 679): “This question is largely
+mixed up with another question which has been much discussed of late years, namely,
+what language did the Angles and Saxons find generally spoken on their arrival in Eng-
+land? Had Latin supplanted Celtic, totally or partially? This, however, need not occupy
+us long here, as it really falls outside of the history of English proper.”
+
+=== PDF sheet 087 ===
+7.3.   LINGUISTIC NEIGHBOURS                                                           75
+
+
+even in the areas which are not now Celtic-speaking.
+    What seems more probable is that a Celtic population, with some share
+of Latin-speaking bilinguals, was absorbed into the Germanic-speaking so-
+ciety that expanded around them or migrated west. Those who remained
+switched directly from their language to Old English; those who migrated
+westwards were absorbed into the Welsh population, where non-lexical
+Latin influence disappeared within one generation of L1 learners. If, how-
+ever, they had spoken Latin (i.e. a language switch scenario), there would
+likely be more signs of this in Welsh.
+
+
+
+7.3.3 Old Norse
+The traditional yardstick for linguistic influence — loan-words — certainly
+gives more credit to ON than to Celtic, but how significant was ON influ-
+ence on OE phonology? When þa ærestan scipu deniscra manna arrived
+sometime during the reign of Beorhtric in the late Eighth century,27 most
+of the sources used to examine northern OE phonology had already been
+written; yet linguistic contact from ca. AD 800 cannot be entirely ignored.
+    The nature of the loan-vocabulary left in ModE suggests every-day in-
+teraction: food, tradable commodities, and even personal pronouns. Addi-
+tionally, many farms located on low-quality land carry Norse names.28
+    But the implications for phonological influence on English remain vague.
+Tt is clear that the language contact is of Samuels' type A, and that as a
+result some features were transferred. Examples include the frequent non-
+palatalised and non-assibilated forms of certain consonants found in the
+areas formerly under Norse control (Luick, 1940, 701).
+  27 Often, the year 787 is provided for the arrival of the Norsemen. However, this is the
+year of Beorhtric's ascension to the throne, and it is during his reign that the Norsemen
+arrive; the year, then, could be off by as much as 15 years.
+  28 Another implication one could read from the naming of farms, of course, is that the
+local Norse chiefs gave the farms ON names regardless of who actually occupied them
+at the time; while this would make a lot of sense synchronically, it appears unlikely that
+ON names would remain in use long after the conquest if they were only upheld by a
+centralised administrative institution that died with the Danelaw (see map in section
+1.1.2) in AD 1066.
+
+=== PDF sheet 088 ===
+76            CHAPTER 7.       CAUSES FOR PHONOLOGICAL CHANGE
+
+
+
+
+     However, the loss of phonemic contrast in the unstressed vowels had
+begun before the English Viking age. Language contact did not cause this
+loss, but may have accelerated it (Townend (2012, 102), Lutz (2010), Lutz
+(2013)). And though ON had not levelled the unstressed vowels (Heusler
+(1960), Heusler (1967)), the difficulty in assigning the native phonology to
+the corresponding OE sounds would typically problems (Weinreich (1953,
+14-28), Haugen (1954, 382)).
+
+=== PDF sheet 089 ===
+Chapter 8
+
+Conclusion
+
+8.1 Foreign influence on early English
+    phonology, regional variation
+The phonological peculiarities of English, as with all other languages, may
+be divided into two groups: innovations where closely related languages
+generally remain conservative, and retentions of features which the related
+languages have lost.
+   One example of the former is the many changes which affected stressed
+vowels in English, such as the Great Vowel Shift unparalleled in other Ger-
+manic languages; an example of the latter is the retention of two distinct
+phonemes /T/ and /ð/.
+   The reduction of unstressed syllables can be considered neither: cognate
+languages have undergone similar processes, whether through loss of un-
+stressed prefixes entirely (as in North Germanic), a centering of inflectional
+vowels (as in Middle High German), or a loss of final syllables (Common
+Germanic).
+   Because of this, there is little reason to attribute the vowel gradation in
+unstressed syllables to language contact: processes of reduction had been
+active since before English was separated from its neighbouring languages,
+and it would be unusual indeed had they not undergone reduction.
+
+                                     77
+
+=== PDF sheet 090 ===
+78                                           CHAPTER 8.      CONCLUSION
+
+
+
+
+8.2 The Old English unstressed vowel
+    processes
+Changes to the vowel system of unaccented syllables may be explained
+through the following processes: (1) analogy, by which, for example, the
+instrumental form of the noun was replaced by that of the dative; (2) sub-
+stitution, by which the ending of the first-person singular verbal ending
+WGmc. *-o was gradually replaced by -e, and (3) phonological develop-
+ments.
+     To be regarded as the results of phonological developments are the fol-
+lowing changes:
+
+
+
+The weakening of unstressed prefixes to -e -: this process began in the
+       southern dialects (pp. 18, 52) and spread to the northern dialects.
+       The prefix (southern) ge- was not synchronically transparent, and
+       was allowed to spread to Northumbrian in the second half of the tenth
+       century.
+       The prefix (again, southern) be- was still associated with the adposi-
+       tion bi ; it did not spread beyond Mercia, where it appears only in the
+       late tenth-century text Ru1 .
+
+Confusion of o and u : an active process in all dialects in the earliest
+       texts, though partially conditioned: OEG, 373.
+
+Confusion of u /o and a : in the ninth century, confusion of all three
+       OE unaccented back vowels began in Kentish (frequently in the strong
+       pret. pl. forms -an, but see also Ch. 37, 45, etc.); later (becoming
+       commonplace in the tenth century), this happens in all dialects (Ru1 ,
+       Lindisfarne; lWS: OEG, 49).
+
+Confusion of æ /e and of e /i : in the south-east, these are stable: see
+       the endings the gen.sg. and the dat.sg. of the a -stems in Kentish
+       p. 18; cf. WS on p. 52, where forms in -æ begin to appear in the
+
+=== PDF sheet 091 ===
+8.2.   THE OLD ENGLISH UNSTRESSED VOWEL PROCESSES                              79
+
+
+       Chronicle. In the North, spellings in -æ are more common, whereas
+       in the Midlands they are rare. e is also sometimes confused with i,
+       usually by e being substituted for forms in historically i : OEG, 369.
+       This may have been a contributing factor to the changes described
+       in the unstressed prefixes ge -, be -, but their remaining distinct in
+       Mercian suggests that the vowels of the prefixes behaved differently
+       from those of the grammatical endings (cf. the -i endings of the Épinal
+       and Corpus glossaries, also Mercian). i and æ were not confused in
+       early texts (cf. the vowel reduction chart on p. 11); later, -e - was
+       used for all unstressed front vowels (in the Durham ritual, all three
+       are confused). The alleged instrumental forms in the VP (Zeuner,
+       1881, 120) may also indicate early confusion with the front vowels.
+
+The back vowels were thus to be considered as interchangeable by the
+       eleventh century in all dialects. They remained in opposition to the
+       front vowels; but since @ is generally written <e> in Middle and Mod-
+       ern English, it is difficult to establish when e is no longer to be un-
+       derstood as specifically a front vowel. The most reliable measure
+       is opposition to the back vowels: in the twelfth-century Orrmulum,
+       no opposition can be found in the grammatical endings (but the un-
+       stressed prefix is bi -); this situation is reflected by the spelling systems
+       of Middle Kentish (i.e. the Ayenbite of Inwyt ) and in the north (where
+       the vowels are often lost); if a front/back vowel opposition persisted
+       into the fourteenth century (cf. p. 63), its geographical distribution
+       must have been part of the central Midlands area.
+
+   The changes in the back vowels begin with a confusion of the two high
+vowels (u and o ) both in the north and the south, later spreading to the
+low back vowel (a ) in southern texts.
+   In the front vowels, the confusion of the low vowels (æ and e ) is can
+only with difficulty be considered apart from the changes in the stressed
+syllables (such as the Kentish fronting of æ > e, or the second fronting seen
+in the VP and other West Mercian texts). In WS, however, the -æ or even
+-a spellings for expected -e appear in the CP and the Chronicle in the early
+
+=== PDF sheet 092 ===
+80                                           CHAPTER 8.      CONCLUSION
+
+
+
+
+tenth century; in Northumbrian, the dat.sg. in particular shows variation
+both in the early and the late texts.
+     Older i is replaced by e early (Épinal, Corpus, Franks Casket and Ruth-
+well still have them: whether this is indicative of a later retention in the
+north or a very early sign of confusion of the front vowels cannot be decis-
+ively concluded. Whether one understands the Old Northumbrian nominal
+endings in -i as an old locative or not also has implications for the under-
+standing of the phonology: here, it is argued that these forms are signs of
+confusion of the front vowels, though it is also possible to argue that they
+retain an archaic case form.
+
+
+     In conclusion, and considering the prefixes apart (see the discussion
+on page 60), the front vowels were confused earlier in the north (Épinal,
+Corpus, Franks Casket), whereas in the south, all three back vowels were
+confused by 900. In the North, the early confusion of the back vowels only
+affected the high back vowels u /o.
+     The later retention in the south of the prefix ge- as @ - and of the weak
+adjective inflection, as well as other forms in unstressed final -e, suggests
+that language contact with Old Norse did not affect the process of vowel
+gradation, but may have caused the eventual complete loss of these vowels.
+
+
+     There is one central caveat to the findings reported here, namely that of
+frequency. In the tables presented in chapters two through five, a singular
+occurrence of a form is represented as equally important as a plethora of
+occurrences in longer texts.
+     This is a problem with the data, and would only have been possible to
+avoid by considering all texts within one dialect area as representatives of
+the same language. Had this course been taken, however, it would have
+been difficult to consider the development within the individual dialects;
+and while ideally both ought to have been done within the same study, the
+choices made leave much work to be done in future examinations.
+
+=== PDF sheet 093 ===
+Bibliography
+
+Adams, J. (1992), `British Latin: The Text, Interpretation and Language
+  of the Bath Curse Tablets', Britannia 23, pp. 1–26.
+
+Adams, J., ed. (2007), The regional diversification of Latin 200 BC - AD
+  600, Cambridge University Press.
+
+Baetens Beardsmore, H. (1982), Bilingualism: Basic Principles, Tieto Ltd.,
+  England.
+
+Ball, C. (1970), `The Language of the Vespasian Psalter Gloss: Two
+  Caveats', The Review of English Studies 21.84, pp. 462–465.
+
+Ball, C. (1991), `Inconsistencies in the Main Runic Inscriptions on the Ruth-
+  well Cross', in A. Bammesberger, ed., `Old English Runes and their Con-
+  tinental Background', Carl Winter, Heidelberg, pp. 107–123.
+
+Bammesberger,     A. (1990),    `SKANOMODU: Linguistic issues.',          in
+  A. Bammesberger and A. Wollmann, eds, `Britain 400-600: Language
+  and History.', Carl Winter, Heidelberg, pp. 457–466.
+
+Bammesberger, A. (1991), `Franks Casket: Editor's Notes', in A. Bammes-
+  berger, ed., `Old English Runes and their Continental Background', Carl
+  Winter, Heidelberg, pp. 629–632.
+
+Bammesberger, A. (1994), `Two Archaic Forms in the Ruthwell Cross In-
+  scription', English Studies 75.2, pp. 97–103.
+
+Barber, C. (1993), The English language: a historical introduction, Cam-
+  bridge University Press.
+
+                                     81
+
+=== PDF sheet 094 ===
+82                                                       BIBLIOGRAPHY
+
+
+
+
+Bately, J. (1980), The Old English Orosius, Oxford University Press.
+
+Benskin, M. (2001), `A New History of Early English', Norsk Lingvistisk
+  Tidsskrift 19, pp. 93–122.
+
+Benskin, M. (2011), `Present Indicative Plural Concord in Brittonic and
+  Early English', Transactions of the Philological Society 109.2, pp. 158–
+  185.
+
+Bjorvand, H. and Lindeman, F. O. (2007), Våre Arveord, Novus, Oslo.
+
+Bosworth, J. and Toller, T. N. (1972), An Anglo-Saxon Dictionary, based on
+  the manuscript collections of Joseph Bosworth. Supplement by T. North-
+  cote Toller. With revised and enlarged Addenda by Alistair Campbell.,
+  Oxford University Press.
+
+Braune, W. and Eggers, H. (1987), Althochdeutsche Grammatik, 14. edn,
+  Max Niemeyer, Tübingen.
+
+Brook, G. L. (1963), English Dialects, Andre Deutsch.
+
+Brown, E. (1892), The Language of the Rushworth Gloss to the Gospel of
+  Matthew and the Mercian Dialect. Part II: The vowels of other syllables
+  than stem-syllables; Consonants; Inflection, Dietrich'schen Universitäts-
+  Buckdruckerei, Göttingen.
+
+Brunner, K. (1953), Abriss der mittelenglischen Grammatik, 3. edn, Max
+  Niemeyer, Tübingen.
+
+Brunner, K. (1956), Abriss der altenglischen Grammatik von Eduard Siev-
+  ers, 14. edn, Max Niemeyer, Tübingen.
+
+Bryan, W. (1915), Studies in the Dialects of the Kentish Charters of the
+  Old English Period, PhD thesis, University of Chicago.
+
+Bryan, W. F. (1921), `The west saxon and kentish first person singular
+  present indicative ending -e', Studies in Philology 18.4, pp. 453–458.
+
+Bülbring, K. (1902), Altenglisches Elementarbuch, Carl Winter, Heidelberg.
+
+=== PDF sheet 095 ===
+BIBLIOGRAPHY                                                           83
+
+
+Burrow, J. A. and Turville-Petre, T. (1992), A Book of Middle English,
+  Blackwell, Oxford.
+
+Campbell, A. (1969), Old English Grammar, 2. edn, Clarendon Press, Ox-
+  ford.
+
+Chomsky, N. and Halle, M. (1968), The Sound Pattern of English, Harper
+  & Row, New York.
+
+Colman, F. (2004), `Kentish old english <b>/<b>: orthographic archa-
+  ism or evidence of kentish phonology?', English Language and Linguistics
+  8.2, pp. 171–205.
+
+Cosijn, P. J. (1883), Altwestsächsische Grammatik, Martinus Nijhoff, Haag.
+
+Crystal, D. (2004), The Stories of English, Penguin, London.
+
+Davis, N. (1952), `A paston hand', The Review of English Studies NS:
+  III, pp. 209–221.
+
+Dieter, F. (1885), Ueber sprache und mundart der ältesten englischen den-
+  kmäler, der Epinaler und Cambridger glossen, mit berücksichtigung des
+  Erfurter glossars, Academische Buchhandlung von G. Calvör, Göttingen.
+
+Dobbie, E. v. K. (1942), The Anglo-Saxon Minor Poems, Columbia Univer-
+  sity Press, New York.
+
+Earle, J. and Plummer, C. (1965), Two of the Saxon Chronicles Parallel.
+  With supplementary Extracts from the Others. A Revised Text. Vol. I,
+  Clarendon Press, Oxford.
+
+Eichner, H. (1990), `Die ausprägung der linguistischen Physiognomie des
+  Englischen anno 400 bis anno 600 n. Chr.', in A. Bammesberger and
+  A. Wollmann, eds, `Britain 400-600: Language and History.', Carl
+  Winter, Heidelberg, pp. 307–333.
+
+Eichner, H. (1991), `Zu Franks Casket/RuneAuzon', in A. Bammesberger,
+  ed., `Old English Runes and their Continental Background', Carl Winter,
+  Heidelberg, pp. 604–628.
+
+=== PDF sheet 096 ===
+84                                                     BIBLIOGRAPHY
+
+
+
+
+Euler, W. (2013), Das Westgermanische von der Herausbildung im 3. bis zur
+  Aufgliederung im 7. Jahrhundert - Analyse und Rekonstruktion, Verlag
+  Inspiration Un Limited.
+
+Evans, D. E. (1990), `Insular Celtic and the Emergence of the Welsh Gan-
+  guage', in A. Bammesberger and A. Wollmann, eds, `Britain 400-600:
+  Language and History.', Carl Winter, Heidelberg, pp. 149–177.
+
+Fortson, B. W. (2010), Indo-European Language and Culture. An Introduc-
+  tion, 2. edn, Wiley-Blackwell, West Sussex.
+
+Fry, D. B. (1955), `Duration and Intensity as Physical Correlates of
+  Linguistic Stress', The Journal of the Acoustical Society of America
+  27.4, pp. 765–769.
+
+Fulk, R. D. (1992), A History of Old English Meter, University of
+  Pennsylvania Press, Philadelphia.
+
+Griepentrog, W. (1995), Die Wurzelnomina des Germanischen und ihre
+  Vorgeschichte, Universität Innsbruck.
+
+Grimm, J. and Grimm, W. (1860), Deutsches Wörterbuch, S. Hirzel,
+  Leipzig.
+
+Harrington, J., Palethorpe, S. and Watson, C. (2000), `Monophthongal
+  vowel changes in received pronunciation: an acoustic analysis of the
+  queen's christmas broadcasts', Journal of the International Phonetic As-
+  sociation 30, pp. 63–78.
+
+Haugen, E. (1954), `Review: Weinreich, Languages in Contact ', Language
+  30, pp. 380–388.
+
+Healey, A., Venetzky, R. and Butler, S. (1980), A microfiche concordance
+  to Old English, Toronto.
+
+Hessels, J. F. (2011), A Late Eight-Century Latin-Anglo-Saxon Glossary.
+  Preserved in the Library of the Leiden University (first published 1906),
+  Cambridge University Press.
+
+=== PDF sheet 097 ===
+BIBLIOGRAPHY                                                             85
+
+
+Heusler, A. (1960), Altisländisches Elementarbuch, Carl Winter, Heidel-
+  berg.
+
+Heusler, A. (1967), Altnordisches Elementarbuch, 7. edn, Carl Winter,
+  Heidelberg.
+
+Hirt, H. (1932), Handbuch des Urgermanischen. 3 vols., Carl Winter,
+  Heidelberg.
+
+Hogg, R. (1997), `Old English dialectology and Middle English place-
+  names', in Jacek Fisiak, ed., `Studies in Middle English Linguistics',
+  Mouton de Gruyter, Berlin, pp. 207–220.
+
+Hogg, R. M. (1992), `Phonology and Morphology', in R. M. Hogg, ed.,
+  `The Cambridge History of the English Language', Cambridge University
+  Press, pp. 67–167.
+
+Hogg, R. M. and Fulk, R. D. (2011), A Grammar of Old English. 2 vols.,
+  Wiley-Blackwell, UK.
+
+Holthausen, F. (1921), Altsächsisches Elementarbuch, Carl Winter, Heidel-
+  berg.
+
+Holthausen, F. (1934), Altenglisches etymologisches Wörterbuch, Carl
+  Winter, Heidelberg.
+
+Howlett, D. (1997), British books in Biblical style, Four Courts Press, Dub-
+  lin.
+
+Howlett, D. (2005), Insular Inscriptions, Four Courts Press, Dublin.
+
+Irvine, S. (2012), `Beginnings and Transitions: Old English', in L. Muggle-
+  stone, ed., `The Oxford History of English. Updated edition.', Oxford Uni-
+  versity Press, pp. 39–74.
+
+Jackson, K. (1953), Language and History in Early Britain, University
+  Press, Edinburgh.
+
+=== PDF sheet 098 ===
+86                                                        BIBLIOGRAPHY
+
+
+
+
+Jespersen, O. (1905), Growth and Structure of the English Language, B. G.
+  Teubner, Leipzig.
+
+Jespersen, O. (1922), Language. Its Nature, Development and Origin,
+  George Allen and Unwin Ltd., London.
+
+Jespersen, O. (1960), `The History of English in Relation to other Subjects',
+  in O. Jespersen, ed., `The selected Writings of Otto Jespersen', George
+  Allen & Unwin, London, pp. 677–691.
+
+Jordan, R. (1968), Handbuch der mittelenglischen Grammatik: Lautlehre,
+  Carl Winter, Heidelberg.
+
+Kitson, P. (1997), `When did Middle English begin? Later than you think!',
+  in Jacek Fisiak, ed., `Studies in Middle English Linguistics', Mouton de
+  Gruyter, Berlin, pp. 221–269.
+
+Krygier, M. (1994), `The strong verb system in the Peterborough Chronicle',
+  Studia Anglica Posnaniensia 28, pp. 49–69.
+
+Ladefoged, P. (1975), A course in phonetics, Thomson.
+
+Laker, S. (2008), `Changing views about Anglo-Saxons and Britons', in
+  H. Aertsen and B. Veldhoen, eds, `Six Papers from the 28th Symposium on
+  Medieval Studies held at the Vrije Universiteit Amsterdam on 15 Decem-
+  ber 2006', Department of English, Leiden University, pp. 1–38.
+
+Lane, G. S. (1951), `The genesis of the stem-vowel u(o) in the germanic
+  r-stems', The Journal of English and Germanic Philology 50.4, pp. 522–
+  528.
+
+Lindblom, B. (1963), `Spectrographic Study of Vowel Reduction', The
+  Journal of the Acoustical Society of America 35.11, pp. 1773–1781.
+
+Lindelöf, U. (1890), Die Sprache des Rituals von Durham. Ein Beitrag zur
+  altenglischen Grammatik, J. C. Frenckell & Sohn, Helsinki.
+
+Lindelöf, U. (1901), Die Südnorthumbrische Mundart des 10. Jahrhunderts.
+  Die Sprache der sog. Glosse Rushworth2 , P. Hanstein's Verlag, Bonn.
+
+=== PDF sheet 099 ===
+BIBLIOGRAPHY                                                           87
+
+
+Luick, K. (1940), Historische Grammatik der englischen Sprache. Vol. I.,
+  part II, Bernhard Tauchnitz, Leipzig.
+
+Lutz, A. (2002), `When did English begin?', in T. Fanego, B. Méndez-Naya
+  and E. Seoane, eds, `Sounds, Words, Texts and Change. Selected papers
+  from 11 ICEHL, Santiago de Compostela, 711 September 2000. Vol. II',
+  John Benjamins Publishing Company, pp. 145–171.
+
+Lutz, A. (2010), `Norse influence on English in the light of general con-
+  tact linguistics', in I. Hegeds and A. Fodor, eds, `Selected Papers from
+  the Sixteenth International Conference on English Historical Linguist-
+  ics (ICEHL 16), Pécs, 23-27 August 2010', John Benjamins Publishing
+  Company, pp. 15–42.
+
+Lutz, A. (2013), `Language Contact and Prestige', Anglia 131.4, pp. 562–
+  590.
+
+Malone, K. (1930), `When did Middle English begin?', in J. Taft Hatfield,
+  W. Leopold and A. J. F. Zieglscmid, eds, `Curme Volume of Linguistic
+  Studies. Reprint of Language Monograph No. 7', Linguistic Society of
+  America, Philadelphia, pp. 110–117.
+
+McCone, K. (1978), `he dative singular of old irish consonant stems', Ériu
+  29, pp. 26–38.
+
+McIntosh, A., Samuels, M. L. and Benskin, M. (1986), A Linguistic Atlas
+  of Late Mediaeval English. 4 vols., Aberdeen University Press.
+
+Mitchell, B. (1985), `Cædmon's Hymn, line 1: what is the subject of scylun
+  or its variants?', Leeds Studies in English 16, pp. 190–197.
+
+Morris, R. (1866), Dan Michel's Ayenbite of Inwyt, or, Remorse of Con-
+  science. In the Kentish dialect, 1340 A.D., N. Trübner, London.
+
+Napier, A. S. (1900), Old English Glosses, Clarendon Press, Oxford.
+
+=== PDF sheet 100 ===
+88                                                       BIBLIOGRAPHY
+
+
+
+
+Nedoma, R. (2004), `Noch einmal zur Runeninschrift auf der Gürtelschnalle
+  von Pforzen', in H.-P. Naumann, F. Lanter and O. Szokody, eds, `Ale-
+  mannien und der Norden', Oxford University Press, pp. 340–370.
+
+Nielsen, H. F. (1981), Old English and the Continental Germanic Lan-
+  guages, Universität Innsbruck.
+
+Nielsen, H. F. (1991a), `The Undley Bracteate, "Continental Anglian" and
+  the Early Germanic of Schleswig-Holstein', in J. O. Askedal, H. Bjorvand
+  and E. F. Halvorsen, eds, `Festskrift til Ottar Grønvik på 75-årsdagen den
+  21. oktober 1991', Universitetsforlaget, Oslo, pp. 33–52.
+
+Nielsen, H. F. (1991b), `Unaccented vowels in Runic Frisian and Ingvae-
+  onic', in A. Bammesberger, ed., `Old English Runes and their Continental
+  Background', Carl Winter, Heidelberg, pp. 299–303.
+
+Oppenheimer, S. (2006), The Origins of the British: a Genetic Detective
+  Story, Constable and Robinson, London.
+
+Page, R. (1995), Runes and Runic Inscriptions, The Boydell Press, Wood-
+  bridge.
+
+Page, R. I. (1973), An Introduction to English Runes, Methuen & Co Ltd,
+  London.
+
+Paul, H. (1884), Mittelhochdeutsche Grammatik, Max Niemeyer, Halle.
+
+Pellegrino, F., Coupé, C. and Marsico, E. (2011), `Across-Language Per-
+  spective on Speech Information Rate', Language 87.3, pp. 539–558.
+
+Pevsner, N. (1967), The buildings of England - Cumberland and Westmor-
+  land, Penguin, London.
+
+Pieper, P. (1991), `The Bones with Runic Inscriptions from the Lower Weser
+  River. New Results of Scientific Investigations Concerning the Problem:
+  Original(s) or Fake(s)', in A. Bammesberger, ed., `Old English Runes and
+  their Continental Background', Carl Winter, Heidelberg, pp. 343–358.
+
+=== PDF sheet 101 ===
+BIBLIOGRAPHY                                                               89
+
+
+Pokorny, J. (1959), Indogermanisches etymologisches Wörterbuch. Vol. I,
+  Francke Verlag, Bern und München.
+
+Rauch, I. (1992), The Old Saxon Language. Grammar, Epic Narrative, Lin-
+  guistic Interference, Peter Lang Publishing, New York.
+
+Ringe, D. (2006), A linguistic history of English, Oxford University Press.
+
+Roach, P. (1998), `Some languages are spoken more quickly than others',
+  in P. Trudgill and L. Bauer, eds, `Language Myths', Penguin, London,
+  pp. 150–8.
+
+Ross, A. S. C. (1937), Studies in the Accidence of the Lindisfarne Gospels,
+  University of Leeds.
+
+Samuels, M. (1972), Linguistic Evolution. With special reference to English,
+  Cambridge University Press.
+
+Samuels, M. L. (1971), `Kent and the Low Countries: some linguistic evid-
+  ence', in A. J. Aitken, A. McIntosh and H. Pálsson, eds, `Edinburgh
+  Studies in English and Scots', Longman, London, pp. 3–19.
+
+Schrijver, P. (2002), `The Rise and Fall of British Latin: Evidence from
+  English and Brittonic', in Filippula et al (eds.), ed., `The Celtic Roots of
+  English', University of Joensuu, pp. 87–110.
+
+Schrijver, P. (2009), `Celtic influence on Old English: phonological and
+  phonetic evidence', English Language and Linguistics 13.2, pp. 193–211.
+
+Sims-Williams, P. (1990), `Neo-Brittonic: Phonology and History', in
+  A. Bammesberger and A. Wollmann, eds, `Britain 400-600: Language
+  and History.', Carl Winter, Heidelberg, pp. 217–261.
+
+Sisam, C. (1953), `An early fragment of the old english martyrology', The
+  Review of English Studies New Series: 4.15, pp. 209–220.
+
+Sisam, K. (1967), Fourteenth Century Verse & Prose, Clarendon Press,
+  Oxford.
+
+=== PDF sheet 102 ===
+90                                                     BIBLIOGRAPHY
+
+
+
+
+Skeat, W. (1912), English Dialects. From the eight Century to the present
+  Day, University Press, Cambridge.
+
+Sprockel, C. (1965), The Language of the Parker Chronicle. 2 vols., Mar-
+  tinus Nijhoff, Haag.
+
+Steller, W. (1928), Abriss der altfriesischen Grammatik, Max Niemeyer,
+  Halle.
+
+Stotz, P. (1996-2004), Handbuch zur lateinischen Sprache des Mittelalters.
+  5 vols., C. H. Beck, München.
+
+Streitberg, W. (1974), Urgermanische Grammatik. Einführung in das ver-
+  gleichende Studium der altgermanischen Dialekte, Carl Winter, Heidel-
+  berg.
+
+Sweet, H. (1871), King Alfred's West-Saxon Version of Gregory's Pastoral
+  Care. With an English translation, the Latin Text, Notes, and an Intro-
+  duction. 2 vols., N. Trübner, London.
+
+Sweet, H. (1883), King Alfred's Orosius, Oxford University Press.
+
+Sweet, H. (1885), The Oldest English Texts. EETS os 83, N. Trübner &
+  Co., London.
+
+Sweet, H. (1887), A Second Anglo-Saxon Reader. Archaic and Dialectal,
+  Clarendon Press, Oxford.
+
+Sweet, H. (1896), The Student's Dictionary of Anglo-Saxon, Clarendon
+  Press, Oxford.
+
+Sweet, H. (1970), Sweet's Anglo-Saxon Primer, 9. edn, Clarendon Press,
+  Oxford.
+
+Sweet, H. (1984), Sweet's Anglo-Saxon Reader. In Prose and Verse, 15. edn,
+  Clarendon Press, Oxford.
+
+=== PDF sheet 103 ===
+BIBLIOGRAPHY                                                            91
+
+
+Tolkien, J. (1929), `Ancrene Wisse and Hali Meiðhad ', in H. W. Garrod,
+  ed., `Essays and Studies by Members of the English Association. Vol XIV',
+  Clarendon Press, Oxford, pp. 104–126.
+
+Tolkien, J. R. R. (1962), Ancrene Wisse. Edited from MS. Corpus Christi
+  College Cambridge 402, Oxford University Press.
+
+Tolkien, J. R. R. (1983), `English and Welsh. Inaugural O'Donnell Memorial
+  Lecture of 1955', in Christopher Tolkien, ed., `The Monsters and the
+  Critics, and other essays', Allen & Unwin, pp. 162–197.
+
+Toon, T. E. (1992), `Old english dialects', in R. M. Hogg, ed., `The Cam-
+  bridge History of the English language', Cambridge University Press,
+  pp. 409–451.
+
+Townend, M. (2012), `Contacts and Conflict: Latin, Norse, and French', in
+  L. Mugglestone, ed., `The Oxford History of English. Updated edition.',
+  Oxford University Press, pp. 75–105.
+
+Weinreich, U. (1953), Languages in Contact. Findings and Problems, New
+  York.
+
+Wright, J. (1905), The English Dialect Grammar. Comprising the Dialects
+  of England, of the Shetland and Orkney Islands, and of those Parts of
+  Scotland, Ireland & Wales where English is habitually spoken, Henry
+  Frowde, Oxford.
+
+Wright, J. (1923), An Elementary Old English grammar, Clarendon Press,
+  Oxford.
+
+Wright, J. (1924), An Elementary Historical New English Grammar, Oxford
+  University Press.
+
+Wright, J. (1925), Old English grammar, 3. edn, Oxford University Press,
+  London.
+
+Wright, J. (1928), An Elementary Middle English grammar, 2. edn, Oxford
+  University Press.
+
+=== PDF sheet 104 ===
+92                                                     BIBLIOGRAPHY
+
+
+
+
+Wright, J. (1968), Middle High German Primer, 5. edn, Clarendon Press,
+  Oxford.
+
+Wyatt, A. (1929), An Elementary Old English Grammar (Early West
+  Saxon), Cambridge University Press.
+
+Zeuner, R. (1881), Die Sprache des kentischen Psalters (Vespasian A. I.).
+  Ein Beitrag zur angelsächsischen Grammatik., Max Niemeyer, Halle.

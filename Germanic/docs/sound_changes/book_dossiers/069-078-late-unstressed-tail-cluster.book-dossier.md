@@ -1,5 +1,13 @@
 # SC069-SC078: Late unstressed-tail cluster
 
+Current scoped pretonic follow-up: `audits/sc035-prosody-adjudication.md`
+(2026-10-23). SC073 now includes positively identified pretonic ae/e
+merger alongside the retained post-tonic domain. SC076 is general
+pretonic i-lowering, not a bi/ni consonant-identity proxy; Hogg Grammar
+6.50-6.54 places it marginally later than ae/e merger. No stressed root
+is newly reduced. Other laws and the older dossier's post-tonic
+evidence are not reopened by this bounded extension.
+
 ## 1. Role in the book
 
 This row is the broad late-vowel placeholder between the promoted

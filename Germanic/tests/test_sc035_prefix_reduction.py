@@ -19,6 +19,7 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import adjudicate
 import oe_pipeline
 from capr_runtime import run_in_runner
+from historical_sc035 import historical_runtime
 
 
 def table(path):
@@ -31,17 +32,22 @@ class PrefixReductionTests(unittest.TestCase):
     def test_adjudicated_history_and_confidence_are_distinct_from_proxy_date(self):
         row = adjudicate.load_registry_row("SC035")
         self.assertEqual((row["adjudication_status"], row["verdict"]),
-                         ("adjudicated", "REFORMULATE"))
+                         ("adjudicated", "REFORMULATE/REORDER"))
         self.assertEqual((row["hist_stage"], row["historical_stage_label"],
                           row["hist_scope"], row["confidence"]),
                          ("preoe", "Pre-Old English",
-                          "english_specific", "A"))
-        self.assertEqual(row["chronology_profile"], "runner_limited_or_technical")
+                          "english_specific", "B"))
+        self.assertEqual(row["chronology_profile"], "source_partial_chain")
         self.assertEqual(adjudicate.check_memo("SC035", row=row), [])
 
     def test_literal_proxy_and_reader_definition_agree(self):
-        source = (ROOT / "Germanic/fsts/germanic.txt").read_text()
-        reader = (SC / "reader_facing/035-037-prefix-and-compound-adjustments.md").read_text()
+        accepted = "5533f7653f87d3962a92935a280190882c16b61b"
+        def historical_text(relative):
+            return subprocess.check_output(
+                ["git", "show", f"{accepted}:{relative}"], cwd=ROOT, text=True)
+        source = historical_text("Germanic/fsts/germanic.txt")
+        reader = historical_text(
+            "Germanic/docs/sound_changes/reader_facing/035-037-prefix-and-compound-adjustments.md")
         expected = "[ {*a} -> {*ĕ} || .#. {*g} _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic ]"
         for text in (source, reader):
             body = oe_pipeline._define_bodies(
@@ -52,7 +58,11 @@ class PrefixReductionTests(unittest.TestCase):
         self.assertNotIn("p. 147, §354", reader)
 
     def test_only_technical_and_runner_limited_relations_are_claimed(self):
-        edges = [r for r in table(SC / "registry/chronology_edges.tsv")
+        original = subprocess.check_output(
+            ["git", "show", "5533f765:Germanic/docs/sound_changes/registry/chronology_edges.tsv"],
+            cwd=ROOT, text=True)
+        edges = [r for r in csv.DictReader(
+            (line for line in original.splitlines() if not line.startswith("#")), delimiter="\t")
                  if "SC035" in (r["source_change_id"], r["target_change_id"])]
         self.assertEqual({
             (r["source_change_id"], r["target_change_id"],
@@ -130,16 +140,14 @@ class PrefixReductionTests(unittest.TestCase):
 
     @pytest.mark.runtime
     def test_fresh_container_assay_reproduces_census_controls_and_counterfactuals(self):
-        executed = run_in_runner(
-            "python3 docs/sound_changes/audits/sc035-prefix-reduction/experiment.py",
-            text=True, capture_output=True, check=True, timeout=1200)
+        with historical_runtime(BASE) as execute:
+            executed = execute(
+                "python3 docs/sound_changes/audits/sc035-prefix-reduction/experiment.py")
         current = json.loads(executed.stdout)
         historical = json.loads(EVIDENCE.read_text())
         self.assertEqual(
             current["source_sha256"],
-            hashlib.sha256((ROOT / "Germanic/fsts/germanic.txt").read_bytes()).hexdigest())
-        # The source comment was corrected after the recorded scientific assay.
-        # Compare actual results, not a claim of byte identity of source files.
+            historical["source_sha256"])
         for key in ("selected_rows", "legacy380_identity_rows", "live_census",
                     "live_negative_controls", "component_inputs", "component_outputs",
                     "variants", "canonical_artifacts_unchanged"):

@@ -2,7 +2,10 @@
 
 import copy
 import importlib.util
+import json
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -78,11 +81,42 @@ class HistoricalReplayTests(unittest.TestCase):
         for name, text in self.files.items():
             (directory / name).write_text(text, encoding="utf-8")
 
+    def validate_historical_inputs(self, directory, receipt):
+        """Load the pinned helpers in a fresh interpreter, never the live ones."""
+        script = """
+import importlib.util
+import json
+from pathlib import Path
+import sys
+sys.path[:0] = [sys.argv[4], sys.argv[3]]
+import oe_input_context, oe_pipeline, anglo_frisian_experiments
+spec = importlib.util.spec_from_file_location("historical_replay", sys.argv[2])
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+try:
+    result = {"result": module.validate_inputs(Path(sys.argv[1]), json.load(sys.stdin))}
+except ValueError as error:
+    result = {"error": str(error)}
+print(json.dumps(result))
+"""
+        with tempfile.TemporaryDirectory() as temporary:
+            for name in ("oe_input_context.py", "oe_pipeline.py",
+                         "anglo_frisian_experiments.py"):
+                (Path(temporary) / name).write_text(self.files[name], encoding="utf-8")
+            process = subprocess.run(
+                [sys.executable, "-c", script, str(directory), str(DRIVER),
+                 str(GERMANIC / "tools"), temporary],
+                input=json.dumps(receipt), text=True, capture_output=True, check=True)
+        result = json.loads(process.stdout)
+        if "error" in result:
+            raise ValueError(result["error"])
+        return result["result"]
+
     def test_pinned_sources_context_and_parsed_orders_match_receipt(self):
         with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)
             self.materialize(directory)
-            original, candidates, order = replay.validate_inputs(directory, self.receipt)
+            original, candidates, order = self.validate_historical_inputs(directory, self.receipt)
         self.assertEqual(len(original), 387)
         self.assertEqual({row["id"] for row in candidates}, {"2333", "2334"})
         self.assertNotIn("XRAdverbLen", order)
@@ -102,7 +136,7 @@ class HistoricalReplayTests(unittest.TestCase):
                 with (directory / name).open("a", encoding="utf-8") as handle:
                     handle.write("\n")
                 with self.assertRaisesRegex(ValueError, "pin changed|helper differs"):
-                    replay.validate_inputs(directory, self.receipt)
+                    self.validate_historical_inputs(directory, self.receipt)
 
     def test_mismatched_receipt_identity_is_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:
@@ -124,7 +158,7 @@ class HistoricalReplayTests(unittest.TestCase):
                 directory = Path(temporary)
                 self.materialize(directory)
                 with self.assertRaisesRegex(ValueError, "order differs|identities or context"):
-                    replay.validate_inputs(directory, receipt)
+                    self.validate_historical_inputs(directory, receipt)
 
     def test_equivalence_checks_all_scientific_fields_not_only_final_outputs(self):
         historical = self.receipt["models"][0]

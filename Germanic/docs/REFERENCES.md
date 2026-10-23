@@ -9,7 +9,8 @@ These are the first-pass authorities on PGmc → OE phonology and morphology.
 When investigating a sound change, start here before consulting the broader
 list below.
 
-- `docs/references/hogg_vol1.txt` — Hogg, *A Grammar of Old English*, Vol. 1: Phonology
+- `docs/references/hogg_vol1.txt` — Hogg (ed.), *The Cambridge History of the English Language*, Vol. 1; cite the individual chapter, e.g. `HoggPhonology1992`, not the separate grammar.
+- `docs/references/hogg_fulk_2011_grammar_old_english_vol1_phonology.{pdf,txt}` — Hogg alone, *A Grammar of Old English*, Vol. 1: *Phonology* (1992; held 2011 reprint), `HoggGrammar1992`. Section numbers are stable; §5.48 n.1 is printed p.104 in the held reprint (PDF sheet117), not the original pagination.
 - `docs/references/ringe_taylor_linguistic_history_vol2.txt` — Ringe & Taylor, *A Linguistic History of English*, Vol. 2: The Development of Old English
 - `docs/references/ringe_vol1_pie_to_pgmc.{pdf,txt}` — Ringe, Vol. 1: From Proto-Indo-European to Proto-Germanic
 
@@ -42,6 +43,12 @@ list below.
 - `docs/references/noreen_altislaendisch.{pdf,txt}` — Noreen, *Altisländische und altnorwegische Grammatik*
 
 ## Specialist articles and monographs
+
+### Unstressed vowels and historical prosody
+
+- `docs/references/minkova_zhou_2022_functional_stress_shifts.{pdf,txt}` — Minkova and Z. L. Zhou, *English Language & Linguistics* 26(3), 533–558; `MinkovaZhou2022`, DOI 10.1017/S1360674322000144. Complete CC BY 4.0 published article; pp.535–536 distinguish root stress and weak prefixes using metrical evidence, not early vowel chronology.
+- `docs/references/riegger_bogel_walkden_2024_prosody_ge.{pdf,txt}` — Riegger, Bögel and Walkden, *Interspeech 2024*, 2065–2069; `RieggerBogelWalkden2024`, DOI 10.21437/Interspeech.2024-289. Full ISCA archive paper; manuscript grouping and modern German experiments are distinct evidence, neither a direct dating of pre-OE vowel raising.
+- `docs/references/berg_2014_old_english_unstressed_vowels.{pdf,txt}` — Berg, *Old English Unstressed Vowels: Dialects and Diachrony*, Oslo MA thesis (May 2014), `Berg2014`. Complete institutional holding, https://hdl.handle.net/10852/39907; pp.60–61 discuss *gi-*, *bi-* and Pforzen. Acquisition, extraction and rights details are in `docs/references/README_resources.md`.
 
 ### n-stems / Sievers' Law / morphological prosody
 

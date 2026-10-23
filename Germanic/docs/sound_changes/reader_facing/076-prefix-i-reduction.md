@@ -4,28 +4,42 @@
 
 Late weak-tail reduction affects unstressed prefixes as well as inflectional
 endings and medial vowels. Fulk's discussion of prefix vowels accounts for OE
-\emph{*be-} and \emph{*ne-} [@Fulk2018, p. 97, §5.7]. Hogg and Ringe and
-Taylor place such weakening within the broader late history of unstressed
-vowels [@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 298--332,
-§§6.8.3--6.9.6].
+\emph{*be-} and \emph{*ne-} [@Fulk2018, p. 97, §5.7]. Hogg explicitly includes *be-* and *ge-* in the lowering of unstressed
+\emph{*i}, marginally later than the earlier front-vowel merger. Ringe and
+Taylor supply early *gistīga* 'climb into/onto' beside later *gestīga*
+'climb into/onto', and place *bi-* and *ni* alongside this development
+[@HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239);
+@RingeTaylor2014, pp. 334--335].
 
-The tested forms do not determine the rule's position relative to a neighboring
-change.
+The manuscript evidence, rather than the older proxy's displacement
+results, supports this limited relative chronology.
 
 ## SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
 
 ```foma
-define OEPrefixIReduction [
-    {*i} -> {*ĕ} || .#. [{*b} | {*n}] _ [EnglishStarConsonant | EnglishPalatalConsonant] EnglishStarVocalic
-];
+define OEPrefixIReduction SentenceCtx([
+    [{*i} -> {*e} || .#. {*ᶠ} OEAnyConsonant* _]
+    .o. [{*ᶠ} -> 0]
+]);
 ```
 
-The rule reduces unstressed prefixal \emph{*i} to a weaker vowel in the
-\emph{bi-} and \emph{ni-} type prefixes before a consonant plus a following
-vowel. The development accounts for later prefix spellings such as OE
-\emph{*be-} and \emph{*ne-}.
+The rule lowers short \emph{*i} in a positively identified weak pretonic
+syllable, not specifically in morphemes beginning with a particular
+consonant. Thus the same conditioning treats inherited weak \emph{*bi-}
+and the raised vowel in \emph{*gi-}; stressed roots remain outside its
+domain. The superscript `*ᶠ` is a nonsegmental prosodic annotation,
+removed once it is no longer needed. The rule therefore produces
+\emph{*e} directly, not a protected intermediate breve-e.
 
-If the rule is moved earlier or later within the tested sequence, no output differs from the expected one. The lexical evidence therefore does not place [SC076 OEPrefixIReduction](#rule-OEPrefixIReduction) before or after any specific neighboring change.
+This bounded implementation requires a following headed syllable.
+The separately unstressed negative particle *ni* 'not' > *ne* 'not'
+supports the wider history of weak-vowel lowering, but is not made into
+a newly encoded selected input or a claim that the present pretonic
+condition covers every weak particle
+[@RingeTaylor2014, p. 335].
 
-The handbooks attest late prefix-vowel weakening, but the precise placement
-remains approximate. No lexical failure fixes it.
+The earlier displacement experiment found no final-output boundary for
+the old consonant-identity proxy. That negative result is not a test of
+the reformulated prosodic rule and does not date it. The relative placement
+after the earlier merger follows the handbook account; its precise
+interval remains approximate.

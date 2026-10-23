@@ -22,12 +22,12 @@ chronology constraints.
 | `boundary_observation` | 2 |
 | `broad_far` | 6 |
 | `mixed` | 16 |
-| `negative_boundary` | 9 |
+| `negative_boundary` | 8 |
 | `one_sided_chronology` | 6 |
 | `reciprocal_or_near_reciprocal` | 22 |
 | `retired` | 1 |
-| `runner_limited_or_technical` | 2 |
-| `source_partial_chain` | 7 |
+| `runner_limited_or_technical` | 1 |
+| `source_partial_chain` | 9 |
 
 ### Edge counts by relation_type
 
@@ -38,8 +38,8 @@ chronology constraints.
 | `no_break_search_boundary` | 21 |
 | `one_sided_chronology` | 39 |
 | `reciprocal_chronology` | 32 |
-| `runner_limited_boundary` | 19 |
-| `technical_computational` | 10 |
+| `runner_limited_boundary` | 18 |
+| `technical_computational` | 11 |
 
 ## Chronology edges
 
@@ -153,8 +153,6 @@ chronology constraints.
 1. `SC027 -> SC087` (no_break_search_boundary)
 1. `SC029 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC032 -> SC040` (technical_computational)
-1. `SC035 -> PWGmcChanges` (runner_limited_boundary)
-1. `SC035 -> SC107` (technical_computational)
 1. `SC037 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC037 -> SC038` (technical_computational)
 1. `SC039 -> PWGmcChanges` (runner_limited_boundary)
@@ -184,3 +182,5 @@ chronology constraints.
 1. `SC083 -> SC087` (no_break_search_boundary)
 1. `SC086 -> SC087` (no_break_search_boundary)
 1. `SC087 -> RUNNER_LIMIT` (runner_limited_boundary)
+1. `SC035 -> SC107` (technical_computational)
+1. `SC035 -> SC052` (technical_computational)

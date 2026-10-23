@@ -16,6 +16,7 @@ sys.path.insert(0, str(GERMANIC / "tools"))
 
 from generate_registry_views import EDGE_REGISTRY, SC_REGISTRY, read_tsv  # noqa: E402
 from oe_full_trace_report import trace_provenance_problems  # noqa: E402
+from test_sc043_component_split import segmental_definition  # noqa: E402
 
 SC = GERMANIC / "docs/sound_changes"
 TRACE = GERMANIC / "docs/debug_snapshots/oe_full_trace_report.txt"
@@ -80,8 +81,7 @@ class SC032AdjudicationTests(unittest.TestCase):
 
     def test_nine_clauses_preserve_atomic_long_and_split_short_quantities(self):
         text = (GERMANIC / "fsts/germanic.txt").read_text(encoding="utf-8")
-        body = text.split("define OEDiphthongLeveling [", 1)[1].split("];", 1)[0]
-        body = re.sub(r"#[^\n]*", "", body)
+        body = segmental_definition(text, "OEDiphthongLeveling")
         clauses = re.findall(
             r"((?:\{\*[^}]+\}\s*)+) -> \{\*([^}]+)\}", body,
         )

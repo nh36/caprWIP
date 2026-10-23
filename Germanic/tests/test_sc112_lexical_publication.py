@@ -16,6 +16,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[2]
 BASE = "5a3fced14d616ccaef5d703278d5cba2ffbca5cb"
 PUBLICATION_CLOSURE = "3c015def36599ca95d666b589ea533735d626de3"
+ARCHITECTURE_CLOSURE = "60b91080d2adadf431c92f7388ab1dd6199a4c7a"
 ASSEMBLY = ROOT / "Germanic/docs/assembly"
 MODELS = ROOT / "Germanic/docs/lexeme_reports/model_entries"
 sys.path.insert(0, str(ASSEMBLY))
@@ -29,9 +30,9 @@ import check_reader_facing_crossrefs as crossrefs
 import reader_facing_check_utils as reader
 
 
-def committed(path):
+def committed(path, commit=BASE):
     return subprocess.check_output(
-        ["git", "show", f"{BASE}:{path.relative_to(ROOT)}"], cwd=ROOT, text=True)
+        ["git", "show", f"{commit}:{path.relative_to(ROOT)}"], cwd=ROOT, text=True)
 
 
 def table(text):
@@ -181,7 +182,7 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
             cwd=ROOT, text=True).split()
         self.assertEqual(changed, [])
 
-    def test_stage_resolution_provenance_migration_remains_exact(self):
+    def test_stage_resolution_provenance_migration_was_exact(self):
         receipt = "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json"
         self.assert_stage_resolution_provenance_migration(receipt)
 
@@ -197,7 +198,9 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         generator = "Germanic/docs/assembly/build_class_manifests.py"
         stages = "Germanic/tools/entry_stages.py"
         survey = "Germanic/tools/pgmc_reconstruction_survey.py"
-        now = json.loads((ROOT / receipt).read_text(encoding="utf-8"))
+        # Test the completed dependency migration, not a permanent freeze of
+        # bibliographic inputs against subsequent source acquisitions.
+        now = json.loads(committed(ROOT / receipt, ARCHITECTURE_CLOSURE))
         base = json.loads(committed(ROOT / receipt))
         differing = {key for key in set(now["inputs"]) | set(base["inputs"])
                      if now["inputs"].get(key) != base["inputs"].get(key)}
@@ -206,17 +209,17 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         self.assertNotIn(stages, base["inputs"])
         self.assertEqual(
             now["inputs"][stages],
-            hashlib.sha256((ROOT / stages).read_bytes()).hexdigest())
+            hashlib.sha256(committed(ROOT / stages, ARCHITECTURE_CLOSURE).encode()).hexdigest())
         for record in (now, base):
             record.pop("inputs")
         self.assertEqual(now, base)
 
         old_generator = committed(ROOT / generator)
-        moved = (ROOT / stages).read_text(encoding="utf-8")
+        moved = committed(ROOT / stages, ARCHITECTURE_CLOSURE)
         for name in ("load_stage_metadata", "resolve_stages"):
             self.assertEqual(function_source(moved, name), function_source(old_generator, name))
         old_lines = committed(ROOT / survey).splitlines()
-        new_lines = (ROOT / survey).read_text(encoding="utf-8").splitlines()
+        new_lines = committed(ROOT / survey, ARCHITECTURE_CLOSURE).splitlines()
         edits = [line for line in difflib.ndiff(old_lines, new_lines)
                  if line[:2] in ("- ", "+ ") and line[2:].strip()]
         self.assertEqual(sorted(edits), sorted([

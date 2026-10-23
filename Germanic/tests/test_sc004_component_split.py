@@ -31,6 +31,7 @@ import json
 import re
 import unittest
 from pathlib import Path
+from test_sc043_component_split import segmental_definition
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
@@ -201,11 +202,7 @@ class ProductionCascadeTests(unittest.TestCase):
                          "SC014 must be the unrestricted unstressed rule (no || _ .#.)")
 
     def test_sc004_body_is_stressed_only(self):
-        m = re.search(
-            r"define EAFAiMonophthongization \[\s*\n\s*(.*?)\n\s*\];",
-            self.src)
-        self.assertIsNotNone(m, "cannot find SC004 define")
-        body = m.group(1).strip()
+        body = segmental_definition(self.src, "EAFAiMonophthongization")[1:-1].strip()
         self.assertEqual(body, "{*ái} -> {*ā}",
                          "SC004 must be stressed-only (no {*ai}->{*ā} nonfinal branch)")
 
@@ -249,6 +246,7 @@ class ProductionCascadeTests(unittest.TestCase):
             r"\s*\.o\. EAFLongANasalRounding\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFNasalizedLowRounding\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFLongAFronting\b.*\n(?:\s*#.*\n)*"
+            r"\s*\.o\. OEStressFootContext\b.*\n(?:\s*#.*\n)*"
             r"\s*\.o\. EAFAiMonophthongization\b")
         self.assertEqual(len(pat.findall(self.src)), 1)
 

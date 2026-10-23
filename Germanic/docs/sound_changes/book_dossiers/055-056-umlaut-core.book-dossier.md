@@ -1,5 +1,13 @@
 # SC055-SC056: Umlaut Core and Palatal-Diphthongization Follower
 
+Current scoped follow-up: `audits/sc035-prosody-adjudication.md`
+(2026-10-23) REFORMULATES SC056's domain as headed-foot initial, following
+Hogg Grammar 5.48 n.1 (held 2011 p.104). Both sceaft and gesceaft
+diphthongize in the root; the latter's weak initial vowel does not.
+The ordinary-before-mutation verdict and separate SC105 approximation
+are retained. Earlier source/displacement records below remain provenance,
+not a reason to restore word-initial conditioning.
+
 ## Adopted incremental correction
 
 The user authorized the gift/ordinary-PD package on 2026-10-03.

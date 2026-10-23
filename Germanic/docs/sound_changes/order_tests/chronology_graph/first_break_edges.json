@@ -218,13 +218,13 @@
     },
     {
       "change_id": "SC035",
-      "display_name": "English unstressed ga-prefix vocalism",
+      "display_name": "Pretonic front-vowel raising after a palatal fricative",
       "lifecycle_status": "active",
       "rule_name": "OEPrefixAReduction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC035-oe-prefix-a-reduction-early.md",
-      "card_type": "runner_limited_or_technical",
+      "card_type": "source_partial_chain",
       "has_reciprocal_boundary": "no",
-      "short_summary": "SC035 precedes SC107 only as a reduced-vowel representation constraint; no historical boundary before ordinary stressed SC043 is demonstrated. The earlier PWGmcChanges boundary is runner-limited, not a historical terminus."
+      "short_summary": "Ordinary pretonic fronting and palatalization supply the environment for raising; later pretonic i-lowering yields ge-. Exact microchronology is not fixed by the old displacement assay."
     },
     {
       "change_id": "SC036",
@@ -608,13 +608,13 @@
     },
     {
       "change_id": "SC076",
-      "display_name": "OE Prefix I Reduction",
+      "display_name": "Pretonic i-lowering",
       "lifecycle_status": "active",
       "rule_name": "OEPrefixIReduction",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC076-oe-prefix-i-reduction.md",
-      "card_type": "negative_boundary",
+      "card_type": "source_partial_chain",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Both sides are negative computational results: earlier search is blocked by bundled PWGmcChanges and later search reaches SC087 with no real break."
+      "short_summary": "Hogg Grammar 6.50-6.54 places i-lowering marginally after ae/e merger. Old negative displacement results belong to the superseded identity proxy, not a date for the reformulated law."
     },
     {
       "change_id": "SC078",
@@ -1325,34 +1325,6 @@
       "interpretation_category": "source_partial_chain",
       "reciprocal_group_id": "",
       "notes": "Ringe-Taylor 2014 pp.41-42,65-66 independently supplies the early reanalysis and pp.172-175 its later English outcomes. Applies to the nonhomorganic products, not homorganic uww, all nine SC032 clauses or the date of later io/eo merger. No strict pre-j edge follows from serialization."
-    },
-    {
-      "source_change_id": "SC035",
-      "target_change_id": "PWGmcChanges",
-      "relation_type": "runner_limited_boundary",
-      "direction_basis": "earlier_boundary",
-      "evidence_basis": "boundary_observation",
-      "witness_role": "",
-      "representative_lexemes": "",
-      "representative_forms": "`none — no earlier real break was found before the runner boundary`",
-      "strength": "runner_boundary",
-      "interpretation_category": "runner_boundary",
-      "reciprocal_group_id": "",
-      "notes": "Historical runner limit, not evidence that prefix vocalism followed the whole bundle; no earlier historical terminus demonstrated. SC035 adjudication preserves the experiment-time record."
-    },
-    {
-      "source_change_id": "SC035",
-      "target_change_id": "SC107",
-      "relation_type": "technical_computational",
-      "direction_basis": "later_boundary",
-      "evidence_basis": "technical",
-      "witness_role": "displacement_witness",
-      "representative_lexemes": "believe",
-      "representative_forms": "PGmc `*galáubijaną`: live prefix `*g*a-` > `*g*ĕ-`, final `ġelīefan`; skipping SC035 or delaying it past SC107 gives prefix `*g*æ-`, later `*ʝ*ea-`, final `ġealīefan`",
-      "strength": "one_sided",
-      "interpretation_category": "component_reclassified",
-      "reciprocal_group_id": "",
-      "notes": "Fresh SC035 full-corpus assay isolates the unstressed helper and later palatal diphthongization; SC043 leaves the prefix unchanged. Technical representation constraint, not a historical date before stressed fronting or proof that reduction preceded unstressed fronting. Historical card preserved."
     },
     {
       "source_change_id": "SC036",
@@ -2669,6 +2641,34 @@
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
       "notes": "Fulk 2018 p.74; Ringe-Taylor 2014 pp.215-217,222. Old gift/sheath composite displacement argument superseded; gift early i is outside PD, sheath belongs to retained SC105 approximation."
+    },
+    {
+      "source_change_id": "SC035",
+      "target_change_id": "SC107",
+      "relation_type": "technical_computational",
+      "direction_basis": "earlier_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
+      "representative_lexemes": "believe",
+      "representative_forms": "pretonic a > ae supplies raising input",
+      "strength": "one_sided",
+      "interpretation_category": "component_reclassified",
+      "reciprocal_group_id": "",
+      "notes": "Dependency of the adopted staged reconstruction, not an independently dated historical interval. Supersedes the earlier protective-proxy edge; old closure/card and receipts preserved."
+    },
+    {
+      "source_change_id": "SC035",
+      "target_change_id": "SC052",
+      "relation_type": "technical_computational",
+      "direction_basis": "earlier_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
+      "representative_lexemes": "believe",
+      "representative_forms": "palatalization supplies the fricative before pretonic ae",
+      "strength": "one_sided",
+      "interpretation_category": "component_reclassified",
+      "reciprocal_group_id": "",
+      "notes": "Dependency of the adopted staged reconstruction, not an independently dated historical interval. Supersedes the earlier protective-proxy edge; old closure/card and receipts preserved."
     }
   ]
 }

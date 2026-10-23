@@ -57,11 +57,11 @@
 - `example_input`: 72
 - `expected_output`: 77
 - `model_stage`: 112
-- `notation_or_segment`: 776
+- `notation_or_segment`: 783
 - `yielded_output`: 60
 
 - Reader-facing include_in_example_index=yes: 540
-- Reader-facing include_in_example_index=no: 776
+- Reader-facing include_in_example_index=no: 783
 
 ## Print-unique entry audit
 

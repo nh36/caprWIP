@@ -27,16 +27,24 @@ def definition(text, name):
     return re.sub(r"\s+", " ", bodies[name]).strip()
 
 
+def segmental_definition(text, name):
+    """Compare segmental kernels; SC035 tests separately verify context lifting."""
+    body = definition(text, name)
+    if body.startswith(("Ctx(", "FootCtx(")):
+        body = body[body.index("(") + 1:-1]
+    return body
+
+
 class FrontingComponentTests(unittest.TestCase):
     def test_exact_laws_and_order_are_preserved(self):
         text = SOURCE.read_text(encoding="utf-8")
-        self.assertEqual(definition(text, "EAFBrightening"),
+        self.assertEqual(segmental_definition(text, "EAFBrightening"),
                          "[ EAFBrighteningStressed ]")
         self.assertEqual(definition(text, "EAFBrighteningStressed"),
                          "[ {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.] ]")
-        self.assertEqual(definition(text, "EAFBrighteningUnstressed"),
+        self.assertEqual(segmental_definition(text, "EAFBrighteningUnstressed"),
                          "[ {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal] ]")
-        self.assertEqual(definition(text, "EAFBrighteningLongFinal"),
+        self.assertEqual(segmental_definition(text, "EAFBrighteningLongFinal"),
                          "[ {*ā} -> {*ǣ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#. ]")
         self.assertRegex(text, r"\.o\. EAFBrighteningUnstressed\s+"
                          r"\.o\. EAFBrightening\s+"
@@ -66,7 +74,8 @@ class FrontingComponentTests(unittest.TestCase):
             names = re.findall(r"\bdefine (\w+)", block)
             self.assertEqual(len(names), 1)
             name = names[0]
-            self.assertEqual(definition(block, name), definition(source, name), name)
+            self.assertEqual(segmental_definition(block, name),
+                             segmental_definition(source, name), name)
         self.assertNotIn("AngloFrisianBrighteningStressed", reader)
 
     def test_prefix_and_final_quantity_constraints_are_component_local(self):

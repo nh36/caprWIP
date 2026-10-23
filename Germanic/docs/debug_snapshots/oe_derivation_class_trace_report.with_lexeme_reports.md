@@ -307,13 +307,13 @@ English Proto Input: *bigínnaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *bigínnan<br>OE Secondary Nasalization: *bigínnąn<br>OE Velar Palatalization: *biʝínnąn<br>OE Prefix I Reduction: *bĕʝínnąn<br>OE Weak Tail Reduction: *bĕʝínnan<br>OE Palatal Fricative Merger: *bĕjínnan |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *bigínnan<br>OE Secondary Nasalization: *bigínnąn<br>OE Velar Palatalization: *biʝínnąn<br>OE Prefix I Reduction: *beʝínnąn<br>OE Weak Tail Reduction: *beʝínnan<br>OE Palatal Fricative Merger: *bejínnan |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: *bĕġínnan
+Old English Orthography: *beġínnan
 Outcome: beġinnan
 
 
@@ -336,13 +336,13 @@ English Proto Input: *galáubijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *galáeubijaną<br>OE Diphthong Leveling: *galēabijaną<br>OE Prefix A Reduction: *gĕlēabijaną<br>OE Heavy Syllable Nasal Apocope: *gĕlēabijan<br>OE Secondary Nasalization: *gĕlēabijąn<br>PGmc B Allophony: *gĕlēaβijąn<br>Sievers Law Syncope: *gĕlēaβjąn<br>OE Velar Palatalization: *ʝĕlēaβjąn<br>OE I Umlaut: *ʝĕlīeβjąn<br>OE Weak Tail Reduction: *ʝĕlīeβjan<br>OE J Loss After Heavy: *ʝĕlīeβan<br>OE Palatal Fricative Merger: *jĕlīeβan |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *galáeubijaną<br>OE Diphthong Leveling: *galēabijaną<br>EAF Brightening Unstressed: *gælēabijaną<br>OE Heavy Syllable Nasal Apocope: *gælēabijan<br>OE Secondary Nasalization: *gælēabijąn<br>PGmc B Allophony: *gælēaβijąn<br>Sievers Law Syncope: *gælēaβjąn<br>OE Velar Palatalization: *ʝælēaβjąn<br>OE Prefix A Reduction: *ʝilēaβjąn<br>OE I Umlaut: *ʝilīeβjąn<br>OE Prefix I Reduction: *ʝelīeβjąn<br>OE Weak Tail Reduction: *ʝelīeβjan<br>OE J Loss After Heavy: *ʝelīeβan<br>OE Palatal Fricative Merger: *jelīeβan |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: ġ*ĕlīeβan
+Old English Orthography: ġ*elīeβan
 Outcome: ġelīefan
 # belly
 PROTO: *bálgiz
