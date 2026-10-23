@@ -57,15 +57,53 @@ diphthongizing the prefix. This is consistent with the historical
 absence of palatal diphthongization in the weak prefix
 [@RingeTaylor2014, p. 206].
 
+This compression is a provisional choice between historical models, not
+evidence for a separate early prefix-specific sound law. An expanded
+account can let the weak vowel front normally, preserve its unstressed
+status through the intervening changes, and give it the later merger
+to *e*. Alternatively, raising after the palatal fricative can supply
+*gi-* before the merger. The first account does not by itself explain
+the early *gi-* spellings; the second makes the regular raising which
+Ringe and Taylor explicitly leave open into an obligatory change.
+Both staged accounts are computationally viable, but their agreement
+in the later forms does not establish either pathway or its exact
+chronology. The compressed representation is retained because it
+commits to the secure weak outcome without silently deciding that
+historical question, not because a staged derivation is impossible
+[@RingeTaylor2014, pp. 334--335].
+
+The distinction needed by a staged account is genuine weak prosody,
+not simply the absence of an accent in an intermediate transcription.
+Ordinary stressed fronting has already absorbed the accent of some
+roots by this point. In *ġiest* 'guest', palatal diphthongization still
+feeds mutation; *ġiefan* 'give' and *sċēap* 'sheep' likewise retain
+their independently supported diphthongization. In *ġealla* 'gall',
+breaking has already supplied the diphthong. A general ban on
+diphthongizing unaccented symbols would therefore confuse notation
+with historical stress. Equally, extending
+[SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) to every initial
+front vowel would not distinguish a weak prefix from a stressed root.
+Its present preceding-vowel guard describes the post-tonic fragment
+implemented there, not a historical exclusion of pretonic prefixes
+[@Campbell1959, pp. 69--70, §§185--188;
+@Campbell1959, pp. 153--155, §§369--370;
+@RingeTaylor2014, pp. 215--217, 335].
+
 The consonant-plus-vowel context is deliberately narrower than the
 historical phenomenon. It covers the prefix before the root of
 *ġelīefan* 'believe', but neither encodes a prefix boundary nor recognizes all
 prefixed words. Ringe and Taylor's *gistīga* 'climb into/onto' >
-*gestīga* 'climb into/onto',
-with the prefix before a consonant cluster, illustrates a genuine
-prefix shape outside this rule. Conversely, the accented root vowel
-of *ġealla* 'gall' is not eligible. The selected stress representation,
-not the initial letters alone, protects such roots
+*gestīga* 'climb into/onto', with West Saxon *ġestīgan* 'climb into/onto',
+illustrates a genuine prefix shape outside this rule. The expanded
+weak-prefix models correctly reach the West Saxon form, whereas the
+restricted present grammar gives [*ġiestīgan*]{.pred}. This coverage
+advantage is real: the compressed rule must not be presented as a
+complete grammar of inherited prefixes. Conversely, the accented root
+vowel of *ġealla* 'gall' is not eligible for its early reduction.
+The selected stress representation, not the initial letters alone,
+protects such roots. The choice to retain the restricted proxy leaves
+the fuller staged account available without declaring its disputed
+internal pathway uniquely reconstructed
 [@RingeTaylor2014, p. 335].
 
 The implementation's ordering dependency concerns

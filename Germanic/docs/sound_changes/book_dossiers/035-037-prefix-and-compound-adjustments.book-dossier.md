@@ -1,8 +1,10 @@
 # SC035-SC037: Prefix and Compound Adjustments
 
-SC035's current authority is `audits/sc035-adjudication.md` (2026-10-21):
-REFORMULATE its historical characterization, RETAIN its literal executable
-law and order. The earlier SC035 card records a composite displacement
+SC035's current authority is the linked follow-up
+`audits/sc035-model-comparison-adjudication.md` (2026-10-22), supplementing
+the preserved closure `audits/sc035-adjudication.md` (2026-10-21):
+REFORMULATE its comparative justification, provisionally RETAIN its literal
+executable law and order. The earlier SC035 card records a composite displacement
 experiment; current chronology distinguishes SC107 from stressed SC043.
 The grouping and the assessments of SC036/SC037 below are not new
 adjudications of either neighbour.
@@ -193,3 +195,45 @@ and `preoe` code identify the pre-Old English onset, with Old English
 completion stated separately; `english_specific` identifies the English trajectory
 without denying comparable continental reduction.
 The historical card and frozen displacement records remain unchanged.
+
+## 12. Follow-up comparison of prefix models
+
+The complete reproducible comparison is in
+`audits/sc035-model-comparison/`: all 389 selected rows, the migration-aware
+380 identity population and every one of 108 executable stages. A is the
+accepted compressed proxy; B permits ordinary weak fronting and later
+merger with explicit weak-prefix/root context; C additionally tests the
+possible regular pretonic raising after the palatal fricative. Both staged
+models preserve every selected final and differ from A at intermediate
+stages only for believe. Genuine guest/give/sheep diphthongization survives;
+gall is already diphthongized by breaking, not a live ordinary-PD firing.
+Begin and stressed bind are unchanged.
+
+The source-backed full comparison `*gastḯganą` uses CAPR's existing
+stressed-long-i notation. B/C give *ġestīgan* 'climb into/onto', whereas A
+gives incorrect *ġiestīgan*. The cluster exclusion is a real coverage
+limit, not a reason to deny the historical prefix or invent a new selected
+entry. Suppressing the existing long-i stress notation is a separate
+representation control and must not be confused with a historical
+shortening of the root.
+
+The historical choice is nevertheless not fixed by that coverage gain.
+B does not derive early *gi-*; C derives it by a regular raising which
+the source explicitly leaves open against possible *bi-*-influence.
+Both can merge independently supplied early weak *gi-* to *ge-*.
+The current decision is therefore underdetermination of the precise
+pathway, with provisional retention of A for its declared narrow population.
+This does not claim A is uniquely required, that a prefix-specific early
+sound law has been proven, or that the staged models are impossible.
+It avoids making a hypothetical regular law or an exact intermediate
+chronology canonical, while documenting the expanded model's real
+advantages and the prosodic distinctions a general prefix account needs
+[@Campbell1959, pp. 140--142, 153--155;
+@RingeTaylor2014, pp. 206, 215--217, 253--255, 334--335].
+
+The earlier historical characterization, A for existence and
+technical/runner-limited edge classifications are retained. No literal
+rule, selected input, chronology relation, baseline or neighbouring
+adjudication changes. The stale composition-site comment is corrected:
+the incumbent representation protects against SC107 and subsequent
+inappropriate palatal diphthongization, not against stressed SC043.

@@ -3766,10 +3766,10 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OEJGlideIO
     .o. OEDiphthongLeveling
     .o. OEAwLongDiphthong
-    # EARLY PREFIX REDUCTION: Unstressed prefix vowels must reduce to *e BEFORE
-    # AFB applies. Otherwise, ga- would undergo AFB (*a → *æ) and then breaking
-    # (*æ → *ea before l+C), yielding incorrect *gea- instead of *ge-.
-    # This is a chronological requirement: unstressed syllables don't undergo AFB.
+    # SC035: provisional compression of weak ga- vocalism, not an early date.
+    # The marker bypasses SC107's unstressed fronting and later inappropriate
+    # palatal diphthongization, not ordinary stressed SC043. Staged alternatives
+    # work if weak-prefix/root context is retained; see the model-comparison memo.
     .o. OEPrefixAReduction
     # Inter-stress raising: *a → *u in compounds before back vowel (R/T §6.3.3).
     # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
