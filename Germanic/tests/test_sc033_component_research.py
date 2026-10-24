@@ -62,13 +62,13 @@ class Sc033ComponentResearchTests(unittest.TestCase):
         self.assertEqual(component["verdict"], "REFORMULATE/SPLIT")
         for field in ("hist_stage", "hist_scope", "confidence"):
             self.assertEqual(component[field], "")
-        chapters, files = registry_views.read_reader_sources()
-        manifest = registry_views.build_reader_manifest(registry, chapters, files)
+        chapters = registry_views.read_reader_sources()
+        manifest = registry_views.build_reader_manifest(registry, chapters)
         self.assertIn("033-long-eow-diphthong.md", manifest)
         changed = [dict(row) for row in registry]
         next(row for row in changed if row["sc_id"] == "SC033")["include_in_volume"] = "no"
         with self.assertRaises(SystemExit):
-            registry_views.build_reader_manifest(changed, chapters, files)
+            registry_views.build_reader_manifest(changed, chapters)
 
     def test_changed_reader_definitions_are_exact_production_bodies(self):
         import re
@@ -76,8 +76,10 @@ class Sc033ComponentResearchTests(unittest.TestCase):
         reader_dir = ROOT / "Germanic/docs/sound_changes/reader_facing"
         for filename, expected in (
             ("033-long-eow-diphthong.md",
-             {"OEEwLongDiphthong", "OEJWWSimplification", "OEJGlideIO"}),
-            ("044-045-breaking-and-velar-fricative-palatalization.md",
+             {"OEEwLongDiphthong"}),
+            ("106-j-created-glide-compatibility.md", {"OEJWWSimplification"}),
+            ("110-palatalized-glide-io-support.md", {"OEJGlideIO"}),
+            ("044-breaking.md",
              {"EnglishBreakingWContext"}),
         ):
             found = set()

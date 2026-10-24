@@ -6,11 +6,12 @@ else is GENERATED from it or ARCHIVE. Never hand-edit a GENERATED file;
 never treat an ARCHIVE file as current authority.
 
 Presentation principle: the published book is an editorial projection of the
-scientific database, not a transcription of its storage or computational
-order. Stable identifiers (SC IDs, row IDs, filenames), corpus order and
-executable cascade order identify and compute things; they never decide where
-anything is published. Sound-law chapters follow `reader_chapters.tsv` /
-`reader_files.tsv` with order derived into the generated `reader_manifest.tsv`;
+scientific database, not a transcription of its storage organization.
+Stable identifiers (SC IDs, row IDs, filenames) and corpus order do not decide
+presentation order. The sound-change reader deliberately follows the complete
+individual executable sequence from `oe_pipeline`; chapter boundaries in
+`reader_chapters.tsv` divide that sequence without reordering it.
+`reader_manifest.tsv` is its generated observation, never a second authority;
 lexical entries follow derivation class, then alphabetical headword, with
 explicit exceptions only in `lexical_editorial_order.tsv`; the index has its
 own sort keys. Reordering a projection never changes reconstructions,
@@ -27,13 +28,12 @@ are GENERATED or ARCHIVE.
 | `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, display names, historical stage/scope, confidence, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter). It carries NO order-valued columns: executable positions are derived at read time from the executable model (`tools/oe_pipeline.py`) and published in the generated `registry/current_sc_state.tsv`; the legacy inventory/staging order spaces are frozen in `registry/archival_orders.tsv` (ARCHIVE) |
 | `registry/chronology_edges.tsv` | machine-state | Chronology relations: relation type, evidence basis (stage-entailed vs independently demonstrated), witnesses, witness roles |
 | `registry/adjudication_programme.json` | machine-state | Explicit administrative programme start (`start_sc`). `adjudicate.py --next` selects the first active, unadjudicated non-support entry at or above it in SC-ID order. Scoped verdicts never skip pending earlier work. This is neither historical chronology nor executable order; earlier cases and support stages remain explicitly addressable |
-| `registry/reader_chapters.tsv` | machine-state | Reader book chapters: chapter id, title, intro file. Chapter order is the chapter id |
-| `registry/reader_files.tsv` | machine-state | Reader file -> chapter assignment (one row per reader-facing chapter file; no order column — book order is derived from cascade position) |
+| `registry/reader_chapters.tsv` | publication-prose | Five editorial chapter boundaries: chapter id, title, intro file and `starts_at_sc`. Resolve anchors only after deriving global executable order. Boundaries cannot move individual entries |
 | `registry/sc_inventory_notes.tsv` | source | HUMAN JUDGEMENTS ONLY: plain-language draft descriptions, order-sensitivity classification, editorial `illustrative_lexemes`, notes, review flags |
 | `registry/sc_inventory_annotations.tsv` | GENERATED | Projection joining the two human sources with `germanic.txt` (definition text, stable anchor) and the coverage census (`firing_count`, `firing_lexemes`). Never hand-edit |
 | `Germanic/fsts/germanic.txt` | machine-state | Executable rule semantics and cascade composition |
 | `audits/*.md` adjudication memos | scientific-reasoning | Per-SC scientific reasoning; each carries a machine-readable `Registry-verdict:` line that must agree with the registry |
-| `reader_facing/*.md`, `book_dossiers/*.md` | publication-prose | Reader-facing chapters and grouped book dossiers; `adjudicate.py SCNNN --prepare` lists the ones relevant to a given SC |
+| `reader_facing/[0-9]*.md`, `reader_facing/chap*-intro.md`, `book_dossiers/*.md` | publication-prose | Exactly one authoritative reader file per published SC, owned only by `sc_registry.tsv.source_reader_facing_file`; shared historical context belongs in chapter introductions. Composite networks of the same SC stay together. Book dossiers may remain grouped. `adjudicate.py SCNNN --prepare` follows registry pointers |
 | `cascade_baseline/cascade_baseline_summary.json` | machine-state | Frozen fingerprints (change only via the explicit adjudication/refreeze procedure) |
 | `cascade_baseline/approved_input_migrations.tsv` | machine-state | Exact approved old/new selected input, counterpart and output by stable OE row ID and concept, with adjudication pointer. Gift changes input only; knee changes its selected paradigm cell; SC034 straw changes regular output only, retaining the attested target as a known mismatch. Every undeclared field/multiplicity change and archival rewrite remains forbidden |
 | `Germanic/data/entry_context_metadata.tsv` | machine-state | Separately sourced selected sentence stress/finality at SC098; never changes PROTO/PROTOFORM or infers stress from accent |
@@ -52,6 +52,45 @@ Registry document pointers (`capr_evidence`, `chronology_card`,
 paths or bare filenames resolved against the canonical document directories;
 `--prepare` builds the reading list exclusively from these fields (no
 filename guessing), and a test requires every pointer to resolve.
+
+### Individual reader ownership and executable order
+
+A reader entry is eligible exactly when the registry says `lifecycle_status=active`,
+`include_in_volume=yes` and `is_reader_facing=yes`. These publication flags do not
+create historical staging: deliberately printed support explanations retain
+`entry_type=support_stage`, their existing empty historical judgements and
+`staging_row=no`. SC113 remains unpublished context machinery. A retired entry
+is not made publishable by retaining an identifier or an archived explanation.
+
+Each eligible SC must resolve to exactly one named `oe_pipeline` stage and
+exactly one existing Markdown file. Independent published SCs cannot share a
+file. Each source has one entry title and one primary heading/anchor for its
+registered executable identifier; component headings may repeat only that
+same SC identity, with distinct anchors. Missing or ambiguous stage mappings,
+duplicate identities, anchors or ownership, missing primary headings and
+unregistered numbered reader sources fail closed. Each primary network must
+be printed exactly once; duplicate definitions and definitions belonging to
+another independently published SC are rejected.
+
+The generator first sorts individual entries solely by `Stage.exec_index`,
+then inserts chapter boundaries at `starts_at_sc`. Intervening entries belong
+to the preceding boundary's chapter. The first boundary must start the global
+sequence; duplicate, crossed or missing boundaries fail with a diagnostic.
+An ordinary SC crossing a boundary automatically changes chapter without any
+file relocation or membership edit. Review potentially misleading chapter
+titles after a scientific reorder; never accommodate a title by reordering SCs.
+
+There is no live `reader_files.tsv`, per-SC editorial position table, filename
+sort or SC-number fallback. Changing executable order changes the next generated
+reader and combined book through the standard refresh. Never reorder generated
+manifests or manuscripts manually. Source-file boundaries introduce no page
+breaks; chapters and explicitly authored layout remain responsible for pagination.
+
+The book follows the executable reconstruction's adopted serialization, not a
+claim that every pairwise historical chronology is independently established.
+Adjudication records, not chapter placement or executable names, establish the
+evidential strength of historical claims. Lexical alphabetical ordering and
+index sorting retain their separate existing authorities.
 
 ## GENERATED (never hand-edit; rebuilt by `adjudicate.py --refresh`)
 
@@ -73,7 +112,7 @@ inventory ordinal; no archival positions are invented for them.
 | File | Source |
 |---|---|
 | `registry/current_sc_state.tsv` | sc_registry + oe_pipeline (the ONLY current-position table) |
-| `registry/reader_manifest.tsv` | reader_chapters + reader_files + sc_registry + oe_pipeline: staged laws plus active support stages explicitly marked include_in_volume=yes/is_reader_facing=yes, without inventing historical staging (book order = min cascade position per file; chapters must be contiguous) |
+| `registry/reader_manifest.tsv` | sc_registry publication flags/source ownership + individual oe_pipeline stages + reader_chapters boundary anchors. One row per published identity, exposing executable identifier, `exec_index`, `cascade_position`, source, generated chapter and reader position. Complete sequence parity is required |
 | `registry/current_chronology.tsv` | chronology_edges + sc_registry + oe_pipeline (edges projected onto current cascade positions) |
 | `sound_change_historical_staging_map.tsv` | sc_registry + oe_pipeline (row order and `cascade_position`) |
 | `sound_change_inventory.tsv` | sc_registry + annotations |
@@ -152,6 +191,13 @@ recompile the FST. The graph's builders do not invoke these render wrappers.
 - `audits/sc001-sc020-chronology-audit.tsv` — the frozen SC001-SC020 audit matrix (see position-field semantics above)
 - `order_tests/chronology_cards/*.md` and `chronology_cards/chronology_graph_nodes.tsv` — per-SC evidence records from past audits; cite but do not treat their metadata as current
 - `chronology_card_index.tsv` — ARCHIVE record of the card set at experiment time (banner comment in the file; no live position column; the book pipeline reads its id set only)
+- `reader_facing/archive/021-unstressed-o-raising.md` — unchanged retired SC021
+  reader source, not a live publication authority. Older numbered reader
+  aggregate/report/build-script experiments are historical records, not supported
+  assembly entry points. Removed grouped sources remain recoverable through Git.
+- `reader_facing/archive/reader_pilot_history.md` — unchanged former pilot README.
+- `Germanic/docs/assembly/reader_architecture_migration.md` — architectural
+  migration evidence and observed sequence snapshot, never an ordering authority.
 
 ## Standard workflow for one SC adjudication
 

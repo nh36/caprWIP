@@ -84,7 +84,7 @@ class SC015AdoptionTests(unittest.TestCase):
         for name in new.keys() - changed:
             self.assertEqual(old[name].body, new[name].body, name)
         self.assertNotIn("EnglishStarNonVelar", source)
-        reader = (SC / "reader_facing/014-015-opening-vowel-prelude.md").read_text()
+        reader = (SC / "reader_facing/015-stressed-i-lowering.md").read_text()
         block = next(block for block in re.findall(r"```foma\n(.*?)```", reader, re.S)
                      if "define PNWGmcILowering " in block)
         self.assertEqual(compact(parse_defines(block)["PNWGmcILowering"].body), compact(RULE))
@@ -199,7 +199,7 @@ class SC015AdoptionTests(unittest.TestCase):
         self.assertTrue(any(r["target_change_id"] == "PWGmcChanges" for r in edges))
         memo = (SC / "audits/sc015-adjudication.md").read_text()
         self.assertIn("Registry-verdict: SC015=REFORMULATE", memo)
-        reader = (SC / "reader_facing/014-015-opening-vowel-prelude.md").read_text()
+        reader = (SC / "reader_facing/015-stressed-i-lowering.md").read_text()
         prose = reader.split("### A disputed Germanic correspondence", 1)[1]
         prose = re.sub(r"```[\s\S]*?```|\[@[^\]]+\]", "", prose)
         self.assertGreaterEqual(len(prose.split()), 2500)
@@ -207,7 +207,7 @@ class SC015AdoptionTests(unittest.TestCase):
         whitelist = table(SC / "reader_facing/reader_facing_citation_whitelist.tsv")
         exceptions = [row for row in whitelist if row["key"] == "deVaan2016"]
         self.assertEqual(len(exceptions), 1)
-        self.assertEqual(exceptions[0]["file_name"], "014-015-opening-vowel-prelude.md")
+        self.assertEqual(exceptions[0]["file_name"], "015-stressed-i-lowering.md")
         self.assertEqual(exceptions[0]["whole_work_general"], "no")
         self.assertIn("unpaginated", exceptions[0]["reason"])
         self.assertIn("paragraphs “Verwante vormen” and “Zowel”", reader)

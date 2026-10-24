@@ -38,13 +38,14 @@ container and change nothing.
 
 Four kinds of file, never mixed: authoritative scientific SOURCE (registries,
 FST, corpus, adjudication memos, frozen baselines); editorial SOURCE
-(publication prose, `reader_chapters.tsv`/`reader_files.tsv`,
+(publication prose, `reader_chapters.tsv` boundaries,
 `lexical_editorial_order.tsv`, index decisions); GENERATED projections
 (manifests, volumes, indexes, provenance); ARCHIVE (never authoritative).
 Editorial SOURCE decides how the book presents the science and can never
-change it: sound-law and lexical order, chapters and indexes are projections
-of the scientific database, not transcriptions of its identifiers or
-execution order.
+change it. Sound laws follow the individual canonical executable sequence;
+chapter boundaries cannot override it. Lexical order and indexes retain
+their independent editorial sort policies. None is a transcription of
+scientific identifiers or storage order.
 
 Failure modes recorded from SC112; guard against them in every task:
 
@@ -74,11 +75,13 @@ generated or archived.
 - `sound_changes/registry/chronology_edges.tsv` — **the canonical
   chronology-edge registry.** Owns all chronology relations, witnesses,
   witness roles, and evidence basis.
-- `sound_changes/registry/reader_chapters.tsv` and
-  `sound_changes/registry/reader_files.tsv` — reader book chapters
-  (id, title, intro file) and file→chapter assignment. No order columns:
-  book order is derived from cascade positions into the generated
-  `registry/reader_manifest.tsv`.
+- `sound_changes/registry/reader_chapters.tsv` — reader chapter titles,
+  introductions and stable `starts_at_sc` boundaries. One authoritative reader
+  file per published SC is owned by `sc_registry.tsv.source_reader_facing_file`.
+  The generated `reader_manifest.tsv` follows individual `oe_pipeline` execution
+  order exactly; neither chapter divisions, filenames nor SC numbers sort it.
+  Changing executable order automatically changes the next generated book;
+  never manually rearrange generated output. `reader_files.tsv` is retired.
 - `sound_changes/registry/sc_inventory_notes.tsv` — human inventory judgements
   only (plain descriptions, order sensitivity, editorial examples, notes).
   The `sc_inventory_annotations.tsv` beside it is a GENERATED projection.

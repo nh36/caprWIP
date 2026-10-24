@@ -18,7 +18,8 @@ For portable versus strict validation, see [CI validation](../../../docs/CI_VALI
 | Material | Editable owner |
 | --- | --- |
 | Book introduction | `capr_book_intro_alpha_01.md` |
-| Sound-change prose and chapter membership | Reader sources and `sound_changes/registry/reader_files.tsv`, routed by `adjudicate.py SCNNN --prepare` |
+| Sound-change prose | One reader source per published SC, owned by `sound_changes/registry/sc_registry.tsv.source_reader_facing_file`; routed by `adjudicate.py SCNNN --prepare` |
+| Sound-change order and chapter divisions | Individual `oe_pipeline` executable sequence; `sound_changes/registry/reader_chapters.tsv` adds SC-anchored chapter boundaries without reordering |
 | Elaborated lexical prose | `../lexeme_reports/model_entries/*.model.md` |
 | Scoped lexical selection/certification | `../lexeme_reports/pgmc_integration/editorial_cases.tsv` and the existing report manifest |
 | Lexical presentation order | `lexical_editorial_order.tsv` (explicit exceptions only; the default editorial policy is derivation class, then alphabetical Modern English headword) |
@@ -30,6 +31,28 @@ lists node kinds, authorities and outputs. `adjudicate.py --refresh` rebuilds
 stale products and checks the fixed points; never maintain another builder list.
 Class manifests, compact traces, lexical aggregate, reader aggregate, combined
 manuscript and index projections are generated.
+
+The reader manifest has one row per published identity, never a grouped-file
+minimum. Filenames and SC numbers are stable identifiers, not sort keys.
+The five chapter beginnings are resolved within the already ordered sequence;
+moving a rule across a boundary automatically changes its chapter on the next
+`adjudicate.py --refresh`. Crossed or missing boundaries fail rather than
+rearranging rules. `reader_files.tsv` has been retired with no replacement
+membership/order table. Do not reorder the generated manifest or books.
+
+The reader tracks the adopted executable reconstruction, not a claim that
+every pairwise historical chronology is independently demonstrated.
+Adjudication records preserve that distinction. Existing technical explanations
+remain explicitly classified support stages, not new historical sound laws;
+SC113 remains unpublished annotation machinery.
+
+One source file is one published SC, including its internal component networks.
+Shared thematic background belongs in chapter introductions and cannot force
+entries to move together. Chapter breaks remain intentional; a new source file
+does not force a new page. Normal reader builds check exact canonical/manifest/
+reader/combined SC sequence equality, ownership, headings and anchors.
+See [migration evidence](reader_architecture_migration.md) for the original
+grouping defect, content-preservation accounting and non-regression record.
 
 Entry position is editorial, never an identifier. Row IDs, filenames and corpus
 order do not decide where a lexical entry is published, so adding, renumbering

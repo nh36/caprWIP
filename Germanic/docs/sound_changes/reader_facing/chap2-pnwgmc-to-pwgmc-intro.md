@@ -144,3 +144,12 @@ not guarantee that the change is exclusive to Northwest Germanic, and a name
 beginning with `PWGmc` does not guarantee that it is absent from North Germanic.
 The historical analysis in each sound-change section takes priority over the
 name prefix.
+
+## Early Northwest Germanic vowel developments
+
+These two developments affect different parts of the vowel system.
+[SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization)
+monophthongizes unstressed \emph{*ai};
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering) represents the disputed lowering
+of stressed short \emph{*i}. Their grouping here does not identify them as
+successive stages of unstressed-vowel reduction.

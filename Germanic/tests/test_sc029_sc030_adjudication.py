@@ -52,7 +52,6 @@ EDGES = SC_DIR / "registry" / "chronology_edges.tsv"
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 BASELINE = SC_DIR / "cascade_baseline" / "cascade_baseline_outputs.tsv"
 MEMO = SC_DIR / "audits" / "sc029-sc030-awj-resolution-and-au-fronting-adjudication.md"
-READER = SC_DIR / "reader_facing" / "029-030-awj-glide-and-au-fronting.md"
 DOSSIER = (SC_DIR / "book_dossiers"
            / "028-030-glide-and-fronting-entry.book-dossier.md")
 
@@ -93,7 +92,9 @@ class Sc029Sc030AdjudicationTests(unittest.TestCase):
         # copy with quote markers and line breaks flattened away.
         flat = re.sub(r"(?m)^\s*>\s?", "", cls.memo.replace("`", ""))
         cls.memo_flat = " ".join(flat.split())
-        cls.reader = READER.read_text(encoding="utf-8")
+        cls.reader = "\n".join(
+            (SC_DIR / "reader_facing" / cls.registry[sc]["source_reader_facing_file"])
+            .read_text(encoding="utf-8") for sc in ("SC029", "SC030"))
 
     def define_body(self, name: str) -> str:
         return segmental_definition(self.uncommented, name)

@@ -2,8 +2,8 @@
 """Assemble the Version 1 reader-facing book section from the generated manifest.
 
 The book's file list and chapter boundaries are NOT typed here: they come from
-the GENERATED registry/reader_manifest.tsv (sources: reader_chapters.tsv +
-reader_files.tsv + sc_registry.tsv + oe_pipeline). Chapter titles and intro
+the GENERATED registry/reader_manifest.tsv (sources: sc_registry.tsv +
+oe_pipeline + reader_chapters.tsv boundary anchors). Chapter titles and intro
 files come from the human registry/reader_chapters.tsv. This builder holds only
 presentation logic (front matter, chapter blocks, heading wrapping, link
 resolution) plus the manifest-coverage report.
@@ -20,6 +20,8 @@ from __future__ import annotations
 import csv
 import re
 from pathlib import Path
+
+import generate_registry_views
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SC_DIR = REPO_ROOT / "Germanic/docs/sound_changes"
@@ -43,8 +45,8 @@ parts_front: list[str] = [
     "",
     "## Scope and orientation",
     "",
-    "The sequence begins with early West Germanic consonant and vowel changes"
-    " and ends with Old English r-metathesis.",
+    "The sequence follows the executable reconstruction from its early Germanic"
+    " developments through the Old English written surface.",
     "",
     "Rhotacism, brightening, breaking, umlaut, and apocope alternate with narrowly"
     " conditioned changes whose relative order rests on particular witness words.",
@@ -54,12 +56,23 @@ parts_front: list[str] = [
     "",
     "## Numbering note",
     "",
-    "SC numbers remain the established legacy identifiers. The Version 1 book"
-    " presents the changes in historical chapter order, which differs from the"
-    " computational cascade order for several rules.",
+    "SC numbers remain stable legacy identifiers, not chronological positions."
+    " Each published entry has one authoritative source. The book automatically"
+    " follows the individual stages of the canonical executable reconstruction;"
+    " neither filenames nor chapter membership can override that order.",
+    "",
+    "This is the order adopted by the executable reconstruction, not a claim"
+    " that every pairwise historical chronology has been independently proved."
+    " Adjudication records distinguish demonstrated chronology, stage-entailed"
+    " relations and computational serialization. Chapter boundaries and titles"
+    " remain editorial; they divide the sequence without rearranging its entries.",
+    "",
+    "Explicitly retained technical explanations are published at their executable"
+    " positions without becoming adjudicated historical sound laws.",
     "",
     "SC038, SC062, and SC084 mark technical or prosodic stages rather than sound"
-    " changes; SC077 is unused.",
+    " changes; SC113 annotates stress-foot context and is not a published law."
+    " SC077 is unused.",
     "",
 ]
 
@@ -71,6 +84,12 @@ def read_tsv(path: Path) -> list[dict[str, str]]:
 
 
 def load_manifest() -> tuple[list[dict[str, str]], dict[str, dict[str, str]]]:
+    expected = generate_registry_views.build_reader_manifest(
+        generate_registry_views.read_tsv(generate_registry_views.SC_REGISTRY),
+        read_tsv(READER_CHAPTERS), reader_root=READER_ROOT)
+    if READER_MANIFEST.read_text(encoding="utf-8") != expected:
+        raise ValueError("Reader manifest is stale: run "
+                         "python3 Germanic/tools/adjudicate.py --refresh")
     manifest = read_tsv(READER_MANIFEST)
     chapters = {c["chapter_id"]: c for c in read_tsv(READER_CHAPTERS)}
     return manifest, chapters
@@ -102,6 +121,21 @@ def wrap_long_rule_headings(text: str) -> str:
     return "\n".join(wrapped)
 
 
+def nest_entry_headings(text: str) -> str:
+    """Keep entry titles and their subsections below the five real chapters."""
+    lines = []
+    in_code = False
+    for line in text.splitlines():
+        if line.startswith("```"):
+            in_code = not in_code
+        elif not in_code and re.match(r"^#{1,6} ", line):
+            if line.startswith("###### "):
+                raise ValueError("Reader entry heading is too deep to nest below a chapter")
+            line = "#" + line
+        lines.append(line)
+    return "\n".join(lines)
+
+
 def inject_chapter_block(chapter_num: str, title: str, intro_file: str) -> list[str]:
     """Return markdown lines for a chapter heading and intro."""
     block: list[str] = [
@@ -112,15 +146,13 @@ def inject_chapter_block(chapter_num: str, title: str, intro_file: str) -> list[
         "",
     ]
     intro_path = READER_ROOT / intro_file
-    if intro_path.exists():
-        intro_text = intro_path.read_text(encoding="utf-8").strip()
-        # Drop the top-level # heading from the intro file (already rendered
-        # as the chapter title)
-        intro_lines = intro_text.splitlines()
-        if intro_lines and intro_lines[0].startswith("# "):
-            intro_lines = intro_lines[1:]
-        block.extend(intro_lines)
-        block.append("")
+    intro_text = intro_path.read_text(encoding="utf-8").strip()
+    # The chapter title is rendered above, not repeated from its source.
+    intro_lines = intro_text.splitlines()
+    if intro_lines and intro_lines[0].startswith("# "):
+        intro_lines = intro_lines[1:]
+    block.extend(intro_lines)
+    block.append("")
     return block
 
 
@@ -155,7 +187,6 @@ def render() -> dict[Path, str]:
             else match.group(1), text)
 
     parts = list(parts_front)
-    first_file_seen = False
     prev_chapter = None
     for row in manifest:
         name = row["reader_file"]
@@ -165,12 +196,10 @@ def render() -> dict[Path, str]:
             parts.extend(inject_chapter_block(
                 chapter_id, chapter["title"], chapter["intro_file"]))
             prev_chapter = chapter_id
-        elif first_file_seen:
-            parts.extend(["", r"\newpage", ""])
-        first_file_seen = True
+        parts.append("")
         chapter_text = resolve_links(
             (READER_ROOT / name).read_text(encoding="utf-8").rstrip())
-        parts.append(wrap_long_rule_headings(chapter_text))
+        parts.append(nest_entry_headings(wrap_long_rule_headings(chapter_text)))
 
     parts.extend([
         "",

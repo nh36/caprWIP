@@ -419,3 +419,104 @@ through back-mutation [@RingeTaylor2014, pp. 169--173, 215--237]. Fulk's *Compar
 Grammar* provides additional coverage for phonological conditioning
 [@Fulk2018, pp. 58–61, 72–74]. For individual changes, source-specific citations appear in the
 relevant sound-change sections.
+
+## Awj resolution and the English brightening of au
+
+Two changes stand between the Proto-Germanic diphthong \emph{*au} and its Old
+English reflex *ēa*. The earlier one repairs a West Germanic gemination and
+restores a diphthong that the gemination had obscured. The later one fronts the
+first element of every \emph{*au}, whether inherited or newly created, and
+belongs with Anglo-Frisian brightening.
+
+The two are separate developments with separate domains. The first concerns a
+handful of words in which \emph{*w} stood before \emph{*j}. The second concerns
+the whole Old English history of \emph{*au}, for which *lēaf* ‘leaf’,
+*strēam* ‘stream’ and *brēad* ‘bread’ are ordinary witnesses, and to which the
+first change merely adds two more inputs.
+
+## Post-velar w-loss and loss of w before final i
+
+The first rule is a narrow loss of \emph{*w} after velars in the \emph{*ngw}
+sequence. Ringe and Taylor derive PGmc [singwan]{.recon} ‘sing’ to Old English *singan*
+‘sing’ [@RingeTaylor2014, p. 214, §6.4.2]. This comparative evidence establishes
+the change, although no lexical evidence fixes its order relative to a neighboring
+rule.
+
+The second rule is historically more legible. Campbell notes the recurring loss
+of \emph{*w} before \emph{*i} in unstressed position [@Campbell1959, p. 167, §406]. Ringe and Taylor
+trace the development of *sǣ* ‘sea’ from earlier \emph{*saiwi-} / \emph{*sawi-}
+[@RingeTaylor2014, p. 257, §6.7.1], and Luick gives the same trajectory in his own
+historical grammar [@Luick1914, p. 173, §187]. The first rule is restricted to
+the \emph{*ngw} sequence; the second has a specific lexical witness and defined
+earlier and later limits.
+
+## I-umlaut and West Saxon palatal diphthongization
+
+Luick gives the change its traditional scale:
+
+> Der wichtigste Fall von palataler Beeinflussung … war die Veränderung der
+> urenglischen Vokale durch i oder j der Folgesilbe.
+>
+> [@Luick1914, pp. 166--167, §182]
+
+Campbell gives the most compact classical formulation in English when he writes
+that “the process known as i-umlaut or i-mutation operates on practically all
+the sounds which it could theoretically affect in OE” [@Campbell1959, p. 69,
+§190]. He immediately defines the core conditioning environment as a following
+`i` or `j`, and he goes on to trace the consequences across much of the vowel
+system, including forms such as *giest* ‘guest’, *giefan* ‘give’, *hierde*
+‘shepherd’, and *ieldra* ‘older’ [@Campbell1959, pp. 69--72, §§190--197].
+
+Hogg continues in the same vein: “we come now to a change which is almost as
+uncontroversial as it is important” [@HoggPhonology1992, p. 113]. His examples, such as
+*bryd* ‘bride’, *trymman* ‘strengthen’, *bedd* ‘bed’, *ciest* ‘chest’, and
+*wiersa* ‘worse’, likewise emphasize that the change is a broad redistribution
+of vowel quality across the Old English vowel system [@HoggPhonology1992, pp. 113--114].
+
+The narrower palatal-diphthongal material is described differently. Ringe and
+Taylor treat West-Saxon diphthongization after initial palatals as a distinct
+process [@RingeTaylor2014, p. 215, §6.5.1], and Fulk is even more explicit about
+its chronological delicacy when he calls it “diphthongization by initial
+palatal consonants (which precedes front umlaut but not breaking)”
+[@Fulk2018, p. 74, §4.13]. Ringe and Taylor’s examples such as *gieldan* ‘pay’,
+*scield* ‘shield’, and *scieppan* ‘create’ show that this narrower process is
+triggered by already palatal consonants and leads to specifically West-Saxon
+diphthongal outputs [@RingeTaylor2014, pp. 215--216, §6.5.1].
+
+Luick, Campbell, and Hogg treat i-umlaut as a system-wide change. Ringe and
+Taylor and Fulk distinguish from it a narrower West-Saxon process affecting
+words after initial palatals. The two changes act in different environments and
+produce different lexical consequences.
+
+Two further distinctions are essential to their relative chronology. First,
+the raising of inherited Germanic \emph{*e} to \emph{*i} before a following
+high front vocoid is much earlier than Old English i-umlaut. Ringe reconstructs
+PGmc [giftiz]{.recon .iv lang=pgmc sort=giftiz} 'gift', with OE plural *ġifta*
+'wedding', and discusses that earlier raising separately
+[@Ringe2017, p. 135, pp. 151--153]. Ringe and Taylor likewise caution that
+raising of inherited \emph{*e} occurred hundreds of years before the Old
+English changes; a later repetition is rare and doubtful
+[@RingeTaylor2014, p. 220]. The selected gift input now has the earlier-raised vowel. Its lack of
+ordinary diphthongization therefore does not date the general West Saxon
+process. Published e-reconstructions remain genuine alternatives
+[@Orel2003, p. 130; @KlugeSeebold2011, p. 359]; the lexical discussion
+compares their evidence and explains the attributed working choice.
+
+Second, the ordinary diphthongization of inherited/fronted non-high vowels
+must be distinguished from the later treatment of some mutation products
+after *sċ*. Campbell separates that small group from his general front-vowel
+diphthongization: the group includes *sċēaþ* 'sheath' beside *sċǣþ* 'sheath'
+[@Campbell1959, pp. 68--69, §§184--185]. Ringe and Taylor explicitly place
+the treatment of the ai-derived mutation product after mutation, giving the
+same two sheath outcomes [@RingeTaylor2014, p. 235]. Their ordinary
+West Saxon derivations, including *ġiest* 'guest' and *ċytel* 'kettle',
+instead pass through palatal diphthongization before mutation
+[@RingeTaylor2014, pp. 215--217, 222].
+
+The historically preferred working account therefore has ordinary palatal
+diphthongization before Old English mutation, with the separately evidenced
+later *sċ* treatment after it. The adopted cascade separates these operations: ordinary diphthongization
+precedes mutation, and the unchanged late approximation follows it.
+The sources' alternate spellings do not by themselves supply an
+exceptionless conditioning law for the later group; its full conditioner
+remains unresolved.

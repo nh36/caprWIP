@@ -19,6 +19,13 @@ order by default); stage resolution is a single scientific module
 (`tools/entry_stages.py`) shared by the survey and the assembler. The next
 phase is substantive linguistic research.
 
+The reader now has one authoritative source per published SC and follows
+the individual executable sequence automatically; five editorial chapter
+boundaries cannot reorder it. The
+[reader migration record](assembly/reader_architecture_migration.md)
+documents ownership, conservation and validation. No subsequent adjudication
+was begun as part of that architectural migration.
+
 For subsequently authorized per-SC adjudication, the next SC is derived from
 the registry and the explicit programme policy, never stated here:
 `python3 Germanic/tools/adjudicate.py --next`

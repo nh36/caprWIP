@@ -62,12 +62,11 @@ SC_REGISTRY = REGISTRY_DIR / "sc_registry.tsv"
 INVENTORY_NOTES = REGISTRY_DIR / "sc_inventory_notes.tsv"
 EDGE_REGISTRY = REGISTRY_DIR / "chronology_edges.tsv"
 READER_CHAPTERS = REGISTRY_DIR / "reader_chapters.tsv"
-READER_FILES = REGISTRY_DIR / "reader_files.tsv"
 
 # The complete list of hand-edited inputs this generator may read. Guardrail
 # tests assert that no archived file can silently become a current-state input.
 DECLARED_INPUTS = (SC_REGISTRY, INVENTORY_NOTES, EDGE_REGISTRY,
-                   READER_CHAPTERS, READER_FILES)
+                   READER_CHAPTERS)
 
 ANNOTATIONS = REGISTRY_DIR / "sc_inventory_annotations.tsv"  # now GENERATED
 BASELINE_OUTPUTS = SC_DIR / "cascade_baseline/cascade_baseline_outputs.tsv"
@@ -298,10 +297,10 @@ REGISTRY_FORBIDDEN_COLUMNS.update({
     "staging_order": "registry/archival_orders.tsv (ARCHIVE / FROZEN)",
     "inventory_order": "registry/archival_orders.tsv (ARCHIVE / FROZEN)",
     "current_order": "no such fact; executable order is oe_pipeline's",
-    "v1_chapter": "registry/reader_files.tsv (file -> chapter) via "
-                  "source_reader_facing_file",
+    "v1_chapter": "GENERATED registry/reader_manifest.tsv "
+                  "(reader_chapters.tsv boundaries over oe_pipeline)",
     "v1_reader_position": "GENERATED registry/reader_manifest.tsv "
-                          "(min cascade position per reader file)",
+                          "(individual oe_pipeline executable position)",
 })
 
 
@@ -455,116 +454,163 @@ def build_staging_view(reg):
         "Canonical SC-level historical staging map view for the Version 1 CAPR book.",
         "Rows are in executable cascade order (oe_pipeline).",
         "Book chapter/file order is the GENERATED registry/reader_manifest.tsv",
-        "(sources: registry/reader_chapters.tsv + reader_files.tsv + oe_pipeline).",
+        "(sources: registry/reader_chapters.tsv + sc_registry.tsv + oe_pipeline).",
         "Confidence: A=secure | B=strong but analysis-dependent | C=genuinely unresolved",
     ]
     return tsv_text(b, header, rows)
 
 
 def read_reader_sources():
-    chapters = read_tsv(READER_CHAPTERS)
-    files = read_tsv(READER_FILES)
-    return chapters, files
+    return read_tsv(READER_CHAPTERS)
 
 
-def build_reader_manifest(reg, chapters, files):
-    """The generated Version 1 book manifest: one row per reader-facing file,
-    in presentation order. Chapter membership is human (reader_files.tsv);
-    chapter metadata is human (reader_chapters.tsv); order inside a chapter is
-    DERIVED: files sort by the minimum cascade position of the SCs they
-    contain (sc_registry.tsv source_reader_facing_file + oe_pipeline)."""
+def build_reader_manifest(reg, chapters, *, stages=None, reader_root=None):
+    """Project individual published identities, then insert chapter boundaries.
+
+    Only oe_pipeline supplies positions. The optional model/root arguments
+    permit isolated regression tests without editing the scientific sources.
+    """
+    reader_root = reader_root or SC_DIR / "reader_facing"
+    stages = oe_pipeline.stages() if stages is None else stages
     errors = []
-    chapter_meta = {}
-    for c in chapters:
-        if c["chapter_id"] in chapter_meta:
-            errors.append(f"reader_chapters: duplicate chapter_id {c['chapter_id']}")
-        chapter_meta[c["chapter_id"]] = c
-        if not (SC_DIR / "reader_facing" / c["intro_file"]).is_file():
-            errors.append(f"reader_chapters: chapter {c['chapter_id']} intro "
-                          f"file missing: {c['intro_file']}")
-    file_chapter = {}
-    for f in files:
-        if f["reader_file"] in file_chapter:
-            errors.append(f"reader_files: duplicate reader_file {f['reader_file']}")
-        if f["chapter_id"] not in chapter_meta:
-            errors.append(f"reader_files: {f['reader_file']} names unknown "
-                          f"chapter_id {f['chapter_id']}")
-        file_chapter[f["reader_file"]] = f["chapter_id"]
-        if not (SC_DIR / "reader_facing" / f["reader_file"]).is_file():
-            errors.append(f"reader_files: missing reader file {f['reader_file']}")
-
-    published = [r for r in reg if r["staging_row"] == "yes"
-                 or (r["lifecycle_status"] == "active"
-                     and r["entry_type"] == "support_stage"
-                     and r["include_in_volume"] == "yes"
-                     and r["is_reader_facing"] == "yes")]
-    per_file = {}
+    by_identifier = {}
+    for stage in stages:
+        if stage.kind == "named":
+            by_identifier.setdefault(stage.foma_identifier, []).append(stage)
+    published = [r for r in reg if r["lifecycle_status"] == "active"
+                 and r["include_in_volume"] == "yes"
+                 and r["is_reader_facing"] == "yes"]
+    definition_owners = {r["fst_identifier"]: r["sc_id"] for r in published}
+    defined_names = set()
+    identities, files, positions, anchors = set(), set(), set(), set()
+    ordered = []
+    heading_re = re.compile(
+        r"^##\s+(SC\d{3})\.\s+.*?\s+\(`([^`]+)`\)\s+\{#(rule-[^}]+)\}\s*$",
+        re.M)
     for r in published:
+        sc = r["sc_id"]
+        if sc in identities:
+            errors.append(f"reader manifest: duplicate published identity {sc}")
+        identities.add(sc)
         fname = (r["source_reader_facing_file"] or "").strip()
-        if not fname:
-            errors.append(f"reader manifest: published SC {r['sc_id']} has no "
+        if not fname or Path(fname).name != fname or not fname.endswith(".md"):
+            errors.append(f"reader manifest: {sc} needs one bare Markdown "
                           "source_reader_facing_file")
             continue
-        if fname not in file_chapter:
-            errors.append(f"reader manifest: {r['sc_id']} names file {fname} "
-                          "absent from reader_files.tsv")
+        if fname in files:
+            errors.append(f"reader manifest: independent SCs share source {fname}")
+        files.add(fname)
+        path = reader_root / fname
+        if not path.is_file():
+            errors.append(f"reader manifest: {sc} missing source {fname}")
+        else:
+            text = path.read_text(encoding="utf-8")
+            structural_text = re.sub(r"(?ms)^```.*?^```[ \t]*\n?", "", text)
+            headings = heading_re.findall(structural_text)
+            numbered = re.findall(r"^#{1,6}\s+(SC\d{3})\..*$", structural_text, re.M)
+            if {h[0] for h in headings} != {sc} or set(numbered) != {sc} or len(numbered) != len(headings):
+                errors.append(f"reader manifest: {fname} must contain only {sc} "
+                              "rule headings (component networks may share that identity)")
+            primary = [(s, ident, anchor) for s, ident, anchor in headings
+                       if ident == r["fst_identifier"]]
+            if primary != [(sc, r["fst_identifier"], "rule-" + r["fst_identifier"])]:
+                errors.append(f"reader manifest: {fname} needs exactly one primary "
+                              f"{sc} heading/anchor for {r['fst_identifier']}")
+            if len(re.findall(r"^# ", structural_text, re.M)) != 1:
+                errors.append(f"reader manifest: {fname} needs one entry title")
+            for anchor in re.findall(r"\{#(rule-[^}]+)\}", structural_text):
+                if anchor in anchors:
+                    errors.append(f"reader manifest: duplicate rule anchor {anchor}")
+                anchors.add(anchor)
+            foma = "\n".join(re.findall(r"```foma\n([\s\S]*?)```", text))
+            try:
+                definitions = executable_facts.parse_defines(foma)
+            except ValueError as exc:
+                errors.append(f"reader manifest: {fname} invalid printed definitions: {exc}")
+                definitions = {}
+            if r["fst_identifier"] not in definitions:
+                errors.append(f"reader manifest: {fname} needs exactly one printed "
+                              f"definition of primary network {r['fst_identifier']}")
+            for name in definitions:
+                if name in defined_names:
+                    errors.append(f"reader manifest: duplicate printed definition {name} in {fname}")
+                defined_names.add(name)
+                if name in definition_owners and definition_owners[name] != sc:
+                    errors.append(f"reader manifest: {fname} buries independently published "
+                                  f"{definition_owners[name]} definition {name}")
+        matches = by_identifier.get(r["fst_identifier"], [])
+        if len(matches) != 1:
+            errors.append(f"reader manifest: {sc} executable identifier "
+                          f"{r['fst_identifier']} resolves to {len(matches)} stages, not one")
             continue
-        pos = oe_pipeline.cascade_position(r["fst_identifier"])
-        if pos is None:
-            errors.append(f"reader manifest: published SC {r['sc_id']} has no "
-                          "numbered cascade position")
+        stage = matches[0]
+        if stage.exec_index in positions:
+            errors.append(f"reader manifest: duplicate executable position {stage.exec_index}")
+        positions.add(stage.exec_index)
+        ordered.append((stage.exec_index, r, stage))
+    ordered.sort(key=lambda item: item[0])
+    for path in reader_root.glob("*.md"):
+        # These named aggregates/reports are generated or historical records,
+        # never individual reader sources.
+        if path.name in files or path.name.startswith("reader_facing_"):
             continue
-        per_file.setdefault(fname, []).append((pos, r["sc_id"]))
-    unused = sorted(set(file_chapter) - set(per_file))
-    if unused:
-        errors.append(f"reader_files: files with no published SC: {unused}")
+        text = re.sub(r"(?ms)^```.*?^```[ \t]*\n?", "", path.read_text(encoding="utf-8"))
+        if re.match(r"[0-9]", path.name) or re.search(r"^#{1,6}\s+SC\d{3}\.", text, re.M):
+            errors.append(f"reader manifest: unregistered live reader source {path.name}; "
+                          "register its publication or move retired material to archive/")
 
-    chapter_order = [c["chapter_id"] for c in chapters]
-    ordered = sorted(
-        per_file.items(),
-        key=lambda kv: (chapter_order.index(file_chapter[kv[0]]),
-                        min(p for p, _ in kv[1])))
-    # Chapters must own contiguous cascade-position intervals, so ordering by
-    # (chapter, min position) is the same as ordering by min position alone.
-    mins = [min(p for p, _ in scs) for _, scs in ordered]
-    if mins != sorted(mins):
-        errors.append("reader manifest: chapter assignment breaks cascade "
-                      f"order (file min positions {mins})")
-    if len(mins) != len(set(mins)):
-        errors.append("reader manifest: two reader files share the same "
-                      "minimum cascade position")
-    prev_max = None
-    for cid in chapter_order:
-        pos_in_ch = [p for fname, scs in per_file.items()
-                     if file_chapter[fname] == cid for p, _ in scs]
-        if not pos_in_ch:
-            errors.append(f"reader manifest: chapter {cid} has no positioned SCs")
-            continue
-        if prev_max is not None and min(pos_in_ch) <= prev_max:
-            errors.append(f"reader manifest: chapter {cid} overlaps the "
-                          "previous chapter's cascade positions")
-        prev_max = max(pos_in_ch)
+    if [c["chapter_id"] for c in chapters] != [str(i) for i in range(1, len(chapters) + 1)]:
+        errors.append("reader_chapters: chapter IDs must be unique and consecutive 1..N")
+    if not chapters or not ordered:
+        errors.append("reader manifest: empty chapter configuration or published population")
+    if len({c["intro_file"] for c in chapters}) != len(chapters):
+        errors.append("reader_chapters: duplicate introduction source would repeat context")
+    position_by_sc = {r["sc_id"]: pos for pos, r, _ in ordered}
+    boundaries = []
+    for c in chapters:
+        if not c["title"].strip():
+            errors.append(f"reader_chapters: chapter {c['chapter_id']} needs a title")
+        start = c.get("starts_at_sc", "")
+        if start not in position_by_sc:
+            errors.append(f"reader_chapters: chapter {c['chapter_id']} starts_at_sc "
+                          f"{start!r} is not a published executable identity")
+        else:
+            boundaries.append(position_by_sc[start])
+        intro = c["intro_file"]
+        if Path(intro).name != intro or not (reader_root / intro).is_file():
+            errors.append(f"reader_chapters: chapter {c['chapter_id']} missing intro {intro}")
+        elif re.search(r"^#{1,6} SC\d{3}\.", (reader_root / intro).read_text(), re.M):
+            errors.append(f"reader_chapters: {intro} must not contain an SC entry")
+    if len(boundaries) == len(chapters) and boundaries:
+        if boundaries != sorted(set(boundaries)):
+            errors.append("reader_chapters: crossed or duplicate executable boundaries; "
+                          "review starts_at_sc, never reorder sound changes to fit chapters")
+        if ordered and boundaries[0] != ordered[0][0]:
+            errors.append("reader_chapters: first boundary must begin the global reader sequence")
     if errors:
         for e in errors:
             print(f"READER CONFIG ERROR: {e}", file=sys.stderr)
         raise SystemExit(1)
 
-    header = ["reader_order", "chapter_id", "chapter_title", "reader_file",
-              "sc_ids", "min_cascade_position"]
+    header = ["reader_order", "sc_id", "fst_identifier", "exec_index",
+              "cascade_position", "reader_file", "chapter_id", "chapter_title"]
     rows = []
-    for i, (fname, scs) in enumerate(ordered, start=1):
-        cid = file_chapter[fname]
-        sc_ids = ";".join(sc for _, sc in sorted(scs))
-        rows.append([str(i), cid, chapter_meta[cid]["title"], fname,
-                     sc_ids, str(min(p for p, _ in scs))])
-    b = banner("registry/reader_chapters.tsv + registry/reader_files.tsv "
-               "(editorial) + registry/sc_registry.tsv + oe_pipeline "
-               "(cascade positions)") + [
-        "Version 1 book manifest: reader-facing files in presentation order.",
-        "File order inside a chapter is DERIVED from the minimum executable",
-        "cascade position of the SCs each file contains; never edit order here.",
-        "The book builder (Germanic/tools/build_reader_book.py) consumes this",
-        "manifest and contains no file list of its own.",
+    chapter_index = 0
+    for i, (pos, r, stage) in enumerate(ordered, start=1):
+        while chapter_index + 1 < len(chapters) and pos >= boundaries[chapter_index + 1]:
+            chapter_index += 1
+        chapter = chapters[chapter_index]
+        rows.append([str(i), r["sc_id"], r["fst_identifier"], str(pos),
+                     "" if stage.cascade_position is None else str(stage.cascade_position),
+                     r["source_reader_facing_file"], chapter["chapter_id"], chapter["title"]])
+    b = banner("registry/sc_registry.tsv (publication and source ownership) + "
+               "oe_pipeline (individual executable order) + "
+               "registry/reader_chapters.tsv (chapter boundary anchors)") + [
+        "One published identity and authoritative source per row.",
+        "Global order is exactly eligible oe_pipeline stages sorted by exec_index.",
+        "Chapters partition that sequence; neither filenames nor SC numbers sort it.",
+        "Support stages retain their technical classification; SC113 is not published.",
+        "Never manually reorder this GENERATED projection.",
     ]
     return tsv_text(b, header, rows)
 
@@ -943,7 +989,7 @@ def build_all():
     reg = read_tsv(SC_REGISTRY)
     notes = read_tsv(INVENTORY_NOTES)
     edges = read_tsv(EDGE_REGISTRY)
-    chapters, files = read_reader_sources()
+    chapters = read_reader_sources()
     errors = validate_registry(reg, edges)
     errors += validate_human_sources(notes)
     if errors:
@@ -955,7 +1001,7 @@ def build_all():
         ANNOTATIONS: build_annotations_view(ann_rows),
         CURRENT_SC_STATE: build_current_sc_state(reg),
         STAGING_VIEW: build_staging_view(reg),
-        READER_MANIFEST: build_reader_manifest(reg, chapters, files),
+        READER_MANIFEST: build_reader_manifest(reg, chapters),
         CURRENT_CHRONOLOGY: build_current_chronology(reg, edges),
         INVENTORY_VIEW: build_inventory_view(reg, ann_rows),
         EDGES_TSV: build_edges_tsv(edges),

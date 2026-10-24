@@ -1,12 +1,11 @@
-# reader_chapters.tsv — SOURCE OF TRUTH (hand-edited): editorial chapter decisions for the
-# Version 1 book. One row per chapter: number, title, and the intro file rendered under the
-# chapter heading (relative to docs/sound_changes/reader_facing/).
-# Chapter membership of each reader file lives in registry/reader_files.tsv; the order of
-# files inside a chapter is GENERATED (registry/reader_manifest.tsv) from executable cascade
-# positions and is never stored here.
-chapter_id	title	intro_file
-1	From Proto-Germanic to Proto-Northwest Germanic	chap1-pgmc-to-pnwgmc-intro.md
-2	From Proto-Northwest Germanic to Proto-West Germanic	chap2-pnwgmc-to-pwgmc-intro.md
-3	From Proto-West Germanic to Anglo-Frisian	chap3-pwgmc-to-af-intro.md
-4	From Anglo-Frisian to Old English	chap4-af-to-oe-intro.md
-5	Old English orthography and the written surface	chap5-oe-orthography-intro.md
+# SOURCE: editorial chapter titles, introductions and stable beginning identities.
+# First derive the complete global executable reader sequence, then insert these
+# boundaries. Intervening entries belong to the preceding boundary's chapter.
+# Crossed, duplicate, missing or noninitial first boundaries fail validation.
+# No entry order or per-file chapter membership is maintained here.
+chapter_id	title	intro_file	starts_at_sc
+1	From Proto-Germanic to Proto-Northwest Germanic	chap1-pgmc-to-pnwgmc-intro.md	SC103
+2	From Proto-Northwest Germanic to Proto-West Germanic	chap2-pnwgmc-to-pwgmc-intro.md	SC096
+3	From Proto-West Germanic to Anglo-Frisian	chap3-pwgmc-to-af-intro.md	SC020
+4	From Anglo-Frisian to Old English	chap4-af-to-oe-intro.md	SC004
+5	Old English orthography and the written surface	chap5-oe-orthography-intro.md	SC016

@@ -99,16 +99,16 @@ class PalatalClassSplitTests(unittest.TestCase):
 
     def test_changed_reader_bodies_match_production(self):
         files = {
-            "044-045-breaking-and-velar-fricative-palatalization.md":
+            "045-velar-fricative-palatalization.md":
                 {"OEVelarFricativePalatalization"},
             "052-velar-palatalization.md": {
                 "OEGFricativePalatal", "OEVelarPalatalizationKFront",
                 "OEVelarPalatalizationStops", "OEVelarPalatalization",
-                "OEPalatalFricativeMerger",
             },
-            "055-056-i-umlaut-core.md":
-                {"OEWsPalatalDiphthongization", "OELatePalatalDiphthong"},
-            "081-083-j-strengthening-vocalization-and-ei-contraction.md":
+            "109-palatal-fricative-merger-support.md": {"OEPalatalFricativeMerger"},
+            "056-west-saxon-palatal-diphthongization.md": {"OEWsPalatalDiphthongization"},
+            "105-late-palatal-diphthongization-support.md": {"OELatePalatalDiphthong"},
+            "082-intervocalic-j-vocalization.md":
                 {"OEIntervocalicJVocalization"},
             "089-late-unstressed-ag-suffix.md": {"OELateUnstressedAgSuffix"},
         }

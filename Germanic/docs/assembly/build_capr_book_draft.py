@@ -164,24 +164,13 @@ def transform_chronology(text: str) -> str:
     Each ``# Chapter N. TITLE`` heading in the source becomes a real numbered
     book chapter at ``#`` level (``# TITLE``, dropping the ``Chapter N.`` prefix).
 
-    Individual sound-change entries (``# Name``) are demoted to ``##`` sections
-    within their historical chapter.
-
-    Headings that appear directly under a historical chapter introduction
-    (``## ...``) stay at ``##`` level.  Headings that appear inside a
-    sound-change entry (``## Historical discussion``, ``## SC049. ...``) are
-    demoted to ``###`` subsections.  This is tracked via the ``in_intro`` flag
-    which is True after a ``# Chapter N.`` heading and False after the first
-    plain ``# SoundChange`` heading within a chapter.
-
-    ``###`` headings in chapter introductions (e.g. ``### West Germanic rhotacism
-    (SC003)`` in the Chapter 3 intro) stay at ``###``.
+    The reader builder already nests entry titles at ``##`` and their rule
+    subsections at ``###``. Preserve that hierarchy, including chapter-intro
+    sections, rather than interpreting source-file boundaries a second time.
     """
     out: list[str] = []
     preamble: list[str] = []
     seen_chapter = False
-    in_intro = False          # True = inside historical chapter intro
-                              # False = inside a sound-change entry
 
     for line in strip_title_block(strip_references(text)).splitlines():
         m = _HIST_CHAPTER_RE.match(line)
@@ -200,29 +189,10 @@ def transform_chronology(text: str) -> str:
                 preamble = []
                 out.append("")
             seen_chapter = True
-            in_intro = True
             out.append("# " + m.group(1))
         elif not seen_chapter:
             # Still accumulating preamble
             preamble.append(line)
-        elif line.startswith("# "):
-            # Sound-change entry (not a historical chapter heading)
-            in_intro = False
-            out.append("## " + line[2:])
-        elif line.startswith("## "):
-            if in_intro:
-                # Chapter-introduction section → stays at ## (section in chapter)
-                out.append(line)
-            else:
-                # Sound-change subsection → ### (subsection of sound-change section)
-                out.append("### " + line[3:])
-        elif line.startswith("### "):
-            if in_intro:
-                # Chapter-introduction sub-section (e.g. SC list in chap3 intro)
-                out.append(line)
-            else:
-                # Deeper nesting inside a sound-change entry → ####
-                out.append("#### " + line[4:])
         else:
             out.append(line)
 

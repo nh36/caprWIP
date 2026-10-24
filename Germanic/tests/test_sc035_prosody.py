@@ -91,15 +91,15 @@ def test_reader_prints_adopted_definitions_and_all_material_scholarship():
     source = oe_pipeline._define_bodies(oe_pipeline._strip_comments(
         (ROOT / "Germanic/fsts/germanic.txt").read_text()))
     for identifier, filename in (
-        ("OEPrefixAReduction", "035-037-prefix-and-compound-adjustments.md"),
-        ("OEWsPalatalDiphthongization", "055-056-i-umlaut-core.md"),
-        ("OEUnstressedAEMerger", "072-073-unstressed-long-vowel-shortening-and-ae-merger-core.md"),
+        ("OEPrefixAReduction", "035-pretonic-front-vowel-raising.md"),
+        ("OEWsPalatalDiphthongization", "056-west-saxon-palatal-diphthongization.md"),
+        ("OEUnstressedAEMerger", "073-unstressed-ae-merger.md"),
         ("OEPrefixIReduction", "076-prefix-i-reduction.md"),
     ):
         reader = (SC / "reader_facing" / filename).read_text()
         body = oe_pipeline._define_bodies(oe_pipeline._strip_comments(reader))[identifier]
         assert re.sub(r"\s+", "", body) == re.sub(r"\s+", "", source[identifier])
-    reader = (SC / "reader_facing/035-037-prefix-and-compound-adjustments.md").read_text()
+    reader = (SC / "reader_facing/035-pretonic-front-vowel-raising.md").read_text()
     for key in ("HoggGrammar1992", "MinkovaZhou2022", "RieggerBogelWalkden2024", "Berg2014"):
         assert "@" + key + "," in reader
     for sc in ("SC035", "SC056", "SC073", "SC076"):

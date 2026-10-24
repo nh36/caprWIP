@@ -54,7 +54,7 @@ CENSUS = SC_DIR / "cascade_baseline" / "rule_coverage_census.tsv"
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
 BASELINE = SC_DIR / "cascade_baseline" / "cascade_baseline_outputs.tsv"
 MEMO = SC_DIR / "audits" / "sc026-sc027-nasal-spirant-adjudication.md"
-READER = SC_DIR / "reader_facing" / "026-027-nasal-spirant-changes.md"
+READER = SC_DIR / "reader_facing" / "026-nasal-spirant-lengthening.md"
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 

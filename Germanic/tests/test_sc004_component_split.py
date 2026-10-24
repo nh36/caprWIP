@@ -213,7 +213,7 @@ class ProductionCascadeTests(unittest.TestCase):
                          ("preoe", "english_specific", "B"))
         self.assertEqual((row["verdict"], row["fst_identifier"]),
                          ("REFORMULATE", "EAFAiMonophthongization"))
-        with (SC_DIR / "registry/reader_files.tsv").open(encoding="utf-8") as handle:
+        with (SC_DIR / "registry/reader_manifest.tsv").open(encoding="utf-8") as handle:
             readers = csv.DictReader(
                 (line for line in handle if not line.startswith("#")), delimiter="\t")
             chapter = next(row["chapter_id"] for row in readers

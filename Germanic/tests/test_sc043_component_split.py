@@ -67,7 +67,10 @@ class FrontingComponentTests(unittest.TestCase):
 
     def test_current_reader_definitions_match_real_source(self):
         source = SOURCE.read_text(encoding="utf-8")
-        reader = (SC / "reader_facing/043-anglo-frisian-brightening.md").read_text()
+        registry = {row["sc_id"]: row for row in rows(SC / "registry/sc_registry.tsv")}
+        reader = "\n".join(
+            (SC / "reader_facing" / registry[sc]["source_reader_facing_file"]).read_text()
+            for sc in ("SC043", "SC107", "SC108"))
         blocks = re.findall(r"```foma\n([\s\S]*?)```", reader)
         self.assertEqual(len(blocks), 4)
         for block in blocks:

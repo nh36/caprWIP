@@ -15,11 +15,14 @@ Run: cd Germanic/tests && python3 -m unittest test_sc_chronology_cross_artifact
 
 import csv
 import io
+import sys
 
 import unittest
 from pathlib import Path
 
 SC_DIR = Path(__file__).resolve().parents[1] / "docs" / "sound_changes"
+sys.path.insert(0, str(SC_DIR.parents[1] / "tools"))
+import oe_pipeline
 REGISTRY = SC_DIR / "registry" / "sc_registry.tsv"
 STAGING = SC_DIR / "sound_change_historical_staging_map.tsv"
 MANIFEST = SC_DIR / "cascade_baseline" / "cascade_order_manifest.tsv"
@@ -111,14 +114,14 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
     order recorded in cascade_order_manifest.tsv.
 
     The generated registry/reader_manifest.tsv is the projection under test:
-    it is built from reader_chapters.tsv + reader_files.tsv (SOURCE, no order
-    columns) + sc_registry + oe_pipeline, and its freshness is already
+    it is built from reader_chapters.tsv boundaries + sc_registry + oe_pipeline,
+    and its freshness is already
     enforced by test_registry_consolidation.GeneratedViewTests. Here we check
     the projected invariants and that no hand-typed file list survives in the
     build wrapper or builder."""
 
     READER_MANIFEST = SC_DIR / "registry" / "reader_manifest.tsv"
-    READER_FILES = SC_DIR / "registry" / "reader_files.tsv"
+    READER_CHAPTERS = SC_DIR / "registry" / "reader_chapters.tsv"
     BUILD_WRAPPER = (SC_DIR / "reader_facing"
                      / "build_reader_facing_local_section_20_docker.sh")
     BUILDER = SC_DIR.parents[1] / "tools" / "build_reader_book.py"
@@ -140,9 +143,7 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
                                               delimiter="\t"))
         cls.published = {
             sc: row for sc, row in _read(REGISTRY, "sc_id").items()
-            if row["staging_row"] == "yes"
-            or (row["lifecycle_status"] == "active"
-                and row["entry_type"] == "support_stage"
+            if (row["lifecycle_status"] == "active"
                 and row["include_in_volume"] == "yes"
                 and row["is_reader_facing"] == "yes")
         }
@@ -160,18 +161,20 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
                              f"{r['sc_id']}: stale cascade_position")
 
     def test_reader_manifest_order_is_cascade_order(self):
-        """reader_manifest rows (already in book order) must be strictly
-        increasing in minimum cascade position: book order == cascade order."""
+        """Require complete individual-stage sequence equality, not file minima."""
         orders = [int(r["reader_order"]) for r in self.reader_rows]
         self.assertEqual(orders, list(range(1, len(orders) + 1)),
                          "reader_order is not 1..N")
-        mins = [int(r["min_cascade_position"]) for r in self.reader_rows]
+        mins = [int(r["exec_index"]) for r in self.reader_rows]
         self.assertEqual(mins, sorted(mins),
-                         "reader file order does not follow the cascade "
+                         "reader entry order does not follow the cascade "
                          f"manifest: {mins}")
         self.assertEqual(len(mins), len(set(mins)),
-                         "two reader files claim the same minimum "
-                         "cascade position")
+                         "two entries claim the same executable position")
+        by_identifier = {r["fst_identifier"]: sc for sc, r in self.published.items()}
+        expected = [by_identifier[s.foma_identifier] for s in oe_pipeline.named_stages()
+                    if s.foma_identifier in by_identifier]
+        self.assertEqual([r["sc_id"] for r in self.reader_rows], expected)
 
     def test_chapters_are_contiguous_cascade_intervals(self):
         """Every chapter must own a contiguous block of cascade positions:
@@ -182,7 +185,7 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
         by_ch = {}
         for r in self.reader_rows:
             ch = int(r["chapter_id"])
-            for sc in r["sc_ids"].split(";"):
+            for sc in [r["sc_id"]]:
                 by_ch.setdefault(ch, []).append(pos_by_sc[sc])
         chapters = sorted(by_ch)
         self.assertEqual(chapters, list(range(1, len(chapters) + 1)),
@@ -194,7 +197,7 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
     def test_every_published_sc_appears_in_exactly_one_manifest_row(self):
         seen = {}
         for r in self.reader_rows:
-            for sc in r["sc_ids"].split(";"):
+            for sc in [r["sc_id"]]:
                 self.assertNotIn(sc, seen,
                                  f"{sc} appears in two reader manifest rows")
                 seen[sc] = r["reader_file"]
@@ -202,12 +205,13 @@ class BookOrderMatchesManifestTests(unittest.TestCase):
                          "reader manifest SC coverage differs from the "
                          "staged laws and explicitly published technical components")
 
-    def test_reader_files_source_carries_no_order_column(self):
-        header = next(ln for ln in self.READER_FILES.read_text(
+    def test_chapters_only_supply_boundaries_not_file_membership(self):
+        self.assertFalse((SC_DIR / "registry/reader_files.tsv").exists())
+        header = next(ln for ln in self.READER_CHAPTERS.read_text(
             encoding="utf-8").splitlines() if not ln.startswith("#"))
         for col in header.split("\t"):
             self.assertNotIn("order", col,
-                             "reader_files.tsv must not carry an order "
+                             "reader_chapters.tsv must not carry an order "
                              "column: book order is derived from the cascade")
             self.assertNotIn("position", col)
 
