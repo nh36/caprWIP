@@ -319,10 +319,12 @@ No global OCR substitution or source-text rewrite was made.
 
 Pheifer's supplied PDF is itself a converted reprint with missing
 diacritics. Its image confirms numbers and the visible letter readings,
-not lost original type. No restored accents are inferred. Campbell and
-Ringe/Taylor are held as searchable texts; an independent PDF witness was
-not available for their passages. Their page/section locators are retained
-and no new fine typographic distinction rests solely on their extraction.
+not lost original type. No restored accents are inferred. The subsequent
+[consistency closeout](sc035-consistency-closeout.md) checked original
+PDF images for Campbell pp.140–141 (§§333–334), pp.153–155 (§§369–370)
+and Ringe/Taylor pp.334–335. Other passages retain their separately
+qualified verification status; the new holdings do not make every
+page/section locator or extracted typographic distinction image-verified.
 
 ## Historical analysis
 

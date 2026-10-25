@@ -367,7 +367,11 @@ receipts, not newly rerun experiments or historical dates.
 
 Erfurt originals, the underlying correction at Épinal EE207, and the
 original Rushworth spelling were not independently collated here.
-Campbell and Ringe/Taylor remain searchable-text-only holdings. Pheifer's
+The consistency closeout verified Campbell pp.140–141 (§§333–334) and
+pp.153–155 (§§369–370), and Ringe/Taylor pp.334–335, against the original
+PDF images now held locally. Other passages retain their individual
+text-only or otherwise qualified statuses in A01–A35; possession of the
+PDFs does not imply that every cited page was image-checked. Pheifer's
 converted reprint loses some original diacritics; visible image text is
 not a restoration of that lost type. Equipment etymology, prefix-count
 denominator policy and early internal prosodic domains remain qualified
