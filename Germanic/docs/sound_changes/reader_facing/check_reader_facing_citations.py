@@ -101,7 +101,7 @@ DEFAULT_SKIP = {
 }
 
 CITATION_BLOCK_RE = re.compile(r"\[@([^\]]+)\]", re.S)
-PAGE_RE = re.compile(r"\bpp?\.\s*\d", re.I)
+PAGE_RE = re.compile(r"\bpp?\.\s*(?:\d|[ivxlcdm]+\b)", re.I)
 KEY_RE = re.compile(r"@([A-Za-z0-9_.:-]+)")
 
 

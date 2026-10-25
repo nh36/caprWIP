@@ -16,6 +16,23 @@ import pgmc_lexical_integration as integration
 import check_reader_facing_citations as citations
 
 
+class ReaderCitationLocatorTests(unittest.TestCase):
+    def test_roman_pages_are_locators_but_sections_alone_are_not(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "source.md"
+            for locator in ("p. lxxv, §63", "p. xli, §24", "pp. lxxv, 39",
+                            "pp. xxxv--xli", "pp. 38--41"):
+                with self.subTest(locator=locator):
+                    path.write_text(
+                        f"Evidence [@HoggGrammar1992, p. 237; @Pheifer1974, {locator}].\n")
+                    self.assertEqual(citations.scan_file(path, set()), [])
+            for locator in ("§63", "p. unknown", "p.", "introduction"):
+                with self.subTest(locator=locator):
+                    path.write_text(
+                        f"Evidence [@HoggGrammar1992, p. 237; @Pheifer1974, {locator}].\n")
+                    self.assertEqual(len(citations.scan_file(path, set())), 1)
+
+
 class IntegrationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

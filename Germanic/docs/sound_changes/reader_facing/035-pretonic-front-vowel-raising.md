@@ -1,115 +1,178 @@
 # Pretonic front-vowel raising
 
-## Inheritance and manuscript distribution
+## Inheritance and accentuation
 
 Old English *ġelīefan* 'believe' continues a formation with inherited
 \emph{*ga-}. Gothic *ga-* preserves the older vowel, while Old Saxon and
-Old High German *gi-* and Old English *ge-* exhibit reduced reflexes;
-Ringe and Taylor reconstruct \emph{*ga-} for both Proto-Germanic and
-Proto-West-Germanic. Comparable reduced prefixes do not by themselves
-establish a single shared West Germanic reduction event
-[@RingeTaylor2014, p. 206]. The Pforzen buckle independently preserves
-continental *ga-* in the usual segmentation of *gasokun*. Its current
-external archaeological date is 585--610; the complete inscription's
-interpretation remains disputed. It supplies no English palatal trigger
-or date for English raising
-[@RuneSPforzen, find 201, inscription and external dating;
-@Berg2014, pp. 60--61].
+Old High German *gi-* and Old English *ge-* have reduced reflexes.
+Ringe and Taylor reconstruct \emph{*ga-} for Proto-Germanic and
+Proto-West-Germanic; similar reduced forms do not establish a single
+shared reduction event. Continental *gasokun* on the Pforzen buckle,
+externally dated 585--610, supplies neither an English palatal trigger
+nor a date for English raising
+[@RingeTaylor2014, p. 206; @RuneSPforzen, find 201, inscription and
+external dating; @Berg2014, pp. 60--61].
 
-The oldest spellings do not form an unmixed chronological succession.
-Toller's supplement identifies nine paired examples on one page of
-Sweet's Épinal--Erfurt edition: four have *gi-* in both witnesses, one
-has *ge-* in both, two Épinal *gi-* beside Erfurt *ge-*, and two the
-reverse. The corresponding Corpus entries all have *ge-*.
-Thus Épinal *giroefan* 'reeves' corresponds to Erfurt and Corpus
-*geroefan*, whereas Épinal *gesuirgion* 'cousins' corresponds to Erfurt
-*gisuirgian* and Corpus *gesuigran*. In another Épinal example Sweet
-reports correction of the initial vowel from *i* to *e*. A correction
-in a manuscript is not itself a dated phonological change. These related
-glossaries transmit inherited material, not independent replications of
-nine separate sound laws
-[@Toller1921, p. 284, s.v. ge-;
-@Sweet1885, pp. 48--49, 51, 53, EE 189--214 and Corpus 439, 503, 505,
-517, 520, 522, 524--525, 530].
+The inherited accent is disputed. Bammesberger distinguishes verbal
+constructions from nominal compounds, reconstructing initial stress
+for the latter. His strongest phonological argument uses the dental
+contrast between Gothic *gabaurþs* 'birth' and West Germanic cognates:
+starting from a voiced dental, Thurneysen's Law would require an
+unstressed root and hence a stressed prefix. His account also requires
+particular reconstructions of the formation and inherited accent.
+Quinlin instead analyses inherited \emph{*ga-} as a clitic without
+primary word stress and contests those premises. An alternative account
+of inherited dental alternation further prevents the Gothic consonant
+from uniquely determining prefix stress. These are competing historical
+arguments, not observations of Old English metrical stress
+[@Bammesberger1981, pp. 377--382, especially p. 381 and nn. 9--10;
+@Quinlin1991, pp. 150--157; @Ringe2017, pp. 305--306].
 
-The familiar *gidyrstig* 'bold' has Erfurt *gedurstip* and Corpus
-*gedyrstig* beside it. Sweet prints Épinal *gibeataen* 'beaten', not
-the handbook's vowel-length-normalized form, beside Erfurt *gebeatten*
-and Corpus *gebeaten*. Corpus is not categorically *ge-*:
-*gibrec* occurs there too. Épinal *gybyrdid* 'born' has *ge-* in the
-related witnesses; *y* in that spelling alone does not establish a
-separate rounded-vowel sound law. The exceptional Erfurt *gaeadun*,
-beside Épinal *gibiodun* and Corpus *geeodun*, deserves scrutiny, but
-does not securely attest an unraised short \emph{*æ} after an already
-palatal fricative: the root is vowel-initial, and transmission,
-vowel quantity and the consonant's value remain material uncertainties
-[@Sweet1885, pp. 39--40, 43--44, 50--51, 107, EE 76, 81, 140, 228,
-Corpus 78, 245, 265, 487, 2152;
-@Toller1921, p. 284].
+The often-cited *ġeatwe* 'equipment' is not a secure exception with
+accented inherited \emph{*ga-}. The traditional prefixed analysis
+connects Old Norse *gǫtvar* 'equipment'; Bammesberger retains it.
+Quinlin separates *ġeatwe* from *getāwe* 'deeds' and proposes an
+unprefixed stem related to Gothic *gatwō* 'street'. That alternative
+requires a semantic bridge which is not independently proved.
+Campbell himself qualifies the relationship of the associated forms,
+and Orel retains the equipment word under a different reconstructed
+base of unknown origin. The disagreement remains unresolved:
+neither prefixed category membership nor exceptional inherited accent
+can be assumed. Accordingly this word cannot securely date the
+prefix's reduction relative to palatal diphthongization
+[@Campbell1959, p. 31, §74 n. 5, and p. 149, §358 n. 6;
+@Bammesberger1981, p. 384 n. 17; @Quinlin1991, pp. 155--156;
+@Orel2003, p. 403].
 
-The dates of copies must be distinguished from their linguistic layers.
-The modern catalogue places Épinal around or just before 700 and
-Corpus in the first half of the ninth century, revising the older
-absolute dates. Corpus is an expanded revision of a precursor of
-Épinal--Erfurt, not an unrelated later sample. The conventionally
-Mercian attribution does not securely localize every gloss; Erfurt's
-continental copying introduces an additional source of interference.
-Its manuscript dating is inconsistent in the older accounts and does
-not date its early English exemplar
+Ordinary Old English *ge-* and *be-* are weak, with the following root
+independently stressable. Alliteration and metrical analysis support
+this distinction; they do not prove an identical accentual system at
+every prehistoric stage. Grammatical structure can help reconstruct
+stress without itself conditioning a sound law
+[@HoggPhonology1992, pp. 99--100; @Minkova2008, pp. 22--23;
+@MinkovaZhou2022, pp. 535--536].
+
+## Manuscript distribution
+
+Pheifer's Épinal--Erfurt edition provides the central aggregate evidence.
+His initial-prefix counts are:
+
+| Witness | *gi-* | *ge-* | Total *gi-/ge-* | *bi-* with *i* |
+|---|---:|---:|---:|---:|
+| Épinal | 40 | 13 | 53 | 11 |
+| Erfurt | 31 | 34 | 65 | 11 |
+
+The proportions of *gi-* are 75.47% and 47.69%, respectively.
+These are descriptive proportions in related transmitted texts,
+not independent samples measuring the rate of a sound change.
+The denominators differ, and the edition does not enumerate the
+complete token lists or explicitly state how every corrected prefix
+enters the totals. Its separate medial/final-vowel exclusions cannot
+simply be transferred to this sample
+[@Pheifer1974, p. lxxv, §63].
+
+The larger distribution complements, rather than replaces, the paired
+readings. Nine Épinal--Erfurt alignments identified by Toller include
+differences in both directions; their corresponding Corpus readings
+have *ge-*. Corpus nevertheless also has *gibrec* 'breaking'.
+A written correction from *i* to *e* does not itself date phonological
+lowering. These readings overlap the larger edition's material and
+must not be counted again as independent confirmations
+[@Toller1921, p. 284, s.v. ge-; @Sweet1885, pp. 48--49, 107].
+
+Difficult forms require lexical and editorial discrimination.
+Épinal *gybyrdid*, beside Erfurt *gebyrdid*, means 'striped(?)' in
+Pheifer's interpretation, not 'born'; it cannot witness the accent
+of *ġebyrd* 'birth'. Pheifer prints *gihiodum* where Sweet
+prints *gibiodun*, beside Erfurt *gaeadun* and Corpus *geeodun*.
+That edition difference must not be silently normalized.
+Pheifer also compares Épinal *saegesetu* with Erfurt *saegaesetu*
+'maritime regions', where the disputed vowel is internal.
+Neither exceptional *ga-* spelling establishes by itself an
+unraised short vowel after an independently established palatal
+fricative: early prosody, vowel value and transmission remain material
+questions. The supplied electronic edition has lost some original
+diacritics, so fine distinctions require an independent printed witness
+[@Pheifer1974, pp. xxiii, lxxv, 6, 13, 39, 74, 108;
+@Sweet1885, pp. 39, 50].
+
+The dates of manuscripts are not the dates of all their linguistic
+material. Épinal is placed around 700. Herren and Sauer date the
+continental Erfurt copy to the second or third decade of the ninth
+century; Pheifer argues for a common ancestor with Épinal and an
+intervening English copying layer. Corpus is a related expanded
+recension, not an unrelated later sample; ninth-century dating does
+not give every gloss a new phonological date. Dialect, exemplar,
+English revision and continental copying must remain distinct
 [@LucasLucas2012, p. 67; @Lucas2016, p. 11;
-@Sweet1885, pp. 3--4; @HoggGrammar2011, pp. 5--6].
+@HerrenSauer2016, pp. 129--132; @Pheifer1974, p. xli, §24;
+@Pheifer1987, pp. 34--37].
 
-The distribution extends beyond these glossaries. Early Northumbrian
-runic *gistiga* 'climb into/onto' supplies an actual early *gi-* spelling.
-The Vespasian gloss has *geseted* 'set' beside *bibod* 'command'.
-Alfredian West Saxon *gemynd* 'mind' and *geðencean* 'remember'
-contrast with much later Northumbrian *giher* 'hear' and *gitrivadon*
-'we trust' in the Durham Ritual. These are different textual and
-regional traditions, not successive observations of one speaker
-population. Hogg explicitly recognizes both early spelling confusion
-and late Northumbrian *i* spellings, including the possibility of a
-raised allophone. The best description is a historically motivated
-weak-vowel development whose surviving distribution also reflects
-variety, orthography and transmission, not a universal date after which
-every *gi-* became *ge-*
-[@Sweet1885, pp. 125, 188--189; @Sweet1871, p. 3;
-@Stevenson1840, p. 7, collects 2--3;
-@HoggGrammar2011, pp. 4--7, 238--239, §§6.53--6.54].
+Early Northumbrian *gistiga* 'climb into/onto' and later Northumbrian
+*giher* 'hear' and *gitrivadon* 'we trust' prevent a universal
+early-*gi-*/late-*ge-* spelling calendar. Samuels's Lindisfarne--Rushworth
+comparison likewise documents late *gi-* forms, but its principal
+contrast concerns the presence or absence of the whole prefix,
+not a vowel-frequency census or proof of influence from *bi-*.
+Hogg explicitly allows spelling confusion and, in late Northumbrian,
+a raised allophone. The attested spellings are more secure than
+a unique phonemic interpretation of each vowel
+[@Sweet1885, p. 125; @Sweet1871, p. 3;
+@Stevenson1840, p. 7, collects 2--3; @Samuels1949, pp. 109--111;
+@HoggGrammar2011, pp. 238--239, §§6.53--6.54].
 
-## Regular reconstruction and prosody
+## Regular reconstruction and prosodic domain
 
-The adopted English reconstruction comprises several changes, not an
-immediate replacement of \emph{*a} by \emph{*e}. Ordinary unstressed
-fronting independently supplies \emph{*æ}. Campbell distinguishes
-fronting from the later merger; Ringe and Taylor explicitly consider
-regular raising of pretonic \emph{*æ} after a palatal fricative.
-Raising in this short weak vowel is compatible with the preceding
-high front articulation. That phonetic motivation does not establish
-the exact intermediate height from the spellings themselves.
-The regular account adopted here is fronting, palatalization, raising
-and later lowering, never a sound law conditioned by prefix identity
-[@Campbell1959, pp. 140--141, §§333--334; @Campbell1959, pp. 153--155,
-§§369--370; @RingeTaylor2014, pp. 334--335].
+The preferred reconstruction remains ordinary unstressed fronting,
+palatalization, raising and later lowering:
+\emph{*ga- > *gæ- > *gi- > *ge-}. Ringe and Taylor explicitly propose
+regular raising of short pretonic \emph{*æ} after a palatal fricative.
+The preceding high front articulation supplies a plausible phonetic
+motivation, not direct measurement of the intermediate vowel.
+Fronting and later weak-vowel merger are independently supported
+[@Campbell1959, pp. 140--141, §§333--334, and pp. 153--155, §§369--370;
+@RingeTaylor2014, pp. 334--335].
 
-Stress supplies the decisive distinction. The ordinarily weak vowel
-must be distinguished from the exceptional accented form in
-*ġeatwe* 'armour'. Metrical evidence independently supports the weakness
-of *ge-* and *be-* alongside stress on the following root; grammatical
-structure can help recover that stress, but is not itself the condition
-of the vowel change
-[@Campbell1959, p. 31, §74 and n. 5; @HoggPhonology1992, pp. 99--100;
-@RingeTaylor2014, p. 335; @MinkovaZhou2022, pp. 535--536].
+Fronting and merger alone give late *ge-* but do not explain genuine
+early *gi-* without an additional account. A raised realization
+rather than an obligatory separate high-vowel stage remains possible;
+Hogg's posttonic raising before following palatals and late Northumbrian
+allophony, however, do not independently establish that early pathway
+after a preceding fricative. Influence from *bi-* is another published
+possibility, not a demonstrated replacement. Pheifer's uniform *bi-*
+and variable *gi-* are not matched for stress or lexical distribution;
+he considers stressed *bi-* and an ablaut variant corresponding to
+continental *ga-* as possible explanations. No positive redistribution
+or substitution has been established. Regular raising therefore remains
+preferable, without pretending that its precise phonetics or full
+generality have been proved
+[@RingeTaylor2014, p. 335; @Berg2014, pp. 60--61;
+@Pheifer1974, p. lxxv, §63;
+@HoggGrammar1992, §§6.51--6.54 (held 2011 reprint, pp. 238--239)].
 
-Morphological and prosodic boundaries need not coincide. Manuscript
-grouping in Old English, Old Saxon and Old High German sometimes joins
-weak *ge-* to preceding material rather than to the following root.
-This supports distinguishing the weak syllable from the headed root
-foot, not a universal prosodic boundary at every morpheme boundary.
-The accompanying modern German experiment concerns a different period
-and does not date English vowel raising. Here the derivations represent
-citation words with one weak pretonic syllable, not every possible
-sentence-level regrouping
-[@RieggerBogelWalkden2024, pp. 2065--2068].
+Weakness does not require word-initial position. Minkova's
+*mísgewìeld* 'error' has the grouping *(mís-ge)-(wìeld)*, with weak
+internal *ge-* incorporated into the first prosodic word.
+In *geédnìwad* 'restored', *ge-(éd)-(nì.wad)* has a weak outer prefix
+before an independently stressed inner element and hiatus.
+The form *únforcùð* 'dishonest' supplies a comparable multi-domain structure,
+not the same palatal raising environment. These analyses are grounded
+in Old English evidence; they cannot simply be projected back as
+Proto-Germanic accent. Minkova also notes the lack of equivalent evidence
+for extending the analysis to finite double-prefixed verbs
+[@Minkova2008, pp. 38--41].
+
+Manuscript grouping can similarly join weak material to a preceding
+unit. Prosodic words, stress feet and written words therefore need not
+coincide. The present derivations cover one initial short weak syllable
+before an independently headed domain, not every attested compound
+structure. Internal *modgidanc* 'thought' and *saegaesetu* deserve
+historical domain analysis; they are not irrelevant because the formula
+is word-initial, but neither yet supplies a securely reconstructed early
+same-environment test. No independent non-\emph{*ga-} positive or genuine
+same-environment unraised negative has been established
+[@Sweet1885, p. 149; @Pheifer1974, pp. lxxv, 39;
+@RieggerBogelWalkden2024, pp. 2065--2068].
 
 ## SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction}
 
@@ -119,99 +182,39 @@ define OEPrefixAReduction SentenceCtx([
 ]);
 ```
 
-In the adopted reconstruction the vowel raises because it is short,
-pretonic and immediately follows
-the palatal fricative, not because it belongs to inherited
-\emph{*ga-}. The superscript `*ᶠ` is a nonsegmental annotation of
-one weak syllable before a positively identified headed foot. It is
-not a reconstructed sound. The context operations preserve that
-information after vowel changes consume the original accent marks;
-they do not introduce a phonetic intermediate vowel. The reconstruction
-itself has ordinary \emph{*æ} and \emph{*i}, not a protected breve-e.
+The conditioning is shortness, pretonic weakness and an immediately
+preceding palatal fricative, not prefix identity. The superscript `*ᶠ`
+is a nonsegmental annotation preserving independently established
+stress-foot information after earlier changes consume written accents.
+It is not a reconstructed sound or an intermediate vowel.
+Hiatus, long weak vowels, multiple pretonics and internal weak syllables
+require their own historical analysis; the annotation does not parse them.
 
-Ringe and Taylor's regular-raising proposal provides the phonological
-account adopted here. They also mention possible influence from
-*bi-*. Berg prefers analogy because he finds the direct development
-unattractive, but does not supply positive evidence of substitution in
-that discussion. His Pforzen *ga-* is important comparative evidence
-against projecting *gi-* back indiscriminately into common West Germanic;
-it does not refute a later English development after palatalization.
-Regular phonology therefore has explanatory priority in the present
-account. The preference is not independent proof of every part of the
-pathway. The precise date of raising and its independently attested
-breadth remain less secure than the existence of *gi-* and *ge-*:
-no independent non-*ga-* word sharing the complete early environment
-has yet supplied a positive comparison
-[@RingeTaylor2014, p. 335; @Berg2014, pp. 60--61].
-
-The evidence is wider than one derivation but narrower than independent
-confirmation in several unrelated phonological environments. All these
-words repeat the inherited weak syllable. No securely dated example
-sharing its full early short-vowel and palatal-fricative environment
-has been shown to escape raising. Conversely, the mixed spelling record
-does not establish a distinct phoneme for every written vowel.
-The English *gi-* evidence is not exclusively Northumbrian.
-Hogg places the later lowering of unstressed *i*, including *be-* and
-*ge-*, marginally after the earlier front-vowel merger. Accordingly
-[SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) merges weak
-\emph{*æ} with \emph{*e}, while
-[SC076 OEPrefixIReduction](#rule-OEPrefixIReduction) subsequently lowers
-pretonic \emph{*i}. Neither process changes a stressed root vowel
-[@RingeTaylor2014, pp. 334--335;
-@HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239)].
-
-The formal domain is deliberately bounded: an initial short weak
-syllable with a consonantal bridge to a positively headed syllable.
-It admits onsetless and clustered onsets, but does not infer a weak
-syllable from a missing accent. Hiatus, two pretonic syllables, long
-weak vowels and internal weak syllables in more complex compounds
-require independently justified prosodic analysis; the formula is not
-a complete parser for all such words. The internal *gi-* of *modgidanc*
-'thought' is therefore evidence about spelling, not automatic proof
-of the same word-initial domain. Nor does the evidence license
-extending raising indiscriminately to every palatal consonant
-[@Sweet1885, p. 149; @RingeTaylor2014, p. 335;
-@MinkovaZhou2022, pp. 535--536;
-@RieggerBogelWalkden2024, pp. 2065--2068].
-
-The absence of diphthongization in a weak vowel follows from the
-conditioning of
-[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization),
-not from an exceptional ban on particular prefixes. Hogg requires a
-palatal immediately before a stressed vowel at the beginning of a stress
-foot, not necessarily at the beginning of a word. Thus *sċeaft* 'shaft'
-and *ġesċeaft* 'creation' both diphthongize the root vowel after the
-sh-sound, but the weak first vowel of the latter does not diphthongize
-after its j-sound. The adopted model derives both this comparison and
-*ġestīgan* 'climb into/onto'; the earlier compressed rule did not
+The complementary lack of weak-vowel diphthongization follows from
+[SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization):
+the ordinary process requires a stressed vowel at the beginning of a
+headed foot. Both *sċeaft* 'shaft' and *ġesċeaft* 'creation'
+diphthongize the stressed root after the sh-sound, but the latter's
+weak first vowel does not diphthongize. The model also derives
+*ġestīgan* 'climb into/onto'. These comparisons support the stress
+distinction without making contested *ġeatwe* 'equipment' its sole diagnostic
 [@HoggGrammar1992, §5.48 n. 1 (held 2011 reprint, p. 104);
 @RingeTaylor2014, p. 335].
 
-In *ġelīefan* 'believe', ordinary weak fronting gives a pretonic
-\emph{*æ}, palatalization supplies the fricative trigger, raising gives
-\emph{*i}, and late lowering gives *ge-*. The independently supported
-root-vowel history continues separately. This derivation establishes
-that the phonological account is coherent, not the unique date of
-raising. A fronting-and-merger account without raising reaches the same
-late vowel but leaves early *gi-* unexplained unless a further regular
-phonetic or orthographic account is supplied. Hogg's later allophonic
-possibility does not independently establish an alternative pathway for
-all the earliest *gi-* evidence. No source examined establishes a more
-discriminating regular alternative or positive *bi-* substitution.
-The proposed \emph{*æ > i} remains a preferred, qualified reconstruction:
-the distribution establishes the spellings more securely than their
-precise early vowel quality or chronology. This evidential distinction,
-not agreement with one final form, justifies retaining the staged account
-[@RingeTaylor2014, pp. 245, 267, 335].
+For *ġelīefan* 'believe', [SC107 EAFBrighteningUnstressed](#rule-EAFBrighteningUnstressed)
+supplies the front vowel and [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization)
+the fricative trigger. The rule raises the weak vowel;
+[SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) leaves that
+high vowel intact; [SC076 OEPrefixIReduction](#rule-OEPrefixIReduction)
+later lowers it to *e*. These are feeding requirements of the adopted
+reconstruction, not independently dated events inferred from a final
+match. Hogg places weak *i* lowering marginally after the earlier
+front-vowel merger; Pheifer's transmitted spelling counts alone do not
+date that interval
+[@RingeTaylor2014, pp. 245, 267, 335;
+@HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239)].
 
-Preserving stress-foot structure also preserves the real stressed
-developments: *ġiest* 'guest', *ġiefan* 'give' and *sċēap* 'sheep'
-retain ordinary palatal diphthongization, whereas *ġealla* 'gall'
-already has a diphthong from breaking. A plain vowel symbol is not
-therefore assumed to be weak: earlier fronting or diphthong leveling
-may have consumed its accent. [SC107 EAFBrighteningUnstressed](#rule-EAFBrighteningUnstressed) supplies
-the pretonic front vowel; the old requirement that a protective
-operation precede it was computational, not a historical date before
-[SC043 EAFBrightening](#rule-EAFBrightening)
-[@Campbell1959, pp. 69--70, §§185--188;
-@RingeTaylor2014, pp. 215--217, 335].
+The staged account is retained with qualified confidence: it explains
+early high-vowel evidence through regular phonology, while the bounded
+implementation neither claims universal compound coverage nor treats
+one successful derivation as independent proof of historical generality.

@@ -1,8 +1,16 @@
 # SC035-SC037: Prefix and Compound Adjustments
 
 SC035's current authority is
-`audits/sc035-generality-adjudication.md` (2026-10-25): RETAIN,
-with a corrected manuscript-distribution account and unchanged confidence B.
+`audits/sc035-literature-adjudication.md` (2026-10-25): RETAIN,
+confidence B, after direct specialist comparison. The follow-up preserves
+the generality adjudication and its 51 observations while adding Pheifer's
+aggregate gi/ge counts (Épinal 40/13, Erfurt 31/34), edition-sensitive
+readings and independently analysed stacked-prefix prosody. These are
+related transmitted populations, not additional independent votes.
+Geatwe's prefixed etymology is disputed and cannot securely diagnose
+exceptional inherited prefix stress. Pheifer's gybyrdid is 'striped(?)',
+not 'born'. No positive bi-driven replacement or better evidenced regular
+alternative warrants a formal change.
 It retains the prosodic reformulation/reordering in
 `audits/sc035-prosody-adjudication.md`, which superseded the provisional preference for compression in
 `audits/sc035-model-comparison-adjudication.md`, while preserving that
@@ -16,7 +24,7 @@ i-lowering separate and removes the context annotation.
 Hogg Grammar 5.48 n.1 (held 2011 p.104), 6.50-6.54; Minkova/Zhou
 2022:535-536; Riegger/Bogel/Walkden 2024:2065-2068; Berg 2014:60-61;
 and Ringe/Taylor 2014:334-335 have distinct evidential roles recorded in
-the new memo. The raising reconstruction has confidence B, independently
+the earlier prosody memo. The raising reconstruction has confidence B, independently
 of the historical stage label and the secure gi/ge spellings. Direct
 Sweet1885/Toller1921 comparison verifies mixed early gi/ge, exceptional
 Corpus gi, Erfurt ga and Epinal gy; late Northumbrian gi prevents a
@@ -25,6 +33,13 @@ distinguishes related witnesses, manuscript dates, linguistic layers and
 orthography from inferred phonology. The 345-case domain assay finds no
 defect requiring a stress-system refactor. No independent non-ga positive
 or securely same-environment unraised counterexample was established.
+
+The new reader discusses Bammesberger1981 pp.377–391 against Quinlin1991
+pp.145–159, Pheifer1974 §63 p.lxxv, and Minkova2008 pp.38–41.
+Internal weak syllables are historically relevant, not dismissed by the
+word-initial formula; their early trigger/prosody remains unresolved.
+The new memo records alternative predictions, counterexamples sought and
+candidate dispositions. SC076 receives only a chronology clarification.
 
 The SC035 assessments below record the earlier editorial history and are
 superseded where they describe the proxy as current. They are retained

@@ -96,7 +96,7 @@ def test_current_verdict_confidence_and_publication_sources_are_coherent():
     assert row["verdict"] == "RETAIN"
     assert row["confidence"] == "B"
     assert (row["hist_stage"], row["hist_scope"]) == ("preoe", "english_specific")
-    assert row["adjudication_memo"].endswith("sc035-generality-adjudication.md")
+    assert row["adjudication_memo"].endswith("sc035-literature-adjudication.md")
     assert adjudicate.check_memo("SC035", row=row) == []
     entries = parse_entries((ROOT / "docs/refs.bib").read_text())
     reader = (ROOT / "Germanic/docs/sound_changes/reader_facing" /
@@ -109,6 +109,66 @@ def test_current_verdict_confidence_and_publication_sources_are_coherent():
         assert "@" + key + "," in reader
         assert key in resources and key in index
     assert "@Toller1921, p. 284" in reader
+
+
+def test_specialist_counts_keep_categories_and_related_denominators_separate():
+    with (ASSAY.parent / "sc035-literature-counts.tsv").open() as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+    counts = {
+        (row["witness"], row["category"]):
+            (int(row["i_count"]), int(row["e_count"]), int(row["denominator"]))
+        for row in rows
+    }
+    assert len(rows) == len(counts) == 4
+    assert counts == {
+        ("Epinal", "gi/ge"): (40, 13, 53),
+        ("Erfurt", "gi/ge"): (31, 34, 65),
+        ("Epinal", "bi/be"): (11, 0, 11),
+        ("Erfurt", "bi/be"): (11, 0, 11),
+    }
+    assert all(i + e == total for i, e, total in counts.values())
+    assert {row["independence_group"] for row in rows} == {"EE-transmission"}
+    for row in rows:
+        assert (row["source_key"], row["printed_page"], row["section"]) == (
+            "Pheifer1974", "lxxv", "63")
+        assert row["correction_policy"]
+    # Hogg's prefix totals include bi and the separately reported ti/te.
+    assert counts["Epinal", "gi/ge"][0] + counts["Epinal", "bi/be"][0] + 1 == 52
+    assert counts["Erfurt", "gi/ge"][1] + 2 == 36
+
+
+def test_specialist_readings_preserve_edition_identity_and_page_provenance():
+    with (ASSAY.parent / "sc035-literature-readings.tsv").open() as handle:
+        rows = list(csv.DictReader(handle, delimiter="\t"))
+    assert len(rows) == len({row["id"] for row in rows}) == 9
+    intake = ROOT / "docs/references/ga_prefix_2026-10-25"
+    with (intake / "page_map.tsv").open() as handle:
+        pages = {
+            (row["citation_key"], row["pdf_sheet"]): row["publication_page_or_slide"]
+            for row in csv.DictReader(handle, delimiter="\t")
+        }
+    with (intake / "holdings.tsv").open() as handle:
+        holdings = {row["citation_key"] for row in csv.DictReader(handle, delimiter="\t")}
+    for row in rows:
+        assert None not in row and all(value.strip() for value in row.values())
+        assert row["source_key"] in holdings
+        labels = row["printed_page"].split("; ")
+        sheets = row["pdf_sheet"].split("; ")
+        assert len(labels) == len(sheets)
+        assert [pages[row["source_key"], sheet] for sheet in sheets] == labels
+    readings = {row["id"]: row for row in rows}
+    old = {row["id"]: row for row in table("attestations.tsv")}
+    assert old["EE76-Ep"]["form"] == "gibiodun"
+    assert readings["P74-EE76-Ep"]["reading"] == "gihiodum"
+    for witness in ("Ep", "Erf"):
+        row = readings[f"P74-EE228-{witness}"]
+        assert row["interpretation"] == "striped(?)"
+        assert row["independence_group"] == "EE228"
+    row = readings["P74-EE728-Erf"]
+    assert row["reading"] == "saegaesetu"
+    assert row["evidence_role"] == "manuscript attestation"
+    assert readings["S49-Ru2-gisithe"]["reading"] == "gisiðe"
+    assert readings["S49-Ru2-gisithe"]["locator"] == "Mark 9.9"
 
 
 def test_pforzen_record_keeps_object_date_distinct_from_excavation():

@@ -11,14 +11,19 @@ Taylor supply early *gistīga* 'climb into/onto' beside later *gestīga*
 [@HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239);
 @RingeTaylor2014, pp. 334--335].
 
-The manuscript evidence, rather than the older proxy's displacement
-results, supports this limited relative chronology. It is not a universal
-calendar for spellings: the earliest related glossaries already mix *gi-*
-and *ge-*, and the Durham Ritual still writes *gi-* in the tenth century.
-Different varieties and transmitted orthography must be distinguished
-from successive reconstructed vowels
-[@Toller1921, p. 284; @Sweet1885, p. 48;
-@Stevenson1840, p. 7; @HoggGrammar2011, pp. 238--239, §§6.53--6.54].
+The limited relative chronology follows the handbook reconstruction,
+not the older proxy's displacement results or a simple count of
+manuscript spellings. Pheifer reports Épinal *gi-/ge-* as 40/13 and
+Erfurt as 31/34; both related witnesses already mix the spellings.
+Their different denominators and transmitted linguistic layers do not
+independently date a universal merger. The Durham Ritual still writes
+*gi-* in the tenth century. Different varieties, possible raised
+allophony and transmitted orthography must be distinguished from
+successive reconstructed vowels; the accentual status of contested
+*ġeatwe* 'equipment' cannot supply a secure prefix-specific date either
+[@Pheifer1974, p. lxxv, §63; @Toller1921, p. 284;
+@Stevenson1840, p. 7; @HoggGrammar2011, pp. 238--239, §§6.53--6.54;
+@Quinlin1991, pp. 155--156].
 
 ## SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
 

@@ -1,0 +1,10 @@
+id	source_key	printed_page	pdf_sheet	locator	witness	reading	interpretation	evidence_role	independence_group	verification	caveat
+P74-EE76-Ep	Pheifer1974	6	95	EE76	Epinal	gihiodum	adgrediuntur gloss	manuscript attestation	EE76	converted PDF image checked	Sweet1885 reads gibiodun; final nasal expansion questioned at xxiii section 4 n.1
+P74-EE76-Erf	Pheifer1974	6	95	EE76	Erfurt	gaeadun	adgrediuntur gloss	manuscript attestation	EE76	converted PDF image checked	vowel-initial root and transmission; not securely unraised short ae after palatal fricative
+P74-EE76-Cp	Pheifer1974	6	95	EE76 apparatus; C78	Corpus	geeodun, -on	adgrediuntur gloss	apparatus comparison	EE76	converted PDF image checked	edition apparatus, not a new independent Corpus collation
+P74-EE228-Ep	Pheifer1974	13; 74	102; 163	EE228 and commentary	Epinal	gybyrdid	striped(?)	manuscript attestation	EE228	converted PDF images checked	clabatum gloss; not born or a witness to the birth noun; y is a spelling
+P74-EE228-Erf	Pheifer1974	13; 74	102; 163	EE228 and commentary	Erfurt	gebyrdid	striped(?)	manuscript attestation	EE228	converted PDF images checked	semantic interpretation explicitly uncertain; compare bord and Latin clauus
+P74-EE728-Ep	Pheifer1974	39; 108	128; 197	EE728 and commentary	Epinal	saegesetu	maritime regions	manuscript attestation	EE728	converted PDF image checked at 39; searchable commentary at 108	internal weak syllable; early stress and trigger not established by spelling
+P74-EE728-Erf	Pheifer1974	39; 108	128; 197	EE728 and commentary	Erfurt	saegaesetu	maritime regions	manuscript attestation	EE728	converted PDF image checked at 39; searchable commentary at 108	Pheifer section 63 cites gaesetu; ablaut proposed, not demonstrated
+P74-EE728-Cp	Pheifer1974	39	128	EE728 apparatus; C1631	Corpus	saegesetu	maritime regions	apparatus comparison	EE728	converted PDF image checked	related text; no independent vowel-frequency census
+S49-Ru2-gisithe	Samuels1949	110	49	Mark 9.9	Rushworth2	gisiðe	vision	manuscript comparison	Ru2-Li-Mark9.9	original article PDF image checked	OCR gisihoe is wrong; discussion concerns prefix presence, not gi/ge frequency
