@@ -3,9 +3,9 @@
 ## SC108. Retained final-vowel representation (`EAFBrighteningLongFinal`) {#rule-EAFBrighteningLongFinal}
 
 ```foma
-define EAFBrighteningLongFinal [
+define EAFBrighteningLongFinal Ctx([
     {*ā} -> {*ǣ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
-];
+]);
 ```
 
 In *ræste* ‘rest’, this helper receives the length-preserved outcome of

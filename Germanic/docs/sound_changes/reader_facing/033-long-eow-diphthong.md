@@ -48,10 +48,10 @@ implements the regular singleton history
 ## SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong}
 
 ```foma
-define OEEwLongDiphthong [
+define OEEwLongDiphthong Ctx([
     {*i} {*w} {*w} -> {*iu} {*w} || _ {*j},
     {*í} {*w} {*w} -> {*íu} {*w} || _ {*j}
-];
+]);
 ```
 
 *Hīew* 'hue' enters with inherited PGmc \emph{*xíwją}, following

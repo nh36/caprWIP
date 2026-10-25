@@ -3,9 +3,9 @@
 ## SC105. Retained late palatal-diphthongization approximation (`OELatePalatalDiphthong`) {#rule-OELatePalatalDiphthong}
 
 ```foma
-define OELatePalatalDiphthong [
+define OELatePalatalDiphthong Ctx([
     {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
-];
+]);
 ```
 
 This support operation retains exactly the former postmutation long-vowel

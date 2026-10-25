@@ -10,8 +10,10 @@ The historical support rests on a small witness set. Both coronal inputs assimil
 
 ```foma
 define PWGmcCoronalWAssimilation Ctx([
+    [
     {*d} -> {*w} || _ {*w},
     {*z} -> {*w} || _ {*w}
+]
 ]);
 ```
 

@@ -3,12 +3,12 @@
 ## SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization}
 
 ```foma
-define OEVelarFricativePalatalization [
+define OEVelarFricativePalatalization Ctx([
     {*x} -> {*ç} || _ EnglishStarFrontVowel,
     {*x} -> {*ç} || EnglishStarFrontVowel _,
     {*x} -> {*ç} || _ {*j}
 ]
-    .o. EnglishStarAlphabet*;
+    .o. EnglishStarAlphabet*);
 ```
 
 The live population concerns voiceless x, as in *hēafod* 'head' and

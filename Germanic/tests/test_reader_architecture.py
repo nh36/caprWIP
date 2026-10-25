@@ -12,6 +12,7 @@ import pytest
 GERMANIC = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(GERMANIC / "tools"))
 import build_reader_book as book
+import executable_facts
 import generate_registry_views as registry
 import oe_pipeline
 
@@ -216,3 +217,13 @@ def test_builder_refuses_a_stale_or_manually_reordered_manifest(tmp_path):
     stale.write_text("reader_order\n1\n")
     with patch.object(book, "READER_MANIFEST", stale), pytest.raises(ValueError, match="--refresh"):
         book.load_manifest()
+
+
+def test_printed_definition_must_match_the_canonical_executable_body(example, capsys):
+    reg, chapters, stages, root = example
+    canonical = executable_facts.define_facts()
+    canonical.update(executable_facts.parse_defines("define Example1 [a -> c];"))
+    with patch.object(executable_facts, "define_facts", return_value=canonical):
+        with pytest.raises(SystemExit):
+            registry.build_reader_manifest(reg, chapters, stages=stages, reader_root=root)
+    assert "differs from germanic.txt" in capsys.readouterr().err

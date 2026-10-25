@@ -3,9 +3,9 @@
 ## SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO}
 
 ```foma
-define OEJGlideIO [
+define OEJGlideIO Ctx([
     [{*iu}|{*íu}] -> {*īo} || _ {*w} {*j}
-];
+]);
 ```
 
 The palatalized-glide product realizes long \emph{īo}, not the

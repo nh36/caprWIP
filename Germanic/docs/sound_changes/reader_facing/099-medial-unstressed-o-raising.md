@@ -3,9 +3,9 @@
 ## SC099. Medial raising of shortened unstressed \emph{*o} (`OEMedUnstressedORaising`) {#rule-OEMedUnstressedORaising}
 
 ```foma
-define OEMedUnstressedORaising [
+define OEMedUnstressedORaising Ctx([
     {*o} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic
-];
+]);
 ```
 
 After [SC071 OELateOShortening](#rule-OELateOShortening), the shortened vowel gives \emph{u} in an unstressed medial

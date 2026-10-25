@@ -3,9 +3,9 @@
 ## SC100. Final lowering of shortened unstressed \emph{*o} (`OEFinalUnstressedOLowering`) {#rule-OEFinalUnstressedOLowering}
 
 ```foma
-define OEFinalUnstressedOLowering [
+define OEFinalUnstressedOLowering Ctx([
     {*o} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* .#.
-];
+]);
 ```
 
 In a final syllable the same shortened vowel gives \emph{a}. Thus the existing

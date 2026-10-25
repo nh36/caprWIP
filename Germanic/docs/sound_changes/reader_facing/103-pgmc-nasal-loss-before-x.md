@@ -34,18 +34,20 @@ the northernmost West Germanic dialects [@Ringe2017, pp. 149--150, §3.2.7].
 That rounding is a separate and much later change, and it is treated in the
 chapter on the rounding of the long nasalized low vowel.
 
-## SC103. Proto-Germanic nasal loss before \*x (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX}
+## SC103. Proto-Germanic nasal loss before \emph{*x} (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX}
 
 ```foma
 define PGmcNasalLossBeforeX Ctx([
-    {*a} -> {*ą̄} || _ EnglishStarNasal {*x},
+    [
+    {*a} -> {*ã} || _ EnglishStarNasal {*x},
     {*i} -> {*ī} || _ EnglishStarNasal {*x},
     {*u} -> {*ū} || _ EnglishStarNasal {*x},
-    {*á} -> {*ą̄} || _ EnglishStarNasal {*x},
+    {*á} -> {*ã} || _ EnglishStarNasal {*x},
     {*í} -> {*ī} || _ EnglishStarNasal {*x},
     {*ú} -> {*ū} || _ EnglishStarNasal {*x}
 ] .o. [
     EnglishStarNasal -> 0 || _ {*x}
+]
 ]);
 ```
 
@@ -55,7 +57,10 @@ conditioning nasal. The low vowel is written [ą̄]{.recon} and the high vowels 
 written [ī]{.recon} and [ū]{.recon}, because the nasality of the high vowels has
 no further consequence: they go on to develop exactly as the inherited long
 [ī]{.recon} and [ū]{.recon} do [@Campbell1959, p. 47, §121]. The nasality of the
-low vowel is carried forward because its later fate depends on it.
+low vowel is carried forward because its later fate depends on it. In the
+executable definitions, `ã` is the single-symbol encoding of long nasalized
+\emph{*ą̄}, not a different or short vowel. The historical notation in the
+discussion retains its explicit length mark.
 
 The corpus witnesses both branches of the rule. The high branch is
 [fúnxstiz]{.recon} ‘fist’, which becomes [fū́xsti]{.recon} ‘fist’ and, after the loss of

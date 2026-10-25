@@ -10,8 +10,10 @@ The ending vowel disappears in a weak suffixal environment early enough to block
 
 ```foma
 define PWGmcEarlyIApocope Ctx([
+    [
     {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ .#.,
     {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ {*z} .#.
+]
 ]);
 ```
 

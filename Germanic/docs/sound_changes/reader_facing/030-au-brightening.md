@@ -36,10 +36,10 @@ Old Frisian *gāk* ‘cuckoo’ has none [@Fulk2018, p. 73, §4.12]. Brightening
 ## SC030. Brightening of \emph{*au} to \emph{*æu} (`OEAuBrightening`) {#rule-OEAuBrightening}
 
 ```foma
-define OEAuBrightening [
+define OEAuBrightening Ctx([
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
-];
+]);
 ```
 
 Most of the words that pass through the change carry \emph{*au} inherited

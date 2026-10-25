@@ -14,10 +14,12 @@ cluster adjustment the status of a major sound law [@Campbell1959, pp. 89,
 ## SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence}
 
 ```foma
-define OEJClusterCoalescence (
+define OEJClusterCoalescence Ctx((
+    # *bj coalescence removed: BAllophony (*b→*β) + JLossAfterHeavy handle
+    # non-geminated *bj; for geminated *bbj, *j is consumed by JLossAfterHeavy.
     [{*g} {*j} -> {*ʤ}]
     .o. [{*k} {*j} -> {*ʧ}]
-);
+));
 ```
 
 The forms *bīeġan* ‘bend’ and *sēċan* ‘seek’ determine the earlier boundary.

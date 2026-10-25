@@ -48,10 +48,11 @@ established general singleton sound law or a newly dated West Saxon event.
 ## SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong}
 
 ```foma
-define OEAwLongDiphthong [
+define OEAwLongDiphthong Ctx([
     {*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}],
+    # Stressed variant (prosodic tier):
     {*á} {*w} -> {*ḗa} {*w} || _ [EnglishStarVocalic | {*ô}]
-];
+]);
 ```
 
 The current operation changes the show infinitive, imperative singular

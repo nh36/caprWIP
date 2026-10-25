@@ -25,6 +25,9 @@ boundaries cannot reorder it. The
 [reader migration record](assembly/reader_architecture_migration.md)
 documents ownership, conservation and validation. No subsequent adjudication
 was begun as part of that architectural migration.
+The bounded [post-migration consistency pass](assembly/post_migration_consistency.md)
+reconciles superseded chronology claims and publication infrastructure with
+accepted decisions; it does not reopen SC035 or begin the next adjudication.
 
 For subsequently authorized per-SC adjudication, the next SC is derived from
 the registry and the explicit programme policy, never stated here:

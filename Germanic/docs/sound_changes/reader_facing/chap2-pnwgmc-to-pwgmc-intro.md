@@ -17,15 +17,13 @@ may be grouped broadly as follows:
 
 Northwest Germanic innovations (shared by both North and West Germanic):
 innovations in the unstressed vowel system, certain final-syllable vowel changes,
-and selected consonant cluster simplifications. Changes labelled `NWGmc` in the
-CAPR rule names fall here, though rule prefixes are not always reliable guides to
-historical scope.
+and selected consonant cluster simplifications. Their historical scope must
+be established from comparative evidence, not from executable identifiers.
 
 Proto-West-Germanic innovations (shared within West Germanic but not in
 North Germanic): the cluster of morphological and phonological changes that
 distinguish Old English, Old High German, Old Saxon, and Old Frisian from Old
-Norse. Changes labelled `PWGmc` in the CAPR rule names generally fall here.
-They include early apocope rules, certain consonant assimilations, and the
+Norse. They include early apocope rules, certain consonant assimilations, and the
 West Germanic gemination of consonants before `*j`.
 
 ## Major changes
@@ -47,7 +45,7 @@ questionable claim of a single completed Proto-Northwest Germanic event
 [@RingeTaylor2014, pp. 25--26]. The stressed monophthongization is treated
 separately under [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
 
-The adjacent [SC015 PNWGmcILowering](#rule-PNWGmcILowering) concerns
+The later [SC015 PNWGmcILowering](#rule-PNWGmcILowering) concerns
 stressed first-syllable \emph{*i}, not further unstressed-vowel reduction.
 Its following-vowel hypothesis has traditional authority, but its
 comparative regularity and precise consonantal conditioning remain
@@ -91,8 +89,9 @@ splits this into two ordered steps to make the vowel effect computationally
 tractable; the book prose explains that split against the handbook tradition,
 which typically presents the change as a single process.
 
-Chapters in this part of the book follow the executable cascade order, which
-models the reconstructed chronology itself. Several rules that carry `PWGmc`
+Chapters in this part of the book follow the executable reconstruction's
+adopted serialization, not an independently demonstrated total historical
+chronology. Several rules that carry `PWGmc`
 labels — final bare-`*a` loss (SC041), surviving bimoric `*ō` unrounding
 (SC042), and Sievers-law syncope (SC050) — execute later in the cascade and
 are therefore presented in Chapter 4, where their individual sections discuss
@@ -100,15 +99,6 @@ their historical stage labels. Conversely, one rule with a West Saxon label,
 the palatal-glide rule (SC016), is an orthographic rule of the written surface:
 it executes after the Old English orthography stage and is presented in
 Chapter 5.
-
-One historically Proto-Germanic change, Gm-simplification
-(`SC002 PGmcGmSimplification`), precedes everything in this chapter as a
-support stage of the cascade. It is documented in the book-entry plan and
-its literature dossier confirms the source base is narrow (two lexical
-families: [draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and
-[taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'; [@Kroonen2013, pp. 101, 511]).
-A reader-facing section for SC002 awaits a stronger explanatory source base
-and is not yet assembled in the reader-facing sequence.
 
 ## A note on source terminology and subgrouping
 
@@ -151,5 +141,6 @@ These two developments affect different parts of the vowel system.
 [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization)
 monophthongizes unstressed \emph{*ai};
 [SC015 PNWGmcILowering](#rule-PNWGmcILowering) represents the disputed lowering
-of stressed short \emph{*i}. Their grouping here does not identify them as
-successive stages of unstressed-vowel reduction.
+of stressed short \emph{*i}. This thematic comparison does not make their
+separated rule sections adjacent or identify them as successive stages of
+unstressed-vowel reduction.

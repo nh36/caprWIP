@@ -17,9 +17,9 @@ they do not subsequently undergo velar-fricative palatalization.
 ## SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking}
 
 ```foma
-define OEBreaking OEBreakingA
+define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
-    .o. OEBreakingI;
+    .o. OEBreakingI);
 ```
 
 Short \emph{e} and \emph{i} also develop short \emph{eo} and

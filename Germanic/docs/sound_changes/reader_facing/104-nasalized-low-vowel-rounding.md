@@ -57,7 +57,7 @@ vowel developed to *ō* and did not fall together with Old English *ā* from
 
 ```foma
 define EAFNasalizedLowRounding [
-    {*ą̄} -> {*ō}
+    {*ã} -> {*ō}
 ];
 ```
 

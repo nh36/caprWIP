@@ -3,9 +3,9 @@
 ## SC106. Retained j-created glide compatibility (`OEJWWSimplification`) {#rule-OEJWWSimplification}
 
 ```foma
-define OEJWWSimplification [
+define OEJWWSimplification Ctx([
     {*w} {*w} -> {*w} || _ {*j}
-];
+]);
 ```
 
 The unchanged technical operation remains composed for compatibility.

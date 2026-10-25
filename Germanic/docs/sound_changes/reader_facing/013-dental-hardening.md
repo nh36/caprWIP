@@ -11,7 +11,9 @@ lexical family.
 
 ```foma
 define PWGmcDentalHardening Ctx([
+    [
     {*ð} -> {*d}
+]
 ]);
 ```
 

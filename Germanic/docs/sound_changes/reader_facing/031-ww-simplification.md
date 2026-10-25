@@ -32,6 +32,7 @@ is not changed here ([@RingeTaylor2014, pp. 65--66; @Fulk2018, p. 117]).
 
 ```foma
 define OEWWSimplification Ctx([
+    [
     {*a} {*w} {*w} -> {*au} {*w},
     {*á} {*w} {*w} -> {*áu} {*w},
     {*e} {*w} {*w} -> {*eu} {*w},
@@ -40,6 +41,7 @@ define OEWWSimplification Ctx([
     {*í} {*w} {*w} -> {*íu} {*w},
     {*u} {*w} {*w} -> {*ū} {*w},
     {*ú} {*w} {*w} -> {*ū} {*w}
+]
 ]);
 ```
 

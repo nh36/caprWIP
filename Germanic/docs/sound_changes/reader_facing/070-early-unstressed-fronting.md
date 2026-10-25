@@ -17,7 +17,7 @@ order, but no lexical evidence fixes its later boundary.
 ## SC070. Early fronting of unstressed \emph{*a} (`OEUnstressedFrontingEarly`) {#rule-OEUnstressedFrontingEarly}
 
 ```foma
-define OEUnstressedFrontingEarly OEUnstressedAFronting;
+define OEUnstressedFrontingEarly FootCtx(OEUnstressedAFronting);
 ```
 
 The rule fronts unstressed \emph{*a} to \emph{*æ} after the earlier shortening

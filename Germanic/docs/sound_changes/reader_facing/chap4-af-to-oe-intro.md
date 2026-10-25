@@ -47,7 +47,8 @@ runic interpretation qualifications explicit
 
 Early Old English changes linked to the Anglo-Frisian inheritance:
 Changes that feed directly on, or are closely related to, Anglo-Frisian
-brightening (SC043), whose section opens the vowel corridor of this chapter.
+brightening (SC043), whose section follows the earlier vowel developments
+at its adopted executable position in this chapter.
 The \emph{*awj} resolution, \emph{*au} fronting and diphthong operations
 currently execute before ordinary-a brightening. They cannot be described as
 consuming its output. Their histories combine earlier glide reanalysis with

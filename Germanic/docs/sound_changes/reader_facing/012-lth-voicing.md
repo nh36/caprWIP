@@ -11,7 +11,9 @@ Germanic, not as an unqualified pan-PWGmc development.
 
 ```foma
 define EAFLThVoicing Ctx([
+    [
     {*θ} -> {*d} || {*l} _
+]
 ]);
 ```
 

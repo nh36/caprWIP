@@ -93,7 +93,9 @@ Gothic *bi-niuhsjan* ‘to spy out’ and *saihsta* instead.
 
 ```foma
 define PNWGmcPreconsonantalXLoss Ctx([
+    [
     {*x} -> 0 || _ {*s} EnglishStarConsonant
+]
 ]);
 ```
 

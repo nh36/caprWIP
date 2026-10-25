@@ -32,9 +32,9 @@ not independent evidence for a historical long-vowel fronting
 ## SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening}
 
 ```foma
-define EAFBrightening [
+define EAFBrightening Ctx([
     EAFBrighteningStressed
-];
+]);
 ```
 
 ### Stressed component

@@ -243,10 +243,10 @@ Bammesberger gives the standard Old English–facing summary: `*z` yielded `*r` 
 intervocalic position but was generally lost in final position
 [@Bammesberger1992, p. 39].
 
-The CAPR rule is named `EAFRhotacism`, placing it in the Early Anglo-Frisian
-corridor, CAPR's operational post-Proto-West-Germanic stage on the English line;
-the reader-facing chapter label describes the change as a West Germanic
-rhotacism.
+The executable identifier `EAFRhotacism` is retained for stability, not as
+independent evidence of historical stage or scope. The preceding source
+discussion motivates the post-Proto-West-Germanic account; the chapter's
+placement follows the adopted executable sequence.
 
 ### Word-final `*z` deletion (SC020) and the three final-`*z` developments
 
@@ -271,9 +271,10 @@ The CAPR rule for the unstressed loss is still named `EAFFinalZDeletion`,
 an identifier that predates the restaging of the change to Proto-West
 Germanic; the name is retained as a stable identifier pending a global
 renaming pass, and the historical stage recorded in the staging metadata
-takes priority over the name prefix. SC020 remains presented in this
-chapter, beside rhotacism, because the two changes jointly determine the
-fate of every remaining `*z`.
+takes priority over the name prefix. SC020 and rhotacism jointly account for
+the fate of the remaining `*z`, but their sections are separated by
+intervening executable stages. Their thematic connection does not determine
+their publication positions.
 
 ### Completed English ai contraction (SC004, treated in Chapter 4)
 

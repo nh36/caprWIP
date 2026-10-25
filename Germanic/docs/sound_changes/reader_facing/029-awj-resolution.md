@@ -56,10 +56,10 @@ disagreement concerns whether a discrete change took place.
 ## SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwwjResolution`) {#rule-OEAwwjResolution}
 
 ```foma
-define OEAwwjResolution [
+define OEAwwjResolution Ctx([
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
     {*a} {*w} {*w} {*j} -> {*au} {*j}
-];
+]);
 ```
 
 The change is confined to the \emph{*a} type. PGmc [xáwją]{.recon} ‘hay’ is

@@ -39,17 +39,18 @@ glide reanalysis are also distinct origins
 ## SC032. Quantity-distinct diphthong realization (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling}
 
 ```foma
-define OEDiphthongLeveling [
+define OEDiphthongLeveling Ctx([
     {*aeu} -> {*ēa},
     {*áeu} -> {*ēa},
     {*eu} -> {*ēo},
     {*éu} -> {*ēo},
     {*iu} -> {*ēo},
     {*íu} -> {*ēo},
+    # Split symbols from palatal glide (stress preserved where present):
     {*e} {*u} -> {*eo},
     {*é} {*u} -> {*éo},
     {*i} {*u} -> {*eo}
-];
+]);
 ```
 
 The retained definition is a compound realization proxy. Its atomic

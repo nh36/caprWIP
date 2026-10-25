@@ -32,3 +32,8 @@
 % U+2192 RIGHTWARDS ARROW — Noto Serif lacks this glyph; remap to math-mode arrow
 {\catcode`→=\active \global\def→{\ensuremath{\rightarrow}}}
 \catcode`→=\active
+% Preserve orthographic angle notation with the existing Unicode math font.
+{\catcode`⟨=\active \global\def⟨{\ensuremath{\langle}}}
+\catcode`⟨=\active
+{\catcode`⟩=\active \global\def⟩{\ensuremath{\rangle}}}
+\catcode`⟩=\active

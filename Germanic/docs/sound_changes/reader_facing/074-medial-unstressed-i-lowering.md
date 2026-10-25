@@ -18,9 +18,9 @@ and [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
 ## SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1}
 
 ```foma
-define OEMedUnstressedILowering1 [
+define OEMedUnstressedILowering1 FootCtx([
     {*i} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
-];
+]);
 ```
 
 The rule lowers medial unstressed \emph{*i} to \emph{*e} after a preceding

@@ -9,11 +9,11 @@ Campbell's restoration of \emph{a} before following back vowels and Ringe and Ta
 ## SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration}
 
 ```foma
-define OEARestoration (
+define OEARestoration FootCtx((
     {*æ} -> {*a} || _
         OEARestorationIntervening OEARestorationTriggerVowel
         - OEARestorationIntervening OEARestorationWeakTailVowel
-);
+));
 ```
 
 Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasal-tail changes. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [bákaną]{.recon} ‘bake’ yields [*bæcan*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc [fáraną]{.recon} ‘fare’ yields [*færan*]{.pred} rather than expected *faran* ‘fare’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), [bákaną]{.recon} again yields [*bæcan*]{.pred} instead of *bacan*, while PGmc [wádaną]{.recon} ‘wade’ yields [*wædan*]{.pred} instead of *wadan* ‘wade’. These independent witness pairs place restoration after brightening and before secondary nasalization.

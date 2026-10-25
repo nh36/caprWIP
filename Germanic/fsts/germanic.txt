@@ -2775,63 +2775,24 @@ define OEUnstressedLongVowelShortening FootCtx(OEUnstressedLongVowelShortening1
     .o. OEUnstressedLongVowelShortening7
     .o. OEUnstressedLongVowelShortening8);
 
-# Medial unstressed *u → *o in OE (WS/Northumbrian).
-# This is DISTINCT from PNWGmcULowering (stressed u-lowering).
-# The exact conditioning is under investigation — see DEV_NOTES.md §14.8.1.
-# Campbell §373-374 shows complex conditioning:
-# - "protected u > o very often" (e.g. heafod < *xaubud-)
-# - BUT "u is always well preserved... in -up, -ung suffixes" (e.g. duguþ, geoguþ)
-# The -uþ suffix (< *-unþi-) is a specific exception.
-# For now: keep the rule broad, but handle suffix exceptions via lexicon.
-# ===========================================================================
-# MEDIAL UNSTRESSED U LOWERING (Campbell §373-374)
-# ===========================================================================
-# Campbell §373: "protected u > o very often" — medial unstressed u tends to
-# lower to o in most environments.
+# SC040: later OE medial unstressed *u → *o, distinct from stressed
+# PNWGmcULowering. Campbell §373 pp.155-156 preserves *u after accented
+# *u and before *m; the implementation recognizes those segmental contexts,
+# not lexical or suffix identity. Hogg §3.3.1.3 leaves the precise phonetic
+# explanation open, so no independently established harmony mechanism is claimed.
 #
-# HOWEVER, Campbell §373 also states: "u is always well preserved after
-# accented u, e.g. sunu, wudu, duguþ" — this is VOWEL HARMONY.
+# SC021's accepted repair places this lowering after the earlier unstressed
+# shortening and vowel-resolution history (sc021-adjudication.md §9a;
+# Stausland Johnsen 2015 pp.21-22,28-31). Youth has short medial *u at this
+# point; its retained root *ú, not residual medial length, blocks lowering.
+# The old youth failure depended on retired early SC016 glide insertion;
+# SC016 now supplies written eo only after this phonology is complete.
+# See audits/post-migration-chronology-reconciliation.md.
 #
-# PHONETIC EXPLANATION:
-# When the stressed syllable contains [u], the articulatory target for
-# backness/roundness is maintained through the word, preventing the lowering
-# to [o] that otherwise occurs in unstressed medial position. This is a type
-# of regressive vowel harmony (or dissimilation avoidance).
-#
-# EXAMPLES:
-#   *xaubudą → hēafod (first syllable has *au, not *u, so medial u lowers)
-#   *jugunθ  → ġeoguþ (first syllable has stressed *u, second u preserved)
-#   *dugunθ  → duguþ  (first syllable has stressed *u, second u preserved)
-#   *sunuz   → sunu   (both u's preserved)
-#   *wuduz   → wudu   (both u's preserved)
-#
-# IMPLEMENTATION:
-# The rule applies u → o in medial position, BUT uses a negative context
-# to exclude application when preceded by a syllable containing *u/*ū/*ú.
-# When the stressed syllable contains *u (including stressed *ú), the rule
-# does not apply, preserving the unstressed *u.
-#
-# CHRONOLOGY FIX (2026-04-14): This rule MUST run BEFORE PNWGmcULowering
-# (stressed *ú → *ó) so that the vowel harmony check can see the stressed *ú.
-# If run later, the stressed *ú will have become *ó then *eo, and the harmony
-# NOTE ON CHRONOLOGY (see DEV_NOTES.md §14.13):
-# Campbell §332: Ingvaeonic nasal loss before voiceless spirants with
-# compensatory lengthening: *-unθ- → *-ūθ- (e.g., *dugunθ- → *dugūθ- → duguþ).
-# This lengthening MUST happen BEFORE u-lowering, so that long *ū is protected.
-# Short *u (as in past plural *-un → -on) undergoes regular lowering.
-#
-# The harmony check in Campbell §373 ("u preserved after accented u") was 
-# misunderstood: duguþ preserves u NOT because of harmony with stressed u,
-# but because compensatory lengthening made the medial vowel LONG *ū.
-#
-# Right-context excludes {*m}: *u is preserved before /m/ per consensus
-# (Campbell §373, Brunner §44 Anm. 7, Hogg §3.3.1.3). The protection is
-# segmental, not morphological — Campbell §378 shows that when late-WS
-# *m > *n the *u immediately lowers. This is what allows DatPl *-um to
-# surface as -um (e.g. *skúldrum → sċuldrum). Brunner additionally
-# excludes *ng (cf. our parallel OEMedUnstressedILowering for *e→*i / _ *ng);
-# not implemented here pending need. See DEV_NOTES §17.41 and
-# dossier-medial-u-lowering-conditioning-2026.md.
+# Before *m, preservation is phonological: Campbell §378 describes lowering
+# when late-WS *m becomes *n. Brunner §44 Anm.7 additionally excludes *ng;
+# that wider conditioning remains for ordinary SC040 review, not this cleanup.
+# See dossier-medial-u-lowering-conditioning-2026.md for the source comparison.
 #
 define OEMedUnstressedULowering FootCtx([
     {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
@@ -2852,8 +2813,8 @@ define OEMedUnstressedULowering FootCtx([
 # History (see DEV_NOTES §17.36): an earlier design used an intermediate *ĭ symbol
 # produced by OEUnstressedIMarking{1,2,3} and consumed by OEMedUnstressedILowering.
 # That auxiliary tier was dismantled in §17.36.1–§17.36.6:
-#   §17.36.3: dropped IMarking2 (bi-/ni- prefix marking; OEPrefixIReduction
-#             handles the prefix vowel directly).
+#   §17.36.3: dropped IMarking2 (the former bi-/ni- prefix proxy).
+#             SC076 now uses positive pretonic prosody, not prefix identity.
 #   §17.36.4: dropped vacuous bi-/ni- subrule of IMarking3.
 #   §17.36.5: folded IMarking1 into a direct *i → *e rewrite.
 #   §17.36.6: removed dead IMarking2/3/wrapper definitions and *ĭ clauses
@@ -2879,13 +2840,10 @@ define OEMedUnstressedILowering Ctx([
     {*e} -> {*i} || _ {*n} {*g}
 ]);
 
-# R/T vol.2 p.303: "So also bi- > be-, ni 'not' > ne."
-# Unstressed prefix *i > *ĕ. Use *ĕ (e-breve) for reduced prefix vowels to mark them
-# as unstressed and exclude them from subsequent stressed-vowel changes (e.g., palatal
-# diphthongization). The *ĕ will later merge with surface e in orthography.
 # Later pretonic i-lowering (Hogg Grammar 6.50-6.54; R/T 2014:335),
 # after the ae/e merger. Positive prosody replaces the old bi/ni proxy.
-# The annotation is no longer needed after this stage.
+# Short *i becomes ordinary *e directly; no protected vowel is introduced.
+# The retained pretonic annotation is removed after serving its purpose.
 define OEPrefixIReduction SentenceCtx([
     [{*i} -> {*e} || .#. {*ᶠ} OEAnyConsonant* _]
     .o. [{*ᶠ} -> 0]
@@ -3864,7 +3822,7 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OESkPalatalization
     .o. OEVelarPalatalization
     .o. OEPrefixAReduction
-    # WS palatal glide moved earlier (before u-lowering) at line ~2023
+    # SC016 supplies the WS glide spelling later, in the written-surface block.
     .o. OEPostVelarWLoss
     # Loss of *w before unstressed *i (R/T §6.7.1): *saiwiz > *sāi > sǣ
     .o. OEWLossBeforeI

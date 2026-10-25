@@ -1,4 +1,4 @@
-# Prefix i-reduction
+# Pretonic i-lowering
 
 ## Historical discussion
 
@@ -14,7 +14,7 @@ Taylor supply early *gistīga* 'climb into/onto' beside later *gestīga*
 The manuscript evidence, rather than the older proxy's displacement
 results, supports this limited relative chronology.
 
-## SC076. Reduction of prefixal \emph{*i} in unstressed position (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
+## SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
 
 ```foma
 define OEPrefixIReduction SentenceCtx([

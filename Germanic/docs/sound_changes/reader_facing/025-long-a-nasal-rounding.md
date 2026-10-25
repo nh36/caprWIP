@@ -36,7 +36,7 @@ order the two branches against each other, and no such ordering is claimed here.
 
 ```foma
 define EAFLongANasalRounding [
-    {*ā} -> {*ą̄} || _ EnglishStarNasal
+    {*ā} -> {*ã} || _ EnglishStarNasal
 ];
 ```
 

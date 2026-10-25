@@ -69,10 +69,12 @@ statement, not evidence for two successive historical stages.
 
 ```foma
 define EAFNasalSpirantLengthening [
-    {*a} -> {*ą̄} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*a} -> {*ã} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*u} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
-    {*á} -> {*ą̄} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    # Stressed variants (*á -> *ã: stress absorbed into length, no stressed
+    # long low tier exists):
+    {*á} -> {*ã} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*í} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant
 ];
@@ -102,8 +104,9 @@ Brunner note the same course in *beraþ* ‘they carry’ from [beranþi]{.recon
 through [berōþ]{.recon} ‘they carry’ [@SieversBrunner1965, p. 176, §186.1 Anm. 3;
 @Luick1914, p. 276, §301.1].
 
-If the rule is stated after the loss of the nasal, PGmc [gánsz]{.recon} ‘goose’ yields
-[*ġeas*]{.pred} in place of *gōs* ‘goose’, and PGmc [júgunθ]{.recon} ‘youth’ yields
-[*ġeogoþ*]{.pred} in place of *ġeoguþ* ‘youth’. This shows only that the vowel must be
-adjusted before its conditioning nasal is removed. It does not establish a date
-for either operation, and no earlier or later boundary is claimed here.
+If lengthening is stated after the loss of the nasal, it can no longer read
+its conditioning environment. The vowel must therefore be adjusted before
+that nasal is removed. This is an executable dependency within the
+statement of one historical change, not a date for either component.
+The earlier experiment's youth output also depended on the retired early
+glide-insertion architecture; it is not a current historical boundary.

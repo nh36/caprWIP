@@ -19,12 +19,12 @@ intermediate rule applications. Its historical stage is Proto-Germanic.
 ## SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony}
 
 ```foma
-define PGmcBAllophony [
+define PGmcBAllophony Ctx([
     {*b} -> {*β} || PGmcStarVocalic _,
     {*b} -> {*β} || [{*l} | {*r}] _
 ] .o. [
     {*β} -> {*b} || _ {*b}
-];
+]);
 ```
 
 The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.

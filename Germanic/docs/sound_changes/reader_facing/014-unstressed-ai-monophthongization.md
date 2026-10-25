@@ -16,7 +16,9 @@ to \emph{*ā} is treated separately as
 
 ```foma
 define PNWGmcUnstressedAiMonophthongization Ctx([
+    [
     {*ai} -> {*ē}
+]
 ]);
 ```
 

@@ -1,5 +1,12 @@
 # OE medial unstressed `*u → *o`: what is the conditioning environment?
 
+Current status: the proposed following-`m` exclusion is already adopted.
+Descriptions below of an unrestricted "current" rule belong to the original
+research starting point, not the live executable definition. The SC021
+repair and `sound_changes/audits/post-migration-chronology-reconciliation.md`
+own the accepted later placement; this dossier remains the source comparison
+for conditioning, not a competing current code or ordering authority.
+
 A research dossier for the FST cascade modelling PGmc → OE,
 specifically targeting the rule we currently call
 `OEMedUnstressedULowering` (Campbell §§373–374; Brunner §44;
@@ -336,10 +343,12 @@ controversy here in the standard sources.
 The user asks whether there are forms where unstressed `*u`
 before `*n` is *preserved*. The candidates worth considering:
 
-* `duguþ`, `iuguþ`/`ġeoguþ` — these have **lengthened** root
-  vowels (NSL or compensatory; Campbell §282) and the `*u` is
-  long, hence outside the rule's scope. Already commented in our
-  cascade.
+* `duguþ`, `iuguþ`/`ġeoguþ` — these do not have a following `n`
+  at the lowering stage. Their medial vowel was temporarily lengthened by
+  nasal loss, then shortened before the accepted late lowering. Preservation
+  after root `u` is the relevant conditioning (Campbell §373 p.156),
+  not a long root or still-long medial vowel. The former length-based
+  explanation was superseded with the accepted late placement.
 * `tācn`, `wǣpn`, `bēacn` — `n` here is post-syncope syllabic,
   not the right-context consonant of an `*u + n` sequence. Not
   diagnostic.

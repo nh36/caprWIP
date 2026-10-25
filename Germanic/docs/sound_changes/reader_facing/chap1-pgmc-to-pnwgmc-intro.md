@@ -62,5 +62,6 @@ The CAPR rules implemented in this chapter carry names beginning with `PGmc`.
 Those names are intended as stable internal identifiers, not as claims about
 the precise historical stage of every rule so labelled. A rule named `PGmcX`
 may in some cases be a later development that affects only the West Germanic
-or Northwest Germanic branch; the chapter assignment in this staging map takes
-priority over the rule-name prefix for historical organization purposes.
+or Northwest Germanic branch. Each entry's source-supported historical
+analysis takes priority over both its identifier and its chapter placement;
+the latter follows executable order, not an independent historical-stage map.

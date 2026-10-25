@@ -17,6 +17,13 @@ RULE_HEADING_RE = re.compile(
 CODE_FENCE_RE = re.compile(r"(?ms)^```.*?^```[ \t]*\n?")
 
 
+def display_source_path(path: Path) -> str:
+    try:
+        return path.resolve().relative_to(ROOT.parents[3]).as_posix()
+    except ValueError:
+        return f"external:{path.name}"
+
+
 @dataclass(frozen=True)
 class RuleHeading:
     file_name: str

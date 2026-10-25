@@ -45,11 +45,13 @@ The decisive early step is the loss of final `-i` before the Old English umlaut
 stage. If that high vowel remained, the word would develop an over-umlauted
 `y`-type vowel instead of the attested form [@RingeTaylor2014, 141].
 
-From the selected input [júgunθ]{.iv .recon lang=pwgmc sort=jugunth role=selected_input} 'youth', the later development is regular: palatal
-fronting yields [jéugunθ]{.recon} 'youth'; nasal-spirant lengthening and loss give
-[jéogūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
-[jéoguθ]{.recon} 'youth', which surfaces as [`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} 'youth'. Campbell preserves `u` after accented `u` in forms such
-as [`duguþ`]{.iv lang=oe sort=duguth role=comparison_form} 'troop' and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} 'monk' [@Campbell1959, §374]. Brunner likewise cites
+From the selected input [júgunθ]{.iv .recon lang=pwgmc sort=jugunth role=selected_input} 'youth', the later development is regular: nasal-spirant lengthening and loss give
+[júgūθ]{.recon} 'youth' [@Fulk2018, 109]; unstressed long-vowel shortening then produces
+[júguθ]{.recon} 'youth'. The root vowel remains phonological `u` through medial-vowel lowering; late West Saxon spelling, not early palatal fronting, yields
+[`ġeoguþ`]{.iv lang=oe sort=geoguth role=regular_output} 'youth'
+[@RingeTaylor2014, p. 5; @SieversBrunner1965, pp. 64--65, §92.1].
+Campbell preserves `u` after accented `u` in forms such
+as [`duguþ`]{.iv lang=oe sort=duguth role=comparison_form} 'troop' and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} 'monk' [@Campbell1959, p. 156, §373]. Brunner likewise cites
 [`iuzuð`]{.iv lang=oe sort=iuzuth role=comparison_form} 'youth' and [`munuc`]{.iv lang=oe sort=munuc role=comparison_form} 'monk' under the same development
 [@SieversBrunner1965, §150.3].
 

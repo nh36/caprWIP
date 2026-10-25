@@ -16,9 +16,9 @@ than that of the preceding allophony rule.
 ## SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
 
 ```foma
-define SieversLawSyncope [
+define SieversLawSyncope Ctx([
     {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
-];
+]);
 ```
 
 The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} 'stretch' yields [*strecċan*]{.pred} rather than expected OE *streċċan* 'stretch'; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.

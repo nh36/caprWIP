@@ -21,19 +21,29 @@ The vowel-replacement clauses themselves are unchanged
 ## SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope}
 
 ```foma
-define OEHighVowelApocope [
+define OEHighVowelApocope Ctx([
+    # Disyllabic: long syllable (long vowel + consonant(s)) + final vowel
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
+    # Disyllabic: diphthong + consonant(s) + final vowel
+    # LONG diphthongs are heavy (any C count). SHORT diphthongs are heavy only
+    # with 2+ consonants; a short diphthong + single C is a LIGHT syllable (from
+    # back-umlaut of a light stem, Campbell §345; DEV_NOTES §17.17).
+    # E.g. *spéru → speoru (LIGHT, retain -u); *xérdō → heord (HEAVY, lose -u).
     {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
+    # Disyllabic: heavy closed syllable (short vowel + 2+ consonants) + final vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
+    # Trisyllabic: long/diphthong + unstressed syllable + final vowel (Campbell §345)
+    # Pattern: LongV/Diph + C+ + shortV + C+ + final_vowel
+    # Example: heofon < *xemonų: *e*o + *β + *u + *n + *ų
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
@@ -43,20 +53,33 @@ define OEHighVowelApocope [
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic with short-diphthong first syllable (from back-umlaut of a light
+    # stem): trisyllabic apocope still fires regardless of stress-syllable weight
+    # (Campbell §345). E.g. *xémonų → *xéomonų → heofon.
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic: short syllable + another syllable + final vowel (Campbell §345)
+    # Pattern: shortV + C + shortV + C+ + final_vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic with heavy-by-position first syllable (short V + 2+C) +
+    # light second syllable + final high V (Campbell §345; DEV_NOTES §17.45.4).
+    # E.g. *spénnilō → *spinnilu → *spinnil (then OELAdjacentSyncope + nn-degem → spinl).
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
+    # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
     {*i} -> 0 || EnglishStarLongVowel _ .#.,
+    # Campbell §238/§346: final -u lost after /h/ (*x) regardless of weight.
+    # Must fire before intervocalic h-loss would remove the conditioning.
+    # E.g. *féxu → *féoxu → feoh (not feou).
     {*u} -> 0 || {*x} _ .#.,
     {*ų} -> 0 || {*x} _ .#.,
     {*i} -> 0 || {*x} _ .#.
-] .o. [{*ᶜ} -> 0];
+] .o. [{*ᶜ} -> 0]);
 ```
 
 Final \emph{*i}, \emph{*u}, and \emph{*ų} cannot disappear before completing

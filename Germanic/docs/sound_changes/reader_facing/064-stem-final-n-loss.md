@@ -14,7 +14,7 @@ processes within the late history of weak syllables
 ## SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss}
 
 ```foma
-define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
+define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
 ```
 
 Only final \emph{*n} after long \emph{*ī} is at issue, as in the inherited

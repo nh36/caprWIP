@@ -32,9 +32,9 @@
       "lifecycle_status": "active",
       "rule_name": "OEWsPalatalGlide",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC016-oe-ws-palatal-glide.md",
-      "card_type": "reciprocal_or_near_reciprocal",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC017 earlier around yoke."
+      "card_type": "source_partial_chain",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Accepted late back-vowel spelling follows SC017 phonology; the former reciprocal yoke displacements concern the superseded early u-only insertion, not current historical chronology."
     },
     {
       "change_id": "SC017",
@@ -252,9 +252,9 @@
       "lifecycle_status": "active",
       "rule_name": "OEWICombinativeUUmlaut",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC039-oe-wi-combinative-u-umlaut.md",
-      "card_type": "reciprocal_or_near_reciprocal",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC040 earlier around widow."
+      "card_type": "one_sided",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Delaying combinative u-umlaut past late SC040 changes widow to wudowe. Advancing SC040 no longer supplies the reciprocal widow witness under the accepted vowel-resolution architecture; the original measurement remains archived."
     },
     {
       "change_id": "SC040",
@@ -263,8 +263,8 @@
       "rule_name": "OEMedUnstressedULowering",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC040-oe-med-unstressed-u-lowering.md",
       "card_type": "mixed",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC039 later; later boundary is an ordinary chronology relation but broad/far across SC072."
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Lowering follows SC039 combinative u-umlaut and the earlier shortening history. The old youth boundary depends on early SC016 insertion; the reciprocal widow advance predates accepted vowel resolution. Current delayed SC039 still gives wudowe; the late SC040 position follows the source-backed SC021 repair."
     },
     {
       "change_id": "SC041",
@@ -792,35 +792,49 @@
       "strength": "runner_boundary",
       "interpretation_category": "runner_boundary",
       "reciprocal_group_id": "",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC017 earlier around yoke."
+      "notes": "Historical runner-search limit for the retired early insertion; no current historical precedence is asserted. See sc016-017-adjudication.md."
     },
     {
       "source_change_id": "SC016",
       "target_change_id": "SC017",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "yoke",
       "representative_forms": "PGmc `*júką` yields expected OE `ġeoc`, but the later-shifted variant yields `ġoc`",
-      "strength": "tight_local",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "RG01_SC016_SC017",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC017 earlier around yoke."
+      "notes": "Former reciprocal_chronology measurement from the early glide-insertion architecture, reproduced at 515b0f4b. Its u-only insertion fails after lowering creates o; this does not date the adopted back-vowel spelling. Superseded by sc016-017-adjudication.md; see post-migration-chronology-reconciliation.md and the dedicated replay."
     },
     {
       "source_change_id": "SC017",
       "target_change_id": "SC016",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "yoke",
       "representative_forms": "PGmc `*júką` yields expected OE `ġeoc`, but the earlier-shifted variant yields `ġoc`",
-      "strength": "tight_local",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "RG01_SC016_SC017",
-      "notes": "Earlier boundary reciprocates SC016 later around yoke; later boundary reciprocates SC019 earlier around nose, shovel, and sorrow, with `rust` / `wool` only as changed-output context."
+      "notes": "Reciprocal view of the same retired early-insertion experiment, not a second independent historical proof. The accepted SC017 phonology precedes SC016 written-surface rendering; see post-migration-chronology-reconciliation.md."
+    },
+    {
+      "source_change_id": "SC017",
+      "target_change_id": "SC016",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "stage_entailed",
+      "witness_role": "feeding",
+      "representative_lexemes": "yoke",
+      "representative_forms": "*júką > *jóką; written-surface ġ*ók > ġ*éok > ġeoc",
+      "strength": "stage_entailed",
+      "interpretation_category": "stage_entailed",
+      "reciprocal_group_id": "",
+      "notes": "Accepted Northwest Germanic lowering precedes the OE orthographic rendering of its result, not an early phonological glide insertion. Ringe-Taylor 2014 p.5; Fulk 2018 p.56; Brunner 1965 pp.64-65 §92; sc016-017-adjudication.md. Feeding is visible, but modern spelling maps both o and u to eo: no discriminating final-output chronology witness is claimed."
     },
     {
       "source_change_id": "SC017",
@@ -1161,30 +1175,30 @@
     {
       "source_change_id": "SC026",
       "target_change_id": "SC027",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
       "representative_lexemes": "goose; youth",
-      "representative_forms": "PGmc `*gánsz` yields `ġeas` instead of expected `gōs` when SC026 is shifted later; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`. This is an EXECUTABLE dependency, not a historical interval: SC026 must read the nasal that SC027 deletes (sc026-sc027-nasal-spirant-adjudication.md). `fist` withdrawn as a witness — its nasal loss is the pan-Germanic pre-*x change SC103",
-      "strength": "tight_local",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "representative_forms": "Archived reordered-step outputs: `ġeas` instead of `gōs` for *gánsz; `ġeogoþ` instead of `ġeoguþ` for *júgunθ. The latter also depends on retired early SC016 insertion; neither dates the two components.",
+      "strength": "technical_marker",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "RG04_SC026_SC027",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC027 earlier around goose and youth (executable dependency; fist withdrawn, see SC103)."
+      "notes": "Accepted sc026-sc027-nasal-spirant-adjudication.md treats lengthening and nasal loss as two executable components of one historical process. Lengthening must read the nasal before deletion; this is not independently demonstrated historical chronology between two successive sound laws. Fist belongs to SC103."
     },
     {
       "source_change_id": "SC027",
       "target_change_id": "SC026",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
       "representative_lexemes": "goose; youth",
-      "representative_forms": "PGmc `*gánsz` yields `ġeas` instead of expected `gōs` when SC027 is shifted earlier; PGmc `*júgunθ` yields `ġeogoþ` instead of expected `ġeoguþ`. Executable dependency, not a historical interval (sc026-sc027-nasal-spirant-adjudication.md). `fist` withdrawn as a witness — its nasal loss is the pan-Germanic pre-*x change SC103",
-      "strength": "tight_local",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "representative_forms": "Archived reciprocal measurement of the same reordered steps: `ġeas` instead of `gōs`; `ġeogoþ` instead of `ġeoguþ` under the old early-glide architecture.",
+      "strength": "technical_marker",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "RG04_SC026_SC027",
-      "notes": "Earlier boundary reciprocates SC026 later around goose and youth (executable dependency; fist withdrawn, see SC103); later search reached SC087 with no real break."
+      "notes": "Reciprocal representation of the same executable lengthening-before-deletion dependency, not a second historical interval. See sc026-sc027-nasal-spirant-adjudication.md; original summaries and receipts remain unchanged."
     },
     {
       "source_change_id": "SC027",
@@ -1399,44 +1413,58 @@
     {
       "source_change_id": "SC039",
       "target_change_id": "SC040",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "one_sided_chronology",
       "direction_basis": "later_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
       "representative_lexemes": "widow",
-      "representative_forms": "PGmc `*wíduwōn` yields expected OE `wuduwe`, but the later-shifted variant yields `wudowe`",
-      "strength": "tight_local",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
-      "reciprocal_group_id": "RG08_SC039_SC040",
-      "notes": "No earlier ordinary chronology break was found before bundled PWGmcChanges; later boundary reciprocates SC040 earlier around widow."
+      "representative_forms": "PGmc `*wíduwōn` yields expected OE `wuduwe`; delaying SC039 until after late SC040 gives `wudowe`.",
+      "strength": "one_sided",
+      "interpretation_category": "one_sided_chronology",
+      "reciprocal_group_id": "",
+      "notes": "Current replay preserves the combinative-umlaut-before-lowering dependency without adjacency. The old reciprocal advance of SC040 no longer gives the same widow failure: intervening accepted vowel resolution restores medial u. Campbell §218 and §373; see post-migration-chronology-reconciliation.md."
     },
     {
       "source_change_id": "SC040",
       "target_change_id": "SC039",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "widow",
-      "representative_forms": "PGmc `*wíduwōn` yields expected OE `wuduwe`, but the earlier-shifted variant yields `wudowe`",
-      "strength": "tight_local",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "representative_forms": "Archived earlier-shifted lowering gave `wudowe` instead of `wuduwe`; the current same movement preserves `wuduwe` and gives `weorald` instead of `weorold` for world.",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "RG08_SC039_SC040",
-      "notes": "Earlier boundary reciprocates SC039 later; later boundary is an ordinary chronology relation but broad/far across SC072."
+      "notes": "Old reciprocal displacement predates the accepted SC021 vowel-resolution architecture. Current earlier lowering is no longer the same widow witness; delaying SC039 still demonstrates its precedence over late SC040. Preserve the old card, not its claim of current reciprocity; see post-migration-chronology-reconciliation.md."
     },
     {
       "source_change_id": "SC040",
       "target_change_id": "SC072",
-      "relation_type": "broad_far_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "youth",
       "representative_forms": "PGmc `*júgunθ` yields expected OE `ġeoguþ`, but the later-shifted variant yields `ġeogoþ`",
-      "strength": "broad_far",
-      "interpretation_category": "broad_far",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary reciprocates SC039 later; later boundary is an ordinary chronology relation but broad/far across SC072."
+      "notes": "Reproduced at 515b0f4b: early SC016 inserts a front vowel, so delayed SC040 sees a non-u preceding nucleus after SC072. Replacing that retired insertion by the accepted late spelling restores ġeoguþ with SC040 still delayed. This is an architecture-dependent experiment, not historical SC040-before-SC072 evidence. The source-backed late SC040 placement was adopted in sc021-adjudication.md §9a; see post-migration-chronology-reconciliation.md."
+    },
+    {
+      "source_change_id": "SC072",
+      "target_change_id": "SC040",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "stage_entailed",
+      "witness_role": "stage_entailed",
+      "representative_lexemes": "",
+      "representative_forms": "",
+      "strength": "stage_entailed",
+      "interpretation_category": "stage_entailed",
+      "reciprocal_group_id": "",
+      "notes": "Accepted narrow historical intervals, not the shared coarse oe registry label: unstressed shortening belongs before the later ninth-century u-to-o lowering (Campbell 1959 §373; Stausland Johnsen 2015 pp.21-22,28-31; sc021-adjudication.md §9a). No live lexical feeding or output-discriminating youth witness is claimed. The current youth root u preserves medial u under SC040; widow and world remain controls."
     },
     {
       "source_change_id": "SC041",

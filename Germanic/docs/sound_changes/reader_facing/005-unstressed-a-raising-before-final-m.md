@@ -11,7 +11,9 @@ Final \emph{*m} conditions the raising.
 
 ```foma
 define PNWGmcAToUBeforeM Ctx([
+    [
     {*a} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ {*m} ({*i})? ({*z})? .#.
+]
 ]);
 ```
 

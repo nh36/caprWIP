@@ -3,9 +3,9 @@
 ## SC107. Retained unstressed contribution (`EAFBrighteningUnstressed`) {#rule-EAFBrighteningUnstressed}
 
 ```foma
-define EAFBrighteningUnstressed [
+define EAFBrighteningUnstressed Ctx([
     {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
-];
+]);
 ```
 
 This earlier contribution is preserved without identifying it with the

@@ -349,6 +349,18 @@ def validate_registry(reg, edges):
             elif not (REPO_ROOT / r["adjudication_memo"]).is_file():
                 errors.append(f"registry: {r['sc_id']} memo missing: {r['adjudication_memo']}")
     for e in edges:
+        allowed_relations = CHRONOLOGY_RELATION_TYPES | {
+            "runner_limited_boundary", "no_break_search_boundary",
+            "technical_computational", "superseded_experiment",
+            "nonordering_observation",
+        }
+        if e["relation_type"] not in allowed_relations:
+            errors.append(f"edges: unknown relation_type {e['relation_type']!r}")
+        if e["relation_type"] == "superseded_experiment" and (
+                e["evidence_basis"] != "archived_experiment" or not e["notes"]):
+            errors.append(f"edges: superseded experiment {e['source_change_id']}->"
+                          f"{e['target_change_id']} needs archived_experiment "
+                          "classification and an explicit supersession explanation")
         for endpoint in (e["source_change_id"], e["target_change_id"]):
             if endpoint.startswith("SC") and endpoint not in ids:
                 errors.append(f"edges: unknown SC {endpoint}")
@@ -421,7 +433,56 @@ def validate_registry(reg, edges):
                 errors.append(
                     f"edges: retired SC on chronology edge {e['source_change_id']}->{e['target_change_id']}"
                 )
+    for e, observation in zip(edges, chronology_order_observations(reg, edges)):
+        if observation["order_check"] in ("contradiction", "invalid_direction",
+                                           "ambiguous_endpoint"):
+            errors.append(
+                f"edges: {e['source_change_id']}->{e['target_change_id']} "
+                f"{observation['order_check']}: {e['relation_type']}, "
+                f"{e['direction_basis']}, {e['evidence_basis']}; "
+                f"exec_index source={observation['source_exec_index'] or 'unavailable'}, "
+                f"target={observation['target_exec_index'] or 'unavailable'}. "
+                f"Evidence: {e['representative_forms']}; {e['notes']}. "
+                "Reconcile the accepted scholarly decision and live classification; "
+                "do not reverse an arrow or move a rule merely to satisfy this check.")
     return errors
+
+
+def chronology_order_observations(reg, edges, *, stages=None):
+    """Classify claims before comparing precedence, not every recorded boundary."""
+    identifiers = {r["sc_id"]: r.get("fst_identifier", "") for r in reg}
+    positions = {}
+    for stage in oe_pipeline.named_stages() if stages is None else stages:
+        if stage.kind == "named":
+            positions.setdefault(stage.foma_identifier, []).append(stage.exec_index)
+    observations = []
+    for edge in edges:
+        endpoints = [positions.get(identifiers.get(edge[key], edge[key]), [])
+                     for key in ("source_change_id", "target_change_id")]
+        relation, basis = edge["relation_type"], edge["evidence_basis"]
+        constraint = relation in CHRONOLOGY_RELATION_TYPES or (
+            relation == "technical_computational" and basis == "technical")
+        if relation == "superseded_experiment":
+            status = "superseded_experiment"
+        elif not constraint:
+            status = "nonordering_observation"
+        elif edge["direction_basis"] not in ("earlier_boundary", "later_boundary"):
+            status = "invalid_direction"
+        elif any(len(p) > 1 for p in endpoints):
+            status = "ambiguous_endpoint"
+        elif any(not p for p in endpoints):
+            status = "unavailable_endpoint"
+        else:
+            source, target = (p[0] for p in endpoints)
+            before = (source < target if edge["direction_basis"] == "later_boundary"
+                      else target < source)
+            status = "consistent" if before else "contradiction"
+        observations.append({
+            "source_exec_index": str(endpoints[0][0]) if len(endpoints[0]) == 1 else "",
+            "target_exec_index": str(endpoints[1][0]) if len(endpoints[1]) == 1 else "",
+            "order_check": status,
+        })
+    return observations
 
 
 def build_staging_view(reg):
@@ -482,6 +543,7 @@ def build_reader_manifest(reg, chapters, *, stages=None, reader_root=None):
                  and r["is_reader_facing"] == "yes"]
     definition_owners = {r["fst_identifier"]: r["sc_id"] for r in published}
     defined_names = set()
+    canonical_definitions = executable_facts.define_facts()
     identities, files, positions, anchors = set(), set(), set(), set()
     ordered = []
     heading_re = re.compile(
@@ -532,6 +594,11 @@ def build_reader_manifest(reg, chapters, *, stages=None, reader_root=None):
                 errors.append(f"reader manifest: {fname} needs exactly one printed "
                               f"definition of primary network {r['fst_identifier']}")
             for name in definitions:
+                canonical = canonical_definitions.get(name)
+                if canonical and definitions[name].definition_raw != canonical.definition_raw:
+                    errors.append(f"reader manifest: {fname} printed definition {name} "
+                                  "differs from germanic.txt; reconcile the accepted "
+                                  "implementation and reader source, never edit a baseline")
                 if name in defined_names:
                     errors.append(f"reader manifest: duplicate printed definition {name} in {fname}")
                 defined_names.add(name)
@@ -633,12 +700,15 @@ def build_current_chronology(reg, edges):
 
     header = ["source_change_id", "target_change_id", "relation_type",
               "direction_basis", "evidence_basis", "witness_role",
-              "source_cascade_position", "target_cascade_position"]
+              "source_cascade_position", "target_cascade_position",
+              "source_exec_index", "target_exec_index", "order_check"]
     rows = [
         [e["source_change_id"], e["target_change_id"], e["relation_type"],
          e["direction_basis"], e["evidence_basis"], e["witness_role"],
-         position(e["source_change_id"]), position(e["target_change_id"])]
-        for e in edges
+         position(e["source_change_id"]), position(e["target_change_id"]),
+         observation["source_exec_index"], observation["target_exec_index"],
+         observation["order_check"]]
+        for e, observation in zip(edges, chronology_order_observations(reg, edges))
     ]
     b = banner("registry/chronology_edges.tsv (scholarly relations) + "
                "registry/sc_registry.tsv + oe_pipeline (current positions)") + [
@@ -647,6 +717,9 @@ def build_current_chronology(reg, edges):
         "stale the moment the cascade changes; regenerate, never edit.",
         "Archived first-break experiments live in order_tests/chronology_cards/",
         "(frozen in their original experiment order space).",
+        "order_check distinguishes current historical/technical precedence from",
+        "superseded experiments, nonordering observations and unavailable endpoints.",
+        "Physical exec_index also resolves stages outside the legacy numbered span.",
     ]
     return tsv_text(b, header, rows)
 
@@ -915,7 +988,8 @@ def build_graph_summary(reg, edges):
         lines.append(
             f"1. `{e['source_change_id']} -> {e['target_change_id']}` "
             f"({e['relation_type']}; {e['evidence_basis']}; witness role: {e['witness_role']}) — "
-            f"lexemes: `{e['representative_lexemes']}`; forms: {e['representative_forms']}"
+            f"lexemes: `{e['representative_lexemes'] or '(none claimed)'}`; "
+            f"forms: {e['representative_forms'] or '(none claimed)'}"
         )
     lines += ["", "## Boundary and technical observations", ""]
     for e in edges:

@@ -12,8 +12,10 @@ not high-vowel vocalization generally.
 
 ```foma
 define PWGmcSyllabicJ Ctx([
+    [
     {*j} {*a} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.,
     {*j} {*ą} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.
+]
 ]);
 ```
 

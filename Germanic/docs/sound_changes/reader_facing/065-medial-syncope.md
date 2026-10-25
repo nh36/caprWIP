@@ -8,11 +8,11 @@ described by Hogg, Ringe and Taylor, and Fulk
 @Fulk2018, p. 91, §5.6].
 
 ```foma
-define OEMedialSyncope [
+define OEMedialSyncope FootCtx([
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
     {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
-];
+]);
 ```
 
 No diagnostic word establishes a local chronology. Moving medial syncope to

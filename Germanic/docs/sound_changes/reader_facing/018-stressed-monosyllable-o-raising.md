@@ -11,7 +11,9 @@ Its input is final \emph{*ō} in a stressed monosyllable.
 
 ```foma
 define PNWGmcStressedMonosyllableORaising Ctx([
+    [
     {*ō} -> {*ū} || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* _ .#.
+]
 ]);
 ```
 

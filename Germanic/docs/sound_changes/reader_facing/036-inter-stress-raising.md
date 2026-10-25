@@ -9,12 +9,18 @@ The rule changes the vowel between stronger stress peaks, and its witnesses cons
 ## SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising}
 
 ```foma
-define OEInterStressRaising [
-    {*a} -> {*u}
-        || PGmcStarVowel EnglishStarConsonant* _
-           [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
+define OEInterStressRaising Ctx([
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
+    # DEV_NOTES §16.6: Nebenton-conditioned raising of compound
+    # second-element root *a. Luick §306, Brunner §402, R/T vol.2
+    # §6.3.3 p.200-202: short *a in the trough between primary
+    # stress and a weak/lost secondary stress raises to *u. The
+    # grave-a itself is the prosodic conditioning marker; no
+    # right-context is required — the compound-internal prosodic
+    # position is encoded directly in the PROTOFORM.
+    # Example: *wír-àldu → *wír-uldu → (u-lowering) → weorold.
     {*à} -> {*u}
-];
+]);
 ```
 
 The two boundaries have unequal force. Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [sáiwalō]{.recon} ‘soul’ yields [*sāwel*]{.pred} rather than expected OE *sāwol* ‘soul’; after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), it yields [*sāwul*]{.pred} rather than *sāwol*, while PGmc [wír-àldu]{.recon} ‘world’ yields [*weoruld*]{.pred} rather than *weorold* ‘world’. The distant lower boundary places inter-stress raising after final long-\emph{o} raising, and the local upper boundary places it before medial unstressed-\emph{u} lowering. In handbook terms, medial \emph{*a} > \emph{*u} belongs to the \emph{world}- and \emph{soul}-type low-stress vocalism that followed the earlier final-vowel changes.

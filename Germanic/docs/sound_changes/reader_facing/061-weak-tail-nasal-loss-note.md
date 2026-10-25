@@ -12,10 +12,10 @@ remain untested.
 ## SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss}
 
 ```foma
-define OEWeakTailNasalLoss [
+define OEWeakTailNasalLoss Ctx([
     {*n} {*ą} -> {*n} || _ .#.,
     {*m} {*ą} -> {*m} || _ .#.
-];
+]);
 ```
 
 Final weak-tail \emph{*-ną} and \emph{*-mą} accordingly yield plain

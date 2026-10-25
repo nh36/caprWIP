@@ -105,9 +105,9 @@ geminate-class illustration, *senġan* 'singe' a postnasal control, and
 ## SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
 ```foma
-define OEVelarPalatalization [
+define OEVelarPalatalization Ctx([
     OEGFricativePalatal .o. OEVelarPalatalizationStops
-];
+]);
 ```
 
 The combined operation does not give every class one sharply dated
@@ -130,7 +130,7 @@ with velar initial k, versus *dæġe* 'day'.
 | After mutation | \emph{*kǣjæ}, without new initial palatalization | \emph{*dæʝæ}, without æ-raising |
 | After merger and native realization | *cǣġe* | *dæġe* |
 
-Premature merger instead predicts pre-OE [\emph{*dejæ}]{.pred} under
+Premature merger instead predicts pre-OE [dejæ]{.pred} under
 these premises. The experiment tests that source-based contrast; the
 existing day nominative is not the oblique discriminator
 [@Hogg1979, pp. 105--110; @RingeTaylor2014, p. 204].

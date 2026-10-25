@@ -12,20 +12,21 @@ palatal-vowel change [@Campbell1959, pp. 107--108, §§248--251;
 ## SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut}
 
 ```foma
-define OEWsPalatalUmlaut [
+define OEWsPalatalUmlaut Ctx([
     {*eo} -> {*i} || _ OEHCluster .#.,
     {*io} -> {*i} || _ OEHCluster .#.,
     {*ie} -> {*i} || _ OEHCluster .#.,
     {*eo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*io} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    # Stressed variants (stress absorbed: result is short i):
     {*éo} -> {*i} || _ OEHCluster .#.,
     {*ío} -> {*i} || _ OEHCluster .#.,
     {*íe} -> {*i} || _ OEHCluster .#.,
     {*éo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*ío} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*íe} -> {*i} || _ OEHCluster EnglishStarFrontVowel
-];
+]);
 ```
 
 The change to \emph{*i} before \emph{*h}-clusters can be ordered only on its

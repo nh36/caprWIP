@@ -11,7 +11,9 @@ No broader environment for \emph{*ō} is attested.
 
 ```foma
 define PWGmcFinalOrLowering Ctx([
+    [
     {*ō} -> {*a} || _ {*r} .#.
+]
 ]);
 ```
 

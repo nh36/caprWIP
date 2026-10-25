@@ -5,9 +5,9 @@
 The following rule reverses the lowering before \emph{*ng}.
 
 ```foma
-define OEMedUnstressedILowering [
+define OEMedUnstressedILowering Ctx([
     {*e} -> {*i} || _ {*n} {*g}
-];
+]);
 ```
 
 The rule restores \emph{*i} before \emph{*ng}, preventing the broader lowering from producing the wrong medial vowel in forms such as *sċilling* ‘shilling’.

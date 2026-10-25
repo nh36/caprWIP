@@ -1,8 +1,8 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2462
+- Internal production occurrences: 2460
 - Internal production unique forms: 1143
-- Printed main occurrences: 2373
+- Printed main occurrences: 2371
 - Printed main unique forms: 1133
 - Printed excluded occurrences: 89
 - Printed excluded unique forms: 68
@@ -16,7 +16,7 @@
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
 | Old English | 1234 | 484 |
-| Proto-Germanic | 991 | 547 |
+| Proto-Germanic | 989 | 547 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -40,7 +40,7 @@
 | source_protoform | 358 |
 | selected_input | 555 |
 | comparison_form | 832 |
-| evidence_form | 220 |
+| evidence_form | 218 |
 
 ## Internal-only rows by reason
 
@@ -53,15 +53,15 @@
 
 ## Reader-facing example rows by role
 
-- `diagnostic_comparator`: 219
-- `example_input`: 72
-- `expected_output`: 77
-- `model_stage`: 112
-- `notation_or_segment`: 783
-- `yielded_output`: 60
+- `diagnostic_comparator`: 218
+- `example_input`: 70
+- `expected_output`: 75
+- `model_stage`: 110
+- `notation_or_segment`: 784
+- `yielded_output`: 58
 
-- Reader-facing include_in_example_index=yes: 540
-- Reader-facing include_in_example_index=no: 783
+- Reader-facing include_in_example_index=yes: 531
+- Reader-facing include_in_example_index=no: 784
 
 ## Print-unique entry audit
 
@@ -154,11 +154,11 @@
 
 ### Included rows by role
 
-- `diagnostic_comparator`: 219
-- `example_input`: 72
-- `expected_output`: 77
-- `model_stage`: 112
-- `yielded_output`: 60
+- `diagnostic_comparator`: 218
+- `example_input`: 70
+- `expected_output`: 75
+- `model_stage`: 110
+- `yielded_output`: 58
 
 ### Included rows by inferred language
 
@@ -171,19 +171,19 @@
 - `ohg`: 9
 - `on`: 11
 - `os`: 3
-- `pgmc`: 167
+- `pgmc`: 163
 - `pie`: 5
-- `pnwgmc`: 3
-- `preoe`: 110
+- `pnwgmc`: 2
+- `preoe`: 106
 - `pwgmc`: 34
 
 ### Included rows by main-index overlap
 
-- `no`: 369
-- `yes`: 171
+- `no`: 364
+- `yes`: 167
 
-- Included whole-form rows with asterisks: 413
-- Included whole-form rows without asterisks: 127
+- Included whole-form rows with asterisks: 405
+- Included whole-form rows without asterisks: 126
 - Included rows inferred_language=oe with leading asterisk: 25
 - Included rows inferred_language=pgmc but OE-output-like form shape: 31
 
@@ -226,11 +226,11 @@ _None._
 
 ## Reader-facing example rows (sample)
 
-- `here` (oe, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1003)
-- `*ē₁` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1008)
-- `*ī` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1010)
-- `*r` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1014)
-- `*hir > her` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1028)
-- `*st` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1029)
-- `*z` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1029)
-- `*r` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1031)
+- `*nẹstijana` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1021)
+- `*lẹstiz` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1022)
+- `here` (oe, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1034)
+- `*ē₁` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1039)
+- `*ī` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1041)
+- `*r` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1045)
+- `*hir > her` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1059)
+- `*st` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1060)

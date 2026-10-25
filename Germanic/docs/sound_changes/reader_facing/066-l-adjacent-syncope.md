@@ -16,11 +16,11 @@ ordering witness.
 ## SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope}
 
 ```foma
-define OELAdjacentSyncope [
+define OELAdjacentSyncope Ctx([
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
-];
+]);
 ```
 
 The loss of medial \emph{*i} before \emph{*l} is late enough to preserve

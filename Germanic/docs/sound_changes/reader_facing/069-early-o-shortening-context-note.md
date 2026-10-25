@@ -18,9 +18,11 @@ have more closely defined relations.
 ## SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening}
 
 ```foma
-define OEEarlyOShortening [
+define OEEarlyOShortening Ctx([
+    # EARLY: *ō → *a before nasals (runs BEFORE fronting)
+    # This *a will undergo fronting: *a → *æ → e (Campbell §333, §369)
     {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ EnglishStarNasal
-];
+]);
 ```
 
 The rule shortens unstressed long \emph{*ō} before a following nasal. Because this shortening happens early, the resulting \emph{*a} can still participate in the later fronting and merger that shape many weak final syllables.

@@ -3,7 +3,7 @@
 ## SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
 
 ```foma
-define OEPreconsonantalDegemination OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN;
+define OEPreconsonantalDegemination Ctx(OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN);
 ```
 
 Preconsonantal \emph{*tt} and \emph{*nn} simplify only after syncope has

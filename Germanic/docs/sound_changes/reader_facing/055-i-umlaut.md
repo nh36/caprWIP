@@ -93,9 +93,9 @@ agreement alone could not establish the relative chronology.
 ## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 ```foma
-define OEIUmlaut OEIUmlautFronting
+define OEIUmlaut FootCtx(OEIUmlautFronting
     .o. OEIUmlautRaising
-    .o. OEIUmlautDiphthong;
+    .o. OEIUmlautDiphthong);
 ```
 
 The literature presents fronting, raising, and diphthongal mutation as effects of one historical development. They consequently occupy a single place in the Old English chronology.

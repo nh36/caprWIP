@@ -3,15 +3,16 @@
 ## Historical interval
 
 This short chapter stands apart from the derivational chapters that precede
-it. The changes of Chapters 1–3 are sound changes: they altered the spoken
-form of the language. The material treated here belongs instead to the
+it. The earlier chapters primarily discuss changes to the spoken language,
+alongside explicitly identified technical support operations. The material
+treated here belongs instead to the
 written surface of Old English — scribal conventions that determined how the
 results of the completed phonological history were committed to parchment.
 
 In the executable model these conventions apply after every phonological
-rule, at the very end of the cascade, because that is where they belong
-historically: a spelling practice can only render forms that the spoken
-language had already produced.
+rule, in the final written-surface block. That serialization renders the
+results of the phonological reconstruction; it does not independently date
+the origin of each spelling practice relative to every phonological change.
 
 ## Scope
 

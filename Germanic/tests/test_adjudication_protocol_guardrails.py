@@ -63,7 +63,10 @@ PREFIX_IMPLIED_STAGE = (
 )
 
 # Relation types that assert a genuine chronological ordering and
-# therefore must carry witness evidence. Boundary/search-exhaustion rows
+# therefore must carry interpreted evidence. Independently demonstrated
+# relations need lexical witnesses; stage-entailed relations need their
+# source-backed stage explanation, not fabricated displacement forms.
+# Boundary/search-exhaustion rows
 # (runner_limited_boundary, no_break_search_boundary) and purely
 # technical rows are exempt from the lexeme requirement by design.
 CHRONOLOGY_RELATION_TYPES = {
@@ -284,18 +287,21 @@ class ChronologyEdgeWitnessDisciplineTests(unittest.TestCase):
         interaction harness" silently becomes a chronology claim with no
         recorded witness or interpretation.
         """
-        for row in read_tsv(EDGES):
+        for row in read_tsv(SC_DOCS / "registry" / "chronology_edges.tsv"):
             if row["relation_type"] not in CHRONOLOGY_RELATION_TYPES:
                 continue
             label = f"{row['source_change_id']}->{row['target_change_id']}"
-            self.assertTrue(
-                row["representative_lexemes"].strip(),
-                f"{label}: chronology edge without witness lexemes",
-            )
-            self.assertTrue(
-                row["representative_forms"].strip(),
-                f"{label}: chronology edge without witness forms",
-            )
+            self.assertIn(row["evidence_basis"],
+                          {"independently_demonstrated", "stage_entailed"}, label)
+            if row["evidence_basis"] == "independently_demonstrated":
+                self.assertTrue(
+                    row["representative_lexemes"].strip(),
+                    f"{label}: demonstrated chronology edge without witness lexemes",
+                )
+                self.assertTrue(
+                    row["representative_forms"].strip(),
+                    f"{label}: demonstrated chronology edge without witness forms",
+                )
             self.assertTrue(
                 row["notes"].strip(),
                 f"{label}: chronology edge without interpretive notes",

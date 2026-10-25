@@ -38,9 +38,9 @@ is the separate earlier change
 ## SC004. English stressed ai contraction (`EAFAiMonophthongization`) {#rule-EAFAiMonophthongization}
 
 ```foma
-define EAFAiMonophthongization [
+define EAFAiMonophthongization Ctx([
     {*ái} -> {*ā}
-];
+]);
 ```
 
 The soul form fixes the relation to interstress raising. If the monophthongization is delayed until after that change, PGmc [sáiwalō]{.recon} 'soul' yields [*sāwel*]{.pred} rather than expected OE *sāwol* 'soul'. An earlier placement changes no output. This shows that [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising) in the modeled sequence.

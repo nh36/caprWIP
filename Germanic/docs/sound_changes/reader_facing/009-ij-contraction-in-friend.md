@@ -10,8 +10,11 @@ The change concerns a rare sequence attested only in the \emph{*frijōnd-} etymo
 
 ```foma
 define PWGmcIjContraction Ctx([
+    [
     {*i} {*j} {*ō} -> {*iu} || _ EnglishStarConsonant,
+    # Stressed variant (stress preserved):
     {*í} {*j} {*ō} -> {*íu} || _ EnglishStarConsonant
+]
 ]);
 ```
 

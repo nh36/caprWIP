@@ -3,9 +3,9 @@
 ## SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation}
 
 ```foma
-define OEDentalAssimilation [
+define OEDentalAssimilation Ctx([
     {*θ} -> 0 || {*t} _
-];
+]);
 ```
 
 Loss of \emph{*θ} after \emph{*t} resolves a dental cluster produced by syncope

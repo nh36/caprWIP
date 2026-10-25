@@ -53,6 +53,19 @@ does not force a new page. Normal reader builds check exact canonical/manifest/
 reader/combined SC sequence equality, ownership, headings and anchors.
 See [migration evidence](reader_architecture_migration.md) for the original
 grouping defect, content-preservation accounting and non-regression record.
+Printed Foma bodies are checked against canonical definitions by the shared
+parser. Coverage reports classify the current registry population rather than
+treating historical report-manifest differences as publication omissions.
+
+Semantic predicted forms use ordinary Markdown content, such as
+`[dejæ]{.pred}`, not a raw-LaTeX-only span; the shared filter fails if content
+would disappear. Shared rendering keeps short Foma boxes together while long
+rules remain breakable. This is independent of source-file boundaries and
+does not insert a page break per rule.
+
+The [post-migration consistency record](post_migration_consistency.md) records
+chronology reconciliation, rendering causes, runtime-fixture reliability and
+the subsequent validation, without rewriting the earlier migration receipt.
 
 Entry position is editorial, never an identifier. Row IDs, filenames and corpus
 order do not decide where a lexical entry is published, so adding, renumbering

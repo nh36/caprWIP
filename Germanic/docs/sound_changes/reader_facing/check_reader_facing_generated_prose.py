@@ -6,7 +6,7 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from reader_facing_check_utils import BUILD_READER_BOOK, parse_intro_parts
+from reader_facing_check_utils import BUILD_READER_BOOK, display_source_path, parse_intro_parts
 
 
 ROOT = Path(__file__).resolve().parent
@@ -62,7 +62,7 @@ def render(builder: Path, paragraphs: list[str], issues: list[GeneratedProseIssu
         "",
         "## Summary",
         "",
-        f"- Book builder: `{builder}`.",
+        f"- Book builder: `{display_source_path(builder)}`.",
         f"- Introduction paragraphs checked: {len(paragraphs)}.",
         f"- Issues found: {len(issues)}.",
         "",

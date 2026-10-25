@@ -5,7 +5,7 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from reader_facing_check_utils import normalize_whitespace
+from reader_facing_check_utils import iter_build_chapter_paths, normalize_whitespace
 
 
 ROOT = Path(__file__).resolve().parent
@@ -170,7 +170,7 @@ class SectionCheck:
 
 
 def iter_target_files() -> list[Path]:
-    return [path for path in sorted(ROOT.glob("*.md")) if path.name not in DEFAULT_SKIP]
+    return iter_build_chapter_paths()
 
 
 def split_sections(text: str) -> list[tuple[str, str]]:
@@ -230,16 +230,25 @@ def check_section(file_name: str, heading: str, body: str) -> SectionCheck:
 def render_report(results: list[SectionCheck]) -> str:
     warning_count = sum(1 for result in results if result.warnings)
     lines = [
-        "# Reader-facing chronology evidence check 01",
+        "# Reader-facing chronology textual-cue inventory 01",
         "",
         "_Generated from the current SC-numbered rule sections in the reader-facing chapter files._",
+        "",
+        "This is a non-normative surface-wording inventory, not a scientific "
+        "evidence gate. A missing keyword does not establish missing evidence. "
+        "Technical stages, component sections, stage-entailed histories and "
+        "negative evidence do not require a displacement experiment or a "
+        "wrong-output formula. Do not rewrite scholarly arguments to obtain "
+        "these cues. Live ordering claims are validated separately by "
+        "`generate_registry_views.validate_registry` against canonical stages "
+        "and the classified chronology-edge registry.",
         "",
         "## Summary",
         "",
         f"- Sections checked: {len(results)}.",
-        f"- Sections with warnings: {warning_count}.",
+        f"- Sections with absent cues or notation observations: {warning_count}.",
         "",
-        "| File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Warnings |",
+        "| File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |",
         "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
     ]
 
@@ -276,7 +285,7 @@ def main() -> int:
     OUTPUT_PATH.write_text(render_report(results), encoding="utf-8")
     print(f"Wrote {OUTPUT_PATH}")
     warning_count = sum(1 for result in results if result.warnings)
-    print(f"Sections checked: {len(results)}; warnings: {warning_count}")
+    print(f"Sections inventoried: {len(results)}; textual observations: {warning_count}")
     return 0
 
 

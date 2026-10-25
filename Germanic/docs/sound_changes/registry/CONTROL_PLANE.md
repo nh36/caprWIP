@@ -26,7 +26,7 @@ are GENERATED or ARCHIVE.
 | File | Kind | Owns |
 |---|---|---|
 | `registry/sc_registry.tsv` | machine-state | SC identity, lifecycle status, executable identifier, display names, historical stage/scope, confidence, adjudication status/verdict, memo path, document pointers (evidence dossiers, chronology card, reader-facing chapter). It carries NO order-valued columns: executable positions are derived at read time from the executable model (`tools/oe_pipeline.py`) and published in the generated `registry/current_sc_state.tsv`; the legacy inventory/staging order spaces are frozen in `registry/archival_orders.tsv` (ARCHIVE) |
-| `registry/chronology_edges.tsv` | machine-state | Chronology relations: relation type, evidence basis (stage-entailed vs independently demonstrated), witnesses, witness roles |
+| `registry/chronology_edges.tsv` | machine-state | Chronology relations, evidence basis, witnesses and roles; distinguishes historical constraints, technical dependencies, nonordering observations and explicitly superseded experiments |
 | `registry/adjudication_programme.json` | machine-state | Explicit administrative programme start (`start_sc`). `adjudicate.py --next` selects the first active, unadjudicated non-support entry at or above it in SC-ID order. Scoped verdicts never skip pending earlier work. This is neither historical chronology nor executable order; earlier cases and support stages remain explicitly addressable |
 | `registry/reader_chapters.tsv` | publication-prose | Five editorial chapter boundaries: chapter id, title, intro file and `starts_at_sc`. Resolve anchors only after deriving global executable order. Boundaries cannot move individual entries |
 | `registry/sc_inventory_notes.tsv` | source | HUMAN JUDGEMENTS ONLY: plain-language draft descriptions, order-sensitivity classification, editorial `illustrative_lexemes`, notes, review flags |
@@ -70,7 +70,9 @@ same SC identity, with distinct anchors. Missing or ambiguous stage mappings,
 duplicate identities, anchors or ownership, missing primary headings and
 unregistered numbered reader sources fail closed. Each primary network must
 be printed exactly once; duplicate definitions and definitions belonging to
-another independently published SC are rejected.
+another independently published SC are rejected. Printed definition bodies
+must match their canonical executable definitions under the shared parser's
+whitespace/comment normalization; the reader cannot publish stale rule code.
 
 The generator first sorts individual entries solely by `Stage.exec_index`,
 then inserts chapter boundaries at `starts_at_sc`. Intervening entries belong
@@ -91,6 +93,32 @@ claim that every pairwise historical chronology is independently established.
 Adjudication records, not chapter placement or executable names, establish the
 evidential strength of historical claims. Lexical alphabetical ordering and
 index sorting retain their separate existing authorities.
+
+### Current chronology and historical observations
+
+Normal registry validation compares active historical constraints and
+`technical_computational` relations with `evidence_basis=technical` against
+the complete canonical `exec_index`. `later_boundary` means source before
+target; `earlier_boundary` means target before source. Contradictory directions,
+ambiguous stage endpoints and invalid directions fail with edge, positions
+and evidence. Named prelude stages need no legacy numbered cascade position.
+Unavailable endpoints remain explicit observations, not invented precedence.
+
+Boundary-only technical observations are not constraints.
+`superseded_experiment` requires `evidence_basis=archived_experiment` and an
+explanation; it retains the old result without presenting it as current
+historical chronology. The generated `current_chronology.tsv` exposes both
+physical indices and `order_check`. This is not a scientific adjudicator:
+source-backed reasoning must explain any correction, and frozen cards and
+receipts remain unchanged. See
+`audits/post-migration-chronology-reconciliation.md`.
+
+Publication coverage uses the canonical registry population. Retired,
+deliberately unpublished and published support entries are explicitly
+classified; the old change-report manifest is only a secondary historical
+comparison. Missing or duplicate current identities fail publication.
+The reader chronology-keyword report is a non-normative textual-cue inventory,
+not an evidence verdict or a requirement to rewrite scholarly prose.
 
 ## GENERATED (never hand-edit; rebuilt by `adjudicate.py --refresh`)
 

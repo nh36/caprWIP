@@ -17,9 +17,9 @@ the fuller historical treatment in the handbooks.
 ## SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope}
 
 ```foma
-define OEHeavySyllableNasalApocope [
+define OEHeavySyllableNasalApocope Ctx([
     {*ą} -> 0 || OEAnyConsonant _ .#.
-];
+]);
 ```
 
 The old lower-bound test depended on the superseded straw proxy:

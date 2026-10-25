@@ -86,8 +86,9 @@ The CAPR rules implemented in this chapter carry names beginning with `PGmc`.
 Those names are intended as stable internal identifiers, not as claims about
 the precise historical stage of every rule so labelled. A rule named `PGmcX`
 may in some cases be a later development that affects only the West Germanic
-or Northwest Germanic branch; the chapter assignment in this staging map takes
-priority over the rule-name prefix for historical organization purposes.
+or Northwest Germanic branch. Each entry's source-supported historical
+analysis takes priority over both its identifier and its chapter placement;
+the latter follows executable order, not an independent historical-stage map.
 
 
 ## Proto-Germanic loss of a nasal before \emph{*x}
@@ -126,18 +127,20 @@ the northernmost West Germanic dialects [@Ringe2017, pp. 149--150, §3.2.7].
 That rounding is a separate and much later change, and it is treated in the
 chapter on the rounding of the long nasalized low vowel.
 
-### \CAPRRuleHeading{SC103. Proto-Germanic nasal loss before \*x}{PGmcNasalLossBeforeX} {#rule-PGmcNasalLossBeforeX}
+### SC103. Proto-Germanic nasal loss before \emph{*x} (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX}
 
 ```foma
 define PGmcNasalLossBeforeX Ctx([
-    {*a} -> {*ą̄} || _ EnglishStarNasal {*x},
+    [
+    {*a} -> {*ã} || _ EnglishStarNasal {*x},
     {*i} -> {*ī} || _ EnglishStarNasal {*x},
     {*u} -> {*ū} || _ EnglishStarNasal {*x},
-    {*á} -> {*ą̄} || _ EnglishStarNasal {*x},
+    {*á} -> {*ã} || _ EnglishStarNasal {*x},
     {*í} -> {*ī} || _ EnglishStarNasal {*x},
     {*ú} -> {*ū} || _ EnglishStarNasal {*x}
 ] .o. [
     EnglishStarNasal -> 0 || _ {*x}
+]
 ]);
 ```
 
@@ -147,7 +150,10 @@ conditioning nasal. The low vowel is written [ą̄]{.recon} and the high vowels 
 written [ī]{.recon} and [ū]{.recon}, because the nasality of the high vowels has
 no further consequence: they go on to develop exactly as the inherited long
 [ī]{.recon} and [ū]{.recon} do [@Campbell1959, p. 47, §121]. The nasality of the
-low vowel is carried forward because its later fate depends on it.
+low vowel is carried forward because its later fate depends on it. In the
+executable definitions, `ã` is the single-symbol encoding of long nasalized
+\emph{*ą̄}, not a different or short vowel. The historical notation in the
+discussion retains its explicit length mark.
 
 The corpus witnesses both branches of the rule. The high branch is
 [fúnxstiz]{.recon} ‘fist’, which becomes [fū́xsti]{.recon} ‘fist’ and, after the loss of
@@ -192,15 +198,13 @@ may be grouped broadly as follows:
 
 Northwest Germanic innovations (shared by both North and West Germanic):
 innovations in the unstressed vowel system, certain final-syllable vowel changes,
-and selected consonant cluster simplifications. Changes labelled `NWGmc` in the
-CAPR rule names fall here, though rule prefixes are not always reliable guides to
-historical scope.
+and selected consonant cluster simplifications. Their historical scope must
+be established from comparative evidence, not from executable identifiers.
 
 Proto-West-Germanic innovations (shared within West Germanic but not in
 North Germanic): the cluster of morphological and phonological changes that
 distinguish Old English, Old High German, Old Saxon, and Old Frisian from Old
-Norse. Changes labelled `PWGmc` in the CAPR rule names generally fall here.
-They include early apocope rules, certain consonant assimilations, and the
+Norse. They include early apocope rules, certain consonant assimilations, and the
 West Germanic gemination of consonants before `*j`.
 
 ## Major changes
@@ -222,7 +226,7 @@ questionable claim of a single completed Proto-Northwest Germanic event
 [@RingeTaylor2014, pp. 25--26]. The stressed monophthongization is treated
 separately under [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization).
 
-The adjacent [SC015 PNWGmcILowering](#rule-PNWGmcILowering) concerns
+The later [SC015 PNWGmcILowering](#rule-PNWGmcILowering) concerns
 stressed first-syllable \emph{*i}, not further unstressed-vowel reduction.
 Its following-vowel hypothesis has traditional authority, but its
 comparative regularity and precise consonantal conditioning remain
@@ -266,8 +270,9 @@ splits this into two ordered steps to make the vowel effect computationally
 tractable; the book prose explains that split against the handbook tradition,
 which typically presents the change as a single process.
 
-Chapters in this part of the book follow the executable cascade order, which
-models the reconstructed chronology itself. Several rules that carry `PWGmc`
+Chapters in this part of the book follow the executable reconstruction's
+adopted serialization, not an independently demonstrated total historical
+chronology. Several rules that carry `PWGmc`
 labels — final bare-`*a` loss (SC041), surviving bimoric `*ō` unrounding
 (SC042), and Sievers-law syncope (SC050) — execute later in the cascade and
 are therefore presented in Chapter 4, where their individual sections discuss
@@ -275,15 +280,6 @@ their historical stage labels. Conversely, one rule with a West Saxon label,
 the palatal-glide rule (SC016), is an orthographic rule of the written surface:
 it executes after the Old English orthography stage and is presented in
 Chapter 5.
-
-One historically Proto-Germanic change, Gm-simplification
-(`SC002 PGmcGmSimplification`), precedes everything in this chapter as a
-support stage of the cascade. It is documented in the book-entry plan and
-its literature dossier confirms the source base is narrow (two lexical
-families: [draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and
-[taugma-]{.recon .iv lang=pgmc sort=taugma} 'team'; [@Kroonen2013, pp. 101, 511]).
-A reader-facing section for SC002 awaits a stronger explanatory source base
-and is not yet assembled in the reader-facing sequence.
 
 ## A note on source terminology and subgrouping
 
@@ -326,8 +322,9 @@ These two developments affect different parts of the vowel system.
 [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization)
 monophthongizes unstressed \emph{*ai};
 [SC015 PNWGmcILowering](#rule-PNWGmcILowering) represents the disputed lowering
-of stressed short \emph{*i}. Their grouping here does not identify them as
-successive stages of unstressed-vowel reduction.
+of stressed short \emph{*i}. This thematic comparison does not make their
+separated rule sections adjacent or identify them as successive stages of
+unstressed-vowel reduction.
 
 
 ## Root-noun nominative \emph{*-z} loss
@@ -347,10 +344,9 @@ This change is distinct from the two later final-\emph{*z} developments. It was 
 ### SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss}
 
 ```foma
-define RootNounNomZLoss Ctx([{*z} -> 0 ||
-    .#. [EnglishStarConsonant | EnglishPalatalConsonant]*
-        EnglishStarVocalic+
-        [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]);
+define RootNounNomZLoss Ctx([
+    [{*z} -> 0 || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]
+]);
 ```
 
 The rule deletes word-final \emph{*z} after a consonant in a monosyllable. Three claims of different kinds meet here and must be kept apart. The historical claim is morphological: the nominative-singular ending was lost in the athematic root-noun class, so that this one paradigm cell came to lack its marker — a development complete before Proto-West Germanic [@RingeTaylor2014, p. 118, §3.4]. The lexical claim belongs to the dictionaries: Orel's citation forms, which supply the corpus inputs, print that marker explicitly as \emph{-z} in \emph{*bōkz}, \emph{*flauxz}, \emph{*ǥansz}, and \emph{*lūsz} [@Orel2003, pp. 52, 105, 126, 252]. The executable statement is neither of these but a computational proxy for them: 'delete word-final \emph{*z} after a consonant in a monosyllable'. It is not proposed as a Proto-Germanic sound law; it earns its place only because every form the corpus submits to the morphological development is a consonant-final monosyllable, so the narrow phonological statement covers the class exactly. Four corpus derivations witness the rule, each yielding its expected Old English outcome: PGmc [bōkz]{.recon} 'book' yields OE *bōc* 'book', [gánsz]{.recon} 'goose' yields *gōs* 'goose', [lūsz]{.recon} 'louse' yields *lūs* 'louse', and [fláuxz]{.recon} 'flea' yields *flēah* 'flea'. Should the corpus ever acquire a consonant-final monosyllable in \emph{*-z} that is not a root-noun nominative, the proxy and the morphology would come apart, and the rule would need to be re-scoped; the project's regression tests pin the firing population to exactly these four words so that any fifth firing forces that adjudication rather than passing silently.
@@ -377,7 +373,9 @@ to \emph{*ā} is treated separately as
 
 ```foma
 define PNWGmcUnstressedAiMonophthongization Ctx([
+    [
     {*ai} -> {*ē}
+]
 ]);
 ```
 
@@ -396,7 +394,9 @@ Final \emph{*m} conditions the raising.
 
 ```foma
 define PNWGmcAToUBeforeM Ctx([
+    [
     {*a} -> {*u} || EnglishStarVocalic EnglishStarConsonant+ _ {*m} ({*i})? ({*z})? .#.
+]
 ]);
 ```
 
@@ -410,13 +410,15 @@ Proto-Germanic \emph{*ē₁} (the long mid vowel of PIE origin, as against the l
 
 The change affected stressed syllables only. Ringe and Taylor restrict it explicitly: unstressed \emph{*ē} did not lower but was eventually shortened, as in \emph{*fadēr} > \emph{*fader} 'father' [@RingeTaylor2014, p. 13, and p. 147]; in the runic material the unstressed final vowel of *faþiR* 'father' has already merged with \emph{*-i} [@Stiles2017, p. 4]. Within stressed syllables, however, the lowering was unconditioned: it applied before nasals exactly as elsewhere, and Ringe and Taylor accordingly print the intermediates \emph{*mānō} 'moon', \emph{*mānōþ-} 'month', and \emph{*spānuz} 'spoon' [@RingeTaylor2014, p. 11]. The later, dialectally narrower fates of this \emph{*ā} — fronting in the North Sea area when oral, rounding when nasalized — are separate sound changes treated in their own chapters.
 
-The reconstruction of the intermediate value is disputed. The objection is an old one: Bennett observed that the received account obliges Gothic to move \emph{ē} to \emph{ǣ} and back to \emph{ē}, and the non-West-Saxon dialects and Old Frisian to run through \emph{ē > ǣ > ā > ǣ > ē}, "with no apparent agreement among the languages and no discernible phonological trend", and that the Proto-Germanic \emph{ǣ} is on that account preserved directly nowhere [@Bennett1950, pp. 232--233, 235]. In its place he proposed that the backing to \emph{ā} began in the north of the Germanic homeland and spread southward, never reaching Gothic in the east or Anglian and Frisian in the west, so that West Saxon \emph{ǣ} is a retention of the intermediate stage rather than a re-fronting [@Bennett1950, pp. 234--235]. Fulk argues in the same direction on modern evidence: the Northwest Germanic vowel was a low front \emph{*ǣ}, retained unchanged in Anglo-Frisian, with the backing to \emph{ā} of Norse and inner West Germanic a separate areal development spreading northward from Upper German territory; on that reading the runic ⟨a⟩ spellings write a front [æː] for which the futhark had no better grapheme [@Fulk2018, pp. 60--61, §4.6]. Campbell is deliberately noncommittal, finding the \emph{*ā} stage "tempting to assume, though not definitely demonstrable" [@Campbell1959, pp. 50--51, §§128--129]. Ringe and Taylor answer with the lengthened place-adverbs *þǣr* 'there' and *hwǣr* 'where', whose front vowels are most naturally the output of fronting applied to a back \emph{*ā} [@RingeTaylor2014, pp. 13--14]. The present model adopts the two-step reconstruction while recording that the alternative remains live. Campbell is deliberately noncommittal, finding the \emph{*ā} stage "tempting to assume, though not definitely demonstrable" [@Campbell1959, pp. 50--51, §§128--129]. Ringe and Taylor answer with the lengthened place-adverbs *þǣr* 'there' and *hwǣr* 'where', whose front vowels are most naturally the output of fronting applied to a back \emph{*ā} [@RingeTaylor2014, pp. 13--14]. The present model adopts the two-step reconstruction while recording that the alternative remains live.
+The reconstruction of the intermediate value is disputed. The objection is an old one: Bennett observed that the received account obliges Gothic to move \emph{ē} to \emph{ǣ} and back to \emph{ē}, and the non-West-Saxon dialects and Old Frisian to run through \emph{ē > ǣ > ā > ǣ > ē}, "with no apparent agreement among the languages and no discernible phonological trend", and that the Proto-Germanic \emph{ǣ} is on that account preserved directly nowhere [@Bennett1950, pp. 232--233, 235]. In its place he proposed that the backing to \emph{ā} began in the north of the Germanic homeland and spread southward, never reaching Gothic in the east or Anglian and Frisian in the west, so that West Saxon \emph{ǣ} is a retention of the intermediate stage rather than a re-fronting [@Bennett1950, pp. 234--235]. Fulk argues in the same direction on modern evidence: the Northwest Germanic vowel was a low front \emph{*ǣ}, retained unchanged in Anglo-Frisian, with the backing to \emph{ā} of Norse and inner West Germanic a separate areal development spreading northward from Upper German territory; on that reading the runic ⟨a⟩ spellings write a front [æː] for which the futhark had no better grapheme [@Fulk2018, pp. 60--61, §4.6]. Campbell is deliberately noncommittal, finding the \emph{*ā} stage "tempting to assume, though not definitely demonstrable" [@Campbell1959, pp. 50--51, §§128--129]. Ringe and Taylor answer with the lengthened place-adverbs *þǣr* 'there' and *hwǣr* 'where', whose front vowels are most naturally the output of fronting applied to a back \emph{*ā} [@RingeTaylor2014, pp. 13--14]. The present model adopts the two-step reconstruction while recording that the alternative remains live.
 
 ### SC024. Lowering of stressed long \emph{ē} (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering}
 
 ```foma
 define PNWGmcLongELowering Ctx([
+    [
     {*ḗ} -> {*ā}
+]
 ]);
 ```
 
@@ -436,8 +438,10 @@ The ending vowel disappears in a weak suffixal environment early enough to block
 
 ```foma
 define PWGmcEarlyIApocope Ctx([
+    [
     {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ .#.,
     {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ {*z} .#.
+]
 ]);
 ```
 
@@ -458,7 +462,9 @@ No broader environment for \emph{*ō} is attested.
 
 ```foma
 define PWGmcFinalOrLowering Ctx([
+    [
     {*ō} -> {*a} || _ {*r} .#.
+]
 ]);
 ```
 
@@ -478,8 +484,10 @@ The historical support rests on a small witness set. Both coronal inputs assimil
 
 ```foma
 define PWGmcCoronalWAssimilation Ctx([
+    [
     {*d} -> {*w} || _ {*w},
     {*z} -> {*w} || _ {*w}
+]
 ]);
 ```
 
@@ -521,6 +529,7 @@ is not changed here ([@RingeTaylor2014, pp. 65--66; @Fulk2018, p. 117]).
 
 ```foma
 define OEWWSimplification Ctx([
+    [
     {*a} {*w} {*w} -> {*au} {*w},
     {*á} {*w} {*w} -> {*áu} {*w},
     {*e} {*w} {*w} -> {*eu} {*w},
@@ -529,6 +538,7 @@ define OEWWSimplification Ctx([
     {*í} {*w} {*w} -> {*íu} {*w},
     {*u} {*w} {*w} -> {*ū} {*w},
     {*ú} {*w} {*w} -> {*ū} {*w}
+]
 ]);
 ```
 
@@ -570,8 +580,11 @@ The change concerns a rare sequence attested only in the \emph{*frijōnd-} etymo
 
 ```foma
 define PWGmcIjContraction Ctx([
+    [
     {*i} {*j} {*ō} -> {*iu} || _ EnglishStarConsonant,
+    # Stressed variant (stress preserved):
     {*í} {*j} {*ō} -> {*íu} || _ EnglishStarConsonant
+]
 ]);
 ```
 
@@ -591,6 +604,7 @@ The change applies specifically after a short vowel before \emph{*j}, not to gem
 
 ```foma
 define PWGmcJGemination Ctx([
+    [
     {*p} -> {*p} {*p} || EnglishStarShortVowel _ {*j},
     {*b} -> {*b} {*b} || EnglishStarShortVowel _ {*j},
     {*t} -> {*t} {*t} || EnglishStarShortVowel _ {*j},
@@ -603,7 +617,16 @@ define PWGmcJGemination Ctx([
     {*n} -> {*n} {*n} || EnglishStarShortVowel _ {*j},
     {*l} -> {*l} {*l} || EnglishStarShortVowel _ {*j},
     {*ŋ} -> {*ŋ} {*ŋ} || EnglishStarShortVowel _ {*j},
-    {*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j}
+    {*x} -> {*x} {*x} || EnglishStarShortVowel _ {*j},
+    # *w is an ordinary member of the same law. Campbell §407 p. 167:
+    # "every consonant except r being affected after short syllables...
+    # The forms in which w is doubled are dealt with in §120.2."
+    # Ringe & Taylor p. 53: "it appears that that cluster too underwent
+    # gemination in PWGmc." The geminate this creates is the input that
+    # SC029 later resolves. Fulk §4.10 n. 1 dissents; see
+    # audits/sc010-w-gemination-and-hay-depth-adjudication.md.
+    {*w} -> {*w} {*w} || EnglishStarShortVowel _ {*j}
+]
 ]);
 ```
 
@@ -625,8 +648,10 @@ not high-vowel vocalization generally.
 
 ```foma
 define PWGmcSyllabicJ Ctx([
+    [
     {*j} {*a} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.,
     {*j} {*ą} -> {*i} || EnglishStarShortVowel EnglishStarConsonant _ .#.
+]
 ]);
 ```
 
@@ -729,7 +754,9 @@ Gothic *bi-niuhsjan* ‘to spy out’ and *saihsta* instead.
 
 ```foma
 define PNWGmcPreconsonantalXLoss Ctx([
+    [
     {*x} -> 0 || _ {*s} EnglishStarConsonant
+]
 ]);
 ```
 
@@ -758,7 +785,9 @@ Germanic, not as an unqualified pan-PWGmc development.
 
 ```foma
 define EAFLThVoicing Ctx([
+    [
     {*θ} -> {*d} || {*l} _
+]
 ]);
 ```
 
@@ -779,7 +808,9 @@ lexical family.
 
 ```foma
 define PWGmcDentalHardening Ctx([
+    [
     {*ð} -> {*d}
+]
 ]);
 ```
 
@@ -1377,7 +1408,9 @@ Its input is final \emph{*ō} in a stressed monosyllable.
 
 ```foma
 define PNWGmcStressedMonosyllableORaising Ctx([
+    [
     {*ō} -> {*ū} || .#. [EnglishStarConsonant | EnglishPalatalConsonant]* _ .#.
+]
 ]);
 ```
 
@@ -1796,10 +1829,10 @@ Bammesberger gives the standard Old English–facing summary: `*z` yielded `*r` 
 intervocalic position but was generally lost in final position
 [@Bammesberger1992, p. 39].
 
-The CAPR rule is named `EAFRhotacism`, placing it in the Early Anglo-Frisian
-corridor, CAPR's operational post-Proto-West-Germanic stage on the English line;
-the reader-facing chapter label describes the change as a West Germanic
-rhotacism.
+The executable identifier `EAFRhotacism` is retained for stability, not as
+independent evidence of historical stage or scope. The preceding source
+discussion motivates the post-Proto-West-Germanic account; the chapter's
+placement follows the adopted executable sequence.
 
 ### Word-final `*z` deletion (SC020) and the three final-`*z` developments
 
@@ -1824,9 +1857,10 @@ The CAPR rule for the unstressed loss is still named `EAFFinalZDeletion`,
 an identifier that predates the restaging of the change to Proto-West
 Germanic; the name is retained as a stable identifier pending a global
 renaming pass, and the historical stage recorded in the staging metadata
-takes priority over the name prefix. SC020 remains presented in this
-chapter, beside rhotacism, because the two changes jointly determine the
-fate of every remaining `*z`.
+takes priority over the name prefix. SC020 and rhotacism jointly account for
+the fate of the remaining `*z`, but their sections are separated by
+intervening executable stages. Their thematic connection does not determine
+their publication positions.
 
 ### Completed English ai contraction (SC004, treated in Chapter 4)
 
@@ -1927,13 +1961,11 @@ At the boundary with Chapter 2's Northwest Germanic sequence, the derivation of 
 ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion}
 
 ```foma
-define EAFFinalZDeletion Ctx([{*z} -> 0 ||
-    .#. ?* EnglishStarVocalic
-        [EnglishStarConsonant | EnglishPalatalConsonant]+
-        EnglishStarVocalic ?* _ .#.,
-    .#. [EnglishStarConsonant | EnglishPalatalConsonant]*
-        EnglishStarVocalic+
-        [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]);
+define EAFFinalZDeletion Ctx([
+    [{*z} -> 0 ||
+    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,
+    .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]
+]);
 ```
 
 The rule deletes word-final \emph{*z} in unstressed syllables, stated through two environments. The first clause covers polysyllables, where the final syllable of these corpus forms is unstressed: this is the ordinary case, with 110 corpus derivations, such as PGmc [bárdaz]{.recon} 'beard' on its way to OE *beard* 'beard' and [rástōz]{.recon} 'rest' on its way to *ræste* 'rest'. The second clause covers post-consonantal \emph{*z} in monosyllables. By the time this rule runs, [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss) has already removed the genuine root-noun nominative endings, so the only form reaching the second clause is [fríjōndz]{.recon} 'friend', contracted to monosyllabic \emph{*fríundz} by [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction); its ending, like that of \emph{*fadurz}, stood in an unstressed syllable when the Proto-West Germanic change applied and so belongs here rather than to the root-noun development [@RingeTaylor2014, pp. 44--45, §3.1.1]. Stressed monosyllables ending in vowel plus \emph{*z} meet neither clause and are left for [SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss).
@@ -2228,10 +2260,12 @@ statement, not evidence for two successive historical stages.
 
 ```foma
 define EAFNasalSpirantLengthening [
-    {*a} -> {*ą̄} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    {*a} -> {*ã} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*i} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*u} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
-    {*á} -> {*ą̄} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
+    # Stressed variants (*á -> *ã: stress absorbed into length, no stressed
+    # long low tier exists):
+    {*á} -> {*ã} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*í} -> {*ī} || _ EnglishStarNasal EnglishStarNSGmcSpirant,
     {*ú} -> {*ū} || _ EnglishStarNasal EnglishStarNSGmcSpirant
 ];
@@ -2261,11 +2295,12 @@ Brunner note the same course in *beraþ* ‘they carry’ from [beranþi]{.recon
 through [berōþ]{.recon} ‘they carry’ [@SieversBrunner1965, p. 176, §186.1 Anm. 3;
 @Luick1914, p. 276, §301.1].
 
-If the rule is stated after the loss of the nasal, PGmc [gánsz]{.recon} ‘goose’ yields
-[*ġeas*]{.pred} in place of *gōs* ‘goose’, and PGmc [júgunθ]{.recon} ‘youth’ yields
-[*ġeogoþ*]{.pred} in place of *ġeoguþ* ‘youth’. This shows only that the vowel must be
-adjusted before its conditioning nasal is removed. It does not establish a date
-for either operation, and no earlier or later boundary is claimed here.
+If lengthening is stated after the loss of the nasal, it can no longer read
+its conditioning environment. The vowel must therefore be adjusted before
+that nasal is removed. This is an executable dependency within the
+statement of one historical change, not a date for either component.
+The earlier experiment's youth output also depended on the retired early
+glide-insertion architecture; it is not a current historical boundary.
 
 ## Nasal-spirant loss
 
@@ -2349,7 +2384,7 @@ order the two branches against each other, and no such ordering is claimed here.
 
 ```foma
 define EAFLongANasalRounding [
-    {*ā} -> {*ą̄} || _ EnglishStarNasal
+    {*ā} -> {*ã} || _ EnglishStarNasal
 ];
 ```
 
@@ -2431,7 +2466,7 @@ vowel developed to *ō* and did not fall together with Old English *ā* from
 
 ```foma
 define EAFNasalizedLowRounding [
-    {*ą̄} -> {*ō}
+    {*ã} -> {*ō}
 ];
 ```
 
@@ -2545,7 +2580,8 @@ runic interpretation qualifications explicit
 
 Early Old English changes linked to the Anglo-Frisian inheritance:
 Changes that feed directly on, or are closely related to, Anglo-Frisian
-brightening (SC043), whose section opens the vowel corridor of this chapter.
+brightening (SC043), whose section follows the earlier vowel developments
+at its adopted executable position in this chapter.
 The \emph{*awj} resolution, \emph{*au} fronting and diphthong operations
 currently execute before ordinary-a brightening. They cannot be described as
 consuming its output. Their histories combine earlier glide reanalysis with
@@ -3060,9 +3096,9 @@ is the separate earlier change
 ### SC004. English stressed ai contraction (`EAFAiMonophthongization`) {#rule-EAFAiMonophthongization}
 
 ```foma
-define EAFAiMonophthongization [
+define EAFAiMonophthongization Ctx([
     {*ái} -> {*ā}
-];
+]);
 ```
 
 The soul form fixes the relation to interstress raising. If the monophthongization is delayed until after that change, PGmc [sáiwalō]{.recon} 'soul' yields [*sāwel*]{.pred} rather than expected OE *sāwol* 'soul'. An earlier placement changes no output. This shows that [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising) in the modeled sequence.
@@ -3127,10 +3163,10 @@ disagreement concerns whether a discrete change took place.
 ### SC029. Resolution of \emph{*awj} to \emph{*auj} (`OEAwwjResolution`) {#rule-OEAwwjResolution}
 
 ```foma
-define OEAwwjResolution [
+define OEAwwjResolution Ctx([
     {*á} {*w} {*w} {*j} -> {*áu} {*j},
     {*a} {*w} {*w} {*j} -> {*au} {*j}
-];
+]);
 ```
 
 The change is confined to the \emph{*a} type. PGmc [xáwją]{.recon} ‘hay’ is
@@ -3185,10 +3221,10 @@ Old Frisian *gāk* ‘cuckoo’ has none [@Fulk2018, p. 73, §4.12]. Brightening
 ### SC030. Brightening of \emph{*au} to \emph{*æu} (`OEAuBrightening`) {#rule-OEAuBrightening}
 
 ```foma
-define OEAuBrightening [
+define OEAuBrightening Ctx([
     {*au} -> {*aeu},
     {*áu} -> {*áeu}
-];
+]);
 ```
 
 Most of the words that pass through the change carry \emph{*au} inherited
@@ -3262,10 +3298,10 @@ implements the regular singleton history
 ### SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong}
 
 ```foma
-define OEEwLongDiphthong [
+define OEEwLongDiphthong Ctx([
     {*i} {*w} {*w} -> {*iu} {*w} || _ {*j},
     {*í} {*w} {*w} -> {*íu} {*w} || _ {*j}
-];
+]);
 ```
 
 *Hīew* 'hue' enters with inherited PGmc \emph{*xíwją}, following
@@ -3298,9 +3334,9 @@ date or independent confidence is fabricated for this support encoding.
 ### \CAPRRuleHeading{SC106. Retained j-created glide compatibility}{OEJWWSimplification} {#rule-OEJWWSimplification}
 
 ```foma
-define OEJWWSimplification [
+define OEJWWSimplification Ctx([
     {*w} {*w} -> {*w} || _ {*j}
-];
+]);
 ```
 
 The unchanged technical operation remains composed for compatibility.
@@ -3315,9 +3351,9 @@ earlier inherited short-Vww reanalysis.
 ### SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO}
 
 ```foma
-define OEJGlideIO [
+define OEJGlideIO Ctx([
     [{*iu}|{*íu}] -> {*īo} || _ {*w} {*j}
-];
+]);
 ```
 
 The palatalized-glide product realizes long \emph{īo}, not the
@@ -3374,17 +3410,18 @@ glide reanalysis are also distinct origins
 ### \CAPRRuleHeading{SC032. Quantity-distinct diphthong realization}{OEDiphthongLeveling} {#rule-OEDiphthongLeveling}
 
 ```foma
-define OEDiphthongLeveling [
+define OEDiphthongLeveling Ctx([
     {*aeu} -> {*ēa},
     {*áeu} -> {*ēa},
     {*eu} -> {*ēo},
     {*éu} -> {*ēo},
     {*iu} -> {*ēo},
     {*íu} -> {*ēo},
+    # Split symbols from palatal glide (stress preserved where present):
     {*e} {*u} -> {*eo},
     {*é} {*u} -> {*éo},
     {*i} {*u} -> {*eo}
-];
+]);
 ```
 
 The retained definition is a compound realization proxy. Its atomic
@@ -3483,10 +3520,11 @@ established general singleton sound law or a newly dated West Saxon event.
 ### SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong}
 
 ```foma
-define OEAwLongDiphthong [
+define OEAwLongDiphthong Ctx([
     {*a} {*w} -> {*ēa} {*w} || _ [EnglishStarVocalic | {*ô}],
+    # Stressed variant (prosodic tier):
     {*á} {*w} -> {*ḗa} {*w} || _ [EnglishStarVocalic | {*ô}]
-];
+]);
 ```
 
 The current operation changes the show infinitive, imperative singular
@@ -3513,12 +3551,18 @@ The rule changes the vowel between stronger stress peaks, and its witnesses cons
 ### \CAPRRuleHeading{SC036. Raising of medial \emph{*a} between stress peaks}{OEInterStressRaising} {#rule-OEInterStressRaising}
 
 ```foma
-define OEInterStressRaising [
-    {*a} -> {*u}
-        || PGmcStarVowel EnglishStarConsonant* _
-           [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
+define OEInterStressRaising Ctx([
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
+    # DEV_NOTES §16.6: Nebenton-conditioned raising of compound
+    # second-element root *a. Luick §306, Brunner §402, R/T vol.2
+    # §6.3.3 p.200-202: short *a in the trough between primary
+    # stress and a weak/lost secondary stress raises to *u. The
+    # grave-a itself is the prosodic conditioning marker; no
+    # right-context is required — the compound-internal prosodic
+    # position is encoded directly in the PROTOFORM.
+    # Example: *wír-àldu → *wír-uldu → (u-lowering) → weorold.
     {*à} -> {*u}
-];
+]);
 ```
 
 The two boundaries have unequal force. Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [sáiwalō]{.recon} ‘soul’ yields [*sāwel*]{.pred} rather than expected OE *sāwol* ‘soul’; after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), it yields [*sāwul*]{.pred} rather than *sāwol*, while PGmc [wír-àldu]{.recon} ‘world’ yields [*weoruld*]{.pred} rather than *weorold* ‘world’. The distant lower boundary places inter-stress raising after final long-\emph{o} raising, and the local upper boundary places it before medial unstressed-\emph{u} lowering. In handbook terms, medial \emph{*a} > \emph{*u} belongs to the \emph{world}- and \emph{soul}-type low-stress vocalism that followed the earlier final-vowel changes.
@@ -3537,11 +3581,10 @@ sound change.
 ### \CAPRRuleHeading{SC037. Syncope of compound linking vowels}{OECompoundLinkingSyncope} {#rule-OECompoundLinkingSyncope}
 
 ```foma
-define OECompoundLinkingSyncope [
+define OECompoundLinkingSyncope Ctx([
     [{*a}|{*i}|{*u}] -> 0
-        || PGmcStarAcuteVowel OEAnyConsonant+ _
-           OEAnyConsonant+ PGmcStarGraveVowel
-];
+        || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
+]);
 ```
 
 The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc [régna-bùgô]{.recon} ‘rainbow’ yields [*reġnefoga*]{.pred} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
@@ -3567,13 +3610,12 @@ Initial \emph{w} conditions the first change.
 ### SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut}
 
 ```foma
-define OEWICombinativeUUmlaut [
-    {*í} -> {*ú}
-        || .#. {*w} _ EnglishStarConsonant [{*u} | {*o}]
-];
+define OEWICombinativeUUmlaut Ctx([
+    {*í} -> {*ú} || .#. {*w} _ EnglishStarConsonant [{*u} | {*o}]
+]);
 ```
 
-The *wuduwe* ‘widow’ derivation answers one narrow question about \emph{wi}-forms. If [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) follows [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [wíduwōn]{.recon} ‘widow’ yields [*wudowe*]{.pred} rather than expected OE *wuduwe*; earlier placement changes no output. The witness requires combinative u-umlaut to precede medial lowering and supplies no lower boundary.
+The *wuduwe* ‘widow’ derivation answers one narrow question about \emph{wi}-forms. If [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [wíduwōn]{.recon} ‘widow’ yields [*wudowe*]{.pred} rather than expected OE *wuduwe*. This one-sided witness requires combinative u-umlaut to precede medial lowering and supplies no lower boundary.
 
 ## Final bare-\emph{a} loss
 
@@ -3587,9 +3629,9 @@ precedes restoration, which depends on the environment left by the loss.
 ### SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss}
 
 ```foma
-define PWGmcFinalBareALoss [
+define PWGmcFinalBareALoss Ctx([
     {*a} -> 0 || _ .#.
-];
+]);
 ```
 
 The two sides of final bare-\emph{a} loss rest on different evidence. Applied before final \emph{z}-deletion, the change gives the wrong outputs: PGmc [bárdaz]{.recon} ‘beard’ yields [*bearda*]{.pred} rather than expected OE *beard* ‘beard’, and PGmc [kámbaz]{.recon} ‘comb’ yields [*camba*]{.pred} rather than expected *camb* ‘comb’. Applied after restoration, PGmc [kráftaz]{.recon} ‘craft’ yields [*craft*]{.pred} rather than expected OE *cræft* ‘craft’, and PGmc [dágaz]{.recon} ‘day’ yields [*dag*]{.pred} rather than expected *dæġ* ‘day’. The distant lower limit follows final \emph{z}-loss; the local feeding relation precedes restoration, which requires the environment created by the vowel loss.
@@ -3612,9 +3654,9 @@ The sole witness establishes a local relation to brightening but supports no bro
 ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding}
 
 ```foma
-define PWGmcSurvivingBimoricOUnrounding [
+define PWGmcSurvivingBimoricOUnrounding Ctx([
     {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
-];
+]);
 ```
 
 The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
@@ -3624,9 +3666,9 @@ The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emp
 ### \CAPRRuleHeading{SC107. Retained unstressed contribution}{EAFBrighteningUnstressed} {#rule-EAFBrighteningUnstressed}
 
 ```foma
-define EAFBrighteningUnstressed [
+define EAFBrighteningUnstressed Ctx([
     {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal]
-];
+]);
 ```
 
 This earlier contribution is preserved without identifying it with the
@@ -3668,9 +3710,9 @@ not independent evidence for a historical long-vowel fronting
 ### \CAPRRuleHeading{SC043. Fronting of low \emph{*a} outside nasal environments}{EAFBrightening} {#rule-EAFBrightening}
 
 ```foma
-define EAFBrightening [
+define EAFBrightening Ctx([
     EAFBrighteningStressed
-];
+]);
 ```
 
 #### Stressed component
@@ -3693,9 +3735,9 @@ be used to date this stressed rule.
 ### \CAPRRuleHeading{SC108. Retained final-vowel representation}{EAFBrighteningLongFinal} {#rule-EAFBrighteningLongFinal}
 
 ```foma
-define EAFBrighteningLongFinal [
+define EAFBrighteningLongFinal Ctx([
     {*ā} -> {*ǣ} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
-];
+]);
 ```
 
 In *ræste* ‘rest’, this helper receives the length-preserved outcome of
@@ -3724,9 +3766,9 @@ they do not subsequently undergo velar-fricative palatalization.
 ### SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking}
 
 ```foma
-define OEBreaking OEBreakingA
+define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
-    .o. OEBreakingI;
+    .o. OEBreakingI);
 ```
 
 Short \emph{e} and \emph{i} also develop short \emph{eo} and
@@ -3764,12 +3806,12 @@ applications.
 ### \CAPRRuleHeading{SC045. Palatalization of velar fricatives beside front vowels}{OEVelarFricativePalatalization} {#rule-OEVelarFricativePalatalization}
 
 ```foma
-define OEVelarFricativePalatalization [
+define OEVelarFricativePalatalization Ctx([
     {*x} -> {*ç} || _ EnglishStarFrontVowel,
     {*x} -> {*ç} || EnglishStarFrontVowel _,
     {*x} -> {*ç} || _ {*j}
 ]
-    .o. EnglishStarAlphabet*;
+    .o. EnglishStarAlphabet*);
 ```
 
 The live population concerns voiceless x, as in *hēafod* 'head' and
@@ -3800,11 +3842,11 @@ Campbell's restoration of \emph{a} before following back vowels and Ringe and Ta
 ### \CAPRRuleHeading{SC046. Restoration of \emph{*a} before following back vowels}{OEARestoration} {#rule-OEARestoration}
 
 ```foma
-define OEARestoration (
+define OEARestoration FootCtx((
     {*æ} -> {*a} || _
         OEARestorationIntervening OEARestorationTriggerVowel
         - OEARestorationIntervening OEARestorationWeakTailVowel
-);
+));
 ```
 
 Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasal-tail changes. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [bákaną]{.recon} ‘bake’ yields [*bæcan*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc [fáraną]{.recon} ‘fare’ yields [*færan*]{.pred} rather than expected *faran* ‘fare’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), [bákaną]{.recon} again yields [*bæcan*]{.pred} instead of *bacan*, while PGmc [wádaną]{.recon} ‘wade’ yields [*wædan*]{.pred} instead of *wadan* ‘wade’. These independent witness pairs place restoration after brightening and before secondary nasalization.
@@ -3828,9 +3870,9 @@ the fuller historical treatment in the handbooks.
 ### \CAPRRuleHeading{SC047. Heavy-syllable nasal apocope of final \emph{*ą}}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope}
 
 ```foma
-define OEHeavySyllableNasalApocope [
+define OEHeavySyllableNasalApocope Ctx([
     {*ą} -> 0 || OEAnyConsonant _ .#.
-];
+]);
 ```
 
 The old lower-bound test depended on the superseded straw proxy:
@@ -3858,9 +3900,9 @@ That secondary-nasalization dependency is not newly adjudicated here.
 ### \CAPRRuleHeading{SC048. Secondary nasalization before final \emph{*n}}{OESecondaryNasalization} {#rule-OESecondaryNasalization}
 
 ```foma
-define OESecondaryNasalization [
+define OESecondaryNasalization Ctx([
     {*a} -> {*ą} || _ {*n} .#.
-];
+]);
 ```
 
 The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
@@ -3886,12 +3928,12 @@ intermediate rule applications. Its historical stage is Proto-Germanic.
 ### \CAPRRuleHeading{SC049. Distribution of \emph{*b} after vowels and liquids}{PGmcBAllophony} {#rule-PGmcBAllophony}
 
 ```foma
-define PGmcBAllophony [
+define PGmcBAllophony Ctx([
     {*b} -> {*β} || PGmcStarVocalic _,
     {*b} -> {*β} || [{*l} | {*r}] _
 ] .o. [
     {*β} -> {*b} || _ {*b}
-];
+]);
 ```
 
 The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
@@ -3914,9 +3956,9 @@ than that of the preceding allophony rule.
 ### SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope}
 
 ```foma
-define SieversLawSyncope [
+define SieversLawSyncope Ctx([
     {*i} -> 0 || [EnglishStarConsonant | EnglishPalatalConsonant] _ {*j}
-];
+]);
 ```
 
 The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} 'stretch' yields [*strecċan*]{.pred} rather than expected OE *streċċan* 'stretch'; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.
@@ -3947,7 +3989,7 @@ identity between the cluster change and the later umlautal developments.
 ### SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization}
 
 ```foma
-define OESkPalatalization [
+define OESkPalatalization Ctx([
     {*s} {*k} -> {*ʃ} || .#. _
 ] .o. [
     {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.)
@@ -3957,7 +3999,7 @@ define OESkPalatalization [
     {*s} {*k} -> {*ʃ} || _ {*j}
 ] .o. [
     {*s} {*k} -> {*ʃ} || {*j} _
-];
+]);
 ```
 
 The non-fronted vowels of *flasce* ‘flask’ and *wascan* ‘wash’ fix the lower boundary of \emph{*sk} > \emph{*sc}. Before [SC046 OEARestoration](#rule-OEARestoration), the forms are fronted too soon, yielding *flæsce* ‘flask’ and *wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This places [SC051 OESkPalatalization](#rule-OESkPalatalization) after restoration.
@@ -4071,9 +4113,9 @@ geminate-class illustration, *senġan* 'singe' a postnasal control, and
 ### SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
 ```foma
-define OEVelarPalatalization [
+define OEVelarPalatalization Ctx([
     OEGFricativePalatal .o. OEVelarPalatalizationStops
-];
+]);
 ```
 
 The combined operation does not give every class one sharply dated
@@ -4096,7 +4138,7 @@ with velar initial k, versus *dæġe* 'day'.
 | After mutation | \emph{*kǣjæ}, without new initial palatalization | \emph{*dæʝæ}, without æ-raising |
 | After merger and native realization | *cǣġe* | *dæġe* |
 
-Premature merger instead predicts pre-OE [\emph{*dejæ}]{.pred} under
+Premature merger instead predicts pre-OE [dejæ]{.pred} under
 these premises. The experiment tests that source-based contrast; the
 existing day nominative is not the oblique discriminator
 [@Hogg1979, pp. 105--110; @RingeTaylor2014, p. 204].
@@ -4239,9 +4281,9 @@ operation precede it was computational, not a historical date before
 ### SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss}
 
 ```foma
-define OEPostVelarWLoss [
+define OEPostVelarWLoss Ctx([
     {*w} -> 0 || {*n} {*g} _
-];
+]);
 ```
 
 The comparative development `*singwan > singan` establishes narrow post-velar \emph{*w}-loss in the \emph{*ngw} sequence, yielding *singan* ‘sing’. Moving [SC053 OEPostVelarWLoss](#rule-OEPostVelarWLoss) earlier or later leaves every output unchanged. Its pre-umlaut position therefore rests on comparative evidence, while the present lexicon supplies no neighboring boundary.
@@ -4251,9 +4293,9 @@ The comparative development `*singwan > singan` establishes narrow post-velar \e
 ### SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
 
 ```foma
-define OEWLossBeforeI [
+define OEWLossBeforeI Ctx([
     {*w} -> 0 || EnglishStarVocalic _ {*i} .#.
-];
+]);
 ```
 
 The history of *sǣ* ‘sea’ explains why non-initial \emph{*w} disappeared before final unstressed \emph{*i}. Campbell describes the loss, Ringe and Taylor derive the form from \emph{*saiwi-}/\emph{*sawi-}, and Luick gives the parallel trajectory [@Campbell1959, p. 167, §406; @RingeTaylor2014, p. 257, §6.7.1; @Luick1914, p. 173, §187]. Loss of the glide allowed the preceding vowel to undergo the later fronting and lengthening.
@@ -4400,9 +4442,9 @@ agreement alone could not establish the relative chronology.
 ### SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 ```foma
-define OEIUmlaut OEIUmlautFronting
+define OEIUmlaut FootCtx(OEIUmlautFronting
     .o. OEIUmlautRaising
-    .o. OEIUmlautDiphthong;
+    .o. OEIUmlautDiphthong);
 ```
 
 The literature presents fronting, raising, and diphthongal mutation as effects of one historical development. They consequently occupy a single place in the Old English chronology.
@@ -4423,9 +4465,9 @@ serialization, not a date for every historical palatal process.
 ### \CAPRRuleHeading{SC105. Retained late palatal-diphthongization approximation}{OELatePalatalDiphthong} {#rule-OELatePalatalDiphthong}
 
 ```foma
-define OELatePalatalDiphthong [
+define OELatePalatalDiphthong Ctx([
     {*ǣ} -> {*ēa} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]
-];
+]);
 ```
 
 This support operation retains exactly the former postmutation long-vowel
@@ -4451,10 +4493,12 @@ cluster adjustment the status of a major sound law [@Campbell1959, pp. 89,
 ### SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence}
 
 ```foma
-define OEJClusterCoalescence (
+define OEJClusterCoalescence Ctx((
+    # *bj coalescence removed: BAllophony (*b→*β) + JLossAfterHeavy handle
+    # non-geminated *bj; for geminated *bbj, *j is consumed by JLossAfterHeavy.
     [{*g} {*j} -> {*ʤ}]
     .o. [{*k} {*j} -> {*ʧ}]
-);
+));
 ```
 
 The forms *bīeġan* ‘bend’ and *sēċan* ‘seek’ determine the earlier boundary.
@@ -4488,11 +4532,12 @@ mutation from the earlier umlautal changes [@Fulk2018, p. 69, §4.8].
 ### SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
 
 ```foma
-define OEBackMutation [
+define OEBackMutation Ctx([
     {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
     {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+    # Stressed variant (stress preserved on first element):
     {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
-];
+]);
 ```
 
 Three witness forms bracket the chronology. If back mutation precedes
@@ -4520,20 +4565,21 @@ palatal-vowel change [@Campbell1959, pp. 107--108, §§248--251;
 ### \CAPRRuleHeading{SC060. West Saxon palatal umlaut before \emph{*h}-clusters}{OEWsPalatalUmlaut} {#rule-OEWsPalatalUmlaut}
 
 ```foma
-define OEWsPalatalUmlaut [
+define OEWsPalatalUmlaut Ctx([
     {*eo} -> {*i} || _ OEHCluster .#.,
     {*io} -> {*i} || _ OEHCluster .#.,
     {*ie} -> {*i} || _ OEHCluster .#.,
     {*eo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*io} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*ie} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
+    # Stressed variants (stress absorbed: result is short i):
     {*éo} -> {*i} || _ OEHCluster .#.,
     {*ío} -> {*i} || _ OEHCluster .#.,
     {*íe} -> {*i} || _ OEHCluster .#.,
     {*éo} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*ío} -> {*i} || _ OEHCluster EnglishStarFrontVowel,
     {*íe} -> {*i} || _ OEHCluster EnglishStarFrontVowel
-];
+]);
 ```
 
 The change to \emph{*i} before \emph{*h}-clusters can be ordered only on its
@@ -4558,10 +4604,10 @@ remain untested.
 ### \CAPRRuleHeading{SC061. Reduction of final nasal weak-tail endings}{OEWeakTailNasalLoss} {#rule-OEWeakTailNasalLoss}
 
 ```foma
-define OEWeakTailNasalLoss [
+define OEWeakTailNasalLoss Ctx([
     {*n} {*ą} -> {*n} || _ .#.,
     {*m} {*ą} -> {*m} || _ .#.
-];
+]);
 ```
 
 Final weak-tail \emph{*-ną} and \emph{*-mą} accordingly yield plain
@@ -4596,19 +4642,29 @@ The vowel-replacement clauses themselves are unchanged
 ### \CAPRRuleHeading{SC063. High-vowel apocope after heavy syllables and in trisyllables}{OEHighVowelApocope} {#rule-OEHighVowelApocope}
 
 ```foma
-define OEHighVowelApocope [
+define OEHighVowelApocope Ctx([
+    # Disyllabic: long syllable (long vowel + consonant(s)) + final vowel
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
+    # Disyllabic: diphthong + consonant(s) + final vowel
+    # LONG diphthongs are heavy (any C count). SHORT diphthongs are heavy only
+    # with 2+ consonants; a short diphthong + single C is a LIGHT syllable (from
+    # back-umlaut of a light stem, Campbell §345; DEV_NOTES §17.17).
+    # E.g. *spéru → speoru (LIGHT, retain -u); *xérdō → heord (HEAVY, lose -u).
     {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
+    # Disyllabic: heavy closed syllable (short vowel + 2+ consonants) + final vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
+    # Trisyllabic: long/diphthong + unstressed syllable + final vowel (Campbell §345)
+    # Pattern: LongV/Diph + C+ + shortV + C+ + final_vowel
+    # Example: heofon < *xemonų: *e*o + *β + *u + *n + *ų
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
@@ -4618,20 +4674,33 @@ define OEHighVowelApocope [
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic with short-diphthong first syllable (from back-umlaut of a light
+    # stem): trisyllabic apocope still fires regardless of stress-syllable weight
+    # (Campbell §345). E.g. *xémonų → *xéomonų → heofon.
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic: short syllable + another syllable + final vowel (Campbell §345)
+    # Pattern: shortV + C + shortV + C+ + final_vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # Trisyllabic with heavy-by-position first syllable (short V + 2+C) +
+    # light second syllable + final high V (Campbell §345; DEV_NOTES §17.45.4).
+    # E.g. *spénnilō → *spinnilu → *spinnil (then OELAdjacentSyncope + nn-degem → spinl).
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
+    # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
+    # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
     {*i} -> 0 || EnglishStarLongVowel _ .#.,
+    # Campbell §238/§346: final -u lost after /h/ (*x) regardless of weight.
+    # Must fire before intervocalic h-loss would remove the conditioning.
+    # E.g. *féxu → *féoxu → feoh (not feou).
     {*u} -> 0 || {*x} _ .#.,
     {*ų} -> 0 || {*x} _ .#.,
     {*i} -> 0 || {*x} _ .#.
-] .o. [{*ᶜ} -> 0];
+] .o. [{*ᶜ} -> 0]);
 ```
 
 Final \emph{*i}, \emph{*u}, and \emph{*ų} cannot disappear before completing
@@ -4660,7 +4729,7 @@ processes within the late history of weak syllables
 ### SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss}
 
 ```foma
-define NWGmcInStemNLoss [{*n} -> 0 || {*ī} _ .#.];
+define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
 ```
 
 Only final \emph{*n} after long \emph{*ī} is at issue, as in the inherited
@@ -4690,11 +4759,11 @@ described by Hogg, Ringe and Taylor, and Fulk
 @Fulk2018, p. 91, §5.6].
 
 ```foma
-define OEMedialSyncope [
+define OEMedialSyncope FootCtx([
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
     {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
-];
+]);
 ```
 
 No diagnostic word establishes a local chronology. Moving medial syncope to
@@ -4720,11 +4789,11 @@ ordering witness.
 ### \CAPRRuleHeading{SC066. L-adjacent syncope in medial syllables}{OELAdjacentSyncope} {#rule-OELAdjacentSyncope}
 
 ```foma
-define OELAdjacentSyncope [
+define OELAdjacentSyncope Ctx([
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
-];
+]);
 ```
 
 The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
@@ -4744,9 +4813,9 @@ simplifies.
 ### \CAPRRuleHeading{SC067. Dental assimilation in newly formed clusters}{OEDentalAssimilation} {#rule-OEDentalAssimilation}
 
 ```foma
-define OEDentalAssimilation [
+define OEDentalAssimilation Ctx([
     {*θ} -> 0 || {*t} _
-];
+]);
 ```
 
 Loss of \emph{*θ} after \emph{*t} resolves a dental cluster produced by syncope
@@ -4762,7 +4831,7 @@ motivated, not established by a lexical contrast.
 ### \CAPRRuleHeading{SC068. Preconsonantal degemination before sonorants}{OEPreconsonantalDegemination} {#rule-OEPreconsonantalDegemination}
 
 ```foma
-define OEPreconsonantalDegemination OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN;
+define OEPreconsonantalDegemination Ctx(OEPreconsonantalDegemTT .o. OEPreconsonantalDegemNN);
 ```
 
 Preconsonantal \emph{*tt} and \emph{*nn} simplify only after syncope has
@@ -4794,9 +4863,11 @@ have more closely defined relations.
 ### \CAPRRuleHeading{SC069. Early shortening of unstressed \emph{*ō} before nasals}{OEEarlyOShortening} {#rule-OEEarlyOShortening}
 
 ```foma
-define OEEarlyOShortening [
+define OEEarlyOShortening Ctx([
+    # EARLY: *ō → *a before nasals (runs BEFORE fronting)
+    # This *a will undergo fronting: *a → *æ → e (Campbell §333, §369)
     {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ EnglishStarNasal
-];
+]);
 ```
 
 The rule shortens unstressed long \emph{*ō} before a following nasal. Because this shortening happens early, the resulting \emph{*a} can still participate in the later fronting and merger that shape many weak final syllables.
@@ -4835,7 +4906,7 @@ order, but no lexical evidence fixes its later boundary.
 ### \CAPRRuleHeading{SC070. Early fronting of unstressed \emph{*a}}{OEUnstressedFrontingEarly} {#rule-OEUnstressedFrontingEarly}
 
 ```foma
-define OEUnstressedFrontingEarly OEUnstressedAFronting;
+define OEUnstressedFrontingEarly FootCtx(OEUnstressedAFronting);
 ```
 
 The rule fronts unstressed \emph{*a} to \emph{*æ} after the earlier shortening
@@ -4856,9 +4927,23 @@ the older palatal developments.
 The following rule handles the later shortening stage.
 
 ```foma
-define OELateOShortening [
+define OELateOShortening Ctx([
+    # LATE: *ō → *o elsewhere (runs AFTER fronting; Campbell §355: the late
+    # product is "of too late origin to become æ").
+    # Stausland Johnsen 2015:28-30: unstressed long vowels shorten regularly in
+    # pre-OE AFTER the loss of short unstressed vowels (the *bursti-/*burstīz
+    # argument). The shortened vowel is a plain short *o — the ONLY source of
+    # unstressed *o at this stage (the earliest OE texts have just two
+    # unstressed back vowels, u and a: Stausland Johnsen 2015:21; classical-OE
+    # unstressed o arises only from the later 9th-c. lowering, SC040). Its
+    # split — u in medial syllables, a in final syllables — is carried out by
+    # OEMedUnstressedORaising (SC099) and OEFinalUnstressedOLowering (SC100)
+    # immediately below, replacing the old one-step *ō → *a compression that
+    # hard-coded the final-syllable outcome for all positions (van Helten's
+    # refuted conditioning aside, medial *ō would have surfaced wrongly as a:
+    # **wundade).
     {*ō} -> {*o} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]*
-];
+]);
 ```
 
 The rule shortens the remaining unstressed long \emph{*ō} after fronting. The
@@ -4872,9 +4957,9 @@ Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFront
 ### \CAPRRuleHeading{SC099. Medial raising of shortened unstressed \emph{*o}}{OEMedUnstressedORaising} {#rule-OEMedUnstressedORaising}
 
 ```foma
-define OEMedUnstressedORaising [
+define OEMedUnstressedORaising Ctx([
     {*o} -> {*u} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic
-];
+]);
 ```
 
 After [SC071 OELateOShortening](#rule-OELateOShortening), the shortened vowel gives \emph{u} in an unstressed medial
@@ -4889,9 +4974,9 @@ diagnostic derivation is PGmc [wúndōdē]{.recon} ‘wounded’ > [wundode]{.pr
 ### \CAPRRuleHeading{SC100. Final lowering of shortened unstressed \emph{*o}}{OEFinalUnstressedOLowering} {#rule-OEFinalUnstressedOLowering}
 
 ```foma
-define OEFinalUnstressedOLowering [
+define OEFinalUnstressedOLowering Ctx([
     {*o} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [EnglishStarConsonant | EnglishPalatalConsonant]* .#.
-];
+]);
 ```
 
 In a final syllable the same shortened vowel gives \emph{a}. Thus the existing
@@ -4994,9 +5079,9 @@ and [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
 ### \CAPRRuleHeading{SC074. First medial unstressed-\emph{i} lowering}{OEMedUnstressedILowering1} {#rule-OEMedUnstressedILowering1}
 
 ```foma
-define OEMedUnstressedILowering1 [
+define OEMedUnstressedILowering1 FootCtx([
     {*i} -> {*e} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
-];
+]);
 ```
 
 The rule lowers medial unstressed \emph{*i} to \emph{*e} after a preceding
@@ -5015,9 +5100,9 @@ shortening and precedes the more specific \emph{*ng} preservation.
 The following rule reverses the lowering before \emph{*ng}.
 
 ```foma
-define OEMedUnstressedILowering [
+define OEMedUnstressedILowering Ctx([
     {*e} -> {*i} || _ {*n} {*g}
-];
+]);
 ```
 
 The rule restores \emph{*i} before \emph{*ng}, preventing the broader lowering from producing the wrong medial vowel in forms such as *sċilling* ‘shilling’.
@@ -5029,17 +5114,43 @@ Moving the rule before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedIL
 ### \CAPRRuleHeading{SC040. Lowering of medial unstressed \emph{*u}}{OEMedUnstressedULowering} {#rule-OEMedUnstressedULowering}
 
 ```foma
-define OEMedUnstressedULowering [
-    {*u} -> {*o}
-        || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]]
-           [EnglishStarConsonant | EnglishPalatalConsonant]+ _
-           [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
-];
+define OEMedUnstressedULowering FootCtx([
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
+]);
 ```
 
-The two witnesses date medial unstressed \emph{*u} > \emph{*o} at very different scales. Before [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut), PGmc [wíduwōn]{.recon} ‘widow’ yields [*wudowe*]{.pred} rather than expected OE *wuduwe* ‘widow’; after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [júgunθ]{.recon} ‘youth’ yields [*ġeogoþ*]{.pred} rather than expected *ġeoguþ* ‘youth’. The local *weorold* 'world' and widow evidence places lowering after combinative u-umlaut, while the youth form supplies only the distant requirement that lowering precede unstressed long-vowel shortening.
+Medial unstressed \emph{*u} tends to lower to \emph{*o} in the later Old
+English period, while accented \emph{*u} preserves the following unstressed
+vowel [@Campbell1959, pp. 155--156, §373]. This lowering follows the earlier shortening
+and resolution of unstressed long vowels, rather than preceding that
+history. The eighth-century unstressed back-vowel system and its later
+development distinguish the two periods
+[@StauslandJohnsen2015, pp. 21--22, 28--31].
 
-## Prefix i-reduction
+The inherited ordering evidence from *wuduwe* 'widow' remains relevant:
+delaying
+[SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) until after lowering yields
+[*wudowe*]{.pred} rather than the expected form. In the adopted sequence,
+*wuduwe* retains its medial vowel after accented \emph{*u}, whereas
+*weorold* 'world' undergoes lowering.
+The reciprocal early-lowering experiment is no longer equivalent: the
+intervening vowel-resolution history restores medial \emph{*u}, so that
+movement does not now produce the same *widow* failure.
+
+The formerly reported *ġeoguþ* 'youth' boundary does not establish that
+lowering preceded
+[SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
+That experiment inserted a front glide vowel early in the derivation;
+delayed lowering then encountered an altered preceding nucleus and
+produced [ġeogoþ]{.pred}. With the adopted late
+[SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) spelling, the root retains
+phonological \emph{*u} through lowering and preserves the medial vowel.
+Moving lowering across shortening in this current architecture leaves
+*ġeoguþ* unchanged. The spelling evidence is therefore not an independent
+date for the lowering; the later placement rests on the historical
+vowel chronology, not a reversal of that obsolete experiment.
+
+## Pretonic i-lowering
 
 ### Historical discussion
 
@@ -5055,7 +5166,7 @@ Taylor supply early *gistīga* 'climb into/onto' beside later *gestīga*
 The manuscript evidence, rather than the older proxy's displacement
 results, supports this limited relative chronology.
 
-### \CAPRRuleHeading{SC076. Reduction of prefixal \emph{*i} in unstressed position}{OEPrefixIReduction} {#rule-OEPrefixIReduction}
+### SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
 
 ```foma
 define OEPrefixIReduction SentenceCtx([
@@ -5434,15 +5545,16 @@ disputed eligibility domain are not settled by this merger.
 ## Historical interval
 
 This short chapter stands apart from the derivational chapters that precede
-it. The changes of Chapters 1–3 are sound changes: they altered the spoken
-form of the language. The material treated here belongs instead to the
+it. The earlier chapters primarily discuss changes to the spoken language,
+alongside explicitly identified technical support operations. The material
+treated here belongs instead to the
 written surface of Old English — scribal conventions that determined how the
 results of the completed phonological history were committed to parchment.
 
 In the executable model these conventions apply after every phonological
-rule, at the very end of the cascade, because that is where they belong
-historically: a spelling practice can only render forms that the spoken
-language had already produced.
+rule, in the final written-surface block. That serialization renders the
+results of the phonological reconstruction; it does not independently date
+the origin of each spelling practice relative to every phonological change.
 
 ## Scope
 

@@ -115,8 +115,10 @@ def wrap_long_rule_headings(text: str) -> str:
         if len(heading_visible_text(sc_number, title, rule_name)) <= long_rule_heading_threshold:
             wrapped.append(line)
             continue
+        latex_title = title.replace(r"\*", "*")
         wrapped.append(
-            f"## \\CAPRRuleHeading{{{sc_number}. {title}}}{{{rule_name}}} {{#{anchor}}}"
+            f"## \\CAPRRuleHeading{{{sc_number}. {latex_title}}}"
+            f"{{{rule_name}}} {{#{anchor}}}"
         )
     return "\n".join(wrapped)
 
@@ -227,169 +229,66 @@ def build() -> None:
 def render_coverage_report(manifest_files: list[str],
                            file_sc_map: dict[str, list[str]],
                            reader_sc_numbers: list[str]) -> str:
-    manifest_rows: list[dict[str, object]] = []
-    with REPORT_MANIFEST.open(encoding="utf-8") as handle:
-        reader = csv.DictReader(handle, delimiter="\t")
-        for row in reader:
-            if not row["ID"]:
-                continue
-            sc_ids = [item.strip() for item in row["CHANGE_IDS"].split(";") if item.strip()]
-            chapters = [name for name in manifest_files if set(file_sc_map[name]) & set(sc_ids)]
-            covered_scs = sorted({sc for name in chapters for sc in file_sc_map[name]},
-                                 key=lambda item: int(item[2:]))
-            manifest_rows.append({
-                "id": row["ID"],
-                "title": row["TITLE"],
-                "change_ids": sc_ids,
-                "chapters": chapters,
-                "covered": set(sc_ids).issubset(set(covered_scs)),
-            })
+    reg = read_tsv(generate_registry_views.SC_REGISTRY)
+    published = {r["sc_id"]: r for r in reg if r["lifecycle_status"] == "active"
+                 and r["include_in_volume"] == r["is_reader_facing"] == "yes"}
+    # load_manifest owns exact executable parity; coverage checks the actual
+    # sections against the independently classified registry population.
+    expected = reader_sc_numbers
+    if set(expected) != published.keys() or len(expected) != len(published):
+        raise ValueError("Reader coverage differs from canonical publication "
+                         "registry; run adjudicate.py --refresh")
+    if manifest_files != [published[sc]["source_reader_facing_file"] for sc in expected]:
+        raise ValueError("Reader coverage has incorrect canonical source ownership")
+    for sc, name in zip(expected, manifest_files):
+        if file_sc_map[name] != [sc] or not (READER_ROOT / name).is_file():
+            raise ValueError(f"Reader coverage: missing or conflicting {sc} source {name}")
 
-    manifest_sc_numbers = sorted({sc for row in manifest_rows for sc in row["change_ids"]},
-                                 key=lambda item: int(item[2:]))
-    reader_sc_set = set(reader_sc_numbers)
-    manifest_sc_set = set(manifest_sc_numbers)
-    missing_manifest_sc = sorted(manifest_sc_set - reader_sc_set, key=lambda item: int(item[2:]))
-    extra_reader_sc = sorted(reader_sc_set - manifest_sc_set, key=lambda item: int(item[2:]))
-
-    front_manifest_gaps = []
-
-    resumed_sc_numbers = [sc for sc in manifest_sc_numbers if int(sc[2:]) >= 14]
-    if resumed_sc_numbers:
-        resumed_min = min(int(sc[2:]) for sc in resumed_sc_numbers)
-        resumed_max = max(int(sc[2:]) for sc in resumed_sc_numbers)
-        later_gaps = [f"SC{i:03d}" for i in range(resumed_min, resumed_max + 1)
-                      if f"SC{i:03d}" not in manifest_sc_set]
-    else:
-        later_gaps = []
-
-    expected_gaps = later_gaps
-    early_programme_missing = [
-        f"SC{i:03d}"
-        for i in range(3, 14)
-        if f"SC{i:03d}" not in manifest_sc_set and f"SC{i:03d}" not in set(front_manifest_gaps)
-    ]
-    uncovered_rows = [row for row in manifest_rows if not row["covered"]]
-
-    coverage_parts: list[str] = [
-        "# Reader-facing manifest coverage 08",
-        "",
-        "## Inputs",
-        "",
-        "1. `Germanic/docs/sound_changes/change_reports/report_manifest.tsv`",
-        "2. `Germanic/docs/sound_changes/registry/reader_manifest.tsv`",
-        "",
-        "## Manifest rows covered by reader-facing chapters",
-        "",
-        "| Manifest row | Change IDs | Reader-facing chapter files | Covered |",
+    status = {}
+    for r in reg:
+        status[r["sc_id"]] = (
+            "retired" if r["lifecycle_status"] == "retired" else
+            "published technical support" if r["sc_id"] in published
+            and r["entry_type"] == "support_stage" else
+            "published " + r["entry_type"] if r["sc_id"] in published else
+            "active, deliberately unpublished")
+    lines = [
+        "# Reader-facing manifest coverage 08", "",
+        "## Canonical publication coverage", "",
+        "Authority: `registry/sc_registry.tsv` publication/lifecycle/source ownership "
+        "and the canonical `oe_pipeline` stage sequence. The generated reader manifest "
+        "and actual section sequence must agree exactly; omissions fail the build.", "",
+        f"Published identities: {len(expected)}. Missing or erroneous omissions: 0.", "",
+        "| Reader position | Identity | Classification | Authoritative source |",
         "| --- | --- | --- | --- |",
     ]
-
-    for row in manifest_rows:
-        chapters = ", ".join(f"`{name}`" for name in row["chapters"]) if row["chapters"] else "—"
-        coverage_parts.append(
-            f"| `{row['id']}` {row['title']} | `{';'.join(row['change_ids'])}` | {chapters} | {'yes' if row['covered'] else 'no'} |"
-        )
-
-    coverage_parts.extend([
-        "",
-        "## SC numbers covered by reader-facing rule sections",
-        "",
-        ", ".join(f"`{sc}`" for sc in reader_sc_numbers),
-        "",
-        "## Manifest rows not yet covered",
-        "",
-    ])
-
-    if uncovered_rows:
-        for row in uncovered_rows:
-            coverage_parts.append(f"1. `{row['id']}` {row['title']} — missing `{';'.join(row['change_ids'])}`")
-    else:
-        coverage_parts.append("1. none")
-
-    coverage_parts.extend([
-        "",
-        "## SC numbers present in the manifest but missing from reader-facing rule headings",
-        "",
-    ])
-
-    if missing_manifest_sc:
-        coverage_parts.append(", ".join(f"`{sc}`" for sc in missing_manifest_sc))
-    else:
-        coverage_parts.append("1. none")
-
-    coverage_parts.extend([
-        "",
-        "## Reader-facing rule headings not present in the manifest",
-        "",
-    ])
-
-    if extra_reader_sc:
-        coverage_parts.append(", ".join(f"`{sc}`" for sc in extra_reader_sc))
-    else:
-        coverage_parts.append("1. none")
-
-    coverage_parts.extend([
-        "",
-        "## Expected gaps in the manifest-backed sequence",
-        "",
-    ])
-
-    if expected_gaps:
-        coverage_parts.append(", ".join(f"`{sc}`" for sc in expected_gaps))
-    else:
-        coverage_parts.append("1. none")
-
-    coverage_parts.extend([
-        "",
-        "## Early SC numbers and the current manifest-backed programme",
-        "",
-    ])
-
-    early_entries = [
-        ("SC003", "003-west-germanic-rhotacism.md"),
-        ("SC004", "004-pwgmc-ai-monophthongization.md"),
-        ("SC005", "005-unstressed-a-raising-before-final-m.md"),
-        ("SC006", "006-early-i-apocope.md"),
-        ("SC007", "007-final-o-lowering-before-r.md"),
-        ("SC008", "008-coronal-w-assimilation.md"),
-        ("SC009", "009-ij-contraction-in-friend.md"),
-        ("SC010", "010-west-germanic-j-gemination.md"),
-        ("SC011", "011-syllabic-j-after-final-vowel-loss.md"),
-        ("SC012", "012-lth-voicing.md"),
-        ("SC013", "013-dental-hardening.md"),
-    ]
-    for idx, (sc, fname) in enumerate(early_entries, start=1):
-        if sc in manifest_sc_set and sc in reader_sc_set:
-            coverage_parts.append(f"{idx}. `{sc}` is now covered by `{fname}`.")
-        else:
-            coverage_parts.append(
-                f"{idx}. `{sc}` is not fully covered in the current reader-facing set.")
-
-    coverage_parts.append("12. Coverage from `SC014` through `SC087` remains intact.")
-
-    if early_programme_missing:
-        coverage_parts.append(
-            "13. The remaining early SC numbers outside the current manifest-backed programme are "
-            + ", ".join(f"`{sc}`" for sc in early_programme_missing)
-            + "."
-        )
-    else:
-        coverage_parts.append("13. No other early SC numbers remain outside the current manifest-backed programme.")
-
-    if {"SC003", "SC004", "SC005", "SC006", "SC007", "SC008", "SC009", "SC010",
-            "SC011", "SC012", "SC013", "SC014", "SC015"} <= manifest_sc_set:
-        coverage_parts.append(
-            "14. The manifest-backed sequence now opens with `SC003`, `SC004`, `SC005`, "
-            "`SC006`, `SC007`, `SC008`, `SC009`, `SC010`, `SC011`, `SC012`, and `SC013`, "
-            "and then resumes at `SC014-SC015`.")
-    else:
-        coverage_parts.append(
-            "14. The manifest-backed opening sequence no longer matches the expected "
-            "`SC003`, `SC004`, `SC005`, `SC006`, `SC007`, `SC008`, `SC009`, `SC010`, "
-            "`SC011`, `SC012`, `SC013`, then `SC014-SC015` pattern.")
-
-    return "\n".join(coverage_parts) + "\n"
+    for i, sc in enumerate(expected, 1):
+        lines.append(f"| {i} | {sc} | {status[sc]} | "
+                     f"`{published[sc]['source_reader_facing_file']}` |")
+    lines += ["", "## Retired and deliberately unpublished identities", "",
+              "| Identity | Classification |", "| --- | --- |"]
+    for r in reg:
+        if r["sc_id"] not in published:
+            lines.append(f"| {r['sc_id']} | {status[r['sc_id']]} |")
+    lines += ["", "## Secondary historical change-report comparison", "",
+              "`change_reports/report_manifest.tsv` records a different, older "
+              "report population, not the current publication specification. "
+              "Absence from it is not a publication error. Its retired or deliberately "
+              "unpublished identities are classified rather than called missing.", "",
+              "| Historical report | Identities and current classification |",
+              "| --- | --- |"]
+    historical_ids = set()
+    for row in read_tsv(REPORT_MANIFEST):
+        scs = [sc.strip() for sc in row["CHANGE_IDS"].split(";") if sc.strip()]
+        historical_ids.update(scs)
+        unknown = set(scs) - status.keys()
+        if unknown:
+            raise ValueError(f"Historical report {row['ID']} has unknown identities: {sorted(unknown)}")
+        lines.append(f"| {row['ID']} | " +
+                     "; ".join(f"{sc}: {status[sc]}" for sc in scs) + " |")
+    lines += ["", "Published identities outside that historical report population: " +
+              ", ".join(sc for sc in expected if sc not in historical_ids) + ".", ""]
+    return "\n".join(lines)
 
 
 def main() -> int:

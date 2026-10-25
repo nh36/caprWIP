@@ -24,7 +24,7 @@ identity between the cluster change and the later umlautal developments.
 ## SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization}
 
 ```foma
-define OESkPalatalization [
+define OESkPalatalization Ctx([
     {*s} {*k} -> {*ʃ} || .#. _
 ] .o. [
     {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.)
@@ -34,7 +34,7 @@ define OESkPalatalization [
     {*s} {*k} -> {*ʃ} || _ {*j}
 ] .o. [
     {*s} {*k} -> {*ʃ} || {*j} _
-];
+]);
 ```
 
 The non-fronted vowels of *flasce* ‘flask’ and *wascan* ‘wash’ fix the lower boundary of \emph{*sk} > \emph{*sc}. Before [SC046 OEARestoration](#rule-OEARestoration), the forms are fronted too soon, yielding *flæsce* ‘flask’ and *wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This places [SC051 OESkPalatalization](#rule-OESkPalatalization) after restoration.

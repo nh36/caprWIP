@@ -12,11 +12,10 @@ sound change.
 ## SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope}
 
 ```foma
-define OECompoundLinkingSyncope [
+define OECompoundLinkingSyncope Ctx([
     [{*a}|{*i}|{*u}] -> 0
-        || PGmcStarAcuteVowel OEAnyConsonant+ _
-           OEAnyConsonant+ PGmcStarGraveVowel
-];
+        || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
+]);
 ```
 
 The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc [régna-bùgô]{.recon} ‘rainbow’ yields [*reġnefoga*]{.pred} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).

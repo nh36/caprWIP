@@ -13,11 +13,12 @@ mutation from the earlier umlautal changes [@Fulk2018, p. 69, §4.8].
 ## SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
 
 ```foma
-define OEBackMutation [
+define OEBackMutation Ctx([
     {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
     {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+    # Stressed variant (stress preserved on first element):
     {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
-];
+]);
 ```
 
 Three witness forms bracket the chronology. If back mutation precedes
