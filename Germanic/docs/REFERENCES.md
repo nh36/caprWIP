@@ -77,6 +77,9 @@ See [the complete acquisition record](../../docs/references/ga_prefix_2026-10-25
 for exact local paths, source hashes, 610 sheet-to-page mappings, OCR cautions,
 excluded peripheral items and pending acquisitions. These are registered
 holdings, not newly adjudicated evidence or additions to the printed book.
+The [corrective consolidation record](../../docs/references/ga_prefix_2026-10-25/corrections.md)
+and [current manifest](../../docs/references/ga_prefix_2026-10-25/holdings.tsv)
+supersede initial cache paths and add Wright--Wülcker II's 498-sheet mapping.
 
 - `Quinlin1991`, `quinlin_1991_accentuation_ga.pdf`: inherited accentuation,
   clitic status and disputed nominal formations, pp.145--157.
@@ -104,13 +107,19 @@ holdings, not newly adjudicated evidence or additions to the printed book.
 - `Gante2012`, `gante_2012_ga_revisited_{handout,slides}.pdf`: one 2012
   conference contribution, selected for explicit phonological and inherited-
   formation discussion; not a journal article or two independent works.
+- `WrightWuelcker1884II`, `anglosaxonoldeng02wriguoft.{pdf,txt}`:
+  title-verified second edition, volume II: *Indices*, 1884. Printed pp.53
+  and 73 are Latin-index pages, not *gi-mynd* entries; the supplied Toller
+  locator requires separate edition/locator resolution, not a fabricated match.
 
 All these PDF names are relative to `docs/references/`. PDFs remain ignored.
-Complete restricted searchable texts are local-only in
-`.cache/ga-prefix/holdings/`; only the public-domain van Helten text is
-redistributed. Bennett's 1968 chapter and Wright--Wülcker volumeII remain
-pending acquisition. The existing `WrightWuelcker1884` key still describes
-volumeI, not the missing indices volume.
+Complete restricted searchable texts are local-only in the durable
+`docs/references/local/ga-prefix/` holding, not in a disposable cache.
+Its restoration bundle has been tested locally; it is not a remote access
+service. Only the public-domain van Helten and Wright--Wülcker II complete
+texts are redistributed. Bennett's 1968 chapter remains pending.
+`WrightWuelcker1884` still describes volume I; the related volume-II key
+preserves that bibliographic distinction.
 
 ### Unstressed vowels and historical prosody
 

@@ -1,5 +1,11 @@
 # ga-/gi-/ge- source acquisition, 25 October 2026
 
+Historical first-ingestion receipt. Its original inventory and page map are
+preserved. See [corrections.md](corrections.md) and [holdings.tsv](holdings.tsv)
+for current durable paths, controlled OCR comparisons, restoration tests and
+the subsequently acquired Wright--Wülcker volume II. The cache/pending-status
+statements below describe the first milestone, not current library access.
+
 This is a reference-library acquisition record and neutral navigation aid,
 not an SC035 adjudication or a replacement for any earlier evidence receipt.
 The starting revision is `0bfd8f9507050f06588884bc4b76ef88a4c0840e`.

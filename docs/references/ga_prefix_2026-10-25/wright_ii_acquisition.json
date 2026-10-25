@@ -1,0 +1,32 @@
+{
+  "identifier": "anglosaxonoldeng02wriguoft",
+  "acquired": "2026-10-25",
+  "metadata_url": "https://archive.org/metadata/anglosaxonoldeng02wriguoft",
+  "verified_title_page": "PDF sheet 3: second edition, volume II, Indices, London: Trübner, 1884",
+  "metadata": {
+    "title": "Anglo-Saxon and Old English vocabularies",
+    "creator": [
+      "Wright, Thomas, 1810-1877",
+      "Wülker, Richard Paul, 1845-1910"
+    ],
+    "date": "1884",
+    "publisher": "London : Trübner"
+  },
+  "downloaded_files": [
+    {
+      "name": "anglosaxonoldeng02wriguoft.pdf",
+      "sha256": "ecc25a87ca8e02ae1f79b7b61e47d6ed5a8207d5bb301f2a58e57fd995b4d1ec"
+    },
+    {
+      "name": "anglosaxonoldeng02wriguoft_djvu.xml",
+      "sha256": "2c7febfdd2c28f39bda3e4b7891c7fec394c3bd36b85315b666440ad7012c887"
+    },
+    {
+      "name": "scandata.zip/scandata.xml",
+      "sha256": "c63889a00c3ab4adeabc12b366bca1f88ea2c5083d47ba9f23993f6072b78a8d"
+    }
+  ],
+  "pdf_sheets": 498,
+  "numbered_pages": "1–485, PDF sheets 7–491; other sheets unnumbered",
+  "retrieval_note": "Individual _scandata.xml URL returned 404; retrieved scandata.xml from advertised scandata.zip."
+}

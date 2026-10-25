@@ -1,0 +1,193 @@
+sample_id	source	pdf_sheet	category	method	reference	observed	edit_distance	reference_characters
+1	bammesberger	1	prose	native	Bei der Rekonstruktion von Protosprachen stützt man sich	Bei der Rekonstruktion von Protosprachen stützt man sich	0	56
+1	bammesberger	1	prose	tesseract	Bei der Rekonstruktion von Protosprachen stützt man sich	Bei der Rekonstruktion von Protosprachen stützt man sich	0	56
+1	bammesberger	1	prose	vision	Bei der Rekonstruktion von Protosprachen stützt man sich	Bei der Rekonstruktion von Protosprachen stützt man sich	0	56
+2	bammesberger	1	technical	native	*ga-	*ga-	0	4
+2	bammesberger	1	technical	tesseract	*ga-	*ga-	0	4
+2	bammesberger	1	technical	vision	*ga-	*ga-	0	4
+3	bammesberger	1	technical	native	gi-	gi-	0	3
+3	bammesberger	1	technical	tesseract	gi-	gi-	0	3
+3	bammesberger	1	technical	vision	gi-	gi-	0	3
+4	bammesberger	1	technical	native	ge-	ge-	0	3
+4	bammesberger	1	technical	tesseract	ge-	ge-	0	3
+4	bammesberger	1	technical	vision	ge-	ge-	0	3
+5	bammesberger	1	technical	native	τομός		5	5
+5	bammesberger	1	technical	tesseract	τομός	τομός	0	5
+5	bammesberger	1	technical	vision	τομός		5	5
+6	bammesberger	1	technical	native	τόμος		5	5
+6	bammesberger	1	technical	tesseract	τόμος	τόμος	0	5
+6	bammesberger	1	technical	vision	τόμος		5	5
+7	bammesberger	6	prose	native	mal auch in der Bedeutung	mal auch in der Bedeutung	0	25
+7	bammesberger	6	prose	tesseract	mal auch in der Bedeutung	mal auch in der Bedeutung	0	25
+7	bammesberger	6	prose	vision	mal auch in der Bedeutung	mal auch in der Bedeutung	0	25
+8	bammesberger	6	technical	native	*mann-	*mann-	0	6
+8	bammesberger	6	technical	tesseract	*mann-	*mann-	0	6
+8	bammesberger	6	technical	vision	*mann-	*mann-	0	6
+9	bammesberger	6	technical	native	*izmi	*izmi	0	5
+9	bammesberger	6	technical	tesseract	*izmi	*izmi	0	5
+9	bammesberger	6	technical	vision	*izmi	*izmi	0	5
+10	bammesberger	6	technical	native	*imm(i)	*imm(i)	0	7
+10	bammesberger	6	technical	tesseract	*imm(i)	*imm(i)	0	7
+10	bammesberger	6	technical	vision	*imm(i)	*imm(i)	0	7
+11	bammesberger	6	technical	native	gá-	ga-	1	3
+11	bammesberger	6	technical	tesseract	gá-	gd-	1	3
+11	bammesberger	6	technical	vision	gá-	gá-	0	3
+12	bammesberger	6	technical	native	*mon-u-	*mon-u-	0	7
+12	bammesberger	6	technical	tesseract	*mon-u-	*mon-u-	0	7
+12	bammesberger	6	technical	vision	*mon-u-	*mon-u-	0	7
+13	bammesberger	13	prose	native	dieser eine Worteinheit bildete.	dieser eine Worteinheit bildete.	0	32
+13	bammesberger	13	prose	tesseract	dieser eine Worteinheit bildete.	dieser eine Worteinheit bildete.	0	32
+13	bammesberger	13	prose	vision	dieser eine Worteinheit bildete.	dieser eine Worteinheit bildete.	0	32
+14	bammesberger	13	technical	native	*kom	*kom	0	4
+14	bammesberger	13	technical	tesseract	*kom	*kom	0	4
+14	bammesberger	13	technical	vision	*kom	*kom	0	4
+15	bammesberger	13	technical	native	miþgatiuhan	mipgatiuhan	1	11
+15	bammesberger	13	technical	tesseract	miþgatiuhan	midgatiuhan	1	11
+15	bammesberger	13	technical	vision	miþgatiuhan	mipgatiuhan	1	11
+16	bammesberger	13	technical	native	*(-)kom(-)	*(-)kom(-)	0	10
+16	bammesberger	13	technical	tesseract	*(-)kom(-)	*(-)kom(-)	0	10
+16	bammesberger	13	technical	vision	*(-)kom(-)	*(-)kom(-)	0	10
+17	bammesberger	13	technical	native	h > g	A > g	1	5
+17	bammesberger	13	technical	tesseract	h > g	h > g	0	5
+17	bammesberger	13	technical	vision	h > g	h > g	0	5
+18	quinlin	1	prose	native	has been the subject of much discussion over the years.	has been the subject of much discussion over the years.	0	55
+18	quinlin	1	prose	tesseract	has been the subject of much discussion over the years.	has been the subject of much discussion over the years.	0	55
+18	quinlin	1	prose	vision	has been the subject of much discussion over the years.	has been the subject of much discussion over the years.	0	55
+19	quinlin	1	technical	native	*/ga-/	*/ga-/	0	6
+19	quinlin	1	technical	tesseract	*/ga-/	*/ga-/	0	6
+19	quinlin	1	technical	vision	*/ga-/	*/ga-/	0	6
+20	quinlin	1	technical	native	PGmc.	PGmc.	0	5
+20	quinlin	1	technical	tesseract	PGmc.	PGmc.	0	5
+20	quinlin	1	technical	vision	PGmc.	PGmc.	0	5
+21	quinlin	3	prose	native	Kluge also saw a possible correspondence to Latin	Kluge also saw a possible correspondence to Latin	0	49
+21	quinlin	3	prose	tesseract	Kluge also saw a possible correspondence to Latin	Kluge also saw a possible correspondence to Latin	0	49
+21	quinlin	3	prose	vision	Kluge also saw a possible correspondence to Latin	Kluge also saw a possible correspondence to Latin	0	49
+22	quinlin	3	technical	native	ja-bhāra	ja-bhara	1	8
+22	quinlin	3	technical	tesseract	ja-bhāra	ja-bhara	1	8
+22	quinlin	3	technical	vision	ja-bhāra	ja-bhāra	0	8
+23	quinlin	3	technical	native	*/ge-/	*/ge-/	0	6
+23	quinlin	3	technical	tesseract	*/ge-/	*/ge-/	0	6
+23	quinlin	3	technical	vision	*/ge-/	*/ge-/	0	6
+24	quinlin	3	technical	native	*/k/	*/k/	0	4
+24	quinlin	3	technical	tesseract	*/k/	*/k/	0	4
+24	quinlin	3	technical	vision	*/k/	*/k/	0	4
+25	quinlin	3	technical	native	OHG ga-, gi-	OHG ga-,gi-	1	12
+25	quinlin	3	technical	tesseract	OHG ga-, gi-	OHG ga-, gi-	0	12
+25	quinlin	3	technical	vision	OHG ga-, gi-	OHG ga-, gi-	0	12
+26	quinlin	3	technical	native	OS ge-	OSge-	1	6
+26	quinlin	3	technical	tesseract	OS ge-	OS ge-	0	6
+26	quinlin	3	technical	vision	OS ge-	OS ge-	0	6
+27	quinlin	3	technical	native	V[-stress]	V[-stress]	0	10
+27	quinlin	3	technical	tesseract	V[-stress]	Ví-stress	2	10
+27	quinlin	3	technical	vision	V[-stress]	V[-stress]	0	10
+28	quinlin	5	prose	native	In the Lex Salica, Grimm noted the word	In the Lex Salica, Grimm noted the word	0	39
+28	quinlin	5	prose	tesseract	In the Lex Salica, Grimm noted the word	In the Lex Salica, Grimm noted the word	0	39
+28	quinlin	5	prose	vision	In the Lex Salica, Grimm noted the word	In the Lex Salica, Grimm noted the word	0	39
+29	quinlin	5	technical	native	*/ham-/	*/ham-/	0	7
+29	quinlin	5	technical	tesseract	*/ham-/	*/ham-/	0	7
+29	quinlin	5	technical	vision	*/ham-/	*/ham-/	0	7
+30	quinlin	5	technical	native	hǫndugr	hgndugr	1	7
+30	quinlin	5	technical	tesseract	hǫndugr	hondugr	1	7
+30	quinlin	5	technical	vision	hǫndugr	hondugr	1	7
+31	quinlin	5	technical	native	(list)-hendig	{list)-hendig	1	13
+31	quinlin	5	technical	tesseract	(list)-hendig	(list)-hendig	0	13
+31	quinlin	5	technical	vision	(list)-hendig	(list)-hendig	0	13
+32	quinlin	5	technical	native	*/kóm-dhugh-os/	*/kom-dhugh-os/	1	15
+32	quinlin	5	technical	tesseract	*/kóm-dhugh-os/	*/köm-dhugh-os/	1	15
+32	quinlin	5	technical	vision	*/kóm-dhugh-os/	*/kóm-dhugh-os/	0	15
+33	quinlin	5	technical	native	*/hándugaz/	*/handugaz/	1	11
+33	quinlin	5	technical	tesseract	*/hándugaz/	*/händugaz/	1	11
+33	quinlin	5	technical	vision	*/hándugaz/	*/hándugaz/	0	11
+34	samuels	4	prose	native	The main function of ge- in WS is that of an inseparable	The main function of ge- in WS is that of an inseparable	0	56
+34	samuels	4	prose	tesseract	The main function of ge- in WS is that of an inseparable	The main function of ge- in WS is that of an inseparable	0	56
+34	samuels	4	prose	vision	The main function of ge- in WS is that of an inseparable	The main function of ge- in WS is that of an inseparable	0	56
+35	samuels	4	technical	native	þerscan	perscan	1	7
+35	samuels	4	technical	tesseract	þerscan	perscan	1	7
+35	samuels	4	technical	vision	þerscan	perscan	1	7
+36	samuels	4	technical	native	þennan	cennan	1	6
+36	samuels	4	technical	tesseract	þennan	cennan	1	6
+36	samuels	4	technical	vision	þennan	þennan	0	6
+37	samuels	4	technical	native	þwean	pwean	1	5
+37	samuels	4	technical	tesseract	þwean	pwean	1	5
+37	samuels	4	technical	vision	þwean	pwean	1	5
+38	samuels	4	technical	native	spātan	spltan	1	6
+38	samuels	4	technical	tesseract	spātan	spatan	1	6
+38	samuels	4	technical	vision	spātan	spätan	1	6
+39	samuels	35	prose	native	Group B : 324 cases, all without ge-.	Group B : 324 cases, all without ge-.	0	37
+39	samuels	35	prose	tesseract	Group B : 324 cases, all without ge-.	Group B: 324 cases, all without ge-.	1	37
+39	samuels	35	prose	vision	Group B : 324 cases, all without ge-.	Group B 324 cases, all without ge-.	2	37
+40	samuels	35	technical	native	geðreatiga	gebreatiga	1	10
+40	samuels	35	technical	tesseract	geðreatiga	geðreatina	1	10
+40	samuels	35	technical	vision	geðreatiga	geðreatiga	0	10
+41	samuels	35	technical	native	ðreatende	breatende	1	9
+41	samuels	35	technical	tesseract	ðreatende	dreatende	1	9
+41	samuels	35	technical	vision	ðreatende	ŏreatende	1	9
+42	samuels	35	technical	native	getrymma	getrymma	0	8
+42	samuels	35	technical	tesseract	getrymma	getrymma	0	8
+42	samuels	35	technical	vision	getrymma	getrymma	0	8
+43	samuels	35	technical	native	(LI.8.14)	(L1.8.14)	1	9
+43	samuels	35	technical	tesseract	(LI.8.14)	(LI.8.14)	0	9
+43	samuels	35	technical	vision	(LI.8.14)	(LI.8.14)	0	9
+44	samuels	49	prose	native	Here again there are alternations of forms with and without	Here again there are alternations of forms with and without	0	59
+44	samuels	49	prose	tesseract	Here again there are alternations of forms with and without	Here again there are alternations of forms with and without	0	59
+44	samuels	49	prose	vision	Here again there are alternations of forms with and without	Here again there are alternations of forms with and without	0	59
+45	samuels	49	technical	native	cyðnise	cyanise	1	7
+45	samuels	49	technical	tesseract	cyðnise	eyðnise	1	7
+45	samuels	49	technical	vision	cyðnise	cyðnise	0	7
+46	samuels	49	technical	native	mære	mpare	2	4
+46	samuels	49	technical	tesseract	mære	mere	1	4
+46	samuels	49	technical	vision	mære	mære	0	4
+47	samuels	49	technical	native	gisihðe	gisihae	1	7
+47	samuels	49	technical	tesseract	gisihðe	gisihde	1	7
+47	samuels	49	technical	vision	gisihðe	gisihoe	1	7
+48	samuels	49	technical	native	giðæhtung	giazehtung	3	9
+48	samuels	49	technical	tesseract	giðæhtung	giðæhtung	0	9
+48	samuels	49	technical	vision	giðæhtung	giðæhtung	0	9
+49	samuels	49	technical	native	L12.23 giwedo	L12.23 giwedo	0	13
+49	samuels	49	technical	tesseract	L12.23 giwedo	112.23 giwedo	1	13
+49	samuels	49	technical	vision	L12.23 giwedo	L12.23 giwedo	0	13
+50	van_helten	7	prose	native	Ob indessen die vorliegenden verhältnisse zu diesem schluss nötigen,	Ob indessen die vorliegenden Verhältnisse zu diesem schluss nötigen,	1	68
+50	van_helten	7	prose	tesseract	Ob indessen die vorliegenden verhältnisse zu diesem schluss nötigen,	Ob indessen die vorliegenden verhältnisse zu diesem schluss nötigen,	0	68
+50	van_helten	7	prose	vision	Ob indessen die vorliegenden verhältnisse zu diesem schluss nötigen,	Ob indessen die vorliegenden verhältnisse zu diesem schluss nötigen,	0	68
+51	van_helten	7	technical	native	*-iniz	*-iniz	0	6
+51	van_helten	7	technical	tesseract	*-iniz	*-iniz	0	6
+51	van_helten	7	technical	vision	*-iniz	*-iniz	0	6
+52	van_helten	7	technical	native	*-oni	*-oni	0	5
+52	van_helten	7	technical	tesseract	*-oni	*-oni	0	5
+52	van_helten	7	technical	vision	*-oni	*-oni	0	5
+53	van_helten	7	technical	native	§ 276	§ 276	0	5
+53	van_helten	7	technical	tesseract	§ 276	8 276	1	5
+53	van_helten	7	technical	vision	§ 276	§ 276	0	5
+54	van_helten	7	technical	native	môdor	modor	1	5
+54	van_helten	7	technical	tesseract	môdor	mödor	1	5
+54	van_helten	7	technical	vision	môdor	môdor	0	5
+55	van_helten	9	prose	native	Hiernach sind ebenfalls für	Hiernach sind ebenfalls für	0	27
+55	van_helten	9	prose	tesseract	Hiernach sind ebenfalls für	Hiernach sind ebenfalls für	0	27
+55	van_helten	9	prose	vision	Hiernach sind ebenfalls für	Hiernach sind ebenfalls für	0	27
+56	van_helten	9	technical	native	-ûn	-ün	1	3
+56	van_helten	9	technical	tesseract	-ûn	-Qn	1	3
+56	van_helten	9	technical	vision	-ûn	-ûn	0	3
+57	van_helten	9	technical	native	-ôn	-ün	1	3
+57	van_helten	9	technical	tesseract	-ôn	-Qn	1	3
+57	van_helten	9	technical	vision	-ôn	-ôn	0	3
+58	van_helten	9	technical	native	âgon	agon	1	4
+58	van_helten	9	technical	tesseract	âgon	dgon	1	4
+58	van_helten	9	technical	vision	âgon	âgon	0	4
+59	van_helten	9	technical	native	eorðu	eoröu	1	5
+59	van_helten	9	technical	tesseract	eorðu	eordu	1	5
+59	van_helten	9	technical	vision	eorðu	eorðu	0	5
+60	van_helten	34	prose	native	Beim nachschlagen im IV B. dieser Beitr.	Beim nachschlagen iin IV B. dieser Beitr.	2	40
+60	van_helten	34	prose	tesseract	Beim nachschlagen im IV B. dieser Beitr.	Beim nachschlagen im 1V B. dieser Beitr.	1	40
+60	van_helten	34	prose	vision	Beim nachschlagen im IV B. dieser Beitr.	Beim nachschlagen im IV B. dieser Beitr.	0	40
+61	van_helten	34	technical	native	tó niht	to niht	1	7
+61	van_helten	34	technical	tesseract	tó niht	tó niht	0	7
+61	van_helten	34	technical	vision	tó niht	to niht	1	7
+62	van_helten	34	technical	native	Nachträge.	Nachträge.	0	10
+62	van_helten	34	technical	tesseract	Nachträge.	Nachträge.	0	10
+62	van_helten	34	technical	vision	Nachträge.	Nachträge.	0	10
+63	van_helten	34	technical	native	endi	endi	0	4
+63	van_helten	34	technical	tesseract	endi	endi	0	4
+63	van_helten	34	technical	vision	endi	endi	0	4
+64	van_helten	34	technical	native	(tag — er)	(tag — er)	0	10
+64	van_helten	34	technical	tesseract	(tag — er)	(tag — er)	0	10
+64	van_helten	34	technical	vision	(tag — er)	(tag — er)	0	10

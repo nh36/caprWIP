@@ -4,29 +4,34 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 
 ## ga-/gi-/ge- intake (2026-10-25)
 
-The [acquisition and neutral navigation record](ga_prefix_2026-10-25/README.md)
+The [original acquisition record](ga_prefix_2026-10-25/README.md)
 catalogues all 15 supplied PDFs, selection/exclusions, SHA256 identities,
-edition qualifications and all 610 selected PDF sheets. Ten publications
+edition qualifications and all 610 selected PDF sheets. The
+[corrective consolidation record](ga_prefix_2026-10-25/corrections.md) and
+[current holdings manifest](ga_prefix_2026-10-25/holdings.tsv) supersede its
+initial cache locations and pending volume-II status. Ten contributions
 (11 PDFs, including Gante's slides and handout) are newly registered:
 `Quinlin1991`, `Bammesberger1981`, `Minkova2008`, `Crouch1995`,
 `Pheifer1974`, `Samuels1949`, `Pheifer1987`, `HerrenSauer2016`,
 `vanHelten1891` and `Gante2012`.
 
-Original selected PDFs are retained at the `docs/references/*.pdf` paths
-recorded there and remain ignored. Complete restricted searchable texts
-are **local-only** under `.cache/ga-prefix/holdings/`; they are not available
-from a public clone. Native extraction was retained where usable; local
-Tesseract improved Bammesberger, Quinlin and Samuels. Only the public-domain
-van Helten article was sent to the established Google Vision runner; its
-page-preserving `van_helten_1891_grammatisches.vision.txt` is public.
-No ignore rule was relaxed, and no restricted complete transcript is committed.
+Original PDFs remain at their ignored `docs/references/*.pdf` paths.
+Complete restricted searchable texts now have durable **local-only** paths
+under `docs/references/local/ga-prefix/`, with a tested local restoration
+bundle; they are not available from a public clone. Controlled page samples
+selected Tesseract for Bammesberger, Vision for Quinlin and Samuels, and the
+existing Vision text for van Helten. Other usable native extractions remain.
+The public-domain `van_helten_1891_grammatisches.vision.txt` and newly acquired
+`anglosaxonoldeng02wriguoft.txt` are committed; temporary OCR responses remain
+in `.cache/`. No restricted complete transcript is committed.
 
 The supplied Pheifer book is a netLibrary conversion of the 1998 reprint
 of the 1974 edition, not a facsimile. Its own disclaimer explicitly removes
 some diacritics; OCR cannot recover characters already absent from that PDF.
 Roman labels are retained; p.lxxv, §63 is PDF sheet73. The entire supplied
 edition, apparatus and both indices are searchable with this qualification.
-Bennett1968 and Wright--Wülcker volumeII were not supplied and remain pending.
+Bennett1968 remains pending. Wright--Wülcker volumeII was subsequently acquired
+from Internet Archive, title-verified and registered as `WrightWuelcker1884II`.
 This intake does not revise any historical adjudication or reader analysis.
 
 ## Old English grammars and historical phonology
@@ -134,7 +139,11 @@ This intake does not revise any historical adjudication or reader analysis.
   edition edited/collated by Richard Paul Wülcker, volume I
   (Trübner, 1884; `WrightWuelcker1884`).
   This is not Joseph and Elizabeth Mary Wright's *Old English Grammar*
-  (`Wright1925`), and the holding does not establish volume II coverage.
+  (`Wright1925`). The separate `anglosaxonoldeng02wriguoft.txt` holding
+  is volume II: *Indices* (`WrightWuelcker1884II`), acquired from
+  https://archive.org/details/anglosaxonoldeng02wriguoft. Its 498 sheets
+  preserve pp.1--485 plus unnumbered material; see the corrective acquisition
+  record for verified title, page mapping and the pp.53/73 reference caveat.
 
 - `aneightcenturyl00librgoog.txt`  
   Hessels / early glossary material (Eighth-Century Latin-Anglo-Saxon Glossary).

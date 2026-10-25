@@ -30,6 +30,8 @@
 # Reference PDFs are not committed (kept local; .txt extracts are committed)
 # Temporary/sandbox files
 docs/references/*.pdf
+# Access-controlled source texts and local restoration bundles, not OCR caches.
+/docs/references/local/
 
 # OCR cache
 .cache/
