@@ -207,9 +207,13 @@ define OEPrefixAReduction SentenceCtx([
 
 The conditioning is shortness, pretonic weakness and an immediately
 preceding palatal fricative, not prefix identity. The superscript `*ᶠ`
-is a nonsegmental annotation preserving independently established
-stress-foot information after earlier changes consume written accents.
-It is not a reconstructed sound or an intermediate vowel.
+is supplied by an earlier stress-foot-context operation: it marks one
+initial short unaccented vowel separated by one or more consonants from
+an explicitly acute-accented following vowel in the reconstructed input.
+It preserves that positively encoded headed structure when later rules
+remove the input accents. This is nonsegmental notation for reconstructed
+prosody, not a manuscript sign, a sound or an unrestricted parser of
+Old English stress.
 Hiatus, long weak vowels, multiple pretonics and internal weak syllables
 require their own historical analysis; the annotation does not parse them.
 

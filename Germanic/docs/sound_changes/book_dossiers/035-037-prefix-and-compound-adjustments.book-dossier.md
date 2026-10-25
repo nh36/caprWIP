@@ -1,5 +1,7 @@
 # SC035-SC037: Prefix and Compound Adjustments
 
+## Current authoritative SC035 account
+
 SC035's current authority is
 `audits/sc035-literature-adjudication.md` (2026-10-25): RETAIN,
 confidence B, after direct specialist comparison. The follow-up preserves
@@ -49,15 +51,33 @@ word-initial formula; their early trigger/prosody remains unresolved.
 The new memo records alternative predictions, counterexamples sought and
 candidate dispositions. SC076 receives only a chronology clarification.
 
-The SC035 assessments below record the earlier editorial history and are
-superseded where they describe the proxy as current. They are retained
-to preserve the development of the argument, not as competing authority.
-The grouping and the assessments of SC036/SC037 below are not new
-adjudications of either neighbour.
+The current implementation raises short weak pretonic ae after the palatal
+fricative in a positively annotated initial domain. Ordinary SC107 fronting
+and SC052 palatalization feed SC035; SC076 later lowers i and removes the
+annotation. These are adopted model dependencies, not newly demonstrated
+historical dates. The compressed gaCV/breve-e proxy, its SC035-before-SC107
+constraint, confidence A and provisional model-A preference are obsolete.
 
-## 1. Role in the book
+Only this section describes current SC035 authority. The numbered sections
+below are a historical research record, not publication source prose.
+The assembled reader takes SC035 from the registry-owned
+`reader_facing/035-pretonic-front-vowel-raising.md`, not this dossier.
+An agent following this dossier must use the current account above and
+the linked adjudications; it must not reactivate historical formulations.
+SC036/SC037 assessments below are preserved without readjudication.
+The [final consistency closeout](../audits/sc035-consistency-closeout.md)
+records the original-page checks, documentary guard and publication result.
 
-This row is a compact derivational seam between the promoted `SC031-SC034`
+## Historical research record — superseded SC035 assessments
+
+All numbered sections in this partition record earlier checkpoints.
+Their SC035 model, order, confidence and editorial proposals are superseded
+by the current section above. SC036/SC037 statements are historical
+assessments retained verbatim, not fresh decisions about either neighbour.
+
+### 1. Role in the book
+
+At this historical checkpoint, the row was described as a compact derivational seam between the promoted `SC031-SC034`
 West Saxon diphthong chain and the promoted `SC039-SC040` medial-vowel core,
 followed by the separate scaffold `SC041` final-loss note. Its editorial
 problem is not lack of material, but mismatch between source weight and chapter
@@ -70,22 +90,28 @@ decide whether to keep the row as one cautious bridge with SC036 in the middle,
 or later split around SC036 while keeping SC035 and SC037 as short flanking
 notes.
 
-## 2. Name and basic formulation
+### 2. Name and basic formulation
+
+SC035 status in this section: superseded compressed model, not the current
+raising account or current reader architecture.
 
 - **SC035:** English unstressed ga-prefix vocalism
   - **FOMA rule:** `OEPrefixAReduction`
-  - **Current role:** narrow compressed prefix-vowel proxy; model-local
+  - **Historical role (superseded):** narrow compressed prefix-vowel proxy; model-local
     protection before SC107, not an independently dated boundary at SC043
 - **SC036:** OE Inter Stress Raising
   - **FOMA rule:** `OEInterStressRaising`
-  - **Current role:** strongest member of the row, with real two-sided chronology between SC019 and SC040
+  - **Role recorded at this checkpoint:** strongest member of the row, with real two-sided chronology between SC019 and SC040
 - **SC037:** OE Compound Linking Syncope
   - **FOMA rule:** `OECompoundLinkingSyncope`
-  - **Current role:** compound/linking cleanup rule with computational importance but only technical-marker chronology on its own card
+  - **Role recorded at this checkpoint:** compound/linking cleanup rule with computational importance but only technical-marker chronology on its own card
 - **Combined unit label:** Prefix and Compound Adjustments
-- **Present editorial judgment:** keep grouped as scaffold for now, but treat SC036 as the likely future center of gravity
+- **Historical editorial proposal:** keep grouped as scaffold for now, but treat SC036 as the likely future center of gravity
 
-## 3. Traditional description and literature
+### 3. Traditional description and literature
+
+SC035 status in this section: source discussion at the compressed-model
+checkpoint; the current qualifications and source corrections are above.
 
 The literature supports the row unevenly rather than uniformly. For SC035,
 the weak English reflex of inherited *ga-* is secure, but the exact Foma
@@ -117,7 +143,10 @@ note than for a full ordinary sound-law chapter [@Campbell1959, §§356--357,
 therefore asymmetrical: SC036 is the source-backed center, while SC035 and
 SC037 are the necessary flanks.
 
-## 4. Formal implementation
+### 4. Formal implementation
+
+SC035 status in this section: obsolete gaCV/breve-e implementation.
+The trace and cluster exclusion below do not describe today's rule.
 
 In CAPR terms the row is best understood as three different kinds of rule kept
 adjacent for chronological visibility.
@@ -133,7 +162,7 @@ that can support a chapter center. SC035 and SC037 sound more like left and
 right implementation notes that happen to belong in the same local stretch.
 
 SC035 matches initial unaccented `gaCV`, not a morphological boundary.
-Current selected389 and migration-aware legacy380 views each contain
+At that checkpoint, selected389 and migration-aware legacy380 views each contained
 one firing: row1944 believe, `*g*a*l*ēa*b*i*j*a*n*ą` >
 `*g*ĕ*l*ēa*b*i*j*a*n*ą` > *ġelīefan*. Stressed root controls
 gall/guest remain unchanged. The source's *gistīga/gestīga* 'climb into/onto'
@@ -142,7 +171,7 @@ is a genuine cluster-prefixed shape excluded by the proxy
 stress/position restrictions and the absence of boundary recognition;
 they are not new historical attestations or corpus admissions.
 
-## 5. Place in the cascade
+### 5. Place in the cascade
 
 `SC035-SC037` belongs immediately after the promoted `SC031-SC034` diphthong
 corridor and immediately before the promoted `SC039-SC040` medial-vowel core,
@@ -160,10 +189,14 @@ The outward links matter, but they should remain cross-references only:
 Those are chapter-orientation facts, not reasons to build a non-contiguous
 production unit.
 
-## 6. Order-testing evidence
+### 6. Order-testing evidence
 
-- SC035 has no positive earlier boundary; its earlier side is runner-bounded.
-- SC035 must precede SC107 in the current representation, with `believe`;
+SC035 status in this section: frozen tests of the obsolete compressed
+model. Its SC035-before-SC107 constraint is superseded; current SC107
+fronting supplies the input to SC035.
+
+- In the superseded model, SC035 had no positive earlier boundary; its earlier side was runner-bounded.
+- In that obsolete model only, SC035 had to precede SC107, with `believe`;
   this is a technical constraint, not an independent historical date
   before ordinary stressed SC043. Without the breve marking, SC107
   produces prefix `*æ`; SC043 leaves it unchanged and later palatal
@@ -178,7 +211,10 @@ chronology in the row. SC035 and SC037 are still book-relevant, but their
 current ordering evidence is technical or runner-limited. SC035's
 historical existence is not made doubtful by that evidential distinction.
 
-## 7. Interpretation for the book
+### 7. Interpretation for the book
+
+This was an editorial proposal for the superseded compressed model, not
+instructions for assembling or rewriting the current reader.
 
 The row can still work as a cautious derivational bridge report, but only if
 the prose is explicit about the hierarchy inside it.
@@ -192,7 +228,7 @@ the prose is explicit about the hierarchy inside it.
 The existing grouping is retained. A future chapter-shape decision is
 editorial and is not a prerequisite for the completed SC035 adjudication.
 
-## 8. Relation to neighbouring changes
+### 8. Relation to neighbouring changes
 
 - **Left neighbour:** promoted `SC031-SC034` West Saxon diphthong chain
 - **Immediate right neighbour:** promoted `SC039-SC040` medial-vowel core, followed by scaffold `SC041` final-loss note
@@ -204,7 +240,7 @@ editorial and is not a prerequisite for the completed SC035 adjudication.
 These links should orient the chapter without pulling it away from strict local
 order.
 
-## 9. Remaining uncertainty
+### 9. Remaining uncertainty
 
 - cautious grouped bridge versus later split around SC036
 - exact comparative dating of the reduced prefixes, and regular raising
@@ -214,9 +250,9 @@ order.
 - how strongly to point forward to the SC043/SC107 distinction, SC040,
   and SC049 without making the prose feel non-local
 
-## 10. Proposed book-section outline
+### 10. Proposed book-section outline
 
-### Option A: cautious adjacent SC035-SC037 bridge report
+#### Option A: cautious adjacent SC035-SC037 bridge report
 
 1. Why this derivational seam sits between the diphthong corridor and medial lowering
 2. SC035 as a narrow prefix-reduction left flank
@@ -224,30 +260,37 @@ order.
 4. SC037 as a compound-linking / technical right flank
 5. Technical prefix ordering versus stressed SC043, and cross-references to SC040/SC049
 
-### Option B: later split around SC036
+#### Option B: later split around SC036
 
 1. Short SC035 note on prefix reduction and `believe`
 2. Central SC036 report on interstress vocalism and the `soul` / `world` evidence
 3. Short SC037 implementation note on compound linking and `rainbow`
 4. Bridge sentence explaining why the three adjacent changes still appear explicitly in the assembled half
 
-## 11. Editorial status
+### 11. Editorial status
 
-SC035 scholarship and reader prose are updated under the completed
-adjudication; the existing grouped chapter is retained without deciding
-SC036/SC037. Confidence A concerns the secure weak-prefix development,
+SC035 status in this section: the original closure, superseded by the
+prosodic and subsequent adjudications. Current confidence is B, not A.
+
+At the original closure, SC035 scholarship and reader prose were updated;
+the existing grouping was retained without deciding SC036/SC037.
+Confidence A at that checkpoint concerned the secure weak-prefix development,
 not a known single date or universal `gaCV` conditioner. The stage label
 and `preoe` code identify the pre-Old English onset, with Old English
 completion stated separately; `english_specific` identifies the English trajectory
 without denying comparable continental reduction.
 The historical card and frozen displacement records remain unchanged.
 
-## 12. Follow-up comparison of prefix models
+### 12. Follow-up comparison of prefix models
+
+SC035 status in this section: historical model comparison and provisional
+decision, superseded by the prosody adjudication and current RETAIN/B.
+Its A/B/C are experiment labels, not the later historical hypotheses A–D.
 
 The complete reproducible comparison is in
 `audits/sc035-model-comparison/`: all 389 selected rows, the migration-aware
 380 identity population and every one of 108 executable stages. A is the
-accepted compressed proxy; B permits ordinary weak fronting and later
+then-accepted compressed proxy; B permits ordinary weak fronting and later
 merger with explicit weak-prefix/root context; C additionally tests the
 possible regular pretonic raising after the palatal fricative. Both staged
 models preserve every selected final and differ from A at intermediate
@@ -267,8 +310,9 @@ The historical choice is nevertheless not fixed by that coverage gain.
 B does not derive early *gi-*; C derives it by a regular raising which
 the source explicitly leaves open against possible *bi-*-influence.
 Both can merge independently supplied early weak *gi-* to *ge-*.
-The current decision is therefore underdetermination of the precise
+The decision at that checkpoint was therefore underdetermination of the precise
 pathway, with provisional retention of A for its declared narrow population.
+That provisional model-A preference is no longer current.
 This does not claim A is uniquely required, that a prefix-specific early
 sound law has been proven, or that the staged models are impossible.
 It avoids making a hypothetical regular law or an exact intermediate
@@ -277,9 +321,9 @@ advantages and the prosodic distinctions a general prefix account needs
 [@Campbell1959, pp. 140--142, 153--155;
 @RingeTaylor2014, pp. 206, 215--217, 253--255, 334--335].
 
-The earlier historical characterization, A for existence and
-technical/runner-limited edge classifications are retained. No literal
+At that checkpoint the earlier historical characterization, A for existence and
+technical/runner-limited edge classifications were retained. No literal
 rule, selected input, chronology relation, baseline or neighbouring
-adjudication changes. The stale composition-site comment is corrected:
-the incumbent representation protects against SC107 and subsequent
+adjudication changed in that comparison. Its stale composition-site comment was corrected:
+the then-incumbent compressed representation protected against SC107 and subsequent
 inappropriate palatal diphthongization, not against stressed SC043.

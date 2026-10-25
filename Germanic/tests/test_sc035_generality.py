@@ -138,6 +138,26 @@ def test_specialist_counts_keep_categories_and_related_denominators_separate():
     assert counts["Erfurt", "gi/ge"][1] + 2 == 36
 
 
+def test_grouped_dossier_separates_current_authority_from_superseded_sc035():
+    dossier = (ASSAY.parent.parent / "book_dossiers" /
+               "035-037-prefix-and-compound-adjustments.book-dossier.md").read_text()
+    current, historical = dossier.split("\n## Historical research record", 1)
+    row = adjudicate.load_registry_row("SC035")
+    assert "## Current authoritative SC035 account" in current
+    assert row["source_reader_facing_file"] in current
+    assert "confidence b" in current.lower()
+    assert "prefix family" in current
+    assert "not this dossier" in current
+    sections = re.split(r"^### (\d+)\. [^\n]+\n", historical, flags=re.MULTILINE)
+    numbered = dict(zip(sections[1::2], sections[2::2]))
+    assert set(numbered) == {str(n) for n in range(1, 13)}
+    for number in ("2", "4", "6", "11", "12"):
+        assert "superseded" in numbered[number][:350].lower() or (
+            number == "4" and "obsolete" in numbered[number][:350].lower())
+    assert "**Current role:**" not in historical
+    assert "The current decision is therefore" not in historical
+
+
 def test_specialist_readings_preserve_edition_identity_and_page_provenance():
     with (ASSAY.parent / "sc035-literature-readings.tsv").open() as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))

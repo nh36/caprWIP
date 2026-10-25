@@ -51,11 +51,24 @@ This intake does not revise any historical adjudication or reader analysis.
   The held title/copyright pages identify the sole author, the 2011 paperback
   and ISBN 978-1-4443-3933-8.
 
+- `campbell_old_english_grammar.txt` and `campbell_old_english_grammar.pdf`
+  Campbell, *Old English Grammar* (Clarendon Press, 1959).
+  The original scan is retained locally alongside the searchable text;
+  PDFs remain Git-ignored. Title/copyright are PDF sheets 7--8.
+  Printed pp. 140--141 are sheets 158--159; pp. 153--155 are sheets 171--173.
+  PDF SHA256: `fcb26efd5537a04ae3b202154e79a06b1b0c719e2f0ebabd261442e7449d3611`.
+  The SC035 consistency closeout checked these page images; this is not a
+  claim that the entire retained OCR has been corrected against the scan.
+
 - `ringe_taylor_linguistic_history_vol2.txt`
   Ringe & Taylor, *A Linguistic History of English*, Vol. 2: *The Development of Old English* (2014).
   Primary reference for sound change chronology and PGmc→OE derivation. ~38,800 lines.
   Cite the printed running-head page, not the extract's `PAGE` sheet label:
   the stressed-ai discussion is printed pp. 170–171, under labels 185–186.
+  The original `ringe_taylor_linguistic_history_vol2.pdf` is now retained
+  locally (Git-ignored); printed pp. 334--335 are PDF sheets 349--350,
+  checked as images in the SC035 consistency closeout.
+  PDF SHA256: `278f94f6076a31278ecca75d8d0429f0822728e5efe0ec3011186a694cf8d6f2`.
 
 - `ringe_vol1_pie_to_pgmc.txt`
   Ringe, *From Proto-Indo-European to Proto-Germanic*, second edition (2017).

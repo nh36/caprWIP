@@ -17,6 +17,12 @@ covers all51 frozen observations and the modern revised edition; its
 runtime checks from reused historical experiments. Together these amend
 the active interpretation here without replacing frozen receipts.
 
+The subsequent [consistency closeout](sc035-consistency-closeout.md)
+partitions the grouped dossier's superseded SC035 account, clarifies the
+reader's reconstructed stress annotation and upgrades the pivotal
+Campbell/Ringe–Taylor checks to original page images. It does not reopen
+the historical verdict or change the rule, chronology or protected evidence.
+
 ## Identity
 
 - **SC id:** SC035.

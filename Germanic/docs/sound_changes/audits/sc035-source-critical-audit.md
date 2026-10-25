@@ -1,5 +1,12 @@
 # SC035: final source-critical audit
 
+Follow-up to the published audit at `ca0b58f3`:
+[the consistency closeout](sc035-consistency-closeout.md) records newly
+available original Campbell and Ringe–Taylor PDFs and their exact sheet
+maps. The pivotal source-check statuses below are updated accordingly;
+uninspected pages remain qualified. Earlier experimental and publication
+receipts are preserved, not retrospectively relabelled as image-verified.
+
 ## Identity
 
 - **SC id:** SC035.
@@ -155,7 +162,7 @@ qualified. Scholarly citation and CAPR's own inference are separate.
 
 | ID | Assertion / exact support | Status and limit |
 |---|---|---|
-| A01 | Inherited prefix and comparative reflexes: Ringe/Taylor2014 p.206; *ġelīefan* derivation p.245, past p.267 | QUALIFIED: directly checked local searchable text, no independent PDF available. Comparative citations, not a new diplomatic continental collation. |
+| A01 | Inherited prefix and comparative reflexes: Ringe/Taylor2014 p.206; *ġelīefan* derivation p.245, past p.267 | QUALIFIED: directly checked local searchable text; the newly held PDF's images at these locators were not checked in the bounded closeout. Comparative citations, not a new diplomatic continental collation. |
 | A02 | Pforzen *gasokun*,585–610: RuneS find201 inscription/external dating; Berg2014 pp.60–61 | VERIFIED database record and local text. Excavation date is separate; neither establishes an English palatal trigger or English raising date. |
 | A03 | Bammesberger's nominal accent:1981 pp.377–382,384 | VERIFIED, with p.384 image: genuine compounds with nominal second members, not every nominal formation. The reader now states that distinction. |
 | A04 | Dental/Thurneysen argument: Bammesberger p.381 nn.9–10 | VERIFIED PDF5: voiced starting dental, Verner-based formation and Thurneysen devoicing are premises; Gothic þ is not direct observation of prefix accent. Notes qualify alternative derivations. |
@@ -177,15 +184,15 @@ qualified. Scholarly citation and CAPR's own inference are separate.
 | A20 | Early and late Northumbrian forms: Sweet1885 p.125, Sweet1871 p.3, Stevenson1840 p.7 collects2–3 | VERIFIED edition-image readings documented in the earlier generality receipt; no new collation of these manuscripts. They defeat a universal spelling calendar, not every relative phonological ordering. |
 | A21 | Samuels's Lindisfarne/Rushworth comparison:1949 pp.109–111, especially110 (PDF49) | VERIFIED article image; C02 corrects *gisihðe*. Prefix presence/absence is his subject, not a gi/ge vowel-frequency experiment. |
 | A22 | Confused spellings and late raised allophony: HoggGrammar2011 pp.238–239 §§6.53–6.54 | VERIFIED images PDF251–252. The source allows spelling uncertainty and a possible late raised realization, not one universal gi date. |
-| A23 | Regular pretonic raising is a published possibility: Ringe/Taylor p.335 | QUALIFIED text-only support and modal claim; C05 corrects overstatement. The preference among alternatives belongs to CAPR. |
-| A24 | Ordinary unstressed fronting and later merger: Campbell pp.140–141 §§333–334; pp.153–155 §§369–370; Ringe/Taylor pp.334–335 | QUALIFIED local searchable texts, explicitly checked: unaccented fronting and merger are distinguished from the disputed additional raising pathway. |
+| A23 | Regular pretonic raising is a published possibility: Ringe/Taylor p.335 | VERIFIED original PDF350 in the consistency closeout: the modal claim and alternative bi influence agree with the retained text. C05 corrects overstatement; the preference among alternatives belongs to CAPR. |
+| A24 | Ordinary unstressed fronting and later merger: Campbell pp.140–141 §§333–334; pp.153–155 §§369–370; Ringe/Taylor pp.334–335 | VERIFIED original images: Campbell PDF158–159/171–173 and Ringe/Taylor PDF349–350. Fronting has nasal/syllable qualifications; merger evidence includes early and late variation. Neither passage independently proves SC035's additional raising pathway. |
 | A25 | Following-palatal allophony is not preceding-fricative proof: HoggGrammar §§6.51–6.54, held2011 pp.238–239 | VERIFIED images: posttonic retention/raising before palatals and possible late Northumbrian allophony have different environments from SC035. |
-| A26 | bi influence/analogy: Ringe/Taylor p.335; Berg pp.60–61; Pheifer p.lxxv §63 | VERIFIED as attributed possibilities (Ringe/Taylor text-only QUALIFIED). No demonstrated replacement series is supplied. "No positive redistribution established" reports this bounded CAPR investigation, not a universal absence claim. |
+| A26 | bi influence/analogy: Ringe/Taylor p.335; Berg pp.60–61; Pheifer p.lxxv §63 | VERIFIED as attributed possibilities, including Ringe/Taylor original PDF350 in the closeout. No demonstrated replacement series is supplied. "No positive redistribution established" reports this bounded CAPR investigation, not a universal absence claim. |
 | A27 | Stacked *mísgewìeld*, *geédnìwad*, *únforcùð*: Minkova2008 pp.38–41, especially39 | VERIFIED PDF19: winning parses and postlexical incorporation into the first prosodic word; weak outer ge and hiatus before ed; no alliterative test for the cited finite double-prefixed extension. Her analysis is not a PGmc accent reconstruction. |
 | A28 | Written/prosodic units can differ: Riegger/Bögel/Walkden2024 pp.2065–2068 | VERIFIED published text: historical written grouping and restricted modern experimental results; not direct proof of every ancient foot boundary or of SC035 raising. |
 | A29 | Internal *modgidanc*: Sweet1885 p.149; *saegaesetu*: Pheifer pp.lxxv,39 | VERIFIED edition reporting already separated from reconstruction. No independent early short-vowel/stress/trigger combination is established; these are unresolved domain candidates, not dismissed as irrelevant. |
 | A30 | Printed rule, annotation, bounded initial domain, absence of independent non-ga positive/secure negative | VERIFIED against unchanged Foma and previous domain assay. These are CAPR implementation and bounded-search statements, not facts attributed to a handbook. |
-| A31 | Stressed palatal diphthongization versus weak prefix: HoggGrammar §5.48 n.1, held2011 p.104; Ringe/Taylor p.335 | VERIFIED source-backed stress contrast from the existing prosody receipt; text-only qualification for Ringe/Taylor. Exact headed-foot implementation is CAPR's formalization, not Hogg's notation. Contested equipment etymology is not the sole diagnostic. |
+| A31 | Stressed palatal diphthongization versus weak prefix: HoggGrammar §5.48 n.1, held2011 p.104; Ringe/Taylor p.335 | VERIFIED source-backed stress contrast from the existing prosody receipt and Ringe/Taylor original PDF350 in the closeout. Exact headed-foot implementation is CAPR's formalization, not Hogg's notation. Contested equipment etymology is not the sole diagnostic. |
 | A32 | *believe*, fronting/palatal trigger, raising before merger and later lowering: Ringe/Taylor pp.245,267,335; HoggGrammar §§6.50–6.54, held2011 pp.237–239 | QUALIFIED: lexical developments and marginally later weak-i lowering are source-supported; exact SC107/052/035/073/076 dependencies are the adopted model's feeding requirements, not independently dated edges newly proved by these citations. |
 | A33 | Retained staged account, qualified confidence and limited generality | VERIFIED as the registered CAPR decision and unchanged bounded evidence, not independent confirmation by a successful output. |
 | A34 | Revised edition confirms h, distinguishes archetype and prints Corpus *saegeseotu*: `HerrenEtAl2026`, A sheet20 EpA192/Ef341.4/CpA217/archetypeA194; P sheet3 CpP599/archetypeP23 | VERIFIED on edition images. Spacing, corrections and dictionary forms are distinguished in the apparatus. The archetype is not independent manuscript evidence. |
