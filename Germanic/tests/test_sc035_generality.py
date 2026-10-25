@@ -5,6 +5,7 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
@@ -160,15 +161,53 @@ def test_specialist_readings_preserve_edition_identity_and_page_provenance():
     old = {row["id"]: row for row in table("attestations.tsv")}
     assert old["EE76-Ep"]["form"] == "gibiodun"
     assert readings["P74-EE76-Ep"]["reading"] == "gihiodum"
+    assert "C01: Sweet1885 p.40 agrees" in readings["P74-EE76-Ep"]["caveat"]
     for witness in ("Ep", "Erf"):
         row = readings[f"P74-EE228-{witness}"]
         assert row["interpretation"] == "striped(?)"
         assert row["independence_group"] == "EE228"
     row = readings["P74-EE728-Erf"]
     assert row["reading"] == "saegaesetu"
-    assert row["evidence_role"] == "manuscript attestation"
-    assert readings["S49-Ru2-gisithe"]["reading"] == "gisiðe"
+    assert row["evidence_role"] == "edition transcription"
+    assert "manuscript UNVERIFIED" in row["verification"]
+    assert readings["S49-Ru2-gisithe"]["reading"] == "gisihðe"
+    assert "C02:" in readings["S49-Ru2-gisithe"]["caveat"]
     assert readings["S49-Ru2-gisithe"]["locator"] == "Mark 9.9"
+
+
+def test_source_critical_corrections_do_not_rewrite_the_frozen_receipt():
+    assert hashlib.sha256((ASSAY / "attestations.tsv").read_bytes()).hexdigest() == (
+        "2a40862514f052edc7ffeb0b039d09205bddd304473d83c6f8a59975f1e998cf")
+    audit = (ASSAY.parent / "sc035-source-critical-audit.md").read_text()
+    for correction in ("C01", "C02", "C03", "C04"):
+        assert correction in audit
+    for status in ("VERIFIED", "QUALIFIED", "INCORRECT", "UNVERIFIED"):
+        assert status in audit
+    reader = (ROOT / "Germanic/docs/sound_changes/reader_facing/"
+              "035-pretonic-front-vowel-raising.md").read_text()
+    assert "gibiodun" not in reader
+    assert "*gibrec* 'breaking'" not in reader
+
+
+def test_source_collation_covers_each_frozen_observation_once():
+    apparatus = (ASSAY.parent / "sc035-source-collation.md").read_text()
+    frozen = {row["id"] for row in table("attestations.tsv")}
+    covered = []
+    extras = set()
+    for key in re.findall(r"^\| ([A-Za-z0-9.*-]+) \|", apparatus, re.MULTILINE):
+        if key.endswith("-*"):
+            matches = sorted(item for item in frozen if item.startswith(key[:-1]))
+            assert len(matches) == 3, key
+            covered.extend(matches)
+        elif key in frozen:
+            covered.append(key)
+        elif key.startswith(("EE728-", "S49-")):
+            assert key not in extras
+            extras.add(key)
+    assert Counter(covered) == Counter({key: 1 for key in frozen})
+    assert extras == {"EE728-Ep", "EE728-Erf", "EE728-Corp", "S49-Ru2-gisithe"}
+    entries = parse_entries((ROOT / "docs/refs.bib").read_text())
+    assert len([entry for entry in entries if entry.key == "HerrenEtAl2026"]) == 1
 
 
 def test_pforzen_record_keeps_object_date_distinct_from_excavation():

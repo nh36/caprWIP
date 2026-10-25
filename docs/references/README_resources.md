@@ -152,6 +152,40 @@ This intake does not revise any historical adjudication or reader analysis.
 
 ### SC035 focused acquisitions (2026-10-25)
 
+Final source-critical supplement: `HerrenEtAl2026`, revised online
+*Épinal-Erfurt Glossary*. The project's editors page identifies Michael
+W. Herren, Cameron Laird, David W. Porter, Hans Sauer and Gernot Wieland;
+the short “Herren–Porter–Sauer” description is not its complete credit.
+Landing page:
+https://epinal-erfurt.artsci.utoronto.ca/index.php/new-revised-edition/.
+Targeted PDFs are local-only ignored holdings named
+`herren_et_al_epinal_erfurt_revised_{a,b,c,p,introduction}.pdf`.
+No full copyrighted extraction or PDF is redistributed.
+The site states copyright the editors; free access is not an open licence.
+August2026 letter URLs use the base
+`https://epinal-erfurt.artsci.utoronto.ca/wp-content/uploads/2026/08/`
+and filenames `a_eperf_final.pdf`, `b_eperf_final.pdf`,
+`c_eperf_final.pdf`, `p_eperf_final.pdf`.
+Introduction:
+https://epinal-erfurt.artsci.utoronto.ca/wp-content/uploads/2025/02/Introduction-to-Revised-Edition.pdf.
+Original PDF SHA256 fingerprints:
+
+| Holding | SHA256 |
+|---|---|
+| A | `583e3ad01f10373da249d74456f62bda4ae13911330ca355feea99ced1a811f3` |
+| B | `be821d1c564f4ca356d696e8b8c66169525859cc60ff48593a2c5ac75f0765df` |
+| C | `dc098032cb80d07806b4cf64d20fef019a51602c259d4d864c6487554b17952f` |
+| P | `d12fc1178a2661ea2d8824b0e24b160f7667bf793b923e2d4e0e56a8277e6faf` |
+| Introduction | `2c1baf45d25faac33e98de3eb4ecf97b131a574c90313729c70c8614efd0bdf4` |
+
+Checked letter sheets A20, B4, C8–12/C21 and P3 distinguish actual
+manuscript columns from reconstructed archetypes. The detailed SC035
+collation apparatus records spacing, corrections, dictionary diacritics
+and the genuine Corpus *saegeseotu* edition difference.
+Seiler2017 is available through its registered open-access volume URL;
+Seiler2019 was identified bibliographically but no reliable readable copy
+was obtained. Do not cite the latter as an inspected argument.
+
 These are source holdings, not generated manuscript text. Original PDFs follow
 the existing local-only ignored-PDF policy; no copyrighted catalogue is
 redistributed. Public-domain edition text extractions are navigation aids,

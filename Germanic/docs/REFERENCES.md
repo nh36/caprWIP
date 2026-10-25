@@ -33,6 +33,20 @@ list below.
 
 ## Focused early-text verification
 
+The [SC035 source-critical audit](sound_changes/audits/sc035-source-critical-audit.md)
+amends the earlier *gibiodun* transcription explicitly: Sweet1885 p.40
+and Pheifer1974 p.6 agree on *gihiodum*. It records the selected original
+Épinal and Corpus manuscript images, edition-only limits, and the focused
+Seiler2017/Versloot2025 assessment. `Seiler2017` resolves to the open-access
+chapter pp.153–174 (PDF sheets162–183); `Versloot2025` retains its stable
+key but now records the 2026 issue year and 2025 online-first publication.
+Its [collation apparatus](sound_changes/audits/sc035-source-collation.md)
+overlays all51 frozen observations without rewriting them, adds the revised
+`HerrenEtAl2026` manuscript-column comparison and preserves genuine edition
+differences. Exact targeted holdings, revision URLs and hashes are recorded
+in the resource index; archetype reconstructions are never counted as
+manuscript attestations.
+
 - `Sweet1885`, `docs/references/sweet_1885_oldest_english_texts.{pdf,txt}`:
   complete public-domain EETS83 edition. EE/Corpus pp.39–53,107; early
   Northumbrian pp.125–127,148–149; Vespasian pp.188–189. Edition spelling

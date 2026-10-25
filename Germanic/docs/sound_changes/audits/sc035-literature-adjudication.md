@@ -1,5 +1,22 @@
 # SC035: specialist literature, accentuation and manuscript evidence
 
+Source-critical amendment to the delivered text at `976c1d07`:
+[the final scholarly audit](sc035-source-critical-audit.md) records the
+scan/manuscript checks and claim-by-claim statuses. Sweet and Pheifer agree
+on *gihiodum* (Sweet p.40); *gibiodun* in the frozen ledger is a CAPR
+transcription error, not an editorial disagreement. Samuels p.110 prints
+*gisihðe*, and Sweet p.602 glosses Corpus *gibrec* as 'phlegm', not
+'breaking'. The corrections below amend active interpretation explicitly;
+the 51-observation ledger and earlier validation receipts are unchanged.
+RETAIN/B, stage, scope, order, rule and corpus remain unchanged.
+The expanded final audit additionally rechecks the competing historical
+accounts, the lack of independent non-ga controls and the bounded formal
+domain. Its [edition-separated apparatus](sc035-source-collation.md)
+covers all51 frozen observations and the modern revised edition; its
+[validation closeout](sc035-final-validation.md) distinguishes fresh
+runtime checks from reused historical experiments. Together these amend
+the active interpretation here without replacing frozen receipts.
+
 ## Identity
 
 - **SC id:** SC035.
@@ -228,10 +245,13 @@ lowering. Whole-prefix alternation in Samuels is a different phenomenon.
 The new `sc035-literature-readings.tsv` supplements, rather than mutates,
 the 51-observation Sweet-based ledger. Three important qualifications:
 
-- EE76: Pheifer p. 6 prints Épinal *gihiodum*, not Sweet's *gibiodun*;
-  p. xxiii §4 n. 1 also flags the wrongly expanded final nasal. The
-  apparatus gives Corpus *geeodun, -on*. Do not silently reconcile h/b
-  or turn an editorial expansion into a new historical sound.
+- EE76 (correction C01): Pheifer p. 6 and Sweet p. 40 both print Épinal
+  *gihiodum*. The manuscript f.1v (bound94v), column d, confirms h.
+  Pheifer p. lxxxiii §72 n. 6 interprets it as apparently marking hiatus;
+  p. xxiii §4 n. 1 questions expansion of the final nasal. The visible
+  written m, an explanation involving an erroneous expansion, and an
+  emended n are distinct. The apparatus gives Corpus *geeodun, -on*.
+  The frozen ledger's *gibiodun* is erroneous, not Sweet's transcription.
 - EE228: *gybyrdid / gebyrdid* belongs to the gloss for *clabatum*.
   Pheifer p. 74 interprets it as 'striped(?)', comparing *bord* and
   Latin *clauus*. The former reader gloss 'born' was wrong; this is not
@@ -262,7 +282,8 @@ Early Northumbrian *gistiga*, Vespasian and Alfredian ge, Durham Ritual gi,
 and Corpus gi remain the independent textual traditions already documented.
 Samuels1949 p. 110 adds the Lindisfarne–Rushworth comparison: prefixed and
 unprefixed nouns alternate in Lindisfarne, while Rushworth2 has gi forms,
-including image-checked *gisiðe*. His subject is prefix presence/function,
+including *gisihðe* (correction C02: the earlier image transcription
+incorrectly omitted h). His subject is prefix presence/function,
 not a gi/ge frequency census. Late Northumbrian gi may involve continued
 spelling or raised allophony (Hogg §6.54); it is not the date of one
 pan-English lowering event.
@@ -287,7 +308,8 @@ SHA256s; the established dictionary/grammar holdings resolve through their
 bibliographic records. Session image exports are disposable aids, not a
 new source authority. Quinlin p. 155's damaged OCR `*/--/` reads
 `*/-ō-/` beside `*/-wō-/` on the image. Samuels's damaged *gisihoe*
-reads *gisiðe*. No global OCR substitution or source-text rewrite was made.
+reads *gisihðe*, not the earlier audit's *gisiðe* (C02).
+No global OCR substitution or source-text rewrite was made.
 
 Pheifer's supplied PDF is itself a converted reprint with missing
 diacritics. Its image confirms numbers and the visible letter readings,

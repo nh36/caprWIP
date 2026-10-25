@@ -14,8 +14,9 @@ nor a date for English raising
 external dating; @Berg2014, pp. 60--61].
 
 The inherited accent is disputed. Bammesberger distinguishes verbal
-constructions from nominal compounds, reconstructing initial stress
-for the latter. His strongest phonological argument uses the dental
+constructions from genuine compounds with nominal second members,
+reconstructing initial stress for the latter, not for every nominal
+formation. His strongest phonological argument uses the dental
 contrast between Gothic *gabaurþs* 'birth' and West Germanic cognates:
 starting from a voiced dental, Thurneysen's Law would require an
 unstressed root and hence a stressed prefix. His account also requires
@@ -25,7 +26,7 @@ primary word stress and contests those premises. An alternative account
 of inherited dental alternation further prevents the Gothic consonant
 from uniquely determining prefix stress. These are competing historical
 arguments, not observations of Old English metrical stress
-[@Bammesberger1981, pp. 377--382, especially p. 381 and nn. 9--10;
+[@Bammesberger1981, pp. 377--382, 384, especially p. 381 and nn. 9--10;
 @Quinlin1991, pp. 150--157; @Ringe2017, pp. 305--306].
 
 The often-cited *ġeatwe* 'equipment' is not a secure exception with
@@ -74,27 +75,35 @@ simply be transferred to this sample
 The larger distribution complements, rather than replaces, the paired
 readings. Nine Épinal--Erfurt alignments identified by Toller include
 differences in both directions; their corresponding Corpus readings
-have *ge-*. Corpus nevertheless also has *gibrec* 'breaking'.
+have *ge-*. Corpus nevertheless also has *gibrec* 'phlegm',
+glossing Latin *umecta*.
 A written correction from *i* to *e* does not itself date phonological
 lowering. These readings overlap the larger edition's material and
 must not be counted again as independent confirmations
-[@Toller1921, p. 284, s.v. ge-; @Sweet1885, pp. 48--49, 107].
+[@Toller1921, p. 284, s.v. ge-; @Sweet1885, pp. 48--49, 107, 602].
 
 Difficult forms require lexical and editorial discrimination.
 Épinal *gybyrdid*, beside Erfurt *gebyrdid*, means 'striped(?)' in
 Pheifer's interpretation, not 'born'; it cannot witness the accent
-of *ġebyrd* 'birth'. Pheifer prints *gihiodum* where Sweet
-prints *gibiodun*, beside Erfurt *gaeadun* and Corpus *geeodun*.
-That edition difference must not be silently normalized.
+of *ġebyrd* 'birth'. Sweet and Pheifer both print Épinal *gihiodum*,
+beside Erfurt *gaeadun* and Corpus *geeodun*. The manuscript
+confirms *h*; Pheifer interprets it as a possible hiatus marker.
 Pheifer also compares Épinal *saegesetu* with Erfurt *saegaesetu*
 'maritime regions', where the disputed vowel is internal.
 Neither exceptional *ga-* spelling establishes by itself an
 unraised short vowel after an independently established palatal
 fricative: early prosody, vowel value and transmission remain material
-questions. The supplied electronic edition has lost some original
-diacritics, so fine distinctions require an independent printed witness
-[@Pheifer1974, pp. xxiii, lxxv, 6, 13, 39, 74, 108;
-@Sweet1885, pp. 39, 50].
+questions
+[@Pheifer1974, pp. xxiii, lxxv, lxxxiii, §§4, 63, 72,
+and pp. 6, 13, 39, 74, 108; @Sweet1885, pp. 27--28, 40, 50].
+
+The revised critical edition confirms the *h* in *gi hiodum* and
+distinguishes manuscript readings from its reconstructed archetype.
+It also prints Corpus *saegeseotu*, rather than Pheifer's *saegesetu*:
+real editorial differences must remain distinct from modern transcription
+errors. Neither this root-vowel difference nor editorial word division
+decides the prefix's early phonetic history
+[@HerrenEtAl2026, letter A, PDF p. 20, Ep A192, and letter P, PDF p. 3, Cp P599].
 
 The dates of manuscripts are not the dates of all their linguistic
 material. Épinal is placed around 700. Herren and Sauer date the
@@ -107,6 +116,12 @@ English revision and continental copying must remain distinct
 [@LucasLucas2012, p. 67; @Lucas2016, p. 11;
 @HerrenSauer2016, pp. 129--132; @Pheifer1974, p. xli, §24;
 @Pheifer1987, pp. 34--37].
+
+Seiler's analysis of inherited spelling systems and source batches
+reinforces this caution: an aggregate need not represent one scribal
+phonology. Her evidence chiefly concerns wyn and thorn, not a new
+*gi-/ge-* census or a reclassification of Pheifer's tokens
+[@Seiler2017, pp. 159--164, 167--168].
 
 Early Northumbrian *gistiga* 'climb into/onto' and later Northumbrian
 *giher* 'hear' and *gitrivadon* 'we trust' prevent a universal
@@ -125,8 +140,9 @@ a unique phonemic interpretation of each vowel
 
 The preferred reconstruction remains ordinary unstressed fronting,
 palatalization, raising and later lowering:
-\emph{*ga- > *gæ- > *gi- > *ge-}. Ringe and Taylor explicitly propose
-regular raising of short pretonic \emph{*æ} after a palatal fricative.
+\emph{*ga- > *gæ- > *gi- > *ge-}. Ringe and Taylor consider
+regular raising of short pretonic \emph{*æ} after a palatal fricative
+as one possibility, alongside influence from *bi-*.
 The preceding high front articulation supplies a plausible phonetic
 motivation, not direct measurement of the intermediate vowel.
 Fronting and later weak-vowel merger are independently supported
@@ -143,9 +159,10 @@ possibility, not a demonstrated replacement. Pheifer's uniform *bi-*
 and variable *gi-* are not matched for stress or lexical distribution;
 he considers stressed *bi-* and an ablaut variant corresponding to
 continental *ga-* as possible explanations. No positive redistribution
-or substitution has been established. Regular raising therefore remains
-preferable, without pretending that its precise phonetics or full
-generality have been proved
+or substitution has been established. Equally, spelling alone does not
+demonstrate an obligatory separate high-vowel phonemic stage.
+Regular raising is the more economical working reconstruction within
+the adopted regular account, not an experimentally observed mechanism
 [@RingeTaylor2014, p. 335; @Berg2014, pp. 60--61;
 @Pheifer1974, p. lxxv, §63;
 @HoggGrammar1992, §§6.51--6.54 (held 2011 reprint, pp. 238--239)].
@@ -173,6 +190,12 @@ same-environment test. No independent non-\emph{*ga-} positive or genuine
 same-environment unraised negative has been established
 [@Sweet1885, p. 149; @Pheifer1974, pp. lxxv, 39;
 @RieggerBogelWalkden2024, pp. 2065--2068].
+
+The lexical concentration of the evidence is consequential: a rule
+without a prefix label is not thereby independently demonstrated across
+the vocabulary. Its regular phonological conditioning remains a
+testable reconstruction of this prefix family's history, rather than
+a securely established generalization from several unrelated families.
 
 ## SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction}
 

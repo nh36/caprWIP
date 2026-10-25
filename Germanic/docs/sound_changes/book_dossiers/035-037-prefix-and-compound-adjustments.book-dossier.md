@@ -7,6 +7,14 @@ the generality adjudication and its 51 observations while adding Pheifer's
 aggregate gi/ge counts (Épinal 40/13, Erfurt 31/34), edition-sensitive
 readings and independently analysed stacked-prefix prosody. These are
 related transmitted populations, not additional independent votes.
+The linked source-critical amendment,
+`audits/sc035-source-critical-audit.md`, corrects the false Sweet/Pheifer
+disagreement: both print *gihiodum*. It also corrects Samuels to *gisihðe*
+and the Corpus *gibrec* gloss to 'phlegm'. Frozen receipts are unchanged.
+Its expanded adversarial review retains B as a qualified regular
+reconstruction of the prefix family, not a demonstrated cross-lexical
+law. `audits/sc035-source-collation.md` distinguishes modern manuscript
+columns and reconstructed archetypes, including genuine edition variants.
 Geatwe's prefixed etymology is disputed and cannot securely diagnose
 exceptional inherited prefix stress. Pheifer's gybyrdid is 'striped(?)',
 not 'born'. No positive bi-driven replacement or better evidenced regular
