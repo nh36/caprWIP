@@ -2,6 +2,33 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## ga-/gi-/ge- intake (2026-10-25)
+
+The [acquisition and neutral navigation record](ga_prefix_2026-10-25/README.md)
+catalogues all 15 supplied PDFs, selection/exclusions, SHA256 identities,
+edition qualifications and all 610 selected PDF sheets. Ten publications
+(11 PDFs, including Gante's slides and handout) are newly registered:
+`Quinlin1991`, `Bammesberger1981`, `Minkova2008`, `Crouch1995`,
+`Pheifer1974`, `Samuels1949`, `Pheifer1987`, `HerrenSauer2016`,
+`vanHelten1891` and `Gante2012`.
+
+Original selected PDFs are retained at the `docs/references/*.pdf` paths
+recorded there and remain ignored. Complete restricted searchable texts
+are **local-only** under `.cache/ga-prefix/holdings/`; they are not available
+from a public clone. Native extraction was retained where usable; local
+Tesseract improved Bammesberger, Quinlin and Samuels. Only the public-domain
+van Helten article was sent to the established Google Vision runner; its
+page-preserving `van_helten_1891_grammatisches.vision.txt` is public.
+No ignore rule was relaxed, and no restricted complete transcript is committed.
+
+The supplied Pheifer book is a netLibrary conversion of the 1998 reprint
+of the 1974 edition, not a facsimile. Its own disclaimer explicitly removes
+some diacritics; OCR cannot recover characters already absent from that PDF.
+Roman labels are retained; p.lxxv, §63 is PDF sheet73. The entire supplied
+edition, apparatus and both indices are searchable with this qualification.
+Bennett1968 and Wright--Wülcker volumeII were not supplied and remain pending.
+This intake does not revise any historical adjudication or reader analysis.
+
 ## Old English grammars and historical phonology
 
 - `hogg_vol1.txt`  

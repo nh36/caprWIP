@@ -1,0 +1,611 @@
+intake_id	citation_key	pdf_sheet	publication_page_or_slide	mapping_basis
+1	Bammesberger1981	1	377	sequence_from_adjacent_folios
+1	Bammesberger1981	2	378	extracted_edge_folio
+1	Bammesberger1981	3	379	extracted_edge_folio
+1	Bammesberger1981	4	380	extracted_edge_folio
+1	Bammesberger1981	5	381	extracted_edge_folio
+1	Bammesberger1981	6	382	extracted_edge_folio
+1	Bammesberger1981	7	383	extracted_edge_folio
+1	Bammesberger1981	8	384	extracted_edge_folio
+1	Bammesberger1981	9	385	extracted_edge_folio
+1	Bammesberger1981	10	386	extracted_edge_folio
+1	Bammesberger1981	11	387	extracted_edge_folio
+1	Bammesberger1981	12	388	extracted_edge_folio
+1	Bammesberger1981	13	389	extracted_edge_folio
+1	Bammesberger1981	14	390	extracted_edge_folio
+1	Bammesberger1981	15	391	extracted_edge_folio
+2	Pheifer1974	1	unnumbered	blank_opening_sheet
+2	Pheifer1974	2	iii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	3	iv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	4	v	supplied_ebook_label_not_facsimile
+2	Pheifer1974	5	vi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	6	vii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	7	ix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	8	x	supplied_ebook_label_not_facsimile
+2	Pheifer1974	9	xi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	10	xii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	11	xiii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	12	xiv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	13	xv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	14	xvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	15	xvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	16	xviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	17	xix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	18	xx	supplied_ebook_label_not_facsimile
+2	Pheifer1974	19	xxi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	20	xxii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	21	xxiii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	22	xxiv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	23	xxv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	24	xxvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	25	xxvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	26	xxviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	27	xxix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	28	xxx	supplied_ebook_label_not_facsimile
+2	Pheifer1974	29	xxxi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	30	xxxii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	31	xxxiii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	32	xxxiv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	33	xxxv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	34	xxxvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	35	xxxvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	36	xxxviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	37	xxxix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	38	xl	supplied_ebook_label_not_facsimile
+2	Pheifer1974	39	xli	supplied_ebook_label_not_facsimile
+2	Pheifer1974	40	xlii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	41	xliii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	42	xliv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	43	xlv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	44	xlvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	45	xlvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	46	xlviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	47	xlix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	48	l	supplied_ebook_label_not_facsimile
+2	Pheifer1974	49	li	supplied_ebook_label_not_facsimile
+2	Pheifer1974	50	lii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	51	liii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	52	liv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	53	lv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	54	lvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	55	lvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	56	lviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	57	lix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	58	lx	supplied_ebook_label_not_facsimile
+2	Pheifer1974	59	lxi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	60	lxii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	61	lxiii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	62	lxiv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	63	lxv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	64	lxvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	65	lxvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	66	lxviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	67	lxix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	68	lxx	supplied_ebook_label_not_facsimile
+2	Pheifer1974	69	lxxi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	70	lxxii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	71	lxxiii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	72	lxxiv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	73	lxxv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	74	lxxvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	75	lxxvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	76	lxxviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	77	lxxix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	78	lxxx	supplied_ebook_label_not_facsimile
+2	Pheifer1974	79	lxxxi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	80	lxxxii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	81	lxxxiii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	82	lxxxiv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	83	lxxxv	supplied_ebook_label_not_facsimile
+2	Pheifer1974	84	lxxxvi	supplied_ebook_label_not_facsimile
+2	Pheifer1974	85	lxxxvii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	86	lxxxviii	supplied_ebook_label_not_facsimile
+2	Pheifer1974	87	lxxxix	supplied_ebook_label_not_facsimile
+2	Pheifer1974	88	xc	supplied_ebook_label_not_facsimile
+2	Pheifer1974	89	xci	supplied_ebook_label_not_facsimile
+2	Pheifer1974	90	1	supplied_ebook_label_not_facsimile
+2	Pheifer1974	91	2	supplied_ebook_label_not_facsimile
+2	Pheifer1974	92	3	supplied_ebook_label_not_facsimile
+2	Pheifer1974	93	4	supplied_ebook_label_not_facsimile
+2	Pheifer1974	94	5	supplied_ebook_label_not_facsimile
+2	Pheifer1974	95	6	supplied_ebook_label_not_facsimile
+2	Pheifer1974	96	7	supplied_ebook_label_not_facsimile
+2	Pheifer1974	97	8	supplied_ebook_label_not_facsimile
+2	Pheifer1974	98	9	supplied_ebook_label_not_facsimile
+2	Pheifer1974	99	10	supplied_ebook_label_not_facsimile
+2	Pheifer1974	100	11	supplied_ebook_label_not_facsimile
+2	Pheifer1974	101	12	supplied_ebook_label_not_facsimile
+2	Pheifer1974	102	13	supplied_ebook_label_not_facsimile
+2	Pheifer1974	103	14	supplied_ebook_label_not_facsimile
+2	Pheifer1974	104	15	supplied_ebook_label_not_facsimile
+2	Pheifer1974	105	16	supplied_ebook_label_not_facsimile
+2	Pheifer1974	106	17	supplied_ebook_label_not_facsimile
+2	Pheifer1974	107	18	supplied_ebook_label_not_facsimile
+2	Pheifer1974	108	19	supplied_ebook_label_not_facsimile
+2	Pheifer1974	109	20	supplied_ebook_label_not_facsimile
+2	Pheifer1974	110	21	supplied_ebook_label_not_facsimile
+2	Pheifer1974	111	22	supplied_ebook_label_not_facsimile
+2	Pheifer1974	112	23	supplied_ebook_label_not_facsimile
+2	Pheifer1974	113	24	supplied_ebook_label_not_facsimile
+2	Pheifer1974	114	25	supplied_ebook_label_not_facsimile
+2	Pheifer1974	115	26	supplied_ebook_label_not_facsimile
+2	Pheifer1974	116	27	supplied_ebook_label_not_facsimile
+2	Pheifer1974	117	28	supplied_ebook_label_not_facsimile
+2	Pheifer1974	118	29	supplied_ebook_label_not_facsimile
+2	Pheifer1974	119	30	supplied_ebook_label_not_facsimile
+2	Pheifer1974	120	31	supplied_ebook_label_not_facsimile
+2	Pheifer1974	121	32	supplied_ebook_label_not_facsimile
+2	Pheifer1974	122	33	supplied_ebook_label_not_facsimile
+2	Pheifer1974	123	34	supplied_ebook_label_not_facsimile
+2	Pheifer1974	124	35	supplied_ebook_label_not_facsimile
+2	Pheifer1974	125	36	supplied_ebook_label_not_facsimile
+2	Pheifer1974	126	37	supplied_ebook_label_not_facsimile
+2	Pheifer1974	127	38	supplied_ebook_label_not_facsimile
+2	Pheifer1974	128	39	supplied_ebook_label_not_facsimile
+2	Pheifer1974	129	40	supplied_ebook_label_not_facsimile
+2	Pheifer1974	130	41	supplied_ebook_label_not_facsimile
+2	Pheifer1974	131	42	supplied_ebook_label_not_facsimile
+2	Pheifer1974	132	43	supplied_ebook_label_not_facsimile
+2	Pheifer1974	133	44	supplied_ebook_label_not_facsimile
+2	Pheifer1974	134	45	supplied_ebook_label_not_facsimile
+2	Pheifer1974	135	46	supplied_ebook_label_not_facsimile
+2	Pheifer1974	136	47	supplied_ebook_label_not_facsimile
+2	Pheifer1974	137	48	supplied_ebook_label_not_facsimile
+2	Pheifer1974	138	49	supplied_ebook_label_not_facsimile
+2	Pheifer1974	139	50	supplied_ebook_label_not_facsimile
+2	Pheifer1974	140	51	supplied_ebook_label_not_facsimile
+2	Pheifer1974	141	52	supplied_ebook_label_not_facsimile
+2	Pheifer1974	142	53	supplied_ebook_label_not_facsimile
+2	Pheifer1974	143	54	supplied_ebook_label_not_facsimile
+2	Pheifer1974	144	55	supplied_ebook_label_not_facsimile
+2	Pheifer1974	145	56	supplied_ebook_label_not_facsimile
+2	Pheifer1974	146	57	supplied_ebook_label_not_facsimile
+2	Pheifer1974	147	58	supplied_ebook_label_not_facsimile
+2	Pheifer1974	148	59	supplied_ebook_label_not_facsimile
+2	Pheifer1974	149	60	supplied_ebook_label_not_facsimile
+2	Pheifer1974	150	61	supplied_ebook_label_not_facsimile
+2	Pheifer1974	151	62	supplied_ebook_label_not_facsimile
+2	Pheifer1974	152	63	supplied_ebook_label_not_facsimile
+2	Pheifer1974	153	64	supplied_ebook_label_not_facsimile
+2	Pheifer1974	154	65	supplied_ebook_label_not_facsimile
+2	Pheifer1974	155	66	supplied_ebook_label_not_facsimile
+2	Pheifer1974	156	67	supplied_ebook_label_not_facsimile
+2	Pheifer1974	157	68	supplied_ebook_label_not_facsimile
+2	Pheifer1974	158	69	supplied_ebook_label_not_facsimile
+2	Pheifer1974	159	70	supplied_ebook_label_not_facsimile
+2	Pheifer1974	160	71	supplied_ebook_label_not_facsimile
+2	Pheifer1974	161	72	supplied_ebook_label_not_facsimile
+2	Pheifer1974	162	73	supplied_ebook_label_not_facsimile
+2	Pheifer1974	163	74	supplied_ebook_label_not_facsimile
+2	Pheifer1974	164	75	supplied_ebook_label_not_facsimile
+2	Pheifer1974	165	76	supplied_ebook_label_not_facsimile
+2	Pheifer1974	166	77	supplied_ebook_label_not_facsimile
+2	Pheifer1974	167	78	supplied_ebook_label_not_facsimile
+2	Pheifer1974	168	79	supplied_ebook_label_not_facsimile
+2	Pheifer1974	169	80	supplied_ebook_label_not_facsimile
+2	Pheifer1974	170	81	supplied_ebook_label_not_facsimile
+2	Pheifer1974	171	82	supplied_ebook_label_not_facsimile
+2	Pheifer1974	172	83	supplied_ebook_label_not_facsimile
+2	Pheifer1974	173	84	supplied_ebook_label_not_facsimile
+2	Pheifer1974	174	85	supplied_ebook_label_not_facsimile
+2	Pheifer1974	175	86	supplied_ebook_label_not_facsimile
+2	Pheifer1974	176	87	supplied_ebook_label_not_facsimile
+2	Pheifer1974	177	88	supplied_ebook_label_not_facsimile
+2	Pheifer1974	178	89	supplied_ebook_label_not_facsimile
+2	Pheifer1974	179	90	supplied_ebook_label_not_facsimile
+2	Pheifer1974	180	91	supplied_ebook_label_not_facsimile
+2	Pheifer1974	181	92	supplied_ebook_label_not_facsimile
+2	Pheifer1974	182	93	supplied_ebook_label_not_facsimile
+2	Pheifer1974	183	94	supplied_ebook_label_not_facsimile
+2	Pheifer1974	184	95	supplied_ebook_label_not_facsimile
+2	Pheifer1974	185	96	supplied_ebook_label_not_facsimile
+2	Pheifer1974	186	97	supplied_ebook_label_not_facsimile
+2	Pheifer1974	187	98	supplied_ebook_label_not_facsimile
+2	Pheifer1974	188	99	supplied_ebook_label_not_facsimile
+2	Pheifer1974	189	100	supplied_ebook_label_not_facsimile
+2	Pheifer1974	190	101	supplied_ebook_label_not_facsimile
+2	Pheifer1974	191	102	supplied_ebook_label_not_facsimile
+2	Pheifer1974	192	103	supplied_ebook_label_not_facsimile
+2	Pheifer1974	193	104	supplied_ebook_label_not_facsimile
+2	Pheifer1974	194	105	supplied_ebook_label_not_facsimile
+2	Pheifer1974	195	106	supplied_ebook_label_not_facsimile
+2	Pheifer1974	196	107	supplied_ebook_label_not_facsimile
+2	Pheifer1974	197	108	supplied_ebook_label_not_facsimile
+2	Pheifer1974	198	109	supplied_ebook_label_not_facsimile
+2	Pheifer1974	199	110	supplied_ebook_label_not_facsimile
+2	Pheifer1974	200	111	supplied_ebook_label_not_facsimile
+2	Pheifer1974	201	112	supplied_ebook_label_not_facsimile
+2	Pheifer1974	202	113	supplied_ebook_label_not_facsimile
+2	Pheifer1974	203	114	supplied_ebook_label_not_facsimile
+2	Pheifer1974	204	115	supplied_ebook_label_not_facsimile
+2	Pheifer1974	205	116	supplied_ebook_label_not_facsimile
+2	Pheifer1974	206	117	supplied_ebook_label_not_facsimile
+2	Pheifer1974	207	118	supplied_ebook_label_not_facsimile
+2	Pheifer1974	208	119	supplied_ebook_label_not_facsimile
+2	Pheifer1974	209	120	supplied_ebook_label_not_facsimile
+2	Pheifer1974	210	121	supplied_ebook_label_not_facsimile
+2	Pheifer1974	211	122	supplied_ebook_label_not_facsimile
+2	Pheifer1974	212	123	supplied_ebook_label_not_facsimile
+2	Pheifer1974	213	124	supplied_ebook_label_not_facsimile
+2	Pheifer1974	214	125	supplied_ebook_label_not_facsimile
+2	Pheifer1974	215	126	supplied_ebook_label_not_facsimile
+2	Pheifer1974	216	127	supplied_ebook_label_not_facsimile
+2	Pheifer1974	217	128	supplied_ebook_label_not_facsimile
+2	Pheifer1974	218	129	supplied_ebook_label_not_facsimile
+2	Pheifer1974	219	130	supplied_ebook_label_not_facsimile
+2	Pheifer1974	220	131	supplied_ebook_label_not_facsimile
+2	Pheifer1974	221	132	supplied_ebook_label_not_facsimile
+2	Pheifer1974	222	133	supplied_ebook_label_not_facsimile
+2	Pheifer1974	223	134	supplied_ebook_label_not_facsimile
+2	Pheifer1974	224	135	supplied_ebook_label_not_facsimile
+2	Pheifer1974	225	136	supplied_ebook_label_not_facsimile
+2	Pheifer1974	226	137	supplied_ebook_label_not_facsimile
+2	Pheifer1974	227	138	supplied_ebook_label_not_facsimile
+2	Pheifer1974	228	139	supplied_ebook_label_not_facsimile
+2	Pheifer1974	229	140	supplied_ebook_label_not_facsimile
+2	Pheifer1974	230	141	supplied_ebook_label_not_facsimile
+2	Pheifer1974	231	142	supplied_ebook_label_not_facsimile
+2	Pheifer1974	232	143	supplied_ebook_label_not_facsimile
+2	Pheifer1974	233	144	supplied_ebook_label_not_facsimile
+2	Pheifer1974	234	145	supplied_ebook_label_not_facsimile
+2	Pheifer1974	235	146	supplied_ebook_label_not_facsimile
+2	Pheifer1974	236	147	supplied_ebook_label_not_facsimile
+2	Pheifer1974	237	148	supplied_ebook_label_not_facsimile
+2	Pheifer1974	238	149	supplied_ebook_label_not_facsimile
+2	Pheifer1974	239	150	supplied_ebook_label_not_facsimile
+2	Pheifer1974	240	151	supplied_ebook_label_not_facsimile
+2	Pheifer1974	241	152	supplied_ebook_label_not_facsimile
+2	Pheifer1974	242	153	supplied_ebook_label_not_facsimile
+2	Pheifer1974	243	154	supplied_ebook_label_not_facsimile
+2	Pheifer1974	244	155	supplied_ebook_label_not_facsimile
+2	Pheifer1974	245	156	supplied_ebook_label_not_facsimile
+2	Pheifer1974	246	157	supplied_ebook_label_not_facsimile
+2	Pheifer1974	247	158	supplied_ebook_label_not_facsimile
+2	Pheifer1974	248	159	supplied_ebook_label_not_facsimile
+2	Pheifer1974	249	160	supplied_ebook_label_not_facsimile
+2	Pheifer1974	250	161	supplied_ebook_label_not_facsimile
+2	Pheifer1974	251	162	supplied_ebook_label_not_facsimile
+2	Pheifer1974	252	163	supplied_ebook_label_not_facsimile
+2	Pheifer1974	253	164	supplied_ebook_label_not_facsimile
+2	Pheifer1974	254	165	supplied_ebook_label_not_facsimile
+2	Pheifer1974	255	166	supplied_ebook_label_not_facsimile
+2	Pheifer1974	256	167	supplied_ebook_label_not_facsimile
+2	Pheifer1974	257	168	supplied_ebook_label_not_facsimile
+3	Quinlin1991	1	145	extracted_edge_folio
+3	Quinlin1991	2	146	extracted_edge_folio
+3	Quinlin1991	3	147	extracted_edge_folio
+3	Quinlin1991	4	148	extracted_edge_folio
+3	Quinlin1991	5	149	extracted_edge_folio
+3	Quinlin1991	6	150	extracted_edge_folio
+3	Quinlin1991	7	151	extracted_edge_folio
+3	Quinlin1991	8	152	extracted_edge_folio
+3	Quinlin1991	9	153	extracted_edge_folio
+3	Quinlin1991	10	154	extracted_edge_folio
+3	Quinlin1991	11	155	extracted_edge_folio
+3	Quinlin1991	12	156	extracted_edge_folio
+3	Quinlin1991	13	157	extracted_edge_folio
+3	Quinlin1991	14	158	extracted_edge_folio
+3	Quinlin1991	15	159	extracted_edge_folio
+4	HerrenSauer2016	1	125	extracted_edge_folio
+4	HerrenSauer2016	2	126	extracted_edge_folio
+4	HerrenSauer2016	3	127	extracted_edge_folio
+4	HerrenSauer2016	4	128	extracted_edge_folio
+4	HerrenSauer2016	5	129	extracted_edge_folio
+4	HerrenSauer2016	6	130	extracted_edge_folio
+4	HerrenSauer2016	7	131	extracted_edge_folio
+4	HerrenSauer2016	8	132	extracted_edge_folio
+4	HerrenSauer2016	9	133	extracted_edge_folio
+4	HerrenSauer2016	10	134	extracted_edge_folio
+4	HerrenSauer2016	11	135	extracted_edge_folio
+4	HerrenSauer2016	12	136	extracted_edge_folio
+4	HerrenSauer2016	13	137	extracted_edge_folio
+4	HerrenSauer2016	14	138	extracted_edge_folio
+4	HerrenSauer2016	15	139	extracted_edge_folio
+4	HerrenSauer2016	16	140	extracted_edge_folio
+4	HerrenSauer2016	17	141	extracted_edge_folio
+4	HerrenSauer2016	18	142	extracted_edge_folio
+4	HerrenSauer2016	19	143	extracted_edge_folio
+4	HerrenSauer2016	20	144	extracted_edge_folio
+4	HerrenSauer2016	21	145	extracted_edge_folio
+4	HerrenSauer2016	22	146	extracted_edge_folio
+4	HerrenSauer2016	23	147	extracted_edge_folio
+4	HerrenSauer2016	24	148	extracted_edge_folio
+4	HerrenSauer2016	25	149	extracted_edge_folio
+4	HerrenSauer2016	26	150	extracted_edge_folio
+4	HerrenSauer2016	27	151	extracted_edge_folio
+4	HerrenSauer2016	28	152	extracted_edge_folio
+4	HerrenSauer2016	29	153	extracted_edge_folio
+4	HerrenSauer2016	30	154	extracted_edge_folio
+4	HerrenSauer2016	31	155	extracted_edge_folio
+4	HerrenSauer2016	32	156	extracted_edge_folio
+4	HerrenSauer2016	33	157	extracted_edge_folio
+4	HerrenSauer2016	34	158	extracted_edge_folio
+4	HerrenSauer2016	35	159	extracted_edge_folio
+4	HerrenSauer2016	36	160	extracted_edge_folio
+4	HerrenSauer2016	37	161	extracted_edge_folio
+4	HerrenSauer2016	38	162	extracted_edge_folio
+4	HerrenSauer2016	39	163	extracted_edge_folio
+4	HerrenSauer2016	40	164	extracted_edge_folio
+4	HerrenSauer2016	41	165	extracted_edge_folio
+4	HerrenSauer2016	42	166	extracted_edge_folio
+4	HerrenSauer2016	43	167	extracted_edge_folio
+4	HerrenSauer2016	44	168	extracted_edge_folio
+4	HerrenSauer2016	45	169	extracted_edge_folio
+4	HerrenSauer2016	46	170	extracted_edge_folio
+4	HerrenSauer2016	47	171	extracted_edge_folio
+4	HerrenSauer2016	48	172	extracted_edge_folio
+4	HerrenSauer2016	49	173	extracted_edge_folio
+4	HerrenSauer2016	50	174	extracted_edge_folio
+4	HerrenSauer2016	51	175	extracted_edge_folio
+4	HerrenSauer2016	52	176	extracted_edge_folio
+4	HerrenSauer2016	53	177	extracted_edge_folio
+4	HerrenSauer2016	54	178	extracted_edge_folio
+4	HerrenSauer2016	55	179	extracted_edge_folio
+4	HerrenSauer2016	56	180	extracted_edge_folio
+4	HerrenSauer2016	57	181	extracted_edge_folio
+4	HerrenSauer2016	58	182	extracted_edge_folio
+4	HerrenSauer2016	59	183	extracted_edge_folio
+4	HerrenSauer2016	60	184	extracted_edge_folio
+4	HerrenSauer2016	61	185	extracted_edge_folio
+4	HerrenSauer2016	62	186	extracted_edge_folio
+4	HerrenSauer2016	63	187	extracted_edge_folio
+4	HerrenSauer2016	64	188	extracted_edge_folio
+4	HerrenSauer2016	65	189	extracted_edge_folio
+4	HerrenSauer2016	66	190	extracted_edge_folio
+4	HerrenSauer2016	67	191	extracted_edge_folio
+4	HerrenSauer2016	68	192	extracted_edge_folio
+4	HerrenSauer2016	69	193	extracted_edge_folio
+4	HerrenSauer2016	70	194	extracted_edge_folio
+4	HerrenSauer2016	71	195	extracted_edge_folio
+4	HerrenSauer2016	72	196	extracted_edge_folio
+4	HerrenSauer2016	73	197	extracted_edge_folio
+4	HerrenSauer2016	74	198	extracted_edge_folio
+7	Gante2012	1	title	title_sheet
+7	Gante2012	2	slide 1	displayed_slide_label_animation_retained
+7	Gante2012	3	slide 1	displayed_slide_label_animation_retained
+7	Gante2012	4	slide 1	displayed_slide_label_animation_retained
+7	Gante2012	5	slide 1	displayed_slide_label_animation_retained
+7	Gante2012	6	slide 1	displayed_slide_label_animation_retained
+7	Gante2012	7	slide 1	displayed_slide_label_animation_retained
+7	Gante2012	8	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	9	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	10	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	11	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	12	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	13	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	14	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	15	slide 2	displayed_slide_label_animation_retained
+7	Gante2012	16	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	17	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	18	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	19	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	20	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	21	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	22	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	23	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	24	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	25	slide 3	displayed_slide_label_animation_retained
+7	Gante2012	26	slide 4	displayed_slide_label_animation_retained
+7	Gante2012	27	slide 4	displayed_slide_label_animation_retained
+7	Gante2012	28	slide 4	displayed_slide_label_animation_retained
+7	Gante2012	29	slide 4	displayed_slide_label_animation_retained
+7	Gante2012	30	slide 4	displayed_slide_label_animation_retained
+7	Gante2012	31	slide 4	displayed_slide_label_animation_retained
+7	Gante2012	32	slide 5	displayed_slide_label_animation_retained
+7	Gante2012	33	slide 5	displayed_slide_label_animation_retained
+7	Gante2012	34	slide 5	displayed_slide_label_animation_retained
+7	Gante2012	35	slide 5	displayed_slide_label_animation_retained
+7	Gante2012	36	slide 5	displayed_slide_label_animation_retained
+7	Gante2012	37	slide 5	displayed_slide_label_animation_retained
+7	Gante2012	38	slide 6	displayed_slide_label_animation_retained
+7	Gante2012	39	slide 6	displayed_slide_label_animation_retained
+7	Gante2012	40	slide 6	displayed_slide_label_animation_retained
+7	Gante2012	41	slide 6	displayed_slide_label_animation_retained
+7	Gante2012	42	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	43	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	44	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	45	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	46	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	47	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	48	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	49	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	50	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	51	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	52	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	53	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	54	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	55	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	56	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	57	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	58	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	59	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	60	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	61	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	62	slide 7	displayed_slide_label_animation_retained
+7	Gante2012	63	slide 8	displayed_slide_label_animation_retained
+7	Gante2012	64	slide 8	displayed_slide_label_animation_retained
+7	Gante2012	65	slide 8	displayed_slide_label_animation_retained
+7	Gante2012	66	slide 8	displayed_slide_label_animation_retained
+7	Gante2012	67	slide 8	displayed_slide_label_animation_retained
+7	Gante2012	68	slide 8	displayed_slide_label_animation_retained
+7	Gante2012	69	slide 8	displayed_slide_label_animation_retained
+7	Gante2012	70	slide 9	displayed_slide_label_animation_retained
+7	Gante2012	71	slide 9	displayed_slide_label_animation_retained
+7	Gante2012	72	slide 9	displayed_slide_label_animation_retained
+7	Gante2012	73	slide 9	displayed_slide_label_animation_retained
+7	Gante2012	74	slide 9	displayed_slide_label_animation_retained
+7	Gante2012	75	slide 10	displayed_slide_label_animation_retained
+7	Gante2012	76	slide 11	displayed_slide_label_animation_retained
+7	Gante2012	77	slide 12	displayed_slide_label_animation_retained
+8	Gante2012	1	1	numbered_handout_page
+8	Gante2012	2	2	numbered_handout_page
+8	Gante2012	3	3	numbered_handout_page
+8	Gante2012	4	4	numbered_handout_page
+8	Gante2012	5	5	numbered_handout_page
+8	Gante2012	6	6	numbered_handout_page
+8	Gante2012	7	unnumbered	blank_sheet
+8	Gante2012	8	unnumbered	blank_sheet
+9	Crouch1995	1	165	extracted_edge_folio
+9	Crouch1995	2	166	extracted_edge_folio
+9	Crouch1995	3	167	extracted_edge_folio
+9	Crouch1995	4	168	extracted_edge_folio
+9	Crouch1995	5	169	extracted_edge_folio
+9	Crouch1995	6	170	extracted_edge_folio
+9	Crouch1995	7	171	extracted_edge_folio
+9	Crouch1995	8	172	extracted_edge_folio
+9	Crouch1995	9	173	extracted_edge_folio
+9	Crouch1995	10	174	extracted_edge_folio
+9	Crouch1995	11	175	extracted_edge_folio
+9	Crouch1995	12	176	extracted_edge_folio
+9	Crouch1995	13	177	extracted_edge_folio
+9	Crouch1995	14	178	extracted_edge_folio
+10	Minkova2008	1	21	sequence_from_adjacent_folios
+10	Minkova2008	2	22	extracted_edge_folio
+10	Minkova2008	3	23	extracted_edge_folio
+10	Minkova2008	4	24	extracted_edge_folio
+10	Minkova2008	5	25	extracted_edge_folio
+10	Minkova2008	6	26	extracted_edge_folio
+10	Minkova2008	7	27	extracted_edge_folio
+10	Minkova2008	8	28	extracted_edge_folio
+10	Minkova2008	9	29	extracted_edge_folio
+10	Minkova2008	10	30	extracted_edge_folio
+10	Minkova2008	11	31	extracted_edge_folio
+10	Minkova2008	12	32	extracted_edge_folio
+10	Minkova2008	13	33	extracted_edge_folio
+10	Minkova2008	14	34	extracted_edge_folio
+10	Minkova2008	15	35	extracted_edge_folio
+10	Minkova2008	16	36	extracted_edge_folio
+10	Minkova2008	17	37	extracted_edge_folio
+10	Minkova2008	18	38	extracted_edge_folio
+10	Minkova2008	19	39	extracted_edge_folio
+10	Minkova2008	20	40	extracted_edge_folio
+10	Minkova2008	21	41	extracted_edge_folio
+10	Minkova2008	22	42	extracted_edge_folio
+10	Minkova2008	23	43	extracted_edge_folio
+10	Minkova2008	24	44	extracted_edge_folio
+10	Minkova2008	25	45	extracted_edge_folio
+10	Minkova2008	26	46	extracted_edge_folio
+10	Minkova2008	27	47	extracted_edge_folio
+10	Minkova2008	28	48	extracted_edge_folio
+10	Minkova2008	29	49	extracted_edge_folio
+10	Minkova2008	30	50	extracted_edge_folio
+10	Minkova2008	31	51	extracted_edge_folio
+10	Minkova2008	32	52	extracted_edge_folio
+11	Pheifer1987	1	unnumbered	download_cover
+11	Pheifer1987	2	17	extracted_edge_folio
+11	Pheifer1987	3	18	extracted_edge_folio
+11	Pheifer1987	4	19	sequence_from_adjacent_folios
+11	Pheifer1987	5	20	sequence_from_adjacent_folios
+11	Pheifer1987	6	21	extracted_edge_folio
+11	Pheifer1987	7	22	extracted_edge_folio
+11	Pheifer1987	8	23	extracted_edge_folio
+11	Pheifer1987	9	24	extracted_edge_folio
+11	Pheifer1987	10	25	sequence_from_adjacent_folios
+11	Pheifer1987	11	26	extracted_edge_folio
+11	Pheifer1987	12	27	extracted_edge_folio
+11	Pheifer1987	13	28	extracted_edge_folio
+11	Pheifer1987	14	29	extracted_edge_folio
+11	Pheifer1987	15	30	sequence_from_adjacent_folios
+11	Pheifer1987	16	31	sequence_from_adjacent_folios
+11	Pheifer1987	17	32	extracted_edge_folio
+11	Pheifer1987	18	33	extracted_edge_folio
+11	Pheifer1987	19	34	extracted_edge_folio
+11	Pheifer1987	20	35	extracted_edge_folio
+11	Pheifer1987	21	36	extracted_edge_folio
+11	Pheifer1987	22	37	extracted_edge_folio
+11	Pheifer1987	23	38	extracted_edge_folio
+11	Pheifer1987	24	39	extracted_edge_folio
+11	Pheifer1987	25	40	extracted_edge_folio
+11	Pheifer1987	26	41	extracted_edge_folio
+11	Pheifer1987	27	42	extracted_edge_folio
+11	Pheifer1987	28	43	extracted_edge_folio
+11	Pheifer1987	29	44	extracted_edge_folio
+14	Samuels1949	1	62	sequence_from_adjacent_folios
+14	Samuels1949	2	63	extracted_edge_folio
+14	Samuels1949	3	64	extracted_edge_folio
+14	Samuels1949	4	65	extracted_edge_folio
+14	Samuels1949	5	66	extracted_edge_folio
+14	Samuels1949	6	67	extracted_edge_folio
+14	Samuels1949	7	68	extracted_edge_folio
+14	Samuels1949	8	69	extracted_edge_folio
+14	Samuels1949	9	70	extracted_edge_folio
+14	Samuels1949	10	71	extracted_edge_folio
+14	Samuels1949	11	72	extracted_edge_folio
+14	Samuels1949	12	73	extracted_edge_folio
+14	Samuels1949	13	74	extracted_edge_folio
+14	Samuels1949	14	75	extracted_edge_folio
+14	Samuels1949	15	76	extracted_edge_folio
+14	Samuels1949	16	77	extracted_edge_folio
+14	Samuels1949	17	78	extracted_edge_folio
+14	Samuels1949	18	79	extracted_edge_folio
+14	Samuels1949	19	80	extracted_edge_folio
+14	Samuels1949	20	81	extracted_edge_folio
+14	Samuels1949	21	82	extracted_edge_folio
+14	Samuels1949	22	83	extracted_edge_folio
+14	Samuels1949	23	84	extracted_edge_folio
+14	Samuels1949	24	85	extracted_edge_folio
+14	Samuels1949	25	86	extracted_edge_folio
+14	Samuels1949	26	87	extracted_edge_folio
+14	Samuels1949	27	88	extracted_edge_folio
+14	Samuels1949	28	89	extracted_edge_folio
+14	Samuels1949	29	90	extracted_edge_folio
+14	Samuels1949	30	91	extracted_edge_folio
+14	Samuels1949	31	92	extracted_edge_folio
+14	Samuels1949	32	93	extracted_edge_folio
+14	Samuels1949	33	94	extracted_edge_folio
+14	Samuels1949	34	95	extracted_edge_folio
+14	Samuels1949	35	96	extracted_edge_folio
+14	Samuels1949	36	97	extracted_edge_folio
+14	Samuels1949	37	98	extracted_edge_folio
+14	Samuels1949	38	99	extracted_edge_folio
+14	Samuels1949	39	100	extracted_edge_folio
+14	Samuels1949	40	101	extracted_edge_folio
+14	Samuels1949	41	102	extracted_edge_folio
+14	Samuels1949	42	103	extracted_edge_folio
+14	Samuels1949	43	104	extracted_edge_folio
+14	Samuels1949	44	105	extracted_edge_folio
+14	Samuels1949	45	106	extracted_edge_folio
+14	Samuels1949	46	107	extracted_edge_folio
+14	Samuels1949	47	108	extracted_edge_folio
+14	Samuels1949	48	109	extracted_edge_folio
+14	Samuels1949	49	110	extracted_edge_folio
+14	Samuels1949	50	111	extracted_edge_folio
+14	Samuels1949	51	112	extracted_edge_folio
+14	Samuels1949	52	113	extracted_edge_folio
+14	Samuels1949	53	114	extracted_edge_folio
+14	Samuels1949	54	115	extracted_edge_folio
+14	Samuels1949	55	116	extracted_edge_folio
+15	vanHelten1891	1	455	sequence_from_adjacent_folios
+15	vanHelten1891	2	456	extracted_edge_folio
+15	vanHelten1891	3	457	extracted_edge_folio
+15	vanHelten1891	4	458	extracted_edge_folio
+15	vanHelten1891	5	459	extracted_edge_folio
+15	vanHelten1891	6	460	extracted_edge_folio
+15	vanHelten1891	7	461	sequence_from_adjacent_folios
+15	vanHelten1891	8	462	extracted_edge_folio
+15	vanHelten1891	9	463	extracted_edge_folio
+15	vanHelten1891	10	464	extracted_edge_folio
+15	vanHelten1891	11	465	extracted_edge_folio
+15	vanHelten1891	12	466	extracted_edge_folio
+15	vanHelten1891	13	467	extracted_edge_folio
+15	vanHelten1891	14	468	extracted_edge_folio
+15	vanHelten1891	15	469	extracted_edge_folio
+15	vanHelten1891	16	470	extracted_edge_folio
+15	vanHelten1891	17	471	extracted_edge_folio
+15	vanHelten1891	18	472	extracted_edge_folio
+15	vanHelten1891	19	473	extracted_edge_folio
+15	vanHelten1891	20	474	extracted_edge_folio
+15	vanHelten1891	21	475	extracted_edge_folio
+15	vanHelten1891	22	476	extracted_edge_folio
+15	vanHelten1891	23	477	extracted_edge_folio
+15	vanHelten1891	24	478	extracted_edge_folio
+15	vanHelten1891	25	479	extracted_edge_folio
+15	vanHelten1891	26	480	extracted_edge_folio
+15	vanHelten1891	27	481	extracted_edge_folio
+15	vanHelten1891	28	482	extracted_edge_folio
+15	vanHelten1891	29	483	extracted_edge_folio
+15	vanHelten1891	30	484	extracted_edge_folio
+15	vanHelten1891	31	485	extracted_edge_folio
+15	vanHelten1891	32	486	extracted_edge_folio
+15	vanHelten1891	33	487	extracted_edge_folio
+15	vanHelten1891	34	488	extracted_edge_folio

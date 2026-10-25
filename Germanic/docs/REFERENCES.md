@@ -71,6 +71,47 @@ list below.
 
 ## Specialist articles and monographs
 
+### ga-/gi-/ge- acquisitions and next-round navigation
+
+See [the complete acquisition record](../../docs/references/ga_prefix_2026-10-25/README.md)
+for exact local paths, source hashes, 610 sheet-to-page mappings, OCR cautions,
+excluded peripheral items and pending acquisitions. These are registered
+holdings, not newly adjudicated evidence or additions to the printed book.
+
+- `Quinlin1991`, `quinlin_1991_accentuation_ga.pdf`: inherited accentuation,
+  clitic status and disputed nominal formations, pp.145--157.
+- `Bammesberger1981`, `bammesberger_1981_nominale_ga_komposita.pdf`:
+  nominal *ga-* compounds and accentuation, pp.377--391.
+- `Minkova2008`, `minkova_2008_prefixation_stress.pdf`: metrical prefix
+  stress, prosodic organization and stacked prefixes, especially pp.22--23,
+  28--29 and 38--41.
+- `Crouch1995`, `crouch_1995_morphological_status_ge.pdf`: proclitic and
+  prosodic interpretation, especially pp.173--176.
+- `Pheifer1974`, `pheifer_1974_epinal_erfurt_1998_reprint.pdf`: complete
+  supplied critical edition, including Roman-numbered introduction, apparatus
+  and both indices; §63, p.lxxv is sheet73. The supplied 1998-reprint electronic
+  conversion explicitly loses some diacritics and is not a facsimile.
+- `Samuels1949`, `samuels_1949_ge_lindisfarne.pdf`: Lindisfarne and Rushworth
+  comparison, pp.62--116; direct *gi-* navigation at p.110.
+- `Pheifer1987`, `pheifer_1987_early_glossaries_canterbury.pdf`:
+  glossary origins and transmission, pp.17--44; distinguish 1987 publication
+  from the 2008 online posting.
+- `HerrenSauer2016`, `herren_sauer_2016_epinal_erfurt_sample.pdf`:
+  editorial principles, witness readings and archetypes, pp.125--198.
+- `vanHelten1891`, `van_helten_1891_grammatisches.{pdf,vision.txt}`:
+  *Grammatisches*, pp.455--488; broader unstressed-vowel navigation, not
+  an SC035 verdict. The whole-volume copy is a duplicate container.
+- `Gante2012`, `gante_2012_ga_revisited_{handout,slides}.pdf`: one 2012
+  conference contribution, selected for explicit phonological and inherited-
+  formation discussion; not a journal article or two independent works.
+
+All these PDF names are relative to `docs/references/`. PDFs remain ignored.
+Complete restricted searchable texts are local-only in
+`.cache/ga-prefix/holdings/`; only the public-domain van Helten text is
+redistributed. Bennett's 1968 chapter and Wright--Wülcker volumeII remain
+pending acquisition. The existing `WrightWuelcker1884` key still describes
+volumeI, not the missing indices volume.
+
 ### Unstressed vowels and historical prosody
 
 - `docs/references/minkova_zhou_2022_functional_stress_shifts.{pdf,txt}` — Minkova and Z. L. Zhou, *English Language & Linguistics* 26(3), 533–558; `MinkovaZhou2022`, DOI 10.1017/S1360674322000144. Complete CC BY 4.0 published article; pp.535–536 distinguish root stress and weak prefixes using metrical evidence, not early vowel chronology.

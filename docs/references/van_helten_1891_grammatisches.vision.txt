@@ -1,0 +1,1562 @@
+vanHelten1891: research navigation holding; acquired 2026-10-25.
+Original PDF: docs/references/van_helten_1891_grammatisches.pdf
+SHA256: 75b16dc4b83d8922bffe25c4993e315a48ccc9c7f7dbe9dd55117d1d06b9ad91
+Method: Google Cloud Vision; established Code/Vision/ocr.py. PDF sheet order and page boundaries retained.
+Not a diplomatic transcription. Check linguistic notation against the PDF.
+Public-domain 1891 original. Vision default English hint; German and
+linguistic symbols remain imperfect. Download watermarks retained.
+Printed 455 is inferred from the suppressed first folio and next 456.
+
+=== PDF sheet 001; page 455 ===
+
+GRAMMATISCHES.
+I. Zum vocalischen auslautsgesetz und zum acc. sing.
+und pl. der consonantstämme im got.
+Dass die endung des acc. sing. der consonantstämme für
+die vorgeschichtliche periode als -um anzusetzen ist, darf wol
+als eine allgemein anerkannte tatsache gelten. Vgl. got. tunþu,
+fôtu. Demnach sind die got. accusativformen der zweisilbigen
+stämme daupjand u. s. w., brôþar u. 8. w., weitwôd, mannan
+u. 8. w., qinôn u. s. w., auf altes *daupjondum, *brôporum ¹),
+*wîtwôðum, *monnonum, *qenônum u. s. w., zurückzuführen, was
+m. e. zur folgerung nötigt, dass im besagten dialekt das u
+der mehrsilbigen formen syncope erlitten hat. Ausnahmen,
+wie twalibwintrus und das nach Sunjaifripas der Urk. als die
+ältere form anzunehmende *Sunjafribus, widersprechen dieser
+fassung nicht: sie sind eben analogiebildungen nach dem
+simplex, wie z. b. ahd. Adalhugi, Wolfhugi, neben phonetisch
+entwickelten Friduwin, Liobwin, ags. Eadwine, Godwine, forð-
+ryne, eft, upcyme und dgl., neben ymb-, cynryn, as. nið-, strid-
+hugi, magwini, aofr. onkeme, wilkere u. 8. w., neben in-, midref
+u. s. w. (s. Aofr. gramm., nachtr. zu § 173 und § 174). Ebenso
+wenig aber wird die regel umgestossen durch got. auhjôdu,
+ufarassus, -u, ibnassus, aggilus, apaustaulus u. 8. w.; ist ja die
+ausnahmestellung solcher formen begreiflich als die folge der
+1) Vgl. poáτopa. Paul's *faðurm (Beitr. 6, 253) ist m. e. unrichtig
+angesetzt: nach brôþruns wäre für die schwache form des acc. s. faðrum
+zu erwarten. Wegen des ags. -or, -ur dieser verwantschaftsnamen vgl.
+Cos. Aws. gr. I § 115, wo diese endungen aus gegenseitiger beein-
+flussung der casus recti und der obliqui mit svarabhakti gedeutet
+werden.
+Beiträge zur geschichte der deutschen sprache. XV.
+30
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 002; page 456 ===
+
+456
+VAN HELTEN
+einwirkung der zweisilbigen nomina auf -us, -u (vgl. z. b. die
+1. s. pr. ind. ahd. fallo, neben gibu, as. gibiudu, neben gibu,
+ags. helpe, neben bere, u. 8. w.; ahd. as. das -u im instr., ags.
+das im instr.-loc. der lang- und kurzsilbigen formen; und
+dergl.). Für die syncope in mehrsilbiger form, neben erhaltung
+des voc. in zweisilbiger, vgl. urn. prawinan (Tanum) gen. s.
+der n-flex., neben dohtriR (Tune) ¹).
+nom.
+Der acc. s. baurg, naht u. s. w., der bei rein phonetischer
+genesis baurgu, nahtu u. s. w. lauten müsste, erklärt sich als
+die folge von analogiebildung nach der femin. i-flexion; also
+baurg u. 8. w. acc. baurgs u. s. w. nom., statt *baurgu u. s. w.
+acc. *baurgs u. s. w. nom., nach anst u. s. w. acc. : ansts u. s. w.
+Desgleichen wird reik acc., statt *reiku: reiks nom.,
+begreiflich durch die annahme einer entwicklung nach dem
+muster von dag: dags, gast: gasts, daupjand: daupjands, u. s. w.
+Für den acc. pl. der consonant. flexion möchte man, nach
+tunbuns, fôtuns, brôbruns, statt bisitands u. 8. w., mans, mênôps,
+brusts, baurgs u. s. w., mannans u. 8. w., qinôns u. s. w., bisitan-
+duns, mannuns u. 8. w. erwarten; vgl. dagans, gastins u. 8. W.,
+mit erhaltung des a, i, im ausl. vor ns. Die überlieferten for-
+men müssen demnach auf analogiewirkung beruhen; man be-
+achte die feminina brusts, ginôns u. s. w. acc. brusts, ginôns
+u. s. w. nom., statt *brustuns, *qinônuns u. 8. w. acc. : *brusts,
+*qinôns u. 8. w. nom., nach þiudôs u. s. w. acc. : þiudôs u. 8. w.
+nom.; bisitands, mans, mannans u. 8. w. acc. : bisitands, mans,
+mannans u. 8. w. nom., mit jüngerer entwicklung, statt *bisitan-
+duns u. 8. w. acc. : *bisitands u. s. w. nom., nach den femininen
+brusts, ginôns u. 8. w. acc. : brusts, qinôns u. 8. w. (Derselbe
+vorgang liegt natürlich auch der genesis des an. acc. pl. rengr,
+fétr u. s. w. zu grunde).
+II. Zur chronologie der vocalischen auslautsgesetze.
+Das u der endung zeigt im got. und an. grössere festig-
+keit als das i. Demnach wäre für das wgm. schon a priori
+die möglichkeit zu vermuten, dass der schwund des i dem ab-
+fall des u vorangegangen sei. Als tatsächliche beweise solcher
+1) Ungedecktes i war urn. auch schon in zweisilbigen formen
+(wenigstens in denen mit langer silbe) geschwunden; vgl. den an. imper.
+8. bitt, sprikk (Nor. Aisl. gr. § 453), neben -halaiban dat. s.
+Brought to you by | University of Albert
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 003; page 457 ===
+
+GRAMMATISCHES.
+457
+chronologie aber sind, wenigstens für das ahd., aonfrk. und
+as., die folgenden fälle geltend zu machen:
+der ahd. nom. (acc.) pl. suni, siti, und der as. nom. (acc.)
+pl. suni, megi, durch *suniu u. s. w. aus *suniwiz u. s. w.; die
+formen sind keineswegs als analogiebildungen nach der i-flex.
+zu fassen: erstens zeigt das as., mit seinen unter einwirkung
+des anzusetzenden instr. *suniu (s. gleich unten) entwickelten
+neubildungen sunies, -ie gen. dat. s., keine spur eines übertritts
+in die i-kl.; zweitens muss für das ahd. vielmehr grade der
+phonetisch entwickelte nom. acc. pl. als der factor gelten, der
+die übersiedlung in die i-flex. veranlasste, weil solcher über-
+tritt weder vom nom. acc. s. (man beachte situ und bei Is.
+sunu, neben suni, -im nom. dat. pl.) noch vom analogisch ent-
+wickelten gen. und dat. s. sunes, -e, sites, -e, die ja kein be-
+sonderes characteristicum der i-flex. bildeten, ausgegangen sein
+kann, und auch der instr. suniu, sitiu, der mit dem instr. der
+i-stämme zusammengefallen war, in folge dessen aber noch
+nicht notwendig als eine nur dieser kl. speciell zukommende
+form gefasst werden musste (vgl. das -iu der io- und jo-
+stämme), schwerlich einen überwiegenden einfluss zu gunsten
+der i-flexion auszuüben vermochte;
+der nom. (acc.) pl. ahd. puogi, erni, heiti, scilti, widiri, *wirti
+(nach wirtin), *weldi (vgl. mhd. w'elde), as. bôi, êri, *skildi, *thorni
+(nach skildion Hêl. C, thorniun Hêl. M); die formen sind mit
+rücksicht auf den übertritt der nomina in die i-kl.1) als die
+ursprünglich zur u-flexion gehörenden zu fassen, also auf
+*bôgiu u. s. w., *₺ôziwiz u. s. w., zurückzuführen, denn nur der
+durch lautliche entwickelung eingetretene zusammenfall der
+beiden flexionen im nom. acc. pl. erklärt es, dass die nomina,
+deren nom. und acc. s. nach der wirkung der apocopegesetze
+mit den nämlichen casus der o- und der i-kl. zusammenfielen,
+sich nicht, wie ahd. dorn, tôd, hungar, grund, winter (nom. acc.
+pl. dorna, tôda, hungara, *grunda, *mintra, nach krundun, win-
+trun), die derivata auf -ôd, sûftôd, wegôd, heilesôd (nom. acc.
+1) Die entwickelung des fem. genus von heit (gen. dat. 8. heiti)
+fand offenbar erst nach dem übertritt in die i-flex. statt, und zwar in
+folge des umstandes, dass die casusgleichheit des nom. und acc. der
+masc. und fem. i-nomina das auseinanderhalten der ursprünglichen ge-
+nera erschwerte.
+30*
+Brought to you by | University of Albert
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 004; page 458 ===
+
+458
+VAN HELTEN
+pl. sûftôda, wegôda, heilesôda), as. thornos Hêl. und Düsseld.
+Prudgl. V (Zfda. 15) 714, waldos, an die majorität der o-stämme,
+sondern an die minorität der i-nomina angeschlossen haben
+(vgl. auch Beitr. 4, 429);
+[die nämliche fassung muss auch für das -i des nom. acc.
+pl. ahd. fuazi, zeni, zendi, negili, aonfrk. fuoti, tende, as. fôti,
+gelten die existenx erwähnter endung und der im ahd. und
+aonfrk. zu beobachtende übertritt dieser ursprünglichen conso-
+nantstämme in die i-kl.1) weisen unbedingt auf älteres *fôtiu
+u. s. w. hin, weil ohne solche zwischenstufe bei austritt aus
+der urspr. flex. übertritt in die o-kl. hier das einzig mögliche
+gewesen wäre; für den nom. acc. pl. ahd. henti, as. aonfrk.
+hendi, -e, ist demnach derselbe entwicklungsgang durchaus
+wahrscheinlich, wenn hier gleich auch ohne die u-flex. als
+mittelstufe sowol übertritt in die i-kl. als die existenz eines
+alten dat. pl. ahd. hentum, -un, -on, as. aonfrk. handun, -on,
+begreiflich wäre; ob auch im nom. (acc.) pl. lidi, fluoti, (gi)-
+lusti, *lufti (nach lufteo), as. liði, lusti, parallelen von puogi etc.
+vorliegen, ist fraglich: die nomina sind höchst wahrscheinlich
+als ursprüngliche uz-, iz-stämme zu fassen und gedachte for-
+men könnten demnach zu i-stämmen nach art von sigi, seli etc.
+(s. unten unter X C) gehören²);]
+der dat. s. as. suni Hêl. M 1998, ahd. suni (vgl. jedoch
+Beitr. 14, 119 note), Waldi, amfrk. Weldi, ahd. Furti (Beitr. 14,
+119), aonfrk. fuoti, aus *suniu u. 8. w., für *suniwi u. s. w.; da-
+neben die älteren, unsere regel durchbrechenden formen ahd.
+suniu, Waldiu, -furt(i)u etc. (Br. gramm. § 230 anm. 3 und
+Beitr. a. a. o.), und as. (wegen der analogiebildungen sunies,
+-ie, zu vermutendes) *suniu, deren -u offenbar unter dem ein-
+¹) Vgl. für das aonfrk. fuoti(n) dat. pl. Für as. fôt ist der flexions-
+wechsel nicht nachweisbar; as. nagal begegnet im nom. acc. pl. als
+naglos ahd. nagala clavi.
+==
+2) Das fem. genus von ahd. fluot (gen. s. fluote, dat. dero fluote),
+lust (gen. dat. s. lusti, vgl. auch mhd. lust fem. masc.), luft (gen. s. lufte,
+dat. s. lufti), as. flôd (thiu, thia), aonfrk. fluot (gen. s. fluodi Kar. ps.
+64, 8), mnl. vloet, lust (Tijdschr. v. Ned. Lett. 2, 45; beides auch masc.),
+lucht, mnd. lust (auch masc.), lucht, wäre dann gleicher genesis wie im
+ags. lyst und lyft (s. unten a. a. o.). Im andren fall hätte es sich wie
+in heit (s. oben) entwickelt.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 005; page 459 ===
+
+GRAMMATISCHES.
+459
+fluss des -u, -iu des instr. der o-, jo- und io-flexion erhal-
+ten blieb;
+ahd. chinni, as. *kinni (vgl. thiu kinni acc. pl. Hêl. C 3204,
+3213), mnd. mnl. dat kinne (Sch.-L. und meine Mnl. gr. § 265),
+als ntr. io-st., neben got. kinnus fem.¹); der genus- und flexions-
+wechsel beruht unverkennbar auf der verwechslung des alten
+suff. für den nom. (acc.) pl. fem. der u-kl., in *kinni oder
+*kinniu, mit der endung - oder (älteren) -iu des nom. acc. pl.
+ntr. der io-flex. und weist mithin indirect auf eine periode hin,
+wo das - schon geschwunden, das -u aber noch nicht apoco-
+piert war; (im as. acc. pl. thea kinni Hêl. M 3204, 3213, be-
+gegnet das - noch als casusendung der u-flex.) 2).
+Für die fixierung der nämlichen chronologie in der ent-
+wicklungsgeschichte des ags. und afr. fehlen mir die absoluten
+beweise. Doch findet sich, soviel ich ersehe, auch kein fall,
+der zur annahme eines anderen vorgangs in diesen dialekten
+nötige; vielmehr weisen das ags. residuum aetzáru u. s. w. Ep.
+Corp. Erf. (Beitr. 9, 244) sowie ags. -u und das auf -u zurück-
+gehende afr. -e der dreisilbigen formen mit langer wurzel- und
+kurzer mittelsilbe (vgl. Aofr. gr. § 54) darauf hin, dass auch hier
+das -u sich dem -i gegenüber durch grössere zähigkeit kenn-
+zeichnete.
+Ob auch im got. der abfall des -u (s. oben s. 455) erst
+nach der syncope des - erfolgt war, muss ich unentschieden
+lassen; es sei hier nur bemerkt, dass formen, wie sunjus etc.
+und aggiljus etc. solcher annahme nicht unbedingt widersprechen,
+weil in ersteren die entwicklung des ; schon vor dem schwund
+des - stattgefunden haben könnte und aggiljus etc. als ana-
+logieform begreiflich wäre.
+¹) Wie fôlus, handus u. s. w., aus dem urspr. dat. acc. pl. und
+acc. s. entwickelt: *ken- oder *kinwumiz, -unz, -um, durch analogie-
+bildung nach dem gen. dat. s. *ken- oder *kinwiz, -i, nom. gen. pl.
+*ken- oder *kinwiz, -ôm, für ursprüngliches *kenumiz, -unz, -um (vgl.
+yévūv acc. s., für yévvv, und yivus acc. pl.); die consonantische flex.
+begegnet im an. kinn und ahd. dat. s. kin Gl. 2, 326, 50.
+2) Das mnd. mnl. und nhd. (dialect.) masc. kin (Sch.-L., meine Mnl.
+gr. seite 330 note, D. Wtb.) begreift sich als die aus *kinnuz, -um, ge-
+flossene form, welche bei ihrem übertritt in die o-kl. auch das genus
+wechselte.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 006; page 460 ===
+
+460
+VAN HELTEN
+III. Zur entwickelung des uº und û in ursprünglicher
+mittelsilbe.
+A. Streitberg bemerkt in diesen Beitr. 14, 218, dass der
+voc. in der ahd. as. flexionsendung des schw. acc. s. und
+nom. acc. pl. masc. -un, -on, nicht mit dem voc. im suff. des
+dat. pl. -um, -om, -un, -on, in gleicher linie zu stellen ist, und
+behauptet, dass stichhaltige specialbedingungen, welche
+die abweichende behandlung des alten o in der schw. declin.
+rechtfertigen könnten, sich schwerlich ergeben dürften. Dem
+ersten satz stimme ich bei; dem andren möchte ich wider-
+sprechen. Dass im wgm. ursprüngliches e der paenultima der
+endung durch einwirkung des i der ultima zu i wurde, ist eine
+allgemein anerkannte regel; vgl. die 2. und 3. s. pr. ind. auf
+altes *-izi (*-isi), *-iði (*-ipi), aus *-ezi (*-esi), *-eði (-*epi),
+den gen. dat. s. masc. und ntr. der schw. declin. auf altes
+*-iniz, *-ini (ahd. -in, -en, aonfrk. -in, as. -en), aus *-eniz, *-eni.
+Hiernach ist es mit voller consequenz für möglich zu halten,
+dass auch auf nebentoniges o der endung folgendes schwach
+betontes u in gleicher oder ähnlicher weise eingewirkt hat.
+Ein solches u aber findet sich in dem alten suff. der consonant-
+stämme -um, -unz. Also altes *zumuºnu(m) etc. > ahd. gomun,
+-on, as. gumun, -on etc.; altes *uhsu°nun(z), *zumu°nun(z) etc.
+ahd. ohsun, aonfrk. ohsson, as. gumun, -on, etc.; daraus durch
+übertragung as. im gen. dat. s. gumun, -on, etc., aonfrk. im
+dat. s. namon etc. (aus früherem acc. *namon etc., das in der
+überlieferten periode schon durch die nominativform verdrängt
+war), im nom. pl. ahd. ohsun, aonfrk. bodon, as. gumun, -on, etc.
+Der einzige unterschied zwischen beiden vorgängen besteht
+hierin, dass das o keine völlige assimilation erlitt, nur in einen
+zwischen o und u liegenden laut übergieng (vgl. Beitr. 4, 361
+u. 362), eine erscheinung, welche völlig im einklang steht mit
+dem sonst zu beobachtenden factum, dass dem u in geringerem
+masse als dem i das vermögen innewohnte auf vorangehenden
+vocal assimilierend einzuwirken; vgl. den im ahd. as. aonfrk.
+fehlenden u-umlaut des voc. der haupttonigen silbe, gegenüber
+der im ags., an. und afr. (Altostfr. gr. § 36) vorliegenden affi-
+cierung eines solchen lautes durch folgendes u.
+Nach Paul sollte ags. -un, afr. -a der schw. flex. auf be-
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 007; page 461 ===
+
+GRAMMATISCHES.
+461
+sagtes früheres -u°n zurückgehn (Beitr. 4, 363). Ob indessen
+die vorliegenden verhältnisse zu diesem schluss nötigen, dürfte
+fraglich sein. Dass im germ. im gen. dat. s. masc. und ntr.
+ausser *-iniz, *-ini, auch die endungen *-oniz, *-oni im schwang
+waren, ist eine tatsache; vgl. die oben s. 456 citierten formen
+urn. þrawinan, -halaiban. Demnach wäre für das ags. und afr.
+die möglichkeit anzuerkennen eines ehemaligen *-oniz und *-oni,
+woraus (vgl. das suff. der 3. pl. pr. ind. *-onpi > ags. -að, afr.
+-ath) an, welches im acc. s. masc. das alte *-u°n verdrängen
+konnte, wie das urspr. -an, aus *-oniz, des nom. pl. den schwund
+des urspr. -u°n des acc. pl. veranlasste. Das nämliche -an
+fände sich dann auch in den vereinzelten, dem dialekt des
+copisten angehörigen as. formen (vgl. Beitr. 4,360) des gen.
+dat. acc. s. und nom. pl. im Hêl. M¹). Ob in den seltenen
+ags. formen mit -on (Siev. Ags. gr. § 276 anm. 1, Cos. Altws. gr.
+1 § 113) diese endung als rest von -u°n zu fassen wäre, ist
+fraglich, weil das alte o sich vor n offenbar länger als vor
+andren consonanten gehalten hat; vgl. das vereinzelte -on,
+-onne im inf. und gerund. und in den adverbien bûton etc.
+(Siev. gr. § 363 und 321 anm. 1, Cos. Aws. gr. I § 113 und
+Paul in den Beitr. 6, 187). Nur das north. hat in seinen u-,
+o-suffixen des schw. masc. (Siev. gr. § 276 anm. 2) noch un-
+verkennbare spuren des alten -u°n bewahrt.
+Dem -u°n analog ist für den wgm. acc. s., dat. und acc. pl. der
+and-stämme ursprüngliches *-u°ndu(m) (oder *-u°nðu(m)), -umi(z),
+-un(z), anzusetzen. Es findet sich jedoch von einer solchen bil-
+dung, soviel mir bekannt, keine spur, ein umstand, der gewiss
+nicht wunder nehmen darf, wenn man bedenkt, wie leicht diese
+u°nd-formen der überzahl der ond- (and-)formen (im nom. gen.
+dat. sing., nom. gen. pl.) unterliegen konnten und wie überhaupt
+diese consonantstämme durch das übergreifen der participial-
+flexion in der überlieferten periode ihre ursprüngliche gestalt
+¹) Die im Cott. begegnenden formen auf -an beteran u. s. w. (Beitr.
+4, 361), naman 266, ênigan 2186, hêlagan 3267, uhtan 3418, hertan 21,
+kommen hier nicht in betracht: dieselben könnten ja von derselben ags.
+hand herrühren, welche das môdor, dohtor, drihtnes, scealt etc. (Siev.
+Hêl. Einl. XV), torohtan, managan, uurekkean, fiendan, ênigan, handan
+dat. pl. 428, 629, 631, 715, 1897, 1194, thesan, munigan, -iungan, ôdigan
+st. dat. s. m. n. 1404, 2702, 3290, 3298, und dgl. in den text brachte.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 008; page 462 ===
+
+462
+VAN HELTEN
+in bedeutendem masse eingebüsst hatten (für das ahd. und ags.
+vgl. Br.'s gramm. § 236 anm. 1 und Siev.'s gramm. § 286; für
+das as. ist Heyne's gloss. zum Hêl. in voce. berand, hêliand,
+lêriand, lîðand, neriand, râdand, waldand, wîgand, nachzusehn;
+für das aofr. vgl. Aofr. gr. § 200 ß; im awfr. findet sich nur
+ein dat. s. rumfarende, warende; im aonfrk. sind die formen
+gar nicht belegt). Ebenso spurlos scheint auch das für die
+erwähnten casus von magud, -ath, in der vorhistorischen periode
+anzunehmende -up- geschwunden zu sein. In andren fällen, wo
+sich nach unsrer lautregel in einigen casusformen des nomens
+ein hatte entwickeln müssen, sind hingegen noch einzelne
+reste dieses voc. nachzuweisen (begreiflicherweise aber meist
+nur äusserst spärliche, weil die mehrzahl der flexionsformen
+mit nicht afficiertem o (a) dem überhandnehmen des letzteren
+voc. in nicht geringem masse vorschub leisten musste): von
+den adjectiven auf urspr. *-030-, *-oho- (mit altem -uºz-, -uºh-,
+im st. nom. s. fem. und nom. acc. pl. ntr.) im ahd. abuh, -oh,
+as. abuh, -oh, as. grâdog Hêl. C 3395 (im ahd. einogo, heilogo
+u. s. w. kann assimilation vorliegen, 8. Beitr. 6, 232, und Br.
+Ahd. gr. § 67; dasselbe ist der fall im as. hêlogo, -un Hêl. M
+1902, 1924, 2022, 2035, 2060, 1071), ags. monog (Cos. Aws. gr.
+I § 113), aofr. iêroch, lethoch u. 8. w. (Aofr. gr. § 65 und 75);
+in den ags. participiis prt. auf -un, une, und demnach vermut-
+lich auch in denen auf -on, -one u. 8. w. (Siev. gr. § 366 und
+Paul in den Beitr. 6, 240); im ahd. nachut, ags. nacod (vgl.
+got. naqaps) und vielleicht ebenfalls im ags. arod, arud-, promptus
+(oder mit urspr. -ûð-, aus -ôð-? vgl. unten B und Cos. Aws. gr.
+I § 115), weorod dulcis; in den masc. und fem. ursprünglichen
+consonantstämmen ahd. anut, -ot (= lat. anas, -atis; vgl. an.
+ond mit consonantischer flex.), ags. hacod, wearod, -uð-, as.
+rakud, rakod (urspr. nomina agentis, mit altem suff. -oð, -op,
+und schwachstufigem -eð-, -ep-, vgl. Brugm. Grdr. II s. 369
+und Beitr. 6, 277 f.), ags. meotud, -od, as. metod, das nach dem
+got. fem. mitaps ebenfalls als oo-bildung zu gelten hat (Brugm.
+a. a. o.; das uº stammt hier aus dem alten acc. s., dat. acc. pl.);
+im ntr. urspr. consonantst. ags. héafod (mit u° aus dem alten
+nom. acc. dat. pl.).1)
+¹) Auch für das -uz der ursprünglichen -oz-stämme möchte man
+vielleicht beim ersten anblick die nämliche erklärung anwenden wollen.
+Brought to you by | University of Albe
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 009; page 463 ===
+
+GRAMMATISCHES.
+463
+B. Das uº, aus o, zeigt uns ferner den weg zur erklärung
+des voc. im ahd. schw. fem. suff. -ûn, -un (das nach Paul's
+vermutung, s. Beitr. 6, 223, im urgerm. urspr. nur dem acc. s.
+und nom. acc. pl. oder nur dem acc. sing. und pl. zukäme,
+wo es sich, neben dem ô in -ôn, -ôn- der andren casus, aus
+der verschiedenheit in der ursprünglichen stellung des neben-
+tones erklären würde), im ahd. schw. nom. acc. pl. ntr. auf
+nahezu constantes -un, aus -ûn (Beitr. 4, 370), sowie im north.
+-u, -o letzterer casus (Siev. Ags. gr. § 276 anm. 2). Auch hier
+liegt eine ähnliche afficierung des ô der paenultima, d. h. ăn-
+derung zu û (ursprünglich wol zu ûº) durch folgendes u vor:
+acc. s. *tung (?)ûnu(m) u. s. w., acc. pl. *tung (z?)ûnun(z)
+u. s. w. (für *tungônum, -unz), > ahd. zungûn; aus dem acc. sing.
+drang dann das -ûn in den gen. dat. dieses numerus, aus dem
+acc. pl. in den nom. pl.;
+nom. acc. pl. ntr. *auzûnu u. s. w. (für *auzônu, aus *au-
+zônô) > ahd. ougun, north. ézu, -o, u. 8. w.
+Hiernach sind ebenfalls für aofr. âgon nom. acc. pl. (Aofr.
+gr. § 192 8) ¹) als die zwischen *auzônô, -u, und *âzun liegenden
+stufen *auzûn(u), *âzûn anzusetzen; und erklärt sich das -u des
+north. eorðu (Siev. gramm. § 276 anm. 2) als die aus altem -ûnu(m)
+hervorgegangene endung. Die as. normalen feminina auf -un,
+-on, die ags. und die einzelnen as. auf -an (vgl. Beitr. 4, 370;
+14, 109), die afr. auf -a und die north. auf -a, -e, sind, wie
+schon Paul bemerkt hat (Beitr. 4, 370), als analogiebildungen
+zu fassen; dasselbe gilt natürlich ebenso für den nom. acc.
+pl. ntr. as. ôgun, -on, ags. éazan, aofr. ara (Aofr. gr. § 192 ẞ),
+north. éaru, -an, éze, -an (Siev. gr. § 276 anm. 2), und as. hertan
+Hêl. M 4255 (wegen hertan acc. pl. Hêl. C 21 vgl. oben s. 461
+die note); zweideutig ist der endungsvocal im aonfrk. tungon,
+ougun, -on etc. (vgl. das häufige -on des pl. prt. ind. in diesem
+dial.), und im north. nom. acc. pl. auf -o.
+Für friund mit gleichem û, aus ô, siehe unten IV. Ferner
+könnte man nach dem ausgeführten spuren des û erwarten:
+Doch würde solcher annahme got. sidus (= εdos), mit altem nom. acc.
+pl. auf -ô, entschieden widersprechen. Hoffentlich bringt die von
+Bremer (Beitr. 11, 3) in aussicht gestellte abhandlung das erwünschte
+licht für die genesis dieses -uz.
+1) Mit erhaltung des -n nach urspr. u (vgl. § 107 der gramm.).
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 010; page 464 ===
+
+464
+VAN HELTEN
+im ahd. mânôd, ags. mónað (mit anzusetzendem altem û, aus ô,
+im acc. s. und dat. acc. pl.); in dem wgm. dem got. witôp ent-
+sprechenden ntr. nomen alıd. wizzôd, ags. wi(o)tod etc. (mit
+altem û im nom. acc. pl. auf -u; hd.. nd. und nfrk. auch im
+instr. s.); in den derivaten auf urspr. *-ôþuz, *-ôðuz, wie ahd.
+opfarôd, weinôt u. s. w., ags. huntoð, fiscoð, -að, u. s. w. (Kluge,
+Nom. stammb. § 135 und 136), aofr. gabbath u. s. w. (Aofr. gr.
+§ 150*); im ahd. dionôst, as. thionost, aofr. thianost ntr., und
+ags. weorod, wenn dieselben nämlich mit suff. *-ôstu-, -ôðu-, ge-
+bildet sind (vgl. Cos. Aws. gr. I § 115 und Kl. Nom. stammb.
+§ 135); in den superlativen auf -ôst und den participien prt.
+II. schw. flex. (mit altem û im st. nom. 8. fem. und nom. acc.
+pl. auf -u; hd. nd. und nfrk. auch im instr. s.); in den prae-
+teritis besagter kl. (mit altem û im prt. ind. pl. auf *-umen
+u. s. w.). Und wirklich finden sich dieselben sporadisch (wenn
+gleich auch hier in ziemlich geringer zahl): ahd. mânu de Tat.
+(Siev. 46), manuduuiliger lunaticus Gl. 2, 740, 24, das in den
+Prudentiusglossen der Düsseld. hs. belegte mánutha 355, aonfrk.
+vuitut Gl. L., ahd. wizzud, -ul(h) Reich. b. 16, Mainz. b. 11, Trier.
+cap. 25, suindiluduuintes brut vertigo Gl. 2, 759, 36, suindilut
+vuintes ib. 37, as. thianust Beda 11 (im ahd. dionustun Prudgl.
+V, 2244, in Zfda. 16, kann jüngere assimilation vorliegen, vgl.
+Br. Ahd. gr. § 67), ahd. zalazzust demum Prudgl. V, 402, und
+die ags. und aofr. superlativa auf -ust (Cosijn Aws. gr. I § 115
+und 118, Paul in den Beitr. 6, 183, Aofr. gr. § 226 a), die ags.
+praeterita auf -ude und participia auf -ud, -uda u. s. w. (Cos.
+Aws. gr. II § 129 und 130, Siev. § 412 und 413); (aonfrk. tholudun
+Ps. 55, 8 ist zweideutig).
+[Ob auch ahd. guotisuta pollebat Prudgl. V, 272 einen
+solchen rest enthält? Es findet sich in derselben quelle einige
+male suffixales u = altem ô, vor n: sveparun nare, vuadalun
+fluctuare, ruzzuntan stridentibus, unrechto rahchutiv, 1. rahchun-
+tiv, pravum seminans, dozzunta interpretem, winsuntar, 1. wini-
+suntar, murmurans, girigiluntar fovens, uuispilun stridere, pras-
+tun concrepitare, pilidunti effigians, leisanunto emulando, lei-
+duntiv perosa, za chlagvnna ululanda, prastuntar crepans, zu-
+luchun dehiscere, glizinunta nitescens, porunt terebrant, tumun
+rotari, 167, 233, 558, 563, 564, 625, 669, 879, 881, 963, 1095,
+1230, 1250, 1267, 1340, 1380, 1682, 1701; wären daneben eben-
+Brought to you by | University of Albe
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 011; page 465 ===
+
+GRAMMATISCHES.
+465
+falls praeterita und participia mit -uta, -ut, ziemlich häufig
+bezeugt, dann könnte man das u der praesensform allerdings
+als u oder û für die folge von analogiebildung nach den prae-
+teritalen und participialen formen halten; so aber empfiehlt es
+sich gewiss mehr den voc. in den erwähnten citaten (wie in
+den von Graff und Weinhold aus glossen des 9.-11. jahrh.
+und Will. belegten formen mit -un im inf, -unt in der 3. pl.
+pr. ind., -unt- im part. pr., aus -ôn etc., siehe Sprachsch. II 943,
+1141, 1146, Bair. gr. § 304) als ein dialektisches, vor n ent-
+wickeltes o, mit u-färbung, zu betrachten, das meist mit o,
+bisweilen jedoch mit u bezeichnet wurde; aus solchem o" konnte
+dann durch analogiebildung das ů, u im obigen guotisůta sowie
+in gizohcharut carpet, mendilut alludit, stamalut balbutut Prudgl.
+V 435, 504, 1407, und vielleicht auch im verbalnomen chlagvt
+gemitum ib. 424, hervorgegangen sein¹); (in gesunduruth Trier.
+cap. 20 liegt wol dieselbe progressive assimilation vor wie in
+sachunu derselben quelle 13). Für die ags. formen und für die
+aofr., welche in den Rüstringer texten begegnen, wo der aus
+altem u geschwächte laut abwechselnd mit o und u bezeichnet
+wird (Aofr. gr. § 57 und 68), ist ausserdem die möglichkeit
+nicht zu übersehn, dass das o der endung (vgl. Aofr. gr. § 70)
+zum teil nicht das o, aus ô, sondern die schwächung des u,
+aus û, ist.]
+Anmerk. 1. Eine andere fassung erfordert das u im as. compa-
+rativen adverb. furdur, fullicur, ôdur, sã ftur, sêrur Hêl. M 1437, 1454,
+2512, 2894, 3209, 3299, 3301, 4566, 5007, 5010, sidur M 3289, 3504, 3661,
+3666, 4180, 4257, 4625 (neben furthor immer in C, fullicor, ôthor, să ftor,
+sêror C, sîthor, -dor C immer, M passim, nâhor und elcor C und M
+passim, diopor, swîthor, -dor, und ellior C und M 1436, 1417, 2707): die
+formen sind zu ôz-stämmen gehörige accusative sing. ntr. und verdanken
+die erhaltung ihres -r (-2) der anlehnung an die comparativen adjectiva;
+aus eben solcher (jedoch jüngerer) anlehnung aber muss das u herrühren,
+welches in der adjectivform nicht auf û, für ô, zurückgehn kann (secun-
+1) Das u und u, im suff. des gen. pl. ahd. -uno (Siev. Tat. 46),
+-unu Trier. capit., as. -uno (Beitr. 4, 375), north. -una (Beitr. 6, 183), be-
+ruht selbstverständlich auf analogiebildung nach dem nom. acc.. pl. auf
+-un, -u(n). In goumu mês u. s. w., im ahd. suff. -um, -un des dat. pl.
+starker - und schwacher stämme und in der endung -un der 1. s. pr.
+ind. ahtữn u. s. w. (Siev. Tat. 46, Beitr. 4,371, Pietsch in Zfdph. 7, 350,
+Graff Sprachsch. II 588, 966) liegt durch m erwirkte u-färbung des
+o vor.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 012; page 466 ===
+
+466
+VAN HELTEN
+därer umlaut des ô der mittelsilben durch u, aus o, oder uº, aus o, oder
+primärer uml. des ô der mittelsilben durch uº, hier eventuell durch den
+voc. des suff. für den dat. pl. masc. ntr., ist für das westgerm. nicht
+nachweisbar), sondern als die folge zu betrachten ist eines assimilierungs-
+processes, nach art von hêlogo (8. ob. 462), doloro Hêl. C 3466, fago-
+roro, fagaroro, fastoro, wrêdoro Hêl. M 1100, 1559, 1808, 1823, 2147,
+für *dolero, fagarero etc.; vgl. iungurun dat. pl. Hêl. M 1130 und be-
+achte, dass es mit rücksicht auf die im Hêl. übliche bezeichnung des
+uº durch o oder u für möglich zu halten ist, dass auch in iungoron
+dat. pl. Hêl. M 1149, 1252, 1261 u. s. w., iungoron, - un nom. acc. pl. und
+acc. s. Hêl. M 2274, 1591, 1191, 1335, eine gleiche form vorläge. Die-
+selbe deutung gilt auch wol für das ags. -ur, neben häufigerem -or (Cos.
+Aws. gr. I § 115). Wegen des u im nominalsuff. ahd. -unga, -unc, 28.
+-ungo (in wissungo), aonfrk. -unga (woneben auch -onga, wie die endung
+des prt. ind. pl. -on, neben -un; für die belege s. Cos. Oudndl. psalm.),
+ags. -ung (woneben äusserst seltenes -ong, vgl. tielongum Cos. Aws. gr.
+II s. 22), aofr. -unge (woneben -onge, wie im prt. -on, neben -un, Aofr.
+gr. § 165 α und 68), siehe unten anm. 2.
+C. Die überlieferten an. formen mit umgelautetem suf-
+fixalem o und ô unterscheiden sich von den wgerm. in den
+zwei folgenden punkten: dieselben finden sich erstens zum teil
+auf die casus mit geschwundenem oder erhaltenem umlauts-
+factor beschränkt (hier aber in ausnahmsloser verwendung),
+zum teil durch analogiebildung in mehr oder minder bedeuten-
+dem umfang generalisiert; zweitens aber begegnet der uml.
+hier nicht nur als die folge von primärer, durch das u der
+ehemaligen endsilbe veranlasster entwickelung, sondern eben-
+falls als das resultat von der einwirkung eines uº, aus o und
+ô, vor m, und von secundärer, durch u oder û, aus ô, hervor-
+gerufener afficierung. Zu den hinlänglich bekannten ein-
+schlägigen fällen (vgl. Beitr. 6, 179 f., 192 und 203 f., Nor. Aisl.
+gr. § 113, 1 und anm. 2) sind noch hinzuzufügen: die nomina
+ag. auf -uðr (Beitr. 14, 32 ff.), die schw. feminina auf -u im
+gen. dat. acc. s. und -ur im nom. acc. pl. (vgl. oben B; im
+urn. gen. s. igiøôn begegnet noch das lautgesetzliche ô), die
+schw. neutra auf -u im nom. acc. pl. (vgl. oben B), ond anas
+(Beitr. 6, 193), holdr, mjotuor (Brugm. Grdr. II s. 369), und viel-
+leicht auch glpt (a. a. o. s. 384). In den verbalsubstantiven auf
+-un, -un- (Nor. Aisl. gr. § 304), ursp. *-ôni-, wo der dat. pl. als
+die einzige form, in der sich das u auf lautlichem wege ent-
+wickelt haben kann, schwerlich die analogische genesis des u
+in den andren casus zu veranlassen vermocht hätte (vgl. das
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 013; page 467 ===
+
+GRAMMATISCHES.
+467
+ausschliesslich begegnende -un, -on aller casus in Hom. W.,
+Beitr. 6, 180), verdankt letzterer voc. seine existenz wol haupt-
+sächlich der anlehnung an die begrifflich nahestehenden (und
+im n. g. a. sing. gleich flectierten) abstracta auf -ung. Im acc. s.
+und pl. der schw. masculina und and-stämme war der phonet.
+entwickelte -voc. durch analogiebildung verdrängt.
+Dass sich im got. keine spur des in rede stehenden uml.
+findet, spricht selbstverständlich an und für sich noch nicht
+gegen die ehemalige existenz dieser lauterscheinung im urgot.;
+es könnte ja überall ausgleichung eingetreten sein. Indessen
+dürfte es im hinblick auf got. -a, neben wgm. seand. -(u), aus
+-ô, und got. -am, neben wgm. scand. -u°m, aus -om-, für wahr-
+scheinlicher gelten, dass die ausgeprägte nach a hinneigende
+qualität des got. suffixalen ô und o der einwirkung des folgen-
+den u widerstand zu leisten vermocht hätte.
+Anmerk. 2. In der an. flexion der abstracta auf altes -ôngu etc.
+(zu schw. verben der II. kl.) könnte man wechsel zwischen -ung, -ung-
+und -ang- erwarten. Es erscheint hier jedoch, wie im wgm. (s. ob.
+anm. 1), constantes -ung(-), -ong(-), ein umstand, der offenbar auf eine
+der einwirkung des m (im urgerm. -omiz, -ômiz u. s. w.) zu vergleichende
+beeinflussung des ô durch den guttur. nasalen hinweist.
+IV. Westgerm. -î- im inlaut aus -ij-.
+Die regel, dass intersonantisches ; in den wgm. dialekten
+erhalten bleibt, erleidet in einem bestimmten fall eine feste
+ausnahme: haupttoniges i attrahiert folgendes ; und wird hier-
+durch zu (das, wo kein systemzwang hindernd in den weg
+tritt, mit dem voc. der folgesilbe contrabiert wird)¹). Die be-
+weise für den hier aufgestellten satz liefern die folgenden
+formen:
+neben got. fijan, das ahd. fiên, ags. féozan, mit féoð, féode
+u. s. w. (wie téo, séo u. s. w., statt *ti(h)u, *sî(h)u u. 8. w., aus
+*fioz-, *fio-, für *fîôz-, *fîô-, mit übertritt in die II. kl. für
+älteres *fiêj-, *fiê-, oder *fijêj-, *fîjê-);
+neben got. fjands, das ahd. fiant (fîent), as. fîand Werden.
+1) Nach § 91ß der Aofr. gr. hatte ich die ausnahme selber schon
+früher erkannt; nur war mir bei der abfassung dieses paragraphen die
+mit dem schwund des j in zusammenhang stehende dehnung noch nicht
+klar geworden.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 014; page 468 ===
+
+468
+VAN HELTEN
+psalmencomm. 67, mnd. mnl. viant, aofr. und awfr. (durch accent-
+verschiebung für *fîand eingetretenes) fiand (awfr. find, vgl.
+nwfr. fynne, entstand vor der monophthongierung und accent-
+verschiebung durch contraction, wie mhd. vînt): das a ist hier
+nicht mit dem specifisch got. a, für ai, auf eine linie zu stellen,
+es entstand durch anlehnung an die zu o- und jo-stämmen ge-
+hörenden substantivierten participia; [aonfrk. fund, as. frund Hêl.
+M passim, C 28, 52, 1115, 1216, 1451, frond Hêl. C passim ¹),
+aofr. fund sind analogiebildungen nach friund, friond, denn aus
+ia hätte sich kein iu, io entwickeln können; die nämliche bil-
+dung liegt auch vor im ags. féond, dessen dat. s. und nom.
+acc. pl. fiend schon durch lautliche entwickelung aus *fiend
+< *fijendi(z) mit dem dat. s. und nom. acc. pl. friend zusam-
+mengefallen war];
+neben got. frijôn, das mhd. mnl. vrîen, mnd. vrî(g)en um
+eine braut werben.
+Demgemäss ist auch:
+das neben got. frijana begegnende ahd. frîêr, -a, -ez
+u. 8. W., ags. frizes, -e u. s. w., aofr. und awfr. frie, -a, mnd.
+mnl. vrîe, -en u. s. w. als phonetische bildung, nicht als die
+folge von anlehnung an die unflectierte form fri (vgl. ahd. frî,
+für *frii, aus *frija, urspr. *frijoz, -ot) zu fassen (Aofr. gr.
+§ 202 ẞ; die a. a. o. vorgeschlagene deutung der unflect. aofr.
+form fria muss auch für ags. fréo gelten; gegen die fassung
+von fréo als analogiebildung nach fréozan wäre m. w. nichts
+einzuwenden, während die erklärung der form aus fri(j)a,
+8. Siev. Ags. gr. § 114, 2, an dem umstand scheitert, dass die
+contraction, welche allein das alte stammsuff. gegen die wir-
+kung des apocopegesetzes hätte schützen können, im hinblick
+auf téo, déo, aus *lî(h)u, *di(h)u, erst nach der syncope des
+inlaut. h, mithin in eine ziemlich junge periode hineinzuver-
+legen ist);
+das neben got. frijônds erscheinende ahd. friunt, as. friund
+Hêl. MC passim, Beichte 18, friond Hêl. C 2292, ags. fréond,
+mnl. vrient (mit ie aus io), mnd. vrent (vgl. vrende hende
+Sch.-L., also mit e, aus ê, für ie, aus io), vrunt (mit ü, für üˆ,
+aus iu), auf altes *friund, friônd zurückzuführen (das û ersterer
+1) Der dat. pl. fiendan Hêl. C 715 bleibt natürlich ausser betracht.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 015; page 469 ===
+
+GRAMMATISCHES.
+469
+form erklärt sich nach dem oben III B ausgeführten als der
+ursprünglich nur dem acc. s. und acc. dat. pl. *frijûndu(m),
+-un(z), -umi(z), zukommende voc.; dem ags. dat. s. und nom.
+acc. pl. friend liegt ein *friend, aus *frijœndi(z), zu grunde,
+vgl. ags. héalede, hócede einen bruch, haken habend, u. s. w.,
+mit altem suff. -ôðio-, Siev. Beitr. 9, 257, Cos. Aws. gr. I § 118);
+das aofr. *friaia (Aofr. gr. § 299 anm. 1) und ags. fréozan
+aus *frîôj-, für *frijôj-, zu erklären.
+V. As. fraho u. s. w., (un)fraha und faho, -ora.
+Der wurzelvoc. in den as. formen fraho dominus, mit
+fra(h)on, -hen, fraha laeti, unfraha maestos, faho, -ora parvus,
+paucorum, ist anders zu beurteilen als das dialektische â,
+welches sich für ô, aus au, fast immer in der Freck. heb.,
+einige male im Mon., einmal im Ind. sup. (neben einmaligem ô),
+einmal in den Strassb. glossen (neben dreimal. ô) findet (für
+die belege siehe zum teil Holtzm. Gr. seite 140). Erstere for-
+men begegnen nicht nur im Mon., sondern auch im Cott. und
+der Beichte: fraho nom. 8. MC 2900, M. 3903, -(h)on, -hen gen.
+dat. und acc. s. M 109, 177, 931, 2614, 5007, 5157, C 177, 931,
+1077, 1094, 1103, 1128, 1667, 2118, 2614, 2941, 3997, fraha
+laeti C 4725, 5896, unfraha maestos Beichte 27, frahmôd M 1011,
+3559, 5982, frahmuod C 1011, fuho nom. s. masc. MC 1783, -ora
+C 2236; und die annahme, die dialekte des C und der Beichte
+hätten allein hier, sonst aber nirgendwo, ein nach & hinneigen-
+des ô gekannt, wäre unstatthaft. Das a ist hier unbedingt als
+kurzer vocal zu fassen und fraho, faha etc. erklären sich, mit-
+samt den daneben begegnenden formen frôhon u. s. w. (die,
+wie fraho etc., auch durch das h für w auffallen), ohne
+schwierigkeit mit hülfe des bekannten von Paul für das w,
+vor unbetontem u, erwiesenen syncopegesetzes. Nach dem-
+selben mussten sich in der flexion des besagten subst., mit
+stamm *franon-, zum nom. 8. *frano ein acc. s. und acc. pl.
+*fra-un (deren form durch ausgleichung auch resp. in den gen.
+dat. s. und den nom. pl. drang) und ein dat. pl. *fra-um oder
+-un entwickeln (resp. aus *frawun-, *franum-). Diese formen
+konnten nun auf lautlichem wege contraction erleiden oder durch
+beeinflussung von seiten der norm. schw. declin. als disyllaba
+erhalten bleiben. Daher in zusammenhang mit letzterem yor-
+Brought to you by | University of Albe
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 016; page 470 ===
+
+470
+VAN HELTEN
+gang fraon, frahon, -en (mit h als dem beim zusammenstoss
+zweier silbebildender vocale eingeschobenen cons., wie in brâhon
+superciliis Hêl. M 1704, fratohon, fratahun ornamentis Hêl. CM
+380, 3331, 3763, 4543, C 1738, neben fratoon M 1738, aus
+*brênum-, *fratênum-; vgl. auch Br. Ahd. gr. § 152 b), und
+durch analogiebildung fraho, statt *frano; in folge des erste-
+ren processes aber 1. die aus *fron hervorgegangenen, als gen.
+dat. acc. s. begegnenden bildungen frôhon, -an Hêl. C 109, 4952,
+5157, 5367, 5463, 5517, 5733, M 1077, 1094, 1103, 1128, 1667,
+2118, frô(h)en M 4952, C 3022, 3513, fruohen C 5007, und frôho
+nom. 8. C 3903, mit anorganischem, nach dem muster der nor-
+malen schw. flex. angehängtem suff., 2. die aus flectiertem *frôn
+abstrahierten neubildungen, der vocat. frô (vgl. auch ahd. frô
+domine) und der aus dem adv. frônisko zu folgernde gen. pl.
+*frôno (vgl. ahd. frôno und das aofr. awfr. substantivierte
+frâna), für *frawo, -ono¹). Nach fra(h)on domini, o, -um, be-
+greifen sich die adjectivformen (un)fraha, faho, -ora, und frah-,
+in frahmôd etc., als analogiebildungen nach *f(r)a(h)umu st.
+dat. s. masc. und ntr. (aus *f(r)anumm-), *f(r)a(h)u instr. s.
+(aus *f(r)awu), *f(r)a(h)un schw. acc. (gen. dat.) s. masc., gen.
+dat. acc. s. fem., nom. acc. pl., etc.; [daneben frô- in frômôd
+Hêl. M 1163, C 3559, frômuod C 2062, fruomôd (1. frômôd) M
+2062, frôli co MC 2677, 3041, in folge von anlehnung an das
+unflect. simpl. *frô (statt *frau, für *frawa, aus *frawoz, -ol,
+und für *franu, aus *franô); frao-, in fraomuod C 1163, ist
+wol nur schreibung oder schreibfehler für frômuod.²)]
+Statt frôhon oder -an begegnet ein gen. dat. s. frôian Hêl.
+M 3022, 3513, offenbar mit -an, für -in, aus der analogie-
+bildung *frôjin, mit j als übergangslaut (wie in saida, d. h.
+sâjida, in *môjida, *grôjida mnd. môyede, grôyede, u. s. w.).
+In M 2941 steht frôiaen, mit ae als schreibung für e (s. nachtr.).
+=
+¹) Dem as. *frôn entspricht ags. fréan, aus *fra-un; der nom. fréa
+ist neubildung wie as. frô. Die ags. doppelform frizea ist der reflex
+des got. jon-stammes frauja.
+2) Auch für das ahd. fôher, fôhemo u. s. w. (Graff III, 430), möchte
+man beim ersten anblick an eine der genesis von frôho, -on, zu ver-
+gleichende, aus den contrahierten flexionsformen, mit ursprünglichem
+-awu(-), hervorgegangene entwicklung denken. Indessen weist das nach
+Graft in Em. 28 begegnende foich uuefsi vespa auf eine form mit ur-
+sprünglichem h, den reflex des lat. paucus, hin.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 017; page 471 ===
+
+GRAMMATISCHES.
+471
+VI. Altes a im as. vor (m)f und (n)þ.
+Holtzmann hat in seiner Gramm. I s. 140 auf die ver-
+schiedene behandlung hingewiesen, welche im überlieferten as.
+das a vor (m)f und (n) erfahren hat. Es findet sich con-
+stantes hof lahm, mit hâbaro, hâbun, -on, su ftor, -ur, nâthidun
+nitebantur, an fâthe, fâdi zu fuss Hêl. CM 2959, an fâthie C
+556, an fâthion, fâdion m. gl. bed. CM 2921, neben einmaligem
+an fodiu M 556, doch ôðar, ôthar, ôdron u. s. w. Hêl. CM
+passim, Freck. heb. und Beichte passim, neben seltneren âdrum,
+-om Hêl. M 1271, 2985, ûthrana M 1434, âdron C 1536, âthres
+C 1477, und constantes sôd(d), mit sôdlik, -liko, -spel, -wordun
+Hêl. M. Aus diesem material ergibt sich folgendes:
+das a vor (m) bleibt erhalten;
+dasselbe ist der fall vor (n)/, mit folgendem i oder ; (die
+einzige ausnahme fôdiu begreift sich als die folge von an-
+lehnung an fôt);
+in ôðar ist das a zu ô geworden, aber nicht zum reinen
+ô, sondern, wie aus der im Cott. sowol wie im Mon. begeg-
+nenden schreibung âthr-, âdr- hervorgeht, zu einem vocal, der
+noch in etwas der â-qualität nahestand;
+in sô) ist der vocal der constanten schreibung ô zu-
+folge zu reinem ô geworden, was schwerlich als die folge
+einer phonetischen entwickelung, vielmehr als das resultat
+eines associativen processes, d. h. einer anlehnung an das be-
+grifflich nicht fern liegende und der form nach sehr ähnliche
+swôti acceptus (vgl. die häufige verbindung des adj. unit word),
+zu fassen ist; man beachte auch das im Cott. begegnende
+suothas, -an, -en, -on, suothfastan, -lik, -liko, -spel, -wordon 494,
+565, 906, 925, 1300, 2077, 2416, 3019, 3230, 4108, 4849, 4988,
+5090, 5701, 5833, 5928, suodlicas 183, -lico 2651, suotlico 581,
+637, 1361, suotspell 3838 (nie sôthas u. 8. w.), wo sowol das
+constante uo, gegenüber dem sonst mit ô wechselnden uo, als
+das auffallen muss, beides jedoch begreiflich wird bei der
+annahme, dass suoth- und suot- hier als swôth-, swôt-, die durch
+noch nähere, respect. gänzliche anlehnung an swôti entwickel-
+ten formen sind.
+Beiträge zur geschichte der deutschen sprache. XV.
+31
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 018; page 472 ===
+
+472
+VAN HELTEN
+VII. As. wita.
+suffixvoc. an-
+Kern hat in seinem instructiven aufsatz über die german.
+formen des verb. substant. (Taalbode 5, 89 ff.) im anschluss an
+Grein (Ags. wtb. 755) ags. (w)uton, -un, -an (z. b. in wutun zan-
+zan tô aggrediamur accedere) als einen zu wîtan tendere ge-
+hörigen aor. conjunct. adhort. erklärt, mit altem, an die athe-
+matische verbalform angehängtem suff. *-ome (= aid. -âma, für
+*-ama, vgl. Kern a. a. o. s. 89) oder *-omen (= oμɛv im homer.
+conjunct. -ßnouɛv, -oτýoµεv u. 8. w.). Was den
+geht, hat diese fassung gewiss keine bedenken; vgl. das -u-,
+-o-, mit jüngerer entwicklung -a-, als reflex des alten -uº- (aus
+-o-) vor m (s. Cos. Aws. gr. I § 114, Siev. Ags. gr. § 237 anm. 6
+und 293 anm. 2). Nur das -n, woneben nach den angaben bei
+Grein (Wtb.), Cos. (I § 34) und Siev. (§ 71 und 172 anm.) nie
+-m begegnet, könnte gegenüber der sonst nur ausnahmsweise
+zu beobachtenden schwächung des -m der endungen auffallen;
+doch liesse sich diese eigentümlichkeit ganz gut aus dem um-
+stand begreifen, dass zur zeit, wo man die form noch als
+verbalform empfand, das alte -m der 1. pl. aber durch das -n
+der 3. pl. verdrängt wurde, auch das ursprüngliche -m von
+*witum oder *nutum dem -n wich.
+...
+Für dieses wuton erscheint im as. bekanntlich wita, z. b.
+in 'uuita kiasan im ôdrana namon' Hêl. 223. Identificie-
+rung der beiden formen ist selbstverständlich ausgeschlossen;
+weder der schwund des -n noch das constante -a wäre bei
+solcher annahme begreiflich. Dürfte man hier aber vielleicht
+den rest erblicken eines alten dualis aor. conj., mit suff. *-owe
+(aid. -dwa, für *-awa), woraus zuerst *-au, dann -a? Für die
+entwickelung eines as. -a, neben -o, aus -ô (der contraction
+aus -au) vgl. Paul in diesen Beitr. 4, 376.
+VIII. Zur geschichte der verba pura.
+Nach anlass von Bremer's lehrreicher abhandlung über das
+j und n in sâian, sáwan u. s. w. (Beitr. 11,69) sei hier be-
+merkt, dass auch die mnl. quellen ein dem as. -sêu sevit ent-
+sprechendes sieu sowie ausserdem noch die analogen praeteri-
+talen formen crieu krähte, wieu wehte, grieu wuchs aufweisen
+(für die belege s. Taalk. Bijdr. 1, 140; die ohnehin schon an-
+Brought to you by | University of Albe
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 019; page 473 ===
+
+GRAMMATISCHES.
+473
+fechtbare, in Tijdschr. voor taal-en letterk. 3, 90, vorgetragene
+fassung dieser formen wird durch Br.'s ausführung hinfällig).
+Die bildungen begegnen nur äusserst selten und es findet sich
+daneben keine spur eines dem ags. sáwan u. s. w. entsprechen-
+den praesens. Die normale flexion der verba ist die schwache:
+saeyen, craeyen, waeyen, groeyen, mit saeide, gesaeit, u. s. w.
+Das im erwähnten aufsatz von Br. s. 60 aufgeführte afr.
+verb. sêa existierte in der überlieferten periode nicht: der nicht
+belegte infiu. ist als *sia anzusetzen (s. Altofr. gr. § 274 d;
+a. a. o. und im § 275 y dieser gramm. sind die belegten for-
+men der verba pura auf prototypen mit w zurückgeführt, ob-
+gleich sie sich alle auch aus ursprünglichem *blê-o- u. s. w.
+erklären liessen; das neben grêth crescit begegnende grô-
+winge weist nämlich auf praesensformen nach art des ags.
+sawan hin).
+Zur besagten kategorie gehört ferner noch das mhd. verb.
+spraejen, -gen, -wen, md. sprêjen, -wen spritzen, stieben machen,
+mnl. (be)spraeyen aspergere (Mnl. wb. und Oudem. Wb.): vgl.
+mhd., resp. md. waejen, -gen, nêgen, -wen, maejen, -gen, -wen,
+meien, mêwen, saejen, -wen, seien, sêwen, u. 8. w., mnl. waeyen
+u. s. w.; (altes sprênj-, 8. Kluge Etym. wtb. i. v. spreu, hätte im
+mhd. wol einerseits sprouwen, spröuwen, anderseits spraewen,
+aus den -i-formen, keinesfalls aber spraejen ergeben).
+IX. Eine ausnahme der consonantischen
+apocopegesetze.
+Auf dem gebiete der consonantenapocope gibt es einige
+fragen, welche m. e. bis jetzt noch nicht befriedigend gelöst
+sind. Ich meine die erhaltung: des r in den ahd. pronom.
+formen und vorsatzpartikeln her, er, ir, wir u. 8. W., zar-, zer-,
+zir-, ar- (neben za-, ze-, zi-, a-, Beitr. 6, 552; der neb. the etc.
+bleibt hier ausser betracht, vgl. Beitr. 2, 119), und im ags. or-,
+as. or-, ur- (neben a-); des t (2) im an. þat, hvat, ahd. daz, iz,
+hwaz, und den adjectiven auf -t, -az, im as. aonfrk. that, it, (h)wat,
+ags. det, hit, hwæt, afr. thet, hit, it, et, hwet; des n im ahd. den, in,
+wen, an. Þann, aschw. adän. hvan, as. then Hêl. CM 307, M 1096,
+Freck. heb. 192,311, thanib. 453, Hêl. M 712, in Hêl. M 4845 (neben
+norm. thena, thana, ina, und constantem hwena, sowie thane,
+31*
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 020; page 474 ===
+
+474
+VAN HELTEN
+gehwane im Mon., s. Beitr. 4, 343, hwene Mon. 892, 2270, 3076, 3079,
+4840), und in den dazu gehörigen st. adjectivsuffixen ahd. -an,
+an. -(a)n, as. -an (neben -ana, -na und -ne Beitr. 4, 343), aonfrk.
+-an (das ags. und afr. haben hier nur -ne, -(e)ne: done, hi(e)ne,
+hwone, hâligne etc.; thene, hine, hwane, hwene, gôdene, sinne etc.,
+vgl. Aofr. gr. § 246, 247, 242, 252, 212; then, hin u. s. w. im
+aofr. und awfr. sind formen mit jüngerer apocope).
+Nach Paul (Beitr. 6, 551 ff.) müsste als die ursache der
+erhaltung des r in den ahd. formen die unbetontheit gelten
+und hätten die volltonigen formen in folge eines jüngeren, dem
+ausfall des r in miata (got. mizdô) zu vergleichenden schwun-
+des das reingebüsst. Diese fassung hat ihre bedenken:
+während sonst grade die unbetontheit als conditio sine qua
+non für die apoc. eine anerkannte tatsache ist, scheint die an-
+nahme, dass im besagten fall derselbe factor grade das um-
+gekehrte erwirkt hätte, wenig plausibel; und ausserdem sind
+auch der schwund eines auslaut. consonanten und der ausfall
+eines inlaut. mitlauters vor consonanten vorgänge von zu ver-
+schiedener art um als parallelen neben einander gestellt wer-
+den zu können.
+Den formen auf -t hat m. w. zuletzt Tamm (Beitr. 6, 400 ff.)
+eine besprechung gewidmet. Er bestreitet die behauptung,
+dass got. þata, ita als die vorstufen für die formen der übrigen
+germ. sprachen gelten müssten, und erklärt sich die erhaltung
+des auslaut. cons. durch die hypothese, dass im germ. aus-
+lautendest durchaus keine apocope erlitten hätte. Was den
+ersten teil dieser ansicht betrifft, möchte man ihm gewiss
+gerne beipflichten (wenn auch nicht auf dem von ihm an-
+geführten grund, dass von einer dem ntr. angehängten endung
+auf germanischem sprachgebiete ausser dem got. keine spur
+zu entdecken wäre; vgl. aofr. thete, hwete, Aofr. gr. § 251 u.
+252): die dem got. þata, ita (aus *þatô, *itô, vgl. harjatôh)
+regelrecht entsprechende form hätte, wenn das -ô wenigstens
+der verbreiteten meinung gemäss vor der consonantischen
+apocope an das nomen angetreten wäre, im wgm. unbedingt
+thatu, -o, dazu, -o, etc. lauten müssen. Was Tamm indessen
+zur erklärung des -t beibringt, unterliegt gerechtem zweifel:
+die hypothese eines erhaltenen -t, neben geschwundenem -þ
+(-ð), ist reine willkür, welche überdiess zu einer anderen will-
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 021; page 475 ===
+
+GRAMMATISCHES
+475
+kürlichkeit nötigt, zur annahme einer urform *hom, *pom,
+neben *ot etc. (Beitr. 6, 403).
+Wie mit that etc., verhält es sich mit den accusativformen
+den etc.; auch hier hätte gotischem pana etc. (vgl. harjanôh)
+im wgm. denu, thanu etc. entsprechen müssen.
+Wahrscheinlich mit rücksicht auf dieses zu erwartende
+-u, -o, hat Sievers (Grdr. d. germ. phil. I s. 413) die annahme
+einer urwgerm. partikel -ê vorgeschlagen. Doch verhilft uns
+auch diese (einer positiven stütze entbehrende) hypothese
+nicht zur erwünschten erklärung: es hätte ja solches -ề zur
+zeit, wo -ô, -î, -û gekürzt wurde, die nämliche behandlung er-
+leiden müssen und wäre entweder zu -a geworden (das mit
+den andren -a im verein schwand) oder zu -e (für welches
+sowol eine der absoluten a-apocope als eine der bedingten
+i-apocope analoge behandlung denkbar wäre); auf jeden fall
+aber könnte man hier entweder nur formen wie that, than etc.
+oder nur formen wie *thate, thete, thene etc. erwarten, keines-
+falls jedoch doppelformen, wie sich dieselben wirklich finden,
+that, than, then etc., und thete, thane, thena etc.
+Bei diesem stand der beregten fragen, wo die vorgeschla-
+genen wege weder für that, than etc. noch für er etc. zum
+ziele führen (den versuch einer erklärung vermittelst heran-
+ziehung von aid. idam, imam, lasse ich als augenscheinlich un-
+zulässig bei seite), gelangt man unwillkürlich zur vermutung,
+dass für die deutung dieser formen die bis jetzt erkannten
+lautlichen erscheinungen nicht ausreichen, dass also der rätsel-
+hafte auslaut von that u. s. w. mit irgendwelchem noch nicht
+aufgedeckten phonetischen gesetze in zusammenhang stehe.
+Und wenn nicht alles trügt, lässt sich die einstige existenz
+einer solchen lautregel in der tat ausfindig machen, indem
+man, von der möglichkeit ausgehend, dass in that u. s. w. der
+auslautende cons. von alters her erhalten geblieben sei und
+diese erhaltung mit dem hochton im causalnexus gestanden
+hätte, den umstand beachtet, dass bei der in den jüngeren
+perioden auf verschiedenem sprachgebiete stattfindenden n-apo-
+cope der cons. in den haupttonigen monosyllabis in der regel
+erhalten bleibt, nur ausnahmsweise (und dann offenbar durch
+analogiebildung) schwindet. Im aofr., wo altes, nicht aus -m
+hervorgegangenes -n (insofern es nicht nach u stand oder
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 022; page 476 ===
+
+476
+VAN HELTEN
+durch anlehnung an flectierte formen, mit inlautendem n, oder
+auch durch häufigen gebrauch in der inclination geschützt
+wurde) in unbetonter endsilbe und in enclitisch stehenden
+monosyllabis apocopiert ist, hat der cons. in gân, stân, steen,
+und den postpositis in, fon, on, ausnahmslos seine alte stelle
+behauptet (Altofr. gr. § 107; der pl. opt. praes. dieser athemat.
+verba, für welchen demnach *gên, *stên oder *gân, *stân zu
+erwarten wäre, ist nicht belegt; der opt. pl. sê sint erklärt sich
+aus dem enclit. gebrauch des verb.). Im awfr. findet sich das-
+selbe verhältnis: gân, stân, neben gunga, halda, habba, helpa,
+hêra, (h)lia, kâpia, kêda etc. (für die belege s. v. R.'s Wtb.);
+pl. pr. opt. tsziese und wrliese S 432, 7, iouwe W 400, 2. 432, 9,
+brûke W 399, 14, habbe und winne W 399, 16, sidse, lête und
+wrôgie W 401, 17 und 18, liete S 490, 2, etc.; pl. prt. opt. hilde
+W 406, 5. 438, 15. 441, 15, hliope S 494, 18. 497, 21, stoede S
+494, 19. 497, 21, ontcoeme W 437, 27, lywade W 29, 27 und 28,
+etc.; die flect. schw. casus hâna, -e, boda, -e, boga, burga, knapa,
+frôna, -e, missa, tunga, âra, âga, -e, etc.; die adverbia binna,
+buta, boppa, aesta, westa, sûda, die en- und proclitica ma, me
+man, a praepos. (für die belege s. das Wtb.; auch aus diesen
+quellen habe ich keinen pl. opt. pr. zu gân, stân notiert; wegen
+sê sint siehe oben; wegen der auch hier begegnenden enclitica
+dan quam, vel, on, fon, in, vgl. Altofr. gr. § 107 B). Die north.
+denkmäler gewähren gegenüber dem inf. binda, -æ, -e, dem
+pl. pr. und prt. opt. binde, -a, -a, sé sint, bunde, -o (in bundon
+liegt anlehnung an den ind. vor), den schw. declinationsformen
+auf -a, -o, -u, -e, -æ, und den adverbiis dona, hwona, ufa etc.
+(Siev. gr. § 363, 361, 427, 365, 276 anm. 2, 321 anm. 1), einen inf.
+bian, dón, zán (a. a. o. § 427, 429, 430); daneben allerdings
+auch einen inf. dó, zee, und einen pl. opt. pr. bia, dó, zá
+(§ 427, 429, 430), die offenbar als analogiebildungen zu gelten
+haben. In der nnl. umgangssprache des nfrk. sprachge-
+bietes verklingt das auslautende, nicht vor voc. stehende -n in
+folge von junger apocope ausnahmslos in der tonlosen endung
+(auch wenn die flectierten formen dasselbe vor abfall hätten
+schützen können), in der regel in unbetonten monosyllabis:
+spreke etc. inf., wij, zij spreke etc., een ouwe man etc. dat. und
+acc. s., mensche, vrouwe etc. plur., ooste, bove, binne etc., gouwve
+golden, silvere, jongske, meiske, wage wagen, zege segen etc.,
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 023; page 477 ===
+
+GRAMMATISCHES.
+477
+me man, me mein, wie dat. acc. s., de, die dat. acc. s. masc.
+(wie, die durch analogie auch bei emphatischem gebrauch; in
+den procliticis van, in, aan bleibt das n in folge von inclina-
+tion; auffallend ist zen suus, ejus, neben me meus); hingegen
+immer gaan, staan, doen, zien sehen, wij, zij gaan, staan, doen,
+zien, sowie zijn, wij, zijzijn bei nicht enclit. verwendung (und
+per analogiam ebenfalls bei enclit. gebrauch), und die post-
+posita van, in, aan¹).
+Genau dasselbe prinzip nun lässt sich für die periode der
+alten consonantischen apocope in der behandlung der ein-
+silbigen formen nachweisen: im volltonigen *ir, *pat (oder
+*pot), *pan (oder *pon) u. s. w. blieb der cons. erhalten, in
+dem en- oder proclitisch verwanten *ir u. s. w. fiel es, wie
+in allen unbetonten suffixen der zwei- und mehrsilbigen for-
+men, ab.
+Im einen dialect wurde dann die eine, im andren
+die andre form bevorzugt, sodass in der regel nur entweder
+die ursprünglich betonte oder die ursprünglich tonlose die
+allein herrschende ward. Nur selten, wie im got. pei, aus *pa
++ ei, neben pata (aus *þat, s. unten), im ahd. theiz, theih,
+theist, weih, weist, aus *tha, *hwa + iz, ih, ist, neben thaz, waz,
+und in den ahd. verbalpraefixen zar-, zer-, zir-, ar-, neben
+za-, ze-, zi-, a-, sind die beiden doppelformen im gebrauch ge-
+blieben. Im acc. s. fem. got. pô, hwô, an. þá, as. thâ Hêl.
+C 1007, 2304, ags. ðá, afr. thâ, liegt demnach die alte procli-
+tische form vor; ebenso im nom. acc. pl. fem. ags. ðá, afr.
+thâ, as. tha Hêl. C 673, 744. Die cardinalia für 'duae, -as'
+'tres' (masc.) ahd. zwô, zwâ, as. twô, twâ, ags. twá, afr. twâ,
+ahd. drî, ags. ðri, afr. thrê (Aofr. gr. § 19 ß), und ags. bá sind
+die ursprünglich in der postposition stehenden schwach be-
+tonten formen. Im nom. s. der wgm. monosyllab. consonant-
+stämme und im nom. ahd. chuo, ags. cú, awfr. kû, wo nach
+1) Im me. ist die regel durch analogiebildung gänzlich durchbrochen.
+Es findet sich hier (nach gefälliger brieflicher mitteilung des herrn
+B. ten Brink) im 12. und 13. jahrh. neben ziemlich regelmässiger apocope
+des -n in unbetonter silbe auch häufiger schwund des auslautenden cons.
+in verbalen formen, wie gô, dô, ygô, ydô (für gôn u. s. w.), und in den
+monosyllabischen schwachen substantiven. Im aisl. und anorw. fehlen
+bekanntlich die reflexe von gân etc.; adän. aschw.gú muss als analogie-
+bildung gelten; wegen an. í, á s. unten.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 024; page 478 ===
+
+478
+VAN HELTEN
+Paul's gesetz (Beitr. 6,550) bei ein phonetischer entwickelung
+ein suff. -s zu erwarten wäre ¹), kann der cons. ohne weiteres
+nach dem muster der mehrsilbigen nomina abgefallen sein;
+aber auch wenn zwischen altem *fôts, *burgs u. s. w. und fôt
+(urags. urfr.), burg u. s. w. ein durch generalisierung des normalen
+nominativsuffixes - (-2) entwickeltes *fôtr, *burgr u. s. w. als
+mittelstufe existiert hat (vgl. an. fótr etc.), würde der aus der
+nämlichen ausgleichungstendenz zu erklärende schwund des
+- (-2) nicht gegen unsre regel sprechen. Im acc. s. as. kô,
+ags. cú, afr. kû, an. kú²), sú (vgl. ẞoov, v), beruht die apo-
+cope natürlich ebenfalls auf analogiebildung. S. noch nachtr.
+Das erkannte erhaltungsgesetz eröffnet uns ferner einen
+blick in die geschichte des -a der formen pata, þana u. s. w.
+Indem man früher an der meinung festhalten musste, die par-
+tikel sei schon vor der consonantischen apocope mit dem pron.
+componiert, war es nicht möglich das wgm. und das got. suffix
+zu identificieren (vgl. was hierüber im anfang dieses artikels
+bemerkt wurde). Jetzt aber, wo wir berechtigt sind die par-
+tikel auch in späterer zeit antreten zu lassen, stellt sich die
+sache in dieser hinsicht günstiger: dasselbe alte -ô, welches
+1) In betreff zu Kluge's bemerkung (Grdr. d. germ. ph. I, 385), dass
+der nom. s. der an. feminina nótt, geit u. 8. w. für das ursprüngliche
+feblen einer nominativendung -s in den consonantstämmen sprechen
+könnte, bemerke ich nach Grdr. I s. 498, dass diese formen sich, wie
+der nom. s. fem. tîð u. dgl., ganz einfach als die folgen von analogie-
+bildung nach der ô-declin. erklären.
+2) Was den voc. dieser form betrifft, so liesse sich hier wahrschein-
+lich dieselbe fassung geltend machen, welche im § 206 der Aofr. gramm.
+für das im aofr. (und awfr.) kû, hû, ags. kú, hú, vorgetragen ist: hoch-
+toniges (von alters her oder in folge von consonantapocope) auslautendes
+ô wird zu û; (man beachte ausserdem ags. bú, tú nom. acc. pl. ntr., aus
+*bo, *two, in nicht enclitischer verwendung, wie hú, aus nicht enclit.
+verwantem *hwô). Vgl. auch an. sú und * þú nom. 8. fem. und nom.
+acc. pl. ntr. (Beitr. 4, 341). Aus dem acc. müsste dann an. kú in den
+nom. s. und von diesen beiden casus aus in den gen. dat. s. und den
+pl. eingedrungen sein; also nom. s. (für urspr. *kôz oder *kôr = dor.
+ßws) *kûz oder *kûR > kýr; gen. s. (für urspr. *ko- oder *kawiz oder
+-iR = BóFos, bŏvis) *kûiz oder -iR> kýr, etc. Ebenso aofr. kû dat. 8.,
+awfr. kû gen. dat. s., ags. cú, cŷ gen. s., aus *kûi (für *ko- oder *kawiz,
+-i), awfr. kŷ acc. pl., ags. cỷ nom. acc. pl., aus *kûi (für *ko- oder
+*kawiz), etc., durch anlehnung an den nom. und acc. s. kû.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 025; page 479 ===
+
+GRAMMATISCHES.
+479
+für das got. unbedingt als prototypus zu gelten hat und bei
+späterem (nach der vocalischen apocope stattfindendem) oder
+bei früherem antritt in der historischen periode nichts anders
+als -a ergeben könnte, musste im wgm., wenn es nach der
+kürzung ehemals ungedeckter oder von (früh apocopiertem) -t,
+-ð (-b) gefolgter vocale und vor der kürzung der ursprünglich
+durch nas. oder -r (-2) gedeckten langen vocale dem pron. an-
+gehängt war, mit dem -ô, aus -ôm, -ôn, -ôz, zusammenfallen
+und konnte demzufolge, wie z. b. das -ô des gen. acc. s. fem.
+der ô-stämme und des nom. s. der schw. feminina und neutra,
+im ahd. as. als -a, im ags. afr. und as. (des Mon.) als -e er-
+scheinen.
+Aus dem oben angeführten geht für got. þatuh, panuh
+hervor, dass diese formen, wie schon Tamm (Beitr. 6, 402)
+in bezug auf erstere bemerkt hat, auf þat, þan und uh zurück-
+gehn können. Doch wäre es ebenfalls möglich, dass hier, wie
+in þammuh, für *þammêh (vgl. hammêh), analogiebildungen,
+nach pizuh, *paimuh, *panzuh etc., für älteres *patôh, *panôh
+(vgl. harjatôh, -anôh, hanôh) vorlågen. Dass aber in patuh,
+panuh keineswegs ein pata, pana stecken kann, steht unbe-
+dingt fest: das -uh ist, wie sich aus hammêh, wanôh etc. er-
+gibt, vor der kürzung der auslautenden, ursprünglich unge-
+deckten oder von -t, - (-) gefolgten vocale mit dem pron.
+componiert, also zu einer zeit, wo es noch kein pata, pana
+geben konnte.
+Zum got. und wgm. - stimmt das im urn. minino (Strand)
+begegnende -ô, welches, wie im wgm., erst nach der kürzung
+der ehemals ungedeckten vocale au die ursprüngliche form
+des acc. s. masc. angehängt sein kann: zunächst findet es sich
+in einer periode, für welche die kürzung des ungedeckten -ô
+zwar nicht sicher belegt, jedoch durchaus wahrscheinlich zu
+erachten ist (vgl. Nor. Aisl. gr. § 284 anm. 1); sodann aber
+hätte sich bei früherem, vor der vocalkürzung erfolgtem antritt
+der partikel aus einem hiernach anzusetzenden þanu oder ponu
+u. s. w. nach nordischem lautgesetze unbedingt statt þann,
+sjúkan, sekjan u. s. w., ein ponn oder ponn und sjúkon, sekjon
+u. s. w. entwickeln müssen. Dem hiernach zu vermutenden
+alten *panô u. s. w. würden im an. also formen entsprechen,
+wie pana u. s. w., die zwar verloren gegangen sind, möglicher-
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 026; page 480 ===
+
+480
+VAN HELTEN
+weise jedoch nicht ohne eine indirecte spur zu hinterlassen:
+die abwechselnd betont und proclit. verwanten monosyllaba,
+welche nach dem oben ausgeführten zur zeit der n-apocope
+mit und ohne -n gesprochen sein müssen, zeigen im an. nur
+letztere form (vgl. í, á, aus *i, *a, für *in, *an); demnach wären
+auch die altem *pan u. s. w. entsprechenden bildungen in folge
+gleicher vorliebe für die apocopierte form nur als þá u. s. w.
+zu erwarten; dass sich indessen im gegenteil statt deren nur
+þann (für *þan; das -nn durch analogiebildung nach hann?)
+u. s. w. findet, rührt einerseits gewiss von der neigung her die
+formendifferenz für das masc. und fem. aufrecht zu halten,
+anderseits aber vielleicht auch von der conservativen beein-
+flussung, welche die doppelformen *pana u. s. w. ausübten.
+X. Zur geschichte der u- und der uz-stämme.
+A. Ausser den für die genesis von altem *manniz, *kinniz
+(= ags. afr. men, an. menn, kinnr), anzusetzenden formen *mon-
+wiz, *kenwiz (Grdr. d. germ. ph. I s. 386), gibt es noch einige
+fälle, wo für die germ. u-flex. ein gen. dat. (instr.) und nom.
+pl. mit nicht guniertem stammsuffix anzuerkennen ist: got. die
+genitive und dative 8. sunus, nulpus etc., sunu, nulþu etc.
+(Leo M. Got. spr. 574); ahd. witu ligni (Kögel Ker. gl. s. 164)
+und situ acc. pl. (Br. Ahd. gr. § 230 anm. 3); north. sunu gen.
+8. (Siev. Ags. gr. § 271 anm. 2); ags. (auch north.) höchst
+wahrscheinlich sunu, -o, meodu, -o, duru dat. 8., und sunu, -0¹),
+wudu, duru nom. (acc.) pl. (Siev. gramm. § 270, 271 und 274;
+altes suniwi, -iz, etc. hätte nach dem oben II ausgeführten suni
+etc. oder syni etc. ergeben müssen). Der as. dat. s. sunu Hêl.
+M 2815 ist zweideutig, weil die form auch mit syncope des
+postconsonantischen, aus i hervorgegangenen ; aus *suniu (vgl.
+oben 8. 458) geflossen sein könnte (cf. ahd. der instr. fridu
+neben fridiu; s. auch nachtr.). Der as. gen. dat. s. suno Hêl.
+1) Neben diesem north. sunu, -o, in allen casus des sing. und im
+nom. acc. pl., erklärt sich das sunu, -o, des gen. pl. als analogiebildung.
+Der ags. neben sunu begegnende nom. acc. sing. suna vergleicht sich
+als die folge einer ausgleichungstendenz gotischem nom. und acc. s.
+sunaus, handau etc. (Leo M. Got. spr. 8. 574). Dasselbe gilt auch für
+north. dura nom. acc. s. R² (Siev. Gr. § 274 anm. 2), statt duru.
+Brought to you by | University of Albert
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 027; page 481 ===
+
+GRAMMATISCHES.
+481
+C 5788, 5946, kann auf *sunu oder auf *suniu oder auch auf
+*sunô, für *sunau, zurückgehn.
+B. Ausser dem bekannten übertritt ursprünglicher mascu-
+liner u-stämme in die o-flexion und des fem. handus in die
+i-klasse, gibt es im wgm. noch einige vereinzelten fälle, wo das
+lautliche zusammentreffen der u- und einer andren declination
+in einem oder mehreren casus die übersiedlung des u-stammes
+in eine andre umgebung veranlasste. Ein paar dieser fälle
+wurden schon oben II zur sprache gebracht; die übrigen von
+mir beobachteten stelle ich hier zusammen.
+Aofr. der schw. nom. acc. s. forda, hûswerda, fretha, der
+sich in folge des zusammenfalls des urspr. gen. dat. s. und
+nom. acc. pl. der u-flex. mit denselben casus der schw. declin.
+entwickelte (Aofr. gr. § 179* und 181). Vgl. dazu auch awfr.
+ferda pax nom. acc. s. (v. R.'s Wtb.).
+Aonfrk. der schw. gen. s. sidin moris Kar. ps. 67, 7, und
+Gl. L. 823, durch zusammenfall des nom. s. *sido mit dem nom.
+s. der masc. n-stämme.
+Ahd. nasa nom. acc. s., mit naso gen. s., nasun dat. 8.¹),
+ags. nosu, nasu, duru, mit nose, nase, dure gen. dat. instr. s.
+(Beitr. 8, 507, Siev. Gr. § 274 anm. 1), aofr. nose, -i, -a, mit nose
+gen. dat. s. (Aofr. gr. § 182), awfr. nose, mit nose dat. acc. s.
+(v. R.'s Wtb.), durch verwechslung des -u des nom. s. der u-kl.
+mit dem alten nominativsuffix der ô-stämme.
+Ags. friodu und sceadu fem., mit flect. sing. auf -e, durch
+eben dieselbe verwechslung.
+As. lusta acc. s. oder pl. fem. Hêl. M 1661, 3453, durch
+verwechslung des urspr. *lust, gen. *lustô oder -o (aus *lustuz,
+-auz), mit dem alten nom. und gen. s. der ô-stämme. Ob der
+ahd. acc. pl. lusta Tat. 131, 19, hiermit auf eine linie zu stellen
+oder als eine form der o-declin. zu deuten sei, ist m. e. schwer-
+lich zu entscheiden; der dat. s. kelusta Nôtk. psalm. in cod.
+Vind. ist ebenfalls zwei- oder sogar dreideutig (vgl. irdischiu
+keluste terrena delectamenta Nôtk. ps. 38, 1).
+Ahd. scato umbra, mit scat(a)we dat. 8., und mhd. schatwe,
+mnd. scaduwe, -ewe, mnl. scaduwe, ewe (meine Mnl. gr. § 41)
+-
+¹) Für diese und die folgenden ohne belegstellen angeführten for-
+men siehe die wörterbücher und glossare.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 028; page 482 ===
+
+482
+VAN HELTEN
+(mit generalisierung des suff. der casus obliqui), durch verwechs-
+lung des urspr. -u, -o im n. a. s. (got. skadus) mit der gleichen
+endung der wo-stämme (as. ist nur der nom. skado belegt; der
+aonfrk. dat. s. scado Kar. ps. 56, 2, ist entweder apocopierte
+form für *scadowe, vgl. horne und siehe wegen der apocope
+des e nach schwach betonter silbe unt. XII, oder er hat das
+alte suff. -o, aus -au, der u-flex.; mnd. findet sich auch scude
+masc., mnl. scade masc. und fem., s. Mnl. gr. § 270).
+C. Wenn kurzsilbige masc. u- und i-stämme, wie got.
+sidus, as. seli, mnl. sale (aus *salu), ahd. sigu, -i, u. s. w., aus
+ursprünglichen uz-, iz-stämmen hervorgegangen sind, ist die
+möglichkeit der nämlichen genesis auch für andre kurzsilbige
+und für langsilbige u- und i-stämme, z. b. für got. libus, ska-
+dus, fairhus, flôdus, luftus etc., urags. urfries. *felþuz, *furðuz,
+ags. lyft, dyrst etc. nicht zu leugnen. Aus solchen prototypen
+aber, aus ursprünglichen neutren *liþuz, -iz, *skaðuz, -iz (vgl.
+бxóτos), *ferhvuz, -iz, *flôðuz, -iz, etc., erklären sich die fol-
+genden fälle, welche bei der annahme eines ursprünglichen
+u-stammes völlig dunkel sind:
+das ntr. ahd. feld, mhd. velt, aonfrk. felt (belegt im nom.
+pl. felt Kar. ps. 64, 12), mnd. mnl. velt (as. ist das genus nicht
+belegt), aus *felþuz ntr., neben ags. aofr. feld masc. (cum dat.
+s. felda, Cos. Aws. gr. 11 § 28, Aofr. gr. § 150*, 179*), awfr.
+field masc.;
+das ntr. ahd. ferh (vgl. nom. acc. pl. ferih, -ah), ags. feorh,
+an. fjor, aus *ferhuz ntr. (im an., wo das -r auf lautlichem
+wege nicht abfallen konnte, beruht der schwund des cons. auf
+analogiebildung nach dem nom. acc. 8. der st. neutra), neben
+ags. feorh und got. fairhus masc. (as. ist nur der gen. und dat.
+pl. firiho, -un, -on, belegt);
+das ntr. as. flôd (belegt im nom. pl. flôd Hêl. 3917), ags.
+flôd (Cos. Aws. gr. II § 27), an. flôð, aus *flôðuz ntr. (mit suff.
+-ðuz, aus -tos; vgl. z. b. oxúτos, ags. hróðor, aus *hrôpuz,
+mit wurzel hrô, wie as. hrôm), neben as. flôd (the, thena), ags.
+flód (nom. acc. pl. flódas), aofr. flod masc. (Aofr. gr. § 150*),
+mhd. vluot masc., mnl. vloet masc. (Tijdschr. v. Lett. 2, 45)
+got. flôdus (dessen nicht belegtes genus ohne bedenken als
+masc. anzusetzen ist, weil es im hinblick auf die verhältnis-
+mässig grosse zahl masculiner und die verschwindend geringe
+=====
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10/
+=== PDF sheet 029; page 483 ===
+
+GRAMMATISCHES.
+483
+zahl femininer u-stämme kaum denkbar ist, dass die uz-stämme
+beim übertritt in die u-flex. sich an die feminina angeschlossen
+hätten), und dem femin. ahd. fluot, as. flôd, aonfrk. fluot, mnl.
+vloet (vgl. oben s. 458);
+das ntr. an. awfr. frest frist, neben masc. an. frestr, ahd.
+frist, ags. fierst, und fem. ahd. frist (gen. dat. s. fristi), amfrk.
+vrist (in kurtur vriste Kar. ps. 2, 13);
+ags. ntr. frið, aus *fribuz oder -iz (mit analogischem
+schwund des endungsvoc., wie ags. hrif, ahd. href, aus *hrifiz,
+*hrefuz, ags. sæl, aus *saluz, etc.), neben masc. ahd. fridu, as.
+fridu etc., ags. frið) (Cos. Aws. gr. II § 27), und ags. frioðu
+fem. (s. oben B);
+ahd. ntr. furt (vgl. nom. pl. furt vada), neben masc. ags.
+ford (dat. s. forda, Cos. Aws. gr. II § 28), aofr. forda (s. oben
+B), mhd. md. furt, mnd. vort, und fem. mhd. furt (das genus
+des ahd. nom. pl. furte ist unsicher; wegen des fem. vgl. ahd.
+fluot u. s. w., s. oben);
+ags. ntr. cwið bauch (mit analog. schwund wie frið), neben
+mase. got. qiþus, an. kviðr, und ahd. qhuiti vulva (genus nicht
+nachweisbar; die form vergleicht sich in betreff zur genesis
+dem ahd. sigi);
+das ntr. ahd. lid (vgl. nom. acc. pl. lid, lider), ags. lið,
+aofr. awfr. lith, mnd. mnl. lit, let, neben masc. got. lipus, an.
+lior, as. lid, ahd. lid (vgl. oben s. 458);
+das ntr. ahd. luft (vgl. luft auras Gl. 2, 522, 39), an. lopt,
+neben got. luftus (das nicht belegte genus ist auch hier als
+masc. anzusetzen), ahd. luft fem. (auch masc., vgl. mhd. luft
+masc. fem.), mnd. mnl. lucht (vgl. oben s. 458) und ags. lyft
+masc. fem. (s. gleich unten); mit rücksicht auf das abd. an.
+ntr. ist auch ags. lyft, pl. lyftu, ungeachtet seines späten auf-
+tretens (Beitr. 9, 243, und Siev. gr. § 267 anm. 2), wol als alte
+form zu fassen;
+die ags. zwischen fem. i- und ntr. o-flex. schwankenden
+nomina wiht (vgl. auch got. waihts neben niwaiht, ahd. wiht,
+mit pl. wihti, und wiht, wihtir), gecynd, zemynd u. s. w. (vgl.
+Beitr. 9, 242 und 243, Siev. Ags. gr. § 267 b und anm. 2¹)), sowie
+¹) Wahrscheinlich gehört hierzu auch wist, samwist, pl. (sam)wistu
+(Siev. Ags. gr. § 267 anm. 2); vgl. das oben über lyftu bemerkte.
+Brought to you by | University of Albe
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 030; page 484 ===
+
+484
+VAN HELTEN
+ahd. weganest viaticum ntr. (v. Borries i-uml. s. 24), neben kenist
+salutem fem.;
+ags. lyst fem., neben got. lustus masc., ags. awfr. lust
+masc., ahd. as. mhd. mnl. mnd. lust (vgl. oben s. 458); die an-
+nahme eines übertritts aus der u- in die i-flex. wäre für die
+form mit y (wie für lyft, s. oben) unbedingt zu verwerfen:
+von der existenz eines solchen flexionswechsel vermittelnden
+nom. (acc.) pl. auf -iu (vgl. ahd. puogi etc., oben s. 457) findet
+sich bei den ags. u-stämmen keine sichere spur und ein durch
+die formengleichheit des nom. acc. s. der u- und i-kl. veran-
+lasster übertritt hätte erst nach der wirkung der voc. apocope,
+also nach der umlautswirkung erfolgen können; das nomen
+geht auf altes *lustiz zurück, das beim austritt aus der iz-kl.
+sich sowol an die feminina als an die masculina anschliessen
+konnte, weil ja die i-nomina beiderlei geschlechts in ungefähr
+gleicher zahl vorhanden waren;
+das diesem lyst analoge masc. ags. Dyrst, neben ags. Durst,
+ald. durst, as. thurst;
+got. uswahst (acc. s.), neben wahstus;
+sowie auch
+got. gairu (mit analogischem, durch das ntr. genus veran-
+lasstem schwund des -s), neben ags. går masc. (für den alten
+gen. s. -gâra s. Cos. Taalk. Bijdr. 2, 272) und aofr. etgêr, respect.
+altem u- und i-st. (aus urspr. -uz, -iz, vgl. auch aid. hêšas ge-
+schoss ntr. as-st.; ahd. as. gêr, an. geirr kann auf *zaizuz oder
+*zaiziz zurückgehn);
+ahd. witu ntr. Otfr. 2, 9, 43 (mit witu ligna Sg. 913, s. Graff
+I s. LXVI, pl.?), neben mhd. wit, an. wiðr, ags. wudu masc.;
+ags. wuldor, -ur ntr., neben got. wulpus masc.
+Anmerkung. Nach ags. lyst etc. und got. uswahst, neben
+wahstus, liegt es nahe für ags. cyst und aofr. kest fem., neben got.
+kustus masc., an. kostr, ahd. kost arbitrium masc., und für got. gakusts,
+neben kustus, ein ähnliches altes *kustiz, aus *kustuz, -iz-, zu postu-
+lieren; nur dürfte dann aber solcher stamm mit rücksicht auf lat. gustus
+nicht als der urtypus gelten, sondern wäre als ein durch die vermischung
+der u- und uz-stämme aus der u-flex. in die uz- (iz-)kl. übergetretener
+stamm, also als das gegenstück zu sidus u. s. w. zu fassen. Ahd. cust
+electio etc. fem. (mit custi dat. s.) ist zweideutig (vgl. oben s. 458).
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10
+=== PDF sheet 031; page 485 ===
+
+GRAMMATISCHES.
+485
+XI. Ahd. oun (j), aus ônj.
+Die entwicklungsgeschichte der urgerm. verbindung ôn¹j
+ist bekanntlich in den letzten jahren vielfach zur sprache ge-
+bracht; zuletzt von Paul und Kögel. Paul hat (Beitr. 7, 157)
+die Mahlow'sche deutung ôni > awi, ôwj > ôj für das got. an-
+erkannt, für das urgerm. jedoch entschieden abgelehnt. Dieser
+ansicht trat Kögel (Beitr. 9, 509 ff.) entgegen; nach ihm sollten
+got. *addi u. 8. w., neben fjóv, ahd. chreia, chrâia, aus *krênî,
+*krêwjôz, ahd. hei, neben xάfjo, ahd. stouuuan, neben stuouuan,
+ahd. Souuilenheim, neben got. sauil, aus *sôwil, ahd. *pauuen,
+*peuuen kneten, drücken, neben got. bauan bewohnen, zur an-
+nahme einer gemeingerm. syncope des w² vor j und entwick-
+lung des au aus ôn² + voc. berechtigen. Das stichhaltige
+solcher folgerung möchte ich auf grund der folgenden argu-
+mente bezweifeln.
+1. Die von K. ins treffen geführten formen sind z. t.
+durchaus nicht z. t. nicht notwendig in der angegebenen weise
+zu deuten für die urgerm. form, welche gotischem *addi ent-
+spräche, wäre bei heranziehung von oófjóv nach Sievers' ge-
+setz unbedingt eine grundform *ênio-, nicht *ênjo- anzusetzen;
+wegen chreia, chrâia, s. Bremer in diesen Beitr. 11, 72; für hei
+etc. ist verwantschaft mit aslov. sijati splendere wenigstens für
+möglich zu halten; dass stouuuan nicht zur annahme einer ent-
+wicklung oun aus ôn² + voc. zwingt, wird gleich unten ge-
+zeigt werden; Souuilen- begreift sich als die folge von beein-
+flussung eines lautlich entwickelten *soulin- (für *sôulin-, aus
+*sonlin-, vgl. seula, eo je) durch *sôwil (= got. sauil; sôl- in
+Solburg verhält sich in betreff zum voc. zu *soulin-, wie sêla
+zu seula); *pauuen und bauan sind wegen der durchaus verschie-
+denen bedeutungen von einander zu trennen.
+2. Im got. begegnet m. w. ausser nach ô, im wgm., mit
+ausnahme der noch unerklärten, in Beitr. 9, 203 f. zur sprache
+gebrachten, speciell auf das ags. beschränkten formen, über-
+haupt kein fall, der sich als sicherer beweis für die syncope
+des nachvocalischen w vor j geltend machen liesse.
+3. Keine der von Paul gemachten einwendungen sind
+durch Kögel's ausführung entkräftet. Nach wie vor bleibt es
+bei annahme der Mahlow'schen hypothese unerklärt: wie im
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 032; page 486 ===
+
+486
+VAN HELTEN
+got. aus urgerm. *tôniom, *tôwieso u. s. w., ein taui, tôjis u. s. w.
+und nicht alle formen hindurch taui, taujis u. s. w., hervor-
+gegangen wäre; wie das j, welches erst innerhalb der ent-
+wicklung der einzelnen hauptgruppen aus i entstanden ist, noch
+vor seiner genesis den schwund des vorangehenden 22 hätte
+erwirken können; warum sich für das ô, uo des ags. stôw,
+rôn, ahd. ruouua, nicht éa, ou findet.
+Das uon
+der ahd. doppelform von stouuuan, nämlich
+stuouuan, ist nach dem oben unter 2. bemerkten keineswegs
+auf die verbindung ôn²j zurückzuführen, muss also aus ôn²i
+hervorgegangen sein. Daraus erfolgt für das ouw von stouuuan,
+sowie von ahd. touuan, douuen sterben ¹), *zouuen (belegt im
+prt. zouuitun exercebant), mhd. zouwen, zouwen machen, be-
+reiten, rüsten, neben got. afdauidai, taujan, taui, tôjis etc., mit
+grosser wahrscheinlichkeit eine genesis aus ôn²j, zumal wo
+die von Paul (Beitr. 7, 160) angenommene entwicklung des
+diphth. im prt. -stouta (aus *-stôwita) nach Kögel's richtiger
+bemerkung (Beitr. 9, 514) nicht zulässig ist. Und in der tat
+erklärt sich solches oun (j) aus ôn²j ganz einfach, indem man
+aus der von letzterem gelehrten für das ahd. erkannten wir-
+kung des w2j nach a und i (Beitr. 9, 523 ff.) die consequenz
+zieht für das w²j nach ô. Was könnte man im hinblick auf
+das our(j), iun(j), aus an²j, in2j, aus einem lautcomplex ôn²j
+überhaupt anders erwarten als ôunj, und hieraus ouw(j)?
+XII. Gibt es im altwestgerm. fälle, wo ein durch
+die wirkung der alten apoco pegesetze im auslaut nach
+conson. stehender endungsvocal auf phonetischem
+wege abgefallen ist?
+Die antwort auf obige, m. w. bis jetzt noch nicht auf-
+geworfene frage dürfte, sofern ich ersehe, mit einem vorbehalt
+eine verneinende sein. (Das sogen. afr. bleibt hier natürlich
+als einer jüngeren periode angehörend ausser betracht). Im
+aonfrk. begegnen ein paar sporadische formen, mit abgefalle-
+nem -e nach schwach betonter oder tonloser silbe, nämlich die
+1) Das neben touuuintêr begegnende teuuantêr (Beitr. 9, 532) ist
+offenbar die folge von analogiebildung nach den envi-formen der verba,
+mit oun aus aw²j.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10.
+=== PDF sheet 033; page 487 ===
+
+GRAMMATISCHES.
+487
+dative sing. cunig, silver, neben weit häufigeren druftene,
+himile, vitute etc. (Cosijn, Oudnederl. ps. De a-stammen; an
+âvont vespere, an morgan mane sind nicht beweisend, weil hier
+analogiebildungen nach an naht, s. unten, vorliegen könnten¹)).
+Andere formen aber, wo man vielleicht beim ersten blick
+jüngere apocope vermuten möchte, erklären sich als alte regel-
+recht lautgesetzlich entwickelte bildungen oder als die folgen
+von analogiewirkung. Für suni, Furti u. s. w. siehe oben II.
+Dative s. der fem. i-stämme, wie mundburd, hand, maht, werold
+Hêl. (neben häufigerem weroldi), wînvard Freck. heb. 546, hûd
+as. Segen B5, ahd. anst (Br. gramm. § 218 anm. 2), wer(o)lt
+(Graff i. v.), sind analogiebildungen, d. h. unter beeinflussung
+der fem. consonantstämme aus dem acc.-nom. eingedrungene
+formen; das nämliche dürfte für den constanten as. dat. s. fem.
+middilgard gelten, wenn derselbe nicht überhaupt consonantst.
+ist. Der ags. dat.-loc. hám, hús ist, neben normalem werci, -e,
+spelli, e, etc., als die phonetisch entwickelte form zu fassen
+(Beitr. 8, 324 ff.; 12,553, und Ags. gr. § 237 anm. 2); desgleichen
+auch wol der dat.-loc. ahd. dorf, hûs (Br. gramm. § 238 anm. 2),
+as. hûs 2), Sciphurst, Sendinhurst, Mottonhêm, Sahtinhêm, und andre
+nomina geographica mit -hurst, -hêm Freck. heb. 52, 68, 70, 73,
+77, 86, 91, 107, 108, 135, 159, 179, 191, 197, 204, 214, 215, 248,
+284, 345, 352, 502, 607, 6083), aonfrk. in Wilishorst, in Mikilon-
+hurst, in Herdenesheim, in Cloheim Crec. Coll. III a s. 64 und 65,
+III b 8. 3, etc., neben ahd. -hûsi, Pôhhi etc. (Beitr. 14, 121), as.
+Hursti, Crupilingi Freck. heb. 40 und 50, aonfrk. Calvaslôgi, With-
+mundi Heinz. Ndfrk. geschäftsspr. s. 27, Urðingi, Hesingi, Ubiti,
+¹) Mit rücksicht auf die bedeutung der ausdrücke ist hier die an-
+nahme eines an cum acc. = ‘gegen, um' (temp.) weniger wahrscheinlich;
+vgl. auch das unmittelbar folgende (Ps. 54, 18) an mitdon dage.
+2) Vgl. auch aofr. hûs dat.-loc. (Aofr. gr. § 198). Die sich nur auf
+diesen suffixlosen casus stützende fassung des nomens als urspr.
+consonantst. dürfte mithin hinfällig werden.
+3) Das vielleicht ebenso zu deutende -lan (oder -lân?) in van Meclan,
+van Eclan, van Gestlan Freck. heb. 257, 275, 279, 317, ist mir dunkel.
+Der dat. Westerwik, Panewîk Freck. heb. 155, 254, ist zweideutig: als
+fem. i-st. (vgl. aofr. there wîc, as. wiki acc. pl. Hêl. C 3699) wäre er wie
+as. mundburd u. s. w. zu beurteilen, als masc. oder ntr. (vgl. ahd. wîh
+masc., ags. wîc ntr.), wie hûs u. s. w. In van thero Harth Fr. heb. 262, 324,
+liegt vermutlich i-st. vor (vgl. mhd. diu hart wald).
+Beiträge zur geschichte der deutschen sprache. XV.
+32
+Brought to you by | University of Albert
+Authenticated
+Download Date | 6/29/15 2:10 A
+=== PDF sheet 034; page 488 ===
+
+488
+VAN HELTEN, GRAMMATISCHES.
+Embrikni Crec. Coll. III a s. 19 und 36, awnfrk. Naruthi, Walli ib.
+I s. 25 und 26, etc. An dag die as. Beichte 51, Kar. ps. 54, 11,
+(an)morgan mane, cras Hêl., und tó dæg, tó morgen, merzen,
+tó áfen (Beitr. 9, 229), begreifen sich als adverbiale, nach dem
+muster von an naht, to niht, gebildete ausdrücke. Ahd. them,
+ther, für themo, thera, -u, -o (Br. gramm. § 287 anm. 2), sind
+offenbar die in der proclisis vor voc. entwickelten formen,
+welche in folge von analogiebildung selten auch vor conson.
+begegnen.
+GRONINGEN.
+W. VAN HELTEN.
+Nachträge.
+Zu II. Der aonfrk. dat. fuoti ist nicht beweisend; derselbe könnte
+auch flexionsform nach der o-kl. sein (vgl. Cos. Oudndl. ps. De a-stammen).
+Zu V. Für die schreibung froiaen, statt froien, im Mon. vgl. ændi
+530, cumæ 707, wihæs 814, iohannæ 865, iohannesœ 952, saliga 1308,
+cumæn 2669, uuatære 3047, statt endi etc. (s. auch noch 1504, 2448, 2656,
+2668, 3071, 3328, 3546, 3696, 4563, 4849, 5252, 5542).
+Zu IX.
+Beim nachschlagen im IV B. dieser Beitr. bemerkte ich
+dieser tage zufällig, dass Paul vor veröffentlichung seiner abhandlung
+'Zum Verner'schen gesetz' die bedingungen für den abfall und die er-
+haltung des auslaut. cons. richtig formuliert hatte. Vgl. auf s. 388 des
+IV B. Denn wir müssen das gesetz von dem abfall des nasals im germ.
+so fassen, dass er nur die unbetonte, nicht die betonte silbe trifft, gerade
+so wie der abfall des s (z, r) im ahd. (tag — er)'.
+-
+Zu X A. Gegen die fassung vom as. dat. 8. sunu als instr. nach
+der o-declination (Beitr. 4, 430) spricht der umstand, dass sich im Hel.
+keine sichere spur vom übertritt des nomens in diese flex. findet (der
+dat. sune C 2948 kann, neben normalem sunie, schwerlich als solche
+gelten). Ob das u im as. dat. frethu als endung nach der o-declin.
+(vgl. a. a. o.) oder als altes -u oder als -u, aus -iu, zu gelten hat, ist
+natürlich zweifelhaft. Für den as. dat. feho s. Beitr. a. a. o.
+Brought to you by | University of Alber
+Authenticated
+Download Date | 6/29/15 2:10 A
