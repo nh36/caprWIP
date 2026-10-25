@@ -31,6 +31,33 @@ list below.
 - `docs/references/anglosaxondictio00tolluoft.txt` — Bosworth–Toller, *An Anglo-Saxon Dictionary*
 - `docs/references/aconciseanglosa01hallgoog.txt` — J. R. Clark Hall, *A Concise Anglo-Saxon Dictionary*
 
+## Focused early-text verification
+
+- `Sweet1885`, `docs/references/sweet_1885_oldest_english_texts.{pdf,txt}`:
+  complete public-domain EETS83 edition. EE/Corpus pp.39–53,107; early
+  Northumbrian pp.125–127,148–149; Vespasian pp.188–189. Edition spelling
+  and actual item numbers were checked on page images, not OCR alone.
+- `Sweet1871`, `docs/references/sweet_1871_pastoral_care.{pdf,txt}`:
+  EETS45, partI, Alfredian Hatton transcription; p.3 and preliminary
+  transcription notice checked. Not a claim to have acquired partII.
+- `Stevenson1840`, `docs/references/stevenson_1840_durham_ritual.{pdf,txt}`:
+  complete Surtees10 edition; p.7 verifies late Northumbrian gi. Public domain;
+  repeated scan sheets are not additional manuscript witnesses.
+- `LucasLucas2012`, `docs/references/lucas_lucas_2012_epinal_72.pdf`, p.67;
+  `Lucas2016`, `docs/references/lucas_2016_corpus_144.pdf`, p.11:
+  complete openly accessible manuscript descriptions retained locally.
+  Publication years2012/2016, not the2023 digital-posting dates.
+  Copyrighted originals are not redistributed. They revise the older
+  absolute manuscript dating without dating each inherited gloss.
+- `RuneSPforzen`, `docs/references/runes_pforzen_201.xml`: complete RuneS
+  find201 descriptive record, https://www.runesdb.de/find/201, accessed
+  2026-10-25; CC BY-SA4.0, attributed to RuneS. External date585–610,
+  not a date for English raising; translation/segmentation remains limited.
+- Existing `Toller1921` supplement holding: p.284, ge-, not the main
+  dictionary. The focused SC035 ledger distinguishes exact edition readings,
+  related witnesses, normalization and missing access. Acquisition/hashes/
+  rights details for all these sources are in `docs/references/README_resources.md`.
+
 ## Proto-Germanic / Germanic comparative grammar
 
 - `docs/references/fulk_comparative_grammar_early_germanic.txt` — Fulk, *A Comparative Grammar of the Early Germanic Languages*

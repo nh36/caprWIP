@@ -12,7 +12,13 @@ Taylor supply early *gistīga* 'climb into/onto' beside later *gestīga*
 @RingeTaylor2014, pp. 334--335].
 
 The manuscript evidence, rather than the older proxy's displacement
-results, supports this limited relative chronology.
+results, supports this limited relative chronology. It is not a universal
+calendar for spellings: the earliest related glossaries already mix *gi-*
+and *ge-*, and the Durham Ritual still writes *gi-* in the tenth century.
+Different varieties and transmitted orthography must be distinguished
+from successive reconstructed vowels
+[@Toller1921, p. 284; @Sweet1885, p. 48;
+@Stevenson1840, p. 7; @HoggGrammar2011, pp. 238--239, §§6.53--6.54].
 
 ## SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction}
 

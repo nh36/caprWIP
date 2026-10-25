@@ -69,7 +69,7 @@ SC049	PGmcBAllophony	historical_sound_change	Old English	PGmc B Allophony	pgmc	p
 SC050	SieversLawSyncope	historical_sound_change	Old English	Sievers Law Syncope	pwgmc	pan_wgmc	B	unadjudicated		60	58
 SC051	OESkPalatalization	historical_sound_change	Old English	OE Sk Palatalization	oe	english_specific	A	unadjudicated		61	59
 SC052	OEVelarPalatalization	historical_sound_change	Old English	Class-distinct English velar palatalization	preoe	english_specific	A	adjudicated	REFORMULATE/SPLIT	62	60
-SC035	OEPrefixAReduction	historical_sound_change	Old English	Pretonic front-vowel raising after a palatal fricative	preoe	english_specific	B	adjudicated	REFORMULATE/REORDER	63	61
+SC035	OEPrefixAReduction	historical_sound_change	Old English	Pretonic front-vowel raising after a palatal fricative	preoe	english_specific	B	adjudicated	RETAIN	63	61
 SC053	OEPostVelarWLoss	historical_sound_change	Old English	OE Post Velar W Loss	oe	english_specific	A	unadjudicated		64	62
 SC054	OEWLossBeforeI	historical_sound_change	Old English	OE W Loss Before I	oe	english_specific	A	unadjudicated		65	63
 SC056	OEWsPalatalDiphthongization	historical_sound_change	Old English	Ordinary West Saxon palatal diphthongization	ws_oe	west_saxon	A	adjudicated	REFORMULATE	66	64

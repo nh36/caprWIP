@@ -41,7 +41,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 032-diphthong-leveling.md | SC032. Quantity-distinct diphthong realization (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 41 | 72 | no |
 | 033-long-eow-diphthong.md | SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 50 | 43 | no |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 50 | 61 | no |
-| 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 47 | 51 | no |
+| 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 116 | 51 | no |
 | 036-inter-stress-raising.md | SC036. Raising of medial \emph{*a} between stress peaks (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 11 | 101 | yes |
 | 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 14 | 82 | no |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 65 | no |
@@ -87,7 +87,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 073-unstressed-ae-merger.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | 7 | 48 | no |
 | 074-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | 20 | 90 | no |
 | 075-i-preservation-before-ng.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | 7 | 37 | no |
-| 076-prefix-i-reduction.md | SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | 19 | 48 | no |
+| 076-prefix-i-reduction.md | SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | 25 | 48 | no |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | 14 | 48 | no |
 | 079-j-loss-after-heavy-syllables.md | SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | 17 | 141 | yes |
 | 080-final-geminate-simplification.md | SC080. Simplification of final geminates (`OEFinalGeminateSimplification`) {#rule-OEFinalGeminateSimplification} | 7 | 38 | no |

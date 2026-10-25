@@ -112,8 +112,8 @@ def test_cluster_coverage_advantage_is_not_hidden_by_selected_output_equality():
 
 def test_current_decision_links_followup_without_claiming_a_unique_history():
     row = adjudicate.load_registry_row("SC035")
-    assert row["adjudication_memo"].endswith("sc035-prosody-adjudication.md")
-    assert row["verdict"] == "REFORMULATE/REORDER"
+    assert row["adjudication_memo"].endswith("sc035-generality-adjudication.md")
+    assert row["verdict"] == "RETAIN"
     assert adjudicate.check_memo("SC035", row=row) == []
 
 

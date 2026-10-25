@@ -114,6 +114,68 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 
 ## Old English primers and readers
 
+### SC035 focused acquisitions (2026-10-25)
+
+These are source holdings, not generated manuscript text. Original PDFs follow
+the existing local-only ignored-PDF policy; no copyrighted catalogue is
+redistributed. Public-domain edition text extractions are navigation aids,
+not certificates of every character. Significant forms were checked on images.
+
+- `Sweet1885`: `sweet_1885_oldest_english_texts.{pdf,txt}`, complete688-sheet
+  EETS83 edition, title1885; Internet Archive
+  https://archive.org/download/oldestenglishtex83sweeuoft/oldestenglishtex83sweeuoft.pdf.
+  IA metadata declares `NOT_IN_COPYRIGHT`. PDF SHA256
+  `7f13fd3e587fa915b89fcbdce6908809619540fff594ceb8defeaf2fb236940a`.
+  `pdftotext -layout` extraction; body printed page = PDF sheet minus14.
+  EE p.48 is sheet62; Corpus p.51 is sheet65. Sweet's marginal references
+  EE189→500/191→502 conflict with actual Corpus503/505; record actual entries.
+- `Sweet1871`: `sweet_1871_pastoral_care.{pdf,txt}`,306-sheet partI,
+  EETS45; original title sheet11 verifies year/editor/publisher.
+  https://archive.org/download/kingalfredswests00greg/kingalfredswests00greg.pdf.
+  Nineteenth-century public-domain edition, not a modern licensed translation.
+  PDF SHA256 `ad5c16e2caefd04f7511702f790ce8ca335958c61130230bd0dad7b328dfded5`.
+  `pdftotext -layout` extraction. Hatton p.3 is sheet15; preliminary notice
+  explains additions, restorations and expansions. PartII not acquired.
+- `Stevenson1840`: `stevenson_1840_durham_ritual.{pdf,txt}`, complete234-sheet
+  Surtees10 edition; preliminary society title verifies1840.
+  https://archive.org/download/ritualeecclesi00cathuoft/ritualeecclesi00cathuoft.pdf.
+  IA metadata declares `NOT_IN_COPYRIGHT`. PDF SHA256
+  `6645fd2946b425c12c9c2972a78c92cf17e45608db2e5de464c179c1821e3cf3`.
+  `pdftotext -layout` extraction. Printed p.7 first occurs on sheet27;
+  duplicated scan sheets mean there is no single global sheet offset.
+- `LucasLucas2012`: `lucas_lucas_2012_epinal_72.pdf`, complete17-page
+  description, ASM18,67–83. https://journals.lib.sfu.ca/index.php/asmmf/article/download/5810/5012.
+  Authors PeterJ. and AngelaM. Lucas; citation metadata verifies2012, distinct
+  from2023 digital posting/copyright. PDF SHA256
+  `53153917589fabb10333bf201c00f2b0f262ab42cfd7eaa829ef1ee7d70914dc`.
+  Public access is not a redistribution license; original retained locally,
+  no full copyrighted extraction committed. Relevant p.67 distinguishes
+  around/before700 copying and uncertain place/dialect.
+- `Lucas2016`: `lucas_2016_corpus_144.pdf`, complete8-page description,
+  ASM25,11–18. https://journals.lib.sfu.ca/index.php/asmmf/article/download/5964/5216.
+  PeterJ. Lucas; citation metadata verifies2016, not2023 upload.
+  PDF SHA256 `1f4941dd93037c9b13239c2eb27e3c4f23bf62121ac29d426b920273465774d4`.
+  Same local-only copyright treatment. Relevant p.11 dates main hand to
+  first half9c and distinguishes the expanded inherited compilation.
+- `RuneSPforzen`: `runes_pforzen_201.xml`, complete unmodified LIDO
+  descriptive metadata downloaded from https://www.runesdb.de/find/201?xml=true.
+  SHA256 `0918264005b9a3a684e422c5f6199967adb74299ec4156e95bbd5377dd404d5c`.
+  Attribution: Niedersächsische Akademie der Wissenschaften,
+  *Runische Schriftlichkeit in den germanischen Sprachen* (RuneS),
+  https://www.runesdb.de/find/201. Its object-description rights explicitly
+  state CC BY-SA4.0, https://creativecommons.org/licenses/by-sa/4.0/.
+  Creation event earliest/latest585/610 is distinct from excavation1991–1996.
+  The record cites Düwel etal.2020:511,513 for external dating; that separate
+  publication was not acquired or presented as directly read. This is the
+  database's date assessment, not independent endorsement of its inscription
+  interpretation.
+
+Toller1921 p.284 (sheet296) was rechecked against the existing supplement and
+https://bosworthtoller.com/46976. Pheifer1974/1987 full texts and direct modern
+Erfurt palaeography remain unverified; the Toronto project and Bodleian
+catalogue required human verification. No inaccessible primary reading is
+silently promoted from a handbook or search summary.
+
 - `crawford_1922_heptateuch.pdf`
   S. J. Crawford (ed.), *The Old English Version of the Heptateuch*
   (1922; `Crawford1922`), original scan retained locally.

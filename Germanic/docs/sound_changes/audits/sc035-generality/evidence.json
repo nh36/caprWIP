@@ -1,0 +1,1397 @@
+{
+  "accepted_base_commit": "c1b573078c521121dde670e735f3907e7494cb16",
+  "source_sha256": "421e7ae9c0a705f910e081e20242f8f7b3a42731b9dc908124217d32826a9d77",
+  "interpretation": "Artificial domain controls except the explicitly normalized post-raising lowering comparisons; no new PGmc inputs or attestations.",
+  "controls": {
+    "annotation": [
+      {
+        "input": "*a*t*á",
+        "output": "*ᶠ*a*t*á"
+      },
+      {
+        "input": "*a*t*ḯ",
+        "output": "*ᶠ*a*t*ḯ"
+      },
+      {
+        "input": "*a*t*ḗ",
+        "output": "*ᶠ*a*t*ḗ"
+      },
+      {
+        "input": "*a*t*áu",
+        "output": "*ᶠ*a*t*áu"
+      },
+      {
+        "input": "*a*s*t*á",
+        "output": "*ᶠ*a*s*t*á"
+      },
+      {
+        "input": "*a*s*t*ḯ",
+        "output": "*ᶠ*a*s*t*ḯ"
+      },
+      {
+        "input": "*a*s*t*ḗ",
+        "output": "*ᶠ*a*s*t*ḗ"
+      },
+      {
+        "input": "*a*s*t*áu",
+        "output": "*ᶠ*a*s*t*áu"
+      },
+      {
+        "input": "*a*l*n*á",
+        "output": "*ᶠ*a*l*n*á"
+      },
+      {
+        "input": "*a*l*n*ḯ",
+        "output": "*ᶠ*a*l*n*ḯ"
+      },
+      {
+        "input": "*a*l*n*ḗ",
+        "output": "*ᶠ*a*l*n*ḗ"
+      },
+      {
+        "input": "*a*l*n*áu",
+        "output": "*ᶠ*a*l*n*áu"
+      },
+      {
+        "input": "*e*t*á",
+        "output": "*ᶠ*e*t*á"
+      },
+      {
+        "input": "*e*t*ḯ",
+        "output": "*ᶠ*e*t*ḯ"
+      },
+      {
+        "input": "*e*t*ḗ",
+        "output": "*ᶠ*e*t*ḗ"
+      },
+      {
+        "input": "*e*t*áu",
+        "output": "*ᶠ*e*t*áu"
+      },
+      {
+        "input": "*e*s*t*á",
+        "output": "*ᶠ*e*s*t*á"
+      },
+      {
+        "input": "*e*s*t*ḯ",
+        "output": "*ᶠ*e*s*t*ḯ"
+      },
+      {
+        "input": "*e*s*t*ḗ",
+        "output": "*ᶠ*e*s*t*ḗ"
+      },
+      {
+        "input": "*e*s*t*áu",
+        "output": "*ᶠ*e*s*t*áu"
+      },
+      {
+        "input": "*e*l*n*á",
+        "output": "*ᶠ*e*l*n*á"
+      },
+      {
+        "input": "*e*l*n*ḯ",
+        "output": "*ᶠ*e*l*n*ḯ"
+      },
+      {
+        "input": "*e*l*n*ḗ",
+        "output": "*ᶠ*e*l*n*ḗ"
+      },
+      {
+        "input": "*e*l*n*áu",
+        "output": "*ᶠ*e*l*n*áu"
+      },
+      {
+        "input": "*i*t*á",
+        "output": "*ᶠ*i*t*á"
+      },
+      {
+        "input": "*i*t*ḯ",
+        "output": "*ᶠ*i*t*ḯ"
+      },
+      {
+        "input": "*i*t*ḗ",
+        "output": "*ᶠ*i*t*ḗ"
+      },
+      {
+        "input": "*i*t*áu",
+        "output": "*ᶠ*i*t*áu"
+      },
+      {
+        "input": "*i*s*t*á",
+        "output": "*ᶠ*i*s*t*á"
+      },
+      {
+        "input": "*i*s*t*ḯ",
+        "output": "*ᶠ*i*s*t*ḯ"
+      },
+      {
+        "input": "*i*s*t*ḗ",
+        "output": "*ᶠ*i*s*t*ḗ"
+      },
+      {
+        "input": "*i*s*t*áu",
+        "output": "*ᶠ*i*s*t*áu"
+      },
+      {
+        "input": "*i*l*n*á",
+        "output": "*ᶠ*i*l*n*á"
+      },
+      {
+        "input": "*i*l*n*ḯ",
+        "output": "*ᶠ*i*l*n*ḯ"
+      },
+      {
+        "input": "*i*l*n*ḗ",
+        "output": "*ᶠ*i*l*n*ḗ"
+      },
+      {
+        "input": "*i*l*n*áu",
+        "output": "*ᶠ*i*l*n*áu"
+      },
+      {
+        "input": "*o*t*á",
+        "output": "*ᶠ*o*t*á"
+      },
+      {
+        "input": "*o*t*ḯ",
+        "output": "*ᶠ*o*t*ḯ"
+      },
+      {
+        "input": "*o*t*ḗ",
+        "output": "*ᶠ*o*t*ḗ"
+      },
+      {
+        "input": "*o*t*áu",
+        "output": "*ᶠ*o*t*áu"
+      },
+      {
+        "input": "*o*s*t*á",
+        "output": "*ᶠ*o*s*t*á"
+      },
+      {
+        "input": "*o*s*t*ḯ",
+        "output": "*ᶠ*o*s*t*ḯ"
+      },
+      {
+        "input": "*o*s*t*ḗ",
+        "output": "*ᶠ*o*s*t*ḗ"
+      },
+      {
+        "input": "*o*s*t*áu",
+        "output": "*ᶠ*o*s*t*áu"
+      },
+      {
+        "input": "*o*l*n*á",
+        "output": "*ᶠ*o*l*n*á"
+      },
+      {
+        "input": "*o*l*n*ḯ",
+        "output": "*ᶠ*o*l*n*ḯ"
+      },
+      {
+        "input": "*o*l*n*ḗ",
+        "output": "*ᶠ*o*l*n*ḗ"
+      },
+      {
+        "input": "*o*l*n*áu",
+        "output": "*ᶠ*o*l*n*áu"
+      },
+      {
+        "input": "*u*t*á",
+        "output": "*ᶠ*u*t*á"
+      },
+      {
+        "input": "*u*t*ḯ",
+        "output": "*ᶠ*u*t*ḯ"
+      },
+      {
+        "input": "*u*t*ḗ",
+        "output": "*ᶠ*u*t*ḗ"
+      },
+      {
+        "input": "*u*t*áu",
+        "output": "*ᶠ*u*t*áu"
+      },
+      {
+        "input": "*u*s*t*á",
+        "output": "*ᶠ*u*s*t*á"
+      },
+      {
+        "input": "*u*s*t*ḯ",
+        "output": "*ᶠ*u*s*t*ḯ"
+      },
+      {
+        "input": "*u*s*t*ḗ",
+        "output": "*ᶠ*u*s*t*ḗ"
+      },
+      {
+        "input": "*u*s*t*áu",
+        "output": "*ᶠ*u*s*t*áu"
+      },
+      {
+        "input": "*u*l*n*á",
+        "output": "*ᶠ*u*l*n*á"
+      },
+      {
+        "input": "*u*l*n*ḯ",
+        "output": "*ᶠ*u*l*n*ḯ"
+      },
+      {
+        "input": "*u*l*n*ḗ",
+        "output": "*ᶠ*u*l*n*ḗ"
+      },
+      {
+        "input": "*u*l*n*áu",
+        "output": "*ᶠ*u*l*n*áu"
+      },
+      {
+        "input": "*æ*t*á",
+        "output": "*ᶠ*æ*t*á"
+      },
+      {
+        "input": "*æ*t*ḯ",
+        "output": "*ᶠ*æ*t*ḯ"
+      },
+      {
+        "input": "*æ*t*ḗ",
+        "output": "*ᶠ*æ*t*ḗ"
+      },
+      {
+        "input": "*æ*t*áu",
+        "output": "*ᶠ*æ*t*áu"
+      },
+      {
+        "input": "*æ*s*t*á",
+        "output": "*ᶠ*æ*s*t*á"
+      },
+      {
+        "input": "*æ*s*t*ḯ",
+        "output": "*ᶠ*æ*s*t*ḯ"
+      },
+      {
+        "input": "*æ*s*t*ḗ",
+        "output": "*ᶠ*æ*s*t*ḗ"
+      },
+      {
+        "input": "*æ*s*t*áu",
+        "output": "*ᶠ*æ*s*t*áu"
+      },
+      {
+        "input": "*æ*l*n*á",
+        "output": "*ᶠ*æ*l*n*á"
+      },
+      {
+        "input": "*æ*l*n*ḯ",
+        "output": "*ᶠ*æ*l*n*ḯ"
+      },
+      {
+        "input": "*æ*l*n*ḗ",
+        "output": "*ᶠ*æ*l*n*ḗ"
+      },
+      {
+        "input": "*æ*l*n*áu",
+        "output": "*ᶠ*æ*l*n*áu"
+      },
+      {
+        "input": "*b*a*t*á",
+        "output": "*ᶠ*b*a*t*á"
+      },
+      {
+        "input": "*b*a*t*ḯ",
+        "output": "*ᶠ*b*a*t*ḯ"
+      },
+      {
+        "input": "*b*a*t*ḗ",
+        "output": "*ᶠ*b*a*t*ḗ"
+      },
+      {
+        "input": "*b*a*t*áu",
+        "output": "*ᶠ*b*a*t*áu"
+      },
+      {
+        "input": "*b*a*s*t*á",
+        "output": "*ᶠ*b*a*s*t*á"
+      },
+      {
+        "input": "*b*a*s*t*ḯ",
+        "output": "*ᶠ*b*a*s*t*ḯ"
+      },
+      {
+        "input": "*b*a*s*t*ḗ",
+        "output": "*ᶠ*b*a*s*t*ḗ"
+      },
+      {
+        "input": "*b*a*s*t*áu",
+        "output": "*ᶠ*b*a*s*t*áu"
+      },
+      {
+        "input": "*b*a*l*n*á",
+        "output": "*ᶠ*b*a*l*n*á"
+      },
+      {
+        "input": "*b*a*l*n*ḯ",
+        "output": "*ᶠ*b*a*l*n*ḯ"
+      },
+      {
+        "input": "*b*a*l*n*ḗ",
+        "output": "*ᶠ*b*a*l*n*ḗ"
+      },
+      {
+        "input": "*b*a*l*n*áu",
+        "output": "*ᶠ*b*a*l*n*áu"
+      },
+      {
+        "input": "*b*e*t*á",
+        "output": "*ᶠ*b*e*t*á"
+      },
+      {
+        "input": "*b*e*t*ḯ",
+        "output": "*ᶠ*b*e*t*ḯ"
+      },
+      {
+        "input": "*b*e*t*ḗ",
+        "output": "*ᶠ*b*e*t*ḗ"
+      },
+      {
+        "input": "*b*e*t*áu",
+        "output": "*ᶠ*b*e*t*áu"
+      },
+      {
+        "input": "*b*e*s*t*á",
+        "output": "*ᶠ*b*e*s*t*á"
+      },
+      {
+        "input": "*b*e*s*t*ḯ",
+        "output": "*ᶠ*b*e*s*t*ḯ"
+      },
+      {
+        "input": "*b*e*s*t*ḗ",
+        "output": "*ᶠ*b*e*s*t*ḗ"
+      },
+      {
+        "input": "*b*e*s*t*áu",
+        "output": "*ᶠ*b*e*s*t*áu"
+      },
+      {
+        "input": "*b*e*l*n*á",
+        "output": "*ᶠ*b*e*l*n*á"
+      },
+      {
+        "input": "*b*e*l*n*ḯ",
+        "output": "*ᶠ*b*e*l*n*ḯ"
+      },
+      {
+        "input": "*b*e*l*n*ḗ",
+        "output": "*ᶠ*b*e*l*n*ḗ"
+      },
+      {
+        "input": "*b*e*l*n*áu",
+        "output": "*ᶠ*b*e*l*n*áu"
+      },
+      {
+        "input": "*b*i*t*á",
+        "output": "*ᶠ*b*i*t*á"
+      },
+      {
+        "input": "*b*i*t*ḯ",
+        "output": "*ᶠ*b*i*t*ḯ"
+      },
+      {
+        "input": "*b*i*t*ḗ",
+        "output": "*ᶠ*b*i*t*ḗ"
+      },
+      {
+        "input": "*b*i*t*áu",
+        "output": "*ᶠ*b*i*t*áu"
+      },
+      {
+        "input": "*b*i*s*t*á",
+        "output": "*ᶠ*b*i*s*t*á"
+      },
+      {
+        "input": "*b*i*s*t*ḯ",
+        "output": "*ᶠ*b*i*s*t*ḯ"
+      },
+      {
+        "input": "*b*i*s*t*ḗ",
+        "output": "*ᶠ*b*i*s*t*ḗ"
+      },
+      {
+        "input": "*b*i*s*t*áu",
+        "output": "*ᶠ*b*i*s*t*áu"
+      },
+      {
+        "input": "*b*i*l*n*á",
+        "output": "*ᶠ*b*i*l*n*á"
+      },
+      {
+        "input": "*b*i*l*n*ḯ",
+        "output": "*ᶠ*b*i*l*n*ḯ"
+      },
+      {
+        "input": "*b*i*l*n*ḗ",
+        "output": "*ᶠ*b*i*l*n*ḗ"
+      },
+      {
+        "input": "*b*i*l*n*áu",
+        "output": "*ᶠ*b*i*l*n*áu"
+      },
+      {
+        "input": "*b*o*t*á",
+        "output": "*ᶠ*b*o*t*á"
+      },
+      {
+        "input": "*b*o*t*ḯ",
+        "output": "*ᶠ*b*o*t*ḯ"
+      },
+      {
+        "input": "*b*o*t*ḗ",
+        "output": "*ᶠ*b*o*t*ḗ"
+      },
+      {
+        "input": "*b*o*t*áu",
+        "output": "*ᶠ*b*o*t*áu"
+      },
+      {
+        "input": "*b*o*s*t*á",
+        "output": "*ᶠ*b*o*s*t*á"
+      },
+      {
+        "input": "*b*o*s*t*ḯ",
+        "output": "*ᶠ*b*o*s*t*ḯ"
+      },
+      {
+        "input": "*b*o*s*t*ḗ",
+        "output": "*ᶠ*b*o*s*t*ḗ"
+      },
+      {
+        "input": "*b*o*s*t*áu",
+        "output": "*ᶠ*b*o*s*t*áu"
+      },
+      {
+        "input": "*b*o*l*n*á",
+        "output": "*ᶠ*b*o*l*n*á"
+      },
+      {
+        "input": "*b*o*l*n*ḯ",
+        "output": "*ᶠ*b*o*l*n*ḯ"
+      },
+      {
+        "input": "*b*o*l*n*ḗ",
+        "output": "*ᶠ*b*o*l*n*ḗ"
+      },
+      {
+        "input": "*b*o*l*n*áu",
+        "output": "*ᶠ*b*o*l*n*áu"
+      },
+      {
+        "input": "*b*u*t*á",
+        "output": "*ᶠ*b*u*t*á"
+      },
+      {
+        "input": "*b*u*t*ḯ",
+        "output": "*ᶠ*b*u*t*ḯ"
+      },
+      {
+        "input": "*b*u*t*ḗ",
+        "output": "*ᶠ*b*u*t*ḗ"
+      },
+      {
+        "input": "*b*u*t*áu",
+        "output": "*ᶠ*b*u*t*áu"
+      },
+      {
+        "input": "*b*u*s*t*á",
+        "output": "*ᶠ*b*u*s*t*á"
+      },
+      {
+        "input": "*b*u*s*t*ḯ",
+        "output": "*ᶠ*b*u*s*t*ḯ"
+      },
+      {
+        "input": "*b*u*s*t*ḗ",
+        "output": "*ᶠ*b*u*s*t*ḗ"
+      },
+      {
+        "input": "*b*u*s*t*áu",
+        "output": "*ᶠ*b*u*s*t*áu"
+      },
+      {
+        "input": "*b*u*l*n*á",
+        "output": "*ᶠ*b*u*l*n*á"
+      },
+      {
+        "input": "*b*u*l*n*ḯ",
+        "output": "*ᶠ*b*u*l*n*ḯ"
+      },
+      {
+        "input": "*b*u*l*n*ḗ",
+        "output": "*ᶠ*b*u*l*n*ḗ"
+      },
+      {
+        "input": "*b*u*l*n*áu",
+        "output": "*ᶠ*b*u*l*n*áu"
+      },
+      {
+        "input": "*b*æ*t*á",
+        "output": "*ᶠ*b*æ*t*á"
+      },
+      {
+        "input": "*b*æ*t*ḯ",
+        "output": "*ᶠ*b*æ*t*ḯ"
+      },
+      {
+        "input": "*b*æ*t*ḗ",
+        "output": "*ᶠ*b*æ*t*ḗ"
+      },
+      {
+        "input": "*b*æ*t*áu",
+        "output": "*ᶠ*b*æ*t*áu"
+      },
+      {
+        "input": "*b*æ*s*t*á",
+        "output": "*ᶠ*b*æ*s*t*á"
+      },
+      {
+        "input": "*b*æ*s*t*ḯ",
+        "output": "*ᶠ*b*æ*s*t*ḯ"
+      },
+      {
+        "input": "*b*æ*s*t*ḗ",
+        "output": "*ᶠ*b*æ*s*t*ḗ"
+      },
+      {
+        "input": "*b*æ*s*t*áu",
+        "output": "*ᶠ*b*æ*s*t*áu"
+      },
+      {
+        "input": "*b*æ*l*n*á",
+        "output": "*ᶠ*b*æ*l*n*á"
+      },
+      {
+        "input": "*b*æ*l*n*ḯ",
+        "output": "*ᶠ*b*æ*l*n*ḯ"
+      },
+      {
+        "input": "*b*æ*l*n*ḗ",
+        "output": "*ᶠ*b*æ*l*n*ḗ"
+      },
+      {
+        "input": "*b*æ*l*n*áu",
+        "output": "*ᶠ*b*æ*l*n*áu"
+      },
+      {
+        "input": "*b*l*a*t*á",
+        "output": "*ᶠ*b*l*a*t*á"
+      },
+      {
+        "input": "*b*l*a*t*ḯ",
+        "output": "*ᶠ*b*l*a*t*ḯ"
+      },
+      {
+        "input": "*b*l*a*t*ḗ",
+        "output": "*ᶠ*b*l*a*t*ḗ"
+      },
+      {
+        "input": "*b*l*a*t*áu",
+        "output": "*ᶠ*b*l*a*t*áu"
+      },
+      {
+        "input": "*b*l*a*s*t*á",
+        "output": "*ᶠ*b*l*a*s*t*á"
+      },
+      {
+        "input": "*b*l*a*s*t*ḯ",
+        "output": "*ᶠ*b*l*a*s*t*ḯ"
+      },
+      {
+        "input": "*b*l*a*s*t*ḗ",
+        "output": "*ᶠ*b*l*a*s*t*ḗ"
+      },
+      {
+        "input": "*b*l*a*s*t*áu",
+        "output": "*ᶠ*b*l*a*s*t*áu"
+      },
+      {
+        "input": "*b*l*a*l*n*á",
+        "output": "*ᶠ*b*l*a*l*n*á"
+      },
+      {
+        "input": "*b*l*a*l*n*ḯ",
+        "output": "*ᶠ*b*l*a*l*n*ḯ"
+      },
+      {
+        "input": "*b*l*a*l*n*ḗ",
+        "output": "*ᶠ*b*l*a*l*n*ḗ"
+      },
+      {
+        "input": "*b*l*a*l*n*áu",
+        "output": "*ᶠ*b*l*a*l*n*áu"
+      },
+      {
+        "input": "*b*l*e*t*á",
+        "output": "*ᶠ*b*l*e*t*á"
+      },
+      {
+        "input": "*b*l*e*t*ḯ",
+        "output": "*ᶠ*b*l*e*t*ḯ"
+      },
+      {
+        "input": "*b*l*e*t*ḗ",
+        "output": "*ᶠ*b*l*e*t*ḗ"
+      },
+      {
+        "input": "*b*l*e*t*áu",
+        "output": "*ᶠ*b*l*e*t*áu"
+      },
+      {
+        "input": "*b*l*e*s*t*á",
+        "output": "*ᶠ*b*l*e*s*t*á"
+      },
+      {
+        "input": "*b*l*e*s*t*ḯ",
+        "output": "*ᶠ*b*l*e*s*t*ḯ"
+      },
+      {
+        "input": "*b*l*e*s*t*ḗ",
+        "output": "*ᶠ*b*l*e*s*t*ḗ"
+      },
+      {
+        "input": "*b*l*e*s*t*áu",
+        "output": "*ᶠ*b*l*e*s*t*áu"
+      },
+      {
+        "input": "*b*l*e*l*n*á",
+        "output": "*ᶠ*b*l*e*l*n*á"
+      },
+      {
+        "input": "*b*l*e*l*n*ḯ",
+        "output": "*ᶠ*b*l*e*l*n*ḯ"
+      },
+      {
+        "input": "*b*l*e*l*n*ḗ",
+        "output": "*ᶠ*b*l*e*l*n*ḗ"
+      },
+      {
+        "input": "*b*l*e*l*n*áu",
+        "output": "*ᶠ*b*l*e*l*n*áu"
+      },
+      {
+        "input": "*b*l*i*t*á",
+        "output": "*ᶠ*b*l*i*t*á"
+      },
+      {
+        "input": "*b*l*i*t*ḯ",
+        "output": "*ᶠ*b*l*i*t*ḯ"
+      },
+      {
+        "input": "*b*l*i*t*ḗ",
+        "output": "*ᶠ*b*l*i*t*ḗ"
+      },
+      {
+        "input": "*b*l*i*t*áu",
+        "output": "*ᶠ*b*l*i*t*áu"
+      },
+      {
+        "input": "*b*l*i*s*t*á",
+        "output": "*ᶠ*b*l*i*s*t*á"
+      },
+      {
+        "input": "*b*l*i*s*t*ḯ",
+        "output": "*ᶠ*b*l*i*s*t*ḯ"
+      },
+      {
+        "input": "*b*l*i*s*t*ḗ",
+        "output": "*ᶠ*b*l*i*s*t*ḗ"
+      },
+      {
+        "input": "*b*l*i*s*t*áu",
+        "output": "*ᶠ*b*l*i*s*t*áu"
+      },
+      {
+        "input": "*b*l*i*l*n*á",
+        "output": "*ᶠ*b*l*i*l*n*á"
+      },
+      {
+        "input": "*b*l*i*l*n*ḯ",
+        "output": "*ᶠ*b*l*i*l*n*ḯ"
+      },
+      {
+        "input": "*b*l*i*l*n*ḗ",
+        "output": "*ᶠ*b*l*i*l*n*ḗ"
+      },
+      {
+        "input": "*b*l*i*l*n*áu",
+        "output": "*ᶠ*b*l*i*l*n*áu"
+      },
+      {
+        "input": "*b*l*o*t*á",
+        "output": "*ᶠ*b*l*o*t*á"
+      },
+      {
+        "input": "*b*l*o*t*ḯ",
+        "output": "*ᶠ*b*l*o*t*ḯ"
+      },
+      {
+        "input": "*b*l*o*t*ḗ",
+        "output": "*ᶠ*b*l*o*t*ḗ"
+      },
+      {
+        "input": "*b*l*o*t*áu",
+        "output": "*ᶠ*b*l*o*t*áu"
+      },
+      {
+        "input": "*b*l*o*s*t*á",
+        "output": "*ᶠ*b*l*o*s*t*á"
+      },
+      {
+        "input": "*b*l*o*s*t*ḯ",
+        "output": "*ᶠ*b*l*o*s*t*ḯ"
+      },
+      {
+        "input": "*b*l*o*s*t*ḗ",
+        "output": "*ᶠ*b*l*o*s*t*ḗ"
+      },
+      {
+        "input": "*b*l*o*s*t*áu",
+        "output": "*ᶠ*b*l*o*s*t*áu"
+      },
+      {
+        "input": "*b*l*o*l*n*á",
+        "output": "*ᶠ*b*l*o*l*n*á"
+      },
+      {
+        "input": "*b*l*o*l*n*ḯ",
+        "output": "*ᶠ*b*l*o*l*n*ḯ"
+      },
+      {
+        "input": "*b*l*o*l*n*ḗ",
+        "output": "*ᶠ*b*l*o*l*n*ḗ"
+      },
+      {
+        "input": "*b*l*o*l*n*áu",
+        "output": "*ᶠ*b*l*o*l*n*áu"
+      },
+      {
+        "input": "*b*l*u*t*á",
+        "output": "*ᶠ*b*l*u*t*á"
+      },
+      {
+        "input": "*b*l*u*t*ḯ",
+        "output": "*ᶠ*b*l*u*t*ḯ"
+      },
+      {
+        "input": "*b*l*u*t*ḗ",
+        "output": "*ᶠ*b*l*u*t*ḗ"
+      },
+      {
+        "input": "*b*l*u*t*áu",
+        "output": "*ᶠ*b*l*u*t*áu"
+      },
+      {
+        "input": "*b*l*u*s*t*á",
+        "output": "*ᶠ*b*l*u*s*t*á"
+      },
+      {
+        "input": "*b*l*u*s*t*ḯ",
+        "output": "*ᶠ*b*l*u*s*t*ḯ"
+      },
+      {
+        "input": "*b*l*u*s*t*ḗ",
+        "output": "*ᶠ*b*l*u*s*t*ḗ"
+      },
+      {
+        "input": "*b*l*u*s*t*áu",
+        "output": "*ᶠ*b*l*u*s*t*áu"
+      },
+      {
+        "input": "*b*l*u*l*n*á",
+        "output": "*ᶠ*b*l*u*l*n*á"
+      },
+      {
+        "input": "*b*l*u*l*n*ḯ",
+        "output": "*ᶠ*b*l*u*l*n*ḯ"
+      },
+      {
+        "input": "*b*l*u*l*n*ḗ",
+        "output": "*ᶠ*b*l*u*l*n*ḗ"
+      },
+      {
+        "input": "*b*l*u*l*n*áu",
+        "output": "*ᶠ*b*l*u*l*n*áu"
+      },
+      {
+        "input": "*b*l*æ*t*á",
+        "output": "*ᶠ*b*l*æ*t*á"
+      },
+      {
+        "input": "*b*l*æ*t*ḯ",
+        "output": "*ᶠ*b*l*æ*t*ḯ"
+      },
+      {
+        "input": "*b*l*æ*t*ḗ",
+        "output": "*ᶠ*b*l*æ*t*ḗ"
+      },
+      {
+        "input": "*b*l*æ*t*áu",
+        "output": "*ᶠ*b*l*æ*t*áu"
+      },
+      {
+        "input": "*b*l*æ*s*t*á",
+        "output": "*ᶠ*b*l*æ*s*t*á"
+      },
+      {
+        "input": "*b*l*æ*s*t*ḯ",
+        "output": "*ᶠ*b*l*æ*s*t*ḯ"
+      },
+      {
+        "input": "*b*l*æ*s*t*ḗ",
+        "output": "*ᶠ*b*l*æ*s*t*ḗ"
+      },
+      {
+        "input": "*b*l*æ*s*t*áu",
+        "output": "*ᶠ*b*l*æ*s*t*áu"
+      },
+      {
+        "input": "*b*l*æ*l*n*á",
+        "output": "*ᶠ*b*l*æ*l*n*á"
+      },
+      {
+        "input": "*b*l*æ*l*n*ḯ",
+        "output": "*ᶠ*b*l*æ*l*n*ḯ"
+      },
+      {
+        "input": "*b*l*æ*l*n*ḗ",
+        "output": "*ᶠ*b*l*æ*l*n*ḗ"
+      },
+      {
+        "input": "*b*l*æ*l*n*áu",
+        "output": "*ᶠ*b*l*æ*l*n*áu"
+      },
+      {
+        "input": "*ʝ*a*t*á",
+        "output": "*ᶠ*ʝ*a*t*á"
+      },
+      {
+        "input": "*ʝ*a*t*ḯ",
+        "output": "*ᶠ*ʝ*a*t*ḯ"
+      },
+      {
+        "input": "*ʝ*a*t*ḗ",
+        "output": "*ᶠ*ʝ*a*t*ḗ"
+      },
+      {
+        "input": "*ʝ*a*t*áu",
+        "output": "*ᶠ*ʝ*a*t*áu"
+      },
+      {
+        "input": "*ʝ*a*s*t*á",
+        "output": "*ᶠ*ʝ*a*s*t*á"
+      },
+      {
+        "input": "*ʝ*a*s*t*ḯ",
+        "output": "*ᶠ*ʝ*a*s*t*ḯ"
+      },
+      {
+        "input": "*ʝ*a*s*t*ḗ",
+        "output": "*ᶠ*ʝ*a*s*t*ḗ"
+      },
+      {
+        "input": "*ʝ*a*s*t*áu",
+        "output": "*ᶠ*ʝ*a*s*t*áu"
+      },
+      {
+        "input": "*ʝ*a*l*n*á",
+        "output": "*ᶠ*ʝ*a*l*n*á"
+      },
+      {
+        "input": "*ʝ*a*l*n*ḯ",
+        "output": "*ᶠ*ʝ*a*l*n*ḯ"
+      },
+      {
+        "input": "*ʝ*a*l*n*ḗ",
+        "output": "*ᶠ*ʝ*a*l*n*ḗ"
+      },
+      {
+        "input": "*ʝ*a*l*n*áu",
+        "output": "*ᶠ*ʝ*a*l*n*áu"
+      },
+      {
+        "input": "*ʝ*e*t*á",
+        "output": "*ᶠ*ʝ*e*t*á"
+      },
+      {
+        "input": "*ʝ*e*t*ḯ",
+        "output": "*ᶠ*ʝ*e*t*ḯ"
+      },
+      {
+        "input": "*ʝ*e*t*ḗ",
+        "output": "*ᶠ*ʝ*e*t*ḗ"
+      },
+      {
+        "input": "*ʝ*e*t*áu",
+        "output": "*ᶠ*ʝ*e*t*áu"
+      },
+      {
+        "input": "*ʝ*e*s*t*á",
+        "output": "*ᶠ*ʝ*e*s*t*á"
+      },
+      {
+        "input": "*ʝ*e*s*t*ḯ",
+        "output": "*ᶠ*ʝ*e*s*t*ḯ"
+      },
+      {
+        "input": "*ʝ*e*s*t*ḗ",
+        "output": "*ᶠ*ʝ*e*s*t*ḗ"
+      },
+      {
+        "input": "*ʝ*e*s*t*áu",
+        "output": "*ᶠ*ʝ*e*s*t*áu"
+      },
+      {
+        "input": "*ʝ*e*l*n*á",
+        "output": "*ᶠ*ʝ*e*l*n*á"
+      },
+      {
+        "input": "*ʝ*e*l*n*ḯ",
+        "output": "*ᶠ*ʝ*e*l*n*ḯ"
+      },
+      {
+        "input": "*ʝ*e*l*n*ḗ",
+        "output": "*ᶠ*ʝ*e*l*n*ḗ"
+      },
+      {
+        "input": "*ʝ*e*l*n*áu",
+        "output": "*ᶠ*ʝ*e*l*n*áu"
+      },
+      {
+        "input": "*ʝ*i*t*á",
+        "output": "*ᶠ*ʝ*i*t*á"
+      },
+      {
+        "input": "*ʝ*i*t*ḯ",
+        "output": "*ᶠ*ʝ*i*t*ḯ"
+      },
+      {
+        "input": "*ʝ*i*t*ḗ",
+        "output": "*ᶠ*ʝ*i*t*ḗ"
+      },
+      {
+        "input": "*ʝ*i*t*áu",
+        "output": "*ᶠ*ʝ*i*t*áu"
+      },
+      {
+        "input": "*ʝ*i*s*t*á",
+        "output": "*ᶠ*ʝ*i*s*t*á"
+      },
+      {
+        "input": "*ʝ*i*s*t*ḯ",
+        "output": "*ᶠ*ʝ*i*s*t*ḯ"
+      },
+      {
+        "input": "*ʝ*i*s*t*ḗ",
+        "output": "*ᶠ*ʝ*i*s*t*ḗ"
+      },
+      {
+        "input": "*ʝ*i*s*t*áu",
+        "output": "*ᶠ*ʝ*i*s*t*áu"
+      },
+      {
+        "input": "*ʝ*i*l*n*á",
+        "output": "*ᶠ*ʝ*i*l*n*á"
+      },
+      {
+        "input": "*ʝ*i*l*n*ḯ",
+        "output": "*ᶠ*ʝ*i*l*n*ḯ"
+      },
+      {
+        "input": "*ʝ*i*l*n*ḗ",
+        "output": "*ᶠ*ʝ*i*l*n*ḗ"
+      },
+      {
+        "input": "*ʝ*i*l*n*áu",
+        "output": "*ᶠ*ʝ*i*l*n*áu"
+      },
+      {
+        "input": "*ʝ*o*t*á",
+        "output": "*ᶠ*ʝ*o*t*á"
+      },
+      {
+        "input": "*ʝ*o*t*ḯ",
+        "output": "*ᶠ*ʝ*o*t*ḯ"
+      },
+      {
+        "input": "*ʝ*o*t*ḗ",
+        "output": "*ᶠ*ʝ*o*t*ḗ"
+      },
+      {
+        "input": "*ʝ*o*t*áu",
+        "output": "*ᶠ*ʝ*o*t*áu"
+      },
+      {
+        "input": "*ʝ*o*s*t*á",
+        "output": "*ᶠ*ʝ*o*s*t*á"
+      },
+      {
+        "input": "*ʝ*o*s*t*ḯ",
+        "output": "*ᶠ*ʝ*o*s*t*ḯ"
+      },
+      {
+        "input": "*ʝ*o*s*t*ḗ",
+        "output": "*ᶠ*ʝ*o*s*t*ḗ"
+      },
+      {
+        "input": "*ʝ*o*s*t*áu",
+        "output": "*ᶠ*ʝ*o*s*t*áu"
+      },
+      {
+        "input": "*ʝ*o*l*n*á",
+        "output": "*ᶠ*ʝ*o*l*n*á"
+      },
+      {
+        "input": "*ʝ*o*l*n*ḯ",
+        "output": "*ᶠ*ʝ*o*l*n*ḯ"
+      },
+      {
+        "input": "*ʝ*o*l*n*ḗ",
+        "output": "*ᶠ*ʝ*o*l*n*ḗ"
+      },
+      {
+        "input": "*ʝ*o*l*n*áu",
+        "output": "*ᶠ*ʝ*o*l*n*áu"
+      },
+      {
+        "input": "*ʝ*u*t*á",
+        "output": "*ᶠ*ʝ*u*t*á"
+      },
+      {
+        "input": "*ʝ*u*t*ḯ",
+        "output": "*ᶠ*ʝ*u*t*ḯ"
+      },
+      {
+        "input": "*ʝ*u*t*ḗ",
+        "output": "*ᶠ*ʝ*u*t*ḗ"
+      },
+      {
+        "input": "*ʝ*u*t*áu",
+        "output": "*ᶠ*ʝ*u*t*áu"
+      },
+      {
+        "input": "*ʝ*u*s*t*á",
+        "output": "*ᶠ*ʝ*u*s*t*á"
+      },
+      {
+        "input": "*ʝ*u*s*t*ḯ",
+        "output": "*ᶠ*ʝ*u*s*t*ḯ"
+      },
+      {
+        "input": "*ʝ*u*s*t*ḗ",
+        "output": "*ᶠ*ʝ*u*s*t*ḗ"
+      },
+      {
+        "input": "*ʝ*u*s*t*áu",
+        "output": "*ᶠ*ʝ*u*s*t*áu"
+      },
+      {
+        "input": "*ʝ*u*l*n*á",
+        "output": "*ᶠ*ʝ*u*l*n*á"
+      },
+      {
+        "input": "*ʝ*u*l*n*ḯ",
+        "output": "*ᶠ*ʝ*u*l*n*ḯ"
+      },
+      {
+        "input": "*ʝ*u*l*n*ḗ",
+        "output": "*ᶠ*ʝ*u*l*n*ḗ"
+      },
+      {
+        "input": "*ʝ*u*l*n*áu",
+        "output": "*ᶠ*ʝ*u*l*n*áu"
+      },
+      {
+        "input": "*ʝ*æ*t*á",
+        "output": "*ᶠ*ʝ*æ*t*á"
+      },
+      {
+        "input": "*ʝ*æ*t*ḯ",
+        "output": "*ᶠ*ʝ*æ*t*ḯ"
+      },
+      {
+        "input": "*ʝ*æ*t*ḗ",
+        "output": "*ᶠ*ʝ*æ*t*ḗ"
+      },
+      {
+        "input": "*ʝ*æ*t*áu",
+        "output": "*ᶠ*ʝ*æ*t*áu"
+      },
+      {
+        "input": "*ʝ*æ*s*t*á",
+        "output": "*ᶠ*ʝ*æ*s*t*á"
+      },
+      {
+        "input": "*ʝ*æ*s*t*ḯ",
+        "output": "*ᶠ*ʝ*æ*s*t*ḯ"
+      },
+      {
+        "input": "*ʝ*æ*s*t*ḗ",
+        "output": "*ᶠ*ʝ*æ*s*t*ḗ"
+      },
+      {
+        "input": "*ʝ*æ*s*t*áu",
+        "output": "*ᶠ*ʝ*æ*s*t*áu"
+      },
+      {
+        "input": "*ʝ*æ*l*n*á",
+        "output": "*ᶠ*ʝ*æ*l*n*á"
+      },
+      {
+        "input": "*ʝ*æ*l*n*ḯ",
+        "output": "*ᶠ*ʝ*æ*l*n*ḯ"
+      },
+      {
+        "input": "*ʝ*æ*l*n*ḗ",
+        "output": "*ᶠ*ʝ*æ*l*n*ḗ"
+      },
+      {
+        "input": "*ʝ*æ*l*n*áu",
+        "output": "*ᶠ*ʝ*æ*l*n*áu"
+      },
+      {
+        "input": "*ʝ*æ*t",
+        "output": "*ʝ*æ*t"
+      },
+      {
+        "input": "*ʝ*æ*t*ā",
+        "output": "*ʝ*æ*t*ā"
+      },
+      {
+        "input": "*ʝ*æ*t*à",
+        "output": "*ʝ*æ*t*à"
+      },
+      {
+        "input": "*ʝ*ǣ*t*á",
+        "output": "*ʝ*ǣ*t*á"
+      },
+      {
+        "input": "*ʝ*ā*t*á",
+        "output": "*ʝ*ā*t*á"
+      },
+      {
+        "input": "*ʝ*æ*á",
+        "output": "*ʝ*æ*á"
+      },
+      {
+        "input": "*ʝ*æ*t*e*t*á",
+        "output": "*ʝ*æ*t*e*t*á"
+      },
+      {
+        "input": "*b*á*ʝ*æ*t*á",
+        "output": "*b*á*ʝ*æ*t*á"
+      },
+      {
+        "input": "*ʝ*æ*t*ā*t*á",
+        "output": "*ʝ*æ*t*ā*t*á"
+      },
+      {
+        "input": "*ʝ*æ*t*à*t*á",
+        "output": "*ʝ*æ*t*à*t*á"
+      },
+      {
+        "input": "*ᵘ*ʝ*æ*t*á",
+        "output": "*ᵘ*ᶠ*ʝ*æ*t*á"
+      },
+      {
+        "input": "*ᶜ*ʝ*æ*t*á",
+        "output": "*ᶜ*ᶠ*ʝ*æ*t*á"
+      }
+    ],
+    "raising": [
+      {
+        "input": "*ᶠ*ʝ*æ*t*á",
+        "output": "*ᶠ*ʝ*i*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*æ*s*t*ḯ",
+        "output": "*ᶠ*ʝ*i*s*t*ḯ"
+      },
+      {
+        "input": "*ᶠ*ʝ*æ*l*ēa*β*j*ą*n",
+        "output": "*ᶠ*ʝ*i*l*ēa*β*j*ą*n"
+      },
+      {
+        "input": "*ᶠ*b*ʝ*æ*t*á",
+        "output": "*ᶠ*b*ʝ*i*t*á"
+      },
+      {
+        "input": "*ᶠ*b*ʝ*æ*s*t*ḯ",
+        "output": "*ᶠ*b*ʝ*i*s*t*ḯ"
+      },
+      {
+        "input": "*ᶠ*b*ʝ*æ*l*ēa*β*j*ą*n",
+        "output": "*ᶠ*b*ʝ*i*l*ēa*β*j*ą*n"
+      },
+      {
+        "input": "*ᶠ*s*t*ʝ*æ*t*á",
+        "output": "*ᶠ*s*t*ʝ*i*t*á"
+      },
+      {
+        "input": "*ᶠ*s*t*ʝ*æ*s*t*ḯ",
+        "output": "*ᶠ*s*t*ʝ*i*s*t*ḯ"
+      },
+      {
+        "input": "*ᶠ*s*t*ʝ*æ*l*ēa*β*j*ą*n",
+        "output": "*ᶠ*s*t*ʝ*i*l*ēa*β*j*ą*n"
+      },
+      {
+        "input": "*ᶠ*b*æ*t*á",
+        "output": "*ᶠ*b*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*g*æ*t*á",
+        "output": "*ᶠ*g*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*ɣ*æ*t*á",
+        "output": "*ᶠ*ɣ*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*j*æ*t*á",
+        "output": "*ᶠ*j*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*ʃ*æ*t*á",
+        "output": "*ᶠ*ʃ*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*ʧ*æ*t*á",
+        "output": "*ᶠ*ʧ*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*ʤ*æ*t*á",
+        "output": "*ᶠ*ʤ*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*a*t*á",
+        "output": "*ᶠ*ʝ*a*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*e*t*á",
+        "output": "*ᶠ*ʝ*e*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*i*t*á",
+        "output": "*ᶠ*ʝ*i*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*ǣ*t*á",
+        "output": "*ᶠ*ʝ*ǣ*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*ā*t*á",
+        "output": "*ᶠ*ʝ*ā*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*á*t*á",
+        "output": "*ᶠ*ʝ*á*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*é*t*á",
+        "output": "*ᶠ*ʝ*é*t*á"
+      },
+      {
+        "input": "*ʝ*æ*t*á",
+        "output": "*ʝ*æ*t*á"
+      },
+      {
+        "input": "*ᶠ*b*æ*ʝ*æ*t*á",
+        "output": "*ᶠ*b*æ*ʝ*æ*t*á"
+      },
+      {
+        "input": "*b*á*ʝ*æ*t",
+        "output": "*b*á*ʝ*æ*t"
+      },
+      {
+        "input": "*ᵘ*ᶠ*ʝ*æ*t*á",
+        "output": "*ᵘ*ᶠ*ʝ*i*t*á"
+      },
+      {
+        "input": "*ᶜ*ᶠ*ʝ*æ*t*á",
+        "output": "*ᶜ*ᶠ*ʝ*i*t*á"
+      }
+    ],
+    "diphthongization": [
+      {
+        "input": "*ᶠ*ʝ*æ*ʃ*æ*f*t",
+        "output": "*ᶠ*ʝ*æ*ʃ*ea*f*t"
+      },
+      {
+        "input": "*ᶠ*b*æ*ʝ*æ*t",
+        "output": "*ᶠ*b*æ*ʝ*ea*t"
+      },
+      {
+        "input": "*ʝ*æ*t",
+        "output": "*ʝ*ea*t"
+      },
+      {
+        "input": "*ʝ*é*β*a*n",
+        "output": "*ʝ*íe*β*a*n"
+      }
+    ],
+    "ae_merger": [
+      {
+        "input": "*ᶠ*ʝ*æ*t*á",
+        "output": "*ᶠ*ʝ*e*t*á"
+      },
+      {
+        "input": "*ᶠ*b*æ*t*á",
+        "output": "*ᶠ*b*e*t*á"
+      },
+      {
+        "input": "*ʝ*æ*t",
+        "output": "*ʝ*æ*t"
+      },
+      {
+        "input": "*ᶠ*ʝ*ǣ*t*á",
+        "output": "*ᶠ*ʝ*ǣ*t*á"
+      },
+      {
+        "input": "*ᶠ*ʝ*i*t*á",
+        "output": "*ᶠ*ʝ*i*t*á"
+      }
+    ],
+    "i_lowering": [
+      {
+        "input": "*ᶠ*ʝ*i*s*t*ḯ*g*a",
+        "output": "*ʝ*e*s*t*ḯ*g*a"
+      },
+      {
+        "input": "*ᶠ*b*i*g*í*n*n*a*n",
+        "output": "*b*e*g*í*n*n*a*n"
+      },
+      {
+        "input": "*ᶠ*ʝ*i*d*y*r*s*t*i*ʝ",
+        "output": "*ʝ*e*d*y*r*s*t*i*ʝ"
+      },
+      {
+        "input": "*ᶠ*ʝ*i*b*ēa*t*æ*n",
+        "output": "*ʝ*e*b*ēa*t*æ*n"
+      },
+      {
+        "input": "*ᶠ*n*i*t*á",
+        "output": "*n*e*t*á"
+      },
+      {
+        "input": "*b*í*n*d*a*n",
+        "output": "*b*í*n*d*a*n"
+      },
+      {
+        "input": "*n*i",
+        "output": "*n*i"
+      },
+      {
+        "input": "*ᶠ*ʝ*ī*t*á",
+        "output": "*ʝ*ī*t*á"
+      }
+    ]
+  }
+}

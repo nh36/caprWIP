@@ -32,7 +32,7 @@ class PrefixReductionTests(unittest.TestCase):
     def test_adjudicated_history_and_confidence_are_distinct_from_proxy_date(self):
         row = adjudicate.load_registry_row("SC035")
         self.assertEqual((row["adjudication_status"], row["verdict"]),
-                         ("adjudicated", "REFORMULATE/REORDER"))
+                         ("adjudicated", "RETAIN"))
         self.assertEqual((row["hist_stage"], row["historical_stage_label"],
                           row["hist_scope"], row["confidence"]),
                          ("preoe", "Pre-Old English",
