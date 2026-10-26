@@ -46,6 +46,20 @@ CAPR's selected \emph{*wír-àldu} is a mixed-stage transponent,
 not an independently attested Proto-Germanic form. The stem-class
 reassignment and the subsequent phonology are separate claims.
 
+The components are supported independently by Kroonen, but the exact
+compound vowel and accentuation are not thereby established.
+Ringe and Taylor allow original \emph{e} beside \emph{i} for 'man'.
+Their comparison of i-stem Old Saxon and Old High German with ō-stem
+Old Frisian and Norse must also be read beside their qualification that
+the late Norse word is probably borrowed
+[@Kroonen2013, pp. 20, 588; @RingeTaylor2014, pp. 34, 202, 326].
+Campbell records frequent endingless accusative *weorold*, characteristic
+of feminine i-stems. Thus class remodelling does not entail disappearance
+of every conservative ending; neither its donor cell nor a date before
+final \emph{ō > u} has been established for this word
+[@Campbell1959, p. 244, §610(1) n.2;
+@Fulk2018, pp. 154--156, 161--162].
+
 Ringe and Taylor give West Saxon *weorold/worold*, also with medial
 \emph{u}, Mercian *weoruld*, Northumbrian *woruld* and Kentish
 *wiarald*. The initial \emph{eo/o/ia} variation and the medial
@@ -65,6 +79,22 @@ the latter route for the selected *weorold*, without asserting it
 for every variant [@Campbell1959, p. 142, §338;
 @HoggGrammar2011, pp. 217--218, §6.7;
 @Luick1914, p. 126, §113; @RingeTaylor2014, pp. 202, 326].
+
+Goering's early Old English analysis favours a single initial trimoraic
+foot in *weruld*, not an initial light foot followed by medial secondary
+stress. Both possible footings predict apocope; the weak medial vowel
+and resolution of *worulde* in *Beowulf* 3068a and 2343a provide the
+more discriminating evidence. This is compatible with an earlier compound
+accent but does not reconstruct or date its loss
+[@Goering2023, pp. 79--82, §4.5.1.2].
+Hogg's criticism of an unexplained “tertiary stress” and Minkova's
+distinction between metrical and linguistic prominence caution against
+turning the retained grave annotation into that missing evidence
+[@Hogg1996, pp. 3, 9--11; @Minkova1996, pp. 20--29].
+The annotation belongs to the second root, not a linking vowel.
+The compact input presupposes the reduced compound junction;
+consonant-separated linking syncope does not independently explain
+resolution of a literal \emph{a+a} sequence.
 
 ### The distinct history of soul
 

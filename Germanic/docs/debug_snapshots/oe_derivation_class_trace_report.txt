@@ -44830,7 +44830,7 @@ OldEnglishSurface [no-change]: wīþiġ
 PROTO: *wír-àldu
 EXPECTED: weorold
 OUTPUTS: weorold
-NOTE: PROTOFORM *wir-aldu uses PIE root vowel *i (cf. Lat vir). FST: (1) NWGmc i-lowering *i>*e, (2) inter-stress raising *a>*u (OEInterStressRaising), (3) back mutation *e>*eo, (4) medial *u>*o, (5) final apocope → weorold. PROTO *weraldiz is etymological headword.
+NOTE: PROTO *wíra-àldiz is the stable comparative label; PROTOFORM *wír-àldu is a mixed-stage transponent with remodelling to -u and compact compound stem pre-encoded. Comparative i/e, composition-vowel resolution and secondary-accent loss remain qualified. Model: consonantal i>e, SC036 weak-vocalism proxy a>u, back mutation e>eo, final high-vowel apocope, late medial u>o. Ringe-Taylor 2014 pp.34,202,326; Campbell 1959 p.244 §610(1) n.2 preserves endingless acc.sg evidence. Analogy is not independently dated before SC019. See audits/world-2302-adjudication.md.
 
 
 ## Section 1: Proto-Germanic consonant inheritance

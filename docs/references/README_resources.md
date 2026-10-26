@@ -2,6 +2,17 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## World and prosody intake (2026-10-26)
+
+See [the acquisition record](world_2026-10-26/README.md), reproducible
+`prepare_holdings.py`, `holdings.tsv` and `page_map.tsv`.
+Four newly supplied PDFs provide complete Fulk2010, Fulk2022, Goering2023
+and Britton1996 holdings; Hogg1996 and Minkova1996 have separate complete
+article-level text records within the latter volume. All new complete texts
+are local-only under `docs/references/local/world-2026-10-26/`.
+The detailed record distinguishes ingestion, reading, page-image checking,
+reflow pagination and typography limits. The full Fulk2018 holding is reused.
+
 ## ga-/gi-/ge- intake (2026-10-25)
 
 The [original acquisition record](ga_prefix_2026-10-25/README.md)

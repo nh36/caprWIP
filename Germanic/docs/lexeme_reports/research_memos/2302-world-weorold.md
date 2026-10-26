@@ -1,5 +1,19 @@
 # Research memo — 2302 world / weorold
 
+## Historical memo: superseded
+
+This memo is retained as the earlier research record, not current guidance.
+The [26 October world adjudication](../../sound_changes/audits/world-2302-adjudication.md)
+and mature model/source ledger supersede the assessments below.
+In particular, Kluge's first member is *wira-*, not *wera-* at the cited
+locator; Campbell's frequent endingless accusative requires paradigm
+assessment; the precise analogy date and grave-marked prosody remain
+qualified. The “probe not required” recommendation and claims that a
+complete regular history is secured are not adopted conclusions.
+Archived DEV_NOTES remain unchanged, not retrospectively corrected.
+
+The remainder of this file is historical throughout.
+
 ## Starting point
 
 - **ID:** 2302

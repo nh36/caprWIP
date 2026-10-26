@@ -1,17 +1,17 @@
 === PROVENANCE ===
 germanic.txt sha256: 8ac9e9fe43b03b234702458573a95f7ab69fc56f752f063980d99e68aa41b038
 old_english_sandbox.txt sha256: a9de6f17edbb34edd08bc628ecc0cc500c9f7d5f4354b331490e1412d4ab4aac
-germanic-aligned-final.tsv sha256: d40b6e65280d4cbe8acb08271803ef8acc64b3ff8e6b2656d416951aebdfa0a0
+germanic-aligned-final.tsv sha256: 8f54b73297e467fe9be545d297da25fe06ad18f40f76cfcdf4327702f8291511
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
 oe_input_context.py sha256: d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67
 oe_full_trace_report.py sha256: 8a14c2d7dbd821616f1351c9faa441a2f10a84141d89de8e2c8f52463ded4bea
-old_english.bin sha256 (informational): 082f534316f7fbf3a902743029d50c8f1af225d901d3f80e8c2a7cc2290bd73f
+old_english.bin sha256 (informational): b05785011ed2d19889ba0a0e412f0e5d0ad162f08a1fcc7ca2aff0b0019155e2
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-10-26T07:00:34+0000
+build_manifest_built_at: 2026-10-26T13:09:22+0000
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
 build_manifest_expected_bins: 110
-manifest:germanic-aligned-final.tsv sha256: d40b6e65280d4cbe8acb08271803ef8acc64b3ff8e6b2656d416951aebdfa0a0
+manifest:germanic-aligned-final.tsv sha256: 8f54b73297e467fe9be545d297da25fe06ad18f40f76cfcdf4327702f8291511
 manifest:germanic.txt sha256: 8ac9e9fe43b03b234702458573a95f7ab69fc56f752f063980d99e68aa41b038
 manifest:old_english_sandbox.txt sha256: a9de6f17edbb34edd08bc628ecc0cc500c9f7d5f4354b331490e1412d4ab4aac
 

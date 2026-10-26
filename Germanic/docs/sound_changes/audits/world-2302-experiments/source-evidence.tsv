@@ -1,0 +1,21 @@
+claim_id	source	locator	kind	claim	verification	limit
+OR462	Orel2003	p.462	comparative_reconstruction	Compound *wira-alđiz supports first-member i and i-stem tradition	original_page_checked	Author reconstruction; not direct PGmc attestation or CAPR accent pattern
+KR20	Kroonen2013	p.20	comparative_reconstruction	*aldi- feminine ti-stem age supports second component	original_page_checked	Not an independent reconstruction of the complete compound
+KR588	Kroonen2013	p.588	comparative_reconstruction	*wira- man supports first component	original_page_checked	Simplex evidence does not settle compound vowel or its exact accent
+KL981	KlugeSeebold2011	pp.981-982	comparative_reconstruction	WGmc *wira-aldō and first member *wira-	original_page_checked	p.981 checked; continuation p.982 retained text; no independent pre-SC019 date
+RT34	RingeTaylor2014	p.34	comparative_reconstruction	*wiraz with alternative *weraz not excluded	retained_text_only	Gothic and Norse conditions obscure original vowel
+RT202	RingeTaylor2014	p.202	secondary_analysis	Weak rounding may include further raising; late ON verǫld probably borrowed	original_page_checked	Loan qualification prevents treating ON class as independent early inheritance
+RT326	RingeTaylor2014	p.326	secondary_analysis	PNWGmc *weraldiz; class divergence and *weraldu to *weruld; OE variant distribution	original_page_checked	PDF sheet341 is not printed p.341; chain does not date analogy before SC019
+CA244	Campbell1959	p.244 §610(1) n.2	attested_form_report	Frequent endingless acc.sg weorold typical of feminine i-stems	original_page_checked	Handbook report not new manuscript collation; ending does not certify whole unremodelled stem
+CA610	Campbell1959	p.244 §610(4)	secondary_analysis	Some i-stems replaced endings before umlaut	original_page_checked	Not a world-specific chronology claim
+CA338	Campbell1959	p.142 §338	secondary_analysis	Weak-vowel variant account constrains medial a/o/u	original_page_checked	Does not require every o to descend through u
+HG217	HoggGrammar2011	pp.217-218 §§6.6-7	secondary_analysis	Weak fronting/retraction and rounding contrast with stronger prominence	retained_text_only	Held reprint pagination; no newly repeated original-page check
+FU37	Fulk2018	pp.36-38 §2.2	secondary_analysis	True compound secondary stress protects vowels; obscured compounds reduce	original_page_checked	p.37 image checked; remaining section retained text; not a dated world-specific accent history
+FU155	Fulk2018	pp.154-156 §§7.14-15	paradigm_comparison	ō-stem nominative accusative and genitive endings have distinct histories	retained_text_only	General paradigms not actual complete world paradigm
+FU162	Fulk2018	pp.161-162 §§7.22-23	paradigm_comparison	Feminine i-stem mixing and frequent OE endingless accusatives	retained_text_only	General class history cannot select an unverified regular world cell
+FU2010	Fulk2010	pp.126-144	methodology	Conservative dialects and whole paradigms constrain phonology versus analogy	full_text_read_limited_images	Complete19-page reading and local OCR; p.142 image checked; no direct world paradigm
+FU2022	Fulk2022	pp.11-18	methodology	Metre and editing require linguistic and inflectional controls	full_text_read	Specific soul interpretation retained as lead for separate authorised investigation only
+HO1996	Hogg1996	pp.3-12	methodology	Tertiary stress proposal is criticised for inadequate independent explanation	full_text_read_limited_images	Original pp.3,12 checked; not endorsement of tertiary stress
+MI1996	Minkova1996	pp.13-38	methodology	Metrical ictus not identical to lexical stress; hierarchy tentative	full_text_read_limited_images	Original pp.13,38 checked; references end37 and38 blank; not rejection of all metrical evidence
+GO2023	Goering2023	pp.52-86 especially79-82	prosodic_analysis	Initial LH foot for weruld supported by weak medial behaviour and actual versus hypothetical verse controls	full_text_read_reflow_images_checked	Export sheets21-22 not original print facsimile; does not date PGmc secondary accent loss
+MODEL	CAPR	complete-cascade evidence.json	executable_observation	i-stem gives wereald; compact u or ō gives weorold; literal hiatus gives weorauld	fresh_isolated_runtime	Candidate strings and synthetic probes are not attestations or independent historical chronology

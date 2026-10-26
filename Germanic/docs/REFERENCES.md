@@ -85,6 +85,20 @@ manuscript attestations.
 
 ## Specialist articles and monographs
 
+### World/prosody intake, 26 October 2026
+
+The [acquisition record](../../docs/references/world_2026-10-26/README.md)
+and its holding/page manifests register complete local texts for
+`Fulk2010` (pp.126--144), `Fulk2022` (pp.11--18), `Goering2023`
+(pp.52--86), `Hogg1996` (pp.3--12) and `Minkova1996` (pp.13--38).
+The latter two are independently retrievable contributions in the complete
+`Britton1996` volume. Searchable texts are under the Git-ignored
+`docs/references/local/world-2026-10-26/`; original PDFs remain local.
+Goering is a publisher reflow with print-page anchors, not a facsimile.
+Fulk2010's native extraction damages accent/quantity signs; use page images.
+Acquisition does not certify critical reading or adopt an author's analysis.
+The complete existing `Fulk2018` PDF and full Vision text are also available.
+
 ### ga-/gi-/ge- acquisitions and next-round navigation
 
 See [the complete acquisition record](../../docs/references/ga_prefix_2026-10-25/README.md)
