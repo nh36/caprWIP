@@ -19,7 +19,7 @@ DERIVATION_CLASS: early_analogy
 ### Reconstruction and comparative evidence
 
 The word is the old compound 'age of men'. Orel reconstructs
-an already mid-vowelled compound, and Ringe and Taylor discuss the form
+\emph{*wira-alđiz}, with the older first-element vowel, while Ringe and Taylor discuss the form
 [weraldiz]{.recon} 'world' and its pre-Old-English chain [weraldu]{.recon} 'world' > [weruld]{.recon} 'world'
 [@Orel2003, p. 462; @RingeTaylor2014, p. 326]. Kluge-Seebold gives the
 compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English `weorold` 'world'
@@ -63,13 +63,19 @@ ever shows.
 
 From the selected input [wír-àldu]{.recon} ‘world’, Northwest Germanic `i`-lowering gives
 [wér-àldu]{.recon} ‘world’. Inter-stress raising then changes the medial `a` to `u`, producing
-[wér-uldu]{.recon} ‘world’. In the Old English branch that unstressed `u` lowers to `o`, and
-back mutation yields [wéor-oldu]{.recon} ‘world'; final high-vowel apocope then gives
+[wér-uldu]{.recon} ‘world’. Back mutation yields
+\emph{*wéor-uldu}; final high-vowel apocope gives
+\emph{*wéor-uld}, and later medial `u`-lowering produces
 `weorold` 'world'.
 
 This sequence matches the comparative background in Ringe and Taylor's
 literature-stage chain for the word while preserving the `*wir-` notation of
-the comparative label [@RingeTaylor2014, p. 326]. The modeled Old English form
+the comparative label [@RingeTaylor2014, p. 326]. This is the retained
+executable projection: the reconstructed secondary accent does not by itself
+prove weakened prominence, and the broader variant history does not require
+every medial `o` to have passed through `u`
+[@Campbell1959, p. 142, §338; @HoggGrammar2011, pp. 217--218, §6.7].
+The modeled Old English form
 therefore stands at the meeting point of an early stem-class reshaping and later
 regular sound change.
 

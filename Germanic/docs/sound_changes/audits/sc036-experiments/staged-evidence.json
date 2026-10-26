@@ -1,0 +1,275 @@
+{
+  "source_sha256": "8ac9e9fe43b03b234702458573a95f7ab69fc56f752f063980d99e68aa41b038",
+  "corpus_sha256": "d40b6e65280d4cbe8acb08271803ef8acc64b3ff8e6b2656d416951aebdfa0a0",
+  "build_manifest": {
+    "generator": "Germanic/tools/capr_runtime.py write_build_manifest",
+    "built_at": "2026-10-26T07:16:05+0000",
+    "runner": "docker",
+    "foma_version": "foma 0.10.0alpha",
+    "sources": {
+      "germanic.txt": "8ac9e9fe43b03b234702458573a95f7ab69fc56f752f063980d99e68aa41b038",
+      "old_english_sandbox.txt": "a9de6f17edbb34edd08bc628ecc0cc500c9f7d5f4354b331490e1412d4ab4aac",
+      "germanic-aligned-final.tsv": "d40b6e65280d4cbe8acb08271803ef8acc64b3ff8e6b2656d416951aebdfa0a0"
+    },
+    "expected_bins": [
+      "old_english.bin",
+      "old_english_sandbox_after_eaf_ai_monophthongization.bin",
+      "old_english_sandbox_after_eaf_brightening.bin",
+      "old_english_sandbox_after_eaf_brightening_long_final.bin",
+      "old_english_sandbox_after_eaf_brightening_unstressed.bin",
+      "old_english_sandbox_after_eaf_final_z_deletion.bin",
+      "old_english_sandbox_after_eaf_hiatus_w_insertion.bin",
+      "old_english_sandbox_after_eaf_l_th_voicing.bin",
+      "old_english_sandbox_after_eaf_long_a_fronting.bin",
+      "old_english_sandbox_after_eaf_long_a_nasal_rounding.bin",
+      "old_english_sandbox_after_eaf_nasal_spirant_lengthening.bin",
+      "old_english_sandbox_after_eaf_nasal_spirant_loss.bin",
+      "old_english_sandbox_after_eaf_nasalized_low_rounding.bin",
+      "old_english_sandbox_after_eaf_rhotacism.bin",
+      "old_english_sandbox_after_english_proto_input.bin",
+      "old_english_sandbox_after_monosyllabic_final_z_loss.bin",
+      "old_english_sandbox_after_nwgmc_in_stem_n_loss.bin",
+      "old_english_sandbox_after_oe_a_restoration.bin",
+      "old_english_sandbox_after_oe_au_brightening.bin",
+      "old_english_sandbox_after_oe_aw_long_diphthong.bin",
+      "old_english_sandbox_after_oe_awwj_resolution.bin",
+      "old_english_sandbox_after_oe_back_mutation.bin",
+      "old_english_sandbox_after_oe_breaking.bin",
+      "old_english_sandbox_after_oe_cj_cleanup.bin",
+      "old_english_sandbox_after_oe_compound_linking_syncope.bin",
+      "old_english_sandbox_after_oe_contraction.bin",
+      "old_english_sandbox_after_oe_dental_assimilation.bin",
+      "old_english_sandbox_after_oe_diphthong_leveling.bin",
+      "old_english_sandbox_after_oe_early_o_shortening.bin",
+      "old_english_sandbox_after_oe_epenthetic_vowel.bin",
+      "old_english_sandbox_after_oe_ew_long_diphthong.bin",
+      "old_english_sandbox_after_oe_final_geminate_simplification.bin",
+      "old_english_sandbox_after_oe_final_unstressed_o_lowering.bin",
+      "old_english_sandbox_after_oe_h_loss.bin",
+      "old_english_sandbox_after_oe_heavy_syllable_nasal_apocope.bin",
+      "old_english_sandbox_after_oe_high_vowel_apocope.bin",
+      "old_english_sandbox_after_oe_i_umlaut.bin",
+      "old_english_sandbox_after_oe_inter_stress_raising.bin",
+      "old_english_sandbox_after_oe_intervocalic_j_vocalization.bin",
+      "old_english_sandbox_after_oe_j_cluster_coalescence.bin",
+      "old_english_sandbox_after_oe_j_glide_io.bin",
+      "old_english_sandbox_after_oe_j_loss_after_heavy.bin",
+      "old_english_sandbox_after_oe_j_strengthening_after_front_diphthong.bin",
+      "old_english_sandbox_after_oe_jww_simplification.bin",
+      "old_english_sandbox_after_oe_l_adjacent_syncope.bin",
+      "old_english_sandbox_after_oe_late_o_shortening.bin",
+      "old_english_sandbox_after_oe_late_palatal_diphthong.bin",
+      "old_english_sandbox_after_oe_late_unstressed_ag_suffix.bin",
+      "old_english_sandbox_after_oe_med_unstressed_i_lowering.bin",
+      "old_english_sandbox_after_oe_med_unstressed_i_lowering_1.bin",
+      "old_english_sandbox_after_oe_med_unstressed_o_raising.bin",
+      "old_english_sandbox_after_oe_med_unstressed_u_lowering.bin",
+      "old_english_sandbox_after_oe_medial_syncope.bin",
+      "old_english_sandbox_after_oe_palatal_fricative_merger.bin",
+      "old_english_sandbox_after_oe_post_velar_w_loss.bin",
+      "old_english_sandbox_after_oe_preconsonantal_degemination.bin",
+      "old_english_sandbox_after_oe_prefix_a_reduction.bin",
+      "old_english_sandbox_after_oe_prefix_i_reduction.bin",
+      "old_english_sandbox_after_oe_r_metathesis.bin",
+      "old_english_sandbox_after_oe_secondary_nasalization.bin",
+      "old_english_sandbox_after_oe_sk_palatalization.bin",
+      "old_english_sandbox_after_oe_stress_foot_context.bin",
+      "old_english_sandbox_after_oe_strip_secondary_stress.bin",
+      "old_english_sandbox_after_oe_unstressed_ae_merger.bin",
+      "old_english_sandbox_after_oe_unstressed_ei_contraction.bin",
+      "old_english_sandbox_after_oe_unstressed_fronting_early.bin",
+      "old_english_sandbox_after_oe_unstressed_long_vowel_shortening.bin",
+      "old_english_sandbox_after_oe_velar_fricative_palatalization.bin",
+      "old_english_sandbox_after_oe_velar_palatalization.bin",
+      "old_english_sandbox_after_oe_w_loss_before_i.bin",
+      "old_english_sandbox_after_oe_weak_tail_nasal_loss.bin",
+      "old_english_sandbox_after_oe_weak_tail_reduction.bin",
+      "old_english_sandbox_after_oe_weight_cleanup.bin",
+      "old_english_sandbox_after_oe_weight_markers.bin",
+      "old_english_sandbox_after_oe_wi_combinative_u_umlaut.bin",
+      "old_english_sandbox_after_oe_ws_palatal_diphthongization.bin",
+      "old_english_sandbox_after_oe_ws_palatal_glide.bin",
+      "old_english_sandbox_after_oe_ws_palatal_umlaut.bin",
+      "old_english_sandbox_after_oe_ww_simplification.bin",
+      "old_english_sandbox_after_oe_xs_merge.bin",
+      "old_english_sandbox_after_old_english_orthography.bin",
+      "old_english_sandbox_after_old_english_remove_stars.bin",
+      "old_english_sandbox_after_old_english_surface.bin",
+      "old_english_sandbox_after_pgmc_b_allophony.bin",
+      "old_english_sandbox_after_pgmc_gm_simplification.bin",
+      "old_english_sandbox_after_pgmc_nasal_loss_before_x.bin",
+      "old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin",
+      "old_english_sandbox_after_pnwgmc_final_long_o_raising.bin",
+      "old_english_sandbox_after_pnwgmc_i_lowering.bin",
+      "old_english_sandbox_after_pnwgmc_long_e_lowering.bin",
+      "old_english_sandbox_after_pnwgmc_mn_dissimilation.bin",
+      "old_english_sandbox_after_pnwgmc_monosyllabic_final_r_lengthening.bin",
+      "old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin",
+      "old_english_sandbox_after_pnwgmc_preconsonantal_x_loss.bin",
+      "old_english_sandbox_after_pnwgmc_stressed_monosyllable_o_raising.bin",
+      "old_english_sandbox_after_pnwgmc_u_lowering.bin",
+      "old_english_sandbox_after_pnwgmc_unstressed_ai_monophthongization.bin",
+      "old_english_sandbox_after_pwgmc_coronal_w_assimilation.bin",
+      "old_english_sandbox_after_pwgmc_dental_hardening.bin",
+      "old_english_sandbox_after_pwgmc_early_i_apocope.bin",
+      "old_english_sandbox_after_pwgmc_endingless_aw.bin",
+      "old_english_sandbox_after_pwgmc_final_bare_a_loss.bin",
+      "old_english_sandbox_after_pwgmc_final_or_lowering.bin",
+      "old_english_sandbox_after_pwgmc_ij_contraction.bin",
+      "old_english_sandbox_after_pwgmc_j_gemination.bin",
+      "old_english_sandbox_after_pwgmc_surviving_bimoric_o_unrounding.bin",
+      "old_english_sandbox_after_pwgmc_syllabic_j.bin",
+      "old_english_sandbox_after_pwgmc_unstressed_word_final_i_apocope.bin",
+      "old_english_sandbox_after_root_noun_nom_z_loss.bin",
+      "old_english_sandbox_after_sievers_law_syncope.bin"
+    ]
+  },
+  "canonical_composed_incremental_agree": true,
+  "protected_files_unchanged": 169,
+  "staged_alternatives": {
+    "world-after-root-lowering": {
+      "input": "*w*é*r*à*l*d*u",
+      "final": "weorold",
+      "trace": [
+        {
+          "stage": "OEInterStressRaising",
+          "pre": "*w*é*r*à*l*d*u",
+          "post": "*w*é*r*u*l*d*u"
+        },
+        {
+          "stage": "OEBackMutation",
+          "pre": "*w*é*r*u*l*d*u",
+          "post": "*w*éo*r*u*l*d*u"
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "pre": "*w*éo*r*u*l*d*u",
+          "post": "*w*éo*r*u*l*d"
+        },
+        {
+          "stage": "OEMedUnstressedULowering",
+          "pre": "*w*éo*r*u*l*d",
+          "post": "*w*éo*r*o*l*d"
+        },
+        {
+          "stage": "OldEnglishRemoveStars",
+          "pre": "*w*éo*r*o*l*d",
+          "post": "weorold"
+        }
+      ],
+      "status": "accepted",
+      "rejection": null
+    },
+    "world-without-grave": {
+      "input": "*w*é*r*a*l*d*u",
+      "final": "weorold",
+      "trace": [
+        {
+          "stage": "OEInterStressRaising",
+          "pre": "*w*é*r*a*l*d*u",
+          "post": "*w*é*r*u*l*d*u"
+        },
+        {
+          "stage": "OEBackMutation",
+          "pre": "*w*é*r*u*l*d*u",
+          "post": "*w*éo*r*u*l*d*u"
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "pre": "*w*éo*r*u*l*d*u",
+          "post": "*w*éo*r*u*l*d"
+        },
+        {
+          "stage": "OEMedUnstressedULowering",
+          "pre": "*w*éo*r*u*l*d",
+          "post": "*w*éo*r*o*l*d"
+        },
+        {
+          "stage": "OldEnglishRemoveStars",
+          "pre": "*w*éo*r*o*l*d",
+          "post": "weorold"
+        }
+      ],
+      "status": "accepted",
+      "rejection": null
+    },
+    "world-already-rounded": {
+      "input": "*w*é*r*u*l*d*u",
+      "final": "weorold",
+      "trace": [
+        {
+          "stage": "OEBackMutation",
+          "pre": "*w*é*r*u*l*d*u",
+          "post": "*w*éo*r*u*l*d*u"
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "pre": "*w*éo*r*u*l*d*u",
+          "post": "*w*éo*r*u*l*d"
+        },
+        {
+          "stage": "OEMedUnstressedULowering",
+          "pre": "*w*éo*r*u*l*d",
+          "post": "*w*éo*r*o*l*d"
+        },
+        {
+          "stage": "OldEnglishRemoveStars",
+          "pre": "*w*éo*r*o*l*d",
+          "post": "weorold"
+        }
+      ],
+      "status": "accepted",
+      "rejection": null
+    },
+    "world-unshifted-i-stem-comparison": {
+      "input": "*w*é*r*a*l*d*i*z",
+      "final": null,
+      "trace": [
+        {
+          "stage": "EAFBrighteningUnstressed",
+          "pre": "*w*é*r*a*l*d*i*z",
+          "post": "*w*é*r*æ*l*d*i*z"
+        },
+        {
+          "stage": "OEBreaking",
+          "pre": "*w*é*r*æ*l*d*i*z",
+          "post": "*w*é*r*ea*l*d*i*z"
+        },
+        {
+          "stage": "OEIUmlaut",
+          "pre": "*w*é*r*ea*l*d*i*z",
+          "post": "*w*é*r*ie*l*d*i*z"
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "pre": "*w*é*r*ie*l*d*i*z",
+          "post": "*w*é*r*ee*l*d*e*z"
+        }
+      ],
+      "status": "rejected",
+      "rejection": {
+        "stage": "OEMedUnstressedILowering",
+        "input": "*w*é*r*ee*l*d*e*z",
+        "outputs": []
+      }
+    },
+    "soul-after-nonhigh-syncope": {
+      "input": "*s*ā*w*l*u",
+      "final": "sāwl",
+      "trace": [
+        {
+          "stage": "OEHighVowelApocope",
+          "pre": "*s*ā*w*l*u",
+          "post": "*s*ā*w*l"
+        },
+        {
+          "stage": "OldEnglishRemoveStars",
+          "pre": "*s*ā*w*l",
+          "post": "sāwl"
+        }
+      ],
+      "status": "accepted",
+      "rejection": null
+    }
+  }
+}

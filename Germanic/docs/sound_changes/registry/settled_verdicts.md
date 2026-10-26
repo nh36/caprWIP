@@ -26,6 +26,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC033 | J-created palatalized-glide reanalysis | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc033-adjudication.md` |
 | SC034 | Retained show long-diphthong proxy | active | REFORMULATE/DEFER | `Germanic/docs/sound_changes/audits/sc034-adjudication.md` |
 | SC035 | Pretonic front-vowel raising after a palatal fricative | active | RETAIN | `Germanic/docs/sound_changes/audits/sc035-literature-adjudication.md` |
+| SC036 | OE weak medial vocalism | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc036-adjudication.md` |
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-adjudication.md` |

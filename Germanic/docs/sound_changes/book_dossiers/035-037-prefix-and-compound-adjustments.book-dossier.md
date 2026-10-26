@@ -64,16 +64,35 @@ The assembled reader takes SC035 from the registry-owned
 `reader_facing/035-pretonic-front-vowel-raising.md`, not this dossier.
 An agent following this dossier must use the current account above and
 the linked adjudications; it must not reactivate historical formulations.
-SC036/SC037 assessments below are preserved without readjudication.
+SC036 assessments below are superseded by its current authority section;
+SC037 assessments remain historical and are not readjudicated here.
 The [final consistency closeout](../audits/sc035-consistency-closeout.md)
 records the original-page checks, documentary guard and publication result.
 
-## Historical research record — superseded SC035 assessments
+## Current authoritative SC036 account
+
+The completed SC036 adjudication is `audits/sc036-adjudication.md`:
+REFORMULATE, confidence C, with the executable relation and order retained.
+World's weak rounding and soul's syncope/epenthesis are different historical
+developments, not two independent witnesses for a unified raising law.
+The actual Foma mappings share their context; the old description of
+context-free grave-a raising is false. Secondary accent does not itself
+mean weakened prominence. SC004, SC019 and SC040 dependencies are model-local,
+not independently demonstrated historical dates. The old late-boundary
+finals are not current observations.
+
+The registry-owned `reader_facing/036-inter-stress-raising.md` supplies the
+publication account. The SC036 assessments in the historical partition
+below, including “strongest evidence”, confidence A and historical
+first-break claims, are superseded by this section and the adjudication.
+SC035 remains closed and unchanged; SC037 remains a separate future case.
+
+## Historical research record — superseded SC035 and SC036 assessments
 
 All numbered sections in this partition record earlier checkpoints.
-Their SC035 model, order, confidence and editorial proposals are superseded
-by the current section above. SC036/SC037 statements are historical
-assessments retained verbatim, not fresh decisions about either neighbour.
+Their SC035/SC036 models, confidence and chronology claims are superseded
+by the respective current sections above. SC037 statements are historical
+assessments retained verbatim, not a new decision about that neighbour.
 
 ### 1. Role in the book
 

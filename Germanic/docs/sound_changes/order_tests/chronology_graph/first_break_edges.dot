@@ -26,7 +26,7 @@ digraph first_break_chronology {
   "SC033" [label="SC033\nJ-created palatalized-glide reanalysis"];
   "SC034" [label="SC034\nRetained show long-diphthong proxy"];
   "SC035" [label="SC035\nPretonic front-vowel raising after a palatal fricative"];
-  "SC036" [label="SC036\nOE Inter Stress Raising"];
+  "SC036" [label="SC036\nOE weak medial vocalism"];
   "SC037" [label="SC037\nOE Compound Linking Syncope"];
   "SC039" [label="SC039\nOE WI Combinative U Umlaut"];
   "SC040" [label="SC040\nOE Med Unstressed U Lowering"];
@@ -123,8 +123,9 @@ digraph first_break_chronology {
   "SC032" -> "SC030" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC032" -> "SC040" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC031" -> "SC032" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC036" -> "SC019" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC036" -> "SC040" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC036" -> "SC004" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC036" -> "SC019" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC036" -> "SC040" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC037" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC037" -> "SC038" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC039" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];

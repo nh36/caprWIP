@@ -228,13 +228,13 @@
     },
     {
       "change_id": "SC036",
-      "display_name": "OE Inter Stress Raising",
+      "display_name": "OE weak medial vocalism",
       "lifecycle_status": "active",
       "rule_name": "OEInterStressRaising",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC036-oe-inter-stress-raising.md",
-      "card_type": "broad_far",
+      "card_type": "technical_computational",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Earlier boundary is an ordinary chronology relation but relatively far back across SC019; later side is a one-sided chronology boundary across SC040."
+      "short_summary": "SC004 class membership, SC019 final-u supply and SC040 lowering are model-local dependencies, not independently demonstrated historical chronology. The frozen old SC040 displacement is superseded."
     },
     {
       "change_id": "SC037",
@@ -1342,31 +1342,45 @@
     },
     {
       "source_change_id": "SC036",
-      "target_change_id": "SC019",
-      "relation_type": "broad_far_chronology",
+      "target_change_id": "SC004",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
       "representative_lexemes": "soul",
-      "representative_forms": "PGmc `*sáiwalō` yields expected OE `sāwol`, but the earlier-shifted variant yields `sāwel`",
-      "strength": "broad_far",
-      "interpretation_category": "broad_far",
+      "representative_forms": "Atomic *ái is outside PGmcStarVowel; SC004 supplies *ā and permits the retained proxy to fire",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is an ordinary chronology relation but relatively far back across SC019; later side is a one-sided chronology boundary across SC040."
+      "notes": "Current exec37 before exec45. Broader vocalic-class counterfactual removes this break. Preserves SC004's accepted model-local interpretation, not an independently dated historical edge. See sc036-adjudication.md."
+    },
+    {
+      "source_change_id": "SC036",
+      "target_change_id": "SC019",
+      "relation_type": "technical_computational",
+      "direction_basis": "earlier_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
+      "representative_lexemes": "soul",
+      "representative_forms": "SC019 supplies final *u in selected *sáiwalō; without it the retained SC036 proxy misses the trigger",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
+      "reciprocal_group_id": "",
+      "notes": "Controlled independently of SC004 by the three-component and broader-class experiments. Computational feeding, not historical dating: source-led soul has syncope and epenthesis. The old first-break receipt remains frozen. See sc036-adjudication.md."
     },
     {
       "source_change_id": "SC036",
       "target_change_id": "SC040",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
       "representative_lexemes": "soul; world",
-      "representative_forms": "PGmc `*sáiwalō` yields expected OE `sāwol`, but the later-shifted variant yields `sāwul`; PGmc `*wír-àldu` likewise yields `weoruld` instead of expected `weorold`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "representative_forms": "The component order raises medial *u then lowers it to *o; full displacement after current SC040 instead yields sāwel and wereald",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is an ordinary chronology relation but relatively far back across SC019; later side is a one-sided chronology boundary across SC040."
+      "notes": "The old sāwul/weoruld measurement used superseded positions/architecture and remains on the frozen card only. The current long displacement also crosses fronting, breaking and apocope; no historical date or adjacency follows. See sc036-adjudication.md."
     },
     {
       "source_change_id": "SC037",

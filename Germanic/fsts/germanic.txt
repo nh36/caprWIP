@@ -2135,33 +2135,23 @@ define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
     .o. OEBreakingI);
 
-# Inter-stress raising: *a → *u in medial position before *u specifically (R/T §6.3.3).
-# In compounds like wir-aldu 'world', the medial *a assimilates to the following *u.
-# Condition: *a must follow a vowel (not word-initial), be followed by consonant(s),
-# and the consonant immediately before *u must NOT be *j. This prevents over-application
-# in derivational suffixes like *-anjō where *j precedes the *u.
-# Example: *weraldu → *weruldu (after i-lowering, before breaking).
-# Counter-example: *lunganjō stays unchanged (j before u blocks the rule).
-# This rule MUST apply BEFORE AFB (which would convert *a → *æ) and BEFORE breaking
-# (which would convert *a → *ea before lC).
+# SC036: retained composite proxy; see audits/sc036-adjudication.md.
+# World belongs to weak rounding (Luick §113 pp.125-126; R/T pp.202,326).
+# Soul instead has nonhigh syncope and epenthesis (R/T p.330; Luick §317).
+# Single comma: BOTH targets share the preceding-vowel and following-u context.
+# No j may occur anywhere in the right consonant sequence.
+# Grave is secondary accent, not independent evidence of weakened prominence.
+# Execution before fronting/breaking is model-local, not a historical date.
 define OEInterStressRaising Ctx([
     {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
-    # DEV_NOTES §16.6: Nebenton-conditioned raising of compound
-    # second-element root *a. Luick §306, Brunner §402, R/T vol.2
-    # §6.3.3 p.200-202: short *a in the trough between primary
-    # stress and a weak/lost secondary stress raises to *u. The
-    # grave-a itself is the prosodic conditioning marker; no
-    # right-context is required — the compound-internal prosodic
-    # position is encoded directly in the PROTOFORM.
-    # Example: *wír-àldu → *wír-uldu → (u-lowering) → weorold.
     {*à} -> {*u}
 ]);
 
 # DEV_NOTES §16.6.3 (architecture option C): Neutralise any remaining
 # Nebenton marks to plain short vowels so the rest of the OE cascade
 # (breaking, AFB, i-umlaut, u-lowering) sees only acute-primary or
-# plain short vowels. Fires AFTER OEInterStressRaising so the grave
-# remains visible to that rule.
+# plain short vowels. Removing the marker earlier does not change the selected
+# world output: SC036 can then use its plain-a mapping in the same shared context.
 define OEStripSecondaryStress Ctx([
     {*à} -> {*a},
     {*è} -> {*e},

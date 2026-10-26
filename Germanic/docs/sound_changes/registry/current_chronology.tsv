@@ -53,8 +53,9 @@ SC008	SC031	one_sided_chronology	later_boundary	independently_demonstrated	feedi
 SC032	SC030	reciprocal_chronology	earlier_boundary	independently_demonstrated	feeding	41	37	43	39	consistent
 SC032	SC040	technical_computational	later_boundary	technical	displacement_witness	41	87	43	89	consistent
 SC031	SC032	one_sided_chronology	later_boundary	independently_demonstrated	feeding	9	41	11	43	consistent
-SC036	SC019	broad_far_chronology	earlier_boundary	independently_demonstrated	displacement_witness	43	20	45	22	consistent
-SC036	SC040	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	43	87	45	89	consistent
+SC036	SC004	technical_computational	earlier_boundary	technical	feeding	43	35	45	37	consistent
+SC036	SC019	technical_computational	earlier_boundary	technical	feeding	43	20	45	22	consistent
+SC036	SC040	technical_computational	later_boundary	technical	feeding	43	87	45	89	consistent
 SC037	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		44		46		nonordering_observation
 SC037	SC038	technical_computational	later_boundary	technical		44	45	46	47	consistent
 SC039	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		46		48		nonordering_observation

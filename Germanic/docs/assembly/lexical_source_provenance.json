@@ -7,7 +7,7 @@
     "Germanic/docs/assembly/build_full_lexical_volume.py": "e82655263a105c73077ada18ae12be8db7926dd2d621562eaf4b979a5df811e9",
     "Germanic/docs/assembly/lexical_editorial_order.tsv": "7cdafe042fb24f8be02533b762841917351e0e10037a7f79f23096cdc2240a5d",
     "Germanic/docs/assembly/section_introductions_draft.md": "d2af1bd13554449b7053b038ce493ea90c98cbe8e41da6b8c362d276b59867bd",
-    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "7f82968f33afc2d3259adf313568d703070289b5db3d1051adbd5378be08971d",
+    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "5a8df44b35018b739563219e817d7378f04a934d480efb760196ec949d48ed16",
     "Germanic/docs/lexeme_reports/model_entries/1933-adder-n\u01e3dre.model.md": "52549a9050ba8eb79643b769ec290b5ba323de44c757b9641ae0ed35ed04fb98",
     "Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md": "dc2610f275dc925e44f886bc8efab18d4ade9fc16cbfe9d38154ad3ee4222a90",
     "Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md": "e14c2eb8eaa31c708bca41b5d2e1d6d147e3b3bffd66a323f3daa9c4f74d6164",
@@ -156,7 +156,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md": "0b171bf7a7d889f0412555b6e6745204f8d07d70675b60c5737101b349e694c9",
     "Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md": "ad9c322cbe54c106094ffb925e956331034984298b685089708ce557f372a459",
     "Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md": "dd2c930561a1476458237584429f34763545167ff2d9c28fdf1763fa710f6fd5",
-    "Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md": "ec273bae5ecbd33e6f40364791427806e04e615de7801126893ed4b07660de77",
+    "Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md": "00a2051222d912e23ba5e9b85291945bfa054efcac2e4b28430dd9873c174cd5",
     "Germanic/docs/lexeme_reports/model_entries/2305-yarn-\u0121earn.model.md": "6274d3110dc6c430931f89e66d72c1b5ef533b3f7d486c9dd8ca1b0d55f2741a",
     "Germanic/docs/lexeme_reports/model_entries/2308-youth-\u0121eogu\u00fe.model.md": "9f13996ea0c3c1ca8dc978d77af43d0f3305fc5b4771caeb89fd768d7dabdff3",
     "Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md": "ad60c2e00f48382a582615a9e0aaa7802b2e0adea4d1efb7b594df79f5b008e8",
@@ -184,7 +184,7 @@
     "backend/oe_input_context.py": "d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67"
   },
   "outputs": {
-    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "d5f6fab91ea715ca7f11e8462a09362792028f042bdc1105a8a3a491f375fb35",
+    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "7a9650f551b716d549a5b19cf66d1d92a9ccaf163734bb94283bd6653e69f734",
     "Germanic/docs/assembly/manifest_all_by_class.tsv": "c120a0ec2d5890c8ec86a8e094347479011b8f2bc624de5ae7f9b010044e6616",
     "Germanic/docs/assembly/manifest_attested_variant.tsv": "6d67a7724f4a054af9eef1a2745bf13e43db6cc482f3906d4745f44232677c9d",
     "Germanic/docs/assembly/manifest_early_analogy.tsv": "3ed0afeb53563ca3a20eda95dc92479ff76e9a0e953b6ddb519337d382838cd9",
