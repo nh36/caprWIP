@@ -58,6 +58,43 @@ source certification. PROTO, input, target and classification are unchanged.
   `weorold`, but do not date the analogy. Literal composition-vowel
   candidates yield `weorauld`; linking syncope does not resolve that hiatus.
 
+### Follow-up against published61a0d67e
+
+The unchanged-cascade results above remain historical measurements, not
+proof that an analogical ending is necessary. The separate
+`world-2302-experiments/reassessment.json` now compares14 configurations:
+inherited compact i-stem plus pre-lC raising can yield `weorold` without
+analogical u. Supplementing after early fronting changes no selected final.
+This withdraws a necessity argument; independent conditioning, not output
+fit, remains the obstacle to adopting a new law. Production is held
+provisionally; no selected scientific field or frozen receipt changes.
+
+- Čermák2005 pp.35–45 read completely, original pp.36,39 checked.
+  Table1 assigns world to B, later unstressed-vowel loss, not A
+  secondary-stress weakening. Possible *-eld* reinterpretation is
+  interrogative; the row has no new world-specific primary-text locator.
+- Sauer1992 pp.68–73,85–92,345–358 read selectively, original
+  pp.68,90,354,356 checked. OE feminine genitive *worulde* and ME
+  genitive-s/manuscript variation concern later paradigm history.
+  Neither this nor the general compound-stress discussion independently
+  dates prehistoric analogy or a world-specific stress-loss event.
+- Luick §113 pp.125–126 and Hogg2011 pp.217–218 now image-checked
+  for these particular passages. Luick's pre-l environment, lost in
+  extraction, and explicit uncertainty over o/u boundaries are confirmed.
+  Campbell §338 and Bülbring §§366–367 were reconsulted as held text;
+  no new original-page certification is claimed for Bülbring.
+- Separate o-only experiments fail at later SC100, not inherently at
+  back mutation. Production OEBackMutation shares comma contexts and
+  accepts o/a for acute/plain e. Explicitly composed u-only branches
+  demonstrate the difference; no back-mutation source is modified.
+- A general pre-lC candidate also changes synthetic twofold-shaped and
+  ordinary-weak controls. They are not new attestations or an established
+  universal high-vowel stage. Later twifold does not prove earlier twifuld.
+- The exact inherited cell and compact-junction chronology remain open.
+  Conservative endingless accusative is a real lead; rejected schematic
+  nasal/long-i/genitive parser shapes are software coverage gaps, not
+  counterevidence to historical regularity.
+
 ## Citation locator source-preparation audit 06
 
 - Source-preparation audit 06: recovered page-safe locator / retained broad pending paginated witness / updated source-witness blocker.

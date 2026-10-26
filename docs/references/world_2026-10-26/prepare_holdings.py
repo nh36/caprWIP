@@ -7,6 +7,7 @@ import io
 from pathlib import Path
 import re
 import subprocess
+import sys
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -19,6 +20,8 @@ HOLDINGS = [
     ("Hogg1996", "britton_1996_english_historical_linguistics", 412, 12, 21, 3),
     ("Minkova1996", "britton_1996_english_historical_linguistics", 412, 22, 47, 13),
     ("Goering2023", "goering_2023_heafudu_problem", 28, 1, 28, None),
+    ("Cermak2005", "cermak_2005_obscured_compounds", 12, 1, 12, None),
+    ("Sauer1992", "sauer_1992_nominalkomposita", 768, 1, 768, None),
 ]
 
 
@@ -32,7 +35,16 @@ def prepared():
         pdf = ROOT / "docs/references" / (stem + ".pdf")
         pdf_hash = digest(pdf.read_bytes())
         if stem not in texts:
-            native = subprocess.check_output(["pdftotext", "-layout", str(pdf), "-"])
+            result = subprocess.run(
+                ["pdftotext", "-layout", str(pdf), "-"],
+                capture_output=True, check=True)
+            if result.stderr:
+                diagnostics = result.stderr.decode().splitlines()
+                warnings = sorted(set(diagnostics))
+                print(f"{stem}: {len(diagnostics)} extraction diagnostics "
+                      f"({len(warnings)} distinct): {'; '.join(warnings)}",
+                      file=sys.stderr)
+            native = result.stdout
             pages = native.decode().split("\f")
             if pages[-1].strip():
                 raise ValueError("Missing final PDF page break: " + stem)
@@ -53,6 +65,14 @@ def prepared():
                 if anchors:
                     current = anchors[-1]
                 basis = "publisher reflow; in-text print-page anchors, not facsimile sheets"
+            elif key == "Cermak2005":
+                label = "unnumbered (blank)" if sheet == 1 else str(sheet + 33)
+                basis = "blank opening sheet; printed35--45 on sheets2--12"
+            elif key == "Sauer1992":
+                front = "V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV XXVI XXVII XXVIII".split()
+                label = (str(sheet - 28) if sheet >= 29 else
+                         front[sheet - 5] if sheet >= 5 else "unnumbered")
+                basis = "frontmatter separated; printed page = PDF sheet minus28"
             elif key == "Britton1996":
                 if sheet < 10:
                     label = {6: "v", 7: "vi", 8: "vii", 9: "viii"}.get(sheet, "unnumbered")

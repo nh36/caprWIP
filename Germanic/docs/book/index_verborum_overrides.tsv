@@ -61,4 +61,6 @@ ignore			īew				Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model
 ignore			e-to-i				Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:77	English label for the early raising process, not a Proto-Germanic reconstruction.
 ignore			reconstruction				Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:39	Ordinary English description of the unchanged PGmc reconstruction, not a reconstructed lexical form.
 ignore			*s*k*á*w*ō*θ				Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:36	Explicit token-separated intermediate checkpoint demonstrating prior final-i loss; not a separately quoted reconstructed lexical form.
-ignore			a+a				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:70	Adjacent-vowel sequence used to discuss hypothetical hiatus resolution, not a lexical form.
+ignore			a+a				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:72	Adjacent-vowel sequence used to discuss hypothetical hiatus resolution, not a lexical form.
+ignore			*wér-àldu				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:185	Mechanical initial-lowering checkpoint in the provisional formal projection, not an independently sourced stage citation.
+ignore			*wér-uldu				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:186	Mechanical raising checkpoint in the provisional formal projection, not an independently sourced stage citation.

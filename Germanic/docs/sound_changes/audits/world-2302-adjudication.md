@@ -4,8 +4,12 @@
 
 - Lexical identity: row2302, *world* → Old English *weorold*.
 - Related SC: SC036 `OEInterStressRaising`; no independent SC037 adjudication.
-- Date / branch / base: 26 October 2026 / `update` /
-  `6b2baf5f88af8a3c7702628bb3376c53c466e2a6`.
+- Date / branch / follow-up base: 26 October 2026 / `update` /
+  `61a0d67ef02a8da681ab21fba741b0ad63ea0a95`.
+- The first investigation used `6b2baf5f88af8a3c7702628bb3376c53c466e2a6`.
+  Its receipt and closeout remain historical records. This follow-up
+  supersedes any inference that analogy has been demonstrated necessary
+  or that the earlier rounding-only experiment refuted an *o* stage.
 - This scoped lexical supplement does not replace the accepted
   [SC036 adjudication](sc036-adjudication.md) or its registry ownership.
 
@@ -27,8 +31,10 @@ raising law. Its executable and chronology are retained. The row selects
 `*wír-àldu`, target `weorold`, class `early_analogy`; comparative PROTO is
 `*wíra-àldiz`. The stage record explicitly marks a transponent, not an
 independently reconstructible PGmc word containing all those features together.
-The old row NOTE, stage evidence's printed-p.341 locator and research memo
-contain superseded explanations.
+The first investigation already corrected the row NOTE, printed-p.341
+locator and research memo. The outstanding issue is the necessity of the
+analogical input, not whether a transponent may use the PGmc input system.
+It may; no metadata redesign is at issue.
 
 The mappings `a → u` and `à → u` share the following context:
 `PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - j]+ [u|ū]`.
@@ -50,7 +56,7 @@ apocope `*w*éo*r*u*l*d` → late medial lowering `*w*éo*r*o*l*d` →
 Soul's observed firing `*s*ā*w*a*l*u → *s*ā*w*u*l*u` is recorded solely
 as a protected-population check; its history is not reopened.
 
-The [new full-cascade receipt](world-2302-experiments/evidence.json) records
+The [first full-cascade receipt](world-2302-experiments/evidence.json) records
 the complete canonical build manifest, source/corpus fingerprints, coordinates,
 every changing candidate stage, component probes, intermediate differences,
 all final deltas and169 protected-file hashes checked before/after execution.
@@ -60,6 +66,16 @@ i-stem rejection remains an immutable receipt, not a complete-cascade result:
 the present complete-cascade i-stem candidates are accepted and yield
 `wereald`. Unsupported paradigm shapes rejected by `EnglishProtoInput`
 are explicitly distinguished from incorrect phonological predictions.
+
+The separate [follow-up receipt](world-2302-experiments/reassessment.json)
+tests the six requested families through14 complete-cascade configurations,
+18 candidate inputs and six paradigm comparisons each, plus23 component
+probes. It preserves172 protected files, including the earlier receipt,
+canonical sources/bins and baseline directory. Every production-row
+intermediate/final difference is recorded, with380 membership joined by
+stable identity; unchanged rows are not additional historical evidence.
+The incremental identity again agrees with production and all named
+cumulative snapshots.
 
 ## Literature
 
@@ -79,6 +95,25 @@ The complete Fulk2018 holding was verified and §§2.2, 5.6, 7.14–15,
 7.22–23 reconsulted. Acquisition, rights, extraction defects and exact
 page maps are documented in the [intake record](../../../../docs/references/world_2026-10-26/README.md).
 No full copyrighted source or page image is published.
+
+The follow-up reads Čermák2005 completely, pp.35–45, and Sauer1992
+selectively, pp.68–73,85–92,345–358. Čermák pp.36,39 and Sauer
+pp.68,90,354,356 were image-checked. Čermák's *world* row is type B,
+medial-vowel loss, not type A second-member weakening; its possible
+*-eld* reinterpretation is interrogative and gives no primary-text
+locator for *world*. Sauer p.90 contrasts OE feminine genitive
+*worulde* with ME genitive-*s* and *Poema Morale* variants. This
+supports later inflectional restructuring, not a prehistoric shift.
+Neither source supplies new evidence for the following-*u* condition.
+
+Campbell §338, Luick §113, Bülbring §§366–367, Hogg §§6.4–7 and
+Ringe–Taylor pp.202,326 were reconsulted, alongside the comparative
+dictionary passages and Fulk's paradigm discussion. Luick pp.125–126
+(sheets141–142) and Hogg's held2011 pp.217–218 (sheets230–231)
+were additionally checked as original pages. Luick's lost OCR *l* in
+“before *l*” is recoverable in the image; his uncertainty about the
+boundary between *o* and *u* outcomes is explicit. Bülbring is newly
+reconsulted as retained text, not claimed newly image-verified.
 
 ### Ranked comparative reconstruction and paradigm ledger
 
@@ -139,15 +174,25 @@ candidate for future fuller paradigm work, not a fabricated fully regular
 selected cell. Fulk2010's conservative-Mercian method supports this caution;
 its neuter *hēafud* paradigms cannot simply be transferred to this feminine.
 
-The defensible interval is relative, not a calendar date: after formation of
-an inherited i-stem compound and, in the u-conditioned analysis, before the
-particular post-reclassification *-u* path feeding weak medial vocalism.
+If an analogical input is selected, its defensible interval is relative,
+not a calendar date: after formation of an inherited i-stem compound and,
+in the u-conditioned analysis, before the particular post-reclassification
+*-u* path feeding weak medial vocalism.
 Reassignment could supply an already productive *-u* after SC019, or an
 earlier *-ō* before SC019. No independent evidence chooses between those
 placements for this word. Nor does lack of nominative umlaut settle it.
 Retaining `early_analogy` describes preparation of the selected input before
 its modelled regular tail, not a proven pan-Germanic date or wholesale
 replacement of the documented OE paradigm.
+
+This does not establish that the selected conservative cell requires an
+analogical stem. Campbell's endingless accusative is the best actual
+conservative-cell lead; its stem history still needs assessment. The
+comparative i-stem nominative is the best presently accepted full-start
+experimental comparator. No complete source-backed input/output cell pair
+with a demonstrated uninterrupted regular history is selected in its place.
+Parser rejection of the schematic nasal accusative is a coverage gap,
+not evidence against its historical regularity.
 
 ## Historical analysis
 
@@ -204,13 +249,54 @@ No dialect-specific production branch or late-world syncope is added.
 
 ### Historical phenomenon versus executable alternatives
 
-The preferred scientific account remains a weak-vocalism history with
-reclassification and reduced compound transparency; the current narrow
-u-conditioned proxy does not exhaust the broader rounding evidence.
-The complete-cascade assay tests seven models,12 mandatory candidates
-each, six schematic paradigm comparisons each and eight component controls.
-The [experiment report](world-2302-experiments/README.md) lists every
-production-row delta and why none is adopted.
+The source-led account begins with an inherited compound, weakening of its
+second member and weak-vowel retraction/rounding. Partial class mixing is
+independently supported, but it need not precede that vocalism. Campbell
+§338 and Hogg §§6.4–7 distinguish weak retraction/rounding from ordinary
+breaking and protective secondary stress; Luick §113 explicitly questions
+whether Bülbring's following-*u* explanation covers the whole development.
+None establishes a uniform *o/u* boundary or a non-circular phonetic
+definition of the often descriptive “tertiary” stress category.
+
+Under the unchanged executable the inherited i-stem loses short *i* at
+exec8, loses final *z* at23, and misses SC036 at45. Stripping at47 gives
+medial *a*, fronting at51 gives *æ*, breaking at54 gives atomic *ea*:
+`wereald`. The decisive mismatch is not rejection or obligatory umlaut.
+A private pre-*lC* raising candidate, without following-*u* requirement,
+after51 instead gives *æ → u*, back mutation and later medial *u → o*:
+`weorold`. Inserting it while retaining the existing proxy elsewhere
+changes no selected final, including soul. This disproves computational
+necessity of the analogical ending; it does not prove the candidate law.
+
+The six requested families and14 new configurations are compared in the
+[experiment report](world-2302-experiments/README.md). The further
+rounding-only comparison matters: *o* introduced early later becomes *a*
+through `OEFinalUnstressedOLowering`, exec84. Its failure is not evidence
+that a historical rounded *o* stage was impossible. Further raising to *u*
+before back mutation succeeds, but no independent source dates that exact
+split sequence for this conservative cell.
+
+A bounded semantic discrepancy was also discovered in `OEBackMutation`.
+The current comma-separated definition shares its contexts: acute/plain
+*e* can mutate before liquid + *o* or *a*, despite the apparent *u*-only
+branches. Explicitly composing isolated *u*-only branches removes that
+behaviour while preserving the broad *æ* branch. The control changes no
+selected final. With the early *o*-only candidate it gives *werald* rather
+than *weorald*. Therefore the executable does not establish that only *u*
+can feed initial back mutation. This finding neither changes that rule nor
+reopens its historical adjudication; narrower ordinary WS conditioning and
+the exceptional treatment of *world* remain source questions.
+
+The strongest inherited candidate is consequently:
+inherited compact i-stem → early final-*i* loss → weak medial retraction/
+rounding and, conditionally, further raising → initial back mutation →
+late medial lowering → *weorold*. The compact junction and the exact
+rounding/raising domain still require independent justification. A formula
+changing every weak *a/æ* before *lC* does not distinguish ordinary weak
+vowels from former secondary-stressed vowels. Synthetic noncompound and
+twofold-shaped probes expose that breadth; *twifald/twifold* is not an
+attested *twifuld* or proof of a universal earlier high stage. This is a
+historical conditioning problem, not merely a missing parser shape.
 
 | Relation | Classification / reason |
 | --- | --- |
@@ -220,6 +306,9 @@ production-row delta and why none is adopted.
 | SC036 → SC040 | Modelled medial *u* precedes later *o*; broader source accounts do not force all dialectal *o* through *u* or local adjacency |
 | SC036 / SC037 / SC038 | Representation-sensitive feeding/bleeding of grave, not independent dates of stress loss and syncope |
 | i-stem apocope / umlaut | Model removes nominal short *i* early; absence of umlaut alone does not date reclassification |
+| exec51 fronting / exec54 breaking | Candidate must act before current breaking, or otherwise explain its nonapplication; not a newly dated historical edge |
+| medial rounding / back mutation | Conditional historical feeding; current shared contexts cannot establish an exclusively *u*-triggered dependency |
+| early *o* / exec84 final-o lowering | Model-local barrier for the o-only candidate; bypass changes seven selected outputs and is not a historical repair |
 
 No new `stage_entailed` or `independently_demonstrated` historical edge is
 proposed. Existing technical registry relations are preserved verbatim.
@@ -228,14 +317,22 @@ separate axes.
 
 ## Verdict
 
-REFORMULATE world explanation / RETAIN selected transponent, executable,
-target and class / DEFER a more ambitious stage or prosodic intervention.
-The inherited label and accents remain stable representations with explicit
-qualifications, not newly certified reconstructions. Weak medial behaviour
-and class divergence are supported; precise analogy date, contraction and
-stress-loss mechanism are not established sufficiently to replace the input.
-The earlier ō-stem candidate models an extra regular step, but its output
-does not supply the missing historical chronology.
+REFORMULATE the claim of necessary early analogy / DEFER adoption of a
+historically validated replacement sequence / RETAIN production input,
+target, class and executable provisionally. Early analogy is **compatible,
+not demonstrated necessary**. The comparative and OE evidence permits
+partial later mixing; the inherited successful candidate defeats using
+the incumbent rule's failure as a proof of early reclassification.
+
+The inherited explanation is now a genuine alternative, not dismissed
+because it fails the current following-*u* proxy. It is not adopted as a
+new exceptionless law because independent prosodic conditioning and the
+*o/u* boundary remain unresolved. Confidence C remains appropriate for
+the executable proxy; comparatively secure weak vocalism does not confer
+that confidence on a particular analogy date or input accent. Retaining
+the input is a conservative production hold, **not** a historical preference
+inferred from its successful output. No claim is made that all regular
+derivation opportunities have been exhausted.
 
 The following only restates the unchanged SC registry verdict:
 
@@ -245,24 +342,28 @@ The following only restates the unchanged SC registry verdict:
 
 | # | Decision | Evidential significance |
 | --- | --- | --- |
-| 1 | Retain comparative *wira-alđiz* tradition, with *weraldiz* alternative | Whole-compound *i/e* and CAPR accents remain qualified; Kroonen supports components |
-| 2 | PGmc PROTO distinct from mixed-stage selected *wír-àldu* | No unique historical date for all selected features together |
-| 3 | Retain early_analogy | Class remodelling supported; not proof of total paradigm replacement |
-| 4 | Linking-vowel absence remains pre-encoded | Literal hiatus fails; SC037 is not a contraction law |
-| 5 | Retain grave as model representation | Early-OE secondary prominence not asserted; no new stress-stripping law |
-| 6 | No SC036 executable modification | Broader rounding evidence not yet an exceptionless replacement domain |
-| 7 | No additional sound law or new ordering | No independent source-backed domain/date for a new operation |
-| 8 | Earlier *-ō* candidate adds SC019 only experimentally | Historical pre-SC019 analogy not established; production coverage unchanged |
-| 9 | No production output or chronology change |389 finals and migration-aware380 identities protected; no baseline adoption |
-| 10 | Residue remains explicit | Conservative accusative, *i/e*, composition resolution and stress-loss timing need further evidence |
+| 1 | Comparative i-stem *wira-alđiz* is the best inherited starting tradition | Exact *i/e*, compound junction and CAPR accentuation remain qualified; WGmc *wira-aldō* represents the alternative class history |
+| 2 | Conservative endingless accusative is the best actual cell lead | Compact inherited i-stem nominative is the strongest accepted experimental comparator; no complete regular replacement cell is yet selected |
+| 3 | Early analogy is not demonstrated necessary | The inherited candidate can succeed without following *u*; failure of current SC036 cannot prove the intervention |
+| 4 | No positive evidence requires an early interruption | Class divergence supports remodelling, not its date before weak vocalism; present transponent is permissible but only provisional |
+| 5 | Candidate inherited sequence extends regularity | Early final-i loss → weak medial rounding/further raising → back mutation → later lowering; exact domain is not certified |
+| 6 | Following-u is a defensible scholarly hypothesis, not the uniquely established history | Bülbring's account is expressly questioned by Luick; broader weak rounding does not require it |
+| 7 | Broader and two-stage accounts are genuine alternatives | Both can succeed; ordinary-weak/former-secondary distinction and o/u boundary are not independently formulated |
+| 8 | No production rule or chronology change adopted | SC019/analogy remains undated; back-mutation shared contexts and SC100 failure are explicit model diagnoses |
+| 9 | Grave is justified only as qualified representation of earlier compound accent | It is not proof of retained early-OE secondary prominence or weakened prosody at raising; no general stripping law established |
+| 10 | Compact junction is a separate input assumption | Comparative compact forms are plausible; literal hiatus failure neither refutes them nor licenses a special contraction rule |
+| 11 | Retain West Saxon weorold and the wider dialect cluster | Medial u/o/a and initial eo/o/ia are distinct; later world is syncope, not a third raising witness |
+| 12 | No transducer change | Choice6 provisional hold; neither new laws nor baseline adoption follows merely from successful output |
+| 13 | Historical obstacles are prosodic domain, o/u boundary, analogy and junction dates | Parser coverage gaps are separate; both new sources are read with bounded image verification and do not remove those obstacles |
+| 14 | Reader revised to foreground the historical alternatives | Necessity claim withdrawn; source-led inherited alternative and provisional formal projection are distinguished |
 
 ## Propagation (only after verdict)
 
 Authoritative new reasoning is here, with the claim ledger, provenance and
 reproducible experiment report. The mature world model/source ledger and only
-world-facing SC036 passages are corrected. The old memo receives an immediate
-supersession notice, preserving its historical text. Row NOTE and stage-evidence
-locator/qualification are editorial corrections only; no selected field,
+world-facing SC036 passages are corrected. The old memo retains its first-investigation
+supersession notice. That investigation's row NOTE and stage-evidence
+corrections are unchanged by this follow-up; no selected field,
 stage, variety, confidence, registry, Foma or chronology changes.
 The canonical `--refresh` owns all generated changes.
 
@@ -271,7 +372,8 @@ domains, positive/negative contexts, marker interactions, bibliography and
 exact preservation of scientific fields, registries and baselines. A fresh
 runtime replay compares all candidate traces and final deltas.
 Validation/publication results are recorded in the
-[closeout](world-2302-closeout.md), separately from this scientific verdict.
+[closeout](world-2302-closeout.md) for the first investigation and the
+follow-up section of the experiment report, separately from this verdict.
 
 ## Residue
 
@@ -286,3 +388,8 @@ Complete corrected diplomatic OCR is not claimed; Goering is a reflow,
 not a facsimile. Earlier retained-text-only source claims remain so unless
 the claim ledger records a particular original-page check.
 Soul and the independent SC037 adjudication remain outside this decision.
+The back-mutation shared-context finding is explicitly recorded, not
+silently repaired. No new manuscript paradigm, independently conditioned
+universal raising law or precisely dated compound stress-loss mechanism
+has been recovered. These are the limits of the present decision, not
+reasons to revive the withdrawn necessity claim.

@@ -22,6 +22,8 @@ Files downloaded after the scan are not silently certified by this receipt.
 | Britton1996 | supplied complete *English Historical Linguistics 1994* volume | `britton_1996_english_historical_linguistics` | all412 sheets; frontmatter separated from numbered body |
 | Hogg1996 | within Britton1996 | same volume, not a duplicate acquisition | sheets12--21; printed3--12 |
 | Minkova1996 | within Britton1996 | same volume, not a duplicate acquisition | sheets22--47; printed13--38 |
+| Cermak2005 | `Notes on Obscured Compounds in Old English_Čermák.pdf` | `cermak_2005_obscured_compounds` | all12 sheets; sheet1 blank, sheets2--12 printed35--45 |
+| Sauer1992 | supplied complete *Nominalkomposita im Frühmittelenglischen* | `sauer_1992_nominalkomposita` | all768 sheets; unnumbered sheets1--4, Roman V--XXVIII on5--28, body page = sheet minus28 |
 
 Original filenames, including the long Britton filename, are preserved in
 the private inventory. The supplied `fulk2010.pdf` is the complete19-page
@@ -29,8 +31,9 @@ article requested as `fulk2010(1).pdf`; the exact latter name was not found
 in today's Downloads scan. Neither the original nor existing holdings were
 overwritten. All four hashes are new against the pre-intake root PDF library.
 `holdings.tsv` records exact SHA256, PDF extent, article selection, complete
-text path and hash. Six bibliographic identities are registered, not six
-independent PDFs. Minkova's supplied printed title has singular
+text path and hash. The initial intake registered six bibliographic identities, not six
+independent PDFs. The bounded follow-up below adds two identities and
+two PDFs. Minkova's supplied printed title has singular
 “Reconstruction”; the bibliography follows that title.
 
 The full existing Fulk2018 PDF is438 sheets, SHA256
@@ -41,7 +44,7 @@ Downloads copies with that hash are duplicates, not new evidence.
 
 ## Preparation and verification
 
-From the repository root, after provision of the four named local PDFs:
+From the repository root, after provision of the six named local PDFs:
 
 ```sh
 python3 docs/references/world_2026-10-26/prepare_holdings.py
@@ -93,6 +96,51 @@ Fulk2022 is retained in full for the later separately authorized soul review.
 Its pp.15--17 argue against the handbook syncope-first account and propose
 retention plus later analogy. This is an accurately attributed source lead,
 not an adjudication or an alteration of the closed SC036 account.
+
+## Bounded follow-up: Čermák and Sauer
+
+The follow-up starts at research baseline
+`61a0d67ef02a8da681ab21fba741b0ad63ea0a95`. Only the two newly supplied
+Downloads holdings were added; the original 14-file scan was not repeated
+or retrospectively extended. Originals remain untouched; the PDF copies
+are byte-identical, with hashes in `holdings.tsv`. Exact supplied filenames
+and local locations are retained in the private follow-up acquisition
+record, `docs/references/local/world-2026-10-26/follow-up-acquisition.json`.
+The Čermák filename uses decomposed diacritics; this is a filename detail,
+not a difference in the scholarly identity. Sauer's printed title and
+copyright identify the 1992 Niemeyer edition, Buchreihe der Anglia30,
+print ISBN3-484-42130-4; the electronic filename's ISBN is not substituted.
+
+Čermák2005 has been read completely, printed35--45, including the table,
+references and endnotes. Original-page images36 and39 were checked.
+Table1's *world* versus *woruld, worold* is category B (medial-vowel loss),
+not category A (second-member weakening). The suffix *-eld* suggestion
+retains its question mark. The methodology on35--36 uses Bosworth--Toller
+and checks variant spellings against the DOE Corpus; the *world* row gives
+no word-specific primary-text locator or newly collated manuscript reading.
+Its typology is not independent evidence for prehistoric low-vowel raising.
+
+Sauer1992 has been read selectively: §2.3,68--73; §2.4.2.8,85--86;
+the inflectional/compound discussion87--92, especially *wor(u)ld* on90;
+§§4.5--4.5.6,345--356, with the continuation357--358 distinguishing
+later developments. This does not claim reading the whole monograph.
+Original-page images68,90,354 and356 were checked. Page90 confirms
+OE feminine *woruld*, genitive *worulde*, and later ME genitive-*s*
+variation, with *Poema Morale* manuscript variants. These are later
+morphological data, not evidence dating an early ō-stem shift or SC036.
+The stress discussion distinguishes lexical from verse prominence;
+the obscuration survey distinguishes multiple processes rather than
+establishing a single compound sound law. Printed p.352's
+*worleriche/worlepinge* concerns loss at a later compound junction,
+not prehistoric raising of the medial vowel of *world* itself.
+
+Both complete native extractions are searchable locally. Their diacritics,
+accent diagrams and tabular alignment are not certified diplomatic text.
+Sauer's embedded fonts produce repeated `Invalid Font Weight` diagnostics;
+the preparation command reports their distinct messages and count while
+checking all sheets and hashes. Images, not malformed text-layer symbols,
+control critical readings. Registration and reading do not prejudge the
+new historical/model comparison.
 
 ## Rights and availability
 

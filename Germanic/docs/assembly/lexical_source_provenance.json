@@ -156,7 +156,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md": "0b171bf7a7d889f0412555b6e6745204f8d07d70675b60c5737101b349e694c9",
     "Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md": "ad9c322cbe54c106094ffb925e956331034984298b685089708ce557f372a459",
     "Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md": "dd2c930561a1476458237584429f34763545167ff2d9c28fdf1763fa710f6fd5",
-    "Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md": "1ba1145cd11d9f7121789d3867ed8d700220011e68eb42a3591a37249455b915",
+    "Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md": "2ce1292da5ecd2022618c688193cbe768ad9c69ae843b093b050b16eb3bbcde8",
     "Germanic/docs/lexeme_reports/model_entries/2305-yarn-\u0121earn.model.md": "6274d3110dc6c430931f89e66d72c1b5ef533b3f7d486c9dd8ca1b0d55f2741a",
     "Germanic/docs/lexeme_reports/model_entries/2308-youth-\u0121eogu\u00fe.model.md": "9f13996ea0c3c1ca8dc978d77af43d0f3305fc5b4771caeb89fd768d7dabdff3",
     "Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md": "ad60c2e00f48382a582615a9e0aaa7802b2e0adea4d1efb7b594df79f5b008e8",
@@ -184,7 +184,7 @@
     "backend/oe_input_context.py": "d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67"
   },
   "outputs": {
-    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "c5d7b1ea9a900597dc398c8954ac2656f20c58f51b339f2a41c3b54a30607339",
+    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "350d8546f0b95e559ef7e09802b81fda0c54199201ecfac967730030bb471359",
     "Germanic/docs/assembly/manifest_all_by_class.tsv": "c120a0ec2d5890c8ec86a8e094347479011b8f2bc624de5ae7f9b010044e6616",
     "Germanic/docs/assembly/manifest_attested_variant.tsv": "6d67a7724f4a054af9eef1a2745bf13e43db6cc482f3906d4745f44232677c9d",
     "Germanic/docs/assembly/manifest_early_analogy.tsv": "3ed0afeb53563ca3a20eda95dc92479ff76e9a0e953b6ddb519337d382838cd9",

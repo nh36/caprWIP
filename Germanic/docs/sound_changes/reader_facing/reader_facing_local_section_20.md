@@ -3586,7 +3586,9 @@ Ringe and Taylor \emph{*weraldiz}, often transferred to the
 @RingeTaylor2014, p. 326].
 CAPR's selected \emph{*wír-àldu} is a mixed-stage transponent,
 not an independently attested Proto-Germanic form. The stem-class
-reassignment and the subsequent phonology are separate claims.
+reassignment and the subsequent phonology are separate claims;
+the medial vowel does not independently demonstrate that early analogy
+was necessary.
 
 The components are supported independently by Kroonen, but the exact
 compound vowel and accentuation are not thereby established.
@@ -3637,6 +3639,35 @@ The annotation belongs to the second root, not a linking vowel.
 The compact input presupposes the reduced compound junction;
 consonant-separated linking syncope does not independently explain
 resolution of a literal \emph{a+a} sequence.
+
+Čermák's classification of *world* concerns loss of the unstressed
+medial vowel, comparing *woruld/worold*, not the earlier rounding.
+His possible reinterpretation of the second element remains a suggestion.
+Sauer's feminine OE *worulde* beside later Middle English genitive-\emph{s}
+and manuscript variation concerns subsequent paradigm restructuring,
+not the date of prehistoric reclassification
+[@Cermak2005, pp. 36, 39; @Sauer1992, pp. 89--90, 354--356].
+
+An inherited i-stem is consequently a genuine historical alternative.
+In the unchanged cascade it loses final short \emph{i}, misses the
+following-\emph{u} proxy, and undergoes medial fronting and breaking.
+A broader pre-\emph{lC} raising candidate instead gives *weorold*
+without analogical \emph{-u}. Its success withdraws an argument from
+the incumbent rule's failure, but does not establish the candidate's
+exceptionless prosodic domain. Ordinary weak vowels and formerly
+secondary-stressed vowels cannot be distinguished merely by the plain
+or grave spelling of an input.
+
+Separate rounding and further raising are also possible: an early
+\emph{o}-only candidate fails later at
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering),
+whereas further raising to \emph{u} before back mutation succeeds.
+The current [SC059 OEBackMutation](#rule-OEBackMutation) also accepts
+\emph{o} as a trigger for initial \emph{e}; its shared formal contexts
+do not establish an exclusively \emph{u}-conditioned feeding relation.
+No replacement of either rule is adopted here. The production input
+is retained provisionally, while the analogy's necessity and a uniquely
+conditioned inherited alternative remain unproved.
 
 #### The distinct history of soul
 

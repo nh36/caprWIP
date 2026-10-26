@@ -12,6 +12,12 @@ article-level text records within the latter volume. All new complete texts
 are local-only under `docs/references/local/world-2026-10-26/`.
 The detailed record distinguishes ingestion, reading, page-image checking,
 reflow pagination and typography limits. The full Fulk2018 holding is reused.
+The bounded follow-up adds `Cermak2005` (complete35--45,12 PDF sheets)
+and `Sauer1992` (complete768-sheet holding, selectively read68--73,
+85--92 and345--358). Their texts, original PDFs and exact supplied-file
+provenance remain ignored locally. The acquisition record identifies actual
+page-image checks and distinguishes later syncope/inflection from evidence
+for prehistoric raising.
 
 ## ga-/gi-/ge- intake (2026-10-25)
 

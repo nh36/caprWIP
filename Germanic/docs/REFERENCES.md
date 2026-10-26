@@ -98,6 +98,12 @@ Goering is a publisher reflow with print-page anchors, not a facsimile.
 Fulk2010's native extraction damages accent/quantity signs; use page images.
 Acquisition does not certify critical reading or adopt an author's analysis.
 The complete existing `Fulk2018` PDF and full Vision text are also available.
+The bounded follow-up registers `Cermak2005`, *Notes on Obscured Compounds
+in Old English*,35--45 (complete article read), and `Sauer1992`,
+*Nominalkomposita im Frühmittelenglischen* (complete768-sheet holding;
+targeted reading68--73,85--92,345--358). Original printed-page maps,
+hashes and actual image-check limits are in the same acquisition record.
+Their later syncope and inflectional evidence does not itself date SC036.
 
 ### ga-/gi-/ge- acquisitions and next-round navigation
 

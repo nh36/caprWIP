@@ -2,6 +2,7 @@
 """Complete-cascade world candidates and private representation diagnostics."""
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -230,5 +231,226 @@ def run():
         component_inputs=PROBES, component_results=components, models=results)
 
 
+REASSESSMENT_BASE = "61a0d67ef02a8da681ab21fba741b0ad63ea0a95"
+REASSESSMENT_DEFINITIONS = """
+define WLow [{*a}|{*à}|{*æ}];
+define WLC [{*l} EnglishStarConsonant];
+define WToU Ctx([
+    WLow -> {*u} || PGmcStarVowel EnglishStarConsonant* _ WLC
+]);
+define WToO Ctx([
+    WLow -> {*o} || PGmcStarVowel EnglishStarConsonant* _ WLC
+]);
+define WOToU Ctx([
+    {*o} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ WLC
+]);
+define WOUOnly Ctx([
+    {*o} -> {*u} || PGmcStarVowel EnglishStarConsonant* _
+        [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
+]);
+define WBackU Ctx([
+    [{*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}]
+    .o.
+    [{*æ} -> {*ea} ||
+        _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger]
+    .o.
+    [{*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}]
+]);
+"""
+REASSESSMENT_PROBES = {
+    **PROBES,
+    "fronted-world-final": "*w*é*r*æ*l*d",
+    "fronted-world-before-u": "*w*é*r*æ*l*d*u",
+    "weak-l-without-cluster": "*w*é*r*æ*l*u",
+    "primary-fronted-before-l": "*w*æ*l*d",
+    "strong-accent-before-l": "*w*é*r*á*l*d",
+    "weak-noncompound-shaped": "*s*é*t*æ*l*d",
+    "twofold-shaped-weak": "*t*w*í*f*æ*l*d",
+    "twofold-shaped-grave": "*t*w*í*f*à*l*d",
+    "toward-shaped-weak": "*t*ō*w*æ*r*d",
+    "back-mutation-with-o": "*w*é*r*o*l*d",
+    "back-mutation-plain-e-o": "*w*e*r*o*l*d",
+    "back-mutation-with-a": "*w*é*r*a*l*d",
+    "back-mutation-with-u": "*w*é*r*u*l*d",
+    "back-mutation-fronted-a-o": "*w*æ*r*o*l*d",
+    "back-mutation-dental-control": "*w*é*t*o*l*d",
+}
+
+
+def reassessment_orders(order):
+    def after(sequence, anchor, extra):
+        result = list(sequence)
+        result[result.index(anchor) + 1:result.index(anchor) + 1] = [extra]
+        return result
+
+    no_raise = ["WNoop" if item == RAISE else item for item in order]
+    front = "EAFBrighteningUnstressed"
+    back = "OEBackMutation"
+    rounded = after(no_raise, front, "WToO")
+    models = {
+        "identity": list(order),
+        "C-early-high": ["WToU" if item == RAISE else item for item in order],
+        "C-postfront-high": after(no_raise, front, "WToU"),
+        "C-supplement-high": after(order, front, "WToU"),
+        "C-after-breaking": after(no_raise, "OEBreaking", "WToU"),
+        "D-rounded-only": rounded,
+        "D-rounded-then-high": after(rounded, "OEJClusterCoalescence", "WOToU"),
+        "D-high-before-u-only": after(rounded, "OEJClusterCoalescence", "WOUOnly"),
+    }
+    early_oraising = [item for item in rounded if item != "OEMedUnstressedORaising"]
+    models["D-existing-raising-earlier"] = after(
+        early_oraising, "OEJClusterCoalescence", "OEMedUnstressedORaising")
+    models["D-no-final-lowering"] = [
+        "WNoop" if item == "OEFinalUnstressedOLowering" else item
+        for item in rounded]
+    for name, sequence in (
+        ("back-u-only-control", order),
+        ("D-rounded-u-only-back", rounded),
+        ("D-high-u-only-back", models["D-rounded-then-high"]),
+    ):
+        models[name] = ["WBackU" if item == back else item for item in sequence]
+    early_strip = [item for item in order if item != STRIP]
+    models["F-global-strip-control"] = after(early_strip, "EnglishProtoInput", STRIP)
+    return models
+
+
+def run_reassessment():
+    runtime = layout()
+    if not runtime.is_container:
+        raise RuntimeError("Run the isolated reassessment inside the backend")
+    stages = oe_pipeline.stages()
+    errors = check_build_manifest(
+        oe_pipeline.expected_snapshot_bins() + ["old_english.bin"], runtime)
+    if errors:
+        raise RuntimeError("; ".join(errors))
+    order = [stage.inline_text if stage.kind == "inline" else stage.foma_identifier
+             for stage in stages]
+    models = reassessment_orders(order)
+    directory = runtime.docs_dir / "sound_changes/cascade_baseline"
+    protected = [
+        runtime.germanic_fst, runtime.sandbox_fst, runtime.corpus_tsv,
+        runtime.build_manifest,
+        runtime.data_dir / "entry_stage_metadata.tsv",
+        runtime.data_dir / "entry_context_metadata.tsv",
+        Path(__file__).with_name("evidence.json"),
+        *(runtime.bin_dir / name for name in
+          oe_pipeline.expected_snapshot_bins() + ["old_english.bin"]),
+        *(path for path in directory.iterdir() if path.is_file()),
+    ]
+    before = {str(path): digest(path) for path in protected}
+    rows = oe_pipeline.load_rows(runtime.corpus_tsv)
+    forms = [oe_pipeline.evaluation_input(row) for row in rows]
+    canonical = strict_apply(runtime.bin_dir / "old_english.bin", forms, "production")
+
+    def table(filename):
+        with (directory / filename).open() as handle:
+            return list(csv.DictReader(handle, delimiter="\t"))
+
+    legacy = {row["row_id"] for row in legacy_subset(
+        table("cascade_baseline_outputs.tsv"),
+        table("cascade_baseline_outputs_legacy380.tsv"),
+        table("approved_input_migrations.tsv"))}
+    candidates = list(dict.fromkeys([
+        *CANDIDATES, "*wír-aldiz", "*wér-aldiz",
+        "*wír-aldi", "*wír-àldi", "*wír-aldį", "*wír-àldį",
+    ]))
+    components = list(dict.fromkeys([
+        *(item for sequence in models.values() for item in sequence),
+        "WOToU", "WOUOnly", "WToO", "WToU", "WBackU",
+    ]))
+    definitions = DEFINITIONS + REASSESSMENT_DEFINITIONS
+    recipe = dict(
+        definitions=definitions, insert_after="", insert_rule="", replace={},
+        component_checks=[dict(component=item) for item in components])
+    results, baseline_states = {}, {}
+
+    def differences(old, new):
+        return [
+            dict(row_id=row["row_id"], concept=row["concept"],
+                 existing=a, candidate=b, target=row["counterpart"],
+                 legacy380_identity=row["row_id"] in legacy)
+            for row, a, b in zip(rows, old, new) if a != b]
+
+    with tempfile.TemporaryDirectory(prefix="capr_world2_") as temporary:
+        bins = compile_isolated(
+            runtime.germanic_fst, recipe, [], Path(temporary), components_only=True)
+        for name, sequence in models.items():
+            print("reassessment " + name, file=sys.stderr, flush=True)
+            states = list(forms)
+            changes, firings = [], []
+            focal = {identifier: [] for identifier in ("2302", "2201", "2148")}
+            for step, identifier in enumerate(sequence, 1):
+                previous = states
+                states = strict_apply(bins["component:" + identifier], states,
+                                      name + ":" + identifier)
+                if name == "identity":
+                    baseline_states[identifier] = states
+                    stage = stages[step - 1]
+                    if stage.kind == "named" and states != strict_apply(
+                            runtime.bin_dir / stage.snapshot_bin, forms, identifier):
+                        raise RuntimeError("Canonical snapshot differs: " + identifier)
+                    if identifier == RAISE:
+                        firings = differences(previous, states)
+                elif identifier in baseline_states:
+                    deltas = differences(baseline_states[identifier], states)
+                    if deltas:
+                        changes.append(dict(step=step, stage=identifier, rows=deltas))
+                for row, a, b in zip(rows, previous, states):
+                    if row["row_id"] in focal and a != b:
+                        focal[row["row_id"]].append(dict(
+                            step=step, stage=identifier, pre=a, post=b))
+            if name == "identity" and states != canonical:
+                raise RuntimeError("Incremental identity differs from production")
+            results[name] = dict(
+                order=sequence, firings=firings, focal_traces=focal,
+                intermediate_differences=changes,
+                final_differences=differences(canonical, states),
+                full_cascade_candidates=[
+                    candidate_trace(bins, sequence, raw) for raw in candidates],
+                paradigm_comparisons={
+                    label: candidate_trace(bins, sequence, raw)
+                    for label, raw in PARADIGM_CANDIDATES.items()})
+        controls = {
+            identifier: dict(zip(REASSESSMENT_PROBES, strict_apply(
+                bins["component:" + identifier], list(REASSESSMENT_PROBES.values()),
+                identifier)))
+            for identifier in (
+                RAISE, SYNCOPE, STRIP, "WToU", "WToO", "WOToU", "WOUOnly",
+                "OEBackMutation", "WBackU", "OEMedUnstressedORaising",
+                "OEFinalUnstressedOLowering")}
+    if before != {str(path): digest(path) for path in protected}:
+        raise RuntimeError("Reassessment altered protected sources, bins or receipts")
+    return dict(
+        base_commit=REASSESSMENT_BASE, source_sha256=digest(runtime.germanic_fst),
+        corpus_sha256=digest(runtime.corpus_tsv),
+        prior_receipt_sha256=digest(Path(__file__).with_name("evidence.json")),
+        selected_rows=len(rows), legacy380_identities=len(legacy),
+        protected_files_unchanged=len(before),
+        identity_incremental_all_snapshots_agree=True,
+        build_manifest=json.loads(runtime.build_manifest.read_text()),
+        definitions=definitions, component_inputs=REASSESSMENT_PROBES,
+        component_results=controls,
+        coordinates=[dict(identifier=stage.foma_identifier,
+                          exec_index=stage.exec_index,
+                          cascade_position=stage.cascade_position)
+                     for stage in stages],
+        families={
+            "A": dict(model="identity", input="*wír-àldu"),
+            "B": dict(model="identity", inputs=["*wír-àldiz", "*wír-aldi"]),
+            "C": dict(models=[name for name in models if name.startswith("C-")],
+                      inputs=["*wír-àldiz", "*wír-aldi"]),
+            "D": dict(models=[name for name in models if name.startswith("D-")],
+                      inputs=["*wír-àldiz", "*wír-aldi", "*wír-àldō"]),
+            "E": dict(models=[name for name in models if not name.startswith("F-")],
+                      inputs=["*wír-àldō", "*wír-aldō"]),
+            "F": dict(models=["identity", "F-global-strip-control"],
+                      inputs=["*wír-àldu", "*wír-aldu"]),
+        }, models=results)
+
+
 if __name__ == "__main__":
-    print(json.dumps(run(), ensure_ascii=False, indent=2))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--reassessment", action="store_true")
+    args = parser.parse_args()
+    print(json.dumps(run_reassessment() if args.reassessment else run(),
+                     ensure_ascii=False, indent=2))
