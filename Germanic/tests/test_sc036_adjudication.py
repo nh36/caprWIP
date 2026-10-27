@@ -46,10 +46,17 @@ def test_only_sc036_and_its_explicit_branches_changed():
                 oe_pipeline._define_bodies(oe_pipeline._strip_comments(text)).items()}
 
     current, old = definitions(source), definitions(base)
-    assert current.keys() - old.keys() == {"OELHWeakRaising", "OESoulProxy"}
+    # The input-gate extension (audits/lexical-witnesses-2335-2336,
+    # commit 7d79e179) is adjudicated separately and pinned exactly by
+    # test_lexical_witness_input_gate.py; relative to SC036's base it
+    # adds pgrmInputTailVowel and rewires the two gate defines below.
+    gate_added = {"pgrmInputTailVowel"}
+    gate_changed = {"pgrmSimpleWord", "pgrmCompoundSecond"}
+    assert current.keys() - old.keys() == (
+        {"OELHWeakRaising", "OESoulProxy"} | gate_added)
     assert old.keys() <= current.keys()
-    assert {name for name in old if old[name] != current[name]} == {
-        "OEInterStressRaising", "EnglishProtoToOE"}
+    assert {name for name in old if old[name] != current[name]} == (
+        {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed)
     assert current["OEInterStressRaising"] == (
         "[OELHWeakRaising.o.OESoulProxy]")
 

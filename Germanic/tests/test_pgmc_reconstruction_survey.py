@@ -3624,8 +3624,11 @@ class LiveSurveyTests(unittest.TestCase):
         self.assertIn("consultation mode", readme)
         self.assertIn("review_targets.tsv", readme)
         self.assertIn("Cartesian workload is obsolete", readme)
-        self.assertEqual(len(sources), 92)
-        self.assertEqual(sum(row["role"] != "excluded" for row in sources), 83)
+        # 93 catalogued sources (92 + Barrack1975, registered in
+        # commit 7d79e179 as a case_triggered reconstruction holding).
+        self.assertEqual(len(sources), 93)
+        self.assertEqual(len({row["source_key"] for row in sources}), 93)
+        self.assertEqual(sum(row["role"] != "excluded" for row in sources), 84)
         self.assertTrue(all(row["consultation_mode"] and row["payoff"] for row in sources))
         self.assertEqual(
             {row["source_key"] for row in sources if row["consultation_mode"] == "core_dictionary"},
