@@ -23,6 +23,7 @@ under `Germanic/docs/sound_changes/audits/`.
 | `barrack_to_capr.tsv` | Complete reverse index: all 231 Barrack headings dispositioned against CAPR with a controlled classification (EQUIVALENT_REPRESENTED / REPRESENTED_DIFFERENT_CONDITIONING / PARTIALLY_REPRESENTED / PLAUSIBLE_MISSING / ALTERNATIVE_ACCOUNT / FORMAL_NOT_HISTORICAL / OUT_OF_SCOPE / HISTORICALLY_DOUBTFUL / UNRESOLVED), confidence, and recommended disposition. 38 rows remain visibly `UNRESOLVED`; nothing is silently classified as covered. |
 | `citation_ledger.tsv` | Per-SC citation placement ledger, fully reconciled: 12 `CITED_OK` (page-precise citations already in reader prose), 23 `CITE_WARRANTED`, 32 `CHAPTER_LEVEL`, 24 `NO_CITATION_NEEDED` (with reasons), 6 `DEFER_TO_ADJUDICATION`. |
 | `quality_control_report.md` | Second-pass QC findings: substantive description errors corrected (331.6a, 404b/c/d, 400z, 406, 409, 422, 475b, 480.1), propagation audit, 600 dpi p. 136 chart re-read, remaining uncertainty, and backlog changes. |
+| `research_agenda.md` | Evidence-ranked queue of the remaining Barrack-related investigations, prepared after the SC087 adjudication (RETAIN); names the SCs, Barrack rules, diagnostic lexemes and required tests per item. |
 
 ## How to read Barrack's apparatus
 
