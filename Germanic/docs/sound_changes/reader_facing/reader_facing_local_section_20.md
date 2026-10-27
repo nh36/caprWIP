@@ -244,7 +244,9 @@ retention of final \emph{*z} appear as rules 404a--e
 [@Barrack1975, pp. 101--102], and the final-syllable reductions as the 331
 series, including final \emph{*a} syncope as West Germanic rule 331.4b
 [@Barrack1975, p. 78]. He grades the evidence candidly — the material for
-404b he calls "very sporadic", citing \emph{mēd} beside \emph{meord} 'reward'
+404b, which deletes the rhotic before a voiced dental with compensatory
+lengthening to derive \emph{mēd} 'reward', he calls "very sporadic", and he
+refers the rival development that yields \emph{meord} to his rule 139zc
 [@Barrack1975, pp. 101--102] — and his orderings among these rules are
 formal rather than chronological [@Barrack1975, p. 34]. The crosswalk in the
 Barrack dossier records where these statements agree with, and where they
@@ -2166,7 +2168,7 @@ Bammesberger states that Germanic \emph{*z} yielded \emph{*r} in intervocalic po
 
 The internal identifier [SC003 EAFRhotacism](#rule-EAFRhotacism) places the change in CAPR's Early Anglo-Frisian corridor, the operational post-Proto-West-Germanic stage on the English line; historically the change is a West Germanic rhotacism, later than Proto-Germanic. It is also distinct from [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
 
-Barrack states the same complex as his 404 family: \emph{*z} becomes a rhotic R as Proto-Germanic rule 404a [@Barrack1975, p. 101], and R becomes \emph{r} as West Germanic rule 404e [@Barrack1975, p. 102], with the deletions of R stated between them. His two-step treatment, in which an intermediate rhotic persists while the deletions apply, is structurally parallel to the ordering argument from Crist adopted here, though he assigns the first step to Proto-Germanic where Ringe and Taylor argue for independent Norse and West Germanic mergers. He also registers the retained-sibilant residue directly relevant to this rule's \emph{meorde} witness: his rule 404b, which he grades as resting on "very sporadic" evidence, covers the \emph{mēd}/\emph{meord} 'reward' doublet [@Barrack1975, pp. 101--102]. His orderings are formal, not chronological [@Barrack1975, p. 34].
+Barrack states the same complex as his 404 family: \emph{*z} becomes a rhotic R as Proto-Germanic rule 404a [@Barrack1975, p. 101], and R becomes \emph{r} as West Germanic rule 404e [@Barrack1975, p. 102], with the deletions of R stated between them. His two-step treatment, in which an intermediate rhotic persists while the deletions apply, is structurally parallel to the ordering argument from Crist adopted here, though he assigns the first step to Proto-Germanic where Ringe and Taylor argue for independent Norse and West Germanic mergers. He also registers the material directly relevant to this rule's \emph{meorde} witness: his rule 404b, which he grades as resting on "very sporadic" evidence, deletes the rhotic before a voiced dental with compensatory lengthening and so derives \emph{mēd} 'reward', while the alternate development that yields \emph{meord} is referred to his rule 139zc [@Barrack1975, pp. 101--102]. His orderings are formal, not chronological [@Barrack1975, p. 34].
 
 ### SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism}
 

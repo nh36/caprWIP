@@ -17,10 +17,12 @@ under `Germanic/docs/sound_changes/audits/`.
 
 | File | Contents |
 | --- | --- |
-| `rule_census.tsv` | 231 rule headings transcribed visually from printed pp. 38–127, one row per heading, with change summary, conditioning, dialect/geography, exceptions, cited word forms, ordering claims, and legibility grade. |
-| `ocr_reconciliation.tsv` | Disposition of all 211 OCR heading candidates (208 `VERIFIED_ON_PAGE`, 1 `RELOCATED`, 2 `FALSE_POSITIVE`) plus 23 headings present in print but missing from the OCR list (`ADDED_BY_VISUAL_CENSUS`). |
-| `capr_crosswalk.tsv` | 97-row bidirectional crosswalk between CAPR reader entries (all five chapters) and Barrack rule loci. Every row is tranche-derived and pending per-SC adjudication; none is a finding. |
-| `citation_ledger.tsv` | Per-SC citation placement ledger. `final_action` is `CITED` only where a reader-facing file now carries a verified page-precise Barrack citation; everything else is `UNRESOLVED`. |
+| `rule_census.tsv` | 231 rule headings transcribed visually from printed pp. 38–127, one row per heading, with change summary, conditioning, dialect/geography, exceptions, cited word forms, ordering claims, and legibility grade. Second-pass QC against 300 dpi renders completed; see `quality_control_report.md`. |
+| `ocr_reconciliation.tsv` | Disposition of all 211 OCR heading candidates (208 `VERIFIED_ON_PAGE`, 1 `RELOCATED`, 2 `FALSE_POSITIVE`) plus 23 headings present in print but missing from the OCR list (`ADDED_BY_VISUAL_CENSUS`). Printed "PG 311.4a" (p. 77) is the book's own misprint for 331.4a (`VERIFIED_PRINT_MISPRINT`). |
+| `capr_crosswalk.tsv` | 97-row crosswalk from CAPR reader entries (all five chapters) to Barrack rule loci. Every row is tranche-derived and pending per-SC adjudication; none is a finding. |
+| `barrack_to_capr.tsv` | Complete reverse index: all 231 Barrack headings dispositioned against CAPR with a controlled classification (EQUIVALENT_REPRESENTED / REPRESENTED_DIFFERENT_CONDITIONING / PARTIALLY_REPRESENTED / PLAUSIBLE_MISSING / ALTERNATIVE_ACCOUNT / FORMAL_NOT_HISTORICAL / OUT_OF_SCOPE / HISTORICALLY_DOUBTFUL / UNRESOLVED), confidence, and recommended disposition. 38 rows remain visibly `UNRESOLVED`; nothing is silently classified as covered. |
+| `citation_ledger.tsv` | Per-SC citation placement ledger, fully reconciled: 12 `CITED_OK` (page-precise citations already in reader prose), 23 `CITE_WARRANTED`, 32 `CHAPTER_LEVEL`, 24 `NO_CITATION_NEEDED` (with reasons), 6 `DEFER_TO_ADJUDICATION`. |
+| `quality_control_report.md` | Second-pass QC findings: substantive description errors corrected (331.6a, 404b/c/d, 400z, 406, 409, 422, 475b, 480.1), propagation audit, 600 dpi p. 136 chart re-read, remaining uncertainty, and backlog changes. |
 
 ## How to read Barrack's apparatus
 
@@ -93,18 +95,21 @@ and keeps matrix detail only in summary form.
   checked resolves to a census heading (including *meord* 139zc).
 - Known legibility limits: pp. 38–47 carry dense feature matrices and
   several census rows there are graded PARTIAL (glyph-level statements
-  are secure; matrix internals are not). The interior arrows of the
-  p. 136 ordering chart are not reliably legible at 150 dpi; the
-  perimeter labels are. Any future use of chart edges requires a
-  higher-resolution re-read and must still clear the
-  no-chronology-from-ordering rule above.
+  are secure; matrix internals are not). The p. 136 ordering chart was
+  re-read at 600 dpi: perimeter labels and rim-adjacent arcs are now
+  legible, but the interior chords remain unresolvable, so no ordering
+  edge has been inferred from the chart (see
+  `quality_control_report.md` §3), and chart edges would in any case
+  still have to clear the no-chronology-from-ordering rule above.
 
 ## Status and next steps
 
 Workstream A (census) and Workstream B (bibliography, navigation,
 chapter-intro context, targeted reader citations) are complete on this
-branch. Remaining research items live in the handoff backlog; the
-recommended first per-SC adjudication is SC087 (r-metathesis) against
-Barrack 459.1 (pp. 115–117), which records dialect-order variation
-between breaking and metathesis (157 > 170a > 459.1) directly relevant
-to its conditioning.
+branch, and the second-pass QC, complete reverse index, and citation
+reconciliation are recorded in this dossier. The authorized first
+per-SC adjudication is SC087 (r-metathesis) against Barrack 459.1/459.3
+(pp. 115–117); its record lives under
+`Germanic/docs/sound_changes/audits/`. Subsequent research items are
+queued from `barrack_to_capr.tsv` dispositions (`RESEARCH_QUEUE`,
+`VERIFY_SOURCE`) and the `CITE_WARRANTED`/`CHAPTER_LEVEL` ledger rows.

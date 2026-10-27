@@ -1,0 +1,232 @@
+barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	confidence	recommended_disposition
+71	PG	38-39 (continues)	SC038;SC113	PARTIALLY_REPRESENTED	Compound/composition accent reduction; CAPR encodes stress lexically and strips secondary stress (SC038) with pretonic annotation (SC113)	medium	NO_ACTION
+72	PG	39-40 (continues)	-	FORMAL_NOT_HISTORICAL	Cross-boundary stress-reduction alpha rule; accent notation machinery, CAPR encodes accent in reconstructed inputs	medium	NO_ACTION
+88		40	-	FORMAL_NOT_HISTORICAL	Accentual assimilation bookkeeping within Barrack’s accent framework, not a segmental sound law	high	NO_ACTION
+100.2	PG	40	-	FORMAL_NOT_HISTORICAL	Pre-PGmc resolution of syllabic sonorants (u-insertion); already resolved in CAPR’s PGmc lexical inputs	high	NO_ACTION
+112	PG	40-41 (continues)	SC052;SC057	PARTIALLY_REPRESENTED	General regressive alpha assimilation; CAPR has specific cluster rules rather than one schema	medium	RESEARCH_QUEUE
+114	NWG	41	SC015	ALTERNATIVE_ACCOUNT	Sporadic alpha assimilation overlapping CAPR’s consonant-conditioned i-lowering; major theory disagreement flagged in crosswalk	medium	RESEARCH_QUEUE
+115	NWG	42	SC017	REPRESENTED_DIFFERENT_CONDITIONING	Raising/fronting in nasal environment; CAPR SC017 u-lowering core match with domain debate	medium	RESEARCH_QUEUE
+117	WG	42	-	PLAUSIBLE_MISSING	WG *ēm → īm raising before m; no CAPR counterpart; relevant to SC005-family early-vowel review	low	RESEARCH_QUEUE
+119	PG	42-43 (continues)	SC103;SC026;SC027	EQUIVALENT_REPRESENTED	Nasal loss before h/x with nasalization; matches SC103 plus the nasal-spirant law pair	high	NO_ACTION
+120.1	WG	43	SC031;SC029	REPRESENTED_DIFFERENT_CONDITIONING	Vww/ij resolution; CAPR splits into awwj resolution and ww simplification	medium	NO_ACTION
+120.2z		43-44 (continues)	SC031	PARTIALLY_REPRESENTED	Lowering adjustment after i/e-vowels; partially inside CAPR glide-sequence rules	low	VERIFY_SOURCE
+120.3	WG	44	SC031;SC102;SC111	PARTIALLY_REPRESENTED	Final vowel syllabification; overlaps hiatus-w and endingless-aw fragments	medium	NO_ACTION
+121	Ing.	44	-	OUT_OF_SCOPE	Ingvaeonic fricative voicing; subphonemic allophony invisible in the OE orthographic target	medium	NO_ACTION
+122a	Ing.	45	SC018	REPRESENTED_DIFFERENT_CONDITIONING	High-vowel raising before word boundary; related to stressed monosyllable o-raising but not identical	medium	NO_ACTION
+122b	Ing.	45	-	UNRESOLVED	Reduction of labiovelar sequence to high vowel; census summary too thin to classify securely	low	VERIFY_SOURCE
+123	NWG	45	SC015;SC017;SC076	REPRESENTED_DIFFERENT_CONDITIONING	Unstressed loss of high feature; CAPR distributes across i/u-lowering and pretonic reduction	medium	RESEARCH_QUEUE
+124	WG	45-46 (continues)	-	UNRESOLVED	*āRdi raising/assimilation; cited by 404d/e for sporadicity commentary; needs original-source re-reading	low	VERIFY_SOURCE
+128		46	SC043;SC101	EQUIVALENT_REPRESENTED	First step of a-fronting except before nasals; CAPR states brightening as one law (SC043), long-vowel side SC101	high	NO_ACTION
+129za	NWG	46	SC024	EQUIVALENT_REPRESENTED	IE *ē₁ → ā lowering; direct match with noted vowel-value debate	high	NO_ACTION
+129zb	PG	46-47 (continues)	-	FORMAL_NOT_HISTORICAL	PGmc-internal *ei monophthongization; precedes CAPR’s PGmc input stage (inputs already have ī/ē)	medium	NO_ACTION
+130a		47	SC025;SC104	REPRESENTED_DIFFERENT_CONDITIONING	Nasal rounding/backing of long low vowel; CAPR decomposes more strongly	high	NO_ACTION
+130b		47	SC025;SC104	PARTIALLY_REPRESENTED	Continuation of nasal-a rounding complex	medium	NO_ACTION
+130c		48	SC104	PARTIALLY_REPRESENTED	Late stage of nasalized-a development; NB 459.1 x > 130c ordering claim matters for SC087	medium	ADJUDICATION_INPUT_SC087
+130z		48	-	FORMAL_NOT_HISTORICAL	Barrack’s alternative formalization of the fronting/rounding complex	medium	NO_ACTION
+131		49	SC043	EQUIVALENT_REPRESENTED	Second step of short-a fronting except before nasals; jointly with 128 equals CAPR brightening	high	NO_ACTION
+134		49	SC004	EQUIVALENT_REPRESENTED	Stressed *ai monophthongization; matches SC004 with stage framing differences	high	NO_ACTION
+135a		49-50 (continues)	SC030;SC032	REPRESENTED_DIFFERENT_CONDITIONING	*au development to æo-type diphthong; CAPR au-brightening plus diphthong realization	medium	NO_ACTION
+135b		49	SC034	PARTIALLY_REPRESENTED	ǣ/ē/ǣa sequence development; CAPR has only a retained proxy	low	RESEARCH_QUEUE
+136		50	SC032;SC033;SC029	PARTIALLY_REPRESENTED	Diphthongal development; spread across CAPR technical diphthong rules	medium	NO_ACTION
+139za	PG	50	SC085;SC045	PARTIALLY_REPRESENTED	Intervocalic *x → h; CAPR models later h-loss and palatal articulation separately	medium	NO_ACTION
+139zb		51	SC044	ALTERNATIVE_ACCOUNT	Pharyngealization of *h as abstract breaking trigger; competing mechanism for OE breaking	medium	CHAPTER_DISCUSSION
+139zc		51-53 (continues)	SC044;SC003	ALTERNATIVE_ACCOUNT	Liquid pharyngealization; alternate meord development and breaking trigger; already cited at SC003	medium	NO_ACTION_CITED
+142		53	SC030	REPRESENTED_DIFFERENT_CONDITIONING	*æw retraction; adjacent to CAPR au-brightening complex	medium	NO_ACTION
+143a		53-54 (continues)	SC044	REPRESENTED_DIFFERENT_CONDITIONING	Breaking-type diphthongization before covered consonant; CAPR states breaking as one law	medium	NO_ACTION
+143b		54	SC044;SC056	REPRESENTED_DIFFERENT_CONDITIONING	WS/Kentish diphthongization and rounding variant of breaking	medium	NO_ACTION
+146a		55	SC044	REPRESENTED_DIFFERENT_CONDITIONING	WS breaking subcase; CAPR SC044 covers the complex	medium	NO_ACTION
+146b		55	SC044	REPRESENTED_DIFFERENT_CONDITIONING	WS-conditioned breaking subcase	medium	NO_ACTION
+146c		56	SC044	REPRESENTED_DIFFERENT_CONDITIONING	Breaking variant noted as less prevalent in WS; dialect gradient recorded	medium	NO_ACTION
+146d		56	SC044;SC087	REPRESENTED_DIFFERENT_CONDITIONING	WS breaking before r; its ordering against 459.1 is central to the r-metathesis question	high	ADJUDICATION_INPUT_SC087
+157		56	SC046	REPRESENTED_DIFFERENT_CONDITIONING	Restoration of *a; direct concept with differing condition; also ordered before 459.1 in Barrack’s schema	high	ADJUDICATION_INPUT_SC087
+162		57	SC046	PARTIALLY_REPRESENTED	WS-restricted vowel reduction adjacent to a-restoration	low	VERIFY_SOURCE
+170a		57	SC052;SC051	REPRESENTED_DIFFERENT_CONDITIONING	Velar palatalization; CAPR class-distinct; ordered before 459.1 in Barrack’s schema	high	ADJUDICATION_INPUT_SC087
+170b		57	SC109	REPRESENTED_DIFFERENT_CONDITIONING	ȝ → j spirant/glide change; CAPR serializes palatal-fricative merger	medium	NO_ACTION
+171a		57	-	OUT_OF_SCOPE	Sporadic Kentish/Mercian palatalization; outside the WS executable target	high	NO_ACTION
+171b	PG	58	-	OUT_OF_SCOPE	High front vowel lowering/graphic variation; orthographic	medium	NO_ACTION
+172	PG	58	-	UNRESOLVED	PG high vowel lowering; census summary too generic; verify against print before classifying	low	VERIFY_SOURCE
+179	PG	58	SC088;SC056	PARTIALLY_REPRESENTED	Epenthesis/low-vowel development (geđra); CAPR epenthetic vowel narrower	medium	NO_ACTION
+180	PG	59	SC088	REPRESENTED_DIFFERENT_CONDITIONING	Epenthesis; CAPR SC088 epenthetic vowel	medium	NO_ACTION
+185a	PG	59	SC056	PARTIALLY_REPRESENTED	Fronting/lowering after palatal onset; related to WS palatal diphthongization	low	VERIFY_SOURCE
+185b	PG	59	SC056;SC105	PARTIALLY_REPRESENTED	Feature change to front vowel in palatal environment	low	VERIFY_SOURCE
+185c	PG	59	SC056	PARTIALLY_REPRESENTED	Backness change in palatal environment	low	VERIFY_SOURCE
+190a	PG	59-60 (continues)	SC055	EQUIVALENT_REPRESENTED	Core i-umlaut fronting/raising; CAPR states umlaut with different decomposition	high	NO_ACTION
+190b	PG	61	SC055	PARTIALLY_REPRESENTED	Umlaut component rule	medium	NO_ACTION
+193(d)		61	-	PARTIALLY_REPRESENTED	æ → e adjustment before nasal; appears as failing step in 459.1 bærnan derivation	low	ADJUDICATION_INPUT_SC087
+194		61-62 (continues)	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component	medium	NO_ACTION
+195		62	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component	medium	NO_ACTION
+196		62	SC055	PARTIALLY_REPRESENTED	Unrounding of umlaut product (œ → e); folded into CAPR umlaut outputs	medium	NO_ACTION
+200		62-63 (continues)	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component (æV(C)i/j → eV(C)i/j)	medium	NO_ACTION
+202		63	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component	medium	NO_ACTION
+204		63	SC065;SC050	PARTIALLY_REPRESENTED	Early syncope; CAPR medial syncope and Sievers-law reduction cover parts	low	VERIFY_SOURCE
+210		63-64 (continues)	SC059;SC039	REPRESENTED_DIFFERENT_CONDITIONING	Back umlaut/rounding; CAPR scope discrepancy flagged	high	RESEARCH_QUEUE
+212		64	SC059	REPRESENTED_DIFFERENT_CONDITIONING	Back umlaut; scope discrepancy with CAPR back mutation	high	RESEARCH_QUEUE
+218		65	SC039	EQUIVALENT_REPRESENTED	Combinative back umlaut after w; matches CAPR wi-combinative u-umlaut	high	NO_ACTION
+220		65-66 (continues)	SC059	PARTIALLY_REPRESENTED	Rounding/back umlaut periphery	medium	RESEARCH_QUEUE
+234		66	SC086	PARTIALLY_REPRESENTED	Monophthongization/rounding; adjacent to CAPR contraction	low	VERIFY_SOURCE
+237		66	SC086;SC055	PARTIALLY_REPRESENTED	Contraction/syncope interacting with umlaut	low	VERIFY_SOURCE
+238a		67	SC086	REPRESENTED_DIFFERENT_CONDITIONING	Vowel contraction; CAPR contraction law	medium	NO_ACTION
+238b		67	-	PARTIALLY_REPRESENTED	Rounding loss in contraction products	low	VERIFY_SOURCE
+238c		67	SC086	PARTIALLY_REPRESENTED	Diphthong contraction	medium	NO_ACTION
+241		67	-	UNRESOLVED	Loss of vowel/syllabification change; summary too generic	low	VERIFY_SOURCE
+243		68	-	UNRESOLVED	Front-vowel + i before dentals adjustment; printed matrix needs re-reading (barred dental symbol)	low	VERIFY_SOURCE
+245		68	SC016;SC052	PARTIALLY_REPRESENTED	Palatalization in j environment	low	VERIFY_SOURCE
+266a		68	SC088	PARTIALLY_REPRESENTED	Syllabification/epenthesis (rēn–reġn, fæġres–fæġeres)	medium	NO_ACTION
+266b		69	SC081;SC079	PARTIALLY_REPRESENTED	j deletion/raising; CAPR j-strengthening/loss family	medium	NO_ACTION
+266c		69	SC089	PARTIALLY_REPRESENTED	Late OE vowel development; CAPR late ag-suffix raising adjacent	low	NO_ACTION
+273		69-70 (continues)	-	UNRESOLVED	Fronting/raising of back vowel; summary too generic	low	VERIFY_SOURCE
+274		69-70 (continues)	SC034	PARTIALLY_REPRESENTED	Diphthong development; CAPR retains proxy only	low	NO_ACTION
+275z	PG	70	-	FORMAL_NOT_HISTORICAL	Treats PG diphthongs as long by convention; quantity notation, not a datable change	medium	NO_ACTION
+282		70	-	FORMAL_NOT_HISTORICAL	Retention statement before boundary; not an innovation	medium	NO_ACTION
+283		71	-	UNRESOLVED	Homorganic consonant loss; needs print verification against CAPR cluster rules	low	VERIFY_SOURCE
+285		71	SC078	PARTIALLY_REPRESENTED	Reduction of unstressed material; CAPR weak-tail reduction	low	NO_ACTION
+286		71	SC068;SC080	PARTIALLY_REPRESENTED	Consonant-cluster simplification family	low	VERIFY_SOURCE
+287		71	-	OUT_OF_SCOPE	Syllable metathesis; sporadic/lexical, not a regular law in the executable target	medium	NO_ACTION
+296		71	SC032;SC110	PARTIALLY_REPRESENTED	Vowel lowering/retraction in diphthong system	low	NO_ACTION
+299a		72	SC088;SC060	REPRESENTED_DIFFERENT_CONDITIONING	Epenthesis before rhotic cluster; appears in 459.1 biernan derivation	medium	ADJUDICATION_INPUT_SC087
+299b		72	SC088	PARTIALLY_REPRESENTED	Epenthesis before labial consonant	low	NO_ACTION
+300a		72	SC060	PARTIALLY_REPRESENTED	Front-vowel development; late dialect subcase	low	NO_ACTION
+300b		72-73 (continues)	-	PLAUSIBLE_MISSING	Rounding i → y after labial (byrnan, cyrps derivations); no CAPR counterpart; SC087-relevant	medium	ADJUDICATION_INPUT_SC087
+302a		73	SC060;SC088	PARTIALLY_REPRESENTED	Epenthetic vowel/umlaut sequence	low	NO_ACTION
+302b		73	SC082;SC083;SC086	PARTIALLY_REPRESENTED	Feature change toward front/raised vowel	low	NO_ACTION
+303		73	SC081	PARTIALLY_REPRESENTED	Raising with loss of low/round features	low	VERIFY_SOURCE
+304a		74	-	OUT_OF_SCOPE	Smoothing-environment palatal shift; Anglian smoothing outside WS target	medium	NO_ACTION
+304b		74	-	UNRESOLVED	Vowel feature shift; summary too generic	low	VERIFY_SOURCE
+305n2		74	-	UNRESOLVED	Rounding change from Campbell footnote; needs print verification	low	VERIFY_SOURCE
+312a		74-75 (continues)	-	UNRESOLVED	Vowel lowering/feature change; summary too generic	low	VERIFY_SOURCE
+312b		75	SC056	PARTIALLY_REPRESENTED	Further vowel simplification; stage mismatch with CAPR palatal diphthongization	low	NO_ACTION
+315		75	-	OUT_OF_SCOPE	Rounding reversal (late WS y~i); late orthographic/dialect variation	medium	NO_ACTION
+320		75-76 (continues)	SC036	ALTERNATIVE_ACCOUNT	Vowel simplification via PES; competes with CAPR weak-medial vocalism reconstruction	medium	RESEARCH_QUEUE
+325		76	SC016	UNRESOLVED	Vowel raising/fronting near palatal glide; chapter 5 material not deep-audited	low	VERIFY_SOURCE
+330	PG	76	-	FORMAL_NOT_HISTORICAL	Interprets abnormal intonation (trimoric vowels) as length; theoretical interpretation	high	CHAPTER_DISCUSSION
+331.1	PG	76	-	FORMAL_NOT_HISTORICAL	PGmc final consonant deletion predating CAPR’s PGmc input stage	medium	NO_ACTION
+331.1z	PG	77	-	FORMAL_NOT_HISTORICAL	PGmc final *m → *n; completed before CAPR’s PGmc inputs (which show -n)	high	NO_ACTION
+331.2	PG	77	-	FORMAL_NOT_HISTORICAL	PGmc unstressed e-raising except before r; encoded in CAPR lexical inputs	medium	NO_ACTION
+331.3	PG	77	-	FORMAL_NOT_HISTORICAL	PGmc syllabic deletion (*SSi → SSØ); pre-input-stage development	medium	NO_ACTION
+331.4a	PG	77	SC042;SC007	PARTIALLY_REPRESENTED	Unrounding/lowering of rounded non-high vowel to ă (printed heading “311.4a” is a misprint); CAPR o-unrounding and final-or-lowering adjacent	medium	RESEARCH_QUEUE
+331.4b	WG	78	SC041;SC020;SC096	REPRESENTED_DIFFERENT_CONDITIONING	Final *a syncope; CAPR decomposes final-syllable losses differently	medium	NO_ACTION
+331.5a	PG	79-80 (continues)	SC042;SC098	PARTIALLY_REPRESENTED	Vowel shortening/loss in unstressed environments	medium	NO_ACTION
+331.5b	NWG	80	SC019	EQUIVALENT_REPRESENTED	High-vowel development; direct match with domain edge	high	NO_ACTION
+331.5c	WG	80	SC007;SC019	REPRESENTED_DIFFERENT_CONDITIONING	Final *ǫ → a; CAPR final-or-lowering territory	medium	NO_ACTION
+331.6a	NWG	81	SC005	ALTERNATIVE_ACCOUNT	Raising of unstressed rounded *o to *u before m; CAPR SC005 raises *a before m — different input value, same slot	high	RESEARCH_QUEUE
+331.6b	NWG	81	SC005	PARTIALLY_REPRESENTED	Raising of o before C+u (fiscōþuz); adjacent early-vowel question	medium	RESEARCH_QUEUE
+331.7	WG	81-82 (continues)	SC014	REPRESENTED_DIFFERENT_CONDITIONING	Medial ai/au monophthongization; Barrack grades his own evidence “very meager; a prediction”	medium	NO_ACTION
+333a		82	SC046	REPRESENTED_DIFFERENT_CONDITIONING	Backness alternation dæġes~dagas; CAPR a-restoration territory	medium	NO_ACTION
+333b		83	SC036	ALTERNATIVE_ACCOUNT	Vowel backing/centralization; competing account of weak medial vocalism	low	RESEARCH_QUEUE
+333c		83	-	UNRESOLVED	High-vowel raising; needs print verification	low	VERIFY_SOURCE
+335		83-84 (continues)	SC037	UNRESOLVED	Rounding of accented low back vowel (ă → ɔ); CAPR counterpart unclear; verify scope	low	VERIFY_SOURCE
+338		84	SC086	PARTIALLY_REPRESENTED	Coalescence of unaccented low vowel + a with backness flip	low	NO_ACTION
+339a		84	SC055	EQUIVALENT_REPRESENTED	i-umlaut statement (Cf. C190ff.); CAPR SC055 same core law	high	NO_ACTION
+339b		84-85 (continues)	SC055	PARTIALLY_REPRESENTED	Umlaut of long vowels/raising adjustment	medium	NO_ACTION
+341		85	SC063;SC041	REPRESENTED_DIFFERENT_CONDITIONING	Final vowel deletion complex; CAPR splits apocope by height and stage	medium	NO_ACTION
+345		85-86 (continues)	SC063	EQUIVALENT_REPRESENTED	Final high vowel deletion after heavy syllable; CAPR high-vowel apocope	high	NO_ACTION
+347		86-87 (continues)	SC063;SC065	REPRESENTED_DIFFERENT_CONDITIONING	Word-final high-vowel deletion; not coextensive with CAPR syncope split	medium	NO_ACTION
+348		87	-	FORMAL_NOT_HISTORICAL	Syllable deletion via progressive environment simplification; formal device	medium	NO_ACTION
+351		87	SC063;SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Final high-vowel deletion/PES; CAPR splits medial and l-adjacent syncope	medium	NO_ACTION
+354a		88	-	UNRESOLVED	Deletion of e/i plus sonorant sequence; needs print verification	low	VERIFY_SOURCE
+354b		88	SC053;SC085	PARTIALLY_REPRESENTED	Deletion of w/h after consonant	medium	NO_ACTION
+355.1		88	SC071;SC069;SC072	REPRESENTED_DIFFERENT_CONDITIONING	Shortening of unstressed long vowels; CAPR splits early/late o-shortening	medium	NO_ACTION
+355.3	WG	89	SC009	REPRESENTED_DIFFERENT_CONDITIONING	Liaison reduction of *ij; CAPR ij-contraction	medium	NO_ACTION
+355.5		89	-	UNRESOLVED	Common NWG vowel change; summary too generic	low	VERIFY_SOURCE
+357		89-90 (continues)	SC071;SC072	PARTIALLY_REPRESENTED	Vowel alternations before sonorants with accent-loss pathways	medium	NO_ACTION
+358		90-91 (continues)	SC072;SC065	REPRESENTED_DIFFERENT_CONDITIONING	Syncopation of originally long vowels	medium	NO_ACTION
+359		91	SC065	PARTIALLY_REPRESENTED	Deletion of unstressed vowel	medium	NO_ACTION
+359z		91	-	FORMAL_NOT_HISTORICAL	Redundancy rule on *ij; explicitly formal	high	NO_ACTION
+363a		92	SC088	REPRESENTED_DIFFERENT_CONDITIONING	Vowel insertion in sonorant environment; CAPR epenthetic vowel	medium	NO_ACTION
+363b		92	SC088	PARTIALLY_REPRESENTED	Vowel insertion with lateral loss	low	NO_ACTION
+365		93	-	OUT_OF_SCOPE	(Late) West-Saxon vowel development beyond modeled horizon	medium	NO_ACTION
+366		93	-	OUT_OF_SCOPE	Late West-Saxon vowel change beyond modeled horizon	medium	NO_ACTION
+369		93	SC070;SC073;SC076	REPRESENTED_DIFFERENT_CONDITIONING	Unstressed lowering/fronting; CAPR distributes across unstressed-vowel rules	medium	NO_ACTION
+371		94	SC040;SC074;SC075;SC100	EQUIVALENT_REPRESENTED	Unaccented short i/u lowering to e/o; CAPR decomposes by position	high	NO_ACTION
+376		94	SC074	PARTIALLY_REPRESENTED	Front-vowel raising; loose overlap	medium	NO_ACTION
+377		94-95 (continues)	SC040;SC089	PARTIALLY_REPRESENTED	Late OE unstressed lowering/rounding	medium	NO_ACTION
+378		94-95 (continues)	SC061	PARTIALLY_REPRESENTED	Final nasal alternation (-Vn stage in tungōmiz derivation)	low	NO_ACTION
+379		95	-	UNRESOLVED	Short-vowel development; summary too generic	low	VERIFY_SOURCE
+380		95	-	UNRESOLVED	Back-vowel fronting before nasal; needs print verification	low	VERIFY_SOURCE
+385		95-96 (continues)	-	UNRESOLVED	Vowel lowering/fronting; summary too generic	low	VERIFY_SOURCE
+388		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Post-sonorant vowel deletion; CAPR syncope split	medium	NO_ACTION
+390		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Unstressed vowel deletion (meolc); CAPR syncope split	medium	NO_ACTION
+398z	WG	96	-	UNRESOLVED	WG loss of rounding; needs print verification	low	VERIFY_SOURCE
+398.2	PG	97	-	OUT_OF_SCOPE	Verner’s Law; predates CAPR’s PGmc input stage, outcomes encoded lexically per lexeme	high	CHAPTER_DISCUSSION
+398.2n	NWG	97	-	OUT_OF_SCOPE	Labiovelar rounding loss; PGmc-internal, encoded lexically	medium	NO_ACTION
+398.3a	PG	97	SC049	OUT_OF_SCOPE	First Sound Shift; pre-PGmc, with SC049 b-allophony only adjacent	high	NO_ACTION
+398.3b	PG	98	SC049	PARTIALLY_REPRESENTED	Final continuant devoicing; adjacent to CAPR b-allophony	low	VERIFY_SOURCE
+398.4a	PG	98-99 (continues)	SC050	REPRESENTED_DIFFERENT_CONDITIONING	Sievers’ Law; CAPR models the syncope-side reduction, not the original alternation	high	NO_ACTION
+398.4b	PG	99-100 (continues)	SC079;SC057	PARTIALLY_REPRESENTED	j-deletion after syllabic sonorant	medium	NO_ACTION
+398.4z	PG	99-100 (continues)	-	FORMAL_NOT_HISTORICAL	Variant j-deletion formalization	medium	NO_ACTION
+399a	PG	100	SC023;SC025;SC048	REPRESENTED_DIFFERENT_CONDITIONING	Nasal-vowel treatment; CAPR n-loss and nasalization rules	medium	NO_ACTION
+399b	PG	100	SC061;SC023	PARTIALLY_REPRESENTED	Final noncontinuant sonorant deletion	medium	NO_ACTION
+400z	PG	100-101 (continues)	SC053;SC054	PARTIALLY_REPRESENTED	Final consonant (w) deletion after vowel; witness hrā ‘corpse’	medium	NO_ACTION
+400n4		101	-	FORMAL_NOT_HISTORICAL	n → ŋ before velars; subphonemic place assimilation	medium	NO_ACTION
+402	PG	101	SC010	EQUIVALENT_REPRESENTED	j/w gemination (with Campbell’s environment doubt quoted); CAPR j-gemination	high	NO_ACTION
+404a	PG	101	SC003	ALTERNATIVE_ACCOUNT	*z → *R at PG stage; CAPR follows Ringe-Taylor independent mergers; already cited	high	NO_ACTION_CITED
+404b	WG	101-102 (continues)	SC003;SC097	ALTERNATIVE_ACCOUNT	R-loss before voiced dentals with compensatory lengthening (mēd; meord referred to 139zc); very sporadic per Barrack	high	NO_ACTION_CITED
+404c	WG	102	SC020;SC096;SC097	ALTERNATIVE_ACCOUNT	Final R-loss after unaccented vowel; accentual conditioning differs from CAPR z-loss family	high	RESEARCH_QUEUE
+404d	(N)WG	102	-	HISTORICALLY_DOUBTFUL	Rn → nn assimilation graded “very sporadic” by Barrack himself; witness ærn; not a regular law	medium	NO_ACTION
+404e	WG	102	SC003	EQUIVALENT_REPRESENTED	*R → r merger step; part of CAPR rhotacism; already cited	high	NO_ACTION_CITED
+405	WG	103-104 (continues)	SC053;SC054;SC011	REPRESENTED_DIFFERENT_CONDITIONING	w-deletion in weak syllables; CAPR splits w-loss rules	medium	NO_ACTION
+406		104	SC054	EQUIVALENT_REPRESENTED	w-deletion before i; CAPR w-loss before i	high	NO_ACTION
+407a	WG	104-106 (continues)	SC010	PARTIALLY_REPRESENTED	PES/assimilation with lengthening; w-gemination debate flagged	medium	NO_ACTION
+407b	WG	106	SC010	REPRESENTED_DIFFERENT_CONDITIONING	Gemination of b/ȝ/d; CAPR j-gemination targets	medium	NO_ACTION
+409	WG	106	SC013	EQUIVALENT_REPRESENTED	*đ → d hardening; direct match	high	NO_ACTION
+411	WG	106	-	UNRESOLVED	Final vowel/sonorant deletion; needs print verification	low	VERIFY_SOURCE
+414		106	SC012	REPRESENTED_DIFFERENT_CONDITIONING	lđ → ld; CAPR lþ-voicing with output/stage differences	high	NO_ACTION
+416		107	SC091;SC028	REPRESENTED_DIFFERENT_CONDITIONING	Early WS hs → ks; CAPR xs-merge and xs-cluster rules	medium	RESEARCH_QUEUE
+417	NWG	107	SC028	PARTIALLY_REPRESENTED	NWG hs → ss; preconsonantal x-loss territory	medium	NO_ACTION
+418		107	-	OUT_OF_SCOPE	fs → ps; late/minor development outside the executable target	medium	NO_ACTION
+419z		107	-	UNRESOLVED	Early WS voicing change involving l/N; needs print verification	low	VERIFY_SOURCE
+421		108	-	UNRESOLVED	Sonorant feature change in unstressed environments; needs print verification	low	VERIFY_SOURCE
+422		108	SC067	PARTIALLY_REPRESENTED	Continuant → noncontinuant; alternate development of 421; dental-assimilation adjacent	low	VERIFY_SOURCE
+424		109	-	OUT_OF_SCOPE	Late OE consonant change beyond modeled horizon	medium	NO_ACTION
+428		109	SC052;SC109	REPRESENTED_DIFFERENT_CONDITIONING	Palatal/velar alternation; CAPR class-distinct palatalization plus serialization	medium	NO_ACTION
+430		110	-	OUT_OF_SCOPE	Late OE initial consonant voicing; outside target	medium	NO_ACTION
+430n3		110	-	OUT_OF_SCOPE	Early WS vowel variation (footnote material); orthographic variation	low	NO_ACTION
+432		110	SC052	REPRESENTED_DIFFERENT_CONDITIONING	Palatalization; direct but finely distinct from CAPR classes	high	NO_ACTION
+433a		110-111 (continues)	SC090;SC052	PARTIALLY_REPRESENTED	Palatals → velars in specified environments; CAPR cj-cleanup adjacent	low	VERIFY_SOURCE
+433b		111	SC057;SC109	PARTIALLY_REPRESENTED	Palatal/velar development variant	low	NO_ACTION
+434		111	SC057;SC081	EQUIVALENT_REPRESENTED	t/d + ȝ/j → čč/ǰǰ; CAPR j-cluster coalescence	medium	NO_ACTION
+435a		111-112 (continues)	SC052	PARTIALLY_REPRESENTED	Palatal/velar development, alternate direction	low	NO_ACTION
+435b		112	SC052	PARTIALLY_REPRESENTED	Backing/velar development	low	NO_ACTION
+439		112	-	UNRESOLVED	Palatal/fricative change; summary too generic	low	VERIFY_SOURCE
+440a		112-113 (continues)	SC051	FORMAL_NOT_HISTORICAL	Summary rule through PES; CAPR sk-palatalization holds the core	medium	NO_ACTION
+440b		113	SC051	PLAUSIBLE_MISSING	Late WS sk → ks metathesis (ascian~acsian type); no CAPR counterpart	medium	RESEARCH_QUEUE
+440c		113	SC051	EQUIVALENT_REPRESENTED	Palatalization of sk; CAPR sk-palatalization	high	NO_ACTION
+444	WG	114	-	OUT_OF_SCOPE	Fricative voicing between voiced segments; subphonemic allophony	high	NO_ACTION
+446		114	-	OUT_OF_SCOPE	Final devoicing; subphonemic/late	medium	NO_ACTION
+450		114	-	OUT_OF_SCOPE	Final stop devoicing (weorþmȳnd~-mȳnt); orthographic variation	medium	NO_ACTION
+452		114	-	UNRESOLVED	Final consonant change; summary too generic	low	VERIFY_SOURCE
+453		114-115 (continues)	SC068;SC088	PARTIALLY_REPRESENTED	Epenthesis/cluster development	low	VERIFY_SOURCE
+457a		115	-	FORMAL_NOT_HISTORICAL	Loss of ac 1; accent machinery	medium	NO_ACTION
+457b		115	SC080	PARTIALLY_REPRESENTED	Cluster simplification; degemination adjacent	medium	NO_ACTION
+459.1		115-117 (continues)	SC087	REPRESENTED_DIFFERENT_CONDITIONING	r-metathesis before s/n with dialect-differentiated ordering against breaking; CAPR SC087 currently restricted to CrVst	high	ADJUDICATION_INPUT_SC087
+459.3		117	SC087	PLAUSIBLE_MISSING	Metathesis of V̆r to rV̆ before h/xt; no CAPR counterpart; part of SC087 investigation	medium	ADJUDICATION_INPUT_SC087
+460a		118	-	UNRESOLVED	Metathesis of consonant and sC (wæps/wæsp type); sporadic; relation to 440b queue	low	RESEARCH_QUEUE
+460b		118	-	PARTIALLY_REPRESENTED	Fricative metathesis (sp → ps in cyrps derivation); SC087-relevant witness machinery	medium	ADJUDICATION_INPUT_SC087
+461a	PG	118	-	UNRESOLVED	PG consonant feature assimilation; needs print verification	low	VERIFY_SOURCE
+461b	PG	119	-	UNRESOLVED	Vowel/consonant reduction; summary too generic	low	VERIFY_SOURCE
+461c		119	SC085	PARTIALLY_REPRESENTED	Loss of voiced segment; h-loss adjacent	medium	NO_ACTION
+462z		119-120 (continues)	SC045;SC085	PARTIALLY_REPRESENTED	Debuccalization/devoicing; CAPR h-rules	medium	NO_ACTION
+467		120	-	OUT_OF_SCOPE	Late OE palatalization/raising beyond modeled horizon	medium	NO_ACTION
+468a		120	-	UNRESOLVED	Voicing assimilation; summary too generic	low	VERIFY_SOURCE
+468b		120	-	OUT_OF_SCOPE	Loss of initial h/w in clusters; late OE development	medium	NO_ACTION
+470		121	SC079;SC082	PARTIALLY_REPRESENTED	Loss of high vowel in unstressed syllable	medium	NO_ACTION
+473		121	-	OUT_OF_SCOPE	Restoration of n; analogical restoration, not a sound law	medium	NO_ACTION
+475a		121-122 (continues)	-	UNRESOLVED	Loss of final sonorant/consonant; needs print verification	low	VERIFY_SOURCE
+475b		122	-	UNRESOLVED	r-deletion in rn(C)# clusters; potential interaction with burn-family forms	low	ADJUDICATION_INPUT_SC087
+476		122	SC080;SC068	PARTIALLY_REPRESENTED	Syncope/cluster simplification (rnn → rn in bærnan derivation); SC087-relevant	medium	ADJUDICATION_INPUT_SC087
+477a		123	-	OUT_OF_SCOPE	Dissimilation/reduction; sporadic	low	NO_ACTION
+477b		123	-	UNRESOLVED	Place assimilation; summary too generic	low	VERIFY_SOURCE
+478a		123	-	UNRESOLVED	Nasal assimilation/epenthesis; needs print verification	low	VERIFY_SOURCE
+478b		123-124 (continues)	-	UNRESOLVED	Stop/sonorant assimilation; needs print verification	low	VERIFY_SOURCE
+478c		124	-	UNRESOLVED	Epenthesis in s-clusters; needs print verification	low	VERIFY_SOURCE
+480.1		124	SC067	PARTIALLY_REPRESENTED	Devoicing of d after voiceless consonant; dental assimilation adjacent	medium	NO_ACTION
+480.2		124	SC067	PARTIALLY_REPRESENTED	Voicing assimilation of t/s/p	medium	NO_ACTION
+481.1		124-125 (continues)	SC068	PARTIALLY_REPRESENTED	Devoicing/fortition of stops	low	VERIFY_SOURCE
+481.2		125	SC067	PARTIALLY_REPRESENTED	Sibilant assimilation	low	VERIFY_SOURCE
+481.7		125	-	UNRESOLVED	Gemination; summary too generic	low	VERIFY_SOURCE
+482		125-126 (continues)	-	FORMAL_NOT_HISTORICAL	Stage-regressive consonant alternation; formal device	low	VERIFY_SOURCE
+483		126	SC052	PARTIALLY_REPRESENTED	Palatalization/affrication of k	medium	NO_ACTION
+484a		126	-	UNRESOLVED	Assimilation/lateralization; needs print verification	low	VERIFY_SOURCE
+484b		126	-	UNRESOLVED	Assimilation to ss; needs print verification	low	VERIFY_SOURCE
+484c		126-127 (continues)	SC022	PARTIALLY_REPRESENTED	Nasal/liquid assimilation; mn-dissimilation adjacent but not equivalent	low	NO_ACTION
+484d		127	-	UNRESOLVED	Nasal assimilation; needs print verification	low	VERIFY_SOURCE

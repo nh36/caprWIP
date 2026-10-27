@@ -53,12 +53,12 @@
 
 ## Reader-facing example rows by role
 
-- `diagnostic_comparator`: 243
+- `diagnostic_comparator`: 239
 - `example_input`: 69
 - `expected_output`: 72
 - `model_stage`: 109
 - `notation_or_segment`: 820
-- `yielded_output`: 60
+- `yielded_output`: 64
 
 - Reader-facing include_in_example_index=yes: 553
 - Reader-facing include_in_example_index=no: 820
@@ -154,11 +154,11 @@
 
 ### Included rows by role
 
-- `diagnostic_comparator`: 243
+- `diagnostic_comparator`: 239
 - `example_input`: 69
 - `expected_output`: 72
 - `model_stage`: 109
-- `yielded_output`: 60
+- `yielded_output`: 64
 
 ### Included rows by inferred language
 
@@ -227,10 +227,10 @@ _None._
 ## Reader-facing example rows (sample)
 
 - `PGmcX` (oe, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:100)
-- `*nistan` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1006)
-- `*st` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1006)
-- `*e` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1007)
-- `*sk` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1009)
-- `*st` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1014)
-- `*r` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1017)
-- `*wiraz` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1017)
+- `*nistan` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1008)
+- `*st` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1008)
+- `*e` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1009)
+- `*sk` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1011)
+- `*st` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1016)
+- `*r` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1019)
+- `*wiraz` (, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1019)

@@ -92,7 +92,7 @@ rule_id	ocr_page	census_page	disposition	note
 325	76	76	VERIFIED_ON_PAGE	
 330	76	76	VERIFIED_ON_PAGE	
 331.1	76	76	VERIFIED_ON_PAGE	
-311.4a	77		RELOCATED	printed heading is PG 331.4a on p.77; OCR misread first digit pair
+311.4a	77		VERIFIED_PRINT_MISPRINT	printed heading on p.77 literally reads “PG 311.4a” — a misprint in the original for 331.4a (sequence position between 331.3 and 331.4b and cross-references confirm); census files the rule as 331.4a
 331.2	77	77	VERIFIED_ON_PAGE	
 331.3	77	77	VERIFIED_ON_PAGE	
 331.4b	78	78	VERIFIED_ON_PAGE	

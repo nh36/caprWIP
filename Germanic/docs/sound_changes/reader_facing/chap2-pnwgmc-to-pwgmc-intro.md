@@ -41,7 +41,9 @@ retention of final \emph{*z} appear as rules 404a--e
 [@Barrack1975, pp. 101--102], and the final-syllable reductions as the 331
 series, including final \emph{*a} syncope as West Germanic rule 331.4b
 [@Barrack1975, p. 78]. He grades the evidence candidly — the material for
-404b he calls "very sporadic", citing \emph{mēd} beside \emph{meord} 'reward'
+404b, which deletes the rhotic before a voiced dental with compensatory
+lengthening to derive \emph{mēd} 'reward', he calls "very sporadic", and he
+refers the rival development that yields \emph{meord} to his rule 139zc
 [@Barrack1975, pp. 101--102] — and his orderings among these rules are
 formal rather than chronological [@Barrack1975, p. 34]. The crosswalk in the
 Barrack dossier records where these statements agree with, and where they
