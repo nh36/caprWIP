@@ -35,6 +35,18 @@ daughters shows any ending in this class [@RingeTaylor2014, p. 118]. It is
 the earliest of the three historically distinct final-`*z` developments; the
 other two (SC020 and SC097) open Chapter 3.
 
+Barrack's formal cascade covers the same final-syllable territory with a
+family of rules keyed to Campbell's paragraphs: rhotacism and the loss and
+retention of final \emph{*z} appear as rules 404a--e
+[@Barrack1975, pp. 101--102], and the final-syllable reductions as the 331
+series, including final \emph{*a} syncope as West Germanic rule 331.4b
+[@Barrack1975, p. 78]. He grades the evidence candidly — the material for
+404b he calls "very sporadic", citing \emph{mēd} beside \emph{meord} 'reward'
+[@Barrack1975, pp. 101--102] — and his orderings among these rules are
+formal rather than chronological [@Barrack1975, p. 34]. The crosswalk in the
+Barrack dossier records where these statements agree with, and where they
+subdivide differently from, the SC096/SC020/SC097 split adopted here.
+
 The unstressed \emph{*ai > *ē} development
 ([SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization))
 is one of the widespread Northwest Germanic vowel shifts. Unstressed

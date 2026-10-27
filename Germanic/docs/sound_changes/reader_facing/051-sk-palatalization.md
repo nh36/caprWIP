@@ -5,7 +5,16 @@
 The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the recognizable early
 cluster changes in the larger palatalization zone. Campbell distinguishes the
 cluster from plain velars when he remarks that \emph{*sk} is especially prone to
-palatalization and assibilation [@Campbell1959, p. 278, §440]. Hogg gives the
+palatalization and assibilation [@Campbell1959, p. 278, §440]. Barrack
+treats the cluster in the same zone as his 440 series: 440a summarizes the
+developments [@Barrack1975, pp. 112--113] and 440c states the
+palatalization of \emph{*sk} itself [@Barrack1975, p. 113], kept beside, but
+distinct from, plain velar palatalization (his rule 170a)
+[@Barrack1975, p. 57], in agreement with the structural placement adopted
+here. He also registers the typologically separate Late West Saxon
+metathesis of the cluster in \emph{fiscas}/\emph{fixas} 'fishes' as rule
+440b [@Barrack1975, p. 113], a written-period development that presupposes
+the earlier palatalization boundary rather than contradicting it. Hogg gives the
 same change a clearer structural place by treating \emph{*sk} beside the palatalization
 of plain velars and before the later West Saxon diphthongal developments
 [@HoggPhonology1992, pp. 106--108, 113]. Ringe and Taylor make the same sequence

@@ -25,6 +25,19 @@ is narrower than Fulk's before-front-vowel description
 The present fricative implementation retains its broader domain; this
 merger decision is not a covert adoption of the narrower table.
 
+Barrack's cascade distributes the velar material over several rules:
+palatalization proper as rule 170a [@Barrack1975, p. 57], the
+palatal/velar alternations of the written period as rule 428, with
+\emph{streccan} 'stretch' among the cited forms [@Barrack1975, p. 109], and
+the back-and-forth adjustments between palatals and velars as rules
+432--435, including the \emph{hwilic} 'which' type and
+\emph{ortgeard}/\emph{feccan} [@Barrack1975, pp. 110--112]. His
+decomposition is finer than the class-distinct account adopted here and is
+keyed to Campbell's paragraphs rather than to the fricative/stop class
+distinction; it corroborates the breadth of the palatalization zone without
+bearing on the disputed merger chronology, since his orderings are formal,
+not chronological [@Barrack1975, p. 34].
+
 ## SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal}
 
 ```foma

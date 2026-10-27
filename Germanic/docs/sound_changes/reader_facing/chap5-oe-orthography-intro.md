@@ -35,3 +35,12 @@ Ringe and Taylor provide the modern phonological interpretation
 [@Bulbring1902, p. 120, §§ 298--299] document the
 distribution of the spellings; Hogg supplies the critical reassessment
 [@HoggPhonology1992, p. 113].
+
+Barrack's West Saxon cascade registers the same written-surface facts at two
+points: the \emph{iung}/\emph{giong}/\emph{geong} 'young' spellings under
+his rule 171b [@Barrack1975, p. 58], and an Early West Saxon spelling
+variation, with \emph{Geoworpa} and \emph{Iugurtha} among the cited forms,
+as a Campbell-footnote rule 430n3 [@Barrack1975, p. 110]. He treats these
+within his free-variation framework rather than as a single orthographic
+convention; that framing is a rival description of the same evidence, not
+support for a spoken rising diphthong.

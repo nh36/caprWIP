@@ -8,6 +8,12 @@ Campbell, Hogg, Ringe and Taylor, and Fulk agree on this Old English
 development, though they differ over the extent of the surrounding syncope
 [@Campbell1959, pp. 144--145, §§345--349; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, pp. 284--303, §§6.8.1, 6.8.4; @Fulk2018, p. 91, §5.6].
+Barrack states the deletion of final high vowels as his rule 345 and
+presents it as a prime case of an environment that simplifies progressively
+over the rule's lifetime [@Barrack1975, pp. 85--86, 23--25]; the heavy-foot
+conditioning adopted here corresponds to his most restricted, earliest
+phase, while his later phases absorb the surrounding quantity developments
+that the handbooks treat as separate changes.
 
 This later loss is distinct from the West Germanic weak-word loss of
 [SC098 PWGmcUnstressedWordFinalIApocope](#rule-PWGmcUnstressedWordFinalIApocope).

@@ -40,6 +40,19 @@ families: [draugma-]{.recon .iv lang=pgmc sort=draugma} 'dream' and
 A reader-facing section for SC002 awaits a stronger explanatory source base
 and is not yet assembled in the reader-facing sequence.
 
+A generative counterpart to the handbook accounts is Barrack's formal
+cascade from Proto-Germanic to West Saxon, which states the nasal-loss
+development as its Proto-Germanic rule 119 [@Barrack1975, pp. 42--43].
+Barrack's rule numbers are anchors to Campbell's paragraph numbering, which
+he names as his principal data source [@Barrack1975, p. 21], and his
+ordering statements are formal, not chronological: ordering between rules
+"only implies a logical relationship—in no sense a chronological
+relationship" [@Barrack1975, p. 34]. His cascade therefore corroborates the
+handbook conditioning for this change without constituting independent
+dating evidence, and it keeps the Proto-Germanic law distinct from the later
+Ingvaeonic nasal-spirant development, which he states separately as rule 121
+[@Barrack1975, p. 44].
+
 ## Scope and genealogical context
 
 Changes in this chapter are pan-Germanic in scope: they apply to ancestral forms

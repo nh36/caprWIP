@@ -13,6 +13,19 @@ establish an ordering relation between
 [SC086 OEContraction](#rule-OEContraction) and
 [SC087 OERMetathesis](#rule-OERMetathesis).
 
+Barrack devotes his longest metathesis discussion to this change as rule
+459.1, with a companion rule 459.3 for the \emph{cyrps}/\emph{firiþ} type
+[@Barrack1975, pp. 115--117]. His account agrees that in West Saxon the
+\emph{beornan}/\emph{birnan} 'to burn' family shows metathesis operating on
+the output of earlier developments, which he schematizes as 157 followed by
+170a followed by 459.1; but he records that the relative order of breaking
+and metathesis varies by dialect, separating the West Saxon from the Anglian
+treatment [@Barrack1975, pp. 115--117]. Because his orderings are formal
+rather than chronological [@Barrack1975, p. 34], that dialect-order
+observation is conditioning evidence to be weighed in its own right, not a
+dating; it is held for a separate adjudication in the Barrack dossier and
+does not alter the West Saxon ordering adopted here.
+
 ## SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis}
 
 ```foma

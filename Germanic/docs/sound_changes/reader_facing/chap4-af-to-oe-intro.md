@@ -105,6 +105,28 @@ late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
 English phonological history, when the syllabic structure of the language
 began to shift toward the more reduced profile of Middle English.
 
+Across this chapter the densest independent parallel is Barrack's West
+Saxon cascade, whose focus — West Saxon to the beginning of the eleventh
+century [@Barrack1975, p. 19] — coincides with the present target. His
+statements most relevant here include velar palatalization as rule 170a
+[@Barrack1975, p. 57]; back umlaut as rules 210 and 220
+[@Barrack1975, pp. 63--66]; the \emph{weor-} > \emph{wur-} development as
+rule 320, his showcase for progressively widening environments
+[@Barrack1975, pp. 75--76, 23--25]; high-vowel apocope and syncope of
+originally long vowels as rules 345 and 358 [@Barrack1975, pp. 85--91];
+and, among the late consonant adjustments, \emph{sk}-metathesis in
+\emph{fiscas}/\emph{fixas} 'fishes' as rule 440b [@Barrack1975, p. 113],
+the \emph{bringþ}-type dissimilation as 477a [@Barrack1975, p. 123],
+stop fortition of the \emph{fint}-type as 481.1
+[@Barrack1975, pp. 124--125], and the nasal assimilation of \emph{efn} >
+\emph{emn} 'even' as 484d [@Barrack1975, p. 127]. On r-metathesis
+(rule 459.1) he records that the relative order of breaking and metathesis
+varies by dialect in the \emph{beornan}/\emph{birnan} 'to burn' family
+[@Barrack1975, pp. 115--117], a conditioning-relevant observation held for
+separate adjudication in the Barrack dossier. His orderings are formal, not
+chronological [@Barrack1975, p. 34], and are cited here as corroborating
+statements of conditioning, never as dating evidence.
+
 ## The English partial chains
 
 The working historical scaffold has several connected chains, not one

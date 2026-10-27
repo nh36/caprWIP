@@ -65,6 +65,17 @@ nasal can be removed. The order of
 [SC027 EAFNasalSpirantLoss](#rule-EAFNasalSpirantLoss) is a requirement of the
 statement, not evidence for two successive historical stages.
 
+Barrack's cascade concurs on both the geography and the two-law distinction.
+He states the North Sea development as Ingvaeonic rule 121, locating it in
+the Old English and Old Frisian area with Old Saxon retaining free
+variation, and cites \emph{ōþer} among his witnesses [@Barrack1975, p. 44];
+he orders it explicitly after his Proto-Germanic rule 119, the common
+Germanic nasal loss before the velar fricative
+[@Barrack1975, pp. 42--44]. Two differences of framework apply: he models
+the change as a window of free variation rather than a categorical law
+[@Barrack1975, pp. 21--23], and his orderings are formal rather than
+chronological [@Barrack1975, p. 34].
+
 ## SC026. North Sea Germanic nasal-spirant law, first step (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening}
 
 ```foma

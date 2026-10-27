@@ -40,6 +40,17 @@ whose root \emph{u} was protected by the high vowel of the following
 syllable, the same convention wrote the retained \emph{u} with the same
 digraph [@SieversBrunner1965, pp. 64--65, §92.1].
 
+Barrack registers the same spellings at two points of his cascade: the
+\emph{iung}/\emph{giong}/\emph{geong} 'young' alternation under his rule
+171b [@Barrack1975, p. 58], and an Early West Saxon variation, with
+\emph{Geoworpa} and \emph{Iugurtha} among the cited forms, as the
+Campbell-footnote rule 430n3 [@Barrack1975, p. 110]. Writing before Hogg's
+reassessment, he handles the alternation inside his free-variation
+framework rather than as a convention of the written surface
+[@Barrack1975, pp. 21--23]; his treatment is thus a formal restatement of
+the older rising-diphthong reading, and the orthographic interpretation
+adopted here follows Ringe and Taylor and Hogg against it.
+
 ## SC016. West Saxon palatal-glide spelling before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide}
 
 ```foma

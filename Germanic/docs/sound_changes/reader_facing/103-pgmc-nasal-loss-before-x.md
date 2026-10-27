@@ -34,6 +34,15 @@ the northernmost West Germanic dialects [@Ringe2017, pp. 149--150, §3.2.7].
 That rounding is a separate and much later change, and it is treated in the
 chapter on the rounding of the long nasalized low vowel.
 
+Barrack's formal cascade states this development as his Proto-Germanic
+rule 119 [@Barrack1975, pp. 42--43] and, in agreement with the comparative
+argument above, keeps it distinct from the later North Sea law, which he
+states separately as Ingvaeonic rule 121 and explicitly orders after 119
+[@Barrack1975, p. 44]. His rule numbers are anchors to Campbell's paragraph
+numbering [@Barrack1975, p. 21], and his orderings are formal rather than
+chronological [@Barrack1975, p. 34], so the agreement concerns the identity
+and conditioning of the two laws, not an independent dating.
+
 ## SC103. Proto-Germanic nasal loss before \emph{*x} (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX}
 
 ```foma

@@ -167,6 +167,7 @@ preserves that bibliographic distinction.
 - `docs/references/kroonen_2006_mn_stems_bottom_rime.{pdf,txt}` — Kroonen 2006 on m/n-stems
 - `docs/references/adamczyk_2001_oe_reflexes_sievers.txt` — Adamczyk on OE reflexes of Sievers' Law
 - `docs/references/erdmann_1972_suffixal_j_germanic.txt` — Erdmann on suffixal *j in Germanic
+- `docs/references/barrack_1975/` — Barrack, *A Diachronic Phonology from Proto-Germanic to Old English Stressing West-Saxon Conditions* (Janua Linguarum, Series Practica 144; Mouton, 1975); `Barrack1975`, DOI 10.1515/9783110873511. Complete local scan (local-only, never committed). Reading guide: methodology pp.11–37, diachronic rules pp.38–127, Input Index pp.128–131, Word Index pp.132–134, ordering chart p.136. Rule numbers are Campbell paragraph anchors, not a chronology; the source-critical census and CAPR crosswalk live in `Germanic/docs/sound_changes/literature_dossiers/barrack_1975/`.
 - `docs/references/pierce_1999_review_barrack_sievers.txt` — Pierce, review of Barrack on Sievers
 - `docs/references/pierce_2003_prosody_sievers_gothic.txt` — Pierce, prosody and Sievers in Gothic
 - `docs/references/pierce_2006_syllable_sievers_gothic.txt` — Pierce, syllable structure and Sievers in Gothic

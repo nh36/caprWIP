@@ -86,6 +86,22 @@ lexical entry represents; they are not thereby conditions on a sound law.
 This methodological choice is distinct from faithfully reporting an author's
 different theoretical account.
 
+Barrack's West Saxon cascade supplies a formal generative restatement of
+parts of this interval. He states the Ingvaeonic nasal-spirant development
+as rule 121, locating it in the Old English/Old Frisian area with Old Saxon
+retaining free variation, with \emph{ōþer} 'other' among his witnesses
+[@Barrack1975, p. 44]; the fronting-and-rounding complex appears as rules
+130a--c [@Barrack1975, pp. 47--48]; and a loss of \emph{*i} after \emph{*w}
+is marked "apparently Anglo-Frisian" as rule 406 [@Barrack1975, p. 104].
+Two cautions from the Barrack dossier apply throughout. First, his changes
+are modelled as windows of free variation with overlapping phases — his
+worked example is precisely the retraction/breaking overlap of rules
+143a--b yielding attested \emph{æll}/\emph{all}/\emph{eall} variation
+[@Barrack1975, pp. 21--23, 53--54] — so his rule boundaries do not map
+one-to-one onto CAPR's categorical laws. Second, his orderings are formal,
+not chronological [@Barrack1975, p. 34], and cannot by themselves settle the
+stem-versus-daughter placement questions this chapter has just outlined.
+
 ## Long vowels, diphthongs and the ancestral inventory
 
 The inherited-long contrast is central. On the conventional reconstruction,
