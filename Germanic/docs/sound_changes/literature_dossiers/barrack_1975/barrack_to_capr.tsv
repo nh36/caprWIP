@@ -21,7 +21,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 129zb	PG	46-47 (continues)	-	FORMAL_NOT_HISTORICAL	PGmc-internal *ei monophthongization; precedes CAPR’s PGmc input stage (inputs already have ī/ē)	medium	NO_ACTION
 130a		47	SC025;SC104	REPRESENTED_DIFFERENT_CONDITIONING	Nasal rounding/backing of long low vowel; CAPR decomposes more strongly	high	NO_ACTION
 130b		47	SC025;SC104	PARTIALLY_REPRESENTED	Continuation of nasal-a rounding complex	medium	NO_ACTION
-130c		48	SC104	PARTIALLY_REPRESENTED	Late stage of nasalized-a development; NB 459.1 x > 130c ordering claim matters for SC087	medium	ADJUDICATION_INPUT_SC087
+130c		48	SC104	PARTIALLY_REPRESENTED	Late stage of nasalized-a development; NB 459.1 x > 130c ordering claim matters for SC087 — SC087 adjudicated 2026-10 (RETAIN); ordering claim weighed in memo	medium	NO_ACTION
 130z		48	-	FORMAL_NOT_HISTORICAL	Barrack’s alternative formalization of the fronting/rounding complex	medium	NO_ACTION
 131		49	SC043	EQUIVALENT_REPRESENTED	Second step of short-a fronting except before nasals; jointly with 128 equals CAPR brightening	high	NO_ACTION
 134		49	SC004	EQUIVALENT_REPRESENTED	Stressed *ai monophthongization; matches SC004 with stage framing differences	high	NO_ACTION
@@ -37,10 +37,10 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 146a		55	SC044	REPRESENTED_DIFFERENT_CONDITIONING	WS breaking subcase; CAPR SC044 covers the complex	medium	NO_ACTION
 146b		55	SC044	REPRESENTED_DIFFERENT_CONDITIONING	WS-conditioned breaking subcase	medium	NO_ACTION
 146c		56	SC044	REPRESENTED_DIFFERENT_CONDITIONING	Breaking variant noted as less prevalent in WS; dialect gradient recorded	medium	NO_ACTION
-146d		56	SC044;SC087	REPRESENTED_DIFFERENT_CONDITIONING	WS breaking before r; its ordering against 459.1 is central to the r-metathesis question	high	ADJUDICATION_INPUT_SC087
-157		56	SC046	REPRESENTED_DIFFERENT_CONDITIONING	Restoration of *a; direct concept with differing condition; also ordered before 459.1 in Barrack’s schema	high	ADJUDICATION_INPUT_SC087
+146d		56	SC044;SC087	REPRESENTED_DIFFERENT_CONDITIONING	WS breaking before r; its ordering against 459.1 is central to the r-metathesis question — SC087 adjudicated 2026-10 (RETAIN); breaking-before-metathesis edge confirmed	high	NO_ACTION
+157		56	SC046	REPRESENTED_DIFFERENT_CONDITIONING	Restoration of *a; direct concept with differing condition; also ordered before 459.1 in Barrack’s schema — SC087 adjudicated 2026-10 (RETAIN); formal ordering weighed in memo	high	NO_ACTION
 162		57	SC046	PARTIALLY_REPRESENTED	WS-restricted vowel reduction adjacent to a-restoration	low	VERIFY_SOURCE
-170a		57	SC052;SC051	REPRESENTED_DIFFERENT_CONDITIONING	Velar palatalization; CAPR class-distinct; ordered before 459.1 in Barrack’s schema	high	ADJUDICATION_INPUT_SC087
+170a		57	SC052;SC051	REPRESENTED_DIFFERENT_CONDITIONING	Velar palatalization; CAPR class-distinct; ordered before 459.1 in Barrack’s schema — SC087 adjudicated 2026-10 (RETAIN); formal ordering weighed in memo	high	NO_ACTION
 170b		57	SC109	REPRESENTED_DIFFERENT_CONDITIONING	ȝ → j spirant/glide change; CAPR serializes palatal-fricative merger	medium	NO_ACTION
 171a		57	-	OUT_OF_SCOPE	Sporadic Kentish/Mercian palatalization; outside the WS executable target	high	NO_ACTION
 171b	PG	58	-	OUT_OF_SCOPE	High front vowel lowering/graphic variation; orthographic	medium	NO_ACTION
@@ -52,7 +52,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 185c	PG	59	SC056	PARTIALLY_REPRESENTED	Backness change in palatal environment	low	VERIFY_SOURCE
 190a	PG	59-60 (continues)	SC055	EQUIVALENT_REPRESENTED	Core i-umlaut fronting/raising; CAPR states umlaut with different decomposition	high	NO_ACTION
 190b	PG	61	SC055	PARTIALLY_REPRESENTED	Umlaut component rule	medium	NO_ACTION
-193(d)		61	-	PARTIALLY_REPRESENTED	æ → e adjustment before nasal; appears as failing step in 459.1 bærnan derivation	low	ADJUDICATION_INPUT_SC087
+193(d)		61	-	PARTIALLY_REPRESENTED	æ → e adjustment before nasal; appears as failing step in 459.1 bærnan derivation — SC087 adjudicated 2026-10; bærnan family out of executable WS target	low	NO_ACTION
 194		61-62 (continues)	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component	medium	NO_ACTION
 195		62	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component	medium	NO_ACTION
 196		62	SC055	PARTIALLY_REPRESENTED	Unrounding of umlaut product (œ → e); folded into CAPR umlaut outputs	medium	NO_ACTION
@@ -83,10 +83,10 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 286		71	SC068;SC080	PARTIALLY_REPRESENTED	Consonant-cluster simplification family	low	VERIFY_SOURCE
 287		71	-	OUT_OF_SCOPE	Syllable metathesis; sporadic/lexical, not a regular law in the executable target	medium	NO_ACTION
 296		71	SC032;SC110	PARTIALLY_REPRESENTED	Vowel lowering/retraction in diphthong system	low	NO_ACTION
-299a		72	SC088;SC060	REPRESENTED_DIFFERENT_CONDITIONING	Epenthesis before rhotic cluster; appears in 459.1 biernan derivation	medium	ADJUDICATION_INPUT_SC087
+299a		72	SC088;SC060	REPRESENTED_DIFFERENT_CONDITIONING	Epenthesis before rhotic cluster; appears in 459.1 biernan derivation — SC087 adjudicated; epenthesis account remains relevant to SC088/SC060 review	medium	RESEARCH_QUEUE
 299b		72	SC088	PARTIALLY_REPRESENTED	Epenthesis before labial consonant	low	NO_ACTION
 300a		72	SC060	PARTIALLY_REPRESENTED	Front-vowel development; late dialect subcase	low	NO_ACTION
-300b		72-73 (continues)	-	PLAUSIBLE_MISSING	Rounding i → y after labial (byrnan, cyrps derivations); no CAPR counterpart; SC087-relevant	medium	ADJUDICATION_INPUT_SC087
+300b		72-73 (continues)	-	PLAUSIBLE_MISSING	Rounding i → y after labial (byrnan, cyrps derivations); no CAPR counterpart; SC087-relevant — SC087 adjudicated; rounding after labial remains an open burn-family question	medium	RESEARCH_QUEUE
 302a		73	SC060;SC088	PARTIALLY_REPRESENTED	Epenthetic vowel/umlaut sequence	low	NO_ACTION
 302b		73	SC082;SC083;SC086	PARTIALLY_REPRESENTED	Feature change toward front/raised vowel	low	NO_ACTION
 303		73	SC081	PARTIALLY_REPRESENTED	Raising with loss of low/round features	low	VERIFY_SOURCE
@@ -198,10 +198,10 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 453		114-115 (continues)	SC068;SC088	PARTIALLY_REPRESENTED	Epenthesis/cluster development	low	VERIFY_SOURCE
 457a		115	-	FORMAL_NOT_HISTORICAL	Loss of ac 1; accent machinery	medium	NO_ACTION
 457b		115	SC080	PARTIALLY_REPRESENTED	Cluster simplification; degemination adjacent	medium	NO_ACTION
-459.1		115-117 (continues)	SC087	REPRESENTED_DIFFERENT_CONDITIONING	r-metathesis before s/n with dialect-differentiated ordering against breaking; CAPR SC087 currently restricted to CrVst	high	ADJUDICATION_INPUT_SC087
-459.3		117	SC087	PLAUSIBLE_MISSING	Metathesis of V̆r to rV̆ before h/xt; no CAPR counterpart; part of SC087 investigation	medium	ADJUDICATION_INPUT_SC087
+459.1		115-117 (continues)	SC087	REPRESENTED_DIFFERENT_CONDITIONING	r-metathesis before s/n with dialect-differentiated ordering against breaking; adjudicated 2026-10 (sc087-adjudication.md): CAPR retains the exceptionless CrVst core; the broader s/n domain is variable (doublets) and counterfactually corrupts brandes/drenc/streng/graes	high	ADJUDICATED_SC087_RETAIN
+459.3		117-118	SC087	HISTORICALLY_DOUBTFUL	Regressive metathesis of accented V-breve+r to r+V before xt (LWS worhte~wrohte); Barrack grades the evidence as very meager; mainly late Northumbrian, reanalysed by Hogg as epenthesis+stress shift; adjudicated 2026-10 (sc087-adjudication.md): no CAPR law; counterfactually corrupts fyrhte	medium	ADJUDICATED_SC087_RETAIN
 460a		118	-	UNRESOLVED	Metathesis of consonant and sC (wæps/wæsp type); sporadic; relation to 440b queue	low	RESEARCH_QUEUE
-460b		118	-	PARTIALLY_REPRESENTED	Fricative metathesis (sp → ps in cyrps derivation); SC087-relevant witness machinery	medium	ADJUDICATION_INPUT_SC087
+460b		118	-	PARTIALLY_REPRESENTED	Fricative metathesis (sp → ps in cyrps derivation); SC087-relevant witness machinery — SC087 adjudicated; sp~ps variation connects to wasp-row precedent and 440b	medium	RESEARCH_QUEUE
 461a	PG	118	-	UNRESOLVED	PG consonant feature assimilation; needs print verification	low	VERIFY_SOURCE
 461b	PG	119	-	UNRESOLVED	Vowel/consonant reduction; summary too generic	low	VERIFY_SOURCE
 461c		119	SC085	PARTIALLY_REPRESENTED	Loss of voiced segment; h-loss adjacent	medium	NO_ACTION
@@ -212,8 +212,8 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 470		121	SC079;SC082	PARTIALLY_REPRESENTED	Loss of high vowel in unstressed syllable	medium	NO_ACTION
 473		121	-	OUT_OF_SCOPE	Restoration of n; analogical restoration, not a sound law	medium	NO_ACTION
 475a		121-122 (continues)	-	UNRESOLVED	Loss of final sonorant/consonant; needs print verification	low	VERIFY_SOURCE
-475b		122	-	UNRESOLVED	r-deletion in rn(C)# clusters; potential interaction with burn-family forms	low	ADJUDICATION_INPUT_SC087
-476		122	SC080;SC068	PARTIALLY_REPRESENTED	Syncope/cluster simplification (rnn → rn in bærnan derivation); SC087-relevant	medium	ADJUDICATION_INPUT_SC087
+475b		122	-	UNRESOLVED	r-deletion in rn(C)# clusters; potential interaction with burn-family forms — SC087 adjudicated; rule reading still needs original-source verification	low	VERIFY_SOURCE
+476		122	SC080;SC068	PARTIALLY_REPRESENTED	Syncope/cluster simplification (rnn → rn in bærnan derivation); SC087-relevant — SC087 adjudicated; þirda/cluster simplification relevant to SC065-068/SC080 review	medium	RESEARCH_QUEUE
 477a		123	-	OUT_OF_SCOPE	Dissimilation/reduction; sporadic	low	NO_ACTION
 477b		123	-	UNRESOLVED	Place assimilation; summary too generic	low	VERIFY_SOURCE
 478a		123	-	UNRESOLVED	Nasal assimilation/epenthesis; needs print verification	low	VERIFY_SOURCE

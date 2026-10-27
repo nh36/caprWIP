@@ -1,0 +1,221 @@
+{
+  "experiment": "sc087-counterfactuals",
+  "generated": "2026-10-27 20:47:42",
+  "germanic.txt_sha256": "3725fca7dc8e377657a9d2987d1ced9d88c1e55d8aa180b7a8e56a36e327dd27",
+  "corpus_sha256": "90fcdf861682549f3e297e3868d7306ad9c600bf5395c728d1323f8d0eca12cc",
+  "selected_rows": 389,
+  "variants": {
+    "broad_s": {
+      "rows_changed": 0,
+      "changes": []
+    },
+    "broad_sn": {
+      "rows_changed": 3,
+      "changes": [
+        {
+          "row_id": "1965",
+          "proto": "*brándas",
+          "attested": "brandes",
+          "production": [
+            "brandes"
+          ],
+          "variant": [
+            "barndes"
+          ]
+        },
+        {
+          "row_id": "1996",
+          "proto": "*dránkiz",
+          "attested": "drenċ",
+          "production": [
+            "drenċ"
+          ],
+          "variant": [
+            "dernċ"
+          ]
+        },
+        {
+          "row_id": "2228",
+          "proto": "*strángiz",
+          "attested": "strenġ",
+          "production": [
+            "strenġ"
+          ],
+          "variant": [
+            "sternġ"
+          ]
+        }
+      ]
+    },
+    "broad_sn_ae": {
+      "rows_changed": 4,
+      "changes": [
+        {
+          "row_id": "1965",
+          "proto": "*brándas",
+          "attested": "brandes",
+          "production": [
+            "brandes"
+          ],
+          "variant": [
+            "barndes"
+          ]
+        },
+        {
+          "row_id": "1996",
+          "proto": "*dránkiz",
+          "attested": "drenċ",
+          "production": [
+            "drenċ"
+          ],
+          "variant": [
+            "dernċ"
+          ]
+        },
+        {
+          "row_id": "2045",
+          "proto": "*grásą",
+          "attested": "græs",
+          "production": [
+            "græs"
+          ],
+          "variant": [
+            "gærs"
+          ]
+        },
+        {
+          "row_id": "2228",
+          "proto": "*strángiz",
+          "attested": "strenġ",
+          "production": [
+            "strenġ"
+          ],
+          "variant": [
+            "sternġ"
+          ]
+        }
+      ]
+    },
+    "broad_sn_noleft": {
+      "rows_changed": 9,
+      "changes": [
+        {
+          "row_id": "1965",
+          "proto": "*brándas",
+          "attested": "brandes",
+          "production": [
+            "brandes"
+          ],
+          "variant": [
+            "barndes"
+          ]
+        },
+        {
+          "row_id": "1996",
+          "proto": "*dránkiz",
+          "attested": "drenċ",
+          "production": [
+            "drenċ"
+          ],
+          "variant": [
+            "dernċ"
+          ]
+        },
+        {
+          "row_id": "2003",
+          "proto": "*fáraną",
+          "attested": "faran",
+          "production": [
+            "faran"
+          ],
+          "variant": [
+            "faarn"
+          ]
+        },
+        {
+          "row_id": "2045",
+          "proto": "*grásą",
+          "attested": "græs",
+          "production": [
+            "græs"
+          ],
+          "variant": [
+            "gærs"
+          ]
+        },
+        {
+          "row_id": "2053",
+          "proto": "*xámaras",
+          "attested": "hameres",
+          "production": [
+            "hameres"
+          ],
+          "variant": [
+            "hameers"
+          ]
+        },
+        {
+          "row_id": "2152",
+          "proto": "*rástōz",
+          "attested": "ræste",
+          "production": [
+            "ræste"
+          ],
+          "variant": [
+            "ærste"
+          ]
+        },
+        {
+          "row_id": "2162",
+          "proto": "*rústaz",
+          "attested": "rust",
+          "production": [
+            "rost"
+          ],
+          "variant": [
+            "orst"
+          ]
+        },
+        {
+          "row_id": "2177",
+          "proto": "*skéraną",
+          "attested": "sċieran",
+          "production": [
+            "sċieran"
+          ],
+          "variant": [
+            "sċiearn"
+          ]
+        },
+        {
+          "row_id": "2228",
+          "proto": "*strángiz",
+          "attested": "strenġ",
+          "production": [
+            "strenġ"
+          ],
+          "variant": [
+            "sternġ"
+          ]
+        }
+      ]
+    },
+    "regressive_459_3": {
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2034",
+          "proto": "*fúrxtīnaz",
+          "attested": "fyrhte",
+          "production": [
+            "fyrhte"
+          ],
+          "variant": [
+            "fryhte"
+          ]
+        }
+      ]
+    }
+  },
+  "control_matches_canonical": true
+}

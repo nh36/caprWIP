@@ -106,7 +106,7 @@ SC083	OEUnstressedEIContraction	historical_sound_change	Old English	OE Unstresse
 SC084	OEWeightCleanup	technical_marker	Old English	OE Weight Cleanup				unadjudicated		97	95
 SC085	OEHLoss	historical_sound_change	Old English	OE H Loss	oe	english_specific	A	unadjudicated		98	96
 SC086	OEContraction	historical_sound_change	Old English	OE Contraction	oe	english_specific	A	unadjudicated		99	97
-SC087	OERMetathesis	historical_sound_change	Old English	OE R Metathesis	oe	english_specific	A	unadjudicated		100	98
+SC087	OERMetathesis	historical_sound_change	Old English	OE R Metathesis	oe	english_specific	A	adjudicated	RETAIN	100	98
 SC088	OEEpentheticVowel	historical_sound_change	Old English	OE Epenthetic Vowel				unadjudicated		101	99
 SC089	OELateUnstressedAgSuffix	historical_sound_change	Old English	Late unstressed ag-suffix raising	oe	english_specific	B	adjudicated	REFORMULATE	102	100
 SC109	OEPalatalFricativeMerger	support_stage	Old English	Postmutation palatal-fricative merger serialization				unadjudicated		103	101

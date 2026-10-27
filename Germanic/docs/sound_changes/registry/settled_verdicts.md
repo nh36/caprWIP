@@ -34,6 +34,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC073 | OE Unstressed AE Merger | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC076 | Pretonic i-lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC082 | Bounded inherited-j normalization | active | RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc082-adjudication.md` |
+| SC087 | OE R Metathesis | active | RETAIN | `Germanic/docs/sound_changes/audits/sc087-adjudication.md` |
 | SC089 | Late unstressed ag-suffix raising | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc089-adjudication.md` |
 | SC098 | Early apocope in unstressed words | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc098-context-apocope-adjudication.md` |
 | SC101 | EAF Long A Fronting | active | SPLIT/RESTRICT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
