@@ -146,6 +146,19 @@ families: [draugma-]{.recon .iv lang=pgmc sort=draugma source_ref="Germanic/docs
 A reader-facing section for SC002 awaits a stronger explanatory source base
 and is not yet assembled in the reader-facing sequence.
 
+A generative counterpart to the handbook accounts is Barrack's formal
+cascade from Proto-Germanic to West Saxon, which states the nasal-loss
+development as its Proto-Germanic rule 119 [@Barrack1975, pp. 42--43].
+Barrack's rule numbers are anchors to Campbell's paragraph numbering, which
+he names as his principal data source [@Barrack1975, p. 21], and his
+ordering statements are formal, not chronological: ordering between rules
+"only implies a logical relationship—in no sense a chronological
+relationship" [@Barrack1975, p. 34]. His cascade therefore corroborates the
+handbook conditioning for this change without constituting independent
+dating evidence, and it keeps the Proto-Germanic law distinct from the later
+Ingvaeonic nasal-spirant development, which he states separately as rule 121
+[@Barrack1975, p. 44].
+
 ## Scope and genealogical context
 
 Changes in this chapter are pan-Germanic in scope: they apply to ancestral forms
@@ -208,6 +221,15 @@ that its low vowel was rounded, along with the other nasalized low vowels, in
 the northernmost West Germanic dialects [@Ringe2017, pp. 149--150, §3.2.7].
 That rounding is a separate and much later change, and it is treated in the
 chapter on the rounding of the long nasalized low vowel.
+
+Barrack's formal cascade states this development as his Proto-Germanic
+rule 119 [@Barrack1975, pp. 42--43] and, in agreement with the comparative
+argument above, keeps it distinct from the later North Sea law, which he
+states separately as Ingvaeonic rule 121 and explicitly orders after 119
+[@Barrack1975, p. 44]. His rule numbers are anchors to Campbell's paragraph
+numbering [@Barrack1975, p. 21], and his orderings are formal rather than
+chronological [@Barrack1975, p. 34], so the agreement concerns the identity
+and conditioning of the two laws, not an independent dating.
 
 ### SC103. Proto-Germanic nasal loss before \emph{*x} (`PGmcNasalLossBeforeX`) {#rule-PGmcNasalLossBeforeX}
 
@@ -297,6 +319,18 @@ stems, complete before Proto-West Germanic: none of the West Germanic
 daughters shows any ending in this class [@RingeTaylor2014, p. 118]. It is
 the earliest of the three historically distinct final-`*z` developments; the
 other two (SC020 and SC097) open Chapter 3.
+
+Barrack's formal cascade covers the same final-syllable territory with a
+family of rules keyed to Campbell's paragraphs: rhotacism and the loss and
+retention of final \emph{*z} appear as rules 404a--e
+[@Barrack1975, pp. 101--102], and the final-syllable reductions as the 331
+series, including final \emph{*a} syncope as West Germanic rule 331.4b
+[@Barrack1975, p. 78]. He grades the evidence candidly — the material for
+404b he calls "very sporadic", citing \emph{mēd} beside \emph{meord} 'reward'
+[@Barrack1975, pp. 101--102] — and his orderings among these rules are
+formal rather than chronological [@Barrack1975, p. 34]. The crosswalk in the
+Barrack dossier records where these statements agree with, and where they
+subdivide differently from, the SC096/SC020/SC097 split adopted here.
 
 The unstressed \emph{*ai > *ē} development
 ([SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization))
@@ -461,7 +495,7 @@ define PNWGmcUnstressedAiMonophthongization Ctx([
 ]);
 ```
 
-The dative-singular endings span [spánnai]{.recon} 'span' and meed [mízdai]{.recon} 'meed' carry this change; both give a final \emph{*ē}. If [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) is delayed until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), the \emph{*ē} is no longer present for shortening, so PGmc [spánnai]{.recon} 'span' yields [*spannē*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:382" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:382:1"} rather than expected OE *spanne* 'span'. This shows that [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) in the modeled sequence.
+The dative-singular endings span [spánnai]{.recon} 'span' and meed [mízdai]{.recon} 'meed' carry this change; both give a final \emph{*ē}. If [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) is delayed until after [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), the \emph{*ē} is no longer present for shortening, so PGmc [spánnai]{.recon} 'span' yields [*spannē*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:416" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:416:1"} rather than expected OE *spanne* 'span'. This shows that [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization) must come before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) in the modeled sequence.
 
 ## Unstressed \emph{*a}-raising before final \emph{*m}
 
@@ -482,7 +516,7 @@ define PNWGmcAToUBeforeM Ctx([
 ]);
 ```
 
-Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 PNWGmcULowering](#rule-PNWGmcULowering), PGmc [skúldramiz]{.recon} 'shoulders' yields [*sċoldrum*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:1"} rather than expected OE *sċuldrum* 'shoulders'; earlier placements converge on the expected output. The scope of the change is established by inflectional evidence across multiple paradigm types: a-stem dative plural ON [*dǫgum*]{.iv lang=on sort=dogum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:2"} 'days', OE [*dagum*]{.iv lang=oe sort=dagum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:3"} 'days', OS [*dagun*]{.iv lang=os sort=dagun role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:4"} 'days', OHG [*tagum*]{.iv lang=ohg sort=tagum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:5"} 'days', beside Gothic [*dagam*]{.iv lang=goth sort=dagam role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:6"} 'days'; strong-adjective dative singular ON [*góðum*]{.iv lang=on sort=godum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:7"} 'good', OE [*gōdum*]{.iv lang=oe sort=godum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:8"} 'good', OS [*gōdum*]{.iv lang=os sort=godum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:9"} 'good', beside Gothic [*godamma*]{.iv lang=goth sort=godamma role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:10"} 'good' (OS also shows variant forms gōdumu and -un); and first-plural present ON [*berum*]{.iv lang=on sort=berum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:11"} 'we carry', OHG [*berumēs*]{.iv lang=ohg sort=berumes role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:12"} 'we carry', beside Gothic [*baíram*]{.iv lang=goth sort=bairam role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:403:13"} 'we carry'. Across these sets, North/West Germanic shows unstressed \emph{-um} where Gothic preserves \emph{-am}. The derivation of *sċuldrum* 'shoulders' supplies a CAPR ordering witness for the relative chronology, but the cognate set for 'shoulder' does not contribute comparative evidence for the rule's historical scope.
+Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 PNWGmcULowering](#rule-PNWGmcULowering), PGmc [skúldramiz]{.recon} 'shoulders' yields [*sċoldrum*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:1"} rather than expected OE *sċuldrum* 'shoulders'; earlier placements converge on the expected output. The scope of the change is established by inflectional evidence across multiple paradigm types: a-stem dative plural ON [*dǫgum*]{.iv lang=on sort=dogum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:2"} 'days', OE [*dagum*]{.iv lang=oe sort=dagum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:3"} 'days', OS [*dagun*]{.iv lang=os sort=dagun role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:4"} 'days', OHG [*tagum*]{.iv lang=ohg sort=tagum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:5"} 'days', beside Gothic [*dagam*]{.iv lang=goth sort=dagam role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:6"} 'days'; strong-adjective dative singular ON [*góðum*]{.iv lang=on sort=godum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:7"} 'good', OE [*gōdum*]{.iv lang=oe sort=godum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:8"} 'good', OS [*gōdum*]{.iv lang=os sort=godum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:9"} 'good', beside Gothic [*godamma*]{.iv lang=goth sort=godamma role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:10"} 'good' (OS also shows variant forms gōdumu and -un); and first-plural present ON [*berum*]{.iv lang=on sort=berum role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:11"} 'we carry', OHG [*berumēs*]{.iv lang=ohg sort=berumes role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:12"} 'we carry', beside Gothic [*baíram*]{.iv lang=goth sort=bairam role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:437:13"} 'we carry'. Across these sets, North/West Germanic shows unstressed \emph{-um} where Gothic preserves \emph{-am}. The derivation of *sċuldrum* 'shoulders' supplies a CAPR ordering witness for the relative chronology, but the cognate set for 'shoulder' does not contribute comparative evidence for the rule's historical scope.
 
 ## Northwest Germanic lowering of long \emph{ē}
 
@@ -506,7 +540,7 @@ define PNWGmcLongELowering Ctx([
 
 The rule reads the stressed tier \emph{*ḗ} only, in keeping with the stress restriction; unstressed \emph{*ē}, as in \emph{*fadēr} 'father', is left for the unstressed-shortening rules of the Old English stage and never lowers. No segmental environment is imposed: nasal forms such as [mḗnōþz]{.recon} 'month' and [spḗnuz]{.recon} 'spoon' pass through \emph{*mānōþ-} and \emph{*spānuz} on their way to *mōnaþ* 'month' and *spōn* 'spoon', exactly as reconstructed by Ringe and Taylor [@RingeTaylor2014, p. 11].
 
-The rule stands near the head of the cascade, before the genuinely West Germanic innovations such as early \emph{i}-apocope, \emph{*ij}-contraction, and \emph{j}-gemination — the placement follows from the dating: the second-century runic evidence puts the lowering among the earliest Northwest Germanic developments, well before the changes that separate West Germanic from Norse. Its output \emph{*ā} is consumed much later in the cascade by [SC102 EAFHiatusWInsertion](#rule-EAFHiatusWInsertion), [SC025 EAFLongANasalRounding](#rule-EAFLongANasalRounding), and [SC101 EAFLongAFronting](#rule-EAFLongAFronting): if the lowering is instead displaced after those rules, [mḗnōθz]{.recon} 'month' yields [*mānaþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:427" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:427:1"} rather than OE *mōnaþ* 'month', [skḗpą]{.recon} 'sheep' yields [*sċāp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:427" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:427:2"} rather than *sċēap* 'sheep', and [sḗaną]{.recon} 'to sow' never acquires the hiatus-filling \emph{w} of *sāwan* 'to sow'. Within the cascade no earlier boundary has been demonstrated; the second-century runic attestation supplies the absolute dating.
+The rule stands near the head of the cascade, before the genuinely West Germanic innovations such as early \emph{i}-apocope, \emph{*ij}-contraction, and \emph{j}-gemination — the placement follows from the dating: the second-century runic evidence puts the lowering among the earliest Northwest Germanic developments, well before the changes that separate West Germanic from Norse. Its output \emph{*ā} is consumed much later in the cascade by [SC102 EAFHiatusWInsertion](#rule-EAFHiatusWInsertion), [SC025 EAFLongANasalRounding](#rule-EAFLongANasalRounding), and [SC101 EAFLongAFronting](#rule-EAFLongAFronting): if the lowering is instead displaced after those rules, [mḗnōθz]{.recon} 'month' yields [*mānaþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:461" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:461:1"} rather than OE *mōnaþ* 'month', [skḗpą]{.recon} 'sheep' yields [*sċāp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:461" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:461:2"} rather than *sċēap* 'sheep', and [sḗaną]{.recon} 'to sow' never acquires the hiatus-filling \emph{w} of *sāwan* 'to sow'. Within the cascade no earlier boundary has been demonstrated; the second-century runic attestation supplies the absolute dating.
 
 ## Early i-apocope
 
@@ -527,7 +561,7 @@ define PWGmcEarlyIApocope Ctx([
 ]);
 ```
 
-The absence of umlaut in *geoguþ* ‘youth’ provides the historical argument for early deletion. The ordered derivation supplies a different test: if apocope is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc [skáwōθi]{.recon} ‘shows’ yields [*sċēaweþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:448" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:448:1"} rather than expected OE *sċēawaþ* 'shows'.
+The absence of umlaut in *geoguþ* ‘youth’ provides the historical argument for early deletion. The ordered derivation supplies a different test: if apocope is delayed until after [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong), PGmc [skáwōθi]{.recon} ‘shows’ yields [*sċēaweþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:482" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:482:1"} rather than expected OE *sċēawaþ* 'shows'.
 
 Early i-apocope must therefore precede the long-diphthong development. Moving it earlier within the tested range leaves every output unchanged; its early date rests on the anti-umlaut evidence, not on a lower boundary supplied by the witness words.
 
@@ -535,7 +569,7 @@ Early i-apocope must therefore precede the long-diphthong development. Moving it
 
 ### Historical discussion
 
-Ringe and Taylor separate two points here: a broader shortening of vowels before word-final \emph{*r} in unstressed syllables (for which kinship \emph{*r}-stems such as PGmc \emph{*fadér} > PWGmc \emph{*fader} are a key diagnostic), and the specific \emph{*ō}-before-\emph{*r} development needed here [@RingeTaylor2014, pp. 58--59]. The direct lexical witnesses for \emph{*ō} in that environment are two independent etyma: PGmc [fedwōr]{.recon .iv lang=pgmc sort=fedwor role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456:1"} 'four' with WGmc reflexes OE [*fēower*]{.iv lang=oe sort=feower role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456:2"} 'four', OFris [*fiuwer*]{.iv lang=ofris sort=fiuwer role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456:3"} 'four', OS [*fiuwar*]{.iv lang=os sort=fiuwar role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456:4"} 'four'; and PGmc [watōr]{.recon .iv lang=pgmc sort=wator role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456:5"} 'water' with OE [*wæter*]{.iv lang=oe sort=waeter role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:456:6"} 'water'.
+Ringe and Taylor separate two points here: a broader shortening of vowels before word-final \emph{*r} in unstressed syllables (for which kinship \emph{*r}-stems such as PGmc \emph{*fadér} > PWGmc \emph{*fader} are a key diagnostic), and the specific \emph{*ō}-before-\emph{*r} development needed here [@RingeTaylor2014, pp. 58--59]. The direct lexical witnesses for \emph{*ō} in that environment are two independent etyma: PGmc [fedwōr]{.recon .iv lang=pgmc sort=fedwor role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490:1"} 'four' with WGmc reflexes OE [*fēower*]{.iv lang=oe sort=feower role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490:2"} 'four', OFris [*fiuwer*]{.iv lang=ofris sort=fiuwer role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490:3"} 'four', OS [*fiuwar*]{.iv lang=os sort=fiuwar role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490:4"} 'four'; and PGmc [watōr]{.recon .iv lang=pgmc sort=wator role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490:5"} 'water' with OE [*wæter*]{.iv lang=oe sort=waeter role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:490:6"} 'water'.
 
 The rule is historically secure but narrow: final or pre-final \emph{*ō} before word-final \emph{*r}. The clearest evidence remains concentrated in the `four` and `water` material.
 No broader environment for \emph{*ō} is attested.
@@ -550,9 +584,9 @@ define PWGmcFinalOrLowering Ctx([
 ]);
 ```
 
-OE *wæter* ‘water’ reveals why lowering must precede [SC043 EAFBrightening](#rule-EAFBrightening). If [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) is delayed until afterwards, PGmc [wátōr]{.recon} ‘water’ yields [*water*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:471" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:471:1"} rather than expected OE *wæter* ‘water’: brightening can affect the vowel only after lowering has created its input. Moving the change earlier within the tested range alters no output.
+OE *wæter* ‘water’ reveals why lowering must precede [SC043 EAFBrightening](#rule-EAFBrightening). If [SC007 PWGmcFinalOrLowering](#rule-PWGmcFinalOrLowering) is delayed until afterwards, PGmc [wátōr]{.recon} ‘water’ yields [*water*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:505" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:505:1"} rather than expected OE *wæter* ‘water’: brightening can affect the vowel only after lowering has created its input. Moving the change earlier within the tested range alters no output.
 
-The witness thus supplies a terminus ante quem at brightening but no earlier boundary. Comparative support for the \emph{*ō}-before-\emph{*r} rule comes from the two lexical witnesses [fedwōr]{.recon .iv lang=pgmc sort=fedwor role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:473" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:473:1"} 'four' and [watōr]{.recon .iv lang=pgmc sort=wator role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:473" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:473:2"} 'water' and their WGmc reflexes; kinship \emph{*r}-stems belong to the broader pre-\emph{*r} shortening context, not to a direct \emph{*ō} > \emph{*a} control. Within CAPR, [*wæter*]{.iv lang=oe sort=waeter role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:473" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:473:3"} 'water' is the form that establishes ordering before brightening. No broader lowering of \emph{*ō} is attested.
+The witness thus supplies a terminus ante quem at brightening but no earlier boundary. Comparative support for the \emph{*ō}-before-\emph{*r} rule comes from the two lexical witnesses [fedwōr]{.recon .iv lang=pgmc sort=fedwor role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:507" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:507:1"} 'four' and [watōr]{.recon .iv lang=pgmc sort=wator role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:507" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:507:2"} 'water' and their WGmc reflexes; kinship \emph{*r}-stems belong to the broader pre-\emph{*r} shortening context, not to a direct \emph{*ō} > \emph{*a} control. Within CAPR, [*wæter*]{.iv lang=oe sort=waeter role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:507" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:507:3"} 'water' is the form that establishes ordering before brightening. No broader lowering of \emph{*ō} is attested.
 
 ## Coronal-w assimilation
 
@@ -575,7 +609,7 @@ define PWGmcCoronalWAssimilation Ctx([
 
 OE *fēower* ‘four’ exposes a feeding relation: coronal assimilation creates the \emph{*ww} input of the early reanalysis in [SC031 OEWWSimplification](#rule-OEWWSimplification), yielding the diphthongal intermediate before later English realization. Ringe and Taylor explicitly give the coronal-assimilation and glide-reanalysis sequence [@RingeTaylor2014, pp. 41--42]. The earlier displacement result belonged to the superseded late \emph{*ww}-deletion proxy and does not by itself predict the result of displacing the reformulated early operation.
 
-The numeral fixes that relative order. The pronoun now fixes a second one: assimilation must precede rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)). The \emph{*z} of \emph{*izwiz} stands between vowel and \emph{*w}; had rhotacism applied first, it would have produced [*irwiz*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:496" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:496:1"}, from which OE *ēow* 'you' can never be derived. The executable cascade composes the assimilation well before rhotacism, and the corpus derivation of *ēow* 'you' fails if the two are reversed. 'Four' remains the sole \emph{*dw} witness and the sole source of the coronal-assimilation → *ww*-simplification ordering constraint. The earlier boundary of the assimilation remains undetermined.
+The numeral fixes that relative order. The pronoun now fixes a second one: assimilation must precede rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)). The \emph{*z} of \emph{*izwiz} stands between vowel and \emph{*w}; had rhotacism applied first, it would have produced [*irwiz*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:530" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:530:1"}, from which OE *ēow* 'you' can never be derived. The executable cascade composes the assimilation well before rhotacism, and the corpus derivation of *ēow* 'you' fails if the two are reversed. 'Four' remains the sole \emph{*dw} witness and the sole source of the coronal-assimilation → *ww*-simplification ordering constraint. The earlier boundary of the assimilation remains undetermined.
 
 ## Inherited short-vowel-plus-geminate-glide reanalysis
 
@@ -670,7 +704,7 @@ define PWGmcIjContraction Ctx([
 ]);
 ```
 
-Only the \emph{*frijōnd-} etymon tests this contraction. If the rare \emph{*ijō} sequence survives until after [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), PGmc [fríjōndz]{.recon} ‘friend’ yields [*friund*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:591" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:591:1"} rather than expected OE *frēond* 'friend'; moving contraction earlier within the tested range changes no output.
+Only the \emph{*frijōnd-} etymon tests this contraction. If the rare \emph{*ijō} sequence survives until after [SC032 OEDiphthongLeveling](#rule-OEDiphthongLeveling), PGmc [fríjōndz]{.recon} ‘friend’ yields [*friund*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:625" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:625:1"} rather than expected OE *frēond* 'friend'; moving contraction earlier within the tested range changes no output.
 
 That single contrast places [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction) before diphthong leveling but gives no lower boundary. It cannot establish a productive sound law beyond the \emph{*frijōnd-} etymon, precisely the reservation made by Ringe and Taylor.
 
@@ -712,7 +746,7 @@ define PWGmcJGemination Ctx([
 ]);
 ```
 
-OE *nett* 'net' fixes the order because the syllabic-\emph{j} development would remove the glide that conditions gemination. If [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) precedes [SC010 PWGmcJGemination](#rule-PWGmcJGemination), PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:633" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:633:1"} rather than expected OE *nett* 'net'. Earlier movement of gemination changes no output.
+OE *nett* 'net' fixes the order because the syllabic-\emph{j} development would remove the glide that conditions gemination. If [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) precedes [SC010 PWGmcJGemination](#rule-PWGmcJGemination), PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:667" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:667:1"} rather than expected OE *nett* 'net'. Earlier movement of gemination changes no output.
 
 The chronology is phonologically transparent: the consonant must geminate before \emph{*j} ceases to be consonantal. The witness establishes no earlier boundary.
 
@@ -737,7 +771,7 @@ define PWGmcSyllabicJ Ctx([
 ]);
 ```
 
-The same PGmc [nátją]{.recon} ‘net’ witness supplies the only firm boundary. Placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:658" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:658:1"} rather than expected OE *nett* 'net'; moving it later changes no output.
+The same PGmc [nátją]{.recon} ‘net’ witness supplies the only firm boundary. Placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:692" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:692:1"} rather than expected OE *nett* 'net'; moving it later changes no output.
 
 Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. The lexicon adds only that vocalization followed gemination, not where it falls among subsequent changes.
 
@@ -1406,20 +1440,20 @@ in the class I weak verbs of the *cnyssan* 'strike' type
 Proto-West Germanic paradigm of 'yoke' with the lowering applied
 [@RingeTaylor2014, p. 129].
 
-Regular corpus witnesses include [ġeoc]{.iv lang=oe sort=geoc role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1327" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1327:1"} 'yoke', *nosu* 'nose',
+Regular corpus witnesses include [ġeoc]{.iv lang=oe sort=geoc role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1361" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1361:1"} 'yoke', *nosu* 'nose',
 *sċofl* 'shovel', and *sorg* 'sorrow'. Where the following syllable kept a
 high vowel the lowering did not apply, as in *ġeoguþ* 'youth', whose root \emph{u}
 survived [@SieversBrunner1965, pp. 64--65, §92.1].
 
 Regular lowering does not imply that every attested inherited word preserves
 the lowered vowel. The masculine noun
-[rust]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1334" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1334:1"} 'rust' is a lexical residue:
+[rust]{.iv lang=oe sort=rust role=comparison_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1368" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1368:1"} 'rust' is a lexical residue:
 selected PGmc [rústaz]{.recon} 'rust' regularly predicts
 [rost]{.recon form_role=regular_output} 'rust'. Orel's alternative
 [rustō]{.recon} 'rust' gives the same lowered root; his masculine alternative
 is independently supported by Ringe [@Orel2003, p. 309;
 @Ringe2017, pp. 247--248]. Since [frústą]{.recon} 'frost' regularly gives
-[forst]{.iv lang=oe sort=forst role=comparison_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1340" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1340:1"} 'frost', a general
+[forst]{.iv lang=oe sort=forst role=comparison_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1374" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1374:1"} 'frost', a general
 _-st-_ exemption is unwarranted. The retained *u* remains unexplained,
 alongside the other retained-*u* cases such as *bucc* 'buck', *fugol*
 'bird', *wulf* 'wolf' and *wulle* 'wool'; their consonantal environments
@@ -1463,9 +1497,9 @@ scribes wrote in *ġeoc* 'yoke' is the output of this change, so PGmc
 attested spelling [@Fulk2018, p. 56, §4.3; @RingeTaylor2014, p. 129].
 If lowering is placed after
 [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), selected
-[núsō]{.recon} 'nose' yields [*nusu*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1384" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1384:1"} rather than expected *nosu*,
-PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1385" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1385:1"} rather than expected
-*sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1386" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1386:1"} rather
+[núsō]{.recon} 'nose' yields [*nusu*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1418" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1418:1"} rather than expected *nosu*,
+PGmc [skúflō]{.recon} 'shovel' yields [*sċufl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1419" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1419:1"} rather than expected
+*sċofl* 'shovel', and PGmc [súrgō]{.recon} 'sorrow' yields [*surg*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1420" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1420:1"} rather
 than expected *sorg*. These are conditional computational consequences,
 not independent proof that those paradigms underwent no levelling.
 CAPR provisionally prefers lowering before final raising because it
@@ -1754,6 +1788,22 @@ lexical entry represents; they are not thereby conditions on a sound law.
 This methodological choice is distinct from faithfully reporting an author's
 different theoretical account.
 
+Barrack's West Saxon cascade supplies a formal generative restatement of
+parts of this interval. He states the Ingvaeonic nasal-spirant development
+as rule 121, locating it in the Old English/Old Frisian area with Old Saxon
+retaining free variation, with \emph{ōþer} 'other' among his witnesses
+[@Barrack1975, p. 44]; the fronting-and-rounding complex appears as rules
+130a--c [@Barrack1975, pp. 47--48]; and a loss of \emph{*i} after \emph{*w}
+is marked "apparently Anglo-Frisian" as rule 406 [@Barrack1975, p. 104].
+Two cautions from the Barrack dossier apply throughout. First, his changes
+are modelled as windows of free variation with overlapping phases — his
+worked example is precisely the retraction/breaking overlap of rules
+143a--b yielding attested \emph{æll}/\emph{all}/\emph{eall} variation
+[@Barrack1975, pp. 21--23, 53--54] — so his rule boundaries do not map
+one-to-one onto CAPR's categorical laws. Second, his orderings are formal,
+not chronological [@Barrack1975, p. 34], and cannot by themselves settle the
+stem-versus-daughter placement questions this chapter has just outlined.
+
 ## Long vowels, diphthongs and the ancestral inventory
 
 The inherited-long contrast is central. On the conventional reconstruction,
@@ -1899,9 +1949,9 @@ component are kept distinct until individual adjudication.
 
 ### West Germanic rhotacism (SC003)
 
-The medial change of `*z` to `*r` in environments such as [déuzaz]{.recon .iv lang=pgmc sort=deuzaz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1820" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1820:1"} 'deer',
-[xúrdaz]{.recon .iv lang=pgmc sort=xurdaz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1821" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1821:1"} 'hoard', and
-[líznōjaną]{.recon .iv lang=pgmc sort=liznojana source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1822" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1822:1"} 'learn' is historically a
+The medial change of `*z` to `*r` in environments such as [déuzaz]{.recon .iv lang=pgmc sort=deuzaz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1870" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1870:1"} 'deer',
+[xúrdaz]{.recon .iv lang=pgmc sort=xurdaz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1871" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1871:1"} 'hoard', and
+[líznōjaną]{.recon .iv lang=pgmc sort=liznojana source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1872" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1872:1"} 'learn' is historically a
 post-Proto-West-Germanic development. Ringe and Taylor argue that rhotacism was
 not inherited from Proto-Northwest Germanic and was not uniform within West
 Germanic [@RingeTaylor2014, pp. 52, 98, 102]. Crist separates this change
@@ -1921,7 +1971,7 @@ placement follows the adopted executable sequence.
 The loss of word-final `*z` is not one process but three historically
 distinct developments, and this chapter contains two of them. The central
 one, SC020, is the Proto-West Germanic loss of `*z` in unstressed syllables,
-seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1842" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1842:1"} 'rest
+seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1892" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1892:1"} 'rest
 (nom.sg.)' and stated for the whole branch by Ringe and Taylor
 [@RingeTaylor2014, pp. 44--45]; Crist's analysis distinguishes it both from
 the earlier NWGmc changes and from the later narrower Ingvaeonic deletion
@@ -2036,7 +2086,7 @@ Word-final \emph{*z} in unstressed syllables was lost in Proto-West Germanic. Ri
 
 The conditioning segment is specifically the voiced sibilant \emph{*z}, never \emph{*s}: Ringe and Taylor's near-minimal pair of nominative singular \emph{*dagaz} > \emph{*dag} beside genitive singular \emph{*dagas}, which keeps its sibilant into Old English \emph{dæġes}, shows that the change reads the Verner voicing distinction [@RingeTaylor2014, p. 212, §6.1]. Where the handbooks disagree about whether a given ending had \emph{*-s} or \emph{*-z} — as for the nominative plural \emph{*-ōz} — the disagreement matters directly to whether this rule applies [@RingeTaylor2014, pp. 115--116, §4.2.1].
 
-This is the middle of three historically distinct final-\emph{*z} developments, and Ringe and Taylor explicitly separate it from the later loss in stressed monosyllables, citing Crist's demonstration that they are two changes [@RingeTaylor2014, pp. 44--45, §3.1.1]. Earlier, the consonant-stem (root-noun) nominatives of monosyllables had already generalized endinglessness before Proto-West Germanic ([SC096 RootNounNomZLoss](#rule-RootNounNomZLoss)), so forms like \emph{*bōkz} 'book' never reach this rule with their marker intact. Later, and only in the north, \emph{*z} was lost in stressed monosyllables with compensatory lengthening ([SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss)); the present rule leaves stressed monosyllables untouched. Older accounts that grouped all of these under one loss of final \emph{*z}, such as Campbell's, are superseded by this three-way division [@Campbell1959, p. 166].
+This is the middle of three historically distinct final-\emph{*z} developments, and Ringe and Taylor explicitly separate it from the later loss in stressed monosyllables, citing Crist's demonstration that they are two changes [@RingeTaylor2014, pp. 44--45, §3.1.1]. Earlier, the consonant-stem (root-noun) nominatives of monosyllables had already generalized endinglessness before Proto-West Germanic ([SC096 RootNounNomZLoss](#rule-RootNounNomZLoss)), so forms like \emph{*bōkz} 'book' never reach this rule with their marker intact. Later, and only in the north, \emph{*z} was lost in stressed monosyllables with compensatory lengthening ([SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss)); the present rule leaves stressed monosyllables untouched. Older accounts that grouped all of these under one loss of final \emph{*z}, such as Campbell's, are superseded by this three-way division [@Campbell1959, p. 166]. Barrack's cascade stands closer to the older grouping: his rules 404a--e treat rhotacism and the losses and retentions of \emph{*z}/R as one West Germanic family [@Barrack1975, pp. 101--102], with the deletion of R after a vowel as rule 404c [@Barrack1975, p. 102], and he states final \emph{*a} syncope separately as West Germanic rule 331.4b [@Barrack1975, p. 78]. His subdivision thus cuts the material differently from the three-way division adopted here; since his rule numbers are Campbell paragraph anchors and his orderings formal rather than chronological [@Barrack1975, pp. 21, 34], the difference is one of analysis, not of additional evidence against the Ringe--Taylor--Crist sequence.
 
 At the boundary with Chapter 2's Northwest Germanic sequence, the derivation of *ræste* 'rest' shows that final \emph{*ō}-raising ([SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising)) must precede this rule: raising applies to \emph{*-ō} but not to \emph{*-ōz}, whose final vowel is still sheltered by the sibilant when raising runs [@RingeTaylor2014, pp. 15--16, 24]. On the later side, Ringe and Taylor order the loss of \emph{*z} before the loss of word-final bare \emph{*-a}, since \emph{*dagaz} first becomes \emph{*daga} and only then \emph{*dag} [@RingeTaylor2014, pp. 45--46, §3.1.2].
 
@@ -2054,7 +2104,7 @@ The rule deletes word-final \emph{*z} in unstressed syllables, stated through tw
 
 The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
 
-Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975:1"} rather than expected OE *ræste* 'rest'. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [bébruz]{.recon} 'beaver' yields [*befro*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975:2"} rather than expected *befer* 'beaver', PGmc [kwéðuz]{.recon} 'cud' yields [*cwedo*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975:3"} rather than expected *cwedu* 'cud', and PGmc [félθuz]{.recon} 'field' yields [*feldo*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1975:4"} rather than expected *feld* 'field', alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
+Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025:1"} rather than expected OE *ræste* 'rest'. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [bébruz]{.recon} 'beaver' yields [*befro*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025:2"} rather than expected *befer* 'beaver', PGmc [kwéðuz]{.recon} 'cud' yields [*cwedo*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025:3"} rather than expected *cwedu* 'cud', and PGmc [félθuz]{.recon} 'field' yields [*feldo*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2025:4"} rather than expected *feld* 'field', alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
 The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising). The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
 
@@ -2198,6 +2248,8 @@ Bammesberger states that Germanic \emph{*z} yielded \emph{*r} in intervocalic po
 
 The internal identifier [SC003 EAFRhotacism](#rule-EAFRhotacism) places the change in CAPR's Early Anglo-Frisian corridor, the operational post-Proto-West-Germanic stage on the English line; historically the change is a West Germanic rhotacism, later than Proto-Germanic. It is also distinct from [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), which removes final \emph{*z} before the surviving medial consonant becomes \emph{*r}.
 
+Barrack states the same complex as his 404 family: \emph{*z} becomes a rhotic R as Proto-Germanic rule 404a [@Barrack1975, p. 101], and R becomes \emph{r} as West Germanic rule 404e [@Barrack1975, p. 102], with the deletions of R stated between them. His two-step treatment, in which an intermediate rhotic persists while the deletions apply, is structurally parallel to the ordering argument from Crist adopted here, though he assigns the first step to Proto-Germanic where Ringe and Taylor argue for independent Norse and West Germanic mergers. He also registers the retained-sibilant residue directly relevant to this rule's \emph{meorde} witness: his rule 404b, which he grades as resting on "very sporadic" evidence, covers the \emph{mēd}/\emph{meord} 'reward' doublet [@Barrack1975, pp. 101--102]. His orderings are formal, not chronological [@Barrack1975, p. 34].
+
 ### SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism}
 
 ```foma
@@ -2206,7 +2258,7 @@ define EAFRhotacism [
 ];
 ```
 
-Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc [mízdai]{.recon} ‘meed’ yields [*merde*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2127" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2127:1"} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes no output.
+Breaking supplies the decisive upper boundary. If rhotacism is delayed until after [SC044 OEBreaking](#rule-OEBreaking), PGmc [mízdai]{.recon} ‘meed’ yields [*merde*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2179" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2179:1"} rather than expected OE *meorde* ‘meed’. Moving rhotacism earlier within the tested range changes no output.
 
 The lexical evidence thus supplies a terminus ante quem but no terminus post quem. The lower boundary rests on the historical analyses cited above: Ringe and Taylor put rhotacism at the end of the sequence of \emph{*z}-losses — "first \emph{*z} was lost in a variety of environments ..., then all surviving \emph{*z} became \emph{*r}" [@RingeTaylor2014, p. 87, §3.3.1] — and Crist observes that the deletions distinguish \emph{*z} from \emph{*r} and so must precede the merger [@Crist2002, pp. 2--3]. The rule is accordingly ordered after the three final-\emph{*z} losses ([SC096 RootNounNomZLoss](#rule-RootNounNomZLoss), [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), and [SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss)) and before breaking, so that the derivation follows the reconstructed chronology.
 
@@ -2337,6 +2389,17 @@ nasal can be removed. The order of
 [SC026 EAFNasalSpirantLengthening](#rule-EAFNasalSpirantLengthening) before
 [SC027 EAFNasalSpirantLoss](#rule-EAFNasalSpirantLoss) is a requirement of the
 statement, not evidence for two successive historical stages.
+
+Barrack's cascade concurs on both the geography and the two-law distinction.
+He states the North Sea development as Ingvaeonic rule 121, locating it in
+the Old English and Old Frisian area with Old Saxon retaining free
+variation, and cites \emph{ōþer} among his witnesses [@Barrack1975, p. 44];
+he orders it explicitly after his Proto-Germanic rule 119, the common
+Germanic nasal loss before the velar fricative
+[@Barrack1975, pp. 42--44]. Two differences of framework apply: he models
+the change as a window of free variation rather than a categorical law
+[@Barrack1975, pp. 21--23], and his orderings are formal rather than
+chronological [@Barrack1975, p. 34].
 
 ### \CAPRRuleHeading{SC026. North Sea Germanic nasal-spirant law, first step}{EAFNasalSpirantLengthening} {#rule-EAFNasalSpirantLengthening}
 
@@ -2473,8 +2536,8 @@ define EAFLongANasalRounding [
 The rule consumes the \emph{*ā} created by
 [SC024 PNWGmcLongELowering](#rule-PNWGmcLongELowering): displacing the lowering
 after this rule leaves the nasalization without an input, and [mḗnōθz]{.recon}
-‘month’ surfaces as [*mānaþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2394" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2394:1"} in place of OE *mōnaþ* ‘month’, [spḗnuz]{.recon}
-‘spoon’ as [*spān*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2395" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2395:1"} in place of *spōn* ‘spoon’. Its output is consumed in turn by
+‘month’ surfaces as [*mānaþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2457" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2457:1"} in place of OE *mōnaþ* ‘month’, [spḗnuz]{.recon}
+‘spoon’ as [*spān*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2458" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2458:1"} in place of *spōn* ‘spoon’. Its output is consumed in turn by
 [SC104 EAFNasalizedLowRounding](#rule-EAFNasalizedLowRounding), which supplies
 the rounded vowel that the two words actually show.
 
@@ -2484,7 +2547,7 @@ creates a new long \emph{ā}, and that vowel was never nasalized and never
 rounded before nasals: *stān* ‘stone’ and *hām* ‘home’ keep \emph{ā}. Stating
 the monophthongization before this rule makes the new vowel eligible for
 nasalization and hence for rounding, and the cascade then wrongly yields
-[*stōn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2405" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2405:1"} and [*hōm*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2405" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2405:2"}. This is the same chronological inference
+[*stōn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2468" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2468:1"} and [*hōm*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2468" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2468:2"}. This is the same chronological inference
 Campbell draws for the fronting: the treatments of the old low vowel were
 complete, or at least under way, before \emph{ai}-monophthongization supplied a
 new one [@Campbell1959, pp. 52--53, §132; @RingeTaylor2014, pp. 169--170].
@@ -2579,8 +2642,8 @@ The counterpart is what the rule leaves alone. [stáinaz]{.recon} ‘stone’ an
 [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization), which follows
 this rule, and their vowel was never nasalized; they surface as *stān* ‘stone’ and
 *hām* ‘home’. Placing the monophthongization before the nasalization and the rounding
-makes that vowel eligible and the cascade then yields [*stōn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2500" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2500:1"} and
-[*hōm*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2501" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2501:1"}, which is the chronological inference Campbell draws for the
+makes that vowel eligible and the cascade then yields [*stōn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2563" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2563:1"} and
+[*hōm*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2564" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2564:1"}, which is the chronological inference Campbell draws for the
 treatments of the old low vowel generally
 [@Campbell1959, pp. 52--53, §132; @RingeTaylor2014, pp. 169--170].
 
@@ -2603,12 +2666,12 @@ define EAFLongAFronting [
 ];
 ```
 
-The first clause fronts \emph{*ā} before any oral consonant other than \emph{*w}; the second admits the fronting before \emph{*w} exactly when a high front vocalic follows. The two corpus witnesses of the \emph{w} condition form a minimal contrast. [sḗaną]{.recon} 'to sow', whose hiatus-filling \emph{w} is supplied by [SC102 EAFHiatusWInsertion](#rule-EAFHiatusWInsertion), reaches this rule as \emph{*sāwaną} and is left unfronted, surfacing as *sāwan* 'to sow'; were the \emph{w}-block removed, the cascade would deliver [*sǣwan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2524" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2524:1"} instead. [lḗwijaną]{.recon} 'to betray', whose inherited \emph{w} is followed by \emph{*i}, is fronted by the second clause to \emph{*lǣwijaną} at this rule's own stage — before, and independently of, the much later i-umlaut — and surfaces as *lǣwan* 'to betray'.
-The rule consumes the \emph{*ā} created by [SC024 PNWGmcLongELowering](#rule-PNWGmcLongELowering); displaced before the lowering, it has nothing to front, and [skḗpą]{.recon} 'sheep' surfaces as [*sċāp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2525" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2525:1"} rather than OE *sċēap* 'sheep', [jḗrą]{.recon} 'year' as [*ġār*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2525" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2525:2"} rather than *ġēar* 'year', [slḗpaną]{.recon} 'to sleep' as [*slāpan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2525" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2525:3"} rather than *slǣpan* 'to sleep'.
+The first clause fronts \emph{*ā} before any oral consonant other than \emph{*w}; the second admits the fronting before \emph{*w} exactly when a high front vocalic follows. The two corpus witnesses of the \emph{w} condition form a minimal contrast. [sḗaną]{.recon} 'to sow', whose hiatus-filling \emph{w} is supplied by [SC102 EAFHiatusWInsertion](#rule-EAFHiatusWInsertion), reaches this rule as \emph{*sāwaną} and is left unfronted, surfacing as *sāwan* 'to sow'; were the \emph{w}-block removed, the cascade would deliver [*sǣwan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2587" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2587:1"} instead. [lḗwijaną]{.recon} 'to betray', whose inherited \emph{w} is followed by \emph{*i}, is fronted by the second clause to \emph{*lǣwijaną} at this rule's own stage — before, and independently of, the much later i-umlaut — and surfaces as *lǣwan* 'to betray'.
+The rule consumes the \emph{*ā} created by [SC024 PNWGmcLongELowering](#rule-PNWGmcLongELowering); displaced before the lowering, it has nothing to front, and [skḗpą]{.recon} 'sheep' surfaces as [*sċāp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2588" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2588:1"} rather than OE *sċēap* 'sheep', [jḗrą]{.recon} 'year' as [*ġār*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2588" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2588:2"} rather than *ġēar* 'year', [slḗpaną]{.recon} 'to sleep' as [*slāpan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2588" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2588:3"} rather than *slǣpan* 'to sleep'.
 
-Two later boundaries carry real historical content. First, the fronting must precede the completion of [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization): the \emph{ā} that arose from \emph{*ai} was never fronted — *stān* 'stone', *hām* 'home', *lāþ* 'hostile', *rāp* 'rope', *tācn* 'token', *gāst* 'spirit' all keep the back vowel. Campbell draws exactly this chronological inference [@Campbell1959, pp. 52--53, §132], and Ringe and Taylor endorse it as cogent [@RingeTaylor2014, pp. 169--170]; in the present cascade the inference is enforced by rule order, and displacing the fronting after the monophthongization wrongly yields [*lǣþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527:1"}, [*rǣp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527:2"}, [*tǣcn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527:3"}, [*sǣwol*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527:4"}, and [*ġēast*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2527:5"}. Historically the two changes may well have overlapped in time; the discrete ordering is the grammar's way of stating that inherited \emph{ā} had been fronted before the new \emph{ā} arose.
+Two later boundaries carry real historical content. First, the fronting must precede the completion of [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization): the \emph{ā} that arose from \emph{*ai} was never fronted — *stān* 'stone', *hām* 'home', *lāþ* 'hostile', *rāp* 'rope', *tācn* 'token', *gāst* 'spirit' all keep the back vowel. Campbell draws exactly this chronological inference [@Campbell1959, pp. 52--53, §132], and Ringe and Taylor endorse it as cogent [@RingeTaylor2014, pp. 169--170]; in the present cascade the inference is enforced by rule order, and displacing the fronting after the monophthongization wrongly yields [*lǣþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590:1"}, [*rǣp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590:2"}, [*tǣcn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590:3"}, [*sǣwol*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590:4"}, and [*ġēast*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2590:5"}. Historically the two changes may well have overlapped in time; the discrete ordering is the grammar's way of stating that inherited \emph{ā} had been fronted before the new \emph{ā} arose.
 
-Second, the fronting must precede [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), which operated on the already-fronted vowel: \emph{ǣ} > \emph{ēa} after the palatals, as in *sċēap* 'sheep' and *ġēar* 'year' [@Campbell1959, pp. 69--70, §185; @RingeTaylor2014, pp. 215--216, §6.5.1]. Displaced after the diphthongization, the cascade yields [*sċǣp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2529" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2529:1"} and [*ġǣr*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2529" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2529:2"} instead.
+Second, the fronting must precede [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization), which operated on the already-fronted vowel: \emph{ǣ} > \emph{ēa} after the palatals, as in *sċēap* 'sheep' and *ġēar* 'year' [@Campbell1959, pp. 69--70, §185; @RingeTaylor2014, pp. 215--216, §6.5.1]. Displaced after the diphthongization, the cascade yields [*sċǣp*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2592" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2592:1"} and [*ġǣr*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2592" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2592:2"} instead.
 
 \newpage
 
@@ -2720,6 +2783,28 @@ late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
 English phonological history, when the syllabic structure of the language
 began to shift toward the more reduced profile of Middle English.
 
+Across this chapter the densest independent parallel is Barrack's West
+Saxon cascade, whose focus — West Saxon to the beginning of the eleventh
+century [@Barrack1975, p. 19] — coincides with the present target. His
+statements most relevant here include velar palatalization as rule 170a
+[@Barrack1975, p. 57]; back umlaut as rules 210 and 220
+[@Barrack1975, pp. 63--66]; the \emph{weor-} > \emph{wur-} development as
+rule 320, his showcase for progressively widening environments
+[@Barrack1975, pp. 75--76, 23--25]; high-vowel apocope and syncope of
+originally long vowels as rules 345 and 358 [@Barrack1975, pp. 85--91];
+and, among the late consonant adjustments, \emph{sk}-metathesis in
+\emph{fiscas}/\emph{fixas} 'fishes' as rule 440b [@Barrack1975, p. 113],
+the \emph{bringþ}-type dissimilation as 477a [@Barrack1975, p. 123],
+stop fortition of the \emph{fint}-type as 481.1
+[@Barrack1975, pp. 124--125], and the nasal assimilation of \emph{efn} >
+\emph{emn} 'even' as 484d [@Barrack1975, p. 127]. On r-metathesis
+(rule 459.1) he records that the relative order of breaking and metathesis
+varies by dialect in the \emph{beornan}/\emph{birnan} 'to burn' family
+[@Barrack1975, pp. 115--117], a conditioning-relevant observation held for
+separate adjudication in the Barrack dossier. His orderings are formal, not
+chronological [@Barrack1975, p. 34], and are cited here as corroborating
+statements of conditioning, never as dating evidence.
+
 ## The English partial chains
 
 The working historical scaffold has several connected chains, not one
@@ -2782,7 +2867,7 @@ in *ymbe* 'around'; weak-final *and* 'and' and stressed *ġiest* 'guest' /
 [@RingeTaylor2014, pp. 41--42, 55, 57--58; @Campbell1959, p. 283].
 
 The computational retained-i counterfactual for you yields a predicted
-[*īei*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2703" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2703:1"}, not a source-backed strong Old English spelling: the
+[*īei*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2788" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2788:1"}, not a source-backed strong Old English spelling: the
 existing w-loss before i intervenes before mutation. It tests the
 represented alternative context, not an additional attestation.
 Unmarked evaluation explicitly selects strong-final citation context;
@@ -3107,7 +3192,7 @@ produce different lexical consequences.
 Two further distinctions are essential to their relative chronology. First,
 the raising of inherited Germanic \emph{*e} to \emph{*i} before a following
 high front vocoid is much earlier than Old English i-umlaut. Ringe reconstructs
-PGmc [giftiz]{.recon .iv lang=pgmc sort=giftiz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3028" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3028:1"} 'gift', with OE plural *ġifta*
+PGmc [giftiz]{.recon .iv lang=pgmc sort=giftiz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3113" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3113:1"} 'gift', with OE plural *ġifta*
 'wedding', and discusses that earlier raising separately
 [@Ringe2017, p. 135, pp. 151--153]. Ringe and Taylor likewise caution that
 raising of inherited \emph{*e} occurred hundreds of years before the Old
@@ -3183,7 +3268,7 @@ define EAFAiMonophthongization Ctx([
 ]);
 ```
 
-The soul form fixes the relation to interstress raising. If the monophthongization is delayed until after that change, PGmc [sáiwalō]{.recon} 'soul' yields [*sāwel*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3104" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3104:1"} rather than expected OE *sāwol* 'soul'. An earlier placement changes no output. This shows that [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising) in the modeled sequence.
+The soul form fixes the relation to interstress raising. If the monophthongization is delayed until after that change, PGmc [sáiwalō]{.recon} 'soul' yields [*sāwel*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3189" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3189:1"} rather than expected OE *sāwol* 'soul'. An earlier placement changes no output. This shows that [SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization) must come before [SC036 OEInterStressRaising](#rule-OEInterStressRaising) in the modeled sequence.
 
 The unstressed development \emph{*ai > *ē} in final and nonfinal syllables is a separate and earlier change; see [SC014 PNWGmcUnstressedAiMonophthongization](#rule-PNWGmcUnstressedAiMonophthongization).
 
@@ -3642,7 +3727,7 @@ define OECompoundLinkingSyncope Ctx([
 ]);
 ```
 
-The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc [régna-bùgô]{.recon} ‘rainbow’ yields [*reġnefoga*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3563" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3563:1"} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
+The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc [régna-bùgô]{.recon} ‘rainbow’ yields [*reġnefoga*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3648" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3648:1"} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
 
 ## Weak medial vocalism
 
@@ -3869,7 +3954,7 @@ define OEWICombinativeUUmlaut Ctx([
 ]);
 ```
 
-The *wuduwe* ‘widow’ derivation answers one narrow question about \emph{wi}-forms. If [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [wíduwōn]{.recon} ‘widow’ yields [*wudowe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3790" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3790:1"} rather than expected OE *wuduwe*. This one-sided witness requires combinative u-umlaut to precede medial lowering and supplies no lower boundary.
+The *wuduwe* ‘widow’ derivation answers one narrow question about \emph{wi}-forms. If [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) is delayed until after [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [wíduwōn]{.recon} ‘widow’ yields [*wudowe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3875" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3875:1"} rather than expected OE *wuduwe*. This one-sided witness requires combinative u-umlaut to precede medial lowering and supplies no lower boundary.
 
 ## Final bare-\emph{a} loss
 
@@ -3888,7 +3973,7 @@ define PWGmcFinalBareALoss Ctx([
 ]);
 ```
 
-The two sides of final bare-\emph{a} loss rest on different evidence. Applied before final \emph{z}-deletion, the change gives the wrong outputs: PGmc [bárdaz]{.recon} ‘beard’ yields [*bearda*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809:1"} rather than expected OE *beard* ‘beard’, and PGmc [kámbaz]{.recon} ‘comb’ yields [*camba*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809:2"} rather than expected *camb* ‘comb’. Applied after restoration, PGmc [kráftaz]{.recon} ‘craft’ yields [*craft*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809:3"} rather than expected OE *cræft* ‘craft’, and PGmc [dágaz]{.recon} ‘day’ yields [*dag*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3809:4"} rather than expected *dæġ* ‘day’. The distant lower limit follows final \emph{z}-loss; the local feeding relation precedes restoration, which requires the environment created by the vowel loss.
+The two sides of final bare-\emph{a} loss rest on different evidence. Applied before final \emph{z}-deletion, the change gives the wrong outputs: PGmc [bárdaz]{.recon} ‘beard’ yields [*bearda*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894:1"} rather than expected OE *beard* ‘beard’, and PGmc [kámbaz]{.recon} ‘comb’ yields [*camba*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894:2"} rather than expected *camb* ‘comb’. Applied after restoration, PGmc [kráftaz]{.recon} ‘craft’ yields [*craft*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894:3"} rather than expected OE *cræft* ‘craft’, and PGmc [dágaz]{.recon} ‘day’ yields [*dag*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3894:4"} rather than expected *dæġ* ‘day’. The distant lower limit follows final \emph{z}-loss; the local feeding relation precedes restoration, which requires the environment created by the vowel loss.
 
 ## Surviving bimoric \emph{*ō} unrounding
 
@@ -3913,7 +3998,7 @@ define PWGmcSurvivingBimoricOUnrounding Ctx([
 ]);
 ```
 
-The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3834" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3834:1"} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
+The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3919" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3919:1"} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
 
 ## Technical support: retained unstressed fronting
 
@@ -4049,7 +4134,7 @@ histories, discussed with
 
 Breaking must encounter the vowel created by brightening and must precede
 the rule that would otherwise palatalize its velar trigger in *feoh*
-'cattle' and *feohtan* 'fight'. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [sláxaną]{.recon} ‘slay’ yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. After [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), PGmc [féxu]{.recon} ‘cattle’ yields [*fehu*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3970" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3970:1"} rather than expected OE *feoh*, and PGmc [féxtaną]{.recon} ‘fight’ yields [*fehtan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3970" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3970:2"} rather than expected *feohtan*. The fronting relation feeds breaking. The fee/fight relation instead protects
+'cattle' and *feohtan* 'fight'. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [sláxaną]{.recon} ‘slay’ yields \emph{sleaan | slēaan} rather than expected OE *slēan* ‘slay’. After [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization), PGmc [féxu]{.recon} ‘cattle’ yields [*fehu*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4055" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4055:1"} rather than expected OE *feoh*, and PGmc [féxtaną]{.recon} ‘fight’ yields [*fehtan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4055" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4055:2"} rather than expected *feohtan*. The fronting relation feeds breaking. The fee/fight relation instead protects
 breaking's velar trigger from premature palatalization: those forms are
 displacement negatives, not live
 [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization)
@@ -4073,12 +4158,12 @@ The live population concerns voiceless x, as in *hēafod* 'head' and
 *feohtan* 'fight', breaking removes the original front-vowel context:
 they do not change at this rule in the live derivation. Moving the rule
 before [SC044 OEBreaking](#rule-OEBreaking) instead consumes its velar
-trigger, yielding [*fehu*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3994" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3994:1"} and [*fehtan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3994" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3994:2"}. This is
+trigger, yielding [*fehu*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4079" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4079:1"} and [*fehtan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4079" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4079:2"}. This is
 counterbleeding protection, not direct feeding.
 
 The distant *six* 'six' displacement test supplies only a broader
 constraint: after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut),
-PGmc [séxs]{.recon} ‘six’ yields [*sihs*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3999" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3999:1"} rather than expected
+PGmc [séxs]{.recon} ‘six’ yields [*sihs*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4084" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4084:1"} rather than expected
 OE *six*. Neither test dates voiced g. Its articulation and disputed
 merger are separately treated under
 [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and
@@ -4103,7 +4188,7 @@ define OEARestoration FootCtx((
 ));
 ```
 
-Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasal-tail changes. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [bákaną]{.recon} ‘bake’ yields [*bæcan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024:1"} rather than expected OE *bacan* ‘bake’, and PGmc [fáraną]{.recon} ‘fare’ yields [*færan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024:2"} rather than expected *faran* ‘fare’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), [bákaną]{.recon} again yields [*bæcan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024:3"} instead of *bacan*, while PGmc [wádaną]{.recon} ‘wade’ yields [*wædan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4024:4"} instead of *wadan* ‘wade’. These independent witness pairs place restoration after brightening and before secondary nasalization.
+Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasal-tail changes. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [bákaną]{.recon} ‘bake’ yields [*bæcan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109:1"} rather than expected OE *bacan* ‘bake’, and PGmc [fáraną]{.recon} ‘fare’ yields [*færan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109:2"} rather than expected *faran* ‘fare’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), [bákaną]{.recon} again yields [*bæcan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109:3"} instead of *bacan*, while PGmc [wádaną]{.recon} ‘wade’ yields [*wædan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4109:4"} instead of *wadan* ‘wade’. These independent witness pairs place restoration after brightening and before secondary nasalization.
 
 ## Heavy-syllable nasal apocope
 
@@ -4131,7 +4216,7 @@ define OEHeavySyllableNasalApocope Ctx([
 
 The old lower-bound test depended on the superseded straw proxy:
 moving apocope before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong)
-made PGmc [stráwą]{.recon} ‘straw’ yield [*stræw*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4052" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4052:1"} rather than
+made PGmc [stráwą]{.recon} ‘straw’ yield [*stræw*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4137" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4137:1"} rather than
 attested OE *strēaw* 'straw'. The adopted regular endingless branch now reaches
 reconstructed \emph{*strēa} through
 [SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw), before this
@@ -4144,8 +4229,8 @@ long-diphthong law
 
 The separate recorded upper-bound test is unchanged: after
 [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc
-[bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4065" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4065:1"} rather than expected OE
-*bacan*, and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4066" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4066:1"}
+[bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4150" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4150:1"} rather than expected OE
+*bacan*, and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4151" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4151:1"}
 rather than expected *bindan*, alongside a broad \emph{-en} failure set.
 That secondary-nasalization dependency is not newly adjudicated here.
 
@@ -4159,7 +4244,7 @@ define OESecondaryNasalization Ctx([
 ]);
 ```
 
-The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080:1"} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080:2"} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080:3"} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4080:4"} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
+The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165:1"} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165:2"} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165:3"} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4165:4"} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
 
 ## B allophony
 
@@ -4190,7 +4275,7 @@ define PGmcBAllophony Ctx([
 ]);
 ```
 
-The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4111" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4111:1"} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
+The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4196" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4196:1"} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
 
 ## Sievers-law syncope
 
@@ -4215,7 +4300,7 @@ define SieversLawSyncope Ctx([
 ]);
 ```
 
-The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} 'stretch' yields [*strecċan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4136" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4136:1"} rather than expected OE *streċċan* 'stretch'; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.
+The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \emph{*i} before \emph{*j}, must precede palatalization. If [SC050 SieversLawSyncope](#rule-SieversLawSyncope) follows [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [strákkijaną]{.recon} 'stretch' yields [*strecċan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4221" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4221:1"} rather than expected OE *streċċan* 'stretch'; earlier placement creates no comparably precise error. The single cluster witness therefore places syncope before velar palatalization.
 
 ## Palatalization of \emph{*sk} to \emph{*sc}
 
@@ -4224,7 +4309,16 @@ The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \e
 The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the recognizable early
 cluster changes in the larger palatalization zone. Campbell distinguishes the
 cluster from plain velars when he remarks that \emph{*sk} is especially prone to
-palatalization and assibilation [@Campbell1959, p. 278, §440]. Hogg gives the
+palatalization and assibilation [@Campbell1959, p. 278, §440]. Barrack
+treats the cluster in the same zone as his 440 series: 440a summarizes the
+developments [@Barrack1975, pp. 112--113] and 440c states the
+palatalization of \emph{*sk} itself [@Barrack1975, p. 113], kept beside, but
+distinct from, plain velar palatalization (his rule 170a)
+[@Barrack1975, p. 57], in agreement with the structural placement adopted
+here. He also registers the typologically separate Late West Saxon
+metathesis of the cluster in \emph{fiscas}/\emph{fixas} 'fishes' as rule
+440b [@Barrack1975, p. 113], a written-period development that presupposes
+the earlier palatalization boundary rather than contradicting it. Hogg gives the
 same change a clearer structural place by treating \emph{*sk} beside the palatalization
 of plain velars and before the later West Saxon diphthongal developments
 [@HoggPhonology1992, pp. 106--108, 113]. Ringe and Taylor make the same sequence
@@ -4286,6 +4380,19 @@ is narrower than Fulk's before-front-vowel description
 [@RingeTaylor2014, pp. 203--204; @Fulk2018, pp. 130--132].
 The present fricative implementation retains its broader domain; this
 merger decision is not a covert adoption of the narrower table.
+
+Barrack's cascade distributes the velar material over several rules:
+palatalization proper as rule 170a [@Barrack1975, p. 57], the
+palatal/velar alternations of the written period as rule 428, with
+\emph{streccan} 'stretch' among the cited forms [@Barrack1975, p. 109], and
+the back-and-forth adjustments between palatals and velars as rules
+432--435, including the \emph{hwilic} 'which' type and
+\emph{ortgeard}/\emph{feccan} [@Barrack1975, pp. 110--112]. His
+decomposition is finer than the class-distinct account adopted here and is
+keyed to Campbell's paragraphs rather than to the fricative/stop class
+distinction; it corroborates the breadth of the palatalization zone without
+bearing on the disputed merger chronology, since his orderings are formal,
+not chronological [@Barrack1975, p. 34].
 
 ### SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal}
 
@@ -4392,7 +4499,7 @@ with velar initial k, versus *dæġe* 'day'.
 | After mutation | \emph{*kǣjæ}, without new initial palatalization | \emph{*dæʝæ}, without æ-raising |
 | After merger and native realization | *cǣġe* | *dæġe* |
 
-Premature merger instead predicts pre-OE [dejæ]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4313" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4313:1"} under
+Premature merger instead predicts pre-OE [dejæ]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4420" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4420:1"} under
 these premises. The experiment tests that source-based contrast; the
 existing day nominative is not the oblique discriminator
 [@Hogg1979, pp. 105--110; @RingeTaylor2014, p. 204].
@@ -4400,7 +4507,7 @@ existing day nominative is not the oblique discriminator
 The complete key suffix additionally requires
 [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization)
 to retain j after its non-high long front vowel. A correct mutation
-checkpoint followed by model-only [*cǣie*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4321" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4321:1"} would not constitute a
+checkpoint followed by model-only [*cǣie*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4428" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4428:1"} would not constitute a
 correct native derivation [@Hogg1979, p. 105].
 
 ## Pretonic front-vowel raising
@@ -4675,7 +4782,7 @@ define OEWLossBeforeI Ctx([
 
 The history of *sǣ* ‘sea’ explains why non-initial \emph{*w} disappeared before final unstressed \emph{*i}. Campbell describes the loss, Ringe and Taylor derive the form from \emph{*saiwi-}/\emph{*sawi-}, and Luick gives the parallel trajectory [@Campbell1959, p. 167, §406; @RingeTaylor2014, p. 257, §6.7.1; @Luick1914, p. 173, §187]. Loss of the glide allowed the preceding vowel to undergo the later fronting and lengthening.
 
-The same witness supplies two distant limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4596" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4596:1"} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
+The same witness supplies two distant limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4703" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4703:1"} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
 
 ## West Saxon palatal diphthongization
 
@@ -4746,7 +4853,7 @@ The breadth of i-umlaut appears in lexical classes that share only a following h
 
 The selected cow and lung inputs are negative controls on the present
 palatalization rule. Moving the composite umlaut rule before that rule yields
-[*ċȳ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4667" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4667:1"} and [*lunġen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4667" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4667:2"} instead of *cȳ* 'cow' and *lungen* 'lung'. This
+[*ċȳ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4774" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4774:1"} and [*lunġen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4774" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4774:2"} instead of *cȳ* 'cow' and *lungen* 'lung'. This
 constrains the current rule's productive domain; it does not assign every
 consonantal layer the same date. In particular the selected *cȳ* is a
 dative-singular input, not evidence from an assumed generic plural.
@@ -4882,8 +4989,8 @@ OEVelarPalatalization](#rule-OEVelarPalatalization),
 the developments behind *bīeġan* ‘bend’ and *sēċan* ‘seek’ are lost. Related
 forms such as *fylġan* ‘follow’,
 *heċġ* ‘hedge’, and *sengan* ‘singe’ fail in the same broader palatalization
-zone. PGmc [báugijaną]{.recon} 'bow' yields [*bēaġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4803" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4803:1"} rather than expected OE *bīeġan*,
-and PGmc [sōkijaną]{.recon} 'seek' yields [*sōċan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4804" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4804:1"} rather than expected *sēċan*. This
+zone. PGmc [báugijaną]{.recon} 'bow' yields [*bēaġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4910" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4910:1"} rather than expected OE *bīeġan*,
+and PGmc [sōkijaną]{.recon} 'seek' yields [*sōċan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4911" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4911:1"} rather than expected *sēċan*. This
 constrains this computational cluster consumer. It does not independently
 date all singleton-fricative articulation or merger: the latter is distinct
 from this rule and is now explicit under
@@ -4903,6 +5010,13 @@ Campbell's treatment of diphthongization before following back vowels includes
 *heofon* ‘heaven’ [@Campbell1959, p. 86, §207], while Hogg draws the instructive
 comparison with breaking [@HoggPhonology1992, p. 113]. Fulk accordingly separates back
 mutation from the earlier umlautal changes [@Fulk2018, p. 69, §4.8].
+Barrack likewise states back mutation apart from the earlier mutations, as
+his rules 210 and 212 with a continuation at 220
+[@Barrack1975, pp. 63--66]; his residual-ordering discussion uses a back
+umlaut form, \emph{heolap}, as the worked example of a rule pair whose
+formal order must be reversed for a residue (210 against his rule 355.5)
+[@Barrack1975, p. 36], which illustrates his insistence that such orderings
+are logical rather than chronological relations [@Barrack1975, p. 34].
 
 ### SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
 
@@ -4961,7 +5075,7 @@ The change to \emph{*i} before \emph{*h}-clusters can be ordered only on its
 earlier side. If palatal umlaut precedes
 [SC055 OEIUmlaut](#rule-OEIUmlaut),
 the forms behind *miht* ‘might’ and *niht* ‘night’ remain at the overdeveloped
-stage [*mieht*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4882" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4882:1"} and [*nieht*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4882" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4882:2"} rather than expected OE *miht* and *niht*.
+stage [*mieht*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4996" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4996:1"} and [*nieht*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4996" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4996:2"} rather than expected OE *miht* and *niht*.
 Consequently, i-umlaut precedes palatal umlaut. Reordering the latter against
 any tested later change leaves both witness forms unchanged.
 
@@ -5004,6 +5118,12 @@ Campbell, Hogg, Ringe and Taylor, and Fulk agree on this Old English
 development, though they differ over the extent of the surrounding syncope
 [@Campbell1959, pp. 144--145, §§345--349; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, pp. 284--303, §§6.8.1, 6.8.4; @Fulk2018, p. 91, §5.6].
+Barrack states the deletion of final high vowels as his rule 345 and
+presents it as a prime case of an environment that simplifies progressively
+over the rule's lifetime [@Barrack1975, pp. 85--86, 23--25]; the heavy-foot
+conditioning adopted here corresponds to his most restricted, earliest
+phase, while his later phases absorb the surrounding quantity developments
+that the handbooks treat as separate changes.
 
 This later loss is distinct from the West Germanic weak-word loss of
 [SC098 PWGmcUnstressedWordFinalIApocope](#rule-PWGmcUnstressedWordFinalIApocope).
@@ -5080,11 +5200,11 @@ define OEHighVowelApocope Ctx([
 
 Final \emph{*i}, \emph{*u}, and \emph{*ų} cannot disappear before completing
 their umlautal work. Applied before
-[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [kūi]{.recon} ‘cow’ yields [*cū*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5001" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5001:1"} rather than
-expected OE *cȳ* ‘cow’, and PGmc [brūdiz]{.recon} ‘bride’ yields [*brūd*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5002" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5002:1"} rather than
+[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [kūi]{.recon} ‘cow’ yields [*cū*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5121" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5121:1"} rather than
+expected OE *cȳ* ‘cow’, and PGmc [brūdiz]{.recon} ‘bride’ yields [*brūd*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5122" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5122:1"} rather than
 expected OE *brȳd* ‘bride’. Conversely, if apocope waits until after
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening),
-PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrht*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5005" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5005:1"} rather than expected OE *fyrhte*
+PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrht*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5125" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5125:1"} rather than expected OE *fyrhte*
 ‘fright’. The three witnesses establish the sequence i-umlaut, high-vowel
 apocope, unstressed long-vowel shortening.
 
@@ -5116,10 +5236,10 @@ non-nominative paradigm cell when the nominative does not supply the required
 derivation. Within this selected genitive derivation, the same input fixes both
 ordering boundaries. Before
 [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), PGmc
-[fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5037" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5037:1"} rather than expected OE *fyrhte* ‘fright’.
+[fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5157" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5157:1"} rather than expected OE *fyrhte* ‘fright’.
 After [SC072
 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc
-[fúrxtīnaz]{.recon} again yields [*fyrhten*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5040" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5040:1"} rather than expected *fyrhte* 'fright'. I
+[fúrxtīnaz]{.recon} again yields [*fyrhten*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5160" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5160:1"} rather than expected *fyrhte* 'fright'. I
 therefore order final bare-a loss, stem-final n-loss, and unstressed long-vowel
 shortening in that sequence. Both boundaries are firm within the selected
 genitive derivation and depend on one inherited lexeme/paradigm.
@@ -5131,7 +5251,11 @@ genitive derivation and depend on one inherited lexeme/paradigm.
 Loss of medial \emph{*i} before dentals belongs to the late weak-tail history
 described by Hogg, Ringe and Taylor, and Fulk
 [@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
-@Fulk2018, p. 91, §5.6].
+@Fulk2018, p. 91, §5.6]. In Barrack's cascade the corresponding territory is
+covered by his syncope rules 347 and 351 [@Barrack1975, pp. 86--87], with
+further medial losses at rules 388 and 390, the latter citing \emph{meolc}
+'milk' [@Barrack1975, p. 96]; his rules are broader than the
+dental-conditioned statement here and are not coextensive with it.
 
 ```foma
 define OEMedialSyncope FootCtx([
@@ -5174,10 +5298,10 @@ define OELAdjacentSyncope Ctx([
 The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
 earlier umlaut, as *netle* ‘nettle’ and *spinl* ‘spindle’ demonstrate.
 
-Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5095" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5095:1"} rather than
-expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5096" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5096:1"} rather
+Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5219" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5219:1"} rather than
+expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5220" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5220:1"} rather
 than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
-[spénnilō]{.recon} yields [*spinnl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5098" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5098:1"} rather than expected *spinl*. The witnesses
+[spénnilō]{.recon} yields [*spinnl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5222" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5222:1"} rather than expected *spinl*. The witnesses
 therefore establish the sequence i-umlaut, l-adjacent syncope, preconsonantal
 degemination. The first relation separates two historical phases; the second is
 a direct feeding relation, since syncope creates the cluster that degemination
@@ -5213,7 +5337,7 @@ Preconsonantal \emph{*tt} and \emph{*nn} simplify only after syncope has
 created a following sonorant cluster, as in *spinl* ‘spindle’
 [@RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
-Placed before l-adjacent syncope, PGmc [spénnilō]{.recon} ‘spindle’ yields [*spinnl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5134" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5134:1"} rather
+Placed before l-adjacent syncope, PGmc [spénnilō]{.recon} ‘spindle’ yields [*spinnl*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5258" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5258:1"} rather
 than expected OE *spinl* ‘spindle’. Syncope must therefore create the cluster
 before degemination simplifies it. Reordering degemination against any tested
 later change leaves the witness unchanged, so no terminus ante quem is known.
@@ -5249,9 +5373,9 @@ The rule shortens unstressed long \emph{*ō} before a following nasal. Because t
 
 Moving the rule before
 [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss), PGmc [nḗdrōn]{.recon} ‘adder’ yields
-[*nǣdran*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5170" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5170:1"} rather than expected OE *nǣdre* ‘adder’, PGmc [érθōn]{.recon} ‘earth’ yields
-[*eorþan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5171" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5171:1"} rather than expected *eorþe* ‘earth’, and PGmc [fláskōn]{.recon} ‘flask’ yields
-[*flascan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5172" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5172:1"} rather than expected *flasce* ‘flask’. The same earlier shift also
+[*nǣdran*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5294" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5294:1"} rather than expected OE *nǣdre* ‘adder’, PGmc [érθōn]{.recon} ‘earth’ yields
+[*eorþan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5295" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5295:1"} rather than expected *eorþe* ‘earth’, and PGmc [fláskōn]{.recon} ‘flask’ yields
+[*flascan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5296" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5296:1"} rather than expected *flasce* ‘flask’. The same earlier shift also
 disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of
 failures requires [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) to follow
 [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss).
@@ -5288,7 +5412,7 @@ The rule fronts unstressed \emph{*a} to \emph{*æ} after the earlier shortening
 has created a frontable vowel but before the later shortening of unstressed
 \emph{*ō}. It produces endings such as OE \emph{-en} in *lungen* ‘lungs’.
 
-If the rule is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [lúnganjō]{.recon} ‘lungs’ yields [*lunġen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5209" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5209:1"} rather than expected OE *lungen* ‘lungs’. If the rule is delayed until after [SC071 OELateOShortening](#rule-OELateOShortening), PGmc [búrōθi]{.recon} ‘bears’ yields [*boreþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5209" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5209:2"} rather than expected OE *boraþ* ‘bears’, and PGmc [mḗnōθz]{.recon} ‘month’ yields [*mōneþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5209" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5209:3"} rather than expected *mōnaþ* ‘month’. The witness forms require [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) to follow [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and precede [SC071 OELateOShortening](#rule-OELateOShortening).
+If the rule is moved before [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization), PGmc [lúnganjō]{.recon} ‘lungs’ yields [*lunġen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5333" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5333:1"} rather than expected OE *lungen* ‘lungs’. If the rule is delayed until after [SC071 OELateOShortening](#rule-OELateOShortening), PGmc [búrōθi]{.recon} ‘bears’ yields [*boreþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5333" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5333:2"} rather than expected OE *boraþ* ‘bears’, and PGmc [mḗnōθz]{.recon} ‘month’ yields [*mōneþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5333" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5333:3"} rather than expected *mōnaþ* ‘month’. The witness forms require [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) to follow [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) and precede [SC071 OELateOShortening](#rule-OELateOShortening).
 
 The relation to [SC071 OELateOShortening](#rule-OELateOShortening) is local.
 The earlier boundary at
@@ -5325,7 +5449,7 @@ The rule shortens the remaining unstressed long \emph{*ō} after fronting. The
 shortened vowel is then resolved by the following medial/final distribution,
 not directly as \emph{a} [@StauslandJohnsen2015, pp. 28--31].
 
-Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc [búrōθi]{.recon} ‘bears’ yield [*boreþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5246" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5246:1"} rather than expected OE *boraþ* 'bears'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly).
+Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc [búrōθi]{.recon} ‘bears’ yield [*boreþ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5370" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5370:1"} rather than expected OE *boraþ* 'bears'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly).
 
 ## Medial raising of shortened unstressed o
 
@@ -5341,8 +5465,8 @@ After [SC071 OELateOShortening](#rule-OELateOShortening), the shortened vowel gi
 syllable. The rule encodes Stausland Johnsen's statistically supported account
 of West Saxon ō-verb pasts, not a general rule for inherited short \emph{*o}
 or for nominal morphology [@StauslandJohnsen2015, pp. 28--31, 36]. His
-diagnostic derivation is PGmc [wúndōdē]{.recon} ‘wounded’ > [wundode]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5262" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5262:1"}
-> OE [wundude]{.iv lang=oe sort=wundude role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5263" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5263:1"} ‘wounded’ [@StauslandJohnsen2015, pp. 28--29].
+diagnostic derivation is PGmc [wúndōdē]{.recon} ‘wounded’ > [wundode]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5386" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5386:1"}
+> OE [wundude]{.iv lang=oe sort=wundude role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5387" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5387:1"} ‘wounded’ [@StauslandJohnsen2015, pp. 28--29].
 
 ## Final lowering of shortened unstressed o
 
@@ -5356,7 +5480,7 @@ define OEFinalUnstressedOLowering Ctx([
 
 In a final syllable the same shortened vowel gives \emph{a}. Thus the existing
 month control continues PGmc [mḗnōθz]{.recon} ‘month’ through shortened
-\emph{*o} to OE [mōnaþ]{.iv lang=oe sort=monath role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5277" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5277:1"} ‘month’, while [wúndōdē]{.recon} ‘wounded’ takes
+\emph{*o} to OE [mōnaþ]{.iv lang=oe sort=monath role=evidence_form source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5401" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5401:1"} ‘month’, while [wúndōdē]{.recon} ‘wounded’ takes
 [SC099 OEMedUnstressedORaising](#rule-OEMedUnstressedORaising)
 instead. The medial/final contrast and its chronology after long-vowel
 shortening are Stausland Johnsen's analysis [@StauslandJohnsen2015,
@@ -5395,7 +5519,7 @@ The rule shortens the remaining unstressed long vowels before weak final
 syllables reach their later forms. A small group of lexical witnesses fixes its
 chronology.
 
-If the rule is moved before [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5316" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5316:1"} rather than expected OE *fyrhte* ‘fright’. If the rule is delayed until after [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5316" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5316:2"} rather than expected OE *nǣdre* ‘adder’, and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5316" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5316:3"} rather than expected *fæder* ‘father’. These outputs require [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) to follow [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) and precede [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
+If the rule is moved before [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5440" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5440:1"} rather than expected OE *fyrhte* ‘fright’. If the rule is delayed until after [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5440" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5440:2"} rather than expected OE *nǣdre* ‘adder’, and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5440" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5440:3"} rather than expected *fæder* ‘father’. These outputs require [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) to follow [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) and precede [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
 
 Shortening therefore follows the earlier weak-tail preparation and immediately
 precedes the merger.
@@ -5428,7 +5552,7 @@ Hogg places it marginally after the earlier merger
 @HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239);
 @RingeTaylor2014, pp. 334--335].
 
-Its earlier and later relations are both concrete. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5349" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5349:1"} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5349" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5349:2"} rather than expected *fæder* 'father'. If the rule is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5349" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5349:3"} rather than expected OE *tā* ‘toe’. These failures show that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), and that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss).
+Its earlier and later relations are both concrete. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5473" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5473:1"} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5473" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5473:2"} rather than expected *fæder* 'father'. If the rule is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5473" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5473:3"} rather than expected OE *tā* ‘toe’. These failures show that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), and that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss).
 
 The lexical evidence fixes the local order after
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening)
@@ -5463,7 +5587,7 @@ The rule lowers medial unstressed \emph{*i} to \emph{*e} after a preceding
 vocalic syllable. The resulting \emph{e}-outcome is reversed before
 \emph{*ng}.
 
-If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhti*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5384" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5384:1"} rather than expected OE *fyrhte* ‘fright’. If it is delayed until after [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering), PGmc [skíllingaz]{.recon} ‘shilling’ yields [*sċilleng*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5384" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5384:2"} rather than expected *sċilling* ‘shilling’. The derivations require [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) to follow [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) and precede [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering).
+If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhti*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5508" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5508:1"} rather than expected OE *fyrhte* ‘fright’. If it is delayed until after [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering), PGmc [skíllingaz]{.recon} ‘shilling’ yields [*sċilleng*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5508" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5508:2"} rather than expected *sċilling* ‘shilling’. The derivations require [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) to follow [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) and precede [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering).
 
 The evidence is narrow on each side. The rule follows unstressed long-vowel
 shortening and precedes the more specific \emph{*ng} preservation.
@@ -5482,7 +5606,7 @@ define OEMedUnstressedILowering Ctx([
 
 The rule restores \emph{*i} before \emph{*ng}, preventing the broader lowering from producing the wrong medial vowel in forms such as *sċilling* ‘shilling’.
 
-Moving the rule before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) makes PGmc [skíllingaz]{.recon} ‘shilling’ yield [*sċilleng*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5403" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5403:1"} rather than expected OE *sċilling* 'shilling'. On this evidence, I take [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering) to follow [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1). Moving it later within the tested range creates no equally sharp failure.
+Moving the rule before [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1) makes PGmc [skíllingaz]{.recon} ‘shilling’ yield [*sċilleng*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5527" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5527:1"} rather than expected OE *sċilling* 'shilling'. On this evidence, I take [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering) to follow [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1). Moving it later within the tested range creates no equally sharp failure.
 
 ## Medial unstressed-u lowering
 
@@ -5505,7 +5629,7 @@ development distinguish the two periods
 The inherited ordering evidence from *wuduwe* 'widow' remains relevant:
 delaying
 [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut) until after lowering yields
-[*wudowe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5426" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5426:1"} rather than the expected form. In the adopted sequence,
+[*wudowe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5550" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5550:1"} rather than the expected form. In the adopted sequence,
 *wuduwe* retains its medial vowel after accented \emph{*u}, whereas
 *weorold* 'world' undergoes lowering.
 The reciprocal early-lowering experiment is no longer equivalent: the
@@ -5517,7 +5641,7 @@ lowering preceded
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
 That experiment inserted a front glide vowel early in the derivation;
 delayed lowering then encountered an altered preceding nucleus and
-produced [ġeogoþ]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5438" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5438:1"}. With the adopted late
+produced [ġeogoþ]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5562" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5562:1"}. With the adopted late
 [SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide) spelling, the root retains
 phonological \emph{*u} through lowering and preserves the medial vowel.
 Moving lowering across shortening in this current architecture leaves
@@ -5605,12 +5729,12 @@ The rule reduces the remaining weak-tail vowels, preventing a broad class of
 I place the change after [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly)
 and before [SC086 OEContraction](#rule-OEContraction). Moving it before
 [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly), PGmc
-[bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5526" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5526:1"} rather than expected OE *bacan* ‘bake’, and PGmc
-[bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5527" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5527:1"} rather than expected *bindan* ‘bind’, alongside
+[bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5650" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5650:1"} rather than expected OE *bacan* ‘bake’, and PGmc
+[bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5651" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5651:1"} rather than expected *bindan* ‘bind’, alongside
 a much wider set of comparable \emph{-en} failures. If the rule is delayed until
 after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields
-[*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5530" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5530:1"} rather than expected OE *flēon* ‘flee’, and PGmc [sláxaną]{.recon} ‘slay’
-yields [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5531" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5531:1"} rather than expected *slēan* ‘slay’.
+[*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5654" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5654:1"} rather than expected OE *flēon* ‘flee’, and PGmc [sláxaną]{.recon} ‘slay’
+yields [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5655" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5655:1"} rather than expected *slēan* ‘slay’.
 
 The earlier boundary spans a wide interval and does not establish a close
 neighboring relation. The later boundary is narrower:
@@ -5644,7 +5768,7 @@ The rule removes \emph{*j} after the relevant heavy-syllable configurations,
 after the earlier umlaut-sensitive vocalism has developed.
 The affected glide is \emph{*j}.
 
-If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġelēafan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565:1"} rather than expected OE *ġelīefan* ‘believe’, PGmc [báugijaną]{.recon} ‘bow’ yields [*bēaġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565:2"} rather than expected *bīeġan* ‘bow’, and PGmc [fúlgijaną]{.recon} ‘follow’ yields [*fulġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565:3"} rather than expected *fylġan* ‘follow’. If it is delayed until after [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification), PGmc [lúnganjō]{.recon} ‘lungs’ yields [*lungenn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5565:4"} rather than expected OE *lungen* ‘lungs’. I accordingly take [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) to follow [SC055 OEIUmlaut](#rule-OEIUmlaut) and precede [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification).
+If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [galáubijaną]{.recon} ‘believe’ yields [*ġelēafan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689:1"} rather than expected OE *ġelīefan* ‘believe’, PGmc [báugijaną]{.recon} ‘bow’ yields [*bēaġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689:2"} rather than expected *bīeġan* ‘bow’, and PGmc [fúlgijaną]{.recon} ‘follow’ yields [*fulġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689:3"} rather than expected *fylġan* ‘follow’. If it is delayed until after [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification), PGmc [lúnganjō]{.recon} ‘lungs’ yields [*lungenn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5689:4"} rather than expected OE *lungen* ‘lungs’. I accordingly take [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) to follow [SC055 OEIUmlaut](#rule-OEIUmlaut) and precede [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification).
 
 The earlier boundary is broad, but the relation to final geminate
 simplification is local.
@@ -5663,7 +5787,7 @@ define OEFinalGeminateSimplification [
 
 The rule removes the extra final nasal in forms where the preceding derivation has already created a final geminate.
 
-Moving the rule before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) makes PGmc [lúnganjō]{.recon} ‘lungs’ yield [*lungenn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5584" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5584:1"} rather than expected OE *lungen* 'lungs'. These failures require [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification) to follow [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving the rule before [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy) makes PGmc [lúnganjō]{.recon} ‘lungs’ yield [*lungenn*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5708" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5708:1"} rather than expected OE *lungen* 'lungs'. These failures require [SC080 OEFinalGeminateSimplification](#rule-OEFinalGeminateSimplification) to follow [SC079 OEJLossAfterHeavy](#rule-OEJLossAfterHeavy). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 
 ## J-strengthening after front diphthongs
 
@@ -5694,7 +5818,7 @@ define OEJStrengtheningAfterFrontDiphthong [
 
 After the relevant front diphthongs, \emph{*j} first strengthened to a consonantal outcome; otherwise it would have vocalized too early.
 
-If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [stráwjaną]{.recon} ‘strew’ yields [*strēaġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5615" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5615:1"} rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), the same PGmc form yields [*strīeian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5615" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5615:2"} rather than *strīeġan*. The order test requires [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) to follow [SC055 OEIUmlaut](#rule-OEIUmlaut) and precede [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
+If the rule is moved before [SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [stráwjaną]{.recon} ‘strew’ yields [*strēaġan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5739" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5739:1"} rather than expected OE *strīeġan* ‘strew’. If it is delayed until after [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization), the same PGmc form yields [*strīeian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5739" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5739:2"} rather than *strīeġan*. The order test requires [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) to follow [SC055 OEIUmlaut](#rule-OEIUmlaut) and precede [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization).
 
 The earlier constraint reaches back to [SC055 OEIUmlaut](#rule-OEIUmlaut) and
 therefore defines a wide interval. The *strīeġan* 'strew' derivation fixes the local
@@ -5712,7 +5836,7 @@ define OEIntervocalicJVocalization [
 ```
 
 The former unrestricted VjV matcher wrongly gave model-only
-[*cǣie*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5633" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5633:1"} instead of *cǣġe* 'key'. Hogg's pre-OE
+[*cǣie*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5757" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5757:1"} instead of *cǣġe* 'key'. Hogg's pre-OE
 \emph{*kǣjæ} retains the glide [@Hogg1979, p. 105]. The bounded rule
 therefore excludes preceding non-high long front monophthongs.
 
@@ -5731,7 +5855,7 @@ The separately represented fricative ʝ passes through this zone without
 being treated as inherited j. Its later merger belongs to
 [SC109 OEPalatalFricativeMerger](#rule-OEPalatalFricativeMerger).
 
-Moving the rule before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) makes PGmc [stráwjaną]{.recon} ‘strew’ yield [*strīeian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652:1"} rather than expected OE *strīeġan* ‘strew’. Delaying it until after [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) makes PGmc [búrōjaną]{.recon} ‘bore’ yield [*boreian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652:2"} rather than expected OE *borian* ‘bore’, PGmc [xándlōjaną]{.recon} ‘handle’ yield [*handleian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652:3"} rather than expected *handlian* ‘handle’, and PGmc [mákōjaną]{.recon} ‘make’ yield [*maceian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5652:4"} rather than expected *macian* ‘make’. The witness forms require [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) to follow [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) and precede [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction).
+Moving the rule before [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) makes PGmc [stráwjaną]{.recon} ‘strew’ yield [*strīeian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776:1"} rather than expected OE *strīeġan* ‘strew’. Delaying it until after [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) makes PGmc [búrōjaną]{.recon} ‘bore’ yield [*boreian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776:2"} rather than expected OE *borian* ‘bore’, PGmc [xándlōjaną]{.recon} ‘handle’ yield [*handleian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776:3"} rather than expected *handlian* ‘handle’, and PGmc [mákōjaną]{.recon} ‘make’ yield [*maceian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5776:4"} rather than expected *macian* ‘make’. The witness forms require [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) to follow [SC081 OEJStrengtheningAfterFrontDiphthong](#rule-OEJStrengtheningAfterFrontDiphthong) and precede [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction).
 
 [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) is
 therefore ordered between strengthening and contraction.
@@ -5750,7 +5874,7 @@ define OEUnstressedEIContraction [
 
 The rule contracts the unstressed \emph{ei}-like sequence that the preceding vocalization would otherwise leave behind in forms such as *borian* ‘bore’ and *liccian* ‘lick’.
 
-Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) makes PGmc [búrōjaną]{.recon} ‘bore’ yield [*boreian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5671" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5671:1"} rather than expected OE *borian* 'bore', and PGmc [líkkōjaną]{.recon} ‘lick’ yield [*licceian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5671" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5671:2"} rather than expected *liccian* 'lick'. The contrast requires [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) to follow [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization) makes PGmc [búrōjaną]{.recon} ‘bore’ yield [*boreian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5795" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5795:1"} rather than expected OE *borian* 'bore', and PGmc [líkkōjaną]{.recon} ‘lick’ yield [*licceian*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5795" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5795:2"} rather than expected *liccian* 'lick'. The contrast requires [SC083 OEUnstressedEIContraction](#rule-OEUnstressedEIContraction) to follow [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJVocalization). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 
 ## Intervocalic h-loss
 
@@ -5775,7 +5899,7 @@ define OEHLoss [
 
 The rule removes intervocalic \emph{*h}, creating the hiatus that later contraction must resolve.
 
-If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696:1"} rather than expected OE *tā* ‘toe’. If it is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696:2"} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696:3"} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696:4"} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} yields [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5696:5"} rather than expected *tā*. These outputs require [SC085 OEHLoss](#rule-OEHLoss) to follow [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) and precede [SC086 OEContraction](#rule-OEContraction).
+If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820:1"} rather than expected OE *tā* ‘toe’. If it is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820:2"} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820:3"} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820:4"} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} yields [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5820:5"} rather than expected *tā*. These outputs require [SC085 OEHLoss](#rule-OEHLoss) to follow [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) and precede [SC086 OEContraction](#rule-OEContraction).
 
 The earlier boundary rests on one witness; the four later witnesses establish
 the immediate relation to contraction.
@@ -5821,7 +5945,7 @@ define OEContraction [
 The rule contracts the vowel sequences created after \emph{h}-loss, producing
 *flēon* ‘flee’, *slēan* ‘slay’, and *tēon* ‘draw’.
 
-Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc [fléuxaną]{.recon} ‘flee’ yield [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742:1"} rather than expected OE *flēon* 'flee', PGmc [sláxaną]{.recon} ‘slay’ yield [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742:2"} rather than expected *slēan* 'slay', PGmc [téxun]{.recon} ‘draw’ yield [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742:3"} rather than expected *tēon* 'draw', and PGmc [táixōn]{.recon} ‘toe’ yield [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5742:4"} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
+Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc [fléuxaną]{.recon} ‘flee’ yield [*flēoan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866:1"} rather than expected OE *flēon* 'flee', PGmc [sláxaną]{.recon} ‘slay’ yield [*sleaan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866:2"} rather than expected *slēan* 'slay', PGmc [téxun]{.recon} ‘draw’ yield [*teoon*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866:3"} rather than expected *tēon* 'draw', and PGmc [táixōn]{.recon} ‘toe’ yield [*tāe*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5866:4"} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 The more distant [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction)
 relation establishes only that weak-tail reduction precedes contraction.
 
@@ -5840,6 +5964,19 @@ establish an ordering relation between
 [SC086 OEContraction](#rule-OEContraction) and
 [SC087 OERMetathesis](#rule-OERMetathesis).
 
+Barrack devotes his longest metathesis discussion to this change as rule
+459.1, with a companion rule 459.3 for the \emph{cyrps}/\emph{firiþ} type
+[@Barrack1975, pp. 115--117]. His account agrees that in West Saxon the
+\emph{beornan}/\emph{birnan} 'to burn' family shows metathesis operating on
+the output of earlier developments, which he schematizes as 157 followed by
+170a followed by 459.1; but he records that the relative order of breaking
+and metathesis varies by dialect, separating the West Saxon from the Anglian
+treatment [@Barrack1975, pp. 115--117]. Because his orderings are formal
+rather than chronological [@Barrack1975, p. 34], that dialect-order
+observation is conditioning evidence to be weighed in its own right, not a
+dating; it is held for a separate adjudication in the Barrack dossier and
+does not alter the West Saxon ordering adopted here.
+
 ### \CAPRRuleHeading{SC087. Metathesis of \emph{*r} with a following short vowel}{OERMetathesis} {#rule-OERMetathesis}
 
 ```foma
@@ -5857,7 +5994,7 @@ define OERMetathesis [
 
 The rule moves \emph{*r} across a following short vowel in the relevant late clusters, producing forms such as *berstan* ‘burst’ where an earlier order would still show a broken vowel sequence.
 
-Moving the rule before [SC044 OEBreaking](#rule-OEBreaking) makes PGmc [bréstaną]{.recon} ‘burst’ yield [*beorstan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5778" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5778:1"} rather than expected OE *berstan* ‘burst’. On this evidence, I take [SC087 OERMetathesis](#rule-OERMetathesis) to follow [SC044 OEBreaking](#rule-OEBreaking). Moving it later within the tested sequence alters no output.
+Moving the rule before [SC044 OEBreaking](#rule-OEBreaking) makes PGmc [bréstaną]{.recon} ‘burst’ yield [*beorstan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5915" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5915:1"} rather than expected OE *berstan* ‘burst’. On this evidence, I take [SC087 OERMetathesis](#rule-OERMetathesis) to follow [SC044 OEBreaking](#rule-OEBreaking). Moving it later within the tested sequence alters no output.
 
 The lexical evidence fixes the earlier relation but does not identify a corresponding
 later constraint. The sources treat r-metathesis as a late rearrangement after
@@ -5964,6 +6101,15 @@ Ringe and Taylor provide the modern phonological interpretation
 distribution of the spellings; Hogg supplies the critical reassessment
 [@HoggPhonology1992, p. 113].
 
+Barrack's West Saxon cascade registers the same written-surface facts at two
+points: the \emph{iung}/\emph{giong}/\emph{geong} 'young' spellings under
+his rule 171b [@Barrack1975, p. 58], and an Early West Saxon spelling
+variation, with \emph{Geoworpa} and \emph{Iugurtha} among the cited forms,
+as a Campbell-footnote rule 430n3 [@Barrack1975, p. 110]. He treats these
+within his free-variation framework rather than as a single orthographic
+convention; that framing is a rival description of the same evidence, not
+support for a spoken rising diphthong.
+
 
 ## West Saxon palatal-glide spelling before back vowels
 
@@ -6006,6 +6152,17 @@ result as *ġeoc*. Where lowering did not apply, as in *ġeoguþ* 'youth',
 whose root \emph{u} was protected by the high vowel of the following
 syllable, the same convention wrote the retained \emph{u} with the same
 digraph [@SieversBrunner1965, pp. 64--65, §92.1].
+
+Barrack registers the same spellings at two points of his cascade: the
+\emph{iung}/\emph{giong}/\emph{geong} 'young' alternation under his rule
+171b [@Barrack1975, p. 58], and an Early West Saxon variation, with
+\emph{Geoworpa} and \emph{Iugurtha} among the cited forms, as the
+Campbell-footnote rule 430n3 [@Barrack1975, p. 110]. Writing before Hogg's
+reassessment, he handles the alternation inside his free-variation
+framework rather than as a convention of the written surface
+[@Barrack1975, pp. 21--23]; his treatment is thus a formal restatement of
+the older rising-diphthong reading, and the orthographic interpretation
+adopted here follows Ringe and Taylor and Hogg against it.
 
 ### \CAPRRuleHeading{SC016. West Saxon palatal-glide spelling before back vowels}{OEWsPalatalGlide} {#rule-OEWsPalatalGlide}
 
