@@ -6,8 +6,8 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 
 ## Summary
 
-- Sections checked: 103.
-- Sections with absent cues or notation observations: 69.
+- Sections checked: 105.
+- Sections with absent cues or notation observations: 71.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -52,8 +52,10 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 110-palatalized-glide-io-support.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 032-diphthong-leveling.md | SC032. Quantity-distinct diphthong realization (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | no | no | yes | yes | yes | yes | no | missing move-condition wording |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | no | no | no | no | no | yes | no | missing move-condition wording |
-| 036-inter-stress-raising.md | SC036. Weak medial vocalism: retained composite proxy (`OEInterStressRaising`) {#rule-OEInterStressRaising} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
+| 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | no | no | no | no | no | yes | no | missing move-condition wording |
+| 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 036-inter-stress-raising.md | SC036. Temporary pre-u proxy (`OESoulProxy`) {#rule-OESoulProxy} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | yes | yes | yes | yes | yes | yes | no | — |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
 | 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | no | yes | yes | yes | yes | no | no | missing move-condition wording |

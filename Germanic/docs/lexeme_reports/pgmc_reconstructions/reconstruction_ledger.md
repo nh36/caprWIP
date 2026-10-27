@@ -10612,8 +10612,8 @@ Coverage: 4 checks; 0 unchecked; 0 verification gaps.
 
 ## 2302: world / weorold
 
-Current citation: *wíra-àldiz (pgmc); selected input: *wír-àldu (pgmc; variety: transponent; explicit_sidecar).
-Runnable: 1; derivation class: early_analogy.
+Current citation: *wíra-àldiz (pgmc); selected input: *wír-àldiz (pgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
 | --- | --- | --- | --- | --- | --- |

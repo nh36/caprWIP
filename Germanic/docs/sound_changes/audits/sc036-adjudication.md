@@ -1,5 +1,138 @@
 # SC036: weak medial vocalism, not a demonstrated unified raising law
 
+## Current authorized world migration (27 October 2026)
+
+This section supersedes the production-retention verdict below. The remainder
+records the earlier adjudication and its measurements; its frozen receipts
+are not rewritten.
+
+### Identity and question
+
+SC036 `OEInterStressRaising`, branch `update`, base
+`5665e3038dab311a4803e64b0f517b03b4806b4d`. Can the inherited compact
+nominative `*wír-àldiz` derive selected *weorold* under a source-supported
+weak-vowel interpretation, preserving retained-prominence controls and soul?
+A securely conflicting attestation in the same reconstructed weak environment
+would refute the choice; lack of consensus alone would not.
+
+### Starting state and diagnosis
+
+Production selected `*wír-àldu`, `early_analogy`, with the shared-context
+SC036 proxy before SC037 and SC038. Fresh preparation/evidence found the
+same two firings, soul2201 and world2302, among389 selections and the
+overlapping380 protected identities. The earlier dossiers, compact-junction
+qualification and SC059 shared-context diagnosis remain applicable.
+
+The separate `world-2302-experiments/migration.json` extends the existing
+harness with six configurations: identity; unrestricted after-SC038 raising;
+bounded light-initial A and B supplements; relocated composite A; composite A
+with independently composed u-only e-back-mutation branches. Every migrated
+configuration changes only world's selected input; no selected final changes.
+Soul stays *sāwol*, lung *lungen*, rainbow *reġnboga*. Identity agrees with
+every canonical named snapshot; canonical sources, bins, baseline archives
+and earlier receipts remain untouched by the experiment.
+
+Inherited world loses final short i at `PWGmcEarlyIApocope`, initial i lowers
+at SC015, final z disappears, and SC038 changes `*w*é*r*à*l*d` to
+`*w*é*r*a*l*d`. Architecture A raises this to `*w*é*r*u*l*d`;
+SC059 gives `*w*éo*r*u*l*d`, SC040 `*w*éo*r*o*l*d`, hence *weorold*.
+There is no surviving final high vowel for the later high-vowel apocope to
+remove. Architecture B instead intercepts medial æ after early fronting.
+Both succeed, also under narrow u-triggered back mutation.
+
+### Literature and historical analysis
+
+Orel p.462 and Ringe–Taylor pp.202,326 support the inherited i-stem
+tradition; original i/e, exact compound junction and accent remain qualified.
+Campbell p.244 §610(1) n.2 supplies supporting conservative accusative
+evidence, not a requirement to reconstruct the whole paradigm.
+Later ō-stem mixing remains real comparative evidence, not a necessary
+intervention in the selected nominative.
+
+Campbell §338 p.142, Luick §113 pp.125–126, Bülbring §§366–367
+pp.147–149, Hogg §§6.4–6.7 pp.215–218 and Ringe–Taylor p.202
+support weak retraction/rounding and, in world, high u. Luick's rounding
+before l and uncertainty over o/u permit a compressed a-to-u operation
+without Bülbring's necessary following u. They do not prove this precise
+executable environment or an absolute date.
+
+Goering2023 §4.5.1.2 pp.79–82 supports a single initial LH foot,
+not an independent medial secondary foot in early OE world. His system's
+approximate c.600 horizon (§4.6 pp.84–85) and its compatibility with
+seventh-/eighth-century poetry supply a reconstructed upper horizon, not
+an independently dated deaccentuation event. Kaluza's broader subsidiary-
+stress theory, presented by Stanley2022 p.34 (original page checked),
+is an alternative theory, not direct accent evidence.
+
+Adopt a bounded prosodic implementation: plain short a before l+C in
+word-initial C* V́ C a l C, where V́ is an acute short vowel. Exactly one
+intervocalic consonant represents the light initial syllable; heavy initial
+vowels/clusters, initial weak nuclei, primary medial accent and non-lC
+environments are excluded. This is CAPR's qualified generalization of the
+LH analysis, not a rule quoted from Goering. It has no word identity,
+morphological class or lexical exception. No claim is made to cover all
+handbook weak-rounding domains.
+
+The unrestricted candidate raises even the stripped heavy-initial
+ānfeald-shaped control. Bounded A/B leave that medial vowel for breaking,
+while permitting weak *twifold* (Bülbring §367a); strongly prominent
+counterparts and Campbell/Hogg's inflected retained-prominence compounds
+are not evidence for universal weak high-vowel raising. The synthetic
+*án-fàldiz* path's initial nasal-vowel outcome is not claimed as a
+reconstruction of the attested whole word. Its medial contrast tests the
+specific overgeneration. These controls are not corpus additions.
+No securely same-domain attested counterexample was established.
+
+Versloot2026 pp.111–114,122–123, retained key Versloot2025, challenges
+compulsory fronting of a before lC and places breaking later in an
+alternative chronology. His mainly stressed-domain analysis does not
+demonstrate weak medial a-to-u. A is chosen as the less committal weak-domain
+serialization: it does not assert an unobserved intervening æ. B is the
+available traditional fronting/retraction compression, not refuted by
+output success. Neither experiment independently dates those changes.
+
+### Verdict
+
+REFORMULATE executable / REORDER placement; retain SC036 identity,
+qualified confidence C, oe stage and English scope. Adopt architecture A,
+arrangement1: relocate SC036 immediately after SC038, composing separately
+named weak-LH and temporary pre-u proxy branches. The second preserves soul's
+already selected output without claiming to have derived its source-led
+syncope/epenthesis history. Two technical branches do not establish two dated
+sound laws. SC037 must still read graves before SC038; their serialization
+is annotation lifetime, not a universal date for syncope versus deaccentuation.
+
+Registry-verdict: SC036=REFORMULATE/REORDER
+
+### Propagation
+
+Change only OE2302 input to `*wír-àldiz`, class `regular`, with explicit
+same-stage model-encoding metadata and compact-junction qualification.
+Keep comparative PROTO and target. No early analogical transponent is needed;
+the unresolved formation of the compact stem is pre-encoded, not derived.
+Register technical SC038-before-SC036, SC036-before-fronting and
+SC036-before-SC059 dependencies, separately from historical claims.
+Retain SC040, SC100 and every other sound-law implementation.
+
+Before any baseline adoption: the only authorized record change is2302's
+proto/proto_norm/fst_input from `*wír-àldu`/`wír-àldu` to
+`*wír-àldiz`/`wír-àldiz`. All389 finals, targets, match flags and contexts
+remain identical. Input-inclusive fingerprints must consequently change.
+Use `approved_world_input_migration.json` and the existing SC036 adopter;
+preserve the previous active baseline separately and all older archives.
+Current regressions must test actual migrated semantics; old receipts stay
+byte-identical and are checked against their historical source commits.
+
+### Residue
+
+Exact prehistoric accent and compact-junction chronology, wider o/u dialect
+boundaries and the full reach of LH weakening remain working reconstruction.
+SC059's comma-shared contexts still admit o/a for e; record that separate
+defect, but world does not depend on it. Soul's historical replacement is
+explicitly deferred to its separately authorized review. Stop after world.
+The [migration closeout](world-2302-migration-closeout.md) records the exact
+baseline delta, validation and rendered-page inspection.
+
 ## Identity
 
 - SC id: SC036; executable identifier: `OEInterStressRaising`.
@@ -282,8 +415,6 @@ and isolated component controls are freshly reproduced instead.
 
 REFORMULATE historical characterization, confidence and chronology;
 RETAIN the executable relation, identity, order, stage and scope.
-
-Registry-verdict: SC036=REFORMULATE
 
 Confidence C applies to the composite historical/executable account, not to
 the existence of attested spellings or independently proven syncope.

@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (310) ===
+=== DERIVATION_CLASS: regular (311) ===
 
 
 
@@ -7235,6 +7235,31 @@ Outcome: word
 
 
 
+# world
+PROTO: *wír-àldiz
+EXPECTED: weorold
+OUTPUTS: weorold
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *wíràldiz
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *wíràldz<br>PNWGmc I Lowering: *wéràldz<br>EAF Final Z Deletion: *wéràld<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *wérald<br>OE Inter Stress Raising: *wéruld<br>OE Back Mutation: *wéoruld<br>OE Med Unstressed U Lowering: *wéorold |
+
+
+
+### Orthography & surface
+
+Outcome: weorold
+
+NOTE: Inherited compact i-stem nominative *wír-àldiz; comparative PROTO *wíra-àldiz unchanged. Compact compound junction is pre-encoded, not derived; original i/e and exact accent remain qualified. Regular selected span: early final short-i apocope, SC015 i>e, final z loss, SC037 reads earlier grave then SC038 strips it, SC036 light-initial weak a>u before lC, SC059 back mutation, SC040 medial u>o. No necessary early o-stem analogy or later high-vowel apocope in this selected nominative. Luick 1914 pp.125-126 §113; Goering 2023 pp.79-85; Orel 2003 p.462; Ringe-Taylor 2014 pp.34,202,326. Later paradigm mixing remains possible. See audits/sc036-adjudication.md current migration and audits/world-2302-adjudication.md.
+
+
+
 # worm
 PROTO: *wúrmiz
 EXPECTED: wyrm
@@ -7406,7 +7431,7 @@ NOTE: Second-person plural pronoun, dat.(-acc.) pl. PGmc *izwiz (Goth. izwis) > 
 
 
 
-=== DERIVATION_CLASS: early_analogy (36) ===
+=== DERIVATION_CLASS: early_analogy (35) ===
 
 
 
@@ -8246,31 +8271,6 @@ Old English Orthography: *wḯþiġ
 Outcome: wīþiġ
 
 NOTE: Campbell §275(7), §376: OE -ig < PGmc *-ag- (cf. *xúnagą → huniġ); see DEV_NOTES §17.10.35 and notable_findings §9. Wiktionary/Kluge *wīþja- cannot derive -ig (heavy ja-stem yields -e/-Ø).
-
-
-
-# world
-PROTO: *wír-àldu
-EXPECTED: weorold
-OUTPUTS: weorold
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *wíràldu
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc I Lowering: *wéràldu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Inter Stress Raising: *wéruldu<br>OE Back Mutation: *wéoruldu<br>OE High Vowel Apocope: *wéoruld<br>OE Med Unstressed U Lowering: *wéorold |
-
-
-
-### Orthography & surface
-
-Outcome: weorold
-
-NOTE: PROTO *wíra-àldiz is the stable comparative label; PROTOFORM *wír-àldu is a mixed-stage transponent with remodelling to -u and compact compound stem pre-encoded. Comparative i/e, composition-vowel resolution and secondary-accent loss remain qualified. Model: consonantal i>e, SC036 weak-vocalism proxy a>u, back mutation e>eo, final high-vowel apocope, late medial u>o. Ringe-Taylor 2014 pp.34,202,326; Campbell 1959 p.244 §610(1) n.2 preserves endingless acc.sg evidence. Analogy is not independently dated before SC019. See audits/world-2302-adjudication.md.
 
 
 

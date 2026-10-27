@@ -302,7 +302,7 @@ class AuditSidecarAgreementTests(unittest.TestCase):
         world = self.audit["2302"]
         self.assertEqual(world["confidence"], "provisional")
         self.assertEqual(world["proposed_protoform_stage"], "pgmc")
-        self.assertEqual(world["protoform_variety"], "transponent")
+        self.assertEqual(world["protoform_variety"], "")
 
 
 class TransponentVarietyTests(unittest.TestCase):
@@ -328,10 +328,12 @@ class TransponentVarietyTests(unittest.TestCase):
 
     def test_transponent_rows_keep_honest_base_stage(self):
         sidecar = {r["row_id"]: r for r in _rows(DATA / "entry_stage_metadata.tsv")}
-        expect = {"2109": "preoe", "2205": "preoe", "2252": "preoe", "2302": "pgmc"}
+        expect = {"2109": "preoe", "2205": "preoe", "2252": "preoe"}
         for rid, stage in expect.items():
             self.assertEqual(sidecar[rid]["protoform_variety"], "transponent", rid)
             self.assertEqual(sidecar[rid]["protoform_stage"], stage, rid)
+        self.assertEqual(sidecar["2302"]["protoform_stage"], "pgmc")
+        self.assertEqual(sidecar["2302"]["protoform_variety"], "")
 
 
 class NonModelStageFailClosedTests(unittest.TestCase):

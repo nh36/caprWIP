@@ -12,7 +12,7 @@ chronology constraints.
 ## Totals
 
 - total node count: `73`
-- total edge count: `141`
+- total edge count: `144`
 
 ### Node counts by card_type
 
@@ -42,7 +42,7 @@ chronology constraints.
 | `reciprocal_chronology` | 26 |
 | `runner_limited_boundary` | 18 |
 | `superseded_experiment` | 4 |
-| `technical_computational` | 16 |
+| `technical_computational` | 19 |
 
 ## Chronology edges
 
@@ -157,6 +157,9 @@ chronology constraints.
 1. `SC036 -> SC004` (technical_computational)
 1. `SC036 -> SC019` (technical_computational)
 1. `SC036 -> SC040` (technical_computational)
+1. `SC036 -> SC038` (technical_computational)
+1. `SC036 -> SC107` (technical_computational)
+1. `SC036 -> SC059` (technical_computational)
 1. `SC037 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC037 -> SC038` (technical_computational)
 1. `SC039 -> PWGmcChanges` (runner_limited_boundary)

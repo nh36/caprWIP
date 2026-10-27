@@ -41,9 +41,9 @@ position	foma_identifier	origin_block
 40	OEJGlideIO	EnglishProtoToOE
 41	OEDiphthongLeveling	EnglishProtoToOE
 42	OEAwLongDiphthong	EnglishProtoToOE
-43	OEInterStressRaising	EnglishProtoToOE
-44	OECompoundLinkingSyncope	EnglishProtoToOE
-45	OEStripSecondaryStress	EnglishProtoToOE
+43	OECompoundLinkingSyncope	EnglishProtoToOE
+44	OEStripSecondaryStress	EnglishProtoToOE
+45	OEInterStressRaising	EnglishProtoToOE
 46	OEWICombinativeUUmlaut	EnglishProtoToOE
 47	PWGmcFinalBareALoss	EnglishProtoToOE
 48	PWGmcSurvivingBimoricOUnrounding	EnglishProtoToOE

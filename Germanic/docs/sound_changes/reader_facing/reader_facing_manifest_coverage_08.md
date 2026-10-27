@@ -49,8 +49,8 @@ Published identities: 97. Missing or erroneous omissions: 0.
 | 39 | SC110 | published technical support | `110-palatalized-glide-io-support.md` |
 | 40 | SC032 | published historical_sound_change | `032-diphthong-leveling.md` |
 | 41 | SC034 | published technical support | `034-long-eaw-diphthong.md` |
-| 42 | SC036 | published historical_sound_change | `036-inter-stress-raising.md` |
-| 43 | SC037 | published historical_sound_change | `037-compound-linking-syncope.md` |
+| 42 | SC037 | published historical_sound_change | `037-compound-linking-syncope.md` |
+| 43 | SC036 | published historical_sound_change | `036-inter-stress-raising.md` |
 | 44 | SC039 | published historical_sound_change | `039-combinative-u-umlaut.md` |
 | 45 | SC041 | published historical_sound_change | `041-final-bare-a-loss.md` |
 | 46 | SC042 | published historical_sound_change | `042-surviving-bimoric-o-unrounding.md` |

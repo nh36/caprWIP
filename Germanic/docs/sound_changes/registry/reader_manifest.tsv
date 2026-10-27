@@ -48,8 +48,8 @@ reader_order	sc_id	fst_identifier	exec_index	cascade_position	reader_file	chapte
 39	SC110	OEJGlideIO	42	40	110-palatalized-glide-io-support.md	4	From Anglo-Frisian to Old English
 40	SC032	OEDiphthongLeveling	43	41	032-diphthong-leveling.md	4	From Anglo-Frisian to Old English
 41	SC034	OEAwLongDiphthong	44	42	034-long-eaw-diphthong.md	4	From Anglo-Frisian to Old English
-42	SC036	OEInterStressRaising	45	43	036-inter-stress-raising.md	4	From Anglo-Frisian to Old English
-43	SC037	OECompoundLinkingSyncope	46	44	037-compound-linking-syncope.md	4	From Anglo-Frisian to Old English
+42	SC037	OECompoundLinkingSyncope	45	43	037-compound-linking-syncope.md	4	From Anglo-Frisian to Old English
+43	SC036	OEInterStressRaising	47	45	036-inter-stress-raising.md	4	From Anglo-Frisian to Old English
 44	SC039	OEWICombinativeUUmlaut	48	46	039-combinative-u-umlaut.md	4	From Anglo-Frisian to Old English
 45	SC041	PWGmcFinalBareALoss	49	47	041-final-bare-a-loss.md	4	From Anglo-Frisian to Old English
 46	SC042	PWGmcSurvivingBimoricOUnrounding	50	48	042-surviving-bimoric-o-unrounding.md	4	From Anglo-Frisian to Old English

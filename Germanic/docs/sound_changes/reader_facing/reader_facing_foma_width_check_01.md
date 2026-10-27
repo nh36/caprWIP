@@ -4,8 +4,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 105.
-- Blocks over the conservative 90-character threshold: 19.
+- Foma blocks checked: 107.
+- Blocks over the conservative 90-character threshold: 18.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -42,7 +42,9 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 033-long-eow-diphthong.md | SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 50 | 43 | no |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 50 | 61 | no |
 | 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 202 | 51 | no |
-| 036-inter-stress-raising.md | SC036. Weak medial vocalism: retained composite proxy (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 153 | 101 | yes |
+| 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 164 | 62 | no |
+| 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | 175 | 72 | no |
+| 036-inter-stress-raising.md | SC036. Temporary pre-u proxy (`OESoulProxy`) {#rule-OESoulProxy} | 188 | 57 | no |
 | 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 14 | 82 | no |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 65 | no |
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 5 | 169 | yes |
@@ -127,10 +129,6 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 - `108` chars — `    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,`
 - `134` chars — `    .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]`
-
-### 036-inter-stress-raising.md:153 — SC036. Weak medial vocalism: retained composite proxy (`OEInterStressRaising`) {#rule-OEInterStressRaising}
-
-- `101` chars — `    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],`
 
 ### 040-medial-unstressed-u-lowering.md:5 — SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering}
 

@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce"
+    ACTIVE_SHA = "9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -122,7 +122,8 @@ class LegacySubsetTests(unittest.TestCase):
         selected = mod.legacy_subset(self.current_rows, self.legacy_rows, migrations)
         self.assertEqual(len(selected), 380)
         self.assertEqual([m["row_id"] for m in migrations],
-                         ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314"])
+                         ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
+                          "2302"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -211,7 +212,7 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual(len(mod.legacy_subset(
             previous["records"], old,
             [m for m in migrations if m["row_id"] not in {
-                "2224", "2162", "2283", "2095", "2313", "2314"}],
+                "2224", "2162", "2283", "2095", "2313", "2314", "2302"}],
         )), 387)
 
 

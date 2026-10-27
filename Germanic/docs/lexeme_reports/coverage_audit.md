@@ -12,7 +12,7 @@
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 228
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 81
+- Regular rows with NOTE (report required): 82
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
 
 ## Counts by DERIVATION_CLASS
@@ -20,11 +20,11 @@
 | DERIVATION_CLASS | Total rows | Required | Manifest-backed production reports | Source material available | No source material found |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | attested_variant | 4 | 4 | 1 | 3 | 0 |
-| early_analogy | 36 | 36 | 2 | 34 | 0 |
+| early_analogy | 35 | 35 | 2 | 33 | 0 |
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 29 | 29 | 4 | 25 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 310 | 84 | 0 | 80 | 4 |
+| regular | 311 | 85 | 0 | 81 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -192,7 +192,7 @@
 | 2297 | wold | weald | regular | yes | source_material | - | archive/dev_notes_slices/2297-wold-weald.md, model_entries/2297-wold-weald.model.md, model_entries/2297-wold-weald.source_ledger.md, research_memos/2297-wold-weald.md | NOTE |
 | 2298 | wolf | wulf | unexplained_unmodelled | yes | source_material | - | archive/dev_notes_slices/2298-wolf-wulf.md, archive/packets/2298-wolf-wulf.md, model_entries/2298-wolf-wulf.model.md, model_entries/2298-wolf-wulf.source_ledger.md, research_memos/2298-wolf-wulf.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled |
 | 2300 | wool | wull | unexplained_unmodelled | yes | source_material | - | archive/dev_notes_slices/2300-wool-wull.md, archive/packets/2300-wool-wull.md, model_entries/2300-wool-wull.model.md, model_entries/2300-wool-wull.source_ledger.md, research_memos/2300-wool-wull.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled |
-| 2302 | world | weorold | early_analogy | yes | source_material | - | archive/dev_notes_slices/2302-world-weorold.md, archive/packets/2302-world-weorold.md, model_entries/2302-world-weorold.model.md, model_entries/2302-world-weorold.source_ledger.md, research_memos/2302-world-weorold.md | NOTE, DERIVATION_CLASS=early_analogy |
+| 2302 | world | weorold | regular | yes | source_material | - | archive/dev_notes_slices/2302-world-weorold.md, archive/packets/2302-world-weorold.md, model_entries/2302-world-weorold.model.md, model_entries/2302-world-weorold.source_ledger.md, research_memos/2302-world-weorold.md | NOTE |
 | 2305 | yarn | ġearn | regular | yes | source_material | - | archive/dev_notes_slices/2305-yarn-ġearn.md, archive/packets/2305-yarn-ġearn.md, model_entries/2305-yarn-ġearn.model.md, model_entries/2305-yarn-ġearn.source_ledger.md, research_memos/2305-yarn-ġearn.md | NOTE |
 | 2308 | youth | ġeoguþ | early_analogy | yes | source_material | - | archive/dev_notes_slices/2308-youth-ġeoguþ.md, archive/packets/2308-youth-ġeoguþ.md, model_entries/2308-youth-ġeoguþ.model.md, model_entries/2308-youth-ġeoguþ.source_ledger.md, research_memos/2308-youth-ġeoguþ.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2309 | make (iptv.2sg) | maca | late_analogy | yes | source_material | - | archive/dev_notes_slices/2309-make-iptv-2sg-maca.md, archive/packets/2309-make-(iptv.2sg)-maca.md, model_entries/2309-make-(iptv.2sg)-maca.source_ledger.md, model_entries/2310-make-(3sg)-macaþ.model.md, research_memos/2309-make-(iptv.2sg)-maca.md | NOTE, DERIVATION_CLASS=late_analogy |

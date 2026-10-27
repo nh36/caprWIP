@@ -3,6 +3,44 @@
 This ledger records the source forms and stage distinctions gathered before the
 book-style entry was drafted.
 
+## Current migration, 27 October 2026
+
+Current authority: SC036's authorized migration section and
+`world-2302-experiments/migration.json`, based on5665e303. PROTO remains
+`*wíra-àldiz`; PROTOFORM is inherited compact `*wír-àldiz`, target
+`weorold`, class `regular`. No early analogical transponent is required.
+The compact junction is pre-encoded; exact original i/e, accent and the
+junction's chronology remain qualified. The older tables and reassessments
+below retain their dated evidential role, not production authority.
+
+- Luick §113 pp.125–126 supplies pre-l weak rounding and uncertain o/u
+  boundaries, not a mandatory following-u condition. Campbell §338,
+  Bülbring §§366–367, Hogg §§6.4–6.7 and Ringe–Taylor pp.202,326 were
+  reconsulted for the restricted decision, not a new general survey.
+- Goering §4.5.1.2 pp.79–82 supports the LH single-foot analysis.
+  The bounded short-primary/one-consonant domain is CAPR's qualified
+  generalization, not his exact sound-law formulation.
+  His §4.6 pp.84–85 gives an approximate early-OE system horizon, not
+  a precise deaccentuation date.
+- Stanley2022 p.34 was image-checked (PDF sheet52), along with title/
+  copyright pages. The passage presents Kaluza's broad subsidiary-stress
+  theory. Bibliography and the structured claim ledger record the public
+  CLASP holding; the full PDF/text remain local-only.
+- Versloot2026 pp.111–114,122–123, retained key Versloot2025, was
+  reconsulted as held text. His alternative fronting/breaking chronology
+  matters as a challenge to obligatory fronting before lC, not authority
+  for weak a-to-u in world.
+- Both placements and both technical branch arrangements preserve all389
+  selected finals. Broad A overgenerates on the heavy-initial onefold-shaped
+  control; bounded A excludes it and permits weak twofold-shaped raising.
+  These are explicit phonological controls, not new corpus attestations.
+  Actual rainbow and lung remain unchanged.
+- Adopted sequence: early short-i apocope, SC015, final-z loss, SC037
+  retaining earlier grave information, SC038 removing the grave, SC036,
+  SC059 and SC040. The later high-vowel apocope has no final vowel to
+  remove in this nominative. Narrow u-only back mutation also succeeds.
+  Soul remains protected by an explicit temporary technical branch.
+
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | TSV row 2302 | live row | `PROTO *wíra-àldiz`; `PROTOFORM *wír-àldu`; note also mentions `*weraldiz` | cognate-set label beside OE-facing ō-stem input | `weorold` | The row keeps the older `*wir-` vowel in the comparative label but uses an OE-facing `-u` stage for the actual derivation. | no | `Germanic/data/germanic-aligned-final.tsv:1444` | high |
@@ -30,7 +68,8 @@ book-style entry was drafted.
 The authoritative synthesis is
 [`world-2302-adjudication.md`](../../sound_changes/audits/world-2302-adjudication.md);
 its structured claim ledger records per-passage verification, not blanket
-source certification. PROTO, input, target and classification are unchanged.
+source certification. At that checkpoint PROTO, input, target and
+classification were unchanged.
 
 - Ringe–Taylor p.34 explicitly allows original *e* beside *i* in the
   simplex; this uncertainty is independent of the selected SC015 application.

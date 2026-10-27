@@ -53,11 +53,14 @@ SC008	SC031	one_sided_chronology	later_boundary	independently_demonstrated	feedi
 SC032	SC030	reciprocal_chronology	earlier_boundary	independently_demonstrated	feeding	41	37	43	39	consistent
 SC032	SC040	technical_computational	later_boundary	technical	displacement_witness	41	87	43	89	consistent
 SC031	SC032	one_sided_chronology	later_boundary	independently_demonstrated	feeding	9	41	11	43	consistent
-SC036	SC004	technical_computational	earlier_boundary	technical	feeding	43	35	45	37	consistent
-SC036	SC019	technical_computational	earlier_boundary	technical	feeding	43	20	45	22	consistent
-SC036	SC040	technical_computational	later_boundary	technical	feeding	43	87	45	89	consistent
-SC037	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		44		46		nonordering_observation
-SC037	SC038	technical_computational	later_boundary	technical		44	45	46	47	consistent
+SC036	SC004	technical_computational	earlier_boundary	technical	feeding	45	35	47	37	consistent
+SC036	SC019	technical_computational	earlier_boundary	technical	feeding	45	20	47	22	consistent
+SC036	SC040	technical_computational	later_boundary	technical	feeding	45	87	47	89	consistent
+SC036	SC038	technical_computational	earlier_boundary	technical	feeding	45	44	47	46	consistent
+SC036	SC107	technical_computational	later_boundary	technical	bleeding	45	49	47	51	consistent
+SC036	SC059	technical_computational	later_boundary	technical	feeding	45	68	47	70	consistent
+SC037	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		43		45		nonordering_observation
+SC037	SC038	technical_computational	later_boundary	technical		43	44	45	46	consistent
 SC039	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		46		48		nonordering_observation
 SC039	SC040	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	46	87	48	89	consistent
 SC040	SC039	superseded_experiment	earlier_boundary	archived_experiment	displacement_witness	87	46	89	48	superseded_experiment
@@ -79,7 +82,7 @@ SC047	SC034	technical_computational	earlier_boundary	technical	displacement_witn
 SC047	SC048	broad_far_chronology	later_boundary	independently_demonstrated	displacement_witness	55	56	57	58	consistent
 SC048	SC047	broad_far_chronology	earlier_boundary	independently_demonstrated	displacement_witness	56	55	58	57	consistent
 SC048	SC059	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	56	68	58	70	consistent
-SC049	SC037	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	57	44	59	46	consistent
+SC049	SC037	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	57	43	59	45	consistent
 SC049	SC087	no_break_search_boundary	later_boundary	boundary_observation		57	98	59	100	nonordering_observation
 SC050	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		58		60		nonordering_observation
 SC050	SC052	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	58	60	60	62	consistent

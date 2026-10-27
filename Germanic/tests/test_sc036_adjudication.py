@@ -7,14 +7,11 @@ import re
 import subprocess
 import sys
 
-import pytest
-
 ROOT = Path(__file__).resolve().parents[2]
 ASSAY = ROOT / "Germanic/docs/sound_changes/audits/sc036-experiments"
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import adjudicate
 import oe_pipeline
-from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
 
 
@@ -40,7 +37,7 @@ def test_receipt_identifies_its_actual_source_and_overlapping_populations():
     assert all(row["legacy380_identity"] for row in firings)
 
 
-def test_only_comments_not_any_executable_definition_changed():
+def test_only_sc036_and_its_explicit_branches_changed():
     source = (ROOT / "Germanic/fsts/germanic.txt").read_text()
     base = git_bytes(receipt()["base_commit"], "Germanic/fsts/germanic.txt").decode()
 
@@ -48,7 +45,13 @@ def test_only_comments_not_any_executable_definition_changed():
         return {name: re.sub(r"\s+", "", body) for name, body in
                 oe_pipeline._define_bodies(oe_pipeline._strip_comments(text)).items()}
 
-    assert definitions(source) == definitions(base)
+    current, old = definitions(source), definitions(base)
+    assert current.keys() - old.keys() == {"OELHWeakRaising", "OESoulProxy"}
+    assert old.keys() <= current.keys()
+    assert {name for name in old if old[name] != current[name]} == {
+        "OEInterStressRaising", "EnglishProtoToOE"}
+    assert current["OEInterStressRaising"] == (
+        "[OELHWeakRaising.o.OESoulProxy]")
 
 
 def test_single_comma_shares_context_including_the_grave_mapping():
@@ -104,7 +107,7 @@ def test_secondary_marker_bleeding_is_not_historical_chronology():
         ROOT / "Germanic/docs/sound_changes/registry/chronology_edges.tsv")
     current = {row["target_change_id"]: row for row in edges
                if row["source_change_id"] == "SC036"}
-    assert set(current) == {"SC004", "SC019", "SC040"}
+    assert set(current) == {"SC004", "SC019", "SC040", "SC038", "SC107", "SC059"}
     assert all(row["evidence_basis"] == "technical" for row in current.values())
     assert all(row["relation_type"] == "technical_computational"
                for row in current.values())
@@ -112,7 +115,7 @@ def test_secondary_marker_bleeding_is_not_historical_chronology():
 
 def test_current_authority_and_source_access_qualifications():
     row = adjudicate.load_registry_row("SC036")
-    assert row["verdict"] == "REFORMULATE"
+    assert row["verdict"] == "REFORMULATE/REORDER"
     assert row["confidence"] == "C"
     assert (row["hist_stage"], row["hist_scope"]) == ("oe", "english_specific")
     assert adjudicate.check_memo("SC036", row=row) == []
@@ -127,26 +130,14 @@ def test_current_authority_and_source_access_qualifications():
     assert {r["source"] for r in claims if r["claim_id"] != "FORMAL"} <= entries
 
 
-@pytest.mark.runtime
-def test_fresh_isolated_runtime_repeats_the_clause_and_chronology_observations(tmp_path):
-    result = run_in_runner(
-        "python3 docs/sound_changes/audits/sc036-experiments/experiment.py",
-        text=True, capture_output=True, check=True, timeout=1800)
-    current = json.loads(result.stdout)
-    evidence_path = tmp_path / "sc036-current-evidence.json"
-    evidence_path.write_text(result.stdout)
-    print(f"Fresh SC036 experiment receipt: {evidence_path}")
-    observed = receipt()
-    assert current["component_results"] == observed["component_results"]
-    assert current["formal_equivalence_to_original"] == observed["formal_equivalence_to_original"]
-    for name, model in observed["models"].items():
-        assert current["models"][name]["final_differences"] == model["final_differences"]
-    assert current["staged_alternatives"]["world-without-grave"]["final"] == "weorold"
-    assert current["staged_alternatives"]["world-already-rounded"]["final"] == "weorold"
-    rejected = current["staged_alternatives"]["world-unshifted-i-stem-comparison"]
-    assert rejected["status"] == "rejected"
-    assert rejected["final"] is None
-    assert rejected["rejection"]["stage"] == "OEMedUnstressedILowering"
-    assert rejected["rejection"]["input"] == "*w*é*r*ee*l*d*e*z"
+def test_staged_receipt_remains_historical_not_a_current_production_replay():
     staged = json.loads((ASSAY / "staged-evidence.json").read_text())
-    assert current["staged_alternatives"] == staged["staged_alternatives"]
+    rejected = staged["staged_alternatives"]["world-unshifted-i-stem-comparison"]
+    assert rejected["status"] == "rejected"
+    assert rejected["rejection"]["stage"] == "OEMedUnstressedILowering"
+    assert staged["staged_alternatives"]["world-without-grave"]["final"] == "weorold"
+    # Current production is verified separately by the inherited-migration assay.
+    for name in ("evidence.json", "staged-evidence.json"):
+        path = (ASSAY / name).relative_to(ROOT)
+        assert (ROOT / path).read_bytes() == git_bytes(
+            "5665e3038dab311a4803e64b0f517b03b4806b4d", path)

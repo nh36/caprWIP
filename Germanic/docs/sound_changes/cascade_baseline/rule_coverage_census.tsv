@@ -13,7 +13,7 @@ SC096	RootNounNomZLoss	2	4	book, flea, goose, louse	witnessed
 SC014	PNWGmcUnstressedAiMonophthongization	3	3	knee, meed, span	witnessed	
 SC005	PNWGmcAToUBeforeM	4	1	shoulder	witnessed	
 SC024	PNWGmcLongELowering	5	17	adder, bier, deed, eel, hair, let, meal, month, needle, read, sheep, sleep, spoon, weapon, year, sow, betray	witnessed	
-SC006	PWGmcEarlyIApocope	6	9	have, live, shoulder, thousand, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg)	witnessed	
+SC006	PWGmcEarlyIApocope	6	10	have, live, shoulder, thousand, world, make (3sg), bore (3sg), learn (3sg), lick (3sg), show (3sg)	witnessed	
 SC007	PWGmcFinalOrLowering	7	2	four, water	witnessed	
 SC008	PWGmcCoronalWAssimilation	8	2	four, you	witnessed	
 SC031	OEWWSimplification	9	5	chew, dew, four, hew, you	witnessed	
@@ -27,7 +27,7 @@ SC015	PNWGmcILowering	17	7	learn, meed, nest, thistle, world, learn (iptv.2sg), 
 SC017	PNWGmcULowering	18	39	board, bore, bottom, bow, corn, crop, door, foal, folk, fox, frost, god, gold, hoard, horn, knob, lock, nose, oven, ox, coat, shovel, sorrow, spur, stock, stork, storm, thorn, trough, word, yoke, bore (iptv.2sg), bore (3sg), buck, fowl, rust, wolf, wool	witnessed	
 SC018	PNWGmcStressedMonosyllableORaising	19	1	both	witnessed	
 SC019	PNWGmcFinalLongORaising	20	28	beech, bier, dew, hall, help, herd, hind, linden, liver, lung, lye, march, nave, needle, nose, rind, rood, sake, salve, shame, shovel, shower, sorrow, soul, spindle, tongs, while, wool	witnessed	
-SC020	EAFFinalZDeletion	21	113	beard, beaver, belly, birth, bosom, bottom, bough, breeches, bride, calf, comb, craft, crop, cud, dale, day, deal, deed, dill, dough, dream, drench, eel, fern, field, finger, fish, fist, flesh, flood, fox, friend, fright, gang, ghost, gift, ground, guest, hand, harm, harvest, hawk, hazel, hearth, heath, hedge, helm, home, hood, hoof, hound, knight, leek, loath, lock, lust, malt, mast, might, milk, month, mood, nail, need, one, oven, raven, reek, rest, coat, rudder, rye, sea, seam, sheath, shield, shilling, shoulder, snow, spoon, staff, stem, stock, stone, stool, stork, storm, stream, string, summer, team, thane, thanks, thief, thirst, thorn, three, thunder, tide, wain, wasp, way, wether, whale, wight, winter, wold, worm, you, buck, fowl, rust, wolf	witnessed	
+SC020	EAFFinalZDeletion	21	114	beard, beaver, belly, birth, bosom, bottom, bough, breeches, bride, calf, comb, craft, crop, cud, dale, day, deal, deed, dill, dough, dream, drench, eel, fern, field, finger, fish, fist, flesh, flood, fox, friend, fright, gang, ghost, gift, ground, guest, hand, harm, harvest, hawk, hazel, hearth, heath, hedge, helm, home, hood, hoof, hound, knight, leek, loath, lock, lust, malt, mast, might, milk, month, mood, nail, need, one, oven, raven, reek, rest, coat, rudder, rye, sea, seam, sheath, shield, shilling, shoulder, snow, spoon, staff, stem, stock, stone, stool, stork, storm, stream, string, summer, team, thane, thanks, thief, thirst, thorn, three, thunder, tide, wain, wasp, way, wether, whale, wight, winter, wold, world, worm, you, buck, fowl, rust, wolf	witnessed	
 SC098	PWGmcUnstressedWordFinalIApocope	22	1	you	witnessed	
 SC097	MonosyllabicFinalZLoss	23	1	who	witnessed	
 SC112	PNWGmcMonosyllabicFinalRLengthening	24	2	there, where	witnessed	
@@ -44,8 +44,8 @@ SC004	EAFAiMonophthongization	35	23	bone, deal, dough, flesh, ghost, heal, heath
 SC029	OEAwwjResolution	36	2	hay, strew	witnessed	
 SC030	OEAuBrightening	37	21	believe, bow, bread, dew, dream, flea, hay, head, hew, leaf, leek, lye, need, reek, seam, shove, stream, strew, team, straw	witnessed	
 SC032	OEDiphthongLeveling	41	33	believe, bow, bread, breast, chew, deer, dew, dream, flea, flee, fly, forlorn, four, freeze, friend, hay, head, hew, leaf, leek, light, lye, need, reek, seam, shove, stream, strew, team, thief, you, straw	witnessed	
-SC036	OEInterStressRaising	43	2	soul, world	witnessed	
-SC037	OECompoundLinkingSyncope	44	1	rainbow	witnessed	
+SC037	OECompoundLinkingSyncope	43	1	rainbow	witnessed	
+SC036	OEInterStressRaising	45	2	soul, world	witnessed	
 SC039	OEWICombinativeUUmlaut	46	1	widow	witnessed	
 SC041	PWGmcFinalBareALoss	47	68	beard, bosom, bottom, calf, comb, craft, crop, dale, day, dough, dream, eel, fern, finger, fish, fox, fright, gang, ghost, harm, hawk, hazel, hearth, hedge, helm, home, hood, hoof, hound, knight, leek, loath, lock, malt, mast, mood, nail, one, oven, raven, reek, coat, rudder, seam, shilling, snow, staff, stock, stone, stool, stork, storm, stream, summer, team, thane, thanks, thief, thorn, thunder, wain, wasp, way, whale, buck, fowl, rust, wolf	witnessed	
 SC042	PWGmcSurvivingBimoricOUnrounding	48	1	rest	witnessed	
@@ -68,7 +68,7 @@ SC057	OEJClusterCoalescence	67	0		synthetic_only	Zero corpus firings; validated 
 SC059	OEBackMutation	68	5	heaven, milk, seven, spear, world	witnessed	
 SC060	OEWsPalatalUmlaut	69	5	knight, might, night, six, wight	witnessed	
 SC061	OEWeakTailNasalLoss	70	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
-SC063	OEHighVowelApocope	72	64	beaver, beech, belly, bier, birth, bough, breeches, bride, cow, deal, deed, dew, drench, fee, field, fist, flesh, flood, gift, ground, guest, hall, hand, harvest, heath, help, herd, hind, linden, liver, lung, lust, lye, march, might, need, needle, night, rind, rood, salve, sea, sheath, shield, shovel, shower, sorrow, soul, spindle, spoon, stem, string, thirst, tide, tongs, wether, while, wight, winter, wold, world, worm, fire, wool	witnessed	
+SC063	OEHighVowelApocope	72	63	beaver, beech, belly, bier, birth, bough, breeches, bride, cow, deal, deed, dew, drench, fee, field, fist, flesh, flood, gift, ground, guest, hall, hand, harvest, heath, help, herd, hind, linden, liver, lung, lust, lye, march, might, need, needle, night, rind, rood, salve, sea, sheath, shield, shovel, shower, sorrow, soul, spindle, spoon, stem, string, thirst, tide, tongs, wether, while, wight, winter, wold, worm, fire, wool	witnessed	
 SC064	NWGmcInStemNLoss	73	1	fright	witnessed	
 SC065	OEMedialSyncope	74	0		synthetic_only	Zero corpus firings; validated by synthetic unit controls and the handbook sources.
 SC066	OELAdjacentSyncope	75	3	nettle, spindle, thistle	witnessed	

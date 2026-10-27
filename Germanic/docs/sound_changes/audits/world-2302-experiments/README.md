@@ -1,5 +1,33 @@
 # World: complete-cascade candidate assay
 
+## Adopted inherited migration
+
+Current authority is [SC036's migration decision](../sc036-adjudication.md).
+`migration.json`, based on `5665e303`, records six pre-adoption models:
+identity; broad A; bounded A/B supplements; relocated composite A;
+composite A with narrow u-only e-back mutation. A runs after SC038 and
+before fronting; B after fronting and before breaking. Eight candidate
+inputs and the focused component controls are tested, without another
+paradigm investigation. All migrated models preserve every selected final,
+including soul, lung and the actual `*régna-bùgô` rainbow input.
+
+Adopt bounded A and arrangement1: `OEInterStressRaising` follows SC038,
+composing `OELHWeakRaising` and the temporary `OESoulProxy`. The first
+rewrites plain short a before l+C only in initial C* V́ C a l C
+(short primary V́); the second retains soul's pre-u proxy. The unrestricted
+model's heavy-initial overgeneration and the bounded model's negatives
+are recorded, not hidden by unchanged corpus totals. This is a qualified
+prosodic reconstruction, not two independently dated laws.
+
+The existing harness can now check current production with `--migration`.
+Its current identity is compared with every canonical named snapshot and
+the current production outputs. Tests compare adopted component semantics
+with the pre-migration composite candidate, not an impossible claim that
+the old identity still represents current production. The old receipts
+below remain frozen and are verified against their historical Git sources.
+Original/reassessment invocations below describe their original checkpoints;
+rerunning them against migrated production is a new experiment, not a replay.
+
 Scientific decision: [world adjudication](../world-2302-adjudication.md).
 The initial receipt below belongs to the first investigation published at
 `61a0d67e`. The follow-up A–F reassessment is documented separately below;

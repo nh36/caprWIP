@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (310) ===
+=== DERIVATION_CLASS: regular (311) ===
 
 
 
@@ -6582,6 +6582,26 @@ English Proto Input: *wúrdą
 ### Orthography & surface
 
 Outcome: word
+# world
+PROTO: *wír-àldiz
+EXPECTED: weorold
+OUTPUTS: weorold
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *wíràldiz
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *wíràldz<br>PNWGmc I Lowering: *wéràldz<br>EAF Final Z Deletion: *wéràld<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *wérald<br>OE Inter Stress Raising: *wéruld<br>OE Back Mutation: *wéoruld<br>OE Med Unstressed U Lowering: *wéorold |
+
+
+
+### Orthography & surface
+
+Outcome: weorold
 # worm
 PROTO: *wúrmiz
 EXPECTED: wyrm
@@ -6795,7 +6815,7 @@ vocalization-before-degemination order. That older interpretation belonged
 to the superseded ww proxy. The independently justified assimilation
 feeder and the prosodic condition now remain separate
 [@RingeTaylor2014, pp. 41--42, 55, 57--58].
-=== DERIVATION_CLASS: early_analogy (36) ===
+=== DERIVATION_CLASS: early_analogy (35) ===
 
 
 
@@ -7532,26 +7552,6 @@ English Proto Input: *wḯθagą
 
 Old English Orthography: *wḯþiġ
 Outcome: wīþiġ
-# world
-PROTO: *wír-àldu
-EXPECTED: weorold
-OUTPUTS: weorold
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *wíràldu
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc I Lowering: *wéràldu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Inter Stress Raising: *wéruldu<br>OE Back Mutation: *wéoruldu<br>OE High Vowel Apocope: *wéoruld<br>OE Med Unstressed U Lowering: *wéorold |
-
-
-
-### Orthography & surface
-
-Outcome: weorold
 # youth
 PROTO: *júgunθ
 EXPECTED: ġeoguþ

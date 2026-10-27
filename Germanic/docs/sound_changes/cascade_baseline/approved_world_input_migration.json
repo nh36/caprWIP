@@ -1,0 +1,30 @@
+{
+  "adjudication": "SC036",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc036-adjudication.md",
+  "transition_id": "world",
+  "previous_summary": {
+    "outputs_sha256": "53769ef582dd6d119bacc18f808612980a1f02dfed2f94a6e30645bb9de00a9e",
+    "lexical_outputs_sha256": "c44d73698e2fa2717366e951a75bbb02d19aa677faf51fc86dfa25187556b6da",
+    "legacy_subset_sha256": "43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "2302",
+      "before": {
+        "proto": "*wír-àldu",
+        "proto_norm": "wír-àldu",
+        "fst_input": "wír-àldu",
+        "counterpart": "weorold",
+        "outputs": "weorold"
+      },
+      "after": {
+        "proto": "*wír-àldiz",
+        "proto_norm": "wír-àldiz",
+        "fst_input": "wír-àldiz",
+        "counterpart": "weorold",
+        "outputs": "weorold"
+      }
+    }
+  ]
+}

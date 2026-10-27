@@ -127,7 +127,7 @@
 | 2297 | wold | weald | regular | yes | NOTE |
 | 2298 | wolf | wulf | unexplained_unmodelled | yes | NOTE, DERIVATION_CLASS=unexplained_unmodelled |
 | 2300 | wool | wull | unexplained_unmodelled | yes | NOTE, DERIVATION_CLASS=unexplained_unmodelled |
-| 2302 | world | weorold | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
+| 2302 | world | weorold | regular | yes | NOTE |
 | 2305 | yarn | ġearn | regular | yes | NOTE |
 | 2308 | youth | ġeoguþ | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2309 | make (iptv.2sg) | maca | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |

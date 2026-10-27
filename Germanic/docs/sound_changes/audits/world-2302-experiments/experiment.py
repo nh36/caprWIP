@@ -276,6 +276,38 @@ REASSESSMENT_PROBES = {
     "back-mutation-dental-control": "*w*é*t*o*l*d",
 }
 
+MIGRATION_BASE = "5665e3038dab311a4803e64b0f517b03b4806b4d"
+MIGRATION_DEFINITIONS = """
+define MLight [{*á}|{*é}|{*í}|{*ó}|{*ú}];
+define MWeakA Ctx([
+    {*a} -> {*u} || .#. EnglishStarConsonant* MLight
+        EnglishStarConsonant _ {*l} EnglishStarConsonant
+]);
+define MWeakB Ctx([
+    [{*a}|{*æ}] -> {*u} || .#. EnglishStarConsonant* MLight
+        EnglishStarConsonant _ {*l} EnglishStarConsonant
+]);
+define MWideA Ctx([
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _
+        {*l} EnglishStarConsonant
+]);
+define MProxy Ctx([
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _
+        [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
+]);
+define MCombined [MWeakA .o. MProxy];
+"""
+MIGRATION_PROBES = {
+    **REASSESSMENT_PROBES,
+    "onefold-secondary-before-strip": "*ā*n*f*à*l*d",
+    "onefold-weak-after-strip": "*ā*n*f*a*l*d",
+    "heavy-initial-cluster": "*w*é*r*t*a*l*d",
+    "initial-weak-vowel": "*w*e*r*a*l*d",
+    "world-after-strip": "*w*é*r*a*l*d",
+    "primary-medial": "*w*é*r*á*l*d",
+    "twofold-light": "*t*w*í*f*a*l*d",
+}
+
 
 def reassessment_orders(order):
     def after(sequence, anchor, extra):
@@ -314,7 +346,7 @@ def reassessment_orders(order):
     return models
 
 
-def run_reassessment():
+def run_reassessment(migration=False):
     runtime = layout()
     if not runtime.is_container:
         raise RuntimeError("Run the isolated reassessment inside the backend")
@@ -326,6 +358,23 @@ def run_reassessment():
     order = [stage.inline_text if stage.kind == "inline" else stage.foma_identifier
              for stage in stages]
     models = reassessment_orders(order)
+    if migration:
+        def insert_after(sequence, anchor, rule):
+            result = list(sequence)
+            result.insert(result.index(anchor) + 1, rule)
+            return result
+        no_raise = ["WNoop" if item == RAISE else item for item in order]
+        models = {
+            "identity": order,
+            "A-wide-supplement": insert_after(order, STRIP, "MWideA"),
+            "A-light-supplement": insert_after(order, STRIP, "MWeakA"),
+            "B-light-supplement": insert_after(
+                order, "EAFBrighteningUnstressed", "MWeakB"),
+            "A-light-combined": insert_after(no_raise, STRIP, "MCombined"),
+        }
+        models["A-light-combined-strict-back"] = [
+            "WBackU" if item == "OEBackMutation" else item
+            for item in models["A-light-combined"]]
     directory = runtime.docs_dir / "sound_changes/cascade_baseline"
     protected = [
         runtime.germanic_fst, runtime.sandbox_fst, runtime.corpus_tsv,
@@ -333,6 +382,7 @@ def run_reassessment():
         runtime.data_dir / "entry_stage_metadata.tsv",
         runtime.data_dir / "entry_context_metadata.tsv",
         Path(__file__).with_name("evidence.json"),
+        *([Path(__file__).with_name("reassessment.json")] if migration else []),
         *(runtime.bin_dir / name for name in
           oe_pipeline.expected_snapshot_bins() + ["old_english.bin"]),
         *(path for path in directory.iterdir() if path.is_file()),
@@ -354,11 +404,21 @@ def run_reassessment():
         *CANDIDATES, "*wír-aldiz", "*wér-aldiz",
         "*wír-aldi", "*wír-àldi", "*wír-aldį", "*wír-àldį",
     ]))
+    if migration:
+        candidates = [
+            "*wír-àldiz", "*wér-àldiz", "*wír-aldiz",
+            "*wíra-àldiz", "*án-fàldiz", "*twí-fàldiz",
+            "*lúnganjō", "*régna-bùgô",
+        ]
     components = list(dict.fromkeys([
         *(item for sequence in models.values() for item in sequence),
         "WOToU", "WOUOnly", "WToO", "WToU", "WBackU",
+        *(["MProxy"] if migration else []),
     ]))
     definitions = DEFINITIONS + REASSESSMENT_DEFINITIONS
+    if migration:
+        definitions += MIGRATION_DEFINITIONS
+    probes = MIGRATION_PROBES if migration else REASSESSMENT_PROBES
     recipe = dict(
         definitions=definitions, insert_after="", insert_rule="", replace={},
         component_checks=[dict(component=item) for item in components])
@@ -377,6 +437,11 @@ def run_reassessment():
         for name, sequence in models.items():
             print("reassessment " + name, file=sys.stderr, flush=True)
             states = list(forms)
+            if migration and name != "identity":
+                states = [
+                    form.replace(row["proto_norm"], "wír-àldiz", 1)
+                    if row["row_id"] == "2302" else form
+                    for row, form in zip(rows, forms)]
             changes, firings = [], []
             focal = {identifier: [] for identifier in ("2302", "2201", "2148")}
             for step, identifier in enumerate(sequence, 1):
@@ -409,32 +474,45 @@ def run_reassessment():
                     candidate_trace(bins, sequence, raw) for raw in candidates],
                 paradigm_comparisons={
                     label: candidate_trace(bins, sequence, raw)
-                    for label, raw in PARADIGM_CANDIDATES.items()})
+                    for label, raw in (
+                        {} if migration else PARADIGM_CANDIDATES).items()})
         controls = {
-            identifier: dict(zip(REASSESSMENT_PROBES, strict_apply(
-                bins["component:" + identifier], list(REASSESSMENT_PROBES.values()),
+            identifier: dict(zip(probes, strict_apply(
+                bins["component:" + identifier], list(probes.values()),
                 identifier)))
             for identifier in (
                 RAISE, SYNCOPE, STRIP, "WToU", "WToO", "WOToU", "WOUOnly",
                 "OEBackMutation", "WBackU", "OEMedUnstressedORaising",
-                "OEFinalUnstressedOLowering")}
+                "OEFinalUnstressedOLowering",
+                *(["MWeakA", "MWeakB", "MWideA", "MProxy", "MCombined"]
+                  if migration else []))}
     if before != {str(path): digest(path) for path in protected}:
         raise RuntimeError("Reassessment altered protected sources, bins or receipts")
     return dict(
-        base_commit=REASSESSMENT_BASE, source_sha256=digest(runtime.germanic_fst),
+        base_commit=MIGRATION_BASE if migration else REASSESSMENT_BASE,
+        source_sha256=digest(runtime.germanic_fst),
         corpus_sha256=digest(runtime.corpus_tsv),
         prior_receipt_sha256=digest(Path(__file__).with_name("evidence.json")),
         selected_rows=len(rows), legacy380_identities=len(legacy),
         protected_files_unchanged=len(before),
         identity_incremental_all_snapshots_agree=True,
         build_manifest=json.loads(runtime.build_manifest.read_text()),
-        definitions=definitions, component_inputs=REASSESSMENT_PROBES,
+        definitions=definitions, component_inputs=probes,
         component_results=controls,
+        **(dict(prior_reassessment_sha256=digest(
+            Path(__file__).with_name("reassessment.json")),
+            selected_replacement=dict(row_id="2302", old="*wír-àldu",
+                                      new="*wír-àldiz")) if migration else {}),
         coordinates=[dict(identifier=stage.foma_identifier,
                           exec_index=stage.exec_index,
                           cascade_position=stage.cascade_position)
                      for stage in stages],
         families={
+            "A": dict(models=[name for name in models if name.startswith("A-")],
+                      input="*wír-àldiz", placement="after-SC038-before-fronting"),
+            "B": dict(models=["B-light-supplement"], input="*wír-àldiz",
+                      placement="after-fronting-before-breaking"),
+        } if migration else {
             "A": dict(model="identity", input="*wír-àldu"),
             "B": dict(model="identity", inputs=["*wír-àldiz", "*wír-aldi"]),
             "C": dict(models=[name for name in models if name.startswith("C-")],
@@ -450,7 +528,10 @@ def run_reassessment():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--reassessment", action="store_true")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--reassessment", action="store_true")
+    mode.add_argument("--migration", action="store_true")
     args = parser.parse_args()
-    print(json.dumps(run_reassessment() if args.reassessment else run(),
+    print(json.dumps(run_reassessment(migration=args.migration)
+                     if args.reassessment or args.migration else run(),
                      ensure_ascii=False, indent=2))

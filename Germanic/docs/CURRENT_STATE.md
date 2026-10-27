@@ -62,11 +62,18 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce`
+  `9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597`
 - selected-389 corpus fingerprint (`outputs_sha256`):
-  `53769ef582dd6d119bacc18f808612980a1f02dfed2f94a6e30645bb9de00a9e`
+  `d6e8b90551e4bb57d8d161a8f2334c29620533a487a0e64f8857f500380d5e45`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `c44d73698e2fa2717366e951a75bbb02d19aa677faf51fc86dfa25187556b6da`
+  `7f7994848fba1b86b3c3b24d5d8ae41fab30e2f86e6816c92f63a7810cd69142`
+
+The authorized inherited-world input migration is recorded in
+`approved_world_input_migration.json`; `*_pre_sc036_world.*` preserves
+the previous active baseline. Only2302's selected input changes, from
+`*wír-àldu` to `*wír-àldiz`; all389 finals, targets, contexts and match
+flags remain unchanged. Current scientific reasoning belongs to SC036's
+registered memo. Its separate soul history is not part of this migration.
 
 The SC112 expansion adds only rows 2333 and 2334 (*there* and *where*):
 389 selected rows, 381 matches and the same eight mismatches. Every prior

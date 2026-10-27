@@ -1,9 +1,9 @@
 # world — OE weorold
 
 PROTO: *wíra-àldiz
-PROTOFORM: *wír-àldu
+PROTOFORM: *wír-àldiz
 COUNTERPART: weorold
-DERIVATION_CLASS: early_analogy
+DERIVATION_CLASS: regular
 
 ### Transducer input and output
 
@@ -11,10 +11,10 @@ DERIVATION_CLASS: early_analogy
 | :--- | :--- |
 | lexical item | world |
 | citation reconstruction / lexeme label | *wíra-àldiz |
-| selected input form | *wír-àldu |
+| selected input form | *wír-àldiz |
 | Old English target | weorold |
-| classification | early_analogy |
-| documented output | *wír-àldu -> weorold |
+| classification | regular |
+| documented output | *wír-àldiz -> weorold |
 
 ### Reconstruction and comparative evidence
 
@@ -34,13 +34,12 @@ obscure the comparison. Initial \emph{i} is therefore a supported
 reconstruction, not something established by its usefulness in the
 derivation [@Kroonen2013, pp. 20, 588; @RingeTaylor2014, p. 34].
 
-The selected input [wír-àldu]{.iv .recon lang=pgmc variety=transponent sort=wiraldu role=selected_input} ‘world’ therefore combines the older `*wir-` vowel of the comparative headword with
-an early shift of the compound into the ō-stems of the kind Ringe and
-Taylor note for this lexeme [@RingeTaylor2014, p. 326]. The analogical
-assumption lies in that stem-class remodelling; its precise date and
-paradigmatic mechanism require separate assessment. It is a provisional
-input convention, not a demonstration that analogy preceded the selected
-cell's weak-vowel development.
+The selected input [wír-àldiz]{.iv .recon lang=pgmc sort=wiraldiz role=selected_input}
+'world' adopts the inherited compact i-stem nominative. No early ō-stem
+intervention is required in its selected phonological history. The
+compound's later class mixing remains relevant, rather than being
+silently denied because the conservative nominative suffices
+[@Orel2003, p. 462; @RingeTaylor2014, pp. 202, 326].
 
 The class contrast is real: Ringe and Taylor oppose i-stem Old Saxon
 *werold* 'world' and Old High German *weralt* 'world' to ō-stem Old
@@ -54,25 +53,19 @@ Campbell explicitly records frequent endingless accusative singular
 conservative ending, not by itself proof of an entirely unchanged stem
 history [@Campbell1959, p. 244, §610(1) n.2].
 
-No particular donor cell has been demonstrated for the remodelling.
-General ō-stem nominative \emph{*-ō > -u}, nasal accusative and
-genitive endings must be distinguished; they cannot all be replaced
-indiscriminately by \emph{-u}. The conservative-paradigm method
-exemplified by Fulk counsels against deriving an entire history from a
-normalised citation form [@Fulk2018, pp. 154--156, §§7.14--7.15,
-pp. 161--162, §§7.22--7.23; @Fulk2010, pp. 142--143].
+The selected inherited nominative is sufficient; a complete reconstruction
+of its oblique paradigm is not assumed. Different nominal endings must
+still be distinguished, rather than replacing them indiscriminately with
+\emph{-u} [@Fulk2018, pp. 154--156, 161--162].
 
-The selected form is a transponent combining an earlier
-first-element vowel with a later inflectional formation,
-not an independently quoted single historical stage.
-The compact stem also presupposes resolution or reduction of the
+No mixed-stage early analogical transponent is now necessary.
+The compact stem nevertheless presupposes resolution or reduction of the
 compound junction. The etymological spelling \emph{*wira-aldi-}
 does not independently establish a literal hiatus at the chosen stage,
 and consonant-separated linking-vowel syncope is not a demonstration
 of how adjacent \emph{a+a} would have resolved.
 An already \emph{*wer-} compound requires no lowering
-in its own derivation. Accordingly the selected
-transponent cannot prove that
+in its own derivation. Accordingly the selected input cannot prove that
 [SC015 PNWGmcILowering](#rule-PNWGmcILowering)
 historically preceded
 [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
@@ -127,16 +120,24 @@ and eventual loss of the medial vowel, together with resolution of
 inflected *worulde* 'world' in *Beowulf* 3068a and 2343a,
 support his analysis [@Goering2023, pp. 79--82, §4.5.1.2].
 
-This does not rule out earlier compound secondary accent, but it does
-not date its disappearance either. Foot structure, lexical prominence
-and metrical ictus are related without being identical.
+This does not rule out earlier compound secondary accent. Kaluza's older
+theory allowed subsidiary stress in *weorold* and other disyllables;
+Stanley's presentation is evidence for that theory, not direct written
+accent evidence [@Stanley2022, p. 34]. The adopted relative history loses
+independent second-element prominence before weak rounding. Goering's
+early Old English system, perhaps around 600 and compatible with the
+seventh-/eighth-century poetic horizon, supplies an approximate upper
+horizon, not a precise date for this word's deaccentuation
+[@Goering2023, pp. 84--85, §4.6].
+Foot structure, lexical prominence and metrical ictus remain distinct.
 Hogg's discussion warns against making “tertiary stress” an unexplained
 name for the desired outcome; Minkova likewise requires independent
 linguistic controls on metrical reconstruction
 [@Hogg1996, pp. 3, 9--11; @Minkova1996, pp. 20--29].
-The grave in the selected reconstruction marks the second root, not
-an unstressed linking vowel. It is retained as a model representation,
-not asserted as the actual prominence of that vowel during weak rounding.
+The grave in the selected reconstruction marks the earlier second-root
+accent, not an unstressed linking vowel. It survives the linking-syncope
+operation and is then removed before weak raising, not asserted as actual
+independent prominence at the latter change.
 True compound secondary stress can protect a vowel, while obscured
 compounds reduce; the history of transparency cannot be inferred from a
 hyphen alone [@Fulk2018, pp. 36--38, §2.2].
@@ -159,67 +160,59 @@ prevent treating it as the only possible environment
 [@Bulbring1902, pp. 147--149, §§366--367;
 @Luick1914, p. 126, §113; @RingeTaylor2014, p. 202].
 
-An inherited compact i-stem can therefore be considered without first
-supplying analogical \emph{-u}. In a candidate regular sequence, early
-loss of final short \emph{i} is followed by weak medial retraction/
-rounding, further raising where justified, back mutation of the initial
-vowel and later lowering of medial \emph{u}. An isolated complete
-derivation confirms that pre-\emph{lC} raising, before medial breaking,
-can reach *weorold* without a stem-class intervention. This is a real
-alternative, not a proof that every weak vowel before \emph{lC}
-underwent that high-vowel change. The independently defined prosodic
-domain and the boundary between \emph{o} and \emph{u} remain missing.
-Campbell's conservative endingless accusative is the strongest actual
-cell to investigate, but its surviving ending alone does not establish
-an uninterrupted regular history of the whole stem.
+CAPR adopts weak short \emph{a > u} before \emph{l} plus consonant
+in a light-initial primary-stressed domain: one intervening consonant
+separates the initial short nucleus from the medial weak vowel.
+This bounded interpretation joins Luick's environment to Goering's LH
+analysis; the exact formal restriction is CAPR's qualified reconstruction,
+not either author's quoted law. Heavy-initial retained-prominence
+compounds such as *ānfeald* 'onefold' argue against unrestricted raising
+after removal of accent annotations. Weak *twifold* 'twofold' is a
+relevant rounded comparison; primary medial stress is not rewritten
+[@Bulbring1902, pp. 148--149, §367;
+@Campbell1959, p. 142, §338; @HoggGrammar2011, pp. 217--218;
+@Goering2023, pp. 79--82].
 
-Thus early analogy remains compatible with the comparative class
-differences, not demonstrated necessary by the medial vowel. Later
-partial paradigm mixing can coexist with inherited weak vocalism.
-Neither an arbitrary “tertiary stress” label nor a successful experimental
-derivation decides between those histories.
+The selected operation precedes early unstressed fronting and breaking.
+A post-fronting compression of weak \emph{æ} retraction, rounding and
+raising also succeeds and resembles Hogg's sequence. The chosen ordering
+does not require that intermediate vowel, without claiming an independently
+dated universal law. Versloot's alternative conditional fronting and later
+breaking challenge compulsory fronting before \emph{lC}; his principally
+stressed-domain analysis does not itself establish weak \emph{a > u}
+in *world* [@HoggGrammar2011, pp. 217--218;
+@Versloot2025, pp. 111--114, 122--123].
 
-### Provisional formal projection to Old English
+### Selected regular projection to Old English
 
-From the selected input [wír-àldu]{.recon} ‘world’, Northwest Germanic `i`-lowering gives
-[wér-àldu]{.recon} ‘world’. Inter-stress raising then changes the medial `a` to `u`, producing
-[wér-uldu]{.recon} ‘world’. Back mutation yields
-\emph{*wéor-uldu}; final high-vowel apocope gives
-\emph{*wéor-uld}, and later medial `u`-lowering produces
-`weorold` 'world'.
+From selected \emph{*wír-àldiz}, early short-\emph{i} apocope,
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering), and final-\emph{z}
+loss give \emph{*wér-àld}. After linking-syncope has read the earlier
+accent information, grave removal gives \emph{*wérald}.
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising) supplies
+\emph{*wéruld}; [SC059 OEBackMutation](#rule-OEBackMutation)
+gives \emph{*wéoruld}; and
+[SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering)
+gives *weorold*. No final high vowel survives to undergo later apocope.
 
-This sequence matches the comparative background in Ringe and Taylor's
-literature-stage chain for the word while preserving the `*wir-` notation of
-the comparative label [@RingeTaylor2014, p. 326]. This is the retained
-executable projection: the reconstructed secondary accent does not by itself
-prove weakened prominence, and the broader variant history does not require
-every medial `o` to have passed through `u`
-[@Campbell1959, p. 142, §338; @HoggGrammar2011, pp. 217--218, §6.7].
-Within this provisional projection, early stem-class reshaping precedes
-the phonological tail. That is the selected representation, not an
-independently demonstrated necessity of the historical development.
+This is the longest defensible regular sequence from the selected compact
+inherited nominative, not a derivation of the unresolved earlier compound
+junction. The `regular` classification concerns that selected span.
+The inherited accent, original \emph{i/e}, and exact weak-vowel chronology
+retain their qualifications. One raising rewrite may compress gradual
+rounding and raising; it does not assert universal \emph{a > u > o}
+across the dialect variants [@Luick1914, pp. 125--126, §113;
+@RingeTaylor2014, pp. 202, 326].
 
-An earlier compact ō-stem candidate would also reach *weorold* while
-leaving final \emph{ō > u} to
-[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising).
-That computational possibility does not show whether the analogical
-reassignment preceded SC019 or instead supplied an already productive
-\emph{-u}. Nor does the absence of nominative umlaut prove an early
-date: in the present full cascade short third-syllable \emph{i} is
-lost before it could supply that trigger.
-The unchanged rules give the i-stem medial fronting and breaking,
-not the selected weak back vowel; the broader experimental weak-vowel
-account just discussed avoids that result. An early rounded \emph{o}
-alone fails later because of
+An early rounded \emph{o} alone fails in the existing model at
 [SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering),
 not because historical rounding is intrinsically impossible.
 Furthermore, the present
 [SC059 OEBackMutation](#rule-OEBackMutation) also admits \emph{o}
 as a trigger for initial \emph{e}; its executable behaviour cannot prove
-that only \emph{u} feeds the diphthong. The selected input is retained
-provisionally because the independent conditioning of a replacement
-sequence is unresolved, not because the inherited alternative fails
-under the incumbent rules.
+that only \emph{u} feeds the diphthong. The adopted inherited high-vowel
+path also succeeds under explicitly restricted \emph{u}-triggered
+back mutation. No back-mutation or later merger rule is changed to rescue it.
 
 ### Stage comparison
 
@@ -230,5 +223,5 @@ OE-facing stage chosen for the derivation.
 | :--- | :--- | :--- | :--- |
 | comparative compound with older first-element vowel | [`*wíra-àldiz`]{.iv lang=pgmc sort=wiraaldiz role=source_protoform} | citation reconstruction / lexeme label | preserves the older `*wir-` tradition of the compound |
 | literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form} | Ringe-Taylor background chain to OE [`weorold`]{.iv lang=oe sort=weorold role=target_form} 'world' ~ [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world' | explains the older comparative literature cited for the word |
-| Old English-facing input | [`*wír-àldu`]{.iv lang=pgmc variety=transponent sort=wiraldu role=selected_input} | compact-trace output: [`weorold`]{.iv lang=oe sort=weorold role=regular_output} 'world' | exact match for the West Saxon form used here |
+| selected inherited compact nominative | [`*wír-àldiz`]{.iv lang=pgmc sort=wiraldiz role=selected_input} | regular output: [`weorold`]{.iv lang=oe sort=weorold role=regular_output} 'world' | exact West Saxon match; junction pre-encoded, no necessary early analogy |
 | broader OE variant cluster | — | [`worold`]{.iv lang=oe sort=worold role=comparison_form} 'world', [`weoruld`]{.iv lang=oe sort=weoruld role=comparison_form} 'world', [`woruld`]{.iv lang=oe sort=woruld role=comparison_form} 'world', [`wiarald`]{.iv lang=oe sort=wiarald role=comparison_form} 'world', [`world`]{.iv lang=oe sort=world role=comparison_form} 'world' | real attested comparanda that remain outside that West Saxon line |

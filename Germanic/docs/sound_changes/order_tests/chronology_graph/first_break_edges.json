@@ -234,7 +234,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC036-oe-inter-stress-raising.md",
       "card_type": "technical_computational",
       "has_reciprocal_boundary": "no",
-      "short_summary": "SC004 class membership, SC019 final-u supply and SC040 lowering are model-local dependencies, not independently demonstrated historical chronology. The frozen old SC040 displacement is superseded."
+      "short_summary": "SC037 reads graves, SC038 strips them, SC036 weak LH raising precedes fronting and feeds back mutation. These are model-local annotation/feeding relations, not independently dated universal events. Soul retains SC004/SC019 dependencies; SC040 lowers generated u."
     },
     {
       "change_id": "SC037",
@@ -1348,11 +1348,11 @@
       "evidence_basis": "technical",
       "witness_role": "feeding",
       "representative_lexemes": "soul",
-      "representative_forms": "Atomic *ái is outside PGmcStarVowel; SC004 supplies *ā and permits the retained proxy to fire",
+      "representative_forms": "Atomic *ái is outside PGmcStarVowel; SC004 supplies *ā and permits the temporary soul proxy to fire",
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Current exec37 before exec45. Broader vocalic-class counterfactual removes this break. Preserves SC004's accepted model-local interpretation, not an independently dated historical edge. See sc036-adjudication.md."
+      "notes": "Preserved branch-local dependency after the world migration; not independently dated historical chronology. See sc036-adjudication.md."
     },
     {
       "source_change_id": "SC036",
@@ -1376,11 +1376,53 @@
       "evidence_basis": "technical",
       "witness_role": "feeding",
       "representative_lexemes": "soul; world",
-      "representative_forms": "The component order raises medial *u then lowers it to *o; full displacement after current SC040 instead yields sāwel and wereald",
+      "representative_forms": "SC036 supplies medial u; SC040 later gives selected o",
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "The old sāwul/weoruld measurement used superseded positions/architecture and remains on the frozen card only. The current long displacement also crosses fronting, breaking and apocope; no historical date or adjacency follows. See sc036-adjudication.md."
+      "notes": "Historical u-before-lowering is conditional on the adopted high-vowel path, not a universal dialectal claim. Earlier displacement measurements remain frozen in their own architecture."
+    },
+    {
+      "source_change_id": "SC036",
+      "target_change_id": "SC038",
+      "relation_type": "technical_computational",
+      "direction_basis": "earlier_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
+      "representative_lexemes": "world",
+      "representative_forms": "SC038 removes earlier grave: *w*é*r*à*l*d to *w*é*r*a*l*d before weak raising",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
+      "reciprocal_group_id": "",
+      "notes": "Annotation lifetime, with SC037 still before SC038; not an independently dated universal syncope/deaccentuation sequence."
+    },
+    {
+      "source_change_id": "SC036",
+      "target_change_id": "SC107",
+      "relation_type": "technical_computational",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "bleeding",
+      "representative_lexemes": "world",
+      "representative_forms": "Weak a becomes u before retained early unstressed fronting could give æ",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
+      "reciprocal_group_id": "",
+      "notes": "Architecture A is the adopted weak-domain serialization; architecture B after fronting also succeeds. Not a general fronting re-adjudication or independent absolute date."
+    },
+    {
+      "source_change_id": "SC036",
+      "target_change_id": "SC059",
+      "relation_type": "technical_computational",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
+      "representative_lexemes": "world",
+      "representative_forms": "Medial u feeds initial e back mutation in inherited *weruld",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
+      "reciprocal_group_id": "",
+      "notes": "Also verified with explicitly composed u-only e branches; does not depend on the unresolved SC059 shared-context admission of o/a."
     },
     {
       "source_change_id": "SC037",

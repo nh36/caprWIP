@@ -102,13 +102,13 @@ define S043OEDiphthongLeveling S042OEJGlideIO
     .o. OEDiphthongLeveling;
 define S044OEAwLongDiphthong S043OEDiphthongLeveling
     .o. OEAwLongDiphthong;
-define S045OEInterStressRaising S044OEAwLongDiphthong
-    .o. OEInterStressRaising;
-define S046OECompoundLinkingSyncope S045OEInterStressRaising
+define S045OECompoundLinkingSyncope S044OEAwLongDiphthong
     .o. OECompoundLinkingSyncope;
-define S047OEStripSecondaryStress S046OECompoundLinkingSyncope
+define S046OEStripSecondaryStress S045OECompoundLinkingSyncope
     .o. OEStripSecondaryStress;
-define S048OEWICombinativeUUmlaut S047OEStripSecondaryStress
+define S047OEInterStressRaising S046OEStripSecondaryStress
+    .o. OEInterStressRaising;
+define S048OEWICombinativeUUmlaut S047OEInterStressRaising
     .o. OEWICombinativeUUmlaut;
 define S049PWGmcFinalBareALoss S048OEWICombinativeUUmlaut
     .o. PWGmcFinalBareALoss;
@@ -410,16 +410,16 @@ regex S044OEAwLongDiphthong;
 save stack old_english_sandbox_after_oe_aw_long_diphthong.bin
 
 clear stack
-regex S045OEInterStressRaising;
-save stack old_english_sandbox_after_oe_inter_stress_raising.bin
-
-clear stack
-regex S046OECompoundLinkingSyncope;
+regex S045OECompoundLinkingSyncope;
 save stack old_english_sandbox_after_oe_compound_linking_syncope.bin
 
 clear stack
-regex S047OEStripSecondaryStress;
+regex S046OEStripSecondaryStress;
 save stack old_english_sandbox_after_oe_strip_secondary_stress.bin
+
+clear stack
+regex S047OEInterStressRaising;
+save stack old_english_sandbox_after_oe_inter_stress_raising.bin
 
 clear stack
 regex S048OEWICombinativeUUmlaut;

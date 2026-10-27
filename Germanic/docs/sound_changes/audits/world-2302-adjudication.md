@@ -1,5 +1,24 @@
 # World: reconstruction, analogy and compound prosody
 
+## Current decision: inherited nominative adopted
+
+The separately authorized migration from `5665e303` supersedes this file's
+earlier provisional production hold. Current scientific authority and the
+complete template-based decision are in
+[SC036's current migration section](sc036-adjudication.md#current-authorized-world-migration-27-october-2026).
+Selected input is now `*wír-àldiz`, target *weorold*, class `regular`,
+with the compact junction still pre-encoded. SC036 follows SC038 and
+combines bounded light-initial weak a-to-u before lC with a separately
+identified temporary pre-u branch preserving soul. No early analogical
+transponent is needed. The six-model
+[placement receipt](world-2302-experiments/migration.json) compares both
+placements and both branch arrangements, including narrow u-only back
+mutation. All389 finals, all targets and eight mismatches are preserved.
+
+The sections below record the preceding investigation, not current
+production instructions. Its evidence, reassessment and closeout receipts
+remain byte-identical.
+
 ## Identity
 
 - Lexical identity: row2302, *world* → Old English *weorold*.

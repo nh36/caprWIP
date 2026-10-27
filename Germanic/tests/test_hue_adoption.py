@@ -99,7 +99,7 @@ class HueAdoptionTests(unittest.TestCase):
                 reader = csv.DictReader(handle, delimiter="\t")
                 fields = reader.fieldnames
                 migrations = [row for row in reader if row["row_id"] not in {
-                    "2224", "2162", "2283", "2095", "2313", "2314"}]
+                    "2224", "2162", "2283", "2095", "2313", "2314", "2302"}]
             with (target / "approved_input_migrations.tsv").open("w") as handle:
                 writer = csv.DictWriter(handle, fields, delimiter="\t")
                 writer.writeheader()

@@ -10,9 +10,9 @@
 
 | Derivation class | Count |
 | :--- | ---: |
-| `regular` (Regular derivations) | 88 |
+| `regular` (Regular derivations) | 89 |
 | `attested_variant` (Attested variants and selected comparison forms) | 4 |
-| `early_analogy` (Early analogy and pre-Old-English input selection) | 36 |
+| `early_analogy` (Early analogy and pre-Old-English input selection) | 35 |
 | `late_analogy` (Late analogy and paradigm-cell selection) | 29 |
 | `reconstructed_oe` (Reconstructed Old English comparators) | 3 |
 | `known_unmodelled` (Known but unmodelled remodellings) | 2 |

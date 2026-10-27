@@ -1,4 +1,12 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+add	pgmc	*wír-àldiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	SC036 authorized inherited-world input migration; compact junction remains pre-encoded.
+add	pgmc	wír-àldiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	SC036 authorized inherited-world input migration; exact unstarred tagged display.
+add	pgmc	*wír-àldiz	source_protoform	lexical_protoform	world — OE weorold	SC036 authorized inherited selected input; comparative PROTO remains unchanged.
+add	pgmc	*wíràldiz	selected_input	trace_proto_input	world — OE weorold	SC036 authorized inherited-world input, trace-normalized junction.
+remove	pgmc	*wír-àldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	SC036 removes the previous early analogical transponent selection.	transponent
+remove	pgmc	wír-àldu	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	SC036 removes the previous unstarred tagged transponent display.	transponent
+remove	pgmc	*wír-àldu	source_protoform	lexical_protoform	world — OE weorold	SC036 replaces the previous selected transponent, not comparative PROTO.	transponent
+remove	pgmc	*wíràldu	selected_input	trace_proto_input	world — OE weorold	SC036 replaces the previous trace-normalized transponent input.	transponent
 add	oe	hwēr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md	SC112 lexical publication: Hill2017 pp.142-143, normalized Anglian comparator.
 add	oe	hwǣr	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md	SC112 lexical publication: ClarkHall1960 p.170, unchanged selected target.
 add	oe	ðēr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2333-there-þǣr.model.md	SC112 lexical publication: Hill2017 pp.142-143, normalized Anglian comparator.

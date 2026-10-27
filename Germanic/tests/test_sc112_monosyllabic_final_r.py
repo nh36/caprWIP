@@ -141,6 +141,9 @@ class Sc112Tests(unittest.TestCase):
                   "phonological_finality", "counterpart", "outputs")
         for row_id, previous in self.previous.items():
             with self.subTest(row_id=row_id):
+                if row_id == "2302":
+                    previous = dict(previous, proto="*wír-àldiz",
+                                    proto_norm="wír-àldiz", fst_input="wír-àldiz")
                 self.assertEqual(
                     tuple(self.current[row_id][field] for field in fields),
                     tuple(previous[field] for field in fields),

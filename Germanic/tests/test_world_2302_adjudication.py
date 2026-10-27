@@ -33,19 +33,20 @@ def read_tsv(text):
 
 def test_scientific_sources_and_archives_are_preserved():
     paths = [
-        "Germanic/fsts/germanic.txt",
-        "Germanic/fsts/old_english_sandbox.txt",
-        "Germanic/docs/sound_changes/registry/sc_registry.tsv",
-        "Germanic/docs/sound_changes/registry/chronology_edges.tsv",
         "Germanic/data/entry_context_metadata.tsv",
     ]
     for directory in (
         "Germanic/docs/sound_changes/cascade_baseline",
         "Germanic/docs/sound_changes/audits/sc036-experiments",
     ):
-        paths.extend(subprocess.check_output(
+        archived = subprocess.check_output(
             ["git", "ls-tree", "-r", "--name-only", BASE, directory],
-            cwd=ROOT, text=True).splitlines())
+            cwd=ROOT, text=True).splitlines()
+        paths.extend(path for path in archived if (
+            "sc036-experiments/" in path or "_pre_" in path or
+            "legacy380" in path or
+            (Path(path).name.startswith("approved_") and
+             not path.endswith("/approved_input_migrations.tsv"))))
     for path in paths:
         if path.endswith("/oe_equivalence_report.json"):
             continue
@@ -56,10 +57,12 @@ def test_scientific_sources_and_archives_are_preserved():
     assert equivalent["rows_compared"] == 389
 
 
-def test_only_editorial_row_fields_changed():
+def test_only_authorized_world_fields_changed():
     for path, allowed in (
-        ("Germanic/data/germanic-aligned-final.tsv", {"NOTE"}),
-        ("Germanic/data/entry_stage_metadata.tsv", {"evidence"}),
+        ("Germanic/data/germanic-aligned-final.tsv",
+         {"NOTE", "PROTOFORM", "DERIVATION_CLASS"}),
+        ("Germanic/data/entry_stage_metadata.tsv",
+         {"evidence", "protoform_variety", "decision_type"}),
     ):
         old = read_tsv(base_bytes(path).decode())
         new = read_tsv((ROOT / path).read_text())
@@ -136,7 +139,7 @@ def test_model_deltas_and_marker_dependency_are_not_adopted():
     assert all(r["legacy380_identity"] for m in models.values()
                for r in m["final_differences"])
     row = adjudicate.load_registry_row("SC036")
-    assert (row["verdict"], row["confidence"]) == ("REFORMULATE", "C")
+    assert (row["verdict"], row["confidence"]) == ("REFORMULATE/REORDER", "C")
 
 
 def test_paradigm_rejections_are_explicit_input_coverage_gaps():
@@ -199,8 +202,6 @@ def inherited_candidate(model):
 
 def test_followup_preserves_production_and_prior_receipts():
     paths = [
-        "Germanic/data/germanic-aligned-final.tsv",
-        "Germanic/data/entry_stage_metadata.tsv",
         "Germanic/data/entry_context_metadata.tsv",
         "Germanic/docs/sound_changes/audits/world-2302-closeout.md",
         "Germanic/docs/sound_changes/audits/world-2302-experiments/evidence.json",
@@ -218,7 +219,10 @@ def test_followup_preserves_production_and_prior_receipts():
     assert evidence["prior_receipt_sha256"] == hashlib.sha256(
         (ASSAY / "evidence.json").read_bytes()).hexdigest()
     assert evidence["corpus_sha256"] == hashlib.sha256(
-        (ROOT / paths[0]).read_bytes()).hexdigest()
+        subprocess.check_output([
+            "git", "show",
+            f"{FOLLOWUP_BASE}:Germanic/data/germanic-aligned-final.tsv"],
+            cwd=ROOT)).hexdigest()
     assert set(evidence["families"]) == set("ABCDEF")
     assert len(evidence["component_inputs"]) == 23
     for model in evidence["models"].values():
@@ -233,8 +237,10 @@ def test_followup_preserves_production_and_prior_receipts():
     reader = (ROOT / reader_path).read_text()
     before = subprocess.check_output(
         ["git", "show", f"{FOLLOWUP_BASE}:{reader_path}"], cwd=ROOT, text=True)
-    assert reader.split("### The distinct history of soul", 1)[1] == (
-        before.split("### The distinct history of soul", 1)[1])
+    assert reader.split("### The distinct history of soul", 1)[1].split(
+        "\n\nThe separate temporary branch", 1)[0].strip() == (
+        before.split("### The distinct history of soul", 1)[1].split(
+            "\n\n## SC036", 1)[0].strip())
 
 
 def test_inherited_success_is_not_evidence_for_necessary_analogy():
@@ -342,33 +348,137 @@ def test_every_reassessment_selected_final_delta_is_explicit(name, expected):
 
 
 @pytest.mark.runtime
-def test_fresh_world_assay_repeats_candidates_controls_and_all_deltas(tmp_path):
-    result = run_in_runner(
-        "python3 docs/sound_changes/audits/world-2302-experiments/experiment.py",
-        text=True, capture_output=True, check=True, timeout=1800)
-    current = json.loads(result.stdout)
-    (tmp_path / "world-current-evidence.json").write_text(result.stdout)
-    observed = receipt()
-    assert current["component_results"] == observed["component_results"]
-    for name, model in observed["models"].items():
-        fresh = current["models"][name]
-        for field in ("final_differences", "full_cascade_candidates",
-                      "paradigm_comparisons", "focal_traces"):
-            assert fresh[field] == model[field]
-
-
-@pytest.mark.runtime
-def test_fresh_reassessment_repeats_candidates_controls_and_all_deltas(tmp_path):
+def test_current_migration_repeats_adopted_semantics_and_protected_outputs(tmp_path):
     result = run_in_runner(
         "python3 docs/sound_changes/audits/world-2302-experiments/experiment.py"
-        " --reassessment",
+        " --migration",
         text=True, capture_output=True, check=True, timeout=1800)
     current = json.loads(result.stdout)
-    (tmp_path / "world-reassessment-current.json").write_text(result.stdout)
-    observed = reassessment()
-    for field in ("source_sha256", "corpus_sha256", "prior_receipt_sha256",
-                  "selected_rows", "legacy380_identities", "component_inputs",
-                  "component_results", "coordinates", "families", "models"):
-        assert current[field] == observed[field], field
+    (tmp_path / "world-migration-current.json").write_text(result.stdout)
+    observed = json.loads((ASSAY / "migration.json").read_text())
+    assert current["component_results"]["OEInterStressRaising"] == (
+        observed["component_results"]["MCombined"])
+    assert current["selected_rows"] == 389
+    assert current["legacy380_identities"] == 380
+    for model in current["models"].values():
+        assert model["final_differences"] == []
+        assert inherited_candidate(model)["final"] == "weorold"
+        assert model["focal_traces"]["2201"][-1]["post"] == "sāwol"
+        assert model["focal_traces"]["2148"][-1]["post"] == "reġnboga"
     assert current["protected_files_unchanged"] >= 172
     assert current["identity_incremental_all_snapshots_agree"]
+
+
+def test_migration_receipt_preserves_predecessors_and_compares_both_placements():
+    evidence = json.loads((ASSAY / "migration.json").read_text())
+    base = evidence["base_commit"]
+    assert base == "5665e3038dab311a4803e64b0f517b03b4806b4d"
+    for field, path in (
+        ("source_sha256", "Germanic/fsts/germanic.txt"),
+        ("corpus_sha256", "Germanic/data/germanic-aligned-final.tsv"),
+        ("prior_receipt_sha256", str((ASSAY / "evidence.json").relative_to(ROOT))),
+        ("prior_reassessment_sha256",
+         str((ASSAY / "reassessment.json").relative_to(ROOT))),
+    ):
+        assert evidence[field] == hashlib.sha256(
+            subprocess.check_output(["git", "show", f"{base}:{path}"],
+                                    cwd=ROOT)).hexdigest()
+    assert evidence["selected_rows"] == 389
+    assert evidence["legacy380_identities"] == 380
+    assert len(evidence["models"]) == 6
+    for name, model in evidence["models"].items():
+        assert model["final_differences"] == []
+        assert model["paradigm_comparisons"] == {}
+        assert inherited_candidate(model)["final"] == (
+            "wereald" if name == "identity" else "weorold")
+    a = inherited_candidate(evidence["models"]["A-light-combined"])
+    b = inherited_candidate(evidence["models"]["B-light-supplement"])
+    assert "EAFBrighteningUnstressed" not in {step["stage"] for step in a["trace"]}
+    assert "EAFBrighteningUnstressed" in {step["stage"] for step in b["trace"]}
+    assert inherited_candidate(
+        evidence["models"]["A-light-combined-strict-back"])["final"] == "weorold"
+    stages = {step["stage"]: step for step in a["trace"]}
+    assert stages["PWGmcEarlyIApocope"]["post"] == "*w*í*r*à*l*d*z"
+    assert stages["OEStripSecondaryStress"]["post"] == "*w*é*r*a*l*d"
+    assert stages["MCombined"]["post"] == "*w*é*r*u*l*d"
+    assert stages["OEBackMutation"]["post"] == "*w*éo*r*u*l*d"
+    assert stages["OEMedUnstressedULowering"]["post"] == "*w*éo*r*o*l*d"
+    assert "OEHighVowelApocope" not in stages
+    assert "OEBreaking" not in stages
+
+
+def test_bounded_weak_domain_has_actual_positive_and_negative_controls():
+    evidence = json.loads((ASSAY / "migration.json").read_text())
+    controls, inputs = evidence["component_results"], evidence["component_inputs"]
+    for probe in ("onefold-secondary-before-strip", "onefold-weak-after-strip",
+                  "heavy-initial-cluster", "initial-weak-vowel", "primary-medial",
+                  "right-j", "literal-vowel-hiatus"):
+        assert controls["MWeakA"][probe] == inputs[probe]
+    assert controls["MWeakA"]["world-after-strip"] == "*w*é*r*u*l*d"
+    assert controls["MWeakA"]["twofold-light"] == "*t*w*í*f*u*l*d"
+    assert controls["MWideA"]["onefold-weak-after-strip"] == "*ā*n*f*u*l*d"
+    assert controls["MProxy"]["world-after-strip"] == inputs["world-after-strip"]
+    assert controls["MCombined"]["world-after-strip"] == "*w*é*r*u*l*d"
+
+
+def test_current_order_and_class_do_not_claim_to_derive_compound_junction():
+    import oe_pipeline
+    order = [stage.foma_identifier for stage in oe_pipeline.stages()]
+    assert order.index("OECompoundLinkingSyncope") < order.index("OEStripSecondaryStress")
+    assert order.index("OEStripSecondaryStress") + 1 == order.index("OEInterStressRaising")
+    assert order.index("OEInterStressRaising") < order.index("EAFBrighteningUnstressed")
+    assert order.index("OEInterStressRaising") < order.index("OEBackMutation")
+    rows = read_tsv((ROOT / "Germanic/data/germanic-aligned-final.tsv").read_text())
+    row = next(r for r in rows if r["ID"] == "2302")
+    assert (row["PROTO"], row["PROTOFORM"], row["COUNTERPART"],
+            row["DERIVATION_CLASS"]) == (
+                "*wíra-àldiz", "*wír-àldiz", "weorold", "regular")
+    assert "pre-encoded, not derived" in row["NOTE"]
+    stages = read_tsv((ROOT / "Germanic/data/entry_stage_metadata.tsv").read_text())
+    stage = next(r for r in stages if r["row_id"] == "2302")
+    assert stage["protoform_stage"] == "pgmc"
+    assert stage["protoform_variety"] == ""
+
+
+def test_exact_input_only_baseline_adoption_and_all_finals_are_preserved():
+    import cascade_baseline
+    directory = ROOT / "Germanic/docs/sound_changes/cascade_baseline"
+    previous = cascade_baseline.read_baseline(
+        directory / "cascade_baseline_outputs_pre_sc036_world.tsv",
+        directory / "cascade_baseline_summary_pre_sc036_world.json")
+    current = cascade_baseline.read_baseline(
+        directory / "cascade_baseline_outputs.tsv",
+        directory / "cascade_baseline_summary.json")
+    approval = json.loads((directory / "approved_world_input_migration.json").read_text())
+    cascade_baseline.validate_cell_transition(previous, current, approval)
+    old = {row["row_id"]: row for row in previous["records"]}
+    new = {row["row_id"]: row for row in current["records"]}
+    assert {key for key in old if old[key] != new[key]} == {"2302"}
+    for identifier in old:
+        for field in ("outputs", "counterpart", "accepted", "match", "output_count",
+                      "word_stress", "phonological_finality"):
+            assert old[identifier][field] == new[identifier][field]
+
+
+def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
+    path = "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv"
+    previous = read_tsv(subprocess.check_output([
+        "git", "show", "5665e3038dab311a4803e64b0f517b03b4806b4d:" + path],
+        cwd=ROOT, text=True))
+    current = read_tsv((ROOT / path).read_text())
+    assert all(row in current for row in previous)
+    added = [row for row in current if row not in previous]
+    assert len(added) == 8
+    expected = {
+        ("selected_input", "explicit_tag", "*wír-àld"),
+        ("selected_input", "explicit_tag", "wír-àld"),
+        ("source_protoform", "lexical_protoform", "*wír-àld"),
+        ("selected_input", "trace_proto_input", "*wíràld"),
+    }
+    for action, suffix, variety in (("add", "iz", ""), ("remove", "u", "transponent")):
+        rows = [row for row in added if row["action"] == action]
+        assert {(r["form_role"], r["source_scope"], r["form"]) for r in rows} == {
+            (role, scope, stem + suffix) for role, scope, stem in expected}
+        assert all(r["language"] == "pgmc" and (r.get("variety") or "") == variety
+                   and ("2302-world-" in r["source_ref"] or
+                        r["source_ref"] == "world — OE weorold") for r in rows)

@@ -2135,23 +2135,24 @@ define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
     .o. OEBreakingI);
 
-# SC036: retained composite proxy; see audits/sc036-adjudication.md.
-# World belongs to weak rounding (Luick §113 pp.125-126; R/T pp.202,326).
-# Soul instead has nonhigh syncope and epenthesis (R/T p.330; Luick §317).
-# Single comma: BOTH targets share the preceding-vowel and following-u context.
-# No j may occur anywhere in the right consonant sequence.
-# Grave is secondary accent, not independent evidence of weakened prominence.
-# Execution before fronting/breaking is model-local, not a historical date.
-define OEInterStressRaising Ctx([
-    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _ [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}],
-    {*à} -> {*u}
+# SC036: bounded LH weak rounding/raising (Luick §113; Goering §4.5.1.2).
+# The a>u rewrite compresses phonetic stages; its placement is not a date.
+define OELHWeakRaising Ctx([
+    {*a} -> {*u} || .#. EnglishStarConsonant* [{*á}|{*é}|{*í}|{*ó}|{*ú}]
+        EnglishStarConsonant _ {*l} EnglishStarConsonant
 ]);
 
-# DEV_NOTES §16.6.3 (architecture option C): Neutralise any remaining
-# Nebenton marks to plain short vowels so the rest of the OE cascade
-# (breaking, AFB, i-umlaut, u-lowering) sees only acute-primary or
-# plain short vowels. Removing the marker earlier does not change the selected
-# world output: SC036 can then use its plain-a mapping in the same shared context.
+# Temporary technical branch for soul, pending its separate syncope/epenthesis
+# review (R/T p.330). This is not a second independent dated sound law.
+define OESoulProxy Ctx([
+    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _
+        [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
+]);
+
+define OEInterStressRaising [OELHWeakRaising .o. OESoulProxy];
+
+# SC037 reads graves first; SC038 then removes the secondary-stress annotation
+# before weak raising. This annotation lifetime is not a general stress-loss date.
 define OEStripSecondaryStress Ctx([
     {*à} -> {*a},
     {*è} -> {*e},
@@ -3740,18 +3741,14 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OEAwLongDiphthong
     # SC035 now follows SC107 and palatalization; the old protective
     # operation and its model-local early dependency are superseded.
-    # Inter-stress raising: *a → *u in compounds before back vowel (R/T §6.3.3).
-    # Must apply BEFORE AFB (which converts *a → *æ) and BEFORE breaking.
-    # E.g., *weraldu → *weruldu, so back mutation applies: *e → *eo before r+u.
-    .o. OEInterStressRaising
     # §17.11: compound linking-vowel syncope MUST fire before grave-stripping
     # (trough condition reads acute+grave tiers). Also precedes B-allophony
     # (line ~2894) so the post-syncope cluster *n_*b blocks *b→*β lenition.
     .o. OECompoundLinkingSyncope
-    # §16.6: neutralise Nebenton graves to plain short vowels
-    # immediately after inter-stress raising, before the general
-    # stress-sensitive cascade.
+    # Preserve the earlier accent for linking syncope, then remove its marker.
     .o. OEStripSecondaryStress
+    # Weak LH a>u before fronting/breaking; separate provisional soul branch.
+    .o. OEInterStressRaising
     # §17.51.A1: OE w-effect on *í (combinative u-umlaut after initial *w).
     # Must precede OEMedUnstressedULowering so that the medial *u trigger
     # is still visible. Output *ú (stressed) is then preserved through

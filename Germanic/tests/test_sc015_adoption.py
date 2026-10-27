@@ -179,6 +179,11 @@ class SC015AdoptionTests(unittest.TestCase):
                 BASE / "cascade_baseline_summary_pre_sc112_expansion.json",
                 target / "cascade_baseline_summary.json",
             )
+            migrations = table(target / "approved_input_migrations.tsv")
+            with (target / "approved_input_migrations.tsv").open("w") as handle:
+                writer = csv.DictWriter(handle, fieldnames=list(migrations[0]), delimiter="\t")
+                writer.writeheader()
+                writer.writerows(row for row in migrations if row["row_id"] != "2302")
             initial = {p.name: p.read_bytes() for p in target.iterdir()}
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             self.assertEqual(initial, {p.name: p.read_bytes() for p in target.iterdir()})

@@ -51,9 +51,9 @@ SC106	OEJWWSimplification	support_stage	Old English	Retained j-created glide com
 SC110	OEJGlideIO	support_stage	Old English	Palatalized-glide long-io realization				unadjudicated		42	40
 SC032	OEDiphthongLeveling	historical_sound_change	Old English	Quantity-distinct English diphthong realization	oe	english_specific	A	adjudicated	REFORMULATE	43	41
 SC034	OEAwLongDiphthong	support_stage	Old English	Retained show long-diphthong proxy				adjudicated	REFORMULATE/DEFER	44	42
-SC036	OEInterStressRaising	historical_sound_change	Old English	OE weak medial vocalism	oe	english_specific	C	adjudicated	REFORMULATE	45	43
-SC037	OECompoundLinkingSyncope	historical_sound_change	Old English	OE Compound Linking Syncope	oe	english_specific	A	unadjudicated		46	44
-SC038	OEStripSecondaryStress	technical_marker	Old English	OE Strip Secondary Stress				unadjudicated		47	45
+SC037	OECompoundLinkingSyncope	historical_sound_change	Old English	OE Compound Linking Syncope	oe	english_specific	A	unadjudicated		45	43
+SC038	OEStripSecondaryStress	technical_marker	Old English	OE Strip Secondary Stress				unadjudicated		46	44
+SC036	OEInterStressRaising	historical_sound_change	Old English	OE weak medial vocalism	oe	english_specific	C	adjudicated	REFORMULATE/REORDER	47	45
 SC039	OEWICombinativeUUmlaut	historical_sound_change	Old English	OE WI Combinative U Umlaut	oe	english_specific	A	unadjudicated		48	46
 SC041	PWGmcFinalBareALoss	historical_sound_change	Old English	PWGmc Final Bare A Loss	pwgmc	pan_wgmc	B	unadjudicated		49	47
 SC042	PWGmcSurvivingBimoricOUnrounding	historical_sound_change	Old English	PWGmc Surviving Bimoric O Unrounding	pwgmc	pan_wgmc	B	unadjudicated		50	48

@@ -29,9 +29,9 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes and, within each class, alphabetically by headword. Counts in this alpha are:
 
-- Regular derivations: 88
+- Regular derivations: 89
 - Attested variants: 4
-- Early analogy: 36
+- Early analogy: 35
 - Late analogy: 29
 - Reconstructed Old English comparators: 3
 - Known but unmodelled developments: 2
@@ -6438,6 +6438,268 @@ _\*lþ_ voices to _ld_, Anglo-Frisian brightening yields _wæld-_, and breaking 
 
 [_wald_]{.iv lang=oe variety=angl sort=wald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:33:1"} 'forest' survives as an Anglian variant in the same family (Clark Hall _wald (N,VPs)_: Northumbrian and Vespasian Psalter). The Old English form here is normalized [_weald_]{.iv lang=oe sort=weald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:33:2"} 'forest, woodland', not the variant form [@ClarkHall1960; @RingeTaylor2014].
 
+### world — OE _weorold_
+
+Derivation: citation reconstruction _\*wíra-àldiz_; form followed here _\*wír-àldiz_ > _weorold_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*wíràldiz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc Early I Apocope} & \emph{*wíràldz} \\
+\mbox{PNWGmc I Lowering} & \emph{*wéràldz} \\
+\mbox{EAF Final Z Deletion} & \emph{*wéràld} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Strip Secondary Stress} & \emph{*wérald} \\
+\mbox{OE Inter Stress Raising} & \emph{*wéruld} \\
+\mbox{OE Back Mutation} & \emph{*wéoruld} \\
+\mbox{OE Med Unstressed U Lowering} & \emph{*wéorold} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _weorold_
+
+#### Reconstruction and comparative evidence
+
+The word is the old compound 'age of men'. Orel reconstructs
+\emph{*wira-alđiz}, with the older first-element vowel, while Ringe and Taylor discuss the form
+[weraldiz]{.recon} 'world' and its pre-Old-English chain [weraldu]{.recon} 'world' > [weruld]{.recon} 'world'
+[@Orel2003, p. 462; @RingeTaylor2014, p. 326]. Kluge-Seebold gives the
+compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English _weorold_ 'world'
+[@KlugeSeebold2011, 981].
+
+Kroonen's separate entries for \emph{*wira-} 'man' and
+\emph{*aldi-} 'age' support the components, not independently the
+complete compound or its accentuation. The first vowel is not beyond
+dispute: Ringe and Taylor allow \emph{*weraz} beside \emph{*wiraz}
+for the simplex, since Gothic pre-\emph{r} developments and Norse lowering
+obscure the comparison. Initial \emph{i} is therefore a supported
+reconstruction, not something established by its usefulness in the
+derivation [@Kroonen2013, pp. 20, 588; @RingeTaylor2014, p. 34].
+
+The derivational input [wír-àldiz]{.iv .recon lang=pgmc sort=wiraldiz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37:1"}
+'world' adopts the inherited compact i-stem nominative. No early ō-stem
+intervention is required in its selected phonological history. The
+compound's later class mixing remains relevant, rather than being
+silently denied because the conservative nominative suffices
+[@Orel2003, p. 462; @RingeTaylor2014, pp. 202, 326].
+
+The class contrast is real: Ringe and Taylor oppose i-stem Old Saxon
+*werold* 'world' and Old High German *weralt* 'world' to ō-stem Old
+Frisian *warld* 'world' and Old Norse *verǫld* 'world'. Their separate
+qualification that the late Norse word is probably borrowed prevents
+counting it as independent evidence for a common inherited ō-stem
+innovation [@RingeTaylor2014, pp. 202, 326].
+Nor did every Old English cell necessarily abandon the older class.
+Campbell explicitly records frequent endingless accusative singular
+*weorold*, characteristic of feminine i-stems. This is evidence for a
+conservative ending, not by itself proof of an entirely unchanged stem
+history [@Campbell1959, p. 244, §610(1) n.2].
+
+The selected inherited nominative is sufficient; a complete reconstruction
+of its oblique paradigm is not assumed. Different nominal endings must
+still be distinguished, rather than replacing them indiscriminately with
+\emph{-u} [@Fulk2018, pp. 154--156, 161--162].
+
+No mixed-stage early analogical transponent is now necessary.
+The compact stem nevertheless presupposes resolution or reduction of the
+compound junction. The etymological spelling \emph{*wira-aldi-}
+does not independently establish a literal hiatus at the chosen stage,
+and consonant-separated linking-vowel syncope is not a demonstration
+of how adjacent \emph{a+a} would have resolved.
+An already \emph{*wer-} compound requires no lowering
+in its own derivation. Accordingly the derivational input cannot prove that
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
+historically preceded
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising).
+The adopted consonantal lowering has no following-vowel
+trigger for interstress raising to remove. The two
+processes remain compatible in this derivation without
+that supposed ordering argument
+[@Orel2003, p. 462; @RingeTaylor2014, p. 326;
+@Hill2017, pp. 153--156].
+
+#### Old English evidence
+
+Old English does not preserve a single isolated form. Ringe and Taylor give West
+Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:82:1"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:82:2"} 'world', Mercian [_weoruld_]{.iv lang=oe variety=merc sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:82:3"} 'world', Northumbrian
+[_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:83:1"} 'world', and Kentish [_wiarald_]{.iv lang=oe variety=kent sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:83:2"} 'world' [@RingeTaylor2014, p. 326]. Sievers-Brunner and Bright present the same wider
+set, including the syncopated [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84:1"} 'world' and later rounded [_wurold_]{.iv lang=oe sort=wurold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:84:2"} 'world'
+[@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
+
+The Old English form used here is the West Saxon form [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:87:1"} 'world'. It is an attested Old
+English form within that broader variant cluster, not the only form the lexeme
+ever shows.
+
+The two sets of vowels carry different evidence. Initial \emph{eo/o}
+concerns back mutation and subsequent rounding after \emph{w};
+medial \emph{a/o/u} concerns weak vocalism. Kentish medial \emph{a}
+does not show the breaking expected under stronger prominence.
+Later *world* demonstrates loss of that weak vowel, not another raising
+event. The variants do not require every medial \emph{o} to have passed
+through \emph{u} [@Campbell1959, p. 142, §338;
+@HoggGrammar2011, pp. 217--218, §§6.6--6.7;
+@RingeTaylor2014, p. 326].
+
+Čermák places *world* in his class of obscured compounds affected by
+loss of an unstressed vowel, comparing *woruld/worold*. This is evidence
+for later medial syncope, not another instance of the earlier raising.
+His possible reinterpretation of the second element is explicitly a
+suggestion; the entry supplies no new primary-text locator
+[@Cermak2005, pp. 36, 39].
+Sauer contrasts Old English feminine genitive *worulde* with later
+Middle English genitive-\emph{s} and manuscript variation. These
+developments help distinguish inherited inflection from subsequent
+restructuring, but cannot date a prehistoric shift into the ō-stems
+[@Sauer1992, pp. 89--90, 354--356].
+
+#### Compound prominence and early Old English footing
+
+Goering argues that early Old English *weruld* 'world' belonged to
+a single initial, trimoraic foot, rather than an initial light foot
+followed by a secondary-stressed heavy foot. Apocope would occur under
+either analysis and cannot decide between them. The ordinary reduction
+and eventual loss of the medial vowel, together with resolution of
+inflected *worulde* 'world' in *Beowulf* 3068a and 2343a,
+support his analysis [@Goering2023, pp. 79--82, §4.5.1.2].
+
+This does not rule out earlier compound secondary accent. Kaluza's older
+theory allowed subsidiary stress in *weorold* and other disyllables;
+Stanley's presentation is evidence for that theory, not direct written
+accent evidence [@Stanley2022, p. 34]. The adopted relative history loses
+independent second-element prominence before weak rounding. Goering's
+early Old English system, perhaps around 600 and compatible with the
+seventh-/eighth-century poetic horizon, supplies an approximate upper
+horizon, not a precise date for this word's deaccentuation
+[@Goering2023, pp. 84--85, §4.6].
+Foot structure, lexical prominence and metrical ictus remain distinct.
+Hogg's discussion warns against making “tertiary stress” an unexplained
+name for the desired outcome; Minkova likewise requires independent
+linguistic controls on metrical reconstruction
+[@Hogg1996, pp. 3, 9--11; @Minkova1996, pp. 20--29].
+The grave in the selected reconstruction marks the earlier second-root
+accent, not an unstressed linking vowel. It survives the linking-syncope
+operation and is then removed before weak raising, not asserted as actual
+independent prominence at the latter change.
+True compound secondary stress can protect a vowel, while obscured
+compounds reduce; the history of transparency cannot be inferred from a
+hyphen alone [@Fulk2018, pp. 36--38, §2.2].
+
+#### Competing histories of the weak vowel
+
+The starting point is weak vocalism, not an obligatory analogy.
+Campbell describes retraction before \emph{l/r} plus consonant,
+rounding to \emph{o}, and further \emph{u} in some forms.
+Hogg similarly distinguishes retraction of a weak vowel from the breaking
+of a more prominent one. Luick particularly associates rounding with
+labials or following \emph{l}, while expressly leaving the connection
+between the \emph{o} and \emph{u} developments uncertain
+[@Campbell1959, p. 142, §338;
+@HoggGrammar2011, pp. 217--218, §§6.6--6.7;
+@Luick1914, pp. 125--126, §113].
+Bülbring's assimilation before following \emph{u} supplies one account
+of *world*, but Luick's criticism and the wider weak-vowel evidence
+prevent treating it as the only possible environment
+[@Bulbring1902, pp. 147--149, §§366--367;
+@Luick1914, p. 126, §113; @RingeTaylor2014, p. 202].
+
+CAPR adopts weak short \emph{a > u} before \emph{l} plus consonant
+in a light-initial primary-stressed domain: one intervening consonant
+separates the initial short nucleus from the medial weak vowel.
+This bounded interpretation joins Luick's environment to Goering's LH
+analysis; the exact formal restriction is CAPR's qualified reconstruction,
+not either author's quoted law. Heavy-initial retained-prominence
+compounds such as *ānfeald* 'onefold' argue against unrestricted raising
+after removal of accent annotations. Weak *twifold* 'twofold' is a
+relevant rounded comparison; primary medial stress is not rewritten
+[@Bulbring1902, pp. 148--149, §367;
+@Campbell1959, p. 142, §338; @HoggGrammar2011, pp. 217--218;
+@Goering2023, pp. 79--82].
+
+The selected operation precedes early unstressed fronting and breaking.
+A post-fronting compression of weak \emph{æ} retraction, rounding and
+raising also succeeds and resembles Hogg's sequence. The chosen ordering
+does not require that intermediate vowel, without claiming an independently
+dated universal law. Versloot's alternative conditional fronting and later
+breaking challenge compulsory fronting before \emph{lC}; his principally
+stressed-domain analysis does not itself establish weak \emph{a > u}
+in *world* [@HoggGrammar2011, pp. 217--218;
+@Versloot2025, pp. 111--114, 122--123].
+
+#### Selected regular projection to Old English
+
+From selected \emph{*wír-àldiz}, early short-\emph{i} apocope,
+[SC015 PNWGmcILowering](#rule-PNWGmcILowering), and final-\emph{z}
+loss give \emph{*wér-àld}. After linking-syncope has read the earlier
+accent information, grave removal gives \emph{*wérald}.
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising) supplies
+\emph{*wéruld}; [SC059 OEBackMutation](#rule-OEBackMutation)
+gives \emph{*wéoruld}; and
+[SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering)
+gives *weorold*. No final high vowel survives to undergo later apocope.
+
+This is the longest defensible regular sequence from the selected compact
+inherited nominative, not a derivation of the unresolved earlier compound
+junction. The _regular_ classification concerns that selected span.
+The inherited accent, original \emph{i/e}, and exact weak-vowel chronology
+retain their qualifications. One raising rewrite may compress gradual
+rounding and raising; it does not assert universal \emph{a > u > o}
+across the dialect variants [@Luick1914, pp. 125--126, §113;
+@RingeTaylor2014, pp. 202, 326].
+
+An early rounded \emph{o} alone fails in the existing model at
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering),
+not because historical rounding is intrinsically impossible.
+Furthermore, the present
+[SC059 OEBackMutation](#rule-OEBackMutation) also admits \emph{o}
+as a trigger for initial \emph{e}; its executable behaviour cannot prove
+that only \emph{u} feeds the diphthong. The adopted inherited high-vowel
+path also succeeds under explicitly restricted \emph{u}-triggered
+back mutation. No back-mutation or later merger rule is changed to rescue it.
+
+#### Stage comparison
+
+The comparison below sets the relevant forms side by side. It separates the comparative headword from the
+OE-facing stage chosen for the derivation.
+
+| Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
+| :--- | :--- | :--- | :--- |
+| comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:224" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:224:1"} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
+| literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:1"} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:2"} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:3"} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:4"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:5"} 'world' | explains the older comparative literature cited for the word |
+| selected inherited compact nominative | [_\*wír-àldiz_]{.iv lang=pgmc sort=wiraldiz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226:2"} 'world' | exact West Saxon match; junction pre-encoded, no necessary early analogy |
+| broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:1"} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:2"} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:3"} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:4"} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:5"} 'world' | real attested comparanda that remain outside that West Saxon line |
+
 ### yarn — OE _ġearn_
 
 Derivation: _\*gárną_ > _ġearn_ (regular).
@@ -10243,273 +10505,6 @@ the Old English-facing formation that actually yields the attested noun.
 | comparative family label | [_\*wáiθiz_]{.iv lang=pgmc sort=waithiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:66" occ_id="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:66:1"} | broader cognate-set headword | OE family context | useful lexeme label, but not the direct source of _wīþiġ_ |
 | heavy ja-stem analysis | [wīþja]{.recon} 'withy' type | Campbell/Adamczyk-style heavy ja-stem _-e_ / zero outcome | [_wīþiġ_]{.iv lang=oe sort=withig role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:67:1"} 'withy' | does not account cleanly for the OE suffix |
 | _\*-ag-_ derivative followed here | [_\*wī́θagą_]{.iv lang=pgmc sort=withaga role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:68:1"} | regular output: [_wīþiġ_]{.iv lang=oe sort=withig role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:68:2"} 'withy' | [_wīþiġ_]{.iv lang=oe sort=withig role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:68:3"} 'withy' | exact match between formation and target |
-
-### world — OE _weorold_
-
-Derivation: citation reconstruction _\*wíra-àldiz_; form followed here _\*wír-àldu_ > _weorold_ (early analogy).
-
-#### Derivation trace
-
-Proto input: _\*wíràldu_
-
-\begingroup
-\setlength{\fboxsep}{6pt}
-\noindent\fbox{%
-\begin{minipage}{0.97\linewidth}
-\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
-\begin{minipage}[t]{\linewidth}
-\centering\textbf{Earlier Germanic changes}\par
-\vspace{0.35em}
-\raggedright
-\centering\textbf{Northwest and West Germanic}\par
-\raggedright
-\vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc I Lowering} & \emph{*wéràldu} \\
-\end{tabularx}
-\vspace{0.6em}
-\centering\textbf{Early Anglo-Frisian}\par
-\raggedright
-\vspace{0.2em}
-\raggedright [no change]\par
-\end{minipage}
-&
-\begin{minipage}[t]{\linewidth}
-\centering\textbf{Old English changes}\par
-\vspace{0.35em}
-\raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Inter Stress Raising} & \emph{*wéruldu} \\
-\mbox{OE Back Mutation} & \emph{*wéoruldu} \\
-\mbox{OE High Vowel Apocope} & \emph{*wéoruld} \\
-\mbox{OE Med Unstressed U Lowering} & \emph{*wéorold} \\
-\end{tabularx}
-\end{minipage}
-\\
-\end{tabular}
-\end{minipage}%
-}
-\endgroup
-
-Old English form: _weorold_
-
-#### Reconstruction and comparative evidence
-
-The word is the old compound 'age of men'. Orel reconstructs
-\emph{*wira-alđiz}, with the older first-element vowel, while Ringe and Taylor discuss the form
-[weraldiz]{.recon} 'world' and its pre-Old-English chain [weraldu]{.recon} 'world' > [weruld]{.recon} 'world'
-[@Orel2003, p. 462; @RingeTaylor2014, p. 326]. Kluge-Seebold gives the
-compound [wira-aldō]{.recon} ‘world’ and explicitly includes Old English _weorold_ 'world'
-[@KlugeSeebold2011, 981].
-
-Kroonen's separate entries for \emph{*wira-} 'man' and
-\emph{*aldi-} 'age' support the components, not independently the
-complete compound or its accentuation. The first vowel is not beyond
-dispute: Ringe and Taylor allow \emph{*weraz} beside \emph{*wiraz}
-for the simplex, since Gothic pre-\emph{r} developments and Norse lowering
-obscure the comparison. Initial \emph{i} is therefore a supported
-reconstruction, not something established by its usefulness in the
-derivation [@Kroonen2013, pp. 20, 588; @RingeTaylor2014, p. 34].
-
-The derivational input [wír-àldu]{.iv .recon lang=pgmc variety=transponent sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:37:1"} ‘world’ therefore combines the older _\*wir-_ vowel of the comparative headword with
-an early shift of the compound into the ō-stems of the kind Ringe and
-Taylor note for this lexeme [@RingeTaylor2014, p. 326]. The analogical
-assumption lies in that stem-class remodelling; its precise date and
-paradigmatic mechanism require separate assessment. It is a provisional
-input convention, not a demonstration that analogy preceded the selected
-cell's weak-vowel development.
-
-The class contrast is real: Ringe and Taylor oppose i-stem Old Saxon
-*werold* 'world' and Old High German *weralt* 'world' to ō-stem Old
-Frisian *warld* 'world' and Old Norse *verǫld* 'world'. Their separate
-qualification that the late Norse word is probably borrowed prevents
-counting it as independent evidence for a common inherited ō-stem
-innovation [@RingeTaylor2014, pp. 202, 326].
-Nor did every Old English cell necessarily abandon the older class.
-Campbell explicitly records frequent endingless accusative singular
-*weorold*, characteristic of feminine i-stems. This is evidence for a
-conservative ending, not by itself proof of an entirely unchanged stem
-history [@Campbell1959, p. 244, §610(1) n.2].
-
-No particular donor cell has been demonstrated for the remodelling.
-General ō-stem nominative \emph{*-ō > -u}, nasal accusative and
-genitive endings must be distinguished; they cannot all be replaced
-indiscriminately by \emph{-u}. The conservative-paradigm method
-exemplified by Fulk counsels against deriving an entire history from a
-normalised citation form [@Fulk2018, pp. 154--156, §§7.14--7.15,
-pp. 161--162, §§7.22--7.23; @Fulk2010, pp. 142--143].
-
-The form compared here is a transponent combining an earlier
-first-element vowel with a later inflectional formation,
-not an independently quoted single historical stage.
-The compact stem also presupposes resolution or reduction of the
-compound junction. The etymological spelling \emph{*wira-aldi-}
-does not independently establish a literal hiatus at the chosen stage,
-and consonant-separated linking-vowel syncope is not a demonstration
-of how adjacent \emph{a+a} would have resolved.
-An already \emph{*wer-} compound requires no lowering
-in its own derivation. Accordingly the selected
-transponent cannot prove that
-[SC015 PNWGmcILowering](#rule-PNWGmcILowering)
-historically preceded
-[SC036 OEInterStressRaising](#rule-OEInterStressRaising).
-The adopted consonantal lowering has no following-vowel
-trigger for interstress raising to remove. The two
-processes remain compatible in this derivation without
-that supposed ordering argument
-[@Orel2003, p. 462; @RingeTaylor2014, p. 326;
-@Hill2017, pp. 153--156].
-
-#### Old English evidence
-
-Old English does not preserve a single isolated form. Ringe and Taylor give West
-Saxon [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:89" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:89:1"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:89" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:89:2"} 'world', Mercian [_weoruld_]{.iv lang=oe variety=merc sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:89" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:89:3"} 'world', Northumbrian
-[_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:90" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:90:1"} 'world', and Kentish [_wiarald_]{.iv lang=oe variety=kent sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:90" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:90:2"} 'world' [@RingeTaylor2014, p. 326]. Sievers-Brunner and Bright present the same wider
-set, including the syncopated [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:91" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:91:1"} 'world' and later rounded [_wurold_]{.iv lang=oe sort=wurold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:91" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:91:2"} 'world'
-[@SieversBrunner1965, §113; @BrightCassidyRingler1971, 465].
-
-The Old English form used here is the West Saxon form [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:94" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:94:1"} 'world'. It is an attested Old
-English form within that broader variant cluster, not the only form the lexeme
-ever shows.
-
-The two sets of vowels carry different evidence. Initial \emph{eo/o}
-concerns back mutation and subsequent rounding after \emph{w};
-medial \emph{a/o/u} concerns weak vocalism. Kentish medial \emph{a}
-does not show the breaking expected under stronger prominence.
-Later *world* demonstrates loss of that weak vowel, not another raising
-event. The variants do not require every medial \emph{o} to have passed
-through \emph{u} [@Campbell1959, p. 142, §338;
-@HoggGrammar2011, pp. 217--218, §§6.6--6.7;
-@RingeTaylor2014, p. 326].
-
-Čermák places *world* in his class of obscured compounds affected by
-loss of an unstressed vowel, comparing *woruld/worold*. This is evidence
-for later medial syncope, not another instance of the earlier raising.
-His possible reinterpretation of the second element is explicitly a
-suggestion; the entry supplies no new primary-text locator
-[@Cermak2005, pp. 36, 39].
-Sauer contrasts Old English feminine genitive *worulde* with later
-Middle English genitive-\emph{s} and manuscript variation. These
-developments help distinguish inherited inflection from subsequent
-restructuring, but cannot date a prehistoric shift into the ō-stems
-[@Sauer1992, pp. 89--90, 354--356].
-
-#### Compound prominence and early Old English footing
-
-Goering argues that early Old English *weruld* 'world' belonged to
-a single initial, trimoraic foot, rather than an initial light foot
-followed by a secondary-stressed heavy foot. Apocope would occur under
-either analysis and cannot decide between them. The ordinary reduction
-and eventual loss of the medial vowel, together with resolution of
-inflected *worulde* 'world' in *Beowulf* 3068a and 2343a,
-support his analysis [@Goering2023, pp. 79--82, §4.5.1.2].
-
-This does not rule out earlier compound secondary accent, but it does
-not date its disappearance either. Foot structure, lexical prominence
-and metrical ictus are related without being identical.
-Hogg's discussion warns against making “tertiary stress” an unexplained
-name for the desired outcome; Minkova likewise requires independent
-linguistic controls on metrical reconstruction
-[@Hogg1996, pp. 3, 9--11; @Minkova1996, pp. 20--29].
-The grave in the selected reconstruction marks the second root, not
-an unstressed linking vowel. It is retained as a model representation,
-not asserted as the actual prominence of that vowel during weak rounding.
-True compound secondary stress can protect a vowel, while obscured
-compounds reduce; the history of transparency cannot be inferred from a
-hyphen alone [@Fulk2018, pp. 36--38, §2.2].
-
-#### Competing histories of the weak vowel
-
-The starting point is weak vocalism, not an obligatory analogy.
-Campbell describes retraction before \emph{l/r} plus consonant,
-rounding to \emph{o}, and further \emph{u} in some forms.
-Hogg similarly distinguishes retraction of a weak vowel from the breaking
-of a more prominent one. Luick particularly associates rounding with
-labials or following \emph{l}, while expressly leaving the connection
-between the \emph{o} and \emph{u} developments uncertain
-[@Campbell1959, p. 142, §338;
-@HoggGrammar2011, pp. 217--218, §§6.6--6.7;
-@Luick1914, pp. 125--126, §113].
-Bülbring's assimilation before following \emph{u} supplies one account
-of *world*, but Luick's criticism and the wider weak-vowel evidence
-prevent treating it as the only possible environment
-[@Bulbring1902, pp. 147--149, §§366--367;
-@Luick1914, p. 126, §113; @RingeTaylor2014, p. 202].
-
-An inherited compact i-stem can therefore be considered without first
-supplying analogical \emph{-u}. In a candidate regular sequence, early
-loss of final short \emph{i} is followed by weak medial retraction/
-rounding, further raising where justified, back mutation of the initial
-vowel and later lowering of medial \emph{u}. An isolated complete
-derivation confirms that pre-\emph{lC} raising, before medial breaking,
-can reach *weorold* without a stem-class intervention. This is a real
-alternative, not a proof that every weak vowel before \emph{lC}
-underwent that high-vowel change. The independently defined prosodic
-domain and the boundary between \emph{o} and \emph{u} remain missing.
-Campbell's conservative endingless accusative is the strongest actual
-cell to investigate, but its surviving ending alone does not establish
-an uninterrupted regular history of the whole stem.
-
-Thus early analogy remains compatible with the comparative class
-differences, not demonstrated necessary by the medial vowel. Later
-partial paradigm mixing can coexist with inherited weak vocalism.
-Neither an arbitrary “tertiary stress” label nor a successful experimental
-derivation decides between those histories.
-
-#### Provisional formal projection to Old English
-
-From the derivational input [wír-àldu]{.recon} ‘world’, Northwest Germanic _i_-lowering gives
-[wér-àldu]{.recon} ‘world’. Inter-stress raising then changes the medial _a_ to _u_, producing
-[wér-uldu]{.recon} ‘world’. Back mutation yields
-\emph{*wéor-uldu}; final high-vowel apocope gives
-\emph{*wéor-uld}, and later medial _u_-lowering produces
-_weorold_ 'world'.
-
-This sequence matches the comparative background in Ringe and Taylor's
-literature-stage chain for the word while preserving the _\*wir-_ notation of
-the comparative label [@RingeTaylor2014, p. 326]. This is the retained
-executable projection: the reconstructed secondary accent does not by itself
-prove weakened prominence, and the broader variant history does not require
-every medial _o_ to have passed through _u_
-[@Campbell1959, p. 142, §338; @HoggGrammar2011, pp. 217--218, §6.7].
-Within this provisional projection, early stem-class reshaping precedes
-the phonological tail. That is the selected representation, not an
-independently demonstrated necessity of the historical development.
-
-An earlier compact ō-stem candidate would also reach *weorold* while
-leaving final \emph{ō > u} to
-[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising).
-That computational possibility does not show whether the analogical
-reassignment preceded SC019 or instead supplied an already productive
-\emph{-u}. Nor does the absence of nominative umlaut prove an early
-date: in the present full cascade short third-syllable \emph{i} is
-lost before it could supply that trigger.
-The unchanged rules give the i-stem medial fronting and breaking,
-not the selected weak back vowel; the broader experimental weak-vowel
-account just discussed avoids that result. An early rounded \emph{o}
-alone fails later because of
-[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering),
-not because historical rounding is intrinsically impossible.
-Furthermore, the present
-[SC059 OEBackMutation](#rule-OEBackMutation) also admits \emph{o}
-as a trigger for initial \emph{e}; its executable behaviour cannot prove
-that only \emph{u} feeds the diphthong. The derivational input is retained
-provisionally because the independent conditioning of a replacement
-sequence is unresolved, not because the inherited alternative fails
-under the incumbent rules.
-
-#### Stage comparison
-
-The comparison below sets the relevant forms side by side. It separates the comparative headword from the
-OE-facing stage chosen for the derivation.
-
-| Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
-| :--- | :--- | :--- | :--- |
-| comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231:1"} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
-| literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232:1"} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232:2"} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232:3"} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232:4"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:232:5"} 'world' | explains the older comparative literature cited for the word |
-| Old English-facing input | [_\*wír-àldu_]{.iv lang=pgmc variety=transponent sort=wiraldu role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:233" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:233:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:233" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:233:2"} 'world' | exact match for the West Saxon form used here |
-| broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234:1"} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234:2"} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234:3"} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234:4"} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:234:5"} 'world' | real attested comparanda that remain outside that West Saxon line |
 
 ### youth — OE _ġeoguþ_
 

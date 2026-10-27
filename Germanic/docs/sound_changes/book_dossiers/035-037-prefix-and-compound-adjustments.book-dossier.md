@@ -72,14 +72,21 @@ records the original-page checks, documentary guard and publication result.
 ## Current authoritative SC036 account
 
 The completed SC036 adjudication is `audits/sc036-adjudication.md`:
-REFORMULATE, confidence C, with the executable relation and order retained.
+REFORMULATE/REORDER, confidence C, with the authorized inherited-world
+migration recorded in its current section.
 World's weak rounding and soul's syncope/epenthesis are different historical
 developments, not two independent witnesses for a unified raising law.
-The actual Foma mappings share their context; the old description of
-context-free grave-a raising is false. Secondary accent does not itself
-mean weakened prominence. SC004, SC019 and SC040 dependencies are model-local,
-not independently demonstrated historical dates. The old late-boundary
-finals are not current observations.
+SC036 now follows SC038 and composes bounded light-initial weak a-to-u
+before lC with a separately named temporary pre-u proxy preserving soul.
+World selects inherited compact *wír-àldiz*, regular from that selected
+input, without necessary early ō-stem analogy. Its earlier grave remains
+available to SC037 before SC038 removes it. Compact-junction formation is
+pre-encoded, not newly derived. Luick §113 and Goering §4.5.1.2 motivate
+the qualified reconstruction; pre-fronting placement is model serialization,
+not independent dating. All389 finals and soul's selected result survive.
+The input-only baseline migration uses a separate approval and preserves
+all earlier receipts. SC059's shared-context defect remains a precise
+follow-up; world also succeeds with narrow u-only e-back-mutation branches.
 
 The registry-owned `reader_facing/036-inter-stress-raising.md` supplies the
 publication account. The SC036 assessments in the historical partition

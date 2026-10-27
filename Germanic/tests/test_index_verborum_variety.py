@@ -1073,7 +1073,7 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
 
         # OE dialectal varieties (LWS/Angl./Merc./North./Kent.) and the cross-stage
         # transponent variety are separate axes. The 26 OE-dialect labels are governed
-        # by the OE source-attestation audit; the 6 transp. labels are cross-stage
+        # by the OE source-attestation audit; the 4 transp. labels are cross-stage
         # modeling annotations governed by the sidecar + variety registry.
         oe_variety_unique = sum(
             1 for r in bu
@@ -1085,9 +1085,9 @@ class OccurrenceModelHardeningTests(unittest.TestCase):
         )
         # SC015 removes two distinct unsupported Northumbrian learn labels.
         self.assertEqual(oe_variety_unique, 26, "OE-dialect variety-labelled unique book entries")
-        self.assertEqual(transp_variety_unique, 6, "transponent variety-labelled unique book entries")
+        self.assertEqual(transp_variety_unique, 4, "transponent variety-labelled unique book entries")
         variety_labelled_unique = sum(1 for r in bu if (r.get("printed_variety") or "").strip())
-        self.assertEqual(variety_labelled_unique, 32, "variety-labelled unique book entries")
+        self.assertEqual(variety_labelled_unique, 30, "variety-labelled unique book entries")
 
         printable_explicit = sum(1 for r in pm if (r.get("source_scope") or "") == "explicit_tag")
         # +1 vs the z-split snapshot: the *flauha- span is an explicit .iv tag.

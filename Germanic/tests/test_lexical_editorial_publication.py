@@ -146,6 +146,10 @@ class EditorialPublicationTests(unittest.TestCase):
             if before["row_id"] in {"2095", "2313", "2314"}:
                 selected = {"2095": "leornian", "2313": "leorna", "2314": "leornaþ"}
                 before = dict(before, counterpart=selected[before["row_id"]])
+            if before["row_id"] == "2302":
+                before = dict(before, protoform="*wír-àldiz", protoform_variety="",
+                              derivation_class="regular", class_bucket="regular",
+                              section_title="Regular derivations")
             self.assertEqual({k: v for k, v in now.items() if k not in {"global_order", "class_order"}},
                              {k: v for k, v in before.items() if k not in {"global_order", "class_order"}})
         self.assertEqual(sum(r["derivation_class"] == "late_analogy" for r in current), 29)
