@@ -146,7 +146,7 @@
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/rt-token_boundary_review.tsv": "d79cfe81a3c2215b5f6f7dc6013651b9d4ed527daef7ed9c69d455ac54687198",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_scopes.tsv": "8b47d79d5cd1d89495fb276a20994b7f72db20c465c4af09b9eb91ec233dbf08",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/review_targets.tsv": "ac89a96ee5238f8def5b289a8944cca91905c1931a89b87ff1d5f8f1ee5d386b",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/sources.tsv": "0fd1997b2def0d92be28311b07a2c2d2733a9cd261de0a2cc726544bfec74583",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/sources.tsv": "740a9f8cd3b4ba8cd200424b7ee6b39aca0ced3df125bd08f43d359c5c9bdcaf",
     "Germanic/tools/entry_stages.py": "63317b032ce41030f85af64a4c5d9823604f1bde0c9b833f2dca11933e15abdd",
     "Germanic/tools/oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
     "Germanic/tools/pgmc_reconstruction_analysis.py": "943ff34d993ced5ec5a3583c82a47957a85ab48bdc0a36d56197e5214c76450b",
@@ -159,6 +159,7 @@
     "docs/references/bammesberger_1990_morphologie.txt": "812065328d295ae0bdd153bfae00077208fab4ae0823158af91738041f45a826",
     "docs/references/bammesberger_1997_herfest.pdf": "01b817e23003eee969b06d4066b914ad4d0a030ea84a66ae84fd9b711822c4a9",
     "docs/references/bammesberger_1997_herfest.txt": "f747de6502c96a49dc05d0712152613d47fbd551fc2936d67c64fbbd3adb0938",
+    "docs/references/barrack_1975_diachronic_phonology.pdf": "ec41557ee1601e1fde56cc03de780a05b45d9d22a518f4c592d33b6db0e9f553",
     "docs/references/beekes_edg.pdf": "3308fe2ad6198f9c0cd5396d410970df40ec98ba673dc866936b88941235fb4e",
     "docs/references/beekes_edg.vision.txt": "c1498ed5faf76821e61040594fc12101911dc800443a7d0f64d29577f38fa6e2",
     "docs/references/bennett_1950_germanic_development_of_ie_e.pdf": "c90e286cb136c0809b62d77a4887eb37e14b1a6496b7eac62a1c150b322d59c0",
@@ -217,6 +218,7 @@
     "docs/references/lid_1952_nordiske_nominativ_an_stammer.vision.txt": "1d71e9dbc15c6ffdfb057dccd4c5c7abcdde82ebe02bfeb63716c3327d545b96",
     "docs/references/lloyd_1966_a_umlaut_of_i.pdf": "562e7e6763c0efc0696b4d802afa7b5606fc868ad45162d50a3a78df3a8629b9",
     "docs/references/lloyd_1966_a_umlaut_of_i.txt": "d5999e49e8fcaeafea57c6990dc6cd43a0b3d01a388a8fc4658314b5fcf00188",
+    "docs/references/local/barrack-1975/complete.txt": "68418f6c6d734c2a8efb48684d3501a9d12b6998afcbb1f25045ccec43078dfa",
     "docs/references/luehr_article.pdf": "19be97b693e97d0663ad52ced66af1139bd4c735317f63875f993b279e842e73",
     "docs/references/luehr_article.txt": "a0ad7ad31f2e01ae10a0a0140b1150b7a88f9424dd0e1db95a82375e3dff06cc",
     "docs/references/luick_historische_grammatik_part1.pdf": "c67869eebd44c9585c1c1ba4dc964978e90642bffe2f0037eaa48f779c49ce91",
@@ -967,7 +969,7 @@
     "docs/references/versloot_2025_reconstructing_historical_phonology_of_oe.txt": "b2840038a3eea8205004c4f4d92b67494c5c2956b45bd2b1820a04ef875b3e52",
     "docs/references/vine_2019_greek_stomylos.txt": "2cc1ca95846b3bf5ac8ed42156f8eeb53e2306a1bca2987fac99fbbdab611004",
     "docs/references/waxenberger_2019_absolute_chronology_pre_oe_runic.txt": "94cbe811cf7b74d6f178dacc6795850d334e761112760fc857a756fff2474ab7",
-    "docs/refs.bib": "d514bb145ba0a8a3b9d513fa8bde01b98420cf3aab1aa6fc2b065e0273bc5833"
+    "docs/refs.bib": "c0925cbb9cb5f425fc7fdf1f1abd0fc111d32575b98a85e638198e53cf9c7506"
   },
   "population": 395,
   "reading_scope_statuses": {

@@ -4,6 +4,12 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 
 ## World and prosody intake (2026-10-26)
 
+The separately supplied complete Barrack1975 holding is registered in
+[the Barrack intake](barrack_1975/README.md), with complete searchable
+local text, hashes, sampled pagination and restoration instructions.
+Ingestion is complete; consultation is limited to notation and the bounded
+lord discussion, not certification of every historical proposal.
+
 See [the acquisition record](world_2026-10-26/README.md), reproducible
 `prepare_holdings.py`, `holdings.tsv` and `page_map.tsv`.
 Four newly supplied PDFs provide complete Fulk2010, Fulk2022, Goering2023

@@ -1,0 +1,2 @@
+citation_key	pdf_path	pdf_sha256	pdf_sheets	first_sheet	last_sheet	text_path	text_sha256	access	extraction
+Barrack1975	docs/references/barrack_1975_diachronic_phonology.pdf	ec41557ee1601e1fde56cc03de780a05b45d9d22a518f4c592d33b6db0e9f553	136	1	136	docs/references/local/barrack-1975/complete.txt	68418f6c6d734c2a8efb48684d3501a9d12b6998afcbb1f25045ccec43078dfa	local_only	pdftotext -layout

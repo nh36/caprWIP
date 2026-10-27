@@ -491,9 +491,17 @@ define pgrmWeakTailVowel [
 
 define pgrmCausativeSuffix [ō:{*ō} j:{*j}];
 
+# Input coverage only: strong-adjective gen.sg.f. *-(a)izōz (Fulk §9.2,
+# pp.209–210). Keep this separate from tails used by downstream rules.
+define pgrmInputTailVowel [
+    pgrmWeakTailVowel |
+    {ai}:{*ai} z:{*z} ō:{*ō} z:{*z} |
+    i:{*i} z:{*z} ō:{*ō} z:{*z}
+];
+
 # Simple (non-compound) word patterns
 define pgrmSimpleWord [
-    (pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed) pgrmWeakTailVowel |
+    (pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed) pgrmInputTailVowel |
     (pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed) pgrmCausativeSuffix pgrmWeakTailVowel |
     (pgrmStrongPlain | pgrmStrongPlainPrefixed) pgrmWeakTailZero |
     (pgrmStrongNasal | pgrmStrongNasalPrefixed) pgrmWeakTailVowel |
@@ -517,7 +525,7 @@ define pgrmLinkingVowel [a:{*a} | 0];
 #   *θūs-undī (CVːC + VC-ī) = heavy + heavy (no linking vowel)
 #   *wiră-aldiz (CV-ă + VC-Vz) = light + linking + heavy
 define pgrmCompoundFirst [pgrmStrongPlain pgrmLinkingVowel];
-define pgrmCompoundSecond [pgrmStrongPlainHeavy pgrmWeakTailVowel];
+define pgrmCompoundSecond [pgrmStrongPlainHeavy pgrmInputTailVowel];
 define pgrmCompoundWord [pgrmCompoundFirst pgrmCompoundSep pgrmCompoundSecond];
 
 # Full word grammar: simple or compound
