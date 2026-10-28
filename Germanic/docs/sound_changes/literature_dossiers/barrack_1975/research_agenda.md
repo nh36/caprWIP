@@ -22,8 +22,8 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
   conditioned and ordered against each other, and do Barrack's
   unaccented-vowel and cluster rules describe the same events or a
   competing decomposition?
-- **Barrack rules:** 476 (pp. 121–22; cluster simplification in the
-  bærnan derivation and þirda), 475b (p. 121; r-deletion in rn(C)#
+- **Barrack rules:** 476 (p. 122; cluster simplification in the
+  bærnan derivation and þirda), 475b (p. 122; r-deletion in rn(C)#
   clusters — reading still needs original verification), 468a, 481.7,
   484a/b/d (currently UNRESOLVED), plus the 459.1 PES (C) early free
   variation before d (þirda, p. 116).
@@ -49,9 +49,9 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
   vowel lowering) survive confrontation with Barrack's alternative
   staging, including his *om → um treatment?
 - **Barrack rules:** 331.6a (p. 81; *om → um — census corrected this
-  cycle), 331.6b, 331.4a (misprint corrected), 114/115/117/123
-  (pp. 44–47; ēm → īm raising and allied early-vowel rules, no CAPR
-  counterpart), 320/333b (SC036 alternatives).
+  cycle), 331.6b (p. 81), 331.4a (p. 77; misprint corrected), 114 (p. 41),
+  115/117 (p. 42), 123 (p. 45; ēm → īm raising belongs to 117),
+  320 (pp. 75–76)/333b (p. 83; SC036 alternatives).
 - **CAPR treatment:** SC005 adjudication history exists; SC015/SC017
   have completed adjudications (wether input, rust input) — reopening
   requires the new-evidence bar of the protocol, which Barrack's
@@ -68,22 +68,23 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
 - **Payoff:** medium-high — three SC families and the largest block of
   VERIFY_SOURCE rows; but two completed adjudications raise the bar.
 
-### 3. z-loss, rhotacism and the mēd/meord variation: SC020, SC096, SC097
+### 3. z-loss, rhotacism and the mēd/meord variation: SC003, SC020, SC096, SC097
 
 - **Historical question:** does CAPR correctly separate final *-z loss
   from medial rhotacism, and is the mēd~meord doublet evidence for a
   distinct conditioning or chronology (Barrack's 404b/404c complex)?
 - **Barrack rules:** 404b (pp. 101–02; vowel + sonorant development —
-  census corrected this cycle), 404c (z-loss/rhotacism proper), 400z,
-  406, 409 (neighbouring rules re-verified in the QC pass).
+  census corrected this cycle), 404c (p. 102; final R-loss),
+  404e (p. 102; rhotacism), 400z (pp. 100–101),
+  406 (p. 104), 409 (p. 106; neighbouring rules re-verified in the QC pass).
 - **CAPR treatment:** SC020 was SPLIT in an earlier adjudication;
-  SC096/SC097 carry the rhotacism machinery.
+  SC003 carries rhotacism; SC096/SC097 are distinct final-z-loss operations.
 - **Source disagreements:** the corrected census shows Barrack's 404b is
   not a change producing m; his ordering of z-loss against apocope
   differs from Ringe's.
 - **Diagnostic lexemes:** mēd~meord, lamb/lǭmb forms, r-stem plurals,
   -es genitives vs -as plurals.
-- **Required tests:** `--evidence` for SC020/SC096/SC097; counterfactual
+- **Required tests:** `--evidence` for SC003/SC020/SC096/SC097; counterfactual
   swap of z-loss and apocope; mēd/meord would need a witness row with an
   independently reconstructed input before any law work.
 - **Payoff:** medium-high — a real doublet with competing published
@@ -94,7 +95,7 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
 - **Historical question:** is CAPR's back mutation correctly restricted
   and ordered against velar umlaut and breaking, given Barrack's rules
   210/212/220 which condition differently?
-- **Barrack rules:** 210, 212, 220 (pp. 66–69).
+- **Barrack rules:** 210 (pp. 63–64), 212 (p. 64), 220 (pp. 65–66).
 - **CAPR treatment:** SC039 and SC059 live; ledger holds SC039/SC059
   chapter-level citation items.
 - **Source disagreements:** Campbell's dialect-graded back mutation
@@ -108,21 +109,23 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
 ### 5. Late West Saxon sk ~ ks and sibilant-cluster variation (440b, 460b)
 
 - **Historical question:** is the áscian~ácsian (sk > ks) development,
-  and the sp ~ ps type behind Barrack's cyrps, a sound law in any
+  or the separate sibilant-cluster phenomenon at 460b, a sound law in any
   variety CAPR models, or late variable metathesis of the wasp-row kind?
-- **Barrack rules:** 440b (p. 108), 460b (p. 118).
+- **Barrack rules:** 440b (p. 113), 460b (p. 118). Barrack discusses
+  cyrps under 459.1 (pp. 115–117); that r-metathesis derivation is not
+  itself the separate consonant-order change formulated at 460b.
 - **CAPR treatment:** none executable; wasp row 2273 documents the
-  deliberate non-implementation precedent, now reinforced by the SC087
-  verdict's treatment of variable metathesis.
+  deliberate non-implementation precedent. Attested alternative orders
+  require a historically delimited explanation, not optional rewrites.
 - **Source disagreements:** Campbell §440 treats áscian/ácsian as
   dialectal/orthographic variation; Hogg likewise; Barrack writes a
   rule.
 - **Diagnostic lexemes:** áscian~ácsian, fisc~fix spellings, wæps~wæsp.
-- **Required tests:** lexical and attestation survey first; a law is
-  unlikely to be justified (expected outcome: documented variation,
-  prose only).
-- **Payoff:** medium — probably confirms the selection-based treatment;
-  cheap to close.
+- **Required tests:** lexical and attestation survey first; establish
+  phonological, chronological and dialectal domains before deciding
+  whether an executable law is justified.
+- **Payoff:** medium — distinguishes documentation of byforms from a
+  justified categorical operation.
 
 ### 6. Burn-family residue: Anglian metathesis, rounding after labial (300b)
 
@@ -131,7 +134,7 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
   rounding after labials (byrnan, cyrps) — can these be documented
   (prose/dossier) without an executable WS law?
 - **Barrack rules:** 459.1 discussion III A–E (pp. 116–17), 300b
-  (p. 78).
+  (pp. 72–73).
 - **CAPR treatment:** none; outside the WS executable target by the
   SC087 verdict.
 - **Diagnostic lexemes:** beornan/biernan/byrnan, iernan/iornan, cyrps.
@@ -147,6 +150,7 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
   CHAPTER_LEVEL items (chapter-intro integration is already done for
   chapters 1–5; these are per-entry enrichments).
 - The 6 DEFER_TO_ADJUDICATION ledger rows (SC015, SC017, SC028, SC067,
-  SC068, SC080) resolve automatically with items 1 and 2 above.
+  SC068, SC080) require explicit review; items 1 and 2 address several,
+  not automatically all six (SC028 remains a separate question).
 - The p. 136 ordering chart's interior chords remain unresolved at
   600 dpi; no ordering edge may be inferred from them (QC report).
