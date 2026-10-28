@@ -1,0 +1,72 @@
+{
+  "Campbell1959-text": {
+    "bytes": 1073399,
+    "filename": "campbell_old_english_grammar.txt",
+    "sha256": "43ee602c8ec3f066d8aa7d0867381419c4c670573ee74cd44bed28d9189be3dc"
+  },
+  "Cermak2005-text": {
+    "bytes": 32182,
+    "filename": "Cermak2005.txt",
+    "sha256": "85bd509e0200e12487f0857dfe839c28f83475d15dc2bf1596caa0113ffa8000"
+  },
+  "CiszekKiliszewska2015-PDF": {
+    "bytes": 173146,
+    "filename": "Ciszek-Kilszewka 2015.pdf",
+    "sha256": "37845a8ab1b9b66e4d97cf4509282bd51ffc31d5b7d04f1e76654b8b5d958add"
+  },
+  "Colman2011-PDF": {
+    "bytes": 320971,
+    "filename": "colman2011.pdf",
+    "sha256": "0af5841706ba5a00007acc5fa027b0faf4263b1287199430cb212a21326f3c9d"
+  },
+  "Fulk2018-text": {
+    "bytes": 1504131,
+    "filename": "fulk_comparative_grammar_early_germanic.vision.txt",
+    "sha256": "c80269e5b48e14d7c1f800a64082047b037e567df3e6016a5ce38ac4b799afc0"
+  },
+  "Goering2023-text": {
+    "bytes": 113901,
+    "filename": "Goering2023.txt",
+    "sha256": "072d23ed2d1f64e0222e0724042f450ad888018fcf98843e702829177d893dc4"
+  },
+  "Hogg1996-text": {
+    "bytes": 24468,
+    "filename": "Hogg1996.txt",
+    "sha256": "3b3598582cddc0fe5418744ea86059c0650cd0e2b3b7be72af28aab3df67e027"
+  },
+  "Hogg2011-text": {
+    "bytes": 1104740,
+    "filename": "hogg_fulk_2011_grammar_old_english_vol1_phonology.txt",
+    "sha256": "690f364d3985f6887f15761587b3117bcd7bab830a60e6c021e69ccad15c22c0"
+  },
+  "Kroonen2013-text": {
+    "bytes": 2095910,
+    "filename": "kroonen_etymological_dictionary_pgmc.vision.txt",
+    "sha256": "30d1e578a5d8c3817137c9bf0f4514124f8a25906db6c81c9f19859ce470dffc"
+  },
+  "McCullyHogg1990-PDF": {
+    "bytes": 1558909,
+    "filename": "mccully1990.pdf",
+    "sha256": "3028d92fd2a200038f92cdc3bdfe6078709e5ee95700deed73b4a5a17a2094c7"
+  },
+  "MinkovaZhou2023-PDF": {
+    "bytes": 678178,
+    "filename": "minkova2023-response",
+    "sha256": "dcb6da9b96d24400ea693b56d4944898da5510dd2bcd5090346840657010d940"
+  },
+  "RingeTaylor2014-text": {
+    "bytes": 1536175,
+    "filename": "ringe_taylor_linguistic_history_vol2.txt",
+    "sha256": "14df6cc6957fc130e4d728d45c9610b2ac6278beaf67cbf5d5d97f10a62f4bde"
+  },
+  "StauslandJohnsen2015-text": {
+    "bytes": 63389,
+    "filename": "stausland_johnsen_2015_vowel_reduction_pastoral_care.txt",
+    "sha256": "1359817a17e5af3716e2749d5c7d40b525e421e20e2e7df2f200ad5d35988c30"
+  },
+  "revised-essay-DOCX": {
+    "bytes": 26781,
+    "filename": "Secondary_Stress_in_Old_English_revised_comments.docx",
+    "sha256": "3388c624c67bdb1054aa798ce5a04c58be5af805326c6cb250869984fa65c3e4"
+  }
+}
