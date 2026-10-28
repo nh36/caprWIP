@@ -29,6 +29,7 @@ local utils  = pandoc.utils
 
 local failures_p1 = {}
 local failures_p2 = {}
+local established_glosses = {}
 
 local paras_p1     = 0
 local paras_p2_total = 0
@@ -290,6 +291,39 @@ local SHARED_GLOSS_VARIANTS = {
     anchor = "hēafod",
     context = "Campbell records both hēafud and hēafod",
   },
+  ["græs"] = {
+    anchor = "gærs",
+    context = "Campbell records byforms such as",
+  },
+  ["gærs"] = {
+    anchor = "græs",
+    context = "to attested gærs",
+  },
+  ["rénboga"] = {
+    anchor = "regn-boga",
+    context = "Bosworth–Toller gives regn-boga",
+    part2 = true,
+  },
+  ["rénbogan"] = {
+    anchor = "regn-boga",
+    context = "Bosworth–Toller gives regn-boga",
+    part2 = true,
+  },
+}
+
+-- These released passages explicitly revisit a previously glossed lemma.
+-- Do not impose repeated glosses on their prose or exempt unrelated mentions.
+local REPEATED_GLOSS_CONTEXTS = {
+  ["reġnboga"] = {
+    {part2 = false, context = "The reġnboga test exposes an annotation dependency"},
+    {part2 = true, context = "The second velar remains before a back vowel."},
+  },
+  ["cærse"] = {
+    {part2 = false, context = "The cress family supplies independent evidence"},
+  },
+  ["boga"] = {
+    {part2 = true, context = "has an early explanation:"},
+  },
 }
 
 local function check_para(el, is_p2, in_prose_section)
@@ -308,6 +342,13 @@ local function check_para(el, is_p2, in_prose_section)
   for i, inline in ipairs(el.content) do
     local form     = nil
     local category = nil   -- "emph", "iv", or "recon"
+    local explicit_form = inline.t == 'Emph' and utils.stringify(inline)
+      or inline.t == 'Span' and form_from_span(inline)
+    if explicit_form and has_gloss_after(el.content, i) then
+      local key = normalize(explicit_form)
+      glossed[key] = true
+      established_glosses[key] = true
+    end
 
     if inline.t == 'Emph' then
       if not is_p2 then
@@ -415,13 +456,22 @@ local function check_para(el, is_p2, in_prose_section)
       local norm = normalize(form)
       local immediate_gloss = has_gloss_after(el.content, i)
       local variant = SHARED_GLOSS_VARIANTS[norm]
-      local shared_gloss = not is_p2 and variant and glossed[variant.anchor]
+      local shared_gloss = variant and is_p2 == (variant.part2 or false)
+        and glossed[variant.anchor]
         and paragraph:find(variant.context, 1, true)
+      local repeated_gloss = false
+      if established_glosses[norm] then
+        for _, context in ipairs(REPEATED_GLOSS_CONTEXTS[norm] or {}) do
+          if is_p2 == context.part2 and paragraph:find(context.context, 1, true) then
+            repeated_gloss = true
+          end
+        end
+      end
       if immediate_gloss then glossed[norm] = true end
       if norm ~= "" and not seen[norm] then
         seen[norm] = true
         if is_p2 then cands_p2 = cands_p2 + 1 else cands_p1 = cands_p1 + 1 end
-        if not immediate_gloss and not shared_gloss then
+        if not immediate_gloss and not shared_gloss and not repeated_gloss then
           local entry = {
             para    = (is_p2 and paras_p2_total or paras_p1),
             entry   = p2_entry,
@@ -445,6 +495,10 @@ local function process_blocks(blocks)
   for _, block in ipairs(blocks) do
     if block.t == 'Header' then
       local t = utils.stringify(block)
+      local heading_form = t:match("^.+ — OE (.+)$")
+      if heading_form then
+        established_glosses[normalize(heading_form)] = true
+      end
       -- Part tracking (level-1 or level-2 headings that demarcate parts)
       if t == 'Word-by-word derivations' then
         current_part = "part2"

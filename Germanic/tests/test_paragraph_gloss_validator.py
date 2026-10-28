@@ -71,6 +71,40 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         result = self.validate(reader.read_text(encoding="utf-8"))
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_sc087_byforms_share_only_their_explicit_local_gloss(self):
+        for text in (
+            "Campbell records byforms such as *gærs* 'grass' beside *græs*.",
+            "The requirement changes *græs* 'grass' to attested *gærs*.",
+        ):
+            result = self.validate(text)
+            self.assertEqual(result.returncode, 0, result.stderr)
+        for text in (
+            "The requirement changes *græs* to attested *gærs*.",
+            "*græs* 'grass' is known.\n\nThe requirement changes to attested *gærs*.",
+        ):
+            result = self.validate(text)
+            self.assertEqual(result.returncode, 2, result.stderr)
+
+    def test_curated_repeated_context_requires_an_established_gloss(self):
+        context = "The *reġnboga* test exposes an annotation dependency."
+        result = self.validate(context)
+        self.assertEqual(result.returncode, 2, result.stderr)
+        result = self.validate("*reġnboga* 'rainbow' is known.\n\n" + context)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        result = self.validate("*reġnboga* 'rainbow' is known.\n\nAgain *reġnboga*.")
+        self.assertEqual(result.returncode, 2, result.stderr)
+
+    def test_documented_inflections_share_the_local_dictionary_lemma_gloss(self):
+        prefix = "# Word-by-word derivations\n\n"
+        paragraph = (
+            "Bosworth–Toller gives *regn-boga* 'rainbow', with nominative "
+            "[rénboga]{.iv lang=oe} and accusative [rénbogan]{.iv lang=oe}."
+        )
+        result = self.validate(prefix + paragraph)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        result = self.validate(prefix + paragraph.replace("'rainbow'", ""))
+        self.assertEqual(result.returncode, 2, result.stderr)
+
     def test_glossed_forms_pass(self):
         result = self.validate(
             "*cȳ* 'cow' and [giftiz]{.recon .iv lang=pgmc} 'gift' survive.\n"
