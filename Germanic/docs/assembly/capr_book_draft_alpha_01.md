@@ -5957,11 +5957,12 @@ relation establishes only that weak-tail reduction precedes contraction.
 
 Sievers-Brunner describes r-metathesis in forms such as *berstan* ‘burst’,
 *forst* ‘frost’, and *cærse* ‘cress’
-[@SieversBrunner1965, p. 159, §179]. Luick likewise treats it as a later
+[@SieversBrunner1965, pp. 146--147, §179]. Luick likewise treats it as a later
 rearrangement whose interaction with breaking remains variable
 [@Luick1914, p. 201].
 
-The evidence establishes that breaking precedes metathesis. It does not
+For the selected West Saxon *berstan*, the evidence places breaking before
+metathesis; this is not a chronology for every dialectal metathesis. It does not
 establish an ordering relation between
 [SC086 OEContraction](#rule-OEContraction) and
 [SC087 OERMetathesis](#rule-OERMetathesis).
@@ -5981,27 +5982,47 @@ and metathesis varies by dialect, separating the West Saxon from the Anglian
 treatment [@Barrack1975, pp. 115--117]. Because his orderings are formal
 rather than chronological [@Barrack1975, p. 34], that dialect-order
 observation is conditioning evidence to be weighed in its own right, not a
-dating; it is held for a separate adjudication in the Barrack dossier and
-does not alter the West Saxon ordering adopted here.
+dating, and does not alter the West Saxon ordering adopted here.
 
-The breadth of Barrack's formulation was tested directly against the
-corpus and could not be sustained as an exceptionless law. Barrack
-himself grades the generalized environments of 459.1 as "a late stage
-of free variation" [@Barrack1975, p. 116], and for 459.3 he concedes
-that "the evidence of this change is very meager"
-[@Barrack1975, p. 118]. Campbell's survey points the same way: the
-wider metathesis domain is populated by doublets such as *forst* beside
+Barrack describes generalized environments of 459.1 as "a late stage
+of free variation" [@Barrack1975, p. 116], while grading the evidence
+for 459.3 as meagre [@Barrack1975, p. 118]. These are descriptions of
+the distribution of forms, not an explanation by optional sound change.
+Campbell records byforms such as *forst* beside
 *frost*, *gærs* beside *græs*, *cerse* beside *cresse*, and *rinnan*
-beside *iernan*, *eornan* [@Campbell1959, p. 184, §459]. Counterfactual
-compilations of the broader rule confirm the diagnosis: a law extended
-from the \emph{st} cluster to all \emph{s}/\emph{n} environments wrongly
-converts attested *brandes* 'firebrand (gen.)', *drenċ* 'drink',
-*strenġ* 'string', and *græs* 'grass', while deriving no new correct
-form, and a regressive pre-\emph{ht} law wrongly converts attested
-*fyrhte* 'fright'. The change modelled here is therefore confined to the
-exceptionless West Saxon core before \emph{st}; the variable periphery
-of the metathesis complex is a matter of which doublet variant each word
-selects, not of a wider sound law.
+beside *iernan*, *eornan* [@Campbell1959, p. 184, §459].
+Regular sound change remains exceptionless within its phonological,
+chronological and dialectal domain. Distinct dialect histories, transmission
+of earlier and later forms, borrowing or independently evidenced analogy
+could account for coexistence; the byforms alone do not decide among them.
+
+The categorical operation below correctly handles the selected *berstan*
+and *forst*. Controlled comparisons extending only the vowel inventory
+to include \emph{*æ} and \emph{*y}, while retaining \emph{st}, alter no
+selected output. With that same inventory, removing the \emph{t}
+requirement changes *græs* 'grass' to attested *gærs*. Thus the selected
+forms discriminate these implementations, although neither spelling
+establishes which conditioning was historically productive. The earlier
+zero-difference comparison before \emph{s} versus \emph{st} depended on
+an enumeration excluding \emph{*æ}. A further extension to nasal
+environments also alters selected *brandes* 'firebrand (gen.)',
+*drenċ* 'drink' and *strenġ* 'string'; a regressive pre-\emph{ht}
+operation changes selected *fyrhte* 'fright'. These are reasons not to
+adopt those operations unchanged across the present selections, not proof
+that broader regular metathesis was historically impossible.
+
+The cress family supplies independent evidence beyond \emph{st}:
+Campbell and Hogg describe *cresse* through reconstructed
+\emph{*cersse} to *cerse*, with simplification of the geminate
+[@Campbell1959, p. 190, §476; @HoggGrammar2011, p. 288, §7.80].
+Ringe and Taylor give *cærse* from reconstructed \emph{*cræsse}
+[@RingeTaylor2014, p. 263]. Campbell's Middle English *kers* evidence
+also places the metathesis after assibilation
+[@Campbell1959, p. 184, §459 n. 1]. These forms merit discussion even
+without selecting a new corpus target: their inherited stem and exact
+attested cell and dialect must be established separately. The retained
+operation represents the changes presently required by the selected forms;
+it does not delimit the whole historical phenomenon.
 
 ### \CAPRRuleHeading{SC087. Metathesis of \emph{*r} with a following short vowel}{OERMetathesis} {#rule-OERMetathesis}
 
@@ -6020,11 +6041,11 @@ define OERMetathesis [
 
 The rule moves \emph{*r} across a following short vowel in the relevant late clusters, producing forms such as *berstan* ‘burst’ where an earlier order would still show a broken vowel sequence.
 
-Moving the rule before [SC044 OEBreaking](#rule-OEBreaking) makes PGmc [bréstaną]{.recon} ‘burst’ yield [*beorstan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5941" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5941:1"} rather than expected OE *berstan* ‘burst’. On this evidence, I take [SC087 OERMetathesis](#rule-OERMetathesis) to follow [SC044 OEBreaking](#rule-OEBreaking). Moving it later within the tested sequence alters no output.
+Moving the rule before [SC044 OEBreaking](#rule-OEBreaking) makes PGmc [bréstaną]{.recon} ‘burst’ yield [*beorstan*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5962" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5962:1"} rather than expected OE *berstan* ‘burst’. On this evidence, I take [SC087 OERMetathesis](#rule-OERMetathesis) to follow [SC044 OEBreaking](#rule-OEBreaking). Moving it later within the tested sequence alters no output.
 
 The lexical evidence fixes the earlier relation but does not identify a corresponding
-later constraint. The sources treat r-metathesis as a late rearrangement after
-breaking without placing it immediately beside contraction.
+later constraint. For the selected West Saxon history, the sources support a late
+rearrangement after breaking without placing it immediately beside contraction.
 
 ## Late unstressed suffix raising
 
