@@ -1,0 +1,110 @@
+{
+  "experiment": "sc087-cress-out-of-sample",
+  "germanic.txt_sha256": "3725fca7dc8e377657a9d2987d1ced9d88c1e55d8aa180b7a8e56a36e327dd27",
+  "corpus_sha256": "90fcdf861682549f3e297e3868d7306ad9c600bf5395c728d1323f8d0eca12cc",
+  "source_basis": {
+    "e_variant": "Campbell 1959 pp.184,190 §§459,476; Hogg 2011 p.288 §7.80: cresse > *cersse > cerse",
+    "æ_variant": "Ringe–Taylor 2014 p.263: cærse < *cræsse",
+    "inherited_family": "Bülbring 1902 p.198 §493: *krasjōn; Kluge–Seebold 2011 p.540: WG *krasjō f."
+  },
+  "inherited_probes": [
+    {
+      "input": "*krásjōn",
+      "fst_input": "krásjōn",
+      "first_rejecting_stage": "EnglishProtoInput",
+      "previous_outputs": [
+        "krásjōn"
+      ],
+      "status": "not_a_live_sc087_witness"
+    },
+    {
+      "input": "*krásjō",
+      "fst_input": "krásjō",
+      "first_rejecting_stage": "EnglishProtoInput",
+      "previous_outputs": [
+        "krásjō"
+      ],
+      "status": "not_a_live_sc087_witness"
+    }
+  ],
+  "local_components": {
+    "A": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s} {*t},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s} {*t}\n];",
+      "probes": [
+        {
+          "pre_sc087": "*k*r*e*s*s*e",
+          "post_sc087": [
+            "*k*r*e*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        },
+        {
+          "pre_sc087": "*k*r*æ*s*s*e",
+          "post_sc087": [
+            "*k*r*æ*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        }
+      ]
+    },
+    "B": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s}\n];",
+      "probes": [
+        {
+          "pre_sc087": "*k*r*e*s*s*e",
+          "post_sc087": [
+            "*k*e*r*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        },
+        {
+          "pre_sc087": "*k*r*æ*s*s*e",
+          "post_sc087": [
+            "*k*r*æ*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        }
+      ]
+    },
+    "C": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s} {*t},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*æ} -> {*æ} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*y} -> {*y} {*r} || EnglishStarConsonant _ {*s} {*t}\n];",
+      "probes": [
+        {
+          "pre_sc087": "*k*r*e*s*s*e",
+          "post_sc087": [
+            "*k*r*e*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        },
+        {
+          "pre_sc087": "*k*r*æ*s*s*e",
+          "post_sc087": [
+            "*k*r*æ*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        }
+      ]
+    },
+    "D": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*æ} -> {*æ} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*y} -> {*y} {*r} || EnglishStarConsonant _ {*s}\n];",
+      "probes": [
+        {
+          "pre_sc087": "*k*r*e*s*s*e",
+          "post_sc087": [
+            "*k*e*r*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        },
+        {
+          "pre_sc087": "*k*r*æ*s*s*e",
+          "post_sc087": [
+            "*k*æ*r*s*s*e"
+          ],
+          "status": "literature_based_stage_probe_not_corpus_input"
+        }
+      ]
+    }
+  },
+  "admitted": false,
+  "admission_limit": "Both source-based inherited families are rejected before SC087. Do not change the input gate or earlier laws in this cleanup; the late-stage probes demonstrate distinct predictions, not a complete selected reconstruction, attested cell or dialect."
+}

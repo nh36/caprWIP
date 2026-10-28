@@ -1,0 +1,198 @@
+{
+  "experiment": "sc087-s-versus-st-factorial",
+  "germanic.txt_sha256": "3725fca7dc8e377657a9d2987d1ced9d88c1e55d8aa180b7a8e56a36e327dd27",
+  "corpus_sha256": "90fcdf861682549f3e297e3868d7306ad9c600bf5395c728d1323f8d0eca12cc",
+  "context_metadata_sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+  "selected_rows": 389,
+  "selected_inputs_sha256": "8a6bf02928770d492e9efcbfd176f5abe921d42b8243f549561eda5facf65a32",
+  "production_control": "A",
+  "variants": {
+    "A": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s} {*t},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s} {*t}\n];",
+      "source_sha256": "a0b59ea88de2c9a5eb44f1e2ada2e62b9586857b7c11feeb973f817b74cd045f",
+      "environment": "st",
+      "vowels": "existing",
+      "cress_probes": [
+        {
+          "id": "cress-n-stem",
+          "input": "*krásjōn",
+          "basis": "Bülbring 1902 §493 (*krasjon); ending/cell unresolved",
+          "fst_input": "krásjōn",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        },
+        {
+          "id": "cress-jo-stem",
+          "input": "*krásjō",
+          "basis": "Kluge–Seebold 2011 s.v. Kresse (*krasjō); cell unresolved",
+          "fst_input": "krásjō",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        }
+      ]
+    },
+    "B": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s}\n];",
+      "source_sha256": "4e4a8ab5b2bbe661b2c25acd63dc76a36626e5a23b64ea9253780fd3c002f8e5",
+      "environment": "s",
+      "vowels": "existing",
+      "cress_probes": [
+        {
+          "id": "cress-n-stem",
+          "input": "*krásjōn",
+          "basis": "Bülbring 1902 §493 (*krasjon); ending/cell unresolved",
+          "fst_input": "krásjōn",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        },
+        {
+          "id": "cress-jo-stem",
+          "input": "*krásjō",
+          "basis": "Kluge–Seebold 2011 s.v. Kresse (*krasjō); cell unresolved",
+          "fst_input": "krásjō",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        }
+      ]
+    },
+    "C": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s} {*t},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*æ} -> {*æ} {*r} || EnglishStarConsonant _ {*s} {*t},\n    {*r} {*y} -> {*y} {*r} || EnglishStarConsonant _ {*s} {*t}\n];",
+      "source_sha256": "5cb6ecf86937751eb370d2a2611c140c96f24d7d13065fee3a7edb080dd5b8c8",
+      "environment": "st",
+      "vowels": "existing_plus_æ_y",
+      "cress_probes": [
+        {
+          "id": "cress-n-stem",
+          "input": "*krásjōn",
+          "basis": "Bülbring 1902 §493 (*krasjon); ending/cell unresolved",
+          "fst_input": "krásjōn",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        },
+        {
+          "id": "cress-jo-stem",
+          "input": "*krásjō",
+          "basis": "Kluge–Seebold 2011 s.v. Kresse (*krasjō); cell unresolved",
+          "fst_input": "krásjō",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        }
+      ]
+    },
+    "D": {
+      "definition": "define OERMetathesis [\n    {*r} {*e} -> {*e} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*u} -> {*u} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*i} -> {*i} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*o} -> {*o} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*a} -> {*a} {*r} || EnglishStarConsonant _ {*s},\n    # Stressed variants (stress preserved):\n    {*r} {*é} -> {*é} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*ó} -> {*ó} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*á} -> {*á} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*æ} -> {*æ} {*r} || EnglishStarConsonant _ {*s},\n    {*r} {*y} -> {*y} {*r} || EnglishStarConsonant _ {*s}\n];",
+      "source_sha256": "89a2f359a8c2cda19d75c1ce6427523a3cb93f1ed6a06cfee00b5a5e7b5b6285",
+      "environment": "s",
+      "vowels": "existing_plus_æ_y",
+      "cress_probes": [
+        {
+          "id": "cress-n-stem",
+          "input": "*krásjōn",
+          "basis": "Bülbring 1902 §493 (*krasjon); ending/cell unresolved",
+          "fst_input": "krásjōn",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        },
+        {
+          "id": "cress-jo-stem",
+          "input": "*krásjō",
+          "basis": "Kluge–Seebold 2011 s.v. Kresse (*krasjō); cell unresolved",
+          "fst_input": "krásjō",
+          "pre_sc087": [],
+          "post_sc087": [],
+          "outputs": [],
+          "status": "unresolved_input_and_cell"
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "A_vs_B": {
+      "rows_changed": 0,
+      "changes": []
+    },
+    "A_vs_C": {
+      "rows_changed": 0,
+      "changes": []
+    },
+    "C_vs_D": {
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2045",
+          "proto": "*grásą",
+          "fst_input": "grásą",
+          "pre_sc087": [
+            "*g*r*æ*s"
+          ],
+          "selected_target": "græs",
+          "left_outputs": [
+            "græs"
+          ],
+          "right_outputs": [
+            "gærs"
+          ],
+          "left_matches_selected": true,
+          "right_matches_selected": false,
+          "assessment": "attested_alternative_not_selected",
+          "attested_alternatives": [
+            {
+              "form": "gærs",
+              "reference": "Campbell 1959 p.184 §459; Hogg 2011 p.297 §7.94"
+            }
+          ]
+        }
+      ]
+    },
+    "B_vs_D": {
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2045",
+          "proto": "*grásą",
+          "fst_input": "grásą",
+          "pre_sc087": [
+            "*g*r*æ*s"
+          ],
+          "selected_target": "græs",
+          "left_outputs": [
+            "græs"
+          ],
+          "right_outputs": [
+            "gærs"
+          ],
+          "left_matches_selected": true,
+          "right_matches_selected": false,
+          "assessment": "attested_alternative_not_selected",
+          "attested_alternatives": [
+            {
+              "form": "gærs",
+              "reference": "Campbell 1959 p.184 §459; Hogg 2011 p.297 §7.94"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "control_matches_canonical": true,
+  "implications": {
+    "A_vs_B": "Tests s/st with the original eight-vowel enumeration.",
+    "A_vs_C": "Isolates vowel expansion while retaining st and the left consonant.",
+    "C_vs_D": "Isolates removal of t with the same expanded vowel class.",
+    "historical_limit": "Selected-target differences do not establish which conditioning was productive within a specific dialect and period; an attested alternative is not an unattested or intrinsically erroneous form."
+  }
+}
