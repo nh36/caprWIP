@@ -54,7 +54,8 @@ def test_scientific_sources_and_archives_are_preserved():
     equivalent = json.loads((ROOT /
         "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json").read_text())
     assert equivalent["status"] == "equivalent"
-    assert equivalent["rows_compared"] == 389
+    # Row 2335 (filth) is the subsequent authorized SC065 admission.
+    assert equivalent["rows_compared"] == 390
 
 
 def test_only_authorized_world_fields_changed():
@@ -66,6 +67,13 @@ def test_only_authorized_world_fields_changed():
     ):
         old = read_tsv(base_bytes(path).decode())
         new = read_tsv((ROOT / path).read_text())
+        # Rows 2333/2334 (SC112) and 2335 (SC065 filth) are subsequent
+        # authorized corpus admissions; the world comparison covers the
+        # shared population.
+        old_ids = {row.get("ID", row.get("row_id")) for row in old}
+        added = {row.get("ID", row.get("row_id")) for row in new} - old_ids
+        assert added <= {"2333", "2334", "2335"}
+        new = [row for row in new if row.get("ID", row.get("row_id")) in old_ids]
         assert len(old) == len(new)
         differences = []
         for before, after in zip(old, new):
@@ -358,7 +366,7 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(tmp_p
     observed = json.loads((ASSAY / "migration.json").read_text())
     assert current["component_results"]["OEInterStressRaising"] == (
         observed["component_results"]["MCombined"])
-    assert current["selected_rows"] == 389
+    assert current["selected_rows"] == 390
     assert current["legacy380_identities"] == 380
     for model in current["models"].values():
         assert model["final_differences"] == []
@@ -447,8 +455,10 @@ def test_exact_input_only_baseline_adoption_and_all_finals_are_preserved():
         directory / "cascade_baseline_outputs_pre_sc036_world.tsv",
         directory / "cascade_baseline_summary_pre_sc036_world.json")
     current = cascade_baseline.read_baseline(
-        directory / "cascade_baseline_outputs.tsv",
-        directory / "cascade_baseline_summary.json")
+        # The post-world baseline is frozen by the SC065 expansion archive;
+        # the live baseline adds only row 2335 (filth) with its own receipt.
+        directory / "cascade_baseline_outputs_pre_sc065_expansion.tsv",
+        directory / "cascade_baseline_summary_pre_sc065_expansion.json")
     approval = json.loads((directory / "approved_world_input_migration.json").read_text())
     cascade_baseline.validate_cell_transition(previous, current, approval)
     old = {row["row_id"]: row for row in previous["records"]}
@@ -476,6 +486,10 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     rainbow = [row for row in added if row["source_ref"] in rainbow_refs]
     assert len(rainbow) == 8
     added = [row for row in added if row not in rainbow]
+    # The SC065 adjudication test pins the filth (row 2335) admission.
+    filth = [row for row in added if row["source_ref"] == "filth — OE fȳlþ"]
+    assert len(filth) == 1
+    added = [row for row in added if row not in filth]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

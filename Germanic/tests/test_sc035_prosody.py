@@ -166,7 +166,8 @@ def test_fresh_adopted_cascade_and_phonological_components():
         "python3 docs/sound_changes/audits/sc035-prosody/verify.py",
         text=True, capture_output=True, check=True, timeout=1800)
     data = json.loads(result.stdout)
-    assert data["selected_rows"] == 389
+    # 390 selected rows after the SC065 filth admission (row 2335).
+    assert data["selected_rows"] == 390
     assert data["canonical_and_isolated_agree"] and data["composed_and_incremental_agree"]
     assert data["full_input_climb"] == [["ġestīgan"]]
     assert data["staged_control_finals"] == receipt()["models"]["C"]["staged_control_finals"]

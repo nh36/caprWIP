@@ -110,7 +110,7 @@ class Sc112Tests(unittest.TestCase):
                 continue
             source, output = line.split("\t", 1)
             outputs.setdefault(source, []).append(output)
-        self.assertEqual(len(outputs), 389)
+        self.assertEqual(len(outputs), 390)
         self.assertTrue(
             all(len(set(values)) == 1 and values[0] != "+?" for values in outputs.values())
         )
@@ -178,8 +178,9 @@ class Sc112Tests(unittest.TestCase):
 
     def test_expansion_preserves_original_population(self):
         self.assertEqual(len(self.previous), 387)
-        self.assertEqual(len(self.current), 389)
-        self.assertEqual(set(self.previous), set(self.current) - {"2333", "2334"})
+        # Row 2335 (filth) is the subsequent authorized SC065 admission.
+        self.assertEqual(len(self.current), 390)
+        self.assertEqual(set(self.previous), set(self.current) - {"2333", "2334", "2335"})
         self.assertEqual(
             [(row_id, self.previous[row_id]["outputs"], self.current[row_id]["outputs"])
              for row_id in self.previous
@@ -189,7 +190,7 @@ class Sc112Tests(unittest.TestCase):
         self.assertEqual(len(rows(LEGACY)), 380)
 
     def test_exact_counts_and_known_mismatch_membership(self):
-        self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 381)
+        self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 382)
         self.assertEqual(sum(r["match"] == "0" for r in self.current.values()), 8)
         self.assertEqual(
             {r["row_id"] for r in self.current.values() if r["match"] == "0"},

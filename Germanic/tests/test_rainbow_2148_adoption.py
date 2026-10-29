@@ -15,6 +15,11 @@ ASSAY = ROOT / "Germanic/docs/sound_changes/audits/rainbow-2148-adoption"
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from capr_runtime import run_in_runner
 from executable_facts import parse_defines
+from historical_sc035 import historical_runtime
+
+# The adoption commit: replaying its frozen capture must pin both the adopted
+# FST and the 389-row corpus of that moment (later admissions are separate).
+ADOPTION = "2c5b139c54490a32482ef48ff4107b928460865a"
 
 
 def read(name):
@@ -136,6 +141,8 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     current = list(csv.DictReader((ROOT / path).read_text().splitlines(), delimiter="\t"))
     assert all(row in current for row in previous)
     added = [row for row in current if row not in previous]
+    # The SC065 adjudication test pins the filth (row 2335) admission.
+    added = [row for row in added if row["source_ref"] != "filth — OE fȳlþ"]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {
@@ -171,8 +178,7 @@ assert fresh == after
 assert capture.controls(before) == controls
 print('109 stages; selected389 and immutable380; private controls executed')
 """
-    result = run_in_runner(
-        "python3 -c " + shlex.quote(script), capture_output=True,
-        text=True, timeout=600)
+    with historical_runtime(ADOPTION) as execute:
+        result = execute("python3 -c " + shlex.quote(script), timeout=600)
     assert result.returncode == 0, result.stdout + "\n" + result.stderr
     assert "private controls executed" in result.stdout

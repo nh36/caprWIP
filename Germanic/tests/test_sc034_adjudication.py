@@ -39,7 +39,7 @@ class SC034AdjudicationTests(unittest.TestCase):
             encoding="utf-8"
         )
         self.assertEqual(trace_provenance_problems(trace), [])
-        self.assertEqual(len(self.records), 389)
+        self.assertEqual(len(self.records), 390)
         self.assertEqual({"2333", "2334"} <= set(self.records), True)
         for identifier in ("2333", "2334"):
             forms = self.records[identifier][2]

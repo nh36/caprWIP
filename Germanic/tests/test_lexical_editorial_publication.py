@@ -47,7 +47,8 @@ class EditorialPublicationTests(unittest.TestCase):
 
     def test_scoped_philology_is_independent_of_derivation_status(self):
         self.assertIn("2224", self.old_required)
-        self.assertEqual(len(self.old_required - {"2224"}), 159)
+        # 160 after the SC065 filth admission (row 2335).
+        self.assertEqual(len(self.old_required - {"2224"}), 160)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
         self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])
@@ -116,7 +117,8 @@ class EditorialPublicationTests(unittest.TestCase):
             after = parse_entries(assembly.assemble_report(
                 self.compact, self.index, self.report_map, mode=mode), self.index)
             self.assertEqual(set(after), set(before))
-            self.assertEqual(len(after), 389)
+            # 390 after the SC065 filth admission (row 2335).
+            self.assertEqual(len(after), 390)
             for row_id, lines in before.items():
                 original = assembly.trim_blank_edges(
                     [line for line in lines if not line.startswith("NOTE:")])
