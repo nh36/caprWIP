@@ -45,7 +45,11 @@ lexical bridge than a standard grammar headline, and the best direct source
 support for it comes from the inherited `*furht-*` family behind `fright`
 [@Kroonen2013, p. 201]. `SC065` maps more naturally onto broad grammar
 discussions of medial syncope, but CAPR's actual rule is narrower than the
-handbook category, and its chronology card is still fully negative.
+handbook category. Its chronology card is a negative automated-search result,
+but the adjudication now supplies a positive independently demonstrated
+earlier boundary: the admitted witness `filth` (PGmc `*fūliþō` > OE `fȳlþ`)
+shows that i-umlaut must precede the syncope, since early placement bleeds
+the umlaut trigger and yields unattested `fūlþ`.
 
 ## 4. Formal implementation
 
@@ -79,13 +83,13 @@ The order-testing evidence is sharply uneven.
 1. `SC064` must follow `SC041` **PWGmc Final Bare A Loss**.
 2. `SC064` must precede `SC072` **OE Unstressed Long Vowel Shortening**.
 3. Both of those positive boundaries are carried by the same representative failure: `fright`, where shifting the rule yields `fyrhten` instead of expected `fyrhte`.
-4. `SC065` has no positive first-break boundary in either direction.
-5. The runner-boundary results on the `SC065` card must not be treated as historical constraints.
+4. `SC065` now has a positive, independently demonstrated earlier boundary across `SC055` **OE I-Umlaut**, carried by the displacement witness `filth` (`*fūliþō` > `fȳlþ`; early placement yields unattested `fūlþ`).
+5. `SC065` still has no positive later first-break boundary, and the runner-boundary results on its card must not be treated as historical constraints.
 
 So the strongest order claim here is not "the pair forms a securely tested
 two-rule chapter." It is narrower: `SC064` is a real but highly concentrated
-bridge, while `SC065` remains structurally plausible but not positively anchored
-by the current card evidence.
+bridge, while `SC065` is now anchored on its earlier side by the `filth`
+displacement witness but remains unanchored on its later side.
 
 ## 7. Interpretation for the book
 
@@ -97,9 +101,10 @@ real inherited witness family behind that evidence. But it is still narrow
 enough that a later `SC064`-only note is plausible.
 
 `SC065` is the more traditional sort of handbook phenomenon, since medial
-syncope is well established in the sources. Yet in CAPR it currently has no
-positive first-break boundary and may end up reading better as residual context
-for the already promoted `SC066-SC068` corridor than as a coequal co-headliner.
+syncope is well established in the sources. The adjudication retained it with
+a live admitted witness (`filth`) and a positive earlier boundary against
+`SC055`, so it now carries real evidence of its own, though it may still read
+best alongside the promoted `SC066-SC068` corridor.
 
 Source work therefore prepares the unit for human review, not for immediate
 promotion.
@@ -114,7 +119,7 @@ promotion.
 ## 9. Remaining uncertainty
 
 1. The main architectural uncertainty is paired report versus `SC064`-only note.
-2. `SC065` remains card-negative and cannot yet be treated as a positive chronology anchor.
+2. `SC065` is adjudicated RETAIN with a live witness (`filth`) and a positive earlier boundary across `SC055`; its later side remains unanchored.
 3. `SC064` relies entirely on the `fright` witness family and therefore cannot yet carry broad historical prose on its own without caution.
 4. The relation of `SC065` to the already promoted `SC066-SC068` corridor is still unresolved.
 5. `SC064`'s relation to `SC072` is meaningful, but it should not be inflated into a broad chapter-defining network.

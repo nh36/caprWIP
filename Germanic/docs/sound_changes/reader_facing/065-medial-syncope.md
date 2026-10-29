@@ -19,7 +19,38 @@ define OEMedialSyncope FootCtx([
 ]);
 ```
 
-No diagnostic word establishes a local chronology. Moving medial syncope to
-either end of the tested range leaves every output unchanged. Its
-handbook placement after apocope and before later cluster simplification
-therefore remains preferable, but the present lexicon cannot demonstrate it.
+The historical change is not in fact restricted to pre-dental position: the
+handbooks describe a general loss of unstressed medial high vowels in open
+syllables after heavy syllables [@RingeTaylor2014, pp. 264--267, §6.7.3;
+@Campbell1959, pp. 157--159, §§388--393]. The dental enumeration here is a
+deliberately narrow executable statement of the slice of that law required
+at this point in the cascade, where high-vowel apocope (SC063, OE High
+Vowel Apocope) has already applied and the open-syllable condition of the
+handbooks can no longer be expressed. Controlled counterfactual experiments
+show the narrowing is load-bearing rather than decorative: extending the
+rule to \emph{*u} wrongly syncopates \emph{hēafod} 'head', dropping the
+dental restriction destroys \emph{hierfest} 'harvest' and \emph{sċilling}
+'shilling', and the faithful open-syllable formulation is vacuous at this
+position, while moving it before apocope wrongly reduces \emph{sāwol}
+'soul'.
+
+The law is witnessed by the feminine abstracts in \emph{*-iþō}, which
+uniformly show syncope: \emph{strengþu} 'strength', \emph{hǣlþ} 'health',
+\emph{fȳlþ} 'filth', \emph{þīefþ} 'theft', \emph{wiermþu} 'warmth'
+[@Campbell1959, p. 236, §589.6; @Bammesberger1990, pp. 117--118, §4.5].
+The corpus tests the type through \emph{fȳlþ}, from \emph{*fūliþō}
+[@Kroonen2013, p. 158], whose medial vowel survives in the Old Saxon
+cognate \emph{fulitha} and Old High German \emph{fülida}
+[@Toller1921, p. 276]: the loss is therefore English, not common West
+Germanic. The same word fixes a relative chronology. Had syncope preceded
+i-umlaut (SC055, OE I-Umlaut), the deleted \emph{*i} could not have
+fronted the root vowel, and the result would have been unattested
+\emph{fūlþ} rather than attested \emph{fȳlþ}; umlaut must therefore
+precede this syncope. Campbell derives the endingless nominative singular
+of these abstracts analogically after the \emph{lār} type
+[@Campbell1959, p. 236, §589.6], whereas the cascade reaches the same form
+by the regular phonological route through raising and apocope; both
+accounts converge on the attested form, and the corpus does not decide
+between them. No local ordering with respect to high-vowel apocope itself
+can be demonstrated from the present lexicon, since the dental-conditioned
+statement applies whether or not the final vowel is still in place.

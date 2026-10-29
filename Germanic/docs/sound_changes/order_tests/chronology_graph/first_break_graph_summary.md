@@ -12,7 +12,7 @@ chronology constraints.
 ## Totals
 
 - total node count: `73`
-- total edge count: `144`
+- total edge count: `145`
 
 ### Node counts by card_type
 
@@ -20,9 +20,9 @@ chronology constraints.
 | --- | ---: |
 | `boundary_limited` | 2 |
 | `boundary_observation` | 2 |
-| `broad_far` | 5 |
+| `broad_far` | 6 |
 | `mixed` | 16 |
-| `negative_boundary` | 8 |
+| `negative_boundary` | 7 |
 | `one_sided` | 1 |
 | `one_sided_chronology` | 6 |
 | `reciprocal_or_near_reciprocal` | 20 |
@@ -35,7 +35,7 @@ chronology constraints.
 
 | relation_type | count |
 | --- | ---: |
-| `broad_far_chronology` | 13 |
+| `broad_far_chronology` | 14 |
 | `near_reciprocal_chronology` | 2 |
 | `no_break_search_boundary` | 21 |
 | `one_sided_chronology` | 41 |
@@ -99,6 +99,7 @@ chronology constraints.
 1. `SC063 -> SC072` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant yields `fyrht`
 1. `SC064 -> SC041` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the earlier-shifted variant yields `fyrhten`
 1. `SC064 -> SC072` (near_reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant again yields `fyrhten`
+1. `SC065 -> SC055` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `filth`; forms: PGmc `*fūliþō` yields expected OE `fȳlþ`, but the earlier-shifted variant (syncope composed before OEIUmlaut) bleeds the umlaut trigger and yields unattested `fūlþ`
 1. `SC066 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `nettle; spindle`; forms: PGmc `*nátilōn` yields expected OE `netle`, but the earlier-shifted variant yields `nætle`; PGmc `*spénnilō` likewise yields `spenl` instead of expected `spinl`
 1. `SC066 -> SC068` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `spindle`; forms: PGmc `*spénnilō` yields expected OE `spinl`, but the later-shifted variant yields `spinnl`
 1. `SC068 -> SC066` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `spindle`; forms: PGmc `*spénnilō` yields expected OE `spinl`, but the earlier-shifted variant yields `spinnl`

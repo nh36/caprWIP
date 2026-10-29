@@ -502,9 +502,9 @@
       "lifecycle_status": "active",
       "rule_name": "OEMedialSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC065-oe-medial-syncope.md",
-      "card_type": "negative_boundary",
+      "card_type": "broad_far",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Both sides are negative computational results: earlier search is blocked by bundled PWGmcChanges and later search reaches SC087 with no real break."
+      "short_summary": "Earlier boundary is independently demonstrated far away across SC055 OE I-Umlaut by the filth displacement witness; later search reaches the current runner limit with no real break."
     },
     {
       "change_id": "SC066",
@@ -2136,7 +2136,21 @@
       "strength": "runner_boundary",
       "interpretation_category": "runner_boundary",
       "reciprocal_group_id": "",
-      "notes": "Both sides are negative computational results: earlier search is blocked by bundled PWGmcChanges and later search reaches SC087 with no real break."
+      "notes": "Automated earlier search is blocked by bundled PWGmcChanges, but the filth displacement witness now independently demonstrates an earlier boundary across SC055 (see the broad_far_chronology edge); later search reaches SC087 with no real break."
+    },
+    {
+      "source_change_id": "SC065",
+      "target_change_id": "SC055",
+      "relation_type": "broad_far_chronology",
+      "direction_basis": "earlier_boundary",
+      "evidence_basis": "independently_demonstrated",
+      "witness_role": "displacement_witness",
+      "representative_lexemes": "filth",
+      "representative_forms": "PGmc `*fūliþō` yields expected OE `fȳlþ`, but the earlier-shifted variant (syncope composed before OEIUmlaut) bleeds the umlaut trigger and yields unattested `fūlþ`",
+      "strength": "broad_far",
+      "interpretation_category": "broad_far",
+      "reciprocal_group_id": "",
+      "notes": "Earlier boundary is independently demonstrated far away across SC055 OE I-Umlaut by the filth displacement witness rather than a tight local adjacency claim; later search reaches the current runner limit with no real break."
     },
     {
       "source_change_id": "SC065",
@@ -2150,7 +2164,7 @@
       "strength": "search_boundary",
       "interpretation_category": "search_boundary",
       "reciprocal_group_id": "",
-      "notes": "Both sides are negative computational results: earlier search is blocked by bundled PWGmcChanges and later search reaches SC087 with no real break."
+      "notes": "Later search reaches SC087 with no real break; the earlier side is now independently demonstrated across SC055 by the filth displacement witness."
     },
     {
       "source_change_id": "SC066",

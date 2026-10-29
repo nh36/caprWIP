@@ -1,13 +1,13 @@
 {
   "generator": "Germanic/tools/check_production_sandbox_equivalence.py",
   "status": "equivalent",
-  "rows_compared": 389,
+  "rows_compared": 390,
   "production_bin": "old_english.bin",
   "sandbox_final_bin": "old_english_sandbox_after_old_english_surface.bin",
   "comparison": "identical output multisets per selected corpus row",
   "sources": {
-    "germanic.txt": "eaefd1f8bc752beba09578fcca34bbfc9e61a8305bee1ad012dfb2340f2967c2",
+    "germanic.txt": "5c160755e67ebbfa898ea8494d8a0333c6da737133f6821bc10f2d6a87a9a2e0",
     "old_english_sandbox.txt": "8ccfe8b4e2fbc2a1406e1353678ce26680a75026f8514f4d2e2720f37f20349a",
-    "germanic-aligned-final.tsv": "90fcdf861682549f3e297e3868d7306ad9c600bf5395c728d1323f8d0eca12cc"
+    "germanic-aligned-final.tsv": "557113f8709633337feb51b1cd991f0db380ca567c20b7e784141f3d8c4fb540"
   }
 }

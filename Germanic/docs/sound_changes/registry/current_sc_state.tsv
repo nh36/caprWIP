@@ -82,7 +82,7 @@ SC061	OEWeakTailNasalLoss	historical_sound_change	Old English	OE Weak Tail Nasal
 SC062	OEWeightMarkers	technical_marker	Old English	OE Weight Markers				unadjudicated		73	71
 SC063	OEHighVowelApocope	historical_sound_change	Old English	OE High Vowel Apocope	oe	english_specific	A	unadjudicated		74	72
 SC064	NWGmcInStemNLoss	historical_sound_change	Old English	NWGmc In Stem N Loss	nwgmc	pan_nwgmc	C	unadjudicated		75	73
-SC065	OEMedialSyncope	historical_sound_change	Old English	OE Medial Syncope	oe	english_specific	A	unadjudicated		76	74
+SC065	OEMedialSyncope	historical_sound_change	Old English	OE Medial Syncope	oe	english_specific	A	adjudicated	RETAIN	76	74
 SC066	OELAdjacentSyncope	historical_sound_change	Old English	OE L Adjacent Syncope	oe	english_specific	A	unadjudicated		77	75
 SC067	OEDentalAssimilation	historical_sound_change	Old English	OE Dental Assimilation	oe	english_specific	A	unadjudicated		78	76
 SC068	OEPreconsonantalDegemination	historical_sound_change	Old English	OE Preconsonantal Degemination	oe	english_specific	A	unadjudicated		79	77

@@ -2,12 +2,12 @@
   "inputs": {
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
     "Germanic/data/entry_stage_metadata.tsv": "57b13ae634d025f3f6eb9c98156739b8b6dcc99fb4973643664117a8390da933",
-    "Germanic/data/germanic-aligned-final.tsv": "90fcdf861682549f3e297e3868d7306ad9c600bf5395c728d1323f8d0eca12cc",
+    "Germanic/data/germanic-aligned-final.tsv": "557113f8709633337feb51b1cd991f0db380ca567c20b7e784141f3d8c4fb540",
     "Germanic/docs/assembly/build_class_manifests.py": "9f1606d6ab0bbdc9187f90888112ee7150373abf7225f944d2cad806112c4e7d",
     "Germanic/docs/assembly/build_full_lexical_volume.py": "e82655263a105c73077ada18ae12be8db7926dd2d621562eaf4b979a5df811e9",
     "Germanic/docs/assembly/lexical_editorial_order.tsv": "7cdafe042fb24f8be02533b762841917351e0e10037a7f79f23096cdc2240a5d",
     "Germanic/docs/assembly/section_introductions_draft.md": "d2af1bd13554449b7053b038ce493ea90c98cbe8e41da6b8c362d276b59867bd",
-    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "9d8fe4fddd70aa8f7f6ae93fd98c2fbdf44e28281c4aa5bfc262045999f508cd",
+    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "4a437c22175cea26cb12607061fa9ccfa9ee08c9553f2fc9e4bab34a796eddfd",
     "Germanic/docs/lexeme_reports/model_entries/1933-adder-n\u01e3dre.model.md": "52549a9050ba8eb79643b769ec290b5ba323de44c757b9641ae0ed35ed04fb98",
     "Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md": "dc2610f275dc925e44f886bc8efab18d4ade9fc16cbfe9d38154ad3ee4222a90",
     "Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md": "e14c2eb8eaa31c708bca41b5d2e1d6d147e3b3bffd66a323f3daa9c4f74d6164",
@@ -195,7 +195,7 @@
     "Germanic/docs/assembly/manifest_regular.tsv": "20f78737e7953f6b56938f43cf16a72ccc50607f7d5e5697850dfb80ff31f239",
     "Germanic/docs/assembly/manifest_summary.md": "d030994bda06e0479a7420445cf98b12c4650c77b21e28d25e9917d3674177de",
     "Germanic/docs/assembly/manifest_unexplained.tsv": "4edfb0e7597797da71006dfd9caaa67757608e98c4652017a0bda9bf4f6ca967",
-    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md": "5cb2404cb45c10b146d7555a248b3e5a1b53e216e3af481092c191cfc936294c",
-    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt": "577a8ff32a6db6a6b9ac62fb4833dec25bb97ff582ca85e512e4b1c1f035da72"
+    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md": "4dad784223c4ecdff1a2e857a78d5ec07188d5b9bded615e2e7ecf7482cd1ae4",
+    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt": "b902ca34921849bee08bb24c2193bd3d38cafa9cf7d49205d8866c8f0144f94c"
   }
 }

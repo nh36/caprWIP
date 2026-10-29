@@ -110,6 +110,7 @@ SC063	SC072	one_sided_chronology	later_boundary	independently_demonstrated	displ
 SC064	SC041	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	73	47	75	49	consistent
 SC064	SC072	near_reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	73	83	75	85	consistent
 SC065	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		74		76		nonordering_observation
+SC065	SC055	broad_far_chronology	earlier_boundary	independently_demonstrated	displacement_witness	74	65	76	67	consistent
 SC065	SC087	no_break_search_boundary	later_boundary	boundary_observation		74	98	76	100	nonordering_observation
 SC066	SC055	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	75	65	77	67	consistent
 SC066	SC068	reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	75	77	77	79	consistent

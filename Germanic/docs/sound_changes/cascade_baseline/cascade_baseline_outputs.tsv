@@ -85,6 +85,7 @@ row_id	concept	proto	proto_norm	fst_input	word_stress	phonological_finality	coun
 2034	fright	*fúrxtīnaz	fúrxtīnaz	fúrxtīnaz	stressed	final	fyrhte	1	1	1	fyrhte
 2031	fox	*fúxsaz	fúxsaz	fúxsaz	stressed	final	fox	1	1	1	fox
 2024	fodder	*fōdrą	fōdrą	fōdrą	stressed	final	fōdor	1	1	1	fōdor
+2335	filth	*fūliþō	fūliθō	fūliθō	stressed	final	fȳlþ	1	1	1	fȳlþ
 2013	fire	*fūri	fūri	fūri	stressed	final	fȳre	1	1	0	fȳr
 1944	believe	*galáubijaną	galáubijaną	galáubijaną	stressed	final	ġelīefan	1	1	1	ġelīefan
 2046	grave	*grábaną	grábaną	grábaną	stressed	final	grafan	1	1	1	grafan

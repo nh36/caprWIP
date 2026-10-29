@@ -4,8 +4,8 @@ GENERATED from research SOURCE tables and the live corpus. Never hand-edit.
 
 Row-target status: **READING TARGETS REVIEWED WITH DECLARED LIMITS**. Row coverage is not passage or analytical completion.
 The separately generated [reading progress](reading_progress.md) tracks the three-source passages and applicability screens.
-Population: 395 OE rows; 389 runnable.
-Required source/row targets: 1387; retained actual consultations: 16; unchecked targets: 0; declared verification gaps: 0.
+Population: 396 OE rows; 390 runnable.
+Required source/row targets: 1389; retained actual consultations: 20; unchecked targets: 0; declared verification gaps: 0.
 
 Current CAPR fields below are observations, not new endorsements or approvals.
 A PGmc equality stage is the encoding convention, not independent author evidence.
@@ -11428,3 +11428,21 @@ Runnable: 1; derivation class: regular.
 | where-rt-2334 | RingeTaylor2014 pp.64-66 | (process discussion, no quoted form) | late_pwgmc / process / short antecedent versus later West-Germanic lengthening account |  Retain Ringe and Taylor's alternative chronology as a later account, not as proof that the selected short input is their exact notation. The source supplies a competing chronology and does not establish equivalence with Orel's dictionary endpoints. | text_checked |
 
 Coverage: 4 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2335"></a>
+
+## 2335: filth / fȳlþ
+
+Current citation: *fūliþō (pgmc); selected input: *fūliþō (pgmc; variety: none; equality_convention).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| filth-kroonen-2335 | Kroonen2013 pp.158 | *fūla- (OS fulitha) | pgmc_dictionary_context / stem / adjective base; OS fulitha f. 'filth' cited among reflexes | *fūla- Retain Kroonen's base and the OS abstract as source units; CAPR *fūliþō composes the attested base with the Gmc *-iþō suffix and is not verbatim in Kroonen. Dictionary evidence for the PGmc adjective base and for an exact West Germanic *-iþō abstract on it (OS fulitha 'filth'). | page_image_checked |
+| filth-orel-2335 | Orel2003 pp.121 | *fūlaz | pgmc_dictionary_context / stem / adjective base; OE fūl 'foul, dirty, rotten' cited among reflexes | *fūla- Retain Orel's base adjective as a source unit; the *-iþō abstract is not listed in Orel and CAPR *fūliþō is not attributed to him. Handbook evidence for the PGmc base adjective (derived from *fūanan); no abstract noun entry appears before the f-section ends at *fūōn. | page_image_checked |
+| filth-campbell-2335 | Campbell1959 pp.236 | (process discussion, no quoted form) | pgmc_to_oe / process / class statement over the feminine -iþō abstracts including the endingless nominative singular |  Campbell's class statement is applied to fȳlþ as a member of the -iþō type; he derives the endingless nominative by analogy of the lār type, where CAPR's cascade reaches the same surface form phonologically (apocope before syncope). The medial syllable of -iþō nouns is syncopated in OE; the final vowel is often dropped on the analogy of the lār type. | text_checked |
+| filth-toller-2335 | Toller1921 pp.276 | fylþ | oe / attestation / nominative singular; inflected fylþu also attested | fȳlþ Supplement spelling fylþ normalized to CAPR fȳlþ with marked length (per Clark Hall fýlð); the dental is written þ throughout. Attests the noun in physical and moral senses: An. Ox. 3323 (putor), Scint. 38,19 (putredo), Germ. 388,12, An. Ox. 1790 (fylþu); entry cites OS fúlitha and OHG fülida. | text_checked |
+| filth-clarkhall-2335 | ClarkHall1960 pp.125 | fýlð | oe / word / nominative singular feminine | fȳlþ Clark Hall marks the long vowel (fýlð) and feminine gender; CAPR writes þ for the dental fricative. Confirms lexical identity, gender and vowel length; attestation sigla Mt, Sc, W; bracketed base [ful]. | text_checked |
+| filth-bammesberger-2335 | Bammesberger1990 pp.117-118 | (process discussion, no quoted form) | (post-)PGmc / process / feminine abstract suffix formation |  Bammesberger documents the suffix type and its -i- before the dental; *fūliþō instantiates the type on Kroonen's base *fūla-. Parallel formations *mēriþō > mǣrþu and *deupiþō/*hauhiþō > hīehþu; 'durchweg der Vokal -i- vor dem Dental des Suffixes'. | text_checked |
+
+Coverage: 6 checks; 0 unchecked; 0 verification gaps.

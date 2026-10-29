@@ -75,10 +75,10 @@ and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
   `9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597`
-- selected-389 corpus fingerprint (`outputs_sha256`):
-  `d6e8b90551e4bb57d8d161a8f2334c29620533a487a0e64f8857f500380d5e45`
+- selected-390 corpus fingerprint (`outputs_sha256`):
+  `35bbd32df3f8c3e07c98ad24222a72130c7ff4ebe6de8fe1922464d5df4639c9`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `7f7994848fba1b86b3c3b24d5d8ae41fab30e2f86e6816c92f63a7810cd69142`
+  `0e938fac23de7065eefac0ab5ae378053ed6587891d5d9d2a70c440b3d4a209a`
 
 The authorized inherited-world input migration is recorded in
 `approved_world_input_migration.json`; `*_pre_sc036_world.*` preserves
@@ -91,7 +91,13 @@ The SC112 expansion adds only rows 2333 and 2334 (*there* and *where*):
 389 selected rows, 381 matches and the same eight mismatches. Every prior
 387 input, target, context and output is preserved in `*_pre_sc112_expansion.*`;
 the original-393 comparative survey remains a distinct historical scope
-from the current 395-row audit inventory.
+from the current 396-row audit inventory.
+
+The subsequent SC065 admission adds only row 2335 (*filth*, `*fūliþō` >
+`fȳlþ`), the live medial-syncope witness: 390 selected rows, 382 matches
+and the same eight mismatches. Every prior 389 input, target, context and
+output is byte-identical and the legacy fingerprint is unchanged; the
+scientific record is `sound_changes/audits/sc065-adjudication.md`.
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.

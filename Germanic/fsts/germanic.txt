@@ -3489,8 +3489,10 @@ define OEWeightCleanup ?*;  # identity — no markers to clean up
 
 # R/T §6.8, Campbell §§389-393: medial high vowel syncope.
 # After heavy syllables, unstressed medial *i is syncopated before dental
-# obstruents (*θ, *ð, *d, *t). Best attested in *-iθō- abstracts (strengþu,
-# hǣlþu, fyrhtu, wiermþu) where ALL examples show consistent syncope.
+# obstruents (*θ, *ð, *d, *t). Best attested in *-iθō- abstracts (fȳlþ,
+# strengþu, hǣlþu, fyrhtu, wiermþu) where ALL examples show syncope.
+# Live corpus witness: row 2335 *fūliþō → fȳlþ 'filth' (Kroonen p. 158,
+# Campbell §589.6); see audits/sc065-adjudication.md.
 # Also applies in Class 1 weak verb preterites (*-idē → *-dē) and possibly
 # comparatives (*-ira → *-ra), but those aren't currently in the pipeline.
 # Restricted to pre-dental context to avoid overapplication before laterals

@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (311) ===
+=== DERIVATION_CLASS: regular (312) ===
 
 
 
@@ -1420,6 +1420,27 @@ English Proto Input: *féxtaną
 
 Old English Orthography: *féohtan
 Outcome: feohtan
+# filth
+PROTO: *fūliþō
+EXPECTED: fȳlþ
+OUTPUTS: fȳlþ
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *fūliθō
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *fūliθu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳliθu<br>OE High Vowel Apocope: *fȳliθ<br>OE Medial Syncope: *fȳlθ |
+
+
+
+### Orthography & surface
+
+Old English Orthography: *fȳlþ
+Outcome: fȳlþ
 # finger
 PROTO: *fíngraz
 EXPECTED: finger
