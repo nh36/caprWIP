@@ -1,0 +1,707 @@
+{
+  "experiment": "sc065-counterfactuals",
+  "generated": "2026-10-29 15:10:03",
+  "germanic.txt_sha256": "eaefd1f8bc752beba09578fcca34bbfc9e61a8305bee1ad012dfb2340f2967c2",
+  "corpus_sha256": "557113f8709633337feb51b1cd991f0db380ca567c20b7e784141f3d8c4fb540",
+  "selected_rows": 390,
+  "selected_inputs_sha256": "503663af69ad45267f2170d69761fefe6bd8b3b9124872c3889255204d7b9a32",
+  "pre_stage_bin": "old_english_sandbox_after_nwgmc_in_stem_n_loss.bin",
+  "filth_canonical_trace": [
+    {
+      "stage": "EnglishProtoInput",
+      "outputs": [
+        "*f*ū*l*i*θ*ō"
+      ]
+    },
+    {
+      "stage": "PNWGmcFinalLongORaising",
+      "outputs": [
+        "*f*ū*l*i*θ*u"
+      ]
+    },
+    {
+      "stage": "OEIUmlaut",
+      "outputs": [
+        "*f*ȳ*l*i*θ*u"
+      ]
+    },
+    {
+      "stage": "OEHighVowelApocope",
+      "outputs": [
+        "*f*ȳ*l*i*θ"
+      ]
+    },
+    {
+      "stage": "OEMedialSyncope",
+      "outputs": [
+        "*f*ȳ*l*θ"
+      ]
+    },
+    {
+      "stage": "OldEnglishOrthography",
+      "outputs": [
+        "*f*ȳ*lþ"
+      ]
+    },
+    {
+      "stage": "OldEnglishRemoveStars",
+      "outputs": [
+        "fȳlþ"
+      ]
+    }
+  ],
+  "variants": {
+    "production_control": {
+      "definition": "define OEMedialSyncope FootCtx([\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],\n    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]\n]);",
+      "source_sha256": "0591b06f7af0effe7f9e958ca15889fe157a99726bfb5e29f5993658325e5e99",
+      "composition_site": "canonical (after NWGmcInStemNLoss)",
+      "witness_probes": [
+        {
+          "id": "filth",
+          "input": "*fūliþō",
+          "attested": "fȳlþ",
+          "basis": "Kroonen 2013:158 *fūla- (OS fulitha f. 'filth'); BT s.v. FÝLÞ; Clark Hall 1960:125; Campbell §589.6",
+          "fst_input": "fūliθō",
+          "outputs": [
+            "fȳlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "health",
+          "input": "*xáiliþō",
+          "attested": "hǣlþ",
+          "basis": "Campbell §589.6 class; BT s.v. hǣlþ",
+          "fst_input": "xáiliθō",
+          "outputs": [
+            "hǣlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "theft",
+          "input": "*θéubiþō",
+          "attested": "þīefþ",
+          "basis": "Orel 2003 *þeubiþō (ON þýf, OE ðīfð, OFris thiūfthe, OS thiubda)",
+          "fst_input": "θéubiθō",
+          "outputs": [
+            "þīefþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "warmth",
+          "input": "*wármiþō",
+          "attested": "wiermþ",
+          "basis": "Campbell §589.6 class (wiermþu)",
+          "fst_input": "wármiθō",
+          "outputs": [
+            "wiermþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "strength",
+          "input": "*strángiþō",
+          "attested": "strengþu",
+          "basis": "Campbell §589.6; palatalization chronology unresolved in CAPR",
+          "fst_input": "strángiθō",
+          "outputs": [
+            "strenġþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "length",
+          "input": "*lángiþō",
+          "attested": "lengþu",
+          "basis": "Campbell §589.6 (leng §589.7); palatalization unresolved",
+          "fst_input": "lángiθō",
+          "outputs": [
+            "lenġþ"
+          ],
+          "matches_attested": false
+        }
+      ]
+    },
+    "retired": {
+      "definition": "define OEMedialSyncope ?*;",
+      "source_sha256": "79a6acd62dff3d629c16eab5d03a415e06bc6c4e0c27327951b0d2e84e080032",
+      "composition_site": "canonical (after NWGmcInStemNLoss)",
+      "witness_probes": [
+        {
+          "id": "filth",
+          "input": "*fūliþō",
+          "attested": "fȳlþ",
+          "basis": "Kroonen 2013:158 *fūla- (OS fulitha f. 'filth'); BT s.v. FÝLÞ; Clark Hall 1960:125; Campbell §589.6",
+          "fst_input": "fūliθō",
+          "outputs": [
+            "fȳleþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "health",
+          "input": "*xáiliþō",
+          "attested": "hǣlþ",
+          "basis": "Campbell §589.6 class; BT s.v. hǣlþ",
+          "fst_input": "xáiliθō",
+          "outputs": [
+            "hǣleþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "theft",
+          "input": "*θéubiþō",
+          "attested": "þīefþ",
+          "basis": "Orel 2003 *þeubiþō (ON þýf, OE ðīfð, OFris thiūfthe, OS thiubda)",
+          "fst_input": "θéubiθō",
+          "outputs": [
+            "þīefeþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "warmth",
+          "input": "*wármiþō",
+          "attested": "wiermþ",
+          "basis": "Campbell §589.6 class (wiermþu)",
+          "fst_input": "wármiθō",
+          "outputs": [
+            "wiermeþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "strength",
+          "input": "*strángiþō",
+          "attested": "strengþu",
+          "basis": "Campbell §589.6; palatalization chronology unresolved in CAPR",
+          "fst_input": "strángiθō",
+          "outputs": [
+            "strenġeþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "length",
+          "input": "*lángiþō",
+          "attested": "lengþu",
+          "basis": "Campbell §589.6 (leng §589.7); palatalization unresolved",
+          "fst_input": "lángiθō",
+          "outputs": [
+            "lenġeþ"
+          ],
+          "matches_attested": false
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2335",
+          "proto": "*fūliþō",
+          "fst_input": "fūliθō",
+          "pre_sc065": [
+            "*f*ȳ*l*i*θ"
+          ],
+          "selected_target": "fȳlþ",
+          "control_outputs": [
+            "fȳlþ"
+          ],
+          "variant_outputs": [
+            "fȳleþ"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "u_extension": {
+      "definition": "define OEMedialSyncope FootCtx([\n    [{*i}|{*u}] -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],\n    [{*i}|{*u}] -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],\n    [{*i}|{*u}] -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]\n]);",
+      "source_sha256": "6ada09e4865bb7f0be8359a60b28a1f1995cabc4df132cc5e08709f49ba832b0",
+      "composition_site": "canonical (after NWGmcInStemNLoss)",
+      "witness_probes": [
+        {
+          "id": "filth",
+          "input": "*fūliþō",
+          "attested": "fȳlþ",
+          "basis": "Kroonen 2013:158 *fūla- (OS fulitha f. 'filth'); BT s.v. FÝLÞ; Clark Hall 1960:125; Campbell §589.6",
+          "fst_input": "fūliθō",
+          "outputs": [
+            "fȳlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "health",
+          "input": "*xáiliþō",
+          "attested": "hǣlþ",
+          "basis": "Campbell §589.6 class; BT s.v. hǣlþ",
+          "fst_input": "xáiliθō",
+          "outputs": [
+            "hǣlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "theft",
+          "input": "*θéubiþō",
+          "attested": "þīefþ",
+          "basis": "Orel 2003 *þeubiþō (ON þýf, OE ðīfð, OFris thiūfthe, OS thiubda)",
+          "fst_input": "θéubiθō",
+          "outputs": [
+            "þīefþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "warmth",
+          "input": "*wármiþō",
+          "attested": "wiermþ",
+          "basis": "Campbell §589.6 class (wiermþu)",
+          "fst_input": "wármiθō",
+          "outputs": [
+            "wiermþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "strength",
+          "input": "*strángiþō",
+          "attested": "strengþu",
+          "basis": "Campbell §589.6; palatalization chronology unresolved in CAPR",
+          "fst_input": "strángiθō",
+          "outputs": [
+            "strenġþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "length",
+          "input": "*lángiþō",
+          "attested": "lengþu",
+          "basis": "Campbell §589.6 (leng §589.7); palatalization unresolved",
+          "fst_input": "lángiθō",
+          "outputs": [
+            "lenġþ"
+          ],
+          "matches_attested": false
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2063",
+          "proto": "*xáubudą",
+          "fst_input": "xáubudą",
+          "pre_sc065": [
+            "*ç*ēa*β*u*d"
+          ],
+          "selected_target": "hēafod",
+          "control_outputs": [
+            "hēafod"
+          ],
+          "variant_outputs": [
+            "hēafd"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "any_consonant": {
+      "definition": "define OEMedialSyncope FootCtx([\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ OEAnyConsonant,\n    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ OEAnyConsonant,\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ OEAnyConsonant\n]);",
+      "source_sha256": "1ffd888591809b528c36eef389878b181ab6c85f6918da8d884466b18174763e",
+      "composition_site": "canonical (after NWGmcInStemNLoss)",
+      "witness_probes": [
+        {
+          "id": "filth",
+          "input": "*fūliþō",
+          "attested": "fȳlþ",
+          "basis": "Kroonen 2013:158 *fūla- (OS fulitha f. 'filth'); BT s.v. FÝLÞ; Clark Hall 1960:125; Campbell §589.6",
+          "fst_input": "fūliθō",
+          "outputs": [
+            "fȳlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "health",
+          "input": "*xáiliþō",
+          "attested": "hǣlþ",
+          "basis": "Campbell §589.6 class; BT s.v. hǣlþ",
+          "fst_input": "xáiliθō",
+          "outputs": [
+            "hǣlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "theft",
+          "input": "*θéubiþō",
+          "attested": "þīefþ",
+          "basis": "Orel 2003 *þeubiþō (ON þýf, OE ðīfð, OFris thiūfthe, OS thiubda)",
+          "fst_input": "θéubiθō",
+          "outputs": [
+            "þīefþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "warmth",
+          "input": "*wármiþō",
+          "attested": "wiermþ",
+          "basis": "Campbell §589.6 class (wiermþu)",
+          "fst_input": "wármiθō",
+          "outputs": [
+            "wiermþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "strength",
+          "input": "*strángiþō",
+          "attested": "strengþu",
+          "basis": "Campbell §589.6; palatalization chronology unresolved in CAPR",
+          "fst_input": "strángiθō",
+          "outputs": [
+            "strenġþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "length",
+          "input": "*lángiþō",
+          "attested": "lengþu",
+          "basis": "Campbell §589.6 (leng §589.7); palatalization unresolved",
+          "fst_input": "lángiθō",
+          "outputs": [
+            "lenġþ"
+          ],
+          "matches_attested": false
+        }
+      ],
+      "rows_changed": 2,
+      "changes": [
+        {
+          "row_id": "2057",
+          "proto": "*xárbistuz",
+          "fst_input": "xárbistuz",
+          "pre_sc065": [
+            "*ç*ie*r*β*i*s*t"
+          ],
+          "selected_target": "hierfest",
+          "control_outputs": [
+            "hierfest"
+          ],
+          "variant_outputs": [],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        },
+        {
+          "row_id": "2181",
+          "proto": "*skíllingaz",
+          "fst_input": "skíllingaz",
+          "pre_sc065": [
+            "*ʃ*í*l*l*i*n*g"
+          ],
+          "selected_target": "sċilling",
+          "control_outputs": [
+            "sċilling"
+          ],
+          "variant_outputs": [],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "open_syllable_insitu": {
+      "definition": "define OEMedialSyncope FootCtx([\n    [{*i}|{*u}] -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ OEAnyConsonant EnglishStarVocalic,\n    [{*i}|{*u}] -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ OEAnyConsonant EnglishStarVocalic,\n    [{*i}|{*u}] -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ OEAnyConsonant EnglishStarVocalic\n]);",
+      "source_sha256": "0a4ee40bec9014e253d26611291566789b262c4e964a56636069c7e168f49e6e",
+      "composition_site": "canonical (after NWGmcInStemNLoss)",
+      "witness_probes": [
+        {
+          "id": "filth",
+          "input": "*fūliþō",
+          "attested": "fȳlþ",
+          "basis": "Kroonen 2013:158 *fūla- (OS fulitha f. 'filth'); BT s.v. FÝLÞ; Clark Hall 1960:125; Campbell §589.6",
+          "fst_input": "fūliθō",
+          "outputs": [
+            "fȳleþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "health",
+          "input": "*xáiliþō",
+          "attested": "hǣlþ",
+          "basis": "Campbell §589.6 class; BT s.v. hǣlþ",
+          "fst_input": "xáiliθō",
+          "outputs": [
+            "hǣleþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "theft",
+          "input": "*θéubiþō",
+          "attested": "þīefþ",
+          "basis": "Orel 2003 *þeubiþō (ON þýf, OE ðīfð, OFris thiūfthe, OS thiubda)",
+          "fst_input": "θéubiθō",
+          "outputs": [
+            "þīefeþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "warmth",
+          "input": "*wármiþō",
+          "attested": "wiermþ",
+          "basis": "Campbell §589.6 class (wiermþu)",
+          "fst_input": "wármiθō",
+          "outputs": [
+            "wiermeþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "strength",
+          "input": "*strángiþō",
+          "attested": "strengþu",
+          "basis": "Campbell §589.6; palatalization chronology unresolved in CAPR",
+          "fst_input": "strángiθō",
+          "outputs": [
+            "strenġeþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "length",
+          "input": "*lángiþō",
+          "attested": "lengþu",
+          "basis": "Campbell §589.6 (leng §589.7); palatalization unresolved",
+          "fst_input": "lángiθō",
+          "outputs": [
+            "lenġeþ"
+          ],
+          "matches_attested": false
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2335",
+          "proto": "*fūliþō",
+          "fst_input": "fūliθō",
+          "pre_sc065": [
+            "*f*ȳ*l*i*θ"
+          ],
+          "selected_target": "fȳlþ",
+          "control_outputs": [
+            "fȳlþ"
+          ],
+          "variant_outputs": [
+            "fȳleþ"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "open_syllable_pre_apocope": {
+      "definition": "define OEMedialSyncope FootCtx([\n    [{*i}|{*u}] -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ OEAnyConsonant EnglishStarVocalic,\n    [{*i}|{*u}] -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ OEAnyConsonant EnglishStarVocalic,\n    [{*i}|{*u}] -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ OEAnyConsonant EnglishStarVocalic\n]);",
+      "source_sha256": "3b457ddc31028843270e9e1cd10d9a458d54244e9a381c1745df8943205b38bc",
+      "composition_site": "before OEHighVowelApocope",
+      "witness_probes": [
+        {
+          "id": "filth",
+          "input": "*fūliþō",
+          "attested": "fȳlþ",
+          "basis": "Kroonen 2013:158 *fūla- (OS fulitha f. 'filth'); BT s.v. FÝLÞ; Clark Hall 1960:125; Campbell §589.6",
+          "fst_input": "fūliθō",
+          "outputs": [
+            "fȳlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "health",
+          "input": "*xáiliþō",
+          "attested": "hǣlþ",
+          "basis": "Campbell §589.6 class; BT s.v. hǣlþ",
+          "fst_input": "xáiliθō",
+          "outputs": [
+            "hǣlþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "theft",
+          "input": "*θéubiþō",
+          "attested": "þīefþ",
+          "basis": "Orel 2003 *þeubiþō (ON þýf, OE ðīfð, OFris thiūfthe, OS thiubda)",
+          "fst_input": "θéubiθō",
+          "outputs": [
+            "þīefþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "warmth",
+          "input": "*wármiþō",
+          "attested": "wiermþ",
+          "basis": "Campbell §589.6 class (wiermþu)",
+          "fst_input": "wármiθō",
+          "outputs": [
+            "wiermþ"
+          ],
+          "matches_attested": true
+        },
+        {
+          "id": "strength",
+          "input": "*strángiþō",
+          "attested": "strengþu",
+          "basis": "Campbell §589.6; palatalization chronology unresolved in CAPR",
+          "fst_input": "strángiθō",
+          "outputs": [
+            "strenġþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "length",
+          "input": "*lángiþō",
+          "attested": "lengþu",
+          "basis": "Campbell §589.6 (leng §589.7); palatalization unresolved",
+          "fst_input": "lángiθō",
+          "outputs": [
+            "lenġþ"
+          ],
+          "matches_attested": false
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2201",
+          "proto": "*sáiwalō",
+          "fst_input": "sáiwalō",
+          "pre_sc065": [
+            "*s*ā*w*u*l"
+          ],
+          "selected_target": "sāwol",
+          "control_outputs": [
+            "sāwol"
+          ],
+          "variant_outputs": [
+            "sāwl"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "early_pre_umlaut": {
+      "definition": "define OEMedialSyncope FootCtx([\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],\n    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]\n]);",
+      "source_sha256": "abe2c986b4d52c5451edf94817b92f47279998615659b962bb7789fc40658497",
+      "composition_site": "before OEIUmlaut",
+      "witness_probes": [
+        {
+          "id": "filth",
+          "input": "*fūliþō",
+          "attested": "fȳlþ",
+          "basis": "Kroonen 2013:158 *fūla- (OS fulitha f. 'filth'); BT s.v. FÝLÞ; Clark Hall 1960:125; Campbell §589.6",
+          "fst_input": "fūliθō",
+          "outputs": [
+            "fūlþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "health",
+          "input": "*xáiliþō",
+          "attested": "hǣlþ",
+          "basis": "Campbell §589.6 class; BT s.v. hǣlþ",
+          "fst_input": "xáiliθō",
+          "outputs": [
+            "hālþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "theft",
+          "input": "*θéubiþō",
+          "attested": "þīefþ",
+          "basis": "Orel 2003 *þeubiþō (ON þýf, OE ðīfð, OFris thiūfthe, OS thiubda)",
+          "fst_input": "θéubiθō",
+          "outputs": [
+            "þēofþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "warmth",
+          "input": "*wármiþō",
+          "attested": "wiermþ",
+          "basis": "Campbell §589.6 class (wiermþu)",
+          "fst_input": "wármiθō",
+          "outputs": [
+            "wiermeþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "strength",
+          "input": "*strángiþō",
+          "attested": "strengþu",
+          "basis": "Campbell §589.6; palatalization chronology unresolved in CAPR",
+          "fst_input": "strángiθō",
+          "outputs": [
+            "stranġþ"
+          ],
+          "matches_attested": false
+        },
+        {
+          "id": "length",
+          "input": "*lángiþō",
+          "attested": "lengþu",
+          "basis": "Campbell §589.6 (leng §589.7); palatalization unresolved",
+          "fst_input": "lángiθō",
+          "outputs": [
+            "lanġþ"
+          ],
+          "matches_attested": false
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2335",
+          "proto": "*fūliþō",
+          "fst_input": "fūliθō",
+          "pre_sc065": [
+            "*f*ȳ*l*i*θ"
+          ],
+          "selected_target": "fȳlþ",
+          "control_outputs": [
+            "fȳlþ"
+          ],
+          "variant_outputs": [
+            "fūlþ"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    }
+  },
+  "control_matches_canonical": true
+}
