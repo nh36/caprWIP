@@ -24,6 +24,8 @@ under `Germanic/docs/sound_changes/audits/`.
 | `citation_ledger.tsv` | Per-SC citation placement ledger, fully reconciled: 12 `CITED_OK` (page-precise citations already in reader prose), 23 `CITE_WARRANTED`, 32 `CHAPTER_LEVEL`, 24 `NO_CITATION_NEEDED` (with reasons), 6 `DEFER_TO_ADJUDICATION`. |
 | `quality_control_report.md` | Second-pass QC findings: substantive description errors corrected (331.6a, 404b/c/d, 400z, 406, 409, 422, 475b, 480.1), propagation audit, 600 dpi p. 136 chart re-read, remaining uncertainty, and backlog changes. |
 | `research_agenda.md` | Evidence-ranked queue of the remaining Barrack-related investigations, prepared after the SC087 adjudication (RETAIN); names the SCs, Barrack rules, diagnostic lexemes and required tests per item. |
+| `syncope_cluster_comparative_dossier.md` | Comparative historical research dossier (SC065 round, 2026-10): Barrack's vowel-deletion rules 204/345–359/388–390 and cluster rules 476–484 against CAPR SC063–SC068/SC079–SC080, with his explicit feeding claims, the substantive differences, and a book-ready comparative section. |
+| `cluster_adjudication_queue.md` | Ranked post-SC065 adjudication agenda for the remaining syncope/cluster-corridor rules (SC066+SC068 joint, SC067, SC080, SC079), with Barrack pages, witnesses, proposed experiments and readiness assessments. Schedules work; decides nothing. |
 
 ## How to read Barrack's apparatus
 

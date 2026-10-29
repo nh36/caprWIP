@@ -58,7 +58,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 196		62	SC055	PARTIALLY_REPRESENTED	Unrounding of umlaut product (œ → e); folded into CAPR umlaut outputs	medium	NO_ACTION
 200		62-63 (continues)	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component (æV(C)i/j → eV(C)i/j)	medium	NO_ACTION
 202		63	SC055	EQUIVALENT_REPRESENTED	Umlaut fronting component	medium	NO_ACTION
-204		63	SC065;SC050	PARTIALLY_REPRESENTED	Early syncope; CAPR medial syncope and Sievers-law reduction cover parts	low	VERIFY_SOURCE
+204		63	SC065;SC050	PARTIALLY_REPRESENTED	Early WS *i-syncope (p. 63) feeding Barrack's later rules; compared against SC065 during the SC065 adjudication — CAPR's pre-dental statement is a deliberately narrower executable proxy; no CAPR change required	medium	EXAMINED_SC065_NO_ACTION
 210		63-64 (continues)	SC059;SC039	REPRESENTED_DIFFERENT_CONDITIONING	Back umlaut/rounding; CAPR scope discrepancy flagged	high	RESEARCH_QUEUE
 212		64	SC059	REPRESENTED_DIFFERENT_CONDITIONING	Back umlaut; scope discrepancy with CAPR back mutation	high	RESEARCH_QUEUE
 218		65	SC039	EQUIVALENT_REPRESENTED	Combinative back umlaut after w; matches CAPR wi-combinative u-umlaut	high	NO_ACTION
@@ -119,18 +119,18 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 339a		84	SC055	EQUIVALENT_REPRESENTED	i-umlaut statement (Cf. C190ff.); CAPR SC055 same core law	high	NO_ACTION
 339b		84-85 (continues)	SC055	PARTIALLY_REPRESENTED	Umlaut of long vowels/raising adjustment	medium	NO_ACTION
 341		85	SC063;SC041	REPRESENTED_DIFFERENT_CONDITIONING	Final vowel deletion complex; CAPR splits apocope by height and stage	medium	NO_ACTION
-345		85-86 (continues)	SC063	EQUIVALENT_REPRESENTED	Final high vowel deletion after heavy syllable; CAPR high-vowel apocope	high	NO_ACTION
-347		86-87 (continues)	SC063;SC065	REPRESENTED_DIFFERENT_CONDITIONING	Word-final high-vowel deletion; not coextensive with CAPR syncope split	medium	NO_ACTION
+345		85-86 (continues)	SC063	EQUIVALENT_REPRESENTED	Final high vowel deletion after heavy syllable; CAPR high-vowel apocope (SC063); examined as the feeding left context in the SC065 adjudication	high	EXAMINED_SC065_NO_ACTION
+347		86-87 (continues)	SC063;SC065	REPRESENTED_DIFFERENT_CONDITIONING	High-vowel deletion; examined in the SC065 adjudication — counterfactuals show Barrack-style broader conditioning corrupts hēafod (u-extension) and hærfest/sċilling (any-consonant) at CAPR's cascade site	medium	EXAMINED_SC065_NO_ACTION
 348		87	-	FORMAL_NOT_HISTORICAL	Syllable deletion via progressive environment simplification; formal device	medium	NO_ACTION
-351		87	SC063;SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Final high-vowel deletion/PES; CAPR splits medial and l-adjacent syncope	medium	NO_ACTION
+351		87	SC063;SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Final high-vowel deletion/PES; examined in the SC065 adjudication — CAPR splits medial (SC065) and l-adjacent (SC066) syncope; the open-syllable weight law was tested and is vacuous post-apocope, corrupts sāwol pre-apocope	medium	EXAMINED_SC065_NO_ACTION
 354a		88	-	UNRESOLVED	Deletion of e/i plus sonorant sequence; needs print verification	low	VERIFY_SOURCE
 354b		88	SC053;SC085	PARTIALLY_REPRESENTED	Deletion of w/h after consonant	medium	NO_ACTION
 355.1		88	SC071;SC069;SC072	REPRESENTED_DIFFERENT_CONDITIONING	Shortening of unstressed long vowels; CAPR splits early/late o-shortening	medium	NO_ACTION
 355.3	WG	89	SC009	REPRESENTED_DIFFERENT_CONDITIONING	Liaison reduction of *ij; CAPR ij-contraction	medium	NO_ACTION
 355.5		89	-	UNRESOLVED	Common NWG vowel change; summary too generic	low	VERIFY_SOURCE
 357		89-90 (continues)	SC071;SC072	PARTIALLY_REPRESENTED	Vowel alternations before sonorants with accent-loss pathways	medium	NO_ACTION
-358		90-91 (continues)	SC072;SC065	REPRESENTED_DIFFERENT_CONDITIONING	Syncopation of originally long vowels	medium	NO_ACTION
-359		91	SC065	PARTIALLY_REPRESENTED	Deletion of unstressed vowel	medium	NO_ACTION
+358		90-91 (continues)	SC072;SC065	REPRESENTED_DIFFERENT_CONDITIONING	Syncopation of originally long vowels; examined in the SC065 adjudication — relates to SC072 shortening plus syncope territory, outside SC065's pre-dental domain; no counterexample to SC065 found	medium	EXAMINED_SC065_NO_ACTION
+359		91	SC065	PARTIALLY_REPRESENTED	Deletion of unstressed vowel; examined in the SC065 adjudication — broader than SC065's domain; no CAPR change required	medium	EXAMINED_SC065_NO_ACTION
 359z		91	-	FORMAL_NOT_HISTORICAL	Redundancy rule on *ij; explicitly formal	high	NO_ACTION
 363a		92	SC088	REPRESENTED_DIFFERENT_CONDITIONING	Vowel insertion in sonorant environment; CAPR epenthetic vowel	medium	NO_ACTION
 363b		92	SC088	PARTIALLY_REPRESENTED	Vowel insertion with lateral loss	low	NO_ACTION
@@ -144,8 +144,8 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 379		95	-	UNRESOLVED	Short-vowel development; summary too generic	low	VERIFY_SOURCE
 380		95	-	UNRESOLVED	Back-vowel fronting before nasal; needs print verification	low	VERIFY_SOURCE
 385		95-96 (continues)	-	UNRESOLVED	Vowel lowering/fronting; summary too generic	low	VERIFY_SOURCE
-388		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Post-sonorant vowel deletion; CAPR syncope split	medium	NO_ACTION
-390		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Unstressed vowel deletion (meolc); CAPR syncope split	medium	NO_ACTION
+388		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Post-sonorant vowel deletion; examined in the SC065 adjudication for the dental slice; its l-adjacent/sonorant territory belongs to SC066 and remains open pending the SC066 adjudication	medium	RESEARCH_QUEUE
+390		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Unstressed vowel deletion (meolc); examined in the SC065 adjudication; the meolc-type sonorant environment belongs to SC066's domain and remains open pending the SC066 adjudication	medium	RESEARCH_QUEUE
 398z	WG	96	-	UNRESOLVED	WG loss of rounding; needs print verification	low	VERIFY_SOURCE
 398.2	PG	97	-	OUT_OF_SCOPE	Verner’s Law; predates CAPR’s PGmc input stage, outcomes encoded lexically per lexeme	high	CHAPTER_DISCUSSION
 398.2n	NWG	97	-	OUT_OF_SCOPE	Labiovelar rounding loss; PGmc-internal, encoded lexically	medium	NO_ACTION
