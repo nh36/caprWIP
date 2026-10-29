@@ -1,5 +1,15 @@
 # SC017 NWGmc U Lowering — chronology evidence card
 
+## Current scoped rainbow adoption
+
+`audits/rainbow-2148-adoption.md` extends SC017 to inherited subordinate
+*ù > ò*, retaining the grave. Rainbow now lowers early, before SC037
+reads that grave; it is no longer evidence for SC038 before late SC040.
+No order changes. The SC017/SC019 dependency remains the conditional
+computational observation qualified in `sc017-sc019-adoption.md`,
+not an independently proved historical date. The earlier accounts below
+remain historical, including their two-clause rewrite-retention claim.
+
 ## 2026 adjudication supersession
 
 The "earlier boundary at SC016" recorded below was measured against the

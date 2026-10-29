@@ -152,7 +152,8 @@ class RustInputAdoptionTests(unittest.TestCase):
         self.assertIn("not CAPR's adopted explanation", lowering)
         self.assertNotIn("the pattern is gradient/probabilistic", lowering)
         census = read_tsv(BASE / "rule_coverage_census.tsv")
-        for identifier, count in (("SC017", "39"), ("SC019", "28"), ("SC020", "114")):
+        # The independent rainbow adoption adds one live SC017 application.
+        for identifier, count in (("SC017", "40"), ("SC019", "28"), ("SC020", "114")):
             row = next(row for row in census if row["sc_id"] == identifier)
             self.assertEqual(row["corpus_firing_count"], count)
         ledger = known.load_ledger(ROOT / "Germanic/data/oe_known_problems.tsv")

@@ -1,5 +1,14 @@
 # SC017–SC019: qualified chronology adoption and publication
 
+## Scoped subsequent adoption
+
+`rainbow-2148-adoption.md` subsequently extends SC017 to subordinate
+root *ù > ò*, retaining its grave. It supersedes only this memo's
+retention of the two-clause rewrite. The nasal-vowel repair, historical
+stage/scope/confidence and qualified SC017-before-SC019 preference
+remain current; all measurements below retain their original scope.
+SC019 is unchanged.
+
 ## Identity
 
 - SC017 `PNWGmcULowering`; SC019 `PNWGmcFinalLongORaising`.

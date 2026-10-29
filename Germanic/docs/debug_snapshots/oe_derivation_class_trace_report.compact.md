@@ -4223,7 +4223,7 @@ English Proto Input: *régnabùgô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *régnbùgô<br>OE Strip Secondary Stress: *régnbugô<br>OE Velar Palatalization: *réʝnbugô<br>OE Unstressed Long Vowel Shortening: *réʝnbuga<br>OE Med Unstressed U Lowering: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *régnabògô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *régnbògô<br>OE Strip Secondary Stress: *régnbogô<br>OE Velar Palatalization: *réʝnbogô<br>OE Unstressed Long Vowel Shortening: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
 
 
 

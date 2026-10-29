@@ -2,12 +2,12 @@
 
 - Total OE rows with real counterpart: 389
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 163
-- Required rows with published SOURCE: 21
+- Rows requiring lexeme report: 164
+- Required rows with published SOURCE: 22
 - Required rows with no published SOURCE: 142
-- Rows selected independently for philological discussion: 11
+- Rows selected independently for philological discussion: 12
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 148
+- Required rows with source material available but no manifest-backed production report: 149
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 228
@@ -24,7 +24,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 29 | 29 | 4 | 25 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 311 | 85 | 0 | 81 | 4 |
+| regular | 311 | 86 | 0 | 82 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -36,6 +36,7 @@
 | 1941 | beaver | befer | regular | no | certified_editorial_source | - | research_memos/1941-beaver-befer.md | philological=beaver-formation-direction |
 | 2013 | fire | fȳre | known_unmodelled | yes | certified_editorial_source | pilot | model_entries/2013-fire-fȳre.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report, philological=fire-input-and-genealogy |
 | 2085 | knee | cneowe | late_analogy | yes | certified_editorial_source | - | model_entries/2085-knee-cneowe.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=knee-ending |
+| 2148 | rainbow | reġnboga | regular | no | certified_editorial_source | - | model_entries/2148-rainbow-reġnboga.model.md | philological=rainbow-early-root-lowering |
 | 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
 | 2224 | straw | strēaw | late_analogy | yes | certified_editorial_source | - | model_entries/2224-straw-strēaw.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=straw-endingless-and-levelling |
 | 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
@@ -139,6 +140,7 @@
 | 2140 | night | niht | late_analogy | yes | source_material | - | archive/dev_notes_slices/2140-night-niht.md, model_entries/2140-night-niht.model.md, model_entries/2140-night-niht.source_ledger.md, research_memos/2140-night-niht.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2141 | nightmare | mare | regular | yes | source_material | - | archive/dev_notes_slices/2141-nightmare-mare.md, archive/packets/2141-nightmare-mare.md, model_entries/2141-nightmare-mare.model.md, model_entries/2141-nightmare-mare.source_ledger.md, research_memos/2141-nightmare-mare.md | NOTE |
 | 2143 | nose | nosu | early_analogy | no | source_material | - | archive/dev_notes_slices/2143-nose-nosu.md, archive/packets/2143-nose-nosu.md, model_entries/2143-nose-nosu.model.md, model_entries/2143-nose-nosu.source_ledger.md, research_memos/2143-nose-nosu.md | DERIVATION_CLASS=early_analogy |
+| 2148 | rainbow | reġnboga | regular | no | certified_editorial_source | - | model_entries/2148-rainbow-reġnboga.model.md | philological=rainbow-early-root-lowering |
 | 2152 | rest | ræste | late_analogy | yes | source_material | - | archive/dev_notes_slices/2152-rest-ræste.md, archive/packets/2152-rest-ræste.md, model_entries/2152-rest-ræste.model.md, model_entries/2152-rest-ræste.source_ledger.md, research_memos/2152-rest-ræste.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2155 | coat | rocc | regular | yes | source_material | - | archive/dev_notes_slices/2155-coat-rocc.md, archive/packets/2155-coat-rocc.md, model_entries/2155-coat-rocc.model.md, model_entries/2155-coat-rocc.source_ledger.md, research_memos/2155-coat-rocc.md | NOTE |
 | 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
@@ -246,7 +248,7 @@
 | 1956 | bore | borian | regular | no | source_material | - | archive/dev_notes_slices/1956-bore-borian.md | none |
 | 1957 | bosom | bōsm | regular | no | source_material | - | archive/dev_notes_slices/1957-bosom-bōsm.md | none |
 | 1960 | bough | bōg | regular | no | source_material | - | archive/dev_notes_slices/1960-bough-bōg.md | none |
-| 1963 | bow | boga | regular | no | source_material | - | archive/dev_notes_slices/1963-bow-boga.md | none |
+| 1963 | bow | boga | regular | no | source_material | - | archive/dev_notes_slices/1963-bow-boga.md, model_entries/2148-rainbow-reġnboga.model.md, model_entries/2148-rainbow-reġnboga.source_ledger.md | none |
 | 1964 | bower | būr | regular | no | source_material | - | archive/dev_notes_slices/1964-bower-būr.md | none |
 | 1966 | bread | brēad | regular | no | source_material | - | archive/dev_notes_slices/1966-bread-brēad.md | none |
 | 1967 | break | brecan | regular | no | source_material | - | archive/dev_notes_slices/1967-break-brecan.md | none |
@@ -359,7 +361,7 @@
 | 2145 | oven | ofn | regular | no | source_material | - | archive/dev_notes_slices/2145-oven-ofn.md | none |
 | 2146 | ox | oxa | regular | no | source_material | - | archive/dev_notes_slices/2146-ox-oxa.md | none |
 | 2147 | rain | reġn | regular | no | source_material | - | archive/dev_notes_slices/2147-rain-reġn.md | none |
-| 2148 | rainbow | reġnboga | regular | no | source_material | - | archive/dev_notes_slices/2148-rainbow-reġnboga.md | none |
+| 2148 | rainbow | reġnboga | regular | no | certified_editorial_source | - | model_entries/2148-rainbow-reġnboga.model.md | philological=rainbow-early-root-lowering |
 | 2149 | raven | hræfn | regular | no | source_material | - | archive/dev_notes_slices/2149-raven-hræfn.md | none |
 | 2150 | read | rǣdan | regular | no | source_material | - | archive/dev_notes_slices/2150-read-rǣdan.md | none |
 | 2153 | ride | rīdan | regular | no | source_material | - | archive/dev_notes_slices/2153-ride-rīdan.md | none |

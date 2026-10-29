@@ -52,6 +52,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
     assert {name for name in old
             if old[name].definition_raw != current[name].definition_raw} == {
                 "pgrmSimpleWord", "pgrmCompoundSecond",
+                # Independently pinned by test_rainbow_2148_adoption.py.
+                "PNWGmcULowering",
             }
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         assert current[name].definition_raw.replace(

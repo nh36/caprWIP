@@ -20,6 +20,16 @@ unstressed *z*, not an unconditional deletion of any final *z*
 
 ## 2. Lowering domain and the nasal vowel
 
+The subsequent rainbow adoption extends SC017 to subordinate root
+*ù > ò*, without changing its placement or plain/acute clauses.
+Ordinary *boga* has the same early vowel history (Colman2011
+pp.95–96; RingeTaylor2014 pp.27–29). Applying it to reconstructed
+*régna-bùgô* is CAPR inference. The retained grave feeds linking
+syncope; rainbow's already lowered vowel is not evidence for late
+SC040. The principal source/qualification account is the SC017 reader
+and `audits/rainbow-2148-adoption.md`. No SC019 chronology claim is
+strengthened by this extension.
+
 Stressed *u* lowers before a following non-high vowel unless blocked
 in the relevant nasal or intervening-j environments. Initial *j* is
 not the intervener that blocks yoke [@Campbell1959, p. 43, §115;

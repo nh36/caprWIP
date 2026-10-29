@@ -81,10 +81,10 @@ references, the approved sequence and downstream propagation.
 
 ## Distinct supported presentations
 
-The default class-manifest book consumes the 167 mature models, including
-88 regular entries, preserving their complete arguments and all seven derivation
+The default class-manifest book consumes the 168 mature models, including
+90 regular entries, preserving their complete arguments and all seven derivation
 classes. The complete 389-row compact derivation report has a separate selective
-commentary insertion route, currently 21 certified narratives with explicit
+commentary insertion route, currently 22 certified narratives with explicit
 outstanding obligations. The current audit covers 395 identities including
 six research-only rows; the original reconstruction survey's 393-row scope
 remains historical.

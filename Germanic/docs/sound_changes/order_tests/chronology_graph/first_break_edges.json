@@ -44,7 +44,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC017-nwgmc-u-lowering.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Lowering feeds the later yoke spelling; reciprocal SC019 displacements are conditional computational observations. Lowering before final oral raising is provisionally preferred on comparative explanatory economy, not established by output agreement."
+      "short_summary": "Lowering feeds the later yoke spelling; reciprocal SC019 displacements remain conditional computational observations. Rainbow now lowers under subordinate root stress, retaining the grave for SC037; it no longer dates grave loss before SC040. No executable order changes."
     },
     {
       "change_id": "SC018",
@@ -244,7 +244,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC037-oe-compound-linking-syncope.md",
       "card_type": "runner_limited_or_technical",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Earlier side has no ordinary chronology break before bundled PWGmcChanges; later computational break crosses technical-marker SC038 and is technical/scaffolding."
+      "short_summary": "Earlier side has no ordinary chronology break before bundled PWGmcChanges; later dependency crosses technical SC038. Early SC017 now supplies rainbow's grave-marked o, still read by syncope; no implication that grave loss must precede SC040."
     },
     {
       "change_id": "SC039",
@@ -1450,7 +1450,7 @@
       "strength": "technical_marker",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Earlier side has no ordinary chronology break before bundled PWGmcChanges; later computational break crosses technical-marker SC038 and is technical/scaffolding."
+      "notes": "The quoted failure is historical measurement. Current SC017 supplies *régna-bògô; SC037 still needs its grave before SC038. Annotation lifetime does not establish a universal deaccentuation date or rainbow evidence for SC038 before SC040."
     },
     {
       "source_change_id": "SC039",

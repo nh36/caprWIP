@@ -94,6 +94,18 @@ below, including “strongest evidence”, confidence A and historical
 first-break claims, are superseded by this section and the adjudication.
 SC035 remains closed and unchanged; SC037 remains a separate future case.
 
+## Current scoped rainbow clarification
+
+SC017 now lowers the subordinate second root early:
+*régna-bùgô > *régna-bògô*. SC037 still reads its grave and deletes
+the linking vowel, before the unchanged SC038 removes that annotation.
+Rainbow therefore no longer establishes grave loss before late SC040.
+World still requires deaccentuation before weak SC036 raising; soul's
+proxy and all four positions remain untouched. This is a scoped
+clarification under `audits/rainbow-2148-adoption.md`, not a completed
+general SC037 adjudication. The reader's full explanation belongs to
+SC017, with concise SC036/037 cross-references.
+
 ## Historical research record — superseded SC035 and SC036 assessments
 
 All numbered sections in this partition record earlier checkpoints.

@@ -2411,17 +2411,18 @@ define EnglishStarNonHighVowel [
 # FIX 2026-03-09: Block if *j appears anywhere between *u and non-high vowel.
 # EnglishStarConsonantNoJ defined earlier.
 # FIX 2026-03-20: Restrict to STRESSED vowels only (Schuhmacher consultation).
-# In PGmc, stress is on the initial syllable. We enforce this by requiring that
-# no vowel precedes the *u being lowered (i.e., *u must be in the first syllable).
-# This fixes *widuwōn → widuwe (not ×widowe): the second *u is unstressed and
-# should not lower.
-define PNWGmcULowering Ctx([
+# The plain/acute clauses retain the first-nucleus restriction, protecting
+# unstressed medial *u in *widuwōn. Inherited subordinate root stress also
+# licenses lowering; its grave survives for compound linking syncope.
+define PNWGmcULowering [Ctx([
     [
     {*u} -> {*o} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel,
     # Stressed variant (stress preserved):
     {*ú} -> {*ó} || .#. EnglishStarConsonant* _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
 ]
-]);
+]) .o. Ctx([
+    {*ù} -> {*ò} || _ [EnglishStarConsonantNoJ - EnglishStarNasal] EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+])];
 
 # SC015: selected consonant-conditioned account (Hill 2017, pp. 153-158).
 # Preconsonantal/final z approximates tautosyllabicity; *twizna- remains

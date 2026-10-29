@@ -2,8 +2,9 @@
 
 ## Identification and law
 
-`PNWGmcULowering` lowers the stressed first nucleus *u/ú* to *o/ó*
-before a following non-high vowel, with its declared nasal/j exclusions.
+`PNWGmcULowering` lowers first-nucleus *u/ú* to *o/ó* and inherited
+subordinate-stressed *ù* to *ò* before a following non-high vowel,
+with its declared nasal/j exclusions.
 The late orthographic SC016 is not its phonological feeder.
 Campbell1959 p.43 §115 and Fulk2018 p.56 establish the familiar
 lowering and regular yoke/gold/participle examples. RingeTaylor2014
@@ -23,8 +24,31 @@ general input/long/back/vocalic/non-high class repairs admit the latter
 without changing any rewrite body or composition. Oral *ō*, nasal *ǭ*
 and trimoric *ô* remain distinct; SC019 raises only the first.
 The complete direct/transitive consumer census and 53 component checks
-are in the new technical receipt; all387 selected rows preserve every
-one of107 checkpoints.
+are in that historical technical receipt; at that adoption all387
+selected rows preserved every one of107 checkpoints.
+
+## Subordinate-root extension: rainbow adoption
+
+The separately authorized `audits/rainbow-2148-adoption.md` adds only
+grave *ù > ò*. Campbell1959 p.43 §§115–116, HoggGrammar2011
+pp.54–55 §§3.10–3.11, Fulk2018 pp.56–57 §4.3 and
+RingeTaylor2014 pp.27–29 support the general early lowering;
+Kroonen2013 p.82 identifies the bow n-stem. Colman2011 pp.95–96
+explicitly explains ordinary *boga* by that early change. Its extension
+to the reconstructed subordinate root in *régna-bùgô* is CAPR
+inference, not a compound derivation printed by those authors.
+
+Lowering preserves the grave for SC037, which gives *régnbògô*;
+ordinary SC038 then gives *régnbogô*. Rainbow consequently ceases
+to demonstrate deaccentuation before SC040. World's SC038-before-SC036
+dependency remains, and no law moves. Colman2011 pp.95–98's genuine
+*Buga/Boga* comparison, die transmission and attribution problems remain
+visible; neither name status nor optionality explains retained *u*.
+The existing first-consonant nasal guard and entire-interval j guard are
+preserved literally. Ordinary unstressed medial *u* remains protected.
+
+The fresh adoption census covers389 selected rows and the immutable380
+at all109 stages; it is separate from the historical387/107 receipt.
 
 ## Exceptions and paradigm history
 

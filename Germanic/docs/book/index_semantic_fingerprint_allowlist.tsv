@@ -1,4 +1,12 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+add	oe	reġnboga	target_form	lexical_heading	rainbow — OE reġnboga	Authorized mature rainbow publication; unchanged selected nominative, not corpus admission.
+add	pgmc	*régna-bùgô	source_protoform	lexical_protoform	rainbow — OE reġnboga	Unchanged selected compound in the new mature model; subordinate accent remains reconstructed.
+add	oe	reġnboga	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md	Selected target retained in the mature model.
+add	oe	boga	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md	Independent noun with source-backed early lowering, Colman2011 pp95-96.
+add	oe	Buga	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md	Retained-u personal-name comparison, not a name exception to sound law; Colman2011 pp95-98.
+add	oe	Boga	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md	Attested name spelling with o; coin/die attribution remains qualified.
+add	oe	rénboga	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md	Dictionary-mediated nominative singular, BosworthToller1898 regn-boga; no manuscript accent claim.
+add	oe	rénbogan	evidence_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md	Dictionary-mediated accusative singular in Genesis9:13, not a new selected target.
 add	pgmc	*wír-àldiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	SC036 authorized inherited-world input migration; compact junction remains pre-encoded.
 add	pgmc	wír-àldiz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md	SC036 authorized inherited-world input migration; exact unstarred tagged display.
 add	pgmc	*wír-àldiz	source_protoform	lexical_protoform	world — OE weorold	SC036 authorized inherited selected input; comparative PROTO remains unchanged.

@@ -468,6 +468,14 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     current = read_tsv((ROOT / path).read_text())
     assert all(row in current for row in previous)
     added = [row for row in current if row not in previous]
+    # The independent rainbow publication test pins these eight exact additions.
+    rainbow_refs = {
+        "rainbow — OE reġnboga",
+        "Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md",
+    }
+    rainbow = [row for row in added if row["source_ref"] in rainbow_refs]
+    assert len(rainbow) == 8
+    added = [row for row in added if row not in rainbow]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

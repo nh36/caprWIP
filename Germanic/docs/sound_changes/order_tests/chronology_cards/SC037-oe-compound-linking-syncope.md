@@ -1,5 +1,15 @@
 # SC037 OE Compound Linking Syncope — chronology evidence card
 
+## Current scoped rainbow clarification
+
+The separate SC017 adoption (`audits/rainbow-2148-adoption.md`) gives
+*régna-bògô* before SC037, which still reads its grave and gives
+*régnbògô*. SC038 follows as before. The earlier measured late-shift
+failure below remains an archived result, not a newly recomputed output
+of the extended cascade. The licensing dependency survives early
+lowering; rainbow does not require grave loss before SC040 or establish
+a universal date of compound deaccentuation.
+
 ## Position at experiment time
 - order_at_experiment_time: `37`
 - rule_name: `OECompoundLinkingSyncope`

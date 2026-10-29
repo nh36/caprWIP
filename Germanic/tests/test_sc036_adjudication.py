@@ -52,11 +52,15 @@ def test_only_sc036_and_its_explicit_branches_changed():
     # adds pgrmInputTailVowel and rewires the two gate defines below.
     gate_added = {"pgrmInputTailVowel"}
     gate_changed = {"pgrmSimpleWord", "pgrmCompoundSecond"}
+    # The separately authorized subordinate-root extension is pinned against
+    # its own before-adoption source by test_rainbow_2148_adoption.py.
+    rainbow_changed = {"PNWGmcULowering"}
     assert current.keys() - old.keys() == (
         {"OELHWeakRaising", "OESoulProxy"} | gate_added)
     assert old.keys() <= current.keys()
     assert {name for name in old if old[name] != current[name]} == (
-        {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed)
+        {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed |
+        rainbow_changed)
     assert current["OEInterStressRaising"] == (
         "[OELHWeakRaising.o.OESoulProxy]")
 

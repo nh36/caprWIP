@@ -1,5 +1,16 @@
 # SC036 OE Inter Stress Raising — chronology evidence card
 
+## Current authority and scoped rainbow clarification
+
+Use the authorized inherited-world section of `audits/sc036-adjudication.md`,
+not the older input and order measured below. World selects compact
+*wír-àldiz*; technical SC038 removes its earlier grave before the
+bounded weak-LH raising. Soul retains its distinct temporary proxy.
+The separate `rainbow-2148-adoption.md` changes neither path: rainbow
+now lowers under SC017 and cannot establish grave loss before SC040.
+SC037 still needs the grave through linking syncope. No accent-deletion
+operation or executable position changes.
+
 > **Updated by the SC004 correction.** SC004 (stressed `*ái > *ā`,
 > `EAFAiMonophthongization`) now executes at cascade position 25, between SC019
 > and SC036. First-break re-run (`sc004corr_first_break_sc036.tsv`) shows SC036's

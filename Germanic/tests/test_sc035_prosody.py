@@ -83,8 +83,10 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
             body = body[body.index("(") + 1:-1]
         if re.sub(r"\s+", "", body) != re.sub(r"\s+", "", previous[name]):
             changed.add(name)
+    # The separate rainbow test pins the exact subordinate-root extension.
     assert changed == {"OEPrefixAReduction", "OEUnstressedAEMerger",
-                       "OEPrefixIReduction", "OEInterStressRaising"}
+                       "OEPrefixIReduction", "OEInterStressRaising",
+                       "PNWGmcULowering"}
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 

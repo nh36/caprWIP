@@ -22,6 +22,13 @@ delaying
 [*wudowe*]{.pred} rather than the expected form. In the adopted sequence,
 *wuduwe* retains its medial vowel after accented \emph{*u}, whereas
 *weorold* 'world' undergoes lowering.
+
+*Reġnboga* 'rainbow' is not a further live example: its second-root
+\emph{o} arose while subordinate stress was still represented, under
+[SC017 PNWGmcULowering](#rule-PNWGmcULowering).
+Its linking-vowel history therefore does not require secondary-accent
+loss before the present late lowering.
+
 The reciprocal early-lowering experiment is no longer equivalent: the
 intervening vowel-resolution history restores medial \emph{*u}, so that
 movement does not now produce the same *widow* failure.

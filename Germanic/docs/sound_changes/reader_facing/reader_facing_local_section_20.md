@@ -1387,10 +1387,52 @@ ending with trimoric \emph{*ô}. The
 [rust lexical discussion](#rust-oe-rust) distinguishes the selected
 masculine citation, Orel's alternative and diagnostic paradigm constructions.
 
+#### The second root of rainbow
+
+The independent noun *boga* 'bow' supplies an important comparison.
+Its short \emph{o} continues inherited \emph{u} lowered before a
+following non-high vowel; Kroonen identifies the noun as a masculine
+n-stem derived from 'bend'. Colman explicitly gives this early explanation
+of *boga*, while Ringe and Taylor include its ancestor among the lowering
+examples [@Kroonen2013, p. 82; @Colman2011, pp. 95--96;
+@RingeTaylor2014, pp. 27--29].
+
+CAPR extends the same assimilation to the subordinate-stressed root in
+\emph{*régna-bùgô} 'rainbow'. The reconstruction retains primary
+accent on 'rain' and subordinate accent on 'bow'; these are reconstructed
+prosodic properties, not manuscript accent marks. The proposed development
+is \emph{*régna-bùgô > *régna-bògô > *régnbògô > *régnbogô},
+followed by palatalization of the first velar and the ordinary ending
+developments to *reġnboga* 'rainbow'. The early non-high ending still
+conditions lowering, and the resulting \emph{ò} retains the grave read by
+[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope).
+The ordinary removal of that annotation follows syncope.
+Neither early lowering nor syncope requires an optional rewrite.
+
+The general early change is source-backed; its extension to this precise
+compound and its reconstructed secondary accent is CAPR's phonological
+inference. The authorities do not print the complete accented derivation
+[@Campbell1959, p. 43, §§115--116;
+@HoggGrammar2011, pp. 54--55, §§3.10--3.11;
+@Fulk2018, pp. 56--57, §4.3]. Analogy from the independent noun is
+conceivable but is not independently demonstrated here. The significant
+consequence is chronological: *rainbow* already has \emph{o} before
+[SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
+It therefore cannot establish that secondary stress had to disappear
+before that late lowering.
+
+Colman's moneyer-name evidence remains a genuine qualification.
+*Buga* beside *Boga*, including coin spellings with both vowels, cannot
+be dismissed by exempting names from sound change. Transmission to
+die-cutters and the interpretation of individual spellings complicate
+phonological and dialect attribution. The ordinary noun's regular early
+history does not by itself resolve the name's retained vowel
+[@Colman2011, pp. 95--98].
+
 ### \CAPRRuleHeading{SC017. Lowering of \emph{*u} before following non-high vowels}{PNWGmcULowering} {#rule-PNWGmcULowering}
 
 ```foma
-define PNWGmcULowering Ctx([
+define PNWGmcULowering [Ctx([
     [
     {*u} -> {*o}
         || .#. EnglishStarConsonant* _
@@ -1401,11 +1443,18 @@ define PNWGmcULowering Ctx([
            [EnglishStarConsonantNoJ - EnglishStarNasal]
            EnglishStarConsonantNoJ* EnglishStarNonHighVowel
     ]
-]);
+]) .o. Ctx([
+    {*ù} -> {*ò}
+        || _
+           [EnglishStarConsonantNoJ - EnglishStarNasal]
+           EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+])];
 ```
 
-The implementation lowers the first nucleus through a consonantal interval
-without \emph{*j}; the immediately following consonant must not be nasal.
+The plain and acute clauses lower the first nucleus; the grave clause
+recognizes subordinate root stress without lowering ordinary unstressed
+medial \emph{u}. Each uses a consonantal interval without \emph{*j};
+the immediately following consonant must not be nasal.
 This literal guard is not a claim that every nasal anywhere in the interval
 blocks the historical process. Fulk distinguishes tautosyllabic and
 heterosyllabic nasal environments [@Fulk2018, p. 56].
@@ -3634,7 +3683,14 @@ following vowel in the superseded proxy, not independent historical order
 Compound members with weakened force often lose or reshape their linking vowels, and Campbell treats that broad pattern through reduced second elements, connecting vowels, and obscured compounds [@Campbell1959, pp. 148--149, §§356--357; @Campbell1959, p. 153, §367; @Campbell1959, p. 159, §§386--387].
 
 [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) captures this
-pattern in compounds such as *reġnboga* ‘rainbow’. The only boundary the lexical evidence supplies
+pattern in compounds such as *reġnboga* 'rainbow'. Its second-root vowel
+has already lowered under subordinate stress:
+\emph{*régna-bùgô > *régna-bògô}. The grave survives that early
+change and licenses deletion of the linking vowel, giving
+\emph{*régnbògô}; ordinary accent stripping then gives
+\emph{*régnbogô}. The full account and its reconstruction qualifications
+belong to [SC017 PNWGmcULowering](#rule-PNWGmcULowering), not to late
+unstressed lowering. The only boundary the lexical evidence supplies
 is the immediately following technical stress-stripping stage, which is not a
 sound change.
 
@@ -3647,7 +3703,14 @@ define OECompoundLinkingSyncope Ctx([
 ]);
 ```
 
-The *reġnboga* 'rainbow' test exposes a bookkeeping dependency rather than a historical sound-change boundary. After SC038 OEStripSecondaryStress, PGmc [régna-bùgô]{.recon} ‘rainbow’ yields [*reġnefoga*]{.pred} rather than expected OE *reġnboga* ‘rainbow’, because the technical stage has erased the stress information that licenses syncope. The handbooks instead place weakened compound junctures with the behavior described under [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising).
+The *reġnboga* test exposes an annotation dependency rather than an
+independently dated historical sound-change boundary. If the grave is
+removed before syncope, its licensing information is lost. Early lowering
+changes the vowel, not this dependency; the annotation's lifetime does not
+date a universal loss of compound secondary stress. The handbooks place
+weakened compound junctures with the behavior described under
+[SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising).
 
 ## Weak medial vocalism
 
@@ -3780,7 +3843,14 @@ The earlier grave survives until
 has read the relevant accent information; technical grave removal then
 precedes weak raising. This represents annotation lifetime and a compatible
 relative history, not proof that every linking syncope preceded every
-compound's deaccentuation. The existing back-mutation implementation
+compound's deaccentuation. The chronology of *world*
+is independent of the early second-root lowering in *reġnboga* 'rainbow'.
+That word still requires the grave through linking syncope, but its
+\emph{o} already arose under
+[SC017 PNWGmcULowering](#rule-PNWGmcULowering); it does not date grave
+loss before late unstressed lowering. *World* retains the distinct
+requirement that the weak vowel lack independent prominence before
+raising. The back-mutation implementation
 also admits lower back-vowel triggers through shared contexts; the selected
 high-\emph{u} history succeeds under the narrower intended
 \emph{u}-triggered interpretation as well. Neither that separate defect
@@ -5552,6 +5622,13 @@ delaying
 [*wudowe*]{.pred} rather than the expected form. In the adopted sequence,
 *wuduwe* retains its medial vowel after accented \emph{*u}, whereas
 *weorold* 'world' undergoes lowering.
+
+*Reġnboga* 'rainbow' is not a further live example: its second-root
+\emph{o} arose while subordinate stress was still represented, under
+[SC017 PNWGmcULowering](#rule-PNWGmcULowering).
+Its linking-vowel history therefore does not require secondary-accent
+loss before the present late lowering.
+
 The reciprocal early-lowering experiment is no longer equivalent: the
 intervening vowel-resolution history restores medial \emph{*u}, so that
 movement does not now produce the same *widow* failure.
@@ -5907,7 +5984,7 @@ of free variation" [@Barrack1975, p. 116], while grading the evidence
 for 459.3 as meagre [@Barrack1975, p. 118]. These are descriptions of
 the distribution of forms, not an explanation by optional sound change.
 Campbell records byforms such as *forst* beside
-*frost*, *gærs* beside *græs*, *cerse* beside *cresse*, and *rinnan*
+*frost*, *gærs* 'grass' beside *græs*, *cerse* beside *cresse*, and *rinnan*
 beside *iernan*, *eornan* [@Campbell1959, p. 184, §459].
 Regular sound change remains exceptionless within its phonological,
 chronological and dialectal domain. Distinct dialect histories, transmission

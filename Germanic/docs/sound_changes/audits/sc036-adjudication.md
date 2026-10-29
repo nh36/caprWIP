@@ -1,5 +1,15 @@
 # SC036: weak medial vocalism, not a demonstrated unified raising law
 
+## Scoped subsequent rainbow clarification
+
+The separate SC017 adoption in `rainbow-2148-adoption.md` supplies
+rainbow's second-root *o* early, preserving its inherited grave for
+SC037. Rainbow no longer demonstrates grave loss before late SC040.
+World still requires SC038 before weak SC036 raising; the authorized
+world input, its complete path, soul's temporary proxy, and the
+SC036/037/038/040 order are unchanged. This qualification does not
+reopen the historical measurements or either frozen receipt below.
+
 ## Current authorized world migration (27 October 2026)
 
 This section supersedes the production-retention verdict below. The remainder

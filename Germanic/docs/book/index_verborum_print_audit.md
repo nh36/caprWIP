@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2460
-- Internal production unique forms: 1143
-- Printed main occurrences: 2371
-- Printed main unique forms: 1133
+- Internal production occurrences: 2468
+- Internal production unique forms: 1150
+- Printed main occurrences: 2379
+- Printed main unique forms: 1140
 - Printed excluded occurrences: 89
 - Printed excluded unique forms: 68
 
@@ -15,8 +15,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1234 | 484 |
-| Proto-Germanic | 989 | 547 |
+| Old English | 1241 | 490 |
+| Proto-Germanic | 990 | 548 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -36,11 +36,11 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 408 |
-| source_protoform | 358 |
+| target_form | 410 |
+| source_protoform | 359 |
 | selected_input | 555 |
-| comparison_form | 832 |
-| evidence_form | 218 |
+| comparison_form | 835 |
+| evidence_form | 220 |
 
 ## Internal-only rows by reason
 
@@ -54,18 +54,18 @@
 ## Reader-facing example rows by role
 
 - `diagnostic_comparator`: 238
-- `example_input`: 70
-- `expected_output`: 72
+- `example_input`: 69
+- `expected_output`: 71
 - `model_stage`: 109
-- `notation_or_segment`: 832
-- `yielded_output`: 64
+- `notation_or_segment`: 838
+- `yielded_output`: 63
 
-- Reader-facing include_in_example_index=yes: 553
-- Reader-facing include_in_example_index=no: 832
+- Reader-facing include_in_example_index=yes: 550
+- Reader-facing include_in_example_index=no: 838
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1150
+- Unique printed entries: 1157
 - Print anomaly rows: 51
 - Hard print anomalies: 0
 
@@ -155,10 +155,10 @@
 ### Included rows by role
 
 - `diagnostic_comparator`: 238
-- `example_input`: 70
-- `expected_output`: 72
+- `example_input`: 69
+- `expected_output`: 71
 - `model_stage`: 109
-- `yielded_output`: 64
+- `yielded_output`: 63
 
 ### Included rows by inferred language
 
@@ -171,18 +171,18 @@
 - `ohg`: 9
 - `on`: 11
 - `os`: 3
-- `pgmc`: 162
+- `pgmc`: 161
 - `pie`: 5
 - `pnwgmc`: 2
-- `preoe`: 104
+- `preoe`: 102
 - `pwgmc`: 34
 
 ### Included rows by main-index overlap
 
-- `no`: 383
+- `no`: 380
 - `yes`: 170
 
-- Included whole-form rows with asterisks: 402
+- Included whole-form rows with asterisks: 399
 - Included whole-form rows without asterisks: 151
 - Included rows inferred_language=oe with leading asterisk: 24
 - Included rows inferred_language=pgmc but OE-output-like form shape: 32

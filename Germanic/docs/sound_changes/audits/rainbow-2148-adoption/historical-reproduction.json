@@ -1,0 +1,22 @@
+{
+  "research_commit": "29ec734406d2bf1714d37a41980d453c7a4872aa",
+  "research_base": "3cb109c981c8868bf383172e2be06cdc88c00fb0",
+  "incorporation_commit": "164b071c",
+  "isolation": "Detached research-commit checkout and owned unmounted capr-backend container; original guarded reproduce.py, with no guard or receipt edits.",
+  "results": {
+    "frozen_sha256": "1f35533862d3d54f5e2c05ea7cc5bf5e344ca877ccca1decb85dd746e6bdd83e",
+    "reproduced_sha256": "4a8a76e2535cfb1dc7be1c257dc7ba9db9990098606cc424bf1c8b604c7ece07",
+    "all_non_protection_fields_equal": true
+  },
+  "functionality": {
+    "frozen_sha256": "8dff0a5a71302c059dd55f07e83d99374be8fdd3a48647f58e3148437542cb42",
+    "reproduced_sha256": "e8495d8956d30a255f09ab853586b712132fe77a47b1da5afe557290fe57d30b",
+    "all_non_protection_fields_equal": true
+  },
+  "protection_maps": {
+    "equal_before_after_in_each_original_and_reproduced_run": true,
+    "equal_between_original_and_reproduction": false,
+    "explanation": "Protected canonical snapshots contain different surrounding runtime/document bytes. Both runs preserve their own snapshot exactly; every scientific result, definition, population, trace, parser and functionality diagnostic agrees."
+  },
+  "cleanup": "Owned historical container removed by trap; detached historical worktree removed after verification. Reproduced full receipts retained in local session artifacts, outside the frozen dossier."
+}

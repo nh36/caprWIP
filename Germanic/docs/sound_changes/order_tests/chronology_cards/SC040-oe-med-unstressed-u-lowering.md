@@ -1,5 +1,15 @@
 # SC040 OE Med Unstressed U Lowering — chronology evidence card
 
+## Current scoped rainbow clarification
+
+Rainbow is no longer a live late-lowering witness: SC017 supplies its
+second-root *o* while retaining the grave for SC037. It cannot date
+grave loss before SC040. World remains a live witness, and the late
+rule/order are unchanged (`audits/rainbow-2148-adoption.md`).
+The older displacement measurements below retain their original scope;
+the current reader already qualifies the obsolete youth/shortening
+boundary and the nonreciprocal widow result.
+
 ## Position at experiment time
 - order_at_experiment_time: `40`
 - rule_name: `OEMedUnstressedULowering`

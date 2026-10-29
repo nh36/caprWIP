@@ -36,7 +36,7 @@ of free variation" [@Barrack1975, p. 116], while grading the evidence
 for 459.3 as meagre [@Barrack1975, p. 118]. These are descriptions of
 the distribution of forms, not an explanation by optional sound change.
 Campbell records byforms such as *forst* beside
-*frost*, *gærs* beside *græs*, *cerse* beside *cresse*, and *rinnan*
+*frost*, *gærs* 'grass' beside *græs*, *cerse* beside *cresse*, and *rinnan*
 beside *iernan*, *eornan* [@Campbell1959, p. 184, §459].
 Regular sound change remains exceptionless within its phonological,
 chronological and dialectal domain. Distinct dialect histories, transmission

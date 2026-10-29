@@ -55,6 +55,18 @@ for any sound-change history/chronology/staging/scope/FST-semantics work.
   `Germanic/docs/sound_changes/registry/settled_verdicts.md`.
 - Navigation and the SOURCE/GENERATED/ARCHIVE map: `Germanic/docs/README.md`.
 
+## Rainbow adoption
+
+The current SC017 memo is `sound_changes/audits/rainbow-2148-adoption.md`.
+Early lowering now preserves subordinate stress in `*régna-bùgô >
+*régna-bògô`; linking syncope and ordinary grave removal follow unchanged.
+Rainbow no longer establishes secondary-stress loss before late medial
+u-lowering. World and soul retain their adopted histories. Early/late
+selected firing counts are 40/10 rather than 39/11, but all 389 finals
+and all immutable legacy380 finals are conserved. No corpus, ordering,
+stage or baseline migration accompanies this adoption. The mature volume
+now has 168 entries, including 90 regular entries.
+
 ## Frozen baselines (must not change silently)
 
 Recorded in

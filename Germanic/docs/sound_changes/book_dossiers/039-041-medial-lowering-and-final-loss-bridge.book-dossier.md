@@ -12,6 +12,14 @@ The substantive connection remains: SC039 and SC040 interact through
 *widow*, whereas SC041 is a broader final-loss development. Related
 conditioning does not make the three entries adjacent.
 
+The scoped SC017 rainbow adoption removes *reġnboga* from SC040's
+live applications: its second-root vowel is already *o*. It still
+requires grave information through SC037, but no longer dates loss of
+that prominence before late lowering. World's adopted weak-u path
+remains a genuine SC040 witness. Neither the late rule nor its
+conditioning/order changes; *-cund* and later stress computation remain
+separate research (`audits/rainbow-2148-adoption.md`).
+
 ## 2. Identities and conditioning
 
 - SC039 `OEWICombinativeUUmlaut` models the narrow w-conditioned

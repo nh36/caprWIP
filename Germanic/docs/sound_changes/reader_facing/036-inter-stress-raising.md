@@ -129,7 +129,14 @@ The earlier grave survives until
 has read the relevant accent information; technical grave removal then
 precedes weak raising. This represents annotation lifetime and a compatible
 relative history, not proof that every linking syncope preceded every
-compound's deaccentuation. The existing back-mutation implementation
+compound's deaccentuation. The chronology of *world*
+is independent of the early second-root lowering in *reġnboga* 'rainbow'.
+That word still requires the grave through linking syncope, but its
+\emph{o} already arose under
+[SC017 PNWGmcULowering](#rule-PNWGmcULowering); it does not date grave
+loss before late unstressed lowering. *World* retains the distinct
+requirement that the weak vowel lack independent prominence before
+raising. The back-mutation implementation
 also admits lower back-vowel triggers through shared contexts; the selected
 high-\emph{u} history succeeds under the narrower intended
 \emph{u}-triggered interpretation as well. Neither that separate defect

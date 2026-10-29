@@ -43,10 +43,52 @@ ending with trimoric \emph{*ô}. The
 [rust lexical discussion](#rust-oe-rust) distinguishes the selected
 masculine citation, Orel's alternative and diagnostic paradigm constructions.
 
+### The second root of rainbow
+
+The independent noun *boga* 'bow' supplies an important comparison.
+Its short \emph{o} continues inherited \emph{u} lowered before a
+following non-high vowel; Kroonen identifies the noun as a masculine
+n-stem derived from 'bend'. Colman explicitly gives this early explanation
+of *boga*, while Ringe and Taylor include its ancestor among the lowering
+examples [@Kroonen2013, p. 82; @Colman2011, pp. 95--96;
+@RingeTaylor2014, pp. 27--29].
+
+CAPR extends the same assimilation to the subordinate-stressed root in
+\emph{*régna-bùgô} 'rainbow'. The reconstruction retains primary
+accent on 'rain' and subordinate accent on 'bow'; these are reconstructed
+prosodic properties, not manuscript accent marks. The proposed development
+is \emph{*régna-bùgô > *régna-bògô > *régnbògô > *régnbogô},
+followed by palatalization of the first velar and the ordinary ending
+developments to *reġnboga* 'rainbow'. The early non-high ending still
+conditions lowering, and the resulting \emph{ò} retains the grave read by
+[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope).
+The ordinary removal of that annotation follows syncope.
+Neither early lowering nor syncope requires an optional rewrite.
+
+The general early change is source-backed; its extension to this precise
+compound and its reconstructed secondary accent is CAPR's phonological
+inference. The authorities do not print the complete accented derivation
+[@Campbell1959, p. 43, §§115--116;
+@HoggGrammar2011, pp. 54--55, §§3.10--3.11;
+@Fulk2018, pp. 56--57, §4.3]. Analogy from the independent noun is
+conceivable but is not independently demonstrated here. The significant
+consequence is chronological: *rainbow* already has \emph{o} before
+[SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
+It therefore cannot establish that secondary stress had to disappear
+before that late lowering.
+
+Colman's moneyer-name evidence remains a genuine qualification.
+*Buga* beside *Boga*, including coin spellings with both vowels, cannot
+be dismissed by exempting names from sound change. Transmission to
+die-cutters and the interpretation of individual spellings complicate
+phonological and dialect attribution. The ordinary noun's regular early
+history does not by itself resolve the name's retained vowel
+[@Colman2011, pp. 95--98].
+
 ## SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering}
 
 ```foma
-define PNWGmcULowering Ctx([
+define PNWGmcULowering [Ctx([
     [
     {*u} -> {*o}
         || .#. EnglishStarConsonant* _
@@ -57,11 +99,18 @@ define PNWGmcULowering Ctx([
            [EnglishStarConsonantNoJ - EnglishStarNasal]
            EnglishStarConsonantNoJ* EnglishStarNonHighVowel
     ]
-]);
+]) .o. Ctx([
+    {*ù} -> {*ò}
+        || _
+           [EnglishStarConsonantNoJ - EnglishStarNasal]
+           EnglishStarConsonantNoJ* EnglishStarNonHighVowel
+])];
 ```
 
-The implementation lowers the first nucleus through a consonantal interval
-without \emph{*j}; the immediately following consonant must not be nasal.
+The plain and acute clauses lower the first nucleus; the grave clause
+recognizes subordinate root stress without lowering ordinary unstressed
+medial \emph{u}. Each uses a consonantal interval without \emph{*j};
+the immediately following consonant must not be nasal.
 This literal guard is not a claim that every nasal anywhere in the interval
 blocks the historical process. Fulk distinguishes tautosyllabic and
 heterosyllabic nasal environments [@Fulk2018, p. 56].

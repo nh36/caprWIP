@@ -1,18 +1,18 @@
 === PROVENANCE ===
-germanic.txt sha256: 3725fca7dc8e377657a9d2987d1ced9d88c1e55d8aa180b7a8e56a36e327dd27
+germanic.txt sha256: eaefd1f8bc752beba09578fcca34bbfc9e61a8305bee1ad012dfb2340f2967c2
 old_english_sandbox.txt sha256: 8ccfe8b4e2fbc2a1406e1353678ce26680a75026f8514f4d2e2720f37f20349a
 germanic-aligned-final.tsv sha256: 90fcdf861682549f3e297e3868d7306ad9c600bf5395c728d1323f8d0eca12cc
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
 oe_input_context.py sha256: d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67
 oe_full_trace_report.py sha256: 8a14c2d7dbd821616f1351c9faa441a2f10a84141d89de8e2c8f52463ded4bea
-old_english.bin sha256 (informational): c3be68270130d1c37015c00ebce6ee81f4c8bef6d6196752c6a16eeaeeefa15f
+old_english.bin sha256 (informational): 784cf16b04876b99af90cb58fcddd22c416413f99679ed8f270214fe2b515449
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-10-27T14:13:30+0000
+build_manifest_built_at: 2026-10-28T19:35:50+0000
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
 build_manifest_expected_bins: 110
 manifest:germanic-aligned-final.tsv sha256: 90fcdf861682549f3e297e3868d7306ad9c600bf5395c728d1323f8d0eca12cc
-manifest:germanic.txt sha256: 3725fca7dc8e377657a9d2987d1ced9d88c1e55d8aa180b7a8e56a36e327dd27
+manifest:germanic.txt sha256: eaefd1f8bc752beba09578fcca34bbfc9e61a8305bee1ad012dfb2340f2967c2
 manifest:old_english_sandbox.txt sha256: 8ccfe8b4e2fbc2a1406e1353678ce26680a75026f8514f4d2e2720f37f20349a
 
 === BUCKET: exact_match (381) ===
@@ -27296,82 +27296,82 @@ EAFLThVoicing [no-change]: *r*é*g*n*a*b*ù*g*ô
 PWGmcDentalHardening [no-change]: *r*é*g*n*a*b*ù*g*ô
 PWGmcEndinglessAw [no-change]: *r*é*g*n*a*b*ù*g*ô
 PNWGmcILowering [no-change]: *r*é*g*n*a*b*ù*g*ô
-PNWGmcULowering [no-change]: *r*é*g*n*a*b*ù*g*ô
-PNWGmcStressedMonosyllableORaising [no-change]: *r*é*g*n*a*b*ù*g*ô
-PNWGmcFinalLongORaising [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFFinalZDeletion [no-change]: *r*é*g*n*a*b*ù*g*ô
-PWGmcUnstressedWordFinalIApocope [no-change]: *r*é*g*n*a*b*ù*g*ô
-MonosyllabicFinalZLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
-PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFRhotacism [no-change]: *r*é*g*n*a*b*ù*g*ô
-PNWGmcMnDissimilation [no-change]: *r*é*g*n*a*b*ù*g*ô
-PNWGmcNStemNLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFNasalSpirantLengthening [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFNasalSpirantLoss [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFHiatusWInsertion [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFLongANasalRounding [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFNasalizedLowRounding [no-change]: *r*é*g*n*a*b*ù*g*ô
-EAFLongAFronting [no-change]: *r*é*g*n*a*b*ù*g*ô
-OEStressFootContext [no-change]: *r*é*g*n*a*b*ù*g*ô
+PNWGmcULowering: *r*é*g*n*a*b*ò*g*ô
+PNWGmcStressedMonosyllableORaising [no-change]: *r*é*g*n*a*b*ò*g*ô
+PNWGmcFinalLongORaising [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFFinalZDeletion [no-change]: *r*é*g*n*a*b*ò*g*ô
+PWGmcUnstressedWordFinalIApocope [no-change]: *r*é*g*n*a*b*ò*g*ô
+MonosyllabicFinalZLoss [no-change]: *r*é*g*n*a*b*ò*g*ô
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFRhotacism [no-change]: *r*é*g*n*a*b*ò*g*ô
+PNWGmcMnDissimilation [no-change]: *r*é*g*n*a*b*ò*g*ô
+PNWGmcNStemNLoss [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFNasalSpirantLengthening [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFNasalSpirantLoss [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFHiatusWInsertion [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFLongANasalRounding [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFNasalizedLowRounding [no-change]: *r*é*g*n*a*b*ò*g*ô
+EAFLongAFronting [no-change]: *r*é*g*n*a*b*ò*g*ô
+OEStressFootContext [no-change]: *r*é*g*n*a*b*ò*g*ô
 
 ## Section 3: Early Anglo-Frisian (North Sea Germanic)
 
-EAFAiMonophthongization [no-change]: *r*é*g*n*a*b*ù*g*ô
+EAFAiMonophthongization [no-change]: *r*é*g*n*a*b*ò*g*ô
 
 ## Section 4: Old English
 
-OEAwwjResolution [no-change]: *r*é*g*n*a*b*ù*g*ô
-OEAuBrightening [no-change]: *r*é*g*n*a*b*ù*g*ô
-OEEwLongDiphthong [no-change]: *r*é*g*n*a*b*ù*g*ô
-OEJWWSimplification [no-change]: *r*é*g*n*a*b*ù*g*ô
-OEJGlideIO [no-change]: *r*é*g*n*a*b*ù*g*ô
-OEDiphthongLeveling [no-change]: *r*é*g*n*a*b*ù*g*ô
-OEAwLongDiphthong [no-change]: *r*é*g*n*a*b*ù*g*ô
-OECompoundLinkingSyncope: *r*é*g*n*b*ù*g*ô
-OEStripSecondaryStress: *r*é*g*n*b*u*g*ô
-OEInterStressRaising [no-change]: *r*é*g*n*b*u*g*ô
-OEWICombinativeUUmlaut [no-change]: *r*é*g*n*b*u*g*ô
-PWGmcFinalBareALoss [no-change]: *r*é*g*n*b*u*g*ô
-PWGmcSurvivingBimoricOUnrounding [no-change]: *r*é*g*n*b*u*g*ô
-EAFBrighteningUnstressed [no-change]: *r*é*g*n*b*u*g*ô
-EAFBrightening [no-change]: *r*é*g*n*b*u*g*ô
-EAFBrighteningLongFinal [no-change]: *r*é*g*n*b*u*g*ô
-OEBreaking [no-change]: *r*é*g*n*b*u*g*ô
-OEVelarFricativePalatalization [no-change]: *r*é*g*n*b*u*g*ô
-OEARestoration [no-change]: *r*é*g*n*b*u*g*ô
-OEHeavySyllableNasalApocope [no-change]: *r*é*g*n*b*u*g*ô
-OESecondaryNasalization [no-change]: *r*é*g*n*b*u*g*ô
-PGmcBAllophony [no-change]: *r*é*g*n*b*u*g*ô
-SieversLawSyncope [no-change]: *r*é*g*n*b*u*g*ô
-OESkPalatalization [no-change]: *r*é*g*n*b*u*g*ô
-OEVelarPalatalization: *r*é*ʝ*n*b*u*g*ô
-OEPrefixAReduction [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEPostVelarWLoss [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEWLossBeforeI [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEWsPalatalDiphthongization [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEIUmlaut [no-change]: *r*é*ʝ*n*b*u*g*ô
-OELatePalatalDiphthong [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEJClusterCoalescence [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEBackMutation [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEWsPalatalUmlaut [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEWeakTailNasalLoss [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEWeightMarkers [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEHighVowelApocope [no-change]: *r*é*ʝ*n*b*u*g*ô
-NWGmcInStemNLoss [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEMedialSyncope [no-change]: *r*é*ʝ*n*b*u*g*ô
-OELAdjacentSyncope [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEDentalAssimilation [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEPreconsonantalDegemination [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEEarlyOShortening [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEUnstressedFrontingEarly [no-change]: *r*é*ʝ*n*b*u*g*ô
-OELateOShortening [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEMedUnstressedORaising [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEFinalUnstressedOLowering [no-change]: *r*é*ʝ*n*b*u*g*ô
-OEUnstressedLongVowelShortening: *r*é*ʝ*n*b*u*g*a
-OEUnstressedAEMerger [no-change]: *r*é*ʝ*n*b*u*g*a
-OEMedUnstressedILowering1 [no-change]: *r*é*ʝ*n*b*u*g*a
-OEMedUnstressedILowering [no-change]: *r*é*ʝ*n*b*u*g*a
-OEMedUnstressedULowering: *r*é*ʝ*n*b*o*g*a
+OEAwwjResolution [no-change]: *r*é*g*n*a*b*ò*g*ô
+OEAuBrightening [no-change]: *r*é*g*n*a*b*ò*g*ô
+OEEwLongDiphthong [no-change]: *r*é*g*n*a*b*ò*g*ô
+OEJWWSimplification [no-change]: *r*é*g*n*a*b*ò*g*ô
+OEJGlideIO [no-change]: *r*é*g*n*a*b*ò*g*ô
+OEDiphthongLeveling [no-change]: *r*é*g*n*a*b*ò*g*ô
+OEAwLongDiphthong [no-change]: *r*é*g*n*a*b*ò*g*ô
+OECompoundLinkingSyncope: *r*é*g*n*b*ò*g*ô
+OEStripSecondaryStress: *r*é*g*n*b*o*g*ô
+OEInterStressRaising [no-change]: *r*é*g*n*b*o*g*ô
+OEWICombinativeUUmlaut [no-change]: *r*é*g*n*b*o*g*ô
+PWGmcFinalBareALoss [no-change]: *r*é*g*n*b*o*g*ô
+PWGmcSurvivingBimoricOUnrounding [no-change]: *r*é*g*n*b*o*g*ô
+EAFBrighteningUnstressed [no-change]: *r*é*g*n*b*o*g*ô
+EAFBrightening [no-change]: *r*é*g*n*b*o*g*ô
+EAFBrighteningLongFinal [no-change]: *r*é*g*n*b*o*g*ô
+OEBreaking [no-change]: *r*é*g*n*b*o*g*ô
+OEVelarFricativePalatalization [no-change]: *r*é*g*n*b*o*g*ô
+OEARestoration [no-change]: *r*é*g*n*b*o*g*ô
+OEHeavySyllableNasalApocope [no-change]: *r*é*g*n*b*o*g*ô
+OESecondaryNasalization [no-change]: *r*é*g*n*b*o*g*ô
+PGmcBAllophony [no-change]: *r*é*g*n*b*o*g*ô
+SieversLawSyncope [no-change]: *r*é*g*n*b*o*g*ô
+OESkPalatalization [no-change]: *r*é*g*n*b*o*g*ô
+OEVelarPalatalization: *r*é*ʝ*n*b*o*g*ô
+OEPrefixAReduction [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEPostVelarWLoss [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEWLossBeforeI [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEWsPalatalDiphthongization [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEIUmlaut [no-change]: *r*é*ʝ*n*b*o*g*ô
+OELatePalatalDiphthong [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEJClusterCoalescence [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEBackMutation [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEWsPalatalUmlaut [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEWeakTailNasalLoss [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEWeightMarkers [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEHighVowelApocope [no-change]: *r*é*ʝ*n*b*o*g*ô
+NWGmcInStemNLoss [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEMedialSyncope [no-change]: *r*é*ʝ*n*b*o*g*ô
+OELAdjacentSyncope [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEDentalAssimilation [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEPreconsonantalDegemination [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEEarlyOShortening [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEUnstressedFrontingEarly [no-change]: *r*é*ʝ*n*b*o*g*ô
+OELateOShortening [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEMedUnstressedORaising [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEFinalUnstressedOLowering [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEUnstressedLongVowelShortening: *r*é*ʝ*n*b*o*g*a
+OEUnstressedAEMerger [no-change]: *r*é*ʝ*n*b*o*g*a
+OEMedUnstressedILowering1 [no-change]: *r*é*ʝ*n*b*o*g*a
+OEMedUnstressedILowering [no-change]: *r*é*ʝ*n*b*o*g*a
+OEMedUnstressedULowering [no-change]: *r*é*ʝ*n*b*o*g*a
 OEPrefixIReduction [no-change]: *r*é*ʝ*n*b*o*g*a
 OEWeakTailReduction [no-change]: *r*é*ʝ*n*b*o*g*a
 OEJLossAfterHeavy [no-change]: *r*é*ʝ*n*b*o*g*a
@@ -51154,8 +51154,8 @@ straw :: *stráwą
 PNWGmcILowering: 7
 learn :: *líznōjaną, meed :: *mízdai, nest :: *nístą, thistle :: *θístilas, world :: *wír-àldiz, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi
 
-PNWGmcULowering: 39
-board :: *búrdą, bore :: *búrōjaną, bottom :: *búttmaz, bow :: *búgô, corn :: *kúrną, crop :: *krúppaz, door :: *dúrą, foal :: *fúlô, folk :: *fúlką, fox :: *fúxsaz, frost :: *frústą, god :: *gúdą, gold :: *gúlθą, hoard :: *xúzdą, horn :: *xúrną, knob :: *knúbbô, lock :: *lúką, lock :: *lúkkaz, nose :: *núsō, oven :: *úfnaz, ox :: *úxsô, coat :: *rúkkaz, shovel :: *skúflō, sorrow :: *súrgō, spur :: *spúrô, stock :: *stúkkaz, stork :: *stúrkaz, storm :: *stúrmaz, thorn :: *θúrnaz, trough :: *trúgą, word :: *wúrdą, yoke :: *júką, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
+PNWGmcULowering: 40
+board :: *búrdą, bore :: *búrōjaną, bottom :: *búttmaz, bow :: *búgô, corn :: *kúrną, crop :: *krúppaz, door :: *dúrą, foal :: *fúlô, folk :: *fúlką, fox :: *fúxsaz, frost :: *frústą, god :: *gúdą, gold :: *gúlθą, hoard :: *xúzdą, horn :: *xúrną, knob :: *knúbbô, lock :: *lúką, lock :: *lúkkaz, nose :: *núsō, oven :: *úfnaz, ox :: *úxsô, rainbow :: *régna-bùgô, coat :: *rúkkaz, shovel :: *skúflō, sorrow :: *súrgō, spur :: *spúrô, stock :: *stúkkaz, stork :: *stúrkaz, storm :: *stúrmaz, thorn :: *θúrnaz, trough :: *trúgą, word :: *wúrdą, yoke :: *júką, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
 
 PNWGmcStressedMonosyllableORaising: 1
 both :: *bō
@@ -51353,8 +51353,8 @@ dill :: *déliz, fright :: *fúrxtīnaz, harvest :: *xárbistuz, rye :: *rúgiz,
 OEMedUnstressedILowering: 1
 shilling :: *skíllingaz
 
-OEMedUnstressedULowering: 11
-hawk :: *xábukaz, head :: *xáubudą, heaven :: *xébun, milk :: *mélukz, navel :: *nábulô, nine :: *nígun, rainbow :: *régna-bùgô, seven :: *sébun, soul :: *sáiwalō, ten :: *téxun, world :: *wír-àldiz
+OEMedUnstressedULowering: 10
+hawk :: *xábukaz, head :: *xáubudą, heaven :: *xébun, milk :: *mélukz, navel :: *nábulô, nine :: *nígun, seven :: *sébun, soul :: *sáiwalō, ten :: *téxun, world :: *wír-àldiz
 
 OEPrefixIReduction: 2
 begin :: *bigínnaną, believe :: *galáubijaną
