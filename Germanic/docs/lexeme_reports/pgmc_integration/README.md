@@ -65,9 +65,13 @@ suggestion. An adjudication that admits a lexical witness and commits to a
 mature article must record that commitment as an editorial case in the same
 assignment (this record was missing after the SC065 filth admission, which is
 why the article's absence passed validation). Once recorded, the control plane
-fails closed: `pgmc_lexical_integration.build()` rejects a missing article
-file and a selected article absent from the class assembly, and reports
-missing `.source_ledger.md` companions. Corpus membership alone still carries
+fails closed: `pgmc_lexical_integration.publication_gate()` (called by
+`build()`) rejects a missing article file, a selected article absent from the
+class assembly, an assembled model whose path is not exactly the approved
+`publication_source` (another model for the same stable ID does not discharge
+the obligation), and a missing `.source_ledger.md` companion. A missing ledger
+is a publication-completion failure, not a scientific one. Corpus membership
+alone still carries
 no publication obligation. `python3 Germanic/tools/adjudicate.py --status`
 prints the canonical read-only report across the three axes (scientific
 adjudication, publication completion, full validation) without regenerating

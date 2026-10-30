@@ -564,7 +564,8 @@ def status() -> int:
         print(f"  explicitly selected model publications ({len(selected_models)}): "
               + ", ".join(selected_models))
         if stats["publication_missing_ledgers"]:
-            print("  missing source ledgers (editorial follow-up): "
+            failures += 1
+            print("  PUBLICATION FAILED: missing source ledgers: "
                   + ", ".join(stats["publication_missing_ledgers"]))
         else:
             print("  all selected model publications carry source ledgers")

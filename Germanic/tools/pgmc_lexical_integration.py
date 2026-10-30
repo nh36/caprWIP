@@ -5,8 +5,9 @@ from __future__ import annotations
 import argparse
 import csv
 import io
+import unicodedata
 from collections import Counter, defaultdict
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 import cascade_baseline
 import oe_lexeme_report_coverage as coverage
@@ -132,6 +133,47 @@ def screen(comparisons: list[dict]) -> str:
     return "ordinary_evidence_review"
 
 
+def publication_gate(selected_models: dict[str, str],
+                     assembled_paths: dict[str, str],
+                     reports: Path) -> None:
+    """Publication-completion gate for explicitly selected lexical articles.
+
+    `selected_models` maps row IDs to the approved `publication_source`
+    (relative to `Germanic/docs/lexeme_reports/`); `assembled_paths` maps
+    assembled row IDs to the repo-relative `model_entry_path`. Raises
+    ValueError when a selected publication is unassembled, assembled from a
+    different source than the approved one, or missing its source ledger.
+    These are publication-completion failures, not scientific ones.
+    """
+    unassembled = sorted(set(selected_models) - set(assembled_paths), key=int)
+    if unassembled:
+        raise ValueError("selected publication not assembled: "
+                         + ", ".join(unassembled))
+
+    # The assembled article must be exactly the approved publication_source:
+    # another model for the same stable ID does not discharge the obligation.
+    def canonical(path: str) -> str:
+        return unicodedata.normalize("NFC", str(PurePosixPath(path)))
+    wrong_source = sorted(
+        (row_id for row_id, source in selected_models.items()
+         if canonical(assembled_paths[row_id])
+         != canonical(f"Germanic/docs/lexeme_reports/{source}")),
+        key=int)
+    if wrong_source:
+        raise ValueError(
+            "assembled model is not the approved publication_source: "
+            + ", ".join(f"{row_id} (assembled {assembled_paths[row_id]}, "
+                        f"approved {selected_models[row_id]})" for row_id in wrong_source))
+    missing_ledgers = sorted(
+        (row_id for row_id, source in selected_models.items()
+         if not (reports / source.replace(".model.md", ".source_ledger.md")).is_file()
+         or not source.endswith(".model.md")),
+        key=int)
+    if missing_ledgers:
+        raise ValueError("missing source ledger for selected publication: "
+                         + ", ".join(missing_ledgers))
+
+
 def build(root: Path = ROOT, *, mode: str = "full") -> tuple[list[dict], list[dict], dict]:
     corpus_rows, _, form_rows, reviews = survey.load(root, mode=mode)
     analytical = survey.load_analysis(root, corpus_rows, form_rows)
@@ -230,23 +272,13 @@ def build(root: Path = ROOT, *, mode: str = "full") -> tuple[list[dict], list[di
         })
     required = {r.row_id for r in oe_rows if r.requires_report}
     philological = {c["row_id"] for c in cases if c["requires_extended_discussion"] == "1"}
-    # Publication-completion gate: an explicitly selected lexical publication
-    # owned by a model entry must actually be in the lexical assembly. This is
-    # the obligation record for adjudication-selected articles (e.g. filth,
-    # row 2335): once the editorial case exists, an absent or unassembled
-    # article fails the control plane instead of passing silently.
     selected_models = {c["row_id"]: c["publication_source"] for c in cases
                        if c["requires_extended_discussion"] == "1"
                        and c["publication_source"].startswith("model_entries/")}
-    unassembled_selected = sorted(set(selected_models) - set(models), key=int)
-    if unassembled_selected:
-        raise ValueError("selected publication not assembled: "
-                         + ", ".join(unassembled_selected))
-    missing_ledgers = sorted(
-        (row_id for row_id, source in selected_models.items()
-         if not (reports / source.replace(".model.md", ".source_ledger.md")).is_file()
-         or not source.endswith(".model.md")),
-        key=int)
+    publication_gate(selected_models,
+                     {row_id: m["model_entry_path"] for row_id, m in models.items()},
+                     reports)
+    missing_ledgers: list[str] = []  # gate raises; retained for stats compatibility
     stats = {
         "audit": len(corpus), "selected": len(runnable), "legacy": len(legacy_ids),
         "required": len(required), "legacy_current_required": len(required & legacy_ids),

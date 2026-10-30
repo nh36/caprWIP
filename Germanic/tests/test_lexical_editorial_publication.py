@@ -5,6 +5,7 @@ import csv
 from collections import Counter
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -276,12 +277,56 @@ class PublicationCompletionGateTests(unittest.TestCase):
             # here with a populated dict proves every one is in the assembly.
         self.assertTrue(selected)
 
-    def test_source_ledger_gaps_are_reported_not_hidden(self):
-        missing = set(self.stats["publication_missing_ledgers"])
-        # straw (2224) predates the ledger convention; nothing newer may
-        # join this known gap silently.
-        self.assertLessEqual(missing, {"2224"})
-        self.assertNotIn("2335", missing)
+    def test_source_ledger_gaps_are_fatal_not_hidden(self):
+        # Build succeeding (setUpClass) proves no selected publication lacks
+        # its ledger; the straw (2224) gap was closed when the requirement
+        # became fatal. The stat key remains for --status compatibility.
+        self.assertEqual(self.stats["publication_missing_ledgers"], [])
+        self.assertEqual(
+            self.stats["publication_selected_models"].get("2224"),
+            "model_entries/2224-straw-strēaw.model.md")
+        self.assertTrue(
+            (REPORTS / "model_entries/2224-straw-strēaw.source_ledger.md").is_file())
+        # filth satisfies both invariants: exact approved source assembled...
+        self.assertTrue(
+            (REPORTS / "model_entries/2335-filth-fȳlþ.source_ledger.md").is_file())
+
+    def test_gate_rejects_unassembled_selected_publication(self):
+        with self.assertRaisesRegex(ValueError, "not assembled: 2335"):
+            editorial.publication_gate(
+                {"2335": "model_entries/2335-filth-fȳlþ.model.md"}, {}, REPORTS)
+
+    def test_gate_rejects_assembled_source_that_is_not_the_approved_one(self):
+        # A different (existing) model for the same stable ID must not pass.
+        with self.assertRaisesRegex(
+                ValueError, "not the approved publication_source: 2335"):
+            editorial.publication_gate(
+                {"2335": "model_entries/2335-filth-fȳlþ.model.md"},
+                {"2335": "Germanic/docs/lexeme_reports/model_entries/"
+                         "2224-straw-strēaw.model.md"},
+                REPORTS)
+
+    def test_gate_accepts_exact_approved_source_with_ledger(self):
+        editorial.publication_gate(
+            {"2335": "model_entries/2335-filth-fȳlþ.model.md"},
+            {"2335": "Germanic/docs/lexeme_reports/model_entries/"
+                     "2335-filth-fȳlþ.model.md"},
+            REPORTS)  # must not raise
+
+    def test_gate_rejects_missing_source_ledger(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            reports = Path(tmp)
+            (reports / "model_entries").mkdir()
+            (reports / "model_entries/9999-x-y.model.md").write_text("x")
+            selected = {"9999": "model_entries/9999-x-y.model.md"}
+            assembled = {"9999": "Germanic/docs/lexeme_reports/"
+                                 "model_entries/9999-x-y.model.md"}
+            with self.assertRaisesRegex(
+                    ValueError, "missing source ledger .*: 9999"):
+                editorial.publication_gate(selected, assembled, reports)
+            # positive control: the same inputs pass once the ledger exists
+            (reports / "model_entries/9999-x-y.source_ledger.md").write_text("x")
+            editorial.publication_gate(selected, assembled, reports)
 
 
 if __name__ == "__main__":
