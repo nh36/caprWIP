@@ -1,0 +1,448 @@
+{
+  "experiment": "sc066-068-counterfactuals",
+  "generated": "2026-10-30 18:40:00",
+  "germanic.txt_sha256": "5c160755e67ebbfa898ea8494d8a0333c6da737133f6821bc10f2d6a87a9a2e0",
+  "corpus_sha256": "557113f8709633337feb51b1cd991f0db380ca567c20b7e784141f3d8c4fb540",
+  "selected_rows": 390,
+  "selected_inputs_sha256": "503663af69ad45267f2170d69761fefe6bd8b3b9124872c3889255204d7b9a32",
+  "pre_sc066_bin": "old_english_sandbox_after_oe_medial_syncope.bin",
+  "pre_sc068_bin": "old_english_sandbox_after_oe_dental_assimilation.bin",
+  "variants": {
+    "production_control": {
+      "sc066_definition": "define OELAdjacentSyncope Ctx([\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}\n]);",
+      "source_sha256": "780fabb9e3edf9f0a056d5d1c72a696bdf9a153387f9a25d0c0c95bb6a44d1f9",
+      "composition_order": "canonical (SC066 < SC067 < SC068)",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietl"
+          ],
+          "assertion_holds": false
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġl"
+          ],
+          "assertion_holds": false
+        }
+      ]
+    },
+    "sc066_retired": {
+      "sc066_definition": "define OELAdjacentSyncope ?*;",
+      "source_sha256": "81858bae32fb65fb28531c01df36ad02abf9ca7c94be5314e5a47d5752890838",
+      "composition_order": "canonical (SC066 < SC067 < SC068)",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietel"
+          ],
+          "assertion_holds": true
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġel"
+          ],
+          "assertion_holds": true
+        }
+      ],
+      "rows_changed": 3,
+      "changes": [
+        {
+          "row_id": "2139",
+          "proto": "*nátilōn",
+          "fst_input": "nátilōn",
+          "pre_sc066": [
+            "*n*e*t*i*l*ǭ"
+          ],
+          "pre_sc068": [
+            "*n*e*t*l*ǭ"
+          ],
+          "selected_target": "netle",
+          "control_outputs": [
+            "netle"
+          ],
+          "variant_outputs": [
+            "netele"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        },
+        {
+          "row_id": "2208",
+          "proto": "*spénnilō",
+          "fst_input": "spénnilō",
+          "pre_sc066": [
+            "*s*p*i*n*n*i*l"
+          ],
+          "pre_sc068": [
+            "*s*p*i*n*n*l"
+          ],
+          "selected_target": "spinl",
+          "control_outputs": [
+            "spinl"
+          ],
+          "variant_outputs": [
+            "spinnel"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        },
+        {
+          "row_id": "2250",
+          "proto": "*θístilas",
+          "fst_input": "θístilas",
+          "pre_sc066": [
+            "*θ*i*s*t*i*l*æ*s"
+          ],
+          "pre_sc068": [
+            "*θ*i*s*t*l*æ*s"
+          ],
+          "selected_target": "þistles",
+          "control_outputs": [
+            "þistles"
+          ],
+          "variant_outputs": [
+            "þisteles"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "weight_open_split": {
+      "sc066_definition": "define OELAdjacentSyncope Ctx([\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic\n]);",
+      "source_sha256": "c1bca0c6dcc4fdc0220e641f5483016547c8618a66786fec23652ed2b3adb724",
+      "composition_order": "canonical (SC066 < SC067 < SC068)",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietl"
+          ],
+          "assertion_holds": false
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġl"
+          ],
+          "assertion_holds": false
+        }
+      ],
+      "rows_changed": 0,
+      "changes": []
+    },
+    "weight_open_split_ie_short": {
+      "sc066_definition": "define OELAdjacentSyncope Ctx([\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic\n]);",
+      "source_sha256": "2e749083793b3891bc9222ba65e601e9c25b306847f1bd0f547942d891d09e38",
+      "composition_order": "canonical (SC066 < SC067 < SC068)",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietel"
+          ],
+          "assertion_holds": true
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġl"
+          ],
+          "assertion_holds": false
+        }
+      ],
+      "rows_changed": 0,
+      "changes": []
+    },
+    "open_syllable_only": {
+      "sc066_definition": "define OELAdjacentSyncope Ctx([\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l} EnglishStarVocalic,\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l} EnglishStarVocalic,\n    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l} EnglishStarVocalic\n]);",
+      "source_sha256": "7f7fac8b367ed1019358f00b02cf95f7ac67fa60f702c68a0513b28674edb606",
+      "composition_order": "canonical (SC066 < SC067 < SC068)",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietel"
+          ],
+          "assertion_holds": true
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġel"
+          ],
+          "assertion_holds": true
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2208",
+          "proto": "*spénnilō",
+          "fst_input": "spénnilō",
+          "pre_sc066": [
+            "*s*p*i*n*n*i*l"
+          ],
+          "pre_sc068": [
+            "*s*p*i*n*n*l"
+          ],
+          "selected_target": "spinl",
+          "control_outputs": [
+            "spinl"
+          ],
+          "variant_outputs": [
+            "spinnel"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "barrack_390_postliquid": {
+      "sc066_definition": "define OELAdjacentSyncope Ctx([\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}\n]);",
+      "source_sha256": "9357e1c43731e9795d6c4115600190a43c04b3849e0326846a733d9c2587cc3e",
+      "composition_order": "canonical (SC066 < SC067 < SC068)",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietl"
+          ],
+          "assertion_holds": false
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġl"
+          ],
+          "assertion_holds": false
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2126",
+          "proto": "*mélukz",
+          "fst_input": "mélukz",
+          "pre_sc066": [
+            "*m*éo*l*u*k"
+          ],
+          "pre_sc068": [
+            "*m*éo*l*u*k"
+          ],
+          "selected_target": "meoloc",
+          "control_outputs": [
+            "meoloc"
+          ],
+          "variant_outputs": [
+            "meolc"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "sc068_before_sc066": {
+      "sc066_definition": "define OELAdjacentSyncope Ctx([\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}\n]);",
+      "source_sha256": "ced265c677a01176e3bad84ae4062adb6dff1dd19dba609e5830c57b24d90392",
+      "composition_order": "SC068 before SC066",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietl"
+          ],
+          "assertion_holds": false
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġl"
+          ],
+          "assertion_holds": false
+        }
+      ],
+      "rows_changed": 1,
+      "changes": [
+        {
+          "row_id": "2208",
+          "proto": "*spénnilō",
+          "fst_input": "spénnilō",
+          "pre_sc066": [
+            "*s*p*i*n*n*i*l"
+          ],
+          "pre_sc068": [
+            "*s*p*i*n*n*l"
+          ],
+          "selected_target": "spinl",
+          "control_outputs": [
+            "spinl"
+          ],
+          "variant_outputs": [
+            "spinnl"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    },
+    "sc068_retired": {
+      "sc066_definition": "define OELAdjacentSyncope Ctx([\n    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},\n    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}\n]);",
+      "source_sha256": "39557618786eeb8ae6499f86f2df782516540e95bf6710f14cd56589d93a20eb",
+      "composition_order": "canonical (SC066 < SC067 < SC068)",
+      "witness_probes": [
+        {
+          "id": "kettle",
+          "input": "*kátilaz",
+          "attested": "cetel (disyllabic)",
+          "assert": "no_tl_cluster",
+          "basis": "Orel 2003:211 *katilaz (Lat. catillus loan; OE cytel); R/T 2014 p. 272 ('apparently not of cytel, cetel'); Luick §336 / Brunner §159c: deletion only in open medial syllables — nom. sg. *katilaz has *i in a closed final syllable after apocope and is outside every published formulation of the change",
+          "fst_input": "kátilaz",
+          "outputs": [
+            "ċietl"
+          ],
+          "assertion_holds": false
+        },
+        {
+          "id": "angel",
+          "input": "*ángilaz",
+          "attested": "engel (disyllabic)",
+          "assert": "no_gl_cluster",
+          "basis": "Lat. angelus loan; OE engel, gen. engles (Campbell §574). Latent heavy-closed overgeneration probe: the selected-cell architecture sees post-apocope strings, so neither the current rule nor the reformulation can distinguish *spinnil (historically trisyllabic *spinnilō, syncopated while open) from a nominative that was never trisyllabic. Recorded as a latent out-of-corpus limitation, equal in all variants.",
+          "fst_input": "ángilaz",
+          "outputs": [
+            "enġl"
+          ],
+          "assertion_holds": false
+        }
+      ],
+      "rows_changed": 2,
+      "changes": [
+        {
+          "row_id": "1959",
+          "proto": "*búttmaz",
+          "fst_input": "búttmaz",
+          "pre_sc066": [
+            "*b*ó*t*t*m"
+          ],
+          "pre_sc068": [
+            "*b*ó*t*t*m"
+          ],
+          "selected_target": "botm",
+          "control_outputs": [
+            "botm"
+          ],
+          "variant_outputs": [
+            "bottm"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        },
+        {
+          "row_id": "2208",
+          "proto": "*spénnilō",
+          "fst_input": "spénnilō",
+          "pre_sc066": [
+            "*s*p*i*n*n*i*l"
+          ],
+          "pre_sc068": [
+            "*s*p*i*n*n*l"
+          ],
+          "selected_target": "spinl",
+          "control_outputs": [
+            "spinl"
+          ],
+          "variant_outputs": [
+            "spinnl"
+          ],
+          "control_matches_selected": true,
+          "variant_matches_selected": false,
+          "assessment": "corrupts_previously_correct_prediction"
+        }
+      ]
+    }
+  },
+  "control_matches_canonical": true
+}
