@@ -5347,7 +5347,7 @@ of [θístilas]{.recon} ‘thistle’ lose their \emph{*i} after the heavy seque
 @Campbell1959, p. 158, §392]. After a light syllable, however, the handbooks
 describe a later and more particular development: unstressed \emph{*i} next to
 \emph{l} is lost even where the preceding syllable is light, as in *netle*
-‘nettle’ from the diminutive [nátilōn]{.recon} [@Kroonen2013, p. 384;
+‘nettle’ from the diminutive [nátilōn]{.recon} ‘nettle’ [@Kroonen2013, p. 384;
 @RingeTaylor2014, p. 272, §6.7.4]. Luick, following Weyhe, restricts this
 light-syllable deletion to trisyllabic forms whose middle syllable was open,
 dating it before the literary period after dentals and to the eighth century
@@ -5358,7 +5358,7 @@ a group of consonant plus \emph{l} or \emph{r} would result [@Campbell1959,
 pp. 157--158, §§388--390].
 
 The open-syllable condition carries the explanatory weight. *Cetel* ‘kettle’,
-an early Latin loan ([katilaz]{.recon}, from \emph{catillus}), famously fails
+an early Latin loan ([katilaz]{.recon} ‘kettle’, from \emph{catillus}), famously fails
 to syncopate [@Orel2003, p. 211; @RingeTaylor2014, p. 272]. It is not a
 lexical exception. Its nominative \emph{*i} stands, after apocope, in a
 word-final closed syllable — light and closed — a position that no published
@@ -5391,7 +5391,7 @@ following-vowel condition entirely [@Barrack1975, p. 96]. The present law
 retains the following-vowel condition for the light stratum: dropping it, as
 Barrack's West Saxon formulation would, predicts syncope in the *cetel*
 nominative. His neighbouring rule deleting a vowel after a liquid, which
-derives *meolc* ‘milk’ from [meluk]{.recon} [@Barrack1975, p. 96], is likewise
+derives *meolc* ‘milk’ from [meluk]{.recon} ‘milk’ [@Barrack1975, p. 96], is likewise
 not adopted: West Saxon *meoloc* retains the vowel, and medial \emph{*u} next
 to \emph{l} is in general kept far longer than \emph{*i} [@Luick1914, §336.2;
 @RingeTaylor2014, p. 273].

@@ -5,7 +5,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 ## Summary
 
 - Foma blocks checked: 107.
-- Blocks over the conservative 90-character threshold: 18.
+- Blocks over the conservative 90-character threshold: 19.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -79,7 +79,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 063-high-vowel-apocope.md | SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 29 | 118 | yes |
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | 16 | 55 | no |
 | 065-medial-syncope.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 47 | 93 | yes |
-| 066-l-adjacent-syncope.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 18 | 62 | no |
+| 066-l-adjacent-syncope.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 18 | 107 | yes |
 | 067-dental-assimilation.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | 5 | 33 | no |
 | 068-preconsonantal-degemination.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | 5 | 93 | yes |
 | 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | 20 | 107 | yes |
@@ -171,6 +171,11 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 ### 065-medial-syncope.md:47 — SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 
 - `93` chars — `    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]`
+
+### 066-l-adjacent-syncope.md:18 — SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope}
+
+- `105` chars — `    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},`
+- `107` chars — `    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic`
 
 ### 068-preconsonantal-degemination.md:5 — SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
 
