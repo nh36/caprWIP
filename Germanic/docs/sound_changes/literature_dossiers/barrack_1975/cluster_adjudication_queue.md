@@ -12,7 +12,33 @@ interactions already exist (cheap, high-yield), and where a zero-firing
 rule parallels the SC065 situation (either a coverage gap to fill or a
 rule to retire); defer rules whose evidence requires new corpus classes.
 
-## 1. SC066 + SC068 — l-adjacent syncope and preconsonantal degemination (joint round)
+## 1. SC066 + SC068 — COMPLETE (adjudicated 2026-10-30)
+
+- **Outcome:** SC066=REFORMULATE (weight/open-syllable conditioning;
+  `{*ie}` reclassified as a short diphthong; zero corpus delta);
+  SC068=RETAIN. Memos: `../../audits/sc066-adjudication.md`,
+  `../../audits/sc068-adjudication.md`; receipts and witness register
+  in `../../audits/sc066-068-experiments/`.
+- The cetel tension is resolved structurally: the nominative *i stands
+  in a word-final closed syllable after apocope, outside every
+  published formulation (Luick §336; Brunner §159c; Campbell §§388,
+  589; R/T p. 272) — not a lexical exception. "Lexically variable" is
+  removed from the rule comment.
+- Barrack dispositions recorded: 351/388 examined (his WS environment
+  simplifications rejected on the cetel evidence), 390 rejected
+  (meoloc), 453 verified as gemination (opposite direction), 457b/476
+  examined with SC068 (general degemination; CAPR keeps the
+  witness-backed pre-sonorant slice), 481.1 fortition not
+  degemination, 286 vowel shortening not cluster simplification.
+- Residue carried forward: engel-type latent heavy-closed
+  overgeneration at the post-apocope site (awaits the SC067
+  paradigm-cell policy); categorical vs arrested-variation readings of
+  the light-syllable deletion (corpus cannot discriminate); botm
+  reconstruction selection (Kroonen *buttma- vs R/T *buþm-).
+
+<details><summary>Original scheduling entry (superseded)</summary>
+
+## 1 (original). SC066 + SC068 — l-adjacent syncope and preconsonantal degemination (joint round)
 
 - Historical problem: l-adjacent syncope after light syllables (R/T
   §6.7.4) and the degemination of the clusters it creates; the two rules
@@ -37,6 +63,8 @@ rule to retire); defer rules whose evidence requires new corpus classes.
 - Readiness: READY — witnesses and harness pattern exist; main work is
   the cetel conditioning question in the handbooks (Campbell §§388–393,
   R/T §6.7.4, Hogg).
+
+</details>
 
 ## 2. SC067 — dental assimilation (zero-firing)
 

@@ -99,7 +99,8 @@ byforms without modelling each one.
 > consumers of syncope. In his ordering, the vowel-deletion rules 345,
 > 347 and 351 [@Barrack1975, pp. 85--87] feed voicing assimilation and
 > fortition at 480.2 and 481.1, which derive West Saxon \emph{fint}
-> 'finds' from \emph{*findip} [@Barrack1975, pp. 124--125], gemination at
+> 'finds' from \emph{*findip} [@Barrack1975, pp. 124--125], the coronal
+> fricative-to-stop assimilation at
 > 481.7 [@Barrack1975, p. 125], and the terminal cluster simplification
 > at 476, which he also orders after r-metathesis on the strength of
 > \emph{þridda} beside \emph{þirda} [@Barrack1975, p. 122]. The present
@@ -126,3 +127,22 @@ byforms without modelling each one.
 Dispositions for every Barrack heading named above are recorded in
 `barrack_to_capr.tsv`; the ranked adjudication agenda for the remaining
 corridor rules is in `cluster_adjudication_queue.md`.
+
+### SC066/SC068 adjudication outcome (2026-10-30)
+
+The joint SC066–SC068 round is complete: SC066=REFORMULATE (weight and
+open-syllable conditioning adopted; `{*ie}` reclassified as a short
+diphthong; zero corpus delta), SC068=RETAIN. Print verification
+corrected five census glosses (286 is vowel shortening before
+geminates, not cluster simplification; 351 is MEDIAL deletion with a
+WS generalization to light syllables; 453 is gemination before
+liquids, not epenthesis; 481.7 is coronal fricative-to-stop
+assimilation, not gemination; 388's WS variant drops the
+following-vowel term). Barrack's West Saxon environment
+simplifications under 351/388 and his post-liquid deletion 390 were
+tested against the selected corpus and rejected: the first pair
+predicts syncope in the *cetel*-type nominative, the last corrupts the
+selected *meoloc* row. His 476 ordering of cluster simplification
+after syncope independently corroborates CAPR's SC066 < SC068
+relation. See `../../audits/sc066-adjudication.md` and
+`../../audits/sc068-adjudication.md`.

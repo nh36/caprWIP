@@ -80,7 +80,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 282		70	-	FORMAL_NOT_HISTORICAL	Retention statement before boundary; not an innovation	medium	NO_ACTION
 283		71	-	UNRESOLVED	Homorganic consonant loss; needs print verification against CAPR cluster rules	low	VERIFY_SOURCE
 285		71	SC078	PARTIALLY_REPRESENTED	Reduction of unstressed material; CAPR weak-tail reduction	low	NO_ACTION
-286		71	SC068;SC080	PARTIALLY_REPRESENTED	Consonant-cluster simplification family	low	VERIFY_SOURCE
+286		71	SC068;SC080	PARTIALLY_REPRESENTED	Print-verified 2026-10-30: vowel SHORTENING before geminates (bliþs > bliss; latteow path), not cluster simplification; no counterpart needed in the SC066-068 corridor; any CAPR relevance belongs to the late-cluster complex reviewed with SC080	low	EXAMINED_SC066_068_NO_ACTION
 287		71	-	OUT_OF_SCOPE	Syllable metathesis; sporadic/lexical, not a regular law in the executable target	medium	NO_ACTION
 296		71	SC032;SC110	PARTIALLY_REPRESENTED	Vowel lowering/retraction in diphthong system	low	NO_ACTION
 299a		72	SC088;SC060	REPRESENTED_DIFFERENT_CONDITIONING	Epenthesis before rhotic cluster; appears in 459.1 biernan derivation — SC087 adjudicated; epenthesis account remains relevant to SC088/SC060 review	medium	RESEARCH_QUEUE
@@ -122,7 +122,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 345		85-86 (continues)	SC063	EQUIVALENT_REPRESENTED	Final high vowel deletion after heavy syllable; CAPR high-vowel apocope (SC063); examined as the feeding left context in the SC065 adjudication	high	EXAMINED_SC065_NO_ACTION
 347		86-87 (continues)	SC063;SC065	REPRESENTED_DIFFERENT_CONDITIONING	High-vowel deletion; examined in the SC065 adjudication — counterfactuals show Barrack-style broader conditioning corrupts hēafod (u-extension) and hærfest/sċilling (any-consonant) at CAPR's cascade site	medium	EXAMINED_SC065_NO_ACTION
 348		87	-	FORMAL_NOT_HISTORICAL	Syllable deletion via progressive environment simplification; formal device	medium	NO_ACTION
-351		87	SC063;SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Final high-vowel deletion/PES; examined in the SC065 adjudication — CAPR splits medial (SC065) and l-adjacent (SC066) syncope; the open-syllable weight law was tested and is vacuous post-apocope, corrupts sāwol pre-apocope	medium	EXAMINED_SC065_NO_ACTION
+351		87	SC063;SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Print-verified 2026-10-30: medial high-vowel deletion in open syllable after long accented syllable; WS PES drops the length condition. Examined in SC065 and again in SC066: CAPR's reformulated SC066 keeps the weight condition and restricts the light-syllable deletion to open medial syllables; his WS generalization would wrongly syncopate the cetel-type nominative	medium	EXAMINED_SC065_SC066_NO_ACTION
 354a		88	-	UNRESOLVED	Deletion of e/i plus sonorant sequence; needs print verification	low	VERIFY_SOURCE
 354b		88	SC053;SC085	PARTIALLY_REPRESENTED	Deletion of w/h after consonant	medium	NO_ACTION
 355.1		88	SC071;SC069;SC072	REPRESENTED_DIFFERENT_CONDITIONING	Shortening of unstressed long vowels; CAPR splits early/late o-shortening	medium	NO_ACTION
@@ -144,8 +144,8 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 379		95	-	UNRESOLVED	Short-vowel development; summary too generic	low	VERIFY_SOURCE
 380		95	-	UNRESOLVED	Back-vowel fronting before nasal; needs print verification	low	VERIFY_SOURCE
 385		95-96 (continues)	-	UNRESOLVED	Vowel lowering/fronting; summary too generic	low	VERIFY_SOURCE
-388		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Post-sonorant vowel deletion; examined in the SC065 adjudication for the dental slice; its l-adjacent/sonorant territory belongs to SC066 and remains open pending the SC066 adjudication	medium	RESEARCH_QUEUE
-390		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Unstressed vowel deletion (meolc); examined in the SC065 adjudication; the meolc-type sonorant environment belongs to SC066's domain and remains open pending the SC066 adjudication	medium	RESEARCH_QUEUE
+388		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Print-verified 2026-10-30: deletion of unstressed V before liquid/nasal + vowel; PES drops the sonorant term; WS drops the following-vowel term entirely. Examined in SC066: the core (pre-sonorant, following vowel) corresponds to SC066's light-open clause; his WS following-vowel drop is REJECTED (kettle probe syncopates; cetel retained by all handbooks)	medium	EXAMINED_SC066_NO_ACTION
+390		96	SC065;SC066	REPRESENTED_DIFFERENT_CONDITIONING	Print-verified 2026-10-30: post-liquid deletion V L V2 C -> V L 0 C (his *meluk > meolc). Examined in SC066 and REJECTED for CAPR: composing it corrupts the selected meoloc row (receipt barrack_390_postliquid); WS meoloc keeps medial u (Luick 336.2; R/T p. 273)	medium	EXAMINED_SC066_REJECTED
 398z	WG	96	-	UNRESOLVED	WG loss of rounding; needs print verification	low	VERIFY_SOURCE
 398.2	PG	97	-	OUT_OF_SCOPE	Verner’s Law; predates CAPR’s PGmc input stage, outcomes encoded lexically per lexeme	high	CHAPTER_DISCUSSION
 398.2n	NWG	97	-	OUT_OF_SCOPE	Labiovelar rounding loss; PGmc-internal, encoded lexically	medium	NO_ACTION
@@ -195,9 +195,9 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 446		114	-	OUT_OF_SCOPE	Final devoicing; subphonemic/late	medium	NO_ACTION
 450		114	-	OUT_OF_SCOPE	Final stop devoicing (weorþmȳnd~-mȳnt); orthographic variation	medium	NO_ACTION
 452		114	-	UNRESOLVED	Final consonant change; summary too generic	low	VERIFY_SOURCE
-453		114-115 (continues)	SC068;SC088	PARTIALLY_REPRESENTED	Epenthesis/cluster development	low	VERIFY_SOURCE
+453		114-115 (continues)	SC066;SC068;SC088	PARTIALLY_REPRESENTED	Print-verified 2026-10-30: gemination before liquids after short vowel (betr- > bettr-), fed by syncope — not epenthesis; the OPPOSITE direction of SC068 degemination and the source of ME nettle-type tt; no selected witness, no CAPR counterpart needed	low	EXAMINED_SC066_068_NO_ACTION
 457a		115	-	FORMAL_NOT_HISTORICAL	Loss of ac 1; accent machinery	medium	NO_ACTION
-457b		115	SC080	PARTIALLY_REPRESENTED	Cluster simplification; degemination adjacent	medium	NO_ACTION
+457b		115	SC068;SC080	PARTIALLY_REPRESENTED	Print-verified 2026-10-30: degemination V C1C1 -> V C1 (acumba > acuma); examined with SC068 — CAPR's preconsonantal slice is narrower; the general/intervocalic territory belongs to the SC080 late-cluster review	medium	EXAMINED_SC068_NO_ACTION
 459.1		115-117 (continues)	SC087	REPRESENTED_DIFFERENT_CONDITIONING	r-metathesis before s/n with dialect-differentiated ordering against breaking; adjudicated 2026-10 (sc087-adjudication.md): CAPR retains its selected CrVst operation, not a proven exhaustive historical domain; controlled vowel expansion exposes grass as an rVs discriminator (selected græs versus attested gærs); byform histories remain unresolved	high	ADJUDICATED_SC087_RETAIN
 459.3		117-118	SC087	HISTORICALLY_DOUBTFUL	Regressive metathesis of accented V-breve+r to r+V before xt (LWS worhte~wrohte); Barrack grades the evidence as very meager; mainly late Northumbrian, reanalysed by Hogg as epenthesis+stress shift; adjudicated 2026-10 (sc087-adjudication.md): no CAPR law; counterfactually corrupts fyrhte	medium	ADJUDICATED_SC087_RETAIN
 460a		118	-	UNRESOLVED	Metathesis of consonant and sC (wæps/wæsp type); sporadic; relation to 440b queue	low	RESEARCH_QUEUE
@@ -213,7 +213,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 473		121	-	OUT_OF_SCOPE	Restoration of n; analogical restoration, not a sound law	medium	NO_ACTION
 475a		121-122 (continues)	-	UNRESOLVED	Loss of final sonorant/consonant; needs print verification	low	VERIFY_SOURCE
 475b		122	-	UNRESOLVED	r-deletion in rn(C)# clusters; potential interaction with burn-family forms — SC087 adjudicated; rule reading still needs original-source verification	low	VERIFY_SOURCE
-476		122	SC080;SC068	PARTIALLY_REPRESENTED	Syncope/cluster simplification (rnn → rn in bærnan derivation); SC087-relevant — SC087 adjudicated; þirda/cluster simplification relevant to SC065-068/SC080 review	medium	RESEARCH_QUEUE
+476		122	SC080;SC068	PARTIALLY_REPRESENTED	Print-verified 2026-10-30: general late cluster simplification in BOTH directions (C1C1C2 -> C1C2; C2C1C1 -> C2C1; sellic, wiersa, þridda~þirda, cyng), ordered after his syncope rules. SC068 side examined: consistent with CAPR's narrow pre-sonorant slice and the SC066 < SC068 order; the postconsonantal direction and broader coverage remain queued for SC080	medium	EXAMINED_SC068_PARTIAL_SC080_QUEUE
 477a		123	-	OUT_OF_SCOPE	Dissimilation/reduction; sporadic	low	NO_ACTION
 477b		123	-	UNRESOLVED	Place assimilation; summary too generic	low	VERIFY_SOURCE
 478a		123	-	UNRESOLVED	Nasal assimilation/epenthesis; needs print verification	low	VERIFY_SOURCE
@@ -221,9 +221,9 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 478c		124	-	UNRESOLVED	Epenthesis in s-clusters; needs print verification	low	VERIFY_SOURCE
 480.1		124	SC067	PARTIALLY_REPRESENTED	Devoicing of d after voiceless consonant; dental assimilation adjacent	medium	NO_ACTION
 480.2		124	SC067	PARTIALLY_REPRESENTED	Voicing assimilation of t/s/p	medium	NO_ACTION
-481.1		124-125 (continues)	SC068	PARTIALLY_REPRESENTED	Devoicing/fortition of stops	low	VERIFY_SOURCE
+481.1		124-125 (continues)	SC068	NOT_REPRESENTED	Print-verified 2026-10-30: continuant -> stop after voiceless obstruent (his fint derivation) — fortition, not degemination; no SC068 relevance; no selected witness	low	EXAMINED_SC068_NO_ACTION
 481.2		125	SC067	PARTIALLY_REPRESENTED	Sibilant assimilation	low	VERIFY_SOURCE
-481.7		125	-	UNRESOLVED	Gemination; summary too generic	low	VERIFY_SOURCE
+481.7		125		NOT_REPRESENTED	Print-verified 2026-10-30: coronal fricative -> stop assimilation, Late OE (the (I) line is illegible in the print copy); earlier census gloss 'gemination' was wrong; outside the SC066-068 corridor	low	NO_ACTION
 482		125-126 (continues)	-	FORMAL_NOT_HISTORICAL	Stage-regressive consonant alternation; formal device	low	VERIFY_SOURCE
 483		126	SC052	PARTIALLY_REPRESENTED	Palatalization/affrication of k	medium	NO_ACTION
 484a		126	-	UNRESOLVED	Assimilation/lateralization; needs print verification	low	VERIFY_SOURCE

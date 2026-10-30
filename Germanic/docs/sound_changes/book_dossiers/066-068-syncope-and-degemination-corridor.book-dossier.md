@@ -1,5 +1,20 @@
 # SC066-SC068: Syncope and Degemination Corridor
 
+## 0. Adjudication status (2026-10-30)
+
+SC066 and SC068 are adjudicated: SC066=REFORMULATE (the executable
+environment now states the weight/open-syllable conditioning of Luick
+§336, Brunner §159c and Campbell §§388/589; `{*ie}` reclassified as a
+short diphthong; zero corpus delta), SC068=RETAIN. The *cetel* 'kettle'
+problem is resolved structurally (closed final syllable after apocope,
+outside every published formulation), and "lexically variable" is
+removed from the rule documentation. Barrack 1975 (351, 388, 390, 453,
+457b, 476, 481.1, 481.7, 286) was print-verified and disposed; his 476
+ordering of cluster simplification after syncope corroborates
+SC066 < SC068. SC067 remains unadjudicated (bridge member; queued).
+Memos: `../audits/sc066-adjudication.md`,
+`../audits/sc068-adjudication.md`.
+
 ## 1. Role in the book
 
 SC066-SC068 is now the clearest remaining corridor-scale candidate after the
@@ -53,7 +68,7 @@ chapter.
 
 The three CAPR rules are simple in prose even if the historical mapping is not.
 
-1. `OELAdjacentSyncope` deletes medial `*i` before `l` after a stressed syllable.
+1. `OELAdjacentSyncope` deletes medial `*i` before `l` after a heavy syllable, or after a light syllable when the medial syllable is open (adjudicated formulation, 2026-10-30).
 2. `OEDentalAssimilation` deletes `*θ` after `*t`, treating a post-syncope dental cluster as unstable.
 3. `OEPreconsonantalDegemination` simplifies `tt` and `nn` before a following sonorant.
 
