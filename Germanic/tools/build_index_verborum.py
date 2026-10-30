@@ -2629,12 +2629,24 @@ def build_production_rows(
             ref = heading_ref(str(entry["title"]), str(entry["expected"]))
             oe_display = str(entry["expected"])
         if entry["proto_input"]:
+            proto_input_form = str(entry["proto_input"])
+            if manifest_row is not None:
+                manifest_protoform = str(manifest_row["protoform"])
+                if (
+                    proto_input_form != manifest_protoform
+                    and proto_input_form.replace("θ", "þ") == manifest_protoform
+                ):
+                    # The compact trace prints the FST-alphabet dental (θ) for a
+                    # selected input whose manifest protoform is spelled with þ.
+                    # Collapse to the manifest spelling so the index does not
+                    # print two apparent reconstructions of the same input.
+                    proto_input_form = manifest_protoform
             if manifest_row is not None:
                 # A modelled selected input carries its declared historical stage
                 # (e.g. heaven *xébun -> pwgmc). Fail closed on an absent/unknown stage.
                 stage = require_reconstructed_stage(
                     manifest_row.get("protoform_stage", ""),
-                    form=str(entry["proto_input"]),
+                    form=proto_input_form,
                     scope="trace_proto_input",
                     source_ref=ref,
                 )
@@ -2662,7 +2674,7 @@ def build_production_rows(
                         f"to pgmc. Add a model entry / entry_stage_metadata.tsv decision."
                     )
                 variety = ""
-            add_production(store, language=stage, variety=variety, form=str(entry["proto_input"]), form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
+            add_production(store, language=stage, variety=variety, form=proto_input_form, form_role="selected_input", source_scope="trace_proto_input", source_ref=ref, origin="compact")
 
     for row in explicit_tag_occurrences():
         if row["language"]:

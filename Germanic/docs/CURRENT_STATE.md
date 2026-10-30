@@ -98,6 +98,16 @@ The subsequent SC065 admission adds only row 2335 (*filth*, `*fūliþō` >
 and the same eight mismatches. Every prior 389 input, target, context and
 output is byte-identical and the legacy fingerprint is unchanged; the
 scientific record is `sound_changes/audits/sc065-adjudication.md`.
+The SC065 publication closeout assembled the mature *filth* article
+(`lexeme_reports/model_entries/2335-filth-fȳlþ.model.md`, editorial case
+`filth-endingless-nominative`), restructured the SC065 reader chapter, and
+collapsed the trace θ/þ index duplicate. Publication obligations are now
+gated: an explicitly selected article (editorial case with
+`requires_extended_discussion=1`) must exist and be assembled, and
+`python3 Germanic/tools/adjudicate.py --status` reports the three axes
+(scientific, publication, full validation) read-only. The three-level
+validation workflow and the optional parallel test lanes are documented in
+[docs/CI_VALIDATION.md](../../docs/CI_VALIDATION.md).
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.

@@ -26,8 +26,10 @@ Working formulation: CAPR currently treats the unit as the immediate
 post-apocope tail. `SC064` removes stem-final `*n` after `*ī` in the narrow
 `fright`-type environment that yields OE `fyrhte`, while `SC065` deletes a
 medial `*i` in a narrow pre-dental environment after a heavy syllable. The pair
-therefore combines one very narrow lexical bridge rule with one broader but
-currently card-negative syncope rule.
+therefore combines one very narrow lexical bridge rule with one broader
+syncope rule whose earlier boundary is now positively anchored (SC055 <
+SC065 via the `filth` witness; the remaining card results are
+runner-boundary negatives).
 
 ## 3. Traditional description and literature
 

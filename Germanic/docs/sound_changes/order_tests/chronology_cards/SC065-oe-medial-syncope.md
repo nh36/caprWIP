@@ -30,6 +30,18 @@ Current first-break evidence does **not** yet identify a historical first-break 
 ## Caveats
 Both sides are boundary-limited rather than historically interpretable. This card should not be used to claim that SC065 must follow any specific earlier stage or precede `SC087`.
 
+## Update (2026-10-29): independently demonstrated earlier boundary SC055 < SC065
+The negative first-break result above predates the SC065 adjudication and
+its lexical admission of *filth* (row 2335, *fūliþō > fȳlþ). That witness
+independently demonstrates the ordering `SC055 OEIUmlaut < SC065
+OEMedialSyncope`: syncope applied first deletes the umlaut-conditioning
+\emph{*i} and yields unattested \emph{*fūlþ}. See
+`Germanic/docs/sound_changes/audits/sc065-adjudication.md` (chronology
+evidence, `independently_demonstrated`) and the corpus expansion receipt
+`Germanic/docs/sound_changes/cascade_baseline/corpus_expansion_sc065.tsv`.
+The first-break pilot summaries listed below were produced before that
+admission and remain unmodified archives; they do not reflect this edge.
+
 ## Source files
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03.tsv`
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`

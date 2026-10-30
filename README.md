@@ -67,11 +67,11 @@ The active focus is modeling Proto-Germanic → Old English sound changes via FS
 
 **Current status:** sequential per-SC adjudication with separately instructed
 scoped work; [Germanic/docs/CURRENT_STATE.md](Germanic/docs/CURRENT_STATE.md)
-owns the phase and commands. The selected baseline has **7 documented
-mismatches out of 387 runnable OE rows** (**98.2% accuracy**), not a declaration
+owns the phase and commands. The selected baseline has **8 documented
+mismatches out of 390 runnable OE rows** (**97.9% accuracy**), not a declaration
 that research is complete. [Germanic/docs/README.md](Germanic/docs/README.md)
-defines the SOURCE/GENERATED/ARCHIVE hierarchy. Lexical publication has 387
-runnable derivation write-ups, 393 audit records and 160 elaborated assembled
+defines the SOURCE/GENERATED/ARCHIVE hierarchy. Lexical publication has 390
+runnable derivation write-ups, 396 audit records and 169 elaborated assembled
 model entries; see the [generated population summary](Germanic/docs/lexeme_reports/pgmc_integration/population_summary.md).
 
 Key files:

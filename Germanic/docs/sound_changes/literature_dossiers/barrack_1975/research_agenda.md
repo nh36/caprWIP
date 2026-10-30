@@ -27,7 +27,10 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
   clusters — reading still needs original verification), 468a, 481.7,
   484a/b/d (currently UNRESOLVED), plus the 459.1 PES (C) early free
   variation before d (þirda, p. 116).
-- **CAPR treatment:** SC065–SC068 and SC080 are live; the registry
+- **CAPR treatment:** SC065–SC068 and SC080 are live; SC065 itself was
+  adjudicated RETAIN in 2026-10 (`audits/sc065-adjudication.md`, with
+  the admitted witness *fūliþō > fȳlþ demonstrating SC055 < SC065), so
+  this item now concerns the remaining corridor rules; the registry
   records reciprocal chronology RG16 (SC066/SC068) and RG20
   (SC079/SC080). SC067, SC068 and SC080 are DEFER_TO_ADJUDICATION in the
   citation ledger.
