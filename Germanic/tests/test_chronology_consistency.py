@@ -75,9 +75,53 @@ def test_current_source_distinguishes_old_experiments_from_adopted_relations():
             assert e["evidence_basis"] == "technical"
 
 
+def _selected_rows():
+    return [r for r in oe_pipeline.load_rows(layout().corpus_tsv)
+            if r["concept"] in {"yoke", "youth", "widow", "world"}]
+
+
+def _compile_and_assay(source, names, rows, use_proto_norm):
+    """Compile one model's variant bins in a disposable container and assay."""
+    script = """
+import json, subprocess, tempfile
+from pathlib import Path
+import sys
+sys.path.insert(0, '/usr/app/tools')
+from oe_pipeline import apply_down, evaluation_input
+payload = PAYLOAD
+result = {}
+with tempfile.TemporaryDirectory(prefix='capr_chronology_') as temporary:
+    root = Path(temporary)
+    path = root / 'model.foma'
+    path.write_text(payload['source'])
+    proc = subprocess.run(['foma', '-q', '-f', str(path), '-e', 'quit'],
+                          cwd=root, text=True, capture_output=True,
+                          timeout=1800)
+    if proc.returncode:
+        raise RuntimeError('foma failed\\n' + proc.stdout[-6000:] + proc.stderr)
+    for name in payload['names']:
+        binary = root / (name + '.bin')
+        if not binary.is_file() or binary.stat().st_size < 1000:
+            raise RuntimeError(name + ': compilation failed\\n' + proc.stdout + proc.stderr)
+        result[name] = {
+            row['concept']: apply_down(binary, row['proto_norm']
+                                        if payload['use_proto_norm']
+                                        else evaluation_input(row))
+            for row in payload['rows']}
+print(json.dumps(result, ensure_ascii=False))
+""".replace("PAYLOAD", repr({"source": source, "names": names, "rows": rows,
+                             "use_proto_norm": use_proto_norm}))
+    proc = run_in_runner("python3 -", input=script, text=True, capture_output=True,
+                         check=True, timeout=3900)
+    return json.loads(proc.stdout)
+
+
 @pytest.fixture(scope="module")
-def chronology_replay(tmp_path_factory):
-    """Only disposable container-local paths receive compiled assay networks."""
+def chronology_replay_historical(tmp_path_factory):
+    """Historical replay: recompiles the EXPERIMENT_COMMIT grammar + variants.
+
+    Only disposable container-local paths receive compiled assay networks.
+    """
     old = subprocess.check_output(
         ["git", "show", f"{EXPERIMENT_COMMIT}:Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True)
@@ -104,7 +148,13 @@ def chronology_replay(tmp_path_factory):
         "Variant", "V3").replace(
             "old_english_variant.bin", "repaired_glide.bin").replace(
                 ".o. OEGlideUToEO", ".o. OEWsPalatalGlide")
+    return _compile_and_assay(old + appendix, list(variants) + ["repaired_glide"],
+                              _selected_rows(), use_proto_norm=True)
 
+
+@pytest.fixture(scope="module")
+def chronology_replay_current():
+    """Current-model controls: compiles only the working grammar + variants."""
     stages = oe_pipeline.stages()
     current_variants = {"current_identity": stages}
     earlier = [s for s in stages if s.foma_identifier != "OEMedUnstressedULowering"]
@@ -133,51 +183,16 @@ def chronology_replay(tmp_path_factory):
         current_appendix += (
             f"\ndefine A{i} " + " .o. ".join(members) +
             f";\nclear stack\nregex A{i};\nsave stack {name}.bin\n")
-    rows = [r for r in oe_pipeline.load_rows(layout().corpus_tsv)
-            if r["concept"] in {"yoke", "youth", "widow", "world"}]
-    payload = {"old": old + appendix, "current_appendix": current_appendix,
-               "old_names": list(variants) + ["repaired_glide"],
-               "current_names": list(current_variants), "rows": rows}
-    script = """
-import json, subprocess, tempfile
-from pathlib import Path
-import sys
-sys.path.insert(0, '/usr/app/tools')
-from oe_pipeline import apply_down, evaluation_input
-payload = PAYLOAD
-result = {}
-with tempfile.TemporaryDirectory(prefix='capr_chronology_') as temporary:
-    root = Path(temporary)
-    for model in ('old', 'current'):
-        source = (payload['old'] if model == 'old' else
-                  Path('/usr/app/fsts/germanic.txt').read_text() +
-                  payload['current_appendix'])
-        path = root / (model + '.foma')
-        path.write_text(source)
-        proc = subprocess.run(['foma', '-q', '-f', str(path), '-e', 'quit'],
-                              cwd=root, text=True, capture_output=True,
-                              timeout=1800)
-        if proc.returncode:
-            raise RuntimeError(model + ': foma failed\\n' + proc.stdout[-6000:] + proc.stderr)
-        for name in payload[model + '_names']:
-            binary = root / (name + '.bin')
-            if not binary.is_file() or binary.stat().st_size < 1000:
-                raise RuntimeError(name + ': compilation failed\\n' + proc.stdout + proc.stderr)
-            result[name] = {
-                row['concept']: apply_down(binary, row['proto_norm'] if model == 'old'
-                                            else evaluation_input(row))
-                for row in payload['rows']}
-print(json.dumps(result, ensure_ascii=False))
-""".replace("PAYLOAD", repr(payload))
-    proc = run_in_runner("python3 -", input=script, text=True, capture_output=True,
-                         check=True, timeout=3900)
-    (old_path.parent / "replay.json").write_text(proc.stdout)
-    return json.loads(proc.stdout)
+    source = (ROOT / "Germanic/fsts/germanic.txt").read_text() + current_appendix
+    return _compile_and_assay(source, list(current_variants), _selected_rows(),
+                              use_proto_norm=False)
 
 
 @pytest.mark.runtime
-def test_original_displacement_is_contingent_on_the_retired_early_glide(chronology_replay):
-    result = chronology_replay
+@pytest.mark.historical_replay
+def test_original_displacement_is_contingent_on_the_retired_early_glide(
+        chronology_replay_historical):
+    result = chronology_replay_historical
     assert result["old_identity"]["yoke"] == ["ġeoc"]
     assert result["old_delayed_glide"]["yoke"] == ["ġoc"]
     assert result["old_identity"]["youth"] == ["ġeoguþ"]
@@ -187,8 +202,9 @@ def test_original_displacement_is_contingent_on_the_retired_early_glide(chronolo
 
 
 @pytest.mark.runtime
-def test_current_lowering_displacement_and_written_surface_controls(chronology_replay):
-    result = chronology_replay
+def test_current_lowering_displacement_and_written_surface_controls(
+        chronology_replay_current):
+    result = chronology_replay_current
     for name in ("current_identity", "current_earlier_lowering"):
         for concept, output in {"yoke": "ġeoc", "youth": "ġeoguþ",
                                 "widow": "wuduwe", "world": "weorold"}.items():

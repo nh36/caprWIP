@@ -12,11 +12,20 @@ import pgmc_lexical_integration as integration
 
 def pytest_addoption(parser):
     parser.addoption("--validation-mode", choices=("full", "portable"), default="full")
+    parser.addoption(
+        "--historical-replay", action="store_true", default=False,
+        help=("execute historical-replay tests: reconstruct commit-pinned "
+              "historical Foma models and re-derive their immutable receipts "
+              "by live execution (see docs/HISTORICAL_REPLAY.md)"))
 
 
 def pytest_configure(config):
     config.addinivalue_line(
         "markers", "runtime: strict provisioned-runtime validation, explicitly not run in portable mode")
+    config.addinivalue_line(
+        "markers", "historical_replay: live reconstruction of a commit-pinned "
+        "historical model; explicit reproducibility lane, not ordinary "
+        "validation (run with --historical-replay)")
 
 def pytest_collection_modifyitems(config, items):
     if config.getoption("--validation-mode") == "portable":
@@ -26,6 +35,14 @@ def pytest_collection_modifyitems(config, items):
         for item in items:
             if item.get_closest_marker("runtime") is not None:
                 item.add_marker(skip)
+    if not config.getoption("--historical-replay"):
+        replay_skip = pytest.mark.skip(reason=(
+            "historical replay: explicit lane; ordinary validation checks the "
+            "immutable receipts without recompiling historical models. "
+            "Run with --historical-replay (docs/HISTORICAL_REPLAY.md)."))
+        for item in items:
+            if item.get_closest_marker("historical_replay") is not None:
+                item.add_marker(replay_skip)
 
 
 def pytest_runtest_setup(item):

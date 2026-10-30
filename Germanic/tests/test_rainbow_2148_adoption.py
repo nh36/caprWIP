@@ -175,6 +175,7 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
 
 
 @pytest.mark.runtime
+@pytest.mark.historical_replay
 def test_fresh_container_capture_and_private_controls_match_committed_receipts():
     script = """
 import gzip, json, sys

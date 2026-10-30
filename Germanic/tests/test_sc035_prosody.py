@@ -154,6 +154,7 @@ def test_verified_bibliographic_metadata_and_traceable_acquisition():
 
 
 @pytest.mark.runtime
+@pytest.mark.historical_replay
 def test_fresh_commit_pinned_comparison_reproduces_the_entire_receipt():
     expected = receipt()
     with historical_runtime(expected["accepted_base_commit"]) as execute:

@@ -139,6 +139,7 @@ class PrefixReductionTests(unittest.TestCase):
         self.assertEqual(live["final"], ["ġelīefan"])
 
     @pytest.mark.runtime
+    @pytest.mark.historical_replay
     def test_fresh_container_assay_reproduces_census_controls_and_counterfactuals(self):
         with historical_runtime(BASE) as execute:
             executed = execute(

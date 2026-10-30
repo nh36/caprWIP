@@ -118,6 +118,7 @@ def test_current_decision_links_followup_without_claiming_a_unique_history():
 
 
 @pytest.mark.runtime
+@pytest.mark.historical_replay
 def test_fresh_foma_comparison_reproduces_every_recorded_intermediate():
     with historical_runtime(BASE) as execute:
         executed = execute(
