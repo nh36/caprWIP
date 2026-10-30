@@ -230,6 +230,23 @@ def build(root: Path = ROOT, *, mode: str = "full") -> tuple[list[dict], list[di
         })
     required = {r.row_id for r in oe_rows if r.requires_report}
     philological = {c["row_id"] for c in cases if c["requires_extended_discussion"] == "1"}
+    # Publication-completion gate: an explicitly selected lexical publication
+    # owned by a model entry must actually be in the lexical assembly. This is
+    # the obligation record for adjudication-selected articles (e.g. filth,
+    # row 2335): once the editorial case exists, an absent or unassembled
+    # article fails the control plane instead of passing silently.
+    selected_models = {c["row_id"]: c["publication_source"] for c in cases
+                       if c["requires_extended_discussion"] == "1"
+                       and c["publication_source"].startswith("model_entries/")}
+    unassembled_selected = sorted(set(selected_models) - set(models), key=int)
+    if unassembled_selected:
+        raise ValueError("selected publication not assembled: "
+                         + ", ".join(unassembled_selected))
+    missing_ledgers = sorted(
+        (row_id for row_id, source in selected_models.items()
+         if not (reports / source.replace(".model.md", ".source_ledger.md")).is_file()
+         or not source.endswith(".model.md")),
+        key=int)
     stats = {
         "audit": len(corpus), "selected": len(runnable), "legacy": len(legacy_ids),
         "required": len(required), "legacy_current_required": len(required & legacy_ids),
@@ -243,6 +260,8 @@ def build(root: Path = ROOT, *, mode: str = "full") -> tuple[list[dict], list[di
         "reviewed_rows": len({case["row_id"] for case in cases}), "scoped_cases": len(cases),
         "philological_selected": len(philological),
         "pilot_current_required": len(required | philological),
+        "publication_selected_models": dict(sorted(selected_models.items(), key=lambda kv: int(kv[0]))),
+        "publication_missing_ledgers": missing_ledgers,
     }
     return crosswalk, inventory, stats
 

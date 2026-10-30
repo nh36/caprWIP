@@ -56,6 +56,23 @@ There is no second corpus, bibliography, sound-change registry or mutable databa
 Current selected forms in the crosswalk are generated from live owners, not edited
 in the editorial cases.
 
+## Publication obligations and the completion gate
+
+`editorial_cases.tsv` is the sole authoritative record that a specific row has
+been *selected for publication*: a case with `requires_extended_discussion=1`
+and a `model_entries/...` `publication_source` is a binding obligation, not a
+suggestion. An adjudication that admits a lexical witness and commits to a
+mature article must record that commitment as an editorial case in the same
+assignment (this record was missing after the SC065 filth admission, which is
+why the article's absence passed validation). Once recorded, the control plane
+fails closed: `pgmc_lexical_integration.build()` rejects a missing article
+file and a selected article absent from the class assembly, and reports
+missing `.source_ledger.md` companions. Corpus membership alone still carries
+no publication obligation. `python3 Germanic/tools/adjudicate.py --status`
+prints the canonical read-only report across the three axes (scientific
+adjudication, publication completion, full validation) without regenerating
+anything.
+
 ## What the populations mean
 
 | Population | Meaning at this base |

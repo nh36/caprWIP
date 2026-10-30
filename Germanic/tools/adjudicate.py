@@ -25,6 +25,14 @@
         This is the ONE command to run after any SOURCE edit, including
         rule moves. May also be invoked as 'SCNNN --refresh'.
 
+    python3 Germanic/tools/adjudicate.py --status
+        Read-only canonical completion report across three independent
+        axes: scientific adjudication (registry), corpus/baseline and
+        generated-artifact freshness, and lexical publication obligations
+        (explicitly selected articles must be present, assembled and
+        ledgered). Full strict validation is reported as a separate axis
+        that this command never claims to have performed.
+
     python3 Germanic/tools/adjudicate.py SC024 --evidence
         Deterministically gather the executable (runtime) evidence: run the
         control-plane refresh with an unconditional stage-bin rebuild
@@ -507,6 +515,72 @@ def check(sc_id) -> int:
     return 0
 
 
+def status() -> int:
+    """Canonical completion report from existing authorities (read-only).
+
+    Distinguishes three independent axes an assignment can leave open:
+    scientific completion (registry adjudications), publication completion
+    (explicitly selected lexical articles present, assembled and ledgered),
+    and full validation (strict test suite, which this report cannot attest
+    and therefore never claims). No artifact is regenerated or rewritten.
+    """
+    from collections import Counter  # stdlib, local to keep import cost low
+    import pgmc_lexical_integration as pli
+
+    failures = 0
+    rows = read_tsv(SC_REGISTRY)
+    counts = Counter(r["adjudication_status"] for r in rows)
+    print("== scientific adjudication (registry) ==")
+    for key_, value in sorted(counts.items()):
+        print(f"  {key_}: {value}")
+    nxt = next_sc()
+    print(f"  next pending historical change: {nxt or 'none'}")
+
+    print("== corpus and baseline (frozen summary) ==")
+    summary = json.loads(BASELINE_SUMMARY.read_text(encoding="utf-8"))
+    for key_ in ("total_lexemes", "accepted", "matched", "mismatched", "outputs_sha256"):
+        if key_ in summary:
+            print(f"  {key_}: {summary[key_]}")
+
+    print("== generated-artifact freshness (non-mutating) ==")
+    problems = artifact_graph.verify_all()
+    if problems:
+        failures += 1
+        for p in problems:
+            print(f"  STALE: {p}")
+    else:
+        print("  all artifact-graph nodes fresh")
+
+    print("== lexical publication obligations ==")
+    try:
+        _, _, stats = pli.build()
+    except ValueError as exc:
+        failures += 1
+        print(f"  PUBLICATION FAILED: {exc}")
+    else:
+        for key_ in ("selected", "assembled", "required", "philological_selected"):
+            print(f"  {key_}: {stats[key_]}")
+        selected_models = stats["publication_selected_models"]
+        print(f"  explicitly selected model publications ({len(selected_models)}): "
+              + ", ".join(selected_models))
+        if stats["publication_missing_ledgers"]:
+            print("  missing source ledgers (editorial follow-up): "
+                  + ", ".join(stats["publication_missing_ledgers"]))
+        else:
+            print("  all selected model publications carry source ledgers")
+        if stats["required_not_assembled"]:
+            print("  required_not_assembled (standing editorial policy, not a failure): "
+                  + ", ".join(stats["required_not_assembled"]))
+
+    print("== full validation ==")
+    print("  not attested by this report; run the full strict suite:")
+    print("  cd Germanic/tests && python3 -m pytest -q")
+    print("  plus INDEX_VERBORUM_STRICT=1 bash Germanic/docs/assembly/build_capr_book_draft_docker.sh")
+    print("STATUS " + ("FAILED" if failures else "OK (scientific/publication axes consistent; "
+                                                 "full validation must still be run)"))
+    return 1 if failures else 0
+
+
 def main() -> int:
     args = sys.argv[1:]
     if len(args) in {2, 4} and args[1] in {"--adopt-context-baseline", "--adopt-cell-baseline"}:
@@ -572,6 +646,8 @@ def main() -> int:
         return 0
     if args == ["--refresh"]:
         return refresh()
+    if args == ["--status"]:
+        return status()
     if (len(args) == 3 and args[:2] == ["--refresh", "--mode"]
             and args[2] in {"full", "portable"}):
         return refresh(mode=args[2])
