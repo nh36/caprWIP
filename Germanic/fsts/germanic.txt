@@ -982,12 +982,18 @@ define EnglishStarBackVowel PGmcStarBackVowel;
 # breaking products (which required a cluster environment) count as HEAVY.
 define EnglishStarShortDiphthong [
     {*ea} | {*eo} | {*io} |
-    {*éa} | {*éo} | {*ío} | {*íe}
+    {*éa} | {*éo} | {*ío} | {*íe} | {*ie}
     # Acute-marked short diphthongs are back-umlaut products of acute-stressed
     # SHORT vowels (*é+r+u → *éo+r+u). The source syllable was light; apocope
     # should not fire. Breaking-sourced *éa/*éo/*ío occur in 2-C environments,
     # which already trigger apocope via the "short V + 2 C" clause in that rule,
     # so no apocope is lost by classing them as short.
+    # {*ie} is WS palatal diphthongization of SHORT *e (the long product of
+    # *ē is {*īe}, classed long); the handbooks treat ie < *e as a short
+    # diphthong. Probed during the SC066 adjudication: classing it long made
+    # a ċietel-type form wrongly heavy for l-adjacent syncope
+    # (audits/sc066-068-experiments/), with zero delta on the selected corpus
+    # either way.
 ];
 
 define EnglishStarLongDiphthong [
@@ -995,11 +1001,9 @@ define EnglishStarLongDiphthong [
     {*ēa} | {*ēo} | {*īe} | {*īo} |
     {*ái} | {*áu} | {*éu} | {*íu} |
     {*ḗa} |
-    {*ḗo} |
-    {*ie}
+    {*ḗo}
     # Inherited long diphthongs (*ai, *au, *eu, *iu) and their acute counterparts;
-    # {*ḗa} is the lengthened breaking product of long *ā. {*ie} is WS palatal
-    # diphthongization; kept here pending probe.
+    # {*ḗa} is the lengthened breaking product of long *ā.
 ];
 
 define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
@@ -3504,23 +3508,41 @@ define OEMedialSyncope FootCtx([
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
 ]);
 
-# R/T §6.7.4: l-adjacent syncope.
-# "Unstressed *i in open syllables is often syncopated next to l."
-# Examples: netle ~ netele 'nettle', eln 'ell', twelf 'twelve'.
-# Applies even after light syllables, unlike general high-vowel syncope.
-# Note: targets both *i and *e because unstressed *i → *e occurs earlier.
-# Lexically variable (cetel 'kettle' does NOT syncopate), but regular
-# enough for netle, eln, twelf to justify a rule.
-# IMPORTANT: Must be in MEDIAL position (preceded by vowel + consonant).
-# Otherwise deletes root vowels in words like *weljaną 'will'.
-# Context: vowel between consonant and *l (creating Cl cluster).
-# R/T §6.7.4: "unstressed *i in open syllables is often syncopated next to l"
-# R/T explicitly mentions only *i (not *e). The medial vowel is still *i at this
-# point because OEMedUnstressedILowering fires AFTER syncope in the pipeline.
+# SC066: l-adjacent syncope (R/T vol.2 §6.7.4 pp. 270–278; Luick §336;
+# Brunner §159c pp. 132–133; Campbell §§388, 589; Barrack 351 p. 87,
+# 388 p. 96).
+# Regular deletion of unstressed medial *i next to *l. Two historically
+# distinct strata are stated here as one composed law:
+#   (1) The inherited heavy-syllable syncope (Campbell §589; Barrack 351):
+#       after a heavy syllable — long vowel or long diphthong + C, or
+#       short nucleus + CC — medial *i deletes before *l regardless of
+#       what follows (spindle *spinnil-, thistle *θistil-).
+#   (2) The light-syllable pre-l deletion (Luick §336, after Weyhe;
+#       Brunner §159c; Campbell §§388, 390): after a light syllable,
+#       *i deletes before *l ONLY in an OPEN medial syllable, i.e. with
+#       a vowel following the *l (nettle *natilōn- → netle, the deleted
+#       vowel standing before the surviving *-ǭ).
+# cetel 'kettle' (*katilaz, Orel 2003:211) is NOT a lexical exception:
+# its nominative *i stands in a word-final CLOSED syllable after apocope
+# — light and closed — which every published formulation of the change
+# excludes. The earlier description of this law as "lexically variable"
+# was false, as was the claim that it targets *e: the vowel is still *i
+# at this point because OEMedUnstressedILowering fires AFTER syncope.
+# Short diphthongs pattern light (weight counts the nucleus): {*ie} from
+# WS palatal diphthongization of short *e is short, so ċietel-type
+# probes are retained. Late-WS netele and crypel ~ cryple byforms are
+# recorded in the dossier (anaptyxis per Luick §336.2/Brunner, arrested
+# variation per R/T p. 272); the selected corpus cannot discriminate.
+# Must be MEDIAL (preceded by vowel + consonant): otherwise deletes root
+# vowels in words like *weljaną 'will'. Known latent residue: a never-
+# trisyllabic heavy nominative (engel-type) would wrongly syncopate; the
+# selected-cell architecture sees only post-apocope strings (see
+# audits/sc066-068-experiments/).
 define OELAdjacentSyncope Ctx([
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
+    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ {*l},
+    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},
+    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic
 ]);
 
 # Compound linking vowel syncope (§17.11, Option T — trough-conditioned).
