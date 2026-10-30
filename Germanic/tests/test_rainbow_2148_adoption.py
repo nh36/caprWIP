@@ -119,9 +119,10 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assembly = ROOT / "Germanic/docs/assembly"
     with (assembly / "manifest_all_by_class.tsv").open() as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    assert len(rows) == 168
+    # 169 = 168 at rainbow adoption + the published filth article (row 2335).
+    assert len(rows) == 169
     regular = [row for row in rows if row["derivation_class"] == "regular"]
-    assert len(regular) == 90
+    assert len(regular) == 91
     rainbow = [row for row in regular if row["row_id"] == "2148"]
     assert len(rainbow) == 1
     assert (rainbow[0]["proto"], rainbow[0]["protoform"],
@@ -141,8 +142,19 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     current = list(csv.DictReader((ROOT / path).read_text().splitlines(), delimiter="\t"))
     assert all(row in current for row in previous)
     added = [row for row in current if row not in previous]
-    # The SC065 adjudication test pins the filth (row 2335) admission.
-    added = [row for row in added if row["source_ref"] != "filth — OE fȳlþ"]
+    # The SC065 adjudication and the filth publication closeout (row 2335)
+    # pin their own rows: 3 under the volume heading ref, 8 under the model
+    # path, 2 explicit section-20 cognate tags (os/ohg).
+    filth_refs = {
+        "filth — OE fȳlþ",
+        "Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md",
+    }
+    filth = [row for row in added if row["source_ref"] in filth_refs
+             or (row["source_ref"].endswith("reader_facing_local_section_20.md")
+                 and (row["language"], row["form"]) in {("os", "fulitha"),
+                                                        ("ohg", "fülida")})]
+    assert len(filth) == 13
+    added = [row for row in added if row not in filth]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

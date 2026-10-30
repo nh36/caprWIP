@@ -1,0 +1,4 @@
+# Test-environment extras for Germanic/tests (host Python).
+# pytest itself is assumed; xdist is only needed for the optional parallel
+# lane documented in docs/CI_VALIDATION.md ("Safe parallel execution").
+pytest-xdist>=3.6,<4

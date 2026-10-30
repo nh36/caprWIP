@@ -68,6 +68,98 @@ The older SC021--SC027 live-probe decorators and the local build-version
 comparison carry the same explicit marker; their committed-evidence and
 synthetic validator tests remain portable.
 
+## Three-level development validation workflow
+
+Running the entire strict suite after every intermediate edit is unnecessary;
+running it once against the final candidate state is mandatory. The levels are
+cumulative capabilities, not alternatives, and a previous full pass never
+certifies a subsequently changed scientific or publication state.
+
+**Level A — focused development checks** (seconds to a few minutes). Run the
+tests owning the files being edited, for example during lexical publication
+work:
+
+```sh
+cd Germanic/tests && python3 -m pytest -q \
+    test_lexical_editorial_publication.py test_pgmc_lexical_integration.py \
+    test_lexical_editorial_order.py
+python3 Germanic/docs/tools/check_reader_facing_semantics.py
+```
+
+**Level B — integrated consistency** (a few minutes). After a coherent group
+of SOURCE edits:
+
+```sh
+python3 Germanic/tools/adjudicate.py --refresh   # must end CONTROL PLANE CLEAN
+python3 Germanic/tools/adjudicate.py --status    # read-only three-axis report
+```
+
+`--status` reports scientific adjudication state, baseline fingerprints,
+artifact-graph freshness and lexical publication obligations (including
+explicitly selected articles that are missing, unassembled or unledgered),
+and states explicitly that full validation is a separate axis it cannot attest.
+
+**Level C — full strict validation** (the authoritative final gate). Once the
+SOURCE state is final:
+
+```sh
+cd Germanic/tests
+python3 -m pytest -q --ignore=test_evidence_interface.py
+python3 -m pytest -q test_evidence_interface.py   # exclusive: rebuilds canonical bins
+```
+
+Intermediate commits may land with their validation status stated honestly;
+the full strict suite runs once against the final candidate tree, and again
+only if repairs change what was certified. Record the exact tested commit.
+A portable GitHub Actions pass is never equivalent to this gate.
+
+## Safe parallel execution (optional, full mode)
+
+The suite divides into three concurrency classes:
+
+1. **Independent tests** (unmarked): pure source/projection checks using
+   read-only authorities or disposable temporary directories. Safe in
+   separate processes.
+2. **Runtime tests** (`-m runtime`): share the single authoritative Foma
+   binary directory and backend container (`capr_runtime.layout()`); two
+   concurrent compilations against those bins are forbidden. Serial only;
+   `conftest.py` fails any runtime-marked test that executes inside a
+   pytest-xdist worker rather than risking shared-artifact corruption.
+3. **Exclusive runtime** (`test_evidence_interface.py`): rebuilds the
+   canonical bins and `oe_build_manifest.json`; always runs alone, last.
+
+Canonical parallel invocation (requires `pytest-xdist`, pinned in
+`Germanic/tests/requirements-test.txt`):
+
+```sh
+cd Germanic/tests
+python3 -m pytest -q -m "not runtime" -n 4 --dist loadfile \
+    --ignore=test_evidence_interface.py        # lane 1: parallel
+python3 -m pytest -q -m runtime \
+    --ignore=test_evidence_interface.py        # lane 2: serial runtime
+python3 -m pytest -q test_evidence_interface.py  # lane 3: exclusive
+```
+
+`--dist loadfile` keeps each test module's shared fixtures on one worker. The
+three lanes together collect exactly the tests of the serial Level C commands
+(measured 2026-10-29: 1584 + 45 + 24 = 1653 collected tests); verify with
+`--collect-only -q` when in doubt. Each xdist worker repeats the
+session holding/evidence preflight (a few seconds per worker). The serial
+route remains the reference; use the lanes when iterating on large changes.
+
+Measured on an 8-core M-series host (2026-10-29): the full serial Level C
+run (everything except `test_evidence_interface.py`) takes 77 minutes
+(1629 tests, 9152 subtests); lane 1 with `-n 4` runs in
+about 13 minutes against roughly 18 minutes serially; lane 2 is about 47
+minutes and is the dominant cost, spent waiting on container Foma work
+(user CPU under six seconds), so xdist cannot reduce it and the overall
+full-suite gain is modest. The honest recommendation is: use Level A/B
+during development, parallelise lane 1 when iterating broadly, and accept
+the serial runtime lane until its container work is itself restructured
+(for example by reusing one immutable compiled snapshot across read-only
+runtime tests), which is future work requiring its own adjudication of
+evidence-freshness semantics.
+
 ## Portable evidence and provenance
 
 Portable validation requires bibliography keys, declared library-contained

@@ -486,9 +486,18 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     rainbow = [row for row in added if row["source_ref"] in rainbow_refs]
     assert len(rainbow) == 8
     added = [row for row in added if row not in rainbow]
-    # The SC065 adjudication test pins the filth (row 2335) admission.
-    filth = [row for row in added if row["source_ref"] == "filth — OE fȳlþ"]
-    assert len(filth) == 1
+    # The SC065 adjudication and the filth publication closeout (row 2335)
+    # pin their own rows: 3 under the volume heading ref, 8 under the model
+    # path, 2 explicit section-20 cognate tags (os/ohg).
+    filth_refs = {
+        "filth — OE fȳlþ",
+        "Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md",
+    }
+    filth = [row for row in added if row["source_ref"] in filth_refs
+             or (row["source_ref"].endswith("reader_facing_local_section_20.md")
+                 and (row["language"], row["form"]) in {("os", "fulitha"),
+                                                        ("ohg", "fülida")})]
+    assert len(filth) == 13
     added = [row for row in added if row not in filth]
     assert len(added) == 8
     expected = {

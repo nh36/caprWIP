@@ -28,6 +28,19 @@ def pytest_collection_modifyitems(config, items):
                 item.add_marker(skip)
 
 
+def pytest_runtest_setup(item):
+    # Concurrency guard: runtime-marked tests share the single authoritative
+    # Foma binary directory and backend container (capr_runtime.layout()), so
+    # they must never execute inside a pytest-xdist worker. Rejected loudly
+    # rather than risking two competing compilations against shared bins.
+    if (item.get_closest_marker("runtime") is not None
+            and hasattr(item.config, "workerinput")):
+        pytest.fail(
+            "runtime-marked tests require exclusive serial access to the shared "
+            "Foma runtime; run them without -n (see docs/CI_VALIDATION.md: "
+            "parallel lane uses -m 'not runtime').", pytrace=False)
+
+
 def pytest_sessionstart(session):
     mode = session.config.getoption("--validation-mode")
     try:

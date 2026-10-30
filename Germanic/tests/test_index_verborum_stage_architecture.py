@@ -355,5 +355,117 @@ class NonModelStageFailClosedTests(unittest.TestCase):
         )
 
 
+class TraceDentalSpellingCollapseTests(unittest.TestCase):
+    """The compact trace prints the FST-alphabet dental (θ); a manifest
+    protoform spelled with þ must not surface beside it as a second
+    apparent reconstruction of the same selected input (row 2335)."""
+
+    def test_no_theta_thorn_duplicate_reconstructions(self) -> None:
+        rows = _rows(BOOK / "index_verborum_forms.tsv")
+        by_ref: dict[tuple[str, str], set[str]] = {}
+        for row in rows:
+            if row.get("language") not in RECONSTRUCTED_STAGES:
+                continue
+            key = (row.get("source_ref", ""), row.get("sort_key", ""))
+            by_ref.setdefault(key, set()).add(row.get("form", ""))
+        offenders = []
+        for key, forms in by_ref.items():
+            for form in forms:
+                if "θ" in form and form.replace("θ", "þ") in forms:
+                    offenders.append((key, form))
+        self.assertEqual(offenders, [],
+                         "θ- and þ-spellings of the same reconstruction "
+                         f"must collapse to one index form: {offenders}")
+
+    def test_filth_trace_input_collapses_to_manifest_spelling(self) -> None:
+        rows = _rows(BOOK / "index_verborum_forms.tsv")
+        filth = [r for r in rows if r.get("source_ref") == "filth — OE fȳlþ"
+                 and r.get("source_scope") == "trace_proto_input"]
+        self.assertEqual([r["form"] for r in filth], ["*fūliþō"])
+
+
+class ReaderProseLanguageWindowTests(unittest.TestCase):
+    """A hard line wrap must not strip an explicit language name from the
+    inference window of a reader-facing prose form (the OS fulitha /
+    OHG fülida mislabelling): when prose names a concrete daughter
+    language immediately before a form, the generated example row must
+    not carry a different daughter language."""
+
+    DAUGHTERS = {"on", "os", "ohg", "ofris", "goth", "german", "dutch",
+                 "odutch", "mdutch", "me", "modeng", "oirish"}
+
+    @staticmethod
+    def _paragraphs(path: Path) -> list[tuple[int, int, str]]:
+        lines = path.read_text(encoding="utf-8").splitlines()
+        paragraphs: list[tuple[int, int, str]] = []
+        start, buf = None, []
+        for i, line in enumerate(lines, start=1):
+            if line.strip():
+                if start is None:
+                    start = i
+                buf.append(line.strip())
+            elif start is not None:
+                paragraphs.append((start, i - 1, " ".join(buf)))
+                start, buf = None, []
+        if start is not None:
+            paragraphs.append((start, len(lines), " ".join(buf)))
+        return paragraphs
+
+    def test_adjacent_language_name_wins_over_line_window(self) -> None:
+        import re
+
+        # Longest names first so 'Old High German' is not read as 'German'.
+        names = [
+            (r"old high german", "ohg"),
+            (r"old saxon", "os"),
+            (r"old norse", "on"),
+            (r"old frisian", "ofris"),
+            (r"middle dutch", "mdutch"),
+            (r"old dutch", "odutch"),
+            (r"middle english", "me"),
+            (r"modern english", "modeng"),
+            (r"old irish", "oirish"),
+            (r"gothic", "goth"),
+        ]
+        source = biv.CHRONOLOGY_PATH
+        lines = source.read_text(encoding="utf-8").splitlines()
+        paragraphs = self._paragraphs(source)
+        rows = _rows(BOOK / "reader_facing_example_forms.tsv")
+        offenders = []
+        for row in rows:
+            if row.get("include_in_example_index") != "yes":
+                continue  # notation and segments, not whole example forms
+            inferred = row.get("inferred_language", "")
+            if inferred not in self.DAUGHTERS:
+                continue
+            ref = row.get("source_ref", "")
+            try:
+                line_no = int(ref.rsplit(":", 1)[1])
+            except (IndexError, ValueError):
+                continue
+            if line_no < 1 or line_no > len(lines):
+                continue
+            paragraph = next((p for p in paragraphs if p[0] <= line_no <= p[1]), None)
+            if paragraph is None:
+                continue
+            form = row.get("form", "")
+            text = paragraph[2]
+            for match in re.finditer(r"\\emph\{" + re.escape(form) + r"\}", text):
+                # Up to four words immediately preceding the form.
+                window = " ".join(text[: match.start()].split()[-4:]).casefold()
+                adjacent = ""
+                for pattern, code in names:
+                    if re.search(r"\b" + pattern + r"\b", window):
+                        adjacent = code
+                        break
+                if adjacent and inferred != adjacent:
+                    offenders.append((ref, form, inferred, adjacent))
+                    break
+        self.assertEqual(offenders, [],
+                         "prose names one daughter language immediately before "
+                         "these forms but the generated rows carry another "
+                         f"(line-wrapped inference window): {offenders}")
+
+
 if __name__ == "__main__":
     unittest.main()

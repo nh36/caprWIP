@@ -55,7 +55,8 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertTrue(straw.has_publication_report)
         self.assertFalse(straw.has_production_manifest_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
-                         PRINCIPAL | {"1934", "1941", "2148", "2162", "2224", "2283"})
+                         PRINCIPAL | {"1934", "1941", "2148", "2162", "2224", "2283",
+                                      "2335"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -132,9 +133,11 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 168)
-        # Earlier publications, SC112's witnesses and the scoped rainbow model.
-        added_ids = {"2137", "2148", "2185", "2200", "2224", "2283", "2333", "2334"}
+        self.assertEqual(len(current), 169)
+        # Earlier publications, SC112's witnesses, the scoped rainbow model
+        # and the SC065 filth publication.
+        added_ids = {"2137", "2148", "2185", "2200", "2224", "2283", "2333", "2334",
+                     "2335"}
         added = [r for r in current if r["row_id"] in added_ids]
         self.assertEqual({r["row_id"] for r in added}, added_ids)
         unchanged = {r["row_id"]: r for r in current if r["row_id"] not in added_ids}
@@ -236,7 +239,7 @@ class EditorialPublicationTests(unittest.TestCase):
             if not row.editorial_report_path:
                 continue
             path = REPORTS / row.editorial_report_path
-            old = "" if row.row_id in {"1941", "2148", "2224", "2283"} else committed(path)
+            old = "" if row.row_id in {"1941", "2148", "2224", "2283", "2335"} else committed(path)
             pattern = r"\[[^\]\n]*@[^\]\n]*(?:\n[^\]]*)?\]"
             added = Counter(re.findall(pattern, path.read_text())) - Counter(re.findall(pattern, old))
             for block in added:
@@ -250,6 +253,35 @@ class EditorialPublicationTests(unittest.TestCase):
                         self.assertRegex(citation, r",\s*pp?\.\s*\d+")
                     count += 1
         self.assertGreaterEqual(count, 20)
+
+
+class PublicationCompletionGateTests(unittest.TestCase):
+    """SC065 regression: an explicitly selected lexical publication must be
+    present, assembled and (going forward) ledgered — visible via the stats
+    exposed to `adjudicate.py --status`, and fatal in build() when absent."""
+
+    @classmethod
+    def setUpClass(cls):
+        _, _, cls.stats = editorial.build(ROOT, mode="portable")
+
+    def test_selected_model_publications_are_assembled(self):
+        selected = self.stats["publication_selected_models"]
+        # filth (row 2335) is the regression case for the SC065 publication gap
+        self.assertEqual(selected.get("2335"),
+                         "model_entries/2335-filth-fȳlþ.model.md")
+        for row_id, source in selected.items():
+            path = REPORTS / source
+            self.assertTrue(path.is_file(), f"missing selected article: {row_id}")
+            # build() itself raises on unassembled selected rows; reaching
+            # here with a populated dict proves every one is in the assembly.
+        self.assertTrue(selected)
+
+    def test_source_ledger_gaps_are_reported_not_hidden(self):
+        missing = set(self.stats["publication_missing_ledgers"])
+        # straw (2224) predates the ledger convention; nothing newer may
+        # join this known gap silently.
+        self.assertLessEqual(missing, {"2224"})
+        self.assertNotIn("2335", missing)
 
 
 if __name__ == "__main__":

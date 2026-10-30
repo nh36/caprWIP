@@ -84,7 +84,8 @@ class StageResolutionAuthorityTests(unittest.TestCase):
     def test_published_manifest_stages_equal_survey_stage_assignments(self):
         survey_rows = {row["row_id"]: row for row in survey.inventory()}
         manifest = tsv(ASSEMBLY / "manifest_all_by_class.tsv")
-        self.assertEqual(len(manifest), 168)
+        # 169 = 168 + the published filth article (row 2335).
+        self.assertEqual(len(manifest), 169)
         for row in manifest:
             expected = survey_rows[row["row_id"]]
             self.assertEqual(
