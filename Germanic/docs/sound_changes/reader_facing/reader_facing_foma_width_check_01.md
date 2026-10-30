@@ -78,7 +78,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | 14 | 32 | no |
 | 063-high-vowel-apocope.md | SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 29 | 118 | yes |
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | 16 | 55 | no |
-| 065-medial-syncope.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 14 | 93 | yes |
+| 065-medial-syncope.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 47 | 93 | yes |
 | 066-l-adjacent-syncope.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 18 | 62 | no |
 | 067-dental-assimilation.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | 5 | 33 | no |
 | 068-preconsonantal-degemination.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | 5 | 93 | yes |
@@ -168,7 +168,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 - `114` chars — `    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `114` chars — `    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 
-### 065-medial-syncope.md:14 — SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
+### 065-medial-syncope.md:47 — SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 
 - `93` chars — `    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]`
 

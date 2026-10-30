@@ -11,19 +11,19 @@ report manifest and class assembly manifest. Regenerate only with
 | audit | 396 |
 | legacy_current_required | 151 |
 | required | 161 |
-| assembled | 168 |
+| assembled | 169 |
 | production_pilots | 11 |
 | format_tests | 1 |
-| reviewed_rows | 14 |
-| scoped_cases | 17 |
-| philological_selected | 12 |
+| reviewed_rows | 15 |
+| scoped_cases | 18 |
+| philological_selected | 13 |
 | pilot_current_required | 165 |
 
 added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335.
 
 research_only: 1935, 1947, 1948, 1994, 2156, 2218.
 
-required_not_assembled: 2055, 2120, 2327, 2328, 2329, 2335.
+required_not_assembled: 2055, 2120, 2327, 2328, 2329.
 
 assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113, 2137, 2148, 2185, 2200, 2283.
 

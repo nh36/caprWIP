@@ -29,7 +29,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes and, within each class, alphabetically by headword. Counts in this alpha are:
 
-- Regular derivations: 90
+- Regular derivations: 91
 - Attested variants: 4
 - Early analogy: 35
 - Late analogy: 29
@@ -1463,6 +1463,133 @@ Clark Hall records [_feld_]{.iv lang=oe sort=feld role=comparison_form source_re
 #### Development to Old English
 
 In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and high-vowel apocope then yields [_feld_]{.iv lang=oe sort=feld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29:1"} 'field'. Whether the voiced dental ultimately reflects inherited alternation or the regular _\*lþ_ > _ld_ development, both accounts converge on the same Old English form [@RingeTaylor2014, 170].
+
+### filth — OE _fȳlþ_
+
+Derivation: _\*fūliþō_ > _fȳlþ_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*fūliθō_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*fūliθu} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE I Umlaut} & \emph{*fȳliθu} \\
+\mbox{OE High Vowel Apocope} & \emph{*fȳliθ} \\
+\mbox{OE Medial Syncope} & \emph{*fȳlθ} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _fȳlþ_
+
+#### Old English evidence
+
+Old English [fȳlþ]{.iv lang=oe sort=fylth role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:21:1"} 'filth,
+foulness, impurity' is a feminine abstract noun on the adjective *fūl*
+'foul'. The Toller Supplement lemmatizes
+[fylþ]{.iv lang=oe sort=fylth role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:24:1"} 'filth' without
+marking vowel quantity, in both physical and moral senses: it glosses
+Latin *putor* in the Aldhelm glosses (An. Ox. 3323) and *putredo* in the
+*Liber scintillarum* (Scint. 38, 19), and the entry also records the
+inflected form [fylþu]{.iv lang=oe sort=fylthu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:28:1"}
+'filth' (An. Ox. 1790) [@Toller1921, p. 276]. Clark Hall lemmatizes
+[fýlð]{.iv lang=oe sort=fylth role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:30" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:30:1"} 'filth' as feminine
+and marks the long vowel [@ClarkHall1960, p. 125]. The Old English form here
+*fȳlþ* is the endingless nominative singular, normalized with marked
+length after Clark Hall and with thorn for the dental fricative; the
+substitution of thorn for eth changes no segment. The inflected *fylþu*
+beside endingless *fylþ* is the familiar alternation of the *-iþō*
+abstracts, seen also in *strengþu* 'strength' beside *hǣlþ* 'health',
+*þīefþ* 'theft' and *wiermþu* 'warmth' [@Campbell1959, p. 236, §589.6].
+
+#### Reconstruction and comparative evidence
+
+Kroonen reconstructs the adjective base
+[fūla-]{.iv .recon lang=pgmc sort=fula role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:42:1"} 'foul,
+rotten' and cites among its reflexes an exact West Germanic abstract,
+Old Saxon [fulitha]{.iv lang=os sort=fulitha role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:44:1"}
+'filth' [@Kroonen2013, p. 158]. Orel likewise prints the base adjective
+\emph{*fūlaz}, with OE *fūl* 'foul, dirty, rotten' among its reflexes,
+but lists no derived abstract [@Orel2003, p. 121]. The Toller entry
+itself cites the Old Saxon noun together with Old High German
+[fülida]{.iv lang=ohg sort=fulida role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:49" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:49:1"} 'filth'
+[@Toller1921, p. 276]. Bammesberger documents the suffix type: the
+feminine abstracts in \emph{*-iþō} show the vowel \emph{*-i-} before
+the dental throughout, as in \emph{*mēriþō} > *mǣrþu* 'fame' and
+\emph{*hauhiþō} > *hīehþu* 'height' [@Bammesberger1990,
+pp. 117--118, §4.5].
+
+The derivational input
+[fūliþō]{.iv .recon lang=pgmc sort=fulitho role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:57:1"} 'filth'
+is therefore an assembled morphological reconstruction: the attested
+base \emph{*fūla-} composed with the attested suffix \emph{*-iþō}. No
+single authority prints the composite verbatim; its two members are
+each independently supported, and the Old Saxon and Old High German
+nouns attest the derivative itself on the continent. Those cognates
+retain the medial vowel, so the medial loss seen in Old English is an
+English development, not a common West Germanic one.
+
+#### Development to Old English
+
+The adopted derivation is regular throughout.
+[SC019, final long-*ō* raising](#rule-PNWGmcFinalLongORaising) gives
+\emph{*fūliþō} > \emph{*fūliþu}. [SC055, i-umlaut](#rule-OEIUmlaut)
+fronts the root vowel over the medial syllable, \emph{*fūliþu} >
+\emph{*fȳliþu}. [SC063, high-vowel apocope](#rule-OEHighVowelApocope)
+removes the final high vowel after the heavy sequence,
+\emph{*fȳliþu} > \emph{*fȳliþ}, and
+[SC065, medial syncope](#rule-OEMedialSyncope) deletes the now-medial
+\emph{*i} before the dental, \emph{*fȳliþ} > *fȳlþ*.
+
+The word is a live chronological witness. Had medial syncope preceded
+i-umlaut, the \emph{*i} that conditions the umlaut would have been
+deleted first, and the outcome would have been unattested \emph{*fūlþ}
+rather than attested *fȳlþ*; umlaut must therefore precede this
+syncope. The same ordering is visible across the *-iþō* class, whose
+members uniformly surface with umlauted root vowels beside syncopated
+suffixes [@Campbell1959, p. 236, §589.6; @Bammesberger1990,
+pp. 117--118, §4.5].
+
+Campbell derives the endingless nominative singular of these abstracts
+analogically, after the *lār* type, with the medial syncope taken as
+given for the class [@Campbell1959, p. 236, §589.6]. The adopted
+derivation reaches the same surface form by the regular phonological
+route, through raising, apocope and syncope, without an analogical
+step. Both accounts converge on the attested form, and the corpus
+output does not decide between them; the alternative is recorded
+rather than suppressed. The inflected *fylþu* beside *fylþ* shows that
+the paradigm retained vocalic case forms either way.
 
 ### flea — OE _flēah_
 

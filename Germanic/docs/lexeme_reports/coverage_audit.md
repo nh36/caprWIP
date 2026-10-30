@@ -3,12 +3,12 @@
 - Total OE rows with real counterpart: 390
 - Manifest entries loaded: 12
 - Rows requiring lexeme report: 165
-- Required rows with published SOURCE: 22
-- Required rows with no published SOURCE: 143
-- Rows selected independently for philological discussion: 12
+- Required rows with published SOURCE: 23
+- Required rows with no published SOURCE: 142
+- Rows selected independently for philological discussion: 13
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 149
-- Required rows with no source material found: 5
+- Required rows with source material available but no manifest-backed production report: 150
+- Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 228
 - Rows with STATUS=format_test manifest entries: 1
@@ -24,7 +24,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 29 | 29 | 4 | 25 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 312 | 87 | 0 | 82 | 5 |
+| regular | 312 | 87 | 0 | 83 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -43,6 +43,7 @@
 | 2326 | you | ēow | regular | yes | certified_editorial_source | - | model_entries/2326-you-ēow.model.md | NOTE, philological=you-oblique-origin |
 | 2330 | thought | þōhte | regular | yes | certified_editorial_source | - | model_entries/2330-thought-þōhte.model.md | NOTE, philological=thought-connectorless-origin |
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
+| 2335 | filth | fȳlþ | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 
 ## Required rows with manifest-backed production reports
 
@@ -213,6 +214,7 @@
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
 | 2333 | there | þǣr | regular | yes | source_material | - | model_entries/2333-there-þǣr.model.md, model_entries/2333-there-þǣr.source_ledger.md | NOTE |
 | 2334 | where | hwǣr | regular | yes | source_material | - | model_entries/2334-where-hwǣr.model.md, model_entries/2334-where-hwǣr.source_ledger.md | NOTE |
+| 2335 | filth | fȳlþ | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 
 ## Required rows with no source material found
 
@@ -222,7 +224,6 @@
 | 2327 | wound | wundude | regular | yes | none | - | - | NOTE |
 | 2328 | sow | sāwan | regular | yes | none | - | - | NOTE |
 | 2329 | betray | lǣwan | regular | yes | none | - | - | NOTE |
-| 2335 | filth | fȳlþ | regular | yes | none | - | - | NOTE |
 
 ## Regular rows with empty NOTE and no report required
 
