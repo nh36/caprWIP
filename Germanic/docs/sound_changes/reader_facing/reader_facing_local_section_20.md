@@ -5328,14 +5328,73 @@ ordering witness.
 
 ```foma
 define OELAdjacentSyncope Ctx([
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant+ _ {*l},
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || EnglishStarDiphthong OEAnyConsonant+ _ {*l}
+    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ {*l},
+    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},
+    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic
 ]);
 ```
 
 The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
 earlier umlaut, as *netle* ‘nettle’ and *spinl* ‘spindle’ demonstrate.
+
+Two historically distinct strata are stated here as one law. After a heavy
+syllable the deletion continues the exceptionless prehistoric syncope of
+unstressed high vowels in open medial syllables, the same law whose pre-dental
+slice has already been treated: [spénnilō]{.recon} ‘spindle’ and the genitive
+of [θístilas]{.recon} ‘thistle’ lose their \emph{*i} after the heavy sequences
+\emph{-nn-} and \emph{-st-} [@RingeTaylor2014, pp. 270--272, §6.7.3;
+@Campbell1959, p. 158, §392]. After a light syllable, however, the handbooks
+describe a later and more particular development: unstressed \emph{*i} next to
+\emph{l} is lost even where the preceding syllable is light, as in *netle*
+‘nettle’ from the diminutive [nátilōn]{.recon} [@Kroonen2013, p. 384;
+@RingeTaylor2014, p. 272, §6.7.4]. Luick, following Weyhe, restricts this
+light-syllable deletion to trisyllabic forms whose middle syllable was open,
+dating it before the literary period after dentals and to the eighth century
+after gutturals [@Luick1914, §336]; Brunner likewise treats it as regular in
+the oldest sources after light syllables [@SieversBrunner1965, pp. 132--133,
+§159c]; Campbell describes medial vowels as dropped after short syllables when
+a group of consonant plus \emph{l} or \emph{r} would result [@Campbell1959,
+pp. 157--158, §§388--390].
+
+The open-syllable condition carries the explanatory weight. *Cetel* ‘kettle’,
+an early Latin loan ([katilaz]{.recon}, from \emph{catillus}), famously fails
+to syncopate [@Orel2003, p. 211; @RingeTaylor2014, p. 272]. It is not a
+lexical exception. Its nominative \emph{*i} stands, after apocope, in a
+word-final closed syllable — light and closed — a position that no published
+formulation of the change reaches. The same structural point explains the
+nominative--oblique split that Campbell records for the *netel*/*spinel*
+class, where the nominative retains its vowel while the syllabically open
+oblique cases syncopate [@Campbell1959, pp. 235--236, §589]. Within its properly
+stated domain — after a heavy syllable, or after a light syllable in an open
+medial syllable — the deletion is regular.
+
+The sources disagree about the residue of variation. Weyhe, Luick, and
+Brunner treat the law as categorical within its consonant-class and dialect
+conditions, explaining late West Saxon *netele* as anaptyxis, a secondary
+vowel reinserted in the cluster [@Luick1914, §336; @SieversBrunner1965,
+p. 133, §159 Anm. 3]. Ringe and Taylor instead read pairs such as *crypel*
+beside dative *cryple* as a change arrested before completion, leaving stable
+variation [@RingeTaylor2014, p. 272]. The selected corpus cannot discriminate
+between these readings, since its witnesses lie in the post-dental territory
+that all parties treat as deleted; both accounts are therefore recorded
+without a forced choice.
+
+Barrack reaches the same material through his framework of progressive
+environment simplification. His rule for medial high-vowel deletion in open
+syllables after long accented syllables corresponds to the heavy-syllable
+stratum, and in West Saxon he drops the length condition, generalizing the
+deletion to light syllables [@Barrack1975, p. 87]. A separate rule deletes an
+unstressed vowel before a liquid or nasal followed by a vowel, and he reports
+that West Saxon simplified the environment further by dropping the
+following-vowel condition entirely [@Barrack1975, p. 96]. The present law
+retains the following-vowel condition for the light stratum: dropping it, as
+Barrack's West Saxon formulation would, predicts syncope in the *cetel*
+nominative. His neighbouring rule deleting a vowel after a liquid, which
+derives *meolc* ‘milk’ from [meluk]{.recon} [@Barrack1975, p. 96], is likewise
+not adopted: West Saxon *meoloc* retains the vowel, and medial \emph{*u} next
+to \emph{l} is in general kept far longer than \emph{*i} [@Luick1914, §336.2;
+@RingeTaylor2014, p. 273].
 
 Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred} rather than
 expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred} rather
@@ -5376,9 +5435,34 @@ Preconsonantal \emph{*tt} and \emph{*nn} simplify only after syncope has
 created a following sonorant cluster, as in *spinl* ‘spindle’
 [@RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
+The historical change is a general one: Ringe and Taylor state simply that
+geminates were degeminated next to another consonant [@RingeTaylor2014,
+p. 296, §6.8.2]. Barrack describes the same territory twice over, once as a
+degemination of long consonants after a vowel before another consonant, and
+once as a late and general simplification of triple clusters in both
+directions, which he orders after his syncope rules [@Barrack1975, pp. 115,
+122]. The present law states the narrower slice of this process that the
+witnesses attest: \emph{*tt} before a nasal in *botm* ‘bottom’ and \emph{*nn}
+before \emph{l} in *spinl* ‘spindle’. The two clauses are segmental cases of
+one change, not two historical developments, and no witness in the corpus
+licenses the broader formulation.
+
+The two witnesses reach the law by different routes. For *spinl* the geminate
+cluster exists only because l-adjacent syncope has just created it; for *botm*
+the cluster \emph{*ttm} is already present in the stem. Kroonen reconstructs
+the word with an inherited geminate, [buttman-]{.recon} beside
+[budman-]{.recon}, deriving OE *botm* directly from the geminated variant
+[@Kroonen2013, p. 82]. Ringe and Taylor instead derive *botm* from
+[buþm-]{.recon} with a later West Saxon development of \emph{þm} to \emph{tm},
+while observing that the prehistory of this word cannot be recovered in detail
+[@RingeTaylor2014, pp. 332, 354]. The derivation here follows the geminate
+reconstruction; the alternative route is recorded as an open question of
+reconstruction selection, not of the sound law itself.
+
 Placed before l-adjacent syncope, PGmc [spénnilō]{.recon} ‘spindle’ yields [*spinnl*]{.pred} rather
 than expected OE *spinl* ‘spindle’. Syncope must therefore create the cluster
-before degemination simplifies it. Reordering degemination against any tested
+before degemination simplifies it. *Botm* does not order the pair, since its
+cluster does not depend on syncope. Reordering degemination against any tested
 later change leaves the witness unchanged, so no terminus ante quem is known.
 
 ## Early o-shortening

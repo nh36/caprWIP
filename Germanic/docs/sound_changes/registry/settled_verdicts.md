@@ -32,6 +32,8 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-adjudication.md` |
 | SC056 | Ordinary West Saxon palatal diphthongization | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC065 | OE Medial Syncope | active | RETAIN | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
+| SC066 | OE L Adjacent Syncope | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc066-adjudication.md` |
+| SC068 | OE Preconsonantal Degemination | active | RETAIN | `Germanic/docs/sound_changes/audits/sc068-adjudication.md` |
 | SC073 | OE Unstressed AE Merger | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC076 | Pretonic i-lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC082 | Bounded inherited-j normalization | active | RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc082-adjudication.md` |
