@@ -48,3 +48,4 @@ Germanic/docs/assembly/*.idx
 Germanic/docs/assembly/*.ind
 Germanic/docs/assembly/*.ilg
 Germanic/docs/assembly/*.pre_locator.tex
+.capr_compile_cache/

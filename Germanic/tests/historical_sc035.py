@@ -1,10 +1,19 @@
-"""Replay immutable SC035 assays in a disposable, commit-pinned runtime."""
+"""Replay immutable commit-pinned assays in a disposable runtime.
+
+Compiled historical cascades are reused through the content-addressed
+cache in ``Germanic/tools/compile_cache.py``; see that module and
+``docs/HISTORICAL_REPLAY.md``. A cached build is verified against its
+recorded digest before reuse; on any mismatch the cascade is recompiled.
+"""
 from contextlib import contextmanager
 from pathlib import Path
 import subprocess
-
+import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "Germanic/tools"))
+from compile_cache import (  # noqa: E402
+    BUILD_ARTIFACT_GLOBS, cached_build, compile_cache_key, store_build)
 
 
 @contextmanager
@@ -52,13 +61,27 @@ def historical_runtime(commit):
                                   cwd=ROOT, text=True,
                                   capture_output=True, check=True, timeout=timeout)
 
-        execute(
-            "python3 tools/generate_oe_sandbox.py > /dev/null && "
-            "foma -q -f fsts/old_english_sandbox.txt -e quit > /dev/null && "
-            "PYTHONPATH=tools python3 -c "
-            "'import oe_pipeline; from capr_runtime import write_build_manifest; "
-            'write_build_manifest(oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])'
-            "'")
+        key = compile_cache_key(image, source, corpus)
+        cached = cached_build(key)
+        if cached is not None:
+            subprocess.run(
+                ["docker", "exec", "-i", container_id, "sh", "-c",
+                 "cd /usr/app && tar xf -"],
+                input=cached, cwd=ROOT, capture_output=True, check=True)
+        else:
+            execute(
+                "python3 tools/generate_oe_sandbox.py > /dev/null && "
+                "foma -q -f fsts/old_english_sandbox.txt -e quit > /dev/null && "
+                "PYTHONPATH=tools python3 -c "
+                "'import oe_pipeline; from capr_runtime import write_build_manifest; "
+                'write_build_manifest(oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])'
+                "'")
+            exported = subprocess.run(
+                ["docker", "exec", container_id, "sh", "-c",
+                 f"cd /usr/app && tar cf - {BUILD_ARTIFACT_GLOBS}"],
+                cwd=ROOT, capture_output=True, check=False)
+            if exported.returncode == 0:
+                store_build(key, exported.stdout, commit)
         yield execute
     finally:
         subprocess.run(["docker", "rm", "--force", container_id], cwd=ROOT,
