@@ -108,10 +108,69 @@ python3 -m pytest -q --ignore=test_evidence_interface.py
 python3 -m pytest -q test_evidence_interface.py   # exclusive: rebuilds canonical bins
 ```
 
+Level C validates the **current** scientific state. Five historical-replay
+tests (listed below) report as explicitly skipped here by design; they are an
+independent reproducibility lane, not part of current-state correctness.
+
 Intermediate commits may land with their validation status stated honestly;
 the full strict suite runs once against the final candidate tree, and again
 only if repairs change what was certified. Record the exact tested commit.
 A portable GitHub Actions pass is never equivalent to this gate.
+
+## Current state, incremental regression, historical reproducibility
+
+Ordinary validation distinguishes three forms (full architecture, inventory
+and rationale in `docs/HISTORICAL_REPLAY.md`):
+
+**A. Current-state correctness** — the Level A–C workflow above: the current
+executable model, corpus, registries, artifact graph, provenance, protected
+fingerprints and frozen baselines. Protected baselines remain independent
+assertions precisely because consecutive comparisons cannot detect cumulative
+drift from an older accepted result.
+
+**B. Incremental regression** — compare the current model with its immediate
+predecessor only (uncommitted executable inputs vs `HEAD`, otherwise `HEAD`
+vs its first parent; merge commits and parentless states are reported
+explicitly):
+
+```sh
+python3 Germanic/tools/incremental_regression.py [--json out.json] [--fail-on-change]
+```
+
+The report covers final OE outputs, every named-stage snapshot, rule order,
+corpus membership/inputs and firing populations. Differences are documented
+and adjudicated, not automatically rejected. Builds and evaluations are
+reused through the content-addressed cache (`.capr_compile_cache/`,
+untracked; keyed by grammar, corpus, context metadata, build tools and image
+— never by a bare commit id), so identical executable inputs trigger no
+fresh Foma execution at all.
+
+**C. Historical reproducibility** — live reconstruction of commit-pinned
+historical models, run only when a historical claim is reconsidered, replay
+infrastructure changes, a recorded result is suspect, or a deliberate audit
+is requested:
+
+```sh
+cd Germanic/tests
+python3 -m pytest -q -m historical_replay --historical-replay
+```
+
+The five tests moved out of routine execution into this lane (still
+collected, reported as skipped with the explicit reason by default — the
+suite count does not silently shrink):
+
+- `test_sc035_prosody.py::test_fresh_commit_pinned_comparison_reproduces_the_entire_receipt`
+- `test_sc035_model_comparison.py::test_fresh_foma_comparison_reproduces_every_recorded_intermediate`
+- `test_sc035_prefix_reduction.py::PrefixReductionTests::test_fresh_container_assay_reproduces_census_controls_and_counterfactuals`
+- `test_rainbow_2148_adoption.py::test_fresh_container_capture_and_private_controls_match_committed_receipts`
+- `test_chronology_consistency.py::test_original_displacement_is_contingent_on_the_retired_early_glide`
+
+Their immutable receipts, provenance and hash checks still run routinely;
+what the ordinary suite deliberately no longer provides is live re-derivation
+of those receipts. Verifying a receipt and reproducing it by fresh Foma
+execution are different assurances and are reported separately. The exclusive
+`test_evidence_interface.py` canonical-rebuild test is current-grammar
+validation, not historical replay, and is unchanged.
 
 ## Safe parallel execution (optional, full mode)
 
@@ -153,7 +212,11 @@ run (everything except `test_evidence_interface.py`) takes 77 minutes
 about 13 minutes against roughly 18 minutes serially; lane 2 is about 47
 minutes and is the dominant cost, spent waiting on container Foma work
 (user CPU under six seconds), so xdist cannot reduce it and the overall
-full-suite gain is modest. The honest recommendation is: use Level A/B
+full-suite gain is modest. Since 2026-10-30 the five historical-replay
+reconstructions are no longer part of lane 2 (they are the explicit
+`--historical-replay` lane above), which removes their historical cascade
+compilations from every routine run; the remaining lane-2 cost is
+current-model container work. The honest recommendation is: use Level A/B
 during development, parallelise lane 1 when iterating broadly, and accept
 the serial runtime lane until its container work is itself restructured
 (for example by reusing one immutable compiled snapshot across read-only
