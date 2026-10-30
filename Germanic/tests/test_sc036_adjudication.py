@@ -55,12 +55,16 @@ def test_only_sc036_and_its_explicit_branches_changed():
     # The separately authorized subordinate-root extension is pinned against
     # its own before-adoption source by test_rainbow_2148_adoption.py.
     rainbow_changed = {"PNWGmcULowering"}
+    # The SC066 reformulation and its {*ie} diphthong-class correction are
+    # adjudicated and pinned exactly by test_sc066_sc068_adjudication.py.
+    sc066_changed = {"OELAdjacentSyncope", "EnglishStarShortDiphthong",
+                     "EnglishStarLongDiphthong"}
     assert current.keys() - old.keys() == (
         {"OELHWeakRaising", "OESoulProxy"} | gate_added)
     assert old.keys() <= current.keys()
     assert {name for name in old if old[name] != current[name]} == (
         {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed |
-        rainbow_changed)
+        rainbow_changed | sc066_changed)
     assert current["OEInterStressRaising"] == (
         "[OELHWeakRaising.o.OESoulProxy]")
 

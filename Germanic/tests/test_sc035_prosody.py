@@ -83,10 +83,11 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
             body = body[body.index("(") + 1:-1]
         if re.sub(r"\s+", "", body) != re.sub(r"\s+", "", previous[name]):
             changed.add(name)
-    # The separate rainbow test pins the exact subordinate-root extension.
+    # The separate rainbow test pins the exact subordinate-root extension;
+    # the SC066 reformulation is pinned by test_sc066_sc068_adjudication.py.
     assert changed == {"OEPrefixAReduction", "OEUnstressedAEMerger",
                        "OEPrefixIReduction", "OEInterStressRaising",
-                       "PNWGmcULowering"}
+                       "PNWGmcULowering", "OELAdjacentSyncope"}
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 

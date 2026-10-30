@@ -54,6 +54,11 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "pgrmSimpleWord", "pgrmCompoundSecond",
                 # Independently pinned by test_rainbow_2148_adoption.py.
                 "PNWGmcULowering",
+                # The SC066 reformulation and the {*ie} diphthong-class
+                # correction are pinned by test_sc066_sc068_adjudication.py.
+                "OELAdjacentSyncope",
+                "EnglishStarShortDiphthong",
+                "EnglishStarLongDiphthong",
             }
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         assert current[name].definition_raw.replace(
