@@ -140,7 +140,16 @@ otherwise **HEAD vs HEAD^1** (merges use the first parent and say so;
 parentless states are explicit errors). Each report is validated against
 the sources of its *own* version (Git blobs, via the shared provenance core
 in `oe_trace_parse.py`); a missing, stale or non-canonical report is an
-explicit failure, never a silent skip.
+explicit failure, never a silent skip. Reports declare a **provenance
+contract version**: v2 reports additionally hash the evaluation helpers
+(`oe_pipeline.py`, `sound_change_order_sensitivity.py`, `capr_runtime.py`),
+so a changed helper makes the canonical report stale even when the grammar
+is untouched; legacy v1 reports remain readable with that limitation stated,
+but newly generated reports must satisfy v2. Both sides also pass
+**structural validation** (every entry carries its report's declared stage
+sequence in order, without gaps, duplicates or unknown stages, with
+parseable outputs and coherent fidelity records) — the identical-report
+fast path does not bypass it.
 
 The comparison runs **automatically during Level C**:
 `test_incremental_regression.py::test_level_c_runs_the_consecutive_version_comparison_automatically`
@@ -148,7 +157,8 @@ executes it in the ordinary (lane 1) suite, so a green Level C establishes
 that the consecutive-version comparison completed. It examines every named
 stage of every lexical entry (identity: concept + PROTO + EXPECTED):
 intermediate changes with identical final outputs, first divergence and
-later convergence, final outputs, stage order/membership, corpus and
+later convergence (with previous/current forms recorded at **every**
+divergent stage in the JSON report), final outputs, stage order/membership, corpus and
 input-context changes, and firing-population changes, with rejection states
 and raw context-marked forms taken from the report's RAW STAGE FIDELITY
 section (older reports without it are compared display-level with the

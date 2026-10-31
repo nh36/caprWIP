@@ -122,11 +122,22 @@ say so; an unavailable parent is an explicit error, never a silent pass).
 Each report is validated against the source files of its *own* version
 (Git blobs, via the shared provenance core in
 `Germanic/tools/oe_trace_parse.py`); a missing, stale or non-canonical
-report on either side is an explicit failure.
+report on either side is an explicit failure. Reports carry a versioned
+provenance contract: **v2** (current) also records hashes of the
+evaluation helpers `oe_pipeline.py`, `sound_change_order_sensitivity.py`
+and `capr_runtime.py`, so changing evaluation code without regenerating
+the report makes the canonical report stale; v1 reports from earlier
+commits remain readable under their own contract, with the
+evaluation-helper limitation stated explicitly. Both sides additionally
+undergo **structural validation** against their own declared firing
+summary (complete, ordered, non-duplicated stage sequences per entry;
+parseable outputs; referentially coherent fidelity records); identical
+but malformed reports are rejected rather than fast-pathed.
 
 The comparison covers every named stage of every entry (identity:
 concept + PROTO + EXPECTED): intermediate changes with identical final
-outputs, first divergence/reconvergence, final outputs, stage
+outputs, first divergence/reconvergence (with previous/current forms
+recorded at every divergent stage in the JSON report), final outputs, stage
 order/membership, corpus membership and contextual inputs, and
 firing-population changes. Rejection states and raw context-marked forms
 come from the report's `RAW STAGE FIDELITY` section; older reports
