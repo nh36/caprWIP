@@ -312,7 +312,7 @@ class RunLoggedTests(unittest.TestCase):
             receipt = ac.run_logged([sys.executable, "-c", "pass"],
                                     label="changes", log_dir=self.log_dir)
         self.assertTrue(receipt["source_changed"])
-        self.assertFalse(receipt["ok"])
+        self.assertTrue(receipt["ok"])  # execution succeeded; validation is not certified
         with self.assertRaisesRegex(ValueError, "source identity changed"):
             ac.verify_receipt(receipt)
 

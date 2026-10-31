@@ -375,7 +375,7 @@ class Run:
                 raise WorkflowError("PROPAGATE requires successful finalisation execution receipts")
             for receipt in receipts:
                 try:
-                    adjudication_control.verify_receipt(receipt)
+                    adjudication_control.verify_receipt(receipt, allow_source_change=True)
                 except (ValueError, OSError, KeyError) as exc:
                     raise WorkflowError(f"PROPAGATE receipt invalid: {exc}") from exc
             if not any(r["argv"][-2:] == [self.sc_id, "--finalize"] for r in receipts):

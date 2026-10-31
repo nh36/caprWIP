@@ -174,7 +174,7 @@ def run_logged(argv: list[str], *, label: str, log_dir: Path,
         "finished_at": _utcnow(),
         "returncode": returncode,
         "timed_out": timed_out,
-        "ok": (returncode == 0 and before["identity_sha256"] == after["identity_sha256"]),
+        "ok": (returncode == 0),
         "source_identity": before,
         "source_identity_sha256": before["identity_sha256"],
         "source_identity_after": after,
@@ -197,7 +197,8 @@ def run_logged(argv: list[str], *, label: str, log_dir: Path,
     return receipt
 
 
-def verify_receipt(receipt: dict, *, current: bool = True) -> None:
+def verify_receipt(receipt: dict, *, current: bool = True,
+                   allow_source_change: bool = False) -> None:
     """Verify a persisted execution record and its logs, not caller assertions."""
     required = {"receipt_version", "receipt_path", "argv", "cwd", "started_at",
                 "finished_at", "returncode", "timed_out", "ok", "source_identity",
@@ -223,13 +224,16 @@ def verify_receipt(receipt: dict, *, current: bool = True) -> None:
         if counts != receipt["test_counts"] or counts["failures"] or counts["errors"] or not counts["tests"]:
             raise ValueError("strict validation report is incomplete or failing")
     identity = receipt["source_identity_sha256"]
+    after_identity = receipt["source_identity_after"].get("identity_sha256")
     if (not identity or identity != receipt["source_identity"].get("identity_sha256")
-            or identity != receipt["source_identity_after"].get("identity_sha256")
-            or receipt["source_changed"] or receipt["timed_out"]
+            or not after_identity
+            or receipt["source_changed"] != (identity != after_identity)
+            or (receipt["source_changed"] and not allow_source_change) or receipt["timed_out"]
             or receipt["returncode"] != 0 or receipt["ok"] is not True
             or not isinstance(receipt["argv"], list) or not receipt["argv"]):
         raise ValueError("execution failed or source identity changed during execution")
-    if current and identity != source_identity()["identity_sha256"]:
+    attested = after_identity if allow_source_change else identity
+    if current and attested != source_identity()["identity_sha256"]:
         raise ValueError("execution receipt attests a stale source identity")
 
 

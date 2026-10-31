@@ -20,6 +20,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest import mock
+from types import SimpleNamespace
 
 TOOLS = Path(__file__).resolve().parents[1] / "tools"
 sys.path.insert(0, str(TOOLS))
@@ -56,7 +57,7 @@ class RunHarness(unittest.TestCase):
         self.runs = self.tmp / "runs"
         self.files = {}
         for domain in ("executable_model", "corpus", "registry", "memo"):
-            path = self.tmp / f"{domain}.txt"
+            path = self.tmp / ("germanic.txt" if domain == "executable_model" else f"{domain}.txt")
             path.write_text(f"{domain} v1\n", encoding="utf-8")
             self.files[domain] = path
         patches = [
@@ -212,10 +213,11 @@ class ResumeAndInvalidationTests(RunHarness):
     def test_propagated_edit_does_not_retroinvalidate_decision(self):
         run = self.start()
         target = self.files["executable_model"]
-        modifications = {str(target): hashlib.sha256(b"propagated\n").hexdigest()}
+        target.write_text("define Tiny a -> b;\n")
+        modifications = {str(target): hashlib.sha256(b"define Tiny a -> c;\n").hexdigest()}
         self.advance_to(run, "DECIDE", decision=dict(DECISION, intended_source_modifications=modifications))
         run.begin_propagation(modifications)
-        target.write_text("propagated\n", encoding="utf-8")
+        target.write_text("define Tiny a -> c;\n", encoding="utf-8")
         self.assertEqual(self.load().refresh_validity(), [])
         run.complete_stage("PROPAGATE", evidence={"receipts": [
             self.receipt([sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])]})
@@ -250,6 +252,23 @@ class ResumeAndInvalidationTests(RunHarness):
         with self.assertRaisesRegex(ar.WorkflowError, "receipt"):
             run.complete_stage("PROPAGATE", evidence={"receipts": [self.receipt(rc=1)]})
         self.assertEqual(run.frontier(), "PROPAGATE")
+
+    def test_finalization_may_regenerate_authorised_graph_outputs(self):
+        run = self.start()
+        self.advance_to(run, "DECIDE")
+        generated = ar.REPO_ROOT / ".capr-work/synthetic-generated.txt"
+        with mock.patch("artifact_graph.nodes", return_value=(
+                SimpleNamespace(outputs=lambda: [generated]),)):
+            run.begin_propagation({})
+        before = {"identity_sha256": "f" * 64, "worktree_changes": {}}
+        after = {"identity_sha256": "a" * 64,
+                 "worktree_changes": {str(generated.relative_to(ar.REPO_ROOT)): "b" * 64}}
+        with mock.patch.object(ac, "source_identity", side_effect=[before, after]):
+            receipt = self.receipt(
+                [sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])
+        with mock.patch.object(ac, "source_identity", return_value=after):
+            run.complete_stage("PROPAGATE", evidence={"receipts": [receipt]})
+        self.assertEqual(run.frontier(), "VALIDATE")
 
     def test_validate_always_checked_against_current_tree(self):
         run = self.start()
