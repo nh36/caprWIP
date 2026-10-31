@@ -302,6 +302,31 @@ class RunLoggedTests(unittest.TestCase):
         self.assertEqual(receipt["returncode"], 2)
         self.assertIn("boom", Path(receipt["stderr_log"]).read_text())
 
+    def test_downstream_filter_cannot_mask_validator_failure(self):
+        """Acceptance (brief section 7): a validator fails while its output
+        is filtered through another command. Because each step runs under
+        run_logged with its own receipt, the controller still holds the
+        validator's original exit code and full log; the filter's success
+        cannot overwrite them."""
+        validator = ac.run_logged(
+            [sys.executable, "-c",
+             "print('line1'); print('FAIL: witness lost'); "
+             "raise SystemExit(5)"],
+            label="validator", log_dir=self.log_dir)
+        # The "| tail -1"-style filtering happens on the captured log,
+        # as a separate receipted step that succeeds.
+        filter_step = ac.run_logged(
+            [sys.executable, "-c",
+             "import sys; print(open(sys.argv[1]).read().splitlines()[-1])",
+             validator["stdout_log"]],
+            label="filter", log_dir=self.log_dir)
+        self.assertTrue(filter_step["ok"])
+        self.assertFalse(validator["ok"])
+        self.assertEqual(validator["returncode"], 5)
+        full_log = Path(validator["stdout_log"]).read_text()
+        self.assertIn("line1", full_log)
+        self.assertIn("FAIL: witness lost", full_log)
+
 
 class RuntimeLockTests(unittest.TestCase):
 

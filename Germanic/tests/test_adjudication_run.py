@@ -289,6 +289,55 @@ class JournalMetadataTests(RunHarness):
         with self.assertRaises(ar.WorkflowError):
             ar.record_comparison(run, kind="vibes", compared={})
 
+    def test_incremental_regression_result_recorded_verbatim(self):
+        """An editorial commit's comparison is journaled with the exact
+        resolved states, basis and zero Foma invocations."""
+        run = self.start()
+        result = {"states": {"current": "a" * 12, "reference": "b" * 12,
+                             "basis": "HEAD vs first parent (HEAD^1)"},
+                  "identical": True, "foma_invocations": 0,
+                  "limitations": []}
+        ar.record_incremental_regression(run, result)
+        event = [e for e in run.events()
+                 if e["kind"] == "comparison_performed"][0]
+        self.assertEqual(event["comparison"], "incremental_regression")
+        self.assertIn("first parent", event["compared"]["basis"])
+        self.assertEqual(event["receipt"]["foma_invocations"], 0)
+
+    def test_incremental_regression_requires_resolved_states(self):
+        run = self.start()
+        with self.assertRaisesRegex(ar.WorkflowError, "run_comparison"):
+            ar.record_incremental_regression(run, {"identical": True})
+
+    def test_validation_level_separates_executed_from_reused(self):
+        run = self.start()
+        ar.record_validation_level(
+            run, "B",
+            receipts=[{"label": "artifact-graph-verify", "ok": True,
+                       "returncode": 0}],
+            reused_evidence=[{"check": "runtime-trace",
+                              "basis": "fresh provenance recorded in "
+                                       "oe_full_trace_report PROVENANCE"}])
+        event = [e for e in run.events()
+                 if e["kind"] == "validation_level"][0]
+        self.assertEqual(event["level"], "B")
+        self.assertEqual([r["label"] for r in event["executed"]],
+                         ["artifact-graph-verify"])
+        self.assertEqual([r["check"] for r in event["reused"]],
+                         ["runtime-trace"])
+
+    def test_reused_evidence_requires_a_basis(self):
+        run = self.start()
+        with self.assertRaisesRegex(ar.WorkflowError, "basis"):
+            ar.record_validation_level(
+                run, "C", receipts=[],
+                reused_evidence=[{"check": "mystery pass"}])
+
+    def test_validation_level_vocabulary(self):
+        run = self.start()
+        with self.assertRaisesRegex(ar.WorkflowError, "level"):
+            ar.record_validation_level(run, "D", receipts=[])
+
     def test_events_are_append_only_history(self):
         run = self.start()
         run.complete_stage("INSPECT")

@@ -21,6 +21,9 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
+import tempfile
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -51,29 +54,68 @@ def compile_cache_key(image: str, source: bytes, corpus: bytes,
     return digest.hexdigest()
 
 
+def _log_event(kind: str, key: str, detail: str = "") -> None:
+    """Append a cache event so hits/misses are visible in logs/receipts.
+
+    Cached evidence must never be mistaken for a newly executed build;
+    the events log makes every reuse auditable.
+    """
+    CACHE_DIR.mkdir(exist_ok=True)
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    with (CACHE_DIR / "events.log").open("a", encoding="utf-8") as handle:
+        handle.write(f"{stamp} {kind} {key}"
+                     + (f" {detail}" if detail else "") + "\n")
+
+
 def cached_build(key: str) -> bytes | None:
     """Return verified cached build bytes for *key*, or None."""
     archive, record = CACHE_DIR / f"{key}.tar", CACHE_DIR / f"{key}.json"
     if not (archive.is_file() and record.is_file()):
+        _log_event("miss", key, "no entry")
         return None
     try:
         metadata = json.loads(record.read_text())
     except ValueError:
+        _log_event("miss", key, "unreadable metadata")
         return None
     payload = archive.read_bytes()
     if (metadata.get("key") == key and metadata.get("archive_sha256")
             == hashlib.sha256(payload).hexdigest()):
+        _log_event("hit", key)
         return payload
-    return None  # corrupted or mismatched: fall back to a fresh compile
+    # Corrupted or mismatched: fall back to a fresh compile.
+    _log_event("miss", key, "digest mismatch (safe miss)")
+    return None
+
+
+def _atomic_write(path: Path, payload: bytes) -> None:
+    """Write via a same-directory temp file and rename: a reader never
+    observes a torn archive or metadata file, and an interrupted writer
+    leaves no partial entry (only an unreferenced temp file)."""
+    handle = tempfile.NamedTemporaryFile(
+        dir=path.parent, prefix=path.name + ".", delete=False)
+    try:
+        handle.write(payload)
+        handle.flush()
+        os.fsync(handle.fileno())
+        handle.close()
+        os.replace(handle.name, path)
+    except BaseException:
+        handle.close()
+        os.unlink(handle.name)
+        raise
 
 
 def store_build(key: str, payload: bytes, provenance: str) -> None:
     if not payload:
         return
     CACHE_DIR.mkdir(exist_ok=True)
-    (CACHE_DIR / f"{key}.tar").write_bytes(payload)
-    (CACHE_DIR / f"{key}.json").write_text(json.dumps({
+    # Archive first, metadata last: an entry becomes eligible for reuse
+    # only once its verifying record exists.
+    _atomic_write(CACHE_DIR / f"{key}.tar", payload)
+    _atomic_write(CACHE_DIR / f"{key}.json", (json.dumps({
         "key": key, "provenance": provenance,
         "archive_sha256": hashlib.sha256(payload).hexdigest(),
         "artifacts": BUILD_ARTIFACT_GLOBS,
-    }, indent=1) + "\n")
+    }, indent=1) + "\n").encode("utf-8"))
+    _log_event("store", key, f"provenance={provenance}")

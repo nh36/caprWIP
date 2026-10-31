@@ -412,6 +412,61 @@ def record_comparison(run: Run, *, kind: str, compared: dict,
                receipt=receipt or {})
 
 
+def record_incremental_regression(run: Run, result: dict) -> None:
+    """Journal an ``incremental_regression.run_comparison`` result.
+
+    Records the exact Git states and basis the existing tool resolved
+    (staged-vs-HEAD, HEAD-vs-first-parent including the explicit merge
+    caveat, or --worktree), so an agent never mistakes HEAD's first
+    parent for the last scientifically accepted baseline.  The default
+    comparison behaviour of incremental_regression is unchanged.
+    """
+    states = result.get("states")
+    if not states or "basis" not in states:
+        raise WorkflowError(
+            "record_incremental_regression expects the dict returned by "
+            "incremental_regression.run_comparison (with resolved 'states')")
+    record_comparison(run, kind="incremental_regression", compared=states,
+                      receipt={
+                          "identical": result.get("identical"),
+                          "foma_invocations": result.get(
+                              "foma_invocations"),
+                          "limitations": result.get("limitations", []),
+                      })
+
+
+VALIDATION_LEVELS = {"A", "B", "C"}
+
+
+def record_validation_level(run: Run, level: str, receipts: list,
+                            reused_evidence: list | None = None) -> None:
+    """Journal a validation pass, separating executed checks from evidence.
+
+    ``receipts`` are run_logged receipts for checks actually executed now;
+    ``reused_evidence`` lists checks satisfied by previously verified
+    results, each of which must carry a ``basis`` describing where that
+    verification is recorded.  Reused evidence is never counted as a
+    fresh execution.
+    """
+    if level not in VALIDATION_LEVELS:
+        raise WorkflowError(
+            f"validation level {level!r} not in {sorted(VALIDATION_LEVELS)}")
+    reused = reused_evidence or []
+    missing = [item for item in reused
+               if not (isinstance(item, dict) and item.get("basis"))]
+    if missing:
+        raise WorkflowError(
+            "reused validation evidence must record the basis of its prior "
+            f"verification; missing on: {missing}")
+    run._event("validation_level", level=level,
+               executed=[{"label": r.get("label", "?"),
+                          "ok": bool(r.get("ok")),
+                          "returncode": r.get("returncode")}
+                         for r in receipts],
+               reused=reused,
+               source_identity=adjudication_control.source_identity())
+
+
 def main() -> int:
     args = sys.argv[1:]
     if len(args) >= 2 and args[1] == "start":
