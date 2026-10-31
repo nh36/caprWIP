@@ -178,7 +178,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2334-where-hw\u01e3r.model.md": "3aa0f860d546e84c82f9f5a8522da3e84ea12a540c7d0b4580d414795ffcdc30",
     "Germanic/docs/lexeme_reports/model_entries/2335-filth-f\u0233l\u00fe.model.md": "bf1ca877b29f8930a984740f39b7ae8318d59e8a107f7351832ec079da324c2a",
     "Germanic/fsts/old_english_sandbox.txt": "8ccfe8b4e2fbc2a1406e1353678ce26680a75026f8514f4d2e2720f37f20349a",
-    "Germanic/tools/artifact_graph.py": "3200d49b4a586bf39739f575214a15764e0a23c1c27c8b6bcc9d7876ac40db2f",
+    "Germanic/tools/artifact_graph.py": "8d844511844f3329ae0ce349b6cf8888eebe898ef6e9cf70c3e839c8c6772d95",
     "Germanic/tools/compact_trace_report.py": "b5dbb5d467d0dabe7dc1ba4e55646dd3c33d4d0fb841bfa09f4cd11da8505707",
     "Germanic/tools/entry_stages.py": "63317b032ce41030f85af64a4c5d9823604f1bde0c9b833f2dca11933e15abdd",
     "Germanic/tools/oe_derivation_class_trace_report.py": "90d9b6eecf4f7828ce4be953d7d50a82f3035d36576b3beb683ede1f5494b137",
