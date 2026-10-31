@@ -6,6 +6,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -13,6 +14,7 @@ import tempfile
 from pathlib import Path
 
 import oe_pipeline
+from executable_facts import _blank_comments, _DEFINE_RE, parse_defines
 from oe_input_context import CITATION_CONTEXT, InputContext
 from oe_input_context import METADATA_FILENAME
 from capr_runtime import check_build_manifest, layout
@@ -404,17 +406,121 @@ def staged_appendix(recipe: dict) -> tuple[str, dict[str, str]]:
     return "\n".join(lines), bins
 
 
-def compile_isolated(
-    source: Path, recipe: dict, probes: list[dict], directory: Path, *, components_only: bool = False,
-    diagnostic_stages: list[str] | None = None,
-) -> dict[str, Path]:
-    source_text = source.read_text(encoding="utf-8")
+def _validate_isolated_source(source_text: str) -> None:
     for command, filename in re.findall(r"(?m)^\s*(save stack|source)\s+([^;\n]+)", source_text):
         path = Path(filename.strip())
         if path.is_absolute() or ".." in path.parts:
             raise ValueError(f"unsafe {command} destination in source: {filename}")
         if command == "source":
             raise ValueError("new source includes require explicit isolated-copy support")
+
+
+def _definition_parts(source_text: str) -> tuple[str, bool]:
+    scan = _blank_comments(source_text)
+    facts = parse_defines(source_text)
+    spans, macros = [], []
+    for match in _DEFINE_RE.finditer(scan):
+        body = facts[match.group(1)].body
+        body_start = scan.index(body, match.end())
+        end = scan.index(";", body_start + len(body)) + 1
+        spans.append((match.start(), end))
+        if scan[match.end():].startswith("("):
+            # save defined omits parameterised macros; restore their exact source.
+            macros.append(source_text[match.start():end])
+    for start, end in reversed(spans):
+        scan = scan[:start] + " " * (end - start) + scan[end:]
+    remainder = re.sub(
+        r"(?m)^\s*(?:clear stack|save stack [^\n;]+|regex [A-Za-z][A-Za-z0-9_]*\s*;)\s*$",
+        "", scan)
+    return "\n".join(macros), not remainder.strip()
+
+
+def _definition_environment(directory: Path) -> str:
+    compiler = shutil.which("foma")
+    if compiler is None:
+        raise RuntimeError("isolated compilation requires Foma in the backend container")
+    binary = Path(compiler).resolve()
+    linked = subprocess.run(["ldd", str(binary)], capture_output=True, text=True,
+                            check=True, timeout=30)
+    paths = {binary, *(Path(path).resolve() for path in
+                       re.findall(r"/[^\s()]+", linked.stdout))}
+    identity = {
+        "binaries": {str(path): hashlib.sha256(path.read_bytes()).hexdigest()
+                     for path in sorted(paths)},
+        "environment": sorted((key, value) for key, value in os.environ.items()
+                              if key not in {"CAPR_FOMA_DEFINITION_IMAGE", "_"}),
+        "startup": [
+            hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None
+            for path in (Path.home() / ".fomarc", directory / ".fomarc")],
+    }
+    return hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()
+
+
+def _definition_identity(source_text: str, directory: Path) -> dict:
+    return {"version": 1, "source_sha256": hashlib.sha256(source_text.encode()).hexdigest(),
+            "environment_sha256": _definition_environment(directory)}
+
+
+def _compile_foma(script: Path, directory: Path) -> None:
+    result = subprocess.run(["foma", "-q", "-f", script.name], cwd=directory,
+                            capture_output=True, text=True, timeout=600)
+    log = result.stdout + "\n" + result.stderr
+    if result.returncode or re.search(r"(?im)\b(error|syntax error|not defined)\b", log):
+        raise RuntimeError("isolated Foma compilation failed:\n" + log[-6000:])
+
+
+def prepare_definition_image(source: Path, directory: Path) -> Path | None:
+    """Fresh, isolated preparation; the caller owns this disposable directory."""
+    source_text = source.read_text(encoding="utf-8")
+    _validate_isolated_source(source_text)
+    if not _definition_parts(source_text)[1]:
+        return None
+    identity = _definition_identity(source_text, directory)
+    image = directory / "defined.bin"
+    script = directory / "common-definitions.foma"
+    script.write_text(source_text + "\nclear stack\nsave defined defined.bin\nquit\n",
+                      encoding="utf-8")
+    _compile_foma(script, directory)
+    if _definition_identity(source_text, directory) != identity:
+        raise RuntimeError("Foma environment changed during definition-image preparation")
+    if not image.is_file() or not image.stat().st_size:
+        raise RuntimeError("isolated compiler did not produce the definition image")
+    image.with_suffix(".json").write_text(json.dumps({
+        "identity": identity, "image_sha256": hashlib.sha256(image.read_bytes()).hexdigest(),
+    }), encoding="utf-8")
+    return image
+
+
+def definition_image_source(
+    source_text: str, directory: Path, image: Path | None = None,
+) -> str:
+    """Reuse only an explicitly supplied, intact image of the exact computation."""
+    selected = image or os.environ.get("CAPR_FOMA_DEFINITION_IMAGE")
+    if not selected:
+        return source_text
+    macros, supported = _definition_parts(source_text)
+    if not supported:
+        return source_text
+    image = Path(selected).resolve()
+    if not re.fullmatch(r"[/A-Za-z0-9_.-]+", str(image)):
+        raise ValueError("definition-image path contains unsupported Foma filename characters")
+    try:
+        receipt = json.loads(image.with_suffix(".json").read_text(encoding="utf-8"))
+        if receipt["identity"] != _definition_identity(source_text, directory):
+            return source_text
+        if receipt["image_sha256"] != hashlib.sha256(image.read_bytes()).hexdigest():
+            raise ValueError("definition image checksum mismatch")
+    except (OSError, KeyError, TypeError, ValueError) as exc:
+        raise RuntimeError(f"invalid definition image {image}: {exc}") from exc
+    return f"load defined {image}\n{macros}\nclear stack\n"
+
+
+def compile_isolated(
+    source: Path, recipe: dict, probes: list[dict], directory: Path, *, components_only: bool = False,
+    diagnostic_stages: list[str] | None = None, use_definition_image: bool = True,
+) -> dict[str, Path]:
+    source_text = source.read_text(encoding="utf-8")
+    _validate_isolated_source(source_text)
     source_text = context_source_text(source_text, recipe)
     probe_text, bins = ("", {}) if components_only else probe_appendix(recipe, probes)
     staged_text, staged_bins = ("", {}) if components_only else staged_appendix(recipe)
@@ -441,18 +547,16 @@ def compile_isolated(
             + ";\nclear stack\nregex AFContextRoot;\nsave stack old_english_variant.bin\n"
         )
     script = directory / "experiment.foma"
+    source_prefix = (definition_image_source(source_text, directory)
+                     if use_definition_image else source_text)
     script.write_text(
-        source_text + "\n" + recipe["definitions"] + "\n"
+        source_prefix + "\n" + recipe["definitions"] + "\n"
         + variant_text + "\n" + probe_text + "\n"
         + staged_text + "\n"
         + "\n".join(component_lines) + "\nquit\n",
         encoding="utf-8",
     )
-    result = subprocess.run(["foma", "-q", "-f", script.name], cwd=directory,
-                            capture_output=True, text=True, timeout=600)
-    log = result.stdout + "\n" + result.stderr
-    if result.returncode or re.search(r"(?im)\b(error|syntax error|not defined)\b", log):
-        raise RuntimeError("isolated Foma compilation failed:\n" + log[-6000:])
+    _compile_foma(script, directory)
     outputs = {} if components_only else {"final": directory / "old_english_variant.bin"}
     outputs.update({name: directory / filename for name, filename in bins.items()})
     missing = [str(path) for path in outputs.values() if not path.is_file() or path.stat().st_size == 0]

@@ -4,6 +4,8 @@ import copy
 import csv
 import hashlib
 import json
+import os
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -11,10 +13,12 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import anglo_frisian_chronology as chronology
 import anglo_frisian_experiments as experiments
-from capr_runtime import layout
+from capr_runtime import layout, run_in_runner
 
 RECIPES = layout().docs_dir / "sound_changes/literature_dossiers/anglo_frisian/oe_experiment_recipes.json"
 
@@ -754,6 +758,157 @@ class ExperimentTests(unittest.TestCase):
                         experiments.compile_isolated(source, self.data["recipes"][0],
                                                      self.data["probes"], Path(directory))
                     runner.assert_not_called()
+
+
+class DefinitionImageTests(unittest.TestCase):
+    def image(self, source, directory):
+        image = directory / "defined.bin"
+        image.write_bytes(b"definition image")
+        image.with_suffix(".json").write_text(json.dumps({
+            "identity": {"version": 1, "source_sha256": hashlib.sha256(source.encode()).hexdigest(),
+                         "environment_sha256": "environment-one"},
+            "image_sha256": hashlib.sha256(image.read_bytes()).hexdigest(),
+        }))
+        return image
+
+    def test_macro_source_is_restored_without_recompiling_named_compositions(self):
+        source = "define M(T) [T # a comment containing ;\n];\ndefine A (a .o. a);\n"
+        with tempfile.TemporaryDirectory() as temporary, \
+                patch.object(experiments, "_definition_environment", return_value="environment-one"):
+            directory = Path(temporary)
+            result = experiments.definition_image_source(source, directory, self.image(source, directory))
+        self.assertTrue(result.startswith("load defined "))
+        self.assertIn("define M(T) [T # a comment containing ;\n];", result)
+        self.assertNotIn("define A", result)
+
+    def test_source_transformations_and_environment_changes_cannot_reuse_an_image(self):
+        source = "define EnglishStarAlphabet [\n a ];\ndefine EnglishPalatalConsonant [ a ];\n"
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            image = self.image(source, directory)
+            variants = [
+                source + "# changed source\n",
+                experiments.context_source_text(source, {"phonetic_symbols": ["\u00e7"]}),
+                experiments.context_source_text(source, {"input_replacement": "AFInput"}),
+            ]
+            with patch.object(experiments, "_definition_environment", return_value="environment-one"):
+                for variant in variants:
+                    with self.subTest(source=variant):
+                        self.assertEqual(experiments.definition_image_source(variant, directory, image), variant)
+            with patch.object(experiments, "_definition_environment", return_value="environment-two"):
+                self.assertEqual(experiments.definition_image_source(source, directory, image), source)
+
+    def test_corrupted_or_incomplete_image_receipts_fail_explicitly(self):
+        source = "define A a;\n"
+        with tempfile.TemporaryDirectory() as temporary, \
+                patch.object(experiments, "_definition_environment", return_value="environment-one"):
+            directory = Path(temporary)
+            image = self.image(source, directory)
+            image.write_bytes(b"corrupted")
+            with self.assertRaisesRegex(RuntimeError, "checksum mismatch"):
+                experiments.definition_image_source(source, directory, image)
+            image.with_suffix(".json").write_text("{}")
+            with self.assertRaisesRegex(RuntimeError, "invalid definition image"):
+                experiments.definition_image_source(source, directory, image)
+
+    def test_unserialised_foma_commands_require_full_source_compilation(self):
+        for command in ("set flag-diacritics OFF", "invert net"):
+            source = f"define A a;\n{command}\n"
+            with self.subTest(command=command), tempfile.TemporaryDirectory() as temporary, \
+                    patch.object(experiments, "_compile_foma") as compiler:
+                directory = Path(temporary)
+                path = directory / "source.txt"
+                path.write_text(source)
+                self.assertIsNone(experiments.prepare_definition_image(path, directory))
+                self.assertEqual(experiments.definition_image_source(
+                    source, directory, directory / "missing.bin"), source)
+                compiler.assert_not_called()
+
+    def test_explicit_fresh_compilation_ignores_even_an_invalid_selected_image(self):
+        with tempfile.TemporaryDirectory() as temporary, \
+                patch.dict(os.environ, {"CAPR_FOMA_DEFINITION_IMAGE": "/missing.bin"}), \
+                patch.object(experiments, "definition_image_source") as selected:
+            directory = Path(temporary)
+            source = directory / "source.txt"
+            source.write_text("define A a;\n")
+            recipe = {"definitions": "", "insert_after": "", "insert_rule": "", "replace": {},
+                      "component_checks": [{"component": "A"}]}
+            def compile_fresh(script, cwd):
+                self.assertTrue(script.read_text().startswith(source.read_text()))
+                (cwd / "af_component_00.bin").write_bytes(b"fresh")
+            with patch.object(experiments, "_compile_foma", side_effect=compile_fresh):
+                experiments.compile_isolated(source, recipe, [], directory,
+                                             components_only=True, use_definition_image=False)
+            selected.assert_not_called()
+
+    def test_environment_identity_tracks_engine_libraries_locale_and_startup_settings(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            binary, library = directory / "foma", directory / "libfoma.so"
+            binary.write_bytes(b"engine")
+            library.write_bytes(b"library")
+            linked = subprocess.CompletedProcess(["ldd"], 0, str(library), "")
+            with patch.object(experiments.shutil, "which", return_value=str(binary)), \
+                    patch.object(experiments.subprocess, "run", return_value=linked):
+                baseline = experiments._definition_environment(directory)
+                for path in (binary, library):
+                    previous = path.read_bytes()
+                    path.write_bytes(previous + b"changed")
+                    self.assertNotEqual(experiments._definition_environment(directory), baseline)
+                    path.write_bytes(previous)
+                with patch.dict(os.environ, {"LANG": "changed-locale"}):
+                    self.assertNotEqual(experiments._definition_environment(directory), baseline)
+                with patch.dict(os.environ, {"CAPR_FOMA_DEFINITION_IMAGE": "/another/image.bin"}):
+                    self.assertEqual(experiments._definition_environment(directory), baseline)
+                (directory / ".fomarc").write_text("set flag-diacritics OFF")
+                self.assertNotEqual(experiments._definition_environment(directory), baseline)
+
+    def test_environment_change_during_preparation_cannot_publish_a_valid_receipt(self):
+        with tempfile.TemporaryDirectory() as temporary, \
+                patch.object(experiments, "_definition_environment",
+                             side_effect=["environment-one", "environment-two"]), \
+                patch.object(experiments, "_compile_foma"):
+            directory = Path(temporary)
+            source = directory / "source.txt"
+            source.write_text("define A a;\n")
+            with self.assertRaisesRegex(RuntimeError, "environment changed during"):
+                experiments.prepare_definition_image(source, directory)
+            self.assertFalse((directory / "defined.json").exists())
+
+
+@pytest.mark.runtime
+def test_definition_image_and_full_source_preserve_raw_ambiguous_rejected_and_duplicate_outputs():
+    script = """
+import json, os, sys, tempfile
+from pathlib import Path
+sys.path.insert(0, "tools")
+from anglo_frisian_experiments import compile_isolated, prepare_definition_image
+from sound_change_order_sensitivity import batch_apply_down
+with tempfile.TemporaryDirectory(prefix="capr_definition_equivalence_") as temporary:
+    root = Path(temporary)
+    source = root / "source.txt"
+    source.write_text("define M(T) T;\\ndefine Base [a:b | a:c | d:d | e:0];\\n")
+    image = prepare_definition_image(source, root)
+    assert image is not None
+    os.environ["CAPR_FOMA_DEFINITION_IMAGE"] = str(image)
+    recipe = {"definitions": "define Probe M(Base);", "insert_after": "",
+              "insert_rule": "", "replace": {}, "component_checks": [{"component": "Probe"}]}
+    results = []
+    for reuse in (False, True):
+        directory = root / str(reuse)
+        directory.mkdir()
+        bins = compile_isolated(source, recipe, [], directory,
+                                components_only=True, use_definition_image=reuse)
+        results.append(batch_apply_down(bins["component:Probe"], ["a", "x", "d", "a", "e"]))
+    assert results[0] == results[1]
+    assert sorted(results[0][0]) == ["b", "c"]
+    assert results[0][1] == [] and results[0][2] == ["d"]
+    assert results[0][0] == results[0][3]
+    print(json.dumps(results))
+"""
+    result = run_in_runner("python3 -c " + shlex.quote(script), text=True,
+                           capture_output=True, check=True, timeout=180)
+    assert json.loads(result.stdout)[0] == json.loads(result.stdout)[1]
 
 
 if __name__ == "__main__":
