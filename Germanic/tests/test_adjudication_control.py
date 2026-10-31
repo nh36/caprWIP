@@ -20,6 +20,7 @@ is disabled or monkeypatched throughout.
 
 import json
 import os
+import subprocess
 import sys
 import unittest
 from pathlib import Path
@@ -293,6 +294,17 @@ class RunLoggedTests(unittest.TestCase):
         with self.assertRaises(TypeError):
             ac.run_logged("true | tail -1", label="bad",
                           log_dir=self.log_dir)
+
+    def test_cli_evidence_dispatch_reaches_preflight(self):
+        """Regression: a local variable in main()'s --run parsing must not
+        shadow the module-level evidence() dispatch (UnboundLocalError)."""
+        completed = subprocess.run(
+            [sys.executable, str(TOOLS / "adjudicate.py"), "SC999",
+             "--evidence"], capture_output=True, text=True, timeout=120)
+        combined = completed.stdout + completed.stderr
+        self.assertNotIn("UnboundLocalError", combined)
+        self.assertEqual(completed.returncode, 1)
+        self.assertIn("SC999", combined)
 
     def test_stderr_captured_separately(self):
         receipt = ac.run_logged(

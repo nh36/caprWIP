@@ -729,19 +729,20 @@ def main() -> int:
                 print(adjudication_run.load(sc_id).report())
                 return 0
             if sub[:1] == ["advance"] and len(sub) >= 2:
-                note, evidence, rest = "", None, sub[2:]
+                note, stage_evidence, rest = "", None, sub[2:]
                 while rest:
                     if rest[:1] == ["--note"] and len(rest) >= 2:
                         note, rest = rest[1], rest[2:]
                     elif rest[:1] == ["--evidence"] and len(rest) >= 2:
-                        evidence = json.loads(
+                        stage_evidence = json.loads(
                             Path(rest[1]).read_text(encoding="utf-8"))
                         rest = rest[2:]
                     else:
                         print(__doc__.strip(), file=sys.stderr)
                         return 2
                 run = adjudication_run.load(sc_id)
-                run.complete_stage(sub[1], note=note, evidence=evidence)
+                run.complete_stage(sub[1], note=note,
+                                   evidence=stage_evidence)
                 print(run.report())
                 return 0
             if sub[:1] == ["decide"] and len(sub) == 2:
