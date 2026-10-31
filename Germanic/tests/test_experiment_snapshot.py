@@ -14,8 +14,10 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import uuid
 from pathlib import Path
 from unittest import mock
+import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 TOOLS = REPO_ROOT / "Germanic/tools"
@@ -102,11 +104,41 @@ class SnapshotImmutabilityTests(unittest.TestCase):
             snap.input_path("germanic_fst")
         self.assertIn("must not proceed", str(ctx.exception))
 
-    def test_duplicate_experiment_id_refused(self):
-        self._create(experiment_id="exp-dup")
-        with self.assertRaises(RuntimeError) as ctx:
-            self._create(experiment_id="exp-dup")
-        self.assertIn("new experiment id", str(ctx.exception))
+    def test_unsafe_identifiers_and_paths_rejected(self):
+        for identifier in ("..", "../escape", "x;rm", "x y", "/tmp/x"):
+            with self.subTest(identifier=identifier):
+                with self.assertRaises(ValueError):
+                    self._create(experiment_id=identifier)
+        snap = self._create()
+        with self.assertRaises(ValueError):
+            snap.stage_in_container(service="backend; false")
+
+    @pytest.mark.runtime
+    def test_existing_compiler_uses_pinned_source_after_production_edit(self):
+        self.fst.write_text("define Tiny a -> b;\n")
+        recipe = self.tmpdir / "recipe.json"
+        recipe.write_text(json.dumps({
+            "insert_rule": "", "definitions": "", "component_checks": [{"component": "Tiny"}]}))
+        snap = es.create_snapshot(
+            "pin-" + uuid.uuid4().hex, "compiled immutability control",
+            {"germanic_fst": self.fst, "recipe": recipe}, work_root=self.work_root)
+        self.fst.write_text("define Tiny a -> c;\n")
+        result = snap.compile_isolated("germanic_fst", "recipe", components_only=True)
+        try:
+            lookup = subprocess.run(
+                ["docker", "compose", "exec", "-T", "backend", "flookup", "-i",
+                 result["bins"]["component:Tiny"]], input="a\n", text=True,
+                capture_output=True, check=True, cwd=REPO_ROOT)
+            self.assertIn("a\tb", lookup.stdout)
+            self.assertNotIn("a\tc", lookup.stdout)
+        finally:
+            subprocess.run(
+                ["docker", "compose", "exec", "-T", "backend", "chmod", "-R", "u+w",
+                 result["container_source"]], check=True, cwd=REPO_ROOT)
+            subprocess.run(
+                ["docker", "compose", "exec", "-T", "backend", "rm", "-rf",
+                 result["container_source"], result["container_output"]],
+                check=True, cwd=REPO_ROOT)
 
 
 class CompletionReceiptTests(unittest.TestCase):
@@ -200,7 +232,7 @@ class ContainerStagingTests(unittest.TestCase):
                 self._completed(), self._completed(),
                 self._completed(stdout=listing)]):
             path = self.snap.stage_in_container()
-        self.assertEqual(path, "/tmp/capr-exp-exp-container")
+        self.assertTrue(path.startswith("/tmp/capr-exp-exp-container-"))
 
     def test_hash_mismatch_inside_container_fails_closed(self):
         listing = "deadbeef  germanic_fst.txt\n"

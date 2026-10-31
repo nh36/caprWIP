@@ -34,9 +34,11 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import shutil
 import stat
 import subprocess
+import uuid
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -46,6 +48,12 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 EXPERIMENTS_DIR = adjudication_control.WORK_DIR / "experiments"
 
 OUTCOMES = ("passed", "failed", "inconclusive", "deferred")
+
+
+def _identifier(value: str) -> str:
+    if not isinstance(value, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{0,79}", value):
+        raise ValueError(f"invalid experiment identifier or service: {value!r}")
+    return value
 
 
 def _sha256(path: Path) -> str:
@@ -93,6 +101,8 @@ class Snapshot:
         if entry is None:
             raise KeyError(f"no snapshot input labelled {label!r}")
         path = self.snapshot_dir / entry["snapshot_name"]
+        if path.resolve().parent != self.snapshot_dir.resolve():
+            raise ValueError("snapshot input path escapes its source directory")
         actual = _sha256(path)
         if actual != entry["sha256"]:
             raise RuntimeError(
@@ -100,6 +110,46 @@ class Snapshot:
                 f"hash ({actual} != {entry['sha256']}); the snapshot is "
                 "corrupt and the experiment must not proceed")
         return path
+
+    def verify(self) -> None:
+        receipt = self.receipt()
+        _identifier(receipt["experiment_id"])
+        if not receipt.get("inputs"):
+            raise ValueError("snapshot contains no inputs")
+        for label in receipt["inputs"]:
+            self.input_path(label)
+        if receipt["variant_sha256"] != {
+                name: hashlib.sha256(text.encode()).hexdigest()
+                for name, text in receipt["variants"].items()}:
+            raise ValueError("snapshot variant hashes do not match")
+
+    def compile_isolated(self, source_label: str, recipe_label: str, *,
+                         components_only: bool = False, service: str = "backend") -> dict:
+        """Route pinned inputs to the existing compiler in container-private /tmp."""
+        self.verify()
+        source = self.input_path(source_label).name
+        recipe = self.input_path(recipe_label).name
+        container_dir = self.stage_in_container(service=service)
+        output = f"/tmp/capr-build-{_identifier(self.receipt()['experiment_id'])}-{uuid.uuid4().hex}"
+        code = (
+            "import json,sys; from pathlib import Path; "
+            "sys.path.insert(0,'/usr/app/tools'); "
+            "from anglo_frisian_experiments import compile_isolated; "
+            "root=Path(sys.argv[1]); out=Path(sys.argv[2]); out.mkdir(); "
+            "recipe=json.loads((root/sys.argv[4]).read_text()); "
+            "bins=compile_isolated(root/sys.argv[3],recipe,[],out,"
+            "components_only=sys.argv[5]=='True'); "
+            "print(json.dumps({k:str(v) for k,v in bins.items()}))")
+        receipt = adjudication_control.run_logged(
+            ["docker", "compose", "exec", "-T", service, "python3", "-c", code,
+             container_dir, output, source, recipe, str(components_only)],
+            label="isolated-compile", log_dir=self.staging_dir)
+        if not receipt["ok"]:
+            raise RuntimeError(f"isolated snapshot compile failed: {receipt['stderr_log']}")
+        return {"receipt": receipt, "snapshot_identity": self.receipt()["source_identity"],
+                "snapshot_root": str(self.root.resolve()),
+                "container_source": container_dir, "container_output": output,
+                "bins": json.loads(Path(receipt["stdout_log"]).read_text())}
 
     def is_complete(self) -> bool:
         return self.completion_path.is_file()
@@ -164,10 +214,12 @@ class Snapshot:
         """Copy the snapshot into the container's own /tmp (not a bind
         mount): the host production-editing process cannot write there.
         Returns the container-side snapshot directory."""
-        container_dir = f"/tmp/capr-exp-{self.receipt()['experiment_id']}"
+        self.verify()
+        _identifier(service)
+        container_dir = f"/tmp/capr-exp-{_identifier(self.receipt()['experiment_id'])}-{uuid.uuid4().hex}"
         checks = subprocess.run(
             ["docker", "compose", "exec", "-T", service, "sh", "-lc",
-             f"rm -rf {container_dir} && mkdir -p {container_dir}"],
+             f"mkdir {container_dir}"],
             cwd=REPO_ROOT, capture_output=True, text=True)
         if checks.returncode != 0:
             raise RuntimeError(
@@ -183,7 +235,7 @@ class Snapshot:
                     for entry in self.receipt()["inputs"].values()}
         listing = subprocess.run(
             ["docker", "compose", "exec", "-T", service, "sh", "-lc",
-             f"cd {container_dir} && sha256sum *"],
+             f"cd {container_dir} && chmod -R a-w . && sha256sum *"],
             cwd=REPO_ROOT, capture_output=True, text=True)
         if listing.returncode != 0:
             raise RuntimeError(
@@ -216,8 +268,7 @@ def create_snapshot(experiment_id: str, purpose: str,
     *environment* records Foma/container identity when the caller has it;
     otherwise the receipt states explicitly that it was not recorded.
     """
-    if not experiment_id or "/" in experiment_id:
-        raise ValueError(f"invalid experiment id {experiment_id!r}")
+    _identifier(experiment_id)
     root = (work_root or EXPERIMENTS_DIR) / experiment_id
     if root.exists():
         raise RuntimeError(
@@ -227,10 +278,13 @@ def create_snapshot(experiment_id: str, purpose: str,
     snapshot_dir.mkdir(parents=True)
     recorded_inputs = {}
     for label, source in inputs.items():
+        _identifier(label)
         source = Path(source)
         if not source.is_file():
             raise FileNotFoundError(f"experiment input {label!r}: {source}")
         name = f"{label}{''.join(source.suffixes) or '.txt'}"
+        if not re.fullmatch(r"[A-Za-z0-9_.-]+", name):
+            raise ValueError("unsafe snapshot filename")
         target = snapshot_dir / name
         shutil.copyfile(source, target)
         _make_read_only(target)
@@ -273,6 +327,7 @@ def create_snapshot(experiment_id: str, purpose: str,
 
 def load_snapshot(experiment_id: str,
                   work_root: Path | None = None) -> Snapshot:
+    _identifier(experiment_id)
     root = (work_root or EXPERIMENTS_DIR) / experiment_id
     if not (root / "receipt.json").is_file():
         raise FileNotFoundError(f"no experiment snapshot at {root}")
