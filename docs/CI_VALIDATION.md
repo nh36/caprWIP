@@ -258,6 +258,70 @@ the serial runtime lane until its container work is itself restructured
 runtime tests), which is future work requiring its own adjudication of
 evidence-freshness semantics.
 
+### Lookup measurements and batching (2026-10-31)
+
+Fresh measurements on `update`, using the backend container, distinguish
+lookup savings from compilation and machine variability. Temporary subprocess
+instrumentation and raw benchmark records are untracked under
+`.ci-results/lookup-performance/`; no production profiling, new cache or
+validation lane is introduced.
+
+| Operation / timing basis | Before | After | `flookup` processes | Submitted inputs, including markers |
+|---|---:|---:|---:|---:|
+| SC024 census, lookup subprocess time | 2.24 s | 0.013 s | 780 -> 2 | 780 -> 1,560 |
+| Complete canonical report, paired median | 5.52 s | 2.01 s | 110 -> 110 | 85,800 -> 85,800 |
+| Older live probes, runner subprocess time in strict lane | 42.09 s | 29.45 s | 254 -> 118 | 254 -> 508 |
+| Current world migration assay, elapsed in strict lane | 124.52 s | 106.53 s | 6,057 -> 1,444 | 611,324 -> 611,324 |
+
+The census uses the existing batch evaluator twice. Complete census and
+chronology-witness output is identical, including rejected and multiple-output
+rows. The five older live-probe modules now use the provisioned runner regardless
+of host `flookup` availability; unavailable runtime evidence fails instead of
+silently skipping. Their SC023/SC024 censuses group repeated queries by bin.
+The migration worker advances independent candidates together while preserving
+each trace, rejection step and ambiguity failure. Its complete current evidence
+JSON agrees with the scalar worker. Paired candidate-only measurements against
+the same bins average 7.16 s -> 0.91 s per assay; separate whole-assay measurements
+were 124.52 s -> 184.79 s because compilation varied from 109.58 s to 169.07 s.
+Thus the whole-assay table row is an observation, not a reproducible 14% guarantee.
+
+Across all 110 report bins, median-per-bin empty-input runs total 4.42 s versus
+4.68 s with corpus batches: network loading/startup dominates application.
+A bare process launch measured about 3 ms; subtracting that from an empty
+`flookup` run is only a loading/startup estimate, not an independently instrumented
+loader timer. Complete reports therefore overlap four independent read-only
+loads, retaining deterministic assembly and all canonical freshness gates.
+Measured combined `flookup` RSS peaked at 168 MiB. No worker rebuilds or writes
+authoritative artifacts; the normal runtime/evidence lanes remain serial.
+Serial and parallel report bytes agree exactly. The v2 provenance refresh used
+the existing artifact graph and did not recompile valid bins.
+
+Input-keyed grouping agreed with boundary-marker grouping on all 110 binaries
+and synthetic duplicate, ambiguous, rejected and empty-output inputs, including
+ordering and the equivalence checker's multiplicity convention. Interleaved
+timings did not establish a consistent advantage, so boundary markers remain.
+Persistent per-stage processes would not eliminate loading here: each stage is
+already queried only once. The direct derivation-class generator is not on the
+normal artifact-graph path, which projects the canonical report without lookups;
+unused scalar report scripts were left alone.
+
+| Strict lane | Before | After | Final result |
+|---|---:|---:|---|
+| 1, parallel non-runtime | 15:20 | 13:01 | 1,651 passed |
+| 2, serial runtime | 13:25 | 13:08 | 42 passed; five explicit historical-replay skips |
+| 3, exclusive evidence interface | 4:19 | 4:06 | 25 passed |
+| Total | 33:05 | 30:16 | 1,718 passed |
+
+The runtime/evidence subtotal is 17:45 -> 17:15. Total lookup processes fall
+from 8,110 to 2,583; submitted inputs rise from 794,804 to 795,838 because census
+batching retains marker inputs. The baseline's scalar host probes were routed
+through Docker by temporary instrumentation. Its non-runtime lane overlapped
+read-only microbenchmarks; that lane executes no live lookups, so its improvement
+cannot be attributed to lookup optimisation. Shared-machine and compilation
+variance also limit causal interpretation of the total elapsed difference.
+Compilation still accounts for roughly 90% of lane 2; further substantial
+end-to-end gains need separate investigation, not another lookup cache.
+
 ## Portable evidence and provenance
 
 Portable validation requires bibliography keys, declared library-contained
