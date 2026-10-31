@@ -40,6 +40,23 @@ class SnapshotImmutabilityTests(unittest.TestCase):
             experiment_id, "synthetic control-system test",
             {"germanic_fst": self.fst}, work_root=self.work_root, **kwargs)
 
+    def test_duplicate_experiment_id_refused(self):
+        """Concurrent or repeated experiments cannot silently share (and so
+        corrupt) each other's recorded evidence."""
+        self._create("exp-dup")
+        with self.assertRaisesRegex(RuntimeError, "already exists"):
+            self._create("exp-dup")
+
+    def test_concurrent_experiments_have_disjoint_directories(self):
+        first = self._create("exp-a")
+        second = self._create("exp-b")
+        self.assertNotEqual(first.root, second.root)
+        self.assertFalse(set(first.root.parts) >= set(second.root.parts))
+        # Completing one leaves the other's staging/results untouched.
+        receipt = {"label": "probe", "ok": True, "returncode": 0}
+        first.complete("passed", "done", command_receipts=[receipt])
+        self.assertFalse(second.is_complete())
+
     def test_production_edit_does_not_reach_running_experiment(self):
         """Acceptance test: modify the production FST after the snapshot;
         the experiment's source is unchanged and its receipt identifies the

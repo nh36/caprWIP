@@ -209,6 +209,81 @@ begin the next SC unless explicitly instructed.
 
 ---
 
+## Execution controls (the paved road)
+
+The scientific procedure above is enforced by a small control system in
+`Germanic/tools/adjudication_control.py`, `experiment_snapshot.py` and
+`adjudication_run.py`, surfaced through `adjudicate.py`. It is
+operational machinery only: registries, memoranda and
+`artifact_graph.py` remain the scholarly and generated-artifact
+authorities. Its state lives in the untracked `.capr-work/` directory.
+
+**Preflight before anything expensive.**
+`python3 Germanic/tools/adjudicate.py SCNNN --preflight [--for investigate|evidence|finalize] [--json]`
+runs every cheap check (registry row and fields, referenced files,
+Foma identifier, controlled verdict vocabulary, memorandum sections and
+`Registry-verdict:` format, GENERATED/ARCHIVE protection, protected
+baselines, runtime availability, runtime-lock conflicts, source
+identity) before any compilation or regeneration. `--evidence` and
+`--finalize` run their mandatory preflight automatically; a blocked
+preflight exits nonzero and nothing expensive starts. Expected
+post-refresh staleness of generated artifacts is informational, never a
+block.
+
+**Experiments are pinned to immutable snapshots.** New adjudication
+experiments go through `experiment_snapshot.create_snapshot`, which
+hashes and copies every input (FST, data, variant definitions, probes,
+expected outcomes, negative controls, environment identity) into a
+per-experiment directory. Later production edits cannot reach a running
+experiment; results are promoted atomically from staging, so an
+interrupted run leaves no valid-looking receipt, and `"passed"` cannot
+be recorded without all-ok command receipts.
+
+**One durable journal per adjudication.**
+`adjudicate.py SCNNN --run start|status|advance|decide|set-reference`
+drives the stages INSPECT → PREFLIGHT → SNAPSHOT → INVESTIGATE → DECIDE
+→ PROPAGATE → VALIDATE → COMPLETE, journaled under
+`.capr-work/runs/SCNNN/` (atomic `state.json`, append-only
+`events.ndjson`). Interrupted runs resume without rerunning validated
+evidence while inputs are unchanged. Invalidation is selective and
+derived from the existing v2 full-trace provenance contract: a memo
+edit invalidates only PREFLIGHT; an FST or corpus edit invalidates
+INVESTIGATE/DECIDE; the deliberate PROPAGATE edit does not
+retro-invalidate the decision it implements; VALIDATE is always checked
+against the exact current tree.
+
+**The scientific gate is in DECIDE.** A decision record must supply the
+distinctions of §5 and §10 (phenomenon, conditioning, implementation,
+selected-input assumptions, census, positive witnesses, negative
+controls, counterfactuals, literature with verification flags,
+historical-vs-modelling, unresolved items, verdict, intended
+modifications). `DEFER` is a legitimate outcome; a failing required
+negative control or an unacknowledged counterexample cannot be recorded
+as resolved, regardless of unchanged corpus outputs.
+
+**Honest execution evidence.** Run validators through
+`adjudication_control.run_logged` (argument arrays only, never shell
+strings): each command gets its own receipt with the true exit code and
+full logs, so downstream filtering cannot conceal a failure. VALIDATE
+accepts only all-ok receipts matching the current source identity.
+
+**Budgets and failure limits.** `adjudication_run.record_operation`
+journals expensive operations against conservative per-run budgets
+(overridable only with a journaled reason), warns when an operation
+would repeat work against unchanged inputs, and
+`record_repair_attempt` stops the automatic repair loop after two
+failed repairs of the same failure — report the evidence instead of
+retrying. Compile-cache hits/misses are logged
+(`.capr_compile_cache/events.log`); cached evidence is never a fresh
+execution.
+
+Validation levels, incremental regression and historical replay are
+documented once in `docs/CI_VALIDATION.md` and
+`docs/HISTORICAL_REPLAY.md`; the journal records which comparison
+actually ran and, when needed, an explicit scientific reference state.
+
+---
+
 ## Worked example: SC023 (read `audits/sc023-adjudication.md`)
 
 SC023 is the principal worked example because it exercises the

@@ -117,6 +117,16 @@ the full strict suite runs once against the final candidate tree, and again
 only if repairs change what was certified. Record the exact tested commit.
 A portable GitHub Actions pass is never equivalent to this gate.
 
+For adjudication work, the execution controls described in
+`Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` ("Execution controls")
+apply across all three levels: run validators via
+`adjudication_control.run_logged` so every claim of a pass is backed by a
+receipt with the true exit code and full logs, and journal each level with
+`adjudication_run.record_validation_level`, which separates checks actually
+executed from checks satisfied by previously verified evidence (each reused
+item must state the basis of its prior verification). After two failed
+repairs of the same underlying failure, stop and report rather than retry.
+
 ## Current state, incremental regression, historical reproducibility
 
 Ordinary validation distinguishes three forms (full architecture, inventory
