@@ -48,7 +48,16 @@
         Control-plane refresh plus the SC-specific propagation checks.
         Never fabricates runtime evidence (the census fails closed on stale
         trace evidence) and never rewrites ARCHIVE/FROZEN snapshots. Run
-        after editing SOURCE files.
+        after editing SOURCE files. A cheap mandatory preflight (registry,
+        verdict, memo syntax/sections, frozen-record safety, runner
+        availability) runs first and blocks before any expensive work.
+
+    python3 Germanic/tools/adjudicate.py SC024 --preflight [--for OP] [--json]
+        Genuinely read-only prerequisite validation (no regeneration, no
+        container compilation). OP is investigate (default), evidence or
+        finalize; an investigation preflight does not require a completed
+        verdict, a finalisation preflight does. Prints one PASS / BLOCKED /
+        NOT_APPLICABLE line per check and exits nonzero when blocked.
 
     python3 Germanic/tools/adjudicate.py SC024 --check
         Validate propagation consistency only (no regeneration): SC
@@ -94,6 +103,7 @@ from generate_registry_views import (  # noqa: E402
 )
 
 import artifact_graph  # noqa: E402
+import adjudication_control  # noqa: E402
 from capr_runtime import run_in_runner  # noqa: E402
 import cascade_baseline  # noqa: E402
 
@@ -289,17 +299,14 @@ def evidence(sc_id) -> int:
     """Deterministically gather the executable evidence for one SC.
 
     Fails loudly at every step; never falls back to stale artifacts.
+    A failed mandatory preflight prevents all expensive work from starting.
     """
+    pre = adjudication_control.preflight(sc_id, "evidence")
+    print(pre.render())
+    if pre.blocked:
+        return 1
     row = load_registry_row(sc_id)
-    if row is None:
-        print(f"{sc_id} not found in {SC_REGISTRY.relative_to(REPO_ROOT)}", file=sys.stderr)
-        return 1
     ident = row["fst_identifier"]
-    if not ident:
-        print(f"EVIDENCE FAILED: {sc_id} has no executable fst_identifier in the "
-              f"registry (lifecycle: {row['lifecycle_status']}); there is no live "
-              "rule to census.", file=sys.stderr)
-        return 1
     edges = edges_for(sc_id)
     witnesses = "; ".join(
         w for e in edges for w in split_refs(e["representative_lexemes"]))
@@ -337,28 +344,37 @@ def evidence(sc_id) -> int:
     # cascade + stage bins in the container (writing the build manifest and
     # proving production/sandbox equivalence), regenerates the canonical
     # full trace only when its recorded provenance is stale, and brings
-    # every downstream projection up to date.
+    # every downstream projection up to date. The runtime lock prevents a
+    # concurrent process from interleaving rebuilds of the same mutable
+    # container artifacts.
     print("\n## Control-plane refresh (forced stage-bin rebuild) ...")
     sys.stdout.flush()
     try:
-        artifact_graph.refresh(force=frozenset({"runtime_bins"}))
-    except artifact_graph.GraphError as exc:
-        print(f"EVIDENCE FAILED: {exc}", file=sys.stderr)
-        return 1
-    stale = artifact_graph.verify_all()
-    if stale:
-        for s in stale:
-            print(f"EVIDENCE FAILED (stale after refresh): {s}", file=sys.stderr)
-        return 1
+        with adjudication_control.runtime_lock(f"evidence {sc_id}"):
+            try:
+                artifact_graph.refresh(force=frozenset({"runtime_bins"}))
+            except artifact_graph.GraphError as exc:
+                print(f"EVIDENCE FAILED: {exc}", file=sys.stderr)
+                return 1
+            stale = artifact_graph.verify_all()
+            if stale:
+                for s in stale:
+                    print(f"EVIDENCE FAILED (stale after refresh): {s}", file=sys.stderr)
+                return 1
 
-    print("\n## Firing census (fresh stage bins only)")
-    sys.stdout.flush()
-    inner = f"python3 tools/sc_evidence.py {shlex.quote(ident)} --min-mtime {min_mtime}"
-    if witnesses:
-        inner += f" --witnesses {shlex.quote(witnesses)}"
-    census = run_in_runner(inner)
-    if census.returncode != 0:
-        print(f"EVIDENCE FAILED: census exited {census.returncode}", file=sys.stderr)
+            print("\n## Firing census (fresh stage bins only)")
+            sys.stdout.flush()
+            inner = (f"python3 tools/sc_evidence.py {shlex.quote(ident)} "
+                     f"--min-mtime {min_mtime}")
+            if witnesses:
+                inner += f" --witnesses {shlex.quote(witnesses)}"
+            census = run_in_runner(inner)
+            if census.returncode != 0:
+                print(f"EVIDENCE FAILED: census exited {census.returncode}",
+                      file=sys.stderr)
+                return 1
+    except RuntimeError as exc:
+        print(f"EVIDENCE FAILED: {exc}", file=sys.stderr)
         return 1
     return 0
 
@@ -439,8 +455,21 @@ def finalize(sc_id) -> int:
     their recorded input provenance shows them stale, and the coverage
     census fails closed on stale trace evidence. ARCHIVE/FROZEN snapshots
     are never rewritten.
+
+    A failed mandatory preflight (registry/verdict/memo syntax and
+    sections, frozen-record safety, runner availability, runtime-conflict
+    detection) blocks before any expensive regeneration starts.
     """
-    rc = refresh()
+    pre = adjudication_control.preflight(sc_id, "finalize")
+    print(pre.render())
+    if pre.blocked:
+        return 1
+    try:
+        with adjudication_control.runtime_lock(f"finalize {sc_id}"):
+            rc = refresh()
+    except RuntimeError as exc:
+        print(f"FINALIZE FAILED: {exc}", file=sys.stderr)
+        return 1
     if rc:
         return rc
     print("== propagation checks ==")
@@ -652,6 +681,21 @@ def main() -> int:
     if (len(args) == 3 and args[:2] == ["--refresh", "--mode"]
             and args[2] in {"full", "portable"}):
         return refresh(mode=args[2])
+    if (len(args) >= 2 and args[1] == "--preflight"
+            and re.fullmatch(r"SC\d{3}", args[0])):
+        rest = args[2:]
+        as_json = "--json" in rest
+        rest = [a for a in rest if a != "--json"]
+        operation = "investigate"
+        if (len(rest) == 2 and rest[0] == "--for"
+                and rest[1] in adjudication_control.OPERATIONS):
+            operation = rest[1]
+            rest = []
+        if rest:
+            print(__doc__.strip(), file=sys.stderr)
+            return 2
+        return adjudication_control.preflight_main(
+            args[0], operation, as_json=as_json)
     if (len(args) != 2
             or args[1] not in ("--prepare", "--check", "--finalize",
                                "--evidence", "--refresh")
