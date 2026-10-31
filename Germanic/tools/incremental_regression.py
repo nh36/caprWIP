@@ -1,311 +1,444 @@
 #!/usr/bin/env python3
-"""Incremental regression: compare the current model with its predecessor.
+"""Incremental regression: compare consecutive canonical full-trace reports.
 
-The ordinary comparison for development is between two adjacent source
-states, never a succession of historical grammars:
+CAPR's authoritative record of the complete phonological derivations is the
+committed full-trace report (Germanic/docs/debug_snapshots/
+oe_full_trace_report.txt), generated once per model state by
+tools/oe_full_trace_report.py through the artifact graph. Git already
+stores every prior version of that report, so comparing the proposed model
+with its immediate predecessor never compiles or evaluates anything:
 
-* dirty working tree (any executable input differs from HEAD):
-  **worktree vs HEAD**;
-* clean tree: **HEAD vs HEAD^1** (first parent; a merge commit is compared
-  against its first parent and the report says so; a missing parent is an
-  explicit error).
+* staged executable inputs differing from HEAD: **staged state vs HEAD**
+  (unstaged work is ignored unless --worktree is passed explicitly);
+* clean/unstaged-only tree: **HEAD vs HEAD^1** (first parent; a merge is
+  compared against its first parent and the report says so; a missing
+  parent is an explicit error);
+* ``--worktree``: working tree vs HEAD, for development.
 
-Both states are identified explicitly (commit id or ``worktree`` plus
-content digests). For each state the full cascade is compiled in a
-disposable container and evaluated over the state's own selected corpus:
-final Old English outputs, every named-stage snapshot output, rule order
-and corpus membership/inputs. Compiled builds and evaluation results are
-reused through the content-addressed cache (``compile_cache.py``), so a
-state whose executable inputs are unchanged is never recompiled or
-re-executed; identical keys for both states short-circuit to an explicit
-"executable inputs identical" report with no Foma execution at all.
+Each report is validated against the source files of its *own* version
+(Git blobs for committed/staged states, live files for the working tree)
+through the shared provenance core (oe_trace_parse.provenance_problems).
+A missing, stale or non-canonical report is an explicit failure, never a
+silent skip; a stale *working-tree* report is regenerated through the
+canonical artifact-graph mechanism (runtime_bins + full_trace nodes) and
+the comparison then operates on the refreshed report.
 
-Differences are reported for documentation and adjudication, not
-automatically rejected: an intentional model change legitimately alters
-outputs, and the immediate parent is a reference for identifying change,
-not an independent guarantee of correctness. Protected scientific
-fingerprints and frozen baselines remain separate assertions in the
-ordinary suite precisely because consecutive comparisons cannot detect
+The comparison examines every corresponding named stage of every
+corresponding lexical entry (identity: concept + PROTO + EXPECTED, the
+stable row identity present in every report generation), so intermediate
+changes that leave final outputs unaffected are reported, including the
+first divergence and any later convergence. Rejection states and raw
+context-marked forms come from the RAW STAGE FIDELITY section; for older
+reports that lack it the comparison is display-level and says so
+explicitly rather than reconstructing historical grammars.
+
+Differences are reported for adjudication, not automatically rejected:
+the predecessor identifies change, it is not an independent guarantee of
+correctness. Protected fingerprints and frozen baselines remain separate
+assertions precisely because consecutive comparisons cannot detect
 cumulative drift. See docs/HISTORICAL_REPLAY.md.
 """
 from __future__ import annotations
 
 import argparse
 import json
-import shlex
 import subprocess
 import sys
-import tempfile
 from hashlib import sha256
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from compile_cache import (  # noqa: E402
-    BUILD_ARTIFACT_GLOBS, cached_build, cached_evaluation, compile_cache_key,
-    store_build, store_evaluation)
+import oe_trace_parse  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
+TRACE_PATH = "Germanic/docs/debug_snapshots/oe_full_trace_report.txt"
+RESULTS_DIR = ROOT / ".ci-results"
+SUMMARY_NAME = "incremental_regression.txt"
+REPORT_NAME = "incremental_regression.json"
 
-# The executable inputs of the Old English cascade: the state of exactly
-# these files defines a compared model state.
-INPUT_PATHS = (
+# Dependency classification for source-state identification. A change to
+# any of these between the compared states is reported with its executable
+# consequence; germanic.txt being unchanged never by itself makes a change
+# to evaluation code computationally irrelevant.
+RECOMPILE_PATHS = (
     "Germanic/fsts/germanic.txt",
+    "Germanic/fsts/old_english_sandbox.txt",
+    "Germanic/tools/generate_oe_sandbox.py",
+    "Germanic/tools/oe_pipeline.py",
+)
+REEVALUATE_PATHS = (
     "Germanic/data/germanic-aligned-final.tsv",
     "Germanic/data/entry_context_metadata.tsv",
     "backend/oe_input_context.py",
+    "Germanic/tools/oe_full_trace_report.py",
+    "Germanic/tools/sound_change_order_sensitivity.py",
+    "Germanic/tools/capr_runtime.py",
 )
+DEPENDENCY_PATHS = RECOMPILE_PATHS + REEVALUATE_PATHS
 
-_EVAL_SCRIPT = """
-import json, sys
-from pathlib import Path
-sys.path.insert(0, '/usr/app/tools')
-import oe_pipeline
-from sound_change_order_sensitivity import batch_apply_down
-rows = oe_pipeline.load_rows(Path('/usr/app/data/germanic-aligned-final.tsv'))
-forms = [oe_pipeline.evaluation_input(row) for row in rows]
-bin_dir = Path('/usr/app')
-result = {
-    'stage_order': [s.foma_identifier for s in oe_pipeline.named_stages()],
-    'corpus': {row['row_id']: row['fst_input'] for row in rows},
-    'concepts': {row['row_id']: row['concept'] for row in rows},
-    'finals': {row['row_id']: outputs for row, outputs in
-               zip(rows, batch_apply_down(bin_dir / 'old_english.bin', forms))},
-    'snapshots': {name: {row['row_id']: outputs for row, outputs in
-                         zip(rows, batch_apply_down(bin_dir / name, forms))}
-                  for name in oe_pipeline.expected_snapshot_bins()},
-}
-print(json.dumps(result, ensure_ascii=False))
-"""
+STAGED = "STAGED"
+WORKTREE = "WORKTREE"
 
 
 class StateError(SystemExit):
-    """Explicit, non-silent failure to identify or build a compared state."""
+    """Explicit, non-silent failure to identify or validate a compared state."""
 
 
-def _git(*arguments: str) -> str:
-    return subprocess.check_output(["git", *arguments], cwd=ROOT, text=True)
+def _git(*arguments: str, root: Path = None) -> str:
+    return subprocess.check_output(["git", *arguments], cwd=root or ROOT,
+                                   text=True)
 
 
-def _commit_bytes(commit: str, path: str) -> bytes:
-    return subprocess.check_output(["git", "show", f"{commit}:{path}"], cwd=ROOT)
+def state_bytes(state: str, path: str, root: Path = None) -> bytes | None:
+    """Content of *path* in *state* (commit id, STAGED or WORKTREE)."""
+    root = root or ROOT
+    if state == WORKTREE:
+        target = root / path
+        return target.read_bytes() if target.is_file() else None
+    spec = f":{path}" if state == STAGED else f"{state}:{path}"
+    proc = subprocess.run(["git", "show", spec], cwd=root,
+                          stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return proc.stdout if proc.returncode == 0 else None
 
 
-def state_files(label: str) -> dict[str, bytes]:
-    if label == "worktree":
-        return {path: (ROOT / path).read_bytes() for path in INPUT_PATHS}
-    return {path: _commit_bytes(label, path) for path in INPUT_PATHS}
+def state_hash(state: str, path: str, root: Path = None) -> str | None:
+    payload = state_bytes(state, path, root)
+    return None if payload is None else sha256(payload).hexdigest()
 
 
-def resolve_states() -> dict:
+def source_hashes(state: str, root: Path = None) -> dict:
+    """sha256 of every provenance source *in the compared state itself*."""
+    return {label: state_hash(state, path, root)
+            for label, path in oe_trace_parse.SOURCE_PATHS.items()}
+
+
+def resolve_states(reference: str | None = None, worktree: bool = False,
+                   root: Path = None) -> dict:
     """Identify the two compared source states, explicitly."""
-    head = _git("rev-parse", "HEAD").strip()
-    worktree = state_files("worktree")
-    committed = state_files(head)
-    if worktree != committed:
-        return {"current": "worktree", "reference": head,
-                "basis": "uncommitted executable inputs vs HEAD"}
-    line = _git("rev-list", "--parents", "-n", "1", "HEAD").split()
-    parents = line[1:]
-    if not parents:
-        raise StateError(
-            f"HEAD ({head[:12]}) has no parent: a root or shallow commit has "
-            "no immediate predecessor to compare against. Fetch history or "
-            "pass --reference explicitly.")
-    basis = "HEAD vs first parent (HEAD^1)"
-    if len(parents) > 1:
-        basis = ("HEAD is a merge commit; compared against its FIRST parent "
-                 "only (HEAD^1), not the merged branch")
-    return {"current": head, "reference": parents[0], "basis": basis}
-
-
-def state_digest(files: dict[str, bytes]) -> dict[str, str]:
-    return {path: sha256(payload).hexdigest() for path, payload in files.items()}
-
-
-def backend_image() -> str:
-    image = subprocess.check_output(
-        ["docker", "compose", "images", "-q", "backend"], cwd=ROOT,
-        text=True).strip()
-    if not image:
-        raise StateError("the backend image must exist for incremental regression")
-    return image
-
-
-def evaluate_state(label: str, files: dict[str, bytes], image: str) -> dict:
-    """Evaluate one source state, reusing cached builds and evaluations."""
-    source = files["Germanic/fsts/germanic.txt"]
-    corpus = files["Germanic/data/germanic-aligned-final.tsv"]
-    extra = {path: files[path] for path in INPUT_PATHS[2:]}
-    key = compile_cache_key(image, source, corpus, extra=extra)
-    cached = cached_evaluation(key)
-    if cached is not None:
-        return {**cached, "state": label, "cache_key": key,
-                "evaluation": "cached", "digests": state_digest(files)}
-    record = _run_evaluation(label, files, image, key)
-    store_evaluation(key, record)
-    return {**record, "state": label, "cache_key": key,
-            "evaluation": "fresh", "digests": state_digest(files)}
-
-
-def _run_evaluation(label: str, files: dict[str, bytes], image: str,
-                    key: str) -> dict:
-    mounts = [(ROOT / "Germanic/tools", "/usr/app/tools"),
-              (ROOT / "Germanic/data", "/usr/app/data_host")]
-    command = ["docker", "create", "--workdir", "/usr/app",
-               "--entrypoint", "sleep"]
-    for host, container in mounts:
-        command += ["--volume", f"{host}:{container}:ro"]
-    container_id = subprocess.check_output(
-        command + [image, "infinity"], cwd=ROOT, text=True).strip()
-    try:
-        subprocess.run(["docker", "start", container_id], cwd=ROOT,
-                       capture_output=True, check=True)
-
-        def feed(destination: str, payload: bytes) -> None:
-            subprocess.run(
-                ["docker", "exec", "-i", container_id, "sh", "-c",
-                 f"cat > {shlex.quote(destination)}"],
-                input=payload, cwd=ROOT, capture_output=True, check=True)
-
-        subprocess.run(
-            ["docker", "exec", container_id, "sh", "-c",
-             "mkdir -p /usr/app/fsts && cp -a /usr/app/data_host /usr/app/data"],
-            cwd=ROOT, capture_output=True, check=True)
-        feed("/usr/app/fsts/germanic.txt", files["Germanic/fsts/germanic.txt"])
-        feed("/usr/app/data/germanic-aligned-final.tsv",
-             files["Germanic/data/germanic-aligned-final.tsv"])
-        feed("/usr/app/data/entry_context_metadata.tsv",
-             files["Germanic/data/entry_context_metadata.tsv"])
-        feed("/usr/app/oe_input_context.py", files["backend/oe_input_context.py"])
-
-        def execute(script: str, timeout: int = 1800):
-            return subprocess.run(
-                ["docker", "exec", container_id, "sh", "-c", script],
-                cwd=ROOT, capture_output=True, check=True, timeout=timeout)
-
-        build = cached_build(key)
-        if build is not None:
-            subprocess.run(
-                ["docker", "exec", "-i", container_id, "sh", "-c",
-                 "cd /usr/app && tar xf -"],
-                input=build, cwd=ROOT, capture_output=True, check=True)
-            compiled = "cached"
+    root = root or ROOT
+    head = _git("rev-parse", "HEAD", root=root).strip()
+    if worktree:
+        states = {"current": WORKTREE, "reference": head,
+                  "basis": "working tree vs HEAD (explicit --worktree)"}
+    else:
+        tracked = DEPENDENCY_PATHS + (TRACE_PATH,)
+        staged_differs = any(
+            state_hash(STAGED, path, root) != state_hash(head, path, root)
+            for path in tracked)
+        if staged_differs:
+            states = {"current": STAGED, "reference": head,
+                      "basis": "staged proposed state vs HEAD (unstaged "
+                               "work is NOT part of this comparison)"}
         else:
-            execute(
-                "python3 tools/generate_oe_sandbox.py > /dev/null && "
-                "foma -q -f fsts/old_english_sandbox.txt -e quit > /dev/null && "
-                "PYTHONPATH=tools python3 -c "
-                "'import oe_pipeline; from capr_runtime import write_build_manifest; "
-                'write_build_manifest(oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])'
-                "'")
-            exported = subprocess.run(
-                ["docker", "exec", container_id, "sh", "-c",
-                 f"cd /usr/app && tar cf - {BUILD_ARTIFACT_GLOBS}"],
-                cwd=ROOT, capture_output=True, check=False)
-            if exported.returncode == 0:
-                store_build(key, exported.stdout, label)
-            compiled = "fresh"
-        evaluated = execute("python3 -c " + shlex.quote(_EVAL_SCRIPT))
-        record = json.loads(evaluated.stdout.decode("utf-8"))
-        record["compiled"] = compiled
-        return record
-    finally:
-        subprocess.run(["docker", "rm", "--force", container_id], cwd=ROOT,
-                       capture_output=True, check=True)
+            line = _git("rev-list", "--parents", "-n", "1", "HEAD",
+                        root=root).split()
+            parents = line[1:]
+            if not parents:
+                raise StateError(
+                    f"HEAD ({head[:12]}) has no parent: a root or shallow "
+                    "commit has no immediate predecessor to compare against. "
+                    "Fetch history or pass --reference explicitly.")
+            basis = "HEAD vs first parent (HEAD^1)"
+            if len(parents) > 1:
+                basis = ("HEAD is a merge commit; compared against its FIRST "
+                         "parent only (HEAD^1), not the merged branch")
+            states = {"current": head, "reference": parents[0], "basis": basis}
+    if reference:
+        states["reference"] = _git("rev-parse", reference, root=root).strip()
+        states["basis"] += " (reference overridden on the command line)"
+    return states
 
 
-def fired_rows(record: dict) -> dict[str, list[str]]:
-    """Rows changed by each stage, between consecutive named snapshots."""
-    order = record["stage_order"]
-    snapshots = record["snapshots"]
-    bins = list(snapshots)
-    fired: dict[str, list[str]] = {}
-    for previous, current, identifier in zip(bins, bins[1:], order[1:]):
-        fired[identifier] = sorted(
-            row for row in snapshots[current]
-            if snapshots[current][row] != snapshots[previous].get(row))
-    return fired
+def load_state(state: str, root: Path = None) -> dict:
+    """Retrieve and validate one state's full-trace report (zero Foma).
+
+    The report is validated against the source files of its own version:
+    recorded provenance hashes vs that state's blobs, and the report's own
+    build-manifest hashes vs its own source hashes. Build-identity checks
+    against the *current* contract (expected-bin count, Foma version) are
+    the live freshness tests' responsibility, not a historical check.
+    """
+    text_bytes = state_bytes(state, TRACE_PATH, root)
+    if text_bytes is None:
+        return {"state": state, "text": None,
+                "problems": [f"state {state} has no full-trace report at "
+                             f"{TRACE_PATH}"],
+                "limitations": []}
+    text = text_bytes.decode("utf-8")
+    problems = oe_trace_parse.provenance_problems(
+        text, source_hashes(state, root))
+    limitations = []
+    if oe_trace_parse.parse_fidelity(text) is None:
+        limitations.append(
+            "report predates the RAW STAGE FIDELITY section: rejected stages "
+            "are indistinguishable from no-change stages and context "
+            "annotation marks are invisible; comparison is display-level "
+            "for this state")
+    if oe_trace_parse.parse_firing_summary(text) is None:
+        problems.append("report has no STAGE FIRING SUMMARY")
+    return {"state": state, "text": text, "problems": problems,
+            "limitations": limitations}
 
 
-def compare(current: dict, reference: dict) -> dict:
-    shared = sorted(set(current["corpus"]) & set(reference["corpus"]))
-    changed_finals = [row for row in shared
-                      if current["finals"].get(row) != reference["finals"].get(row)]
-    first_divergence = {}
-    reference_bins = set(reference["snapshots"])
-    for row in changed_finals:
-        for name in current["snapshots"]:
-            if (name in reference_bins and current["snapshots"][name].get(row)
-                    != reference["snapshots"][name].get(row)):
-                first_divergence[row] = name
-                break
-        else:
-            first_divergence[row] = "final composition only"
-    current_fired, reference_fired = fired_rows(current), fired_rows(reference)
-    firing_changes = {
-        identifier: {
-            "gained": sorted(set(current_fired[identifier])
-                             - set(reference_fired[identifier])),
-            "lost": sorted(set(reference_fired[identifier])
-                           - set(current_fired[identifier])),
-        }
-        for identifier in sorted(set(current_fired) & set(reference_fired))
-        if set(current_fired[identifier]) != set(reference_fired[identifier])}
+def _parsed(text: str) -> dict:
+    entries = oe_trace_parse.parse_entries(text)
+    firing = oe_trace_parse.parse_firing_summary(text)
     return {
-        "identical_executable_inputs":
-            current["cache_key"] == reference["cache_key"],
-        "stage_order_changed":
-            current["stage_order"] != reference["stage_order"],
-        "stages_added": sorted(set(current["stage_order"])
-                               - set(reference["stage_order"])),
-        "stages_removed": sorted(set(reference["stage_order"])
-                                 - set(current["stage_order"])),
-        "rows_added": sorted(set(current["corpus"]) - set(reference["corpus"])),
-        "rows_removed": sorted(set(reference["corpus"]) - set(current["corpus"])),
-        "inputs_changed": sorted(
-            row for row in shared
-            if current["corpus"][row] != reference["corpus"][row]),
-        "finals_changed": {
-            row: {"concept": current["concepts"].get(row, ""),
-                  "reference": reference["finals"].get(row),
-                  "current": current["finals"].get(row),
-                  "first_divergence": first_divergence[row]}
-            for row in changed_finals},
-        "firing_population_changes": firing_changes,
+        "entries": entries,
+        "fidelity": oe_trace_parse.parse_fidelity(text),
+        "firing": firing,
+        "stage_order": list(firing),
     }
 
 
-def summarize(states: dict, current: dict, reference: dict, report: dict) -> str:
+def _stage_results(entry, fidelity_for_entry: dict | None) -> dict:
+    """label -> comparable stage result, exact where fidelity permits.
+
+    A result is ("rejected",) for a stage that rejected its input, else the
+    tuple of raw forms (from the fidelity section) or displayed forms. Two
+    results are different exactly when the recorded evaluation differed.
+    """
+    results = {}
+    for stage in entry.stages:
+        record = (fidelity_for_entry or {}).get(stage.label)
+        if record and record["rejected"]:
+            results[stage.label] = ("rejected",)
+        elif record and record["raw"] is not None:
+            results[stage.label] = tuple(record["raw"])
+        else:
+            results[stage.label] = stage.forms
+    return results
+
+
+def compare(current: dict, reference: dict) -> dict:
+    """Complete stage-by-stage comparison of two parsed reports."""
+    cur, ref = _parsed(current["text"]), _parsed(reference["text"])
+    order_cur, order_ref = cur["stage_order"], ref["stage_order"]
+    shared_labels = [l for l in order_cur if l in set(order_ref)]
+    cur_keys, ref_keys = set(cur["entries"]), set(ref["entries"])
+    shared_keys = sorted(cur_keys & ref_keys)
+
+    display_level = (cur["fidelity"] is None or ref["fidelity"] is None)
+    entry_changes = {}
+    for key in shared_keys:
+        ecur, eref = cur["entries"][key], ref["entries"][key]
+        rcur = _stage_results(
+            ecur, None if display_level else cur["fidelity"].get(key))
+        rref = _stage_results(
+            eref, None if display_level else ref["fidelity"].get(key))
+        divergent = [l for l in shared_labels
+                     if rcur.get(l) != rref.get(l)]
+        final_changed = ecur.outputs != eref.outputs
+        context_changed = ecur.input_context != eref.input_context
+        if not (divergent or final_changed or context_changed):
+            continue
+        change = {
+            "concept": key[0], "proto": key[1], "expected": key[2],
+            "divergent_stages": divergent,
+            "first_divergence": divergent[0] if divergent else None,
+            "reconverged": bool(divergent)
+            and rcur.get(shared_labels[-1]) == rref.get(shared_labels[-1]),
+            "intermediate_only": bool(divergent) and not final_changed,
+            "final_changed": final_changed,
+            "context_changed": context_changed,
+        }
+        if divergent:
+            first = divergent[0]
+            change["at_first_divergence"] = {
+                "reference": list(rref.get(first, ())),
+                "current": list(rcur.get(first, ())),
+            }
+        if final_changed:
+            change["final"] = {"reference": eref.outputs,
+                               "current": ecur.outputs}
+        entry_changes["{} | {} | {}".format(*key)] = change
+
+    firing_changes = {}
+    for label in shared_labels:
+        cur_count, cur_pairs = cur["firing"][label]
+        ref_count, ref_pairs = ref["firing"][label]
+        gained = sorted(set(cur_pairs) - set(ref_pairs))
+        lost = sorted(set(ref_pairs) - set(cur_pairs))
+        if gained or lost or cur_count != ref_count:
+            firing_changes[label] = {
+                "reference_count": ref_count, "current_count": cur_count,
+                "gained": [" :: ".join(p) for p in gained],
+                "lost": [" :: ".join(p) for p in lost],
+            }
+
+    return {
+        "stage_order_changed": order_cur != order_ref,
+        "stages_added": sorted(set(order_cur) - set(order_ref)),
+        "stages_removed": sorted(set(order_ref) - set(order_cur)),
+        "entries_examined": len(shared_keys),
+        "stages_examined": len(shared_labels),
+        "entries_added": sorted("{} | {} | {}".format(*k)
+                                for k in cur_keys - ref_keys),
+        "entries_removed": sorted("{} | {} | {}".format(*k)
+                                  for k in ref_keys - cur_keys),
+        "entry_changes": entry_changes,
+        "intermediate_only_changes": sorted(
+            k for k, c in entry_changes.items() if c["intermediate_only"]),
+        "final_output_changes": sorted(
+            k for k, c in entry_changes.items() if c["final_changed"]),
+        "context_changes": sorted(
+            k for k, c in entry_changes.items() if c["context_changed"]),
+        "firing_population_changes": firing_changes,
+        "display_level_comparison": display_level,
+    }
+
+
+def classify_dependencies(states: dict, root: Path = None) -> dict:
+    """Executable consequence of each changed dependency between the states."""
+    recompile = [p for p in RECOMPILE_PATHS
+                 if state_hash(states["current"], p, root)
+                 != state_hash(states["reference"], p, root)]
+    reevaluate = [p for p in REEVALUATE_PATHS
+                  if state_hash(states["current"], p, root)
+                  != state_hash(states["reference"], p, root)]
+    report_changed = (state_hash(states["current"], TRACE_PATH, root)
+                      != state_hash(states["reference"], TRACE_PATH, root))
+    if recompile:
+        consequence = "requires transducer recompilation"
+    elif reevaluate:
+        consequence = "requires renewed evaluation (no recompilation)"
+    elif report_changed:
+        consequence = "presentation-only report difference"
+    else:
+        consequence = "no effect on the executable model"
+    return {"recompile_changed": recompile, "reevaluate_changed": reevaluate,
+            "report_changed": report_changed, "consequence": consequence}
+
+
+def refresh_worktree_trace() -> list:
+    """Regenerate a stale working-tree trace through the canonical graph.
+
+    Uses the existing artifact-graph runtime nodes (runtime_bins,
+    full_trace) -- the same mechanism as artifact_graph --refresh -- never
+    an independent generation path. Returns the actions taken.
+    """
+    import artifact_graph
+    actions = []
+    by_name = {node.name: node for node in artifact_graph.nodes()}
+    for name in ("runtime_bins", "full_trace"):
+        node = by_name[name]
+        if node.verify():
+            actions.extend(node.build())
+    return actions
+
+
+def run_comparison(reference: str | None = None, worktree: bool = False,
+                   root: Path = None, allow_refresh: bool = False) -> dict:
+    """Resolve, retrieve, validate and compare: the complete operation.
+
+    Raises StateError when a state cannot be identified or a report is
+    missing/invalid for its own version. Requires zero Foma invocations
+    when both reports are valid; a stale working-tree report is refreshed
+    through the artifact graph only when allow_refresh is set.
+    """
+    states = resolve_states(reference, worktree, root)
+    current = load_state(states["current"], root)
+    refreshed = []
+    if (current["problems"] and states["current"] == WORKTREE
+            and allow_refresh):
+        refreshed = refresh_worktree_trace()
+        current = load_state(states["current"], root)
+    if current["problems"]:
+        raise StateError(
+            f"invalid full-trace report for state {states['current']}: "
+            + "; ".join(current["problems"])
+            + ("" if states["current"] == WORKTREE else
+               " (regenerate via the artifact graph and commit/stage the "
+               "refreshed report with its sources)"))
+    deps = classify_dependencies(states, root)
+    if (not deps["report_changed"] and not deps["recompile_changed"]
+            and not deps["reevaluate_changed"]):
+        # Fast path: identical reports and dependencies -- the validated
+        # current report covers both states; terminate without parsing.
+        return {"states": states, "dependencies": deps,
+                "identical": True, "refreshed": refreshed,
+                "limitations": current["limitations"],
+                "comparison": None, "foma_invocations": 0}
+    reference_state = load_state(states["reference"], root)
+    if reference_state["problems"]:
+        raise StateError(
+            f"invalid full-trace report for predecessor state "
+            f"{states['reference']}: "
+            + "; ".join(reference_state["problems"]))
+    comparison = compare(current, reference_state)
+    return {
+        "states": states,
+        "dependencies": deps,
+        "identical": False,
+        "refreshed": refreshed,
+        "limitations": current["limitations"]
+        + reference_state["limitations"],
+        "comparison": comparison,
+        "foma_invocations": 0,
+    }
+
+
+def summarize(result: dict) -> str:
+    states, deps = result["states"], result["dependencies"]
     lines = [
-        "INCREMENTAL REGRESSION",
-        f"  current:   {states['current']} "
-        f"(evaluation {current['evaluation']}, build {current.get('compiled', 'cached')})",
-        f"  reference: {states['reference']} "
-        f"(evaluation {reference['evaluation']}, build {reference.get('compiled', 'cached')})",
+        "INCREMENTAL REGRESSION (consecutive full-trace comparison)",
+        f"  current:   {states['current']}",
+        f"  reference: {states['reference']}",
         f"  basis:     {states['basis']}",
+        f"  dependency consequence: {deps['consequence']}",
+        "  foma invocations: 0 (Git-stored canonical reports reused)",
     ]
-    if report["identical_executable_inputs"]:
-        lines.append(
-            "  executable inputs identical (same content key): no model "
-            "difference is possible; the evaluation is shared, not repeated")
+    for field in ("recompile_changed", "reevaluate_changed"):
+        if deps[field]:
+            lines.append(f"  {field}: {', '.join(deps[field])}")
+    if result["refreshed"]:
+        lines.append("  refreshed via artifact graph: "
+                     + "; ".join(result["refreshed"]))
+    for limitation in result["limitations"]:
+        lines.append(f"  LIMITATION: {limitation}")
+    if result["identical"]:
+        lines.append("  reports and executable dependencies identical: no "
+                     "model difference is possible")
         return "\n".join(lines)
-    for field in ("stages_added", "stages_removed", "rows_added",
-                  "rows_removed", "inputs_changed"):
-        if report[field]:
-            lines.append(f"  {field}: {', '.join(report[field])}")
-    if report["stage_order_changed"] and not (
-            report["stages_added"] or report["stages_removed"]):
-        lines.append("  stage order changed (same membership)")
-    finals = report["finals_changed"]
-    lines.append(f"  changed final outputs: {len(finals)}")
-    for row, change in sorted(finals.items()):
-        lines.append(
-            f"    row {row} ({change['concept']}): {change['reference']} -> "
-            f"{change['current']} [first divergence: {change['first_divergence']}]")
-    if report["firing_population_changes"]:
-        lines.append("  firing-population changes:")
-        for identifier, change in report["firing_population_changes"].items():
-            lines.append(f"    {identifier}: +{change['gained']} -{change['lost']}")
+    c = result["comparison"]
+    lines.append(f"  entries examined: {c['entries_examined']}; "
+                 f"stages examined: {c['stages_examined']}")
+    if c["stage_order_changed"]:
+        lines.append("  stage order changed"
+                     + ("" if c["stages_added"] or c["stages_removed"]
+                        else " (same membership)"))
+    for field in ("stages_added", "stages_removed", "entries_added",
+                  "entries_removed", "context_changes"):
+        if c[field]:
+            lines.append(f"  {field}: {', '.join(c[field])}")
+    lines.append("  entries with changed intermediate derivations: "
+                 f"{len(c['intermediate_only_changes'])}")
+    lines.append("  entries with changed final outputs: "
+                 f"{len(c['final_output_changes'])}")
+    for key, change in sorted(c["entry_changes"].items()):
+        detail = []
+        if change["first_divergence"]:
+            at = change.get("at_first_divergence", {})
+            detail.append(
+                f"first divergence {change['first_divergence']}: "
+                f"{', '.join(at.get('reference', []))} -> "
+                f"{', '.join(at.get('current', []))}")
+            if change["reconverged"]:
+                detail.append("reconverges before the final stage")
+        if change["final_changed"]:
+            detail.append(f"final: {change['final']['reference']} -> "
+                          f"{change['final']['current']}")
+        if change["context_changed"]:
+            detail.append("input context changed")
+        lines.append(f"    {key}: " + "; ".join(detail))
+    if c["firing_population_changes"]:
+        lines.append("  changed stage-transition populations "
+                     "(cumulative checkpoints, not isolated rule firings):")
+        for label, change in c["firing_population_changes"].items():
+            lines.append(
+                f"    {label}: {change['reference_count']} -> "
+                f"{change['current_count']} "
+                f"(+{len(change['gained'])}/-{len(change['lost'])})")
     lines.append(
         "  NOTE: differences identify change relative to the immediate "
         "predecessor; they are adjudicated, not automatically rejected, and "
@@ -313,39 +446,39 @@ def summarize(states: dict, current: dict, reference: dict, report: dict) -> str
     return "\n".join(lines)
 
 
+def write_diagnostics(result: dict, summary: str,
+                      results_dir: Path = None) -> None:
+    results_dir = results_dir or RESULTS_DIR
+    results_dir.mkdir(exist_ok=True)
+    (results_dir / SUMMARY_NAME).write_text(summary + "\n", encoding="utf-8")
+    (results_dir / REPORT_NAME).write_text(
+        json.dumps(result, ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8")
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--reference", help=(
         "explicit reference commit (overrides HEAD/HEAD^1 resolution)"))
-    parser.add_argument("--json", type=Path, help="write the full report here")
+    parser.add_argument("--worktree", action="store_true", help=(
+        "compare the working tree (not the staged state) with HEAD"))
+    parser.add_argument("--no-refresh", action="store_true", help=(
+        "fail on a stale working-tree report instead of regenerating it "
+        "through the artifact graph"))
     parser.add_argument("--fail-on-change", action="store_true", help=(
         "exit 3 when any model difference is found (for gating contexts; "
         "the default reports differences for adjudication)"))
     arguments = parser.parse_args(argv)
-    states = resolve_states()
-    if arguments.reference:
-        states["reference"] = _git("rev-parse", arguments.reference).strip()
-        states["basis"] += " (reference overridden on the command line)"
-    image = backend_image()
-    current = evaluate_state(states["current"],
-                             state_files(states["current"]), image)
-    reference = evaluate_state(states["reference"],
-                               state_files(states["reference"]), image)
-    report = compare(current, reference)
-    print(summarize(states, current, reference, report))
-    if arguments.json:
-        arguments.json.write_text(json.dumps({
-            "states": states,
-            "current": {k: current[k] for k in
-                        ("state", "cache_key", "evaluation", "digests")},
-            "reference": {k: reference[k] for k in
-                          ("state", "cache_key", "evaluation", "digests")},
-            "report": report,
-        }, ensure_ascii=False, indent=1) + "\n")
-    changed = not report["identical_executable_inputs"] and (
-        report["stage_order_changed"] or report["rows_added"]
-        or report["rows_removed"] or report["inputs_changed"]
-        or report["finals_changed"] or report["firing_population_changes"])
+    result = run_comparison(reference=arguments.reference,
+                            worktree=arguments.worktree,
+                            allow_refresh=not arguments.no_refresh)
+    summary = summarize(result)
+    print(summary)
+    write_diagnostics(result, summary)
+    changed = not result["identical"] and any(
+        result["comparison"][field] for field in (
+            "stage_order_changed", "entries_added", "entries_removed",
+            "entry_changes", "firing_population_changes"))
     return 3 if (arguments.fail_on_change and changed) else 0
 
 

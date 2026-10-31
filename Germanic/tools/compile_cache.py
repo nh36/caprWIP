@@ -13,9 +13,9 @@ inside the container working directory, and ``<key>.json`` records the key,
 provenance label and archive digest. A cached archive is verified against
 its recorded digest before reuse; any mismatch is treated as a miss.
 
-Evaluation results (``<key>.eval.json``) may be cached under the same key
-by the incremental regression tool, so unchanged executable inputs do not
-trigger a fresh full-corpus Foma execution.
+This cache serves explicit historical-replay investigations only
+(tests/historical_sc035.py). Ordinary incremental regression consumes the
+Git-stored canonical full-trace reports and needs no evaluation cache.
 """
 from __future__ import annotations
 
@@ -77,20 +77,3 @@ def store_build(key: str, payload: bytes, provenance: str) -> None:
         "archive_sha256": hashlib.sha256(payload).hexdigest(),
         "artifacts": BUILD_ARTIFACT_GLOBS,
     }, indent=1) + "\n")
-
-
-def cached_evaluation(key: str) -> dict | None:
-    path = CACHE_DIR / f"{key}.eval.json"
-    if not path.is_file():
-        return None
-    try:
-        record = json.loads(path.read_text())
-    except ValueError:
-        return None
-    return record if record.get("cache_key") == key else None
-
-
-def store_evaluation(key: str, record: dict) -> None:
-    CACHE_DIR.mkdir(exist_ok=True)
-    (CACHE_DIR / f"{key}.eval.json").write_text(
-        json.dumps({**record, "cache_key": key}, ensure_ascii=False) + "\n")

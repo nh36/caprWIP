@@ -1,13 +1,17 @@
-"""Tests for the incremental-regression mechanism and historical-replay lane.
+"""Tests for incremental regression and the historical-replay lane.
 
-These validate the mechanism itself (state resolution, cache identity,
-replay gating) without compiling any Foma model: they are fast,
-mock-based checks in the portable lane.
+Incremental regression compares consecutive canonical full-trace reports
+retrieved from Git; these tests validate its actual behaviour (state
+resolution, provenance validation, complete stage-by-stage comparison,
+Level C integration) with small controlled reports and disposable Git
+repositories. No Foma, containers or authoritative scientific data are
+involved: everything here runs in the portable lane.
 """
 import ast
 import re
 import subprocess
 import sys
+from hashlib import sha256
 from pathlib import Path
 
 import pytest
@@ -17,71 +21,450 @@ sys.path.insert(0, str(ROOT / "Germanic" / "tools"))
 
 import compile_cache  # noqa: E402
 import incremental_regression as incremental  # noqa: E402
+import oe_trace_parse  # noqa: E402
 
 
-# --- state resolution -------------------------------------------------------
+# --- synthetic canonical reports ---------------------------------------------
 
-def _patch_git(monkeypatch, head, parents_line):
-    def fake_git(*arguments):
-        if arguments[0] == "rev-parse":
-            return head + "\n"
-        if arguments[0] == "rev-list":
-            return parents_line + "\n"
-        raise AssertionError(arguments)
-    monkeypatch.setattr(incremental, "_git", fake_git)
+def _sha(payload: bytes) -> str:
+    return sha256(payload).hexdigest()
 
 
-def test_clean_tree_compares_head_against_its_first_parent(monkeypatch):
-    _patch_git(monkeypatch, "c" * 40, f"{'c' * 40} {'p' * 40}")
-    files = {path: b"same" for path in incremental.INPUT_PATHS}
-    monkeypatch.setattr(incremental, "state_files", lambda label: dict(files))
-    states = incremental.resolve_states()
-    assert states == {"current": "c" * 40, "reference": "p" * 40,
-                      "basis": "HEAD vs first parent (HEAD^1)"}
+def default_sources() -> dict:
+    return {label: f"content of {label}\n".encode()
+            for label in oe_trace_parse.SOURCE_PATHS}
 
 
-def test_uncommitted_working_tree_compares_against_head(monkeypatch):
-    _patch_git(monkeypatch, "c" * 40, f"{'c' * 40} {'p' * 40}")
-    head_files = {path: b"same" for path in incremental.INPUT_PATHS}
-    dirty = dict(head_files)
-    dirty["Germanic/fsts/germanic.txt"] = b"edited grammar"
-    monkeypatch.setattr(
-        incremental, "state_files",
-        lambda label: dict(dirty) if label == "worktree" else dict(head_files))
-    states = incremental.resolve_states()
-    assert states["current"] == "worktree"
-    assert states["reference"] == "c" * 40
-    assert "uncommitted" in states["basis"]
+def provenance_block(sources: dict) -> list:
+    lines = ["=== PROVENANCE ==="]
+    for label in oe_trace_parse.SOURCE_PATHS:
+        lines.append(f"{label} sha256: {_sha(sources[label])}")
+    lines.append(f"old_english.bin sha256 (informational): {'0' * 64}")
+    lines.append("bins_provenance: canonical (test build)")
+    lines.append("build_manifest_built_at: test")
+    lines.append("build_manifest_runner: test")
+    lines.append("build_manifest_foma_version: test-foma")
+    lines.append("build_manifest_expected_bins: 4")
+    for label in sorted(set(oe_trace_parse.SOURCE_PATHS)
+                        - oe_trace_parse.MANIFEST_EXEMPT):
+        lines.append(f"manifest:{label} sha256: {_sha(sources[label])}")
+    lines.append("")
+    return lines
 
 
-def test_merge_commit_uses_first_parent_and_says_so(monkeypatch):
-    _patch_git(monkeypatch, "m" * 40, f"{'m' * 40} {'a' * 40} {'b' * 40}")
-    files = {path: b"same" for path in incremental.INPUT_PATHS}
-    monkeypatch.setattr(incremental, "state_files", lambda label: dict(files))
-    states = incremental.resolve_states()
-    assert states["reference"] == "a" * 40
-    assert "merge" in states["basis"] and "FIRST parent" in states["basis"]
+def make_report(entries, stage_labels, sources=None, fidelity=None,
+                include_fidelity=True) -> str:
+    """A minimal but format-faithful canonical full-trace report.
+
+    ``entries``: list of (concept, proto, expected, outputs,
+    {label: forms-string}); ``fidelity``: {(concept, proto, expected):
+    [fidelity lines]} for the RAW STAGE FIDELITY section.
+    """
+    sources = sources or default_sources()
+    lines = provenance_block(sources)
+    lines.append(f"=== BUCKET: exact_match ({len(entries)}) ===")
+    lines.append("")
+    fired = {label: [] for label in stage_labels}
+    for concept, proto, expected, outputs, stages in entries:
+        lines.extend([f"--- {concept} ---", f"PROTO: {proto}",
+                      "INPUT_CONTEXT: SC098; stress=stressed; finality=final",
+                      f"EXPECTED: {expected}", f"OUTPUTS: {outputs}", ""])
+        previous = None
+        for label in stage_labels:
+            forms = stages[label]
+            tag = ""
+            if previous is not None and forms == previous:
+                tag = " [no-change]"
+            elif previous is not None:
+                fired[label].append(f"{concept} :: {proto}")
+            lines.append(f"{label}{tag}: {forms}")
+            previous = forms
+        lines.append("")
+    lines.append("")
+    if include_fidelity:
+        lines.extend(["=== RAW STAGE FIDELITY ===", "",
+                      "entries with raw-stage distinctions: "
+                      f"{len(fidelity or {})}", ""])
+        for key, fidelity_lines in (fidelity or {}).items():
+            lines.append("--- {} | {} | {} ---".format(*key))
+            lines.extend(fidelity_lines)
+            lines.append("")
+    lines.extend(["=== STAGE FIRING SUMMARY ===", ""])
+    for label in stage_labels:
+        lines.append(f"{label}: {len(fired[label])}")
+        if fired[label]:
+            lines.append(", ".join(fired[label]))
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
 
 
-def test_parentless_head_is_an_explicit_error(monkeypatch):
-    _patch_git(monkeypatch, "r" * 40, "r" * 40)
-    files = {path: b"same" for path in incremental.INPUT_PATHS}
-    monkeypatch.setattr(incremental, "state_files", lambda label: dict(files))
-    with pytest.raises(incremental.StateError, match="no immediate predecessor"):
-        incremental.resolve_states()
+def _state(text: str) -> dict:
+    return {"state": "test", "text": text, "problems": [], "limitations": []}
 
 
-def test_non_executable_edits_do_not_make_the_tree_count_as_dirty(monkeypatch):
-    # resolve_states compares only the executable INPUT_PATHS, so an edit to
-    # documentation or an unrelated test cannot change the comparison basis.
-    assert "Germanic/fsts/germanic.txt" in incremental.INPUT_PATHS
-    assert "Germanic/data/germanic-aligned-final.tsv" in incremental.INPUT_PATHS
-    assert "Germanic/data/entry_context_metadata.tsv" in incremental.INPUT_PATHS
-    assert "backend/oe_input_context.py" in incremental.INPUT_PATHS
-    assert len(incremental.INPUT_PATHS) == 4
+BASE_STAGES = ["StageA", "StageB", "StageC", "StageD"]
 
 
-# --- cache identity ---------------------------------------------------------
+def base_entry(concept="stone", proto="*stainaz", expected="stān",
+               outputs="stān", **stage_forms):
+    stages = {"StageA": "*s*t*a*i*n*a*z", "StageB": "*s*t*ā*n*a*z",
+              "StageC": "*s*t*ā*n", "StageD": "stān"}
+    stages.update(stage_forms)
+    return (concept, proto, expected, outputs, stages)
+
+
+# --- complete stage-by-stage comparison --------------------------------------
+
+def test_intermediate_change_with_identical_final_output_is_reported():
+    reference = make_report([base_entry()], BASE_STAGES)
+    current = make_report([base_entry(StageB="*s*t*ē*n*a*z")], BASE_STAGES)
+    report = incremental.compare(_state(current), _state(reference))
+    key = "stone | *stainaz | stān"
+    change = report["entry_changes"][key]
+    assert change["first_divergence"] == "StageB"
+    assert change["intermediate_only"] and not change["final_changed"]
+    assert report["intermediate_only_changes"] == [key]
+    assert report["final_output_changes"] == []
+
+
+def test_divergence_followed_by_convergence_is_identified():
+    current = make_report([base_entry(StageB="*s*t*ē*n*a*z")], BASE_STAGES)
+    reference = make_report([base_entry()], BASE_STAGES)
+    change = incremental.compare(_state(current), _state(reference))[
+        "entry_changes"]["stone | *stainaz | stān"]
+    assert change["divergent_stages"] == ["StageB"]
+    assert change["reconverged"]
+    assert change["at_first_divergence"] == {
+        "reference": ["*s*t*ā*n*a*z"], "current": ["*s*t*ē*n*a*z"]}
+
+
+def test_changed_forms_with_identical_firing_populations_are_detected():
+    # StageB fires for the entry in both versions (so the firing summary is
+    # unchanged), but produces a different form.
+    current = make_report(
+        [base_entry(StageB="*s*t*ē*n*a*z", StageC="*s*t*ē*n",
+                    StageD="stēn", outputs="stēn")], BASE_STAGES)
+    reference = make_report([base_entry()], BASE_STAGES)
+    report = incremental.compare(_state(current), _state(reference))
+    assert report["firing_population_changes"] == {}
+    change = report["entry_changes"]["stone | *stainaz | stān"]
+    assert change["first_divergence"] == "StageB"
+    assert change["final_changed"]
+    assert change["final"] == {"reference": "stān", "current": "stēn"}
+
+
+def test_first_stage_changes_and_stage_structure_changes_are_reported():
+    current = make_report(
+        [base_entry(StageA="*s*t*a*i*n*a*s")], BASE_STAGES)
+    reference = make_report([base_entry()], BASE_STAGES)
+    report = incremental.compare(_state(current), _state(reference))
+    assert report["entry_changes"]["stone | *stainaz | stān"][
+        "first_divergence"] == "StageA"
+
+    entry = base_entry()
+    reordered = ["StageA", "StageC", "StageB", "StageD"]
+    report = incremental.compare(
+        _state(make_report([entry], reordered)),
+        _state(make_report([entry], BASE_STAGES)))
+    assert report["stage_order_changed"]
+    assert not report["stages_added"] and not report["stages_removed"]
+
+    replaced = ["StageA", "StageB", "StageE", "StageD"]
+    stages = dict(entry[4], StageE=entry[4]["StageC"])
+    report = incremental.compare(
+        _state(make_report([(*entry[:4], stages)], replaced)),
+        _state(make_report([entry], BASE_STAGES)))
+    assert report["stages_added"] == ["StageE"]
+    assert report["stages_removed"] == ["StageC"]
+    assert report["stage_order_changed"]
+
+
+def test_corpus_changes_are_distinguished_from_phonological_changes():
+    yoke = base_entry(concept="yoke", proto="*jukan", expected="ġeoc",
+                      outputs="ġeoc")
+    current = make_report([base_entry(), yoke], BASE_STAGES)
+    reference = make_report(
+        [base_entry(concept="youth", proto="*juwunþiz", expected="ġeoguð",
+                    outputs="ġeoguð"), base_entry()], BASE_STAGES)
+    report = incremental.compare(_state(current), _state(reference))
+    assert report["entries_added"] == ["yoke | *jukan | ġeoc"]
+    assert report["entries_removed"] == ["youth | *juwunþiz | ġeoguð"]
+    assert report["entry_changes"] == {}  # the shared entry is unchanged
+
+    changed_context = make_report([base_entry()], BASE_STAGES).replace(
+        "stress=stressed", "stress=unstressed")
+    report = incremental.compare(
+        _state(changed_context), _state(make_report([base_entry()],
+                                                     BASE_STAGES)))
+    change = report["entry_changes"]["stone | *stainaz | stān"]
+    assert change["context_changed"] and not change["final_changed"]
+    assert report["context_changes"] == ["stone | *stainaz | stān"]
+
+
+def test_rejection_states_are_preserved_and_compared():
+    # In the displayed trace a rejected stage shows the previous form tagged
+    # [no-change], exactly like a genuine no-change stage. Only the RAW
+    # STAGE FIDELITY section distinguishes them.
+    key = ("stone", "*stainaz", "stān")
+    entry = base_entry(StageB="*s*t*a*i*n*a*z")  # displayed: no change at B
+    current = make_report([entry], BASE_STAGES)
+    reference = make_report([entry], BASE_STAGES,
+                            fidelity={key: ["StageB: rejected"]})
+    report = incremental.compare(_state(current), _state(reference))
+    change = report["entry_changes"]["stone | *stainaz | stān"]
+    assert change["first_divergence"] == "StageB"
+    assert change["at_first_divergence"]["reference"] == ["rejected"]
+
+
+def test_ambiguous_multiple_outputs_are_preserved():
+    current = make_report(
+        [base_entry(StageC="*s*t*ā*n, *s*t*ǣ*n")], BASE_STAGES)
+    reference = make_report([base_entry()], BASE_STAGES)
+    change = incremental.compare(_state(current), _state(reference))[
+        "entry_changes"]["stone | *stainaz | stān"]
+    assert change["at_first_divergence"]["current"] == [
+        "*s*t*ā*n", "*s*t*ǣ*n"]
+
+
+def test_context_marker_differences_are_detected_through_raw_fidelity():
+    # display_form strips context annotation marks, so the displayed stage
+    # lines coincide; the raw forms recorded in the fidelity section differ.
+    key = ("stone", "*stainaz", "stān")
+    current = make_report([base_entry()], BASE_STAGES,
+                          fidelity={key: ["StageB: raw = *ᵘ*s*t*ā*n*a*z"]})
+    reference = make_report([base_entry()], BASE_STAGES)
+    report = incremental.compare(_state(current), _state(reference))
+    change = report["entry_changes"]["stone | *stainaz | stān"]
+    assert change["first_divergence"] == "StageB"
+    assert change["at_first_divergence"]["current"] == ["*ᵘ*s*t*ā*n*a*z"]
+
+
+def test_older_reports_without_fidelity_compare_display_level_explicitly():
+    key = ("stone", "*stainaz", "stān")
+    entry = base_entry(StageB="*s*t*a*i*n*a*z")
+    current = make_report([entry], BASE_STAGES,
+                          fidelity={key: ["StageB: rejected"]})
+    old_format = make_report([entry], BASE_STAGES, include_fidelity=False)
+    report = incremental.compare(_state(current), _state(old_format))
+    # Without the predecessor's fidelity data the rejection cannot be
+    # compared; the comparison is display-level and says so.
+    assert report["display_level_comparison"]
+    assert report["entry_changes"] == {}
+    assert oe_trace_parse.parse_fidelity(old_format) is None
+
+
+# --- provenance validation and Git retrieval ---------------------------------
+
+def _run(repo, *arguments):
+    subprocess.run(arguments, cwd=repo, check=True, capture_output=True)
+
+
+def _write_state(repo: Path, sources: dict, report: str) -> None:
+    for label, path in oe_trace_parse.SOURCE_PATHS.items():
+        target = repo / path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(sources[label])
+    trace = repo / incremental.TRACE_PATH
+    trace.parent.mkdir(parents=True, exist_ok=True)
+    trace.write_text(report, encoding="utf-8")
+
+
+@pytest.fixture()
+def repo(tmp_path):
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    _run(repo, "git", "init", "-q")
+    _run(repo, "git", "config", "user.email", "test@example.invalid")
+    _run(repo, "git", "config", "user.name", "Test")
+    return repo
+
+
+def _commit(repo, message):
+    _run(repo, "git", "add", "-A")
+    _run(repo, "git", "commit", "-q", "-m", message)
+
+
+def test_consecutive_commits_compare_via_git_with_zero_foma(repo):
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    _commit(repo, "state one")
+    sources2 = dict(sources)
+    sources2["germanic.txt"] = b"changed grammar\n"
+    _write_state(repo, sources2, make_report(
+        [base_entry(StageB="*s*t*ē*n*a*z")], BASE_STAGES, sources=sources2))
+    _commit(repo, "state two")
+    result = incremental.run_comparison(root=repo)
+    assert result["foma_invocations"] == 0
+    assert result["states"]["basis"] == "HEAD vs first parent (HEAD^1)"
+    assert result["dependencies"]["consequence"] == (
+        "requires transducer recompilation")
+    change = result["comparison"]["entry_changes"]["stone | *stainaz | stān"]
+    assert change["intermediate_only"]
+
+
+def test_no_change_commit_pair_terminates_on_the_fast_path(repo):
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    _commit(repo, "state one")
+    (repo / "unrelated.md").write_text("docs only\n")
+    _commit(repo, "docs change")
+    result = incremental.run_comparison(root=repo)
+    assert result["identical"]
+    assert result["comparison"] is None
+    assert result["dependencies"]["consequence"] == (
+        "no effect on the executable model")
+
+
+def test_stale_report_evidence_is_rejected_not_silently_substituted(repo):
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    _commit(repo, "consistent state")
+    # The grammar changes but the committed report is not regenerated: the
+    # current state's report no longer matches its own sources.
+    (repo / "Germanic/fsts/germanic.txt").write_bytes(b"edited grammar\n")
+    _commit(repo, "inconsistent state")
+    with pytest.raises(incremental.StateError, match="STALE w.r.t"):
+        incremental.run_comparison(root=repo)
+
+
+def test_missing_and_invalid_predecessor_reports_are_explicit_failures(repo):
+    sources = default_sources()
+    # Predecessor commit has no report at all.
+    for label, path in oe_trace_parse.SOURCE_PATHS.items():
+        target = repo / path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(sources[label])
+    _commit(repo, "no report yet")
+    sources2 = dict(sources)
+    sources2["germanic.txt"] = b"new grammar\n"
+    _write_state(repo, sources2, make_report([base_entry()], BASE_STAGES,
+                                             sources=sources2))
+    _commit(repo, "report added")
+    with pytest.raises(incremental.StateError,
+                       match="predecessor state.*no full-trace report"):
+        incremental.run_comparison(root=repo)
+
+
+def test_report_without_firing_summary_is_incomplete_evidence(repo):
+    sources = default_sources()
+    truncated = make_report([base_entry()], BASE_STAGES).split(
+        "=== STAGE FIRING SUMMARY ===")[0]
+    _write_state(repo, sources, truncated)
+    _commit(repo, "incomplete report")
+    (repo / "unrelated.md").write_text("second commit\n")
+    _commit(repo, "second")
+    with pytest.raises(incremental.StateError, match="STAGE FIRING SUMMARY"):
+        incremental.run_comparison(root=repo)
+
+
+def test_evaluation_code_changes_are_never_computationally_irrelevant(repo):
+    # oe_pipeline.py changes while germanic.txt and the report stay
+    # identical: the comparison must classify the executable consequence
+    # instead of calling the states identical.
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    (repo / "Germanic/tools/oe_pipeline.py").write_text("STAGES = 1\n")
+    _commit(repo, "state one")
+    (repo / "Germanic/tools/oe_pipeline.py").write_text("STAGES = 2\n")
+    _commit(repo, "evaluation code change")
+    result = incremental.run_comparison(root=repo)
+    assert not result["identical"]
+    assert result["dependencies"]["recompile_changed"] == [
+        "Germanic/tools/oe_pipeline.py"]
+    assert result["dependencies"]["consequence"] == (
+        "requires transducer recompilation")
+
+
+def test_staged_state_is_compared_and_unstaged_work_is_excluded(repo):
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    _commit(repo, "committed state")
+    # Stage a consistent proposed state...
+    staged_sources = dict(sources)
+    staged_sources["germanic.txt"] = b"staged grammar\n"
+    _write_state(repo, staged_sources, make_report(
+        [base_entry(StageB="*s*t*ē*n*a*z")], BASE_STAGES,
+        sources=staged_sources))
+    _run(repo, "git", "add", "-A")
+    # ...then dirty the working tree differently without staging.
+    (repo / "Germanic/fsts/germanic.txt").write_bytes(b"unstaged edit\n")
+    result = incremental.run_comparison(root=repo)
+    assert result["states"]["current"] == incremental.STAGED
+    assert "unstaged work is NOT part" in result["states"]["basis"]
+    change = result["comparison"]["entry_changes"]["stone | *stainaz | stān"]
+    assert change["first_divergence"] == "StageB"
+
+
+def test_explicit_worktree_mode_compares_the_working_tree(repo):
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    _commit(repo, "committed state")
+    worktree_sources = dict(sources)
+    worktree_sources["germanic.txt"] = b"worktree grammar\n"
+    _write_state(repo, worktree_sources, make_report(
+        [base_entry(StageC="*s*t*ǣ*n")], BASE_STAGES,
+        sources=worktree_sources))
+    result = incremental.run_comparison(root=repo, worktree=True)
+    assert result["states"]["current"] == incremental.WORKTREE
+    assert "working tree vs HEAD" in result["states"]["basis"]
+    assert "stone | *stainaz | stān" in result["comparison"]["entry_changes"]
+
+
+def test_stale_worktree_report_fails_closed_without_refresh(repo):
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    _commit(repo, "committed state")
+    (repo / "Germanic/fsts/germanic.txt").write_bytes(b"worktree edit\n")
+    with pytest.raises(incremental.StateError, match="STALE w.r.t"):
+        incremental.run_comparison(root=repo, worktree=True,
+                                   allow_refresh=False)
+
+
+def test_comparison_never_invokes_foma_containers_or_historical_replay():
+    source = (ROOT / "Germanic/tools/incremental_regression.py").read_text()
+    for forbidden in ("flookup", "docker", "historical_runtime",
+                      "compile_cache"):
+        assert forbidden not in source, forbidden
+    # The only subprocess use is Git retrieval of stored states (so Foma is
+    # unreachable from this module).
+    for match in re.finditer(r"subprocess\.\w+\(\[\"?(\w+)", source):
+        assert match.group(1) == "git", match.group(0)
+
+
+# --- Level C integration -----------------------------------------------------
+
+def test_level_c_runs_the_consecutive_version_comparison_automatically():
+    """The automatic Level C comparison of the real repository.
+
+    A green run of the ordinary suite establishes that the incremental
+    comparison completed on the actual consecutive states: missing reports,
+    invalid provenance or unidentified source states fail this test rather
+    than becoming silent skips. Zero Foma invocations are required; the
+    Git-stored canonical reports are reused as-is.
+    """
+    result = incremental.run_comparison()
+    assert result["foma_invocations"] == 0
+    assert result["identical"] or result["comparison"]["entries_examined"] > 0
+    summary = incremental.summarize(result)
+    assert "INCREMENTAL REGRESSION" in summary
+    incremental.write_diagnostics(result, summary)
+    assert (incremental.RESULTS_DIR / incremental.REPORT_NAME).is_file()
+    assert (incremental.RESULTS_DIR / incremental.SUMMARY_NAME).is_file()
+
+
+def test_diagnostics_use_stable_untracked_filenames():
+    tracked = subprocess.run(
+        ["git", "ls-files", ".ci-results"], cwd=ROOT,
+        capture_output=True, text=True, check=True).stdout.strip()
+    assert tracked == "", "comparison diagnostics must never be tracked"
+    gitignore = (ROOT / ".gitignore").read_text()
+    assert ".ci-results/" in gitignore
+    # Stable names, replaced on each run; never timestamped accumulation.
+    assert incremental.SUMMARY_NAME == "incremental_regression.txt"
+    assert incremental.REPORT_NAME == "incremental_regression.json"
+
+
+# --- build cache (historical replay only) ------------------------------------
 
 @pytest.fixture()
 def isolated_cache(monkeypatch, tmp_path):
@@ -108,35 +491,6 @@ def test_grammar_changes_invalidate_the_cached_build(isolated_cache):
     assert compile_cache.cached_build(_key(source=b"define A a -> c;")) is None
 
 
-def test_corpus_changes_invalidate_the_cached_build(isolated_cache):
-    compile_cache.store_build(_key(), b"tar-bytes", "test")
-    changed = _key(corpus=b"ID\tDOCULECT\n2000\tOld_English\n")
-    assert compile_cache.cached_build(changed) is None
-
-
-def test_context_dependency_changes_invalidate_the_cached_build(isolated_cache):
-    compile_cache.store_build(_key(), b"tar-bytes", "test")
-    assert compile_cache.cached_build(
-        _key(extra={"backend/oe_input_context.py": b"y"})) is None
-
-
-def test_image_and_tool_changes_invalidate_the_key(isolated_cache, monkeypatch, tmp_path):
-    base = _key()
-    assert _key(image="image-2") != base
-    # The key digests the live build-tool sources, never a bare commit id.
-    fake_root = tmp_path / "repo"
-    tools = fake_root / "Germanic/tools"
-    tools.mkdir(parents=True)
-    for tool in compile_cache.BUILD_TOOLS:
-        tools.joinpath(tool).write_bytes(
-            (compile_cache.ROOT / "Germanic/tools" / tool).read_bytes())
-    monkeypatch.setattr(compile_cache, "ROOT", fake_root)
-    assert _key() == base  # identical tool bytes: same key
-    with tools.joinpath(compile_cache.BUILD_TOOLS[0]).open("ab") as handle:
-        handle.write(b"\n# changed build tool\n")
-    assert _key() != base
-
-
 def test_corrupted_cache_entries_are_rejected_not_trusted(isolated_cache):
     key = _key()
     compile_cache.store_build(key, b"tar-bytes", "test")
@@ -144,51 +498,13 @@ def test_corrupted_cache_entries_are_rejected_not_trusted(isolated_cache):
     assert compile_cache.cached_build(key) is None
 
 
-def test_cached_evaluation_round_trips_and_is_keyed_by_content(isolated_cache):
-    key = _key()
-    record = {"finals": {"2001": ["stān"]}, "stage_order": ["A"]}
-    compile_cache.store_evaluation(key, record)
-    assert compile_cache.cached_evaluation(key) == {**record, "cache_key": key}
-    assert compile_cache.cached_evaluation(_key(source=b"other")) is None
-
-
-def test_identical_states_short_circuit_without_execution():
-    record = {"stage_order": ["A", "B"], "corpus": {"1": "x"},
-              "concepts": {"1": "stone"}, "finals": {"1": ["y"]},
-              "snapshots": {"a.bin": {"1": ["x"]}, "b.bin": {"1": ["y"]}},
-              "cache_key": "k1"}
-    report = incremental.compare(record, dict(record))
-    assert report["identical_executable_inputs"]
-    assert not report["finals_changed"]
-
-
-def test_comparison_reports_every_protected_change_dimension():
-    reference = {"stage_order": ["A", "B", "C"],
-                 "corpus": {"1": "in1", "2": "in2"},
-                 "concepts": {"1": "stone", "2": "yoke"},
-                 "finals": {"1": ["out1"], "2": ["out2"]},
-                 "snapshots": {"a.bin": {"1": ["s1"], "2": ["in2"]},
-                               "b.bin": {"1": ["s1"], "2": ["out2"]},
-                               "c.bin": {"1": ["out1"], "2": ["out2"]}},
-                 "cache_key": "ref"}
-    current = {"stage_order": ["A", "C", "D"],
-               "corpus": {"1": "in1", "3": "in3"},
-               "concepts": {"1": "stone", "3": "youth"},
-               "finals": {"1": ["changed"], "3": ["out3"]},
-               "snapshots": {"a.bin": {"1": ["s1"], "3": ["in3"]},
-                             "c.bin": {"1": ["changed"], "3": ["out3"]},
-                             "d.bin": {"1": ["changed"], "3": ["out3"]}},
-               "cache_key": "cur"}
-    report = incremental.compare(current, reference)
-    assert not report["identical_executable_inputs"]
-    assert report["stage_order_changed"]
-    assert report["stages_added"] == ["D"] and report["stages_removed"] == ["B"]
-    assert report["rows_added"] == ["3"] and report["rows_removed"] == ["2"]
-    assert report["finals_changed"]["1"]["reference"] == ["out1"]
-    assert report["finals_changed"]["1"]["current"] == ["changed"]
-    assert report["finals_changed"]["1"]["first_divergence"] == "c.bin"
-    assert report["firing_population_changes"]["C"] == {
-        "gained": ["3"], "lost": []}
+def test_the_evaluation_cache_is_gone_git_is_the_store_of_record():
+    # Incremental regression consumes Git-stored canonical reports; the
+    # removed evaluation cache must not quietly return.
+    assert not hasattr(compile_cache, "cached_evaluation")
+    assert not hasattr(compile_cache, "store_evaluation")
+    assert "eval.json" not in (
+        ROOT / "Germanic/tools/compile_cache.py").read_text()
 
 
 # --- replay gating ----------------------------------------------------------
