@@ -287,7 +287,7 @@ def summarize(states: dict, current: dict, reference: dict, report: dict) -> str
     if report["identical_executable_inputs"]:
         lines.append(
             "  executable inputs identical (same content key): no model "
-            "difference is possible; no fresh Foma execution performed")
+            "difference is possible; the evaluation is shared, not repeated")
         return "\n".join(lines)
     for field in ("stages_added", "stages_removed", "rows_added",
                   "rows_removed", "inputs_changed"):

@@ -88,7 +88,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, '/usr/app/tools')
 from oe_pipeline import apply_down, evaluation_input
-payload = PAYLOAD
+payload = json.loads(PAYLOAD)
 result = {}
 with tempfile.TemporaryDirectory(prefix='capr_chronology_') as temporary:
     root = Path(temporary)
@@ -109,10 +109,16 @@ with tempfile.TemporaryDirectory(prefix='capr_chronology_') as temporary:
                                         else evaluation_input(row))
             for row in payload['rows']}
 print(json.dumps(result, ensure_ascii=False))
-""".replace("PAYLOAD", repr({"source": source, "names": names, "rows": rows,
-                             "use_proto_norm": use_proto_norm}))
-    proc = run_in_runner("python3 -", input=script, text=True, capture_output=True,
-                         check=True, timeout=3900)
+""".replace("PAYLOAD", repr(json.dumps(
+        {"source": source, "names": names, "rows": rows,
+         "use_proto_norm": use_proto_norm})))
+    # Embed the payload as a pure-ASCII JSON literal and feed the script
+    # through a file: the runtime's tokenizer reads fixed-size chunks and
+    # can split a multi-byte UTF-8 character at a chunk boundary inside a
+    # very long line, failing with a spurious encoding SyntaxError.
+    proc = run_in_runner(
+        't=$(mktemp) && cat > "$t" && python3 "$t"; rc=$?; rm -f "$t"; exit $rc',
+        input=script, text=True, capture_output=True, check=True, timeout=3900)
     return json.loads(proc.stdout)
 
 
