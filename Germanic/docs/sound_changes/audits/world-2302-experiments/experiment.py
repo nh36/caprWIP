@@ -74,23 +74,39 @@ def strict_apply(path, forms, label):
 
 
 def candidate_trace(bins, sequence, raw):
-    state = oe_pipeline.evaluation_input(
-        {"proto_norm": oe_pipeline.normalize_proto(raw)})
-    trace = []
+    return candidate_traces(bins, sequence, [raw])[0]
+
+
+def candidate_traces(bins, sequence, raw_forms):
+    candidates = [
+        dict(input=raw, status="accepted", trace=[], rejection=None,
+             final=oe_pipeline.evaluation_input(
+                 {"proto_norm": oe_pipeline.normalize_proto(raw)}))
+        for raw in raw_forms]
     for index, identifier in enumerate(sequence, 1):
-        outputs = batch_apply_down(bins["component:" + identifier], [state])[0]
-        if not outputs:
-            return dict(input=raw, status="rejected", final=None, trace=trace,
-                        rejection=dict(step=index, stage=identifier,
-                                       input=state, outputs=outputs))
-        if len(outputs) != 1:
-            raise RuntimeError(f"candidate ambiguity: {identifier}: {raw}: {outputs}")
-        new = outputs[0]
-        if new != state:
-            trace.append(dict(step=index, stage=identifier, pre=state, post=new))
-        state = new
-    return dict(input=raw, status="accepted", final=state,
-                trace=trace, rejection=None)
+        active = [candidate for candidate in candidates
+                  if candidate["status"] == "accepted"]
+        if not active:
+            break
+        results = batch_apply_down(bins["component:" + identifier],
+                                   [candidate["final"] for candidate in active])
+        for candidate, outputs in zip(active, results):
+            state = candidate["final"]
+            if not outputs:
+                candidate.update(
+                    status="rejected", final=None,
+                    rejection=dict(step=index, stage=identifier,
+                                   input=state, outputs=outputs))
+                continue
+            if len(outputs) != 1:
+                raise RuntimeError(
+                    f"candidate ambiguity: {identifier}: {candidate['input']}: {outputs}")
+            new = outputs[0]
+            if new != state:
+                candidate["trace"].append(
+                    dict(step=index, stage=identifier, pre=state, post=new))
+            candidate["final"] = new
+    return candidates
 
 
 def run():
@@ -204,11 +220,10 @@ def run():
                          legacy380_identity=row["row_id"] in legacy)
                     for i, (row, old, new) in enumerate(zip(rows, canonical, states))
                     if old != new],
-                full_cascade_candidates=[
-                    candidate_trace(bins, sequence, raw) for raw in CANDIDATES],
-                paradigm_comparisons={
-                    label: candidate_trace(bins, sequence, raw)
-                    for label, raw in PARADIGM_CANDIDATES.items()})
+                full_cascade_candidates=candidate_traces(bins, sequence, CANDIDATES),
+                paradigm_comparisons=dict(zip(
+                    PARADIGM_CANDIDATES, candidate_traces(
+                        bins, sequence, PARADIGM_CANDIDATES.values()))))
         components = {
             identifier: dict(zip(PROBES, strict_apply(
                 bins["component:" + identifier], list(PROBES.values()), identifier)))
@@ -470,12 +485,11 @@ def run_reassessment(migration=False):
                 order=sequence, firings=firings, focal_traces=focal,
                 intermediate_differences=changes,
                 final_differences=differences(canonical, states),
-                full_cascade_candidates=[
-                    candidate_trace(bins, sequence, raw) for raw in candidates],
-                paradigm_comparisons={
-                    label: candidate_trace(bins, sequence, raw)
-                    for label, raw in (
-                        {} if migration else PARADIGM_CANDIDATES).items()})
+                full_cascade_candidates=candidate_traces(bins, sequence, candidates),
+                paradigm_comparisons=dict(zip(
+                    {} if migration else PARADIGM_CANDIDATES,
+                    candidate_traces(bins, sequence, (
+                        {} if migration else PARADIGM_CANDIDATES).values()))))
         controls = {
             identifier: dict(zip(probes, strict_apply(
                 bins["component:" + identifier], list(probes.values()),

@@ -2,10 +2,12 @@
 import csv
 import hashlib
 import io
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
 import sys
+from unittest.mock import patch
 
 import pytest
 
@@ -25,6 +27,56 @@ def receipt():
 
 def base_bytes(path):
     return subprocess.check_output(["git", "show", f"{BASE}:{path}"], cwd=ROOT)
+
+
+@pytest.fixture
+def candidate_worker():
+    spec = importlib.util.spec_from_file_location("world_worker", ASSAY / "experiment.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def test_candidate_batches_preserve_duplicates_changes_and_rejection(candidate_worker):
+    worker = candidate_worker
+    bins = {"component:First": Path("first.bin"), "component:Second": Path("second.bin")}
+    with patch.object(worker, "batch_apply_down", side_effect=[
+            [["b"], [], ["b"]], [["c"], ["c"]]]) as batch:
+        traces = worker.candidate_traces(bins, ["First", "Second"], ["a", "x", "a"])
+    assert batch.call_count == 2
+    assert batch.call_args_list[1].args == (Path("second.bin"), ["b", "b"])
+    assert traces[0] == traces[2]
+    assert traces[0] is not traces[2]
+    assert traces[0]["final"] == "c"
+    assert [(step["stage"], step["post"]) for step in traces[0]["trace"]] == [
+        ("First", "b"), ("Second", "c")]
+    assert traces[1]["status"] == "rejected" and traces[1]["final"] is None
+    assert traces[1]["trace"] == []
+    assert traces[1]["rejection"]["stage"] == "First"
+    assert traces[1]["rejection"]["outputs"] == []
+
+
+def test_candidate_batches_preserve_identity_and_fail_on_ambiguity(candidate_worker):
+    worker = candidate_worker
+    bins = {"component:First": Path("first.bin")}
+    form = worker.oe_pipeline.evaluation_input(
+        {"proto_norm": worker.oe_pipeline.normalize_proto("a")})
+    with patch.object(worker, "batch_apply_down", return_value=[[form]]):
+        trace = worker.candidate_trace(bins, ["First"], "a")
+    assert trace["trace"] == [] and trace["final"] == form
+    with patch.object(worker, "batch_apply_down", return_value=[["a", "b"]]):
+        with pytest.raises(RuntimeError, match="candidate ambiguity: First: a"):
+            worker.candidate_trace(bins, ["First"], "a")
+
+
+def test_candidate_batches_stop_after_all_reject_and_skip_empty_inputs(candidate_worker):
+    bins = {"component:First": Path("first.bin")}
+    with patch.object(candidate_worker, "batch_apply_down", return_value=[[]]) as batch:
+        assert candidate_worker.candidate_traces(bins, ["First"], []) == []
+        batch.assert_not_called()
+        rejected = candidate_worker.candidate_traces(bins, ["First", "Missing"], ["x"])
+        assert rejected[0]["status"] == "rejected"
+        assert batch.call_count == 1
 
 
 def read_tsv(text):
