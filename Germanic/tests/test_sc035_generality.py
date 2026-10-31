@@ -245,7 +245,7 @@ def test_pforzen_record_keeps_object_date_distinct_from_excavation():
 
 
 @pytest.mark.runtime
-def test_fresh_phonological_domain_and_registered_original_holdings():
+def test_fresh_phonological_domain_and_registered_original_holdings(isolated_definitions):
     holdings = {
         "sweet_1885_oldest_english_texts.pdf":
             "7f13fd3e587fa915b89fcbdce6908809619540fff594ceb8defeaf2fb236940a",
@@ -261,7 +261,7 @@ def test_fresh_phonological_domain_and_registered_original_holdings():
     for name, digest in holdings.items():
         assert hashlib.sha256((ROOT / "docs/references" / name).read_bytes()).hexdigest() == digest
     result = run_in_runner(
-        "python3 docs/sound_changes/audits/sc035-generality/verify.py",
+        isolated_definitions + "python3 docs/sound_changes/audits/sc035-generality/verify.py",
         text=True, capture_output=True, check=True, timeout=1800)
     current = json.loads(result.stdout)
     observed = json.loads((ASSAY / "evidence.json").read_text())

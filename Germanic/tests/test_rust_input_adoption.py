@@ -230,7 +230,7 @@ class RustInputAdoptionTests(unittest.TestCase):
 
 
 @pytest.mark.runtime
-def test_fresh_production_and_isolated_rust_diagnostics():
+def test_fresh_production_and_isolated_rust_diagnostics(isolated_definitions):
     assert not check_build_manifest(oe_pipeline.expected_snapshot_bins() + ["old_english.bin"])
     code = """import sys,json,tempfile
 from pathlib import Path
@@ -247,7 +247,8 @@ with tempfile.TemporaryDirectory() as directory:
                'isolated':apply_down(bins['final'],normalize_proto(form))} for form in forms}
 print(json.dumps(result,ensure_ascii=False))
 """
-    result = run_in_runner("python3 -c " + shlex.quote(code), capture_output=True, text=True)
+    result = run_in_runner(isolated_definitions + "python3 -c " + shlex.quote(code),
+                           capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
     expected = dict(zip(("*rústaz", "*rústō", "*rústas", "*rústai", "*rústi", "*rústu", "*frústą"),
                         ("rost", "rost", "rostes", "roste", "ryst", "rust", "forst"), strict=True))

@@ -80,7 +80,8 @@ def _selected_rows():
             if r["concept"] in {"yoke", "youth", "widow", "world"}]
 
 
-def _compile_and_assay(source, names, rows, use_proto_norm):
+def _compile_and_assay(source, names, rows, use_proto_norm, *,
+                       common_source=None, command_prefix=""):
     """Compile one model's variant bins in a disposable container and assay."""
     script = """
 import json, subprocess, tempfile
@@ -93,7 +94,13 @@ result = {}
 with tempfile.TemporaryDirectory(prefix='capr_chronology_') as temporary:
     root = Path(temporary)
     path = root / 'model.foma'
-    path.write_text(payload['source'])
+    source = payload['source']
+    if payload['common_source'] is not None:
+        from anglo_frisian_experiments import definition_image_source
+        common = payload['common_source']
+        assert source.startswith(common)
+        source = definition_image_source(common, root) + source[len(common):]
+    path.write_text(source)
     proc = subprocess.run(['foma', '-q', '-f', str(path), '-e', 'quit'],
                           cwd=root, text=True, capture_output=True,
                           timeout=1800)
@@ -111,13 +118,13 @@ with tempfile.TemporaryDirectory(prefix='capr_chronology_') as temporary:
 print(json.dumps(result, ensure_ascii=False))
 """.replace("PAYLOAD", repr(json.dumps(
         {"source": source, "names": names, "rows": rows,
-         "use_proto_norm": use_proto_norm})))
+         "use_proto_norm": use_proto_norm, "common_source": common_source})))
     # Embed the payload as a pure-ASCII JSON literal and feed the script
     # through a file: the runtime's tokenizer reads fixed-size chunks and
     # can split a multi-byte UTF-8 character at a chunk boundary inside a
     # very long line, failing with a spurious encoding SyntaxError.
     proc = run_in_runner(
-        't=$(mktemp) && cat > "$t" && python3 "$t"; rc=$?; rm -f "$t"; exit $rc',
+        command_prefix + 't=$(mktemp) && cat > "$t" && python3 "$t"; rc=$?; rm -f "$t"; exit $rc',
         input=script, text=True, capture_output=True, check=True, timeout=3900)
     return json.loads(proc.stdout)
 
@@ -159,7 +166,7 @@ def chronology_replay_historical(tmp_path_factory):
 
 
 @pytest.fixture(scope="module")
-def chronology_replay_current():
+def chronology_replay_current(isolated_definitions):
     """Current-model controls: compiles only the working grammar + variants."""
     stages = oe_pipeline.stages()
     current_variants = {"current_identity": stages}
@@ -189,9 +196,11 @@ def chronology_replay_current():
         current_appendix += (
             f"\ndefine A{i} " + " .o. ".join(members) +
             f";\nclear stack\nregex A{i};\nsave stack {name}.bin\n")
-    source = (ROOT / "Germanic/fsts/germanic.txt").read_text() + current_appendix
+    common = (ROOT / "Germanic/fsts/germanic.txt").read_text()
+    source = common + current_appendix
     return _compile_and_assay(source, list(current_variants), _selected_rows(),
-                              use_proto_norm=False)
+                              use_proto_norm=False, common_source=common,
+                              command_prefix=isolated_definitions)
 
 
 @pytest.mark.runtime

@@ -35,6 +35,9 @@ print(json.dumps([outputs or ["+?"] for outputs in
 def pytest_addoption(parser):
     parser.addoption("--validation-mode", choices=("full", "portable"), default="full")
     parser.addoption(
+        "--fresh-isolated-definitions", action="store_true", default=False,
+        help="compile common definitions separately for every isolated current-runtime assay")
+    parser.addoption(
         "--historical-replay", action="store_true", default=False,
         help=("execute historical-replay tests: reconstruct commit-pinned "
               "historical Foma models and re-derive their immutable receipts "
@@ -110,3 +113,42 @@ def selected_graph_capability(request, monkeypatch):
     mode = request.config.getoption("--validation-mode")
     if request.module is not None and hasattr(request.module, "VALIDATION_MODE"):
         monkeypatch.setattr(request.module, "VALIDATION_MODE", mode)
+
+
+@pytest.fixture(scope="session")
+def isolated_definitions(request):
+    if request.config.getoption("--fresh-isolated-definitions"):
+        yield ""
+        return
+    script = """
+import json, sys, tempfile
+from pathlib import Path
+sys.path.insert(0, "tools")
+from anglo_frisian_experiments import prepare_definition_image
+from capr_runtime import layout
+directory = Path(tempfile.mkdtemp(prefix="capr_defined_", dir="/tmp"))
+try:
+    image = prepare_definition_image(layout().germanic_fst, directory)
+    print(json.dumps({"directory": str(directory), "image": str(image) if image else None}))
+except BaseException:
+    import shutil
+    shutil.rmtree(directory)
+    raise
+"""
+    result = run_in_runner(
+        "python3 -c " + shlex.quote(script), text=True, capture_output=True,
+        check=True, timeout=900)
+    state = json.loads(result.stdout)
+    try:
+        yield ("export CAPR_FOMA_DEFINITION_IMAGE=" + shlex.quote(state["image"]) + "; "
+               if state["image"] else "")
+    finally:
+        cleanup = f"""
+import shutil
+from pathlib import Path
+directory = Path({state["directory"]!r})
+assert directory.parent == Path("/tmp") and directory.name.startswith("capr_defined_")
+shutil.rmtree(directory)
+"""
+        run_in_runner("python3 -c " + shlex.quote(cleanup), text=True,
+                      capture_output=True, check=True, timeout=30)

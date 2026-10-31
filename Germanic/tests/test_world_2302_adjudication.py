@@ -408,9 +408,10 @@ def test_every_reassessment_selected_final_delta_is_explicit(name, expected):
 
 
 @pytest.mark.runtime
-def test_current_migration_repeats_adopted_semantics_and_protected_outputs(tmp_path):
+def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
+        tmp_path, isolated_definitions):
     result = run_in_runner(
-        "python3 docs/sound_changes/audits/world-2302-experiments/experiment.py"
+        isolated_definitions + "python3 docs/sound_changes/audits/world-2302-experiments/experiment.py"
         " --migration",
         text=True, capture_output=True, check=True, timeout=1800)
     current = json.loads(result.stdout)
