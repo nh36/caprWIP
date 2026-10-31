@@ -7,6 +7,7 @@ import argparse
 import json
 import re
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 
@@ -461,11 +462,17 @@ def write_report(
 
     rows = list(rows)
     forms = list(dict.fromkeys(evaluation_input(row) for row in rows))
+    bin_names = [bin_name for _, bin_name in STAGES]
+    # These jobs only read validated bins; report assembly stays serial.
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        outputs_by_bin = list(pool.map(
+            lambda path: batch_apply_down(path, forms),
+            [bin_dir / name for name in bin_names] + [bin_path]))
     stage_cache = {
-        bin_name: dict(zip(forms, batch_apply_down(bin_dir / bin_name, forms)))
-        for _, bin_name in STAGES
+        bin_name: dict(zip(forms, outputs))
+        for bin_name, outputs in zip(bin_names, outputs_by_bin)
     }
-    final_cache = dict(zip(forms, batch_apply_down(bin_path, forms)))
+    final_cache = dict(zip(forms, outputs_by_bin[-1]))
     buckets: Dict[str, List[Dict[str, str]]] = defaultdict(list)
     stage_fires: Dict[str, List[str]] = defaultdict(list)
     fronted_rows: List[str] = []; unfronted_rows: List[str] = []; fronting_correct: List[str] = []; fronting_unfronting_correct: List[str] = []; fronting_unfronting_incorrect: List[str] = []
