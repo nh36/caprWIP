@@ -313,7 +313,9 @@ def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path,
     build manifest records exactly the source state hashed here (canonical
     provenance), as verified fail-closed before generation.
     """
-    lines = ["=== PROVENANCE ==="]
+    lines = ["=== PROVENANCE ===",
+             f"trace_provenance_version: {oe_trace_parse.PROVENANCE_VERSION}"]
+    tools_dir = Path(__file__).resolve().parent
     for label, path in [
         ("germanic.txt", fsts_dir / "germanic.txt"),
         ("old_english_sandbox.txt", fsts_dir / "old_english_sandbox.txt"),
@@ -321,6 +323,13 @@ def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path,
         ("entry_context_metadata.tsv", tsv_path.with_name("entry_context_metadata.tsv")),
         ("oe_input_context.py", layout().bin_dir / "oe_input_context.py"),
         ("oe_full_trace_report.py", Path(__file__)),
+        # v2 contract: evaluation helpers that participate in producing the
+        # trace without being compilation inputs (stage set and bin mapping,
+        # the batch Foma lookup, runtime layout/manifest validation).
+        ("oe_pipeline.py", tools_dir / "oe_pipeline.py"),
+        ("sound_change_order_sensitivity.py",
+         tools_dir / "sound_change_order_sensitivity.py"),
+        ("capr_runtime.py", tools_dir / "capr_runtime.py"),
     ]:
         lines.append(f"{label} sha256: {sha256_of(path)}")
     lines.append(f"old_english.bin sha256 (informational): {sha256_of(bin_path)}")
@@ -347,6 +356,7 @@ def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path,
 def live_source_hashes() -> Dict[str, str | None]:
     """sha256 of every provenance source in the current working tree."""
     rt = layout()
+    tools_dir = Path(__file__).resolve().parent
     live = {
         "germanic.txt": rt.germanic_fst,
         "old_english_sandbox.txt": rt.sandbox_fst,
@@ -354,6 +364,10 @@ def live_source_hashes() -> Dict[str, str | None]:
         "entry_context_metadata.tsv": rt.data_dir / "entry_context_metadata.tsv",
         "oe_input_context.py": rt.bin_dir / "oe_input_context.py",
         "oe_full_trace_report.py": Path(__file__),
+        "oe_pipeline.py": tools_dir / "oe_pipeline.py",
+        "sound_change_order_sensitivity.py":
+            tools_dir / "sound_change_order_sensitivity.py",
+        "capr_runtime.py": tools_dir / "capr_runtime.py",
     }
     return {label: (sha256_of(path) if path.is_file() else None)
             for label, path in live.items()}
@@ -377,10 +391,15 @@ def trace_provenance_problems(text: str) -> List[str]:
             layout().build_manifest.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         current_manifest = {}
-    return oe_trace_parse.provenance_problems(
+    problems = oe_trace_parse.provenance_problems(
         text, live_source_hashes(),
         expected_bins=expected_count,
-        foma_version=current_manifest.get("foma_version"))
+        foma_version=current_manifest.get("foma_version"),
+        require_version=oe_trace_parse.PROVENANCE_VERSION)
+    # Structural completeness is part of the canonical contract: a report
+    # with incomplete or disordered derivations is not usable evidence.
+    problems.extend(oe_trace_parse.structural_problems(text))
+    return problems
 
 
 def fidelity_lines(row: Dict[str, str],

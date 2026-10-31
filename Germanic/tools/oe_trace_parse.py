@@ -27,7 +27,9 @@ FIRING_MARKER = "=== STAGE FIRING SUMMARY ==="
 # Repository-relative paths of the sources hashed in the provenance block,
 # keyed by their provenance labels. These are the files a report must be
 # validated against -- for a historical report, at its own Git state.
-SOURCE_PATHS: Dict[str, str] = {
+# Version 1 (original contract): compilation inputs, corpus/context data,
+# the input-context helper and the generator itself.
+V1_SOURCE_PATHS: Dict[str, str] = {
     "germanic.txt": "Germanic/fsts/germanic.txt",
     "old_english_sandbox.txt": "Germanic/fsts/old_english_sandbox.txt",
     "germanic-aligned-final.tsv": "Germanic/data/germanic-aligned-final.tsv",
@@ -35,11 +37,25 @@ SOURCE_PATHS: Dict[str, str] = {
     "oe_input_context.py": "backend/oe_input_context.py",
     "oe_full_trace_report.py": "Germanic/tools/oe_full_trace_report.py",
 }
+# Version 2 extends the contract to the evaluation helpers that genuinely
+# participate in producing the trace without being compilation inputs:
+# oe_pipeline (stage set/order and bin mapping), batch_apply_down (the
+# Foma lookup used for every stage) and capr_runtime (layout + manifest
+# validation under which the report is generated). Changes to these can
+# alter derivations without changing any v1-hashed file.
+V2_SOURCE_PATHS: Dict[str, str] = {
+    "oe_pipeline.py": "Germanic/tools/oe_pipeline.py",
+    "sound_change_order_sensitivity.py":
+        "Germanic/tools/sound_change_order_sensitivity.py",
+    "capr_runtime.py": "Germanic/tools/capr_runtime.py",
+}
+SOURCE_PATHS: Dict[str, str] = {**V1_SOURCE_PATHS, **V2_SOURCE_PATHS}
+PROVENANCE_VERSION = 2
 # Labels whose hash is also recorded in the build manifest (compilation
 # inputs); the rest participate in evaluation/report generation only.
 MANIFEST_EXEMPT = {
     "entry_context_metadata.tsv", "oe_input_context.py",
-    "oe_full_trace_report.py",
+    "oe_full_trace_report.py", *V2_SOURCE_PATHS,
 }
 
 _PROVENANCE_HASH_RE = re.compile(
@@ -64,6 +80,7 @@ class Provenance:
     canonical: bool
     recorded: Mapping[str, str]  # label -> sha256 (incl. manifest:* labels)
     meta: Mapping[str, str]      # build_manifest_* fields
+    version: int = 1             # declared contract version (1 if undeclared)
 
 
 @dataclass(frozen=True)
@@ -90,12 +107,16 @@ def parse_provenance(text: str) -> Provenance:
     recorded: Dict[str, str] = {}
     meta: Dict[str, str] = {}
     canonical = False
+    version = 1
     for line in text.split(PROVENANCE_MARKER, 1)[1].splitlines():
         line = line.strip()
         if not line:
             if recorded:
                 break
             continue
+        if line.startswith("trace_provenance_version: "):
+            declared = line.split(": ", 1)[1].strip()
+            version = int(declared) if declared.isdigit() else 1
         if line.startswith("bins_provenance: canonical"):
             canonical = True
         if ": " in line and line.startswith("build_manifest_"):
@@ -104,7 +125,15 @@ def parse_provenance(text: str) -> Provenance:
         m = _PROVENANCE_HASH_RE.match(line)
         if m:
             recorded[m.group(1)] = m.group(2)
-    return Provenance(True, canonical, recorded, meta)
+    return Provenance(True, canonical, recorded, meta, version)
+
+
+def required_labels(version: int) -> List[str]:
+    """Provenance labels a report of *version* must record."""
+    labels = list(V1_SOURCE_PATHS)
+    if version >= 2:
+        labels.extend(V2_SOURCE_PATHS)
+    return labels
 
 
 def provenance_problems(
@@ -113,6 +142,7 @@ def provenance_problems(
     *,
     expected_bins: Optional[str] = None,
     foma_version: Optional[str] = None,
+    require_version: Optional[int] = None,
 ) -> List[str]:
     """Freshness/provenance problems of a trace report (empty == usable).
 
@@ -121,18 +151,33 @@ def provenance_problems(
     does not exist in that state). ``expected_bins``/``foma_version``, when
     given, additionally enforce the build-identity contract (used for the
     current state only; a predecessor is validated against itself).
+
+    Each report is checked against its own declared contract version: a
+    report declaring ``trace_provenance_version: 2`` must record every v2
+    label (missing required provenance is never silently accepted), while
+    a legacy report without the declaration is validated against the v1
+    label set only -- the caller states that limitation explicitly.
+    ``require_version`` additionally rejects any report declaring an older
+    contract (the ordinary freshness check for the current canonical
+    report, which must always satisfy the current contract).
     """
     prov = parse_provenance(text)
     if not prov.present:
         return ["trace report has no PROVENANCE block; regenerate with "
                 "tools/oe_full_trace_report.py --all"]
     problems: List[str] = []
+    if require_version is not None and prov.version < require_version:
+        problems.append(
+            f"trace provenance contract v{prov.version} predates the "
+            f"required v{require_version}: evaluation-helper provenance "
+            f"({', '.join(V2_SOURCE_PATHS)}) is not recorded; regenerate "
+            "with tools/oe_full_trace_report.py --all")
     if not prov.canonical:
         problems.append("trace report bins provenance is not canonical "
                         "(missing or NONCANONICAL DEBUG); regenerate from "
                         "validated canonical bins")
     recorded = prov.recorded
-    for label in SOURCE_PATHS:
+    for label in required_labels(prov.version):
         if label not in recorded:
             problems.append(f"trace PROVENANCE lacks a hash for {label}")
         elif source_hashes.get(label) is None:
@@ -262,6 +307,10 @@ def parse_fidelity(
         m = re.match(r"^([A-Za-z][A-Za-z0-9]*): (rejected|raw = .*)$", line)
         if m and current is not None:
             label, value = m.groups()
+            if label in current:
+                raise ValueError(
+                    "duplicate fidelity record for entry "
+                    f"{' | '.join(key)} stage {label}")
             record = current.setdefault(label,
                                         {"rejected": False, "raw": None})
             if value == "rejected":
@@ -269,3 +318,86 @@ def parse_fidelity(
             else:
                 record["raw"] = tuple(value[len("raw = "):].split(", "))
     return fidelity
+
+
+_FIRING_LABEL_RE = re.compile(r"^([A-Za-z][A-Za-z0-9]*): \d+$")
+
+
+def structural_problems(text: str) -> List[str]:
+    """Structural-completeness problems of a full-trace report.
+
+    Checks every parsed lexical entry against the stage sequence the report
+    itself declares in its STAGE FIRING SUMMARY: complete membership, the
+    declared order, no duplicates, no unexpected stages, and recorded
+    outputs for every stage; the firing summary must declare each stage
+    exactly once, and fidelity annotations must refer to existing entries
+    and stages without duplicate records. Operates purely on the report
+    text -- no Foma, no assumption that two compared reports share stages.
+    Older formats (no RAW STAGE FIDELITY section, no INPUT_CONTEXT) remain
+    valid.
+    """
+    firing = parse_firing_summary(text)
+    if firing is None:
+        return ["report has no STAGE FIRING SUMMARY (the report's own "
+                "stage-sequence declaration); regenerate with "
+                "tools/oe_full_trace_report.py --all"]
+    problems: List[str] = []
+    declared = list(firing)
+    firing_section = text[text.find(FIRING_MARKER) + len(FIRING_MARKER):]
+    seen_labels: List[str] = []
+    for line in firing_section.splitlines():
+        m = _FIRING_LABEL_RE.match(line.strip())
+        if m:
+            seen_labels.append(m.group(1))
+    for label in sorted({l for l in seen_labels if seen_labels.count(l) > 1}):
+        problems.append(f"firing summary declares stage {label} more than "
+                        "once; the stage sequence is incoherent")
+    if not declared:
+        problems.append("firing summary declares no stages")
+    try:
+        entries = parse_entries(text)
+    except ValueError as exc:
+        return problems + [str(exc)]
+    if not entries:
+        problems.append("report contains no lexical entries")
+    expected_set = set(declared)
+    for key, entry in entries.items():
+        ident = " | ".join(key)
+        labels = [stage.label for stage in entry.stages]
+        if labels != declared:
+            label_set = set(labels)
+            missing = [l for l in declared if l not in label_set]
+            unexpected = sorted(label_set - expected_set)
+            duplicated = sorted({l for l in labels if labels.count(l) > 1})
+            if missing:
+                problems.append(f"entry {ident}: missing stage(s) "
+                                + ", ".join(missing))
+            if unexpected:
+                problems.append(f"entry {ident}: unexpected stage(s) "
+                                + ", ".join(unexpected))
+            if duplicated:
+                problems.append(f"entry {ident}: duplicated stage(s) "
+                                + ", ".join(duplicated))
+            if not (missing or unexpected or duplicated):
+                problems.append(f"entry {ident}: stages are out of the "
+                                "order declared by the firing summary")
+        for stage in entry.stages:
+            if not stage.forms:
+                problems.append(f"entry {ident}: stage {stage.label} has "
+                                "no recorded outputs")
+    try:
+        fidelity = parse_fidelity(text)
+    except ValueError as exc:
+        problems.append(str(exc))
+        fidelity = None
+    for key, stages in (fidelity or {}).items():
+        ident = " | ".join(key)
+        if key not in entries:
+            problems.append(f"fidelity annotation refers to a nonexistent "
+                            f"entry {ident}")
+            continue
+        for label in stages:
+            if label not in expected_set:
+                problems.append(f"fidelity annotation for entry {ident} "
+                                f"refers to an unknown stage {label}")
+    return problems
