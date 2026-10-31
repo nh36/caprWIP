@@ -322,6 +322,110 @@ variance also limit causal interpretation of the total elapsed difference.
 Compilation still accounts for roughly 90% of lane 2; further substantial
 end-to-end gains need separate investigation, not another lookup cache.
 
+### Isolated common-definition reuse
+
+The five current-runtime rust, SC035 generality/prosody, world migration and
+chronology assays opt into one **freshly prepared, disposable definition image
+per pytest session**. `anglo_frisian_experiments.compile_isolated()` loads that
+table before compiling the unchanged experimental definitions, compositions
+and output bins. The chronology fixture uses the same source-prefix helper.
+All compilation remains isolated and serial; the image is deleted at teardown.
+This adds no persistent compilation cache or new validation lane.
+
+The image receipt identifies the exact common compilation text, Foma executable,
+linked libraries, environment and startup settings, and verifies the image's
+checksum. The environment is checked again after preparation. Changed common
+text, including private alphabet/context transformations, or a changed Foma
+environment requires full-source compilation instead. Commands whose state
+cannot safely be represented by a definition table also retain the full-source
+path. `save defined` does not preserve parameterised macros: their exact source
+is recovered using the existing definition parser and restored after loading.
+
+Image use is explicit through `CAPR_FOMA_DEFINITION_IMAGE`; ordinary standalone
+assays still compile their full source. `use_definition_image=False` overrides
+even a selected image. Reproduce the independent full-source control using the
+same existing runtime tests:
+
+```sh
+cd Germanic/tests
+python3 -m pytest -q -m runtime --fresh-isolated-definitions \
+    test_rust_input_adoption.py test_sc035_generality.py test_sc035_prosody.py \
+    test_world_2302_adjudication.py test_chronology_consistency.py
+```
+
+Historical replay does not select this fixture or prefix. The exclusive
+evidence-interface test still freshly rebuilds canonical production bins.
+Canonical manifests, v2 trace provenance, artifact-graph freshness, protected
+fingerprints and all existing scientific assertions remain independent checks.
+The canonical report, phonological model, corpus and historical receipts are
+unchanged.
+
+Command-level profiling of five complete current assays found the same common
+source in every compilation. Initial common compositions took 94--114 seconds
+per assay, versus 2--4 seconds for other definitions and 1--2 seconds for saving
+common bins. `EnglishProtoToOE` alone took about 75--80 seconds in the first two
+assays. Experimental compositions remained material: about 25--33 seconds for
+the isolated identity root and 132 seconds for the five chronology controls.
+The world additions themselves took under 0.1 seconds.
+
+The reusable image is 19.0 MiB. Observed preparation took 96--182 seconds,
+including 6--9 seconds to serialise the table; load/startup took 1--4 seconds.
+Sampled peak Foma RSS was 1,421 MiB before and 1,420 MiB with reuse. Component-only
+consumers dropped from roughly 1,077 MiB to 513 MiB. These are sampled process
+peaks, not whole-container memory accounting.
+
+| Complete current assay / paired candidate run | Full source | Prepared image |
+|---|---:|---:|
+| One shared preparation | -- | 182.92 s |
+| Rust identity | 132.32 s | 75.59 s |
+| SC035 generality | 140.84 s | 3.47 s |
+| SC035 prosody | 160.37 s | 68.98 s |
+| World migration | 95.49 s | 15.34 s |
+| Chronology controls | 189.76 s | 230.02 s |
+| Whole pytest selection, including preparation/teardown | 719.05 s | 577.72 s |
+
+The cold-session reduction is 19.7%; all five complete evidence JSON objects
+agree exactly with independent full-source compilation, including intermediate
+traces, firing populations, rejections and controls. The ordinary suite replaces
+five common-source compilations with one preparation and five read-only loads
+(six Foma processes rather than five); no lookup work changes. A controlled warm
+prototype ran the same five assays in 303.68 seconds versus the initial 777.09
+seconds, but production deliberately pays preparation once per session.
+
+Elapsed timings are not stable speed guarantees. Identical common composition
+inputs measured 75--167 seconds across the trials, and the paired chronology
+run was slower despite removing common compilation. Machine/compiler execution
+variability therefore prevents attributing each individual wall-time change to
+reuse. The reproducible change is elimination of four identical common
+compilations; the aggregate cold-session measurement includes its real cost.
+Temporary profiling, complete paired JSON and detailed timings are untracked
+under `.ci-results/definition-performance/`.
+
+Final unprofiled strict Level C ran against code commit `4f593231`:
+
+| Strict lane, pytest-reported elapsed | Accepted `ce4e6823` run | Definition-image run | Result |
+|---|---:|---:|---|
+| Parallel non-runtime | 781.17 s | 714.54 s | 1,658 passed |
+| Serial current runtime | 788.12 s | 271.00 s | 43 passed; five explicit historical-replay skips |
+| Exclusive fresh evidence interface | 246.64 s | 195.45 s | 25 passed |
+| Total | 1,815.93 s (30:16) | 1,180.99 s (19:41) | 1,726 passed |
+
+Actual wall time for the three pytest processes, including interpreter startup,
+was 1,184.03 seconds (19:44). All graph/status checks passed, tracked canonical
+evidence stayed byte-identical, and the consecutive Git comparison reported
+zero Foma invocations. Historical replay was not re-executed; its five deliberate
+skips retain the existing opt-in contract. There were no concurrent benchmarks
+during the final strict gate.
+
+The roughly 35% observed total reduction is not a wholly attributable or
+guaranteed speedup: neither the non-runtime lane nor the exclusive canonical
+rebuild selects definition-image reuse, and both also ran faster. The paired
+cold-assay result and eliminated common compilations establish the worthwhile
+improvement independently of that whole-workflow observation. Remaining cost
+lies in independently composed experimental models and required fresh canonical
+rebuilds. Further root/prefix caching or parallel compilation would expand this
+bounded change for uncertain gains; close the performance investigation here.
+
 ## Portable evidence and provenance
 
 Portable validation requires bibliography keys, declared library-contained
