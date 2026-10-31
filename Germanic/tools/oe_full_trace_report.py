@@ -15,6 +15,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import oe_pipeline  # noqa: E402
+import oe_trace_parse  # noqa: E402
 from capr_runtime import check_build_manifest, layout, sha256_of  # noqa: E402
 
 # Corpus/flookup helpers live in the shared model module; re-exported here
@@ -343,44 +344,8 @@ def provenance_lines(tsv_path: Path, bin_path: Path, fsts_dir: Path,
     return lines
 
 
-_PROVENANCE_HASH_RE = re.compile(
-    r"^(\S+) sha256(?: \(informational\))?: ([0-9a-f]{64})$")
-
-
-def trace_provenance_problems(text: str) -> List[str]:
-    """Freshness/provenance problems of a committed trace report (empty == usable).
-
-    Requires: a PROVENANCE block, canonical bins provenance, recorded source
-    hashes identical to the current live sources, and manifest-recorded source
-    hashes identical to the report's own source hashes (i.e. the report was
-    built from bins compiled from exactly the sources it hashes).
-    """
-    problems: List[str] = []
-    marker = "=== PROVENANCE ==="
-    if marker not in text:
-        return ["trace report has no PROVENANCE block; regenerate with "
-                "tools/oe_full_trace_report.py --all"]
-    recorded: Dict[str, str] = {}
-    meta: Dict[str, str] = {}
-    canonical = False
-    for line in text.split(marker, 1)[1].splitlines():
-        line = line.strip()
-        if not line:
-            if recorded:
-                break
-            continue
-        if line.startswith("bins_provenance: canonical"):
-            canonical = True
-        if ": " in line and line.startswith("build_manifest_"):
-            key, value = line.split(": ", 1)
-            meta[key] = value.strip()
-        m = _PROVENANCE_HASH_RE.match(line)
-        if m:
-            recorded[m.group(1)] = m.group(2)
-    if not canonical:
-        problems.append("trace report bins provenance is not canonical "
-                        "(missing or NONCANONICAL DEBUG); regenerate from "
-                        "validated canonical bins")
+def live_source_hashes() -> Dict[str, str | None]:
+    """sha256 of every provenance source in the current working tree."""
     rt = layout()
     live = {
         "germanic.txt": rt.germanic_fst,
@@ -390,41 +355,57 @@ def trace_provenance_problems(text: str) -> List[str]:
         "oe_input_context.py": rt.bin_dir / "oe_input_context.py",
         "oe_full_trace_report.py": Path(__file__),
     }
-    for label, path in live.items():
-        if label not in recorded:
-            problems.append(f"trace PROVENANCE lacks a hash for {label}")
-        elif recorded[label] != sha256_of(path):
-            problems.append(f"trace report is STALE w.r.t. {label}")
-        if label in {"entry_context_metadata.tsv", "oe_input_context.py", "oe_full_trace_report.py"}:
-            continue
-        manifest_label = f"manifest:{label}"
-        if manifest_label not in recorded:
-            problems.append(f"trace PROVENANCE lacks {manifest_label} "
-                            "(pre-build-identity report); regenerate")
-        elif recorded.get(label) and recorded[manifest_label] != recorded[label]:
-            problems.append(f"trace report's build manifest disagrees with its "
-                            f"own source hash for {label}")
+    return {label: (sha256_of(path) if path.is_file() else None)
+            for label, path in live.items()}
+
+
+def trace_provenance_problems(text: str) -> List[str]:
+    """Freshness/provenance problems of a committed trace report (empty == usable).
+
+    Requires: a PROVENANCE block, canonical bins provenance, recorded source
+    hashes identical to the current live sources, and manifest-recorded source
+    hashes identical to the report's own source hashes (i.e. the report was
+    built from bins compiled from exactly the sources it hashes). The shared
+    core (oe_trace_parse.provenance_problems) is also used by incremental
+    regression to validate a predecessor report against its own Git state.
+    """
     # Build-identity checks: the trace must have been produced under the
     # current build contract, not merely from identical source bytes.
     expected_count = str(len(oe_pipeline.expected_snapshot_bins()) + 1)
-    if meta.get("build_manifest_expected_bins") != expected_count:
-        problems.append(
-            "trace report's expected-bin count "
-            f"({meta.get('build_manifest_expected_bins', 'missing')}) does not "
-            f"match the current executable model contract ({expected_count}); "
-            "regenerate from a current canonical build")
     try:
-        current_manifest = json.loads(rt.build_manifest.read_text(encoding="utf-8"))
+        current_manifest = json.loads(
+            layout().build_manifest.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         current_manifest = {}
-    current_foma = current_manifest.get("foma_version")
-    if current_foma and meta.get("build_manifest_foma_version") != current_foma:
-        problems.append(
-            "trace report's recorded Foma version "
-            f"({meta.get('build_manifest_foma_version', 'missing')}) differs "
-            f"from the current build manifest ({current_foma}); regenerate "
-            "under the current build configuration")
-    return problems
+    return oe_trace_parse.provenance_problems(
+        text, live_source_hashes(),
+        expected_bins=expected_count,
+        foma_version=current_manifest.get("foma_version"))
+
+
+def fidelity_lines(row: Dict[str, str],
+                   stage_cache: Dict[str, Dict[str, List[str]]]) -> List[str]:
+    """Raw-stage distinctions for one row, from the shared stage cache.
+
+    One line per stage whose result the displayed trace cannot represent
+    exactly: ``Label: rejected`` when every output was '+?' (the trace line
+    shows the previous form tagged [no-change]), and ``Label: raw = ...``
+    when a raw form differs from its display_form (context annotation
+    marks). Empty when the displayed trace is already exact.
+    """
+    out: List[str] = []
+    key = evaluation_input(row)
+    for label, bin_name in STAGES:
+        outputs = stage_cache[bin_name][key]
+        usable = [o for o in outputs if o != "+?"]
+        if not usable:
+            out.append(f"{label}: rejected")
+            continue
+        raw = ", ".join(usable)
+        displayed = ", ".join(display_form(o) for o in usable)
+        if raw != displayed:
+            out.append(f"{label}: raw = {raw}")
+    return out
 
 
 def write_report(
@@ -504,6 +485,7 @@ def write_report(
     ]
 
     lines: List[str] = []
+    fidelity_blocks: List[str] = []
     if provenance:
         lines.extend(provenance)
     for bucket in order:
@@ -542,6 +524,13 @@ def write_report(
                 prev_outputs = outputs
                 pretty = ", ".join(display_form(form) for form in outputs)
                 lines.append(f"{label}: {pretty}")
+            fidelity = fidelity_lines(row, stage_cache)
+            if fidelity:
+                fidelity_blocks.append(
+                    f"--- {row['concept']} | {row['proto']} | "
+                    f"{row['counterpart']} ---")
+                fidelity_blocks.extend(fidelity)
+                fidelity_blocks.append("")
             lines.append("")
         lines.append("")
 
@@ -549,6 +538,20 @@ def write_report(
     for title, items in [("fronted", fronted_rows), ("unfronted_by_ar", unfronted_rows), ("fronting_correct", fronting_correct), ("fronting_plus_unfronting_correct", fronting_unfronting_correct), ("fronting_plus_unfronting_incorrect", fronting_unfronting_incorrect)]:
         if items:
             lines.append(f"--- {title} ({len(items)}) ---"); lines.extend(items); lines.append("")
+
+    # Raw-stage distinctions that display_form suppresses in the stage lines
+    # above: stages that rejected their input (shown there as the previous
+    # form tagged [no-change]) and raw forms carrying context annotation
+    # marks. Derived from the same batch evaluation as the traces, so the
+    # committed report preserves every distinction regression needs without
+    # another Foma round. Parsed by oe_trace_parse.parse_fidelity.
+    lines.append("=== RAW STAGE FIDELITY ===")
+    lines.append("")
+    lines.append(f"entries with raw-stage distinctions: {len([b for b in fidelity_blocks if b.startswith('--- ')])}")
+    lines.append("")
+    lines.extend(fidelity_blocks)
+    if fidelity_blocks:
+        lines.append("")
 
     lines.append("=== STAGE FIRING SUMMARY ===")
     lines.append("")

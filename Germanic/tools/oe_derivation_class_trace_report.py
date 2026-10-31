@@ -15,9 +15,9 @@ from __future__ import annotations
 
 import argparse
 import csv
-import re
 from pathlib import Path
 from typing import Dict, List
+import oe_trace_parse
 from oe_pipeline import display_form, evaluation_input, load_rows as load_contextual_rows
 
 from oe_full_trace_report import (
@@ -126,15 +126,7 @@ def project_full_trace(rows: List[Dict[str, str]], full_trace: Path) -> str:
     problems = trace_provenance_problems(text)
     if problems:
         raise ValueError("stale full trace: " + "; ".join(problems))
-    pattern = re.compile(
-        r"^--- (.*?) ---\nPROTO: ([^\n]*)\n(?:INPUT_CONTEXT: ([^\n]*)\n)?EXPECTED: ([^\n]*)\n"
-        r"OUTPUTS: ([^\n]*)\n(.*?)(?=^--- |^=== |\Z)", re.M | re.S)
-    evidence = {}
-    for match in pattern.finditer(text):
-        key = match.group(1, 2, 4)
-        if key in evidence:
-            raise ValueError(f"duplicate full-trace identity: {key}")
-        evidence[key] = match.group(5, 6, 3)
+    evidence = oe_trace_parse.parse_entries(text)
     buckets = {name: [] for name in DERIVATION_ORDER}
     selected = set()
     for row in rows:
@@ -148,7 +140,7 @@ def project_full_trace(rows: List[Dict[str, str]], full_trace: Path) -> str:
             expected_context = (
                 f"SC098; stress={row['word_stress']}; finality={row['phonological_finality']}"
             )
-            if evidence[key][2] != expected_context:
+            if evidence[key].input_context != expected_context:
                 raise ValueError(f"full-trace selected context mismatch: {key}")
         bucket = row["derivation_class"]
         buckets[bucket if bucket in buckets else "unclassified"].append(row)
@@ -160,12 +152,13 @@ def project_full_trace(rows: List[Dict[str, str]], full_trace: Path) -> str:
             continue
         lines.extend([f"=== DERIVATION_CLASS: {bucket} ({len(items)}) ===", ""])
         for row in sorted(items, key=lambda r: r["concept"]):
-            outputs, body, _ = evidence[(row["concept"], row["proto"], row["counterpart"])]
+            entry = evidence[(row["concept"], row["proto"], row["counterpart"])]
             lines.extend([f"--- {row['concept']} ---", f"PROTO: {row['proto']}",
-                          f"EXPECTED: {row['counterpart']}", f"OUTPUTS: {outputs}"])
+                          f"EXPECTED: {row['counterpart']}",
+                          f"OUTPUTS: {entry.outputs}"])
             if row["note"]:
                 lines.append(f"NOTE: {row['note']}")
-            lines.extend([body.rstrip(), ""])
+            lines.extend([entry.body.rstrip(), ""])
     return "\n".join(lines) + "\n"
 
 

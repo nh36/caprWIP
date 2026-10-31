@@ -4,10 +4,10 @@ old_english_sandbox.txt sha256: 8ccfe8b4e2fbc2a1406e1353678ce26680a75026f8514f4d
 germanic-aligned-final.tsv sha256: 557113f8709633337feb51b1cd991f0db380ca567c20b7e784141f3d8c4fb540
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
 oe_input_context.py sha256: d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67
-oe_full_trace_report.py sha256: 8a14c2d7dbd821616f1351c9faa441a2f10a84141d89de8e2c8f52463ded4bea
-old_english.bin sha256 (informational): ac570f894828c78f7f0e0aed5f72767f16ef4d2f10f5ebb57e832a88df6693e7
+oe_full_trace_report.py sha256: 06727c309cc5894cea02542cb33ad61cdac38390e724a6f11f62a2937de0de37
+old_english.bin sha256 (informational): 52e2fc5a2dc6f1bb6f218c8760e247312baac6d649d255946b9ba1a6e28c1ea6
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-10-30T18:54:48+0000
+build_manifest_built_at: 2026-10-31T06:32:39+0000
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
 build_manifest_expected_bins: 110
@@ -51227,6 +51227,148 @@ lade | *xláðaną | exp hladan | afb *x*l*æ*d*a*n*ą | ar *x*l*a*d*a*n*ą
 wade | *wádaną | exp wadan | afb *w*æ*d*a*n*ą | ar *w*a*d*a*n*ą
 wake | *wákaną | exp wacan | afb *w*æ*k*a*n*ą | ar *w*a*k*a*n*ą
 wash | *wáskaną | exp wascan | afb *w*æ*s*k*a*n*ą | ar *w*a*s*k*a*n*ą
+
+=== RAW STAGE FIDELITY ===
+
+entries with raw-stage distinctions: 3
+
+--- begin | *bigínnaną | beġinnan ---
+OEStressFootContext: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+EAFAiMonophthongization: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEAwwjResolution: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEAuBrightening: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEEwLongDiphthong: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEJWWSimplification: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEJGlideIO: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEDiphthongLeveling: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEAwLongDiphthong: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OECompoundLinkingSyncope: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEStripSecondaryStress: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEInterStressRaising: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEWICombinativeUUmlaut: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+PWGmcFinalBareALoss: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+PWGmcSurvivingBimoricOUnrounding: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+EAFBrighteningUnstressed: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+EAFBrightening: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+EAFBrighteningLongFinal: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEBreaking: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEVelarFricativePalatalization: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEARestoration: raw = *ᶠ*b*i*g*í*n*n*a*n*ą
+OEHeavySyllableNasalApocope: raw = *ᶠ*b*i*g*í*n*n*a*n
+OESecondaryNasalization: raw = *ᶠ*b*i*g*í*n*n*ą*n
+PGmcBAllophony: raw = *ᶠ*b*i*g*í*n*n*ą*n
+SieversLawSyncope: raw = *ᶠ*b*i*g*í*n*n*ą*n
+OESkPalatalization: raw = *ᶠ*b*i*g*í*n*n*ą*n
+OEVelarPalatalization: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEPrefixAReduction: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEPostVelarWLoss: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEWLossBeforeI: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEWsPalatalDiphthongization: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEIUmlaut: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OELatePalatalDiphthong: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEJClusterCoalescence: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEBackMutation: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEWsPalatalUmlaut: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEWeakTailNasalLoss: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEWeightMarkers: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEHighVowelApocope: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+NWGmcInStemNLoss: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEMedialSyncope: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OELAdjacentSyncope: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEDentalAssimilation: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEPreconsonantalDegemination: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEEarlyOShortening: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEUnstressedFrontingEarly: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OELateOShortening: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEMedUnstressedORaising: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEFinalUnstressedOLowering: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEUnstressedLongVowelShortening: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEUnstressedAEMerger: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEMedUnstressedILowering1: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEMedUnstressedILowering: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEMedUnstressedULowering: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+
+--- believe | *galáubijaną | ġelīefan ---
+OEStressFootContext: raw = *ᶠ*g*a*l*áu*b*i*j*a*n*ą
+EAFAiMonophthongization: raw = *ᶠ*g*a*l*áu*b*i*j*a*n*ą
+OEAwwjResolution: raw = *ᶠ*g*a*l*áu*b*i*j*a*n*ą
+OEAuBrightening: raw = *ᶠ*g*a*l*áeu*b*i*j*a*n*ą
+OEEwLongDiphthong: raw = *ᶠ*g*a*l*áeu*b*i*j*a*n*ą
+OEJWWSimplification: raw = *ᶠ*g*a*l*áeu*b*i*j*a*n*ą
+OEJGlideIO: raw = *ᶠ*g*a*l*áeu*b*i*j*a*n*ą
+OEDiphthongLeveling: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+OEAwLongDiphthong: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+OECompoundLinkingSyncope: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+OEStripSecondaryStress: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+OEInterStressRaising: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+OEWICombinativeUUmlaut: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+PWGmcFinalBareALoss: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+PWGmcSurvivingBimoricOUnrounding: raw = *ᶠ*g*a*l*ēa*b*i*j*a*n*ą
+EAFBrighteningUnstressed: raw = *ᶠ*g*æ*l*ēa*b*i*j*a*n*ą
+EAFBrightening: raw = *ᶠ*g*æ*l*ēa*b*i*j*a*n*ą
+EAFBrighteningLongFinal: raw = *ᶠ*g*æ*l*ēa*b*i*j*a*n*ą
+OEBreaking: raw = *ᶠ*g*æ*l*ēa*b*i*j*a*n*ą
+OEVelarFricativePalatalization: raw = *ᶠ*g*æ*l*ēa*b*i*j*a*n*ą
+OEARestoration: raw = *ᶠ*g*æ*l*ēa*b*i*j*a*n*ą
+OEHeavySyllableNasalApocope: raw = *ᶠ*g*æ*l*ēa*b*i*j*a*n
+OESecondaryNasalization: raw = *ᶠ*g*æ*l*ēa*b*i*j*ą*n
+PGmcBAllophony: raw = *ᶠ*g*æ*l*ēa*β*i*j*ą*n
+SieversLawSyncope: raw = *ᶠ*g*æ*l*ēa*β*j*ą*n
+OESkPalatalization: raw = *ᶠ*g*æ*l*ēa*β*j*ą*n
+OEVelarPalatalization: raw = *ᶠ*ʝ*æ*l*ēa*β*j*ą*n
+OEPrefixAReduction: raw = *ᶠ*ʝ*i*l*ēa*β*j*ą*n
+OEPostVelarWLoss: raw = *ᶠ*ʝ*i*l*ēa*β*j*ą*n
+OEWLossBeforeI: raw = *ᶠ*ʝ*i*l*ēa*β*j*ą*n
+OEWsPalatalDiphthongization: raw = *ᶠ*ʝ*i*l*ēa*β*j*ą*n
+OEIUmlaut: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OELatePalatalDiphthong: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEJClusterCoalescence: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEBackMutation: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEWsPalatalUmlaut: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEWeakTailNasalLoss: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEWeightMarkers: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEHighVowelApocope: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+NWGmcInStemNLoss: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEMedialSyncope: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OELAdjacentSyncope: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEDentalAssimilation: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEPreconsonantalDegemination: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEEarlyOShortening: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEUnstressedFrontingEarly: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OELateOShortening: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEMedUnstressedORaising: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEFinalUnstressedOLowering: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEUnstressedLongVowelShortening: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEUnstressedAEMerger: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEMedUnstressedILowering1: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEMedUnstressedILowering: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEMedUnstressedULowering: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+
+--- you | *ízwiz | ēow ---
+EnglishProtoInput: raw = *ᵘ*í*z*w*i*z
+PGmcGmSimplification: raw = *ᵘ*í*z*w*i*z
+PGmcNasalLossBeforeX: raw = *ᵘ*í*z*w*i*z
+RootNounNomZLoss: raw = *ᵘ*í*z*w*i*z
+PNWGmcUnstressedAiMonophthongization: raw = *ᵘ*í*z*w*i*z
+PNWGmcAToUBeforeM: raw = *ᵘ*í*z*w*i*z
+PNWGmcLongELowering: raw = *ᵘ*í*z*w*i*z
+PWGmcEarlyIApocope: raw = *ᵘ*í*z*w*i*z
+PWGmcFinalOrLowering: raw = *ᵘ*í*z*w*i*z
+PWGmcCoronalWAssimilation: raw = *ᵘ*í*w*w*i*z
+OEWWSimplification: raw = *ᵘ*íu*w*i*z
+PWGmcIjContraction: raw = *ᵘ*íu*w*i*z
+PWGmcJGemination: raw = *ᵘ*íu*w*i*z
+PWGmcSyllabicJ: raw = *ᵘ*íu*w*i*z
+PNWGmcPreconsonantalXLoss: raw = *ᵘ*íu*w*i*z
+EAFLThVoicing: raw = *ᵘ*íu*w*i*z
+PWGmcDentalHardening: raw = *ᵘ*íu*w*i*z
+PWGmcEndinglessAw: raw = *ᵘ*íu*w*i*z
+PNWGmcILowering: raw = *ᵘ*íu*w*i*z
+PNWGmcULowering: raw = *ᵘ*íu*w*i*z
+PNWGmcStressedMonosyllableORaising: raw = *ᵘ*íu*w*i*z
+PNWGmcFinalLongORaising: raw = *ᵘ*íu*w*i*z
+EAFFinalZDeletion: raw = *ᵘ*íu*w*i
+
 
 === STAGE FIRING SUMMARY ===
 
