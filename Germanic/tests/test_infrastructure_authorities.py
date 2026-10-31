@@ -73,8 +73,19 @@ EXPECTED_ACTIVE_ROW_COUNT = 390
 def _load(name):
     spec = importlib.util.spec_from_file_location(name, TOOLS / f"{name}.py")
     mod = importlib.util.module_from_spec(spec)
+    previous = sys.modules.get(name)
     sys.modules[name] = mod  # dataclasses resolve annotations via sys.modules
-    spec.loader.exec_module(mod)
+    try:
+        spec.loader.exec_module(mod)
+    finally:
+        # Restore the interpreter-wide module registry: leaving the fresh
+        # copy registered strands every other test module's patches on a
+        # stale object (observed as real Foma lookups escaping a mocked
+        # batch_apply_down in test_lexical_trace_projection).
+        if previous is not None:
+            sys.modules[name] = previous
+        else:
+            sys.modules.pop(name, None)
     return mod
 
 

@@ -66,8 +66,17 @@ def load_module(name: str):
     spec = importlib.util.spec_from_file_location(name, TOOLS / f"{name}.py")
     module = importlib.util.module_from_spec(spec)
     assert spec and spec.loader
+    previous = sys.modules.get(name)
     sys.modules[name] = module
-    spec.loader.exec_module(module)
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        # Restore the shared registry so other test modules' patches keep
+        # targeting the module object the rest of the suite imports.
+        if previous is not None:
+            sys.modules[name] = previous
+        else:
+            sys.modules.pop(name, None)
     return module
 
 
