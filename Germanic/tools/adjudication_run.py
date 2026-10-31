@@ -44,6 +44,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -165,6 +166,73 @@ class Run:
     def _current_identities(self, domains) -> dict:
         return {d: domain_identity(d, self.sc_id) for d in domains}
 
+    def _input_hashes(self) -> dict:
+        return {str(p.resolve()): hashlib.sha256(p.read_bytes()).hexdigest()
+                if p.is_file() else "absent"
+                for domain in ("executable_model", "corpus", "registry", "memo")
+                for p in _domain_files(domain, self.sc_id)}
+
+    def begin_propagation(self, modifications: dict[str, str]) -> None:
+        """Before edits, pin the decision's exact SOURCE paths and target hashes."""
+        self.refresh_validity()
+        state = self.state()
+        if self.frontier() != "PROPAGATE" or state.get("propagation"):
+            raise WorkflowError("begin propagation requires a valid DECIDE and no existing propagation")
+        decision = state["stages"]["DECIDE"]["evidence"]
+        if modifications != decision["intended_source_modifications"]:
+            raise WorkflowError("propagation modifications must agree with the recorded decision")
+        before = self._input_hashes()
+        executable = {str(p.resolve()) for domain in ("executable_model", "corpus")
+                      for p in _domain_files(domain, self.sc_id)}
+        import artifact_graph
+        protected = {str(p.resolve()) for p in artifact_graph.ARCHIVE_PATHS}
+        generated = {str(p.resolve()) for node in artifact_graph.nodes() for p in node.outputs()}
+        protected.update(generated)
+        targets = {}
+        for ref, sha in modifications.items():
+            path = (REPO_ROOT / ref).resolve()
+            if (str(path) not in before or str(path) in protected
+                    or not re.fullmatch(r"[0-9a-f]{64}", sha)):
+                raise WorkflowError(f"not an authorised SOURCE path/hash: {ref}")
+            if "DEFER" in decision["verdict"].split("/") and str(path) in executable:
+                raise WorkflowError("DEFER permits documentation, not executable or selected-input propagation")
+            targets[str(path)] = sha
+        state["propagation"] = {"before": before, "targets": targets,
+                                "pre_change_source": adjudication_control.source_identity(),
+                                "generated_paths": [str(Path(p).relative_to(REPO_ROOT))
+                                                    for p in generated
+                                                    if Path(p).is_relative_to(REPO_ROOT)],
+                                "started_at": adjudication_control._utcnow()}
+        self._write_state(state)
+        self._event("propagation_started", modifications=modifications)
+
+    def _sanctioned_changes(self, state: dict) -> bool:
+        propagation = state.get("propagation")
+        if not propagation:
+            return False
+        current = self._input_hashes()
+        if propagation.get("completed_hashes"):
+            experimental_paths = {str(p.resolve()) for domain in ("executable_model", "corpus")
+                                  for p in _domain_files(domain, self.sc_id)}
+            return all(current.get(p) == propagation["completed_hashes"].get(p)
+                       for p in experimental_paths)
+        before_source = propagation["pre_change_source"]
+        current_source = adjudication_control.source_identity()
+        if current_source.get("head_commit") != before_source.get("head_commit"):
+            return False
+        before_changes = before_source.get("worktree_changes", {})
+        current_changes = current_source.get("worktree_changes", {})
+        source_delta = {p for p in before_changes.keys() | current_changes.keys()
+                        if before_changes.get(p) != current_changes.get(p)}
+        allowed = set(propagation["generated_paths"])
+        allowed.update(str(Path(p).relative_to(REPO_ROOT))
+                       for p in propagation["targets"] if Path(p).is_relative_to(REPO_ROOT))
+        if source_delta - allowed:
+            return False
+        changed = {path for path in current.keys() | propagation["before"].keys()
+                   if current.get(path) != propagation["before"].get(path)}
+        return changed <= propagation["targets"].keys()
+
     def refresh_validity(self) -> list[str]:
         """Re-check every completed stage against current source identities.
 
@@ -173,14 +241,13 @@ class Run:
         names of newly invalidated stages.
         """
         state = self.state()
-        propagated = (state["stages"].get("PROPAGATE", {}).get("status")
-                      == "complete")
+        sanctioned = self._sanctioned_changes(state)
         invalidated = []
         for stage in STAGES:
             record = state["stages"].get(stage)
             if not record or record.get("status") != "complete":
                 continue
-            if stage in FROZEN_AFTER_PROPAGATE and propagated:
+            if stage in FROZEN_AFTER_PROPAGATE and sanctioned:
                 continue  # the propagated edit was the sanctioned change
             stale = []
             for domain, recorded in record.get("domain_identities",
@@ -270,10 +337,50 @@ class Run:
                 f"{stage} is already complete; completed stages are redone "
                 "only after invalidation (source change), never silently")
         evidence = evidence or {}
+        if stage == "SNAPSHOT":
+            if evidence.get("no_executable_experiment"):
+                if not isinstance(evidence["no_executable_experiment"], str):
+                    raise WorkflowError("no-experiment exception requires a documented reason")
+            else:
+                import experiment_snapshot
+                try:
+                    snapshot = experiment_snapshot.Snapshot(Path(evidence["snapshot_root"]))
+                    snapshot.verify()
+                except (KeyError, OSError, ValueError, RuntimeError) as exc:
+                    raise WorkflowError(f"SNAPSHOT requires a real verified snapshot: {exc}") from exc
+        if stage == "INVESTIGATE" and evidence.get("experiments"):
+            snapshot_record = state["stages"]["SNAPSHOT"]["evidence"]
+            if snapshot_record.get("no_executable_experiment"):
+                raise WorkflowError("executable experiments cannot use the no-experiment exception")
+            for experiment in evidence["experiments"]:
+                if Path(experiment.get("snapshot_root", "")).resolve() != Path(snapshot_record["snapshot_root"]).resolve():
+                    raise WorkflowError("executable experiment was not compiled from the recorded snapshot")
+                try:
+                    adjudication_control.verify_receipt(experiment["receipt"], current=False)
+                except (KeyError, OSError, ValueError) as exc:
+                    raise WorkflowError(f"experiment execution receipt invalid: {exc}") from exc
         if stage == "DECIDE":
             self._check_decision(evidence)
         if stage == "VALIDATE":
             self._check_validation(evidence)
+        if stage == "PROPAGATE":
+            propagation = state.get("propagation")
+            if not propagation or not self._sanctioned_changes(state):
+                raise WorkflowError("PROPAGATE requires a controlled begin and no unexpected edits")
+            current = self._input_hashes()
+            if any(current[path] != sha for path, sha in propagation["targets"].items()):
+                raise WorkflowError("PROPAGATE target hashes do not match the authorised modifications")
+            receipts = evidence.get("receipts", [])
+            if not receipts:
+                raise WorkflowError("PROPAGATE requires successful finalisation execution receipts")
+            for receipt in receipts:
+                try:
+                    adjudication_control.verify_receipt(receipt)
+                except (ValueError, OSError, KeyError) as exc:
+                    raise WorkflowError(f"PROPAGATE receipt invalid: {exc}") from exc
+            if not any(r["argv"][-2:] == [self.sc_id, "--finalize"] for r in receipts):
+                raise WorkflowError("PROPAGATE requires the SC-specific --finalize command")
+            propagation["completed_hashes"] = current
         record = {
             "status": "complete",
             "completed_at": adjudication_control._utcnow(),
@@ -340,20 +447,39 @@ class Run:
             raise WorkflowError(
                 "VALIDATE requires run_logged command receipts attesting "
                 "what actually ran (true exit codes and full logs)")
-        failing = [r.get("label", "?") for r in receipts if not r.get("ok")]
-        if failing:
-            raise WorkflowError(
-                f"validation receipts record failures: {failing}; a failed "
-                "validation cannot be recorded as passed")
-        current = adjudication_control.source_identity()["identity_sha256"]
         for receipt in receipts:
-            attested = receipt.get("source_identity_sha256")
-            if attested and attested != current:
-                raise WorkflowError(
-                    "a validation receipt attests a different source "
-                    f"identity ({attested[:16]}…) than the current tree "
-                    f"({current[:16]}…); an earlier pass cannot certify a "
-                    "subsequently modified source tree")
+            try:
+                adjudication_control.verify_receipt(receipt)
+            except (ValueError, OSError, KeyError) as exc:
+                raise WorkflowError(f"validation receipt invalid: {exc}") from exc
+        levels = {r["level"] for r in receipts}
+        if not {"A", "B", "C"} <= levels:
+            raise WorkflowError("VALIDATE requires Level A, B and complete strict Level C evidence")
+        strict = [r for r in receipts if r["level"] == "C"]
+        lanes = {r["lane"] for r in strict}
+        if not ({"serial", "exclusive"} <= lanes or
+                {"independent", "runtime", "exclusive"} <= lanes):
+            raise WorkflowError("incomplete strict-validation lanes (exclusive suite required)")
+        for r in strict:
+            argv = r["argv"]
+            args = [arg for arg in argv[3:] if arg not in
+                    ("-q", "--validation-mode=full", "--fresh-isolated-definitions")
+                    and not arg.startswith("--junitxml=")]
+            expected_args = {
+                "serial": ["--ignore=test_evidence_interface.py"],
+                "exclusive": ["test_evidence_interface.py"],
+                "runtime": ["-m", "runtime", "--ignore=test_evidence_interface.py"],
+                "independent": ["-m", "not runtime", "-n", "4", "--dist", "loadfile",
+                                "--ignore=test_evidence_interface.py"],
+            }
+            if (argv[1:3] != ["-m", "pytest"] or args != expected_args.get(r["lane"])
+                    or "--validation-mode=full" not in argv or r.get("pytest_addopts")):
+                raise WorkflowError("strict-validation command does not match its lane")
+            if r["lane"] == "serial" and r["test_counts"]["skipped"] < 5:
+                raise WorkflowError("strict validation must preserve explicit historical-replay skips")
+            log = Path(r["stdout_log"]).read_text() + Path(r["stderr_log"]).read_text()
+            if not re.search(r"\b\d+ passed\b", log) or "failed" in log:
+                raise WorkflowError("strict validation lacks executed passing test totals")
 
 
 # ---------------------------------------------------------------------------

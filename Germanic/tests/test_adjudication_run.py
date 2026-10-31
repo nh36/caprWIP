@@ -12,6 +12,9 @@ occurs.  They demonstrate the Milestone 3 guarantees:
 * VALIDATE requires honest receipts against the current source identity.
 """
 import json
+import hashlib
+import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -40,7 +43,7 @@ DECISION = {
     "historical_vs_modelling": "historical",
     "unresolved": [],
     "verdict": "RETAIN",
-    "intended_source_modifications": "none",
+    "intended_source_modifications": {},
 }
 
 
@@ -49,6 +52,7 @@ class RunHarness(unittest.TestCase):
 
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp(prefix="capr-run-test-"))
+        self.addCleanup(shutil.rmtree, self.tmp)
         self.runs = self.tmp / "runs"
         self.files = {}
         for domain in ("executable_model", "corpus", "registry", "memo"):
@@ -56,6 +60,7 @@ class RunHarness(unittest.TestCase):
             path.write_text(f"{domain} v1\n", encoding="utf-8")
             self.files[domain] = path
         patches = [
+            mock.patch("artifact_graph.nodes", return_value=()),
             mock.patch.object(ar, "_domain_files",
                               lambda domain, sc: [self.files[domain]]),
             mock.patch.object(ac, "source_identity",
@@ -77,12 +82,36 @@ class RunHarness(unittest.TestCase):
             evidence = None
             if stage == "DECIDE":
                 evidence = decision or DECISION
+            if stage == "SNAPSHOT":
+                evidence = {"no_executable_experiment": "synthetic journal-only test"}
+            if stage == "PROPAGATE":
+                run.begin_propagation({})
+                evidence = {"receipts": [self.receipt(
+                    [sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])]}
             if stage == "VALIDATE":
-                evidence = {"receipts": receipts or [{"label": "pytest",
-                                                      "ok": True}]}
+                evidence = {"receipts": receipts or self.validation_receipts()}
             run.complete_stage(stage, evidence=evidence)
             if stage == last_stage:
                 return
+
+    def receipt(self, argv=None, level=None, lane=None, rc=0):
+        def execute(argv, **kwargs):
+            kwargs["stdout"].write(b"2 passed, 5 skipped\n")
+            for arg in argv:
+                if arg.startswith("--junitxml="):
+                    Path(arg.split("=", 1)[1]).write_text(
+                        '<testsuites><testsuite tests="7" failures="0" errors="0" skipped="5"/></testsuites>')
+            return subprocess.CompletedProcess(argv, rc)
+        with mock.patch.object(ac.subprocess, "run", side_effect=execute):
+            return ac.run_logged(argv or [sys.executable, "-c", "pass"],
+                                 label="test", log_dir=self.tmp / "logs", level=level, lane=lane)
+
+    def validation_receipts(self):
+        return [self.receipt(level="A"), self.receipt(level="B"),
+                self.receipt([sys.executable, "-m", "pytest", "-q",
+                              "--ignore=test_evidence_interface.py"], "C", "serial"),
+                self.receipt([sys.executable, "-m", "pytest", "-q",
+                              "test_evidence_interface.py"], "C", "exclusive")]
 
 
 class JournalLifecycleTests(RunHarness):
@@ -125,6 +154,26 @@ class JournalLifecycleTests(RunHarness):
         with self.assertRaisesRegex(ar.WorkflowError, "--run start"):
             self.load()
 
+    def test_snapshot_stage_requires_real_verified_inputs(self):
+        run = self.start()
+        self.advance_to(run, "PREFLIGHT")
+        with self.assertRaisesRegex(ar.WorkflowError, "real verified snapshot"):
+            run.complete_stage("SNAPSHOT", evidence={})
+        import experiment_snapshot
+        snapshot = experiment_snapshot.create_snapshot(
+            "real-inputs", "synthetic snapshot gate",
+            {"fst": self.files["executable_model"]}, work_root=self.tmp / "experiments")
+        run.complete_stage("SNAPSHOT", evidence={"snapshot_root": str(snapshot.root)})
+
+    def test_experiment_exception_requires_reason_and_cannot_cover_experiments(self):
+        run = self.start()
+        self.advance_to(run, "PREFLIGHT")
+        with self.assertRaisesRegex(ar.WorkflowError, "documented reason"):
+            run.complete_stage("SNAPSHOT", evidence={"no_executable_experiment": True})
+        run.complete_stage("SNAPSHOT", evidence={"no_executable_experiment": "editorial adjudication"})
+        with self.assertRaisesRegex(ar.WorkflowError, "no-experiment exception"):
+            run.complete_stage("INVESTIGATE", evidence={"experiments": [{"ok": True}]})
+
 
 class ResumeAndInvalidationTests(RunHarness):
     """Acceptance test for Milestone 3 (brief section 5)."""
@@ -162,18 +211,52 @@ class ResumeAndInvalidationTests(RunHarness):
 
     def test_propagated_edit_does_not_retroinvalidate_decision(self):
         run = self.start()
-        self.advance_to(run, "PROPAGATE")
-        # Propagation deliberately changes the executable model.
-        self.files["executable_model"].write_text("propagated\n",
-                                                  encoding="utf-8")
+        target = self.files["executable_model"]
+        modifications = {str(target): hashlib.sha256(b"propagated\n").hexdigest()}
+        self.advance_to(run, "DECIDE", decision=dict(DECISION, intended_source_modifications=modifications))
+        run.begin_propagation(modifications)
+        target.write_text("propagated\n", encoding="utf-8")
         self.assertEqual(self.load().refresh_validity(), [])
+        run.complete_stage("PROPAGATE", evidence={"receipts": [
+            self.receipt([sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])]})
+        self.assertEqual(self.load().refresh_validity(), [])
+
+    def test_unexpected_edit_during_propagation_invalidates_evidence(self):
+        run = self.start()
+        self.advance_to(run, "DECIDE")
+        run.begin_propagation({})
+        self.files["executable_model"].write_text("unexpected\n")
+        self.assertEqual(self.load().refresh_validity(), ["INVESTIGATE", "DECIDE"])
+        with self.assertRaises(ar.WorkflowError):
+            run.complete_stage("PROPAGATE")
+
+    def test_defer_blocks_executable_propagation(self):
+        run = self.start()
+        modifications = {str(self.files["executable_model"]): "0" * 64}
+        self.advance_to(run, "DECIDE", decision=dict(
+            DECISION, verdict="DEFER", intended_source_modifications=modifications))
+        with self.assertRaisesRegex(ar.WorkflowError, "DEFER"):
+            run.begin_propagation(modifications)
+
+    def test_defer_without_executable_edits_can_complete_propagation(self):
+        run = self.start()
+        self.advance_to(run, "PROPAGATE", decision=dict(DECISION, verdict="DEFER"))
+        self.assertEqual(run.frontier(), "VALIDATE")
+
+    def test_propagation_checks_must_succeed_and_match_target_hashes(self):
+        run = self.start()
+        self.advance_to(run, "DECIDE")
+        run.begin_propagation({})
+        with self.assertRaisesRegex(ar.WorkflowError, "receipt"):
+            run.complete_stage("PROPAGATE", evidence={"receipts": [self.receipt(rc=1)]})
+        self.assertEqual(run.frontier(), "PROPAGATE")
 
     def test_validate_always_checked_against_current_tree(self):
         run = self.start()
         self.advance_to(run, "VALIDATE")
         self.files["executable_model"].write_text("late edit\n",
                                                   encoding="utf-8")
-        self.assertEqual(self.load().refresh_validity(), ["VALIDATE"])
+        self.assertEqual(self.load().refresh_validity(), ["INVESTIGATE", "DECIDE", "VALIDATE"])
 
     def test_invalidated_stage_reported_as_blocker(self):
         run = self.start()
@@ -248,23 +331,37 @@ class ValidationReceiptTests(RunHarness):
 
     def test_failing_receipt_cannot_be_recorded_as_passed(self):
         run = self._at_validate()
-        with self.assertRaisesRegex(ar.WorkflowError, "failures"):
+        with self.assertRaisesRegex(ar.WorkflowError, "receipt"):
             run.complete_stage("VALIDATE", evidence={"receipts": [
-                {"label": "pytest-strict", "ok": False}]})
+                self.receipt(rc=7)]})
 
     def test_stale_source_identity_rejected(self):
         run = self._at_validate()
-        with self.assertRaisesRegex(ar.WorkflowError, "modified source"):
+        with mock.patch.object(ac, "source_identity", return_value={"identity_sha256": "0" * 64}):
+            stale = self.receipt()
+        with self.assertRaisesRegex(ar.WorkflowError, "stale source"):
             run.complete_stage("VALIDATE", evidence={"receipts": [
-                {"label": "pytest-strict", "ok": True,
-                 "source_identity_sha256": "0" * 64}]})
+                stale]})
 
     def test_matching_receipts_complete_validate(self):
         run = self._at_validate()
-        run.complete_stage("VALIDATE", evidence={"receipts": [
-            {"label": "pytest-strict", "ok": True,
-             "source_identity_sha256": "f" * 64}]})
+        run.complete_stage("VALIDATE", evidence={"receipts": self.validation_receipts()})
         self.assertEqual(run.frontier(), "COMPLETE")
+
+    def test_missing_identity_is_not_a_match(self):
+        with self.assertRaisesRegex(ar.WorkflowError, "incomplete execution receipt"):
+            self._at_validate().complete_stage("VALIDATE", evidence={"receipts": [{"ok": True}]})
+
+    def test_incomplete_strict_validation_is_blocked(self):
+        with self.assertRaisesRegex(ar.WorkflowError, "incomplete strict"):
+            self._at_validate().complete_stage("VALIDATE", evidence={
+                "receipts": self.validation_receipts()[:-1]})
+
+    def test_tampered_receipt_is_blocked(self):
+        receipt = self.receipt()
+        receipt["argv"] = ["fabricated"]
+        with self.assertRaisesRegex(ar.WorkflowError, "persisted record"):
+            self._at_validate().complete_stage("VALIDATE", evidence={"receipts": [receipt]})
 
 
 class JournalMetadataTests(RunHarness):
