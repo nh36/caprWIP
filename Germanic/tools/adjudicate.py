@@ -59,6 +59,25 @@
         verdict, a finalisation preflight does. Prints one PASS / BLOCKED /
         NOT_APPLICABLE line per check and exits nonzero when blocked.
 
+    python3 Germanic/tools/adjudicate.py SC024 --run start|status|advance|decide
+        Durable workflow journal for one adjudication (operational
+        metadata under untracked .capr-work/runs/<SC>/; never a scientific
+        authority). Stages: INSPECT -> PREFLIGHT -> SNAPSHOT -> INVESTIGATE
+        -> DECIDE -> PROPAGATE -> VALIDATE -> COMPLETE.
+          --run start                      begin (or archive a finished) run
+          --run status                     read-only: stage, valid evidence,
+                                           blockers, next permitted command
+          --run advance STAGE [--note T] [--evidence FILE.json]
+                                           complete a stage (VALIDATE needs
+                                           run_logged receipts as evidence)
+          --run decide DECISION.json       record the scientific decision
+                                           (DEFER is legitimate; failing
+                                           required negative controls or
+                                           unacknowledged counterexamples
+                                           cannot be recorded as resolved)
+          --run set-reference COMMIT WHY   record the explicit scientific
+                                           baseline state for this run
+
     python3 Germanic/tools/adjudicate.py SC024 --check
         Validate propagation consistency only (no regeneration): SC
         metadata checks plus a non-mutating freshness check of every
@@ -696,6 +715,51 @@ def main() -> int:
             return 2
         return adjudication_control.preflight_main(
             args[0], operation, as_json=as_json)
+    if (len(args) >= 2 and args[1] == "--run"
+            and re.fullmatch(r"SC\d{3}", args[0])):
+        import adjudication_run
+        sc_id, sub = args[0], args[2:]
+        try:
+            if sub == ["start"]:
+                run = adjudication_run.start(sc_id)
+                print(f"run started: {run.root}")
+                print(run.report())
+                return 0
+            if sub == ["status"]:
+                print(adjudication_run.load(sc_id).report())
+                return 0
+            if sub[:1] == ["advance"] and len(sub) >= 2:
+                note, evidence, rest = "", None, sub[2:]
+                while rest:
+                    if rest[:1] == ["--note"] and len(rest) >= 2:
+                        note, rest = rest[1], rest[2:]
+                    elif rest[:1] == ["--evidence"] and len(rest) >= 2:
+                        evidence = json.loads(
+                            Path(rest[1]).read_text(encoding="utf-8"))
+                        rest = rest[2:]
+                    else:
+                        print(__doc__.strip(), file=sys.stderr)
+                        return 2
+                run = adjudication_run.load(sc_id)
+                run.complete_stage(sub[1], note=note, evidence=evidence)
+                print(run.report())
+                return 0
+            if sub[:1] == ["decide"] and len(sub) == 2:
+                run = adjudication_run.load(sc_id)
+                decision = json.loads(Path(sub[1]).read_text(encoding="utf-8"))
+                run.complete_stage("DECIDE", evidence=decision)
+                print(run.report())
+                return 0
+            if sub[:1] == ["set-reference"] and len(sub) == 3:
+                run = adjudication_run.load(sc_id)
+                adjudication_run.set_scientific_reference(run, sub[1], sub[2])
+                print(run.report())
+                return 0
+        except adjudication_run.WorkflowError as exc:
+            print(f"RUN BLOCKED: {exc}", file=sys.stderr)
+            return 1
+        print(__doc__.strip(), file=sys.stderr)
+        return 2
     if (len(args) != 2
             or args[1] not in ("--prepare", "--check", "--finalize",
                                "--evidence", "--refresh")
