@@ -23,6 +23,8 @@ import tempfile
 import time
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import patch
 
 import pytest
 
@@ -212,6 +214,43 @@ class ScEvidenceWorkerTests(unittest.TestCase):
             tmp.flush()
             size, _ = sc_evidence.validate_bin(Path(tmp.name), time.time() - 5)
             self.assertEqual(size, 4096)
+
+    def test_census_batches_both_stages_and_preserves_row_evidence(self):
+        rows = [
+            dict(concept=concept, proto=proto, proto_norm=form, fst_input=form,
+                 counterpart="attested")
+            for concept, proto, form in [
+                ("first", "*a", "*ᶠ*a"), ("rejected", "*x", "*ᶠ*x"),
+                ("duplicate", "*a", "*ᶠ*a"),
+            ]
+        ]
+        runtime = SimpleNamespace(
+            bin_dir=Path("/nonexistent"), fsts_dir=Path("/nonexistent/fsts"),
+            corpus_tsv=Path("/nonexistent/corpus.tsv"))
+        before = [["*a", "*b"], [], ["*a", "*b"]]
+        after = [["*a", "*c"], [], ["*a", "*c"]]
+        with patch.object(sys, "argv", [
+                "sc_evidence.py", "PNWGmcLongELowering",
+                "--witnesses", "first; rejected; duplicate; missing"]), \
+                patch.object(sc_evidence, "layout", return_value=runtime), \
+                patch.object(sc_evidence, "sha256_of", return_value="hash"), \
+                patch.object(sc_evidence, "validate_bin", return_value=(4096, 0)), \
+                patch.object(sc_evidence, "load_rows", return_value=rows), \
+                patch.object(sc_evidence, "batch_apply_down",
+                             side_effect=[before, after]) as batch, \
+                contextlib.redirect_stdout(io.StringIO()) as output:
+            self.assertEqual(sc_evidence.main(), 0)
+        index, _, target = sc_evidence.find_stage("PNWGmcLongELowering")
+        self.assertEqual(
+            batch.call_args_list,
+            [unittest.mock.call(runtime.bin_dir / filename, [r["fst_input"] for r in rows])
+             for filename in (sc_evidence.STAGES[index - 1][1], target)])
+        text = output.getvalue()
+        self.assertIn("2 of 3 selected corpus rows changed", text)
+        self.assertIn("[CHANGED] first\t*a\t*a | *b\t*a | *c\tattested: attested", text)
+        self.assertIn("[CHANGED] duplicate\t*a\t*a | *b\t*a | *c\tattested: attested", text)
+        self.assertIn("[unchanged] rejected\t*x\t(no output)\t(no output)", text)
+        self.assertIn("[NOT IN SELECTED CORPUS] missing", text)
 
 
 def _docker_available():

@@ -33,7 +33,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import oe_pipeline  # noqa: E402
 from capr_runtime import MIN_BIN_BYTES, layout, sha256_of  # noqa: E402
-from oe_pipeline import apply_down, display_form, evaluation_input, load_rows  # noqa: E402
+from oe_pipeline import display_form, evaluation_input, load_rows  # noqa: E402
+from sound_change_order_sensitivity import batch_apply_down  # noqa: E402
 
 # Stage truth comes from the shared executable model (oe_pipeline), which
 # uses canonical Foma identifiers throughout — no alias table.
@@ -128,9 +129,10 @@ def main():
     witnesses = {w.strip() for w in args.witnesses.split(";") if w.strip()}
     firings = []
     witness_lines = []
-    for row in rows:
-        before = apply_down(prev_bin, evaluation_input(row))
-        after = apply_down(target_bin, evaluation_input(row))
+    forms = [evaluation_input(row) for row in rows]
+    before_outputs = batch_apply_down(prev_bin, forms)
+    after_outputs = batch_apply_down(target_bin, forms)
+    for row, before, after in zip(rows, before_outputs, after_outputs):
         line = (f"{row['concept']}\t{row['proto']}\t"
                 f"{' | '.join(display_form(form) for form in before) or '(no output)'}\t"
                 f"{' | '.join(display_form(form) for form in after) or '(no output)'}\t"
