@@ -96,37 +96,55 @@ incremental comparisons cannot detect cumulative drift from an older
 accepted result.
 
 **B. Incremental regression** — `Germanic/tools/incremental_regression.py`
-compares the working model against its immediate predecessor:
+compares consecutive versions of the **committed canonical full-trace
+report** (`Germanic/docs/debug_snapshots/oe_full_trace_report.txt`), which
+Git already stores for every model state. The comparison therefore
+retrieves both sides with `git show` and performs **zero Foma compilations
+and zero lookups**; it never re-evaluates a historical model to
+reconstruct a report Git already holds. It runs automatically during
+Level C (lane 1,
+`test_incremental_regression.py::test_level_c_runs_the_consecutive_version_comparison_automatically`);
+a standalone command remains for debugging:
 
 ```sh
-python3 Germanic/tools/incremental_regression.py           # compare + report
-python3 Germanic/tools/incremental_regression.py --json out.json
+python3 Germanic/tools/incremental_regression.py             # automatic states
+python3 Germanic/tools/incremental_regression.py --worktree  # explicit worktree
+python3 Germanic/tools/incremental_regression.py --json out.json --fail-on-change
 ```
 
-Reference resolution: a dirty working tree (grammar, corpus or context
-inputs modified) compares **worktree vs HEAD**; a clean tree compares
+State resolution: staged executable inputs differing from `HEAD` compare
+**staged vs HEAD** (unstaged work is explicitly excluded; `--worktree`
+compares the working tree and may refresh a stale worktree report through
+the artifact-graph `runtime_bins`/`full_trace` nodes — the canonical
+generator, never a parallel evaluation path); a clean index compares
 **HEAD vs HEAD^1** (first parent; merge commits use the first parent and
 say so; an unavailable parent is an explicit error, never a silent pass).
-Both compared states are identified in the report by commit/worktree
-label and content digests.
+Each report is validated against the source files of its *own* version
+(Git blobs, via the shared provenance core in
+`Germanic/tools/oe_trace_parse.py`); a missing, stale or non-canonical
+report on either side is an explicit failure.
 
-The comparison reports changes in final Old English forms, intermediate
-stage outputs (per snapshot bin), rule order/composition membership,
-corpus membership and inputs. Differences are **reported for
-adjudication**, not automatically rejected: an intentional model change
-legitimately alters outputs, and the immediate parent is a reference for
-identifying change, not a guarantee of correctness.
+The comparison covers every named stage of every entry (identity:
+concept + PROTO + EXPECTED): intermediate changes with identical final
+outputs, first divergence/reconvergence, final outputs, stage
+order/membership, corpus membership and contextual inputs, and
+firing-population changes. Rejection states and raw context-marked forms
+come from the report's `RAW STAGE FIDELITY` section; older reports
+without it are compared display-level with that limitation stated, never
+silently reconstructed. Changed dependencies are classified by executable
+consequence (recompilation / renewed evaluation / presentation-only /
+none), covering the grammar, corpus, context metadata and the evaluation
+tools (`oe_pipeline.py`, `generate_oe_sandbox.py`,
+`oe_full_trace_report.py`, batch-lookup helpers), so a change to
+evaluation code is never classified as irrelevant merely because
+`germanic.txt` is unchanged. Differences are **reported for
+adjudication**, not automatically rejected. Diagnostics are written to
+`.ci-results/incremental_regression.txt` and `.json` (stable untracked
+names, replaced each run).
 
-Compiled models are reused through a content-addressed cache
-(`.capr_compile_cache/` at the repository root, gitignored). The cache key
-is a digest over the Foma source, the corpus, the evaluation-context
-inputs (`entry_context_metadata.tsv`, `oe_input_context.py`), the live
-build tools (`generate_oe_sandbox.py`, `oe_pipeline.py`,
-`capr_runtime.py`) and the backend image id (which pins the Foma build
-and execution environment) — never a bare commit id, which does not
-uniquely describe those inputs.
-If current and reference keys are identical, no fresh Foma execution is
-performed and the report states that the executable inputs are identical.
+The compile cache (`.capr_compile_cache/`, gitignored) now serves
+historical replay only; the former evaluated-results cache was removed
+because Git itself is the content-addressed store for committed reports.
 
 **C. Historical reproducibility** — explicit replay of the receipts in
 §1.1:

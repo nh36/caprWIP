@@ -128,22 +128,47 @@ fingerprints and frozen baselines. Protected baselines remain independent
 assertions precisely because consecutive comparisons cannot detect cumulative
 drift from an older accepted result.
 
-**B. Incremental regression** — compare the current model with its immediate
-predecessor only (uncommitted executable inputs vs `HEAD`, otherwise `HEAD`
-vs its first parent; merge commits and parentless states are reported
-explicitly):
+**B. Incremental regression** — automatic comparison of consecutive
+canonical full-trace reports. The authoritative record of the complete
+derivations (`Germanic/docs/debug_snapshots/oe_full_trace_report.txt`) is
+committed per model state and every prior version is stored in Git, so the
+comparison retrieves both sides with `git show` and requires **zero Foma
+compilations and zero lookups**. States are resolved automatically: staged
+executable inputs differing from `HEAD` compare **staged vs HEAD** (unstaged
+work is excluded; `--worktree` compares the working tree explicitly),
+otherwise **HEAD vs HEAD^1** (merges use the first parent and say so;
+parentless states are explicit errors). Each report is validated against
+the sources of its *own* version (Git blobs, via the shared provenance core
+in `oe_trace_parse.py`); a missing, stale or non-canonical report is an
+explicit failure, never a silent skip.
+
+The comparison runs **automatically during Level C**:
+`test_incremental_regression.py::test_level_c_runs_the_consecutive_version_comparison_automatically`
+executes it in the ordinary (lane 1) suite, so a green Level C establishes
+that the consecutive-version comparison completed. It examines every named
+stage of every lexical entry (identity: concept + PROTO + EXPECTED):
+intermediate changes with identical final outputs, first divergence and
+later convergence, final outputs, stage order/membership, corpus and
+input-context changes, and firing-population changes, with rejection states
+and raw context-marked forms taken from the report's RAW STAGE FIDELITY
+section (older reports without it are compared display-level with the
+limitation stated). Changed dependencies are classified by executable
+consequence (recompilation needed / renewed evaluation / presentation-only
+/ none), covering the grammar, corpus, context metadata and the evaluation
+tools (`oe_pipeline.py`, sandbox generation, trace generation, batch
+lookup helpers). Diagnostics go to `.ci-results/incremental_regression.txt`
+and `.json` (stable untracked filenames, replaced each run). Differences
+are documented and adjudicated, not automatically rejected.
+
+A standalone command remains available for debugging:
 
 ```sh
-python3 Germanic/tools/incremental_regression.py [--json out.json] [--fail-on-change]
+python3 Germanic/tools/incremental_regression.py [--worktree] [--reference REF] [--fail-on-change]
 ```
 
-The report covers final OE outputs, every named-stage snapshot, rule order,
-corpus membership/inputs and firing populations. Differences are documented
-and adjudicated, not automatically rejected. Builds and evaluations are
-reused through the content-addressed cache (`.capr_compile_cache/`,
-untracked; keyed by grammar, corpus, context metadata, build tools and image
-— never by a bare commit id), so identical executable inputs trigger no
-fresh Foma execution at all.
+A stale *working-tree* report under `--worktree` is regenerated through the
+existing artifact-graph nodes (`runtime_bins`, `full_trace`) — the canonical
+generator, never an independent evaluation path.
 
 **C. Historical reproducibility** — live reconstruction of commit-pinned
 historical models, run only when a historical claim is reconsidered, replay
