@@ -138,7 +138,7 @@ class WetherInputAdoptionTests(unittest.TestCase):
         paths.extend(path for path in (AUDITS / "sc015-hill-investigation").rglob("*")
                      if path.is_file())
         for path in paths:
-            with self.subTest(path=path):
+            with self.subTest(path=str(path)):  # str: xdist must serialize subtest params
                 self.assertEqual(released(path), committed(path))
         registry = released_table(ROOT / "Germanic/docs/sound_changes/registry/sc_registry.tsv")
         sc015 = next(row for row in registry if row["sc_id"] == "SC015")
