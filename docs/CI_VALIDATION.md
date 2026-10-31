@@ -117,6 +117,19 @@ the full strict suite runs once against the final candidate tree, and again
 only if repairs change what was certified. Record the exact tested commit.
 A portable GitHub Actions pass is never equivalent to this gate.
 
+For source-bound Level C receipts, use `run_logged(..., level="C",
+lane="serial")` for the full non-exclusive command above, then
+`lane="exclusive"` for the evidence suite. The existing optional parallel
+route uses `independent`, `runtime`, then `exclusive`. The runner records
+the actual argv, adds unique JUnit output and explicit full validation,
+and rejects hidden `PYTEST_ADDOPTS`. It captures before/after source
+identities, original exit codes, full logs and report hashes.
+
+The initial controller delivery at `49fb09eb` contained 91 distinct test
+methods across its four new test files, not 97; one snapshot-test method
+name was duplicated. The corrective pass removes that duplicate and adds
+focused coverage for the concrete controller defects.
+
 For adjudication work, the execution controls described in
 `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` ("Execution controls")
 apply across all three levels: run validators via

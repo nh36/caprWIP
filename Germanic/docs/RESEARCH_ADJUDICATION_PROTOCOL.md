@@ -248,9 +248,20 @@ drives the stages INSPECT → PREFLIGHT → SNAPSHOT → INVESTIGATE → DECIDE
 evidence while inputs are unchanged. Invalidation is selective and
 derived from the existing v2 full-trace provenance contract: a memo
 edit invalidates only PREFLIGHT; an FST or corpus edit invalidates
-INVESTIGATE/DECIDE; the deliberate PROPAGATE edit does not
-retro-invalidate the decision it implements; VALIDATE is always checked
+INVESTIGATE/DECIDE. Before edits, `--run begin-propagation CHANGES.json`
+records the decision's SOURCE paths and intended SHA256 values, together
+with the pre-change state. Only those controlled edits preserve the
+pre-decision evidence. Complete PROPAGATE after a successful receipted
+`SCNNN --finalize` and matching target hashes, never before editing.
+Unexpected edits remain unsanctioned; DEFER cannot authorise executable
+or selected-input changes. VALIDATE is always checked
 against the exact current tree.
+
+SNAPSHOT requires `{"snapshot_root": "..."}` pointing to verified input
+copies, or `{"no_executable_experiment": "reason"}` when no new executable
+counterfactual is required. `Snapshot.compile_isolated` routes pinned
+source and recipe inputs to the existing isolated compiler, with separate
+container-private source and output directories.
 
 **The scientific gate is in DECIDE.** A decision record must supply the
 distinctions of §5 and §10 (phenomenon, conditioning, implementation,
@@ -264,8 +275,22 @@ as resolved, regardless of unchanged corpus outputs.
 **Honest execution evidence.** Run validators through
 `adjudication_control.run_logged` (argument arrays only, never shell
 strings): each command gets its own receipt with the true exit code and
-full logs, so downstream filtering cannot conceal a failure. VALIDATE
-accepts only all-ok receipts matching the current source identity.
+full logs under unique filenames, so downstream filtering or repeated
+labels cannot conceal or overwrite evidence. Each persisted receipt
+records source identities before and after execution and log hashes.
+VALIDATE rejects missing, altered, failing or stale receipts and requires
+Levels A/B plus the complete strict Level C lanes, including the exclusive
+evidence suite. Level C receipts include a hashed JUnit report and test
+totals; portable, collection-only and narrowed test runs cannot certify it.
+
+Shared-runtime mutation uses a kernel-backed Unix advisory lock, including
+standalone refresh, evidence, finalisation and direct artifact-graph refresh.
+Lock metadata provides diagnostics but does not establish ownership; the
+kernel releases ownership on exit. Isolated compilation and read-only work
+do not acquire this lock. Accepted unchanged legacy memoranda retain their
+existing format compatibility; new or edited memoranda require the template.
+Baseline approval filenames alone never establish approval: preflight
+rechecks the existing transition and legacy-protection validators.
 
 **Budgets and failure limits.** `adjudication_run.record_operation`
 journals expensive operations against conservative per-run budgets
