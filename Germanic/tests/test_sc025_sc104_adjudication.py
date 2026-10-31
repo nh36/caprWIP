@@ -50,10 +50,10 @@ from __future__ import annotations
 import csv
 import importlib.util
 import re
-import shutil
 import unittest
 import pytest
 from pathlib import Path
+from conftest import runtime_stage_batch
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 GERMANIC = REPO_ROOT / "Germanic"
@@ -69,15 +69,8 @@ READER = SC_DIR / "reader_facing"
 TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
-RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
-                 and shutil.which("flookup") is not None)
-_runtime_available = unittest.skipUnless(
-    RUNTIME_BUILT,
-    "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
-    "and flookup on PATH")
-
 def requires_runtime(test):
-    return pytest.mark.runtime(_runtime_available(test))
+    return pytest.mark.runtime(test)
 
 # The complete live firing census established by the adjudication.
 SC025_WITNESSES = {"month": "mōnaþ", "spoon": "spōn"}
@@ -129,8 +122,8 @@ class NasalizedLowVowelAdjudicationTests(unittest.TestCase):
         return match.group(1)
 
     def stage(self, name, form):
-        return self.trace.run_stage(
-            BIN_DIR, f"old_english_sandbox_after_{name}.bin", form)
+        return runtime_stage_batch(
+            f"old_english_sandbox_after_{name}.bin", [form])[0]
 
     # ------------------------------------------------------------------
     # The nasalized low vowel exists as an explicit segment

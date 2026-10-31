@@ -6,10 +6,10 @@ import csv
 import importlib.util
 import io
 import re
-import shutil
 import unittest
 import pytest
 from pathlib import Path
+from conftest import runtime_stage_batch
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 GERMANIC = REPO_ROOT / "Germanic"
@@ -30,19 +30,8 @@ TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
 
-# Live-probe availability: these adjudication files mix committed-evidence
-# assertions (always run) with live flookup probes against the untracked
-# sandbox bins built by `adjudicate --evidence`. The probes are skipped when
-# the local runtime build is absent (e.g. clean CI checkout).
-RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
-                 and shutil.which("flookup") is not None)
-_runtime_available = unittest.skipUnless(
-    RUNTIME_BUILT,
-    "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
-    "and flookup on PATH")
-
 def requires_runtime(test):
-    return pytest.mark.runtime(_runtime_available(test))
+    return pytest.mark.runtime(test)
 
 
 def load_trace_tool():
@@ -66,9 +55,8 @@ class SC021AdjudicationTests(unittest.TestCase):
         cls.trace = load_trace_tool()
 
     def stage(self, name, form):
-        return self.trace.run_stage(
-            BIN_DIR, f"old_english_sandbox_after_{name}.bin", form
-        )
+        return runtime_stage_batch(
+            f"old_english_sandbox_after_{name}.bin", [form])[0]
 
     def test_sc021_is_retired_not_silently_repurposed(self):
         self.assertNotRegex(

@@ -217,6 +217,23 @@ def test_live_probe_decorators_declare_runtime_capability(module_name):
 
     marked = module.requires_runtime(test_probe)
     assert any(mark.name == "runtime" for mark in marked.pytestmark)
+    assert not getattr(marked, "__unittest_skip__", False)
+
+
+def test_live_stage_batch_uses_runner_and_fails_loudly_when_unavailable():
+    import conftest
+    from types import SimpleNamespace
+    from subprocess import CalledProcessError
+    with patch.object(conftest, "run_in_runner", return_value=SimpleNamespace(
+            stdout='[["a", "b"], ["+?"]]')) as runner:
+        assert conftest.runtime_stage_batch("stage.bin", ["a", "rejected"]) == [
+            ["a", "b"], ["+?"]]
+        command = runner.call_args.args[0]
+        assert "batch_apply_down" in command and "stage.bin" in command
+        assert runner.call_args.kwargs["check"] is True
+    with patch.object(conftest, "run_in_runner", side_effect=CalledProcessError(1, "docker")):
+        with pytest.raises(CalledProcessError):
+            conftest.runtime_stage_batch("stage.bin", ["a"])
 
 
 def test_unknown_adjudication_still_fails_before_runtime_validation():

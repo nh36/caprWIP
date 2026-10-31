@@ -1,6 +1,8 @@
 """Explicit test capabilities; ordinary local invocations remain strict."""
 from functools import partial
+import json
 from pathlib import Path
+import shlex
 import sys
 
 import pytest
@@ -8,6 +10,26 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import pgmc_reconstruction_survey as survey
 import pgmc_lexical_integration as integration
+from capr_runtime import run_in_runner
+
+
+def runtime_stage_batch(bin_name, forms):
+    """Read one stage for all probes in the provisioned backend, never host Foma."""
+    script = f"""
+import json, sys
+from pathlib import Path
+sys.path.insert(0, "tools")
+from sc_evidence import validate_bin
+from sound_change_order_sensitivity import batch_apply_down
+path = Path({bin_name!r})
+validate_bin(path, None)
+print(json.dumps([outputs or ["+?"] for outputs in
+                 batch_apply_down(path, {forms!r})]))
+"""
+    result = run_in_runner(
+        f"python3 -c {shlex.quote(script)}",
+        text=True, capture_output=True, check=True, timeout=180)
+    return json.loads(result.stdout)
 
 
 def pytest_addoption(parser):

@@ -28,10 +28,10 @@ from __future__ import annotations
 import csv
 import importlib.util
 import re
-import shutil
 import unittest
 import pytest
 from pathlib import Path
+from conftest import runtime_stage_batch
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 GERMANIC = REPO_ROOT / "Germanic"
@@ -50,19 +50,8 @@ TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
 
-# Live-probe availability: these adjudication files mix committed-evidence
-# assertions (always run) with live flookup probes against the untracked
-# sandbox bins built by `adjudicate --evidence`. The probes are skipped when
-# the local runtime build is absent (e.g. clean CI checkout).
-RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
-                 and shutil.which("flookup") is not None)
-_runtime_available = unittest.skipUnless(
-    RUNTIME_BUILT,
-    "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
-    "and flookup on PATH")
-
 def requires_runtime(test):
-    return pytest.mark.runtime(_runtime_available(test))
+    return pytest.mark.runtime(test)
 
 # The adjudicated firing population: weak-noun citation stems in *-ōn-.
 EXPECTED_FIRING_CONCEPTS = {
@@ -110,9 +99,8 @@ class SC023AdjudicationTests(unittest.TestCase):
             }
 
     def stage(self, name, form):
-        return self.trace.run_stage(
-            BIN_DIR, f"old_english_sandbox_after_{name}.bin", form
-        )
+        return runtime_stage_batch(
+            f"old_english_sandbox_after_{name}.bin", [form])[0]
 
     # ------------------------------------------------------------------
     # Executable rule stability
@@ -159,10 +147,13 @@ class SC023AdjudicationTests(unittest.TestCase):
         # Every possible live firing must involve a proto in final -n;
         # censusing only those rows keeps the test fast while remaining
         # exhaustive for this rule (a firing requires a final *ōn match).
-        for concept, row in sorted(candidates.items()):
-            form = row["proto"].lstrip("*")
-            before = self.stage("pnwgmc_mn_dissimilation", form)
-            after = self.stage("pnwgmc_n_stem_n_loss", form)
+        candidates = sorted(candidates.items())
+        forms = [row["proto"].lstrip("*") for _, row in candidates]
+        before_outputs = runtime_stage_batch(
+            "old_english_sandbox_after_pnwgmc_mn_dissimilation.bin", forms)
+        after_outputs = runtime_stage_batch(
+            "old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin", forms)
+        for (concept, row), before, after in zip(candidates, before_outputs, after_outputs):
             if before != after:
                 fired[concept] = (before[0], after[0])
         self.assertTrue(

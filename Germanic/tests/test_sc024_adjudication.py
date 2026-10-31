@@ -45,10 +45,10 @@ from __future__ import annotations
 import csv
 import importlib.util
 import re
-import shutil
 import unittest
 import pytest
 from pathlib import Path
+from conftest import runtime_stage_batch
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 GERMANIC = REPO_ROOT / "Germanic"
@@ -70,19 +70,8 @@ TRACE_TOOL = GERMANIC / "tools" / "oe_full_trace_report.py"
 BIN_DIR = REPO_ROOT / "backend"
 
 
-# Live-probe availability: these adjudication files mix committed-evidence
-# assertions (always run) with live flookup probes against the untracked
-# sandbox bins built by `adjudicate --evidence`. The probes are skipped when
-# the local runtime build is absent (e.g. clean CI checkout).
-RUNTIME_BUILT = ((BIN_DIR / "old_english.bin").is_file()
-                 and shutil.which("flookup") is not None)
-_runtime_available = unittest.skipUnless(
-    RUNTIME_BUILT,
-    "live runtime probe: needs local sandbox bins (adjudicate --evidence) "
-    "and flookup on PATH")
-
 def requires_runtime(test):
-    return pytest.mark.runtime(_runtime_available(test))
+    return pytest.mark.runtime(test)
 
 # Change A census: 13 stressed oral roots + the two nasal-branch lexemes,
 # which historically DID undergo *ē₁ > *ā (R/T p. 11: *mānōþ-, *spānuz),
@@ -140,9 +129,8 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             }
 
     def stage(self, name, form):
-        return self.trace.run_stage(
-            BIN_DIR, f"old_english_sandbox_after_{name}.bin", form
-        )
+        return runtime_stage_batch(
+            f"old_english_sandbox_after_{name}.bin", [form])[0]
 
     def across_sc024(self, form):
         before = self.stage("pnwgmc_a_to_u_before_m", form)
@@ -270,8 +258,13 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
             concept: row for concept, row in self.baseline.items()
             if ("ē" in row["proto"] or "ḗ" in row["proto"])
         }
-        for concept, row in sorted(candidates.items()):
-            before, after = self.across_sc024(row["proto"].lstrip("*"))
+        candidates = sorted(candidates.items())
+        forms = [row["proto"].lstrip("*") for _, row in candidates]
+        before_outputs = runtime_stage_batch(
+            "old_english_sandbox_after_pnwgmc_a_to_u_before_m.bin", forms)
+        after_outputs = runtime_stage_batch(
+            "old_english_sandbox_after_pnwgmc_long_e_lowering.bin", forms)
+        for (concept, row), before, after in zip(candidates, before_outputs, after_outputs):
             if before != after:
                 fired.add(concept)
         self.assertEqual(
@@ -370,11 +363,14 @@ class E1ComplexAdjudicationTests(unittest.TestCase):
         fired = []
         # *ā at position 25 can only come from SC024 (*ē₁) or be inherited
         # (*ā did not exist in PGmc); restrict the census accordingly
-        for concept, row in sorted(self.baseline.items()):
-            proto = row["proto"]
-            if not ("ē" in proto or "ḗ" in proto or "ā" in proto):
-                continue
-            before, after = self.across_w_insertion(proto.lstrip("*"))
+        candidates = [(concept, row) for concept, row in sorted(self.baseline.items())
+                      if any(vowel in row["proto"] for vowel in ("ē", "ḗ", "ā"))]
+        forms = [row["proto"].lstrip("*") for _, row in candidates]
+        before_outputs = runtime_stage_batch(
+            "old_english_sandbox_after_eaf_nasal_spirant_loss.bin", forms)
+        after_outputs = runtime_stage_batch(
+            "old_english_sandbox_after_eaf_hiatus_w_insertion.bin", forms)
+        for (concept, row), before, after in zip(candidates, before_outputs, after_outputs):
             if before != after:
                 fired.append(concept)
         self.assertEqual(fired, ["sow"],
