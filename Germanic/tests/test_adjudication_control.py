@@ -144,6 +144,25 @@ class PreflightGateTests(unittest.TestCase):
         blocked = [c for c in report.checks if c["status"] == "BLOCKED"]
         self.assertEqual(blocked, [], blocked)
         self.assertEqual(report.status, "PASS")
+
+    def test_accepted_sc112_legacy_memo_passes(self):
+        report = ac.preflight("SC112", "finalize", probe_runner=False)
+        self.assertFalse(report.blocked, report.render())
+
+    def test_new_or_edited_memo_still_requires_template(self):
+        self._patch_registry(synthetic_registry(self.tmpdir, memo_text=VALID_MEMO.replace("## Diagnosis\n", "")))
+        report = ac.preflight("SC900", "finalize", probe_runner=False)
+        self.assertTrue(any(c["name"] == "memo_sections" and c["status"] == "BLOCKED"
+                            for c in report.checks))
+
+    def test_approval_filename_does_not_authorise_baseline_edit(self):
+        self._patch_registry(synthetic_registry(self.tmpdir))
+        rel = str(adjudicate.BASELINE_SUMMARY.relative_to(REPO_ROOT))
+        with mock.patch.object(ac, "worktree_changes", return_value=[
+                rel, str(Path(rel).with_name("approved_bogus_migration.json"))]):
+            report = ac.preflight("SC900", "finalize", probe_runner=False)
+        self.assertTrue(any(c["name"] == "protected_baselines" and c["status"] == "BLOCKED"
+                            for c in report.checks))
         self.assertTrue(report.source["head_commit"])
         self.assertTrue(report.source["identity_sha256"])
 
@@ -277,6 +296,26 @@ class RunLoggedTests(unittest.TestCase):
         saved = json.loads(Path(receipt["receipt_path"]).read_text())
         self.assertEqual(saved["returncode"], 0)
 
+    def test_repeated_labels_preserve_unique_logs_and_receipts(self):
+        first = ac.run_logged([sys.executable, "-c", "print('first')"],
+                              label="repeat", log_dir=self.log_dir)
+        second = ac.run_logged([sys.executable, "-c", "print('second')"],
+                               label="repeat", log_dir=self.log_dir)
+        self.assertNotEqual(first["receipt_path"], second["receipt_path"])
+        self.assertIn("first", Path(first["stdout_log"]).read_text())
+        ac.verify_receipt(first)
+        ac.verify_receipt(second)
+
+    def test_source_changes_during_execution_are_detected(self):
+        identities = [{"identity_sha256": "a" * 64}, {"identity_sha256": "b" * 64}]
+        with mock.patch.object(ac, "source_identity", side_effect=identities):
+            receipt = ac.run_logged([sys.executable, "-c", "pass"],
+                                    label="changes", log_dir=self.log_dir)
+        self.assertTrue(receipt["source_changed"])
+        self.assertFalse(receipt["ok"])
+        with self.assertRaisesRegex(ValueError, "source identity changed"):
+            ac.verify_receipt(receipt)
+
     def test_failure_cannot_be_concealed_by_output(self):
         """A validator that prints success-looking text but exits nonzero is
         recorded as failed, with the full log preserved (acceptance test for
@@ -357,16 +396,46 @@ class RuntimeLockTests(unittest.TestCase):
             record = json.loads(self.lock_path.read_text())
             self.assertEqual(record["pid"], os.getpid())
             self.assertEqual(record["operation"], "evidence SC900")
-        self.assertFalse(self.lock_path.exists())
+        self.assertIsNone(ac.runtime_lock_holder())
 
     def test_live_foreign_holder_blocks(self):
-        with mock.patch.object(
-                ac, "runtime_lock_holder",
-                return_value={"pid": 4242, "operation": "finalize SC001",
-                              "acquired_at": "t"}):
+        with ac.runtime_lock("finalize SC001"):
             with self.assertRaises(RuntimeError) as ctx:
                 ac.runtime_lock("evidence SC900").__enter__()
-        self.assertIn("4242", str(ctx.exception))
+        self.assertIn("finalize SC001", str(ctx.exception))
+
+    def test_simultaneous_cross_process_acquisition(self):
+        code = (
+            "import sys,time; from pathlib import Path; "
+            "sys.path.insert(0,sys.argv[1]); import adjudication_control as ac; "
+            "ac.RUNTIME_LOCK=Path(sys.argv[2]); sys.stdin.readline();\n"
+            "try:\n"
+            " with ac.runtime_lock('child'):\n"
+            "  print('ACQUIRED',flush=True); time.sleep(1)\n"
+            "except RuntimeError:\n"
+            " print('BLOCKED',flush=True); sys.exit(3)\n")
+        children = [subprocess.Popen(
+            [sys.executable, "-c", code, str(TOOLS), str(self.lock_path)],
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            for _ in range(2)]
+        try:
+            for child in children:
+                child.stdin.write("go\n")
+                child.stdin.flush()
+            outputs = [child.communicate(timeout=10) for child in children]
+            self.assertEqual(sorted(child.returncode for child in children), [0, 3])
+            self.assertEqual(sorted(out.strip() for out, _ in outputs), ["ACQUIRED", "BLOCKED"])
+        finally:
+            for child in children:
+                if child.poll() is None:
+                    child.terminate()
+                    child.wait()
+
+    def test_standalone_refresh_uses_runtime_lock_without_nesting(self):
+        with ac.runtime_lock("other"):
+            with mock.patch.object(adjudicate, "_refresh_unlocked") as refresh:
+                self.assertEqual(adjudicate.refresh(), 1)
+                refresh.assert_not_called()
 
     def test_stale_dead_pid_lock_ignored(self):
         self.lock_path.parent.mkdir(parents=True, exist_ok=True)

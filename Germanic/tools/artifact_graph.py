@@ -638,6 +638,17 @@ _MAX_FIXED_POINT_PASSES = 4
 
 def refresh(printer: Callable[[str], None] = print,
             force: frozenset = frozenset(), *, mode: str = "full") -> list:
+    """Protect direct graph refresh callers as well as the adjudication CLI."""
+    from adjudication_control import runtime_lock
+    try:
+        with runtime_lock("artifact graph refresh"):
+            return _refresh_unlocked(printer, force, mode=mode)
+    except RuntimeError as exc:
+        raise GraphError(str(exc)) from exc
+
+
+def _refresh_unlocked(printer: Callable[[str], None] = print,
+                     force: frozenset = frozenset(), *, mode: str = "full") -> list:
     """Bring every node up to date; returns the list of changes made.
 
     Runtime nodes named in ``force`` are rebuilt unconditionally (used by

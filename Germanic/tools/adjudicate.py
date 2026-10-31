@@ -75,6 +75,9 @@
                                            required negative controls or
                                            unacknowledged counterexamples
                                            cannot be recorded as resolved)
+          --run begin-propagation CHANGES.json
+                                           before SOURCE edits, pin the decision's
+                                           path-to-target-SHA256 modifications
           --run set-reference COMMIT WHY   record the explicit scientific
                                            baseline state for this run
 
@@ -297,10 +300,20 @@ def next_sc():
 
 
 def refresh(*, mode: str = "full") -> int:
+    """Serialize standalone refreshes of the shared runtime."""
+    try:
+        with adjudication_control.runtime_lock("refresh"):
+            return _refresh_unlocked(mode=mode)
+    except RuntimeError as exc:
+        print(f"REFRESH FAILED: {exc}", file=sys.stderr)
+        return 1
+
+
+def _refresh_unlocked(*, mode: str = "full") -> int:
     """Control-plane refresh: drive the ONE artifact graph to a clean state."""
     print("== control-plane refresh (artifact graph) ==")
     try:
-        artifact_graph.refresh(mode=mode)
+        artifact_graph._refresh_unlocked(mode=mode)
     except artifact_graph.GraphError as exc:
         print(f"REFRESH FAILED: {exc}", file=sys.stderr)
         return 1
@@ -371,7 +384,7 @@ def evidence(sc_id) -> int:
     try:
         with adjudication_control.runtime_lock(f"evidence {sc_id}"):
             try:
-                artifact_graph.refresh(force=frozenset({"runtime_bins"}))
+                artifact_graph._refresh_unlocked(force=frozenset({"runtime_bins"}))
             except artifact_graph.GraphError as exc:
                 print(f"EVIDENCE FAILED: {exc}", file=sys.stderr)
                 return 1
@@ -485,14 +498,14 @@ def finalize(sc_id) -> int:
         return 1
     try:
         with adjudication_control.runtime_lock(f"finalize {sc_id}"):
-            rc = refresh()
+            rc = _refresh_unlocked()
+            if rc:
+                return rc
+            print("== propagation checks ==")
+            return check(sc_id)
     except RuntimeError as exc:
         print(f"FINALIZE FAILED: {exc}", file=sys.stderr)
         return 1
-    if rc:
-        return rc
-    print("== propagation checks ==")
-    return check(sc_id)
 
 
 def check_memo(sc_id, *, row=None) -> list[str]:
@@ -749,6 +762,11 @@ def main() -> int:
                 run = adjudication_run.load(sc_id)
                 decision = json.loads(Path(sub[1]).read_text(encoding="utf-8"))
                 run.complete_stage("DECIDE", evidence=decision)
+                print(run.report())
+                return 0
+            if sub[:1] == ["begin-propagation"] and len(sub) == 2:
+                run = adjudication_run.load(sc_id)
+                run.begin_propagation(json.loads(Path(sub[1]).read_text(encoding="utf-8")))
                 print(run.report())
                 return 0
             if sub[:1] == ["set-reference"] and len(sub) == 3:

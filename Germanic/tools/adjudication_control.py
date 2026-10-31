@@ -32,13 +32,18 @@ scholarly and generated facts.
 from __future__ import annotations
 
 import datetime as _dt
+import csv
+import fcntl
 import hashlib
+import io
 import json
 import os
 import re
 import subprocess
 import sys
 import tempfile
+import uuid
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -77,13 +82,14 @@ def _git(*args: str) -> str:
 
 def worktree_changes() -> list[str]:
     """Repo-relative paths modified/added/removed vs HEAD (non-ignored)."""
-    lines = _git("status", "--porcelain").splitlines()
+    lines = iter(_git("status", "--porcelain=v1", "-z", "--untracked-files=all").split("\0"))
     paths = []
     for line in lines:
-        entry = line[3:]
-        if " -> " in entry:
-            entry = entry.split(" -> ", 1)[1]
-        paths.append(entry.strip('"'))
+        if not line:
+            continue
+        paths.append(line[3:])
+        if "R" in line[:2] or "C" in line[:2]:
+            paths.append(next(lines))
     return paths
 
 
@@ -120,7 +126,8 @@ def source_identity() -> dict:
 
 def run_logged(argv: list[str], *, label: str, log_dir: Path,
                cwd: Path | None = None, env: dict | None = None,
-               timeout: float | None = None) -> dict:
+               timeout: float | None = None, level: str | None = None,
+               lane: str | None = None) -> dict:
     """Run *argv* (an argument array, never a shell string) with full logs.
 
     Returns a receipt recording the exact command, true exit code and the
@@ -130,7 +137,18 @@ def run_logged(argv: list[str], *, label: str, log_dir: Path,
     if isinstance(argv, str):
         raise TypeError("run_logged requires an argument array, not a shell string")
     log_dir.mkdir(parents=True, exist_ok=True)
-    safe = re.sub(r"[^A-Za-z0-9._-]+", "-", label)[:80]
+    if level not in (None, "A", "B", "C"):
+        raise ValueError("validation level must be A, B or C")
+    pytest_addopts = (os.environ if env is None else env).get("PYTEST_ADDOPTS", "")
+    if level == "C" and pytest_addopts:
+        raise ValueError("strict validation requires empty PYTEST_ADDOPTS; put options in the recorded argv")
+    before = source_identity()
+    safe = re.sub(r"[^A-Za-z0-9._-]+", "-", label)[:80] + "-" + uuid.uuid4().hex
+    argv = list(argv)
+    junit = log_dir / f"{safe}.junit.xml"
+    if level == "C" and argv[1:3] == ["-m", "pytest"]:
+        argv.append(f"--junitxml={junit.resolve()}")
+        argv.append("--validation-mode=full")
     stdout_path = log_dir / f"{safe}.stdout.log"
     stderr_path = log_dir / f"{safe}.stderr.log"
     started = _utcnow()
@@ -144,7 +162,11 @@ def run_logged(argv: list[str], *, label: str, log_dir: Path,
         except subprocess.TimeoutExpired:
             returncode = None
             timed_out = True
+    after = source_identity()
+    receipt_path = log_dir / f"{safe}.receipt.json"
     receipt = {
+        "receipt_version": 2,
+        "receipt_path": str(receipt_path.resolve()),
         "label": label,
         "argv": list(argv),
         "cwd": str(cwd or REPO_ROOT),
@@ -152,14 +174,63 @@ def run_logged(argv: list[str], *, label: str, log_dir: Path,
         "finished_at": _utcnow(),
         "returncode": returncode,
         "timed_out": timed_out,
-        "ok": (returncode == 0),
-        "stdout_log": str(stdout_path),
-        "stderr_log": str(stderr_path),
+        "ok": (returncode == 0 and before["identity_sha256"] == after["identity_sha256"]),
+        "source_identity": before,
+        "source_identity_sha256": before["identity_sha256"],
+        "source_identity_after": after,
+        "source_changed": before["identity_sha256"] != after["identity_sha256"],
+        "level": level,
+        "lane": lane,
+        "pytest_addopts": pytest_addopts,
+        "stdout_log": str(stdout_path.resolve()),
+        "stderr_log": str(stderr_path.resolve()),
+        "stdout_sha256": hashlib.sha256(stdout_path.read_bytes()).hexdigest(),
+        "stderr_sha256": hashlib.sha256(stderr_path.read_bytes()).hexdigest(),
     }
-    receipt_path = log_dir / f"{safe}.receipt.json"
+    if level == "C" and junit.is_file():
+        receipt["test_counts"] = {
+            key: sum(int(suite.get(key, "0")) for suite in ET.parse(junit).getroot().iter("testsuite"))
+            for key in ("tests", "failures", "errors", "skipped")}
+        receipt["junit_path"] = str(junit.resolve())
+        receipt["junit_sha256"] = hashlib.sha256(junit.read_bytes()).hexdigest()
     _atomic_write_json(receipt_path, receipt)
-    receipt["receipt_path"] = str(receipt_path)
     return receipt
+
+
+def verify_receipt(receipt: dict, *, current: bool = True) -> None:
+    """Verify a persisted execution record and its logs, not caller assertions."""
+    required = {"receipt_version", "receipt_path", "argv", "cwd", "started_at",
+                "finished_at", "returncode", "timed_out", "ok", "source_identity",
+                "source_identity_sha256", "source_identity_after", "source_changed",
+                "stdout_log", "stderr_log", "stdout_sha256", "stderr_sha256",
+                "level", "lane"}
+    if not required <= receipt.keys() or receipt["receipt_version"] != 2:
+        raise ValueError("incomplete execution receipt (including source identity)")
+    saved = json.loads(Path(receipt["receipt_path"]).read_text(encoding="utf-8"))
+    if saved != receipt:
+        raise ValueError("execution receipt differs from its persisted record")
+    for stream in ("stdout", "stderr"):
+        if hashlib.sha256(Path(receipt[f"{stream}_log"]).read_bytes()).hexdigest() != receipt[f"{stream}_sha256"]:
+            raise ValueError("execution log checksum mismatch")
+    if receipt["level"] == "C":
+        if not {"test_counts", "junit_path", "junit_sha256"} <= receipt.keys():
+            raise ValueError("strict validation requires machine-readable executed test counts")
+        report = Path(receipt["junit_path"])
+        if hashlib.sha256(report.read_bytes()).hexdigest() != receipt["junit_sha256"]:
+            raise ValueError("strict validation report checksum mismatch")
+        counts = {key: sum(int(suite.get(key, "0")) for suite in ET.parse(report).getroot().iter("testsuite"))
+                  for key in ("tests", "failures", "errors", "skipped")}
+        if counts != receipt["test_counts"] or counts["failures"] or counts["errors"] or not counts["tests"]:
+            raise ValueError("strict validation report is incomplete or failing")
+    identity = receipt["source_identity_sha256"]
+    if (not identity or identity != receipt["source_identity"].get("identity_sha256")
+            or identity != receipt["source_identity_after"].get("identity_sha256")
+            or receipt["source_changed"] or receipt["timed_out"]
+            or receipt["returncode"] != 0 or receipt["ok"] is not True
+            or not isinstance(receipt["argv"], list) or not receipt["argv"]):
+        raise ValueError("execution failed or source identity changed during execution")
+    if current and identity != source_identity()["identity_sha256"]:
+        raise ValueError("execution receipt attests a stale source identity")
 
 
 def _atomic_write_json(path: Path, payload: dict) -> None:
@@ -193,16 +264,20 @@ def _pid_alive(pid: int) -> bool:
 
 
 def runtime_lock_holder() -> dict | None:
-    """Live holder of the runtime lock, or None (stale locks are ignored)."""
+    """Read diagnostics without creating a file or trusting stale metadata."""
     if not RUNTIME_LOCK.is_file():
         return None
-    try:
-        record = json.loads(RUNTIME_LOCK.read_text(encoding="utf-8"))
-    except ValueError:
-        return None
-    pid = record.get("pid")
-    if isinstance(pid, int) and _pid_alive(pid) and pid != os.getpid():
-        return record
+    with RUNTIME_LOCK.open("r") as handle:
+        try:
+            fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            try:
+                return json.load(handle)
+            except ValueError:
+                return {"pid": "unknown", "operation": "acquiring runtime lock"}
+        finally:
+            # Closing an unlocked descriptor never releases another holder's lock.
+            pass
     return None
 
 
@@ -214,27 +289,34 @@ class runtime_lock:
         self.operation = operation
 
     def __enter__(self):
-        holder = runtime_lock_holder()
-        if holder is not None:
+        RUNTIME_LOCK.parent.mkdir(parents=True, exist_ok=True)
+        self.handle = RUNTIME_LOCK.open("a+")
+        try:
+            fcntl.flock(self.handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            self.handle.seek(0)
+            try:
+                holder = json.load(self.handle)
+            except ValueError:
+                holder = {"pid": "unknown"}
+            self.handle.close()
             raise RuntimeError(
                 f"runtime artifacts are in use by pid {holder['pid']} "
                 f"({holder.get('operation', '?')} since {holder.get('acquired_at', '?')}); "
-                "wait for it to finish or remove the stale lock "
-                f"{RUNTIME_LOCK} if that process is gone")
-        _atomic_write_json(RUNTIME_LOCK, {
+                "wait for it to finish (the kernel releases locks on process exit)")
+        self.handle.seek(0)
+        self.handle.truncate()
+        json.dump({
             "pid": os.getpid(),
             "operation": self.operation,
             "acquired_at": _utcnow(),
-        })
+        }, self.handle)
+        self.handle.flush()
         return self
 
     def __exit__(self, *exc):
-        try:
-            record = json.loads(RUNTIME_LOCK.read_text(encoding="utf-8"))
-            if record.get("pid") == os.getpid():
-                RUNTIME_LOCK.unlink()
-        except (OSError, ValueError):
-            pass
+        fcntl.flock(self.handle, fcntl.LOCK_UN)
+        self.handle.close()
         return False
 
 
@@ -292,6 +374,57 @@ def required_memo_sections() -> list[str]:
         if line.startswith("## "):
             headings.append(line[3:].strip())
     return headings
+
+
+def accepted_unchanged_memo(sc_id: str, row: dict, memo: Path) -> bool:
+    """Grandfather only already adjudicated memo bytes in the accepted Git state."""
+    import adjudicate
+    try:
+        rel = str(memo.relative_to(REPO_ROOT))
+        if _git("show", f"HEAD:{rel}").encode() != memo.read_bytes():
+            return False
+        rows = csv.DictReader(
+            (line for line in _git("show", f"HEAD:{adjudicate.SC_REGISTRY.relative_to(REPO_ROOT)}").splitlines()
+             if not line.startswith("#")), delimiter="\t")
+        previous = next(r for r in rows if r["sc_id"] == sc_id)
+        return all(previous.get(k) == row.get(k) for k in
+                   ("adjudication_status", "verdict", "adjudication_memo")) and previous["adjudication_status"] == "adjudicated"
+    except (RuntimeError, ValueError, StopIteration):
+        return False
+
+
+def approved_baseline_transition(directory: Path, approvals: list[str]) -> bool:
+    """Recheck the actual transition validators, never approval filenames alone."""
+    import cascade_baseline as baseline
+    try:
+        rel = str(directory.relative_to(REPO_ROOT))
+        previous = {
+            "summary": json.loads(_git("show", f"HEAD:{rel}/cascade_baseline_summary.json")),
+            "records": list(csv.DictReader(io.StringIO(_git(
+                "show", f"HEAD:{rel}/cascade_baseline_outputs.tsv")), delimiter="\t")),
+        }
+        candidate = baseline.read_baseline(
+            directory / "cascade_baseline_outputs.tsv", directory / "cascade_baseline_summary.json")
+        for ref in approvals:
+            try:
+                approval = json.loads((REPO_ROOT / ref).read_text())
+                validator = (baseline.validate_context_transition if "input_changes" in approval
+                             else baseline.validate_cell_transition)
+                validator(previous, candidate, approval)
+                legacy = list(csv.DictReader(
+                    (directory / "cascade_baseline_outputs_legacy380.tsv").open(), delimiter="\t"))
+                if baseline.projection_sha256(legacy, "proto_norm") != approval["legacy_archive_sha256"]:
+                    continue
+                with (directory / "approved_input_migrations.tsv").open() as handle:
+                    migrations = list(csv.DictReader(handle, delimiter="\t"))
+                selected = baseline.legacy_subset(candidate["records"], legacy, migrations)
+                if baseline.projection_sha256(selected, "proto_norm") == candidate["summary"]["legacy_subset_sha256"]:
+                    return True
+            except (OSError, ValueError, KeyError, TypeError):
+                continue
+    except (OSError, ValueError, RuntimeError, KeyError):
+        pass
+    return False
 
 
 _INDENTED_VERDICT_RE = re.compile(r"^[ \t]+Registry-verdict:", re.MULTILINE)
@@ -401,7 +534,10 @@ def preflight(sc_id: str, operation: str = "investigate",
             present = {line[3:].strip()
                        for line in text.splitlines() if line.startswith("## ")}
             missing = [h for h in required_memo_sections() if h not in present]
-            if missing:
+            if missing and accepted_unchanged_memo(sc_id, row, memo_path):
+                report.add("memo_sections", PASS,
+                           "accepted unchanged legacy memorandum; existing check_memo passed")
+            elif missing:
                 report.add("memo_sections", BLOCKED,
                            f"memo {memo_rel} is missing required template "
                            f"sections: {missing}")
@@ -439,7 +575,8 @@ def preflight(sc_id: str, operation: str = "investigate",
     approvals = sorted(c for c in changes
                        if Path(c).name.startswith("approved_")
                        and c.startswith(baseline_dir + "/"))
-    if touched_baseline and not approvals:
+    if touched_baseline and not approved_baseline_transition(
+            adjudicate.BASELINE_SUMMARY.parent, approvals):
         report.add("protected_baselines", BLOCKED,
                    "protected baseline files are modified without an "
                    f"approval receipt: {touched_baseline}; use the "
