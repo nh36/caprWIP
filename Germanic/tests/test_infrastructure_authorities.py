@@ -413,6 +413,31 @@ class TraceFreshnessTests(unittest.TestCase):
         problems = self.mod.trace_provenance_problems("=== BUCKET: x ===\n")
         self.assertTrue(problems)
 
+    def test_internally_consistent_trace_must_match_production_sequence(self):
+        expected = [s.foma_identifier for s in oe_pipeline.named_stages()]
+        cases = [
+            (expected[:-1], f"missing: {expected[-1]}"),
+            (expected[:-1] + ["UnknownStage"], "extra: UnknownStage"),
+            ([expected[1], expected[0]] + expected[2:],
+             f"misplaced: {expected[1]} (report position 1, expected 2)"),
+        ]
+        for declared, diagnostic in cases:
+            with self.subTest(diagnostic=diagnostic):
+                text = "\n".join([
+                    "=== BUCKET: exact_match (1) ===",
+                    "--- example ---", "PROTO: *a", "EXPECTED: a",
+                    "OUTPUTS: a", "",
+                    *(f"{stage}: a" for stage in declared),
+                    "", "=== STAGE FIRING SUMMARY ===", "",
+                    *(f"{stage}: 0" for stage in declared), "",
+                ])
+                self.assertEqual(
+                    self.mod.oe_trace_parse.structural_problems(text), [])
+                problems = self.mod.trace_provenance_problems(text)
+                self.assertTrue(any(
+                    "canonical trace stage sequence disagrees with production"
+                    in p and diagnostic in p for p in problems), problems)
+
     def test_noncanonical_or_stale_provenance_fails_closed(self):
         live = self.TRACE.read_text(encoding="utf-8")
         # strip the canonical marker -> must be refused

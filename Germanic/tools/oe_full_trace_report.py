@@ -399,6 +399,28 @@ def trace_provenance_problems(text: str) -> List[str]:
     # Structural completeness is part of the canonical contract: a report
     # with incomplete or disordered derivations is not usable evidence.
     problems.extend(oe_trace_parse.structural_problems(text))
+    expected_stages = [s.foma_identifier for s in oe_pipeline.named_stages()]
+    declared_stages = list(oe_trace_parse.parse_firing_summary(text) or {})
+    if declared_stages != expected_stages:
+        missing = [s for s in expected_stages if s not in declared_stages]
+        extra = [s for s in declared_stages if s not in expected_stages]
+        misplaced = [
+            f"{s} (report position {i + 1}, expected "
+            f"{expected_stages.index(s) + 1})"
+            for i, s in enumerate(declared_stages)
+            if s in expected_stages and expected_stages.index(s) != i
+        ]
+        details = []
+        if missing:
+            details.append("missing: " + ", ".join(missing))
+        if extra:
+            details.append("extra: " + ", ".join(extra))
+        if misplaced:
+            details.append("misplaced: " + ", ".join(misplaced))
+        problems.append(
+            "canonical trace stage sequence disagrees with production: "
+            + "; ".join(details)
+            + "; regenerate with tools/oe_full_trace_report.py --all")
     return problems
 
 
