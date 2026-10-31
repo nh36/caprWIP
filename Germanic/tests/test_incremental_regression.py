@@ -35,9 +35,14 @@ def default_sources() -> dict:
             for label in oe_trace_parse.SOURCE_PATHS}
 
 
-def provenance_block(sources: dict) -> list:
+def provenance_block(sources: dict, version: int =
+                     oe_trace_parse.PROVENANCE_VERSION) -> list:
     lines = ["=== PROVENANCE ==="]
-    for label in oe_trace_parse.SOURCE_PATHS:
+    labels = (oe_trace_parse.SOURCE_PATHS if version >= 2
+              else oe_trace_parse.V1_SOURCE_PATHS)
+    if version >= 2:
+        lines.append(f"trace_provenance_version: {version}")
+    for label in labels:
         lines.append(f"{label} sha256: {_sha(sources[label])}")
     lines.append(f"old_english.bin sha256 (informational): {'0' * 64}")
     lines.append("bins_provenance: canonical (test build)")
@@ -45,7 +50,7 @@ def provenance_block(sources: dict) -> list:
     lines.append("build_manifest_runner: test")
     lines.append("build_manifest_foma_version: test-foma")
     lines.append("build_manifest_expected_bins: 4")
-    for label in sorted(set(oe_trace_parse.SOURCE_PATHS)
+    for label in sorted(set(oe_trace_parse.V1_SOURCE_PATHS)
                         - oe_trace_parse.MANIFEST_EXEMPT):
         lines.append(f"manifest:{label} sha256: {_sha(sources[label])}")
     lines.append("")
@@ -53,7 +58,8 @@ def provenance_block(sources: dict) -> list:
 
 
 def make_report(entries, stage_labels, sources=None, fidelity=None,
-                include_fidelity=True) -> str:
+                include_fidelity=True,
+                version=oe_trace_parse.PROVENANCE_VERSION) -> str:
     """A minimal but format-faithful canonical full-trace report.
 
     ``entries``: list of (concept, proto, expected, outputs,
@@ -61,7 +67,7 @@ def make_report(entries, stage_labels, sources=None, fidelity=None,
     [fidelity lines]} for the RAW STAGE FIDELITY section.
     """
     sources = sources or default_sources()
-    lines = provenance_block(sources)
+    lines = provenance_block(sources, version)
     lines.append(f"=== BUCKET: exact_match ({len(entries)}) ===")
     lines.append("")
     fired = {label: [] for label in stage_labels}
@@ -358,21 +364,233 @@ def test_report_without_firing_summary_is_incomplete_evidence(repo):
 
 
 def test_evaluation_code_changes_are_never_computationally_irrelevant(repo):
-    # oe_pipeline.py changes while germanic.txt and the report stay
-    # identical: the comparison must classify the executable consequence
-    # instead of calling the states identical.
+    # oe_pipeline.py changes while germanic.txt and the sandbox stay
+    # identical: with a correctly regenerated report the comparison must
+    # classify the change as renewed evaluation (existing bins remain
+    # valid), never as identical states or a recompilation.
     sources = default_sources()
     _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
-    (repo / "Germanic/tools/oe_pipeline.py").write_text("STAGES = 1\n")
     _commit(repo, "state one")
-    (repo / "Germanic/tools/oe_pipeline.py").write_text("STAGES = 2\n")
-    _commit(repo, "evaluation code change")
+    sources2 = dict(sources)
+    sources2["oe_pipeline.py"] = b"STAGES = 2\n"
+    _write_state(repo, sources2, make_report(
+        [base_entry()], BASE_STAGES, sources=sources2))
+    _commit(repo, "evaluation code change with regenerated report")
     result = incremental.run_comparison(root=repo)
     assert not result["identical"]
-    assert result["dependencies"]["recompile_changed"] == [
+    assert result["dependencies"]["reevaluate_changed"] == [
         "Germanic/tools/oe_pipeline.py"]
+    assert result["dependencies"]["recompile_changed"] == []
     assert result["dependencies"]["consequence"] == (
-        "requires transducer recompilation")
+        "requires renewed evaluation (no recompilation)")
+
+
+def test_changed_evaluation_helper_without_regeneration_is_a_stale_report(repo):
+    # The v2 provenance contract: a changed evaluation helper with an
+    # un-regenerated report is a stale report, an explicit failure --
+    # never an apparently current comparison.
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES))
+    _commit(repo, "state one")
+    (repo / "Germanic/tools/sound_change_order_sensitivity.py").write_text(
+        "def batch_apply_down(): pass\n")
+    _commit(repo, "helper changed, report NOT regenerated")
+    with pytest.raises(SystemExit) as failure:
+        incremental.run_comparison(root=repo)
+    assert "STALE w.r.t. sound_change_order_sensitivity.py" in str(
+        failure.value)
+
+
+def test_legacy_v1_report_is_usable_with_an_explicit_limitation(repo):
+    # An older committed report under the original provenance contract
+    # remains readable; the uncovered evaluation helpers are an explicit
+    # limitation, not a silent acceptance or a demand for recompilation.
+    sources = default_sources()
+    _write_state(repo, sources, make_report([base_entry()], BASE_STAGES,
+                                            version=1))
+    _commit(repo, "legacy state")
+    _write_state(repo, sources, make_report(
+        [base_entry()], BASE_STAGES, version=1))
+    (repo / "README").write_text("x")
+    _commit(repo, "non-model change")
+    result = incremental.run_comparison(root=repo)
+    assert result["identical"]
+    assert any("provenance contract v1" in l for l in result["limitations"])
+
+
+def test_new_report_missing_required_v2_provenance_is_rejected():
+    # A report declaring the v2 contract cannot silently omit a required
+    # evaluation-helper hash.
+    sources = default_sources()
+    text = make_report([base_entry()], BASE_STAGES)
+    text = "\n".join(line for line in text.splitlines()
+                     if not line.startswith("oe_pipeline.py sha256: ")) + "\n"
+    hashes = {label: _sha(payload) for label, payload in sources.items()}
+    problems = oe_trace_parse.provenance_problems(text, hashes)
+    assert "trace PROVENANCE lacks a hash for oe_pipeline.py" in problems
+
+
+def test_current_canonical_contract_rejects_a_v1_report():
+    # The ordinary freshness check demands the current contract version:
+    # a legacy report can never satisfy the live canonical check.
+    sources = default_sources()
+    text = make_report([base_entry()], BASE_STAGES, version=1)
+    hashes = {label: _sha(payload) for label, payload in sources.items()}
+    problems = oe_trace_parse.provenance_problems(
+        text, hashes, require_version=oe_trace_parse.PROVENANCE_VERSION)
+    assert any("predates the required v2" in p for p in problems)
+    assert not oe_trace_parse.provenance_problems(text, hashes)
+
+
+# --- structural completeness --------------------------------------------------
+
+def _drop_line(text: str, needle: str) -> str:
+    lines = text.splitlines()
+    index = next(i for i, l in enumerate(lines) if l.startswith(needle))
+    return "\n".join(lines[:index] + lines[index + 1:]) + "\n"
+
+
+def _well_formed() -> str:
+    return make_report([base_entry()], BASE_STAGES)
+
+
+def test_a_well_formed_synthetic_report_has_no_structural_problems():
+    assert oe_trace_parse.structural_problems(_well_formed()) == []
+
+
+def test_a_missing_stage_line_is_a_structural_failure():
+    text = _drop_line(_well_formed(), "StageB")
+    problems = oe_trace_parse.structural_problems(text)
+    assert ["entry stone | *stainaz | stān: missing stage(s) StageB"] == problems
+
+
+def test_a_duplicated_stage_line_is_a_structural_failure():
+    text = _well_formed().replace(
+        "StageC: *s*t*ā*n", "StageC: *s*t*ā*n\nStageC: *s*t*ā*n")
+    problems = oe_trace_parse.structural_problems(text)
+    assert any("duplicated stage(s) StageC" in p for p in problems)
+
+
+def test_reordered_stage_lines_are_a_structural_failure():
+    text = _well_formed().replace(
+        "StageB: *s*t*ā*n*a*z\nStageC: *s*t*ā*n",
+        "StageC: *s*t*ā*n\nStageB: *s*t*ā*n*a*z")
+    problems = oe_trace_parse.structural_problems(text)
+    assert problems == ["entry stone | *stainaz | stān: stages are out of "
+                        "the order declared by the firing summary"]
+
+
+def test_an_unknown_stage_is_a_structural_failure():
+    text = _well_formed().replace(
+        "StageD: stān", "StageD: stān\nStageX: stān")
+    problems = oe_trace_parse.structural_problems(text)
+    assert any("unexpected stage(s) StageX" in p for p in problems)
+
+
+def test_a_stage_without_recorded_outputs_is_a_structural_failure():
+    text = _well_formed().replace("StageD: stān", "StageD: ")
+    problems = oe_trace_parse.structural_problems(text)
+    assert any("stage StageD has no recorded outputs" in p for p in problems)
+
+
+def test_a_duplicate_firing_summary_stage_is_incoherent():
+    text = _well_formed().replace("StageA: 0", "StageA: 0\n\nStageA: 1")
+    problems = oe_trace_parse.structural_problems(text)
+    assert any("declares stage StageA more than once" in p for p in problems)
+
+
+def test_fidelity_for_a_nonexistent_entry_or_stage_is_a_structural_failure():
+    ghost = make_report([base_entry()], BASE_STAGES,
+                        fidelity={("ghost", "*gast", "gāst"):
+                                  ["StageB: rejected"]})
+    problems = oe_trace_parse.structural_problems(ghost)
+    assert any("nonexistent entry ghost | *gast | gāst" in p
+               for p in problems)
+    unknown = make_report([base_entry()], BASE_STAGES,
+                          fidelity={("stone", "*stainaz", "stān"):
+                                    ["StageX: rejected"]})
+    problems = oe_trace_parse.structural_problems(unknown)
+    assert any("unknown stage StageX" in p for p in problems)
+
+
+def test_duplicate_fidelity_records_are_a_structural_failure():
+    text = make_report([base_entry()], BASE_STAGES,
+                       fidelity={("stone", "*stainaz", "stān"):
+                                 ["StageB: rejected",
+                                  "StageB: raw = *ᶠ*s*t*ā*n*a*z"]})
+    problems = oe_trace_parse.structural_problems(text)
+    assert any("duplicate fidelity record" in p and "StageB" in p
+               for p in problems)
+
+
+def test_identical_malformed_reports_fail_the_fast_path(repo):
+    # Two identical but structurally incomplete reports are not successful
+    # regression evidence: the fast path must not bypass validation.
+    sources = default_sources()
+    broken = _drop_line(_well_formed(), "StageB")
+    _write_state(repo, sources, broken)
+    _commit(repo, "malformed state")
+    (repo / "README").write_text("x")
+    _commit(repo, "non-model change; same malformed report")
+    with pytest.raises(SystemExit) as failure:
+        incremental.run_comparison(root=repo)
+    assert "missing stage(s) StageB" in str(failure.value)
+
+
+def test_the_real_canonical_report_passes_structural_validation():
+    text = (ROOT / incremental.TRACE_PATH).read_text(encoding="utf-8")
+    assert oe_trace_parse.structural_problems(text) == []
+
+
+# --- complete differential reporting ------------------------------------------
+
+def test_every_divergent_stage_records_both_versions_forms():
+    # Two intermediate stages change while the final output is preserved:
+    # both stages and both pairs of forms must appear, with positions.
+    reference = make_report([base_entry()], BASE_STAGES)
+    current = make_report(
+        [base_entry(StageB="*s*t*ē*n*a*z", StageC="*s*t*ē*n")], BASE_STAGES)
+    change = incremental.compare(_state(current), _state(reference))[
+        "entry_changes"]["stone | *stainaz | stān"]
+    assert change["first_divergence"] == "StageB"
+    assert change["reconverged"] and change["intermediate_only"]
+    assert change["divergences"] == [
+        {"stage": "StageB", "position_current": 1, "position_reference": 1,
+         "reference": ["*s*t*ā*n*a*z"], "current": ["*s*t*ē*n*a*z"],
+         "reference_rejected": False, "current_rejected": False},
+        {"stage": "StageC", "position_current": 2, "position_reference": 2,
+         "reference": ["*s*t*ā*n"], "current": ["*s*t*ē*n"],
+         "reference_rejected": False, "current_rejected": False},
+    ]
+
+
+def test_divergences_preserve_multiple_outputs_and_rejection_state():
+    key = ("stone", "*stainaz", "stān")
+    reference = make_report(
+        [base_entry(StageB="*s*t*ā*n*a*z, *s*t*ō*n*a*z")], BASE_STAGES,
+        fidelity={})
+    current = make_report([base_entry()], BASE_STAGES,
+                          fidelity={key: ["StageB: rejected"]})
+    change = incremental.compare(_state(current), _state(reference))[
+        "entry_changes"]["stone | *stainaz | stān"]
+    (divergence,) = [d for d in change["divergences"]
+                     if d["stage"] == "StageB"]
+    assert divergence["reference"] == ["*s*t*ā*n*a*z", "*s*t*ō*n*a*z"]
+    assert divergence["current"] == ["rejected"]
+    assert divergence["current_rejected"] and not divergence[
+        "reference_rejected"]
+
+
+def test_legacy_display_level_divergences_are_still_fully_recorded():
+    reference = make_report([base_entry()], BASE_STAGES,
+                            include_fidelity=False)
+    current = make_report(
+        [base_entry(StageB="*s*t*ē*n*a*z", StageC="*s*t*ē*n")], BASE_STAGES,
+        include_fidelity=False)
+    report = incremental.compare(_state(current), _state(reference))
+    assert report["display_level_comparison"]
+    change = report["entry_changes"]["stone | *stainaz | stān"]
+    assert [d["stage"] for d in change["divergences"]] == ["StageB", "StageC"]
 
 
 def test_staged_state_is_compared_and_unstaged_work_is_excluded(repo):

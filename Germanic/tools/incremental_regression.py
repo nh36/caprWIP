@@ -64,13 +64,18 @@ RECOMPILE_PATHS = (
     "Germanic/fsts/germanic.txt",
     "Germanic/fsts/old_english_sandbox.txt",
     "Germanic/tools/generate_oe_sandbox.py",
-    "Germanic/tools/oe_pipeline.py",
 )
+# oe_pipeline.py is an evaluation dependency here: its compilation role is
+# already visible through the generated sandbox hash (a pipeline change
+# that alters the composition changes old_english_sandbox.txt), while its
+# evaluation role (stage set, order, bin mapping) affects the trace with
+# the existing binaries intact.
 REEVALUATE_PATHS = (
     "Germanic/data/germanic-aligned-final.tsv",
     "Germanic/data/entry_context_metadata.tsv",
     "backend/oe_input_context.py",
     "Germanic/tools/oe_full_trace_report.py",
+    "Germanic/tools/oe_pipeline.py",
     "Germanic/tools/sound_change_order_sensitivity.py",
     "Germanic/tools/capr_runtime.py",
 )
@@ -167,15 +172,25 @@ def load_state(state: str, root: Path = None) -> dict:
     text = text_bytes.decode("utf-8")
     problems = oe_trace_parse.provenance_problems(
         text, source_hashes(state, root))
+    problems.extend(oe_trace_parse.structural_problems(text))
     limitations = []
-    if oe_trace_parse.parse_fidelity(text) is None:
+    prov = oe_trace_parse.parse_provenance(text)
+    if prov.present and prov.version < oe_trace_parse.PROVENANCE_VERSION:
+        limitations.append(
+            f"report declares provenance contract v{prov.version}: changes "
+            "to the evaluation helpers "
+            f"({', '.join(oe_trace_parse.V2_SOURCE_PATHS)}) are not covered "
+            "by its recorded provenance for this state")
+    try:
+        fidelity_absent = oe_trace_parse.parse_fidelity(text) is None
+    except ValueError:
+        fidelity_absent = False  # malformed: already reported as a problem
+    if fidelity_absent:
         limitations.append(
             "report predates the RAW STAGE FIDELITY section: rejected stages "
             "are indistinguishable from no-change stages and context "
             "annotation marks are invisible; comparison is display-level "
             "for this state")
-    if oe_trace_parse.parse_firing_summary(text) is None:
-        problems.append("report has no STAGE FIRING SUMMARY")
     return {"state": state, "text": text, "problems": problems,
             "limitations": limitations}
 
@@ -248,6 +263,21 @@ def compare(current: dict, reference: dict) -> dict:
                 "reference": list(rref.get(first, ())),
                 "current": list(rcur.get(first, ())),
             }
+            # Forms at EVERY divergent stage, with each version's actual
+            # stage position and the rejection state, from the same
+            # _stage_results representation (raw-fidelity where available).
+            change["divergences"] = [
+                {
+                    "stage": label,
+                    "position_current": order_cur.index(label),
+                    "position_reference": order_ref.index(label),
+                    "reference": list(rref.get(label, ())),
+                    "current": list(rcur.get(label, ())),
+                    "reference_rejected": rref.get(label) == ("rejected",),
+                    "current_rejected": rcur.get(label) == ("rejected",),
+                }
+                for label in divergent
+            ]
         if final_changed:
             change["final"] = {"reference": eref.outputs,
                                "current": ecur.outputs}
@@ -353,8 +383,9 @@ def run_comparison(reference: str | None = None, worktree: bool = False,
     deps = classify_dependencies(states, root)
     if (not deps["report_changed"] and not deps["recompile_changed"]
             and not deps["reevaluate_changed"]):
-        # Fast path: identical reports and dependencies -- the validated
-        # current report covers both states; terminate without parsing.
+        # Fast path: identical reports and dependencies -- the current
+        # report (provenance- and structure-validated in load_state above)
+        # covers both states; terminate without a stage comparison.
         return {"states": states, "dependencies": deps,
                 "identical": True, "refreshed": refreshed,
                 "limitations": current["limitations"],
@@ -423,6 +454,11 @@ def summarize(result: dict) -> str:
                 f"first divergence {change['first_divergence']}: "
                 f"{', '.join(at.get('reference', []))} -> "
                 f"{', '.join(at.get('current', []))}")
+            further = len(change.get("divergences", ())) - 1
+            if further > 0:
+                detail.append(f"+{further} further divergent stage(s); "
+                              "complete forms in "
+                              f".ci-results/{REPORT_NAME}")
             if change["reconverged"]:
                 detail.append("reconverges before the final stage")
         if change["final_changed"]:
