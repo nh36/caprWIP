@@ -225,6 +225,16 @@ class Run:
                 extra = f" — {note}"
             lines.append(f"  {stage:<12} {status}{extra}")
         frontier = self.frontier()
+        summary = operations_summary(self)
+        if summary:
+            lines.append("operations:")
+            for kind in sorted(summary):
+                entry = summary[kind]
+                extra = (f", {entry['redundant']} redundant"
+                         if entry["redundant"] else "")
+                lines.append(
+                    f"  {kind}: {entry['count']} "
+                    f"({entry['elapsed_seconds']:.0f}s{extra})")
         blockers = [s for s in STAGES
                     if state["stages"].get(s, {}).get("status")
                     == "invalidated"]
@@ -465,6 +475,137 @@ def record_validation_level(run: Run, level: str, receipts: list,
                          for r in receipts],
                reused=reused,
                source_identity=adjudication_control.source_identity())
+
+
+# ---------------------------------------------------------------------------
+# resource budgets and failure controls
+# ---------------------------------------------------------------------------
+
+# Conservative defaults grounded in the measured pipeline (a full strict
+# run uses one cascade build and ~20 min; adjudication experiments have
+# needed at most a handful of variants). They are configurable per run via
+# set_budget, and any excess requires an explicit, journaled override —
+# never an arbitrary timeout that interrupts legitimate long computations.
+DEFAULT_BUDGETS = {
+    "experiment_variant": 12,
+    "foma_compilation": 60,
+    "cascade_evaluation": 20,
+    "runtime_test": 60,
+    "container_launch": 24,
+    "definition_image_prep": 6,
+    "full_suite": 3,
+}
+# Informational kinds: visibility only, never budgeted.
+UNBUDGETED_KINDS = {"cache_hit", "cache_miss", "definition_image_reuse"}
+OPERATION_KINDS = set(DEFAULT_BUDGETS) | UNBUDGETED_KINDS
+# After this many failed repairs of the same underlying failure, the
+# automatic repair loop must stop and report instead of retrying.
+MAX_REPAIR_ATTEMPTS = 2
+
+
+def _run_budget(state: dict, kind: str) -> int | None:
+    if kind in UNBUDGETED_KINDS:
+        return None
+    return state.get("budgets", {}).get(kind, DEFAULT_BUDGETS[kind])
+
+
+def set_budget(run: Run, kind: str, limit: int, reason: str) -> None:
+    """Configure a per-run budget; the change and its reason are journaled."""
+    if kind not in DEFAULT_BUDGETS:
+        raise WorkflowError(
+            f"no budget exists for {kind!r}; budgeted kinds: "
+            f"{sorted(DEFAULT_BUDGETS)}")
+    state = run.state()
+    state.setdefault("budgets", {})[kind] = int(limit)
+    run._write_state(state)
+    run._event("budget_set", operation=kind, limit=int(limit), reason=reason)
+
+
+def record_operation(run: Run, kind: str, *, identity: str | None = None,
+                     elapsed_seconds: float | None = None,
+                     ok: bool | None = None, label: str = "",
+                     override_reason: str | None = None) -> dict:
+    """Journal one expensive operation, enforcing budgets and flagging
+    redundant repeats against unchanged inputs.
+
+    ``identity`` should be a content identity of the operation's effective
+    inputs (e.g. a compile-cache key or snapshot input hash).  If an
+    earlier successful operation of the same kind recorded the same
+    identity, the new record is flagged ``redundant`` and a warning event
+    is journaled so the agent is informed before wasting the work again.
+
+    Exceeding the kind's budget raises WorkflowError unless an explicit
+    ``override_reason`` is supplied, in which case the override is
+    journaled with its reason.
+    """
+    if kind not in OPERATION_KINDS:
+        raise WorkflowError(
+            f"unknown operation kind {kind!r}; kinds: "
+            f"{sorted(OPERATION_KINDS)}")
+    state = run.state()
+    operations = state.setdefault("operations", [])
+    previous = [op for op in operations if op["kind"] == kind]
+    budget = _run_budget(state, kind)
+    if budget is not None and len(previous) >= budget:
+        if not override_reason:
+            raise WorkflowError(
+                f"budget exhausted for {kind}: {len(previous)} operations "
+                f"recorded against a budget of {budget}. If more are "
+                "genuinely required, pass an explicit override_reason "
+                "(journaled) or raise the budget with set_budget")
+        run._event("budget_override", operation=kind, budget=budget,
+                   used=len(previous), reason=override_reason)
+    redundant = bool(identity) and any(
+        op.get("identity") == identity and op.get("ok") is not False
+        for op in previous)
+    record = {
+        "kind": kind, "label": label, "identity": identity,
+        "elapsed_seconds": elapsed_seconds, "ok": ok,
+        "at": adjudication_control._utcnow(), "redundant": redundant,
+    }
+    operations.append(record)
+    run._write_state(state)
+    run._event("operation", operation=kind,
+               **{k: v for k, v in record.items() if k != "kind"})
+    if redundant:
+        run._event(
+            "redundant_operation_warning", operation=kind, identity=identity,
+            advice="an equivalent operation already succeeded against the "
+                   "same effective inputs; reuse its recorded result unless "
+                   "fresh execution is scientifically required")
+    return record
+
+
+def record_repair_attempt(run: Run, failure_signature: str,
+                          note: str = "") -> int:
+    """Count repair attempts per underlying failure; stop the loop at the
+    limit.  Returns the attempt number just recorded."""
+    state = run.state()
+    attempts = state.setdefault("repair_attempts", {})
+    count = attempts.get(failure_signature, 0)
+    if count >= MAX_REPAIR_ATTEMPTS:
+        raise WorkflowError(
+            f"{count} repair attempts have already failed for "
+            f"{failure_signature!r}; stop the automatic repair loop and "
+            "report the error, the evidence, the attempted repairs and the "
+            "remaining uncertainty instead of retrying")
+    attempts[failure_signature] = count + 1
+    run._write_state(state)
+    run._event("repair_attempt", failure=failure_signature,
+               attempt=count + 1, note=note)
+    return count + 1
+
+
+def operations_summary(run: Run) -> dict:
+    """Per-kind counts, elapsed time and redundancy, for status reports."""
+    summary: dict = {}
+    for op in run.state().get("operations", []):
+        entry = summary.setdefault(
+            op["kind"], {"count": 0, "elapsed_seconds": 0.0, "redundant": 0})
+        entry["count"] += 1
+        entry["elapsed_seconds"] += op.get("elapsed_seconds") or 0.0
+        entry["redundant"] += 1 if op.get("redundant") else 0
+    return summary
 
 
 def main() -> int:

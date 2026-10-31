@@ -367,5 +367,86 @@ class DomainDerivationTests(unittest.TestCase):
             ar._domain_files("prose", SC)
 
 
+class BudgetAndFailureControlTests(RunHarness):
+
+    def test_operation_recorded_with_count_and_elapsed(self):
+        run = self.start()
+        ar.record_operation(run, "foma_compilation", identity="k1",
+                            elapsed_seconds=12.5, ok=True, label="variant-A")
+        summary = ar.operations_summary(run)
+        self.assertEqual(summary["foma_compilation"]["count"], 1)
+        self.assertAlmostEqual(
+            summary["foma_compilation"]["elapsed_seconds"], 12.5)
+        self.assertIn("operations:", run.report())
+
+    def test_unknown_operation_kind_rejected(self):
+        run = self.start()
+        with self.assertRaisesRegex(ar.WorkflowError, "unknown operation"):
+            ar.record_operation(run, "vibes")
+
+    def test_budget_exhaustion_blocks_without_override(self):
+        run = self.start()
+        ar.set_budget(run, "experiment_variant", 2, "small test budget")
+        ar.record_operation(run, "experiment_variant", label="v1")
+        ar.record_operation(run, "experiment_variant", label="v2")
+        with self.assertRaisesRegex(ar.WorkflowError, "budget exhausted"):
+            ar.record_operation(run, "experiment_variant", label="v3")
+
+    def test_override_permits_and_journals_the_excess(self):
+        run = self.start()
+        ar.set_budget(run, "full_suite", 1, "test")
+        ar.record_operation(run, "full_suite", label="first")
+        ar.record_operation(run, "full_suite", label="second",
+                            override_reason="repair changed certified state")
+        overrides = [e for e in run.events()
+                     if e["kind"] == "budget_override"]
+        self.assertEqual(overrides[0]["reason"],
+                         "repair changed certified state")
+
+    def test_budget_change_is_journaled_with_reason(self):
+        run = self.start()
+        ar.set_budget(run, "foma_compilation", 100, "large counterfactual set")
+        self.assertEqual(run.state()["budgets"]["foma_compilation"], 100)
+        events = [e for e in run.events() if e["kind"] == "budget_set"]
+        self.assertEqual(events[0]["reason"], "large counterfactual set")
+        with self.assertRaises(ar.WorkflowError):
+            ar.set_budget(run, "cache_hit", 5, "not budgetable")
+
+    def test_redundant_repeat_on_unchanged_inputs_is_flagged(self):
+        run = self.start()
+        ar.record_operation(run, "cascade_evaluation", identity="inputs-x",
+                            ok=True)
+        record = ar.record_operation(run, "cascade_evaluation",
+                                     identity="inputs-x")
+        self.assertTrue(record["redundant"])
+        warnings = [e for e in run.events()
+                    if e["kind"] == "redundant_operation_warning"]
+        self.assertEqual(warnings[0]["identity"], "inputs-x")
+
+    def test_failed_prior_operation_is_not_redundant_basis(self):
+        run = self.start()
+        ar.record_operation(run, "cascade_evaluation", identity="inputs-x",
+                            ok=False)
+        record = ar.record_operation(run, "cascade_evaluation",
+                                     identity="inputs-x")
+        self.assertFalse(record["redundant"])
+
+    def test_cache_events_are_visible_but_unbudgeted(self):
+        run = self.start()
+        for _ in range(100):
+            ar.record_operation(run, "cache_hit", identity=None)
+        self.assertEqual(ar.operations_summary(run)["cache_hit"]["count"],
+                         100)
+
+    def test_repair_loop_stops_after_two_attempts(self):
+        run = self.start()
+        self.assertEqual(ar.record_repair_attempt(run, "pytest::test_x"), 1)
+        self.assertEqual(ar.record_repair_attempt(run, "pytest::test_x"), 2)
+        with self.assertRaisesRegex(ar.WorkflowError, "stop the automatic"):
+            ar.record_repair_attempt(run, "pytest::test_x")
+        # A different underlying failure has its own counter.
+        self.assertEqual(ar.record_repair_attempt(run, "pytest::test_y"), 1)
+
+
 if __name__ == "__main__":
     unittest.main()
