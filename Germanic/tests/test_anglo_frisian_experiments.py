@@ -378,9 +378,9 @@ class ExperimentTests(unittest.TestCase):
 
     def test_live_selection_has_all_stable_ids(self):
         rows = experiments.corpus_rows(layout().corpus_tsv)
-        # 390 selected rows after the SC065 filth admission (row 2335).
-        self.assertEqual(len(rows), 390)
-        self.assertEqual(len({row["id"] for row in rows}), 390)
+        # The SC040 earthly admission adds exactly one selected identity.
+        self.assertEqual(len(rows), 391)
+        self.assertEqual(len({row["id"] for row in rows}), 391)
         self.assertEqual(next(row["proto"] for row in rows if row["id"] == "2061"), "*xáwją")
 
     def test_fixtures_match_live_inputs_and_recipe_provenance(self):

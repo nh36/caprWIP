@@ -1,0 +1,25 @@
+{
+  "archive_sha256": "a34e9b35ee2695f713d049287af27aff9c472910f0ba2d5268edd4fc9143bfa7",
+  "members": {
+    "adoption-logs/SC040-earthly-authorised-population-writer-a2ae03f8503f40569333231b45315ad0.receipt.json": "c9d2d10dc400952b5d7e65fbed660a7aecfe8a02d6a62ad40dd571c1cc3add42",
+    "adoption-logs/SC040-earthly-authorised-population-writer-a2ae03f8503f40569333231b45315ad0.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adoption-logs/SC040-earthly-authorised-population-writer-a2ae03f8503f40569333231b45315ad0.stdout.log": "18f3c5a3eb6a9c655a2a73b05624732161111f49a16ffd8fb10bb0bfca8d1e8f",
+    "adoption-logs/SC040-scientific390-finalize-5471c17ef303465a8b33736a23aaa749.receipt.json": "8bb9106345e6963ead91530b447986b93ecb395417fda747b98143e03bf9020a",
+    "adoption-logs/SC040-scientific390-finalize-5471c17ef303465a8b33736a23aaa749.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adoption-logs/SC040-scientific390-finalize-5471c17ef303465a8b33736a23aaa749.stdout.log": "1cbdb8a0e1ded5130f8d4af9c6ff4ee89e36ac169937180645a856f51f1c6bcd",
+    "published-source/Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md": "06cb0441da2e1c9589e294559bc0a953214842270e01b84b96cdaf0ca6a19ef9",
+    "published-source/Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.source_ledger.md": "093a48c7ea7b633772ececa8195bcfa139c3951aef138990c7aacd33501729f6",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_integration/editorial_cases.tsv": "709456c69acdefba3b7376f024e2821e191f2db18ac064ce8ff3d73d93680055",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "12ab60562c57bbc44adec9073aa01cb0150a19c0ce8300145b6e89d797e0a186",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv": "d68757b92ead53e06b375987639c6e8079db0134ab36f7c468b7d061c6524cd4",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv": "14fcbf40663904ae608d258eda57b49c619cd9dc965a8ed9f3d484a9d1cc640c",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/forms.tsv": "4d71aa9b767e9c86db1acb4fc9880422b50b50891cbf85d6730bfdcde980c19e",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/rationales.tsv": "a8174669950170c611de92eca658dcee5c82de8bbda5adeb8b7a31c47c551e6d",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_scopes.tsv": "29e3e6d30e852d47d8b6bbd4053a6f2de37e77c61db6d640a52bf4817533b0d7",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/review_targets.tsv": "c42f4bd9f481711e6f16cb56fe53fa68841b9995408ab37224a4f4dc053d8687",
+    "published-source/Germanic/docs/lexeme_reports/pgmc_reconstructions/sources.tsv": "fceac11e530a86d6bf78ebb1a64c141c9521627750d2a48ad631b04d5489a474",
+    "published-source/docs/refs.bib": "ccae644c90cfefa66a95c8a6dddf4b1187e06c7e49412275639288e8c43efcb1",
+    "scientific390-journal/events.ndjson": "c82621c0e49f86edb524bbbc6e7278acc1941f670816c022e3ff7265da296848",
+    "scientific390-journal/state.json": "b4e31d653b55866dbdcf09aef61936ab63e8635b5a0a3f3c376cc3c36b1cec35"
+  }
+}

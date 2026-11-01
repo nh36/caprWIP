@@ -201,7 +201,12 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
                 (directory / "cascade_baseline_outputs_pre_sc065_expansion.tsv")
                 .open(encoding="utf-8"), delimiter="\t")
         }
-        current = self.baseline
+        current = {
+            row["row_id"]: row
+            for row in csv.DictReader(
+                (directory / "cascade_baseline_outputs_pre_sc040_earthly.tsv")
+                .open(encoding="utf-8"), delimiter="\t")
+        }
         receipt = {
             row["field"]: row["value"]
             for row in csv.DictReader(
@@ -218,7 +223,8 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
             [],
         )
         summary = json.loads(
-            (directory / "cascade_baseline_summary.json").read_text(encoding="utf-8"))
+            (directory / "cascade_baseline_summary_pre_sc040_earthly.json")
+            .read_text(encoding="utf-8"))
         archived = json.loads(
             (directory / "cascade_baseline_summary_pre_sc065_expansion.json")
             .read_text(encoding="utf-8"))

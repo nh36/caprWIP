@@ -119,8 +119,7 @@ class EditorialPublicationTests(unittest.TestCase):
             after = parse_entries(assembly.assemble_report(
                 self.compact, self.index, self.report_map, mode=mode), self.index)
             self.assertEqual(set(after), set(before))
-            # 390 after the SC065 filth admission (row 2335).
-            self.assertEqual(len(after), 390)
+            self.assertEqual(len(after), 391)
             for row_id, lines in before.items():
                 original = assembly.trim_blank_edges(
                     [line for line in lines if not line.startswith("NOTE:")])
@@ -134,11 +133,11 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 169)
+        self.assertEqual(len(current), 170)
         # Earlier publications, SC112's witnesses, the scoped rainbow model
-        # and the SC065 filth publication.
+        # and the filth/earthly publications.
         added_ids = {"2137", "2148", "2185", "2200", "2224", "2283", "2333", "2334",
-                     "2335"}
+                     "2335", "2336"}
         added = [r for r in current if r["row_id"] in added_ids]
         self.assertEqual({r["row_id"] for r in added}, added_ids)
         unchanged = {r["row_id"]: r for r in current if r["row_id"] not in added_ids}

@@ -42,19 +42,18 @@ class IntegrationTests(unittest.TestCase):
         cls.cases = integration.table(ROOT / integration.DIRECTORY / "editorial_cases.tsv")
 
     def test_population_counts_and_unique_ids(self):
-        self.assertEqual(len(self.rows), 396)
-        self.assertEqual(len(self.editorial), 396)
-        for key, value in {"legacy": 380, "selected": 390, "audit": 396,
-                           # filth (2335) published in the SC065 closeout.
-                           "assembled": 169, "production_pilots": 11,
-                           "format_tests": 1, "reviewed_rows": 15, "scoped_cases": 18}.items():
+        self.assertEqual(len(self.rows), 397)
+        self.assertEqual(len(self.editorial), 397)
+        for key, value in {"legacy": 380, "selected": 391, "audit": 397,
+                           "assembled": 170, "production_pilots": 11,
+                           "format_tests": 1, "reviewed_rows": 16, "scoped_cases": 19}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
         required = {row["row_id"] for row in self.crosswalk if row["old_policy_requires_report"]}
         legacy_required = {identifier for identifier in required
                            if self.rows[identifier]["legacy380"]}
         self.assertIn("2224", legacy_required)
-        self.assertEqual(len(required - {"2224"}), 160)
+        self.assertEqual(len(required - {"2224"}), 161)
         self.assertEqual(len(legacy_required - {"2224"}), 150)
         self.assertEqual(self.stats["required"], len(required))
         self.assertEqual(self.stats["legacy_current_required"], len(legacy_required))
@@ -62,7 +61,7 @@ class IntegrationTests(unittest.TestCase):
     def test_added_witnesses_and_research_only(self):
         self.assertEqual(self.stats["added_selected"],
                          ["2322", "2326", "2327", "2328", "2329", "2330", "2332",
-                          "2333", "2334", "2335"])
+                          "2333", "2334", "2335", "2336"])
         self.assertEqual(self.stats["research_only"],
                          ["1935", "1947", "1948", "1994", "2156", "2218"])
         for row_id in self.stats["research_only"]:
@@ -258,8 +257,8 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual({p.name for p in first}, set(integration.OUTPUT_NAMES))
         rows = list(csv.DictReader(first[ROOT / integration.DIRECTORY / "population_crosswalk.tsv"]
                                    .splitlines(), delimiter="\t"))
-        self.assertEqual(len(rows), 396)
-        self.assertEqual(len({r["row_id"] for r in rows}), 396)
+        self.assertEqual(len(rows), 397)
+        self.assertEqual(len({r["row_id"] for r in rows}), 397)
 
     def test_graph_integration_follows_lexical_assembly(self):
         import artifact_graph

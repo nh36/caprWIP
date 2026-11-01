@@ -75,10 +75,10 @@ and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
   `9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597`
-- selected-390 corpus fingerprint (`outputs_sha256`):
-  `35bbd32df3f8c3e07c98ad24222a72130c7ff4ebe6de8fe1922464d5df4639c9`
+- selected-391 corpus fingerprint (`outputs_sha256`):
+  `efabc1f0512a862f601b651e6409b4e3265a5911b55ce9624b5661e297b8828e`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `0e938fac23de7065eefac0ab5ae378053ed6587891d5d9d2a70c440b3d4a209a`
+  `b91245d7cf13df96905fd3d4b9244e2fccff430851cf613c856a560a849c85e3`
 
 The authorized inherited-world input migration is recorded in
 `approved_world_input_migration.json`; `*_pre_sc036_world.*` preserves
@@ -91,7 +91,7 @@ The SC112 expansion adds only rows 2333 and 2334 (*there* and *where*):
 389 selected rows, 381 matches and the same eight mismatches. Every prior
 387 input, target, context and output is preserved in `*_pre_sc112_expansion.*`;
 the original-393 comparative survey remains a distinct historical scope
-from the current 396-row audit inventory.
+from the then-396-row audit inventory.
 
 The subsequent SC065 admission adds only row 2335 (*filth*, `*fūliþō` >
 `fȳlþ`), the live medial-syncope witness: 390 selected rows, 382 matches
@@ -108,6 +108,27 @@ gated: an explicitly selected article (editorial case with
 (scientific, publication, full validation) read-only. The three-level
 validation workflow and the optional parallel test lanes are documented in
 [docs/CI_VALIDATION.md](../../docs/CI_VALIDATION.md).
+
+SC040's subsequent source-bound adjudication reformulates explicit
+nonfinal medial prominence while retaining the segmental kernel and
+executable chronology. The pinned Foma delayed-identity diagnostic defect
+was reduced independently; all actual production-named protection,
+lowering and cleanup components pass the unchanged formal gate.
+Inherited SC038 and the accepted world, rainbow and soul histories remain
+unchanged. The earlier genuine DEFER and failed snapshots are preserved
+in `sound_changes/audits/sc040-adjudication.md`.
+
+The authorised earthly admission adds only row2336:
+`*érθa-kùnðǭ > eorþcunde`, the attested weak neuter accusative singular
+of Genesis A1627, documentary class `attested_variant`. Citation PROTO
+remains `*érθa-kùnðaz`; explicit same-stage PGmc cell metadata separates
+the two selections. The established baseline writer verifies 391 accepted,
+383 matching, eight unchanged mismatches and exact preservation of all
+390 earlier records. `*_pre_sc040_earthly.*` preserves that earlier
+population, and `corpus_expansion_sc040_earthly.tsv` records the approved
+transition. The mature article and ledger are selected for publication;
+final-source certification is carried by the renewed SC040 journal, not
+the archived 390-entry receipt.
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.

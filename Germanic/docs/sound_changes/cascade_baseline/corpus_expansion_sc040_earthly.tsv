@@ -1,0 +1,15 @@
+field	value
+adjudication	SC040
+previous_selected_count	390
+new_selected_count	391
+added_row_ids	2336
+previous_outputs_sha256	35bbd32df3f8c3e07c98ad24222a72130c7ff4ebe6de8fe1922464d5df4639c9
+new_outputs_sha256	efabc1f0512a862f601b651e6409b4e3265a5911b55ce9624b5661e297b8828e
+previous_match_count	382
+new_match_count	383
+previous_mismatch_count	8
+new_mismatch_count	8
+original_row_output_deltas	0
+original_row_record_deltas	0
+legacy_archive_preserved	1
+authorisation_record	../audits/sc040-experiments/population-transition.json

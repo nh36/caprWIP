@@ -1,0 +1,294 @@
+{
+  "status": "scientific_assay_passed_final_intended_source_awaiting_controlled_application",
+  "user_authorised_resumption": true,
+  "automatic_application_authorized": false,
+  "scientific_assay_passed": true,
+  "production_application_completed": false,
+  "source_head": "8d525e79c713d3d14803209a4330ad1d7d5b9180",
+  "research_integration_head": "25b48b93",
+  "row_id": "2336",
+  "row_allocated": false,
+  "formal_resolution": {
+    "QFoot": 1,
+    "QFootOne": 1,
+    "QLate": 1,
+    "QLateOne": 1,
+    "QSyll": 1,
+    "QULower": 1,
+    "QDecode": 1,
+    "direct_probes_correct": 12,
+    "diagnostic_false_negative_independently_resolved": true,
+    "validation_waiver": false,
+    "evidence_source": "parent-reported; no drafting-task execution"
+  },
+  "scientific_evidence": {
+    "assay_path": ".capr-work/experiments/sc040-corrected-adoption-02",
+    "memorandum_path": "Germanic/docs/sound_changes/audits/sc040-adjudication.md",
+    "complete_candidates": 43,
+    "component_controls": 58,
+    "all390_380_aligned_stages_unchanged": true,
+    "matches": 382,
+    "standing_mismatches": 8,
+    "weak_neuter_and_genitive_succeed": true,
+    "RDecode_byte_equivalent_reuse_with_definition_proof": true,
+    "fresh_scientific_tool_run_by_drafting_task": false
+  },
+  "full_current390_380_replay": "passed_source_bound_assay",
+  "adopted_calculation": "original_RFoot_no_MInit_MDrop_expanded_Prefix_initial_consonant_context",
+  "computation_wrapper": "SentenceCtx_not_FootCtx",
+  "canonical_lowering_wrapper": "FootCtx",
+  "initial_boundary_insertion": false,
+  "preceding_vowel_exclusion_addition": "*ù",
+  "historical_stop_document": "ARCHIVAL_STATUS.md",
+  "files": [
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/sources.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/sources.tsv",
+      "operation": "append",
+      "before_sha256": "4dca1060bbf514edd5c7cea0c6d5d51f3038792547f8c09ceb537e677df5d1e0",
+      "intended_sha256": "fceac11e530a86d6bf78ebb1a64c141c9521627750d2a48ad631b04d5489a474",
+      "appended_rows": 2,
+      "schema": [
+        "source_key",
+        "role",
+        "holding_paths",
+        "scope",
+        "edition_status",
+        "conventions_status",
+        "notes",
+        "consultation_mode",
+        "priority",
+        "payoff"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/forms.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/forms.tsv",
+      "operation": "append",
+      "before_sha256": "d1cedb565a77e0be8a81524429c50f884eb2370369917217ab7ae93249c8f515",
+      "intended_sha256": "4d71aa9b767e9c86db1acb4fc9880422b50b50891cbf85d6730bfdcde980c19e",
+      "appended_rows": 18,
+      "schema": [
+        "evidence_id",
+        "row_ids",
+        "source_key",
+        "printed_pages",
+        "locator",
+        "diplomatic_form",
+        "asserted_stage",
+        "form_kind",
+        "cell",
+        "comparison_form",
+        "normalization_basis",
+        "argument",
+        "verification",
+        "confidence",
+        "quoted_author",
+        "basis",
+        "notes"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv",
+      "operation": "append",
+      "before_sha256": "c459ea70c51bfbb06414c4bc400709db32477de45f44fdb0531e0e92143ae4ea",
+      "intended_sha256": "14fcbf40663904ae608d258eda57b49c619cd9dc965a8ed9f3d484a9d1cc640c",
+      "appended_rows": 9,
+      "schema": [
+        "row_id",
+        "source_key",
+        "status",
+        "evidence_ids",
+        "search_basis",
+        "assessment"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv",
+      "operation": "append",
+      "before_sha256": "33934cb360801c4d46d6de181e2fa4aae05e76ae45ec11e1466caa2628f288f1",
+      "intended_sha256": "12ab60562c57bbc44adec9073aa01cb0150a19c0ce8300145b6e89d797e0a186",
+      "appended_rows": 18,
+      "schema": [
+        "analysis_id",
+        "row_id",
+        "evidence_id",
+        "status",
+        "relation_to_row",
+        "attribution_status",
+        "comparison_unit",
+        "stage_interpretation",
+        "stage_basis",
+        "stage_evidence_ids",
+        "analytical_form",
+        "normalization_basis",
+        "normalization_evidence_ids",
+        "features",
+        "feature_evidence_ids",
+        "notes"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv",
+      "operation": "append",
+      "before_sha256": "f3279e1fc86a981eb0785683d3ebd641e0b3e8f699956059a0c59a5894241ef3",
+      "intended_sha256": "d68757b92ead53e06b375987639c6e8079db0134ab36f7c468b7d061c6524cd4",
+      "appended_rows": 1,
+      "schema": [
+        "comparison_id",
+        "row_ids",
+        "analysis_ids",
+        "scope",
+        "question",
+        "comparison_unit",
+        "type_tags",
+        "comparability",
+        "status",
+        "explanation_status",
+        "conclusion",
+        "premises",
+        "rationale_ids",
+        "notes",
+        "alignment_status",
+        "alignment_basis",
+        "alignment_evidence_ids",
+        "alignment_limits"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/rationales.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/rationales.tsv",
+      "operation": "append",
+      "before_sha256": "ceb1e016a59c9bf72f411f122c2c938bebe5403e18aa280ef4ea6f7ee6df7c35",
+      "intended_sha256": "a8174669950170c611de92eca658dcee5c82de8bbda5adeb8b7a31c47c551e6d",
+      "appended_rows": 1,
+      "schema": [
+        "rationale_id",
+        "analysis_ids",
+        "comparison_ids",
+        "basis_type",
+        "support_mode",
+        "evidence_ids",
+        "statement",
+        "premises",
+        "counterarguments",
+        "reason_target",
+        "conditioning_tags"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_scopes.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_scopes.tsv",
+      "operation": "append",
+      "before_sha256": "8b47d79d5cd1d89495fb276a20994b7f72db20c465c4af09b9eb91ec233dbf08",
+      "intended_sha256": "29e3e6d30e852d47d8b6bbd4053a6f2de37e77c61db6d640a52bf4817533b0d7",
+      "appended_rows": 7,
+      "schema": [
+        "scope_id",
+        "source_key",
+        "scope_kind",
+        "population_scope",
+        "row_ids",
+        "printed_pages",
+        "locator",
+        "selection_basis",
+        "status",
+        "evidence_ids",
+        "search_basis",
+        "assessment",
+        "verification",
+        "verification_limits"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_reconstructions/review_targets.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_reconstructions/review_targets.tsv",
+      "operation": "append",
+      "before_sha256": "ac89a96ee5238f8def5b289a8944cca91905c1931a89b87ff1d5f8f1ee5d386b",
+      "intended_sha256": "c42f4bd9f481711e6f16cb56fe53fa68841b9995408ab37224a4f4dc053d8687",
+      "appended_rows": 7,
+      "schema": [
+        "source_key",
+        "row_id",
+        "selection_basis",
+        "scope_ids"
+      ]
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/pgmc_integration/editorial_cases.tsv",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/pgmc_integration/editorial_cases.tsv",
+      "operation": "append",
+      "before_sha256": "c80235d3604cbaf11f1340456ca1eb98fdf6389f180faa6d67f8ed72f9048a0b",
+      "intended_sha256": "709456c69acdefba3b7376f024e2821e191f2db18ac064ce8ff3d73d93680055",
+      "appended_rows": 1,
+      "schema": [
+        "case_id",
+        "row_id",
+        "scope",
+        "category",
+        "evidence_ids",
+        "judgement",
+        "missing_premise",
+        "example_path",
+        "requires_extended_discussion",
+        "publication_source"
+      ]
+    },
+    {
+      "source_path": "docs/refs.bib",
+      "draft_path": "docs/refs.bib",
+      "operation": "already_applied_in_scientific_support_commit",
+      "before_sha256": "ccae644c90cfefa66a95c8a6dddf4b1187e06c7e49412275639288e8c43efcb1",
+      "intended_sha256": "ccae644c90cfefa66a95c8a6dddf4b1187e06c7e49412275639288e8c43efcb1",
+      "appended_rows": "3 bibliography entries",
+      "schema": "BibTeX",
+      "original_draft_before_sha256": "729df06c75a6a3f61ef5a9ead8a04e3c733ca94b9ad50596a00ac0dbdfc0222b",
+      "original_draft_intended_sha256": "b39b777c054f6685909cd32e25df043c85eabde9e109d3893a1d9e673530cafd",
+      "original_draft_path": ".capr-work/earthly-publication-drafts/SOURCE/docs/refs.bib"
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md",
+      "operation": "new",
+      "before_sha256": "absent",
+      "intended_sha256": "06cb0441da2e1c9589e294559bc0a953214842270e01b84b96cdaf0ca6a19ef9"
+    },
+    {
+      "source_path": "Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.source_ledger.md",
+      "draft_path": ".capr-work/earthly-publication-drafts/SOURCE/Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.source_ledger.md",
+      "operation": "new",
+      "before_sha256": "absent",
+      "intended_sha256": "093a48c7ea7b633772ececa8195bcfa139c3951aef138990c7aacd33501729f6"
+    }
+  ],
+  "explicit_application_authority": "User instruction: \"If SC040 passes its scientific and formal gates, perform the already authorised lexical adoption.\" Exact scholarly targets authorised after real SC040 scientific390 finalisation at35869c15.",
+  "scientific_finalization_commit": "35869c15",
+  "scientific_finalization_receipt": "/Users/nathanhill/Code/capr/.capr-work/worktrees/earthly-sc040/.capr-work/sc040-adoption-logs/SC040-scientific390-finalize-5471c17ef303465a8b33736a23aaa749.receipt.json",
+  "scope": "Lexical-source application declaration; not a fictitious expansion CLI or an alteration to the SC controller SOURCE map. Bibliography reconciled with the already committed supporting SCI additions; eleven other exact targets unchanged.",
+  "corpus_and_stage_targets": {
+    "Germanic/data/germanic-aligned-final.tsv": {
+      "before_sha256": "557113f8709633337feb51b1cd991f0db380ca567c20b7e784141f3d8c4fb540",
+      "intended_sha256": "646de04cec66c13ff00e1d4b8e4d87911a66f92c082496ca86ba95e42b9302b1"
+    },
+    "Germanic/data/entry_stage_metadata.tsv": {
+      "before_sha256": "57b13ae634d025f3f6eb9c98156739b8b6dcc99fb4973643664117a8390da933",
+      "intended_sha256": "e89576e75cacd7581e30f89e33d681d0e11adb6e099ceb89c3a8793fbcbe2376"
+    }
+  },
+  "new_identity": {
+    "row_id": "2336",
+    "cogids": "559",
+    "glossid": "388",
+    "proto": "*érθa-kùnðaz",
+    "protoform": "*érθa-kùnðǭ",
+    "counterpart": "eorþcunde",
+    "cell": "weak neuter accusative singular",
+    "locus": "Genesis A1627",
+    "derivation_class": "attested_variant",
+    "proto_stage": "pgmc",
+    "protoform_stage": "pgmc"
+  }
+}

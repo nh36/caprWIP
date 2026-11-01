@@ -106,8 +106,8 @@ def test_scientific_sources_and_archives_are_preserved():
     equivalent = json.loads((ROOT /
         "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json").read_text())
     assert equivalent["status"] == "equivalent"
-    # Row 2335 (filth) is the subsequent authorized SC065 admission.
-    assert equivalent["rows_compared"] == 390
+    # Filth and earthly are subsequent individually authorized admissions.
+    assert equivalent["rows_compared"] == 391
 
 
 def test_only_authorized_world_fields_changed():
@@ -119,12 +119,12 @@ def test_only_authorized_world_fields_changed():
     ):
         old = read_tsv(base_bytes(path).decode())
         new = read_tsv((ROOT / path).read_text())
-        # Rows 2333/2334 (SC112) and 2335 (SC065 filth) are subsequent
+        # Rows 2333/2334 (SC112), 2335 (filth) and 2336 (earthly) are subsequent
         # authorized corpus admissions; the world comparison covers the
         # shared population.
         old_ids = {row.get("ID", row.get("row_id")) for row in old}
         added = {row.get("ID", row.get("row_id")) for row in new} - old_ids
-        assert added <= {"2333", "2334", "2335"}
+        assert added <= {"2333", "2334", "2335", "2336"}
         new = [row for row in new if row.get("ID", row.get("row_id")) in old_ids]
         assert len(old) == len(new)
         differences = []
@@ -419,7 +419,7 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
     observed = json.loads((ASSAY / "migration.json").read_text())
     assert current["component_results"]["OEInterStressRaising"] == (
         observed["component_results"]["MCombined"])
-    assert current["selected_rows"] == 390
+    assert current["selected_rows"] == 391
     assert current["legacy380_identities"] == 380
     for model in current["models"].values():
         assert model["final_differences"] == []
