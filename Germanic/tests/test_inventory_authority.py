@@ -40,6 +40,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -264,11 +265,15 @@ class GeneratedProjectionTests(unittest.TestCase):
                          f"stale generated views:\n{proc.stdout}{proc.stderr}")
 
     def test_finalize_regenerates_the_projections(self):
-        # finalize drives the ONE artifact graph, whose registry_views node
-        # renders every generate_registry_views projection
-        src = (TOOLS / "adjudicate.py").read_text(encoding="utf-8")
-        self.assertIn("artifact_graph.refresh", src,
-                      "--finalize must run the control-plane refresh")
+        mod = load_module("adjudicate")
+        with mock.patch.object(mod.adjudication_control, "preflight",
+                               return_value=mock.Mock(blocked=False, render=lambda: "PASS")), \
+                mock.patch.object(mod.artifact_graph, "_refresh_unlocked", return_value=[]) as refresh, \
+                mock.patch.object(mod.artifact_graph, "verify_all", return_value=[]), \
+                mock.patch.object(mod, "check", return_value=0) as check:
+            self.assertEqual(mod.finalize("SC112"), 0)
+            refresh.assert_called_once_with(mode="full")
+            check.assert_called_once_with("SC112")
         graph_src = (TOOLS / "artifact_graph.py").read_text(encoding="utf-8")
         self.assertIn("generate_registry_views.build_all", graph_src,
                       "the graph must own the registry projections")
