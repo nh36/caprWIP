@@ -14,6 +14,7 @@ They demonstrate the Milestone 3 guarantees:
 """
 import json
 import hashlib
+import os
 import shutil
 import subprocess
 import sys
@@ -73,6 +74,13 @@ class RunHarness(unittest.TestCase):
         self.sc_dir = self.tmp / "Germanic/docs/sound_changes"
         shutil.copyfile(ag.SC_DIR / "registry/CONTROL_PLANE.md",
                         self.sc_dir / "registry/CONTROL_PLANE.md")
+        self.entrypoint = self.tmp / "Germanic/tools/adjudicate.py"
+        self.entrypoint.parent.mkdir()
+        shutil.copyfile(TOOLS / "adjudicate.py", self.entrypoint)
+        self.tests_dir = self.tmp / "Germanic/tests"
+        self.tests_dir.mkdir()
+        self.focused_test = self.tests_dir / "test_fixture.py"
+        self.focused_test.write_text("def test_fixture():\n    assert True\n")
         patches = [
             mock.patch("artifact_graph.nodes", return_value=()),
             mock.patch.object(ag, "REPO_ROOT", self.tmp),
@@ -113,16 +121,21 @@ class RunHarness(unittest.TestCase):
             if stage == "PROPAGATE":
                 run.begin_propagation({})
                 evidence = {"receipts": [self.receipt(
-                    [sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])]}
+                    [sys.executable, str(self.entrypoint), SC, "--finalize"])]}
             if stage == "VALIDATE":
                 evidence = {"receipts": receipts or self.validation_receipts()}
             run.complete_stage(stage, evidence=evidence)
             if stage == last_stage:
                 return
 
-    def receipt(self, argv=None, level=None, lane=None, rc=0):
+    def receipt(self, argv=None, level=None, lane=None, rc=0, cwd=None, output=None):
         def execute(argv, **kwargs):
-            kwargs["stdout"].write(b"2 passed, 5 skipped\n")
+            text = output or ("CONTROL PLANE CLEAN\n" if "--refresh" in argv
+                      else "STATUS OK (scientific/publication axes consistent)\n" if "--status" in argv
+                      else "Reader-facing semantic regression suite passed.\n"
+                      if str(self.entrypoint.with_name("check_reader_facing_semantics.py")) in argv
+                      else "2 passed, 5 skipped\n")
+            kwargs["stdout"].write(text.encode())
             for arg in argv:
                 if arg.startswith("--junitxml="):
                     Path(arg.split("=", 1)[1]).write_text(
@@ -130,10 +143,13 @@ class RunHarness(unittest.TestCase):
             return subprocess.CompletedProcess(argv, rc)
         with mock.patch.object(ac.subprocess, "run", side_effect=execute):
             return ac.run_logged(argv or [sys.executable, "-c", "pass"],
-                                 label="test", log_dir=self.tmp / "logs", level=level, lane=lane)
+                                 label="test", log_dir=self.tmp / "logs", cwd=cwd or self.tmp,
+                                 level=level, lane=lane)
 
     def validation_receipts(self):
-        return [self.receipt(level="A"), self.receipt(level="B"),
+        return [self.receipt([sys.executable, "-m", "pytest", "-q", str(self.focused_test)], "A"),
+                self.receipt([sys.executable, str(self.entrypoint), "--refresh"], "B"),
+                self.receipt([sys.executable, str(self.entrypoint), "--status"], "B"),
                 self.receipt([sys.executable, "-m", "pytest", "-q",
                               "--ignore=test_evidence_interface.py"], "C", "serial"),
                 self.receipt([sys.executable, "-m", "pytest", "-q",
@@ -245,7 +261,7 @@ class ResumeAndInvalidationTests(RunHarness):
         target.write_text("define Tiny a -> c;\n", encoding="utf-8")
         self.assertEqual(self.load().refresh_validity(), [])
         run.complete_stage("PROPAGATE", evidence={"receipts": [
-            self.receipt([sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])]})
+            self.receipt([sys.executable, str(self.entrypoint), SC, "--finalize"])]})
         self.assertEqual(self.load().refresh_validity(), [])
 
     def test_unexpected_edit_during_propagation_invalidates_evidence(self):
@@ -278,6 +294,76 @@ class ResumeAndInvalidationTests(RunHarness):
             run.complete_stage("PROPAGATE", evidence={"receipts": [self.receipt(rc=1)]})
         self.assertEqual(run.frontier(), "PROPAGATE")
 
+    def test_noop_and_unrelated_entry_points_cannot_attest_finalisation(self):
+        unrelated = self.tmp / "other/adjudicate.py"
+        unrelated.parent.mkdir()
+        unrelated.write_text("pass\n")
+        (self.tmp / "-m").symlink_to(self.entrypoint)
+        (self.tmp / f"{SC}.py").write_text("pass\n")
+        run = self.start()
+        self.advance_to(run, "DECIDE")
+        run.begin_propagation({})
+        for argv in (
+                [sys.executable, "-c", "pass", SC, "--finalize"],
+                [sys.executable, "-c", "pass", str(self.entrypoint), SC, "--finalize"],
+                [sys.executable, "-m", "unrelated", SC, "--finalize"],
+                [sys.executable, str(unrelated), SC, "--finalize"],
+                [sys.executable, str(self.entrypoint), "SC902", "--finalize"]):
+            with self.subTest(argv=argv):
+                receipt = self.receipt(argv)
+                with mock.patch.object(ac, "preflight") as preflight:
+                    with self.assertRaisesRegex(ar.WorkflowError, "SC-specific --finalize"):
+                        run.complete_stage("PROPAGATE", evidence={"receipts": [receipt]})
+                    preflight.assert_not_called()
+        self.assertEqual(run.frontier(), "PROPAGATE")
+        module_receipt = ac.run_logged(
+            [sys.executable, "-m", SC, "--finalize"], label="unrelated-module",
+            log_dir=self.tmp / "logs", cwd=self.tmp)
+        self.assertEqual(module_receipt["returncode"], 0)
+        with self.assertRaisesRegex(ar.WorkflowError, "SC-specific --finalize"):
+            run.complete_stage("PROPAGATE", evidence={"receipts": [module_receipt]})
+
+    def test_recorded_executable_uses_the_execution_path_not_the_controllers_path(self):
+        fake_python = self.tmp / "bin/python3"
+        fake_python.parent.mkdir()
+        fake_python.write_text("#!/bin/sh\nprintf '2 passed\\nCONTROL PLANE CLEAN\\nSTATUS OK\\n'\n")
+        fake_python.chmod(0o755)
+        env = dict(os.environ, PATH=str(fake_python.parent))
+        run = self.start()
+        self.advance_to(run, "DECIDE")
+        run.begin_propagation({})
+        receipt = ac.run_logged(
+            ["python3", str(self.entrypoint), SC, "--finalize"], label="masquerade",
+            log_dir=self.tmp / "logs", cwd=self.tmp, env=env)
+        self.assertEqual(receipt["returncode"], 0)
+        self.assertEqual(receipt["executable_path"], str(fake_python))
+        with self.assertRaisesRegex(ar.WorkflowError, "SC-specific --finalize"):
+            run.complete_stage("PROPAGATE", evidence={"receipts": [receipt]})
+        run.complete_stage("PROPAGATE", evidence={"receipts": [self.receipt(
+            [sys.executable, str(self.entrypoint), SC, "--finalize"])]})
+        for level, args, index in (
+                ("A", ["-m", "pytest", str(self.focused_test)], 0),
+                ("B", [str(self.entrypoint), "--refresh"], 1)):
+            with self.subTest(level=level):
+                receipts = self.validation_receipts()
+                receipts[index] = ac.run_logged(
+                    ["python3", *args], label=level, log_dir=self.tmp / "logs",
+                    cwd=self.tmp, env=env, level=level)
+                with self.assertRaisesRegex(ar.WorkflowError, f"Level {level} requires"):
+                    run.complete_stage("VALIDATE", evidence={"receipts": receipts})
+
+    def test_finalisation_accepts_resolved_aliases_and_python_options(self):
+        alias = self.entrypoint.with_name("finalisation-alias.py")
+        alias.symlink_to(self.entrypoint.name)
+        run = self.start()
+        self.advance_to(run, "DECIDE")
+        run.begin_propagation({})
+        receipt = self.receipt(
+            [sys.executable, "-B", "./finalisation-alias.py", SC, "--finalize"],
+            cwd=self.entrypoint.parent)
+        run.complete_stage("PROPAGATE", evidence={"receipts": [receipt]})
+        self.assertEqual(run.frontier(), "VALIDATE")
+
     def test_finalization_may_regenerate_authorised_graph_outputs(self):
         run = self.start()
         self.advance_to(run, "DECIDE")
@@ -291,7 +377,7 @@ class ResumeAndInvalidationTests(RunHarness):
                                        str(generated.relative_to(ar.REPO_ROOT)): "b" * 64})
         with mock.patch.object(ac, "source_identity", side_effect=[before, after]):
             receipt = self.receipt(
-                [sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])
+                [sys.executable, str(self.entrypoint), SC, "--finalize"])
         with mock.patch.object(ac, "source_identity", return_value=after):
             run.complete_stage("PROPAGATE", evidence={"receipts": [receipt]})
         self.assertEqual(run.frontier(), "VALIDATE")
@@ -339,7 +425,7 @@ class ScholarlyPropagationTests(RunHarness):
 
     def finish_propagation(self, run):
         run.complete_stage("PROPAGATE", evidence={"receipts": [self.receipt(
-            [sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])]})
+            [sys.executable, str(self.entrypoint), SC, "--finalize"])]})
 
     def test_authorised_scholarly_sequence_preserves_investigation_and_validates(self):
         run = self.start()
@@ -483,8 +569,7 @@ class PropagationIntegrationTests(RunHarness):
             return REGISTRY_HEADER + "\n" + "\t".join(row[h] for h in row) + "\n"
 
         self.files["registry"].write_text(registry_text(row))
-        tests = self.tmp / "tests"
-        tests.mkdir()
+        tests = self.tests_dir
         (tests / "conftest.py").write_text(
             "def pytest_addoption(parser):\n"
             "    parser.addoption('--validation-mode', default='full')\n")
@@ -496,6 +581,20 @@ class PropagationIntegrationTests(RunHarness):
             "def test_historical_replay(case):\n    assert False\n")
         (tests / "test_evidence_interface.py").write_text(
             "def test_exclusive_fixture():\n    assert True\n")
+        self.focused_test.write_text(
+            "from pathlib import Path\n"
+            "def test_propagated_source():\n"
+            "    root = Path(__file__).resolve().parents[2]\n"
+            "    assert (root / 'Germanic/fsts/germanic.txt').read_text() == 'define Tiny a -> c;\\n'\n"
+            "    assert 'Registry-verdict: SC901=RETAIN' in "
+            "(root / 'Germanic/docs/sound_changes/audits/sc901.md').read_text()\n"
+            "    assert (root / 'Germanic/docs/sound_changes/book_dossiers/sc901.md').is_file()\n")
+        (self.sc_dir / "registry/adjudication_programme.json").write_text(
+            json.dumps({"start_sc": SC}))
+        baseline = self.sc_dir / "cascade_baseline/cascade_baseline_summary.json"
+        baseline.parent.mkdir()
+        baseline.write_text(json.dumps({"total_lexemes": 1}))
+        shutil.copyfile(ac.TEMPLATE, self.sc_dir / "audits/ADJUDICATION_TEMPLATE.md")
         (self.tmp / ".gitignore").write_text(
             ".capr-work/\nruns/\nlogs/\n.pytest_cache/\n__pycache__/\n")
         for args in (["init", "-q"], ["add", "."],
@@ -546,30 +645,35 @@ class PropagationIntegrationTests(RunHarness):
             path.write_text(text)
         self.assertEqual(run.refresh_validity(), [])
 
-        # Exercise the actual CLI finalisation and kernel lock in a child
-        # process; only the graph and Docker availability probe are replaced.
-        code = f"""
-import sys
+        # Python startup substitutions exist only in this disposable fixture;
+        # receipts still invoke the unmodified repository entry point directly.
+        substitutions = self.tmp / ".capr-work/substitutions"
+        substitutions.mkdir(parents=True)
+        (substitutions / "sitecustomize.py").write_text(f"""
 from pathlib import Path
-sys.path.insert(0, {str(TOOLS)!r})
-import adjudicate as ad, adjudication_control as ac, artifact_graph as ag
-root = Path(sys.argv[1])
-ac.REPO_ROOT = ad.REPO_ROOT = ag.REPO_ROOT = root
+from subprocess import CompletedProcess
+import adjudication_control as ac, artifact_graph as ag, generate_registry_views as views
+import capr_runtime, pgmc_lexical_integration as pli
+root = Path({str(self.tmp)!r})
+ac.REPO_ROOT = ag.REPO_ROOT = root
 ac.WORK_DIR = root / '.capr-work'
 ac.RUNTIME_LOCK = ac.WORK_DIR / 'locks/runtime-runner.lock'
-ad.SC_REGISTRY = root / 'Germanic/docs/sound_changes/registry/sc_registry.tsv'
-ad.BASELINE_SUMMARY = root / 'Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json'
+ac.TEMPLATE = root / 'Germanic/docs/sound_changes/audits/ADJUDICATION_TEMPLATE.md'
+views.SC_REGISTRY = root / 'Germanic/docs/sound_changes/registry/sc_registry.tsv'
 ag.ARCHIVE_PATHS = ()
-preflight = ac.preflight
-ac.preflight = lambda sc, operation: preflight(sc, operation, probe_runner=False)
-ad._refresh_unlocked = lambda: 0
-ag.verify_all = lambda: []
-sys.argv = ['adjudicate.py', {SC!r}, '--finalize']
-sys.exit(ad.main())
-"""
+ag._refresh_unlocked = lambda **kwargs: []
+ag.verify_all = lambda **kwargs: []
+capr_runtime.run_in_runner = lambda *args, **kwargs: CompletedProcess(args, 0, stdout='', stderr='')
+pli.build = lambda: ([], [], {{
+    'selected': 1, 'assembled': 1, 'required': 1, 'philological_selected': 0,
+    'publication_selected_models': [], 'publication_missing_ledgers': [],
+    'required_not_assembled': []
+}})
+""")
+        env = dict(os.environ, PYTHONPATH=str(substitutions) + os.pathsep + str(TOOLS))
         receipt = ac.run_logged(
-            [sys.executable, "-c", code, str(self.tmp), SC, "--finalize"],
-            label="actual-finalization", log_dir=self.tmp / ".capr-work/logs", cwd=self.tmp)
+            [sys.executable, str(self.entrypoint), SC, "--finalize"],
+            label="actual-finalization", log_dir=self.tmp / ".capr-work/logs", cwd=self.tmp, env=env)
         self.assertEqual(receipt["returncode"], 0, Path(receipt["stdout_log"]).read_text())
         ac.verify_receipt(receipt, allow_source_change=True)
         run.complete_stage("PROPAGATE", evidence={"receipts": [receipt]})
@@ -581,9 +685,12 @@ sys.exit(ad.main())
         self.assertTrue(all(check["status"] != ac.BLOCKED for check in fresh["checks"]))
 
         receipts = [ac.run_logged(
-            [sys.executable, "-c", "pass"], label=level,
-            log_dir=self.tmp / ".capr-work/logs", cwd=self.tmp, level=level)
-            for level in ("A", "B")]
+            [sys.executable, "-m", "pytest", "-q", str(self.focused_test)], label="focused",
+            log_dir=self.tmp / ".capr-work/logs", cwd=tests, level="A")]
+        for operation in ("--refresh", "--status"):
+            receipts.append(ac.run_logged(
+                [sys.executable, str(self.entrypoint), operation], label=operation,
+                log_dir=self.tmp / ".capr-work/logs", cwd=self.tmp, env=env, level="B"))
         for lane, args in (("serial", ["--ignore=test_evidence_interface.py"]),
                            ("exclusive", ["test_evidence_interface.py"])):
             receipts.append(ac.run_logged(
@@ -673,6 +780,59 @@ class ValidationReceiptTests(RunHarness):
     def test_matching_receipts_complete_validate(self):
         run = self._at_validate()
         run.complete_stage("VALIDATE", evidence={"receipts": self.validation_receipts()})
+        self.assertEqual(run.frontier(), "COMPLETE")
+
+    def test_noop_receipts_cannot_attest_level_a_or_b(self):
+        run = self._at_validate()
+        for level, index in (("A", 0), ("B", 1)):
+            with self.subTest(level=level):
+                receipts = self.validation_receipts()
+                receipts[index] = self.receipt([sys.executable, "-c", "pass"], level=level)
+                with self.assertRaisesRegex(ar.WorkflowError, f"Level {level} requires"):
+                    run.complete_stage("VALIDATE", evidence={"receipts": receipts})
+
+    def test_level_b_requires_both_prescribed_checks_and_the_real_entry_point(self):
+        run = self._at_validate()
+        receipts = self.validation_receipts()
+        for missing in (1, 2):
+            with self.subTest(missing=missing):
+                with self.assertRaisesRegex(ar.WorkflowError, "both --refresh and --status"):
+                    run.complete_stage("VALIDATE", evidence={
+                        "receipts": receipts[:missing] + receipts[missing + 1:]})
+        receipts[1] = self.receipt(
+            [sys.executable, "-c", "pass", "--refresh"], level="B")
+        with self.assertRaisesRegex(ar.WorkflowError, "Level B requires"):
+            run.complete_stage("VALIDATE", evidence={"receipts": receipts})
+
+    def test_level_a_requires_executed_focused_tests(self):
+        run = self._at_validate()
+        for args, output in (
+                (["--collect-only", str(self.focused_test)], None),
+                ([str(self.focused_test)], "7 skipped\n"),
+                ([], None)):
+            with self.subTest(args=args, output=output):
+                receipts = self.validation_receipts()
+                receipts[0] = self.receipt(
+                    [sys.executable, "-m", "pytest", "-q", *args], level="A", output=output)
+                with self.assertRaisesRegex(ar.WorkflowError, "Level A requires"):
+                    run.complete_stage("VALIDATE", evidence={"receipts": receipts})
+
+    def test_protocol_command_variants_and_semantic_regressions_are_supported(self):
+        semantics = self.entrypoint.with_name("check_reader_facing_semantics.py")
+        shutil.copyfile(TOOLS / semantics.name, semantics)
+        run = self._at_validate()
+        receipts = self.validation_receipts()
+        receipts[0] = self.receipt(
+            [sys.executable, "-B", "-m", "pytest", "-q",
+             str(self.focused_test) + "::test_fixture", "-k", "fixture"], level="A")
+        receipts[1] = self.receipt(
+            [sys.executable, "-u", "./adjudicate.py", "--refresh", "--mode", "full"],
+            cwd=self.entrypoint.parent, level="B")
+        receipts.append(self.receipt(
+            [sys.executable, "-m", "pytest", "-q", "-k", "fixture"],
+            cwd=self.tests_dir, level="A"))
+        receipts.append(self.receipt([sys.executable, str(semantics)], level="A"))
+        run.complete_stage("VALIDATE", evidence={"receipts": receipts})
         self.assertEqual(run.frontier(), "COMPLETE")
 
     def test_missing_identity_is_not_a_match(self):

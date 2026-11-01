@@ -83,7 +83,7 @@ work:
 cd Germanic/tests && python3 -m pytest -q \
     test_lexical_editorial_publication.py test_pgmc_lexical_integration.py \
     test_lexical_editorial_order.py
-python3 Germanic/docs/tools/check_reader_facing_semantics.py
+python3 Germanic/tools/check_reader_facing_semantics.py
 ```
 
 **Level B — integrated consistency** (a few minutes). After a coherent group
@@ -98,6 +98,19 @@ python3 Germanic/tools/adjudicate.py --status    # read-only three-axis report
 artifact-graph freshness and lexical publication obligations (including
 explicitly selected articles that are missing, unassembled or unledgered),
 and states explicitly that full validation is a separate axis it cannot attest.
+
+Execution receipts must identify these commands, not merely carry an A/B
+label: A requires targeted pytest selectors with executed passing tests, or
+the reader-facing semantic regression suite; B requires both a clean full
+`--refresh` and successful `--status` from the resolved repository
+`Germanic/tools/adjudicate.py` entry point. Relative paths, aliases resolving
+to that entry point and the explicit `--refresh --mode full` form are valid.
+PROPAGATE likewise requires a direct invocation of that entry point with
+`SCNNN --finalize`; an unrelated command or `python -c` wrapper cannot attest
+finalisation. Authentic receipts, unchanged source identities and successful
+exit codes remain mandatory. The runner records the executable resolved using
+the execution environment and working directory, so a custom PATH cannot
+masquerade as the controller's installed Python interpreter.
 
 **Level C — full strict validation** (the authoritative final gate). Once the
 SOURCE state is final:

@@ -45,6 +45,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -129,6 +130,62 @@ def domain_identity(domain: str, sc_id: str) -> str:
 
 class WorkflowError(RuntimeError):
     """A stage transition violates its prerequisites; message is actionable."""
+
+
+def _command_executable(receipt: dict) -> Path | None:
+    path = receipt.get("executable_path")
+    return Path(path).resolve() if path and Path(path).is_file() else None
+
+
+def _python_arguments(receipt: dict) -> list[str] | None:
+    """Recognise installed Python invocations, not shell or -c wrappers."""
+    argv = receipt["argv"]
+    executable = _command_executable(receipt)
+    interpreters = {Path(sys.executable).resolve()}
+    interpreters.update(Path(p).resolve() for name in ("python", "python3")
+                        if (p := shutil.which(name)))
+    if executable not in interpreters:
+        return None
+    args = argv[1:]
+    while args and args[0] in ("-B", "-u", "-E", "-s", "-I", "-P"):
+        args = args[1:]
+    return args
+
+
+def _script_arguments(receipt: dict, relative: str) -> list[str] | None:
+    entry = (REPO_ROOT / relative).resolve()
+    if not entry.is_file():
+        return None
+    args = _python_arguments(receipt)
+    if args and not args[0].startswith("-") and (Path(receipt["cwd"]) / args[0]).resolve() == entry:
+        return args[1:]
+    if _command_executable(receipt) == entry:
+        return receipt["argv"][1:]
+    return None
+
+
+def _focused_tests(receipt: dict) -> bool:
+    args = _python_arguments(receipt)
+    if args and args[:2] == ["-m", "pytest"]:
+        args = args[2:]
+    else:
+        pytest = shutil.which("pytest")
+        if not pytest or _command_executable(receipt) != Path(pytest).resolve():
+            return False
+        args = receipt["argv"][1:]
+    if {"--collect-only", "--collectonly", "--co", "--help", "-h", "--version", "-V"} & set(args):
+        return False
+    tests = (REPO_ROOT / "Germanic/tests").resolve()
+    if Path(receipt["cwd"]).resolve().is_relative_to(tests) and any(
+            arg in ("-k", "-m") and i + 1 < len(args) and args[i + 1].strip()
+            for i, arg in enumerate(args)):
+        return True
+    for arg in args:
+        path = (Path(receipt["cwd"]) / arg.split("::", 1)[0]).resolve()
+        if (path.is_relative_to(tests) and path.is_file()
+                and path.name.startswith("test_") and path.suffix == ".py"):
+            return True
+    return False
 
 
 class Run:
@@ -399,7 +456,8 @@ class Run:
                     adjudication_control.verify_receipt(receipt, allow_source_change=True)
                 except (ValueError, OSError, KeyError) as exc:
                     raise WorkflowError(f"PROPAGATE receipt invalid: {exc}") from exc
-            if not any(r["argv"][-2:] == [self.sc_id, "--finalize"] for r in receipts):
+            if not any(_script_arguments(r, "Germanic/tools/adjudicate.py") ==
+                       [self.sc_id, "--finalize"] for r in receipts):
                 raise WorkflowError("PROPAGATE requires the SC-specific --finalize command")
             final_preflight = adjudication_control.preflight(self.sc_id, "finalize", probe_runner=False)
             if final_preflight.blocked:
@@ -484,6 +542,27 @@ class Run:
         levels = {r["level"] for r in receipts}
         if not {"A", "B", "C"} <= levels:
             raise WorkflowError("VALIDATE requires Level A, B and complete strict Level C evidence")
+        integrated = set()
+        for receipt in receipts:
+            if receipt["level"] not in ("A", "B"):
+                continue
+            log = Path(receipt["stdout_log"]).read_text() + Path(receipt["stderr_log"]).read_text()
+            if receipt["level"] == "A":
+                semantics = _script_arguments(receipt, "Germanic/tools/check_reader_facing_semantics.py")
+                if not ((_focused_tests(receipt) and re.search(r"\b[1-9]\d* passed\b", log))
+                        or (semantics == [] and "Reader-facing semantic regression suite passed." in log)):
+                    raise WorkflowError("Level A requires executed focused tests or the prescribed semantic regression suite")
+            if receipt["level"] == "B":
+                args = _script_arguments(receipt, "Germanic/tools/adjudicate.py")
+                if args in (["--refresh"], ["--refresh", "--mode", "full"]) and re.search(
+                        r"^CONTROL PLANE CLEAN$", log, re.MULTILINE):
+                    integrated.add("refresh")
+                elif args == ["--status"] and re.search(r"^STATUS OK\b", log, re.MULTILINE):
+                    integrated.add("status")
+                else:
+                    raise WorkflowError("Level B requires the prescribed integrated --refresh/--status checks")
+        if integrated != {"refresh", "status"}:
+            raise WorkflowError("Level B requires both --refresh and --status execution receipts")
         strict = [r for r in receipts if r["level"] == "C"]
         lanes = {r["lane"] for r in strict}
         if not ({"serial", "exclusive"} <= lanes or

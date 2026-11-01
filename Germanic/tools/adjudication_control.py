@@ -39,6 +39,7 @@ import io
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -145,6 +146,10 @@ def run_logged(argv: list[str], *, label: str, log_dir: Path,
     before = source_identity()
     safe = re.sub(r"[^A-Za-z0-9._-]+", "-", label)[:80] + "-" + uuid.uuid4().hex
     argv = list(argv)
+    execution_cwd = Path(cwd or REPO_ROOT).resolve()
+    search_path = os.pathsep.join(str(execution_cwd / p) for p in os.get_exec_path(env))
+    command = str(execution_cwd / argv[0]) if "/" in argv[0] else argv[0]
+    executable = shutil.which(command, path=search_path)
     junit = log_dir / f"{safe}.junit.xml"
     if level == "C" and argv[1:3] == ["-m", "pytest"]:
         argv.append(f"--junitxml={junit.resolve()}")
@@ -169,7 +174,8 @@ def run_logged(argv: list[str], *, label: str, log_dir: Path,
         "receipt_path": str(receipt_path.resolve()),
         "label": label,
         "argv": list(argv),
-        "cwd": str(cwd or REPO_ROOT),
+        "executable_path": str(Path(executable).resolve()) if executable else None,
+        "cwd": str(execution_cwd),
         "started_at": started,
         "finished_at": _utcnow(),
         "returncode": returncode,
