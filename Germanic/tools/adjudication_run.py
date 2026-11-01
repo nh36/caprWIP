@@ -166,11 +166,13 @@ class Run:
     def _current_identities(self, domains) -> dict:
         return {d: domain_identity(d, self.sc_id) for d in domains}
 
-    def _input_hashes(self) -> dict:
+    def _input_hashes(self, extra_paths=()) -> dict:
+        paths = [Path(p) for p in extra_paths]
+        paths.extend(p for domain in ("executable_model", "corpus", "registry", "memo")
+                     for p in _domain_files(domain, self.sc_id))
         return {str(p.resolve()): hashlib.sha256(p.read_bytes()).hexdigest()
                 if p.is_file() else "absent"
-                for domain in ("executable_model", "corpus", "registry", "memo")
-                for p in _domain_files(domain, self.sc_id)}
+                for p in paths}
 
     def begin_propagation(self, modifications: dict[str, str]) -> None:
         """Before edits, pin the decision's exact SOURCE paths and target hashes."""
@@ -185,18 +187,18 @@ class Run:
         executable = {str(p.resolve()) for domain in ("executable_model", "corpus")
                       for p in _domain_files(domain, self.sc_id)}
         import artifact_graph
-        protected = {str(p.resolve()) for p in artifact_graph.ARCHIVE_PATHS}
-        generated = {str(p.resolve()) for node in artifact_graph.nodes() for p in node.outputs()}
-        protected.update(generated)
+        generated = {p.resolve() for node in artifact_graph.nodes() for p in node.outputs()}
         targets = {}
         for ref, sha in modifications.items():
             path = (REPO_ROOT / ref).resolve()
-            if (str(path) not in before or str(path) in protected
+            if (artifact_graph.propagation_path_kind(path, generated=generated) != "SOURCE"
                     or not re.fullmatch(r"[0-9a-f]{64}", sha)):
                 raise WorkflowError(f"not an authorised SOURCE path/hash: {ref}")
             if "DEFER" in decision["verdict"].split("/") and str(path) in executable:
                 raise WorkflowError("DEFER permits documentation, not executable or selected-input propagation")
             targets[str(path)] = sha
+        before.update(self._input_hashes(targets))
+        state["stages"]["PREFLIGHT"]["scope"] = "investigation"
         state["propagation"] = {"before": before, "targets": targets,
                                 "pre_change_source": adjudication_control.source_identity(),
                                 "generated_paths": [str(Path(p).relative_to(REPO_ROOT))
@@ -210,7 +212,7 @@ class Run:
         propagation = state.get("propagation")
         if not propagation:
             return False
-        current = self._input_hashes()
+        current = self._input_hashes(propagation["before"])
         if propagation.get("completed_hashes"):
             experimental_paths = {str(p.resolve()) for domain in ("executable_model", "corpus")
                                   for p in _domain_files(domain, self.sc_id)}
@@ -249,12 +251,31 @@ class Run:
                 continue
             if stage in FROZEN_AFTER_PROPAGATE and sanctioned:
                 continue  # the propagated edit was the sanctioned change
+            if stage == "PREFLIGHT" and sanctioned:
+                propagation = state["stages"].get("PROPAGATE", {})
+                if (not state["propagation"].get("completed_hashes")
+                        or (state["propagation"].get("finalization_preflight")
+                            and propagation.get("domain_identities") == self._current_identities(
+                                STAGE_DOMAINS["PROPAGATE"]))):
+                    # This gate remains evidence of investigation prerequisites,
+                    # not certification of the edited state. Finalisation has its
+                    # own fresh, source-bound preflight below.
+                    continue
             stale = []
             for domain, recorded in record.get("domain_identities",
                                                {}).items():
                 current = domain_identity(domain, self.sc_id)
                 if current != recorded:
                     stale.append(domain)
+            if stage == "PROPAGATE":
+                accepted = state["propagation"]["completed_hashes"]
+                current = self._input_hashes(state["propagation"]["targets"])
+                if any(current[p] != accepted.get(p) for p in state["propagation"]["targets"]):
+                    stale.append("propagated_sources")
+            if (stage == "VALIDATE"
+                    and record["source_identity"]["identity_sha256"] !=
+                    adjudication_control.source_identity()["identity_sha256"]):
+                stale.append("validated_source_identity")
             if stale:
                 record["status"] = "invalidated"
                 record["invalidated_because"] = (
@@ -367,7 +388,7 @@ class Run:
             propagation = state.get("propagation")
             if not propagation or not self._sanctioned_changes(state):
                 raise WorkflowError("PROPAGATE requires a controlled begin and no unexpected edits")
-            current = self._input_hashes()
+            current = self._input_hashes(propagation["before"])
             if any(current[path] != sha for path, sha in propagation["targets"].items()):
                 raise WorkflowError("PROPAGATE target hashes do not match the authorised modifications")
             receipts = evidence.get("receipts", [])
@@ -380,6 +401,14 @@ class Run:
                     raise WorkflowError(f"PROPAGATE receipt invalid: {exc}") from exc
             if not any(r["argv"][-2:] == [self.sc_id, "--finalize"] for r in receipts):
                 raise WorkflowError("PROPAGATE requires the SC-specific --finalize command")
+            final_preflight = adjudication_control.preflight(self.sc_id, "finalize", probe_runner=False)
+            if final_preflight.blocked:
+                raise WorkflowError(f"finalisation preflight blocked: {final_preflight.render()}")
+            certified_identity = receipts[-1]["source_identity_after"]["identity_sha256"]
+            if (final_preflight.source.get("identity_sha256") != certified_identity
+                    or adjudication_control.source_identity()["identity_sha256"] != certified_identity):
+                raise WorkflowError("SOURCE changed after the finalisation receipt")
+            propagation["finalization_preflight"] = final_preflight.to_json()
             propagation["completed_hashes"] = current
         record = {
             "status": "complete",

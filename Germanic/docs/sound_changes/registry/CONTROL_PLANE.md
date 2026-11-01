@@ -33,6 +33,8 @@ are GENERATED or ARCHIVE.
 | `registry/sc_inventory_annotations.tsv` | GENERATED | Projection joining the two human sources with `germanic.txt` (definition text, stable anchor) and the coverage census (`firing_count`, `firing_lexemes`). Never hand-edit |
 | `Germanic/fsts/germanic.txt` | machine-state | Executable rule semantics and cascade composition |
 | `audits/*.md` adjudication memos | scientific-reasoning | Per-SC scientific reasoning; each carries a machine-readable `Registry-verdict:` line that must agree with the registry |
+| `literature_dossiers/*.md`, `literature_dossiers/*/*.md` | scientific-reasoning | Source-backed literature dossiers, including thematic subdirectories; existing and newly authored documents remain SOURCE, not graph projections |
+| `Germanic/docs/lexeme_reports/model_entries/*.model.md` | scientific-reasoning | Mature lexical histories consumed by the publication graph; generated lexical reports are not editable SOURCE |
 | `reader_facing/[0-9]*.md`, `reader_facing/chap*-intro.md`, `book_dossiers/*.md` | publication-prose | Exactly one authoritative reader file per published SC, owned only by `sc_registry.tsv.source_reader_facing_file`; shared historical context belongs in chapter introductions. Composite networks of the same SC stay together. Book dossiers may remain grouped. `adjudicate.py SCNNN --prepare` follows registry pointers |
 | `cascade_baseline/cascade_baseline_summary.json` | machine-state | Frozen fingerprints (change only via the explicit adjudication/refreeze procedure) |
 | `cascade_baseline/approved_input_migrations.tsv` | machine-state | Exact approved old/new selected input, counterpart and output by stable OE row ID and concept, with adjudication pointer. Gift changes input only; knee changes its selected paradigm cell; SC034 straw changes regular output only, retaining the attested target as a known mismatch. Every undeclared field/multiplicity change and archival rewrite remains forbidden |
@@ -45,7 +47,7 @@ are GENERATED or ARCHIVE.
 | `cascade_baseline/approved_world_input_migration.json` | machine-state | Exact world2302 input-only transition to inherited compact i-stem; unchanged target, output, context and match flag. Apply with `adjudicate.py SC036 --adopt-cell-baseline --approval approved_world_input_migration.json`; preserves `*_pre_sc036_world.*` and all older archives |
 | `Germanic/docs/CURRENT_STATE.md` | publication-prose | Current phase and standard commands (the next SC is derived: `adjudicate.py --next`) |
 | `Germanic/docs/assembly/lexical_editorial_order.tsv` | publication-prose | Explicit exceptions to the default lexical presentation order (derivation class, then alphabetical Modern English headword; a revisable editorial policy): `row_id`, `sort_as` headword, `reason`. Empty unless a scholarly decision requires an exception. Consumed only by `build_class_manifests.py`; it never alters an entry's data or identity |
-| `Germanic/docs/README.md`, `sound_changes/README.md` | publication-prose | Navigation |
+| `Germanic/docs/README.md`, `README.md` | publication-prose | Navigation |
 | `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md`, `audits/ADJUDICATION_TEMPLATE.md` | publication-prose | Method |
 
 Registry document pointers (`capr_evidence`, `chronology_card`,

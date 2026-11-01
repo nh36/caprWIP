@@ -1,8 +1,9 @@
 """Tests for the durable adjudication workflow journal (adjudication_run).
 
-All tests are synthetic: dependency domains are redirected to temp files,
-source identity is stubbed, and no Docker, Foma or real registry access
-occurs.  They demonstrate the Milestone 3 guarantees:
+Tests use disposable SOURCE fixtures, with no production science edits or
+Docker/Foma work. One integration test runs the real preflight, finalisation,
+Git identity, locking and receipt paths, mocking only expensive graph work.
+They demonstrate the Milestone 3 guarantees:
 
 * an interrupted run resumes without rerunning validated evidence when
   inputs are unchanged, and invalidates it when the FST changed;
@@ -25,8 +26,12 @@ from types import SimpleNamespace
 TOOLS = Path(__file__).resolve().parents[1] / "tools"
 sys.path.insert(0, str(TOOLS))
 
+import artifact_graph as ag  # noqa: E402
 import adjudication_run as ar  # noqa: E402
 import adjudication_control as ac  # noqa: E402
+
+REAL_SOURCE_IDENTITY = ac.source_identity
+REAL_PREFLIGHT = ac.preflight
 
 SC = "SC901"
 
@@ -52,25 +57,45 @@ class RunHarness(unittest.TestCase):
     """Shared synthetic environment for workflow tests."""
 
     def setUp(self):
-        self.tmp = Path(tempfile.mkdtemp(prefix="capr-run-test-"))
+        self.tmp = Path(tempfile.mkdtemp(prefix="capr-run-test-")).resolve()
         self.addCleanup(shutil.rmtree, self.tmp)
         self.runs = self.tmp / "runs"
         self.files = {}
-        for domain in ("executable_model", "corpus", "registry", "memo"):
-            path = self.tmp / ("germanic.txt" if domain == "executable_model" else f"{domain}.txt")
+        for domain, relative in {
+                "executable_model": "Germanic/fsts/germanic.txt",
+                "corpus": "Germanic/data/germanic-aligned-final.tsv",
+                "registry": "Germanic/docs/sound_changes/registry/sc_registry.tsv",
+                "memo": "Germanic/docs/sound_changes/audits/sc901.md"}.items():
+            path = self.tmp / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(f"{domain} v1\n", encoding="utf-8")
             self.files[domain] = path
+        self.sc_dir = self.tmp / "Germanic/docs/sound_changes"
+        shutil.copyfile(ag.SC_DIR / "registry/CONTROL_PLANE.md",
+                        self.sc_dir / "registry/CONTROL_PLANE.md")
         patches = [
             mock.patch("artifact_graph.nodes", return_value=()),
+            mock.patch.object(ag, "REPO_ROOT", self.tmp),
+            mock.patch.object(ag, "SC_DIR", self.sc_dir),
+            mock.patch.object(ag, "BASELINE_DIR", self.sc_dir / "cascade_baseline"),
+            mock.patch.object(ar, "REPO_ROOT", self.tmp),
             mock.patch.object(ar, "_domain_files",
                               lambda domain, sc: [self.files[domain]]),
-            mock.patch.object(ac, "source_identity",
-                              lambda: {"identity_sha256": "f" * 64,
-                                       "head": "deadbeef", "dirty": []}),
+            mock.patch.object(ac, "source_identity", self.source_identity),
+            mock.patch.object(ac, "preflight", side_effect=self.preflight),
         ]
         for patch in patches:
             patch.start()
             self.addCleanup(patch.stop)
+
+    def source_identity(self):
+        changes = {p.relative_to(self.tmp).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                   for p in sorted((self.tmp / "Germanic").rglob("*")) if p.is_file()}
+        return {"identity_sha256": hashlib.sha256(json.dumps(changes, sort_keys=True).encode()).hexdigest(),
+                "head_commit": "deadbeef", "worktree_changes": changes}
+
+    def preflight(self, sc_id, operation, **kwargs):
+        return ac.PreflightReport(sc_id, operation, source=ac.source_identity())
 
     def start(self):
         return ar.start(SC, runs_dir=self.runs)
@@ -260,9 +285,10 @@ class ResumeAndInvalidationTests(RunHarness):
         with mock.patch("artifact_graph.nodes", return_value=(
                 SimpleNamespace(outputs=lambda: [generated]),)):
             run.begin_propagation({})
-        before = {"identity_sha256": "f" * 64, "worktree_changes": {}}
-        after = {"identity_sha256": "a" * 64,
-                 "worktree_changes": {str(generated.relative_to(ar.REPO_ROOT)): "b" * 64}}
+        before = self.source_identity()
+        after = dict(before, identity_sha256="a" * 64,
+                     worktree_changes={**before["worktree_changes"],
+                                       str(generated.relative_to(ar.REPO_ROOT)): "b" * 64})
         with mock.patch.object(ac, "source_identity", side_effect=[before, after]):
             receipt = self.receipt(
                 [sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])
@@ -284,6 +310,288 @@ class ResumeAndInvalidationTests(RunHarness):
         report = self.load().report()
         self.assertIn("invalidated", report)
         self.assertIn("blockers", report)
+
+
+class ScholarlyPropagationTests(RunHarness):
+
+    def prepare_edits(self, run, *, verdict="RETAIN"):
+        reader = self.sc_dir / "reader_facing/0901-test.md"
+        reader.parent.mkdir(exist_ok=True)
+        reader.write_text("Existing reader discussion.\n")
+        new_dossier = self.sc_dir / "book_dossiers/new-adjudication.md"
+        new_dossier.parent.mkdir(exist_ok=True)
+        self.edits = {**{p: f"{domain} propagated\n" for domain, p in self.files.items()
+                         if domain != "corpus"},
+                      reader: "Integrated reader discussion.\n",
+                      new_dossier: "New source-backed dossier.\n"}
+        if verdict == "DEFER":
+            del self.edits[self.files["executable_model"]]
+        modifications = {str(p.relative_to(self.tmp)): hashlib.sha256(text.encode()).hexdigest()
+                         for p, text in self.edits.items()}
+        self.advance_to(run, "DECIDE", decision=dict(
+            DECISION, verdict=verdict, intended_source_modifications=modifications))
+        run.begin_propagation(modifications)
+        return reader, new_dossier
+
+    def apply_edits(self):
+        for path, text in self.edits.items():
+            path.write_text(text)
+
+    def finish_propagation(self, run):
+        run.complete_stage("PROPAGATE", evidence={"receipts": [self.receipt(
+            [sys.executable, str(TOOLS / "adjudicate.py"), SC, "--finalize"])]})
+
+    def test_authorised_scholarly_sequence_preserves_investigation_and_validates(self):
+        run = self.start()
+        _, new_dossier = self.prepare_edits(run)
+        before = run.state()["stages"]["PREFLIGHT"]
+        self.assertEqual(run.state()["propagation"]["before"][str(new_dossier)], "absent")
+        self.apply_edits()
+        self.assertEqual(run.refresh_validity(), [])
+        self.finish_propagation(run)
+        state = run.state()
+        self.assertEqual(state["stages"]["PREFLIGHT"], before)
+        fresh = state["propagation"]["finalization_preflight"]
+        self.assertEqual(fresh["operation"], "finalize")
+        self.assertEqual(fresh["status"], ac.PASS)
+        self.assertNotEqual(fresh["source_identity"]["identity_sha256"],
+                            before["source_identity"]["identity_sha256"])
+        run.complete_stage("VALIDATE", evidence={"receipts": self.validation_receipts()})
+        self.assertEqual(run.refresh_validity(), [])
+        self.assertEqual(run.frontier(), "COMPLETE")
+
+    def test_unexpected_registry_model_and_document_edits_block_completion(self):
+        for kind in ("registry", "executable_model", "document"):
+            with self.subTest(kind=kind):
+                run = self.start()
+                self.prepare_edits(run)
+                self.apply_edits()
+                if kind == "document":
+                    unexpected = self.sc_dir / "reader_facing/0902-unrelated.md"
+                else:
+                    unexpected = self.files[kind]
+                unexpected.write_text("Not part of the authorised decision.\n")
+                with self.assertRaises(ar.WorkflowError):
+                    self.finish_propagation(run)
+                self.assertNotEqual(run.state()["stages"].get("PROPAGATE", {}).get("status"),
+                                    "complete")
+                shutil.rmtree(self.runs)
+                if kind == "document":
+                    unexpected.unlink()
+
+    def test_missing_or_wrong_new_document_hash_blocks_completion(self):
+        for create in (False, True):
+            with self.subTest(create=create):
+                run = self.start()
+                _, new_dossier = self.prepare_edits(run)
+                self.apply_edits()
+                if create:
+                    new_dossier.write_text("Unapproved contents.\n")
+                else:
+                    new_dossier.unlink()
+                with self.assertRaisesRegex(ar.WorkflowError, "target hashes"):
+                    self.finish_propagation(run)
+                shutil.rmtree(self.runs)
+
+    def test_fresh_finalisation_preflight_is_required(self):
+        run = self.start()
+        self.prepare_edits(run)
+        self.apply_edits()
+        blocked = self.preflight(SC, "finalize")
+        blocked.add("memo_verdict", ac.BLOCKED, "memo does not agree with registry")
+        with mock.patch.object(ac, "preflight", return_value=blocked):
+            with self.assertRaisesRegex(ar.WorkflowError, "finalisation preflight blocked"):
+                self.finish_propagation(run)
+        self.assertEqual(run.frontier(), "PROPAGATE")
+
+    def test_defer_can_propagate_documentation_but_not_executable_changes(self):
+        run = self.start()
+        old_fst = self.files["executable_model"].read_bytes()
+        self.prepare_edits(run, verdict="DEFER")
+        self.apply_edits()
+        self.finish_propagation(run)
+        self.assertEqual(self.files["executable_model"].read_bytes(), old_fst)
+        self.assertEqual(run.frontier(), "VALIDATE")
+
+    def test_unapproved_document_change_invalidates_completed_validation(self):
+        run = self.start()
+        reader, _ = self.prepare_edits(run)
+        self.apply_edits()
+        self.finish_propagation(run)
+        run.complete_stage("VALIDATE", evidence={"receipts": self.validation_receipts()})
+        reader.write_text("Later unapproved reader change.\n")
+        self.assertIn("VALIDATE", run.refresh_validity())
+        run.refresh_validity()
+        self.assertEqual(run.state()["stages"]["PREFLIGHT"]["status"], "complete")
+        with self.assertRaises(ar.WorkflowError):
+            run.complete_stage("COMPLETE")
+
+    def test_unrelated_document_change_invalidates_completed_validation(self):
+        run = self.start()
+        self.advance_to(run, "VALIDATE")
+        unrelated = self.sc_dir / "literature_dossiers/unrelated.md"
+        unrelated.parent.mkdir()
+        unrelated.write_text("Later unrelated scholarly source.\n")
+        self.assertEqual(run.refresh_validity(), ["VALIDATE"])
+
+    def test_generated_archived_protected_unknown_and_escaping_paths_rejected(self):
+        paths = [self.sc_dir / "registry/sc_inventory_annotations.tsv",
+                 self.sc_dir / "reader_facing/archive/0901-retired.md",
+                 self.sc_dir / "cascade_baseline/cascade_baseline_summary.json",
+                 self.tmp / "Germanic/docs/unknown-source.md",
+                 self.tmp / "../outside-source.md"]
+        generated = SimpleNamespace(outputs=lambda: [paths[0]])
+        for path in paths:
+            with self.subTest(path=path):
+                run = self.start()
+                modifications = {str(path): "a" * 64}
+                self.advance_to(run, "DECIDE", decision=dict(
+                    DECISION, intended_source_modifications=modifications))
+                with mock.patch.object(ag, "nodes", return_value=[generated]):
+                    with self.assertRaisesRegex(ar.WorkflowError, "authorised SOURCE"):
+                        run.begin_propagation(modifications)
+                shutil.rmtree(self.runs)
+
+    def test_existing_source_map_covers_new_literature_and_model_documents(self):
+        for relative in ("literature_dossiers/new.md", "literature_dossiers/topic/new.md",
+                         "../lexeme_reports/model_entries/new.model.md"):
+            with self.subTest(path=relative):
+                self.assertEqual(ag.propagation_path_kind(
+                    self.sc_dir / relative, generated=set()), "SOURCE")
+
+
+class PropagationIntegrationTests(RunHarness):
+
+    def test_real_finalisation_receipt_for_registry_memo_reader_and_new_dossier(self):
+        import adjudicate as ad
+        from test_adjudication_control import REGISTRY_HEADER, VALID_MEMO
+
+        reader = self.sc_dir / "reader_facing/0901-test.md"
+        dossier = self.sc_dir / "book_dossiers/sc901.md"
+        reader.parent.mkdir()
+        dossier.parent.mkdir()
+        reader.write_text("Existing scholarly discussion.\n")
+        self.files["executable_model"].write_text("define Tiny a -> b;\n")
+        self.files["memo"].write_text("Pre-decision investigation notes.\n")
+        row = dict.fromkeys(REGISTRY_HEADER.split("\t"), "")
+        row.update(sc_id=SC, lifecycle_status="active", entry_type="historical_change",
+                   fst_identifier="Tiny", adjudication_status="pending",
+                   adjudication_memo=str(self.files["memo"].relative_to(self.tmp)),
+                   source_reader_facing_file=str(reader.relative_to(self.tmp)))
+
+        def registry_text(row):
+            return REGISTRY_HEADER + "\n" + "\t".join(row[h] for h in row) + "\n"
+
+        self.files["registry"].write_text(registry_text(row))
+        tests = self.tmp / "tests"
+        tests.mkdir()
+        (tests / "conftest.py").write_text(
+            "def pytest_addoption(parser):\n"
+            "    parser.addoption('--validation-mode', default='full')\n")
+        (tests / "test_serial.py").write_text(
+            "import pytest\n"
+            "def test_fixture():\n    assert True\n"
+            "@pytest.mark.parametrize('case', range(5))\n"
+            "@pytest.mark.skip(reason='synthetic historical-replay exception')\n"
+            "def test_historical_replay(case):\n    assert False\n")
+        (tests / "test_evidence_interface.py").write_text(
+            "def test_exclusive_fixture():\n    assert True\n")
+        (self.tmp / ".gitignore").write_text(
+            ".capr-work/\nruns/\nlogs/\n.pytest_cache/\n__pycache__/\n")
+        for args in (["init", "-q"], ["add", "."],
+                     ["-c", "user.name=CAPR fixture", "-c", "user.email=fixture@example.invalid",
+                      "-c", "core.hooksPath=/dev/null", "-c", "commit.gpgsign=false",
+                      "commit", "-qm", "Synthetic investigation fixture\n\n"
+                      "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"]):
+            subprocess.run(["git", *args], cwd=self.tmp, check=True, capture_output=True)
+
+        patches = [
+            mock.patch.object(ac, "source_identity", REAL_SOURCE_IDENTITY),
+            mock.patch.object(ac, "preflight", REAL_PREFLIGHT),
+            mock.patch.object(ac, "REPO_ROOT", self.tmp),
+            mock.patch.object(ac, "WORK_DIR", self.tmp / ".capr-work"),
+            mock.patch.object(ac, "RUNTIME_LOCK", self.tmp / ".capr-work/locks/runtime-runner.lock"),
+            mock.patch.object(ag, "ARCHIVE_PATHS", ()),
+            mock.patch.object(ad, "REPO_ROOT", self.tmp),
+            mock.patch.object(ad, "SC_REGISTRY", self.files["registry"]),
+            mock.patch.object(ad, "BASELINE_SUMMARY",
+                              self.sc_dir / "cascade_baseline/cascade_baseline_summary.json"),
+        ]
+        for patch in patches:
+            patch.start()
+            self.addCleanup(patch.stop)
+
+        run = self.start()
+        run.complete_stage("INSPECT")
+        investigation = ac.preflight(SC, "investigate", probe_runner=False)
+        self.assertFalse(investigation.blocked, investigation.render())
+        run.complete_stage("PREFLIGHT", evidence=investigation.to_json())
+        run.complete_stage("SNAPSHOT", evidence={
+            "no_executable_experiment": "integration fixture; no counterfactual compilation"})
+        run.complete_stage("INVESTIGATE", evidence={"fixture": "pre-change evidence"})
+        row.update(adjudication_status="adjudicated", verdict="RETAIN",
+                   capr_evidence=str(dossier.relative_to(self.tmp)))
+        edits = {self.files["executable_model"]: "define Tiny a -> c;\n",
+                 self.files["registry"]: registry_text(row),
+                 self.files["memo"]: VALID_MEMO.replace("SC900", SC),
+                 reader: "Existing scholarly discussion, integrated with the verdict.\n",
+                 dossier: "New scholarly SOURCE dossier.\n"}
+        modifications = {str(p.relative_to(self.tmp)): hashlib.sha256(text.encode()).hexdigest()
+                         for p, text in edits.items()}
+        run.complete_stage("DECIDE", evidence=dict(
+            DECISION, intended_source_modifications=modifications))
+        run.begin_propagation(modifications)
+        old_preflight = run.state()["stages"]["PREFLIGHT"]
+        for path, text in edits.items():
+            path.write_text(text)
+        self.assertEqual(run.refresh_validity(), [])
+
+        # Exercise the actual CLI finalisation and kernel lock in a child
+        # process; only the graph and Docker availability probe are replaced.
+        code = f"""
+import sys
+from pathlib import Path
+sys.path.insert(0, {str(TOOLS)!r})
+import adjudicate as ad, adjudication_control as ac, artifact_graph as ag
+root = Path(sys.argv[1])
+ac.REPO_ROOT = ad.REPO_ROOT = ag.REPO_ROOT = root
+ac.WORK_DIR = root / '.capr-work'
+ac.RUNTIME_LOCK = ac.WORK_DIR / 'locks/runtime-runner.lock'
+ad.SC_REGISTRY = root / 'Germanic/docs/sound_changes/registry/sc_registry.tsv'
+ad.BASELINE_SUMMARY = root / 'Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json'
+ag.ARCHIVE_PATHS = ()
+preflight = ac.preflight
+ac.preflight = lambda sc, operation: preflight(sc, operation, probe_runner=False)
+ad._refresh_unlocked = lambda: 0
+ag.verify_all = lambda: []
+sys.argv = ['adjudicate.py', {SC!r}, '--finalize']
+sys.exit(ad.main())
+"""
+        receipt = ac.run_logged(
+            [sys.executable, "-c", code, str(self.tmp), SC, "--finalize"],
+            label="actual-finalization", log_dir=self.tmp / ".capr-work/logs", cwd=self.tmp)
+        self.assertEqual(receipt["returncode"], 0, Path(receipt["stdout_log"]).read_text())
+        ac.verify_receipt(receipt, allow_source_change=True)
+        run.complete_stage("PROPAGATE", evidence={"receipts": [receipt]})
+        state = run.state()
+        self.assertEqual(state["stages"]["PREFLIGHT"], old_preflight)
+        fresh = state["propagation"]["finalization_preflight"]
+        self.assertEqual(fresh["source_identity"]["identity_sha256"],
+                         receipt["source_identity_after"]["identity_sha256"])
+        self.assertTrue(all(check["status"] != ac.BLOCKED for check in fresh["checks"]))
+
+        receipts = [ac.run_logged(
+            [sys.executable, "-c", "pass"], label=level,
+            log_dir=self.tmp / ".capr-work/logs", cwd=self.tmp, level=level)
+            for level in ("A", "B")]
+        for lane, args in (("serial", ["--ignore=test_evidence_interface.py"]),
+                           ("exclusive", ["test_evidence_interface.py"])):
+            receipts.append(ac.run_logged(
+                [sys.executable, "-m", "pytest", "-q", *args], label=lane,
+                log_dir=self.tmp / ".capr-work/logs", cwd=tests, level="C", lane=lane))
+        run.complete_stage("VALIDATE", evidence={"receipts": receipts})
+        self.assertEqual(run.refresh_validity(), [])
+        self.assertEqual(run.frontier(), "COMPLETE")
 
 
 class ScientificGateTests(RunHarness):

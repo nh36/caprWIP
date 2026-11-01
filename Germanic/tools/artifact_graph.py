@@ -621,6 +621,39 @@ def declared_outputs(*, mode: str = "full") -> dict:
     return {node.name: sorted(node.outputs()) for node in nodes(mode=mode)}
 
 
+def propagation_path_kind(path: Path, *, generated: set[Path]) -> str:
+    """Classify propagation using this graph and the existing SOURCE map.
+
+    SOURCE globs also describe files not yet created. Unknown paths fail
+    closed; operational journals do not define new source authorities.
+    """
+    from oe_trace_parse import SOURCE_PATHS
+    path = path.resolve()
+    try:
+        relative = path.relative_to(REPO_ROOT.resolve())
+    except ValueError:
+        return "UNKNOWN"
+    if path in {p.resolve() for p in ARCHIVE_PATHS} or "archive" in relative.parts:
+        return "ARCHIVE"
+    if path.is_relative_to(BASELINE_DIR.resolve()):
+        return "PROTECTED_BASELINE"
+    if path in generated:
+        return "GENERATED"
+    if relative.as_posix() in SOURCE_PATHS.values():
+        return "SOURCE"
+    source_map = (SC_DIR / "registry/CONTROL_PLANE.md").read_text(encoding="utf-8")
+    source_table = source_map.split("## SOURCE (", 1)[1].split("## GENERATED (", 1)[0]
+    for line in source_table.splitlines():
+        fields = line.split("|")
+        if len(fields) < 4 or "GENERATED" in fields[2]:
+            continue
+        for pattern in re.findall(r"`([^`]+)`", fields[1]):
+            base = REPO_ROOT if pattern.startswith(("Germanic/", "backend/")) else SC_DIR
+            if path.match(str(base.resolve() / pattern)):
+                return "SOURCE"
+    return "UNKNOWN"
+
+
 def inventory() -> list[dict]:
     """Describe the existing graph without verifying holdings or building."""
     return [

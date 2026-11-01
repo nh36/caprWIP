@@ -250,9 +250,16 @@ derived from the existing v2 full-trace provenance contract: a memo
 edit invalidates only PREFLIGHT; an FST or corpus edit invalidates
 INVESTIGATE/DECIDE. Before edits, `--run begin-propagation CHANGES.json`
 records the decision's SOURCE paths and intended SHA256 values, together
-with the pre-change state. Only those controlled edits preserve the
-pre-decision evidence. Complete PROPAGATE after a successful receipted
-`SCNNN --finalize` and matching target hashes, never before editing.
+with the pre-change state (new declared SOURCE files start as `absent`).
+Eligibility comes from the existing control-plane SOURCE map and graph
+ownership, not a workflow whitelist; GENERATED, ARCHIVE and protected
+baselines cannot be ordinary propagation targets. Only those controlled
+edits preserve the pre-decision evidence, including the investigation
+PREFLIGHT. That earlier gate does not certify the edited state:
+PROPAGATE records a separate fresh finalisation preflight against the
+receipted post-change source identity. Complete PROPAGATE after a successful
+receipted `SCNNN --finalize`, fresh preflight and matching target hashes,
+never before editing.
 Unexpected edits remain unsanctioned; DEFER cannot authorise executable
 or selected-input changes. VALIDATE is always checked
 against the exact current tree.
