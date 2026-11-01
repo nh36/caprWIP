@@ -48,8 +48,7 @@ class EditorialPublicationTests(unittest.TestCase):
 
     def test_scoped_philology_is_independent_of_derivation_status(self):
         self.assertIn("2224", self.old_required)
-        # 160 after the SC065 filth admission (row 2335).
-        self.assertEqual(len(self.old_required - {"2224"}), 160)
+        self.assertEqual(len(self.old_required - {"2224"}), 161)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
         self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])
@@ -57,7 +56,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertFalse(straw.has_production_manifest_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
                          PRINCIPAL | {"1934", "1941", "2148", "2162", "2224", "2283",
-                                      "2335"})
+                                      "2335", "2336"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -239,7 +238,7 @@ class EditorialPublicationTests(unittest.TestCase):
             if not row.editorial_report_path:
                 continue
             path = REPORTS / row.editorial_report_path
-            old = "" if row.row_id in {"1941", "2148", "2224", "2283", "2335"} else committed(path)
+            old = "" if row.row_id in {"1941", "2148", "2224", "2283", "2335", "2336"} else committed(path)
             pattern = r"\[[^\]\n]*@[^\]\n]*(?:\n[^\]]*)?\]"
             added = Counter(re.findall(pattern, path.read_text())) - Counter(re.findall(pattern, old))
             for block in added:
@@ -249,6 +248,8 @@ class EditorialPublicationTests(unittest.TestCase):
                     self.assertIn(match[1], keys)
                     if row.row_id == "2148" and match[1] == "BosworthToller1898":
                         self.assertRegex(citation, r",\s*s\.v\.\s*regn-boga")
+                    elif match[1] in {"BosworthToller1898", "Toller1921"}:
+                        self.assertRegex(citation, r",\s*(?:pp?\.\s*\d+|s\.vv?\.\s*\S)")
                     else:
                         self.assertRegex(citation, r",\s*pp?\.\s*\d+")
                     count += 1

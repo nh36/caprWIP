@@ -1,13 +1,13 @@
 # Old English lexeme-report coverage audit
 
-- Total OE rows with real counterpart: 390
+- Total OE rows with real counterpart: 391
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 165
-- Required rows with published SOURCE: 23
+- Rows requiring lexeme report: 166
+- Required rows with published SOURCE: 24
 - Required rows with no published SOURCE: 142
-- Rows selected independently for philological discussion: 13
+- Rows selected independently for philological discussion: 14
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 150
+- Required rows with source material available but no manifest-backed production report: 151
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 228
@@ -19,7 +19,7 @@
 
 | DERIVATION_CLASS | Total rows | Required | Manifest-backed production reports | Source material available | No source material found |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| attested_variant | 4 | 4 | 1 | 3 | 0 |
+| attested_variant | 5 | 5 | 1 | 4 | 0 |
 | early_analogy | 35 | 35 | 2 | 33 | 0 |
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 29 | 29 | 4 | 25 | 0 |
@@ -44,6 +44,7 @@
 | 2330 | thought | þōhte | regular | yes | certified_editorial_source | - | model_entries/2330-thought-þōhte.model.md | NOTE, philological=thought-connectorless-origin |
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
 | 2335 | filth | fȳlþ | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
+| 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
 
 ## Required rows with manifest-backed production reports
 
@@ -215,6 +216,7 @@
 | 2333 | there | þǣr | regular | yes | source_material | - | model_entries/2333-there-þǣr.model.md, model_entries/2333-there-þǣr.source_ledger.md | NOTE |
 | 2334 | where | hwǣr | regular | yes | source_material | - | model_entries/2334-where-hwǣr.model.md, model_entries/2334-where-hwǣr.source_ledger.md | NOTE |
 | 2335 | filth | fȳlþ | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
+| 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
 
 ## Required rows with no source material found
 

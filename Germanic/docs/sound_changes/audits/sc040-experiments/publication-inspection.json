@@ -1,0 +1,47 @@
+{
+  "scope": "Actual rendered earthly publication and index inspection, not a strict-test certificate",
+  "selected_row_id": "2336",
+  "model_sha256": "d3b5d953a2b78708334764282351534e6ffc88aa9922bc6db51bc6872ad66102",
+  "build_receipt": ".capr-work/sc040-final-logs/SC040-final391-publications-resolved-links-48a8161c6539452aae0391f9827eea57.receipt.json",
+  "class": {
+    "name": "attested_variant",
+    "position": 2,
+    "preceding_headword": "cud",
+    "following_headword": "ten"
+  },
+  "combined_book": {
+    "path": "Germanic/docs/assembly/capr_book_draft_alpha_01.pdf",
+    "sha256": "38f8530d0968d7cf87a9f0b453734a78f30b29475f4cf50659ea492adaf05d62",
+    "physical_pages": 317,
+    "earthly_section": "7.2",
+    "earthly_printed_pages": [197, 198, 199, 200, 201],
+    "earthly_pdf_pages": [199, 200, 201, 202, 203],
+    "sc040_contrast_printed_page": 101,
+    "oe_index_printed_page": 310,
+    "pgmc_index_printed_page": 313,
+    "index_entry_locator": 197
+  },
+  "standalone_lexical_volume": {
+    "path": "Germanic/docs/assembly/lexical_volume_alpha_01.pdf",
+    "sha256": "ee3ba54bdc008801e6214e590d513812aaa8209ca5ff5bf1816a143e744c079e",
+    "physical_pages": 165,
+    "earthly_printed_pages": [70, 71, 72, 73]
+  },
+  "standalone_reader": {
+    "path": "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.pdf",
+    "sha256": "88b68426994d403484c43274207ca3a7c9e1ebe6848a5aa42be5d43f518ef2a4",
+    "physical_pages": 113,
+    "sc040_contrast_printed_page": 99
+  },
+  "inspection": [
+    "Read actual extracted PDF text and viewed rasterized article-opening and foot-analysis pages.",
+    "Viewed combined-book SC040 explanation, earthly opening and both OE and PGmc index pages.",
+    "Verified preserved citation/input distinction, nasal ending and decoded u; no visible missing glyphs or overlapping new tables.",
+    "Verified eorþcunde and the three citation/input serialization entries point to printed page197.",
+    "The complete derivation report, mature lexical volume and combined manuscript include the admitted entry through canonical graph regeneration."
+  ],
+  "limits": [
+    "Computed eorþcundes is an independent control, not a second admitted attestation.",
+    "No complete -cund paradigm, fresh manuscript collation or whole-source reading completion is certified."
+  ]
+}

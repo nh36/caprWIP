@@ -287,6 +287,16 @@ end
 -- head (Campbell1959, pp. 155–156). This is a contextual shared-gloss allowance,
 -- not spelling normalization or permission to omit the paragraph's first gloss.
 local SHARED_GLOSS_VARIANTS = {
+  ["eorþ.cun.de"] = {
+    anchor = "eorþcunde",
+    context = "In eorþ.cun.de",
+    prior = true,
+  },
+  ["eorþcundes"] = {
+    anchor = "eorþcunde",
+    context = "In eorþ.cun.de",
+    prior = true,
+  },
   ["hēafud"] = {
     anchor = "hēafod",
     context = "Campbell records both hēafud and hēafod",
@@ -457,7 +467,8 @@ local function check_para(el, is_p2, in_prose_section)
       local immediate_gloss = has_gloss_after(el.content, i)
       local variant = SHARED_GLOSS_VARIANTS[norm]
       local shared_gloss = variant and is_p2 == (variant.part2 or false)
-        and glossed[variant.anchor]
+        and (glossed[variant.anchor]
+          or (variant.prior and established_glosses[variant.anchor]))
         and paragraph:find(variant.context, 1, true)
       local repeated_gloss = false
       if established_glosses[norm] then

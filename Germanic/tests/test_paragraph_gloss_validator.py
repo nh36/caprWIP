@@ -111,6 +111,30 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_sc040_projections_require_the_prior_lemma_and_exact_context(self):
+        context = (
+            "In *eorþ.cun.de*, the syllables differ. "
+            "The genitive control *eorþcundes* has the same contrast."
+        )
+        antecedent = "*eorþcunde* 'earthly' is the selected witness.\n\n"
+        result = self.validate(antecedent + context)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for text in (
+            context,
+            context + "\n\n" + antecedent,
+            antecedent + "Other forms are *eorþ.cun.de* and *eorþcundes*.",
+            "# Word-by-word derivations\n\n#### Old English evidence\n\n"
+            + antecedent + context,
+        ):
+            with self.subTest(text=text):
+                result = self.validate(text)
+                self.assertEqual(result.returncode, 2, result.stderr)
+
+    def test_released_sc040_reader_passes_without_repeating_lemma_glosses(self):
+        reader = FILTER.parents[1] / "docs/sound_changes/reader_facing/040-medial-unstressed-u-lowering.md"
+        result = self.validate(reader.read_text(encoding="utf-8"))
+        self.assertEqual(result.returncode, 0, result.stderr)
+
     def test_first_occurrence_is_per_paragraph(self):
         result = self.validate("*cū* 'cow' and *cū*.\n\nAgain *cū*.\n")
         self.assertEqual(result.returncode, 2, result.stderr)

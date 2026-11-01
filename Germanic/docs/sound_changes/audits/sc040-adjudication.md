@@ -520,3 +520,50 @@ the pre-admission receipt as current.
 6. The inherited-ending origin alternative and pre-existing strict
    Ringe–Taylor reading-completeness gap remain honestly recorded.
    Neither execution nor ordinary mature publication waives those limits.
+
+### Subsequent earthly admission and final391 source closure
+
+The pre-admission finding above remains historical. Scientific propagation
+was genuinely finalised at `35869c15`; its journal was explicitly archived
+with final validation pending, not reset or presented as a final391 receipt.
+The subsequent final-source run uses the documented no-new-executable-
+experiment exception: the accepted MP implementation is unchanged.
+
+The explicitly authorised new identity 2336 is now admitted: comparative
+PROTO `*érθa-kùnðaz`, selected PROTOFORM `*érθa-kùnðǭ`, attested target
+`eorþcunde`, weak neuter accusative singular, Genesis A 1627,
+`attested_variant`. Explicit entry-stage metadata records a same-stage
+Proto-Germanic paradigm-cell selection, not a transponent. No sentence
+context, other selected input, counterpart or non-OE sibling was changed.
+
+The existing baseline writer and `sc040-experiments/population-transition.json`
+document the authorised new-ID expansion. Every old390 record is identical
+in every field; their corpus and stage-metadata bytes, all earlier approvals
+and the immutable original380 archive are preserved. The verified transition
+is 390/382/eight to 391/383/eight, with zero final ambiguity and the same
+eight mismatch identities. The genuine current391 SC040 evidence command
+forces a fresh production/sandbox rebuild, verifies all391 final outputs
+equivalent and records the unchanged ten-row live lowering census.
+
+The mature earthly article and source ledger are applied SOURCE, with the
+reconstruction apparatus and editorial case. Canonical projections include
+it in the full derivation report, mature lexical volume and combined book:
+second in the attested-variant class, between cud and ten. The four new
+semantic index sites are explicitly authorised additions; two computed
+Old English controls are excluded from source-citation indexing, not hidden
+by rewriting the article. Dictionary lemma locators remain legitimate;
+Campbell's syncope pages reuse the existing SC065 citation.
+
+Two documentary metadata corrections retain the original application
+declaration as history: Toller1921's opportunistic passage scope is retained,
+but its invalid new core review target is removed; the comparison joins
+different source units rather than claiming competing authored whole-cell
+reconstructions, so its explanation is a descriptive bridge, not a mixed
+divergence explanation. Neither correction waives a source-reading gate.
+The SC038 reader reference is plain text because that inherited support
+stage has no published anchor; its position and semantics are unchanged.
+
+Actual rendered-page inspection and the final source-bound A/B plus both
+strict Level C receipts belong to the renewed journal and completion
+evidence, not the archived scientific390 receipt. All scientific and
+documentary limitations listed above remain in force.

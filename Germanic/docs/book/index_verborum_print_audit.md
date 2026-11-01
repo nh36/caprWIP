@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2481
-- Internal production unique forms: 1158
-- Printed main occurrences: 2392
-- Printed main unique forms: 1148
+- Internal production occurrences: 2485
+- Internal production unique forms: 1162
+- Printed main occurrences: 2396
+- Printed main unique forms: 1152
 - Printed excluded occurrences: 89
 - Printed excluded unique forms: 68
 
@@ -15,8 +15,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1246 | 494 |
-| Proto-Germanic | 994 | 550 |
+| Old English | 1247 | 495 |
+| Proto-Germanic | 997 | 553 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -36,9 +36,9 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 412 |
-| source_protoform | 361 |
-| selected_input | 557 |
+| target_form | 413 |
+| source_protoform | 363 |
+| selected_input | 558 |
 | comparison_form | 840 |
 | evidence_form | 222 |
 
@@ -65,7 +65,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1165
+- Unique printed entries: 1169
 - Print anomaly rows: 51
 - Hard print anomalies: 0
 

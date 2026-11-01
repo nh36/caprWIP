@@ -197,7 +197,7 @@ ending is already within the input notation.
 
 [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope)
 reads the earlier compound accent before
-[SC038 OEStripSecondaryStress](#rule-OEStripSecondaryStress)
+SC038 OEStripSecondaryStress
 removes it at its inherited position. At
 [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering),
 the independently computed medial prominence excludes this
@@ -241,7 +241,7 @@ been independently established. Fulk's strong paradigm allows
 \emph{*-(a)izōz}; the experimental
 \emph{*eorþcundere > *eorþcundre} requires additional pre-\emph{r}
 syncope research, not an adopted ending repair
-[@Fulk2018, pp. 209--211; @Campbell1959, §§388--393;
+[@Fulk2018, pp. 209--211; @Campbell1959, pp. 157--159, §§388--393;
 @RingeTaylor2014, pp. 264--266].
 
 The Benedict sentence has *eorþcundum* 'earthly' agreeing with

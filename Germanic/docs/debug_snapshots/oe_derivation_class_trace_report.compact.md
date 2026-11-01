@@ -9071,7 +9071,7 @@ NOTE: Paradigm-cell target: GenSg þistles (masc. a-stem). NomSg simplex *þistl
 
 
 
-=== DERIVATION_CLASS: attested_variant (4) ===
+=== DERIVATION_CLASS: attested_variant (5) ===
 
 
 
@@ -9097,6 +9097,32 @@ English Proto Input: *kwéðuz
 Outcome: cwedu
 
 NOTE: Kroonen (2013:313) *kweduz m. u-stem 'resin' (Leiden orthography: *d* = [ð] intervocalically); Orel (2003) *kweðuz explicit; R/T (2014:323) PWGmc *kwidu presupposes PGmc *e-grade. PIE *gʷet-u- (Pokorny); Skt jatú 'lac' confirms PIE *t → PGmc *ð via Verner's Law in the mobile-accent u-stem paradigm; ON kváða preserves *ð directly. OE attests cwedu (Leechdoms, WS conservative e-grade), cwidu (classical WS paradigm-levelled i-grade), cweodu (Anglian back-umlaut), cwudu (Late WS w-rounding), cudu (kw>k before /u/). PROTOFORM *kwéðuz corrected 2026-04-24 from incorrect *kwíθuz; the FST's PWGmcDentalHardening yields cwedu directly. See DEV_NOTES §17.14.
+
+
+
+# earthly
+PROTO: *érθa-kùnðǭ
+EXPECTED: eorþcunde
+OUTPUTS: eorþcunde
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *érθakùnðǭ
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *érθkùndǭ<br>OE Strip Secondary Stress: *érθkundǭ<br>OE Breaking: *éorθkundǭ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
+
+
+
+### Orthography & surface
+
+Old English Orthography: *éorþkunde
+Outcome: eorþcunde
+
+NOTE: Attested weak neuter accusative singular in Genesis A 1627, agreeing with neuter eád as the object of ageaf; poetic weak inflection without a determiner is independently licensed. Comparative nominative citation *érθa-kùnðaz and selected unaugmented weak-neuter *érθa-kùnðǭ are PGmc cells, not different historical stages. The ending is bimoric nasal *-ōⁿ, not trimoric or an inserted -an- formation. SC040 OEMedUnstressedULowering computes a nonfinal medial heavy head after initial H; world instead accommodates initial LH. Temporary prominence is decoded within SC040; inherited SC038 and all accepted histories stay unchanged. attested_variant describes the documentary cell, not irregular phonology. No claim to derive the entire -cund paradigm.
 
 
 

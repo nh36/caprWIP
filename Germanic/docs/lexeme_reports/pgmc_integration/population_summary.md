@@ -7,19 +7,19 @@ report manifest and class assembly manifest. Regenerate only with
 | Measure | Count |
 | --- | ---: |
 | legacy | 380 |
-| selected | 390 |
-| audit | 396 |
+| selected | 391 |
+| audit | 397 |
 | legacy_current_required | 151 |
-| required | 161 |
-| assembled | 169 |
+| required | 162 |
+| assembled | 170 |
 | production_pilots | 11 |
 | format_tests | 1 |
-| reviewed_rows | 15 |
-| scoped_cases | 18 |
-| philological_selected | 13 |
-| pilot_current_required | 165 |
+| reviewed_rows | 16 |
+| scoped_cases | 19 |
+| philological_selected | 14 |
+| pilot_current_required | 166 |
 
-added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335.
+added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335, 2336.
 
 research_only: 1935, 1947, 1948, 1994, 2156, 2218.
 
@@ -31,7 +31,7 @@ assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113, 2137, 21
 
 - candidate_comparison_review: 1
 - focused_comparison_review: 91
-- ordinary_evidence_review: 296
+- ordinary_evidence_review: 297
 - unit_comparability_review: 8
 
 A scoped review is not whole-row closure. All other rows retain

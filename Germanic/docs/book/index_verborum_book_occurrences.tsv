@@ -273,6 +273,7 @@ oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/mod
 oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25:3	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
 oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25:5	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
 oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29:2	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
+oe		eorþcunde	eorþcunde	eorthcunde	target_form	lexical_heading	earthly — OE eorþcunde	heading:cf889216e8a8b7	manifest	auto
 oe		ēow	ēow	eow	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48	Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48:1	Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md	auto
 oe		ēow	ēow	eow	target_form	lexical_heading	you — OE ēow	heading:b55e03628eb012	manifest	auto
 oe		færan	færan	faeran	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	broad-prose:6bb110ae14b451	broad_prose_curated	override
@@ -1371,6 +1372,9 @@ pgmc		déuzaz	*déuzaz	deuzaz	evidence_form	explicit_tag	Germanic/docs/sound_cha
 pgmc		draugma-	*draugma-	draugma	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:62	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:62:1	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	auto
 pgmc		*dúrą	*dúrą	dura	source_protoform	lexical_protoform	door — OE dor	lexical-protoform:561793cd0bef47	manifest	auto
 pgmc		*dúrą	*dúrą	dura	selected_input	trace_proto_input	door — OE dor	trace:82692f52a61936	compact	auto
+pgmc		*érθa-kùnðaz	*érθa-kùnðaz	erthakundaz	source_protoform	lexical_proto	earthly — OE eorþcunde	lexical-proto:48668589ef756f	manifest	auto
+pgmc		*érθa-kùnðǭ	*érθa-kùnðǭ	erthakundo	source_protoform	lexical_protoform	earthly — OE eorþcunde	lexical-protoform:c0443f649c9a34	manifest	auto
+pgmc		*érθakùnðǭ	*érθakùnðǭ	erthakundo	selected_input	trace_proto_input	earthly — OE eorþcunde	trace:e2f7ee57541215	compact	auto
 pgmc		*fáraną	*fáraną	farana	source_protoform	lexical_protoform	fare — OE faran	lexical-protoform:824ec184ad2cba	manifest	auto
 pgmc		*fáraną	*fáraną	farana	selected_input	trace_proto_input	fare — OE faran	trace:7936231043e7d3	compact	auto
 pgmc		*faranan	*faranan	faranan	source_protoform	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:21	broad-prose:cd6bffe9102318	broad_prose_curated	override

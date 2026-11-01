@@ -1,4 +1,8 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+add	oe	eorþcunde	target_form	lexical_heading	earthly — OE eorþcunde	SC040 authorized weak-neuter admission and mature publication, Genesis A 1627.
+add	pgmc	*érθa-kùnðaz	source_protoform	lexical_proto	earthly — OE eorþcunde	SC040 comparative citation remains separate from the selected weak-neuter cell.
+add	pgmc	*érθa-kùnðǭ	source_protoform	lexical_protoform	earthly — OE eorþcunde	SC040 authorized same-stage paradigm-cell selection, not a transponent.
+add	pgmc	*érθakùnðǭ	selected_input	trace_proto_input	earthly — OE eorþcunde	SC040 authorized selected input with the trace-normalized compound junction.
 add	oe	reġnboga	target_form	lexical_heading	rainbow — OE reġnboga	Authorized mature rainbow publication; unchanged selected nominative, not corpus admission.
 add	pgmc	*régna-bùgô	source_protoform	lexical_protoform	rainbow — OE reġnboga	Unchanged selected compound in the new mature model; subordinate accent remains reconstructed.
 add	oe	reġnboga	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md	Selected target retained in the mature model.

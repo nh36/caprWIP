@@ -273,6 +273,7 @@ oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/mod
 oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25:3	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
 oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:25:5	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
 oe		duru	duru	duru	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29:2	Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md	auto
+oe		eorþcunde	eorþcunde	eorthcunde	target_form	lexical_heading	earthly — OE eorþcunde	heading:cf889216e8a8b7	manifest	auto
 oe		ēow	ēow	eow	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48	Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:48:1	Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md	auto
 oe		ēow	ēow	eow	target_form	lexical_heading	you — OE ēow	heading:b55e03628eb012	manifest	auto
 oe		færan	færan	faeran	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2003-fare-faran.model.md:25	broad-prose:6bb110ae14b451	broad_prose_curated	override
@@ -1403,6 +1404,9 @@ pgmc		*drínkaną	*drínkaną	drinkana	selected_input	trace_proto_input	drink �
 pgmc		*dúrą	*dúrą	dura	source_protoform	lexical_protoform	door — OE dor	lexical-protoform:561793cd0bef47	manifest	auto
 pgmc		*dúrą	*dúrą	dura	selected_input	trace_proto_input	door — OE dor	trace:82692f52a61936	compact	auto
 pgmc		*ḗlaz	*ḗlaz	elaz	selected_input	trace_proto_input	eel — OE ǣl	trace:3eb34ef761fd5e	compact	auto
+pgmc		*érθa-kùnðaz	*érθa-kùnðaz	erthakundaz	source_protoform	lexical_proto	earthly — OE eorþcunde	lexical-proto:48668589ef756f	manifest	auto
+pgmc		*érθa-kùnðǭ	*érθa-kùnðǭ	erthakundo	source_protoform	lexical_protoform	earthly — OE eorþcunde	lexical-protoform:c0443f649c9a34	manifest	auto
+pgmc		*érθakùnðǭ	*érθakùnðǭ	erthakundo	selected_input	trace_proto_input	earthly — OE eorþcunde	trace:e2f7ee57541215	compact	auto
 pgmc		*érθōn	*érθōn	erthon	selected_input	trace_proto_input	earth — OE eorþe	trace:09283a970b5cc4	compact	auto
 pgmc		*étaną	*étaną	etana	selected_input	trace_proto_input	eat — OE etan	trace:944bef53166272	compact	auto
 pgmc		*fádēr	*fádēr	fader	selected_input	trace_proto_input	father — OE fæder	trace:95889f549a9268	compact	auto

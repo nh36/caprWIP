@@ -1,9 +1,9 @@
 # Index verborum audit
 
-- Internal production occurrences: 2481
-- Internal production unique forms: 1158
-- Printed main-index occurrences: 2392
-- Printed main-index unique forms: 1148
+- Internal production occurrences: 2485
+- Internal production unique forms: 1162
+- Printed main-index occurrences: 2396
+- Printed main-index unique forms: 1152
 - Print-excluded occurrences: 89
 - Print-excluded unique forms: 68
 - Print exclusions (regular_output_default_exclusion): 89
@@ -22,8 +22,8 @@
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
 - Already indexed in same entry: 443
-- Broad-prose notation / compound expressions: 485
-- Broad-prose evidence suggestions: 310
+- Broad-prose notation / compound expressions: 494
+- Broad-prose evidence suggestions: 311
 - Curated broad-prose deferred: 25
 - Curated broad-prose ignored: 7
 - Reader-facing examples quarantined (separate example index policy): 1366
@@ -35,9 +35,9 @@
 - Table semantic ignored: 3
 - Table semantic notation / compound expressions: 15
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 407
-- Possible extraction garbage: 14
-- Excluded intermediate trace forms: 1356
+- Ignored fragments or sequences: 412
+- Possible extraction garbage: 15
+- Excluded intermediate trace forms: 1362
 - New unresolved candidates relative to baseline: 0
 - Baseline candidates now resolved or ignored: 0
 
@@ -45,8 +45,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1335 | 504 |
-| Proto-Germanic | 994 | 550 |
+| Old English | 1336 | 505 |
+| Proto-Germanic | 997 | 553 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -180,9 +180,9 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 412 |
-| source_protoform | 361 |
-| selected_input | 557 |
+| target_form | 413 |
+| source_protoform | 363 |
+| selected_input | 558 |
 | comparison_form | 840 |
 | regular_output | 89 |
 | evidence_form | 222 |
@@ -191,8 +191,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1246 | 494 |
-| Proto-Germanic | 994 | 550 |
+| Old English | 1247 | 495 |
+| Proto-Germanic | 997 | 553 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -212,9 +212,9 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 412 |
-| source_protoform | 361 |
-| selected_input | 557 |
+| target_form | 413 |
+| source_protoform | 363 |
+| selected_input | 558 |
 | comparison_form | 840 |
 | evidence_form | 222 |
 
@@ -689,12 +689,15 @@
 | `æ > e` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:81 | notation or compound expression |
 | `æ/e` | Germanic/docs/lexeme_reports/model_entries/2274-water-wæter.model.md:44 | notation or compound expression |
 | `ae. hnecca` | Germanic/docs/lexeme_reports/model_entries/2134-neck-hnecca.model.md:24 | notation or compound expression |
+| `a e i o u` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:208 | notation or compound expression |
 | `*-ag-` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:28 | notation or compound expression |
 | `*-ag-` | Germanic/docs/lexeme_reports/model_entries/2296-withy-wīþiġ.model.md:56 | notation or compound expression |
 | `*ai` | Germanic/docs/lexeme_reports/model_entries/1954-bone-bān.model.md:33 | intermediate or model-stage form in development chain |
 | `*ai` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:29 | intermediate or model-stage form in development chain |
 | `-ai- / -ē-` | Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:25 | notation or compound expression |
+| `*-aimiz` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:253 | notation or compound expression |
 | `a + lC` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:21 | notation or compound expression |
+| `*-an-` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:111 | notation or compound expression |
 | `-an` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:40 | notation or compound expression |
 | `-a < *-ō` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:29 | notation or compound expression |
 | `-a < *-ō` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:45 | notation or compound expression |
@@ -782,7 +785,9 @@
 | `-e-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:39 | notation or compound expression |
 | `-e-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:35 | notation or compound expression |
 | `*-ē- / *-ai-` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:57 | notation or compound expression |
+| `*-em` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:254 | notation or compound expression |
 | `eo/o` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:91 | notation or compound expression |
+| `*erþō-` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:38 | notation or compound expression |
 | `-es` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:46 | notation or compound expression |
 | `-eþ` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:34 | notation or compound expression |
 | `-eþ` | Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:36 | notation or compound expression |
@@ -918,6 +923,8 @@
 | `*kū-` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:28 | notation or compound expression |
 | `*kū-` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:47 | notation or compound expression |
 | `*kū-` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:71 | notation or compound expression |
+| `*kunda-` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:36 | notation or compound expression |
+| `*kunþa-` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:40 | notation or compound expression |
 | `*kurna-` | Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:21 | notation or compound expression |
 | `*kúrną` | Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:29 | intermediate or model-stage form in development chain |
 | `*kurnăn` | Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:29 | intermediate or model-stage form in development chain |
@@ -989,6 +996,7 @@
 | `(N,VPs)` | Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md:25 | notation or compound expression |
 | `*-ō` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:38 | notation or compound expression |
 | `*-ō` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:24 | notation or compound expression |
+| `*-ǭ` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:105 | notation or compound expression |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2104-linden-lind.model.md:29 | intermediate or model-stage form in development chain |
 | `*ō` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | intermediate or model-stage form in development chain |
 | `-o` | Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:25 | notation or compound expression |
@@ -997,6 +1005,7 @@
 | `-o-` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:68 | notation or compound expression |
 | `-o-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:35 | notation or compound expression |
 | `*-ōjan-` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:31 | notation or compound expression |
+| `*-ōⁿ` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:100 | notation or compound expression |
 | `ō > ū` | Germanic/docs/lexeme_reports/model_entries/1958-both-bū.model.md:52 | notation or compound expression |
 | `*-ôz` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:69 | notation or compound expression |
 | `*ppan-` | Germanic/docs/lexeme_reports/model_entries/2168-sap-sæp.model.md:22 | notation or compound expression |
@@ -1183,6 +1192,7 @@
 | `ea+w` | Germanic/docs/lexeme_reports/model_entries/2186-show-sċēawian.model.md:29 | pgmc | comparison_form | attested comparison or dictionary form described in prose |
 | `*ekkōn` | Germanic/docs/lexeme_reports/model_entries/2315-lick-(iptv.2sg)-licca.model.md:22 | pwgmc | source_protoform | citation or reconstructed source form in prose |
 | `*ekkōn` | Germanic/docs/lexeme_reports/model_entries/2316-lick-(3sg)-liccaþ.model.md:22 | pwgmc | source_protoform | citation or reconstructed source form in prose |
+| `*erþa-kunđaz` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:26 |  | source_protoform | citation or reconstructed source form in prose |
 | `*fēower` | Germanic/docs/lexeme_reports/model_entries/2029-four-fēower.model.md:10 | oe | source_protoform | citation or reconstructed source form in prose |
 | `*flauhaz` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:27 |  | source_protoform | citation or reconstructed source form in prose |
 | `*flauxz` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:23 |  | source_protoform | citation or reconstructed source form in prose |
@@ -3335,6 +3345,7 @@ _None._
 | `o` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:207 |
 | `o` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:211 |
 | `o` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:96 |
+| `o` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:168 |
 | `ō` | Germanic/docs/lexeme_reports/model_entries/1942-beech-bōc.model.md:29 |
 | `ō` | Germanic/docs/lexeme_reports/model_entries/1949-bier-bǣr.model.md:33 |
 | `ō` | Germanic/docs/lexeme_reports/model_entries/1969-breeches-brēċ.model.md:29 |
@@ -3418,6 +3429,8 @@ _None._
 | `u` | Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:97 |
 | `u` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:50 |
 | `u` | Germanic/docs/lexeme_reports/model_entries/2308-youth-ġeoguþ.model.md:53 |
+| `u` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:229 |
+| `ù` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:217 |
 | `ū` | Germanic/docs/lexeme_reports/model_entries/1962-bow-bēag.model.md:30 |
 | `ū` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:48 |
 | `ū` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:67 |
@@ -3480,6 +3493,8 @@ _None._
 | `derivation` | Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:23 |
 | `development` | Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:28 |
 | `development` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:49 |
+| `*eorþconde` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:205 |
+| `*eorþcundes` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:258 |
 | `e-to-i` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:77 |
 | `family` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:33 |
 | `*fláux` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:56 |
@@ -3525,6 +3540,7 @@ _None._
 | `late_analogy` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:136 |
 | `late_analogy` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:144 |
 | `late_analogy` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:36 |
+| `ⁿ` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:103 |
 
 ## Excluded intermediate trace forms
 

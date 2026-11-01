@@ -120,7 +120,7 @@ class IntegrationTests(unittest.TestCase):
     def test_inventory_is_not_a_controversy_census(self):
         self.assertEqual(self.stats["routes"], {
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
-            "ordinary_evidence_review": 296, "unit_comparability_review": 8})
+            "ordinary_evidence_review": 297, "unit_comparability_review": 8})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
         # 381 after the filth (2335) editorial case entered review.
         self.assertEqual(len(unreviewed), 381)

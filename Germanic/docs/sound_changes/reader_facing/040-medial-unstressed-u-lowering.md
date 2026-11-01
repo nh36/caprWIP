@@ -62,7 +62,7 @@ initial foot and marks eligible later closed short-vowel heads.
 It uses the existing short-vowel and short-diphthong inventories.
 Temporary graves on \emph{a e i o u} distinguish computed prominence
 from the inherited compound accent, already removed by
-[SC038 OEStripSecondaryStress](#rule-OEStripSecondaryStress).
+inherited secondary-accent deletion.
 They are decoded immediately after this lowering. The existing
 pretonic-prefix representation is accommodated without inserting a
 new initial boundary or relocating inherited accent deletion.

@@ -79,8 +79,8 @@ def test_actual_source_ledger_and_editorial_selection_are_paired():
 def test_new_article_is_assembled_in_its_alphabetical_class_position():
     manifest = rows(GERMANIC / "docs/assembly/manifest_attested_variant.tsv")
     entry = next(r for r in manifest if r["row_id"] == "2336")
-    assert entry["concept"] == "earthly"
-    headwords = [r["concept"].casefold() for r in manifest]
+    assert entry["lexical_item"] == "earthly"
+    headwords = [r["lexical_item"].casefold() for r in manifest]
     assert headwords == sorted(headwords)
     for relative in (
             "docs/debug_snapshots/oe_derivation_class_trace_report.txt",

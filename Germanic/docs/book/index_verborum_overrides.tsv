@@ -1,4 +1,6 @@
 action	language	variety	form	display	sort_key	source_scope	source_ref	note
+ignore			*eorþconde				Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:205	Counterfactual unprotected Old English output, not a Proto-Germanic citation or attestation.
+ignore			*eorþcundes				Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:258	Independent computed Old English genitive control, not an additional source citation or admitted attestation.
 ignore			*régnbògô				Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:80	Computed linking-syncope intermediate retaining subordinate accent, not a Proto-Germanic citation.
 add	pgmc		*wúllǭ	*wúllǭ	wullǭ	override	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:21	Source-backed nasal accusative, distinct from the selected oral nominative.
 ignore			*wullu				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:45	Conditional Northwest Germanic intermediate under raising-first, not a PGmc citation.
