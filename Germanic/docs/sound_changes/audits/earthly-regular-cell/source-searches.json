@@ -1,0 +1,209 @@
+{
+  "identity": "lexical research, SC n/a",
+  "date": "2026-11-01",
+  "branch": "research/earthly-regular-cell",
+  "base_commit": "8f7713c39f26a7f81ef04d29d54070f1b83ab0e0",
+  "scope": "Source-critical recovery of DOEC-reported eorþcund tokens (Ciszek-Kiliszewska 2015: 489-490) and comparative morphological analysis of candidate grammatical cells. Read-only; no production/registry/Foma/corpus/baseline edits.",
+  "record_scope": "Bounded philological research thread. Thread-level no_foma_run and no_commit_or_push fields do not describe the integrating investigator's experiments or final research delivery; see assessment.md and the separate execution receipts.",
+  "pre_existing_access_gaps_confirmed_unchanged": [
+    {
+      "resource": "DOEC (Dictionary of Old English Corpus, University of Toronto)",
+      "status": "unreachable",
+      "detail": "bosworthtoller.com outbound DOEC links point to tapor.library.utoronto.ca/cgi-bin/doecorpus/...; connection timed out when fetched 2026-11-01. Consistent with prior audit's identical finding (rainbow-earthly-secondary-stress). No credentials sought or used; no paywall bypass attempted."
+    },
+    {
+      "resource": "Ciszek-Kiliszewska 2015 (article PDF), pp.489-490",
+      "status": "not found on filesystem",
+      "detail": "Searched repository-wide (find across /Users/nathanhill/Code/capr and docs/references) for filenames matching ciszek/kiliszewska/variants; not present. Not in docs/refs.bib as a tracked SOURCE holding. No public copy was sought via general web search in this bounded census thread; that is a search limitation, not a prohibition on authorized public copies. This document relies on the prior audit's own quotations/paraphrase of pp.489-490, not a fresh direct read."
+    },
+    {
+      "resource": "McCully & Hogg 1990 (article/book PDF)",
+      "status": "not found on filesystem",
+      "detail": "Searched repository-wide; not present, not in docs/refs.bib. Reported to parent as an access gap on request (parent owns prosodic literature scope; this is out of this research's grammatical/census scope in any case)."
+    }
+  ],
+  "new_searches_this_session": [
+    {
+      "query": "bosworthtoller.com live full-text search: 'eorþcundum'",
+      "tool": "web_fetch https://bosworthtoller.com/search?q=... (site search endpoint)",
+      "date": "2026-11-01",
+      "result": "New locus found: entries for 'grædiglice' and 'sceamleáslíce' (both Supplement) quote 'Hí swíþe grǽdilíce eorþcundum lustum filigaþ ... R. Ben. 139, 27' and '...139, 28' respectively -- confirmed to be the same single occurrence (sentence spans both cited lines under two different headwords), not two tokens.",
+      "evidential_proposition": "Attested strong dat.pl token of eorþcund, prose (R.Ben.), not present in either prior audit directory."
+    },
+    {
+      "query": "bosworthtoller.com live full-text search: 'eorþcundes' / 'eorðcundes' / 'eorþcundne'",
+      "tool": "web_fetch https://bosworthtoller.com/search?q=...",
+      "date": "2026-11-01",
+      "result": "No hits beyond the three already-known loci; no attested genitive or accusative-singular token found. Repeats prior audit's negative result; not a new finding.",
+      "evidential_proposition": "No attested OE eorþcundes/eorðcundes/eorþcundne token recoverable by this method."
+    },
+    {
+      "query": "bosworthtoller.com entry 44148 ('eorþ-cund') and physical Supplement OCR line 31831/65416",
+      "tool": "web_fetch (live entry) + grep (local held OCR text docs/references/bosworth_toller_anglo_saxon_dictionary.vision.txt)",
+      "date": "2026-11-01",
+      "result": "Confirmed the dictionary's OWN print layout (not just the website rendering) groups 'Eardcundes aldores ... Rtl. 33, 36' as the first citation under the 'eorp-cund' headword, immediately before the genuine 'Ealre eorpcundre gesceafte ... An. Ox. 691' citation, sharing one closing etymological bracket '[Goth. airþa-kunds.]'. A separate headword 'eorþcund-lic' follows immediately after, with its own Past. 78,18 citation.",
+      "evidential_proposition": "Eardcundes is a dictionary-structure cross-reference artifact on the same headword entry, not an eorþcund token; eorþcundlic is a genuinely separate headword in the same source, confirming the exclusion is correct and is the dictionary's own structural choice, not a scraping artifact."
+    },
+    {
+      "query": "archive.org: Thorpe 1832 Caedmon's Metrical Paraphrase, full text (_djvu.txt)",
+      "tool": "web_fetch https://archive.org/stream/caedmonsmetrica01thorgoog/caedmonsmetrica01thorgoog_djvu.txt",
+      "date": "2026-11-01",
+      "result": "Located page marked '98' (matching B-T's 'Th. 98, 8' pointer) and manually decoded garbled OCR as 'þa se rinc ageaf eorð-cunde eáð/eád, sohte oðer lif'. Supports the passage's syntax and absence of a determiner. The original page image was not consulted; printed eth/thorn and hyphenation cannot be established from this OCR.",
+      "evidential_proposition": "Independent edition-OCR passage location and syntactic context, not a diplomatic manuscript reading or verified printed-glyph normalization."
+    },
+    {
+      "query": "bosworthtoller.com live full-text search: 'lust' (for grammatical-gender/declension-class check)",
+      "tool": "web_fetch https://bosworthtoller.com/search?q=lust",
+      "date": "2026-11-01",
+      "result": "Confirmed lust is a masculine a-stem noun: nom./acc.pl lustas, dat.sg luste attested; lustum also attested as dat.pl (e.g. 'on lustum', 'unlustum'). Confirmed fylgan/filigan governs the dative case.",
+      "evidential_proposition": "eorþcundum lustum (R.Ben. 139,27) is syntactically coherent as adjective+noun dative plural, direct (dative) object of filigaþ, supporting the dat.pl grammatical-cell analysis."
+    },
+    {
+      "query": "grep -i 'eor.cund' across three held dictionary OCR texts (bosworth_toller_anglo_saxon_dictionary.vision.txt, legacy/anglosaxondictio00tolluoft.txt, clark_hall_concise_anglo_saxon_dictionary.vision.txt), excluding -lic",
+      "tool": "grep (local files, docs/references/, read-only)",
+      "date": "2026-11-01",
+      "result": "Exactly three non-'-lic', non-'eardcund' loci confirmed across all three dictionaries combined: Gen. 1627 (eorþcunde/eorðcunde), An. Ox. 691 (eorþcundre), R. Ben. 139,27 (eorþcundum). The legacy Toller-OCR hit was a second, differently-garbled OCR rendering of the SAME Genesis citation, not a fourth token.",
+      "evidential_proposition": "No further eorþcund loci recoverable from the three dictionaries held in this repository beyond the three now documented."
+    },
+    {
+      "query": "Fulk 2018 PGmc strong-adjective paradigm table, direct page-image inspection (pdftoppm render of scan page 226, printed p.209)",
+      "tool": "bash (pdftoppm -r 200 -png, local file render; image viewed then deleted, not retained)",
+      "date": "2026-11-01",
+      "result": "Confirmed masc.acc.sg = *-anon with superscript-n nasalization marker over the o (not a literal second written n); confirmed neut.nom/acc.sg = *-a with superscript-n nasalization marker (nasalized short vowel only, no real consonant); confirmed masc./neut.gen.sg = *-as(a), unaffected by nasalization; confirmed fem.gen.sg = *-(a)izoz, with the pronominal a- shown bracketed/optional in Fulk's own notation; confirmed dat.pl all genders = *-aimiz. CORRECTED ON RE-RENDER (see correction-pass entry below): this session's first reading mis-paired the neuter genitive row's alternate *-es(a) form with the dative row; re-rendered at 220dpi and re-checked, the dat.sg row (both genders) is *-azmai only, and *-es(a) belongs to the neuter GEN.sg row alongside *-as(a).",
+      "evidential_proposition": "Resolves the parent's query about whether Fulk's superscript n means nasalization vs. a literal consonant: it is nasalization. Genitive endings (masc/neut gen.sg, all dat.pl) are unaffected by this issue."
+    },
+    {
+      "query": "Fulk 2018 §9.7/§9.8 weak adjective declension (printed pp.216-217), vision.txt + page-image cross-check",
+      "tool": "view/grep (local file, docs/references/fulk_comparative_grammar_early_germanic.vision.txt lines ~13500-13710) + pdftoppm render",
+      "date": "2026-11-01",
+      "result": "Confirmed explicit prose statement (p.216): weak/definite adjective may appear in WGmc poetry without a specifier, especially substantively, as the rule in Gothic. Confirmed weak paradigm table (p.217): neut. nom/acc.sg = lange (-e ending), matching masc. nom.sg -a pattern.",
+      "evidential_proposition": "Independently establishes both the syntactic licensing and the exact regular ending for the Genesis weak-neuter cell."
+    },
+    {
+      "query": "Campbell 1959 OE Grammar §638 and §656 cross-check",
+      "tool": "grep/view (local file, docs/references/campbell_old_english_grammar.txt)",
+      "date": "2026-11-01",
+      "result": "§638 (~p.260-261): 'OE verse admits a freer use of the weak adjective than prose.' §656 (~p.272): weak paradigm of blind, neut. nom/acc.sg = blinde.",
+      "evidential_proposition": "Independent second-grammar cross-confirmation of both the Genesis cell's licensing and its ending, not reliant on Fulk alone."
+    },
+    {
+      "query": "find (repository-wide) for mccully, hogg1990, ciszek, kiliszewska filename patterns",
+      "tool": "bash find",
+      "date": "2026-11-01 (repeat check this session)",
+      "result": "No matches found anywhere under /Users/nathanhill/Code/capr.",
+      "evidential_proposition": "Confirms both PDFs remain inaccessible in this environment; access gap reported to parent, not bypassed."
+    }
+  ],
+  "correction_pass_2026_11_01b": [
+    {
+      "trigger": "parent-investigator narrow corrections after initial deliverables",
+      "corrections_made": [
+        "Fulk strong-adjective table re-rendered at 220dpi (printed p.209/scan 226): corrected a genitive-vs-dative row misalignment -- masc./neut. dat.sg is *-azmai (both genders, same form), NOT *-es(a); *-es(a) is an alternate NEUTER GENITIVE form alongside *-as(a). Earlier draft of morphology.md had mis-stated 'neut. dat.sg also *-es(a)', now corrected throughout.",
+        "Added an independently sourced (not merely synchronic-OE) PGmc candidate for the Genesis weak-neuter ending, built as an explicit inference from two separate Fulk statements: (a) Fulk section 7.29 n.1 p.168 states weak adjectives are n-stem nouns; (b) Fulk section 7.31 pp.169-170 reconstructs WGmc n-stem neuter nom/acc.sg as nasalized PGmc *-o(n) (vs Gothic plain *-o). Combined inferred candidate: PGmc *erþa-kunþan-o(n). Flagged explicitly as an inference, not a directly tabulated weak-adjective PGmc form.",
+        "Rtl. siglum: withdrew the unverified 'Rushworth Gospels' attribution for the excluded eardcundes/Rtl. 33,36 locus. No formal B-T abbreviations list was found in the held OCR texts. Internal textual evidence (other Rtl. citations are liturgical-prayer register, e.g. 'Acennendum parentibus suis, Rtl.' and 'genetricis et virginis, Rtl. 69,9') plus Clark Hall's own abbreviations list (held at clark_hall_concise_anglo_saxon_dictionary.vision.txt:353, defining sigil 'DR' = 'the Durham Ritual, ed. T. Stevenson (Surtees Society), London, 1840') together make a Durham Ritual/Collectar-type liturgical text (Rituale Ecclesiae Dunelmensis) far more plausible than the Rushworth Gospels, though this is not confirmed against a found formal B-T sigla key for 'Rtl.' specifically -- reported as probable, not certain. Does not affect the exclusion of eardcundes from the eorþcund census either way.",
+        "Withdrew the unverified 'Aelfric's (or Ps.-) Antwerp-London Glossary' attribution for An. Ox. 691 -- not independently checked against a sigla list or the Anecdota Oxoniensia volume itself.",
+        "Withdrew the unsupported claim that Old Saxon/Old High German/Old Icelandic cognates of OE eaad are themselves neuter/masculine n-stems -- not independently verified; the neuter-gender point for the Genesis cell rests only on B-T's own explicit 'n.' tag for the OE headword eaad.",
+        "Removed the speculative hypothesis that dictionary print-layout grouping or inclusion of excluded eorþcundlic/eardcundes loci could reconcile Ciszek-Kiliszewska's six-token count with this research's three; kept the three genuine dictionary-located occurrences and the exclusions as independently documented facts, without using them to explain the six-vs-three discrepancy.",
+        "Removed the unsupported claim that -cund is etymologically related to kunnan 'to know/be born of' -- not sourced from Orel, Fulk, or any other source checked in this research.",
+        "Removed the claim that the Oxford gloss (An. Ox. 691) is 'poetry' -- it is a glossary text; only the Genesis locus is poetic.",
+        "Removed the unsupported compensatory-lengthening/rounding claim about how the neuter nom/acc.sg nasalized vowel surfaces as OE lang, and removed the implication that the attested OE form lang by itself demonstrates a derivation.",
+        "Reclassified the R. Ben. dative-plural token's gender from 'n/a (syncretic)' to 'masculine, by agreement with lustum' (surface -um ending remains syncretic across genders, but the agreement target is recoverable and should be recorded).",
+        "Recorded the parent's v5 replay finding (not independently re-run by this research): nasal-vowel-corrected neut. nom/acc.sg input *-a-with-nasalization yields eorþcond under ordinary prominence (eorþcund only under an unadjudicated final-overheavy sensitivity hypothesis), and nasal-vowel-corrected masc. acc.sg input yields eorþcundene (paralleling godcundene), not an attested eorþcund form -- both qualify as 'the notation is corrected' rather than 'a regular/complete historical derivation is established'; neither cell is recommended by this research regardless, since no attested eorþcund token of either cell exists."
+      ],
+      "no_new_broad_search_performed": true,
+      "note": "This pass re-rendered one already-held PDF page at higher resolution and located one already-held PGmc n-stem noun reconstruction passage in the same already-held Fulk PDF, plus one targeted web_search for the Rtl. siglum question; it did not reopen the bounded DOEC/Ciszek-Kiliszewska/McCully access gaps, which remain as previously documented."
+    }
+  ],
+  "correction_pass_2026_11_01c": [
+    {
+      "trigger": "parent-investigator check: does the weak-neuter bridge wrongly insert an oblique -an- stem before the nasalized ending?",
+      "finding": "Yes, the prior correction pass's candidate PGmc *erþa-kunþan-oN was wrong. Re-checked Fulk's own guma (masc. n-stem) and augo (neut. n-stem) paradigm tables (p.168, already held, re-read only, no new search): the -an-/-n- element is present from the ACCUSATIVE singular onward in masc. n-stems (nom. guma, but acc./gen./dat. guman) and only in the PLURAL of neut. n-stems (sg. augo/ēage with no -n- at all; pl. augona/ēagan with -n-). The nominative/accusative-syncretic neuter singular therefore takes the ending directly on the bare stem, with no inserted -an-. Corrected candidate: PGmc *erþa-kunþ-oN (bare compound stem + nasalized ending), CAPR notation *erþa-kunthing-with-nasal-o, i.e. the same final syllable as an earlier literal (pre-nasalization-correction) -ON experimental input already reported successful by the parent, now simply with the nasalization corrected -- not the -anoN shape, which duplicates the distinct ACCUSATIVE masc. serialization *-anoN and is not the right parallel for this nominative/accusative-syncretic neuter cell.",
+      "correction_made": "morphology.md technical note and Recommendation item 1 rewritten to give PGmc *erþa-kunþ-oN (no -an-) as the corrected inference, with the erroneous -an- insertion flagged and explained via the guma/augo paradigm tables.",
+      "no_new_broad_search_performed": true
+    }
+  ],
+  "sources_read_directly_this_session": [
+    {
+      "holding": "fulk_comparative_grammar_early_germanic.pdf/.vision.txt",
+      "pages": "146-147, 209-211, 216-217",
+      "location": "docs/references/ (main worktree, read-only authorized)"
+    },
+    {
+      "holding": "orel_handbook_germanic_etymology.pdf/.vision.txt",
+      "pages": "85",
+      "location": "docs/references/"
+    },
+    {
+      "holding": "campbell_old_english_grammar.txt",
+      "pages": "~260-261 (§638), ~272 (§656)",
+      "location": "docs/references/"
+    },
+    {
+      "holding": "bosworth_toller_anglo_saxon_dictionary.vision.txt",
+      "lines": "31825-31840, 65416, 77974",
+      "location": "docs/references/"
+    },
+    {
+      "holding": "legacy/anglosaxondictio00tolluoft.txt",
+      "lines": "14755",
+      "location": "docs/references/legacy/"
+    },
+    {
+      "holding": "clark_hall_concise_anglo_saxon_dictionary.vision.txt",
+      "lines": "13413",
+      "location": "docs/references/"
+    },
+    {
+      "holding": "bosworthtoller.com (live site)",
+      "entries": "8279, 9582, 44148, plus live search results for eorþcundum/lust/grædiglice",
+      "location": "public web, bosworthtoller.com"
+    },
+    {
+      "holding": "archive.org caedmonsmetrica01thorgoog (Thorpe 1832)",
+      "page": "'98' (Thorpe's own pagination)",
+      "location": "public web, archive.org"
+    }
+  ],
+  "not_independently_retrieved_cited_at_one_remove_only": [
+    "Krapp, ASPR Genesis A (1931) critical text/apparatus for line 1627",
+    "Junius 11 manuscript image",
+    "Napier/Kluge Anecdota Oxoniensia glossary volume (An. Ox. 691)",
+    "Schroer, Benedictinerregel edition (R. Ben. 139, 27/28)",
+    "Skeat, Rushworth Gospels edition (initially assumed, on an unverified basis, to be the source behind the Rtl. 33, 36 excluded eardcund locus; that attribution is withdrawn -- see attestation-census.md Rtl. siglum correction -- Rtl. is probably a Durham Ritual/Collectar-type liturgical text, not confirmed against a formal B-T abbreviations list)",
+    "Sweet, Pastoral Care EETS edition (Past. 78, 18 -- excluded eorþcundlic locus, context only)",
+    "Foerster, Vercelli Homilies edition (Verc. 115, 11 -- excluded eorþcundlic locus, context only)",
+    "Ringe & Taylor 2014 pp.22-23 (carried over from prior audit's literature.md citation, not re-read independently this session)"
+  ],
+  "no_production_registry_foma_corpus_baseline_files_read_for_modification_or_written": true,
+  "no_foma_run": true,
+  "no_docker_rebuild": true,
+  "no_commit_or_push": true,
+  "writes_this_session": [
+    "Germanic/docs/sound_changes/audits/earthly-regular-cell/attestation-census.md",
+    "Germanic/docs/sound_changes/audits/earthly-regular-cell/morphology.md",
+    "Germanic/docs/sound_changes/audits/earthly-regular-cell/source-searches.json",
+    "Germanic/docs/sound_changes/audits/earthly-regular-cell/attestations.tsv"
+  ],
+  "correction_pass_2026_11_01d": {
+    "date": "2026-11-01",
+    "trigger": "Parent flagged suspected circumflex(trimoric)-to-macron(bimoric) notation conflation in the weak-neuter PGmc bridge *erþa-kunþ-ōⁿ, plus a replay finding that PGmc *-aimiz does not derive attested dat.pl -um (yields -em instead).",
+    "method": "Re-rendered Fulk scan pp.186-187 (printed pp.169-170) at 260dpi (pdftoppm -r 260 -png); cropped and visually compared the specific glyphs in: (a) \"Only *-o or *-on will account for the WGmc. masc. forms\" (confirmed circumflex, caret-shaped accent), (b) \"Likewise, *-o is required to explain Go. neuter -o,\" (first -o circumflex/PGmc reconstruction, second -o plain macron/attested Gothic spelling, not a reconstruction), (c) \"whereas the neuter endings in the other languages require *-on;\" (confirmed MACRON, flat-bar accent, not circumflex), (d) \"PIE neuter *-on,\" (macron). Calibrated against an unambiguous same-page example mixing both diacritics explicitly (\"*-e, *-e[circumflex], or *-e[circumflex]n\") to confirm the renderer/font reliably distinguishes the two shapes at this resolution.",
+    "finding": "The earlier draft of morphology.md had MISQUOTED the WGmc/ON neuter nom./acc.sg ending as circumflex *-on[circumflex] (apparently by contamination from the immediately adjacent, genuinely-circumflex masculine and Gothic-neuter clauses in the same sentence). On pixel-level re-verification, Fulk explicitly prints this specific (WGmc/ON, i.e. the OE-relevant) neuter ending with a MACRON: *-on with a flat bar, i.e. bimoric nasalized. This means the previously-used CAPR bridge *erθa-kunth-oN (CAPR notation *érθa-kùnðǭ, bimoric ǭ) is NOT a bimoric/trimoric conflation: it faithfully transcribes Fulk's own printed macron ending for the correct (WGmc/ON) branch. The genuinely-circumflex (trimoric) forms in this passage belong to a DIFFERENT cell (WGmc masculine nom.sg) and to the Gothic-specific neuter derivation, not to the WGmc/ON neuter cell used for the weak-neuter candidate.",
+    "residual_uncertainty": "The parent independently inspected the printed glyph and paragraph: Fulk's 'perplexing' qualifies the preceding WGmc masculine trimoric origin, not the OE-relevant bimoric neuter ending. Fulk gives an inherited PIE account for the latter and cites Boutkan's analogical-from-neuter-plural alternative. That competing prehistory remains explicit; the whole accented compound is CAPR's comparative assembly, not Fulk's printed whole word. No invented trimoric-to-bimoric transition or resolution of the whole paradigm is required for this neuter cell.",
+    "dat_pl_qualification": "Per parent's replay (not independently re-run within this bounded philological thread): PGmc *-aimiz does not derive attested OE -um under the current diphthong-coding, yielding -em instead (eorþcundem/godcundem). The complete dative ending remains unresolved. Unlike the dative, the correctly bimoric Genesis weak-neuter input is accepted by the production parser and completely succeeds with general medial prominence.",
+    "files_edited": [
+      "Germanic/docs/sound_changes/audits/earthly-regular-cell/morphology.md"
+    ],
+    "no_further_broad_search_performed": true,
+    "no_foma_run": true,
+    "no_production_registry_corpus_baseline_files_touched": true,
+    "no_commit_or_push": true
+  },
+  "final_synthesis_2026_11_01": {
+    "preferred_cell": "Attested Genesis A 1627 weak neuter accusative singular eorþcunde, from CAPR-assembled *érθa-kùnðǭ under Fulk's inherited n-stem account and the general medial-prominence hypothesis.",
+    "source_verification": "Fulk 2018 pp.168-170, 216-217 and Campbell §§638,656 support the morphological bridge, ending and poetic syntax. The final original-glyph rendering was independently inspected by the integrating investigator; no copyrighted image is committed.",
+    "documentary_limit": "Three distinct dictionary-located occurrences recovered versus six reported DOEC tokens. Thorpe's OCR supports the Genesis location/syntax, not exact printed thorn/eth or hyphenation; manuscript and critical apparatus remain uncollated.",
+    "fallback": "Strong masculine/neuter genitive *eorþcundes from *érθa-kùnðas remains regularly derived experimentally and unattested in the recovered evidence.",
+    "experiment_label_correction": "The rejected trimoric nasal trial was prompted by a superseded source misreading, not Fulk's actual OE-neuter ending. V11 corrects its label while preserving the authentic v10 record and all predictions."
+  }
+}
