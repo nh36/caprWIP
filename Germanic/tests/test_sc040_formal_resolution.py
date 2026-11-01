@@ -4,6 +4,7 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path
+import re
 import tarfile
 
 import pytest
@@ -85,6 +86,29 @@ def test_corrected_component_and_wrapper_pass_the_unchanged_formal_gate(report):
     assert report["canonical_before"] == report["canonical_after"]
 
 
+def test_current_rule_and_shared_domains_equal_the_formally_certified_production_closure():
+    with tarfile.open(EVIDENCE / "production-closure.tar.gz") as archive:
+        receipt = json.load(archive.extractfile("receipt.json"))
+        snapshot = "snapshot/" + receipt["inputs"]["source"]["snapshot_name"]
+        certified = archive.extractfile(snapshot).read().decode()
+    current = (ROOT / "Germanic/fsts/germanic.txt").read_text()
+    names = ["MP" + suffix for suffix in (
+        "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
+        "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")]
+    names += ["OEMedUnstressedULowering", "OEAnyConsonant", "EnglishStarVocalic",
+              "EnglishStarShortVowel", "EnglishStarShortDiphthong",
+              "EnglishStarConsonant", "EnglishPalatalConsonant",
+              "SentenceCtx", "FootCtx", "Ctx", "OEStressFootContext"]
+    for name in names:
+        pattern = r"define " + name + r"(?:\([^)]*\))?\s+.*?;"
+        previous = re.search(pattern, certified, re.S).group()
+        actual = re.search(pattern, current, re.S).group()
+        assert re.sub(r"\s+", "", actual) == re.sub(r"\s+", "", previous), name
+    closure = json.loads((EVIDENCE / "production-closure.json").read_text())
+    for component in closure["components"].values():
+        assert component["functional_stdout"].strip() == "1 (1 = TRUE, 0 = FALSE)"
+
+
 def test_all_original_populations_and_physical_stages_are_conserved(report):
     assert len(report["plan"]["rows"]) == 390
     assert report["population_checks"]["immutable380_count"] == 380
@@ -124,9 +148,12 @@ def test_initial_foot_medial_weight_and_pretonic_controls_are_general(report):
                      "late-godcund-accusative", "late-godcund-feminine-genitive"):
             assert components[head][name] == [inputs[name].replace("*u", "*ù")]
         for name in ("initial-LH-negative", "open-medial-negative",
-                     "final-heavy-negative", "cyning-LH", "late-being"):
+                     "final-heavy-negative", "cyning-LH", "late-being",
+                     "late-world-back-mutated", "late-world-back-mutated-inflected"):
             assert components[head][name] == [inputs[name]]
         assert components[head]["initial-LL-heavy-medial"] == [
             inputs["initial-LL-heavy-medial"].replace("*i", "*ì")]
         assert components[head]["late-riding"] == [inputs["late-riding"].replace("*e", "*è", 1)]
     assert components["QLate"]["headed-u-following-u"] == [inputs["headed-u-following-u"]]
+    for name in ("late-world-back-mutated", "late-world-back-mutated-inflected"):
+        assert components["QLate"][name] == [inputs[name].replace("*u", "*o")]

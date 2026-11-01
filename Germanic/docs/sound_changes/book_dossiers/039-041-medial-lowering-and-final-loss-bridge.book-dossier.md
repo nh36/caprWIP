@@ -16,9 +16,12 @@ The scoped SC017 rainbow adoption removes *reġnboga* from SC040's
 live applications: its second-root vowel is already *o*. It still
 requires grave information through SC037, but no longer dates loss of
 that prominence before late lowering. World's adopted weak-u path
-remains a genuine SC040 witness. Neither the late rule nor its
-conditioning/order changes; *-cund* and later stress computation remain
-separate research (`audits/rainbow-2148-adoption.md`).
+remains a genuine SC040 witness. That adoption did not change the late
+rule's conditioning/order (`audits/rainbow-2148-adoption.md`).
+The subsequent SC040 adjudication adds a general medial-foot projection
+while retaining the segmental kernel and executable chronology
+(`audits/sc040-adjudication.md`). It resolves the inflected earthly
+witness without reopening world's or rainbow's adopted histories.
 
 ## 2. Identities and conditioning
 
@@ -26,6 +29,8 @@ separate research (`audits/rainbow-2148-adoption.md`).
   adjustment relevant to *widow*.
 - SC040 `OEMedUnstressedULowering` models later medial unstressed
   u-to-o lowering, preserving u after root u and before m.
+  The computed nonfinal medial head after initial-foot accommodation
+  additionally makes “unstressed” explicit; inherited SC038 is unchanged.
 - SC041 `PWGmcFinalBareALoss` removes a final bare low vowel; its
   chronology is not reducible to the SC039/040 interaction.
 
@@ -51,6 +56,14 @@ SC041 retains the separate support of Campbell's account of unaccented
 final-vowel loss and Ringe and Taylor's discussion of word-final short
 low vowels [@Campbell1959, §341; @RingeTaylor2014, pp. 60--61].
 The handbooks do not supply a single three-change textbook chapter.
+
+The initial LH accommodation versus a later heavy head after initial H
+is supported by McCully and Hogg and Goering
+[@McCullyHogg1990, pp. 330--333; @Goering2023, pp. 79--84,
+§§4.5.1.1--4.5.2]. It distinguishes the actual short-diphthong world
+representation from eorþ.cun.de. Hogg's caution about circular tertiary
+stress remains important [@Hogg1996, pp. 8--11]; neither a suffix identity
+nor successful final spelling substitutes for phonological structure.
 
 ## 4. Current ordering evidence
 
@@ -86,6 +99,17 @@ boundaries. A runner limit for SC039 is likewise not a historical event.
 
 The reader explains each registered entry independently, with thematic
 cross-references rather than a container forcing common placement.
-SC040's ordinary adjudication and wider conditioning review remain
-pending; this reconciliation neither completes that adjudication nor
-changes a rule, input, output or protected baseline.
+The original chronology reconciliation neither completed SC040
+adjudication nor changed a rule, input, output or protected baseline.
+The subsequent source-bound SC040 finding reformulates explicit prosodic
+conditioning and retains its segmental kernel, historical scope and order.
+It follows a reduced diagnosis of the pinned Foma identity-test defect
+and formally passing corrected foot/lowering/cleanup wrappers, not a
+waiver of the failed earlier assay.
+
+The selected weak-neuter earthly witness and independent genitive control
+are regular under that computation. A final uninflected godcund, the
+Oxford feminine ending and the inherited dative remain acknowledged
+limits; neither this bridge nor the selected cell purports to derive the
+whole paradigm. The earlier genuine DEFER and unsuccessful snapshots are
+retained as historical evidence in the SC040 memorandum and its archives.

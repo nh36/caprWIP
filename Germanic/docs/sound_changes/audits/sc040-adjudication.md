@@ -1,4 +1,16 @@
-# SC040: medial prominence — adoption deferred
+# SC040: medial prominence — resolved formal composition
+
+## Preserved earlier DEFER record
+
+The following original memorandum records the genuine stopped decision at
+`8d525e79c713d3d14803209a4330ad1d7d5b9180`. Its temporal statements
+describe that historical frontier, not the subsequent finding below.
+The original text, signed receipts, exhausted repair counters and failed
+snapshots remain recoverable in that commit and the unchanged original
+evidence archive. The previous journal was explicitly archived as
+`SC040-DEFER-8d525e79-20261101T1345`; it was not reset or reclassified.
+The later user-authorised question was the reduced formal-composition
+defect, followed by adoption only if independently resolved.
 
 ## Identity
 
@@ -165,7 +177,7 @@ DEFER production implementation and lexical admission. This is not RETAIN
 as a completed scientific verdict and not a refutation of the literature's
 prosodic account.
 
-Registry-verdict: SC040=DEFER
+> Registry-verdict: SC040=DEFER
 
 The line records the genuine decision but has not been propagated to the
 live registry. After the initial failure and two bounded repairs, the
@@ -219,3 +231,292 @@ No generated manuscript, index or manifest is hand-edited.
    Kroonen component consultation was completed, but the pre-existing
    Ringe–Taylor conventions gap cannot certify strict composite reading
    completeness. No publication gate is waived.
+
+## Subsequent finding: identity-check failure and corrected implementation
+
+### Identity and source binding
+
+This finding follows the explicitly authorised reduced question on
+`integration/earthly-sc040`, still in the isolated integration worktree.
+Accepted production remains based on `8f7713c39f26a7f81ef04d29d54070f1b83ab0e0`;
+the stopped commit's executable SHA256 is
+`ee259d1dac8d83508aca8f201b8fb042ab99245caf87d44ae050ec16c39d0ad7`.
+That exact SOURCE was used by both reduced snapshots and the complete
+corrected assay. The production law, selected population and immutable
+population were untouched throughout diagnosis and replay.
+
+The new controlled runs and their archives retain the original DEFER
+frontier, two reduced diagnostics, a failed missing-export harness receipt
+and its one recorded repair, and the successful corrected assay. No
+earlier failed assay has become a successful scientific receipt.
+The preserved supporting evidence is:
+
+- `sc040-experiments/formal-results.json`, from verified immutable
+  `sc040-formal-composition-02`, including actual loaded-bin hashes,
+  functionality output and independent inverse-square proofs.
+- `sc040-experiments/corrected-results.json.gz`, from verified immutable
+  `sc040-corrected-adoption-02`, including all physical stages for both
+  populations, complete cell traces and component controls.
+- `sc040-experiments/resolution-evidence.tar.gz` and its SHA256/member
+  manifest, including immutable inputs, compilation origins, signed
+  logs, the missing-export failure and archived operational journals.
+- A subsequent genuine `adjudicate.py SC040 --evidence` receipt labelled
+  `SC040-verified-canonical-before`: forced canonical runtime rebuild,
+  390-row production/sandbox equivalence and the unchanged ten-witness
+  SC040 census. This successful receipt is distinct from the earlier
+  strict-holdings failure.
+
+### Reduced formal diagnosis
+
+The first reported failure is not a nonfunctional phonological component
+or ordinary mathematical composition of functional relations:
+
+| Actually loaded relation | Pinned Foma functionality |
+| :--- | :--- |
+| `MSyll`, `MAccent`, `MUnsyll` | 1 |
+| `MSyll .o. MAccent` | 1 |
+| `MSyll .o. MAccent .o. MUnsyll` (`DiagCore`) | 1 |
+| `SentenceCtx(DiagCore)` (`DiagSent`) | 0 |
+| `MFoot`, `MFoot .o. MPlainLower`, `MLate` | 0 |
+
+The decomposition was compiled independently with the same verified
+source, alphabet and Foma build. The commands load the binary associated
+with each name and record its hash, sigma and size; this finding does not
+infer the compiled relation from generated definition text alone.
+
+The one-change matrix localizes the smallest CAPR change which exposes
+the diagnostic defect. Original `RFoot` is 1; adding only initial-boundary
+insertion yields `IFoot=0`, although `ISyll=1`. Boundary deletion alone,
+with its valid prerequisites, gives `DFoot=1`. Prefix accommodation alone
+gives maximal-onset `PFoot=1`; combined insertion/deletion gives
+`BFoot=0`. Some untouched single-onset sensitivity networks already
+produce the same diagnostic false negative (`RFootOne=0` and
+`PFootOne=0`). Thus onset choice is not itself evidence for a
+phonological ambiguity. The corrected versions of both onset choices
+pass.
+
+`MInit` consumes the literal `{*}` in CAPR's starred serialization and
+tests its following unstarred vowel/consonant spelling component.
+Its alphabet is not a second inventory of unstarred phonemes. The
+insertion and deletion change the placement of epsilon/output arcs and
+intermediate boundary paths; the complete core remains single-valued.
+Unlike these repaired networks, attempt 01's unrestricted epsilon
+insertion really did create multiple boundary outputs. That genuine
+failure is not reinterpreted as a checker false negative.
+
+The independently reproducible ASCII reduction is:
+
+```foma
+regex [{ab}:0 0:{ab}];
+test identity;
+test functional;
+print pairs;
+quit;
+```
+
+Its only mapping is `ab → ab`, but the pinned implementation reports
+identity 0 and functionality 0. The equivalent aligned relation
+`[a:0 b:a 0:b]` reports 1 and 1. This reduction has no CAPR annotation,
+phonological conditioning, lexical filter or unknown-symbol dependency.
+
+The backend pins Foma `82f9acdef234eae8b7619ccc3a386cc0d7df62bc`,
+reported as `0.10.0alpha`. In that commit's
+[`foma/structures.c`](https://github.com/mhulden/foma/blob/82f9acdef234eae8b7619ccc3a386cc0d7df62bc/foma/structures.c),
+`fsm_isfunctional` tests identity of the inverse-square composition
+using `fsm_isidentity`. The delayed upper/lower-string bookkeeping stores
+new string pointers in visited-state debt slots, then frees the buffer
+before later debt copying. The reproducible identity false negative and
+this dangling-buffer path establish a defect in the pinned diagnostic,
+not a mathematical exception to composition.
+
+An independent graph traversal checks every reachable state of the
+compiled `T.i .o. T` relation. It cancels matched labels, carries unmatched
+upper/lower debt and requires zero debt at every accepting state;
+conflicting labels or inconsistent state debt fail. It rejects UNKNOWN
+arcs and permits matching IDENTITY arcs only with zero outstanding debt.
+This is not ambiguous-path extraction or replay over finite strings.
+`DiagCore` covers six reachable states; `DiagSent` and `MFoot` each
+cover 129, with maximum outstanding delay one, and their squares are
+identity relations. `QFoot` covers 101 states and is likewise proved
+single-valued. The reduced delayed and aligned ASCII squares both pass
+the same independent proof. Empty ambiguous extraction is therefore
+consistent with the actual relations, not an unexplained substitute
+for the failed checker.
+
+No stage-domain restriction was used to hide a genuine ambiguity.
+The proof covers the unrestricted compiled relation, including its
+boundary paths. Legitimate upstream strings have already passed inherited
+accent deletion; temporary graves are not inherited information.
+No lexical-domain certification replaces formal functionality.
+Nor is the unchanged whole CAPR grammar claimed globally functional:
+its baseline whole-network test already returns 0.
+
+### Corrected implementation and segmental separation
+
+The adopted production closure is the corrected `Q` computation with
+only definition names changed to short `MP` names. It adapts the earlier
+functional `RFoot` rather than adding another initial-boundary system.
+It retains its syllabifier, existing consonant/vocalic inventories,
+short-vowel and short-diphthong weight classes, and initial H(+L) or
+L+syllable accommodation. Two minimal general adjustments are made:
+
+1. The existing pretonic prefix can contain a nucleus of either weight
+   and its consonantal coda, rather than being limited to a short nucleus.
+2. Consonants stranded before the first syllable boundary are admitted
+   before the initial-foot matcher. They do not constitute a nucleus,
+   add a syllable or alter weight.
+
+There is no `MInit`, `MDrop`, lexeme identity, suffix category, case
+category, row identity or new final-overheavy extension in production.
+The foot projection remains in `SentenceCtx`, not the pretonic
+first-syllable-skipping `FootCtx`; the latter is not a complete medial-foot
+parser. The lowering kernel itself retains canonical `FootCtx`.
+
+`QFoot`, `QFootOne`, `QLate` and `QLateOne` all pass the unchanged
+native functionality test. `QSyll`, the canonical-context `QULower`
+and cleanup also pass. Independent inverse-square proofs additionally
+cover the corrected foot and both complete wrappers. No Foma patch,
+test waiver or new general validation infrastructure is adopted.
+
+The exact prospective production source, SHA256
+`0d79aeeed03638dbdda051e48bb8b6191ad2f5c395cf4287041f3b01c4216705`,
+was subsequently compiled independently as
+`sc040-production-closure-01`. All seven actually named production
+components (`MPSyll`, `MPAccent`, `MPUnsyll`, `MPFoot`, `MPULower`,
+`MPDecode`, `OEMedUnstressedULowering`) pass native functionality.
+All 58 foot and complete-wrapper controls equal the approved Q networks.
+The closure archive preserves this exact source, bin hashes and genuine
+compiler/worker receipts. A host-side call to a nonexistent promotion
+method interrupted only evidence completion after both successful
+executions; completion was resumed through the existing snapshot API
+without rerunning either command or changing the proposal.
+
+The original SC040 segmental body is copied exactly, except that its
+preceding-vowel subtraction also recognizes temporary `*ù`. Once a
+plain preceding `*u` has been marked as a computed head, it must still
+block lowering of a following `*u`. This is a representation-preserving
+restoration of the existing *u* exclusion. The original preceding
+plain/long/acute *u* classes, consonant unions and following-*m* exclusion
+are unchanged. The earlier `MPlainLower` alternative's broader consonant
+reformulation is not adopted.
+
+All five short-vowel classes are temporarily marked, then decoded
+immediately inside SC040. This is a more coherent separation of computed
+prominence from inherited accent, not a complete cyclic stress grammar or
+a second historical accent-loss event. SC038 and every executable stage
+position remain unchanged. No chronology edge is added or promoted.
+
+### Scientific structure and independent controls
+
+The actual selected world string at SC040 is
+`*w*éo*r*u*l*d`. Its short diphthong `*éo` is one nucleus in
+`EnglishStarShortDiphthong`, not a long vowel or the sequence
+`*é*o`. The independent inflected stage control
+`*w*éo*r*u*l*d*e*s` syllabifies as
+`ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s`: initial L followed by H is accommodated
+in the initial foot, so its medial *u* is not independently protected.
+The selected shorter world also has initial LH accommodation.
+Both back-mutated world controls preserve plain *u* through `QFoot`
+and lower it under the unchanged kernel.
+
+Earthly's weak-neuter stage string is `*éo*r*θ*k*u*n*d*e`,
+with genitive control `*éo*r*θ*k*u*n*d*e*s`.
+Syllabification leaves the initial short nucleus closed by *rθ*,
+and medial *kun* closed by *n*, before the final onset *d*:
+initial H and later nonfinal H, with the latter outside the initial
+foot. The medial *u* is temporarily `*ù`, survives lowering, and
+returns to plain *u*. Both full derivations end correctly,
+`eorþcunde` and `eorþcundes`.
+
+The complete weak-neuter ending is already handled:
+`*érθa-kùnðǭ > *érθa-kùndǭ > *érθkùndǭ > *érθkundǭ >
+*éorθkundǭ > *éorθkundæ > *éorθkunde > eorþcunde`.
+No parser extension, trimoric-to-bimoric repair, inserted *-an-*,
+late ending repair or silent paradigm levelling is required.
+
+The independent component set includes consonant-initial, kn/hw-cluster
+initial, vowel-initial, light/heavy pretonic prefixes, initial LH and LL,
+nonfinal/final heavy, open medial, nonhigh heads and consecutive *u*
+controls. `godcundne` and `godcundre` receive the expected medial
+protection under both onset variants. `æþelingas` versus `cyningas`,
+and `rīdende` versus `wesende`, discriminate initial-foot structure
+without selecting a word identity. Genuine dental-nasal lowering and
+labial-nasal preservation remain distinct. The all-five marking and
+immediate cleanup are fully subtraced, not inferred from final spelling.
+The ten selected live lowering witnesses remain unchanged.
+
+The historical support is the source-critical literature already recorded
+above: Goering pp.79–84, McCully/Hogg pp.330–333, Hogg's §2.89 and
+§§6.55–6.58, and Campbell §373. Those sources motivate weight, domain and
+the lowering distinction; they do not print CAPR's onset list, literal
+temporary symbols or a full accented earthly derivation. Hogg's caution
+about circular tertiary stress and the limits of metre are retained.
+Execution tests the supported account; it did not select its history.
+
+### Population conservation and efficient compilation
+
+The successful corrected assay preserves every accepted existing row,
+selected input, target, output, ambiguity count and aligned physical stage
+in all 390 selected and 380 immutable comparisons. All four models retain
+382 selected matches and exactly the eight standing mismatch identities.
+The immutable original targets still give their separate 366/14 result.
+There are zero selected/immutable final or aligned-stage deltas.
+World, rainbow and soul retain their accepted complete histories.
+
+Only two new whole-cascade crosschecks were compiled. Verified
+source-identical base bins and reduced corrected components were reused
+from immutable compilation receipts. The initial corrected worker stopped
+after replay because the export list lacked `QDecode`; that failed receipt
+and partial results are preserved. The single recorded harness repair
+proves text equality of `RDecode` and `QDecode` under identifier renaming
+and aliases the verified bin. The successful second snapshot reuses the
+authentic first compiler receipt after checking all compiler-input hashes;
+it is not falsely described as a fresh compilation.
+
+### Current verdict and propagation
+
+Registry-verdict: SC040=REFORMULATE/RETAIN
+
+REFORMULATE the explicit prosodic interpretation of “unstressed” by
+computing eligible nonfinal medial heads. RETAIN the executable segmental
+kernel, Old English historical stage, English-specific scope, confidence
+and chronology. The native formal gate now passes for the actual relevant
+operation and its complete wrapper; the original DEFER remains a genuine
+historical decision under its then-unresolved evidence.
+
+Controlled propagation declares exactly the executable, registry,
+this memorandum, authoritative SC040 reader discussion and grouped
+bridge dossier. The real SC-specific finalisation follows the decision;
+supporting reduced evidence and bibliographic identities are separately
+preserved in the preceding evidence commit. No protected baseline is
+declared ordinary SOURCE.
+
+The explicitly authorised subsequent lexical transition is one new
+attested weak-neuter cell, not a same-ID input migration. The corpus,
+entry-stage metadata, mature article/ledger and editorial apparatus must
+be applied through their existing owners; the established baseline writer
+must prove exact conservation of all old390 identities and immutable380
+records. The expected final selected result is 391/383/eight, not yet
+claimed by this pre-admission scientific finding. Corpus expansion
+requires renewed final-source evidence and validation rather than treating
+the pre-admission receipt as current.
+
+### Remaining scientific limits
+
+1. Final uninflected `godcund` is not protected by this nonfinal-medial
+   computation. No final-overheavy stress extension or complete *-cund*
+   paradigm is adopted.
+2. The Oxford feminine r-syncope and the inherited dative ending remain
+   independent unresolved histories. They are not concealed repairs to
+   the admitted weak-neuter span.
+3. Brunner's wider *ng* qualification remains unadopted; this decision
+   does not broaden the canonical consonant context merely because a
+   finite corpus happened to remain unchanged.
+4. The literal onset inventory and bounded short-vowel head representation
+   are explicit modelling assumptions, not a complete cyclic OE grammar.
+5. Genesis evidence is dictionary/edition-OCR mediated. Three located
+   passages remain distinct from the six reported DOEC tokens; no new
+   manuscript collation is claimed.
+6. The inherited-ending origin alternative and pre-existing strict
+   Ringe–Taylor reading-completeness gap remain honestly recorded.
+   Neither execution nor ordinary mature publication waives those limits.

@@ -95,7 +95,7 @@ SC072	OEUnstressedLongVowelShortening	historical_sound_change	Old English	OE Uns
 SC073	OEUnstressedAEMerger	historical_sound_change	Old English	OE Unstressed AE Merger	oe	english_specific	A	adjudicated	REFORMULATE	86	84
 SC074	OEMedUnstressedILowering1	historical_sound_change	Old English	OE Med Unstressed I Lowering1	oe	english_specific	A	unadjudicated		87	85
 SC075	OEMedUnstressedILowering	historical_sound_change	Old English	OE Med Unstressed I Lowering	oe	english_specific	A	unadjudicated		88	86
-SC040	OEMedUnstressedULowering	historical_sound_change	Old English	OE Med Unstressed U Lowering	oe	english_specific	A	unadjudicated		89	87
+SC040	OEMedUnstressedULowering	historical_sound_change	Old English	OE Med Unstressed U Lowering	oe	english_specific	A	adjudicated	REFORMULATE/RETAIN	89	87
 SC076	OEPrefixIReduction	historical_sound_change	Old English	Pretonic i-lowering	oe	english_specific	A	adjudicated	REFORMULATE	90	88
 SC078	OEWeakTailReduction	historical_sound_change	Old English	OE Weak Tail Reduction	oe	english_specific	A	unadjudicated		91	89
 SC079	OEJLossAfterHeavy	historical_sound_change	Old English	OE J Loss After Heavy	oe	english_specific	A	unadjudicated		92	90

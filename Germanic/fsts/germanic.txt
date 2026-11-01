@@ -2798,9 +2798,108 @@ define OEUnstressedLongVowelShortening FootCtx(OEUnstressedLongVowelShortening1
 # that wider conditioning remains for ordinary SC040 review, not this cleanup.
 # See dossier-medial-u-lowering-conditioning-2026.md for the source comparison.
 #
-define OEMedUnstressedULowering FootCtx([
-    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
+# Quantity-sensitive medial prominence after the initial H(+L) or L+syllable
+# foot (Goering 2023 pp.79-84; McCully/Hogg 1990 pp.330-333).
+# SC038 still removes inherited accent at its existing position. These
+# temporary short-vowel graves are computed and decoded only inside SC040.
+# No initial boundary is added: stranded onset consonants precede MPFirst
+# without contributing a nucleus or changing weight. See sc040-adjudication.md.
+define MPC OEAnyConsonant;
+define MPV EnglishStarVocalic;
+define MPVStart [{a}|{e}|{ĕ}|{i}|{o}|{u}|{y}|{ȳ}|{æ}|{ø}|{ā}|{ą}|{ã}|{ē}|{ę}|{ī}|{ō}|{ǭ}|{œ}|{ū}|{ų}|{ɑ}|{ɔ}|{ə}|{ɛ}|{ɜ}|{ʉ}|{ʊ}|{ǣ}|{á}|{é}|{í}|{ó}|{ú}|{ḯ}|{ḗ}|{à}|{è}|{ì}|{ò}|{ù}];
+define MPShort [EnglishStarShortVowel|EnglishStarShortDiphthong];
+define MPLong [MPV - MPShort];
+define MPPrefix [{*ᶠ} {ᵇ} MPC* MPV MPC*|0];
+define MPL [{ᵇ} MPC* MPShort];
+define MPH [{ᵇ} MPC* [MPLong MPC* | MPShort MPC+]];
+define MPS [MPL|MPH];
+define MPFirst [MPH (MPL) | MPL MPS];
+define MPRest [MPH (MPL) | MPL];
+
+define MPSyll [
+    [{*} -> {ᵇ*} || _ MPVStart]
+    .o. [{*s} {*k} {*r} {ᵇ} -> {ᵇ} {*s} {*k} {*r} || _ MPV]
+    .o. [{*s} {*k} {*w} {ᵇ} -> {ᵇ} {*s} {*k} {*w} || _ MPV]
+    .o. [{*s} {*p} {*l} {ᵇ} -> {ᵇ} {*s} {*p} {*l} || _ MPV]
+    .o. [{*s} {*p} {*r} {ᵇ} -> {ᵇ} {*s} {*p} {*r} || _ MPV]
+    .o. [{*s} {*t} {*r} {ᵇ} -> {ᵇ} {*s} {*t} {*r} || _ MPV]
+    .o. [{*b} {*l} {ᵇ} -> {ᵇ} {*b} {*l} || _ MPV]
+    .o. [{*b} {*r} {ᵇ} -> {ᵇ} {*b} {*r} || _ MPV]
+    .o. [{*d} {*r} {ᵇ} -> {ᵇ} {*d} {*r} || _ MPV]
+    .o. [{*d} {*w} {ᵇ} -> {ᵇ} {*d} {*w} || _ MPV]
+    .o. [{*f} {*l} {ᵇ} -> {ᵇ} {*f} {*l} || _ MPV]
+    .o. [{*f} {*r} {ᵇ} -> {ᵇ} {*f} {*r} || _ MPV]
+    .o. [{*g} {*l} {ᵇ} -> {ᵇ} {*g} {*l} || _ MPV]
+    .o. [{*g} {*r} {ᵇ} -> {ᵇ} {*g} {*r} || _ MPV]
+    .o. [{*g} {*w} {ᵇ} -> {ᵇ} {*g} {*w} || _ MPV]
+    .o. [{*k} {*l} {ᵇ} -> {ᵇ} {*k} {*l} || _ MPV]
+    .o. [{*k} {*r} {ᵇ} -> {ᵇ} {*k} {*r} || _ MPV]
+    .o. [{*k} {*w} {ᵇ} -> {ᵇ} {*k} {*w} || _ MPV]
+    .o. [{*p} {*l} {ᵇ} -> {ᵇ} {*p} {*l} || _ MPV]
+    .o. [{*p} {*r} {ᵇ} -> {ᵇ} {*p} {*r} || _ MPV]
+    .o. [{*s} {*k} {ᵇ} -> {ᵇ} {*s} {*k} || _ MPV]
+    .o. [{*s} {*l} {ᵇ} -> {ᵇ} {*s} {*l} || _ MPV]
+    .o. [{*s} {*m} {ᵇ} -> {ᵇ} {*s} {*m} || _ MPV]
+    .o. [{*s} {*n} {ᵇ} -> {ᵇ} {*s} {*n} || _ MPV]
+    .o. [{*s} {*p} {ᵇ} -> {ᵇ} {*s} {*p} || _ MPV]
+    .o. [{*s} {*t} {ᵇ} -> {ᵇ} {*s} {*t} || _ MPV]
+    .o. [{*s} {*w} {ᵇ} -> {ᵇ} {*s} {*w} || _ MPV]
+    .o. [{*t} {*r} {ᵇ} -> {ᵇ} {*t} {*r} || _ MPV]
+    .o. [{*t} {*w} {ᵇ} -> {ᵇ} {*t} {*w} || _ MPV]
+    .o. [{*x} {*l} {ᵇ} -> {ᵇ} {*x} {*l} || _ MPV]
+    .o. [{*x} {*n} {ᵇ} -> {ᵇ} {*x} {*n} || _ MPV]
+    .o. [{*x} {*r} {ᵇ} -> {ᵇ} {*x} {*r} || _ MPV]
+    .o. [{*x} {*w} {ᵇ} -> {ᵇ} {*x} {*w} || _ MPV]
+    .o. [{*ʃ} {*r} {ᵇ} -> {ᵇ} {*ʃ} {*r} || _ MPV]
+    .o. [{*ʃ} {*w} {ᵇ} -> {ᵇ} {*ʃ} {*w} || _ MPV]
+    .o. [{*θ} {*r} {ᵇ} -> {ᵇ} {*θ} {*r} || _ MPV]
+    .o. [{*θ} {*w} {ᵇ} -> {ᵇ} {*θ} {*w} || _ MPV]
+    .o. [{*b} {ᵇ} -> {ᵇ} {*b} || _ MPV,
+         {*β} {ᵇ} -> {ᵇ} {*β} || _ MPV,
+         {*d} {ᵇ} -> {ᵇ} {*d} || _ MPV,
+         {*f} {ᵇ} -> {ᵇ} {*f} || _ MPV,
+         {*g} {ᵇ} -> {ᵇ} {*g} || _ MPV,
+         {*k} {ᵇ} -> {ᵇ} {*k} || _ MPV,
+         {*l} {ᵇ} -> {ᵇ} {*l} || _ MPV,
+         {*m} {ᵇ} -> {ᵇ} {*m} || _ MPV,
+         {*n} {ᵇ} -> {ᵇ} {*n} || _ MPV,
+         {*p} {ᵇ} -> {ᵇ} {*p} || _ MPV,
+         {*r} {ᵇ} -> {ᵇ} {*r} || _ MPV,
+         {*s} {ᵇ} -> {ᵇ} {*s} || _ MPV,
+         {*t} {ᵇ} -> {ᵇ} {*t} || _ MPV,
+         {*w} {ᵇ} -> {ᵇ} {*w} || _ MPV,
+         {*x} {ᵇ} -> {ᵇ} {*x} || _ MPV,
+         {*z} {ᵇ} -> {ᵇ} {*z} || _ MPV,
+         {*θ} {ᵇ} -> {ᵇ} {*θ} || _ MPV,
+         {*ð} {ᵇ} -> {ᵇ} {*ð} || _ MPV,
+         {*ŋ} {ᵇ} -> {ᵇ} {*ŋ} || _ MPV,
+         {*ɡ} {ᵇ} -> {ᵇ} {*ɡ} || _ MPV,
+         {*ʧ} {ᵇ} -> {ᵇ} {*ʧ} || _ MPV,
+         {*ʤ} {ᵇ} -> {ᵇ} {*ʤ} || _ MPV,
+         {*ʝ} {ᵇ} -> {ᵇ} {*ʝ} || _ MPV,
+         {*ʃ} {ᵇ} -> {ᵇ} {*ʃ} || _ MPV,
+         {*ç} {ᵇ} -> {ᵇ} {*ç} || _ MPV,
+         {*ʒ} {ᵇ} -> {ᵇ} {*ʒ} || _ MPV,
+         {*j} {ᵇ} -> {ᵇ} {*j} || _ MPV,
+         {*h} {ᵇ} -> {ᵇ} {*h} || _ MPV]
+];
+define MPAccent [
+    {*a} -> {*à} || .#. MPPrefix MPC* MPFirst MPRest* {ᵇ} MPC* _ MPC+ {ᵇ},
+    {*e} -> {*è} || .#. MPPrefix MPC* MPFirst MPRest* {ᵇ} MPC* _ MPC+ {ᵇ},
+    {*i} -> {*ì} || .#. MPPrefix MPC* MPFirst MPRest* {ᵇ} MPC* _ MPC+ {ᵇ},
+    {*o} -> {*ò} || .#. MPPrefix MPC* MPFirst MPRest* {ᵇ} MPC* _ MPC+ {ᵇ},
+    {*u} -> {*ù} || .#. MPPrefix MPC* MPFirst MPRest* {ᵇ} MPC* _ MPC+ {ᵇ}
+];
+define MPUnsyll [{ᵇ} -> 0];
+define MPFoot SentenceCtx([MPSyll .o. MPAccent .o. MPUnsyll]);
+define MPDecode Ctx([
+    {*à}->{*a}, {*è}->{*e}, {*ì}->{*i}, {*ò}->{*o}, {*ù}->{*u}
 ]);
+# The temporary headed *ù retains the canonical preceding-*u exclusion.
+define MPULower FootCtx([
+    {*u} -> {*o} || [EnglishStarVocalic - [{*u}|{*ū}|{*ú}|{*ù}]] [EnglishStarConsonant | EnglishPalatalConsonant]+ _ [[EnglishStarConsonant | EnglishPalatalConsonant] - {*m}]
+]);
+define OEMedUnstressedULowering [MPFoot .o. MPULower .o. MPDecode];
 
 # ===========================================================================
 # UNSTRESSED *i LOWERING (§17.36)

@@ -1,0 +1,452 @@
+{
+  "source_sha256": "0d79aeeed03638dbdda051e48bb8b6191ad2f5c395cf4287041f3b01c4216705",
+  "components": {
+    "MPAccent": {
+      "binary_sha256": "b2a2d0d0325b924bca3a45827b6ca81a3ef6571b8fe4ce7bb2490cda05248e78",
+      "functional_stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "functional_stderr": ""
+    },
+    "MPDecode": {
+      "binary_sha256": "07e85a63a25487417e88752d5d6cbf73aa5d356a018dc9e6f0422590080b7d1d",
+      "functional_stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "functional_stderr": ""
+    },
+    "MPFoot": {
+      "binary_sha256": "f6411421c94bdd7a6aa3e38731b891856bda3ef53b36f7505d9336a6b370a539",
+      "functional_stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "functional_stderr": "",
+      "outputs": {
+        "early-bow-grave": [
+          "*r*é*g*n*a*b*ù*g*ô"
+        ],
+        "early-bow-independent": [
+          "*b*ú*g*ô"
+        ],
+        "early-kund-grave": [
+          "*é*r*θ*a*k*ù*n*d*a*z"
+        ],
+        "early-high-vowel-synthetic": [
+          "*b*ù*g*i"
+        ],
+        "early-j-block-synthetic": [
+          "*b*ù*g*j*a"
+        ],
+        "early-unstressed-synthetic": [
+          "*s*á*t*u*b*a*g*ô"
+        ],
+        "early-n-after-first-consonant-synthetic": [
+          "*s*á*t*ù*g*n*a"
+        ],
+        "late-dental-nasal": [
+          "*b*é*r*u*n"
+        ],
+        "late-labial-nasal": [
+          "*b*é*r*u*m"
+        ],
+        "late-world": [
+          "*w*é*r*u*l*d"
+        ],
+        "late-world-inflected": [
+          "*w*é*r*u*l*d*e*s"
+        ],
+        "late-world-back-mutated": [
+          "*w*éo*r*u*l*d"
+        ],
+        "late-world-back-mutated-inflected": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "late-earthly": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "late-earthly-pretonic-synthetic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "late-earthly-uninflected": [
+          "*éo*r*θ*k*u*n*d"
+        ],
+        "late-earthly-accusative": [
+          "*éo*r*θ*k*ù*n*d*n*e"
+        ],
+        "late-godcund": [
+          "*g*ó*d*k*ù*n*d*e*s"
+        ],
+        "late-rainbow": [
+          "*r*é*ʝ*n*b*o*g*a"
+        ],
+        "late-aetheling": [
+          "*á*θ*e*l*i*n*g"
+        ],
+        "late-aetheling-inflected": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "late-cyning-inflected": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "late-riding": [
+          "*r*ī*d*è*n*d*e"
+        ],
+        "late-being": [
+          "*w*é*s*e*n*d*e"
+        ],
+        "late-head-inflected": [
+          "*x*éa*b*u*d*e"
+        ],
+        "late-sinfull-uninflected": [
+          "*s*y*n*f*u*l*l"
+        ],
+        "late-sinfull-inflected": [
+          "*s*y*n*f*ù*l*l*e"
+        ],
+        "late-hlafweard-transparent-root": [
+          "*x*l*ā*f*w*ea*r*d"
+        ],
+        "weak-LH-world": [
+          "*w*é*r*a*l*d"
+        ],
+        "weak-LH-grave": [
+          "*w*é*r*à*l*d"
+        ],
+        "weak-LH-primary": [
+          "*w*é*r*á*l*d"
+        ],
+        "weak-LH-heavy-first": [
+          "*w*é*r*t*a*l*d"
+        ],
+        "weak-LH-no-cluster": [
+          "*w*é*r*a*l*u"
+        ],
+        "weak-LH-initial-weak": [
+          "*w*e*r*a*l*d"
+        ],
+        "weak-LH-twofold": [
+          "*t*w*í*f*a*l*d"
+        ],
+        "weak-LH-onefold": [
+          "*ā*n*f*a*l*d"
+        ],
+        "late-godcund-uninflected": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "late-godcund-accusative": [
+          "*g*ó*d*k*ù*n*d*n*e"
+        ],
+        "late-godcund-feminine-genitive": [
+          "*g*ó*d*k*ù*n*d*r*e"
+        ],
+        "late-eorpthcundre": [
+          "*é*o*r*θ*k*ù*n*d*r*e"
+        ],
+        "late-final-overheavy-LH-synthetic": [
+          "*k*ú*n*i*n*g"
+        ],
+        "syncope-headed-heavy-r": [
+          "*g*ó*d*k*ù*n*d*e*r*e"
+        ],
+        "syncope-light-r-negative": [
+          "*g*ó*b*e*r*e"
+        ],
+        "syncope-no-following-vowel-negative": [
+          "*g*ó*d*k*ù*n*d*e*r"
+        ],
+        "syncope-long-vowel-negative": [
+          "*g*ó*d*k*ù*n*d*ē*r*e"
+        ],
+        "initial-hw-heavy-medial": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-kn-heavy-medial": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel-heavy-medial": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "initial-light-heavy-medial": [
+          "*k*á*k*u*n*d*e"
+        ],
+        "initial-LL-heavy-medial": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "cyning-LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "pretonic-heavy-medial": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "pretonic-heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "nonhigh-heavy-medial": [
+          "*á*n*k*à*n*d*e"
+        ],
+        "headed-u-following-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ],
+        "final-heavy-negative": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "initial-LH-negative": [
+          "*w*é*r*u*l*d*e*s"
+        ],
+        "open-medial-negative": [
+          "*á*n*k*u*d*e"
+        ]
+      }
+    },
+    "MPSyll": {
+      "binary_sha256": "1435d9b5f62bc6b700f18136c3acb4579cda99df4de62e79c2d7c7f19ba229ff",
+      "functional_stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "functional_stderr": ""
+    },
+    "MPULower": {
+      "binary_sha256": "843d251e035fe65db8b17f2d16ee847ba26ea9d4d8fdce636f75be5f975594db",
+      "functional_stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "functional_stderr": ""
+    },
+    "MPUnsyll": {
+      "binary_sha256": "ce5590d7ebefc9986be145e09bae4f54303be2391ed6c2d8cc6086b975f37258",
+      "functional_stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "functional_stderr": ""
+    },
+    "OEMedUnstressedULowering": {
+      "binary_sha256": "95314d774d9460a87b02db72cd96af56b8927a0e0202cc88cb33ee6abcbe9f8c",
+      "functional_stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "functional_stderr": "",
+      "outputs": {
+        "early-bow-grave": [
+          "*r*é*g*n*a*b*u*g*ô"
+        ],
+        "early-bow-independent": [
+          "*b*ú*g*ô"
+        ],
+        "early-kund-grave": [
+          "*é*r*θ*a*k*u*n*d*a*z"
+        ],
+        "early-high-vowel-synthetic": [
+          "*b*u*g*i"
+        ],
+        "early-j-block-synthetic": [
+          "*b*u*g*j*a"
+        ],
+        "early-unstressed-synthetic": [
+          "*s*á*t*o*b*a*g*ô"
+        ],
+        "early-n-after-first-consonant-synthetic": [
+          "*s*á*t*u*g*n*a"
+        ],
+        "late-dental-nasal": [
+          "*b*é*r*o*n"
+        ],
+        "late-labial-nasal": [
+          "*b*é*r*u*m"
+        ],
+        "late-world": [
+          "*w*é*r*o*l*d"
+        ],
+        "late-world-inflected": [
+          "*w*é*r*o*l*d*e*s"
+        ],
+        "late-world-back-mutated": [
+          "*w*éo*r*o*l*d"
+        ],
+        "late-world-back-mutated-inflected": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "late-earthly": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "late-earthly-pretonic-synthetic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "late-earthly-uninflected": [
+          "*éo*r*θ*k*o*n*d"
+        ],
+        "late-earthly-accusative": [
+          "*éo*r*θ*k*u*n*d*n*e"
+        ],
+        "late-godcund": [
+          "*g*ó*d*k*u*n*d*e*s"
+        ],
+        "late-rainbow": [
+          "*r*é*ʝ*n*b*o*g*a"
+        ],
+        "late-aetheling": [
+          "*á*θ*e*l*i*n*g"
+        ],
+        "late-aetheling-inflected": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "late-cyning-inflected": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "late-riding": [
+          "*r*ī*d*e*n*d*e"
+        ],
+        "late-being": [
+          "*w*é*s*e*n*d*e"
+        ],
+        "late-head-inflected": [
+          "*x*éa*b*o*d*e"
+        ],
+        "late-sinfull-uninflected": [
+          "*s*y*n*f*o*l*l"
+        ],
+        "late-sinfull-inflected": [
+          "*s*y*n*f*u*l*l*e"
+        ],
+        "late-hlafweard-transparent-root": [
+          "*x*l*ā*f*w*ea*r*d"
+        ],
+        "weak-LH-world": [
+          "*w*é*r*a*l*d"
+        ],
+        "weak-LH-grave": [
+          "*w*é*r*a*l*d"
+        ],
+        "weak-LH-primary": [
+          "*w*é*r*á*l*d"
+        ],
+        "weak-LH-heavy-first": [
+          "*w*é*r*t*a*l*d"
+        ],
+        "weak-LH-no-cluster": [
+          "*w*é*r*a*l*u"
+        ],
+        "weak-LH-initial-weak": [
+          "*w*e*r*a*l*d"
+        ],
+        "weak-LH-twofold": [
+          "*t*w*í*f*a*l*d"
+        ],
+        "weak-LH-onefold": [
+          "*ā*n*f*a*l*d"
+        ],
+        "late-godcund-uninflected": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "late-godcund-accusative": [
+          "*g*ó*d*k*u*n*d*n*e"
+        ],
+        "late-godcund-feminine-genitive": [
+          "*g*ó*d*k*u*n*d*r*e"
+        ],
+        "late-eorpthcundre": [
+          "*é*o*r*θ*k*u*n*d*r*e"
+        ],
+        "late-final-overheavy-LH-synthetic": [
+          "*k*ú*n*i*n*g"
+        ],
+        "syncope-headed-heavy-r": [
+          "*g*ó*d*k*u*n*d*e*r*e"
+        ],
+        "syncope-light-r-negative": [
+          "*g*ó*b*e*r*e"
+        ],
+        "syncope-no-following-vowel-negative": [
+          "*g*ó*d*k*u*n*d*e*r"
+        ],
+        "syncope-long-vowel-negative": [
+          "*g*ó*d*k*u*n*d*ē*r*e"
+        ],
+        "initial-hw-heavy-medial": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-kn-heavy-medial": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel-heavy-medial": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "initial-light-heavy-medial": [
+          "*k*á*k*o*n*d*e"
+        ],
+        "initial-LL-heavy-medial": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "cyning-LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "pretonic-heavy-medial": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "pretonic-heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "nonhigh-heavy-medial": [
+          "*á*n*k*a*n*d*e"
+        ],
+        "headed-u-following-u": [
+          "*á*n*k*u*n*d*u*n"
+        ],
+        "final-heavy-negative": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "initial-LH-negative": [
+          "*w*é*r*o*l*d*e*s"
+        ],
+        "open-medial-negative": [
+          "*á*n*k*o*d*e"
+        ]
+      }
+    }
+  },
+  "controls": {
+    "early-bow-grave": "*r*é*g*n*a*b*ù*g*ô",
+    "early-bow-independent": "*b*ú*g*ô",
+    "early-kund-grave": "*é*r*θ*a*k*ù*n*d*a*z",
+    "early-high-vowel-synthetic": "*b*ù*g*i",
+    "early-j-block-synthetic": "*b*ù*g*j*a",
+    "early-unstressed-synthetic": "*s*á*t*u*b*a*g*ô",
+    "early-n-after-first-consonant-synthetic": "*s*á*t*ù*g*n*a",
+    "late-dental-nasal": "*b*é*r*u*n",
+    "late-labial-nasal": "*b*é*r*u*m",
+    "late-world": "*w*é*r*u*l*d",
+    "late-world-inflected": "*w*é*r*u*l*d*e*s",
+    "late-world-back-mutated": "*w*éo*r*u*l*d",
+    "late-world-back-mutated-inflected": "*w*éo*r*u*l*d*e*s",
+    "late-earthly": "*éo*r*θ*k*u*n*d*e*s",
+    "late-earthly-pretonic-synthetic": "*ᶠ*g*e*éo*r*θ*k*u*n*d*e*s",
+    "late-earthly-uninflected": "*éo*r*θ*k*u*n*d",
+    "late-earthly-accusative": "*éo*r*θ*k*u*n*d*n*e",
+    "late-godcund": "*g*ó*d*k*u*n*d*e*s",
+    "late-rainbow": "*r*é*ʝ*n*b*o*g*a",
+    "late-aetheling": "*á*θ*e*l*i*n*g",
+    "late-aetheling-inflected": "*á*θ*e*l*i*n*g*a*s",
+    "late-cyning-inflected": "*k*y*n*i*n*g*a*s",
+    "late-riding": "*r*ī*d*e*n*d*e",
+    "late-being": "*w*é*s*e*n*d*e",
+    "late-head-inflected": "*x*éa*b*u*d*e",
+    "late-sinfull-uninflected": "*s*y*n*f*u*l*l",
+    "late-sinfull-inflected": "*s*y*n*f*u*l*l*e",
+    "late-hlafweard-transparent-root": "*x*l*ā*f*w*ea*r*d",
+    "weak-LH-world": "*w*é*r*a*l*d",
+    "weak-LH-grave": "*w*é*r*à*l*d",
+    "weak-LH-primary": "*w*é*r*á*l*d",
+    "weak-LH-heavy-first": "*w*é*r*t*a*l*d",
+    "weak-LH-no-cluster": "*w*é*r*a*l*u",
+    "weak-LH-initial-weak": "*w*e*r*a*l*d",
+    "weak-LH-twofold": "*t*w*í*f*a*l*d",
+    "weak-LH-onefold": "*ā*n*f*a*l*d",
+    "late-godcund-uninflected": "*g*ó*d*k*u*n*d",
+    "late-godcund-accusative": "*g*ó*d*k*u*n*d*n*e",
+    "late-godcund-feminine-genitive": "*g*ó*d*k*u*n*d*r*e",
+    "late-eorpthcundre": "*é*o*r*θ*k*u*n*d*r*e",
+    "late-final-overheavy-LH-synthetic": "*k*ú*n*i*n*g",
+    "syncope-headed-heavy-r": "*g*ó*d*k*u*n*d*e*r*e",
+    "syncope-light-r-negative": "*g*ó*b*e*r*e",
+    "syncope-no-following-vowel-negative": "*g*ó*d*k*u*n*d*e*r",
+    "syncope-long-vowel-negative": "*g*ó*d*k*u*n*d*ē*r*e",
+    "initial-hw-heavy-medial": "*x*w*á*n*k*u*n*d*e",
+    "initial-kn-heavy-medial": "*k*n*á*n*k*u*n*d*e",
+    "initial-vowel-heavy-medial": "*á*n*k*u*n*d*e",
+    "initial-light-heavy-medial": "*k*á*k*u*n*d*e",
+    "initial-LL-heavy-medial": "*á*θ*e*l*i*n*g*a*s",
+    "cyning-LH": "*k*y*n*i*n*g*a*s",
+    "pretonic-heavy-medial": "*ᶠ*g*e*éo*r*θ*k*u*n*d*e",
+    "pretonic-heavy-prefix": "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e",
+    "nonhigh-heavy-medial": "*á*n*k*a*n*d*e",
+    "headed-u-following-u": "*á*n*k*u*n*d*u*n",
+    "final-heavy-negative": "*g*ó*d*k*u*n*d",
+    "initial-LH-negative": "*w*é*r*u*l*d*e*s",
+    "open-medial-negative": "*á*n*k*u*d*e"
+  }
+}
