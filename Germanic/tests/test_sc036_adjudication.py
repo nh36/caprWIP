@@ -59,12 +59,16 @@ def test_only_sc036_and_its_explicit_branches_changed():
     # adjudicated and pinned exactly by test_sc066_sc068_adjudication.py.
     sc066_changed = {"OELAdjacentSyncope", "EnglishStarShortDiphthong",
                      "EnglishStarLongDiphthong"}
+    # Exact SC040 closure is independently pinned by test_sc040_formal_resolution.py.
+    sc040_added = {"MP" + suffix for suffix in (
+        "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
+        "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")}
     assert current.keys() - old.keys() == (
-        {"OELHWeakRaising", "OESoulProxy"} | gate_added)
+        {"OELHWeakRaising", "OESoulProxy"} | gate_added | sc040_added)
     assert old.keys() <= current.keys()
     assert {name for name in old if old[name] != current[name]} == (
         {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed |
-        rainbow_changed | sc066_changed)
+        rainbow_changed | sc066_changed | {"OEMedUnstressedULowering"})
     assert current["OEInterStressRaising"] == (
         "[OELHWeakRaising.o.OESoulProxy]")
 

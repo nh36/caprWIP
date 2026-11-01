@@ -119,8 +119,7 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assembly = ROOT / "Germanic/docs/assembly"
     with (assembly / "manifest_all_by_class.tsv").open() as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    # 169 = 168 at rainbow adoption + the published filth article (row 2335).
-    assert len(rows) == 169
+    assert len(rows) == 170
     regular = [row for row in rows if row["derivation_class"] == "regular"]
     assert len(regular) == 91
     rainbow = [row for row in regular if row["row_id"] == "2148"]
@@ -142,6 +141,9 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     current = list(csv.DictReader((ROOT / path).read_text().splitlines(), delimiter="\t"))
     assert all(row in current for row in previous)
     added = [row for row in current if row not in previous]
+    earthly = [row for row in added if row["source_ref"] == "earthly — OE eorþcunde"]
+    assert len(earthly) == 4
+    added = [row for row in added if row not in earthly]
     # The SC065 adjudication and the filth publication closeout (row 2335)
     # pin their own rows: 3 under the volume heading ref, 8 under the model
     # path, 2 explicit section-20 cognate tags (os/ohg).

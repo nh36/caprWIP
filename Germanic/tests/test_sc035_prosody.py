@@ -87,7 +87,8 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
     # the SC066 reformulation is pinned by test_sc066_sc068_adjudication.py.
     assert changed == {"OEPrefixAReduction", "OEUnstressedAEMerger",
                        "OEPrefixIReduction", "OEInterStressRaising",
-                       "PNWGmcULowering", "OELAdjacentSyncope"}
+                       "PNWGmcULowering", "OELAdjacentSyncope",
+                       "OEMedUnstressedULowering"}
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 

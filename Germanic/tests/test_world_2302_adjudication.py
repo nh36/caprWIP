@@ -531,6 +531,9 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     current = read_tsv((ROOT / path).read_text())
     assert all(row in current for row in previous)
     added = [row for row in current if row not in previous]
+    earthly = [row for row in added if row["source_ref"] == "earthly — OE eorþcunde"]
+    assert len(earthly) == 4
+    added = [row for row in added if row not in earthly]
     # The independent rainbow publication test pins these eight exact additions.
     rainbow_refs = {
         "rainbow — OE reġnboga",

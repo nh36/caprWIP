@@ -47,7 +47,10 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
         ["git", "show", f"{BASE}:Germanic/fsts/germanic.txt"], cwd=ROOT, text=True,
     ))
     current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
-    assert current.keys() - old.keys() == {"pgrmInputTailVowel"}
+    medial = {"MP" + suffix for suffix in (
+        "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
+        "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")}
+    assert current.keys() - old.keys() == {"pgrmInputTailVowel"} | medial
     assert not old.keys() - current.keys()
     assert {name for name in old
             if old[name].definition_raw != current[name].definition_raw} == {
@@ -59,6 +62,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "OELAdjacentSyncope",
                 "EnglishStarShortDiphthong",
                 "EnglishStarLongDiphthong",
+                # Independently source-bound by test_sc040_formal_resolution.py.
+                "OEMedUnstressedULowering",
             }
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         assert current[name].definition_raw.replace(
@@ -136,5 +141,7 @@ def test_production_gate_is_generic_and_preserves_every_old_output():
     for row in records:
         assert current[row["fst_input"]] == row["outputs"].split("|")
     assert current[forms[0]] == ["eorþocundere"]
-    assert current[forms[1]] == ["eorþcondere"]
+    # SC040 now protects the nonfinal heavy head; the independent Oxford
+    # syncope question remains open. The old failed receipt above is unchanged.
+    assert current[forms[1]] == ["eorþcundere"]
     assert current["xwí-līkaz"] == ["hwileċ"]

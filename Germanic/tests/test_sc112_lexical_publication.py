@@ -84,9 +84,8 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         current = table(path.read_text())
         now = {row["row_id"]: row for row in current}
         self.assertEqual(len(current), len(now))
-        # 169 = 168 at the SC112 witness state + the published filth article (2335).
-        self.assertEqual((len(old), len(now)), (165, 169))
-        self.assertEqual(set(now) - set(old), {"2148", "2333", "2334", "2335"})
+        self.assertEqual((len(old), len(now)), (165, 170))
+        self.assertEqual(set(now) - set(old), {"2148", "2333", "2334", "2335", "2336"})
         self.assertEqual(set(old) - set(now), set())
         self.assertEqual(sum(r["derivation_class"] == "regular" for r in current), 91)
         # Positions are editorial (see test_lexical_editorial_order); every

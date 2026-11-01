@@ -338,6 +338,8 @@ class FingerprintGuardTests(unittest.TestCase):
         # medial-syncope witness (*fūliþō > fȳlþ): one row added with an exact
         # expansion receipt; every pre-existing output byte-identical and the
         # legacy sha unchanged (audits/sc065-adjudication.md).
+        # SC040 adds only earthly (2336), with all previous 390 records and
+        # the immutable380 conserved (test_earthly_2336_adoption.py).
         self.assertEqual(
             historical["outputs_sha256"],
             "b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb",
@@ -352,7 +354,7 @@ class FingerprintGuardTests(unittest.TestCase):
         )
         self.assertEqual(
             data["outputs_sha256"],
-            "35bbd32df3f8c3e07c98ad24222a72130c7ff4ebe6de8fe1922464d5df4639c9",
+            "efabc1f0512a862f601b651e6409b4e3265a5911b55ce9624b5661e297b8828e",
         )
         previous = {
             row["row_id"]: row
