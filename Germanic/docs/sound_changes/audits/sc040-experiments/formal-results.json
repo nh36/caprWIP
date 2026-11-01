@@ -1,0 +1,2925 @@
+{
+  "foma": "foma 0.10.0alpha",
+  "components": {
+    "BFoot": {
+      "binary_sha256": "aa5044f518926b98a8ee16458cf85046a16571f08cbc80438faa534c8fef1c1e",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_00.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "26.0 kB. 291 states, 1513 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "BFootOne": {
+      "binary_sha256": "b180fc8235ffc65f0f0f6415433ce22f16f476c2412d1d434a4459452701b77c",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_01.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "17.7 kB. 204 states, 984 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "BSyll": {
+      "binary_sha256": "21da87ec10d7cb0e1eab9befe6491dfbaeeee5bd45cd77b94f5931a4e69c2c0c",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_02.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "29.3 kB. 77 states, 1737 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 72.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e*s"
+        ],
+        "kn": [
+          "ᵇ*k*n*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "pretonic": [
+          "*ᶠᵇ*g*eᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*nᵇ*d*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "LL": [
+          "ᵇ*áᵇ*θ*eᵇ*l*i*nᵇ*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*yᵇ*n*i*nᵇ*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*dᵇ*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*u*n"
+        ]
+      }
+    },
+    "DFoot": {
+      "binary_sha256": "8c83dc1b9142032579b8663f93a45f13759e3f1615ecd547d5fa14aea5ca4332",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_03.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "22.4 kB. 271 states, 1282 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "DFootOne": {
+      "binary_sha256": "c625f75e991332917de7014c14aa6a9643accde00626861d12f8ea9a64228092",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_04.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "16.1 kB. 198 states, 881 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "DSyll": {
+      "binary_sha256": "ef67d9183e72f85f9f805d7baf9632105d5ba23088f61f54ec3e5c0769cd5070",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_05.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "27.7 kB. 74 states, 1634 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 72.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e*s"
+        ],
+        "kn": [
+          "*kᵇ*n*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "pretonic": [
+          "*ᶠᵇ*g*eᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*nᵇ*d*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "LL": [
+          "ᵇ*áᵇ*θ*eᵇ*l*i*nᵇ*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*yᵇ*n*i*nᵇ*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*dᵇ*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*u*n"
+        ]
+      }
+    },
+    "DiagCore": {
+      "binary_sha256": "2cefc961cad7d1e91ab4b19bf94876688655ae383ea72d58e4c66a4a448f0fe0",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_06.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "79.7 kB. 280 states, 4959 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᶠ ḗ ḯ\nSize: 74.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_06.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/DiagCore-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/DiagCore-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 6,
+          "maximum_delay": 1
+        },
+        "att_sha256": "1eb3252a2de7ce391f5ac45704a2543a454e870239552af8f1110e1750cf5a2c"
+      }
+    },
+    "DiagLower": {
+      "binary_sha256": "3b3a976bb9ddae945966bf0c2c3a98d0b0dc07d17cd072490891269ab1dade52",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_07.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "47.0 kB. 532 states, 2861 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "DiagSA": {
+      "binary_sha256": "f6b2c64c71f9eef407a978cef006bfb0000030a5ee30a7375cfb53aa4d21a1b0",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_08.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "91.3 kB. 296 states, 5702 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᶠ ḗ ḯ\nSize: 74.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θᵇ*k*ù*nᵇ*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θᵇ*k*ù*nᵇ*d*e*s"
+        ],
+        "kn": [
+          "ᵇ*k*n*á*nᵇ*k*ù*nᵇ*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*nᵇ*k*ù*nᵇ*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*nᵇ*k*ù*nᵇ*d*e"
+        ],
+        "pretonic": [
+          "*ᶠᵇ*g*eᵇ*éo*r*θᵇ*k*ù*nᵇ*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*nᵇ*d*éo*r*θᵇ*k*ù*nᵇ*d*e"
+        ],
+        "LL": [
+          "ᵇ*áᵇ*θ*eᵇ*l*ì*nᵇ*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*yᵇ*n*i*nᵇ*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*dᵇ*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*nᵇ*k*ù*nᵇ*d*u*n"
+        ]
+      }
+    },
+    "DiagSent": {
+      "binary_sha256": "85665208bef0f2cc9a1c93702c7adb33d59b2fe6c2602a53a64309bd3adfa6cf",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_09.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "26.1 kB. 293 states, 1522 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_09.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/DiagSent-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/DiagSent-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 129,
+          "maximum_delay": 1
+        },
+        "att_sha256": "ea0bf2c0290bfe80d57f573b751289744c16f34b50c38304b50bb81397d1a4b6"
+      }
+    },
+    "IFoot": {
+      "binary_sha256": "8af05f2eb2bede089aed35c3e8e7c4f20059bd5f928ff0f0fdda9854c4d3e7de",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_10.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "23.0 kB. 273 states, 1324 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "IFootOne": {
+      "binary_sha256": "2ab6118c5627948d07d185691461a180a9ee61f86f650bb5d11cbcd2b6ed547e",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_11.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "16.8 kB. 200 states, 923 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "ISyll": {
+      "binary_sha256": "c3c6362640a3e260573c5eb5eed1c93c3a1cd60c9c920b8e603bcfd5fb308175",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_12.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "17.7 kB. 61 states, 1000 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 71.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e*s"
+        ],
+        "kn": [
+          "ᵇ*kᵇ*n*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "pretonic": [
+          "*ᶠᵇ*g*eᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*nᵇ*d*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "LL": [
+          "ᵇ*áᵇ*θ*eᵇ*l*i*nᵇ*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*yᵇ*n*i*nᵇ*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*dᵇ*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*u*n"
+        ]
+      }
+    },
+    "MAccent": {
+      "binary_sha256": "cd8bb9b1a528d83d1ec3358be91ac881e2210e9d1fa6ffbd3af11f98a5b7b329",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_13.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "49.4 kB. 44 states, 3027 arcs, Cyclic.\nSigma: ? @ * a b d e f g i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᶠ ḗ ḯ\nSize: 72.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MDecode": {
+      "binary_sha256": "4d65aa93bbc8942df04ca1a8821fc75759040a85051e4fe9206ddf688a900ba6",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_14.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "6.2 kB. 16 states, 250 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 76.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MDrop": {
+      "binary_sha256": "bf9b3bd83101a8550e625e4770be5d96e2b380edb5c2d0b5bc082254eff8827e",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_15.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "9.2 kB. 8 states, 455 arcs, Cyclic.\nSigma: ? @ * a b d e f g i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 70.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MFoot": {
+      "binary_sha256": "b2d00e3e7ee74b51ba5ffcafb375be91ee0d6f54ade1b5dd15829fa97d3d8e0c",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_16.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "26.1 kB. 293 states, 1522 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_16.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/MFoot-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/MFoot-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 129,
+          "maximum_delay": 1
+        },
+        "att_sha256": "ea0bf2c0290bfe80d57f573b751289744c16f34b50c38304b50bb81397d1a4b6"
+      }
+    },
+    "MFootOne": {
+      "binary_sha256": "7c09ef6bfef3cdb9efbad9540208774ddc31ce3b7759f6d25d1f48286a96fe63",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_17.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "17.8 kB. 206 states, 993 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "MInit": {
+      "binary_sha256": "c19ab1d656a35cd17d3906850deb75912dd60e89cf6ab2cc163ce6a4b01d45d0",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_18.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "5.5 kB. 5 states, 218 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 71.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "ᵇ*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "ᵇ*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MLate": {
+      "binary_sha256": "e52bfd1e9c92b44ad250447b57993ae0fcf58b882723ad1ecd69b6d026917088",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_19.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "44.4 kB. 479 states, 2691 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MLateOne": {
+      "binary_sha256": "bdc6b466c8306868d922a7239258f0e63ae035ec0911ab24a7690f691fcb2d4e",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_20.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "28.8 kB. 326 states, 1697 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MPlainLower": {
+      "binary_sha256": "0e0858b7b8cdfd91b8099ca761661b45c1cd49780492317369d51a9e8369fc08",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_21.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "11.0 kB. 33 states, 561 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 76.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*o*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*o*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*o*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*o*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*o*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*o*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*o*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*o*n*d*u*n"
+        ]
+      }
+    },
+    "MSyll": {
+      "binary_sha256": "5014c14661f4e625cb4aa9e0c59f371d58b6d6817a52bbcfc8c98ec20af3dc3f",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_22.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "29.3 kB. 77 states, 1737 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 72.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e*s"
+        ],
+        "kn": [
+          "ᵇ*k*n*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "pretonic": [
+          "*ᶠᵇ*g*eᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*nᵇ*d*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "LL": [
+          "ᵇ*áᵇ*θ*eᵇ*l*i*nᵇ*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*yᵇ*n*i*nᵇ*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*dᵇ*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*u*n"
+        ]
+      }
+    },
+    "MUnsyll": {
+      "binary_sha256": "70d9a6307ed5b0c70059b3e9a3db153d3f955ca1eb46633e98a1aa6932e3aca5",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_23.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "334 bytes. 1 state, 2 arcs, Cyclic.\nSigma: ? @ ᵇ\nSize: 1.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MinAligned": {
+      "binary_sha256": "1049394c9561c95019a6e159b12e9c1d99c3b76cbfa8c98a8c14221aed3dc9a7",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_24.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "303 bytes. 4 states, 3 arcs, 1 path.\nSigma: a b\nSize: 2.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [],
+        "earthly": [],
+        "genitive": [],
+        "kn": [],
+        "hw": [],
+        "initial-vowel": [],
+        "pretonic": [],
+        "heavy-prefix": [],
+        "LL": [],
+        "LH": [],
+        "final": [],
+        "follow-u": []
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_24.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/MinAligned-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/MinAligned-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 4,
+          "maximum_delay": 1
+        },
+        "att_sha256": "e5674ea294eadac7339fcfa084cf5519051438fe370b421298b8685626ad8fc3"
+      },
+      "ab_replay": "ab\tab\n\n"
+    },
+    "MinClean": {
+      "binary_sha256": "fdfbd5f04c99ad0f856e7e022419edf0e62000a051500c630034691bc315c1b3",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_25.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "530 bytes. 4 states, 11 arcs, Cyclic.\nSigma: ? @ * a ᵇ\nSize: 3.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MinComp": {
+      "binary_sha256": "68e4944049a4e866ed89cbbd5a6e75475aa8b2672ec196136229c21fedf97418",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_26.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "440 bytes. 3 states, 7 arcs, Cyclic.\nSigma: ? @ * ᵇ\nSize: 2.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MinDelay": {
+      "binary_sha256": "6ab402f79cd20e35c731f331b0a777a50919b4c678eb7fb50c45911ecf4d85c0",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_27.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "319 bytes. 5 states, 4 arcs, 1 path.\nSigma: a b\nSize: 2.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [],
+        "earthly": [],
+        "genitive": [],
+        "kn": [],
+        "hw": [],
+        "initial-vowel": [],
+        "pretonic": [],
+        "heavy-prefix": [],
+        "LL": [],
+        "LH": [],
+        "final": [],
+        "follow-u": []
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_27.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/MinDelay-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/MinDelay-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 5,
+          "maximum_delay": 2
+        },
+        "att_sha256": "da35ffb626ee423cfcd3d40f9a2efbd1cb0e48cbaeac99d212125fd7e13f6c23"
+      },
+      "ab_replay": "ab\tab\n\n"
+    },
+    "MinDrop": {
+      "binary_sha256": "637b115845774f4af4ec239217827d71fb0cfa77ac5c02e9673d48c36e5ca1e8",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_28.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "334 bytes. 1 state, 2 arcs, Cyclic.\nSigma: ? @ ᵇ\nSize: 1.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MinIns": {
+      "binary_sha256": "498b4ae853be0ece3c8156045db348939546f99b801f8ab40e953532f2aa2f93",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_29.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "440 bytes. 3 states, 7 arcs, Cyclic.\nSigma: ? @ * ᵇ\nSize: 2.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "ᵇ*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "ᵇ*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "ᵇ*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "ᵇ*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "MinMark": {
+      "binary_sha256": "cb948a0ae1953ced69822f5f108bc43ccdf8dbce252608eda9abc73d0a7e64e5",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_30.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "530 bytes. 4 states, 11 arcs, Cyclic.\nSigma: ? @ * a ᵇ\nSize: 3.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*gᵇ*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*gᵇ*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      }
+    },
+    "PFoot": {
+      "binary_sha256": "b2e341cc7b6ac65af8f5f435a70241b47211d5d9b85dbe9f65ba49d880fdbd8f",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_31.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "25.5 kB. 291 states, 1480 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "PFootOne": {
+      "binary_sha256": "05e845bb14edd967b31b8f3029441b580bd289598ec5a271273da1ffe30409fa",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_32.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "17.2 kB. 204 states, 951 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "PSyll": {
+      "binary_sha256": "e73858069e812d66324d01ba684cffc7a718580e6c110a9db507fa74cccfcd2f",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_33.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "15.0 kB. 57 states, 825 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 71.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e*s"
+        ],
+        "kn": [
+          "*kᵇ*n*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "pretonic": [
+          "*ᶠᵇ*g*eᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*nᵇ*d*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "LL": [
+          "ᵇ*áᵇ*θ*eᵇ*l*i*nᵇ*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*yᵇ*n*i*nᵇ*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*dᵇ*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*u*n"
+        ]
+      }
+    },
+    "QFoot": {
+      "binary_sha256": "dcb4b24b9eca7d029a4adcd70a6d57c3080aa40ae2e7b0c5d77835bba339fdb8",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_34.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "25.5 kB. 291 states, 1480 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_34.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/QFoot-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/QFoot-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 101,
+          "maximum_delay": 1
+        },
+        "att_sha256": "28855fa3015ef67c51f9d9cbdbb1e9a2be9d884263c69b36a5b8c13dc95b938d"
+      }
+    },
+    "QFootOne": {
+      "binary_sha256": "ebafd66d5ab99c12d2b3ff08a06a18f5c5ad962cfa7f61f97e27ad2fa0415d4f",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_35.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "17.2 kB. 204 states, 951 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*ù*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*ù*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "QLate": {
+      "binary_sha256": "94d6d0ecb852970704aafed9e2a15ef67db629e6958f53ff988c148a28bbaf0a",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_36.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "43.7 kB. 477 states, 2649 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_36.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/QLate-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/QLate-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 22,
+          "maximum_delay": 1
+        },
+        "att_sha256": "590ba09ad71f413d6cdcda73a55e99690758a9dba30600987775cdd1b29dd0dd"
+      }
+    },
+    "QLateOne": {
+      "binary_sha256": "00bee5cce9908e6eee4583013b20d88713ab5b406b5c63996a150f502277038c",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_37.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "28.2 kB. 324 states, 1655 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*u*n"
+        ]
+      },
+      "square": {
+        "argv": [
+          "foma",
+          "-q",
+          "-e",
+          "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_37.bin",
+          "-e",
+          "define T;",
+          "-e",
+          "regex [T.i .o. T];",
+          "-e",
+          "test identity",
+          "-e",
+          "write att > /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/QLateOne-square.att",
+          "-e",
+          "quit"
+        ],
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\nWriting AT&T file: /tmp/capr-exp-sc040-formal-composition-02-beb661c3225e4385b600009570761e9e/QLateOne-square.att\n",
+        "independent_identity": {
+          "identity": true,
+          "reachable_states": 22,
+          "maximum_delay": 1
+        },
+        "att_sha256": "2e53380e00e8d4a954c198ae3af4b0e493e22616fdd3f67ee2cbd9eead76df74"
+      }
+    },
+    "QSyll": {
+      "binary_sha256": "c07952369ebbeb525632c5e840a869cf50bd528681e19b0d220d219222061cf7",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_38.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "15.0 kB. 57 states, 825 arcs, Cyclic.\nSigma: ? @ * a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ʃ ʉ ʊ ʒ ʝ ʤ ʧ β θ ᵇ ḗ ḯ\nSize: 71.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "ᵇ*w*éoᵇ*r*u*lᵇ*d*e*s"
+        ],
+        "earthly": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "genitive": [
+          "ᵇ*éo*r*θᵇ*k*u*nᵇ*d*e*s"
+        ],
+        "kn": [
+          "*kᵇ*n*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "hw": [
+          "ᵇ*x*w*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "initial-vowel": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*e"
+        ],
+        "pretonic": [
+          "*ᶠᵇ*g*eᵇ*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠᵇ*a*nᵇ*d*éo*r*θᵇ*k*u*nᵇ*d*e"
+        ],
+        "LL": [
+          "ᵇ*áᵇ*θ*eᵇ*l*i*nᵇ*g*a*s"
+        ],
+        "LH": [
+          "ᵇ*k*yᵇ*n*i*nᵇ*g*a*s"
+        ],
+        "final": [
+          "ᵇ*g*ó*dᵇ*k*u*n*d"
+        ],
+        "follow-u": [
+          "ᵇ*á*nᵇ*k*u*nᵇ*d*u*n"
+        ]
+      }
+    },
+    "QULower": {
+      "binary_sha256": "b3bc32bee885790fa4970458b9327db65cc4324c5a4f77bd315b11865cecf769",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_39.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "11.0 kB. 33 states, 561 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 76.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*o*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*o*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*o*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*o*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*o*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*o*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*o*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*o*n*d*u*n"
+        ]
+      }
+    },
+    "RFoot": {
+      "binary_sha256": "2d34e68be1dab42e93ce28b2f2bef592d9e04dda137774f68c01cf3437a2273b",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_40.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "22.4 kB. 271 states, 1282 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*ù*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "RFootOne": {
+      "binary_sha256": "0312ff4d44db3e9b5aa31ecb65a79fd871636dcfe6530013db8fcf264792522b",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_41.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "16.1 kB. 198 states, 881 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n0 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": false,
+      "outputs": {
+        "world": [
+          "*w*éo*r*u*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*ù*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*ù*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*u*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*ù*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*ù*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*ì*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*u*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*ù*n*d*u*n"
+        ]
+      }
+    },
+    "RLate": {
+      "binary_sha256": "480c2afa01477f8405ccce2c75ad8b247206605a7f2e751d9c8ef215cc9b7988",
+      "argv": [
+        "foma",
+        "-q",
+        "-e",
+        "load stack /tmp/capr-build-sc040-formal-composition-02-b6fe03a3d69a4c07b2b745b2e0cc6d32/af_component_42.bin",
+        "-e",
+        "print size",
+        "-e",
+        "print sigma",
+        "-e",
+        "test functional",
+        "-e",
+        "extract ambiguous",
+        "-e",
+        "print size",
+        "-e",
+        "print words",
+        "-e",
+        "quit"
+      ],
+      "stdout": "42.6 kB. 496 states, 2578 arcs, Cyclic.\nSigma: ? @ * G K a b d e f g h i j k l m n o p r s t u w x y z à á ã æ ç è é ì í ð ò ó ô ø ù ú ā ą ē ĕ ę ī ŋ ō œ ū ų ǣ ǭ ȳ ɑ ɔ ə ɛ ɜ ɡ ɣ ʃ ʉ ʊ ʒ ʝ ʤ ʧ ̆ β θ ᵇ ᵘ ᶜ ᶠ ḗ ḯ\nSize: 79.\n1 (1 = TRUE, 0 = FALSE)\n160 bytes. 1 state, 0 arcs, 0 paths.\n",
+      "stderr": "",
+      "functional": true,
+      "outputs": {
+        "world": [
+          "*w*éo*r*o*l*d*e*s"
+        ],
+        "earthly": [
+          "*éo*r*θ*k*u*n*d*e"
+        ],
+        "genitive": [
+          "*éo*r*θ*k*u*n*d*e*s"
+        ],
+        "kn": [
+          "*k*n*á*n*k*o*n*d*e"
+        ],
+        "hw": [
+          "*x*w*á*n*k*u*n*d*e"
+        ],
+        "initial-vowel": [
+          "*á*n*k*u*n*d*e"
+        ],
+        "pretonic": [
+          "*ᶠ*g*e*éo*r*θ*k*u*n*d*e"
+        ],
+        "heavy-prefix": [
+          "*ᶠ*a*n*d*éo*r*θ*k*o*n*d*e"
+        ],
+        "LL": [
+          "*á*θ*e*l*i*n*g*a*s"
+        ],
+        "LH": [
+          "*k*y*n*i*n*g*a*s"
+        ],
+        "final": [
+          "*g*ó*d*k*o*n*d"
+        ],
+        "follow-u": [
+          "*á*n*k*u*n*d*o*n"
+        ]
+      }
+    }
+  },
+  "forms": {
+    "world": "*w*éo*r*u*l*d*e*s",
+    "earthly": "*éo*r*θ*k*u*n*d*e",
+    "genitive": "*éo*r*θ*k*u*n*d*e*s",
+    "kn": "*k*n*á*n*k*u*n*d*e",
+    "hw": "*x*w*á*n*k*u*n*d*e",
+    "initial-vowel": "*á*n*k*u*n*d*e",
+    "pretonic": "*ᶠ*g*e*éo*r*θ*k*u*n*d*e",
+    "heavy-prefix": "*ᶠ*a*n*d*éo*r*θ*k*u*n*d*e",
+    "LL": "*á*θ*e*l*i*n*g*a*s",
+    "LH": "*k*y*n*i*n*g*a*s",
+    "final": "*g*ó*d*k*u*n*d",
+    "follow-u": "*á*n*k*u*n*d*u*n"
+  }
+}
