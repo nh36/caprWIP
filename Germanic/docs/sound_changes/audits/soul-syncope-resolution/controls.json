@@ -1,0 +1,14 @@
+[
+  {"id":"prince-gen","input":"θēodanæs","expected":"θēodnæs","kind":"reconstructed_stage","evidence":"Hogg1992 §§6.14–15 pp.220–221; Campbell1959 §341 p.143: þēodnes; θ is the pre-orthographic FST symbol"},
+  {"id":"other-gen","input":"ōθæræs","expected":"ōθræs","kind":"reconstructed_stage","evidence":"Hogg1992 §6.15 p.221: ōþres; θ is pre-orthographic"},
+  {"id":"good-acc","input":"gōdanǭ","expected":"gōdnǭ","kind":"reconstructed_stage","evidence":"Hogg1992 §6.15 p.221: gōdne; Fulk2018 §9.2 p.209"},
+  {"id":"bound-acc","input":"bundænǭ","expected":"bundnǭ","kind":"formal_comparison_not_complete_pgmc","evidence":"Hogg1992 §6.15 p.221: gebundne. Input tests the segmental cluster, not a reconstruction of its whole inflection"},
+  {"id":"hook-light-gen","input":"awælæs","expected":"awlæs","kind":"reconstructed_stage","evidence":"Hogg1992 §6.14 p.220: awles, explicitly after a light syllable"},
+  {"id":"glad-light-gen","input":"fæganæs","expected":"fægnæs","kind":"reconstructed_stage","evidence":"Campbell1959 §341 p.143; Hogg1992 §6.15 p.221: fæġnes; no whole PGmc vowel-quality claim"},
+  {"id":"other-light-ending","input":"ōθæru","expected":"ōθæru","kind":"reconstructed_stage","evidence":"Fulk2010 p.135 (7): ōþeru in the Vespasian Psalter; θ is pre-orthographic"},
+  {"id":"saved-high-light","input":"neridæ","expected":"neridæ","kind":"reconstructed_stage","evidence":"Hogg1992 §§6.17–18 p.222: nerede retains i until later lowering"},
+  {"id":"lord-high-closed","input":"drihtin","expected":"drihtin","kind":"reconstructed_stage","evidence":"Fulk2010 p.126: drihten has a closed final syllable; no medial syncope"},
+  {"id":"west-closed","input":"westan","expected":"westan","kind":"attested_shape_not_dated_pgmc","evidence":"Orel2003 p.459; Campbell1959 §§677–678 p.280; final n closes the syllable"},
+  {"id":"west-short-final","input":"westane","expected":"westane","kind":"quantity_sensitivity_not_adopted_history","evidence":"Orel2003 p.459 has combined breve/macron; Campbell1959 §678 documents -ane variants but does not date this exact short-ending stage"},
+  {"id":"closed-medial-independent","input":"gōdastǭ","expected":"gōdastǭ","kind":"synthetic_formal_negative","evidence":"Formal closed-medial counterpart; not an attested adjective inflection"}
+]

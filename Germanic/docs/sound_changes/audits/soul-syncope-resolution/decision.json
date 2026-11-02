@@ -1,0 +1,43 @@
+{
+  "verdict": "DEFER",
+  "historical_phenomenon": "Nonhigh open-medial syncope before later ending shortening; distinguish high syncope, high apocope and independently supported analogy.",
+  "conditioning": "Phonological weight, vowel height/length/stress and syllable structure only; no word, case, class or row conditions.",
+  "executable_implementation": "C is the smallest successful accusative fragment; G covers independent light-root positives but introduces hammer. Neither is adopted.",
+  "selected_input_assumptions": "Production soul2201 remains *sáiwalō -> sāwol. Preferred future inherited feminine accusative is *sáiwalǭ -> sāwle.",
+  "firing_census": "All selected391, immutable original380 and thirteen full probes have complete sparse transitions in results.json.gz; eleven composed/serial crosschecks agree.",
+  "positive_witnesses": [
+    "Secure previously verified Luke accusative; C-G derive sāwle without proxy, analogy or epenthesis",
+    "Complete inherited good/blind accusatives derive gōdne/blindne",
+    "G covers Hogg's independently selected light-root awles/fæġnes controls",
+    "Retained SC065/066 preserve C's nettle/spindle/filth outputs"
+  ],
+  "negative_controls": [
+    {"description": "Closed, long and stressed medial vowels retained", "passed": true, "required": true},
+    {"description": "Corrected pre-orthographic final-closed drixtin retained", "passed": true, "required": true},
+    {"description": "All new kernels pass native functionality", "passed": true, "required": true},
+    {"description": "Heavy-initial fragment covers attested light-root nonhigh positives", "passed": false, "required": true},
+    {"description": "Every changed selected history independently adjudicated", "passed": false, "required": true}
+  ],
+  "counterfactual_results": "Apocope replacement, not new nonhigh syncope, introduces spindle/filth final u; disabling individual old fragments adds distinct errors. Earlier high syncope redistributes thistle's firing without selected final delta.",
+  "literature_support": [
+    {"source": "HoggPhonology1992", "pages": "220-222,227-229", "verified_original": true},
+    {"source": "Campbell1959", "pages": "141-144,226-227,280", "verified_original": true},
+    {"source": "Fulk2010", "pages": "133-141", "verified_original": true},
+    {"source": "Fulk2018", "pages": "82-83,209-210,218,237-238", "verified_original": true},
+    {"source": "Orel2003", "pages": "459", "verified_original": true},
+    {"source": "ClarkHall1960", "pages": "350", "verified_original": true},
+    {"source": "Toller1921", "pages": "66,219", "verified_original": true}
+  ],
+  "historical_vs_modelling": "Quantity-bearing ǭ is an explicitly delayed carrier, not late nasalization. The anchored fragments and serialization are CAPR hypotheses; no chronology edges are promoted.",
+  "unresolved": [
+    {"item": "West target and final-vowel quantity/stratum not established by cited sources", "acknowledged_in": "conflicts.md"},
+    {"item": "Find's quoted plural is not the claimed masculine accusative; complete participial morphology remains unsolved", "acknowledged_in": "conflicts.md"},
+    {"item": "G additionally changes hammer; restoration has source support but no authorized selected-history correction", "acknowledged_in": "conflicts.md"},
+    {"item": "Whole models, including production, return native functionality 0; finite unambiguity is not a global proof", "acknowledged_in": "results.md"},
+    {"item": "Current-source warmth comparator and inherited angel residue are preserved, not repaired", "acknowledged_in": "results.md"},
+    {"item": "Schema does not automatically equate regular selected cell with regular publication class", "acknowledged_in": "adoption-plan.md"}
+  ],
+  "intended_source_modifications": [],
+  "preferred_witness": "Existing soul2201, feminine accusative singular; regular experimental span, general adoption deferred",
+  "stopping_boundary": "No production corpus/rule/registry/baseline/publication changes. Research journals stop before PROPAGATE."
+}
