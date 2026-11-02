@@ -1,0 +1,41 @@
+{
+  "historical_phenomenon": "Open-medial syncope after a heavy initial syllable before a still-heavy following syllable, contrasted with retention before light final u.",
+  "conditioning": "Short unstressed medial vowel in an open syllable; initial and following syllable weights, with no case, lexical or inflection-class conditions.",
+  "executable_implementation": "Immutable A, B and C models in experiment.py; no production modification. Explicit ending sensitivity tests final nasal bimoric unrounding.",
+  "selected_input_assumptions": "Current soul2201 remains inherited nominative *sáiwalō -> sāwol. Preferred future cell is inherited feminine accusative *sáiwalǭ -> sāwle.",
+  "firing_census": "Baseline SC036 changes soul and world only. Every experimental stage firing and selected/immutable final delta is in results.json.gz; complete summary in results.md.",
+  "positive_witnesses": [
+    "Secure Luke12:20 accusative",
+    "Inherited accusative produces sāwle in A, explicit-unrounded A and C-nonhigh",
+    "Independent idle/head retention versus heavy-ending syncope",
+    "General non-soul non-lateral syncope control"
+  ],
+  "negative_controls": [
+    {"description": "Light following u retains medial vowel and blocks H-L-L apocope", "passed": true, "required": true},
+    {"description": "Closed, long and accented medial vowels retained by syncope", "passed": true, "required": true},
+    {"description": "Prematurely shortened ending does not falsely yield sāwle", "passed": true, "required": true},
+    {"description": "Complete eādigu vowel-quality derivation in model A", "passed": false, "required": true},
+    {"description": "All protected selected outputs preserved by broad replacement", "passed": false, "required": true}
+  ],
+  "counterfactual_results": "Removing proxy alone gives sāwel, not a historical solution. B gives sāwl without new insertion, while broad l-insertion recovers sāwol but overgenerates felel/healel. See complete traces.",
+  "literature_support": [
+    {"source": "Fulk2010", "pages": "126-144", "verified_original": true},
+    {"source": "Fulk2022", "pages": "13-17", "verified_original": true},
+    {"source": "Fulk2018", "pages": "84-87,92-94,154-156", "verified_original": true},
+    {"source": "Ringe2017", "pages": "91-92,312", "verified_original": true},
+    {"source": "RingeTaylor2014", "pages": "55-59,264-265,284-289,299-300,330", "verified_original": true},
+    {"source": "Skeat1874", "pages": "v-vi,130", "verified_original": true}
+  ],
+  "historical_vs_modelling": "Accusative history is source-supported; current late symbolic nasal-vowel carrying and support-stage quantity are implementation choices. Nominal analogy remains outside the phonological transducer. Known Foma diagnostic limitations are not historical evidence.",
+  "unresolved": [
+    {"item": "Nominative retained medial vowel quality and later analogical u-loss", "acknowledged_in": "research.md; results.md"},
+    {"item": "Full eādigu quality, early shortening in cattle obliques and staged weak ending", "acknowledged_in": "results.md#independent-controls-and-limitations"},
+    {"item": "Selected find/west, nettle/spindle/filth and explicit ending sensitivity deltas", "acknowledged_in": "results.md#complete-selected-population-deltas"},
+    {"item": "Dative trimoric diphthong not represented correctly; genitive reconstruction disagreement", "acknowledged_in": "results.md#cell-verdicts-and-authorization-boundary"},
+    {"item": "General insertion overgeneration and native diagnostic warning", "acknowledged_in": "results.md#models-compared"}
+  ],
+  "verdict": "DEFER",
+  "intended_source_modifications": [],
+  "preferred_witness": "soul2201 feminine accusative singular, conditional on further authorized general-cascade adjudications",
+  "stopping_boundary": "Research complete; no PROPAGATE, production VALIDATE or COMPLETE claim."
+}
