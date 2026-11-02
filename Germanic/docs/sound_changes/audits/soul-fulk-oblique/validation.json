@@ -1,0 +1,105 @@
+{
+  "tested_scientific_commit": "b8157c26d08acf02e1b5944e0e97f6e64f990f8b",
+  "scientific_reference": "637b30dbfa2455f57f3f467088743d73f8b536b9",
+  "tested_tree_clean": true,
+  "appendix_scope": "Subsequent commit adds only this generated validation metadata/archive; not a claim that the appendix-only HEAD was retested.",
+  "production_adoption": false,
+  "research_verdict": "DEFER",
+  "production_source_and_original_archive_hashes": {
+    "Germanic/fsts/germanic.txt": "0d79aeeed03638dbdda051e48bb8b6191ad2f5c395cf4287041f3b01c4216705",
+    "Germanic/data/germanic-aligned-final.tsv": "646de04cec66c13ff00e1d4b8e4d87911a66f92c082496ca86ba95e42b9302b1",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv": "d2120039e72861573056f9aa015a28f9d85573d5b1e391cdd5fdabb60781849a"
+  },
+  "research_only_changed_paths": [
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/README.md",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/adoption-plan.md",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/attestations.md",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/decision.json",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/evidence-manifest.json",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/evidence.tar.gz",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/experiment.py",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/research.md",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/results.json.gz",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/results.md",
+    "Germanic/docs/sound_changes/audits/soul-fulk-oblique/source-checks.md",
+    "Germanic/tests/test_soul_fulk_research.py"
+  ],
+  "strict_lanes": {
+    "exclusive": {
+      "test_counts": {
+        "tests": 25,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-C-exclusive-469abae0579745888a26d78d4bf227b8.receipt.json",
+      "source_identity_sha256": "8b7af8e854b22dc614855ce103f133875207fd44602f8f95d7949ef98d12de1d"
+    },
+    "serial": {
+      "test_counts": {
+        "tests": 11049,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 5
+      },
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-C-serial-35173f96081f4cc7abd5e0cf9cbaa246.receipt.json",
+      "source_identity_sha256": "8b7af8e854b22dc614855ce103f133875207fd44602f8f95d7949ef98d12de1d"
+    }
+  },
+  "final_receipts": [
+    "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-A-focused-49434c40306742ad90f4ec4bb78fe558.receipt.json",
+    "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-A-semantics-e3d18e1746bb4345b26b224f38b1cd9c.receipt.json",
+    "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-B-refresh-5bd4a06d4ad040e2bae100f644549324.receipt.json",
+    "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-B-status-379d802fa32f436c816e9c084c78585a.receipt.json",
+    "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-C-exclusive-469abae0579745888a26d78d4bf227b8.receipt.json",
+    "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/soul-validation/soul-final-C-serial-35173f96081f4cc7abd5e0cf9cbaa246.receipt.json"
+  ],
+  "all_final_receipts_verified": true,
+  "rendered_publication": "Not performed: no publication selection changed; required adoption checks remain in adoption-plan.md.",
+  "failed_attempts_preserved": "Includes initial wrong semantic-tool path and post-check collector API error; no failed validator is relabelled successful.",
+  "archive_sha256": "100250e0d31b29df843ac24f66ff84d813da3c5fdd844488f18f146c99cb251c",
+  "members": {
+    "command-logs/soul-final-A-focused-49434c40306742ad90f4ec4bb78fe558.receipt.json": "789fd7f344707fde5ae1d4feb0169b3685ecae0b5a0a8b0cd34b15fd15d9d5c2",
+    "command-logs/soul-final-A-focused-49434c40306742ad90f4ec4bb78fe558.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-final-A-focused-49434c40306742ad90f4ec4bb78fe558.stdout.log": "bef8623b25b25ab880ba85efeef2d92c7d65627f885fe3b9c983593ce2c4795b",
+    "command-logs/soul-final-A-semantics-e3d18e1746bb4345b26b224f38b1cd9c.receipt.json": "a488a8a9be70268f4b917df2f21f86af457479d8cc0ff4410f5f65af1df5fcde",
+    "command-logs/soul-final-A-semantics-e3d18e1746bb4345b26b224f38b1cd9c.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-final-A-semantics-e3d18e1746bb4345b26b224f38b1cd9c.stdout.log": "1d73737279db7fbcd897037af208137832e97a9050f7f0132a5b294e2e0158e0",
+    "command-logs/soul-final-B-refresh-5bd4a06d4ad040e2bae100f644549324.receipt.json": "745ecff9be8aa10c148fc390cfa5c96ccf26b864641c24976ae611cbca513f47",
+    "command-logs/soul-final-B-refresh-5bd4a06d4ad040e2bae100f644549324.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-final-B-refresh-5bd4a06d4ad040e2bae100f644549324.stdout.log": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09",
+    "command-logs/soul-final-B-status-379d802fa32f436c816e9c084c78585a.receipt.json": "16d7294661b9c079230c07d456978cd72d33a18a0addd0444ed814185e5d2ab6",
+    "command-logs/soul-final-B-status-379d802fa32f436c816e9c084c78585a.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-final-B-status-379d802fa32f436c816e9c084c78585a.stdout.log": "98335324bd97c96a3d3a8e8339dec38f6f25e5a7156cd71b27cc94653bd4c957",
+    "command-logs/soul-final-C-exclusive-469abae0579745888a26d78d4bf227b8.junit.xml": "dd05d81bb7df099aea1ea174b5ef121d989f103c4c9a664c3a3de9274db7dd7b",
+    "command-logs/soul-final-C-exclusive-469abae0579745888a26d78d4bf227b8.receipt.json": "42c4bae927835537e07b4f6da9e62168d554cd221c5532e977f4503907357977",
+    "command-logs/soul-final-C-exclusive-469abae0579745888a26d78d4bf227b8.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-final-C-exclusive-469abae0579745888a26d78d4bf227b8.stdout.log": "fb44d00776d681a3ceb7410e0472ffc7917547bc169dbf691811802dd6022291",
+    "command-logs/soul-final-C-serial-35173f96081f4cc7abd5e0cf9cbaa246.junit.xml": "167617ae63317ec4a4424d8de01b4fb6e0018f2f7d857d74c90227d4c33ee2e8",
+    "command-logs/soul-final-C-serial-35173f96081f4cc7abd5e0cf9cbaa246.receipt.json": "5e957bb4658f62d13de7a8c31fc4a4d0bfb23d67542fd74ab41c46b3b0ef1457",
+    "command-logs/soul-final-C-serial-35173f96081f4cc7abd5e0cf9cbaa246.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-final-C-serial-35173f96081f4cc7abd5e0cf9cbaa246.stdout.log": "7785ec3fee72ef896c9107ca2809b2a96e4c51d8fe3d26d5f401cde7dae74932",
+    "command-logs/soul-final-receipt-contract-verification-cc776e7c2d6a4d67aff62fa80f809111.receipt.json": "908ddfdb444c2c9d5efcc06b67ee436f937f099c5a9c0d9bd4e12feba4ab621e",
+    "command-logs/soul-final-receipt-contract-verification-cc776e7c2d6a4d67aff62fa80f809111.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-final-receipt-contract-verification-cc776e7c2d6a4d67aff62fa80f809111.stdout.log": "fc75b5dbb777c22204af89a514e65c030aba4aca04d7f7f0e32f12d8dca0bd49",
+    "command-logs/soul-focused-evidence-02846d3be02643ecb1f95bcc903c9086.receipt.json": "97e17a88cea8e78ceba034b9d9c9db867f57e170e451ea059231f897677d21df",
+    "command-logs/soul-focused-evidence-02846d3be02643ecb1f95bcc903c9086.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-focused-evidence-02846d3be02643ecb1f95bcc903c9086.stdout.log": "8ed60f24f8d313d813753acffd447aa3c95cd4cf1ad8a81c8de2fb04653a881f",
+    "command-logs/soul-integrated-refresh-054b4554e5fe4975ab466e5b63d71f9c.receipt.json": "b13d07b6f3ff7286c7fe179b1554c50a1d3dbd69e2275692959ab4eec1d6e0a7",
+    "command-logs/soul-integrated-refresh-054b4554e5fe4975ab466e5b63d71f9c.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-integrated-refresh-054b4554e5fe4975ab466e5b63d71f9c.stdout.log": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09",
+    "command-logs/soul-integrated-status-95a8fb9daeb64cfc985d48dd997611db.receipt.json": "2e863f43e181798458b3323764ae86a3d7f54d9e7f37a8f462100701d1b220f3",
+    "command-logs/soul-integrated-status-95a8fb9daeb64cfc985d48dd997611db.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-integrated-status-95a8fb9daeb64cfc985d48dd997611db.stdout.log": "98335324bd97c96a3d3a8e8339dec38f6f25e5a7156cd71b27cc94653bd4c957",
+    "command-logs/soul-reader-semantics-1609b4a3c9544e47aec98cf41f71aca8.receipt.json": "e232bc728654ebdb3def8ef8a34b8634be77ef37890e92253ede4375dc2c924a",
+    "command-logs/soul-reader-semantics-1609b4a3c9544e47aec98cf41f71aca8.stderr.log": "3667815de3ea947d81b4cd45e7e3ce3f04a29739ba08f563fa82394a59cd83f9",
+    "command-logs/soul-reader-semantics-1609b4a3c9544e47aec98cf41f71aca8.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-reader-semantics-correct-path-ee1ffc9af97f417f81307628ebf4d637.receipt.json": "61b48dc4a18fe1819508e3185d2d2bd576b14caef6e6ad46204d1def00f44cbf",
+    "command-logs/soul-reader-semantics-correct-path-ee1ffc9af97f417f81307628ebf4d637.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command-logs/soul-reader-semantics-correct-path-ee1ffc9af97f417f81307628ebf4d637.stdout.log": "1d73737279db7fbcd897037af208137832e97a9050f7f0132a5b294e2e0158e0",
+    "journal-final/events.ndjson": "c99c4fbf0caba6c168f52e3e870bb26c76b0203efb4d2a64c243f19e7dea71c8",
+    "journal-final/state.json": "80e94bea60a5cda577db1371c8f26011c96abb77cc5a95e244346549d4c2fe57",
+    "operational/soul-final-validation-receipts.json": "4676913dff173d66944214665e9df3bcf58f6a4f6be632cf93b4bcd49021b87b",
+    "operational/soul-validation-collector.json": "e6c0ce3179e03d36f80bf319295dad88071719df4a119f15abcd80783b73fe77"
+  }
+}
