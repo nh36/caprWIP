@@ -1,0 +1,37 @@
+{
+ "receipt_version": 2,
+ "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/command-logs/committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.receipt.json",
+ "label": "committed-parser-gate-replay",
+ "argv": [
+  "/opt/homebrew/opt/python@3.14/bin/python3.14",
+  "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/Germanic/docs/sound_changes/audits/nonhigh-four-cells-integration/reproduce.py"
+ ],
+ "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+ "cwd": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells",
+ "started_at": "2026-11-03T08:16:00Z",
+ "finished_at": "2026-11-03T08:19:20Z",
+ "returncode": 2,
+ "timed_out": false,
+ "ok": false,
+ "source_identity": {
+  "head_commit": "3337cf2897f9f56c6d31b276a4b1b5fa81272b90",
+  "worktree_changes": {},
+  "identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+  "recorded_at": "2026-11-03T08:16:00Z"
+ },
+ "source_identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+ "source_identity_after": {
+  "head_commit": "3337cf2897f9f56c6d31b276a4b1b5fa81272b90",
+  "worktree_changes": {},
+  "identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+  "recorded_at": "2026-11-03T08:19:20Z"
+ },
+ "source_changed": false,
+ "level": null,
+ "lane": null,
+ "pytest_addopts": "",
+ "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/command-logs/committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.stdout.log",
+ "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/command-logs/committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.stderr.log",
+ "stdout_sha256": "93015ebccade15bdb0ff6c84305ba2c50e817b92b27c94d295da95b4d204a8a0",
+ "stderr_sha256": "e4a43ce0b852c4610fa56f08970b3d05a91cabbec661f20a315c98f40f829a9a"
+}

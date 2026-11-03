@@ -1,0 +1,59 @@
+{
+  "actual_returncode": 2,
+  "all_80_recorded_scientific_sources_unchanged": true,
+  "evidence_archive_sha256": "8fe977586abe9bce9dbb7ba6243cece989e8fbd560fe6716a4f7758623f29c85",
+  "evidence_commit": "3337cf2897f9f56c6d31b276a4b1b5fa81272b90",
+  "expected_returncode": 2,
+  "kind": "exact-commit reproduction of unresolved formal gate; not production certification",
+  "native_new_domain_functionality": 0,
+  "native_parser_functionality": 0,
+  "native_syncope_functionality": 1,
+  "postprocessing_incident": "The first host reporting wrapper incorrectly requested receipt[exit_code] instead of receipt[returncode] and raised KeyError after the native replay completed. Recovered and verified the already-persisted genuine receipt; did not rerun or rewrite the experiment.",
+  "receipt": {
+    "argv": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/Germanic/docs/sound_changes/audits/nonhigh-four-cells-integration/reproduce.py"
+    ],
+    "cwd": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells",
+    "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "finished_at": "2026-11-03T08:19:20Z",
+    "label": "committed-parser-gate-replay",
+    "lane": null,
+    "level": null,
+    "ok": false,
+    "pytest_addopts": "",
+    "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/command-logs/committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.receipt.json",
+    "receipt_version": 2,
+    "returncode": 2,
+    "source_changed": false,
+    "source_identity": {
+      "head_commit": "3337cf2897f9f56c6d31b276a4b1b5fa81272b90",
+      "identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+      "recorded_at": "2026-11-03T08:16:00Z",
+      "worktree_changes": {}
+    },
+    "source_identity_after": {
+      "head_commit": "3337cf2897f9f56c6d31b276a4b1b5fa81272b90",
+      "identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+      "recorded_at": "2026-11-03T08:19:20Z",
+      "worktree_changes": {}
+    },
+    "source_identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+    "started_at": "2026-11-03T08:16:00Z",
+    "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/command-logs/committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.stderr.log",
+    "stderr_sha256": "e4a43ce0b852c4610fa56f08970b3d05a91cabbec661f20a315c98f40f829a9a",
+    "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/command-logs/committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.stdout.log",
+    "stdout_sha256": "93015ebccade15bdb0ff6c84305ba2c50e817b92b27c94d295da95b4d204a8a0",
+    "timed_out": false
+  },
+  "replay_files": {
+    "committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.receipt.json": "51552cb0cb0e3662ddfcd11f34bd255bd7eb5b0e5dd9aec5176e297b654fc9b2",
+    "committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.stderr.log": "e4a43ce0b852c4610fa56f08970b3d05a91cabbec661f20a315c98f40f829a9a",
+    "committed-parser-gate-replay-0920aff75f5a40b9b56fb8db3075bb53.stdout.log": "93015ebccade15bdb0ff6c84305ba2c50e817b92b27c94d295da95b4d204a8a0",
+    "diagnostic.json": "1b319ef403c2c1da8a98c08fb7860bbe615da37977657d42e2f85ca53305119e",
+    "nonhigh-gate-replay-90e7aac46f724d29b1c4b47ccbcd262a.receipt.json": "ee5895681864e486fbbc0b5add8ce3e14717bce7aa717b8f84b92360cbd1ed97",
+    "nonhigh-gate-replay-90e7aac46f724d29b1c4b47ccbcd262a.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "nonhigh-gate-replay-90e7aac46f724d29b1c4b47ccbcd262a.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_unchanged_during_replay": true
+}

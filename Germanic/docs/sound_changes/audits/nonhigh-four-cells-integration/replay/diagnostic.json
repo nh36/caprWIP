@@ -1,0 +1,312 @@
+{
+  "parses": {
+    "EnglishProtoInput": {
+      "gailanai": [
+        "*g*ai*l*a*n*ai"
+      ],
+      "gailanananai": [
+        "*g*ai*l*a*n*a*n*a*n*ai"
+      ],
+      "biulanai": [
+        "*b*iu*l*a*n*ai"
+      ],
+      "biulanananai": [
+        "*b*iu*l*a*n*a*n*a*n*ai"
+      ],
+      "gafúnðanai": [
+        "*g*a*f*ú*n*ð*a*n*ai"
+      ],
+      "sáiwalǭ": [
+        "*s*ái*w*a*l*ǭ"
+      ],
+      "fúnðanai": [
+        "*f*ú*n*ð*a*n*ai"
+      ]
+    },
+    "EnglishProtoNative": {
+      "gailanai": [],
+      "gailanananai": [],
+      "biulanai": [],
+      "biulanananai": [],
+      "gafúnðanai": [],
+      "sáiwalǭ": [],
+      "fúnðanai": []
+    },
+    "PGCellInput": {
+      "gailanai": [
+        "*g*ai*l*a*n*ai"
+      ],
+      "gailanananai": [
+        "*g*ai*l*a*n*a*n*a*n*ai"
+      ],
+      "biulanai": [
+        "*b*iu*l*a*n*ai"
+      ],
+      "biulanananai": [
+        "*b*iu*l*a*n*a*n*a*n*ai"
+      ],
+      "gafúnðanai": [
+        "*g*a*f*ú*n*ð*a*n*ai"
+      ],
+      "sáiwalǭ": [
+        "*s*ái*w*a*l*ǭ"
+      ],
+      "fúnðanai": [
+        "*f*ú*n*ð*a*n*ai"
+      ]
+    },
+    "PGNew": {
+      "gailanai": [
+        "*g*ai*l*a*n*ai"
+      ],
+      "gailanananai": [
+        "*g*ai*l*a*n*a*n*a*n*ai"
+      ],
+      "biulanai": [
+        "*b*iu*l*a*n*ai"
+      ],
+      "biulanananai": [
+        "*b*iu*l*a*n*a*n*a*n*ai"
+      ],
+      "gafúnðanai": [
+        "*g*a*f*ú*n*ð*a*n*ai"
+      ],
+      "sáiwalǭ": [
+        "*s*ái*w*a*l*ǭ"
+      ],
+      "fúnðanai": [
+        "*f*ú*n*ð*a*n*ai"
+      ]
+    },
+    "PGPlain": {
+      "gailanai": [
+        "*g*ai*l*a*n*ai"
+      ],
+      "gailanananai": [
+        "*g*ai*l*a*n*a*n*a*n*ai"
+      ],
+      "biulanai": [
+        "*b*iu*l*a*n*ai"
+      ],
+      "biulanananai": [
+        "*b*iu*l*a*n*a*n*a*n*ai"
+      ],
+      "gafúnðanai": [],
+      "sáiwalǭ": [
+        "*s*ái*w*a*l*ǭ"
+      ],
+      "fúnðanai": [
+        "*f*ú*n*ð*a*n*ai"
+      ]
+    },
+    "PGPrefixed": {
+      "gailanai": [
+        "*g*a*i*l*a*n*ai"
+      ],
+      "gailanananai": [
+        "*g*a*i*l*a*n*a*n*a*n*ai"
+      ],
+      "biulanai": [
+        "*b*i*u*l*a*n*ai"
+      ],
+      "biulanananai": [
+        "*b*i*u*l*a*n*a*n*a*n*ai"
+      ],
+      "gafúnðanai": [
+        "*g*a*f*ú*n*ð*a*n*ai"
+      ],
+      "sáiwalǭ": [],
+      "fúnðanai": []
+    },
+    "PGCellRoot": {
+      "gailanai": [],
+      "gailanananai": [],
+      "biulanai": [],
+      "biulanananai": [],
+      "gafúnðanai": [],
+      "sáiwalǭ": [],
+      "fúnðanai": []
+    },
+    "PGCellPlain": {
+      "gailanai": [
+        "*g*ai*l*a*n*ai"
+      ],
+      "gailanananai": [
+        "*g*ai*l*a*n*a*n*a*n*ai"
+      ],
+      "biulanai": [
+        "*b*iu*l*a*n*ai"
+      ],
+      "biulanananai": [
+        "*b*iu*l*a*n*a*n*a*n*ai"
+      ],
+      "gafúnðanai": [],
+      "sáiwalǭ": [
+        "*s*ái*w*a*l*ǭ"
+      ],
+      "fúnðanai": [
+        "*f*ú*n*ð*a*n*ai"
+      ]
+    },
+    "PGCellPrefixed": {
+      "gailanai": [
+        "*g*a*i*l*a*n*ai"
+      ],
+      "gailanananai": [
+        "*g*a*i*l*a*n*a*n*a*n*ai"
+      ],
+      "biulanai": [
+        "*b*i*u*l*a*n*ai"
+      ],
+      "biulanananai": [
+        "*b*i*u*l*a*n*a*n*a*n*ai"
+      ],
+      "gafúnðanai": [
+        "*g*a*f*ú*n*ð*a*n*ai"
+      ],
+      "sáiwalǭ": [],
+      "fúnðanai": []
+    },
+    "PGBijective": {
+      "gailanai": [],
+      "gailanananai": [],
+      "biulanai": [],
+      "biulanananai": [],
+      "gafúnðanai": [],
+      "sáiwalǭ": [],
+      "fúnðanai": []
+    },
+    "PGNonInjective": {
+      "gailanai": [],
+      "gailanananai": [],
+      "biulanai": [],
+      "biulanananai": [],
+      "gafúnðanai": [],
+      "sáiwalǭ": [],
+      "fúnðanai": []
+    },
+    "PGNonFunctional": {
+      "gailanai": [],
+      "gailanananai": [],
+      "biulanai": [],
+      "biulanananai": [],
+      "gafúnðanai": [],
+      "sáiwalǭ": [],
+      "fúnðanai": []
+    }
+  },
+  "formal": {
+    "EnglishProtoInput": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "EnglishProtoNative": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGCellInput": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGNew": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGPlain": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGPrefixed": {
+      "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGCellRoot": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGCellPlain": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGCellPrefixed": {
+      "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "OENonHighSyn": {
+      "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": ""
+    },
+    "PGBijective": {
+      "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGNonInjective": {
+      "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+      "inverse_composition_identity": {
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    },
+    "PGNonFunctional": {
+      "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": "",
+      "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\na\n",
+      "inverse_composition_identity": {
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": ""
+      }
+    }
+  }
+}

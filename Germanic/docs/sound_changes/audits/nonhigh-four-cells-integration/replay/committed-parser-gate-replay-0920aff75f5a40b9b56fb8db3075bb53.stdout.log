@@ -1,0 +1,5 @@
+PGCellInput: 0 (1 = TRUE, 0 = FALSE)
+PGNew: 0 (1 = TRUE, 0 = FALSE)
+OENonHighSyn: 1 (1 = TRUE, 0 = FALSE)
+Replay evidence: /Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/nonhigh-gate-replay-1ln40frk/replay
+STOP: productive parser native functionality gate remains failed.

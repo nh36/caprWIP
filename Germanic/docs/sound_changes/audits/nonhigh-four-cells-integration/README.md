@@ -159,6 +159,15 @@ baseline evidence, journal, receipts and pinned source inputs. A diagnostic
 completion marked `passed` means execution succeeded, not that the
 scientific gate passed.
 
+The exact-commit replay of stopping-record commit
+`3337cf2897f9f56c6d31b276a4b1b5fa81272b90` reproduced the failed gate
+with genuine return code 2. `reproduction.json` and `replay/` preserve its
+receipts, logs and results separately from the unchanged archive. All 80
+recorded scientific SOURCE/protected-file hashes were rechecked unchanged.
+This is reproducibility evidence, not a passing certification. A host
+reporting-wrapper field-name error after replay execution is also disclosed;
+its original receipt was recovered without repeating the native experiment.
+
 ## Residue
 
 Resolve the complete parser-check discrepancy before further production

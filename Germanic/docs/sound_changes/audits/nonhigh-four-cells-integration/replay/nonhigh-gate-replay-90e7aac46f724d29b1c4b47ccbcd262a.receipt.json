@@ -1,0 +1,45 @@
+{
+ "receipt_version": 2,
+ "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/nonhigh-gate-replay-1ln40frk/replay/nonhigh-gate-replay-90e7aac46f724d29b1c4b47ccbcd262a.receipt.json",
+ "label": "nonhigh-gate-replay",
+ "argv": [
+  "docker",
+  "compose",
+  "exec",
+  "-T",
+  "backend",
+  "python3",
+  "-c",
+  "\nimport json,shutil,sys,tempfile,subprocess\nfrom pathlib import Path\nsrc=Path(sys.argv[1]);mapping=json.loads((src/'layout.json').read_text())\nroot=Path(tempfile.mkdtemp(prefix='capr_parser_replay_source_'))\ntry:\n for label,relative in mapping.items():\n  files=list(src.glob(label+'.*'))\n  if len(files)!=1:raise RuntimeError('invalid pinned input: '+label)\n  dest=root/relative;dest.parent.mkdir(parents=True,exist_ok=True)\n  shutil.copyfile(files[0],dest)\n for name in ('compare_fst.py','oe_input_context.py'):\n  shutil.copyfile(root/'backend'/name,root/'Germanic'/name)\n subprocess.run(['python3',str(root/'.capr-work/parser_diagnostic.py'),\n                 '--worker',sys.argv[2]],check=True)\nfinally:\n shutil.rmtree(root)\n",
+  "/tmp/capr-exp-nonhigh-parser-root-repair-02-0a62bd98fa1744229ec9a0159dd1a1ec",
+  "/tmp/capr-exp-nonhigh-parser-root-repair-02-0a62bd98fa1744229ec9a0159dd1a1ec/../parser-replay.json"
+ ],
+ "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+ "cwd": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells",
+ "started_at": "2026-11-03T08:16:01Z",
+ "finished_at": "2026-11-03T08:19:20Z",
+ "returncode": 0,
+ "timed_out": false,
+ "ok": true,
+ "source_identity": {
+  "head_commit": "3337cf2897f9f56c6d31b276a4b1b5fa81272b90",
+  "worktree_changes": {},
+  "identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+  "recorded_at": "2026-11-03T08:16:01Z"
+ },
+ "source_identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+ "source_identity_after": {
+  "head_commit": "3337cf2897f9f56c6d31b276a4b1b5fa81272b90",
+  "worktree_changes": {},
+  "identity_sha256": "d5191039466d2638a621f385e769c6002ad08ac60d4db19747121b98b6931813",
+  "recorded_at": "2026-11-03T08:19:20Z"
+ },
+ "source_changed": false,
+ "level": null,
+ "lane": null,
+ "pytest_addopts": "",
+ "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/nonhigh-gate-replay-1ln40frk/replay/nonhigh-gate-replay-90e7aac46f724d29b1c4b47ccbcd262a.stdout.log",
+ "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/worktrees/nonhigh-four-cells/.capr-work/nonhigh-gate-replay-1ln40frk/replay/nonhigh-gate-replay-90e7aac46f724d29b1c4b47ccbcd262a.stderr.log",
+ "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
