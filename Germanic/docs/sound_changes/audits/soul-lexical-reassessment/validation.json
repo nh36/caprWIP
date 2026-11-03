@@ -1,0 +1,124 @@
+{
+  "tested_scientific_commit": "b04c5f49f35521c711cc87b4c01259dc0da8df11",
+  "scientific_reference": "1fb0223ba4b308afe4b72a0dc9cad805ca7f786c",
+  "tested_tree_clean": true,
+  "appendix_scope": "Subsequent commit adds only generated validation.json and validation.tar.gz. Exact scientific commit above was tested; no claim that appendix-only HEAD was retested.",
+  "production_adoption": false,
+  "research_verdict": "DEFER",
+  "research_only_changed_paths": [
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/README.md",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/candidates.json",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/control-results.json.gz",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/control_assay.py",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/decision.json",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/evidence-manifest.json",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/evidence.tar.gz",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/experiment.py",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/preregistration.md",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/results.json.gz",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/results.md",
+    "Germanic/docs/sound_changes/audits/soul-lexical-reassessment/source-inventory.json",
+    "Germanic/tests/test_soul_lexical_reassessment.py"
+  ],
+  "levels_A_B": {
+    "tested_scientific_commit": "b04c5f49f35521c711cc87b4c01259dc0da8df11",
+    "tested_tree_clean": true,
+    "AB_original_receipts": [
+      "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/.capr-work/validation-research/focused-lexical-reassessment-13ea551bc30141f9ab994475c56248cb.receipt.json",
+      "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/.capr-work/validation-research/integrated-refresh-4e081b0fe18d4816a7ff048a4e869c6c.receipt.json",
+      "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/.capr-work/validation-research/integrated-status-1566c65060d943bc814e23cf62f385c8.receipt.json"
+    ],
+    "AB_equivalence": "Original before/after identities unchanged; complete13 changed-path set and every recorded byte hash equal the committed scientific tree. Not relabelled executions."
+  },
+  "strict_lanes": {
+    "exclusive": {
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/.capr-work/validation-final/strict-exclusive-1a6fdaa8655f47ea9e19ee61592ffeb0.receipt.json",
+      "test_counts": {
+        "tests": 25,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "source_identity_sha256": "42b9aa3c9f6753faa010b56f72702262f4e784c2f84b5d78a43c5633430bfd4d",
+      "output_summary": "25 passed in 231.88s (0:03:51)",
+      "prescribed_skips": []
+    },
+    "serial": {
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/.capr-work/validation-final/strict-serial-d8627dd4e757440f849ebdff73c7947c.receipt.json",
+      "test_counts": {
+        "tests": 11063,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 5
+      },
+      "source_identity_sha256": "42b9aa3c9f6753faa010b56f72702262f4e784c2f84b5d78a43c5633430bfd4d",
+      "output_summary": "1869 passed, 5 skipped, 9189 subtests passed in 1376.78s (0:22:56)",
+      "prescribed_skips": [
+        {
+          "class": "test_chronology_consistency",
+          "name": "test_original_displacement_is_contingent_on_the_retired_early_glide",
+          "message": "historical replay: explicit lane; ordinary validation checks the immutable receipts without recompiling historical models. Run with --historical-replay (docs/HISTORICAL_REPLAY.md)."
+        },
+        {
+          "class": "test_rainbow_2148_adoption",
+          "name": "test_fresh_container_capture_and_private_controls_match_committed_receipts",
+          "message": "historical replay: explicit lane; ordinary validation checks the immutable receipts without recompiling historical models. Run with --historical-replay (docs/HISTORICAL_REPLAY.md)."
+        },
+        {
+          "class": "test_sc035_model_comparison",
+          "name": "test_fresh_foma_comparison_reproduces_every_recorded_intermediate",
+          "message": "historical replay: explicit lane; ordinary validation checks the immutable receipts without recompiling historical models. Run with --historical-replay (docs/HISTORICAL_REPLAY.md)."
+        },
+        {
+          "class": "test_sc035_prefix_reduction.PrefixReductionTests",
+          "name": "test_fresh_container_assay_reproduces_census_controls_and_counterfactuals",
+          "message": "historical replay: explicit lane; ordinary validation checks the immutable receipts without recompiling historical models. Run with --historical-replay (docs/HISTORICAL_REPLAY.md)."
+        },
+        {
+          "class": "test_sc035_prosody",
+          "name": "test_fresh_commit_pinned_comparison_reproduces_the_entire_receipt",
+          "message": "historical replay: explicit lane; ordinary validation checks the immutable receipts without recompiling historical models. Run with --historical-replay (docs/HISTORICAL_REPLAY.md)."
+        }
+      ]
+    }
+  },
+  "failed_checks_preserved": "First focused invocation used a nonexistent historical test filename and failed collection; second exposed orthographic h in an invalid early-stage control. Original receipts remain failed. Separate immutable frozen-rule follow-up verifies native x control; final focused20-test pass and B refresh/status pass are genuine.",
+  "journals": "SC065 and follow-up SC066 stop at research DECIDE/DEFER; validation events do not authorize production PROPAGATE, VALIDATE or COMPLETE.",
+  "rendered_publication": "Not performed: no production publication selection changed; required future gates are in README.md.",
+  "production_source_and_original_archive_hashes": {
+    "Germanic/fsts/germanic.txt": "0d79aeeed03638dbdda051e48bb8b6191ad2f5c395cf4287041f3b01c4216705",
+    "Germanic/data/germanic-aligned-final.tsv": "646de04cec66c13ff00e1d4b8e4d87911a66f92c082496ca86ba95e42b9302b1",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv": "d2120039e72861573056f9aa015a28f9d85573d5b1e391cdd5fdabb60781849a"
+  },
+  "archive_sha256": "98d9a73ef91e96105da97eb6df630a7247d0d751a75bd557dfca2abe01f68b00",
+  "members": {
+    "journals/SC065/events.ndjson": "f1c9f5312632eb6d6c120bba78608d0f2917b5e83bbe433e93d35e65845130f8",
+    "journals/SC065/state.json": "f0a2436093fac51e88143c56b974fe993422ea0805cc1e15b94f17043b82612f",
+    "journals/SC066/events.ndjson": "9863c48d929df643b6f104fe1305e4954a5059ed7fd5d2f56f2e14d00654cbfe",
+    "journals/SC066/state.json": "b60a46b6da3a745d22f39db270ce09a7433110acd7bbdc5e46114f3c215f797a",
+    "validation-final/certification-basis.json": "2fc6c7278c7912429f785f29095cc9219bbc95a5b78d260955402fa32e78c285",
+    "validation-final/strict-exclusive-1a6fdaa8655f47ea9e19ee61592ffeb0.junit.xml": "41eb5e5ca13fc070829b638e9277e02e4d39a9db58afc38e41c3080a6f13e36c",
+    "validation-final/strict-exclusive-1a6fdaa8655f47ea9e19ee61592ffeb0.receipt.json": "9b8eb01d59663caa39ec27c94b66a7d9008dba8878be293e461a3319a60b4a65",
+    "validation-final/strict-exclusive-1a6fdaa8655f47ea9e19ee61592ffeb0.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation-final/strict-exclusive-1a6fdaa8655f47ea9e19ee61592ffeb0.stdout.log": "7a0e0c48de4598c8498decad348ba06c000cace86a181473b12dd59082f202bd",
+    "validation-final/strict-serial-d8627dd4e757440f849ebdff73c7947c.junit.xml": "9952f279a174b85d98a682ac4f656c63b979b16f31019ca9bfe4059e714e11cd",
+    "validation-final/strict-serial-d8627dd4e757440f849ebdff73c7947c.receipt.json": "1b7f18a6a566d4183bb5fa833fbb8c40035924acf01fc7addcbe95f240de2d07",
+    "validation-final/strict-serial-d8627dd4e757440f849ebdff73c7947c.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation-final/strict-serial-d8627dd4e757440f849ebdff73c7947c.stdout.log": "dd7aa3edacdacfa9e621487a3d0aee4272fff776813dfb612bffd628be08dd76",
+    "validation-research/focused-lexical-reassessment-13ea551bc30141f9ab994475c56248cb.receipt.json": "40e262f730fd37a148a1f8e98cc3263edc8f824df8ba4ccaa27f8dd5243c1c67",
+    "validation-research/focused-lexical-reassessment-13ea551bc30141f9ab994475c56248cb.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation-research/focused-lexical-reassessment-13ea551bc30141f9ab994475c56248cb.stdout.log": "9880a8788611d95a5373611be9fa207b198acdbd2d1e60ca73424cd13dff5475",
+    "validation-research/focused-lexical-reassessment-662b93ee0b364d428927acec7bf834e9.receipt.json": "3cf2695a0010939643fe0becd69c31acecfffa4ef300d22bc6ee2d3c8a05f434",
+    "validation-research/focused-lexical-reassessment-662b93ee0b364d428927acec7bf834e9.stderr.log": "f2f9cd90dad1ad15fd4bbd664a85954ee1d8f74dfb35efe0104ec427238cb31f",
+    "validation-research/focused-lexical-reassessment-662b93ee0b364d428927acec7bf834e9.stdout.log": "a6fc53a5cef0fe8278c459c532a5e372bbe2dd65e4c365a7d7757a210299799f",
+    "validation-research/focused-lexical-reassessment-a2c38be297f940ee823c72dcedcb1d81.receipt.json": "2846c7bae17a2ecb5461293cc24633c26337ab98d7968445911ce30adba26897",
+    "validation-research/focused-lexical-reassessment-a2c38be297f940ee823c72dcedcb1d81.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation-research/focused-lexical-reassessment-a2c38be297f940ee823c72dcedcb1d81.stdout.log": "684b84de4da24d80059dd9203877c7ed56032baf1750a88c91e879fcc5f2e558",
+    "validation-research/integrated-refresh-4e081b0fe18d4816a7ff048a4e869c6c.receipt.json": "2e4fe15ae3775b96d603e8b356d74f8b9063722a3946ca62eab10f88f2bb41d5",
+    "validation-research/integrated-refresh-4e081b0fe18d4816a7ff048a4e869c6c.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation-research/integrated-refresh-4e081b0fe18d4816a7ff048a4e869c6c.stdout.log": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09",
+    "validation-research/integrated-status-1566c65060d943bc814e23cf62f385c8.receipt.json": "c5573e0d159c13bb16ca623cd97ba1a5469ee8a1a08f41837d110e8a189a16c9",
+    "validation-research/integrated-status-1566c65060d943bc814e23cf62f385c8.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation-research/integrated-status-1566c65060d943bc814e23cf62f385c8.stdout.log": "98335324bd97c96a3d3a8e8339dec38f6f25e5a7156cd71b27cc94653bd4c957"
+  }
+}
