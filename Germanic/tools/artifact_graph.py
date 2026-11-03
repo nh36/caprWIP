@@ -312,7 +312,8 @@ def _lexical_build() -> list:
 # --------------------------------------------------------------------------
 
 def _index_outputs() -> list:
-    return sorted(p for p in BOOK_DIR.rglob("*") if p.is_file()) + [INDEX_HEADER]
+    return sorted(p for p in BOOK_DIR.rglob("*")
+                  if p.is_file() and p.name != "index_semantic_fingerprint_allowlist.tsv") + [INDEX_HEADER]
 
 
 def _run_index_builder() -> None:

@@ -972,6 +972,14 @@ class ArtifactGraphTests(unittest.TestCase):
         for mode in ("--refresh", "--evidence", "--finalize", "--check"):
             self.assertIn(mode, src)
 
+    def test_semantic_approval_ledger_is_source_not_a_generated_index_output(self):
+        ag = _load("artifact_graph")
+        ledger = ag.BOOK_DIR / "index_semantic_fingerprint_allowlist.tsv"
+        generated = {p for node in ag.nodes() for p in node.outputs()}
+        self.assertNotIn(ledger, generated)
+        self.assertEqual(ag.propagation_path_kind(ledger, generated=generated), "SOURCE")
+        self.assertIn(ag.BOOK_DIR / "index_verborum_forms.tsv", generated)
+
     def test_matrix_provenance_is_move_invariant(self):
         """The recorded matrix provenance hashes harness source, the
         stage-derived pair list, and rule definition text — never cascade

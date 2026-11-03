@@ -138,6 +138,16 @@ and original DECIDE were untouched. Future summary writing is canonically sorted
 with a regression comparing JSON-reloaded plans and fresh candidates.
 All three direct actual owner finalisations and coordinated PROPAGATE passed.
 
+The first publication attempt stopped at the expected semantic-index fingerprint
+delta. All 47 additions and 23 removals were individually reviewed: every one is
+an authorised selected-cell heading, input/output-role transition, retained
+paradigm comparison or actual intermediate representation in the four articles.
+They are recorded in the existing semantic approval ledger; the frozen fingerprint
+snapshot is unchanged and no prose was reworded for the checker. The index node's
+overbroad directory scan incorrectly claimed this checker-input ledger as an
+output. That one ledger is now explicitly SOURCE, with a classification regression.
+The semantic regression suite passes.
+
 Colman2011 is independently copied, not linked, at
 `docs/references/colman_2011_moneyers_buga_boia.pdf` and
 `docs/references/local/colman-2011/complete.txt`. Its verified PDF SHA256 is

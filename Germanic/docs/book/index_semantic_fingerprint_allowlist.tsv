@@ -200,3 +200,73 @@ add	pgmc	fūla-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model
 add	pgmc	fūliþō	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md	Published filth article (row 2335), SC065 closeout; evidence per audits/sc065-adjudication.md and the entry's source ledger.	
 add	os	fulitha	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC065 chapter now tags the Old Saxon cognate explicitly; fixes the line-wrapped language inference that mislabelled it OHG.	
 add	ohg	fülida	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC065 chapter now tags the Old High German cognate explicitly beside Old Saxon fulitha.	
+add	oe	fundene	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	SC001/SC114 authorised find selection: retain the competing plural as comparison evidence.	
+add	oe	fundne	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	SC001/SC114 authorised find cell and complete regular derivation; see its source ledger.	
+add	oe	fundne	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	SC001/SC114 authorised find nominative plural target, Strunk1904 p82.	
+add	oe	fundne	target_form	lexical_heading	find — OE fundne	SC001/SC114 authorised find selected-cell publication.	
+add	oe	hamer	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	SC001/SC114 authorised hammer citation-cell derivation.	
+add	oe	hamer	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	SC001/SC114 authorised hammer target, WrightWuelcker1884 I272.36.	
+add	oe	hamer	target_form	lexical_heading	hammer — OE hamer	SC001/SC114 authorised hammer citation-cell publication.	
+add	oe	hameres	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Retain the earlier selected genitive as competing paradigm evidence, not the current target.	
+add	oe	sāwl	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	SC001/SC114 soul article retains syncopated stem evidence separately from the selected accusative.	
+add	oe	sāwle	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	SC001/SC114 authorised soul accusative regular derivation.	
+add	oe	sāwle	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	SC001/SC114 authorised soul accusative, Skeat1874 p130 Luke12:20.	
+add	oe	sāwle	target_form	lexical_heading	soul — OE sāwle	SC001/SC114 authorised selected soul article.	
+add	oe	sāwol	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	Retain the competing nominative and former selection; wider paradigm remains unresolved.	
+add	oe	sāwul	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	Retain the actual nominative comparator, Skeat1874 p130 Luke12:23.	
+add	oe	west	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md	SC001/SC114 authorised west inherited-base derivation.	
+add	oe	west	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md	SC001/SC114 authorised west target; source ledger preserves Orosius evidence.	
+add	oe	west	target_form	lexical_heading	west — OE west	SC001/SC114 authorised selected west article.	
+add	oe	westan	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md	Retain the direction-adverb comparison, not a replacement of selected west.	
+add	oe	westane	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md	Retain the competing longer direction-adverb history as comparison evidence.	
+add	pgmc	*fínθaną	source_protoform	lexical_proto	find — OE fundne	Find comparative PROTO remains unchanged; the selected publication heading changes.	
+add	pgmc	*fúnðanai	selected_input	trace_proto_input	find — OE fundne	SC001/SC114 authorised masculine nominative plural participle input.	
+add	pgmc	*fúnðanai	source_protoform	lexical_protoform	find — OE fundne	SC001/SC114 authorised selected Proto-Germanic cell, independent of comparative lemma.	
+add	pgmc	*sáiwalō	source_protoform	lexical_proto	soul — OE sāwle	Soul comparative PROTO remains unchanged and distinct from the selected accusative.	
+add	pgmc	*sáiwalǭ	selected_input	trace_proto_input	soul — OE sāwle	SC001/SC114 authorised soul accusative input.	
+add	pgmc	*sáiwalǭ	source_protoform	lexical_protoform	soul — OE sāwle	SC001/SC114 authorised selected Proto-Germanic accusative cell.	
+add	pgmc	*wéstą	selected_input	trace_proto_input	west — OE west	SC001/SC114 authorised inherited west base.	
+add	pgmc	*wéstą	source_protoform	lexical_protoform	west — OE west	SC001/SC114 authorised west input, equal to comparative PROTO.	
+add	pgmc	*xámaraz	selected_input	trace_proto_input	hammer — OE hamer	SC001/SC114 authorised hammer citation input.	
+add	pgmc	*xámaraz	source_protoform	lexical_protoform	hammer — OE hamer	SC001/SC114 authorised hammer input, equal to comparative PROTO.	
+add	pgmc	fúnðanai	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Exact reconstructed-span display of the authorised find selection.	
+add	pgmc	fúnðananǭ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Retain the independently tested longer participial cell and its different output.	
+add	pgmc	fúnðanaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Retain the nominative singular participial probe, not the selected plural.	
+add	pgmc	fúnðanǭ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Retain the former selected cell as an explicitly qualified comparison.	
+add	pgmc	fúnðinaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Retain the competing participial stem probe and its different output.	
+add	pgmc	sáiwalō	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	Retain the soul nominative input and unresolved wider paradigm history.	
+add	pgmc	sáiwalō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	Exact reconstructed-span display of the unchanged soul comparative citation.	
+add	pgmc	sáiwalǭ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	Exact reconstructed-span display of the authorised soul accusative.	
+add	pgmc	wéstanē	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md	Retain the former selected direction-adverb input as a different cell.	
+add	pgmc	wéstą	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md	Exact reconstructed-span display of the authorised west input.	
+add	pgmc	wéstą	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md	Exact reconstructed-span display of the equal west comparative axis.	
+add	pgmc	xámaras	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Retain the former hammer genitive input as competing paradigm evidence.	
+add	pgmc	xámaraz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Exact reconstructed-span display of the authorised hammer citation input.	
+add	preoe	fúndanē	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	SC114 actual pre-rule find representation, not a Proto-Germanic citation.	
+add	preoe	fúndnē	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	SC114 actual post-rule find representation, not a new attested target.	
+add	preoe	sāwalǭ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	SC114 actual pre-rule soul representation.	
+add	preoe	sāwlǭ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md	SC114 actual post-rule soul representation; inherited quantity carrier remains explicit.	
+add	preoe	xámar	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Actual hammer pre-syncope comparison explains nonapplication in the selected citation.	
+remove	oe	fundene	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Authorised find cell migration; fundene remains comparison evidence, not the selected output.	
+remove	oe	fundene	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Authorised find target migration to source-backed fundne.	
+remove	oe	fundene	target_form	lexical_heading	find — OE fundene	Authorised find publication heading follows the selected plural.	
+remove	oe	hamer	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Authorised hammer migration promotes the source-backed citation to selected target.	
+remove	oe	hameres	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Former genitive output retained as comparison, not current citation derivation.	
+remove	oe	hameres	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Authorised hammer target migration to source-backed hamer.	
+remove	oe	hameres	target_form	lexical_heading	hammer — OE hameres	Authorised hammer publication heading follows the selected citation.	
+remove	oe	tō-fundennes	comparison_form	broad_prose_decision	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	The mature article now treats participial cells; the old frozen gerund extraction is retained in its source ledger.	
+remove	pgmc	*fínθaną	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Comparative citation retained with the existing reconstructed-span rendering, not removed from the scholarly history.	
+remove	pgmc	*fínθaną	source_protoform	lexical_proto	find — OE fundene	Comparative citation unchanged; authorised selected publication heading replaces the old one.	
+remove	pgmc	*fúnðanaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Comparison retained with reconstructed-span rendering, not a selected singular.	
+remove	pgmc	*fúnðanǭ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Authorised find input migration; previous cell remains explicitly qualified comparison evidence.	
+remove	pgmc	*fúnðanǭ	selected_input	trace_proto_input	find — OE fundene	Authorised find nominative-plural input replaces the old selected cell.	
+remove	pgmc	*fúnðanǭ	source_protoform	lexical_protoform	find — OE fundene	Authorised find input migration, not a rewrite of the literal original380 archive.	
+remove	pgmc	*sáiwalō	selected_input	trace_proto_input	soul — OE sāwol	Authorised soul accusative selection replaces the old nominative-selected trace.	
+remove	pgmc	*wéstanē	selected_input	trace_proto_input	west — OE westene	Authorised west inherited-base selection replaces the different direction-adverb cell.	
+remove	pgmc	*xámaras	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Former genitive input retained as comparison evidence rather than the selected citation.	
+remove	pgmc	*xámaras	selected_input	trace_proto_input	hammer — OE hameres	Authorised hammer citation input replaces the old genitive selection.	
+remove	pgmc	*xámaras	source_protoform	lexical_protoform	hammer — OE hameres	Authorised hammer input migration, not a rewrite of the literal original380 archive.	
+remove	pgmc	*xámaraz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Comparative citation retained with the existing reconstructed-span rendering.	
+remove	pgmc	*xámaraz	source_protoform	lexical_proto	hammer — OE hameres	Comparative citation unchanged; authorised selected publication heading replaces the old one.	
+remove	pgmc	fúnðanǭ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md	Previous reconstructed-span input retained as comparison, not the selected plural.	
+remove	pgmc	xámaras	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	Previous reconstructed-span genitive input retained as comparison, not the selected citation.	
