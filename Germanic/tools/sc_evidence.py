@@ -97,11 +97,12 @@ def main():
 
     index, tracer_name, bin_name = find_stage(args.fst_identifier)
     if index == 0:
-        raise SystemExit("EVIDENCE FAILED: the proto-input stage has no "
-                         "preceding stage to diff against.")
-    prev_name, prev_bin_name = STAGES[index - 1]
+        prev_name, prev_bin = "canonical evaluation input", None
+    else:
+        prev_name, prev_bin_name = STAGES[index - 1]
+        prev_bin = bin_dir / prev_bin_name
     target_bin = bin_dir / bin_name
-    prev_bin = bin_dir / prev_bin_name
+    stage_bins = (target_bin,) if prev_bin is None else (prev_bin, target_bin)
 
     print("=== SC EVIDENCE CENSUS ===")
     print(f"rule: {args.fst_identifier} (tracer stage: {tracer_name}, "
@@ -113,11 +114,11 @@ def main():
     for label in ("germanic.txt", "old_english_sandbox.txt"):
         print(f"{label} sha256: {sha256_of(fsts_dir / label)}")
     print(f"germanic-aligned-final.tsv sha256: {sha256_of(tsv_path)}")
-    for path in (prev_bin, target_bin):
+    for path in stage_bins:
         size, mtime = validate_bin(path, args.min_mtime)
         print(f"{path.name}: {size} bytes, mtime {int(mtime)} "
               f"({time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(mtime))})")
-    for path in (prev_bin, target_bin):
+    for path in stage_bins:
         stale = fsts_dir / path.name
         if stale.exists():
             print(f"NOTE: ignoring duplicate copy {stale} "
@@ -130,7 +131,8 @@ def main():
     firings = []
     witness_lines = []
     forms = [evaluation_input(row) for row in rows]
-    before_outputs = batch_apply_down(prev_bin, forms)
+    before_outputs = ([[form] for form in forms] if prev_bin is None
+                      else batch_apply_down(prev_bin, forms))
     after_outputs = batch_apply_down(target_bin, forms)
     for row, before, after in zip(rows, before_outputs, after_outputs):
         line = (f"{row['concept']}\t{row['proto']}\t"

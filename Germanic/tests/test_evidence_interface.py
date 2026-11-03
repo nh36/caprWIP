@@ -252,6 +252,38 @@ class ScEvidenceWorkerTests(unittest.TestCase):
         self.assertIn("[unchanged] rejected\t*x\t(no output)\t(no output)", text)
         self.assertIn("[NOT IN SELECTED CORPUS] missing", text)
 
+    def test_first_stage_uses_canonical_inputs_without_an_invented_predecessor(self):
+        rows = [
+            dict(concept="soul", proto="*sáiwalō", fst_input="sáiwalō",
+                 counterpart="sāwol"),
+            dict(concept="rejected", proto="*?", fst_input="?",
+                 counterpart="none"),
+        ]
+        runtime = SimpleNamespace(
+            bin_dir=Path("/nonexistent"), fsts_dir=Path("/nonexistent/fsts"),
+            corpus_tsv=Path("/nonexistent/corpus.tsv"))
+        with patch.object(sys, "argv", [
+                "sc_evidence.py", "EnglishProtoInput", "--min-mtime", "100",
+                "--witnesses", "soul; rejected"]), \
+                patch.object(sc_evidence, "layout", return_value=runtime), \
+                patch.object(sc_evidence, "sha256_of", return_value="hash"), \
+                patch.object(sc_evidence, "validate_bin",
+                             return_value=(4096, 100)) as validate, \
+                patch.object(sc_evidence, "load_rows", return_value=rows), \
+                patch.object(sc_evidence, "batch_apply_down",
+                             return_value=[["*s*ái*w*a*l*ō"], []]) as batch, \
+                contextlib.redirect_stdout(io.StringIO()) as output:
+            self.assertEqual(sc_evidence.main(), 0)
+        index, _, target = sc_evidence.find_stage("EnglishProtoInput")
+        self.assertEqual(index, 0)
+        validate.assert_called_once_with(runtime.bin_dir / target, 100)
+        batch.assert_called_once_with(runtime.bin_dir / target, ["sáiwalō", "?"])
+        text = output.getvalue()
+        self.assertIn("previous stage: canonical evaluation input", text)
+        self.assertIn("2 of 2 selected corpus rows changed", text)
+        self.assertIn("[CHANGED] soul\t*sáiwalō\tsáiwalō\t*s*ái*w*a*l*ō", text)
+        self.assertIn("[CHANGED] rejected\t*?\t?\t(no output)", text)
+
 
 def _docker_available():
     try:
