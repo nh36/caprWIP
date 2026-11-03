@@ -319,6 +319,50 @@ local SHARED_GLOSS_VARIANTS = {
     context = "Bosworth–Toller gives regn-boga",
     part2 = true,
   },
+  ["fúnðanai"] = {
+    anchor = "fundne", context = "is a compositional reconstruction:",
+    prior = true, part2 = true,
+  },
+  ["fúndanē"] = {
+    anchor = "fundne", context = "Dental hardening gives",
+    prior = true, part2 = true,
+  },
+  ["fúndnē"] = {
+    anchor = "fundne", context = "Dental hardening gives",
+    prior = true, part2 = true,
+  },
+  ["fúnðanǭ"] = {
+    anchor = "fundne", context = "The former shortened input",
+    prior = true, part2 = true,
+  },
+  ["sáiwalǭ"] = {
+    anchor = "sáiwalō", context = "The comparative citation",
+    part2 = true,
+  },
+  ["sāwalǭ"] = {
+    anchor = "sáiwalō", context = "Unstressed brightening and restoration lead to",
+    prior = true, part2 = true,
+  },
+  ["sāwlǭ"] = {
+    anchor = "sáiwalō", context = "Unstressed brightening and restoration lead to",
+    prior = true, part2 = true,
+  },
+  ["hamores"] = {
+    anchor = "hameres", context = "retains a second oblique tradition",
+    part2 = true,
+  },
+  ["xámar"] = {
+    anchor = "xámaraz", context = "early loss of bare final",
+    prior = true, part2 = true,
+  },
+  ["xámaras"] = {
+    anchor = "hameres", context = "still has a heavy final syllable",
+    prior = true, part2 = true,
+  },
+  ["wéstanē"] = {
+    anchor = "westan", context = "Neither output establishes the history",
+    prior = true, part2 = true,
+  },
 }
 
 -- These released passages explicitly revisit a previously glossed lemma.
@@ -333,6 +377,24 @@ local REPEATED_GLOSS_CONTEXTS = {
   },
   ["boga"] = {
     {part2 = true, context = "has an early explanation:"},
+  },
+  ["sāwle"] = {
+    {part2 = false, context = "CAPR selects the inherited accusative"},
+  },
+  ["sáiwalō"] = {
+    {part2 = true, context = "The former selected citation"},
+  },
+  ["hamor"] = {
+    {part2 = true, context = "retains a second oblique tradition"},
+  },
+  ["hameres"] = {
+    {part2 = true, context = "This negative control matters."},
+  },
+  ["xámaraz"] = {
+    {part2 = true, context = "early loss of bare final"},
+  },
+  ["wéstą"] = {
+    {part2 = true, context = "has a heavy root syllable"},
   },
 }
 
@@ -408,7 +470,7 @@ local function check_para(el, is_p2, in_prose_section)
         -- always exempt
       elseif span_has_class(inline, 'ex') then
         -- .ex (example phrase) is always exempt from paragraph gloss rule
-      elseif span_has_class(inline, 'recon')
+      elseif (span_has_class(inline, 'recon') or span_has_class(inline, 'iv'))
         and (inline.attributes['form_role'] or inline.attributes['role']) == 'regular_output' then
         -- A model prediction is not a new lexical evidence citation.
       elseif span_has_class(inline, 'recon') then

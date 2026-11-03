@@ -148,6 +148,17 @@ overbroad directory scan incorrectly claimed this checker-input ledger as an
 output. That one ledger is now explicitly SOURCE, with a classification regression.
 The semantic regression suite passes.
 
+The next build reached combined rendering but required redundant glosses for
+already identified inflections and actual model stages. Existing contextual
+shared-gloss machinery now recognises only those reviewed passages, requiring
+their prior/local lemma and precise context; negative controls reject unrelated,
+unglossed or wrongly ordered mentions. Plain `.iv` regular outputs receive the
+same existing non-evidence treatment as reconstructed regular outputs.
+All four article texts are unchanged by this repair; 20 focused tests pass.
+The inherited level-2 combined-entry hierarchy leaves the validator's legacy
+plain-italic subsection heuristic inactive, while explicit `.iv`/`.recon`/`.lex`
+checks still run. That pre-existing coverage gap is not represented as solved.
+
 Colman2011 is independently copied, not linked, at
 `docs/references/colman_2011_moneyers_buga_boia.pdf` and
 `docs/references/local/colman-2011/complete.txt`. Its verified PDF SHA256 is

@@ -146,14 +146,59 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_reconstructed_regular_output_is_not_a_new_lexical_citation(self):
-        for key in ("role", "form_role"):
-            with self.subTest(key=key):
-                result = self.validate(f"[strēa]{{.recon .iv {key}=regular_output}}.\n")
-                self.assertEqual(result.returncode, 0, result.stderr)
+        for classes in (".recon .iv", ".iv lang=oe"):
+            for key in ("role", "form_role"):
+                with self.subTest(classes=classes, key=key):
+                    result = self.validate(f"[strēa]{{{classes} {key}=regular_output}}.\n")
+                    self.assertEqual(result.returncode, 0, result.stderr)
         for role in ("evidence_form", "input", "target"):
             with self.subTest(role=role):
                 result = self.validate(f"[strēa]{{.recon form_role={role}}}.\n")
                 self.assertEqual(result.returncode, 2, result.stderr)
+
+    def test_four_cell_derivation_context_requires_the_prior_lemma(self):
+        prefix = "# Word-by-word derivations\n\n"
+        paragraph = (
+            "Dental hardening gives [fúndanē]{.iv .recon lang=preoe}, "
+            "then [fúndnē]{.iv .recon lang=preoe}.\n"
+        )
+        antecedent = "[fundne]{.iv lang=oe} 'found' is the selected plural.\n\n"
+        self.assertEqual(self.validate(prefix + antecedent + paragraph).returncode, 0)
+        for text in (
+            prefix + paragraph,
+            prefix + paragraph + antecedent,
+            prefix + antecedent + "Other forms are [fúndanē]{.iv .recon lang=preoe}.",
+            antecedent + paragraph,
+        ):
+            with self.subTest(text=text):
+                result = self.validate(text)
+                self.assertEqual(result.returncode, 2, result.stderr)
+
+    def test_same_cell_comparison_requires_its_actual_local_gloss(self):
+        prefix = "# Word-by-word derivations\n\n"
+        paragraph = (
+            "[hameres]{.iv lang=oe} 'of a hammer' and [hamores]{.iv lang=oe} "
+            "retains a second oblique tradition.\n"
+        )
+        self.assertEqual(self.validate(prefix + paragraph).returncode, 0)
+        for text in (
+            prefix + paragraph.replace("'of a hammer'", ""),
+            prefix + paragraph.replace("retains a second oblique tradition", "are other forms"),
+        ):
+            result = self.validate(text)
+            self.assertEqual(result.returncode, 2, result.stderr)
+
+    def test_selected_four_cell_articles_pass_without_repeated_gloss_prose_edits(self):
+        models = FILTER.parents[1] / "docs/lexeme_reports/model_entries"
+        for name in (
+            "2011-find-fundene.model.md", "2053-hammer-hameres.model.md",
+            "2201-soul-sāwle.model.md", "2282-west-west.model.md",
+        ):
+            with self.subTest(name=name):
+                result = self.validate(
+                    "# Word-by-word derivations\n\n" + (models / name).read_text()
+                )
+                self.assertEqual(result.returncode, 0, result.stderr)
 
     def test_combining_marks_do_not_hide_lexical_forms(self):
         result = self.validate("*cū* survives.\n")
