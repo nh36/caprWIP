@@ -1,0 +1,529 @@
+{
+  "all_recorded_scientific_sources_equal_baseline_commit": true,
+  "approved_four_row_transition": null,
+  "baseline": {
+    "hashes": {
+      "Germanic/data/germanic-aligned-final.tsv": "646de04cec66c13ff00e1d4b8e4d87911a66f92c082496ca86ba95e42b9302b1",
+      "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs.tsv": "c5971c3c848065c3188fd2d9362ea36d22a4fe48d57bdf451bc380f32375fed0",
+      "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv": "d2120039e72861573056f9aa015a28f9d85573d5b1e391cdd5fdabb60781849a",
+      "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json": "2a88e80d610a3fae5d3a113e8a9f94acdf2cecab02fcffc2704fe66758d013bb",
+      "Germanic/fsts/germanic.txt": "0d79aeeed03638dbdda051e48bb8b6191ad2f5c395cf4287041f3b01c4216705"
+    },
+    "source_commit": "52a49a8cd5883d20e72312a40ac068f9cdd499fb",
+    "summary": {
+      "accepted": 391,
+      "ambiguous_outputs": 0,
+      "legacy_subset_count": 380,
+      "legacy_subset_sha256": "9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597",
+      "lexical_outputs_sha256": "b91245d7cf13df96905fd3d4b9244e2fccff430851cf613c856a560a849c85e3",
+      "matched": 383,
+      "mismatched": 8,
+      "outputs_sha256": "efabc1f0512a862f601b651e6409b4e3265a5911b55ce9624b5661e297b8828e",
+      "rejected": 0,
+      "total_lexemes": 391
+    },
+    "update_commit": "8f7713c39f26a7f81ef04d29d54070f1b83ab0e0"
+  },
+  "diagnostic_execution_status_is_not_gate_status": true,
+  "evidence_archive_sha256": "8fe977586abe9bce9dbb7ba6243cece989e8fbd560fe6716a4f7758623f29c85",
+  "failed_gate": "New productive input relation fails native test functional after two bounded repairs; complete native unambiguity checks disagree. Cause unresolved.",
+  "formal": {
+    "nonhigh-parser-diagnostic-01": {
+      "EnglishProtoInput": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "EnglishProtoNative": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "OENonHighSyn": {
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellInput": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNew": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPlain": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPrefixed": {
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      }
+    },
+    "nonhigh-parser-diagnostic-02": {
+      "EnglishProtoInput": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "EnglishProtoNative": {
+        "shortest_ambiguous_upper": "biu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "OENonHighSyn": {
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellInput": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNew": {
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPlain": {
+        "shortest_ambiguous_upper": "",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPrefixed": {
+        "shortest_ambiguous_upper": "",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      }
+    },
+    "nonhigh-parser-priority-repair-01": {
+      "EnglishProtoInput": {
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "EnglishProtoNative": {
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "OENonHighSyn": {
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGBijective": {
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellInput": {
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNew": {
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonFunctional": {
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\na\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonInjective": {
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPlain": {
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPrefixed": {
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      }
+    },
+    "nonhigh-parser-proof-01": {
+      "EnglishProtoInput": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "EnglishProtoNative": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "OENonHighSyn": {
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGBijective": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellInput": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNew": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonFunctional": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\na\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonInjective": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPlain": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPrefixed": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      }
+    },
+    "nonhigh-parser-proof-02": {
+      "EnglishProtoInput": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "EnglishProtoNative": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "OENonHighSyn": {
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGBijective": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellInput": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNew": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonFunctional": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\na\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonInjective": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPlain": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPrefixed": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      }
+    },
+    "nonhigh-parser-root-repair-02": {
+      "EnglishProtoInput": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "EnglishProtoNative": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\nbiu\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "OENonHighSyn": {
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGBijective": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellInput": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellPlain": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellPrefixed": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGCellRoot": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNew": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonFunctional": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "0 (1 = TRUE, 0 = FALSE)\n0 (1 = TRUE, 0 = FALSE)\na\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGNonInjective": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPlain": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "0 (1 = TRUE, 0 = FALSE)\n"
+      },
+      "PGPrefixed": {
+        "inverse_composition_identity": {
+          "stderr": "",
+          "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+        },
+        "shortest_ambiguous_upper": "1 (1 = TRUE, 0 = FALSE)\n1 (1 = TRUE, 0 = FALSE)\n",
+        "stderr": "",
+        "stdout": "1 (1 = TRUE, 0 = FALSE)\n"
+      }
+    }
+  },
+  "integration_branch": "integration/nonhigh-four-cells",
+  "journal_frontier": "INVESTIGATE",
+  "original380_projection_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "production_adoption_certified": false,
+  "production_changes": [],
+  "publication_regenerated": false,
+  "rendered_book_inspected": false,
+  "repairs": 2,
+  "sc114_registered": false,
+  "scientific_source_hashes": {
+    "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "Germanic/data/entry_stage_metadata.tsv": "e89576e75cacd7581e30f89e33d681d0e11adb6e099ceb89c3a8793fbcbe2376",
+    "Germanic/data/germanic-aligned-final.tsv": "646de04cec66c13ff00e1d4b8e4d87911a66f92c082496ca86ba95e42b9302b1",
+    "Germanic/docs/sound_changes/cascade_baseline/README.md": "f735eec779590d47c70a730d6e518f480be3df578afc423f65094de3437a4cac",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_cell_migration.json": "d5dfea8b7ee5605ec987af86bf1aa2572b25a5a77f926efca40331f1ee123ff4",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_context_migration.json": "8de9b1bb1bf2abd971b86bbdd0bb354c7a00d7159d6c860b3f03150ad8e19b4e",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_hue_input_migration.json": "ea9dccd3402486a83fdbbdd48c99573d02ab0a8d8920da0138b39e86a306a076",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_input_migrations.tsv": "3c6b033994878a6319b10711bdf84f07fb95241d838dbe0b4a015340e67de334",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_rust_input_migration.json": "1b6a264aba1060511940dd0a3561766b413459f995f52873b6f9de8cdd17ed30",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_sc015_targets_migration.json": "ea5b74bad43e89ec2e950c160e71cd9885b043ba1014ac7356b88c26a40744a6",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_sc034_output_migration.json": "aa78435a74efec2a09f373b6e3884ac37d6555ce83c93594132899fb650666ef",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_wether_input_migration.json": "7499d15fd8abc0f951279f1b471f151877f462de4d2f75b33fdc502409cc7f2f",
+    "Germanic/docs/sound_changes/cascade_baseline/approved_world_input_migration.json": "cb9fc16cf2ab65ae9e744a1ea975cbfe04f4d497c5015efe28b525c652c9f3ef",
+    "Germanic/docs/sound_changes/cascade_baseline/canonical_stage_scope_ontology.md": "b6b82cd3bcd44a58eacc1865d10436c5c092d83e333aae2acf953e79558cfc77",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs.tsv": "c5971c3c848065c3188fd2d9362ea36d22a4fe48d57bdf451bc380f32375fed0",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_legacy380.tsv": "d2120039e72861573056f9aa015a28f9d85573d5b1e391cdd5fdabb60781849a",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc015.tsv": "6329b06b9d1403094118950661810e8927862908d9f0f092ff025e5b240e23ba",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc015_wether_input.tsv": "d60785700fde7579b09c11ec5c0afe5248722e4f5506d426da456fd14cf2b8c0",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc017_rust_input.tsv": "6fde3bf5318401feb8cb7e5d57f3b381639b3b9e24de2bf3fb99357614a58ac9",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc031_sc098.tsv": "d6c02720e6c2db7973e220b9b3fd5c64f7ef1270e8938160ee13ba8d4ef08d61",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc033.tsv": "4c1d72e74c287c49f9f4a6d09cffcb3eccc10aafcbb57245c77ba4eadcf87f28",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc033_hue.tsv": "82c618b5477081c3eb9889eba7cb6886dbaabafcff4f245d5371c75434b36386",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc034.tsv": "983d1d54b931c125932c4d8be68a915c583f4fd30ac99557ba1af2de3e39d930",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc036_world.tsv": "7f0651590c2cb15659d5cbdf5ee7f879c2e8626496ed64fe510d3e8529deab09",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc040_earthly.tsv": "e109fc68ecd9a002faaf2769f94e9bf6fd46dd4e3d011e7899e0ec205b85cac9",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc056.tsv": "cb518bf3be8bc1a01d69565072428f3251743da03095448f9dc36cdeb160c982",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc065_expansion.tsv": "74316aaf602e33d2b182e88de8ee2794439c1aa52874457c0f8a9df68d7ea14b",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs_pre_sc112_expansion.tsv": "787c138b3f556a251ea72f51dd3dd66ae241c2bbd7e7b443bc28817a03f107dd",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json": "2a88e80d610a3fae5d3a113e8a9f94acdf2cecab02fcffc2704fe66758d013bb",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc015.json": "560e7f04b9b2b44db258f6c177130edb5992e77d1f9e13d064d2c78963099c5a",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc015_wether_input.json": "3fa19f84361f74345f7983fe83c5ca2bf0cbf39ee31e3e08a8b0e1854b01b775",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc017_rust_input.json": "1ce5d1c00f1221bfdfb76c8a0add58aeea626ac95c52a0e2ba7081178f0b3e57",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc031_sc098.json": "cc895d7f23075de91a7505ec93b019db0e88ae358e28a1d256757158951d03c8",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc033.json": "3e807636a6b1223d314de0d4a9772b41899584a8dc1c649a5d4c61ac15a3186e",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc033_hue.json": "d199a4a3d1a9afcc06c837f1cd9f97fae05edea976133007daf2621d73ae90db",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc034.json": "d29d07330022401f3b0a4e0afebfc1c60d995536eb0968c83d2b36ed5058cd91",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc036_world.json": "73fb70a92d79b9c160d0d69188549511526924ff064b244617bb985c15982477",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc040_earthly.json": "b2555adef8a0bfaa7f931e8d696548e009465cfde642c8c27481afdb1345d3c6",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc056.json": "6a560e752a50c8aa23b442aaeda31151025c1ce5eeda7728b4a30776c6742e6c",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc065_expansion.json": "2aece2d6482fcac31c64985f2ad4b8ec4f9d0f96cf38846cee1265c70ff9891c",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary_pre_sc112_expansion.json": "48278805058a7ef35b47dc751a0b4917d07bfc598ad60378221adde018847b35",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_interaction_matrix.tsv": "f1e712341bda8da4ee759ed234add2c6c346b9414399aa689ec3ffd4554aa956",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_interaction_provenance.json": "ddfc85f185a1064566749c13e9db85adcc148a72db0f75fea73152daba25cac4",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_interaction_report.md": "db9b2d95401f292c3cb839d65cd3eb6777f1c40e3bd2e2ad97b68cf45688f073",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_order_manifest.tsv": "69d661bde18e8ed8f8d3a860b62c6e3d192d2ee0d4fa769b1e2fa99d5d02b519",
+    "Germanic/docs/sound_changes/cascade_baseline/cascade_order_manifest_frozen.tsv": "b3d6b6bad597884c72016f48c3d379d2cfbd79bac900cf6758a6848a877636ee",
+    "Germanic/docs/sound_changes/cascade_baseline/corpus_expansion_sc040_earthly.tsv": "d5372f3769cfc9c4e083f672c73068f5414047dc47f7a5736ac11b30ba50a445",
+    "Germanic/docs/sound_changes/cascade_baseline/corpus_expansion_sc065.tsv": "0969b9b4f6b4296fa993f6e6891747729a86b3820b3b2cd60440db156a31f8dd",
+    "Germanic/docs/sound_changes/cascade_baseline/corpus_expansion_sc112.tsv": "1e7a1ab68f7c8b8bbd259a4a77e25555c0d8741feae889a2df96ce3b8e26c112",
+    "Germanic/docs/sound_changes/cascade_baseline/executable_model.tsv": "cf9b0f13c6acd2cd1295372e4bd1459cc2e77fc320314611058b68d77ba9d938",
+    "Germanic/docs/sound_changes/cascade_baseline/historical_audit_evidence_inventory.tsv": "6779218c5b8eaa1228d3395a6f5dd94c7a511a058efdd1039db3e2a106c85b84",
+    "Germanic/docs/sound_changes/cascade_baseline/historical_audit_table.tsv": "503c4b588f00f10bbb1e6c691a84d08da97edd3fb7ff633debf2187a2187204b",
+    "Germanic/docs/sound_changes/cascade_baseline/historical_cascade_proposal.md": "bb7a211c5eb0965a549eeb14d2b9b0a7706d6b91a8e27a865dff67d32c43e6fb",
+    "Germanic/docs/sound_changes/cascade_baseline/historical_correction_dossier.md": "0bec325871401b59071597368af9fc5adb17f36bbef7aec7ab46bf7bae14d12f",
+    "Germanic/docs/sound_changes/cascade_baseline/historical_partial_order.tsv": "3272b998470ee526b245646544d5428916de1c0bb43c5a01a724ab104bcdd1fa",
+    "Germanic/docs/sound_changes/cascade_baseline/historical_reconciliation.md": "c1c896bcfc38d4b71fb253a63cfa9b8720697dbb702763f72c2cdcf50c43d5ae",
+    "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json": "21ce431ff26516384137ae9b649adf36756147bd8049aeeb8249f96c025ad986",
+    "Germanic/docs/sound_changes/cascade_baseline/post_rename_integrity_report.md": "5d35c41c54a595681a668e7eb8a9fbadaa422e4bbe29052f69a557af4430f8e6",
+    "Germanic/docs/sound_changes/cascade_baseline/post_rename_semantic_baseline.tsv": "addce1d8c651a666d393c30dca230104bfdcc5f6148aad95052ddb9132f49bb3",
+    "Germanic/docs/sound_changes/cascade_baseline/post_sc004_split_semantic_baseline.tsv": "cd6b610269621abcfc2b70a20fe1353b046f85d486f66a25a4896e115e10f2ca",
+    "Germanic/docs/sound_changes/cascade_baseline/queued_review_gated_tasks.md": "917f8fbb0a088bce949049ef76f40344e7fec728188b4fbf278ceed12217ae29",
+    "Germanic/docs/sound_changes/cascade_baseline/rename_former_name_allowlist.tsv": "b1b43db413eb18934fe738982567d4d844a36afd178be26da9bf808cbe585faf",
+    "Germanic/docs/sound_changes/cascade_baseline/rename_migration_manifest.tsv": "e0089f43a14e71817be5f8395a201a0bdb1958e65970bad25a3dc0131cde5629",
+    "Germanic/docs/sound_changes/cascade_baseline/rule_coverage_census.tsv": "e37aa6bf39dcd7720166299834ed7c1f7918b1a56ce8737e2b26f023e9a66d88",
+    "Germanic/docs/sound_changes/cascade_baseline/sc004_correction_rebuild_status.md": "1a9747f396027d577f096766d62a5b87b0149513b614d68d840c853a94d551f4",
+    "Germanic/docs/sound_changes/cascade_baseline/sc004_historical_options_report.md": "f45774ca8efad362c07f22f6a2a0d3d193fa63d60326b71f5c4ee09507ba1f49",
+    "Germanic/docs/sound_changes/cascade_baseline/sc004_split_stale_claim_audit.md": "80adb5d9595b72f1fd9547bd34ff401c7f5b57f331534b47804a27408967cfa9",
+    "Germanic/docs/sound_changes/registry/CONTROL_PLANE.md": "cb2ba5bdef6392447370901793753ec7acd8117038401ab7a5b9246837824804",
+    "Germanic/docs/sound_changes/registry/adjudication_programme.json": "46d77a630069315fe28d1c06136768fef20c7e4e6cce983267bc12f45f62fa14",
+    "Germanic/docs/sound_changes/registry/archival_orders.tsv": "69ca2fc8610de960320f804107c34c20589284e0a4166785dc203807a64418e1",
+    "Germanic/docs/sound_changes/registry/chronology_edges.tsv": "ce6377c6817c3ed132b349c56bd1ba92e4c5c1ce01559b9d7eefbb98c17e61f0",
+    "Germanic/docs/sound_changes/registry/current_chronology.tsv": "cf101420c19d73189768a56b4544708f413ea4b78bc445dfbd27d94df45d8d4c",
+    "Germanic/docs/sound_changes/registry/current_sc_state.tsv": "7a5fb8a9425b85e0691e9b75a024d273748c52af026f0d8daedd919e12a8dea9",
+    "Germanic/docs/sound_changes/registry/reader_chapters.tsv": "2d18103759772235f797a7af5bd9339c7cdac8a2ef67e19623eee42cf148e08b",
+    "Germanic/docs/sound_changes/registry/reader_manifest.tsv": "44a5cb4c2f1bdf4f2bd08c4e8f511a8c6b69dbc45a26b0640c24237730d25e34",
+    "Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv": "7ed78491b542530264bd0b5901b53b8e745a601edec01b6bdc8073db6638480a",
+    "Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv": "a6fce8ac1e5c7dd6577bc4695f48dbb6b2afcd42375bcb6b68621d9a98c514d3",
+    "Germanic/docs/sound_changes/registry/sc_registry.tsv": "04482cf6fce79b8aa7620443af451c16d1ab5c8ea892c4fb53b0063d2111b0d8",
+    "Germanic/docs/sound_changes/registry/settled_verdicts.md": "2837aefc2963e5b56c49b452bfa1152e3c44ba25f4ee7ac7b28e8d331474a49c",
+    "Germanic/fsts/germanic.txt": "0d79aeeed03638dbdda051e48bb8b6191ad2f5c395cf4287041f3b01c4216705"
+  },
+  "status": "STOP_before_production_propagation",
+  "strict_exclusive_run": false,
+  "strict_serial_run": false,
+  "wrong_orientation_record": "nonhigh-parser-proof-01 measured injectivity; retained unchanged. Correct functionality orientation in nonhigh-parser-proof-02 and nonhigh-parser-root-repair-02."
+}
