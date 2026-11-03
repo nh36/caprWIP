@@ -1,0 +1,65 @@
+{
+  "method": "Original publication text and critical page images; limits and page locators in README.md. Campbell printed226\u2013227 unavailable in held PDF;574.3 transcription-mediated. No source holdings redistributed.",
+  "holdings": {
+    "fulk_2010_high_vowel_deletion.pdf": {
+      "sha256": "86d5e3a6452d54002d3095c45ce092a93379e846cb581307eab098276db9ba42",
+      "bytes": 194672
+    },
+    "fulk_2022_metre_editorial_concern.pdf": {
+      "sha256": "d7414904b2478a8523e77d3b5983679252e27ea21d6374519acf558b490e740f",
+      "bytes": 244703
+    },
+    "fulk_comparative_grammar_early_germanic.pdf": {
+      "sha256": "d54ef92bda6db690f69f7dc4631bfdec10e4b4681c7adb73f4ccc0232b73ddcf",
+      "bytes": 7487331
+    },
+    "hogg_fulk_2011_grammar_old_english_vol1_phonology.pdf": {
+      "sha256": "f8e6d35e5ff1c6ca3a4c26f425a8fb38462d7a96a5255d4f16f4f9337b28a773",
+      "bytes": 3692503
+    },
+    "campbell_old_english_grammar.pdf": {
+      "sha256": "fcb26efd5537a04ae3b202154e79a06b1b0c719e2f0ebabd261442e7449d3611",
+      "bytes": 22836256
+    },
+    "orel_handbook_germanic_etymology.pdf": {
+      "sha256": "c18865720a05accb2b40d0c244d03f767a7679c58f16283696e04d663805c3f9",
+      "bytes": 6639903
+    },
+    "clark_hall_concise_anglo_saxon_dictionary.pdf": {
+      "sha256": "6fa0c3302752a793bfa26425f0703c30778827cb062bf3388973af584ad4b84f",
+      "bytes": 32992825
+    },
+    "bosworth_toller_anglo_saxon_dictionary.pdf": {
+      "sha256": "e433bd5fe42c46c4d28e8a036280c675ea615c7eac5952c654505fde4cd43330",
+      "bytes": 130048105
+    },
+    "ringe_taylor_linguistic_history_vol2.pdf": {
+      "sha256": "278f94f6076a31278ecca75d8d0429f0822728e5efe0ec3011186a694cf8d6f2",
+      "bytes": 3405488
+    },
+    "luick_historische_grammatik_part1.pdf": {
+      "sha256": "c67869eebd44c9585c1c1ba4dc964978e90642bffe2f0037eaa48f779c49ce91",
+      "bytes": 40945456
+    },
+    "luick_historische_grammatik_part2.pdf": {
+      "sha256": "8d562206588ec231fcc1f34767498308d0a3b232e9ca07eba4ad659772515529",
+      "bytes": 43872981
+    },
+    "brunner_1965_altenglische_grammatik.pdf": {
+      "sha256": "0f48f853d5946a7dba0ed91ed131954f9aa4fec17e31b15a324837694aa21984",
+      "bytes": 47257200
+    },
+    "kroonen_etymological_dictionary_pgmc.pdf": {
+      "sha256": "c450806b88cac9fe5dbb7ba163bcc83a54168d3a87c8a9da48801795db5090f7",
+      "bytes": 15242441
+    },
+    "strunk1904-juliana.pdf": {
+      "sha256": "1cf6be49bed478a96312a8c39f457006af0f5f96bb6cd670b315d8af2742fb54",
+      "bytes": 3147198
+    },
+    "wright-wulcker1884-vol1.pdf": {
+      "sha256": "69e55fda05e9a0ca6c4c2e16de972199d4d4e1e60ab1afe8afb5a3984cfcaa34",
+      "bytes": 36363300
+    }
+  }
+}

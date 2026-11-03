@@ -1,0 +1,34 @@
+{
+  "historical_phenomenon": "Early Old English nonhigh open-medial syncope after light and heavy roots, distinct from the existing high-vowel and later pre-l phases.",
+  "conditioning": "Preferred bounded K core: short unstressed nonhigh vowel in an open posttonic syllable before a heavy final syllable; positive-primary root protection, no lexical or case condition.",
+  "executable_implementation": "Immutable native attempt03 compares production, coverage, no-proxy, C, G, H, K and J. K retains SC063/065/066/040 and OELHWeakRaising.",
+  "selected_input_assumptions": "Independently supported proposed pairings: find2011 *fúnðanai/fundne; west2282 *wéstą/west; hammer2053 *xámaraz/hamer; soul2201 *sáiwalǭ/sāwle. Complete cell morphology and notation limits are explicit in README.md.",
+  "firing_census": "K changes exactly find, hammer, soul and west in both unchanged selected391 and original380. Complete transitions and deltas are archived; no baseline is replaced.",
+  "positive_witnesses": [
+    "Full compositional masculine nominative plural *fúnðanai -> fundne, Strunk1904 pp.15,82",
+    "Full independently reconstructed nominative *xámaraz -> hamer, Wright-Wulcker1884 I272.36",
+    "Full neuter base *wéstą -> west, Orel459 plus Fulk2018 §7.8 and Orosius attestation",
+    "Full inherited accusative *sáiwalǭ -> sāwle, verified Skeat1874 Luke12:20",
+    "Independent full *fágenas -> fæġnes and *þéudanas -> þēodnes; adjective accusatives",
+    "Marked-prefix and longer-posttonic stage controls, explicitly not attested reconstructions"
+  ],
+  "negative_controls": [
+    {"name": "K stressed-root, long/closed medial and light-final stage negatives", "required": true, "passed": true},
+    {"name": "Full summer, water, over retained-vowel controls", "required": true, "passed": true},
+    {"name": "World, earthly, rainbow and unchanged high-vowel selected histories", "required": true, "passed": true},
+    {"name": "No new whole-model global functionality claim", "required": true, "passed": true}
+  ],
+  "counterfactual_results": "C misses light-root full fæġnes and internal/prefixed locality; G/H can delete a marked primary root; K protects it. J violates light-final retention. Complete accusative find probe remains unsuccessful; directional long ending gives westne, short probe is rejected. Genuine parser failures01/02 are preserved.",
+  "literature_support": "Hogg1992 §§6.14–18; Fulk2010/2022 retained source dossier; Fulk2018 §§7.8,9.2,12.30; Luick303; Brunner245,321,366; comparative/attestation sources itemized in the consolidated report. Campbell574.3 is transcription-mediated because held original pages226–227 are missing.",
+  "historical_vs_modelling": "K is a bounded source-supported nonhigh core, not a complete vowel-loss theory. Early stress context and inherited-ending carriers are implementation abstractions. No new historical chronology edge follows merely from executable order.",
+  "unresolved": [
+    "Production authorization, formal identity/serialization adjudication and coordinated four-row migration",
+    "Explicit soul regular-volume/schema policy clarification",
+    "Arbitrary multiple-prefix stress parsing and nonfinal internal environments beyond K",
+    "Early high-vowel retention/syncope and many-control consonant palatalization",
+    "Directional ending chronology and whole hammer paradigm quality history",
+    "Native whole-model functionality is zero even for literal production; finite unambiguity is not a global proof"
+  ],
+  "verdict": "DEFER",
+  "intended_source_modifications": []
+}
