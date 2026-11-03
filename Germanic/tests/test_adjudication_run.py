@@ -268,6 +268,18 @@ class ControlledCellPropagationTests(RunHarness):
         return dict(DECISION, coordinated_adjudications=[SC, "SC902"],
                     cell_transition=self.transition, **changes)
 
+    def test_reloaded_plan_and_fresh_candidate_have_identical_protected_bytes(self):
+        reloaded = json.loads(json.dumps(self.transition, sort_keys=True))
+        planned = ar._cell_transition_files(reloaded, self.directory)
+        for path, data in planned.items():
+            if path.name.startswith("approved_"):
+                path.write_bytes(data)
+        self.baseline.adopt_cell_baseline(
+            self.transition["candidate"], self.directory, self.transition["approval"]
+        )
+        for path, data in planned.items():
+            self.assertEqual(path.read_bytes(), data, path.name)
+
     def test_exact_protected_effects_require_the_existing_adopter_and_each_owner(self):
         original = (self.directory / "cascade_baseline_outputs.tsv").read_bytes()
         run = self.start()
@@ -364,6 +376,25 @@ class ControlledCellPropagationTests(RunHarness):
 
 class ResumeAndInvalidationTests(RunHarness):
     """Acceptance test for Milestone 3 (brief section 5)."""
+
+    def test_graph_owned_regeneration_in_shared_executable_domain_is_sanctioned(self):
+        generated = self.tmp / "Germanic/fsts/old_english_sandbox.txt"
+        generated.write_text("generated v1\n")
+        domain_files = lambda domain, sc: (
+            [self.files[domain], generated]
+            if domain == "executable_model" else [self.files[domain]]
+        )
+        with mock.patch.object(ar, "_domain_files", side_effect=domain_files), \
+                mock.patch.object(ag, "nodes", return_value=(
+                    SimpleNamespace(outputs=lambda: [generated]),)):
+            run = self.start()
+            self.advance_to(run, "DECIDE")
+            run.begin_propagation({})
+            generated.write_text("generated v2\n")
+            self.assertTrue(run._sanctioned_changes(run.state()))
+            self.assertEqual(run.refresh_validity(), [])
+            self.files["corpus"].write_text("unapproved corpus change\n")
+            self.assertFalse(run._sanctioned_changes(run.state()))
 
     def test_resume_with_identical_inputs_keeps_evidence(self):
         run = self.start()

@@ -462,7 +462,7 @@ def write_outputs(baseline: dict[str, object], out_dir: Path) -> None:
         tsv_lines.append("\t".join(str(r[f]) for f in fields))
     (out_dir / "cascade_baseline_outputs.tsv").write_text("\n".join(tsv_lines) + "\n", encoding="utf-8")
     (out_dir / "cascade_baseline_summary.json").write_text(
-        json.dumps(baseline["summary"], indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+        json.dumps(baseline["summary"], indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8"
     )
 
 

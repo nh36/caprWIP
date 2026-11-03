@@ -356,18 +356,20 @@ class Run:
         current_changes = current_source.get("worktree_changes", {})
         source_delta = {p for p in before_changes.keys() | current_changes.keys()
                         if before_changes.get(p) != current_changes.get(p)}
-        allowed = set(propagation["generated_paths"])
+        generated_paths = set(propagation["generated_paths"])
         import artifact_graph
-        allowed.update(str(p.relative_to(REPO_ROOT))
-                       for node in artifact_graph.nodes() for p in node.outputs()
-                       if p.is_relative_to(REPO_ROOT))
+        generated_paths.update(str(p.relative_to(REPO_ROOT))
+                               for node in artifact_graph.nodes() for p in node.outputs()
+                               if p.is_relative_to(REPO_ROOT))
+        allowed = set(generated_paths)
         allowed.update(str(Path(p).relative_to(REPO_ROOT))
                        for p in propagation["targets"] if Path(p).is_relative_to(REPO_ROOT))
         if source_delta - allowed:
             return False
         changed = {path for path in current.keys() | propagation["before"].keys()
                    if current.get(path) != propagation["before"].get(path)}
-        return changed <= propagation["targets"].keys()
+        generated_hash_paths = {str((REPO_ROOT / p).resolve()) for p in generated_paths}
+        return changed <= propagation["targets"].keys() | generated_hash_paths
 
     def refresh_validity(self) -> list[str]:
         """Re-check every completed stage against current source identities.
