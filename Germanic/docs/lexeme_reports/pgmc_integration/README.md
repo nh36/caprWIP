@@ -135,6 +135,20 @@ the reconstruction research. Additional paradigm cells 2309–2318 were already
 in the original 380: they are not ten new post-baseline witnesses.
 
 The report manifest and class assembly are separate production contracts.
+Regularity refers to the explicitly selected, source-backed historical span.
+A regular inherited oblique may be selected even when wider citation or
+paradigm histories remain unsettled; do not imply that every form is regular
+or that the whole paradigm lacked analogy. Conversely, retain a late-analogy
+classification when it describes the wider paradigm motivating selection
+of a surviving regular cell. Grammatical selection, source quotation,
+historical stage and confidence remain separate facts.
+
+The coordinated find/hammer/soul/west selections update current cell
+relationships in `pgmc_reconstructions/analyses.tsv` and explicit article
+pointers in `editorial_cases.tsv`. Diplomatic source forms and historical
+reading receipts remain unchanged; their older selection references record
+the extraction-time context, not a second current cell authority.
+
 `oe_lexeme_report_coverage.py` validates the former and selects extended-report
 obligations from NOTE, nonregular class or pilot/full status.
 The bounded pilot adds the independent editorial criterion without changing

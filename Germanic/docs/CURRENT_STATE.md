@@ -132,6 +132,36 @@ the archived 390-entry receipt.
 
 The immutable legacy380 archive still hashes to
 `fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.
+
+The subsequent coordinated SC001/SC036/SC114 decision adopts
+`*fúnðanai > fundne`, `*xámaraz > hamer`, `*sáiwalǭ > sāwle`
+and `*wéstą > west`. SC001's actual canonical input relation passes
+native functionality/unambiguity and an independent global ATT proof.
+The original `biu` ambiguity is genuine; distinct readings require
+explicit stress rather than an arbitrary lexical priority. The pinned
+native discrepancy-buffer defect and every failed representation remain
+preserved in `sound_changes/audits/parser-formal-resolution/`.
+
+SC114 is the bounded open-posttonic nonhigh phase, distinct from
+unchanged SC063/065/066. SC036 retains OELHWeakRaising literally and
+retires only OESoulProxy; the accepted SC040, world, earthly and rainbow
+histories remain. The named `approved_nonhigh_cells_migration.json`
+interface preserves `*_pre_sc114_nonhigh_cells.*`, all earlier approvals
+and the literal original380 archive. The selected population remains391,
+with383 matches and the same eight mismatches. Original380 counterfactual
+final changes are disclosed: find fundene→fundne, hammer hameres→hamres,
+soul sāwol→sāwel, west westene→westne; none is silently rewritten
+into the original archive.
+
+Production certification must come from the renewed coordinated journal,
+fresh actual-SOURCE finalisation, strict serial/exclusive validation and
+rendered publication checks, never the research candidate's receipt.
+The full composed cascade's inherited global functionality failure is
+still unresolved. A separate bounded investigation must establish
+functionality and totality on an explicitly valid canonical domain:
+one fully specified Proto-Germanic input under a fixed history must
+produce exactly one Old English output.
+
 The authorized wether lexical selection uses masculine `*wéθruz`, preserving
 all 387 finals and the eight established mismatches. Its exact named receipt
 is `approved_wether_input_migration.json`; the separate

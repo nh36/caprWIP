@@ -4,11 +4,11 @@
   },
   "inputs": {
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
-    "Germanic/data/entry_stage_metadata.tsv": "e89576e75cacd7581e30f89e33d681d0e11adb6e099ceb89c3a8793fbcbe2376",
-    "Germanic/data/germanic-aligned-final.tsv": "646de04cec66c13ff00e1d4b8e4d87911a66f92c082496ca86ba95e42b9302b1",
+    "Germanic/data/entry_stage_metadata.tsv": "88d1511477054b457fc761690366169768d05bd7b5a17686c0c2d1d1478b33af",
+    "Germanic/data/germanic-aligned-final.tsv": "acecb163dffba5c20109ca4951074056a697854fa69cf1f52bc0f82142b39d62",
     "Germanic/docs/lexeme_reports/model_entries/2040-gift-\u0121ift.model.md": "53960957958afadcea0f3b4b788d7e25d6ccd45723cfc5f21d2ae4f64ae101de",
     "Germanic/docs/lexeme_reports/model_entries/2332-hue-h\u012bew.source_ledger.md": "b2390923a6d59dde723786212f6f8a457deb585717af1212a364092e5958bd39",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "12ab60562c57bbc44adec9073aa01cb0150a19c0ce8300145b6e89d797e0a186",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "83f51cf830d3ac93d5d0dab1dfb6f6398dfae42bff04dd23a776f27ac9efe92d",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/commentary.md": "4063546ab31ce95d11823fff85f2e267a13b5f57900b03df7750630f7bcd0ebd",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv": "7c91c7f3f6777cb3ed55940a2adb0cc8688137361eb2cf276fc25cabd8d0f226",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv": "14fcbf40663904ae608d258eda57b49c619cd9dc965a8ed9f3d484a9d1cc640c",
@@ -978,7 +978,7 @@
     "docs/references/versloot_2025_reconstructing_historical_phonology_of_oe.txt": "b2840038a3eea8205004c4f4d92b67494c5c2956b45bd2b1820a04ef875b3e52",
     "docs/references/vine_2019_greek_stomylos.txt": "2cc1ca95846b3bf5ac8ed42156f8eeb53e2306a1bca2987fac99fbbdab611004",
     "docs/references/waxenberger_2019_absolute_chronology_pre_oe_runic.txt": "94cbe811cf7b74d6f178dacc6795850d334e761112760fc857a756fff2474ab7",
-    "docs/refs.bib": "ccae644c90cfefa66a95c8a6dddf4b1187e06c7e49412275639288e8c43efcb1"
+    "docs/refs.bib": "82a159972f7c8919e114010236cb15d6bd3b24f7f9c0fe8c68607de7410d69ad"
   },
   "population": 397,
   "reading_scope_statuses": {

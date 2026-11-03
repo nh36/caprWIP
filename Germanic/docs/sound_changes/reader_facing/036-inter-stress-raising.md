@@ -152,28 +152,34 @@ epenthesis are separate developments. Their final \emph{u} is
 described as restored after earlier regular loss
 [@RingeTaylor2014, pp. 265, 330].
 Campbell's *sāwl* 'soul' and Luick's epenthetic *sāwul* 'soul' support this
-distinction; the oblique *sāwle* 'soul' also matters. The selected *sāwol* 'soul'
+distinction; the oblique *sāwle* 'soul' also matters. The expanded *sāwol* 'soul'
 does not license suppressing the unexpanded forms
 [@Campbell1959, p. 143, §341; @Luick1914, pp. 287, 294,
 §§309, 317; @SieversBrunner1965, p. 132, §159].
 
-CAPR currently reaches that surface by raising the inherited medial
-\emph{a} to \emph{u}, retaining it through apocope, then lowering it.
-This is a compressed executable proxy, not the source-led history just
-described. A single common raising event is therefore not inferred
-from the two successful derivations.
+Fulk's competing metrical account of the early syllabic history must
+be evaluated independently of later spellings
+[@Fulk2010, pp. 133--139]. CAPR selects the inherited accusative
+\emph{*sáiwalǭ}, yielding *sāwle* by
+[SC114 OENonHighSyn](#rule-OENonHighSyn), without medial raising,
+epenthesis or analogy inside that span. Luke12:20 provides an
+unambiguous accusative; the nearby *eala sawel* is vocative, not
+nominative [@Skeat1874, p. 130].
+The wider nominative history remains distinct and unresolved.
 
-The separate temporary branch below preserves this selected result pending
-the independently authorized historical review of *soul*.
+The former continuous medial-raising proxy is retired. It was never
+the source-led syncope/apocope/epenthesis history, and its temporary
+success did not demonstrate one common raising event for *world*
+and *soul*.
 
 ## SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising}
 
 ```foma
-define OEInterStressRaising [OELHWeakRaising .o. OESoulProxy];
+define OEInterStressRaising OELHWeakRaising;
 ```
 
-The composition separates the adopted weak-LH operation from the provisional
-pre-\emph{u} proxy. It does not establish two independently dated laws.
+The primary network now names only the adopted weak-LH operation.
+It does not include the distinct nonhigh syncope process.
 Confidence C expresses the qualified domain and chronology, independently of
 the Old English scope and secure attestations.
 
@@ -189,17 +195,3 @@ define OELHWeakRaising Ctx([
 The boundary and short acute nucleus restrict the initial domain; one
 intervening consonant distinguishes the light initial syllable. Only plain
 short \emph{a} is rewritten, after removal of the earlier grave.
-
-## SC036. Temporary pre-u proxy (`OESoulProxy`) {#rule-OESoulProxy}
-
-```foma
-define OESoulProxy Ctx([
-    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _
-        [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
-]);
-```
-
-The preceding encoded vowel and following \emph{u/ū}, separated by a
-nonempty consonant sequence containing no \emph{j}, preserve *sāwol* 'soul'.
-The condition is technical, not a word-identity exception or a new claim
-that this medial vowel survived continuously.

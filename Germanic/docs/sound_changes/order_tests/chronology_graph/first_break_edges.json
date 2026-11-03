@@ -234,7 +234,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC036-oe-inter-stress-raising.md",
       "card_type": "technical_computational",
       "has_reciprocal_boundary": "no",
-      "short_summary": "SC037 reads graves, SC038 strips them, SC036 weak LH raising precedes fronting and feeds back mutation. These are model-local annotation/feeding relations, not independently dated universal events. Soul retains SC004/SC019 dependencies; SC040 lowers generated u."
+      "short_summary": "SC037 reads graves; SC038 strips them before retained weak LH raising, which precedes fronting and feeds back mutation and SC040. These are qualified model-local dependencies. The SC004/SC019 soul-proxy dependencies are superseded."
     },
     {
       "change_id": "SC037",
@@ -1343,30 +1343,30 @@
     {
       "source_change_id": "SC036",
       "target_change_id": "SC004",
-      "relation_type": "technical_computational",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "technical",
+      "evidence_basis": "archived_experiment",
       "witness_role": "feeding",
       "representative_lexemes": "soul",
       "representative_forms": "Atomic *ái is outside PGmcStarVowel; SC004 supplies *ā and permits the temporary soul proxy to fire",
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Preserved branch-local dependency after the world migration; not independently dated historical chronology. See sc036-adjudication.md."
+      "notes": "Preserved branch-local dependency after the world migration; not independently dated historical chronology. See sc036-adjudication.md. Superseded by the SC114 four-cell adoption: OESoulProxy is retired. Preserve this dependency only as the archived experiment's observation."
     },
     {
       "source_change_id": "SC036",
       "target_change_id": "SC019",
-      "relation_type": "technical_computational",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "technical",
+      "evidence_basis": "archived_experiment",
       "witness_role": "feeding",
       "representative_lexemes": "soul",
       "representative_forms": "SC019 supplies final *u in selected *sáiwalō; without it the retained SC036 proxy misses the trigger",
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Controlled independently of SC004 by the three-component and broader-class experiments. Computational feeding, not historical dating: source-led soul has syncope and epenthesis. The old first-break receipt remains frozen. See sc036-adjudication.md."
+      "notes": "Controlled independently of SC004 by the three-component and broader-class experiments. Computational feeding, not historical dating: source-led soul has syncope and epenthesis. The old first-break receipt remains frozen. See sc036-adjudication.md. Superseded by the SC114 four-cell adoption: OESoulProxy is retired. Preserve this dependency only as the archived experiment's observation."
     },
     {
       "source_change_id": "SC036",
@@ -1375,12 +1375,12 @@
       "direction_basis": "later_boundary",
       "evidence_basis": "technical",
       "witness_role": "feeding",
-      "representative_lexemes": "soul; world",
-      "representative_forms": "SC036 supplies medial u; SC040 later gives selected o",
+      "representative_lexemes": "world",
+      "representative_forms": "Retained weak LH raising supplies world medial u; SC040 later gives selected o",
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Historical u-before-lowering is conditional on the adopted high-vowel path, not a universal dialectal claim. Earlier displacement measurements remain frozen in their own architecture."
+      "notes": "Historical u-before-lowering is conditional on the adopted high-vowel path, not a universal dialectal claim. Earlier displacement measurements remain frozen in their own architecture. The temporary soul branch is now retired; the world dependency remains."
     },
     {
       "source_change_id": "SC036",

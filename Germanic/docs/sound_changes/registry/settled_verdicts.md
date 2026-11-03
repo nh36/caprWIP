@@ -5,6 +5,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 
 | SC | Display name | Lifecycle | Verdict | Memo |
 | --- | --- | --- | --- | --- |
+| SC001 | Proto Input | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc001-adjudication.md` |
 | SC004 | English stressed ai contraction | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc004-adjudication.md` |
 | SC015 | Northwest Germanic consonant-conditioned I Lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc015-adjudication.md` |
 | SC016 | OE Ws Palatal Glide | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc016-017-adjudication.md` |
@@ -26,7 +27,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC033 | J-created palatalized-glide reanalysis | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc033-adjudication.md` |
 | SC034 | Retained show long-diphthong proxy | active | REFORMULATE/DEFER | `Germanic/docs/sound_changes/audits/sc034-adjudication.md` |
 | SC035 | Pretonic front-vowel raising after a palatal fricative | active | RETAIN | `Germanic/docs/sound_changes/audits/sc035-literature-adjudication.md` |
-| SC036 | OE weak medial vocalism | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc036-adjudication.md` |
+| SC036 | OE weak medial vocalism | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc036-adjudication.md` |
 | SC040 | OE Med Unstressed U Lowering | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc040-adjudication.md` |
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
@@ -46,3 +47,4 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC103 | Proto-Germanic nasal loss before *x | active | SPLIT/REORDER | `Germanic/docs/sound_changes/audits/sc025-sc104-nasalized-low-vowel-adjudication.md` |
 | SC104 | Anglo-Frisian rounding of the long nasalized low vowel | active | SPLIT | `Germanic/docs/sound_changes/audits/sc025-sc104-nasalized-low-vowel-adjudication.md` |
 | SC112 | Stressed monosyllabic lengthening before inherited r | active | RETAIN | `Germanic/docs/sound_changes/audits/sc112-monosyllabic-final-r-lengthening.md` |
+| SC114 | OE early nonhigh syncope | active | RETAIN | `Germanic/docs/sound_changes/audits/sc114-adjudication.md` |

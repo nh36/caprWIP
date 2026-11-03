@@ -1,0 +1,89 @@
+{
+  "adjudication": "SC114",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc114-adjudication.md",
+  "changes": [
+    {
+      "after": {
+        "counterpart": "fundne",
+        "fst_input": "fúnðanai",
+        "match": "1",
+        "outputs": "fundne",
+        "proto": "*fúnðanai",
+        "proto_norm": "fúnðanai"
+      },
+      "before": {
+        "counterpart": "fundene",
+        "fst_input": "fúnðanǭ",
+        "match": "1",
+        "outputs": "fundene",
+        "proto": "*fúnðanǭ",
+        "proto_norm": "fúnðanǭ"
+      },
+      "row_id": "2011"
+    },
+    {
+      "after": {
+        "counterpart": "sāwle",
+        "fst_input": "sáiwalǭ",
+        "match": "1",
+        "outputs": "sāwle",
+        "proto": "*sáiwalǭ",
+        "proto_norm": "sáiwalǭ"
+      },
+      "before": {
+        "counterpart": "sāwol",
+        "fst_input": "sáiwalō",
+        "match": "1",
+        "outputs": "sāwol",
+        "proto": "*sáiwalō",
+        "proto_norm": "sáiwalō"
+      },
+      "row_id": "2201"
+    },
+    {
+      "after": {
+        "counterpart": "west",
+        "fst_input": "wéstą",
+        "match": "1",
+        "outputs": "west",
+        "proto": "*wéstą",
+        "proto_norm": "wéstą"
+      },
+      "before": {
+        "counterpart": "westene",
+        "fst_input": "wéstanē",
+        "match": "1",
+        "outputs": "westene",
+        "proto": "*wéstanē",
+        "proto_norm": "wéstanē"
+      },
+      "row_id": "2282"
+    },
+    {
+      "after": {
+        "counterpart": "hamer",
+        "fst_input": "xámaraz",
+        "match": "1",
+        "outputs": "hamer",
+        "proto": "*xámaraz",
+        "proto_norm": "xámaraz"
+      },
+      "before": {
+        "counterpart": "hameres",
+        "fst_input": "xámaras",
+        "match": "1",
+        "outputs": "hameres",
+        "proto": "*xámaras",
+        "proto_norm": "xámaras"
+      },
+      "row_id": "2053"
+    }
+  ],
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "previous_summary": {
+    "legacy_subset_sha256": "9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597",
+    "lexical_outputs_sha256": "b91245d7cf13df96905fd3d4b9244e2fccff430851cf613c856a560a849c85e3",
+    "outputs_sha256": "efabc1f0512a862f601b651e6409b4e3265a5911b55ce9624b5661e297b8828e"
+  },
+  "transition_id": "nonhigh_cells"
+}

@@ -1,4 +1,27 @@
-# Source extraction ledger — find / fundene
+# Source extraction ledger — find / fundne
+
+## Current selected-cell verification
+
+The current selection is strong masculine nominative plural
+`*fúnðanai > fundne`, not the former `*fúnðanǭ > fundene`.
+The original extraction ledger and subsequent checks below are retained as
+historical records; their “live/current” labels describe the earlier state.
+They do not certify the new grammar or the former accusative identification.
+
+| Claim | Evidence and access | Qualification |
+| :--- | :--- | :--- |
+| Masculine nominative plural `fundne` | Strunk1904, printed15,82: *Juliana*335; original edition pages inspected in the preserved lexical reassessment | Text and glossary `ptc npm.` support the cell; no independently inspected manuscript folio or phonological dating from edition date |
+| Compositional `*fúnðanai` | Fulk2018 p209 §9.2, p284 §12.30: strong adjectival nominative plural ending and participial formation | Whole accented form is CAPR assembly, not verbatim source quotation |
+| Genuine longer `fundene` | Toller1921 Supplement219, *Beón þá herigeata swa fundene* | Plural, not the previously claimed masculine accusative singular; previous BosworthToller1898 attribution corrected |
+| Competing participial histories | Fulk2018 pp284–288 distinguishes inherited -an- and rarer -in-; earlier Campbell/Luick/Brunner levelling discussion retained below | Do not infer that every -en is analogical; wider paradigm unresolved |
+| Actual complete candidate | Certified candidate06, `parser-formal-resolution`, frozen Model K equivalence | `*fúnðanai > fundne`; other probes give fundan, fynden, fundenne, not invented successful funden/fundene derivations |
+
+The independent original-380 replay now gives `fundne` from the former
+truncated input; that counterfactual is separately disclosed. Current SOURCE
+adoption and final production certification belong to SC001/SC036/SC114,
+not the old trace cited below.
+
+## Preserved pre-migration extraction and review history
 
 This ledger records the source forms and working distinctions gathered before the
 book-style entry was drafted.

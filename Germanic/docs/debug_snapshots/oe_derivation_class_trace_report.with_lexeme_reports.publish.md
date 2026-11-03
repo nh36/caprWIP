@@ -4992,25 +4992,109 @@ English Proto Input: *súrgō
 
 Outcome: sorg
 # soul
-PROTO: *sáiwalō
-EXPECTED: sāwol
-OUTPUTS: sāwol
+PROTO: *sáiwalǭ
+EXPECTED: sāwle
+OUTPUTS: sāwle
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *sáiwalō
+English Proto Input: *sáiwalǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *sáiwalu<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalu | **Old English**<br>OE Inter Stress Raising: *sāwulu<br>OE High Vowel Apocope: *sāwul<br>OE Med Unstressed U Lowering: *sāwol |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalǭ | **Old English**<br>EAF Brightening Unstressed: *sāwælǭ<br>OE A Restoration: *sāwalǭ<br>OE Non High Syn: *sāwlǭ<br>OE Unstressed Long Vowel Shortening: *sāwlæ<br>OE Unstressed AE Merger: *sāwle |
 
 
 
 ### Orthography & surface
 
-Outcome: sāwol
+Outcome: sāwle
+
+
+
+### Lexeme report
+
+#### Reconstruction and comparative evidence
+
+The feminine soul formation is represented by Orel's \emph{*saiwalō}
+and Kroonen's \emph{*saiwalō-}. Orel's sea/sacred-lake account and the
+alternative associations he reports concern the deeper etymology;
+Kroonen's qualifications about its comparative distribution remain
+independent of the selected Old English case
+[@Orel2003, p. 314; @Kroonen2013, p. 423].
+The comparative citation [sáiwalō]{.iv .recon lang=pgmc sort=saiwalo role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:28:1"}
+'soul' is retained, but is not silently equated with the selected
+accusative [sáiwalǭ]{.iv .recon lang=pgmc sort=saiwaloacc role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:30" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:30:1"}.
+The latter is an inherited inflectional reconstruction in CAPR notation,
+not a quotation of a dictionary's whole accented accusative.
+
+#### Old English evidence
+
+Luke12:20 supplies the selected accusative:
+*hig feccað þine sawle fram þe*, 'they will demand your soul from you'.
+Skeat prints it in the first West Saxon column, the Corpus Christi
+College Cambridge140 text, with other manuscripts collated
+[@Skeat1874, pp. v--vi, 130].
+The quantity-normalized target
+[_sāwle_]{.iv lang=oe sort=sawle role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:42:1"} 'soul' thus has a
+specific syntactic identification, not merely an ending compatible with
+several cases.
+
+The same page preserves dative *minre sawle* at verse19 and vocative
+*eala sawel*. That vocative must not be relabelled nominative.
+The actual nominative is *seo sawul ys ma* at verse23.
+These are real competing paradigm forms; a disyllabic spelling alone is
+not proof of spoken syllabicity or its date. Fulk's independent metrical
+argument deserves separate weight from such spellings
+[@Fulk2010, pp. 133--139].
+
+#### Development to Old English
+
+Monophthongization of atomic stressed \emph{ai} gives long \emph{ā}.
+Unstressed brightening and restoration lead to
+[sāwalǭ]{.iv .recon lang=preoe sort=sawalo role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:58" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:58:1"}.
+The short open posttonic vowel precedes a heavy final syllable, so
+[SC114 OENonHighSyn](#rule-OENonHighSyn) yields
+[sāwlǭ]{.iv .recon lang=preoe sort=sawlo role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:61:1"}.
+Later decoding/shortening of the inherited ending gives \emph{æ},
+then the unstressed merger gives
+[_sāwle_]{.iv lang=oe sort=sawle role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:64" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:64:1"}.
+No medial raising proxy, epenthesis or analogy occurs within this
+selected regular span.
+
+The written \emph{ǭ} carries inherited ending identity and quantity
+until its existing late decoding. It does not assert that a nasal rounded
+vowel physically persisted unchanged to that late date. Grammatical
+identity licenses the input; the syncope rule itself refers only to
+phonological and independently represented prosodic structure
+[@HoggGrammar1992, pp. 220--222, §§6.14--6.18].
+
+#### Nominatives and wider paradigm histories
+
+Ringe and Taylor's nominative line passes through medial nonhigh syncope,
+apocope and subsequent epenthesis. Their final high vowel is restored
+after an earlier loss; that premise cannot be omitted from the argument
+[@RingeTaylor2014, pp. 265, 330].
+Campbell's [_sāwl_]{.iv lang=oe sort=sawl role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:81" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:81:1"} 'soul',
+Luick's expanded [_sāwul_]{.iv lang=oe sort=sawul role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:82:1"}
+'soul', and [_sāwol_]{.iv lang=oe sort=sawol role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:83:1"}
+'soul' are not interchangeable phonological stages inferred solely from
+their spellings [@Campbell1959, p. 143, §341;
+@Luick1914, pp. 287, 294, §§309, 317;
+@SieversBrunner1965, p. 132, §159].
+Fulk's alternative reconstruction of the early syllabic history remains
+relevant; selecting the inherited accusative does not adjudicate every
+nominative or the complete remodelling of the paradigm.
+
+The former selected citation [sáiwalō]{.iv .recon lang=pgmc sort=saiwalo role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:92" occ_id="Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:92:1"}
+no longer reaches *sāwol* by continuous medial raising: that temporary
+operation is retired. Its counterfactual current output is *sāwel*.
+This result is disclosed, not promoted as a newly explained nominative.
+The *regular* classification applies to the explicitly selected
+Proto-Germanic-to-Old-English accusative span, not to an unchanged
+whole paradigm.
 # sow
 PROTO: *sḗaną
 EXPECTED: sāwan
@@ -6397,25 +6481,85 @@ English Proto Input: *wébaną
 
 Outcome: wefan
 # west
-PROTO: *wéstanē
-EXPECTED: westene
-OUTPUTS: westene
+PROTO: *wéstą
+EXPECTED: west
+OUTPUTS: west
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *wéstanē
+English Proto Input: *wéstą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Fronting Early: *wéstænē<br>OE Unstressed Long Vowel Shortening: *wéstæne<br>OE Unstressed AE Merger: *wéstene |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *wést |
 
 
 
 ### Orthography & surface
 
-Outcome: westene
+Outcome: west
+
+
+
+### Lexeme report
+
+#### Reconstruction and comparative evidence
+
+Orel distinguishes a source-labelled neuter \emph{*westan} from the
+directional \emph{*westanē̆} formation. They are related words, not
+alternative spellings of the same selected ending
+[@Orel2003, p. 459]. Fulk's account of neuter
+\emph{-aⁿ < -an < -om} supports the normalization
+[wéstą]{.iv .recon lang=pgmc sort=westa role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:27:1"}
+'west' used here [@Fulk2018, p. 146, §7.8].
+Stress and nasal-vowel notation are CAPR's explicit representation,
+not additional characters printed in Orel's citation.
+
+Kroonen's \emph{*westera-} belongs to the directional family, with a
+different formation. Its deeper associations and the comparisons
+reported by Orel remain qualified comparative evidence
+[@Kroonen2013, pp. 582--583; @Orel2003, p. 459].
+They do not require treating the neuter base as the former selected
+from-the-west derivative.
+
+#### Old English evidence
+
+[_west_]{.iv lang=oe sort=west role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:41:1"} 'west, westwards'
+is an ordinary attested Old English adverb. Toller cites the
+Stilicho passage in *Orosius*6.37, Sweet296.7, including *þisne her west*,
+under *west* [@Toller1921, s.v. west].
+The selected inherited formation is neuter; the Old English use is
+adverbial. These are compatible descriptions at different historical
+and grammatical levels, not a claim that the attested adverb visibly
+inflects as a neuter noun.
+
+The genuine [_westan_]{.iv lang=oe sort=westan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:50:1"}
+'from the west' and [_westane_]{.iv lang=oe sort=westane role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:51:1"}
+'from the west' remain important directional comparanda.
+Orel's citation and quantity alternatives must be preserved rather than
+replaced by the unsupported selected spelling *westene*
+[@Orel2003, p. 459]. Withdrawing that former target is an evidential
+correction, not a claim that the wider directional paradigm is solved.
+
+#### Development to Old English
+
+The selected [wéstą]{.iv .recon lang=pgmc sort=westa role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:60:1"}
+has a heavy root syllable. The existing final nasal-vowel apocope
+removes the ending, giving
+[_west_]{.iv lang=oe sort=west role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:63:1"}.
+There is no medial vowel for
+[SC114 OENonHighSyn](#rule-OENonHighSyn) to delete.
+West is consequently a negative syncope control, not a positive
+application manufactured by retaining the longer former input.
+
+The former [wéstanē]{.iv .recon lang=pgmc sort=westane role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2282-west-west.model.md:69:1"}
+now gives counterfactual *westne*, not its old target *westene*.
+Neither output establishes the history of the attested directional
+variants. The exact inherited ending quantity and its relative
+chronology remain open; the regular neuter-base span does not depend
+on resolving those wider questions.
 # wether
 PROTO: *wéθruz
 EXPECTED: weþer
@@ -7800,7 +7944,7 @@ English Proto Input: *júgunθ
 Old English Orthography: ġ*úguþ
 OE Ws Palatal Glide: ġ*éoguþ
 Outcome: ġeoguþ
-=== DERIVATION_CLASS: late_analogy (29) ===
+=== DERIVATION_CLASS: late_analogy (28) ===
 
 
 
@@ -8005,25 +8149,101 @@ English Proto Input: *kūi
 
 Outcome: cȳ
 # find
-PROTO: *fúnðanǭ
-EXPECTED: fundene
-OUTPUTS: fundene
+PROTO: *fúnðanai
+EXPECTED: fundne
+OUTPUTS: fundne
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *fúnðanǭ
+English Proto Input: *fúnðanai
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *fúndanǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Fronting Early: *fúndænǭ<br>OE Unstressed Long Vowel Shortening: *fúndænæ<br>OE Unstressed AE Merger: *fúndene |
+| **Northwest and West Germanic**<br>PNWGmc Unstressed Ai Monophthongization: *fúnðanē<br>PWGmc Dental Hardening: *fúndanē<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Non High Syn: *fúndnē<br>OE Unstressed Long Vowel Shortening: *fúndne |
 
 
 
 ### Orthography & surface
 
-Outcome: fundene
+Outcome: fundne
+
+
+
+### Lexeme report
+
+#### Reconstruction and comparative evidence
+
+The inherited strong verb [fínθaną]{.iv .recon lang=pgmc sort=finthana role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:22:1"}
+'find' underlies Old English [_findan_]{.iv lang=oe sort=findan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:23:1"}
+'find'. Its infinitive identifies the lexeme, not the participial cell
+followed here. The dental alternation and the participle's root grade must
+be distinguished from its inflectional ending
+[@RingeTaylor2014, pp. 140, 344; @Fulk2018, pp. 108, 253, 284--288].
+
+The selected [fúnðanai]{.iv .recon lang=pgmc sort=fundhanai role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:29:1"}
+is a compositional reconstruction: the participial stem in inherited
+\emph{-an-} takes the strong masculine nominative plural adjectival
+ending \emph{-ai}. Fulk supplies the relevant inflection and distinguishes
+the ordinary participial \emph{-an-} formation from rarer inherited
+\emph{-in-}; he does not print this whole accented word
+[@Fulk2018, p. 209, §9.2, p. 284, §12.30].
+The choice is therefore not a claim that every Old English participial
+\emph{-en-} must result from analogy.
+
+#### Old English evidence
+
+The selected [_fundne_]{.iv lang=oe sort=fundne role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:41:1"} 'found'
+is directly attested in *Juliana* 335. Strunk prints the plural construction
+*gif we gemete sin on moldwege / oþþe feor oþþe neah fundne weorþen*;
+his glossary explicitly labels the form *ptc npm.* The masculine
+nominative plural identification is thus supported by syntax and the
+editor's analysis, not inferred from a successful derivation
+[@Strunk1904, pp. 15, 82]. The poem, manuscript and modern edition
+have different dates; the edition's date does not date the phonology.
+
+The longer [_fundene_]{.iv lang=oe sort=fundene role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:50:1"}
+'found' remains genuine evidence. Toller cites *Beón þá herigeata swa
+fundene*, a plural construction, not the masculine accusative singular
+previously assigned to it [@Toller1921, p. 219].
+The familiar dictionary participle
+[_funden_]{.iv lang=oe sort=funden role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:55" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:55:1"} 'found' and the
+formation *tō-fundennes* 'finding' remain relevant background
+[@ClarkHall1960, p. 124]. None is suppressed by selecting the independently
+attested syncopated plural.
+
+#### Development to Old English
+
+Unstressed final \emph{ai} first becomes long \emph{ē}. Dental hardening
+gives [fúndanē]{.iv .recon lang=preoe sort=fundane role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:63:1"}.
+Its medial \emph{a} is in an open posttonic syllable before the still-heavy
+final syllable. [SC114 OENonHighSyn](#rule-OENonHighSyn) therefore gives
+[fúndnē]{.iv .recon lang=preoe sort=fundne role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:66" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:66:1"};
+later unstressed shortening supplies final \emph{e}, yielding
+[_fundne_]{.iv lang=oe sort=fundne role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:68:1"}.
+No analogy intervenes within this selected span.
+
+The retained late-analogy classification concerns the wider participial
+paradigm, not an analogical operation needed to manufacture this output.
+The relationship of the competing inherited suffixes, the longer plural
+and subsequent levelling remains a separate problem. A regular cell does
+not by itself settle that paradigm.
+
+#### Paradigm comparison
+
+| PGmc cell / interpretation | Candidate input | Actual model output | OE comparison | Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| selected strong masculine nominative plural | [fúnðanai]{.iv .recon lang=pgmc sort=fundhanai role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81:1"} | [_fundne_]{.iv lang=oe sort=fundne role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81:2"} | [_fundne_]{.iv lang=oe sort=fundne role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81:3"}, *Juliana* 335 | complete regular selected span |
+| participial nominative singular in \emph{-an-} | [fúnðanaz]{.iv .recon lang=pgmc sort=fundhanaz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:82:1"} | *fundan* | [_funden_]{.iv lang=oe sort=funden role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:82:2"} | not a complete successful derivation of the attested comparison |
+| inherited \emph{-in-} alternative | [fúnðinaz]{.iv .recon lang=pgmc sort=fundhinaz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:83:1"} | *fynden* | [_funden_]{.iv lang=oe sort=funden role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:83" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:83:2"} | umlaut prevents treating this probe as a solution |
+| full uncontracted masculine accusative | [fúnðananǭ]{.iv .recon lang=pgmc sort=fundhanano role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:84:1"} | *fundenne* | [_fundene_]{.iv lang=oe sort=fundene role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:84" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:84:2"} | different ending and output; wider history unresolved |
+
+The former shortened input [fúnðanǭ]{.iv .recon lang=pgmc sort=fundhano role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:86" occ_id="Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:86:1"}
+did not establish an inherited masculine accusative matching the quoted
+plural. It is not retained as evidence that the longer attested form has
+been explained. Conversely, these unsuccessful comparisons do not invalidate
+the independently supported nominative plural.
 # fright
 PROTO: *fúrxtīnaz
 EXPECTED: fyrhte
@@ -8045,27 +8265,6 @@ English Proto Input: *fúrxtīnaz
 
 Old English Orthography: *fyrhte
 Outcome: fyrhte
-# hammer
-PROTO: *xámaras
-EXPECTED: hameres
-OUTPUTS: hameres
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *xámaras
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *xámæræs<br>OE Unstressed AE Merger: *xámeres |
-
-
-
-### Orthography & surface
-
-Old English Orthography: h*ámeres
-Outcome: hameres
 # have
 PROTO: *xábēθi
 EXPECTED: hæfeþ
@@ -8746,7 +8945,7 @@ This is a `late_analogy` case. The citation-form path does not yield the selecte
 |:---|:---|:---|:---|:---|
 | nom.sg. | *θéstilaz | þistl | no | Citation proto used for comparison. |
 | gen.sg. | *θístilas | þistles | yes | Chosen genitive singular cell in TSV. |
-=== DERIVATION_CLASS: attested_variant (5) ===
+=== DERIVATION_CLASS: attested_variant (6) ===
 
 
 
@@ -9077,6 +9276,100 @@ negative searches are not proof that it never existed.
 does not make either an occurrence of the selected adjective.
 The chosen weak-neuter span needs neither Oxford r-syncope, a dative
 ending repair, final-overheavy protection, nor an additional analogy.
+# hammer
+PROTO: *xámaraz
+EXPECTED: hamer
+OUTPUTS: hamer
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *xámaraz
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *xámara<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *xámar<br>EAF Brightening Unstressed: *xámær<br>OE Unstressed AE Merger: *xámer |
+
+
+
+### Orthography & surface
+
+Old English Orthography: h*ámer
+Outcome: hamer
+
+
+
+### Lexeme report
+
+#### Reconstruction and comparative evidence
+
+The masculine a-stem [xámaraz]{.iv .recon lang=pgmc sort=xamaraz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:22:1"}
+'hammer' belongs to the source tradition represented by Kroonen's
+stem \emph{*hamara-} and Orel's citation \emph{*xamaraz}.
+The different initial notation does not itself constitute an alternative
+paradigm. Their deeper metathesis and stone/anvil associations remain
+comparative arguments, not consequences of the Old English derivation
+[@Kroonen2013, pp. 206--207; @Orel2003, p. 158].
+Orel's printed page is 158; 197 is the scan sheet, not the printed folio.
+
+Old English [_hamer_]{.iv lang=oe sort=hamer role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:31" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:31:1"} 'hammer'
+and [_hamor_]{.iv lang=oe sort=hamor role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:32:1"} 'hammer'
+are both real citation variants [@ClarkHall1960, p. 160].
+Selecting the former preserves a complete regular inherited span without
+claiming that the latter or its obliques have thereby been explained.
+
+#### Old English evidence
+
+The Cleopatra glossary prints *Malleus, hamer.*
+The edition's heading identifies Cotton Cleopatra A.III, folio 76r,
+with a late-tenth-/early-eleventh-century hand. This is not an attribution
+to Ælfric [@WrightWuelcker1884, vol. 1, pp. 258, 272, line 36].
+The isolated Old English spelling is nominative/accusative-syncretic;
+the Latin citation supports the nominative selection rather than proving
+that Old English orthography distinguished the two cases.
+
+The genitive [_hameres_]{.iv lang=oe sort=hameres role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:47:1"}
+'of a hammer' is also genuinely attested: *Beátendes hameres stipnes*,
+An.Ox.481 [@Toller1921, p. 505]. The earlier attribution to page78 of
+Bosworth--Toller is withdrawn. Sievers--Brunner's
+[_hamor_]{.iv lang=oe sort=hamor role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:51" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:51:1"} --
+[_hamores_]{.iv lang=oe sort=hamores role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:52" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:52:1"} paradigm
+retains a second oblique tradition [@SieversBrunner1965, §245].
+The coexistence of these forms requires explanation beyond this selected
+citation; it is not a reason to discard any of them.
+
+#### Development to Old English
+
+Final \emph{z} disappears, and early loss of bare final \emph{a}
+reduces [xámaraz]{.iv .recon lang=pgmc sort=xamaraz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:60:1"}
+to [xámar]{.iv .recon lang=preoe sort=xamar role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:61:1"}.
+Unstressed brightening gives medial \emph{æ}, and its later merger
+with \emph{e} yields [_hamer_]{.iv lang=oe sort=hamer role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:63:1"}.
+The medial vowel is now in the last syllable: it is not an open medial
+target before a following heavy final syllable.
+[SC114 OENonHighSyn](#rule-OENonHighSyn) consequently does not apply.
+
+This negative control matters. The older genitive
+[xámaras]{.iv .recon lang=pgmc sort=xamaras role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:69" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:69:1"}
+still has a heavy final syllable when early nonhigh syncope applies.
+Its actual output is *hamres*, not attested
+[_hameres_]{.iv lang=oe sort=hameres role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:72" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:72:1"}.
+The previous claim that brightening alone supplied a complete regular
+genitive history is therefore not retained.
+
+#### Paradigm comparison
+
+| Cell | Inherited input | Actual model output | Attested comparison | Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| selected nominative singular | [xámaraz]{.iv .recon lang=pgmc sort=xamaraz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:80" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:80:1"} | [_hamer_]{.iv lang=oe sort=hamer role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:80" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:80:2"} | [_hamer_]{.iv lang=oe sort=hamer role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:80" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:80:3"} | complete regular span; no nonhigh-syncope application |
+| former genitive singular | [xámaras]{.iv .recon lang=pgmc sort=xamaras role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:81" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:81:1"} | *hamres* | [_hameres_]{.iv lang=oe sort=hameres role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:81" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:81:2"} | real attestation, but not a successful current derivation |
+| other citation and oblique tradition | same lexical family | not established here | [_hamor_]{.iv lang=oe sort=hamor role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:82:1"}, [_hamores_]{.iv lang=oe sort=hamores role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:82" occ_id="Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:82:2"} | retained evidence; wider distribution unresolved |
+
+The attested-variant classification identifies precisely this situation:
+one source-backed regular output is selected from a genuine attested
+distribution. It is not an appeal to lexical diffusion or an assertion
+that the sound law varies by word.
 # ten
 PROTO: *téxun
 EXPECTED: tēon

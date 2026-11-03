@@ -41,8 +41,8 @@ chronology constraints.
 | `one_sided_chronology` | 41 |
 | `reciprocal_chronology` | 26 |
 | `runner_limited_boundary` | 18 |
-| `superseded_experiment` | 4 |
-| `technical_computational` | 19 |
+| `superseded_experiment` | 6 |
+| `technical_computational` | 17 |
 
 ## Chronology edges
 
@@ -155,8 +155,8 @@ chronology constraints.
 1. `SC027 -> SC087` (no_break_search_boundary)
 1. `SC029 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC032 -> SC040` (technical_computational)
-1. `SC036 -> SC004` (technical_computational)
-1. `SC036 -> SC019` (technical_computational)
+1. `SC036 -> SC004` (superseded_experiment)
+1. `SC036 -> SC019` (superseded_experiment)
 1. `SC036 -> SC040` (technical_computational)
 1. `SC036 -> SC038` (technical_computational)
 1. `SC036 -> SC107` (technical_computational)

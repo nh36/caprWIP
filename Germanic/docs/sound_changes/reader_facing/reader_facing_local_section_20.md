@@ -3866,28 +3866,34 @@ epenthesis are separate developments. Their final \emph{u} is
 described as restored after earlier regular loss
 [@RingeTaylor2014, pp. 265, 330].
 Campbell's *sāwl* 'soul' and Luick's epenthetic *sāwul* 'soul' support this
-distinction; the oblique *sāwle* 'soul' also matters. The selected *sāwol* 'soul'
+distinction; the oblique *sāwle* 'soul' also matters. The expanded *sāwol* 'soul'
 does not license suppressing the unexpanded forms
 [@Campbell1959, p. 143, §341; @Luick1914, pp. 287, 294,
 §§309, 317; @SieversBrunner1965, p. 132, §159].
 
-CAPR currently reaches that surface by raising the inherited medial
-\emph{a} to \emph{u}, retaining it through apocope, then lowering it.
-This is a compressed executable proxy, not the source-led history just
-described. A single common raising event is therefore not inferred
-from the two successful derivations.
+Fulk's competing metrical account of the early syllabic history must
+be evaluated independently of later spellings
+[@Fulk2010, pp. 133--139]. CAPR selects the inherited accusative
+\emph{*sáiwalǭ}, yielding *sāwle* by
+[SC114 OENonHighSyn](#rule-OENonHighSyn), without medial raising,
+epenthesis or analogy inside that span. Luke12:20 provides an
+unambiguous accusative; the nearby *eala sawel* is vocative, not
+nominative [@Skeat1874, p. 130].
+The wider nominative history remains distinct and unresolved.
 
-The separate temporary branch below preserves this selected result pending
-the independently authorized historical review of *soul*.
+The former continuous medial-raising proxy is retired. It was never
+the source-led syncope/apocope/epenthesis history, and its temporary
+success did not demonstrate one common raising event for *world*
+and *soul*.
 
 ### SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising}
 
 ```foma
-define OEInterStressRaising [OELHWeakRaising .o. OESoulProxy];
+define OEInterStressRaising OELHWeakRaising;
 ```
 
-The composition separates the adopted weak-LH operation from the provisional
-pre-\emph{u} proxy. It does not establish two independently dated laws.
+The primary network now names only the adopted weak-LH operation.
+It does not include the distinct nonhigh syncope process.
 Confidence C expresses the qualified domain and chronology, independently of
 the Old English scope and secure attestations.
 
@@ -3903,20 +3909,6 @@ define OELHWeakRaising Ctx([
 The boundary and short acute nucleus restrict the initial domain; one
 intervening consonant distinguishes the light initial syllable. Only plain
 short \emph{a} is rewritten, after removal of the earlier grave.
-
-### SC036. Temporary pre-u proxy (`OESoulProxy`) {#rule-OESoulProxy}
-
-```foma
-define OESoulProxy Ctx([
-    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _
-        [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
-]);
-```
-
-The preceding encoded vowel and following \emph{u/ū}, separated by a
-nonempty consonant sequence containing no \emph{j}, preserve *sāwol* 'soul'.
-The condition is technical, not a word-identity exception or a new claim
-that this medial vowel survived continuously.
 
 ## Combinative u-umlaut in wi-forms
 
@@ -5097,6 +5089,94 @@ the older n-stem loss makes the derivation record no output instead of expected
 OE *dōn* ‘do’. The older loss must therefore precede weak-tail nasal loss.
 Nothing in the current lexicon distinguishes among its possible later
 positions, and one witness cannot establish a wider historical development.
+
+## Early nonhigh-vowel syncope
+
+### Historical discussion
+
+Old English nonhigh-vowel syncope must be distinguished from the later
+high-vowel losses. Hogg describes loss of a short nonhigh vowel in an
+open medial syllable, after both light and heavy roots, with restoration
+and paradigm interactions considered separately. His account places
+the process after umlaut and before unstressed \emph{i} lowers
+[@HoggGrammar1992, pp. 220--222, §§6.14--6.18].
+Luick's longer-word cases warn against reducing the domain to exactly
+three syllables [@Luick1914, pp. 279--280, §303].
+These are phonological and prosodic conditions, not permissions for
+particular words or grammatical classes.
+
+The implemented core deletes plain short \emph{a, æ, e} from an
+open posttonic syllable before a final heavy syllable. Primary-root
+weight is not an additional condition. The heavy-final restriction
+delimits this supported core; it is not asserted as a universal theorem
+about every Old English nonhigh loss. A positively identified primary
+root protects its own vowel, and the existing stress-domain machinery
+admits the supported single pretonic syllable. Wider multiprefix and
+light-final histories are not inferred from this restricted account.
+
+#### Selected applications and contrasting forms
+
+The strong masculine nominative plural participle
+\emph{*fúnðanai} gives *fundne* 'found', attested in *Juliana*335.
+The inherited ending becomes long \emph{ē}; medial \emph{a}
+then disappears before its still-heavy final syllable, and later
+shortening gives final \emph{e}. The cell is supported independently
+by the edition's syntax and glossary, while the reconstructed whole
+word combines participial formation and adjectival inflection
+[@Strunk1904, pp. 15, 82; @Fulk2018, p. 209, §9.2, p. 284, §12.30].
+The genuine longer *fundene* 'found' and competing inherited
+participial suffixes remain evidence for the wider paradigm, not
+exceptions manufactured by changing the sound law.
+
+The inherited accusative \emph{*sáiwalǭ} gives *sāwle* 'soul'.
+After stressed-diphthong monophthongization, medial \emph{a}
+is lost before the quantity-bearing inherited ending; its later
+decoding and shortening supply final \emph{e}. The ending notation
+does not imply unchanged late phonetic nasal rounding.
+Luke12:20 establishes the accusative, distinct from the neighbouring
+dative and vocative [@Skeat1874, p. 130].
+No raising proxy or epenthesis is required in this selected span.
+Fulk's competing metrical account and the syncope/apocope/epenthesis
+history proposed for nominatives remain independent questions
+[@Fulk2010, pp. 133--139; @RingeTaylor2014, pp. 265, 330].
+
+Citation *hamer* 'hammer' is a nonapplication: earlier final-vowel
+loss leaves the nonhigh vowel in the last syllable. By contrast, the
+longer genitive input predicts *hamres*, not attested *hameres*
+'of a hammer'; that wider history remains unresolved
+[@WrightWuelcker1884, vol. 1, p. 272, line 36; @Toller1921, p. 505].
+The inherited neuter base \emph{*wéstą} gives *west* 'westwards'
+through existing nasal-vowel apocope, with no medial syncope target
+[@Orel2003, p. 459; @Fulk2018, p. 146, §7.8].
+
+#### Relative chronology and limits
+
+The executable position immediately before
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope) preserves
+visibility of the inherited final quantity. That serialization is a
+model-local representation choice, not a new independently demonstrated
+historical ordering inferred from output success.
+The source-supported chronology and the notation's lifetime must be
+kept separate. The rules
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope) and
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) retain their
+distinct high-vowel decisions; this phase does not broaden them.
+Likewise, *weorold* 'world', *eorþcunde* 'earthly' and
+*reġnboga* 'rainbow' retain their established histories.
+
+### SC114. Early nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn}
+
+```foma
+define OENonHighSyn FootCtx([
+    [{*a}|{*æ}|{*e}] -> 0 ||
+        .#. OEAnyConsonant* EnglishStarVocalic
+        [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
+        _ [OEAnyConsonant
+           [EnglishStarLongVowel|EnglishStarLongDiphthong|{*ô}]
+           OEAnyConsonant* |
+           OEAnyConsonant EnglishStarVocalic OEAnyConsonant+] .#.
+]);
+```
 
 ## High-vowel apocope
 

@@ -45,16 +45,16 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(len(self.rows), 397)
         self.assertEqual(len(self.editorial), 397)
         for key, value in {"legacy": 380, "selected": 391, "audit": 397,
-                           "assembled": 170, "production_pilots": 11,
-                           "format_tests": 1, "reviewed_rows": 16, "scoped_cases": 19}.items():
+                           "assembled": 172, "production_pilots": 11,
+                           "format_tests": 1, "reviewed_rows": 20, "scoped_cases": 23}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
         required = {row["row_id"] for row in self.crosswalk if row["old_policy_requires_report"]}
         legacy_required = {identifier for identifier in required
                            if self.rows[identifier]["legacy380"]}
         self.assertIn("2224", legacy_required)
-        self.assertEqual(len(required - {"2224"}), 161)
-        self.assertEqual(len(legacy_required - {"2224"}), 150)
+        self.assertEqual(len(required - {"2224"}), 163)
+        self.assertEqual(len(legacy_required - {"2224"}), 152)
         self.assertEqual(self.stats["required"], len(required))
         self.assertEqual(self.stats["legacy_current_required"], len(legacy_required))
 
@@ -82,11 +82,15 @@ class IntegrationTests(unittest.TestCase):
     def test_selected_forms_cells_and_context(self):
         expected = {
             "1933": ("*nḗdrōn", "*nḗdrōn", "nǣdre", "regular", "nǣdre"),
+            "2011": ("*fínθaną", "*fúnðanai", "fundne", "late_analogy", "fundne"),
             "2013": ("*fūri", "*fūri", "fȳre", "known_unmodelled", "fȳr"),
+            "2053": ("*xámaraz", "*xámaraz", "hamer", "attested_variant", "hamer"),
             "2085": ("*knéwą", "*knéwai", "cneowe", "late_analogy", "cneowe"),
             "2148": ("*régna-bùgô", "*régna-bùgô", "reġnboga", "regular", "reġnboga"),
             "2162": ("*rústaz", "*rústaz", "rust", "unexplained_unmodelled", "rost"),
+            "2201": ("*sáiwalō", "*sáiwalǭ", "sāwle", "regular", "sāwle"),
             "2224": ("*stráwą", "*stráwą", "strēaw", "late_analogy", "strēa"),
+            "2282": ("*wéstą", "*wéstą", "west", "regular", "west"),
             "2283": ("*wéθruz", "*wéθruz", "weþer", "regular", "weþer"),
             "2326": ("*ízwiz", "*ízwiz", "ēow", "regular", "ēow"),
             "2330": ("*θánxtē", "*θánxtē", "þōhte", "regular", "þōhte"),
@@ -122,8 +126,8 @@ class IntegrationTests(unittest.TestCase):
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
             "ordinary_evidence_review": 297, "unit_comparability_review": 8})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
-        # 381 after the filth (2335) editorial case entered review.
-        self.assertEqual(len(unreviewed), 381)
+        # Four independently selected cell reassessments join the earlier reviews.
+        self.assertEqual(len(unreviewed), 377)
         self.assertTrue(all(not r["reviewed_categories"] for r in unreviewed))
         self.assertEqual(self.editorial["2085"]["reviewed_categories"],
                          "non_substantive_difference;qualified_alternative")

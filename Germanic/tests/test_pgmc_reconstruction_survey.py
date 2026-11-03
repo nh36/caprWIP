@@ -2364,7 +2364,7 @@ class ReadingScopeTests(unittest.TestCase):
         self.assertEqual(positions["alignment-hair-kroonen-lengthened"]["attribution_status"], "conditional")
         self.assertEqual(positions["alignment-hair-kroonen-lengthened"]["analytical_form"], "*kēs-ró-")
 
-    def test_hall_sal_etymon_and_hammer_selected_genitive_remain_separate(self):
+    def test_hall_sal_etymon_and_hammer_selected_nominative_remain_separate(self):
         corpus, _, forms, _ = survey.load()
         tables = survey.load_analysis(survey.ROOT, corpus, forms)
         positions = {p["evidence_id"]: p for p in tables["analyses"]}
@@ -2376,12 +2376,12 @@ class ReadingScopeTests(unittest.TestCase):
             self.assertEqual(positions[f"rt-complete-2052-{n:03d}"]["stage_interpretation"], stage)
         self.assertEqual(positions["kroonen-core-2052-2"]["relation_to_row"], "same_family")
         for eid in ("kroonen-core-2053-1", "orel-core-2053-1"):
-            self.assertIn("not selected genitive", survey.analytical.feature_values(positions[eid])["cell"])
+            self.assertIn("nominative", survey.analytical.feature_values(positions[eid])["cell"])
         evidence = {f["evidence_id"]: f for f in forms}
         self.assertEqual(evidence["alignment-hammer-orel-preform"]["form_kind"], "word")
         hammer = next(r for r in corpus if r["row_id"] == "2053")
         self.assertEqual((hammer["proto"], hammer["protoform"], hammer["target"]),
-                         ("*xámaraz", "*xámaras", "hameres"))
+                         ("*xámaraz", "*xámaraz", "hamer"))
 
     def test_fifteenth_literal_and_exact_source_annotation_receipts(self):
         import hashlib

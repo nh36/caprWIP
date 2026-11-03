@@ -188,8 +188,13 @@ This section is keyed to `DERIVATION_CLASS`.
 #### `regular`
 
 - Keep it brief.
-- State that the citation protoform and the deterministic FST path produce the
-  OE target.
+- State that the explicitly selected historical input and deterministic FST
+  path produce the OE target. Usually this is the citation form, but a
+  source-backed inherited paradigm cell may instead supply the complete
+  regular span; identify both axes and the selected cell explicitly.
+- Regularity classifies that span, not an assertion that the whole paradigm
+  escaped remodelling. Preserve independently supported competing forms and
+  unresolved wider histories; never select a cell solely for output fit.
 - Mention only non-obvious regular sound changes if they matter.
 
 #### `early_analogy`

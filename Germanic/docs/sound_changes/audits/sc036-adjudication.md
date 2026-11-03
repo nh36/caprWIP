@@ -1,5 +1,96 @@
 # SC036: weak medial vocalism, not a demonstrated unified raising law
 
+## Identity
+
+Current scoped decision3 November2026, `integration/parser-four-cells`,
+SC036 `OEInterStressRaising`, accepted scientific base `ee73f189`.
+The following complete-template decision supersedes only the temporary
+soul proxy. All earlier measurements, literature and receipts below
+remain historical records, not rewritten experiments.
+
+## Question
+
+Can the provisional soul branch be retired after the independently
+supported accusative and nonhigh process pass the parser gate, while
+preserving literally the accepted weak-LH world rule and its placement?
+Any change to that rule or world/rainbow/earthly paths would refute
+the claimed scope of this migration.
+
+## Current state (before any edits)
+
+SC036 is OE, English-specific, confidence C, REFORMULATE/REORDER:
+the relocated composition of OELHWeakRaising and OESoulProxy.
+World selects inherited compact *wír-àldiz; soul still selects the
+old citation *sáiwalō. Consult the complete prior decision below,
+SC040's accepted adjudication and the three preserved soul dossiers.
+
+## Diagnosis
+
+Certified candidate06 aliases OEInterStressRaising to the literally
+unchanged OELHWeakRaising and deletes OESoulProxy. World remains its
+sole selected live application; soul instead fires at distinct SC114
+in the inherited accusative. Both populations' changed paths and
+counterfactual replay are completely preserved by the parser/formal
+assay. World, rainbow and earthly have no changed stage transition.
+The old soul citation gives sāwel rather than sāwol; that is a
+disclosed counterfactual, not a newly explained nominative.
+
+## Literature
+
+All Campbell/Luick/Bülbring/Hogg/Goering/Stanley/Versloot and comparative
+discussion in the earlier world decision is retained, with exactly
+its qualifications and page locators. RingeTaylor2014 pp265,330,
+Campbell1959 p143 §341, Luick1914 pp287,294 §§309,317 and
+SieversBrunner1965 p132 §159 remain relevant to the distinct
+syncope/apocope/epenthesis history of soul. Fulk2010 pp133–139 and
+the newly selected accusative do not justify retaining a continuous
+medial-raising proxy as that history.
+
+## Historical analysis
+
+Retain OE stage, English scope and confidence C independently.
+The bounded weak short-a raising before lC in the light-initial
+primary-stressed domain remains exactly the accepted reconstruction.
+No new lexical or grammatical conditioning and no new analogy are
+introduced. Its retained-prominence/heavy-root controls and source
+qualifications remain those of the prior decision.
+
+The SC004/SC019 dependencies existed only for the temporary soul
+branch. Mark them superseded_experiment/archived_experiment while
+preserving their old observations. Retain the world SC038/SC107/
+SC059/SC040 technical dependencies; none becomes an independently
+dated historical event. SC037 must still read graves before SC038.
+No other chronology or rule is changed.
+
+## Verdict
+
+Registry-verdict: SC036=REFORMULATE
+
+Remove only OESoulProxy and make OEInterStressRaising an alias of
+OELHWeakRaising. The earlier REORDER is already adopted, not repeated
+or reversed; the historical raising account remains qualified.
+
+## Propagation (only after verdict)
+
+Coordinated SC001/SC036/SC114 SOURCE proposal, frozen before edits,
+owns the alias, reader update, current metadata and explicitly
+superseded soul dependencies. The four-row protected transition is
+owned by SC114's established adopter, not a hand-edited baseline.
+Candidate391/383/eight and all previous archives are preserved;
+fresh actual-SOURCE finalisation and strict/publication certification
+must follow. Historical original380 changes are exactly those
+disclosed in the SC114 memo, not a claim to preserve every old final.
+
+## Residue
+
+The wider soul nominative and world comparative/chronological
+qualifications remain open. The separate complete-cascade global
+functionality/totality question remains unresolved. The historical
+sections below retain their own prior-source and prior-population
+claims; they are not current production certification.
+
+## Preserved earlier adjudications
+
 ## Scoped subsequent rainbow clarification
 
 The separate SC017 adoption in `rainbow-2148-adoption.md` supplies
@@ -112,7 +203,7 @@ syncope/epenthesis history. Two technical branches do not establish two dated
 sound laws. SC037 must still read graves before SC038; their serialization
 is annotation lifetime, not a universal date for syncope versus deaccentuation.
 
-Registry-verdict: SC036=REFORMULATE/REORDER
+Historical registry verdict: SC036=REFORMULATE/REORDER
 
 ### Propagation
 

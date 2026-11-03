@@ -311,7 +311,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 158	f ɛ x t ə n	*féxtaną	f ɛ x t ə n ( - - )	fɛxtən	fechten	45	German						fight	*féxtaną	73
 1762	v ɪ n d ə	*fínθaną	v ɪ n d ə - ( - - )	vɪndə	vinden	482	Dutch						find	*fínθaną	74
 1761	f aɪ n d	*fínθaną	f aɪ n d - - ( - - )	faɪnd	find	482	English						find	*fínθaną	74
-2011	f u n d e n e	*fúnðanǭ	f aɪ n d - - ( - - )	faɪnd	fundene	482	Old_English	"Paradigm-cell acc.sg.m. of strong past ptc, attested (Bosworth-Toller s.v. findan: ""Beón i hergeata ww fundene, 414, 4 note""; cf. Hall s.v. tō-fundennes). Regular Verner *ð → *d, intervocalic *n triggers medial fronting *-an- → *-en-, bimoric *-ǭ → -e. Nom.sg. funden is analogical (Campbell §334, Luick §301,3, Brunner §366 Anm. 3). See DEV_NOTES §17.10.30–32."		late_analogy			find	*fínθaną	74
+2011	f u n d n e	*fúnðanai	f u n d n e	fundne	fundne	482	Old_English	Selected strong masculine nominative plural past participle, not accusative singular. Strunk1904 pp.15,82: Juliana335 fundne, expressly ptc npm.; Fulk2018 pp.209,284 supplies participial -an- and strong nom.pl. -ai. Full compositional *funðanai: ai monophthongization, dental hardening, SC114 nonhigh syncope, ending shortening. Comparative infinitive unchanged. Funden/fundene remain attested with inherited allomorph and analogical-restoration questions; no categorical claim that every -en is analogical.		late_analogy			find	*fínθaną	74
 1760	f ɪ n d ə n	*fínθaną	f ɪ n d ə n ( - - )	fɪndən	finden	482	German						find	*fínθaną	74
 1702	v ɪ ŋ ə r	*fíngraz	v ɪ ŋ - ə r ( - - )	vɪŋər	vinger	466	Dutch						finger	*fíngraz	75
 1701	f ɪ ŋ ɡ ə	*fíngraz	f ɪ ŋ ɡ ə r ( - - )	fɪŋɡə	finger	466	English						finger	*fíngraz	75
@@ -475,7 +475,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 1781	h a l ə	*xallō	h a l ə	halə	Halle	488	German						hall	*xállō	111
 438	h aː m ə r	*xámaraz	h aː m ə r ( - - )	haːmər	hamer	120	Dutch						hammer	*xámaraz	112
 437	h æ m ə	*xámaraz	h æ m ə r ( - - )	hæmə	hammer	120	English						hammer	*xámaraz	112
-2053	h a m e r e s	*xámaras	h æ m ə r ( - - )	hæmər	hameres	120	Old_English	Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplained -o- in unstressed syllable (R/T §3.1.5).	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	late_analogy	 | Note: using gen.sg. *xamaras (> hameres)		hammer	*xámaraz	112
+2053	h a m e r	*xámaraz	h a m e r	hamer	hamer	120	Old_English	Selected a-stem nominative singular citation form, OE nom./acc. syncretism acknowledged. Wright-Wuelcker1884 I272.36: Malleus, hamer, Cotton Cleopatra A.III glossary (not Aelfric). Orel2003 printed158 (not PDF197); Kroonen2013 p.206. Final z/a loss closes the final medial-vowel syllable before SC114; ordinary reduction gives hamer. Attested hameres/hamores and hamor remain documented; predicted hamres is not claimed attested.	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	attested_variant			hammer	*xámaraz	112
 436	h a m ə r	*xámaraz	h a m ə r ( - - )	hamər	Hammer	120	German						hammer	*xámaraz	112
 394	h ɑ n t	*xánduz	h ɑ n t ( - - )	hɑnt	hand	108	Dutch						hand	*xánduz	113
 393	h æ n d	*xánduz	h æ n d ( - - )	hænd	hand	108	English						hand	*xánduz	113
@@ -1048,7 +1048,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 1098	z ɔ r ɡ ə	*surgō	z ɔ r ɡ ə	zɔrɡə	Sorge	301	German						sorrow	*súrgō	239
 1325	z iː l	*saiwalō	z iː - - l -	ziːl	ziel	363	Dutch						soul	*sáiwalō	240
 1324	s əʊ l	*saiwalō	s əʊ - - l -	səʊl	soul	363	English						soul	*sáiwalō	240
-2201	s ā w o l	*sáiwalō	s əʊ - - l -	səʊl	sāwol	363	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	regular			soul	*sáiwalō	240
+2201	s ā w l e	*sáiwalǭ	s ā w l e	sāwle	sāwle	363	Old_English	Selected feminine ō-stem accusative singular: Skeat1874 p.130 Luke12:20 hig feccað þine sawle fram þe. Comparative nominative unchanged. SC114 deletes short medial a before the inherited heavy ending; existing ending shortening/fronting yields -e. No OESoulProxy, epenthesis or analogy in this selected span. Regular class explicitly describes the verified selected cell, not every nominative or the whole paradigm. Fulk2010/2022 retention and analogy account and RingeTaylor2014 syncope-epenthesis alternative remain documented.	Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh)	regular			soul	*sáiwalō	240
 1323	z eː l ə	*saiwalō	z eː - - l ə	zeːlə	Seele	363	German						soul	*sáiwalō	240
 1359	s p ɑ n ə	*spánnaną	s p ɑ n ə - ( - - )	spɑnə	spannen	372	Dutch						span	*spánnaną	241
 1358	s p æ n	*spánnaną	s p æ n - - ( - - )	spæn	span	372	English						span	*spánnaną	241
@@ -1364,7 +1364,7 @@ ID	TOKENS	PROTOFORM	ALIGNMENT	IPA	COUNTERPART	COGIDS	DOCULECT	NOTE	HISTORY	DERIV
 1930	v eː b ə n	*wébaną	v eː b ə n ( - - )	veːbən	weben	530	German						weave	*wébaną	310
 1321	ʋ ɛ s t ə	*westanē	ʋ ɛ s t ə - ( - )	ʋɛstə	westen	362	Dutch						west	*wéstanē	311
 1320	ʋ ɛ s t	*westanē	ʋ ɛ s t - - ( - )	ʋɛst	west	362	English						west	*wéstanē	311
-2282	w e s t e n e	*wéstanē	ʋ ɛ s t ə - - ( - )	ʋɛst	westene	362	Old_English		Source: Wiktionary etymology (template:inh) | Source: Wiktionary etymology (template:inh) | DEV_NOTES §17.38: target switched from bare-stem 'west' to 'westene' (Clark Hall westan(e) 'from the west') so the proto/target pair is lautgesetzlich; Orel HGE p.459 *westanē → OE westan id.	regular			west	*wéstanē	311
+2282	w e s t	*wéstą	w e s t	west	west	362	Old_English	OE row selects inherited neuter base used adverbially, not directional -nē derivative. Orel2003 p.459 neuter westan normalized with Fulk2018 p.146 §7.8 *-aⁿ < *-an; existing regular nasal-vowel loss yields west. Toller1921 Supplement s.v. west, Orosius6.37 S.296.7. Westan/westane are genuine directional forms with separate unresolved ending chronology; directional westene claim withdrawn. Other daughter-language rows unchanged.	Coordinated nonhigh adoption: inherited base replaces the previous directional target chosen partly for cascade fit (archived DEV_NOTES §17.38). Orel2003 p.459 distinguishes neuter base and directional derivative; no directional westene attestation is claimed.	regular			west	*wéstą	311
 1319	v ɛ s t ə n	*westanē	v ɛ s t ə n ( - )	vɛstən	Westen	362	German						west	*wéstanē	311
 1121	ʋ eː d ə r	*wéθruz	ʋ eː d ə r ( - )	ʋeːdər	weder	307	Dutch						wether	*wéθruz	312
 1120	ʋ ɛ ð ə	*wéθruz	ʋ ɛ ð ə r ( - )	ʋɛðə	wether	307	English						wether	*wéθruz	312

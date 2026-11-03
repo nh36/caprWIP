@@ -1,4 +1,24 @@
-# Source extraction ledger — hammer / hameres
+# Source extraction ledger — hammer / hamer
+
+## Current selected-cell verification
+
+Select `*xámaraz > hamer`, masculine a-stem nominative singular,
+`attested_variant`. The earlier table and locator passes below are
+preserved historical records, not current derivational authority.
+
+| Claim | Evidence and access | Qualification |
+| :--- | :--- | :--- |
+| Citation `hamer` | Wright–Wülcker1884 I272.36, *Malleus, hamer.*; original page and heading I258 checked in the preserved reassessment | Cotton Cleopatra A.III fol76r, late10th/early11th hand; not Ælfric. OE form is nom./acc.-syncretic; Latin citation supports nominative selection |
+| Comparative masculine noun | Orel2003 printed158, scan sheet197; Kroonen2013 pp206–207 | Correct earlier printed197 attribution; retain stem versus whole citation and qualified metathesis arguments |
+| Genuine genitive `hameres` | Toller1921 Supplement505, *Beátendes hameres stipnes*, An.Ox481 | Correct earlier BosworthToller1898 p78 attribution; attestation remains, but actual current genitive prediction is hamres |
+| Other variants | ClarkHall1960 p160 hamer/hamor; SieversBrunner1965 §245 hamor—hamores | Wider vowel/paradigm distribution unresolved; no word-variable sound law asserted |
+| Actual complete candidate | Certified candidate06, frozen K equivalence | Citation gives hamer without SC114 application; former genitive gives counterfactual hamres |
+
+Current SOURCE adoption and final production certification belong to the
+coordinated SC001/SC036/SC114 decision. Earlier “current trace” statements
+below refer only to their pre-migration state.
+
+## Preserved pre-migration extraction and review history
 
 This ledger records the source forms and working distinctions gathered before the
 book-style entry was drafted.

@@ -12,10 +12,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 sys.path.insert(0, str(ROOT / "Germanic/docs/assembly"))
+sys.path.insert(0, str(ROOT / "Germanic/docs/sound_changes/reader_facing"))
 
 import oe_derivation_report_with_lexeme_reports as assembly
 import oe_lexeme_report_coverage as coverage
 import pgmc_lexical_integration as editorial
+import check_reader_facing_citations as reader_citations
 from build_full_lexical_volume import parse_model_entry
 from validate_oe_lexeme_report_assembly import parse_entries
 
@@ -48,7 +50,7 @@ class EditorialPublicationTests(unittest.TestCase):
 
     def test_scoped_philology_is_independent_of_derivation_status(self):
         self.assertIn("2224", self.old_required)
-        self.assertEqual(len(self.old_required - {"2224"}), 161)
+        self.assertEqual(len(self.old_required - {"2224"}), 163)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
         self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])
@@ -56,7 +58,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertFalse(straw.has_production_manifest_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
                          PRINCIPAL | {"1934", "1941", "2148", "2162", "2224", "2283",
-                                      "2335", "2336"})
+                                      "2335", "2336", "2011", "2053", "2201", "2282"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -132,11 +134,11 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 170)
+        self.assertEqual(len(current), 172)
         # Earlier publications, SC112's witnesses, the scoped rainbow model
         # and the filth/earthly publications.
         added_ids = {"2137", "2148", "2185", "2200", "2224", "2283", "2333", "2334",
-                     "2335", "2336"}
+                     "2335", "2336", "2201", "2282"}
         added = [r for r in current if r["row_id"] in added_ids]
         self.assertEqual({r["row_id"] for r in added}, added_ids)
         unchanged = {r["row_id"]: r for r in current if r["row_id"] not in added_ids}
@@ -154,9 +156,21 @@ class EditorialPublicationTests(unittest.TestCase):
                 before = dict(before, protoform="*wír-àldiz", protoform_variety="",
                               derivation_class="regular", class_bucket="regular",
                               section_title="Regular derivations")
+            if before["row_id"] == "2011":
+                self.assertEqual((before["protoform"], before["counterpart"]),
+                                 ("*fúnðanǭ", "fundene"))
+                before = dict(before, protoform="*fúnðanai", counterpart="fundne")
+            if before["row_id"] == "2053":
+                self.assertEqual((before["protoform"], before["counterpart"]),
+                                 ("*xámaras", "hameres"))
+                before = dict(
+                    before, protoform="*xámaraz", counterpart="hamer",
+                    derivation_class="attested_variant", class_bucket="attested_variant",
+                    section_title="Attested variants and selected comparison forms",
+                    trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS")
             self.assertEqual({k: v for k, v in now.items() if k not in {"global_order", "class_order"}},
                              {k: v for k, v in before.items() if k not in {"global_order", "class_order"}})
-        self.assertEqual(sum(r["derivation_class"] == "late_analogy" for r in current), 29)
+        self.assertEqual(sum(r["derivation_class"] == "late_analogy" for r in current), 28)
 
     def test_superior_knee_and_hue_sections_are_retained(self):
         for row_id in ("2085", "2332"):
@@ -238,7 +252,9 @@ class EditorialPublicationTests(unittest.TestCase):
             if not row.editorial_report_path:
                 continue
             path = REPORTS / row.editorial_report_path
-            old = "" if row.row_id in {"1941", "2148", "2224", "2283", "2335", "2336"} else committed(path)
+            old = "" if row.row_id in {
+                "1941", "2148", "2224", "2283", "2335", "2336", "2201", "2282"
+            } else committed(path)
             pattern = r"\[[^\]\n]*@[^\]\n]*(?:\n[^\]]*)?\]"
             added = Counter(re.findall(pattern, path.read_text())) - Counter(re.findall(pattern, old))
             for block in added:
@@ -251,7 +267,7 @@ class EditorialPublicationTests(unittest.TestCase):
                     elif match[1] in {"BosworthToller1898", "Toller1921"}:
                         self.assertRegex(citation, r",\s*(?:pp?\.\s*\d+|s\.vv?\.\s*\S)")
                     else:
-                        self.assertRegex(citation, r",\s*pp?\.\s*\d+")
+                        self.assertIsNotNone(reader_citations.PAGE_RE.search(citation), citation)
                     count += 1
         self.assertGreaterEqual(count, 20)
 

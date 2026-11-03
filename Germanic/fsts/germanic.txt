@@ -2154,14 +2154,8 @@ define OELHWeakRaising Ctx([
         EnglishStarConsonant _ {*l} EnglishStarConsonant
 ]);
 
-# Temporary technical branch for soul, pending its separate syncope/epenthesis
-# review (R/T p.330). This is not a second independent dated sound law.
-define OESoulProxy Ctx([
-    {*a} -> {*u} || PGmcStarVowel EnglishStarConsonant* _
-        [EnglishStarConsonant - {*j}]+ [{*u}|{*ū}]
-]);
-
-define OEInterStressRaising [OELHWeakRaising .o. OESoulProxy];
+# The retired soul proxy remains documented in the SC036 adjudication.
+define OEInterStressRaising OELHWeakRaising;
 
 # SC037 reads graves first; SC038 then removes the secondary-stress annotation
 # before weak raising. This annotation lifetime is not a general stress-loss date.
@@ -3521,6 +3515,19 @@ define OEVelarFricativePalatalization Ctx([
 define OEHeavyMarker ?*;  # identity — no marking needed
 define OEWeightMarkers Ctx(OEHeavyMarker);
 
+# SC114: bounded early nonhigh syncope; Hogg 1992 §§6.14-18, Fulk 2010
+# pp.133-139. FootCtx protects the positively identified primary-root domain.
+# Following-final weight and one pretonic syllable are explicit model limits.
+define OENonHighSyn FootCtx([
+    [{*a}|{*æ}|{*e}] -> 0 ||
+        .#. OEAnyConsonant* EnglishStarVocalic
+        [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
+        _ [OEAnyConsonant
+           [EnglishStarLongVowel|EnglishStarLongDiphthong|{*ô}]
+           OEAnyConsonant* |
+           OEAnyConsonant EnglishStarVocalic OEAnyConsonant+] .#.
+]);
+
 define OEHighVowelApocope Ctx([
     # Disyllabic: long syllable (long vowel + consonant(s)) + final vowel
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
@@ -3955,6 +3962,7 @@ define EnglishProtoToOE ( # capr:bundle
     # NSL moved earlier in pipeline (NWGmc stage, before i-umlaut) — see lines 1945-1946
     .o. OEWeakTailNasalLoss
     .o. OEWeightMarkers
+    .o. OENonHighSyn
     .o. OEHighVowelApocope
     # NWGmcInStemNLoss runs AFTER OEHighVowelApocope so dsg./asg./npl. tails
     # *-īni / *-īnų / *-īniz lose their final high V first; *-n is then
@@ -4008,8 +4016,40 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OERMetathesis
 );
 
-define EnglishProtoInput [
+define EnglishProtoNative [
     [{ᵘ}:{*ᵘ} | {ᶜ}:{*ᶜ} | 0] pgrmWord
+];
+
+define PGCellStem [
+    [a:{*a}|e:{*e}|i:{*i}|u:{*u}|ī:{*ī}] pgrmCodaSimple
+];
+define PGCellEnd [
+    ō:{*ō}|ǭ:{*ǭ}|ō:{*ō} z:{*z}|ô:{*ô} z:{*z}|
+    ô:{*ô} i:{*i}|a:{*a} s:{*s}|a:{*a}|ą:{*ą}|{ai}:{*ai}|i:{*i}|0
+];
+define PGCellRoot [
+    pgrmOnset [pgrmLongVowel | pgrmDiphthong] pgrmCoda |
+    pgrmOnset pgrmShortVowel pgrmCodaNonEmpty
+];
+define PGCellPlain [PGCellRoot PGCellStem* PGCellEnd];
+define PGCellPrefixed [pgrmPrefix PGCellRoot PGCellStem* PGCellEnd];
+define PGCellRaw [PGCellPlain | PGCellPrefixed];
+# Ambiguous bare spellings require explicit primary stress, not parse priority.
+define PGCellCanonical _unambpart(PGCellRaw);
+# Separate lexical tokenisation from morphological acceptance. The productive
+# relation only inserts stars: its inverse is star erasure on its lower domain.
+define PGCellStrip [
+    {*}:0 | pgrmInitSimple.u | pgrmShortVowel.u |
+    pgrmLongVowel.u | pgrmNasalVowel.u
+]*;
+define PGCellInput [PGCellStrip.i .o. PGCellCanonical.l];
+# Preserve the native analysis on its accepted domain; new short roots require
+# a consonant before weak-vowel material, preventing ai/hiatus ambiguity.
+# Compile this equivalent canonical union directly: recomposition through
+# PGCellInput re-exposes the pinned checker's delayed-alignment defect.
+define EnglishProtoInput [
+    _unambpart(EnglishProtoNative) |
+    _unambpart([[PGCellRaw.u - EnglishProtoNative.u] .o. PGCellRaw])
 ];
 
 define OldEnglishCore EnglishProtoInput # capr:bundle

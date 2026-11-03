@@ -1,6 +1,6 @@
 # Missing lexeme reports for publish mode
 
-- Missing required production reports: 142
+- Missing required production reports: 140
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Reason |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -26,7 +26,6 @@
 | 2007 | fell | fell | regular | yes | NOTE |
 | 2008 | fern | fearn | regular | yes | NOTE |
 | 2009 | field | feld | regular | yes | NOTE |
-| 2011 | find | fundene | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2016 | flask | flasce | early_analogy | no | DERIVATION_CLASS=early_analogy |
 | 2022 | fly | flēogan | regular | yes | NOTE |
 | 2027 | follow | fylġan | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
@@ -41,7 +40,6 @@
 | 2046 | grave | grafan | regular | yes | NOTE |
 | 2049 | guest | ġiest | regular | yes | NOTE |
 | 2051 | hair | hǣr | regular | yes | NOTE |
-| 2053 | hammer | hameres | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2055 | handle | handlian | regular | yes | NOTE |
 | 2057 | harvest | hierfest | regular | yes | NOTE |
 | 2058 | have | hæfeþ | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |

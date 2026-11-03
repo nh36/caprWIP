@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597"
+    ACTIVE_SHA = "4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -123,7 +123,7 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual(len(selected), 380)
         self.assertEqual([m["row_id"] for m in migrations],
                          ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
-                          "2302"])
+                          "2302", "2011", "2201", "2282", "2053"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -133,6 +133,25 @@ class LegacySubsetTests(unittest.TestCase):
     def test_summary_records_legacy_subset_invariant(self):
         self.assertEqual(self.summary["legacy_subset_count"], 380)
         self.assertEqual(self.summary["legacy_subset_sha256"], self.ACTIVE_SHA)
+
+    def test_four_cell_transition_preserves_every_other_selected_record(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc114_nonhigh_cells.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc114_nonhigh_cells.json",
+        )
+        approval = json.loads(
+            (BASELINE_DIR / "approved_nonhigh_cells_migration.json").read_text())
+        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        mod.validate_cell_transition(previous, current, approval)
+        changed = {row["row_id"] for row in approval["changes"]}
+        self.assertEqual(changed, {"2011", "2053", "2201", "2282"})
+        before = {row["row_id"]: row for row in previous["records"]}
+        after = {row["row_id"]: row for row in current["records"]}
+        self.assertEqual(before.keys(), after.keys())
+        for row_id in before.keys() - changed:
+            with self.subTest(row_id=row_id):
+                self.assertEqual(before[row_id], after[row_id])
 
     def test_migration_rejects_unapproved_or_ambiguous_drift(self):
         import copy
@@ -212,7 +231,8 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual(len(mod.legacy_subset(
             previous["records"], old,
             [m for m in migrations if m["row_id"] not in {
-                "2224", "2162", "2283", "2095", "2313", "2314", "2302"}],
+                "2224", "2162", "2283", "2095", "2313", "2314", "2302",
+                "2011", "2201", "2282", "2053"}],
         )), 387)
 
 

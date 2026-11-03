@@ -37,7 +37,7 @@ def test_receipt_identifies_its_actual_source_and_overlapping_populations():
     assert all(row["legacy380_identity"] for row in firings)
 
 
-def test_only_sc036_and_its_explicit_branches_changed():
+def test_sc036_and_separately_adjudicated_changes_remain_bounded():
     source = (ROOT / "Germanic/fsts/germanic.txt").read_text()
     base = git_bytes(receipt()["base_commit"], "Germanic/fsts/germanic.txt").decode()
 
@@ -63,14 +63,23 @@ def test_only_sc036_and_its_explicit_branches_changed():
     sc040_added = {"MP" + suffix for suffix in (
         "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
         "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")}
+    parser_added = {"EnglishProtoNative"} | {"PGCell" + suffix for suffix in (
+        "Stem", "End", "Root", "Plain", "Prefixed", "Raw", "Canonical",
+        "Strip", "Input")}
     assert current.keys() - old.keys() == (
-        {"OELHWeakRaising", "OESoulProxy"} | gate_added | sc040_added)
+        {"OELHWeakRaising", "OENonHighSyn"} | gate_added | sc040_added |
+        parser_added)
     assert old.keys() <= current.keys()
     assert {name for name in old if old[name] != current[name]} == (
         {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed |
-        rainbow_changed | sc066_changed | {"OEMedUnstressedULowering"})
-    assert current["OEInterStressRaising"] == (
-        "[OELHWeakRaising.o.OESoulProxy]")
+        rainbow_changed | sc066_changed |
+        {"OEMedUnstressedULowering", "EnglishProtoInput"})
+    assert current["OEInterStressRaising"] == "OELHWeakRaising"
+    accepted = definitions(git_bytes(
+        "ee73f189d2c4af2fab6170f7af066d96611ce749",
+        "Germanic/fsts/germanic.txt").decode())
+    assert current["OELHWeakRaising"] == accepted["OELHWeakRaising"]
+    assert "OESoulProxy" not in current
 
 
 def test_single_comma_shares_context_including_the_grave_mapping():
@@ -124,9 +133,16 @@ def test_secondary_marker_bleeding_is_not_historical_chronology():
     assert evidence["interactions"]["OEInterStressRaising:OEStripSecondaryStress"] == {}
     edges = adjudicate.read_tsv(
         ROOT / "Germanic/docs/sound_changes/registry/chronology_edges.tsv")
-    current = {row["target_change_id"]: row for row in edges
-               if row["source_change_id"] == "SC036"}
-    assert set(current) == {"SC004", "SC019", "SC040", "SC038", "SC107", "SC059"}
+    observations = {row["target_change_id"]: row for row in edges
+                    if row["source_change_id"] == "SC036"}
+    retired = {target: row for target, row in observations.items()
+               if row["relation_type"] == "superseded_experiment"}
+    assert set(retired) == {"SC004", "SC019"}
+    assert all(row["evidence_basis"] == "archived_experiment"
+               for row in retired.values())
+    current = {target: row for target, row in observations.items()
+               if target not in retired}
+    assert set(current) == {"SC040", "SC038", "SC107", "SC059"}
     assert all(row["evidence_basis"] == "technical" for row in current.values())
     assert all(row["relation_type"] == "technical_computational"
                for row in current.values())
@@ -134,7 +150,7 @@ def test_secondary_marker_bleeding_is_not_historical_chronology():
 
 def test_current_authority_and_source_access_qualifications():
     row = adjudicate.load_registry_row("SC036")
-    assert row["verdict"] == "REFORMULATE/REORDER"
+    assert row["verdict"] == "REFORMULATE"
     assert row["confidence"] == "C"
     assert (row["hist_stage"], row["hist_scope"]) == ("oe", "english_specific")
     assert adjudicate.check_memo("SC036", row=row) == []

@@ -2,29 +2,29 @@
 
 - Total OE rows with real counterpart: 391
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 166
-- Required rows with published SOURCE: 24
-- Required rows with no published SOURCE: 142
-- Rows selected independently for philological discussion: 14
+- Rows requiring lexeme report: 168
+- Required rows with published SOURCE: 28
+- Required rows with no published SOURCE: 140
+- Rows selected independently for philological discussion: 18
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 151
+- Required rows with source material available but no manifest-backed production report: 153
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
-- Regular rows with empty NOTE but supporting material present: 228
+- Regular rows with empty NOTE but supporting material present: 226
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 83
+- Regular rows with NOTE (report required): 85
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
 
 ## Counts by DERIVATION_CLASS
 
 | DERIVATION_CLASS | Total rows | Required | Manifest-backed production reports | Source material available | No source material found |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| attested_variant | 5 | 5 | 1 | 4 | 0 |
+| attested_variant | 6 | 6 | 1 | 5 | 0 |
 | early_analogy | 35 | 35 | 2 | 33 | 0 |
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
-| late_analogy | 29 | 29 | 4 | 25 | 0 |
+| late_analogy | 28 | 28 | 4 | 24 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 312 | 87 | 0 | 83 | 4 |
+| regular | 312 | 89 | 0 | 85 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -34,11 +34,15 @@
 | 1933 | adder | nǣdre | regular | no | certified_editorial_source | format_test | model_entries/1933-adder-nǣdre.model.md | philological=adder-feminine-vocalism |
 | 1934 | bake | bacan | regular | yes | certified_editorial_source | - | model_entries/1934-bake-bacan.model.md | NOTE, philological=bake-present-formation |
 | 1941 | beaver | befer | regular | no | certified_editorial_source | - | research_memos/1941-beaver-befer.md | philological=beaver-formation-direction |
+| 2011 | find | fundne | late_analogy | yes | certified_editorial_source | - | model_entries/2011-find-fundene.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=find-strong-nominative-plural |
 | 2013 | fire | fȳre | known_unmodelled | yes | certified_editorial_source | pilot | model_entries/2013-fire-fȳre.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report, philological=fire-input-and-genealogy |
+| 2053 | hammer | hamer | attested_variant | yes | certified_editorial_source | - | model_entries/2053-hammer-hameres.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=hammer-citation-hamer |
 | 2085 | knee | cneowe | late_analogy | yes | certified_editorial_source | - | model_entries/2085-knee-cneowe.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=knee-ending |
 | 2148 | rainbow | reġnboga | regular | no | certified_editorial_source | - | model_entries/2148-rainbow-reġnboga.model.md | philological=rainbow-early-root-lowering |
 | 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
+| 2201 | soul | sāwle | regular | yes | certified_editorial_source | - | model_entries/2201-soul-sāwle.model.md | NOTE, philological=soul-inherited-accusative |
 | 2224 | straw | strēaw | late_analogy | yes | certified_editorial_source | - | model_entries/2224-straw-strēaw.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=straw-endingless-and-levelling |
+| 2282 | west | west | regular | yes | certified_editorial_source | - | model_entries/2282-west-west.model.md | NOTE, philological=west-neuter-base |
 | 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
 | 2326 | you | ēow | regular | yes | certified_editorial_source | - | model_entries/2326-you-ēow.model.md | NOTE, philological=you-oblique-origin |
 | 2330 | thought | þōhte | regular | yes | certified_editorial_source | - | model_entries/2330-thought-þōhte.model.md | NOTE, philological=thought-connectorless-origin |
@@ -91,7 +95,7 @@
 | 2007 | fell | fell | regular | yes | source_material | - | archive/dev_notes_slices/2007-fell-fell.md, archive/packets/2007-fell-fell.md, model_entries/2007-fell-fell.model.md, model_entries/2007-fell-fell.source_ledger.md, research_memos/2007-fell-fell.md | NOTE |
 | 2008 | fern | fearn | regular | yes | source_material | - | archive/dev_notes_slices/2008-fern-fearn.md, archive/packets/2008-fern-fearn.md, model_entries/2008-fern-fearn.model.md, model_entries/2008-fern-fearn.source_ledger.md, research_memos/2008-fern-fearn.md | NOTE |
 | 2009 | field | feld | regular | yes | source_material | - | archive/dev_notes_slices/2009-field-feld.md, archive/packets/2009-field-feld.md, model_entries/2009-field-feld.model.md, model_entries/2009-field-feld.source_ledger.md, research_memos/2009-field-feld.md | NOTE |
-| 2011 | find | fundene | late_analogy | yes | source_material | - | archive/dev_notes_slices/2011-find-fundene.md, archive/packets/2011-find-fundene.md, model_entries/2011-find-fundene.model.md, model_entries/2011-find-fundene.source_ledger.md, research_memos/2011-find-fundene.md | NOTE, DERIVATION_CLASS=late_analogy |
+| 2011 | find | fundne | late_analogy | yes | certified_editorial_source | - | model_entries/2011-find-fundene.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=find-strong-nominative-plural |
 | 2016 | flask | flasce | early_analogy | no | source_material | - | archive/dev_notes_slices/2016-flask-flasce.md, archive/packets/2016-flask-flasce.md, model_entries/2016-flask-flasce.model.md, model_entries/2016-flask-flasce.source_ledger.md, research_memos/2016-flask-flasce.md | DERIVATION_CLASS=early_analogy |
 | 2022 | fly | flēogan | regular | yes | source_material | - | archive/dev_notes_slices/2022-fly-flēogan.md, archive/packets/2022-fly-flēogan.md, model_entries/2022-fly-flēogan.model.md, model_entries/2022-fly-flēogan.source_ledger.md, research_memos/2022-fly-flēogan.md | NOTE |
 | 2027 | follow | fylġan | early_analogy | yes | source_material | - | archive/dev_notes_slices/2027-follow-fylġan.md, archive/packets/2027-follow-fylġan.md, model_entries/2027-follow-fylġan.model.md, model_entries/2027-follow-fylġan.source_ledger.md, research_memos/2027-follow-fylġan.md | NOTE, DERIVATION_CLASS=early_analogy |
@@ -106,7 +110,7 @@
 | 2046 | grave | grafan | regular | yes | source_material | - | archive/dev_notes_slices/2046-grave-grafan.md, archive/packets/2046-grave-grafan.md, model_entries/2046-grave-grafan.model.md, model_entries/2046-grave-grafan.source_ledger.md, research_memos/2046-grave-grafan.md | NOTE |
 | 2049 | guest | ġiest | regular | yes | source_material | - | archive/dev_notes_slices/2049-guest-ġiest.md, archive/packets/2049-guest-ġiest.md, model_entries/2049-guest-ġiest.model.md, model_entries/2049-guest-ġiest.source_ledger.md, research_memos/2049-guest-ġiest.md | NOTE |
 | 2051 | hair | hǣr | regular | yes | source_material | - | archive/dev_notes_slices/2051-hair-hǣr.md, archive/packets/2051-hair-hǣr.md, model_entries/2051-hair-hǣr.model.md, model_entries/2051-hair-hǣr.source_ledger.md, research_memos/2051-hair-hǣr.md | NOTE |
-| 2053 | hammer | hameres | late_analogy | yes | source_material | - | archive/dev_notes_slices/2053-hammer-hameres.md, archive/packets/2053-hammer-hameres.md, model_entries/2053-hammer-hameres.model.md, model_entries/2053-hammer-hameres.source_ledger.md, research_memos/2053-hammer-hameres.md | NOTE, DERIVATION_CLASS=late_analogy |
+| 2053 | hammer | hamer | attested_variant | yes | certified_editorial_source | - | model_entries/2053-hammer-hameres.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=hammer-citation-hamer |
 | 2057 | harvest | hierfest | regular | yes | source_material | - | archive/dev_notes_slices/2057-harvest-hierfest.md, model_entries/2057-harvest-hierfest.model.md, model_entries/2057-harvest-hierfest.source_ledger.md, research_memos/2057-harvest-hierfest.md | NOTE |
 | 2058 | have | hæfeþ | late_analogy | yes | source_material | - | archive/dev_notes_slices/2058-have-hæfeþ.md, archive/packets/2058-have-hæfeþ.md, model_entries/2058-have-hæfeþ.model.md, model_entries/2058-have-hæfeþ.source_ledger.md, research_memos/2058-have-hæfeþ.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2068 | heaven | heofon | early_analogy | yes | source_material | - | archive/dev_notes_slices/2068-heaven-heofon.md, archive/dev_notes_slices/deferred_sound_change_material.md, archive/packets/2068-heaven-heofon.md, model_entries/2068-heaven-heofon.model.md, model_entries/2068-heaven-heofon.source_ledger.md, research_memos/2068-heaven-heofon.md | NOTE, DERIVATION_CLASS=early_analogy |
@@ -156,6 +160,7 @@
 | 2189 | sieve | sife | early_analogy | no | source_material | - | archive/dev_notes_slices/2189-sieve-sife.md, archive/packets/2189-sieve-sife.md, model_entries/2189-sieve-sife.model.md, model_entries/2189-sieve-sife.source_ledger.md, research_memos/2189-sieve-sife.md | DERIVATION_CLASS=early_analogy |
 | 2196 | sleep | slǣpan | regular | yes | source_material | - | archive/dev_notes_slices/2196-sleep-slǣpan.md, archive/packets/2196-sleep-slǣpan.md, model_entries/2196-sleep-slǣpan.model.md, model_entries/2196-sleep-slǣpan.source_ledger.md, research_memos/2196-sleep-slǣpan.md | NOTE |
 | 2198 | smear | smierwan | regular | yes | source_material | - | archive/dev_notes_slices/2198-smear-smierwan.md, model_entries/2198-smear-smierwan.model.md, model_entries/2198-smear-smierwan.source_ledger.md, research_memos/2198-smear-smierwan.md | NOTE |
+| 2201 | soul | sāwle | regular | yes | certified_editorial_source | - | model_entries/2201-soul-sāwle.model.md | NOTE, philological=soul-inherited-accusative |
 | 2202 | span | spannan | regular | yes | source_material | - | archive/dev_notes_slices/2202-span-spannan.md, archive/packets/2202-span-spannan.md, model_entries/2202-span-spannan.model.md, model_entries/2202-span-spannan.source_ledger.md, research_memos/2202-span-spannan.md | NOTE |
 | 2204 | spar | spearra | regular | yes | source_material | - | archive/dev_notes_slices/2204-spar-spearra.md, archive/packets/2204-spar-spearra.md, model_entries/2204-spar-spearra.model.md, model_entries/2204-spar-spearra.source_ledger.md, research_memos/2204-spar-spearra.md | NOTE |
 | 2205 | spare | sparian | early_analogy | yes | source_material | - | archive/dev_notes_slices/2205-spare-sparian.md, archive/packets/2205-spare-sparian.md, model_entries/2205-spare-sparian.model.md, model_entries/2205-spare-sparian.source_ledger.md, research_memos/2205-spare-sparian.md | NOTE, DERIVATION_CLASS=early_analogy |
@@ -187,6 +192,7 @@
 | 2276 | wax | weaxan | regular | yes | source_material | - | archive/dev_notes_slices/2276-wax-weaxan.md, model_entries/2276-wax-weaxan.model.md, model_entries/2276-wax-weaxan.source_ledger.md, research_memos/2276-wax-weaxan.md | NOTE |
 | 2277 | way | weġ | regular | yes | source_material | - | archive/dev_notes_slices/2277-way-weġ.md, archive/packets/2277-way-weġ.md, model_entries/2277-way-weġ.model.md, model_entries/2277-way-weġ.source_ledger.md, research_memos/2277-way-weġ.md | NOTE |
 | 2278 | weapon | wǣpn | regular | yes | source_material | - | archive/dev_notes_slices/2278-weapon-wǣpn.md, archive/packets/2278-weapon-wǣpn.md, model_entries/2278-weapon-wǣpn.model.md, model_entries/2278-weapon-wǣpn.source_ledger.md, research_memos/2278-weapon-wǣpn.md | NOTE |
+| 2282 | west | west | regular | yes | certified_editorial_source | - | model_entries/2282-west-west.model.md | NOTE, philological=west-neuter-base |
 | 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
 | 2284 | whale | hwæl | early_analogy | yes | source_material | - | archive/dev_notes_slices/2284-whale-hwæl.md, archive/packets/2284-whale-hwæl.md, model_entries/2284-whale-hwæl.model.md, model_entries/2284-whale-hwæl.source_ledger.md, research_memos/2284-whale-hwæl.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2286 | whine | hwīnan | early_analogy | no | source_material | - | archive/dev_notes_slices/2286-whine-hwīnan.md, archive/packets/2286-whine-hwīnan.md, model_entries/2286-whine-hwīnan.model.md, model_entries/2286-whine-hwīnan.source_ledger.md, research_memos/2286-whine-hwīnan.md | DERIVATION_CLASS=early_analogy |
@@ -342,7 +348,7 @@
 | 2106 | list | līste | regular | no | source_material | - | archive/dev_notes_slices/2106-list-līste.md | none |
 | 2108 | liver | lifer | regular | no | source_material | - | archive/dev_notes_slices/2108-liver-lifer.md | none |
 | 2110 | loath | lāþ | regular | no | source_material | - | archive/dev_notes_slices/2110-loath-lāþ.md | none |
-| 2111 | lock | loc | regular | no | source_material | - | archive/dev_notes_slices/1935-ball-beall.md, archive/dev_notes_slices/1947-bid-bēodan.md, archive/dev_notes_slices/1948-bid-bid.md, archive/dev_notes_slices/2111-lock-loc.md, dev_notes_slices/README.md, model_entries/1936-ban-bannes.source_ledger.md, model_entries/1946-berry-berġes.source_ledger.md, model_entries/citation_locator_closure_audit.md, model_entries/citation_locator_conditional_sources_report.md, model_entries/citation_locator_full_corpus_high_confidence_report.md, model_entries/citation_locator_pilot_01_report.md, model_entries/citation_locator_rescue_pilot_02_report.md, model_entries/citation_locator_source_inventory.md, pgmc_integration/errata.md, pgmc_integration/source-checks.md, pgmc_reconstructions/reading_progress.md, writing_skill/README.md, writing_skill/reviewer_checklist.md, writing_skill/source_ledger_template.md | none |
+| 2111 | lock | loc | regular | no | source_material | - | archive/dev_notes_slices/1935-ball-beall.md, archive/dev_notes_slices/1947-bid-bēodan.md, archive/dev_notes_slices/1948-bid-bid.md, archive/dev_notes_slices/2111-lock-loc.md, dev_notes_slices/README.md, model_entries/1936-ban-bannes.source_ledger.md, model_entries/1946-berry-berġes.source_ledger.md, model_entries/2011-find-fundene.source_ledger.md, model_entries/citation_locator_closure_audit.md, model_entries/citation_locator_conditional_sources_report.md, model_entries/citation_locator_full_corpus_high_confidence_report.md, model_entries/citation_locator_pilot_01_report.md, model_entries/citation_locator_rescue_pilot_02_report.md, model_entries/citation_locator_source_inventory.md, pgmc_integration/errata.md, pgmc_integration/source-checks.md, pgmc_reconstructions/reading_progress.md, writing_skill/README.md, writing_skill/reviewer_checklist.md, writing_skill/source_ledger_template.md | none |
 | 2112 | lock | locc | regular | no | source_material | - | archive/dev_notes_slices/2112-lock-locc.md | none |
 | 2113 | louse | lūs | regular | no | source_material | - | archive/dev_notes_slices/2113-louse-lūs.md, model_entries/2113-louse-lūs.model.md, model_entries/2113-louse-lūs.source_ledger.md | none |
 | 2115 | lust | lust | regular | no | source_material | - | archive/dev_notes_slices/2115-lust-lust.md | none |
@@ -359,7 +365,7 @@
 | 2132 | nave | nafu | regular | no | source_material | - | archive/dev_notes_slices/2132-nave-nafu.md | none |
 | 2135 | need | nīed | regular | no | source_material | - | archive/dev_notes_slices/2135-need-nīed.md | none |
 | 2137 | nest | nest | regular | no | source_material | - | archive/dev_notes_slices/2137-nest-nest.md, model_entries/2137-nest-nest.model.md | none |
-| 2139 | nettle | netle | regular | no | source_material | - | archive/dev_notes_slices/2139-nettle-netle.md | none |
+| 2139 | nettle | netle | regular | no | source_material | - | archive/dev_notes_slices/2139-nettle-netle.md, archive/packets/2011-find-fundene.md | none |
 | 2142 | nine | nigon | regular | no | source_material | - | archive/dev_notes_slices/2142-nine-nigon.md | none |
 | 2144 | one | ān | regular | no | source_material | - | archive/dev_notes_slices/2144-one-ān.md | none |
 | 2145 | oven | ofn | regular | no | source_material | - | archive/dev_notes_slices/2145-oven-ofn.md | none |
@@ -403,7 +409,6 @@
 | 2197 | slime | slīm | regular | no | source_material | - | archive/dev_notes_slices/2197-slime-slīm.md | none |
 | 2199 | snow | snāw | regular | no | source_material | - | archive/dev_notes_slices/2199-snow-snāw.md | none |
 | 2200 | sorrow | sorg | regular | no | source_material | - | archive/dev_notes_slices/2200-sorrow-sorg.md, model_entries/2200-sorrow-sorg.model.md | none |
-| 2201 | soul | sāwol | regular | no | source_material | - | archive/dev_notes_slices/2201-soul-sāwol.md | none |
 | 2206 | spear | speoru | regular | no | source_material | - | archive/dev_notes_slices/2206-spear-speoru.md, archive/packets/2102-light-līehtan.md | none |
 | 2207 | spin | spinnan | regular | no | source_material | - | archive/dev_notes_slices/2207-spin-spinnan.md | none |
 | 2208 | spindle | spinl | regular | no | source_material | - | archive/dev_notes_slices/2208-spindle-spinl.md | none |
@@ -449,7 +454,6 @@
 | 2279 | weasel | wesle | regular | no | source_material | - | archive/dev_notes_slices/2279-weasel-wesle.md | none |
 | 2280 | weather | weder | regular | no | source_material | - | archive/dev_notes_slices/2280-weather-weder.md | none |
 | 2281 | weave | wefan | regular | no | source_material | - | archive/dev_notes_slices/2281-weave-wefan.md | none |
-| 2282 | west | westene | regular | no | source_material | - | archive/dev_notes_slices/2282-west-westene.md | none |
 | 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
 | 2285 | while | hwīl | regular | no | source_material | - | archive/dev_notes_slices/2285-while-hwīl.md | none |
 | 2287 | whore | hōre | regular | no | source_material | - | archive/dev_notes_slices/2287-whore-hōre.md | none |
@@ -460,7 +464,7 @@
 | 2292 | will | willan | regular | no | source_material | - | archive/dev_notes_slices/2292-will-willan.md | none |
 | 2295 | winter | winter | regular | no | source_material | - | archive/dev_notes_slices/2295-winter-winter.md | none |
 | 2299 | wonder | wundor | regular | no | source_material | - | archive/dev_notes_slices/2299-wonder-wundor.md | none |
-| 2301 | word | word | regular | no | source_material | - | archive/dev_notes_slices/2301-word-word.md, archive/packets/1936-ban-bannes.md, archive/packets/1946-berry-berġes.md, archive/packets/1969-breeches-brēċ.md, archive/packets/1973-buck-bucc.md, archive/packets/1981-craft-cræft.md, archive/packets/1987-deed-dǣd.md, archive/packets/2030-fowl-fugol.md, archive/packets/2057-harvest-hierfest.md, archive/packets/2077-hold-healdan.md, archive/packets/2119-man-mannes.md, archive/packets/2124-meed-meorde.md, archive/packets/2140-night-niht.md, archive/packets/2151-reek-rēac.md, archive/packets/2162-rust-rust.md, archive/packets/2198-smear-smierwan.md, archive/packets/2227-strew-strīeġan.md, archive/packets/2242-ten-tēon.md, archive/packets/2250-thistle-þistles.md, archive/packets/2297-wold-weald.md, archive/packets/2312-bore-(3sg)-boraþ.md, archive/packets/2313-learn-(iptv.2sg)-liorna.md, archive/packets/2314-learn-(3sg)-liornaþ.md, archive/packets/2316-lick-(3sg)-liccaþ.md, archive/packets/2318-show-(3sg)-sċēawaþ.md, archive/packets/2322-who-hwā.md, archive/packets/2326-you-ēow.md, archive/packets/2332-hue-hīew.md, model_entries/2040-gift-ġift.model.md, pgmc_integration/examples/1933-adder.md, pgmc_reconstructions/commentary.md, pgmc_reconstructions/reconstruction_ledger.md, writing_skill/book_entry_template.md | none |
+| 2301 | word | word | regular | no | source_material | - | archive/dev_notes_slices/2301-word-word.md, archive/packets/1936-ban-bannes.md, archive/packets/1946-berry-berġes.md, archive/packets/1969-breeches-brēċ.md, archive/packets/1973-buck-bucc.md, archive/packets/1981-craft-cræft.md, archive/packets/1987-deed-dǣd.md, archive/packets/2030-fowl-fugol.md, archive/packets/2057-harvest-hierfest.md, archive/packets/2077-hold-healdan.md, archive/packets/2119-man-mannes.md, archive/packets/2124-meed-meorde.md, archive/packets/2140-night-niht.md, archive/packets/2151-reek-rēac.md, archive/packets/2162-rust-rust.md, archive/packets/2198-smear-smierwan.md, archive/packets/2227-strew-strīeġan.md, archive/packets/2242-ten-tēon.md, archive/packets/2250-thistle-þistles.md, archive/packets/2297-wold-weald.md, archive/packets/2312-bore-(3sg)-boraþ.md, archive/packets/2313-learn-(iptv.2sg)-liorna.md, archive/packets/2314-learn-(3sg)-liornaþ.md, archive/packets/2316-lick-(3sg)-liccaþ.md, archive/packets/2318-show-(3sg)-sċēawaþ.md, archive/packets/2322-who-hwā.md, archive/packets/2326-you-ēow.md, model_entries/2040-gift-ġift.model.md, pgmc_integration/examples/1933-adder.md, pgmc_reconstructions/commentary.md, pgmc_reconstructions/reconstruction_ledger.md, writing_skill/book_entry_template.md | none |
 | 2303 | worm | wyrm | regular | no | source_material | - | archive/dev_notes_slices/2303-worm-wyrm.md | none |
 | 2304 | wring | wringan | regular | no | source_material | - | archive/dev_notes_slices/2304-wring-wringan.md | none |
 | 2306 | year | ġēar | regular | no | source_material | - | archive/dev_notes_slices/2306-year-ġēar.md | none |

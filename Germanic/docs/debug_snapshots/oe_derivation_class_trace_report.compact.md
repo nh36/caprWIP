@@ -5254,25 +5254,27 @@ Outcome: sorg
 
 
 # soul
-PROTO: *sáiwalō
-EXPECTED: sāwol
-OUTPUTS: sāwol
+PROTO: *sáiwalǭ
+EXPECTED: sāwle
+OUTPUTS: sāwle
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *sáiwalō
+English Proto Input: *sáiwalǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *sáiwalu<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalu | **Old English**<br>OE Inter Stress Raising: *sāwulu<br>OE High Vowel Apocope: *sāwul<br>OE Med Unstressed U Lowering: *sāwol |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalǭ | **Old English**<br>EAF Brightening Unstressed: *sāwælǭ<br>OE A Restoration: *sāwalǭ<br>OE Non High Syn: *sāwlǭ<br>OE Unstressed Long Vowel Shortening: *sāwlæ<br>OE Unstressed AE Merger: *sāwle |
 
 
 
 ### Orthography & surface
 
-Outcome: sāwol
+Outcome: sāwle
+
+NOTE: Selected feminine ō-stem accusative singular: Skeat1874 p.130 Luke12:20 hig feccað þine sawle fram þe. Comparative nominative unchanged. SC114 deletes short medial a before the inherited heavy ending; existing ending shortening/fronting yields -e. No OESoulProxy, epenthesis or analogy in this selected span. Regular class explicitly describes the verified selected cell, not every nominative or the whole paradigm. Fulk2010/2022 retention and analogy account and RingeTaylor2014 syncope-epenthesis alternative remain documented.
 
 
 
@@ -6855,25 +6857,27 @@ Outcome: wefan
 
 
 # west
-PROTO: *wéstanē
-EXPECTED: westene
-OUTPUTS: westene
+PROTO: *wéstą
+EXPECTED: west
+OUTPUTS: west
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *wéstanē
+English Proto Input: *wéstą
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Fronting Early: *wéstænē<br>OE Unstressed Long Vowel Shortening: *wéstæne<br>OE Unstressed AE Merger: *wéstene |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *wést |
 
 
 
 ### Orthography & surface
 
-Outcome: westene
+Outcome: west
+
+NOTE: OE row selects inherited neuter base used adverbially, not directional -nē derivative. Orel2003 p.459 neuter westan normalized with Fulk2018 p.146 §7.8 *-aⁿ < *-an; existing regular nasal-vowel loss yields west. Toller1921 Supplement s.v. west, Orosius6.37 S.296.7. Westan/westane are genuine directional forms with separate unresolved ending chronology; directional westene claim withdrawn. Other daughter-language rows unchanged.
 
 
 
@@ -8327,7 +8331,7 @@ NOTE: PROTOFORM *jugunθ (without -iz): (1) Early i-apocope: R/T §6.8.1 shows f
 
 
 
-=== DERIVATION_CLASS: late_analogy (29) ===
+=== DERIVATION_CLASS: late_analogy (28) ===
 
 
 
@@ -8484,27 +8488,27 @@ NOTE: Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero
 
 
 # find
-PROTO: *fúnðanǭ
-EXPECTED: fundene
-OUTPUTS: fundene
+PROTO: *fúnðanai
+EXPECTED: fundne
+OUTPUTS: fundne
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *fúnðanǭ
+English Proto Input: *fúnðanai
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *fúndanǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Fronting Early: *fúndænǭ<br>OE Unstressed Long Vowel Shortening: *fúndænæ<br>OE Unstressed AE Merger: *fúndene |
+| **Northwest and West Germanic**<br>PNWGmc Unstressed Ai Monophthongization: *fúnðanē<br>PWGmc Dental Hardening: *fúndanē<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Non High Syn: *fúndnē<br>OE Unstressed Long Vowel Shortening: *fúndne |
 
 
 
 ### Orthography & surface
 
-Outcome: fundene
+Outcome: fundne
 
-NOTE: Paradigm-cell acc.sg.m. of strong past ptc, attested (Bosworth-Toller s.v. findan: "Beón i hergeata ww fundene, 414, 4 note"; cf. Hall s.v. tō-fundennes). Regular Verner *ð → *d, intervocalic *n triggers medial fronting *-an- → *-en-, bimoric *-ǭ → -e. Nom.sg. funden is analogical (Campbell §334, Luick §301,3, Brunner §366 Anm. 3). See DEV_NOTES §17.10.30–32.
+NOTE: Selected strong masculine nominative plural past participle, not accusative singular. Strunk1904 pp.15,82: Juliana335 fundne, expressly ptc npm.; Fulk2018 pp.209,284 supplies participial -an- and strong nom.pl. -ai. Full compositional *funðanai: ai monophthongization, dental hardening, SC114 nonhigh syncope, ending shortening. Comparative infinitive unchanged. Funden/fundene remain attested with inherited allomorph and analogical-restoration questions; no categorical claim that every -en is analogical.
 
 
 
@@ -8531,32 +8535,6 @@ Old English Orthography: *fyrhte
 Outcome: fyrhte
 
 NOTE: §17.45.3c: target retargeted to obl.sg./pl. paradigm cell fyrhte (BT: Guth. 88,18; 92,1; Bl.H. 57,20; Hml.S.; Ll.Th. 378,22; etc.). Bare-stem nom.sg. *fyrht is unattested due to homonymy with adj. forht (§17.45.3b). Lautgesetzlich derivation: *fúrxtīn → *fúrxtī (NWGmcInStemNLoss, post-PWGmc *-n loss after unstressed *ī, R/T §3.3.1) → *fúrxti (long-V shortening) → *fýrxti (i-umlaut) → fyrhte (Campbell §589.7: -e < -i < -in). §17.46: PROTOFORM updated from *fúrxtīn (which was technically the post-PWGmc-apocope shape, not a true PGmc surface form) to the PGmc gen.sg. *fúrxtīnaz. The nominative is not the selected historical input for this OE form; following project convention, the gen.sg. is used as the representative oblique cell; other oblique forms also converge: the dat.sg. *fúrxtīni, acc.sg. *fúrxtīnų, nom.pl. *fúrxtīniz, and the bare-stem post-apocope *fúrxtīn all derive fyrhte equally well in the current cascade (probed 2026-04-30, all five → fyrhte). Gen.sg. was selected specifically to exercise the longest oblique tail (-naz, requiring NWGmcZLoss, PWGmcFinalBareALoss, NWGmcInStemNLoss, OE long-V shortening, i-umlaut, all in correct relative chronology) and to test that the §17.45 chronology fix and §17.46 stressed-long-ī tier together produce a robust derivation regardless of which oblique cell is chosen as input.
-
-
-
-# hammer
-PROTO: *xámaras
-EXPECTED: hameres
-OUTPUTS: hameres
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *xámaras
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *xámæræs<br>OE Unstressed AE Merger: *xámeres |
-
-
-
-### Orthography & surface
-
-Old English Orthography: h*ámeres
-Outcome: hameres
-
-NOTE: Note: using gen.sg. *xamaras (> hameres). Both hamor and hamer attested; hameres is the regular reflex via a-fronting (R/T §5.1.2, §6.9.6). hamores has unexplained -o- in unstressed syllable (R/T §3.1.5).
 
 
 
@@ -9071,7 +9049,7 @@ NOTE: Paradigm-cell target: GenSg þistles (masc. a-stem). NomSg simplex *þistl
 
 
 
-=== DERIVATION_CLASS: attested_variant (5) ===
+=== DERIVATION_CLASS: attested_variant (6) ===
 
 
 
@@ -9123,6 +9101,32 @@ Old English Orthography: *éorþkunde
 Outcome: eorþcunde
 
 NOTE: Attested weak neuter accusative singular in Genesis A 1627, agreeing with neuter eád as the object of ageaf; poetic weak inflection without a determiner is independently licensed. Comparative nominative citation *érθa-kùnðaz and selected unaugmented weak-neuter *érθa-kùnðǭ are PGmc cells, not different historical stages. The ending is bimoric nasal *-ōⁿ, not trimoric or an inserted -an- formation. SC040 OEMedUnstressedULowering computes a nonfinal medial heavy head after initial H; world instead accommodates initial LH. Temporary prominence is decoded within SC040; inherited SC038 and all accepted histories stay unchanged. attested_variant describes the documentary cell, not irregular phonology. No claim to derive the entire -cund paradigm.
+
+
+
+# hammer
+PROTO: *xámaraz
+EXPECTED: hamer
+OUTPUTS: hamer
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *xámaraz
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *xámara<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *xámar<br>EAF Brightening Unstressed: *xámær<br>OE Unstressed AE Merger: *xámer |
+
+
+
+### Orthography & surface
+
+Old English Orthography: h*ámer
+Outcome: hamer
+
+NOTE: Selected a-stem nominative singular citation form, OE nom./acc. syncretism acknowledged. Wright-Wuelcker1884 I272.36: Malleus, hamer, Cotton Cleopatra A.III glossary (not Aelfric). Orel2003 printed158 (not PDF197); Kroonen2013 p.206. Final z/a loss closes the final medial-vowel syllable before SC114; ordinary reduction gives hamer. Attested hameres/hamores and hamor remain documented; predicted hamres is not claimed attested.
 
 
 

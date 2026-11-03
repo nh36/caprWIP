@@ -1,8 +1,8 @@
-# find — OE fundene
+# find — OE fundne
 
 PROTO: *fínθaną
-PROTOFORM: *fúnðanǭ
-COUNTERPART: fundene
+PROTOFORM: *fúnðanai
+COUNTERPART: fundne
 DERIVATION_CLASS: late_analogy
 
 ### Transducer input and output
@@ -11,57 +11,80 @@ DERIVATION_CLASS: late_analogy
 | :--- | :--- |
 | lexical item | find |
 | citation reconstruction / lexeme label | *fínθaną |
-| selected input form | *fúnðanǭ |
-| Old English target | fundene |
+| selected input form | *fúnðanai |
+| grammatical cell | strong masculine nominative plural past participle |
+| Old English target | fundne |
 | classification | late_analogy |
-| documented output | *fúnðanǭ -> fundene |
+| documented output | *fúnðanai -> fundne |
 
 ### Reconstruction and comparative evidence
 
-The inherited verb is the strong verb [fínθaną]{.iv .recon lang=pgmc sort=finthana role=source_protoform} ‘find’, continued by Old English
-[`findan`]{.iv lang=oe sort=findan role=comparison_form} 'find' [@RingeTaylor2014, 344]. The form followed here, [fúnðanǭ]{.iv .recon lang=pgmc sort=fundhano role=selected_input} ‘find’,
-belongs to the past-participial paradigm rather than to the infinitive. It
-represents an oblique singular form of the participle.
+The inherited strong verb [fínθaną]{.iv .recon lang=pgmc sort=finthana role=source_protoform}
+'find' underlies Old English [`findan`]{.iv lang=oe sort=findan role=comparison_form}
+'find'. Its infinitive identifies the lexeme, not the participial cell
+followed here. The dental alternation and the participle's root grade must
+be distinguished from its inflectional ending
+[@RingeTaylor2014, pp. 140, 344; @Fulk2018, pp. 108, 253, 284--288].
 
-The familiar dictionary form [`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found' is not
-the form compared here. The derivational input instead models an attested
-participial form directly, rather than treating the infinitive or the ordinary
-dictionary headword as primary. It therefore reaches [`fundene`]{.iv lang=oe sort=fundene role=target_form} 'found (p.p.)' in the form
-where the trace and the attested evidence match directly.
+The selected [fúnðanai]{.iv .recon lang=pgmc sort=fundhanai role=selected_input}
+is a compositional reconstruction: the participial stem in inherited
+\emph{-an-} takes the strong masculine nominative plural adjectival
+ending \emph{-ai}. Fulk supplies the relevant inflection and distinguishes
+the ordinary participial \emph{-an-} formation from rarer inherited
+\emph{-in-}; he does not print this whole accented word
+[@Fulk2018, p. 209, §9.2, p. 284, §12.30].
+The choice is therefore not a claim that every Old English participial
+\emph{-en-} must result from analogy.
 
 ### Old English evidence
 
-Bosworth-Toller records [`fundene`]{.iv lang=oe sort=fundene role=target_form} 'found (p.p.)' 'found' under [`findan`]{.iv lang=oe sort=findan role=comparison_form} 'find', citing the form in
-_Beón þá herigeata swa fundene_ [@BosworthToller1898, 219]. Clark Hall likewise preserves the
-participial stem in forms such as [`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found' and `tō-fundennes` 'finding'
-[@ClarkHall1960, 124].
+The selected [`fundne`]{.iv lang=oe sort=fundne role=target_form} 'found'
+is directly attested in *Juliana* 335. Strunk prints the plural construction
+*gif we gemete sin on moldwege / oþþe feor oþþe neah fundne weorþen*;
+his glossary explicitly labels the form *ptc npm.* The masculine
+nominative plural identification is thus supported by syntax and the
+editor's analysis, not inferred from a successful derivation
+[@Strunk1904, pp. 15, 82]. The poem, manuscript and modern edition
+have different dates; the edition's date does not date the phonology.
 
-The ordinary dictionary headword for the participle is [`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found', but the
-relevant comparison form for this entry is the attested oblique [`fundene`]{.iv lang=oe sort=fundene role=target_form} 'found (p.p.)' 'found'.
-It is an Old English form in its own right, not a merely convenient probe.
+The longer [`fundene`]{.iv lang=oe sort=fundene role=comparison_form}
+'found' remains genuine evidence. Toller cites *Beón þá herigeata swa
+fundene*, a plural construction, not the masculine accusative singular
+previously assigned to it [@Toller1921, p. 219].
+The familiar dictionary participle
+[`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found' and the
+formation *tō-fundennes* 'finding' remain relevant background
+[@ClarkHall1960, p. 124]. None is suppressed by selecting the independently
+attested syncopated plural.
 
 ### Development to Old English
 
-From [fúnðanǭ]{.iv .recon lang=pgmc sort=fundhano role=selected_input} ‘find’, the participial oblique develops through regular loss and
-weakening of the final ending, yielding [`fundene`]{.iv lang=oe sort=fundene role=target_form} 'found (p.p.)'. In that cell both the
-consonantism and the medial vowel history remain regular.
+Unstressed final \emph{ai} first becomes long \emph{ē}. Dental hardening
+gives [fúndanē]{.iv .recon lang=preoe sort=fundane role=comparison_form}.
+Its medial \emph{a} is in an open posttonic syllable before the still-heavy
+final syllable. [SC114 OENonHighSyn](#rule-OENonHighSyn) therefore gives
+[fúndnē]{.iv .recon lang=preoe sort=fundne role=comparison_form};
+later unstressed shortening supplies final \emph{e}, yielding
+[`fundne`]{.iv lang=oe sort=fundne role=regular_output}.
+No analogy intervenes within this selected span.
 
-The broader participial paradigm fixes the interpretation. The more
-familiar nominative [`funden`]{.iv lang=oe sort=funden role=comparison_form} 'found (p.p.)' is the ordinary dictionary form, whereas the
-oblique form [`fundene`]{.iv lang=oe sort=fundene role=target_form} 'found (p.p.)' is the attested form compared here.
+The retained late-analogy classification concerns the wider participial
+paradigm, not an analogical operation needed to manufacture this output.
+The relationship of the competing inherited suffixes, the longer plural
+and subsequent levelling remains a separate problem. A regular cell does
+not by itself settle that paradigm.
 
 ### Paradigm comparison
 
-
-
-
-
-| PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
+| PGmc cell / interpretation | Candidate input | Actual model output | OE comparison | Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| citation infinitive | [`*fínθaną`]{.iv lang=pgmc sort=finthana role=source_protoform} | inherited verb [`findan`]{.iv lang=oe sort=findan role=comparison_form} | [`findan`]{.iv lang=oe sort=findan role=comparison_form} | establishes the lexeme, but not the form compared here |
-| nominative participial line | [`*fúnðanaz`]{.iv lang=pgmc sort=fundhanaz role=comparison_form} | ordinary dictionary [`funden`]{.iv lang=oe sort=funden role=comparison_form} type | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | important paradigm background, but not the form compared here |
-| oblique participle compared here | [`*fúnðanǭ`]{.iv lang=pgmc sort=fundhano role=selected_input} | regular output: [`fundene`]{.iv lang=oe sort=fundene role=regular_output} | [`fundene`]{.iv lang=oe sort=fundene role=target_form} | exact match between input, output, and attested cell |
+| selected strong masculine nominative plural | [fúnðanai]{.iv .recon lang=pgmc sort=fundhanai role=selected_input} | [`fundne`]{.iv lang=oe sort=fundne role=regular_output} | [`fundne`]{.iv lang=oe sort=fundne role=target_form}, *Juliana* 335 | complete regular selected span |
+| participial nominative singular in \emph{-an-} | [fúnðanaz]{.iv .recon lang=pgmc sort=fundhanaz role=comparison_form} | *fundan* | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | not a complete successful derivation of the attested comparison |
+| inherited \emph{-in-} alternative | [fúnðinaz]{.iv .recon lang=pgmc sort=fundhinaz role=comparison_form} | *fynden* | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | umlaut prevents treating this probe as a solution |
+| full uncontracted masculine accusative | [fúnðananǭ]{.iv .recon lang=pgmc sort=fundhanano role=comparison_form} | *fundenne* | [`fundene`]{.iv lang=oe sort=fundene role=comparison_form} | different ending and output; wider history unresolved |
 
-The oblique participle is the relevant comparison form. It matches the
-derivational input and Old English form directly, while the nominative participial headword remains a
-different presentation cell within the same paradigm.
+The former shortened input [fúnðanǭ]{.iv .recon lang=pgmc sort=fundhano role=comparison_form}
+did not establish an inherited masculine accusative matching the quoted
+plural. It is not retained as evidence that the longer attested form has
+been explained. Conversely, these unsuccessful comparisons do not invalidate
+the independently supported nominative plural.

@@ -2071,9 +2071,9 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2011"></a>
 
-## 2011: find / fundene
+## 2011: find / fundne
 
-Current citation: *fínθaną (pgmc); selected input: *fúnðanǭ (pgmc; variety: none; explicit_sidecar).
+Current citation: *fínθaną (pgmc); selected input: *fúnðanai (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: late_analogy.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -3293,10 +3293,10 @@ Coverage: 4 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2053"></a>
 
-## 2053: hammer / hameres
+## 2053: hammer / hamer
 
-Current citation: *xámaraz (pgmc); selected input: *xámaras (pgmc; variety: none; explicit_sidecar).
-Runnable: 1; derivation class: late_analogy.
+Current citation: *xámaraz (pgmc); selected input: *xámaraz (pgmc; variety: none; equality_convention).
+Runnable: 1; derivation class: attested_variant.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
 | --- | --- | --- | --- | --- | --- |
@@ -7670,9 +7670,9 @@ Coverage: 4 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2201"></a>
 
-## 2201: soul / sāwol
+## 2201: soul / sāwle
 
-Current citation: *sáiwalō (pgmc); selected input: *sáiwalō (pgmc; variety: none; equality_convention).
+Current citation: *sáiwalō (pgmc); selected input: *sáiwalǭ (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -10019,9 +10019,9 @@ Coverage: 4 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2282"></a>
 
-## 2282: west / westene
+## 2282: west / west
 
-Current citation: *wéstanē (pgmc); selected input: *wéstanē (pgmc; variety: none; equality_convention).
+Current citation: *wéstą (pgmc); selected input: *wéstą (pgmc; variety: none; equality_convention).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
