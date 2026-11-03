@@ -35,6 +35,10 @@ are GENERATED or ARCHIVE.
 | `audits/*.md` adjudication memos | scientific-reasoning | Per-SC scientific reasoning; each carries a machine-readable `Registry-verdict:` line that must agree with the registry |
 | `literature_dossiers/*.md`, `literature_dossiers/*/*.md` | scientific-reasoning | Source-backed literature dossiers, including thematic subdirectories; existing and newly authored documents remain SOURCE, not graph projections |
 | `Germanic/docs/lexeme_reports/model_entries/*.model.md` | scientific-reasoning | Mature lexical histories consumed by the publication graph; generated lexical reports are not editable SOURCE |
+| `Germanic/docs/lexeme_reports/model_entries/*.source_ledger.md` | scientific-reasoning | Source verification and attestation ledgers accompanying the mature lexical histories; never substitutes for the generated reconstruction survey |
+| `Germanic/docs/lexeme_reports/report_schema.md`, `Germanic/docs/lexeme_reports/pgmc_integration/README.md`, `Germanic/docs/lexeme_reports/pgmc_integration/editorial_cases.tsv` | scientific-reasoning | Derivation-class definitions and explicit editorial selection/publication pointers; generated manifests and survey judgements remain owned by their existing builders |
+| `Germanic/data/entry_stage_metadata.tsv` | machine-state | Explicit PROTOFORM stage/variety and same-stage cell exceptions; `tools/entry_stages.py` alone resolves these alongside the fixed Proto-Germanic PROTO axis |
+| `docs/refs.bib` | publication-prose | Shared bibliographic identities for cited research and primary-source editions |
 | `reader_facing/[0-9]*.md`, `reader_facing/chap*-intro.md`, `book_dossiers/*.md` | publication-prose | Exactly one authoritative reader file per published SC, owned only by `sc_registry.tsv.source_reader_facing_file`; shared historical context belongs in chapter introductions. Composite networks of the same SC stay together. Book dossiers may remain grouped. `adjudicate.py SCNNN --prepare` follows registry pointers |
 | `cascade_baseline/cascade_baseline_summary.json` | machine-state | Frozen fingerprints (change only via the explicit adjudication/refreeze procedure) |
 | `cascade_baseline/approved_input_migrations.tsv` | machine-state | Exact approved old/new selected input, counterpart and output by stable OE row ID and concept, with adjudication pointer. Gift changes input only; knee changes its selected paradigm cell; SC034 straw changes regular output only, retaining the attested target as a known mismatch. Every undeclared field/multiplicity change and archival rewrite remains forbidden |
@@ -45,6 +49,7 @@ are GENERATED or ARCHIVE.
 | `cascade_baseline/approved_sc034_output_migration.json` | machine-state | Exact approved straw output and match-flag transition, unchanged input/attested target. Apply with `adjudicate.py SC034 --adopt-cell-baseline --approval approved_sc034_output_migration.json`; preserves separate pre-SC034 snapshots and every earlier approval/archive |
 | `cascade_baseline/approved_sc015_targets_migration.json` | machine-state | Exact authorized three-learn target/output transition accompanying SC015's reformulation, with unchanged inherited inputs and match flags. Apply with `adjudicate.py SC015 --adopt-cell-baseline --approval approved_sc015_targets_migration.json`; preserves separate pre-SC015 snapshots and every older approval/archive |
 | `cascade_baseline/approved_world_input_migration.json` | machine-state | Exact world2302 input-only transition to inherited compact i-stem; unchanged target, output, context and match flag. Apply with `adjudicate.py SC036 --adopt-cell-baseline --approval approved_world_input_migration.json`; preserves `*_pre_sc036_world.*` and all older archives |
+| `cascade_baseline/approved_nonhigh_cells_migration.json` | machine-state | Declared interface for the measured SC114 find/hammer/soul/west transition after the SC001 native and independent global parser gates pass. Apply only with `adjudicate.py SC114 --adopt-cell-baseline --approval approved_nonhigh_cells_migration.json`; preserve `*_pre_sc114_nonhigh_cells.*`, the literal original380 archive and every earlier approval |
 | `Germanic/docs/CURRENT_STATE.md` | publication-prose | Current phase and standard commands (the next SC is derived: `adjudicate.py --next`) |
 | `Germanic/docs/assembly/lexical_editorial_order.tsv` | publication-prose | Explicit exceptions to the default lexical presentation order (derivation class, then alphabetical Modern English headword; a revisable editorial policy): `row_id`, `sort_as` headword, `reason`. Empty unless a scholarly decision requires an exception. Consumed only by `build_class_manifests.py`; it never alters an entry's data or identity |
 | `Germanic/docs/README.md`, `README.md` | publication-prose | Navigation |
@@ -239,6 +244,26 @@ recompile the FST. The graph's builders do not invoke these render wrappers.
 5. Edit SOURCE files only: `sc_registry.tsv`, `chronology_edges.tsv`, memo, `germanic.txt` if the verdict requires, and the publication prose listed by `--prepare`.
 6. `python3 Germanic/tools/adjudicate.py SCNNN --finalize` (control-plane refresh of every derived artifact via the artifact graph, then propagation checks — never choose generators by hand)
 7. `cd Germanic/tests && python3 -m pytest -q`
+
+An explicitly authorised coordinated adoption may name its owning SCs in the
+run decision's `coordinated_adjudications` (the primary SC first). Each keeps
+its own registry judgement and memorandum, and every named SC must supply its
+actual `--finalize` receipt. Technical support-stage decisions do not acquire
+historical stage, scope or confidence from this coordination.
+
+A protected cell transition is a separate `cell_transition` declaration in
+that decision: a new `approval_filename`, the measured `approval`, `candidate`
+baseline and complete `migrations` list. Before SOURCE edits, the journal
+rehearses the existing cell adopter in a temporary directory, validates the
+exact transition and original legacy projection, requires append-only
+preservation of the prior migration ledger and pins every permitted protected
+effect's SHA256. Old approval files and pre-transition archives cannot be
+overwritten. Ordinary SOURCE permission still never admits protected baseline
+outputs. Write the declared new approval and migration-ledger extension, obtain
+fresh production bins with `--evidence`, then use the existing
+`--adopt-cell-baseline --approval ...` command. Its successful receipt is
+mandatory in addition to all coordinated finalisations; no hand-edited
+baseline can substitute for that interface.
 
 ## Moving a rule (or any other SOURCE-only edit)
 

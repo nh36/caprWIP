@@ -43,10 +43,13 @@ recorded as resolved merely because mechanical checks pass.
 from __future__ import annotations
 
 import hashlib
+import csv
+import io
 import json
 import re
 import shutil
 import sys
+import tempfile
 from pathlib import Path
 
 import adjudication_control
@@ -188,6 +191,66 @@ def _focused_tests(receipt: dict) -> bool:
     return False
 
 
+def _cell_transition_files(transition: dict, directory: Path) -> dict[Path, bytes]:
+    """Derive exact protected effects by rehearsing the existing cell adopter."""
+    import cascade_baseline as baseline
+
+    required = {"approval_filename", "approval", "candidate", "migrations"}
+    if not isinstance(transition, dict) or set(transition) != required:
+        raise ValueError("invalid controlled cell-transition declaration")
+    filename = transition["approval_filename"]
+    if (not isinstance(filename, str)
+            or not re.fullmatch(r"approved_[a-z0-9_]+_migration\.json", filename)
+            or (directory / filename).exists()):
+        raise ValueError("cell transition requires a new, explicitly named approval")
+    approval, candidate = transition["approval"], transition["candidate"]
+    previous = baseline.read_baseline(
+        directory / "cascade_baseline_outputs.tsv",
+        directory / "cascade_baseline_summary.json")
+    baseline.validate_cell_transition(previous, candidate, approval)
+    migration_path = directory / "approved_input_migrations.tsv"
+    with migration_path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle, delimiter="\t")
+        fields, existing = reader.fieldnames, list(reader)
+    old_records = {r["row_id"]: r for r in previous["records"]}
+    additions = [
+        dict(row_id=c["row_id"], concept=old_records[c["row_id"]]["concept"],
+             counterpart=c["before"]["counterpart"],
+             new_counterpart=c["after"]["counterpart"],
+             old_proto=c["before"]["proto"], new_proto=c["after"]["proto"],
+             old_outputs=c["before"]["outputs"], new_outputs=c["after"]["outputs"],
+             adjudication_memo=approval["adjudication_memo"])
+        for c in approval["changes"]]
+    if transition["migrations"] != existing + additions:
+        raise ValueError("cell migration must preserve every earlier approval and append exactly its declared changes")
+    original = migration_path.read_bytes()
+    if not original.endswith(b"\n"):
+        raise ValueError("existing migration ledger lacks its final newline")
+    stream = io.StringIO(newline="")
+    csv.DictWriter(stream, fields, delimiter="\t", lineterminator="\n").writerows(additions)
+    migrations = original + stream.getvalue().encode("utf-8")
+    suffix = approval["adjudication"].lower()
+    if "transition_id" in approval:
+        suffix += "_" + approval["transition_id"]
+    archives = [f"cascade_baseline_{kind}_pre_{suffix}.{extension}"
+                for kind, extension in (("outputs", "tsv"), ("summary", "json"))]
+    if any((directory / name).exists() for name in archives):
+        raise ValueError("cell transition cannot overwrite an existing pre-transition archive")
+    with tempfile.TemporaryDirectory(prefix="capr_cell_plan_") as temporary:
+        isolated = Path(temporary)
+        for name in ("cascade_baseline_outputs.tsv", "cascade_baseline_summary.json",
+                     "cascade_baseline_outputs_legacy380.tsv"):
+            shutil.copyfile(directory / name, isolated / name)
+        (isolated / migration_path.name).write_bytes(migrations)
+        baseline.adopt_cell_baseline(candidate, isolated, approval)
+        files = {directory / name: (isolated / name).read_bytes() for name in [
+            "cascade_baseline_outputs.tsv", "cascade_baseline_summary.json", *archives]}
+    files[migration_path] = migrations
+    files[directory / filename] = (
+        json.dumps(approval, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+    return files
+
+
 class Run:
     """One durable adjudication run (journal under .capr-work/runs/<sc>/)."""
 
@@ -254,6 +317,16 @@ class Run:
             if "DEFER" in decision["verdict"].split("/") and str(path) in executable:
                 raise WorkflowError("DEFER permits documentation, not executable or selected-input propagation")
             targets[str(path)] = sha
+        if transition := decision.get("cell_transition"):
+            try:
+                files = _cell_transition_files(transition, artifact_graph.BASELINE_DIR)
+            except (OSError, ValueError, KeyError, TypeError) as exc:
+                raise WorkflowError(f"invalid approved cell transition: {exc}") from exc
+            targets.update({str(p.resolve()): hashlib.sha256(data).hexdigest()
+                            for p, data in files.items()})
+            before.update(self._input_hashes(
+                p for p in artifact_graph.BASELINE_DIR.iterdir()
+                if p.is_file() and p.resolve() not in generated))
         before.update(self._input_hashes(targets))
         state["stages"]["PREFLIGHT"]["scope"] = "investigation"
         state["propagation"] = {"before": before, "targets": targets,
@@ -284,6 +357,10 @@ class Run:
         source_delta = {p for p in before_changes.keys() | current_changes.keys()
                         if before_changes.get(p) != current_changes.get(p)}
         allowed = set(propagation["generated_paths"])
+        import artifact_graph
+        allowed.update(str(p.relative_to(REPO_ROOT))
+                       for node in artifact_graph.nodes() for p in node.outputs()
+                       if p.is_relative_to(REPO_ROOT))
         allowed.update(str(Path(p).relative_to(REPO_ROOT))
                        for p in propagation["targets"] if Path(p).is_relative_to(REPO_ROOT))
         if source_delta - allowed:
@@ -451,22 +528,37 @@ class Run:
             receipts = evidence.get("receipts", [])
             if not receipts:
                 raise WorkflowError("PROPAGATE requires successful finalisation execution receipts")
+            decision = state["stages"]["DECIDE"]["evidence"]
+            transition = decision.get("cell_transition")
+            adopter = ([transition["approval"]["adjudication"], "--adopt-cell-baseline",
+                        "--approval", transition["approval_filename"]] if transition else None)
             for receipt in receipts:
                 try:
-                    adjudication_control.verify_receipt(receipt, allow_source_change=True)
+                    is_adoption = adopter is not None and _script_arguments(
+                        receipt, "Germanic/tools/adjudicate.py") == adopter
+                    adjudication_control.verify_receipt(
+                        receipt, allow_source_change=True, current=not is_adoption)
                 except (ValueError, OSError, KeyError) as exc:
                     raise WorkflowError(f"PROPAGATE receipt invalid: {exc}") from exc
-            if not any(_script_arguments(r, "Germanic/tools/adjudicate.py") ==
-                       [self.sc_id, "--finalize"] for r in receipts):
-                raise WorkflowError("PROPAGATE requires the SC-specific --finalize command")
-            final_preflight = adjudication_control.preflight(self.sc_id, "finalize", probe_runner=False)
-            if final_preflight.blocked:
-                raise WorkflowError(f"finalisation preflight blocked: {final_preflight.render()}")
+            commands = [_script_arguments(r, "Germanic/tools/adjudicate.py") for r in receipts]
+            coordinated = decision.get("coordinated_adjudications", [self.sc_id])
+            if any([sc, "--finalize"] not in commands for sc in coordinated):
+                raise WorkflowError("PROPAGATE requires each SC-specific --finalize command")
+            if adopter and adopter not in commands:
+                raise WorkflowError("PROPAGATE requires the declared --adopt-cell-baseline receipt")
+            preflights = [adjudication_control.preflight(sc, "finalize", probe_runner=False)
+                          for sc in coordinated]
+            for preflight in preflights:
+                if preflight.blocked:
+                    raise WorkflowError(f"finalisation preflight blocked: {preflight.render()}")
+            final_preflight = preflights[0]
             certified_identity = receipts[-1]["source_identity_after"]["identity_sha256"]
             if (final_preflight.source.get("identity_sha256") != certified_identity
                     or adjudication_control.source_identity()["identity_sha256"] != certified_identity):
                 raise WorkflowError("SOURCE changed after the finalisation receipt")
             propagation["finalization_preflight"] = final_preflight.to_json()
+            propagation["coordinated_finalization_preflights"] = [
+                preflight.to_json() for preflight in preflights]
             propagation["completed_hashes"] = current
         record = {
             "status": "complete",
@@ -507,6 +599,22 @@ class Run:
                 f"verdict {verdict!r} is not in the controlled vocabulary "
                 f"({sorted(RESOLVED_VERDICTS)} or DEFER)")
         resolved = any(t in RESOLVED_VERDICTS for t in tokens)
+        coordinated = evidence.get("coordinated_adjudications", [self.sc_id])
+        if (not isinstance(coordinated, list) or self.sc_id not in coordinated
+                or coordinated[0] != self.sc_id
+                or any(not isinstance(sc, str) or not re.fullmatch(r"SC[0-9]{3}", sc)
+                       for sc in coordinated) or len(set(coordinated)) != len(coordinated)):
+            raise WorkflowError("coordinated adjudications must uniquely name the owning SCs, including this run")
+        if transition := evidence.get("cell_transition"):
+            if "DEFER" in tokens:
+                raise WorkflowError("DEFER cannot authorise protected selected-cell adoption")
+            try:
+                if transition["approval"]["adjudication"] not in coordinated:
+                    raise ValueError("cell approval is not owned by a declared coordinated adjudication")
+                import artifact_graph
+                _cell_transition_files(transition, artifact_graph.BASELINE_DIR)
+            except (OSError, ValueError, KeyError, TypeError) as exc:
+                raise WorkflowError(f"invalid approved cell transition: {exc}") from exc
         failing_controls = [
             c for c in evidence.get("negative_controls", [])
             if isinstance(c, dict) and c.get("required", True)

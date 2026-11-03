@@ -648,7 +648,7 @@ def propagation_path_kind(path: Path, *, generated: set[Path]) -> str:
         if len(fields) < 4 or "GENERATED" in fields[2]:
             continue
         for pattern in re.findall(r"`([^`]+)`", fields[1]):
-            base = REPO_ROOT if pattern.startswith(("Germanic/", "backend/")) else SC_DIR
+            base = REPO_ROOT if pattern.startswith(("Germanic/", "backend/", "docs/")) else SC_DIR
             if path.match(str(base.resolve() / pattern)):
                 return "SOURCE"
     return "UNKNOWN"

@@ -14,6 +14,8 @@ They demonstrate the Milestone 3 guarantees:
 """
 import json
 import hashlib
+import copy
+import csv
 import os
 import shutil
 import subprocess
@@ -215,6 +217,149 @@ class JournalLifecycleTests(RunHarness):
         run.complete_stage("SNAPSHOT", evidence={"no_executable_experiment": "editorial adjudication"})
         with self.assertRaisesRegex(ar.WorkflowError, "no-experiment exception"):
             run.complete_stage("INVESTIGATE", evidence={"experiments": [{"ok": True}]})
+
+
+class ControlledCellPropagationTests(RunHarness):
+    def setUp(self):
+        super().setUp()
+        import cascade_baseline as baseline
+        self.baseline = baseline
+        self.directory = ag.BASELINE_DIR
+        self.directory.mkdir()
+        old = dict(row_id="1", concept="fixture", proto="*a", proto_norm="a",
+                   fst_input="a", word_stress="stressed", phonological_finality="final",
+                   counterpart="x", accepted="1", output_count="1", match="1", outputs="x")
+        new = dict(old, proto="*ba", proto_norm="ba", fst_input="ba", counterpart="y", outputs="y")
+
+        def candidate(row):
+            lexical = baseline.projection_sha256([row], "proto_norm")
+            return dict(records=[row], summary=dict(
+                total_lexemes=1, accepted=1, rejected=0, matched=1, mismatched=0,
+                ambiguous_outputs=0, legacy_subset_count=1, legacy_subset_sha256=lexical,
+                lexical_outputs_sha256=lexical,
+                outputs_sha256=baseline.projection_sha256([row], "fst_input")))
+
+        previous, after = candidate(old), candidate(new)
+        baseline.write_outputs(previous, self.directory)
+        shutil.copyfile(self.directory / "cascade_baseline_outputs.tsv",
+                        self.directory / "cascade_baseline_outputs_legacy380.tsv")
+        fields = ("proto", "proto_norm", "fst_input", "counterpart", "outputs", "match")
+        approval = dict(
+            adjudication="SC902",
+            adjudication_memo="Germanic/docs/sound_changes/audits/sc902-adjudication.md",
+            previous_summary={k: previous["summary"][k] for k in (
+                "outputs_sha256", "lexical_outputs_sha256", "legacy_subset_sha256")},
+            legacy_archive_sha256=previous["summary"]["legacy_subset_sha256"],
+            transition_id="fixture_cells",
+            changes=[dict(row_id="1", before={k: old[k] for k in fields},
+                          after={k: new[k] for k in fields})])
+        migration = dict(
+            row_id="1", concept="fixture", counterpart="x", new_counterpart="y",
+            old_proto="*a", new_proto="*ba", old_outputs="x", new_outputs="y",
+            adjudication_memo=approval["adjudication_memo"])
+        self.ledger = self.directory / "approved_input_migrations.tsv"
+        with self.ledger.open("w", newline="") as handle:
+            csv.DictWriter(handle, list(migration), delimiter="\t", lineterminator="\n").writeheader()
+        self.transition = dict(
+            approval_filename="approved_fixture_cells_migration.json",
+            approval=approval, candidate=after, migrations=[migration])
+
+    def decision(self, **changes):
+        return dict(DECISION, coordinated_adjudications=[SC, "SC902"],
+                    cell_transition=self.transition, **changes)
+
+    def test_exact_protected_effects_require_the_existing_adopter_and_each_owner(self):
+        original = (self.directory / "cascade_baseline_outputs.tsv").read_bytes()
+        run = self.start()
+        self.advance_to(run, "DECIDE", decision=self.decision())
+        run.begin_propagation({})
+        planned = ar._cell_transition_files(self.transition, self.directory)
+        for path, data in planned.items():
+            if path.name.startswith("approved_"):
+                path.write_bytes(data)
+        self.baseline.adopt_cell_baseline(
+            self.transition["candidate"], self.directory, self.transition["approval"])
+        self.assertEqual(
+            (self.directory / "cascade_baseline_outputs_pre_sc902_fixture_cells.tsv").read_bytes(),
+            original)
+        self.assertEqual(
+            (self.directory / "cascade_baseline_outputs_legacy380.tsv").read_bytes(), original)
+        finalize = [self.receipt([sys.executable, str(self.entrypoint), sc, "--finalize"])
+                    for sc in [SC, "SC902"]]
+        with self.assertRaisesRegex(ar.WorkflowError, "adopt-cell-baseline"):
+            run.complete_stage("PROPAGATE", evidence={"receipts": finalize})
+        adopt = self.receipt([sys.executable, str(self.entrypoint), "SC902",
+                              "--adopt-cell-baseline", "--approval",
+                              self.transition["approval_filename"]])
+        with self.assertRaisesRegex(ar.WorkflowError, "each SC-specific"):
+            run.complete_stage("PROPAGATE", evidence={"receipts": [adopt, finalize[0]]})
+        run.complete_stage("PROPAGATE", evidence={"receipts": [adopt, *finalize]})
+        self.assertEqual(run.frontier(), "VALIDATE")
+
+    def test_undeclared_drift_prior_approval_replacement_and_defer_fail_closed(self):
+        for case in ("drift", "extra_migration", "old_approval", "unowned", "defer"):
+            with self.subTest(case=case):
+                transition = copy.deepcopy(self.transition)
+                decision = self.decision()
+                decision["cell_transition"] = transition
+                if case == "drift":
+                    transition["candidate"]["records"][0]["outputs"] = "undeclared"
+                elif case == "extra_migration":
+                    transition["migrations"].append(dict(transition["migrations"][0]))
+                elif case == "old_approval":
+                    (self.directory / transition["approval_filename"]).write_text("{}")
+                elif case == "unowned":
+                    decision["coordinated_adjudications"] = [SC]
+                else:
+                    decision["verdict"] = "DEFER"
+                run = ar.start(SC, runs_dir=self.tmp / ("runs-" + case))
+                with self.assertRaises(ar.WorkflowError):
+                    self.advance_to(run, "DECIDE", decision=decision)
+                (self.directory / transition["approval_filename"]).unlink(missing_ok=True)
+
+    def test_earlier_migration_rows_cannot_be_dropped(self):
+        with self.ledger.open("a", newline="") as handle:
+            old = dict(self.transition["migrations"][0], row_id="older")
+            csv.DictWriter(handle, list(old), delimiter="\t", lineterminator="\n").writerow(old)
+        with self.assertRaisesRegex(ValueError, "preserve every earlier approval"):
+            ar._cell_transition_files(self.transition, self.directory)
+
+    def test_previous_approval_remains_frozen_during_an_otherwise_valid_transition(self):
+        old_approval = self.directory / "approved_older_migration.json"
+        old_approval.write_text("frozen receipt\n")
+        run = self.start()
+        self.advance_to(run, "DECIDE", decision=self.decision())
+        run.begin_propagation({})
+        old_approval.write_text("rewritten\n")
+        self.assertFalse(run._sanctioned_changes(run.state()))
+        with self.assertRaisesRegex(ar.WorkflowError, "unexpected edits"):
+            run.complete_stage("PROPAGATE")
+
+    def test_new_owned_outputs_follow_declared_source_changes_not_filename_guessing(self):
+        run = self.start()
+        path = self.files["corpus"]
+        replacement = b"corpus v2\n"
+        modifications = {str(path.relative_to(self.tmp)): hashlib.sha256(replacement).hexdigest()}
+        self.advance_to(run, "DECIDE", decision=self.decision(
+            intended_source_modifications=modifications))
+        run.begin_propagation(modifications)
+        path.write_bytes(replacement)
+        generated = self.sc_dir / "new-owned-report.tsv"
+        generated.write_text("owned output\n")
+        with mock.patch.object(ag, "nodes", return_value=(
+                SimpleNamespace(outputs=lambda: [generated]),)):
+            self.assertTrue(run._sanctioned_changes(run.state()))
+            (self.sc_dir / "similar-but-unowned-report.tsv").write_text("not owned\n")
+            self.assertFalse(run._sanctioned_changes(run.state()))
+
+    def test_declared_sidecars_and_shared_bibliography_do_not_admit_other_docs(self):
+        for relative in (
+                "docs/refs.bib", "Germanic/data/entry_stage_metadata.tsv",
+                "Germanic/docs/lexeme_reports/model_entries/1-fixture.source_ledger.md"):
+            self.assertEqual(ag.propagation_path_kind(
+                self.tmp / relative, generated=set()), "SOURCE")
+        self.assertEqual(ag.propagation_path_kind(
+            self.tmp / "docs/unowned.md", generated=set()), "UNKNOWN")
 
 
 class ResumeAndInvalidationTests(RunHarness):
