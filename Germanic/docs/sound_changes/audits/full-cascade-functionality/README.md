@@ -1,5 +1,11 @@
 # Complete Old English cascade: genuine branching and domain loss
 
+Later post-acquisition work is recorded separately in
+[`repair-README.md`](repair-README.md). It proves a private one-character
+SC052 context-scoping correction, preserves the accepted production state,
+and exposes a distinct downstream contraction counterexample. The original
+diagnosis and evidence below remain the historical starting point.
+
 ## Identity
 
 SC052, `OEVelarPalatalization`, plus the complete `OldEnglish` relation and final
