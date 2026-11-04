@@ -7,13 +7,42 @@ import pytest
 
 PATH = (Path(__file__).resolve().parents[1] /
         "docs/sound_changes/audits/parser-formal-resolution/functionality.py")
-SPEC = importlib.util.spec_from_file_location("parser_functionality", PATH)
-proof = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(proof)
-sys.modules["functionality"] = proof
-ALIGNMENT_SPEC = importlib.util.spec_from_file_location("parser_alignment", PATH.with_name("alignment.py"))
-alignment = importlib.util.module_from_spec(ALIGNMENT_SPEC)
-ALIGNMENT_SPEC.loader.exec_module(alignment)
+def _load_helpers():
+    spec = importlib.util.spec_from_file_location("parser_functionality", PATH)
+    proof = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(proof)
+    alignment_spec = importlib.util.spec_from_file_location(
+        "parser_alignment", PATH.with_name("alignment.py"))
+    alignment = importlib.util.module_from_spec(alignment_spec)
+    missing = object()
+    previous = sys.modules.get("functionality", missing)
+    sys.modules["functionality"] = proof
+    try:
+        alignment_spec.loader.exec_module(alignment)
+    finally:
+        if previous is missing:
+            sys.modules.pop("functionality", None)
+        else:
+            sys.modules["functionality"] = previous
+    return proof, alignment
+
+
+proof, alignment = _load_helpers()
+
+
+@pytest.mark.parametrize("existing", [False, True])
+def test_helper_loading_preserves_unrelated_module_alias(monkeypatch, existing):
+    sentinel = object()
+    if existing:
+        monkeypatch.setitem(sys.modules, "functionality", sentinel)
+    else:
+        monkeypatch.delitem(sys.modules, "functionality", raising=False)
+    loaded_proof, loaded_alignment = _load_helpers()
+    assert loaded_alignment.analyze is loaded_proof.analyze
+    if existing:
+        assert sys.modules["functionality"] is sentinel
+    else:
+        assert "functionality" not in sys.modules
 
 
 @pytest.mark.parametrize(("arcs", "finals", "functional"), [
