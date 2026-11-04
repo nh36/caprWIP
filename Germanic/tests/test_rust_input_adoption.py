@@ -59,7 +59,9 @@ class RustInputAdoptionTests(unittest.TestCase):
     def test_original380_rust_identity_requires_exact_migration(self):
         legacy = read_tsv(BASE / "cascade_baseline_outputs_legacy380.tsv")
         migrations = [row for row in read_tsv(BASE / "approved_input_migrations.tsv")
-                      if row["row_id"] not in {"2283", "2095", "2313", "2314", "2302"}]
+                      if row["row_id"] not in {
+                          "2283", "2095", "2313", "2314", "2302",
+                          "2011", "2053", "2201", "2282"}]
         original = next(row for row in legacy
                         if (row["concept"], row["counterpart"]) == ("rust", "rust"))
         self.assertEqual(original["proto"], "*rústō")
@@ -100,7 +102,9 @@ class RustInputAdoptionTests(unittest.TestCase):
                 (target / destination).write_bytes((BASE / source).read_bytes())
             migrations_path = target / "approved_input_migrations.tsv"
             migrations = [row for row in read_tsv(migrations_path)
-                          if row["row_id"] not in {"2283", "2095", "2313", "2314", "2302"}]
+                          if row["row_id"] not in {
+                              "2283", "2095", "2313", "2314", "2302",
+                              "2011", "2053", "2201", "2282"}]
             with migrations_path.open("w", encoding="utf-8", newline="") as handle:
                 writer = csv.DictWriter(handle, fieldnames=list(migrations[0]), delimiter="\t")
                 writer.writeheader()
@@ -153,8 +157,8 @@ class RustInputAdoptionTests(unittest.TestCase):
         self.assertNotIn("the pattern is gradient/probabilistic", lowering)
         census = read_tsv(BASE / "rule_coverage_census.tsv")
         # The independent rainbow adoption adds one live SC017 application;
-        # the SC065 filth admission (row 2335) adds one live SC019 firing.
-        for identifier, count in (("SC017", "40"), ("SC019", "29"), ("SC020", "114")):
+        # The selected soul accusative no longer fires SC019; hammer now fires SC020.
+        for identifier, count in (("SC017", "40"), ("SC019", "28"), ("SC020", "115")):
             row = next(row for row in census if row["sc_id"] == identifier)
             self.assertEqual(row["corpus_firing_count"], count)
         ledger = known.load_ledger(ROOT / "Germanic/data/oe_known_problems.tsv")

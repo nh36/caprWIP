@@ -66,7 +66,10 @@ def test_normal_registry_validation_rejects_an_inverted_current_claim():
 def test_current_source_distinguishes_old_experiments_from_adopted_relations():
     edges = registry.read_tsv(registry.EDGE_REGISTRY)
     archived = [e for e in edges if e["relation_type"] == "superseded_experiment"]
-    assert len(archived) == 4
+    assert {(e["source_change_id"], e["target_change_id"]) for e in archived} == {
+        ("SC016", "SC017"), ("SC017", "SC016"), ("SC040", "SC039"),
+        ("SC040", "SC072"), ("SC036", "SC004"), ("SC036", "SC019"),
+    }
     assert all(e["evidence_basis"] == "archived_experiment" for e in archived)
     assert not registry.validate_registry(registry.read_tsv(registry.SC_REGISTRY), edges)
     for e in edges:

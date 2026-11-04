@@ -50,9 +50,12 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
     medial = {"MP" + suffix for suffix in (
         "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
         "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")}
-    assert current.keys() - old.keys() == {"pgrmInputTailVowel"} | medial
-    assert not old.keys() - current.keys()
-    assert {name for name in old
+    cell_parser = {"PGCell" + suffix for suffix in (
+        "Root", "Stem", "End", "Plain", "Prefixed", "Raw", "Canonical", "Strip", "Input")}
+    assert current.keys() - old.keys() == {
+        "pgrmInputTailVowel", "EnglishProtoNative", "OENonHighSyn"} | medial | cell_parser
+    assert old.keys() - current.keys() == {"OESoulProxy"}
+    assert {name for name in old.keys() & current.keys()
             if old[name].definition_raw != current[name].definition_raw} == {
                 "pgrmSimpleWord", "pgrmCompoundSecond",
                 # Independently pinned by test_rainbow_2148_adoption.py.
@@ -64,6 +67,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "EnglishStarLongDiphthong",
                 # Independently source-bound by test_sc040_formal_resolution.py.
                 "OEMedUnstressedULowering",
+                # The formally certified four-cell adoption owns these changes.
+                "EnglishProtoInput", "EnglishProtoToOE", "OEInterStressRaising",
             }
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         assert current[name].definition_raw.replace(
@@ -83,7 +88,7 @@ def test_gate_receipt_conserves_every_preexisting_record_and_order():
     assert before["order"] == extended["order"]
     assert before["order"] == [
         stage.foma_identifier if stage.kind == "named" else stage.inline_text
-        for stage in oe_pipeline.stages()
+        for stage in oe_pipeline.stages() if stage.foma_identifier != "OENonHighSyn"
     ]
     assert extended["production_equivalent"]
     old, new = candidates(before), candidates(extended)
@@ -138,10 +143,17 @@ def test_production_gate_is_generic_and_preserves_every_old_output():
     records = receipt("pre_gate.json.gz")["existing_population"]["records"]
     old_inputs = [row["fst_input"] for row in records]
     current = lookup("old_english.bin", old_inputs + forms[:2] + ["xwí-līkaz"])
+    counterfactuals = {
+        "fúnðanǭ": ["fundne"], "xámaras": ["hamres"],
+        "sáiwalō": ["sāwel"], "wéstanē": ["westne"],
+    }
+    assert {row["fst_input"] for row in records
+            if current[row["fst_input"]] != row["outputs"].split("|")} == set(counterfactuals)
     for row in records:
-        assert current[row["fst_input"]] == row["outputs"].split("|")
-    assert current[forms[0]] == ["eorþocundere"]
-    # SC040 now protects the nonfinal heavy head; the independent Oxford
-    # syncope question remains open. The old failed receipt above is unchanged.
+        assert current[row["fst_input"]] == counterfactuals.get(
+            row["fst_input"], row["outputs"].split("|"))
+    # SC040 protects the nonfinal heavy head in both notations; only the grave
+    # input licenses linking syncope. The old failed receipt remains unchanged.
+    assert current[forms[0]] == ["eorþecundere"]
     assert current[forms[1]] == ["eorþcundere"]
     assert current["xwí-līkaz"] == ["hwileċ"]

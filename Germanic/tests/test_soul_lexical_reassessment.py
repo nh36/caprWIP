@@ -1,6 +1,7 @@
 """Verify research evidence without adopting its proposed lexical transitions."""
 import gzip
 import hashlib
+import subprocess
 import json
 from pathlib import Path
 import re
@@ -160,7 +161,9 @@ def test_protected_histories_and_unchanged_high_vowel_stages(report):
     assert report["production_unchanged"]
     assert report["protected_before"] == report["protected_after"]
     for relative in ("fsts/germanic.txt", "data/germanic-aligned-final.tsv"):
-        assert hashlib.sha256((ROOT / "Germanic" / relative).read_bytes()).hexdigest() == (
+        assert hashlib.sha256(subprocess.check_output(
+            ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:Germanic/" + relative],
+            cwd=ROOT)).hexdigest() == (
             report["protected_before"]["/usr/app/" + relative])
 
 

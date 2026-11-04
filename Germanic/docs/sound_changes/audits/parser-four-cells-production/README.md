@@ -179,6 +179,10 @@ The bounded metadata/test target amendment preserves the original completion
 and renews only invalidated PROPAGATE through fresh owner finalisations.
 Current-source strict certification is recorded separately in
 `validation-closeout.md` when that final gate has actually completed.
+The first strict serial gate failed; the
+[bounded current-state/history correction](strict-correction.md) preserves
+that complete failure and records the missing SOURCE stage-audit synchronization.
+It changes no certified grammar, corpus, protected baseline or article prose.
 
 Colman2011 is independently copied, not linked, at
 `docs/references/colman_2011_moneyers_buga_boia.pdf` and

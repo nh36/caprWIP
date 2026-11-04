@@ -33,7 +33,9 @@ def test_every_pre_admission_source_row_and_stage_entry_is_unchanged():
     for relative, declaration in proof["source_conservation"].items():
         previous = subprocess.check_output(
             ["git", "show", proof["scientific_commit"] + ":" + relative], cwd=ROOT)
-        current = (ROOT / relative).read_bytes()
+        current = subprocess.check_output(
+            ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:" + relative],
+            cwd=ROOT)
         assert hashlib.sha256(previous).hexdigest() == declaration["previous_sha256"]
         assert current.startswith(previous)
         assert len(current.splitlines()) == len(previous.splitlines()) + 1
@@ -43,7 +45,8 @@ def test_every_pre_admission_source_row_and_stage_entry_is_unchanged():
 def test_authorised_writer_transition_preserves_every_original_record_and_archive():
     previous_path = BASELINE / "cascade_baseline_outputs_pre_sc040_earthly.tsv"
     previous = {r["row_id"]: r for r in rows(previous_path)}
-    current = {r["row_id"]: r for r in rows(BASELINE / "cascade_baseline_outputs.tsv")}
+    current = {r["row_id"]: r for r in rows(
+        BASELINE / "cascade_baseline_outputs_pre_sc114_nonhigh_cells.tsv")}
     proof = json.loads((AUDIT / "population-transition.json").read_text())
     assert len(previous) == 390 and len(current) == 391
     assert set(current) - set(previous) == {"2336"}
@@ -51,7 +54,8 @@ def test_authorised_writer_transition_preserves_every_original_record_and_archiv
     assert current["2336"]["outputs"] == "eorþcunde"
     assert current["2336"]["accepted"] == current["2336"]["match"] == "1"
     assert current["2336"]["output_count"] == "1"
-    summary = json.loads((BASELINE / "cascade_baseline_summary.json").read_text())
+    summary = json.loads(
+        (BASELINE / "cascade_baseline_summary_pre_sc114_nonhigh_cells.json").read_text())
     assert summary == proof["new_summary"]
     assert (summary["accepted"], summary["matched"], summary["mismatched"],
             summary["ambiguous_outputs"]) == (391, 383, 8, 0)
@@ -60,7 +64,17 @@ def test_authorised_writer_transition_preserves_every_original_record_and_archiv
     assert hashlib.sha256(previous_path.read_bytes()).hexdigest() == (
         proof["previous_outputs_archive_sha256"])
     for name, sha in proof["protected_archives_and_approvals_sha256"].items():
-        assert hashlib.sha256((BASELINE / name).read_bytes()).hexdigest() == sha, name
+        data = (BASELINE / name).read_bytes()
+        if name == "approved_input_migrations.tsv":
+            previous_ledger = subprocess.check_output(
+                ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:"
+                 + str((BASELINE / name).relative_to(ROOT))], cwd=ROOT)
+            assert data.startswith(previous_ledger)
+            assert [row["row_id"] for row in rows(BASELINE / name)][-4:] == [
+                "2011", "2201", "2282", "2053"]
+            assert len(data.splitlines()) == len(previous_ledger.splitlines()) + 4
+            data = previous_ledger
+        assert hashlib.sha256(data).hexdigest() == sha, name
     assert {key for key, record in current.items() if record["match"] == "0"} == {
         key for key, record in previous.items() if record["match"] == "0"}
 

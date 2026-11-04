@@ -1,6 +1,7 @@
 """Source-bound research comparisons do not authorize a selected-cell migration."""
 import gzip
 import hashlib
+import subprocess
 import json
 from pathlib import Path
 import re
@@ -139,7 +140,9 @@ def test_population_and_established_sc040_histories_are_not_refrozen(report):
     assert report["models"]["F-old-broad-A"]["final"][:391] == previous["models"]["A-fulk"]["final"]
     for relative, key in (("fsts/germanic.txt", "/usr/app/fsts/germanic.txt"),
                           ("data/germanic-aligned-final.tsv", "/usr/app/data/germanic-aligned-final.tsv")):
-        assert hashlib.sha256((ROOT / "Germanic" / relative).read_bytes()).hexdigest() == (
+        assert hashlib.sha256(subprocess.check_output(
+            ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:Germanic/" + relative],
+            cwd=ROOT)).hexdigest() == (
             report["protected_before"][key])
 
 

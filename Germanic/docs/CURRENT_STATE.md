@@ -74,11 +74,11 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `9fb5d393e2f91ad077115593034099851c2d067f5dfefec5859f516a93783597`
+  `4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9`
 - selected-391 corpus fingerprint (`outputs_sha256`):
-  `efabc1f0512a862f601b651e6409b4e3265a5911b55ce9624b5661e297b8828e`
+  `ed765acdd0ddd7417941234a65be386cb7e617967a22549cbee20ca9d5d288f6`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `b91245d7cf13df96905fd3d4b9244e2fccff430851cf613c856a560a849c85e3`
+  `b7ce0eff790ef81d4c0bfb596a3aa62b5da720424755d6e62e8f5e4764fe447b`
 
 The authorized inherited-world input migration is recorded in
 `approved_world_input_migration.json`; `*_pre_sc036_world.*` preserves

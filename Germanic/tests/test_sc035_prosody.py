@@ -76,7 +76,7 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
     for stage in oe_pipeline.named_stages():
         name = stage.foma_identifier
         if name not in previous:
-            assert name == "OEStressFootContext"
+            assert name in {"OEStressFootContext", "OENonHighSyn"}
             continue
         body = current[name]
         if body.startswith(("Ctx(", "FootCtx(")) and not previous[name].startswith(("Ctx(", "FootCtx(")):
@@ -88,7 +88,7 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
     assert changed == {"OEPrefixAReduction", "OEUnstressedAEMerger",
                        "OEPrefixIReduction", "OEInterStressRaising",
                        "PNWGmcULowering", "OELAdjacentSyncope",
-                       "OEMedUnstressedULowering"}
+                       "OEMedUnstressedULowering", "EnglishProtoInput"}
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 

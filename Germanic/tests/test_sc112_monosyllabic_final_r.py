@@ -144,6 +144,16 @@ class Sc112Tests(unittest.TestCase):
                 if row_id == "2302":
                     previous = dict(previous, proto="*wír-àldiz",
                                     proto_norm="wír-àldiz", fst_input="wír-àldiz")
+                selected_cells = {
+                    "2011": ("*fúnðanai", "fundne"),
+                    "2053": ("*xámaraz", "hamer"),
+                    "2201": ("*sáiwalǭ", "sāwle"),
+                    "2282": ("*wéstą", "west"),
+                }
+                if row_id in selected_cells:
+                    proto, output = selected_cells[row_id]
+                    previous = dict(previous, proto=proto, proto_norm=proto[1:],
+                                    fst_input=proto[1:], counterpart=output, outputs=output)
                 self.assertEqual(
                     tuple(self.current[row_id][field] for field in fields),
                     tuple(previous[field] for field in fields),
@@ -185,7 +195,8 @@ class Sc112Tests(unittest.TestCase):
             [(row_id, self.previous[row_id]["outputs"], self.current[row_id]["outputs"])
              for row_id in self.previous
              if self.previous[row_id]["outputs"] != self.current[row_id]["outputs"]],
-            [],
+            [("2011", "fundene", "fundne"), ("2201", "sāwol", "sāwle"),
+             ("2282", "westene", "west"), ("2053", "hameres", "hamer")],
         )
         self.assertEqual(len(rows(LEGACY)), 380)
 

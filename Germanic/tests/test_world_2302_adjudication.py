@@ -118,7 +118,9 @@ def test_only_authorized_world_fields_changed():
          {"evidence", "protoform_variety", "decision_type"}),
     ):
         old = read_tsv(base_bytes(path).decode())
-        new = read_tsv((ROOT / path).read_text())
+        new = read_tsv(subprocess.check_output(
+            ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:" + path],
+            cwd=ROOT, text=True))
         # Rows 2333/2334 (SC112), 2335 (filth) and 2336 (earthly) are subsequent
         # authorized corpus admissions; the world comparison covers the
         # shared population.
@@ -199,7 +201,7 @@ def test_model_deltas_and_marker_dependency_are_not_adopted():
     assert all(r["legacy380_identity"] for m in models.values()
                for r in m["final_differences"])
     row = adjudicate.load_registry_row("SC036")
-    assert (row["verdict"], row["confidence"]) == ("REFORMULATE/REORDER", "C")
+    assert (row["verdict"], row["confidence"]) == ("REFORMULATE", "C")
 
 
 def test_paradigm_rejections_are_explicit_input_coverage_gaps():
@@ -294,13 +296,19 @@ def test_followup_preserves_production_and_prior_receipts():
             assert candidate["status"] == "rejected"
             assert candidate["rejection"]["stage"] == "EnglishProtoInput"
     reader_path = "Germanic/docs/sound_changes/reader_facing/036-inter-stress-raising.md"
-    reader = (ROOT / reader_path).read_text()
+    reader = subprocess.check_output(
+        ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:" + reader_path],
+        cwd=ROOT, text=True)
     before = subprocess.check_output(
         ["git", "show", f"{FOLLOWUP_BASE}:{reader_path}"], cwd=ROOT, text=True)
     assert reader.split("### The distinct history of soul", 1)[1].split(
         "\n\nThe separate temporary branch", 1)[0].strip() == (
         before.split("### The distinct history of soul", 1)[1].split(
             "\n\n## SC036", 1)[0].strip())
+    adopted = (ROOT / reader_path).read_text()
+    for author in ("Ringe", "Taylor", "Campbell", "Luick", "Fulk"):
+        assert author in adopted
+    assert "The former continuous medial-raising proxy is retired." in adopted
 
 
 def test_inherited_success_is_not_evidence_for_necessary_analogy():
@@ -424,7 +432,7 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
     for model in current["models"].values():
         assert model["final_differences"] == []
         assert inherited_candidate(model)["final"] == "weorold"
-        assert model["focal_traces"]["2201"][-1]["post"] == "sāwol"
+        assert model["focal_traces"]["2201"][-1]["post"] == "sāwle"
         assert model["focal_traces"]["2148"][-1]["post"] == "reġnboga"
     assert current["protected_files_unchanged"] >= 172
     assert current["identity_incremental_all_snapshots_agree"]
@@ -555,6 +563,18 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
                                                         ("ohg", "fülida")})]
     assert len(filth) == 13
     added = [row for row in added if row not in filth]
+    four_cell_refs = (
+        "find — OE ", "hammer — OE ", "soul — OE ", "west — OE ",
+        "Germanic/docs/lexeme_reports/model_entries/2011-",
+        "Germanic/docs/lexeme_reports/model_entries/2053-",
+        "Germanic/docs/lexeme_reports/model_entries/2201-",
+        "Germanic/docs/lexeme_reports/model_entries/2282-",
+    )
+    four_cells = [row for row in added if row["source_ref"].startswith(four_cell_refs)]
+    assert len(four_cells) == 70
+    assert sum(row["action"] == "add" for row in four_cells) == 47
+    assert sum(row["action"] == "remove" for row in four_cells) == 23
+    added = [row for row in added if row not in four_cells]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

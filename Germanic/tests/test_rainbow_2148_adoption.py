@@ -119,9 +119,9 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assembly = ROOT / "Germanic/docs/assembly"
     with (assembly / "manifest_all_by_class.tsv").open() as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    assert len(rows) == 170
+    assert len(rows) == 172
     regular = [row for row in rows if row["derivation_class"] == "regular"]
-    assert len(regular) == 91
+    assert len(regular) == 93
     rainbow = [row for row in regular if row["row_id"] == "2148"]
     assert len(rainbow) == 1
     assert (rainbow[0]["proto"], rainbow[0]["protoform"],
@@ -157,6 +157,17 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
                                                         ("ohg", "fülida")})]
     assert len(filth) == 13
     added = [row for row in added if row not in filth]
+    four_cells = [row for row in added if row["source_ref"].startswith((
+        "find — OE ", "hammer — OE ", "soul — OE ", "west — OE ",
+        "Germanic/docs/lexeme_reports/model_entries/2011-",
+        "Germanic/docs/lexeme_reports/model_entries/2053-",
+        "Germanic/docs/lexeme_reports/model_entries/2201-",
+        "Germanic/docs/lexeme_reports/model_entries/2282-",
+    ))]
+    assert len(four_cells) == 70
+    assert sum(row["action"] == "add" for row in four_cells) == 47
+    assert sum(row["action"] == "remove" for row in four_cells) == 23
+    added = [row for row in added if row not in four_cells]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {
