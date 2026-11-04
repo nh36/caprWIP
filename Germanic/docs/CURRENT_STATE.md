@@ -166,6 +166,11 @@ Actual final four-cell PDFs and indexes have been built and page-inspected:
 [publication record](sound_changes/audits/parser-four-cells-production/publication-inspection.md).
 The separate source-bound strict result is owned by the coordinated journal
 and its `parser-four-cells-production/validation-closeout.md`, not by that build.
+That [closeout](sound_changes/audits/parser-four-cells-production/validation-closeout.md)
+now records complete actual-SOURCE certification at `1b069822`: 1903 serial
+tests and 9635 subtests passed, five explicit historical-replay skips, followed
+by 26 exclusive fresh-runtime passes. VALIDATE and COMPLETE are recorded.
+The later evidence/status-only commit does not replace that exact tested SOURCE.
 
 The authorized wether lexical selection uses masculine `*wéθruz`, preserving
 all 387 finals and the eight established mismatches. Its exact named receipt

@@ -1,0 +1,952 @@
+{
+  "archive": "validation-evidence.tar.gz",
+  "archive_sha256": "ba52252790209924f0f01eec2e395bb5aa26f4a4e0da4e9fad56a56690715a5a",
+  "members": {
+    ".capr-work/actual-production-parser-certification/EnglishProtoInput-global-proof.json": {
+      "bytes": 75380,
+      "sha256": "535a33e6843dc2fddc61be20ec00b9b908595df06d836bd9963a0fdbbc18a648"
+    },
+    ".capr-work/actual-production-parser-certification/EnglishProtoInput.att": {
+      "bytes": 162406,
+      "sha256": "ceea3a0d3b9e8ae92051abad9c825ecf9df7ce317642ccbe83fb64053879b6fc"
+    },
+    ".capr-work/actual-production-parser-certification/PGCellInput-global-proof.json": {
+      "bytes": 8329,
+      "sha256": "d4a727d3115063cc218382bdd4365edd3abdeb215d7f6593e86c2b204ea552f7"
+    },
+    ".capr-work/actual-production-parser-certification/PGCellInput.att": {
+      "bytes": 22740,
+      "sha256": "6178100bdeff4b819835b0532f59a48bad8167c27cce37aebe493aa660fe378d"
+    },
+    ".capr-work/actual-production-parser-certification/actual-candidate-domain-equivalence.json": {
+      "bytes": 40,
+      "sha256": "0b22a5408e9bbfae00bd55740d71b3cc8c73ee19d529ca833195d15d16222582"
+    },
+    ".capr-work/actual-production-parser-certification/actual-candidate-equivalence-proof.json": {
+      "bytes": 311206,
+      "sha256": "28cae9790e961040249bfa33d5172415250f2484c63e104b4b3a861955faae64"
+    },
+    ".capr-work/actual-production-parser-certification/actual-candidate-equivalence.att": {
+      "bytes": 345615,
+      "sha256": "0f3408c8fe6cc218c3a511835bced38d1ccb7fd8185f4fe1c46e825c0fe61edf"
+    },
+    ".capr-work/actual-production-parser-certification/actual-germanic.txt": {
+      "bytes": 197758,
+      "sha256": "18f69deaeb2385c94d65a9599f97a96aed9da2fd3065d908e194e9ab3e6cdb0f"
+    },
+    ".capr-work/actual-production-parser-certification/compile.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/actual-production-parser-certification/compile.stdout": {
+      "bytes": 218,
+      "sha256": "af58261216a6d5bc7f641b25b6543181e9e09da1eeecc57c81a5c1661f07490a"
+    },
+    ".capr-work/actual-production-parser-certification/native.json": {
+      "bytes": 501,
+      "sha256": "fc6803cb6b790a6d9b010e36e7ea464e7a90292413e5710c7fe5df40c48901eb"
+    },
+    ".capr-work/actual-production-parser-certification/parser-candidate-differences.json": {
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    ".capr-work/actual-production-parser-certification/parser-outputs.json": {
+      "bytes": 23835,
+      "sha256": "40cd141bd2f753ad15d5da6494bad20ba49f63e6731253949521b1bc2c32b693"
+    },
+    ".capr-work/actual-production-parser-certification/parser.lookup": {
+      "bytes": 19079,
+      "sha256": "2d554efa87df4c6c650864af2041f4898b03daa908dd96687a60239c7eb2506b"
+    },
+    ".capr-work/actual-production-parser-certification/production-candidate-differences.json": {
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    ".capr-work/actual-production-parser-certification/production-outputs.json": {
+      "bytes": 13783,
+      "sha256": "91171643f5ea54593ca16e612e7cdfb01fc395d7ff80018cbf1f90e571a261c9"
+    },
+    ".capr-work/actual-production-parser-certification/production.lookup": {
+      "bytes": 9952,
+      "sha256": "21153965a9431b408e641975e2875282159a60f839dfc44dfddcfe85fcaf4b6f"
+    },
+    ".capr-work/actual-production-parser-certification/provenance.json": {
+      "bytes": 365,
+      "sha256": "28083934d40c16be578c5d35e8f556d25962edd583345cff5ea91e357819bae4"
+    },
+    ".capr-work/certify_actual_production_parser.py": {
+      "bytes": 7568,
+      "sha256": "a221957c8a5e22de796275fe0b93aa98acceec0c60340816656b3686c1fc80dd"
+    },
+    ".capr-work/command-logs/four-cells-SC001-final-publication-finalize-e6cb0bae80284ab3842b3b6fc3be3f7e.receipt.json": {
+      "bytes": 8982,
+      "sha256": "012853a8fa28bf954da4147bdbb8d7ce4a25abce162e1d5f7f3eb234569669a6"
+    },
+    ".capr-work/command-logs/four-cells-SC001-final-publication-finalize-e6cb0bae80284ab3842b3b6fc3be3f7e.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC001-final-publication-finalize-e6cb0bae80284ab3842b3b6fc3be3f7e.stdout.log": {
+      "bytes": 1428,
+      "sha256": "08e55e14a38ff3b897a5b5d8a7816cd750a0ba2bc233346943811160dd08745c"
+    },
+    ".capr-work/command-logs/four-cells-SC001-final02-finalize-129adc16e6ce4a53b95cf52ccd241966.receipt.json": {
+      "bytes": 1894,
+      "sha256": "5642e190e875f7a573d93d00e009321581002f47ac390eea4741e58ab03558cc"
+    },
+    ".capr-work/command-logs/four-cells-SC001-final02-finalize-129adc16e6ce4a53b95cf52ccd241966.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC001-final02-finalize-129adc16e6ce4a53b95cf52ccd241966.stdout.log": {
+      "bytes": 1427,
+      "sha256": "0aa47d9b59b1b01cf5643b6274e1d34b90c648bef1eb575472c9976d355f4dae"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-evidence-02-9412e3afe1bd43d7868988cc52ec2721.receipt.json": {
+      "bytes": 28530,
+      "sha256": "478c303482dd814f908d72b0aac131309237e8d11f02f58d9ccccd4ea93b7429"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-evidence-02-9412e3afe1bd43d7868988cc52ec2721.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-evidence-02-9412e3afe1bd43d7868988cc52ec2721.stdout.log": {
+      "bytes": 24455,
+      "sha256": "59179c4097c5965dea91d0a4bedd7201707e9db6fc16484f3233490fc15f8220"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-evidence-3a2abffccdbc47a2918f34155743b28c.receipt.json": {
+      "bytes": 15143,
+      "sha256": "3064b4d11911483a5cb20ef879df454b5cda328522469735a31cd4b65bf36e93"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-evidence-3a2abffccdbc47a2918f34155743b28c.stderr.log": {
+      "bytes": 110,
+      "sha256": "e8af8429109784f34ce5766a7d66eca69c78cb43eff2263fa8e48c0f87046b86"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-evidence-3a2abffccdbc47a2918f34155743b28c.stdout.log": {
+      "bytes": 7931,
+      "sha256": "e5c067514a8288a49e4bb6b45d3ec6246c9d7d29d54f71f0ed6bc4b7d440f4a7"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-finalize-8c62fbb6236c4c33ba03d348c34d0b73.receipt.json": {
+      "bytes": 28518,
+      "sha256": "410072772fbaff88b8e73a65403e0bee0d32558e0437b3c438dfcda0b47000f3"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-finalize-8c62fbb6236c4c33ba03d348c34d0b73.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC001-production-finalize-8c62fbb6236c4c33ba03d348c34d0b73.stdout.log": {
+      "bytes": 1428,
+      "sha256": "0b4842c0a899ab79aeb58b26d546e0e379c2d215d61c759797b98c3e071ab4a5"
+    },
+    ".capr-work/command-logs/four-cells-SC036-final-publication-finalize-7af9638b7ddf4cc48fd80351116a2f39.receipt.json": {
+      "bytes": 8982,
+      "sha256": "67015abf0b51e9e50d54d21db68a0a544b501efa845333065638ad28d1fa7880"
+    },
+    ".capr-work/command-logs/four-cells-SC036-final-publication-finalize-7af9638b7ddf4cc48fd80351116a2f39.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC036-final-publication-finalize-7af9638b7ddf4cc48fd80351116a2f39.stdout.log": {
+      "bytes": 1431,
+      "sha256": "f085d37876792bf182021109863a94b1a5da472018f1b7045c596ff835fa88fa"
+    },
+    ".capr-work/command-logs/four-cells-SC036-final02-finalize-b5896ffdc97b4381ac359958c6bdf351.receipt.json": {
+      "bytes": 1894,
+      "sha256": "a39cfd9498da63e2886091861fac02cb8e8f0937bd89756793773f2302dd1505"
+    },
+    ".capr-work/command-logs/four-cells-SC036-final02-finalize-b5896ffdc97b4381ac359958c6bdf351.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC036-final02-finalize-b5896ffdc97b4381ac359958c6bdf351.stdout.log": {
+      "bytes": 1430,
+      "sha256": "150815a578e36af2cabf29d6e2007c3f67316f12315e39949a65a4914ce7bac3"
+    },
+    ".capr-work/command-logs/four-cells-SC036-production-evidence-755d93edf500435c9cf706b912d242a0.receipt.json": {
+      "bytes": 28518,
+      "sha256": "c4333218ec8148055af367f024dced33853b66869018fcdae6c286c2ce180cde"
+    },
+    ".capr-work/command-logs/four-cells-SC036-production-evidence-755d93edf500435c9cf706b912d242a0.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC036-production-evidence-755d93edf500435c9cf706b912d242a0.stdout.log": {
+      "bytes": 3882,
+      "sha256": "8ae27a48362dbbb3dc9b3ab29f42fa52845851ecd2f5f453d6894d0c36dec099"
+    },
+    ".capr-work/command-logs/four-cells-SC036-production-finalize-f50a35797c9744c6a89010469637c983.receipt.json": {
+      "bytes": 28518,
+      "sha256": "8faafb401133bc8890d2c968ce9feb5157df330f840e39e0fd29992c29a986a8"
+    },
+    ".capr-work/command-logs/four-cells-SC036-production-finalize-f50a35797c9744c6a89010469637c983.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC036-production-finalize-f50a35797c9744c6a89010469637c983.stdout.log": {
+      "bytes": 1431,
+      "sha256": "f1627cc43ffdbaa9e4ab27d5a7f8e89a9e46f798b0c25f342d09a9112ee2f7a4"
+    },
+    ".capr-work/command-logs/four-cells-SC114-actual-baseline-adoption-06f5e1d01d1a4e5682c8fccfde814e4b.receipt.json": {
+      "bytes": 20939,
+      "sha256": "0c8af86d8707e0f766fe2f8bed39d0a01cfb09ee8b6a629a6abb398503511e57"
+    },
+    ".capr-work/command-logs/four-cells-SC114-actual-baseline-adoption-06f5e1d01d1a4e5682c8fccfde814e4b.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC114-actual-baseline-adoption-06f5e1d01d1a4e5682c8fccfde814e4b.stdout.log": {
+      "bytes": 94,
+      "sha256": "61bfcc992886dae2086f22dc7d6f7f514bd9ee13b69498a51a65448e693723c6"
+    },
+    ".capr-work/command-logs/four-cells-SC114-final-publication-finalize-5365a4b2179349aaa965173844c713d3.receipt.json": {
+      "bytes": 8982,
+      "sha256": "cf48ea0a70cfd73174988d795bca90115787210907f969fdaf154fb25d48af90"
+    },
+    ".capr-work/command-logs/four-cells-SC114-final-publication-finalize-5365a4b2179349aaa965173844c713d3.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC114-final-publication-finalize-5365a4b2179349aaa965173844c713d3.stdout.log": {
+      "bytes": 1418,
+      "sha256": "c2b46d8d033a29798bf3252d615622fba7b5f43a700b2ea5d4bf0cd4bb1575de"
+    },
+    ".capr-work/command-logs/four-cells-SC114-final02-finalize-42562b44235a4dcc935e0b81f8cc11be.receipt.json": {
+      "bytes": 1894,
+      "sha256": "65ae12f47eeb6049a126db1b331d83dea7b0e9eb010d4fd7ee2ec5ce4e110f3d"
+    },
+    ".capr-work/command-logs/four-cells-SC114-final02-finalize-42562b44235a4dcc935e0b81f8cc11be.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC114-final02-finalize-42562b44235a4dcc935e0b81f8cc11be.stdout.log": {
+      "bytes": 1417,
+      "sha256": "1a0560a9b03a6f108e0f501693008c08f903ba790388f8d593fd70a2bd4dea3a"
+    },
+    ".capr-work/command-logs/four-cells-SC114-production-evidence-f1a3b76e107948c59be1b512632197c3.receipt.json": {
+      "bytes": 28518,
+      "sha256": "86b705b55523e763b1dbc1e506a9f138c4eb9dc39cde4a89517fce93efdcc3b5"
+    },
+    ".capr-work/command-logs/four-cells-SC114-production-evidence-f1a3b76e107948c59be1b512632197c3.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC114-production-evidence-f1a3b76e107948c59be1b512632197c3.stdout.log": {
+      "bytes": 2618,
+      "sha256": "75fcec767d36995ed9101e6ba63a87bcbcf44a19673ea0cd2c6fa65d187c64e8"
+    },
+    ".capr-work/command-logs/four-cells-SC114-production-finalize-bef757e25b1e446698f36d0d96e64603.receipt.json": {
+      "bytes": 28518,
+      "sha256": "8c3a4815c6665bbc8b96a1b5c154b51bbb9cf5c0031158795d7a3d9d4b6e835a"
+    },
+    ".capr-work/command-logs/four-cells-SC114-production-finalize-bef757e25b1e446698f36d0d96e64603.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-SC114-production-finalize-bef757e25b1e446698f36d0d96e64603.stdout.log": {
+      "bytes": 1418,
+      "sha256": "48ec87fa80967b0e912ec07cef73f970f3598d7eb0e3048e5d49433c2da5606b"
+    },
+    ".capr-work/command-logs/four-cells-actual-parser-global-certification-02-b000f54b18d846398817c86f68e74482.receipt.json": {
+      "bytes": 28059,
+      "sha256": "23659243d1f9b7b98c8861fa7aee058d0351ab34da91aa9522bf3b78bd9b4898"
+    },
+    ".capr-work/command-logs/four-cells-actual-parser-global-certification-02-b000f54b18d846398817c86f68e74482.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-actual-parser-global-certification-02-b000f54b18d846398817c86f68e74482.stdout.log": {
+      "bytes": 673,
+      "sha256": "39d0a866212171db0eed49a4e7006370caadb814fc190b9c57489fa2a0bfb19b"
+    },
+    ".capr-work/command-logs/four-cells-actual-parser-global-certification-e410545ed0c14501bd56962b39319de2.receipt.json": {
+      "bytes": 28048,
+      "sha256": "dedc0176a2612c78421c52c96d8cff568af05f98139249d061f1a33602a59658"
+    },
+    ".capr-work/command-logs/four-cells-actual-parser-global-certification-e410545ed0c14501bd56962b39319de2.stderr.log": {
+      "bytes": 3662,
+      "sha256": "b6ce1a05b44eb774b838ca524ab57018a6f0d5f1abc69abe97fb1d587ae4a385"
+    },
+    ".capr-work/command-logs/four-cells-actual-parser-global-certification-e410545ed0c14501bd56962b39319de2.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-contextual-gloss-regressions-f7d88d536a174103a4367a4ff586c26c.receipt.json": {
+      "bytes": 5002,
+      "sha256": "4d33487b587563774462fad7bcfd56e19b1eef2fbff29c2401844210fa37a0db"
+    },
+    ".capr-work/command-logs/four-cells-contextual-gloss-regressions-f7d88d536a174103a4367a4ff586c26c.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-contextual-gloss-regressions-f7d88d536a174103a4367a4ff586c26c.stdout.log": {
+      "bytes": 73,
+      "sha256": "3c10c110b9578ae763613509547d75a85726b7d20653448dcadc9f12da6ab10b"
+    },
+    ".capr-work/command-logs/four-cells-controller-coupled-regressions-c9971a7ffbf745e6b35962324e0d143c.receipt.json": {
+      "bytes": 30635,
+      "sha256": "f06349bf85797688fd321441ca2045527b7c64036fbf88a58b2c3e98007e4eca"
+    },
+    ".capr-work/command-logs/four-cells-controller-coupled-regressions-c9971a7ffbf745e6b35962324e0d143c.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-controller-coupled-regressions-c9971a7ffbf745e6b35962324e0d143c.stdout.log": {
+      "bytes": 127,
+      "sha256": "2a36ab72dc927221daa15063621128f164bbe5485a6e50cd23e14f8c4be99793"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-02-a42b723194e844ed8dba0acaae71a151.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-02-a42b723194e844ed8dba0acaae71a151.stdout.log": {
+      "bytes": 394,
+      "sha256": "40a0a12a92244984f3b6a0f6529dcbe9856f13b5b7f90fdb7b04078965c34ebb"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-03-f4f9d42d0eb54a6aba858beec9014c94.receipt.json": {
+      "bytes": 29114,
+      "sha256": "482bb3f7f5b29dabb8cc295e0f912720b29ee9d98b251494c54ccc0d5e1e02cb"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-03-f4f9d42d0eb54a6aba858beec9014c94.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-03-f4f9d42d0eb54a6aba858beec9014c94.stdout.log": {
+      "bytes": 231,
+      "sha256": "2498628c430fb0625c827b5a79fed47998ece32a90dff381f4601770b46ca5f9"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-8b79a770370f41228aeeee7b3591982c.receipt.json": {
+      "bytes": 28573,
+      "sha256": "f9df3f30a7d106af83aa841ffc82d7aa65bd6e8454c1d4d291940e398dfaf082"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-8b79a770370f41228aeeee7b3591982c.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-current-source-focused-regressions-8b79a770370f41228aeeee7b3591982c.stdout.log": {
+      "bytes": 13279,
+      "sha256": "79f7cb63ed12adba48c5004aee6f1a23150094ee30ec4bd47af2f0b34bfbd0a2"
+    },
+    ".capr-work/command-logs/four-cells-explicit-sort-parity-081219d9035a45e19d590b1ee8fc98a1.receipt.json": {
+      "bytes": 9529,
+      "sha256": "05d802a8e547654db9ebed7fa9c8b06984dabe2c523cca58eabade1ebf40e4c8"
+    },
+    ".capr-work/command-logs/four-cells-explicit-sort-parity-081219d9035a45e19d590b1ee8fc98a1.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-explicit-sort-parity-081219d9035a45e19d590b1ee8fc98a1.stdout.log": {
+      "bytes": 113,
+      "sha256": "ab4c6b4864b31a317e65222fa4041774f99ade4663593161561c13b48ed92af8"
+    },
+    ".capr-work/command-logs/four-cells-explicit-sort-refresh-4625c9f5a3914a5bba739c0b2049aa56.receipt.json": {
+      "bytes": 9532,
+      "sha256": "50d5ed8876af08bed211105c0c4e388b1d6d488cf7a85cd620396f1cf610cbbd"
+    },
+    ".capr-work/command-logs/four-cells-explicit-sort-refresh-4625c9f5a3914a5bba739c0b2049aa56.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-explicit-sort-refresh-4625c9f5a3914a5bba739c0b2049aa56.stdout.log": {
+      "bytes": 1671,
+      "sha256": "20debbb05141ec8af13035f3ccea99cfa4fae54966579ee1fa4388351ba7241a"
+    },
+    ".capr-work/command-logs/four-cells-final-print-identity-regressions-66929788d662402bb50ea08126e897d6.receipt.json": {
+      "bytes": 9682,
+      "sha256": "d149edf7a732f6b4d1b9aec9369170c2cb1f50eb4547305b8fd403ca2aab7537"
+    },
+    ".capr-work/command-logs/four-cells-final-print-identity-regressions-66929788d662402bb50ea08126e897d6.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final-print-identity-regressions-66929788d662402bb50ea08126e897d6.stdout.log": {
+      "bytes": 130,
+      "sha256": "96538d2ebdf15c0c7b74737617e8c5cc81ccf3058945a7e5d920a9c6e9a12ee3"
+    },
+    ".capr-work/command-logs/four-cells-final-source-integrated-refresh-8c47bebdcd82470ab706fd08c5094f89.receipt.json": {
+      "bytes": 1917,
+      "sha256": "45eeea949cbc143592e3c22bb8aa51650947966d20b8ce4631bcfba59c8b6b51"
+    },
+    ".capr-work/command-logs/four-cells-final-source-integrated-refresh-8c47bebdcd82470ab706fd08c5094f89.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final-source-integrated-refresh-8c47bebdcd82470ab706fd08c5094f89.stdout.log": {
+      "bytes": 280,
+      "sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09"
+    },
+    ".capr-work/command-logs/four-cells-final-source-integrated-status-e8ccb02d2bc1488e9d3127a0ef973ad9.receipt.json": {
+      "bytes": 1912,
+      "sha256": "4fcc9f1cad4cc93a66fe0f941e2db7705287cc80f8f43037e6e2ea4882098848"
+    },
+    ".capr-work/command-logs/four-cells-final-source-integrated-status-e8ccb02d2bc1488e9d3127a0ef973ad9.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final-source-integrated-status-e8ccb02d2bc1488e9d3127a0ef973ad9.stdout.log": {
+      "bytes": 1113,
+      "sha256": "2a2ab14aaeb7647a122348e1d4115d59b54302f689c8ae73cf89337971321e19"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-A-d2d6003dfa9d485eb9813b28dacc999d.receipt.json": {
+      "bytes": 1877,
+      "sha256": "05614a0d2e3b893baba555730b9bb0dbcc5cd2d41edadeb10f516b0e81a6c0ff"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-A-d2d6003dfa9d485eb9813b28dacc999d.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-A-d2d6003dfa9d485eb9813b28dacc999d.stdout.log": {
+      "bytes": 48,
+      "sha256": "1d73737279db7fbcd897037af208137832e97a9050f7f0132a5b294e2e0158e0"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-B-refresh-c8f18d43347b4910854a08adfe23f22b.receipt.json": {
+      "bytes": 1905,
+      "sha256": "a5a487cde02ea10bec0235fd2c34773ce2362959b95c6ff739592183d049f0a6"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-B-refresh-c8f18d43347b4910854a08adfe23f22b.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-B-refresh-c8f18d43347b4910854a08adfe23f22b.stdout.log": {
+      "bytes": 280,
+      "sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-B-status-c42b934f89414d2d93198ee5c0e3305b.receipt.json": {
+      "bytes": 1900,
+      "sha256": "22cf396c5a4004c09847a3d00c32ac798bb037dcee786448647cbde6f3b4ff70"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-B-status-c42b934f89414d2d93198ee5c0e3305b.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-B-status-c42b934f89414d2d93198ee5c0e3305b.stdout.log": {
+      "bytes": 1113,
+      "sha256": "2a2ab14aaeb7647a122348e1d4115d59b54302f689c8ae73cf89337971321e19"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-C-serial-fe4b624005514d35940998dfa467df33.junit.xml": {
+      "bytes": 398936,
+      "sha256": "3ab1afd2de66686cd283a1cd2a9a572876650db1bf8742960fc9e96e76a6d054"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-C-serial-fe4b624005514d35940998dfa467df33.receipt.json": {
+      "bytes": 2522,
+      "sha256": "ee2ffc39b30553424309209441226fc62bd5afc96fa72a32e26431592f626277"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-C-serial-fe4b624005514d35940998dfa467df33.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final-source-level-C-serial-fe4b624005514d35940998dfa467df33.stdout.log": {
+      "bytes": 98957,
+      "sha256": "b70edbfbc8c64aa07c521e69c9184083167383c36806dd0787224b155b4662cb"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-02-8f8ca093511e4760a1a7cd128e16f8c8.receipt.json": {
+      "bytes": 3095,
+      "sha256": "e301f68a30f07ee99b2ef1a92f16cc7c7396261b28253731baedc9bd3f8e10f3"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-02-8f8ca093511e4760a1a7cd128e16f8c8.stderr.log": {
+      "bytes": 2521,
+      "sha256": "54e925b088a5bba170e35552ba2c2cb7dfb02f5d227a648fe67b45c79c2f037f"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-02-8f8ca093511e4760a1a7cd128e16f8c8.stdout.log": {
+      "bytes": 102205,
+      "sha256": "58de764c694eb3dcbc14c17f04430ced67c77ab58a33d977575172cf598a2d00"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-03-0bde91a4ff374b4bb11661aac851c083.receipt.json": {
+      "bytes": 4620,
+      "sha256": "2c64e0e614768bb62c576aac5cd03af508f2af6fb0181e719a7568f3c6cb7a2d"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-03-0bde91a4ff374b4bb11661aac851c083.stderr.log": {
+      "bytes": 1976,
+      "sha256": "25e31a136815a10debe585e79052ff07f95c94dcc08998fd2af40dae2ccbd7f2"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-03-0bde91a4ff374b4bb11661aac851c083.stdout.log": {
+      "bytes": 102181,
+      "sha256": "8593aa3a00401a211bdb83d3ff03f3b0a5dcb292ce5a80eb1ac056f8b0cfd9f3"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-04-35bd1859cdec4b88870dece9f80d1715.receipt.json": {
+      "bytes": 8608,
+      "sha256": "3d62951e58db384ace06d7983dabc5522e7005a90b8b7d3857504954e63a02bd"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-04-35bd1859cdec4b88870dece9f80d1715.stderr.log": {
+      "bytes": 667,
+      "sha256": "0c801728fee7ab97129806bf5807c2b928c86befcfa19c0bfba599622f913dfb"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-04-35bd1859cdec4b88870dece9f80d1715.stdout.log": {
+      "bytes": 845,
+      "sha256": "fcad10339f5219a0a8453a13f793221113c8d457f7feb9da54d43e5cc7dc6785"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-05-ea9498b167b64f8d8e0f425ce734be53.receipt.json": {
+      "bytes": 8737,
+      "sha256": "c0f79b4769a7673353c64ad3b6f6a8240e461e17e28b80a3a9cf95a6d60215f5"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-05-ea9498b167b64f8d8e0f425ce734be53.stderr.log": {
+      "bytes": 1975,
+      "sha256": "b45158c3b617ac18c16103e552a58032c743480884017ce7f633de01a67bf37f"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-05-ea9498b167b64f8d8e0f425ce734be53.stdout.log": {
+      "bytes": 102103,
+      "sha256": "5b1653c282992dba951007c09398c2f1a4b7ef03f1f907179ef412e6933c020c"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-59aafa25bcf44c7aba393a057eb069c4.receipt.json": {
+      "bytes": 1810,
+      "sha256": "534b421ab86f236bcf72fe7bc361beb81c3733afadf47e40b4ddc41888c8246c"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-59aafa25bcf44c7aba393a057eb069c4.stderr.log": {
+      "bytes": 2526,
+      "sha256": "00ce164990d4fd72112022e7e9f33d922dc15335f3df7a8b9672372c65dbbc62"
+    },
+    ".capr-work/command-logs/four-cells-final-source-publication-59aafa25bcf44c7aba393a057eb069c4.stdout.log": {
+      "bytes": 280,
+      "sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-A-a2e0ffcb3cd54863bcf9e8a3c247d2e2.receipt.json": {
+      "bytes": 1857,
+      "sha256": "3f6c3e9703a190735f2a24875927e1faae0060d531e5324af649058fc4772de1"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-A-a2e0ffcb3cd54863bcf9e8a3c247d2e2.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-A-a2e0ffcb3cd54863bcf9e8a3c247d2e2.stdout.log": {
+      "bytes": 48,
+      "sha256": "1d73737279db7fbcd897037af208137832e97a9050f7f0132a5b294e2e0158e0"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-B-refresh-3862ffb08b38410db6a640d49d33a0c7.receipt.json": {
+      "bytes": 1885,
+      "sha256": "01e1664c89bdf4d7371a26e8510f35a54275e89f67f95428974ede69bb9b8994"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-B-refresh-3862ffb08b38410db6a640d49d33a0c7.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-B-refresh-3862ffb08b38410db6a640d49d33a0c7.stdout.log": {
+      "bytes": 280,
+      "sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-B-status-5b302573c43a461696b7b5b3e5c9e633.receipt.json": {
+      "bytes": 1880,
+      "sha256": "24874960466c1631ec291b9149ea5b666bc5ac527bb13b1ab1e0a7f7b62396d1"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-B-status-5b302573c43a461696b7b5b3e5c9e633.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-B-status-5b302573c43a461696b7b5b3e5c9e633.stdout.log": {
+      "bytes": 1113,
+      "sha256": "2a2ab14aaeb7647a122348e1d4115d59b54302f689c8ae73cf89337971321e19"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-exclusive-fc3d2c2a9b8542eeb15477e42e1443c4.junit.xml": {
+      "bytes": 3722,
+      "sha256": "91755e3463df6d1268e9bbd33e50b4aa4e376e121fded170af0e0a6478abbb0e"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-exclusive-fc3d2c2a9b8542eeb15477e42e1443c4.receipt.json": {
+      "bytes": 2499,
+      "sha256": "b4df93fc08569c7a4eef88d5126e03e81159d48347fd1c0bff7b84c2bf4225a2"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-exclusive-fc3d2c2a9b8542eeb15477e42e1443c4.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-exclusive-fc3d2c2a9b8542eeb15477e42e1443c4.stdout.log": {
+      "bytes": 111,
+      "sha256": "3ec54b804c6bc0b03288b4971d21e6ba73f47950d55cf3b6d8eaac9720c33605"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-serial-0b7a1df8b8c84dfc8fb45a8cf3938f2a.junit.xml": {
+      "bytes": 284595,
+      "sha256": "f5d92149bfec101e01f0a0875a761eb2fc7ad8f27531d2eb71b671aaa0350b0d"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-serial-0b7a1df8b8c84dfc8fb45a8cf3938f2a.receipt.json": {
+      "bytes": 2490,
+      "sha256": "637884caad1b5242e9acb0a6a515f2c5f05209666d4cc312574227ce9a12b2b3"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-serial-0b7a1df8b8c84dfc8fb45a8cf3938f2a.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-final02-level-C-serial-0b7a1df8b8c84dfc8fb45a8cf3938f2a.stdout.log": {
+      "bytes": 2272,
+      "sha256": "3874ffcc75a80deea90a7376e6675c2c78f77a39e89f536965903e81794327ab"
+    },
+    ".capr-work/command-logs/four-cells-index-site-conservation-7577bb5dc99642fbba11e9487bc3f40f.receipt.json": {
+      "bytes": 9604,
+      "sha256": "a66600fdd4f494ef84f64b43ff8e00a9332ea11b068d4e6c43da82bf283633f4"
+    },
+    ".capr-work/command-logs/four-cells-index-site-conservation-7577bb5dc99642fbba11e9487bc3f40f.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-index-site-conservation-7577bb5dc99642fbba11e9487bc3f40f.stdout.log": {
+      "bytes": 130,
+      "sha256": "47408473366b2dfa1a1657dcfd14b80f03e53dc6ab4e63a0a80625cf003344ae"
+    },
+    ".capr-work/command-logs/four-cells-plain-earthly-counterfactual-trace-21b36e6204584f36906be5f7df2c220d.receipt.json": {
+      "bytes": 7461,
+      "sha256": "8086015ed4a0b890226c4fa79045c4303488bd98f1d159333e5136ab0130dca2"
+    },
+    ".capr-work/command-logs/four-cells-plain-earthly-counterfactual-trace-21b36e6204584f36906be5f7df2c220d.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-plain-earthly-counterfactual-trace-21b36e6204584f36906be5f7df2c220d.stdout.log": {
+      "bytes": 6518,
+      "sha256": "6ec63e58dd5907bb6c026e22b584cf0074735309e6badaefb2e1963c13fed34a"
+    },
+    ".capr-work/command-logs/four-cells-post-adoption-refresh-9333631bd41a47e5b3add6f56449e628.receipt.json": {
+      "bytes": 24726,
+      "sha256": "0240fdb29f31297d91941f06cca4403c2e51b2edb66cb2c2421178b8341b6f7d"
+    },
+    ".capr-work/command-logs/four-cells-post-adoption-refresh-9333631bd41a47e5b3add6f56449e628.stderr.log": {
+      "bytes": 8440,
+      "sha256": "d76b624ebf851ad5fd7342a73f26a3f9baf9490ae1ffd6249a2a23898044f9d2"
+    },
+    ".capr-work/command-logs/four-cells-post-adoption-refresh-9333631bd41a47e5b3add6f56449e628.stdout.log": {
+      "bytes": 3904,
+      "sha256": "cc197a7c6b828f96624a3335b6dccd16fdf3158f1bb0192429e7e8fdf0736024"
+    },
+    ".capr-work/command-logs/four-cells-reviewed-semantic-deltas-f5e30745f8cc4edca16a5c14b2affac4.receipt.json": {
+      "bytes": 2883,
+      "sha256": "060994af34c645bcb01d4d835a245a33bf0bd11325ce06bdf382007dd980dc7a"
+    },
+    ".capr-work/command-logs/four-cells-reviewed-semantic-deltas-f5e30745f8cc4edca16a5c14b2affac4.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-reviewed-semantic-deltas-f5e30745f8cc4edca16a5c14b2affac4.stdout.log": {
+      "bytes": 48,
+      "sha256": "1d73737279db7fbcd897037af208137832e97a9050f7f0132a5b294e2e0158e0"
+    },
+    ".capr-work/command-logs/four-cells-semantic-ledger-authority-80c51ef7cef14370b7ea10675ae769df.receipt.json": {
+      "bytes": 2987,
+      "sha256": "fd1b639416768021cf4c1c32220f4d377267448eee378f8fb057da5b2c679f0a"
+    },
+    ".capr-work/command-logs/four-cells-semantic-ledger-authority-80c51ef7cef14370b7ea10675ae769df.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-semantic-ledger-authority-80c51ef7cef14370b7ea10675ae769df.stdout.log": {
+      "bytes": 114,
+      "sha256": "f4070e583c1546e6cbbff2bf617eed9dc953400d998cca38c6e3d0d298be34b4"
+    },
+    ".capr-work/command-logs/four-cells-sort-metadata-refresh-3c58d44337d84c95b6c774446ba452bc.receipt.json": {
+      "bytes": 7623,
+      "sha256": "2b04e5d57f0fcd744dd53fb1e3cc958001566525dff7c6646a7fe391f9e9e95f"
+    },
+    ".capr-work/command-logs/four-cells-sort-metadata-refresh-3c58d44337d84c95b6c774446ba452bc.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-sort-metadata-refresh-3c58d44337d84c95b6c774446ba452bc.stdout.log": {
+      "bytes": 2345,
+      "sha256": "c8fb5124a793a4a38228a13e07f3ab99a7fb95640dc221e8791005088a2cc0c7"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-focused-01-152c8c3dcaee48ee9b08d62a810f90bb.receipt.json": {
+      "bytes": 7647,
+      "sha256": "cce73a09fa67c32e2a81c58b9b5f531eb66d2c90d9fb1920c7423228c2944921"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-focused-01-152c8c3dcaee48ee9b08d62a810f90bb.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-focused-01-152c8c3dcaee48ee9b08d62a810f90bb.stdout.log": {
+      "bytes": 5662,
+      "sha256": "e3c4a1aa18488d822023cd29bbc50686b205d44a797f0ddc115ab1014c25d194"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-focused-02-1503b6385b07459f887157ae24d98194.receipt.json": {
+      "bytes": 6995,
+      "sha256": "8b5256e4c0bddcbbaf231a2fa69d96f17c39859c9802e5694d98adf187e9453f"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-focused-02-1503b6385b07459f887157ae24d98194.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-focused-02-1503b6385b07459f887157ae24d98194.stdout.log": {
+      "bytes": 123,
+      "sha256": "8cd0620434c1cdb643a3c679693e9012f00c5089977e516bc3e02d0bbd68b43a"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-refresh-01-4c269704056848bc8865458438284f3b.receipt.json": {
+      "bytes": 6873,
+      "sha256": "dfb0399f604441b2c0fc85589e4f44bbdbff54693eb79425e72ba402914952a9"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-refresh-01-4c269704056848bc8865458438284f3b.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-refresh-01-4c269704056848bc8865458438284f3b.stdout.log": {
+      "bytes": 280,
+      "sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-runtime-01-958d263220aa40918adc97444b7101fa.receipt.json": {
+      "bytes": 7042,
+      "sha256": "e6d182cc84834412d4a92a214a404b9fcc0bfc7c08e20f1aa12fdc5d245c066b"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-runtime-01-958d263220aa40918adc97444b7101fa.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-runtime-01-958d263220aa40918adc97444b7101fa.stdout.log": {
+      "bytes": 2347,
+      "sha256": "085021693b85ee843aa959dabedc7ce561194ce2d91de98bfe745d591dea491c"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-runtime-02-99253a1a816c497d9caf8f8689a628f7.receipt.json": {
+      "bytes": 7592,
+      "sha256": "9a5e4b2a8ca16ffcf0e9cea55d757caa3f1763eb6d4fa4733d7d3cbd48a2b0fc"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-runtime-02-99253a1a816c497d9caf8f8689a628f7.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".capr-work/command-logs/four-cells-strict-correction-runtime-02-99253a1a816c497d9caf8f8689a628f7.stdout.log": {
+      "bytes": 112,
+      "sha256": "b5ee8ca76e80d1c982020155c5f3ed1371d35314a3e179447b4e4287c66ab96c"
+    },
+    ".capr-work/complete_final_validation.py": {
+      "bytes": 2004,
+      "sha256": "84db4459cf0f217643d9672e69d69b2b495f6ebe44326531714b7015002d0118"
+    },
+    ".capr-work/complete_four_cell_propagation.py": {
+      "bytes": 3079,
+      "sha256": "607cf960629a72355d32399bf932b71b334cca88f676a94f2723105507d96ed3"
+    },
+    ".capr-work/editorial-test-target-revision.json": {
+      "bytes": 965,
+      "sha256": "7a4557a5b117a0a2800b66d08fc1acc9185bcf6bf2df599eafa6c46669d6bb96"
+    },
+    ".capr-work/final-journal-closeout-diagnostic.json": {
+      "bytes": 633,
+      "sha256": "fa09b7fb9907a6d477c1d24d99fc0be9d2b18aee710fb27ad859593e350cd88c"
+    },
+    ".capr-work/focused-selector-correction.json": {
+      "bytes": 752,
+      "sha256": "baa67d8c2a614309bf6718ea231e70e3f74ab889c0b9b8468f5b86ac464d7d17"
+    },
+    ".capr-work/four-cell-decision.json": {
+      "bytes": 176189,
+      "sha256": "f4f5821264a187221adb4c867608ee25b20d9c11b64160a009161c2313f84d81"
+    },
+    ".capr-work/four-cell-source.patch": {
+      "bytes": 165705,
+      "sha256": "3159c8fd94486442d8af3a0710217e6f5d52dfebdf937ae4479639edd03b1941"
+    },
+    ".capr-work/index-annotation-target-revision.json": {
+      "bytes": 1061,
+      "sha256": "ac2194f7b5e660d480a4dcd323b6e054fe663e0ac6c09f321310f350b67cc69a"
+    },
+    ".capr-work/inspect_final_publication.py": {
+      "bytes": 2360,
+      "sha256": "277c0c3c8581a1b793bb8db26b5963aecc1bb604a9bfc780b50057704796eb71"
+    },
+    ".capr-work/package_four_cell_evidence.py": {
+      "bytes": 3445,
+      "sha256": "70204950727bb1dd0858115b437212568814428558aa2a42165ed01d8194836d"
+    },
+    ".capr-work/post-propagation-publication-state.json": {
+      "bytes": 499949,
+      "sha256": "3f7ce6c3d6a618540f2a55b433e40dabd86b24bddf4f65ed85b7c9b79335f73d"
+    },
+    ".capr-work/production-four-cell-complete-derivations.json": {
+      "bytes": 69116,
+      "sha256": "cac4236def2de1565586fe54027d65bc2ee7727344675625a9c009dadbb8ff8b"
+    },
+    ".capr-work/production-parser-export-83e54c25821849ef95836403221f9636.json": {
+      "bytes": 597,
+      "sha256": "649413634dc332d0f20112c335796464ef8fbc74045f0f17a8d993c7d6ed33e6"
+    },
+    ".capr-work/publication-inspection-final/capr_book_draft_alpha_01.tex": {
+      "bytes": 1502989,
+      "sha256": "79841e0f5b04e60c39f10abf0b27d5d6499bf09aefa96015f608bf1ab1b6e118"
+    },
+    ".capr-work/publication-inspection-final/combined-172.png": {
+      "bytes": 330010,
+      "sha256": "be8846d383cfbd7e9eefd771d2a79b7e6510b5e6ab8d56d428aa03687a57de18"
+    },
+    ".capr-work/publication-inspection-final/combined-173.png": {
+      "bytes": 325812,
+      "sha256": "f4c0a45c3fd034bd4f9c1e8b8b6d6ed22f380c52a008e0d971929dc314a3d41f"
+    },
+    ".capr-work/publication-inspection-final/combined-189.png": {
+      "bytes": 307075,
+      "sha256": "94955352e77a3c6cdfe32b16a4c46c2633d1cf9b9da4a625001f8e42b11da0b4"
+    },
+    ".capr-work/publication-inspection-final/combined-206.png": {
+      "bytes": 335931,
+      "sha256": "17981efde10e83ba92279603273dbc916952c2db5ca6cbd697b2daf20d608247"
+    },
+    ".capr-work/publication-inspection-final/combined-207.png": {
+      "bytes": 239025,
+      "sha256": "02e8961d70f1d317e111cfe1a04c1d50c4d5cec79b20a5dcf1b1c15e4faed0ab"
+    },
+    ".capr-work/publication-inspection-final/combined-263.png": {
+      "bytes": 251259,
+      "sha256": "d312282093248c3a144aa035ad44fb5a8713add17beca368d212066926665a44"
+    },
+    ".capr-work/publication-inspection-final/combined-264.png": {
+      "bytes": 315509,
+      "sha256": "9b628b1a59ba7ab1c17314f377e22ea21b35d44291adc54915e7d44d3ee624f0"
+    },
+    ".capr-work/publication-inspection-final/combined-314.png": {
+      "bytes": 13566,
+      "sha256": "e251c8481b2c084d4929e25948e2a2515d94cd93ccf03733e34c32ef84cde8bc"
+    },
+    ".capr-work/publication-inspection-final/combined-315.png": {
+      "bytes": 326479,
+      "sha256": "5f73de7783ef602af4cacd17fc766236c1da97cbee921d4e3f58db67ba0a071e"
+    },
+    ".capr-work/publication-inspection-final/combined-316.png": {
+      "bytes": 342667,
+      "sha256": "5df5510fc792893537088480a576d658a2206f8592c903f948a2d27ef44acbcf"
+    },
+    ".capr-work/publication-inspection-final/combined-317.png": {
+      "bytes": 354773,
+      "sha256": "c5bf1fe1ab764956edeb45897f031250835fade2abcb0c19539ca79a767fb92d"
+    },
+    ".capr-work/publication-inspection-final/combined-318.png": {
+      "bytes": 377248,
+      "sha256": "5e5e7d9f0165e09b381683398bee05c8e8de66b39321268cb6c1f6723e392e41"
+    },
+    ".capr-work/publication-inspection-final/combined-319.png": {
+      "bytes": 378336,
+      "sha256": "6da02657d07c698642fe6dc6d420ef7184970d0d3c3ea92e9b8843c936307fb9"
+    },
+    ".capr-work/publication-inspection-final/combined-320.png": {
+      "bytes": 275323,
+      "sha256": "ce9b18004498b5e06118240e6fa87528ca388333ab9b652688890eff95a770a7"
+    },
+    ".capr-work/publication-inspection-final/combined-72.png": {
+      "bytes": 470591,
+      "sha256": "7e888404af4c290f66ff1fe25b2675fcd77fb54a70d27e23dda3623d61ddc9b3"
+    },
+    ".capr-work/publication-inspection-final/combined-73.png": {
+      "bytes": 386075,
+      "sha256": "792e38f23d65318bfd8f7c2f7cbbecc474afe6064017fc6bd57f926ecbb0ed33"
+    },
+    ".capr-work/publication-inspection-final/combined-74.png": {
+      "bytes": 304999,
+      "sha256": "d110462be5916601a1161070774f3711d3fdbd39222a3c1901c1374c359a4188"
+    },
+    ".capr-work/publication-inspection-final/combined-92.png": {
+      "bytes": 333355,
+      "sha256": "fdee3f0441f981573a93b1c61b91d3c1d10f5475c35371010a6bf23da57a9094"
+    },
+    ".capr-work/publication-inspection-final/combined-93.png": {
+      "bytes": 402754,
+      "sha256": "530992bde2289338ea8ab0f3ab8de7258fcfff2994d5263426c22e149163288b"
+    },
+    ".capr-work/publication-inspection-final/combined.txt": {
+      "bytes": 1014823,
+      "sha256": "098b9a0a5aff2925938b1d237f07589075d6fe4584e3e9756da13f8a2979e60d"
+    },
+    ".capr-work/publication-inspection-final/intro-2.png": {
+      "bytes": 424701,
+      "sha256": "a4835d9d15deada669f159960e9aff10502634ac813e75247a275d1c05636e7a"
+    },
+    ".capr-work/publication-inspection-final/intro.txt": {
+      "bytes": 15849,
+      "sha256": "078317747fa3ec088bb50ddd221a631819380f37217510aeb83a8466010872a2"
+    },
+    ".capr-work/publication-inspection-final/lexical-126.png": {
+      "bytes": 263856,
+      "sha256": "cd0ccc57aefd003ae1a54ef9f31804d97720c2793ecc764ad84f071c0cc1aefa"
+    },
+    ".capr-work/publication-inspection-final/lexical-127.png": {
+      "bytes": 302411,
+      "sha256": "99beed786754888f6002883e8aad9ab9adc6a91e1db5ccf7468124c580b699a5"
+    },
+    ".capr-work/publication-inspection-final/lexical-47.png": {
+      "bytes": 404603,
+      "sha256": "830b3a392213370db18438e8b01291d77dc25513094da4241fbf9513807e1bd1"
+    },
+    ".capr-work/publication-inspection-final/lexical-60.png": {
+      "bytes": 308271,
+      "sha256": "c28a55e5e02e8162473af8023c05336868b3750ca65c220bcf4cf837ac96ee25"
+    },
+    ".capr-work/publication-inspection-final/lexical-75.png": {
+      "bytes": 397457,
+      "sha256": "901021484d616b2c6c42146c219f4d2694d06051417f3c9172894680726a8b9d"
+    },
+    ".capr-work/publication-inspection-final/lexical.txt": {
+      "bytes": 571993,
+      "sha256": "f39544ed5cbcaaf057a6a6e74005399ad9a708389cf679a7dd21475d862b4f56"
+    },
+    ".capr-work/publication-inspection-final/pdf-inventory.json": {
+      "bytes": 2903,
+      "sha256": "653a04952c29d12545aa264c8ee798626f1e76c0a97f6635553dd9045dae7c1d"
+    },
+    ".capr-work/publication-inspection-final/reader-68.png": {
+      "bytes": 354707,
+      "sha256": "f4a5a300a4b5c582daa335c202615b1c7ac0209c5052b12713c16b08f19b29da"
+    },
+    ".capr-work/publication-inspection-final/reader-70.png": {
+      "bytes": 410690,
+      "sha256": "9db308d99751165cefd3ff0e147750a0fa4bd772264eec8714df755b5695072b"
+    },
+    ".capr-work/publication-inspection-final/reader-88.png": {
+      "bytes": 299048,
+      "sha256": "6fc5d9824f2da60fe970e72370cf7aaf94c127709fc828d810bc45e39b3c082f"
+    },
+    ".capr-work/publication-inspection-final/reader-89.png": {
+      "bytes": 396552,
+      "sha256": "7f58ddb58875b3077113be7826206aae0fa45842aff4077ed410782fb90b732a"
+    },
+    ".capr-work/publication-inspection-final/reader.txt": {
+      "bytes": 434048,
+      "sha256": "39684291ac22fa6b266075ddc7d26a0d7a58aed6a31e067db176edf1dc43d3fe"
+    },
+    ".capr-work/publication-target-revision.json": {
+      "bytes": 837,
+      "sha256": "01693ce96a794d7ef27419a961029c9645601335beca2c73ef6160b612cc4647"
+    },
+    ".capr-work/reconcile_publication_targets.py": {
+      "bytes": 4320,
+      "sha256": "676746ed37e1065c4e3079a17e5c01cdeb747f46cfdd652d617b03e001052a4c"
+    },
+    ".capr-work/renew_publication_propagation.py": {
+      "bytes": 1520,
+      "sha256": "a76fbb62a0f1e70c06ddd818323ab3cf362ae04e73e30fcf07652d4289fa3bf3"
+    },
+    ".capr-work/resolve_summary_serialization_effect.py": {
+      "bytes": 3945,
+      "sha256": "86c338745e059b4426edb0195d34ae2b560b1e28e1af90b57d819f5a1c1d0b08"
+    },
+    ".capr-work/revise_editorial_tests.py": {
+      "bytes": 2404,
+      "sha256": "179ddb34e01dc09bc8dd4cdbf06e425bc76e08b503c11ae8e20180075fa87117"
+    },
+    ".capr-work/revise_index_annotations.py": {
+      "bytes": 3739,
+      "sha256": "dd76f441efdc77723300a29c7a0833ebd4c721b1b2e6b1a067c8fed4b64dfb73"
+    },
+    ".capr-work/run_four_cell_command.py": {
+      "bytes": 1245,
+      "sha256": "9330899b1f541928d6b47fa5ca2f63886acb1afedf3da64cad91b028c5422a39"
+    },
+    ".capr-work/runs/SC001/events.ndjson": {
+      "bytes": 142676,
+      "sha256": "195355043fc6192f97a0c9b6482b5a12fb005ec558c500b67fd76bc30364a436"
+    },
+    ".capr-work/runs/SC001/state.json": {
+      "bytes": 314050,
+      "sha256": "b41a778d1c782d29b924e905cffe8125f5ce94c6b7aa58f814cd74ea8fc9b238"
+    },
+    ".capr-work/start_four_cell_propagation.py": {
+      "bytes": 8149,
+      "sha256": "07a002a5f18bc80fd5a06e75af005b89c89e660a6ffab0d35d34f6b639379556"
+    },
+    ".capr-work/strict-correction-plan.json": {
+      "bytes": 3263,
+      "sha256": "4590aa31206ae99a5adf2a0d9c2b4f1171d2c4d7e609748ec4f92b5e1219078d"
+    },
+    ".capr-work/strict-target-revision.json": {
+      "bytes": 4837,
+      "sha256": "dfc7ce7f8df0783cf27ba5e5420ccc9e624cf882ae7989d540a012cbffae06f6"
+    },
+    ".capr-work/summary-serialization-target-revision.json": {
+      "bytes": 807,
+      "sha256": "cb253decb2ce45c63a9cae4a2056fbf2386d979ad760e9bb7b8469b2f4fae462"
+    }
+  },
+  "tested_source": {
+    "head_commit": "1b0698223d7d4c46999a18c03c1d30fd60cd54e9",
+    "identity_sha256": "142d1c4a5aec02842e9d824c1f7275f50dd188fbaf4f7ee8cec26e1c07b6f5a9",
+    "recorded_at": "2026-11-04T02:11:56Z",
+    "worktree_changes": {}
+  }
+}

@@ -178,7 +178,8 @@ records successful actual build05 and 29 directly viewed final sheets.
 The bounded metadata/test target amendment preserves the original completion
 and renews only invalidated PROPAGATE through fresh owner finalisations.
 Current-source strict certification is recorded separately in
-`validation-closeout.md` when that final gate has actually completed.
+[validation-closeout.md](validation-closeout.md): the final source-bound
+serial/exclusive gates passed and the coordinated journal is complete.
 The first strict serial gate failed; the
 [bounded current-state/history correction](strict-correction.md) preserves
 that complete failure and records the missing SOURCE stage-audit synchronization.
