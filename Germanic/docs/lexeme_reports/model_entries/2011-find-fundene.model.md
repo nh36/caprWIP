@@ -26,7 +26,7 @@ followed here. The dental alternation and the participle's root grade must
 be distinguished from its inflectional ending
 [@RingeTaylor2014, pp. 140, 344; @Fulk2018, pp. 108, 253, 284--288].
 
-The selected [fúnðanai]{.iv .recon lang=pgmc role=selected_input}
+The selected [fúnðanai]{.iv .recon lang=pgmc sort=fundanai role=selected_input}
 is a compositional reconstruction: the participial stem in inherited
 \emph{-an-} takes the strong masculine nominative plural adjectival
 ending \emph{-ai}. Fulk supplies the relevant inflection and distinguishes
@@ -78,12 +78,12 @@ not by itself settle that paradigm.
 
 | PGmc cell / interpretation | Candidate input | Actual model output | OE comparison | Assessment |
 | :--- | :--- | :--- | :--- | :--- |
-| selected strong masculine nominative plural | [fúnðanai]{.iv .recon lang=pgmc role=selected_input} | [`fundne`]{.iv lang=oe sort=fundne role=regular_output} | [`fundne`]{.iv lang=oe sort=fundne role=target_form}, *Juliana* 335 | complete regular selected span |
-| participial nominative singular in \emph{-an-} | [fúnðanaz]{.iv .recon lang=pgmc role=comparison_form} | *fundan* | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | not a complete successful derivation of the attested comparison |
-| inherited \emph{-in-} alternative | [fúnðinaz]{.iv .recon lang=pgmc role=comparison_form} | *fynden* | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | umlaut prevents treating this probe as a solution |
-| full uncontracted masculine accusative | [fúnðananǭ]{.iv .recon lang=pgmc role=comparison_form} | *fundenne* | [`fundene`]{.iv lang=oe sort=fundene role=comparison_form} | different ending and output; wider history unresolved |
+| selected strong masculine nominative plural | [fúnðanai]{.iv .recon lang=pgmc sort=fundanai role=selected_input} | [`fundne`]{.iv lang=oe sort=fundne role=regular_output} | [`fundne`]{.iv lang=oe sort=fundne role=target_form}, *Juliana* 335 | complete regular selected span |
+| participial nominative singular in \emph{-an-} | [fúnðanaz]{.iv .recon lang=pgmc sort=fundanaz role=comparison_form} | *fundan* | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | not a complete successful derivation of the attested comparison |
+| inherited \emph{-in-} alternative | [fúnðinaz]{.iv .recon lang=pgmc sort=fundinaz role=comparison_form} | *fynden* | [`funden`]{.iv lang=oe sort=funden role=comparison_form} | umlaut prevents treating this probe as a solution |
+| full uncontracted masculine accusative | [fúnðananǭ]{.iv .recon lang=pgmc sort=fundanano role=comparison_form} | *fundenne* | [`fundene`]{.iv lang=oe sort=fundene role=comparison_form} | different ending and output; wider history unresolved |
 
-The former shortened input [fúnðanǭ]{.iv .recon lang=pgmc role=comparison_form}
+The former shortened input [fúnðanǭ]{.iv .recon lang=pgmc sort=fundano role=comparison_form}
 did not establish an inherited masculine accusative matching the quoted
 plural. It is not retained as evidence that the longer attested form has
 been explained. Conversely, these unsuccessful comparisons do not invalidate

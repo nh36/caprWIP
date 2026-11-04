@@ -165,6 +165,10 @@ fixtures. PDF-text inspection exposed two duplicate visible PGmc entries:
 manual `fundhanai`/`saiwaloacc` keys disagreed with the canonical keys used by
 the same selected forms in headings/traces. Seven newly authored manual sort
 attributes were removed so the existing transliterator supplies their keys.
+The parity checker requires those canonical values explicitly rather than using
+the builder's transliteration fallback: the attempted attribute removal therefore
+stopped with seven sort-key mismatches before rendering. The seven attributes now
+state the exact existing canonical keys, with no change to the checker.
 Prose, forms, stages and interpretations are unchanged. The merged entries
 retain all four find sites and three soul sites; no emission site is dropped.
 The final render and page-image inspection follow this metadata correction.
