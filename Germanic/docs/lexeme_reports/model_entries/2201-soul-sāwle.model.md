@@ -27,7 +27,7 @@ independent of the selected Old English case
 [@Orel2003, p. 314; @Kroonen2013, p. 423].
 The comparative citation [sáiwalō]{.iv .recon lang=pgmc sort=saiwalo role=source_protoform}
 'soul' is retained, but is not silently equated with the selected
-accusative [sáiwalǭ]{.iv .recon lang=pgmc sort=saiwaloacc role=selected_input}.
+accusative [sáiwalǭ]{.iv .recon lang=pgmc role=selected_input}.
 The latter is an inherited inflectional reconstruction in CAPR notation,
 not a quotation of a dictionary's whole accented accusative.
 

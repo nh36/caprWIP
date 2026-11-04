@@ -159,6 +159,16 @@ The inherited level-2 combined-entry hierarchy leaves the validator's legacy
 plain-italic subsection heuristic inactive, while explicit `.iv`/`.recon`/`.lex`
 checks still run. That pre-existing coverage gap is not represented as solved.
 
+The strict Docker wrapper subsequently built all four publications and passed
+actual TeX/PDF destinations, index policies, bibliographic locators and negative
+fixtures. PDF-text inspection exposed two duplicate visible PGmc entries:
+manual `fundhanai`/`saiwaloacc` keys disagreed with the canonical keys used by
+the same selected forms in headings/traces. Seven newly authored manual sort
+attributes were removed so the existing transliterator supplies their keys.
+Prose, forms, stages and interpretations are unchanged. The merged entries
+retain all four find sites and three soul sites; no emission site is dropped.
+The final render and page-image inspection follow this metadata correction.
+
 Colman2011 is independently copied, not linked, at
 `docs/references/colman_2011_moneyers_buga_boia.pdf` and
 `docs/references/local/colman-2011/complete.txt`. Its verified PDF SHA256 is

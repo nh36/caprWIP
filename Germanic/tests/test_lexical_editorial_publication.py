@@ -33,6 +33,17 @@ def committed(path: Path) -> str:
 
 
 class EditorialPublicationTests(unittest.TestCase):
+    def test_selected_find_and_soul_have_one_printed_entry_with_all_sites(self):
+        path = ROOT / "Germanic/docs/book/index_verborum_book_print_unique.tsv"
+        with path.open() as handle:
+            rows = list(csv.DictReader(handle, delimiter="\t"))
+        for display in ("*fúnðanai", "*sáiwalǭ"):
+            with self.subTest(display=display):
+                selected = [r for r in rows if r["language"] == "pgmc"
+                            and r["display"] == display and not r["printed_variety"]]
+                self.assertEqual(len(selected), 1)
+                self.assertGreaterEqual(int(selected[0]["occurrence_count"]), 3)
+
     @classmethod
     def setUpClass(cls):
         cls.rows = coverage.load_oe_rows(ROOT / "Germanic/data/germanic-aligned-final.tsv")
