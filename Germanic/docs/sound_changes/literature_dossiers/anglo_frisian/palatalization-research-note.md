@@ -54,8 +54,11 @@ node (pp. 166, 172–173, 184).
    vowel histories (pp. 177–180, 184). His criticisms of Stiles are not
    his own independent-palatalization thesis.
 
-Stiles1995 and Fulk1998 remain unavailable direct works, not global
-prerequisites. Hogg1979, Goblirsch1991, Nielsen2001 and Bremmer2009
+Stiles1995 remains unacquired, not a global prerequisite. Fulk1998 is
+now held and directly reviewed in
+[card 14](source_cards/14-fulk-1998-chronology.md), including his explicit
+nonproof qualification on p.154. Earlier source-access receipts remain
+historical. Hogg1979, Goblirsch1991, Nielsen2001 and Bremmer2009
 now have direct reviews (cards 10–13), integrated in the synthesis.
 Laker's reports remain his reports, not retroactively direct evidence.
 Hogg1992 and Luick are held, but cannot silently replace

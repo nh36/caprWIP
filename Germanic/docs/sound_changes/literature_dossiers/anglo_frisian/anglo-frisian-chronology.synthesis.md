@@ -160,8 +160,10 @@ but do not logically invalidate stem compatibility by themselves
 Evidence levels: **O** observed spelling/reflex; **D** diagnostic ordering
 argument; **R** reconstructed/systemic or numbered order; **A** absolute
 anchor through interpretation. D does not certify every premise.
-Stiles1995 and Fulk1998 remain unavailable direct works, not acquisition
-prerequisites. All thirteen specialist works now have direct source cards,
+Stiles1995 remains unacquired, not an acquisition prerequisite for other
+questions. Fulk1998 is now held and directly reviewed in
+[card 14](source_cards/14-fulk-1998-chronology.md); the earlier indirect
+access record remains historical. Fourteen specialist works have direct source cards,
 including Bremmer2009, Nielsen2001, Goblirsch1991 and Hogg1979 (cards
 10–13). An earlier author's report of another work remains a report even
 after that work is separately reviewed. Hogg1992, Luick,

@@ -1,5 +1,16 @@
 # Source ledger: earthly / eorþcunde
 
+## Later source-access overlay
+
+The post-acquisition review based at `7a3fb4df` recovered McCully–Hogg1990
+at the historical hash recorded below and directly rechecked its final
+stress rule (pp.332–334). Ciszek–Kiliszewska2015 p.490 was also freshly
+checked against the original image. The earlier access limitations below
+remain historical receipts, not current holding assertions. The bounded
+[source triage](../../sound_changes/audits/recovered-source-triage.md)
+records the direct findings and limits. No selected span, stress decision,
+published category or corpus input changes in this overlay.
+
 ## Completed scientific evidence and controlled application
 
 The user authorised resumption and full adoption after reduced formal

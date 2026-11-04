@@ -81,6 +81,19 @@ It does not claim a new complete scholarly adjudication of every premise.
 Existing syntheses and source ledgers retain their original direct/indirect
 evidence boundaries until an explicit research reassessment.
 
+### Later direct scholarly review
+
+The post-acquisition reassessment based at `7a3fb4df` directly reviewed
+both complete chapters and their significant page images. Its findings are
+recorded separately in the
+[Fulk source card](../../../Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/source_cards/14-fulk-1998-chronology.md)
+and [Seiler source card](../../../Germanic/docs/sound_changes/audits/seiler2019-direct-source-card.md).
+The [reader proposal](../../../Germanic/docs/sound_changes/audits/post-acquisition-reader-proposal.md)
+distinguishes access corrections, evidence qualifications and unadopted
+historical alternatives. The technical ingestion receipt above remains
+unchanged in meaning; neither acquisition nor this reading authorizes
+an executable or publication change.
+
 ## Reproduction, preservation and verification
 
 `prepare_holdings.py preserve`, `ocr`, and `finalize --main MAIN_PROJECT`
