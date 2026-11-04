@@ -22919,6 +22919,214 @@
       "verified_local_restoration_copies": [],
       "acquisition_origin": [],
       "stranded_acquisition_status": "none in searched candidate set; not a claim about unsearched files"
+    },
+    {
+      "citation_key": "BremmerJohnstonVries1998",
+      "bibliography": {
+        "editor": "Bremmer, Jr., Rolf H. and Johnston, Thomas S. B. and Vries, Oebele",
+        "title": "Approaches to {Old Frisian} Philology",
+        "series": "Amsterdamer Beitr{\\\"a}ge zur {\\\"a}lteren Germanistik",
+        "volume": "49",
+        "year": "1998",
+        "publisher": "Rodopi",
+        "address": "Amsterdam and Atlanta, GA",
+        "isbn": "90-420-0651-X",
+        "issn": "0165-7305",
+        "file": "docs/references/approaches_old_frisian_philology_1998.pdf",
+        "note": "User-supplied assembled scan, 344 sheets, ending at printed\n               p. 329; not a complete edition. Preface xi and printed\n               p. 18 are duplicated; p. 21 and the unprinted blank p. 302\n               are absent, as is the tail after p. 329.\n               Fulk's complete pp. 139--154 are retained.\n               Local-only original, separate OCR derivative and full\n               supplied-file searchable text; see the Desktop intake record."
+      },
+      "assets": [
+        "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt"
+      ],
+      "source_records": [
+        "docs/references/desktop_2026-11-04/README.md"
+      ],
+      "inspection_status": "consultation_records_linked_not_a_new_direct_reading_certification",
+      "holding_status": "held",
+      "independent_off_machine_backup": "not_verified",
+      "original_source_files": [
+        {
+          "path": "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+          "sha256": "788b2abae722ae870a7bacd6418df3fabca1a320481947300be065f62154e236",
+          "format": "pdf",
+          "representation_status": "acquired file; edition and derivative qualifications remain applicable"
+        }
+      ],
+      "searchable_texts": [
+        {
+          "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt",
+          "sha256": "a41d06a3887cb4dd7724f76d110ab276a2d4c0dedf3fc5963071631f89b799b1",
+          "coverage_and_method": [
+            {
+              "citation_key": "BremmerJohnstonVries1998",
+              "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+              "coverage": "all344 supplied sheets; duplicatexi/18, missing21, ends at printed329",
+              "method": "local OCRmyPDF/Tesseract eng+deu; uncorrected OCR"
+            }
+          ]
+        }
+      ],
+      "verified_local_restoration_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/approaches_old_frisian_philology_1998.pdf"
+      ],
+      "acquisition_origin": [
+        {
+          "origin": "$HOME/Desktop/Approaches_to_Old_Frisian_Philology.pdf",
+          "sha256": "788b2abae722ae870a7bacd6418df3fabca1a320481947300be065f62154e236"
+        }
+      ],
+      "stranded_acquisition_status": "none in searched candidate set; not a claim about unsearched files"
+    },
+    {
+      "citation_key": "Fulk1998",
+      "bibliography": {
+        "author": "Fulk, Robert D.",
+        "title": "The Chronology of {Anglo-Frisian} Sound Changes",
+        "editor": "Bremmer, Jr., Rolf H. and Johnston, Thomas S. B. and Vries, Oebele",
+        "booktitle": "Approaches to {Old Frisian} Philology",
+        "series": "Amsterdamer Beitr{\\\"a}ge zur {\\\"a}lteren Germanistik",
+        "volume": "49",
+        "year": "1998",
+        "pages": "139--154",
+        "publisher": "Rodopi",
+        "address": "Amsterdam and Atlanta, GA",
+        "isbn": "90-420-0651-X",
+        "file": "docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+        "note": "Complete chapter on sheets 155--170 of the preserved\n               assembled volume. Local OCR is searchable navigation,\n               not a glyph-corrected diplomatic transcription.\n               Acquisition does not retroactively adjudicate earlier\n               second-hand scientific claims. No chapter DOI verified."
+      },
+      "assets": [
+        "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Fulk1998.txt"
+      ],
+      "source_records": [
+        "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/anglo-frisian-chronology.synthesis.md",
+        "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/palatalization-research-note.md",
+        "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/missing-direct-sources.md",
+        "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/source_cards/13-hogg-1979-old-english-palatalization.md",
+        "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/source_cards/12-goblirsch-1991-ai-au-anglo-frisian.md",
+        "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/source_cards/09-versloot-2025-reconstructing-historical-phonology-of-oe.md",
+        "docs/references/desktop_2026-11-04/README.md",
+        "docs/references/holdings_audit_2026-11-04/README.md"
+      ],
+      "inspection_status": "consultation_records_linked_not_a_new_direct_reading_certification",
+      "holding_status": "held",
+      "independent_off_machine_backup": "not_verified",
+      "original_source_files": [
+        {
+          "path": "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+          "sha256": "788b2abae722ae870a7bacd6418df3fabca1a320481947300be065f62154e236",
+          "format": "pdf",
+          "representation_status": "acquired file; edition and derivative qualifications remain applicable"
+        }
+      ],
+      "searchable_texts": [
+        {
+          "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+          "sha256": "4f9952211bb366cd78235a4ec01eba008e0022fa7c707d1e49b962559e3efac4",
+          "coverage_and_method": [
+            {
+              "citation_key": "Fulk1998",
+              "evidence": "docs/refs.bib: file field",
+              "coverage": "not_established",
+              "method": "not_established"
+            },
+            {
+              "citation_key": "Fulk1998",
+              "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+              "coverage": "complete chapter, printed139-154",
+              "method": "local OCRmyPDF/Tesseract eng+deu; uncorrected OCR"
+            }
+          ]
+        }
+      ],
+      "verified_local_restoration_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/Fulk1998.txt"
+      ],
+      "acquisition_origin": [
+        {
+          "origin": "$HOME/Desktop/Approaches_to_Old_Frisian_Philology.pdf",
+          "sha256": "788b2abae722ae870a7bacd6418df3fabca1a320481947300be065f62154e236"
+        }
+      ],
+      "stranded_acquisition_status": "none in searched candidate set; not a claim about unsearched files"
+    },
+    {
+      "citation_key": "Seiler2019",
+      "bibliography": {
+        "author": "Seiler, Annina",
+        "title": "The spelling of the {Erfurt} glossary",
+        "editor": "Nievergelt, Andreas and R{\\\"u}bekeil, Ludwig",
+        "booktitle": "Raum und Sprache: Festschrift f{\\\"u}r Elvira Glaser zum 65. Geburtstag",
+        "series": "Germanistische Bibliothek",
+        "volume": "66",
+        "year": "2019",
+        "pages": "525--540",
+        "publisher": "Universit{\\\"a}tsverlag Winter",
+        "address": "Heidelberg",
+        "isbn": "978-3-8253-6936-1",
+        "url": "https://www.zora.uzh.ch/id/eprint/168922/",
+        "file": "docs/references/seiler_2019_erfurt_glossary.pdf",
+        "note": "Complete user-supplied 16-sheet chapter retained locally\n               with a separate full searchable extraction. The embedded\n               ABBYY layer has uncorrected phonetic-letter/glyph errors;\n               source page images remain authoritative. No DOI verified."
+      },
+      "assets": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+        "$HOME/Code/capr/docs/references/seiler_2019_erfurt_glossary.pdf",
+        "$HOME/Code/capr/docs/references/seiler_2019_erfurt_glossary.pdf"
+      ],
+      "source_records": [
+        "Germanic/docs/sound_changes/audits/sc035-consistency-closeout.md",
+        "Germanic/docs/sound_changes/audits/sc035-source-critical-audit.md",
+        "Germanic/docs/sound_changes/audits/sc035-final-validation.md",
+        "Germanic/docs/sound_changes/audits/sc035-source-collation.md",
+        "docs/references/desktop_2026-11-04/README.md",
+        "docs/references/holdings_audit_2026-11-04/README.md"
+      ],
+      "inspection_status": "consultation_records_linked_not_a_new_direct_reading_certification",
+      "holding_status": "held",
+      "independent_off_machine_backup": "not_verified",
+      "original_source_files": [
+        {
+          "path": "$HOME/Code/capr/docs/references/seiler_2019_erfurt_glossary.pdf",
+          "sha256": "7940219fef1c68638950aed77a5bb425775a178e96be78cb6b7c818f4eeb49ae",
+          "format": "pdf",
+          "representation_status": "acquired file; edition and derivative qualifications remain applicable"
+        }
+      ],
+      "searchable_texts": [
+        {
+          "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+          "sha256": "f1019c9be790c6acb2c097502952f964fd7e728ec358a01fe2a1f6a90894a9db",
+          "coverage_and_method": [
+            {
+              "citation_key": "Seiler2019",
+              "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+              "coverage": "complete chapter, printed525-540",
+              "method": "supplied ABBYY text; uncorrected glyphs"
+            }
+          ]
+        }
+      ],
+      "verified_local_restoration_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/seiler_2019_erfurt_glossary.pdf",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/seiler_2019_erfurt_glossary.pdf"
+      ],
+      "acquisition_origin": [
+        {
+          "origin": "$HOME/Desktop/Seiler 2019 - The spelling of the Erfurt glossary.pdf",
+          "sha256": "7940219fef1c68638950aed77a5bb425775a178e96be78cb6b7c818f4eeb49ae"
+        }
+      ],
+      "stranded_acquisition_status": "none in searched candidate set; not a claim about unsearched files"
     }
   ],
   "assets": [
@@ -23163,6 +23371,44 @@
       ]
     },
     {
+      "path": "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+      "project_relative": "docs/references/approaches_old_frisian_philology_1998.pdf",
+      "bytes": 98162480,
+      "sha256": "788b2abae722ae870a7bacd6418df3fabca1a320481947300be065f62154e236",
+      "representation": "pdf",
+      "associations": [
+        {
+          "citation_key": "BremmerJohnstonVries1998",
+          "evidence": "docs/refs.bib: file field",
+          "coverage": "not_established",
+          "method": "not_established"
+        },
+        {
+          "citation_key": "BremmerJohnstonVries1998",
+          "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+          "coverage": "all344 supplied sheets; duplicatexi/18, missing21, ends at printed329",
+          "method": "local OCRmyPDF/Tesseract eng+deu; uncorrected OCR"
+        },
+        {
+          "citation_key": "Fulk1998",
+          "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+          "coverage": "complete chapter, printed139-154",
+          "method": "local OCRmyPDF/Tesseract eng+deu; uncorrected OCR"
+        }
+      ],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/approaches_old_frisian_philology_1998.pdf"
+      ],
+      "registered_hash_matches": true,
+      "source_representation_status": "acquired file; edition and derivative qualifications remain applicable",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/approaches_old_frisian_philology_1998.pdf"
+      ]
+    },
+    {
       "path": "$HOME/Code/capr/docs/references/article_18756719.pdf",
       "project_relative": "docs/references/article_18756719.pdf",
       "bytes": 1141495,
@@ -23271,6 +23517,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bammesberger_1990_morphologie.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bammesberger_1990_morphologie.pdf",
@@ -23337,6 +23584,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/bammesberger_1997_herfest.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/bammesberger_1997_herfest.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bammesberger_1997_herfest.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bammesberger_1997_herfest.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bammesberger_1997_herfest.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bammesberger_1997_herfest.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bammesberger_1997_herfest.pdf",
@@ -23408,6 +23656,7 @@
       "copy_locations": [
         "$HOME/Code/capr/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/barrack_1975_diachronic_phonology.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/barrack_1975_diachronic_phonology.pdf",
@@ -23438,6 +23687,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/beekes_edg.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/beekes_edg.pdf",
@@ -23540,6 +23790,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
@@ -23716,6 +23967,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/bosworth_toller_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/bosworth_toller_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bosworth_toller_anglo_saxon_dictionary.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bosworth_toller_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bosworth_toller_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bosworth_toller_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bosworth_toller_anglo_saxon_dictionary.pdf",
@@ -24406,6 +24658,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/bright_anglo_saxon_reader.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/bright_anglo_saxon_reader.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bright_anglo_saxon_reader.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bright_anglo_saxon_reader.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bright_anglo_saxon_reader.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bright_anglo_saxon_reader.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bright_anglo_saxon_reader.pdf",
@@ -24537,6 +24790,7 @@
       "copy_locations": [
         "$HOME/Code/capr/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/britton_1996_english_historical_linguistics.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/britton_1996_english_historical_linguistics.pdf",
@@ -24567,6 +24821,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/brunner_1965_altenglische_grammatik.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/brunner_1965_altenglische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/brunner_1965_altenglische_grammatik.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/brunner_1965_altenglische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/brunner_1965_altenglische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/brunner_1965_altenglische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/brunner_1965_altenglische_grammatik.pdf",
@@ -24667,6 +24922,7 @@
       "copy_locations": [
         "$HOME/Code/capr/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bulbring_altenglisches_elementarbuch.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bulbring_altenglisches_elementarbuch.pdf",
@@ -24925,6 +25181,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/cercignani_1979_pgmc_i_and_e_revisited.pdf",
@@ -24991,6 +25248,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/cercignani_1980_early_umlaut.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/cercignani_1980_early_umlaut.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/cercignani_1980_early_umlaut.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/cercignani_1980_early_umlaut.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/cercignani_1980_early_umlaut.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/cercignani_1980_early_umlaut.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/cercignani_1980_early_umlaut.pdf",
@@ -25182,6 +25440,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/clark_hall_concise_anglo_saxon_dictionary.pdf",
@@ -25666,6 +25925,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/fulk_comparative_grammar_early_germanic.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/fulk_comparative_grammar_early_germanic.pdf",
@@ -25869,6 +26129,7 @@
       "copy_locations": [
         "$HOME/Code/capr/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/goering_2023_heafudu_problem.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/goering_2023_heafudu_problem.pdf",
@@ -25949,6 +26210,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/hamp_1990_pie_bottom.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/hamp_1990_pie_bottom.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/hamp_1990_pie_bottom.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/hamp_1990_pie_bottom.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/hamp_1990_pie_bottom.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/hamp_1990_pie_bottom.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/hamp_1990_pie_bottom.pdf",
@@ -26226,6 +26488,7 @@
       "copy_locations": [
         "$HOME/Code/capr/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/hill_2017_west_germanic_lengthening.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/hill_2017_west_germanic_lengthening.pdf",
@@ -26287,6 +26550,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/hirt_handbuch_des_urgermanischen.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/hirt_handbuch_des_urgermanischen.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/hirt_handbuch_des_urgermanischen.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/hirt_handbuch_des_urgermanischen.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/hirt_handbuch_des_urgermanischen.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/hirt_handbuch_des_urgermanischen.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/hirt_handbuch_des_urgermanischen.pdf",
@@ -26691,6 +26955,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/howell_salmons_1988_lowering_of_i.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/howell_salmons_1988_lowering_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/howell_salmons_1988_lowering_of_i.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/howell_salmons_1988_lowering_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/howell_salmons_1988_lowering_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/howell_salmons_1988_lowering_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/howell_salmons_1988_lowering_of_i.pdf",
@@ -27279,6 +27544,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/kroonen_2006_mn_stems_bottom_rime.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/kroonen_2006_mn_stems_bottom_rime.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/kroonen_2006_mn_stems_bottom_rime.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/kroonen_2006_mn_stems_bottom_rime.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/kroonen_2006_mn_stems_bottom_rime.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/kroonen_2006_mn_stems_bottom_rime.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/kroonen_2006_mn_stems_bottom_rime.pdf",
@@ -27345,6 +27611,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/kroonen_2011_n_stems.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/kroonen_2011_n_stems.pdf",
@@ -27447,6 +27714,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/kroonen_etymological_dictionary_pgmc.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/kroonen_etymological_dictionary_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/kroonen_etymological_dictionary_pgmc.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/kroonen_etymological_dictionary_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/kroonen_etymological_dictionary_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/kroonen_etymological_dictionary_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/kroonen_etymological_dictionary_pgmc.pdf",
@@ -27907,6 +28175,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/lloyd_1966_a_umlaut_of_i.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/lloyd_1966_a_umlaut_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/lloyd_1966_a_umlaut_of_i.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/lloyd_1966_a_umlaut_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/lloyd_1966_a_umlaut_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/lloyd_1966_a_umlaut_of_i.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/lloyd_1966_a_umlaut_of_i.pdf",
@@ -28017,6 +28286,197 @@
         "$HOME/Code/capr/.capr-work/worktrees/soul-fulk-oblique/docs/references/local/colman-2011/complete.txt",
         "$HOME/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/docs/references/local/colman-2011/complete.txt",
         "$HOME/Code/capr/.capr-work/worktrees/soul-syncope-resolution/docs/references/local/colman-2011/complete.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Approaches1998.ocr-native.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/Approaches1998.ocr-native.txt",
+      "bytes": 1027697,
+      "sha256": "267adc26b14ae1bd311c8d2a88df85b4fa8dfbbaffdca6a0c65f3ef17ad4d561",
+      "representation": "txt",
+      "associations": [],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/Approaches1998.ocr-native.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/Approaches1998.ocr-native.txt"
+      ],
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Approaches1998.ocr-native.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/Approaches1998.ocr-native.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Approaches1998.ocr-sidecar.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/Approaches1998.ocr-sidecar.txt",
+      "bytes": 936544,
+      "sha256": "027823573f96f5ff8e76d1ecb17b38bdc5e8f8207173fa891c00f964f5e1dfac",
+      "representation": "txt",
+      "associations": [],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/Approaches1998.ocr-sidecar.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/Approaches1998.ocr-sidecar.txt"
+      ],
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Approaches1998.ocr-sidecar.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/Approaches1998.ocr-sidecar.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.native.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.native.txt",
+      "bytes": 344,
+      "sha256": "0e2325e399d9ef8098f7ababcfd46c2fafd9a15961c09abb10bc8dfad051cd53",
+      "representation": "txt",
+      "associations": [],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.native.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.native.txt"
+      ],
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.native.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.native.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.txt",
+      "bytes": 1042472,
+      "sha256": "ffece6662eb530a3f0c84e16c33571f6bb065eadd52cb8726f0b46f50745353c",
+      "representation": "txt",
+      "associations": [],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.txt"
+      ],
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt",
+      "bytes": 1042480,
+      "sha256": "a41d06a3887cb4dd7724f76d110ab276a2d4c0dedf3fc5963071631f89b799b1",
+      "representation": "txt",
+      "associations": [
+        {
+          "citation_key": "BremmerJohnstonVries1998",
+          "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+          "coverage": "all344 supplied sheets; duplicatexi/18, missing21, ends at printed329",
+          "method": "local OCRmyPDF/Tesseract eng+deu; uncorrected OCR"
+        }
+      ],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt"
+      ],
+      "registered_hash_matches": true,
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.v2.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+      "bytes": 55327,
+      "sha256": "4f9952211bb366cd78235a4ec01eba008e0022fa7c707d1e49b962559e3efac4",
+      "representation": "txt",
+      "associations": [
+        {
+          "citation_key": "Fulk1998",
+          "evidence": "docs/refs.bib: file field",
+          "coverage": "not_established",
+          "method": "not_established"
+        },
+        {
+          "citation_key": "Fulk1998",
+          "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+          "coverage": "complete chapter, printed139-154",
+          "method": "local OCRmyPDF/Tesseract eng+deu; uncorrected OCR"
+        }
+      ],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/Fulk1998.txt"
+      ],
+      "registered_hash_matches": true,
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/Fulk1998.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Seiler2019.native.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/Seiler2019.native.txt",
+      "bytes": 53251,
+      "sha256": "cbd31f6f9cdd0ba113a2d4c242bfe57322e16f16444b92659ba758c9a90ad8dc",
+      "representation": "txt",
+      "associations": [],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/Seiler2019.native.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/Seiler2019.native.txt"
+      ],
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Seiler2019.native.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/Seiler2019.native.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+      "project_relative": "docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+      "bytes": 54177,
+      "sha256": "f1019c9be790c6acb2c097502952f964fd7e728ec358a01fe2a1f6a90894a9db",
+      "representation": "txt",
+      "associations": [
+        {
+          "citation_key": "Seiler2019",
+          "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+          "coverage": "complete chapter, printed525-540",
+          "method": "supplied ABBYY text; uncorrected glyphs"
+        }
+      ],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/Seiler2019.txt"
+      ],
+      "registered_hash_matches": true,
+      "source_representation_status": "searchable derivative; see coverage/method records",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/Seiler2019.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/approaches_1998.ocr.pdf",
+      "project_relative": "docs/references/local/desktop-2026-11-04/approaches_1998.ocr.pdf",
+      "bytes": 129169542,
+      "sha256": "1ade6b892c584e94457b65dfa7135b63abb848319714c5e668a0380963b43d9e",
+      "representation": "pdf",
+      "associations": [],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/local/desktop-2026-11-04/approaches_1998.ocr.pdf",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/local/desktop-2026-11-04/approaches_1998.ocr.pdf"
+      ],
+      "source_representation_status": "acquired file; edition and derivative qualifications remain applicable",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/local/desktop-2026-11-04/approaches_1998.ocr.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/desktop-2026-11-04/approaches_1998.ocr.pdf"
       ]
     },
     {
@@ -30315,6 +30775,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/luehr_article.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/luehr_article.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/luehr_article.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/luehr_article.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/luehr_article.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/luehr_article.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/luehr_article.pdf",
@@ -30410,6 +30871,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/luick_historische_grammatik_part1.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/luick_historische_grammatik_part1.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/luick_historische_grammatik_part1.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/luick_historische_grammatik_part1.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/luick_historische_grammatik_part1.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/luick_historische_grammatik_part1.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/luick_historische_grammatik_part1.pdf",
@@ -30476,6 +30938,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/luick_historische_grammatik_part2.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/luick_historische_grammatik_part2.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/luick_historische_grammatik_part2.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/luick_historische_grammatik_part2.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/luick_historische_grammatik_part2.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/luick_historische_grammatik_part2.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/luick_historische_grammatik_part2.pdf",
@@ -30663,6 +31126,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/mayrhofer_ewaia_III.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/mayrhofer_ewaia_III.pdf",
@@ -31149,6 +31613,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/neri_review_ringe_pie_to_pgmc.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/neri_review_ringe_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/neri_review_ringe_pie_to_pgmc.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/neri_review_ringe_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/neri_review_ringe_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/neri_review_ringe_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/neri_review_ringe_pie_to_pgmc.pdf",
@@ -31379,6 +31844,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/orel_handbook_germanic_etymology.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/orel_handbook_germanic_etymology.pdf",
@@ -57260,6 +57726,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/ringe_1984_germanic_e2_and_r.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/ringe_1984_germanic_e2_and_r.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/ringe_1984_germanic_e2_and_r.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/ringe_1984_germanic_e2_and_r.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/ringe_1984_germanic_e2_and_r.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/ringe_1984_germanic_e2_and_r.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/ringe_1984_germanic_e2_and_r.pdf",
@@ -57390,6 +57857,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/ringe_vol1_pie_to_pgmc.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/ringe_vol1_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/ringe_vol1_pie_to_pgmc.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/ringe_vol1_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/ringe_vol1_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/ringe_vol1_pie_to_pgmc.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/ringe_vol1_pie_to_pgmc.pdf",
@@ -57618,6 +58086,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/seebold_vergleichendes_woerterbuch.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/seebold_vergleichendes_woerterbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/seebold_vergleichendes_woerterbuch.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/seebold_vergleichendes_woerterbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/seebold_vergleichendes_woerterbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/seebold_vergleichendes_woerterbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/seebold_vergleichendes_woerterbuch.pdf",
@@ -57696,6 +58165,38 @@
         "$HOME/Code/capr/.capr-work/worktrees/soul-fulk-oblique/docs/references/seebold_vergleichendes_woerterbuch.vision.txt",
         "$HOME/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/docs/references/seebold_vergleichendes_woerterbuch.vision.txt",
         "$HOME/Code/capr/.capr-work/worktrees/soul-syncope-resolution/docs/references/seebold_vergleichendes_woerterbuch.vision.txt"
+      ]
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/seiler_2019_erfurt_glossary.pdf",
+      "project_relative": "docs/references/seiler_2019_erfurt_glossary.pdf",
+      "bytes": 895879,
+      "sha256": "7940219fef1c68638950aed77a5bb425775a178e96be78cb6b7c818f4eeb49ae",
+      "representation": "pdf",
+      "associations": [
+        {
+          "citation_key": "Seiler2019",
+          "evidence": "docs/refs.bib: file field",
+          "coverage": "not_established",
+          "method": "not_established"
+        },
+        {
+          "citation_key": "Seiler2019",
+          "evidence": "docs/references/desktop_2026-11-04/holdings.tsv",
+          "coverage": "complete chapter, printed525-540",
+          "method": "supplied ABBYY text; uncorrected glyphs"
+        }
+      ],
+      "root_role": "durable_main_project",
+      "preservation_copies": [
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz:docs/references/seiler_2019_erfurt_glossary.pdf",
+        "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz:docs/references/seiler_2019_erfurt_glossary.pdf"
+      ],
+      "registered_hash_matches": true,
+      "source_representation_status": "acquired file; edition and derivative qualifications remain applicable",
+      "copy_locations": [
+        "$HOME/Code/capr/docs/references/seiler_2019_erfurt_glossary.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/seiler_2019_erfurt_glossary.pdf"
       ]
     },
     {
@@ -57960,6 +58461,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/stiles_1986_four_part2_nowele7.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/stiles_1986_four_part2_nowele7.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/stiles_1986_four_part2_nowele7.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/stiles_1986_four_part2_nowele7.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/stiles_1986_four_part2_nowele7.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/stiles_1986_four_part2_nowele7.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/stiles_1986_four_part2_nowele7.pdf",
@@ -57990,6 +58492,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/stiles_1986_four_part3_nowele8.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/stiles_1986_four_part3_nowele8.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/stiles_1986_four_part3_nowele8.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/stiles_1986_four_part3_nowele8.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/stiles_1986_four_part3_nowele8.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/stiles_1986_four_part3_nowele8.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/stiles_1986_four_part3_nowele8.pdf",
@@ -58148,6 +58651,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/streitberg_urgermanische_grammatik.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/streitberg_urgermanische_grammatik.pdf",
@@ -58393,6 +58897,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/sweet_anglo_saxon_primer.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/sweet_anglo_saxon_primer.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/sweet_anglo_saxon_primer.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/sweet_anglo_saxon_primer.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/sweet_anglo_saxon_primer.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/sweet_anglo_saxon_primer.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/sweet_anglo_saxon_primer.pdf",
@@ -58721,6 +59226,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/van_helten_1905_zahlwort.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/van_helten_1905_zahlwort.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/van_helten_1905_zahlwort.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/van_helten_1905_zahlwort.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/van_helten_1905_zahlwort.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/van_helten_1905_zahlwort.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/van_helten_1905_zahlwort.pdf",
@@ -59120,7 +59626,7 @@
       ]
     }
   ],
-  "checked_asset_file_copies": 14858,
+  "checked_asset_file_copies": 14917,
   "external_candidates": [
     {
       "path": "$HOME/Downloads/Germanic/10.1515_9781802700251-007.pdf",
@@ -59145,6 +59651,7 @@
       "project_copies": [
         "$HOME/Code/capr/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/goering_2023_heafudu_problem.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/goering_2023_heafudu_problem.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/goering_2023_heafudu_problem.pdf",
@@ -59161,6 +59668,7 @@
       "project_copies": [
         "$HOME/Code/capr/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/barrack_1975_diachronic_phonology.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/barrack_1975_diachronic_phonology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/barrack_1975_diachronic_phonology.pdf",
@@ -59227,6 +59735,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bennett_1950_germanic_development_of_ie_e.pdf",
@@ -59270,6 +59779,7 @@
       "project_copies": [
         "$HOME/Code/capr/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/britton_1996_english_historical_linguistics.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/britton_1996_english_historical_linguistics.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/britton_1996_english_historical_linguistics.pdf",
@@ -59851,6 +60361,7 @@
       "project_copies": [
         "$HOME/Code/capr/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/hill_2017_west_germanic_lengthening.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/hill_2017_west_germanic_lengthening.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/hill_2017_west_germanic_lengthening.pdf",
@@ -59899,6 +60410,7 @@
       "project_copies": [
         "$HOME/Code/capr/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bulbring_altenglisches_elementarbuch.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bulbring_altenglisches_elementarbuch.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bulbring_altenglisches_elementarbuch.pdf",
@@ -60249,6 +60761,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/streitberg_urgermanische_grammatik.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/streitberg_urgermanische_grammatik.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/streitberg_urgermanische_grammatik.pdf",
@@ -60267,6 +60780,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/bammesberger_1990_morphologie.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/bammesberger_1990_morphologie.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/bammesberger_1990_morphologie.pdf",
@@ -60285,6 +60799,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/beekes_edg.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/beekes_edg.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/beekes_edg.pdf",
@@ -60319,6 +60834,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/mayrhofer_ewaia_III.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/mayrhofer_ewaia_III.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/mayrhofer_ewaia_III.pdf",
@@ -60355,6 +60871,7 @@
         "$HOME/Code/capr-sc032-workstream/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/kroonen_proto_germanic_n_stems.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/kroonen_2011_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/kroonen_proto_germanic_n_stems.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/kroonen_2011_n_stems.pdf",
@@ -60483,6 +61000,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/fulk_comparative_grammar_early_germanic.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/fulk_comparative_grammar_early_germanic.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/fulk_comparative_grammar_early_germanic.pdf",
@@ -60501,6 +61019,7 @@
         "$HOME/Code/capr-lexical-workstream/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr-sc032-workstream/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/earthly-sc040/docs/references/orel_handbook_germanic_etymology.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/nonhigh-four-cells/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/docs/references/orel_handbook_germanic_etymology.pdf",
         "$HOME/Code/capr/.capr-work/worktrees/parser-four-cells/.capr-work/source-plan/docs/references/orel_handbook_germanic_etymology.pdf",
@@ -60599,14 +61118,46 @@
         "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/seiler-2017/exzerpieren_kompilieren_tradieren_2017.pdf"
       ],
       "status": "exact_bytes_preserved"
+    },
+    {
+      "path": "$HOME/Desktop/Seiler 2019 - The spelling of the Erfurt glossary.pdf",
+      "sha256": "7940219fef1c68638950aed77a5bb425775a178e96be78cb6b7c818f4eeb49ae",
+      "bytes": 895879,
+      "project_copies": [
+        "$HOME/Code/capr/docs/references/seiler_2019_erfurt_glossary.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/seiler_2019_erfurt_glossary.pdf"
+      ],
+      "status": "exact_bytes_preserved"
+    },
+    {
+      "path": "$HOME/Desktop/Approaches_to_Old_Frisian_Philology.pdf",
+      "sha256": "788b2abae722ae870a7bacd6418df3fabca1a320481947300be065f62154e236",
+      "bytes": 98162480,
+      "project_copies": [
+        "$HOME/Code/capr/docs/references/approaches_old_frisian_philology_1998.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/approaches_old_frisian_philology_1998.pdf"
+      ],
+      "status": "exact_bytes_preserved"
     }
   ],
   "restoration_bundles": [
+    {
+      "path": "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04-checked.tar.gz",
+      "sha256": "c7f42793530f49731290a3f1267c35e0ba5ba5dd752fb8030f213ab87ad1dfef",
+      "role": "same_disk_restoration_bundle_not_disaster_recovery",
+      "verified_matching_members": 11
+    },
     {
       "path": "$HOME/Code/capr/docs/references/local/backups/ga-prefix-2026-10-25.tar.gz",
       "sha256": "72bdf0948f4a5fd6db86cd445e841fac8ab7cc65293b566727353c6d9260dd30",
       "role": "same_disk_restoration_bundle_not_disaster_recovery",
       "verified_matching_members": 58
+    },
+    {
+      "path": "$HOME/Code/capr/docs/references/local/backups/desktop-2026-11-04.tar.gz",
+      "sha256": "3bd7bdc140d312fb6d2276fc1d8d0a63e11162809d0ad92819821aa071690b79",
+      "role": "same_disk_restoration_bundle_not_disaster_recovery",
+      "verified_matching_members": 10
     },
     {
       "path": "$HOME/Code/capr/docs/references/local/backups/intake-2026-11-04-seiler-supplement.tar.gz",
@@ -60641,22 +61192,10 @@
       "evidence": "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/missing-direct-sources.md"
     },
     {
-      "requested_key": "Fulk1998",
-      "identity": "The Chronology of Anglo-Frisian Sound Changes, pp.139–154",
-      "status": "unacquired; Fulk2018 and Fulk2010 are not substitutes",
-      "evidence": "Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/missing-direct-sources.md"
-    },
-    {
       "requested_key": "Hock1973",
-      "identity": "1973 participles/a-umlaut work cited by Hill2017; exact bibliography not registered here",
+      "identity": "On the Phonemic Status of Germanic e and i, Issues in Linguistics, pp.319–351",
       "status": "unacquired; known only through Hill2017/Fulk2018 reports",
       "evidence": "Germanic/docs/sound_changes/audits/sc015-a-ablaut-investigation/INGESTION_MANIFEST.md"
-    },
-    {
-      "requested_key": "Seiler2019",
-      "identity": "The spelling of the Erfurt glossary, pp.525–540",
-      "status": "no readable original acquired; Seiler2017 is a distinct work",
-      "evidence": "Germanic/docs/sound_changes/audits/sc035-source-collation.md"
     }
   ],
   "old_archive": {
@@ -60681,6 +61220,8 @@
     "$HOME/Code/capr/.capr-work/worktrees/soul-syncope-resolution/.capr-work/source-readings"
   ],
   "explicitly_checked_external_files": [
+    "$HOME/Desktop/Seiler 2019 - The spelling of the Erfurt glossary.pdf",
+    "$HOME/Desktop/Approaches_to_Old_Frisian_Philology.pdf",
     "$HOME/Downloads/master-gdc-gdcebookspublic-20-21-75-85-04-2021758504-2021758504.pdf"
   ]
 }

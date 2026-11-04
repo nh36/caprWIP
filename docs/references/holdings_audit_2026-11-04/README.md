@@ -4,6 +4,13 @@ Base: `c1cfd0a5b2c3dbdefa18da32d05bb229e02543c0`.
 Filesystem observations: 4 November 2026. This is preservation housekeeping,
 not new source adjudication or certification of the four-cell publication.
 
+Subsequent same-day update: the [Desktop intake](../desktop_2026-11-04/README.md)
+adds Seiler2019 and Fulk1998 from the user's supplied PDFs. They are no longer
+acquisition gaps. The original population/copy counts below describe the initial
+audit; current `inventory.json` also includes the two explicitly supplied
+Desktop files and their new holdings. The original snapshot remains in commit
+`cf77a36b`. Bennett1968, Stiles1995 and Hock1973 remain requested.
+
 ## Result and scope
 
 Twenty-three previously stranded original PDF/DjVu files are now byte-preserved
@@ -104,10 +111,13 @@ Wright-Wuelcker1884 volume I variant. `seiler-supplement.json` records the
 complete open-access edited volume containing Seiler2017 and its separately
 extracted complete chapter, sheets 162-183. This is not Seiler2019.
 
-Bennett1968, Stiles1995, Fulk1998, Hock1973 and Seiler2019 remain unacquired.
-The inventory names their existing access dossiers. Bennett1950, other Stiles
+At the initial audit Bennett1968, Stiles1995, Fulk1998, Hock1973 and Seiler2019
+were not located in the then-searched roots. The subsequent Desktop intake
+resolves Fulk1998 and Seiler2019; the other three remain unacquired.
+The inventory names the remaining access dossiers. Bennett1950, other Stiles
 papers, Fulk2018/2010, Hogg1979 and Seiler2017 are not substitutes.
-No new direct reading of those five unavailable works is claimed.
+The acquisition update does not retrospectively certify scientific arguments
+or the original audit's direct-reading status.
 
 ## Preservation limits
 

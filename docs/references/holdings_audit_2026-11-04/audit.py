@@ -105,7 +105,8 @@ def run(main, output):
             for kind in ("pdf", "text"):
                 if row.get(kind + "_path"):
                     associate(row["citation_key"], row[kind + "_path"],
-                              str(manifest.relative_to(ROOT)), "complete per intake manifest",
+                              str(manifest.relative_to(ROOT)),
+                              row.get("coverage", "complete per intake manifest"),
                               row.get("extraction", row.get("method", "original")))
                     declared_hashes[row[kind + "_path"]] = row.get(kind + "_sha256")
     for key, paths in {
@@ -255,6 +256,20 @@ def run(main, output):
                              bytes=seiler.stat().st_size,
                              project_copies=[item["path"] for item in matches],
                              status="exact_bytes_preserved" if matches else "stranded_OA_volume"))
+    desktop_record = ROOT / "docs/references/desktop_2026-11-04/originals.json"
+    desktop_files = []
+    if desktop_record.exists():
+        for record in json.loads(desktop_record.read_text()):
+            path = Path(record["origin"].replace("$HOME", str(HOME), 1))
+            if not path.exists():
+                continue
+            desktop_files.append(display(path))
+            identity = digest(path)
+            matches = by_hash.get(identity, [])
+            external.append(dict(path=display(path), sha256=identity,
+                                 bytes=path.stat().st_size,
+                                 project_copies=[item["path"] for item in matches],
+                                 status="exact_bytes_preserved" if matches else "stranded_Desktop_source"))
 
     grouped = {}
     for item in assets:
@@ -311,15 +326,10 @@ def run(main, output):
         dict(requested_key="Stiles1995", identity="Remarks on the Anglo-Frisian Thesis, pp.177–220",
              status="unacquired; original known through explicitly attributed reports",
              evidence="Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/missing-direct-sources.md"),
-        dict(requested_key="Fulk1998", identity="The Chronology of Anglo-Frisian Sound Changes, pp.139–154",
-             status="unacquired; Fulk2018 and Fulk2010 are not substitutes",
-             evidence="Germanic/docs/sound_changes/literature_dossiers/anglo_frisian/missing-direct-sources.md"),
-        dict(requested_key="Hock1973", identity="1973 participles/a-umlaut work cited by Hill2017; exact bibliography not registered here",
+        dict(requested_key="Hock1973",
+             identity="On the Phonemic Status of Germanic e and i, Issues in Linguistics, pp.319–351",
              status="unacquired; known only through Hill2017/Fulk2018 reports",
              evidence="Germanic/docs/sound_changes/audits/sc015-a-ablaut-investigation/INGESTION_MANIFEST.md"),
-        dict(requested_key="Seiler2019", identity="The spelling of the Erfurt glossary, pp.525–540",
-             status="no readable original acquired; Seiler2017 is a distinct work",
-             evidence="Germanic/docs/sound_changes/audits/sc035-source-collation.md"),
     ]
     result = dict(schema=1, audit_date="2026-11-04", main_project=display(main),
                   bibliography_owner="docs/refs.bib", sources=list(entries.values()),
@@ -330,7 +340,8 @@ def run(main, output):
                                    git_bundles=[display(p) for p in (archive / "bundles").glob("*")],
                                    limitation="same disk; Git bundles do not imply ignored PDF preservation"),
                   searched_external_roots=[display(p) for p in external_roots],
-                  explicitly_checked_external_files=[display(seiler)] if seiler.exists() else [])
+                  explicitly_checked_external_files=desktop_files + (
+                      [display(seiler)] if seiler.exists() else []))
     (output / "inventory.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     stranded = [r for r in external if r["status"].startswith("stranded")]
     print(json.dumps(dict(sources=len(entries), asset_files=len(assets),

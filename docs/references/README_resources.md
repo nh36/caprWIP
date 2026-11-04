@@ -4,6 +4,15 @@ This file lists OCRed reference texts in `docs/references/` with quick hints for
 
 ## Holdings reconciliation, 4 November 2026
 
+The subsequent [Desktop intake](desktop_2026-11-04/README.md) incorporates
+the complete Seiler2019 chapter and complete Fulk1998 contribution from the
+supplied *Approaches to Old Frisian Philology* scan. All 344 supplied volume
+sheets are now OCRed locally; the scan itself ends at printed p.329 and is
+not a complete edition. Their originals and complete selected-chapter texts
+are durable ignored holdings. The [remaining acquisition list](desktop_2026-11-04/remaining-acquisitions.md)
+now contains Bennett1968, Stiles1995 and Hock1973, with verified identifier
+provenance and the separate supplied-volume completion gap.
+
 The [source-holdings audit](holdings_audit_2026-11-04/README.md) reconciles
 bibliography, intake manifests, all available CAPR worktree libraries,
 the named scholarly acquisition directories and the August local archive.
@@ -238,8 +247,10 @@ manuscript columns from reconstructed archetypes. The detailed SC035
 collation apparatus records spacing, corrections, dictionary diacritics
 and the genuine Corpus *saegeseotu* edition difference.
 Seiler2017 is available through its registered open-access volume URL;
-Seiler2019 was identified bibliographically but no reliable readable copy
-was obtained. Do not cite the latter as an inspected argument.
+Seiler2019 was unavailable during that collation, but its complete supplied
+chapter is now ingested in the Desktop intake. The earlier unverified-source
+receipt remains historical evidence, not the current access status.
+Acquisition does not retroactively certify its argument or alter the collation.
 
 These are source holdings, not generated manuscript text. Original PDFs follow
 the existing local-only ignored-PDF policy; no copyrighted catalogue is

@@ -1,0 +1,74 @@
+{
+  "originals": [
+    {
+      "citation_key": "Seiler2019",
+      "origin": "$HOME/Desktop/Seiler 2019 - The spelling of the Erfurt glossary.pdf",
+      "path": "docs/references/seiler_2019_erfurt_glossary.pdf",
+      "sha256": "7940219fef1c68638950aed77a5bb425775a178e96be78cb6b7c818f4eeb49ae",
+      "sheets": 16,
+      "pdfinfo": "Creator:         ABBYY FineReader PDF\nProducer:        BookChanger 4.6.3\nCreationDate:    Wed Oct 28 09:10:34 2026 GMT\nModDate:         Thu Oct 29 10:24:37 2026 GMT\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           16\nEncrypted:       no\nPage size:       464.9 x 664.049 pts\nPage rot:        0\nFile size:       895879 bytes\nOptimized:       no\nPDF version:     1.6\n",
+      "native_text_characters": 52910
+    },
+    {
+      "citation_key": "BremmerJohnstonVries1998",
+      "origin": "$HOME/Desktop/Approaches_to_Old_Frisian_Philology.pdf",
+      "path": "docs/references/approaches_old_frisian_philology_1998.pdf",
+      "sha256": "788b2abae722ae870a7bacd6418df3fabca1a320481947300be065f62154e236",
+      "sheets": 344,
+      "pdfinfo": "Title:           Approaches to Old Frisian Philology\nSubject:         Collected scans to printed page 329; two duplicated printed pages 194\u2013195 removed; unprinted blank facing page 302 absent from source\nKeywords:        Old Frisian, philology, 1998, combined scanned volume\nAuthor:          Rolf H. Bremmer Jr., Thomas S. B. Johnston, and Oebele Vries (eds.)\nCreator:         Merged from previously combined user-provided scans\nProducer:        iLovePDF\nModDate:         Wed Oct 28 07:44:19 2026 GMT\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           344\nEncrypted:       no\nPage size:       469.08 x 737.28 pts\nPage rot:        0\nFile size:       98162480 bytes\nOptimized:       no\nPDF version:     1.7\n",
+      "native_text_characters": 0
+    }
+  ],
+  "derivatives": [
+    {
+      "path": "docs/references/local/desktop-2026-11-04/Seiler2019.txt",
+      "sha256": "f1019c9be790c6acb2c097502952f964fd7e728ec358a01fe2a1f6a90894a9db",
+      "bytes": 54177
+    },
+    {
+      "path": "docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.native.txt",
+      "sha256": "0e2325e399d9ef8098f7ababcfd46c2fafd9a15961c09abb10bc8dfad051cd53",
+      "bytes": 344
+    },
+    {
+      "path": "docs/references/local/desktop-2026-11-04/BremmerJohnstonVries1998.txt",
+      "sha256": "ffece6662eb530a3f0c84e16c33571f6bb065eadd52cb8726f0b46f50745353c",
+      "bytes": 1042472
+    },
+    {
+      "path": "docs/references/local/desktop-2026-11-04/approaches_1998.ocr.pdf",
+      "sha256": "1ade6b892c584e94457b65dfa7135b63abb848319714c5e668a0380963b43d9e",
+      "bytes": 129169542
+    },
+    {
+      "path": "docs/references/local/desktop-2026-11-04/Approaches1998.ocr-native.txt",
+      "sha256": "267adc26b14ae1bd311c8d2a88df85b4fa8dfbbaffdca6a0c65f3ef17ad4d561",
+      "bytes": 1027697
+    },
+    {
+      "path": "docs/references/local/desktop-2026-11-04/Fulk1998.txt",
+      "sha256": "4f9952211bb366cd78235a4ec01eba008e0022fa7c707d1e49b962559e3efac4",
+      "bytes": 55327
+    },
+    {
+      "path": "docs/references/local/desktop-2026-11-04/Seiler2019.native.txt",
+      "sha256": "cbd31f6f9cdd0ba113a2d4c242bfe57322e16f16444b92659ba758c9a90ad8dc",
+      "bytes": 53251
+    },
+    {
+      "path": "docs/references/local/desktop-2026-11-04/Approaches1998.ocr-sidecar.txt",
+      "sha256": "027823573f96f5ff8e76d1ecb17b38bdc5e8f8207173fa891c00f964f5e1dfac",
+      "bytes": 936544
+    }
+  ],
+  "restoration": {
+    "path": "docs/references/local/backups/desktop-2026-11-04.tar.gz",
+    "sha256": "3bd7bdc140d312fb6d2276fc1d8d0a63e11162809d0ad92819821aa071690b79",
+    "members": 10,
+    "role": "same-disk restoration, not independent backup"
+  },
+  "tools": {
+    "ocrmypdf": "17.1.0",
+    "tesseract": "tesseract 5.5.2\n leptonica-1.87.0\n  libgif 5.2.2 : libjpeg 8d (libjpeg-turbo 3.1.3) : libpng 1.6.55 : libtiff 4.7.1 : zlib 1.2.12 : libwebp 1.6.0 : libopenjp2 2.5.4\n Found NEON\n Found libarchive 3.8.5 zlib/1.2.12 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 expat/expat_2.7.3 CommonCrypto/system libb2/system\n Found libcurl/8.7.1 SecureTransport (LibreSSL/3.3.6) zlib/1.2.12 nghttp2/1.68.0"
+  }
+}

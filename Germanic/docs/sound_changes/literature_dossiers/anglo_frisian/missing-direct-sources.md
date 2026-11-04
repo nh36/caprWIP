@@ -3,6 +3,14 @@
 Audit performed as part of the Anglo-Frisian source-ingestion pass, before
 any synthesis was written.
 
+Current access update, 4 November 2026: Fulk1998 is now held as a complete
+chapter, printed pp.139–154, sheets155–170 of the user-supplied assembled
+volume. Its original scan, local full-file OCR and separate chapter text
+are recorded in `docs/references/desktop_2026-11-04/`.
+Earlier acquisition/coverage statements below remain historical receipts;
+they do not override this current access update. The earlier synthesis has
+not been silently rewritten or retrospectively upgraded to direct Fulk evidence.
+
 ## Why this file exists
 
 The specialist sources ingested in this pass depend heavily on a smaller set of
@@ -19,7 +27,7 @@ The standing rule for this research area is therefore:
 > cited as such in any CAPR memo.
 
 This file records coverage and premise-level limits, not blanket acquisition
-gates. Stiles 1995 and Fulk 1998 will not be obtained for this programme.
+gates. Stiles 1995 remains unacquired; Fulk 1998 has subsequently been supplied.
 Use the thirteen held works to evaluate independently supported constraints,
 compare their explicitly attributed reports, and complete the book.
 Only a conclusion that genuinely requires an otherwise unverified premise
@@ -80,7 +88,7 @@ substitutes.
 |---|---|---|---|
 | Stiles 1995, "Remarks on the 'Anglo-Frisian' Thesis" | **No** | Unavailable; no acquisition prerequisite | Cannot verify his original argument directly; assess independently supported premises and attribute reports |
 | Bremmer 2009, *An Introduction to Old Frisian* | **Complete PDF parts and Vision text held** | Direct card 10 and synthesis complete | Opposed ai-order passages; qualified h chronology; unresolved ai conditioner |
-| Fulk 1998, "The Chronology of Anglo-Frisian Sound Changes" | **No** | Unavailable; no acquisition prerequisite | Cannot assess the original dedicated argument directly; Fulk 2018 and reports are distinct evidence |
+| Fulk 1998, "The Chronology of Anglo-Frisian Sound Changes" | **Complete chapter scan and local OCR held** | Desktop intake, 4 November 2026; separate scholarly reassessment not performed | Prior synthesis remains based on its stated evidence; acquisition is not retrospective scientific adjudication |
 | Hogg 1979, "Old English Palatalization" | **PDF and Vision text held** | Direct card 13 and synthesis complete | Unresolved English palatalization/mutation contradiction; no Frisian chain |
 | Nielsen 2001; other cited treatments | **2001 chapter PDF and Vision text held; other titles not directly reviewed** | Direct card 11 and synthesis complete | Structural causal premises versus diagnostic edges; earlier cited works remain reports |
 | Goblirsch 1991 on Germanic *ai/*au in Anglo-Frisian | **PDF and Vision text held** | Direct card 12 and synthesis complete | Unobserved Frisian ēa/eā; incomplete ai conditioning; reported mechanism/date dependencies |
@@ -138,7 +146,9 @@ requires an explicit choice of component events, contexts and dialect.
 
 ### Fulk 1998, "The Chronology of Anglo-Frisian Sound Changes"
 
-**Not held.**
+Originally not held; now acquired complete as recorded in the current access
+update above. The following paragraph preserves the distinction from adjacent
+holdings; it does not assert a continuing acquisition gap.
 
 **Adjacent holding that is not a substitute:** Fulk 2018, *A Comparative
 Grammar of the Early Germanic Languages*
@@ -149,7 +159,7 @@ dedicated to precisely the question this research area exists to answer.
 Citing Fulk 2018 as though it were that paper would be exactly the
 substitution this file forbids.
 
-**Limit:** the synthesis cannot claim direct or exhaustive assessment of
+**Limit of the earlier synthesis:** it cannot claim direct or exhaustive assessment of
 Fulk's 1998 position. This does not prevent testing the directly available
 accounts or defending a model within that explicit coverage boundary.
 
@@ -273,8 +283,9 @@ the images instead of copying corrupt OCR.
 2. **Bremmer 2009** — direct card and comparative integration complete;
    retain its opposed/qualified constraints rather than treating it as
    an automatic baseline.
-3. **Fulk 1998** — unavailable; the original is not interchangeable with
-   Fulk 2018 or other authors' reports. Not a completion prerequisite.
+3. **Fulk 1998** — now held complete; the original is not interchangeable with
+   Fulk 2018 or other authors' reports. Prior scientific conclusions are not
+   automatically re-adjudicated by acquisition.
 4. **Hogg 1979** — direct review complete; English operative P/U remains
    unresolved and no independent Frisian chain is supplied.
 5. **Luick** — both scans and complete Vision texts now held; §§118–123

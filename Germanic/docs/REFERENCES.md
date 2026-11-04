@@ -3,6 +3,11 @@
 This repo keeps key linguistic references in `docs/references/`. Check these
 first before searching elsewhere.
 
+The [Desktop intake](../../docs/references/desktop_2026-11-04/README.md)
+adds complete local Seiler2019 and Fulk1998 chapter holdings, checked sheet/folio
+maps and separate searchable texts. It supersedes earlier access-gap statements;
+it does not itself revise any historical adjudication.
+
 The [4 November holdings audit](../../docs/references/holdings_audit_2026-11-04/README.md)
 records checked local originals, transcriptions, preservation copies and
 unacquired references. Its filesystem observations are separate from source

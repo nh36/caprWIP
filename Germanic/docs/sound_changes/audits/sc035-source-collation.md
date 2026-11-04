@@ -129,6 +129,12 @@ spellings; it does not assign these prefix tokens to specific source batches.
 
 ## Acquisition and unverified sources
 
+Later access update, 4 November 2026: the user supplied the complete
+Seiler2019 chapter, now preserved and transcribed under
+`docs/references/desktop_2026-11-04/`. The unavailable-source statement below
+records the earlier collation's access limitation, not the current holding.
+No new Seiler argument is silently imported into this completed collation.
+
 The four letter PDFs and revised introduction were checked as ordinary
 public website downloads, not as OCR authority. The site's copyright is
 the editors'; free access is not a redistribution licence. Downloads and
