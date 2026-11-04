@@ -162,6 +162,11 @@ functionality and totality on an explicitly valid canonical domain:
 one fully specified Proto-Germanic input under a fixed history must
 produce exactly one Old English output.
 
+Actual final four-cell PDFs and indexes have been built and page-inspected:
+[publication record](sound_changes/audits/parser-four-cells-production/publication-inspection.md).
+The separate source-bound strict result is owned by the coordinated journal
+and its `parser-four-cells-production/validation-closeout.md`, not by that build.
+
 The authorized wether lexical selection uses masculine `*wéθruz`, preserving
 all 387 finals and the eight established mismatches. Its exact named receipt
 is `approved_wether_input_migration.json`; the separate

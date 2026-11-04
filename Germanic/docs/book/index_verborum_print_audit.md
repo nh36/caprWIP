@@ -65,7 +65,7 @@
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1187
+- Unique printed entries: 1185
 - Print anomaly rows: 51
 - Hard print anomalies: 0
 

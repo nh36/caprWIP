@@ -643,12 +643,11 @@ pgmc	*fúlgijaną	fulgijana			5	selected_input; source_protoform	explicit_tag; l
 pgmc	*fūliþō	fulitho			3	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:57; filth — OE fȳlþ
 pgmc	*fúlką	fulka			1	selected_input	trace_proto_input	folk — OE folc
 pgmc	*fúlô	fulo			1	selected_input	trace_proto_input	foal — OE fola
-pgmc	*fúnðanai	fundanai			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	find — OE fundne
-pgmc	*fúnðanai	fundhanai			2	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:29; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81
-pgmc	*fúnðananǭ	fundhanano			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:84
-pgmc	*fúnðanaz	fundhanaz			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:82
-pgmc	*fúnðanǭ	fundhano			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:86
-pgmc	*fúnðinaz	fundhinaz			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:83
+pgmc	*fúnðanai	fundanai			4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:29; Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:81; find — OE fundne
+pgmc	*fúnðananǭ	fundanano			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:84
+pgmc	*fúnðanaz	fundanaz			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:82
+pgmc	*fúnðanǭ	fundano			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:86
+pgmc	*fúnðinaz	fundinaz			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2011-find-fundene.model.md:83
 pgmc	*fúnxstiz	funxstiz			1	selected_input	trace_proto_input	fist — OE fȳst
 pgmc	*fūri	furi			5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:23; Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:67; Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:86; fire — OE fȳre
 pgmc	*fúrx	furx			1	selected_input	trace_proto_input	furrow — OE furh
@@ -824,8 +823,7 @@ pgmc	*rústaz	rustaz			3	selected_input; source_protoform	explicit_tag; lexical_
 pgmc	*rústō	rusto			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:77
 pgmc	*sái	sai			3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:25; Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:52; sea — OE sǣ
 pgmc	*sáiwalō	saiwalo			3	comparison_form; source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:28; Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:92; soul — OE sāwle
-pgmc	*sáiwalǭ	saiwalo			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	soul — OE sāwle
-pgmc	*sáiwalǭ	saiwaloacc			1	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:30
+pgmc	*sáiwalǭ	saiwalo			3	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2201-soul-sāwle.model.md:30; soul — OE sāwle
 pgmc	*saiwiz	saiwiz			1	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:23
 pgmc	*sáiwiz	saiwiz			4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:26; Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:53; sea — OE sǣ
 pgmc	*sákō	sako			1	selected_input	trace_proto_input	sake — OE sacu

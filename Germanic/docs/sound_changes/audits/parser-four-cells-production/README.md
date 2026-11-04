@@ -173,11 +173,21 @@ Prose, forms, stages and interpretations are unchanged. The merged entries
 retain all four find sites and three soul sites; no emission site is dropped.
 The final render and page-image inspection follow this metadata correction.
 
+The subsequent [final publication inspection](publication-inspection.md)
+records successful actual build05 and 29 directly viewed final sheets.
+The bounded metadata/test target amendment preserves the original completion
+and renews only invalidated PROPAGATE through fresh owner finalisations.
+Current-source strict certification is recorded separately in
+`validation-closeout.md` when that final gate has actually completed.
+
 Colman2011 is independently copied, not linked, at
 `docs/references/colman_2011_moneyers_buga_boia.pdf` and
 `docs/references/local/colman-2011/complete.txt`. Its verified PDF SHA256 is
 `0af5841706ba5a00007acc5fa027b0faf4263b1287199430cb212a21326f3c9d`.
 No Downloads dependency remains. Local scholarly holdings remain untracked.
+Both PDF and transcription also persist independently in the main repository
+directory, not only the isolated worktree. The transcription SHA256 is
+`36b5aecf61225a39c09299e3695bf0c02b8389b7e8e195e277b4352e1f0e0e7c`.
 
 ## Reproducible preserved evidence
 
