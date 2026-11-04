@@ -3,6 +3,13 @@
 This repo keeps key linguistic references in `docs/references/`. Check these
 first before searching elsewhere.
 
+The [4 November holdings audit](../../docs/references/holdings_audit_2026-11-04/README.md)
+records checked local originals, transcriptions, preservation copies and
+unacquired references. Its filesystem observations are separate from source
+reading or historical adjudication. Colman2011 is retained project-locally;
+Lloyd–Springer I's previously stranded scan is now incorporated without changing
+its 1988 bibliographic identity.
+
 ## Primary sources (consult first)
 
 These are the first-pass authorities on PGmc → OE phonology and morphology.

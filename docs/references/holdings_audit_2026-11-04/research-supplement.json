@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "citation_key": "Skeat1874",
+      "target": "docs/references/skeat_1874_luke.pdf",
+      "origin": "$HOME/Code/capr/.capr-work/worktrees/soul-fulk-oblique/.capr-work/source-readings/skeat-luke.pdf",
+      "sha256": "b996f071eb44ef8443df99ce38305093b4e41d207fbea00e2fdde7c53ae56537",
+      "inspection": "Prior original-edition/source-inventory checks preserved in the soul dossiers; no new historical claim",
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/skeat_1874_luke.txt",
+        "sha256": "b0b102f5ad70c0f0ee0c96b567bad93fd6766e96a5d2f459df59c90d6eae66a0",
+        "method": "pdftotext -layout; native/OCR layer, not newly corrected diplomatic text",
+        "coverage": "full-file extraction; source images remain authoritative",
+        "sheet_markers": 276
+      }
+    },
+    {
+      "citation_key": "Strunk1904",
+      "target": "docs/references/strunk_1904_juliana.pdf",
+      "origin": "$HOME/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/.capr-work/source-readings/strunk1904-juliana.pdf",
+      "sha256": "1cf6be49bed478a96312a8c39f457006af0f5f96bb6cd670b315d8af2742fb54",
+      "inspection": "Prior original-edition/source-inventory checks preserved in the soul dossiers; no new historical claim",
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/strunk_1904_juliana.txt",
+        "sha256": "fca90d0e5ff66ea15ed71218f7534ee1be4fa9fdea2190189da03615f10e3abd",
+        "method": "pdftotext -layout; native/OCR layer, not newly corrected diplomatic text",
+        "coverage": "full-file extraction; source images remain authoritative",
+        "sheet_markers": 189
+      }
+    },
+    {
+      "citation_key": "WrightWuelcker1884",
+      "target": "docs/references/wright_wuelcker_1884_volume1_variant.pdf",
+      "origin": "$HOME/Code/capr/.capr-work/worktrees/soul-lexical-reassessment/.capr-work/source-readings/wright-wulcker1884-vol1.pdf",
+      "sha256": "69e55fda05e9a0ca6c4c2e16de972199d4d4e1e60ab1afe8afb5a3984cfcaa34",
+      "inspection": "Prior original-edition/source-inventory checks preserved in the soul dossiers; no new historical claim",
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/wright_wuelcker_1884_volume1_variant.txt",
+        "sha256": "b7bd46991cf3face927abf674308c03be8993f9a958e08e10322b7845da3ce48",
+        "method": "pdftotext -layout; native/OCR layer, not newly corrected diplomatic text",
+        "coverage": "full-file extraction; source images remain authoritative",
+        "sheet_markers": 450
+      }
+    }
+  ],
+  "restoration_bundle": {
+    "path": "docs/references/local/backups/intake-2026-11-04-research-supplement.tar.gz",
+    "sha256": "7bcbcac5fb71dd884144dfb64cf8a937eb8d275ad2c19a403463d27ca4018e55",
+    "members": 6,
+    "limitation": "same-disk local restoration, not independent backup"
+  }
+}

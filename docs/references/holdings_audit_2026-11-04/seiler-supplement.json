@@ -1,0 +1,23 @@
+{
+  "records": [
+    {
+      "citation_key": "Seiler2017",
+      "target": "docs/references/local/seiler-2017/exzerpieren_kompilieren_tradieren_2017.pdf",
+      "origin": "$HOME/Downloads/master-gdc-gdcebookspublic-20-21-75-85-04-2021758504-2021758504.pdf",
+      "sha256": "7db850d673f2c21f2f5987639acedf1cdb7f4de15f5d7cac41f930b182e04fd4",
+      "inspection": "Registered open-access volume URL/identifier matched; exact chapter sheets162\u2013183 extracted; Seiler2019 remains unacquired",
+      "text": {
+        "path": "docs/references/local/seiler-2017/chapter.txt",
+        "sha256": "2e6f10cc007eab2258cef92ded4b1bf2efbe547922c099e419180414353c587a",
+        "method": "pdftotext -layout, sheets162\u2013183",
+        "coverage": "complete selected chapter, not complete edited volume"
+      }
+    }
+  ],
+  "restoration_bundle": {
+    "path": "docs/references/local/backups/intake-2026-11-04-seiler-supplement.tar.gz",
+    "sha256": "d36c7ee5b9fbfc35b2be6180b7ebe879d2b393c87b929b2df6bf7b2c3c4804a8",
+    "members": 2,
+    "limitation": "same-disk local restoration, not independent backup"
+  }
+}

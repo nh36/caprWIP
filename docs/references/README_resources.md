@@ -2,6 +2,25 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## Holdings reconciliation, 4 November 2026
+
+The [source-holdings audit](holdings_audit_2026-11-04/README.md) reconciles
+bibliography, intake manifests, all available CAPR worktree libraries,
+the named scholarly acquisition directories and the August local archive.
+Its machine-readable inventory distinguishes originals, extracts, duplicate
+worktree copies, verified local restoration bundles and unacquired references.
+It does not certify new historical arguments or independent off-machine backup.
+
+`Colman2011` is held as `colman_2011_moneyers_buga_boia.pdf` and the complete
+local-only `local/colman-2011/complete.txt`. Both exact closeout hashes were
+verified in the durable main project and research worktree. The PDF SHA256 is
+`0af5841706ba5a00007acc5fa027b0faf4263b1287199430cb212a21326f3c9d`;
+the text SHA256 is
+`36b5aecf61225a39c09299e3695bf0c02b8389b7e8e195e277b4352e1f0e0e7c`.
+Its original `docs/refs.bib` metadata is unchanged. No access depends on
+Downloads. The local November restoration bundle preserves both files;
+it remains on the same disk, not independent disaster recovery.
+
 ## World and prosody intake (2026-10-26)
 
 The separately supplied complete Barrack1975 holding is registered in
@@ -758,8 +777,18 @@ Use the original page images, not a guessed normalization, for exact
 phonetic quotations; the complete text remains an explicitly uncorrected
 OCR witness rather than a diplomatic edition.
 
-## Not yet OCRed
+## Lloyd–Springer volume I: reconciled holding
 
-- **Lloyd & Springer**, *Etymologisches Wörterbuch des Althochdeutschen*, Bd. 1 (1998).  
-  Source PDF is a scan with no text layer; would need OCR. DJVU version also available.  
-  Located in Downloads, not yet incorporated.
+- **Lloyd & Springer**, *Etymologisches Wörterbuch des Althochdeutschen*,
+  Bd. I, *-a–bezzisto* (1988), `LloydSpringer1988`.
+  The original 335-sheet scan is now retained as
+  `ewa_band1_lloyd_springer.pdf`; the separately acquired DjVu is preserved
+  under `local/lloyd-springer-1988/original.djvu`, without asserting edition
+  equivalence from its filename. The PDF title/copyright images identify
+  1988, agreeing with the unchanged bibliography, not the supplied 1998 label.
+  The already existing `ewa_band1_lloyd_springer.txt` contains 335 form feeds,
+  matching title/copyright and the final *bezzisto* endpoint. It is legacy
+  searchable OCR, not a newly corrected diplomatic text. The PDF has no text
+  layer; the earlier “not incorporated or OCRed” note was therefore only
+  partly true: the original was stranded, but searchable OCR already existed.
+  Exact original/extract hashes and provenance are in the November inventory.

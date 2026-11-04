@@ -1,0 +1,372 @@
+{
+  "records": [
+    {
+      "citation_key": "CiszekKiliszewska2015",
+      "title": "Old English Suffix -Cund and Its Fate",
+      "target": "docs/references/ciszek_kiliszewska_2015_cund.pdf",
+      "inspection": "opening bibliographical identity checked, not whole argument",
+      "origin": "$HOME/Downloads/Germanic/Ciszek-Kilszewka 2015.pdf",
+      "sha256": "37845a8ab1b9b66e4d97cf4509282bd51ffc31d5b7d04f1e76654b8b5d958add",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/ciszek_kiliszewska_2015_cund.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/ciszek_kiliszewska_2015_cund.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/ciszek_kiliszewska_2015_cund.txt",
+        "sha256": "dde259e9d3ff9dceb1d156791323a4854de2feaa592d9327d395a5b2ba856bd3",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 18,
+        "sheet_markers": 18,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "Raquel Mateo Mendaza, The Old English Adjectival Suffixes -Cund and -Isc: Textual Occurrences and Productivity (2012)",
+      "target": "docs/references/local/intake-2026-11-04/mateo_mendaza_2012_cund_isc.pdf",
+      "inspection": "opening bibliographical identity checked; no new citation key assigned",
+      "origin": "$HOME/Downloads/Germanic/Dialnet-TheOldEnglishAdjectivalSuffixesCundAndIsc-4546743.pdf",
+      "sha256": "87ea88cb6fc726303996eb54bf231189ed0304dce9c2c61b62758060eca7cbe2",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/mateo_mendaza_2012_cund_isc.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/mateo_mendaza_2012_cund_isc.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/mateo_mendaza_2012_cund_isc.txt",
+        "sha256": "31b4cfa4668b4cf501a84918904d397dc67c0f3c28d2fd5d147fa2b793cd7a2e",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 17,
+        "sheet_markers": 18,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": "HoggCHEL1992",
+      "title": "The Cambridge History of the English Language, Volume I",
+      "target": "docs/references/hogg_chel_1992_volume1.pdf",
+      "inspection": "opening volume identity checked; chapter reading is separate",
+      "origin": "$HOME/Downloads/Germanic/The Cambridge History of the English Language, Volume 1_ The -- Richard M_ Hogg (editor) -- 1ST, 1992 -- Cambridge University Press (Virtual -- isbn13 9780521264747 -- 718140412f13446d1c1118ae76428c80 -- Anna’s Archive.pdf",
+      "sha256": "0874395a7ae66ed27641f8e937d0e2fd300b4af11aae60757f732c4cbae9c486",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/hogg_chel_1992_volume1.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/hogg_chel_1992_volume1.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/hogg_chel_1992_volume1.txt",
+        "sha256": "cd371e84eb24ba2c5d1de34c046603dc37ef848a21d878632b2a979bade6b04d",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 612,
+        "sheet_markers": 612,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "Kaleb deMello, The Sound Changes from Proto-Indo-European to Old Irish (2026 dissertation)",
+      "target": "docs/references/local/intake-2026-11-04/demello_2026_pie_old_irish.pdf",
+      "inspection": "title only; Celtic acquisition, not an OE source",
+      "origin": "$HOME/Downloads/Germanic/The_Sound_Changes_from_Proto-Indo-European_to_Old_Irish_DEMELLO_Kaleb_.pdf",
+      "sha256": "fd5be480c82de9097b422c6f21ba92a6108718f9dbad37dca90b67ba87132a89",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/demello_2026_pie_old_irish.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/demello_2026_pie_old_irish.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/demello_2026_pie_old_irish.txt",
+        "sha256": "ccf2742d50106ebe3f548443865b90f05131b1bea587bd8ba3578aac36479da7",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 108,
+        "sheet_markers": 108,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "Javier Martín Arista, The Old English Prefix ge-: A Panchronic Reappraisal (2012)",
+      "target": "docs/references/local/intake-2026-11-04/martin_arista_2012_ge.pdf",
+      "inspection": "opening identity checked; formerly excluded from bounded ga research, not missing acquisition",
+      "origin": "$HOME/Downloads/Germanic/ga-prefix/arista2012.pdf",
+      "sha256": "ad4f86d51315126a3cd96c2d322eecc89ec01bdb65692100e72bc591423665ac",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/martin_arista_2012_ge.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/martin_arista_2012_ge.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/martin_arista_2012_ge.txt",
+        "sha256": "2d4c89d779995b8efac20c7d02d37717df13c07848f93bf841506ab4a7e8c93e",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 24,
+        "sheet_markers": 24,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": "vanHelten1891",
+      "title": "Beiträge zur Geschichte der deutschen Sprache und Literatur, volume 15, container of van Helten's Grammatisches",
+      "target": "docs/references/local/intake-2026-11-04/beitrage_volume15.pdf",
+      "inspection": "whole-volume container; not a new independent van Helten witness",
+      "origin": "$HOME/Downloads/Germanic/ga-prefix/beitrgezurgesc15halluoft.pdf",
+      "sha256": "00e89bf0f0c693d10e143a9dbbd106ff01eb76ada9d11bb8ed84090d15da1406",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/beitrage_volume15.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/beitrage_volume15.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/beitrage_volume15.txt",
+        "sha256": "29a9bdfa2eae52a10536ab264e8367d7af6ff26018974a8c5e966981e9a8a110",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 577,
+        "sheet_markers": 582,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "Herbert Pilch, Das ae. Präverb ge- (1953)",
+      "target": "docs/references/local/intake-2026-11-04/pilch_1953_ge.pdf",
+      "inspection": "opening identity checked; formerly excluded from bounded ga research",
+      "origin": "$HOME/Downloads/Germanic/ga-prefix/pilch1953.pdf",
+      "sha256": "fab40b518bdb1edc4dba46a7305ca318d0ce97f1150aa1706bef6551f9cf0bcd",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/pilch_1953_ge.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/pilch_1953_ge.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/pilch_1953_ge.txt",
+        "sha256": "543b74b6ded3fa88fb86cba4a47983ff84838e8afed615385760dced5346cdcc",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 11,
+        "sheet_markers": 11,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "Thomas McFadden, Preverbal ge- in Old and Middle English (2015)",
+      "target": "docs/references/local/intake-2026-11-04/mcfadden_2015_ge.pdf",
+      "inspection": "opening identity checked; formerly excluded from bounded ga research",
+      "origin": "$HOME/Downloads/Germanic/ga-prefix/rennerpraojs,+ZASPIL_58_2015_02_McFadden.pdf",
+      "sha256": "9401be52cb2a45d84a8e8c8f5ba1882f875ca40280a543c4c6585c9935d4f41b",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/mcfadden_2015_ge.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/mcfadden_2015_ge.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/mcfadden_2015_ge.txt",
+        "sha256": "23fe9cb108f06201777ecc003b75569a078a52f4ff0a1067388141cffadea477",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 34,
+        "sheet_markers": 34,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": "McCullyHogg1990",
+      "title": "An Account of Old English Stress",
+      "target": "docs/references/mccully_hogg_1990_old_english_stress.pdf",
+      "inspection": "opening title, authors, journal and DOI checked",
+      "origin": "$HOME/Downloads/Germanic/mccully1990.pdf",
+      "sha256": "3028d92fd2a200038f92cdc3bdfe6078709e5ee95700deed73b4a5a17a2094c7",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/mccully_hogg_1990_old_english_stress.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/mccully_hogg_1990_old_english_stress.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/mccully_hogg_1990_old_english_stress.txt",
+        "sha256": "f266a593aaeae3a2e01a81a84b744ade774a95d854dcbafe46979f797818fcdf",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 26,
+        "sheet_markers": 26,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": "Versloot2025",
+      "title": "Reconstructing the Historical Phonology of Old English",
+      "target": "docs/references/local/intake-2026-11-04/versloot_2025_issue2026_variant.pdf",
+      "inspection": "same registered article, different acquired PDF bytes; preserve variant, do not overwrite existing witness",
+      "origin": "$HOME/Downloads/Germanic/reconstructing-the-historical-phonology-of-old-english.pdf",
+      "sha256": "ccacdbe09ad97c95b31b2c1a4a188284605f8ab92a6ac85d2169d4cd911d9414",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/versloot_2025_issue2026_variant.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/versloot_2025_issue2026_variant.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/versloot_2025_issue2026_variant.txt",
+        "sha256": "9f8a8d23258c9a579c6ca628589aa4e675ec8abd3bff5c066a2072563385a191",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 39,
+        "sheet_markers": 39,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "M. S. Beeler, Proto-Germanic [i] and [e]: One Phoneme or Two? (1966)",
+      "target": "docs/references/local/intake-2026-11-04/beeler_1966_i_e.pdf",
+      "inspection": "opening identity checked",
+      "origin": "$HOME/Downloads/New new to OCR/Beeler 1966 Proto-Germanic [i] and [e].pdf",
+      "sha256": "b5908acd3ec759d51ce0d0407191067237c3b762ebbce16e9b1a3ed333bd87d1",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/beeler_1966_i_e.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/beeler_1966_i_e.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/beeler_1966_i_e.txt",
+        "sha256": "dcad9909dca5c55f9c500ad3759953109f74bc7945879396316955f6be491f5a",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 3,
+        "sheet_markers": 3,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "Hans Krahe, Germanische Sprachwissenschaft I: Einleitung und Lautlehre, fifth edition (1963)",
+      "target": "docs/references/local/intake-2026-11-04/krahe_1963_volume1.pdf",
+      "inspection": "opening title and edition checked",
+      "origin": "$HOME/Downloads/New new to OCR/Germanische Sprachwissenschaft, Band 1, Einleitung und -- Krahe, Hans -- Sammlung Göschen; 238, 1963 dec 31 -- De Gruyter, Inc_ -- isbn13 9783110843279 -- 9391a31ae1817be793ecdb03d18dc764 -- Anna’s Archive.pdf",
+      "sha256": "8a5cb882c0893f828ce0224b69fd06a12cb633dc7ee83ca50075c95ecd00079d",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/krahe_1963_volume1.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/krahe_1963_volume1.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/krahe_1963_volume1.txt",
+        "sha256": "9a26727aff6aeba537980923f99ee5b8d4da605c7548f7107d1214b8717a90b1",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 176,
+        "sheet_markers": 176,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": null,
+      "title": "Alfred Bammesberger (ed.), Die Laryngaltheorie (1988)",
+      "target": "docs/references/local/intake-2026-11-04/bammesberger_1988_laryngaltheorie.pdf",
+      "inspection": "identity inherited from documented Anglo-Frisian acquisition recheck; image-only scan; no new whole-book reading",
+      "origin": "$HOME/Downloads/New new to OCR/annas-arch-cc3a47d26264.pdf",
+      "sha256": "8d57ac7764ad7b324569d4ed408509b20d2bb5e8afad147453569b464607ee3a",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/bammesberger_1988_laryngaltheorie.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/bammesberger_1988_laryngaltheorie.pdf"
+      ],
+      "text": {
+        "status": "no native text layer; no replacement OCR made"
+      }
+    },
+    {
+      "citation_key": "Polome1994",
+      "title": "Proto-Germanic and the Reconstruction of Proto-Indo-European",
+      "target": "docs/references/local/intake-2026-11-04/polome_1994_variant.pdf",
+      "inspection": "opening title/author checked; distinct acquired PDF bytes, existing original conserved",
+      "origin": "$HOME/Downloads/New new to OCR/nowele.23.01pol.pdf",
+      "sha256": "20c57754b3ffbfcf649a145befb22f705a845de74e18a583d35bf2506112f4a3",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/intake-2026-11-04/polome_1994_variant.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/intake-2026-11-04/polome_1994_variant.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/polome_1994_variant.txt",
+        "sha256": "dd874160415cb5cbc06381b92af64b20f1ec4826bc05a27416932c6e82a18916",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 38,
+        "sheet_markers": 38,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": "LloydSpringer1988",
+      "title": "Etymologisches Wörterbuch des Althochdeutschen, Band I: -a–bezzisto",
+      "target": "docs/references/ewa_band1_lloyd_springer.pdf",
+      "inspection": "title/copyright/contents images checked; 1988, not supplied filename's 1998; 335-sheet scan",
+      "origin": "$HOME/Downloads/Books2/German stuff/Etymologisches Wörterbuch des Althochdeutschen_ Bd_ 1_ A - -- Lloyd Albert L_ und Springer Otto (Hrs.pdf",
+      "sha256": "4ba5b2784c482b2da41a8933df6fd1cbdc2ff4d41d8a3d2b5439d3f42a34e406",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/ewa_band1_lloyd_springer.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/ewa_band1_lloyd_springer.pdf"
+      ],
+      "text": {
+        "status": "no native text layer; no replacement OCR made"
+      }
+    },
+    {
+      "citation_key": "LloydSpringer1988",
+      "title": "Lloyd–Springer volume I, separately supplied DjVu",
+      "target": "docs/references/local/lloyd-springer-1988/original.djvu",
+      "inspection": "acquired alternate-format file; edition/content equivalence to PDF not established",
+      "origin": "$HOME/Downloads/Books2/German stuff/Etymologisches Wörterbuch des Althochdeutschen_ Bd_ 1_ A - -- Lloyd Albert L_ und Springer Otto (Hrsg_) -- 1, 1998 -- Vandenhoeck und Ruprecht -- 9783525200391 -- 400a266de3f13c343eef1fdf340a03a7 -- Anna’s Archive.djvu",
+      "sha256": "37a10c752458ea593e45ca739553957b2137f7a83b1845b081cff516cffce175",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/local/lloyd-springer-1988/original.djvu",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/local/lloyd-springer-1988/original.djvu"
+      ]
+    },
+    {
+      "citation_key": "KlugeSeebold2002",
+      "title": "Etymologisches Wörterbuch der deutschen Sprache, 24th edition (2002)",
+      "target": "docs/references/kluge_seebold_2002_24th_conversion.pdf",
+      "inspection": "1796-sheet electronic conversion, not print facsimile; opening explicitly identifies 24th edition; not 25th-edition PDF",
+      "origin": "$HOME/Downloads/Books2/German stuff/Kluge_ Etymologisches Wörterbuch Der Deutschen Sprache -- Elmar Seebold -- 2002 -- Walter de Gruyter & Co -- 0a0b7a0ecdf51ebb5de20428b306a9ce -- Anna’s Archive.pdf",
+      "sha256": "bb066be4e7cd7ad4066d1337b9ca5d19ce625787ea758e0c828c0a76612a17cd",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/kluge_seebold_2002_24th_conversion.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/kluge_seebold_2002_24th_conversion.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/kluge_seebold_2002_24th_conversion.txt",
+        "sha256": "a679ba71cbe96d8d67f9833f021d1109f1874159b38d4e92afc360f202892700",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 1796,
+        "sheet_markers": 1796,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": "Vine2019",
+      "title": "Greek στωμύλος ‘chatty’: An anomalous ō-grade (and some anomalous o-grades)",
+      "target": "docs/references/vine_2019_greek_stomylos.pdf",
+      "inspection": "opening bibliographical identity checked",
+      "origin": "$HOME/Downloads/Books2/German stuff/ieul-article-p222_8.pdf",
+      "sha256": "9415b5401f4cf30f67cfbf039c6597bc9f953f085836edeb5da77346aa5742d9",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/vine_2019_greek_stomylos.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/vine_2019_greek_stomylos.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/vine_2019_greek_stomylos.txt",
+        "sha256": "fed265aacb5c7d5be401c8524924d356ddef2603ba5ea60b448b72fe1e833274",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 19,
+        "sheet_markers": 19,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    },
+    {
+      "citation_key": "Polome1967",
+      "title": "Notes on the Reflexes of IE /ms/ in Germanic",
+      "target": "docs/references/polome_1967_reflexes_ie_ms.pdf",
+      "inspection": "opening bibliographical identity checked",
+      "origin": "$HOME/Downloads/Books2/German stuff/rbph_0035-0818_1967_num_45_3_2692.pdf",
+      "sha256": "4d0c35cce08cabdb8cf58cd2aee3524af6c75b92e3cc89f1962d23ca77443980",
+      "local_copies": [
+        "$HOME/Code/capr/docs/references/polome_1967_reflexes_ie_ms.pdf",
+        "$HOME/Code/capr/.capr-work/worktrees/full-cascade-functionality/docs/references/polome_1967_reflexes_ie_ms.pdf"
+      ],
+      "text": {
+        "path": "docs/references/local/intake-2026-11-04/texts/polome_1967_reflexes_ie_ms.txt",
+        "sha256": "15b152aa9d165087b10e5e650a16eccb1eee1653f98e15ab21d0bb6ae8bb0987",
+        "method": "pdftotext -layout; native full-file extraction, not OCR or corrected diplomatic text",
+        "sheets_with_text": 28,
+        "sheet_markers": 28,
+        "coverage": "full-file extraction; image-only sheets are not transcribed"
+      }
+    }
+  ],
+  "restoration_bundle": {
+    "path": "docs/references/local/backups/intake-2026-11-04.tar.gz",
+    "sha256": "7447b1c294cc92a5db7267f007063d2e47e86c0ee4af20b596bc672e72551f11",
+    "members": 38,
+    "limitation": "Same physical disk: local restoration only, not independent off-machine backup"
+  }
+}
