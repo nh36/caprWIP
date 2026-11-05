@@ -1,0 +1,10 @@
+{
+  "archive": "evidence.zip",
+  "sha256": "ca225fc52d790af21ed3fefc3ec990b8c448a9b687cd0d911434571dfeaeb343",
+  "bytes": 5901388,
+  "members": 114,
+  "manifest_sha256": "02c07fce68d02971b28b2b95fbc8aa39ec687355caa839a49fab678eb1600c23",
+  "accepted_commit": "529eeaa5864d37d2f67e54ae003247cb21421daa",
+  "validated_source_identity": "d4ad42f9370239570785bfbc0fcb8161de536cd0b7adbf986769ca24a81b36fd",
+  "scope": "SC052 adoption and reader publication; no SC086/parser/orthography adoption"
+}

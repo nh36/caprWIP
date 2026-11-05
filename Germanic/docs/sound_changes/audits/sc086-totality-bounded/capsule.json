@@ -1,0 +1,9 @@
+{
+  "archive": "evidence.zip",
+  "sha256": "724b0e5f9508e4e3309646bace68b16cd5d8d059a3a4e72135ba66f2463b304b",
+  "bytes": 58361848,
+  "members": 412,
+  "manifest_sha256": "7c6c15e536c3ce164afc0eb81e6c2fbaafe7cb1cde14084526c38ad6395ff7ff",
+  "replay_passed": true,
+  "production_adoption": false
+}

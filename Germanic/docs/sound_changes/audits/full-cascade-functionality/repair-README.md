@@ -1,5 +1,11 @@
 # SC052 bounded repair capsule
 
+Historical status notice: the proposal-state statements below record the
+original research capsule, whose evidence is preserved unchanged. The bounded
+repair was subsequently adopted in `529eeaa5`; see
+[`sc052-reader-adoption-closeout.md`](../sc052-reader-adoption-closeout.md)
+for controlled acceptance and publication. SC086 and totality remain unresolved.
+
 ## Result and status
 
 The minimal private correction is **one additional comma** before the
