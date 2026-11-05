@@ -19,6 +19,12 @@ Ringe and Taylor explicitly question whether diphthong nuclei must behave
 like the plain short vowel [@RingeTaylor2014, pp. 170--175].
 Earlier restricted ancestral fronting remains possible.
 
+Fulk's surviving fronted \emph{*æi} and proposed paradigmatic levelling
+provide a competing account, discussed in Chapter 3, rather than direct
+confirmation of contraction before ordinary fronting
+[@Fulk1998, pp. 143--145]. No shared fronting is demonstrated merely
+by making that alternative compatible with the daughter outcomes.
+
 The separately retained unstressed and final-vowel components are not dated
 by that argument. The first supplies an earlier nonnasal contribution;
 [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) separately

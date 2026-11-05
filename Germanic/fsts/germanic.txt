@@ -3445,7 +3445,7 @@ define OEVelarPalatalizationStops [
     {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
-    {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],
+    {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],,
     # *gg before *j must feed the singleton *g→*ʤ / _ *j rule rather than
     # compete with it, parallel to the *kk handling above.
     {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}

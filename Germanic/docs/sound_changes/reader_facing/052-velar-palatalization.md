@@ -19,6 +19,12 @@ contrasting mutation triggers without lexical or grammatical conditions.
 The objection remains substantive, not silently superseded by a matching
 final spelling.
 
+Fulk's earlier comparison treats reversible palatal articulation and later
+assibilation separately, but does not establish the particular delayed
+singleton-fricative merger used here [@Fulk1998, pp. 145--149].
+That merger remains the attributed Ringe--Taylor working account, with
+Hogg's objection retained.
+
 Eligibility also requires attribution. Ringe and Taylor's medial-g table
 is narrower than Fulk's before-front-vowel description
 [@RingeTaylor2014, pp. 203--204; @Fulk2018, pp. 130--132].
@@ -101,7 +107,7 @@ define OEVelarPalatalizationStops [
     {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
-    {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],
+    {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],,
     {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
 ] .o. [
     {*g} -> {*ʤ} || _ {*j}
@@ -114,6 +120,12 @@ is no longer represented as an early affricate. *Wicg* 'horse' is a
 geminate-class illustration, *senġan* 'singe' a postnasal control, and
 *lungen* 'lung' the unchanged back-vowel negative
 [@RingeTaylor2014, pp. 203--204, 213--214; @Fulk2018, pp. 131--132].
+
+The double comma separates the geminate-before-\emph{j} rule's context
+from the singleton rules' front-vowel contexts. It corrects rewrite-rule
+scoping, not the proposed historical environment, date or consonant-class
+distinction. The separate geminate rule must replace the whole cluster,
+not permit a competing singleton covering.
 
 ## SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 

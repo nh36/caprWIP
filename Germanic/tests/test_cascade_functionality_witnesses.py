@@ -80,3 +80,20 @@ def test_actual_compiler_context_scoping_calibration():
     certificate = WITNESSES.proof.analyze(scoped)
     assert certificate["functional"]
     WITNESSES.proof.verify(scoped, certificate)
+
+
+def test_adopted_sc052_matches_the_independently_compiled_scoped_candidate(monkeypatch):
+    root = Path(__file__).resolve().parents[1]
+    monkeypatch.syspath_prepend(str(root / "tools"))
+    from executable_facts import parse_defines
+
+    with tarfile.open(PATH.parent / "repair-evidence.tar.gz") as capsule:
+        original = parse_defines(capsule.extractfile("fst.txt").read().decode())
+        candidate = parse_defines(capsule.extractfile("scoped.txt").read().decode())
+    current = parse_defines((root / "fsts/germanic.txt").read_text())
+    name = "OEVelarPalatalizationStops"
+    assert candidate[name].definition_raw.replace(",,", ",", 1) == original[name].definition_raw
+    assert current[name].definition_raw == candidate[name].definition_raw
+    for name in ("OEVelarPalatalization", "OEGFricativePalatal",
+                 "OEVelarPalatalizationKFront"):
+        assert current[name].definition_raw == original[name].definition_raw

@@ -41,7 +41,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 032-diphthong-leveling.md | SC032. Quantity-distinct diphthong realization (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | 41 | 72 | no |
 | 033-long-eow-diphthong.md | SC033. J-created palatalized-glide reanalysis (`OEEwLongDiphthong`) {#rule-OEEwLongDiphthong} | 50 | 43 | no |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 50 | 61 | no |
-| 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 202 | 51 | no |
+| 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 214 | 51 | no |
 | 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 177 | 44 | no |
 | 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | 188 | 72 | no |
 | 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 21 | 82 | no |
@@ -49,10 +49,10 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 5 | 67 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 12 | 32 | no |
 | 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 18 | 94 | yes |
-| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 34 | 27 | no |
-| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 42 | 69 | no |
-| 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 19 | 37 | no |
-| 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 33 | 53 | no |
+| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 40 | 27 | no |
+| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 48 | 69 | no |
+| 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 24 | 37 | no |
+| 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 38 | 53 | no |
 | 045-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | 5 | 44 | no |
 | 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 11 | 63 | no |
 | 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 19 | 40 | no |
@@ -60,10 +60,10 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 21 | 38 | no |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | 18 | 72 | no |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | 35 | 77 | no |
-| 052-velar-palatalization.md | SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal} | 43 | 61 | no |
-| 052-velar-palatalization.md | SC052. K articulation and eventual reflex (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront} | 65 | 58 | no |
-| 052-velar-palatalization.md | SC052. Retained stop paths (`OEVelarPalatalizationStops`) {#rule-OEVelarPalatalizationStops} | 97 | 74 | no |
-| 052-velar-palatalization.md | SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization} | 120 | 54 | no |
+| 052-velar-palatalization.md | SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal} | 49 | 61 | no |
+| 052-velar-palatalization.md | SC052. K articulation and eventual reflex (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront} | 71 | 58 | no |
+| 052-velar-palatalization.md | SC052. Retained stop paths (`OEVelarPalatalizationStops`) {#rule-OEVelarPalatalizationStops} | 103 | 75 | no |
+| 052-velar-palatalization.md | SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization} | 132 | 54 | no |
 | 053-post-velar-w-loss.md | SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | 5 | 29 | no |
 | 054-w-loss-before-final-i.md | SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | 5 | 46 | no |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 5 | 70 | no |

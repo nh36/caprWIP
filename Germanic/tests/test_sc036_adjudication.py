@@ -73,7 +73,8 @@ def test_sc036_and_separately_adjudicated_changes_remain_bounded():
     assert {name for name in old if old[name] != current[name]} == (
         {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed |
         rainbow_changed | sc066_changed |
-        {"OEMedUnstressedULowering", "EnglishProtoInput"})
+        # Exact scoped candidate is pinned by test_cascade_functionality_witnesses.py.
+        {"OEMedUnstressedULowering", "EnglishProtoInput", "OEVelarPalatalizationStops"})
     assert current["OEInterStressRaising"] == "OELHWeakRaising"
     accepted = definitions(git_bytes(
         "ee73f189d2c4af2fab6170f7af066d96611ce749",

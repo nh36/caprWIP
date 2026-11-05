@@ -313,6 +313,31 @@ Campbell states that inference and Ringe and Taylor retain it
 Soul provides another implementation boundary at interstress raising, not
 the sole historical argument or proof of inherited contraction.
 
+Fulk offers a materially different reconstruction. He allows fronting of the
+nucleus before contraction and prefers a surviving \emph{*æi}, with
+back-vowel restoration and subsequent English generalization of an unfronted
+paradigmatic alternant yielding \emph{*ā}. Paradigms with consistent
+\emph{*j} conditioning need not participate in that restoration
+[@Fulk1998, pp. 143--145]. This is not Campbell's completed-contraction
+argument in different terminology: it preserves a different intermediate
+and invokes paradigmatic levelling. Ringe and Taylor's warning that
+diphthong nuclei need not behave like the plain short vowel likewise
+qualifies, rather than independently proves, Campbell's ordering
+[@RingeTaylor2014, pp. 170--175]. CAPR retains the conventional regular
+phonological scaffold; adopting Fulk's alternative would require a separate
+assessment of its conditioned alternations and the evidence for levelling.
+
+Fulk's reconstruction demonstrates that several objections to shared
+Anglo-Frisian developments are not decisive under his premises, not that
+those developments have been proved inherited. His final displayed sequence
+is specifically Northumbrian, with qualifications for other English dialects,
+and is not a complete West Saxon chronology [@Fulk1998, p. 153]. He
+explicitly calls his reconstruction biased toward the Anglo-Frisian
+hypothesis, finds no compelling reason for placing palatalization so early
+apart from that interpretation, and states that the hypothesis is not proved
+[@Fulk1998, p. 154]. Those reservations are part of his conclusion,
+not objections supplied only by later critics.
+
 The unstressed development `*ai > *ē` (in final and nonfinal syllables) is a
 separate and earlier Proto-Northwest Germanic change (SC014), discussed in
 Chapter 2; its corpus witnesses are the dative-singular endings of `span`

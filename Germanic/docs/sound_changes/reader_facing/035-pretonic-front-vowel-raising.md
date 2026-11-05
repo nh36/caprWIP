@@ -123,6 +123,18 @@ phonology. Her evidence chiefly concerns wyn and thorn, not a new
 *gi-/ge-* census or a reclassification of Pheifer's tokens
 [@Seiler2017, pp. 159--164, 167--168].
 
+Seiler's direct comparison further distinguishes independent copying from
+independent linguistic evidence. Épinal and Erfurt descend from a shared
+textual ancestor, with an English intermediary in Erfurt's transmission;
+the continental copy can preserve inherited orthography as well as revise
+it. Positional spelling conventions and source batches therefore need not
+express the phonology of one copyist [@Seiler2019, pp. 527--528,
+535--537]. Her analysis chiefly concerns the representation of /w/ and
+/þ/, not prefix vowels. It neither supplies a new *gi-/ge-* census nor
+corrects Pheifer's figures or the individually checked readings
+[@Seiler2019, pp. 529--531, 537--538]. Erfurt's independent act of
+copying must not be counted as an independent origin for every spelling.
+
 Early Northumbrian *gistiga* 'climb into/onto' and later Northumbrian
 *giher* 'hear' and *gitrivadon* 'we trust' prevent a universal
 early-*gi-*/late-*ge-* spelling calendar. Samuels's Lindisfarne--Rushworth

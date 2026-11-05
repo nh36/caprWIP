@@ -359,3 +359,28 @@ labels 349–350. SC082's remaining weak-suffix normalization is telescoped
 [@RingeTaylor2014, p.228; @HoggGrammar2011, pp.283–286].
 No selected reconstruction, context, target, corpus membership or baseline
 is changed; no new lexical exceptions or origin markers are introduced.
+
+## 14. Bounded context-scoping correction
+
+The later controlled assessment is `audits/sc052-scoping-adoption.md`.
+It preserves section 13 and its historical approval. The single comma
+before the gg-before-j clause pooled that clause's context with the
+singleton front-vowel contexts in the pinned compiler. One additional comma
+closes the earlier ruleset. The exact compiled correction preserves the
+retained historical classes, conditions, stage and merger account.
+
+The archived independent certificate establishes global functionality of
+the corrected cumulative physical-stage62 relation despite native result0;
+the native stop/wrapper checks return1. The selected391 complete
+derivations and all110 cumulative-stage output sets are conserved:
+383 matches, the same eight mismatches, no selected missing or ambiguous
+output. These figures are a later finite regression, not replacements for
+the original387-cell approval. SC086 branching and surface-filter totality
+remain separate unresolved formal questions, not grounds for claiming
+global cascade functionality.
+
+Direct Fulk1998 pp.145--149 qualifies articulation versus assibilation;
+pp.153--154 limits the Northumbrian sequence and inheritance argument.
+It does not supply a new gg/j environment or the delayed-ʝ-merger account.
+Protected finalization, strict validation and publication receipts must be
+consulted separately; this documentary account is not itself certification.

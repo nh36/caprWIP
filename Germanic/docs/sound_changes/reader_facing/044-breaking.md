@@ -14,6 +14,11 @@ Breaking has the fuller handbook treatment. The *feoh* 'cattle' and
 *feohtan* 'fight' type derivations preserve its velar-fricative trigger;
 they do not subsequently undergo velar-fricative palatalization.
 
+Fulk cautions that breaking before \emph{h} does not necessarily date
+the articulation of \emph{k/g}: the consonantal histories must be
+distinguished. His English and later Frisian breaking processes are
+also not one inherited event [@Fulk1998, pp. 145--146, 152].
+
 ## SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking}
 
 ```foma

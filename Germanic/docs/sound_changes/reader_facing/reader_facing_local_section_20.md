@@ -1984,6 +1984,31 @@ Campbell states that inference and Ringe and Taylor retain it
 Soul provides another implementation boundary at interstress raising, not
 the sole historical argument or proof of inherited contraction.
 
+Fulk offers a materially different reconstruction. He allows fronting of the
+nucleus before contraction and prefers a surviving \emph{*æi}, with
+back-vowel restoration and subsequent English generalization of an unfronted
+paradigmatic alternant yielding \emph{*ā}. Paradigms with consistent
+\emph{*j} conditioning need not participate in that restoration
+[@Fulk1998, pp. 143--145]. This is not Campbell's completed-contraction
+argument in different terminology: it preserves a different intermediate
+and invokes paradigmatic levelling. Ringe and Taylor's warning that
+diphthong nuclei need not behave like the plain short vowel likewise
+qualifies, rather than independently proves, Campbell's ordering
+[@RingeTaylor2014, pp. 170--175]. CAPR retains the conventional regular
+phonological scaffold; adopting Fulk's alternative would require a separate
+assessment of its conditioned alternations and the evidence for levelling.
+
+Fulk's reconstruction demonstrates that several objections to shared
+Anglo-Frisian developments are not decisive under his premises, not that
+those developments have been proved inherited. His final displayed sequence
+is specifically Northumbrian, with qualifications for other English dialects,
+and is not a complete West Saxon chronology [@Fulk1998, p. 153]. He
+explicitly calls his reconstruction biased toward the Anglo-Frisian
+hypothesis, finds no compelling reason for placing palatalization so early
+apart from that interpretation, and states that the hypothesis is not proved
+[@Fulk1998, p. 154]. Those reservations are part of his conclusion,
+not objections supplied only by later critics.
+
 The unstressed development `*ai > *ē` (in final and nonfinal syllables) is a
 separate and earlier Proto-Northwest Germanic change (SC014), discussed in
 Chapter 2; its corpus witnesses are the dative-singular endings of `span`
@@ -2920,6 +2945,13 @@ A different dialectal target cannot be silently substituted for a West
 Saxon lexical target. Similarly, Frisian closed-syllable breaking is not
 English rC breaking merely because both are called breaking
 [@Bremmer2009, pp. 33–35, 37].
+
+Fulk likewise distinguishes the later Frisian process from English breaking.
+His Northumbrian restoration-before-breaking account differs from the
+usual English ordering illustrated by *slēan* 'slay'; it cannot replace
+the West Saxon sequence merely because the final vowels coincide
+[@Fulk1998, pp. 150--153]. Chapter 3 compares his broader reconstruction
+and its explicit limits on shared inheritance.
 
 ## Palatal consonants and the key–day problem
 
@@ -4018,6 +4050,12 @@ Ringe and Taylor explicitly question whether diphthong nuclei must behave
 like the plain short vowel [@RingeTaylor2014, pp. 170--175].
 Earlier restricted ancestral fronting remains possible.
 
+Fulk's surviving fronted \emph{*æi} and proposed paradigmatic levelling
+provide a competing account, discussed in Chapter 3, rather than direct
+confirmation of contraction before ordinary fronting
+[@Fulk1998, pp. 143--145]. No shared fronting is demonstrated merely
+by making that alternative compatible with the daughter outcomes.
+
 The separately retained unstressed and final-vowel components are not dated
 by that argument. The first supplies an earlier nonnasal contribution;
 [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) separately
@@ -4083,6 +4121,11 @@ conditioned [@Campbell1959, pp. 54, 166, §§139, 405--406;
 Breaking has the fuller handbook treatment. The *feoh* 'cattle' and
 *feohtan* 'fight' type derivations preserve its velar-fricative trigger;
 they do not subsequently undergo velar-fricative palatalization.
+
+Fulk cautions that breaking before \emph{h} does not necessarily date
+the articulation of \emph{k/g}: the consonantal histories must be
+distinguished. His English and later Frisian breaking processes are
+also not one inherited event [@Fulk1998, pp. 145--146, 152].
 
 ### SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking}
 
@@ -4357,6 +4400,12 @@ contrasting mutation triggers without lexical or grammatical conditions.
 The objection remains substantive, not silently superseded by a matching
 final spelling.
 
+Fulk's earlier comparison treats reversible palatal articulation and later
+assibilation separately, but does not establish the particular delayed
+singleton-fricative merger used here [@Fulk1998, pp. 145--149].
+That merger remains the attributed Ringe--Taylor working account, with
+Hogg's objection retained.
+
 Eligibility also requires attribution. Ringe and Taylor's medial-g table
 is narrower than Fulk's before-front-vowel description
 [@RingeTaylor2014, pp. 203--204; @Fulk2018, pp. 130--132].
@@ -4439,7 +4488,7 @@ define OEVelarPalatalizationStops [
     {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
-    {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],
+    {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],,
     {*g} {*g} -> {*ʤ} {*ʤ} || _ {*j}
 ] .o. [
     {*g} -> {*ʤ} || _ {*j}
@@ -4452,6 +4501,12 @@ is no longer represented as an early affricate. *Wicg* 'horse' is a
 geminate-class illustration, *senġan* 'singe' a postnasal control, and
 *lungen* 'lung' the unchanged back-vowel negative
 [@RingeTaylor2014, pp. 203--204, 213--214; @Fulk2018, pp. 131--132].
+
+The double comma separates the geminate-before-\emph{j} rule's context
+from the singleton rules' front-vowel contexts. It corrects rewrite-rule
+scoping, not the proposed historical environment, date or consonant-class
+distinction. The separate geminate rule must replace the whole cluster,
+not permit a competing singleton covering.
 
 ### SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization}
 
@@ -4616,6 +4671,18 @@ reinforces this caution: an aggregate need not represent one scribal
 phonology. Her evidence chiefly concerns wyn and thorn, not a new
 *gi-/ge-* census or a reclassification of Pheifer's tokens
 [@Seiler2017, pp. 159--164, 167--168].
+
+Seiler's direct comparison further distinguishes independent copying from
+independent linguistic evidence. Épinal and Erfurt descend from a shared
+textual ancestor, with an English intermediary in Erfurt's transmission;
+the continental copy can preserve inherited orthography as well as revise
+it. Positional spelling conventions and source batches therefore need not
+express the phonology of one copyist [@Seiler2019, pp. 527--528,
+535--537]. Her analysis chiefly concerns the representation of /w/ and
+/þ/, not prefix vowels. It neither supplies a new *gi-/ge-* census nor
+corrects Pheifer's figures or the individually checked readings
+[@Seiler2019, pp. 529--531, 537--538]. Erfurt's independent act of
+copying must not be counted as an independent origin for every spelling.
 
 Early Northumbrian *gistiga* 'climb into/onto' and later Northumbrian
 *giher* 'hear' and *gitrivadon* 'we trust' prevent a universal

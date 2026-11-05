@@ -2,8 +2,6 @@
   "alignment_statuses": {
     "bounded_limit": 397
   },
-  "historical_unavailable_inputs": {},
-  "image_verification": "historical records only; not repeated",
   "inputs": {
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
     "Germanic/data/entry_stage_metadata.tsv": "88d1511477054b457fc761690366169768d05bd7b5a17686c0c2d1d1478b33af",
@@ -996,7 +994,5 @@
   "source_row_checks": 1418,
   "status": "incomplete",
   "three_source_reading_pending": true,
-  "unavailable_holdings": [],
-  "unreviewed_analytical_rows": 0,
-  "validation_mode": "portable"
+  "unreviewed_analytical_rows": 0
 }

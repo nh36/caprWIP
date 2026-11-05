@@ -69,6 +69,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "OEMedUnstressedULowering",
                 # The formally certified four-cell adoption owns these changes.
                 "EnglishProtoInput", "EnglishProtoToOE", "OEInterStressRaising",
+                # Exact scoped candidate is pinned by test_cascade_functionality_witnesses.py.
+                "OEVelarPalatalizationStops",
             }
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         assert current[name].definition_raw.replace(

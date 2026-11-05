@@ -274,6 +274,13 @@ Saxon lexical target. Similarly, Frisian closed-syllable breaking is not
 English rC breaking merely because both are called breaking
 [@Bremmer2009, pp. 33–35, 37].
 
+Fulk likewise distinguishes the later Frisian process from English breaking.
+His Northumbrian restoration-before-breaking account differs from the
+usual English ordering illustrated by *slēan* 'slay'; it cannot replace
+the West Saxon sequence merely because the final vowels coincide
+[@Fulk1998, pp. 150--153]. Chapter 3 compares his broader reconstruction
+and its explicit limits on shared inheritance.
+
 ## Palatal consonants and the key–day problem
 
 The useful chronological contrast is between original conditioning fronts
