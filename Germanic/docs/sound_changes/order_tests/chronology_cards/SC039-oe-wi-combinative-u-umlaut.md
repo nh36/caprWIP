@@ -35,3 +35,16 @@ This card is one-sided in current testing. The later boundary is historically in
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_failures.tsv`
 - `Germanic/docs/sound_changes/sound_change_order_sensitivity.tsv`
+
+
+## Current source-bound qualification (2026-11-06)
+
+The original measurements above are preserved. The accepted
+post-migration reconciliation supersedes the reciprocal early-SC040
+widow observation; only delayed SC039 retains that widow failure.
+SC039's bounded historical adjudication is DEFER: independent *witun
+'they know' gives wutun, unlike the cited WS i/io comparison. This does
+not reopen SC040, move either rule or erase the selected widow result.
+Barrack218 versus210/212/220 supplies no additional historical edge;
+Hogg2011 pp162–163 cautions against the early-glossary dating inference.
+See `audits/sc039-adjudication.md`.

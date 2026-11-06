@@ -61,7 +61,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 204		63	SC065;SC050	PARTIALLY_REPRESENTED	Early WS *i-syncope (p. 63) feeding Barrack's later rules; compared against SC065 during the SC065 adjudication — CAPR's pre-dental statement is a deliberately narrower executable proxy; no CAPR change required	medium	EXAMINED_SC065_NO_ACTION
 210		63-64 (continues)	SC059;SC039	REPRESENTED_DIFFERENT_CONDITIONING	Back umlaut/rounding; CAPR scope discrepancy flagged	high	RESEARCH_QUEUE
 212		64	SC059	REPRESENTED_DIFFERENT_CONDITIONING	Back umlaut; scope discrepancy with CAPR back mutation	high	RESEARCH_QUEUE
-218		65	SC039	EQUIVALENT_REPRESENTED	Combinative back umlaut after w; matches CAPR wi-combinative u-umlaut	high	NO_ACTION
+218		65	SC039	REPRESENTED_DIFFERENT_CONDITIONING	SC039 represents selected wi retraction, not the whole i/e account. DEFER general WS conditioning: accepted *witun predicts wutun versus cited WS i/io. Barrack's free-variation and early-glossary ordering are not adopted.	high	ADJUDICATED_SC039_DEFER
 220		65-66 (continues)	SC059	PARTIALLY_REPRESENTED	Rounding/back umlaut periphery	medium	RESEARCH_QUEUE
 234		66	SC086	PARTIALLY_REPRESENTED	Monophthongization/rounding; adjacent to CAPR contraction	low	VERIFY_SOURCE
 237		66	SC086;SC055	PARTIALLY_REPRESENTED	Contraction/syncope interacting with umlaut	low	VERIFY_SOURCE

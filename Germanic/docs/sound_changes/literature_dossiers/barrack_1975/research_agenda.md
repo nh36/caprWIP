@@ -11,9 +11,9 @@ historical scheduling, not current authority. The 231-rule census and
 | Position | Work | Current disposition |
 |---|---|---|
 | Closing | SC037 linking-vowel syncope | RESTRICT high i/u loss by represented primary weight; preserve a-loss. Native assay conserves391 selected results. Final source-bound completion is recorded with the adjudication. |
-| Next | SC039 | Read its present packet, reader and source evidence; resolve Barrack 210/212/220 overlap in the same investigation, not a competing Barrack implementation. |
+| Bounded deferral | SC039 | DEFER general conditioning: supported *witun predicts wutun rather than cited WS i/io. Keep widow proxy and SC040; Barrack218 is combinative,210/212/220 ordinary back umlaut. No new law or chronology. |
 | Already closed | SC040 | Do not reopen. |
-| Following | SC041, then SC042 | Sequential source-bound adjudications after SC039. |
+| Next | SC041, then SC042 | Sequential source-bound adjudication; SC040 stays closed. SC039 reopens only on materially relevant historical evidence. |
 
 The selected corpus remains one form per lexeme. Other attestations and
 reconstructions are comparison/falsification controls, not extra
@@ -85,7 +85,7 @@ new evidence before reopening adopted decisions. Resolve remaining
 VERIFY_SOURCE rows selectively when they affect an active question;
 no wholesale census rebuild or citation-coverage exercise is requested.
 The old chart's ambiguous interior chords remain non-evidence for
-chronology. The SC039 overlap belongs to Queue1's next investigation.
+chronology. The SC039 overlap has one bounded DEFER decision; SC059 retains the separate ordinary-back-umlaut question.
 
 ## Historical agenda — superseded scheduling
 

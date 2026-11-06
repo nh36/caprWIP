@@ -113,3 +113,18 @@ Oxford feminine ending and the inherited dative remain acknowledged
 limits; neither this bridge nor the selected cell purports to derive the
 whole paradigm. The earlier genuine DEFER and unsuccessful snapshots are
 retained as historical evidence in the SC040 memorandum and its archives.
+
+
+## 6. Current SC039 adjudication: bounded DEFER
+
+The source-bound SC039 comparison preserves all391 selected outputs and
+the selected widow firing. Independent *widuz gives wudu, but supported
+PGmc *witun 'they know' is accepted and predicts wutun, contrary to the
+cited WS witon/wioton root-vowel evidence (Campbell pp92–93; Hogg2011
+pp159–163; Ringe–Taylor pp322–324). Brunner p94's optative-based account
+concerns 'let us', not an independently proven repair of 'they know'.
+`audits/sc039-adjudication.md` defers general conditioning; no FST,
+selected-input or SC040 change follows. No lexical/grammatical exclusion,
+free-variation rule or new SC039/SC059 chronology is adopted.
+Barrack218 p65 is the combinative comparison;210/212/220 remain ordinary
+back-umlaut comparisons, not interchangeable rule identities.

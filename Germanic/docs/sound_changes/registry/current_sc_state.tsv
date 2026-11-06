@@ -54,7 +54,7 @@ SC034	OEAwLongDiphthong	support_stage	Old English	Retained show long-diphthong p
 SC037	OECompoundLinkingSyncope	historical_sound_change	Old English	OE Compound Linking Syncope	oe	english_specific	B	adjudicated	RESTRICT	45	43
 SC038	OEStripSecondaryStress	technical_marker	Old English	OE Strip Secondary Stress				unadjudicated		46	44
 SC036	OEInterStressRaising	historical_sound_change	Old English	OE weak medial vocalism	oe	english_specific	C	adjudicated	REFORMULATE	47	45
-SC039	OEWICombinativeUUmlaut	historical_sound_change	Old English	OE WI Combinative U Umlaut	oe	english_specific	A	unadjudicated		48	46
+SC039	OEWICombinativeUUmlaut	historical_sound_change	Old English	OE WI Combinative U Umlaut	oe	english_specific	B	adjudicated	DEFER	48	46
 SC041	PWGmcFinalBareALoss	historical_sound_change	Old English	PWGmc Final Bare A Loss	pwgmc	pan_wgmc	B	unadjudicated		49	47
 SC042	PWGmcSurvivingBimoricOUnrounding	historical_sound_change	Old English	PWGmc Surviving Bimoric O Unrounding	pwgmc	pan_wgmc	B	unadjudicated		50	48
 SC107	EAFBrighteningUnstressed	support_stage	Old English	Retained early unstressed fronting component				unadjudicated		51	49
