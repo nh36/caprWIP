@@ -1,0 +1,8 @@
+{
+  "base_commit": "c4bba0235e1c46736bb0f8b42640fdffbf747707",
+  "source_fst_sha256": "aff07d267ddb591d4b0d28ece6365b671f96751fa163c699496708550904c3ce",
+  "archive_sha256": "587167e8b0e8b5f15ba1516d20c59a3f03503753a80fb3d001614876d2ad5659",
+  "evidence_sha256": "b79cc88d7854bbf377ffd820b227836ddfef8cbf46c5cd85b7dab5c10ef90b64",
+  "authoritative_experiment": "sc039-historical-controls-03",
+  "holding_exclusions": "No scholarly PDF or private page image; holdings recorded by identity only."
+}

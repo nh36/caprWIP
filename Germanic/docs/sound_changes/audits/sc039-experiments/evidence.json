@@ -1,0 +1,160 @@
+{
+  "fst_sha256": "aff07d267ddb591d4b0d28ece6365b671f96751fa163c699496708550904c3ce",
+  "selected_count": 391,
+  "selected_final_changes": 0,
+  "controls": [
+    {
+      "id": "widow",
+      "input": "*w*í*d*u*w*ǭ",
+      "expected": "*w*ú*d*u*w*ǭ",
+      "basis": "Actual selected pre-SC039 shape.",
+      "actual": [
+        "*w*ú*d*u*w*ǭ"
+      ]
+    },
+    {
+      "id": "wood",
+      "input": "*w*í*d*u",
+      "expected": "*w*ú*d*u",
+      "basis": "Campbell92; Hogg159; Ringe-Taylor322.",
+      "actual": [
+        "*w*ú*d*u"
+      ]
+    },
+    {
+      "id": "week",
+      "input": "*w*í*k*u",
+      "expected": "*w*ú*k*u",
+      "basis": "Hogg159 and Brunner93: WS permits the velar.",
+      "actual": [
+        "*w*ú*k*u"
+      ]
+    },
+    {
+      "id": "o-trigger",
+      "input": "*w*í*d*o",
+      "expected": "*w*ú*d*o",
+      "basis": "Represented o-allophone mechanism, not a new selected reconstruction.",
+      "actual": [
+        "*w*ú*d*o"
+      ]
+    },
+    {
+      "id": "no-w",
+      "input": "*b*í*d*u",
+      "expected": "*b*í*d*u",
+      "basis": "Phonetic left-context negative.",
+      "actual": [
+        "*b*í*d*u"
+      ]
+    },
+    {
+      "id": "a-trigger",
+      "input": "*w*í*t*a*n",
+      "expected": "*w*í*t*a*n",
+      "basis": "Do not extend this branch to ordinary a-umlaut.",
+      "actual": [
+        "*w*í*t*a*n"
+      ]
+    },
+    {
+      "id": "cluster",
+      "input": "*w*í*n*d*u",
+      "expected": "*w*í*n*d*u",
+      "basis": "Exactly one intervening consonant in the implemented proxy.",
+      "actual": [
+        "*w*í*n*d*u"
+      ]
+    },
+    {
+      "id": "kw-proxy-limit",
+      "input": "*k*w*í*d*u",
+      "expected": "*k*w*í*d*u",
+      "basis": "Historical cud evidence lies outside the bare-word-initial-w proxy.",
+      "actual": [
+        "*k*w*í*d*u"
+      ]
+    },
+    {
+      "id": "know-comparison",
+      "input": "*w*í*t*u*n",
+      "expected": "*w*ú*t*u*n",
+      "basis": "Regular component prediction; not a claim that wuton is the WS reflex of they know.",
+      "actual": [
+        "*w*ú*t*u*n"
+      ]
+    }
+  ],
+  "historical_controls": [
+    {
+      "input": "*wíduwōn",
+      "encoded_input": "wíduwōn",
+      "parser": [
+        "*w*í*d*u*w*ō*n"
+      ],
+      "before": [
+        "*w*í*d*u*w*ǭ"
+      ],
+      "after": [
+        "*w*ú*d*u*w*ǭ"
+      ],
+      "final": [
+        "wuduwe"
+      ]
+    },
+    {
+      "input": "*wíduz",
+      "encoded_input": "wíduz",
+      "parser": [
+        "*w*í*d*u*z"
+      ],
+      "before": [
+        "*w*í*d*u"
+      ],
+      "after": [
+        "*w*ú*d*u"
+      ],
+      "final": [
+        "wudu"
+      ]
+    },
+    {
+      "input": "*wítun",
+      "encoded_input": "wítun",
+      "parser": [
+        "*w*í*t*u*n"
+      ],
+      "before": [
+        "*w*í*t*u*n"
+      ],
+      "after": [
+        "*w*ú*t*u*n"
+      ],
+      "final": [
+        "wutun"
+      ]
+    },
+    {
+      "input": "*wítaną",
+      "encoded_input": "wítaną",
+      "parser": [
+        "*w*í*t*a*n*ą"
+      ],
+      "before": [
+        "*w*í*t*a*n*ą"
+      ],
+      "after": [
+        "*w*í*t*a*n*ą"
+      ],
+      "final": [
+        "witan"
+      ]
+    }
+  ],
+  "limitations": [
+    "Snapshot01 used display asterisks; snapshot02 used stage-output stars. Their whole-word rejections are not historical-domain evidence. Snapshot03 uses exact baseline input encoding and verifies the selected widow positive.",
+    "Native controls report actual predictions, not a proof of historical adequacy. The know comparison fails the cited West Saxon root-vowel expectation.",
+    "The final know result is wutun, not wuton; do not silently normalize its unstressed vowel.",
+    "No global functionality or totality claim, no new corpus selection, no proposed rule or chronology edge."
+  ]
+}
