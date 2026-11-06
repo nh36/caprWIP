@@ -168,6 +168,27 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assert sum(row["action"] == "add" for row in four_cells) == 47
     assert sum(row["action"] == "remove" for row in four_cells) == 23
     added = [row for row in added if row not in four_cells]
+    sc037_hock_keys = {
+        ("oe", "heonan", "comparison_form"),
+        ("oe", "neoðan", "comparison_form"),
+        ("pgmc", "đura-warđaz", "source_protoform"),
+        ("goth", "daura-wards", "comparison_form"),
+        ("oe", "duru", "comparison_form"),
+        ("pgmc", "durō-", "source_protoform"),
+        ("oe", "duruweard", "comparison_form"),
+        ("oe", "reġnboga", "evidence_form"),
+        ("oe", "eorþcunde", "evidence_form"),
+    }
+    sc037_hock = [row for row in added if
+                  row["source_ref"] == "Germanic/docs/sound_changes/reader_facing/"
+                  "reader_facing_local_section_20.md" and
+                  (row["language"], row["form"], row["form_role"]) in sc037_hock_keys]
+    assert len(sc037_hock) == 9
+    assert {(row["language"], row["form"], row["form_role"])
+            for row in sc037_hock} == sc037_hock_keys
+    assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
+               and not row["variety"] for row in sc037_hock)
+    added = [row for row in added if row not in sc037_hock]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {
