@@ -1,0 +1,167 @@
+{
+  "source_sha256": "c51c3f440e48c320968dd7a12c3b9995c2b16f5e766ef075f16f7af8eba76d3d",
+  "candidate_sha256": "aff07d267ddb591d4b0d28ece6365b671f96751fa163c699496708550904c3ce",
+  "compiler_sha256": "b2e1c7d8bc966624367cd03c9ccfad04760eac6f2e64d49403639f865b89e824",
+  "selected_count": 391,
+  "selected_rule_changes": 0,
+  "selected_final_changes": 0,
+  "firings": [
+    {
+      "row_id": "2148",
+      "concept": "rainbow",
+      "before": [
+        "*r*é*g*n*a*b*ò*g*ô"
+      ],
+      "after": [
+        "*r*é*g*n*b*ò*g*ô"
+      ]
+    },
+    {
+      "row_id": "2336",
+      "concept": "earthly",
+      "before": [
+        "*é*r*θ*a*k*ù*n*d*ǭ"
+      ],
+      "after": [
+        "*é*r*θ*k*ù*n*d*ǭ"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": "rainbow",
+      "input": "*r*é*g*n*a*b*ò*g*ô",
+      "expected": "*r*é*g*n*b*ò*g*ô",
+      "basis": "selected rainbow; hyphen already absent at this stage",
+      "actual": [
+        "*r*é*g*n*b*ò*g*ô"
+      ],
+      "previous": [
+        "*r*é*g*n*b*ò*g*ô"
+      ]
+    },
+    {
+      "id": "short-a",
+      "input": "*d*á*g*a*l*ì*k*a*z",
+      "expected": "*d*á*g*l*ì*k*a*z",
+      "basis": "Campbell p.143; Brunner p.137: a-loss after light root",
+      "actual": [
+        "*d*á*g*l*ì*k*a*z"
+      ],
+      "previous": [
+        "*d*á*g*l*ì*k*a*z"
+      ]
+    },
+    {
+      "id": "light-i",
+      "input": "*w*í*n*i*f*r*ì*θ*u*z",
+      "expected": "*w*í*n*i*f*r*ì*θ*u*z",
+      "basis": "Brunner p.137: Winifrid/Winefrid retention",
+      "actual": [
+        "*w*í*n*i*f*r*ì*θ*u*z"
+      ],
+      "previous": [
+        "*w*í*n*f*r*ì*θ*u*z"
+      ]
+    },
+    {
+      "id": "light-u",
+      "input": "*d*ú*r*u*w*à*r*ð*a*z",
+      "expected": "*d*ú*r*u*w*à*r*ð*a*z",
+      "basis": "Brunner p.137: duruweard retention",
+      "actual": [
+        "*d*ú*r*u*w*à*r*ð*a*z"
+      ],
+      "previous": [
+        "*d*ú*r*w*à*r*ð*a*z"
+      ]
+    },
+    {
+      "id": "heavy-u",
+      "input": "*x*á*n*d*u*k*l*à*θ*a*z",
+      "expected": "*x*á*n*d*k*l*à*θ*a*z",
+      "basis": "Brunner p.137: handclad loss; stage x, not written OE h; schematic second root",
+      "actual": [
+        "*x*á*n*d*k*l*à*θ*a*z"
+      ],
+      "previous": [
+        "*x*á*n*d*k*l*à*θ*a*z"
+      ]
+    },
+    {
+      "id": "heavy-i",
+      "input": "*x*á*n*d*i*g*ì*l*d*a*z",
+      "expected": "*x*á*n*d*g*ì*l*d*a*z",
+      "basis": "schematic heavy/light pair, not a new historical word",
+      "actual": [
+        "*x*á*n*d*g*ì*l*d*a*z"
+      ],
+      "previous": [
+        "*x*á*n*d*g*ì*l*d*a*z"
+      ]
+    },
+    {
+      "id": "long-i",
+      "input": "*d*ḗ*l*i*n*ì*m*a*n*d",
+      "expected": "*d*ḗ*l*n*ì*m*a*n*d",
+      "basis": "long primary-vowel quantity control; Brunner daelnimend",
+      "actual": [
+        "*d*ḗ*l*n*ì*m*a*n*d"
+      ],
+      "previous": [
+        "*d*ḗ*l*n*ì*m*a*n*d"
+      ]
+    },
+    {
+      "id": "no-secondary",
+      "input": "*w*í*n*i*f*r*i*θ*u*z",
+      "expected": "*w*í*n*i*f*r*i*θ*u*z",
+      "basis": "technical grave dependency, not an attestation",
+      "actual": [
+        "*w*í*n*i*f*r*i*θ*u*z"
+      ],
+      "previous": [
+        "*w*í*n*i*f*r*i*θ*u*z"
+      ]
+    },
+    {
+      "id": "closed-link",
+      "input": "*w*í*n*i*s*f*r*ì*θ*u*z",
+      "expected": "*w*í*n*i*s*f*r*ì*θ*u*z",
+      "basis": "synthetic closed-syllable falsification control",
+      "actual": [
+        "*w*í*n*i*s*f*r*ì*θ*u*z"
+      ],
+      "previous": [
+        "*w*í*n*s*f*r*ì*θ*u*z"
+      ]
+    }
+  ],
+  "historical_controls": [
+    {
+      "input": "*wíni-frìθuz",
+      "parser": [],
+      "before37": []
+    },
+    {
+      "input": "*dúru-wàrðaz",
+      "parser": [],
+      "before37": []
+    },
+    {
+      "input": "*xándu-klàθaz",
+      "parser": [],
+      "before37": []
+    }
+  ],
+  "functionality": {
+    "SC37Old": {
+      "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": ""
+    },
+    "SC37Fix": {
+      "stdout": "1 (1 = TRUE, 0 = FALSE)\n",
+      "stderr": ""
+    }
+  }
+}
