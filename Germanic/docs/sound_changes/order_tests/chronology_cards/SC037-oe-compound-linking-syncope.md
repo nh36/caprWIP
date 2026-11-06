@@ -1,5 +1,17 @@
 # SC037 OE Compound Linking Syncope — chronology evidence card
 
+## Current adjudication
+
+`audits/sc037-adjudication.md` records RESTRICT: high i/u linking-vowel
+loss now requires represented heavy primary syllables; a-loss and
+position are unchanged. Fresh canonical evidence identifies two live
+applications (rainbow, earthly), both a-loss, and the source-bound
+candidate conserves all391 selected results. Independently attested
+light-root retention motivates the correction; it does not date SC037.
+The recorded SC038 annotation dependency remains technical. No old
+first-break result below has been remeasured or promoted to historical
+chronology, and no new historical edge is adopted.
+
 ## Current scoped rainbow clarification
 
 The separate SC017 adoption (`audits/rainbow-2148-adoption.md`) gives

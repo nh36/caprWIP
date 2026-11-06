@@ -72,6 +72,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "EnglishProtoInput", "EnglishProtoToOE", "OEInterStressRaising",
                 # Exact scoped candidate is pinned by test_cascade_functionality_witnesses.py.
                 "OEVelarPalatalizationStops",
+                # Independently source-bound by test_sc037_adjudication.py.
+                "OECompoundLinkingSyncope",
             }
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         expected = old[name].definition_raw

@@ -6,7 +6,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 112	PG	40-41 (continues)	SC052;SC057	PARTIALLY_REPRESENTED	General regressive alpha assimilation; CAPR has specific cluster rules rather than one schema	medium	RESEARCH_QUEUE
 114	NWG	41	SC015	ALTERNATIVE_ACCOUNT	Sporadic alpha assimilation overlapping CAPR’s consonant-conditioned i-lowering; major theory disagreement flagged in crosswalk	medium	RESEARCH_QUEUE
 115	NWG	42	SC017	REPRESENTED_DIFFERENT_CONDITIONING	Raising/fronting in nasal environment; CAPR SC017 u-lowering core match with domain debate	medium	RESEARCH_QUEUE
-117	WG	42	-	PLAUSIBLE_MISSING	WG *ēm → īm raising before m; no CAPR counterpart; relevant to SC005-family early-vowel review	low	RESEARCH_QUEUE
+117	WG	42	-	PLAUSIBLE_MISSING	Print-verified short accented e > i before m (lng 1), not long ē > ī. Prospective question requires independent evidence and equivalence check against existing raising; no CAPR addition authorized.	low	RESEARCH_QUEUE
 119	PG	42-43 (continues)	SC103;SC026;SC027	EQUIVALENT_REPRESENTED	Nasal loss before h/x with nasalization; matches SC103 plus the nasal-spirant law pair	high	NO_ACTION
 120.1	WG	43	SC031;SC029	REPRESENTED_DIFFERENT_CONDITIONING	Vww/ij resolution; CAPR splits into awwj resolution and ww simplification	medium	NO_ACTION
 120.2z		43-44 (continues)	SC031	PARTIALLY_REPRESENTED	Lowering adjustment after i/e-vowels; partially inside CAPR glide-sequence rules	low	VERIFY_SOURCE
@@ -86,7 +86,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 299a		72	SC088;SC060	REPRESENTED_DIFFERENT_CONDITIONING	Epenthesis before rhotic cluster; appears in 459.1 biernan derivation — SC087 adjudicated; epenthesis account remains relevant to SC088/SC060 review	medium	RESEARCH_QUEUE
 299b		72	SC088	PARTIALLY_REPRESENTED	Epenthesis before labial consonant	low	NO_ACTION
 300a		72	SC060	PARTIALLY_REPRESENTED	Front-vowel development; late dialect subcase	low	NO_ACTION
-300b		72-73 (continues)	-	PLAUSIBLE_MISSING	Rounding i → y after labial (byrnan, cyrps derivations); no CAPR counterpart; SC087-relevant — SC087 adjudicated; rounding after labial remains an open burn-family question	medium	RESEARCH_QUEUE
+300b		72-73 (continues)	-	PLAUSIBLE_MISSING	Print-verified EWS rounding i > y after labial before r, with distinct LWS environment extensions (wyrsa, yldra, mycel). Not automatically Anglian/outside WS; independent conditioning and equivalence review pending.	medium	RESEARCH_QUEUE
 302a		73	SC060;SC088	PARTIALLY_REPRESENTED	Epenthetic vowel/umlaut sequence	low	NO_ACTION
 302b		73	SC082;SC083;SC086	PARTIALLY_REPRESENTED	Feature change toward front/raised vowel	low	NO_ACTION
 303		73	SC081	PARTIALLY_REPRESENTED	Raising with loss of low/round features	low	VERIFY_SOURCE
@@ -189,7 +189,7 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 435b		112	SC052	PARTIALLY_REPRESENTED	Backing/velar development	low	NO_ACTION
 439		112	-	UNRESOLVED	Palatal/fricative change; summary too generic	low	VERIFY_SOURCE
 440a		112-113 (continues)	SC051	FORMAL_NOT_HISTORICAL	Summary rule through PES; CAPR sk-palatalization holds the core	medium	NO_ACTION
-440b		113	SC051	PLAUSIBLE_MISSING	Late WS sk → ks metathesis (ascian~acsian type); no CAPR counterpart	medium	RESEARCH_QUEUE
+440b		113	SC051	PLAUSIBLE_MISSING	Print-verified LWS sk > ks (fiscas/fixas, p113). Separate from ask/wasp anecdotes and 440c palatalization; independent historical conditioning and scope review pending.	medium	RESEARCH_QUEUE
 440c		113	SC051	EQUIVALENT_REPRESENTED	Palatalization of sk; CAPR sk-palatalization	high	NO_ACTION
 444	WG	114	-	OUT_OF_SCOPE	Fricative voicing between voiced segments; subphonemic allophony	high	NO_ACTION
 446		114	-	OUT_OF_SCOPE	Final devoicing; subphonemic/late	medium	NO_ACTION
@@ -220,8 +220,8 @@ barrack_rule	stage_prefix	printed_pages	capr_scs	classification	explanation	conf
 478b		123-124 (continues)	-	UNRESOLVED	Stop/sonorant assimilation; needs print verification	low	VERIFY_SOURCE
 478c		124	-	UNRESOLVED	Epenthesis in s-clusters; needs print verification	low	VERIFY_SOURCE
 480.1		124	SC067	PARTIALLY_REPRESENTED	Devoicing of d after voiceless consonant; dental assimilation adjacent	medium	NO_ACTION
-480.2		124	SC067	PARTIALLY_REPRESENTED	Voicing assimilation of t/s/p	medium	NO_ACTION
-481.1		124-125 (continues)	SC068	NOT_REPRESENTED	Print-verified 2026-10-30: continuant -> stop after voiceless obstruent (his fint derivation) — fortition, not degemination; no SC068 relevance; no selected witness	low	EXAMINED_SC068_NO_ACTION
+480.2		124	SC067	PARTIALLY_REPRESENTED	Print-verified devoicing of preceding obstruent before t/s/þ; not tþ deletion. Review its equivalence to CAPR components and interaction with 481.1/476 in SC067.	medium	RESEARCH_QUEUE
+481.1		124-125 (continues)	SC067;SC068	NOT_REPRESENTED	Print-verified þ > t after voiceless obstruents (fint chain); fortition, not SC068 degemination. SC068 question closed; SC067 owns component-equivalence/missing-environment review.	low	RESEARCH_QUEUE
 481.2		125	SC067	PARTIALLY_REPRESENTED	Sibilant assimilation	low	VERIFY_SOURCE
 481.7		125		NOT_REPRESENTED	Print-verified 2026-10-30: coronal fricative -> stop assimilation, Late OE (the (I) line is illegible in the print copy); earlier census gloss 'gemination' was wrong; outside the SC066-068 corridor	low	NO_ACTION
 482		125-126 (continues)	-	FORMAL_NOT_HISTORICAL	Stage-regressive consonant alternation; formal device	low	VERIFY_SOURCE

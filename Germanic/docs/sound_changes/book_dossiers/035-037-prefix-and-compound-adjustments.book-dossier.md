@@ -64,8 +64,8 @@ The assembled reader takes SC035 from the registry-owned
 `reader_facing/035-pretonic-front-vowel-raising.md`, not this dossier.
 An agent following this dossier must use the current account above and
 the linked adjudications; it must not reactivate historical formulations.
-SC036 assessments below are superseded by its current authority section;
-SC037 assessments remain historical and are not readjudicated here.
+SC036 and SC037 assessments below are superseded by their respective
+current authority sections.
 The [final consistency closeout](../audits/sc035-consistency-closeout.md)
 records the original-page checks, documentary guard and publication result.
 
@@ -92,7 +92,39 @@ The registry-owned `reader_facing/036-inter-stress-raising.md` supplies the
 publication account. The SC036 assessments in the historical partition
 below, including “strongest evidence”, confidence A and historical
 first-break claims, are superseded by this section and the adjudication.
-SC035 remains closed and unchanged; SC037 remains a separate future case.
+SC035 remains closed and unchanged; SC037 has its separate decision below.
+
+## Current authoritative SC037 account
+
+The completed scientific decision in `audits/sc037-adjudication.md` is
+RESTRICT, confidence B. Preserve the original a-deletion clause literally;
+high i/u linkers require represented heavy primary syllables. Direct
+Campbell pp.143,145–146, Hogg pp.220–223, Ringe–Taylor pp.266–267 and
+Sievers–Brunner pp.137–138 distinguish weight-independent nonhigh
+syncope from high-vowel loss after heavy syllables, with light-root
+Winifrið/Winefrið and duruweard retention contrasts.
+Campbell's second-root shortening, connecting-vowel insertion and
+weak-vowel quality discussions are retained as related but distinct
+phenomena. Barrack 333a/b and 335 (pp.82–84) concern quality/rounding,
+not equivalent linking-vowel deletion.
+
+Both current firings, rainbow and earthly, delete a; all391 selected
+applications and finals are conserved. The nine compiled stage controls
+repair the light-root high-vowel overgeneration while preserving a-loss
+and represented heavy-root loss. These inferred controls are not
+independently established complete Proto-Germanic reconstructions; the
+three schematic whole-input strings are parser-rejected. General
+closed-syllable protection and unrepresented long/diphthongal stress
+patterns are not certified. The native components are functional; no
+global cascade functionality/totality claim follows.
+
+OE stage, English scope and executable placement remain unchanged.
+SC037→SC038 is technical annotation dependence, not historical dating.
+Ringe–Taylor p.303's first-stem qualifications do not authorize a new
+second-member-weight law or chronology edge. The accepted rainbow,
+world and soul accounts remain unchanged. The registry-owned SC037
+reader supplies publication prose; the numbered old assessments below
+are not current authority.
 
 ## Current scoped rainbow clarification
 
@@ -102,16 +134,16 @@ the linking vowel, before the unchanged SC038 removes that annotation.
 Rainbow therefore no longer establishes grave loss before late SC040.
 World still requires deaccentuation before weak SC036 raising; soul's
 proxy and all four positions remain untouched. This is a scoped
-clarification under `audits/rainbow-2148-adoption.md`, not a completed
-general SC037 adjudication. The reader's full explanation belongs to
+clarification under `audits/rainbow-2148-adoption.md`; the completed
+SC037 decision is separate above. The reader's full explanation belongs to
 SC017, with concise SC036/037 cross-references.
 
-## Historical research record — superseded SC035 and SC036 assessments
+## Historical research record — superseded SC035, SC036 and SC037 assessments
 
 All numbered sections in this partition record earlier checkpoints.
-Their SC035/SC036 models, confidence and chronology claims are superseded
-by the respective current sections above. SC037 statements are historical
-assessments retained verbatim, not a new decision about that neighbour.
+Their models, confidence and chronology claims are superseded by the
+respective current sections above. SC037 statements below remain
+historical assessments, not current authority.
 
 ### 1. Role in the book
 

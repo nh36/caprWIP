@@ -3714,6 +3714,28 @@ following vowel in the superseded proxy, not independent historical order
 
 Compound members with weakened force often lose or reshape their linking vowels, and Campbell treats that broad pattern through reduced second elements, connecting vowels, and obscured compounds [@Campbell1959, pp. 148--149, §§356--357; @Campbell1959, p. 153, §367; @Campbell1959, p. 159, §§386--387].
 
+Those discussions concern several distinct developments: modification and
+shortening within obscured second roots, connecting-vowel insertion, and
+weak-vowel quality changes do not by themselves demonstrate deletion of a
+linking vowel. For syncope, the relevant distinction is between short
+nonhigh vowels, whose loss does not require a heavy first syllable, and
+high linking *i/u*, whose loss requires that weight condition. Light-root
+*Winifrið/Winefrið* and *duruweard* 'doorkeeper' preserve the linker,
+contrasting with *dælnimend* 'partaker' and *handclāð* 'towel'
+[@Campbell1959, p. 143, §341; @Campbell1959, pp. 145--146, §§348--353;
+@HoggGrammar2011, pp. 220--223, §§6.14--6.19;
+@RingeTaylor2014, pp. 266--267; @SieversBrunner1965, pp. 137--138, §§167--168].
+These are independent phonological comparisons, not additional selected
+derivations. Variant first stems and the *hild-/hilde-* material require
+source-critical analysis rather than an automatic rule conditioned by the
+identity or weight of the second member [@RingeTaylor2014, p. 303].
+
+Barrack's weak-vowel fronting and quality rules 333a/b and his rounding
+rule 335 belong to this wider discussion, but are not equivalent
+linking-vowel deletion laws. Their formal ordering is not independent
+evidence for dating syncope or removal of secondary stress
+[@Barrack1975, pp. 82--84].
+
 [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) captures this
 pattern in compounds such as *reġnboga* 'rainbow'. Its second-root vowel
 has already lowered under subordinate stress:
@@ -3730,10 +3752,27 @@ sound change.
 
 ```foma
 define OECompoundLinkingSyncope Ctx([
-    [{*a}|{*i}|{*u}] -> 0
+    {*a} -> 0
         || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
+] .o. [
+    [{*i}|{*u}] -> 0
+        || [
+            [PGmcStarAcuteVowel & EnglishStarLongVowel] OEAnyConsonant+ |
+            [PGmcStarAcuteVowel & EnglishStarShortVowel] OEAnyConsonant OEAnyConsonant+
+        ] _ OEAnyConsonant+ PGmcStarGraveVowel
 ]);
 ```
+
+The two clauses keep nonhigh deletion separate from high-vowel loss.
+For the latter, the represented heavy patterns are a long primary vowel
+followed by consonant(s), or a short primary vowel followed by at least
+two consonants. The annotated stress inventory and consonant strings
+are a bounded executable proxy, not a complete syllabification of all
+historical compounds. In particular, the right-hand consonant sequence
+does not independently guarantee an open linking syllable, and not every
+historical long or diphthongal stressed vowel has a corresponding accent
+token. The cited handbooks' historical conditions remain distinct from
+those representational limits.
 
 The *reġnboga* test exposes an annotation dependency rather than an
 independently dated historical sound-change boundary. If the grave is

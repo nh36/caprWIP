@@ -1,4 +1,28 @@
-# Cluster adjudication queue (post-SC065)
+# Cluster adjudication queue
+
+## Current routing — 2026-11-06
+
+SC065, SC066 and SC068 are adjudicated; their scientific decisions are
+not reopened by this queue. The current two-stream schedule is
+`research_agenda.md`: SC039→SC041→SC042 follows completed SC037,
+with SC040 already closed; Barrack-led SC067 and SC080 questions remain
+distinct unless they overlap the active sequential decision.
+
+SC067 compares the decomposed 480.2 devoicing, 481.1 þ-fortition and
+476 cluster simplification against CAPR's existing dental operations.
+Old p/OCR readings of thorn are corrected. Comparison forms are
+independent diagnostic controls, not an obligation to admit verb
+paradigms or reopen the selected *find* classification.
+SC080 compares final geminates separately from 476's broader
+pre-/postconsonantal environments. Decide genuine missing conditioning
+versus insufficient selected witnesses from independent evidence, not
+firing counts alone. Preserve the one-selected-form-per-lexeme policy.
+
+The older scheduling below is historical; references to an unresolved
+paradigm-cell policy or to all entries being unadjudicated are
+superseded by this routing and the completed decision records.
+
+## Historical scheduling (post-SC065)
 
 Ranked agenda for the remaining syncope/cluster-corridor adjudications,
 prepared at the close of the SC065 round (2026-10). Evidence counts are

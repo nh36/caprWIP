@@ -90,7 +90,9 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
                        "OEPrefixIReduction", "OEInterStressRaising",
                        "PNWGmcULowering", "OELAdjacentSyncope",
                        "OEMedUnstressedULowering", "EnglishProtoInput",
-                       "OldEnglishOrthography"}
+                       "OldEnglishOrthography",
+                       # Independently source-bound by test_sc037_adjudication.py.
+                       "OECompoundLinkingSyncope"}
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 

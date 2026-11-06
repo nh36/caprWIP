@@ -3660,8 +3660,14 @@ define OELAdjacentSyncope Ctx([
 # the rule reads off the acute/grave prosodic tiers directly.
 #   e.g. *régna-bùgô → *régn-bùgô → reġnboga
 define OECompoundLinkingSyncope Ctx([
-    [{*a}|{*i}|{*u}] -> 0
+    {*a} -> 0
         || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
+] .o. [
+    [{*i}|{*u}] -> 0
+        || [
+            [PGmcStarAcuteVowel & EnglishStarLongVowel] OEAnyConsonant+ |
+            [PGmcStarAcuteVowel & EnglishStarShortVowel] OEAnyConsonant OEAnyConsonant+
+        ] _ OEAnyConsonant+ PGmcStarGraveVowel
 ]);
 
 # Post-syncope dental cluster simplification: *tθ → *t.

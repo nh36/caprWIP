@@ -1,4 +1,96 @@
-# Barrack integration: next research agenda (post-SC087)
+# Barrack integration: live research queues
+
+Updated 2026-11-06 after certified-branch consolidation and the SC037
+scientific decision. The original agenda remains intact in Git at
+`46956200397c7002bcffb68da6b429b630fcf0a1` and is reproduced below as
+historical scheduling, not current authority. The 231-rule census and
+97-row crosswalk are existing assets, not tasks to reconstruct.
+
+## Queue 1 — sequential CAPR adjudication
+
+| Position | Work | Current disposition |
+|---|---|---|
+| Closing | SC037 linking-vowel syncope | RESTRICT high i/u loss by represented primary weight; preserve a-loss. Native assay conserves391 selected results. Final source-bound completion is recorded with the adjudication. |
+| Next | SC039 | Read its present packet, reader and source evidence; resolve Barrack 210/212/220 overlap in the same investigation, not a competing Barrack implementation. |
+| Already closed | SC040 | Do not reopen. |
+| Following | SC041, then SC042 | Sequential source-bound adjudications after SC039. |
+
+The selected corpus remains one form per lexeme. Other attestations and
+reconstructions are comparison/falsification controls, not extra
+publication targets or a demand for complete paradigms. Preserve all
+eight inherited mismatches unless independently supported historical
+analysis resolves one. No generic parser-functionality or totality
+programme displaces this queue.
+
+## Completed Barrack-connected decisions
+
+| SC | Verdict | Current authority |
+|---|---|---|
+| SC065 | RETAIN | `../../audits/sc065-adjudication.md`; admitted filth witness and i-umlaut feeding, qualified pre-dental proxy |
+| SC066 | REFORMULATE | `../../audits/sc066-adjudication.md`; weight/open-syllable conditioning, cetel contrast; Barrack 390 rejected on meoloc |
+| SC068 | RETAIN | `../../audits/sc068-adjudication.md`; narrower pre-sonorant slice; 453 is gemination, 481.1 fortition |
+| SC087 | RETAIN | `../../audits/sc087-adjudication.md`; preserved selected metathesis and breaking relation; broader byform/dialect residue not an adopted general law |
+| SC037 | RESTRICT decision | `../../audits/sc037-adjudication.md`; light-root high-linker retention; Barrack 333a/b and 335 are distinct quality changes |
+
+Cited discussion is not proof of adopting every Barrack environment.
+The crosswalk and citation ledger now distinguish these completed
+decisions from the remaining questions.
+
+## Queue 2 — Barrack-led discrepancies
+
+### Priority 1: outstanding cluster rules, SC067 and SC080
+
+SC067 owns the dental complex: Barrack 480.2 (p.124) devoices the
+preceding obstruent before t/s/þ; 481.1 (pp.124–125) fortifies þ to t
+after a voiceless obstruent; 476 (p.122) then simplifies a cluster.
+These are not three formulations of CAPR's tθ deletion. Establish
+component equivalence and independent historical environments before
+calling any branch a missing change. Thorn was misread as p in the
+old census and reverse-index glosses; the print readings are corrected.
+481.2 (p.125), 480.1 and 422 are related dental/sibilant comparisons.
+The inherited *find* classification is closed: the independently
+attested *fint* family can supply comparison evidence without replacing
+its selected record. No new paradigm-cell architecture is required.
+
+SC080 owns final geminate simplification and the separately qualified
+broader 476/457b residue from SC068. Barrack 476 has both
+C₁C₁C₂→C₁C₂ and C₂C₁C₁→C₂C₁; its postconsonantal direction is not
+automatically a word-final law. Compare independent final/postconsonantal
+environments and the existing lung witness. A small selected census
+does not by itself prove an omitted law or justify a witness quota.
+SC065/066/068 remain closed absent materially new evidence.
+
+### Priority 2: prospective omissions — source verification before proposal
+
+| Candidate | Verified reading and scope | Remaining decision |
+|---|---|---|
+| WG117, p.42 | Short accented e→i before m, explicitly `lng 1`; niman, late nyman. The old added macrons do not describe the source. | Check equivalent existing raising first; then independent reconstruction, regular conditioning and WG/prehistoric OE staging. No long ē→ī law is proposed. |
+| 300b, pp.72–73 | Explicit EWS i→y after labial before r; distinct LWS relaxations illustrated by wyrsa, yldra and mycel. Its matrix does not impose the old census's long-vowel restriction. | Independent phonological/dialectal chronology and representation-equivalence review. Do not exclude it as Anglian merely because the old burn-family agenda did so. |
+| 440b, p.113 | Explicit LWS sk→ks, fiscas/fixas; separate from 440c palatalization. | Independently establish the categorical historical environment and temporal target; ask/wasp byforms alone do not settle this law. Barrack's 428 ordering claim is not an adopted edge. |
+
+Classify each as equivalent representation, different conditioning,
+genuine omission, historically doubtful process, or outside the actual
+West Saxon target only after the independent evidence warrants that
+classification. Present classifications in the reverse index remain
+prospective questions, not three already established missing laws.
+Original PDFs and page images remain local holdings, not committed
+evidence exports.
+
+### Lower priority: historical qualifications and source hygiene
+
+Keep the SC087 Anglian burn/run metathesis residue distinct from
+300b's expressly West Saxon rounding. Further early-vowel staging,
+z-loss/rhotacism and regressive-metathesis discussion require materially
+new evidence before reopening adopted decisions. Resolve remaining
+VERIFY_SOURCE rows selectively when they affect an active question;
+no wholesale census rebuild or citation-coverage exercise is requested.
+The old chart's ambiguous interior chords remain non-evidence for
+chronology. The SC039 overlap belongs to Queue1's next investigation.
+
+## Historical agenda — superseded scheduling
+
+<details>
+<summary>Original post-SC087 agenda, preserved for research history</summary>
 
 Status: prepared 2026-10, immediately after the SC087 adjudication
 (`audits/sc087-adjudication.md`, verdict RETAIN). Ranked by evidence
@@ -157,3 +249,5 @@ ledger 97/97 dispositioned (12 CITED_OK, 23 CITE_WARRANTED,
   not automatically all six (SC028 remains a separate question).
 - The p. 136 ordering chart's interior chords remain unresolved at
   600 dpi; no ordering edge may be inferred from them (QC report).
+
+</details>
