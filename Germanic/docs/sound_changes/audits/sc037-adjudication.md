@@ -227,3 +227,24 @@ Registry-verdict: SC037=RESTRICT
   The actual next sequential SC is SC039; SC040 is already adjudicated,
   followed by SC041 and SC042. The Barrack discrepancy queue remains
   separate, with overlap resolved by the owning SC decision.
+
+## Lexical validation follow-up
+
+The subsequent [bounded lexical assessment](sc037-lexical-validation.md)
+preserves this adopted RESTRICT correction but makes no new admission.
+The named comparison forms do not yet supply an independently dated
+complete input discriminating the former and adopted high-vowel clauses.
+In particular, Orel's *đura-warđaz* has a, not inherited linking u.
+The source discussion and component controls must not be described as
+selected whole-word lexical certification.
+
+That assessment also qualifies the historical raw-probe rejection above:
+the probes included a conventional initial reconstruction asterisk,
+whereas the canonical parser takes normalized unstarred text. Their
+rejection does not establish rejection of correctly encoded words.
+The immutable assay itself is preserved.
+
+The preceding Residue records the queue at this memo's original date.
+SC039 has since received its bounded DEFER verdict. The actual sequential
+queue now resumes at SC041, then SC042; the Barrack queue remains SC067,
+then SC080. None is initiated by this lexical/publication follow-up.

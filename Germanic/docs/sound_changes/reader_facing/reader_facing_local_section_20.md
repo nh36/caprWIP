@@ -979,6 +979,53 @@ Changing their inflection after the event does not itself explain
 the inherited root vocalism
 [@Lloyd1966, pp. 741--742; @Hill2017, pp. 152, 154--155].
 
+#### Hock's defence of lowering
+
+Hock's detailed reply must nevertheless be distinguished from a mere
+assumption of analogy. He accepts an inherited contrast between
+\emph{*e} and \emph{*i} before \emph{*u} in Norse and English, and in
+certain monosyllables, while still defending lowering before low vowels.
+Complete phonemic merger and conditioned lowering are therefore different
+claims: rejecting the former does not refute the latter. His later
+raising before \emph{*u} is geographically restricted to the continental
+languages, not projected indiscriminately into their common ancestor
+[@Hock1973, pp. 328--329, 345--346].
+
+For class I participles, Hock identifies the *i*-timbre of the present,
+rather than simply the preterite plural, as the restoring model; he also
+appeals to differentiation from other strong classes. Hill directly
+challenges this account on quantity: the proposed present model has long
+\emph{*ī}, whereas the participles require short \emph{*i}. Selective
+restoration of timbre without quantity needs its own historical
+justification. Cercignani and Fulk nevertheless continue to allow
+present-stem influence, so the dispute is not settled by citing agreement
+on phonemic distinctness
+[@Hock1973, pp. 340--341; @Hill2017, pp. 151--152;
+@Cercignani1980, p. 130; @Fulk2018, pp. 58--59].
+
+Hock also confronts the adverbs, proposing different formative histories
+and subsequent levelling, and adducing OE [*heonan*]{.iv lang=oe sort=heonan role=comparison_form} 'hence' and [*neoðan*]{.iv lang=oe sort=neothan role=comparison_form}
+'from below' alongside the high-vowel forms. Those are comparative
+hypotheses, not evidence that every relevant suffix or restoration has
+been established. In particular, Ringe and Taylor note that Old English
+*eo* for expected *io* can result from a much later merger; Hill likewise
+distinguishes later Norse developments. The surface vowels alone cannot
+date a shared ancestral lowering
+[@Hock1973, p. 342; @RingeTaylor2014, p. 35, n. 17;
+@Hill2017, p. 152, n. 24].
+
+For 'fish', Hock proposes an original i-stem transferred to the a-stems
+only after lowered vowels had become phonemic. That is a specific
+alternative history, but the stem transfer and its date require
+independent support; Cercignani explicitly questions this explanation.
+Hock's final appeal to nominative/vocative syncretism likewise supplies
+a proposed mechanism for nominal doublets, not an independently fixed
+chronology. His own defence and the later objections are part of the
+case for evaluating particular histories rather than treating analogy
+as either universally available or universally excluded
+[@Hock1973, pp. 343--345, p. 349, n. 29;
+@Cercignani1979, pp. 77--78; @Cercignani1980, p. 131].
+
 Cercignani's defence of distinct \emph{*i} and \emph{*e} phonemes
 addresses a related but different proposition: phonemic opposition
 does not exclude a conditioned lowering. His criticism concerns
@@ -3719,16 +3766,40 @@ shortening within obscured second roots, connecting-vowel insertion, and
 weak-vowel quality changes do not by themselves demonstrate deletion of a
 linking vowel. For syncope, the relevant distinction is between short
 nonhigh vowels, whose loss does not require a heavy first syllable, and
-high linking *i/u*, whose loss requires that weight condition. Light-root
-*Winifrið/Winefrið* and *duruweard* 'doorkeeper' preserve the linker,
-contrasting with *dælnimend* 'partaker' and *handclāð* 'towel'
+high linking *i/u*, whose loss requires that weight condition. The handbooks compare retention in
+light-root *Winifrið/Winefrið* and *duruweard* 'doorkeeper'
+with loss in *dælnimend* 'partaker' and *handclāð* 'towel'
 [@Campbell1959, p. 143, §341; @Campbell1959, pp. 145--146, §§348--353;
 @HoggGrammar2011, pp. 220--223, §§6.14--6.19;
 @RingeTaylor2014, pp. 266--267; @SieversBrunner1965, pp. 137--138, §§167--168].
-These are independent phonological comparisons, not additional selected
+These are comparison forms, not additional selected
 derivations. Variant first stems and the *hild-/hilde-* material require
 source-critical analysis rather than an automatic rule conditioned by the
 identity or weight of the second member [@RingeTaylor2014, p. 303].
+
+The handbook comparisons do not yet provide a selected complete history
+testing the newly restricted high-vowel clause. In particular, Orel
+reconstructs Proto-Germanic [đura-warđaz]{.recon .iv lang=pgmc sort=durawardaz role=source_protoform} 'doorkeeper', with an *a*-linker,
+and compares Gothic [*daura-wards*]{.iv lang=goth sort=daurawards role=comparison_form} 'doorkeeper'; Kroonen derives the
+Old English simplex [*duru*]{.iv lang=oe sort=duru role=comparison_form} 'door' from [durō-]{.recon .iv lang=pgmc sort=duro role=source_protoform}. Neither fact
+establishes an inherited short linking *u* in [*duruweard*]{.iv lang=oe sort=duruweard role=comparison_form} 'doorkeeper', nor an
+independently demonstrated change supplying it before syncope.
+Its attested vowel cannot simply be substituted into the earlier
+compound reconstruction. The retained name vowels also need their own
+formation histories: Sievers and Brunner distinguish metrically old
+name forms with light-root vowel loss. These qualifications do not
+revoke the handbook weight contrast, but they prevent schematic
+stage controls from becoming complete lexical certificates by
+assumption [@Orel2003, p. 79; @Kroonen2013, p. 110;
+@SieversBrunner1965, pp. 137--138, §168].
+
+No new lexical selection is made on that incomplete basis. The selected
+high-vowel domain remains untested by an independently established
+complete compound history. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
+remain genuine selected *a*-deletion witnesses, not evidence for the
+new high-vowel restriction. The executable correction has component
+controls, but that is a different evidential claim from full lexical
+validation.
 
 Barrack's weak-vowel fronting and quality rules 333a/b and his rounding
 rule 335 belong to this wider discussion, but are not equivalent

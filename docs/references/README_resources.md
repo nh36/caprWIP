@@ -2,6 +2,28 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## Hock1973 acquisition, 6 November 2026
+
+The supplied `Hock status of e and i.pdf` is now preserved privately as
+`hock_1973_phonemic_status_germanic_e_i.pdf`, SHA256
+`c392663704e0fd57666bb335d4fa4ae0f4128ea3d91d8dbf156e3299cfb7fd71`.
+Its 17 two-page spreads contain the complete article, printed319--351,
+including notes and references; the preceding318 is not Hock's article.
+The complete article has been read. The supplied text layer omits section10.4
+and mishandles the sideways p.320 table; independent illumination-corrected
+OCR covers all33 article pages at
+`local/hock-1973/complete.screened-ocr.txt`, SHA256
+`c81e606363e6d16aa486bd5f06f4935d45d2a64b04c9149c9d82513de1c34cb4`.
+OCR is a working aid, not a fully corrected edition; the acquisition/source
+review records the page-image checks and bibliographic qualifications.
+The PDF, complete extracts and images remain ignored private holdings.
+
+The shared bibliography key is `Hock1973`; the
+[source-critical review](../../Germanic/docs/sound_changes/literature_dossiers/sc015-hock1973-source-review.md)
+compares Hock's actual argument with the five requested modern discussions.
+This is bounded source integration, not adoption of a new SC015 law.
+The live remaining article requests are Bennett1968 and Stiles1995.
+
 ## Holdings reconciliation, 4 November 2026
 
 The subsequent [Desktop intake](desktop_2026-11-04/README.md) incorporates
@@ -10,8 +32,9 @@ supplied *Approaches to Old Frisian Philology* scan. All 344 supplied volume
 sheets are now OCRed locally; the scan itself ends at printed p.329 and is
 not a complete edition. Their originals and complete selected-chapter texts
 are durable ignored holdings. The [remaining acquisition list](desktop_2026-11-04/remaining-acquisitions.md)
-now contains Bennett1968, Stiles1995 and Hock1973, with verified identifier
-provenance and the separate supplied-volume completion gap.
+at that date contained Bennett1968, Stiles1995 and Hock1973, with verified
+identifier provenance and the separate supplied-volume completion gap.
+The Hock acquisition above supersedes its outstanding-request status.
 
 The [source-holdings audit](holdings_audit_2026-11-04/README.md) reconciles
 bibliography, intake manifests, all available CAPR worktree libraries,
@@ -499,8 +522,10 @@ Ingestion does not adjudicate any author's hypothesis.
   listed in the header. §2.2.2.4 (p. 74) treats WGmc *\*liznō/ē-*. A
   Magisterarbeit (supervisor E. Hill), cited as such.
 
-Not in the collection and still not held directly: **Hock 1973** (on the
-strong-verb participles and *a*-umlaut), cited by Hill (2017: 150, 154–155) and discussed in the earlier SC015 report.
+Hock1973 was not held when this older SC015 collection was assembled.
+The complete original and searchable private text are now preserved in
+the acquisition recorded above; the earlier indirect discussion is no
+longer the sole basis for consulting it.
 
 - `luehr_article.txt` / `.pdf`
   Lühr, "Zur Semantifizierung von Zahlwörtern: Das Wort 'Tausend' —

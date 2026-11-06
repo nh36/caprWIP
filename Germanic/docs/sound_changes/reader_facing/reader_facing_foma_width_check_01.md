@@ -22,7 +22,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 012-lth-voicing.md | SC012. Northern West Germanic \emph{lþ}-voicing (`EAFLThVoicing`) {#rule-EAFLThVoicing} | 12 | 26 | no |
 | 013-dental-hardening.md | SC013. Dental hardening (`PWGmcDentalHardening`) {#rule-PWGmcDentalHardening} | 12 | 33 | no |
 | 014-unstressed-ai-monophthongization.md | SC014. Monophthongization of unstressed \emph{*ai} (`PNWGmcUnstressedAiMonophthongization`) {#rule-PNWGmcUnstressedAiMonophthongization} | 17 | 49 | no |
-| 015-stressed-i-lowering.md | SC015. Consonant-conditioned lowering of stressed short \emph{*i} (`PNWGmcILowering`) {#rule-PNWGmcILowering} | 396 | 42 | no |
+| 015-stressed-i-lowering.md | SC015. Consonant-conditioned lowering of stressed short \emph{*i} (`PNWGmcILowering`) {#rule-PNWGmcILowering} | 443 | 42 | no |
 | 016-west-saxon-palatal-glide.md | SC016. West Saxon palatal-glide spelling before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | 56 | 30 | no |
 | 017-nwgmc-u-lowering.md | SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering} | 90 | 60 | no |
 | 018-stressed-monosyllable-o-raising.md | SC018. Raising of final stressed monosyllabic \emph{*ō} (`PNWGmcStressedMonosyllableORaising`) {#rule-PNWGmcStressedMonosyllableORaising} | 12 | 79 | no |
@@ -44,7 +44,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 214 | 51 | no |
 | 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 177 | 44 | no |
 | 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | 188 | 72 | no |
-| 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 21 | 82 | no |
+| 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 67 | 87 | no |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 65 | no |
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 5 | 67 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 12 | 32 | no |

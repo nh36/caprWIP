@@ -83,6 +83,53 @@ Changing their inflection after the event does not itself explain
 the inherited root vocalism
 [@Lloyd1966, pp. 741--742; @Hill2017, pp. 152, 154--155].
 
+### Hock's defence of lowering
+
+Hock's detailed reply must nevertheless be distinguished from a mere
+assumption of analogy. He accepts an inherited contrast between
+\emph{*e} and \emph{*i} before \emph{*u} in Norse and English, and in
+certain monosyllables, while still defending lowering before low vowels.
+Complete phonemic merger and conditioned lowering are therefore different
+claims: rejecting the former does not refute the latter. His later
+raising before \emph{*u} is geographically restricted to the continental
+languages, not projected indiscriminately into their common ancestor
+[@Hock1973, pp. 328--329, 345--346].
+
+For class I participles, Hock identifies the *i*-timbre of the present,
+rather than simply the preterite plural, as the restoring model; he also
+appeals to differentiation from other strong classes. Hill directly
+challenges this account on quantity: the proposed present model has long
+\emph{*ī}, whereas the participles require short \emph{*i}. Selective
+restoration of timbre without quantity needs its own historical
+justification. Cercignani and Fulk nevertheless continue to allow
+present-stem influence, so the dispute is not settled by citing agreement
+on phonemic distinctness
+[@Hock1973, pp. 340--341; @Hill2017, pp. 151--152;
+@Cercignani1980, p. 130; @Fulk2018, pp. 58--59].
+
+Hock also confronts the adverbs, proposing different formative histories
+and subsequent levelling, and adducing OE [*heonan*]{.iv lang=oe sort=heonan role=comparison_form} 'hence' and [*neoðan*]{.iv lang=oe sort=neothan role=comparison_form}
+'from below' alongside the high-vowel forms. Those are comparative
+hypotheses, not evidence that every relevant suffix or restoration has
+been established. In particular, Ringe and Taylor note that Old English
+*eo* for expected *io* can result from a much later merger; Hill likewise
+distinguishes later Norse developments. The surface vowels alone cannot
+date a shared ancestral lowering
+[@Hock1973, p. 342; @RingeTaylor2014, p. 35, n. 17;
+@Hill2017, p. 152, n. 24].
+
+For 'fish', Hock proposes an original i-stem transferred to the a-stems
+only after lowered vowels had become phonemic. That is a specific
+alternative history, but the stem transfer and its date require
+independent support; Cercignani explicitly questions this explanation.
+Hock's final appeal to nominative/vocative syncretism likewise supplies
+a proposed mechanism for nominal doublets, not an independently fixed
+chronology. His own defence and the later objections are part of the
+case for evaluating particular histories rather than treating analogy
+as either universally available or universally excluded
+[@Hock1973, pp. 343--345, p. 349, n. 29;
+@Cercignani1979, pp. 77--78; @Cercignani1980, p. 131].
+
 Cercignani's defence of distinct \emph{*i} and \emph{*e} phonemes
 addresses a related but different proposition: phonemic opposition
 does not exclude a conditioned lowering. His criticism concerns

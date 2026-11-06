@@ -1,8 +1,8 @@
 # Remaining requested originals
 
-Updated4 November2026 after the Desktop intake: Seiler2019 and the complete
-Fulk1998 chapter are now held and are removed from the acquisition requests.
-The three remaining chapter/article requests are below. A scan of the containing
+Updated6 November2026: Seiler2019, the complete Fulk1998 chapter and now
+Hock1973 are held and removed from the acquisition requests.
+The two remaining chapter/article requests are below. A scan of the containing
 volume is equally useful. ISBNs identify volumes, not individual chapters.
 
 1. Bennett, William H.1968. "The Accentuation of Gothic ga-."
@@ -21,12 +21,21 @@ volume is equally useful. ISBNs identify volumes, not individual chapters.
    Chapter DOI:[10.1075/nss.12.11sti](https://doi.org/10.1075/nss.12.11sti).
    The1995 original is distinct from its2012 online availability.
 
-3. Hock, H.H.1973. "On the Phonemic Status of Germanic e and i."
+## Hock request completed, 6 November2026
+
+The former third request has been supplied and preserved privately:
+
+   Hock, H.H.1973. "On the Phonemic Status of Germanic e and i."
    In B.B.Kachru, R.B.Lees, Y.Malkiel, A.Pietrangeli and S.Saporta (eds.),
    *Issues in Linguistics: Papers in Honor of Henry and Renée Kahane*,
    pp.319-351. Urbana: University of Illinois Press.
    Volume ISBN10:0252002466; ISBN13:9780252002465.
    No chapter DOI verified.
+
+The17-spread article scan is complete on printed319--351.
+See the [current holdings record](../README_resources.md) for its canonical
+private filename, exact checksum and complete-reading/source-review record.
+This removes the live request, not the historical identifier provenance below.
 
 ## Identifier evidence
 
@@ -42,7 +51,9 @@ volume is equally useful. ISBNs identify volumes, not individual chapters.
 - Hock: [library edition record](https://openlibrary.org/books/OL5305939M)
   confirms the1973 Illinois volume and ISBN0252002466;9780252002465 is
   the equivalent ISBN13 conversion. The chapter citation is verified in the held
-  Hill2017 bibliography, not from Hock's still-unacquired text.
+  Hill2017 bibliography. That was the basis of the original request; the
+  supplied article now independently verifies author, title and pp.319--351,
+  but contains no volume title/copyright leaf.
 - All listed ISBN check digits were checked. A missing verified DOI is not
   a categorical assertion that none could ever be assigned.
 
