@@ -211,7 +211,7 @@ class NextScTests(unittest.TestCase):
         pending = [r["sc_id"] for r in reg
                    if r["lifecycle_status"] == "active"
                    and r["adjudication_status"] != "adjudicated"
-                   and r["entry_type"] != "support_stage"
+                   and r["entry_type"] not in {"support_stage", "technical_marker"}
                    and adjudicate.sc_num(r["sc_id"]) >= start]
         expected = min(pending, key=lambda sc: (adjudicate.sc_num(sc), sc), default=None)
         self.assertEqual(nxt, expected)
@@ -220,7 +220,7 @@ class NextScTests(unittest.TestCase):
         row = {r["sc_id"]: r for r in reg}[nxt]
         self.assertEqual(row["lifecycle_status"], "active")
         self.assertNotEqual(row["adjudication_status"], "adjudicated")
-        self.assertNotEqual(row["entry_type"], "support_stage")
+        self.assertNotIn(row["entry_type"], {"support_stage", "technical_marker"})
 
     def test_scoped_and_out_of_band_verdicts_cannot_skip_pending_work(self):
         rows = [self.row("SC020", "adjudicated"), self.row("SC021"),
@@ -234,6 +234,15 @@ class NextScTests(unittest.TestCase):
                 self.row("SC021", entry_type="support_stage"),
                 self.row("SC022", lifecycle="retired"), self.row("SC023")]
         self.assertEqual(self.route(rows), "SC023")
+
+    def test_technical_markers_do_not_interrupt_historical_adjudication(self):
+        rows = [self.row("SC037", "adjudicated"),
+                self.row("SC038", entry_type="technical_marker"),
+                self.row("SC039", "adjudicated"),
+                self.row("SC040", "adjudicated"), self.row("SC041")]
+        self.assertEqual(self.route(rows, start="SC037"), "SC041")
+        rows[-1]["adjudication_status"] = "adjudicated"
+        self.assertIsNone(self.route(rows, start="SC037"))
 
     def test_sequential_progress_and_pending_start(self):
         rows = [self.row("SC020"), self.row("SC021"), self.row("SC022")]

@@ -293,7 +293,7 @@ def next_sc():
         for r in rows
         if r["lifecycle_status"] == "active"
         and r["adjudication_status"] != "adjudicated"
-        and r["entry_type"] != "support_stage"
+        and r["entry_type"] not in {"support_stage", "technical_marker"}
         and sc_num(r["sc_id"]) >= sc_num(start)
     )
     return pending[0][1] if pending else None
