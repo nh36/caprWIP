@@ -248,3 +248,22 @@ The preceding Residue records the queue at this memo's original date.
 SC039 has since received its bounded DEFER verdict. The actual sequential
 queue now resumes at SC041, then SC042; the Barrack queue remains SC067,
 then SC080. None is initiated by this lexical/publication follow-up.
+
+## Final targeted lexical-evidence decision
+
+The [final seleweard and older-name assessment](sc037-final-lexical-evidence.md)
+corrects the universal historical reading of the weight restriction:
+Luick section 305 and Hogg section 6.21 explicitly recognize older
+light-root high-vowel loss. The adopted executable remains a bounded
+RESTRICT fragment, not a complete explanation of that distribution.
+Orel's two printed guardian compounds both have i in the first member;
+their different endings are not alternative linkers.
+
+Correct canonical candidate encodings are rejected, unlike the invalid
+leading-star probes preserved above. Explicitly parser-bypassed conditional
+paths finish as adopted `seleoweard` versus former `sealweard`; neither
+is a successful derivation of the attested target. Formation chronology
+remains independently underdetermined. No lexical admission, new law,
+chronology edge or change to the certified kernel is adopted. The final
+report distinguishes historical adequacy, selected coverage, stage
+controls, lexical regression and publication completion.

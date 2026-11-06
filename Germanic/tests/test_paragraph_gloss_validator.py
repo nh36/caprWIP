@@ -111,6 +111,48 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_sc037_reconstructions_require_the_prior_local_lemma_gloss(self):
+        forms = (
+            "Orel prints [sali-warđaz]{.recon .iv lang=pgmc} and "
+            "[sali-warđuz]{.recon .iv lang=pgmc}."
+        )
+        anchor = "[*seleweard*]{.iv lang=oe} 'hall-warden' is attested. "
+        self.assertEqual(self.validate(anchor + forms).returncode, 0)
+        for text in (
+            forms,
+            forms + " " + anchor,
+            anchor + "\n\n" + forms,
+            anchor + forms.replace("Orel prints", "Another word is"),
+            "# Word-by-word derivations\n\n" + anchor + forms,
+        ):
+            with self.subTest(text=text):
+                result = self.validate(text)
+                self.assertEqual(result.returncode, 2, result.stderr)
+                self.assertIn("missing gloss for *sali-warđaz*", result.stderr)
+
+    def test_sc037_names_are_exempt_only_in_the_explicit_name_comparison(self):
+        forms = "[*Sigfrið*]{.iv lang=oe} and [*Hyglāc*]{.iv lang=oe}."
+        context = (
+            "The older names matter. The handbooks recognize high-vowel loss "
+            "after light first roots, including "
+        )
+        self.assertEqual(self.validate(context + forms).returncode, 0)
+        for text in (
+            forms,
+            context.replace("The older names matter. ", "") + forms,
+            context.replace("light first roots", "other roots") + forms,
+            "# Word-by-word derivations\n\n" + context + forms,
+        ):
+            with self.subTest(text=text):
+                result = self.validate(text)
+                self.assertEqual(result.returncode, 2, result.stderr)
+                self.assertIn("missing gloss for *Sigfrið*", result.stderr)
+
+    def test_sc037_reader_passes_without_checker_driven_prose_edits(self):
+        reader = FILTER.parents[1] / "docs/sound_changes/reader_facing/037-compound-linking-syncope.md"
+        result = self.validate(reader.read_text(encoding="utf-8"))
+        self.assertEqual(result.returncode, 0, result.stderr)
+
     def test_sc040_projections_require_the_prior_lemma_and_exact_context(self):
         context = (
             "In *eorþ.cun.de*, the syllables differ. "

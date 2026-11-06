@@ -585,12 +585,18 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
         ("oe", "duruweard", "comparison_form"),
         ("oe", "reġnboga", "evidence_form"),
         ("oe", "eorþcunde", "evidence_form"),
+        ("oe", "Sigfrið", "comparison_form"),
+        ("oe", "Hyglāc", "comparison_form"),
+        ("oe", "seleweard", "comparison_form"),
+        ("pgmc", "sali-warđaz", "source_protoform"),
+        ("pgmc", "sali-warđuz", "source_protoform"),
+        ("on", "sal-vǫrðr", "comparison_form"),
     }
     sc037_hock = [row for row in added if
                   row["source_ref"] == "Germanic/docs/sound_changes/reader_facing/"
                   "reader_facing_local_section_20.md" and
                   (row["language"], row["form"], row["form_role"]) in sc037_hock_keys]
-    assert len(sc037_hock) == 9
+    assert len(sc037_hock) == 15
     assert {(row["language"], row["form"], row["form_role"])
             for row in sc037_hock} == sc037_hock_keys
     assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"

@@ -3766,7 +3766,9 @@ shortening within obscured second roots, connecting-vowel insertion, and
 weak-vowel quality changes do not by themselves demonstrate deletion of a
 linking vowel. For syncope, the relevant distinction is between short
 nonhigh vowels, whose loss does not require a heavy first syllable, and
-high linking *i/u*, whose loss requires that weight condition. The handbooks compare retention in
+high linking *i/u*, whose regular heavy-root loss supplies the weight
+condition modelled here. That condition is not an exhaustive account of
+all historical compound losses. The handbooks compare retention in
 light-root *Winifrið/Winefrið* and *duruweard* 'doorkeeper'
 with loss in *dælnimend* 'partaker' and *handclāð* 'towel'
 [@Campbell1959, p. 143, §341; @Campbell1959, pp. 145--146, §§348--353;
@@ -3786,12 +3788,54 @@ establishes an inherited short linking *u* in [*duruweard*]{.iv lang=oe sort=dur
 independently demonstrated change supplying it before syncope.
 Its attested vowel cannot simply be substituted into the earlier
 compound reconstruction. The retained name vowels also need their own
-formation histories: Sievers and Brunner distinguish metrically old
-name forms with light-root vowel loss. These qualifications do not
-revoke the handbook weight contrast, but they prevent schematic
-stage controls from becoming complete lexical certificates by
-assumption [@Orel2003, p. 79; @Kroonen2013, p. 110;
+formation histories [@Orel2003, p. 79; @Kroonen2013, p. 110;
 @SieversBrunner1965, pp. 137--138, §168].
+
+The older names cannot simply be dismissed as exceptions to a universal
+heavy-root requirement. Sievers and Brunner, Campbell, Luick and Hogg
+explicitly recognize high-vowel loss after light first roots, including
+[*Sigfrið*]{.iv lang=oe sort=sigfrith role=comparison_form} and
+[*Hyglāc*]{.iv lang=oe sort=hyglac role=comparison_form}.
+Luick distinguishes chronological layers and says that the circumstances
+of the change are not yet understood. Hogg also discusses the second
+member's weight. These observations require a bounded reconsideration
+of an exhaustive weight-only account; they do not license lexical
+optionality, a rule restricted to personal names, or an unsupported
+appeal to analogy. Nor does the manuscript date of a name independently
+date its formation or syncope [@SieversBrunner1965, pp. 137--138, §168;
+@Campbell1959, pp. 145--146, §§348--349;
+@Luick1914, pp. 283--284, §305; @HoggGrammar2011, pp. 224--225, §6.21].
+
+[*seleweard*]{.iv lang=oe sort=seleweard role=comparison_form} 'hall-warden'
+provides a stronger retained-vowel candidate. Orel prints
+[sali-warđaz]{.recon .iv lang=pgmc sort=saliwardaz role=source_protoform}
+and [sali-warđuz]{.recon .iv lang=pgmc sort=saliwarduz role=source_protoform},
+with Old Norse [*sal-vǫrðr*]{.iv lang=on sort=salvordr role=comparison_form}
+'hall-warden'. Both reconstructions have first-member *i*; their
+alternatives concern the second member's inflection, not an *a/i*
+linker choice. The first member's secondary i-stem history is independently
+supported. Nevertheless, these transparent formations do not discriminate
+inheritance of this particular compound from later independent formation:
+Orel expressly reports Carr's parallel-formation assessment. Beowulf
+attests the Old English accusative singular, but does not independently
+place the compound before the relevant syncope. Neither an ending nor a
+high linker has to be invented; the unresolved premise is formation
+chronology [@Orel2003, pp. 315, 448; @Kroonen2013, p. 424;
+@ClarkHall1960, p. 260, Beowulf 667].
+
+Correctly encoded versions of these two hypotheses are not accepted by
+the current canonical input grammar. An explicitly hypothetical
+comparison starting after that grammar can test the downstream rules,
+but cannot establish a canonical whole-word derivation, an independently
+licensed historical-stage witness, or inheritance. Such comparisons are
+kept separate from the historical admission decision; the current
+grammar is not changed to make the candidate succeed.
+For both printed nominative hypotheses, the retained formulation
+preserves the linker but finishes as [seleoweard]{.pred}; the former
+formulation deletes it and finishes as [sealweard]{.pred}.
+The difference survives, but neither result supplies the attested target.
+These are conditional model outputs, not additional Old English
+attestations or a successful lexical regression.
 
 No new lexical selection is made on that incomplete basis. The selected
 high-vowel domain remains untested by an independently established
@@ -3843,7 +3887,10 @@ historical compounds. In particular, the right-hand consonant sequence
 does not independently guarantee an open linking syllable, and not every
 historical long or diphthongal stressed vowel has a corresponding accent
 token. The cited handbooks' historical conditions remain distinct from
-those representational limits.
+those representational limits. The retained executable fragment describes
+the heavy-root pattern, not a completed explanation of the older
+light-root losses. Neither its successful component controls nor the
+conditional compound hypotheses constitute full lexical certification.
 
 The *reġnboga* test exposes an annotation dependency rather than an
 independently dated historical sound-change boundary. If the grave is

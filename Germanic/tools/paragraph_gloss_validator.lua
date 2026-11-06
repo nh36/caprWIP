@@ -287,6 +287,12 @@ end
 -- head (Campbell1959, pp. 155–156). This is a contextual shared-gloss allowance,
 -- not spelling normalization or permission to omit the paragraph's first gloss.
 local SHARED_GLOSS_VARIANTS = {
+  ["sali-warđaz"] = {
+    anchor = "seleweard", context = "Orel prints",
+  },
+  ["sali-warđuz"] = {
+    anchor = "seleweard", context = "Orel prints",
+  },
   ["eorþ.cun.de"] = {
     anchor = "eorþcunde",
     context = "In eorþ.cun.de",
@@ -397,6 +403,8 @@ local REPEATED_GLOSS_CONTEXTS = {
     {part2 = true, context = "has a heavy root syllable"},
   },
 }
+
+local SC037_PERSONAL_NAMES = {["sigfrið"] = true, ["hyglāc"] = true}
 
 local function check_para(el, is_p2, in_prose_section)
   if is_p2 then
@@ -533,6 +541,9 @@ local function check_para(el, is_p2, in_prose_section)
           or (variant.prior and established_glosses[variant.anchor]))
         and paragraph:find(variant.context, 1, true)
       local repeated_gloss = false
+      local personal_name = not is_p2 and SC037_PERSONAL_NAMES[norm]
+        and paragraph:find("The older names", 1, true)
+        and paragraph:find("recognize high-vowel loss after light first roots", 1, true)
       if established_glosses[norm] then
         for _, context in ipairs(REPEATED_GLOSS_CONTEXTS[norm] or {}) do
           if is_p2 == context.part2 and paragraph:find(context.context, 1, true) then
@@ -544,7 +555,7 @@ local function check_para(el, is_p2, in_prose_section)
       if norm ~= "" and not seen[norm] then
         seen[norm] = true
         if is_p2 then cands_p2 = cands_p2 + 1 else cands_p1 = cands_p1 + 1 end
-        if not immediate_gloss and not shared_gloss and not repeated_gloss then
+        if not immediate_gloss and not shared_gloss and not repeated_gloss and not personal_name then
           local entry = {
             para    = (is_p2 and paras_p2_total or paras_p1),
             entry   = p2_entry,

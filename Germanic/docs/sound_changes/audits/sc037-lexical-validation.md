@@ -164,3 +164,22 @@ that no such historical word exists.
 No further rule investigation is initiated. SC039 retains its bounded
 DEFER. The sequential queue resumes at SC041, then SC042; the Barrack
 queue resumes at SC067, then SC080. All four are outside this assignment.
+
+## Final targeted reassessment
+
+The subsequent [final lexical-evidence decision](sc037-final-lexical-evidence.md)
+supersedes this follow-up's abbreviated seleweard assessment and its
+unqualified weight-only historical formulation. Orel's two printed
+compounds BOTH have linking i; their a/u alternatives concern the second
+member's inflection. Ordinary comparative reconstruction does not require
+an explicitly attested protoform or a uniquely printed paradigm cell.
+The unresolved historical premise is formation before SC037, given the
+specific parallel-formation analysis, not an inability to supply endings.
+
+Original Luick section 305 and Hogg section 6.21 confirm substantive
+older light-root loss evidence. The final report records properly encoded
+canonical rejections and explicitly parser-bypassed old/new hypotheses:
+adopted `seleoweard` versus former `sealweard`, neither the attested target.
+RESTRICT is retained as a bounded executable fragment, not an exhaustive
+historical account or a fully certified high-linker lexical history.
+There is no admission, FST change or new chronology edge.
