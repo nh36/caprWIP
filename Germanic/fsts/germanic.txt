@@ -284,7 +284,7 @@ define pgrmCoda [0 | pgrmCodaSimple | pgrmCodaComplex];
 
 define pgrmStrongPlainLight pgrmOnset pgrmShortVowel 0;
 define pgrmStrongPlainHeavy [
-    pgrmOnset (pgrmLongVowel | pgrmDiphthong) pgrmCoda |
+    pgrmOnset [pgrmLongVowel | pgrmDiphthong] pgrmCoda |
     pgrmOnset pgrmShortVowel pgrmCodaNonEmpty
 ];
 define pgrmStrongPlain [pgrmStrongPlainLight | pgrmStrongPlainHeavy];
@@ -501,11 +501,11 @@ define pgrmInputTailVowel [
 
 # Simple (non-compound) word patterns
 define pgrmSimpleWord [
-    (pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed) pgrmInputTailVowel |
-    (pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed) pgrmCausativeSuffix pgrmWeakTailVowel |
-    (pgrmStrongPlain | pgrmStrongPlainPrefixed) pgrmWeakTailZero |
-    (pgrmStrongNasal | pgrmStrongNasalPrefixed) pgrmWeakTailVowel |
-    (pgrmStrongNasal | pgrmStrongNasalPrefixed) pgrmWeakTailZero
+    [pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed] pgrmInputTailVowel |
+    [pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed] pgrmCausativeSuffix pgrmWeakTailVowel |
+    [pgrmStrongPlain | pgrmStrongPlainPrefixed] pgrmWeakTailZero |
+    [pgrmStrongNasal | pgrmStrongNasalPrefixed] pgrmWeakTailVowel |
+    [pgrmStrongNasal | pgrmStrongNasalPrefixed] pgrmWeakTailZero
 ];
 
 # Compound separator: hyphen marks compound boundary in proto-form
@@ -821,6 +821,7 @@ define OEXsMerge [
 ];
 
 define OldEnglishOrthography [
+    {*ɣ} -> g,
     {*θ} -> þ,
     {*ð} -> ð,
     {*ʧ} -> ċ,

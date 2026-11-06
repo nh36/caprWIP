@@ -5,7 +5,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 
 | SC | Display name | Lifecycle | Verdict | Memo |
 | --- | --- | --- | --- | --- |
-| SC001 | Proto Input | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc001-adjudication.md` |
+| SC001 | Proto Input | active | REFORMULATE/RESTRICT | `Germanic/docs/sound_changes/audits/sc001-lexical-nucleus-adoption.md` |
 | SC004 | English stressed ai contraction | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc004-adjudication.md` |
 | SC015 | Northwest Germanic consonant-conditioned I Lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc015-adjudication.md` |
 | SC016 | OE Ws Palatal Glide | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc016-017-adjudication.md` |
@@ -41,6 +41,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC082 | Bounded inherited-j normalization | active | RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc082-adjudication.md` |
 | SC087 | OE R Metathesis | active | RETAIN | `Germanic/docs/sound_changes/audits/sc087-adjudication.md` |
 | SC089 | Late unstressed ag-suffix raising | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc089-adjudication.md` |
+| SC092 | Old English Orthography | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc092-adjudication.md` |
 | SC098 | Early apocope in unstressed words | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc098-context-apocope-adjudication.md` |
 | SC101 | EAF Long A Fronting | active | SPLIT/RESTRICT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
 | SC102 | EAF Generalization of Hiatus-Breaking W | active | SPLIT | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |

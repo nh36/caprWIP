@@ -7,7 +7,7 @@
 # (prelude or written-surface block); an empty exec_index means the SC has
 # no executable stage.
 sc_id	fst_identifier	entry_type	pipeline_stage	display_name	hist_stage	hist_scope	confidence	adjudication_status	verdict	exec_index	cascade_position
-SC001	EnglishProtoInput	support_stage	Proto-Germanic consonant inheritance	Proto Input				adjudicated	REFORMULATE	1	
+SC001	EnglishProtoInput	support_stage	Proto-Germanic consonant inheritance	Proto Input				adjudicated	REFORMULATE/RESTRICT	1	
 SC002	PGmcGmSimplification	historical_sound_change	Proto-Germanic consonant inheritance	Gm Simplification				unadjudicated		2	
 SC103	PGmcNasalLossBeforeX	historical_sound_change	Proto-Germanic	Proto-Germanic nasal loss before *x	pgmc	pan_germanic	A	adjudicated	SPLIT/REORDER	3	1
 SC096	RootNounNomZLoss	historical_sound_change	Northwest Germanic developments	Root-noun nominative *-z* loss	pnwgmc	pan_pnwgmc	B	unadjudicated		4	2
@@ -113,7 +113,7 @@ SC089	OELateUnstressedAgSuffix	historical_sound_change	Old English	Late unstress
 SC109	OEPalatalFricativeMerger	support_stage	Old English	Postmutation palatal-fricative merger serialization				unadjudicated		104	102
 SC090	OECjCleanup	orthography_surface	Old English	OE Cj Cleanup				unadjudicated		105	103
 SC091	OEXsMerge	orthography_surface	Old English	OE Xs Merge				unadjudicated		106	104
-SC092	OldEnglishOrthography	orthography_surface	Orthography & surface	Old English Orthography				unadjudicated		107	105
+SC092	OldEnglishOrthography	orthography_surface	Orthography & surface	Old English Orthography				adjudicated	REFORMULATE	107	105
 SC016	OEWsPalatalGlide	orthography_surface	Orthography & surface	OE Ws Palatal Glide	oe_ws	west_saxon	A	adjudicated	REFORMULATE/REORDER	108	106
 SC094	OldEnglishRemoveStars	orthography_surface	Orthography & surface	Old English Remove Stars				unadjudicated		109	107
 SC095	OldEnglishSurface	support_stage	Orthography & surface	Old English Surface				unadjudicated		110	

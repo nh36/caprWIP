@@ -85,10 +85,12 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
             changed.add(name)
     # The separate rainbow test pins the exact subordinate-root extension;
     # the SC066 reformulation is pinned by test_sc066_sc068_adjudication.py.
+    # SC092's spelling projection is pinned by test_bounded_domain_adoption.py.
     assert changed == {"OEPrefixAReduction", "OEUnstressedAEMerger",
                        "OEPrefixIReduction", "OEInterStressRaising",
                        "PNWGmcULowering", "OELAdjacentSyncope",
-                       "OEMedUnstressedULowering", "EnglishProtoInput"}
+                       "OEMedUnstressedULowering", "EnglishProtoInput",
+                       "OldEnglishOrthography"}
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 

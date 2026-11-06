@@ -51,7 +51,7 @@ def test_sc036_and_separately_adjudicated_changes_remain_bounded():
     # test_lexical_witness_input_gate.py; relative to SC036's base it
     # adds pgrmInputTailVowel and rewires the two gate defines below.
     gate_added = {"pgrmInputTailVowel"}
-    gate_changed = {"pgrmSimpleWord", "pgrmCompoundSecond"}
+    gate_changed = {"pgrmSimpleWord", "pgrmCompoundSecond", "pgrmStrongPlainHeavy"}
     # The separately authorized subordinate-root extension is pinned against
     # its own before-adoption source by test_rainbow_2148_adoption.py.
     rainbow_changed = {"PNWGmcULowering"}
@@ -74,7 +74,8 @@ def test_sc036_and_separately_adjudicated_changes_remain_bounded():
         {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed |
         rainbow_changed | sc066_changed |
         # Exact scoped candidate is pinned by test_cascade_functionality_witnesses.py.
-        {"OEMedUnstressedULowering", "EnglishProtoInput", "OEVelarPalatalizationStops"})
+        {"OEMedUnstressedULowering", "EnglishProtoInput", "OEVelarPalatalizationStops",
+         "OldEnglishOrthography"})
     assert current["OEInterStressRaising"] == "OELHWeakRaising"
     accepted = definitions(git_bytes(
         "ee73f189d2c4af2fab6170f7af066d96611ce749",

@@ -6,7 +6,7 @@ RootNounNomZLoss	OEWWSimplification	yes
 RootNounNomZLoss	PWGmcIjContraction	no
 RootNounNomZLoss	PWGmcJGemination	yes
 RootNounNomZLoss	PWGmcSyllabicJ	yes
-RootNounNomZLoss	PNWGmcPreconsonantalXLoss	no
+RootNounNomZLoss	PNWGmcPreconsonantalXLoss	yes
 RootNounNomZLoss	PWGmcDentalHardening	yes
 RootNounNomZLoss	EAFFinalZDeletion	yes
 RootNounNomZLoss	PWGmcUnstressedWordFinalIApocope	no

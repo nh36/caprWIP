@@ -57,7 +57,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
     assert old.keys() - current.keys() == {"OESoulProxy"}
     assert {name for name in old.keys() & current.keys()
             if old[name].definition_raw != current[name].definition_raw} == {
-                "pgrmSimpleWord", "pgrmCompoundSecond",
+                "pgrmSimpleWord", "pgrmCompoundSecond", "pgrmStrongPlainHeavy",
+                "OldEnglishOrthography",
                 # Independently pinned by test_rainbow_2148_adoption.py.
                 "PNWGmcULowering",
                 # The SC066 reformulation and the {*ie} diphthong-class
@@ -73,8 +74,11 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "OEVelarPalatalizationStops",
             }
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
+        expected = old[name].definition_raw
+        if name == "pgrmSimpleWord":
+            expected = expected.replace("(", "[").replace(")", "]")
         assert current[name].definition_raw.replace(
-            "pgrmInputTailVowel", "pgrmWeakTailVowel") == old[name].definition_raw
+            "pgrmInputTailVowel", "pgrmWeakTailVowel") == expected
     expected = (
         "define pgrmInputTailVowel [ pgrmWeakTailVowel | "
         "{ai}:{*ai} z:{*z} ō:{*ō} z:{*z} | i:{*i} z:{*z} ō:{*ō} z:{*z} ];"
