@@ -1,0 +1,175 @@
+{
+  "scientific_commit": "541b45903036e5356242eedb4d0a9c9b540c5da8",
+  "certified_parent": "63c7befa06b14625711872f8b89bf271e0d443e0",
+  "tested_identity": {
+    "head_commit": "63c7befa06b14625711872f8b89bf271e0d443e0",
+    "worktree_changes": {
+      "Germanic/docs/assembly/capr_book_draft_alpha_01.md": "88ba5c573b24b6fa19171c87131806dcc3144609d8d03a2087dd3a15059925a6",
+      "Germanic/docs/assembly/lexical_source_provenance.json": "e80cf15ea827e658ab5da83626aac2c385a52171394978194bb0428c5479a91f",
+      "Germanic/docs/book/index_verborum_audit.md": "989b284cd19d24de92af58772a5aaf7657a178698dc72decf8bc19896b95ff9a",
+      "Germanic/docs/book/index_verborum_book_emissions.tsv": "daf3e545a19e2c147a7a32844a9ecc5681a376127a10912a944eafd6410809ec",
+      "Germanic/docs/book/index_verborum_book_main.tsv": "daf3e545a19e2c147a7a32844a9ecc5681a376127a10912a944eafd6410809ec",
+      "Germanic/docs/book/index_verborum_book_occurrences.tsv": "9a41cee13d0ccbfc86dee74e478008f26e447cc6a4f07c115430efc7fef73384",
+      "Germanic/docs/book/index_verborum_book_print_unique.tsv": "2bd38acb2dd6ded49a2ba97227aee5acace27254a3d68395f105209a4d483cb6",
+      "Germanic/docs/book/index_verborum_emission_table.tsv": "e36d1a6b5112939e068f0f35dc69ea50615f0da7fc43928988d2fd3c26541104",
+      "Germanic/docs/book/index_verborum_forms.tsv": "ec546edd9bb34a364018abfa22e28367cbf3f56f0c3992cb5e8b6277f988c100",
+      "Germanic/docs/book/index_verborum_print_main.tsv": "000d5c0cdc2cafeb9e789ed137e07baf27f5fd326374b4facfe4a1394a0f0d1d",
+      "Germanic/docs/book/index_verborum_print_unique.tsv": "da97f37e8fb811a97d23e2b87ad1891557bf9d5157993b52b52e472be7a5a777",
+      "Germanic/docs/book/reader_facing_example_forms.tsv": "0e2ef005cb06c88dcaa9da94764ab1edc5b1f924376208f897aba7990ab0f573",
+      "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "7218b20bd1cfe3fd930cffcae24ae494a2b0ef84dab0a65e4cca150a1b4d2bb9",
+      "Germanic/docs/sound_changes/audits/sc037-adjudication.md": "d46fad26964e4e0037b46a2e3ec401a0cb9b704c8984d67b35d2413693b5fecb",
+      "Germanic/docs/sound_changes/book_dossiers/035-037-prefix-and-compound-adjustments.book-dossier.md": "1eb5ebdb94c8a0a5728658200eb3d6575366faa236fe5a505b28309459a4619b",
+      "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json": "8b2853700dfc9643d39902f634a0385d72ab46117e00d6e7fba361b4f00c4ada",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/barrack_to_capr.tsv": "fd317c9a73cd51f34fad7e078e32ec5838054ac70dcebfcc7cda399bda33053f",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/capr_crosswalk.tsv": "c6ae106326b6bd525e7886efa84a9391261bf308dace3a3a7acc99e481e1d5a3",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/citation_ledger.tsv": "0184cc177a0c5c5c5502b14b1ca2eaf51bff1709ab8cbfd434a54929ad047439",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/cluster_adjudication_queue.md": "c6f52249c86586717ed2c5cbfccff586eb341f82119d96164e52e513c7cd0415",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/research_agenda.md": "cab2777262a7d351fe39f728121ef6447827132e431a23f7e95f64c43136c93a",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/rule_census.tsv": "2a6c60f86d8ea0c2618cc3dab07da7407cdc8479afdf5c3e4831afb7e36498e0",
+      "Germanic/docs/sound_changes/order_tests/chronology_cards/SC037-oe-compound-linking-syncope.md": "0174bb7940e579a6309f0c38c45b7ca2471975791d773b1faa002794ccc6c5d2",
+      "Germanic/docs/sound_changes/reader_facing/037-compound-linking-syncope.md": "d57d6464e6fb7c308aa68bb2503c5acf85f1e2ebe514e89138364275038346f6",
+      "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md": "a035909d528d3c03a0a723024d75eb1dae27174895fca20b5b7baa1dbc80e0a8",
+      "Germanic/docs/sound_changes/registry/current_sc_state.tsv": "88a4e85d47d473cbc827a00396d1d02908f9bfbe7bb700ad8258ba29af284015",
+      "Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv": "4c954b6c8a9e18617be5959df16cd437fab4d3270c936a9da35c2653a5a0d3ab",
+      "Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv": "371e52d7b5f8aafb9908d7f48ce248291f08a9d95183b485e401ebc527b78301",
+      "Germanic/docs/sound_changes/registry/sc_registry.tsv": "ce5d25870947cd250932e8c120d4b0af9d554f69ae0b5931b510a0cf37886ff8",
+      "Germanic/docs/sound_changes/registry/settled_verdicts.md": "a3f4bf85c15fac3755385b66b9c7643e4e84ada16bf72d268f7e3bea9fe04ad9",
+      "Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv": "e3a4ff099016dd1aa4dd099336d35c4445bf138a61d7c39c6e10b3f2eb331f6f",
+      "Germanic/docs/sound_changes/sound_change_inventory.tsv": "97ae6824cb95deed4f7d4f814d5384550efe9cd4bbad4f415b5864890b9e870c",
+      "Germanic/fsts/germanic.txt": "aff07d267ddb591d4b0d28ece6365b671f96751fa163c699496708550904c3ce",
+      "Germanic/tests/test_lexical_witness_input_gate.py": "2ef1e9acb5997a40a2b55a33023d08ef89231efdec0af71d7a4d6916b5c7ccf5",
+      "Germanic/tests/test_sc035_prosody.py": "7a027a0da9f5ab9d06c2fdc41567900defa98af1bf49c14d04531d88c37bdf3c",
+      "Germanic/tests/test_sc036_adjudication.py": "f3e1167f3cb6f0e3d07906245fec7975e57a4ad0f7301fd1e0fa7521fc6d71b2",
+      "Germanic/tests/test_sc037_adjudication.py": "4ca8d9c4997629fe48fd79865e37ae7d5149c794f7aedb6899277af513984cbb"
+    },
+    "identity_sha256": "207c47ab695f8fc4ece1e9e47f6a5a3861b3fd048c1aead5b7c6324088f3531f",
+    "recorded_at": "2026-11-06T09:14:11Z"
+  },
+  "commit_binding": "Parent and every changed Git blob SHA256 match the exact A/B/C tested identity; no untested SOURCE change.",
+  "fst_sha256": "aff07d267ddb591d4b0d28ece6365b671f96751fa163c699496708550904c3ce",
+  "corpus_sha256": "acecb163dffba5c20109ca4951074056a697854fa69cf1f52bc0f82142b39d62",
+  "selected_summary": {
+    "total_lexemes": 391,
+    "accepted": 391,
+    "rejected": 0,
+    "matched": 383,
+    "mismatched": 8,
+    "ambiguous_outputs": 0,
+    "outputs_sha256": "ed765acdd0ddd7417941234a65be386cb7e617967a22549cbee20ca9d5d288f6",
+    "lexical_outputs_sha256": "b7ce0eff790ef81d4c0bfb596a3aa62b5da720424755d6e62e8f5e4764fe447b",
+    "legacy_subset_count": 380,
+    "legacy_subset_sha256": "4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9"
+  },
+  "validation": [
+    {
+      "label": "sc037-focused",
+      "level": "A",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "pytest",
+        "-q",
+        "test_sc037_adjudication.py",
+        "test_sc035_prosody.py",
+        "test_sc036_adjudication.py",
+        "test_lexical_witness_input_gate.py",
+        "test_chapter_citation_ranges.py"
+      ],
+      "test_counts": null,
+      "receipt": "/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-focused-3b0db5108e0e4f52a04e9dbcb6d67f43.receipt.json",
+      "stdout_sha256": "be3cfea3b3dd898ed78c060f6ff591c1de1e16745e3382b7f95847c4c2c4b1ab",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc037-reader-semantics",
+      "level": "A",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "Germanic/tools/check_reader_facing_semantics.py"
+      ],
+      "test_counts": null,
+      "receipt": "/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-reader-semantics-439f01a853094e1289d3f222d162991c.receipt.json",
+      "stdout_sha256": "1d73737279db7fbcd897037af208137832e97a9050f7f0132a5b294e2e0158e0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc037-integrated-refresh",
+      "level": "B",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "Germanic/tools/adjudicate.py",
+        "--refresh"
+      ],
+      "test_counts": null,
+      "receipt": "/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-integrated-refresh-5e2df876543e4d19b226e836053fdfbe.receipt.json",
+      "stdout_sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc037-integrated-status",
+      "level": "B",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "Germanic/tools/adjudicate.py",
+        "--status"
+      ],
+      "test_counts": null,
+      "receipt": "/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-integrated-status-eb56c3b375f3493c9a17379eb24e1c75.receipt.json",
+      "stdout_sha256": "5f6d15d4b552853399383d3212d2379d18e2330b55c16dc571c02fea60b997a9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc037-strict-serial",
+      "level": "C",
+      "lane": "serial",
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "pytest",
+        "-q",
+        "--ignore=test_evidence_interface.py",
+        "--junitxml=/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-strict-serial-23e7f5c889794aa4b929371eb552b5d4.junit.xml",
+        "--validation-mode=full"
+      ],
+      "test_counts": {
+        "tests": 11558,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 5
+      },
+      "receipt": "/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-strict-serial-23e7f5c889794aa4b929371eb552b5d4.receipt.json",
+      "stdout_sha256": "d328fb4e5b3fcf05656109610e82eb4def2423bedb4240fa5c40b7220a543199",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc037-strict-exclusive",
+      "level": "C",
+      "lane": "exclusive",
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "pytest",
+        "-q",
+        "test_evidence_interface.py",
+        "--junitxml=/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-strict-exclusive-ee402abd5591493884e91a47ba5d71fc.junit.xml",
+        "--validation-mode=full"
+      ],
+      "test_counts": {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "receipt": "/Users/nathanhill/Code/capr/.capr-work/sc037-historical/validation-logs/sc037-strict-exclusive-ee402abd5591493884e91a47ba5d71fc.receipt.json",
+      "stdout_sha256": "192fd898177b47b0951a8819c779bbdd627a14d8681622508a92aa33ec307bf4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "certificate_archive_sha256": "8b5808b7103117f41f90511c4debd8118038e1d876d049b9cbbb9d91db3ac963",
+  "excluded": "Copyright-restricted holdings and private source images; no full book rendering.",
+  "next_sequential_sc": "SC039; SC040 already adjudicated, then SC041 and SC042."
+}
