@@ -1,0 +1,160 @@
+{
+  "scientific_commit": "8e07858fb4f3a03c7bb0582d1aff0fdbfd442c83",
+  "certified_parent": "f71a56e5fb6a5259320f469c70b355f3b816893f",
+  "tested_identity": {
+    "head_commit": "f71a56e5fb6a5259320f469c70b355f3b816893f",
+    "worktree_changes": {
+      "Germanic/docs/assembly/capr_book_draft_alpha_01.md": "06ee134cde4c252e79144dde952ae5e415069e5ca1748a5b30042895748241b3",
+      "Germanic/docs/book/index_verborum_audit.md": "7b261c3b1398e10dc369109abaa21026c9ccb5588842774d7a1584f34216b393",
+      "Germanic/docs/book/index_verborum_book_emissions.tsv": "06eb28007881c4fc6cdadc58cf98ba4c5def2eafaccec0c1681aae71ddd27f61",
+      "Germanic/docs/book/index_verborum_book_main.tsv": "06eb28007881c4fc6cdadc58cf98ba4c5def2eafaccec0c1681aae71ddd27f61",
+      "Germanic/docs/book/index_verborum_book_occurrences.tsv": "fe479c549a559f3d6eeef2feddf64c185733151c654a18286af549676ac920ce",
+      "Germanic/docs/book/index_verborum_book_print_unique.tsv": "5b402f8b04ec0b2c7f875af0e286d9ee04da8cc87ee51c6ef278f300b9d43530",
+      "Germanic/docs/book/index_verborum_emission_table.tsv": "50aba59745a38afb73280821608a724f6a6fc90c7c270746c394f99317887fd3",
+      "Germanic/docs/book/index_verborum_forms.tsv": "faf766054619f49f2b4e1a5ae4f55d1cd8d54e3ffe011f853446c20da8055dc7",
+      "Germanic/docs/book/index_verborum_print_audit.md": "e0a83460597aa64ada96c287757eacc0e6d18c2bacdfea36da32afebe3c1f4fa",
+      "Germanic/docs/book/index_verborum_print_main.tsv": "73f457f67afec2090914bc779a773e21bd62d29ee166af70d3f2d3fb5c8ea5e6",
+      "Germanic/docs/book/index_verborum_print_unique.tsv": "54378a7b60e894fbdab19d5e3e89b2d6779c49087c4556c911561f8323a73bb2",
+      "Germanic/docs/book/reader_facing_example_forms.tsv": "fd904a78c124e8c6e0e136f95e1be23abdde6726b03f2fa151051a5197e37905",
+      "Germanic/docs/sound_changes/audits/sc039-adjudication.md": "0328caf70105968c8dcebfd00f0e2e4cde9c29663187feac60be9ac77772f3dd",
+      "Germanic/docs/sound_changes/book_dossiers/039-041-medial-lowering-and-final-loss-bridge.book-dossier.md": "2afcee3c9d0a2319cbcc2361e284132d0947dcc6589389f5848732c035986491",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/barrack_to_capr.tsv": "3c12a9b8163b3d4e725a45429f6ace2108e3fc3645eac0754be71dbce941125b",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/capr_crosswalk.tsv": "622558e3fbc709d5c9a3cab76c572b02d4e32accb413ff9803ad25125b4ec89e",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/citation_ledger.tsv": "e994d80e2bb9caf301e8d16d7ad1c85d6ed7f73e816fb77f12c4a6994bd99a4f",
+      "Germanic/docs/sound_changes/literature_dossiers/barrack_1975/research_agenda.md": "7fd177a7b6fb610b8dbd526e33cade2e3a07bfb155a8af2703f512f564f2215e",
+      "Germanic/docs/sound_changes/order_tests/chronology_cards/SC039-oe-wi-combinative-u-umlaut.md": "8a959af104b196245d380387c7da529e799960f0c8a199b11a81ac9725dce91e",
+      "Germanic/docs/sound_changes/reader_facing/039-combinative-u-umlaut.md": "faba216017fff75c72c4235ef31270a110e11aad44dae6d2b3521843a8f5c031",
+      "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md": "c3a5759415c13150a951f1090daf54d04b82f318824bc1f42aff009d0dc6c709",
+      "Germanic/docs/sound_changes/registry/current_sc_state.tsv": "7ddca6a6f5bedca30ceea0228e1d57142d439b12546188560cae918fd6455d7d",
+      "Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv": "36384edfbf9a1d7c22611f246379891ec33e1bee5b7836dd5890ccd607c9ef23",
+      "Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv": "97fa6eac04c0fe51ea898bc7f2a5a54c711d9a2a8b8f10d5ea2d85cd2cd642f4",
+      "Germanic/docs/sound_changes/registry/sc_registry.tsv": "a7a4b68dbc1d798ba08d908128346b5fc64abec2354ffff74a591fc0fc19ac71",
+      "Germanic/docs/sound_changes/registry/settled_verdicts.md": "2ed76a67311b1d290eff2d59b24ae09b5e008dbc35c672e42fc9a1ec740a3b95",
+      "Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv": "122a04b0bc3ba03397345c34552e0d15398305cc9c2f1407cb36a6bd8bddf029",
+      "Germanic/docs/sound_changes/sound_change_inventory.tsv": "5d7a81a862569c0e3e0b8039617800134872df4a4cac9b6f691e01ba4b8a94b1",
+      "Germanic/tests/test_sc039_adjudication.py": "8d7ffbe294f345ed5cd70a06122ab07ca206ce3d7947d68078b4953c6d9a4e7b"
+    },
+    "identity_sha256": "f00be76931c171f6a077fb2e722f3e112a499ac25186c15e37e791e5afe2a8c2",
+    "recorded_at": "2026-11-06T10:05:13Z"
+  },
+  "commit_binding": "Parent and every changed blob SHA256 match the exact tested A/B/C identity.",
+  "scientific_verdict": "DEFER; required WS know adequacy control is not passing. No executable correction adopted.",
+  "preserved": "Entire FST,391 selected inputs/outputs,383 matches/eight inherited mismatches, approved PDF and accepted SC040.",
+  "source_fst_sha256": "aff07d267ddb591d4b0d28ece6365b671f96751fa163c699496708550904c3ce",
+  "validation": [
+    {
+      "label": "sc039-focused",
+      "level": "A",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "pytest",
+        "-q",
+        "test_sc039_adjudication.py",
+        "test_sc037_adjudication.py",
+        "test_chapter_citation_ranges.py"
+      ],
+      "test_counts": null,
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-focused-3636921e903b4fbaa2fd4ba77325ec14.receipt.json",
+      "junit_sha256": null,
+      "stdout_sha256": "7f3dea0dc480daf0c04731157cff59da8f00e5fbdf9e45a3ebe92b0798839bed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc039-reader-semantics",
+      "level": "A",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "Germanic/tools/check_reader_facing_semantics.py"
+      ],
+      "test_counts": null,
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-reader-semantics-b2bbf14544ce4ffc9a72518e7afb9916.receipt.json",
+      "junit_sha256": null,
+      "stdout_sha256": "1d73737279db7fbcd897037af208137832e97a9050f7f0132a5b294e2e0158e0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc039-integrated-refresh",
+      "level": "B",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "Germanic/tools/adjudicate.py",
+        "--refresh"
+      ],
+      "test_counts": null,
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-integrated-refresh-44cfb2745a3746b7bebea999965724d9.receipt.json",
+      "junit_sha256": null,
+      "stdout_sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc039-integrated-status",
+      "level": "B",
+      "lane": null,
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "Germanic/tools/adjudicate.py",
+        "--status"
+      ],
+      "test_counts": null,
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-integrated-status-bad6e9abf2124fb6962c4c1a327a5302.receipt.json",
+      "junit_sha256": null,
+      "stdout_sha256": "27fc054e7306df4cc9fe45a613db8e8ef39e578686e470e3897405b0f60e08d9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc039-strict-serial",
+      "level": "C",
+      "lane": "serial",
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "pytest",
+        "-q",
+        "--ignore=test_evidence_interface.py",
+        "--junitxml=/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-strict-serial-a3fe6608ec8d495494cfe49197a2607a.junit.xml",
+        "--validation-mode=full"
+      ],
+      "test_counts": {
+        "tests": 11561,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 5
+      },
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-strict-serial-a3fe6608ec8d495494cfe49197a2607a.receipt.json",
+      "junit_sha256": "5337d95f6a087a6bf610b86f89c91f79a934264c6884cc350295c431f594bea5",
+      "stdout_sha256": "bbdd8c4aed2c106910b2b53827c7596387e475a45b53cb929589edd3e581b2d6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc039-strict-exclusive",
+      "level": "C",
+      "lane": "exclusive",
+      "argv": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "pytest",
+        "-q",
+        "test_evidence_interface.py",
+        "--junitxml=/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-strict-exclusive-7eb17abc9fa84f7793427a8aefe32e16.junit.xml",
+        "--validation-mode=full"
+      ],
+      "test_counts": {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/sc039-historical/validation-logs/sc039-strict-exclusive-7eb17abc9fa84f7793427a8aefe32e16.receipt.json",
+      "junit_sha256": "6458a92b555ce26832e3808a926f035ebf3db9184dc27762cd95254298f1005b",
+      "stdout_sha256": "519e78a4f4321022e2730df91453f9e28c26b5eb79f2db86920ee57722705551",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "archive_sha256": "3054000f712909ab0ec767be2366818ae85136801416e48cb7ccb592f834d5b0",
+  "excluded": "Scholarly PDFs and private source images. No full book render.",
+  "next_sequential_sc": "SC041; SC040 already closed; then SC042."
+}
