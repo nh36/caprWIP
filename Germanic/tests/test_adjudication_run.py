@@ -721,6 +721,23 @@ class ScholarlyPropagationTests(RunHarness):
                 self.assertEqual(ag.propagation_path_kind(
                     self.sc_dir / relative, generated=set()), "SOURCE")
 
+    def test_registered_barrack_tables_do_not_admit_unknown_tables_or_measurements(self):
+        for name in ("rule_census.tsv", "capr_crosswalk.tsv",
+                     "barrack_to_capr.tsv", "citation_ledger.tsv"):
+            self.assertEqual(ag.propagation_path_kind(
+                self.sc_dir / "literature_dossiers/barrack_1975" / name,
+                generated=set()), "SOURCE")
+        self.assertEqual(ag.propagation_path_kind(
+            self.sc_dir / "order_tests/chronology_cards/SC037-current.md",
+            generated=set()), "SOURCE")
+        for relative in ("literature_dossiers/barrack_1975/unowned.tsv",
+                         "order_tests/chronology_cards/measurements.tsv"):
+            self.assertEqual(ag.propagation_path_kind(
+                self.sc_dir / relative, generated=set()), "UNKNOWN")
+        self.assertNotEqual(ag.propagation_path_kind(
+            self.sc_dir / "cascade_baseline/cascade_baseline_summary.json",
+            generated=set()), "SOURCE")
+
 
 class PropagationIntegrationTests(RunHarness):
 
