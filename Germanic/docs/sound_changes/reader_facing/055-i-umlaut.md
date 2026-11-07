@@ -4,17 +4,18 @@
 
 ```foma
 define OEIUmlautFronting [
-    {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*o} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ō} -> {*ē} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*u} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*á} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*é} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ó} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ú} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+    {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ō} -> {*ē} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ù} -> {*ỳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*u} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ū} -> {*ȳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*á} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*é} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ó} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ú} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger
 ];
 ```
 
@@ -34,6 +35,26 @@ left an earlier raising to this late rule; sheath represents the later
 bundle earlier strands sheath and diphthongizes the model's still-unraised
 gift vowel. Neither failure overturns the independently supported ordinary
 palatal-diphthongization-before-mutation account.
+
+Short medial *u* can undergo mutation while transmitting it to the
+preceding stressed monophthong. Hogg explicitly describes this iterative
+development, and Campbell calls it double umlaut. The fronting context
+therefore includes intervening plain medial *u*, not a secondary-stressed
+*ù*. The latter keeps its stress as the internal carrier *ỳ* until high
+syncope has finished. The ordinary raising and diphthong components keep
+their existing contexts; newly fronted *æ* across a mutation-produced
+*y* is not indiscriminately raised again
+[@HoggGrammar2011, pp. 120--121, §5.76, p. 219, §6.10;
+@Campbell1959, pp. 80--81, §203].
+
+```foma
+define EnglishIUmlautThroughU [EnglishIUmlautIntervening [{*u} EnglishIUmlautIntervening]*];
+```
+
+The independent outmost/furthest reconstruction and the separate
+nonhigh-vowel and subordinate-stress controls are discussed with
+[SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope). This coupled correction
+preserves the previously selected mutation and breaking histories.
 
 ## SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 

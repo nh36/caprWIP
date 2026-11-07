@@ -9091,7 +9091,7 @@ English Proto Input: *érθakùnðǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *érθkùndǭ<br>OE Strip Secondary Stress: *érθkundǭ<br>OE Breaking: *éorθkundǭ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
+| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *érθkùndǭ<br>OE Breaking: *éorθkùndǭ<br>OE High Link Syncope: *éorθkundǭ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
 
 
 

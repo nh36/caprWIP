@@ -2,6 +2,12 @@
 
 ## Identity
 
+The historical-executable follow-up at
+[SC037 intervention](sc037-historical-executable-intervention.md) supersedes
+the current high-vowel serialization and the later recorded grammar/breaking
+failures. The experiments and decisions below remain historical evidence,
+not the current implementation specification.
+
 - **SC id:** SC037
 - **Executable identifier:** `OECompoundLinkingSyncope`; not a stage claim.
 - **Date / branch / base commit:** 2026-11-06 / `update` /

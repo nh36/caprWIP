@@ -150,8 +150,60 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
 
     def test_sc037_reader_passes_without_checker_driven_prose_edits(self):
         reader = FILTER.parents[1] / "docs/sound_changes/reader_facing/037-compound-linking-syncope.md"
-        result = self.validate(reader.read_text(encoding="utf-8"))
+        target = reader.with_name("115-post-umlaut-high-syncope.md")
+        result = self.validate(reader.read_text(encoding="utf-8") + "\n\n" + target.read_text(encoding="utf-8"))
         self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_stage_reconstructions_share_only_their_explicit_following_gloss(self):
+        cases = (
+            ("Ringe and Taylor reconstruct pre-Old-English [ūtumist]{.recon}, "
+             "then [ȳtymist]{.recon}, and [*ȳtmest*]{.iv} 'furthest'.",
+             "Ringe and Taylor reconstruct pre-Old-English"),
+            ("Hogg's [gaduling]{.recon} gives [*gædeling*]{.iv} 'companion'.", "gives"),
+            ("The bailiff reconstruction provides [skuldihātijā]{.recon}, then "
+             "[sċyldihǣtjā]{.recon}, with [*sċyldhǣta*]{.iv} 'bailiff'.",
+             "The bailiff reconstruction provides"),
+            ("The inherited [wiđuwōn]{.recon} and [*widuwe*]{.iv} 'widow' agree.",
+             "The inherited"),
+        )
+        for text, context in cases:
+            with self.subTest(text=text):
+                self.assertEqual(self.validate(text).returncode, 0)
+                for wrong in (
+                    text.replace(context, "Another word is"),
+                    text.replace(".iv", ".pred"),
+                    text.replace(" 'furthest'", "").replace(" 'companion'", "")
+                        .replace(" 'bailiff'", "").replace(" 'widow'", ""),
+                    "# Word-by-word derivations\n\n" + text,
+                ):
+                    self.assertEqual(self.validate(wrong).returncode, 2, wrong)
+
+    def test_stage_reference_requires_actual_target_and_glossed_lexical_anchor(self):
+        mention = (
+            "The independent *ūtumist* history is discussed with "
+            "[SC115](#rule-OEHighLinkSyncope).\n\n"
+        )
+        target = "## The high component {#rule-OEHighLinkSyncope}\n\n*ȳtmest* 'furthest'."
+        self.assertEqual(self.validate(mention + target).returncode, 0)
+        for wrong in (
+            mention,
+            mention.replace("The independent", "An unrelated") + target,
+            mention.replace("#rule-OEHighLinkSyncope", "#wrong") + target,
+            mention + target.replace(" {#rule-OEHighLinkSyncope}", ""),
+            mention + target.replace(" 'furthest'", ""),
+            mention + target.replace("*ȳtmest*", "[ȳtmest]{.pred}"),
+            mention + "# Word-by-word derivations\n\n" + target,
+        ):
+            self.assertEqual(self.validate(wrong).returncode, 2, wrong)
+
+    def test_widow_variant_requires_prior_gloss_and_exact_context(self):
+        anchor = "*widuwe* 'widow' is recorded.\n\n"
+        context = "The selected root-vowel variant [*wuduwe*]{.iv} retains the vowel."
+        self.assertEqual(self.validate(anchor + context).returncode, 0)
+        for wrong in (context, context + "\n\n" + anchor,
+                      anchor + context.replace("selected root-vowel variant", "other form"),
+                      "# Word-by-word derivations\n\n" + anchor + context):
+            self.assertEqual(self.validate(wrong).returncode, 2, wrong)
 
     def test_sc040_projections_require_the_prior_lemma_and_exact_context(self):
         context = (

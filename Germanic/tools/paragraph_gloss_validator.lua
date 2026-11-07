@@ -30,6 +30,8 @@ local utils  = pandoc.utils
 local failures_p1 = {}
 local failures_p2 = {}
 local established_glosses = {}
+local reference_glosses = {}
+local reference_targets = {}
 
 local paras_p1     = 0
 local paras_p2_total = 0
@@ -144,6 +146,28 @@ local function form_from_span(span)
     if ch.t == 'Emph' then return utils.stringify(ch) end
   end
   return utils.stringify(span)
+end
+
+local function glosses_in(content)
+  local found = {}
+  for i, inline in ipairs(content) do
+    local form = inline.t == 'Emph' and utils.stringify(inline)
+      or inline.t == 'Span' and form_from_span(inline)
+    if inline.t == 'Span' and (span_has_class(inline, 'pred')
+        or span_has_class(inline, 'ex')
+        or (inline.attributes['form_role'] or inline.attributes['role']) == 'regular_output') then
+      form = nil
+    end
+    if form and has_gloss_after(content, i) then found[normalize(form)] = true end
+  end
+  return found
+end
+
+local function has_reference(content, target)
+  for _, inline in ipairs(content) do
+    if inline.t == 'Link' and inline.target == target then return true end
+  end
+  return false
 end
 
 -- Count Unicode codepoints in a UTF-8 string (Lua's # operator counts bytes).
@@ -287,6 +311,31 @@ end
 -- head (Campbell1959, pp. 155–156). This is a contextual shared-gloss allowance,
 -- not spelling normalization or permission to omit the paragraph's first gloss.
 local SHARED_GLOSS_VARIANTS = {
+  ["ūtumist"] = {
+    anchor = "ȳtmest", context = "Ringe and Taylor reconstruct pre-Old-English",
+    following = true,
+    reference = {context = "The independent ūtumist history",
+                 target = "#rule-OEHighLinkSyncope"},
+  },
+  ["ȳtymist"] = {
+    anchor = "ȳtmest", context = "Ringe and Taylor reconstruct pre-Old-English",
+    following = true,
+  },
+  ["gaduling"] = {
+    anchor = "gædeling", context = "gaduling gives", following = true,
+  },
+  ["skuldihātijā"] = {
+    anchor = "sċyldhǣta", context = "The bailiff reconstruction provides", following = true,
+  },
+  ["sċyldihǣtjā"] = {
+    anchor = "sċyldhǣta", context = "The bailiff reconstruction provides", following = true,
+  },
+  ["wiđuwōn"] = {
+    anchor = "widuwe", context = "The inherited wiđuwōn", following = true,
+  },
+  ["wuduwe"] = {
+    anchor = "widuwe", context = "The selected root-vowel variant", prior = true,
+  },
   ["sali-warđaz"] = {
     anchor = "seleweard", context = "Orel prints",
   },
@@ -417,6 +466,7 @@ local function check_para(el, is_p2, in_prose_section)
 
   local seen = {}
   local glossed = {}
+  local following_glosses = glosses_in(el.content)
   local paragraph = utils.stringify(el):gsub("%s+", " ")
 
   for i, inline in ipairs(el.content) do
@@ -538,8 +588,16 @@ local function check_para(el, is_p2, in_prose_section)
       local variant = SHARED_GLOSS_VARIANTS[norm]
       local shared_gloss = variant and is_p2 == (variant.part2 or false)
         and (glossed[variant.anchor]
-          or (variant.prior and established_glosses[variant.anchor]))
+          or (variant.prior and established_glosses[variant.anchor])
+          or (variant.following and following_glosses[variant.anchor]))
         and paragraph:find(variant.context, 1, true)
+      if variant and variant.reference and not is_p2 then
+        local ref = variant.reference
+        shared_gloss = shared_gloss or (reference_glosses[variant.anchor]
+          and reference_targets[ref.target]
+          and paragraph:find(ref.context, 1, true)
+          and has_reference(el.content, ref.target))
+      end
       local repeated_gloss = false
       local personal_name = not is_p2 and SC037_PERSONAL_NAMES[norm]
         and paragraph:find("The older names", 1, true)
@@ -634,6 +692,19 @@ end
 -- ── entry point ───────────────────────────────────────────────────────────────
 
 function Pandoc(doc)
+  local part1 = true
+  for _, block in ipairs(doc.blocks) do
+    if block.t == 'Header' then
+      local title = utils.stringify(block)
+      if title == 'Word-by-word derivations' or title == 'References'
+          or title == 'Index verborum' then part1 = false end
+      if part1 and block.identifier ~= '' then
+        reference_targets['#' .. block.identifier] = true
+      end
+    elseif part1 and block.t == 'Para' then
+      for form in pairs(glosses_in(block.content)) do reference_glosses[form] = true end
+    end
+  end
   process_blocks(doc.blocks)
 
   local total = #failures_p1 + #failures_p2

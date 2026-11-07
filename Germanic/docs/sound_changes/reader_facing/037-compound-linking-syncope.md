@@ -66,27 +66,26 @@ high linker has to be invented; the unresolved premise is formation
 chronology [@Orel2003, pp. 315, 448; @Kroonen2013, p. 424;
 @ClarkHall1960, p. 260, Beowulf 667].
 
-Correctly encoded versions of these two hypotheses are not accepted by
-the current canonical input grammar. An explicitly hypothetical
-comparison starting after that grammar can test the downstream rules,
-but cannot establish a canonical whole-word derivation, an independently
-licensed historical-stage witness, or inheritance. Such comparisons are
-kept separate from the historical admission decision; the current
-grammar is not changed to make the candidate succeed.
-For both printed nominative hypotheses, the retained formulation
-preserves the linker but finishes as [seleoweard]{.pred}; the former
-formulation deletes it and finishes as [sealweard]{.pred}.
-The difference survives, but neither result supplies the attested target.
-These are conditional model outputs, not additional Old English
-attestations or a successful lexical regression.
+The canonical grammar now recognizes inherited high-vowel first members
+and the second member's dental cluster without sacrificing older accepted
+analyses. Both printed hypotheses, and the ordinary a-stem accusative
+\emph{*sáli-wàrðą}, regularly produce *seleweard*. Previously the
+retained plain medial *i* incorrectly underwent breaking, producing
+[seleoweard]{.pred}. Restoring the former early high-vowel deletion instead
+produces [sealweard]{.pred}; removing the later weight condition produces
+[selweard]{.pred}. These are three distinct wrong analyses, not three
+attestations. Correct output establishes a conditional derivation, not the
+date or inheritance of the compound.
 
-No new lexical selection is made on that incomplete basis. The selected
-high-vowel domain remains untested by an independently established
-complete compound history. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
+No new lexical selection is made without that independent formation
+premise. Complete selected weight controls and independently reconstructed
+later-stage controls now test the high-vowel core described under
+[SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope); they do not supply a
+complete inherited-compound discriminator for the former early rule. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
 remain genuine selected *a*-deletion witnesses, not evidence for the
-new high-vowel restriction. The executable correction has component
-controls, but that is a different evidential claim from full lexical
-validation.
+new high-vowel restriction. The independent *ūtumist* history also demonstrates mutation before
+high-vowel loss, not merely successful component composition
+[@RingeTaylor2014, p. 267].
 
 Barrack's weak-vowel fronting and quality rules 333a/b and his rounding
 rule 335 belong to this wider discussion, but are not equivalent
@@ -102,9 +101,14 @@ change and licenses deletion of the linking vowel, giving
 \emph{*régnbògô}; ordinary accent stripping then gives
 \emph{*régnbogô}. The full account and its reconstruction qualifications
 belong to [SC017 PNWGmcULowering](#rule-PNWGmcULowering), not to late
-unstressed lowering. The only boundary the lexical evidence supplies
-is the immediately following technical stress-stripping stage, which is not a
-sound change.
+unstressed lowering. Its immediate annotation dependency does not date historical nonhigh
+syncope. The handbooks place ordinary nonhigh syncope after breaking, and
+high-vowel loss normally after mutation. The early *a* fragment is retained
+as a selected-input holding proxy; the later general nonhigh process belongs
+to [SC114 OENonHighSyn](#rule-OENonHighSyn), and the high-vowel component
+follows mutation [@SieversBrunner1965, pp. 137--138, §167 and notes;
+@HoggGrammar2011, pp. 220--224, §§6.14--6.20;
+@RingeTaylor2014, pp. 266--267].
 
 ## SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope}
 
@@ -112,28 +116,16 @@ sound change.
 define OECompoundLinkingSyncope Ctx([
     {*a} -> 0
         || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
-] .o. [
-    [{*i}|{*u}] -> 0
-        || [
-            [PGmcStarAcuteVowel & EnglishStarLongVowel] OEAnyConsonant+ |
-            [PGmcStarAcuteVowel & EnglishStarShortVowel] OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant+ PGmcStarGraveVowel
 ]);
 ```
 
-The two clauses keep nonhigh deletion separate from high-vowel loss.
-For the latter, the represented heavy patterns are a long primary vowel
-followed by consonant(s), or a short primary vowel followed by at least
-two consonants. The annotated stress inventory and consonant strings
-are a bounded executable proxy, not a complete syllabification of all
-historical compounds. In particular, the right-hand consonant sequence
-does not independently guarantee an open linking syllable, and not every
-historical long or diphthongal stressed vowel has a corresponding accent
-token. The cited handbooks' historical conditions remain distinct from
-those representational limits. The retained executable fragment describes
-the heavy-root pattern, not a completed explanation of the older
-light-root losses. Neither its successful component controls nor the
-conditional compound hypotheses constitute full lexical certification.
+Only the *a* holding fragment remains at this early executable site.
+The high-vowel component has a separate postmutation site and a bounded
+open-medial domain. Neither serialization constitutes a completed
+explanation of older light-root contractions. Russom's metrical review
+also challenges obligatory positional destressing: modern stress marks
+are modelling annotations, not independently established historical
+prosody for every name [@Russom2001, pp. 39--64].
 
 The *reġnboga* test exposes an annotation dependency rather than an
 independently dated historical sound-change boundary. If the grave is

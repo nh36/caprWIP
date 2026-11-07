@@ -602,6 +602,29 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
                and not row["variety"] for row in sc037_hock)
     added = [row for row in added if row not in sc037_hock]
+    intervention_keys = {
+        ("preoe", "ūtumist", "source_protoform"),
+        ("preoe", "ȳtymist", "source_protoform"),
+        ("oe", "ȳtmest", "evidence_form"),
+        ("preoe", "skuldihātijā", "source_protoform"),
+        ("preoe", "sċyldihǣtjā", "source_protoform"),
+        ("oe", "sċyldhǣta", "comparison_form"),
+        ("pgmc", "wiđuwōn", "source_protoform"),
+        ("oe", "widuwe", "comparison_form"),
+        ("oe", "wuduwe", "evidence_form"),
+        ("preoe", "gaduling", "source_protoform"),
+        ("oe", "gædeling", "evidence_form"),
+    }
+    intervention = [row for row in added if
+                    row["source_ref"] == "Germanic/docs/sound_changes/reader_facing/"
+                    "reader_facing_local_section_20.md" and
+                    (row["language"], row["form"], row["form_role"]) in intervention_keys]
+    assert len(intervention) == 11
+    assert {(row["language"], row["form"], row["form_role"])
+            for row in intervention} == intervention_keys
+    assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
+               and not row["variety"] for row in intervention)
+    added = [row for row in added if row not in intervention]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

@@ -95,6 +95,7 @@ OEHighVowelApocope [no-change]: *n*ǣ*d*r*ǭ
 NWGmcInStemNLoss [no-change]: *n*ǣ*d*r*ǭ
 OEMedialSyncope [no-change]: *n*ǣ*d*r*ǭ
 OELAdjacentSyncope [no-change]: *n*ǣ*d*r*ǭ
+OEHighLinkSyncope [no-change]: *n*ǣ*d*r*ǭ
 OEDentalAssimilation [no-change]: *n*ǣ*d*r*ǭ
 OEPreconsonantalDegemination [no-change]: *n*ǣ*d*r*ǭ
 OEEarlyOShortening [no-change]: *n*ǣ*d*r*ǭ
@@ -227,6 +228,7 @@ OEHighVowelApocope [no-change]: *b*a*k*ą*n
 NWGmcInStemNLoss [no-change]: *b*a*k*ą*n
 OEMedialSyncope [no-change]: *b*a*k*ą*n
 OELAdjacentSyncope [no-change]: *b*a*k*ą*n
+OEHighLinkSyncope [no-change]: *b*a*k*ą*n
 OEDentalAssimilation [no-change]: *b*a*k*ą*n
 OEPreconsonantalDegemination [no-change]: *b*a*k*ą*n
 OEEarlyOShortening [no-change]: *b*a*k*ą*n
@@ -358,6 +360,7 @@ OEHighVowelApocope [no-change]: *b*éo*r*g
 NWGmcInStemNLoss [no-change]: *b*éo*r*g
 OEMedialSyncope [no-change]: *b*éo*r*g
 OELAdjacentSyncope [no-change]: *b*éo*r*g
+OEHighLinkSyncope [no-change]: *b*éo*r*g
 OEDentalAssimilation [no-change]: *b*éo*r*g
 OEPreconsonantalDegemination [no-change]: *b*éo*r*g
 OEEarlyOShortening [no-change]: *b*éo*r*g
@@ -489,6 +492,7 @@ OEHighVowelApocope [no-change]: *b*æ*s*t
 NWGmcInStemNLoss [no-change]: *b*æ*s*t
 OEMedialSyncope [no-change]: *b*æ*s*t
 OELAdjacentSyncope [no-change]: *b*æ*s*t
+OEHighLinkSyncope [no-change]: *b*æ*s*t
 OEDentalAssimilation [no-change]: *b*æ*s*t
 OEPreconsonantalDegemination [no-change]: *b*æ*s*t
 OEEarlyOShortening [no-change]: *b*æ*s*t
@@ -620,6 +624,7 @@ OEHighVowelApocope [no-change]: *b*æ*θ
 NWGmcInStemNLoss [no-change]: *b*æ*θ
 OEMedialSyncope [no-change]: *b*æ*θ
 OELAdjacentSyncope [no-change]: *b*æ*θ
+OEHighLinkSyncope [no-change]: *b*æ*θ
 OEDentalAssimilation [no-change]: *b*æ*θ
 OEPreconsonantalDegemination [no-change]: *b*æ*θ
 OEEarlyOShortening [no-change]: *b*æ*θ
@@ -751,6 +756,7 @@ OEHighVowelApocope [no-change]: *b*ea*r*d
 NWGmcInStemNLoss [no-change]: *b*ea*r*d
 OEMedialSyncope [no-change]: *b*ea*r*d
 OELAdjacentSyncope [no-change]: *b*ea*r*d
+OEHighLinkSyncope [no-change]: *b*ea*r*d
 OEDentalAssimilation [no-change]: *b*ea*r*d
 OEPreconsonantalDegemination [no-change]: *b*ea*r*d
 OEEarlyOShortening [no-change]: *b*ea*r*d
@@ -882,6 +888,7 @@ OEHighVowelApocope: *b*é*β*r
 NWGmcInStemNLoss [no-change]: *b*é*β*r
 OEMedialSyncope [no-change]: *b*é*β*r
 OELAdjacentSyncope [no-change]: *b*é*β*r
+OEHighLinkSyncope [no-change]: *b*é*β*r
 OEDentalAssimilation [no-change]: *b*é*β*r
 OEPreconsonantalDegemination [no-change]: *b*é*β*r
 OEEarlyOShortening [no-change]: *b*é*β*r
@@ -1014,6 +1021,7 @@ OEHighVowelApocope: *b*ō*k
 NWGmcInStemNLoss [no-change]: *b*ō*k
 OEMedialSyncope [no-change]: *b*ō*k
 OELAdjacentSyncope [no-change]: *b*ō*k
+OEHighLinkSyncope [no-change]: *b*ō*k
 OEDentalAssimilation [no-change]: *b*ō*k
 OEPreconsonantalDegemination [no-change]: *b*ō*k
 OEEarlyOShortening [no-change]: *b*ō*k
@@ -1146,6 +1154,7 @@ OEHighVowelApocope [no-change]: *b*i*ʝ*í*n*n*ą*n
 NWGmcInStemNLoss [no-change]: *b*i*ʝ*í*n*n*ą*n
 OEMedialSyncope [no-change]: *b*i*ʝ*í*n*n*ą*n
 OELAdjacentSyncope [no-change]: *b*i*ʝ*í*n*n*ą*n
+OEHighLinkSyncope [no-change]: *b*i*ʝ*í*n*n*ą*n
 OEDentalAssimilation [no-change]: *b*i*ʝ*í*n*n*ą*n
 OEPreconsonantalDegemination [no-change]: *b*i*ʝ*í*n*n*ą*n
 OEEarlyOShortening [no-change]: *b*i*ʝ*í*n*n*ą*n
@@ -1277,6 +1286,7 @@ OEHighVowelApocope [no-change]: *ʝ*i*l*īe*β*j*ą*n
 NWGmcInStemNLoss [no-change]: *ʝ*i*l*īe*β*j*ą*n
 OEMedialSyncope [no-change]: *ʝ*i*l*īe*β*j*ą*n
 OELAdjacentSyncope [no-change]: *ʝ*i*l*īe*β*j*ą*n
+OEHighLinkSyncope [no-change]: *ʝ*i*l*īe*β*j*ą*n
 OEDentalAssimilation [no-change]: *ʝ*i*l*īe*β*j*ą*n
 OEPreconsonantalDegemination [no-change]: *ʝ*i*l*īe*β*j*ą*n
 OEEarlyOShortening [no-change]: *ʝ*i*l*īe*β*j*ą*n
@@ -1408,6 +1418,7 @@ OEHighVowelApocope: *b*ie*l*ʝ
 NWGmcInStemNLoss [no-change]: *b*ie*l*ʝ
 OEMedialSyncope [no-change]: *b*ie*l*ʝ
 OELAdjacentSyncope [no-change]: *b*ie*l*ʝ
+OEHighLinkSyncope [no-change]: *b*ie*l*ʝ
 OEDentalAssimilation [no-change]: *b*ie*l*ʝ
 OEPreconsonantalDegemination [no-change]: *b*ie*l*ʝ
 OEEarlyOShortening [no-change]: *b*ie*l*ʝ
@@ -1540,6 +1551,7 @@ OEHighVowelApocope [no-change]: *l*ǣ*w*j*ą*n
 NWGmcInStemNLoss [no-change]: *l*ǣ*w*j*ą*n
 OEMedialSyncope [no-change]: *l*ǣ*w*j*ą*n
 OELAdjacentSyncope [no-change]: *l*ǣ*w*j*ą*n
+OEHighLinkSyncope [no-change]: *l*ǣ*w*j*ą*n
 OEDentalAssimilation [no-change]: *l*ǣ*w*j*ą*n
 OEPreconsonantalDegemination [no-change]: *l*ǣ*w*j*ą*n
 OEEarlyOShortening [no-change]: *l*ǣ*w*j*ą*n
@@ -1672,6 +1684,7 @@ OEHighVowelApocope: *b*ǣ*r
 NWGmcInStemNLoss [no-change]: *b*ǣ*r
 OEMedialSyncope [no-change]: *b*ǣ*r
 OELAdjacentSyncope [no-change]: *b*ǣ*r
+OEHighLinkSyncope [no-change]: *b*ǣ*r
 OEDentalAssimilation [no-change]: *b*ǣ*r
 OEPreconsonantalDegemination [no-change]: *b*ǣ*r
 OEEarlyOShortening [no-change]: *b*ǣ*r
@@ -1803,6 +1816,7 @@ OEHighVowelApocope [no-change]: *b*í*n*d*ą*n
 NWGmcInStemNLoss [no-change]: *b*í*n*d*ą*n
 OEMedialSyncope [no-change]: *b*í*n*d*ą*n
 OELAdjacentSyncope [no-change]: *b*í*n*d*ą*n
+OEHighLinkSyncope [no-change]: *b*í*n*d*ą*n
 OEDentalAssimilation [no-change]: *b*í*n*d*ą*n
 OEPreconsonantalDegemination [no-change]: *b*í*n*d*ą*n
 OEEarlyOShortening [no-change]: *b*í*n*d*ą*n
@@ -1935,6 +1949,7 @@ OEHighVowelApocope: *b*y*r*d
 NWGmcInStemNLoss [no-change]: *b*y*r*d
 OEMedialSyncope [no-change]: *b*y*r*d
 OELAdjacentSyncope [no-change]: *b*y*r*d
+OEHighLinkSyncope [no-change]: *b*y*r*d
 OEDentalAssimilation [no-change]: *b*y*r*d
 OEPreconsonantalDegemination [no-change]: *b*y*r*d
 OEEarlyOShortening [no-change]: *b*y*r*d
@@ -2066,6 +2081,7 @@ OEHighVowelApocope [no-change]: *b*l*ō*d
 NWGmcInStemNLoss [no-change]: *b*l*ō*d
 OEMedialSyncope [no-change]: *b*l*ō*d
 OELAdjacentSyncope [no-change]: *b*l*ō*d
+OEHighLinkSyncope [no-change]: *b*l*ō*d
 OEDentalAssimilation [no-change]: *b*l*ō*d
 OEPreconsonantalDegemination [no-change]: *b*l*ō*d
 OEEarlyOShortening [no-change]: *b*l*ō*d
@@ -2197,6 +2213,7 @@ OEHighVowelApocope [no-change]: *b*ó*r*d
 NWGmcInStemNLoss [no-change]: *b*ó*r*d
 OEMedialSyncope [no-change]: *b*ó*r*d
 OELAdjacentSyncope [no-change]: *b*ó*r*d
+OEHighLinkSyncope [no-change]: *b*ó*r*d
 OEDentalAssimilation [no-change]: *b*ó*r*d
 OEPreconsonantalDegemination [no-change]: *b*ó*r*d
 OEEarlyOShortening [no-change]: *b*ó*r*d
@@ -2329,6 +2346,7 @@ OEHighVowelApocope [no-change]: *b*ā*n
 NWGmcInStemNLoss [no-change]: *b*ā*n
 OEMedialSyncope [no-change]: *b*ā*n
 OELAdjacentSyncope [no-change]: *b*ā*n
+OEHighLinkSyncope [no-change]: *b*ā*n
 OEDentalAssimilation [no-change]: *b*ā*n
 OEPreconsonantalDegemination [no-change]: *b*ā*n
 OEEarlyOShortening [no-change]: *b*ā*n
@@ -2460,6 +2478,7 @@ OEHighVowelApocope [no-change]: *b*ō*k
 NWGmcInStemNLoss [no-change]: *b*ō*k
 OEMedialSyncope [no-change]: *b*ō*k
 OELAdjacentSyncope [no-change]: *b*ō*k
+OEHighLinkSyncope [no-change]: *b*ō*k
 OEDentalAssimilation [no-change]: *b*ō*k
 OEPreconsonantalDegemination [no-change]: *b*ō*k
 OEEarlyOShortening [no-change]: *b*ō*k
@@ -2591,6 +2610,7 @@ OEHighVowelApocope [no-change]: *b*ó*r*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *b*ó*r*ē*j*ą*n
 OEMedialSyncope [no-change]: *b*ó*r*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *b*ó*r*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *b*ó*r*ē*j*ą*n
 OEDentalAssimilation [no-change]: *b*ó*r*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *b*ó*r*ē*j*ą*n
 OEEarlyOShortening [no-change]: *b*ó*r*ē*j*ą*n
@@ -2722,6 +2742,7 @@ OEHighVowelApocope [no-change]: *b*ō*s*m
 NWGmcInStemNLoss [no-change]: *b*ō*s*m
 OEMedialSyncope [no-change]: *b*ō*s*m
 OELAdjacentSyncope [no-change]: *b*ō*s*m
+OEHighLinkSyncope [no-change]: *b*ō*s*m
 OEDentalAssimilation [no-change]: *b*ō*s*m
 OEPreconsonantalDegemination [no-change]: *b*ō*s*m
 OEEarlyOShortening [no-change]: *b*ō*s*m
@@ -2854,6 +2875,7 @@ OEHighVowelApocope [no-change]: *b*ū
 NWGmcInStemNLoss [no-change]: *b*ū
 OEMedialSyncope [no-change]: *b*ū
 OELAdjacentSyncope [no-change]: *b*ū
+OEHighLinkSyncope [no-change]: *b*ū
 OEDentalAssimilation [no-change]: *b*ū
 OEPreconsonantalDegemination [no-change]: *b*ū
 OEEarlyOShortening [no-change]: *b*ū
@@ -2985,6 +3007,7 @@ OEHighVowelApocope: *b*ō*g
 NWGmcInStemNLoss [no-change]: *b*ō*g
 OEMedialSyncope [no-change]: *b*ō*g
 OELAdjacentSyncope [no-change]: *b*ō*g
+OEHighLinkSyncope [no-change]: *b*ō*g
 OEDentalAssimilation [no-change]: *b*ō*g
 OEPreconsonantalDegemination [no-change]: *b*ō*g
 OEEarlyOShortening [no-change]: *b*ō*g
@@ -3117,6 +3140,7 @@ OEHighVowelApocope [no-change]: *b*īe*ʝ*j*ą*n
 NWGmcInStemNLoss [no-change]: *b*īe*ʝ*j*ą*n
 OEMedialSyncope [no-change]: *b*īe*ʝ*j*ą*n
 OELAdjacentSyncope [no-change]: *b*īe*ʝ*j*ą*n
+OEHighLinkSyncope [no-change]: *b*īe*ʝ*j*ą*n
 OEDentalAssimilation [no-change]: *b*īe*ʝ*j*ą*n
 OEPreconsonantalDegemination [no-change]: *b*īe*ʝ*j*ą*n
 OEEarlyOShortening [no-change]: *b*īe*ʝ*j*ą*n
@@ -3248,6 +3272,7 @@ OEHighVowelApocope [no-change]: *b*ó*g*ô
 NWGmcInStemNLoss [no-change]: *b*ó*g*ô
 OEMedialSyncope [no-change]: *b*ó*g*ô
 OELAdjacentSyncope [no-change]: *b*ó*g*ô
+OEHighLinkSyncope [no-change]: *b*ó*g*ô
 OEDentalAssimilation [no-change]: *b*ó*g*ô
 OEPreconsonantalDegemination [no-change]: *b*ó*g*ô
 OEEarlyOShortening [no-change]: *b*ó*g*ô
@@ -3379,6 +3404,7 @@ OEHighVowelApocope [no-change]: *b*ū*r
 NWGmcInStemNLoss [no-change]: *b*ū*r
 OEMedialSyncope [no-change]: *b*ū*r
 OELAdjacentSyncope [no-change]: *b*ū*r
+OEHighLinkSyncope [no-change]: *b*ū*r
 OEDentalAssimilation [no-change]: *b*ū*r
 OEPreconsonantalDegemination [no-change]: *b*ū*r
 OEEarlyOShortening [no-change]: *b*ū*r
@@ -3510,6 +3536,7 @@ OEHighVowelApocope [no-change]: *b*r*ēa*d
 NWGmcInStemNLoss [no-change]: *b*r*ēa*d
 OEMedialSyncope [no-change]: *b*r*ēa*d
 OELAdjacentSyncope [no-change]: *b*r*ēa*d
+OEHighLinkSyncope [no-change]: *b*r*ēa*d
 OEDentalAssimilation [no-change]: *b*r*ēa*d
 OEPreconsonantalDegemination [no-change]: *b*r*ēa*d
 OEEarlyOShortening [no-change]: *b*r*ēa*d
@@ -3641,6 +3668,7 @@ OEHighVowelApocope [no-change]: *b*r*é*k*ą*n
 NWGmcInStemNLoss [no-change]: *b*r*é*k*ą*n
 OEMedialSyncope [no-change]: *b*r*é*k*ą*n
 OELAdjacentSyncope [no-change]: *b*r*é*k*ą*n
+OEHighLinkSyncope [no-change]: *b*r*é*k*ą*n
 OEDentalAssimilation [no-change]: *b*r*é*k*ą*n
 OEPreconsonantalDegemination [no-change]: *b*r*é*k*ą*n
 OEEarlyOShortening [no-change]: *b*r*é*k*ą*n
@@ -3773,6 +3801,7 @@ OEHighVowelApocope: *b*r*ē*ʧ
 NWGmcInStemNLoss [no-change]: *b*r*ē*ʧ
 OEMedialSyncope [no-change]: *b*r*ē*ʧ
 OELAdjacentSyncope [no-change]: *b*r*ē*ʧ
+OEHighLinkSyncope [no-change]: *b*r*ē*ʧ
 OEDentalAssimilation [no-change]: *b*r*ē*ʧ
 OEPreconsonantalDegemination [no-change]: *b*r*ē*ʧ
 OEEarlyOShortening [no-change]: *b*r*ē*ʧ
@@ -3904,6 +3933,7 @@ OEHighVowelApocope: *b*r*ȳ*d
 NWGmcInStemNLoss [no-change]: *b*r*ȳ*d
 OEMedialSyncope [no-change]: *b*r*ȳ*d
 OELAdjacentSyncope [no-change]: *b*r*ȳ*d
+OEHighLinkSyncope [no-change]: *b*r*ȳ*d
 OEDentalAssimilation [no-change]: *b*r*ȳ*d
 OEPreconsonantalDegemination [no-change]: *b*r*ȳ*d
 OEEarlyOShortening [no-change]: *b*r*ȳ*d
@@ -4035,6 +4065,7 @@ OEHighVowelApocope [no-change]: *b*r*í*n*g*ą*n
 NWGmcInStemNLoss [no-change]: *b*r*í*n*g*ą*n
 OEMedialSyncope [no-change]: *b*r*í*n*g*ą*n
 OELAdjacentSyncope [no-change]: *b*r*í*n*g*ą*n
+OEHighLinkSyncope [no-change]: *b*r*í*n*g*ą*n
 OEDentalAssimilation [no-change]: *b*r*í*n*g*ą*n
 OEPreconsonantalDegemination [no-change]: *b*r*í*n*g*ą*n
 OEEarlyOShortening [no-change]: *b*r*í*n*g*ą*n
@@ -4166,6 +4197,7 @@ OEHighVowelApocope [no-change]: *b*r*ū*k*ą*n
 NWGmcInStemNLoss [no-change]: *b*r*ū*k*ą*n
 OEMedialSyncope [no-change]: *b*r*ū*k*ą*n
 OELAdjacentSyncope [no-change]: *b*r*ū*k*ą*n
+OEHighLinkSyncope [no-change]: *b*r*ū*k*ą*n
 OEDentalAssimilation [no-change]: *b*r*ū*k*ą*n
 OEPreconsonantalDegemination [no-change]: *b*r*ū*k*ą*n
 OEEarlyOShortening [no-change]: *b*r*ū*k*ą*n
@@ -4297,6 +4329,7 @@ OEHighVowelApocope [no-change]: *b*r*é*s*t*ą*n
 NWGmcInStemNLoss [no-change]: *b*r*é*s*t*ą*n
 OEMedialSyncope [no-change]: *b*r*é*s*t*ą*n
 OELAdjacentSyncope [no-change]: *b*r*é*s*t*ą*n
+OEHighLinkSyncope [no-change]: *b*r*é*s*t*ą*n
 OEDentalAssimilation [no-change]: *b*r*é*s*t*ą*n
 OEPreconsonantalDegemination [no-change]: *b*r*é*s*t*ą*n
 OEEarlyOShortening [no-change]: *b*r*é*s*t*ą*n
@@ -4429,6 +4462,7 @@ OEHighVowelApocope [no-change]: *ʧ*ea*l*β
 NWGmcInStemNLoss [no-change]: *ʧ*ea*l*β
 OEMedialSyncope [no-change]: *ʧ*ea*l*β
 OELAdjacentSyncope [no-change]: *ʧ*ea*l*β
+OEHighLinkSyncope [no-change]: *ʧ*ea*l*β
 OEDentalAssimilation [no-change]: *ʧ*ea*l*β
 OEPreconsonantalDegemination [no-change]: *ʧ*ea*l*β
 OEEarlyOShortening [no-change]: *ʧ*ea*l*β
@@ -4560,6 +4594,7 @@ OEHighVowelApocope [no-change]: *ʧ*ēo*w*ą*n
 NWGmcInStemNLoss [no-change]: *ʧ*ēo*w*ą*n
 OEMedialSyncope [no-change]: *ʧ*ēo*w*ą*n
 OELAdjacentSyncope [no-change]: *ʧ*ēo*w*ą*n
+OEHighLinkSyncope [no-change]: *ʧ*ēo*w*ą*n
 OEDentalAssimilation [no-change]: *ʧ*ēo*w*ą*n
 OEPreconsonantalDegemination [no-change]: *ʧ*ēo*w*ą*n
 OEEarlyOShortening [no-change]: *ʧ*ēo*w*ą*n
@@ -4691,6 +4726,7 @@ OEHighVowelApocope [no-change]: *k*l*í*m*b*ą*n
 NWGmcInStemNLoss [no-change]: *k*l*í*m*b*ą*n
 OEMedialSyncope [no-change]: *k*l*í*m*b*ą*n
 OELAdjacentSyncope [no-change]: *k*l*í*m*b*ą*n
+OEHighLinkSyncope [no-change]: *k*l*í*m*b*ą*n
 OEDentalAssimilation [no-change]: *k*l*í*m*b*ą*n
 OEPreconsonantalDegemination [no-change]: *k*l*í*m*b*ą*n
 OEEarlyOShortening [no-change]: *k*l*í*m*b*ą*n
@@ -4823,6 +4859,7 @@ OEHighVowelApocope [no-change]: *r*ó*k*k
 NWGmcInStemNLoss [no-change]: *r*ó*k*k
 OEMedialSyncope [no-change]: *r*ó*k*k
 OELAdjacentSyncope [no-change]: *r*ó*k*k
+OEHighLinkSyncope [no-change]: *r*ó*k*k
 OEDentalAssimilation [no-change]: *r*ó*k*k
 OEPreconsonantalDegemination [no-change]: *r*ó*k*k
 OEEarlyOShortening [no-change]: *r*ó*k*k
@@ -4954,6 +4991,7 @@ OEHighVowelApocope [no-change]: *k*á*m*b
 NWGmcInStemNLoss [no-change]: *k*á*m*b
 OEMedialSyncope [no-change]: *k*á*m*b
 OELAdjacentSyncope [no-change]: *k*á*m*b
+OEHighLinkSyncope [no-change]: *k*á*m*b
 OEDentalAssimilation [no-change]: *k*á*m*b
 OEPreconsonantalDegemination [no-change]: *k*á*m*b
 OEEarlyOShortening [no-change]: *k*á*m*b
@@ -5086,6 +5124,7 @@ OEHighVowelApocope [no-change]: *k*ó*r*n
 NWGmcInStemNLoss [no-change]: *k*ó*r*n
 OEMedialSyncope [no-change]: *k*ó*r*n
 OELAdjacentSyncope [no-change]: *k*ó*r*n
+OEHighLinkSyncope [no-change]: *k*ó*r*n
 OEDentalAssimilation [no-change]: *k*ó*r*n
 OEPreconsonantalDegemination [no-change]: *k*ó*r*n
 OEEarlyOShortening [no-change]: *k*ó*r*n
@@ -5217,6 +5256,7 @@ OEHighVowelApocope [no-change]: *k*r*ó*p*p
 NWGmcInStemNLoss [no-change]: *k*r*ó*p*p
 OEMedialSyncope [no-change]: *k*r*ó*p*p
 OELAdjacentSyncope [no-change]: *k*r*ó*p*p
+OEHighLinkSyncope [no-change]: *k*r*ó*p*p
 OEDentalAssimilation [no-change]: *k*r*ó*p*p
 OEPreconsonantalDegemination [no-change]: *k*r*ó*p*p
 OEEarlyOShortening [no-change]: *k*r*ó*p*p
@@ -5348,6 +5388,7 @@ OEHighVowelApocope [no-change]: *d*æ*l
 NWGmcInStemNLoss [no-change]: *d*æ*l
 OEMedialSyncope [no-change]: *d*æ*l
 OELAdjacentSyncope [no-change]: *d*æ*l
+OEHighLinkSyncope [no-change]: *d*æ*l
 OEDentalAssimilation [no-change]: *d*æ*l
 OEPreconsonantalDegemination [no-change]: *d*æ*l
 OEEarlyOShortening [no-change]: *d*æ*l
@@ -5479,6 +5520,7 @@ OEHighVowelApocope [no-change]: *d*æ*ʝ
 NWGmcInStemNLoss [no-change]: *d*æ*ʝ
 OEMedialSyncope [no-change]: *d*æ*ʝ
 OELAdjacentSyncope [no-change]: *d*æ*ʝ
+OEHighLinkSyncope [no-change]: *d*æ*ʝ
 OEDentalAssimilation [no-change]: *d*æ*ʝ
 OEPreconsonantalDegemination [no-change]: *d*æ*ʝ
 OEEarlyOShortening [no-change]: *d*æ*ʝ
@@ -5610,6 +5652,7 @@ OEHighVowelApocope: *d*ǣ*l
 NWGmcInStemNLoss [no-change]: *d*ǣ*l
 OEMedialSyncope [no-change]: *d*ǣ*l
 OELAdjacentSyncope [no-change]: *d*ǣ*l
+OEHighLinkSyncope [no-change]: *d*ǣ*l
 OEDentalAssimilation [no-change]: *d*ǣ*l
 OEPreconsonantalDegemination [no-change]: *d*ǣ*l
 OEEarlyOShortening [no-change]: *d*ǣ*l
@@ -5742,6 +5785,7 @@ OEHighVowelApocope: *d*ǣ*d
 NWGmcInStemNLoss [no-change]: *d*ǣ*d
 OEMedialSyncope [no-change]: *d*ǣ*d
 OELAdjacentSyncope [no-change]: *d*ǣ*d
+OEHighLinkSyncope [no-change]: *d*ǣ*d
 OEDentalAssimilation [no-change]: *d*ǣ*d
 OEPreconsonantalDegemination [no-change]: *d*ǣ*d
 OEEarlyOShortening [no-change]: *d*ǣ*d
@@ -5873,6 +5917,7 @@ OEHighVowelApocope [no-change]: *d*ēo*r
 NWGmcInStemNLoss [no-change]: *d*ēo*r
 OEMedialSyncope [no-change]: *d*ēo*r
 OELAdjacentSyncope [no-change]: *d*ēo*r
+OEHighLinkSyncope [no-change]: *d*ēo*r
 OEDentalAssimilation [no-change]: *d*ēo*r
 OEPreconsonantalDegemination [no-change]: *d*ēo*r
 OEEarlyOShortening [no-change]: *d*ēo*r
@@ -6004,6 +6049,7 @@ OEHighVowelApocope: *d*ēa*w
 NWGmcInStemNLoss [no-change]: *d*ēa*w
 OEMedialSyncope [no-change]: *d*ēa*w
 OELAdjacentSyncope [no-change]: *d*ēa*w
+OEHighLinkSyncope [no-change]: *d*ēa*w
 OEDentalAssimilation [no-change]: *d*ēa*w
 OEPreconsonantalDegemination [no-change]: *d*ēa*w
 OEEarlyOShortening [no-change]: *d*ēa*w
@@ -6135,6 +6181,7 @@ OEHighVowelApocope [no-change]: *d*ō*n
 NWGmcInStemNLoss [no-change]: *d*ō*n
 OEMedialSyncope [no-change]: *d*ō*n
 OELAdjacentSyncope [no-change]: *d*ō*n
+OEHighLinkSyncope [no-change]: *d*ō*n
 OEDentalAssimilation [no-change]: *d*ō*n
 OEPreconsonantalDegemination [no-change]: *d*ō*n
 OEEarlyOShortening [no-change]: *d*ō*n
@@ -6267,6 +6314,7 @@ OEHighVowelApocope [no-change]: *d*ó*r
 NWGmcInStemNLoss [no-change]: *d*ó*r
 OEMedialSyncope [no-change]: *d*ó*r
 OELAdjacentSyncope [no-change]: *d*ó*r
+OEHighLinkSyncope [no-change]: *d*ó*r
 OEDentalAssimilation [no-change]: *d*ó*r
 OEPreconsonantalDegemination [no-change]: *d*ó*r
 OEEarlyOShortening [no-change]: *d*ó*r
@@ -6398,6 +6446,7 @@ OEHighVowelApocope [no-change]: *d*ā*g
 NWGmcInStemNLoss [no-change]: *d*ā*g
 OEMedialSyncope [no-change]: *d*ā*g
 OELAdjacentSyncope [no-change]: *d*ā*g
+OEHighLinkSyncope [no-change]: *d*ā*g
 OEDentalAssimilation [no-change]: *d*ā*g
 OEPreconsonantalDegemination [no-change]: *d*ā*g
 OEEarlyOShortening [no-change]: *d*ā*g
@@ -6529,6 +6578,7 @@ OEHighVowelApocope [no-change]: *d*r*ēa*m
 NWGmcInStemNLoss [no-change]: *d*r*ēa*m
 OEMedialSyncope [no-change]: *d*r*ēa*m
 OELAdjacentSyncope [no-change]: *d*r*ēa*m
+OEHighLinkSyncope [no-change]: *d*r*ēa*m
 OEDentalAssimilation [no-change]: *d*r*ēa*m
 OEPreconsonantalDegemination [no-change]: *d*r*ēa*m
 OEEarlyOShortening [no-change]: *d*r*ēa*m
@@ -6660,6 +6710,7 @@ OEHighVowelApocope: *d*r*e*n*ʧ
 NWGmcInStemNLoss [no-change]: *d*r*e*n*ʧ
 OEMedialSyncope [no-change]: *d*r*e*n*ʧ
 OELAdjacentSyncope [no-change]: *d*r*e*n*ʧ
+OEHighLinkSyncope [no-change]: *d*r*e*n*ʧ
 OEDentalAssimilation [no-change]: *d*r*e*n*ʧ
 OEPreconsonantalDegemination [no-change]: *d*r*e*n*ʧ
 OEEarlyOShortening [no-change]: *d*r*e*n*ʧ
@@ -6791,6 +6842,7 @@ OEHighVowelApocope [no-change]: *d*r*í*n*k*ą*n
 NWGmcInStemNLoss [no-change]: *d*r*í*n*k*ą*n
 OEMedialSyncope [no-change]: *d*r*í*n*k*ą*n
 OELAdjacentSyncope [no-change]: *d*r*í*n*k*ą*n
+OEHighLinkSyncope [no-change]: *d*r*í*n*k*ą*n
 OEDentalAssimilation [no-change]: *d*r*í*n*k*ą*n
 OEPreconsonantalDegemination [no-change]: *d*r*í*n*k*ą*n
 OEEarlyOShortening [no-change]: *d*r*í*n*k*ą*n
@@ -6922,6 +6974,7 @@ OEHighVowelApocope [no-change]: *d*r*ḯ*β*ą*n
 NWGmcInStemNLoss [no-change]: *d*r*ḯ*β*ą*n
 OEMedialSyncope [no-change]: *d*r*ḯ*β*ą*n
 OELAdjacentSyncope [no-change]: *d*r*ḯ*β*ą*n
+OEHighLinkSyncope [no-change]: *d*r*ḯ*β*ą*n
 OEDentalAssimilation [no-change]: *d*r*ḯ*β*ą*n
 OEPreconsonantalDegemination [no-change]: *d*r*ḯ*β*ą*n
 OEEarlyOShortening [no-change]: *d*r*ḯ*β*ą*n
@@ -7053,6 +7106,7 @@ OEHighVowelApocope [no-change]: *éo*r*θ*ǭ
 NWGmcInStemNLoss [no-change]: *éo*r*θ*ǭ
 OEMedialSyncope [no-change]: *éo*r*θ*ǭ
 OELAdjacentSyncope [no-change]: *éo*r*θ*ǭ
+OEHighLinkSyncope [no-change]: *éo*r*θ*ǭ
 OEDentalAssimilation [no-change]: *éo*r*θ*ǭ
 OEPreconsonantalDegemination [no-change]: *éo*r*θ*ǭ
 OEEarlyOShortening [no-change]: *éo*r*θ*ǭ
@@ -7184,6 +7238,7 @@ OEHighVowelApocope [no-change]: *é*t*ą*n
 NWGmcInStemNLoss [no-change]: *é*t*ą*n
 OEMedialSyncope [no-change]: *é*t*ą*n
 OELAdjacentSyncope [no-change]: *é*t*ą*n
+OEHighLinkSyncope [no-change]: *é*t*ą*n
 OEDentalAssimilation [no-change]: *é*t*ą*n
 OEPreconsonantalDegemination [no-change]: *é*t*ą*n
 OEEarlyOShortening [no-change]: *é*t*ą*n
@@ -7315,6 +7370,7 @@ OEHighVowelApocope [no-change]: *ǣ*l
 NWGmcInStemNLoss [no-change]: *ǣ*l
 OEMedialSyncope [no-change]: *ǣ*l
 OELAdjacentSyncope [no-change]: *ǣ*l
+OEHighLinkSyncope [no-change]: *ǣ*l
 OEDentalAssimilation [no-change]: *ǣ*l
 OEPreconsonantalDegemination [no-change]: *ǣ*l
 OEEarlyOShortening [no-change]: *ǣ*l
@@ -7446,6 +7502,7 @@ OEHighVowelApocope [no-change]: *f*ea*l*l*ą*n
 NWGmcInStemNLoss [no-change]: *f*ea*l*l*ą*n
 OEMedialSyncope [no-change]: *f*ea*l*l*ą*n
 OELAdjacentSyncope [no-change]: *f*ea*l*l*ą*n
+OEHighLinkSyncope [no-change]: *f*ea*l*l*ą*n
 OEDentalAssimilation [no-change]: *f*ea*l*l*ą*n
 OEPreconsonantalDegemination [no-change]: *f*ea*l*l*ą*n
 OEEarlyOShortening [no-change]: *f*ea*l*l*ą*n
@@ -7578,6 +7635,7 @@ OEHighVowelApocope [no-change]: *f*a*r*ą*n
 NWGmcInStemNLoss [no-change]: *f*a*r*ą*n
 OEMedialSyncope [no-change]: *f*a*r*ą*n
 OELAdjacentSyncope [no-change]: *f*a*r*ą*n
+OEHighLinkSyncope [no-change]: *f*a*r*ą*n
 OEDentalAssimilation [no-change]: *f*a*r*ą*n
 OEPreconsonantalDegemination [no-change]: *f*a*r*ą*n
 OEEarlyOShortening [no-change]: *f*a*r*ą*n
@@ -7709,6 +7767,7 @@ OEHighVowelApocope [no-change]: *f*æ*d*ē*r
 NWGmcInStemNLoss [no-change]: *f*æ*d*ē*r
 OEMedialSyncope [no-change]: *f*æ*d*ē*r
 OELAdjacentSyncope [no-change]: *f*æ*d*ē*r
+OEHighLinkSyncope [no-change]: *f*æ*d*ē*r
 OEDentalAssimilation [no-change]: *f*æ*d*ē*r
 OEPreconsonantalDegemination [no-change]: *f*æ*d*ē*r
 OEEarlyOShortening [no-change]: *f*æ*d*ē*r
@@ -7840,6 +7899,7 @@ OEHighVowelApocope: *f*éo*x
 NWGmcInStemNLoss [no-change]: *f*éo*x
 OEMedialSyncope [no-change]: *f*éo*x
 OELAdjacentSyncope [no-change]: *f*éo*x
+OEHighLinkSyncope [no-change]: *f*éo*x
 OEDentalAssimilation [no-change]: *f*éo*x
 OEPreconsonantalDegemination [no-change]: *f*éo*x
 OEEarlyOShortening [no-change]: *f*éo*x
@@ -7972,6 +8032,7 @@ OEHighVowelApocope [no-change]: *f*é*l*l
 NWGmcInStemNLoss [no-change]: *f*é*l*l
 OEMedialSyncope [no-change]: *f*é*l*l
 OELAdjacentSyncope [no-change]: *f*é*l*l
+OEHighLinkSyncope [no-change]: *f*é*l*l
 OEDentalAssimilation [no-change]: *f*é*l*l
 OEPreconsonantalDegemination [no-change]: *f*é*l*l
 OEEarlyOShortening [no-change]: *f*é*l*l
@@ -8104,6 +8165,7 @@ OEHighVowelApocope [no-change]: *f*ea*r*n
 NWGmcInStemNLoss [no-change]: *f*ea*r*n
 OEMedialSyncope [no-change]: *f*ea*r*n
 OELAdjacentSyncope [no-change]: *f*ea*r*n
+OEHighLinkSyncope [no-change]: *f*ea*r*n
 OEDentalAssimilation [no-change]: *f*ea*r*n
 OEPreconsonantalDegemination [no-change]: *f*ea*r*n
 OEEarlyOShortening [no-change]: *f*ea*r*n
@@ -8236,6 +8298,7 @@ OEHighVowelApocope: *f*é*l*d
 NWGmcInStemNLoss [no-change]: *f*é*l*d
 OEMedialSyncope [no-change]: *f*é*l*d
 OELAdjacentSyncope [no-change]: *f*é*l*d
+OEHighLinkSyncope [no-change]: *f*é*l*d
 OEDentalAssimilation [no-change]: *f*é*l*d
 OEPreconsonantalDegemination [no-change]: *f*é*l*d
 OEEarlyOShortening [no-change]: *f*é*l*d
@@ -8367,6 +8430,7 @@ OEHighVowelApocope [no-change]: *f*éo*x*t*ą*n
 NWGmcInStemNLoss [no-change]: *f*éo*x*t*ą*n
 OEMedialSyncope [no-change]: *f*éo*x*t*ą*n
 OELAdjacentSyncope [no-change]: *f*éo*x*t*ą*n
+OEHighLinkSyncope [no-change]: *f*éo*x*t*ą*n
 OEDentalAssimilation [no-change]: *f*éo*x*t*ą*n
 OEPreconsonantalDegemination [no-change]: *f*éo*x*t*ą*n
 OEEarlyOShortening [no-change]: *f*éo*x*t*ą*n
@@ -8499,6 +8563,7 @@ OEHighVowelApocope: *f*ȳ*l*i*θ
 NWGmcInStemNLoss [no-change]: *f*ȳ*l*i*θ
 OEMedialSyncope: *f*ȳ*l*θ
 OELAdjacentSyncope [no-change]: *f*ȳ*l*θ
+OEHighLinkSyncope [no-change]: *f*ȳ*l*θ
 OEDentalAssimilation [no-change]: *f*ȳ*l*θ
 OEPreconsonantalDegemination [no-change]: *f*ȳ*l*θ
 OEEarlyOShortening [no-change]: *f*ȳ*l*θ
@@ -8630,6 +8695,7 @@ OEHighVowelApocope [no-change]: *f*í*n*g*r
 NWGmcInStemNLoss [no-change]: *f*í*n*g*r
 OEMedialSyncope [no-change]: *f*í*n*g*r
 OELAdjacentSyncope [no-change]: *f*í*n*g*r
+OEHighLinkSyncope [no-change]: *f*í*n*g*r
 OEDentalAssimilation [no-change]: *f*í*n*g*r
 OEPreconsonantalDegemination [no-change]: *f*í*n*g*r
 OEEarlyOShortening [no-change]: *f*í*n*g*r
@@ -8761,6 +8827,7 @@ OEHighVowelApocope [no-change]: *f*í*ʃ
 NWGmcInStemNLoss [no-change]: *f*í*ʃ
 OEMedialSyncope [no-change]: *f*í*ʃ
 OELAdjacentSyncope [no-change]: *f*í*ʃ
+OEHighLinkSyncope [no-change]: *f*í*ʃ
 OEDentalAssimilation [no-change]: *f*í*ʃ
 OEPreconsonantalDegemination [no-change]: *f*í*ʃ
 OEEarlyOShortening [no-change]: *f*í*ʃ
@@ -8892,6 +8959,7 @@ OEHighVowelApocope: *f*ȳ*s*t
 NWGmcInStemNLoss [no-change]: *f*ȳ*s*t
 OEMedialSyncope [no-change]: *f*ȳ*s*t
 OELAdjacentSyncope [no-change]: *f*ȳ*s*t
+OEHighLinkSyncope [no-change]: *f*ȳ*s*t
 OEDentalAssimilation [no-change]: *f*ȳ*s*t
 OEPreconsonantalDegemination [no-change]: *f*ȳ*s*t
 OEEarlyOShortening [no-change]: *f*ȳ*s*t
@@ -9023,6 +9091,7 @@ OEHighVowelApocope [no-change]: *f*l*ea*x*s
 NWGmcInStemNLoss [no-change]: *f*l*ea*x*s
 OEMedialSyncope [no-change]: *f*l*ea*x*s
 OELAdjacentSyncope [no-change]: *f*l*ea*x*s
+OEHighLinkSyncope [no-change]: *f*l*ea*x*s
 OEDentalAssimilation [no-change]: *f*l*ea*x*s
 OEPreconsonantalDegemination [no-change]: *f*l*ea*x*s
 OEEarlyOShortening [no-change]: *f*l*ea*x*s
@@ -9154,6 +9223,7 @@ OEHighVowelApocope [no-change]: *f*l*ēa*x
 NWGmcInStemNLoss [no-change]: *f*l*ēa*x
 OEMedialSyncope [no-change]: *f*l*ēa*x
 OELAdjacentSyncope [no-change]: *f*l*ēa*x
+OEHighLinkSyncope [no-change]: *f*l*ēa*x
 OEDentalAssimilation [no-change]: *f*l*ēa*x
 OEPreconsonantalDegemination [no-change]: *f*l*ēa*x
 OEEarlyOShortening [no-change]: *f*l*ēa*x
@@ -9285,6 +9355,7 @@ OEHighVowelApocope [no-change]: *f*l*ēo*x*ą*n
 NWGmcInStemNLoss [no-change]: *f*l*ēo*x*ą*n
 OEMedialSyncope [no-change]: *f*l*ēo*x*ą*n
 OELAdjacentSyncope [no-change]: *f*l*ēo*x*ą*n
+OEHighLinkSyncope [no-change]: *f*l*ēo*x*ą*n
 OEDentalAssimilation [no-change]: *f*l*ēo*x*ą*n
 OEPreconsonantalDegemination [no-change]: *f*l*ēo*x*ą*n
 OEEarlyOShortening [no-change]: *f*l*ēo*x*ą*n
@@ -9416,6 +9487,7 @@ OEHighVowelApocope: *f*l*ǣ*ʃ
 NWGmcInStemNLoss [no-change]: *f*l*ǣ*ʃ
 OEMedialSyncope [no-change]: *f*l*ǣ*ʃ
 OELAdjacentSyncope [no-change]: *f*l*ǣ*ʃ
+OEHighLinkSyncope [no-change]: *f*l*ǣ*ʃ
 OEDentalAssimilation [no-change]: *f*l*ǣ*ʃ
 OEPreconsonantalDegemination [no-change]: *f*l*ǣ*ʃ
 OEEarlyOShortening [no-change]: *f*l*ǣ*ʃ
@@ -9547,6 +9619,7 @@ OEHighVowelApocope: *f*l*ō*d
 NWGmcInStemNLoss [no-change]: *f*l*ō*d
 OEMedialSyncope [no-change]: *f*l*ō*d
 OELAdjacentSyncope [no-change]: *f*l*ō*d
+OEHighLinkSyncope [no-change]: *f*l*ō*d
 OEDentalAssimilation [no-change]: *f*l*ō*d
 OEPreconsonantalDegemination [no-change]: *f*l*ō*d
 OEEarlyOShortening [no-change]: *f*l*ō*d
@@ -9679,6 +9752,7 @@ OEHighVowelApocope [no-change]: *f*l*ēo*g*ą*n
 NWGmcInStemNLoss [no-change]: *f*l*ēo*g*ą*n
 OEMedialSyncope [no-change]: *f*l*ēo*g*ą*n
 OELAdjacentSyncope [no-change]: *f*l*ēo*g*ą*n
+OEHighLinkSyncope [no-change]: *f*l*ēo*g*ą*n
 OEDentalAssimilation [no-change]: *f*l*ēo*g*ą*n
 OEPreconsonantalDegemination [no-change]: *f*l*ēo*g*ą*n
 OEEarlyOShortening [no-change]: *f*l*ēo*g*ą*n
@@ -9810,6 +9884,7 @@ OEHighVowelApocope [no-change]: *f*ó*l*ô
 NWGmcInStemNLoss [no-change]: *f*ó*l*ô
 OEMedialSyncope [no-change]: *f*ó*l*ô
 OELAdjacentSyncope [no-change]: *f*ó*l*ô
+OEHighLinkSyncope [no-change]: *f*ó*l*ô
 OEDentalAssimilation [no-change]: *f*ó*l*ô
 OEPreconsonantalDegemination [no-change]: *f*ó*l*ô
 OEEarlyOShortening [no-change]: *f*ó*l*ô
@@ -9941,6 +10016,7 @@ OEHighVowelApocope [no-change]: *f*ō*d*r
 NWGmcInStemNLoss [no-change]: *f*ō*d*r
 OEMedialSyncope [no-change]: *f*ō*d*r
 OELAdjacentSyncope [no-change]: *f*ō*d*r
+OEHighLinkSyncope [no-change]: *f*ō*d*r
 OEDentalAssimilation [no-change]: *f*ō*d*r
 OEPreconsonantalDegemination [no-change]: *f*ō*d*r
 OEEarlyOShortening [no-change]: *f*ō*d*r
@@ -10072,6 +10148,7 @@ OEHighVowelApocope [no-change]: *f*ea*l*d*ą*n
 NWGmcInStemNLoss [no-change]: *f*ea*l*d*ą*n
 OEMedialSyncope [no-change]: *f*ea*l*d*ą*n
 OELAdjacentSyncope [no-change]: *f*ea*l*d*ą*n
+OEHighLinkSyncope [no-change]: *f*ea*l*d*ą*n
 OEDentalAssimilation [no-change]: *f*ea*l*d*ą*n
 OEPreconsonantalDegemination [no-change]: *f*ea*l*d*ą*n
 OEEarlyOShortening [no-change]: *f*ea*l*d*ą*n
@@ -10203,6 +10280,7 @@ OEHighVowelApocope [no-change]: *f*ó*l*k
 NWGmcInStemNLoss [no-change]: *f*ó*l*k
 OEMedialSyncope [no-change]: *f*ó*l*k
 OELAdjacentSyncope [no-change]: *f*ó*l*k
+OEHighLinkSyncope [no-change]: *f*ó*l*k
 OEDentalAssimilation [no-change]: *f*ó*l*k
 OEPreconsonantalDegemination [no-change]: *f*ó*l*k
 OEEarlyOShortening [no-change]: *f*ó*l*k
@@ -10335,6 +10413,7 @@ OEHighVowelApocope [no-change]: *l*ēo*s*ą*n
 NWGmcInStemNLoss [no-change]: *l*ēo*s*ą*n
 OEMedialSyncope [no-change]: *l*ēo*s*ą*n
 OELAdjacentSyncope [no-change]: *l*ēo*s*ą*n
+OEHighLinkSyncope [no-change]: *l*ēo*s*ą*n
 OEDentalAssimilation [no-change]: *l*ēo*s*ą*n
 OEPreconsonantalDegemination [no-change]: *l*ēo*s*ą*n
 OEEarlyOShortening [no-change]: *l*ēo*s*ą*n
@@ -10466,6 +10545,7 @@ OEHighVowelApocope [no-change]: *f*ēo*w*æ*r
 NWGmcInStemNLoss [no-change]: *f*ēo*w*æ*r
 OEMedialSyncope [no-change]: *f*ēo*w*æ*r
 OELAdjacentSyncope [no-change]: *f*ēo*w*æ*r
+OEHighLinkSyncope [no-change]: *f*ēo*w*æ*r
 OEDentalAssimilation [no-change]: *f*ēo*w*æ*r
 OEPreconsonantalDegemination [no-change]: *f*ēo*w*æ*r
 OEEarlyOShortening [no-change]: *f*ēo*w*æ*r
@@ -10597,6 +10677,7 @@ OEHighVowelApocope [no-change]: *f*ó*x*s
 NWGmcInStemNLoss [no-change]: *f*ó*x*s
 OEMedialSyncope [no-change]: *f*ó*x*s
 OELAdjacentSyncope [no-change]: *f*ó*x*s
+OEHighLinkSyncope [no-change]: *f*ó*x*s
 OEDentalAssimilation [no-change]: *f*ó*x*s
 OEPreconsonantalDegemination [no-change]: *f*ó*x*s
 OEEarlyOShortening [no-change]: *f*ó*x*s
@@ -10728,6 +10809,7 @@ OEHighVowelApocope [no-change]: *f*r*ēo*s*ą*n
 NWGmcInStemNLoss [no-change]: *f*r*ēo*s*ą*n
 OEMedialSyncope [no-change]: *f*r*ēo*s*ą*n
 OELAdjacentSyncope [no-change]: *f*r*ēo*s*ą*n
+OEHighLinkSyncope [no-change]: *f*r*ēo*s*ą*n
 OEDentalAssimilation [no-change]: *f*r*ēo*s*ą*n
 OEPreconsonantalDegemination [no-change]: *f*r*ēo*s*ą*n
 OEEarlyOShortening [no-change]: *f*r*ēo*s*ą*n
@@ -10859,6 +10941,7 @@ OEHighVowelApocope [no-change]: *f*r*ēo*n*d
 NWGmcInStemNLoss [no-change]: *f*r*ēo*n*d
 OEMedialSyncope [no-change]: *f*r*ēo*n*d
 OELAdjacentSyncope [no-change]: *f*r*ēo*n*d
+OEHighLinkSyncope [no-change]: *f*r*ēo*n*d
 OEDentalAssimilation [no-change]: *f*r*ēo*n*d
 OEPreconsonantalDegemination [no-change]: *f*r*ēo*n*d
 OEEarlyOShortening [no-change]: *f*r*ēo*n*d
@@ -10990,6 +11073,7 @@ OEHighVowelApocope [no-change]: *f*r*ó*s*t
 NWGmcInStemNLoss [no-change]: *f*r*ó*s*t
 OEMedialSyncope [no-change]: *f*r*ó*s*t
 OELAdjacentSyncope [no-change]: *f*r*ó*s*t
+OEHighLinkSyncope [no-change]: *f*r*ó*s*t
 OEDentalAssimilation [no-change]: *f*r*ó*s*t
 OEPreconsonantalDegemination [no-change]: *f*r*ó*s*t
 OEEarlyOShortening [no-change]: *f*r*ó*s*t
@@ -11121,6 +11205,7 @@ OEHighVowelApocope [no-change]: *f*ú*r*x
 NWGmcInStemNLoss [no-change]: *f*ú*r*x
 OEMedialSyncope [no-change]: *f*ú*r*x
 OELAdjacentSyncope [no-change]: *f*ú*r*x
+OEHighLinkSyncope [no-change]: *f*ú*r*x
 OEDentalAssimilation [no-change]: *f*ú*r*x
 OEPreconsonantalDegemination [no-change]: *f*ú*r*x
 OEEarlyOShortening [no-change]: *f*ú*r*x
@@ -11253,6 +11338,7 @@ OEHighVowelApocope [no-change]: *g*á*n*g
 NWGmcInStemNLoss [no-change]: *g*á*n*g
 OEMedialSyncope [no-change]: *g*á*n*g
 OELAdjacentSyncope [no-change]: *g*á*n*g
+OEHighLinkSyncope [no-change]: *g*á*n*g
 OEDentalAssimilation [no-change]: *g*á*n*g
 OEPreconsonantalDegemination [no-change]: *g*á*n*g
 OEEarlyOShortening [no-change]: *g*á*n*g
@@ -11384,6 +11470,7 @@ OEHighVowelApocope [no-change]: *g*ā*s*t
 NWGmcInStemNLoss [no-change]: *g*ā*s*t
 OEMedialSyncope [no-change]: *g*ā*s*t
 OELAdjacentSyncope [no-change]: *g*ā*s*t
+OEHighLinkSyncope [no-change]: *g*ā*s*t
 OEDentalAssimilation [no-change]: *g*ā*s*t
 OEPreconsonantalDegemination [no-change]: *g*ā*s*t
 OEEarlyOShortening [no-change]: *g*ā*s*t
@@ -11516,6 +11603,7 @@ OEHighVowelApocope: *ʝ*í*f*t
 NWGmcInStemNLoss [no-change]: *ʝ*í*f*t
 OEMedialSyncope [no-change]: *ʝ*í*f*t
 OELAdjacentSyncope [no-change]: *ʝ*í*f*t
+OEHighLinkSyncope [no-change]: *ʝ*í*f*t
 OEDentalAssimilation [no-change]: *ʝ*í*f*t
 OEPreconsonantalDegemination [no-change]: *ʝ*í*f*t
 OEEarlyOShortening [no-change]: *ʝ*í*f*t
@@ -11648,6 +11736,7 @@ OEHighVowelApocope [no-change]: *ʝ*íe*β*ą*n
 NWGmcInStemNLoss [no-change]: *ʝ*íe*β*ą*n
 OEMedialSyncope [no-change]: *ʝ*íe*β*ą*n
 OELAdjacentSyncope [no-change]: *ʝ*íe*β*ą*n
+OEHighLinkSyncope [no-change]: *ʝ*íe*β*ą*n
 OEDentalAssimilation [no-change]: *ʝ*íe*β*ą*n
 OEPreconsonantalDegemination [no-change]: *ʝ*íe*β*ą*n
 OEEarlyOShortening [no-change]: *ʝ*íe*β*ą*n
@@ -11779,6 +11868,7 @@ OEHighVowelApocope [no-change]: *g*ó*d
 NWGmcInStemNLoss [no-change]: *g*ó*d
 OEMedialSyncope [no-change]: *g*ó*d
 OELAdjacentSyncope [no-change]: *g*ó*d
+OEHighLinkSyncope [no-change]: *g*ó*d
 OEDentalAssimilation [no-change]: *g*ó*d
 OEPreconsonantalDegemination [no-change]: *g*ó*d
 OEEarlyOShortening [no-change]: *g*ó*d
@@ -11911,6 +12001,7 @@ OEHighVowelApocope [no-change]: *g*ó*l*d
 NWGmcInStemNLoss [no-change]: *g*ó*l*d
 OEMedialSyncope [no-change]: *g*ó*l*d
 OELAdjacentSyncope [no-change]: *g*ó*l*d
+OEHighLinkSyncope [no-change]: *g*ó*l*d
 OEDentalAssimilation [no-change]: *g*ó*l*d
 OEPreconsonantalDegemination [no-change]: *g*ó*l*d
 OEEarlyOShortening [no-change]: *g*ó*l*d
@@ -12042,6 +12133,7 @@ OEHighVowelApocope [no-change]: *g*ō*s
 NWGmcInStemNLoss [no-change]: *g*ō*s
 OEMedialSyncope [no-change]: *g*ō*s
 OELAdjacentSyncope [no-change]: *g*ō*s
+OEHighLinkSyncope [no-change]: *g*ō*s
 OEDentalAssimilation [no-change]: *g*ō*s
 OEPreconsonantalDegemination [no-change]: *g*ō*s
 OEEarlyOShortening [no-change]: *g*ō*s
@@ -12173,6 +12265,7 @@ OEHighVowelApocope [no-change]: *g*r*æ*s
 NWGmcInStemNLoss [no-change]: *g*r*æ*s
 OEMedialSyncope [no-change]: *g*r*æ*s
 OELAdjacentSyncope [no-change]: *g*r*æ*s
+OEHighLinkSyncope [no-change]: *g*r*æ*s
 OEDentalAssimilation [no-change]: *g*r*æ*s
 OEPreconsonantalDegemination [no-change]: *g*r*æ*s
 OEEarlyOShortening [no-change]: *g*r*æ*s
@@ -12305,6 +12398,7 @@ OEHighVowelApocope [no-change]: *g*r*a*β*ą*n
 NWGmcInStemNLoss [no-change]: *g*r*a*β*ą*n
 OEMedialSyncope [no-change]: *g*r*a*β*ą*n
 OELAdjacentSyncope [no-change]: *g*r*a*β*ą*n
+OEHighLinkSyncope [no-change]: *g*r*a*β*ą*n
 OEDentalAssimilation [no-change]: *g*r*a*β*ą*n
 OEPreconsonantalDegemination [no-change]: *g*r*a*β*ą*n
 OEEarlyOShortening [no-change]: *g*r*a*β*ą*n
@@ -12436,6 +12530,7 @@ OEHighVowelApocope [no-change]: *g*r*ḯ*p*ą*n
 NWGmcInStemNLoss [no-change]: *g*r*ḯ*p*ą*n
 OEMedialSyncope [no-change]: *g*r*ḯ*p*ą*n
 OELAdjacentSyncope [no-change]: *g*r*ḯ*p*ą*n
+OEHighLinkSyncope [no-change]: *g*r*ḯ*p*ą*n
 OEDentalAssimilation [no-change]: *g*r*ḯ*p*ą*n
 OEPreconsonantalDegemination [no-change]: *g*r*ḯ*p*ą*n
 OEEarlyOShortening [no-change]: *g*r*ḯ*p*ą*n
@@ -12567,6 +12662,7 @@ OEHighVowelApocope: *g*r*ú*n*d
 NWGmcInStemNLoss [no-change]: *g*r*ú*n*d
 OEMedialSyncope [no-change]: *g*r*ú*n*d
 OELAdjacentSyncope [no-change]: *g*r*ú*n*d
+OEHighLinkSyncope [no-change]: *g*r*ú*n*d
 OEDentalAssimilation [no-change]: *g*r*ú*n*d
 OEPreconsonantalDegemination [no-change]: *g*r*ú*n*d
 OEEarlyOShortening [no-change]: *g*r*ú*n*d
@@ -12699,6 +12795,7 @@ OEHighVowelApocope: *ʝ*ie*s*t
 NWGmcInStemNLoss [no-change]: *ʝ*ie*s*t
 OEMedialSyncope [no-change]: *ʝ*ie*s*t
 OELAdjacentSyncope [no-change]: *ʝ*ie*s*t
+OEHighLinkSyncope [no-change]: *ʝ*ie*s*t
 OEDentalAssimilation [no-change]: *ʝ*ie*s*t
 OEPreconsonantalDegemination [no-change]: *ʝ*ie*s*t
 OEEarlyOShortening [no-change]: *ʝ*ie*s*t
@@ -12830,6 +12927,7 @@ OEHighVowelApocope [no-change]: *ç*æ*ʝ*l
 NWGmcInStemNLoss [no-change]: *ç*æ*ʝ*l
 OEMedialSyncope [no-change]: *ç*æ*ʝ*l
 OELAdjacentSyncope [no-change]: *ç*æ*ʝ*l
+OEHighLinkSyncope [no-change]: *ç*æ*ʝ*l
 OEDentalAssimilation [no-change]: *ç*æ*ʝ*l
 OEPreconsonantalDegemination [no-change]: *ç*æ*ʝ*l
 OEEarlyOShortening [no-change]: *ç*æ*ʝ*l
@@ -12962,6 +13060,7 @@ OEHighVowelApocope [no-change]: *ç*ǣ*r
 NWGmcInStemNLoss [no-change]: *ç*ǣ*r
 OEMedialSyncope [no-change]: *ç*ǣ*r
 OELAdjacentSyncope [no-change]: *ç*ǣ*r
+OEHighLinkSyncope [no-change]: *ç*ǣ*r
 OEDentalAssimilation [no-change]: *ç*ǣ*r
 OEPreconsonantalDegemination [no-change]: *ç*ǣ*r
 OEEarlyOShortening [no-change]: *ç*ǣ*r
@@ -13093,6 +13192,7 @@ OEHighVowelApocope: *ç*ea*l*l
 NWGmcInStemNLoss [no-change]: *ç*ea*l*l
 OEMedialSyncope [no-change]: *ç*ea*l*l
 OELAdjacentSyncope [no-change]: *ç*ea*l*l
+OEHighLinkSyncope [no-change]: *ç*ea*l*l
 OEDentalAssimilation [no-change]: *ç*ea*l*l
 OEPreconsonantalDegemination [no-change]: *ç*ea*l*l
 OEEarlyOShortening [no-change]: *ç*ea*l*l
@@ -13224,6 +13324,7 @@ OEHighVowelApocope: *x*á*n*d
 NWGmcInStemNLoss [no-change]: *x*á*n*d
 OEMedialSyncope [no-change]: *x*á*n*d
 OELAdjacentSyncope [no-change]: *x*á*n*d
+OEHighLinkSyncope [no-change]: *x*á*n*d
 OEDentalAssimilation [no-change]: *x*á*n*d
 OEPreconsonantalDegemination [no-change]: *x*á*n*d
 OEEarlyOShortening [no-change]: *x*á*n*d
@@ -13356,6 +13457,7 @@ OEHighVowelApocope [no-change]: *x*á*n*d*l*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *x*á*n*d*l*ē*j*ą*n
 OEMedialSyncope [no-change]: *x*á*n*d*l*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *x*á*n*d*l*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *x*á*n*d*l*ē*j*ą*n
 OEDentalAssimilation [no-change]: *x*á*n*d*l*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *x*á*n*d*l*ē*j*ą*n
 OEEarlyOShortening [no-change]: *x*á*n*d*l*ē*j*ą*n
@@ -13487,6 +13589,7 @@ OEHighVowelApocope [no-change]: *ç*ea*r*m
 NWGmcInStemNLoss [no-change]: *ç*ea*r*m
 OEMedialSyncope [no-change]: *ç*ea*r*m
 OELAdjacentSyncope [no-change]: *ç*ea*r*m
+OEHighLinkSyncope [no-change]: *ç*ea*r*m
 OEDentalAssimilation [no-change]: *ç*ea*r*m
 OEPreconsonantalDegemination [no-change]: *ç*ea*r*m
 OEEarlyOShortening [no-change]: *ç*ea*r*m
@@ -13619,6 +13722,7 @@ OEHighVowelApocope: *ç*ie*r*β*i*s*t
 NWGmcInStemNLoss [no-change]: *ç*ie*r*β*i*s*t
 OEMedialSyncope [no-change]: *ç*ie*r*β*i*s*t
 OELAdjacentSyncope [no-change]: *ç*ie*r*β*i*s*t
+OEHighLinkSyncope [no-change]: *ç*ie*r*β*i*s*t
 OEDentalAssimilation [no-change]: *ç*ie*r*β*i*s*t
 OEPreconsonantalDegemination [no-change]: *ç*ie*r*β*i*s*t
 OEEarlyOShortening [no-change]: *ç*ie*r*β*i*s*t
@@ -13750,6 +13854,7 @@ OEHighVowelApocope [no-change]: *ç*a*g*ô
 NWGmcInStemNLoss [no-change]: *ç*a*g*ô
 OEMedialSyncope [no-change]: *ç*a*g*ô
 OELAdjacentSyncope [no-change]: *ç*a*g*ô
+OEHighLinkSyncope [no-change]: *ç*a*g*ô
 OEDentalAssimilation [no-change]: *ç*a*g*ô
 OEPreconsonantalDegemination [no-change]: *ç*a*g*ô
 OEEarlyOShortening [no-change]: *ç*a*g*ô
@@ -13881,6 +13986,7 @@ OEHighVowelApocope [no-change]: *ç*a*β*u*k
 NWGmcInStemNLoss [no-change]: *ç*a*β*u*k
 OEMedialSyncope [no-change]: *ç*a*β*u*k
 OELAdjacentSyncope [no-change]: *ç*a*β*u*k
+OEHighLinkSyncope [no-change]: *ç*a*β*u*k
 OEDentalAssimilation [no-change]: *ç*a*β*u*k
 OEPreconsonantalDegemination [no-change]: *ç*a*β*u*k
 OEEarlyOShortening [no-change]: *ç*a*β*u*k
@@ -14012,6 +14118,7 @@ OEHighVowelApocope [no-change]: *ç*īe*j
 NWGmcInStemNLoss [no-change]: *ç*īe*j
 OEMedialSyncope [no-change]: *ç*īe*j
 OELAdjacentSyncope [no-change]: *ç*īe*j
+OEHighLinkSyncope [no-change]: *ç*īe*j
 OEDentalAssimilation [no-change]: *ç*īe*j
 OEPreconsonantalDegemination [no-change]: *ç*īe*j
 OEEarlyOShortening [no-change]: *ç*īe*j
@@ -14143,6 +14250,7 @@ OEHighVowelApocope [no-change]: *ç*æ*s*l
 NWGmcInStemNLoss [no-change]: *ç*æ*s*l
 OEMedialSyncope [no-change]: *ç*æ*s*l
 OELAdjacentSyncope [no-change]: *ç*æ*s*l
+OEHighLinkSyncope [no-change]: *ç*æ*s*l
 OEDentalAssimilation [no-change]: *ç*æ*s*l
 OEPreconsonantalDegemination [no-change]: *ç*æ*s*l
 OEEarlyOShortening [no-change]: *ç*æ*s*l
@@ -14274,6 +14382,7 @@ OEHighVowelApocope [no-change]: *ç*ēa*β*u*d
 NWGmcInStemNLoss [no-change]: *ç*ēa*β*u*d
 OEMedialSyncope [no-change]: *ç*ēa*β*u*d
 OELAdjacentSyncope [no-change]: *ç*ēa*β*u*d
+OEHighLinkSyncope [no-change]: *ç*ēa*β*u*d
 OEDentalAssimilation [no-change]: *ç*ēa*β*u*d
 OEPreconsonantalDegemination [no-change]: *ç*ēa*β*u*d
 OEEarlyOShortening [no-change]: *ç*ēa*β*u*d
@@ -14405,6 +14514,7 @@ OEHighVowelApocope [no-change]: *x*ǣ*l*j*ą*n
 NWGmcInStemNLoss [no-change]: *x*ǣ*l*j*ą*n
 OEMedialSyncope [no-change]: *x*ǣ*l*j*ą*n
 OELAdjacentSyncope [no-change]: *x*ǣ*l*j*ą*n
+OEHighLinkSyncope [no-change]: *x*ǣ*l*j*ą*n
 OEDentalAssimilation [no-change]: *x*ǣ*l*j*ą*n
 OEPreconsonantalDegemination [no-change]: *x*ǣ*l*j*ą*n
 OEEarlyOShortening [no-change]: *x*ǣ*l*j*ą*n
@@ -14536,6 +14646,7 @@ OEHighVowelApocope [no-change]: *ç*éo*r*t*ǭ
 NWGmcInStemNLoss [no-change]: *ç*éo*r*t*ǭ
 OEMedialSyncope [no-change]: *ç*éo*r*t*ǭ
 OELAdjacentSyncope [no-change]: *ç*éo*r*t*ǭ
+OEHighLinkSyncope [no-change]: *ç*éo*r*t*ǭ
 OEDentalAssimilation [no-change]: *ç*éo*r*t*ǭ
 OEPreconsonantalDegemination [no-change]: *ç*éo*r*t*ǭ
 OEEarlyOShortening [no-change]: *ç*éo*r*t*ǭ
@@ -14667,6 +14778,7 @@ OEHighVowelApocope [no-change]: *ç*éo*r*θ
 NWGmcInStemNLoss [no-change]: *ç*éo*r*θ
 OEMedialSyncope [no-change]: *ç*éo*r*θ
 OELAdjacentSyncope [no-change]: *ç*éo*r*θ
+OEHighLinkSyncope [no-change]: *ç*éo*r*θ
 OEDentalAssimilation [no-change]: *ç*éo*r*θ
 OEPreconsonantalDegemination [no-change]: *ç*éo*r*θ
 OEEarlyOShortening [no-change]: *ç*éo*r*θ
@@ -14798,6 +14910,7 @@ OEHighVowelApocope: *x*ǣ*θ
 NWGmcInStemNLoss [no-change]: *x*ǣ*θ
 OEMedialSyncope [no-change]: *x*ǣ*θ
 OELAdjacentSyncope [no-change]: *x*ǣ*θ
+OEHighLinkSyncope [no-change]: *x*ǣ*θ
 OEDentalAssimilation [no-change]: *x*ǣ*θ
 OEPreconsonantalDegemination [no-change]: *x*ǣ*θ
 OEEarlyOShortening [no-change]: *x*ǣ*θ
@@ -14930,6 +15043,7 @@ OEHighVowelApocope [no-change]: *ç*e*ʤ*ʤ*j
 NWGmcInStemNLoss [no-change]: *ç*e*ʤ*ʤ*j
 OEMedialSyncope [no-change]: *ç*e*ʤ*ʤ*j
 OELAdjacentSyncope [no-change]: *ç*e*ʤ*ʤ*j
+OEHighLinkSyncope [no-change]: *ç*e*ʤ*ʤ*j
 OEDentalAssimilation [no-change]: *ç*e*ʤ*ʤ*j
 OEPreconsonantalDegemination [no-change]: *ç*e*ʤ*ʤ*j
 OEEarlyOShortening [no-change]: *ç*e*ʤ*ʤ*j
@@ -15062,6 +15176,7 @@ OEHighVowelApocope [no-change]: *ç*é*l*m
 NWGmcInStemNLoss [no-change]: *ç*é*l*m
 OEMedialSyncope [no-change]: *ç*é*l*m
 OELAdjacentSyncope [no-change]: *ç*é*l*m
+OEHighLinkSyncope [no-change]: *ç*é*l*m
 OEDentalAssimilation [no-change]: *ç*é*l*m
 OEPreconsonantalDegemination [no-change]: *ç*é*l*m
 OEEarlyOShortening [no-change]: *ç*é*l*m
@@ -15194,6 +15309,7 @@ OEHighVowelApocope [no-change]: *ç*é*l*p*ą*n
 NWGmcInStemNLoss [no-change]: *ç*é*l*p*ą*n
 OEMedialSyncope [no-change]: *ç*é*l*p*ą*n
 OELAdjacentSyncope [no-change]: *ç*é*l*p*ą*n
+OEHighLinkSyncope [no-change]: *ç*é*l*p*ą*n
 OEDentalAssimilation [no-change]: *ç*é*l*p*ą*n
 OEPreconsonantalDegemination [no-change]: *ç*é*l*p*ą*n
 OEEarlyOShortening [no-change]: *ç*é*l*p*ą*n
@@ -15325,6 +15441,7 @@ OEHighVowelApocope: *ç*é*l*p
 NWGmcInStemNLoss [no-change]: *ç*é*l*p
 OEMedialSyncope [no-change]: *ç*é*l*p
 OELAdjacentSyncope [no-change]: *ç*é*l*p
+OEHighLinkSyncope [no-change]: *ç*é*l*p
 OEDentalAssimilation [no-change]: *ç*é*l*p
 OEPreconsonantalDegemination [no-change]: *ç*é*l*p
 OEEarlyOShortening [no-change]: *ç*é*l*p
@@ -15456,6 +15573,7 @@ OEHighVowelApocope: *ç*éo*r*d
 NWGmcInStemNLoss [no-change]: *ç*éo*r*d
 OEMedialSyncope [no-change]: *ç*éo*r*d
 OELAdjacentSyncope [no-change]: *ç*éo*r*d
+OEHighLinkSyncope [no-change]: *ç*éo*r*d
 OEDentalAssimilation [no-change]: *ç*éo*r*d
 OEPreconsonantalDegemination [no-change]: *ç*éo*r*d
 OEEarlyOShortening [no-change]: *ç*éo*r*d
@@ -15587,6 +15705,7 @@ OEHighVowelApocope [no-change]: *ç*ēa*w*ą*n
 NWGmcInStemNLoss [no-change]: *ç*ēa*w*ą*n
 OEMedialSyncope [no-change]: *ç*ēa*w*ą*n
 OELAdjacentSyncope [no-change]: *ç*ēa*w*ą*n
+OEHighLinkSyncope [no-change]: *ç*ēa*w*ą*n
 OEDentalAssimilation [no-change]: *ç*ēa*w*ą*n
 OEPreconsonantalDegemination [no-change]: *ç*ēa*w*ą*n
 OEEarlyOShortening [no-change]: *ç*ēa*w*ą*n
@@ -15719,6 +15838,7 @@ OEHighVowelApocope: *ç*i*n*d*j
 NWGmcInStemNLoss [no-change]: *ç*i*n*d*j
 OEMedialSyncope [no-change]: *ç*i*n*d*j
 OELAdjacentSyncope [no-change]: *ç*i*n*d*j
+OEHighLinkSyncope [no-change]: *ç*i*n*d*j
 OEDentalAssimilation [no-change]: *ç*i*n*d*j
 OEPreconsonantalDegemination [no-change]: *ç*i*n*d*j
 OEEarlyOShortening [no-change]: *ç*i*n*d*j
@@ -15850,6 +15970,7 @@ OEHighVowelApocope [no-change]: *x*ó*r*d
 NWGmcInStemNLoss [no-change]: *x*ó*r*d
 OEMedialSyncope [no-change]: *x*ó*r*d
 OELAdjacentSyncope [no-change]: *x*ó*r*d
+OEHighLinkSyncope [no-change]: *x*ó*r*d
 OEDentalAssimilation [no-change]: *x*ó*r*d
 OEPreconsonantalDegemination [no-change]: *x*ó*r*d
 OEEarlyOShortening [no-change]: *x*ó*r*d
@@ -15982,6 +16103,7 @@ OEHighVowelApocope [no-change]: *ç*ea*l*d*ą*n
 NWGmcInStemNLoss [no-change]: *ç*ea*l*d*ą*n
 OEMedialSyncope [no-change]: *ç*ea*l*d*ą*n
 OELAdjacentSyncope [no-change]: *ç*ea*l*d*ą*n
+OEHighLinkSyncope [no-change]: *ç*ea*l*d*ą*n
 OEDentalAssimilation [no-change]: *ç*ea*l*d*ą*n
 OEPreconsonantalDegemination [no-change]: *ç*ea*l*d*ą*n
 OEEarlyOShortening [no-change]: *ç*ea*l*d*ą*n
@@ -16113,6 +16235,7 @@ OEHighVowelApocope [no-change]: *x*ā*m
 NWGmcInStemNLoss [no-change]: *x*ā*m
 OEMedialSyncope [no-change]: *x*ā*m
 OELAdjacentSyncope [no-change]: *x*ā*m
+OEHighLinkSyncope [no-change]: *x*ā*m
 OEDentalAssimilation [no-change]: *x*ā*m
 OEPreconsonantalDegemination [no-change]: *x*ā*m
 OEEarlyOShortening [no-change]: *x*ā*m
@@ -16244,6 +16367,7 @@ OEHighVowelApocope [no-change]: *x*ú*n*æ*ʝ
 NWGmcInStemNLoss [no-change]: *x*ú*n*æ*ʝ
 OEMedialSyncope [no-change]: *x*ú*n*æ*ʝ
 OELAdjacentSyncope [no-change]: *x*ú*n*æ*ʝ
+OEHighLinkSyncope [no-change]: *x*ú*n*æ*ʝ
 OEDentalAssimilation [no-change]: *x*ú*n*æ*ʝ
 OEPreconsonantalDegemination [no-change]: *x*ú*n*æ*ʝ
 OEEarlyOShortening [no-change]: *x*ú*n*æ*ʝ
@@ -16375,6 +16499,7 @@ OEHighVowelApocope [no-change]: *x*ō*d
 NWGmcInStemNLoss [no-change]: *x*ō*d
 OEMedialSyncope [no-change]: *x*ō*d
 OELAdjacentSyncope [no-change]: *x*ō*d
+OEHighLinkSyncope [no-change]: *x*ō*d
 OEDentalAssimilation [no-change]: *x*ō*d
 OEPreconsonantalDegemination [no-change]: *x*ō*d
 OEEarlyOShortening [no-change]: *x*ō*d
@@ -16506,6 +16631,7 @@ OEHighVowelApocope [no-change]: *x*ō*f
 NWGmcInStemNLoss [no-change]: *x*ō*f
 OEMedialSyncope [no-change]: *x*ō*f
 OELAdjacentSyncope [no-change]: *x*ō*f
+OEHighLinkSyncope [no-change]: *x*ō*f
 OEDentalAssimilation [no-change]: *x*ō*f
 OEPreconsonantalDegemination [no-change]: *x*ō*f
 OEEarlyOShortening [no-change]: *x*ō*f
@@ -16638,6 +16764,7 @@ OEHighVowelApocope [no-change]: *x*ó*r*n
 NWGmcInStemNLoss [no-change]: *x*ó*r*n
 OEMedialSyncope [no-change]: *x*ó*r*n
 OELAdjacentSyncope [no-change]: *x*ó*r*n
+OEHighLinkSyncope [no-change]: *x*ó*r*n
 OEDentalAssimilation [no-change]: *x*ó*r*n
 OEPreconsonantalDegemination [no-change]: *x*ó*r*n
 OEEarlyOShortening [no-change]: *x*ó*r*n
@@ -16769,6 +16896,7 @@ OEHighVowelApocope [no-change]: *x*ú*n*d
 NWGmcInStemNLoss [no-change]: *x*ú*n*d
 OEMedialSyncope [no-change]: *x*ú*n*d
 OELAdjacentSyncope [no-change]: *x*ú*n*d
+OEHighLinkSyncope [no-change]: *x*ú*n*d
 OEDentalAssimilation [no-change]: *x*ú*n*d
 OEPreconsonantalDegemination [no-change]: *x*ú*n*d
 OEEarlyOShortening [no-change]: *x*ú*n*d
@@ -16901,6 +17029,7 @@ OEHighVowelApocope [no-change]: *ç*īe*w*j
 NWGmcInStemNLoss [no-change]: *ç*īe*w*j
 OEMedialSyncope [no-change]: *ç*īe*w*j
 OELAdjacentSyncope [no-change]: *ç*īe*w*j
+OEHighLinkSyncope [no-change]: *ç*īe*w*j
 OEDentalAssimilation [no-change]: *ç*īe*w*j
 OEPreconsonantalDegemination [no-change]: *ç*īe*w*j
 OEEarlyOShortening [no-change]: *ç*īe*w*j
@@ -17032,6 +17161,7 @@ OEHighVowelApocope [no-change]: *k*n*é*d*ą*n
 NWGmcInStemNLoss [no-change]: *k*n*é*d*ą*n
 OEMedialSyncope [no-change]: *k*n*é*d*ą*n
 OELAdjacentSyncope [no-change]: *k*n*é*d*ą*n
+OEHighLinkSyncope [no-change]: *k*n*é*d*ą*n
 OEDentalAssimilation [no-change]: *k*n*é*d*ą*n
 OEPreconsonantalDegemination [no-change]: *k*n*é*d*ą*n
 OEEarlyOShortening [no-change]: *k*n*é*d*ą*n
@@ -17163,6 +17293,7 @@ OEHighVowelApocope [no-change]: *l*á*n*d
 NWGmcInStemNLoss [no-change]: *l*á*n*d
 OEMedialSyncope [no-change]: *l*á*n*d
 OELAdjacentSyncope [no-change]: *l*á*n*d
+OEHighLinkSyncope [no-change]: *l*á*n*d
 OEDentalAssimilation [no-change]: *l*á*n*d
 OEPreconsonantalDegemination [no-change]: *l*á*n*d
 OEEarlyOShortening [no-change]: *l*á*n*d
@@ -17294,6 +17425,7 @@ OEHighVowelApocope [no-change]: *l*ǣ*s*t*j*ą*n
 NWGmcInStemNLoss [no-change]: *l*ǣ*s*t*j*ą*n
 OEMedialSyncope [no-change]: *l*ǣ*s*t*j*ą*n
 OELAdjacentSyncope [no-change]: *l*ǣ*s*t*j*ą*n
+OEHighLinkSyncope [no-change]: *l*ǣ*s*t*j*ą*n
 OEDentalAssimilation [no-change]: *l*ǣ*s*t*j*ą*n
 OEPreconsonantalDegemination [no-change]: *l*ǣ*s*t*j*ą*n
 OEEarlyOShortening [no-change]: *l*ǣ*s*t*j*ą*n
@@ -17426,6 +17558,7 @@ OEHighVowelApocope [no-change]: *l*ǣ*d*j*ą*n
 NWGmcInStemNLoss [no-change]: *l*ǣ*d*j*ą*n
 OEMedialSyncope [no-change]: *l*ǣ*d*j*ą*n
 OELAdjacentSyncope [no-change]: *l*ǣ*d*j*ą*n
+OEHighLinkSyncope [no-change]: *l*ǣ*d*j*ą*n
 OEDentalAssimilation [no-change]: *l*ǣ*d*j*ą*n
 OEPreconsonantalDegemination [no-change]: *l*ǣ*d*j*ą*n
 OEEarlyOShortening [no-change]: *l*ǣ*d*j*ą*n
@@ -17557,6 +17690,7 @@ OEHighVowelApocope [no-change]: *l*ēa*β
 NWGmcInStemNLoss [no-change]: *l*ēa*β
 OEMedialSyncope [no-change]: *l*ēa*β
 OELAdjacentSyncope [no-change]: *l*ēa*β
+OEHighLinkSyncope [no-change]: *l*ēa*β
 OEDentalAssimilation [no-change]: *l*ēa*β
 OEPreconsonantalDegemination [no-change]: *l*ēa*β
 OEEarlyOShortening [no-change]: *l*ēa*β
@@ -17689,6 +17823,7 @@ OEHighVowelApocope [no-change]: *l*éo*r*n*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *l*éo*r*n*ē*j*ą*n
 OEMedialSyncope [no-change]: *l*éo*r*n*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *l*éo*r*n*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *l*éo*r*n*ē*j*ą*n
 OEDentalAssimilation [no-change]: *l*éo*r*n*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *l*éo*r*n*ē*j*ą*n
 OEEarlyOShortening [no-change]: *l*éo*r*n*ē*j*ą*n
@@ -17820,6 +17955,7 @@ OEHighVowelApocope [no-change]: *l*é*θ*r
 NWGmcInStemNLoss [no-change]: *l*é*θ*r
 OEMedialSyncope [no-change]: *l*é*θ*r
 OELAdjacentSyncope [no-change]: *l*é*θ*r
+OEHighLinkSyncope [no-change]: *l*é*θ*r
 OEDentalAssimilation [no-change]: *l*é*θ*r
 OEPreconsonantalDegemination [no-change]: *l*é*θ*r
 OEEarlyOShortening [no-change]: *l*é*θ*r
@@ -17951,6 +18087,7 @@ OEHighVowelApocope [no-change]: *l*ēa*k
 NWGmcInStemNLoss [no-change]: *l*ēa*k
 OEMedialSyncope [no-change]: *l*ēa*k
 OELAdjacentSyncope [no-change]: *l*ēa*k
+OEHighLinkSyncope [no-change]: *l*ēa*k
 OEDentalAssimilation [no-change]: *l*ēa*k
 OEPreconsonantalDegemination [no-change]: *l*ēa*k
 OEEarlyOShortening [no-change]: *l*ēa*k
@@ -18082,6 +18219,7 @@ OEHighVowelApocope [no-change]: *l*ǣ*t*ą*n
 NWGmcInStemNLoss [no-change]: *l*ǣ*t*ą*n
 OEMedialSyncope [no-change]: *l*ǣ*t*ą*n
 OELAdjacentSyncope [no-change]: *l*ǣ*t*ą*n
+OEHighLinkSyncope [no-change]: *l*ǣ*t*ą*n
 OEDentalAssimilation [no-change]: *l*ǣ*t*ą*n
 OEPreconsonantalDegemination [no-change]: *l*ǣ*t*ą*n
 OEEarlyOShortening [no-change]: *l*ǣ*t*ą*n
@@ -18213,6 +18351,7 @@ OEHighVowelApocope [no-change]: *l*í*k*k*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *l*í*k*k*ē*j*ą*n
 OEMedialSyncope [no-change]: *l*í*k*k*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *l*í*k*k*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *l*í*k*k*ē*j*ą*n
 OEDentalAssimilation [no-change]: *l*í*k*k*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *l*í*k*k*ē*j*ą*n
 OEEarlyOShortening [no-change]: *l*í*k*k*ē*j*ą*n
@@ -18345,6 +18484,7 @@ OEHighVowelApocope [no-change]: *x*l*í*d
 NWGmcInStemNLoss [no-change]: *x*l*í*d
 OEMedialSyncope [no-change]: *x*l*í*d
 OELAdjacentSyncope [no-change]: *x*l*í*d
+OEHighLinkSyncope [no-change]: *x*l*í*d
 OEDentalAssimilation [no-change]: *x*l*í*d
 OEPreconsonantalDegemination [no-change]: *x*l*í*d
 OEEarlyOShortening [no-change]: *x*l*í*d
@@ -18476,6 +18616,7 @@ OEHighVowelApocope [no-change]: *l*ḯ*β
 NWGmcInStemNLoss [no-change]: *l*ḯ*β
 OEMedialSyncope [no-change]: *l*ḯ*β
 OELAdjacentSyncope [no-change]: *l*ḯ*β
+OEHighLinkSyncope [no-change]: *l*ḯ*β
 OEDentalAssimilation [no-change]: *l*ḯ*β
 OEPreconsonantalDegemination [no-change]: *l*ḯ*β
 OEEarlyOShortening [no-change]: *l*ḯ*β
@@ -18608,6 +18749,7 @@ OEHighVowelApocope [no-change]: *l*īe*x*t*j*ą*n
 NWGmcInStemNLoss [no-change]: *l*īe*x*t*j*ą*n
 OEMedialSyncope [no-change]: *l*īe*x*t*j*ą*n
 OELAdjacentSyncope [no-change]: *l*īe*x*t*j*ą*n
+OEHighLinkSyncope [no-change]: *l*īe*x*t*j*ą*n
 OEDentalAssimilation [no-change]: *l*īe*x*t*j*ą*n
 OEPreconsonantalDegemination [no-change]: *l*īe*x*t*j*ą*n
 OEEarlyOShortening [no-change]: *l*īe*x*t*j*ą*n
@@ -18739,6 +18881,7 @@ OEHighVowelApocope [no-change]: *l*ḯ*m
 NWGmcInStemNLoss [no-change]: *l*ḯ*m
 OEMedialSyncope [no-change]: *l*ḯ*m
 OELAdjacentSyncope [no-change]: *l*ḯ*m
+OEHighLinkSyncope [no-change]: *l*ḯ*m
 OEDentalAssimilation [no-change]: *l*ḯ*m
 OEPreconsonantalDegemination [no-change]: *l*ḯ*m
 OEEarlyOShortening [no-change]: *l*ḯ*m
@@ -18871,6 +19014,7 @@ OEHighVowelApocope: *l*í*n*d
 NWGmcInStemNLoss [no-change]: *l*í*n*d
 OEMedialSyncope [no-change]: *l*í*n*d
 OELAdjacentSyncope [no-change]: *l*í*n*d
+OEHighLinkSyncope [no-change]: *l*í*n*d
 OEDentalAssimilation [no-change]: *l*í*n*d
 OEPreconsonantalDegemination [no-change]: *l*í*n*d
 OEEarlyOShortening [no-change]: *l*í*n*d
@@ -19002,6 +19146,7 @@ OEHighVowelApocope [no-change]: *l*ḯ*n*ǭ
 NWGmcInStemNLoss [no-change]: *l*ḯ*n*ǭ
 OEMedialSyncope [no-change]: *l*ḯ*n*ǭ
 OELAdjacentSyncope [no-change]: *l*ḯ*n*ǭ
+OEHighLinkSyncope [no-change]: *l*ḯ*n*ǭ
 OEDentalAssimilation [no-change]: *l*ḯ*n*ǭ
 OEPreconsonantalDegemination [no-change]: *l*ḯ*n*ǭ
 OEEarlyOShortening [no-change]: *l*ḯ*n*ǭ
@@ -19133,6 +19278,7 @@ OEHighVowelApocope [no-change]: *l*ḯ*s*t*ǭ
 NWGmcInStemNLoss [no-change]: *l*ḯ*s*t*ǭ
 OEMedialSyncope [no-change]: *l*ḯ*s*t*ǭ
 OELAdjacentSyncope [no-change]: *l*ḯ*s*t*ǭ
+OEHighLinkSyncope [no-change]: *l*ḯ*s*t*ǭ
 OEDentalAssimilation [no-change]: *l*ḯ*s*t*ǭ
 OEPreconsonantalDegemination [no-change]: *l*ḯ*s*t*ǭ
 OEEarlyOShortening [no-change]: *l*ḯ*s*t*ǭ
@@ -19264,6 +19410,7 @@ OEHighVowelApocope: *l*í*β*r
 NWGmcInStemNLoss [no-change]: *l*í*β*r
 OEMedialSyncope [no-change]: *l*í*β*r
 OELAdjacentSyncope [no-change]: *l*í*β*r
+OEHighLinkSyncope [no-change]: *l*í*β*r
 OEDentalAssimilation [no-change]: *l*í*β*r
 OEPreconsonantalDegemination [no-change]: *l*í*β*r
 OEEarlyOShortening [no-change]: *l*í*β*r
@@ -19395,6 +19542,7 @@ OEHighVowelApocope [no-change]: *l*ā*θ
 NWGmcInStemNLoss [no-change]: *l*ā*θ
 OEMedialSyncope [no-change]: *l*ā*θ
 OELAdjacentSyncope [no-change]: *l*ā*θ
+OEHighLinkSyncope [no-change]: *l*ā*θ
 OEDentalAssimilation [no-change]: *l*ā*θ
 OEPreconsonantalDegemination [no-change]: *l*ā*θ
 OEEarlyOShortening [no-change]: *l*ā*θ
@@ -19526,6 +19674,7 @@ OEHighVowelApocope [no-change]: *l*ó*k
 NWGmcInStemNLoss [no-change]: *l*ó*k
 OEMedialSyncope [no-change]: *l*ó*k
 OELAdjacentSyncope [no-change]: *l*ó*k
+OEHighLinkSyncope [no-change]: *l*ó*k
 OEDentalAssimilation [no-change]: *l*ó*k
 OEPreconsonantalDegemination [no-change]: *l*ó*k
 OEEarlyOShortening [no-change]: *l*ó*k
@@ -19657,6 +19806,7 @@ OEHighVowelApocope [no-change]: *l*ó*k*k
 NWGmcInStemNLoss [no-change]: *l*ó*k*k
 OEMedialSyncope [no-change]: *l*ó*k*k
 OELAdjacentSyncope [no-change]: *l*ó*k*k
+OEHighLinkSyncope [no-change]: *l*ó*k*k
 OEDentalAssimilation [no-change]: *l*ó*k*k
 OEPreconsonantalDegemination [no-change]: *l*ó*k*k
 OEEarlyOShortening [no-change]: *l*ó*k*k
@@ -19788,6 +19938,7 @@ OEHighVowelApocope [no-change]: *l*ū*s
 NWGmcInStemNLoss [no-change]: *l*ū*s
 OEMedialSyncope [no-change]: *l*ū*s
 OELAdjacentSyncope [no-change]: *l*ū*s
+OEHighLinkSyncope [no-change]: *l*ū*s
 OEDentalAssimilation [no-change]: *l*ū*s
 OEPreconsonantalDegemination [no-change]: *l*ū*s
 OEEarlyOShortening [no-change]: *l*ū*s
@@ -19919,6 +20070,7 @@ OEHighVowelApocope: *l*ú*s*t
 NWGmcInStemNLoss [no-change]: *l*ú*s*t
 OEMedialSyncope [no-change]: *l*ú*s*t
 OELAdjacentSyncope [no-change]: *l*ú*s*t
+OEHighLinkSyncope [no-change]: *l*ú*s*t
 OEDentalAssimilation [no-change]: *l*ú*s*t
 OEPreconsonantalDegemination [no-change]: *l*ú*s*t
 OEEarlyOShortening [no-change]: *l*ú*s*t
@@ -20050,6 +20202,7 @@ OEHighVowelApocope: *l*ēa*g
 NWGmcInStemNLoss [no-change]: *l*ēa*g
 OEMedialSyncope [no-change]: *l*ēa*g
 OELAdjacentSyncope [no-change]: *l*ēa*g
+OEHighLinkSyncope [no-change]: *l*ēa*g
 OEDentalAssimilation [no-change]: *l*ēa*g
 OEPreconsonantalDegemination [no-change]: *l*ēa*g
 OEEarlyOShortening [no-change]: *l*ēa*g
@@ -20181,6 +20334,7 @@ OEHighVowelApocope [no-change]: *m*a*k*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *m*a*k*ē*j*ą*n
 OEMedialSyncope [no-change]: *m*a*k*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *m*a*k*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *m*a*k*ē*j*ą*n
 OEDentalAssimilation [no-change]: *m*a*k*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *m*a*k*ē*j*ą*n
 OEEarlyOShortening [no-change]: *m*a*k*ē*j*ą*n
@@ -20312,6 +20466,7 @@ OEHighVowelApocope [no-change]: *m*ea*l*t
 NWGmcInStemNLoss [no-change]: *m*ea*l*t
 OEMedialSyncope [no-change]: *m*ea*l*t
 OELAdjacentSyncope [no-change]: *m*ea*l*t
+OEHighLinkSyncope [no-change]: *m*ea*l*t
 OEDentalAssimilation [no-change]: *m*ea*l*t
 OEPreconsonantalDegemination [no-change]: *m*ea*l*t
 OEEarlyOShortening [no-change]: *m*ea*l*t
@@ -20444,6 +20599,7 @@ OEHighVowelApocope: *m*ea*r*k
 NWGmcInStemNLoss [no-change]: *m*ea*r*k
 OEMedialSyncope [no-change]: *m*ea*r*k
 OELAdjacentSyncope [no-change]: *m*ea*r*k
+OEHighLinkSyncope [no-change]: *m*ea*r*k
 OEDentalAssimilation [no-change]: *m*ea*r*k
 OEPreconsonantalDegemination [no-change]: *m*ea*r*k
 OEEarlyOShortening [no-change]: *m*ea*r*k
@@ -20575,6 +20731,7 @@ OEHighVowelApocope [no-change]: *m*æ*s*t
 NWGmcInStemNLoss [no-change]: *m*æ*s*t
 OEMedialSyncope [no-change]: *m*æ*s*t
 OELAdjacentSyncope [no-change]: *m*æ*s*t
+OEHighLinkSyncope [no-change]: *m*æ*s*t
 OEDentalAssimilation [no-change]: *m*æ*s*t
 OEPreconsonantalDegemination [no-change]: *m*æ*s*t
 OEEarlyOShortening [no-change]: *m*æ*s*t
@@ -20706,6 +20863,7 @@ OEHighVowelApocope [no-change]: *m*ǣ*l
 NWGmcInStemNLoss [no-change]: *m*ǣ*l
 OEMedialSyncope [no-change]: *m*ǣ*l
 OELAdjacentSyncope [no-change]: *m*ǣ*l
+OEHighLinkSyncope [no-change]: *m*ǣ*l
 OEDentalAssimilation [no-change]: *m*ǣ*l
 OEPreconsonantalDegemination [no-change]: *m*ǣ*l
 OEEarlyOShortening [no-change]: *m*ǣ*l
@@ -20837,6 +20995,7 @@ OEHighVowelApocope [no-change]: *m*ǣ*n*j*ą*n
 NWGmcInStemNLoss [no-change]: *m*ǣ*n*j*ą*n
 OEMedialSyncope [no-change]: *m*ǣ*n*j*ą*n
 OELAdjacentSyncope [no-change]: *m*ǣ*n*j*ą*n
+OEHighLinkSyncope [no-change]: *m*ǣ*n*j*ą*n
 OEDentalAssimilation [no-change]: *m*ǣ*n*j*ą*n
 OEPreconsonantalDegemination [no-change]: *m*ǣ*n*j*ą*n
 OEEarlyOShortening [no-change]: *m*ǣ*n*j*ą*n
@@ -20968,6 +21127,7 @@ OEHighVowelApocope: *m*i*x*t
 NWGmcInStemNLoss [no-change]: *m*i*x*t
 OEMedialSyncope [no-change]: *m*i*x*t
 OELAdjacentSyncope [no-change]: *m*i*x*t
+OEHighLinkSyncope [no-change]: *m*i*x*t
 OEDentalAssimilation [no-change]: *m*i*x*t
 OEPreconsonantalDegemination [no-change]: *m*i*x*t
 OEEarlyOShortening [no-change]: *m*i*x*t
@@ -21100,6 +21260,7 @@ OEHighVowelApocope [no-change]: *m*éo*l*u*k
 NWGmcInStemNLoss [no-change]: *m*éo*l*u*k
 OEMedialSyncope [no-change]: *m*éo*l*u*k
 OELAdjacentSyncope [no-change]: *m*éo*l*u*k
+OEHighLinkSyncope [no-change]: *m*éo*l*u*k
 OEDentalAssimilation [no-change]: *m*éo*l*u*k
 OEPreconsonantalDegemination [no-change]: *m*éo*l*u*k
 OEEarlyOShortening [no-change]: *m*éo*l*u*k
@@ -21231,6 +21392,7 @@ OEHighVowelApocope [no-change]: *m*ō*n*ō*θ
 NWGmcInStemNLoss [no-change]: *m*ō*n*ō*θ
 OEMedialSyncope [no-change]: *m*ō*n*ō*θ
 OELAdjacentSyncope [no-change]: *m*ō*n*ō*θ
+OEHighLinkSyncope [no-change]: *m*ō*n*ō*θ
 OEDentalAssimilation [no-change]: *m*ō*n*ō*θ
 OEPreconsonantalDegemination [no-change]: *m*ō*n*ō*θ
 OEEarlyOShortening [no-change]: *m*ō*n*ō*θ
@@ -21362,6 +21524,7 @@ OEHighVowelApocope [no-change]: *m*ō*d
 NWGmcInStemNLoss [no-change]: *m*ō*d
 OEMedialSyncope [no-change]: *m*ō*d
 OELAdjacentSyncope [no-change]: *m*ō*d
+OEHighLinkSyncope [no-change]: *m*ō*d
 OEDentalAssimilation [no-change]: *m*ō*d
 OEPreconsonantalDegemination [no-change]: *m*ō*d
 OEEarlyOShortening [no-change]: *m*ō*d
@@ -21494,6 +21657,7 @@ OEHighVowelApocope [no-change]: *m*ō*d*ē*r
 NWGmcInStemNLoss [no-change]: *m*ō*d*ē*r
 OEMedialSyncope [no-change]: *m*ō*d*ē*r
 OELAdjacentSyncope [no-change]: *m*ō*d*ē*r
+OEHighLinkSyncope [no-change]: *m*ō*d*ē*r
 OEDentalAssimilation [no-change]: *m*ō*d*ē*r
 OEPreconsonantalDegemination [no-change]: *m*ō*d*ē*r
 OEEarlyOShortening [no-change]: *m*ō*d*ē*r
@@ -21625,6 +21789,7 @@ OEHighVowelApocope [no-change]: *n*æ*ʝ*l
 NWGmcInStemNLoss [no-change]: *n*æ*ʝ*l
 OEMedialSyncope [no-change]: *n*æ*ʝ*l
 OELAdjacentSyncope [no-change]: *n*æ*ʝ*l
+OEHighLinkSyncope [no-change]: *n*æ*ʝ*l
 OEDentalAssimilation [no-change]: *n*æ*ʝ*l
 OEPreconsonantalDegemination [no-change]: *n*æ*ʝ*l
 OEEarlyOShortening [no-change]: *n*æ*ʝ*l
@@ -21756,6 +21921,7 @@ OEHighVowelApocope [no-change]: *n*á*m*ô
 NWGmcInStemNLoss [no-change]: *n*á*m*ô
 OEMedialSyncope [no-change]: *n*á*m*ô
 OELAdjacentSyncope [no-change]: *n*á*m*ô
+OEHighLinkSyncope [no-change]: *n*á*m*ô
 OEDentalAssimilation [no-change]: *n*á*m*ô
 OEPreconsonantalDegemination [no-change]: *n*á*m*ô
 OEEarlyOShortening [no-change]: *n*á*m*ô
@@ -21887,6 +22053,7 @@ OEHighVowelApocope [no-change]: *n*a*β*u
 NWGmcInStemNLoss [no-change]: *n*a*β*u
 OEMedialSyncope [no-change]: *n*a*β*u
 OELAdjacentSyncope [no-change]: *n*a*β*u
+OEHighLinkSyncope [no-change]: *n*a*β*u
 OEDentalAssimilation [no-change]: *n*a*β*u
 OEPreconsonantalDegemination [no-change]: *n*a*β*u
 OEEarlyOShortening [no-change]: *n*a*β*u
@@ -22018,6 +22185,7 @@ OEHighVowelApocope: *n*īe*d
 NWGmcInStemNLoss [no-change]: *n*īe*d
 OEMedialSyncope [no-change]: *n*īe*d
 OELAdjacentSyncope [no-change]: *n*īe*d
+OEHighLinkSyncope [no-change]: *n*īe*d
 OEDentalAssimilation [no-change]: *n*īe*d
 OEPreconsonantalDegemination [no-change]: *n*īe*d
 OEEarlyOShortening [no-change]: *n*īe*d
@@ -22149,6 +22317,7 @@ OEHighVowelApocope [no-change]: *n*é*s*t
 NWGmcInStemNLoss [no-change]: *n*é*s*t
 OEMedialSyncope [no-change]: *n*é*s*t
 OELAdjacentSyncope [no-change]: *n*é*s*t
+OEHighLinkSyncope [no-change]: *n*é*s*t
 OEDentalAssimilation [no-change]: *n*é*s*t
 OEPreconsonantalDegemination [no-change]: *n*é*s*t
 OEEarlyOShortening [no-change]: *n*é*s*t
@@ -22281,6 +22450,7 @@ OEHighVowelApocope [no-change]: *n*e*t*t*j
 NWGmcInStemNLoss [no-change]: *n*e*t*t*j
 OEMedialSyncope [no-change]: *n*e*t*t*j
 OELAdjacentSyncope [no-change]: *n*e*t*t*j
+OEHighLinkSyncope [no-change]: *n*e*t*t*j
 OEDentalAssimilation [no-change]: *n*e*t*t*j
 OEPreconsonantalDegemination [no-change]: *n*e*t*t*j
 OEEarlyOShortening [no-change]: *n*e*t*t*j
@@ -22412,6 +22582,7 @@ OEHighVowelApocope [no-change]: *n*e*t*i*l*ǭ
 NWGmcInStemNLoss [no-change]: *n*e*t*i*l*ǭ
 OEMedialSyncope [no-change]: *n*e*t*i*l*ǭ
 OELAdjacentSyncope: *n*e*t*l*ǭ
+OEHighLinkSyncope [no-change]: *n*e*t*l*ǭ
 OEDentalAssimilation [no-change]: *n*e*t*l*ǭ
 OEPreconsonantalDegemination [no-change]: *n*e*t*l*ǭ
 OEEarlyOShortening [no-change]: *n*e*t*l*ǭ
@@ -22544,6 +22715,7 @@ OEHighVowelApocope [no-change]: *m*a*r*ǭ
 NWGmcInStemNLoss [no-change]: *m*a*r*ǭ
 OEMedialSyncope [no-change]: *m*a*r*ǭ
 OELAdjacentSyncope [no-change]: *m*a*r*ǭ
+OEHighLinkSyncope [no-change]: *m*a*r*ǭ
 OEDentalAssimilation [no-change]: *m*a*r*ǭ
 OEPreconsonantalDegemination [no-change]: *m*a*r*ǭ
 OEEarlyOShortening [no-change]: *m*a*r*ǭ
@@ -22675,6 +22847,7 @@ OEHighVowelApocope [no-change]: *n*í*g*u*n
 NWGmcInStemNLoss [no-change]: *n*í*g*u*n
 OEMedialSyncope [no-change]: *n*í*g*u*n
 OELAdjacentSyncope [no-change]: *n*í*g*u*n
+OEHighLinkSyncope [no-change]: *n*í*g*u*n
 OEDentalAssimilation [no-change]: *n*í*g*u*n
 OEPreconsonantalDegemination [no-change]: *n*í*g*u*n
 OEEarlyOShortening [no-change]: *n*í*g*u*n
@@ -22806,6 +22979,7 @@ OEHighVowelApocope [no-change]: *ā*n
 NWGmcInStemNLoss [no-change]: *ā*n
 OEMedialSyncope [no-change]: *ā*n
 OELAdjacentSyncope [no-change]: *ā*n
+OEHighLinkSyncope [no-change]: *ā*n
 OEDentalAssimilation [no-change]: *ā*n
 OEPreconsonantalDegemination [no-change]: *ā*n
 OEEarlyOShortening [no-change]: *ā*n
@@ -22937,6 +23111,7 @@ OEHighVowelApocope [no-change]: *ó*f*n
 NWGmcInStemNLoss [no-change]: *ó*f*n
 OEMedialSyncope [no-change]: *ó*f*n
 OELAdjacentSyncope [no-change]: *ó*f*n
+OEHighLinkSyncope [no-change]: *ó*f*n
 OEDentalAssimilation [no-change]: *ó*f*n
 OEPreconsonantalDegemination [no-change]: *ó*f*n
 OEEarlyOShortening [no-change]: *ó*f*n
@@ -23068,6 +23243,7 @@ OEHighVowelApocope [no-change]: *ó*x*s*ô
 NWGmcInStemNLoss [no-change]: *ó*x*s*ô
 OEMedialSyncope [no-change]: *ó*x*s*ô
 OELAdjacentSyncope [no-change]: *ó*x*s*ô
+OEHighLinkSyncope [no-change]: *ó*x*s*ô
 OEDentalAssimilation [no-change]: *ó*x*s*ô
 OEPreconsonantalDegemination [no-change]: *ó*x*s*ô
 OEEarlyOShortening [no-change]: *ó*x*s*ô
@@ -23199,6 +23375,7 @@ OEHighVowelApocope [no-change]: *r*é*ʝ*n
 NWGmcInStemNLoss [no-change]: *r*é*ʝ*n
 OEMedialSyncope [no-change]: *r*é*ʝ*n
 OELAdjacentSyncope [no-change]: *r*é*ʝ*n
+OEHighLinkSyncope [no-change]: *r*é*ʝ*n
 OEDentalAssimilation [no-change]: *r*é*ʝ*n
 OEPreconsonantalDegemination [no-change]: *r*é*ʝ*n
 OEEarlyOShortening [no-change]: *r*é*ʝ*n
@@ -23330,6 +23507,7 @@ OEHighVowelApocope [no-change]: *r*é*ʝ*n*b*o*g*ô
 NWGmcInStemNLoss [no-change]: *r*é*ʝ*n*b*o*g*ô
 OEMedialSyncope [no-change]: *r*é*ʝ*n*b*o*g*ô
 OELAdjacentSyncope [no-change]: *r*é*ʝ*n*b*o*g*ô
+OEHighLinkSyncope [no-change]: *r*é*ʝ*n*b*o*g*ô
 OEDentalAssimilation [no-change]: *r*é*ʝ*n*b*o*g*ô
 OEPreconsonantalDegemination [no-change]: *r*é*ʝ*n*b*o*g*ô
 OEEarlyOShortening [no-change]: *r*é*ʝ*n*b*o*g*ô
@@ -23461,6 +23639,7 @@ OEHighVowelApocope [no-change]: *x*r*æ*β*n
 NWGmcInStemNLoss [no-change]: *x*r*æ*β*n
 OEMedialSyncope [no-change]: *x*r*æ*β*n
 OELAdjacentSyncope [no-change]: *x*r*æ*β*n
+OEHighLinkSyncope [no-change]: *x*r*æ*β*n
 OEDentalAssimilation [no-change]: *x*r*æ*β*n
 OEPreconsonantalDegemination [no-change]: *x*r*æ*β*n
 OEEarlyOShortening [no-change]: *x*r*æ*β*n
@@ -23592,6 +23771,7 @@ OEHighVowelApocope [no-change]: *r*ǣ*d*ą*n
 NWGmcInStemNLoss [no-change]: *r*ǣ*d*ą*n
 OEMedialSyncope [no-change]: *r*ǣ*d*ą*n
 OELAdjacentSyncope [no-change]: *r*ǣ*d*ą*n
+OEHighLinkSyncope [no-change]: *r*ǣ*d*ą*n
 OEDentalAssimilation [no-change]: *r*ǣ*d*ą*n
 OEPreconsonantalDegemination [no-change]: *r*ǣ*d*ą*n
 OEEarlyOShortening [no-change]: *r*ǣ*d*ą*n
@@ -23723,6 +23903,7 @@ OEHighVowelApocope [no-change]: *r*ḯ*d*ą*n
 NWGmcInStemNLoss [no-change]: *r*ḯ*d*ą*n
 OEMedialSyncope [no-change]: *r*ḯ*d*ą*n
 OELAdjacentSyncope [no-change]: *r*ḯ*d*ą*n
+OEHighLinkSyncope [no-change]: *r*ḯ*d*ą*n
 OEDentalAssimilation [no-change]: *r*ḯ*d*ą*n
 OEPreconsonantalDegemination [no-change]: *r*ḯ*d*ą*n
 OEEarlyOShortening [no-change]: *r*ḯ*d*ą*n
@@ -23854,6 +24035,7 @@ OEHighVowelApocope: *r*í*n*d
 NWGmcInStemNLoss [no-change]: *r*í*n*d
 OEMedialSyncope [no-change]: *r*í*n*d
 OELAdjacentSyncope [no-change]: *r*í*n*d
+OEHighLinkSyncope [no-change]: *r*í*n*d
 OEDentalAssimilation [no-change]: *r*í*n*d
 OEPreconsonantalDegemination [no-change]: *r*í*n*d
 OEEarlyOShortening [no-change]: *r*í*n*d
@@ -23985,6 +24167,7 @@ OEHighVowelApocope: *r*ō*d
 NWGmcInStemNLoss [no-change]: *r*ō*d
 OEMedialSyncope [no-change]: *r*ō*d
 OELAdjacentSyncope [no-change]: *r*ō*d
+OEHighLinkSyncope [no-change]: *r*ō*d
 OEDentalAssimilation [no-change]: *r*ō*d
 OEPreconsonantalDegemination [no-change]: *r*ō*d
 OEEarlyOShortening [no-change]: *r*ō*d
@@ -24116,6 +24299,7 @@ OEHighVowelApocope [no-change]: *r*ū*m
 NWGmcInStemNLoss [no-change]: *r*ū*m
 OEMedialSyncope [no-change]: *r*ū*m
 OELAdjacentSyncope [no-change]: *r*ū*m
+OEHighLinkSyncope [no-change]: *r*ū*m
 OEDentalAssimilation [no-change]: *r*ū*m
 OEPreconsonantalDegemination [no-change]: *r*ū*m
 OEEarlyOShortening [no-change]: *r*ū*m
@@ -24247,6 +24431,7 @@ OEHighVowelApocope [no-change]: *r*ā*p
 NWGmcInStemNLoss [no-change]: *r*ā*p
 OEMedialSyncope [no-change]: *r*ā*p
 OELAdjacentSyncope [no-change]: *r*ā*p
+OEHighLinkSyncope [no-change]: *r*ā*p
 OEDentalAssimilation [no-change]: *r*ā*p
 OEPreconsonantalDegemination [no-change]: *r*ā*p
 OEEarlyOShortening [no-change]: *r*ā*p
@@ -24378,6 +24563,7 @@ OEHighVowelApocope [no-change]: *r*ō*θ*r
 NWGmcInStemNLoss [no-change]: *r*ō*θ*r
 OEMedialSyncope [no-change]: *r*ō*θ*r
 OELAdjacentSyncope [no-change]: *r*ō*θ*r
+OEHighLinkSyncope [no-change]: *r*ō*θ*r
 OEDentalAssimilation [no-change]: *r*ō*θ*r
 OEPreconsonantalDegemination [no-change]: *r*ō*θ*r
 OEEarlyOShortening [no-change]: *r*ō*θ*r
@@ -24509,6 +24695,7 @@ OEHighVowelApocope [no-change]: *r*í*n*n*ą*n
 NWGmcInStemNLoss [no-change]: *r*í*n*n*ą*n
 OEMedialSyncope [no-change]: *r*í*n*n*ą*n
 OELAdjacentSyncope [no-change]: *r*í*n*n*ą*n
+OEHighLinkSyncope [no-change]: *r*í*n*n*ą*n
 OEDentalAssimilation [no-change]: *r*í*n*n*ą*n
 OEPreconsonantalDegemination [no-change]: *r*í*n*n*ą*n
 OEEarlyOShortening [no-change]: *r*í*n*n*ą*n
@@ -24640,6 +24827,7 @@ OEHighVowelApocope [no-change]: *r*y*ʝ*i
 NWGmcInStemNLoss [no-change]: *r*y*ʝ*i
 OEMedialSyncope [no-change]: *r*y*ʝ*i
 OELAdjacentSyncope [no-change]: *r*y*ʝ*i
+OEHighLinkSyncope [no-change]: *r*y*ʝ*i
 OEDentalAssimilation [no-change]: *r*y*ʝ*i
 OEPreconsonantalDegemination [no-change]: *r*y*ʝ*i
 OEEarlyOShortening [no-change]: *r*y*ʝ*i
@@ -24771,6 +24959,7 @@ OEHighVowelApocope [no-change]: *s*é*ʝ*l
 NWGmcInStemNLoss [no-change]: *s*é*ʝ*l
 OEMedialSyncope [no-change]: *s*é*ʝ*l
 OELAdjacentSyncope [no-change]: *s*é*ʝ*l
+OEHighLinkSyncope [no-change]: *s*é*ʝ*l
 OEDentalAssimilation [no-change]: *s*é*ʝ*l
 OEPreconsonantalDegemination [no-change]: *s*é*ʝ*l
 OEEarlyOShortening [no-change]: *s*é*ʝ*l
@@ -24902,6 +25091,7 @@ OEHighVowelApocope [no-change]: *s*a*k*u
 NWGmcInStemNLoss [no-change]: *s*a*k*u
 OEMedialSyncope [no-change]: *s*a*k*u
 OELAdjacentSyncope [no-change]: *s*a*k*u
+OEHighLinkSyncope [no-change]: *s*a*k*u
 OEDentalAssimilation [no-change]: *s*a*k*u
 OEPreconsonantalDegemination [no-change]: *s*a*k*u
 OEEarlyOShortening [no-change]: *s*a*k*u
@@ -25033,6 +25223,7 @@ OEHighVowelApocope [no-change]: *s*ea*l*t
 NWGmcInStemNLoss [no-change]: *s*ea*l*t
 OEMedialSyncope [no-change]: *s*ea*l*t
 OELAdjacentSyncope [no-change]: *s*ea*l*t
+OEHighLinkSyncope [no-change]: *s*ea*l*t
 OEDentalAssimilation [no-change]: *s*ea*l*t
 OEPreconsonantalDegemination [no-change]: *s*ea*l*t
 OEEarlyOShortening [no-change]: *s*ea*l*t
@@ -25164,6 +25355,7 @@ OEHighVowelApocope: *s*ea*l*β
 NWGmcInStemNLoss [no-change]: *s*ea*l*β
 OEMedialSyncope [no-change]: *s*ea*l*β
 OELAdjacentSyncope [no-change]: *s*ea*l*β
+OEHighLinkSyncope [no-change]: *s*ea*l*β
 OEDentalAssimilation [no-change]: *s*ea*l*β
 OEPreconsonantalDegemination [no-change]: *s*ea*l*β
 OEEarlyOShortening [no-change]: *s*ea*l*β
@@ -25295,6 +25487,7 @@ OEHighVowelApocope [no-change]: *s*ēa*m
 NWGmcInStemNLoss [no-change]: *s*ēa*m
 OEMedialSyncope [no-change]: *s*ēa*m
 OELAdjacentSyncope [no-change]: *s*ēa*m
+OEHighLinkSyncope [no-change]: *s*ēa*m
 OEDentalAssimilation [no-change]: *s*ēa*m
 OEPreconsonantalDegemination [no-change]: *s*ēa*m
 OEEarlyOShortening [no-change]: *s*ēa*m
@@ -25426,6 +25619,7 @@ OEHighVowelApocope [no-change]: *s*ē*ʧ*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*ē*ʧ*j*ą*n
 OEMedialSyncope [no-change]: *s*ē*ʧ*j*ą*n
 OELAdjacentSyncope [no-change]: *s*ē*ʧ*j*ą*n
+OEHighLinkSyncope [no-change]: *s*ē*ʧ*j*ą*n
 OEDentalAssimilation [no-change]: *s*ē*ʧ*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*ē*ʧ*j*ą*n
 OEEarlyOShortening [no-change]: *s*ē*ʧ*j*ą*n
@@ -25557,6 +25751,7 @@ OEHighVowelApocope [no-change]: *s*e*n*d*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*e*n*d*j*ą*n
 OEMedialSyncope [no-change]: *s*e*n*d*j*ą*n
 OELAdjacentSyncope [no-change]: *s*e*n*d*j*ą*n
+OEHighLinkSyncope [no-change]: *s*e*n*d*j*ą*n
 OEDentalAssimilation [no-change]: *s*e*n*d*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*e*n*d*j*ą*n
 OEEarlyOShortening [no-change]: *s*e*n*d*j*ą*n
@@ -25688,6 +25883,7 @@ OEHighVowelApocope [no-change]: *s*e*t*t*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*e*t*t*j*ą*n
 OEMedialSyncope [no-change]: *s*e*t*t*j*ą*n
 OELAdjacentSyncope [no-change]: *s*e*t*t*j*ą*n
+OEHighLinkSyncope [no-change]: *s*e*t*t*j*ą*n
 OEDentalAssimilation [no-change]: *s*e*t*t*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*e*t*t*j*ą*n
 OEEarlyOShortening [no-change]: *s*e*t*t*j*ą*n
@@ -25819,6 +26015,7 @@ OEHighVowelApocope [no-change]: *s*éo*β*u*n
 NWGmcInStemNLoss [no-change]: *s*éo*β*u*n
 OEMedialSyncope [no-change]: *s*éo*β*u*n
 OELAdjacentSyncope [no-change]: *s*éo*β*u*n
+OEHighLinkSyncope [no-change]: *s*éo*β*u*n
 OEDentalAssimilation [no-change]: *s*éo*β*u*n
 OEPreconsonantalDegemination [no-change]: *s*éo*β*u*n
 OEEarlyOShortening [no-change]: *s*éo*β*u*n
@@ -25950,6 +26147,7 @@ OEHighVowelApocope [no-change]: *ʃ*ea*f*t
 NWGmcInStemNLoss [no-change]: *ʃ*ea*f*t
 OEMedialSyncope [no-change]: *ʃ*ea*f*t
 OELAdjacentSyncope [no-change]: *ʃ*ea*f*t
+OEHighLinkSyncope [no-change]: *ʃ*ea*f*t
 OEDentalAssimilation [no-change]: *ʃ*ea*f*t
 OEPreconsonantalDegemination [no-change]: *ʃ*ea*f*t
 OEEarlyOShortening [no-change]: *ʃ*ea*f*t
@@ -26081,6 +26279,7 @@ OEHighVowelApocope [no-change]: *ʃ*á*m*u
 NWGmcInStemNLoss [no-change]: *ʃ*á*m*u
 OEMedialSyncope [no-change]: *ʃ*á*m*u
 OELAdjacentSyncope [no-change]: *ʃ*á*m*u
+OEHighLinkSyncope [no-change]: *ʃ*á*m*u
 OEDentalAssimilation [no-change]: *ʃ*á*m*u
 OEPreconsonantalDegemination [no-change]: *ʃ*á*m*u
 OEEarlyOShortening [no-change]: *ʃ*á*m*u
@@ -26212,6 +26411,7 @@ OEHighVowelApocope [no-change]: *ʃ*íe*r*ą*n
 NWGmcInStemNLoss [no-change]: *ʃ*íe*r*ą*n
 OEMedialSyncope [no-change]: *ʃ*íe*r*ą*n
 OELAdjacentSyncope [no-change]: *ʃ*íe*r*ą*n
+OEHighLinkSyncope [no-change]: *ʃ*íe*r*ą*n
 OEDentalAssimilation [no-change]: *ʃ*íe*r*ą*n
 OEPreconsonantalDegemination [no-change]: *ʃ*íe*r*ą*n
 OEEarlyOShortening [no-change]: *ʃ*íe*r*ą*n
@@ -26343,6 +26543,7 @@ OEHighVowelApocope: *ʃ*ēa*θ
 NWGmcInStemNLoss [no-change]: *ʃ*ēa*θ
 OEMedialSyncope [no-change]: *ʃ*ēa*θ
 OELAdjacentSyncope [no-change]: *ʃ*ēa*θ
+OEHighLinkSyncope [no-change]: *ʃ*ēa*θ
 OEDentalAssimilation [no-change]: *ʃ*ēa*θ
 OEPreconsonantalDegemination [no-change]: *ʃ*ēa*θ
 OEEarlyOShortening [no-change]: *ʃ*ēa*θ
@@ -26475,6 +26676,7 @@ OEHighVowelApocope [no-change]: *ʃ*ēa*p
 NWGmcInStemNLoss [no-change]: *ʃ*ēa*p
 OEMedialSyncope [no-change]: *ʃ*ēa*p
 OELAdjacentSyncope [no-change]: *ʃ*ēa*p
+OEHighLinkSyncope [no-change]: *ʃ*ēa*p
 OEDentalAssimilation [no-change]: *ʃ*ēa*p
 OEPreconsonantalDegemination [no-change]: *ʃ*ēa*p
 OEEarlyOShortening [no-change]: *ʃ*ēa*p
@@ -26606,6 +26808,7 @@ OEHighVowelApocope: *ʃ*íe*l*d
 NWGmcInStemNLoss [no-change]: *ʃ*íe*l*d
 OEMedialSyncope [no-change]: *ʃ*íe*l*d
 OELAdjacentSyncope [no-change]: *ʃ*íe*l*d
+OEHighLinkSyncope [no-change]: *ʃ*íe*l*d
 OEDentalAssimilation [no-change]: *ʃ*íe*l*d
 OEPreconsonantalDegemination [no-change]: *ʃ*íe*l*d
 OEEarlyOShortening [no-change]: *ʃ*íe*l*d
@@ -26738,6 +26941,7 @@ OEHighVowelApocope [no-change]: *ʃ*í*l*l*i*n*g
 NWGmcInStemNLoss [no-change]: *ʃ*í*l*l*i*n*g
 OEMedialSyncope [no-change]: *ʃ*í*l*l*i*n*g
 OELAdjacentSyncope [no-change]: *ʃ*í*l*l*i*n*g
+OEHighLinkSyncope [no-change]: *ʃ*í*l*l*i*n*g
 OEDentalAssimilation [no-change]: *ʃ*í*l*l*i*n*g
 OEPreconsonantalDegemination [no-change]: *ʃ*í*l*l*i*n*g
 OEEarlyOShortening [no-change]: *ʃ*í*l*l*i*n*g
@@ -26869,6 +27073,7 @@ OEHighVowelApocope [no-change]: *ʃ*ḯ*n*ą*n
 NWGmcInStemNLoss [no-change]: *ʃ*ḯ*n*ą*n
 OEMedialSyncope [no-change]: *ʃ*ḯ*n*ą*n
 OELAdjacentSyncope [no-change]: *ʃ*ḯ*n*ą*n
+OEHighLinkSyncope [no-change]: *ʃ*ḯ*n*ą*n
 OEDentalAssimilation [no-change]: *ʃ*ḯ*n*ą*n
 OEPreconsonantalDegemination [no-change]: *ʃ*ḯ*n*ą*n
 OEEarlyOShortening [no-change]: *ʃ*ḯ*n*ą*n
@@ -27000,6 +27205,7 @@ OEHighVowelApocope: *ʃ*ó*f*l
 NWGmcInStemNLoss [no-change]: *ʃ*ó*f*l
 OEMedialSyncope [no-change]: *ʃ*ó*f*l
 OELAdjacentSyncope [no-change]: *ʃ*ó*f*l
+OEHighLinkSyncope [no-change]: *ʃ*ó*f*l
 OEDentalAssimilation [no-change]: *ʃ*ó*f*l
 OEPreconsonantalDegemination [no-change]: *ʃ*ó*f*l
 OEEarlyOShortening [no-change]: *ʃ*ó*f*l
@@ -27132,6 +27338,7 @@ OEHighVowelApocope [no-change]: *ʃ*ḗa*w*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *ʃ*ḗa*w*ē*j*ą*n
 OEMedialSyncope [no-change]: *ʃ*ḗa*w*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *ʃ*ḗa*w*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *ʃ*ḗa*w*ē*j*ą*n
 OEDentalAssimilation [no-change]: *ʃ*ḗa*w*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *ʃ*ḗa*w*ē*j*ą*n
 OEEarlyOShortening [no-change]: *ʃ*ḗa*w*ē*j*ą*n
@@ -27263,6 +27470,7 @@ OEHighVowelApocope: *ʃ*ū*r
 NWGmcInStemNLoss [no-change]: *ʃ*ū*r
 OEMedialSyncope [no-change]: *ʃ*ū*r
 OELAdjacentSyncope [no-change]: *ʃ*ū*r
+OEHighLinkSyncope [no-change]: *ʃ*ū*r
 OEDentalAssimilation [no-change]: *ʃ*ū*r
 OEPreconsonantalDegemination [no-change]: *ʃ*ū*r
 OEEarlyOShortening [no-change]: *ʃ*ū*r
@@ -27394,6 +27602,7 @@ OEHighVowelApocope [no-change]: *s*ḯ*d*ǭ
 NWGmcInStemNLoss [no-change]: *s*ḯ*d*ǭ
 OEMedialSyncope [no-change]: *s*ḯ*d*ǭ
 OELAdjacentSyncope [no-change]: *s*ḯ*d*ǭ
+OEHighLinkSyncope [no-change]: *s*ḯ*d*ǭ
 OEDentalAssimilation [no-change]: *s*ḯ*d*ǭ
 OEPreconsonantalDegemination [no-change]: *s*ḯ*d*ǭ
 OEEarlyOShortening [no-change]: *s*ḯ*d*ǭ
@@ -27525,6 +27734,7 @@ OEHighVowelApocope [no-change]: *s*í*n*g*ą*n
 NWGmcInStemNLoss [no-change]: *s*í*n*g*ą*n
 OEMedialSyncope [no-change]: *s*í*n*g*ą*n
 OELAdjacentSyncope [no-change]: *s*í*n*g*ą*n
+OEHighLinkSyncope [no-change]: *s*í*n*g*ą*n
 OEDentalAssimilation [no-change]: *s*í*n*g*ą*n
 OEPreconsonantalDegemination [no-change]: *s*í*n*g*ą*n
 OEEarlyOShortening [no-change]: *s*í*n*g*ą*n
@@ -27656,6 +27866,7 @@ OEHighVowelApocope [no-change]: *s*e*n*ʤ*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*e*n*ʤ*j*ą*n
 OEMedialSyncope [no-change]: *s*e*n*ʤ*j*ą*n
 OELAdjacentSyncope [no-change]: *s*e*n*ʤ*j*ą*n
+OEHighLinkSyncope [no-change]: *s*e*n*ʤ*j*ą*n
 OEDentalAssimilation [no-change]: *s*e*n*ʤ*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*e*n*ʤ*j*ą*n
 OEEarlyOShortening [no-change]: *s*e*n*ʤ*j*ą*n
@@ -27787,6 +27998,7 @@ OEHighVowelApocope [no-change]: *s*w*é*s*t*ē*r
 NWGmcInStemNLoss [no-change]: *s*w*é*s*t*ē*r
 OEMedialSyncope [no-change]: *s*w*é*s*t*ē*r
 OELAdjacentSyncope [no-change]: *s*w*é*s*t*ē*r
+OEHighLinkSyncope [no-change]: *s*w*é*s*t*ē*r
 OEDentalAssimilation [no-change]: *s*w*é*s*t*ē*r
 OEPreconsonantalDegemination [no-change]: *s*w*é*s*t*ē*r
 OEEarlyOShortening [no-change]: *s*w*é*s*t*ē*r
@@ -27918,6 +28130,7 @@ OEHighVowelApocope [no-change]: *s*i*t*t*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*i*t*t*j*ą*n
 OEMedialSyncope [no-change]: *s*i*t*t*j*ą*n
 OELAdjacentSyncope [no-change]: *s*i*t*t*j*ą*n
+OEHighLinkSyncope [no-change]: *s*i*t*t*j*ą*n
 OEDentalAssimilation [no-change]: *s*i*t*t*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*i*t*t*j*ą*n
 OEEarlyOShortening [no-change]: *s*i*t*t*j*ą*n
@@ -28049,6 +28262,7 @@ OEHighVowelApocope [no-change]: *s*i*x*s
 NWGmcInStemNLoss [no-change]: *s*i*x*s
 OEMedialSyncope [no-change]: *s*i*x*s
 OELAdjacentSyncope [no-change]: *s*i*x*s
+OEHighLinkSyncope [no-change]: *s*i*x*s
 OEDentalAssimilation [no-change]: *s*i*x*s
 OEPreconsonantalDegemination [no-change]: *s*i*x*s
 OEEarlyOShortening [no-change]: *s*i*x*s
@@ -28180,6 +28394,7 @@ OEHighVowelApocope [no-change]: *s*l*ea*x*ą*n
 NWGmcInStemNLoss [no-change]: *s*l*ea*x*ą*n
 OEMedialSyncope [no-change]: *s*l*ea*x*ą*n
 OELAdjacentSyncope [no-change]: *s*l*ea*x*ą*n
+OEHighLinkSyncope [no-change]: *s*l*ea*x*ą*n
 OEDentalAssimilation [no-change]: *s*l*ea*x*ą*n
 OEPreconsonantalDegemination [no-change]: *s*l*ea*x*ą*n
 OEEarlyOShortening [no-change]: *s*l*ea*x*ą*n
@@ -28312,6 +28527,7 @@ OEHighVowelApocope [no-change]: *s*l*ǣ*p*ą*n
 NWGmcInStemNLoss [no-change]: *s*l*ǣ*p*ą*n
 OEMedialSyncope [no-change]: *s*l*ǣ*p*ą*n
 OELAdjacentSyncope [no-change]: *s*l*ǣ*p*ą*n
+OEHighLinkSyncope [no-change]: *s*l*ǣ*p*ą*n
 OEDentalAssimilation [no-change]: *s*l*ǣ*p*ą*n
 OEPreconsonantalDegemination [no-change]: *s*l*ǣ*p*ą*n
 OEEarlyOShortening [no-change]: *s*l*ǣ*p*ą*n
@@ -28443,6 +28659,7 @@ OEHighVowelApocope [no-change]: *s*l*ḯ*m
 NWGmcInStemNLoss [no-change]: *s*l*ḯ*m
 OEMedialSyncope [no-change]: *s*l*ḯ*m
 OELAdjacentSyncope [no-change]: *s*l*ḯ*m
+OEHighLinkSyncope [no-change]: *s*l*ḯ*m
 OEDentalAssimilation [no-change]: *s*l*ḯ*m
 OEPreconsonantalDegemination [no-change]: *s*l*ḯ*m
 OEEarlyOShortening [no-change]: *s*l*ḯ*m
@@ -28575,6 +28792,7 @@ OEHighVowelApocope [no-change]: *s*m*íe*r*w*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*m*íe*r*w*j*ą*n
 OEMedialSyncope [no-change]: *s*m*íe*r*w*j*ą*n
 OELAdjacentSyncope [no-change]: *s*m*íe*r*w*j*ą*n
+OEHighLinkSyncope [no-change]: *s*m*íe*r*w*j*ą*n
 OEDentalAssimilation [no-change]: *s*m*íe*r*w*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*m*íe*r*w*j*ą*n
 OEEarlyOShortening [no-change]: *s*m*íe*r*w*j*ą*n
@@ -28706,6 +28924,7 @@ OEHighVowelApocope [no-change]: *s*n*ā*w
 NWGmcInStemNLoss [no-change]: *s*n*ā*w
 OEMedialSyncope [no-change]: *s*n*ā*w
 OELAdjacentSyncope [no-change]: *s*n*ā*w
+OEHighLinkSyncope [no-change]: *s*n*ā*w
 OEDentalAssimilation [no-change]: *s*n*ā*w
 OEPreconsonantalDegemination [no-change]: *s*n*ā*w
 OEEarlyOShortening [no-change]: *s*n*ā*w
@@ -28837,6 +29056,7 @@ OEHighVowelApocope: *s*ó*r*g
 NWGmcInStemNLoss [no-change]: *s*ó*r*g
 OEMedialSyncope [no-change]: *s*ó*r*g
 OELAdjacentSyncope [no-change]: *s*ó*r*g
+OEHighLinkSyncope [no-change]: *s*ó*r*g
 OEDentalAssimilation [no-change]: *s*ó*r*g
 OEPreconsonantalDegemination [no-change]: *s*ó*r*g
 OEEarlyOShortening [no-change]: *s*ó*r*g
@@ -28969,6 +29189,7 @@ OEHighVowelApocope [no-change]: *s*ā*w*l*ǭ
 NWGmcInStemNLoss [no-change]: *s*ā*w*l*ǭ
 OEMedialSyncope [no-change]: *s*ā*w*l*ǭ
 OELAdjacentSyncope [no-change]: *s*ā*w*l*ǭ
+OEHighLinkSyncope [no-change]: *s*ā*w*l*ǭ
 OEDentalAssimilation [no-change]: *s*ā*w*l*ǭ
 OEPreconsonantalDegemination [no-change]: *s*ā*w*l*ǭ
 OEEarlyOShortening [no-change]: *s*ā*w*l*ǭ
@@ -29101,6 +29322,7 @@ OEHighVowelApocope [no-change]: *s*ā*w*ą*n
 NWGmcInStemNLoss [no-change]: *s*ā*w*ą*n
 OEMedialSyncope [no-change]: *s*ā*w*ą*n
 OELAdjacentSyncope [no-change]: *s*ā*w*ą*n
+OEHighLinkSyncope [no-change]: *s*ā*w*ą*n
 OEDentalAssimilation [no-change]: *s*ā*w*ą*n
 OEPreconsonantalDegemination [no-change]: *s*ā*w*ą*n
 OEEarlyOShortening [no-change]: *s*ā*w*ą*n
@@ -29233,6 +29455,7 @@ OEHighVowelApocope [no-change]: *s*p*á*n*n*ą*n
 NWGmcInStemNLoss [no-change]: *s*p*á*n*n*ą*n
 OEMedialSyncope [no-change]: *s*p*á*n*n*ą*n
 OELAdjacentSyncope [no-change]: *s*p*á*n*n*ą*n
+OEHighLinkSyncope [no-change]: *s*p*á*n*n*ą*n
 OEDentalAssimilation [no-change]: *s*p*á*n*n*ą*n
 OEPreconsonantalDegemination [no-change]: *s*p*á*n*n*ą*n
 OEEarlyOShortening [no-change]: *s*p*á*n*n*ą*n
@@ -29365,6 +29588,7 @@ OEHighVowelApocope [no-change]: *s*p*ea*r*r*ô
 NWGmcInStemNLoss [no-change]: *s*p*ea*r*r*ô
 OEMedialSyncope [no-change]: *s*p*ea*r*r*ô
 OELAdjacentSyncope [no-change]: *s*p*ea*r*r*ô
+OEHighLinkSyncope [no-change]: *s*p*ea*r*r*ô
 OEDentalAssimilation [no-change]: *s*p*ea*r*r*ô
 OEPreconsonantalDegemination [no-change]: *s*p*ea*r*r*ô
 OEEarlyOShortening [no-change]: *s*p*ea*r*r*ô
@@ -29496,6 +29720,7 @@ OEHighVowelApocope [no-change]: *s*p*éo*r*u
 NWGmcInStemNLoss [no-change]: *s*p*éo*r*u
 OEMedialSyncope [no-change]: *s*p*éo*r*u
 OELAdjacentSyncope [no-change]: *s*p*éo*r*u
+OEHighLinkSyncope [no-change]: *s*p*éo*r*u
 OEDentalAssimilation [no-change]: *s*p*éo*r*u
 OEPreconsonantalDegemination [no-change]: *s*p*éo*r*u
 OEEarlyOShortening [no-change]: *s*p*éo*r*u
@@ -29627,6 +29852,7 @@ OEHighVowelApocope [no-change]: *s*p*í*n*n*ą*n
 NWGmcInStemNLoss [no-change]: *s*p*í*n*n*ą*n
 OEMedialSyncope [no-change]: *s*p*í*n*n*ą*n
 OELAdjacentSyncope [no-change]: *s*p*í*n*n*ą*n
+OEHighLinkSyncope [no-change]: *s*p*í*n*n*ą*n
 OEDentalAssimilation [no-change]: *s*p*í*n*n*ą*n
 OEPreconsonantalDegemination [no-change]: *s*p*í*n*n*ą*n
 OEEarlyOShortening [no-change]: *s*p*í*n*n*ą*n
@@ -29758,6 +29984,7 @@ OEHighVowelApocope: *s*p*i*n*n*i*l
 NWGmcInStemNLoss [no-change]: *s*p*i*n*n*i*l
 OEMedialSyncope [no-change]: *s*p*i*n*n*i*l
 OELAdjacentSyncope: *s*p*i*n*n*l
+OEHighLinkSyncope [no-change]: *s*p*i*n*n*l
 OEDentalAssimilation [no-change]: *s*p*i*n*n*l
 OEPreconsonantalDegemination: *s*p*i*n*l
 OEEarlyOShortening [no-change]: *s*p*i*n*l
@@ -29889,6 +30116,7 @@ OEHighVowelApocope: *s*p*ō*n
 NWGmcInStemNLoss [no-change]: *s*p*ō*n
 OEMedialSyncope [no-change]: *s*p*ō*n
 OELAdjacentSyncope [no-change]: *s*p*ō*n
+OEHighLinkSyncope [no-change]: *s*p*ō*n
 OEDentalAssimilation [no-change]: *s*p*ō*n
 OEPreconsonantalDegemination [no-change]: *s*p*ō*n
 OEEarlyOShortening [no-change]: *s*p*ō*n
@@ -30020,6 +30248,7 @@ OEHighVowelApocope [no-change]: *s*p*r*ǣ*d*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEMedialSyncope [no-change]: *s*p*r*ǣ*d*j*ą*n
 OELAdjacentSyncope [no-change]: *s*p*r*ǣ*d*j*ą*n
+OEHighLinkSyncope [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEDentalAssimilation [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*p*r*ǣ*d*j*ą*n
 OEEarlyOShortening [no-change]: *s*p*r*ǣ*d*j*ą*n
@@ -30151,6 +30380,7 @@ OEHighVowelApocope [no-change]: *s*p*ó*r*ô
 NWGmcInStemNLoss [no-change]: *s*p*ó*r*ô
 OEMedialSyncope [no-change]: *s*p*ó*r*ô
 OELAdjacentSyncope [no-change]: *s*p*ó*r*ô
+OEHighLinkSyncope [no-change]: *s*p*ó*r*ô
 OEDentalAssimilation [no-change]: *s*p*ó*r*ô
 OEPreconsonantalDegemination [no-change]: *s*p*ó*r*ô
 OEEarlyOShortening [no-change]: *s*p*ó*r*ô
@@ -30282,6 +30512,7 @@ OEHighVowelApocope [no-change]: *s*t*y*r*t*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*t*y*r*t*j*ą*n
 OEMedialSyncope [no-change]: *s*t*y*r*t*j*ą*n
 OELAdjacentSyncope [no-change]: *s*t*y*r*t*j*ą*n
+OEHighLinkSyncope [no-change]: *s*t*y*r*t*j*ą*n
 OEDentalAssimilation [no-change]: *s*t*y*r*t*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*t*y*r*t*j*ą*n
 OEEarlyOShortening [no-change]: *s*t*y*r*t*j*ą*n
@@ -30413,6 +30644,7 @@ OEHighVowelApocope [no-change]: *s*t*éo*r*β*ą*n
 NWGmcInStemNLoss [no-change]: *s*t*éo*r*β*ą*n
 OEMedialSyncope [no-change]: *s*t*éo*r*β*ą*n
 OELAdjacentSyncope [no-change]: *s*t*éo*r*β*ą*n
+OEHighLinkSyncope [no-change]: *s*t*éo*r*β*ą*n
 OEDentalAssimilation [no-change]: *s*t*éo*r*β*ą*n
 OEPreconsonantalDegemination [no-change]: *s*t*éo*r*β*ą*n
 OEEarlyOShortening [no-change]: *s*t*éo*r*β*ą*n
@@ -30544,6 +30776,7 @@ OEHighVowelApocope [no-change]: *s*t*é*l*ą*n
 NWGmcInStemNLoss [no-change]: *s*t*é*l*ą*n
 OEMedialSyncope [no-change]: *s*t*é*l*ą*n
 OELAdjacentSyncope [no-change]: *s*t*é*l*ą*n
+OEHighLinkSyncope [no-change]: *s*t*é*l*ą*n
 OEDentalAssimilation [no-change]: *s*t*é*l*ą*n
 OEPreconsonantalDegemination [no-change]: *s*t*é*l*ą*n
 OEEarlyOShortening [no-change]: *s*t*é*l*ą*n
@@ -30676,6 +30909,7 @@ OEHighVowelApocope [no-change]: *s*t*i*l*l*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*t*i*l*l*j*ą*n
 OEMedialSyncope [no-change]: *s*t*i*l*l*j*ą*n
 OELAdjacentSyncope [no-change]: *s*t*i*l*l*j*ą*n
+OEHighLinkSyncope [no-change]: *s*t*i*l*l*j*ą*n
 OEDentalAssimilation [no-change]: *s*t*i*l*l*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*t*i*l*l*j*ą*n
 OEEarlyOShortening [no-change]: *s*t*i*l*l*j*ą*n
@@ -30807,6 +31041,7 @@ OEHighVowelApocope [no-change]: *s*t*ó*k*k
 NWGmcInStemNLoss [no-change]: *s*t*ó*k*k
 OEMedialSyncope [no-change]: *s*t*ó*k*k
 OELAdjacentSyncope [no-change]: *s*t*ó*k*k
+OEHighLinkSyncope [no-change]: *s*t*ó*k*k
 OEDentalAssimilation [no-change]: *s*t*ó*k*k
 OEPreconsonantalDegemination [no-change]: *s*t*ó*k*k
 OEEarlyOShortening [no-change]: *s*t*ó*k*k
@@ -30938,6 +31173,7 @@ OEHighVowelApocope [no-change]: *s*t*ā*n
 NWGmcInStemNLoss [no-change]: *s*t*ā*n
 OEMedialSyncope [no-change]: *s*t*ā*n
 OELAdjacentSyncope [no-change]: *s*t*ā*n
+OEHighLinkSyncope [no-change]: *s*t*ā*n
 OEDentalAssimilation [no-change]: *s*t*ā*n
 OEPreconsonantalDegemination [no-change]: *s*t*ā*n
 OEEarlyOShortening [no-change]: *s*t*ā*n
@@ -31069,6 +31305,7 @@ OEHighVowelApocope [no-change]: *s*t*ō*l
 NWGmcInStemNLoss [no-change]: *s*t*ō*l
 OEMedialSyncope [no-change]: *s*t*ō*l
 OELAdjacentSyncope [no-change]: *s*t*ō*l
+OEHighLinkSyncope [no-change]: *s*t*ō*l
 OEDentalAssimilation [no-change]: *s*t*ō*l
 OEPreconsonantalDegemination [no-change]: *s*t*ō*l
 OEEarlyOShortening [no-change]: *s*t*ō*l
@@ -31200,6 +31437,7 @@ OEHighVowelApocope [no-change]: *s*t*ó*r*k
 NWGmcInStemNLoss [no-change]: *s*t*ó*r*k
 OEMedialSyncope [no-change]: *s*t*ó*r*k
 OELAdjacentSyncope [no-change]: *s*t*ó*r*k
+OEHighLinkSyncope [no-change]: *s*t*ó*r*k
 OEDentalAssimilation [no-change]: *s*t*ó*r*k
 OEPreconsonantalDegemination [no-change]: *s*t*ó*r*k
 OEEarlyOShortening [no-change]: *s*t*ó*r*k
@@ -31331,6 +31569,7 @@ OEHighVowelApocope [no-change]: *s*t*ó*r*m
 NWGmcInStemNLoss [no-change]: *s*t*ó*r*m
 OEMedialSyncope [no-change]: *s*t*ó*r*m
 OELAdjacentSyncope [no-change]: *s*t*ó*r*m
+OEHighLinkSyncope [no-change]: *s*t*ó*r*m
 OEDentalAssimilation [no-change]: *s*t*ó*r*m
 OEPreconsonantalDegemination [no-change]: *s*t*ó*r*m
 OEEarlyOShortening [no-change]: *s*t*ó*r*m
@@ -31462,6 +31701,7 @@ OEHighVowelApocope [no-change]: *s*t*r*ēa*m
 NWGmcInStemNLoss [no-change]: *s*t*r*ēa*m
 OEMedialSyncope [no-change]: *s*t*r*ēa*m
 OELAdjacentSyncope [no-change]: *s*t*r*ēa*m
+OEHighLinkSyncope [no-change]: *s*t*r*ēa*m
 OEDentalAssimilation [no-change]: *s*t*r*ēa*m
 OEPreconsonantalDegemination [no-change]: *s*t*r*ēa*m
 OEEarlyOShortening [no-change]: *s*t*r*ēa*m
@@ -31593,6 +31833,7 @@ OEHighVowelApocope [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEMedialSyncope [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OELAdjacentSyncope [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
+OEHighLinkSyncope [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEDentalAssimilation [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
 OEEarlyOShortening [no-change]: *s*t*r*e*ʧ*ʧ*j*ą*n
@@ -31724,6 +31965,7 @@ OEHighVowelApocope: *s*t*r*e*n*ʤ
 NWGmcInStemNLoss [no-change]: *s*t*r*e*n*ʤ
 OEMedialSyncope [no-change]: *s*t*r*e*n*ʤ
 OELAdjacentSyncope [no-change]: *s*t*r*e*n*ʤ
+OEHighLinkSyncope [no-change]: *s*t*r*e*n*ʤ
 OEDentalAssimilation [no-change]: *s*t*r*e*n*ʤ
 OEPreconsonantalDegemination [no-change]: *s*t*r*e*n*ʤ
 OEEarlyOShortening [no-change]: *s*t*r*e*n*ʤ
@@ -31855,6 +32097,7 @@ OEHighVowelApocope [no-change]: *s*t*ō*d
 NWGmcInStemNLoss [no-change]: *s*t*ō*d
 OEMedialSyncope [no-change]: *s*t*ō*d
 OELAdjacentSyncope [no-change]: *s*t*ō*d
+OEHighLinkSyncope [no-change]: *s*t*ō*d
 OEDentalAssimilation [no-change]: *s*t*ō*d
 OEPreconsonantalDegemination [no-change]: *s*t*ō*d
 OEEarlyOShortening [no-change]: *s*t*ō*d
@@ -31987,6 +32230,7 @@ OEHighVowelApocope [no-change]: *s*ú*m*æ*r
 NWGmcInStemNLoss [no-change]: *s*ú*m*æ*r
 OEMedialSyncope [no-change]: *s*ú*m*æ*r
 OELAdjacentSyncope [no-change]: *s*ú*m*æ*r
+OEHighLinkSyncope [no-change]: *s*ú*m*æ*r
 OEDentalAssimilation [no-change]: *s*ú*m*æ*r
 OEPreconsonantalDegemination [no-change]: *s*ú*m*æ*r
 OEEarlyOShortening [no-change]: *s*ú*m*æ*r
@@ -32118,6 +32362,7 @@ OEHighVowelApocope [no-change]: *s*ú*n*n*ǭ
 NWGmcInStemNLoss [no-change]: *s*ú*n*n*ǭ
 OEMedialSyncope [no-change]: *s*ú*n*n*ǭ
 OELAdjacentSyncope [no-change]: *s*ú*n*n*ǭ
+OEHighLinkSyncope [no-change]: *s*ú*n*n*ǭ
 OEDentalAssimilation [no-change]: *s*ú*n*n*ǭ
 OEPreconsonantalDegemination [no-change]: *s*ú*n*n*ǭ
 OEEarlyOShortening [no-change]: *s*ú*n*n*ǭ
@@ -32250,6 +32495,7 @@ OEHighVowelApocope [no-change]: *s*ú*n*d*r*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*ú*n*d*r*ē*j*ą*n
 OEMedialSyncope [no-change]: *s*ú*n*d*r*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *s*ú*n*d*r*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *s*ú*n*d*r*ē*j*ą*n
 OEDentalAssimilation [no-change]: *s*ú*n*d*r*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*ú*n*d*r*ē*j*ą*n
 OEEarlyOShortening [no-change]: *s*ú*n*d*r*ē*j*ą*n
@@ -32381,6 +32627,7 @@ OEHighVowelApocope [no-change]: *s*ū*p*ą*n
 NWGmcInStemNLoss [no-change]: *s*ū*p*ą*n
 OEMedialSyncope [no-change]: *s*ū*p*ą*n
 OELAdjacentSyncope [no-change]: *s*ū*p*ą*n
+OEHighLinkSyncope [no-change]: *s*ū*p*ą*n
 OEDentalAssimilation [no-change]: *s*ū*p*ą*n
 OEPreconsonantalDegemination [no-change]: *s*ū*p*ą*n
 OEEarlyOShortening [no-change]: *s*ū*p*ą*n
@@ -32513,6 +32760,7 @@ OEHighVowelApocope [no-change]: *s*w*ea*l*w*ǭ
 NWGmcInStemNLoss [no-change]: *s*w*ea*l*w*ǭ
 OEMedialSyncope [no-change]: *s*w*ea*l*w*ǭ
 OELAdjacentSyncope [no-change]: *s*w*ea*l*w*ǭ
+OEHighLinkSyncope [no-change]: *s*w*ea*l*w*ǭ
 OEDentalAssimilation [no-change]: *s*w*ea*l*w*ǭ
 OEPreconsonantalDegemination [no-change]: *s*w*ea*l*w*ǭ
 OEEarlyOShortening [no-change]: *s*w*ea*l*w*ǭ
@@ -32644,6 +32892,7 @@ OEHighVowelApocope [no-change]: *s*w*é*l*l*ą*n
 NWGmcInStemNLoss [no-change]: *s*w*é*l*l*ą*n
 OEMedialSyncope [no-change]: *s*w*é*l*l*ą*n
 OELAdjacentSyncope [no-change]: *s*w*é*l*l*ą*n
+OEHighLinkSyncope [no-change]: *s*w*é*l*l*ą*n
 OEDentalAssimilation [no-change]: *s*w*é*l*l*ą*n
 OEPreconsonantalDegemination [no-change]: *s*w*é*l*l*ą*n
 OEEarlyOShortening [no-change]: *s*w*é*l*l*ą*n
@@ -32775,6 +33024,7 @@ OEHighVowelApocope [no-change]: *s*w*í*m*m*ą*n
 NWGmcInStemNLoss [no-change]: *s*w*í*m*m*ą*n
 OEMedialSyncope [no-change]: *s*w*í*m*m*ą*n
 OELAdjacentSyncope [no-change]: *s*w*í*m*m*ą*n
+OEHighLinkSyncope [no-change]: *s*w*í*m*m*ą*n
 OEDentalAssimilation [no-change]: *s*w*í*m*m*ą*n
 OEPreconsonantalDegemination [no-change]: *s*w*í*m*m*ą*n
 OEEarlyOShortening [no-change]: *s*w*í*m*m*ą*n
@@ -32907,6 +33157,7 @@ OEHighVowelApocope [no-change]: *s*w*ḯ*n
 NWGmcInStemNLoss [no-change]: *s*w*ḯ*n
 OEMedialSyncope [no-change]: *s*w*ḯ*n
 OELAdjacentSyncope [no-change]: *s*w*ḯ*n
+OEHighLinkSyncope [no-change]: *s*w*ḯ*n
 OEDentalAssimilation [no-change]: *s*w*ḯ*n
 OEPreconsonantalDegemination [no-change]: *s*w*ḯ*n
 OEEarlyOShortening [no-change]: *s*w*ḯ*n
@@ -33038,6 +33289,7 @@ OEHighVowelApocope [no-change]: *s*w*éo*r*d
 NWGmcInStemNLoss [no-change]: *s*w*éo*r*d
 OEMedialSyncope [no-change]: *s*w*éo*r*d
 OELAdjacentSyncope [no-change]: *s*w*éo*r*d
+OEHighLinkSyncope [no-change]: *s*w*éo*r*d
 OEDentalAssimilation [no-change]: *s*w*éo*r*d
 OEPreconsonantalDegemination [no-change]: *s*w*éo*r*d
 OEEarlyOShortening [no-change]: *s*w*éo*r*d
@@ -33169,6 +33421,7 @@ OEHighVowelApocope [no-change]: *t*ēa*m
 NWGmcInStemNLoss [no-change]: *t*ēa*m
 OEMedialSyncope [no-change]: *t*ēa*m
 OELAdjacentSyncope [no-change]: *t*ēa*m
+OEHighLinkSyncope [no-change]: *t*ēa*m
 OEDentalAssimilation [no-change]: *t*ēa*m
 OEPreconsonantalDegemination [no-change]: *t*ēa*m
 OEEarlyOShortening [no-change]: *t*ēa*m
@@ -33300,6 +33553,7 @@ OEHighVowelApocope [no-change]: *θ*é*ʝ*n
 NWGmcInStemNLoss [no-change]: *θ*é*ʝ*n
 OEMedialSyncope [no-change]: *θ*é*ʝ*n
 OELAdjacentSyncope [no-change]: *θ*é*ʝ*n
+OEHighLinkSyncope [no-change]: *θ*é*ʝ*n
 OEDentalAssimilation [no-change]: *θ*é*ʝ*n
 OEPreconsonantalDegemination [no-change]: *θ*é*ʝ*n
 OEEarlyOShortening [no-change]: *θ*é*ʝ*n
@@ -33431,6 +33685,7 @@ OEHighVowelApocope [no-change]: *θ*á*n*k
 NWGmcInStemNLoss [no-change]: *θ*á*n*k
 OEMedialSyncope [no-change]: *θ*á*n*k
 OELAdjacentSyncope [no-change]: *θ*á*n*k
+OEHighLinkSyncope [no-change]: *θ*á*n*k
 OEDentalAssimilation [no-change]: *θ*á*n*k
 OEPreconsonantalDegemination [no-change]: *θ*á*n*k
 OEEarlyOShortening [no-change]: *θ*á*n*k
@@ -33562,6 +33817,7 @@ OEHighVowelApocope [no-change]: *θ*æ*k
 NWGmcInStemNLoss [no-change]: *θ*æ*k
 OEMedialSyncope [no-change]: *θ*æ*k
 OELAdjacentSyncope [no-change]: *θ*æ*k
+OEHighLinkSyncope [no-change]: *θ*æ*k
 OEDentalAssimilation [no-change]: *θ*æ*k
 OEPreconsonantalDegemination [no-change]: *θ*æ*k
 OEEarlyOShortening [no-change]: *θ*æ*k
@@ -33694,6 +33950,7 @@ OEHighVowelApocope [no-change]: *θ*ǣ*r
 NWGmcInStemNLoss [no-change]: *θ*ǣ*r
 OEMedialSyncope [no-change]: *θ*ǣ*r
 OELAdjacentSyncope [no-change]: *θ*ǣ*r
+OEHighLinkSyncope [no-change]: *θ*ǣ*r
 OEDentalAssimilation [no-change]: *θ*ǣ*r
 OEPreconsonantalDegemination [no-change]: *θ*ǣ*r
 OEEarlyOShortening [no-change]: *θ*ǣ*r
@@ -33825,6 +34082,7 @@ OEHighVowelApocope [no-change]: *θ*ēo*β
 NWGmcInStemNLoss [no-change]: *θ*ēo*β
 OEMedialSyncope [no-change]: *θ*ēo*β
 OELAdjacentSyncope [no-change]: *θ*ēo*β
+OEHighLinkSyncope [no-change]: *θ*ēo*β
 OEDentalAssimilation [no-change]: *θ*ēo*β
 OEPreconsonantalDegemination [no-change]: *θ*ēo*β
 OEEarlyOShortening [no-change]: *θ*ēo*β
@@ -33956,6 +34214,7 @@ OEHighVowelApocope [no-change]: *θ*í*n*g
 NWGmcInStemNLoss [no-change]: *θ*í*n*g
 OEMedialSyncope [no-change]: *θ*í*n*g
 OELAdjacentSyncope [no-change]: *θ*í*n*g
+OEHighLinkSyncope [no-change]: *θ*í*n*g
 OEDentalAssimilation [no-change]: *θ*í*n*g
 OEPreconsonantalDegemination [no-change]: *θ*í*n*g
 OEEarlyOShortening [no-change]: *θ*í*n*g
@@ -34088,6 +34347,7 @@ OEHighVowelApocope [no-change]: *θ*e*n*ʧ*j*ą*n
 NWGmcInStemNLoss [no-change]: *θ*e*n*ʧ*j*ą*n
 OEMedialSyncope [no-change]: *θ*e*n*ʧ*j*ą*n
 OELAdjacentSyncope [no-change]: *θ*e*n*ʧ*j*ą*n
+OEHighLinkSyncope [no-change]: *θ*e*n*ʧ*j*ą*n
 OEDentalAssimilation [no-change]: *θ*e*n*ʧ*j*ą*n
 OEPreconsonantalDegemination [no-change]: *θ*e*n*ʧ*j*ą*n
 OEEarlyOShortening [no-change]: *θ*e*n*ʧ*j*ą*n
@@ -34219,6 +34479,7 @@ OEHighVowelApocope: *θ*ú*r*s*t
 NWGmcInStemNLoss [no-change]: *θ*ú*r*s*t
 OEMedialSyncope [no-change]: *θ*ú*r*s*t
 OELAdjacentSyncope [no-change]: *θ*ú*r*s*t
+OEHighLinkSyncope [no-change]: *θ*ú*r*s*t
 OEDentalAssimilation [no-change]: *θ*ú*r*s*t
 OEPreconsonantalDegemination [no-change]: *θ*ú*r*s*t
 OEEarlyOShortening [no-change]: *θ*ú*r*s*t
@@ -34351,6 +34612,7 @@ OEHighVowelApocope [no-change]: *θ*ó*r*n
 NWGmcInStemNLoss [no-change]: *θ*ó*r*n
 OEMedialSyncope [no-change]: *θ*ó*r*n
 OELAdjacentSyncope [no-change]: *θ*ó*r*n
+OEHighLinkSyncope [no-change]: *θ*ó*r*n
 OEDentalAssimilation [no-change]: *θ*ó*r*n
 OEPreconsonantalDegemination [no-change]: *θ*ó*r*n
 OEEarlyOShortening [no-change]: *θ*ó*r*n
@@ -34483,6 +34745,7 @@ OEHighVowelApocope [no-change]: *θ*ō*x*t*ē
 NWGmcInStemNLoss [no-change]: *θ*ō*x*t*ē
 OEMedialSyncope [no-change]: *θ*ō*x*t*ē
 OELAdjacentSyncope [no-change]: *θ*ō*x*t*ē
+OEHighLinkSyncope [no-change]: *θ*ō*x*t*ē
 OEDentalAssimilation [no-change]: *θ*ō*x*t*ē
 OEPreconsonantalDegemination [no-change]: *θ*ō*x*t*ē
 OEEarlyOShortening [no-change]: *θ*ō*x*t*ē
@@ -34614,6 +34877,7 @@ OEHighVowelApocope [no-change]: *θ*r*é*ʃ*ą*n
 NWGmcInStemNLoss [no-change]: *θ*r*é*ʃ*ą*n
 OEMedialSyncope [no-change]: *θ*r*é*ʃ*ą*n
 OELAdjacentSyncope [no-change]: *θ*r*é*ʃ*ą*n
+OEHighLinkSyncope [no-change]: *θ*r*é*ʃ*ą*n
 OEDentalAssimilation [no-change]: *θ*r*é*ʃ*ą*n
 OEPreconsonantalDegemination [no-change]: *θ*r*é*ʃ*ą*n
 OEEarlyOShortening [no-change]: *θ*r*é*ʃ*ą*n
@@ -34745,6 +35009,7 @@ OEHighVowelApocope [no-change]: *θ*ú*n*r
 NWGmcInStemNLoss [no-change]: *θ*ú*n*r
 OEMedialSyncope [no-change]: *θ*ú*n*r
 OELAdjacentSyncope [no-change]: *θ*ú*n*r
+OEHighLinkSyncope [no-change]: *θ*ú*n*r
 OEDentalAssimilation [no-change]: *θ*ú*n*r
 OEPreconsonantalDegemination [no-change]: *θ*ú*n*r
 OEEarlyOShortening [no-change]: *θ*ú*n*r
@@ -34876,6 +35141,7 @@ OEHighVowelApocope [no-change]: *t*í*k*k*ô
 NWGmcInStemNLoss [no-change]: *t*í*k*k*ô
 OEMedialSyncope [no-change]: *t*í*k*k*ô
 OELAdjacentSyncope [no-change]: *t*í*k*k*ô
+OEHighLinkSyncope [no-change]: *t*í*k*k*ô
 OEDentalAssimilation [no-change]: *t*í*k*k*ô
 OEPreconsonantalDegemination [no-change]: *t*í*k*k*ô
 OEEarlyOShortening [no-change]: *t*í*k*k*ô
@@ -35008,6 +35274,7 @@ OEHighVowelApocope: *t*ḯ*d
 NWGmcInStemNLoss [no-change]: *t*ḯ*d
 OEMedialSyncope [no-change]: *t*ḯ*d
 OELAdjacentSyncope [no-change]: *t*ḯ*d
+OEHighLinkSyncope [no-change]: *t*ḯ*d
 OEDentalAssimilation [no-change]: *t*ḯ*d
 OEPreconsonantalDegemination [no-change]: *t*ḯ*d
 OEEarlyOShortening [no-change]: *t*ḯ*d
@@ -35139,6 +35406,7 @@ OEHighVowelApocope [no-change]: *t*ā*x*ǭ
 NWGmcInStemNLoss [no-change]: *t*ā*x*ǭ
 OEMedialSyncope [no-change]: *t*ā*x*ǭ
 OELAdjacentSyncope [no-change]: *t*ā*x*ǭ
+OEHighLinkSyncope [no-change]: *t*ā*x*ǭ
 OEDentalAssimilation [no-change]: *t*ā*x*ǭ
 OEPreconsonantalDegemination [no-change]: *t*ā*x*ǭ
 OEEarlyOShortening [no-change]: *t*ā*x*ǭ
@@ -35271,6 +35539,7 @@ OEHighVowelApocope [no-change]: *t*ā*k*n
 NWGmcInStemNLoss [no-change]: *t*ā*k*n
 OEMedialSyncope [no-change]: *t*ā*k*n
 OELAdjacentSyncope [no-change]: *t*ā*k*n
+OEHighLinkSyncope [no-change]: *t*ā*k*n
 OEDentalAssimilation [no-change]: *t*ā*k*n
 OEPreconsonantalDegemination [no-change]: *t*ā*k*n
 OEEarlyOShortening [no-change]: *t*ā*k*n
@@ -35402,6 +35671,7 @@ OEHighVowelApocope: *t*á*n*g
 NWGmcInStemNLoss [no-change]: *t*á*n*g
 OEMedialSyncope [no-change]: *t*á*n*g
 OELAdjacentSyncope [no-change]: *t*á*n*g
+OEHighLinkSyncope [no-change]: *t*á*n*g
 OEDentalAssimilation [no-change]: *t*á*n*g
 OEPreconsonantalDegemination [no-change]: *t*á*n*g
 OEEarlyOShortening [no-change]: *t*á*n*g
@@ -35533,6 +35803,7 @@ OEHighVowelApocope [no-change]: *t*ú*n*g*ǭ
 NWGmcInStemNLoss [no-change]: *t*ú*n*g*ǭ
 OEMedialSyncope [no-change]: *t*ú*n*g*ǭ
 OELAdjacentSyncope [no-change]: *t*ú*n*g*ǭ
+OEHighLinkSyncope [no-change]: *t*ú*n*g*ǭ
 OEDentalAssimilation [no-change]: *t*ú*n*g*ǭ
 OEPreconsonantalDegemination [no-change]: *t*ú*n*g*ǭ
 OEEarlyOShortening [no-change]: *t*ú*n*g*ǭ
@@ -35665,6 +35936,7 @@ OEHighVowelApocope [no-change]: *t*ū*n
 NWGmcInStemNLoss [no-change]: *t*ū*n
 OEMedialSyncope [no-change]: *t*ū*n
 OELAdjacentSyncope [no-change]: *t*ū*n
+OEHighLinkSyncope [no-change]: *t*ū*n
 OEDentalAssimilation [no-change]: *t*ū*n
 OEPreconsonantalDegemination [no-change]: *t*ū*n
 OEEarlyOShortening [no-change]: *t*ū*n
@@ -35796,6 +36068,7 @@ OEHighVowelApocope [no-change]: *t*r*é*d*ą*n
 NWGmcInStemNLoss [no-change]: *t*r*é*d*ą*n
 OEMedialSyncope [no-change]: *t*r*é*d*ą*n
 OELAdjacentSyncope [no-change]: *t*r*é*d*ą*n
+OEHighLinkSyncope [no-change]: *t*r*é*d*ą*n
 OEDentalAssimilation [no-change]: *t*r*é*d*ą*n
 OEPreconsonantalDegemination [no-change]: *t*r*é*d*ą*n
 OEEarlyOShortening [no-change]: *t*r*é*d*ą*n
@@ -35927,6 +36200,7 @@ OEHighVowelApocope [no-change]: *t*r*ó*g
 NWGmcInStemNLoss [no-change]: *t*r*ó*g
 OEMedialSyncope [no-change]: *t*r*ó*g
 OELAdjacentSyncope [no-change]: *t*r*ó*g
+OEHighLinkSyncope [no-change]: *t*r*ó*g
 OEDentalAssimilation [no-change]: *t*r*ó*g
 OEPreconsonantalDegemination [no-change]: *t*r*ó*g
 OEEarlyOShortening [no-change]: *t*r*ó*g
@@ -36059,6 +36333,7 @@ OEHighVowelApocope [no-change]: *w*a*d*ą*n
 NWGmcInStemNLoss [no-change]: *w*a*d*ą*n
 OEMedialSyncope [no-change]: *w*a*d*ą*n
 OELAdjacentSyncope [no-change]: *w*a*d*ą*n
+OEHighLinkSyncope [no-change]: *w*a*d*ą*n
 OEDentalAssimilation [no-change]: *w*a*d*ą*n
 OEPreconsonantalDegemination [no-change]: *w*a*d*ą*n
 OEEarlyOShortening [no-change]: *w*a*d*ą*n
@@ -36190,6 +36465,7 @@ OEHighVowelApocope [no-change]: *w*æ*ʝ*n
 NWGmcInStemNLoss [no-change]: *w*æ*ʝ*n
 OEMedialSyncope [no-change]: *w*æ*ʝ*n
 OELAdjacentSyncope [no-change]: *w*æ*ʝ*n
+OEHighLinkSyncope [no-change]: *w*æ*ʝ*n
 OEDentalAssimilation [no-change]: *w*æ*ʝ*n
 OEPreconsonantalDegemination [no-change]: *w*æ*ʝ*n
 OEEarlyOShortening [no-change]: *w*æ*ʝ*n
@@ -36321,6 +36597,7 @@ OEHighVowelApocope [no-change]: *w*ea*r*p
 NWGmcInStemNLoss [no-change]: *w*ea*r*p
 OEMedialSyncope [no-change]: *w*ea*r*p
 OELAdjacentSyncope [no-change]: *w*ea*r*p
+OEHighLinkSyncope [no-change]: *w*ea*r*p
 OEDentalAssimilation [no-change]: *w*ea*r*p
 OEPreconsonantalDegemination [no-change]: *w*ea*r*p
 OEEarlyOShortening [no-change]: *w*ea*r*p
@@ -36453,6 +36730,7 @@ OEHighVowelApocope [no-change]: *w*éo*r*p*ą*n
 NWGmcInStemNLoss [no-change]: *w*éo*r*p*ą*n
 OEMedialSyncope [no-change]: *w*éo*r*p*ą*n
 OELAdjacentSyncope [no-change]: *w*éo*r*p*ą*n
+OEHighLinkSyncope [no-change]: *w*éo*r*p*ą*n
 OEDentalAssimilation [no-change]: *w*éo*r*p*ą*n
 OEPreconsonantalDegemination [no-change]: *w*éo*r*p*ą*n
 OEEarlyOShortening [no-change]: *w*éo*r*p*ą*n
@@ -36584,6 +36862,7 @@ OEHighVowelApocope [no-change]: *w*ea*r*t*ǭ
 NWGmcInStemNLoss [no-change]: *w*ea*r*t*ǭ
 OEMedialSyncope [no-change]: *w*ea*r*t*ǭ
 OELAdjacentSyncope [no-change]: *w*ea*r*t*ǭ
+OEHighLinkSyncope [no-change]: *w*ea*r*t*ǭ
 OEDentalAssimilation [no-change]: *w*ea*r*t*ǭ
 OEPreconsonantalDegemination [no-change]: *w*ea*r*t*ǭ
 OEEarlyOShortening [no-change]: *w*ea*r*t*ǭ
@@ -36716,6 +36995,7 @@ OEHighVowelApocope [no-change]: *w*a*s*k*ą*n
 NWGmcInStemNLoss [no-change]: *w*a*s*k*ą*n
 OEMedialSyncope [no-change]: *w*a*s*k*ą*n
 OELAdjacentSyncope [no-change]: *w*a*s*k*ą*n
+OEHighLinkSyncope [no-change]: *w*a*s*k*ą*n
 OEDentalAssimilation [no-change]: *w*a*s*k*ą*n
 OEPreconsonantalDegemination [no-change]: *w*a*s*k*ą*n
 OEEarlyOShortening [no-change]: *w*a*s*k*ą*n
@@ -36847,6 +37127,7 @@ OEHighVowelApocope [no-change]: *w*ea*x*s
 NWGmcInStemNLoss [no-change]: *w*ea*x*s
 OEMedialSyncope [no-change]: *w*ea*x*s
 OELAdjacentSyncope [no-change]: *w*ea*x*s
+OEHighLinkSyncope [no-change]: *w*ea*x*s
 OEDentalAssimilation [no-change]: *w*ea*x*s
 OEPreconsonantalDegemination [no-change]: *w*ea*x*s
 OEEarlyOShortening [no-change]: *w*ea*x*s
@@ -36979,6 +37260,7 @@ OEHighVowelApocope [no-change]: *w*ea*x*s*ą*n
 NWGmcInStemNLoss [no-change]: *w*ea*x*s*ą*n
 OEMedialSyncope [no-change]: *w*ea*x*s*ą*n
 OELAdjacentSyncope [no-change]: *w*ea*x*s*ą*n
+OEHighLinkSyncope [no-change]: *w*ea*x*s*ą*n
 OEDentalAssimilation [no-change]: *w*ea*x*s*ą*n
 OEPreconsonantalDegemination [no-change]: *w*ea*x*s*ą*n
 OEEarlyOShortening [no-change]: *w*ea*x*s*ą*n
@@ -37111,6 +37393,7 @@ OEHighVowelApocope [no-change]: *w*é*ʝ
 NWGmcInStemNLoss [no-change]: *w*é*ʝ
 OEMedialSyncope [no-change]: *w*é*ʝ
 OELAdjacentSyncope [no-change]: *w*é*ʝ
+OEHighLinkSyncope [no-change]: *w*é*ʝ
 OEDentalAssimilation [no-change]: *w*é*ʝ
 OEPreconsonantalDegemination [no-change]: *w*é*ʝ
 OEEarlyOShortening [no-change]: *w*é*ʝ
@@ -37243,6 +37526,7 @@ OEHighVowelApocope [no-change]: *w*ǣ*p*n
 NWGmcInStemNLoss [no-change]: *w*ǣ*p*n
 OEMedialSyncope [no-change]: *w*ǣ*p*n
 OELAdjacentSyncope [no-change]: *w*ǣ*p*n
+OEHighLinkSyncope [no-change]: *w*ǣ*p*n
 OEDentalAssimilation [no-change]: *w*ǣ*p*n
 OEPreconsonantalDegemination [no-change]: *w*ǣ*p*n
 OEEarlyOShortening [no-change]: *w*ǣ*p*n
@@ -37374,6 +37658,7 @@ OEHighVowelApocope [no-change]: *w*é*s*l*ǭ
 NWGmcInStemNLoss [no-change]: *w*é*s*l*ǭ
 OEMedialSyncope [no-change]: *w*é*s*l*ǭ
 OELAdjacentSyncope [no-change]: *w*é*s*l*ǭ
+OEHighLinkSyncope [no-change]: *w*é*s*l*ǭ
 OEDentalAssimilation [no-change]: *w*é*s*l*ǭ
 OEPreconsonantalDegemination [no-change]: *w*é*s*l*ǭ
 OEEarlyOShortening [no-change]: *w*é*s*l*ǭ
@@ -37505,6 +37790,7 @@ OEHighVowelApocope [no-change]: *w*é*d*r
 NWGmcInStemNLoss [no-change]: *w*é*d*r
 OEMedialSyncope [no-change]: *w*é*d*r
 OELAdjacentSyncope [no-change]: *w*é*d*r
+OEHighLinkSyncope [no-change]: *w*é*d*r
 OEDentalAssimilation [no-change]: *w*é*d*r
 OEPreconsonantalDegemination [no-change]: *w*é*d*r
 OEEarlyOShortening [no-change]: *w*é*d*r
@@ -37636,6 +37922,7 @@ OEHighVowelApocope [no-change]: *w*é*β*ą*n
 NWGmcInStemNLoss [no-change]: *w*é*β*ą*n
 OEMedialSyncope [no-change]: *w*é*β*ą*n
 OELAdjacentSyncope [no-change]: *w*é*β*ą*n
+OEHighLinkSyncope [no-change]: *w*é*β*ą*n
 OEDentalAssimilation [no-change]: *w*é*β*ą*n
 OEPreconsonantalDegemination [no-change]: *w*é*β*ą*n
 OEEarlyOShortening [no-change]: *w*é*β*ą*n
@@ -37768,6 +38055,7 @@ OEHighVowelApocope [no-change]: *w*é*s*t
 NWGmcInStemNLoss [no-change]: *w*é*s*t
 OEMedialSyncope [no-change]: *w*é*s*t
 OELAdjacentSyncope [no-change]: *w*é*s*t
+OEHighLinkSyncope [no-change]: *w*é*s*t
 OEDentalAssimilation [no-change]: *w*é*s*t
 OEPreconsonantalDegemination [no-change]: *w*é*s*t
 OEEarlyOShortening [no-change]: *w*é*s*t
@@ -37899,6 +38187,7 @@ OEHighVowelApocope: *w*é*θ*r
 NWGmcInStemNLoss [no-change]: *w*é*θ*r
 OEMedialSyncope [no-change]: *w*é*θ*r
 OELAdjacentSyncope [no-change]: *w*é*θ*r
+OEHighLinkSyncope [no-change]: *w*é*θ*r
 OEDentalAssimilation [no-change]: *w*é*θ*r
 OEPreconsonantalDegemination [no-change]: *w*é*θ*r
 OEEarlyOShortening [no-change]: *w*é*θ*r
@@ -38031,6 +38320,7 @@ OEHighVowelApocope [no-change]: *x*w*ǣ*r
 NWGmcInStemNLoss [no-change]: *x*w*ǣ*r
 OEMedialSyncope [no-change]: *x*w*ǣ*r
 OELAdjacentSyncope [no-change]: *x*w*ǣ*r
+OEHighLinkSyncope [no-change]: *x*w*ǣ*r
 OEDentalAssimilation [no-change]: *x*w*ǣ*r
 OEPreconsonantalDegemination [no-change]: *x*w*ǣ*r
 OEEarlyOShortening [no-change]: *x*w*ǣ*r
@@ -38162,6 +38452,7 @@ OEHighVowelApocope: *x*w*ḯ*l
 NWGmcInStemNLoss [no-change]: *x*w*ḯ*l
 OEMedialSyncope [no-change]: *x*w*ḯ*l
 OELAdjacentSyncope [no-change]: *x*w*ḯ*l
+OEHighLinkSyncope [no-change]: *x*w*ḯ*l
 OEDentalAssimilation [no-change]: *x*w*ḯ*l
 OEPreconsonantalDegemination [no-change]: *x*w*ḯ*l
 OEEarlyOShortening [no-change]: *x*w*ḯ*l
@@ -38294,6 +38585,7 @@ OEHighVowelApocope [no-change]: *x*w*ā
 NWGmcInStemNLoss [no-change]: *x*w*ā
 OEMedialSyncope [no-change]: *x*w*ā
 OELAdjacentSyncope [no-change]: *x*w*ā
+OEHighLinkSyncope [no-change]: *x*w*ā
 OEDentalAssimilation [no-change]: *x*w*ā
 OEPreconsonantalDegemination [no-change]: *x*w*ā
 OEEarlyOShortening [no-change]: *x*w*ā
@@ -38425,6 +38717,7 @@ OEHighVowelApocope [no-change]: *x*ō*r*ǭ
 NWGmcInStemNLoss [no-change]: *x*ō*r*ǭ
 OEMedialSyncope [no-change]: *x*ō*r*ǭ
 OELAdjacentSyncope [no-change]: *x*ō*r*ǭ
+OEHighLinkSyncope [no-change]: *x*ō*r*ǭ
 OEDentalAssimilation [no-change]: *x*ō*r*ǭ
 OEPreconsonantalDegemination [no-change]: *x*ō*r*ǭ
 OEEarlyOShortening [no-change]: *x*ō*r*ǭ
@@ -38556,6 +38849,7 @@ OEHighVowelApocope [no-change]: *w*ú*d*u*w*ǭ
 NWGmcInStemNLoss [no-change]: *w*ú*d*u*w*ǭ
 OEMedialSyncope [no-change]: *w*ú*d*u*w*ǭ
 OELAdjacentSyncope [no-change]: *w*ú*d*u*w*ǭ
+OEHighLinkSyncope [no-change]: *w*ú*d*u*w*ǭ
 OEDentalAssimilation [no-change]: *w*ú*d*u*w*ǭ
 OEPreconsonantalDegemination [no-change]: *w*ú*d*u*w*ǭ
 OEEarlyOShortening [no-change]: *w*ú*d*u*w*ǭ
@@ -38687,6 +38981,7 @@ OEHighVowelApocope [no-change]: *w*ea*l*d*ą*n
 NWGmcInStemNLoss [no-change]: *w*ea*l*d*ą*n
 OEMedialSyncope [no-change]: *w*ea*l*d*ą*n
 OELAdjacentSyncope [no-change]: *w*ea*l*d*ą*n
+OEHighLinkSyncope [no-change]: *w*ea*l*d*ą*n
 OEDentalAssimilation [no-change]: *w*ea*l*d*ą*n
 OEPreconsonantalDegemination [no-change]: *w*ea*l*d*ą*n
 OEEarlyOShortening [no-change]: *w*ea*l*d*ą*n
@@ -38818,6 +39113,7 @@ OEHighVowelApocope [no-change]: *w*ḯ*β
 NWGmcInStemNLoss [no-change]: *w*ḯ*β
 OEMedialSyncope [no-change]: *w*ḯ*β
 OELAdjacentSyncope [no-change]: *w*ḯ*β
+OEHighLinkSyncope [no-change]: *w*ḯ*β
 OEDentalAssimilation [no-change]: *w*ḯ*β
 OEPreconsonantalDegemination [no-change]: *w*ḯ*β
 OEEarlyOShortening [no-change]: *w*ḯ*β
@@ -38949,6 +39245,7 @@ OEHighVowelApocope: *w*i*x*t
 NWGmcInStemNLoss [no-change]: *w*i*x*t
 OEMedialSyncope [no-change]: *w*i*x*t
 OELAdjacentSyncope [no-change]: *w*i*x*t
+OEHighLinkSyncope [no-change]: *w*i*x*t
 OEDentalAssimilation [no-change]: *w*i*x*t
 OEPreconsonantalDegemination [no-change]: *w*i*x*t
 OEEarlyOShortening [no-change]: *w*i*x*t
@@ -39080,6 +39377,7 @@ OEHighVowelApocope [no-change]: *w*i*l*l*j*ą*n
 NWGmcInStemNLoss [no-change]: *w*i*l*l*j*ą*n
 OEMedialSyncope [no-change]: *w*i*l*l*j*ą*n
 OELAdjacentSyncope [no-change]: *w*i*l*l*j*ą*n
+OEHighLinkSyncope [no-change]: *w*i*l*l*j*ą*n
 OEDentalAssimilation [no-change]: *w*i*l*l*j*ą*n
 OEPreconsonantalDegemination [no-change]: *w*i*l*l*j*ą*n
 OEEarlyOShortening [no-change]: *w*i*l*l*j*ą*n
@@ -39212,6 +39510,7 @@ OEHighVowelApocope [no-change]: *w*i*l*l*j*ô
 NWGmcInStemNLoss [no-change]: *w*i*l*l*j*ô
 OEMedialSyncope [no-change]: *w*i*l*l*j*ô
 OELAdjacentSyncope [no-change]: *w*i*l*l*j*ô
+OEHighLinkSyncope [no-change]: *w*i*l*l*j*ô
 OEDentalAssimilation [no-change]: *w*i*l*l*j*ô
 OEPreconsonantalDegemination [no-change]: *w*i*l*l*j*ô
 OEEarlyOShortening [no-change]: *w*i*l*l*j*ô
@@ -39344,6 +39643,7 @@ OEHighVowelApocope [no-change]: *w*í*n*d*ą*n
 NWGmcInStemNLoss [no-change]: *w*í*n*d*ą*n
 OEMedialSyncope [no-change]: *w*í*n*d*ą*n
 OELAdjacentSyncope [no-change]: *w*í*n*d*ą*n
+OEHighLinkSyncope [no-change]: *w*í*n*d*ą*n
 OEDentalAssimilation [no-change]: *w*í*n*d*ą*n
 OEPreconsonantalDegemination [no-change]: *w*í*n*d*ą*n
 OEEarlyOShortening [no-change]: *w*í*n*d*ą*n
@@ -39475,6 +39775,7 @@ OEHighVowelApocope: *w*í*n*t*r
 NWGmcInStemNLoss [no-change]: *w*í*n*t*r
 OEMedialSyncope [no-change]: *w*í*n*t*r
 OELAdjacentSyncope [no-change]: *w*í*n*t*r
+OEHighLinkSyncope [no-change]: *w*í*n*t*r
 OEDentalAssimilation [no-change]: *w*í*n*t*r
 OEPreconsonantalDegemination [no-change]: *w*í*n*t*r
 OEEarlyOShortening [no-change]: *w*í*n*t*r
@@ -39607,6 +39908,7 @@ OEHighVowelApocope: *w*ea*l*d
 NWGmcInStemNLoss [no-change]: *w*ea*l*d
 OEMedialSyncope [no-change]: *w*ea*l*d
 OELAdjacentSyncope [no-change]: *w*ea*l*d
+OEHighLinkSyncope [no-change]: *w*ea*l*d
 OEDentalAssimilation [no-change]: *w*ea*l*d
 OEPreconsonantalDegemination [no-change]: *w*ea*l*d
 OEEarlyOShortening [no-change]: *w*ea*l*d
@@ -39738,6 +40040,7 @@ OEHighVowelApocope [no-change]: *w*ú*n*d*r
 NWGmcInStemNLoss [no-change]: *w*ú*n*d*r
 OEMedialSyncope [no-change]: *w*ú*n*d*r
 OELAdjacentSyncope [no-change]: *w*ú*n*d*r
+OEHighLinkSyncope [no-change]: *w*ú*n*d*r
 OEDentalAssimilation [no-change]: *w*ú*n*d*r
 OEPreconsonantalDegemination [no-change]: *w*ú*n*d*r
 OEEarlyOShortening [no-change]: *w*ú*n*d*r
@@ -39869,6 +40172,7 @@ OEHighVowelApocope [no-change]: *w*ó*r*d
 NWGmcInStemNLoss [no-change]: *w*ó*r*d
 OEMedialSyncope [no-change]: *w*ó*r*d
 OELAdjacentSyncope [no-change]: *w*ó*r*d
+OEHighLinkSyncope [no-change]: *w*ó*r*d
 OEDentalAssimilation [no-change]: *w*ó*r*d
 OEPreconsonantalDegemination [no-change]: *w*ó*r*d
 OEEarlyOShortening [no-change]: *w*ó*r*d
@@ -40001,6 +40305,7 @@ OEHighVowelApocope [no-change]: *w*éo*r*u*l*d
 NWGmcInStemNLoss [no-change]: *w*éo*r*u*l*d
 OEMedialSyncope [no-change]: *w*éo*r*u*l*d
 OELAdjacentSyncope [no-change]: *w*éo*r*u*l*d
+OEHighLinkSyncope [no-change]: *w*éo*r*u*l*d
 OEDentalAssimilation [no-change]: *w*éo*r*u*l*d
 OEPreconsonantalDegemination [no-change]: *w*éo*r*u*l*d
 OEEarlyOShortening [no-change]: *w*éo*r*u*l*d
@@ -40132,6 +40437,7 @@ OEHighVowelApocope: *w*y*r*m
 NWGmcInStemNLoss [no-change]: *w*y*r*m
 OEMedialSyncope [no-change]: *w*y*r*m
 OELAdjacentSyncope [no-change]: *w*y*r*m
+OEHighLinkSyncope [no-change]: *w*y*r*m
 OEDentalAssimilation [no-change]: *w*y*r*m
 OEPreconsonantalDegemination [no-change]: *w*y*r*m
 OEEarlyOShortening [no-change]: *w*y*r*m
@@ -40264,6 +40570,7 @@ OEHighVowelApocope [no-change]: *w*ú*n*d*ō*d*ē
 NWGmcInStemNLoss [no-change]: *w*ú*n*d*ō*d*ē
 OEMedialSyncope [no-change]: *w*ú*n*d*ō*d*ē
 OELAdjacentSyncope [no-change]: *w*ú*n*d*ō*d*ē
+OEHighLinkSyncope [no-change]: *w*ú*n*d*ō*d*ē
 OEDentalAssimilation [no-change]: *w*ú*n*d*ō*d*ē
 OEPreconsonantalDegemination [no-change]: *w*ú*n*d*ō*d*ē
 OEEarlyOShortening [no-change]: *w*ú*n*d*ō*d*ē
@@ -40395,6 +40702,7 @@ OEHighVowelApocope [no-change]: *w*r*í*n*g*ą*n
 NWGmcInStemNLoss [no-change]: *w*r*í*n*g*ą*n
 OEMedialSyncope [no-change]: *w*r*í*n*g*ą*n
 OELAdjacentSyncope [no-change]: *w*r*í*n*g*ą*n
+OEHighLinkSyncope [no-change]: *w*r*í*n*g*ą*n
 OEDentalAssimilation [no-change]: *w*r*í*n*g*ą*n
 OEPreconsonantalDegemination [no-change]: *w*r*í*n*g*ą*n
 OEEarlyOShortening [no-change]: *w*r*í*n*g*ą*n
@@ -40527,6 +40835,7 @@ OEHighVowelApocope [no-change]: *ʝ*ea*r*n
 NWGmcInStemNLoss [no-change]: *ʝ*ea*r*n
 OEMedialSyncope [no-change]: *ʝ*ea*r*n
 OELAdjacentSyncope [no-change]: *ʝ*ea*r*n
+OEHighLinkSyncope [no-change]: *ʝ*ea*r*n
 OEDentalAssimilation [no-change]: *ʝ*ea*r*n
 OEPreconsonantalDegemination [no-change]: *ʝ*ea*r*n
 OEEarlyOShortening [no-change]: *ʝ*ea*r*n
@@ -40658,6 +40967,7 @@ OEHighVowelApocope [no-change]: *j*ēa*r
 NWGmcInStemNLoss [no-change]: *j*ēa*r
 OEMedialSyncope [no-change]: *j*ēa*r
 OELAdjacentSyncope [no-change]: *j*ēa*r
+OEHighLinkSyncope [no-change]: *j*ēa*r
 OEDentalAssimilation [no-change]: *j*ēa*r
 OEPreconsonantalDegemination [no-change]: *j*ēa*r
 OEEarlyOShortening [no-change]: *j*ēa*r
@@ -40789,6 +41099,7 @@ OEHighVowelApocope [no-change]: *j*ó*k
 NWGmcInStemNLoss [no-change]: *j*ó*k
 OEMedialSyncope [no-change]: *j*ó*k
 OELAdjacentSyncope [no-change]: *j*ó*k
+OEHighLinkSyncope [no-change]: *j*ó*k
 OEDentalAssimilation [no-change]: *j*ó*k
 OEPreconsonantalDegemination [no-change]: *j*ó*k
 OEEarlyOShortening [no-change]: *j*ó*k
@@ -40921,6 +41232,7 @@ OEHighVowelApocope [no-change]: *ēo*w
 NWGmcInStemNLoss [no-change]: *ēo*w
 OEMedialSyncope [no-change]: *ēo*w
 OELAdjacentSyncope [no-change]: *ēo*w
+OEHighLinkSyncope [no-change]: *ēo*w
 OEDentalAssimilation [no-change]: *ēo*w
 OEPreconsonantalDegemination [no-change]: *ēo*w
 OEEarlyOShortening [no-change]: *ēo*w
@@ -41055,6 +41367,7 @@ OEHighVowelApocope [no-change]: *b*ó*t*t*m
 NWGmcInStemNLoss [no-change]: *b*ó*t*t*m
 OEMedialSyncope [no-change]: *b*ó*t*t*m
 OELAdjacentSyncope [no-change]: *b*ó*t*t*m
+OEHighLinkSyncope [no-change]: *b*ó*t*t*m
 OEDentalAssimilation [no-change]: *b*ó*t*t*m
 OEPreconsonantalDegemination: *b*ó*t*m
 OEEarlyOShortening [no-change]: *b*ó*t*m
@@ -41186,6 +41499,7 @@ OEHighVowelApocope [no-change]: *b*r*á*n*d*æ*s
 NWGmcInStemNLoss [no-change]: *b*r*á*n*d*æ*s
 OEMedialSyncope [no-change]: *b*r*á*n*d*æ*s
 OELAdjacentSyncope [no-change]: *b*r*á*n*d*æ*s
+OEHighLinkSyncope [no-change]: *b*r*á*n*d*æ*s
 OEDentalAssimilation [no-change]: *b*r*á*n*d*æ*s
 OEPreconsonantalDegemination [no-change]: *b*r*á*n*d*æ*s
 OEEarlyOShortening [no-change]: *b*r*á*n*d*æ*s
@@ -41317,6 +41631,7 @@ OEHighVowelApocope [no-change]: *b*r*ēo*s*t
 NWGmcInStemNLoss [no-change]: *b*r*ēo*s*t
 OEMedialSyncope [no-change]: *b*r*ēo*s*t
 OELAdjacentSyncope [no-change]: *b*r*ēo*s*t
+OEHighLinkSyncope [no-change]: *b*r*ēo*s*t
 OEDentalAssimilation [no-change]: *b*r*ēo*s*t
 OEPreconsonantalDegemination [no-change]: *b*r*ēo*s*t
 OEEarlyOShortening [no-change]: *b*r*ēo*s*t
@@ -41449,6 +41764,7 @@ OEHighVowelApocope [no-change]: *k*r*æ*f*t
 NWGmcInStemNLoss [no-change]: *k*r*æ*f*t
 OEMedialSyncope [no-change]: *k*r*æ*f*t
 OELAdjacentSyncope [no-change]: *k*r*æ*f*t
+OEHighLinkSyncope [no-change]: *k*r*æ*f*t
 OEDentalAssimilation [no-change]: *k*r*æ*f*t
 OEPreconsonantalDegemination [no-change]: *k*r*æ*f*t
 OEEarlyOShortening [no-change]: *k*r*æ*f*t
@@ -41581,6 +41897,7 @@ OEHighVowelApocope [no-change]: *d*i*l*i
 NWGmcInStemNLoss [no-change]: *d*i*l*i
 OEMedialSyncope [no-change]: *d*i*l*i
 OELAdjacentSyncope [no-change]: *d*i*l*i
+OEHighLinkSyncope [no-change]: *d*i*l*i
 OEDentalAssimilation [no-change]: *d*i*l*i
 OEPreconsonantalDegemination [no-change]: *d*i*l*i
 OEEarlyOShortening [no-change]: *d*i*l*i
@@ -41713,6 +42030,7 @@ OEHighVowelApocope [no-change]: *f*e*s*t*j*ą*n
 NWGmcInStemNLoss [no-change]: *f*e*s*t*j*ą*n
 OEMedialSyncope [no-change]: *f*e*s*t*j*ą*n
 OELAdjacentSyncope [no-change]: *f*e*s*t*j*ą*n
+OEHighLinkSyncope [no-change]: *f*e*s*t*j*ą*n
 OEDentalAssimilation [no-change]: *f*e*s*t*j*ą*n
 OEPreconsonantalDegemination [no-change]: *f*e*s*t*j*ą*n
 OEEarlyOShortening [no-change]: *f*e*s*t*j*ą*n
@@ -41844,6 +42162,7 @@ OEHighVowelApocope [no-change]: *f*l*a*s*k*ǭ
 NWGmcInStemNLoss [no-change]: *f*l*a*s*k*ǭ
 OEMedialSyncope [no-change]: *f*l*a*s*k*ǭ
 OELAdjacentSyncope [no-change]: *f*l*a*s*k*ǭ
+OEHighLinkSyncope [no-change]: *f*l*a*s*k*ǭ
 OEDentalAssimilation [no-change]: *f*l*a*s*k*ǭ
 OEPreconsonantalDegemination [no-change]: *f*l*a*s*k*ǭ
 OEEarlyOShortening [no-change]: *f*l*a*s*k*ǭ
@@ -41976,6 +42295,7 @@ OEHighVowelApocope [no-change]: *f*y*l*ʝ*j*ą*n
 NWGmcInStemNLoss [no-change]: *f*y*l*ʝ*j*ą*n
 OEMedialSyncope [no-change]: *f*y*l*ʝ*j*ą*n
 OELAdjacentSyncope [no-change]: *f*y*l*ʝ*j*ą*n
+OEHighLinkSyncope [no-change]: *f*y*l*ʝ*j*ą*n
 OEDentalAssimilation [no-change]: *f*y*l*ʝ*j*ą*n
 OEPreconsonantalDegemination [no-change]: *f*y*l*ʝ*j*ą*n
 OEEarlyOShortening [no-change]: *f*y*l*ʝ*j*ą*n
@@ -42107,6 +42427,7 @@ OEHighVowelApocope [no-change]: *ʝ*ea*l*l*ô
 NWGmcInStemNLoss [no-change]: *ʝ*ea*l*l*ô
 OEMedialSyncope [no-change]: *ʝ*ea*l*l*ô
 OELAdjacentSyncope [no-change]: *ʝ*ea*l*l*ô
+OEHighLinkSyncope [no-change]: *ʝ*ea*l*l*ô
 OEDentalAssimilation [no-change]: *ʝ*ea*l*l*ô
 OEPreconsonantalDegemination [no-change]: *ʝ*ea*l*l*ô
 OEEarlyOShortening [no-change]: *ʝ*ea*l*l*ô
@@ -42239,6 +42560,7 @@ OEHighVowelApocope [no-change]: *ç*éo*β*u*n
 NWGmcInStemNLoss [no-change]: *ç*éo*β*u*n
 OEMedialSyncope [no-change]: *ç*éo*β*u*n
 OELAdjacentSyncope [no-change]: *ç*éo*β*u*n
+OEHighLinkSyncope [no-change]: *ç*éo*β*u*n
 OEDentalAssimilation [no-change]: *ç*éo*β*u*n
 OEPreconsonantalDegemination [no-change]: *ç*éo*β*u*n
 OEEarlyOShortening [no-change]: *ç*éo*β*u*n
@@ -42371,6 +42693,7 @@ OEHighVowelApocope [no-change]: *k*n*i*x*t
 NWGmcInStemNLoss [no-change]: *k*n*i*x*t
 OEMedialSyncope [no-change]: *k*n*i*x*t
 OELAdjacentSyncope [no-change]: *k*n*i*x*t
+OEHighLinkSyncope [no-change]: *k*n*i*x*t
 OEDentalAssimilation [no-change]: *k*n*i*x*t
 OEPreconsonantalDegemination [no-change]: *k*n*i*x*t
 OEEarlyOShortening [no-change]: *k*n*i*x*t
@@ -42503,6 +42826,7 @@ OEHighVowelApocope [no-change]: *x*l*a*d*ą*n
 NWGmcInStemNLoss [no-change]: *x*l*a*d*ą*n
 OEMedialSyncope [no-change]: *x*l*a*d*ą*n
 OELAdjacentSyncope [no-change]: *x*l*a*d*ą*n
+OEHighLinkSyncope [no-change]: *x*l*a*d*ą*n
 OEDentalAssimilation [no-change]: *x*l*a*d*ą*n
 OEPreconsonantalDegemination [no-change]: *x*l*a*d*ą*n
 OEEarlyOShortening [no-change]: *x*l*a*d*ą*n
@@ -42634,6 +42958,7 @@ OEHighVowelApocope [no-change]: *l*a*p*p*ô
 NWGmcInStemNLoss [no-change]: *l*a*p*p*ô
 OEMedialSyncope [no-change]: *l*a*p*p*ô
 OELAdjacentSyncope [no-change]: *l*a*p*p*ô
+OEHighLinkSyncope [no-change]: *l*a*p*p*ô
 OEDentalAssimilation [no-change]: *l*a*p*p*ô
 OEPreconsonantalDegemination [no-change]: *l*a*p*p*ô
 OEEarlyOShortening [no-change]: *l*a*p*p*ô
@@ -42766,6 +43091,7 @@ OEHighVowelApocope [no-change]: *x*l*ie*x*ç*j*ą*n
 NWGmcInStemNLoss [no-change]: *x*l*ie*x*ç*j*ą*n
 OEMedialSyncope [no-change]: *x*l*ie*x*ç*j*ą*n
 OELAdjacentSyncope [no-change]: *x*l*ie*x*ç*j*ą*n
+OEHighLinkSyncope [no-change]: *x*l*ie*x*ç*j*ą*n
 OEDentalAssimilation [no-change]: *x*l*ie*x*ç*j*ą*n
 OEPreconsonantalDegemination [no-change]: *x*l*ie*x*ç*j*ą*n
 OEEarlyOShortening [no-change]: *x*l*ie*x*ç*j*ą*n
@@ -42897,6 +43223,7 @@ OEHighVowelApocope [no-change]: *l*ā*m
 NWGmcInStemNLoss [no-change]: *l*ā*m
 OEMedialSyncope [no-change]: *l*ā*m
 OELAdjacentSyncope [no-change]: *l*ā*m
+OEHighLinkSyncope [no-change]: *l*ā*m
 OEDentalAssimilation [no-change]: *l*ā*m
 OEPreconsonantalDegemination [no-change]: *l*ā*m
 OEEarlyOShortening [no-change]: *l*ā*m
@@ -43029,6 +43356,7 @@ OEHighVowelApocope: *l*ú*n*g*e*n*n*j
 NWGmcInStemNLoss [no-change]: *l*ú*n*g*e*n*n*j
 OEMedialSyncope [no-change]: *l*ú*n*g*e*n*n*j
 OELAdjacentSyncope [no-change]: *l*ú*n*g*e*n*n*j
+OEHighLinkSyncope [no-change]: *l*ú*n*g*e*n*n*j
 OEDentalAssimilation [no-change]: *l*ú*n*g*e*n*n*j
 OEPreconsonantalDegemination [no-change]: *l*ú*n*g*e*n*n*j
 OEEarlyOShortening [no-change]: *l*ú*n*g*e*n*n*j
@@ -43161,6 +43489,7 @@ OEHighVowelApocope [no-change]: *n*a*β*u*l*ô
 NWGmcInStemNLoss [no-change]: *n*a*β*u*l*ô
 OEMedialSyncope [no-change]: *n*a*β*u*l*ô
 OELAdjacentSyncope [no-change]: *n*a*β*u*l*ô
+OEHighLinkSyncope [no-change]: *n*a*β*u*l*ô
 OEDentalAssimilation [no-change]: *n*a*β*u*l*ô
 OEPreconsonantalDegemination [no-change]: *n*a*β*u*l*ô
 OEEarlyOShortening [no-change]: *n*a*β*u*l*ô
@@ -43292,6 +43621,7 @@ OEHighVowelApocope [no-change]: *x*n*é*k*k*ô
 NWGmcInStemNLoss [no-change]: *x*n*é*k*k*ô
 OEMedialSyncope [no-change]: *x*n*é*k*k*ô
 OELAdjacentSyncope [no-change]: *x*n*é*k*k*ô
+OEHighLinkSyncope [no-change]: *x*n*é*k*k*ô
 OEDentalAssimilation [no-change]: *x*n*é*k*k*ô
 OEPreconsonantalDegemination [no-change]: *x*n*é*k*k*ô
 OEEarlyOShortening [no-change]: *x*n*é*k*k*ô
@@ -43424,6 +43754,7 @@ OEHighVowelApocope: *n*ǣ*d*l
 NWGmcInStemNLoss [no-change]: *n*ǣ*d*l
 OEMedialSyncope [no-change]: *n*ǣ*d*l
 OELAdjacentSyncope [no-change]: *n*ǣ*d*l
+OEHighLinkSyncope [no-change]: *n*ǣ*d*l
 OEDentalAssimilation [no-change]: *n*ǣ*d*l
 OEPreconsonantalDegemination [no-change]: *n*ǣ*d*l
 OEEarlyOShortening [no-change]: *n*ǣ*d*l
@@ -43555,6 +43886,7 @@ OEHighVowelApocope [no-change]: *n*ó*s*u
 NWGmcInStemNLoss [no-change]: *n*ó*s*u
 OEMedialSyncope [no-change]: *n*ó*s*u
 OELAdjacentSyncope [no-change]: *n*ó*s*u
+OEHighLinkSyncope [no-change]: *n*ó*s*u
 OEDentalAssimilation [no-change]: *n*ó*s*u
 OEPreconsonantalDegemination [no-change]: *n*ó*s*u
 OEEarlyOShortening [no-change]: *n*ó*s*u
@@ -43687,6 +44019,7 @@ OEHighVowelApocope [no-change]: *s*æ*p
 NWGmcInStemNLoss [no-change]: *s*æ*p
 OEMedialSyncope [no-change]: *s*æ*p
 OELAdjacentSyncope [no-change]: *s*æ*p
+OEHighLinkSyncope [no-change]: *s*æ*p
 OEDentalAssimilation [no-change]: *s*æ*p
 OEPreconsonantalDegemination [no-change]: *s*æ*p
 OEEarlyOShortening [no-change]: *s*æ*p
@@ -43819,6 +44152,7 @@ OEHighVowelApocope: *s*ǣ
 NWGmcInStemNLoss [no-change]: *s*ǣ
 OEMedialSyncope [no-change]: *s*ǣ
 OELAdjacentSyncope [no-change]: *s*ǣ
+OEHighLinkSyncope [no-change]: *s*ǣ
 OEDentalAssimilation [no-change]: *s*ǣ
 OEPreconsonantalDegemination [no-change]: *s*ǣ
 OEEarlyOShortening [no-change]: *s*ǣ
@@ -43950,6 +44284,7 @@ OEHighVowelApocope [no-change]: *s*í*β*i
 NWGmcInStemNLoss [no-change]: *s*í*β*i
 OEMedialSyncope [no-change]: *s*í*β*i
 OELAdjacentSyncope [no-change]: *s*í*β*i
+OEHighLinkSyncope [no-change]: *s*í*β*i
 OEDentalAssimilation [no-change]: *s*í*β*i
 OEPreconsonantalDegemination [no-change]: *s*í*β*i
 OEEarlyOShortening [no-change]: *s*í*β*i
@@ -44082,6 +44417,7 @@ OEHighVowelApocope [no-change]: *s*p*a*r*ē*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*p*a*r*ē*j*ą*n
 OEMedialSyncope [no-change]: *s*p*a*r*ē*j*ą*n
 OELAdjacentSyncope [no-change]: *s*p*a*r*ē*j*ą*n
+OEHighLinkSyncope [no-change]: *s*p*a*r*ē*j*ą*n
 OEDentalAssimilation [no-change]: *s*p*a*r*ē*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*p*a*r*ē*j*ą*n
 OEEarlyOShortening [no-change]: *s*p*a*r*ē*j*ą*n
@@ -44214,6 +44550,7 @@ OEHighVowelApocope [no-change]: *s*t*æ*β
 NWGmcInStemNLoss [no-change]: *s*t*æ*β
 OEMedialSyncope [no-change]: *s*t*æ*β
 OELAdjacentSyncope [no-change]: *s*t*æ*β
+OEHighLinkSyncope [no-change]: *s*t*æ*β
 OEDentalAssimilation [no-change]: *s*t*æ*β
 OEPreconsonantalDegemination [no-change]: *s*t*æ*β
 OEEarlyOShortening [no-change]: *s*t*æ*β
@@ -44346,6 +44683,7 @@ OEHighVowelApocope: *s*t*e*β*n
 NWGmcInStemNLoss [no-change]: *s*t*e*β*n
 OEMedialSyncope [no-change]: *s*t*e*β*n
 OELAdjacentSyncope [no-change]: *s*t*e*β*n
+OEHighLinkSyncope [no-change]: *s*t*e*β*n
 OEDentalAssimilation [no-change]: *s*t*e*β*n
 OEPreconsonantalDegemination [no-change]: *s*t*e*β*n
 OEEarlyOShortening [no-change]: *s*t*e*β*n
@@ -44477,6 +44815,7 @@ OEHighVowelApocope [no-change]: *s*w*á*n*æ*s
 NWGmcInStemNLoss [no-change]: *s*w*á*n*æ*s
 OEMedialSyncope [no-change]: *s*w*á*n*æ*s
 OELAdjacentSyncope [no-change]: *s*w*á*n*æ*s
+OEHighLinkSyncope [no-change]: *s*w*á*n*æ*s
 OEDentalAssimilation [no-change]: *s*w*á*n*æ*s
 OEPreconsonantalDegemination [no-change]: *s*w*á*n*æ*s
 OEEarlyOShortening [no-change]: *s*w*á*n*æ*s
@@ -44609,6 +44948,7 @@ OEHighVowelApocope [no-change]: *θ*ū*s*e*n*d
 NWGmcInStemNLoss [no-change]: *θ*ū*s*e*n*d
 OEMedialSyncope [no-change]: *θ*ū*s*e*n*d
 OELAdjacentSyncope [no-change]: *θ*ū*s*e*n*d
+OEHighLinkSyncope [no-change]: *θ*ū*s*e*n*d
 OEDentalAssimilation [no-change]: *θ*ū*s*e*n*d
 OEPreconsonantalDegemination [no-change]: *θ*ū*s*e*n*d
 OEEarlyOShortening [no-change]: *θ*ū*s*e*n*d
@@ -44741,6 +45081,7 @@ OEHighVowelApocope [no-change]: *t*í*m*b*r
 NWGmcInStemNLoss [no-change]: *t*í*m*b*r
 OEMedialSyncope [no-change]: *t*í*m*b*r
 OELAdjacentSyncope [no-change]: *t*í*m*b*r
+OEHighLinkSyncope [no-change]: *t*í*m*b*r
 OEDentalAssimilation [no-change]: *t*í*m*b*r
 OEPreconsonantalDegemination [no-change]: *t*í*m*b*r
 OEEarlyOShortening [no-change]: *t*í*m*b*r
@@ -44873,6 +45214,7 @@ OEHighVowelApocope [no-change]: *w*a*k*ą*n
 NWGmcInStemNLoss [no-change]: *w*a*k*ą*n
 OEMedialSyncope [no-change]: *w*a*k*ą*n
 OELAdjacentSyncope [no-change]: *w*a*k*ą*n
+OEHighLinkSyncope [no-change]: *w*a*k*ą*n
 OEDentalAssimilation [no-change]: *w*a*k*ą*n
 OEPreconsonantalDegemination [no-change]: *w*a*k*ą*n
 OEEarlyOShortening [no-change]: *w*a*k*ą*n
@@ -45005,6 +45347,7 @@ OEHighVowelApocope [no-change]: *w*æ*t*æ*r
 NWGmcInStemNLoss [no-change]: *w*æ*t*æ*r
 OEMedialSyncope [no-change]: *w*æ*t*æ*r
 OELAdjacentSyncope [no-change]: *w*æ*t*æ*r
+OEHighLinkSyncope [no-change]: *w*æ*t*æ*r
 OEDentalAssimilation [no-change]: *w*æ*t*æ*r
 OEPreconsonantalDegemination [no-change]: *w*æ*t*æ*r
 OEEarlyOShortening [no-change]: *w*æ*t*æ*r
@@ -45137,6 +45480,7 @@ OEHighVowelApocope [no-change]: *x*w*æ*l
 NWGmcInStemNLoss [no-change]: *x*w*æ*l
 OEMedialSyncope [no-change]: *x*w*æ*l
 OELAdjacentSyncope [no-change]: *x*w*æ*l
+OEHighLinkSyncope [no-change]: *x*w*æ*l
 OEDentalAssimilation [no-change]: *x*w*æ*l
 OEPreconsonantalDegemination [no-change]: *x*w*æ*l
 OEEarlyOShortening [no-change]: *x*w*æ*l
@@ -45268,6 +45612,7 @@ OEHighVowelApocope [no-change]: *x*w*ḯ*n*ą*n
 NWGmcInStemNLoss [no-change]: *x*w*ḯ*n*ą*n
 OEMedialSyncope [no-change]: *x*w*ḯ*n*ą*n
 OELAdjacentSyncope [no-change]: *x*w*ḯ*n*ą*n
+OEHighLinkSyncope [no-change]: *x*w*ḯ*n*ą*n
 OEDentalAssimilation [no-change]: *x*w*ḯ*n*ą*n
 OEPreconsonantalDegemination [no-change]: *x*w*ḯ*n*ą*n
 OEEarlyOShortening [no-change]: *x*w*ḯ*n*ą*n
@@ -45400,6 +45745,7 @@ OEHighVowelApocope [no-change]: *w*ḯ*θ*æ*ʝ
 NWGmcInStemNLoss [no-change]: *w*ḯ*θ*æ*ʝ
 OEMedialSyncope [no-change]: *w*ḯ*θ*æ*ʝ
 OELAdjacentSyncope [no-change]: *w*ḯ*θ*æ*ʝ
+OEHighLinkSyncope [no-change]: *w*ḯ*θ*æ*ʝ
 OEDentalAssimilation [no-change]: *w*ḯ*θ*æ*ʝ
 OEPreconsonantalDegemination [no-change]: *w*ḯ*θ*æ*ʝ
 OEEarlyOShortening [no-change]: *w*ḯ*θ*æ*ʝ
@@ -45532,6 +45878,7 @@ OEHighVowelApocope [no-change]: *j*ú*g*ū*θ
 NWGmcInStemNLoss [no-change]: *j*ú*g*ū*θ
 OEMedialSyncope [no-change]: *j*ú*g*ū*θ
 OELAdjacentSyncope [no-change]: *j*ú*g*ū*θ
+OEHighLinkSyncope [no-change]: *j*ú*g*ū*θ
 OEDentalAssimilation [no-change]: *j*ú*g*ū*θ
 OEPreconsonantalDegemination [no-change]: *j*ú*g*ū*θ
 OEEarlyOShortening [no-change]: *j*ú*g*ū*θ
@@ -45666,6 +46013,7 @@ OEHighVowelApocope [no-change]: *b*á*n*n*æ*s
 NWGmcInStemNLoss [no-change]: *b*á*n*n*æ*s
 OEMedialSyncope [no-change]: *b*á*n*n*æ*s
 OELAdjacentSyncope [no-change]: *b*á*n*n*æ*s
+OEHighLinkSyncope [no-change]: *b*á*n*n*æ*s
 OEDentalAssimilation [no-change]: *b*á*n*n*æ*s
 OEPreconsonantalDegemination [no-change]: *b*á*n*n*æ*s
 OEEarlyOShortening [no-change]: *b*á*n*n*æ*s
@@ -45798,6 +46146,7 @@ OEHighVowelApocope [no-change]: *b*e*r*j*æ*s
 NWGmcInStemNLoss [no-change]: *b*e*r*j*æ*s
 OEMedialSyncope [no-change]: *b*e*r*j*æ*s
 OELAdjacentSyncope [no-change]: *b*e*r*j*æ*s
+OEHighLinkSyncope [no-change]: *b*e*r*j*æ*s
 OEDentalAssimilation [no-change]: *b*e*r*j*æ*s
 OEPreconsonantalDegemination [no-change]: *b*e*r*j*æ*s
 OEEarlyOShortening [no-change]: *b*e*r*j*æ*s
@@ -45930,6 +46279,7 @@ OEHighVowelApocope [no-change]: *b*ó*r*ō*θ
 NWGmcInStemNLoss [no-change]: *b*ó*r*ō*θ
 OEMedialSyncope [no-change]: *b*ó*r*ō*θ
 OELAdjacentSyncope [no-change]: *b*ó*r*ō*θ
+OEHighLinkSyncope [no-change]: *b*ó*r*ō*θ
 OEDentalAssimilation [no-change]: *b*ó*r*ō*θ
 OEPreconsonantalDegemination [no-change]: *b*ó*r*ō*θ
 OEEarlyOShortening [no-change]: *b*ó*r*ō*θ
@@ -46062,6 +46412,7 @@ OEHighVowelApocope [no-change]: *b*ó*r*ô
 NWGmcInStemNLoss [no-change]: *b*ó*r*ô
 OEMedialSyncope [no-change]: *b*ó*r*ô
 OELAdjacentSyncope [no-change]: *b*ó*r*ô
+OEHighLinkSyncope [no-change]: *b*ó*r*ô
 OEDentalAssimilation [no-change]: *b*ó*r*ô
 OEPreconsonantalDegemination [no-change]: *b*ó*r*ô
 OEEarlyOShortening [no-change]: *b*ó*r*ô
@@ -46194,6 +46545,7 @@ OEHighVowelApocope [no-change]: *b*ēa*g
 NWGmcInStemNLoss [no-change]: *b*ēa*g
 OEMedialSyncope [no-change]: *b*ēa*g
 OELAdjacentSyncope [no-change]: *b*ēa*g
+OEHighLinkSyncope [no-change]: *b*ēa*g
 OEDentalAssimilation [no-change]: *b*ēa*g
 OEPreconsonantalDegemination [no-change]: *b*ēa*g
 OEEarlyOShortening [no-change]: *b*ēa*g
@@ -46326,6 +46678,7 @@ OEHighVowelApocope: *k*ȳ
 NWGmcInStemNLoss [no-change]: *k*ȳ
 OEMedialSyncope [no-change]: *k*ȳ
 OELAdjacentSyncope [no-change]: *k*ȳ
+OEHighLinkSyncope [no-change]: *k*ȳ
 OEDentalAssimilation [no-change]: *k*ȳ
 OEPreconsonantalDegemination [no-change]: *k*ȳ
 OEEarlyOShortening [no-change]: *k*ȳ
@@ -46458,6 +46811,7 @@ OEHighVowelApocope [no-change]: *f*ú*n*d*n*ē
 NWGmcInStemNLoss [no-change]: *f*ú*n*d*n*ē
 OEMedialSyncope [no-change]: *f*ú*n*d*n*ē
 OELAdjacentSyncope [no-change]: *f*ú*n*d*n*ē
+OEHighLinkSyncope [no-change]: *f*ú*n*d*n*ē
 OEDentalAssimilation [no-change]: *f*ú*n*d*n*ē
 OEPreconsonantalDegemination [no-change]: *f*ú*n*d*n*ē
 OEEarlyOShortening [no-change]: *f*ú*n*d*n*ē
@@ -46590,6 +46944,7 @@ OEHighVowelApocope [no-change]: *f*y*r*x*t*ī*n
 NWGmcInStemNLoss: *f*y*r*x*t*ī
 OEMedialSyncope [no-change]: *f*y*r*x*t*ī
 OELAdjacentSyncope [no-change]: *f*y*r*x*t*ī
+OEHighLinkSyncope [no-change]: *f*y*r*x*t*ī
 OEDentalAssimilation [no-change]: *f*y*r*x*t*ī
 OEPreconsonantalDegemination [no-change]: *f*y*r*x*t*ī
 OEEarlyOShortening [no-change]: *f*y*r*x*t*ī
@@ -46722,6 +47077,7 @@ OEHighVowelApocope [no-change]: *ç*æ*β*ē*θ
 NWGmcInStemNLoss [no-change]: *ç*æ*β*ē*θ
 OEMedialSyncope [no-change]: *ç*æ*β*ē*θ
 OELAdjacentSyncope [no-change]: *ç*æ*β*ē*θ
+OEHighLinkSyncope [no-change]: *ç*æ*β*ē*θ
 OEDentalAssimilation [no-change]: *ç*æ*β*ē*θ
 OEPreconsonantalDegemination [no-change]: *ç*æ*β*ē*θ
 OEEarlyOShortening [no-change]: *ç*æ*β*ē*θ
@@ -46854,6 +47210,7 @@ OEHighVowelApocope [no-change]: *k*n*éo*w*ē
 NWGmcInStemNLoss [no-change]: *k*n*éo*w*ē
 OEMedialSyncope [no-change]: *k*n*éo*w*ē
 OELAdjacentSyncope [no-change]: *k*n*éo*w*ē
+OEHighLinkSyncope [no-change]: *k*n*éo*w*ē
 OEDentalAssimilation [no-change]: *k*n*éo*w*ē
 OEPreconsonantalDegemination [no-change]: *k*n*éo*w*ē
 OEEarlyOShortening [no-change]: *k*n*éo*w*ē
@@ -46986,6 +47343,7 @@ OEHighVowelApocope [no-change]: *l*éo*r*n*ō*θ
 NWGmcInStemNLoss [no-change]: *l*éo*r*n*ō*θ
 OEMedialSyncope [no-change]: *l*éo*r*n*ō*θ
 OELAdjacentSyncope [no-change]: *l*éo*r*n*ō*θ
+OEHighLinkSyncope [no-change]: *l*éo*r*n*ō*θ
 OEDentalAssimilation [no-change]: *l*éo*r*n*ō*θ
 OEPreconsonantalDegemination [no-change]: *l*éo*r*n*ō*θ
 OEEarlyOShortening [no-change]: *l*éo*r*n*ō*θ
@@ -47118,6 +47476,7 @@ OEHighVowelApocope [no-change]: *l*éo*r*n*ô
 NWGmcInStemNLoss [no-change]: *l*éo*r*n*ô
 OEMedialSyncope [no-change]: *l*éo*r*n*ô
 OELAdjacentSyncope [no-change]: *l*éo*r*n*ô
+OEHighLinkSyncope [no-change]: *l*éo*r*n*ô
 OEDentalAssimilation [no-change]: *l*éo*r*n*ô
 OEPreconsonantalDegemination [no-change]: *l*éo*r*n*ô
 OEEarlyOShortening [no-change]: *l*éo*r*n*ô
@@ -47250,6 +47609,7 @@ OEHighVowelApocope [no-change]: *l*í*k*k*ō*θ
 NWGmcInStemNLoss [no-change]: *l*í*k*k*ō*θ
 OEMedialSyncope [no-change]: *l*í*k*k*ō*θ
 OELAdjacentSyncope [no-change]: *l*í*k*k*ō*θ
+OEHighLinkSyncope [no-change]: *l*í*k*k*ō*θ
 OEDentalAssimilation [no-change]: *l*í*k*k*ō*θ
 OEPreconsonantalDegemination [no-change]: *l*í*k*k*ō*θ
 OEEarlyOShortening [no-change]: *l*í*k*k*ō*θ
@@ -47382,6 +47742,7 @@ OEHighVowelApocope [no-change]: *l*í*k*k*ô
 NWGmcInStemNLoss [no-change]: *l*í*k*k*ô
 OEMedialSyncope [no-change]: *l*í*k*k*ô
 OELAdjacentSyncope [no-change]: *l*í*k*k*ô
+OEHighLinkSyncope [no-change]: *l*í*k*k*ô
 OEDentalAssimilation [no-change]: *l*í*k*k*ô
 OEPreconsonantalDegemination [no-change]: *l*í*k*k*ô
 OEEarlyOShortening [no-change]: *l*í*k*k*ô
@@ -47514,6 +47875,7 @@ OEHighVowelApocope [no-change]: *l*í*β*ē*θ
 NWGmcInStemNLoss [no-change]: *l*í*β*ē*θ
 OEMedialSyncope [no-change]: *l*í*β*ē*θ
 OELAdjacentSyncope [no-change]: *l*í*β*ē*θ
+OEHighLinkSyncope [no-change]: *l*í*β*ē*θ
 OEDentalAssimilation [no-change]: *l*í*β*ē*θ
 OEPreconsonantalDegemination [no-change]: *l*í*β*ē*θ
 OEEarlyOShortening [no-change]: *l*í*β*ē*θ
@@ -47646,6 +48008,7 @@ OEHighVowelApocope [no-change]: *m*a*k*ō*θ
 NWGmcInStemNLoss [no-change]: *m*a*k*ō*θ
 OEMedialSyncope [no-change]: *m*a*k*ō*θ
 OELAdjacentSyncope [no-change]: *m*a*k*ō*θ
+OEHighLinkSyncope [no-change]: *m*a*k*ō*θ
 OEDentalAssimilation [no-change]: *m*a*k*ō*θ
 OEPreconsonantalDegemination [no-change]: *m*a*k*ō*θ
 OEEarlyOShortening [no-change]: *m*a*k*ō*θ
@@ -47778,6 +48141,7 @@ OEHighVowelApocope [no-change]: *m*a*k*ô
 NWGmcInStemNLoss [no-change]: *m*a*k*ô
 OEMedialSyncope [no-change]: *m*a*k*ô
 OELAdjacentSyncope [no-change]: *m*a*k*ô
+OEHighLinkSyncope [no-change]: *m*a*k*ô
 OEDentalAssimilation [no-change]: *m*a*k*ô
 OEPreconsonantalDegemination [no-change]: *m*a*k*ô
 OEEarlyOShortening [no-change]: *m*a*k*ô
@@ -47910,6 +48274,7 @@ OEHighVowelApocope [no-change]: *m*á*n*n*æ*s
 NWGmcInStemNLoss [no-change]: *m*á*n*n*æ*s
 OEMedialSyncope [no-change]: *m*á*n*n*æ*s
 OELAdjacentSyncope [no-change]: *m*á*n*n*æ*s
+OEHighLinkSyncope [no-change]: *m*á*n*n*æ*s
 OEDentalAssimilation [no-change]: *m*á*n*n*æ*s
 OEPreconsonantalDegemination [no-change]: *m*á*n*n*æ*s
 OEEarlyOShortening [no-change]: *m*á*n*n*æ*s
@@ -48042,6 +48407,7 @@ OEHighVowelApocope [no-change]: *m*éo*r*d*ē
 NWGmcInStemNLoss [no-change]: *m*éo*r*d*ē
 OEMedialSyncope [no-change]: *m*éo*r*d*ē
 OELAdjacentSyncope [no-change]: *m*éo*r*d*ē
+OEHighLinkSyncope [no-change]: *m*éo*r*d*ē
 OEDentalAssimilation [no-change]: *m*éo*r*d*ē
 OEPreconsonantalDegemination [no-change]: *m*éo*r*d*ē
 OEEarlyOShortening [no-change]: *m*éo*r*d*ē
@@ -48174,6 +48540,7 @@ OEHighVowelApocope: *n*i*x*t
 NWGmcInStemNLoss [no-change]: *n*i*x*t
 OEMedialSyncope [no-change]: *n*i*x*t
 OELAdjacentSyncope [no-change]: *n*i*x*t
+OEHighLinkSyncope [no-change]: *n*i*x*t
 OEDentalAssimilation [no-change]: *n*i*x*t
 OEPreconsonantalDegemination [no-change]: *n*i*x*t
 OEEarlyOShortening [no-change]: *n*i*x*t
@@ -48306,6 +48673,7 @@ OEHighVowelApocope [no-change]: *r*æ*s*t*ǣ
 NWGmcInStemNLoss [no-change]: *r*æ*s*t*ǣ
 OEMedialSyncope [no-change]: *r*æ*s*t*ǣ
 OELAdjacentSyncope [no-change]: *r*æ*s*t*ǣ
+OEHighLinkSyncope [no-change]: *r*æ*s*t*ǣ
 OEDentalAssimilation [no-change]: *r*æ*s*t*ǣ
 OEPreconsonantalDegemination [no-change]: *r*æ*s*t*ǣ
 OEEarlyOShortening [no-change]: *r*æ*s*t*ǣ
@@ -48438,6 +48806,7 @@ OEHighVowelApocope [no-change]: *ʃ*ú*l*d*r*u*m
 NWGmcInStemNLoss [no-change]: *ʃ*ú*l*d*r*u*m
 OEMedialSyncope [no-change]: *ʃ*ú*l*d*r*u*m
 OELAdjacentSyncope [no-change]: *ʃ*ú*l*d*r*u*m
+OEHighLinkSyncope [no-change]: *ʃ*ú*l*d*r*u*m
 OEDentalAssimilation [no-change]: *ʃ*ú*l*d*r*u*m
 OEPreconsonantalDegemination [no-change]: *ʃ*ú*l*d*r*u*m
 OEEarlyOShortening [no-change]: *ʃ*ú*l*d*r*u*m
@@ -48570,6 +48939,7 @@ OEHighVowelApocope [no-change]: *ʃ*ēa*β
 NWGmcInStemNLoss [no-change]: *ʃ*ēa*β
 OEMedialSyncope [no-change]: *ʃ*ēa*β
 OELAdjacentSyncope [no-change]: *ʃ*ēa*β
+OEHighLinkSyncope [no-change]: *ʃ*ēa*β
 OEDentalAssimilation [no-change]: *ʃ*ēa*β
 OEPreconsonantalDegemination [no-change]: *ʃ*ēa*β
 OEEarlyOShortening [no-change]: *ʃ*ēa*β
@@ -48702,6 +49072,7 @@ OEHighVowelApocope [no-change]: *ʃ*ḗa*w*ō*θ
 NWGmcInStemNLoss [no-change]: *ʃ*ḗa*w*ō*θ
 OEMedialSyncope [no-change]: *ʃ*ḗa*w*ō*θ
 OELAdjacentSyncope [no-change]: *ʃ*ḗa*w*ō*θ
+OEHighLinkSyncope [no-change]: *ʃ*ḗa*w*ō*θ
 OEDentalAssimilation [no-change]: *ʃ*ḗa*w*ō*θ
 OEPreconsonantalDegemination [no-change]: *ʃ*ḗa*w*ō*θ
 OEEarlyOShortening [no-change]: *ʃ*ḗa*w*ō*θ
@@ -48834,6 +49205,7 @@ OEHighVowelApocope [no-change]: *ʃ*ḗa*w*ô
 NWGmcInStemNLoss [no-change]: *ʃ*ḗa*w*ô
 OEMedialSyncope [no-change]: *ʃ*ḗa*w*ô
 OELAdjacentSyncope [no-change]: *ʃ*ḗa*w*ô
+OEHighLinkSyncope [no-change]: *ʃ*ḗa*w*ô
 OEDentalAssimilation [no-change]: *ʃ*ḗa*w*ô
 OEPreconsonantalDegemination [no-change]: *ʃ*ḗa*w*ô
 OEEarlyOShortening [no-change]: *ʃ*ḗa*w*ô
@@ -48966,6 +49338,7 @@ OEHighVowelApocope [no-change]: *s*p*á*n*n*ē
 NWGmcInStemNLoss [no-change]: *s*p*á*n*n*ē
 OEMedialSyncope [no-change]: *s*p*á*n*n*ē
 OELAdjacentSyncope [no-change]: *s*p*á*n*n*ē
+OEHighLinkSyncope [no-change]: *s*p*á*n*n*ē
 OEDentalAssimilation [no-change]: *s*p*á*n*n*ē
 OEPreconsonantalDegemination [no-change]: *s*p*á*n*n*ē
 OEEarlyOShortening [no-change]: *s*p*á*n*n*ē
@@ -49098,6 +49471,7 @@ OEHighVowelApocope [no-change]: *s*t*r*ēa
 NWGmcInStemNLoss [no-change]: *s*t*r*ēa
 OEMedialSyncope [no-change]: *s*t*r*ēa
 OELAdjacentSyncope [no-change]: *s*t*r*ēa
+OEHighLinkSyncope [no-change]: *s*t*r*ēa
 OEDentalAssimilation [no-change]: *s*t*r*ēa
 OEPreconsonantalDegemination [no-change]: *s*t*r*ēa
 OEEarlyOShortening [no-change]: *s*t*r*ēa
@@ -49230,6 +49604,7 @@ OEHighVowelApocope [no-change]: *θ*i*s*t*i*l*æ*s
 NWGmcInStemNLoss [no-change]: *θ*i*s*t*i*l*æ*s
 OEMedialSyncope [no-change]: *θ*i*s*t*i*l*æ*s
 OELAdjacentSyncope: *θ*i*s*t*l*æ*s
+OEHighLinkSyncope [no-change]: *θ*i*s*t*l*æ*s
 OEDentalAssimilation [no-change]: *θ*i*s*t*l*æ*s
 OEPreconsonantalDegemination [no-change]: *θ*i*s*t*l*æ*s
 OEEarlyOShortening [no-change]: *θ*i*s*t*l*æ*s
@@ -49364,6 +49739,7 @@ OEHighVowelApocope [no-change]: *k*w*é*d*u
 NWGmcInStemNLoss [no-change]: *k*w*é*d*u
 OEMedialSyncope [no-change]: *k*w*é*d*u
 OELAdjacentSyncope [no-change]: *k*w*é*d*u
+OEHighLinkSyncope [no-change]: *k*w*é*d*u
 OEDentalAssimilation [no-change]: *k*w*é*d*u
 OEPreconsonantalDegemination [no-change]: *k*w*é*d*u
 OEEarlyOShortening [no-change]: *k*w*é*d*u
@@ -49463,39 +49839,40 @@ OEJGlideIO [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
 OEDiphthongLeveling [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
 OEAwLongDiphthong [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
 OECompoundLinkingSyncope: *é*r*θ*k*ù*n*d*ǭ
-OEStripSecondaryStress: *é*r*θ*k*u*n*d*ǭ
-OEInterStressRaising [no-change]: *é*r*θ*k*u*n*d*ǭ
-OEWICombinativeUUmlaut [no-change]: *é*r*θ*k*u*n*d*ǭ
-PWGmcFinalBareALoss [no-change]: *é*r*θ*k*u*n*d*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *é*r*θ*k*u*n*d*ǭ
-EAFBrighteningUnstressed [no-change]: *é*r*θ*k*u*n*d*ǭ
-EAFBrightening [no-change]: *é*r*θ*k*u*n*d*ǭ
-EAFBrighteningLongFinal [no-change]: *é*r*θ*k*u*n*d*ǭ
-OEBreaking: *éo*r*θ*k*u*n*d*ǭ
-OEVelarFricativePalatalization [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEARestoration [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OESecondaryNasalization [no-change]: *éo*r*θ*k*u*n*d*ǭ
-PGmcBAllophony [no-change]: *éo*r*θ*k*u*n*d*ǭ
-SieversLawSyncope [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OESkPalatalization [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEVelarPalatalization [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEPrefixAReduction [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEPostVelarWLoss [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEWLossBeforeI [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEWsPalatalDiphthongization [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEIUmlaut [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OELatePalatalDiphthong [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEJClusterCoalescence [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEBackMutation [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEWsPalatalUmlaut [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEWeakTailNasalLoss [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEWeightMarkers [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OENonHighSyn [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEHighVowelApocope [no-change]: *éo*r*θ*k*u*n*d*ǭ
-NWGmcInStemNLoss [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEMedialSyncope [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OELAdjacentSyncope [no-change]: *éo*r*θ*k*u*n*d*ǭ
+OEStripSecondaryStress [no-change]: *é*r*θ*k*ù*n*d*ǭ
+OEInterStressRaising [no-change]: *é*r*θ*k*ù*n*d*ǭ
+OEWICombinativeUUmlaut [no-change]: *é*r*θ*k*ù*n*d*ǭ
+PWGmcFinalBareALoss [no-change]: *é*r*θ*k*ù*n*d*ǭ
+PWGmcSurvivingBimoricOUnrounding [no-change]: *é*r*θ*k*ù*n*d*ǭ
+EAFBrighteningUnstressed [no-change]: *é*r*θ*k*ù*n*d*ǭ
+EAFBrightening [no-change]: *é*r*θ*k*ù*n*d*ǭ
+EAFBrighteningLongFinal [no-change]: *é*r*θ*k*ù*n*d*ǭ
+OEBreaking: *éo*r*θ*k*ù*n*d*ǭ
+OEVelarFricativePalatalization [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEARestoration [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OESecondaryNasalization [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+PGmcBAllophony [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+SieversLawSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OESkPalatalization [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEVelarPalatalization [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEPrefixAReduction [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEPostVelarWLoss [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEWLossBeforeI [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEWsPalatalDiphthongization [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEIUmlaut [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OELatePalatalDiphthong [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEJClusterCoalescence [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEBackMutation [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEWsPalatalUmlaut [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEWeakTailNasalLoss [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEWeightMarkers [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OENonHighSyn [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEHighVowelApocope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+NWGmcInStemNLoss [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEMedialSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OELAdjacentSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
+OEHighLinkSyncope: *éo*r*θ*k*u*n*d*ǭ
 OEDentalAssimilation [no-change]: *éo*r*θ*k*u*n*d*ǭ
 OEPreconsonantalDegemination [no-change]: *éo*r*θ*k*u*n*d*ǭ
 OEEarlyOShortening [no-change]: *éo*r*θ*k*u*n*d*ǭ
@@ -49628,6 +50005,7 @@ OEHighVowelApocope [no-change]: *x*á*m*æ*r
 NWGmcInStemNLoss [no-change]: *x*á*m*æ*r
 OEMedialSyncope [no-change]: *x*á*m*æ*r
 OELAdjacentSyncope [no-change]: *x*á*m*æ*r
+OEHighLinkSyncope [no-change]: *x*á*m*æ*r
 OEDentalAssimilation [no-change]: *x*á*m*æ*r
 OEPreconsonantalDegemination [no-change]: *x*á*m*æ*r
 OEEarlyOShortening [no-change]: *x*á*m*æ*r
@@ -49760,6 +50138,7 @@ OEHighVowelApocope [no-change]: *t*éo*x*u*n
 NWGmcInStemNLoss [no-change]: *t*éo*x*u*n
 OEMedialSyncope [no-change]: *t*éo*x*u*n
 OELAdjacentSyncope [no-change]: *t*éo*x*u*n
+OEHighLinkSyncope [no-change]: *t*éo*x*u*n
 OEDentalAssimilation [no-change]: *t*éo*x*u*n
 OEPreconsonantalDegemination [no-change]: *t*éo*x*u*n
 OEEarlyOShortening [no-change]: *t*éo*x*u*n
@@ -49892,6 +50271,7 @@ OEHighVowelApocope [no-change]: *θ*r*i*j*e
 NWGmcInStemNLoss [no-change]: *θ*r*i*j*e
 OEMedialSyncope [no-change]: *θ*r*i*j*e
 OELAdjacentSyncope [no-change]: *θ*r*i*j*e
+OEHighLinkSyncope [no-change]: *θ*r*i*j*e
 OEDentalAssimilation [no-change]: *θ*r*i*j*e
 OEPreconsonantalDegemination [no-change]: *θ*r*i*j*e
 OEEarlyOShortening [no-change]: *θ*r*i*j*e
@@ -50024,6 +50404,7 @@ OEHighVowelApocope [no-change]: *w*æ*β*s
 NWGmcInStemNLoss [no-change]: *w*æ*β*s
 OEMedialSyncope [no-change]: *w*æ*β*s
 OELAdjacentSyncope [no-change]: *w*æ*β*s
+OEHighLinkSyncope [no-change]: *w*æ*β*s
 OEDentalAssimilation [no-change]: *w*æ*β*s
 OEPreconsonantalDegemination [no-change]: *w*æ*β*s
 OEEarlyOShortening [no-change]: *w*æ*β*s
@@ -50158,6 +50539,7 @@ OEHighVowelApocope [no-change]: *k*n*ó*b*b*ô
 NWGmcInStemNLoss [no-change]: *k*n*ó*b*b*ô
 OEMedialSyncope [no-change]: *k*n*ó*b*b*ô
 OELAdjacentSyncope [no-change]: *k*n*ó*b*b*ô
+OEHighLinkSyncope [no-change]: *k*n*ó*b*b*ô
 OEDentalAssimilation [no-change]: *k*n*ó*b*b*ô
 OEPreconsonantalDegemination [no-change]: *k*n*ó*b*b*ô
 OEEarlyOShortening [no-change]: *k*n*ó*b*b*ô
@@ -50290,6 +50672,7 @@ OEHighVowelApocope [no-change]: *r*ēa*k
 NWGmcInStemNLoss [no-change]: *r*ēa*k
 OEMedialSyncope [no-change]: *r*ēa*k
 OELAdjacentSyncope [no-change]: *r*ēa*k
+OEHighLinkSyncope [no-change]: *r*ēa*k
 OEDentalAssimilation [no-change]: *r*ēa*k
 OEPreconsonantalDegemination [no-change]: *r*ēa*k
 OEEarlyOShortening [no-change]: *r*ēa*k
@@ -50422,6 +50805,7 @@ OEHighVowelApocope [no-change]: *s*t*r*īe*j*ą*n
 NWGmcInStemNLoss [no-change]: *s*t*r*īe*j*ą*n
 OEMedialSyncope [no-change]: *s*t*r*īe*j*ą*n
 OELAdjacentSyncope [no-change]: *s*t*r*īe*j*ą*n
+OEHighLinkSyncope [no-change]: *s*t*r*īe*j*ą*n
 OEDentalAssimilation [no-change]: *s*t*r*īe*j*ą*n
 OEPreconsonantalDegemination [no-change]: *s*t*r*īe*j*ą*n
 OEEarlyOShortening [no-change]: *s*t*r*īe*j*ą*n
@@ -50556,6 +50940,7 @@ OEHighVowelApocope: *f*ȳ*r
 NWGmcInStemNLoss [no-change]: *f*ȳ*r
 OEMedialSyncope [no-change]: *f*ȳ*r
 OELAdjacentSyncope [no-change]: *f*ȳ*r
+OEHighLinkSyncope [no-change]: *f*ȳ*r
 OEDentalAssimilation [no-change]: *f*ȳ*r
 OEPreconsonantalDegemination [no-change]: *f*ȳ*r
 OEEarlyOShortening [no-change]: *f*ȳ*r
@@ -50688,6 +51073,7 @@ OEHighVowelApocope [no-change]: *t*a*p*p*ô
 NWGmcInStemNLoss [no-change]: *t*a*p*p*ô
 OEMedialSyncope [no-change]: *t*a*p*p*ô
 OELAdjacentSyncope [no-change]: *t*a*p*p*ô
+OEHighLinkSyncope [no-change]: *t*a*p*p*ô
 OEDentalAssimilation [no-change]: *t*a*p*p*ô
 OEPreconsonantalDegemination [no-change]: *t*a*p*p*ô
 OEEarlyOShortening [no-change]: *t*a*p*p*ô
@@ -50822,6 +51208,7 @@ OEHighVowelApocope [no-change]: *b*ó*k*k
 NWGmcInStemNLoss [no-change]: *b*ó*k*k
 OEMedialSyncope [no-change]: *b*ó*k*k
 OELAdjacentSyncope [no-change]: *b*ó*k*k
+OEHighLinkSyncope [no-change]: *b*ó*k*k
 OEDentalAssimilation [no-change]: *b*ó*k*k
 OEPreconsonantalDegemination [no-change]: *b*ó*k*k
 OEEarlyOShortening [no-change]: *b*ó*k*k
@@ -50954,6 +51341,7 @@ OEHighVowelApocope [no-change]: *f*ó*g*l
 NWGmcInStemNLoss [no-change]: *f*ó*g*l
 OEMedialSyncope [no-change]: *f*ó*g*l
 OELAdjacentSyncope [no-change]: *f*ó*g*l
+OEHighLinkSyncope [no-change]: *f*ó*g*l
 OEDentalAssimilation [no-change]: *f*ó*g*l
 OEPreconsonantalDegemination [no-change]: *f*ó*g*l
 OEEarlyOShortening [no-change]: *f*ó*g*l
@@ -51086,6 +51474,7 @@ OEHighVowelApocope [no-change]: *r*ó*s*t
 NWGmcInStemNLoss [no-change]: *r*ó*s*t
 OEMedialSyncope [no-change]: *r*ó*s*t
 OELAdjacentSyncope [no-change]: *r*ó*s*t
+OEHighLinkSyncope [no-change]: *r*ó*s*t
 OEDentalAssimilation [no-change]: *r*ó*s*t
 OEPreconsonantalDegemination [no-change]: *r*ó*s*t
 OEEarlyOShortening [no-change]: *r*ó*s*t
@@ -51218,6 +51607,7 @@ OEHighVowelApocope [no-change]: *w*ó*l*f
 NWGmcInStemNLoss [no-change]: *w*ó*l*f
 OEMedialSyncope [no-change]: *w*ó*l*f
 OELAdjacentSyncope [no-change]: *w*ó*l*f
+OEHighLinkSyncope [no-change]: *w*ó*l*f
 OEDentalAssimilation [no-change]: *w*ó*l*f
 OEPreconsonantalDegemination [no-change]: *w*ó*l*f
 OEEarlyOShortening [no-change]: *w*ó*l*f
@@ -51350,6 +51740,7 @@ OEHighVowelApocope: *w*ó*l*l
 NWGmcInStemNLoss [no-change]: *w*ó*l*l
 OEMedialSyncope [no-change]: *w*ó*l*l
 OELAdjacentSyncope [no-change]: *w*ó*l*l
+OEHighLinkSyncope [no-change]: *w*ó*l*l
 OEDentalAssimilation [no-change]: *w*ó*l*l
 OEPreconsonantalDegemination [no-change]: *w*ó*l*l
 OEEarlyOShortening [no-change]: *w*ó*l*l

@@ -1,0 +1,78 @@
+"""Historical controls distinguish fixes from meaningful wrong implementations."""
+
+import json
+from pathlib import Path
+import sys
+
+import pytest
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "Germanic/tools"))
+from capr_runtime import run_in_runner
+
+pytestmark = pytest.mark.runtime
+
+
+@pytest.fixture(scope="module")
+def current():
+    worker = Path(__file__).with_name("sc037_intervention_controls.py")
+    result = run_in_runner(
+        "CAPR_AF_DEFINITION_ISOLATED=1 python3 -",
+        input=worker.read_text(), text=True, capture_output=True,
+        check=True, timeout=3600)
+    return json.loads(result.stdout)
+
+
+def test_canonical_compound_hypotheses_discriminate_three_wrong_accounts(current):
+    for form in ("sáli-wàrðaz", "sáli-wàrðuz", "sáli-wàrðą"):
+        assert current["current"]["canonical"][form] == ["seleweard"]
+        assert current["old-early"]["canonical"][form] == ["sealweard"]
+        assert current["bad-breaking"]["canonical"][form] == ["seleoweard"]
+        assert current["no-weight"]["canonical"][form] == ["selweard"]
+
+
+def test_independent_preoe_stages_test_weight_mutation_and_loss(current):
+    assert current["current"]["furthest"] == [["ȳtmest"]]
+    assert current["no-high"]["furthest"] == [["ȳtemest"]]
+    assert current["opaque-umlaut"]["furthest"] == [["ūtmest"]]
+    assert current["current"]["companion"] == [["gædeling"]]
+    assert current["no-weight"]["companion"] == [["gædling"]]
+    assert current["no-high"]["companion"] == [["gædeling"]]
+
+
+def test_selected_weight_negative_and_previous_breaking_umlaut_histories(current):
+    values = current["current"]["canonical"]
+    assert values["wíduwōn"] == ["wuduwe"]
+    assert current["no-weight"]["canonical"]["wíduwōn"] == ["wudwe"]
+    assert values["knéwai"] == ["cneowe"]
+    assert values["fūliθō"] == ["fȳlþ"]
+    selected = current["current"]["selected"]
+    assert len(selected) == 391
+    assert all(len(row["outputs"]) == 1 for row in selected)
+    assert {row["concept"] for row in selected
+            if row["outputs"] != [row["counterpart"]]} == {
+                "buck", "fire", "fowl", "rust", "straw", "tap", "wolf", "wool"}
+
+
+def test_weak_breaking_root_breaking_and_high_front_blockers(current):
+    assert current["current"]["breaking"] == [
+        ["*f*u*l*w*i*x*t"], ["*n*a*w*i*x*t"],
+        ["*s*io*w"], ["*s*ío*w"], ["*b*io*r*x*t"],
+        ["*w*i*w*i"], ["*w*i*w*ī"],
+        ["*s*æ*l*io*w*ea*r*d"], ["*ᶠ*b*i*s*io*w"],
+    ]
+
+
+def test_closed_medial_syllables_and_secondary_high_stress_are_preserved(current):
+    values = current["current"]
+    assert values["high"] == [
+        ["*s*e*l*i*w*ea*r*d"], ["*x*a*n*d*s*ea*x"],
+        ["*ȳ*t*m*i*s*t"], ["*b*o*n*d*i*n*s*t*a"],
+        ["*ʃ*y*l*d*ç*ǣ*t*j*ā"], ["*l*a*n*d*w*i*n*a"],
+    ]
+    assert values["stressed"] == ["*l*á*n*d*x*y*m*i", "*l*á*n*d*w*i*n*a"]
+    assert values["umlaut"] == [
+        ["*ȳ*t*y*m*i"], ["*g*æ*d*y*l*i*n*g"],
+        ["*ū*t*e*m*i"], ["*ū*t*ỳ*m*i"],
+    ]
+    assert values["atomic_iu"] == [["*s*íu*w*à*r*d*a*z"]]

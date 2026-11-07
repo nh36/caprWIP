@@ -215,6 +215,7 @@ define pgrmCodaComplex [
     p:{*p} p:{*p} |
     r:{*r} b:{*b} |
     r:{*r} d:{*d} |
+    r:{*r} ð:{*ð} |
     r:{*r} g:{*g} |
     r:{*r} k:{*k} |
     r:{*r} m:{*m} |
@@ -512,11 +513,9 @@ define pgrmSimpleWord [
 # The hyphen is deleted during transduction (maps to 0)
 define pgrmCompoundSep [{-}:0];
 
-# Linking vowel in compounds: plain unstressed stem-class vowel (a/i/u) or zero.
-# Per §17.11, the linking vowel bears no diacritic — it is a plain short vowel
-# whose deletion (OECompoundLinkingSyncope) is phonetically conditioned by the
-# surrounding stress trough (acute primary-stress … _ … grave Nebenton).
-define pgrmLinkingVowel [a:{*a} | 0];
+# Inherited unstressed stem-class vowel (a/i/u) or zero, not epenthesis.
+# Nonhigh and high syncope have separate executable positions.
+define pgrmLinkingVowel [a:{*a} | i:{*i} | u:{*u} | 0];
 
 # Compound word: First element is strong syllable + optional linking vowel,
 # second element can have various structures.
@@ -524,7 +523,12 @@ define pgrmLinkingVowel [a:{*a} | 0];
 #   *regnă-bugô (CVCC-ă + CV-ô) = heavy + linking + heavy
 #   *θūs-undī (CVːC + VC-ī) = heavy + heavy (no linking vowel)
 #   *wiră-aldiz (CV-ă + VC-Vz) = light + linking + heavy
-define pgrmCompoundFirst [pgrmStrongPlain pgrmLinkingVowel];
+# These grammar classes describe token shape, not historical syllable weight.
+# The bounded high-vowel branch preserves the atomic iu analysis.
+define pgrmCompoundFirst [
+    pgrmStrongPlainHeavy pgrmLinkingVowel |
+    pgrmStrongPlainLight [a:{*a} | 0]
+];
 define pgrmCompoundSecond [pgrmStrongPlainHeavy pgrmInputTailVowel];
 define pgrmCompoundWord [pgrmCompoundFirst pgrmCompoundSep pgrmCompoundSecond];
 
@@ -542,7 +546,7 @@ define PGmcStarVowel [
     {*i} |
     {*o} |
     {*u} |
-    {*y} |
+    {*y} | {*ỳ} |
     {*ȳ} |
     {*æ} |
     {*ø} |
@@ -1119,6 +1123,7 @@ define FootCtx(T) SentenceCtx([
 ]);
 
 define EnglishIUmlautIntervening [EnglishStarConsonantNoJ | EnglishPalatalConsonant]*;
+define EnglishIUmlautThroughU [EnglishIUmlautIntervening [{*u} EnglishIUmlautIntervening]*];
 
 define EnglishWeakTailVowel [pgrmWeakTailVowel | {*ɔ̆}];
 define EnglishWeakTailVowelStar [
@@ -2099,7 +2104,7 @@ define EnglishBreakingLContextE [{*l} [{*x} | {*k} | {*g}]];
 # (Luick p.139; Ringe-Taylor pp.187-188). Knee's dative remains short.
 define EnglishBreakingWContext [
     {*w} [[EnglishStarVocalic | EnglishStarConsonant]
-        - [{*i} | {*í} | {*ī} | {*ḯ} | {*j}]] |
+        - [{*i} | {*ì} | {*í} | {*ī} | {*ḯ} | {*j}]] |
     {*w} .#.
 ];
 
@@ -2135,13 +2140,16 @@ define OEBreakingE [
 # NOT from breaking directly. See DEV_NOTES.md "Comprehensive Analysis: Breaking
 # of *i and I-Umlaut of Diphthongs (2026-04-07)" for full documentation.
 define OEBreakingI [
-    {*i} -> {*io} || _ EnglishBreakingRContext,
-    {*i} -> {*io} || _ EnglishBreakingHContext,
-    {*i} -> {*io} || _ EnglishBreakingWContext,
-    # Stressed variants
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingWContext
+] .o. [
     {*í} -> {*ío} || _ EnglishBreakingRContext,
     {*í} -> {*ío} || _ EnglishBreakingHContext,
-    {*í} -> {*ío} || _ EnglishBreakingWContext
+    {*í} -> {*ío} || _ EnglishBreakingWContext,
+    {*ì} -> {*io} || _ EnglishBreakingRContext,
+    {*ì} -> {*io} || _ EnglishBreakingHContext,
+    {*ì} -> {*io} || _ EnglishBreakingWContext
 ];
 
 define OEBreaking FootCtx(OEBreakingA
@@ -2163,9 +2171,7 @@ define OEInterStressRaising OELHWeakRaising;
 define OEStripSecondaryStress Ctx([
     {*à} -> {*a},
     {*è} -> {*e},
-    {*ì} -> {*i},
-    {*ò} -> {*o},
-    {*ù} -> {*u}
+    {*ò} -> {*o}
 ]);
 
 # OEAwwjResolution (SC029): resolution of the PWGmc geminate
@@ -3102,18 +3108,19 @@ define OELateUnstressedAgSuffix (
 );
 
 define OEIUmlautFronting [
-    {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*o} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ō} -> {*ē} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*u} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
+    {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ō} -> {*ē} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ù} -> {*ỳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*u} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ū} -> {*ȳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     # Stressed variants (stress mark absorbed into output):
-    {*á} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*é} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ó} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ú} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+    {*á} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*é} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ó} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ú} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger
 ];
 
 # R/T §6.6.2: I-umlaut of low front *æ → e. This is the standard OE i-umlaut
@@ -3652,22 +3659,24 @@ define OELAdjacentSyncope Ctx([
     {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic
 ]);
 
-# Compound linking vowel syncope (§17.11, Option T — trough-conditioned).
-# The unstressed linking vowel between a primary-stressed first-element syllable
-# (acute) and a Nebenton-bearing second-element syllable (grave) deletes. This
-# is the phonetic stress trough of Luick §§296, 306, 335–340 / Brunner §§400–405
-# / R&T vol.2 §6.3.3 p.200–202 / Fulk §2.2. No morphological marker is needed:
-# the rule reads off the acute/grave prosodic tiers directly.
-#   e.g. *régna-bùgô → *régn-bùgô → reġnboga
+# Post-umlaut high syncope: Hogg §§6.18-6.21, Ringe-Taylor p.267.
+# A bounded open-medial domain (singleton following onset); no name exception.
+# Remaining secondary high-vowel markers are decoded only after deletion.
+define OEHighLinkSyncope FootCtx([
+    [{*i}|{*u}|{*y}] -> 0
+        || .#. OEAnyConsonant* [
+            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
+            [EnglishStarShortVowel | EnglishStarShortDiphthong]
+                OEAnyConsonant OEAnyConsonant+
+        ] _ OEAnyConsonant EnglishStarVocalic
+]) .o. FootCtx([{*y} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _])
+    .o. Ctx([{*ì} -> {*i}, {*ù} -> {*u}, {*ỳ} -> {*y}]);
+
+# Retained a-loss holding proxy for rainbow/earthly, not an early historical
+# date for general nonhigh syncope (SC114). High loss follows i-umlaut.
 define OECompoundLinkingSyncope Ctx([
     {*a} -> 0
         || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
-] .o. [
-    [{*i}|{*u}] -> 0
-        || [
-            [PGmcStarAcuteVowel & EnglishStarLongVowel] OEAnyConsonant+ |
-            [PGmcStarAcuteVowel & EnglishStarShortVowel] OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant+ PGmcStarGraveVowel
 ]);
 
 # Post-syncope dental cluster simplification: *tθ → *t.
@@ -3891,7 +3900,7 @@ define EnglishProtoToOE ( # capr:bundle
     # (trough condition reads acute+grave tiers). Also precedes B-allophony
     # (line ~2894) so the post-syncope cluster *n_*b blocks *b→*β lenition.
     .o. OECompoundLinkingSyncope
-    # Preserve the earlier accent for linking syncope, then remove its marker.
+    # Retain secondary high-vowel stress through breaking, mutation and syncope.
     .o. OEStripSecondaryStress
     # Weak LH a>u before fronting/breaking; separate provisional soul branch.
     .o. OEInterStressRaising
@@ -3982,6 +3991,7 @@ define EnglishProtoToOE ( # capr:bundle
     # OEHeavySyllableNasalApocope moved earlier — now at line ~2039 before nasalization
     .o. OEMedialSyncope
     .o. OELAdjacentSyncope
+    .o. OEHighLinkSyncope
     .o. OEDentalAssimilation
     .o. OEPreconsonantalDegemination
     # TWO-STAGE *ō SHORTENING (§15.8):

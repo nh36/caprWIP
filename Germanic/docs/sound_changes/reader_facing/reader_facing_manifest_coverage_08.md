@@ -4,7 +4,7 @@
 
 Authority: `registry/sc_registry.tsv` publication/lifecycle/source ownership and the canonical `oe_pipeline` stage sequence. The generated reader manifest and actual section sequence must agree exactly; omissions fail the build.
 
-Published identities: 98. Missing or erroneous omissions: 0.
+Published identities: 99. Missing or erroneous omissions: 0.
 
 | Reader position | Identity | Classification | Authoritative source |
 | --- | --- | --- | --- |
@@ -81,31 +81,32 @@ Published identities: 98. Missing or erroneous omissions: 0.
 | 71 | SC064 | published historical_sound_change | `064-stem-final-n-loss.md` |
 | 72 | SC065 | published historical_sound_change | `065-medial-syncope.md` |
 | 73 | SC066 | published historical_sound_change | `066-l-adjacent-syncope.md` |
-| 74 | SC067 | published historical_sound_change | `067-dental-assimilation.md` |
-| 75 | SC068 | published historical_sound_change | `068-preconsonantal-degemination.md` |
-| 76 | SC069 | published historical_sound_change | `069-early-o-shortening-context-note.md` |
-| 77 | SC070 | published historical_sound_change | `070-early-unstressed-fronting.md` |
-| 78 | SC071 | published historical_sound_change | `071-late-o-shortening.md` |
-| 79 | SC099 | published historical_sound_change | `099-medial-unstressed-o-raising.md` |
-| 80 | SC100 | published historical_sound_change | `100-final-unstressed-o-lowering.md` |
-| 81 | SC072 | published historical_sound_change | `072-unstressed-long-vowel-shortening.md` |
-| 82 | SC073 | published historical_sound_change | `073-unstressed-ae-merger.md` |
-| 83 | SC074 | published historical_sound_change | `074-medial-unstressed-i-lowering.md` |
-| 84 | SC075 | published historical_sound_change | `075-i-preservation-before-ng.md` |
-| 85 | SC040 | published historical_sound_change | `040-medial-unstressed-u-lowering.md` |
-| 86 | SC076 | published historical_sound_change | `076-prefix-i-reduction.md` |
-| 87 | SC078 | published historical_sound_change | `078-weak-tail-reduction.md` |
-| 88 | SC079 | published historical_sound_change | `079-j-loss-after-heavy-syllables.md` |
-| 89 | SC080 | published historical_sound_change | `080-final-geminate-simplification.md` |
-| 90 | SC081 | published historical_sound_change | `081-j-strengthening.md` |
-| 91 | SC082 | published historical_sound_change | `082-intervocalic-j-vocalization.md` |
-| 92 | SC083 | published historical_sound_change | `083-unstressed-ei-contraction.md` |
-| 93 | SC085 | published historical_sound_change | `085-h-loss.md` |
-| 94 | SC086 | published historical_sound_change | `086-contraction.md` |
-| 95 | SC087 | published historical_sound_change | `087-r-metathesis.md` |
-| 96 | SC089 | published historical_sound_change | `089-late-unstressed-ag-suffix.md` |
-| 97 | SC109 | published technical support | `109-palatal-fricative-merger-support.md` |
-| 98 | SC016 | published orthography_surface | `016-west-saxon-palatal-glide.md` |
+| 74 | SC115 | published technical support | `115-post-umlaut-high-syncope.md` |
+| 75 | SC067 | published historical_sound_change | `067-dental-assimilation.md` |
+| 76 | SC068 | published historical_sound_change | `068-preconsonantal-degemination.md` |
+| 77 | SC069 | published historical_sound_change | `069-early-o-shortening-context-note.md` |
+| 78 | SC070 | published historical_sound_change | `070-early-unstressed-fronting.md` |
+| 79 | SC071 | published historical_sound_change | `071-late-o-shortening.md` |
+| 80 | SC099 | published historical_sound_change | `099-medial-unstressed-o-raising.md` |
+| 81 | SC100 | published historical_sound_change | `100-final-unstressed-o-lowering.md` |
+| 82 | SC072 | published historical_sound_change | `072-unstressed-long-vowel-shortening.md` |
+| 83 | SC073 | published historical_sound_change | `073-unstressed-ae-merger.md` |
+| 84 | SC074 | published historical_sound_change | `074-medial-unstressed-i-lowering.md` |
+| 85 | SC075 | published historical_sound_change | `075-i-preservation-before-ng.md` |
+| 86 | SC040 | published historical_sound_change | `040-medial-unstressed-u-lowering.md` |
+| 87 | SC076 | published historical_sound_change | `076-prefix-i-reduction.md` |
+| 88 | SC078 | published historical_sound_change | `078-weak-tail-reduction.md` |
+| 89 | SC079 | published historical_sound_change | `079-j-loss-after-heavy-syllables.md` |
+| 90 | SC080 | published historical_sound_change | `080-final-geminate-simplification.md` |
+| 91 | SC081 | published historical_sound_change | `081-j-strengthening.md` |
+| 92 | SC082 | published historical_sound_change | `082-intervocalic-j-vocalization.md` |
+| 93 | SC083 | published historical_sound_change | `083-unstressed-ei-contraction.md` |
+| 94 | SC085 | published historical_sound_change | `085-h-loss.md` |
+| 95 | SC086 | published historical_sound_change | `086-contraction.md` |
+| 96 | SC087 | published historical_sound_change | `087-r-metathesis.md` |
+| 97 | SC089 | published historical_sound_change | `089-late-unstressed-ag-suffix.md` |
+| 98 | SC109 | published technical support | `109-palatal-fricative-merger-support.md` |
+| 99 | SC016 | published orthography_surface | `016-west-saxon-palatal-glide.md` |
 
 ## Retired and deliberately unpublished identities
 
@@ -186,4 +187,4 @@ Published identities: 98. Missing or erroneous omissions: 0.
 | 085-086 | SC085: published historical_sound_change; SC086: published historical_sound_change |
 | 087 | SC087: published historical_sound_change |
 
-Published identities outside that historical report population: SC103, SC096, SC111, SC098, SC097, SC112, SC102, SC104, SC101, SC106, SC110, SC107, SC108, SC105, SC114, SC099, SC100, SC089, SC109.
+Published identities outside that historical report population: SC103, SC096, SC111, SC098, SC097, SC112, SC102, SC104, SC101, SC106, SC110, SC107, SC108, SC105, SC114, SC115, SC099, SC100, SC089, SC109.

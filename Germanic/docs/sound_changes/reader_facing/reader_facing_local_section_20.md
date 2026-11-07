@@ -3823,27 +3823,26 @@ high linker has to be invented; the unresolved premise is formation
 chronology [@Orel2003, pp. 315, 448; @Kroonen2013, p. 424;
 @ClarkHall1960, p. 260, Beowulf 667].
 
-Correctly encoded versions of these two hypotheses are not accepted by
-the current canonical input grammar. An explicitly hypothetical
-comparison starting after that grammar can test the downstream rules,
-but cannot establish a canonical whole-word derivation, an independently
-licensed historical-stage witness, or inheritance. Such comparisons are
-kept separate from the historical admission decision; the current
-grammar is not changed to make the candidate succeed.
-For both printed nominative hypotheses, the retained formulation
-preserves the linker but finishes as [seleoweard]{.pred}; the former
-formulation deletes it and finishes as [sealweard]{.pred}.
-The difference survives, but neither result supplies the attested target.
-These are conditional model outputs, not additional Old English
-attestations or a successful lexical regression.
+The canonical grammar now recognizes inherited high-vowel first members
+and the second member's dental cluster without sacrificing older accepted
+analyses. Both printed hypotheses, and the ordinary a-stem accusative
+\emph{*sáli-wàrðą}, regularly produce *seleweard*. Previously the
+retained plain medial *i* incorrectly underwent breaking, producing
+[seleoweard]{.pred}. Restoring the former early high-vowel deletion instead
+produces [sealweard]{.pred}; removing the later weight condition produces
+[selweard]{.pred}. These are three distinct wrong analyses, not three
+attestations. Correct output establishes a conditional derivation, not the
+date or inheritance of the compound.
 
-No new lexical selection is made on that incomplete basis. The selected
-high-vowel domain remains untested by an independently established
-complete compound history. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
+No new lexical selection is made without that independent formation
+premise. Complete selected weight controls and independently reconstructed
+later-stage controls now test the high-vowel core described under
+[SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope); they do not supply a
+complete inherited-compound discriminator for the former early rule. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
 remain genuine selected *a*-deletion witnesses, not evidence for the
-new high-vowel restriction. The executable correction has component
-controls, but that is a different evidential claim from full lexical
-validation.
+new high-vowel restriction. The independent *ūtumist* history also demonstrates mutation before
+high-vowel loss, not merely successful component composition
+[@RingeTaylor2014, p. 267].
 
 Barrack's weak-vowel fronting and quality rules 333a/b and his rounding
 rule 335 belong to this wider discussion, but are not equivalent
@@ -3859,9 +3858,14 @@ change and licenses deletion of the linking vowel, giving
 \emph{*régnbògô}; ordinary accent stripping then gives
 \emph{*régnbogô}. The full account and its reconstruction qualifications
 belong to [SC017 PNWGmcULowering](#rule-PNWGmcULowering), not to late
-unstressed lowering. The only boundary the lexical evidence supplies
-is the immediately following technical stress-stripping stage, which is not a
-sound change.
+unstressed lowering. Its immediate annotation dependency does not date historical nonhigh
+syncope. The handbooks place ordinary nonhigh syncope after breaking, and
+high-vowel loss normally after mutation. The early *a* fragment is retained
+as a selected-input holding proxy; the later general nonhigh process belongs
+to [SC114 OENonHighSyn](#rule-OENonHighSyn), and the high-vowel component
+follows mutation [@SieversBrunner1965, pp. 137--138, §167 and notes;
+@HoggGrammar2011, pp. 220--224, §§6.14--6.20;
+@RingeTaylor2014, pp. 266--267].
 
 ### \CAPRRuleHeading{SC037. Syncope of compound linking vowels}{OECompoundLinkingSyncope} {#rule-OECompoundLinkingSyncope}
 
@@ -3869,28 +3873,16 @@ sound change.
 define OECompoundLinkingSyncope Ctx([
     {*a} -> 0
         || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
-] .o. [
-    [{*i}|{*u}] -> 0
-        || [
-            [PGmcStarAcuteVowel & EnglishStarLongVowel] OEAnyConsonant+ |
-            [PGmcStarAcuteVowel & EnglishStarShortVowel] OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant+ PGmcStarGraveVowel
 ]);
 ```
 
-The two clauses keep nonhigh deletion separate from high-vowel loss.
-For the latter, the represented heavy patterns are a long primary vowel
-followed by consonant(s), or a short primary vowel followed by at least
-two consonants. The annotated stress inventory and consonant strings
-are a bounded executable proxy, not a complete syllabification of all
-historical compounds. In particular, the right-hand consonant sequence
-does not independently guarantee an open linking syllable, and not every
-historical long or diphthongal stressed vowel has a corresponding accent
-token. The cited handbooks' historical conditions remain distinct from
-those representational limits. The retained executable fragment describes
-the heavy-root pattern, not a completed explanation of the older
-light-root losses. Neither its successful component controls nor the
-conditional compound hypotheses constitute full lexical certification.
+Only the *a* holding fragment remains at this early executable site.
+The high-vowel component has a separate postmutation site and a bounded
+open-medial domain. Neither serialization constitutes a completed
+explanation of older light-root contractions. Russom's metrical review
+also challenges obligatory positional destressing: modern stress marks
+are modelling annotations, not independently established historical
+prosody for every name [@Russom2001, pp. 39--64].
 
 The *reġnboga* test exposes an annotation dependency rather than an
 independently dated historical sound-change boundary. If the grave is
@@ -4335,7 +4327,7 @@ The shared w conditioner makes that exclusion explicit:
 ```foma
 define EnglishBreakingWContext [
     {*w} [[EnglishStarVocalic | EnglishStarConsonant]
-        - [{*i} | {*í} | {*ī} | {*ḯ} | {*j}]] |
+        - [{*i} | {*ì} | {*í} | {*ī} | {*ḯ} | {*j}]] |
     {*w} .#.
 ];
 ```
@@ -4353,6 +4345,40 @@ breaking's velar trigger from premature palatalization: those forms are
 displacement negatives, not live
 [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization)
 applications.
+
+### SC044. Stress-sensitive short-i breaking (`OEBreakingI`) {#rule-OEBreakingI}
+
+```foma
+define OEBreakingI [
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingWContext
+] .o. [
+    {*í} -> {*ío} || _ EnglishBreakingRContext,
+    {*í} -> {*ío} || _ EnglishBreakingHContext,
+    {*í} -> {*ío} || _ EnglishBreakingWContext,
+    {*ì} -> {*io} || _ EnglishBreakingRContext,
+    {*ì} -> {*io} || _ EnglishBreakingHContext,
+    {*ì} -> {*io} || _ EnglishBreakingWContext
+];
+```
+
+Breaking is not an ordinary unstressed-vowel development. *fulwiht*
+'baptism' and *nawiht* 'nothing' supply independent negative evidence;
+the latter has separately explained stressed byforms. A plain vowel can
+nevertheless represent the stressed initial nucleus after an earlier
+accent-consuming change. This component therefore admits that nucleus,
+explicit primary *í*, and preserved subordinate *ì*, but excludes plain
+medial *i*. Positive pretonic foot marking retains its existing scope
+[@HoggGrammar2011, pp. 217--218, §§6.7--6.8;
+@Campbell1959, pp. 54--56, §§139--144; @RingeTaylor2014, pp. 187--188].
+
+In the conditional *seleweard* history the retained medial *i* causes
+mutation without breaking and later lowers to *e*. This is a general
+stress distinction, not suppression of a diphthong by lexical identity.
+The second root's subordinate marker survives until its phonological
+consumers; its technical decoding is not a date for obligatory historical
+destressing [@Russom2001, pp. 39--64].
 
 ## Velar-fricative palatalization
 
@@ -5073,17 +5099,18 @@ displacement failure supplies no positive historical terminus.
 
 ```foma
 define OEIUmlautFronting [
-    {*a} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ā} -> {*ǣ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*e} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*o} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ō} -> {*ē} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*u} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ū} -> {*ȳ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*á} -> {*æ} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*é} -> {*i} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ó} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger,
-    {*ú} -> {*y} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+    {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ō} -> {*ē} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ù} -> {*ỳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*u} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ū} -> {*ȳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*á} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*é} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ó} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*ú} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger
 ];
 ```
 
@@ -5103,6 +5130,26 @@ left an earlier raising to this late rule; sheath represents the later
 bundle earlier strands sheath and diphthongizes the model's still-unraised
 gift vowel. Neither failure overturns the independently supported ordinary
 palatal-diphthongization-before-mutation account.
+
+Short medial *u* can undergo mutation while transmitting it to the
+preceding stressed monophthong. Hogg explicitly describes this iterative
+development, and Campbell calls it double umlaut. The fronting context
+therefore includes intervening plain medial *u*, not a secondary-stressed
+*ù*. The latter keeps its stress as the internal carrier *ỳ* until high
+syncope has finished. The ordinary raising and diphthong components keep
+their existing contexts; newly fronted *æ* across a mutation-produced
+*y* is not indiscriminately raised again
+[@HoggGrammar2011, pp. 120--121, §5.76, p. 219, §6.10;
+@Campbell1959, pp. 80--81, §203].
+
+```foma
+define EnglishIUmlautThroughU [EnglishIUmlautIntervening [{*u} EnglishIUmlautIntervening]*];
+```
+
+The independent outmost/furthest reconstruction and the separate
+nonhigh-vowel and subordinate-stress controls are discussed with
+[SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope). This coupled correction
+preserves the previously selected mutation and breaking histories.
 
 ### SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
@@ -5740,6 +5787,101 @@ therefore establish the sequence i-umlaut, l-adjacent syncope, preconsonantal
 degemination. The first relation separates two historical phases; the second is
 a direct feeding relation, since syncope creates the cluster that degemination
 simplifies.
+
+## Postmutation high-vowel syncope
+
+### Historical discussion
+
+The regular high-vowel core loses a short unstressed high vowel in an open
+medial syllable after a heavy syllable. Light-root retention and the
+earlier light-root contractions must remain distinguished; the latter
+are not explained away as optionality, grammatical conditioning or
+unsupported analogy [@SieversBrunner1965, pp. 137--138, §§167--168;
+@Campbell1959, pp. 145--146, §§348--349;
+@HoggGrammar2011, pp. 222--225, §§6.18--6.21].
+
+Ringe and Taylor reconstruct pre-Old-English
+[ūtumist]{.recon .iv lang=preoe sort=utumist role=source_protoform},
+then [ȳtymist]{.recon .iv lang=preoe sort=ytymist role=source_protoform},
+and attested [*ȳtmest*]{.iv lang=oe sort=ytmest role=evidence_form}
+'furthest'. Mutation precedes the loss of the medial high vowel.
+Skipping that loss, while preserving subsequent unrounding and lowering,
+gives [ȳtemest]{.pred}. That variant is also attested: Ringe and Taylor
+explicitly analyse it by analogy with *yfemest* and similar forms.
+It fails the specified regular history to *ȳtmest*, not the entire Old
+English lexicon [@RingeTaylor2014, p. 267].
+The transmitted mutation is independently described by Hogg and Campbell;
+it is not inferred from the need to make this derivation succeed
+[@HoggGrammar2011, pp. 120--121, §5.76, p. 219, §6.10;
+@Campbell1959, pp. 80--81, §203].
+
+Hogg's [gaduling]{.recon .iv lang=preoe sort=gaduling role=source_protoform}
+gives [*gædeling*]{.iv lang=oe sort=gaedeling role=evidence_form}
+'companion'. Its light first syllable preserves the medial high vowel
+through syncope; mutation-produced *y* then unrounds and lowers.
+Unrestricted deletion predicts [gædling]{.pred}; omitting weak unrounding
+leaves [gædyling]{.pred}. This supplies an independent later-stage
+light-root retention control without presuming a new inherited compound
+[@HoggGrammar2011, pp. 120--121, §5.76, p. 219, §6.10].
+
+The bailiff reconstruction provides a second, strictly stage-level
+control: [skuldihātijā]{.recon .iv lang=preoe sort=skuldihatija role=source_protoform}
+becomes [sċyldihǣtjā]{.recon .iv lang=preoe sort=scyldihatja role=source_protoform},
+with medial *i* lost in [*sċyldhǣta*]{.iv lang=oe sort=scyldhaeta role=comparison_form}
+'bailiff' [@RingeTaylor2014, p. 267].
+The syncope component correctly deletes that *i*. Its complete suffix
+derivation is not certified: subordinate prominence on the long second
+root is not fully represented, and the current model shortens its vowel.
+This limitation must not be concealed by substituting a convenient short
+reconstruction or adding a lexical repair.
+
+The inherited [wiđuwōn]{.recon .iv lang=pgmc sort=widuwon role=source_protoform}
+and Old English [*widuwe*]{.iv lang=oe sort=widuwe role=comparison_form}
+'widow' independently corroborate the retained medial vowel
+[@Orel2003, p. 462].
+The selected root-vowel variant
+[*wuduwe*]{.iv lang=oe sort=wuduwe role=evidence_form} retains that same *u*.
+Removing the weight restriction predicts [wudwe]{.pred}. This is a complete
+selected negative control for the general high-vowel component, not a
+complete discriminator of the former early compound-only formulation.
+Its root-vowel history remains with
+[SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut).
+
+### SC115. The bounded high-vowel component (`OEHighLinkSyncope`) {#rule-OEHighLinkSyncope}
+
+```foma
+define OEHighLinkSyncope FootCtx([
+    [{*i}|{*u}|{*y}] -> 0
+        || .#. OEAnyConsonant* [
+            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
+            [EnglishStarShortVowel | EnglishStarShortDiphthong]
+                OEAnyConsonant OEAnyConsonant+
+        ] _ OEAnyConsonant EnglishStarVocalic
+]) .o. FootCtx([{*y} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _])
+    .o. Ctx([{*ì} -> {*i}, {*ù} -> {*u}, {*ỳ} -> {*y}]);
+```
+
+This support component serializes the high-vowel part of
+[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) after
+mutation and before weak-vowel lowering. It is not a new older-name law.
+The following singleton consonant and vowel identify a bounded open
+medial domain; arbitrary onset clusters are not silently treated as a
+complete syllabification. The existing adjacent-*l* component retains
+its own source-backed scope. The support component also serializes short weak *y* unrounding before
+the ordinary *i/e* merger. Hogg independently describes *u* mutation,
+early unrounding, and eventual *e*; the selected site after syncope is a
+technical serialization, not a demonstrated unrounding-after-syncope
+edge. Both operations preserve the relevant high-vowel weight contrast.
+Initial root *y* and subordinate *ỳ* are excluded from weak unrounding
+[@HoggGrammar2011, p. 219, §6.10 and note 1].
+Final decoding removes surviving secondary
+high-vowel stress annotations, not historical stress itself.
+
+The conditional *seleweard* derivation now retains *i*, allows its regular
+mutation of the first root, and lowers it to unstressed *e* without
+breaking. It does not independently prove that the compound preceded
+syncope. Older names therefore remain substantive historical evidence
+outside the completed account, not a list of lexical exceptions.
 
 ## Dental assimilation
 

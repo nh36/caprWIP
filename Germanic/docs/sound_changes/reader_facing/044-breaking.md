@@ -38,7 +38,7 @@ The shared w conditioner makes that exclusion explicit:
 ```foma
 define EnglishBreakingWContext [
     {*w} [[EnglishStarVocalic | EnglishStarConsonant]
-        - [{*i} | {*í} | {*ī} | {*ḯ} | {*j}]] |
+        - [{*i} | {*ì} | {*í} | {*ī} | {*ḯ} | {*j}]] |
     {*w} .#.
 ];
 ```
@@ -56,3 +56,37 @@ breaking's velar trigger from premature palatalization: those forms are
 displacement negatives, not live
 [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization)
 applications.
+
+## SC044. Stress-sensitive short-i breaking (`OEBreakingI`) {#rule-OEBreakingI}
+
+```foma
+define OEBreakingI [
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingWContext
+] .o. [
+    {*í} -> {*ío} || _ EnglishBreakingRContext,
+    {*í} -> {*ío} || _ EnglishBreakingHContext,
+    {*í} -> {*ío} || _ EnglishBreakingWContext,
+    {*ì} -> {*io} || _ EnglishBreakingRContext,
+    {*ì} -> {*io} || _ EnglishBreakingHContext,
+    {*ì} -> {*io} || _ EnglishBreakingWContext
+];
+```
+
+Breaking is not an ordinary unstressed-vowel development. *fulwiht*
+'baptism' and *nawiht* 'nothing' supply independent negative evidence;
+the latter has separately explained stressed byforms. A plain vowel can
+nevertheless represent the stressed initial nucleus after an earlier
+accent-consuming change. This component therefore admits that nucleus,
+explicit primary *í*, and preserved subordinate *ì*, but excludes plain
+medial *i*. Positive pretonic foot marking retains its existing scope
+[@HoggGrammar2011, pp. 217--218, §§6.7--6.8;
+@Campbell1959, pp. 54--56, §§139--144; @RingeTaylor2014, pp. 187--188].
+
+In the conditional *seleweard* history the retained medial *i* causes
+mutation without breaking and later lowers to *e*. This is a general
+stress distinction, not suppression of a diphthong by lexical identity.
+The second root's subordinate marker survives until its phonological
+consumers; its technical decoding is not a date for obligatory historical
+destressing [@Russom2001, pp. 39--64].

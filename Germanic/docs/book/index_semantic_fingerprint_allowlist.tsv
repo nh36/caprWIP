@@ -285,3 +285,14 @@ add	oe	seleweard	comparison_form	explicit_tag	Germanic/docs/sound_changes/reader
 add	pgmc	sali-warđaz	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 final evidence: Orel315 printed nominative hypothesis, not a certified selected history.	
 add	pgmc	sali-warđuz	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 final evidence: Orel315 alternative second-member inflection, same i-linker.	
 add	on	sal-vǫrðr	comparison_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 final evidence: Orel315 Norse comparison, not proof of compound inheritance.	
+add	preoe	ūtumist	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: independently reconstructed pre-OE stage, not PGmc admission.	
+add	preoe	ȳtymist	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: Ringe-Taylor267 postmutation stage.	
+add	oe	ȳtmest	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: regular later-stage high-loss witness.	
+add	preoe	skuldihātijā	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: Ringe-Taylor267 pre-OE bailiff stage.	
+add	preoe	sċyldihǣtjā	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: independent high-syncope stage; full suffix not certified.	
+add	oe	sċyldhǣta	comparison_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: attested bailiff comparison, not new admission.	
+add	pgmc	wiđuwōn	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: Orel462 inherited widow citation, selected dental convention unchanged.	
+add	oe	widuwe	comparison_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: Orel462 OE comparison.	
+add	oe	wuduwe	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: existing complete selected weight-negative, not compound admission.	
+add	preoe	gaduling	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: Hogg5.76/6.10 independent later-stage weak-u control.	
+add	oe	gædeling	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: source-backed light-root retention and transmitted mutation.	

@@ -17,7 +17,7 @@ def evidence():
     return json.loads((AUDIT / "evidence.json").read_text())
 
 
-def test_adopted_kernel_is_the_actual_source_bound_candidate():
+def test_archived_restriction_and_current_retained_a_kernel():
     report = evidence()
     manifest = json.loads((AUDIT / "manifest.json").read_text())
     assert hashlib.sha256((AUDIT / "experiments.zip").read_bytes()).hexdigest() == manifest["archive"]
@@ -34,7 +34,9 @@ def test_adopted_kernel_is_the_actual_source_bound_candidate():
     assert {name for name in before if before[name].body != tested[name].body} == {
         "OECompoundLinkingSyncope"}
     current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
-    assert current["OECompoundLinkingSyncope"].body == tested["OECompoundLinkingSyncope"].body
+    archived_a = tested["OECompoundLinkingSyncope"].body.split("] .o. [", 1)[0] + "])"
+    assert "".join(current["OECompoundLinkingSyncope"].body.split()) == (
+        "".join(archived_a.split()))
 
 
 def test_light_high_linkers_survive_while_heavy_high_linkers_and_short_a_syncopate():

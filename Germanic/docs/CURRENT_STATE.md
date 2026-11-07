@@ -5,6 +5,10 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The bounded [SC037 intervention](sound_changes/audits/sc037-historical-executable-intervention.md)
+records the historical decision, preserved research streams and deliberately
+unadopted residual questions. Neither stream's next investigation is begun.
+
 SC112 scientific implementation and lexical publication are complete; the
 [publication receipt](sound_changes/audits/sc112-lexical-publication.md)
 records the evidence and validation. Current lexical counts live in the

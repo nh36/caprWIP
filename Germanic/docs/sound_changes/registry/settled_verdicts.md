@@ -28,7 +28,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC034 | Retained show long-diphthong proxy | active | REFORMULATE/DEFER | `Germanic/docs/sound_changes/audits/sc034-adjudication.md` |
 | SC035 | Pretonic front-vowel raising after a palatal fricative | active | RETAIN | `Germanic/docs/sound_changes/audits/sc035-literature-adjudication.md` |
 | SC036 | OE weak medial vocalism | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc036-adjudication.md` |
-| SC037 | OE Compound Linking Syncope | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc037-adjudication.md` |
+| SC037 | OE Compound Linking Syncope | active | RESTRICT/SPLIT/REORDER | `Germanic/docs/sound_changes/audits/sc037-historical-executable-intervention.md` |
 | SC039 | OE WI Combinative U Umlaut | active | DEFER | `Germanic/docs/sound_changes/audits/sc039-adjudication.md` |
 | SC040 | OE Med Unstressed U Lowering | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc040-adjudication.md` |
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
