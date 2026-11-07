@@ -11,6 +11,35 @@ ROOT = Path(__file__).resolve().parents[2]
 AUDIT = ROOT / "Germanic/docs/sound_changes/audits/sc037-experiments"
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from executable_facts import parse_defines
+INTERVENTION_ADDED = {"EnglishIUmlautThroughU", "OEHighLinkSyncope"}
+INTERVENTION_CHANGED = {
+    "EnglishBreakingWContext", "EnglishProtoToOE", "OEBreakingI",
+    "OECompoundLinkingSyncope", "OEIUmlautFronting", "OEStripSecondaryStress",
+    "PGmcStarVowel", "pgrmCodaComplex", "pgrmCompoundFirst", "pgrmLinkingVowel",
+}
+
+
+def assert_intervention_scope():
+    accepted = subprocess.check_output(
+        ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+        cwd=ROOT)
+    assert hashlib.sha256(accepted).hexdigest() == (
+        "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+    old = parse_defines(subprocess.check_output(
+        ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+        cwd=ROOT, text=True))
+    tested = parse_defines(accepted.decode())
+    assert tested.keys() - old.keys() == INTERVENTION_ADDED
+    assert not old.keys() - tested.keys()
+    assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+        INTERVENTION_CHANGED)
+    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    for name in INTERVENTION_ADDED | INTERVENTION_CHANGED:
+        assert current[name].definition_raw == tested[name].definition_raw
+
+
+def test_intervention_changes_are_exactly_source_bound():
+    assert_intervention_scope()
 
 
 def evidence():

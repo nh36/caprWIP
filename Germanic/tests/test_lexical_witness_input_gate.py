@@ -14,6 +14,9 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import oe_pipeline
 from capr_runtime import check_build_manifest, layout, run_in_runner
 from executable_facts import parse_defines
+from test_sc037_adjudication import (
+    INTERVENTION_ADDED, INTERVENTION_CHANGED, assert_intervention_scope,
+)
 
 AUDIT = ROOT / "Germanic/docs/sound_changes/audits/lexical-witnesses-2335-2336"
 BASE = "0dd533e3f15c85f20a976a3781a9b4d79bf6f928"
@@ -43,6 +46,7 @@ def lookup(bin_name, forms):
 
 
 def test_extension_changes_only_input_grammar_not_sound_laws():
+    assert_intervention_scope()
     old = parse_defines(subprocess.check_output(
         ["git", "show", f"{BASE}:Germanic/fsts/germanic.txt"], cwd=ROOT, text=True,
     ))
@@ -53,7 +57,7 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
     cell_parser = {"PGCell" + suffix for suffix in (
         "Root", "Stem", "End", "Plain", "Prefixed", "Raw", "Canonical", "Strip", "Input")}
     assert current.keys() - old.keys() == {
-        "pgrmInputTailVowel", "EnglishProtoNative", "OENonHighSyn"} | medial | cell_parser
+        "pgrmInputTailVowel", "EnglishProtoNative", "OENonHighSyn"} | medial | cell_parser | INTERVENTION_ADDED
     assert old.keys() - current.keys() == {"OESoulProxy"}
     assert {name for name in old.keys() & current.keys()
             if old[name].definition_raw != current[name].definition_raw} == {
@@ -74,7 +78,7 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "OEVelarPalatalizationStops",
                 # Independently source-bound by test_sc037_adjudication.py.
                 "OECompoundLinkingSyncope",
-            }
+            } | INTERVENTION_CHANGED
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         expected = old[name].definition_raw
         if name == "pgrmSimpleWord":
@@ -89,6 +93,7 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
 
 
 def test_gate_receipt_conserves_every_preexisting_record_and_order():
+    assert_intervention_scope()
     before = receipt("pre_gate.json.gz")
     extended = receipt("gate_experiment.json.gz")
     assert before["source_sha256"] == extended["source_sha256"]
@@ -96,7 +101,8 @@ def test_gate_receipt_conserves_every_preexisting_record_and_order():
     assert before["order"] == extended["order"]
     assert before["order"] == [
         stage.foma_identifier if stage.kind == "named" else stage.inline_text
-        for stage in oe_pipeline.stages() if stage.foma_identifier != "OENonHighSyn"
+        for stage in oe_pipeline.stages()
+        if stage.foma_identifier not in {"OENonHighSyn", "OEHighLinkSyncope"}
     ]
     assert extended["production_equivalent"]
     old, new = candidates(before), candidates(extended)
@@ -147,7 +153,9 @@ def test_production_gate_is_generic_and_preserves_every_old_output():
     assert outputs[forms[1]] == ["*é*r*θ*a*k*ù*n*ð*ai*z*ō*z"]
     assert outputs[forms[2]] == ["*f*ú*l*l*ai*z*ō*z"]
     assert outputs[forms[3]] == ["*f*ú*l*l*i*z*ō*z"]
-    assert all(outputs[form] == [] for form in forms[4:])
+    assert all(outputs[form] == [] for form in forms[4:6])
+    assert_intervention_scope()
+    assert outputs["xláiba-warðaz"] == ["*x*l*ái*b*a*w*a*r*ð*a*z"]
     records = receipt("pre_gate.json.gz")["existing_population"]["records"]
     old_inputs = [row["fst_input"] for row in records]
     current = lookup("old_english.bin", old_inputs + forms[:2] + ["xwí-līkaz"])

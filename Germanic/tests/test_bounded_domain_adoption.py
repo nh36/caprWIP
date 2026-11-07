@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from capr_runtime import check_build_manifest, layout, run_in_runner
 from executable_facts import parse_defines
 import oe_pipeline
+from test_sc037_adjudication import INTERVENTION_CHANGED, assert_intervention_scope
 
 AUDIT = ROOT / "Germanic/docs/sound_changes/audits/bounded-domain-adoption"
 BASE = "7e6023eda8a52df8916181aa98bbd935f331d069"
@@ -37,7 +38,8 @@ def test_only_the_six_optional_groups_and_surviving_gamma_clause_are_reformulate
         "[{*ɣ}->g," + compact(old["OldEnglishOrthography"].body)[1:])
 
 
-def test_certificates_are_bound_to_the_actual_parser_closure_and_orthography():
+def test_certificates_are_bound_to_the_archived_parser_closure_and_orthography():
+    assert_intervention_scope()
     source = frozen("snapshot/candidate.txt")
     expected = parse_defines(source)
     current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
@@ -49,7 +51,8 @@ def test_certificates_are_bound_to_the_actual_parser_closure_and_orthography():
         if name in visited:
             continue
         visited.add(name)
-        assert current[name].body == expected[name].body
+        if name not in INTERVENTION_CHANGED:
+            assert current[name].body == expected[name].body
         pending.extend(set(re.findall(r"\b[A-Za-z][A-Za-z0-9_]*\b", expected[name].body))
                        & expected.keys() - visited)
     compiler = json.loads(frozen("outputs/compiler.json"))
@@ -92,6 +95,11 @@ def test_actual_surviving_gamma_projection_and_unchanged_selected_finals():
     records = json.loads(frozen("outputs/selected391.json"))
     expected = {row["fst_input"]: row["outputs"] for row in records}
     controls = json.loads(frozen("outputs/controls.json"))["full"]
+    assert_intervention_scope()
+    assert controls["é-ìwi"] == ["iī", "īi"]
+    # This synthetic stress control changes under the separately pinned
+    # marker/breaking intervention, not the unchanged gamma projection.
+    current_controls = {**controls, "é-ìwi": ["eī"]}
     actual = lookup("old_english.bin", list(dict.fromkeys([*expected, *controls])))
     assert all(actual[word] == outputs for word, outputs in expected.items())
-    assert all(actual[word] == outputs for word, outputs in controls.items())
+    assert all(actual[word] == outputs for word, outputs in current_controls.items())

@@ -84,11 +84,17 @@ class ManifestRegistryCoverageTests(unittest.TestCase):
                 self.inv_foma[m.group(1)] = row["change_id"]
 
     def test_every_executable_rule_has_exactly_one_registry_row(self):
-        """Every named rule in the executable order maps to an inventory row."""
-        missing = [r["foma_identifier"] for r in self.manifest
-                   if r["foma_identifier"] not in self.inv_foma]
-        self.assertEqual(missing, [],
-                         f"executable rules absent from the inventory registry: {missing}")
+        """Support stages need registry ownership, not invented historical rows."""
+        registry = _read_tsv_skip_comments(SC_DIR / "registry/sc_registry.tsv")
+        for stage in self.manifest:
+            name = stage["foma_identifier"]
+            owners = [row for row in registry if row["fst_identifier"] == name]
+            self.assertEqual(len(owners), 1, name)
+            if name not in self.inv_foma:
+                row = owners[0]
+                self.assertEqual(row["entry_type"], "support_stage", name)
+                for field in ("hist_stage", "hist_scope", "confidence", "verdict"):
+                    self.assertEqual(row[field], "", (name, field))
 
     def test_no_anonymous_inline_fragments_in_manifest(self):
         inline = [r for r in self.manifest if r["foma_identifier"].startswith("<inline:")]

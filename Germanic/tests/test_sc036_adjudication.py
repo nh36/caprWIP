@@ -13,6 +13,9 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import adjudicate
 import oe_pipeline
 from check_bibliography_sanity import parse_entries
+from test_sc037_adjudication import (
+    INTERVENTION_ADDED, INTERVENTION_CHANGED, assert_intervention_scope,
+)
 
 
 def receipt():
@@ -38,6 +41,7 @@ def test_receipt_identifies_its_actual_source_and_overlapping_populations():
 
 
 def test_sc036_and_separately_adjudicated_changes_remain_bounded():
+    assert_intervention_scope()
     source = (ROOT / "Germanic/fsts/germanic.txt").read_text()
     base = git_bytes(receipt()["base_commit"], "Germanic/fsts/germanic.txt").decode()
 
@@ -68,7 +72,7 @@ def test_sc036_and_separately_adjudicated_changes_remain_bounded():
         "Strip", "Input")}
     assert current.keys() - old.keys() == (
         {"OELHWeakRaising", "OENonHighSyn"} | gate_added | sc040_added |
-        parser_added)
+        parser_added | INTERVENTION_ADDED)
     assert old.keys() <= current.keys()
     assert {name for name in old if old[name] != current[name]} == (
         {"OEInterStressRaising", "EnglishProtoToOE"} | gate_changed |
@@ -77,7 +81,7 @@ def test_sc036_and_separately_adjudicated_changes_remain_bounded():
         {"OEMedUnstressedULowering", "EnglishProtoInput", "OEVelarPalatalizationStops",
          "OldEnglishOrthography"} |
         # Independently source-bound by test_sc037_adjudication.py.
-        {"OECompoundLinkingSyncope"})
+        {"OECompoundLinkingSyncope"} | INTERVENTION_CHANGED)
     assert current["OEInterStressRaising"] == "OELHWeakRaising"
     accepted = definitions(git_bytes(
         "ee73f189d2c4af2fab6170f7af066d96611ce749",

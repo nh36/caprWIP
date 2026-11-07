@@ -17,6 +17,9 @@ import adjudicate
 from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
 from historical_sc035 import historical_runtime
+from test_sc037_adjudication import (
+    INTERVENTION_ADDED, INTERVENTION_CHANGED, assert_intervention_scope,
+)
 
 
 def receipt():
@@ -66,6 +69,7 @@ def test_raising_and_later_lowering_are_separate_from_ae_merger():
 
 
 def test_context_lifting_preserves_the_other_segmental_rule_kernels():
+    assert_intervention_scope()
     old = subprocess.check_output(
         ["git", "show", receipt()["accepted_base_commit"] + ":Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True)
@@ -76,7 +80,7 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
     for stage in oe_pipeline.named_stages():
         name = stage.foma_identifier
         if name not in previous:
-            assert name in {"OEStressFootContext", "OENonHighSyn"}
+            assert name in {"OEStressFootContext", "OENonHighSyn"} | INTERVENTION_ADDED
             continue
         body = current[name]
         if body.startswith(("Ctx(", "FootCtx(")) and not previous[name].startswith(("Ctx(", "FootCtx(")):
@@ -92,7 +96,9 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
                        "OEMedUnstressedULowering", "EnglishProtoInput",
                        "OldEnglishOrthography",
                        # Independently source-bound by test_sc037_adjudication.py.
-                       "OECompoundLinkingSyncope"}
+                       "OECompoundLinkingSyncope"} | (
+                           INTERVENTION_CHANGED & {
+                               stage.foma_identifier for stage in oe_pipeline.named_stages()})
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 
