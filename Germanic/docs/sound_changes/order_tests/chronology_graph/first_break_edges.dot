@@ -27,7 +27,7 @@ digraph first_break_chronology {
   "SC034" [label="SC034\nRetained show long-diphthong proxy"];
   "SC035" [label="SC035\nPretonic front-vowel raising after a palatal fricative"];
   "SC036" [label="SC036\nOE weak medial vocalism"];
-  "SC037" [label="SC037\nOE Compound Linking Syncope"];
+  "SC037" [label="SC037\nFormer compound-syncope trace anchor"];
   "SC039" [label="SC039\nOE WI Combinative U Umlaut"];
   "SC040" [label="SC040\nOE Med Unstressed U Lowering"];
   "SC041" [label="SC041\nPWGmc Final Bare A Loss"];
@@ -38,7 +38,7 @@ digraph first_break_chronology {
   "SC046" [label="SC046\nOE A Restoration"];
   "SC047" [label="SC047\nOE Heavy Syllable Nasal Apocope"];
   "SC048" [label="SC048\nOE Secondary Nasalization"];
-  "SC049" [label="SC049\nPGmc B Allophony"];
+  "SC049" [label="SC049\nInherited labial positional realization"];
   "SC050" [label="SC050\nSievers Law Syncope"];
   "SC051" [label="SC051\nOE Sk Palatalization"];
   "SC052" [label="SC052\nClass-distinct English velar palatalization"];
@@ -51,18 +51,18 @@ digraph first_break_chronology {
   "SC059" [label="SC059\nOE Back Mutation"];
   "SC060" [label="SC060\nOE Ws Palatal Umlaut"];
   "SC061" [label="SC061\nOE Weak Tail Nasal Loss"];
-  "SC063" [label="SC063\nOE High Vowel Apocope"];
+  "SC063" [label="SC063\nHigh-vowel apocope with heavy-light retention"];
   "SC064" [label="SC064\nNWGmc In Stem N Loss"];
-  "SC065" [label="SC065\nOE Medial Syncope"];
-  "SC066" [label="SC066\nOE L Adjacent Syncope"];
+  "SC065" [label="SC065\nGeneral heavy/open high-vowel syncope"];
+  "SC066" [label="SC066\nLater light-syllable pre-l syncope"];
   "SC067" [label="SC067\nOE Dental Assimilation"];
-  "SC068" [label="SC068\nOE Preconsonantal Degemination"];
+  "SC068" [label="SC068\nPreconsonantal degemination before sonorants"];
   "SC069" [label="SC069\nOE Early O Shortening"];
   "SC070" [label="SC070\nOE Unstressed Fronting Early"];
   "SC071" [label="SC071\nOE Late O Shortening"];
   "SC072" [label="SC072\nOE Unstressed Long Vowel Shortening"];
   "SC073" [label="SC073\nOE Unstressed AE Merger"];
-  "SC074" [label="SC074\nOE Med Unstressed I Lowering1"];
+  "SC074" [label="SC074\nLater medial weak-i lowering"];
   "SC075" [label="SC075\nOE Med Unstressed I Lowering"];
   "SC076" [label="SC076\nPretonic i-lowering"];
   "SC078" [label="SC078\nOE Weak Tail Reduction"];
@@ -130,7 +130,7 @@ digraph first_break_chronology {
   "SC036" -> "SC107" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC036" -> "SC059" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC037" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC037" -> "SC038" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC037" -> "SC038" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC039" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC039" -> "SC040" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC040" -> "SC039" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
@@ -152,7 +152,7 @@ digraph first_break_chronology {
   "SC047" -> "SC048" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC048" -> "SC047" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC048" -> "SC059" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC049" -> "SC037" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC049" -> "SC037" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC049" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC050" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC050" -> "SC052" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
@@ -183,10 +183,10 @@ digraph first_break_chronology {
   "SC065" -> "SC055" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC065" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC066" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC066" -> "SC068" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
+  "SC066" -> "SC068" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC067" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC067" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC068" -> "SC066" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
+  "SC068" -> "SC066" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC068" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC069" -> "SC023" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC069" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
@@ -225,4 +225,5 @@ digraph first_break_chronology {
   "SC056" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC035" -> "SC107" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC035" -> "SC052" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC065" -> "SC068" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
 }

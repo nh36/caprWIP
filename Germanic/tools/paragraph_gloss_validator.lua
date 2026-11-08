@@ -314,8 +314,8 @@ local SHARED_GLOSS_VARIANTS = {
   ["ūtumist"] = {
     anchor = "ȳtmest", context = "Ringe and Taylor reconstruct pre-Old-English",
     following = true,
-    reference = {context = "The independent ūtumist history",
-                 target = "#rule-OEHighLinkSyncope"},
+    reference = {context = "The source-proposed ūtumist history",
+                 target = "#rule-OEMedialSyncope"},
   },
   ["ȳtymist"] = {
     anchor = "ȳtmest", context = "Ringe and Taylor reconstruct pre-Old-English",
@@ -355,6 +355,12 @@ local SHARED_GLOSS_VARIANTS = {
   ["hēafud"] = {
     anchor = "hēafod",
     context = "Campbell records both hēafud and hēafod",
+  },
+  ["hēafudu"] = {
+    anchor = "hēafod", context = "Fulk’s conservative Mercian", prior = true,
+  },
+  ["fūliþǭ"] = {
+    anchor = "fūliþō", context = "The selected accusative", prior = true, part2 = true,
   },
   ["græs"] = {
     anchor = "gærs",
@@ -423,6 +429,10 @@ local SHARED_GLOSS_VARIANTS = {
 -- These released passages explicitly revisit a previously glossed lemma.
 -- Do not impose repeated glosses on their prose or exempt unrelated mentions.
 local REPEATED_GLOSS_CONTEXTS = {
+  ["fȳlþe"] = {
+    {part2 = false, context = "The same word fixes a relative chronology"},
+    {part2 = true, context = "now accusative singular"},
+  },
   ["reġnboga"] = {
     {part2 = false, context = "The reġnboga test exposes an annotation dependency"},
     {part2 = true, context = "The second velar remains before a back vowel."},
@@ -602,6 +612,10 @@ local function check_para(el, is_p2, in_prose_section)
       local personal_name = not is_p2 and SC037_PERSONAL_NAMES[norm]
         and paragraph:find("The older names", 1, true)
         and paragraph:find("recognize high-vowel loss after light first roots", 1, true)
+      local syntax_example = not is_p2 and norm == "towtōla"
+        and paragraph:find("The quantifier fela governs genitive towtōla", 1, true)
+        and paragraph:find("enumerated implements", 1, true)
+        and paragraph:find("objects of habban", 1, true)
       if established_glosses[norm] then
         for _, context in ipairs(REPEATED_GLOSS_CONTEXTS[norm] or {}) do
           if is_p2 == context.part2 and paragraph:find(context.context, 1, true) then
@@ -613,7 +627,8 @@ local function check_para(el, is_p2, in_prose_section)
       if norm ~= "" and not seen[norm] then
         seen[norm] = true
         if is_p2 then cands_p2 = cands_p2 + 1 else cands_p1 = cands_p1 + 1 end
-        if not immediate_gloss and not shared_gloss and not repeated_gloss and not personal_name then
+        if not immediate_gloss and not shared_gloss and not repeated_gloss
+            and not personal_name and not syntax_example then
           local entry = {
             para    = (is_p2 and paras_p2_total or paras_p1),
             entry   = p2_entry,

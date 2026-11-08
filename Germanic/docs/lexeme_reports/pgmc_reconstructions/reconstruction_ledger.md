@@ -7847,9 +7847,9 @@ Coverage: 3 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2208"></a>
 
-## 2208: spindle / spinl
+## 2208: spindle / spinle
 
-Current citation: *spénnilō (pgmc); selected input: *spénnilō (pgmc; variety: none; equality_convention).
+Current citation: *spénnilō (pgmc); selected input: *spénnilǭ (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -11431,9 +11431,9 @@ Coverage: 4 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2335"></a>
 
-## 2335: filth / fȳlþ
+## 2335: filth / fȳlþe
 
-Current citation: *fūliþō (pgmc); selected input: *fūliþō (pgmc; variety: none; equality_convention).
+Current citation: *fūliþō (pgmc); selected input: *fūliþǭ (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |

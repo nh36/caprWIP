@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9"
+    ACTIVE_SHA = "ec1020060727592b489330998b63530ee2b17e14dcc17984e5c1d3305fc20f6b"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -123,7 +123,7 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual(len(selected), 380)
         self.assertEqual([m["row_id"] for m in migrations],
                          ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
-                          "2302", "2011", "2201", "2282", "2053"])
+                          "2302", "2011", "2201", "2282", "2053", "2335", "2208"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -142,7 +142,10 @@ class LegacySubsetTests(unittest.TestCase):
         )
         approval = json.loads(
             (BASELINE_DIR / "approved_nonhigh_cells_migration.json").read_text())
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc065_syncope_cells.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc065_syncope_cells.json",
+        )
         mod.validate_cell_transition(previous, current, approval)
         changed = {row["row_id"] for row in approval["changes"]}
         self.assertEqual(changed, {"2011", "2053", "2201", "2282"})
@@ -175,6 +178,34 @@ class LegacySubsetTests(unittest.TestCase):
                 approved = []
             with self.subTest(case=case), self.assertRaises(ValueError):
                 mod.legacy_subset(current, old, approved)
+
+    def test_syncope_transition_preserves_every_other_selected_cell(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc065_syncope_cells.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc065_syncope_cells.json",
+        )
+        approval = json.loads(
+            (BASELINE_DIR / "approved_syncope_cells_migration.json").read_text())
+        mod.validate_cell_transition(
+            previous, mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON), approval)
+        self.assertEqual({r["row_id"] for r in approval["changes"]}, {"2208", "2335"})
+
+    def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
+        import copy
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        with (BASELINE_DIR / "approved_input_migrations.tsv").open(encoding="utf-8") as handle:
+            migrations = list(csv.DictReader(handle, delimiter="\t"))
+        selected = mod.legacy_subset(self.current_rows, self.legacy_rows, migrations)
+        self.assertNotIn("2335", {r["row_id"] for r in selected})
+        for field, wrong in (
+            ("new_proto", "*fūlīn"), ("new_counterpart", "fūlþe"),
+            ("new_outputs", "fūlþe"), ("row_id", "unknown"),
+        ):
+            approved = copy.deepcopy(migrations)
+            next(r for r in approved if r["row_id"] == "2335")[field] = wrong
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                mod.legacy_subset(self.current_rows, self.legacy_rows, approved)
 
     def test_all_pre_sc056_selected_outputs_are_preserved(self):
         mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
@@ -232,7 +263,7 @@ class LegacySubsetTests(unittest.TestCase):
             previous["records"], old,
             [m for m in migrations if m["row_id"] not in {
                 "2224", "2162", "2283", "2095", "2313", "2314", "2302",
-                "2011", "2201", "2282", "2053"}],
+                "2011", "2201", "2282", "2053", "2208", "2335"}],
         )), 387)
 
 

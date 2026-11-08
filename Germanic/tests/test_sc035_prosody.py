@@ -18,7 +18,8 @@ from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
 from historical_sc035 import historical_runtime
 from test_sc037_adjudication import (
-    INTERVENTION_ADDED, INTERVENTION_CHANGED, assert_intervention_scope,
+    INTERVENTION_ADDED, INTERVENTION_CHANGED, CONSOLIDATION_ADDED,
+    CONSOLIDATION_CHANGED, assert_intervention_scope,
 )
 
 
@@ -80,7 +81,7 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
     for stage in oe_pipeline.named_stages():
         name = stage.foma_identifier
         if name not in previous:
-            assert name in {"OEStressFootContext", "OENonHighSyn"} | INTERVENTION_ADDED
+            assert name in {"OEStressFootContext", "OENonHighSyn"} | INTERVENTION_ADDED | CONSOLIDATION_ADDED
             continue
         body = current[name]
         if body.startswith(("Ctx(", "FootCtx(")) and not previous[name].startswith(("Ctx(", "FootCtx(")):
@@ -97,8 +98,9 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
                        "OldEnglishOrthography",
                        # Independently source-bound by test_sc037_adjudication.py.
                        "OECompoundLinkingSyncope"} | (
-                           INTERVENTION_CHANGED & {
-                               stage.foma_identifier for stage in oe_pipeline.named_stages()})
+                           (INTERVENTION_CHANGED | CONSOLIDATION_CHANGED) & {
+                               stage.foma_identifier for stage in oe_pipeline.named_stages()
+                               if stage.foma_identifier in previous})
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
 
 

@@ -75,11 +75,9 @@ not a reason to implement an optional change
 
 ### Linking syncope and the regular development
 
-Early lowering retains the subordinate accent. Consequently
-\emph{*régna-bògô} still supplies the prosodic environment for
-linking-vowel deletion, giving \emph{*régnbògô}.
-Only then does removal of the earlier accent annotation give
-\emph{*régnbogô}. Campbell's discussion of weakened compound
+Early lowering retains the subordinate accent. Its technical decoding
+gives \emph{*régnabogô}, with the first-member vowel still present.
+Ordinary nonhigh medial syncope later gives \emph{*réʝnbogô}. Campbell's discussion of weakened compound
 junctures supplies the broader historical context; the exact ordering
 of these serialized annotations is CAPR's explicit representation
 [@Campbell1959, pp. 148--149, §§356--357, p. 153, §367].
@@ -88,20 +86,31 @@ The first velar undergoes palatalization, the final long weak vowel
 shortens, and the palatal consonant is represented in the selected spelling
 [*reġnboga*]{.iv lang=oe sort=regnboga role=target_form}. The second velar remains before a back vowel.
 Thus the adopted chain is
-\emph{*régna-bùgô > *régna-bògô > *régnbògô > *régnbogô
+\emph{*régna-bùgô > *régna-bògô > *régnabogô > *réʝnabogô
 > *réʝnbogô > *réʝnboga > *réjnboga}, then *reġnboga*.
 The intermediate accented and palatal symbols are analytical
 representations, not alternative manuscript spellings.
 The principal account is
 [SC017 PNWGmcULowering](#rule-PNWGmcULowering), with linking deletion
-at [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope).
+at [SC114 OENonHighSyn](#rule-OENonHighSyn).
+
+The inherited \emph{b} is realized positionally after that loss, when
+it follows \emph{n} and remains a stop. Hogg describes the stop and
+bilabial fricative as early positional realizations of one phoneme,
+before later fricative merger [@HoggGrammar2011, pp. 29--30,
+§§2.53--2.54]. Delayed computation of this distribution is not a new
+late lenition event or a general postnasal \emph{β > b} law.
+With early realization frozen, the same later syncope predicts
+\emph{*reġnfoga}. The corrected representation removes the need for
+an independently undated early compound-vowel proxy.
 
 The word already contains \emph{o} when
 [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering)
 operates. It therefore supplies no evidence that compound secondary
 stress had disappeared before that late lowering.
-Its genuine dependency is survival of the earlier accent information
-until linking syncope. This does not alter the separate weak-vowel
+Its genuine early vowel dependency is survival of the subordinate
+accent until root lowering; later linking loss no longer reads that
+annotation. This does not alter the separate weak-vowel
 chronology of *weorold* 'world' or establish a universal date for
 compound deaccentuation.
 

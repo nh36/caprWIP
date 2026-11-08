@@ -53,8 +53,8 @@ class IntegrationTests(unittest.TestCase):
         legacy_required = {identifier for identifier in required
                            if self.rows[identifier]["legacy380"]}
         self.assertIn("2224", legacy_required)
-        self.assertEqual(len(required - {"2224"}), 163)
-        self.assertEqual(len(legacy_required - {"2224"}), 152)
+        self.assertEqual(len(required - {"2224"}), 164)
+        self.assertEqual(len(legacy_required - {"2224"}), 153)
         self.assertEqual(self.stats["required"], len(required))
         self.assertEqual(self.stats["legacy_current_required"], len(legacy_required))
 
@@ -72,7 +72,7 @@ class IntegrationTests(unittest.TestCase):
 
     def test_real_assembly_differences(self):
         self.assertEqual(self.stats["required_not_assembled"],
-                         ["2055", "2120", "2327", "2328", "2329"])
+                         ["2055", "2120", "2208", "2327", "2328", "2329"])
         self.assertEqual(self.stats["assembled_not_required"],
                          ["1933", "1955", "1989", "2018", "2029", "2044", "2074",
                           "2113", "2137", "2148", "2185", "2200", "2283"])

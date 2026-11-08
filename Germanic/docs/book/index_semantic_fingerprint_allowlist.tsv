@@ -296,3 +296,13 @@ add	oe	widuwe	comparison_form	explicit_tag	Germanic/docs/sound_changes/reader_fa
 add	oe	wuduwe	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: existing complete selected weight-negative, not compound admission.	
 add	preoe	gaduling	source_protoform	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: Hogg5.76/6.10 independent later-stage weak-u control.	
 add	oe	gædeling	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	SC037 intervention: source-backed light-root retention and transmitted mutation.	
+add	oe	fȳlþ	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md	SC065 syncope consolidation: attested nominative remains comparison, not selected target.	
+add	oe	fȳlþe	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md	SC065 syncope consolidation: source-backed selected accusative.	
+add	oe	fȳlþe	target_form	lexical_heading	filth — OE fȳlþe	SC065 syncope consolidation: selected accusative heading.	
+add	pgmc	*fūliþō	source_protoform	lexical_proto	filth — OE fȳlþe	SC065 syncope consolidation: unchanged PROTO citation under the corrected selected heading.	
+add	pgmc	*fūliþǭ	selected_input	trace_proto_input	filth — OE fȳlþe	SC065 syncope consolidation: approved accusative PROTOFORM, not a quoted dictionary citation.	
+add	pgmc	*fūliþǭ	source_protoform	lexical_protoform	filth — OE fȳlþe	SC065 syncope consolidation: ordinary strong feminine accusative at the same PGmc stage.	
+add	pgmc	*spénnilǭ	selected_input	trace_proto_input	spindle — OE spinle	SC065 syncope consolidation: approved existing spindle accusative selection.	
+add	pgmc	fūliþō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md	SC065 syncope consolidation: assembled citation retains its independent role.	
+add	pgmc	fūliþǭ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md	SC065 syncope consolidation: explicit selected accusative distinguished from citation.	
+remove	pgmc	*spénnilō	selected_input	trace_proto_input	spindle — OE spinl	SC065 syncope consolidation: nominative citation is no longer the selected executable cell.	

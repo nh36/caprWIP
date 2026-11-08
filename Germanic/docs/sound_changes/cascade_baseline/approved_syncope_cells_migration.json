@@ -1,0 +1,47 @@
+{
+  "adjudication": "SC065",
+  "transition_id": "syncope_cells",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc065-adjudication.md",
+  "previous_summary": {
+    "outputs_sha256": "ed765acdd0ddd7417941234a65be386cb7e617967a22549cbee20ca9d5d288f6",
+    "lexical_outputs_sha256": "b7ce0eff790ef81d4c0bfb596a3aa62b5da720424755d6e62e8f5e4764fe447b",
+    "legacy_subset_sha256": "4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "2335",
+      "before": {
+        "proto": "*fūliþō",
+        "proto_norm": "fūliθō",
+        "fst_input": "fūliθō",
+        "counterpart": "fȳlþ",
+        "outputs": "fȳlþ"
+      },
+      "after": {
+        "proto": "*fūliþǭ",
+        "proto_norm": "fūliθǭ",
+        "fst_input": "fūliθǭ",
+        "counterpart": "fȳlþe",
+        "outputs": "fȳlþe"
+      }
+    },
+    {
+      "row_id": "2208",
+      "before": {
+        "proto": "*spénnilō",
+        "proto_norm": "spénnilō",
+        "fst_input": "spénnilō",
+        "counterpart": "spinl",
+        "outputs": "spinl"
+      },
+      "after": {
+        "proto": "*spénnilǭ",
+        "proto_norm": "spénnilǭ",
+        "fst_input": "spénnilǭ",
+        "counterpart": "spinle",
+        "outputs": "spinle"
+      }
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 # SC066 OE L Adjacent Syncope — chronology evidence card
 
+## Consolidated current interpretation
+
+See `audits/sc065-adjudication.md`: SC066 retains only the distinct later
+light pre-l loss, with d/theta/f environments and final-closed syllables
+protected. Heavy-root spindle and thistle now fire at SC065. The old
+SC066/SC068 reciprocal group and every measured result below are preserved
+but superseded as current chronology; nettle remains its mutation witness.
+
 ## Position at experiment time
 - order_at_experiment_time: `66`
 - rule_name: `OELAdjacentSyncope`

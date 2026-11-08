@@ -349,6 +349,8 @@ class FingerprintGuardTests(unittest.TestCase):
         # legacy sha unchanged (audits/sc065-adjudication.md).
         # SC040 adds only earthly (2336), with all previous 390 records and
         # the immutable380 conserved (test_earthly_2336_adoption.py).
+        # Consolidation migrates only the two approved spindle/filth cells;
+        # the earlier expansion archives and mismatch identities remain.
         self.assertEqual(
             historical["outputs_sha256"],
             "b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb",
@@ -359,11 +361,11 @@ class FingerprintGuardTests(unittest.TestCase):
         )
         self.assertEqual(
             data["legacy_subset_sha256"],
-            "4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9",
+            "ec1020060727592b489330998b63530ee2b17e14dcc17984e5c1d3305fc20f6b",
         )
         self.assertEqual(
             data["outputs_sha256"],
-            "ed765acdd0ddd7417941234a65be386cb7e617967a22549cbee20ca9d5d288f6",
+            "fbd65e641f5225f5f8935ec3e0392b8e5ea1a3692ac886db35f6eba197577601",
         )
         previous = {
             row["row_id"]: row

@@ -1448,12 +1448,14 @@ CAPR extends the same assimilation to the subordinate-stressed root in
 \emph{*régna-bùgô} 'rainbow'. The reconstruction retains primary
 accent on 'rain' and subordinate accent on 'bow'; these are reconstructed
 prosodic properties, not manuscript accent marks. The proposed development
-is \emph{*régna-bùgô > *régna-bògô > *régnbògô > *régnbogô},
+begins \emph{*régna-bùgô > *régna-bògô > *régnabogô},
 followed by palatalization of the first velar and the ordinary ending
 developments to *reġnboga* 'rainbow'. The early non-high ending still
-conditions lowering, and the resulting \emph{ò} retains the grave read by
-[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope).
-The ordinary removal of that annotation follows syncope.
+conditions lowering. The resulting \emph{ò} is decoded by the existing
+technical stress operation; the first-member vowel survives until
+[SC114 OENonHighSyn](#rule-OENonHighSyn), giving \emph{*réʝnbogô}.
+Positional realization of underlying \emph{b} is computed after that loss,
+without a new late fricative-to-stop sound law.
 Neither early lowering nor syncope requires an optional rewrite.
 
 The general early change is source-backed; its extension to this precise
@@ -2818,11 +2820,32 @@ vowel, following Ringe's explicitly PGmc reconstruction
 [@Ringe2017, p. 135, pp. 151–153]. Its lexical section discusses the
 published e-alternatives and the confidence in this choice.
 
-Late Old English syllabic reduction and apocope:
-High-vowel apocope (SC063), medial syncope (SC065), and the cluster of
-late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
-English phonological history, when the syllabic structure of the language
-began to shift toward the more reduced profile of Middle English.
+Syncope, apocope and weak-vowel quality:
+Mutation precedes the ordinary high-vowel losses: a subsequently lost
+\emph{*i} has already fronted the root, as in *fȳlþe* 'filth'.
+The conventional working sequence is ordinary nonhigh syncope (SC114),
+high-vowel apocope (SC063), then heavy/open high-vowel syncope (SC065).
+These are prehistoric Old English changes, not simply late literary
+reductions toward Middle English. The former dental and heavy pre-\emph{*l}
+fragments implement the same high-vowel event and are no longer separate
+active deletions. Later light-syllable pre-\emph{*l} loss (SC066) retains
+its own consonant and openness conditions
+[@HoggGrammar2011, pp. 220--227, §§6.14--6.25;
+@SieversBrunner1965, pp. 132--133, §159; @Luick1914, pp. 310--311, §336].
+
+The trisyllabic ordering remains disputed: Fulk's conservative Mercian
+evidence, Ringe and Taylor's syncope-before-apocope account, and Hogg's
+tentative phonological alternative are discussed with SC063.
+Early weak front-vowel unrounding and later lowering are distinct
+quality processes (SC074), linked to transmitted mutation under SC055,
+not additional syncopes. The early unrounding support component is printed
+at SC115; its separately positioned stress decoder is technical.
+Ordinary nonhigh loss now also removes compound \emph{*a}; the former
+early proxy (SC037) is an identity trace anchor. Positional realization
+of inherited \emph{*b} is computed afterward (SC049) without postnasal
+hardening of existing fricatives or a newly dated lenition law
+[@HoggGrammar2011, pp. 29--30, §§2.53--2.54, p. 219, §6.10;
+@Campbell1959, pp. 179--181, §§444--448].
 
 Across this chapter the densest independent parallel is Barrack's West
 Saxon cascade, whose focus — West Saxon to the beginning of the eleventh
@@ -3755,143 +3778,20 @@ The old straw displacement observation measured dependence on a
 following vowel in the superseded proxy, not independent historical order
 [@Campbell1959, pp. 45--47; @RingeTaylor2014, pp. 171--175].
 
-## Compound linking syncope
+## Former compound-syncope trace anchor
 
-### Historical discussion of compound linking syncope
+The former early deletion is no longer active. Ordinary nonhigh loss
+belongs to [SC114 OENonHighSyn](#rule-OENonHighSyn), and weight-conditioned
+high-vowel loss to [SC065 OEMedialSyncope](#rule-OEMedialSyncope).
+The comparative compound discussion accompanies those later operations.
+This identity preserves earlier cross-references without representing an
+independently dated early sound law.
 
-Compound members with weakened force often lose or reshape their linking vowels, and Campbell treats that broad pattern through reduced second elements, connecting vowels, and obscured compounds [@Campbell1959, pp. 148--149, §§356--357; @Campbell1959, p. 153, §367; @Campbell1959, p. 159, §§386--387].
-
-Those discussions concern several distinct developments: modification and
-shortening within obscured second roots, connecting-vowel insertion, and
-weak-vowel quality changes do not by themselves demonstrate deletion of a
-linking vowel. For syncope, the relevant distinction is between short
-nonhigh vowels, whose loss does not require a heavy first syllable, and
-high linking *i/u*, whose regular heavy-root loss supplies the weight
-condition modelled here. That condition is not an exhaustive account of
-all historical compound losses. The handbooks compare retention in
-light-root *Winifrið/Winefrið* and *duruweard* 'doorkeeper'
-with loss in *dælnimend* 'partaker' and *handclāð* 'towel'
-[@Campbell1959, p. 143, §341; @Campbell1959, pp. 145--146, §§348--353;
-@HoggGrammar2011, pp. 220--223, §§6.14--6.19;
-@RingeTaylor2014, pp. 266--267; @SieversBrunner1965, pp. 137--138, §§167--168].
-These are comparison forms, not additional selected
-derivations. Variant first stems and the *hild-/hilde-* material require
-source-critical analysis rather than an automatic rule conditioned by the
-identity or weight of the second member [@RingeTaylor2014, p. 303].
-
-The handbook comparisons do not yet provide a selected complete history
-testing the newly restricted high-vowel clause. In particular, Orel
-reconstructs Proto-Germanic [đura-warđaz]{.recon .iv lang=pgmc sort=durawardaz role=source_protoform} 'doorkeeper', with an *a*-linker,
-and compares Gothic [*daura-wards*]{.iv lang=goth sort=daurawards role=comparison_form} 'doorkeeper'; Kroonen derives the
-Old English simplex [*duru*]{.iv lang=oe sort=duru role=comparison_form} 'door' from [durō-]{.recon .iv lang=pgmc sort=duro role=source_protoform}. Neither fact
-establishes an inherited short linking *u* in [*duruweard*]{.iv lang=oe sort=duruweard role=comparison_form} 'doorkeeper', nor an
-independently demonstrated change supplying it before syncope.
-Its attested vowel cannot simply be substituted into the earlier
-compound reconstruction. The retained name vowels also need their own
-formation histories [@Orel2003, p. 79; @Kroonen2013, p. 110;
-@SieversBrunner1965, pp. 137--138, §168].
-
-The older names cannot simply be dismissed as exceptions to a universal
-heavy-root requirement. Sievers and Brunner, Campbell, Luick and Hogg
-explicitly recognize high-vowel loss after light first roots, including
-[*Sigfrið*]{.iv lang=oe sort=sigfrith role=comparison_form} and
-[*Hyglāc*]{.iv lang=oe sort=hyglac role=comparison_form}.
-Luick distinguishes chronological layers and says that the circumstances
-of the change are not yet understood. Hogg also discusses the second
-member's weight. These observations require a bounded reconsideration
-of an exhaustive weight-only account; they do not license lexical
-optionality, a rule restricted to personal names, or an unsupported
-appeal to analogy. Nor does the manuscript date of a name independently
-date its formation or syncope [@SieversBrunner1965, pp. 137--138, §168;
-@Campbell1959, pp. 145--146, §§348--349;
-@Luick1914, pp. 283--284, §305; @HoggGrammar2011, pp. 224--225, §6.21].
-
-[*seleweard*]{.iv lang=oe sort=seleweard role=comparison_form} 'hall-warden'
-provides a stronger retained-vowel candidate. Orel prints
-[sali-warđaz]{.recon .iv lang=pgmc sort=saliwardaz role=source_protoform}
-and [sali-warđuz]{.recon .iv lang=pgmc sort=saliwarduz role=source_protoform},
-with Old Norse [*sal-vǫrðr*]{.iv lang=on sort=salvordr role=comparison_form}
-'hall-warden'. Both reconstructions have first-member *i*; their
-alternatives concern the second member's inflection, not an *a/i*
-linker choice. The first member's secondary i-stem history is independently
-supported. Nevertheless, these transparent formations do not discriminate
-inheritance of this particular compound from later independent formation:
-Orel expressly reports Carr's parallel-formation assessment. Beowulf
-attests the Old English accusative singular, but does not independently
-place the compound before the relevant syncope. Neither an ending nor a
-high linker has to be invented; the unresolved premise is formation
-chronology [@Orel2003, pp. 315, 448; @Kroonen2013, p. 424;
-@ClarkHall1960, p. 260, Beowulf 667].
-
-The canonical grammar now recognizes inherited high-vowel first members
-and the second member's dental cluster without sacrificing older accepted
-analyses. Both printed hypotheses, and the ordinary a-stem accusative
-\emph{*sáli-wàrðą}, regularly produce *seleweard*. Previously the
-retained plain medial *i* incorrectly underwent breaking, producing
-[seleoweard]{.pred}. Restoring the former early high-vowel deletion instead
-produces [sealweard]{.pred}; removing the later weight condition produces
-[selweard]{.pred}. These are three distinct wrong analyses, not three
-attestations. Correct output establishes a conditional derivation, not the
-date or inheritance of the compound.
-
-No new lexical selection is made without that independent formation
-premise. Complete selected weight controls and independently reconstructed
-later-stage controls now test the high-vowel core described under
-[SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope); they do not supply a
-complete inherited-compound discriminator for the former early rule. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
-remain genuine selected *a*-deletion witnesses, not evidence for the
-new high-vowel restriction. The independent *ūtumist* history also demonstrates mutation before
-high-vowel loss, not merely successful component composition
-[@RingeTaylor2014, p. 267].
-
-Barrack's weak-vowel fronting and quality rules 333a/b and his rounding
-rule 335 belong to this wider discussion, but are not equivalent
-linking-vowel deletion laws. Their formal ordering is not independent
-evidence for dating syncope or removal of secondary stress
-[@Barrack1975, pp. 82--84].
-
-[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) captures this
-pattern in compounds such as *reġnboga* 'rainbow'. Its second-root vowel
-has already lowered under subordinate stress:
-\emph{*régna-bùgô > *régna-bògô}. The grave survives that early
-change and licenses deletion of the linking vowel, giving
-\emph{*régnbògô}; ordinary accent stripping then gives
-\emph{*régnbogô}. The full account and its reconstruction qualifications
-belong to [SC017 PNWGmcULowering](#rule-PNWGmcULowering), not to late
-unstressed lowering. Its immediate annotation dependency does not date historical nonhigh
-syncope. The handbooks place ordinary nonhigh syncope after breaking, and
-high-vowel loss normally after mutation. The early *a* fragment is retained
-as a selected-input holding proxy; the later general nonhigh process belongs
-to [SC114 OENonHighSyn](#rule-OENonHighSyn), and the high-vowel component
-follows mutation [@SieversBrunner1965, pp. 137--138, §167 and notes;
-@HoggGrammar2011, pp. 220--224, §§6.14--6.20;
-@RingeTaylor2014, pp. 266--267].
-
-### \CAPRRuleHeading{SC037. Syncope of compound linking vowels}{OECompoundLinkingSyncope} {#rule-OECompoundLinkingSyncope}
+### \CAPRRuleHeading{SC037. Former compound-syncope trace anchor}{OECompoundLinkingSyncope} {#rule-OECompoundLinkingSyncope}
 
 ```foma
-define OECompoundLinkingSyncope Ctx([
-    {*a} -> 0
-        || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
-]);
+define OECompoundLinkingSyncope ?*;
 ```
-
-Only the *a* holding fragment remains at this early executable site.
-The high-vowel component has a separate postmutation site and a bounded
-open-medial domain. Neither serialization constitutes a completed
-explanation of older light-root contractions. Russom's metrical review
-also challenges obligatory positional destressing: modern stress marks
-are modelling annotations, not independently established historical
-prosody for every name [@Russom2001, pp. 39--64].
-
-The *reġnboga* test exposes an annotation dependency rather than an
-independently dated historical sound-change boundary. If the grave is
-removed before syncope, its licensing information is lost. Early lowering
-changes the vowel, not this dependency; the annotation's lifetime does not
-date a universal loss of compound secondary stress. The handbooks place
-weakened compound junctures with the behavior described under
-[SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and
-[SC036 OEInterStressRaising](#rule-OEInterStressRaising).
 
 ## Weak medial vocalism
 
@@ -4485,37 +4385,6 @@ define OESecondaryNasalization Ctx([
 ```
 
 The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
-
-## B allophony
-
-### Historical discussion
-
-The positional alternation of Germanic \emph{*b} is a Proto-Germanic distributional feature. Hogg
-states the Old English distribution clearly: /b/ is a stop initially, after
-nasals, and in gemination, while the same segment is otherwise realized as a
-voiced bilabial fricative [@HoggPhonology1992, p. 108]. Ringe and Taylor support
-the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
-segment whose stop and fricative values depend on position
-[@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
-fricative pattern in Old English [@Luick1914, p. 107].
-
-The distribution is narrow, but later changes presuppose the stop-fricative
-alternation. CAPR implements the rule at a late cascade position for computational
-reasons: the alternation must interact with consonant environments shaped by
-intermediate rule applications. Its historical stage is Proto-Germanic.
-
-### \CAPRRuleHeading{SC049. Distribution of \emph{*b} after vowels and liquids}{PGmcBAllophony} {#rule-PGmcBAllophony}
-
-```foma
-define PGmcBAllophony Ctx([
-    {*b} -> {*β} || PGmcStarVocalic _,
-    {*b} -> {*β} || [{*l} | {*r}] _
-] .o. [
-    {*β} -> {*b} || _ {*b}
-]);
-```
-
-The handbooks describe \emph{*b}/\emph{*bb} as a positional alternation within the consonant system, and one compound supplies its chronological consequence. Before [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope), *reġnboga* 'rainbow' develops as [*reġnfoga*]{.pred} rather than expected OE *reġnboga*; later placement creates no comparable failure. The witness places b-allophony after compound-linking syncope without turning the alternation into an independent sound law.
 
 ## Sievers-law syncope
 
@@ -5135,8 +5004,8 @@ Short medial *u* can undergo mutation while transmitting it to the
 preceding stressed monophthong. Hogg explicitly describes this iterative
 development, and Campbell calls it double umlaut. The fronting context
 therefore includes intervening plain medial *u*, not a secondary-stressed
-*ù*. The latter keeps its stress as the internal carrier *ỳ* until high
-syncope has finished. The ordinary raising and diphthong components keep
+*ù*. The latter keeps its stress as the internal carrier *ỳ* through
+both high-syncope components and weak-vowel unrounding. The ordinary raising and diphthong components keep
 their existing contexts; newly fronted *æ* across a mutation-produced
 *y* is not indiscriminately raised again
 [@HoggGrammar2011, pp. 120--121, §5.76, p. 219, §6.10;
@@ -5148,6 +5017,8 @@ define EnglishIUmlautThroughU [EnglishIUmlautIntervening [{*u} EnglishIUmlautInt
 
 The independent outmost/furthest reconstruction and the separate
 nonhigh-vowel and subordinate-stress controls are discussed with
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope); retained weak-vowel
+unrounding is the separate early component
 [SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope). This coupled correction
 preserves the previously selected mutation and breaking histories.
 
@@ -5393,7 +5264,7 @@ OE *dōn* ‘do’. The older loss must therefore precede weak-tail nasal loss.
 Nothing in the current lexicon distinguishes among its possible later
 positions, and one witness cannot establish a wider historical development.
 
-## Early nonhigh-vowel syncope
+## Ordinary nonhigh-vowel syncope
 
 ### Historical discussion
 
@@ -5409,13 +5280,14 @@ These are phonological and prosodic conditions, not permissions for
 particular words or grammatical classes.
 
 The implemented core deletes plain short \emph{a, æ, e} from an
-open posttonic syllable before a final heavy syllable. Primary-root
-weight is not an additional condition. The heavy-final restriction
-delimits this supported core; it is not asserted as a universal theorem
-about every Old English nonhigh loss. A positively identified primary
+open posttonic syllable. Primary-root weight and final-syllable weight
+are not additional deletion conditions. A following singleton consonant
+and vowel identify the bounded open-medial domain; this does not silently
+claim complete syllabification of arbitrary consonant clusters.
+A positively identified primary
 root protects its own vowel, and the existing stress-domain machinery
-admits the supported single pretonic syllable. Wider multiprefix and
-light-final histories are not inferred from this restricted account.
+admits the supported single pretonic syllable. Wider multiprefix
+histories are not inferred from this restricted account.
 
 #### Selected applications and contrasting forms
 
@@ -5462,24 +5334,193 @@ historical ordering inferred from output success.
 The source-supported chronology and the notation's lifetime must be
 kept separate. The rules
 [SC065 OEMedialSyncope](#rule-OEMedialSyncope) and
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) retain their
-distinct high-vowel decisions; this phase does not broaden them.
-Likewise, *weorold* 'world', *eorþcunde* 'earthly' and
-*reġnboga* 'rainbow' retain their established histories.
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) now distinguish
+ordinary heavy/open high-vowel loss from later light pre-\emph{*l}
+loss. *Weorold* 'world' retains its established selected history.
+*Eorþcunde* 'earthly' and *reġnboga* 'rainbow' now lose the linking
+\emph{*a} here rather than through the former early proxy.
 
-### SC114. Early nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn}
+### Compound formation and comparative linking-vowel evidence
+
+
+Compound members with weakened force often lose or reshape their linking vowels, and Campbell treats that broad pattern through reduced second elements, connecting vowels, and obscured compounds [@Campbell1959, pp. 148--149, §§356--357; @Campbell1959, p. 153, §367; @Campbell1959, p. 159, §§386--387].
+
+Those discussions concern several distinct developments: modification and
+shortening within obscured second roots, connecting-vowel insertion, and
+weak-vowel quality changes do not by themselves demonstrate deletion of a
+linking vowel. For syncope, the relevant distinction is between short
+nonhigh vowels, whose loss does not require a heavy first syllable, and
+high linking *i/u*, whose regular heavy-root loss supplies the weight
+condition modelled under [SC065 OEMedialSyncope](#rule-OEMedialSyncope). That condition is not an exhaustive account of
+all historical compound losses. The handbooks compare retention in
+light-root *Winifrið/Winefrið* and *duruweard* 'doorkeeper'
+with loss in *dælnimend* 'partaker' and *handclāð* 'towel'
+[@Campbell1959, p. 143, §341; @Campbell1959, pp. 145--146, §§348--353;
+@HoggGrammar2011, pp. 220--223, §§6.14--6.19;
+@RingeTaylor2014, pp. 266--267; @SieversBrunner1965, pp. 137--138, §§167--168].
+These are comparison forms, not additional selected
+derivations. Variant first stems and the *hild-/hilde-* material require
+source-critical analysis rather than an automatic rule conditioned by the
+identity or weight of the second member [@RingeTaylor2014, p. 303].
+
+The handbook comparisons do not yet provide a selected complete history
+testing the newly restricted high-vowel clause. In particular, Orel
+reconstructs Proto-Germanic [đura-warđaz]{.recon .iv lang=pgmc sort=durawardaz role=source_protoform} 'doorkeeper', with an *a*-linker,
+and compares Gothic [*daura-wards*]{.iv lang=goth sort=daurawards role=comparison_form} 'doorkeeper'; Kroonen derives the
+Old English simplex [*duru*]{.iv lang=oe sort=duru role=comparison_form} 'door' from [durō-]{.recon .iv lang=pgmc sort=duro role=source_protoform}. Neither fact
+establishes an inherited short linking *u* in [*duruweard*]{.iv lang=oe sort=duruweard role=comparison_form} 'doorkeeper', nor an
+independently demonstrated change supplying it before syncope.
+Its attested vowel cannot simply be substituted into the earlier
+compound reconstruction. The retained name vowels also need their own
+formation histories [@Orel2003, p. 79; @Kroonen2013, p. 110;
+@SieversBrunner1965, pp. 137--138, §168].
+
+The older names cannot simply be dismissed as exceptions to a universal
+heavy-root requirement. Sievers and Brunner, Campbell, Luick and Hogg
+explicitly recognize high-vowel loss after light first roots, including
+[*Sigfrið*]{.iv lang=oe sort=sigfrith role=comparison_form} and
+[*Hyglāc*]{.iv lang=oe sort=hyglac role=comparison_form}.
+Luick distinguishes chronological layers and says that the circumstances
+of the change are not yet understood. Hogg also discusses the second
+member's weight. These observations require a bounded reconsideration
+of an exhaustive weight-only account; they do not license lexical
+optionality, a rule restricted to personal names, or an unsupported
+appeal to analogy. Nor does the manuscript date of a name independently
+date its formation or syncope [@SieversBrunner1965, pp. 137--138, §168;
+@Campbell1959, pp. 145--146, §§348--349;
+@Luick1914, pp. 283--284, §305; @HoggGrammar2011, pp. 224--225, §6.21].
+
+[*seleweard*]{.iv lang=oe sort=seleweard role=comparison_form} 'hall-warden'
+provides a stronger retained-vowel candidate. Orel prints
+[sali-warđaz]{.recon .iv lang=pgmc sort=saliwardaz role=source_protoform}
+and [sali-warđuz]{.recon .iv lang=pgmc sort=saliwarduz role=source_protoform},
+with Old Norse [*sal-vǫrðr*]{.iv lang=on sort=salvordr role=comparison_form}
+'hall-warden'. Both reconstructions have first-member *i*; their
+alternatives concern the second member's inflection, not an *a/i*
+linker choice. The first member's secondary i-stem history is independently
+supported. Nevertheless, these transparent formations do not discriminate
+inheritance of this particular compound from later independent formation:
+Orel expressly reports Carr's parallel-formation assessment. Beowulf
+attests the Old English accusative singular, but does not independently
+place the compound before the relevant syncope. Neither an ending nor a
+high linker has to be invented; the unresolved premise is formation
+chronology [@Orel2003, pp. 315, 448; @Kroonen2013, p. 424;
+@ClarkHall1960, p. 260, Beowulf 667].
+
+The canonical grammar now recognizes inherited high-vowel first members
+and the second member's dental cluster without sacrificing older accepted
+analyses. Both printed hypotheses, and the ordinary a-stem accusative
+\emph{*sáli-wàrðą}, regularly produce *seleweard*. Previously the
+retained plain medial *i* incorrectly underwent breaking, producing
+[seleoweard]{.pred}. Restoring the former early high-vowel deletion instead
+produces [sealweard]{.pred}; removing the later weight condition produces
+[selweard]{.pred}. These are three distinct wrong analyses, not three
+attestations. Correct output establishes a conditional derivation, not the
+date or inheritance of the compound.
+
+No new lexical selection is made without that independent formation
+premise. Complete selected weight controls and independently reconstructed
+later-stage controls now test the high-vowel core described under
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope); they do not supply a
+complete inherited-compound discriminator for the former early rule. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
+remain genuine selected *a*-deletion witnesses, not evidence for the
+new high-vowel restriction. The source-proposed *ūtumist* history supplies a
+distinct transmitted-mutation and weak-vowel-loss control; its final root
+alone does not independently order mutation against loss of *u*
+[@RingeTaylor2014, p. 267].
+
+Barrack's weak-vowel fronting and quality rules 333a/b and his rounding
+rule 335 belong to this wider discussion, but are not equivalent
+linking-vowel deletion laws. Their formal ordering is not independent
+evidence for dating syncope or removal of secondary stress
+[@Barrack1975, pp. 82--84].
+
+The former [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope)
+proxy captured this pattern in *reġnboga* 'rainbow'. Its second-root vowel
+has already lowered under subordinate stress:
+\emph{*régna-bùgô > *régna-bògô}. The grave survives that early
+change and formerly licensed early deletion of the linking vowel, giving
+\emph{*régnbògô}; ordinary accent stripping formerly gave
+\emph{*régnbogô}. The full account and its reconstruction qualifications
+belong to [SC017 PNWGmcULowering](#rule-PNWGmcULowering), not to late
+unstressed lowering. Its immediate annotation dependency does not date historical nonhigh
+syncope. The handbooks place ordinary nonhigh syncope after breaking, and
+high-vowel loss normally after mutation. The early *a* fragment is retained
+as a selected-input holding proxy in the earlier model. It is now an
+identity: ordinary nonhigh deletion applies here, independently of a
+surviving grave, and inherited \emph{*b} receives positional realization
+afterward under [SC049 PGmcBAllophony](#rule-PGmcBAllophony).
+The high-vowel component follows mutation
+[@SieversBrunner1965, pp. 137--138, §167 and notes;
+@HoggGrammar2011, pp. 220--224, §§6.14--6.20;
+@RingeTaylor2014, pp. 266--267].
+
+The earlier proxy's apparent dependency on grave removal did not date a universal loss of compound secondary stress. The relevant junctures also relate to [SC035 OEPrefixAReduction](#rule-OEPrefixAReduction) and [SC036 OEInterStressRaising](#rule-OEInterStressRaising). Russom's metrical review challenges obligatory positional destressing; modern stress marks are annotations, not independent prosodic evidence for every historical name [@Russom2001, pp. 39--64].
+
+### SC114. Ordinary nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn}
 
 ```foma
 define OENonHighSyn FootCtx([
     [{*a}|{*æ}|{*e}] -> 0 ||
         .#. OEAnyConsonant* EnglishStarVocalic
         [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
-        _ [OEAnyConsonant
-           [EnglishStarLongVowel|EnglishStarLongDiphthong|{*ô}]
-           OEAnyConsonant* |
-           OEAnyConsonant EnglishStarVocalic OEAnyConsonant+] .#.
+        _ OEAnyConsonant EnglishStarVocalic
+        [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.
 ]);
 ```
+
+## B allophony
+
+### Historical discussion
+
+The positional alternation of Germanic \emph{*b} is a Proto-Germanic distributional feature. Hogg
+states the Old English distribution clearly: /b/ is a stop initially, after
+nasals, and in gemination, while the same segment is otherwise realized as a
+voiced bilabial fricative [@HoggGrammar2011, pp. 29--30, §§2.53--2.54]. Ringe and Taylor support
+the broader West Germanic background by treating Proto-West-Germanic \emph{*b} as a
+segment whose stop and fricative values depend on position
+[@RingeTaylor2014, p. 121], and Luick's spelling evidence shows the same labial
+fricative pattern in Old English [@Luick1914, p. 107].
+
+The distribution is narrow, but later changes presuppose the stop-fricative
+alternation. CAPR implements the rule at a late cascade position for computational
+reasons: the alternation must interact with consonant environments shaped by
+intermediate rule applications. The inherited distribution is Proto-Germanic;
+the position at which CAPR realizes it is not a new Proto-Germanic event.
+
+Hogg distinguishes the early bilabial fricative, still an allophone of
+inherited /b/, from its later split and merger with /f/. Campbell's spelling
+discussion likewise distinguishes inherited labial realization from
+secondary voicing of /f/ [@HoggGrammar2011, pp. 29--30, §§2.53--2.54;
+@Campbell1959, pp. 179--181, §§444--448]. CAPR retains underlying
+\emph{*b} until ordinary nonhigh syncope has established its conditioning
+environment. This removes the need for early compound deletion; it does
+not insert a later \emph{*β > *b} sound law.
+
+The distinction matters: already represented \emph{*β} and inherited
+\emph{*f} remain fricatives after nasals, whereas underlying \emph{*b}
+has stop realization there. Initial, postnasal and geminate stops are
+preserved; intervocalic \emph{*b} receives fricative realization.
+Syncope-created velar clusters do not license analogous hardening:
+Ringe and Taylor contrast *syngian* 'sin' with inherited stop clusters
+[@RingeTaylor2014, p. 4]. The chosen serialization precedes the labial
+split in the model, not a newly demonstrated strict historical boundary.
+
+### \CAPRRuleHeading{SC049. Distribution of \emph{*b} after vowels and liquids}{PGmcBAllophony} {#rule-PGmcBAllophony}
+
+```foma
+define PGmcBAllophony Ctx([
+    {*b} -> {*β} || PGmcStarVocalic _,
+    {*b} -> {*β} || [{*l} | {*r}] _
+] .o. [
+    {*β} -> {*b} || _ {*b}
+]);
+```
+
+Realization before [SC114 OENonHighSyn](#rule-OENonHighSyn) gives
+[*reġnfoga*]{.pred} instead of *reġnboga* 'rainbow'; realization afterward
+preserves the selected output. This discriminates the representations,
+not an independently dated new lenition law or compound-specific exemption.
 
 ## High-vowel apocope
 
@@ -5487,8 +5528,8 @@ define OENonHighSyn FootCtx([
 
 Final high vowels must survive long enough to condition umlaut before apocope
 removes them after heavy syllables and in the relevant trisyllabic patterns.
-Campbell, Hogg, Ringe and Taylor, and Fulk agree on this Old English
-development, though they differ over the extent of the surrounding syncope
+Campbell, Hogg, Ringe and Taylor, and Fulk agree that the loss follows
+mutation, but disagree substantively over trisyllables and surrounding syncope
 [@Campbell1959, pp. 144--145, §§345--349; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, pp. 284--303, §§6.8.1, 6.8.4; @Fulk2018, p. 91, §5.6].
 Barrack states the deletion of final high vowels as his rule 345 and
@@ -5504,67 +5545,53 @@ A selected proclitic context does not become word-final merely because its
 citation spelling ends there. Its temporary boundary annotation blocks
 the final-position conditions below and is removed only after their
 application; it is not a segment of the linguistic reconstruction.
-The vowel-replacement clauses themselves are unchanged
+This contextual distinction is preserved
 [@RingeTaylor2014, pp. 57--58, 284--303].
+
+The adopted conventional account retains final high vowels after a heavy
+first syllable followed by a light syllable. Thus
+\emph{*hēafudu > *hēafdu}, not [hēafd]{.pred}: subsequent high-vowel syncope
+does not restart apocope. The former implementation incorrectly deleted
+the final vowel in this heavy--light environment
+[@Campbell1959, p. 146, §353; @HoggGrammar2011, pp. 225--227, §§6.22--6.25].
+Loss after two light syllables and after an immediately preceding heavy
+syllable remains represented.
+
+This is a defended working account, not unanimity. Fulk's conservative
+Mercian *hēafudu*, *idelu* and *lytel(u)* material supports retention of
+both high vowels before a light final syllable; he supplies phonological
+weight and paradigm evidence, not merely a preference for analogy.
+Ringe and Taylor instead defend syncope before apocope and reconstructed
+\emph{*hēafd}, treating the attested plurals as analogical.
+Hogg also offers a tentative one-syllable-reduction account without rigid
+serialization [@Fulk2010, pp. 129--134, 140--142;
+@RingeTaylor2014, pp. 289--293; @HoggGrammar2011, p. 227, §6.25].
+The conventional serialization keeps this dispute explicit and no longer
+preserves unsupported endingless selected histories by excess apocope.
 
 ### \CAPRRuleHeading{SC063. High-vowel apocope after heavy syllables and in trisyllables}{OEHighVowelApocope} {#rule-OEHighVowelApocope}
 
 ```foma
 define OEHighVowelApocope Ctx([
-    # Disyllabic: long syllable (long vowel + consonant(s)) + final vowel
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    # Disyllabic: diphthong + consonant(s) + final vowel
-    # LONG diphthongs are heavy (any C count). SHORT diphthongs are heavy only
-    # with 2+ consonants; a short diphthong + single C is a LIGHT syllable (from
-    # back-umlaut of a light stem, Campbell §345; DEV_NOTES §17.17).
-    # E.g. *spéru → speoru (LIGHT, retain -u); *xérdō → heord (HEAVY, lose -u).
     {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    # Disyllabic: heavy closed syllable (short vowel + 2+ consonants) + final vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    # Trisyllabic: long/diphthong + unstressed syllable + final vowel (Campbell §345)
-    # Pattern: LongV/Diph + C+ + shortV + C+ + final_vowel
-    # Example: heofon < *xemonų: *e*o + *β + *u + *n + *ų
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # Trisyllabic with short-diphthong first syllable (from back-umlaut of a light
-    # stem): trisyllabic apocope still fires regardless of stress-syllable weight
-    # (Campbell §345). E.g. *xémonų → *xéomonų → heofon.
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # Trisyllabic: short syllable + another syllable + final vowel (Campbell §345)
-    # Pattern: shortV + C + shortV + C+ + final_vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # Trisyllabic with heavy-by-position first syllable (short V + 2+C) +
-    # light second syllable + final high V (Campbell §345; DEV_NOTES §17.45.4).
-    # E.g. *spénnilō → *spinnilu → *spinnil (then OELAdjacentSyncope + nn-degem → spinl).
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
-    # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
     {*i} -> 0 || EnglishStarLongVowel _ .#.,
-    # Campbell §238/§346: final -u lost after /h/ (*x) regardless of weight.
-    # Must fire before intervocalic h-loss would remove the conditioning.
-    # E.g. *féxu → *féoxu → feoh (not feou).
     {*u} -> 0 || {*x} _ .#.,
     {*ų} -> 0 || {*x} _ .#.,
     {*i} -> 0 || {*x} _ .#.
@@ -5617,16 +5644,17 @@ therefore order final bare-a loss, stem-final n-loss, and unstressed long-vowel
 shortening in that sequence. Both boundaries are firm within the selected
 genitive derivation and depend on one inherited lexeme/paradigm.
 
-## Medial syncope before dentals
+## General heavy-syllable high-vowel syncope
 
 ### Historical discussion
 
 Old English lost unstressed medial high vowels in open syllables after
 heavy syllables. The handbooks state the law generally, as part of the
-late weak-tail history of unstressed vowels: Ringe and Taylor describe a
+prehistoric reduction of unstressed vowels: Ringe and Taylor describe a
 weight-conditioned loss of medial \emph{*i} and \emph{*u}, and Campbell
-surveys the same territory, with Hogg and Fulk in agreement on its late
-Old English position [@RingeTaylor2014, pp. 264--267, §6.7.3;
+surveys related later developments. Hogg explicitly distinguishes
+prehistoric losses from changes after the earliest texts
+[@RingeTaylor2014, pp. 264--267, §6.7.3;
 @Campbell1959, pp. 157--159, §§388--393; @HoggPhonology1992, p. 121;
 @Fulk2018, p. 91, §5.6]. The loss is English, not common West Germanic:
 the continental cognates cited below keep their medial vowels.
@@ -5635,7 +5663,8 @@ The clearest witnesses are the feminine abstracts in \emph{*-iþō}, which
 uniformly show syncope: \emph{strengþu} 'strength', \emph{hǣlþ} 'health',
 \emph{fȳlþ} 'filth', \emph{þīefþ} 'theft', \emph{wiermþu} 'warmth'
 [@Campbell1959, p. 236, §589.6; @Bammesberger1990, pp. 117--118, §4.5].
-The corpus tests the type through \emph{fȳlþ}, from \emph{*fūliþō}, a
+The corpus now tests the type through accusative \emph{fȳlþe}, from
+\emph{*fūliþǭ}, a
 composite of Kroonen's base \emph{*fūla-} with the abstract suffix
 [@Kroonen2013, p. 158]. The medial vowel survives in Old Saxon
 [fulitha]{.iv lang=os sort=fulitha role=evidence_form} 'filth' and in
@@ -5644,153 +5673,31 @@ Old High German [fülida]{.iv lang=ohg sort=fulida role=evidence_form}
 
 The same word fixes a relative chronology. Had syncope preceded i-umlaut
 ([SC055 OEIUmlaut](#rule-OEIUmlaut)), the deleted \emph{*i} could not have fronted the
-root vowel, and the result would have been unattested \emph{fūlþ} rather
-than attested \emph{fȳlþ}; umlaut must therefore precede this syncope.
+root vowel, and the selected result would have been \emph{*fūlþe} rather
+than attested *fȳlþe*; umlaut must therefore precede this syncope.
 Campbell derives the endingless nominative singular of these abstracts
 analogically after the \emph{lār} type [@Campbell1959, p. 236, §589.6],
-whereas the cascade reaches the same form by the regular phonological
-route through raising and apocope; both accounts converge on the attested
-form, and the corpus does not decide between them. No local ordering with
-respect to high-vowel apocope itself can be demonstrated from the present
-lexicon, since the dental-conditioned statement applies whether or not
-the final vowel is still in place.
+whereas the former cascade reached the same form through excess apocope.
+Corrected heavy--light retention no longer licenses that endingless
+regular nominative. Fulk independently supplies paradigm evidence for
+analogical syncope in the nominatives of the abstract class
+[@Fulk2010, pp. 140--142]. The selected accusative *fȳlþe* is attested as
+the object in *Ðā fylde ādōn of þām Godes temple*; ordinary feminine
+accusative inflection supplies \emph{*-ǭ}, and its nonhigh ending avoids
+the disputed nominative history [@Toller1921, p. 276, Hml.S25, 378].
+The earlier selection and the competing accounts remain comparison
+history, not a second selected cell.
 
 In Barrack's cascade the corresponding territory is covered by his
-syncope rules 347 and 351 [@Barrack1975, pp. 86--87], with further medial
+syncope rule 351 [@Barrack1975, p. 87], with further medial
 losses at rules 388 and 390, the latter citing \emph{meolc} 'milk'
 [@Barrack1975, p. 96]; his rules are broader than the dental-conditioned
-statement below and are not coextensive with it.
+statement formerly used here and are not coextensive with it.
+Rule 347 concerns final verbal territory, not an equivalent general
+medial-syncope law [@Barrack1975, p. 86].
 
-### \CAPRRuleHeading{SC065. Medial syncope before dentals after heavy syllables}{OEMedialSyncope} {#rule-OEMedialSyncope}
+### Independent historical stage controls
 
-```foma
-define OEMedialSyncope FootCtx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
-]);
-```
-
-The dental enumeration here is a deliberately narrow executable statement
-of the slice of the handbook law required at this point in the cascade,
-where high-vowel apocope ([SC063 OEHighVowelApocope](#rule-OEHighVowelApocope)) has already
-applied and the open-syllable condition of the handbooks can no longer be
-expressed. No handbook restricts the historical syncope to pre-dental
-position; the restriction is an architecture-level decision, not a
-historical claim.
-
-Controlled counterfactual experiments show the narrowing is load-bearing
-rather than decorative: extending the rule to \emph{*u} wrongly
-syncopates \emph{hēafod} 'head', dropping the dental restriction destroys
-\emph{hierfest} 'harvest' and \emph{sċilling} 'shilling', and the
-faithful open-syllable formulation is vacuous at this position, while
-moving it before apocope wrongly reduces \emph{sāwol} 'soul'. With a
-single admitted firing, the corpus cannot discriminate the dental
-enumeration from narrower statements of the same slice; the enumeration
-follows the handbook class of weak preterite and comparative
-environments not yet in the pipeline. The retained operation represents
-the changes presently required by the selected forms; it does not
-delimit the whole historical phenomenon.
-
-## L-adjacent syncope
-
-### Historical discussion
-
-Vowel loss creates the clusters upon which later assimilation and degemination
-operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's
-*netle* 'nettle' beside later *netele* 'nettle' supplies a concrete lexical type
-[@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2;
-@SieversBrunner1965, pp. 144--145, §§158--159]. Fulk places this syncope after
-i-umlaut [@Fulk2018, p. 91, §5.6].
-
-The three relations are not equally secure. Lexical evidence orders syncope
-and degemination; the intervening dental assimilation has no independent
-ordering witness.
-
-### \CAPRRuleHeading{SC066. L-adjacent syncope in medial syllables}{OELAdjacentSyncope} {#rule-OELAdjacentSyncope}
-
-```foma
-define OELAdjacentSyncope Ctx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic
-]);
-```
-
-The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
-earlier umlaut, as *netle* ‘nettle’ and *spinl* ‘spindle’ demonstrate.
-
-Two historically distinct strata are stated here as one law. After a heavy
-syllable the deletion continues the exceptionless prehistoric syncope of
-unstressed high vowels in open medial syllables, the same law whose pre-dental
-slice has already been treated: [spénnilō]{.recon} ‘spindle’ and the genitive
-of [θístilas]{.recon} ‘thistle’ lose their \emph{*i} after the heavy sequences
-\emph{-nn-} and \emph{-st-} [@RingeTaylor2014, pp. 270--272, §6.7.3;
-@Campbell1959, p. 158, §392]. After a light syllable, however, the handbooks
-describe a later and more particular development: unstressed \emph{*i} next to
-\emph{l} is lost even where the preceding syllable is light, as in *netle*
-‘nettle’ from the diminutive [nátilōn]{.recon} ‘nettle’ [@Kroonen2013, p. 384;
-@RingeTaylor2014, p. 272, §6.7.4]. Luick, following Weyhe, restricts this
-light-syllable deletion to trisyllabic forms whose middle syllable was open,
-dating it before the literary period after dentals and to the eighth century
-after gutturals [@Luick1914, §336]; Brunner likewise treats it as regular in
-the oldest sources after light syllables [@SieversBrunner1965, pp. 132--133,
-§159c]; Campbell describes medial vowels as dropped after short syllables when
-a group of consonant plus \emph{l} or \emph{r} would result [@Campbell1959,
-pp. 157--158, §§388--390].
-
-The open-syllable condition carries the explanatory weight. *Cetel* ‘kettle’,
-an early Latin loan ([katilaz]{.recon} ‘kettle’, from \emph{catillus}), famously fails
-to syncopate [@Orel2003, p. 211; @RingeTaylor2014, p. 272]. It is not a
-lexical exception. Its nominative \emph{*i} stands, after apocope, in a
-word-final closed syllable — light and closed — a position that no published
-formulation of the change reaches. The same structural point explains the
-nominative--oblique split that Campbell records for the *netel*/*spinel*
-class, where the nominative retains its vowel while the syllabically open
-oblique cases syncopate [@Campbell1959, pp. 235--236, §589]. Within its properly
-stated domain — after a heavy syllable, or after a light syllable in an open
-medial syllable — the deletion is regular.
-
-The sources disagree about the residue of variation. Weyhe, Luick, and
-Brunner treat the law as categorical within its consonant-class and dialect
-conditions, explaining late West Saxon *netele* as anaptyxis, a secondary
-vowel reinserted in the cluster [@Luick1914, §336; @SieversBrunner1965,
-p. 133, §159 Anm. 3]. Ringe and Taylor instead read pairs such as *crypel*
-beside dative *cryple* as a change arrested before completion, leaving stable
-variation [@RingeTaylor2014, p. 272]. The selected corpus cannot discriminate
-between these readings, since its witnesses lie in the post-dental territory
-that all parties treat as deleted; both accounts are therefore recorded
-without a forced choice.
-
-Barrack reaches the same material through his framework of progressive
-environment simplification. His rule for medial high-vowel deletion in open
-syllables after long accented syllables corresponds to the heavy-syllable
-stratum, and in West Saxon he drops the length condition, generalizing the
-deletion to light syllables [@Barrack1975, p. 87]. A separate rule deletes an
-unstressed vowel before a liquid or nasal followed by a vowel, and he reports
-that West Saxon simplified the environment further by dropping the
-following-vowel condition entirely [@Barrack1975, p. 96]. The present law
-retains the following-vowel condition for the light stratum: dropping it, as
-Barrack's West Saxon formulation would, predicts syncope in the *cetel*
-nominative. His neighbouring rule deleting a vowel after a liquid, which
-derives *meolc* ‘milk’ from [meluk]{.recon} ‘milk’ [@Barrack1975, p. 96], is likewise
-not adopted: West Saxon *meoloc* retains the vowel, and medial \emph{*u} next
-to \emph{l} is in general kept far longer than \emph{*i} [@Luick1914, §336.2;
-@RingeTaylor2014, p. 273].
-
-Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred} rather than
-expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred} rather
-than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
-[spénnilō]{.recon} yields [*spinnl*]{.pred} rather than expected *spinl*. The witnesses
-therefore establish the sequence i-umlaut, l-adjacent syncope, preconsonantal
-degemination. The first relation separates two historical phases; the second is
-a direct feeding relation, since syncope creates the cluster that degemination
-simplifies.
-
-## Postmutation high-vowel syncope
-
-### Historical discussion
 
 The regular high-vowel core loses a short unstressed high vowel in an open
 medial syllable after a heavy syllable. Light-root retention and the
@@ -5804,7 +5711,9 @@ Ringe and Taylor reconstruct pre-Old-English
 [ūtumist]{.recon .iv lang=preoe sort=utumist role=source_protoform},
 then [ȳtymist]{.recon .iv lang=preoe sort=ytymist role=source_protoform},
 and attested [*ȳtmest*]{.iv lang=oe sort=ytmest role=evidence_form}
-'furthest'. Mutation precedes the loss of the medial high vowel.
+'furthest'. In their proposed history, mutation precedes the loss of the
+medial high vowel; the final root alone does not establish that ordering,
+since earlier loss of *u* would leave suffixal *i* as a direct trigger.
 Skipping that loss, while preserving subsequent unrounding and lowering,
 gives [ȳtemest]{.pred}. That variant is also attested: Ringe and Taylor
 explicitly analyse it by analogy with *yfemest* and similar forms.
@@ -5847,41 +5756,220 @@ complete discriminator of the former early compound-only formulation.
 Its root-vowel history remains with
 [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut).
 
-### SC115. The bounded high-vowel component (`OEHighLinkSyncope`) {#rule-OEHighLinkSyncope}
+### SC065. General heavy/open high-vowel syncope (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 
 ```foma
-define OEHighLinkSyncope FootCtx([
+define OEMedialSyncope FootCtx([
     [{*i}|{*u}|{*y}] -> 0
         || .#. OEAnyConsonant* [
             [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
             [EnglishStarShortVowel | EnglishStarShortDiphthong]
                 OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant EnglishStarVocalic
-]) .o. FootCtx([{*y} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _])
-    .o. Ctx([{*ì} -> {*i}, {*ù} -> {*u}, {*ỳ} -> {*y}]);
+        ] _ OEAnyConsonant [EnglishStarVocalic|{*ô}]
+]);
 ```
 
-This support component serializes the high-vowel part of
-[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope) after
-mutation and before weak-vowel lowering. It is not a new older-name law.
-The following singleton consonant and vowel identify a bounded open
-medial domain; arbitrary onset clusters are not silently treated as a
-complete syllabification. The existing adjacent-*l* component retains
-its own source-backed scope. The support component also serializes short weak *y* unrounding before
-the ordinary *i/e* merger. Hogg independently describes *u* mutation,
-early unrounding, and eventual *e*; the selected site after syncope is a
-technical serialization, not a demonstrated unrounding-after-syncope
-edge. Both operations preserve the relevant high-vowel weight contrast.
-Initial root *y* and subordinate *ỳ* are excluded from weak unrounding
-[@HoggGrammar2011, p. 219, §6.10 and note 1].
-Final decoding removes surviving secondary
-high-vowel stress annotations, not historical stress itself.
+The dental enumeration and the heavy part of
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) have been replaced by
+this single general operation. Short unstressed \emph{*i/u/y} disappears
+after a heavy first syllable when a following singleton consonant and
+vowel establish an open medial syllable. The retained quantity carrier
+\emph{*ô} is included locally as a following vowel; it was omitted from
+the shared ordinary-vowel class. This is a bounded onset domain, not a
+claim to complete historical syllabification of arbitrary clusters.
+Light-root *wuduwe* 'widow', final-closed *cetel* 'kettle' and
+*engel* 'angel' environments do not meet the deletion condition.
 
-The conditional *seleweard* derivation now retains *i*, allows its regular
-mutation of the first root, and lowers it to unstressed *e* without
-breaking. It does not independently prove that the compound preceded
-syncope. Older names therefore remain substantive historical evidence
-outside the completed account, not a list of lexical exceptions.
+Earlier controlled experiments found that an unrestricted extension to
+\emph{*u} syncopated \emph{hēafod} 'head', dropping the dental restriction destroyed
+\emph{hierfest} 'harvest' and \emph{sċilling} 'shilling', and the
+open-syllable formulation was vacuous after the old excess apocope, while
+moving it earlier reduced the former \emph{sāwol} 'soul' selection.
+These measurements remain the history of the narrow proxy, not arguments
+against the corrected general law. Independently selected vocalic
+accusatives now give *fȳlþe* 'filth' and *spinle* 'spindle'; the
+corrected apocope also gives conventional *hēafdu* 'heads'.
+The general operation no longer requires dental or lateral identity.
+Mutation must still precede deletion; syncope feeds the subsequent
+preconsonantal degemination in *spinle*.
+
+The selected *spinle* 'spindle' is the strong feminine accusative
+\emph{*spénnilǭ}, not the former endingless nominative.
+Clark Hall gives *spinel*, feminine, with genitive *spinle*;
+Orel reconstructs \emph{*spennilō(n)} [@ClarkHall1960, p. 272;
+@Orel2003, p. 364]. Toller's tool enumeration reads
+*He sceal habban fela towtōla spinle, reól, gearnwindan*
+[@Toller1921, p. 288, s.v. gearn-winde, Angl. ix 263, 11].
+The quantifier *fela* governs genitive *towtōla*; the subsequently
+enumerated implements are interpreted as objects of *habban*,
+with singular strong feminine *spinle*. This is a syntactic
+interpretation of the quotation, not a dictionary's explicit case label.
+Ordinary accusative \emph{*-ǭ} supplies a complete reconstructed cell.
+The nominative and the competing syncope-before-apocope history remain
+comparison evidence rather than another selected derivation.
+
+## Early weak front-vowel unrounding
+
+### Historical discussion
+
+Mutation-produced weak \emph{*y} unrounds to \emph{*i}; retained
+\emph{*i} later lowers to \emph{*e}. These are quality changes, not
+syncope. Hogg places the unrounding at a very early prehistoric stage
+and illustrates transmitted mutation with \emph{*gaduling > gædeling}
+[@HoggGrammar2011, p. 219, §6.10 and note 1].
+The early component belongs to the same weak-front-vowel history whose
+later lowering is [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1).
+Its stable identifier is retained for scholarly cross-references; it no
+longer implements high-vowel deletion.
+
+### \CAPRRuleHeading{SC115. Early weak-front-vowel unrounding component}{OEHighLinkSyncope} {#rule-OEHighLinkSyncope}
+
+```foma
+define OEHighLinkSyncope FootCtx([
+    {*y} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _
+]);
+```
+
+The component excludes initial-root \emph{*y} and still-marked
+subordinate \emph{*ỳ}. It is computed after
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope) and before
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope).
+Unrounding preserves height and commutes with the bounded general
+high-vowel loss; the serialization does not date unrounding after
+syncope. The \emph{d/l} protection in the later light component permits
+*gædeling* 'companion' on either side of that component, but this
+particular comparison does not establish universal commutation.
+
+The separate [SC116 OEHighStressDecode](#rule-OEHighStressDecode) helper
+runs after the light pre-\emph{*l} component, not at this unrounding
+position. It preserves secondary-vowel protection until both deletion
+components have finished. Neither technical decoding nor this component's
+serialized location dates disappearance of historical secondary stress.
+
+## L-adjacent syncope
+
+### Historical discussion
+
+Vowel loss creates the clusters upon which later assimilation and degemination
+operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's
+*netle* 'nettle' beside later *netele* 'nettle' supplies a concrete lexical type
+[@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2;
+@SieversBrunner1965, pp. 131--133, §§158--159]. Fulk places this syncope after
+i-umlaut [@Fulk2018, p. 91, §5.6].
+
+The three relations are not equally secure. Lexical evidence orders syncope
+and degemination; the intervening dental assimilation has no independent
+ordering witness.
+
+### SC066. Later light-syllable pre-\emph{*l} syncope (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope}
+
+```foma
+define OELAdjacentSyncope Ctx([
+    {*i} -> 0 ||
+        [EnglishStarShortVowel|EnglishStarShortDiphthong]
+        [OEAnyConsonant - [{*d}|{*θ}|{*f}]] _ {*l} EnglishStarVocalic
+]);
+```
+
+The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
+earlier umlaut, as *netle* ‘nettle’ demonstrates.
+
+The former statement combined two historically distinct strata. Its heavy
+part continues the prehistoric syncope of
+unstressed high vowels in open medial syllables, the same law whose pre-dental
+slice was formerly treated separately. That entire event now belongs to
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope):
+[spénnilō]{.recon} ‘spindle’ and the genitive
+of [θístilas]{.recon} ‘thistle’ lose their \emph{*i} after the heavy sequences
+\emph{-nn-} and \emph{-st-} [@RingeTaylor2014, pp. 270--272, §6.7.3;
+@Campbell1959, p. 158, §392]. After a light syllable, however, the handbooks
+describe a later and more particular development: unstressed \emph{*i} next to
+\emph{l} is lost even where the preceding syllable is light, as in *netle*
+‘nettle’ from the diminutive [nátilōn]{.recon} ‘nettle’ [@Kroonen2013, p. 384;
+@RingeTaylor2014, p. 272, §6.7.4]. Luick, following Weyhe, restricts this
+light-syllable deletion to trisyllabic forms whose middle syllable was open,
+dating it before the literary period after dentals and to the eighth century
+after gutturals [@Luick1914, §336]; Brunner likewise treats it as regular in
+the oldest sources after light syllables [@SieversBrunner1965, pp. 132--133,
+§159c]; Campbell describes medial vowels as dropped after short syllables when
+a group of consonant plus \emph{l} or \emph{r} would result [@Campbell1959,
+pp. 157--158, §§388--390].
+
+The open-syllable condition carries the explanatory weight. *Cetel* ‘kettle’,
+an early Latin loan ([katilaz]{.recon} ‘kettle’, from \emph{catillus}), famously fails
+to syncopate [@Orel2003, p. 211; @RingeTaylor2014, p. 272]. It is not a
+lexical exception. Its nominative \emph{*i} stands, after apocope, in a
+word-final closed syllable — light and closed — a position that no published
+formulation of the change reaches. The same structural point explains the
+nominative--oblique split that Campbell records for the *netel*/*spinel*
+class, where the nominative retains its vowel while the syllabically open
+oblique cases syncopate [@Campbell1959, pp. 235--236, §589].
+The current component contains only the later light-syllable loss.
+Brunner's original passage excludes the environments between
+\emph{d} and \emph{l}, and between inherited Germanic \emph{þ/f} and
+\emph{l}; the \emph{f} descended from earlier \emph{bh} is explicitly
+distinguished [@SieversBrunner1965, p. 132, §159c, §192.2].
+CAPR excludes the corresponding still-distinct \emph{*d/θ/f}
+segments, not words or grammatical classes. Source-supported
+\emph{*gaduling > gædeling} remains a retention control even when
+mutation-produced weak \emph{*y} has already unrounded to \emph{*i}.
+
+The sources disagree about the residue of variation. Weyhe, Luick, and
+Brunner treat the law as categorical within its consonant-class and dialect
+conditions, explaining late West Saxon *netele* as anaptyxis, a secondary
+vowel reinserted in the cluster [@Luick1914, §336; @SieversBrunner1965,
+p. 133, §159 Anm. 3]. Ringe and Taylor instead read pairs such as *crypel*
+beside dative *cryple* as a change arrested before completion, leaving stable
+variation [@RingeTaylor2014, p. 272]. The selected corpus cannot discriminate
+between these readings, since its witnesses lie in the post-dental territory
+that all parties treat as deleted; both accounts are therefore recorded
+without a forced choice.
+
+Barrack reaches the same material through his framework of progressive
+environment simplification. His rule for medial high-vowel deletion in open
+syllables after long accented syllables corresponds to the heavy-syllable
+stratum, and in West Saxon he drops the length condition, generalizing the
+deletion to light syllables [@Barrack1975, p. 87]. A separate rule deletes an
+unstressed vowel before a liquid or nasal followed by a vowel, and he reports
+that West Saxon simplified the environment further by dropping the
+following-vowel condition entirely [@Barrack1975, p. 96]. The present law
+retains the following-vowel condition for the light stratum: dropping it, as
+Barrack's West Saxon formulation would, predicts syncope in the *cetel*
+nominative. His neighbouring rule deleting a vowel after a liquid, which
+derives *meolc* ‘milk’ from [meluk]{.recon} ‘milk’ [@Barrack1975, p. 96], is likewise
+not adopted: West Saxon *meoloc* retains the vowel, and medial \emph{*u} next
+to \emph{l} is in general kept far longer than \emph{*i} [@Luick1914, §336.2;
+@RingeTaylor2014, p. 273].
+
+Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred} rather than
+expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred} rather
+than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
+[spénnilō]{.recon} yields [*spinnl*]{.pred} rather than expected *spinl*. Those earlier experiments remain evidence for the former combined
+statement. The spindle feeding relation now belongs to general
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope), not to this light-only
+component. The nettle mutation relation remains with
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope); no independent
+chronology is invented for the intervening dental assimilation.
+
+## Secondary high-vowel annotation decoding
+
+This independently traced support operation decodes retained subordinate
+high-vowel marks only after their phonological consumers have finished.
+It is a computational identity, not an additional historical sound change.
+
+### \CAPRRuleHeading{SC116. Technical secondary high-marker decoding}{OEHighStressDecode} {#rule-OEHighStressDecode}
+
+```foma
+define OEHighStressDecode Ctx([{*ì} -> {*i}, {*ù} -> {*u}, {*ỳ} -> {*y}]);
+```
+
+The decoder follows [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope)
+and precedes later weak-vowel lowering. Marked subordinate vowels are
+protected from [SC065 OEMedialSyncope](#rule-OEMedialSyncope), early
+weak-vowel unrounding at [SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope),
+and the light-syllable deletion component before these marks are removed.
+No historical date for obligatory loss of subordinate stress follows
+from this serialization.
 
 ## Dental assimilation
 
@@ -5910,7 +5998,7 @@ define OEPreconsonantalDegemination Ctx(OEPreconsonantalDegemTT .o. OEPreconsona
 ```
 
 Preconsonantal \emph{*tt} and \emph{*nn} simplify only after syncope has
-created a following sonorant cluster, as in *spinl* ‘spindle’
+created a following sonorant cluster, as in *spinle* ‘spindle’
 [@RingeTaylor2014, pp. 279--296, §§6.7.5, 6.8.2].
 
 The historical change is a general one: Ringe and Taylor state simply that
@@ -5921,12 +6009,14 @@ once as a late and general simplification of triple clusters in both
 directions, which he orders after his syncope rules [@Barrack1975, pp. 115,
 122]. The present law states the narrower slice of this process that the
 witnesses attest: \emph{*tt} before a nasal in *botm* ‘bottom’ and \emph{*nn}
-before \emph{l} in *spinl* ‘spindle’. The two clauses are segmental cases of
+before \emph{l} in *spinle* ‘spindle’. The two clauses are segmental cases of
 one change, not two historical developments, and no witness in the corpus
 licenses the broader formulation.
 
-The two witnesses reach the law by different routes. For *spinl* the geminate
-cluster exists only because l-adjacent syncope has just created it; for *botm*
+The two witnesses reach the law by different routes. For *spinle* the geminate
+cluster exists only because SC065 Medial high-vowel syncope has created it;
+SC066 Light-syllable syncope before *l* does not delete this heavy-root vowel.
+For *botm*
 the cluster \emph{*ttm} is already present in the stem. Kroonen reconstructs
 the word with an inherited geminate, [buttman-]{.recon} beside
 [budman-]{.recon}, deriving OE *botm* directly from the geminated variant
@@ -5937,9 +6027,13 @@ while observing that the prehistory of this word cannot be recovered in detail
 reconstruction; the alternative route is recorded as an open question of
 reconstruction selection, not of the sound law itself.
 
-Placed before l-adjacent syncope, PGmc [spénnilō]{.recon} ‘spindle’ yields [*spinnl*]{.pred} rather
-than expected OE *spinl* ‘spindle’. Syncope must therefore create the cluster
-before degemination simplifies it. *Botm* does not order the pair, since its
+Placed before SC065 Medial high-vowel syncope, the selected accusative
+\emph{*spénnilǭ} ‘spindle’ yields [*spinnle*]{.pred} rather than expected OE
+*spinle*. Syncope must therefore create the cluster before degemination
+simplifies it. The earlier nominative comparison \emph{*spénnilō} gave
+[*spinnl*]{.pred} against *spinl* under the former narrower syncope clauses;
+that comparison does not establish a separate heavy-root *l*-adjacent law.
+*Botm* does not order the pair, since its
 cluster does not depend on syncope. Reordering degemination against any tested
 later change leaves the witness unchanged, so no terminus ante quem is known.
 
@@ -6159,7 +6253,7 @@ The lexical evidence fixes the local order after
 [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening)
 and places the merger before the later h-loss and contraction.
 
-## Medial unstressed-i lowering
+## Medial weak front-vowel quality changes
 
 ### Historical discussion
 
@@ -6170,6 +6264,30 @@ vowels as a continuing history [@HoggPhonology1992, p. 121;
 medial unstressed \emph{i}; [SC075 OEMedUnstressedILowering](#rule-OEMedUnstressedILowering)
 preserves \emph{i} before \emph{*ng} in words of the *sċilling* ‘shilling’
 type.
+
+Two stages must be distinguished. Mutation-produced weak \emph{*y}
+unrounds to \emph{*i}; retained \emph{*i} later lowers to \emph{*e}.
+Hogg dates the unrounding to a very early prehistoric stage and gives
+\emph{*gaduling > gædeling}, with root mutation transmitted through the
+weak vowel. Initial-root \emph{*y} and still marked subordinate
+\emph{*ỳ} are not weak-vowel applications
+[@HoggGrammar2011, p. 219, §6.10 and note 1].
+
+The unrounding component is computed after general high-vowel syncope
+and before the later light pre-\emph{*l} loss. It is separate from both
+deletion and later lowering. Unrounding preserves vowel height and
+commutes with the bounded general high-vowel deletion; this adjacency
+does not prove an unrounding-after-syncope chronology. With the
+source-supported \emph{d/l} retention condition, *gædeling* 'companion'
+also survives on either side of the light pre-\emph{*l} component.
+That particular result does not establish universal commutation.
+
+The early component is printed at its actual executable location under
+[SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope), a support component
+of this vowel-quality history, not a second historical syncope law.
+The separate technical decoder runs after the light pre-\emph{*l}
+component and before ordinary lowering. It does not turn protected
+subordinate \emph{*ỳ} into an application of weak unrounding.
 
 General lowering precedes the restricted restoration before \emph{*ng}. The
 evidence is narrower than that for

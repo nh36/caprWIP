@@ -1,5 +1,13 @@
 # SC068 OE Preconsonantal Degemination — chronology evidence card
 
+## Consolidated current interpretation
+
+See `audits/sc065-adjudication.md`: the tt/nn degemination law is unchanged.
+General SC065 loss creates spindle's nnl cluster; the selected accusative
+gives spinle, while loss after degemination gives spinnle. The former
+SC066 reciprocal group below belongs to the older heavy pre-l clause.
+All original experiment positions, forms and results remain unchanged.
+
 ## Position at experiment time
 - order_at_experiment_time: `68`
 - rule_name: `OEPreconsonantalDegemination`

@@ -238,13 +238,13 @@
     },
     {
       "change_id": "SC037",
-      "display_name": "OE Compound Linking Syncope",
+      "display_name": "Former compound-syncope trace anchor",
       "lifecycle_status": "active",
       "rule_name": "OECompoundLinkingSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC037-oe-compound-linking-syncope.md",
       "card_type": "runner_limited_or_technical",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Retained a-loss reads subordinate stress at its early holding site; this is not the historical date of general nonhigh loss. Independently sourced high-vowel syncope follows mutation, serialized in SC115. No new older-name law or historical SC066/SC115 adjacency is asserted."
+      "short_summary": "Identity trace anchor: the retired early a proxy is implemented by ordinary SC114 loss; high-vowel loss belongs to SC065. No historical deaccentuation date is inferred."
     },
     {
       "change_id": "SC039",
@@ -348,13 +348,13 @@
     },
     {
       "change_id": "SC049",
-      "display_name": "PGmc B Allophony",
+      "display_name": "Inherited labial positional realization",
       "lifecycle_status": "active",
       "rule_name": "PGmcBAllophony",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC049-pgmc-b-allophony.md",
       "card_type": "one_sided_chronology",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Earlier boundary is one-sided across SC037; later search reached SC087 with no real break and must not be narrated as a must-precede claim."
+      "short_summary": "Inherited positional b realization is computed after SC114 while b is still an underlying phoneme; this is serialization, not newly dated lenition or general beta hardening."
     },
     {
       "change_id": "SC050",
@@ -478,13 +478,13 @@
     },
     {
       "change_id": "SC063",
-      "display_name": "OE High Vowel Apocope",
+      "display_name": "High-vowel apocope with heavy-light retention",
       "lifecycle_status": "active",
       "rule_name": "OEHighVowelApocope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC063-oe-high-vowel-apocope.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Later boundary points to SC072, but the relation is one-sided rather than reciprocal in current testing."
+      "short_summary": "Conventional apocope retains final high vowels after a heavy first plus light second syllable. Fulk's conservative Mercian material and Ringe-Taylor's alternative ordering remain explicit."
     },
     {
       "change_id": "SC064",
@@ -498,23 +498,23 @@
     },
     {
       "change_id": "SC065",
-      "display_name": "OE Medial Syncope",
+      "display_name": "General heavy/open high-vowel syncope",
       "lifecycle_status": "active",
       "rule_name": "OEMedialSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC065-oe-medial-syncope.md",
       "card_type": "broad_far",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Earlier boundary is independently demonstrated far away across SC055 OE I-Umlaut by the filth displacement witness; later search reaches the current runner limit with no real break."
+      "short_summary": "One general short weak-i/u/y deletion after a heavy primary syllable in bounded open medial position. Mutation precedes loss; dental and heavy pre-l fragments are consolidated."
     },
     {
       "change_id": "SC066",
-      "display_name": "OE L Adjacent Syncope",
+      "display_name": "Later light-syllable pre-l syncope",
       "lifecycle_status": "active",
       "rule_name": "OELAdjacentSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC066-oe-l-adjacent-syncope.md",
-      "card_type": "reciprocal_or_near_reciprocal",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary crosses SC055, while the later boundary reciprocates SC068 earlier around spindle."
+      "card_type": "one_sided_chronology",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Only later light pre-l loss remains; d/l and inherited theta/f-l environments and final-closed syllables retain the vowel. The former spindle relation is superseded."
     },
     {
       "change_id": "SC067",
@@ -528,13 +528,13 @@
     },
     {
       "change_id": "SC068",
-      "display_name": "OE Preconsonantal Degemination",
+      "display_name": "Preconsonantal degemination before sonorants",
       "lifecycle_status": "active",
       "rule_name": "OEPreconsonantalDegemination",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC068-oe-preconsonantal-degemination.md",
-      "card_type": "reciprocal_or_near_reciprocal",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC066 later; later search reaches SC087 with no real break."
+      "card_type": "one_sided_chronology",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Unchanged tt/nn simplification before sonorants. General SC065 high syncope creates spindle's nnl cluster; current accusative spinle versus displaced spinnle confirms feeding. The former SC066 reciprocal group is archival."
     },
     {
       "change_id": "SC069",
@@ -588,13 +588,13 @@
     },
     {
       "change_id": "SC074",
-      "display_name": "OE Med Unstressed I Lowering1",
+      "display_name": "Later medial weak-i lowering",
       "lifecycle_status": "active",
       "rule_name": "OEMedUnstressedILowering1",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC074-oe-med-unstressed-i-lowering1.md",
       "card_type": "reciprocal_or_near_reciprocal",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Later boundary reciprocates SC075 earlier around shilling."
+      "short_summary": "Later weak-i lowering is distinct from the early weak-y unrounding component printed at SC115. Marker decoding is separate and does not date historical destressing."
     },
     {
       "change_id": "SC075",
@@ -1394,7 +1394,7 @@
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Annotation lifetime, with SC037 still before SC038; not an independently dated universal syncope/deaccentuation sequence."
+      "notes": "World's annotation lifetime is still computationally load-bearing; the former SC037 a proxy is now an identity anchor. No historical deaccentuation date follows."
     },
     {
       "source_change_id": "SC036",
@@ -1441,16 +1441,16 @@
     {
       "source_change_id": "SC037",
       "target_change_id": "SC038",
-      "relation_type": "technical_computational",
+      "relation_type": "superseded_experiment",
       "direction_basis": "later_boundary",
-      "evidence_basis": "technical",
+      "evidence_basis": "archived_experiment",
       "witness_role": "",
       "representative_lexemes": "rainbow",
       "representative_forms": "PGmc `*régna-bùgô` yields expected OE `reġnboga`, but the later-shifted variant yields `reġnefoga`",
       "strength": "technical_marker",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "The quoted failure is historical measurement. Current SC017 supplies *régna-bògô; SC037 still needs its grave before SC038. Annotation lifetime does not establish a universal deaccentuation date or rainbow evidence for SC038 before SC040."
+      "notes": "The quoted failure is historical measurement. Current SC017 supplies *régna-bògô; SC037 still needs its grave before SC038. Annotation lifetime does not establish a universal deaccentuation date or rainbow evidence for SC038 before SC040. Superseded by syncope consolidation; preserve the quoted old-cell/proxy result, not a current historical constraint. See sc065-adjudication.md."
     },
     {
       "source_change_id": "SC039",
@@ -1749,16 +1749,16 @@
     {
       "source_change_id": "SC049",
       "target_change_id": "SC037",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "rainbow",
       "representative_forms": "PGmc `*régna-bùgô` yields expected OE `reġnboga`, but the earlier-shifted variant yields `reġnfoga`",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is one-sided across SC037; later search reached SC087 with no real break and must not be narrated as a must-precede claim."
+      "notes": "Earlier boundary is one-sided across SC037; later search reached SC087 with no real break and must not be narrated as a must-precede claim. Superseded by syncope consolidation; preserve the quoted old-cell/proxy result, not a current historical constraint. See sc065-adjudication.md."
     },
     {
       "source_change_id": "SC049",
@@ -2150,7 +2150,7 @@
       "strength": "broad_far",
       "interpretation_category": "broad_far",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is independently demonstrated far away across SC055 OE I-Umlaut by the filth displacement witness rather than a tight local adjacency claim; later search reaches the current runner limit with no real break."
+      "notes": "Earlier boundary is independently demonstrated far away across SC055 OE I-Umlaut by the filth displacement witness rather than a tight local adjacency claim; later search reaches the current runner limit with no real break. The selected cell is now accusative *fūliþǭ > fȳlþe; the old nominative measurement remains archival. Mutation-before-high-loss still has independent historical support."
     },
     {
       "source_change_id": "SC065",
@@ -2173,26 +2173,26 @@
       "direction_basis": "earlier_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
-      "representative_lexemes": "nettle; spindle",
-      "representative_forms": "PGmc `*nátilōn` yields expected OE `netle`, but the earlier-shifted variant yields `nætle`; PGmc `*spénnilō` likewise yields `spenl` instead of expected `spinl`",
+      "representative_lexemes": "nettle",
+      "representative_forms": "PGmc *nátilōn > netle; preceding mutation is lost if the light pre-l component deletes its trigger early (nætle).",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary crosses SC055, while the later boundary reciprocates SC068 earlier around spindle."
+      "notes": "Current SC066 is light-only. The old spindle measurement belongs to the former combined statement, preserved in its original receipt; spindle now fires at SC065."
     },
     {
       "source_change_id": "SC066",
       "target_change_id": "SC068",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "spindle",
       "representative_forms": "PGmc `*spénnilō` yields expected OE `spinl`, but the later-shifted variant yields `spinnl`",
       "strength": "tight_local",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG16_SC066_SC068",
-      "notes": "Earlier boundary crosses SC055, while the later boundary reciprocates SC068 earlier around spindle."
+      "notes": "Earlier boundary crosses SC055, while the later boundary reciprocates SC068 earlier around spindle. Superseded by syncope consolidation; preserve the quoted old-cell/proxy result, not a current historical constraint. See sc065-adjudication.md."
     },
     {
       "source_change_id": "SC067",
@@ -2225,16 +2225,16 @@
     {
       "source_change_id": "SC068",
       "target_change_id": "SC066",
-      "relation_type": "reciprocal_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "spindle",
       "representative_forms": "PGmc `*spénnilō` yields expected OE `spinl`, but the earlier-shifted variant yields `spinnl`",
       "strength": "tight_local",
       "interpretation_category": "reciprocal_or_near_reciprocal",
       "reciprocal_group_id": "RG16_SC066_SC068",
-      "notes": "Earlier boundary reciprocates SC066 later; later search reaches SC087 with no real break."
+      "notes": "Earlier boundary reciprocates SC066 later; later search reaches SC087 with no real break. Superseded by syncope consolidation; preserve the quoted old-cell/proxy result, not a current historical constraint. See sc065-adjudication.md."
     },
     {
       "source_change_id": "SC068",
@@ -2767,6 +2767,20 @@
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "",
       "notes": "Dependency of the adopted staged reconstruction, not an independently dated historical interval. Supersedes the earlier protective-proxy edge; old closure/card and receipts preserved."
+    },
+    {
+      "source_change_id": "SC065",
+      "target_change_id": "SC068",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "independently_demonstrated",
+      "witness_role": "feeding",
+      "representative_lexemes": "spindle",
+      "representative_forms": "Wave8 consolidated nominative: *spinnilu > *spinnlu at general high loss, then *spinlu at degemination. Exact-proposal selected *spénnilǭ gives spinle; high loss after degemination gives spinnle.",
+      "strength": "tight_local",
+      "interpretation_category": "one_sided_chronology",
+      "reciprocal_group_id": "",
+      "notes": "Live syncope creates nnl, which the unchanged SC068 nn clause simplifies. This structural feeding, not displacement alone, warrants the relation. The old SC066 group and nominative measurements are preserved. See sc065-adjudication.md."
     }
   ]
 }

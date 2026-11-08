@@ -17,6 +17,11 @@ INTERVENTION_CHANGED = {
     "OECompoundLinkingSyncope", "OEIUmlautFronting", "OEStripSecondaryStress",
     "PGmcStarVowel", "pgrmCodaComplex", "pgrmCompoundFirst", "pgrmLinkingVowel",
 }
+CONSOLIDATION_ADDED = {"OEHighStressDecode"}
+CONSOLIDATION_CHANGED = {
+    "EnglishProtoToOE", "OECompoundLinkingSyncope", "OEHighLinkSyncope",
+    "OEMedialSyncope", "OELAdjacentSyncope", "OENonHighSyn", "OEHighVowelApocope",
+}
 
 
 def assert_intervention_scope():
@@ -34,8 +39,16 @@ def assert_intervention_scope():
     assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
         INTERVENTION_CHANGED)
     current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
-    for name in INTERVENTION_ADDED | INTERVENTION_CHANGED:
+    for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
         assert current[name].definition_raw == tested[name].definition_raw
+    consolidated_base = parse_defines(subprocess.check_output(
+        ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+        cwd=ROOT, text=True))
+    assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+    assert not consolidated_base.keys() - current.keys()
+    assert {name for name in consolidated_base
+            if "".join(current[name].body.split()) !=
+               "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
 
 
 def test_intervention_changes_are_exactly_source_bound():
@@ -46,7 +59,7 @@ def evidence():
     return json.loads((AUDIT / "evidence.json").read_text())
 
 
-def test_archived_restriction_and_current_retained_a_kernel():
+def test_archived_restriction_and_preconsolidation_a_kernel_are_immutable():
     report = evidence()
     manifest = json.loads((AUDIT / "manifest.json").read_text())
     assert hashlib.sha256((AUDIT / "experiments.zip").read_bytes()).hexdigest() == manifest["archive"]
@@ -62,7 +75,9 @@ def test_archived_restriction_and_current_retained_a_kernel():
     assert before.keys() == tested.keys()
     assert {name for name in before if before[name].body != tested[name].body} == {
         "OECompoundLinkingSyncope"}
-    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    current = parse_defines(subprocess.check_output(
+        ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+        cwd=ROOT, text=True))
     archived_a = tested["OECompoundLinkingSyncope"].body.split("] .o. [", 1)[0] + "])"
     assert "".join(current["OECompoundLinkingSyncope"].body.split()) == (
         "".join(archived_a.split()))

@@ -50,11 +50,19 @@ The compound's inherited second-root grave is already selected. Extending
 early assimilation to this stressed root is CAPR's qualified inference;
 its advantage is a literature-supported vowel history, not an improved
 final match count. The non-high ending licenses `ù>ò`, retaining grave
-information for linking syncope. Ordinary grave removal and every other
-law/order are unchanged. Analogy from the simplex remains conceivable
+information through early lowering. The subsequent consolidation retires
+the early linking-a proxy: SC114 removes the vowel after existing
+grave decoding, and positional realization of underlying b is computed
+after that ordinary loss. This is not a newly dated lenition or a
+postnasal beta-to-b sound law; HoggGrammar2011 pp29-30 §§2.53-54 supplies
+the distinction between early allophony and later fricative merger. Analogy from the simplex remains conceivable
 but lacks positive evidence requiring it here.
 
 The mature model is editorially selected through
 `pgmc_integration/editorial_cases.tsv`; this certification does not settle
 every component's deeper etymology. All109 fresh stage outputs and both
 selected/protected populations are preserved in the adoption receipts.
+
+Those receipts concern the earlier SC017 adoption. Consolidation's
+new intermediate stages and unchanged final reġnboga are measured
+separately in the SC065 memorandum; earlier receipts are not rewritten.

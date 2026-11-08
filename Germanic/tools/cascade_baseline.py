@@ -114,8 +114,18 @@ def legacy_subset(records: list[dict], legacy_rows: list[dict],
             if current[field] != old[field]:
                 raise ValueError(f"unapproved legacy {field} drift: {key}")
         selected.append(current)
-    if used != set(approved):
-        raise ValueError("migration does not resolve a frozen legacy identity")
+    legacy_ids = {record["row_id"] for record in selected}
+    for key in set(approved) - used:
+        migration = approved[key]
+        current = by_id.get(migration["row_id"])
+        # The approval ledger also covers cells admitted after the frozen subset.
+        if current is None or current["row_id"] in legacy_ids or any(
+            current[field] != migration[value] for field, value in (
+                ("proto", "new_proto"), ("concept", "concept"),
+                ("counterpart", "new_counterpart"), ("outputs", "new_outputs")
+            )
+        ) or current["proto_norm"] != normalize_proto(migration["new_proto"]):
+            raise ValueError("migration does not resolve a current nonlegacy identity")
     return sorted(selected, key=lambda r: (r["proto_norm"], r["counterpart"], r["concept"]))
 
 

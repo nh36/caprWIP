@@ -40,8 +40,8 @@ Short medial *u* can undergo mutation while transmitting it to the
 preceding stressed monophthong. Hogg explicitly describes this iterative
 development, and Campbell calls it double umlaut. The fronting context
 therefore includes intervening plain medial *u*, not a secondary-stressed
-*ù*. The latter keeps its stress as the internal carrier *ỳ* until high
-syncope has finished. The ordinary raising and diphthong components keep
+*ù*. The latter keeps its stress as the internal carrier *ỳ* through
+both high-syncope components and weak-vowel unrounding. The ordinary raising and diphthong components keep
 their existing contexts; newly fronted *æ* across a mutation-produced
 *y* is not indiscriminately raised again
 [@HoggGrammar2011, pp. 120--121, §5.76, p. 219, §6.10;
@@ -53,6 +53,8 @@ define EnglishIUmlautThroughU [EnglishIUmlautIntervening [{*u} EnglishIUmlautInt
 
 The independent outmost/furthest reconstruction and the separate
 nonhigh-vowel and subordinate-stress controls are discussed with
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope); retained weak-vowel
+unrounding is the separate early component
 [SC115 OEHighLinkSyncope](#rule-OEHighLinkSyncope). This coupled correction
 preserves the previously selected mutation and breaking histories.
 

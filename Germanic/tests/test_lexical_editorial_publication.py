@@ -61,7 +61,8 @@ class EditorialPublicationTests(unittest.TestCase):
 
     def test_scoped_philology_is_independent_of_derivation_status(self):
         self.assertIn("2224", self.old_required)
-        self.assertEqual(len(self.old_required - {"2224"}), 163)
+        self.assertIn("2208", self.old_required)
+        self.assertEqual(len(self.old_required - {"2224"}), 164)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
         self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])

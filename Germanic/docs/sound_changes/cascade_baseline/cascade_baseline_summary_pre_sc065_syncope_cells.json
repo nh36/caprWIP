@@ -1,0 +1,12 @@
+{
+  "total_lexemes": 391,
+  "accepted": 391,
+  "rejected": 0,
+  "matched": 383,
+  "mismatched": 8,
+  "ambiguous_outputs": 0,
+  "outputs_sha256": "ed765acdd0ddd7417941234a65be386cb7e617967a22549cbee20ca9d5d288f6",
+  "lexical_outputs_sha256": "b7ce0eff790ef81d4c0bfb596a3aa62b5da720424755d6e62e8f5e4764fe447b",
+  "legacy_subset_count": 380,
+  "legacy_subset_sha256": "4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9"
+}

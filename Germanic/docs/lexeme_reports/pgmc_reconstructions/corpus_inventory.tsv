@@ -274,7 +274,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2205	spare	sparian	*sparēną	pgmc	*spárōjaną	preoe	transponent	explicit_sidecar	early_analogy	1	stressed	final
 2206	spear	speoru	*spéru	pgmc	*spéru	pgmc		equality_convention	regular	1	stressed	final
 2207	spin	spinnan	*spínnaną	pgmc	*spínnaną	pgmc		equality_convention	regular	1	stressed	final
-2208	spindle	spinl	*spénnilō	pgmc	*spénnilō	pgmc		equality_convention	regular	1	stressed	final
+2208	spindle	spinle	*spénnilō	pgmc	*spénnilǭ	pgmc		explicit_sidecar	regular	1	stressed	final
 2209	spoon	spōn	*spḗnuz	pgmc	*spḗnuz	pgmc		equality_convention	regular	1	stressed	final
 2210	spread	sprǣdan	*spráidijaną	pgmc	*spráidijaną	pgmc		equality_convention	regular	1	stressed	final
 2211	spur	spora	*spúrô	pgmc	*spúrô	pgmc		equality_convention	regular	1	stressed	final
@@ -394,5 +394,5 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2332	hue	hīew	*xíwją	pgmc	*xíwją	pgmc		equality_convention	regular	1	stressed	final
 2333	there	þǣr	*θár	pgmc	*θár	pgmc		equality_convention	regular	1	stressed	final
 2334	where	hwǣr	*xwár	pgmc	*xwár	pgmc		equality_convention	regular	1	stressed	final
-2335	filth	fȳlþ	*fūliþō	pgmc	*fūliþō	pgmc		equality_convention	regular	1	stressed	final
+2335	filth	fȳlþe	*fūliþō	pgmc	*fūliþǭ	pgmc		explicit_sidecar	regular	1	stressed	final
 2336	earthly	eorþcunde	*érθa-kùnðaz	pgmc	*érθa-kùnðǭ	pgmc		explicit_sidecar	attested_variant	1	stressed	final

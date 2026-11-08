@@ -59,7 +59,7 @@ def test_wrapped_heading_does_not_turn_a_markdown_escape_into_tex_math():
 
 def test_coverage_classifies_current_population_not_historical_report_gaps():
     report = book.render()[book.OUT_COVERAGE]
-    assert "Published identities: 99. Missing or erroneous omissions: 0." in report
+    assert "Published identities: 100. Missing or erroneous omissions: 0." in report
     assert "| SC021 | retired |" in report
     assert "| SC058 | retired |" in report
     assert "published technical support" in report

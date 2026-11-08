@@ -5,6 +5,12 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The [syncope consolidation](sound_changes/audits/sc065-adjudication.md)
+supersedes the early compound-a proxy and overlapping high-vowel losses.
+Its controlled two-cell migration selects accusative spinle and fȳlþe;
+391 forms remain accepted, 383 match, and the eight inherited mismatches
+are unchanged. All other 389 records and all PROTO citations are preserved.
+
 The bounded [SC037 intervention](sound_changes/audits/sc037-historical-executable-intervention.md)
 records the historical decision, preserved research streams and deliberately
 unadopted residual questions. Neither stream's next investigation is begun.
@@ -78,11 +84,11 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `4a5b126eae3dadf38f6ffd50b778009d79edae40407601a7c79de3d367688ed9`
+  `ec1020060727592b489330998b63530ee2b17e14dcc17984e5c1d3305fc20f6b`
 - selected-391 corpus fingerprint (`outputs_sha256`):
-  `ed765acdd0ddd7417941234a65be386cb7e617967a22549cbee20ca9d5d288f6`
+  `fbd65e641f5225f5f8935ec3e0392b8e5ea1a3692ac886db35f6eba197577601`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `b7ce0eff790ef81d4c0bfb596a3aa62b5da720424755d6e62e8f5e4764fe447b`
+  `101e250d73653f4c81fe911dfa8fe0d368160a300a24b42c3c48963ac9775526`
 
 The authorized inherited-world input migration is recorded in
 `approved_world_input_migration.json`; `*_pre_sc036_world.*` preserves
@@ -101,7 +107,8 @@ The subsequent SC065 admission adds only row 2335 (*filth*, `*fūliþō` >
 `fȳlþ`), the live medial-syncope witness: 390 selected rows, 382 matches
 and the same eight mismatches. Every prior 389 input, target, context and
 output is byte-identical and the legacy fingerprint is unchanged; the
-scientific record is `sound_changes/audits/sc065-adjudication.md`.
+scientific admission record is
+`sound_changes/audits/sc065-adjudication-before-syncope-consolidation.md`.
 The SC065 publication closeout assembled the mature *filth* article
 (`lexeme_reports/model_entries/2335-filth-fȳlþ.model.md`, editorial case
 `filth-endingless-nominative`), restructured the SC065 reader chapter, and

@@ -57,12 +57,14 @@ CAPR extends the same assimilation to the subordinate-stressed root in
 \emph{*régna-bùgô} 'rainbow'. The reconstruction retains primary
 accent on 'rain' and subordinate accent on 'bow'; these are reconstructed
 prosodic properties, not manuscript accent marks. The proposed development
-is \emph{*régna-bùgô > *régna-bògô > *régnbògô > *régnbogô},
+begins \emph{*régna-bùgô > *régna-bògô > *régnabogô},
 followed by palatalization of the first velar and the ordinary ending
 developments to *reġnboga* 'rainbow'. The early non-high ending still
-conditions lowering, and the resulting \emph{ò} retains the grave read by
-[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope).
-The ordinary removal of that annotation follows syncope.
+conditions lowering. The resulting \emph{ò} is decoded by the existing
+technical stress operation; the first-member vowel survives until
+[SC114 OENonHighSyn](#rule-OENonHighSyn), giving \emph{*réʝnbogô}.
+Positional realization of underlying \emph{b} is computed after that loss,
+without a new late fricative-to-stop sound law.
 Neither early lowering nor syncope requires an optional rewrite.
 
 The general early change is source-backed; its extension to this precise

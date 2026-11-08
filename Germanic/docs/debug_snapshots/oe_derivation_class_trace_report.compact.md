@@ -230,7 +230,7 @@ English Proto Input: *galáubijaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *galáeubijaną<br>OE Diphthong Leveling: *galēabijaną<br>EAF Brightening Unstressed: *gælēabijaną<br>OE Heavy Syllable Nasal Apocope: *gælēabijan<br>OE Secondary Nasalization: *gælēabijąn<br>PGmc B Allophony: *gælēaβijąn<br>Sievers Law Syncope: *gælēaβjąn<br>OE Velar Palatalization: *ʝælēaβjąn<br>OE Prefix A Reduction: *ʝilēaβjąn<br>OE I Umlaut: *ʝilīeβjąn<br>OE Prefix I Reduction: *ʝelīeβjąn<br>OE Weak Tail Reduction: *ʝelīeβjan<br>OE J Loss After Heavy: *ʝelīeβan<br>OE Palatal Fricative Merger: *jelīeβan |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *galáeubijaną<br>OE Diphthong Leveling: *galēabijaną<br>EAF Brightening Unstressed: *gælēabijaną<br>OE Heavy Syllable Nasal Apocope: *gælēabijan<br>OE Secondary Nasalization: *gælēabijąn<br>Sievers Law Syncope: *gælēabjąn<br>OE Velar Palatalization: *ʝælēabjąn<br>OE Prefix A Reduction: *ʝilēabjąn<br>OE I Umlaut: *ʝilīebjąn<br>PGmc B Allophony: *ʝilīeβjąn<br>OE Prefix I Reduction: *ʝelīeβjąn<br>OE Weak Tail Reduction: *ʝelīeβjan<br>OE J Loss After Heavy: *ʝelīeβan<br>OE Palatal Fricative Merger: *jelīeβan |
 
 
 
@@ -801,7 +801,7 @@ English Proto Input: *kálbaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *kálba<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *kálb<br>EAF Brightening: *kælb<br>OE Breaking: *kealb<br>PGmc B Allophony: *kealβ<br>OE Velar Palatalization: *ʧealβ |
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *kálba<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *kálb<br>EAF Brightening: *kælb<br>OE Breaking: *kealb<br>OE Velar Palatalization: *ʧealb<br>PGmc B Allophony: *ʧealβ |
 
 
 
@@ -1528,28 +1528,28 @@ Outcome: feohtan
 
 
 # filth
-PROTO: *fūliþō
-EXPECTED: fȳlþ
-OUTPUTS: fȳlþ
+PROTO: *fūliþǭ
+EXPECTED: fȳlþe
+OUTPUTS: fȳlþe
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *fūliθō
+English Proto Input: *fūliθǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *fūliθu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳliθu<br>OE High Vowel Apocope: *fȳliθ<br>OE Medial Syncope: *fȳlθ |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳliθǭ<br>OE Medial Syncope: *fȳlθǭ<br>OE Unstressed Long Vowel Shortening: *fȳlθæ<br>OE Unstressed AE Merger: *fȳlθe |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: *fȳlþ
-Outcome: fȳlþ
+Old English Orthography: *fȳlþe
+Outcome: fȳlþe
 
-NOTE: Old English filth; Gmc feminine abstract *-iþō on *fūla- (OS fulitha, OHG fūlida are exact cognates). Nom.sg fȳlþ is the selected cell; endingless form per Campbell §589.6 (-iþō nouns syncopate; final vowel often dropped on the analogy of the lār type), inflected fȳlþu also attested. Live SC065 witness: i-umlaut must precede medial syncope (early syncope yields unattested *fūlþ).
+NOTE: Selected strong feminine accusative singular fȳlþe, directly supported by Toller Supplement p276: Ðā fylde ādōn of þām Godes temple (Hml.S25,378). Root length from Clark Hall p125; established thorn normalization. PROTO retains the assembled feminine abstract citation *fūliþō; ordinary accusative *-ǭ supplies the selected cell. Campbell's lār-type endingless nominative and earlier CAPR trace remain historical comparisons.
 
 
 
@@ -2110,7 +2110,7 @@ English Proto Input: *gébaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *géban<br>OE Secondary Nasalization: *gébąn<br>PGmc B Allophony: *géβąn<br>OE Velar Palatalization: *ʝéβąn<br>OE Ws Palatal Diphthongization: *ʝíeβąn<br>OE Weak Tail Reduction: *ʝíeβan<br>OE Palatal Fricative Merger: *jíeβan |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *géban<br>OE Secondary Nasalization: *gébąn<br>OE Velar Palatalization: *ʝébąn<br>OE Ws Palatal Diphthongization: *ʝíebąn<br>PGmc B Allophony: *ʝíeβąn<br>OE Weak Tail Reduction: *ʝíeβan<br>OE Palatal Fricative Merger: *jíeβan |
 
 
 
@@ -2476,7 +2476,7 @@ English Proto Input: *xárbistuz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *xárbistu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *xærbistu<br>OE Breaking: *xearbistu<br>OE Velar Fricative Palatalization: *çearbistu<br>PGmc B Allophony: *çearβistu<br>OE I Umlaut: *çierβistu<br>OE High Vowel Apocope: *çierβist<br>OE Med Unstressed I Lowering1: *çierβest |
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *xárbistu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *xærbistu<br>OE Breaking: *xearbistu<br>OE Velar Fricative Palatalization: *çearbistu<br>OE I Umlaut: *çierbistu<br>PGmc B Allophony: *çierβistu<br>OE High Vowel Apocope: *çierβist<br>OE Med Unstressed I Lowering1: *çierβest |
 
 
 
@@ -4249,7 +4249,7 @@ English Proto Input: *régnabùgô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc U Lowering: *régnabògô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *régnbògô<br>OE Strip Secondary Stress: *régnbogô<br>OE Velar Palatalization: *réʝnbogô<br>OE Unstressed Long Vowel Shortening: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *régnabògô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *régnabogô<br>EAF Brightening Unstressed: *régnæbogô<br>OE A Restoration: *régnabogô<br>OE Velar Palatalization: *réʝnabogô<br>OE Non High Syn: *réʝnbogô<br>OE Unstressed Long Vowel Shortening: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
 
 
 
@@ -4692,7 +4692,7 @@ English Proto Input: *sébun
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PGmc B Allophony: *séβun<br>OE Back Mutation: *séoβun<br>OE Med Unstressed U Lowering: *séoβon |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Back Mutation: *séobun<br>PGmc B Allophony: *séoβun<br>OE Med Unstressed U Lowering: *séoβon |
 
 
 
@@ -5400,25 +5400,27 @@ Outcome: spinnan
 
 
 # spindle
-PROTO: *spénnilō
-EXPECTED: spinl
-OUTPUTS: spinl
+PROTO: *spénnilǭ
+EXPECTED: spinle
+OUTPUTS: spinle
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *spénnilō
+English Proto Input: *spénnilǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *spénnilu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *spinnilu<br>OE High Vowel Apocope: *spinnil<br>OE L Adjacent Syncope: *spinnl<br>OE Preconsonantal Degemination: *spinl |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *spinnilǭ<br>OE Medial Syncope: *spinnlǭ<br>OE Preconsonantal Degemination: *spinlǭ<br>OE Unstressed Long Vowel Shortening: *spinlæ<br>OE Unstressed AE Merger: *spinle |
 
 
 
 ### Orthography & surface
 
-Outcome: spinl
+Outcome: spinle
+
+NOTE: Selected strong feminine accusative singular spinle, inferred in the tool enumeration under habban (Toller Supplement p288, Angl.ix263,11). Clark Hall p272 gives strong feminine spinel, gs. spinle; Orel p364 supplies *spennilō(n). PROTO keeps the nominative citation. The former endingless nominative and Ringe-Taylor's syncope-before-apocope history remain comparisons, not the current selected cell.
 
 
 
@@ -7697,7 +7699,7 @@ English Proto Input: *xébun
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Velar Fricative Palatalization: *çébun<br>PGmc B Allophony: *çéβun<br>OE Back Mutation: *çéoβun<br>OE Med Unstressed U Lowering: *çéoβon |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Velar Fricative Palatalization: *çébun<br>OE Back Mutation: *çéobun<br>PGmc B Allophony: *çéoβun<br>OE Med Unstressed U Lowering: *çéoβon |
 
 
 
@@ -8908,7 +8910,7 @@ English Proto Input: *skáub
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *skáeub<br>OE Diphthong Leveling: *skēab<br>PGmc B Allophony: *skēaβ<br>OE Sk Palatalization: *ʃēaβ |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *skáeub<br>OE Diphthong Leveling: *skēab<br>OE Sk Palatalization: *ʃēab<br>PGmc B Allophony: *ʃēaβ |
 
 
 
@@ -9036,7 +9038,7 @@ English Proto Input: *θístilas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc I Lowering: *θéstilas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θéstilæs<br>OE I Umlaut: *θistilæs<br>OE L Adjacent Syncope: *θistlæs<br>OE Unstressed AE Merger: *θistles |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *θéstilas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θéstilæs<br>OE I Umlaut: *θistilæs<br>OE Medial Syncope: *θistlæs<br>OE Unstressed AE Merger: *θistles |
 
 
 
@@ -9091,7 +9093,7 @@ English Proto Input: *érθakùnðǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Compound Linking Syncope: *érθkùndǭ<br>OE Breaking: *éorθkùndǭ<br>OE High Link Syncope: *éorθkundǭ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
+| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *érθækùndǭ<br>OE Breaking: *éorθækùndǭ<br>OE A Restoration: *éorθakùndǭ<br>OE Non High Syn: *éorθkùndǭ<br>OE High Stress Decode: *éorθkundǭ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
 
 
 

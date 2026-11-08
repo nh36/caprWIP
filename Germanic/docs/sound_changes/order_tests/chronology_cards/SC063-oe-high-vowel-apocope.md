@@ -1,5 +1,13 @@
 # SC063 OE High Vowel Apocope — chronology evidence card
 
+## Consolidated current interpretation
+
+See `audits/sc065-adjudication.md`: the conventional account now retains a
+final high vowel after a heavy first plus light second syllable. The heads
+control and Fulk/Ringe--Taylor alternatives are distinguished; the two former
+nominatives are comparisons, not current selections. All original experiment
+positions and results below remain unchanged records.
+
 ## Position at experiment time
 - order_at_experiment_time: `63`
 - rule_name: `OEHighVowelApocope`

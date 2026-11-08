@@ -1,26 +1,9 @@
 #!/usr/bin/env python3
-"""Focused regression for the SC065 medial-syncope adjudication (2026).
+"""Current consolidated SC065 census and immutable earlier admission evidence.
 
-Adjudication memo: Germanic/docs/sound_changes/audits/sc065-adjudication.md
-Counterfactual receipt: audits/sc065-experiments/counterfactual_receipt.json
-
-Protected invariants:
-
-  * The executable rule `OEMedialSyncope` keeps its adjudicated narrow
-    shape: three clauses deleting `{*i}` after a heavy syllable before a
-    dental obstruent only. Both restrictions are load-bearing at this
-    cascade site (receipt: u-extension corrupts hēafod; any-consonant
-    corrupts hierfest and sċilling).
-  * The complete live firing population over ALL selected rows is exactly
-    {filth} (row 2335, *fūliþō → fȳlþ). The census deliberately does not
-    pre-filter candidate rows (an *r* or a syncope site may arise during
-    the cascade), unlike earlier narrower tests.
-  * Negative controls (head, harvest, shilling, soul) pass the production
-    SC065 stage untouched.
-  * Chronology: SC055 OEIUmlaut < SC065 is independently demonstrated by
-    the filth displacement witness (early syncope bleeds umlaut: +fūlþ).
-
-Run: cd Germanic/tests && python3 -m unittest test_sc065_adjudication
+The former narrow-proxy counterfactual receipt remains historical evidence,
+not a specification of the current rule. Fresh meaningful wrong-rule
+controls are exercised by test_sc037_intervention.py.
 """
 from __future__ import annotations
 
@@ -47,20 +30,15 @@ sys.path.insert(0, str(GERMANIC / "tools"))
 from capr_runtime import run_in_runner  # noqa: E402
 
 
-# The adjudicated firing population (sc065-adjudication.md).
-EXPECTED_FIRING_CONCEPTS = {"filth"}
+EXPECTED_FIRING_CONCEPTS = {"filth", "spindle", "thistle"}
 
-# These selected targets must survive the production SC065 stage; each one
-# falsified a tested broadening in the counterfactual receipt.
 NEGATIVE_CONTROL_CONCEPTS = {
-    "head",      # medial *u before dental: the *i-only restriction
-    "harvest",   # *i before s: the pre-dental restriction
-    "shilling",  # *i before velar: the pre-dental restriction
-    "soul",      # medial *a: outside the high-vowel domain entirely
+    "head",
+    "harvest",
+    "shilling",
+    "soul",
+    "widow",
 }
-
-DENTALS = r"\[\{\*θ\}\|\{\*ð\}\|\{\*d\}\|\{\*t\}\]"
-
 
 class SC065AdjudicationTests(unittest.TestCase):
     @classmethod
@@ -111,42 +89,23 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
     # Executable rule stability
     # ------------------------------------------------------------------
 
-    def test_rule_definition_keeps_adjudicated_narrow_shape(self):
-        match = re.search(
-            r"define\s+OEMedialSyncope\s+FootCtx\(\[(.*?)\]\);",
-            self.uncommented, re.DOTALL)
-        self.assertIsNotNone(match, "OEMedialSyncope define missing")
-        body = match.group(1)
-        clauses = [c.strip() for c in body.split(",\n") if c.strip()]
-        self.assertEqual(len(clauses), 3,
-                         "OEMedialSyncope must keep its 3 heavy-syllable "
-                         "clauses (RETAIN verdict)")
-        expected = [
-            r"^\{\*i\}\s*->\s*0\s*\|\|\s*EnglishStarLongVowel\s+"
-            r"OEAnyConsonant\+\s*_\s*" + DENTALS + "$",
-            r"^\{\*i\}\s*->\s*0\s*\|\|\s*EnglishStarLongDiphthong\s+"
-            r"OEAnyConsonant\+\s*_\s*" + DENTALS + "$",
-            r"^\{\*i\}\s*->\s*0\s*\|\|\s*EnglishStarShortVowel\s+"
-            r"OEAnyConsonant\s+OEAnyConsonant\+\s*_\s*" + DENTALS + "$",
-        ]
-        for clause, pattern in zip(clauses, expected):
-            self.assertRegex(
-                clause, pattern,
-                "every clause must keep the heavy left flank, the *i-only "
-                "target and the dental enumeration; the counterfactual "
-                "receipt rejects each tested broadening")
-        self.assertNotIn("{*u}", body,
-                         "no *u target: the u-extension broadening was "
-                         "rejected (corrupts hēafod)")
-        self.assertIn("OEMedialSyncope", self.positions,
-                      "rule must stay a live numbered cascade stage")
+    def test_general_high_syncope_has_one_historical_owner(self):
+        with (SC_DIR / "registry/sc_registry.tsv").open(encoding="utf-8") as handle:
+            rows = {row["sc_id"]: row for row in csv.DictReader(
+                (line for line in handle if not line.startswith("#")),
+                delimiter="\t")}
+        self.assertEqual(rows["SC065"]["entry_type"], "historical_sound_change")
+        self.assertEqual(rows["SC065"]["canonical_change_id"], "SC065")
+        self.assertEqual(rows["SC115"]["canonical_change_id"], "SC074")
+        self.assertEqual(rows["SC115"]["entry_type"], "support_stage")
+        self.assertIn("OEMedialSyncope", self.positions)
 
     # ------------------------------------------------------------------
     # Live firing population and negative controls (stage bins)
     # ------------------------------------------------------------------
 
     @pytest.mark.runtime
-    def test_firing_population_over_all_rows_is_exactly_filth(self):
+    def test_firing_population_over_all_rows_is_the_consolidated_population(self):
         fired = {}
         live = self.live_stages()
         self.assertEqual(set(live), set(self.baseline))
@@ -166,8 +125,8 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
                          f"SC065 firing census changed: {sorted(fired)}")
         self.assertEqual(len(fired), len(EXPECTED_FIRING_CONCEPTS))
         concept, before, after = fired[self.by_concept["filth"]["row_id"]]
-        self.assertEqual(before, ["*f*ȳ*l*i*θ"])
-        self.assertEqual(after, ["*f*ȳ*l*θ"])
+        self.assertEqual(before, ["*f*ȳ*l*i*θ*ǭ"])
+        self.assertEqual(after, ["*f*ȳ*l*θ*ǭ"])
 
     @pytest.mark.runtime
     def test_negative_controls_pass_the_stage_untouched(self):
@@ -187,11 +146,11 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
         row = self.by_concept.get("filth")
         self.assertIsNotNone(row, "filth (row 2335) missing from baseline")
         self.assertEqual(row["row_id"], "2335")
-        self.assertEqual(row["proto"], "*fūliþō")
-        self.assertEqual(row["counterpart"], "fȳlþ")
+        self.assertEqual(row["proto"], "*fūliþǭ")
+        self.assertEqual(row["counterpart"], "fȳlþe")
         self.assertEqual(row["accepted"], "1")
         self.assertEqual(row["match"], "1")
-        self.assertEqual(row["outputs"], "fȳlþ")
+        self.assertEqual(row["outputs"], "fȳlþe")
 
     def test_expansion_preserves_original_population(self):
         directory = BASELINE.parent

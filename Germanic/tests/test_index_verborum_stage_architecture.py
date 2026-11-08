@@ -379,9 +379,9 @@ class TraceDentalSpellingCollapseTests(unittest.TestCase):
 
     def test_filth_trace_input_collapses_to_manifest_spelling(self) -> None:
         rows = _rows(BOOK / "index_verborum_forms.tsv")
-        filth = [r for r in rows if r.get("source_ref") == "filth — OE fȳlþ"
+        filth = [r for r in rows if r.get("source_ref") == "filth — OE fȳlþe"
                  and r.get("source_scope") == "trace_proto_input"]
-        self.assertEqual([r["form"] for r in filth], ["*fūliþō"])
+        self.assertEqual([r["form"] for r in filth], ["*fūliþǭ"])
 
 
 class ReaderProseLanguageWindowTests(unittest.TestCase):

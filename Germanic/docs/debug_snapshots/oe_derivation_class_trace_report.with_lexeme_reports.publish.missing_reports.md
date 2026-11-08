@@ -1,6 +1,6 @@
 # Missing lexeme reports for publish mode
 
-- Missing required production reports: 140
+- Missing required production reports: 141
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Reason |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -90,6 +90,7 @@
 | 2202 | span | spannan | regular | yes | NOTE |
 | 2204 | spar | spearra | regular | yes | NOTE |
 | 2205 | spare | sparian | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
+| 2208 | spindle | spinle | regular | yes | NOTE |
 | 2212 | staff | stæf | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2216 | stem | stefn | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2217 | still | stillan | regular | yes | NOTE |

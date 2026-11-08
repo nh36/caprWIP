@@ -180,19 +180,65 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
 
     def test_stage_reference_requires_actual_target_and_glossed_lexical_anchor(self):
         mention = (
-            "The independent *ūtumist* history is discussed with "
-            "[SC115](#rule-OEHighLinkSyncope).\n\n"
+            "The source-proposed *ūtumist* history is discussed with "
+            "[SC065](#rule-OEMedialSyncope).\n\n"
         )
-        target = "## The high component {#rule-OEHighLinkSyncope}\n\n*ȳtmest* 'furthest'."
+        target = "## The high component {#rule-OEMedialSyncope}\n\n*ȳtmest* 'furthest'."
         self.assertEqual(self.validate(mention + target).returncode, 0)
         for wrong in (
             mention,
-            mention.replace("The independent", "An unrelated") + target,
-            mention.replace("#rule-OEHighLinkSyncope", "#wrong") + target,
-            mention + target.replace(" {#rule-OEHighLinkSyncope}", ""),
+            mention.replace("The source-proposed", "An unrelated") + target,
+            mention.replace("#rule-OEMedialSyncope", "#wrong") + target,
+            mention.replace("#rule-OEMedialSyncope", "#rule-OEHighLinkSyncope") + target,
+            mention + target.replace(" {#rule-OEMedialSyncope}", ""),
             mention + target.replace(" 'furthest'", ""),
             mention + target.replace("*ȳtmest*", "[ȳtmest]{.pred}"),
             mention + "# Word-by-word derivations\n\n" + target,
+        ):
+            self.assertEqual(self.validate(wrong).returncode, 2, wrong)
+
+    def test_consolidated_inflections_require_prior_lemmas_and_exact_context(self):
+        cases = (
+            ("*hēafod* 'head' is known.\n\n",
+             "Fulk's conservative Mercian *hēafudu* material supports retention.",
+             "Fulk's conservative Mercian", ""),
+            ("*fȳlþe* 'filth' is known.\n\n",
+             "The same word fixes a relative chronology. Attested *fȳlþe* survives.",
+             "The same word fixes a relative chronology", ""),
+            ("[fȳlþe]{.iv lang=oe} 'filth' is known.\n\n",
+             "The selected form is now accusative singular [fȳlþe]{.iv lang=oe}.",
+             "The selected form is now accusative singular",
+             "# Word-by-word derivations\n\n"),
+            ("[fȳlþe]{.iv lang=oe} 'filth' is known.\n\n",
+             "The form compared here is now accusative singular [fȳlþe]{.iv lang=oe}.",
+             "now accusative singular", "# Word-by-word derivations\n\n"),
+            ("[fūliþō]{.recon .iv lang=pgmc} 'filth' is the citation.\n\n",
+             "The selected accusative [fūliþǭ]{.recon .iv lang=pgmc} follows.",
+             "The selected accusative", "# Word-by-word derivations\n\n"),
+        )
+        for anchor, paragraph, context, prefix in cases:
+            with self.subTest(paragraph=paragraph):
+                self.assertEqual(self.validate(prefix + anchor + paragraph).returncode, 0)
+                for wrong in (
+                    prefix + paragraph,
+                    prefix + paragraph + "\n\n" + anchor,
+                    prefix + anchor + paragraph.replace(context, "Another word is"),
+                    prefix + anchor.replace("'head'", "").replace("'filth'", "") + paragraph,
+                ):
+                    self.assertEqual(self.validate(wrong).returncode, 2, wrong)
+
+    def test_quoted_tool_syntax_is_not_a_new_untranslated_lemma(self):
+        paragraph = (
+            "The quantifier *fela* governs genitive *towtōla*; the subsequently "
+            "enumerated implements are interpreted as objects of *habban*."
+        )
+        self.assertEqual(self.validate(paragraph).returncode, 0)
+        for wrong in (
+            "*towtōla* is known.",
+            paragraph.replace("enumerated implements", "other nouns"),
+            paragraph.replace("objects of *habban*", "other objects"),
+            "# Word-by-word derivations\n\n"
+            + paragraph.replace("*towtōla*", "[towtōla]{.iv}"),
         ):
             self.assertEqual(self.validate(wrong).returncode, 2, wrong)
 

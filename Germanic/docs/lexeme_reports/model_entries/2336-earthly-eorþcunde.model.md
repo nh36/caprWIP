@@ -188,17 +188,16 @@ Metrical prominence is not automatically attested speech stress
 ### The selected regular span and its executable representation
 
 The supported chain is
-\emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθkùndǭ >
-*érθkundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
+\emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθakundǭ >
+*éorθakundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
 followed by *eorþcunde*. Dental hardening, linking-vowel deletion,
 breaking and existing final shortening and merger account for the
 changes other than medial protection. The selected bimoric nasal
 ending is already within the input notation.
 
-[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope)
-reads the earlier compound accent before
-SC038 OEStripSecondaryStress
-removes it at its inherited position. At
+SC038 OEStripSecondaryStress removes the earlier compound annotation
+at its inherited position; ordinary nonhigh medial loss later belongs to
+[SC114 OENonHighSyn](#rule-OENonHighSyn), without reading that grave. At
 [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering),
 the independently computed medial prominence excludes this
 \emph{u} from unstressed lowering; without that protection the

@@ -1,31 +1,8 @@
 #!/usr/bin/env python3
-"""Focused regression for the SC066/SC068 joint adjudication (2026-10-30).
+"""Current light pre-l loss and unchanged degemination, with archived evidence.
 
-Adjudication memos:
-  Germanic/docs/sound_changes/audits/sc066-adjudication.md  (REFORMULATE)
-  Germanic/docs/sound_changes/audits/sc068-adjudication.md  (RETAIN)
-Counterfactual receipt:
-  audits/sc066-068-experiments/counterfactual_receipt.json
-
-Protected invariants:
-
-  * `OELAdjacentSyncope` keeps its adjudicated weight/open-syllable shape:
-    heavy clauses (long V / long diphthong + C+, short nucleus + CC+) and
-    the light clause requiring a following vowel. The old single
-    environment `V C+ _ *l` was rejected (it syncopates a cetel-type
-    nominative, receipt kettle probe).
-  * `{*ie}` (WS palatal diphthongization of short *e) is classed as a
-    SHORT diphthong; classing it long made the kettle probe wrongly heavy
-    (receipt `weight_open_split` vs `weight_open_split_ie_short`).
-  * `OEPreconsonantalDegemination` keeps its RETAIN shape
-    (TT .o. NN composition).
-  * Live firings: SC066 fires on exactly {nettle, spindle, thistle};
-    SC068 on exactly {bottom, spindle}. Milk (meoloc) is a negative
-    control at the SC066 stage (Barrack 390 would corrupt it).
-  * Chronology: SC066 < SC068 is reciprocal and independently
-    demonstrated by spindle; SC066 > SC055 by nettle/spindle.
-
-Run: cd Germanic/tests && python3 -m unittest test_sc066_sc068_adjudication
+Heavy pre-l loss now belongs to SC065. Earlier combined-rule receipts
+remain immutable historical measurements, not the current SC066 shape.
 """
 from __future__ import annotations
 
@@ -53,7 +30,7 @@ RECEIPT = (SC_DIR / "audits" / "sc066-068-experiments"
 sys.path.insert(0, str(GERMANIC / "tools"))
 from capr_runtime import run_in_runner  # noqa: E402
 
-SC066_EXPECTED_FIRING_CONCEPTS = {"nettle", "spindle", "thistle"}
+SC066_EXPECTED_FIRING_CONCEPTS = {"nettle"}
 SC068_EXPECTED_FIRING_CONCEPTS = {"bottom", "spindle"}
 # meoloc must survive the SC066 stage untouched: the rule deletes {*i}
 # only, and Barrack's 390 post-liquid deletion was rejected because it
@@ -109,38 +86,13 @@ class SC066SC068AdjudicationTests(unittest.TestCase):
     # Executable rule stability
     # ------------------------------------------------------------------
 
-    def test_sc066_keeps_the_weight_open_syllable_shape(self):
-        match = re.search(
-            r"define\s+OELAdjacentSyncope\s+Ctx\(\[(.*?)\]\);",
-            self.uncommented, re.DOTALL)
-        self.assertIsNotNone(match, "OELAdjacentSyncope define missing")
-        body = match.group(1)
-        clauses = [c.strip() for c in body.split(",\n") if c.strip()]
-        self.assertEqual(len(clauses), 4,
-                         "OELAdjacentSyncope must keep its adjudicated "
-                         "4-clause weight/open-syllable shape "
-                         "(REFORMULATE verdict)")
-        light = r"\[EnglishStarShortVowel\|EnglishStarShortDiphthong\]"
-        expected = [
-            r"^\{\*i\}\s*->\s*0\s*\|\|\s*EnglishStarLongVowel\s+"
-            r"OEAnyConsonant\+\s*_\s*\{\*l\}$",
-            r"^\{\*i\}\s*->\s*0\s*\|\|\s*EnglishStarLongDiphthong\s+"
-            r"OEAnyConsonant\+\s*_\s*\{\*l\}$",
-            r"^\{\*i\}\s*->\s*0\s*\|\|\s*" + light +
-            r"\s+OEAnyConsonant\s+OEAnyConsonant\+\s*_\s*\{\*l\}$",
-            r"^\{\*i\}\s*->\s*0\s*\|\|\s*" + light +
-            r"\s+OEAnyConsonant\s+_\s*\{\*l\}\s+EnglishStarVocalic$",
-        ]
-        for clause, pattern in zip(clauses, expected):
-            self.assertRegex(
-                clause, pattern,
-                "the heavy clauses and the light open-syllable clause are "
-                "all load-bearing: the receipt rejects the old broad "
-                "environment (kettle probe) and the wholesale "
-                "open-syllable restriction (corrupts spindle)")
-        self.assertNotIn("{*e}", body,
-                         "the rule deletes {*i} only; the old comment's "
-                         "*e claim was false")
+    def test_light_loss_and_general_heavy_loss_have_distinct_owners(self):
+        lines = [line for line in REGISTRY.read_text(encoding="utf-8").splitlines()
+                 if not line.startswith("#")]
+        rows = {row["sc_id"]: row for row in csv.DictReader(lines, delimiter="\t")}
+        self.assertEqual(rows["SC066"]["canonical_change_id"], "SC066")
+        self.assertEqual(rows["SC065"]["canonical_change_id"], "SC065")
+        self.assertEqual(rows["SC066"]["entry_type"], "historical_sound_change")
         self.assertIn("OELAdjacentSyncope", self.positions)
 
     def test_ie_diphthong_is_classed_short(self):
@@ -200,8 +152,8 @@ class SC066SC068AdjudicationTests(unittest.TestCase):
         self.assertEqual(fired, SC068_EXPECTED_FIRING_CONCEPTS,
                          "SC068 firing census changed")
         spindle = live[self.by_concept["spindle"]["row_id"]]
-        self.assertEqual(spindle["before"], ["*s*p*i*n*n*l"])
-        self.assertEqual(spindle["after"], ["*s*p*i*n*l"])
+        self.assertEqual(spindle["before"], ["*s*p*i*n*n*l*ǭ"])
+        self.assertEqual(spindle["after"], ["*s*p*i*n*l*ǭ"])
 
     # ------------------------------------------------------------------
     # Registry and chronology
@@ -214,18 +166,19 @@ class SC066SC068AdjudicationTests(unittest.TestCase):
         rows = {row["sc_id"]: row
                 for row in csv.DictReader(lines, delimiter="\t")}
         self.assertEqual(rows["SC066"]["adjudication_status"], "adjudicated")
-        self.assertEqual(rows["SC066"]["verdict"], "REFORMULATE")
+        self.assertEqual(rows["SC066"]["verdict"], "RESTRICT")
         self.assertEqual(rows["SC068"]["adjudication_status"], "adjudicated")
         self.assertEqual(rows["SC068"]["verdict"], "RETAIN")
 
-    def test_spindle_orders_sc066_before_sc068(self):
+    def test_former_spindle_relation_is_explicitly_superseded(self):
         lines = [line for line
                  in EDGES.read_text(encoding="utf-8").splitlines()
                  if not line.startswith("#")]
         rows = {(row["source_change_id"], row["target_change_id"]): row
                 for row in csv.DictReader(lines, delimiter="\t")}
         edge = rows[("SC068", "SC066")]
-        self.assertEqual(edge["evidence_basis"], "independently_demonstrated")
+        self.assertEqual(edge["evidence_basis"], "archived_experiment")
+        self.assertEqual(edge["relation_type"], "superseded_experiment")
         self.assertEqual(edge["witness_role"], "displacement_witness")
         self.assertIn("spindle", edge["representative_lexemes"])
         earlier = rows[("SC066", "SC055")]

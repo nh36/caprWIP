@@ -4,8 +4,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 110.
-- Blocks over the conservative 90-character threshold: 19.
+- Foma blocks checked: 111.
+- Blocks over the conservative 90-character threshold: 17.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -24,7 +24,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 014-unstressed-ai-monophthongization.md | SC014. Monophthongization of unstressed \emph{*ai} (`PNWGmcUnstressedAiMonophthongization`) {#rule-PNWGmcUnstressedAiMonophthongization} | 17 | 49 | no |
 | 015-stressed-i-lowering.md | SC015. Consonant-conditioned lowering of stressed short \emph{*i} (`PNWGmcILowering`) {#rule-PNWGmcILowering} | 443 | 42 | no |
 | 016-west-saxon-palatal-glide.md | SC016. West Saxon palatal-glide spelling before back vowels (`OEWsPalatalGlide`) {#rule-OEWsPalatalGlide} | 56 | 30 | no |
-| 017-nwgmc-u-lowering.md | SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering} | 90 | 60 | no |
+| 017-nwgmc-u-lowering.md | SC017. Lowering of \emph{*u} before following non-high vowels (`PNWGmcULowering`) {#rule-PNWGmcULowering} | 92 | 60 | no |
 | 018-stressed-monosyllable-o-raising.md | SC018. Raising of final stressed monosyllabic \emph{*ō} (`PNWGmcStressedMonosyllableORaising`) {#rule-PNWGmcStressedMonosyllableORaising} | 12 | 79 | no |
 | 019-nwgmc-final-long-o-raising.md | SC019. Raising of final unstressed long \emph{*ō} (`PNWGmcFinalLongORaising`) {#rule-PNWGmcFinalLongORaising} | 21 | 66 | no |
 | 020-wgmc-final-z-deletion.md | SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | 15 | 134 | yes |
@@ -44,7 +44,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 214 | 51 | no |
 | 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 177 | 44 | no |
 | 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | 188 | 72 | no |
-| 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 115 | 82 | no |
+| 037-compound-linking-syncope.md | SC037. Former compound-syncope trace anchor (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 12 | 35 | no |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 65 | no |
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 5 | 67 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 12 | 32 | no |
@@ -58,7 +58,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 11 | 63 | no |
 | 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 19 | 40 | no |
 | 048-secondary-nasalization.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 5 | 36 | no |
-| 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 21 | 38 | no |
+| 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 40 | 38 | no |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | 18 | 72 | no |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | 35 | 77 | no |
 | 052-velar-palatalization.md | SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal} | 49 | 61 | no |
@@ -69,18 +69,18 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 054-w-loss-before-final-i.md | SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | 5 | 46 | no |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 5 | 67 | no |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 50 | 92 | yes |
-| 055-i-umlaut.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | 61 | 69 | no |
-| 055-i-umlaut.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | 84 | 72 | no |
-| 055-i-umlaut.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 116 | 42 | no |
+| 055-i-umlaut.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | 63 | 69 | no |
+| 055-i-umlaut.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | 86 | 72 | no |
+| 055-i-umlaut.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 118 | 42 | no |
 | 056-west-saxon-palatal-diphthongization.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | 5 | 117 | yes |
 | 057-j-cluster-coalescence.md | SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence} | 16 | 79 | no |
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | 22 | 90 | no |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | 14 | 61 | no |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | 14 | 32 | no |
-| 063-high-vowel-apocope.md | SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 29 | 118 | yes |
+| 063-high-vowel-apocope.md | SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 50 | 102 | yes |
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | 16 | 55 | no |
-| 065-medial-syncope.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 47 | 93 | yes |
-| 066-l-adjacent-syncope.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 18 | 107 | yes |
+| 065-medial-syncope.md | SC065. General heavy/open high-vowel syncope (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 115 | 79 | no |
+| 066-l-adjacent-syncope.md | SC066. Later light-syllable pre-\emph{*l} syncope (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 18 | 69 | no |
 | 067-dental-assimilation.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | 5 | 33 | no |
 | 068-preconsonantal-degemination.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | 5 | 93 | yes |
 | 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | 20 | 107 | yes |
@@ -88,7 +88,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 071-late-o-shortening.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | 7 | 140 | yes |
 | 072-unstressed-long-vowel-shortening.md | SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} | 20 | 79 | no |
 | 073-unstressed-ae-merger.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | 7 | 48 | no |
-| 074-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | 20 | 90 | no |
+| 074-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | 44 | 90 | no |
 | 075-i-preservation-before-ng.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | 7 | 37 | no |
 | 076-prefix-i-reduction.md | SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | 30 | 48 | no |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | 14 | 48 | no |
@@ -118,8 +118,9 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 110-palatalized-glide-io-support.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | 5 | 41 | no |
 | 111-endingless-aw-fragment.md | SC111. Endingless \emph{aw} fragment (`PWGmcEndinglessAw`) {#rule-PWGmcEndinglessAw} | 26 | 38 | no |
 | 112-monosyllabic-final-r-lengthening.md | SC112. Stressed monosyllabic lengthening before inherited final \emph{r} (`PNWGmcMonosyllabicFinalRLengthening`) {#rule-PNWGmcMonosyllabicFinalRLengthening} | 11 | 47 | no |
-| 114-early-nonhigh-syncope.md | SC114. Early nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn} | 77 | 65 | no |
-| 115-post-umlaut-high-syncope.md | SC115. The bounded high-vowel component (`OEHighLinkSyncope`) {#rule-OEHighLinkSyncope} | 62 | 79 | no |
+| 114-early-nonhigh-syncope.md | SC114. Ordinary nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn} | 196 | 61 | no |
+| 115-post-umlaut-high-syncope.md | SC115. Early weak-front-vowel unrounding component (`OEHighLinkSyncope`) {#rule-OEHighLinkSyncope} | 17 | 56 | no |
+| 116-secondary-high-marker-decoding.md | SC116. Technical secondary high-marker decoding (`OEHighStressDecode`) {#rule-OEHighStressDecode} | 9 | 74 | no |
 
 ## Lines that would have overflowed under the old rendering
 
@@ -150,35 +151,14 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 - `117` chars — `    {*é} -> {*íe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],`
 - `116` chars — `    {*ḗ} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]`
 
-### 063-high-vowel-apocope.md:29 — SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope}
+### 063-high-vowel-apocope.md:50 — SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope}
 
-- `98` chars — `    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `98` chars — `    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `98` chars — `    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `102` chars — `    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `102` chars — `    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `102` chars — `    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `118` chars — `    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `118` chars — `    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `118` chars — `    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `102` chars — `    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `102` chars — `    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `102` chars — `    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `98` chars — `    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `98` chars — `    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
 - `98` chars — `    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `114` chars — `    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `114` chars — `    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-- `114` chars — `    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,`
-
-### 065-medial-syncope.md:47 — SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope}
-
-- `93` chars — `    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]`
-
-### 066-l-adjacent-syncope.md:18 — SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope}
-
-- `105` chars — `    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},`
-- `107` chars — `    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic`
 
 ### 068-preconsonantal-degemination.md:5 — SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
 

@@ -1,5 +1,13 @@
 # SC049 PGmc B Allophony — chronology evidence card
 
+## Consolidated current interpretation
+
+See `audits/sc065-adjudication.md`: underlying-b positional realization is
+computed after ordinary SC114 loss, without a new late lenition or generic
+fricative-hardening law. The old rainbow boundary below remains a measured
+failure of the earlier representation, not a current historical constraint.
+All original experiment positions and results below are preserved.
+
 ## Position at experiment time
 - order_at_experiment_time: `49`
 - rule_name: `PGmcBAllophony`

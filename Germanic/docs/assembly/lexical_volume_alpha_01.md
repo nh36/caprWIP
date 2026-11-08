@@ -888,8 +888,8 @@ Proto input: _\*kálbaz_
 \mbox{PWGmc Final Bare A Loss} & \emph{*kálb} \\
 \mbox{EAF Brightening} & \emph{*kælb} \\
 \mbox{OE Breaking} & \emph{*kealb} \\
-\mbox{PGmc B Allophony} & \emph{*kealβ} \\
-\mbox{OE Velar Palatalization} & \emph{*ʧealβ} \\
+\mbox{OE Velar Palatalization} & \emph{*ʧealb} \\
+\mbox{PGmc B Allophony} & \emph{*ʧealβ} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -1464,20 +1464,20 @@ Clark Hall records [_feld_]{.iv lang=oe sort=feld role=comparison_form source_re
 
 In the modeled pathway, medial _\*lþ_ becomes _ld_, final _-z_ is lost, and high-vowel apocope then yields [_feld_]{.iv lang=oe sort=feld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2009-field-feld.model.md:29:1"} 'field'. Whether the voiced dental ultimately reflects inherited alternation or the regular _\*lþ_ > _ld_ development, both accounts converge on the same Old English form [@RingeTaylor2014, 170].
 
-### filth — OE _fȳlþ_
+### filth — OE _fȳlþe_
 
-Derivation: _\*fūliþō_ > _fȳlþ_ (regular).
+Derivation: citation reconstruction _\*fūliþō_; form followed here _\*fūliþǭ_ > _fȳlþe_ (regular).
 
 #### Derivation trace
 
-Proto input: _\*fūliθō_
+Proto input: _\*fūliθǭ_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1485,9 +1485,7 @@ Proto input: _\*fūliθō_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PNWGmc Final Long O Raising} & \emph{*fūliθu} \\
-\end{tabularx}
+\raggedright [no change]\par
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
 \raggedright
@@ -1500,9 +1498,10 @@ Proto input: _\*fūliθō_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE I Umlaut} & \emph{*fȳliθu} \\
-\mbox{OE High Vowel Apocope} & \emph{*fȳliθ} \\
-\mbox{OE Medial Syncope} & \emph{*fȳlθ} \\
+\mbox{OE I Umlaut} & \emph{*fȳliθǭ} \\
+\mbox{OE Medial Syncope} & \emph{*fȳlθǭ} \\
+OE Unstressed Long Vowel Shortening & \emph{*fȳlθæ} \\
+\mbox{OE Unstressed AE Merger} & \emph{*fȳlθe} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -1511,11 +1510,11 @@ Proto input: _\*fūliθō_
 }
 \endgroup
 
-Old English form: _fȳlþ_
+Old English form: _fȳlþe_
 
 #### Old English evidence
 
-Old English [fȳlþ]{.iv lang=oe sort=fylth role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:21:1"} 'filth,
+Old English [fȳlþ]{.iv lang=oe sort=fylth role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:21:1"} 'filth,
 foulness, impurity' is a feminine abstract noun on the adjective *fūl*
 'foul'. The Toller Supplement lemmatizes
 [fylþ]{.iv lang=oe sort=fylth role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:24:1"} 'filth' without
@@ -1525,33 +1524,41 @@ Latin *putor* in the Aldhelm glosses (An. Ox. 3323) and *putredo* in the
 inflected form [fylþu]{.iv lang=oe sort=fylthu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:28:1"}
 'filth' (An. Ox. 1790) [@Toller1921, p. 276]. Clark Hall lemmatizes
 [fýlð]{.iv lang=oe sort=fylth role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:30" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:30:1"} 'filth' as feminine
-and marks the long vowel [@ClarkHall1960, p. 125]. The Old English form here
-*fȳlþ* is the endingless nominative singular, normalized with marked
+and marks the long vowel [@ClarkHall1960, p. 125]. The former Old English form here
+*fȳlþ* was the endingless nominative singular, normalized with marked
 length after Clark Hall and with thorn for the dental fricative; the
 substitution of thorn for eth changes no segment. The inflected *fylþu*
 beside endingless *fylþ* is the familiar alternation of the *-iþō*
 abstracts, seen also in *strengþu* 'strength' beside *hǣlþ* 'health',
 *þīefþ* 'theft' and *wiermþu* 'warmth' [@Campbell1959, p. 236, §589.6].
 
+The form compared here is now accusative singular
+[fȳlþe]{.iv lang=oe sort=fylthe role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:40:1"}, independently attested in
+*Ðā fylde ādōn of þām Godes temple*, 'remove the filth from God's temple'.
+The noun is the object of *ādōn*; the feminine accusative ending is not
+inferred from the transducer output [@Toller1921, p. 276, Hml.S25, 378].
+Length and dental spelling are normalized as above. The nominatives remain
+documented comparative forms, not alternative selected cells.
+
 #### Reconstruction and comparative evidence
 
 Kroonen reconstructs the adjective base
-[fūla-]{.iv .recon lang=pgmc sort=fula role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:42:1"} 'foul,
+[fūla-]{.iv .recon lang=pgmc sort=fula role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:50:1"} 'foul,
 rotten' and cites among its reflexes an exact West Germanic abstract,
-Old Saxon [fulitha]{.iv lang=os sort=fulitha role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:44:1"}
+Old Saxon [fulitha]{.iv lang=os sort=fulitha role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:52" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:52:1"}
 'filth' [@Kroonen2013, p. 158]. Orel likewise prints the base adjective
 \emph{*fūlaz}, with OE *fūl* 'foul, dirty, rotten' among its reflexes,
 but lists no derived abstract [@Orel2003, p. 121]. The Toller entry
 itself cites the Old Saxon noun together with Old High German
-[fülida]{.iv lang=ohg sort=fulida role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:49" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:49:1"} 'filth'
+[fülida]{.iv lang=ohg sort=fulida role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:57:1"} 'filth'
 [@Toller1921, p. 276]. Bammesberger documents the suffix type: the
 feminine abstracts in \emph{*-iþō} show the vowel \emph{*-i-} before
 the dental throughout, as in \emph{*mēriþō} > *mǣrþu* 'fame' and
 \emph{*hauhiþō} > *hīehþu* 'height' [@Bammesberger1990,
 pp. 117--118, §4.5].
 
-The derivational input
-[fūliþō]{.iv .recon lang=pgmc sort=fulitho role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:57" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:57:1"} 'filth'
+The citation reconstruction
+[fūliþō]{.iv .recon lang=pgmc sort=fulitho role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:65:1"} 'filth'
 is therefore an assembled morphological reconstruction: the attested
 base \emph{*fūla-} composed with the attested suffix \emph{*-iþō}. No
 single authority prints the composite verbatim; its two members are
@@ -1560,9 +1567,17 @@ nouns attest the derivative itself on the continent. Those cognates
 retain the medial vowel, so the medial loss seen in Old English is an
 English development, not a common West Germanic one.
 
+The selected accusative
+[fūliþǭ]{.iv .recon lang=pgmc sort=fulithoacc role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:75" occ_id="Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:75:1"}
+combines that supported noun formation with ordinary strong feminine
+accusative \emph{*-ǭ}. Citation and form compared here are both Proto-Germanic
+cells, not different historical stages. This is the same inflectional
+premise used in the selected *sāwle* 'soul' history; a dictionary need not
+print every regularly inflected reconstructed form.
+
 #### Development to Old English
 
-The adopted derivation is regular throughout.
+The former selected derivation was treated as regular throughout.
 [SC019, final long-*ō* raising](#rule-PNWGmcFinalLongORaising) gives
 \emph{*fūliþō} > \emph{*fūliþu}. [SC055, i-umlaut](#rule-OEIUmlaut)
 fronts the root vowel over the medial syllable, \emph{*fūliþu} >
@@ -1576,20 +1591,34 @@ The word is a live chronological witness. Had medial syncope preceded
 i-umlaut, the \emph{*i} that conditions the umlaut would have been
 deleted first, and the outcome would have been unattested \emph{*fūlþ}
 rather than attested *fȳlþ*; umlaut must therefore precede this
-syncope. The same ordering is visible across the *-iþō* class, whose
+syncope. The same mutation-before-loss relation is visible across the *-iþō* class, whose
 members uniformly surface with umlauted root vowels beside syncopated
 suffixes [@Campbell1959, p. 236, §589.6; @Bammesberger1990,
 pp. 117--118, §4.5].
 
 Campbell derives the endingless nominative singular of these abstracts
 analogically, after the *lār* type, with the medial syncope taken as
-given for the class [@Campbell1959, p. 236, §589.6]. The adopted
+given for the class [@Campbell1959, p. 236, §589.6]. The former
 derivation reaches the same surface form by the regular phonological
 route, through raising, apocope and syncope, without an analogical
-step. Both accounts converge on the attested form, and the corpus
-output does not decide between them; the alternative is recorded
-rather than suppressed. The inflected *fylþu* beside *fylþ* shows that
-the paradigm retained vocalic case forms either way.
+step. That route is no longer adopted: its apocope erroneously removed
+the final high vowel after a heavy syllable followed by a light syllable.
+The corrected conventional history would retain final \emph{*u},
+giving *fȳlþu*, not the endingless target. Fulk additionally supplies
+positive paradigm evidence for analogical syncope in abstract nominatives;
+his conservative light-final analysis is a substantive competing account
+[@Fulk2010, pp. 140--142].
+
+The selected accusative avoids those disputed nominative histories.
+\emph{*fūliþǭ} undergoes mutation to \emph{*fȳliþǭ}; the retained nonhigh
+quantity-bearing ending is not a target of high-vowel apocope.
+General heavy/open syncope under
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope) gives
+\emph{*fȳlþǭ}, and the ordinary inherited ending developments yield
+*fȳlþe*. Removing medial \emph{*i} before mutation would again prevent
+root fronting. Thus the independently attested cell compared here preserves
+the scientific ordering witness without claiming that an endingless
+nominative is regular merely because the former cascade produced it.
 
 ### flea — OE _flēah_
 
@@ -2254,9 +2283,9 @@ Proto input: _\*gébaną_
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 OE Heavy Syllable Nasal Apocope & \emph{*géban} \\
 \mbox{OE Secondary Nasalization} & \emph{*gébąn} \\
-\mbox{PGmc B Allophony} & \emph{*géβąn} \\
-\mbox{OE Velar Palatalization} & \emph{*ʝéβąn} \\
-OE Ws Palatal Diphthongization & \emph{*ʝíeβąn} \\
+\mbox{OE Velar Palatalization} & \emph{*ʝébąn} \\
+OE Ws Palatal Diphthongization & \emph{*ʝíebąn} \\
+\mbox{PGmc B Allophony} & \emph{*ʝíeβąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*ʝíeβan} \\
 \mbox{OE Palatal Fricative Merger} & \emph{*jíeβan} \\
 \end{tabularx}
@@ -2689,8 +2718,8 @@ Proto input: _\*xárbistuz_
 \mbox{EAF Brightening} & \emph{*xærbistu} \\
 \mbox{OE Breaking} & \emph{*xearbistu} \\
 OE Velar Fricative Palatalization & \emph{*çearbistu} \\
-\mbox{PGmc B Allophony} & \emph{*çearβistu} \\
-\mbox{OE I Umlaut} & \emph{*çierβistu} \\
+\mbox{OE I Umlaut} & \emph{*çierbistu} \\
+\mbox{PGmc B Allophony} & \emph{*çierβistu} \\
 \mbox{OE High Vowel Apocope} & \emph{*çierβist} \\
 OE Med Unstressed I Lowering1 & \emph{*çierβest} \\
 \end{tabularx}
@@ -4280,8 +4309,8 @@ Proto input: _\*régnabùgô_
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
-\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -4289,7 +4318,7 @@ Proto input: _\*régnabùgô_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
 \mbox{PNWGmc U Lowering} & \emph{*régnabògô} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -4303,10 +4332,12 @@ Proto input: _\*régnabùgô_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Compound Linking Syncope} & \emph{*régnbògô} \\
-\mbox{OE Strip Secondary Stress} & \emph{*régnbogô} \\
-\mbox{OE Velar Palatalization} & \emph{*réʝnbogô} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Strip Secondary Stress} & \emph{*régnabogô} \\
+\mbox{EAF Brightening Unstressed} & \emph{*régnæbogô} \\
+\mbox{OE A Restoration} & \emph{*régnabogô} \\
+\mbox{OE Velar Palatalization} & \emph{*réʝnabogô} \\
+\mbox{OE Non High Syn} & \emph{*réʝnbogô} \\
 OE Unstressed Long Vowel Shortening & \emph{*réʝnboga} \\
 \mbox{OE Palatal Fricative Merger} & \emph{*réjnboga} \\
 \end{tabularx}
@@ -4379,33 +4410,42 @@ not a reason to implement an optional change
 
 #### Linking syncope and the regular development
 
-Early lowering retains the subordinate accent. Consequently
-\emph{*régna-bògô} still supplies the prosodic environment for
-linking-vowel deletion, giving \emph{*régnbògô}.
-Only then does removal of the earlier accent annotation give
-\emph{*régnbogô}. Campbell's discussion of weakened compound
+Early lowering retains the subordinate accent. Its technical decoding
+gives \emph{*régnabogô}, with the first-member vowel still present.
+Ordinary nonhigh medial syncope later gives \emph{*réʝnbogô}. Campbell's discussion of weakened compound
 junctures supplies the broader historical context; the exact ordering
 of these serialized annotations is CAPR's explicit representation
 [@Campbell1959, pp. 148--149, §§356--357, p. 153, §367].
 
 The first velar undergoes palatalization, the final long weak vowel
 shortens, and the palatal consonant is represented in the selected spelling
-[*reġnboga*]{.iv lang=oe sort=regnboga role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:89" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:89:1"}. The second velar remains before a back vowel.
+[*reġnboga*]{.iv lang=oe sort=regnboga role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:87:1"}. The second velar remains before a back vowel.
 Thus the adopted chain is
-\emph{*régna-bùgô > *régna-bògô > *régnbògô > *régnbogô
+\emph{*régna-bùgô > *régna-bògô > *régnabogô > *réʝnabogô
 > *réʝnbogô > *réʝnboga > *réjnboga}, then *reġnboga*.
 The intermediate accented and palatal symbols are analytical
 representations, not alternative manuscript spellings.
 The principal account is
 [SC017 PNWGmcULowering](#rule-PNWGmcULowering), with linking deletion
-at [SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope).
+at [SC114 OENonHighSyn](#rule-OENonHighSyn).
+
+The inherited \emph{b} is realized positionally after that loss, when
+it follows \emph{n} and remains a stop. Hogg describes the stop and
+bilabial fricative as early positional realizations of one phoneme,
+before later fricative merger [@HoggGrammar2011, pp. 29--30,
+§§2.53--2.54]. Delayed computation of this distribution is not a new
+late lenition event or a general postnasal \emph{β > b} law.
+With early realization frozen, the same later syncope predicts
+\emph{*reġnfoga}. The corrected representation removes the need for
+an independently undated early compound-vowel proxy.
 
 The word already contains \emph{o} when
 [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering)
 operates. It therefore supplies no evidence that compound secondary
 stress had disappeared before that late lowering.
-Its genuine dependency is survival of the earlier accent information
-until linking syncope. This does not alter the separate weak-vowel
+Its genuine early vowel dependency is survival of the subordinate
+accent until root lowering; later linking loss no longer reads that
+annotation. This does not alter the separate weak-vowel
 chronology of *weorold* 'world' or establish a universal date for
 compound deaccentuation.
 
@@ -4414,13 +4454,13 @@ compound deaccentuation.
 Bosworth–Toller gives *regn-boga* 'rainbow' as masculine, with oblique
 *-an*. Its quotation “Hwí wæs se rénboga tó wedde gesette mancynne?”
 has nominative singular
-[*rénboga*]{.iv lang=oe sort=renboga role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:113" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:113:1"},
+[*rénboga*]{.iv lang=oe sort=renboga role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:122" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:122:1"},
 the subject of the passive question.
 The following statement has *ðone rénbogan*, accusative singular.
 The online entry assigns this passage to *Boutr. Scrd.* 21, 19–26.
 Its separate *Genesis* 9:13 quotation, “Ic sette mínne rénbogan ...
 on wolcnum”, likewise has accusative singular
-[*rénbogan*]{.iv lang=oe sort=renbogan role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:119" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:119:1"}, not a competing
+[*rénbogan*]{.iv lang=oe sort=renbogan role=evidence_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:128" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:128:1"}, not a competing
 nominative target. The two vocabulary citations, *Wrt. Voc.* i. 52, 42
 and 76, 33, pair the noun with Latin *iris/yris* and *arcus*
 [@BosworthToller1898, s.v. regn-boga].
@@ -7527,7 +7567,7 @@ Proto input: _\*érθakùnðǭ_
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
-\small
+\footnotesize
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
@@ -7550,10 +7590,12 @@ Proto input: _\*érθakùnðǭ_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Compound Linking Syncope} & \emph{*érθkùndǭ} \\
-\mbox{OE Breaking} & \emph{*éorθkùndǭ} \\
-\mbox{OE High Link Syncope} & \emph{*éorθkundǭ} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.26\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Brightening Unstressed} & \emph{*érθækùndǭ} \\
+\mbox{OE Breaking} & \emph{*éorθækùndǭ} \\
+\mbox{OE A Restoration} & \emph{*éorθakùndǭ} \\
+\mbox{OE Non High Syn} & \emph{*éorθkùndǭ} \\
+\mbox{OE High Stress Decode} & \emph{*éorθkundǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*éorθkundæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*éorθkunde} \\
 \end{tabularx}
@@ -7749,17 +7791,16 @@ Metrical prominence is not automatically attested speech stress
 #### The selected regular span and its executable representation
 
 The supported chain is
-\emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθkùndǭ >
-*érθkundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
+\emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθakundǭ >
+*éorθakundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
 followed by *eorþcunde*. Dental hardening, linking-vowel deletion,
 breaking and existing final shortening and merger account for the
 changes other than medial protection. The selected bimoric nasal
 ending is already within the input notation.
 
-[SC037 OECompoundLinkingSyncope](#rule-OECompoundLinkingSyncope)
-reads the earlier compound accent before
-SC038 OEStripSecondaryStress
-removes it at its inherited position. At
+SC038 OEStripSecondaryStress removes the earlier compound annotation
+at its inherited position; ordinary nonhigh medial loss later belongs to
+[SC114 OENonHighSyn](#rule-OENonHighSyn), without reading that grave. At
 [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering),
 the independently computed medial prominence excludes this
 \emph{u} from unstressed lowering; without that protection the
@@ -9087,8 +9128,8 @@ Proto input: _\*xébun_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 OE Velar Fricative Palatalization & \emph{*çébun} \\
-\mbox{PGmc B Allophony} & \emph{*çéβun} \\
-\mbox{OE Back Mutation} & \emph{*çéoβun} \\
+\mbox{OE Back Mutation} & \emph{*çéobun} \\
+\mbox{PGmc B Allophony} & \emph{*çéoβun} \\
 \mbox{OE Med Unstressed U Lowering} & \emph{*çéoβon} \\
 \end{tabularx}
 \end{minipage}
@@ -13767,8 +13808,8 @@ Proto input: _\*skáub_
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{OE Au Brightening} & \emph{*skáeub} \\
 \mbox{OE Diphthong Leveling} & \emph{*skēab} \\
-\mbox{PGmc B Allophony} & \emph{*skēaβ} \\
-\mbox{OE Sk Palatalization} & \emph{*ʃēaβ} \\
+\mbox{OE Sk Palatalization} & \emph{*ʃēab} \\
+\mbox{PGmc B Allophony} & \emph{*ʃēaβ} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -14159,7 +14200,7 @@ Proto input: _\*θístilas_
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Brightening Unstressed} & \emph{*θéstilæs} \\
 \mbox{OE I Umlaut} & \emph{*θistilæs} \\
-\mbox{OE L Adjacent Syncope} & \emph{*θistlæs} \\
+\mbox{OE Medial Syncope} & \emph{*θistlæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*θistles} \\
 \end{tabularx}
 \end{minipage}

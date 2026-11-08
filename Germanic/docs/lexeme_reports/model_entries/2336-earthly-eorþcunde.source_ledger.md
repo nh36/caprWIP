@@ -216,6 +216,17 @@ attested -um. No ending repair, scope extension to final-overheavy
 syllables, extra analogy or accepted-history reopening follows from
 choosing Genesis.
 
+## Subsequent syncope consolidation
+
+The same inherited input and weak-neuter target are retained. The
+first-member a now survives existing grave decoding, medial-foot
+protection and breaking, then disappears at ordinary SC114 nonhigh
+syncope: *éorθakùndǭ > *éorθkùndǭ at that checkpoint.
+The exact intermediate accent is the computed SC040 head, not survival
+of the original compound annotation. No new ending, stress exception
+or historical deaccentuation date is adopted. The prior SC040 receipts
+remain unchanged; new measurements belong to sc065-adjudication.md.
+
 ## Bibliography and publication contract
 
 Existing precise keys used are Orel2003, Kroonen2013, Fulk2018, Campbell1959,

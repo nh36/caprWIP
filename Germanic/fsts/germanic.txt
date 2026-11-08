@@ -3523,74 +3523,37 @@ define OEVelarFricativePalatalization Ctx([
 define OEHeavyMarker ?*;  # identity — no marking needed
 define OEWeightMarkers Ctx(OEHeavyMarker);
 
-# SC114: bounded early nonhigh syncope; Hogg 1992 §§6.14-18, Fulk 2010
-# pp.133-139. FootCtx protects the positively identified primary-root domain.
-# Following-final weight and one pretonic syllable are explicit model limits.
+# SC114: ordinary nonhigh syncope, including thematic compound a.
+# Hogg §§6.14-18; the singleton onset bounds medial openness.
+# FootCtx protects the primary root; ô remains a following quantity carrier.
 define OENonHighSyn FootCtx([
     [{*a}|{*æ}|{*e}] -> 0 ||
         .#. OEAnyConsonant* EnglishStarVocalic
         [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
-        _ [OEAnyConsonant
-           [EnglishStarLongVowel|EnglishStarLongDiphthong|{*ô}]
-           OEAnyConsonant* |
-           OEAnyConsonant EnglishStarVocalic OEAnyConsonant+] .#.
+        _ OEAnyConsonant EnglishStarVocalic
+        [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.
 ]);
 
 define OEHighVowelApocope Ctx([
-    # Disyllabic: long syllable (long vowel + consonant(s)) + final vowel
     {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    # Disyllabic: diphthong + consonant(s) + final vowel
-    # LONG diphthongs are heavy (any C count). SHORT diphthongs are heavy only
-    # with 2+ consonants; a short diphthong + single C is a LIGHT syllable (from
-    # back-umlaut of a light stem, Campbell §345; DEV_NOTES §17.17).
-    # E.g. *spéru → speoru (LIGHT, retain -u); *xérdō → heord (HEAVY, lose -u).
     {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    # Disyllabic: heavy closed syllable (short vowel + 2+ consonants) + final vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    # Trisyllabic: long/diphthong + unstressed syllable + final vowel (Campbell §345)
-    # Pattern: LongV/Diph + C+ + shortV + C+ + final_vowel
-    # Example: heofon < *xemonų: *e*o + *β + *u + *n + *ų
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # Trisyllabic with short-diphthong first syllable (from back-umlaut of a light
-    # stem): trisyllabic apocope still fires regardless of stress-syllable weight
-    # (Campbell §345). E.g. *xémonų → *xéomonų → heofon.
     {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # Trisyllabic: short syllable + another syllable + final vowel (Campbell §345)
-    # Pattern: shortV + C + shortV + C+ + final_vowel
     {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
     {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # Trisyllabic with heavy-by-position first syllable (short V + 2+C) +
-    # light second syllable + final high V (Campbell §345; DEV_NOTES §17.45.4).
-    # E.g. *spénnilō → *spinnilu → *spinnil (then OELAdjacentSyncope + nn-degem → spinl).
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    # R/T §6.6.1: vowel-hiatus contraction — word-final *i after long vowel
-    # with no intervening consonant (e.g. root noun dat.sg. *kūi → cȳ)
     {*i} -> 0 || EnglishStarLongVowel _ .#.,
-    # Campbell §238/§346: final -u lost after /h/ (*x) regardless of weight.
-    # Must fire before intervocalic h-loss would remove the conditioning.
-    # E.g. *féxu → *féoxu → feoh (not feou).
     {*u} -> 0 || {*x} _ .#.,
     {*ų} -> 0 || {*x} _ .#.,
     {*i} -> 0 || {*x} _ .#.
@@ -3605,33 +3568,25 @@ define OEHeavySyllableNasalApocope Ctx([
 
 define OEWeightCleanup ?*;  # identity — no markers to clean up
 
-# R/T §6.8, Campbell §§389-393: medial high vowel syncope.
-# After heavy syllables, unstressed medial *i is syncopated before dental
-# obstruents (*θ, *ð, *d, *t). Best attested in *-iθō- abstracts (fȳlþ,
-# strengþu, hǣlþu, fyrhtu, wiermþu) where ALL examples show syncope.
-# Live corpus witness: row 2335 *fūliþō → fȳlþ 'filth' (Kroonen p. 158,
-# Campbell §589.6); see audits/sc065-adjudication.md.
-# Also applies in Class 1 weak verb preterites (*-idē → *-dē) and possibly
-# comparatives (*-ira → *-ra), but those aren't currently in the pipeline.
-# Restricted to pre-dental context to avoid overapplication before laterals
-# (*þistilaz → þistel, not *þistl), glides (*wīþijaz → wīþiġ, not *wīþ),
-# and sibilants (*xarbistuz → hierfest, not *hierf+st).
+# SC065: the general heavy/open high-vowel syncope event, after mutation.
+# Replaces the dental proxy, heavy pre-l fragment and former SC115 deletion.
+# Hogg §§6.18-25; the singleton following onset bounds medial openness.
+# ô is included locally as a following vowel, not added to global classes.
 define OEMedialSyncope FootCtx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}],
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ [{*θ}|{*ð}|{*d}|{*t}]
+    [{*i}|{*u}|{*y}] -> 0
+        || .#. OEAnyConsonant* [
+            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
+            [EnglishStarShortVowel | EnglishStarShortDiphthong]
+                OEAnyConsonant OEAnyConsonant+
+        ] _ OEAnyConsonant [EnglishStarVocalic|{*ô}]
 ]);
 
 # SC066: l-adjacent syncope (R/T vol.2 §6.7.4 pp. 270–278; Luick §336;
 # Brunner §159c pp. 132–133; Campbell §§388, 589; Barrack 351 p. 87,
 # 388 p. 96).
-# Regular deletion of unstressed medial *i next to *l. Two historically
-# distinct strata are stated here as one composed law:
-#   (1) The inherited heavy-syllable syncope (Campbell §589; Barrack 351):
-#       after a heavy syllable — long vowel or long diphthong + C, or
-#       short nucleus + CC — medial *i deletes before *l regardless of
-#       what follows (spindle *spinnil-, thistle *θistil-).
-#   (2) The light-syllable pre-l deletion (Luick §336, after Weyhe;
+# Ordinary heavy/open syncope now belongs to SC065.
+# This component contains only light-syllable pre-l deletion:
+#       (Luick §336, after Weyhe;
 #       Brunner §159c; Campbell §§388, 390): after a light syllable,
 #       *i deletes before *l ONLY in an OPEN medial syllable, i.e. with
 #       a vowel following the *l (nettle *natilōn- → netle, the deleted
@@ -3647,37 +3602,25 @@ define OEMedialSyncope FootCtx([
 # probes are retained. Late-WS netele and crypel ~ cryple byforms are
 # recorded in the dossier (anaptyxis per Luick §336.2/Brunner, arrested
 # variation per R/T p. 272); the selected corpus cannot discriminate.
-# Must be MEDIAL (preceded by vowel + consonant): otherwise deletes root
-# vowels in words like *weljaną 'will'. Known latent residue: a never-
-# trisyllabic heavy nominative (engel-type) would wrongly syncopate; the
-# selected-cell architecture sees only post-apocope strings (see
-# audits/sc066-068-experiments/).
+# Brunner §159c retains d/l and inherited þ/f-l environments.
+# Both light weight and a following vowel are required.
 define OELAdjacentSyncope Ctx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic
+    {*i} -> 0 ||
+        [EnglishStarShortVowel|EnglishStarShortDiphthong]
+        [OEAnyConsonant - [{*d}|{*θ}|{*f}]] _ {*l} EnglishStarVocalic
 ]);
 
-# Post-umlaut high syncope: Hogg §§6.18-6.21, Ringe-Taylor p.267.
-# A bounded open-medial domain (singleton following onset); no name exception.
-# Remaining secondary high-vowel markers are decoded only after deletion.
+# SC115: early unrounding component of the SC074 weak-front-vowel history.
+# The stable identifier no longer denotes deletion; that belongs to SC065.
 define OEHighLinkSyncope FootCtx([
-    [{*i}|{*u}|{*y}] -> 0
-        || .#. OEAnyConsonant* [
-            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
-            [EnglishStarShortVowel | EnglishStarShortDiphthong]
-                OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant EnglishStarVocalic
-]) .o. FootCtx([{*y} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _])
-    .o. Ctx([{*ì} -> {*i}, {*ù} -> {*u}, {*ỳ} -> {*y}]);
-
-# Retained a-loss holding proxy for rainbow/earthly, not an early historical
-# date for general nonhigh syncope (SC114). High loss follows i-umlaut.
-define OECompoundLinkingSyncope Ctx([
-    {*a} -> 0
-        || PGmcStarAcuteVowel OEAnyConsonant+ _ OEAnyConsonant+ PGmcStarGraveVowel
+    {*y} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _
 ]);
+
+# Decode secondary markers only after the light pre-l component.
+define OEHighStressDecode Ctx([{*ì} -> {*i}, {*ù} -> {*u}, {*ỳ} -> {*y}]);
+
+# SC037: retained identity trace anchor. Former early a-loss belongs to SC114.
+define OECompoundLinkingSyncope ?*;
 
 # Post-syncope dental cluster simplification: *tθ → *t.
 # When medial syncope brings *t and *θ into contact (e.g. *fyrhtiθu → *fyrhtθu),
@@ -3786,239 +3729,82 @@ define OERMetathesis [
 # Note: pipeline order reflects FST composition dependencies, not strict chronology.
 # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
 define EnglishProtoToOE ( # capr:bundle
-    # SC103 Proto-Germanic nasal loss before *x (Campbell §119 p.44; Fulk
-    # §4.1 p.55; Ringe vol.1 §3.2.7(ii) pp.149-150). This is a PAN-GERMANIC
-    # change — Gothic, North Germanic, Old High German and Old Saxon all
-    # share its output — so it is composed at the absolute head of the
-    # PGmc→OE pipeline, ahead of even the pre-PWGmc SC096 below. Its
-    # earlier holding-zone slot (beside SC022/SC023, after ~22 NWGmc and
-    # PWGmc innovations) was an editorial artifact, not a historical claim.
-    # It creates the *xst cluster of *fúnxstiz > *fū́xstiz that SC028 then
-    # simplifies, and its nasalized low output *ã is rounded much later by
-    # SC104 EAFNasalizedLowRounding.
     PGmcNasalLossBeforeX
-    # SC096 root-noun nominative *-z loss (pre-PWGmc; Dossier A, memo
-    # §§5-6). Composed at the very head of the PGmc→OE pipeline: it must
-    # precede PWGmcIjContraction (inside EarlyEnglishLineChanges), which
-    # contracts historically polysyllabic *fríjōndz to monosyllabic
-    # *fríundz — friend must NOT meet this rule in contracted shape (its
-    # *-z fell by SC020). The early slot also matches the change's
-    # pre-PWGmc date.
     .o. RootNounNomZLoss
     .o. EarlyEnglishLineChanges
-    # SC024 Change A (early NWGmc stressed *ē₁ > *ā, 2nd c. AD) is now
-    # composed INSIDE EarlyEnglishLineChanges, before the PWGmc rules —
-    # see its define's header comment. Its *ā output is consumed much
-    # later by EAFLongANasalRounding / EAFLongAFronting below.
-    .o. PNWGmcILowering     # I-lowering BEFORE u-lowering to see original high *u
-    # SC016 OEWsPalatalGlide no longer fires here: it is an OE-period WS
-    # glide-spelling convention and now sits in the orthography block
-    # (sc016-017-adjudication.md). U-lowering must see *júką → *jóką
-    # (Fulk §4.3 p.56; Campbell §115; R/T PWGmc paradigm jok, p.129).
+    .o. PNWGmcILowering
     .o. PNWGmcULowering
-    # R/T §3.1 pp.30-31: PNWGmc word-final bimoric *-ō → *-u (nom.sg.
-    # *gebō etc.). Must fire AFTER PNWGmcULowering — U-lowering needs
-    # to see the original non-high *-ō suffix on forms like *núsō
-    # → *nósō → *nósu — and BEFORE EAFFinalZDeletion, so gen.sg.
-    # *-ōz is sheltered by its -z from raising. See DEV_NOTES §17.10.24.
-    #
-    # §17.31: stressed-monosyllable raising (Campbell §122) fires
-    # FIRST so monosyllabic *bō, *kō, *twō → *bū, *kū, *twū are
-    # exempt from the polysyllable shortening.
     .o. PNWGmcStressedMonosyllableORaising
     .o. PNWGmcFinalLongORaising
-    # PWGmc z-loss (R/T §3.3.1 p.98, §6.8.3 pp.299-300 step 3). Placed
-    # immediately after raising — still R/T step 3, but tight to step 2
-    # — so the OE cluster below sees a z-free input. If z-loss drifts
-    # later, OEMedUnstressedULowering treats word-final *-uz as medial
-    # (the *-z satisfies its right-context consonant slot) and wrongly
-    # lowers *-u → *-o. See DEV_NOTES §17.10.25.
     .o. EAFFinalZDeletion
-    # SC098 PWGmc early apocope in unstressed words (R/T 2014: 57-58).
-    # Fed by SC020 (the *-i of *iwwiz becomes final only after z-loss);
-    # PWGmc-era, so before the post-PWGmc northern SC097; must precede
-    # SC055 i-umlaut (OE ēow shows none — R/T's own dating argument).
     .o. PWGmcUnstressedWordFinalIApocope
-    # SC097 northern stressed-monosyllable *-z loss (post-PWGmc; Dossier
-    # C). MUST stay after the two ō-raisers: its z-loss exposes final
-    # vowels that the raisers must not see (e.g. English-doculect *kōz →
-    # *kō must not feed monosyllabic ō-raising). Corpus witness: who
-    # *xwáz > hwā (corpus-maturation pass 01).
     .o. MonosyllabicFinalZLoss
-    # SC112: early working placement preserves inherited final *r and
-    # prevents secondary *r created by the following rhotacism from feeding.
     .o. PNWGmcMonosyllabicFinalRLengthening
-    # SC003 rhotacism: surviving (non-final) *z → *r. Composed AFTER all
-    # three final-*z losses, matching the historical chronology (R/T
-    # vol.2 p.87; Crist 2002 §6: deletion is *z-sensitive, so must
-    # precede the *z/*r merger). Must precede breaking (SC044): the
-    # *r produced here conditions breaking in e.g. liornian, meorde.
     .o. EAFRhotacism
-    # SC021 PNWGmcUnstressedORaising retired from this slot
-    # (sc021-adjudication.md): no secure NWGmc *o → *u raising exists. The
-    # demonstrated development is Stausland Johnsen's late pre-OE medial
-    # raising, SC099, in the *ō-shortening block below.
-    .o. PNWGmcMnDissimilation     # *m → *β adjacent before *n (Fulk §6.14)
+    .o. PNWGmcMnDissimilation
     .o. PNWGmcNStemNLoss
-    # SC026 + SC027: the North Sea Germanic (Ingvaeonic) nasal-spirant law,
-    # ONE historical sound change implemented as two ordered operations —
-    # the vowel must be read while the nasal is still there. Must precede
-    # i-umlaut so that *gánsz → *gōs, and *júgunθ → *júgūθ, not †*ġyns.
     .o. EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss
-    # SC102 pre-OE / Anglo-Frisian hiatus *w (verba pura): must precede
-    # EAFLongAFronting, whose *w-block it feeds — "early enough to prevent
-    # fronting of *ā in pre-OE" (R/T p. 151): sāwan, not *sǣwan.
     .o. EAFHiatusWInsertion
-    # SC025 + SC101: the northern-WGmc low-vowel split consuming *ā < *ē₁
-    # (Change A above). Complementary environments (nasal vs non-nasal), so
-    # their mutual order carries no claim. SC025 now only NASALIZES (*ā > *ą̄);
-    # SC104 below rounds every *ą̄, whatever its source.
     .o. EAFLongANasalRounding
-    # SC104: the common Anglo-Frisian rounding *ą̄ > *ō. Composed after all
-    # three feeders (SC103 above, SC026/SC027 above, SC025 immediately above)
-    # and before i-umlaut, with which its product merges (Campbell §128 n. 1).
-    # Its order relative to SC101/SC004 is free: *ą̄ is a distinct segment, so
-    # oral *ā < *ai (hām, stān) can never be an input.
     .o. EAFNasalizedLowRounding
     .o. EAFLongAFronting
-    # Technical prosodic annotation, not a numbered sound change.
     .o. OEStressFootContext
-    .o. EAFAiMonophthongization  # SC004 general *ai/*ái → *ā (EAF / North Sea Germanic), moved here from the head; see sc004_split_movement_proofs.md
+    .o. EAFAiMonophthongization
     .o. OEAwwjResolution
     .o. OEAuBrightening
-    # J-created reanalysis and conditioned realization are distinct.
-    # SC106 remains a compatibility operation, not a new historical law.
     .o. OEEwLongDiphthong
     .o. OEJWWSimplification
     .o. OEJGlideIO
     .o. OEDiphthongLeveling
     .o. OEAwLongDiphthong
-    # SC035 now follows SC107 and palatalization; the old protective
-    # operation and its model-local early dependency are superseded.
-    # §17.11: compound linking-vowel syncope MUST fire before grave-stripping
-    # (trough condition reads acute+grave tiers). Also precedes B-allophony
-    # (line ~2894) so the post-syncope cluster *n_*b blocks *b→*β lenition.
     .o. OECompoundLinkingSyncope
-    # Retain secondary high-vowel stress through breaking, mutation and syncope.
     .o. OEStripSecondaryStress
-    # Weak LH a>u before fronting/breaking; separate provisional soul branch.
     .o. OEInterStressRaising
-    # §17.51.A1: OE w-effect on *í (combinative u-umlaut after initial *w).
-    # Must precede OEMedUnstressedULowering so that the medial *u trigger
-    # is still visible. Output *ú (stressed) is then preserved through
-    # u-lowering by the existing stressed-vowel left-context exclusion.
     .o. OEWICombinativeUUmlaut
-    # SC040 OEMedUnstressedULowering formerly sat HERE (moved to this slot
-    # from after NasalSpirantLoss by PROBE §17.10.19 R3, to follow
-    # InterStressRaising). The sc021 adjudication moved it further down, to
-    # after the unstressed-vowel mergers: Campbell §373 dates the u → o
-    # lowering to the 9th century, i.e. AFTER the pre-OE *ō-shortening split
-    # (SC071/SC099/SC100) whose 8th-c. u/a output it lowers. Executing it up
-    # here was historically inverted, and under the corrected split its o
-    # output would be swept by SC100 (**heofan for heofon).
-    # PWGmc final bare-a loss MUST precede AFB/retraction (R/T §§3.1-3.4).
-    # See DEV_NOTES §17.10.14 for the cross-source survey.
     .o. PWGmcFinalBareALoss
-    # R/T §3.1 pp.58-59: "surviving" bimoric *-ō (z-loss-exposed) unrounds.
-    # Output kept LONG (*-ā) so length is preserved through AFB; shortening
-    # happens at R/T's dated OE stage (§6.8.3). See DEV_NOTES §17.10.23.
     .o. PWGmcSurvivingBimoricOUnrounding
     .o. EAFBrighteningUnstressed
     .o. EAFBrightening
     .o. EAFBrighteningLongFinal
     .o. OEBreaking
-    # Ringe/Taylor order: velar fricative palatalization precedes a-restoration.
     .o. OEVelarFricativePalatalization
     .o. OEARestoration
-    # CRITICAL CHRONOLOGY FIX (2026-02-06): Final weak schwa apocope must occur
-    # AFTER A-restoration, not before. A-restoration needs to see the weak-tail
-    # endings (like *-ăz, *-ą) to determine whether to apply. Historical chronology
-    # per Ringe/Taylor: §6.3 Retraction (early) → §6.8 Apocope (later).
-    #
-    # OEHeavySyllableNasalApocope placed here (2026-03-14 fix):
-    # - Apocope must run BEFORE nasalization so that infinitive *-anąˈ → *-an#
-    # - This puts *n in coda position (tautosyllabic) → triggers nasalization
-    # - Participle *-anăz still has *n before vowel (heterosyllabic) → no nasalization
-    # - Per Fulk §5.6: nasalization only before "tautosyllabic" nasal
-    # See DEV_NOTES.md "Implementation Plan: Phonologically Correct Nasalization"
     .o. OEHeavySyllableNasalApocope
-    # OESecondaryNasalization now simply checks `_ {*n} .#.` — true coda position
     .o. OESecondaryNasalization
-    # PWGmc j-gemination moved to EarlyEnglishLineChanges (2026-03-18). Must run BEFORE
-    # PWGmcSyllabicJ so that *natją → *nattją (gemination creates heavy stem).
-    # See DEV_NOTES.md "OE nett 'net': ja-stem Gemination Chronology Bug"
-    #
-    # NOTE: OECompoundLinkingSyncope moved earlier in the cascade (§17.11)
-    # — must run before OEStripSecondaryStress so the trough condition can
-    # see the grave vowel of the Nebenton-bearing second element.
-    #
-    # PGmc *b allophony (*b → *β after vowels/liquids) placed AFTER j-gemination.
-    # R/T vol.2 p.50: j-gemination operates on underlying /b/ (e.g. *habjan- → *habban-).
-    # Allophonic [β] only surfaces where *b remains a singleton after gemination.
-    .o. PGmcBAllophony
-    # Sievers' Law syncope: *-CijV- → *-CjV- (R/T vol.2 p.157)
-    # Must be AFTER j-gemination (heavy stems avoided gemination via blocking *i)
-    # and BEFORE palatalization (so *kj → *ċ can apply).
     .o. SieversLawSyncope
     .o. OESkPalatalization
     .o. OEVelarPalatalization
     .o. OEPrefixAReduction
-    # SC016 supplies the WS glide spelling later, in the written-surface block.
     .o. OEPostVelarWLoss
-    # Loss of *w before unstressed *i (R/T §6.7.1): *saiwiz > *sāi > sǣ
     .o. OEWLossBeforeI
-    # NOTE: PWGmcEarlyIApocope now in EarlyEnglishLineChanges (Stage 2), not here.
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
     .o. OELatePalatalDiphthong
     .o. OEJClusterCoalescence
     .o. OEBackMutation
     .o. OEWsPalatalUmlaut
-    # NSL moved earlier in pipeline (NWGmc stage, before i-umlaut) — see lines 1945-1946
     .o. OEWeakTailNasalLoss
     .o. OEWeightMarkers
     .o. OENonHighSyn
+    .o. PGmcBAllophony
     .o. OEHighVowelApocope
-    # NWGmcInStemNLoss runs AFTER OEHighVowelApocope so dsg./asg./npl. tails
-    # *-īni / *-īnų / *-īniz lose their final high V first; *-n is then
-    # word-final and the rule applies (gsg. *-īn already exposed by
-    # PWGmcFinalBareALoss). Cross-source chronology (R/T vol.2 pp.71-72,
-    # vol.1 §3.3.1; Campbell §472-473; Brunner §280; Fulk §7.34; Hogg vol.1
-    # ch.3; Bammesberger §7.3.4) all place *-n-after-*ī loss after PWGmc
-    # final-V loss / OE high-V apocope. See DEV_NOTES §17.45.3f.
     .o. NWGmcInStemNLoss
-    # OEHeavySyllableNasalApocope moved earlier — now at line ~2039 before nasalization
     .o. OEMedialSyncope
-    .o. OELAdjacentSyncope
     .o. OEHighLinkSyncope
+    .o. OELAdjacentSyncope
+    .o. OEHighStressDecode
     .o. OEDentalAssimilation
     .o. OEPreconsonantalDegemination
-    # TWO-STAGE *ō SHORTENING (§15.8):
-    # 1. Early: *ō → *a before nasals (weak nouns like tunge, eorþe)
     .o. OEEarlyOShortening
-    # 2. Fronting: *a → *æ (Anglo-Frisian fronting, §333)
     .o. OEUnstressedFrontingEarly
-    # 3. Late: *ō → *o elsewhere (Stausland Johnsen 2015:28-30; the old
-    #    one-step *ō → *a is replaced by shortening + the SC099/SC100 split)
     .o. OELateOShortening
-    # 3a. SC099 Stausland Johnsen's law: shortened *o → *u in medial
-    #     syllables (2015:28-31)
     .o. OEMedUnstressedORaising
-    # 3b. SC100: shortened *o → *a in final syllables (2015:28-29;
-    #     Campbell §355)
     .o. OEFinalUnstressedOLowering
-    # 4. Other long vowel shortening (ī, ū, ǣ, ǭ → æ, etc.)
     .o. OEUnstressedLongVowelShortening
-    # 5. Merger: *æ → *e (unstressed vowel merger, §369)
     .o. OEUnstressedAEMerger
     .o. OEMedUnstressedILowering1
     .o. OEMedUnstressedILowering
-    # SC040 9th-c. medial u > o lowering (Campbell §373). Moved here from
-    # before PWGmcFinalBareALoss (sc021-adjudication.md): it must follow the
-    # pre-OE *ō-shortening split (SC071/SC099/SC100) and the c.700 unstressed
-    # mergers, matching its 9th-c. date; the old early position was
-    # historically inverted and incompatible with SC100.
     .o. OEMedUnstressedULowering
     .o. OEPrefixIReduction
     .o. OEWeakTailReduction

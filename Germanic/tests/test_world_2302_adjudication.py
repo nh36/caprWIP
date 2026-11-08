@@ -539,6 +539,10 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     current = read_tsv((ROOT / path).read_text())
     assert all(row in current for row in previous)
     added = [row for row in current if row not in previous]
+    consolidation = [row for row in added
+                     if row["note"].startswith("SC065 syncope consolidation:")]
+    assert len(consolidation) == 10
+    added = [row for row in added if row not in consolidation]
     earthly = [row for row in added if row["source_ref"] == "earthly — OE eorþcunde"]
     assert len(earthly) == 4
     added = [row for row in added if row not in earthly]

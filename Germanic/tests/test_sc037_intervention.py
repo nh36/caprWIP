@@ -45,7 +45,8 @@ def test_selected_weight_negative_and_previous_breaking_umlaut_histories(current
     assert values["wíduwōn"] == ["wuduwe"]
     assert current["no-weight"]["canonical"]["wíduwōn"] == ["wudwe"]
     assert values["knéwai"] == ["cneowe"]
-    assert values["fūliθō"] == ["fȳlþ"]
+    assert values["fūliθǭ"] == ["fȳlþe"]
+    assert values["spénnilǭ"] == ["spinle"]
     selected = current["current"]["selected"]
     assert len(selected) == 391
     assert all(len(row["outputs"]) == 1 for row in selected)
@@ -76,3 +77,26 @@ def test_closed_medial_syllables_and_secondary_high_stress_are_preserved(current
         ["*ū*t*e*m*i"], ["*ū*t*ỳ*m*i"],
     ]
     assert values["atomic_iu"] == [["*s*íu*w*à*r*d*a*z"]]
+
+
+def test_selected_accusatives_discriminate_mutation_and_degemination_order(current):
+    assert current["early-high"]["canonical"]["fūliθǭ"] == ["fūlþe"]
+    assert current["early-high"]["canonical"]["spénnilǭ"] == ["spenle"]
+    assert current["late-high"]["canonical"]["spénnilǭ"] == ["spinnle"]
+    assert current["no-high"]["canonical"]["fūliθǭ"] == ["fȳleþe"]
+    assert current["no-high"]["canonical"]["spénnilǭ"] == ["spinnele"]
+    assert current["current"]["heads"] == [["hēafdu"]]
+
+
+def test_weak_unrounding_light_retention_and_positional_labials(current):
+    assert current["current"]["canonical"]["régna-bùgô"] == ["reġnboga"]
+    assert current["early-b"]["canonical"]["régna-bùgô"] == ["reġnfoga"]
+    assert current["no-unrounding"]["companion"] == [["gædyling"]]
+    assert current["current"]["weak"] == [
+        ["*y*n"], ["*g*æ*d*i*l*i*n*g"], ["*l*a*n*d*x*ỳ*m*i"]]
+    assert current["current"]["light"] == [
+        ["*n*e*t*l*ǭ"], ["*g*æ*d*i*l*i*n*g"], ["*k*e*t*i*l"],
+        ["*a*θ*i*l*a"], ["*a*f*i*l*a"]]
+    assert current["current"]["labial"] == [
+        ["*b*a"], ["*a*β*a"], ["*l*a*m*b"], ["*x*a*b*b*a"],
+        ["*r*e*g*n*b*o*g*ô"], ["*r*e*g*n*β*o*g*ô"]]

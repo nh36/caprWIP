@@ -6,7 +6,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 
 ## Summary
 
-- Sections checked: 107.
+- Sections checked: 108.
 - Sections with absent cues or notation observations: 73.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
@@ -52,7 +52,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 110-palatalized-glide-io-support.md | SC110. Palatalized-glide long-io realization (`OEJGlideIO`) {#rule-OEJGlideIO} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 032-diphthong-leveling.md | SC032. Quantity-distinct diphthong realization (`OEDiphthongLeveling`) {#rule-OEDiphthongLeveling} | no | no | yes | yes | yes | yes | no | missing move-condition wording |
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | no | no | no | no | no | yes | no | missing move-condition wording |
-| 037-compound-linking-syncope.md | SC037. Syncope of compound linking vowels (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | yes | no | no | yes | no | no | no | missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 037-compound-linking-syncope.md | SC037. Former compound-syncope trace anchor (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | yes | yes | yes | yes | yes | yes | no | — |
@@ -67,7 +67,6 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | yes | yes | yes | yes | yes | no | no | — |
 | 048-secondary-nasalization.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | no | yes | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | no | yes | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording |
 | 052-velar-palatalization.md | SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
@@ -87,14 +86,16 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | yes | yes | yes | yes | yes | no | no | — |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | no | yes | no | yes | yes | yes | no | missing move-condition wording |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
-| 114-early-nonhigh-syncope.md | SC114. Early nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 114-early-nonhigh-syncope.md | SC114. Ordinary nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 063-high-vowel-apocope.md | SC063. High-vowel apocope after heavy syllables and in trisyllables (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | no | yes | yes | yes | no | no | no | missing move-condition wording; missing explicit verbal boundary conclusion |
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 065-medial-syncope.md | SC065. Medial syncope before dentals after heavy syllables (`OEMedialSyncope`) {#rule-OEMedialSyncope} | yes | no | no | yes | yes | no | no | missing explicit wrong-output/result wording; missing expected-form wording |
-| 066-l-adjacent-syncope.md | SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
-| 115-post-umlaut-high-syncope.md | SC115. The bounded high-vowel component (`OEHighLinkSyncope`) {#rule-OEHighLinkSyncope} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
+| 065-medial-syncope.md | SC065. General heavy/open high-vowel syncope (`OEMedialSyncope`) {#rule-OEMedialSyncope} | yes | no | no | yes | yes | no | no | missing explicit wrong-output/result wording; missing expected-form wording |
+| 115-post-umlaut-high-syncope.md | SC115. Early weak-front-vowel unrounding component (`OEHighLinkSyncope`) {#rule-OEHighLinkSyncope} | yes | no | no | yes | no | yes | no | — |
+| 066-l-adjacent-syncope.md | SC066. Later light-syllable pre-\emph{*l} syncope (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 116-secondary-high-marker-decoding.md | SC116. Technical secondary high-marker decoding (`OEHighStressDecode`) {#rule-OEHighStressDecode} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 067-dental-assimilation.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | no | no | no | no | yes | yes | no | missing move-condition wording |
-| 068-preconsonantal-degemination.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | no | yes | yes | no | yes | yes | no | missing move-condition wording |
+| 068-preconsonantal-degemination.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | no | yes | yes | yes | yes | yes | no | missing move-condition wording |
 | 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | yes | yes | yes | yes | yes | no | no | — |
 | 070-early-unstressed-fronting.md | SC070. Early fronting of unstressed \emph{*a} (`OEUnstressedFrontingEarly`) {#rule-OEUnstressedFrontingEarly} | yes | yes | yes | yes | yes | no | no | — |
 | 071-late-o-shortening.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | yes | yes | yes | yes | yes | no | no | — |

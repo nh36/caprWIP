@@ -9,21 +9,21 @@ report manifest and class assembly manifest. Regenerate only with
 | legacy | 380 |
 | selected | 391 |
 | audit | 397 |
-| legacy_current_required | 153 |
-| required | 164 |
+| legacy_current_required | 154 |
+| required | 165 |
 | assembled | 172 |
 | production_pilots | 11 |
 | format_tests | 1 |
 | reviewed_rows | 20 |
 | scoped_cases | 23 |
 | philological_selected | 18 |
-| pilot_current_required | 168 |
+| pilot_current_required | 169 |
 
 added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335, 2336.
 
 research_only: 1935, 1947, 1948, 1994, 2156, 2218.
 
-required_not_assembled: 2055, 2120, 2327, 2328, 2329.
+required_not_assembled: 2055, 2120, 2208, 2327, 2328, 2329.
 
 assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113, 2137, 2148, 2185, 2200, 2283.
 

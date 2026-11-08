@@ -1,18 +1,20 @@
 """Fresh production controls for the source-backed SC037 intervention."""
 
 import json
+import os
 from pathlib import Path
 import sys
 import tempfile
 
 sys.path.insert(0, "/usr/app/tools")
-from anglo_frisian_experiments import compile_isolated, corpus_rows
+from anglo_frisian_experiments import (
+    compile_isolated, corpus_rows, prepare_definition_image,
+)
 from executable_facts import parse_defines
 from sound_change_order_sensitivity import batch_apply_down
 
 source = Path("/usr/app/fsts/germanic.txt")
 definitions = parse_defines(source.read_text())
-quality = definitions["OEHighLinkSyncope"].body.split("]) .o.", 1)[1]
 extra = """
 define AFPass ?*;
 define AFOld037 Ctx([
@@ -24,8 +26,12 @@ define AFNoWeight FootCtx([
     [{*i}|{*u}|{*y}] -> 0
         || .#. OEAnyConsonant* EnglishStarVocalic OEAnyConsonant+
             _ OEAnyConsonant EnglishStarVocalic
-]) .o. """ + quality + """;
-define AFNoHigh """ + quality + """;
+]);
+define AFNoHigh ?*;
+define AFEarlyHigh """ + definitions["OEMedialSyncope"].body + """;
+define AFLateHigh """ + definitions["OEMedialSyncope"].body + """;
+define AFEarlyB """ + definitions["PGmcBAllophony"].body + """;
+define AFHighHandling [OEMedialSyncope .o. OEHighLinkSyncope .o. OEHighStressDecode];
 define AFBadI """ + definitions["OEBreakingI"].body.replace(
     ".#. OEAnyConsonant* _", "_") + """;
 define AFBadBr FootCtx(OEBreakingA .o. OEBreakingE .o. AFBadI);
@@ -34,7 +40,7 @@ define AFOpaqueFront """ + definitions["OEIUmlautFronting"].body.replace(
 define AFOpaqueUm FootCtx(AFOpaqueFront .o. OEIUmlautRaising .o. OEIUmlautDiphthong);
 """
 forms = ["sáli-wàrðaz", "sáli-wàrðuz", "sáli-wàrðą", "wíduwōn",
-         "knéwai", "fūliθō"]
+         "knéwai", "fūliθǭ", "spénnilǭ", "régna-bùgô"]
 staged = [
     {"id": "furthest", "stage": "OEIUmlaut", "side": "before",
      "input": "*ū*t*u*m*i*s*t", "expected": "ȳtmest",
@@ -42,9 +48,14 @@ staged = [
     {"id": "companion", "stage": "OEIUmlaut", "side": "before",
      "input": "*g*á*d*u*l*i*n*g", "expected": "gædeling",
      "evidence": "Hogg 5.76/6.10; pre-OE, not PGmc"},
+    {"id": "heads", "stage": "OENonHighSyn", "side": "before",
+     "input": "*x*ēa*β*u*d*u", "expected": "hēafdu",
+     "evidence": "Campbell353; Hogg6.22-24; conventional retained-final-high history"},
 ]
 components = ["EnglishProtoInput", "OEBreaking", "OEIUmlaut",
-              "OEHighLinkSyncope", "OEStripSecondaryStress"]
+              "OEMedialSyncope", "OEHighLinkSyncope", "OEHighStressDecode",
+              "AFHighHandling", "OELAdjacentSyncope", "PGmcBAllophony",
+              "OEStripSecondaryStress"]
 break_inputs = ["*f*u*l*w*i*x*t", "*n*a*w*i*x*t", "*s*i*w", "*s*í*w",
                 "*b*i*r*x*t", "*w*i*w*i", "*w*i*w*ī",
                 "*s*æ*l*ì*w*æ*r*d", "*ᶠ*b*i*s*i*w"]
@@ -56,12 +67,19 @@ umlaut_inputs = ["*ū*t*u*m*i", "*g*a*d*u*l*i*n*g",
 report = {}
 with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
     root = Path(temporary)
+    image = prepare_definition_image(source, root)
+    if image:
+        os.environ["CAPR_FOMA_DEFINITION_IMAGE"] = str(image)
     for name, replacements in (
         ("current", {}),
         ("old-early", {"OECompoundLinkingSyncope": "AFOld037"}),
         ("bad-breaking", {"OEBreaking": "AFBadBr"}),
-        ("no-weight", {"OEHighLinkSyncope": "AFNoWeight"}),
-        ("no-high", {"OEHighLinkSyncope": "AFNoHigh"}),
+        ("no-weight", {"OEMedialSyncope": "AFNoWeight"}),
+        ("no-high", {"OEMedialSyncope": "AFNoHigh"}),
+        ("early-high", {"OEMedialSyncope": "AFNoHigh"}),
+        ("late-high", {"OEMedialSyncope": "AFNoHigh"}),
+        ("early-b", {"PGmcBAllophony": "AFNoHigh"}),
+        ("no-unrounding", {"OEHighLinkSyncope": "AFNoHigh"}),
         ("opaque-umlaut", {"OEIUmlaut": "AFOpaqueUm"}),
     ):
         directory = root / name
@@ -70,21 +88,30 @@ with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
                   "id": name, "insert_rule": "AFPass", "insert_after": "EnglishProtoInput",
                   "staged_checks": staged,
                   "component_checks": [{"component": member} for member in components]}
+        if name == "early-high":
+            recipe.update(insert_rule="AFEarlyHigh",
+                          insert_after="OEWsPalatalDiphthongization")
+        elif name == "late-high":
+            recipe.update(insert_rule="AFLateHigh",
+                          insert_after="OEPreconsonantalDegemination")
+        elif name == "early-b":
+            recipe.update(insert_rule="AFEarlyB", insert_after="OESecondaryNasalization")
         bins = compile_isolated(source, recipe, [], directory)
         value = {
             "canonical": dict(zip(forms, batch_apply_down(bins["final"], forms))),
             "furthest": batch_apply_down(bins["staged:furthest"], [staged[0]["input"]]),
             "companion": batch_apply_down(bins["staged:companion"], [staged[1]["input"]]),
+            "heads": batch_apply_down(bins["staged:heads"], [staged[2]["input"]]),
         }
         if name == "current":
             value["breaking"] = batch_apply_down(bins["component:OEBreaking"], break_inputs)
-            value["high"] = batch_apply_down(bins["component:OEHighLinkSyncope"], high_inputs)
+            value["high"] = batch_apply_down(bins["component:AFHighHandling"], high_inputs)
             value["umlaut"] = batch_apply_down(bins["component:OEIUmlaut"], umlaut_inputs)
             value["atomic_iu"] = batch_apply_down(
                 bins["component:EnglishProtoInput"], ["síu-wàrdaz"])
             stressed = ["*l*á*n*d*x*ù*m*i", "*l*á*n*d*w*ì*n*a"]
             for member in ("OEStripSecondaryStress", "OEBreaking", "OEIUmlaut",
-                           "OEHighLinkSyncope"):
+                           "OEMedialSyncope", "OEHighLinkSyncope", "OEHighStressDecode"):
                 stressed = [outputs[0] for outputs in batch_apply_down(
                     bins["component:" + member], stressed)]
             value["stressed"] = stressed
@@ -92,5 +119,16 @@ with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
             outputs = batch_apply_down(bins["final"], [row["fst_input"] for row in rows])
             value["selected"] = [{**row, "outputs": output}
                                  for row, output in zip(rows, outputs)]
+            value["weak"] = batch_apply_down(
+                bins["component:OEHighLinkSyncope"],
+                ["*y*n", "*g*æ*d*y*l*i*n*g", "*l*a*n*d*x*ỳ*m*i"])
+            value["light"] = batch_apply_down(
+                bins["component:OELAdjacentSyncope"],
+                ["*n*e*t*i*l*ǭ", "*g*æ*d*i*l*i*n*g", "*k*e*t*i*l",
+                 "*a*θ*i*l*a", "*a*f*i*l*a"])
+            value["labial"] = batch_apply_down(
+                bins["component:PGmcBAllophony"],
+                ["*b*a", "*a*b*a", "*l*a*m*b", "*x*a*b*b*a",
+                 "*r*e*g*n*b*o*g*ô", "*r*e*g*n*β*o*g*ô"])
         report[name] = value
 print(json.dumps(report, ensure_ascii=False))

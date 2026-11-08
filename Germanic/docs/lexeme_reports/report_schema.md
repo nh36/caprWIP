@@ -22,6 +22,24 @@ final prose.
   model prose, or a short identity-checked research memo where no extended
   model exists. This does not alter pilot/full/format-test manifest status.
 
+## Canonical lexical evidence and regression policy
+
+An accepted, independently defensible Proto-Germanic word relied upon as an
+enduring whole-word regression witness belongs in the canonical lexical
+dataset, with one supported grammatical cell, its Old English comparator,
+a mature lexical article, source ledger and ordinary indexed derivation.
+Tests should consume that canonical selection rather than maintain a
+second version of the word. Comparative and morphological defensibility,
+with documented uncertainty, does not require unattainable absolute certainty.
+
+Explicitly constructed counterfactuals, independently supported
+intermediate-stage forms, component environments and unaccepted hypotheses
+remain legitimate separate tests, labelled by their actual evidential
+status. A successful experiment does not itself adopt a reconstruction.
+Existing useful controls are retained until canonical replacements exist.
+The present seleweard, gaduling and utumist controls are conditional or
+stage-level evidence, not additional accepted lexical entries.
+
 ## Selective-report policy
 
 The generated derivation report should include `### Lexeme report` **only** for

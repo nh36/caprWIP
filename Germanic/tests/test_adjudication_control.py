@@ -454,5 +454,40 @@ class RuntimeLockTests(unittest.TestCase):
         self.assertIsNone(ac.runtime_lock_holder())
 
 
+class GraphOwnershipTests(unittest.TestCase):
+    def test_index_overrides_are_source_inputs_not_generated_outputs(self):
+        import artifact_graph
+        path = artifact_graph.BOOK_DIR / "index_verborum_overrides.tsv"
+        outputs = {p.resolve() for node in artifact_graph.nodes(mode="portable")
+                   for p in node.outputs()}
+        self.assertNotIn(path.resolve(), outputs)
+        self.assertIn((artifact_graph.BOOK_DIR / "index_verborum_forms.tsv").resolve(), outputs)
+        self.assertEqual(artifact_graph.propagation_path_kind(
+            path, generated=outputs), "SOURCE")
+
+    def test_lexeme_output_ownership_does_not_require_refreshed_citation_reports(self):
+        import artifact_graph
+        import oe_derivation_report_with_lexeme_reports
+        publication = next(node for node in artifact_graph.nodes(mode="portable")
+                           if node.name == "lexeme_publication")
+        with mock.patch.object(oe_derivation_report_with_lexeme_reports, "render",
+                               side_effect=ValueError("stale lexical reports")):
+            self.assertEqual(len(publication.outputs()), 5)
+            with self.assertRaisesRegex(ValueError, "stale lexical reports"):
+                publication.build()
+
+    def test_reader_output_ownership_does_not_require_a_fresh_manifest(self):
+        import artifact_graph
+        import build_reader_book
+        reader = next(node for node in artifact_graph.nodes(mode="portable")
+                      if node.name == "reader_book")
+        with mock.patch.object(build_reader_book, "load_manifest",
+                               side_effect=ValueError("Reader manifest is stale")):
+            self.assertEqual(set(reader.outputs()), {
+                build_reader_book.OUT_MD, build_reader_book.OUT_COVERAGE})
+            with self.assertRaisesRegex(ValueError, "manifest is stale"):
+                reader.build()
+
+
 if __name__ == "__main__":
     unittest.main()

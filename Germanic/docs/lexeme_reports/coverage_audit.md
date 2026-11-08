@@ -2,17 +2,17 @@
 
 - Total OE rows with real counterpart: 391
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 168
+- Rows requiring lexeme report: 169
 - Required rows with published SOURCE: 28
-- Required rows with no published SOURCE: 140
+- Required rows with no published SOURCE: 141
 - Rows selected independently for philological discussion: 18
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 153
+- Required rows with source material available but no manifest-backed production report: 154
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
-- Regular rows with empty NOTE but supporting material present: 226
+- Regular rows with empty NOTE but supporting material present: 225
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 85
+- Regular rows with NOTE (report required): 86
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
 
 ## Counts by DERIVATION_CLASS
@@ -24,7 +24,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 28 | 28 | 4 | 24 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 312 | 89 | 0 | 85 | 4 |
+| regular | 312 | 90 | 0 | 86 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -47,7 +47,7 @@
 | 2326 | you | ēow | regular | yes | certified_editorial_source | - | model_entries/2326-you-ēow.model.md | NOTE, philological=you-oblique-origin |
 | 2330 | thought | þōhte | regular | yes | certified_editorial_source | - | model_entries/2330-thought-þōhte.model.md | NOTE, philological=thought-connectorless-origin |
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
-| 2335 | filth | fȳlþ | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
+| 2335 | filth | fȳlþe | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 | 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
 
 ## Required rows with manifest-backed production reports
@@ -164,6 +164,7 @@
 | 2202 | span | spannan | regular | yes | source_material | - | archive/dev_notes_slices/2202-span-spannan.md, archive/packets/2202-span-spannan.md, model_entries/2202-span-spannan.model.md, model_entries/2202-span-spannan.source_ledger.md, research_memos/2202-span-spannan.md | NOTE |
 | 2204 | spar | spearra | regular | yes | source_material | - | archive/dev_notes_slices/2204-spar-spearra.md, archive/packets/2204-spar-spearra.md, model_entries/2204-spar-spearra.model.md, model_entries/2204-spar-spearra.source_ledger.md, research_memos/2204-spar-spearra.md | NOTE |
 | 2205 | spare | sparian | early_analogy | yes | source_material | - | archive/dev_notes_slices/2205-spare-sparian.md, archive/packets/2205-spare-sparian.md, model_entries/2205-spare-sparian.model.md, model_entries/2205-spare-sparian.source_ledger.md, research_memos/2205-spare-sparian.md | NOTE, DERIVATION_CLASS=early_analogy |
+| 2208 | spindle | spinle | regular | yes | source_material | - | archive/dev_notes_slices/2208-spindle-spinl.md | NOTE |
 | 2212 | staff | stæf | early_analogy | yes | source_material | - | archive/dev_notes_slices/2212-staff-stæf.md, archive/packets/2212-staff-stæf.md, model_entries/2212-staff-stæf.model.md, model_entries/2212-staff-stæf.source_ledger.md, research_memos/2212-staff-stæf.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2216 | stem | stefn | early_analogy | yes | source_material | - | archive/dev_notes_slices/2216-stem-stefn.md, archive/packets/2216-stem-stefn.md, model_entries/2216-stem-stefn.model.md, model_entries/2216-stem-stefn.source_ledger.md, research_memos/2216-stem-stefn.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2217 | still | stillan | regular | yes | source_material | - | archive/dev_notes_slices/2217-still-stillan.md, archive/packets/2217-still-stillan.md, model_entries/2217-still-stillan.model.md, model_entries/2217-still-stillan.source_ledger.md, research_memos/2217-still-stillan.md | NOTE |
@@ -221,7 +222,7 @@
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
 | 2333 | there | þǣr | regular | yes | source_material | - | model_entries/2333-there-þǣr.model.md, model_entries/2333-there-þǣr.source_ledger.md | NOTE |
 | 2334 | where | hwǣr | regular | yes | source_material | - | model_entries/2334-where-hwǣr.model.md, model_entries/2334-where-hwǣr.source_ledger.md | NOTE |
-| 2335 | filth | fȳlþ | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
+| 2335 | filth | fȳlþe | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 | 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
 
 ## Required rows with no source material found
@@ -411,7 +412,6 @@
 | 2200 | sorrow | sorg | regular | no | source_material | - | archive/dev_notes_slices/2200-sorrow-sorg.md, model_entries/2200-sorrow-sorg.model.md | none |
 | 2206 | spear | speoru | regular | no | source_material | - | archive/dev_notes_slices/2206-spear-speoru.md, archive/packets/2102-light-līehtan.md | none |
 | 2207 | spin | spinnan | regular | no | source_material | - | archive/dev_notes_slices/2207-spin-spinnan.md | none |
-| 2208 | spindle | spinl | regular | no | source_material | - | archive/dev_notes_slices/2208-spindle-spinl.md | none |
 | 2209 | spoon | spōn | regular | no | source_material | - | archive/dev_notes_slices/2209-spoon-spōn.md | none |
 | 2210 | spread | sprǣdan | regular | no | source_material | - | archive/dev_notes_slices/2210-spread-sprǣdan.md | none |
 | 2211 | spur | spora | regular | no | source_material | - | archive/dev_notes_slices/2211-spur-spora.md | none |

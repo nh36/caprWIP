@@ -99,11 +99,32 @@ vowel, following Ringe's explicitly PGmc reconstruction
 [@Ringe2017, p. 135, pp. 151–153]. Its lexical section discusses the
 published e-alternatives and the confidence in this choice.
 
-Late Old English syllabic reduction and apocope:
-High-vowel apocope (SC063), medial syncope (SC065), and the cluster of
-late unstressed-vowel changes (SC069–SC078) represent the later stage of Old
-English phonological history, when the syllabic structure of the language
-began to shift toward the more reduced profile of Middle English.
+Syncope, apocope and weak-vowel quality:
+Mutation precedes the ordinary high-vowel losses: a subsequently lost
+\emph{*i} has already fronted the root, as in *fȳlþe* 'filth'.
+The conventional working sequence is ordinary nonhigh syncope (SC114),
+high-vowel apocope (SC063), then heavy/open high-vowel syncope (SC065).
+These are prehistoric Old English changes, not simply late literary
+reductions toward Middle English. The former dental and heavy pre-\emph{*l}
+fragments implement the same high-vowel event and are no longer separate
+active deletions. Later light-syllable pre-\emph{*l} loss (SC066) retains
+its own consonant and openness conditions
+[@HoggGrammar2011, pp. 220--227, §§6.14--6.25;
+@SieversBrunner1965, pp. 132--133, §159; @Luick1914, pp. 310--311, §336].
+
+The trisyllabic ordering remains disputed: Fulk's conservative Mercian
+evidence, Ringe and Taylor's syncope-before-apocope account, and Hogg's
+tentative phonological alternative are discussed with SC063.
+Early weak front-vowel unrounding and later lowering are distinct
+quality processes (SC074), linked to transmitted mutation under SC055,
+not additional syncopes. The early unrounding support component is printed
+at SC115; its separately positioned stress decoder is technical.
+Ordinary nonhigh loss now also removes compound \emph{*a}; the former
+early proxy (SC037) is an identity trace anchor. Positional realization
+of inherited \emph{*b} is computed afterward (SC049) without postnasal
+hardening of existing fricatives or a newly dated lenition law
+[@HoggGrammar2011, pp. 29--30, §§2.53--2.54, p. 219, §6.10;
+@Campbell1959, pp. 179--181, §§444--448].
 
 Across this chapter the densest independent parallel is Barrack's West
 Saxon cascade, whose focus — West Saxon to the beginning of the eleventh

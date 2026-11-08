@@ -5,6 +5,7 @@ import json
 import shlex
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 import pytest
@@ -15,6 +16,7 @@ import oe_pipeline
 from capr_runtime import check_build_manifest, layout, run_in_runner
 from executable_facts import parse_defines
 from test_sc037_adjudication import (
+    CONSOLIDATION_ADDED, CONSOLIDATION_CHANGED,
     INTERVENTION_ADDED, INTERVENTION_CHANGED, assert_intervention_scope,
 )
 
@@ -57,7 +59,7 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
     cell_parser = {"PGCell" + suffix for suffix in (
         "Root", "Stem", "End", "Plain", "Prefixed", "Raw", "Canonical", "Strip", "Input")}
     assert current.keys() - old.keys() == {
-        "pgrmInputTailVowel", "EnglishProtoNative", "OENonHighSyn"} | medial | cell_parser | INTERVENTION_ADDED
+        "pgrmInputTailVowel", "EnglishProtoNative", "OENonHighSyn"} | medial | cell_parser | INTERVENTION_ADDED | CONSOLIDATION_ADDED
     assert old.keys() - current.keys() == {"OESoulProxy"}
     assert {name for name in old.keys() & current.keys()
             if old[name].definition_raw != current[name].definition_raw} == {
@@ -78,7 +80,7 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "OEVelarPalatalizationStops",
                 # Independently source-bound by test_sc037_adjudication.py.
                 "OECompoundLinkingSyncope",
-            } | INTERVENTION_CHANGED
+            } | INTERVENTION_CHANGED | (CONSOLIDATION_CHANGED & old.keys())
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         expected = old[name].definition_raw
         if name == "pgrmSimpleWord":
@@ -99,9 +101,16 @@ def test_gate_receipt_conserves_every_preexisting_record_and_order():
     assert before["source_sha256"] == extended["source_sha256"]
     assert before["existing_population"] == extended["existing_population"]
     assert before["order"] == extended["order"]
+    historical = subprocess.check_output([
+        "git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt",
+    ], cwd=ROOT, text=True)
+    with tempfile.TemporaryDirectory() as directory:
+        source = Path(directory) / "historical.txt"
+        source.write_text(historical)
+        historical_stages = oe_pipeline.parse_stages(source)
     assert before["order"] == [
         stage.foma_identifier if stage.kind == "named" else stage.inline_text
-        for stage in oe_pipeline.stages()
+        for stage in historical_stages
         if stage.foma_identifier not in {"OENonHighSyn", "OEHighLinkSyncope"}
     ]
     assert extended["production_equivalent"]
@@ -161,7 +170,8 @@ def test_production_gate_is_generic_and_preserves_every_old_output():
     current = lookup("old_english.bin", old_inputs + forms[:2] + ["xwí-līkaz"])
     counterfactuals = {
         "fúnðanǭ": ["fundne"], "xámaras": ["hamres"],
-        "sáiwalō": ["sāwel"], "wéstanē": ["westne"],
+        "sáiwalō": ["sāwl"], "wéstanē": ["westne"],
+        "spénnilō": ["spinlu"],
     }
     assert {row["fst_input"] for row in records
             if current[row["fst_input"]] != row["outputs"].split("|")} == set(counterfactuals)

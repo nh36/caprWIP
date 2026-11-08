@@ -70,9 +70,9 @@ def test_authorised_writer_transition_preserves_every_original_record_and_archiv
                 ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:"
                  + str((BASELINE / name).relative_to(ROOT))], cwd=ROOT)
             assert data.startswith(previous_ledger)
-            assert [row["row_id"] for row in rows(BASELINE / name)][-4:] == [
-                "2011", "2201", "2282", "2053"]
-            assert len(data.splitlines()) == len(previous_ledger.splitlines()) + 4
+            assert [row["row_id"] for row in rows(BASELINE / name)][-6:] == [
+                "2011", "2201", "2282", "2053", "2335", "2208"]
+            assert len(data.splitlines()) == len(previous_ledger.splitlines()) + 6
             data = previous_ledger
         assert hashlib.sha256(data).hexdigest() == sha, name
     assert {key for key, record in current.items() if record["match"] == "0"} == {

@@ -313,7 +313,9 @@ def _lexical_build() -> list:
 
 def _index_outputs() -> list:
     return sorted(p for p in BOOK_DIR.rglob("*")
-                  if p.is_file() and p.name != "index_semantic_fingerprint_allowlist.tsv") + [INDEX_HEADER]
+                  if p.is_file() and p.name not in {
+                      "index_semantic_fingerprint_allowlist.tsv",
+                      "index_verborum_overrides.tsv"}) + [INDEX_HEADER]
 
 
 def _run_index_builder() -> None:
@@ -586,7 +588,9 @@ def nodes(*, mode: str = "full") -> tuple:
         _projection("reader_book",
                     "reader SOURCE files + reader_manifest.tsv via "
                     "build_reader_book",
-                    build_reader_book.render),
+                    build_reader_book.render,
+                    outputs=lambda: [build_reader_book.OUT_MD,
+                                     build_reader_book.OUT_COVERAGE]),
         _survey_node(mode),
         _runtime("lexical_sources",
                  "corpus + model entries + fresh bins via lexical builders",
@@ -599,7 +603,13 @@ def nodes(*, mode: str = "full") -> tuple:
         _projection("lexeme_publication",
                     "existing report manifest + certified scoped editorial SOURCE "
                     "inserted into all runnable compact derivations",
-                    _render_lexeme_publication),
+                    _render_lexeme_publication,
+                    outputs=lambda: [
+                        REPO_ROOT / "Germanic/docs/lexeme_reports/coverage_audit.md",
+                        *[FULL_TRACE.with_name(
+                            "oe_derivation_class_trace_report.with_lexeme_reports" + suffix)
+                          for suffix in (".md", ".audit.md", ".publish.md",
+                                         ".publish.missing_reports.md")]]),
         _projection("book_draft",
                     "assembly sources via build_capr_book_draft",
                     _render_book_draft),

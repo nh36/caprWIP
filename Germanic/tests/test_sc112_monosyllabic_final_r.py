@@ -148,6 +148,7 @@ class Sc112Tests(unittest.TestCase):
                     "2011": ("*fúnðanai", "fundne"),
                     "2053": ("*xámaraz", "hamer"),
                     "2201": ("*sáiwalǭ", "sāwle"),
+                    "2208": ("*spénnilǭ", "spinle"),
                     "2282": ("*wéstą", "west"),
                 }
                 if row_id in selected_cells:
@@ -195,7 +196,8 @@ class Sc112Tests(unittest.TestCase):
             [(row_id, self.previous[row_id]["outputs"], self.current[row_id]["outputs"])
              for row_id in self.previous
              if self.previous[row_id]["outputs"] != self.current[row_id]["outputs"]],
-            [("2011", "fundene", "fundne"), ("2201", "sāwol", "sāwle"),
+            [("2011", "fundene", "fundne"), ("2208", "spinl", "spinle"),
+             ("2201", "sāwol", "sāwle"),
              ("2282", "westene", "west"), ("2053", "hameres", "hamer")],
         )
         self.assertEqual(len(rows(LEGACY)), 380)

@@ -6,31 +6,32 @@ Vowel loss creates the clusters upon which later assimilation and degemination
 operate. Hogg and Ringe and Taylor describe this dependence, while Brunner's
 *netle* 'nettle' beside later *netele* 'nettle' supplies a concrete lexical type
 [@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 264--296, §§6.7.3--6.8.2;
-@SieversBrunner1965, pp. 144--145, §§158--159]. Fulk places this syncope after
+@SieversBrunner1965, pp. 131--133, §§158--159]. Fulk places this syncope after
 i-umlaut [@Fulk2018, p. 91, §5.6].
 
 The three relations are not equally secure. Lexical evidence orders syncope
 and degemination; the intervening dental assimilation has no independent
 ordering witness.
 
-## SC066. L-adjacent syncope in medial syllables (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope}
+## SC066. Later light-syllable pre-\emph{*l} syncope (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope}
 
 ```foma
 define OELAdjacentSyncope Ctx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant OEAnyConsonant+ _ {*l},
-    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong] OEAnyConsonant _ {*l} EnglishStarVocalic
+    {*i} -> 0 ||
+        [EnglishStarShortVowel|EnglishStarShortDiphthong]
+        [OEAnyConsonant - [{*d}|{*θ}|{*f}]] _ {*l} EnglishStarVocalic
 ]);
 ```
 
 The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
-earlier umlaut, as *netle* ‘nettle’ and *spinl* ‘spindle’ demonstrate.
+earlier umlaut, as *netle* ‘nettle’ demonstrates.
 
-Two historically distinct strata are stated here as one law. After a heavy
-syllable the deletion continues the exceptionless prehistoric syncope of
+The former statement combined two historically distinct strata. Its heavy
+part continues the prehistoric syncope of
 unstressed high vowels in open medial syllables, the same law whose pre-dental
-slice has already been treated: [spénnilō]{.recon} ‘spindle’ and the genitive
+slice was formerly treated separately. That entire event now belongs to
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope):
+[spénnilō]{.recon} ‘spindle’ and the genitive
 of [θístilas]{.recon} ‘thistle’ lose their \emph{*i} after the heavy sequences
 \emph{-nn-} and \emph{-st-} [@RingeTaylor2014, pp. 270--272, §6.7.3;
 @Campbell1959, p. 158, §392]. After a light syllable, however, the handbooks
@@ -54,9 +55,16 @@ word-final closed syllable — light and closed — a position that no published
 formulation of the change reaches. The same structural point explains the
 nominative--oblique split that Campbell records for the *netel*/*spinel*
 class, where the nominative retains its vowel while the syllabically open
-oblique cases syncopate [@Campbell1959, pp. 235--236, §589]. Within its properly
-stated domain — after a heavy syllable, or after a light syllable in an open
-medial syllable — the deletion is regular.
+oblique cases syncopate [@Campbell1959, pp. 235--236, §589].
+The current component contains only the later light-syllable loss.
+Brunner's original passage excludes the environments between
+\emph{d} and \emph{l}, and between inherited Germanic \emph{þ/f} and
+\emph{l}; the \emph{f} descended from earlier \emph{bh} is explicitly
+distinguished [@SieversBrunner1965, p. 132, §159c, §192.2].
+CAPR excludes the corresponding still-distinct \emph{*d/θ/f}
+segments, not words or grammatical classes. Source-supported
+\emph{*gaduling > gædeling} remains a retention control even when
+mutation-produced weak \emph{*y} has already unrounded to \emph{*i}.
 
 The sources disagree about the residue of variation. Weyhe, Luick, and
 Brunner treat the law as categorical within its consonant-class and dialect
@@ -88,8 +96,9 @@ to \emph{l} is in general kept far longer than \emph{*i} [@Luick1914, §336.2;
 Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred} rather than
 expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred} rather
 than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
-[spénnilō]{.recon} yields [*spinnl*]{.pred} rather than expected *spinl*. The witnesses
-therefore establish the sequence i-umlaut, l-adjacent syncope, preconsonantal
-degemination. The first relation separates two historical phases; the second is
-a direct feeding relation, since syncope creates the cluster that degemination
-simplifies.
+[spénnilō]{.recon} yields [*spinnl*]{.pred} rather than expected *spinl*. Those earlier experiments remain evidence for the former combined
+statement. The spindle feeding relation now belongs to general
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope), not to this light-only
+component. The nettle mutation relation remains with
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope); no independent
+chronology is invented for the intervening dental assimilation.

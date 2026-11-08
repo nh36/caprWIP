@@ -1,5 +1,14 @@
 # SC065 OE Medial Syncope — chronology evidence card
 
+## Consolidated current interpretation
+
+See the consolidated `audits/sc065-adjudication.md`; its earlier version is
+preserved as `audits/sc065-adjudication-before-syncope-consolidation.md`.
+SC065 now owns general heavy/open i/u/y loss, not a dental-only proxy.
+Mutation precedes the selected filth/spindle loss; spindle supplies live
+feeding of SC068 degemination. The old positions and narrow-rule measurements
+below remain historical evidence, not current boundaries.
+
 ## Position at experiment time
 - order_at_experiment_time: `65`
 - rule_name: `OEMedialSyncope`
