@@ -2,6 +2,30 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## Goering2016 and Russom2001 acquisition, 8 November 2026
+
+The [acquisition record](prosody_2026-11-08/README.md), `holdings.tsv` and
+all-sheet `page_map.tsv` register the complete articles and exact hashes.
+
+- `Goering2016`: new private original
+  `goering_2016_early_old_english_foot_structure.pdf`, printed171--197
+  on PDF sheets1--27. This is not the distinct `Goering2023` chapter.
+  Complete search aid: `local/prosody-2026-11-08/Goering2016.txt`.
+  Native accent encoding is defective; a separate complete local OCR aid
+  is retained. Quantity, phonetic notation and metrical/table layout must
+  be checked against the readable original.
+- `Russom2001`: already-held `russom_2001_subordinate_stress.pdf`,
+  byte-identical to the newly supplied download; not overwritten or duplicated.
+  Printed39--64 are PDF sheets1--26. Complete native-based search aid:
+  `local/prosody-2026-11-08/Russom2001.txt`; copyright and author-repeat glyph
+  substitutions are documented, with untouched native text also retained.
+
+Both articles' complete page images, notes, examples and references were
+checked for access and coverage. No pages were missing or unreadable;
+the extracts remain navigation aids, not diplomatic transcriptions.
+Original PDFs and complete texts are private and ignored. Acquisition does
+not adopt a historical analysis or alter the FST, lexical data or book.
+
 ## Hock1973 acquisition, 6 November 2026
 
 The supplied `Hock status of e and i.pdf` is now preserved privately as
