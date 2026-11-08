@@ -419,6 +419,7 @@ def approved_baseline_transition(directory: Path, approvals: list[str]) -> bool:
             try:
                 approval = json.loads((REPO_ROOT / ref).read_text())
                 validator = (baseline.validate_context_transition if "input_changes" in approval
+                             else baseline.validate_expansion_transition if "additions" in approval
                              else baseline.validate_cell_transition)
                 validator(previous, candidate, approval)
                 legacy = list(csv.DictReader(

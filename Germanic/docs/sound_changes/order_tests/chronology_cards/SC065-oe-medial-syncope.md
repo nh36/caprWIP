@@ -4,7 +4,8 @@
 
 See the consolidated `audits/sc065-adjudication.md`; its earlier version is
 preserved as `audits/sc065-adjudication-before-syncope-consolidation.md`.
-SC065 now owns general heavy/open i/u/y loss, not a dental-only proxy.
+SC063 now owns the single quantitative i/u/y deletion; SC065 is an
+identity anchor, not a dental-only proxy or second heavy/open loss.
 Mutation precedes the selected filth/spindle loss; spindle supplies live
 feeding of SC068 degemination. The old positions and narrow-rule measurements
 below remain historical evidence, not current boundaries.

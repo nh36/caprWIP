@@ -3149,10 +3149,10 @@ define OEIUmlautDiphthong [
     {*ío} -> {*íe} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
 ];
 
-# Loss of *w before unstressed *i (R/T vol.2 §6.7.1, p.258-259; Campbell §406).
-# Non-word-initial *w was regularly lost before fully unstressed *i.
-# Example: PGmc *saiwiz 'sea' > *sāwi > *sǣi > OE sǣ
-# Must apply BEFORE i-umlaut (so *ā can umlaut to *ǣ) but AFTER ai monophthongization.
+# Loss of *w before unstressed *i/ī (R/T vol.2 pp.258-260; Campbell §406).
+# Non-word-initial *w was regularly lost before fully unstressed *i or *ī.
+# Example: PGmc *saiwiz 'sea' > *sāwi > *sǣwi > *sǣi > OE sǣ
+# Applies AFTER i-umlaut: *pulwīn > *pylwī > *pylī > pyle (R/T p.260).
 define OEWLossBeforeI Ctx([
     {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ [{*i}|{*ī}]
 ]);
@@ -3827,7 +3827,8 @@ define PGCellStem [
 ];
 define PGCellEnd [
     ō:{*ō}|ǭ:{*ǭ}|ō:{*ō} z:{*z}|ô:{*ô} z:{*z}|
-    ô:{*ô} i:{*i}|a:{*a} s:{*s}|a:{*a}|ą:{*ą}|{ai}:{*ai}|i:{*i}|0
+    ô:{*ô} i:{*i}|a:{*a} s:{*s}|a:{*a} n:{*n} z:{*z}|
+    a:{*a}|ą:{*ą}|{ai}:{*ai}|i:{*i}|0
 ];
 define PGCellRoot [
     pgrmOnset [pgrmLongVowel | pgrmDiphthong] pgrmCoda |

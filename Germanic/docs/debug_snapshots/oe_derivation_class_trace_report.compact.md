@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (311) ===
+=== DERIVATION_CLASS: regular (312) ===
 
 
 
@@ -3483,6 +3483,31 @@ Outcome: līste
 
 
 
+# little
+PROTO: *lūtilō
+EXPECTED: lȳtelu
+OUTPUTS: lȳtelu
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *lūtilō
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *lūtilu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *lȳtilu<br>OE Med Unstressed I Lowering1: *lȳtelu |
+
+
+
+### Orthography & surface
+
+Outcome: lȳtelu
+
+NOTE: Selected strong neuter nominative-accusative plural, West Mercian Vespasian Psalter103:25: netenu lytelu 7 micel, glossing animalia pusilla et magna (Sweet1885 p336). Normalized long ȳ is independently supported by Fulk2010 pp133-134 and Goering2016 pp176-177. Orel2003 p248 prints *lūtilaz beside *lītilaz and *luttilaz; Fulk2018 p209 §9.2 supplies the inherited strong neuter plural *-ō. The whole selected cell is CAPR comparative assembly, not an authored quotation or transponent.
+
+
+
 # liver
 PROTO: *líbrō
 EXPECTED: lifer
@@ -5396,7 +5421,7 @@ English Proto Input: *spénnilǭ
 
 Outcome: spinle
 
-NOTE: Selected strong feminine accusative singular spinle, inferred in the tool enumeration under habban (Toller Supplement p288, Angl.ix263,11). Clark Hall p272 gives strong feminine spinel, gs. spinle; Orel p364 supplies *spennilō(n). PROTO keeps the nominative citation. The former endingless nominative and Ringe-Taylor's syncope-before-apocope history remain comparisons, not the current selected cell.
+NOTE: Selected strong feminine accusative singular spinle, inferred in the tool enumeration under habban (Toller Supplement p621, s.v. lorh, Angl.ix263,11). Clark Hall p272 gives strong feminine spinel, gs. spinle; Orel p364 supplies *spennilō(n). PROTO keeps the nominative citation. The former endingless nominative and Ringe-Taylor's syncope-before-apocope history remain comparisons, not the current selected cell.
 
 
 

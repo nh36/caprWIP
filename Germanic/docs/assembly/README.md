@@ -81,12 +81,12 @@ references, the approved sequence and downstream propagation.
 
 ## Distinct supported presentations
 
-The default class-manifest book consumes the 172 mature models, including
-93 regular entries, preserving their complete arguments and all seven derivation
-classes. The complete 391-row compact derivation report has a separate selective
-commentary insertion route, currently 23 certified narratives with explicit
-outstanding obligations. The current audit covers 397 identities including
-six research-only rows; the original reconstruction survey's 393-row scope
+The default class-manifest book consumes the selected mature models,
+preserving their complete arguments and all seven derivation classes.
+The complete canonical compact derivation report has a separate selective
+commentary insertion route, with certified narratives and explicit
+outstanding obligations. The current audit also includes the six
+research-only rows; the original reconstruction survey's393-row scope
 remains historical.
 See the [generated population summary](../lexeme_reports/pgmc_integration/population_summary.md)
 for current counts; these are different populations, not competing corpus owners.

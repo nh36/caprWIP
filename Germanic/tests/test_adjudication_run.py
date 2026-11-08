@@ -336,6 +336,44 @@ class ControlledCellPropagationTests(RunHarness):
         with self.assertRaisesRegex(ValueError, "preserve every earlier approval"):
             ar._cell_transition_files(self.transition, self.directory)
 
+    def test_lexical_expansion_requires_its_explicit_adopter_receipt(self):
+        previous = self.baseline.read_baseline(
+            self.directory / "cascade_baseline_outputs.tsv",
+            self.directory / "cascade_baseline_summary.json")
+        addition = dict(previous["records"][0], row_id="2", concept="admitted-fixture",
+                        proto="*b", proto_norm="b", fst_input="b", counterpart="y", outputs="y")
+        candidate = copy.deepcopy(previous)
+        candidate["records"].append(addition)
+        candidate["summary"].update(
+            total_lexemes=2, accepted=2, matched=2,
+            outputs_sha256=self.baseline.projection_sha256(candidate["records"], "fst_input"),
+            lexical_outputs_sha256=self.baseline.projection_sha256(candidate["records"], "proto_norm"))
+        approval = dict(self.transition["approval"], transition_id="fixture_expansion",
+                        additions=[addition])
+        approval.pop("changes")
+        transition = dict(approval_filename="approved_fixture_expansion.json",
+                          approval=approval, candidate=candidate)
+        decision = self.decision()
+        decision.pop("cell_transition")
+        decision["expansion_transition"] = transition
+        run = self.start()
+        self.advance_to(run, "DECIDE", decision=decision)
+        run.begin_propagation({})
+        planned = ar._expansion_transition_files(transition, self.directory)
+        for path, data in planned.items():
+            if path.name.startswith("approved_"):
+                path.write_bytes(data)
+        self.baseline.adopt_expansion_baseline(candidate, self.directory, approval)
+        finalizers = [self.receipt([sys.executable, str(self.entrypoint), sc, "--finalize"])
+                      for sc in [SC, "SC902"]]
+        with self.assertRaisesRegex(ar.WorkflowError, "adopt-expansion-baseline"):
+            run.complete_stage("PROPAGATE", evidence={"receipts": finalizers})
+        adopter = self.receipt([sys.executable, str(self.entrypoint), "SC902",
+                               "--adopt-expansion-baseline", "--approval",
+                               transition["approval_filename"]])
+        run.complete_stage("PROPAGATE", evidence={"receipts": [adopter, *finalizers]})
+        self.assertEqual(run.frontier(), "VALIDATE")
+
     def test_previous_approval_remains_frozen_during_an_otherwise_valid_transition(self):
         old_approval = self.directory / "approved_older_migration.json"
         old_approval.write_text("frozen receipt\n")

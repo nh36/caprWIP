@@ -160,8 +160,8 @@ class GeneratedManifestTests(unittest.TestCase):
 
     def test_sc112_witnesses_sit_at_their_alphabetical_positions(self):
         regular = [r["lexical_item"] for r in self.rows if r["class_bucket"] == "regular"]
-        # Filth, then the selected soul and west cells follow SC112 publication.
-        self.assertEqual(len(regular), 93)
+        # Little and current spindle publication join the prior regular articles.
+        self.assertEqual(len(regular), 95)
         self.assertEqual(regular, sorted(regular))
         self.assertLess(regular.index("there"), regular.index("where"))
         self.assertNotEqual((regular.index("there") + 1, regular.index("where") + 1), (87, 88))

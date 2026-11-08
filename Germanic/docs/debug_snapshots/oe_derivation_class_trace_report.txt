@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (311) ===
+=== DERIVATION_CLASS: regular (312) ===
 
 --- adder ---
 PROTO: *nḗdrōn
@@ -19473,6 +19473,141 @@ OEWsPalatalGlide [no-change]: *l*ḯ*s*t*e
 OldEnglishRemoveStars: līste
 OldEnglishSurface [no-change]: līste
 
+--- little ---
+PROTO: *lūtilō
+EXPECTED: lȳtelu
+OUTPUTS: lȳtelu
+NOTE: Selected strong neuter nominative-accusative plural, West Mercian Vespasian Psalter103:25: netenu lytelu 7 micel, glossing animalia pusilla et magna (Sweet1885 p336). Normalized long ȳ is independently supported by Fulk2010 pp133-134 and Goering2016 pp176-177. Orel2003 p248 prints *lūtilaz beside *lītilaz and *luttilaz; Fulk2018 p209 §9.2 supplies the inherited strong neuter plural *-ō. The whole selected cell is CAPR comparative assembly, not an authored quotation or transponent.
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *l*ū*t*i*l*ō
+PGmcGmSimplification [no-change]: *l*ū*t*i*l*ō
+PGmcNasalLossBeforeX [no-change]: *l*ū*t*i*l*ō
+RootNounNomZLoss [no-change]: *l*ū*t*i*l*ō
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *l*ū*t*i*l*ō
+PNWGmcAToUBeforeM [no-change]: *l*ū*t*i*l*ō
+PNWGmcLongELowering [no-change]: *l*ū*t*i*l*ō
+PWGmcEarlyIApocope [no-change]: *l*ū*t*i*l*ō
+PWGmcFinalOrLowering [no-change]: *l*ū*t*i*l*ō
+PWGmcCoronalWAssimilation [no-change]: *l*ū*t*i*l*ō
+OEWWSimplification [no-change]: *l*ū*t*i*l*ō
+PWGmcIjContraction [no-change]: *l*ū*t*i*l*ō
+PWGmcJGemination [no-change]: *l*ū*t*i*l*ō
+PWGmcSyllabicJ [no-change]: *l*ū*t*i*l*ō
+PNWGmcPreconsonantalXLoss [no-change]: *l*ū*t*i*l*ō
+EAFLThVoicing [no-change]: *l*ū*t*i*l*ō
+PWGmcDentalHardening [no-change]: *l*ū*t*i*l*ō
+PWGmcEndinglessAw [no-change]: *l*ū*t*i*l*ō
+PNWGmcILowering [no-change]: *l*ū*t*i*l*ō
+PNWGmcULowering [no-change]: *l*ū*t*i*l*ō
+PNWGmcStressedMonosyllableORaising [no-change]: *l*ū*t*i*l*ō
+PNWGmcFinalLongORaising: *l*ū*t*i*l*u
+EAFFinalZDeletion [no-change]: *l*ū*t*i*l*u
+PWGmcUnstressedWordFinalIApocope [no-change]: *l*ū*t*i*l*u
+MonosyllabicFinalZLoss [no-change]: *l*ū*t*i*l*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *l*ū*t*i*l*u
+EAFRhotacism [no-change]: *l*ū*t*i*l*u
+PNWGmcMnDissimilation [no-change]: *l*ū*t*i*l*u
+PNWGmcNStemNLoss [no-change]: *l*ū*t*i*l*u
+EAFNasalSpirantLengthening [no-change]: *l*ū*t*i*l*u
+EAFNasalSpirantLoss [no-change]: *l*ū*t*i*l*u
+EAFHiatusWInsertion [no-change]: *l*ū*t*i*l*u
+EAFLongANasalRounding [no-change]: *l*ū*t*i*l*u
+EAFNasalizedLowRounding [no-change]: *l*ū*t*i*l*u
+EAFLongAFronting [no-change]: *l*ū*t*i*l*u
+OEStressFootContext [no-change]: *l*ū*t*i*l*u
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *l*ū*t*i*l*u
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *l*ū*t*i*l*u
+OEAuBrightening [no-change]: *l*ū*t*i*l*u
+OEEwLongDiphthong [no-change]: *l*ū*t*i*l*u
+OEJWWSimplification [no-change]: *l*ū*t*i*l*u
+OEJGlideIO [no-change]: *l*ū*t*i*l*u
+OEDiphthongLeveling [no-change]: *l*ū*t*i*l*u
+OEAwLongDiphthong [no-change]: *l*ū*t*i*l*u
+OECompoundLinkingSyncope [no-change]: *l*ū*t*i*l*u
+OEStripSecondaryStress [no-change]: *l*ū*t*i*l*u
+OEInterStressRaising [no-change]: *l*ū*t*i*l*u
+OEWICombinativeUUmlaut [no-change]: *l*ū*t*i*l*u
+PWGmcFinalBareALoss [no-change]: *l*ū*t*i*l*u
+NWGmcInStemNLoss [no-change]: *l*ū*t*i*l*u
+PWGmcSurvivingBimoricOUnrounding [no-change]: *l*ū*t*i*l*u
+EAFBrighteningUnstressed [no-change]: *l*ū*t*i*l*u
+EAFBrightening [no-change]: *l*ū*t*i*l*u
+EAFBrighteningLongFinal [no-change]: *l*ū*t*i*l*u
+OEBreaking [no-change]: *l*ū*t*i*l*u
+OEVelarFricativePalatalization [no-change]: *l*ū*t*i*l*u
+OEARestoration [no-change]: *l*ū*t*i*l*u
+OEHeavySyllableNasalApocope [no-change]: *l*ū*t*i*l*u
+OESecondaryNasalization [no-change]: *l*ū*t*i*l*u
+SieversLawSyncope [no-change]: *l*ū*t*i*l*u
+OESkPalatalization [no-change]: *l*ū*t*i*l*u
+OEVelarPalatalization [no-change]: *l*ū*t*i*l*u
+OEPrefixAReduction [no-change]: *l*ū*t*i*l*u
+OEPostVelarWLoss [no-change]: *l*ū*t*i*l*u
+OEWsPalatalDiphthongization [no-change]: *l*ū*t*i*l*u
+OEIUmlaut: *l*ȳ*t*i*l*u
+OEWLossBeforeI [no-change]: *l*ȳ*t*i*l*u
+OELatePalatalDiphthong [no-change]: *l*ȳ*t*i*l*u
+OEJClusterCoalescence [no-change]: *l*ȳ*t*i*l*u
+OEBackMutation [no-change]: *l*ȳ*t*i*l*u
+OEWsPalatalUmlaut [no-change]: *l*ȳ*t*i*l*u
+OEWeakTailNasalLoss [no-change]: *l*ȳ*t*i*l*u
+OEWeightMarkers [no-change]: *l*ȳ*t*i*l*u
+OENonHighSyn [no-change]: *l*ȳ*t*i*l*u
+PGmcBAllophony [no-change]: *l*ȳ*t*i*l*u
+OEMedLongShort [no-change]: *l*ȳ*t*i*l*u
+OEHighVowelApocope [no-change]: *l*ȳ*t*i*l*u
+OEMedialSyncope [no-change]: *l*ȳ*t*i*l*u
+OEHighLinkSyncope [no-change]: *l*ȳ*t*i*l*u
+OELAdjacentSyncope [no-change]: *l*ȳ*t*i*l*u
+OEHighStressDecode [no-change]: *l*ȳ*t*i*l*u
+OEDentalAssimilation [no-change]: *l*ȳ*t*i*l*u
+OEPreconsonantalDegemination [no-change]: *l*ȳ*t*i*l*u
+OEEarlyOShortening [no-change]: *l*ȳ*t*i*l*u
+OEUnstressedFrontingEarly [no-change]: *l*ȳ*t*i*l*u
+OELateOShortening [no-change]: *l*ȳ*t*i*l*u
+OEMedUnstressedORaising [no-change]: *l*ȳ*t*i*l*u
+OEFinalUnstressedOLowering [no-change]: *l*ȳ*t*i*l*u
+OEUnstressedLongVowelShortening [no-change]: *l*ȳ*t*i*l*u
+OEUnstressedAEMerger [no-change]: *l*ȳ*t*i*l*u
+OEMedUnstressedILowering1: *l*ȳ*t*e*l*u
+OEMedUnstressedILowering [no-change]: *l*ȳ*t*e*l*u
+OEMedUnstressedULowering [no-change]: *l*ȳ*t*e*l*u
+OEPrefixIReduction [no-change]: *l*ȳ*t*e*l*u
+OEWeakTailReduction [no-change]: *l*ȳ*t*e*l*u
+OEJLossAfterHeavy [no-change]: *l*ȳ*t*e*l*u
+OEFinalGeminateSimplification [no-change]: *l*ȳ*t*e*l*u
+OEJStrengtheningAfterFrontDiphthong [no-change]: *l*ȳ*t*e*l*u
+OEIntervocalicJVocalization [no-change]: *l*ȳ*t*e*l*u
+OEUnstressedEIContraction [no-change]: *l*ȳ*t*e*l*u
+OEWeightCleanup [no-change]: *l*ȳ*t*e*l*u
+OEHLoss [no-change]: *l*ȳ*t*e*l*u
+OEContraction [no-change]: *l*ȳ*t*e*l*u
+OERMetathesis [no-change]: *l*ȳ*t*e*l*u
+OEEpentheticVowel [no-change]: *l*ȳ*t*e*l*u
+OELateUnstressedAgSuffix [no-change]: *l*ȳ*t*e*l*u
+OEPalatalFricativeMerger [no-change]: *l*ȳ*t*e*l*u
+OECjCleanup [no-change]: *l*ȳ*t*e*l*u
+OEXsMerge [no-change]: *l*ȳ*t*e*l*u
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography [no-change]: *l*ȳ*t*e*l*u
+OEWsPalatalGlide [no-change]: *l*ȳ*t*e*l*u
+OldEnglishRemoveStars: lȳtelu
+OldEnglishSurface [no-change]: lȳtelu
+
 --- liver ---
 PROTO: *líbrō
 EXPECTED: lifer
@@ -30211,7 +30346,7 @@ OldEnglishSurface [no-change]: spinnan
 PROTO: *spénnilǭ
 EXPECTED: spinle
 OUTPUTS: spinle
-NOTE: Selected strong feminine accusative singular spinle, inferred in the tool enumeration under habban (Toller Supplement p288, Angl.ix263,11). Clark Hall p272 gives strong feminine spinel, gs. spinle; Orel p364 supplies *spennilō(n). PROTO keeps the nominative citation. The former endingless nominative and Ringe-Taylor's syncope-before-apocope history remain comparisons, not the current selected cell.
+NOTE: Selected strong feminine accusative singular spinle, inferred in the tool enumeration under habban (Toller Supplement p621, s.v. lorh, Angl.ix263,11). Clark Hall p272 gives strong feminine spinel, gs. spinle; Orel p364 supplies *spennilō(n). PROTO keeps the nominative citation. The former endingless nominative and Ringe-Taylor's syncope-before-apocope history remain comparisons, not the current selected cell.
 
 
 ## Section 1: Proto-Germanic consonant inheritance

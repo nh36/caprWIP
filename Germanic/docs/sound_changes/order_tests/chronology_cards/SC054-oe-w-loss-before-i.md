@@ -6,7 +6,7 @@ The sea-only measurements below remain unchanged. Ringe-Taylor258--260
 independently places noninitial w-loss after mutation and before general
 syncope, and includes post-l w before long ī in pyle. The former
 postvocalic/final-short-i proxy and pre-umlaut placement are corrected;
-all391 selected finals remain unchanged. Source chronology is not
+all391 selected finals at certified99b1d2e9 remain unchanged. Source chronology is not
 inferred from sea's broad displacement interval. See `sc054-adjudication.md`.
 
 ## Position at experiment time

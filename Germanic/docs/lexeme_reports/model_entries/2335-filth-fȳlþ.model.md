@@ -81,7 +81,8 @@ print every regularly inflected reconstructed form.
 
 ### Development to Old English
 
-The former selected derivation was treated as regular throughout.
+The former selected derivation was treated as regular at the time;
+the following sequence records that superseded analysis, not the current law.
 [SC019, final long-*ō* raising](#rule-PNWGmcFinalLongORaising) gives
 \emph{*fūliþō} > \emph{*fūliþu}. [SC055, i-umlaut](#rule-OEIUmlaut)
 fronts the root vowel over the medial syllable, \emph{*fūliþu} >
@@ -91,11 +92,11 @@ removes the final high vowel after the heavy sequence,
 [SC065, medial syncope](#rule-OEMedialSyncope) deletes the now-medial
 \emph{*i} before the dental, \emph{*fȳliþ} > *fȳlþ*.
 
-The word is a live chronological witness. Had medial syncope preceded
-i-umlaut, the \emph{*i} that conditions the umlaut would have been
-deleted first, and the outcome would have been unattested \emph{*fūlþ}
-rather than attested *fȳlþ*; umlaut must therefore precede this
-syncope. The same mutation-before-loss relation is visible across the *-iþō* class, whose
+The selected accusative remains a live chronological witness. Had deletion
+preceded i-umlaut, the \emph{*i} that conditions the umlaut would have
+been lost first, giving unattested \emph{*fūlþe} rather than *fȳlþe*;
+umlaut must therefore precede this deletion. The same mutation-before-loss
+relation is visible across the *-iþō* class, whose
 members uniformly surface with umlauted root vowels beside syncopated
 suffixes [@Campbell1959, p. 236, §589.6; @Bammesberger1990,
 pp. 117--118, §4.5].
@@ -108,18 +109,23 @@ route, through raising, apocope and syncope, without an analogical
 step. That route is no longer adopted: its apocope erroneously removed
 the final high vowel after a heavy syllable followed by a light syllable.
 The corrected conventional history would retain final \emph{*u},
-giving *fȳlþu*, not the endingless target. Fulk additionally supplies
+giving *fȳlþu*, not the endingless target. The adopted quantitative
+account instead retains both weak vowels in HLL, giving
+\emph{*fȳleþu}; this too is a nonselected nominative comparison.
+Fulk additionally supplies
 positive paradigm evidence for analogical syncope in abstract nominatives;
 his conservative light-final analysis is a substantive competing account
 [@Fulk2010, pp. 140--142].
 
 The selected accusative avoids those disputed nominative histories.
 \emph{*fūliþǭ} undergoes mutation to \emph{*fȳliþǭ}; the retained nonhigh
-quantity-bearing ending is not a target of high-vowel apocope.
-General heavy/open syncope under
-[SC065 OEMedialSyncope](#rule-OEMedialSyncope) gives
+quantity-bearing ending is not a target of high-vowel deletion.
+The single quantitative event under
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope) gives
 \emph{*fȳlþǭ}, and the ordinary inherited ending developments yield
-*fȳlþe*. Removing medial \emph{*i} before mutation would again prevent
+*fȳlþe*. [SC065 OEMedialSyncope](#rule-OEMedialSyncope) is an identity
+anchor, not a second productive deletion. Removing medial \emph{*i}
+before mutation would again prevent
 root fronting. Thus the independently attested selected cell preserves
 the scientific ordering witness without claiming that an endingless
 nominative is regular merely because the former cascade produced it.

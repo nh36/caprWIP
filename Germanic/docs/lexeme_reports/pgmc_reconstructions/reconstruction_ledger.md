@@ -4,8 +4,8 @@ GENERATED from research SOURCE tables and the live corpus. Never hand-edit.
 
 Row-target status: **INCOMPLETE**. Row coverage is not passage or analytical completion.
 The separately generated [reading progress](reading_progress.md) tracks the three-source passages and applicability screens.
-Population: 397 OE rows; 391 runnable.
-Required source/row targets: 1397; retained actual consultations: 21; unchecked targets: 0; declared verification gaps: 0.
+Population: 398 OE rows; 392 runnable.
+Required source/row targets: 1399; retained actual consultations: 25; unchecked targets: 0; declared verification gaps: 0.
 
 Current CAPR fields below are observations, not new endorsements or approvals.
 A PGmc equality stage is the encoding convention, not independent author evidence.
@@ -11476,3 +11476,30 @@ Runnable: 1; derivation class: attested_variant.
 | earthly-2336-rt-syncope | RingeTaylor2014 pp.264-266 | (process discussion, no quoted form) | unspecified / process / general process |  Identity of quoted source notation; no accented whole adjective or selected ending assembled as an author's word. Ordinary medial syncope and ending comparison do not establish the exact Oxford private insertion or repair dat.pl *-aimiz > experimental -em. | verified_ledger |
 
 Coverage: 9 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2337"></a>
+
+## 2337: little / lȳtelu
+
+Current citation: *lūtilaz (pgmc); selected input: *lūtilō (pgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| little-orel-citation-1-2337 | Orel2003 pp.248 | *lītilaz | dictionary_context / word / s.v. *lītilaz ~ *lūtilaz ~ *luttilaz; adjective citation | *lītilaz Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Three explicitly printed adjective alternatives; long ū is independently available, not invented by CAPR. | page_image_checked |
+| little-orel-citation-2-2337 | Orel2003 pp.248 | *lūtilaz | dictionary_context / word / s.v. *lītilaz ~ *lūtilaz ~ *luttilaz; adjective citation | *lūtilaz Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Three explicitly printed adjective alternatives; long ū is independently available, not invented by CAPR. | page_image_checked |
+| little-orel-citation-3-2337 | Orel2003 pp.248 | *luttilaz | dictionary_context / word / s.v. *lītilaz ~ *lūtilaz ~ *luttilaz; adjective citation | *luttilaz Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Three explicitly printed adjective alternatives; long ū is independently available, not invented by CAPR. | page_image_checked |
+| little-orel-base-1-2337 | Orel2003 pp.248 | *luttiz | dictionary_context / word / Derivational-base cross-reference in the little entry; cell not established here | *luttiz Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Orel derives the adjective from the two cited bases; this does not explain every root quantity or reconstruct the selected plural. | page_image_checked |
+| little-orel-base-2-2337 | Orel2003 pp.248 | *luttjaz | dictionary_context / word / Derivational-base cross-reference in the little entry; cell not established here | *luttjaz Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Orel derives the adjective from the two cited bases; this does not explain every root quantity or reconstruct the selected plural. | page_image_checked |
+| little-kroonen-headword-2337 | Kroonen2013 pp.339 | *lītila- | dictionary_context / stem / s.v. *lītila-; adjective stem | *lītila- Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. The headword has long ī, not ū; suffix *-ila- is compared with big, and the radical alternation remains explicitly unexplained. | page_image_checked |
+| little-kroonen-root-1-2337 | Kroonen2013 pp.339 | *līt- | dictionary_context / root / Explicit radical-alternation discussion in the little entry | *līt- Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Kroonen explicitly leaves this radical distribution unexplained; it is not a different whole-word headword. | page_image_checked |
+| little-kroonen-root-2-2337 | Kroonen2013 pp.339 | *lūt- | dictionary_context / root / Explicit radical-alternation discussion in the little entry | *lūt- Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Kroonen explicitly leaves this radical distribution unexplained; it is not a different whole-word headword. | page_image_checked |
+| little-kroonen-root-3-2337 | Kroonen2013 pp.339 | *lutt- | dictionary_context / root / Explicit radical-alternation discussion in the little entry | *lutt- Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Kroonen explicitly leaves this radical distribution unexplained; it is not a different whole-word headword. | page_image_checked |
+| little-kroonen-family-1-2337 | Kroonen2013 pp.339 | *lūtja- | dictionary_context / stem / Related suffixless few adjective, distinct from the -ila- formation | *lūtja- Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Source compares OE lȳt, OS lūt and MHG lūz; this sibling formation is not the selected little plural. | page_image_checked |
+| little-kroonen-family-2-2337 | Kroonen2013 pp.339 | *lutja- | dictionary_context / stem / Related suffixless few adjective, distinct from the -ila- formation | *lutja- Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Source compares OE lȳt, OS lūt and MHG lūz; this sibling formation is not the selected little plural. | page_image_checked |
+| little-fulk-strong-plural-2337 | Fulk2018 pp.209 | (process discussion, no quoted form) | pgmc / process / §9.2, reconstructed strong-adjective paradigm: neuter nom./acc.pl *-ō; masc.acc.pl *-anz |  Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. The ordinary inherited strong neuter plural ending licenses CAPR's assembly *lūtilō; no whole word is attributed to Fulk. | page_image_checked |
+| little-sweet-psalter-2337 | Sweet1885 pp.336 | lytelu | oe / attestation / Vespasian Psalter103:25: netenu lytelu 7 micel; animalia pusilla et magna | lytelu Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Neuter plural agreement is fixed by the noun and Latin gloss. Diplomatic spelling does not mark quantity. | page_image_checked |
+| little-fulk-hll-2337 | Fulk2010 pp.133-134 | (process discussion, no quoted form) | oe / process / West Mercian retained lȳtelu versus masculine acc.pl lȳtle |  Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Explicit long ȳ, conservative neuter plural retention and contrast with syncopated inflection support the comparator and its historical quantity. | page_image_checked |
+| little-goering-hll-2337 | Goering2016 pp.176-177,186-188 | (process discussion, no quoted form) | oe / process / HLL retention and quantitative deletion discussion |  Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Independent historical interpretation of the conservative HLL forms; not a newly printed whole-word PGmc reconstruction. | page_image_checked |
+
+Coverage: 6 checks; 0 unchecked; 0 verification gaps.

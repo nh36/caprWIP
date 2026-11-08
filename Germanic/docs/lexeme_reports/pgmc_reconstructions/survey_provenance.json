@@ -1,19 +1,19 @@
 {
   "alignment_statuses": {
-    "bounded_limit": 397
+    "bounded_limit": 398
   },
   "inputs": {
     "Germanic/data/entry_context_metadata.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
-    "Germanic/data/entry_stage_metadata.tsv": "8ad3b1bf5a2b25e1bf014ffc9c85f06fee95b16fc7d0594487444751626574ca",
-    "Germanic/data/germanic-aligned-final.tsv": "3d3006687758cc180ebbe447589b28f7018a419bdc433454b2ab4545a250a6ce",
+    "Germanic/data/entry_stage_metadata.tsv": "c113d0b54e70485660a1cf7961278421e903a001560b1fa68a9ff2b76bb850b8",
+    "Germanic/data/germanic-aligned-final.tsv": "b4331ed32ac158ee005e04379ca9f5bc566d3f89eabbe2b79f4020f3b53a3819",
     "Germanic/docs/lexeme_reports/model_entries/2040-gift-\u0121ift.model.md": "53960957958afadcea0f3b4b788d7e25d6ccd45723cfc5f21d2ae4f64ae101de",
     "Germanic/docs/lexeme_reports/model_entries/2332-hue-h\u012bew.source_ledger.md": "b2390923a6d59dde723786212f6f8a457deb585717af1212a364092e5958bd39",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "1033a59f27ece2b17d053fa83bc3938d32fa54180be19b828e24a231b3fb7b03",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "d365f6711da68ce538bf7d5dc1458f9603073cf37d64071e8a963924206c9161",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/commentary.md": "4063546ab31ce95d11823fff85f2e267a13b5f57900b03df7750630f7bcd0ebd",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv": "7c91c7f3f6777cb3ed55940a2adb0cc8688137361eb2cf276fc25cabd8d0f226",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv": "14fcbf40663904ae608d258eda57b49c619cd9dc965a8ed9f3d484a9d1cc640c",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/forms.tsv": "4d71aa9b767e9c86db1acb4fc9880422b50b50891cbf85d6730bfdcde980c19e",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/rationales.tsv": "a8174669950170c611de92eca658dcee5c82de8bbda5adeb8b7a31c47c551e6d",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv": "ad4051461b6cc89247ea7e2f19169d09e5675251b337d692f12d054012d16659",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/coverage.tsv": "35c64827d6ac90c30ad671bdadef868a0cd5fdff6a3d19b5ba91183c5f6c072c",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/forms.tsv": "7f63c77c4c345745ca82a6eb14ebc462fa73e28324486bc9f7287059ee647988",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/rationales.tsv": "33cee722feb53c7b9a48bae511e367d990786fde98b20325d7317651715e1bab",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-1941-1949-amendments.tsv": "1f0a5f4a0a499654de6ffc6f262ee72bc17366320ea225e0dc4e67ee660ec4be",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-1941-1949-occurrences.tsv": "64a7f810df445749df9866114a25d33b991a4581d90b89eb3fe7f35518f6a978",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/alignment-1950-1957-amendments.tsv": "4299a7ded8f798453c1ecd7fe3d4bf8a8030b8f4358621d8b0e08ff541472a4f",
@@ -146,7 +146,7 @@
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_accountability/rt-token_boundary_review.tsv": "d79cfe81a3c2215b5f6f7dc6013651b9d4ed527daef7ed9c69d455ac54687198",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_scopes.tsv": "29e3e6d30e852d47d8b6bbd4053a6f2de37e77c61db6d640a52bf4817533b0d7",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/review_targets.tsv": "26b91e48165d53b1c5a3fd483ee901f0b14e12045f11bfdbb3334024835e06e5",
-    "Germanic/docs/lexeme_reports/pgmc_reconstructions/sources.tsv": "fceac11e530a86d6bf78ebb1a64c141c9521627750d2a48ad631b04d5489a474",
+    "Germanic/docs/lexeme_reports/pgmc_reconstructions/sources.tsv": "22549f15ea39e46693afdce112b04fdbb7a9f3249dc023d4795eb847a0a480dc",
     "Germanic/docs/sound_changes/audits/earthly-regular-cell/attestation-census.md": "3a2a3d57fd7afef05a67b1b9b526428fe1382dc226e5c4bab4c6d078b38efd3f",
     "Germanic/docs/sound_changes/audits/earthly-regular-cell/morphology.md": "8d7bd3ae99d566100b8aca75265948df6a4642f60b16f995c37cd7eb4460c016",
     "Germanic/docs/sound_changes/audits/earthly-regular-cell/source-ledger.md": "69982cf4712e1486af55a9c71005c271334e97e66c480397358eaf36f0def6b5",
@@ -193,9 +193,11 @@
     "docs/references/crist_2002_z_loss_west_germanic.txt": "7af023623d54513d2f509b1745bbc1b15c8f81229859e13151aac09368798f4c",
     "docs/references/erdmann_1972_suffixal_j_germanic.txt": "0b0f927750f467fdeb38fc5e62676c920b0a5f56bf2bbdcd17b55366d9255bc2",
     "docs/references/ewa_band1_lloyd_springer.txt": "031f02ffd267b6bfaea3c265ca776817cab73b3f670a2a9798f659386f2e227a",
+    "docs/references/fulk_2010_high_vowel_deletion.pdf": "86d5e3a6452d54002d3095c45ce092a93379e846cb581307eab098276db9ba42",
     "docs/references/fulk_comparative_grammar_early_germanic.pdf": "d54ef92bda6db690f69f7dc4631bfdec10e4b4681c7adb73f4ccc0232b73ddcf",
     "docs/references/fulk_comparative_grammar_early_germanic.vision.txt": "c80269e5b48e14d7c1f800a64082047b037e567df3e6016a5ce38ac4b799afc0",
     "docs/references/goblirsch_1991_germanic_ai_and_au_in_anglo_frisian.vision.txt": "17882b698945ed1a739979e8aaa7a5e29595fb96956143d6b665ae5647896d9d",
+    "docs/references/goering_2016_early_old_english_foot_structure.pdf": "357f123fb2c680647b3786dc185e76a3892631eb6706cbeda4f2a9afe2607b94",
     "docs/references/goering_2023_heafudu_problem.pdf": "e69164b4617639698ee544e06aed4f940265bcfa6b1dd771d9119158f083b312",
     "docs/references/hamp_1990_pie_bottom.pdf": "763eeef911c8f38287b87faf84e146e251cc8d2d6768cd2325428ba18c9f95b0",
     "docs/references/hamp_1990_pie_bottom.vision.txt": "e9e5c3dece6a91bcef009048bc53be03159f184a8214dfe96c5c9b83ed89a665",
@@ -967,6 +969,8 @@
     "docs/references/stiles_2017_opedal_swestar_runic.txt": "4e9096a4ec5561417d3e46386593824bbe00397e91321043758777e8d7c7c6bc",
     "docs/references/streitberg_urgermanische_grammatik.pdf": "c003e3140aa91ee2b932bb905583ecaae36f76e609aa2cd464fe29cd9c4d762b",
     "docs/references/streitberg_urgermanische_grammatik.vision.txt": "87248c2984620455552a746d7d2c00f7f5e784a1665db91c0fe06453687c95c9",
+    "docs/references/sweet_1885_oldest_english_texts.pdf": "7f13fd3e587fa915b89fcbdce6908809619540fff594ceb8defeaf2fb236940a",
+    "docs/references/sweet_1885_oldest_english_texts.txt": "fe4a7773a1501742124de4c242523dd2ee3c77b736c0182b11ca387f085fde57",
     "docs/references/sweet_anglo_saxon_primer.pdf": "c05400189577826f87048151e8ebdb23619edadcf0ea4ed1dbd1eca9d6942710",
     "docs/references/sweet_anglo_saxon_primer.txt": "795ebc13c62ddf0ad725a678582675faeb0a482b98a494a8f995a70a1668b038",
     "docs/references/thorhallsdottir_1993_intervocalic_j.vision.txt": "7a875989d916abb1abab9a9d74b14b306b5a0efdef26d26b2d384f558a41b1d1",
@@ -980,7 +984,7 @@
     "docs/references/waxenberger_2019_absolute_chronology_pre_oe_runic.txt": "94cbe811cf7b74d6f178dacc6795850d334e761112760fc857a756fff2474ab7",
     "docs/refs.bib": "d9fc77bab673043434a50dd68648f92f0bad1815e38987c40a8410ebaef3ddd8"
   },
-  "population": 397,
+  "population": 398,
   "reading_scope_statuses": {
     "reviewed": 26,
     "verification_gap": 1
@@ -988,10 +992,10 @@
   "reason_targets": {
     "descriptive_bridge": 43,
     "divergence_explanation": 41,
-    "position_support": 1191
+    "position_support": 1192
   },
-  "required_reading_targets": 1397,
-  "source_row_checks": 1418,
+  "required_reading_targets": 1399,
+  "source_row_checks": 1424,
   "status": "incomplete",
   "three_source_reading_pending": true,
   "unreviewed_analytical_rows": 0

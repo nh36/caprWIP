@@ -3,7 +3,10 @@ ignore			*eorþconde				Germanic/docs/lexeme_reports/model_entries/2336-earthly-
 ignore			*eorþcundes				Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:257	Independent computed Old English genitive control, not an additional source citation or admitted attestation.
 ignore			*régnabogô				Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:79	Computed annotation-decoding intermediate before ordinary nonhigh syncope, not a Proto-Germanic citation.
 ignore			*réʝnbogô				Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:80	Computed ordinary nonhigh-syncope intermediate, not a Proto-Germanic citation.
-ignore			*fūliþu				Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:87	Former selected derivation intermediate after final-vowel raising, not a new Proto-Germanic citation.
+ignore			*fūliþu				Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:88	Former selected derivation intermediate after final-vowel raising, not a new Proto-Germanic citation.
+ignore			*fūlþe				Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:97	Counterfactual failure when deletion precedes mutation, not a Proto-Germanic citation or attestation.
+ignore			*spinlǭ				Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:76	Computed pre-Old-English checkpoint after degemination, not a new comparative Proto-Germanic citation.
+ignore			*spinnlǭ				Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:70	Computed pre-Old-English checkpoint after quantitative deletion, not a new comparative Proto-Germanic citation.
 add	pgmc		*wúllǭ	*wúllǭ	wullǭ	override	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:21	Source-backed nasal accusative, distinct from the selected oral nominative.
 ignore			*wullu				Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:45	Conditional Northwest Germanic intermediate under raising-first, not a PGmc citation.
 ignore			*róstaz				Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:55	SC017 computed intermediate, not a separate source citation; the regular-output span is already semantically excluded.

@@ -124,5 +124,113 @@ class CellAdoptionTests(unittest.TestCase):
                 baseline.adopt_cell_baseline(self.current, target, self.approval)
 
 
+class LexicalExpansionTests(unittest.TestCase):
+    def setUp(self):
+        self.previous = baseline.read_baseline(
+            BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json")
+        self.addition = dict(self.previous["records"][0],
+                             row_id="900000", concept="admission-fixture")
+        self.candidate = copy.deepcopy(self.previous)
+        self.candidate["records"].append(self.addition)
+        self.candidate["records"].sort(
+            key=lambda row: (row["fst_input"], row["counterpart"], row["concept"]))
+        self.update_summary()
+        self.approval = {
+            "adjudication": "SC063",
+            "adjudication_memo": "Germanic/docs/sound_changes/audits/sc063-adjudication.md",
+            "transition_id": "expansion_test",
+            "previous_summary": {key: self.previous["summary"][key] for key in (
+                "outputs_sha256", "lexical_outputs_sha256", "legacy_subset_sha256")},
+            "legacy_archive_sha256": baseline.projection_sha256(
+                baseline.read_baseline(
+                    BASE / "cascade_baseline_outputs_legacy380.tsv",
+                    BASE / "cascade_baseline_summary.json")["records"], "proto_norm"),
+            "additions": [self.addition],
+        }
+
+    def update_summary(self):
+        records = self.candidate["records"]
+        self.candidate["summary"].update(
+            total_lexemes=len(records),
+            accepted=sum(row["accepted"] == "1" for row in records),
+            rejected=sum(row["accepted"] == "0" for row in records),
+            matched=sum(row["match"] == "1" for row in records),
+            mismatched=sum(row["match"] == "0" for row in records),
+            ambiguous_outputs=sum(int(row["output_count"]) > 1 for row in records),
+            outputs_sha256=baseline.projection_sha256(records, "fst_input"),
+            lexical_outputs_sha256=baseline.projection_sha256(records, "proto_norm"))
+
+    def test_exact_admission_preserves_every_previous_record(self):
+        baseline.validate_expansion_transition(self.previous, self.candidate, self.approval)
+        self.assertEqual(self.candidate["summary"]["total_lexemes"],
+                         self.previous["summary"]["total_lexemes"] + 1)
+        self.assertEqual(self.candidate["summary"]["legacy_subset_sha256"],
+                         self.previous["summary"]["legacy_subset_sha256"])
+
+    def test_transparently_approved_mismatch_is_not_hidden_by_a_score_gate(self):
+        self.addition.update(counterpart="different-attested-target", match="0")
+        self.update_summary()
+        baseline.validate_expansion_transition(self.previous, self.candidate, self.approval)
+        self.assertEqual(self.candidate["summary"]["mismatched"],
+                         self.previous["summary"]["mismatched"] + 1)
+
+    def test_undeclared_record_identity_context_and_summary_drift_fail_closed(self):
+        for case in ("old_record", "missing_old", "duplicate", "unapproved", "summary", "hash",
+                     "context", "normalization", "multiplicity", "match", "concept"):
+            candidate = copy.deepcopy(self.candidate)
+            approval = copy.deepcopy(self.approval)
+            new = next(row for row in candidate["records"] if row["row_id"] == "900000")
+            if case == "old_record":
+                next(row for row in candidate["records"]
+                     if row["row_id"] == self.previous["records"][0]["row_id"])["outputs"] = "changed"
+            elif case == "missing_old":
+                candidate["records"] = [row for row in candidate["records"]
+                                        if row["row_id"] != self.previous["records"][0]["row_id"]]
+            elif case == "duplicate":
+                candidate["records"].append(dict(new))
+            elif case == "unapproved":
+                candidate["records"].append(dict(new, row_id="900001", concept="extra"))
+            elif case == "summary":
+                candidate["summary"]["matched"] += 1
+            elif case == "hash":
+                approval["previous_summary"]["outputs_sha256"] = "0" * 64
+            else:
+                field, value = {
+                    "context": ("fst_input", "ᵘ" + new["proto_norm"]),
+                    "normalization": ("proto_norm", "different"),
+                    "multiplicity": ("outputs", new["outputs"] + "|other"),
+                    "match": ("match", "0"),
+                    "concept": ("concept", self.previous["records"][0]["concept"]),
+                }[case]
+                new[field] = value
+                approval["additions"][0][field] = value
+            with self.subTest(case=case), self.assertRaises(ValueError):
+                baseline.validate_expansion_transition(self.previous, candidate, approval)
+
+    def test_adopter_and_journal_planner_preserve_archives_and_prior_approvals(self):
+        import adjudication_run
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            for name in ("cascade_baseline_outputs.tsv", "cascade_baseline_summary.json",
+                         "cascade_baseline_outputs_legacy380.tsv", "approved_input_migrations.tsv"):
+                (directory / name).write_bytes((BASE / name).read_bytes())
+            originals = {path.name: path.read_bytes() for path in directory.iterdir()}
+            transition = dict(approval_filename="approved_fixture_expansion.json",
+                              approval=self.approval, candidate=self.candidate)
+            planned = adjudication_run._expansion_transition_files(transition, directory)
+            baseline.adopt_expansion_baseline(self.candidate, directory, self.approval)
+            for path, data in planned.items():
+                if not path.name.startswith("approved_"):
+                    self.assertEqual(path.read_bytes(), data)
+            for name in ("cascade_baseline_outputs_legacy380.tsv", "approved_input_migrations.tsv"):
+                self.assertEqual((directory / name).read_bytes(), originals[name])
+            self.assertEqual(
+                (directory / "cascade_baseline_outputs_pre_sc063_expansion_test.tsv").read_bytes(),
+                originals["cascade_baseline_outputs.tsv"])
+            before = {path.name: path.read_bytes() for path in directory.iterdir()}
+            baseline.adopt_expansion_baseline(self.candidate, directory, self.approval)
+            self.assertEqual({path.name: path.read_bytes() for path in directory.iterdir()}, before)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -33,6 +33,12 @@
         ledgered). Full strict validation is reported as a separate axis
         that this command never claims to have performed.
 
+    python3 Germanic/tools/adjudicate.py SC063 --adopt-expansion-baseline --approval approved_NAME_expansion.json
+        Adopt explicitly approved lexical additions from a fresh canonical
+        runtime evaluation. Every previous record, the immutable original
+        population and the existing migration ledger remain protected;
+        the exact pre-expansion baseline is archived before writing.
+
     python3 Germanic/tools/adjudicate.py SC024 --evidence
         Deterministically gather the executable (runtime) evidence: run the
         control-plane refresh with an unconditional stage-bin rebuild
@@ -645,11 +651,19 @@ def status() -> int:
 
 def main() -> int:
     args = sys.argv[1:]
-    if len(args) in {2, 4} and args[1] in {"--adopt-context-baseline", "--adopt-cell-baseline"}:
+    if len(args) in {2, 4} and args[1] in {
+        "--adopt-context-baseline", "--adopt-cell-baseline", "--adopt-expansion-baseline"
+    }:
         cell_migration = args[1] == "--adopt-cell-baseline"
+        expansion = args[1] == "--adopt-expansion-baseline"
+        if expansion and len(args) != 4:
+            print("BASELINE FAILED: lexical expansion requires an explicit approval", file=sys.stderr)
+            return 2
         if len(args) == 4 and (
-            not cell_migration or args[2] != "--approval"
-            or not re.fullmatch(r"approved_[a-z0-9_]+_migration\.json", args[3])
+            not (cell_migration or expansion) or args[2] != "--approval"
+            or not re.fullmatch(
+                r"approved_[a-z0-9_]+_" + ("expansion" if expansion else "migration") + r"\.json",
+                args[3])
         ):
             print("BASELINE FAILED: invalid explicit approval filename", file=sys.stderr)
             return 2
@@ -680,7 +694,8 @@ def main() -> int:
             return 1
         try:
             adopter = (
-                cascade_baseline.adopt_cell_baseline if cell_migration
+                cascade_baseline.adopt_expansion_baseline if expansion
+                else cascade_baseline.adopt_cell_baseline if cell_migration
                 else cascade_baseline.adopt_context_baseline
             )
             adopter(
@@ -689,7 +704,9 @@ def main() -> int:
         except (OSError, ValueError, KeyError) as exc:
             print("BASELINE FAILED: " + str(exc), file=sys.stderr)
             return 1
-        print("Approved selected-input/paradigm-cell baseline adopted; archived identities remain protected."
+        print("Approved lexical expansion adopted; every prior record and legacy protection unchanged."
+              if expansion else
+              "Approved selected-input/paradigm-cell baseline adopted; archived identities remain protected."
               if cell_migration else
               "Approved context baseline adopted; lexical finals and both legacy protections unchanged.")
         return 0

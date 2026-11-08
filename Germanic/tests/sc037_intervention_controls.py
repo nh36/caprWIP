@@ -1,6 +1,7 @@
 """Fresh production controls for the source-backed SC037 intervention."""
 
 import json
+import hashlib
 import os
 from pathlib import Path
 import sys
@@ -8,9 +9,10 @@ import tempfile
 
 sys.path.insert(0, "/usr/app/tools")
 from anglo_frisian_experiments import (
-    compile_isolated, corpus_rows, prepare_definition_image,
+    compile_isolated, complete_variant_order, corpus_rows, prepare_definition_image,
 )
 from executable_facts import parse_defines
+from oe_trace_parse import parse_entries, parse_fidelity, parse_provenance, structural_problems
 from sound_change_order_sensitivity import batch_apply_down
 
 source = Path("/usr/app/fsts/germanic.txt")
@@ -75,6 +77,84 @@ high_inputs = ["*s*e*l*i*w*ea*r*d", "*x*a*n*d*u*s*ea*x",
                "*ʃ*y*l*d*i*ç*ǣ*t*j*ā", "*l*a*n*d*w*ì*n*a"]
 umlaut_inputs = ["*ū*t*u*m*i", "*g*a*d*u*l*i*n*g",
                  "*ū*t*a*m*i", "*ū*t*ù*m*i"]
+rows = corpus_rows(Path("/usr/app/data/germanic-aligned-final.tsv"))
+by_concept = {row["concept"]: row for row in rows}
+little = by_concept["little"]
+forms.append(little["fst_input"])
+trace_text = Path("/usr/app/docs/debug_snapshots/oe_full_trace_report.txt").read_text()
+assert not structural_problems(trace_text)
+provenance = parse_provenance(trace_text)
+assert provenance.canonical and provenance.version == 2
+assert provenance.recorded["germanic.txt"] == hashlib.sha256(source.read_bytes()).hexdigest()
+assert provenance.recorded["germanic-aligned-final.tsv"] == hashlib.sha256(
+    Path("/usr/app/data/germanic-aligned-final.tsv").read_bytes()).hexdigest()
+entries, fidelity = parse_entries(trace_text), parse_fidelity(trace_text)
+
+
+def before(concept, stage):
+    row = by_concept[concept]
+    key = (row["concept"], row["proto"], row["counterpart"])
+    entry = entries[key]
+    index = next(i for i, item in enumerate(entry.stages) if item.label == stage)
+    previous = entry.stages[index - 1]
+    raw = fidelity.get(key, {}).get(previous.label, {})
+    assert not raw.get("rejected")
+    values = raw.get("raw") or previous.forms
+    assert len(values) == 1
+    return values[0]
+
+
+closeout = """
+define AFHvHeavy [OEHighVowelApocope .o. FootCtx([
+    [{*i}|{*u}|{*y}|{*ų}] -> 0 ||
+    .#. OEAnyConsonant* HvH _ OEAnyConsonant EnglishStarVocalic
+])];
+define AFHvHap [OEHighVowelApocope .o. FootCtx([
+    [{*i}|{*u}|{*y}|{*ų}] -> 0 ||
+    .#. OEAnyConsonant* HvH EnglishStarVocalic OEAnyConsonant+ _ .#.
+])];
+define AFLClosed Ctx([
+    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong]
+    [OEAnyConsonant - [{*d}|{*θ}|{*f}]] _ {*l}
+]);
+define AFLHeavy Ctx([
+    {*i} -> 0 || EnglishStarVocalic
+    [OEAnyConsonant - [{*d}|{*θ}|{*f}]] _ {*l} EnglishStarVocalic
+]);
+define AFShFinal [OEMedLongShort .o. FootCtx([
+    {*ī} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _ .#.
+])];
+define AFWPost Ctx([{*w} -> 0 || EnglishStarVocalic _ [{*i}|{*ī}]]);
+define AFWShort Ctx([
+    {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ {*i}
+]);
+define AFWAll Ctx([
+    {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ EnglishStarVocalic
+]);
+define AFNAll Ctx([
+    {*n} -> 0 || [EnglishStarShortVowel|EnglishStarLongVowel] _ .#.
+]);
+"""
+order = complete_variant_order({"replace": {}, "insert_rule": None, "insert_after": None})
+closeout_rules = {
+    "AF63Good": ("OEHighVowelApocope", "OEHighVowelApocope"),
+    "AF63Heavy": ("OEHighVowelApocope", "AFHvHeavy"),
+    "AF63Hap": ("OEHighVowelApocope", "AFHvHap"),
+    "AF66Good": ("OELAdjacentSyncope", "OELAdjacentSyncope"),
+    "AF66Closed": ("OELAdjacentSyncope", "AFLClosed"),
+    "AF66Heavy": ("OELAdjacentSyncope", "AFLHeavy"),
+    "AF117Good": ("OEMedLongShort", "OEMedLongShort"),
+    "AF117Final": ("OEMedLongShort", "AFShFinal"),
+    "AF54Good": ("OEWLossBeforeI", "OEWLossBeforeI"),
+    "AF54Post": ("OEWLossBeforeI", "AFWPost"),
+    "AF54Short": ("OEWLossBeforeI", "AFWShort"),
+    "AF54All": ("OEWLossBeforeI", "AFWAll"),
+    "AF64Good": ("NWGmcInStemNLoss", "NWGmcInStemNLoss"),
+    "AF64All": ("NWGmcInStemNLoss", "AFNAll"),
+}
+for label, (stage, replacement) in closeout_rules.items():
+    tail = [replacement, *order[order.index(stage) + 1:]]
+    closeout += "define " + label + " [" + " .o. ".join(tail) + "];\n"
 report = {}
 with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
     root = Path(temporary)
@@ -98,10 +178,11 @@ with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
     ):
         directory = root / name
         directory.mkdir()
-        recipe = {"definitions": extra, "replace": replacements,
+        recipe = {"definitions": extra + (closeout if name == "current" else ""), "replace": replacements,
                   "id": name, "insert_rule": "AFPass", "insert_after": "EnglishProtoInput",
                   "staged_checks": staged,
-                  "component_checks": [{"component": member} for member in components]}
+                  "component_checks": [{"component": member} for member in [
+                      *components, *(closeout_rules if name == "current" else [])]]}
         if name == "early-high":
             recipe.update(insert_rule="AFEarlyHigh",
                           insert_after="OEWsPalatalDiphthongization")
@@ -135,7 +216,6 @@ with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
                 stressed = [outputs[0] for outputs in batch_apply_down(
                     bins["component:" + member], stressed)]
             value["stressed"] = stressed
-            rows = corpus_rows(Path("/usr/app/data/germanic-aligned-final.tsv"))
             outputs = batch_apply_down(bins["final"], [row["fst_input"] for row in rows])
             value["selected"] = [{**row, "outputs": output}
                                  for row, output in zip(rows, outputs)]
@@ -159,5 +239,34 @@ with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
                 bins["component:PGmcBAllophony"],
                 ["*b*a", "*a*b*a", "*l*a*m*b", "*x*a*b*b*a",
                  "*r*e*g*n*b*o*g*ô", "*r*e*g*n*β*o*g*ô"])
+            value["lexical_closeout"] = {
+                "little": {"row_id": little["id"], "input": little["fst_input"],
+                           "target": little["counterpart"]},
+                "hll": {label: batch_apply_down(bins["component:" + label], [
+                    before("little", "OEHighVowelApocope")])
+                    for label in ("AF63Good", "AF63Heavy", "AF63Hap")},
+                "light_root": {label: batch_apply_down(bins["component:" + label], [
+                    before("nettle", "OELAdjacentSyncope"),
+                    before("little", "OELAdjacentSyncope")])
+                    for label in ("AF66Good", "AF66Heavy")},
+                "closed_kettle": {label: batch_apply_down(bins["component:" + label], [
+                    "*ʧ*ie*t*i*l"])
+                    for label in ("AF66Good", "AF66Closed")},
+                "closed_kettle_scope": "Early WS post-apocope historical stage, not a selected/primary-certified complete kettle cell.",
+                "shortening": {label: batch_apply_down(bins["component:" + label], [
+                    before("fright", "OEMedLongShort")])
+                    for label in ("AF117Good", "AF117Final")},
+                "w_scope": {label: batch_apply_down(bins["component:" + label], [
+                    before("sea", "OEWLossBeforeI"),
+                    before("dew", "OEWLossBeforeI"), "*p*y*l*w*ī"])
+                    for label in ("AF54Good", "AF54Post", "AF54Short", "AF54All")},
+                "n_scope": {label: batch_apply_down(bins["component:" + label], [
+                    before("fright", "NWGmcInStemNLoss"),
+                    before("heaven", "NWGmcInStemNLoss")])
+                    for label in ("AF64Good", "AF64All")},
+                "pgmc_accusative_gate": batch_apply_down(
+                    bins["component:EnglishProtoInput"],
+                    [little["reconstruction"].strip("*")[:-2] + "anz"]),
+            }
         report[name] = value
 print(json.dumps(report, ensure_ascii=False))

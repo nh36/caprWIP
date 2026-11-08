@@ -101,3 +101,17 @@ accusative does not settle its nominative ancestry. Existing bounded
 onset, older-name and subordinate-prominence residuals are retained, not
 a new research queue. No merge or certified-new-book claim is permitted
 unless full serial and exclusive validation succeeds.
+
+## Certified reference and lexical coverage closeout
+
+The preceding adoption was certified and published at
+99b1d2e919a191910e8e6df5ef4b138e9bad4de1; its conditional certification
+language above belongs to that earlier decision. The current bounded
+[lexical coverage closeout](sc063-lexical-coverage-closeout.md) preserves
+that certified before-reference and all391 selected records.
+It supports one new strong neuter plural, little2337, and documents
+the exact positive/negative coverage, deferred candidates, general
+source-backed *-anz gate admission and its unresolved unselected ending.
+No SC063 sound-law verdict or chronology is reopened. New lexical
+publication and promotion remain conditional on their own complete
+serial/exclusive and rendered-book certification.

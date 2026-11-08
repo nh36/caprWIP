@@ -1,25 +1,45 @@
-# SC053-SC054 Pre-umlaut Bridge and W-loss — literature dossier
+# SC053-SC054 Bridge and W-loss — literature dossier
+
+## Current adopted interpretation
+
+The certified SC054 correction supersedes this dossier's former
+pre-umlaut placement and final-short-i/postvocalic proxy. The adopted
+environment is noninitial w before unstressed i or ī, including
+postconsonantal w. Ringe and Taylor independently place this loss after
+mutation and before general syncope: *pulwīn > *pylwī > *pylī > pyle
+supplies the long-vowel/post-l example, while eowu and gierede supply
+the chronological reasoning [@RingeTaylor2014, pp. 258--260].
+
+SC053 remains unchanged; the two identifiers no longer denote an
+adjacent pre-umlaut chapter unit. Campbell's environment and analogy
+discussion and Luick's sea comparison remain relevant literature.
+Neither proximity to an older pre-umlaut description nor the former
+sea-only displacement establishes the current law's chronology.
+The older source discussion and chapter-planning analysis below are
+retained explicitly as superseded interpretation, not current authority.
+See `sc054-adjudication.md` for the certified decision and the current
+reader for its rule-centered presentation.
 
 ## Rule metadata
 
 - **change_ids:** SC053; SC054
 - **display_names:** OE Post Velar W Loss; OE W Loss Before I
 - **FOMA rule names:** `OEPostVelarWLoss`; `OEWLossBeforeI`
-- **current_orders:** SC053 immediately precedes SC054 between the promoted SC052 hinge report and the promoted SC055-SC056 umlaut-core report
+- **current_orders:** SC053 retains its pre-mutation position; SC054 follows SC055-SC056 mutation and precedes SC063 quantitative deletion.
 - **chronology card paths:**
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC053-oe-post-velar-w-loss.md`
   - `Germanic/docs/sound_changes/order_tests/chronology_cards/SC054-oe-w-loss-before-i.md`
 - **representative failures / witnesses:**
   - SC053: none; the card found no positive first-break boundary in either direction
   - SC054: `sea`
-- **local chronology summary:**
+- **historical sea-only chronology summary (superseded proxy):**
   - SC053 has no positive earlier boundary: the earlier search stops at bundled `PWGmcChanges`.
   - SC053 has no positive later boundary: the later search finds no real break before the current search boundary at SC087.
   - SC054 must follow SC020, with `sea`.
   - SC054 must precede SC063, with `sea`.
   - The pair is adjacent and book-useful as bridge material, but the live positive chronology resides almost entirely in SC054.
 
-## Historical problem
+## Historical problem and source discussion (superseded interpretation)
 
 SC053-SC054 now sits in a narrow but awkward chronological slot. On the left is the promoted SC052 velar-palatalization hinge report. On the right is the promoted SC055-SC056 umlaut-core report. The assembled book therefore needs explicit prose for both ordinary FST changes here without pretending that they form a large textbook chapter.
 
@@ -104,4 +124,5 @@ The pairing itself is therefore practical and chronological rather than traditio
 
 ## Dossier status
 
-draft_complete
+Current adopted chronology and environment corrected; earlier source
+discussion and chapter-planning interpretation retained as historical.

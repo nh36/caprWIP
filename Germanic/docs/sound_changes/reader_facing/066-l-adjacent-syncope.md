@@ -27,14 +27,16 @@ The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
 earlier umlaut, as *netle* ‘nettle’ demonstrates.
 
 The former statement combined two historically distinct strata. Its heavy
-part continues the prehistoric syncope of
-unstressed high vowels in open medial syllables, the same law whose pre-dental
-slice was formerly treated separately. That entire event now belongs to
-[SC065 OEMedialSyncope](#rule-OEMedialSyncope):
-[spénnilō]{.recon} ‘spindle’ and the genitive
-of [θístilas]{.recon} ‘thistle’ lose their \emph{*i} after the heavy sequences
+part now belongs to the single quantitative deletion in
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), not an independently
+productive second syncope. The selected accusative
+\emph{*spénnilǭ} ‘spindle’ and the genitive
+\emph{*θístilas} ‘thistle’ lose their \emph{*i} after the heavy sequences
 \emph{-nn-} and \emph{-st-} [@RingeTaylor2014, pp. 270--272, §6.7.3;
-@Campbell1959, p. 158, §392]. After a light syllable, however, the handbooks
+@Campbell1959, p. 158, §392]. The nonhigh, quantity-bearing endings
+distinguish these selected histories from the HLL nominative comparisons;
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope) remains an identity anchor.
+After a light syllable, however, the handbooks
 describe a later and more particular development: unstressed \emph{*i} next to
 \emph{l} is lost even where the preceding syllable is light, as in *netle*
 ‘nettle’ from the diminutive [nátilōn]{.recon} ‘nettle’ [@Kroonen2013, p. 384;
@@ -93,12 +95,13 @@ not adopted: West Saxon *meoloc* retains the vowel, and medial \emph{*u} next
 to \emph{l} is in general kept far longer than \emph{*i} [@Luick1914, §336.2;
 @RingeTaylor2014, p. 273].
 
-Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred} rather than
+In the preserved experiments on the former combined statement,
+placement before i-umlaut makes PGmc [nátilōn]{.recon} ‘nettle’ yield [*nætle*]{.pred} rather than
 expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred} rather
 than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
 [spénnilō]{.recon} yields [*spinnl*]{.pred} rather than expected *spinl*. Those earlier experiments remain evidence for the former combined
-statement. The spindle feeding relation now belongs to general
-[SC065 OEMedialSyncope](#rule-OEMedialSyncope), not to this light-only
+statement. The spindle feeding relation now belongs to quantitative
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), not to this light-only
 component. The nettle mutation relation remains with
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope); no independent
 chronology is invented for the intervening dental assimilation.

@@ -242,6 +242,48 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         ):
             self.assertEqual(self.validate(wrong).returncode, 2, wrong)
 
+    def test_little_comparative_list_shares_only_its_explicit_gloss(self):
+        prefix = "# Word-by-word derivations\n\n"
+        paragraph = (
+            "Orel prints the alternatives [lītilaz]{.recon}, "
+            "[lūtilaz]{.recon} and [luttilaz]{.recon} 'little'.\n\n"
+        )
+        selected = (
+            "The selected [lūtilō]{.recon} combines that independently "
+            "supported stem with its plural ending."
+        )
+        self.assertEqual(self.validate(prefix + paragraph + selected).returncode, 0)
+        for wrong in (
+            prefix + paragraph.replace(" 'little'", "") + selected,
+            prefix + paragraph.replace("Orel prints the alternatives", "Other words are"),
+            prefix + selected + "\n\n" + paragraph,
+            prefix + paragraph + selected.replace(
+                "combines that independently supported stem", "comes from another word"),
+        ):
+            self.assertEqual(self.validate(wrong).returncode, 2, wrong)
+
+    def test_current_lexical_variants_require_their_glossed_anchor_and_context(self):
+        prefix = "# Word-by-word derivations\n\n"
+        for anchor, paragraph in (
+            ("[lytelu]{.iv} 'little' is the diplomatic form.\n\n",
+             "The normalized comparator [lȳtelu]{.iv} marks quantity."),
+            ("[spinel]{.iv} 'spindle' is recorded.\n\n",
+             "The strong feminine accusative [spinle]{.iv} is selected."),
+            ("[spennilō(n)]{.recon} 'spindle' is the citation.\n\n",
+             "[spénnilō]{.recon} and [spénnilǭ]{.recon} use the strong feminine formation."),
+        ):
+            with self.subTest(paragraph=paragraph):
+                self.assertEqual(self.validate(prefix + anchor + paragraph).returncode, 0)
+                for wrong in (prefix + paragraph, prefix + paragraph + "\n\n" + anchor,
+                              prefix + anchor.replace("'little'", "").replace("'spindle'", "") + paragraph):
+                    self.assertEqual(self.validate(wrong).returncode, 2, wrong)
+        anchor = "*lȳtelu* 'little' is retained.\n\n"
+        paragraph = "The conservative neuter plural *lȳtelu* discriminates retention."
+        self.assertEqual(self.validate(anchor + paragraph).returncode, 0)
+        self.assertEqual(self.validate(paragraph).returncode, 2)
+        self.assertEqual(self.validate(
+            prefix + anchor + paragraph.replace("*lȳtelu*", "[lȳtelu]{.iv}")).returncode, 2)
+
     def test_widow_variant_requires_prior_gloss_and_exact_context(self):
         anchor = "*widuwe* 'widow' is recorded.\n\n"
         context = "The selected root-vowel variant [*wuduwe*]{.iv} retains the vowel."

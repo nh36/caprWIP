@@ -4,7 +4,8 @@
 
 The consolidated `audits/sc065-adjudication.md` retires the early a-deletion
 proxy to an identity anchor. Ordinary a-loss belongs to SC114; general
-heavy/open high loss belongs to SC065. No historical destressing date follows.
+quantitative high-vowel loss belongs to SC063; SC065 is identity.
+No historical destressing date follows.
 The earlier sections below, including their then-current adjudication, are
 preserved historical records, not the current executable specification.
 

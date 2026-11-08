@@ -5,21 +5,23 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
-The [Fulk--Goering high-vowel comparison](sound_changes/literature_dossiers/high_vowel_deletion_fulk_goering.md)
-preserves the preceding unadopted proposal.
-The [blocker resolution](sound_changes/literature_dossiers/high_vowel_deletion_blocker_resolution.md)
-establishes early final-n loss, the source-supported fee transponent and
-the quantitative candidate through all391 histories and independent controls.
-Controlled research-branch adoption is being certified; no replacement
-publication or merge is claimed before strict serial/exclusive validation.
-The review consolidation below remains WIP, not a certified replacement for
-`update`. Its earlier failed strict-certification receipts remain unchanged.
+The unified Fulk--Goering account, early final-n loss, corrected w-loss
+and fee transponent were certified at
+[99b1d2e9](https://github.com/nh36/caprWIP/commit/99b1d2e919a191910e8e6df5ef4b138e9bad4de1#commitcomment-208866282).
+The earlier [comparison](sound_changes/literature_dossiers/high_vowel_deletion_fulk_goering.md)
+and [blocker resolution](sound_changes/literature_dossiers/high_vowel_deletion_blocker_resolution.md)
+retain their historical proposals, failures and decisions.
+The current [lexical coverage closeout](sound_changes/audits/sc063-lexical-coverage-closeout.md)
+protects that certified account economically, without reopening the laws.
+Research-branch lexical changes require their own complete strict
+serial/exclusive and rendered-book certification before promotion to `update`.
 
 The [syncope consolidation](sound_changes/audits/sc065-adjudication.md)
 supersedes the early compound-a proxy and overlapping high-vowel losses.
 Its controlled two-cell migration selects accusative spinle and fȳlþe;
-391 forms remain accepted, 383 match, and the eight inherited mismatches
-are unchanged. All other 389 records and all PROTO citations are preserved.
+The certified before-reference preserved all other selected records
+and PROTO citations. Current populations live in the generated summary
+below, not a second hand-maintained count.
 
 The bounded [SC037 intervention](sound_changes/audits/sc037-historical-executable-intervention.md)
 records the historical decision, preserved research streams and deliberately
@@ -75,7 +77,7 @@ for any sound-change history/chronology/staging/scope/FST-semantics work.
   `Germanic/docs/sound_changes/registry/settled_verdicts.md`.
 - Navigation and the SOURCE/GENERATED/ARCHIVE map: `Germanic/docs/README.md`.
 
-## Rainbow adoption
+## Rainbow adoption (historical receipt)
 
 The current SC017 memo is `sound_changes/audits/rainbow-2148-adoption.md`.
 Early lowering now preserves subordinate stress in `*régna-bùgô >
@@ -87,11 +89,13 @@ and all immutable legacy380 finals are conserved. No corpus, ordering,
 stage or baseline migration accompanies this adoption. The mature volume
 now has 168 entries, including 90 regular entries.
 
-## Frozen baselines (must not change silently)
+## Protected baselines and certified before-reference
 
-Recorded in
+Current observations are recorded in
 `Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json`
-and pinned by `Germanic/tests/test_cascade_baseline.py`:
+and protected by `Germanic/tests/test_cascade_baseline.py`.
+The following hashes identify the certified99b1d2e9 before-reference,
+not a second live baseline after lexical expansion:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
   `a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47`

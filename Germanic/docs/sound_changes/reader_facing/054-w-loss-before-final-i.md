@@ -27,4 +27,13 @@ supply the chronology, rather than successful output alone
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) and this distinct
 glide loss together explain *pyle*.
 
-The former sea-only displacement supplies two distant implementation limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
+The former sea-only displacement supplied two distant implementation
+limits: before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)
+or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope),
+that older final-only rule yielded [*sǣw*]{.pred} rather than expected
+OE *sǣ* 'sea'. Those receipts remain historical evidence for the former
+implementation, not current tests of the adopted noninitial environment.
+In particular, they do not independently demonstrate that the present
+rule requires final \emph{z}-deletion to expose its target. Its placement
+after mutation and before general syncope rests on the cited histories,
+not on promoting the former rule's displacement bounds.

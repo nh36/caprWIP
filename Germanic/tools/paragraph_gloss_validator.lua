@@ -311,6 +311,38 @@ end
 -- head (Campbell1959, pp. 155–156). This is a contextual shared-gloss allowance,
 -- not spelling normalization or permission to omit the paragraph's first gloss.
 local SHARED_GLOSS_VARIANTS = {
+  ["lītilaz"] = {
+    anchor = "luttilaz", context = "Orel prints the alternatives",
+    following = true, part2 = true,
+  },
+  ["lūtilaz"] = {
+    anchor = "luttilaz", context = "Orel prints the alternatives",
+    following = true, part2 = true,
+  },
+  ["lūtilō"] = {
+    anchor = "luttilaz", context = "combines that independently supported stem",
+    prior = true, part2 = true,
+  },
+  ["lȳtelu"] = {
+    anchor = "lytelu", context = "The normalized comparator",
+    prior = true, part2 = true,
+  },
+  ["spinle"] = {
+    anchor = "spinel", context = "strong feminine",
+    prior = true, part2 = true,
+  },
+  ["spinl"] = {
+    anchor = "spinel", context = "The spelling spinl",
+    prior = true, part2 = true,
+  },
+  ["spénnilō"] = {
+    anchor = "spennilō(n)", context = "the strong feminine formation",
+    prior = true, part2 = true,
+  },
+  ["spénnilǭ"] = {
+    anchor = "spennilō(n)", context = "the strong feminine formation",
+    prior = true, part2 = true,
+  },
   ["ūtumist"] = {
     anchor = "ȳtmest", context = "Ringe and Taylor reconstruct pre-Old-English",
     following = true,
@@ -429,6 +461,9 @@ local SHARED_GLOSS_VARIANTS = {
 -- These released passages explicitly revisit a previously glossed lemma.
 -- Do not impose repeated glosses on their prose or exempt unrelated mentions.
 local REPEATED_GLOSS_CONTEXTS = {
+  ["lȳtelu"] = {
+    {part2 = false, context = "The conservative neuter plural"},
+  },
   ["fȳlþe"] = {
     {part2 = false, context = "The same word fixes a relative chronology"},
     {part2 = true, context = "now accusative singular"},

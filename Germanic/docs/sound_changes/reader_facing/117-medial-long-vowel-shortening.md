@@ -31,3 +31,11 @@ remain for the later component of shortening; this early component is
 not an extra high-vowel deletion or a morphological condition.
 The separately traced identifier records implementation ownership, not
 a new independently dated historical sound change.
+
+The selected oblique *fyrhte* 'fright' supplies a final-quantity control.
+Its inherited \emph{*fúrxtīnaz} exposes final \emph{*ī} after early
+ending and final-\emph{*n} loss; that vowel remains long here
+[@RingeTaylor2014, pp. 87--88, 380--381]. Premature shortening makes it
+a target of [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), wrongly
+giving [*fyrht*]{.pred}. The later component, not this medial realization,
+licenses the regular final vowel of *fyrhte*.

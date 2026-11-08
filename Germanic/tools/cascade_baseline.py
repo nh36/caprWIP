@@ -462,6 +462,110 @@ def adopt_context_baseline(candidate: dict, out_dir: Path, approval: dict) -> No
     write_outputs(candidate, out_dir)
 
 
+def validate_expansion_transition(previous: dict, candidate: dict, approval: dict) -> None:
+    """Permit explicit lexical admissions without changing any protected record."""
+    required = {"adjudication", "adjudication_memo", "transition_id",
+                "previous_summary", "legacy_archive_sha256", "additions"}
+    fingerprints = {"outputs_sha256", "lexical_outputs_sha256", "legacy_subset_sha256"}
+    fields = {"row_id", "concept", "proto", "proto_norm", "fst_input", "word_stress",
+              "phonological_finality", "counterpart", "accepted", "output_count", "match", "outputs"}
+    if (not isinstance(approval, dict) or set(approval) != required
+            or not isinstance(approval["adjudication"], str)
+            or not re.fullmatch(r"SC[0-9]{3}", approval["adjudication"])
+            or not isinstance(approval["transition_id"], str)
+            or not re.fullmatch(r"[a-z][a-z0-9_]*", approval["transition_id"])
+            or approval["adjudication_memo"] !=
+            f"Germanic/docs/sound_changes/audits/{approval['adjudication'].lower()}-adjudication.md"
+            or not isinstance(approval["previous_summary"], dict)
+            or set(approval["previous_summary"]) != fingerprints
+            or not isinstance(approval["additions"], list) or not approval["additions"]):
+        raise ValueError("invalid lexical expansion approval")
+    for value in [*approval["previous_summary"].values(), approval["legacy_archive_sha256"]]:
+        if not isinstance(value, str) or not re.fullmatch(r"[0-9a-f]{64}", value):
+            raise ValueError("invalid lexical expansion fingerprint")
+    if any(previous["summary"].get(field) != value
+           for field, value in approval["previous_summary"].items()):
+        raise ValueError("lexical expansion previous summary mismatch")
+    old = {row["row_id"]: row for row in previous["records"]}
+    new = {row["row_id"]: row for row in candidate["records"]}
+    additions = {}
+    concepts = {row["concept"] for row in previous["records"]}
+    for row in approval["additions"]:
+        if (not isinstance(row, dict) or set(row) != fields
+                or not all(isinstance(value, str) and value for value in row.values())
+                or not re.fullmatch(r"[1-9][0-9]*", row["row_id"])
+                or row["row_id"] in old or row["row_id"] in additions
+                or row["concept"] in concepts):
+            raise ValueError("invalid or duplicate approved lexical admission")
+        additions[row["row_id"]] = row
+        concepts.add(row["concept"])
+    if (len(old) != len(previous["records"]) or len(new) != len(candidate["records"])
+            or not all(old) or new != old | additions):
+        raise ValueError("lexical expansion changes protected records or unapproved identities")
+    for identifier, row in additions.items():
+        outputs = row["outputs"].split("|")
+        context = InputContext(row["word_stress"], row["phonological_finality"])
+        if (row["proto_norm"] != normalize_proto(row["proto"])
+                or context.encode(row["proto_norm"]) != row["fst_input"]
+                or row["accepted"] != "1" or row["output_count"] != "1"
+                or len(outputs) != 1 or outputs == ["+?"]
+                or row["match"] not in {"0", "1"}
+                or (row["match"] == "1") != (row["counterpart"] in outputs)):
+            raise ValueError(f"inconsistent lexical admission: {identifier}")
+    for baseline in (previous, candidate):
+        records = baseline["records"]
+        expected = {
+            "total_lexemes": len(records),
+            "accepted": sum(row["accepted"] == "1" for row in records),
+            "rejected": sum(row["accepted"] == "0" for row in records),
+            "matched": sum(row["match"] == "1" for row in records),
+            "mismatched": sum(row["match"] == "0" for row in records),
+            "ambiguous_outputs": sum(int(row["output_count"]) > 1 for row in records),
+            "outputs_sha256": projection_sha256(records, "fst_input"),
+            "lexical_outputs_sha256": projection_sha256(records, "proto_norm"),
+            "legacy_subset_count": previous["summary"]["legacy_subset_count"],
+            "legacy_subset_sha256": previous["summary"]["legacy_subset_sha256"],
+        }
+        if baseline["summary"] != expected:
+            raise ValueError("lexical expansion summary disagrees with records or protected legacy")
+
+
+def adopt_expansion_baseline(candidate: dict, out_dir: Path, approval: dict) -> None:
+    if (not isinstance(approval, dict)
+            or not isinstance(approval.get("adjudication"), str)
+            or not re.fullmatch(r"SC[0-9]{3}", approval["adjudication"])
+            or not isinstance(approval.get("transition_id"), str)
+            or not re.fullmatch(r"[a-z][a-z0-9_]*", approval["transition_id"])):
+        raise ValueError("invalid lexical expansion identity")
+    outputs = out_dir / "cascade_baseline_outputs.tsv"
+    summary = out_dir / "cascade_baseline_summary.json"
+    suffix = approval["adjudication"].lower() + "_" + approval["transition_id"]
+    archive_outputs = out_dir / f"cascade_baseline_outputs_pre_{suffix}.tsv"
+    archive_summary = out_dir / f"cascade_baseline_summary_pre_{suffix}.json"
+    if archive_outputs.exists() != archive_summary.exists():
+        raise ValueError("incomplete pre-expansion baseline archive")
+    current = read_baseline(outputs, summary)
+    previous = read_baseline(archive_outputs, archive_summary) if archive_outputs.exists() else current
+    validate_expansion_transition(previous, candidate, approval)
+    with (out_dir / "cascade_baseline_outputs_legacy380.tsv").open(encoding="utf-8") as handle:
+        legacy = list(csv.DictReader(handle, delimiter="\t"))
+    if projection_sha256(legacy, "proto_norm") != approval["legacy_archive_sha256"]:
+        raise ValueError("immutable legacy380 archive fingerprint changed")
+    with (out_dir / "approved_input_migrations.tsv").open(encoding="utf-8") as handle:
+        migrations = list(csv.DictReader(handle, delimiter="\t"))
+    selected = legacy_subset(candidate["records"], legacy, migrations)
+    if projection_sha256(selected, "proto_norm") != candidate["summary"]["legacy_subset_sha256"]:
+        raise ValueError("lexical expansion active legacy fingerprint mismatch")
+    if archive_outputs.exists() and current == candidate:
+        return
+    if current != previous:
+        raise ValueError("active baseline differs from preserved pre-expansion baseline")
+    if not archive_outputs.exists():
+        archive_outputs.write_bytes(outputs.read_bytes())
+        archive_summary.write_bytes(summary.read_bytes())
+    write_outputs(candidate, out_dir)
+
+
 def write_outputs(baseline: dict[str, object], out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     records = baseline["records"]  # type: ignore[index]

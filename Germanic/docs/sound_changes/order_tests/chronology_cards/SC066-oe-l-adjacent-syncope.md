@@ -4,7 +4,8 @@
 
 See `audits/sc065-adjudication.md`: SC066 retains only the distinct later
 light pre-l loss, with d/theta/f environments and final-closed syllables
-protected. Heavy-root spindle and thistle now fire at SC065. The old
+protected. Heavy-root spindle and thistle now fire at SC063, the single
+quantitative deletion; SC065 is identity. The old
 SC066/SC068 reciprocal group and every measured result below are preserved
 but superseded as current chronology; nettle remains its mutation witness.
 

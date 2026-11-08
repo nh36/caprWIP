@@ -38,8 +38,9 @@ heavy--light apocope and is withdrawn. Campbell's lār-type account and
 Fulk's independent abstract-paradigm evidence remain relevant to the
 nonselected nominative; Fulk2010 pp.140–142 also contests the conventional
 light-final syncope account. The new accusative avoids that dispute.
-The old dental enumeration was a documented architecture proxy; current
-SC065 implements bounded general heavy/open high-vowel syncope.
+The old dental enumeration was a documented architecture proxy.
+Current SC063 implements the single quantitative deletion; SC065 is
+an identity anchor, not a second general heavy/open event.
 
 ## Accusative selection evidence
 
@@ -55,6 +56,11 @@ The immutable wave6 comparison gives native *fūliθǭ → fȳlþe*.
 Original *fūliþō* under corrected conventional apocope/general syncope
 gives *fȳlþu*, not the old endingless target. These are exact experimental
 outputs, not independent proof of the reconstructed formation.
+Under the current quantitative account the same unselected nominative
+instead gives *fȳleþu*, retaining its two weak vowels in HLL. The selected
+accusative remains *fūliþǭ → fȳlþe* and demonstrates mutation before
+SC063 deletion. None of these current comparisons rewrites the immutable
+wave6 receipt or treats the earlier endingless selection as current.
 The old source units, diplomatic quotations, stage judgements and
 verification levels remain unchanged.
 

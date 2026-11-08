@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (311) ===
+=== DERIVATION_CLASS: regular (312) ===
 
 
 
@@ -1634,7 +1634,8 @@ print every regularly inflected reconstructed form.
 
 #### Development to Old English
 
-The former selected derivation was treated as regular throughout.
+The former selected derivation was treated as regular at the time;
+the following sequence records that superseded analysis, not the current law.
 [SC019, final long-*ō* raising](#rule-PNWGmcFinalLongORaising) gives
 \emph{*fūliþō} > \emph{*fūliþu}. [SC055, i-umlaut](#rule-OEIUmlaut)
 fronts the root vowel over the medial syllable, \emph{*fūliþu} >
@@ -1644,11 +1645,11 @@ removes the final high vowel after the heavy sequence,
 [SC065, medial syncope](#rule-OEMedialSyncope) deletes the now-medial
 \emph{*i} before the dental, \emph{*fȳliþ} > *fȳlþ*.
 
-The word is a live chronological witness. Had medial syncope preceded
-i-umlaut, the \emph{*i} that conditions the umlaut would have been
-deleted first, and the outcome would have been unattested \emph{*fūlþ}
-rather than attested *fȳlþ*; umlaut must therefore precede this
-syncope. The same mutation-before-loss relation is visible across the *-iþō* class, whose
+The selected accusative remains a live chronological witness. Had deletion
+preceded i-umlaut, the \emph{*i} that conditions the umlaut would have
+been lost first, giving unattested \emph{*fūlþe} rather than *fȳlþe*;
+umlaut must therefore precede this deletion. The same mutation-before-loss
+relation is visible across the *-iþō* class, whose
 members uniformly surface with umlauted root vowels beside syncopated
 suffixes [@Campbell1959, p. 236, §589.6; @Bammesberger1990,
 pp. 117--118, §4.5].
@@ -1661,18 +1662,23 @@ route, through raising, apocope and syncope, without an analogical
 step. That route is no longer adopted: its apocope erroneously removed
 the final high vowel after a heavy syllable followed by a light syllable.
 The corrected conventional history would retain final \emph{*u},
-giving *fȳlþu*, not the endingless target. Fulk additionally supplies
+giving *fȳlþu*, not the endingless target. The adopted quantitative
+account instead retains both weak vowels in HLL, giving
+\emph{*fȳleþu}; this too is a nonselected nominative comparison.
+Fulk additionally supplies
 positive paradigm evidence for analogical syncope in abstract nominatives;
 his conservative light-final analysis is a substantive competing account
 [@Fulk2010, pp. 140--142].
 
 The selected accusative avoids those disputed nominative histories.
 \emph{*fūliþǭ} undergoes mutation to \emph{*fȳliþǭ}; the retained nonhigh
-quantity-bearing ending is not a target of high-vowel apocope.
-General heavy/open syncope under
-[SC065 OEMedialSyncope](#rule-OEMedialSyncope) gives
+quantity-bearing ending is not a target of high-vowel deletion.
+The single quantitative event under
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope) gives
 \emph{*fȳlþǭ}, and the ordinary inherited ending developments yield
-*fȳlþe*. Removing medial \emph{*i} before mutation would again prevent
+*fȳlþe*. [SC065 OEMedialSyncope](#rule-OEMedialSyncope) is an identity
+anchor, not a second productive deletion. Removing medial \emph{*i}
+before mutation would again prevent
 root fronting. Thus the independently attested cell compared here preserves
 the scientific ordering witness without claiming that an endingless
 nominative is regular merely because the former cascade produced it.
@@ -3693,6 +3699,114 @@ English Proto Input: *lḯstōn
 ### Orthography & surface
 
 Outcome: līste
+# little
+PROTO: *lūtilō
+EXPECTED: lȳtelu
+OUTPUTS: lȳtelu
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *lūtilō
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *lūtilu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *lȳtilu<br>OE Med Unstressed I Lowering1: *lȳtelu |
+
+
+
+### Orthography & surface
+
+Outcome: lȳtelu
+
+
+
+### Lexeme report
+
+#### Old English evidence
+
+The Vespasian Psalter gloss has
+[lytelu]{.iv lang=oe sort=lytelu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:22:1"} 'little' in
+*netenu lytelu 7 micel* 'small and great animals', glossing Latin *animalia pusilla et magna*
+at Psalm 103:25 [@Sweet1885, p. 336]. The adjective agrees with the
+neuter plural noun 'animals': this is the strong neuter plural, not
+the formally identical feminine nominative singular. CAPR selects the
+shared nominative–accusative plural cell; the nominative interpretation
+belongs to this clause's enumeration of the creatures there.
+
+The normalized comparator
+[lȳtelu]{.iv lang=oe sort=lytelu role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:31" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:31:1"} marks quantity that
+Sweet's diplomatic spelling does not mark. Long \emph{ȳ} and the
+grammatical identification are independently supported by Fulk's
+West Mercian discussion and Goering's comparison
+[@Fulk2010, pp. 133--134; @Goering2016, pp. 176--177].
+Fulk contrasts the retained medial vowel here with masculine accusative
+plural [lȳtle]{.iv lang=oe sort=lytle role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:37:1"} 'little'.
+The forms differ in the quantity of the following syllable at deletion,
+not in whether a heavy root happens to permit an exception.
+
+#### Comparative formation and selected cell
+
+Orel prints the alternatives
+[lītilaz]{.iv .recon lang=pgmc sort=litilaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:44:1"},
+[lūtilaz]{.iv .recon lang=pgmc sort=lutilaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:45:1"}
+and [luttilaz]{.iv .recon lang=pgmc sort=luttilaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:46:1"}
+'little' [@Orel2003, p. 248]. The long-\emph{ū} alternative is the
+comparative citation retained here. It is not a vowel invented to make
+the transducer work: the ordinary fronting of inherited \emph{*ū}
+before \emph{*i} accounts for the independently established OE
+\emph{ȳ}.
+
+Kroonen instead heads the entry with
+[lītila-]{.iv .recon lang=pgmc sort=litila role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:54" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:54:1"}
+and explicitly leaves the distribution of long-\emph{ī},
+long-\emph{ū} and short-\emph{u}/geminate variants unexplained
+[@Kroonen2013, p. 339]. His entry is not quoted as a long-\emph{ū}
+headword. Selecting Orel's supported variant does not resolve the
+deeper history or distribution of this comparative alternation.
+
+The selected [lūtilō]{.iv .recon lang=pgmc sort=lutilo role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:61:1"}
+combines that independently supported stem with the ordinary strong
+neuter nominative–accusative plural ending \emph{*-ō}.
+Fulk explicitly reconstructs this ending in the strong-adjective
+paradigm [@Fulk2018, p. 209, §9.2]. No authority is represented as
+printing the entire selected word verbatim. Citation and selected
+form are two Proto-Germanic cells, not different historical stages;
+no transponent, analogical replacement or artificial accent is used.
+
+#### Development and discriminatory value
+
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising)
+gives \emph{*lūtilu}; [SC055 OEIUmlaut](#rule-OEIUmlaut)
+gives \emph{*lȳtilu}. The heavy first syllable is followed by two
+light syllables. Both weak high vowels therefore survive
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), the unified
+quantitative high-vowel-deletion event. The same HLL retention is
+the evidential point of the conservative plurals of 'head' and
+'livestock' [@Fulk2010, pp. 133--138; @Goering2016, pp. 176--177,
+186--188; @Goering2023, pp. 60--63, 67--68].
+
+The following identity trace at
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope) makes no second deletion.
+The short-root condition of
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) likewise does not
+reach this long-root form. Later
+[SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1)
+gives \emph{*lȳtelu}. The complete cascade thus reaches the attested
+comparator without an analogical restoration.
+
+An indiscriminate rule deleting a medial high vowel after every heavy
+root instead yields [*lȳtlu*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:92" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:92:1"}. That wrong alternative changes
+none of the previously selected histories, but fails on this plural.
+An overgeneralized final apocope in HLL instead gives
+[*lȳtel*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:95" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:95:1"}, likewise without changing any previously selected
+history. Thus the attested plural independently protects both its
+medial and final retained high vowels.
+The word is therefore a positive historical witness of retention and
+a genuine nonapplication control for deletion. It does not replace
+the selected singular history of 'head', nor does it imply that every
+form of 'little' should retain its medial vowel.
 # liver
 PROTO: *líbrō
 EXPECTED: lifer
@@ -5662,9 +5776,80 @@ Outcome: spinle
 
 ### Lexeme report
 
-#### Project note
+#### Old English evidence and selected cell
 
-Original TSV note: Selected strong feminine accusative singular spinle, inferred in the tool enumeration under habban (Toller Supplement p288, Angl.ix263,11). Clark Hall p272 gives strong feminine spinel, gs. spinle; Orel p364 supplies *spennilō(n). PROTO keeps the nominative citation. The former endingless nominative and Ringe-Taylor's syncope-before-apocope history remain comparisons, not the current selected cell.
+Clark Hall identifies
+[spinel]{.iv lang=oe sort=spinel role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:22:1"} 'spindle'
+as feminine and gives genitive singular
+[spinle]{.iv lang=oe sort=spinle role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:24:1"}
+[@ClarkHall1960, p. 272, s.v. spinel]. This positively supports the strong
+feminine oblique form; the genitive label is not misquoted as an
+accusative label. Toller's craft-equipment passage supplies object
+usage: *He sceal fela towtōla habban: flexlīnan, spinle, reōl*,
+'he must have many tools: flax-lines, a spindle, a reel'.
+The listed objects are governed by *habban*
+[@Toller1921, p. 621, s.v. lorh] (Anglia 9, p. 263, line 11).
+
+The already approved selection is the ordinary strong feminine
+accusative singular [spinle]{.iv lang=oe sort=spinle role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:34:1"}.
+It is not a new morphological change made in
+this coverage audit. Its vocalic ending is independently licensed by
+the strong feminine paradigm, just as in the selected 'soul' and
+'filth' histories. The spelling
+[spinl]{.iv lang=oe sort=spinl role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:39:1"}, also recorded
+by Clark Hall, remains a nonselected comparison, not the current
+endingless target.
+
+#### Comparative premise and its unresolved limit
+
+Orel prints
+[spennilō(n)]{.iv .recon lang=pgmc sort=spennilo role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:46:1"}
+'spindle', deriving it from the spin family and citing OE *spinel*
+[@Orel2003, p. 364]. Both the geminate and his optional n-stem
+notation are preserved in attribution. CAPR's citation
+[spénnilō]{.iv .recon lang=pgmc sort=spennilo role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:50:1"}
+uses its ordinary accent notation and the strong feminine formation;
+the selected
+[spénnilǭ]{.iv .recon lang=pgmc sort=spenniloacc role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:53:1"}
+supplies that formation's accusative ending.
+
+The comparative origin and scope of the geminate remain unresolved.
+Kroonen's spin verb and yarn noun are family evidence, not quotations
+of this spindle noun [@Kroonen2013, p. 467]. Successful output cannot
+establish where the doubled consonant arose, settle the relation of
+the source's ending alternatives, or validate an otherwise unsupported
+whole paradigm. The retained input is an explicit comparative premise;
+this entry does not initiate a new gemination investigation.
+
+#### Current derivation and historical comparisons
+
+[SC055 OEIUmlaut](#rule-OEIUmlaut) gives
+\emph{*spinnilǭ}. The heavy root and following quantity-bearing
+nonhigh syllable license medial deletion at
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope),
+giving \emph{*spinnlǭ}. This is part of the one quantitative event,
+not productive syncope at
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope), which is now an
+identity trace.
+
+[SC068 OEPreconsonantalDegemination](#rule-OEPreconsonantalDegemination)
+then gives \emph{*spinlǭ}; later weak-ending developments give
+*spinle*. The ordering controls are exact: deletion before mutation
+gives [*spenle*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:78" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:78:1"}, deletion after degemination gives
+[*spinnle*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:79" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:79:1"}, and omitting quantitative deletion gives
+[*spinnele*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:80" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:80:1"}. These contrasts test the adopted history under
+its stated comparative premise, not the independent truth of that
+premise [@RingeTaylor2014, pp. 270--272, 330].
+
+The former nominative calculation and its old *spinl* target remain
+historical records. Under the adopted HLL account, that encoded
+nominative instead retains its weak syllables, giving
+[*spinnelu*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md:87:1"}; it is not the current regular selected derivation.
+Conservative vowel retention and the later paradigmatic alternatives
+remain relevant to the larger syncope discussion
+[@Fulk2010, pp. 129--134, 140--142; @Goering2016, pp. 176--177,
+186--188]. They do not overturn the independently selected
+accusative or create a second productive heavy-root deletion.
 # spoon
 PROTO: *spḗnuz
 EXPECTED: spōn

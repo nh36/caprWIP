@@ -4124,6 +4124,10 @@ Campbell attributes retained *n* in *nēten* 'livestock' to the inflected
 forms [@Campbell1959, p. 189, §473]. Goering's later \emph{*nētīn}
 therefore does not require immunity to the early law: a later paradigmatic
 state and uninterrupted inherited retention are different claims.
+An exposed early final \emph{*-īn} would regularly lose its consonant;
+the later \emph{*nētīn} cannot be presented as an exemption or as
+uninterrupted phonological survival. Its complete ancestral derivative
+and intervening paradigmatic history are separate questions.
 Final \emph{*ī} remains long until later shortening, while medial
 \emph{*ī} has already shortened in the inflected forms
 [@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
@@ -5173,7 +5177,16 @@ supply the chronology, rather than successful output alone
 [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) and this distinct
 glide loss together explain *pyle*.
 
-The former sea-only displacement supplies two distant implementation limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
+The former sea-only displacement supplied two distant implementation
+limits: before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)
+or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope),
+that older final-only rule yielded [*sǣw*]{.pred} rather than expected
+OE *sǣ* 'sea'. Those receipts remain historical evidence for the former
+implementation, not current tests of the adopted noninitial environment.
+In particular, they do not independently demonstrate that the present
+rule requires final \emph{z}-deletion to expose its target. Its placement
+after mutation and before general syncope rests on the cited histories,
+not on promoting the former rule's displacement bounds.
 
 ## Technical support: late palatal diphthongization
 
@@ -5633,6 +5646,14 @@ not an extra high-vowel deletion or a morphological condition.
 The separately traced identifier records implementation ownership, not
 a new independently dated historical sound change.
 
+The selected oblique *fyrhte* 'fright' supplies a final-quantity control.
+Its inherited \emph{*fúrxtīnaz} exposes final \emph{*ī} after early
+ending and final-\emph{*n} loss; that vowel remains long here
+[@RingeTaylor2014, pp. 87--88, 380--381]. Premature shortening makes it
+a target of [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), wrongly
+giving [*fyrht*]{.pred}. The later component, not this medial realization,
+licenses the regular final vowel of *fyrhte*.
+
 ## Quantitative high-vowel deletion
 
 ### Historical discussion
@@ -5669,6 +5690,21 @@ attested plurals attributed to analogy. Hogg also discusses a tentative
 one-syllable-reduction account [@HoggGrammar2011, pp. 225--227, §§6.22--6.25;
 @RingeTaylor2014, pp. 289--293]. Output equivalence on selected words
 does not erase these contrasting histories.
+
+The conservative neuter plural *lȳtelu* is particularly discriminating.
+The Vespasian Psalter has *netenu lytelu 7 micel* 'small and great animals',
+glossing Latin *animalia pusilla et magna*; agreement fixes the neuter
+plural, while Fulk independently establishes the West Mercian quantity
+[@Sweet1885, p. 336, Psalm 103:25; @Fulk2010, pp. 133--134;
+@Goering2016, pp. 176--177]. Orel's comparative \emph{*lūtilaz}
+and the inherited strong neuter plural ending \emph{*-ō} support
+\emph{*lūtilō}, without attributing the assembled word to a single source
+[@Orel2003, p. 248; @Fulk2018, p. 209, §9.2]. This selected plural
+preserves both weak high vowels: indiscriminate heavy-root syncope gives
+[*lȳtlu*]{.pred}, and final apocope in HLL gives [*lȳtel*]{.pred}.
+Neither error is exposed by the selected singular *hēafod* 'head'.
+The comparative root alternation remains unexplained; retention is
+not a grammatical exception [@Kroonen2013, p. 339].
 
 This loss is distinct from West Germanic weak-word deletion in
 [SC098 PWGmcUnstressedWordFinalIApocope](#rule-PWGmcUnstressedWordFinalIApocope).
@@ -5946,14 +5982,16 @@ The loss of medial \emph{*i} before \emph{*l} is late enough to preserve
 earlier umlaut, as *netle* ‘nettle’ demonstrates.
 
 The former statement combined two historically distinct strata. Its heavy
-part continues the prehistoric syncope of
-unstressed high vowels in open medial syllables, the same law whose pre-dental
-slice was formerly treated separately. That entire event now belongs to
-[SC065 OEMedialSyncope](#rule-OEMedialSyncope):
-[spénnilō]{.recon} ‘spindle’ and the genitive
-of [θístilas]{.recon} ‘thistle’ lose their \emph{*i} after the heavy sequences
+part now belongs to the single quantitative deletion in
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), not an independently
+productive second syncope. The selected accusative
+\emph{*spénnilǭ} ‘spindle’ and the genitive
+\emph{*θístilas} ‘thistle’ lose their \emph{*i} after the heavy sequences
 \emph{-nn-} and \emph{-st-} [@RingeTaylor2014, pp. 270--272, §6.7.3;
-@Campbell1959, p. 158, §392]. After a light syllable, however, the handbooks
+@Campbell1959, p. 158, §392]. The nonhigh, quantity-bearing endings
+distinguish these selected histories from the HLL nominative comparisons;
+[SC065 OEMedialSyncope](#rule-OEMedialSyncope) remains an identity anchor.
+After a light syllable, however, the handbooks
 describe a later and more particular development: unstressed \emph{*i} next to
 \emph{l} is lost even where the preceding syllable is light, as in *netle*
 ‘nettle’ from the diminutive [nátilōn]{.recon} ‘nettle’ [@Kroonen2013, p. 384;
@@ -6012,12 +6050,13 @@ not adopted: West Saxon *meoloc* retains the vowel, and medial \emph{*u} next
 to \emph{l} is in general kept far longer than \emph{*i} [@Luick1914, §336.2;
 @RingeTaylor2014, p. 273].
 
-Placed before i-umlaut, PGmc [nátilōn]{.recon} ‘nettle’ yields [*nætle*]{.pred} rather than
+In the preserved experiments on the former combined statement,
+placement before i-umlaut makes PGmc [nátilōn]{.recon} ‘nettle’ yield [*nætle*]{.pred} rather than
 expected OE *netle* ‘nettle’, and PGmc [spénnilō]{.recon} ‘spindle’ yields [*spenl*]{.pred} rather
 than expected *spinl* ‘spindle’. Placed after preconsonantal degemination, PGmc
 [spénnilō]{.recon} yields [*spinnl*]{.pred} rather than expected *spinl*. Those earlier experiments remain evidence for the former combined
-statement. The spindle feeding relation now belongs to general
-[SC065 OEMedialSyncope](#rule-OEMedialSyncope), not to this light-only
+statement. The spindle feeding relation now belongs to quantitative
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), not to this light-only
 component. The nettle mutation relation remains with
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope); no independent
 chronology is invented for the intervening dental assimilation.

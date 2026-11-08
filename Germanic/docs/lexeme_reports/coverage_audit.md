@@ -1,18 +1,18 @@
 # Old English lexeme-report coverage audit
 
-- Total OE rows with real counterpart: 391
+- Total OE rows with real counterpart: 392
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 170
-- Required rows with published SOURCE: 29
-- Required rows with no published SOURCE: 141
-- Rows selected independently for philological discussion: 19
+- Rows requiring lexeme report: 171
+- Required rows with published SOURCE: 31
+- Required rows with no published SOURCE: 140
+- Rows selected independently for philological discussion: 21
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 155
+- Required rows with source material available but no manifest-backed production report: 156
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 224
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 86
+- Regular rows with NOTE (report required): 87
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 12
 
 ## Counts by DERIVATION_CLASS
@@ -24,7 +24,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 28 | 28 | 4 | 24 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 311 | 90 | 0 | 86 | 4 |
+| regular | 312 | 91 | 0 | 87 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -42,6 +42,7 @@
 | 2148 | rainbow | reġnboga | regular | no | certified_editorial_source | - | model_entries/2148-rainbow-reġnboga.model.md | philological=rainbow-early-root-lowering |
 | 2162 | rust | rust | unexplained_unmodelled | yes | certified_editorial_source | - | model_entries/2162-rust-rust.model.md | NOTE, DERIVATION_CLASS=unexplained_unmodelled, philological=rust-masculine-citation |
 | 2201 | soul | sāwle | regular | yes | certified_editorial_source | - | model_entries/2201-soul-sāwle.model.md | NOTE, philological=soul-inherited-accusative |
+| 2208 | spindle | spinle | regular | yes | certified_editorial_source | - | model_entries/2208-spindle-spinle.model.md | NOTE, philological=spindle-current-accusative |
 | 2224 | straw | strēaw | late_analogy | yes | certified_editorial_source | - | model_entries/2224-straw-strēaw.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=straw-endingless-and-levelling |
 | 2282 | west | west | regular | yes | certified_editorial_source | - | model_entries/2282-west-west.model.md | NOTE, philological=west-neuter-base |
 | 2283 | wether | weþer | regular | no | certified_editorial_source | - | model_entries/2283-wether-weþer.model.md | philological=wether-masculine-u-stem |
@@ -50,6 +51,7 @@
 | 2332 | hue | hīew | regular | yes | certified_editorial_source | - | model_entries/2332-hue-hīew.model.md | NOTE, philological=hue-vowel-formation |
 | 2335 | filth | fȳlþe | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 | 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
+| 2337 | little | lȳtelu | regular | yes | certified_editorial_source | - | model_entries/2337-little-lȳtelu.model.md | NOTE, philological=little-hll-retention |
 
 ## Required rows with manifest-backed production reports
 
@@ -166,7 +168,7 @@
 | 2202 | span | spannan | regular | yes | source_material | - | archive/dev_notes_slices/2202-span-spannan.md, archive/packets/2202-span-spannan.md, model_entries/2202-span-spannan.model.md, model_entries/2202-span-spannan.source_ledger.md, research_memos/2202-span-spannan.md | NOTE |
 | 2204 | spar | spearra | regular | yes | source_material | - | archive/dev_notes_slices/2204-spar-spearra.md, archive/packets/2204-spar-spearra.md, model_entries/2204-spar-spearra.model.md, model_entries/2204-spar-spearra.source_ledger.md, research_memos/2204-spar-spearra.md | NOTE |
 | 2205 | spare | sparian | early_analogy | yes | source_material | - | archive/dev_notes_slices/2205-spare-sparian.md, archive/packets/2205-spare-sparian.md, model_entries/2205-spare-sparian.model.md, model_entries/2205-spare-sparian.source_ledger.md, research_memos/2205-spare-sparian.md | NOTE, DERIVATION_CLASS=early_analogy |
-| 2208 | spindle | spinle | regular | yes | source_material | - | archive/dev_notes_slices/2208-spindle-spinl.md | NOTE |
+| 2208 | spindle | spinle | regular | yes | certified_editorial_source | - | model_entries/2208-spindle-spinle.model.md | NOTE, philological=spindle-current-accusative |
 | 2212 | staff | stæf | early_analogy | yes | source_material | - | archive/dev_notes_slices/2212-staff-stæf.md, archive/packets/2212-staff-stæf.md, model_entries/2212-staff-stæf.model.md, model_entries/2212-staff-stæf.source_ledger.md, research_memos/2212-staff-stæf.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2216 | stem | stefn | early_analogy | yes | source_material | - | archive/dev_notes_slices/2216-stem-stefn.md, archive/packets/2216-stem-stefn.md, model_entries/2216-stem-stefn.model.md, model_entries/2216-stem-stefn.source_ledger.md, research_memos/2216-stem-stefn.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2217 | still | stillan | regular | yes | source_material | - | archive/dev_notes_slices/2217-still-stillan.md, archive/packets/2217-still-stillan.md, model_entries/2217-still-stillan.model.md, model_entries/2217-still-stillan.source_ledger.md, research_memos/2217-still-stillan.md | NOTE |
@@ -226,6 +228,7 @@
 | 2334 | where | hwǣr | regular | yes | source_material | - | model_entries/2334-where-hwǣr.model.md, model_entries/2334-where-hwǣr.source_ledger.md | NOTE |
 | 2335 | filth | fȳlþe | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 | 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
+| 2337 | little | lȳtelu | regular | yes | certified_editorial_source | - | model_entries/2337-little-lȳtelu.model.md | NOTE, philological=little-hll-retention |
 
 ## Required rows with no source material found
 
@@ -481,6 +484,7 @@
 
 - archive/dev_notes_slices/2156-roe-hrogn.md -> ambiguous among 2111:loc, 2301:word
 - archive/dev_notes_slices/orphan_fragments.md -> ambiguous among 2068:heofon, 2139:netle, 2174:seofon
+- model_entries/2337-little-lȳtelu.source_ledger.md -> ambiguous among 2301:word, 2337:lȳtelu
 - pgmc_integration/README.md -> ambiguous among 2054:hand, 2194:six
 - pgmc_integration/examples/2330-thought.md -> ambiguous among 1992:dor, 2301:word
 - pgmc_integration/schema-proposal.md -> ambiguous among 2072:help, 2194:six, 2301:word

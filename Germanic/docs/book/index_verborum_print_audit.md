@@ -1,9 +1,9 @@
 # Index verborum print audit
 
-- Internal production occurrences: 2530
-- Internal production unique forms: 1206
-- Printed main occurrences: 2437
-- Printed main unique forms: 1196
+- Internal production occurrences: 2552
+- Internal production unique forms: 1219
+- Printed main occurrences: 2459
+- Printed main unique forms: 1209
 - Printed excluded occurrences: 93
 - Printed excluded unique forms: 70
 
@@ -15,8 +15,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1256 | 515 |
-| Proto-Germanic | 1014 | 564 |
+| Old English | 1265 | 521 |
+| Proto-Germanic | 1027 | 571 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -36,10 +36,10 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 413 |
-| source_protoform | 380 |
-| selected_input | 559 |
-| comparison_form | 858 |
+| target_form | 417 |
+| source_protoform | 390 |
+| selected_input | 562 |
+| comparison_form | 863 |
 | evidence_form | 227 |
 
 ## Internal-only rows by reason
@@ -57,15 +57,15 @@
 - `example_input`: 71
 - `expected_output`: 69
 - `model_stage`: 111
-- `notation_or_segment`: 913
-- `yielded_output`: 62
+- `notation_or_segment`: 916
+- `yielded_output`: 63
 
-- Reader-facing include_in_example_index=yes: 576
-- Reader-facing include_in_example_index=no: 913
+- Reader-facing include_in_example_index=yes: 577
+- Reader-facing include_in_example_index=no: 916
 
 ## Print-unique entry audit
 
-- Unique printed entries: 1213
+- Unique printed entries: 1227
 - Print anomaly rows: 51
 - Hard print anomalies: 0
 
@@ -159,11 +159,11 @@
 - `example_input`: 71
 - `expected_output`: 69
 - `model_stage`: 111
-- `yielded_output`: 62
+- `yielded_output`: 63
 
 ### Included rows by inferred language
 
-- `unknown`: 126
+- `unknown`: 127
 - `german`: 1
 - `goth`: 18
 - `lat`: 1
@@ -181,10 +181,10 @@
 
 ### Included rows by main-index overlap
 
-- `no`: 408
-- `yes`: 168
+- `no`: 405
+- `yes`: 172
 
-- Included whole-form rows with asterisks: 417
+- Included whole-form rows with asterisks: 418
 - Included whole-form rows without asterisks: 159
 - Included rows inferred_language=oe with leading asterisk: 21
 - Included rows inferred_language=pgmc but OE-output-like form shape: 32

@@ -35,6 +35,21 @@ one-syllable-reduction account [@HoggGrammar2011, pp. 225--227, §§6.22--6.25;
 @RingeTaylor2014, pp. 289--293]. Output equivalence on selected words
 does not erase these contrasting histories.
 
+The conservative neuter plural *lȳtelu* is particularly discriminating.
+The Vespasian Psalter has *netenu lytelu 7 micel* 'small and great animals',
+glossing Latin *animalia pusilla et magna*; agreement fixes the neuter
+plural, while Fulk independently establishes the West Mercian quantity
+[@Sweet1885, p. 336, Psalm 103:25; @Fulk2010, pp. 133--134;
+@Goering2016, pp. 176--177]. Orel's comparative \emph{*lūtilaz}
+and the inherited strong neuter plural ending \emph{*-ō} support
+\emph{*lūtilō}, without attributing the assembled word to a single source
+[@Orel2003, p. 248; @Fulk2018, p. 209, §9.2]. This selected plural
+preserves both weak high vowels: indiscriminate heavy-root syncope gives
+[*lȳtlu*]{.pred}, and final apocope in HLL gives [*lȳtel*]{.pred}.
+Neither error is exposed by the selected singular *hēafod* 'head'.
+The comparative root alternation remains unexplained; retention is
+not a grammatical exception [@Kroonen2013, p. 339].
+
 This loss is distinct from West Germanic weak-word deletion in
 [SC098 PWGmcUnstressedWordFinalIApocope](#rule-PWGmcUnstressedWordFinalIApocope).
 The separately selected sentence context remains effective; its boundary

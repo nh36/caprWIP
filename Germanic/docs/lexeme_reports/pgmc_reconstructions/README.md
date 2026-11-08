@@ -2,8 +2,10 @@
 
 Start here for source verification and reconstruction research. The completed
 49-tranche programme aligned all 393 survey identities, including the six
-research-only rows without runnable targets. The live sound-change corpus has
-387 runnable rows. Neither completed alignment nor `bounded_limit` establishes
+research-only rows without runnable targets. Later lexical admissions are
+recorded separately; current audit and runnable populations live in the
+[generated population summary](../pgmc_integration/population_summary.md).
+Neither completed alignment nor `bounded_limit` establishes
 a settled history, an important scholarly disagreement, or permission to
 change the selected reconstruction.
 

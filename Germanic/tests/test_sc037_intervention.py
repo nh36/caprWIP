@@ -50,7 +50,7 @@ def test_selected_weight_negative_and_previous_breaking_umlaut_histories(current
     assert values["fūliθǭ"] == ["fȳlþe"]
     assert values["spénnilǭ"] == ["spinle"]
     selected = current["current"]["selected"]
-    assert len(selected) == 391
+    assert len(selected) == 392
     assert all(len(row["outputs"]) == 1 for row in selected)
     assert {row["concept"] for row in selected
             if row["outputs"] != [row["counterpart"]]} == {
@@ -131,3 +131,42 @@ def test_weak_unrounding_light_retention_and_positional_labials(current):
     assert current["current"]["labial"] == [
         ["*b*a"], ["*a*β*a"], ["*l*a*m*b"], ["*x*a*b*b*a"],
         ["*r*e*g*n*b*o*g*ô"], ["*r*e*g*n*β*o*g*ô"]]
+
+
+def test_selected_little_protects_both_hll_vowels_against_wrong_deletions(current):
+    controls = current["current"]["lexical_closeout"]
+    little = controls["little"]
+    assert little["row_id"] == "2337"
+    assert current["current"]["canonical"][little["input"]] == [little["target"]]
+    assert controls["hll"]["AF63Good"] == [[little["target"]]]
+    assert controls["hll"]["AF63Heavy"] == [["lȳtlu"]]
+    assert controls["hll"]["AF63Hap"] == [["lȳtel"]]
+
+
+def test_light_root_and_open_medial_conditions_have_distinct_controls(current):
+    controls = current["current"]["lexical_closeout"]
+    assert controls["light_root"]["AF66Good"] == [["netle"], ["lȳtelu"]]
+    assert controls["light_root"]["AF66Heavy"] == [["netle"], ["lȳtlu"]]
+    assert controls["closed_kettle"]["AF66Good"] == [["ċietel"]]
+    assert controls["closed_kettle"]["AF66Closed"] == [["ċietl"]]
+
+
+def test_canonical_fright_and_heaven_discriminate_quantity_and_n_scope(current):
+    controls = current["current"]["lexical_closeout"]
+    assert controls["shortening"]["AF117Good"] == [["fyrhte"]]
+    assert controls["shortening"]["AF117Final"] == [["fyrht"]]
+    assert controls["n_scope"]["AF64Good"] == [["fyrhte"], ["heofon"]]
+    assert controls["n_scope"]["AF64All"] == [["fyrhte"], ["heofu"]]
+
+
+def test_canonical_sea_dew_and_staged_pillow_discriminate_w_scope(current):
+    controls = current["current"]["lexical_closeout"]["w_scope"]
+    assert controls["AF54Good"] == [["sǣ"], ["dēaw"], ["pyle"]]
+    assert controls["AF54Post"] == [["sǣ"], ["dēaw"], ["pylwe"]]
+    assert controls["AF54Short"] == [["sǣ"], ["dēaw"], ["pylwe"]]
+    assert controls["AF54All"] == [["sǣ"], ["dēa"], ["pyle"]]
+
+
+def test_genuine_unselected_strong_plural_is_not_excluded_by_proto_gate(current):
+    assert current["current"]["lexical_closeout"]["pgmc_accusative_gate"] == [
+        ["*l*ū*t*i*l*a*n*z"]]

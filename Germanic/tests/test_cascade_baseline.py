@@ -200,7 +200,9 @@ class LegacySubsetTests(unittest.TestCase):
             BASELINE_DIR / "cascade_baseline_summary_pre_sc064_fee_input.json")
         approval = json.loads(
             (BASELINE_DIR / "approved_fee_input_migration.json").read_text())
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc063_lexical_coverage.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc063_lexical_coverage.json")
         mod.validate_cell_transition(previous, current, approval)
         self.assertEqual({r["row_id"] for r in approval["changes"]}, {"2006"})
         before = {r["row_id"]: r for r in previous["records"]}
@@ -208,6 +210,19 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual(before["2006"]["proto"], "*féxu")
         self.assertEqual(after["2006"]["proto"], "*féx")
         self.assertEqual(before["2006"]["outputs"], after["2006"]["outputs"])
+
+    def test_hvd_admission_preserves_every_certified_before_record(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc063_lexical_coverage.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc063_lexical_coverage.json")
+        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        approval = json.loads(
+            (BASELINE_DIR / "approved_hvd_lexical_expansion.json").read_text())
+        mod.validate_expansion_transition(previous, current, approval)
+        self.assertEqual([row["row_id"] for row in approval["additions"]], ["2337"])
+        self.assertEqual(current["summary"]["total_lexemes"] -
+                         previous["summary"]["total_lexemes"], 1)
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy

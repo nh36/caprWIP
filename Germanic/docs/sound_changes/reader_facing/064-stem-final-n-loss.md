@@ -45,6 +45,10 @@ Campbell attributes retained *n* in *nēten* 'livestock' to the inflected
 forms [@Campbell1959, p. 189, §473]. Goering's later \emph{*nētīn}
 therefore does not require immunity to the early law: a later paradigmatic
 state and uninterrupted inherited retention are different claims.
+An exposed early final \emph{*-īn} would regularly lose its consonant;
+the later \emph{*nētīn} cannot be presented as an exemption or as
+uninterrupted phonological survival. Its complete ancestral derivative
+and intervening paradigmatic history are separate questions.
 Final \emph{*ī} remains long until later shortening, while medial
 \emph{*ī} has already shortened in the inflected forms
 [@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
