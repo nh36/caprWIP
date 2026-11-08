@@ -178,8 +178,8 @@ def test_production_gate_is_generic_and_preserves_every_old_output():
     for row in records:
         assert current[row["fst_input"]] == counterfactuals.get(
             row["fst_input"], row["outputs"].split("|"))
-    # SC040 protects the nonfinal heavy head in both notations; only the grave
-    # input licenses linking syncope. The old failed receipt remains unchanged.
-    assert current[forms[0]] == ["eorþecundere"]
+    # Ordinary SC114 removes the linker in both notations. Neither result
+    # solves the remaining pre-r loss; the original SC037 replay is unchanged.
+    assert current[forms[0]] == ["eorþcundere"]
     assert current[forms[1]] == ["eorþcundere"]
     assert current["xwí-līkaz"] == ["hwileċ"]

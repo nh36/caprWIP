@@ -5,6 +5,13 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The [Fulk--Goering high-vowel comparison](sound_changes/literature_dossiers/high_vowel_deletion_fulk_goering.md)
+prefers the quantitative account historically but defers production adoption.
+Its reproducible proposal identifies the specific downstream and selected-input
+obstructions; no new deletion law or lexical migration has been adopted.
+The review consolidation below remains WIP, not a certified replacement for
+`update`. Its earlier failed strict-certification receipts remain unchanged.
+
 The [syncope consolidation](sound_changes/audits/sc065-adjudication.md)
 supersedes the early compound-a proxy and overlapping high-vowel losses.
 Its controlled two-cell migration selects accusative spinle and fȳlþe;
