@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Current consolidated SC065 census and immutable earlier admission evidence.
+"""Current quantitative HVD census and immutable SC065 admission evidence.
 
 The former narrow-proxy counterfactual receipt remains historical evidence,
 not a specification of the current rule. Fresh meaningful wrong-rule
@@ -64,7 +64,7 @@ from oe_pipeline import load_rows, evaluation_input
 from sc_evidence import STAGES, find_stage, validate_bin
 from sound_change_order_sensitivity import batch_apply_down
 rt = layout()
-index, _, filename = find_stage("OEMedialSyncope")
+index, _, filename = find_stage("OEHighVowelApocope")
 paths = [rt.bin_dir / STAGES[index - 1][1], rt.bin_dir / filename]
 for path in paths:
     validate_bin(path, None)
@@ -94,8 +94,10 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
             rows = {row["sc_id"]: row for row in csv.DictReader(
                 (line for line in handle if not line.startswith("#")),
                 delimiter="\t")}
-        self.assertEqual(rows["SC065"]["entry_type"], "historical_sound_change")
-        self.assertEqual(rows["SC065"]["canonical_change_id"], "SC065")
+        self.assertEqual(rows["SC063"]["entry_type"], "historical_sound_change")
+        self.assertEqual(rows["SC065"]["entry_type"], "support_stage")
+        self.assertEqual(rows["SC065"]["canonical_change_id"], "SC063")
+        self.assertEqual(rows["SC117"]["canonical_change_id"], "SC072")
         self.assertEqual(rows["SC115"]["canonical_change_id"], "SC074")
         self.assertEqual(rows["SC115"]["entry_type"], "support_stage")
         self.assertIn("OEMedialSyncope", self.positions)
@@ -120,23 +122,23 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
             self.assertTrue(before and after, f"{concept}: missing stage output")
             if before != after:
                 fired[row_id] = (concept, before, after)
-        self.assertEqual({value[0] for value in fired.values()},
-                         EXPECTED_FIRING_CONCEPTS,
-                         f"SC065 firing census changed: {sorted(fired)}")
-        self.assertEqual(len(fired), len(EXPECTED_FIRING_CONCEPTS))
+        medial = {value[0] for value in fired.values()
+                  if not value[1][0].endswith(("*i", "*u", "*y", "*ų"))}
+        self.assertEqual(medial, EXPECTED_FIRING_CONCEPTS,
+                         f"Quantitative medial census changed: {sorted(fired)}")
         concept, before, after = fired[self.by_concept["filth"]["row_id"]]
         self.assertEqual(before, ["*f*ȳ*l*i*θ*ǭ"])
         self.assertEqual(after, ["*f*ȳ*l*θ*ǭ"])
 
     @pytest.mark.runtime
     def test_negative_controls_pass_the_stage_untouched(self):
-        for concept in sorted(NEGATIVE_CONTROL_CONCEPTS):
+        for concept in sorted(NEGATIVE_CONTROL_CONCEPTS - {"harvest"}):
             actual = self.live_stages()[self.by_concept[concept]["row_id"]]
             with self.subTest(concept=concept):
                 before, after = actual["before"], actual["after"]
                 self.assertEqual(
                     before, after,
-                    f"{concept}: SC065 must preserve the selected target")
+                    f"{concept}: quantitative HVD must preserve this selected stage")
 
     # ------------------------------------------------------------------
     # Witness admission and baseline
@@ -206,7 +208,7 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
                  in EDGES.read_text(encoding="utf-8").splitlines()
                  if not line.startswith("#")]
         rows = [row for row in csv.DictReader(lines, delimiter="\t")
-                if row["source_change_id"] == "SC065"
+                if row["source_change_id"] == "SC063"
                 and row["target_change_id"] == "SC055"]
         self.assertEqual(len(rows), 1, "SC065 -> SC055 edge missing")
         edge = rows[0]

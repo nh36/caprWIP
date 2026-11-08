@@ -2480,13 +2480,15 @@ define PNWGmcNStemNLoss [
 # §7.34 citing Boutkan 1995b: 292-3). Fem. in-stem oblique-singular and
 # unmarked-plural cells: after PGmc final-*z loss + 3rd-syllable apocope
 # have reduced gsg. *-īnaz / dsg. *-īni / asg. *-īnun / npl. *-īniz to
-# bare *-īn, the final *-n is lost in a post-PWGmc change diffusing
-# through the NWGmc dialect continuum (most thorough in OE/OS/OFri,
+# bare *-īn, the final *-n is lost after PWGmc differentiation
+# (most thorough in OE/OS/OFri,
 # partial in OHG: Isidor and Monsee Fragments retain -in). Yields the
 # *-ī shape which OEUnstressedLongVowelShortening turns into *-i,
 # surfacing as -e (Campbell §589.7: "-e < -i < -in"). Confirmed
-# Lautgesetzlich by Lat. loanword pulvīnus → pyle (Campbell §473), a
-# non-paradigmatic word with no inherited *-ī cell to level from.
+# Lautgesetzlich by Lat. loanword pulvīnus → pyle (Campbell §473).
+# Later nētīn reflects n restored from inflected forms (Campbell §473),
+# not immunity to the early loss. Execute after final bare-a exposure,
+# not as a productive post-HVD rule; see sc064-adjudication.md.
 # Parallel pattern to PNWGmcNStemNLoss above (fem. ōn-stems); kept as
 # a separate rule because the ōn-stem rule nasalizes (*-ōn → *-ǭ),
 # whereas the in-stem rule simply deletes (no nasalization survives,
@@ -3152,7 +3154,7 @@ define OEIUmlautDiphthong [
 # Example: PGmc *saiwiz 'sea' > *sāwi > *sǣi > OE sǣ
 # Must apply BEFORE i-umlaut (so *ā can umlaut to *ǣ) but AFTER ai monophthongization.
 define OEWLossBeforeI Ctx([
-    {*w} -> 0 || EnglishStarVocalic _ {*i} .#.
+    {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ [{*i}|{*ī}]
 ]);
 
 define OEIUmlaut FootCtx(OEIUmlautFronting
@@ -3534,30 +3536,35 @@ define OENonHighSyn FootCtx([
         [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.
 ]);
 
-define OEHighVowelApocope Ctx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongVowel _ .#.,
-    {*u} -> 0 || {*x} _ .#.,
-    {*ų} -> 0 || {*x} _ .#.,
-    {*i} -> 0 || {*x} _ .#.
+# SC063: quantitative HVD, following Fulk 2010 pp.129-134 and
+# Goering 2016 pp.186-188 / 2023 pp.67-68. No post-h deletion.
+define HvS [EnglishStarShortVowel|EnglishStarShortDiphthong];
+define HvL [EnglishStarLongVowel|EnglishStarLongDiphthong|{*ô}];
+define HvV [HvS|HvL];
+define HvH [HvL OEAnyConsonant* | HvS OEAnyConsonant OEAnyConsonant+];
+define HvI [HvH | HvS OEAnyConsonant HvV OEAnyConsonant+];
+define HvP [
+    HvH |
+    HvS OEAnyConsonant HvS OEAnyConsonant |
+    HvS OEAnyConsonant HvH
+];
+define OEHighVowelApocope FootCtx([
+    [{*i}|{*u}|{*y}|{*ų}] -> 0 ||
+        .#. OEAnyConsonant* HvI HvP* _
+        [.#. | OEAnyConsonant [HvL | HvS OEAnyConsonant [.#.|OEAnyConsonant]]]
 ] .o. [{*ᶜ} -> 0]);
+
+# SC117 realizes the early medial component of SC072, before HVD;
+# final long vowels remain long here (Goering 2016 pp.186-188).
+define OEMedLongShort FootCtx([
+    {*ī} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ū} -> {*u} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ȳ} -> {*y} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ā} -> {*a} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ē} -> {*e} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ǣ} -> {*æ} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ō} -> {*o} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}]
+]);
 
 # Apocope of word-final neuter *-ą. Unlike *i/*u apocope, this appears to be
 # unconditional (not restricted to heavy syllables). The original system's
@@ -3568,23 +3575,14 @@ define OEHeavySyllableNasalApocope Ctx([
 
 define OEWeightCleanup ?*;  # identity — no markers to clean up
 
-# SC065: the general heavy/open high-vowel syncope event, after mutation.
-# Replaces the dental proxy, heavy pre-l fragment and former SC115 deletion.
-# Hogg §§6.18-25; the singleton following onset bounds medial openness.
-# ô is included locally as a following vowel, not added to global classes.
-define OEMedialSyncope FootCtx([
-    [{*i}|{*u}|{*y}] -> 0
-        || .#. OEAnyConsonant* [
-            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
-            [EnglishStarShortVowel | EnglishStarShortDiphthong]
-                OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant [EnglishStarVocalic|{*ô}]
-]);
+# SC065: former syncope trace anchor. SC063 now owns the single
+# quantitative deletion; a second heavy/open loss would destroy HLL.
+define OEMedialSyncope ?*;
 
 # SC066: l-adjacent syncope (R/T vol.2 §6.7.4 pp. 270–278; Luick §336;
 # Brunner §159c pp. 132–133; Campbell §§388, 589; Barrack 351 p. 87,
 # 388 p. 96).
-# Ordinary heavy/open syncope now belongs to SC065.
+# Ordinary quantitative high-vowel deletion belongs to SC063.
 # This component contains only light-syllable pre-l deletion:
 #       (Luick §336, after Weyhe;
 #       Brunner §159c; Campbell §§388, 390): after a light syllable,
@@ -3763,6 +3761,7 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OEInterStressRaising
     .o. OEWICombinativeUUmlaut
     .o. PWGmcFinalBareALoss
+    .o. NWGmcInStemNLoss
     .o. PWGmcSurvivingBimoricOUnrounding
     .o. EAFBrighteningUnstressed
     .o. EAFBrightening
@@ -3777,9 +3776,9 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OEVelarPalatalization
     .o. OEPrefixAReduction
     .o. OEPostVelarWLoss
-    .o. OEWLossBeforeI
     .o. OEWsPalatalDiphthongization
     .o. OEIUmlaut
+    .o. OEWLossBeforeI
     .o. OELatePalatalDiphthong
     .o. OEJClusterCoalescence
     .o. OEBackMutation
@@ -3788,8 +3787,8 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OEWeightMarkers
     .o. OENonHighSyn
     .o. PGmcBAllophony
+    .o. OEMedLongShort
     .o. OEHighVowelApocope
-    .o. NWGmcInStemNLoss
     .o. OEMedialSyncope
     .o. OEHighLinkSyncope
     .o. OELAdjacentSyncope

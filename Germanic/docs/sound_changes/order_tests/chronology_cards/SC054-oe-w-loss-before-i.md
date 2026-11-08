@@ -1,5 +1,14 @@
 # SC054 OE W Loss Before I — chronology evidence card
 
+## Current source-critical interpretation, 8 November 2026
+
+The sea-only measurements below remain unchanged. Ringe-Taylor258--260
+independently places noninitial w-loss after mutation and before general
+syncope, and includes post-l w before long ī in pyle. The former
+postvocalic/final-short-i proxy and pre-umlaut placement are corrected;
+all391 selected finals remain unchanged. Source chronology is not
+inferred from sea's broad displacement interval. See `sc054-adjudication.md`.
+
 ## Position at experiment time
 - order_at_experiment_time: `54`
 - rule_name: `OEWLossBeforeI`

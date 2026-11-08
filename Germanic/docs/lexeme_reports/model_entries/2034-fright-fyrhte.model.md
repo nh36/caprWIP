@@ -23,7 +23,7 @@ as Gothic [`faurhtei`]{.iv lang=goth sort=faurhtei role=comparison_form} 'fear, 
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with `-u` or `-o` as
-analogically remodeled [@RingeTaylor2014, 395-396]. I therefore use the oblique
+analogically remodeled [@RingeTaylor2014, 380-381]. I therefore use the oblique
 in-stem form, which continues the older formation rather than the remodeled
 nominative.
 
@@ -43,7 +43,13 @@ selected target of this entry is the oblique cell.
 From [fúrxtīnaz]{.iv .recon lang=pgmc sort=furxtinaz role=selected_input} ‘fright’, the oblique in-stem develops through the loss and weakening
 of the final ending, yielding [`fyrhte`]{.iv lang=oe sort=fyrhte role=target_form} 'fright'. The form compared here therefore
 follows the ordinary Old English reduction of the abstract ending in this
-paradigm.
+paradigm. Final \emph{*n} after unstressed \emph{*ī} was lost after
+Proto-West-Germanic differentiation, once the inherited ending had become
+word-final, not as a productive late Old English deletion. Mutation and
+subsequent shortening and lowering then give *fyrhte*
+[@RingeTaylor2014, pp. 87--88; @Campbell1959, p. 189, §473,
+pp. 236--237, §589.7; @SieversBrunner1965, pp. 225--226, §280;
+@Fulk2018, p. 173, §7.34].
 
 The later nominative forms with `-u` or `-o` belong to a subsequent analogical
 reshaping of the paradigm. The selected target is earlier in that sense: it is

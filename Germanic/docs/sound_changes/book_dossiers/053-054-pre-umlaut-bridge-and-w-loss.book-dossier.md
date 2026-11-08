@@ -1,5 +1,14 @@
 # SC053-SC054: Pre-umlaut Bridge and W-loss
 
+## Current bounded SC054 correction, 8 November 2026
+
+The earlier editorial bridge below remains historical discussion.
+SC053 is unchanged. The directly checked Ringe-Taylor258--260 passage
+places SC054 after mutation and includes noninitial postconsonantal w
+before unstressed long ī, independently witnessed by pyle. Its former
+final-short-i/postvocalic proxy is corrected, with all391 selected
+finals conserved. See `sc054-adjudication.md` and the individual reader.
+
 ## 1. Role in the book
 
 This unit is a small chronological bridge between the promoted SC052 velar-palatalization hinge report and the promoted SC055-SC056 umlaut-core report. Its main editorial role is to keep two ordinary FST changes explicit in the assembled sound-change half without pretending that this is a large textbook chapter.

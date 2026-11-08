@@ -9,15 +9,15 @@ report manifest and class assembly manifest. Regenerate only with
 | legacy | 380 |
 | selected | 391 |
 | audit | 397 |
-| legacy_current_required | 154 |
-| required | 165 |
-| assembled | 172 |
+| legacy_current_required | 155 |
+| required | 166 |
+| assembled | 173 |
 | production_pilots | 11 |
 | format_tests | 1 |
-| reviewed_rows | 20 |
-| scoped_cases | 23 |
-| philological_selected | 18 |
-| pilot_current_required | 169 |
+| reviewed_rows | 21 |
+| scoped_cases | 24 |
+| philological_selected | 19 |
+| pilot_current_required | 170 |
 
 added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335, 2336.
 

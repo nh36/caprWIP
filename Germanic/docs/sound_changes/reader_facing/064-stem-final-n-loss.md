@@ -2,12 +2,16 @@
 
 ## Historical discussion
 
-Evidence for post-apocope reduction is strikingly uneven. The inherited
+The inherited
 feminine \emph{in}-stem represented by Gothic \emph{faurhtei}, OE \emph{fyrhtu},
 and oblique OE \emph{fyrhte} supplies the relevant evidence
 [@Orel2003, p. 120; @RingeTaylor2014, pp. 380--381; @Campbell1959, p. 236, §589.7].
-No comparable witness orders the medial syncope that follows. Hogg, Ringe and Taylor, and Fulk describe both
-processes within the late history of weak syllables
+Final \emph{*n} after unstressed \emph{*ī} was lost after
+Proto-West-Germanic differentiation; conservative southern Old High German
+prevents treating it as an undifferentiated Northwest Germanic law
+[@RingeTaylor2014, pp. 87--88; @Fulk2018, p. 173, §7.34].
+This early loss must be distinguished from the later weak-syllable
+developments described by Hogg, Ringe and Taylor, and Fulk
 [@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
 @Fulk2018, p. 91, §5.6].
 
@@ -17,19 +21,32 @@ processes within the late history of weak syllables
 define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
 ```
 
-Only final \emph{*n} after long \emph{*ī} is at issue, as in the inherited
-\emph{in}-stem behind OE \emph{fyrhte} ‘fright’.
+Only word-final \emph{*n} after unstressed long \emph{*ī} is at issue.
+The conditioning is phonological, not membership in the feminine
+\emph{īn}-stems. Besides their obliques, Campbell cites *strenge*
+'strength', the loanword *pyle* 'pillow' and early past-subjunctive plural
+endings [@Campbell1959, p. 189, §473; @SieversBrunner1965, pp. 225--226, §280].
 
 CAPR models the oblique OE form through the Proto-Germanic genitive singular
-[fúrxtīnaz]{.recon} 'fright', following the project convention of using an appropriate
+\emph{*fúrxtīnaz} 'fright', following the project convention of using an appropriate
 non-nominative paradigm cell when the nominative does not supply the required
-derivation. Within this selected genitive derivation, the same input fixes both
-ordering boundaries. Before
+derivation. Final ending loss exposes \emph{*fúrxtīn}; early loss of
+\emph{*n}, mutation and later shortening yield *fyrhte* 'fright'.
+This selected encoding imposes two implementation boundaries. Before
 [SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), PGmc
-[fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’.
+\emph{*fúrxtīnaz} ‘fright’ yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’.
 After [SC072
 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc
-[fúrxtīnaz]{.recon} again yields [*fyrhten*]{.pred} rather than expected *fyrhte* 'fright'. I
-therefore order final bare-a loss, stem-final n-loss, and unstressed long-vowel
-shortening in that sequence. Both boundaries are firm within the selected
-genitive derivation and depend on one inherited lexeme/paradigm.
+\emph{*fúrxtīnaz} again yields [*fyrhten*]{.pred} rather than expected *fyrhte* 'fright'.
+The former boundary exposes the segment; the latter keeps its long-vowel
+environment visible. Neither dates the loss to a late post-apocope period.
+
+Campbell attributes retained *n* in *nēten* 'livestock' to the inflected
+forms [@Campbell1959, p. 189, §473]. Goering's later \emph{*nētīn}
+therefore does not require immunity to the early law: a later paradigmatic
+state and uninterrupted inherited retention are different claims.
+Final \emph{*ī} remains long until later shortening, while medial
+\emph{*ī} has already shortened in the inflected forms
+[@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
+No word-specific protection or added accent is required. The exact date
+of paradigmatic retention or restoration is not fixed by these comparisons.

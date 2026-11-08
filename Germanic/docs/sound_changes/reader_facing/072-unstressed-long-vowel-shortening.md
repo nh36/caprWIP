@@ -3,7 +3,7 @@
 ## Historical discussion
 
 Campbell describes the shortening of unaccented long vowels, and Ringe and
-Taylor place it among the last prehistoric Old English changes before the
+Taylor place the later component among the last prehistoric Old English changes before the
 merger of unstressed \emph{*æ} with \emph{*e}
 [@Campbell1959, p. 148, §355; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
@@ -27,11 +27,19 @@ define OEUnstressedLongVowelShortening FootCtx(OEUnstressedLongVowelShortening1
     .o. OEUnstressedLongVowelShortening8);
 ```
 
-The rule shortens the remaining unstressed long vowels before weak final
+An earlier medial component is separately realized in
+[SC117 OEMedLongShort](#rule-OEMedLongShort), before
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
+Goering's contrast between final \emph{*nētīn} and medially shortened
+inflected forms requires that distinction
+[@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
+The rule below shortens the remaining unstressed long vowels before weak final
 syllables reach their later forms. A small group of lexical witnesses fixes its
 chronology.
 
 If the rule is moved before [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’. If the rule is delayed until after [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* ‘adder’, and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* ‘father’. These outputs require [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) to follow [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) and precede [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
 
-Shortening therefore follows the earlier weak-tail preparation and immediately
-precedes the merger.
+The late component therefore follows the earlier weak-tail preparation and
+immediately precedes the merger. The old fright displacement records loss
+of the long-i environment in the executable; it does not independently
+date the early final-n law to this late corridor.

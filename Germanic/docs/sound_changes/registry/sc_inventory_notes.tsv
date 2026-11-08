@@ -77,7 +77,7 @@ SC050	Sievers Law Syncope	not_started			Sievers Law Syncope is provisionally gro
 SC051	OE Sk Palatalization	not_started				no
 SC052	Class-distinct velar palatalization		day; hedge; singe	Singleton ʝ contrasts with gg/ng stop-reflex proxies.	Postmutation merger is a defended working choice; Hogg's objection and eligibility disagreement remain explicit.	yes
 SC053	OE Post Velar W Loss	not_started				no
-SC054	OE W Loss Before I	not_started				no
+SC054	Noninitial w-loss before unstressed i/ī	adjudicated	sea; pillow	source_supported	General source environment and post-umlaut placement; initial/stressed negatives preserved, all391 selected finals unchanged.	no
 SC055	OE I Umlaut	source_partial_chain		SC056 ordinary-before-mutation split adopted; old gift/sheath composite dating superseded. SC105 retains unchanged late approximation with unresolved conditioner.		no
 SC056	OE Ws Palatal Diphthongization	source_partial_chain		Retain ordinary-before-mutation; headed-foot rather than word-initial domain (Hogg Grammar 5.48 n.1). Prefixed gesceaft diphthongizes its root, not its weak initial syllable.	Earlier ordinary/late split is preserved; SC105 is unchanged.	no
 SC057	OE J Cluster Coalescence	not_started				no
@@ -85,9 +85,9 @@ SC059	OE Back Mutation	not_started				no
 SC060	OE Ws Palatal Umlaut	not_started				no
 SC061	OE Weak Tail Nasal Loss	not_started				no
 SC062	OE Weight Markers	not_started			Identity marker stage used for weight-sensitive conditioning before apocope; appendix only.	no
-SC063	High-vowel apocope with heavy-light retention	adjudicated	heads; filth; spindle	Conventional apocope retains final high vowels after a heavy first plus light second syllable. Fulk's conservative Mercian material and Ringe-Taylor's alternative ordering remain explicit.	Consolidated source-backed account; prior experiments remain historical records.	no
-SC064	NWGmc In Stem N Loss	not_started			NWGmc In Stem N Loss is applied after OEHighVowelApocope in the current cascade, so the historical label needs an explanatory note.	yes
-SC065	General heavy/open high-vowel syncope	adjudicated	filth; spindle; thistle; widow	One general short weak-i/u/y deletion after a heavy primary syllable in bounded open medial position. Mutation precedes loss; dental and heavy pre-l fragments are consolidated.	Consolidated source-backed account; prior experiments remain historical records.	no
+SC063	Quantitative high-vowel deletion	adjudicated	heads; livestock; little; idle; filth; spindle	Fulk-Goering quantitative groups preserve HLL and lose a medial high vowel before a heavy following syllable; final/medial quantity independently discriminated.	One deletion owner; conventional and Ringe-Taylor comparisons and all prior experiments preserved.	no
+SC064	Early final n-loss after unstressed ī	adjudicated	fright; strenge; pillow	technical_computational	Post-PWGmc OE antecedent; unchanged rewrite moved after bare-a exposure. Later nētīn does not reopen the early law. Fright boundaries are token exposure/long-vowel visibility, not late historical dating.	no
+SC065	Former general-syncope trace anchor	adjudicated		Identity support anchor of SC063; a second heavy/open loss would destroy independently supported HLL retention.	Previous dental/consolidation evidence and selected accusatives remain preserved; distinct SC066 and weak/technical operations unchanged.	no
 SC066	Later light-syllable pre-l syncope	adjudicated	nettle; companion; kettle	Only later light pre-l loss remains; d/l and inherited theta/f-l environments and final-closed syllables retain the vowel. The former spindle relation is superseded.	Consolidated source-backed account; prior experiments remain historical records.	no
 SC067	OE Dental Assimilation	not_started				no
 SC068	Preconsonantal degemination before sonorants	adjudicated	spindle; bottom	Unchanged tt/nn simplification before sonorants. General SC065 high syncope creates spindle's nnl cluster; current accusative spinle versus displaced spinnle confirms feeding. The former SC066 reciprocal group is archival.	Consolidated source-backed account; prior experiments remain historical records.	no

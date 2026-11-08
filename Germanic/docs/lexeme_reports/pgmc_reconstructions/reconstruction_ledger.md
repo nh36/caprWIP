@@ -1941,8 +1941,8 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 ## 2006: fee / feoh
 
-Current citation: *féxu (pgmc); selected input: *féxu (pgmc; variety: none; equality_convention).
-Runnable: 1; derivation class: regular.
+Current citation: *féxu (pgmc); selected input: *féx (preoe; variety: transponent; explicit_sidecar).
+Runnable: 1; derivation class: early_analogy.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
 | --- | --- | --- | --- | --- | --- |

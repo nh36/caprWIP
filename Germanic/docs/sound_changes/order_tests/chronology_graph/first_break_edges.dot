@@ -43,7 +43,7 @@ digraph first_break_chronology {
   "SC051" [label="SC051\nOE Sk Palatalization"];
   "SC052" [label="SC052\nClass-distinct English velar palatalization"];
   "SC053" [label="SC053\nOE Post Velar W Loss"];
-  "SC054" [label="SC054\nOE W Loss Before I"];
+  "SC054" [label="SC054\nNoninitial w-loss before unstressed i/ī"];
   "SC055" [label="SC055\nOE I Umlaut"];
   "SC056" [label="SC056\nOrdinary West Saxon palatal diphthongization"];
   "SC057" [label="SC057\nOE J Cluster Coalescence"];
@@ -51,9 +51,9 @@ digraph first_break_chronology {
   "SC059" [label="SC059\nOE Back Mutation"];
   "SC060" [label="SC060\nOE Ws Palatal Umlaut"];
   "SC061" [label="SC061\nOE Weak Tail Nasal Loss"];
-  "SC063" [label="SC063\nHigh-vowel apocope with heavy-light retention"];
-  "SC064" [label="SC064\nNWGmc In Stem N Loss"];
-  "SC065" [label="SC065\nGeneral heavy/open high-vowel syncope"];
+  "SC063" [label="SC063\nQuantitative high-vowel deletion"];
+  "SC064" [label="SC064\nEarly final n-loss after unstressed ī"];
+  "SC065" [label="SC065\nFormer general-syncope trace anchor"];
   "SC066" [label="SC066\nLater light-syllable pre-l syncope"];
   "SC067" [label="SC067\nOE Dental Assimilation"];
   "SC068" [label="SC068\nPreconsonantal degemination before sonorants"];
@@ -177,10 +177,10 @@ digraph first_break_chronology {
   "SC061" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC063" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC063" -> "SC072" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC064" -> "SC041" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC064" -> "SC072" [label="near_reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
+  "SC064" -> "SC041" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC064" -> "SC072" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC065" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC065" -> "SC055" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC065" -> "SC055" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC065" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC066" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC066" -> "SC068" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
@@ -194,7 +194,7 @@ digraph first_break_chronology {
   "SC070" -> "SC071" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC071" -> "SC070" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
   "SC071" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC072" -> "SC064" [label="near_reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
+  "SC072" -> "SC064" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC072" -> "SC073" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC073" -> "SC072" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC073" -> "SC085" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
@@ -225,5 +225,7 @@ digraph first_break_chronology {
   "SC056" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC035" -> "SC107" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC035" -> "SC052" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
-  "SC065" -> "SC068" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC065" -> "SC068" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
+  "SC063" -> "SC068" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC055" -> "SC054" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
 }

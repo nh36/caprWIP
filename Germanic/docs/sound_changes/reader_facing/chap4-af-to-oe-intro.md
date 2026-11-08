@@ -102,8 +102,15 @@ published e-alternatives and the confidence in this choice.
 Syncope, apocope and weak-vowel quality:
 Mutation precedes the ordinary high-vowel losses: a subsequently lost
 \emph{*i} has already fronted the root, as in *fȳlþe* 'filth'.
-The conventional working sequence is ordinary nonhigh syncope (SC114),
-high-vowel apocope (SC063), then heavy/open high-vowel syncope (SC065).
+The former conventional working sequence distinguished ordinary nonhigh
+syncope (SC114), high-vowel apocope (SC063) and heavy/open high-vowel
+syncope (SC065). The adopted quantitative account instead gives SC063
+one final/medial operation, preserving heavy--light--light *hēafudu*
+'heads' and distinguishing the following-heavy *nētna* 'of livestock'.
+Early medial shortening belongs to SC072 through its separate component
+SC117; SC065 remains only a trace anchor
+[@Fulk2010, pp. 129--134, 140--142; @Goering2016, pp. 186--188;
+@Goering2023, pp. 67--68].
 These are prehistoric Old English changes, not simply late literary
 reductions toward Middle English. The former dental and heavy pre-\emph{*l}
 fragments implement the same high-vowel event and are no longer separate
@@ -112,7 +119,7 @@ its own consonant and openness conditions
 [@HoggGrammar2011, pp. 220--227, §§6.14--6.25;
 @SieversBrunner1965, pp. 132--133, §159; @Luick1914, pp. 310--311, §336].
 
-The trisyllabic ordering remains disputed: Fulk's conservative Mercian
+The trisyllabic analysis remains disputed: Fulk's conservative Mercian
 evidence, Ringe and Taylor's syncope-before-apocope account, and Hogg's
 tentative phonological alternative are discussed with SC063.
 Early weak front-vowel unrounding and later lowering are distinct

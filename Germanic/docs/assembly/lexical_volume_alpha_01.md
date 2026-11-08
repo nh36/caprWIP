@@ -31,7 +31,7 @@ The lexical catalogue is ordered by seven derivation classes and, within each cl
 
 - Regular derivations: 93
 - Attested variants: 6
-- Early analogy: 35
+- Early analogy: 36
 - Late analogy: 28
 - Reconstructed Old English comparators: 3
 - Known but unmodelled developments: 2
@@ -1499,7 +1499,7 @@ Proto input: _\*fūliθǭ_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{OE I Umlaut} & \emph{*fȳliθǭ} \\
-\mbox{OE Medial Syncope} & \emph{*fȳlθǭ} \\
+\mbox{OE High Vowel Apocope} & \emph{*fȳlθǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*fȳlθæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*fȳlθe} \\
 \end{tabularx}
@@ -3545,7 +3545,7 @@ Proto input: _\*líznōjaną_
 OE Heavy Syllable Nasal Apocope & \emph{*léornōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*léornōjąn} \\
 \mbox{OE I Umlaut} & \emph{*léornējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*léornejąn} \\
+\mbox{OE Med Long Short} & \emph{*léornejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*léornejan} \\
 OE Intervocalic J Vocalization & \emph{*léorneian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*léornian} \\
@@ -4716,7 +4716,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*skḗawōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*skḗawōjąn} \\
 \mbox{OE Sk Palatalization} & \emph{*ʃḗawōjąn} \\
 \mbox{OE I Umlaut} & \emph{*ʃḗawējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*ʃḗawejąn} \\
+\mbox{OE Med Long Short} & \emph{*ʃḗawejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*ʃḗawejan} \\
 OE Intervocalic J Vocalization & \emph{*ʃḗaweian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*ʃḗawian} \\
@@ -5372,7 +5372,7 @@ Proto input: _\*súndrōjaną_
 OE Heavy Syllable Nasal Apocope & \emph{*súndrōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*súndrōjąn} \\
 \mbox{OE I Umlaut} & \emph{*súndrējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*súndrejąn} \\
+\mbox{OE Med Long Short} & \emph{*súndrejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*súndrejan} \\
 OE Intervocalic J Vocalization & \emph{*súndreian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*súndrian} \\
@@ -8791,6 +8791,106 @@ The relevant point is the class split. [_festan_]{.iv lang=oe sort=festan role=t
 outcome of the class-I formation, while the better-known _æ_-forms belong to a
 later analogical layer.
 
+### fee — OE _feoh_
+
+Derivation: citation reconstruction _\*féxu_; form followed here _\*féx_ > _feoh_ (early analogy).
+
+#### Derivation trace
+
+Proto input: _\*féx_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Breaking} & \emph{*féox} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _feoh_
+
+#### Reconstruction and comparative evidence
+
+The inherited comparative lexeme is the neuter u-stem
+[féxu]{.iv .recon lang=pgmc sort=fexu role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md:11" occ_id="Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md:11:1"}
+'cattle, wealth'. Kroonen gives the u-stem citation *fehu*, and Orel
+gives *fexu*, with a separately attached *fexan* antecedent for Old
+English [@Kroonen2013, p. 134; @Orel2003, p. 97].
+The latter notation is preserved as an alternative source formation,
+not silently reinterpreted as proof of an inherited n-stem.
+
+#### Old English evidence
+
+Old English [*feoh*]{.iv lang=oe sort=feoh role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md:20" occ_id="Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md:20:1"}
+'cattle, wealth' follows the a-declension. Campbell's strong paradigm
+distinguishes the nominative-accusative from its obliques; Brunner
+explicitly classifies the word with the a-stems
+[@Campbell1959, pp. 225--226, §574;
+@SieversBrunner1965, p. 221, §275].
+The cell compared here remains nominative-accusative singular, not genitive
+*feos*.
+
+#### Early transfer and selected input
+
+Ringe and Taylor argue that the u-stem was transferred early to the
+a-stems, before the relevant intervocalic h-loss. Their transferred
+nominative-accusative is already endingless
+[féx]{.iv .recon lang=preoe variety=transponent sort=fex role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md:34:1"}
+'cattle, wealth', representing their *feh* in the notation used here
+[@RingeTaylor2014, p. 177, n. 4].
+The inherited u-stem citation and this later transponent therefore
+have different historical stages; the a-stem is not reconstructed
+as inherited Proto-Germanic.
+
+#### Development to Old English
+
+The transferred *feh* precedes breaking, which yields *feoh*.
+Its endingless cell compared here supplies no intervocalic high vowel to
+be lost or contracted. Ringe and Taylor contrast that history with the
+inherited u-stem's problematic intervening-vowel development
+[@RingeTaylor2014, p. 177, n. 4].
+The relative date is bounded by breaking and intervocalic h-loss,
+not an independently established absolute year.
+
+#### Previous selection and competing histories
+
+The previous selection used the inherited *féxu* directly.
+That input can give *feoh* under a conventional implementation with
+an additional post-h deletion, but gives the unaccepted prediction
+*feou* under quantitative high-vowel deletion. The source-supported
+transfer, not restoration of a match count, motivates the new input.
+An a-stem carrier *féxą* also gives *feoh* conditionally, but is
+unnecessary: the cited later formation already lacks an ending.
+The inherited comparative headword and the attested cell compared here
+remain unchanged.
+
 ### flask — OE _flasce_
 
 Derivation: citation reconstruction _\*flaskō_; form followed here _\*fláskōn_ > _flasce_ (early analogy).
@@ -10321,8 +10421,8 @@ Proto input: _\*sáiwiz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE W Loss Before I} & \emph{*sāi} \\
-\mbox{OE I Umlaut} & \emph{*sǣi} \\
+\mbox{OE I Umlaut} & \emph{*sǣwi} \\
+\mbox{OE W Loss Before I} & \emph{*sǣi} \\
 \mbox{OE High Vowel Apocope} & \emph{*sǣ} \\
 \end{tabularx}
 \end{minipage}
@@ -10493,7 +10593,7 @@ Proto input: _\*spárōjaną_
 OE Heavy Syllable Nasal Apocope & \emph{*sparōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*sparōjąn} \\
 \mbox{OE I Umlaut} & \emph{*sparējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*sparejąn} \\
+\mbox{OE Med Long Short} & \emph{*sparejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*sparejan} \\
 OE Intervocalic J Vocalization & \emph{*spareian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*sparian} \\
@@ -12316,8 +12416,8 @@ Proto input: _\*fúrxtīnaz_
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*fúrxtīn} \\
-\mbox{OE I Umlaut} & \emph{*fyrxtīn} \\
-\mbox{NWGmc In Stem N Loss} & \emph{*fyrxtī} \\
+\mbox{NWGmc In Stem N Loss} & \emph{*fúrxtī} \\
+\mbox{OE I Umlaut} & \emph{*fyrxtī} \\
 OE Unstressed Long Vowel Shortening & \emph{*fyrxti} \\
 OE Med Unstressed I Lowering1 & \emph{*fyrxte} \\
 \end{tabularx}
@@ -12337,7 +12437,7 @@ as Gothic [_faurhtei_]{.iv lang=goth sort=faurhtei role=comparison_form source_r
 different lexeme but an oblique singular cell within that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with _-u_ or _-o_ as
-analogically remodeled [@RingeTaylor2014, 395-396]. I therefore use the oblique
+analogically remodeled [@RingeTaylor2014, 380-381]. I therefore use the oblique
 in-stem form, which continues the older formation rather than the remodeled
 nominative.
 
@@ -12357,7 +12457,13 @@ Old English form here of this entry is the oblique cell.
 From [fúrxtīnaz]{.iv .recon lang=pgmc sort=furxtinaz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:43" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:43:1"} ‘fright’, the oblique in-stem develops through the loss and weakening
 of the final ending, yielding [_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:44:1"} 'fright'. The form compared here therefore
 follows the ordinary Old English reduction of the abstract ending in this
-paradigm.
+paradigm. Final \emph{*n} after unstressed \emph{*ī} was lost after
+Proto-West-Germanic differentiation, once the inherited ending had become
+word-final, not as a productive late Old English deletion. Mutation and
+subsequent shortening and lowering then give *fyrhte*
+[@RingeTaylor2014, pp. 87--88; @Campbell1959, p. 189, §473,
+pp. 236--237, §589.7; @SieversBrunner1965, pp. 225--226, §280;
+@Fulk2018, p. 173, §7.34].
 
 The later nominative forms with _-u_ or _-o_ belong to a subsequent analogical
 reshaping of the paradigm. The Old English form here is earlier in that sense: it is
@@ -12371,12 +12477,12 @@ later remodeled nominative line.
 
 | PGmc cell / interpretation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
 | :--- | :--- | :--- | :--- | :--- |
-| citation in-stem headword | [_\*furxtīn_]{.iv lang=pgmc sort=furxtin role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:60:1"} | broader noun-class label | wider family context | useful lexeme label, but not the cell compared here |
-| remodeled nominative line | nominative in-stem forms | [_fyrhtu_]{.iv lang=oe sort=fyrhtu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61:1"} 'fright' / [_fyrhto_]{.iv lang=oe sort=fyrhto role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61:2"} 'fright' type lemma forms | [_fyrhtu_]{.iv lang=oe sort=fyrhtu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61:3"} 'fright' / [_fyrhto_]{.iv lang=oe sort=fyrhto role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:61:4"} 'fright' | genuine OE evidence, but later remodeled |
-| selected oblique singular | [_\*fúrxtīnaz_]{.iv lang=pgmc sort=furxtinaz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:62:1"} | regular output: [_fyrhte_]{.iv lang=oe sort=fyrhte role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:62:2"} 'fright' | [_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:62" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:62:3"} 'fright' | exact match between input, output, and attested cell |
+| citation in-stem headword | [_\*furxtīn_]{.iv lang=pgmc sort=furxtin role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:66" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:66:1"} | broader noun-class label | wider family context | useful lexeme label, but not the cell compared here |
+| remodeled nominative line | nominative in-stem forms | [_fyrhtu_]{.iv lang=oe sort=fyrhtu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67:1"} 'fright' / [_fyrhto_]{.iv lang=oe sort=fyrhto role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67:2"} 'fright' type lemma forms | [_fyrhtu_]{.iv lang=oe sort=fyrhtu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67:3"} 'fright' / [_fyrhto_]{.iv lang=oe sort=fyrhto role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:67:4"} 'fright' | genuine OE evidence, but later remodeled |
+| selected oblique singular | [_\*fúrxtīnaz_]{.iv lang=pgmc sort=furxtinaz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:68:1"} | regular output: [_fyrhte_]{.iv lang=oe sort=fyrhte role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:68:2"} 'fright' | [_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:68" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:68:3"} 'fright' | exact match between input, output, and attested cell |
 
 The oblique in-stem form is the relevant comparison form. It yields attested
-[_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:65" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:65:1"} 'fright' directly, while the more familiar nominative forms belong to a later
+[_fyrhte_]{.iv lang=oe sort=fyrhte role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:71" occ_id="Germanic/docs/lexeme_reports/model_entries/2034-fright-fyrhte.model.md:71:1"} 'fright' directly, while the more familiar nominative forms belong to a later
 analogical layer.
 
 ### have — OE _hæfeþ_
@@ -14200,7 +14306,7 @@ Proto input: _\*θístilas_
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Brightening Unstressed} & \emph{*θéstilæs} \\
 \mbox{OE I Umlaut} & \emph{*θistilæs} \\
-\mbox{OE Medial Syncope} & \emph{*θistlæs} \\
+\mbox{OE High Vowel Apocope} & \emph{*θistlæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*θistles} \\
 \end{tabularx}
 \end{minipage}

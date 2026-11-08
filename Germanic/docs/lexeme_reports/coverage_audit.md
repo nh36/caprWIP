@@ -2,29 +2,29 @@
 
 - Total OE rows with real counterpart: 391
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 169
-- Required rows with published SOURCE: 28
+- Rows requiring lexeme report: 170
+- Required rows with published SOURCE: 29
 - Required rows with no published SOURCE: 141
-- Rows selected independently for philological discussion: 18
+- Rows selected independently for philological discussion: 19
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 154
+- Required rows with source material available but no manifest-backed production report: 155
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
-- Regular rows with empty NOTE but supporting material present: 225
+- Regular rows with empty NOTE but supporting material present: 224
 - Rows with STATUS=format_test manifest entries: 1
 - Regular rows with NOTE (report required): 86
-- Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
+- Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 12
 
 ## Counts by DERIVATION_CLASS
 
 | DERIVATION_CLASS | Total rows | Required | Manifest-backed production reports | Source material available | No source material found |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | attested_variant | 6 | 6 | 1 | 5 | 0 |
-| early_analogy | 35 | 35 | 2 | 33 | 0 |
+| early_analogy | 36 | 36 | 2 | 34 | 0 |
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 28 | 28 | 4 | 24 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 312 | 90 | 0 | 86 | 4 |
+| regular | 311 | 90 | 0 | 86 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -34,6 +34,7 @@
 | 1933 | adder | nǣdre | regular | no | certified_editorial_source | format_test | model_entries/1933-adder-nǣdre.model.md | philological=adder-feminine-vocalism |
 | 1934 | bake | bacan | regular | yes | certified_editorial_source | - | model_entries/1934-bake-bacan.model.md | NOTE, philological=bake-present-formation |
 | 1941 | beaver | befer | regular | no | certified_editorial_source | - | research_memos/1941-beaver-befer.md | philological=beaver-formation-direction |
+| 2006 | fee | feoh | early_analogy | no | certified_editorial_source | - | model_entries/2006-fee-feoh.model.md | DERIVATION_CLASS=early_analogy, philological=fee-early-a-stem-transfer |
 | 2011 | find | fundne | late_analogy | yes | certified_editorial_source | - | model_entries/2011-find-fundene.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=find-strong-nominative-plural |
 | 2013 | fire | fȳre | known_unmodelled | yes | certified_editorial_source | pilot | model_entries/2013-fire-fȳre.model.md | NOTE, DERIVATION_CLASS=known_unmodelled, production_report, philological=fire-input-and-genealogy |
 | 2053 | hammer | hamer | attested_variant | yes | certified_editorial_source | - | model_entries/2053-hammer-hameres.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=hammer-citation-hamer |
@@ -92,6 +93,7 @@
 | 1992 | door | dor | regular | yes | source_material | - | archive/dev_notes_slices/1992-door-dor.md, archive/packets/1992-door-dor.md, model_entries/1992-door-dor.model.md, model_entries/1992-door-dor.source_ledger.md, model_entries/2183-shoulder-sċuldrum.model.md, model_entries/2183-shoulder-sċuldrum.source_ledger.md, pgmc_reconstructions/comparison_map.md, research_memos/1992-door-dor.md | NOTE |
 | 2003 | fare | faran | regular | yes | source_material | - | archive/dev_notes_slices/2003-fare-faran.md, archive/packets/2003-fare-faran.md, model_entries/2003-fare-faran.model.md, model_entries/2003-fare-faran.source_ledger.md, research_memos/2003-fare-faran.md | NOTE |
 | 2004 | fast | festan | early_analogy | yes | source_material | - | archive/dev_notes_slices/2004-fast-festan.md, archive/packets/2004-fast-festan.md, model_entries/2004-fast-festan.model.md, model_entries/2004-fast-festan.source_ledger.md, research_memos/2004-fast-festan.md | NOTE, DERIVATION_CLASS=early_analogy |
+| 2006 | fee | feoh | early_analogy | no | certified_editorial_source | - | model_entries/2006-fee-feoh.model.md | DERIVATION_CLASS=early_analogy, philological=fee-early-a-stem-transfer |
 | 2007 | fell | fell | regular | yes | source_material | - | archive/dev_notes_slices/2007-fell-fell.md, archive/packets/2007-fell-fell.md, model_entries/2007-fell-fell.model.md, model_entries/2007-fell-fell.source_ledger.md, research_memos/2007-fell-fell.md | NOTE |
 | 2008 | fern | fearn | regular | yes | source_material | - | archive/dev_notes_slices/2008-fern-fearn.md, archive/packets/2008-fern-fearn.md, model_entries/2008-fern-fearn.model.md, model_entries/2008-fern-fearn.source_ledger.md, research_memos/2008-fern-fearn.md | NOTE |
 | 2009 | field | feld | regular | yes | source_material | - | archive/dev_notes_slices/2009-field-feld.md, archive/packets/2009-field-feld.md, model_entries/2009-field-feld.model.md, model_entries/2009-field-feld.source_ledger.md, research_memos/2009-field-feld.md | NOTE |
@@ -287,7 +289,6 @@
 | 2001 | eel | ǣl | regular | no | source_material | - | archive/dev_notes_slices/2001-eel-ǣl.md | none |
 | 2002 | fall | feallan | regular | no | source_material | - | archive/dev_notes_slices/2002-fall-feallan.md | none |
 | 2005 | father | fæder | regular | no | source_material | - | archive/dev_notes_slices/2005-father-fæder.md | none |
-| 2006 | fee | feoh | regular | no | source_material | - | archive/dev_notes_slices/2006-fee-feoh.md | none |
 | 2010 | fight | feohtan | regular | no | source_material | - | archive/dev_notes_slices/2010-fight-feohtan.md | none |
 | 2012 | finger | finger | regular | no | source_material | - | archive/dev_notes_slices/2012-finger-finger.md | none |
 | 2014 | fish | fisċ | regular | no | source_material | - | archive/dev_notes_slices/2014-fish-fisċ.md | none |

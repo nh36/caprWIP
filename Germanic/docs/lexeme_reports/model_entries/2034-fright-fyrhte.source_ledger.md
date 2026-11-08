@@ -32,3 +32,16 @@ book-style entry was drafted.
 ## Prose-regression audit 01
 
 - Prose-regression audit 01: corrected post-citation prose/style regression.
+
+## SC064 source correction, 8 November 2026
+
+The former locator 395--396 remains above as the audit's actual recorded
+claim, not current evidence. The original printed abstract discussion is
+380--381 (PDF sheets395--396); the early post-PWGmc loss is printed87--88
+(sheets102--103). Campbell189 §473 / 236--237 §589.7, Brunner225--226 §280
+and Fulk173 §7.34 corroborate it. The selected comparative headword,
+genitive and target are unchanged. The full experiment moves the firing
+from *fyrxtīn > *fyrxtī to *fúrxtīn > *fúrxtī, with the same fyrhte.
+With loss omitted the result is fyrhten. Pillow and strenge independently
+test the phonological environment; Campbell's nēten retention is positively
+attributed to inflected forms, not a phonological exemption.

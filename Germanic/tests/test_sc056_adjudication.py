@@ -13,7 +13,7 @@ import oe_pipeline
 class OrdinaryPDTests(unittest.TestCase):
     def test_order_and_visible_residual(self):
         names = [stage.foma_identifier for stage in oe_pipeline.stages()]
-        self.assertLess(names.index("OEWLossBeforeI"), names.index("OEWsPalatalDiphthongization"))
+        self.assertLess(names.index("OEIUmlaut"), names.index("OEWLossBeforeI"))
         self.assertLess(names.index("OEWsPalatalDiphthongization"), names.index("OEIUmlaut"))
         self.assertLess(names.index("OEIUmlaut"), names.index("OELatePalatalDiphthong"))
         self.assertEqual(oe_pipeline.sc_id("OELatePalatalDiphthong"), "SC105")

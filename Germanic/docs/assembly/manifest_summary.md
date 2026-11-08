@@ -2,8 +2,8 @@
 
 ## Corpus scan summary
 
-- Total current model entries found: **172**
-- Confident trace matches: **172**
+- Total current model entries found: **173**
+- Confident trace matches: **173**
 - Non-confident trace matches: **0**
 
 ## Counts by derivation class
@@ -12,7 +12,7 @@
 | :--- | ---: |
 | `regular` (Regular derivations) | 93 |
 | `attested_variant` (Attested variants and selected comparison forms) | 6 |
-| `early_analogy` (Early analogy and pre-Old-English input selection) | 35 |
+| `early_analogy` (Early analogy and pre-Old-English input selection) | 36 |
 | `late_analogy` (Late analogy and paradigm-cell selection) | 28 |
 | `reconstructed_oe` (Reconstructed Old English comparators) | 3 |
 | `known_unmodelled` (Known but unmodelled remodellings) | 2 |
@@ -27,7 +27,7 @@
 
 | Trace-match status | Count |
 | :--- | ---: |
-| `confident` | 172 |
+| `confident` | 173 |
 | `ambiguous` | 0 |
 | `low_confidence` | 0 |
 | `no_lexical_match` | 0 |

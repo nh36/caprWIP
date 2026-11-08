@@ -12,7 +12,7 @@ chronology constraints.
 ## Totals
 
 - total node count: `73`
-- total edge count: `146`
+- total edge count: `148`
 
 ### Node counts by card_type
 
@@ -20,29 +20,30 @@ chronology constraints.
 | --- | ---: |
 | `boundary_limited` | 2 |
 | `boundary_observation` | 2 |
-| `broad_far` | 6 |
-| `mixed` | 16 |
+| `broad_far` | 5 |
+| `mixed` | 14 |
 | `negative_boundary` | 7 |
 | `one_sided` | 1 |
 | `one_sided_chronology` | 8 |
-| `reciprocal_or_near_reciprocal` | 18 |
+| `reciprocal_or_near_reciprocal` | 17 |
 | `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
 | `source_partial_chain` | 10 |
-| `technical_computational` | 1 |
+| `source_supported` | 2 |
+| `superseded` | 1 |
+| `technical_computational` | 2 |
 
 ### Edge counts by relation_type
 
 | relation_type | count |
 | --- | ---: |
-| `broad_far_chronology` | 14 |
-| `near_reciprocal_chronology` | 2 |
+| `broad_far_chronology` | 13 |
 | `no_break_search_boundary` | 21 |
 | `one_sided_chronology` | 41 |
 | `reciprocal_chronology` | 24 |
 | `runner_limited_boundary` | 18 |
-| `superseded_experiment` | 10 |
-| `technical_computational` | 16 |
+| `superseded_experiment` | 12 |
+| `technical_computational` | 19 |
 
 ## Chronology edges
 
@@ -94,17 +95,13 @@ chronology constraints.
 1. `SC059 -> SC078` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `steal; weave`; forms: PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`
 1. `SC060 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `might; night`; forms: PGmc `*máxtiz` yields expected OE `miht`, but the earlier-shifted variant yields `mieht`; PGmc `*náxti` likewise yields `nieht` instead of expected `niht`
 1. `SC061 -> SC023` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `do`; forms: PGmc `*dōną` yields expected OE `dōn`, but the earlier-shifted variant yields no output (`+?` in the TSV)
-1. `SC063 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `belly; birth; breeches; bride; cow`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `cū`; PGmc `*brūdiz` likewise yields `brūd` instead of expected `brȳd`
+1. `SC063 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `belly; birth; breeches; bride; cow; filth`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `cū`; PGmc `*brūdiz` likewise yields `brūd` instead of expected `brȳd`; selected *fūliþǭ yields fȳlþe, but quantitative high loss before mutation gives fūlþe.
 1. `SC063 -> SC072` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant yields `fyrht`
-1. `SC064 -> SC041` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the earlier-shifted variant yields `fyrhten`
-1. `SC064 -> SC072` (near_reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant again yields `fyrhten`
-1. `SC065 -> SC055` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `filth`; forms: PGmc `*fūliþō` yields expected OE `fȳlþ`, but the earlier-shifted variant (syncope composed before OEIUmlaut) bleeds the umlaut trigger and yields unattested `fūlþ`
 1. `SC066 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `nettle`; forms: PGmc *nátilōn > netle; preceding mutation is lost if the light pre-l component deletes its trigger early (nætle).
 1. `SC069 -> SC023` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `adder; earth; flask; heart; line`; forms: PGmc `*nḗdrōn` yields expected OE `nǣdre`, but the earlier-shifted variant yields `nǣdran`; PGmc `*érθōn` likewise yields `eorþan` instead of expected `eorþe`; PGmc `*fláskōn` yields `flascan` instead of `flasce`
 1. `SC070 -> SC052` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `lung`; forms: PGmc `*lúnganjō` yields expected OE `lungen`, but the earlier-shifted variant yields `lunġen`
 1. `SC070 -> SC071` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bore (3sg); learn (3sg); lick (3sg); make (3sg); month`; forms: PGmc `*búrōθi` yields expected OE `boraþ`, but the later-shifted variant yields `boreþ`; PGmc `*mḗnōθz` likewise yields `mōneþ` instead of expected `mōnaþ`
 1. `SC071 -> SC070` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bore (3sg); learn (3sg); lick (3sg); make (3sg); month`; forms: PGmc `*búrōθi` yields expected OE `boraþ`, but the earlier-shifted variant yields `boreþ`; PGmc `*líznōθi` likewise yields `liorneþ` instead of expected `liornaþ`
-1. `SC072 -> SC064` (near_reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the earlier-shifted variant yields `fyrhten`
 1. `SC072 -> SC073` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `adder; earth; father; find; flask`; forms: PGmc `*nḗdrōn` yields expected OE `nǣdre`, but the later-shifted variant yields `nǣdræ`; PGmc `*fádēr` likewise yields `fædær` instead of expected `fæder`
 1. `SC073 -> SC072` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `adder; earth; father; find; flask`; forms: PGmc `*nḗdrōn` yields expected OE `nǣdre`, but the earlier-shifted variant yields `nǣdræ`; PGmc `*fádēr` likewise yields `fædær` instead of expected `fæder`
 1. `SC073 -> SC085` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `toe`; forms: PGmc `*táixōn` yields expected OE `tā`, but the later-shifted variant yields `tāæ`
@@ -126,7 +123,8 @@ chronology constraints.
 1. `SC086 -> SC085` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `flee; slay; ten; toe`; forms: PGmc `*fléuxaną` yields expected OE `flēon`, but the earlier-shifted variant yields `flēoan`; PGmc `*sláxaną` likewise yields `sleaan` instead of expected `slēan`; PGmc `*téxun` yields `teoon` instead of `tēon`; PGmc `*táixōn` yields `tāe` instead of `tā`
 1. `SC087 -> SC044` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `burst`; forms: PGmc `*bréstaną` yields expected OE `berstan`, but the earlier-shifted variant yields `beorstan`
 1. `SC056 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `guest`; forms: ae > ea by ordinary PD; ea > ie by mutation
-1. `SC065 -> SC068` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `spindle`; forms: Wave8 consolidated nominative: *spinnilu > *spinnlu at general high loss, then *spinlu at degemination. Exact-proposal selected *spénnilǭ gives spinle; high loss after degemination gives spinnle.
+1. `SC063 -> SC068` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `spindle`; forms: Selected *spénnilǭ: *spinnilǭ > *spinnlǭ at quantitative HVD, then *spinlǭ at unchanged degemination; loss after degemination gives spinnle.
+1. `SC055 -> SC054` (one_sided_chronology; stage_entailed; witness role: source_witness) — lexemes: `(none claimed)`; forms: Ringe-Taylor258-260: eowu transfer follows raising by i-umlaut and precedes w-loss; this places loss after mutation.
 
 ## Boundary and technical observations
 
@@ -177,7 +175,10 @@ chronology constraints.
 1. `SC058 -> SC087` (no_break_search_boundary)
 1. `SC060 -> SC087` (no_break_search_boundary)
 1. `SC061 -> SC087` (no_break_search_boundary)
+1. `SC064 -> SC041` (technical_computational)
+1. `SC064 -> SC072` (technical_computational)
 1. `SC065 -> PWGmcChanges` (runner_limited_boundary)
+1. `SC065 -> SC055` (superseded_experiment)
 1. `SC065 -> SC087` (no_break_search_boundary)
 1. `SC066 -> SC068` (superseded_experiment)
 1. `SC067 -> PWGmcChanges` (runner_limited_boundary)
@@ -186,6 +187,7 @@ chronology constraints.
 1. `SC068 -> SC087` (no_break_search_boundary)
 1. `SC069 -> SC087` (no_break_search_boundary)
 1. `SC071 -> SC087` (no_break_search_boundary)
+1. `SC072 -> SC064` (technical_computational)
 1. `SC075 -> SC087` (no_break_search_boundary)
 1. `SC076 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC076 -> SC087` (no_break_search_boundary)
@@ -195,3 +197,4 @@ chronology constraints.
 1. `SC087 -> RUNNER_LIMIT` (runner_limited_boundary)
 1. `SC035 -> SC107` (technical_computational)
 1. `SC035 -> SC052` (technical_computational)
+1. `SC065 -> SC068` (superseded_experiment)

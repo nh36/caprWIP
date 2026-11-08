@@ -1,8 +1,20 @@
 # Consolidated Old English syncope adjudication
 
+The original consolidation tables and experiments below remain historical
+evidence. The quantitative follow-up in `sc063-adjudication.md` supersedes
+only their conventional apocope/general-high-loss account. SC063 now owns
+the quantitative event; SC065 is its identity trace anchor. Distinct
+pre-l loss, nonhigh syncope, weak unrounding, marker decoding and the
+selected filth/spindle accusatives remain intact. The original document
+is recoverable verbatim at d5c718c1 and in the preserved review branch;
+its rejected proposals and failed strict receipts are not overwritten.
+
 ## Identity
 
-SC065 owns the general heavy/open high-vowel event (`OEMedialSyncope`).
+SC065 formerly owned the general heavy/open high-vowel event (`OEMedialSyncope`).
+Its current support identity is coordinated with SC063/SC064; the
+following record documents the preceding consolidation rather than
+claiming a second productive loss.
 This coordinated intervention also concerns SC037, SC049, SC063, SC066,
 SC068, SC074, SC114 and the technical SC115 wrapper. Branch: `update`; scientific
 baseline: `b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6`.
@@ -174,9 +186,15 @@ and spindle's former SC066 edge remain superseded experiments.
 
 ## Verdict
 
-Registry-verdict: SC037=REFORMULATE/REORDER; SC049=REFORMULATE/REORDER; SC063=RESTRICT; SC065=REFORMULATE; SC066=RESTRICT; SC068=RETAIN; SC074=REFORMULATE; SC114=REFORMULATE
+Registry-verdict: SC037=REFORMULATE/REORDER; SC049=REFORMULATE/REORDER; SC063=REFORMULATE; SC065=REFORMULATE; SC066=RESTRICT; SC068=RETAIN; SC074=REFORMULATE; SC114=REFORMULATE
 
-SC065 owns the single general high-vowel event; SC066 retains only the
+SC063 now owns the single quantitative high-vowel event; SC065 is an
+identity anchor because repeating the former heavy/open operation would
+destroy HLL retention. Early medial shortening is separately registered
+as SC117, a support component of existing SC072. The source and complete
+HLL/HLH comparisons are in the new SC063 memorandum; Fulk2010 pp129--134,
+140--142 and Goering2016 pp186--188 motivate the change independently of
+selected scores. SC066 retains only the
 distinct later light pre-l loss. SC074 explains early weak front-vowel
 unrounding separately from later lowering, with a separate named executable
 component. SC115 is the early weak-unrounding support component of SC074, printed

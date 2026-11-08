@@ -1,5 +1,15 @@
 # SC064-SC065: Post-apocope Tail
 
+## Current adjudication, 8 November 2026
+
+The scaffold below is preserved historical editorial discussion, not
+current ownership or chronology. `sc064-adjudication.md` establishes
+early post-PWGmc final-n loss; its reader no longer belongs after
+apocope. `sc063-adjudication.md` owns unified quantitative HVD, while
+SC065 is an identity anchor retaining the preceding comparative
+discussion. Individual reader ownership remains registry-driven.
+The older literature and measurements are not withdrawn.
+
 ## 1. Role in the book
 
 `SC064-SC065` is the clearest remaining short candidate immediately after the

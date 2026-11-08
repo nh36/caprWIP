@@ -398,13 +398,13 @@
     },
     {
       "change_id": "SC054",
-      "display_name": "OE W Loss Before I",
+      "display_name": "Noninitial w-loss before unstressed i/ī",
       "lifecycle_status": "active",
       "rule_name": "OEWLossBeforeI",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC054-oe-w-loss-before-i.md",
-      "card_type": "mixed",
+      "card_type": "source_supported",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Both sides fail the same sea derivation, but the card is one-sided with respect to the current reciprocal network."
+      "short_summary": "Ringe-Taylor258-260 independently places loss after mutation and before general syncope; sea displacement is only a broad implementation bound."
     },
     {
       "change_id": "SC055",
@@ -478,33 +478,33 @@
     },
     {
       "change_id": "SC063",
-      "display_name": "High-vowel apocope with heavy-light retention",
+      "display_name": "Quantitative high-vowel deletion",
       "lifecycle_status": "active",
       "rule_name": "OEHighVowelApocope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC063-oe-high-vowel-apocope.md",
-      "card_type": "mixed",
+      "card_type": "source_supported",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Conventional apocope retains final high vowels after a heavy first plus light second syllable. Fulk's conservative Mercian material and Ringe-Taylor's alternative ordering remain explicit."
+      "short_summary": "Fulk-Goering quantitative groups distinguish HLL retention from HLH medial loss; mutation precedes loss and selected spindle feeds degemination."
     },
     {
       "change_id": "SC064",
-      "display_name": "NWGmc In Stem N Loss",
+      "display_name": "Early final n-loss after unstressed ī",
       "lifecycle_status": "active",
       "rule_name": "NWGmcInStemNLoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC064-nwgmc-in-stem-n-loss.md",
-      "card_type": "reciprocal_or_near_reciprocal",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "Later boundary is reciprocal with SC072 earlier and strengthens the fright-based weak-tail chronology relation."
+      "card_type": "technical_computational",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Post-PWGmc development, not undifferentiated pan-NWGmc or productive late OE loss. Fright boundaries expose final n and retain long ī in the executable; they do not date the event."
     },
     {
       "change_id": "SC065",
-      "display_name": "General heavy/open high-vowel syncope",
+      "display_name": "Former general-syncope trace anchor",
       "lifecycle_status": "active",
       "rule_name": "OEMedialSyncope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC065-oe-medial-syncope.md",
-      "card_type": "broad_far",
+      "card_type": "superseded",
       "has_reciprocal_boundary": "no",
-      "short_summary": "One general short weak-i/u/y deletion after a heavy primary syllable in bounded open medial position. Mutation precedes loss; dental and heavy pre-l fragments are consolidated."
+      "short_summary": "SC063 owns the quantitative event; old heavy/open and dental measurements remain historical evidence."
     },
     {
       "change_id": "SC066",
@@ -2075,12 +2075,12 @@
       "direction_basis": "earlier_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
-      "representative_lexemes": "belly; birth; breeches; bride; cow",
-      "representative_forms": "PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `cū`; PGmc `*brūdiz` likewise yields `brūd` instead of expected `brȳd`",
+      "representative_lexemes": "belly; birth; breeches; bride; cow; filth",
+      "representative_forms": "PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `cū`; PGmc `*brūdiz` likewise yields `brūd` instead of expected `brȳd`; selected *fūliþǭ yields fȳlþe, but quantitative high loss before mutation gives fūlþe.",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Later boundary points to SC072, but the relation is one-sided rather than reciprocal in current testing."
+      "notes": "Original final-vowel measurements retained; selected filth accusative now independently tests mutation before the unified quantitative loss."
     },
     {
       "source_change_id": "SC063",
@@ -2099,30 +2099,30 @@
     {
       "source_change_id": "SC064",
       "target_change_id": "SC041",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
       "representative_lexemes": "fright",
       "representative_forms": "PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the earlier-shifted variant yields `fyrhten`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "strength": "technical_marker",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Later boundary is reciprocal with SC072 earlier and strengthens the fright-based weak-tail chronology relation."
+      "notes": "Original displacement preserved. Bare-a loss exposes word-final n in this encoding; not independent proof of an adjacent historical date. Ringe-Taylor87-88 dates final n-loss after PWGmc differentiation; see sc064-adjudication.md."
     },
     {
       "source_change_id": "SC064",
       "target_change_id": "SC072",
-      "relation_type": "near_reciprocal_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
       "representative_lexemes": "fright",
       "representative_forms": "PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant again yields `fyrhten`",
-      "strength": "nonlocal_reciprocal",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "strength": "technical_marker",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "RG15_SC064_SC072",
-      "notes": "Later boundary is reciprocal with SC072 earlier and strengthens the fright-based weak-tail chronology relation."
+      "notes": "Original reciprocal measurement preserved as long-ī visibility, not a late post-apocope historical loss. Early SC064 must not be reactivated on later nētīn; see sc064-adjudication.md."
     },
     {
       "source_change_id": "SC065",
@@ -2141,16 +2141,16 @@
     {
       "source_change_id": "SC065",
       "target_change_id": "SC055",
-      "relation_type": "broad_far_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "filth",
       "representative_forms": "PGmc `*fūliþō` yields expected OE `fȳlþ`, but the earlier-shifted variant (syncope composed before OEIUmlaut) bleeds the umlaut trigger and yields unattested `fūlþ`",
-      "strength": "broad_far",
-      "interpretation_category": "broad_far",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is independently demonstrated far away across SC055 OE I-Umlaut by the filth displacement witness rather than a tight local adjacency claim; later search reaches the current runner limit with no real break. The selected cell is now accusative *fūliþǭ > fȳlþe; the old nominative measurement remains archival. Mutation-before-high-loss still has independent historical support."
+      "notes": "Original measurement preserved. SC065 is now an identity anchor; the selected accusative independently tests mutation before quantitative loss at SC063. See sc063-adjudication.md."
     },
     {
       "source_change_id": "SC065",
@@ -2337,16 +2337,16 @@
     {
       "source_change_id": "SC072",
       "target_change_id": "SC064",
-      "relation_type": "near_reciprocal_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "evidence_basis": "technical",
+      "witness_role": "feeding",
       "representative_lexemes": "fright",
       "representative_forms": "PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the earlier-shifted variant yields `fyrhten`",
-      "strength": "nonlocal_reciprocal",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "strength": "technical_marker",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "RG15_SC064_SC072",
-      "notes": "Now reciprocal on both sides: SC072 earlier crosses SC064 and SC072 later crosses SC073."
+      "notes": "Original reciprocal measurement preserved as long-ī target visibility. The n-loss is early, not historically dated by this late executable corridor; SC072 later-final shortening remains separate from its early medial support SC117."
     },
     {
       "source_change_id": "SC072",
@@ -2771,16 +2771,44 @@
     {
       "source_change_id": "SC065",
       "target_change_id": "SC068",
+      "relation_type": "superseded_experiment",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "archived_experiment",
+      "witness_role": "feeding",
+      "representative_lexemes": "spindle",
+      "representative_forms": "Wave8 consolidated nominative: *spinnilu > *spinnlu at general high loss, then *spinlu at degemination. Exact-proposal selected *spénnilǭ gives spinle; high loss after degemination gives spinnle.",
+      "strength": "archived",
+      "interpretation_category": "superseded",
+      "reciprocal_group_id": "",
+      "notes": "Original conventional/nominative measurement preserved. Quantitative SC063 now owns the selected accusative feeding relation; SC065 is an identity anchor."
+    },
+    {
+      "source_change_id": "SC063",
+      "target_change_id": "SC068",
       "relation_type": "one_sided_chronology",
       "direction_basis": "later_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "feeding",
       "representative_lexemes": "spindle",
-      "representative_forms": "Wave8 consolidated nominative: *spinnilu > *spinnlu at general high loss, then *spinlu at degemination. Exact-proposal selected *spénnilǭ gives spinle; high loss after degemination gives spinnle.",
+      "representative_forms": "Selected *spénnilǭ: *spinnilǭ > *spinnlǭ at quantitative HVD, then *spinlǭ at unchanged degemination; loss after degemination gives spinnle.",
       "strength": "tight_local",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Live syncope creates nnl, which the unchanged SC068 nn clause simplifies. This structural feeding, not displacement alone, warrants the relation. The old SC066 group and nominative measurements are preserved. See sc065-adjudication.md."
+      "notes": "The selected accusative independently demonstrates loss before nnl simplification. It does not settle inherited nominative gemination; see sc063-adjudication.md."
+    },
+    {
+      "source_change_id": "SC055",
+      "target_change_id": "SC054",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "stage_entailed",
+      "witness_role": "source_witness",
+      "representative_lexemes": "",
+      "representative_forms": "Ringe-Taylor258-260: eowu transfer follows raising by i-umlaut and precedes w-loss; this places loss after mutation.",
+      "strength": "source_supported",
+      "interpretation_category": "one_sided_chronology",
+      "reciprocal_group_id": "",
+      "notes": "Direct source argument, not a newly admitted control or selected sea commutation experiment. The pre-umlaut placement was inconsistent with the cited passage; see sc054-adjudication.md."
     }
   ]
 }

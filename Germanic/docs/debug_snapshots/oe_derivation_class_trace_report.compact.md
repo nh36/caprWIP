@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (312) ===
+=== DERIVATION_CLASS: regular (311) ===
 
 
 
@@ -471,7 +471,7 @@ English Proto Input: *búrōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc U Lowering: *bórōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *bórōjan<br>OE Secondary Nasalization: *bórōjąn<br>OE I Umlaut: *bórējąn<br>OE Unstressed Long Vowel Shortening: *bórejąn<br>OE Weak Tail Reduction: *bórejan<br>OE Intervocalic J Vocalization: *bóreian<br>OE Unstressed EI Contraction: *bórian |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *bórōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *bórōjan<br>OE Secondary Nasalization: *bórōjąn<br>OE I Umlaut: *bórējąn<br>OE Med Long Short: *bórejąn<br>OE Weak Tail Reduction: *bórejan<br>OE Intervocalic J Vocalization: *bóreian<br>OE Unstressed EI Contraction: *bórian |
 
 
 
@@ -1404,30 +1404,6 @@ Outcome: fæder
 
 
 
-# fee
-PROTO: *féxu
-EXPECTED: feoh
-OUTPUTS: feoh
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *féxu
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *féoxu<br>OE High Vowel Apocope: *féox |
-
-
-
-### Orthography & surface
-
-Old English Orthography: *féoh
-Outcome: feoh
-
-
-
 # fell
 PROTO: *féllą
 EXPECTED: fell
@@ -1540,7 +1516,7 @@ English Proto Input: *fūliθǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳliθǭ<br>OE Medial Syncope: *fȳlθǭ<br>OE Unstressed Long Vowel Shortening: *fȳlθæ<br>OE Unstressed AE Merger: *fȳlθe |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳliθǭ<br>OE High Vowel Apocope: *fȳlθǭ<br>OE Unstressed Long Vowel Shortening: *fȳlθæ<br>OE Unstressed AE Merger: *fȳlθe |
 
 
 
@@ -2426,7 +2402,7 @@ English Proto Input: *xándlōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *xándlōjan<br>OE Secondary Nasalization: *xándlōjąn<br>OE I Umlaut: *xándlējąn<br>OE Unstressed Long Vowel Shortening: *xándlejąn<br>OE Weak Tail Reduction: *xándlejan<br>OE Intervocalic J Vocalization: *xándleian<br>OE Unstressed EI Contraction: *xándlian |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *xándlōjan<br>OE Secondary Nasalization: *xándlōjąn<br>OE I Umlaut: *xándlējąn<br>OE Med Long Short: *xándlejąn<br>OE Weak Tail Reduction: *xándlejan<br>OE Intervocalic J Vocalization: *xándleian<br>OE Unstressed EI Contraction: *xándlian |
 
 
 
@@ -3233,7 +3209,7 @@ English Proto Input: *líznōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc I Lowering: *léznōjaną<br>EAF Rhotacism: *lérnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornōjaną<br>OE Heavy Syllable Nasal Apocope: *léornōjan<br>OE Secondary Nasalization: *léornōjąn<br>OE I Umlaut: *léornējąn<br>OE Unstressed Long Vowel Shortening: *léornejąn<br>OE Weak Tail Reduction: *léornejan<br>OE Intervocalic J Vocalization: *léorneian<br>OE Unstressed EI Contraction: *léornian |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *léznōjaną<br>EAF Rhotacism: *lérnōjaną<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *léornōjaną<br>OE Heavy Syllable Nasal Apocope: *léornōjan<br>OE Secondary Nasalization: *léornōjąn<br>OE I Umlaut: *léornējąn<br>OE Med Long Short: *léornejąn<br>OE Weak Tail Reduction: *léornejan<br>OE Intervocalic J Vocalization: *léorneian<br>OE Unstressed EI Contraction: *léornian |
 
 
 
@@ -3328,7 +3304,7 @@ English Proto Input: *líkkōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *líkkōjan<br>OE Secondary Nasalization: *líkkōjąn<br>OE I Umlaut: *líkkējąn<br>OE Unstressed Long Vowel Shortening: *líkkejąn<br>OE Weak Tail Reduction: *líkkejan<br>OE Intervocalic J Vocalization: *líkkeian<br>OE Unstressed EI Contraction: *líkkian |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *líkkōjan<br>OE Secondary Nasalization: *líkkōjąn<br>OE I Umlaut: *líkkējąn<br>OE Med Long Short: *líkkejąn<br>OE Weak Tail Reduction: *líkkejan<br>OE Intervocalic J Vocalization: *líkkeian<br>OE Unstressed EI Contraction: *líkkian |
 
 
 
@@ -3683,7 +3659,7 @@ English Proto Input: *mákōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *mækōjaną<br>OE A Restoration: *makōjaną<br>OE Heavy Syllable Nasal Apocope: *makōjan<br>OE Secondary Nasalization: *makōjąn<br>OE I Umlaut: *makējąn<br>OE Unstressed Long Vowel Shortening: *makejąn<br>OE Weak Tail Reduction: *makejan<br>OE Intervocalic J Vocalization: *makeian<br>OE Unstressed EI Contraction: *makian |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *mækōjaną<br>OE A Restoration: *makōjaną<br>OE Heavy Syllable Nasal Apocope: *makōjan<br>OE Secondary Nasalization: *makōjąn<br>OE I Umlaut: *makējąn<br>OE Med Long Short: *makejąn<br>OE Weak Tail Reduction: *makejan<br>OE Intervocalic J Vocalization: *makeian<br>OE Unstressed EI Contraction: *makian |
 
 
 
@@ -4935,7 +4911,7 @@ English Proto Input: *skáwōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *skḗawōjaną<br>OE Heavy Syllable Nasal Apocope: *skḗawōjan<br>OE Secondary Nasalization: *skḗawōjąn<br>OE Sk Palatalization: *ʃḗawōjąn<br>OE I Umlaut: *ʃḗawējąn<br>OE Unstressed Long Vowel Shortening: *ʃḗawejąn<br>OE Weak Tail Reduction: *ʃḗawejan<br>OE Intervocalic J Vocalization: *ʃḗaweian<br>OE Unstressed EI Contraction: *ʃḗawian |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Aw Long Diphthong: *skḗawōjaną<br>OE Heavy Syllable Nasal Apocope: *skḗawōjan<br>OE Secondary Nasalization: *skḗawōjąn<br>OE Sk Palatalization: *ʃḗawōjąn<br>OE I Umlaut: *ʃḗawējąn<br>OE Med Long Short: *ʃḗawejąn<br>OE Weak Tail Reduction: *ʃḗawejan<br>OE Intervocalic J Vocalization: *ʃḗaweian<br>OE Unstressed EI Contraction: *ʃḗawian |
 
 
 
@@ -5412,7 +5388,7 @@ English Proto Input: *spénnilǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *spinnilǭ<br>OE Medial Syncope: *spinnlǭ<br>OE Preconsonantal Degemination: *spinlǭ<br>OE Unstressed Long Vowel Shortening: *spinlæ<br>OE Unstressed AE Merger: *spinle |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *spinnilǭ<br>OE High Vowel Apocope: *spinnlǭ<br>OE Preconsonantal Degemination: *spinlǭ<br>OE Unstressed Long Vowel Shortening: *spinlæ<br>OE Unstressed AE Merger: *spinle |
 
 
 
@@ -5857,7 +5833,7 @@ English Proto Input: *súndrōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *súndrōjan<br>OE Secondary Nasalization: *súndrōjąn<br>OE I Umlaut: *súndrējąn<br>OE Unstressed Long Vowel Shortening: *súndrejąn<br>OE Weak Tail Reduction: *súndrejan<br>OE Intervocalic J Vocalization: *súndreian<br>OE Unstressed EI Contraction: *súndrian |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Heavy Syllable Nasal Apocope: *súndrōjan<br>OE Secondary Nasalization: *súndrōjąn<br>OE I Umlaut: *súndrējąn<br>OE Med Long Short: *súndrejąn<br>OE Weak Tail Reduction: *súndrejan<br>OE Intervocalic J Vocalization: *súndreian<br>OE Unstressed EI Contraction: *súndrian |
 
 
 
@@ -7328,7 +7304,7 @@ English Proto Input: *wúndōdē
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Late O Shortening: *wúndodē<br>OE Med Unstressed O Raising: *wúndudē<br>OE Unstressed Long Vowel Shortening: *wúndude |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Med Long Short: *wúndodē<br>OE Med Unstressed O Raising: *wúndudē<br>OE Unstressed Long Vowel Shortening: *wúndude |
 
 
 
@@ -7463,7 +7439,7 @@ NOTE: Second-person plural pronoun, dat.(-acc.) pl. PGmc *izwiz (Goth. izwis) > 
 
 
 
-=== DERIVATION_CLASS: early_analogy (35) ===
+=== DERIVATION_CLASS: early_analogy (36) ===
 
 
 
@@ -7610,6 +7586,30 @@ English Proto Input: *fástijaną
 Outcome: festan
 
 NOTE: R/T: "festan 'to fix, to fasten' < *fæstjan" (Class I weak); "acquired stative meaning ['to fast'] by lexical confusion" with *fastēn-. OE fæstan has æ from analogy with adj. fæst.
+
+
+
+# fee
+PROTO: *féx
+EXPECTED: feoh
+OUTPUTS: feoh
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *féx
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *féox |
+
+
+
+### Orthography & surface
+
+Old English Orthography: *féoh
+Outcome: feoh
 
 
 
@@ -7996,7 +7996,7 @@ English Proto Input: *sáiwiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *sáiwi<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwi | **Old English**<br>OE W Loss Before I: *sāi<br>OE I Umlaut: *sǣi<br>OE High Vowel Apocope: *sǣ |
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *sáiwi<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwi | **Old English**<br>OE I Umlaut: *sǣwi<br>OE W Loss Before I: *sǣi<br>OE High Vowel Apocope: *sǣ |
 
 
 
@@ -8044,7 +8044,7 @@ English Proto Input: *spárōjaną
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *spærōjaną<br>OE A Restoration: *sparōjaną<br>OE Heavy Syllable Nasal Apocope: *sparōjan<br>OE Secondary Nasalization: *sparōjąn<br>OE I Umlaut: *sparējąn<br>OE Unstressed Long Vowel Shortening: *sparejąn<br>OE Weak Tail Reduction: *sparejan<br>OE Intervocalic J Vocalization: *spareian<br>OE Unstressed EI Contraction: *sparian |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *spærōjaną<br>OE A Restoration: *sparōjaną<br>OE Heavy Syllable Nasal Apocope: *sparōjan<br>OE Secondary Nasalization: *sparōjąn<br>OE I Umlaut: *sparējąn<br>OE Med Long Short: *sparejąn<br>OE Weak Tail Reduction: *sparejan<br>OE Intervocalic J Vocalization: *spareian<br>OE Unstressed EI Contraction: *sparian |
 
 
 
@@ -8527,7 +8527,7 @@ English Proto Input: *fúrxtīnaz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *fúrxtīna<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *fúrxtīn<br>OE I Umlaut: *fyrxtīn<br>NWGmc In Stem N Loss: *fyrxtī<br>OE Unstressed Long Vowel Shortening: *fyrxti<br>OE Med Unstressed I Lowering1: *fyrxte |
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *fúrxtīna<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *fúrxtīn<br>NWGmc In Stem N Loss: *fúrxtī<br>OE I Umlaut: *fyrxtī<br>OE Unstressed Long Vowel Shortening: *fyrxti<br>OE Med Unstressed I Lowering1: *fyrxte |
 
 
 
@@ -9038,7 +9038,7 @@ English Proto Input: *θístilas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc I Lowering: *θéstilas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θéstilæs<br>OE I Umlaut: *θistilæs<br>OE Medial Syncope: *θistlæs<br>OE Unstressed AE Merger: *θistles |
+| **Northwest and West Germanic**<br>PNWGmc I Lowering: *θéstilas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *θéstilæs<br>OE I Umlaut: *θistilæs<br>OE High Vowel Apocope: *θistlæs<br>OE Unstressed AE Merger: *θistles |
 
 
 

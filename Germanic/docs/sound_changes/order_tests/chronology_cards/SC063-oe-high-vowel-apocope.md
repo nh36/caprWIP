@@ -1,5 +1,15 @@
 # SC063 OE High Vowel Apocope — chronology evidence card
 
+## Quantitative follow-up, 8 November 2026
+
+The preserved displacement measurements below belong to the earlier
+final-only implementation. SC063 now owns unified quantitative HVD,
+retaining HLL but deleting a medial short high vowel before a heavy
+following syllable. Selected filth/spindle still establish mutation
+before loss and loss before degemination. Final/medial quantity is
+independently tested by nēten/nētenu/nētna; the earlier SC064 law no
+longer damages late nētīn. See `audits/sc063-adjudication.md`.
+
 ## Consolidated current interpretation
 
 See `audits/sc065-adjudication.md`: the conventional account now retains a

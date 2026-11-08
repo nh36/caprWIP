@@ -306,3 +306,11 @@ add	pgmc	*spénnilǭ	selected_input	trace_proto_input	spindle — OE spinle	SC06
 add	pgmc	fūliþō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md	SC065 syncope consolidation: assembled citation retains its independent role.	
 add	pgmc	fūliþǭ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md	SC065 syncope consolidation: explicit selected accusative distinguished from citation.	
 remove	pgmc	*spénnilō	selected_input	trace_proto_input	spindle — OE spinl	SC065 syncope consolidation: nominative citation is no longer the selected executable cell.	
+add	oe	feoh	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md	SC064 coordinated fee publication: unchanged attested target; RingeTaylor2014 p177 n4.	
+add	oe	feoh	target_form	lexical_heading	fee — OE feoh	SC064 coordinated fee publication: unchanged selected nominative/accusative.	
+add	pgmc	*féxu	source_protoform	lexical_proto	fee — OE feoh	SC064 preserves inherited u-stem PROTO, distinct from the selected transponent.	
+add	pgmc	féxu	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md	SC064 retains the inherited comparative headword in the new mature model.	
+add	preoe	*féx	selected_input	trace_proto_input	fee — OE feoh	SC064 approved fee input-only migration; RingeTaylor2014 p177 n4 supplies endingless transferred feh.	transponent
+add	preoe	*féx	source_protoform	lexical_protoform	fee — OE feoh	SC064 independently staged pre-OE a-stem transponent; no inherited a-stem reconstruction.	transponent
+add	preoe	féx	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md	SC064 selected pre-OE transponent, independently distinguished from PGmc PROTO.	transponent
+remove	pgmc	*féxu	selected_input	trace_proto_input	fee — OE feoh	SC064 approved input-only migration removes the former inherited u-stem selection, not its comparative headword.	

@@ -4670,18 +4670,26 @@ this choice.
 
 Syncope, apocope and weak-vowel quality: Mutation precedes the ordinary
 high-vowel losses: a subsequently lost \emph{*i} has already fronted the
-root, as in \emph{fȳlþe} `filth'. The conventional working sequence is
-ordinary nonhigh syncope (SC114), high-vowel apocope (SC063), then
-heavy/open high-vowel syncope (SC065). These are prehistoric Old English
-changes, not simply late literary reductions toward Middle English. The
-former dental and heavy pre-\emph{*l} fragments implement the same
-high-vowel event and are no longer separate active deletions. Later
-light-syllable pre-\emph{*l} loss (SC066) retains its own consonant and
-openness conditions (\citeproc{ref-HoggGrammar2011}{Hogg 2011, 220--27},
-§§6.14--6.25; \citeproc{ref-SieversBrunner1965}{Brunner 1965, 132--33},
-§159; \citeproc{ref-Luick1914}{Luick 1914-\/-1940, 310--11}, §336).
+root, as in \emph{fȳlþe} `filth'. The former conventional working
+sequence distinguished ordinary nonhigh syncope (SC114), high-vowel
+apocope (SC063) and heavy/open high-vowel syncope (SC065). The adopted
+quantitative account instead gives SC063 one final/medial operation,
+preserving heavy--light--light \emph{hēafudu} `heads' and distinguishing
+the following-heavy \emph{nētna} `of livestock'. Early medial shortening
+belongs to SC072 through its separate component SC117; SC065 remains
+only a trace anchor (\citeproc{ref-Fulk2010}{Fulk 2010, 129--34,
+140--42}; \citeproc{ref-Goering2016}{Goering 2016, 186--88};
+\citeproc{ref-Goering2023}{2023, 67--68}). These are prehistoric Old
+English changes, not simply late literary reductions toward Middle
+English. The former dental and heavy pre-\emph{*l} fragments implement
+the same high-vowel event and are no longer separate active deletions.
+Later light-syllable pre-\emph{*l} loss (SC066) retains its own
+consonant and openness conditions (\citeproc{ref-HoggGrammar2011}{Hogg
+2011, 220--27}, §§6.14--6.25; \citeproc{ref-SieversBrunner1965}{Brunner
+1965, 132--33}, §159; \citeproc{ref-Luick1914}{Luick 1914-\/-1940,
+310--11}, §336).
 
-The trisyllabic ordering remains disputed: Fulk's conservative Mercian
+The trisyllabic analysis remains disputed: Fulk's conservative Mercian
 evidence, Ringe and Taylor's syncope-before-apocope account, and Hogg's
 tentative phonological alternative are discussed with SC063. Early weak
 front-vowel unrounding and later lowering are distinct quality processes
@@ -6246,10 +6254,76 @@ lower limit follows final \emph{z}-loss; the local feeding relation
 precedes restoration, which requires the environment created by the
 vowel loss.
 
+\section{Stem-final n-loss after long
+i}\label{stem-final-n-loss-after-long-i}
+
+\subsection{Historical discussion}\label{historical-discussion-36}
+
+The inherited feminine \emph{in}-stem represented by Gothic
+\emph{faurhtei}, OE \emph{fyrhtu}, and oblique OE \emph{fyrhte} supplies
+the relevant evidence (\citeproc{ref-Orel2003}{Orel 2003, 120};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 380--81};
+\citeproc{ref-Campbell1959}{Campbell 1959, 236}, §589.7). Final
+\emph{*n} after unstressed \emph{*ī} was lost after Proto-West-Germanic
+differentiation; conservative southern Old High German prevents treating
+it as an undifferentiated Northwest Germanic law
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 87--88};
+\citeproc{ref-Fulk2018}{Fulk 2018, 173}, §7.34). This early loss must be
+distinguished from the later weak-syllable developments described by
+Hogg, Ringe and Taylor, and Fulk (\citeproc{ref-HoggPhonology1992}{Hogg
+1992b, 121}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
+264--303}, §§6.7.3--6.8.4; \citeproc{ref-Fulk2018}{Fulk 2018, 91},
+§5.6).
+
+\subsection{\texorpdfstring{SC064. Loss of stem-final \emph{*n} after
+long \emph{*ī}
+(\texttt{NWGmcInStemNLoss})}{SC064. Loss of stem-final  after long  (NWGmcInStemNLoss)}}\label{rule-NWGmcInStemNLoss}
+
+\noindent\begin{minipage}{\linewidth}
+\begin{ReaderFacingFoma}
+define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
+\end{ReaderFacingFoma}
+\end{minipage}
+
+Only word-final \emph{*n} after unstressed long \emph{*ī} is at issue.
+The conditioning is phonological, not membership in the feminine
+\emph{īn}-stems. Besides their obliques, Campbell cites \emph{strenge}
+`strength', the loanword \emph{pyle} `pillow' and early past-subjunctive
+plural endings (\citeproc{ref-Campbell1959}{Campbell 1959, 189}, §473;
+\citeproc{ref-SieversBrunner1965}{Brunner 1965, 225--26}, §280).
+
+CAPR models the oblique OE form through the Proto-Germanic genitive
+singular \emph{*fúrxtīnaz} `fright', following the project convention of
+using an appropriate non-nominative paradigm cell when the nominative
+does not supply the required derivation. Final ending loss exposes
+\emph{*fúrxtīn}; early loss of \emph{*n}, mutation and later shortening
+yield \emph{fyrhte} `fright'. This selected encoding imposes two
+implementation boundaries. Before
+\hyperref[rule-PWGmcFinalBareALoss]{SC041 PWGmcFinalBareALoss}, PGmc
+\emph{*fúrxtīnaz} `fright' yields \Pred{fyrhten} rather than expected OE
+\emph{fyrhte} `fright'. After
+\hyperref[rule-OEUnstressedLongVowelShortening]{SC072
+OEUnstressedLongVowelShortening}, PGmc \emph{*fúrxtīnaz} again yields
+\Pred{fyrhten} rather than expected \emph{fyrhte} `fright'. The former
+boundary exposes the segment; the latter keeps its long-vowel
+environment visible. Neither dates the loss to a late post-apocope
+period.
+
+Campbell attributes retained \emph{n} in \emph{nēten} `livestock' to the
+inflected forms (\citeproc{ref-Campbell1959}{Campbell 1959, 189}, §473).
+Goering's later \emph{*nētīn} therefore does not require immunity to the
+early law: a later paradigmatic state and uninterrupted inherited
+retention are different claims. Final \emph{*ī} remains long until later
+shortening, while medial \emph{*ī} has already shortened in the
+inflected forms (\citeproc{ref-Goering2016}{Goering 2016, 186--88};
+\citeproc{ref-Goering2023}{2023, 67--68}). No word-specific protection
+or added accent is required. The exact date of paradigmatic retention or
+restoration is not fixed by these comparisons.
+
 \section{\texorpdfstring{Surviving bimoric \emph{*ō}
 unrounding}{Surviving bimoric  unrounding}}\label{surviving-bimoric-unrounding}
 
-\subsection{Historical discussion}\label{historical-discussion-36}
+\subsection{Historical discussion}\label{historical-discussion-37}
 
 The handbooks do not isolate a large independent sound change under this
 label. The surviving bimoric \emph{*ō} in the pathway to \emph{ræste}
@@ -6302,7 +6376,7 @@ every nasal would therefore be too broad
 
 \section{Ordinary English fronting}\label{ordinary-english-fronting}
 
-\subsection{Historical discussion}\label{historical-discussion-37}
+\subsection{Historical discussion}\label{historical-discussion-38}
 
 Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into
 fronted \emph{*æ}-type outcomes outside nasal environments. Later Old
@@ -6400,7 +6474,7 @@ Taylor 2014, 58--59, 299--300}; \citeproc{ref-Campbell1959}{Campbell
 
 \section{Breaking}\label{breaking}
 
-\subsection{Historical discussion}\label{historical-discussion-38}
+\subsection{Historical discussion}\label{historical-discussion-39}
 
 Breaking creates \emph{eo}-type outputs before \emph{h}, \emph{rC}, and
 \emph{lC}; velar-fricative palatalization then operates in that reshaped
@@ -6667,7 +6741,7 @@ clearest independent historical support.
 
 \section{Sievers-law syncope}\label{sievers-law-syncope}
 
-\subsection{Historical discussion}\label{historical-discussion-39}
+\subsection{Historical discussion}\label{historical-discussion-40}
 
 Sievers' Law concerns a prosodic and morphological adjustment in heavy
 stems. It is a distributional rule distinct from b-allophony
@@ -6705,7 +6779,7 @@ cluster witness therefore places syncope before velar palatalization.
 \section{\texorpdfstring{Palatalization of \emph{*sk} to
 \emph{*sc}}{Palatalization of  to }}\label{palatalization-of-to}
 
-\subsection{Historical discussion}\label{historical-discussion-40}
+\subsection{Historical discussion}\label{historical-discussion-41}
 
 The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the
 recognizable early cluster changes in the larger palatalization zone.
@@ -6782,7 +6856,7 @@ changes.
 \section{Class-distinct velar palatalization and fricative
 merger}\label{class-distinct-velar-palatalization-and-fricative-merger}
 
-\subsection{Historical discussion}\label{historical-discussion-41}
+\subsection{Historical discussion}\label{historical-discussion-42}
 
 Singleton g, including initial g, was a fricative when palatalization
 occurred; gg and postnasal g were stops. Palatal articulation,
@@ -7299,38 +7373,6 @@ later leaves every output unchanged. Its pre-umlaut position therefore
 rests on comparative evidence, while the present lexicon supplies no
 neighboring boundary.
 
-\section{W-loss before final i}\label{w-loss-before-final-i}
-
-\subsection{\texorpdfstring{SC054. Loss of \emph{*w} before final
-\emph{*i}
-(\texttt{OEWLossBeforeI})}{SC054. Loss of  before final  (OEWLossBeforeI)}}\label{rule-OEWLossBeforeI}
-
-\noindent\begin{minipage}{\linewidth}
-\begin{ReaderFacingFoma}
-define OEWLossBeforeI Ctx([
-    {*w} -> 0 || EnglishStarVocalic _ {*i} .#.
-]);
-\end{ReaderFacingFoma}
-\end{minipage}
-
-The history of \emph{sǣ} `sea' explains why non-initial \emph{*w}
-disappeared before final unstressed \emph{*i}. Campbell describes the
-loss, Ringe and Taylor derive the form from
-\emph{*saiwi-}/\emph{*sawi-}, and Luick gives the parallel trajectory
-(\citeproc{ref-Campbell1959}{Campbell 1959, 167}, §406;
-\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 257}, §6.7.1;
-\citeproc{ref-Luick1914}{Luick 1914-\/-1940, 173}, §187). Loss of the
-glide allowed the preceding vowel to undergo the later fronting and
-lengthening.
-
-The same witness supplies two distant limits. Before
-\hyperref[rule-EAFFinalZDeletion]{SC020 EAFFinalZDeletion} or after
-\hyperref[rule-OEHighVowelApocope]{SC063 OEHighVowelApocope},
-\hyperref[rule-OEWLossBeforeI]{SC054 OEWLossBeforeI} yields \Pred{sǣw}
-rather than expected OE \emph{sǣ} `sea'. The loss must therefore follow
-final \emph{z}-deletion and precede high-vowel apocope, while its exact
-position within that broad interval remains source-based.
-
 \section{West Saxon palatal
 diphthongization}\label{west-saxon-palatal-diphthongization}
 
@@ -7553,6 +7595,51 @@ products follows it. The former gift input and sheath's later layer
 explained the old bundled serialization, not a date for every historical
 palatal process.
 
+\section{Noninitial w-loss before unstressed
+i}\label{noninitial-w-loss-before-unstressed-i}
+
+\subsection{\texorpdfstring{SC054. Noninitial \emph{*w}-loss before
+unstressed \emph{*i/ī}
+(\texttt{OEWLossBeforeI})}{SC054. Noninitial -loss before unstressed  (OEWLossBeforeI)}}\label{rule-OEWLossBeforeI}
+
+\noindent\begin{minipage}{\linewidth}
+\begin{ReaderFacingFoma}
+define OEWLossBeforeI Ctx([
+    {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ [{*i}|{*ī}]
+]);
+\end{ReaderFacingFoma}
+\end{minipage}
+
+The history of \emph{sǣ} `sea' exemplifies noninitial \emph{*w}-loss
+before unstressed \emph{*i}. Campbell describes the loss, Ringe and
+Taylor derive the form from \emph{*saiwi-}/\emph{*sawi-}, and Luick
+gives the parallel trajectory (\citeproc{ref-Campbell1959}{Campbell
+1959, 166--67}, §406; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor
+2014, 258--60}, §6.7.1; \citeproc{ref-Luick1914}{Luick 1914-\/-1940,
+173}, §187). The environment is neither exclusively postvocalic nor
+exclusively final: Ringe and Taylor also give weak-verb forms in
+\emph{*-Cwi-} and \emph{*pulwīn > *pylwī > *pylī}, yielding \emph{pyle}
+`pillow'. The preceding nucleus distinguishes noninitial \emph{w} from
+an initial cluster; the unaccented target excludes stressed high vowels.
+No lexical exemption or loanword-specific clause is used.
+
+Ringe and Taylor independently place this loss after i-umlaut and before
+general syncope: the histories of \emph{eowu} `ewe' and \emph{gierede}
+`prepared' supply the chronology, rather than successful output alone
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 258--60}). The
+early final-n loss in \hyperref[rule-NWGmcInStemNLoss]{SC064
+NWGmcInStemNLoss} and this distinct glide loss together explain
+\emph{pyle}.
+
+The former sea-only displacement supplies two distant implementation
+limits. Before \hyperref[rule-EAFFinalZDeletion]{SC020
+EAFFinalZDeletion} or after \hyperref[rule-OEHighVowelApocope]{SC063
+OEHighVowelApocope}, \hyperref[rule-OEWLossBeforeI]{SC054
+OEWLossBeforeI} yields \Pred{sǣw} rather than expected OE \emph{sǣ}
+`sea'. The loss must therefore follow final \emph{z}-deletion and
+precede high-vowel apocope, while its exact position within that broad
+interval remains source-based.
+
 \section{Technical support: late palatal
 diphthongization}\label{technical-support-late-palatal-diphthongization}
 
@@ -7575,7 +7662,7 @@ incremental implementation does not claim to have resolved it.
 
 \section{J-cluster coalescence}\label{j-cluster-coalescence}
 
-\subsection{Historical discussion}\label{historical-discussion-42}
+\subsection{Historical discussion}\label{historical-discussion-43}
 
 Only a small lexical group reveals the coalescence of velars with
 \emph{*j}. Plain-velar and \emph{*sk} palatalization must already have
@@ -7622,7 +7709,7 @@ cluster consumer.
 
 \section{Back mutation}\label{back-mutation}
 
-\subsection{Historical discussion}\label{historical-discussion-43}
+\subsection{Historical discussion}\label{historical-discussion-44}
 
 West Saxon \emph{giefan} `give' and \emph{wefan} `weave' stand against
 non-West-Saxon \emph{geofad} `gave' and \emph{weofan} `weave'. Ringe and
@@ -7670,7 +7757,7 @@ but precedes the weak-tail reductions.
 
 \section{West Saxon palatal umlaut}\label{west-saxon-palatal-umlaut}
 
-\subsection{Historical discussion}\label{historical-discussion-44}
+\subsection{Historical discussion}\label{historical-discussion-45}
 
 The reflexes \emph{miht} `might' and \emph{niht} `night' place West
 Saxon palatal umlaut after the principal umlautal developments. Campbell
@@ -7711,7 +7798,7 @@ unchanged.
 
 \section{Weak-tail nasal loss}\label{weak-tail-nasal-loss}
 
-\subsection{Historical discussion}\label{historical-discussion-45}
+\subsection{Historical discussion}\label{historical-discussion-46}
 
 The pathway from \Recon{dōną} `do' to \emph{dōn} `do' supplies the sole
 lexical thread through this reduction. Campbell, Hogg, and Fulk place
@@ -7746,7 +7833,7 @@ establish a wider historical development.
 \section{Ordinary nonhigh-vowel
 syncope}\label{ordinary-nonhigh-vowel-syncope}
 
-\subsection{Historical discussion}\label{historical-discussion-46}
+\subsection{Historical discussion}\label{historical-discussion-47}
 
 Old English nonhigh-vowel syncope must be distinguished from the later
 high-vowel losses. Hogg describes loss of a short nonhigh vowel in an
@@ -7995,7 +8082,7 @@ define OENonHighSyn FootCtx([
 
 \section{B allophony}\label{b-allophony}
 
-\subsection{Historical discussion}\label{historical-discussion-47}
+\subsection{Historical discussion}\label{historical-discussion-48}
 
 The positional alternation of Germanic \emph{*b} is a Proto-Germanic
 distributional feature. Hogg states the Old English distribution
@@ -8055,151 +8142,144 @@ afterward preserves the selected output. This discriminates the
 representations, not an independently dated new lenition law or
 compound-specific exemption.
 
-\section{High-vowel apocope}\label{high-vowel-apocope}
+\section{Early medial realization of unstressed
+shortening}\label{early-medial-realization-of-unstressed-shortening}
 
-\subsection{Historical discussion}\label{historical-discussion-48}
-
-Final high vowels must survive long enough to condition umlaut before
-apocope removes them after heavy syllables and in the relevant
-trisyllabic patterns. Campbell, Hogg, Ringe and Taylor, and Fulk agree
-that the loss follows mutation, but disagree substantively over
-trisyllables and surrounding syncope
-(\citeproc{ref-Campbell1959}{Campbell 1959, 144--45}, §§345--349;
-\citeproc{ref-HoggPhonology1992}{Hogg 1992b, 121};
-\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 284--303},
-§§6.8.1, 6.8.4; \citeproc{ref-Fulk2018}{Fulk 2018, 91}, §5.6). Barrack
-states the deletion of final high vowels as his rule 345 and presents it
-as a prime case of an environment that simplifies progressively over the
-rule's lifetime (\citeproc{ref-Barrack1975}{Barrack 1975, 85--86,
-23--25}); the heavy-foot conditioning adopted here corresponds to his
-most restricted, earliest phase, while his later phases absorb the
-surrounding quantity developments that the handbooks treat as separate
-changes.
-
-This later loss is distinct from the West Germanic weak-word loss of
-\hyperref[rule-PWGmcUnstressedWordFinalIApocope]{SC098
-PWGmcUnstressedWordFinalIApocope}. A selected proclitic context does not
-become word-final merely because its citation spelling ends there. Its
-temporary boundary annotation blocks the final-position conditions below
-and is removed only after their application; it is not a segment of the
-linguistic reconstruction. This contextual distinction is preserved
-(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 57--58,
-284--303}).
-
-The adopted conventional account retains final high vowels after a heavy
-first syllable followed by a light syllable. Thus
-\emph{*hēafudu > *hēafdu}, not \Pred{hēafd}: subsequent high-vowel
-syncope does not restart apocope. The former implementation incorrectly
-deleted the final vowel in this heavy--light environment
-(\citeproc{ref-Campbell1959}{Campbell 1959, 146}, §353;
-\citeproc{ref-HoggGrammar2011}{Hogg 2011, 225--27}, §§6.22--6.25). Loss
-after two light syllables and after an immediately preceding heavy
-syllable remains represented.
-
-This is a defended working account, not unanimity. Fulk's conservative
-Mercian \emph{hēafudu}, \emph{idelu} and \emph{lytel(u)} material
-supports retention of both high vowels before a light final syllable; he
-supplies phonological weight and paradigm evidence, not merely a
-preference for analogy. Ringe and Taylor instead defend syncope before
-apocope and reconstructed \emph{*hēafd}, treating the attested plurals
-as analogical. Hogg also offers a tentative one-syllable-reduction
-account without rigid serialization (\citeproc{ref-Fulk2010}{Fulk 2010,
-129--34, 140--42}; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
-289--93}; \citeproc{ref-HoggGrammar2011}{Hogg 2011, 227}, §6.25). The
-conventional serialization keeps this dispute explicit and no longer
-preserves unsupported endingless selected histories by excess apocope.
-
-\subsection{\texorpdfstring{\CAPRRuleHeading{SC063. High-vowel apocope after heavy syllables and in trisyllables}{OEHighVowelApocope}}{}}\label{rule-OEHighVowelApocope}
+\subsection{\texorpdfstring{\CAPRRuleHeading{SC117. Medial component of SC072 unstressed shortening}{OEMedLongShort}}{}}\label{rule-OEMedLongShort}
 
 \begin{ReaderFacingFoma}
-define OEHighVowelApocope Ctx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongVowel _ .#.,
-    {*u} -> 0 || {*x} _ .#.,
-    {*ų} -> 0 || {*x} _ .#.,
-    {*i} -> 0 || {*x} _ .#.
-] .o. [{*ᶜ} -> 0]);
+define OEMedLongShort FootCtx([
+    {*ī} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ū} -> {*u} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ȳ} -> {*y} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ā} -> {*a} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ē} -> {*e} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ǣ} -> {*æ} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ō} -> {*o} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}]
+]);
 \end{ReaderFacingFoma}
 
-Final \emph{*i}, \emph{*u}, and \emph{*ų} cannot disappear before
-completing their umlautal work. Applied before
-\hyperref[rule-OEIUmlaut]{SC055 OEIUmlaut}, PGmc \Recon{kūi} `cow'
-yields \Pred{cū} rather than expected OE \emph{cȳ} `cow', and PGmc
-\Recon{brūdiz} `bride' yields \Pred{brūd} rather than expected OE
-\emph{brȳd} `bride'. Conversely, if apocope waits until after
+This separately visible component belongs to
 \hyperref[rule-OEUnstressedLongVowelShortening]{SC072
-OEUnstressedLongVowelShortening}, PGmc \Recon{fúrxtīnaz} `fright' yields
-\Pred{fyrht} rather than expected OE \emph{fyrhte} `fright'. The three
-witnesses establish the sequence i-umlaut, high-vowel apocope,
-unstressed long-vowel shortening.
+OEUnstressedLongVowelShortening}. It realizes the medial quantity
+required before \hyperref[rule-OEHighVowelApocope]{SC063
+OEHighVowelApocope}, without prematurely shortening final long vowels.
+Goering distinguishes later \emph{*nētīn}, yielding \emph{nēten}
+`livestock', from the medially shortened inflected forms that yield
+\emph{nētenu} `livestock' and \emph{nētna} `of livestock'
+(\citeproc{ref-Goering2016}{Goering 2016, 186--88};
+\citeproc{ref-Goering2023}{2023, 67--68}). The same quantity distinction
+is required in the earlier comparison of unstressed vowels
+(\citeproc{ref-Fulk2018}{Fulk 2018, 90--96}, §§5.6--5.7).
 
-\section{Stem-final n-loss after long
-i}\label{stem-final-n-loss-after-long-i}
+The root and transmitted prominence are protected. Final long vowels
+remain for the later component of shortening; this early component is
+not an extra high-vowel deletion or a morphological condition. The
+separately traced identifier records implementation ownership, not a new
+independently dated historical sound change.
+
+\section{Quantitative high-vowel
+deletion}\label{quantitative-high-vowel-deletion}
 
 \subsection{Historical discussion}\label{historical-discussion-49}
 
-Evidence for post-apocope reduction is strikingly uneven. The inherited
-feminine \emph{in}-stem represented by Gothic \emph{faurhtei}, OE
-\emph{fyrhtu}, and oblique OE \emph{fyrhte} supplies the relevant
-evidence (\citeproc{ref-Orel2003}{Orel 2003, 120};
-\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 380--81};
-\citeproc{ref-Campbell1959}{Campbell 1959, 236}, §589.7). No comparable
-witness orders the medial syncope that follows. Hogg, Ringe and Taylor,
-and Fulk describe both processes within the late history of weak
-syllables (\citeproc{ref-HoggPhonology1992}{Hogg 1992b, 121};
-\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 264--303},
-§§6.7.3--6.8.4; \citeproc{ref-Fulk2018}{Fulk 2018, 91}, §5.6).
+Final and medial short high vowels undergo one quantitative deletion.
+Campbell, Hogg, Ringe and Taylor, and Fulk agree that the relevant loss
+follows mutation, but disagree over trisyllables and surrounding syncope
+(\citeproc{ref-Campbell1959}{Campbell 1959, 144--46}, §§345--353;
+\citeproc{ref-HoggPhonology1992}{Hogg 1992b, 121};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 264--93}, §§6.7.3,
+6.8.1; \citeproc{ref-Fulk2018}{Fulk 2018, 91}, §5.6). Barrack separately
+presents final deletion as rule 345 and medial syncope as rule 351, with
+progressive simplification of the former environment
+(\citeproc{ref-Barrack1975}{Barrack 1975, 23--25, 85--87}). Those
+descriptions remain comparative evidence, not proof of one particular
+prehistoric serialization.
 
-\subsection{\texorpdfstring{SC064. Loss of stem-final \emph{*n} after
-long \emph{*ī}
-(\texttt{NWGmcInStemNLoss})}{SC064. Loss of stem-final  after long  (NWGmcInStemNLoss)}}\label{rule-NWGmcInStemNLoss}
+The adopted account follows Fulk's conservative Mercian evidence and
+Goering's quantitative analysis. A heavy first syllable followed by two
+light syllables preserves both high vowels: \emph{hēafudu} `heads',
+\emph{lȳtelu} `little' and \emph{īdelu} `idle'. A heavy following
+syllable instead licenses medial loss, as in \emph{nētna} `of
+livestock'. The distinction is independently motivated by quantity and
+metrical grouping, not inferred from the selected corpus's match count
+(\citeproc{ref-Fulk2010}{Fulk 2010, 129--34, 140--42};
+\citeproc{ref-Goering2016}{Goering 2016, 186--88};
+\citeproc{ref-Goering2023}{2023, 67--68}). Early medial shortening,
+realized in \hyperref[rule-OEMedLongShort]{SC117 OEMedLongShort}, gives
+short medial \emph{*i} in the inflected livestock forms while final
+\emph{*ī} remains long in \emph{*nētīn}. Later shortening yields
+\emph{nēten} `livestock'; the earlier final-n law does not restart here.
+
+The alternatives remain substantive. Conventional apocope followed by
+syncope gives \emph{*hēafdu}, whereas Ringe and Taylor's
+syncope-before-apocope account gives \emph{*hēafd}, with restored
+attested plurals attributed to analogy. Hogg also discusses a tentative
+one-syllable-reduction account (\citeproc{ref-HoggGrammar2011}{Hogg
+2011, 225--27}, §§6.22--6.25; \citeproc{ref-RingeTaylor2014}{Ringe and
+Taylor 2014, 289--93}). Output equivalence on selected words does not
+erase these contrasting histories.
+
+This loss is distinct from West Germanic weak-word deletion in
+\hyperref[rule-PWGmcUnstressedWordFinalIApocope]{SC098
+PWGmcUnstressedWordFinalIApocope}. The separately selected sentence
+context remains effective; its boundary annotation is not a segment of
+the reconstruction (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor
+2014, 57--58}). Later light-syllable pre-l loss in
+\hyperref[rule-OELAdjacentSyncope]{SC066 OELAdjacentSyncope}, weak-vowel
+unrounding, and technical stress decoding remain separate operations.
+
+\subsection{\texorpdfstring{\CAPRRuleHeading{SC063. Quantitative deletion of short unstressed high vowels}{OEHighVowelApocope}}{}}\label{rule-OEHighVowelApocope}
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
+define OEHighVowelApocope FootCtx([
+    [{*i}|{*u}|{*y}|{*ų}] -> 0 ||
+        .#. OEAnyConsonant* HvI HvP* _
+        [.#. | OEAnyConsonant [HvL | HvS OEAnyConsonant [.#.|OEAnyConsonant]]]
+] .o. [{*ᶜ} -> 0]);
 \end{ReaderFacingFoma}
 \end{minipage}
 
-Only final \emph{*n} after long \emph{*ī} is at issue, as in the
-inherited \emph{in}-stem behind OE \emph{fyrhte} `fright'.
+The auxiliary expressions distinguish short and long nuclei, heavy
+syllables, the initial quantitative group and following permitted
+groups. Deletion targets a short unstressed high vowel at a group
+boundary; a medial target requires a following singleton onset and heavy
+syllable. The first root and separately transmitted prominence remain
+protected. The singleton-onset representation bounds this
+implementation; it is not a general parser for arbitrary historical
+syllabification.
 
-CAPR models the oblique OE form through the Proto-Germanic genitive
-singular \Recon{fúrxtīnaz} `fright', following the project convention of
-using an appropriate non-nominative paradigm cell when the nominative
-does not supply the required derivation. Within this selected genitive
-derivation, the same input fixes both ordering boundaries. Before
-\hyperref[rule-PWGmcFinalBareALoss]{SC041 PWGmcFinalBareALoss}, PGmc
-\Recon{fúrxtīnaz} `fright' yields \Pred{fyrhten} rather than expected OE
-\emph{fyrhte} `fright'. After
-\hyperref[rule-OEUnstressedLongVowelShortening]{SC072
-OEUnstressedLongVowelShortening}, PGmc \Recon{fúrxtīnaz} again yields
-\Pred{fyrhten} rather than expected \emph{fyrhte} `fright'. I therefore
-order final bare-a loss, stem-final n-loss, and unstressed long-vowel
-shortening in that sequence. Both boundaries are firm within the
-selected genitive derivation and depend on one inherited
-lexeme/paradigm.
+Mutation must precede loss: \emph{cȳ} `cow' and \emph{brȳd} `bride'
+require the high vowel to perform its umlautal work. The selected
+\emph{fȳlþe} `filth' and \emph{spinle} `spindle' retain their
+independently supported accusative cells; their nonhigh final vowels
+produce the regular medial deletion. The comparative nominatives
+\emph{*fȳleþu} and \emph{*spinnelu} retain their light medial syllables
+in this account. Their attested alternatives and the genuine comparative
+gemination problem remain separate from the selected accusatives
+(\citeproc{ref-Fulk2010}{Fulk 2010, 140--42};
+\citeproc{ref-Goering2016}{Goering 2016, 186--88};
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 289--93}).
 
-\section{General heavy-syllable high-vowel
-syncope}\label{general-heavy-syllable-high-vowel-syncope}
+No special final-u loss after \emph{*h} is retained. \emph{Feoh}
+`cattle, wealth' continues an independently supported,
+already-endingless a-stem transponent \emph{*feh}, not an inherited
+u-stem forced through an additional deletion
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 177}, n.~4).
+
+\section{Former syncope anchor and comparative
+evidence}\label{former-syncope-anchor-and-comparative-evidence}
 
 \subsection{Historical discussion}\label{historical-discussion-50}
+
+The conventional heavy/open account discussed below is retained as
+comparative evidence. The adopted quantitative operation now belongs to
+\hyperref[rule-OEHighVowelApocope]{SC063 OEHighVowelApocope}, which
+preserves heavy--light--light forms such as \emph{hēafudu} `heads'. This
+former medial component is an identity trace anchor, not a second
+productive deletion (\citeproc{ref-Fulk2010}{Fulk 2010, 129--34};
+\citeproc{ref-Goering2016}{Goering 2016, 186--88}).
 
 Old English lost unstressed medial high vowels in open syllables after
 heavy syllables. The handbooks state the law generally, as part of the
@@ -8328,33 +8408,26 @@ general high-vowel component, not a complete discriminator of the former
 early compound-only formulation. Its root-vowel history remains with
 \hyperref[rule-OEWICombinativeUUmlaut]{SC039 OEWICombinativeUUmlaut}.
 
-\subsection{\texorpdfstring{SC065. General heavy/open high-vowel syncope
-(\texttt{OEMedialSyncope})}{SC065. General heavy/open high-vowel syncope (OEMedialSyncope)}}\label{rule-OEMedialSyncope}
+\subsection{\texorpdfstring{SC065. Former general-syncope trace anchor
+(\texttt{OEMedialSyncope})}{SC065. Former general-syncope trace anchor (OEMedialSyncope)}}\label{rule-OEMedialSyncope}
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define OEMedialSyncope FootCtx([
-    [{*i}|{*u}|{*y}] -> 0
-        || .#. OEAnyConsonant* [
-            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
-            [EnglishStarShortVowel | EnglishStarShortDiphthong]
-                OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant [EnglishStarVocalic|{*ô}]
-]);
+define OEMedialSyncope ?*;
 \end{ReaderFacingFoma}
 \end{minipage}
 
-The dental enumeration and the heavy part of
-\hyperref[rule-OELAdjacentSyncope]{SC066 OELAdjacentSyncope} have been
-replaced by this single general operation. Short unstressed
-\emph{*i/u/y} disappears after a heavy first syllable when a following
-singleton consonant and vowel establish an open medial syllable. The
-retained quantity carrier \emph{*ô} is included locally as a following
-vowel; it was omitted from the shared ordinary-vowel class. This is a
-bounded onset domain, not a claim to complete historical syllabification
-of arbitrary clusters. Light-root \emph{wuduwe} `widow', final-closed
-\emph{cetel} `kettle' and \emph{engel} `angel' environments do not meet
-the deletion condition.
+The preceding consolidation replaced the dental enumeration and the
+heavy part of \hyperref[rule-OELAdjacentSyncope]{SC066
+OELAdjacentSyncope} with a single conventional general operation. Under
+that account, short unstressed \emph{*i/u/y} disappears after a heavy
+first syllable when a following singleton consonant and vowel establish
+an open medial syllable. The retained quantity carrier \emph{*ô} is
+included locally as a following vowel; it was omitted from the shared
+ordinary-vowel class. This is a bounded onset domain, not a claim to
+complete historical syllabification of arbitrary clusters. Light-root
+\emph{wuduwe} `widow', final-closed \emph{cetel} `kettle' and
+\emph{engel} `angel' environments do not meet the deletion condition.
 
 Earlier controlled experiments found that an unrestricted extension to
 \emph{*u} syncopated \emph{hēafod} `head', dropping the dental
@@ -8365,9 +8438,11 @@ excess apocope, while moving it earlier reduced the former \emph{sāwol}
 proxy, not arguments against the corrected general law. Independently
 selected vocalic accusatives now give \emph{fȳlþe} `filth' and
 \emph{spinle} `spindle'; the corrected apocope also gives conventional
-\emph{hēafdu} `heads'. The general operation no longer requires dental
-or lateral identity. Mutation must still precede deletion; syncope feeds
-the subsequent preconsonantal degemination in \emph{spinle}.
+\emph{hēafdu} `heads'. The adopted quantitative operation likewise
+requires neither dental nor lateral identity, but does not repeat the
+conventional heavy/open loss here. Mutation must still precede deletion;
+syncope feeds the subsequent preconsonantal degemination in
+\emph{spinle}.
 
 The selected \emph{spinle} `spindle' is the strong feminine accusative
 \emph{*spénnilǭ}, not the former endingless nominative. Clark Hall gives
@@ -8847,8 +8922,8 @@ shortening}\label{unstressed-long-vowel-shortening}
 \subsection{Historical discussion}\label{historical-discussion-55}
 
 Campbell describes the shortening of unaccented long vowels, and Ringe
-and Taylor place it among the last prehistoric Old English changes
-before the merger of unstressed \emph{*æ} with \emph{*e}
+and Taylor place the later component among the last prehistoric Old
+English changes before the merger of unstressed \emph{*æ} with \emph{*e}
 (\citeproc{ref-Campbell1959}{Campbell 1959, 148}, §355;
 \citeproc{ref-HoggPhonology1992}{Hogg 1992b, 121};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 298--314},
@@ -8875,7 +8950,13 @@ define OEUnstressedLongVowelShortening FootCtx(OEUnstressedLongVowelShortening1
 \end{ReaderFacingFoma}
 \end{minipage}
 
-The rule shortens the remaining unstressed long vowels before weak final
+An earlier medial component is separately realized in
+\hyperref[rule-OEMedLongShort]{SC117 OEMedLongShort}, before
+\hyperref[rule-OEHighVowelApocope]{SC063 OEHighVowelApocope}. Goering's
+contrast between final \emph{*nētīn} and medially shortened inflected
+forms requires that distinction (\citeproc{ref-Goering2016}{Goering
+2016, 186--88}; \citeproc{ref-Goering2023}{2023, 67--68}). The rule
+below shortens the remaining unstressed long vowels before weak final
 syllables reach their later forms. A small group of lexical witnesses
 fixes its chronology.
 
@@ -8892,8 +8973,10 @@ OEUnstressedLongVowelShortening} to follow
 \hyperref[rule-NWGmcInStemNLoss]{SC064 NWGmcInStemNLoss} and precede
 \hyperref[rule-OEUnstressedAEMerger]{SC073 OEUnstressedAEMerger}.
 
-Shortening therefore follows the earlier weak-tail preparation and
-immediately precedes the merger.
+The late component therefore follows the earlier weak-tail preparation
+and immediately precedes the merger. The old fright displacement records
+loss of the long-i environment in the executable; it does not
+independently date the early final-n law to this late corridor.
 
 \section{Unstressed ae-merger}\label{unstressed-ae-merger}
 
@@ -9986,7 +10069,7 @@ each class, alphabetically by headword. Counts in this alpha are:
 \item
   Attested variants: 6
 \item
-  Early analogy: 35
+  Early analogy: 36
 \item
   Late analogy: 28
 \item
@@ -12165,7 +12248,7 @@ Proto input: \emph{*fūliθǭ}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{OE I Umlaut} & \emph{*fȳliθǭ} \\
-\mbox{OE Medial Syncope} & \emph{*fȳlθǭ} \\
+\mbox{OE High Vowel Apocope} & \emph{*fȳlθǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*fȳlθæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*fȳlθe} \\
 \end{tabularx}
@@ -14750,7 +14833,7 @@ Proto input: \emph{*líznōjaną}
 OE Heavy Syllable Nasal Apocope & \emph{*léornōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*léornōjąn} \\
 \mbox{OE I Umlaut} & \emph{*léornējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*léornejąn} \\
+\mbox{OE Med Long Short} & \emph{*léornejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*léornejan} \\
 OE Intervocalic J Vocalization & \emph{*léorneian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*léornian} \\
@@ -16171,7 +16254,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*skḗawōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*skḗawōjąn} \\
 \mbox{OE Sk Palatalization} & \emph{*ʃḗawōjąn} \\
 \mbox{OE I Umlaut} & \emph{*ʃḗawējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*ʃḗawejąn} \\
+\mbox{OE Med Long Short} & \emph{*ʃḗawejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*ʃḗawejan} \\
 OE Intervocalic J Vocalization & \emph{*ʃḗaweian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*ʃḗawian} \\
@@ -17106,7 +17189,7 @@ Proto input: \emph{*súndrōjaną}
 OE Heavy Syllable Nasal Apocope & \emph{*súndrōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*súndrōjąn} \\
 \mbox{OE I Umlaut} & \emph{*súndrējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*súndrejąn} \\
+\mbox{OE Med Long Short} & \emph{*súndrejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*súndrejan} \\
 OE Intervocalic J Vocalization & \emph{*súndreian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*súndrian} \\
@@ -21837,6 +21920,118 @@ The relevant point is the class split.
 while the better-known \emph{æ}-forms belong to a later analogical
 layer.
 
+\section{\texorpdfstring{fee --- OE
+\emph{feoh}}{fee --- OE feoh}}\label{fee-oe-feoh}
+
+\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!feoh@\iventry{feoh}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fexu@\iventry{*féxu}{}}
+\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!fex~01@\iventry{*féx}{transp.}}
+
+Derivation: citation reconstruction \emph{*féxu}; form followed here
+\emph{*féx} \textgreater{} \emph{feoh} (early analogy).
+
+\subsection{Derivation trace}\label{derivation-trace-105}
+
+Proto input: \emph{*féx}
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Breaking} & \emph{*féox} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+} \endgroup
+
+Old English form: \emph{feoh}
+
+\subsection{Reconstruction and comparative
+evidence}\label{reconstruction-and-comparative-evidence-94}
+
+The inherited comparative lexeme is the neuter u-stem
+\Recon{féxu}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fexu@\iventry{*féxu}{}}
+`cattle, wealth'. Kroonen gives the u-stem citation \emph{fehu}, and
+Orel gives \emph{fexu}, with a separately attached \emph{fexan}
+antecedent for Old English (\citeproc{ref-Kroonen2013}{Kroonen 2013,
+134}; \citeproc{ref-Orel2003}{Orel 2003, 97}). The latter notation is
+preserved as an alternative source formation, not silently reinterpreted
+as proof of an inherited n-stem.
+
+\subsection{Old English evidence}\label{old-english-evidence-94}
+
+Old English
+{\emph{feoh}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!feoh@\iventry{feoh}{}}
+`cattle, wealth' follows the a-declension. Campbell's strong paradigm
+distinguishes the nominative-accusative from its obliques; Brunner
+explicitly classifies the word with the a-stems
+(\citeproc{ref-Campbell1959}{Campbell 1959, 225--26}, §574;
+\citeproc{ref-SieversBrunner1965}{Brunner 1965, 221}, §275). The cell
+compared here remains nominative-accusative singular, not genitive
+\emph{feos}.
+
+\subsection{Early transfer and selected
+input}\label{early-transfer-and-selected-input}
+
+Ringe and Taylor argue that the u-stem was transferred early to the
+a-stems, before the relevant intervocalic h-loss. Their transferred
+nominative-accusative is already endingless
+\Recon{féx}\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!fex~01@\iventry{*féx}{transp.}}
+`cattle, wealth', representing their \emph{feh} in the notation used
+here (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 177}, n.~4).
+The inherited u-stem citation and this later transponent therefore have
+different historical stages; the a-stem is not reconstructed as
+inherited Proto-Germanic.
+
+\subsection{Development to Old
+English}\label{development-to-old-english-93}
+
+The transferred \emph{feh} precedes breaking, which yields \emph{feoh}.
+Its endingless cell compared here supplies no intervocalic high vowel to
+be lost or contracted. Ringe and Taylor contrast that history with the
+inherited u-stem's problematic intervening-vowel development
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 177}, n.~4). The
+relative date is bounded by breaking and intervocalic h-loss, not an
+independently established absolute year.
+
+\subsection{Previous selection and competing
+histories}\label{previous-selection-and-competing-histories}
+
+The previous selection used the inherited \emph{féxu} directly. That
+input can give \emph{feoh} under a conventional implementation with an
+additional post-h deletion, but gives the unaccepted prediction
+\emph{feou} under quantitative high-vowel deletion. The source-supported
+transfer, not restoration of a match count, motivates the new input. An
+a-stem carrier \emph{féxą} also gives \emph{feoh} conditionally, but is
+unnecessary: the cited later formation already lacks an ending. The
+inherited comparative headword and the attested cell compared here
+remain unchanged.
+
 \section{\texorpdfstring{flask --- OE
 \emph{flasce}}{flask --- OE flasce}}\label{flask-oe-flasce}
 
@@ -21847,7 +22042,7 @@ layer.
 Derivation: citation reconstruction \emph{*flaskō}; form followed here
 \emph{*fláskōn} \textgreater{} \emph{flasce} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-105}
+\subsection{Derivation trace}\label{derivation-trace-106}
 
 Proto input: \emph{*fláskōn}
 
@@ -21894,7 +22089,7 @@ OE Unstressed Long Vowel Shortening & \emph{*flaskæ} \\
 Old English form: \emph{flasce}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-94}
+evidence}\label{reconstruction-and-comparative-evidence-95}
 
 The wider Germanic family is often cited under a form such as
 \Recon{flaskō}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flasko@\iventry{*flaskō}{}}
@@ -21915,7 +22110,7 @@ forms
 `flask' support that analysis (\citeproc{ref-RingeTaylor2014}{Ringe and
 Taylor 2014, 192}).
 
-\subsection{Old English evidence}\label{old-english-evidence-94}
+\subsection{Old English evidence}\label{old-english-evidence-95}
 
 Old English dictionaries record the noun as
 {\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
@@ -21933,7 +22128,7 @@ The relevant comparison form is therefore the weak feminine noun
 ending are preserved as they are in the singular.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-93}
+English}\label{development-to-old-english-94}
 
 From
 \Recon{fláskōn}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@\iventry{*fláskōn}{}}
@@ -22009,7 +22204,7 @@ form with attested
 Derivation: citation reconstruction \emph{*fulgēną}; form followed here
 \emph{*fúlgijaną} \textgreater{} \emph{fylġan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-106}
+\subsection{Derivation trace}\label{derivation-trace-107}
 
 Proto input: \emph{*fúlgijaną}
 
@@ -22058,7 +22253,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*fúlgijan} \\
 Old English form: \emph{fylġan}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-95}
+evidence}\label{reconstruction-and-comparative-evidence-96}
 
 Kroonen reconstructs the verb as \emph{*fulgen-} and gives Old English
 {\emph{fylgan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fylgan@\iventry{fylgan}{}}
@@ -22090,7 +22285,7 @@ branch; the citation form
 {\emph{folgian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!folgian@\iventry{folgian}{}}
 `follow'.
 
-\subsection{Old English evidence}\label{old-english-evidence-95}
+\subsection{Old English evidence}\label{old-english-evidence-96}
 
 The Old English evidence preserves both formations. Clark Hall lists
 {\emph{fylgan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fylgan@\iventry{fylgan}{}}
@@ -22123,7 +22318,7 @@ here normalized as
 front-vocalic environment.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-94}
+English}\label{development-to-old-english-95}
 
 \Recon{fúlgijaną}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!fulgijana@\iventry{*fúlgijaną}{}}
 `follow' is a class-I weak-verb formation. In the class-I branch the
@@ -22212,7 +22407,7 @@ The relevant point is the class split.
 Derivation: citation reconstruction \emph{*gállą}; form followed here
 \emph{*gállô} \textgreater{} \emph{ġealla} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-107}
+\subsection{Derivation trace}\label{derivation-trace-108}
 
 Proto input: \emph{*gállô}
 
@@ -22258,7 +22453,7 @@ OE Unstressed Long Vowel Shortening & \emph{*ʝealla} \\
 Old English form: \emph{ġealla}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-96}
+evidence}\label{reconstruction-and-comparative-evidence-97}
 
 The wider cognate family can be presented under a form such as
 \Recon{gállą}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!galla@\iventry{*gállą}{}}
@@ -22274,7 +22469,7 @@ pathway preserves the ending needed for \emph{ġealla} `gall', whereas a
 simple strong-noun headword does not align as closely with the attested
 OE noun.
 
-\subsection{Old English evidence}\label{old-english-evidence-96}
+\subsection{Old English evidence}\label{old-english-evidence-97}
 
 Old English dictionaries record the noun as
 {\emph{gealla}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!gealla@\iventry{gealla}{}}
@@ -22299,7 +22494,7 @@ target of this entry is the West Saxon type
 `gall'.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-95}
+English}\label{development-to-old-english-96}
 
 From
 \Recon{gállô}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!gallo@\iventry{*gállô}{}}
@@ -22375,7 +22570,7 @@ serves only as a family heading.
 Derivation: citation reconstruction \emph{*xémenaz}; form followed here
 \emph{*xébun} \textgreater{} \emph{heofon} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-108}
+\subsection{Derivation trace}\label{derivation-trace-109}
 
 Proto input: \emph{*xébun}
 
@@ -22713,7 +22908,7 @@ implementation audit
 Derivation: citation reconstruction \emph{*kníxtaz}; form followed here
 \emph{*knéxtaz} \textgreater{} \emph{cniht} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-109}
+\subsection{Derivation trace}\label{derivation-trace-110}
 
 Proto input: \emph{*knéxtaz}
 
@@ -22759,7 +22954,7 @@ Proto input: \emph{*knéxtaz}
 Old English form: \emph{cniht}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-97}
+evidence}\label{reconstruction-and-comparative-evidence-98}
 
 The comparative sources align on an \emph{e}-grade reconstruction for
 this noun. Ringe and Taylor cite \Recon{kneht} `knight', and Orel gives
@@ -22779,7 +22974,7 @@ below is based on
 \Recon{knéxtaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knextaz@\iventry{*knéxtaz}{}}
 `knight'.
 
-\subsection{Old English evidence}\label{old-english-evidence-97}
+\subsection{Old English evidence}\label{old-english-evidence-98}
 
 Old English dictionaries record the noun as
 {\emph{cniht}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cniht@\iventry{cniht}{}}
@@ -22795,7 +22990,7 @@ The target is therefore an ordinary attested Old English noun. No
 reconstructed OE comparator is needed here.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-96}
+English}\label{development-to-old-english-97}
 
 From
 \Recon{knéxtaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!knextaz@\iventry{*knéxtaz}{}}
@@ -22870,7 +23065,7 @@ here cell \\
 Derivation: citation reconstruction \emph{*laθōjaną}; form followed here
 \emph{*xláðaną} \textgreater{} \emph{hladan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-110}
+\subsection{Derivation trace}\label{derivation-trace-111}
 
 Proto input: \emph{*xláðaną}
 
@@ -22918,7 +23113,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*xladan} \\
 Old English form: \emph{hladan}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-98}
+evidence}\label{reconstruction-and-comparative-evidence-99}
 
 Ringe and Taylor cite the strong verb
 {\emph{hladan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hladan@\iventry{hladan}{}}
@@ -22931,7 +23126,7 @@ The derivational input therefore marks an early stem choice. The entry
 follows the strong Verner-grade form that reaches Old English
 \emph{hladan} directly.
 
-\subsection{Old English evidence}\label{old-english-evidence-98}
+\subsection{Old English evidence}\label{old-english-evidence-99}
 
 Bosworth-Toller records the verb as \emph{hladan} and preserves the
 expected strong-verb paradigm material around it
@@ -22945,7 +23140,7 @@ For this entry the relevant comparison form is the infinitive
 relates to the broader comparative family.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-97}
+English}\label{development-to-old-english-98}
 
 From \Recon{xláðaną} `lade', the verb passes through the expected early
 voiced stop stage, Anglo-Frisian brightening, and the later
@@ -23005,7 +23200,7 @@ attested OE infinitive \\
 Derivation: citation reconstruction \emph{*lábbaz}; form followed here
 \emph{*láppô} \textgreater{} \emph{lappa} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-111}
+\subsection{Derivation trace}\label{derivation-trace-112}
 
 Proto input: \emph{*láppô}
 
@@ -23049,7 +23244,7 @@ OE Unstressed Long Vowel Shortening & \emph{*lappa} \\
 Old English form: \emph{lappa}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-99}
+evidence}\label{reconstruction-and-comparative-evidence-100}
 
 The comparative sources point to a weak noun with \emph{pp}: Orel gives
 \Recon{lappōn} `lap', and the Old English dictionary tradition preserves
@@ -23062,7 +23257,7 @@ for the word family, but the cited handbooks do not make it the direct
 source of the Old English weak noun. The form relevant to the OE
 development is the weak masculine input \Recon{láppô} `lap'.
 
-\subsection{Old English evidence}\label{old-english-evidence-99}
+\subsection{Old English evidence}\label{old-english-evidence-100}
 
 Campbell cites \emph{lappa} `lap' as a case of restored \emph{a}
 (\citeproc{ref-Campbell1959}{Campbell 1959, § 158}). Sievers-Brunner
@@ -23078,7 +23273,7 @@ remain part of the Old English record and help frame the noun's vowel
 history.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-98}
+English}\label{development-to-old-english-99}
 
 Campbell explicitly lists \emph{lappa} `lap' among the forms with
 restored \emph{a} (\citeproc{ref-Campbell1959}{Campbell 1959, § 158}). Sievers-Brunner records \emph{lappa} `lap' beside variant
@@ -23140,7 +23335,7 @@ within the same OE tradition \\
 Derivation: citation reconstruction \emph{*lákaną}; form followed here
 \emph{*xláxjaną} \textgreater{} \emph{hliehhan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-112}
+\subsection{Derivation trace}\label{derivation-trace-113}
 
 Proto input: \emph{*xláxjaną}
 
@@ -23191,7 +23386,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*xleaxçjan} \\
 Old English form: \emph{hliehhan}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-100}
+evidence}\label{reconstruction-and-comparative-evidence-101}
 
 The wider Germanic family includes a non-j branch represented here by
 the citation label \Recon{lákaną} `laugh', while the derivational input
@@ -23203,7 +23398,7 @@ This branch supplies the geminate fricative and the vowel development
 characteristic of the Old English verb. The comparative family label and
 the OE-facing input are therefore related but not identical.
 
-\subsection{Old English evidence}\label{old-english-evidence-100}
+\subsection{Old English evidence}\label{old-english-evidence-101}
 
 Bosworth-Toller records
 {\emph{hlihhan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hlihhan@\iventry{hlihhan}{}}
@@ -23224,7 +23419,7 @@ The variants belong to the same background, but the attested lemma
 `laugh' supplies the evidence followed here.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-99}
+English}\label{development-to-old-english-100}
 
 From \Recon{xláxjaną} `laugh', West Germanic j-gemination yields the
 doubled consonant (\citeproc{ref-Campbell1959}{Campbell 1959, § 407}). Ringe and Taylor derive Old English
@@ -23285,7 +23480,7 @@ evidence, but secondary to the form compared here \\
 Derivation: citation reconstruction \emph{*laimōn}; form followed here
 \emph{*láimą} \textgreater{} \emph{lām} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-113}
+\subsection{Derivation trace}\label{derivation-trace-114}
 
 Proto input: \emph{*láimą}
 
@@ -23329,7 +23524,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*lām} \\
 Old English form: \emph{lām}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-101}
+evidence}\label{reconstruction-and-comparative-evidence-102}
 
 The inherited comparative noun is given as \Recon{laimōn} `loam' or
 \emph{*laiman-}, and both Orel and Kroonen identify Old English
@@ -23343,7 +23538,7 @@ directly.
 This is therefore a class shift within the history of the English branch
 rather than a dispute about the OE target itself.
 
-\subsection{Old English evidence}\label{old-english-evidence-101}
+\subsection{Old English evidence}\label{old-english-evidence-102}
 
 Old English dictionaries record the noun as \emph{lām} `loam', a neuter
 word for `loam, clay, mud' (\citeproc{ref-BosworthToller1898}{Bosworth
@@ -23356,7 +23551,7 @@ but which inherited formation best accounts for that attested neuter
 noun.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-100}
+English}\label{development-to-old-english-101}
 
 From \Recon{láimą} `loam', regular monophthongization of \emph{ai} and
 the later loss of the final nasal syllable yield \emph{lām} `loam'. With
@@ -23409,7 +23604,7 @@ attested OE noun \\
 Derivation: citation reconstruction \emph{*lungō}; form followed here
 \emph{*lúnganjō} \textgreater{} \emph{lungen} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-114}
+\subsection{Derivation trace}\label{derivation-trace-115}
 
 Proto input: \emph{*lúnganjō}
 
@@ -23457,7 +23652,7 @@ OE Final Geminate Simplification & \emph{*lúngen} \\
 Old English form: \emph{lungen}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-102}
+evidence}\label{reconstruction-and-comparative-evidence-103}
 
 Kroonen treats the basic noun as \emph{*lungōn-} and also cites an
 OE-facing derivative \emph{*lungunjō-}, continued by Old English
@@ -23474,7 +23669,7 @@ therefore derivational. Old English
 `lung' is not a direct reflex of the bare base noun \Recon{lungō}
 `lung'; it belongs to an expanded feminine formation.
 
-\subsection{Old English evidence}\label{old-english-evidence-102}
+\subsection{Old English evidence}\label{old-english-evidence-103}
 
 Old English dictionaries record the noun as
 {\emph{lungen}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lungen@\iventry{lungen}{}}
@@ -23488,7 +23683,7 @@ The target is an attested Old English lexeme with its own paradigm, not
 a rescued inflectional cell.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-101}
+English}\label{development-to-old-english-102}
 
 From the selected derived input, the expected derivational consonant and
 vowel adjustments lead to
@@ -23549,7 +23744,7 @@ normalized input form used here \\
 Derivation: citation reconstruction \emph{*nablô}; form followed here
 \emph{*nábulô} \textgreater{} \emph{nafola} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-115}
+\subsection{Derivation trace}\label{derivation-trace-116}
 
 Proto input: \emph{*nábulô}
 
@@ -23595,7 +23790,7 @@ OE Unstressed Long Vowel Shortening & \emph{*naβula} \\
 Old English form: \emph{nafola}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-103}
+evidence}\label{reconstruction-and-comparative-evidence-104}
 
 Kroonen instead gives a nasal-suffix navel formation with Old English
 {\emph{nafela}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nafela@\iventry{nafela}{}}
@@ -23612,7 +23807,7 @@ the derivational input
 For the Old English comparison, the crucial point is simply that the
 pre-OE form still contains a medial vowel.
 
-\subsection{Old English evidence}\label{old-english-evidence-103}
+\subsection{Old English evidence}\label{old-english-evidence-104}
 
 Ringe and Taylor note the early West Saxon shift
 {\emph{nafola}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!nafola@\iventry{nafola}{}}
@@ -23636,7 +23831,7 @@ same lexical history, but this entry is centered on
 `navel'.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-102}
+English}\label{development-to-old-english-103}
 
 Ringe and Taylor give the pre-OE line \Recon{nabulō} `navel'
 \textgreater{} \Recon{næbula} `navel' \textgreater{} OE \emph{nafola}
@@ -23711,7 +23906,7 @@ later OE reduction stages & same lexical history & attested
 Derivation: citation reconstruction \emph{*xnákkaz}; form followed here
 \emph{*xnékkô} \textgreater{} \emph{hnecca} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-116}
+\subsection{Derivation trace}\label{derivation-trace-117}
 
 Proto input: \emph{*xnékkô}
 
@@ -23753,7 +23948,7 @@ OE Unstressed Long Vowel Shortening & \emph{*xnékka} \\
 Old English form: \emph{hnecca}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-104}
+evidence}\label{reconstruction-and-comparative-evidence-105}
 
 The noun belongs to an ablauting n-stem family. Kroonen reconstructs a
 paradigm with nominative \Recon{hnekkō} `neck', genitive \Recon{hnukkaz}
@@ -23773,7 +23968,7 @@ derivational input
 \Recon{xnékkô}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnekko@\iventry{*xnékkô}{}}
 `neck', however, is the form that matches the Old English branch.
 
-\subsection{Old English evidence}\label{old-english-evidence-104}
+\subsection{Old English evidence}\label{old-english-evidence-105}
 
 Clark Hall records the weak masculine noun
 {\emph{hnecca}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hnecca@\iventry{hnecca}{}}
@@ -23789,7 +23984,7 @@ attested noun already shows that the branch continued an e-grade form
 rather than the a-grade seen in much of the continental material.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-103}
+English}\label{development-to-old-english-104}
 
 From
 \Recon{xnékkô}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xnekko@\iventry{*xnékkô}{}}
@@ -23869,7 +24064,7 @@ oblique paradigm background &
 Derivation: citation reconstruction \emph{*nḗθlō}; form followed here
 \emph{*nḗðlō} \textgreater{} \emph{nǣdl} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-117}
+\subsection{Derivation trace}\label{derivation-trace-118}
 
 Proto input: \emph{*nḗðlō}
 
@@ -23916,7 +24111,7 @@ Proto input: \emph{*nḗðlō}
 Old English form: \emph{nǣdl}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-105}
+evidence}\label{reconstruction-and-comparative-evidence-106}
 
 Ringe and Taylor treat the word as a voiced/voiceless alternant, citing
 \Recon{nēþlō} `needle' \textasciitilde{} \Recon{nēdlō} `needle'
@@ -23932,7 +24127,7 @@ comparison, while the citation form
 The development discussed here follows the Ringe-Taylor alternant
 framework.
 
-\subsection{Old English evidence}\label{old-english-evidence-105}
+\subsection{Old English evidence}\label{old-english-evidence-106}
 
 Clark Hall records the attested citation form \emph{nǣdl} `needle'
 (\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 210}). Campbell lists
@@ -23945,7 +24140,7 @@ The target is therefore an attested citation form. No oblique-cell
 substitution is involved in this entry.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-104}
+English}\label{development-to-old-english-105}
 
 Ringe and Taylor give the historical line \Recon{nēþlō} `needle'
 \textasciitilde{} \Recon{nēdlō} `needle' \textgreater{} OE \emph{nédl}
@@ -24015,7 +24210,7 @@ Proto-Germanic form followed here \\
 Derivation: citation reconstruction \emph{*nasō}; form followed here
 \emph{*núsō} \textgreater{} \emph{nosu} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-118}
+\subsection{Derivation trace}\label{derivation-trace-119}
 
 Proto input: \emph{*núsō}
 
@@ -24058,7 +24253,7 @@ Proto input: \emph{*núsō}
 Old English form: \emph{nosu}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-106}
+evidence}\label{reconstruction-and-comparative-evidence-107}
 
 Kroonen reconstructs a Germanic ablaut pair \emph{*nasō-}
 \textasciitilde{} \emph{*nusō-} and adds that the root \emph{*nus-} is
@@ -24076,7 +24271,7 @@ continued by the Old English form discussed here. Orel's \Recon{nasō}
 full-grade notation and shows that the two lines should not be collapsed
 without comment (\citeproc{ref-Orel2003}{Orel 2003, 320}).
 
-\subsection{Old English evidence}\label{old-english-evidence-106}
+\subsection{Old English evidence}\label{old-english-evidence-107}
 
 \emph{Nosu} `nose' is an attested Old English noun. Ringe and Taylor
 list it among the few surviving early Old English feminine u-stems
@@ -24093,7 +24288,7 @@ reconstructed placeholder. The lexicographical record also gives
 `nose' for the full-grade side of the tradition.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-105}
+English}\label{development-to-old-english-106}
 
 From \Recon{núsō} `nose', the regular path is the one documented by the
 current trace: \Recon{núsō} `nose' \textgreater{} \Recon{nósō} `nose'
@@ -24165,7 +24360,7 @@ noun \\
 Derivation: citation reconstruction \emph{*sapōn}; form followed here
 \emph{*sápą} \textgreater{} \emph{sæp} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-119}
+\subsection{Derivation trace}\label{derivation-trace-120}
 
 Proto input: \emph{*sápą}
 
@@ -24208,7 +24403,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*sæp} \\
 Old English form: \emph{sæp}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-107}
+evidence}\label{reconstruction-and-comparative-evidence-108}
 
 The comparative sources do not give one uniform inherited stem. Kroonen
 preserves the word family as \Recon{saf} `sap' / \emph{*ppan-}, with Old
@@ -24221,7 +24416,7 @@ The derivational input
 `sap' therefore does not replace those comparative labels. It identifies
 the OE-facing stem shape that yields the attested noun treated here.
 
-\subsection{Old English evidence}\label{old-english-evidence-107}
+\subsection{Old English evidence}\label{old-english-evidence-108}
 
 Clark Hall records
 {\emph{sæp}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!saep@\iventry{sæp}{}}
@@ -24233,7 +24428,7 @@ spelling adopted here for the Old English form
 (\citeproc{ref-Orel2003}{Orel 2003, 319}).
 
 \subsection{Development to Old
-English}\label{development-to-old-english-106}
+English}\label{development-to-old-english-107}
 
 From
 \Recon{sápą}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sapa@\iventry{*sápą}{}}
@@ -24318,7 +24513,7 @@ selected a-stem input &
 Derivation: citation reconstruction \emph{*sái}; form followed here
 \emph{*sáiwiz} \textgreater{} \emph{sǣ} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-120}
+\subsection{Derivation trace}\label{derivation-trace-121}
 
 Proto input: \emph{*sáiwiz}
 
@@ -24353,8 +24548,8 @@ Proto input: \emph{*sáiwiz}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE W Loss Before I} & \emph{*sāi} \\
-\mbox{OE I Umlaut} & \emph{*sǣi} \\
+\mbox{OE I Umlaut} & \emph{*sǣwi} \\
+\mbox{OE W Loss Before I} & \emph{*sǣi} \\
 \mbox{OE High Vowel Apocope} & \emph{*sǣ} \\
 \end{tabularx}
 \end{minipage}
@@ -24366,7 +24561,7 @@ Proto input: \emph{*sáiwiz}
 Old English form: \emph{sǣ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-108}
+evidence}\label{reconstruction-and-comparative-evidence-109}
 
 Kroonen gives the noun in stem notation as \emph{*saiwi-}, an i-stem
 whose English reflex is cited as OE
@@ -24385,7 +24580,7 @@ the English history:
 `sea' preserves the medial \emph{*w} and the final high vowel that
 control the later development.
 
-\subsection{Old English evidence}\label{old-english-evidence-108}
+\subsection{Old English evidence}\label{old-english-evidence-109}
 
 The Old English noun is the ordinary word for `sea'. Kroonen cites it as
 {\emph{sæ}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sae@\iventry{sæ}{}}
@@ -24397,7 +24592,7 @@ treats \emph{sea} as continuing the same \Recon{saiui} `sea'
 before \emph{i} (\citeproc{ref-Campbell1959}{Campbell 1959, § 406}).
 
 \subsection{Development to Old
-English}\label{development-to-old-english-107}
+English}\label{development-to-old-english-108}
 
 Once the fuller i-stem input is chosen, the development is regular.
 After Proto-West-Germanic monophthongization \Recon{sáiwiz} `sea'
@@ -24466,7 +24661,7 @@ selected i-stem input &
 Derivation: citation reconstruction \emph{*síbaz}; form followed here
 \emph{*síbi} \textgreater{} \emph{sife} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-121}
+\subsection{Derivation trace}\label{derivation-trace-122}
 
 Proto input: \emph{*síbi}
 
@@ -24509,7 +24704,7 @@ OE Med Unstressed I Lowering1 & \emph{*síβe} \\
 Old English form: \emph{sife}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-109}
+evidence}\label{reconstruction-and-comparative-evidence-110}
 
 Kluge-Seebold gives wg. \emph{*sibi-} n.~\ldots{} ae. \emph{sife}, and
 Campbell groups
@@ -24533,7 +24728,7 @@ lexeme that yields Old English
 does not fit the Old English form treated here
 (\citeproc{ref-Orel2003}{Orel 2003, 328}).
 
-\subsection{Old English evidence}\label{old-english-evidence-109}
+\subsection{Old English evidence}\label{old-english-evidence-110}
 
 Clark Hall gives
 {\emph{sibi}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sibi@\iventry{sibi}{}}
@@ -24550,7 +24745,7 @@ normalized Old English target is therefore \emph{sife} `sieve', while
 separate lexeme.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-108}
+English}\label{development-to-old-english-109}
 
 From
 \Recon{síbi}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sibi@\iventry{*síbi}{}}
@@ -24626,7 +24821,7 @@ evidence \\
 Derivation: citation reconstruction \emph{*sparēną}; form followed here
 \emph{*spárōjaną} \textgreater{} \emph{sparian} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-122}
+\subsection{Derivation trace}\label{derivation-trace-123}
 
 Proto input: \emph{*spárōjaną}
 
@@ -24662,7 +24857,7 @@ Proto input: \emph{*spárōjaną}
 OE Heavy Syllable Nasal Apocope & \emph{*sparōjan} \\
 \mbox{OE Secondary Nasalization} & \emph{*sparōjąn} \\
 \mbox{OE I Umlaut} & \emph{*sparējąn} \\
-OE Unstressed Long Vowel Shortening & \emph{*sparejąn} \\
+\mbox{OE Med Long Short} & \emph{*sparejąn} \\
 \mbox{OE Weak Tail Reduction} & \emph{*sparejan} \\
 OE Intervocalic J Vocalization & \emph{*spareian} \\
 \mbox{OE Unstressed EI Contraction} & \emph{*sparian} \\
@@ -24676,7 +24871,7 @@ OE Intervocalic J Vocalization & \emph{*spareian} \\
 Old English form: \emph{sparian}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-110}
+evidence}\label{reconstruction-and-comparative-evidence-111}
 
 Kroonen keeps the inherited verb under class-III
 {\emph{*sparēn-}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparen@\iventry{*sparēn-}{}}
@@ -24699,7 +24894,7 @@ Old English
 \Recon{sparēną}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!sparena@\iventry{*sparēną}{}}
 `spare' remains the inherited comparative headword.
 
-\subsection{Old English evidence}\label{old-english-evidence-110}
+\subsection{Old English evidence}\label{old-english-evidence-111}
 
 Campbell says that
 {\emph{sparian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sparian@\iventry{sparian}{}}
@@ -24729,7 +24924,7 @@ likewise records Northumbrian
 alternative headwords of equal status.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-109}
+English}\label{development-to-old-english-110}
 
 Once the class-II formation
 \Recon{spárōjaną}\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!sparojana~01@\iventry{*spárōjaną}{transp.}}
@@ -24816,7 +25011,7 @@ citation form \\
 Derivation: citation reconstruction \emph{*stábiz}; form followed here
 \emph{*stábaz} \textgreater{} \emph{stæf} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-123}
+\subsection{Derivation trace}\label{derivation-trace-124}
 
 Proto input: \emph{*stábaz}
 
@@ -24862,7 +25057,7 @@ Proto input: \emph{*stábaz}
 Old English form: \emph{stæf}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-111}
+evidence}\label{reconstruction-and-comparative-evidence-112}
 
 The comparative dictionaries do not give one uniform stem class. Kroonen
 reconstructs an a-stem \emph{*staba-}
@@ -24874,7 +25069,7 @@ reconstructs an a-stem \emph{*staba-}
 in \Recon{-iz} `staff' would predict i-mutation in Old English, whereas
 the attested noun keeps \emph{æ}.
 
-\subsection{Old English evidence}\label{old-english-evidence-111}
+\subsection{Old English evidence}\label{old-english-evidence-112}
 
 The Old English noun itself is the ordinary citation form
 {\emph{stæf}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!staef@\iventry{stæf}{}}
@@ -24892,7 +25087,7 @@ The normalized form here is therefore \emph{stæf}; later English
 history.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-110}
+English}\label{development-to-old-english-111}
 
 With the selected a-stem input, the development is regular. Final
 \emph{*-z} disappears, bare final \emph{-a} is lost, Anglo-Frisian
@@ -24960,7 +25155,7 @@ selected a-stem input &
 Derivation: citation reconstruction \emph{*stámnaz}; form followed here
 \emph{*stámniz} \textgreater{} \emph{stefn} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-124}
+\subsection{Derivation trace}\label{derivation-trace-125}
 
 Proto input: \emph{*stámniz}
 
@@ -25007,7 +25202,7 @@ Proto input: \emph{*stámniz}
 Old English form: \emph{stefn}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-112}
+evidence}\label{reconstruction-and-comparative-evidence-113}
 
 Orel reconstructs the Proto-Germanic source as
 \Recon{stámnaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!stamnaz@\iventry{*stámnaz}{}}
@@ -25034,7 +25229,7 @@ group attested in Old High German, Dutch, and German, without
 reconstructing a separate `prow' proto-form
 (\citeproc{ref-Kroonen2013}{Kroonen 2013, 479--80}).
 
-\subsection{Old English evidence}\label{old-english-evidence-112}
+\subsection{Old English evidence}\label{old-english-evidence-113}
 
 Clark Hall records
 {\emph{stefn}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stefn@\iventry{stefn}{}}
@@ -25066,7 +25261,7 @@ semantic range relevant to English \emph{stem}. The n-stem
 specialization.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-111}
+English}\label{development-to-old-english-112}
 
 The derivation of OE
 {\emph{stefn}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stefn@\iventry{stefn}{}}
@@ -25213,7 +25408,7 @@ be used as row 2216's derivational input} \\
 Derivation: citation reconstruction \emph{*swánaz}; form followed here
 \emph{*swánas} \textgreater{} \emph{swanes} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-125}
+\subsection{Derivation trace}\label{derivation-trace-126}
 
 Proto input: \emph{*swánas}
 
@@ -25256,7 +25451,7 @@ Proto input: \emph{*swánas}
 Old English form: \emph{swanes}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-113}
+evidence}\label{reconstruction-and-comparative-evidence-114}
 
 The Germanic noun is ordinarily cited as the masculine a-stem
 \Recon{swánaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!swanaz@\iventry{*swánaz}{}}
@@ -25277,7 +25472,7 @@ history. The citation form remains
 {\emph{swanes}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swanes@\iventry{swanes}{}}
 `swan'.
 
-\subsection{Old English evidence}\label{old-english-evidence-113}
+\subsection{Old English evidence}\label{old-english-evidence-114}
 
 Bright's glossary records the ordinary noun as
 {\emph{swan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!swan@\iventry{swan}{}}
@@ -25290,7 +25485,7 @@ The target is therefore an attested Old English genitive singular, not a
 reconstruction or the ordinary citation lemma.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-112}
+English}\label{development-to-old-english-113}
 
 From \Recon{swánas} `swan', Anglo-Frisian brightening gives
 \Recon{swánæs} `swan', and subsequent merger of unstressed \emph{æ} with
@@ -25352,7 +25547,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*θūs-undī}; form followed here
 \emph{*θūs-èndi} \textgreater{} \emph{þūsend} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-126}
+\subsection{Derivation trace}\label{derivation-trace-127}
 
 Proto input: \emph{*θūsèndi}
 
@@ -25396,7 +25591,7 @@ Proto input: \emph{*θūsèndi}
 Old English form: \emph{þūsend}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-114}
+evidence}\label{reconstruction-and-comparative-evidence-115}
 
 Kroonen reconstructs the Germanic numeral as
 {\emph{*þūsundī-}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thusundi@\iventry{*þūsundī-}{}}
@@ -25415,7 +25610,7 @@ The chronology must explain why Old English shows
 keep \emph{u} in the second syllable?
 (\citeproc{ref-Kroonen2013}{Kroonen 2013, 554}).
 
-\subsection{Old English evidence}\label{old-english-evidence-114}
+\subsection{Old English evidence}\label{old-english-evidence-115}
 
 Old English \emph{þūsend} `thousand' is an ordinary citation form, not a
 selected oblique or paradigm cell. Campbell treats it as a neuter noun
@@ -25423,7 +25618,7 @@ with normal case forms (\citeproc{ref-Campbell1959}{Campbell 1959, § 689}). The
 lexical status.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-113}
+English}\label{development-to-old-english-114}
 
 If the old final \emph{-ī} had remained long enough to trigger ordinary
 double umlaut, Campbell's rule would point toward a form of the
@@ -25501,7 +25696,7 @@ input \\
 Derivation: citation reconstruction \emph{*tímrą}; form followed here
 \emph{*tímbrą} \textgreater{} \emph{timber} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-127}
+\subsection{Derivation trace}\label{derivation-trace-128}
 
 Proto input: \emph{*tímbrą}
 
@@ -25544,7 +25739,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*tímbr} \\
 Old English form: \emph{timber}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-115}
+evidence}\label{reconstruction-and-comparative-evidence-116}
 
 Kroonen reconstructs the noun as
 {\emph{*timbra-}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!timbra@\iventry{*timbra-}{}}
@@ -25562,7 +25757,7 @@ The difference is therefore not over the Old English noun itself. It
 concerns whether medial \emph{b} belongs in the comparative citation
 form or appears in an early pre-Old-English stage of the cluster.
 
-\subsection{Old English evidence}\label{old-english-evidence-115}
+\subsection{Old English evidence}\label{old-english-evidence-116}
 
 Clark Hall lemmatizes the noun as
 {\emph{timber}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!timber@\iventry{timber}{}}
@@ -25573,7 +25768,7 @@ Clark Hall lemmatizes the noun as
 a selected oblique cell or a reconstructed convenience form.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-114}
+English}\label{development-to-old-english-115}
 
 With the consonantal frame \Recon{timbr-} `timber' in place, the rest of
 the development is straightforward. Loss of final \emph{-ą} leaves
@@ -25636,7 +25831,7 @@ modeled input &
 Derivation: citation reconstruction \emph{*wakēną}; form followed here
 \emph{*wákaną} \textgreater{} \emph{wacan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-128}
+\subsection{Derivation trace}\label{derivation-trace-129}
 
 Proto input: \emph{*wákaną}
 
@@ -25682,7 +25877,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*wakan} \\
 Old English form: \emph{wacan}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-116}
+evidence}\label{reconstruction-and-comparative-evidence-117}
 
 Kroonen gives the strong verb as \emph{*wakan-} with Old English
 {\emph{wacan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wacan@\iventry{wacan}{}}
@@ -25698,7 +25893,7 @@ The difference is therefore lexical and class-based, not graphic. Strong
 {\emph{wacian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wacian@\iventry{wacian}{}}
 `wake' `be awake, watch' belong to related but distinct histories.
 
-\subsection{Old English evidence}\label{old-english-evidence-116}
+\subsection{Old English evidence}\label{old-english-evidence-117}
 
 Clark Hall lists
 {\emph{wacan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!wacan@\iventry{wacan}{}}
@@ -25720,7 +25915,7 @@ the verb family, not as a directly quoted simplex infinitive. It still
 remains the correct Old English comparison form for the strong branch.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-115}
+English}\label{development-to-old-english-116}
 
 With strong
 \Recon{wákaną}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wakana@\iventry{*wákaną}{}}
@@ -25783,7 +25978,7 @@ infinitive \\
 Derivation: citation reconstruction \emph{*wátną}; form followed here
 \emph{*wátōr} \textgreater{} \emph{wæter} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-129}
+\subsection{Derivation trace}\label{derivation-trace-130}
 
 Proto input: \emph{*wátōr}
 
@@ -25829,7 +26024,7 @@ Proto input: \emph{*wátōr}
 Old English form: \emph{wæter}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-117}
+evidence}\label{reconstruction-and-comparative-evidence-118}
 
 Kroonen reconstructs a heteroclitic noun \emph{*watar-}
 \textasciitilde{} \emph{*watan-} and states that the Proto-Germanic
@@ -25847,7 +26042,7 @@ singular
 \Recon{wátōr}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!wator@\iventry{*wátōr}{}}
 `water'.
 
-\subsection{Old English evidence}\label{old-english-evidence-117}
+\subsection{Old English evidence}\label{old-english-evidence-118}
 
 Bright gives the noun as
 {\emph{wæter}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!waeter@\iventry{wæter}{}}
@@ -25869,7 +26064,7 @@ normal paradigm. The complication lies on the comparative side of the
 lexeme, not in Old English attestation.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-116}
+English}\label{development-to-old-english-117}
 
 From \Recon{wátōr} `water', pre-final \emph{ō} becomes \emph{a},
 yielding \Recon{watar} `water' (\citeproc{ref-RingeTaylor2014}{Ringe and
@@ -25928,7 +26123,7 @@ inherited singular input &
 Derivation: citation reconstruction \emph{*wálaz}; form followed here
 \emph{*xwálaz} \textgreater{} \emph{hwæl} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-130}
+\subsection{Derivation trace}\label{derivation-trace-131}
 
 Proto input: \emph{*xwálaz}
 
@@ -25973,7 +26168,7 @@ Proto input: \emph{*xwálaz}
 Old English form: \emph{hwæl}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-118}
+evidence}\label{reconstruction-and-comparative-evidence-119}
 
 The comparative sources are not uniform. Orel gives
 \Recon{xwalaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwalaz@\iventry{*xwalaz}{}}
@@ -25988,7 +26183,7 @@ Both notations agree on inherited initial \emph{hw-/xw-}, but they
 differ in stem label. The a-stem-like input followed here is closer to
 Orel's notation than to Kroonen's citation form.
 
-\subsection{Old English evidence}\label{old-english-evidence-118}
+\subsection{Old English evidence}\label{old-english-evidence-119}
 
 Clark Hall lemmatizes the noun as
 {\emph{hwal}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hwal@\iventry{hwal}{}}
@@ -26008,7 +26203,7 @@ The plural
 `whale' in a closed monosyllable.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-117}
+English}\label{development-to-old-english-118}
 
 From \Recon{xwálaz} `whale', final \emph{-z} disappears and bare final
 \emph{-a} is lost. Anglo-Frisian fronting then yields \emph{æ} in the
@@ -26072,7 +26267,7 @@ branch \\
 Derivation: citation reconstruction \emph{*wainōjaną}; form followed
 here \emph{*xwī́naną} \textgreater{} \emph{hwīnan} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-131}
+\subsection{Derivation trace}\label{derivation-trace-132}
 
 Proto input: \emph{*xwī́naną}
 
@@ -26116,7 +26311,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*xwī́nan} \\
 Old English form: \emph{hwīnan}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-119}
+evidence}\label{reconstruction-and-comparative-evidence-120}
 
 The citation reconstruction preserved in the header belongs to the
 lament-family verb seen in German
@@ -26147,7 +26342,7 @@ The derivational input
 `whine' therefore represents a competing comparative identification
 rather than a hidden cell of \Recon{wainōjaną} `whine'.
 
-\subsection{Old English evidence}\label{old-english-evidence-119}
+\subsection{Old English evidence}\label{old-english-evidence-120}
 
 Clark Hall records
 {\emph{hwinan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hwinan@\iventry{hwinan}{}}
@@ -26165,7 +26360,7 @@ dictionary spelling
 `whine'; it does not turn an unattested verb into a reconstructed one.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-118}
+English}\label{development-to-old-english-119}
 
 Once the strong-verb input
 \Recon{xwī́naną}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xwinana@\iventry{*xwī́naną}{}}
@@ -26248,7 +26443,7 @@ behind ON
 Derivation: citation reconstruction \emph{*wáiθiz}; form followed here
 \emph{*wī́θagą} \textgreater{} \emph{wīþiġ} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-132}
+\subsection{Derivation trace}\label{derivation-trace-133}
 
 Proto input: \emph{*wī́θagą}
 
@@ -26295,7 +26490,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*wī́θæg} \\
 Old English form: \emph{wīþiġ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-120}
+evidence}\label{reconstruction-and-comparative-evidence-121}
 
 The comparative evidence groups the word with Germanic forms of the
 \Recon{wīþja} `withy' (or \emph{*wīþjō-} variant) or \emph{*wiþ-} type
@@ -26313,7 +26508,7 @@ derivational \emph{*-ag-} sequence rather than a heavy ja-stem
 `withy' is thus a formation choice rather than a mere respelling of the
 comparative headword.
 
-\subsection{Old English evidence}\label{old-english-evidence-120}
+\subsection{Old English evidence}\label{old-english-evidence-121}
 
 Clark Hall records the noun as
 {\emph{wiðig}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!withig@\iventry{wiðig}{}}
@@ -26331,7 +26526,7 @@ explanation is why the selected Proto-Germanic input is
 type.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-119}
+English}\label{development-to-old-english-120}
 
 From
 \Recon{wī́θagą}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!withaga@\iventry{*wī́θagą}{}}
@@ -26404,7 +26599,7 @@ Campbell/Adamczyk-style heavy ja-stem \emph{-e} / zero outcome &
 Derivation: citation reconstruction \emph{*júgunθiz}; form followed here
 \emph{*júgunθ} \textgreater{} \emph{ġeoguþ} (early analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-133}
+\subsection{Derivation trace}\label{derivation-trace-134}
 
 Proto input: \emph{*júgunθ}
 
@@ -26449,7 +26644,7 @@ OE Unstressed Long Vowel Shortening & \emph{*júguθ} \\
 Old English form: \emph{ġeoguþ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-121}
+evidence}\label{reconstruction-and-comparative-evidence-122}
 
 The wider etymological tradition reconstructs an earlier form of the
 word as
@@ -26469,7 +26664,7 @@ Ringe and Taylor explicitly give the sequence \Recon{jugunþi} `youth'
 comparative headword because the Old English development must begin
 after early loss of final \emph{-i}.
 
-\subsection{Old English evidence}\label{old-english-evidence-121}
+\subsection{Old English evidence}\label{old-english-evidence-122}
 
 The Old English noun is attested with varying spellings. Ringe and
 Taylor cite
@@ -26488,7 +26683,7 @@ should be chosen. The relevant Old English comparison form is the noun
 `youth' itself.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-120}
+English}\label{development-to-old-english-121}
 
 The decisive early step is the loss of final \emph{-i} before the Old
 English umlaut stage. If that high vowel remained, the word would
@@ -26582,7 +26777,7 @@ identified.
 Derivation: citation reconstruction \emph{*bánną}; form followed here
 \emph{*bánnas} \textgreater{} \emph{bannes} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-134}
+\subsection{Derivation trace}\label{derivation-trace-135}
 
 Proto input: \emph{*bánnas}
 
@@ -26625,7 +26820,7 @@ Proto input: \emph{*bánnas}
 Old English form: \emph{bannes}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-122}
+evidence}\label{reconstruction-and-comparative-evidence-123}
 
 Orel cites a bann-noun under
 \Recon{bannan}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bannan@\iventry{*bannan}{}}
@@ -26643,7 +26838,7 @@ singular
 
 The analysis therefore depends on medial, not final, gemination.
 
-\subsection{Old English evidence}\label{old-english-evidence-122}
+\subsection{Old English evidence}\label{old-english-evidence-123}
 
 Old English lexicographic evidence securely supports the noun itself.
 Bosworth-Toller records the noun under nominative
@@ -26658,7 +26853,7 @@ here as the regular genitive form used for comparison rather than as a
 dictionary headword.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-121}
+English}\label{development-to-old-english-122}
 
 From
 \Recon{bánnas}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bannas@\iventry{*bánnas}{}}
@@ -26721,7 +26916,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*bázją}; form followed here
 \emph{*bázjas} \textgreater{} \emph{berġes} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-135}
+\subsection{Derivation trace}\label{derivation-trace-136}
 
 Proto input: \emph{*bázjas}
 
@@ -26768,7 +26963,7 @@ Proto input: \emph{*bázjas}
 Old English form: \emph{berġes}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-123}
+evidence}\label{reconstruction-and-comparative-evidence-124}
 
 Kroonen reconstructs the berry noun as
 {\emph{*basja-}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!basja@\iventry{*basja-}{}}
@@ -26788,7 +26983,7 @@ Germanic. Ringe and Taylor's
 English paradigm without any hidden gemination repair
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 181}).
 
-\subsection{Old English evidence}\label{old-english-evidence-123}
+\subsection{Old English evidence}\label{old-english-evidence-124}
 
 Campbell cites feminine
 {\emph{berige}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!berige@\iventry{berige}{}}
@@ -26801,7 +26996,7 @@ exact genitive
 rather than as a dictionary headword.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-122}
+English}\label{development-to-old-english-123}
 
 Citation
 \Recon{bázją}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bazja@\iventry{*bázją}{}}
@@ -26872,7 +27067,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*burōną}; form followed here
 \emph{*búrōθi} \textgreater{} \emph{boraþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-136}
+\subsection{Derivation trace}\label{derivation-trace-137}
 
 Proto input: \emph{*búrōθi}
 
@@ -26918,7 +27113,7 @@ OE Final Unstressed O Lowering & \emph{*bóraθ} \\
 Old English form: \emph{boraþ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-124}
+evidence}\label{reconstruction-and-comparative-evidence-125}
 
 Kroonen reconstructs the bore-family verb as \emph{*burojan-} and cites
 Old English
@@ -26933,7 +27128,7 @@ in finite forms make this 3sg cell the relevant comparison form for the
 ending (\citeproc{ref-Campbell1959}{Campbell 1959, § 356.4};
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 80}).
 
-\subsection{Old English evidence}\label{old-english-evidence-124}
+\subsection{Old English evidence}\label{old-english-evidence-125}
 
 Clark Hall lemmatizes the verb as
 {\emph{borian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!borian@\iventry{borian}{}}
@@ -26950,7 +27145,7 @@ regular comparison form for this non-\emph{j} 3sg cell is
 `bores'.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-123}
+English}\label{development-to-old-english-124}
 
 From \Recon{búrōθi} `bores', loss of final \emph{-i} first gives
 \Recon{búrōθ} `bores'. Northwest Germanic lowering then produces
@@ -27026,7 +27221,7 @@ imperative singular companion &
 Derivation: citation reconstruction \emph{*burōną}; form followed here
 \emph{*búrô} \textgreater{} \emph{bora} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-137}
+\subsection{Derivation trace}\label{derivation-trace-138}
 
 Proto input: \emph{*búrô}
 
@@ -27070,7 +27265,7 @@ OE Unstressed Long Vowel Shortening & \emph{*bóra} \\
 Old English form: \emph{bora}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-125}
+evidence}\label{reconstruction-and-comparative-evidence-126}
 
 Kroonen reconstructs the bore-family verb as \emph{*burojan-} and cites
 Old English
@@ -27083,7 +27278,7 @@ Taylor 2014, 314}).
 The derivational input \Recon{búrô} `bore (iptv.2sg)' is therefore an
 imperative cell of the same family, not the citation form of the verb.
 
-\subsection{Old English evidence}\label{old-english-evidence-125}
+\subsection{Old English evidence}\label{old-english-evidence-126}
 
 Clark Hall lemmatizes the verb as
 {\emph{borian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!borian@\iventry{borian}{}}
@@ -27097,7 +27292,7 @@ dictionary lemma. It is the most direct Old English comparator for the
 non-\emph{j} finite cell represented by \Recon{búrô} `bore (iptv.2sg)'.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-124}
+English}\label{development-to-old-english-125}
 
 Northwest Germanic lowering first gives \Recon{bórô} `bore (iptv.2sg)'
 from \Recon{búrô} `bore (iptv.2sg)', and late shortening of the
@@ -27171,7 +27366,7 @@ imperative singular &
 Derivation: citation reconstruction \emph{*béuganą}; form followed here
 \emph{*báug} \textgreater{} \emph{bēag} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-138}
+\subsection{Derivation trace}\label{derivation-trace-139}
 
 Proto input: \emph{*báug}
 
@@ -27214,7 +27409,7 @@ Proto input: \emph{*báug}
 Old English form: \emph{bēag}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-126}
+evidence}\label{reconstruction-and-comparative-evidence-127}
 
 The inherited verb belongs to the class-II strong-verb family
 \Recon{béuganą}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!beugana@\iventry{*béuganą}{}}
@@ -27236,7 +27431,7 @@ the separate history behind
 {\emph{būgan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bugan@\iventry{būgan}{}}
 `to bow' (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 55}).
 
-\subsection{Old English evidence}\label{old-english-evidence-126}
+\subsection{Old English evidence}\label{old-english-evidence-127}
 
 Bosworth-Toller and Clark Hall both record
 {\emph{bēag}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!beag@\iventry{bēag}{}}
@@ -27256,7 +27451,7 @@ singular preterite
 \emph{*au} grade is preserved most directly.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-125}
+English}\label{development-to-old-english-126}
 
 From
 \Recon{báug}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!baug@\iventry{*báug}{}}
@@ -27342,7 +27537,7 @@ undergone later leveling.
 Derivation: citation reconstruction \emph{*kōz}; form followed here
 \emph{*kūi} \textgreater{} \emph{cȳ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-139}
+\subsection{Derivation trace}\label{derivation-trace-140}
 
 Proto input: \emph{*kūi}
 
@@ -27385,7 +27580,7 @@ Proto input: \emph{*kūi}
 Old English form: \emph{cȳ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-127}
+evidence}\label{reconstruction-and-comparative-evidence-128}
 
 Kroonen reconstructs a root noun with the inherited alternation
 \emph{*kō-} \textasciitilde{} \emph{*ku-}, explicitly nom.
@@ -27401,7 +27596,7 @@ Ringe and Taylor also posit a later PNWGmc nominative \Recon{kūaz} `cow'
 form cȳ `cow' depends on the oblique \emph{*kū-} stem and a following
 \emph{*i}.
 
-\subsection{Old English evidence}\label{old-english-evidence-127}
+\subsection{Old English evidence}\label{old-english-evidence-128}
 
 Clark Hall lemmatizes the noun under
 {\emph{cū}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cu@\iventry{cū}{}}
@@ -27442,7 +27637,7 @@ nominative-accusative plural. The genitive singular is less stable, with
 `cow (gen.sg.)' all appearing in the local source record.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-126}
+English}\label{development-to-old-english-127}
 
 \Recon{kūi} `cow' is the dative singular of the oblique \emph{*kū-}
 stem. The following \emph{*i} triggers i-umlaut, so \emph{ū} becomes
@@ -27527,7 +27722,7 @@ path to attested
 Derivation: citation reconstruction \emph{*fínθaną}; form followed here
 \emph{*fúnðanai} \textgreater{} \emph{fundne} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-140}
+\subsection{Derivation trace}\label{derivation-trace-141}
 
 Proto input: \emph{*fúnðanai}
 
@@ -27573,7 +27768,7 @@ OE Unstressed Long Vowel Shortening & \emph{*fúndne} \\
 Old English form: \emph{fundne}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-128}
+evidence}\label{reconstruction-and-comparative-evidence-129}
 
 The inherited strong verb
 \Recon{fínθaną}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!finthana@\iventry{*fínθaną}{}}
@@ -27596,7 +27791,7 @@ inherited \emph{-in-}; he does not print this whole accented word
 choice is therefore not a claim that every Old English participial
 \emph{-en-} must result from analogy.
 
-\subsection{Old English evidence}\label{old-english-evidence-128}
+\subsection{Old English evidence}\label{old-english-evidence-129}
 
 The selected
 {\emph{fundne}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fundne@\iventry{fundne}{}}
@@ -27621,7 +27816,7 @@ background (\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 124}). None is
 suppressed by selecting the independently attested syncopated plural.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-127}
+English}\label{development-to-old-english-128}
 
 Unstressed final \emph{ai} first becomes long \emph{ē}. Dental hardening
 gives
@@ -27704,7 +27899,7 @@ invalidate the independently supported nominative plural.
 Derivation: citation reconstruction \emph{*furxtīn}; form followed here
 \emph{*fúrxtīnaz} \textgreater{} \emph{fyrhte} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-141}
+\subsection{Derivation trace}\label{derivation-trace-142}
 
 Proto input: \emph{*fúrxtīnaz}
 
@@ -27738,8 +27933,8 @@ Proto input: \emph{*fúrxtīnaz}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Final Bare A Loss} & \emph{*fúrxtīn} \\
-\mbox{OE I Umlaut} & \emph{*fyrxtīn} \\
-\mbox{NWGmc In Stem N Loss} & \emph{*fyrxtī} \\
+\mbox{NWGmc In Stem N Loss} & \emph{*fúrxtī} \\
+\mbox{OE I Umlaut} & \emph{*fyrxtī} \\
 OE Unstressed Long Vowel Shortening & \emph{*fyrxti} \\
 OE Med Unstressed I Lowering1 & \emph{*fyrxte} \\
 \end{tabularx}
@@ -27752,7 +27947,7 @@ OE Med Unstressed I Lowering1 & \emph{*fyrxte} \\
 Old English form: \emph{fyrhte}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-129}
+evidence}\label{reconstruction-and-comparative-evidence-130}
 
 The noun belongs to the inherited in-stem abstract
 \Recon{furxtīn}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtin@\iventry{*furxtīn}{}}
@@ -27766,11 +27961,11 @@ that in-stem paradigm.
 
 Ringe and Taylor treat the later nominative forms with \emph{-u} or
 \emph{-o} as analogically remodeled
-(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 395--96}). I
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 380--81}). I
 therefore use the oblique in-stem form, which continues the older
 formation rather than the remodeled nominative.
 
-\subsection{Old English evidence}\label{old-english-evidence-129}
+\subsection{Old English evidence}\label{old-english-evidence-130}
 
 Bosworth-Toller records
 {\emph{fyrhte}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyrhte@\iventry{fyrhte}{}}
@@ -27791,7 +27986,7 @@ evidence, but the Old English form here of this entry is the oblique
 cell.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-128}
+English}\label{development-to-old-english-129}
 
 From
 \Recon{fúrxtīnaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furxtinaz@\iventry{*fúrxtīnaz}{}}
@@ -27799,7 +27994,15 @@ From
 the final ending, yielding
 {\emph{fyrhte}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyrhte@\iventry{fyrhte}{}}
 `fright'. The form compared here therefore follows the ordinary Old
-English reduction of the abstract ending in this paradigm.
+English reduction of the abstract ending in this paradigm. Final
+\emph{*n} after unstressed \emph{*ī} was lost after Proto-West-Germanic
+differentiation, once the inherited ending had become word-final, not as
+a productive late Old English deletion. Mutation and subsequent
+shortening and lowering then give \emph{fyrhte}
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 87--88};
+\citeproc{ref-Campbell1959}{Campbell 1959, 189}, §473, pp.~236--237,
+§589.7; \citeproc{ref-SieversBrunner1965}{Brunner 1965, 225--26}, §280;
+\citeproc{ref-Fulk2018}{Fulk 2018, 173}, §7.34).
 
 The later nominative forms with \emph{-u} or \emph{-o} belong to a
 subsequent analogical reshaping of the paradigm. The Old English form
@@ -27871,7 +28074,7 @@ later analogical layer.
 Derivation: citation reconstruction \emph{*xabēną}; form followed here
 \emph{*xábēθi} \textgreater{} \emph{hæfeþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-142}
+\subsection{Derivation trace}\label{derivation-trace-143}
 
 Proto input: \emph{*xábēθi}
 
@@ -27918,7 +28121,7 @@ OE Unstressed Long Vowel Shortening & \emph{*çæβeθ} \\
 Old English form: \emph{hæfeþ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-130}
+evidence}\label{reconstruction-and-comparative-evidence-131}
 
 The verb belongs to the inherited class-III weak paradigm usually cited
 under
@@ -27939,7 +28142,7 @@ The derivational input
 infinitive. For the present analysis, that finite cell is the cleaner
 comparator for the inherited non-geminating stem.
 
-\subsection{Old English evidence}\label{old-english-evidence-130}
+\subsection{Old English evidence}\label{old-english-evidence-131}
 
 The ordinary Old English headword is
 {\emph{habban}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!habban@\iventry{habban}{}}
@@ -27958,7 +28161,7 @@ present stem more directly than
 `have' does.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-129}
+English}\label{development-to-old-english-130}
 
 From
 \Recon{xábēθi}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xabethi@\iventry{*xábēθi}{}}
@@ -28042,7 +28245,7 @@ here \\
 Derivation: citation reconstruction \emph{*knéwą}; form followed here
 \emph{*knéwai} \textgreater{} \emph{cneowe} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-143}
+\subsection{Derivation trace}\label{derivation-trace-144}
 
 Proto input: \emph{*knéwai}
 
@@ -28284,7 +28487,7 @@ of the lexeme's paradigm from the sound-law path of the chosen cell.
 Derivation: citation reconstruction \emph{*liznōjaną}; form followed
 here \emph{*líznōθi} \textgreater{} \emph{leornaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-144}
+\subsection{Derivation trace}\label{derivation-trace-145}
 
 Proto input: \emph{*líznōθi}
 
@@ -28384,7 +28587,7 @@ selected vowel itself requires analogical replacement
 Derivation: citation reconstruction \emph{*liznōjaną}; form followed
 here \emph{*líznô} \textgreater{} \emph{leorna} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-145}
+\subsection{Derivation trace}\label{derivation-trace-146}
 
 Proto input: \emph{*líznô}
 
@@ -28477,7 +28680,7 @@ selection or an extra replacement needed for this imperative
 Derivation: citation reconstruction \emph{*likkōną}; form followed here
 \emph{*líkkōθi} \textgreater{} \emph{liccaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-146}
+\subsection{Derivation trace}\label{derivation-trace-147}
 
 Proto input: \emph{*líkkōθi}
 
@@ -28522,7 +28725,7 @@ OE Final Unstressed O Lowering & \emph{*líkkaθ} \\
 Old English form: \emph{liccaþ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-131}
+evidence}\label{reconstruction-and-comparative-evidence-132}
 
 Ringe and Taylor give PWGmc \Recon{ekkōn} `lick (3sg.)' continuing as
 Old English
@@ -28545,7 +28748,7 @@ states the class-II present endings as lufas, \emph{-aþ} (\textless{}
 2sg. \emph{-as(t)} and 3sg. \emph{-aþ} have stable \emph{a}
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 80}).
 
-\subsection{Old English evidence}\label{old-english-evidence-131}
+\subsection{Old English evidence}\label{old-english-evidence-132}
 
 Bosworth-Toller lemmatizes the verb as \emph{liccian} `lick'
 (\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 614}). The
@@ -28564,7 +28767,7 @@ The form treated here is the present third singular
 `lick', not a separately lemmatized headword.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-130}
+English}\label{development-to-old-english-131}
 
 \Recon{líkkōθi}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!likkothi@\iventry{*líkkōθi}{}}
 `licks' first loses final \emph{-i}, giving \Recon{líkkōθ} `licks'.
@@ -28635,7 +28838,7 @@ form here \\
 Derivation: citation reconstruction \emph{*likkōną}; form followed here
 \emph{*líkkô} \textgreater{} \emph{licca} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-147}
+\subsection{Derivation trace}\label{derivation-trace-148}
 
 Proto input: \emph{*líkkô}
 
@@ -28677,7 +28880,7 @@ OE Unstressed Long Vowel Shortening & \emph{*líkka} \\
 Old English form: \emph{licca}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-132}
+evidence}\label{reconstruction-and-comparative-evidence-133}
 
 Ringe and Taylor give PWGmc \Recon{ekkōn} `lick (3sg.)' continuing as
 Old English
@@ -28701,7 +28904,7 @@ Taylor likewise note that class-II weak present 2sg. \emph{-as(t)} and
 treated here is therefore not that remodeled infinitive but a finite
 cell in bare trimoric \emph{*-ō}.
 
-\subsection{Old English evidence}\label{old-english-evidence-132}
+\subsection{Old English evidence}\label{old-english-evidence-133}
 
 Bosworth-Toller lemmatizes the verb as \emph{liccian} `lick'
 (\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 614}).
@@ -28721,7 +28924,7 @@ The Old English form here in this entry is the imperative singular
 `licks', not a separately lemmatized citation word.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-131}
+English}\label{development-to-old-english-132}
 
 With the stem \emph{licc-} established, the remaining development is
 brief. Campbell's class-II present endings lufas, \emph{-aþ}
@@ -28793,7 +28996,7 @@ present third singular companion &
 Derivation: citation reconstruction \emph{*libēną}; form followed here
 \emph{*líbēθi} \textgreater{} \emph{lifeþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-148}
+\subsection{Derivation trace}\label{derivation-trace-149}
 
 Proto input: \emph{*líbēθi}
 
@@ -28838,7 +29041,7 @@ OE Unstressed Long Vowel Shortening & \emph{*líβeθ} \\
 Old English form: \emph{lifeþ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-133}
+evidence}\label{reconstruction-and-comparative-evidence-134}
 
 The inherited verb belongs to the class-III weak family cited by Kroonen
 under \emph{*libēn-}, reflected in Old English
@@ -28858,7 +29061,7 @@ forms such as
 {\emph{lifian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!lifian@\iventry{lifian}{}}
 `live'.
 
-\subsection{Old English evidence}\label{old-english-evidence-133}
+\subsection{Old English evidence}\label{old-english-evidence-134}
 
 The ordinary lemma tradition centers on
 {\emph{libban}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!libban@\iventry{libban}{}}
@@ -28877,7 +29080,7 @@ lemma. It preserves the older present-stem history more clearly than the
 remodeled lemma tradition does.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-132}
+English}\label{development-to-old-english-133}
 
 From
 \Recon{líbēθi}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!libethi@\iventry{*líbēθi}{}}
@@ -28951,7 +29154,7 @@ and related finite remodeling &
 Derivation: citation reconstruction \emph{*makōną}; form followed here
 \emph{*mákōθi} \textgreater{} \emph{macaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-149}
+\subsection{Derivation trace}\label{derivation-trace-150}
 
 Proto input: \emph{*mákōθi}
 
@@ -28998,7 +29201,7 @@ OE Final Unstressed O Lowering & \emph{*makaθ} \\
 Old English form: \emph{macaþ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-134}
+evidence}\label{reconstruction-and-comparative-evidence-135}
 
 Kroonen derives the Old English verb from
 {\emph{*makōjan-}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!makojan@\iventry{*makōjan-}{}}
@@ -29014,7 +29217,7 @@ The derivational input
 `makes' is therefore a finite 3sg cell of the same family, not the
 citation form of the verb.
 
-\subsection{Old English evidence}\label{old-english-evidence-134}
+\subsection{Old English evidence}\label{old-english-evidence-135}
 
 Clark Hall lemmatizes the verb as
 {\emph{macian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!macian@\iventry{macian}{}}
@@ -29035,7 +29238,7 @@ traditions (\citeproc{ref-Campbell1959}{Campbell 1959, § 356.4};
 cell.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-133}
+English}\label{development-to-old-english-134}
 
 After early loss of final \emph{-i}, \Recon{mákōθi} `makes' →
 \Recon{mákōθ} `makes' after loss of final -i. Anglo-Frisian brightening
@@ -29114,7 +29317,7 @@ imperative singular companion &
 Derivation: citation reconstruction \emph{*makōną}; form followed here
 \emph{*mákô} \textgreater{} \emph{maca} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-150}
+\subsection{Derivation trace}\label{derivation-trace-151}
 
 Proto input: \emph{*mákô}
 
@@ -29158,7 +29361,7 @@ OE Unstressed Long Vowel Shortening & \emph{*maka} \\
 Old English form: \emph{maca}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-135}
+evidence}\label{reconstruction-and-comparative-evidence-136}
 
 The make-family belongs to the Old English class-II weak verbs. Campbell
 cites \emph{lapian,}
@@ -29182,7 +29385,7 @@ singular as -a \textless{} \emph{*-ō}, which makes this cell the
 relevant comparison point for the Old English form treated here
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 314}).
 
-\subsection{Old English evidence}\label{old-english-evidence-135}
+\subsection{Old English evidence}\label{old-english-evidence-136}
 
 The dictionary headword is
 {\emph{macian}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!macian@\iventry{macian}{}}
@@ -29201,7 +29404,7 @@ finite cell isolates the regular outcome of trimoric \emph{*ō} more
 cleanly than the citation form does.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-134}
+English}\label{development-to-old-english-135}
 
 From \Recon{mákô} `make (iptv.2sg)', Anglo-Frisian brightening first
 gives \Recon{mækô} `make (iptv.2sg)'. Campbell cites \emph{macian}
@@ -29280,7 +29483,7 @@ present third singular companion &
 Derivation: citation reconstruction \emph{*mánnaz}; form followed here
 \emph{*mánnas} \textgreater{} \emph{mannes} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-151}
+\subsection{Derivation trace}\label{derivation-trace-152}
 
 Proto input: \emph{*mánnas}
 
@@ -29323,7 +29526,7 @@ Proto input: \emph{*mánnas}
 Old English form: \emph{mannes}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-136}
+evidence}\label{reconstruction-and-comparative-evidence-137}
 
 The lexeme-level reconstruction is not uniform. Kroonen cites
 \emph{*mannan-}, and Orel has \Recon{mannz} `man'
@@ -29336,7 +29539,7 @@ chosen for the Old English comparison.
 The target is not the ordinary citation form. Its medial geminate
 precedes the genitive ending.
 
-\subsection{Old English evidence}\label{old-english-evidence-136}
+\subsection{Old English evidence}\label{old-english-evidence-137}
 
 Campbell gives the paradigm
 {\emph{mann}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!mann@\iventry{mann}{}}
@@ -29368,7 +29571,7 @@ The relevant comparison form is therefore the attested genitive singular
 'man'.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-135}
+English}\label{development-to-old-english-136}
 
 Campbell's paradigm \emph{mann}, \emph{man} / \emph{mannes} /
 {\emph{menn}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!menn@\iventry{menn}{}}
@@ -29443,7 +29646,7 @@ genitive singular &
 Derivation: citation reconstruction \emph{*mizdō}; form followed here
 \emph{*mízdai} \textgreater{} \emph{meorde} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-152}
+\subsection{Derivation trace}\label{derivation-trace-153}
 
 Proto input: \emph{*mízdai}
 
@@ -29490,7 +29693,7 @@ OE Unstressed Long Vowel Shortening & \emph{*méorde} \\
 Old English form: \emph{meorde}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-137}
+evidence}\label{reconstruction-and-comparative-evidence-138}
 
 The lexeme-level reconstruction is
 \Recon{mizdō}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!mizdo@\iventry{*mizdō}{}}
@@ -29510,7 +29713,7 @@ some form of \emph{z}-loss and compensatory lengthening
 analysis (\citeproc{ref-Orel2003}{Orel 2003, 272}). The comparison here
 concerns the attested oblique line \emph{meorde}.
 
-\subsection{Old English evidence}\label{old-english-evidence-137}
+\subsection{Old English evidence}\label{old-english-evidence-138}
 
 The directly attested forms are obliques:
 {\emph{meorde}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!meorde@\iventry{meorde}{}}
@@ -29534,7 +29737,7 @@ The target of this entry is therefore the attested oblique
 `meed'.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-136}
+English}\label{development-to-old-english-137}
 
 Ringe and Taylor give the broader noun history as \Recon{mizdo} `reward'
 \textgreater{} \Recon{mizdu} `reward' \textgreater{} OE meord
@@ -29635,7 +29838,7 @@ singular target \\
 Derivation: citation reconstruction \emph{*náxtz}; form followed here
 \emph{*náxti} \textgreater{} \emph{niht} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-153}
+\subsection{Derivation trace}\label{derivation-trace-154}
 
 Proto input: \emph{*náxti}
 
@@ -29681,7 +29884,7 @@ Proto input: \emph{*náxti}
 Old English form: \emph{niht}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-138}
+evidence}\label{reconstruction-and-comparative-evidence-139}
 
 Ringe and Taylor cite gen.sg. \Recon{nahtiz} `night', dat.sg.
 \Recon{nahti} `night', and nom.pl. \Recon{nahtiz} `night' for the
@@ -29701,7 +29904,7 @@ explicitly explain forms such as
 `day' by analogy with dat.sg. niht \textless{} \Recon{nahti} `night'
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 380}).
 
-\subsection{Old English evidence}\label{old-english-evidence-138}
+\subsection{Old English evidence}\label{old-english-evidence-139}
 
 Clark Hall lemmatizes
 {\emph{niht}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!niht@\iventry{niht}{}}
@@ -29729,7 +29932,7 @@ record still preserves the non-umlauted side of the paradigm in
 `night'-type forms.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-137}
+English}\label{development-to-old-english-138}
 
 Ringe and Taylor derive West Saxon \emph{niht} `night' from
 \Recon{nahti} `night' via \Recon{nehti} `night' and \Recon{neahti}
@@ -29797,7 +30000,7 @@ selected dative singular &
 Derivation: citation reconstruction \emph{*rastō}; form followed here
 \emph{*rástōz} \textgreater{} \emph{ræste} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-154}
+\subsection{Derivation trace}\label{derivation-trace-155}
 
 Proto input: \emph{*rástōz}
 
@@ -29845,7 +30048,7 @@ OE Unstressed Long Vowel Shortening & \emph{*ræstæ} \\
 Old English form: \emph{ræste}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-139}
+evidence}\label{reconstruction-and-comparative-evidence-140}
 
 Kroonen treats the noun as a feminine ō-stem
 {\emph{*rastō-}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rasto@\iventry{*rastō-}{}},
@@ -29864,7 +30067,7 @@ that the oblique singulars converge on the same front-vocalic
 \emph{ræste} `rest' side, in contrast to a nominative singular that
 would remain \emph{rast} `rest'.
 
-\subsection{Old English evidence}\label{old-english-evidence-139}
+\subsection{Old English evidence}\label{old-english-evidence-140}
 
 The ordinary Old English citation form is
 {\emph{ræst}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!raest@\iventry{ræst}{}}
@@ -29885,7 +30088,7 @@ The comparison form used here is therefore an attested oblique
 `rest' remains an equally real part of the Old English record.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-138}
+English}\label{development-to-old-english-139}
 
 Once final \emph{*z} is lost, the derivational input moves through the
 front-vocalic oblique side of the paradigm rather than the back-vocalic
@@ -29952,7 +30155,7 @@ form \\
 Derivation: citation reconstruction \emph{*skuldrō}; form followed here
 \emph{*skúldramiz} \textgreater{} \emph{sċuldrum} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-155}
+\subsection{Derivation trace}\label{derivation-trace-156}
 
 Proto input: \emph{*skúldramiz}
 
@@ -29998,7 +30201,7 @@ Proto input: \emph{*skúldramiz}
 Old English form: \emph{sċuldrum}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-140}
+evidence}\label{reconstruction-and-comparative-evidence-141}
 
 The handbooks do not agree on the reconstruction of the Germanic word.
 Orel gives \emph{*skuldr(j)ō} as a feminine ō-/jō-stem and explicitly
@@ -30033,7 +30236,7 @@ A dative/instrumental plural form
 English \emph{-um}, and it corresponds directly to the attested dative
 plural discussed below.
 
-\subsection{Old English evidence}\label{old-english-evidence-140}
+\subsection{Old English evidence}\label{old-english-evidence-141}
 
 The ordinary Old English headword is
 {\emph{sculdor}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!sculdor@\iventry{sculdor}{}}
@@ -30070,7 +30273,7 @@ plural
 representation of the same Old English initial cluster.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-139}
+English}\label{development-to-old-english-140}
 
 Proto-Germanic \Recon{skúldramiz} `shoulder' can be interpreted as a
 dative/instrumental plural form. In this environment the post-tonic
@@ -30168,7 +30371,7 @@ compare unlike cells.
 Derivation: citation reconstruction \emph{*skéubaną}; form followed here
 \emph{*skáub} \textgreater{} \emph{sċēaf} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-156}
+\subsection{Derivation trace}\label{derivation-trace-157}
 
 Proto input: \emph{*skáub}
 
@@ -30213,7 +30416,7 @@ Proto input: \emph{*skáub}
 Old English form: \emph{sċēaf}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-141}
+evidence}\label{reconstruction-and-comparative-evidence-142}
 
 Kroonen reconstructs the strong verb as \emph{*skeuban-}
 \textasciitilde{} \emph{*skūban-} and cites Old English present forms
@@ -30226,7 +30429,7 @@ here uses the singular preterite
 \Recon{skáub}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skaub@\iventry{*skáub}{}}
 `shove', not the infinitive.
 
-\subsection{Old English evidence}\label{old-english-evidence-141}
+\subsection{Old English evidence}\label{old-english-evidence-142}
 
 The ordinary dictionary verb is
 {\emph{scūfan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!scufan@\iventry{scūfan}{}}
@@ -30251,7 +30454,7 @@ Sweet gives the same paradigm (\citeproc{ref-Sweet1953}{Sweet 1953,
 `shove'.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-140}
+English}\label{development-to-old-english-141}
 
 From \Recon{skáub} `shove', the development is straightforward.
 \emph{*au} fronts and levels to \emph{ēa}, final \emph{*b} becomes a
@@ -30342,7 +30545,7 @@ past participle &
 Derivation: citation reconstruction \emph{*skawōną}; form followed here
 \emph{*skáwōθi} \textgreater{} \emph{sċēawaþ} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-157}
+\subsection{Derivation trace}\label{derivation-trace-158}
 
 Proto input: \emph{*skáwōθi}
 
@@ -30389,7 +30592,7 @@ OE Final Unstressed O Lowering & \emph{*ʃḗawaθ} \\
 Old English form: \emph{sċēawaþ}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-142}
+evidence}\label{reconstruction-and-comparative-evidence-143}
 
 Orel reconstructs the verb as
 \Recon{skawōjanan}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!skawojanan@\iventry{*skawōjanan}{}}
@@ -30415,7 +30618,7 @@ likewise note that class-II weak present 2sg. \emph{-as(t)} and 3sg.
 and Taylor 2014, 80}). The relevant comparison is therefore the 3sg cell
 itself, not an i-umlauted alternative.
 
-\subsection{Old English evidence}\label{old-english-evidence-142}
+\subsection{Old English evidence}\label{old-english-evidence-143}
 
 The held fourth edition of Bright's reader contains the simplex
 infinitive
@@ -30436,7 +30639,7 @@ comparison form aligned with the attested \emph{scēaw-} evidence and the
 directly cited prefixed \emph{geondscēawað} `surveys' ending pattern.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-141}
+English}\label{development-to-old-english-142}
 
 The infinitive entry and \hyperref[rule-OEAwLongDiphthong]{SC034
 OEAwLongDiphthong} explain the dictionary-singleton versus
@@ -30519,7 +30722,7 @@ form compared here \\
 Derivation: citation reconstruction \emph{*skawōną}; form followed here
 \emph{*skáwô} \textgreater{} \emph{sċēawa} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-158}
+\subsection{Derivation trace}\label{derivation-trace-159}
 
 Proto input: \emph{*skáwô}
 
@@ -30563,7 +30766,7 @@ OE Unstressed Long Vowel Shortening & \emph{*ʃḗawa} \\
 Old English form: \emph{sċēawa}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-143}
+evidence}\label{reconstruction-and-comparative-evidence-144}
 
 Orel reconstructs the verb as \Recon{skawōjanan} `show' and cites Old
 English \emph{sceáwian} `show' beside Old Frisian \emph{skawia} `show',
@@ -30579,7 +30782,7 @@ English form. The lexical history still belongs to the \emph{sceáwian}
 `show' verb, but the cell compared here isolates the finite \emph{-a}
 outcome more clearly than the citation form does.
 
-\subsection{Old English evidence}\label{old-english-evidence-143}
+\subsection{Old English evidence}\label{old-english-evidence-144}
 
 The held fourth edition of Bright's reader contains \emph{scēawian}
 `show' and the imperative singular \emph{scēawa} `show' in the Blickling
@@ -30594,7 +30797,7 @@ The ordinary Old English headword remains \emph{scēawian} `show';
 \emph{sċēawa} `show' is the imperative singular chosen beside it.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-142}
+English}\label{development-to-old-english-143}
 
 The infinitive entry and \hyperref[rule-OEAwLongDiphthong]{SC034
 OEAwLongDiphthong} distinguish the dictionary singleton stem from
@@ -30677,7 +30880,7 @@ present third singular companion &
 Derivation: citation reconstruction \emph{*spannō}; form followed here
 \emph{*spánnai} \textgreater{} \emph{spanne} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-159}
+\subsection{Derivation trace}\label{derivation-trace-160}
 
 Proto input: \emph{*spánnai}
 
@@ -30721,7 +30924,7 @@ OE Unstressed Long Vowel Shortening & \emph{*spánne} \\
 Old English form: \emph{spanne}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-144}
+evidence}\label{reconstruction-and-comparative-evidence-145}
 
 Seebold gives Old English
 {\emph{spann}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!spann@\iventry{spann}{}}
@@ -30733,7 +30936,7 @@ singular form compared on the model of the feminine ō-stem paradigm
 (\citeproc{ref-SieversBrunner1965}{Brunner 1965, § 252};
 \citeproc{ref-SieversBrunner1965}{1965, § 255.2}).
 
-\subsection{Old English evidence}\label{old-english-evidence-144}
+\subsection{Old English evidence}\label{old-english-evidence-145}
 
 The reviewed lexicographic evidence more directly supports the citation
 noun
@@ -30748,7 +30951,7 @@ noun
 compared here rather than as a dictionary headword.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-143}
+English}\label{development-to-old-english-144}
 
 Citation
 \Recon{spannō}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!spanno@\iventry{*spannō}{}}
@@ -30812,7 +31015,7 @@ dative singular compared here &
 Derivation: \emph{*stráwą} yields regular \Recon{strēa}; the Old English
 form here is \emph{strēaw} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-160}
+\subsection{Derivation trace}\label{derivation-trace-161}
 
 Proto input: \emph{*stráwą}
 
@@ -30859,7 +31062,7 @@ Regular outcome: \Recon{strēa}
 Old English form: \emph{strēaw}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-145}
+evidence}\label{reconstruction-and-comparative-evidence-146}
 
 Kroonen cites the neuter stem
 \Recon{strawa-}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!strawa@\iventry{*strawa-}{}}
@@ -30873,7 +31076,7 @@ formation concerns genealogical direction; it does not explain the later
 restoration of the glide (\citeproc{ref-Kroonen2013}{Kroonen 2013,
 484}).
 
-\subsection{Old English evidence}\label{old-english-evidence-145}
+\subsection{Old English evidence}\label{old-english-evidence-146}
 
 The comparison remains attested
 {\emph{strēaw}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!streaw@\iventry{strēaw}{}}
@@ -30890,7 +31093,7 @@ free noun or a complete surviving regular paradigm
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 173, 387}).
 
 \subsection{Development to Old
-English}\label{development-to-old-english-144}
+English}\label{development-to-old-english-145}
 
 The regular endingless branch loses the final vowel and vocalizes final
 \Recon{w}: \Recon{stráwą} `straw' \textgreater{} \Recon{stráu} `straw'.
@@ -30984,7 +31187,7 @@ rule.
 Derivation: citation reconstruction \emph{*θéstilaz}; form followed here
 \emph{*θístilas} \textgreater{} \emph{þistles} (late analogy).
 
-\subsection{Derivation trace}\label{derivation-trace-161}
+\subsection{Derivation trace}\label{derivation-trace-162}
 
 Proto input: \emph{*θístilas}
 
@@ -31019,7 +31222,7 @@ Proto input: \emph{*θístilas}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
 \mbox{EAF Brightening Unstressed} & \emph{*θéstilæs} \\
 \mbox{OE I Umlaut} & \emph{*θistilæs} \\
-\mbox{OE Medial Syncope} & \emph{*θistlæs} \\
+\mbox{OE High Vowel Apocope} & \emph{*θistlæs} \\
 \mbox{OE Unstressed AE Merger} & \emph{*θistles} \\
 \end{tabularx}
 \end{minipage}
@@ -31031,7 +31234,7 @@ Proto input: \emph{*θístilas}
 Old English form: \emph{þistles}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-146}
+evidence}\label{reconstruction-and-comparative-evidence-147}
 
 Orel prints \emph{*þe(x)stilaz} `thistle' for the lexeme
 (\citeproc{ref-Orel2003}{Orel 2003, 458}). The comparative label
@@ -31041,7 +31244,7 @@ the derivational input
 \Recon{θístilas}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!thistilas@\iventry{*θístilas}{}}
 `thistle' is a specific genitive singular cell.
 
-\subsection{Old English evidence}\label{old-english-evidence-146}
+\subsection{Old English evidence}\label{old-english-evidence-147}
 
 The ordinary simplex headword tradition is broken
 {\emph{þistel}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!thistel@\iventry{þistel}{}}
@@ -31056,7 +31259,7 @@ as the noun headword (\citeproc{ref-ClarkHall1960}{Clark Hall 1960,
 cluster is medial.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-145}
+English}\label{development-to-old-english-146}
 
 Campbell's discussion of cluster nouns shows the contrast clearly.
 Simplex forms often develop a parasite vowel in word-final obstruent +
@@ -31140,7 +31343,7 @@ Derivation: citation reconstruction \emph{*knúppaz}; form followed here
 \emph{*knúbbô} \textgreater{} \emph{*cnobba} (reconstructed Old English
 comparator).
 
-\subsection{Derivation trace}\label{derivation-trace-162}
+\subsection{Derivation trace}\label{derivation-trace-163}
 
 Proto input: \emph{*knúbbô}
 
@@ -31184,7 +31387,7 @@ OE Unstressed Long Vowel Shortening & \emph{*knóbba} \\
 Old English form: \emph{*cnobba}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-147}
+evidence}\label{reconstruction-and-comparative-evidence-148}
 
 The wider knob-family is not uniform. Kroonen's discussion of the
 Germanic n-stems points to related voiced and voiceless branches within
@@ -31198,7 +31401,7 @@ belongs to the voiceless branch, but the present entry represents the
 reconstructed OE form that would continue the voiced branch behind later
 English knob.
 
-\subsection{Old English evidence}\label{old-english-evidence-147}
+\subsection{Old English evidence}\label{old-english-evidence-148}
 
 Clark Hall preserves Old English evidence of the
 {\emph{cnoppa}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!cnoppa@\iventry{cnoppa}{}}
@@ -31214,7 +31417,7 @@ attested
 different prehistory.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-146}
+English}\label{development-to-old-english-147}
 
 From the weak-noun form followed here, \Recon{knúbbô} `knob', the
 regular Old English outcome is \Recon{cnobba} `knob', with
@@ -31276,7 +31479,7 @@ Derivation: citation reconstruction \emph{*ráukiz}; form followed here
 \emph{*ráukaz} \textgreater{} \emph{*rēac} (reconstructed Old English
 comparator).
 
-\subsection{Derivation trace}\label{derivation-trace-163}
+\subsection{Derivation trace}\label{derivation-trace-164}
 
 Proto input: \emph{*ráukaz}
 
@@ -31322,7 +31525,7 @@ Proto input: \emph{*ráukaz}
 Old English form: \emph{*rēac}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-148}
+evidence}\label{reconstruction-and-comparative-evidence-149}
 
 The wider noun family is represented by
 \Recon{ráukiz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukiz@\iventry{*ráukiz}{}}
@@ -31337,7 +31540,7 @@ with Old English
 `reek' is therefore not the lexeme-level headword, but the form used
 here for the Old English derivation.
 
-\subsection{Old English evidence}\label{old-english-evidence-148}
+\subsection{Old English evidence}\label{old-english-evidence-149}
 
 The attested noun is
 {\emph{rēc}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rec@\iventry{rēc}{}}
@@ -31365,7 +31568,7 @@ The Old English form here
 attested manuscript headword.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-147}
+English}\label{development-to-old-english-148}
 
 From
 \Recon{ráukaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!raukaz@\iventry{*ráukaz}{}}
@@ -31394,7 +31597,7 @@ remains philological background.
 Derivation: \emph{*stráwjaną} \textgreater{} \emph{*strīeġan}
 (reconstructed Old English comparator).
 
-\subsection{Derivation trace}\label{derivation-trace-164}
+\subsection{Derivation trace}\label{derivation-trace-165}
 
 Proto input: \emph{*stráwjaną}
 
@@ -31445,7 +31648,7 @@ OE J Strengthening After Front Diphthong & \emph{*strīeʒan} \\
 Old English form: \emph{*strīeġan}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-149}
+evidence}\label{reconstruction-and-comparative-evidence-150}
 
 Kroonen cites the inherited weak verb as
 {\emph{*straujan-}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!straujan@\iventry{*straujan-}{}}
@@ -31473,7 +31676,7 @@ Fulk likewise allows an early West Saxon \Recon{striegan} `strew'
 directly from Proto-Germanic \Recon{straujana} `strew'
 (\citeproc{ref-Fulk2018}{Fulk 2018, § 4.10} n.~1).
 
-\subsection{Old English evidence}\label{old-english-evidence-149}
+\subsection{Old English evidence}\label{old-english-evidence-150}
 
 The attested inherited Old English form is
 {\emph{strēgan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stregan~04@\iventry{strēgan}{Angl.}}
@@ -31494,7 +31697,7 @@ manuscript lemma. It represents the inferred West Saxon reflex of the
 inherited class-I branch.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-148}
+English}\label{development-to-old-english-149}
 
 From \Recon{stráwjaną} `strew', the inherited West Saxon line passes
 through \Recon{straujaną} `strew', then a fronted \emph{*strēajan-}
@@ -31570,7 +31773,7 @@ no historical account exists.
 Derivation: \emph{*fūri} yields regular \Recon{fȳr}; the Old English
 form here is \emph{fȳre} (known but unmodelled development).
 
-\subsection{Derivation trace}\label{derivation-trace-165}
+\subsection{Derivation trace}\label{derivation-trace-166}
 
 Proto input: \emph{*fūri}
 
@@ -31615,7 +31818,7 @@ Regular outcome: \Recon{fȳr}
 Old English form: \emph{fȳre}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-150}
+evidence}\label{reconstruction-and-comparative-evidence-151}
 
 Kroonen places the lexeme in a heteroclitic family \Recon{fōr} `fire'
 \textasciitilde{} \emph{*fun-} and explains the front-mutated West
@@ -31658,7 +31861,7 @@ convention, not by a new scholarly quotation. Quantity, cell and
 historical input legitimacy require separate scientific assessment; no
 input migration is made here.
 
-\subsection{Old English evidence}\label{old-english-evidence-150}
+\subsection{Old English evidence}\label{old-english-evidence-151}
 
 Toller's Supplement records
 {\emph{fyr}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!fyr@\iventry{fyr}{}}
@@ -31678,7 +31881,7 @@ form whose additional inflection CAPR treats as morphological
 remodeling.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-149}
+English}\label{development-to-old-english-150}
 
 From
 \Recon{fūri}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!furi@\iventry{*fūri}{}}
@@ -31751,7 +31954,7 @@ later analogical surface form & --- & attested
 Derivation: \emph{*táppô} yields regular \Recon{tappa}; the Old English
 form here is \emph{tæppa} (known but unmodelled development).
 
-\subsection{Derivation trace}\label{derivation-trace-166}
+\subsection{Derivation trace}\label{derivation-trace-167}
 
 Proto input: \emph{*táppô}
 
@@ -31797,7 +32000,7 @@ Regular outcome: \Recon{tappa}
 Old English form: \emph{tæppa}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-151}
+evidence}\label{reconstruction-and-comparative-evidence-152}
 
 Orel gives the noun under \Recon{tappòn} `tap' and already connects it
 with Old English
@@ -31807,7 +32010,7 @@ with Old English
 `tap' is therefore the inherited noun itself; the entry does not depend
 on a different lexeme-level proto or a different inherited noun cell.
 
-\subsection{Old English evidence}\label{old-english-evidence-151}
+\subsection{Old English evidence}\label{old-english-evidence-152}
 
 The Old English noun family is well attested. Orel gives
 {\emph{tæppa}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!taeppa@\iventry{tæppa}{}}
@@ -31820,7 +32023,7 @@ therefore a real Old English noun form, not a reconstructed convenience
 spelling.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-150}
+English}\label{development-to-old-english-151}
 
 From
 \Recon{táppô}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!tappo@\iventry{*táppô}{}}
@@ -31892,7 +32095,7 @@ explain the mismatch.
 Derivation: \emph{*búkkaz} yields regular \Recon{bocc}; the Old English
 form here is \emph{bucc} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-167}
+\subsection{Derivation trace}\label{derivation-trace-168}
 
 Proto input: \emph{*búkkaz}
 
@@ -31939,7 +32142,7 @@ Regular outcome: \Recon{bocc}
 Old English form: \emph{bucc}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-152}
+evidence}\label{reconstruction-and-comparative-evidence-153}
 
 Kroonen and Orel both reconstruct the word with a geminate stop,
 \Recon{bukkaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bukkaz@\iventry{*bukkaz}{}}
@@ -31951,7 +32154,7 @@ n-stem material behind Old English
 therefore remains identical with the lexeme label: no alternative
 inherited cell accounts for the form.
 
-\subsection{Old English evidence}\label{old-english-evidence-152}
+\subsection{Old English evidence}\label{old-english-evidence-153}
 
 Old English preserves a mixed lexical picture. Campbell cites
 {\emph{bucca}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!bucca@\iventry{bucca}{}}
@@ -31971,7 +32174,7 @@ a-stem citation form
 family.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-151}
+English}\label{development-to-old-english-152}
 
 From
 \Recon{búkkaz}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!bukkaz@\iventry{*búkkaz}{}}
@@ -32037,7 +32240,7 @@ parallel OE lexical background & --- &
 Derivation: \emph{*fúglaz} yields regular \Recon{fogol}; the Old English
 form here is \emph{fugol} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-168}
+\subsection{Derivation trace}\label{derivation-trace-169}
 
 Proto input: \emph{*fúglaz}
 
@@ -32085,7 +32288,7 @@ Regular outcome: \Recon{fogol}
 Old English form: \emph{fugol}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-153}
+evidence}\label{reconstruction-and-comparative-evidence-154}
 
 The noun is the ordinary Germanic a-stem \Recon{fúglaz} `fowl',
 continued by forms such as Old Norse \emph{fugl} and Old High German
@@ -32101,7 +32304,7 @@ lower before the following non-high vowel, yielding an \emph{o}-vocalism
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 42--43};
 \citeproc{ref-Campbell1959}{Campbell 1959, 43}).
 
-\subsection{Old English evidence}\label{old-english-evidence-153}
+\subsection{Old English evidence}\label{old-english-evidence-154}
 
 Old English dictionaries record the noun as \emph{fugol} `fowl', with
 variant spelling \emph{fugel} `fowl'
@@ -32117,7 +32320,7 @@ history predicts \emph{fo-} (\citeproc{ref-Campbell1959}{Campbell 1959,
 150}).
 
 \subsection{Development to Old
-English}\label{development-to-old-english-152}
+English}\label{development-to-old-english-153}
 
 From \Recon{fúglaz} `fowl', the regular cascade yields \emph{fogol}
 `fowl': the root vowel lowers before the following non-high vowel
@@ -32181,7 +32384,7 @@ is regular, but no accepted lautgesetzlich pathway has been found from
 Derivation: \emph{*rústaz} yields regular \Recon{rost}; the Old English
 form here is \emph{rust} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-169}
+\subsection{Derivation trace}\label{derivation-trace-170}
 
 Proto input: \emph{*rústaz}
 
@@ -32228,7 +32431,7 @@ Regular outcome: \Recon{rost}
 Old English form: \emph{rust}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-154}
+evidence}\label{reconstruction-and-comparative-evidence-155}
 
 Orel gives both \Recon{rustō} `rust' and \Recon{rustaz} `rust', with
 masculine/feminine alternatives and Old English
@@ -32254,7 +32457,7 @@ provide context, but output agreement does not choose a stem class: both
 formations regularly predict \Recon{rost} `rust', not the attested Old
 English noun.
 
-\subsection{Old English evidence}\label{old-english-evidence-154}
+\subsection{Old English evidence}\label{old-english-evidence-155}
 
 The noun is attested, not reconstructed. Clark Hall gives
 {\emph{rūst}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rust@\iventry{rūst}{}}
@@ -32269,7 +32472,7 @@ The evidence establishes the noun and masculine gender, not an
 independent explanation of its retained vowel.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-153}
+English}\label{development-to-old-english-154}
 
 \hyperref[rule-PNWGmcULowering]{SC017 PNWGmcULowering} regularly lowers
 the root \emph{u} of \Recon{rústaz} `rust' before the following non-high
@@ -32340,7 +32543,7 @@ the ordinary citation noun.
 Derivation: \emph{*wúlfaz} yields regular \Recon{wolf}; the Old English
 form here is \emph{wulf} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-170}
+\subsection{Derivation trace}\label{derivation-trace-171}
 
 Proto input: \emph{*wúlfaz}
 
@@ -32387,7 +32590,7 @@ Regular outcome: \Recon{wolf}
 Old English form: \emph{wulf}
 
 \subsection{Reconstruction and comparative
-evidence}\label{reconstruction-and-comparative-evidence-155}
+evidence}\label{reconstruction-and-comparative-evidence-156}
 
 The inherited noun is an a-stem: Kroonen gives \emph{*wulfa-}, and Ringe
 and Taylor list PGmc \Recon{wulfaz} `wolf' among the inherited words
@@ -32407,7 +32610,7 @@ categorical labial blocker on the same grounds and prefers a lexical or
 analogical account instead (\citeproc{ref-Luick1914}{Luick 1914-\/-1940,
 148}).
 
-\subsection{Old English evidence}\label{old-english-evidence-155}
+\subsection{Old English evidence}\label{old-english-evidence-156}
 
 Campbell treats \emph{wulf} `wolf' as part of the exceptional \emph{u}
 set (\citeproc{ref-Campbell1959}{Campbell 1959, § 115}).
@@ -32424,7 +32627,7 @@ The surviving oblique forms do not supply a regular route back to bare
 remove the explanatory problem presented by the citation form.
 
 \subsection{Development to Old
-English}\label{development-to-old-english-154}
+English}\label{development-to-old-english-155}
 
 Under the ordinary Northwest Germanic lowering of stressed \emph{u}
 before a following non-high vowel, the citation-form input would point
@@ -32487,7 +32690,7 @@ preservation of \emph{u} remains unexplained \\
 Derivation: \emph{*wúllō} yields regular \Recon{woll}; the Old English
 form here is \emph{wull} (unexplained exception).
 
-\subsection{Derivation trace}\label{derivation-trace-171}
+\subsection{Derivation trace}\label{derivation-trace-172}
 
 Proto input: \emph{*wúllō}
 
@@ -32766,6 +32969,11 @@ Goblirsch, Kurt Gustav. 1991. {`{Germanic} \emph{Ai} and \emph{Au} in
 {Anglo-Frisian}'}. \emph{Amsterdamer Beitr{ä}ge Zur {ä}lteren
 Germanistik} 33: 17--23.
 \url{https://doi.org/10.1163/18756719-033-01-90000004}.
+
+\bibitem[\citeproctext]{ref-Goering2016}
+Goering, Nelson. 2016. {`Early {Old English} Foot Structure'}.
+\emph{Transactions of the Philological Society} 114 (2): 171--97.
+\url{https://doi.org/10.1111/1467-968X.12079}.
 
 \bibitem[\citeproctext]{ref-Goering2023}
 Goering, Nelson. 2023. {`The {Hēafudu}-Problem: Early {Old English} Foot

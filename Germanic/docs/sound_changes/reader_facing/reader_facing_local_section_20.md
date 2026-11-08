@@ -2823,8 +2823,15 @@ published e-alternatives and the confidence in this choice.
 Syncope, apocope and weak-vowel quality:
 Mutation precedes the ordinary high-vowel losses: a subsequently lost
 \emph{*i} has already fronted the root, as in *fȳlþe* 'filth'.
-The conventional working sequence is ordinary nonhigh syncope (SC114),
-high-vowel apocope (SC063), then heavy/open high-vowel syncope (SC065).
+The former conventional working sequence distinguished ordinary nonhigh
+syncope (SC114), high-vowel apocope (SC063) and heavy/open high-vowel
+syncope (SC065). The adopted quantitative account instead gives SC063
+one final/medial operation, preserving heavy--light--light *hēafudu*
+'heads' and distinguishing the following-heavy *nētna* 'of livestock'.
+Early medial shortening belongs to SC072 through its separate component
+SC117; SC065 remains only a trace anchor
+[@Fulk2010, pp. 129--134, 140--142; @Goering2016, pp. 186--188;
+@Goering2023, pp. 67--68].
 These are prehistoric Old English changes, not simply late literary
 reductions toward Middle English. The former dental and heavy pre-\emph{*l}
 fragments implement the same high-vowel event and are no longer separate
@@ -2833,7 +2840,7 @@ its own consonant and openness conditions
 [@HoggGrammar2011, pp. 220--227, §§6.14--6.25;
 @SieversBrunner1965, pp. 132--133, §159; @Luick1914, pp. 310--311, §336].
 
-The trisyllabic ordering remains disputed: Fulk's conservative Mercian
+The trisyllabic analysis remains disputed: Fulk's conservative Mercian
 evidence, Ringe and Taylor's syncope-before-apocope account, and Hogg's
 tentative phonological alternative are discussed with SC063.
 Early weak front-vowel unrounding and later lowering are distinct
@@ -4070,6 +4077,59 @@ define PWGmcFinalBareALoss Ctx([
 
 The two sides of final bare-\emph{a} loss rest on different evidence. Applied before final \emph{z}-deletion, the change gives the wrong outputs: PGmc [bárdaz]{.recon} ‘beard’ yields [*bearda*]{.pred} rather than expected OE *beard* ‘beard’, and PGmc [kámbaz]{.recon} ‘comb’ yields [*camba*]{.pred} rather than expected *camb* ‘comb’. Applied after restoration, PGmc [kráftaz]{.recon} ‘craft’ yields [*craft*]{.pred} rather than expected OE *cræft* ‘craft’, and PGmc [dágaz]{.recon} ‘day’ yields [*dag*]{.pred} rather than expected *dæġ* ‘day’. The distant lower limit follows final \emph{z}-loss; the local feeding relation precedes restoration, which requires the environment created by the vowel loss.
 
+## Stem-final n-loss after long i
+
+### Historical discussion
+
+The inherited
+feminine \emph{in}-stem represented by Gothic \emph{faurhtei}, OE \emph{fyrhtu},
+and oblique OE \emph{fyrhte} supplies the relevant evidence
+[@Orel2003, p. 120; @RingeTaylor2014, pp. 380--381; @Campbell1959, p. 236, §589.7].
+Final \emph{*n} after unstressed \emph{*ī} was lost after
+Proto-West-Germanic differentiation; conservative southern Old High German
+prevents treating it as an undifferentiated Northwest Germanic law
+[@RingeTaylor2014, pp. 87--88; @Fulk2018, p. 173, §7.34].
+This early loss must be distinguished from the later weak-syllable
+developments described by Hogg, Ringe and Taylor, and Fulk
+[@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
+@Fulk2018, p. 91, §5.6].
+
+### SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss}
+
+```foma
+define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
+```
+
+Only word-final \emph{*n} after unstressed long \emph{*ī} is at issue.
+The conditioning is phonological, not membership in the feminine
+\emph{īn}-stems. Besides their obliques, Campbell cites *strenge*
+'strength', the loanword *pyle* 'pillow' and early past-subjunctive plural
+endings [@Campbell1959, p. 189, §473; @SieversBrunner1965, pp. 225--226, §280].
+
+CAPR models the oblique OE form through the Proto-Germanic genitive singular
+\emph{*fúrxtīnaz} 'fright', following the project convention of using an appropriate
+non-nominative paradigm cell when the nominative does not supply the required
+derivation. Final ending loss exposes \emph{*fúrxtīn}; early loss of
+\emph{*n}, mutation and later shortening yield *fyrhte* 'fright'.
+This selected encoding imposes two implementation boundaries. Before
+[SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), PGmc
+\emph{*fúrxtīnaz} ‘fright’ yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’.
+After [SC072
+OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc
+\emph{*fúrxtīnaz} again yields [*fyrhten*]{.pred} rather than expected *fyrhte* 'fright'.
+The former boundary exposes the segment; the latter keeps its long-vowel
+environment visible. Neither dates the loss to a late post-apocope period.
+
+Campbell attributes retained *n* in *nēten* 'livestock' to the inflected
+forms [@Campbell1959, p. 189, §473]. Goering's later \emph{*nētīn}
+therefore does not require immunity to the early law: a later paradigmatic
+state and uninterrupted inherited retention are different claims.
+Final \emph{*ī} remains long until later shortening, while medial
+\emph{*ī} has already shortened in the inflected forms
+[@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
+No word-specific protection or added accent is required. The exact date
+of paradigmatic retention or restoration is not fixed by these comparisons.
+
 ## Surviving bimoric \emph{*ō} unrounding
 
 ### Historical discussion
@@ -4903,20 +4963,6 @@ define OEPostVelarWLoss Ctx([
 
 The comparative development `*singwan > singan` establishes narrow post-velar \emph{*w}-loss in the \emph{*ngw} sequence, yielding *singan* ‘sing’. Moving [SC053 OEPostVelarWLoss](#rule-OEPostVelarWLoss) earlier or later leaves every output unchanged. Its pre-umlaut position therefore rests on comparative evidence, while the present lexicon supplies no neighboring boundary.
 
-## W-loss before final i
-
-### SC054. Loss of \emph{*w} before final \emph{*i} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
-
-```foma
-define OEWLossBeforeI Ctx([
-    {*w} -> 0 || EnglishStarVocalic _ {*i} .#.
-]);
-```
-
-The history of *sǣ* ‘sea’ explains why non-initial \emph{*w} disappeared before final unstressed \emph{*i}. Campbell describes the loss, Ringe and Taylor derive the form from \emph{*saiwi-}/\emph{*sawi-}, and Luick gives the parallel trajectory [@Campbell1959, p. 167, §406; @RingeTaylor2014, p. 257, §6.7.1; @Luick1914, p. 173, §187]. Loss of the glide allowed the preceding vowel to undergo the later fronting and lengthening.
-
-The same witness supplies two distant limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
-
 ## West Saxon palatal diphthongization
 
 ### \CAPRRuleHeading{SC056. West Saxon palatal diphthongization}{OEWsPalatalDiphthongization} {#rule-OEWsPalatalDiphthongization}
@@ -5097,6 +5143,37 @@ Saxon bundle. Ordinary palatal diphthongization precedes mutation in the
 handbook account; the later *sċ* treatment of some mutation products follows
 it. The former gift input and sheath's later layer explained the old bundled
 serialization, not a date for every historical palatal process.
+
+## Noninitial w-loss before unstressed i
+
+### SC054. Noninitial \emph{*w}-loss before unstressed \emph{*i/ī} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI}
+
+```foma
+define OEWLossBeforeI Ctx([
+    {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ [{*i}|{*ī}]
+]);
+```
+
+The history of *sǣ* ‘sea’ exemplifies noninitial \emph{*w}-loss before
+unstressed \emph{*i}. Campbell describes the loss, Ringe and Taylor derive
+the form from \emph{*saiwi-}/\emph{*sawi-}, and Luick gives the parallel
+trajectory [@Campbell1959, pp. 166--167, §406;
+@RingeTaylor2014, pp. 258--260, §6.7.1; @Luick1914, p. 173, §187].
+The environment is neither exclusively postvocalic nor exclusively final:
+Ringe and Taylor also give weak-verb forms in \emph{*-Cwi-} and
+\emph{*pulwīn > *pylwī > *pylī}, yielding *pyle* 'pillow'.
+The preceding nucleus distinguishes noninitial *w* from an initial cluster;
+the unaccented target excludes stressed high vowels. No lexical exemption
+or loanword-specific clause is used.
+
+Ringe and Taylor independently place this loss after i-umlaut and before
+general syncope: the histories of *eowu* 'ewe' and *gierede* 'prepared'
+supply the chronology, rather than successful output alone
+[@RingeTaylor2014, pp. 258--260]. The early final-n loss in
+[SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) and this distinct
+glide loss together explain *pyle*.
+
+The former sea-only displacement supplies two distant implementation limits. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), [SC054 OEWLossBeforeI](#rule-OEWLossBeforeI) yields [*sǣw*]{.pred} rather than expected OE *sǣ* 'sea'. The loss must therefore follow final \emph{z}-deletion and precede high-vowel apocope, while its exact position within that broad interval remains source-based.
 
 ## Technical support: late palatal diphthongization
 
@@ -5522,131 +5599,130 @@ Realization before [SC114 OENonHighSyn](#rule-OENonHighSyn) gives
 preserves the selected output. This discriminates the representations,
 not an independently dated new lenition law or compound-specific exemption.
 
-## High-vowel apocope
+## Early medial realization of unstressed shortening
+
+### \CAPRRuleHeading{SC117. Medial component of SC072 unstressed shortening}{OEMedLongShort} {#rule-OEMedLongShort}
+
+```foma
+define OEMedLongShort FootCtx([
+    {*ī} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ū} -> {*u} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ȳ} -> {*y} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ā} -> {*a} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ē} -> {*e} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ǣ} -> {*æ} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}],
+    {*ō} -> {*o} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}]
+]);
+```
+
+This separately visible component belongs to
+[SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening).
+It realizes the medial quantity required before
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope),
+without prematurely shortening final long vowels.
+Goering distinguishes later \emph{*nētīn}, yielding *nēten* 'livestock',
+from the medially shortened inflected forms that yield *nētenu*
+'livestock' and *nētna* 'of livestock'
+[@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
+The same quantity distinction is required in the earlier comparison of
+unstressed vowels [@Fulk2018, pp. 90--96, §§5.6--5.7].
+
+The root and transmitted prominence are protected. Final long vowels
+remain for the later component of shortening; this early component is
+not an extra high-vowel deletion or a morphological condition.
+The separately traced identifier records implementation ownership, not
+a new independently dated historical sound change.
+
+## Quantitative high-vowel deletion
 
 ### Historical discussion
 
-Final high vowels must survive long enough to condition umlaut before apocope
-removes them after heavy syllables and in the relevant trisyllabic patterns.
-Campbell, Hogg, Ringe and Taylor, and Fulk agree that the loss follows
-mutation, but disagree substantively over trisyllables and surrounding syncope
-[@Campbell1959, pp. 144--145, §§345--349; @HoggPhonology1992, p. 121;
-@RingeTaylor2014, pp. 284--303, §§6.8.1, 6.8.4; @Fulk2018, p. 91, §5.6].
-Barrack states the deletion of final high vowels as his rule 345 and
-presents it as a prime case of an environment that simplifies progressively
-over the rule's lifetime [@Barrack1975, pp. 85--86, 23--25]; the heavy-foot
-conditioning adopted here corresponds to his most restricted, earliest
-phase, while his later phases absorb the surrounding quantity developments
-that the handbooks treat as separate changes.
+Final and medial short high vowels undergo one quantitative deletion.
+Campbell, Hogg, Ringe and Taylor, and Fulk agree that the relevant loss
+follows mutation, but disagree over trisyllables and surrounding syncope
+[@Campbell1959, pp. 144--146, §§345--353; @HoggPhonology1992, p. 121;
+@RingeTaylor2014, pp. 264--293, §§6.7.3, 6.8.1; @Fulk2018, p. 91, §5.6].
+Barrack separately presents final deletion as rule 345 and medial
+syncope as rule 351, with progressive simplification of the former
+environment [@Barrack1975, pp. 23--25, 85--87].
+Those descriptions remain comparative evidence, not proof of one
+particular prehistoric serialization.
 
-This later loss is distinct from the West Germanic weak-word loss of
+The adopted account follows Fulk's conservative Mercian evidence and
+Goering's quantitative analysis. A heavy first syllable followed by two
+light syllables preserves both high vowels: *hēafudu* 'heads', *lȳtelu*
+'little' and *īdelu* 'idle'. A heavy following syllable instead licenses
+medial loss, as in *nētna* 'of livestock'. The distinction is independently
+motivated by quantity and metrical grouping, not inferred from the
+selected corpus's match count [@Fulk2010, pp. 129--134, 140--142;
+@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
+Early medial shortening, realized in
+[SC117 OEMedLongShort](#rule-OEMedLongShort), gives short medial
+\emph{*i} in the inflected livestock forms while final \emph{*ī}
+remains long in \emph{*nētīn}. Later shortening yields *nēten*
+'livestock'; the earlier final-n law does not restart here.
+
+The alternatives remain substantive. Conventional apocope followed by
+syncope gives \emph{*hēafdu}, whereas Ringe and Taylor's
+syncope-before-apocope account gives \emph{*hēafd}, with restored
+attested plurals attributed to analogy. Hogg also discusses a tentative
+one-syllable-reduction account [@HoggGrammar2011, pp. 225--227, §§6.22--6.25;
+@RingeTaylor2014, pp. 289--293]. Output equivalence on selected words
+does not erase these contrasting histories.
+
+This loss is distinct from West Germanic weak-word deletion in
 [SC098 PWGmcUnstressedWordFinalIApocope](#rule-PWGmcUnstressedWordFinalIApocope).
-A selected proclitic context does not become word-final merely because its
-citation spelling ends there. Its temporary boundary annotation blocks
-the final-position conditions below and is removed only after their
-application; it is not a segment of the linguistic reconstruction.
-This contextual distinction is preserved
-[@RingeTaylor2014, pp. 57--58, 284--303].
+The separately selected sentence context remains effective; its boundary
+annotation is not a segment of the reconstruction
+[@RingeTaylor2014, pp. 57--58].
+Later light-syllable pre-l loss in
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), weak-vowel unrounding,
+and technical stress decoding remain separate operations.
 
-The adopted conventional account retains final high vowels after a heavy
-first syllable followed by a light syllable. Thus
-\emph{*hēafudu > *hēafdu}, not [hēafd]{.pred}: subsequent high-vowel syncope
-does not restart apocope. The former implementation incorrectly deleted
-the final vowel in this heavy--light environment
-[@Campbell1959, p. 146, §353; @HoggGrammar2011, pp. 225--227, §§6.22--6.25].
-Loss after two light syllables and after an immediately preceding heavy
-syllable remains represented.
-
-This is a defended working account, not unanimity. Fulk's conservative
-Mercian *hēafudu*, *idelu* and *lytel(u)* material supports retention of
-both high vowels before a light final syllable; he supplies phonological
-weight and paradigm evidence, not merely a preference for analogy.
-Ringe and Taylor instead defend syncope before apocope and reconstructed
-\emph{*hēafd}, treating the attested plurals as analogical.
-Hogg also offers a tentative one-syllable-reduction account without rigid
-serialization [@Fulk2010, pp. 129--134, 140--142;
-@RingeTaylor2014, pp. 289--293; @HoggGrammar2011, p. 227, §6.25].
-The conventional serialization keeps this dispute explicit and no longer
-preserves unsupported endingless selected histories by excess apocope.
-
-### \CAPRRuleHeading{SC063. High-vowel apocope after heavy syllables and in trisyllables}{OEHighVowelApocope} {#rule-OEHighVowelApocope}
+### \CAPRRuleHeading{SC063. Quantitative deletion of short unstressed high vowels}{OEHighVowelApocope} {#rule-OEHighVowelApocope}
 
 ```foma
-define OEHighVowelApocope Ctx([
-    {*i} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarLongDiphthong OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortDiphthong OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*u} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*ų} -> 0 || EnglishStarShortVowel OEAnyConsonant EnglishStarShortVowel OEAnyConsonant+ _ .#.,
-    {*i} -> 0 || EnglishStarLongVowel _ .#.,
-    {*u} -> 0 || {*x} _ .#.,
-    {*ų} -> 0 || {*x} _ .#.,
-    {*i} -> 0 || {*x} _ .#.
+define OEHighVowelApocope FootCtx([
+    [{*i}|{*u}|{*y}|{*ų}] -> 0 ||
+        .#. OEAnyConsonant* HvI HvP* _
+        [.#. | OEAnyConsonant [HvL | HvS OEAnyConsonant [.#.|OEAnyConsonant]]]
 ] .o. [{*ᶜ} -> 0]);
 ```
 
-Final \emph{*i}, \emph{*u}, and \emph{*ų} cannot disappear before completing
-their umlautal work. Applied before
-[SC055 OEIUmlaut](#rule-OEIUmlaut), PGmc [kūi]{.recon} ‘cow’ yields [*cū*]{.pred} rather than
-expected OE *cȳ* ‘cow’, and PGmc [brūdiz]{.recon} ‘bride’ yields [*brūd*]{.pred} rather than
-expected OE *brȳd* ‘bride’. Conversely, if apocope waits until after
-[SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening),
-PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrht*]{.pred} rather than expected OE *fyrhte*
-‘fright’. The three witnesses establish the sequence i-umlaut, high-vowel
-apocope, unstressed long-vowel shortening.
+The auxiliary expressions distinguish short and long nuclei, heavy
+syllables, the initial quantitative group and following permitted groups.
+Deletion targets a short unstressed high vowel at a group boundary;
+a medial target requires a following singleton onset and heavy syllable.
+The first root and separately transmitted prominence remain protected.
+The singleton-onset representation bounds this implementation; it is
+not a general parser for arbitrary historical syllabification.
 
-## Stem-final n-loss after long i
+Mutation must precede loss: *cȳ* 'cow' and *brȳd* 'bride' require the
+high vowel to perform its umlautal work. The selected *fȳlþe* 'filth'
+and *spinle* 'spindle' retain their independently supported accusative
+cells; their nonhigh final vowels produce the regular medial deletion.
+The comparative nominatives \emph{*fȳleþu} and \emph{*spinnelu}
+retain their light medial syllables in this account. Their attested
+alternatives and the genuine comparative gemination problem remain
+separate from the selected accusatives
+[@Fulk2010, pp. 140--142; @Goering2016, pp. 186--188;
+@RingeTaylor2014, pp. 289--293].
 
-### Historical discussion
+No special final-u loss after \emph{*h} is retained. *Feoh* 'cattle, wealth'
+continues an independently supported, already-endingless a-stem
+transponent \emph{*feh}, not an inherited u-stem forced through an
+additional deletion [@RingeTaylor2014, p. 177, n. 4].
 
-Evidence for post-apocope reduction is strikingly uneven. The inherited
-feminine \emph{in}-stem represented by Gothic \emph{faurhtei}, OE \emph{fyrhtu},
-and oblique OE \emph{fyrhte} supplies the relevant evidence
-[@Orel2003, p. 120; @RingeTaylor2014, pp. 380--381; @Campbell1959, p. 236, §589.7].
-No comparable witness orders the medial syncope that follows. Hogg, Ringe and Taylor, and Fulk describe both
-processes within the late history of weak syllables
-[@HoggPhonology1992, p. 121; @RingeTaylor2014, pp. 264--303, §§6.7.3--6.8.4;
-@Fulk2018, p. 91, §5.6].
-
-### SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss}
-
-```foma
-define NWGmcInStemNLoss Ctx([{*n} -> 0 || {*ī} _ .#.]);
-```
-
-Only final \emph{*n} after long \emph{*ī} is at issue, as in the inherited
-\emph{in}-stem behind OE \emph{fyrhte} ‘fright’.
-
-CAPR models the oblique OE form through the Proto-Germanic genitive singular
-[fúrxtīnaz]{.recon} 'fright', following the project convention of using an appropriate
-non-nominative paradigm cell when the nominative does not supply the required
-derivation. Within this selected genitive derivation, the same input fixes both
-ordering boundaries. Before
-[SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), PGmc
-[fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’.
-After [SC072
-OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc
-[fúrxtīnaz]{.recon} again yields [*fyrhten*]{.pred} rather than expected *fyrhte* 'fright'. I
-therefore order final bare-a loss, stem-final n-loss, and unstressed long-vowel
-shortening in that sequence. Both boundaries are firm within the selected
-genitive derivation and depend on one inherited lexeme/paradigm.
-
-## General heavy-syllable high-vowel syncope
+## Former syncope anchor and comparative evidence
 
 ### Historical discussion
+
+The conventional heavy/open account discussed below is retained as
+comparative evidence. The adopted quantitative operation now belongs to
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), which preserves
+heavy--light--light forms such as *hēafudu* 'heads'. This former medial
+component is an identity trace anchor, not a second productive deletion
+[@Fulk2010, pp. 129--134; @Goering2016, pp. 186--188].
 
 Old English lost unstressed medial high vowels in open syllables after
 heavy syllables. The handbooks state the law generally, as part of the
@@ -5756,22 +5832,16 @@ complete discriminator of the former early compound-only formulation.
 Its root-vowel history remains with
 [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut).
 
-### SC065. General heavy/open high-vowel syncope (`OEMedialSyncope`) {#rule-OEMedialSyncope}
+### SC065. Former general-syncope trace anchor (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 
 ```foma
-define OEMedialSyncope FootCtx([
-    [{*i}|{*u}|{*y}] -> 0
-        || .#. OEAnyConsonant* [
-            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
-            [EnglishStarShortVowel | EnglishStarShortDiphthong]
-                OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant [EnglishStarVocalic|{*ô}]
-]);
+define OEMedialSyncope ?*;
 ```
 
-The dental enumeration and the heavy part of
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) have been replaced by
-this single general operation. Short unstressed \emph{*i/u/y} disappears
+The preceding consolidation replaced the dental enumeration and the heavy part of
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) with a single
+conventional general operation. Under that account,
+short unstressed \emph{*i/u/y} disappears
 after a heavy first syllable when a following singleton consonant and
 vowel establish an open medial syllable. The retained quantity carrier
 \emph{*ô} is included locally as a following vowel; it was omitted from
@@ -5789,7 +5859,8 @@ These measurements remain the history of the narrow proxy, not arguments
 against the corrected general law. Independently selected vocalic
 accusatives now give *fȳlþe* 'filth' and *spinle* 'spindle'; the
 corrected apocope also gives conventional *hēafdu* 'heads'.
-The general operation no longer requires dental or lateral identity.
+The adopted quantitative operation likewise requires neither dental nor lateral identity,
+but does not repeat the conventional heavy/open loss here.
 Mutation must still precede deletion; syncope feeds the subsequent
 preconsonantal degemination in *spinle*.
 
@@ -6186,7 +6257,7 @@ pp. 28--31].
 ### Historical discussion
 
 Campbell describes the shortening of unaccented long vowels, and Ringe and
-Taylor place it among the last prehistoric Old English changes before the
+Taylor place the later component among the last prehistoric Old English changes before the
 merger of unstressed \emph{*æ} with \emph{*e}
 [@Campbell1959, p. 148, §355; @HoggPhonology1992, p. 121;
 @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
@@ -6210,14 +6281,22 @@ define OEUnstressedLongVowelShortening FootCtx(OEUnstressedLongVowelShortening1
     .o. OEUnstressedLongVowelShortening8);
 ```
 
-The rule shortens the remaining unstressed long vowels before weak final
+An earlier medial component is separately realized in
+[SC117 OEMedLongShort](#rule-OEMedLongShort), before
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
+Goering's contrast between final \emph{*nētīn} and medially shortened
+inflected forms requires that distinction
+[@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
+The rule below shortens the remaining unstressed long vowels before weak final
 syllables reach their later forms. A small group of lexical witnesses fixes its
 chronology.
 
 If the rule is moved before [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss), PGmc [fúrxtīnaz]{.recon} ‘fright’ yields [*fyrhten*]{.pred} rather than expected OE *fyrhte* ‘fright’. If the rule is delayed until after [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* ‘adder’, and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* ‘father’. These outputs require [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) to follow [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss) and precede [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
 
-Shortening therefore follows the earlier weak-tail preparation and immediately
-precedes the merger.
+The late component therefore follows the earlier weak-tail preparation and
+immediately precedes the merger. The old fright displacement records loss
+of the long-i environment in the executable; it does not independently
+date the early final-n law to this late corridor.
 
 ## Unstressed ae-merger
 

@@ -28,7 +28,9 @@ def test_canonical_compound_hypotheses_discriminate_three_wrong_accounts(current
         assert current["current"]["canonical"][form] == ["seleweard"]
         assert current["old-early"]["canonical"][form] == ["sealweard"]
         assert current["bad-breaking"]["canonical"][form] == ["seleoweard"]
-        assert current["no-weight"]["canonical"][form] == ["selweard"]
+        # Replacing unified HVD also removes final deletion in the u-stem foil.
+        wrong = "selweardu" if form == "sáli-wàrðuz" else "selweard"
+        assert current["no-weight"]["canonical"][form] == [wrong]
 
 
 def test_independent_preoe_stages_test_weight_mutation_and_loss(current):
@@ -85,7 +87,36 @@ def test_selected_accusatives_discriminate_mutation_and_degemination_order(curre
     assert current["late-high"]["canonical"]["spénnilǭ"] == ["spinnle"]
     assert current["no-high"]["canonical"]["fūliθǭ"] == ["fȳleþe"]
     assert current["no-high"]["canonical"]["spénnilǭ"] == ["spinnele"]
-    assert current["current"]["heads"] == [["hēafdu"]]
+    assert current["current"]["heads"] == [["hēafodu"]]
+
+
+def test_early_n_loss_preserves_later_livestock_and_inherited_fright(current):
+    assert current["current"]["blockers"]["late-livestock"] == [["nēten"]]
+    assert current["late-n-loss"]["blockers"]["late-livestock"] == [["nēte"]]
+    assert current["current"]["blockers"]["early-fright"] == [["fyrhte"]]
+    assert current["no-n-loss"]["blockers"]["early-fright"] == [["fyrhten"]]
+    assert current["current"]["n_loss"] == [
+        ["*f*ú*r*x*t*ī"], ["*p*ú*l*w*ī"], ["*s*t*r*á*n*g*ī"],
+        ["*t*ú*n*g*a*n"], ["*s*t*ī"], ["*s*t*ḯ*n"],
+    ]
+
+
+def test_pillow_requires_general_noninitial_w_loss_not_a_lexical_exemption(current):
+    assert current["current"]["blockers"]["early-pillow"] == [["pyle"]]
+    assert current["old-w-loss"]["blockers"]["early-pillow"] == [["pylwe"]]
+    assert current["no-n-loss"]["blockers"]["early-pillow"] == [["pylen"]]
+    assert current["current"]["w_loss"] == [
+        ["*w*ī"], ["*s*w*ī"], ["*a*i"], ["*p*y*l*ī"],
+        ["*p*y*l*w*í"], ["*g*ea*r*i*d*e"],
+    ]
+
+
+def test_fee_transponent_is_not_a_new_post_h_deletion(current):
+    assert current["current"]["fee"] == [["feoh"], ["feou"], ["feoh"]]
+    fee = next(row for row in current["current"]["selected"] if row["id"] == "2006")
+    assert fee["reconstruction"] == "*féxu"
+    assert fee["proto"] == "*féx"
+    assert fee["outputs"] == ["feoh"]
 
 
 def test_weak_unrounding_light_retention_and_positional_labials(current):

@@ -1,6 +1,13 @@
-# General heavy-syllable high-vowel syncope
+# Former syncope anchor and comparative evidence
 
 ## Historical discussion
+
+The conventional heavy/open account discussed below is retained as
+comparative evidence. The adopted quantitative operation now belongs to
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), which preserves
+heavy--light--light forms such as *hēafudu* 'heads'. This former medial
+component is an identity trace anchor, not a second productive deletion
+[@Fulk2010, pp. 129--134; @Goering2016, pp. 186--188].
 
 Old English lost unstressed medial high vowels in open syllables after
 heavy syllables. The handbooks state the law generally, as part of the
@@ -110,22 +117,16 @@ complete discriminator of the former early compound-only formulation.
 Its root-vowel history remains with
 [SC039 OEWICombinativeUUmlaut](#rule-OEWICombinativeUUmlaut).
 
-## SC065. General heavy/open high-vowel syncope (`OEMedialSyncope`) {#rule-OEMedialSyncope}
+## SC065. Former general-syncope trace anchor (`OEMedialSyncope`) {#rule-OEMedialSyncope}
 
 ```foma
-define OEMedialSyncope FootCtx([
-    [{*i}|{*u}|{*y}] -> 0
-        || .#. OEAnyConsonant* [
-            [EnglishStarLongVowel | EnglishStarLongDiphthong] OEAnyConsonant+ |
-            [EnglishStarShortVowel | EnglishStarShortDiphthong]
-                OEAnyConsonant OEAnyConsonant+
-        ] _ OEAnyConsonant [EnglishStarVocalic|{*ô}]
-]);
+define OEMedialSyncope ?*;
 ```
 
-The dental enumeration and the heavy part of
-[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) have been replaced by
-this single general operation. Short unstressed \emph{*i/u/y} disappears
+The preceding consolidation replaced the dental enumeration and the heavy part of
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) with a single
+conventional general operation. Under that account,
+short unstressed \emph{*i/u/y} disappears
 after a heavy first syllable when a following singleton consonant and
 vowel establish an open medial syllable. The retained quantity carrier
 \emph{*ô} is included locally as a following vowel; it was omitted from
@@ -143,7 +144,8 @@ These measurements remain the history of the narrow proxy, not arguments
 against the corrected general law. Independently selected vocalic
 accusatives now give *fȳlþe* 'filth' and *spinle* 'spindle'; the
 corrected apocope also gives conventional *hēafdu* 'heads'.
-The general operation no longer requires dental or lateral identity.
+The adopted quantitative operation likewise requires neither dental nor lateral identity,
+but does not repeat the conventional heavy/open loss here.
 Mutation must still precede deletion; syncope feeds the subsequent
 preconsonantal degemination in *spinle*.
 

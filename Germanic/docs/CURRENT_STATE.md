@@ -6,9 +6,12 @@ in the canonical registry; do not duplicate them here.
 ## Current phase
 
 The [Fulk--Goering high-vowel comparison](sound_changes/literature_dossiers/high_vowel_deletion_fulk_goering.md)
-prefers the quantitative account historically but defers production adoption.
-Its reproducible proposal identifies the specific downstream and selected-input
-obstructions; no new deletion law or lexical migration has been adopted.
+preserves the preceding unadopted proposal.
+The [blocker resolution](sound_changes/literature_dossiers/high_vowel_deletion_blocker_resolution.md)
+establishes early final-n loss, the source-supported fee transponent and
+the quantitative candidate through all391 histories and independent controls.
+Controlled research-branch adoption is being certified; no replacement
+publication or merge is claimed before strict serial/exclusive validation.
 The review consolidation below remains WIP, not a certified replacement for
 `update`. Its earlier failed strict-certification receipts remain unchanged.
 
@@ -91,11 +94,19 @@ Recorded in
 and pinned by `Germanic/tests/test_cascade_baseline.py`:
 
 - active original-380 identity fingerprint (`legacy_subset_sha256`):
-  `ec1020060727592b489330998b63530ee2b17e14dcc17984e5c1d3305fc20f6b`
+  `a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47`
 - selected-391 corpus fingerprint (`outputs_sha256`):
-  `fbd65e641f5225f5f8935ec3e0392b8e5ea1a3692ac886db35f6eba197577601`
+  `fb69130eebd5efe66f015c340af38731c7a0baa618916da3da7d0724a786272f`
 - lexical-input projection (`lexical_outputs_sha256`):
-  `101e250d73653f4c81fe911dfa8fe0d368160a300a24b42c3c48963ac9775526`
+  `5da16c2a65c4bb3e75ae833b295b3757a981305e2c7ad32bfe1a747cb26614d6`
+
+The fee input-only transition is explicitly authorized by
+`approved_fee_input_migration.json`; `*_pre_sc064_fee_input.*` preserves
+all preceding active baseline bytes. All391 selected outputs and targets,
+all inherited PROTO headwords and the immutable original380 archive
+remain unchanged. Only fee2006's selected input changes to the later
+preoe/transponent *féx. Input-sensitive fingerprints change accordingly;
+they are observations, not goals.
 
 The authorized inherited-world input migration is recorded in
 `approved_world_input_migration.json`; `*_pre_sc036_world.*` preserves

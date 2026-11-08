@@ -1,5 +1,14 @@
 # SC072 OE Unstressed Long Vowel Shortening — chronology evidence card
 
+## Current component interpretation, 8 November 2026
+
+The original measurements below remain intact. The SC064 displacement
+is long-ī visibility, not proof of a late final-n law. Early medial
+shortening is now represented by support SC117 under this same SC072
+owner, before quantitative HVD; final long vowels survive to the later
+component. Goering2016 pp186--188 / 2023 pp67--68 independently supports
+the nētīn/inflected quantity contrast. See `audits/sc063-adjudication.md`.
+
 ## Position at experiment time
 - order_at_experiment_time: `72`
 - rule_name: `OEUnstressedLongVowelShortening`

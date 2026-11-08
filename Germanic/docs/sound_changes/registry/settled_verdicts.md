@@ -35,9 +35,11 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
 | SC049 | Inherited labial positional realization | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-scoping-adoption.md` |
+| SC054 | Noninitial w-loss before unstressed i/ī | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc054-adjudication.md` |
 | SC056 | Ordinary West Saxon palatal diphthongization | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
-| SC063 | High-vowel apocope with heavy-light retention | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
-| SC065 | General heavy/open high-vowel syncope | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
+| SC063 | Quantitative high-vowel deletion | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc063-adjudication.md` |
+| SC064 | Early final n-loss after unstressed ī | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc064-adjudication.md` |
+| SC065 | Former general-syncope trace anchor | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC066 | Later light-syllable pre-l syncope | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC068 | Preconsonantal degemination before sonorants | active | RETAIN | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC073 | OE Unstressed AE Merger | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
