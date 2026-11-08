@@ -119,7 +119,7 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assembly = ROOT / "Germanic/docs/assembly"
     with (assembly / "manifest_all_by_class.tsv").open() as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    assert len(rows) == 172
+    assert len(rows) == 173
     regular = [row for row in rows if row["derivation_class"] == "regular"]
     assert len(regular) == 93
     rainbow = [row for row in regular if row["row_id"] == "2148"]
@@ -222,6 +222,12 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
                and not row["variety"] for row in intervention)
     added = [row for row in added if row not in intervention]
+    fee = [row for row in added if row["source_ref"] in {
+        "fee — OE feoh", "Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md"}]
+    assert len(fee) == 8
+    assert sum(row["action"] == "add" for row in fee) == 7
+    assert sum(row["action"] == "remove" for row in fee) == 1
+    added = [row for row in added if row not in fee]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

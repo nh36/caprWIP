@@ -17,10 +17,13 @@ INTERVENTION_CHANGED = {
     "OECompoundLinkingSyncope", "OEIUmlautFronting", "OEStripSecondaryStress",
     "PGmcStarVowel", "pgrmCodaComplex", "pgrmCompoundFirst", "pgrmLinkingVowel",
 }
-CONSOLIDATION_ADDED = {"OEHighStressDecode"}
+CONSOLIDATION_ADDED = {
+    "OEHighStressDecode", "OEMedLongShort", "HvS", "HvL", "HvV", "HvH", "HvI", "HvP",
+}
 CONSOLIDATION_CHANGED = {
     "EnglishProtoToOE", "OECompoundLinkingSyncope", "OEHighLinkSyncope",
     "OEMedialSyncope", "OELAdjacentSyncope", "OENonHighSyn", "OEHighVowelApocope",
+    "OEWLossBeforeI",
 }
 
 
@@ -49,6 +52,11 @@ def assert_intervention_scope():
     assert {name for name in consolidated_base
             if "".join(current[name].body.split()) !=
                "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+    corrected = parse_defines(subprocess.check_output(
+        ["git", "show", "3e2fe1b6d8ac606e854534798bb6688805c3875e:Germanic/fsts/germanic.txt"],
+        cwd=ROOT, text=True))
+    for name in CONSOLIDATION_ADDED | CONSOLIDATION_CHANGED:
+        assert current[name].body == corrected[name].body
 
 
 def test_intervention_changes_are_exactly_source_bound():

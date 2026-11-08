@@ -629,6 +629,12 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
                and not row["variety"] for row in intervention)
     added = [row for row in added if row not in intervention]
+    fee = [row for row in added if row["source_ref"] in {
+        "fee — OE feoh", "Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md"}]
+    assert len(fee) == 8
+    assert sum(row["action"] == "add" for row in fee) == 7
+    assert sum(row["action"] == "remove" for row in fee) == 1
+    added = [row for row in added if row not in fee]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

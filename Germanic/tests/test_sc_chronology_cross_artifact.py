@@ -46,7 +46,7 @@ ALLOWED_STAGE_LABELS = {
     # record the finer historical stage established by adjudication.
     "eaf": {"Early Anglo-Frisian", "Anglo-Frisian", "North Sea Germanic",
             "Northern West Germanic", "West Germanic", "Old English"},
-    "preoe": {"Old English", "Pre-Old English"},
+    "preoe": {"Old English", "Pre-Old English", "Post-PWGmc OE antecedent"},
     "oe": {"Old English"},
     "oe_ws": {"Old English"},
     "ws_oe": {"Old English", "West Saxon"},

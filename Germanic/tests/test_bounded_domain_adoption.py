@@ -103,7 +103,10 @@ def test_actual_surviving_gamma_projection_and_unchanged_selected_finals():
     assert expected["spénnilō"] == ["spinl"]
     assert expected["fūliθō"] == ["fȳlþ"]
     # The unchanged historical inputs are counterfactuals after consolidation.
-    expected.update({"spénnilō": ["spinlu"], "fūliθō": ["fȳlþu"]})
+    assert expected["féxu"] == ["feoh"]
+    expected.update({
+        "spénnilō": ["spinnelu"], "fūliθō": ["fȳleþu"], "féxu": ["feou"],
+    })
     actual = lookup("old_english.bin", list(dict.fromkeys([*expected, *controls])))
-    assert all(actual[word] == outputs for word, outputs in expected.items())
+    assert {word: actual[word] for word in expected} == expected
     assert all(actual[word] == outputs for word, outputs in current_controls.items())

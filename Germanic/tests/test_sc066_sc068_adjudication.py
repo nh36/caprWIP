@@ -91,7 +91,9 @@ class SC066SC068AdjudicationTests(unittest.TestCase):
                  if not line.startswith("#")]
         rows = {row["sc_id"]: row for row in csv.DictReader(lines, delimiter="\t")}
         self.assertEqual(rows["SC066"]["canonical_change_id"], "SC066")
-        self.assertEqual(rows["SC065"]["canonical_change_id"], "SC065")
+        self.assertEqual(rows["SC063"]["canonical_change_id"], "SC063")
+        self.assertEqual(rows["SC065"]["canonical_change_id"], "SC063")
+        self.assertEqual(rows["SC065"]["entry_type"], "support_stage")
         self.assertEqual(rows["SC066"]["entry_type"], "historical_sound_change")
         self.assertIn("OELAdjacentSyncope", self.positions)
 

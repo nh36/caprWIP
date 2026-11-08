@@ -62,7 +62,8 @@ class EditorialPublicationTests(unittest.TestCase):
     def test_scoped_philology_is_independent_of_derivation_status(self):
         self.assertIn("2224", self.old_required)
         self.assertIn("2208", self.old_required)
-        self.assertEqual(len(self.old_required - {"2224"}), 164)
+        self.assertIn("2006", self.old_required)
+        self.assertEqual(len(self.old_required - {"2224", "2006"}), 164)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
         self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])
@@ -70,7 +71,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertFalse(straw.has_production_manifest_report)
         self.assertEqual({r.row_id for r in self.rows if r.editorial_case_ids},
                          PRINCIPAL | {"1934", "1941", "2148", "2162", "2224", "2283",
-                                      "2335", "2336", "2011", "2053", "2201", "2282"})
+                                      "2335", "2336", "2011", "2053", "2201", "2282", "2006"})
         beaver = self.by_id["1941"]
         self.assertEqual(beaver.derivation_class, "regular")
         self.assertFalse(beaver.note)
@@ -146,11 +147,11 @@ class EditorialPublicationTests(unittest.TestCase):
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
         current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
-        self.assertEqual(len(current), 172)
+        self.assertEqual(len(current), 173)
         # Earlier publications, SC112's witnesses, the scoped rainbow model
         # and the filth/earthly publications.
         added_ids = {"2137", "2148", "2185", "2200", "2224", "2283", "2333", "2334",
-                     "2335", "2336", "2201", "2282"}
+                     "2335", "2336", "2201", "2282", "2006"}
         added = [r for r in current if r["row_id"] in added_ids]
         self.assertEqual({r["row_id"] for r in added}, added_ids)
         unchanged = {r["row_id"]: r for r in current if r["row_id"] not in added_ids}
@@ -265,7 +266,7 @@ class EditorialPublicationTests(unittest.TestCase):
                 continue
             path = REPORTS / row.editorial_report_path
             old = "" if row.row_id in {
-                "1941", "2148", "2224", "2283", "2335", "2336", "2201", "2282"
+                "1941", "2148", "2224", "2283", "2335", "2336", "2201", "2282", "2006"
             } else committed(path)
             pattern = r"\[[^\]\n]*@[^\]\n]*(?:\n[^\]]*)?\]"
             added = Counter(re.findall(pattern, path.read_text())) - Counter(re.findall(pattern, old))

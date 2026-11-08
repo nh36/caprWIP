@@ -61,7 +61,7 @@ class RustInputAdoptionTests(unittest.TestCase):
         migrations = [row for row in read_tsv(BASE / "approved_input_migrations.tsv")
                       if row["row_id"] not in {
                           "2283", "2095", "2313", "2314", "2302",
-                          "2011", "2053", "2201", "2282", "2208", "2335"}]
+                          "2011", "2053", "2201", "2282", "2208", "2335", "2006"}]
         original = next(row for row in legacy
                         if (row["concept"], row["counterpart"]) == ("rust", "rust"))
         self.assertEqual(original["proto"], "*rústō")
@@ -104,7 +104,7 @@ class RustInputAdoptionTests(unittest.TestCase):
             migrations = [row for row in read_tsv(migrations_path)
                           if row["row_id"] not in {
                               "2283", "2095", "2313", "2314", "2302",
-                              "2011", "2053", "2201", "2282", "2208", "2335"}]
+                              "2011", "2053", "2201", "2282", "2208", "2335", "2006"}]
             with migrations_path.open("w", encoding="utf-8", newline="") as handle:
                 writer = csv.DictWriter(handle, fieldnames=list(migrations[0]), delimiter="\t")
                 writer.writeheader()

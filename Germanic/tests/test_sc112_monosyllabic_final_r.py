@@ -145,6 +145,7 @@ class Sc112Tests(unittest.TestCase):
                     previous = dict(previous, proto="*wír-àldiz",
                                     proto_norm="wír-àldiz", fst_input="wír-àldiz")
                 selected_cells = {
+                    "2006": ("*féx", "feoh"),
                     "2011": ("*fúnðanai", "fundne"),
                     "2053": ("*xámaraz", "hamer"),
                     "2201": ("*sáiwalǭ", "sāwle"),

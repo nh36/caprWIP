@@ -3562,7 +3562,7 @@ class LiveSurveyTests(unittest.TestCase):
         self.assertEqual(len(corpus), 397)
         self.assertEqual({row["row_id"] for row in corpus if row["runnable"] == "0"},
                          {"1935", "1947", "1948", "1994", "2156", "2218"})
-        self.assertEqual(sum(row["stage_basis"] == "explicit_sidecar" for row in corpus), 84)
+        self.assertEqual(sum(row["stage_basis"] == "explicit_sidecar" for row in corpus), 85)
         self.assertFalse(survey.incomplete(
             sources, survey.coverage_rows(corpus, sources, reviews)))
         ledger = survey.ledger_text(

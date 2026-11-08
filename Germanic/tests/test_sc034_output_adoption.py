@@ -125,7 +125,7 @@ class StrawOutputAdoptionTests(unittest.TestCase):
                 fields = reader.fieldnames
                 migrations = [row for row in reader if row["row_id"] not in {
                     "2162", "2283", "2095", "2313", "2314", "2302",
-                    "2011", "2053", "2201", "2282", "2208", "2335"}]
+                    "2011", "2053", "2201", "2282", "2208", "2335", "2006"}]
             with (target / "approved_input_migrations.tsv").open("w") as handle:
                 writer = csv.DictWriter(handle, fields, delimiter="\t")
                 writer.writeheader()

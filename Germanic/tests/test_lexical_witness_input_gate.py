@@ -171,7 +171,7 @@ def test_production_gate_is_generic_and_preserves_every_old_output():
     counterfactuals = {
         "fúnðanǭ": ["fundne"], "xámaras": ["hamres"],
         "sáiwalō": ["sāwl"], "wéstanē": ["westne"],
-        "spénnilō": ["spinlu"],
+        "spénnilō": ["spinnelu"], "féxu": ["feou"],
     }
     assert {row["fst_input"] for row in records
             if current[row["fst_input"]] != row["outputs"].split("|")} == set(counterfactuals)

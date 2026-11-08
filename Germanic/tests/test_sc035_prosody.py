@@ -184,7 +184,11 @@ def test_fresh_adopted_cascade_and_phonological_components(isolated_definitions)
     assert data["selected_rows"] == 391
     assert data["canonical_and_isolated_agree"] and data["composed_and_incremental_agree"]
     assert data["full_input_climb"] == [["ġestīgan"]]
-    assert data["staged_control_finals"] == receipt()["models"]["C"]["staged_control_finals"]
+    expected = dict(receipt()["models"]["C"]["staged_control_finals"])
+    assert expected["climb-stress-erased"] == ["ġiestegan"]
+    # Quantitative HVD deletes the weak vowel in this deliberately stress-erased foil.
+    expected["climb-stress-erased"] = ["ġiestgan"]
+    assert data["staged_control_finals"] == expected
     controls = data["controls"]
     assert controls["raising"]["outputs"] == [
         ["*ᶠ*ʝ*i*t*á"], ["*ᶠ*b*æ*t*á"], ["*ᶠ*ʝ*e*t*á"],

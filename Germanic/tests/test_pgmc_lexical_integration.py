@@ -45,16 +45,17 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(len(self.rows), 397)
         self.assertEqual(len(self.editorial), 397)
         for key, value in {"legacy": 380, "selected": 391, "audit": 397,
-                           "assembled": 172, "production_pilots": 11,
-                           "format_tests": 1, "reviewed_rows": 20, "scoped_cases": 23}.items():
+                           "assembled": 173, "production_pilots": 11,
+                           "format_tests": 1, "reviewed_rows": 21, "scoped_cases": 24}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
         required = {row["row_id"] for row in self.crosswalk if row["old_policy_requires_report"]}
         legacy_required = {identifier for identifier in required
                            if self.rows[identifier]["legacy380"]}
         self.assertIn("2224", legacy_required)
-        self.assertEqual(len(required - {"2224"}), 164)
-        self.assertEqual(len(legacy_required - {"2224"}), 153)
+        self.assertIn("2006", legacy_required)
+        self.assertEqual(len(required - {"2224", "2006"}), 164)
+        self.assertEqual(len(legacy_required - {"2224", "2006"}), 153)
         self.assertEqual(self.stats["required"], len(required))
         self.assertEqual(self.stats["legacy_current_required"], len(legacy_required))
 
@@ -126,8 +127,8 @@ class IntegrationTests(unittest.TestCase):
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
             "ordinary_evidence_review": 297, "unit_comparability_review": 8})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
-        # Four independently selected cell reassessments join the earlier reviews.
-        self.assertEqual(len(unreviewed), 377)
+        # The fee transponent joins the four earlier selected-cell reassessments.
+        self.assertEqual(len(unreviewed), 376)
         self.assertTrue(all(not r["reviewed_categories"] for r in unreviewed))
         self.assertEqual(self.editorial["2085"]["reviewed_categories"],
                          "non_substantive_difference;qualified_alternative")
