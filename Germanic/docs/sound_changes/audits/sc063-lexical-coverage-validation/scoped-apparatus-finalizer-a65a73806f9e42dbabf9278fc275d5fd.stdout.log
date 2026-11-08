@@ -1,0 +1,42 @@
+== preflight: SC063 (finalize) ==
+          PASS  registry_row: SC063 registered (lifecycle: active, adjudication: adjudicated)
+          PASS  registry_documents: all registry document pointers resolve
+          PASS  verdict_vocabulary: verdict 'REFORMULATE' well-formed
+          PASS  fst_identifier: OEHighVowelApocope
+          PASS  memo_verdict: memo Registry-verdict agrees with the registry
+          PASS  memo_sections: all template-mandated sections present
+          PASS  archive_frozen: no frozen ARCHIVE record modified
+          PASS  protected_baselines: no unapproved protected-baseline change
+          INFO  generated_ownership: generated artifacts are owned by the artifact graph; freshness is checked after refresh, not here
+          PASS  runtime_runner: backend runner reachable
+          PASS  work_dir: .capr-work/ writable
+          PASS  runtime_conflict: no other process holds the runtime artifacts
+          INFO  source identity: e9cbfb4f111d5dbe (HEAD 99b1d2e919a1, 107 worktree changes)
+PREFLIGHT PASS
+== control-plane refresh (artifact graph) ==
+  runtime_bins: fresh (recorded provenance matches)
+  full_trace: fresh (recorded provenance matches)
+  lexical_sources: lexical sources changed; run the control-plane refresh: python3 Germanic/tools/adjudicate.py --refresh
+  lexical_sources: rebuilding (container runtime) ...
+    rebuilt Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt
+    rebuilt Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+    rebuilt Germanic/docs/assembly/manifest_summary.md
+    rebuilt Germanic/docs/assembly/lexical_volume_alpha_01.md
+    rebuilt Germanic/docs/assembly/manifest_regular.tsv
+    rebuilt Germanic/docs/assembly/manifest_attested_variant.tsv
+    rebuilt Germanic/docs/assembly/manifest_early_analogy.tsv
+    rebuilt Germanic/docs/assembly/manifest_late_analogy.tsv
+    rebuilt Germanic/docs/assembly/manifest_reconstructed_oe.tsv
+    rebuilt Germanic/docs/assembly/manifest_known_unmodelled.tsv
+    rebuilt Germanic/docs/assembly/manifest_unexplained.tsv
+    rebuilt Germanic/docs/assembly/manifest_all_by_class.tsv
+    rebuilt Germanic/docs/assembly/lexical_source_provenance.json
+  lexeme_publication: wrote Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.with_lexeme_reports.md
+  lexeme_publication: wrote Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.with_lexeme_reports.audit.md
+  lexeme_publication: wrote Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.with_lexeme_reports.publish.md
+  book_draft: wrote Germanic/docs/assembly/capr_book_draft_alpha_01.md
+  index_verborum: wrote Germanic/docs/book/index_verborum_audit.md
+  interaction_matrix: fresh (recorded provenance matches)
+CONTROL PLANE CLEAN
+== propagation checks ==
+SC063: propagation checks passed. Remember: cd Germanic/tests && python3 -m pytest -q

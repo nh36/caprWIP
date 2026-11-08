@@ -1,0 +1,155 @@
+{
+  "candidate_tree": "87944bf326c46bf8090fb547c48ed3445d6dec04",
+  "publication_receipt": ".capr-work/hvd-lexical/validation/strict-final-indexed-book.json",
+  "inspection": "Viewed actual page images in the terminal: SC054, SC063, SC064, SC066, SC117; little, spindle and filth histories; ordinary and reconstructed Index Verborum entries. Checked readable diacritics, tables, Foma blocks, citations, headings, continuations and index locators. No clipping, missing glyphs or unresolved references observed.",
+  "pdfs": [
+    {
+      "pdf": "Germanic/docs/assembly/capr_book_draft_alpha_01.pdf",
+      "sha256": "ab0c695d67ecf9c31bab41b1ab932aae29db756f6684370b2fe57a0f12fc8bfb",
+      "visually_inspected_pages": [
+        {
+          "physical_page": 76,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p76.png",
+          "sha256": "c334a462fa4fa6cc4fd49bf7f35c0ac1af3bf5d7ea5c45ab60906334cdc55486"
+        },
+        {
+          "physical_page": 77,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p77.png",
+          "sha256": "a506d63e1248d0b49f47e53116a3674cc964fbc44ba5d9142e5b0796cbb7d6bd"
+        },
+        {
+          "physical_page": 92,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p92.png",
+          "sha256": "62c3b81a2cf163eab8c76011ddbfeef9e6c949803d42498e0e1529e12cfaa032"
+        },
+        {
+          "physical_page": 98,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p98.png",
+          "sha256": "5b68b7d6e52e6509b78a6fc804f466330b583f1ab0bdbdef91cf73a4bcc8f73b"
+        },
+        {
+          "physical_page": 99,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p99.png",
+          "sha256": "23bf072249c091048a939ac5fb2a4afd1f66d782ca25d7e2ffe5795e2c965cf6"
+        },
+        {
+          "physical_page": 100,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p100.png",
+          "sha256": "7f86d646d7d61499d55ee6d45c9f5b950adc4d1e7a29972c00e0fbe401a3c5c6"
+        },
+        {
+          "physical_page": 102,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p102.png",
+          "sha256": "22c4484bef45f793a774a6e2b57becabccebd54c74536dc5ae731c95342c547d"
+        },
+        {
+          "physical_page": 103,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p103.png",
+          "sha256": "ee046318022d4587d31f9acb67c093c32284d90294363c8a1d3f14920e2599e4"
+        },
+        {
+          "physical_page": 141,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p141.png",
+          "sha256": "24316fbce741bf4b2c74093cf8accea99899ea0503331d737fa3e3045f897c42"
+        },
+        {
+          "physical_page": 142,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p142.png",
+          "sha256": "83bac01f667e771a1272211c78403356dc3a9d00c0dd586f87316b1eaa05c034"
+        },
+        {
+          "physical_page": 143,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p143.png",
+          "sha256": "2f567027e400c9d976c0d4eec0be20cd013d67cf744b41ca7f5ff1412f4eb60e"
+        },
+        {
+          "physical_page": 167,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p167.png",
+          "sha256": "e9f75385e98c2078825e80456a3d95bebd1fc36744550a347dc24011c32f66c6"
+        },
+        {
+          "physical_page": 168,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p168.png",
+          "sha256": "58f663321cd1fb7b8123311a02b333e8b25906c12e876062e9f76e9d2696ccca"
+        },
+        {
+          "physical_page": 169,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p169.png",
+          "sha256": "5d9e51776c14a50bde65fe55955bf3b43676d028db4f4cb0a889682ba2c9e0f4"
+        },
+        {
+          "physical_page": 183,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p183.png",
+          "sha256": "6762b81e4506820f5437411e0ea8d3a86f6fa31bb419bcf75e671a1281749e21"
+        },
+        {
+          "physical_page": 184,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p184.png",
+          "sha256": "a3d5d8aedb499d5795469b33f706831fecb83a340b3d2083f73f69cb11134490"
+        },
+        {
+          "physical_page": 327,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p327.png",
+          "sha256": "7b85f752d30c42f191e7fdfcea4dd6043bf0dc127b5b4c1d507aad48018a0aaa"
+        },
+        {
+          "physical_page": 330,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/combined-p330.png",
+          "sha256": "c84ada1c886d2191fc434416c8ab15ddd889ea2f59a561b4e56b89077133ee5a"
+        }
+      ]
+    },
+    {
+      "pdf": "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.pdf",
+      "sha256": "0c02871bcfeaf6ea11542ee11524b1c1df625dd1e465cea9c499e0ed4b3e9813",
+      "visually_inspected_pages": [
+        {
+          "physical_page": 90,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/reader_facing_local_section_20-p90.png",
+          "sha256": "b5a0049ad63fcb15df7b8cc262d1e3e64f7698c9cab723c37bd4f2a9f7342998"
+        },
+        {
+          "physical_page": 97,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/reader_facing_local_section_20-p97.png",
+          "sha256": "52cc1fcd604b6913727df55c463c5af5ec1f48008300cdc369dc27226a01d9f4"
+        },
+        {
+          "physical_page": 98,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/reader_facing_local_section_20-p98.png",
+          "sha256": "97293f982a6ee3db199c29d30b574762125bda79066f74d6a077d41c9232da7f"
+        },
+        {
+          "physical_page": 99,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/reader_facing_local_section_20-p99.png",
+          "sha256": "373086b523bac09b4c67664e0d407f47dc30d0b3fc5b03567a05cfdf3d926a76"
+        }
+      ]
+    },
+    {
+      "pdf": "Germanic/docs/assembly/lexical_volume_alpha_01.pdf",
+      "sha256": "fb41bc557230750916142201fee31b386f3dfc7770c8877b3e1f53e5b46ee9c5",
+      "visually_inspected_pages": [
+        {
+          "physical_page": 38,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/lexical_volume_alpha_01-p38.png",
+          "sha256": "24b3aefbdd9957caee973e0d2a0df209a2ca8f28fc050441e840d231a7cbb3a5"
+        },
+        {
+          "physical_page": 39,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/lexical_volume_alpha_01-p39.png",
+          "sha256": "25ddc3e7cce87d7f32e5a98731e3ddf5cc41bc3685588f9c96ff3f1aad94e0c6"
+        },
+        {
+          "physical_page": 51,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/lexical_volume_alpha_01-p51.png",
+          "sha256": "b747d889d2768abebfaf52bb2c5211619affba0028a56a37ac244ed59df5c9d1"
+        },
+        {
+          "physical_page": 52,
+          "image": ".capr-work/hvd-lexical/validation/visual-final/lexical_volume_alpha_01-p52.png",
+          "sha256": "ee13dc6d01d0cf3de5e052e983ae67050a1f81cc2c6417953afd680ae7c458b9"
+        }
+      ]
+    }
+  ]
+}

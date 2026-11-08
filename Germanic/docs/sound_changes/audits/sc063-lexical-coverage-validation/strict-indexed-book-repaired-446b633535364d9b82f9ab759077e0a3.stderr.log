@@ -1,0 +1,22 @@
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+Paragraph gloss validator:
+  Part I:  715 prose paragraphs, 842 Emph/iv/recon/lex occurrences, 728 first-occurrence candidates, 1 violation(s)
+  Part II: 1886 top-level paragraphs visited; 0 prose paragraphs in ordinary-form scope; 1886 .recon-only paragraphs outside ordinary scope; 645 .recon, 838 .iv, 32 .lex, 0 plain-italic, 0 code occurrences, 1347 first-occurrence candidates, 9 violation(s)
+  Total violations: 10
+  Part I violations:
+    Para 572: missing gloss for *lȳtelu*
+  Part II violations:
+    [Old English evidence] []: missing gloss for *lȳtelu* (iv)
+    [Comparative formation and selected cell] []: missing gloss for *lītilaz* (recon)
+    [Comparative formation and selected cell] []: missing gloss for *lūtilaz* (recon)
+    [Comparative formation and selected cell] []: missing gloss for *lūtilō* (recon)
+    [Old English evidence and selected cell] []: missing gloss for *spinle* (iv)
+    [Old English evidence and selected cell] []: missing gloss for *spinle* (iv)
+    [Old English evidence and selected cell] []: missing gloss for *spinl* (iv)
+    [Comparative premise and its unresolved limit] []: missing gloss for *spénnilō* (recon)
+    [Comparative premise and its unresolved limit] []: missing gloss for *spénnilǭ* (recon)

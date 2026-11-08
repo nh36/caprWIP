@@ -1,0 +1,66 @@
+== preflight: SC063 (evidence) ==
+          PASS  registry_row: SC063 registered (lifecycle: active, adjudication: adjudicated)
+          PASS  registry_documents: all registry document pointers resolve
+          PASS  verdict_vocabulary: verdict 'REFORMULATE' well-formed
+          PASS  fst_identifier: define OEHighVowelApocope at germanic.txt line 3551
+NOT_APPLICABLE  memo_verdict: verdict/memo agreement is checked at finalisation
+          PASS  archive_frozen: no frozen ARCHIVE record modified
+          PASS  protected_baselines: no unapproved protected-baseline change
+          INFO  generated_ownership: generated artifacts are owned by the artifact graph; freshness is checked after refresh, not here
+          PASS  runtime_runner: backend runner reachable
+          PASS  work_dir: .capr-work/ writable
+          PASS  runtime_conflict: no other process holds the runtime artifacts
+          INFO  source identity: 60f40edddbd43854 (HEAD 99b1d2e919a1, 44 worktree changes)
+PREFLIGHT PASS
+# Executable evidence: SC063 (OEHighVowelApocope)
+
+## Chronology relations and witnesses (canonical edge registry)
+- SC054 -> SC063 [one_sided_chronology; independently_demonstrated; role: displacement_witness]
+  witnesses: sea
+  forms: PGmc `*sáiwiz` yields expected OE `sǣ`, but the later-shifted variant again yields `sǣw`
+- SC063 -> SC055 [one_sided_chronology; independently_demonstrated; role: displacement_witness]
+  witnesses: belly; birth; breeches; bride; cow; filth
+  forms: PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `cū`; PGmc `*brūdiz` likewise yields `brūd` instead of expected `brȳd`; selected *fūliþǭ yields fȳlþe, but quantitative high loss before mutation gives fūlþe.
+- SC063 -> SC072 [one_sided_chronology; independently_demonstrated; role: displacement_witness]
+  witnesses: fright
+  forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the later-shifted variant yields `fyrht`
+- SC063 -> SC068 [one_sided_chronology; independently_demonstrated; role: feeding]
+  witnesses: spindle
+  forms: Selected *spénnilǭ: *spinnilǭ > *spinnlǭ at quantitative HVD, then *spinlǭ at unchanged degemination; loss after degemination gives spinnle.
+
+## Control-plane refresh (forced stage-bin rebuild) ...
+equivalent: 392 rows identical between old_english.bin and old_english_sandbox_after_old_english_surface.bin; wrote /usr/app/docs/sound_changes/cascade_baseline/oe_equivalence_report.json
+Wrote /usr/app/docs/debug_snapshots/oe_full_trace_report.txt
+  runtime_bins: rebuilding (container runtime) ...
+    rebuilt rebuilt stage bins + oe_build_manifest.json (production/sandbox equivalence verified)
+  full_trace: canonical full trace stale: trace report is STALE w.r.t. germanic.txt; run the control-plane refresh: python3 Germanic/tools/adjudicate.py --refresh
+  full_trace: canonical full trace stale: trace report is STALE w.r.t. germanic-aligned-final.tsv; run the control-plane refresh: python3 Germanic/tools/adjudicate.py --refresh
+  full_trace: rebuilding (container runtime) ...
+    rebuilt regenerated Germanic/docs/debug_snapshots/oe_full_trace_report.txt (~16 min runtime evidence)
+  registry_views: wrote Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv
+  registry_views: wrote Germanic/docs/sound_changes/sound_change_inventory.tsv
+  coverage_census: wrote Germanic/docs/sound_changes/cascade_baseline/rule_coverage_census.tsv
+  reader_book: wrote Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/corpus_inventory.tsv
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/source_coverage.tsv
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/reconstruction_ledger.md
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/source_priorities.tsv
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/comparison_map.md
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/analytical_coverage.tsv
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/reading_progress.md
+  pgmc_reconstruction_survey: wrote Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json
+  lexical_sources: lexical sources changed; run the control-plane refresh: python3 Germanic/tools/adjudicate.py --refresh
+  lexical_sources: rebuilding (container runtime) ...
+    rebuilt Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt
+    rebuilt Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md
+    rebuilt Germanic/docs/assembly/manifest_summary.md
+    rebuilt Germanic/docs/assembly/lexical_volume_alpha_01.md
+    rebuilt Germanic/docs/assembly/manifest_regular.tsv
+    rebuilt Germanic/docs/assembly/manifest_attested_variant.tsv
+    rebuilt Germanic/docs/assembly/manifest_early_analogy.tsv
+    rebuilt Germanic/docs/assembly/manifest_late_analogy.tsv
+    rebuilt Germanic/docs/assembly/manifest_reconstructed_oe.tsv
+    rebuilt Germanic/docs/assembly/manifest_known_unmodelled.tsv
+    rebuilt Germanic/docs/assembly/manifest_unexplained.tsv
+    rebuilt Germanic/docs/assembly/manifest_all_by_class.tsv
+    rebuilt Germanic/docs/assembly/lexical_source_provenance.json

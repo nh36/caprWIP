@@ -1,0 +1,25 @@
+== scientific adjudication (registry) ==
+  adjudicated: 51
+  unadjudicated: 64
+  next pending historical change: SC041
+== corpus and baseline (frozen summary) ==
+  total_lexemes: 392
+  accepted: 392
+  matched: 384
+  mismatched: 8
+  outputs_sha256: 050be9a640d5c9fe2d3496da300933c04c00b69dca0771cdc143637934a26668
+== generated-artifact freshness (non-mutating) ==
+  all artifact-graph nodes fresh
+== lexical publication obligations ==
+  selected: 392
+  assembled: 175
+  required: 167
+  philological_selected: 21
+  explicitly selected model publications (20): 1933, 1934, 2006, 2011, 2013, 2053, 2085, 2148, 2162, 2201, 2208, 2224, 2282, 2283, 2326, 2330, 2332, 2335, 2336, 2337
+  all selected model publications carry source ledgers
+  required_not_assembled (standing editorial policy, not a failure): 2055, 2120, 2327, 2328, 2329
+== full validation ==
+  not attested by this report; run the full strict suite:
+  cd Germanic/tests && python3 -m pytest -q
+  plus INDEX_VERBORUM_STRICT=1 bash Germanic/docs/assembly/build_capr_book_draft_docker.sh
+STATUS OK (scientific/publication axes consistent; full validation must still be run)

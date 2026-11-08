@@ -1,0 +1,29 @@
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+Paragraph gloss validator:
+  Part I:  715 prose paragraphs, 842 Emph/iv/recon/lex occurrences, 728 first-occurrence candidates, 0 violation(s)
+  Part II: 1886 top-level paragraphs visited; 0 prose paragraphs in ordinary-form scope; 1886 .recon-only paragraphs outside ordinary scope; 645 .recon, 838 .iv, 32 .lex, 0 plain-italic, 0 code occurrences, 1347 first-occurrence candidates, 0 violation(s)
+  Total violations: 0
+This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
+Scanning input file iv.idx......done (2046 entries accepted, 0 rejected).
+Sorting entries....................done (25437 comparisons).
+Generating output file iv.ind.....done (1044 lines written, 0 warnings).
+Output written in iv.ind.
+Transcript written in iv.ilg.
+This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
+Scanning input file iv.idx......done (2046 entries accepted, 0 rejected).
+Sorting entries....................done (25087 comparisons).
+Generating output file iv.ind.....done (1040 lines written, 0 warnings).
+Output written in iv.ind.
+Transcript written in iv.ilg.
+This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
+Scanning input file iv.idx......done (2046 entries accepted, 0 rejected).
+Sorting entries....................done (25087 comparisons).
+Generating output file iv.ind.....done (1040 lines written, 0 warnings).
+Output written in iv.ind.
+Transcript written in iv.ilg.

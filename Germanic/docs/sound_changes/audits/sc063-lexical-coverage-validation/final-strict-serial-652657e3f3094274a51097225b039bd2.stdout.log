@@ -1,0 +1,831 @@
+................................................................... [  3%]
+............................................. [  5%]
+..........................................................F............................F.F......................................... [ 12%]
+.......s........................................................... [ 15%]
+........................................ [ 17%]
+........................................................................ [ 21%]
+........................................................................ [ 25%]
+..............................................F.................. [ 28%]
+...............F.....................................................................................FF.F..F..................................................................................................... [ 39%]
+.............................................................. [ 42%]
+....................................................................................... [ 46%]
+....................................................................................................................................................................................................... [ 56%]
+........................................................................ [ 60%]
+..................................................................... [ 63%]
+................................. [ 65%]
+...................................................Fs....... [ 68%]
+..................................................F........ [ 71%]
+....................F......................................... [ 74%]
+.................................................. [ 77%]
+............................................................... [ 80%]
+................................................... [ 83%]
+...................................................... [ 85%]
+...............F..................F. [ 87%]
+...................................s..s........F...sF.F.....F................................................ [ 93%]
+...............................F....F.F. [ 95%]
+....F.................................F...... [ 97%]
+..............F..................... [ 99%]
+....F....F                                                               [100%]
+=================================== FAILURES ===================================
+____________ ExperimentTests.test_live_selection_has_all_stable_ids ____________
+
+self = <test_anglo_frisian_experiments.ExperimentTests testMethod=test_live_selection_has_all_stable_ids>
+
+    def test_live_selection_has_all_stable_ids(self):
+        rows = experiments.corpus_rows(layout().corpus_tsv)
+        # The SC040 earthly admission adds exactly one selected identity.
+>       self.assertEqual(len(rows), 391)
+E       AssertionError: 392 != 391
+
+test_anglo_frisian_experiments.py:382: AssertionError
+__ test_certificates_are_bound_to_the_archived_parser_closure_and_orthography __
+
+    def test_certificates_are_bound_to_the_archived_parser_closure_and_orthography():
+>       assert_intervention_scope()
+
+test_bounded_domain_adoption.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+_____ test_actual_surviving_gamma_projection_and_unchanged_selected_finals _____
+
+    @pytest.mark.runtime
+    def test_actual_surviving_gamma_projection_and_unchanged_selected_finals():
+        records = json.loads(frozen("outputs/selected391.json"))
+        expected = {row["fst_input"]: row["outputs"] for row in records}
+        controls = json.loads(frozen("outputs/controls.json"))["full"]
+>       assert_intervention_scope()
+
+test_bounded_domain_adoption.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+__ SandboxEquivalenceTests.test_equivalence_evidence_is_fresh_and_equivalent ___
+
+self = <test_infrastructure_authorities.SandboxEquivalenceTests testMethod=test_equivalence_evidence_is_fresh_and_equivalent>
+
+    def test_equivalence_evidence_is_fresh_and_equivalent(self):
+        mod = _load("check_production_sandbox_equivalence")
+        path = mod.evidence_path()
+        self.assertTrue(path.is_file(),
+                        "missing oe_equivalence_report.json; run adjudicate.py "
+                        "SCNNN --evidence (or tools/"
+                        "check_production_sandbox_equivalence.py in the "
+                        "container)")
+        report = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(report["status"], "equivalent")
+>       self.assertEqual(report["rows_compared"], EXPECTED_ACTIVE_ROW_COUNT)
+E       AssertionError: 392 != 391
+
+test_infrastructure_authorities.py:507: AssertionError
+_ CurrentStateFingerprintTests.test_current_state_matches_cascade_baseline_summary _
+
+self = <test_infrastructure_authorities.CurrentStateFingerprintTests testMethod=test_current_state_matches_cascade_baseline_summary>
+
+    def test_current_state_matches_cascade_baseline_summary(self):
+        summary = json.loads(
+            (BASELINE_DIR / "cascade_baseline_summary.json").read_text(
+                encoding="utf-8"))
+        text = (REPO_ROOT / "Germanic/docs/CURRENT_STATE.md").read_text(
+            encoding="utf-8")
+>       self.assertIn(summary["outputs_sha256"], text)
+E       AssertionError: '050be9a640d5c9fe2d3496da300933c04c00b69dca0771cdc143637934a26668' not found in '# Germanic project — current state (living entry point)\n\nKeep this file tiny. Per-SC facts (status, verdicts, stages, memos) live only\nin the canonical registry; do not duplicate them here.\n\n## Current phase\n\nThe unified Fulk--Goering account, early final-n loss, corrected w-loss\nand fee transponent were certified at\n[99b1d2e9](https://github.com/nh36/caprWIP/commit/99b1d2e919a191910e8e6df5ef4b138e9bad4de1#commitcomment-208866282).\nThe earlier [comparison](sound_changes/literature_dossiers/high_vowel_deletion_fulk_goering.md)\nand [blocker resolution](sound_changes/literature_dossiers/high_vowel_deletion_blocker_resolution.md)\nretain their historical proposals, failures and decisions.\nThe current [lexical coverage closeout](sound_changes/audits/sc063-lexical-coverage-closeout.md)\nprotects that certified account economically, without reopening the laws.\nResearch-branch lexical changes require their own complete strict\nserial/exclusive and rendered-book certification before promotion to `update`.\n\nThe [syncope consolidation](sound_changes/audits/sc065-adjudication.md)\nsupersedes the early compound-a proxy and overlapping high-vowel losses.\nIts controlled two-cell migration selects accusative spinle and fȳlþe;\nThe certified before-reference preserved all other selected records\nand PROTO citations. Current populations live in the generated summary\nbelow, not a second hand-maintained count.\n\nThe bounded [SC037 intervention](sound_changes/audits/sc037-historical-executable-intervention.md)\nrecords the historical decision, preserved research streams and deliberately\nunadopted residual questions. Neither stream\'s next investigation is begun.\n\nSC112 scientific implementation and lexical publication are complete; the\n[publication receipt](sound_changes/audits/sc112-lexical-publication.md)\nrecords the evidence and validation. Current lexical counts live in the\n[generated population summary](lexeme_reports/pgmc_integration/population_summary.md).\nThe paved-road architecture is complete and was validated by a read-only dry\nrun (`--next`, then `--prepare`). It has no separate worktree: it extends the\ncontrol plane, adjudication interface, CI validation and cleanup commits\nalready on `update`. Entry points and the editorial-projection principle are\nin [README.md](README.md) ("Routine operations"). Lexical presentation order\nis editorial (`assembly/lexical_editorial_order.tsv`, Modern English headword\norder by default); stage resolution is a single scientific module\n(`tools/entry_stages.py`) shared by the survey and the assembler. The next\nphase is substantive linguistic research.\n\nThe reader now has one authoritative source per published SC and follows\nthe individual executable sequence automatically; five editorial chapter\nboundaries cannot reorder it. The\n[reader migration record](assembly/reader_architecture_migration.md)\ndocuments ownership, conservation and validation. No subsequent adjudication\nwas begun as part of that architectural migration.\nThe bounded [post-migration consistency pass](assembly/post_migration_consistency.md)\nreconciles superseded chronology claims and publication infrastructure with\naccepted decisions; it does not reopen SC035 or begin the next adjudication.\n\nFor subsequently authorized per-SC adjudication, the next SC is derived from\nthe registry and the explicit programme policy, never stated here:\n`python3 Germanic/tools/adjudicate.py --next`\n\n`registry/adjudication_programme.json` owns the administrative programme\nstart. Scoped verdicts cannot skip earlier pending work, and technical\nsupport stages are excluded. Earlier pending cases and support stages\nremain accessible through explicit SC commands; routing is not historical\nstage, chronology or executable order.\n\nMethod: `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` +\n`Germanic/docs/sound_changes/audits/ADJUDICATION_TEMPLATE.md` are mandatory\nfor any sound-change history/chronology/staging/scope/FST-semantics work.\n\n## Canonical sources\n\n- `Germanic/docs/sound_changes/registry/sc_registry.tsv` — all SC metadata.\n- `Germanic/docs/sound_changes/registry/chronology_edges.tsv` — all\n  chronology relations and witnesses.\n- `Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv` — human\n  inventory judgements only (`sc_inventory_annotations.tsv` is generated from\n  it plus `germanic.txt` and the coverage census).\n- Settled verdicts (generated view):\n  `Germanic/docs/sound_changes/registry/settled_verdicts.md`.\n- Navigation and the SOURCE/GENERATED/ARCHIVE map: `Germanic/docs/README.md`.\n\n## Rainbow adoption (historical receipt)\n\nThe current SC017 memo is `sound_changes/audits/rainbow-2148-adoption.md`.\nEarly lowering now preserves subordinate stress in `*régna-bùgô >\n*régna-bògô`; linking syncope and ordinary grave removal follow unchanged.\nRainbow no longer establishes secondary-stress loss before late medial\nu-lowering. World and soul retain their adopted histories. Early/late\nselected firing counts are 40/10 rather than 39/11, but all 389 finals\nand all immutable legacy380 finals are conserved. No corpus, ordering,\nstage or baseline migration accompanies this adoption. The mature volume\nnow has 168 entries, including 90 regular entries.\n\n## Protected baselines and certified before-reference\n\nCurrent observations are recorded in\n`Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_summary.json`\nand protected by `Germanic/tests/test_cascade_baseline.py`.\nThe following hashes identify the certified99b1d2e9 before-reference,\nnot a second live baseline after lexical expansion:\n\n- active original-380 identity fingerprint (`legacy_subset_sha256`):\n  `a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47`\n- selected-391 corpus fingerprint (`outputs_sha256`):\n  `fb69130eebd5efe66f015c340af38731c7a0baa618916da3da7d0724a786272f`\n- lexical-input projection (`lexical_outputs_sha256`):\n  `5da16c2a65c4bb3e75ae833b295b3757a981305e2c7ad32bfe1a747cb26614d6`\n\nThe fee input-only transition is explicitly authorized by\n`approved_fee_input_migration.json`; `*_pre_sc064_fee_input.*` preserves\nall preceding active baseline bytes. All391 selected outputs and targets,\nall inherited PROTO headwords and the immutable original380 archive\nremain unchanged. Only fee2006\'s selected input changes to the later\npreoe/transponent *féx. Input-sensitive fingerprints change accordingly;\nthey are observations, not goals.\n\nThe authorized inherited-world input migration is recorded in\n`approved_world_input_migration.json`; `*_pre_sc036_world.*` preserves\nthe previous active baseline. Only2302\'s selected input changes, from\n`*wír-àldu` to `*wír-àldiz`; all389 finals, targets, contexts and match\nflags remain unchanged. Current scientific reasoning belongs to SC036\'s\nregistered memo. Its separate soul history is not part of this migration.\n\nThe SC112 expansion adds only rows 2333 and 2334 (*there* and *where*):\n389 selected rows, 381 matches and the same eight mismatches. Every prior\n387 input, target, context and output is preserved in `*_pre_sc112_expansion.*`;\nthe original-393 comparative survey remains a distinct historical scope\nfrom the then-396-row audit inventory.\n\nThe subsequent SC065 admission adds only row 2335 (*filth*, `*fūliþō` >\n`fȳlþ`), the live medial-syncope witness: 390 selected rows, 382 matches\nand the same eight mismatches. Every prior 389 input, target, context and\noutput is byte-identical and the legacy fingerprint is unchanged; the\nscientific admission record is\n`sound_changes/audits/sc065-adjudication-before-syncope-consolidation.md`.\nThe SC065 publication closeout assembled the mature *filth* article\n(`lexeme_reports/model_entries/2335-filth-fȳlþ.model.md`, editorial case\n`filth-endingless-nominative`), restructured the SC065 reader chapter, and\ncollapsed the trace θ/þ index duplicate. Publication obligations are now\ngated: an explicitly selected article (editorial case with\n`requires_extended_discussion=1`) must exist and be assembled, and\n`python3 Germanic/tools/adjudicate.py --status` reports the three axes\n(scientific, publication, full validation) read-only. The three-level\nvalidation workflow and the optional parallel test lanes are documented in\n[docs/CI_VALIDATION.md](../../docs/CI_VALIDATION.md).\n\nSC040\'s subsequent source-bound adjudication reformulates explicit\nnonfinal medial prominence while retaining the segmental kernel and\nexecutable chronology. The pinned Foma delayed-identity diagnostic defect\nwas reduced independently; all actual production-named protection,\nlowering and cleanup components pass the unchanged formal gate.\nInherited SC038 and the accepted world, rainbow and soul histories remain\nunchanged. The earlier genuine DEFER and failed snapshots are preserved\nin `sound_changes/audits/sc040-adjudication.md`.\n\nThe authorised earthly admission adds only row2336:\n`*érθa-kùnðǭ > eorþcunde`, the attested weak neuter accusative singular\nof Genesis A1627, documentary class `attested_variant`. Citation PROTO\nremains `*érθa-kùnðaz`; explicit same-stage PGmc cell metadata separates\nthe two selections. The established baseline writer verifies 391 accepted,\n383 matching, eight unchanged mismatches and exact preservation of all\n390 earlier records. `*_pre_sc040_earthly.*` preserves that earlier\npopulation, and `corpus_expansion_sc040_earthly.tsv` records the approved\ntransition. The mature article and ledger are selected for publication;\nfinal-source certification is carried by the renewed SC040 journal, not\nthe archived 390-entry receipt.\n\nThe immutable legacy380 archive still hashes to\n`fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf`.\n\nThe subsequent coordinated SC001/SC036/SC114 decision adopts\n`*fúnðanai > fundne`, `*xámaraz > hamer`, `*sáiwalǭ > sāwle`\nand `*wéstą > west`. SC001\'s actual canonical input relation passes\nnative functionality/unambiguity and an independent global ATT proof.\nThe original `biu` ambiguity is genuine; distinct readings require\nexplicit stress rather than an arbitrary lexical priority. The pinned\nnative discrepancy-buffer defect and every failed representation remain\npreserved in `sound_changes/audits/parser-formal-resolution/`.\n\nSC114 is the bounded open-posttonic nonhigh phase, distinct from\nunchanged SC063/065/066. SC036 retains OELHWeakRaising literally and\nretires only OESoulProxy; the accepted SC040, world, earthly and rainbow\nhistories remain. The named `approved_nonhigh_cells_migration.json`\ninterface preserves `*_pre_sc114_nonhigh_cells.*`, all earlier approvals\nand the literal original380 archive. The selected population remains391,\nwith383 matches and the same eight mismatches. Original380 counterfactual\nfinal changes are disclosed: find fundene→fundne, hammer hameres→hamres,\nsoul sāwol→sāwel, west westene→westne; none is silently rewritten\ninto the original archive.\n\nProduction certification must come from the renewed coordinated journal,\nfresh actual-SOURCE finalisation, strict serial/exclusive validation and\nrendered publication checks, never the research candidate\'s receipt.\nThe full composed cascade\'s inherited global functionality failure is\nstill unresolved. A separate bounded investigation must establish\nfunctionality and totality on an explicitly valid canonical domain:\none fully specified Proto-Germanic input under a fixed history must\nproduce exactly one Old English output.\n\nActual final four-cell PDFs and indexes have been built and page-inspected:\n[publication record](sound_changes/audits/parser-four-cells-production/publication-inspection.md).\nThe separate source-bound strict result is owned by the coordinated journal\nand its `parser-four-cells-production/validation-closeout.md`, not by that build.\nThat [closeout](sound_changes/audits/parser-four-cells-production/validation-closeout.md)\nnow records complete actual-SOURCE certification at `1b069822`: 1903 serial\ntests and 9635 subtests passed, five explicit historical-replay skips, followed\nby 26 exclusive fresh-runtime passes. VALIDATE and COMPLETE are recorded.\nThe later evidence/status-only commit does not replace that exact tested SOURCE.\n\nThe authorized wether lexical selection uses masculine `*wéθruz`, preserving\nall 387 finals and the eight established mismatches. Its exact named receipt\nis `approved_wether_input_migration.json`; the separate\n`*_pre_sc015_wether_input.*` archive preserves the preceding active baseline.\nThat lexical-only decision changed no sound law, verdict or chronology.\nThe subsequent authorized SC015 adoption is a separate transition:\n`approved_sc015_targets_migration.json` preserves `*_pre_sc015.*`\nand selects independently attested `leornian`, `leorna`, `leornaþ`\nfor2095/2313/2314, with unchanged inherited inputs. All387 selections\nremain deterministic,379 match and the same eight mismatches remain.\nThe canonical memo records the working hypothesis and unresolved\ncomparative counterevidence; no stage/context or rule-order change is made.\nThe SC056 adjudication explicitly migrates gift\'s input by stable row ID.\nThe SC033 adjudication selects knee\'s regular dative: *knéwai → cneowe,\npreserving citation *knéwą. Its exact input/target/output transition is\ndeclared in `approved_cell_migration.json` and\n`approved_input_migrations.tsv`; `*_pre_sc033.*` preserves the previous\nbaseline. All other 386 finals and the seven existing mismatches remain\nprotected. Apply only through\n`python3 Germanic/tools/adjudicate.py SC033 --adopt-cell-baseline`.\n\nThe subsequent approved hue input correction preserves every final but\nchanges both PROTO and PROTOFORM to *xíwją. Its separate receipt is\n`approved_hue_input_migration.json`, selected with\n`SC033 --adopt-cell-baseline --approval approved_hue_input_migration.json`.\nThe distinct `*_pre_sc033_hue.*` archive preserves the post-knee baseline;\nthe knee receipt and all earlier archives are untouched. Hue lies outside\noriginal380, whose active and immutable fingerprints remain unchanged.\n\nThe later SC034 straw correction preserves attested target `strēaw` and\ninput `*stráwą`; the regular cascade now yields reconstructed `strēa`.\nThis explicitly adds straw to the seven older mismatches: 379 matches /\neight mismatches, all387 accepted and unambiguous. The exact output and\nmatch-flag receipt is `approved_sc034_output_migration.json`; separate\n`*_pre_sc034.*` archives preserve the post-hue baseline. Every older\napproval/archive and the other386 finals remain protected. Adoption uses\n`SC034 --adopt-cell-baseline --approval approved_sc034_output_migration.json`;\nroutine refresh never changes it.\n\nThe supplementary SC017 rust selection changes only row2162\'s PROTO and\nPROTOFORM from *rústō to masculine *rústaz, retaining rust, predicted rost\nand `unexplained_unmodelled`. `approved_rust_input_migration.json` authorizes\nthe exact input-only baseline transition; `*_pre_sc017_rust_input.*`\npreserves the post-SC034 state. The original-380 archive remains immutable\nand the migration TSV makes its old rust identity recoverable. All387\nfinals and the same eight mismatches are unchanged. SC017\'s earlier RETAIN\nverdict, registry reference, definition and chronology remain intact.\n\nThe SC031/SC098 context adoption separately changes only you\'s assembled\nevaluator input; its lexical reconstruction and every final are unchanged.\nThe previous selected387 snapshot is preserved as `*_pre_sc031_sc098.*`.\nContext selection lives in `Germanic/data/entry_context_metadata.tsv`;\nan absent annotation explicitly selects strong-final citation context.\nRoutine refresh never refreezes the baseline. The approved transition uses\n`python3 Germanic/tools/adjudicate.py SC098 --adopt-context-baseline`.\n\nA fingerprint may change only as the explicit, row-level-diagnosed\nconsequence of an adjudication verdict (protocol step 13), never as a\nroutine refresh.\n\n## Standard commands\n\n- Next SC to adjudicate: `python3 Germanic/tools/adjudicate.py --next`\n- Prepare an adjudication packet: `python3 Germanic/tools/adjudicate.py SCNNN --prepare`\n- Executable evidence (container rebuild + live firing census + witness\n  pre/post): `python3 Germanic/tools/adjudicate.py SCNNN --evidence`\n- Control-plane refresh after ANY source edit (rule move, registry edit,\n  prose edit): `python3 Germanic/tools/adjudicate.py --refresh`\n- Finalize after SOURCE edits (control-plane refresh, then SC checks):\n  `python3 Germanic/tools/adjudicate.py SCNNN --finalize`\n- Full test suite: `cd Germanic/tests && python3 -m pytest -q`\n- Debug-only: `python3 Germanic/tools/artifact_graph.py [--check|--refresh]`\n  (the same graph `--refresh` drives)\n\n## Instruction precedence\n\n1. The current explicit user instruction.\n2. `Germanic/docs/RESEARCH_ADJUDICATION_PROTOCOL.md` (adjudication work).\n3. `.github/copilot-instructions.md` (repo-wide conventions).\n4. `docs/AGENTS.md` — a short routing rule pointing to the adjudication\n   interface. An explicit user request to complete, commit and push an\n   adjudication is itself the authorization for those operations.\n5. Anything under `Germanic/docs/archive/` or `docs/archive/` is\n   historical record, never instruction.\n'
+
+test_infrastructure_authorities.py:1114: AssertionError
+___________ test_extension_changes_only_input_grammar_not_sound_laws ___________
+
+    def test_extension_changes_only_input_grammar_not_sound_laws():
+>       assert_intervention_scope()
+
+test_lexical_witness_input_gate.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+________ test_gate_receipt_conserves_every_preexisting_record_and_order ________
+
+    def test_gate_receipt_conserves_every_preexisting_record_and_order():
+>       assert_intervention_scope()
+
+test_lexical_witness_input_gate.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+________ test_production_gate_is_generic_and_preserves_every_old_output ________
+
+    @pytest.mark.runtime
+    def test_production_gate_is_generic_and_preserves_every_old_output():
+        assert check_build_manifest(
+            oe_pipeline.expected_snapshot_bins() + ["old_english.bin"], layout(),
+        ) == []
+        gate = oe_pipeline.stage_for("EnglishProtoInput").snapshot_bin
+        forms = [
+            "érθa-kunðaizōz", "érθa-kùnðaizōz",
+            "fúllaizōz", "fúllizōz",
+            "érθa-kùnðaizōzz", "érθa-kùnðaizō", "xláiba-warðaz",
+        ]
+        outputs = lookup(gate, forms)
+        assert outputs[forms[0]] == ["*é*r*θ*a*k*u*n*ð*ai*z*ō*z"]
+        assert outputs[forms[1]] == ["*é*r*θ*a*k*ù*n*ð*ai*z*ō*z"]
+        assert outputs[forms[2]] == ["*f*ú*l*l*ai*z*ō*z"]
+        assert outputs[forms[3]] == ["*f*ú*l*l*i*z*ō*z"]
+        assert all(outputs[form] == [] for form in forms[4:6])
+>       assert_intervention_scope()
+
+test_lexical_witness_input_gate.py:166: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+_ InputContextTests.test_canonical_selected_input_is_separate_from_lexical_identity _
+
+self = <test_oe_input_context.InputContextTests testMethod=test_canonical_selected_input_is_separate_from_lexical_identity>
+
+    def test_canonical_selected_input_is_separate_from_lexical_identity(self):
+        sys.path.insert(0, str(ROOT / "Germanic/tools"))
+        from oe_pipeline import evaluation_input, load_rows, normalize_proto
+        rows = load_rows(ROOT / "Germanic/data/germanic-aligned-final.tsv")
+>       self.assertEqual(len(rows), 391)
+E       AssertionError: 392 != 391
+
+test_oe_input_context.py:76: AssertionError
+_ test_rainbow_is_published_once_in_both_presentations_without_reclassification _
+
+    def test_rainbow_is_published_once_in_both_presentations_without_reclassification():
+        assembly = ROOT / "Germanic/docs/assembly"
+        with (assembly / "manifest_all_by_class.tsv").open() as handle:
+            rows = list(csv.DictReader(handle, delimiter="\t"))
+>       assert len(rows) == 173
+E       AssertionError: assert 175 == 173
+E        +  where 175 = len([{'class_bucket': 'regular', 'class_order': '1', 'counterpart': 'nǣdre', 'derivation_class': 'regular', ...}, {'class_... ...}, {'class_bucket': 'regular', 'class_order': '6', 'counterpart': 'byrd', 'derivation_class': 'regular', ...}, ...])
+
+test_rainbow_2148_adoption.py:122: AssertionError
+_ FingerprintGuardTests.test_fingerprints_match_approved_sc015_target_transition _
+
+self = <test_registry_consolidation.FingerprintGuardTests testMethod=test_fingerprints_match_approved_sc015_target_transition>
+
+    def test_fingerprints_match_approved_sc015_target_transition(self):
+        historical = json.loads(
+            (BASELINE / "cascade_baseline_summary_pre_sc112_expansion.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        data = json.loads(BASELINE_SUMMARY.read_text(encoding="utf-8"))
+        # outputs_sha256 rebaselined 2026-09-06 for the sow/laewan
+        # follow-up (memo §12.4): two corpus rows added (sow, betray);
+        # every pre-existing output byte-identical (legacy sha unchanged).
+        # Rebaselined again for `thought` (sc025-sc104 memo §12): one row
+        # added as the live low-vowel witness of SC103 -> SC104; all 385
+        # pre-existing outputs byte-identical, legacy sha still unchanged.
+        # Rebaselined again for the SC010 *w-gemination follow-up: hay's
+        # selected input was corrected from *xáwwją to *xáwją and row hue
+        # (2332) was added. Every pre-existing OE output is byte-identical;
+        # the legacy sha moves only because the legacy key file was repointed
+        # to hay's corrected protoform, which the fingerprint hashes beside
+        # the unchanged output.
+        # SC034 later changes only straw's output and match flag with an exact
+        # approval receipt; the pre-SC034 and immutable legacy archives remain.
+        # SC015 subsequently changes only three learn targets/finals, retaining
+        # every inherited input and the same eight mismatch identities.
+        # Rebaselined again for the SC065 filth admission (row 2335), the live
+        # medial-syncope witness (*fūliþō > fȳlþ): one row added with an exact
+        # expansion receipt; every pre-existing output byte-identical and the
+        # legacy sha unchanged (audits/sc065-adjudication.md).
+        # SC040 adds only earthly (2336), with all previous 390 records and
+        # the immutable380 conserved (test_earthly_2336_adoption.py).
+        # Consolidation migrates only the two approved spindle/filth cells;
+        # the earlier expansion archives and mismatch identities remain.
+        self.assertEqual(
+            historical["outputs_sha256"],
+            "b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb",
+        )
+        self.assertEqual(
+            historical["lexical_outputs_sha256"],
+            "e495ab40d4fb34f2117c6d8590ee11e18166271e01712755b99507bf9933aef2",
+        )
+        self.assertEqual(
+            data["legacy_subset_sha256"],
+            "a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47",
+        )
+>       self.assertEqual(
+            data["outputs_sha256"],
+            "fb69130eebd5efe66f015c340af38731c7a0baa618916da3da7d0724a786272f",
+        )
+E       AssertionError: '050be9a640d5c9fe2d3496da300933c04c00b69dca0771cdc143637934a26668' != 'fb69130eebd5efe66f015c340af38731c7a0baa618916da3da7d0724a786272f'
+E       - 050be9a640d5c9fe2d3496da300933c04c00b69dca0771cdc143637934a26668
+E       + fb69130eebd5efe66f015c340af38731c7a0baa618916da3da7d0724a786272f
+
+test_registry_consolidation.py:366: AssertionError
+_______ RustInputAdoptionTests.test_reader_model_ledger_and_census_agree _______
+
+self = <test_rust_input_adoption.RustInputAdoptionTests testMethod=test_reader_model_ledger_and_census_agree>
+
+    def test_reader_model_ledger_and_census_agree(self):
+        model = (ROOT / "Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md").read_text()
+        for value in ("PROTO: *rústaz", "PROTOFORM: *rústaz", "COUNTERPART: rust",
+                      "DERIVATION_CLASS: unexplained_unmodelled", "*rústaz > rost"):
+            self.assertIn(value, model)
+        self.assertIn("not an attested Proto-Germanic citation form", model)
+        self.assertIn("[@Toller1921, p. 691]", model)
+        self.assertNotIn("BosworthToller1898", model)
+        self.assertNotIn("*-st-*", model)
+        self.assertEqual(model.count("_-st-_"), 2)
+        findings = (ROOT / "Germanic/docs/analysis/notable_findings.md").read_text()
+        lowering = findings.split("## 2.", 1)[1].split("## 3.", 1)[0]
+        self.assertIn("Rust is the nonlabial counterexample", lowering)
+        self.assertIn("not CAPR's adopted explanation", lowering)
+        self.assertNotIn("the pattern is gradient/probabilistic", lowering)
+        census = read_tsv(BASE / "rule_coverage_census.tsv")
+        # The independent rainbow adoption adds one live SC017 application;
+        # Soul, spindle and filth accusatives no longer fire SC019; hammer fires SC020.
+        for identifier, count in (("SC017", "40"), ("SC019", "26"), ("SC020", "115")):
+            row = next(row for row in census if row["sc_id"] == identifier)
+>           self.assertEqual(row["corpus_firing_count"], count)
+E           AssertionError: '27' != '26'
+E           - 27
+E           + 26
+
+test_rust_input_adoption.py:163: AssertionError
+___________ SC032AdjudicationTests.test_trace_is_fresh_and_complete ____________
+
+self = <test_sc032_adjudication.SC032AdjudicationTests testMethod=test_trace_is_fresh_and_complete>
+
+    def test_trace_is_fresh_and_complete(self):
+        self.assertEqual(trace_provenance_problems(TRACE.read_text(encoding="utf-8")), [])
+>       self.assertEqual(len(self.records), 391)
+E       AssertionError: 392 != 391
+
+test_sc032_adjudication.py:76: AssertionError
+_ SC034AdjudicationTests.test_fresh_complete_trace_and_all_three_actual_applications _
+
+self = <test_sc034_adjudication.SC034AdjudicationTests testMethod=test_fresh_complete_trace_and_all_three_actual_applications>
+
+    def test_fresh_complete_trace_and_all_three_actual_applications(self):
+        trace = (GERMANIC / "docs/debug_snapshots/oe_full_trace_report.txt").read_text(
+            encoding="utf-8"
+        )
+        self.assertEqual(trace_provenance_problems(trace), [])
+>       self.assertEqual(len(self.records), 391)
+E       AssertionError: 392 != 391
+
+test_sc034_adjudication.py:42: AssertionError
+_______ test_context_lifting_preserves_the_other_segmental_rule_kernels ________
+
+    def test_context_lifting_preserves_the_other_segmental_rule_kernels():
+>       assert_intervention_scope()
+
+test_sc035_prosody.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+____________ test_fresh_adopted_cascade_and_phonological_components ____________
+
+isolated_definitions = 'export CAPR_FOMA_DEFINITION_IMAGE=/tmp/capr_defined_nvupldba/defined.bin; '
+
+    @pytest.mark.runtime
+    def test_fresh_adopted_cascade_and_phonological_components(isolated_definitions):
+        result = run_in_runner(
+            isolated_definitions + "python3 docs/sound_changes/audits/sc035-prosody/verify.py",
+            text=True, capture_output=True, check=True, timeout=1800)
+        data = json.loads(result.stdout)
+>       assert data["selected_rows"] == 391
+E       assert 392 == 391
+
+test_sc035_prosody.py:184: AssertionError
+_________ test_sc036_and_separately_adjudicated_changes_remain_bounded _________
+
+    def test_sc036_and_separately_adjudicated_changes_remain_bounded():
+>       assert_intervention_scope()
+
+test_sc036_adjudication.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+______________ test_intervention_changes_are_exactly_source_bound ______________
+
+    def test_intervention_changes_are_exactly_source_bound():
+>       assert_intervention_scope()
+
+test_sc037_adjudication.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def assert_intervention_scope():
+        accepted = subprocess.check_output(
+            ["git", "show", "0129a313dbad7de55965e72ba8a0fefa69115636:Germanic/fsts/germanic.txt"],
+            cwd=ROOT)
+        assert hashlib.sha256(accepted).hexdigest() == (
+            "49516473bdd7d078708680716f8da578a1503e391f6b5ed3f64643fb44fe1711")
+        old = parse_defines(subprocess.check_output(
+            ["git", "show", "439067680b0bcc4d80676b8ee882becafe67148f:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        tested = parse_defines(accepted.decode())
+        assert tested.keys() - old.keys() == INTERVENTION_ADDED
+        assert not old.keys() - tested.keys()
+        assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
+            INTERVENTION_CHANGED)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
+            assert current[name].definition_raw == tested[name].definition_raw
+        consolidated_base = parse_defines(subprocess.check_output(
+            ["git", "show", "b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6:Germanic/fsts/germanic.txt"],
+            cwd=ROOT, text=True))
+        assert current.keys() - consolidated_base.keys() == CONSOLIDATION_ADDED
+        assert not consolidated_base.keys() - current.keys()
+>       assert {name for name in consolidated_base
+                if "".join(current[name].body.split()) !=
+                   "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+E       AssertionError: assert {'EnglishProt...Syncope', ...} == {'EnglishProt...Syncope', ...}
+E         
+E         Extra items in the left set:
+E         'PGCellEnd'
+E         Use -v to get more diff
+
+test_sc037_adjudication.py:52: AssertionError
+_ Sc112LexicalPublicationTests.test_sc112_and_authorized_later_publications_are_the_only_manifest_additions _
+
+self = <test_sc112_lexical_publication.Sc112LexicalPublicationTests testMethod=test_sc112_and_authorized_later_publications_are_the_only_manifest_additions>
+
+    def test_sc112_and_authorized_later_publications_are_the_only_manifest_additions(self):
+        path = ASSEMBLY / "manifest_all_by_class.tsv"
+        old = {row["row_id"]: row for row in table(committed(path))}
+        current = table(path.read_text())
+        now = {row["row_id"]: row for row in current}
+        self.assertEqual(len(current), len(now))
+>       self.assertEqual((len(old), len(now)), (165, 173))
+E       AssertionError: Tuples differ: (165, 175) != (165, 173)
+E       
+E       First differing element 1:
+E       175
+E       173
+E       
+E       - (165, 175)
+E       ?         ^
+E       
+E       + (165, 173)
+E       ?         ^
+
+test_sc112_lexical_publication.py:87: AssertionError
+__________ Sc112Tests.test_exact_counts_and_known_mismatch_membership __________
+
+self = <test_sc112_monosyllabic_final_r.Sc112Tests testMethod=test_exact_counts_and_known_mismatch_membership>
+
+    def test_exact_counts_and_known_mismatch_membership(self):
+>       self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 383)
+E       AssertionError: 384 != 383
+
+test_sc112_monosyllabic_final_r.py:207: AssertionError
+___________ Sc112Tests.test_expansion_preserves_original_population ____________
+
+self = <test_sc112_monosyllabic_final_r.Sc112Tests testMethod=test_expansion_preserves_original_population>
+
+    def test_expansion_preserves_original_population(self):
+        self.assertEqual(len(self.previous), 387)
+        # Filth and earthly are subsequent individually authorized admissions.
+>       self.assertEqual(len(self.current), 391)
+E       AssertionError: 392 != 391
+
+test_sc112_monosyllabic_final_r.py:194: AssertionError
+_ Sc112Tests.test_production_transducer_executes_current_population_and_controls _
+
+self = <test_sc112_monosyllabic_final_r.Sc112Tests testMethod=test_production_transducer_executes_current_population_and_controls>
+
+    @pytest.mark.runtime
+    def test_production_transducer_executes_current_population_and_controls(self):
+        self.assertEqual(check_build_manifest(
+            oe_pipeline.expected_snapshot_bins() + ["old_english.bin"], layout()
+        ), [])
+        inputs = [row["fst_input"] for row in self.current.values()]
+        result = run_in_runner(
+            "flookup -i old_english.bin",
+            input="\n".join(inputs) + "\n",
+            text=True,
+            capture_output=True,
+            check=True,
+            timeout=120,
+        )
+        outputs = {}
+        for line in result.stdout.splitlines():
+            if not line.strip():
+                continue
+            source, output = line.split("\t", 1)
+            outputs.setdefault(source, []).append(output)
+>       self.assertEqual(len(outputs), 391)
+E       AssertionError: 392 != 391
+
+test_sc112_monosyllabic_final_r.py:113: AssertionError
+_ StageResolutionAuthorityTests.test_published_manifest_stages_equal_survey_stage_assignments _
+
+self = <test_stage_resolution_authority.StageResolutionAuthorityTests testMethod=test_published_manifest_stages_equal_survey_stage_assignments>
+
+    def test_published_manifest_stages_equal_survey_stage_assignments(self):
+        survey_rows = {row["row_id"]: row for row in survey.inventory()}
+        manifest = tsv(ASSEMBLY / "manifest_all_by_class.tsv")
+>       self.assertEqual(len(manifest), 173)
+E       AssertionError: 175 != 173
+
+test_stage_resolution_authority.py:87: AssertionError
+______________ test_scientific_sources_and_archives_are_preserved ______________
+
+    def test_scientific_sources_and_archives_are_preserved():
+        paths = [
+            "Germanic/data/entry_context_metadata.tsv",
+        ]
+        for directory in (
+            "Germanic/docs/sound_changes/cascade_baseline",
+            "Germanic/docs/sound_changes/audits/sc036-experiments",
+        ):
+            archived = subprocess.check_output(
+                ["git", "ls-tree", "-r", "--name-only", BASE, directory],
+                cwd=ROOT, text=True).splitlines()
+            paths.extend(path for path in archived if (
+                "sc036-experiments/" in path or "_pre_" in path or
+                "legacy380" in path or
+                (Path(path).name.startswith("approved_") and
+                 not path.endswith("/approved_input_migrations.tsv"))))
+        for path in paths:
+            if path.endswith("/oe_equivalence_report.json"):
+                continue
+            assert (ROOT / path).read_bytes() == base_bytes(path), path
+        equivalent = json.loads((ROOT /
+            "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json").read_text())
+        assert equivalent["status"] == "equivalent"
+        # Filth and earthly are subsequent individually authorized admissions.
+>       assert equivalent["rows_compared"] == 391
+E       assert 392 == 391
+
+test_world_2302_adjudication.py:110: AssertionError
+____ test_current_migration_repeats_adopted_semantics_and_protected_outputs ____
+
+tmp_path = PosixPath('/private/var/folders/6z/xrdkc_g906b_lclrjjskmnrc0000gn/T/pytest-of-nathanhill/pytest-473/test_current_migration_repeats0')
+isolated_definitions = 'export CAPR_FOMA_DEFINITION_IMAGE=/tmp/capr_defined_nvupldba/defined.bin; '
+
+    @pytest.mark.runtime
+    def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
+            tmp_path, isolated_definitions):
+        result = run_in_runner(
+            isolated_definitions + "python3 docs/sound_changes/audits/world-2302-experiments/experiment.py"
+            " --migration",
+            text=True, capture_output=True, check=True, timeout=1800)
+        current = json.loads(result.stdout)
+        (tmp_path / "world-migration-current.json").write_text(result.stdout)
+        observed = json.loads((ASSAY / "migration.json").read_text())
+        assert current["component_results"]["OEInterStressRaising"] == (
+            observed["component_results"]["MCombined"])
+>       assert current["selected_rows"] == 391
+E       assert 392 == 391
+
+test_world_2302_adjudication.py:430: AssertionError
+__ test_index_approval_changes_only_exact_world_input_and_variety_provenance ___
+
+    def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
+        path = "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv"
+        previous = read_tsv(subprocess.check_output([
+            "git", "show", "5665e3038dab311a4803e64b0f517b03b4806b4d:" + path],
+            cwd=ROOT, text=True))
+        current = read_tsv((ROOT / path).read_text())
+        assert all(row in current for row in previous)
+        added = [row for row in current if row not in previous]
+        consolidation = [row for row in added
+                         if row["note"].startswith("SC065 syncope consolidation:")]
+        assert len(consolidation) == 10
+        added = [row for row in added if row not in consolidation]
+        earthly = [row for row in added if row["source_ref"] == "earthly — OE eorþcunde"]
+        assert len(earthly) == 4
+        added = [row for row in added if row not in earthly]
+        # The independent rainbow publication test pins these eight exact additions.
+        rainbow_refs = {
+            "rainbow — OE reġnboga",
+            "Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md",
+        }
+        rainbow = [row for row in added if row["source_ref"] in rainbow_refs]
+        assert len(rainbow) == 8
+        added = [row for row in added if row not in rainbow]
+        # The SC065 adjudication and the filth publication closeout (row 2335)
+        # pin their own rows: 3 under the volume heading ref, 8 under the model
+        # path, 2 explicit section-20 cognate tags (os/ohg).
+        filth_refs = {
+            "filth — OE fȳlþ",
+            "Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md",
+        }
+        filth = [row for row in added if row["source_ref"] in filth_refs
+                 or (row["source_ref"].endswith("reader_facing_local_section_20.md")
+                     and (row["language"], row["form"]) in {("os", "fulitha"),
+                                                            ("ohg", "fülida")})]
+        assert len(filth) == 13
+        added = [row for row in added if row not in filth]
+        four_cell_refs = (
+            "find — OE ", "hammer — OE ", "soul — OE ", "west — OE ",
+            "Germanic/docs/lexeme_reports/model_entries/2011-",
+            "Germanic/docs/lexeme_reports/model_entries/2053-",
+            "Germanic/docs/lexeme_reports/model_entries/2201-",
+            "Germanic/docs/lexeme_reports/model_entries/2282-",
+        )
+        four_cells = [row for row in added if row["source_ref"].startswith(four_cell_refs)]
+        assert len(four_cells) == 70
+        assert sum(row["action"] == "add" for row in four_cells) == 47
+        assert sum(row["action"] == "remove" for row in four_cells) == 23
+        added = [row for row in added if row not in four_cells]
+        sc037_hock_keys = {
+            ("oe", "heonan", "comparison_form"),
+            ("oe", "neoðan", "comparison_form"),
+            ("pgmc", "đura-warđaz", "source_protoform"),
+            ("goth", "daura-wards", "comparison_form"),
+            ("oe", "duru", "comparison_form"),
+            ("pgmc", "durō-", "source_protoform"),
+            ("oe", "duruweard", "comparison_form"),
+            ("oe", "reġnboga", "evidence_form"),
+            ("oe", "eorþcunde", "evidence_form"),
+            ("oe", "Sigfrið", "comparison_form"),
+            ("oe", "Hyglāc", "comparison_form"),
+            ("oe", "seleweard", "comparison_form"),
+            ("pgmc", "sali-warđaz", "source_protoform"),
+            ("pgmc", "sali-warđuz", "source_protoform"),
+            ("on", "sal-vǫrðr", "comparison_form"),
+        }
+        sc037_hock = [row for row in added if
+                      row["source_ref"] == "Germanic/docs/sound_changes/reader_facing/"
+                      "reader_facing_local_section_20.md" and
+                      (row["language"], row["form"], row["form_role"]) in sc037_hock_keys]
+        assert len(sc037_hock) == 15
+        assert {(row["language"], row["form"], row["form_role"])
+                for row in sc037_hock} == sc037_hock_keys
+        assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
+                   and not row["variety"] for row in sc037_hock)
+        added = [row for row in added if row not in sc037_hock]
+        intervention_keys = {
+            ("preoe", "ūtumist", "source_protoform"),
+            ("preoe", "ȳtymist", "source_protoform"),
+            ("oe", "ȳtmest", "evidence_form"),
+            ("preoe", "skuldihātijā", "source_protoform"),
+            ("preoe", "sċyldihǣtjā", "source_protoform"),
+            ("oe", "sċyldhǣta", "comparison_form"),
+            ("pgmc", "wiđuwōn", "source_protoform"),
+            ("oe", "widuwe", "comparison_form"),
+            ("oe", "wuduwe", "evidence_form"),
+            ("preoe", "gaduling", "source_protoform"),
+            ("oe", "gædeling", "evidence_form"),
+        }
+        intervention = [row for row in added if
+                        row["source_ref"] == "Germanic/docs/sound_changes/reader_facing/"
+                        "reader_facing_local_section_20.md" and
+                        (row["language"], row["form"], row["form_role"]) in intervention_keys]
+        assert len(intervention) == 11
+        assert {(row["language"], row["form"], row["form_role"])
+                for row in intervention} == intervention_keys
+        assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
+                   and not row["variety"] for row in intervention)
+        added = [row for row in added if row not in intervention]
+        fee = [row for row in added if row["source_ref"] in {
+            "fee — OE feoh", "Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md"}]
+        assert len(fee) == 8
+        assert sum(row["action"] == "add" for row in fee) == 7
+        assert sum(row["action"] == "remove" for row in fee) == 1
+        added = [row for row in added if row not in fee]
+>       assert len(added) == 8
+E       AssertionError: assert 30 == 8
+E        +  where 30 = len([{'action': 'add', 'form': '*wír-àldiz', 'form_role': 'selected_input', 'language': 'pgmc', ...}, {'action': 'add', 'f...': 'pgmc', ...}, {'action': 'remove', 'form': 'wír-àldu', 'form_role': 'selected_input', 'language': 'pgmc', ...}, ...])
+
+test_world_2302_adjudication.py:638: AssertionError
+=========================== short test summary info ============================
+FAILED test_anglo_frisian_experiments.py::ExperimentTests::test_live_selection_has_all_stable_ids
+FAILED test_bounded_domain_adoption.py::test_certificates_are_bound_to_the_archived_parser_closure_and_orthography
+FAILED test_bounded_domain_adoption.py::test_actual_surviving_gamma_projection_and_unchanged_selected_finals
+FAILED test_infrastructure_authorities.py::SandboxEquivalenceTests::test_equivalence_evidence_is_fresh_and_equivalent
+FAILED test_infrastructure_authorities.py::CurrentStateFingerprintTests::test_current_state_matches_cascade_baseline_summary
+FAILED test_lexical_witness_input_gate.py::test_extension_changes_only_input_grammar_not_sound_laws
+FAILED test_lexical_witness_input_gate.py::test_gate_receipt_conserves_every_preexisting_record_and_order
+FAILED test_lexical_witness_input_gate.py::test_production_gate_is_generic_and_preserves_every_old_output
+FAILED test_oe_input_context.py::InputContextTests::test_canonical_selected_input_is_separate_from_lexical_identity
+FAILED test_rainbow_2148_adoption.py::test_rainbow_is_published_once_in_both_presentations_without_reclassification
+FAILED test_registry_consolidation.py::FingerprintGuardTests::test_fingerprints_match_approved_sc015_target_transition
+FAILED test_rust_input_adoption.py::RustInputAdoptionTests::test_reader_model_ledger_and_census_agree
+FAILED test_sc032_adjudication.py::SC032AdjudicationTests::test_trace_is_fresh_and_complete
+FAILED test_sc034_adjudication.py::SC034AdjudicationTests::test_fresh_complete_trace_and_all_three_actual_applications
+FAILED test_sc035_prosody.py::test_context_lifting_preserves_the_other_segmental_rule_kernels
+FAILED test_sc035_prosody.py::test_fresh_adopted_cascade_and_phonological_components
+FAILED test_sc036_adjudication.py::test_sc036_and_separately_adjudicated_changes_remain_bounded
+FAILED test_sc037_adjudication.py::test_intervention_changes_are_exactly_source_bound
+FAILED test_sc112_lexical_publication.py::Sc112LexicalPublicationTests::test_sc112_and_authorized_later_publications_are_the_only_manifest_additions
+FAILED test_sc112_monosyllabic_final_r.py::Sc112Tests::test_exact_counts_and_known_mismatch_membership
+FAILED test_sc112_monosyllabic_final_r.py::Sc112Tests::test_expansion_preserves_original_population
+FAILED test_sc112_monosyllabic_final_r.py::Sc112Tests::test_production_transducer_executes_current_population_and_controls
+FAILED test_stage_resolution_authority.py::StageResolutionAuthorityTests::test_published_manifest_stages_equal_survey_stage_assignments
+FAILED test_world_2302_adjudication.py::test_scientific_sources_and_archives_are_preserved
+FAILED test_world_2302_adjudication.py::test_current_migration_repeats_adopted_semantics_and_protected_outputs
+FAILED test_world_2302_adjudication.py::test_index_approval_changes_only_exact_world_input_and_variety_provenance
+26 failed, 1934 passed, 5 skipped, 9781 subtests passed in 3906.58s (1:05:06)

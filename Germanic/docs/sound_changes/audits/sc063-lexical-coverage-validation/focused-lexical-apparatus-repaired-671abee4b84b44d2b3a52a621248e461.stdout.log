@@ -1,0 +1,331 @@
+.............................................................. [  8%]
+.........................................................................................................................F................F...............................................F.......F.......F.........F. [ 40%]
+......F......F........F.........F..........F..........F................. [ 50%]
+.................................................................................................................................F..................................... [ 74%]
+........................................F................................................................. [ 90%]
+....................................................................     [100%]
+=================================== FAILURES ===================================
+____ LiveSurveyTests.test_complete_population_includes_six_nonrunnable_rows ____
+
+self = <test_pgmc_reconstruction_survey.LiveSurveyTests testMethod=test_complete_population_includes_six_nonrunnable_rows>
+
+    def test_complete_population_includes_six_nonrunnable_rows(self):
+        corpus, sources, forms, reviews = survey.load()
+        self.assertEqual(len(corpus), 398)
+        self.assertEqual({row["row_id"] for row in corpus if row["runnable"] == "0"},
+                         {"1935", "1947", "1948", "1994", "2156", "2218"})
+>       self.assertEqual(sum(row["stage_basis"] == "explicit_sidecar" for row in corpus), 85)
+E       AssertionError: 86 != 85
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:3565: AssertionError
+_ LiveSurveyTests.test_source_policy_preserves_catalogue_without_cartesian_obligations _
+
+self = <test_pgmc_reconstruction_survey.LiveSurveyTests testMethod=test_source_policy_preserves_catalogue_without_cartesian_obligations>
+
+    def test_source_policy_preserves_catalogue_without_cartesian_obligations(self):
+        _, sources, _, _ = survey.load()
+        readme = (survey.ROOT / survey.DIRECTORY / "README.md").read_text(
+            encoding="utf-8")
+        self.assertIn("sources.tsv", readme)
+        self.assertIn("consultation mode", readme)
+        self.assertIn("review_targets.tsv", readme)
+        self.assertIn("Cartesian workload is obsolete", readme)
+        # Bounded source additions do not create Cartesian obligations.
+        self.assertEqual(len(sources), 99)
+        self.assertEqual(len({row["source_key"] for row in sources}), 99)
+>       self.assertEqual(sum(row["role"] != "excluded" for row in sources), 87)
+E       AssertionError: 90 != 87
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:3635: AssertionError
+_ FortyEighthAlignmentTests.test_individual_finite_rows_and_shared_denominators _
+
+self = <test_pgmc_reconstruction_survey.FortyEighthAlignmentTests testMethod=test_individual_finite_rows_and_shared_denominators>
+
+    def test_individual_finite_rows_and_shared_denominators(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (152, 108))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment48-") for p in self.members), 92)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[n]) for n in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4841: AssertionError
+_ FortySeventhAlignmentTests.test_individual_identity_and_completion_denominators _
+
+self = <test_pgmc_reconstruction_survey.FortySeventhAlignmentTests testMethod=test_individual_identity_and_completion_denominators>
+
+    def test_individual_identity_and_completion_denominators(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (174, 170))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment47-") for p in self.members), 95)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4977: AssertionError
+_ FortySixthAlignmentTests.test_all_individual_identities_and_precise_core_limits _
+
+self = <test_pgmc_reconstruction_survey.FortySixthAlignmentTests testMethod=test_all_individual_identities_and_precise_core_limits>
+
+    def test_all_individual_identities_and_precise_core_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (126, 124))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment46-") for p in self.members), 55)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5129: AssertionError
+____ FortyFifthAlignmentTests.test_individual_identities_and_bounded_limits ____
+
+self = <test_pgmc_reconstruction_survey.FortyFifthAlignmentTests testMethod=test_individual_identities_and_bounded_limits>
+
+    def test_individual_identities_and_bounded_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (174, 168))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment45-") for p in self.members), 92)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5282: AssertionError
+_ FortyFourthAlignmentTests.test_individual_identities_and_bounded_core_limits _
+
+self = <test_pgmc_reconstruction_survey.FortyFourthAlignmentTests testMethod=test_individual_identities_and_bounded_core_limits>
+
+    def test_individual_identities_and_bounded_core_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (124, 120))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment44-") for p in self.members), 56)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5410: AssertionError
+_ FortyThirdAlignmentTests.test_all_identities_have_individual_cells_without_adopting_science _
+
+self = <test_pgmc_reconstruction_survey.FortyThirdAlignmentTests testMethod=test_all_identities_have_individual_cells_without_adopting_science>
+
+    def test_all_identities_have_individual_cells_without_adopting_science(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (184, 179))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment43-") for p in self.members), 111)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5554: AssertionError
+_ FortySecondAlignmentTests.test_all_inherited_identities_are_reviewed_without_scientific_adoption _
+
+self = <test_pgmc_reconstruction_survey.FortySecondAlignmentTests testMethod=test_all_inherited_identities_are_reviewed_without_scientific_adoption>
+
+    def test_all_inherited_identities_are_reviewed_without_scientific_adoption(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (176, 172))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment42-") for p in self.members), 84)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5713: AssertionError
+_ FortyFirstAlignmentTests.test_all_inherited_identities_and_whole_row_limits_survive _
+
+self = <test_pgmc_reconstruction_survey.FortyFirstAlignmentTests testMethod=test_all_inherited_identities_and_whole_row_limits_survive>
+
+    def test_all_inherited_identities_and_whole_row_limits_survive(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (200, 194))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment41-") for p in self.members), 93)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5877: AssertionError
+_ FortiethAlignmentTests.test_every_inherited_identity_has_independent_review_and_exact_limits _
+
+self = <test_pgmc_reconstruction_survey.FortiethAlignmentTests testMethod=test_every_inherited_identity_has_independent_review_and_exact_limits>
+
+    def test_every_inherited_identity_has_independent_review_and_exact_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (131, 125))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment40-") for p in self.members), 57)
+        for row in map(str, range(2246, 2254)):
+            case = self.cases["core-" + row]
+            members = [p for p in self.members if p["row_id"] == row]
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in members})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in members})
+            self.assertEqual((case["alignment_status"], case["explanation_status"]), ("bounded_limit", "unestablished"))
+            self.assertTrue(case["alignment_limits"])
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                and survey.analytical.feature_values(p) for p in members))
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6042: AssertionError
+_ ThirtyNinthAlignmentTests.test_all_individual_identities_and_bounded_whole_row_causes _
+
+self = <test_pgmc_reconstruction_survey.ThirtyNinthAlignmentTests testMethod=test_all_individual_identities_and_bounded_whole_row_causes>
+
+    def test_all_individual_identities_and_bounded_whole_row_causes(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (122, 116))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment39-") for p in self.members), 52)
+        for row in map(str, range(2238, 2246)):
+            case = self.cases["core-" + row]
+            members = [p for p in self.members if p["row_id"] == row]
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in members})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in members})
+            self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                             ("bounded_limit", "unestablished"))
+            self.assertTrue(case["alignment_limits"])
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                and survey.analytical.feature_values(p) for p in members))
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[name]) for name in survey.analytical.TABLES),
+                         (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6217: AssertionError
+_ FortyNinthAlignmentTests.test_exact_noncontiguous_population_and_individual_positions _
+
+self = <test_pgmc_reconstruction_survey.FortyNinthAlignmentTests testMethod=test_exact_noncontiguous_population_and_individual_positions>
+
+    def test_exact_noncontiguous_population_and_individual_positions(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (182, 179))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment49-") for p in self.members), 133)
+        self.assertEqual((len(self.forms), len(self.reviews)), (6593, 1424))
+>       self.assertEqual(tuple(len(self.tables[n]) for n in survey.analytical.TABLES), (6906, 497, 1275))
+E       AssertionError: Tuples differ: (6921, 498, 1276) != (6906, 497, 1275)
+E       
+E       First differing element 0:
+E       6921
+E       6906
+E       
+E       - (6921, 498, 1276)
+E       ?    ^^    ^     ^
+E       
+E       + (6906, 497, 1275)
+E       ?    ^^    ^     ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:8984: AssertionError
+________________ IntegrationTests.test_deterministic_projection ________________
+
+self = <test_pgmc_lexical_integration.IntegrationTests testMethod=test_deterministic_projection>
+
+    def test_deterministic_projection(self):
+        first = integration.render()
+        self.assertEqual(first, integration.render())
+        self.assertEqual({p.name for p in first}, set(integration.OUTPUT_NAMES))
+        rows = list(csv.DictReader(first[ROOT / integration.DIRECTORY / "population_crosswalk.tsv"]
+                                   .splitlines(), delimiter="\t"))
+>       self.assertEqual(len(rows), 397)
+E       AssertionError: 398 != 397
+
+Germanic/tests/test_pgmc_lexical_integration.py:266: AssertionError
+=========================== short test summary info ============================
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::LiveSurveyTests::test_complete_population_includes_six_nonrunnable_rows
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::LiveSurveyTests::test_source_policy_preserves_catalogue_without_cartesian_obligations
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyEighthAlignmentTests::test_individual_finite_rows_and_shared_denominators
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySeventhAlignmentTests::test_individual_identity_and_completion_denominators
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySixthAlignmentTests::test_all_individual_identities_and_precise_core_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFifthAlignmentTests::test_individual_identities_and_bounded_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFourthAlignmentTests::test_individual_identities_and_bounded_core_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyThirdAlignmentTests::test_all_identities_have_individual_cells_without_adopting_science
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySecondAlignmentTests::test_all_inherited_identities_are_reviewed_without_scientific_adoption
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFirstAlignmentTests::test_all_inherited_identities_and_whole_row_limits_survive
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortiethAlignmentTests::test_every_inherited_identity_has_independent_review_and_exact_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ThirtyNinthAlignmentTests::test_all_individual_identities_and_bounded_whole_row_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyNinthAlignmentTests::test_exact_noncontiguous_population_and_individual_positions
+FAILED Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_deterministic_projection
+14 failed, 675 passed, 1107 subtests passed in 788.75s (0:13:08)

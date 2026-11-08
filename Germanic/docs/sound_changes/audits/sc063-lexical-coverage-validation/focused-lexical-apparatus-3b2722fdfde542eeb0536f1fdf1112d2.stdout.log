@@ -1,0 +1,1601 @@
+.................F...........................F................ [  8%]
+.F..F...........FF..................F.F...................................F...F.......F..FF..FF......F...F.....F.........F................F..F......F...................F.......F.........F.......F.......F......F.FF.....F.F. [ 41%]
+....FF........F..F......F.F........FF.........FF...........F........F... [ 51%]
+.......F.........................................................................F....F....F........... [ 66%]
+......F.........F.FF..............................FF....F....... [ 75%]
+............................F.F.F...FF..F......F. [ 83%]
+...F..F.F......................F.................................. [ 92%]
+...................................................                      [100%]
+=================================== FAILURES ===================================
+_ ReadingScopeTests.test_actual_applicability_manifests_preserve_the_full_population _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_actual_applicability_manifests_preserve_the_full_population>
+
+    def test_actual_applicability_manifests_preserve_the_full_population(self):
+        corpus, _, _, reviews = survey.load()
+        population = {row["row_id"] for row in corpus}
+        directory = survey.ROOT / survey.DIRECTORY / "reading_accountability"
+        for source, filename, field, consulted, topical_consulted in (
+            ("Ringe2017", "ringe-applicability.tsv", "disposition", "relevant_consulted",
+             set()),
+            ("Fulk2018", "fulk-applicability.tsv", "screen_disposition",
+             "screened_actual_lexical_or_family_consultation", {"2015"}),
+            ("RingeTaylor2014", "rt-applicability.tsv", "disposition",
+             "consulted_applicable", set()),
+        ):
+            rows = survey.read_table(directory / filename)
+            self.assertEqual(len(rows), 393)
+            original_population = population - {"2333", "2334", "2335", "2336"}
+>           self.assertEqual({row["row_id"] for row in rows}, original_population)
+E           AssertionError: Items in the second set but not the first:
+E           '2337'
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:452: AssertionError
+_ ReadingScopeTests.test_completed_readings_preserve_local_dates_quantity_and_cell_variants _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_completed_readings_preserve_local_dates_quantity_and_cell_variants>
+
+    def test_completed_readings_preserve_local_dates_quantity_and_cell_variants(self):
+        _, _, forms, reviews = survey.load()
+        evidence = {form["evidence_id"]: form for form in forms}
+        for key, page in (("ringe-complete-fight-pgmc", "108"),
+                          ("ringe-complete-fight-paradigm", "271")):
+            self.assertEqual(evidence[key]["diplomatic_form"], "*fehtaną")
+            self.assertEqual(evidence[key]["printed_pages"], page)
+            self.assertEqual(evidence[key]["asserted_stage"], "PGmc")
+        self.assertEqual(evidence["ringe-system-fight-wg"]["asserted_stage"], "pwgmc")
+        for cell in ("nom", "acc"):
+            name = evidence[f"ringe-complete-name-{cell}-image"]
+            self.assertEqual(name["diplomatic_form"], "namō\u0304")
+            self.assertEqual(name["printed_pages"], "312")
+            self.assertEqual(name["verification"], "page_image_checked")
+        sit = evidence["fulk-complete-sit-p43"]
+        alternative = evidence["fulk-complete-sit-e-citation"]
+        self.assertEqual((sit["diplomatic_form"], sit["asserted_stage"]),
+                         ("*sit-j-anaⁿ", "pgmc"))
+        self.assertEqual((alternative["diplomatic_form"], alternative["asserted_stage"]),
+                         ("*setjanaⁿ", "not_explicitly_dated"))
+>       self.assertEqual(sum(row["source_key"] == "Fulk2018" for row in reviews), 148)
+E       AssertionError: 149 != 148
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:435: AssertionError
+_ ReadingScopeTests.test_eighth_tranche_has_all_individual_positions_and_bounded_core_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_eighth_tranche_has_all_individual_positions_and_bounded_core_causes>
+
+    def test_eighth_tranche_has_all_individual_positions_and_bounded_core_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"]
+                   if p["row_id"] in set(map(str, range(1990, 1998)))]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})),
+                         (138, 133))
+        for row_id in map(str, range(1990, 1998)):
+            case = next(c for c in tables["comparisons"]
+                        if c["comparison_id"] == "core-" + row_id)
+            positions = [p for p in members if p["row_id"] == row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertTrue(case["alignment_limits"])
+                self.assertEqual(set(survey.ids(case["analysis_ids"])),
+                                 {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])),
+                                 {p["evidence_id"] for p in positions})
+                self.assertTrue(all(p["status"] == "reviewed"
+                                    and p["attribution_status"] != "unclear" for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:3327: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+_ ReadingScopeTests.test_eleventh_tranche_retains_individual_decisions_and_bounded_core_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_eleventh_tranche_retains_individual_decisions_and_bounded_core_causes>
+
+    def test_eleventh_tranche_retains_individual_decisions_and_bounded_core_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"] if 2014 <= int(p["row_id"]) <= 2021]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (105, 99))
+        for row_id in map(str, range(2014, 2022)):
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row_id)
+            positions = [p for p in members if p["row_id"] == row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertTrue(case["alignment_limits"])
+                self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in positions})
+                self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                    for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:2777: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuu [  9%]
+u
+_ ReadingScopeTests.test_fifteenth_tranche_individual_identities_and_bounded_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_fifteenth_tranche_individual_identities_and_bounded_causes>
+
+    def test_fifteenth_tranche_individual_identities_and_bounded_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"] if 2046 <= int(p["row_id"]) <= 2053]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (133, 129))
+        for row, inherited in zip(map(str, range(2046, 2054)), (4, 3, 9, 44, 4, 3, 12, 2)):
+            positions = [p for p in members if p["row_id"] == row]
+            retained = [p for p in positions if not p["evidence_id"].startswith("alignment-")
+                        and not p["analysis_id"].endswith("ground-nasal-paradigm-prehistory")]
+            self.assertEqual(len(retained), inherited)
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row)
+            self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                             ("bounded_limit", "unestablished"))
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in positions})
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:2262: AssertionError
+_ ReadingScopeTests.test_fifth_tranche_aligns_every_position_without_new_consultations _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_fifth_tranche_aligns_every_position_without_new_consultations>
+
+    def test_fifth_tranche_aligns_every_position_without_new_consultations(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        cases = {row["comparison_id"]: row for row in tables["comparisons"]}
+        for row_id in map(str, range(1966, 1974)):
+            members = [p for p in tables["analyses"] if p["row_id"] == row_id]
+            case = cases["core-" + row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(set(survey.ids(case["analysis_ids"])),
+                                 {p["analysis_id"] for p in members})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])),
+                                 {p["evidence_id"] for p in members})
+                self.assertTrue(all(p["attribution_status"] != "unclear" for p in members))
+                self.assertTrue(all(survey.analytical.feature_values(p) for p in members))
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertTrue(case["alignment_limits"])
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:1151: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+_ ReadingScopeTests.test_fourteenth_tranche_individual_identities_and_bounded_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_fourteenth_tranche_individual_identities_and_bounded_causes>
+
+    def test_fourteenth_tranche_individual_identities_and_bounded_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"] if 2038 <= int(p["row_id"]) <= 2045]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (180, 171))
+        for row in map(str, range(2038, 2046)):
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row)
+            positions = [p for p in members if p["row_id"] == row]
+            self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                             ("bounded_limit", "unestablished"))
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in positions})
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:2448: AssertionError
+_ ReadingScopeTests.test_fourth_tranche_reconciles_all_inherited_and_added_units _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_fourth_tranche_reconciles_all_inherited_and_added_units>
+
+    def test_fourth_tranche_reconciles_all_inherited_and_added_units(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        cases = {row["comparison_id"]: row for row in tables["comparisons"]}
+        for row_id in map(str, range(1958, 1966)):
+            members = [row for row in tables["analyses"] if row["row_id"] == row_id]
+            case = cases["core-" + row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(set(survey.ids(case["analysis_ids"])),
+                                 {row["analysis_id"] for row in members})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])),
+                                 {row["evidence_id"] for row in members})
+                self.assertEqual(len(survey.ids(case["alignment_evidence_ids"])),
+                                 len({row["evidence_id"] for row in members}))
+                self.assertTrue(all(row["attribution_status"] != "unclear" for row in members))
+                self.assertTrue(all(survey.analytical.feature_values(row) for row in members))
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertTrue(case["alignment_limits"])
+>       self.assertEqual(sum(row["scope"] == "core_triage" and
+                             row["alignment_status"] == "bounded_limit"
+                             for row in tables["comparisons"]), 397)
+E       AssertionError: 398 != 397
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:983: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+___ ReadingScopeTests.test_live_dispatch_is_valid_but_not_completed_research ___
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_live_dispatch_is_valid_but_not_completed_research>
+
+    def test_live_dispatch_is_valid_but_not_completed_research(self):
+        corpus, sources, forms, reviews = survey.load()
+        targets = survey.read_table(
+            survey.ROOT / survey.DIRECTORY / "review_targets.tsv", survey.TARGET_COLUMNS)
+        scopes = survey.load_scopes(survey.ROOT, corpus, sources, forms, targets)
+        for source, expected in (("Ringe2017", 6), ("Fulk2018", 9)):
+            completed = [scope for scope in scopes if scope["source_key"] == source]
+            self.assertEqual(len(completed), expected)
+            self.assertTrue(all(scope["status"] == "reviewed" for scope in completed))
+        self.assertEqual({scope["source_key"] for scope in scopes
+                          if scope["status"] != "reviewed"}, {"RingeTaylor2014"})
+        rt_scopes = [scope for scope in scopes if scope["source_key"] == "RingeTaylor2014"]
+        self.assertEqual(len(rt_scopes), 7)
+        self.assertEqual([scope["scope_id"] for scope in rt_scopes
+                          if scope["status"] != "reviewed"], ["rt-conventions"])
+        self.assertEqual(next(scope for scope in rt_scopes
+                              if scope["scope_id"] == "rt-conventions")["status"],
+                         "verification_gap")
+        bounded_earthly = {"Campbell1959", "Toller1921", "HoggGrammar2011",
+                          "Hogg1996", "Goering2023"}
+        self.assertEqual({scope["source_key"] for scope in scopes},
+                         set(survey.READING_SOURCES) | bounded_earthly)
+        self.assertTrue(all(scope["status"] == "reviewed" for scope in scopes
+                            if scope["source_key"] in bounded_earthly))
+        with self.assertRaisesRegex(survey.SurveyError, "INCOMPLETE"):
+            survey.require_reading_complete(corpus, sources, scopes, forms, targets, reviews)
+>       self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
+                             for review in reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:383: AssertionError
+_ ReadingScopeTests.test_ninth_tranche_retains_all_members_and_bounded_whole_row_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_ninth_tranche_retains_all_members_and_bounded_whole_row_causes>
+
+    def test_ninth_tranche_retains_all_members_and_bounded_whole_row_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"]
+                   if 1998 <= int(p["row_id"]) <= 2005]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (176, 172))
+        for row_id in map(str, range(1998, 2006)):
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row_id)
+            positions = [p for p in members if p["row_id"] == row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertTrue(case["alignment_limits"])
+                self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in positions})
+                self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                    for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:3173: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+_ ReadingScopeTests.test_scope_query_separates_scheduling_from_actual_consultations _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_scope_query_separates_scheduling_from_actual_consultations>
+
+    def test_scope_query_separates_scheduling_from_actual_consultations(self):
+        corpus, sources, forms, reviews = survey.load()
+        targets = survey.read_table(
+            survey.ROOT / survey.DIRECTORY / "review_targets.tsv", survey.TARGET_COLUMNS)
+        scopes = survey.load_scopes(survey.ROOT, corpus, sources, forms, targets)
+        analysis = survey.load_analysis(survey.ROOT, corpus, forms)
+        tables = {
+            "corpus": (tuple(corpus[0]), corpus),
+            "sources": (survey.SOURCE_COLUMNS, sources),
+            "forms": (survey.FORM_COLUMNS, forms),
+            "reviews": (survey.REVIEW_COLUMNS, reviews),
+            "targets": (survey.TARGET_COLUMNS, targets),
+            "reading_scopes": (survey.SCOPE_COLUMNS, scopes),
+            **{name: (survey.analytical.TABLES[name], rows) for name, rows in analysis.items()},
+        }
+        result = survey.analytical.query(tables, """
+            SELECT (SELECT count(*) FROM scope_rows
+                    WHERE scope_id='ringe-corpus-screen') AS scheduled_rows,
+                   (SELECT count(*) FROM reviews
+                    WHERE source_key='Ringe2017') AS actual_reviews
+        """)
+>       self.assertEqual(result, "scheduled_rows\tactual_reviews\n397\t193\n")
+E       AssertionError: 'scheduled_rows\tactual_reviews\n398\t193\n' != 'scheduled_rows\tactual_reviews\n397\t193\n'
+E         scheduled_rows	actual_reviews
+E       - 398	193
+E       ?   ^
+E       + 397	193
+E       ?   ^
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:407: AssertionError
+_ ReadingScopeTests.test_seventeenth_tranche_individual_identities_and_independent_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_seventeenth_tranche_individual_identities_and_independent_causes>
+
+    def test_seventeenth_tranche_individual_identities_and_independent_causes(self):
+        corpus, sources, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        rows = set(map(str, range(2062, 2070)))
+        members = [p for p in tables["analyses"] if p["row_id"] in rows]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (153, 149))
+        inherited = [p for p in members if not p["evidence_id"].startswith("alignment-")
+                     and not p["analysis_id"].endswith("-head-root-variation-history")]
+        self.assertEqual(len(inherited), 101)
+        cases = {c["comparison_id"]: c for c in tables["comparisons"]}
+        for row in rows:
+            case = cases["core-" + row]
+            positions = [p for p in members if p["row_id"] == row]
+            with self.subTest(row=row):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in positions})
+                self.assertTrue(case["alignment_limits"])
+                self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                    for p in positions))
+        self.assertEqual(cases["head-root-variation-history"]["explanation_status"], "unestablished")
+        hearth = cases["hearth-comparative-derivation-warrant"]
+        self.assertEqual((hearth["comparability"], hearth["explanation_status"]),
+                         ("substantive_difference", "analyst_inference"))
+        reason = next(r for r in tables["rationales"] if r["rationale_id"] == "r-hearth-comparative-derivation-warrant")
+        self.assertEqual((reason["reason_target"], reason["support_mode"]),
+                         ("divergence_explanation", "analyst_inference"))
+        self.assertIn("No directly named rebuttal", reason["statement"])
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:1898: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+_ ReadingScopeTests.test_seventh_tranche_aligns_every_position_without_settling_core_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_seventh_tranche_aligns_every_position_without_settling_core_causes>
+
+    def test_seventh_tranche_aligns_every_position_without_settling_core_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"]
+                   if p["row_id"] in set(map(str, range(1982, 1990)))]
+        self.assertEqual(len(members), 153)
+        self.assertEqual(len({p["evidence_id"] for p in members}), 149)
+        cases = {c["comparison_id"]: c for c in tables["comparisons"]}
+        for row_id in map(str, range(1982, 1990)):
+            positions = [p for p in members if p["row_id"] == row_id]
+            case = cases["core-" + row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertTrue(case["alignment_limits"])
+                self.assertEqual(set(survey.ids(case["analysis_ids"])),
+                                 {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])),
+                                 {p["evidence_id"] for p in positions})
+                self.assertTrue(all(p["status"] == "reviewed"
+                                    and p["attribution_status"] != "unclear" for p in positions))
+        self.assertEqual(sum(r["source_key"] == "Ringe2017" for r in reviews), 193)
+>       self.assertEqual(sum(r["source_key"] == "Fulk2018" for r in reviews), 148)
+E       AssertionError: 149 != 148
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:1537: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+_ ReadingScopeTests.test_sixteenth_tranche_identities_receipts_and_bounded_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_sixteenth_tranche_identities_receipts_and_bounded_causes>
+
+    def test_sixteenth_tranche_identities_receipts_and_bounded_causes(self):
+        import hashlib
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"] if 2054 <= int(p["row_id"]) <= 2061]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (175, 170))
+        for row, inherited in zip(map(str, range(2054, 2062)), (14, 11, 2, 10, 32, 7, 13, 27)):
+            positions = [p for p in members if p["row_id"] == row]
+            retained = [p for p in positions if not p["evidence_id"].startswith("alignment-")]
+            self.assertEqual(len(retained), inherited)
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row)
+            self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                             ("bounded_limit", "unestablished"))
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in positions})
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                for p in positions))
+        directory = survey.ROOT / survey.DIRECTORY / "reading_accountability"
+        receipts = survey.read_table(directory / "alignment-2054-2061-occurrences.tsv")
+        self.assertEqual(len(receipts), 41)
+        amendments = survey.read_table(directory / "alignment-2054-2061-amendments.tsv")
+        self.assertEqual(len(amendments), 13)
+        evidence = {f["evidence_id"]: f for f in forms}
+        for receipt in receipts:
+            record = evidence[receipt["evidence_id"]]
+            text = (survey.ROOT / record["basis"]).read_text()
+            if receipt["holding_sheet"]:
+                sheet = int(receipt["holding_sheet"])
+                marker = (rf"### PAGE {sheet}\s*\n" if receipt["source_key"] == "RingeTaylor2014"
+                          else rf"=== page {sheet:03d} ===\s*\n")
+                block = re.split(marker, text, maxsplit=1)[1]
+                block = re.split(r"### PAGE \d+|=== page \d+ ===", block, maxsplit=1)[0]
+                paragraph = [p.strip() for p in re.split(r"\n\s*\n", block)
+                             if p.strip()][int(receipt["paragraph"]) - 1]
+            else:
+                start = text.index(receipt["begin_anchor"])
+                end = text.index(receipt["end_anchor"], start) + len(receipt["end_anchor"])
+                paragraph = text[start:end]
+            self.assertEqual(paragraph, receipt["paragraph_text"])
+            self.assertEqual(hashlib.sha256(paragraph.encode()).hexdigest(), receipt["paragraph_sha256"])
+            start, end = int(receipt["start_char"]), int(receipt["end_char"])
+            self.assertEqual(paragraph[start:end], record["diplomatic_form"])
+            self.assertEqual((record["printed_pages"], record["verification"]),
+                             (receipt["printed_pages"], "text_checked"))
+        for amendment in amendments:
+            self.assertEqual(evidence[amendment["evidence_id"]][amendment["field"]], amendment["new_value"])
+            self.assertTrue(amendment["source_basis"])
+        owners = survey.read_table(directory / "alignment-2054-2061-consultation-amendments.tsv")
+        self.assertEqual([(r["row_id"], r["source_key"], r["field"], r["old_value"], r["new_value"])
+                          for r in owners], [("2061", "Fulk2018", "status", "discussion_only", "evidence_found")])
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:2146: AssertionError
+_ ReadingScopeTests.test_sixth_tranche_aligns_all_positions_and_preserves_actual_reviews _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_sixth_tranche_aligns_all_positions_and_preserves_actual_reviews>
+
+    def test_sixth_tranche_aligns_all_positions_and_preserves_actual_reviews(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        cases = {c["comparison_id"]: c for c in tables["comparisons"]}
+        members = [p for p in tables["analyses"] if p["row_id"] in set(map(str, range(1974, 1982)))]
+        self.assertEqual(len(members), 131)
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:1312: AssertionError
+_ ReadingScopeTests.test_tenth_tranche_retains_all_individual_decisions_and_scoped_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_tenth_tranche_retains_all_individual_decisions_and_scoped_causes>
+
+    def test_tenth_tranche_retains_all_individual_decisions_and_scoped_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"] if 2006 <= int(p["row_id"]) <= 2013]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (149, 143))
+        for row_id in map(str, range(2006, 2014)):
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row_id)
+            positions = [p for p in members if p["row_id"] == row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual(case["alignment_status"], "bounded_limit")
+                self.assertEqual(case["explanation_status"], "unestablished")
+                self.assertTrue(case["alignment_limits"])
+                self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in positions})
+                self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                    for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:2993: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+_ ReadingScopeTests.test_thirteenth_tranche_individual_decisions_and_independent_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_thirteenth_tranche_individual_decisions_and_independent_causes>
+
+    def test_thirteenth_tranche_individual_decisions_and_independent_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"] if 2030 <= int(p["row_id"]) <= 2037]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (131, 126))
+        for row_id in map(str, range(2030, 2038)):
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row_id)
+            positions = [p for p in members if p["row_id"] == row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                                 ("bounded_limit", "unestablished"))
+                self.assertTrue(case["alignment_limits"])
+                self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])),
+                                 {p["evidence_id"] for p in positions})
+                self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                    for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:2606: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+_ ReadingScopeTests.test_twelfth_tranche_retains_individual_decisions_and_bounded_core_causes _
+
+self = <test_pgmc_reconstruction_survey.ReadingScopeTests testMethod=test_twelfth_tranche_retains_individual_decisions_and_bounded_core_causes>
+
+    def test_twelfth_tranche_retains_individual_decisions_and_bounded_core_causes(self):
+        corpus, _, forms, reviews = survey.load()
+        tables = survey.load_analysis(survey.ROOT, corpus, forms)
+        members = [p for p in tables["analyses"] if 2022 <= int(p["row_id"]) <= 2029]
+        self.assertEqual((len(members), len({p["evidence_id"] for p in members})), (129, 125))
+        for row_id in map(str, range(2022, 2030)):
+            case = next(c for c in tables["comparisons"] if c["comparison_id"] == "core-" + row_id)
+            positions = [p for p in members if p["row_id"] == row_id]
+            with self.subTest(row_id=row_id):
+                self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                                 ("bounded_limit", "unestablished"))
+                self.assertTrue(case["alignment_limits"])
+                self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in positions})
+                self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])),
+                                 {p["evidence_id"] for p in positions})
+                self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                    for p in positions))
+>       self.assertEqual(len(reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:1705: AssertionError
+----------------------------- Captured stdout call -----------------------------
+uuuuuuuu
+____ LiveSurveyTests.test_complete_population_includes_six_nonrunnable_rows ____
+
+self = <test_pgmc_reconstruction_survey.LiveSurveyTests testMethod=test_complete_population_includes_six_nonrunnable_rows>
+
+    def test_complete_population_includes_six_nonrunnable_rows(self):
+        corpus, sources, forms, reviews = survey.load()
+>       self.assertEqual(len(corpus), 397)
+E       AssertionError: 398 != 397
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:3562: AssertionError
+_ LiveSurveyTests.test_source_policy_preserves_catalogue_without_cartesian_obligations _
+
+self = <test_pgmc_reconstruction_survey.LiveSurveyTests testMethod=test_source_policy_preserves_catalogue_without_cartesian_obligations>
+
+    def test_source_policy_preserves_catalogue_without_cartesian_obligations(self):
+        _, sources, _, _ = survey.load()
+        readme = (survey.ROOT / survey.DIRECTORY / "README.md").read_text(
+            encoding="utf-8")
+        self.assertIn("sources.tsv", readme)
+        self.assertIn("consultation mode", readme)
+        self.assertIn("review_targets.tsv", readme)
+        self.assertIn("Cartesian workload is obsolete", readme)
+        # Bounded source additions do not create Cartesian obligations.
+>       self.assertEqual(len(sources), 96)
+E       AssertionError: 99 != 96
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:3633: AssertionError
+_ EighteenthAlignmentTests.test_existing_consultation_status_changes_have_exact_owners _
+
+self = <test_pgmc_reconstruction_survey.EighteenthAlignmentTests testMethod=test_existing_consultation_status_changes_have_exact_owners>
+
+    def test_existing_consultation_status_changes_have_exact_owners(self):
+        receipts = survey.read_table(self.directory / "alignment-2070-2077-owner-amendments.tsv")
+        self.assertEqual(len(receipts), 2)
+        self.assertEqual({r["identity"] for r in receipts}, {"2071:Fulk2018", "2074:Fulk2018"})
+        for receipt in receipts:
+            row, source = receipt["identity"].split(":")
+            review = next(r for r in self.reviews if (r["row_id"], r["source_key"]) == (row, source))
+            self.assertEqual((receipt["old_value"], review["status"], receipt["new_value"]),
+                             ("discussion_only", "evidence_found", "evidence_found"))
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4097: AssertionError
+_ NineteenthAlignmentTests.test_actual_existing_knee_consultation_status_receipt _
+
+self = <test_pgmc_reconstruction_survey.NineteenthAlignmentTests testMethod=test_actual_existing_knee_consultation_status_receipt>
+
+    def test_actual_existing_knee_consultation_status_receipt(self):
+        receipts = survey.read_table(self.directory / "alignment-2078-2085-owner-amendments.tsv")
+        self.assertEqual(len(receipts), 1)
+        self.assertEqual((receipts[0]["owner"], receipts[0]["identity"], receipts[0]["field"]),
+                         ("coverage.tsv", "2085:Fulk2018", "status"))
+        review = next(r for r in self.reviews if (r["row_id"], r["source_key"]) == ("2085", "Fulk2018"))
+        self.assertEqual((receipts[0]["old_value"], receipts[0]["new_value"], review["status"]),
+                         ("discussion_only", "evidence_found", "evidence_found"))
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4305: AssertionError
+_ TwentyFirstAlignmentTests.test_existing_fulk_status_upgrades_do_not_invent_consultations _
+
+self = <test_pgmc_reconstruction_survey.TwentyFirstAlignmentTests testMethod=test_existing_fulk_status_upgrades_do_not_invent_consultations>
+
+    def test_existing_fulk_status_upgrades_do_not_invent_consultations(self):
+        receipts = survey.read_table(self.directory / "alignment-2094-2101-owner-amendments.tsv")
+        self.assertEqual(len(receipts), 2)
+        for receipt in receipts:
+            source, row = receipt["identity"].split(":")
+            review = next(r for r in self.reviews if (r["row_id"], r["source_key"]) == (row, source))
+            self.assertEqual((receipt["old_value"], receipt["new_value"], review["status"]),
+                             ("discussion_only", "evidence_found", "evidence_found"))
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4645: AssertionError
+_ TwentySecondAlignmentTests.test_attestations_do_not_manufacture_reconstructions_or_new_consultations _
+
+self = <test_pgmc_reconstruction_survey.TwentySecondAlignmentTests testMethod=test_attestations_do_not_manufacture_reconstructions_or_new_consultations>
+
+    def test_attestations_do_not_manufacture_reconstructions_or_new_consultations(self):
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4806: AssertionError
+_ FortyEighthAlignmentTests.test_individual_finite_rows_and_shared_denominators _
+
+self = <test_pgmc_reconstruction_survey.FortyEighthAlignmentTests testMethod=test_individual_finite_rows_and_shared_denominators>
+
+    def test_individual_finite_rows_and_shared_denominators(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (152, 108))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment48-") for p in self.members), 92)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4840: AssertionError
+_ FortySeventhAlignmentTests.test_individual_identity_and_completion_denominators _
+
+self = <test_pgmc_reconstruction_survey.FortySeventhAlignmentTests testMethod=test_individual_identity_and_completion_denominators>
+
+    def test_individual_identity_and_completion_denominators(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (174, 170))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment47-") for p in self.members), 95)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:4976: AssertionError
+_ FortySixthAlignmentTests.test_all_individual_identities_and_precise_core_limits _
+
+self = <test_pgmc_reconstruction_survey.FortySixthAlignmentTests testMethod=test_all_individual_identities_and_precise_core_limits>
+
+    def test_all_individual_identities_and_precise_core_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (126, 124))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment46-") for p in self.members), 55)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5128: AssertionError
+_ FortySixthAlignmentTests.test_word_conditional_laryngeal_and_dictionary_preservation _
+
+self = <test_pgmc_reconstruction_survey.FortySixthAlignmentTests testMethod=test_word_conditional_laryngeal_and_dictionary_preservation>
+
+    def test_word_conditional_laryngeal_and_dictionary_preservation(self):
+        p = self.position("2301", "alignment46-word-kroonen-ancestor")
+        self.assertEqual((p["attribution_status"], p["stage_basis"]), ("conditional", "unknown"))
+        self.assertEqual(self.position("2301", "ringe-complete-word")["stage_interpretation"], "pgmc")
+        self.assertIn("fate separate", self.evidence["alignment46-word-kroonen-laryngeal"]["argument"])
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5261: AssertionError
+_ FortyFifthAlignmentTests.test_focused_warrants_do_not_claim_exclusive_opposition_or_cause _
+
+self = <test_pgmc_reconstruction_survey.FortyFifthAlignmentTests testMethod=test_focused_warrants_do_not_claim_exclusive_opposition_or_cause>
+
+    def test_focused_warrants_do_not_claim_exclusive_opposition_or_cause(self):
+        reasons = [r for r in self.tables["rationales"] if r["rationale_id"].startswith("r45-")]
+        self.assertEqual(len(reasons), 34)
+        self.assertEqual({r["reason_target"] for r in reasons}, {"position_support"})
+        for cid in ("will-past-formation-warrants", "will-anglian-warrants"):
+            self.assertEqual((self.cases[cid]["comparability"], self.cases[cid]["explanation_status"]),
+                             ("substantive_difference", "unestablished"))
+        self.assertIn("possible choose mixture", self.evidence["alignment45-will-fulk-anglian-warrant"]["argument"])
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5389: AssertionError
+____ FortyFifthAlignmentTests.test_individual_identities_and_bounded_limits ____
+
+self = <test_pgmc_reconstruction_survey.FortyFifthAlignmentTests testMethod=test_individual_identities_and_bounded_limits>
+
+    def test_individual_identities_and_bounded_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (174, 168))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment45-") for p in self.members), 92)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5281: AssertionError
+_ FortyFourthAlignmentTests.test_actual_fulk_weapon_plural_and_reversible_owner _
+
+self = <test_pgmc_reconstruction_survey.FortyFourthAlignmentTests testMethod=test_actual_fulk_weapon_plural_and_reversible_owner>
+
+    def test_actual_fulk_weapon_plural_and_reversible_owner(self):
+        owners = survey.read_table(self.directory / "alignment-2278-2285-owner-amendments.tsv")
+        self.assertEqual(len(owners), 1)
+        self.assertEqual(tuple(owners[0][k] for k in
+                               ("row_id", "source_key", "field", "old_value", "new_value", "printed_pages")),
+                         ("2278", "Fulk2018", "status", "discussion_only", "evidence_found", "93"))
+        self.assertEqual(next(r for r in self.reviews if (r["row_id"], r["source_key"]) ==
+                              ("2278", "Fulk2018"))["status"], "evidence_found")
+        f = self.evidence["alignment44-weapon-fulk-plural"]
+        self.assertEqual((f["diplomatic_form"], f["printed_pages"]), ("*wēpnu", "93"))
+        p = self.position("2278", f["evidence_id"])
+        self.assertEqual((p["stage_interpretation"], p["stage_basis"]), ("unspecified", "unknown"))
+        self.assertIn("Nuclearization", self.evidence["fulk-complete-weapon-metre"]["argument"])
+        self.assertEqual(self.position("2278", "alignment44-weapon-fulk-facen")["relation_to_row"], "comparandum")
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5500: AssertionError
+_ FortyFourthAlignmentTests.test_individual_identities_and_bounded_core_limits _
+
+self = <test_pgmc_reconstruction_survey.FortyFourthAlignmentTests testMethod=test_individual_identities_and_bounded_core_limits>
+
+    def test_individual_identities_and_bounded_core_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (124, 120))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment44-") for p in self.members), 56)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5409: AssertionError
+_ FortyThirdAlignmentTests.test_actual_wash_quotation_has_one_reversible_status_upgrade _
+
+self = <test_pgmc_reconstruction_survey.FortyThirdAlignmentTests testMethod=test_actual_wash_quotation_has_one_reversible_status_upgrade>
+
+    def test_actual_wash_quotation_has_one_reversible_status_upgrade(self):
+        owners = survey.read_table(self.directory / "alignment-2270-2277-owner-amendments.tsv")
+        self.assertEqual(len(owners), 1)
+        self.assertEqual(tuple(owners[0][k] for k in
+                               ("row_id", "source_key", "field", "old_value", "new_value", "printed_pages")),
+                         ("2272", "Fulk2018", "status", "discussion_only", "evidence_found", "249"))
+        self.assertEqual(next(r for r in self.reviews if (r["row_id"], r["source_key"]) ==
+                              ("2272", "Fulk2018"))["status"], "evidence_found")
+        f = self.evidence["alignment43-wash-fulk-pgmc"]
+        self.assertEqual((f["diplomatic_form"], f["printed_pages"]), ('*waskana"', "249"))
+        self.assertIn("Bammesberger", f["quoted_author"])
+        self.assertEqual(self.position("2272", f["evidence_id"])["attribution_status"], "reported")
+        self.assertEqual(self.position("2272", "alignment43-wash-fulk-base")["stage_interpretation"], "pie")
+        self.assertIn("schwa secundum", self.evidence["alignment43-wash-fulk-derivation"]["argument"])
+        for row in ("2272", "2274"):
+            self.assertEqual(self.position(row, "fulk-complete-wash-water-proposal")["attribution_status"], "reported")
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5652: AssertionError
+_ FortyThirdAlignmentTests.test_all_identities_have_individual_cells_without_adopting_science _
+
+self = <test_pgmc_reconstruction_survey.FortyThirdAlignmentTests testMethod=test_all_identities_have_individual_cells_without_adopting_science>
+
+    def test_all_identities_have_individual_cells_without_adopting_science(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (184, 179))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment43-") for p in self.members), 111)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5553: AssertionError
+_ FortySecondAlignmentTests.test_all_inherited_identities_are_reviewed_without_scientific_adoption _
+
+self = <test_pgmc_reconstruction_survey.FortySecondAlignmentTests testMethod=test_all_inherited_identities_are_reviewed_without_scientific_adoption>
+
+    def test_all_inherited_identities_are_reviewed_without_scientific_adoption(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (176, 172))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment42-") for p in self.members), 84)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5712: AssertionError
+_ FortySecondAlignmentTests.test_reversible_annotation_receipts_preserve_certification_and_shared_source _
+
+self = <test_pgmc_reconstruction_survey.FortySecondAlignmentTests testMethod=test_reversible_annotation_receipts_preserve_certification_and_shared_source>
+
+    def test_reversible_annotation_receipts_preserve_certification_and_shared_source(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2262-2269-amendments.tsv")
+        self.assertEqual((len(receipts), len({(r["evidence_id"], r["field"]) for r in receipts})), (99, 99))
+        self.assertEqual(Counter(r["field"] for r in receipts), dict(cell=83, asserted_stage=10, argument=6))
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["printed_pages"] and r["source_basis"])
+        self.assertFalse(any(r["field"] in ("confidence", "verification", "diplomatic_form", "row_ids")
+                             or r["evidence_id"] == "kroonen-core-2270-1" for r in receipts))
+        self.assertFalse((self.directory / "alignment-2262-2269-owner-amendments.tsv").exists())
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5740: AssertionError
+_ FortyFirstAlignmentTests.test_all_inherited_identities_and_whole_row_limits_survive _
+
+self = <test_pgmc_reconstruction_survey.FortyFirstAlignmentTests testMethod=test_all_inherited_identities_and_whole_row_limits_survive>
+
+    def test_all_inherited_identities_and_whole_row_limits_survive(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (200, 194))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment41-") for p in self.members), 93)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5876: AssertionError
+_ FortyFirstAlignmentTests.test_exact_receipts_do_not_change_scientific_or_certification_fields _
+
+self = <test_pgmc_reconstruction_survey.FortyFirstAlignmentTests testMethod=test_exact_receipts_do_not_change_scientific_or_certification_fields>
+
+    def test_exact_receipts_do_not_change_scientific_or_certification_fields(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2254-2261-amendments.tsv")
+        self.assertEqual((len(receipts), len({(r["evidence_id"], r["field"]) for r in receipts})), (89, 89))
+        self.assertEqual(Counter(r["field"] for r in receipts), dict(cell=87, asserted_stage=2))
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["printed_pages"] and r["source_basis"])
+        self.assertFalse(any(r["field"] in ("confidence", "verification", "diplomatic_form", "row_ids") for r in receipts))
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:5899: AssertionError
+_ FortiethAlignmentTests.test_every_inherited_identity_has_independent_review_and_exact_limits _
+
+self = <test_pgmc_reconstruction_survey.FortiethAlignmentTests testMethod=test_every_inherited_identity_has_independent_review_and_exact_limits>
+
+    def test_every_inherited_identity_has_independent_review_and_exact_limits(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (131, 125))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment40-") for p in self.members), 57)
+        for row in map(str, range(2246, 2254)):
+            case = self.cases["core-" + row]
+            members = [p for p in self.members if p["row_id"] == row]
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in members})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in members})
+            self.assertEqual((case["alignment_status"], case["explanation_status"]), ("bounded_limit", "unestablished"))
+            self.assertTrue(case["alignment_limits"])
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                and survey.analytical.feature_values(p) for p in members))
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6041: AssertionError
+_ FortiethAlignmentTests.test_exact_source_receipts_preserve_certification_and_shared_owners _
+
+self = <test_pgmc_reconstruction_survey.FortiethAlignmentTests testMethod=test_exact_source_receipts_preserve_certification_and_shared_owners>
+
+    def test_exact_source_receipts_preserve_certification_and_shared_owners(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2246-2253-amendments.tsv")
+        self.assertEqual((len(receipts), len({(r["evidence_id"], r["field"]) for r in receipts})), (56, 56))
+        self.assertEqual(Counter(r["field"] for r in receipts), dict(cell=53, asserted_stage=3))
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["printed_pages"] and r["source_basis"])
+        self.assertFalse(any(r["field"] in ("confidence", "verification", "row_ids", "diplomatic_form")
+                             for r in receipts))
+        self.assertFalse(any(r["evidence_id"] in ("kroonen-core-2248-1", "ringe-complete-think",
+                                                 "ringe-complete-thought-participle") for r in receipts))
+        self.assertEqual(self.evidence["kroonen-core-2248-1"]["row_ids"], "2248;2330")
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6059: AssertionError
+_ ThirtyNinthAlignmentTests.test_all_individual_identities_and_bounded_whole_row_causes _
+
+self = <test_pgmc_reconstruction_survey.ThirtyNinthAlignmentTests testMethod=test_all_individual_identities_and_bounded_whole_row_causes>
+
+    def test_all_individual_identities_and_bounded_whole_row_causes(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (122, 116))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment39-") for p in self.members), 52)
+        for row in map(str, range(2238, 2246)):
+            case = self.cases["core-" + row]
+            members = [p for p in self.members if p["row_id"] == row]
+            self.assertEqual(set(survey.ids(case["analysis_ids"])), {p["analysis_id"] for p in members})
+            self.assertEqual(set(survey.ids(case["alignment_evidence_ids"])), {p["evidence_id"] for p in members})
+            self.assertEqual((case["alignment_status"], case["explanation_status"]),
+                             ("bounded_limit", "unestablished"))
+            self.assertTrue(case["alignment_limits"])
+            self.assertTrue(all(p["status"] == "reviewed" and p["attribution_status"] != "unclear"
+                                and survey.analytical.feature_values(p) for p in members))
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6216: AssertionError
+_ ThirtyNinthAlignmentTests.test_exact_reversible_receipts_and_unchanged_consultation_owners _
+
+self = <test_pgmc_reconstruction_survey.ThirtyNinthAlignmentTests testMethod=test_exact_reversible_receipts_and_unchanged_consultation_owners>
+
+    def test_exact_reversible_receipts_and_unchanged_consultation_owners(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2238-2245-amendments.tsv")
+        self.assertEqual(len(receipts), 60)
+        self.assertEqual(Counter(r["field"] for r in receipts),
+                         dict(cell=52, argument=3, asserted_stage=2, form_kind=1,
+                              diplomatic_form=1, comparison_form=1))
+        self.assertEqual(len({(r["evidence_id"], r["field"]) for r in receipts}), 60)
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["printed_pages"] and r["source_basis"])
+        self.assertFalse((self.directory / "alignment-2238-2245-owner-amendments.tsv").exists())
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6234: AssertionError
+_ ThirtyEighthAlignmentTests.test_exact_receipts_without_glyph_confidence_or_owner_repairs _
+
+self = <test_pgmc_reconstruction_survey.ThirtyEighthAlignmentTests testMethod=test_exact_receipts_without_glyph_confidence_or_owner_repairs>
+
+    def test_exact_receipts_without_glyph_confidence_or_owner_repairs(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2230-2237-amendments.tsv")
+        self.assertEqual(len(receipts), 53)
+        self.assertEqual(Counter(r["field"] for r in receipts),
+                         dict(cell=49, asserted_stage=3, printed_pages=1))
+        self.assertEqual(len({(r["evidence_id"], r["field"]) for r in receipts}), 53)
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["printed_pages"] and r["source_basis"])
+        self.assertFalse((self.directory / "alignment-2230-2237-owner-amendments.tsv").exists())
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6424: AssertionError
+_ ThirtySeventhAlignmentTests.test_exact_receipts_preserve_diplomatic_confidence_and_verification _
+
+self = <test_pgmc_reconstruction_survey.ThirtySeventhAlignmentTests testMethod=test_exact_receipts_preserve_diplomatic_confidence_and_verification>
+
+    def test_exact_receipts_preserve_diplomatic_confidence_and_verification(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2222-2229-amendments.tsv")
+        self.assertEqual(len(receipts), 93)
+        self.assertEqual(Counter(r["field"] for r in receipts),
+                         dict(cell=82, asserted_stage=10, form_kind=1))
+        self.assertEqual(len({(r["evidence_id"], r["field"]) for r in receipts}), 93)
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["printed_pages"] and r["source_basis"])
+        self.assertFalse((self.directory / "alignment-2222-2229-owner-amendments.tsv").exists())
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6592: AssertionError
+________ ThirtySixthAlignmentTests.test_exact_source_and_owner_receipts ________
+
+self = <test_pgmc_reconstruction_survey.ThirtySixthAlignmentTests testMethod=test_exact_source_and_owner_receipts>
+
+    def test_exact_source_and_owner_receipts(self):
+        from collections import Counter
+        receipts = survey.read_table(self.directory / "alignment-2214-2221-amendments.tsv")
+        self.assertEqual(len(receipts), 45)
+        self.assertEqual(Counter(r["field"] for r in receipts),
+                         dict(cell=39, asserted_stage=3, argument=2, quoted_author=1))
+        self.assertEqual(len({(r["evidence_id"], r["field"]) for r in receipts}), 45)
+        for r in receipts:
+            self.assertEqual(self.evidence[r["evidence_id"]][r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+            self.assertTrue(r["printed_pages"] and r["source_basis"])
+        owners = survey.read_table(self.directory / "alignment-2214-2221-owner-amendments.tsv")
+        self.assertEqual(len(owners), 4)
+        self.assertEqual(len({(r["owner"], r["identity"], r["field"]) for r in owners}), 4)
+        self.assertEqual({r["field"] for r in owners},
+                         {"selection_basis", "question", "assessment", "review_evidence_ids"})
+        for r in owners:
+            records = survey.read_table(survey.ROOT / survey.DIRECTORY / r["owner"])
+            record = next(x for x in records if (x["row_id"], x["source_key"]) == ("2216", "RingeTaylor2014"))
+            self.assertEqual(record[r["field"]], r["new_value"])
+            self.assertNotEqual(r["old_value"], r["new_value"])
+>       self.assertEqual(sum(r["source_key"] in survey.CORE_SOURCES for r in self.reviews), 794)
+E       AssertionError: 796 != 794
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:6766: AssertionError
+_ TwentySeventhAlignmentTests.test_shared_rainbow_components_and_raven_cells_remain_local _
+
+self = <test_pgmc_reconstruction_survey.TwentySeventhAlignmentTests testMethod=test_shared_rainbow_components_and_raven_cells_remain_local>
+
+    def test_shared_rainbow_components_and_raven_cells_remain_local(self):
+        for eid in ("orel-core-1963-01", "kroonen-core-1963-1", "kroonen-core-2147-1"):
+            self.assertEqual(self.position("2148", eid)["relation_to_row"], "compound_component")
+        self.assertEqual(self.position("2147", "kroonen-core-2147-1")["relation_to_row"], "same_etymon_citation")
+        self.assertEqual(self.position("2148", "ringe-complete-rainbow-ring")["relation_to_row"], "same_family")
+        self.assertEqual(self.position("2148", "orel-core-2148-2")["relation_to_row"], "same_family")
+        self.assertEqual(self.position("2148", "rt-complete-2148-003")["stage_interpretation"], "oe")
+        for eid in ("orel-core-1963-01", "kroonen-core-1963-1"):
+            bow = next(p for p in self.tables["analyses"] if (p["row_id"], p["evidence_id"]) == ("1963", eid))
+            self.assertNotEqual(bow["relation_to_row"], "compound_component")
+        self.assertEqual(self.evidence["kroonen-core-2149-1"]["printed_pages"], "240")
+        for n in (3, 4):
+            self.assertEqual(self.position("2149", f"kroonen-core-2149-{n}")["relation_to_row"], "same_etymon_other_cell")
+        self.assertEqual(self.evidence["alignment27-raven-rt-late"]["diplomatic_form"], "hreefen")
+        self.assertEqual(self.evidence["alignment27-raven-rt-mn"]["diplomatic_form"], "hreemn")
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:8250: AssertionError
+_ TwentySixthAlignmentTests.test_neck_nightmare_and_focused_support_do_not_establish_causes _
+
+self = <test_pgmc_reconstruction_survey.TwentySixthAlignmentTests testMethod=test_neck_nightmare_and_focused_support_do_not_establish_causes>
+
+    def test_neck_nightmare_and_focused_support_do_not_establish_causes(self):
+        self.assertEqual(self.position("2134", "ringe-complete-neck-image")["stage_interpretation"],
+                         "northwest_germanic")
+        for n in (4, 5):
+            self.assertEqual(self.position("2141", f"rt-complete-2141-{n:03}")["stage_interpretation"], "unspecified")
+        negative = next(r for r in self.reviews if (r["row_id"], r["source_key"]) == ("2141", "Kroonen2013"))
+        self.assertEqual(negative["status"], "no_form_found")
+        for cid in ("neck-gemination-and-paradigm-warrants", "nest-lowering-occurrence-and-date"):
+            self.assertEqual((self.cases[cid]["comparability"], self.cases[cid]["explanation_status"]),
+                             ("substantive_difference", "unestablished"))
+            reasons = [r for r in self.tables["rationales"] if cid in survey.ids(r["comparison_ids"])]
+            self.assertTrue(reasons)
+            self.assertTrue(all(r["reason_target"] == "position_support" for r in reasons))
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:8412: AssertionError
+_ TwentyFifthAlignmentTests.test_actual_reviews_and_unestablished_causes_are_not_new_votes _
+
+self = <test_pgmc_reconstruction_survey.TwentyFifthAlignmentTests testMethod=test_actual_reviews_and_unestablished_causes_are_not_new_votes>
+
+    def test_actual_reviews_and_unestablished_causes_are_not_new_votes(self):
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:8569: AssertionError
+_ TwentyFourthAlignmentTests.test_might_actual_consultation_and_masculine_tu_are_not_feminine_ti _
+
+self = <test_pgmc_reconstruction_survey.TwentyFourthAlignmentTests testMethod=test_might_actual_consultation_and_masculine_tu_are_not_feminine_ti>
+
+    def test_might_actual_consultation_and_masculine_tu_are_not_feminine_ti(self):
+        p = self.position("2125", "kroonen-core-2125-2")
+        self.assertEqual(survey.analytical.feature_values(p)["gender"], "masculine")
+        self.assertEqual(p["relation_to_row"], "same_etymon_other_cell")
+        self.assertEqual(self.evidence["orel-core-2125-3"]["printed_pages"], "252-253")
+        self.assertEqual(self.evidence["orel-core-2125-3"]["diplomatic_form"], "*maʒa")
+        self.assertEqual(self.position("2125", "alignment24-might-rt-final")["relation_to_row"], "selected_cell")
+        review = next(r for r in self.reviews if (r["row_id"], r["source_key"]) == ("2125", "RingeTaylor2014"))
+        self.assertEqual(review["status"], "evidence_found")
+        targets = survey.read_table(survey.ROOT / survey.DIRECTORY / "review_targets.tsv")
+        self.assertEqual(sum((r["row_id"], r["source_key"]) == ("2125", "RingeTaylor2014") for r in targets), 1)
+        self.assertIn("conditional", self.evidence["alignment24-might-rt-endpoint"]["argument"])
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:8762: AssertionError
+_ TwentyThirdAlignmentTests.test_real_close_consultations_do_not_manufacture_a_mechanical_noun _
+
+self = <test_pgmc_reconstruction_survey.TwentyThirdAlignmentTests testMethod=test_real_close_consultations_do_not_manufacture_a_mechanical_noun>
+
+    def test_real_close_consultations_do_not_manufacture_a_mechanical_noun(self):
+        reviews = {(r["row_id"], r["source_key"]): r for r in self.reviews}
+        self.assertEqual(reviews["2111", "Fulk2018"]["status"], "discussion_only")
+        self.assertEqual(reviews["2111", "RingeTaylor2014"]["status"], "evidence_found")
+        targets = survey.read_table(survey.ROOT / survey.DIRECTORY / "review_targets.tsv")
+        for source in ("Fulk2018", "RingeTaylor2014"):
+            self.assertEqual(sum((r["row_id"], r["source_key"]) == ("2111", source)
+                                 for r in targets), 1)
+        self.assertEqual(self.position("2111", "orel-core-2111-2")["relation_to_row"], "same_family")
+        self.assertEqual(self.evidence["alignment-lock-fulk-oe-close"]["diplomatic_form"], "lūcan")
+        self.assertEqual(self.position("2111", "alignment-lock-fulk-oe-close")["attribution_status"],
+                         "illustrative")
+>       self.assertEqual(len(self.reviews), 1418)
+E       AssertionError: 1424 != 1418
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:8874: AssertionError
+_ FortyNinthAlignmentTests.test_exact_noncontiguous_population_and_individual_positions _
+
+self = <test_pgmc_reconstruction_survey.FortyNinthAlignmentTests testMethod=test_exact_noncontiguous_population_and_individual_positions>
+
+    def test_exact_noncontiguous_population_and_individual_positions(self):
+        self.assertEqual((len(self.members), len({p["evidence_id"] for p in self.members})), (182, 179))
+        self.assertEqual(sum(not p["evidence_id"].startswith("alignment49-") for p in self.members), 133)
+>       self.assertEqual((len(self.forms), len(self.reviews)), (6578, 1418))
+E       AssertionError: Tuples differ: (6593, 1424) != (6578, 1418)
+E       
+E       First differing element 0:
+E       6593
+E       6578
+E       
+E       - (6593, 1424)
+E       + (6578, 1418)
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:8983: AssertionError
+_ FortyNinthAlignmentTests.test_final_alignment_passes_but_conventions_and_omitted_rows_do_not _
+
+self = <test_pgmc_reconstruction_survey.FortyNinthAlignmentTests testMethod=test_final_alignment_passes_but_conventions_and_omitted_rows_do_not>
+
+    def test_final_alignment_passes_but_conventions_and_omitted_rows_do_not(self):
+        survey.analytical.require_alignment_complete(self.corpus, self.tables["comparisons"])
+>       self.assertEqual(sum(c["scope"] == "core_triage" and c["alignment_status"] == "bounded_limit"
+                             for c in self.tables["comparisons"]), 397)
+E       AssertionError: 398 != 397
+
+Germanic/tests/test_pgmc_reconstruction_survey.py:9143: AssertionError
+_______ LiveAnalyticalTests.test_core_reading_population_and_supplements _______
+
+self = <test_pgmc_reconstruction_analysis.LiveAnalyticalTests testMethod=test_core_reading_population_and_supplements>
+
+    def test_core_reading_population_and_supplements(self):
+        survey.require_core_complete(self.corpus, self.sources, self.reviews)
+>       self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
+                             for form in self.forms), 2491)
+E       AssertionError: 2502 != 2491
+
+Germanic/tests/test_pgmc_reconstruction_analysis.py:1249: AssertionError
+_ LiveAnalyticalTests.test_current_core_citation_units_retain_every_alternative _
+
+self = <test_pgmc_reconstruction_analysis.LiveAnalyticalTests testMethod=test_current_core_citation_units_retain_every_alternative>
+
+    def test_current_core_citation_units_retain_every_alternative(self):
+        analytical.require_complete(self.corpus, self.tables["comparisons"])
+        core = [case for case in self.cases.values() if case["scope"] == "core_triage"]
+>       self.assertEqual(len(core), 397)
+E       AssertionError: 398 != 397
+
+Germanic/tests/test_pgmc_reconstruction_analysis.py:311: AssertionError
+_ LiveAnalyticalTests.test_fifteenth_tranche_scoped_causes_and_deterministic_queries _
+
+self = <test_pgmc_reconstruction_analysis.LiveAnalyticalTests testMethod=test_fifteenth_tranche_scoped_causes_and_deterministic_queries>
+
+    def test_fifteenth_tranche_scoped_causes_and_deterministic_queries(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT c.comparison_id,c.explanation_status,count(DISTINCT f.source_key) AS sources
+            FROM comparisons c JOIN comparison_analyses ca USING(comparison_id)
+            JOIN analyses p USING(analysis_id) JOIN forms f USING(evidence_id)
+            WHERE c.comparison_id IN ('ground-nasal-paradigm-prehistory','guest-genitive-quantity-history')
+            GROUP BY c.comparison_id,c.explanation_status ORDER BY c.comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\tsources\n"
+                    "ground-nasal-paradigm-prehistory\tsource_explicit\t2\n"
+                    "guest-genitive-quantity-history\tsource_explicit\t2\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2046 AND 2053
+        """), "positions\tevidence\n133\t129\n")
+>       self.assertEqual(analytical.query(tables, """
+            SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
+            GROUP BY alignment_status ORDER BY alignment_status
+        """), "alignment_status\trows\nbounded_limit\t397\n")
+E       AssertionError: 'alignment_status\trows\nbounded_limit\t398\n' != 'alignment_status\trows\nbounded_limit\t397\n'
+E         alignment_status	rows
+E       - bounded_limit	398
+E       ?              	  ^
+E       + bounded_limit	397
+E       ?              	  ^
+
+Germanic/tests/test_pgmc_reconstruction_analysis.py:631: AssertionError
+__ LiveAnalyticalTests.test_twenty_third_queries_keep_focused_causes_separate __
+
+self = <test_pgmc_reconstruction_analysis.LiveAnalyticalTests testMethod=test_twenty_third_queries_keep_focused_causes_separate>
+
+    def test_twenty_third_queries_keep_focused_causes_separate(self):
+        tables = {"forms": (survey.FORM_COLUMNS, self.forms),
+                  **{name: (analytical.TABLES[name], rows) for name, rows in self.tables.items()}}
+        sql = """
+            SELECT comparison_id,explanation_status FROM comparisons
+            WHERE comparison_id IN ('hairlock-direct-flexible','make-origin-and-direction')
+            ORDER BY comparison_id
+        """
+        expected = ("comparison_id\texplanation_status\n"
+                    "hairlock-direct-flexible\tunestablished\n"
+                    "make-origin-and-direction\tanalyst_inference\n")
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, sql), expected)
+        self.assertEqual(analytical.query(tables, """
+            SELECT count(*) AS positions,count(DISTINCT evidence_id) AS evidence
+            FROM analyses WHERE CAST(row_id AS INTEGER) BETWEEN 2110 AND 2117
+        """), "positions\tevidence\n103\t98\n")
+>       self.assertEqual(analytical.query(tables, """
+            SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
+            GROUP BY alignment_status ORDER BY alignment_status
+        """), "alignment_status\trows\nbounded_limit\t397\n")
+E       AssertionError: 'alignment_status\trows\nbounded_limit\t398\n' != 'alignment_status\trows\nbounded_limit\t397\n'
+E         alignment_status	rows
+E       - bounded_limit	398
+E       ?              	  ^
+E       + bounded_limit	397
+E       ?              	  ^
+
+Germanic/tests/test_pgmc_reconstruction_analysis.py:825: AssertionError
+___________ IntegrationTests.test_added_witnesses_and_research_only ____________
+
+self = <test_pgmc_lexical_integration.IntegrationTests testMethod=test_added_witnesses_and_research_only>
+
+    def test_added_witnesses_and_research_only(self):
+>       self.assertEqual(self.stats["added_selected"],
+                         ["2322", "2326", "2327", "2328", "2329", "2330", "2332",
+                          "2333", "2334", "2335", "2336"])
+E       AssertionError: Lists differ: ['232[28 chars]'2329', '2330', '2332', '2333', '2334', '2335', '2336', '2337'] != ['232[28 chars]'2329', '2330', '2332', '2333', '2334', '2335', '2336']
+E       
+E       First list contains 1 additional elements.
+E       First extra element 11:
+E       '2337'
+E       
+E         ['2322',
+E          '2326',
+E          '2327',
+E          '2328',
+E          '2329',
+E          '2330',
+E          '2332',
+E          '2333',
+E          '2334',
+E          '2335',
+E       -  '2336',
+E       ?        ^
+E       
+E       +  '2336']
+E       ?        ^
+E       
+E       -  '2337']
+
+Germanic/tests/test_pgmc_lexical_integration.py:63: AssertionError
+________________ IntegrationTests.test_deterministic_projection ________________
+
+self = <test_pgmc_lexical_integration.IntegrationTests testMethod=test_deterministic_projection>
+
+    def test_deterministic_projection(self):
+        first = integration.render()
+        self.assertEqual(first, integration.render())
+        self.assertEqual({p.name for p in first}, set(integration.OUTPUT_NAMES))
+        rows = list(csv.DictReader(first[ROOT / integration.DIRECTORY / "population_crosswalk.tsv"]
+                                   .splitlines(), delimiter="\t"))
+>       self.assertEqual(len(rows), 397)
+E       AssertionError: 398 != 397
+
+Germanic/tests/test_pgmc_lexical_integration.py:265: AssertionError
+_________ IntegrationTests.test_inventory_is_not_a_controversy_census __________
+
+self = <test_pgmc_lexical_integration.IntegrationTests testMethod=test_inventory_is_not_a_controversy_census>
+
+    def test_inventory_is_not_a_controversy_census(self):
+>       self.assertEqual(self.stats["routes"], {
+            "candidate_comparison_review": 1, "focused_comparison_review": 91,
+            "ordinary_evidence_review": 297, "unit_comparability_review": 8})
+E       AssertionError: {'can[64 chars]ordinary_evidence_review': 297, 'unit_comparability_review': 9} != {'can[64 chars]ordinary_evidence_review': 297, 'unit_comparability_review': 8}
+E         {'candidate_comparison_review': 1,
+E          'focused_comparison_review': 91,
+E          'ordinary_evidence_review': 297,
+E       -  'unit_comparability_review': 9}
+E       ?                               ^
+E       
+E       +  'unit_comparability_review': 8}
+E       ?                               ^
+
+Germanic/tests/test_pgmc_lexical_integration.py:126: AssertionError
+____________ IntegrationTests.test_population_counts_and_unique_ids ____________
+
+self = <test_pgmc_lexical_integration.IntegrationTests testMethod=test_population_counts_and_unique_ids>
+
+    def test_population_counts_and_unique_ids(self):
+>       self.assertEqual(len(self.rows), 397)
+E       AssertionError: 398 != 397
+
+Germanic/tests/test_pgmc_lexical_integration.py:45: AssertionError
+_______________ IntegrationTests.test_real_assembly_differences ________________
+
+self = <test_pgmc_lexical_integration.IntegrationTests testMethod=test_real_assembly_differences>
+
+    def test_real_assembly_differences(self):
+>       self.assertEqual(self.stats["required_not_assembled"],
+                         ["2055", "2120", "2208", "2327", "2328", "2329"])
+E       AssertionError: Lists differ: ['2055', '2120', '2327', '2328', '2329'] != ['2055', '2120', '2208', '2327', '2328', '2329']
+E       
+E       First differing element 2:
+E       '2327'
+E       '2208'
+E       
+E       Second list contains 1 additional elements.
+E       First extra element 5:
+E       '2329'
+E       
+E       - ['2055', '2120', '2327', '2328', '2329']
+E       + ['2055', '2120', '2208', '2327', '2328', '2329']
+E       ?                  ++++++++
+
+Germanic/tests/test_pgmc_lexical_integration.py:75: AssertionError
+_ EditorialPublicationTests.test_complete_derivations_are_preserved_byte_for_byte _
+
+self = <test_lexical_editorial_publication.EditorialPublicationTests testMethod=test_complete_derivations_are_preserved_byte_for_byte>
+
+    def test_complete_derivations_are_preserved_byte_for_byte(self):
+        before = parse_entries(self.compact, self.index)
+        for mode in ("audit", "publish"):
+            after = parse_entries(assembly.assemble_report(
+                self.compact, self.index, self.report_map, mode=mode), self.index)
+            self.assertEqual(set(after), set(before))
+>           self.assertEqual(len(after), 391)
+E           AssertionError: 392 != 391
+
+Germanic/tests/test_lexical_editorial_publication.py:136: AssertionError
+_ EditorialPublicationTests.test_new_citation_objects_keep_keys_and_printed_page_locators _
+
+self = <test_lexical_editorial_publication.EditorialPublicationTests testMethod=test_new_citation_objects_keep_keys_and_printed_page_locators>
+
+    def test_new_citation_objects_keep_keys_and_printed_page_locators(self):
+        import re
+    
+        bibliography = (ROOT / "docs/refs.bib").read_text()
+        keys = set(re.findall(r"@\w+\s*\{\s*([^,\s]+)", bibliography))
+        count = 0
+        for row in self.rows:
+            if not row.editorial_report_path:
+                continue
+            path = REPORTS / row.editorial_report_path
+            old = "" if row.row_id in {
+                "1941", "2148", "2224", "2283", "2335", "2336", "2201", "2282", "2006"
+>           } else committed(path)
+                   ^^^^^^^^^^^^^^^
+
+Germanic/tests/test_lexical_editorial_publication.py:270: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Germanic/tests/test_lexical_editorial_publication.py:31: in committed
+    return subprocess.check_output(
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py:472: in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['git', 'show', 'b74e3ce3f60f05c8843555eb409b35020386dcf0:Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md'],)
+kwargs = {'cwd': PosixPath('/Users/nathanhill/Code/capr'), 'stdout': -1, 'text': True}
+process = <Popen: returncode: 128 args: ['git', 'show', 'b74e3ce3f60f05c8843555eb409b3...>
+stdout = '', stderr = None, retcode = 128
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['git', 'show', 'b74e3ce3f60f05c8843555eb409b35020386dcf0:Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md']' returned non-zero exit status 128.
+
+/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py:577: CalledProcessError
+----------------------------- Captured stderr call -----------------------------
+fatal: path 'Germanic/docs/lexeme_reports/model_entries/2208-spindle-spinle.model.md' exists on disk, but not in 'b74e3ce3f60f05c8843555eb409b35020386dcf0'
+_ EditorialPublicationTests.test_scoped_philology_is_independent_of_derivation_status _
+
+self = <test_lexical_editorial_publication.EditorialPublicationTests testMethod=test_scoped_philology_is_independent_of_derivation_status>
+
+    def test_scoped_philology_is_independent_of_derivation_status(self):
+        self.assertIn("2224", self.old_required)
+        self.assertIn("2208", self.old_required)
+        self.assertIn("2006", self.old_required)
+>       self.assertEqual(len(self.old_required - {"2224", "2006"}), 164)
+E       AssertionError: 165 != 164
+
+Germanic/tests/test_lexical_editorial_publication.py:66: AssertionError
+_ EditorialPublicationTests.test_short_source_does_not_require_a_new_model_or_expand_book _
+
+self = <test_lexical_editorial_publication.EditorialPublicationTests testMethod=test_short_source_does_not_require_a_new_model_or_expand_book>
+
+    def test_short_source_does_not_require_a_new_model_or_expand_book(self):
+        self.assertFalse(list((REPORTS / "model_entries").glob("1941-*.model.md")))
+        source = self.by_id["1941"].editorial_report_path
+        self.assertEqual(source, "research_memos/1941-beaver-befer.md")
+        self.assertIn("opposed derivational directions", "\n".join(self.report_map["1941"]))
+        manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
+        current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
+        old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
+>       self.assertEqual(len(current), 173)
+E       AssertionError: 175 != 173
+
+Germanic/tests/test_lexical_editorial_publication.py:150: AssertionError
+_ GeneratedManifestTests.test_sc112_witnesses_sit_at_their_alphabetical_positions _
+
+self = <test_lexical_editorial_order.GeneratedManifestTests testMethod=test_sc112_witnesses_sit_at_their_alphabetical_positions>
+
+    def test_sc112_witnesses_sit_at_their_alphabetical_positions(self):
+        regular = [r["lexical_item"] for r in self.rows if r["class_bucket"] == "regular"]
+        # Filth, then the selected soul and west cells follow SC112 publication.
+>       self.assertEqual(len(regular), 93)
+E       AssertionError: 95 != 93
+
+Germanic/tests/test_lexical_editorial_order.py:164: AssertionError
+=========================== short test summary info ============================
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_actual_applicability_manifests_preserve_the_full_population
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_completed_readings_preserve_local_dates_quantity_and_cell_variants
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_eighth_tranche_has_all_individual_positions_and_bounded_core_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_eleventh_tranche_retains_individual_decisions_and_bounded_core_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_fifteenth_tranche_individual_identities_and_bounded_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_fifth_tranche_aligns_every_position_without_new_consultations
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_fourteenth_tranche_individual_identities_and_bounded_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_fourth_tranche_reconciles_all_inherited_and_added_units
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_live_dispatch_is_valid_but_not_completed_research
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_ninth_tranche_retains_all_members_and_bounded_whole_row_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_scope_query_separates_scheduling_from_actual_consultations
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_seventeenth_tranche_individual_identities_and_independent_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_seventh_tranche_aligns_every_position_without_settling_core_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_sixteenth_tranche_identities_receipts_and_bounded_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_sixth_tranche_aligns_all_positions_and_preserves_actual_reviews
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_tenth_tranche_retains_all_individual_decisions_and_scoped_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_thirteenth_tranche_individual_decisions_and_independent_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_twelfth_tranche_retains_individual_decisions_and_bounded_core_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::LiveSurveyTests::test_complete_population_includes_six_nonrunnable_rows
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::LiveSurveyTests::test_source_policy_preserves_catalogue_without_cartesian_obligations
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::EighteenthAlignmentTests::test_existing_consultation_status_changes_have_exact_owners
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::NineteenthAlignmentTests::test_actual_existing_knee_consultation_status_receipt
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::TwentyFirstAlignmentTests::test_existing_fulk_status_upgrades_do_not_invent_consultations
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::TwentySecondAlignmentTests::test_attestations_do_not_manufacture_reconstructions_or_new_consultations
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyEighthAlignmentTests::test_individual_finite_rows_and_shared_denominators
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySeventhAlignmentTests::test_individual_identity_and_completion_denominators
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySixthAlignmentTests::test_all_individual_identities_and_precise_core_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySixthAlignmentTests::test_word_conditional_laryngeal_and_dictionary_preservation
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFifthAlignmentTests::test_focused_warrants_do_not_claim_exclusive_opposition_or_cause
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFifthAlignmentTests::test_individual_identities_and_bounded_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFourthAlignmentTests::test_actual_fulk_weapon_plural_and_reversible_owner
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFourthAlignmentTests::test_individual_identities_and_bounded_core_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyThirdAlignmentTests::test_actual_wash_quotation_has_one_reversible_status_upgrade
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyThirdAlignmentTests::test_all_identities_have_individual_cells_without_adopting_science
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySecondAlignmentTests::test_all_inherited_identities_are_reviewed_without_scientific_adoption
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortySecondAlignmentTests::test_reversible_annotation_receipts_preserve_certification_and_shared_source
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFirstAlignmentTests::test_all_inherited_identities_and_whole_row_limits_survive
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyFirstAlignmentTests::test_exact_receipts_do_not_change_scientific_or_certification_fields
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortiethAlignmentTests::test_every_inherited_identity_has_independent_review_and_exact_limits
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortiethAlignmentTests::test_exact_source_receipts_preserve_certification_and_shared_owners
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ThirtyNinthAlignmentTests::test_all_individual_identities_and_bounded_whole_row_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ThirtyNinthAlignmentTests::test_exact_reversible_receipts_and_unchanged_consultation_owners
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ThirtyEighthAlignmentTests::test_exact_receipts_without_glyph_confidence_or_owner_repairs
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ThirtySeventhAlignmentTests::test_exact_receipts_preserve_diplomatic_confidence_and_verification
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::ThirtySixthAlignmentTests::test_exact_source_and_owner_receipts
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::TwentySeventhAlignmentTests::test_shared_rainbow_components_and_raven_cells_remain_local
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::TwentySixthAlignmentTests::test_neck_nightmare_and_focused_support_do_not_establish_causes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::TwentyFifthAlignmentTests::test_actual_reviews_and_unestablished_causes_are_not_new_votes
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::TwentyFourthAlignmentTests::test_might_actual_consultation_and_masculine_tu_are_not_feminine_ti
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::TwentyThirdAlignmentTests::test_real_close_consultations_do_not_manufacture_a_mechanical_noun
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyNinthAlignmentTests::test_exact_noncontiguous_population_and_individual_positions
+FAILED Germanic/tests/test_pgmc_reconstruction_survey.py::FortyNinthAlignmentTests::test_final_alignment_passes_but_conventions_and_omitted_rows_do_not
+FAILED Germanic/tests/test_pgmc_reconstruction_analysis.py::LiveAnalyticalTests::test_core_reading_population_and_supplements
+FAILED Germanic/tests/test_pgmc_reconstruction_analysis.py::LiveAnalyticalTests::test_current_core_citation_units_retain_every_alternative
+FAILED Germanic/tests/test_pgmc_reconstruction_analysis.py::LiveAnalyticalTests::test_fifteenth_tranche_scoped_causes_and_deterministic_queries
+FAILED Germanic/tests/test_pgmc_reconstruction_analysis.py::LiveAnalyticalTests::test_twenty_third_queries_keep_focused_causes_separate
+FAILED Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_added_witnesses_and_research_only
+FAILED Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_deterministic_projection
+FAILED Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_inventory_is_not_a_controversy_census
+FAILED Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_population_counts_and_unique_ids
+FAILED Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_real_assembly_differences
+FAILED Germanic/tests/test_lexical_editorial_publication.py::EditorialPublicationTests::test_complete_derivations_are_preserved_byte_for_byte
+FAILED Germanic/tests/test_lexical_editorial_publication.py::EditorialPublicationTests::test_new_citation_objects_keep_keys_and_printed_page_locators
+FAILED Germanic/tests/test_lexical_editorial_publication.py::EditorialPublicationTests::test_scoped_philology_is_independent_of_derivation_status
+FAILED Germanic/tests/test_lexical_editorial_publication.py::EditorialPublicationTests::test_short_source_does_not_require_a_new_model_or_expand_book
+FAILED Germanic/tests/test_lexical_editorial_order.py::GeneratedManifestTests::test_sc112_witnesses_sit_at_their_alphabetical_positions
+66 failed, 623 passed, 1090 subtests passed in 810.68s (0:13:30)
