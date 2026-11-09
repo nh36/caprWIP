@@ -18,6 +18,18 @@ jobs:
           python-version: "3.12"
       - name: Install test runner
         run: python -m pip install pytest
+      - name: Install pinned Pandoc with built-in Lua
+        env:
+          PANDOC_VERSION: "3.9.0.2"
+          PANDOC_SHA256: a69abfababda8a56969a254b09f9553a7be89ddec00d4e0fe9fd585d71a67508
+        run: |
+          curl --fail --location --silent --show-error --retry 3 \
+            "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz" \
+            --output "$RUNNER_TEMP/pandoc.tar.gz"
+          printf '%s  %s\n' "$PANDOC_SHA256" "$RUNNER_TEMP/pandoc.tar.gz" | sha256sum --check
+          tar --extract --gzip --file "$RUNNER_TEMP/pandoc.tar.gz" --directory "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/pandoc-${PANDOC_VERSION}/bin" >> "$GITHUB_PATH"
+          "$RUNNER_TEMP/pandoc-${PANDOC_VERSION}/bin/pandoc" --version
       - name: Validate tracked science and portable projections
         run: python Germanic/tools/run_portable_checks.py
       - name: Upload complete validation logs

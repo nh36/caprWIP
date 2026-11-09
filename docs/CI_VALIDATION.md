@@ -4,6 +4,14 @@ The Actions job validates **portable** capabilities explicitly. A green portable
 job does not certify full local science validation, availability of original
 holdings, repeated page-image inspection, or a fresh Foma execution.
 
+The workflow provisions Pandoc 3.9.0.2 from its official Linux amd64 release,
+verifying the pinned SHA256 before extraction. This matches the local
+publication version recorded in `full_lexical_assembly_alpha_01_report.md`.
+Publication consistency tests execute the tracked predicted-form and Foma-box
+Lua filters through Pandoc's built-in Lua interpreter. They produce LaTeX text,
+not PDFs: no separate Lua installation, TeX engine, fonts or Foma runtime is
+needed for these portable tests.
+
 ## Commands
 
 From the repository root:
