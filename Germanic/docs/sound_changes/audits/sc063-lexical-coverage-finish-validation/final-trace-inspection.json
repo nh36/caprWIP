@@ -1,0 +1,598 @@
+{
+  "trace_sha256": "ba00e177dd6d13fae7994ce9b8998086321a40a51c9f1892dc499e701084d6dd",
+  "accepted_entries": 394,
+  "firings": {
+    "OEWLossBeforeI": [
+      "sea"
+    ],
+    "OEHighVowelApocope": [
+      "beaver",
+      "beech",
+      "belly",
+      "bier",
+      "birth",
+      "bough",
+      "breeches",
+      "bride",
+      "cow",
+      "deal",
+      "deed",
+      "dew",
+      "drench",
+      "field",
+      "fist",
+      "flesh",
+      "flood",
+      "gift",
+      "ground",
+      "guest",
+      "hall",
+      "hand",
+      "harvest",
+      "heath",
+      "help",
+      "herd",
+      "hind",
+      "linden",
+      "liver",
+      "lung",
+      "lust",
+      "lye",
+      "march",
+      "might",
+      "need",
+      "needle",
+      "night",
+      "rind",
+      "rood",
+      "salve",
+      "sea",
+      "sheath",
+      "shield",
+      "shovel",
+      "shower",
+      "sorrow",
+      "spindle",
+      "spoon",
+      "stem",
+      "string",
+      "thirst",
+      "thistle",
+      "tide",
+      "tongs",
+      "wether",
+      "while",
+      "wight",
+      "winter",
+      "wold",
+      "worm",
+      "filth",
+      "fire",
+      "wool"
+    ],
+    "NWGmcInStemNLoss": [
+      "fright"
+    ],
+    "OELAdjacentSyncope": [
+      "nettle"
+    ],
+    "OEMedLongShort": [
+      "bore",
+      "handle",
+      "learn",
+      "lick",
+      "make",
+      "show",
+      "spare",
+      "sunder",
+      "wound",
+      "livestock"
+    ]
+  },
+  "selected": {
+    "little": {
+      "input": "*lūtilō",
+      "target": "lȳtelu",
+      "output": "lȳtelu",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": false,
+          "forms": [
+            "*l*ū*t*i*l*u"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": true,
+          "forms": [
+            "*l*ȳ*t*i*l*u"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": false,
+          "forms": [
+            "*l*ȳ*t*i*l*u"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": false,
+          "forms": [
+            "*l*ȳ*t*i*l*u"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": false,
+          "forms": [
+            "*l*ȳ*t*i*l*u"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*l*ȳ*t*i*l*u"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": false,
+          "forms": [
+            "*l*ȳ*t*i*l*u"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": true,
+          "forms": [
+            "*l*ȳ*t*e*l*u"
+          ]
+        }
+      ]
+    },
+    "livestock": {
+      "input": "*náutīnō",
+      "target": "nīetenu",
+      "output": "nīetenu",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": false,
+          "forms": [
+            "*n*ēa*t*ī*n*u"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": true,
+          "forms": [
+            "*n*īe*t*ī*n*u"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": false,
+          "forms": [
+            "*n*īe*t*ī*n*u"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": true,
+          "forms": [
+            "*n*īe*t*i*n*u"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": false,
+          "forms": [
+            "*n*īe*t*i*n*u"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*n*īe*t*i*n*u"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": false,
+          "forms": [
+            "*n*īe*t*i*n*u"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": true,
+          "forms": [
+            "*n*īe*t*e*n*u"
+          ]
+        }
+      ]
+    },
+    "dart": {
+      "input": "*skútilaz",
+      "target": "sċytel",
+      "output": "sċytel",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": false,
+          "forms": [
+            "*s*k*ú*t*i*l"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": true,
+          "forms": [
+            "*ʃ*y*t*i*l"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": false,
+          "forms": [
+            "*ʃ*y*t*i*l"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": false,
+          "forms": [
+            "*ʃ*y*t*i*l"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": false,
+          "forms": [
+            "*ʃ*y*t*i*l"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*ʃ*y*t*i*l"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": false,
+          "forms": [
+            "*ʃ*y*t*i*l"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": true,
+          "forms": [
+            "*ʃ*y*t*e*l"
+          ]
+        }
+      ]
+    },
+    "nettle": {
+      "input": "*nátilōn",
+      "target": "netle",
+      "output": "netle",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": false,
+          "forms": [
+            "*n*á*t*i*l*ǭ"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": true,
+          "forms": [
+            "*n*e*t*i*l*ǭ"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": false,
+          "forms": [
+            "*n*e*t*i*l*ǭ"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": false,
+          "forms": [
+            "*n*e*t*i*l*ǭ"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": false,
+          "forms": [
+            "*n*e*t*i*l*ǭ"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*n*e*t*i*l*ǭ"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": true,
+          "forms": [
+            "*n*e*t*l*ǭ"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": false,
+          "forms": [
+            "*n*e*t*l*e"
+          ]
+        }
+      ]
+    },
+    "fright": {
+      "input": "*fúrxtīnaz",
+      "target": "fyrhte",
+      "output": "fyrhte",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": true,
+          "forms": [
+            "*f*ú*r*x*t*ī"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": true,
+          "forms": [
+            "*f*y*r*x*t*ī"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": false,
+          "forms": [
+            "*f*y*r*x*t*ī"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": false,
+          "forms": [
+            "*f*y*r*x*t*ī"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": false,
+          "forms": [
+            "*f*y*r*x*t*ī"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*f*y*r*x*t*ī"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": false,
+          "forms": [
+            "*f*y*r*x*t*ī"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": true,
+          "forms": [
+            "*f*y*r*x*t*e"
+          ]
+        }
+      ]
+    },
+    "heaven": {
+      "input": "*xébun",
+      "target": "heofon",
+      "output": "heofon",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": false,
+          "forms": [
+            "*x*é*b*u*n"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": false,
+          "forms": [
+            "*ç*é*b*u*n"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": false,
+          "forms": [
+            "*ç*é*b*u*n"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": false,
+          "forms": [
+            "*ç*éo*β*u*n"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": false,
+          "forms": [
+            "*ç*éo*β*u*n"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*ç*éo*β*u*n"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": false,
+          "forms": [
+            "*ç*éo*β*u*n"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": false,
+          "forms": [
+            "*ç*éo*β*u*n"
+          ]
+        }
+      ]
+    },
+    "sea": {
+      "input": "*sáiwiz",
+      "target": "sǣ",
+      "output": "sǣ",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": false,
+          "forms": [
+            "*s*ā*w*i"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": true,
+          "forms": [
+            "*s*ǣ*w*i"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": true,
+          "forms": [
+            "*s*ǣ*i"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": false,
+          "forms": [
+            "*s*ǣ*i"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": true,
+          "forms": [
+            "*s*ǣ"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*s*ǣ"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": false,
+          "forms": [
+            "*s*ǣ"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": false,
+          "forms": [
+            "*s*ǣ"
+          ]
+        }
+      ]
+    },
+    "dew": {
+      "input": "*dáwwō",
+      "target": "dēaw",
+      "output": "dēaw",
+      "stages": [
+        {
+          "stage": "NWGmcInStemNLoss",
+          "changed": false,
+          "forms": [
+            "*d*ēa*w*u"
+          ]
+        },
+        {
+          "stage": "OEIUmlaut",
+          "changed": false,
+          "forms": [
+            "*d*ēa*w*u"
+          ]
+        },
+        {
+          "stage": "OEWLossBeforeI",
+          "changed": false,
+          "forms": [
+            "*d*ēa*w*u"
+          ]
+        },
+        {
+          "stage": "OEMedLongShort",
+          "changed": false,
+          "forms": [
+            "*d*ēa*w*u"
+          ]
+        },
+        {
+          "stage": "OEHighVowelApocope",
+          "changed": true,
+          "forms": [
+            "*d*ēa*w"
+          ]
+        },
+        {
+          "stage": "OEMedialSyncope",
+          "changed": false,
+          "forms": [
+            "*d*ēa*w"
+          ]
+        },
+        {
+          "stage": "OELAdjacentSyncope",
+          "changed": false,
+          "forms": [
+            "*d*ēa*w"
+          ]
+        },
+        {
+          "stage": "OEMedUnstressedILowering1",
+          "changed": false,
+          "forms": [
+            "*d*ēa*w"
+          ]
+        }
+      ]
+    }
+  }
+}

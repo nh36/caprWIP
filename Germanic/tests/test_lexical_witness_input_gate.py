@@ -16,7 +16,7 @@ import oe_pipeline
 from capr_runtime import check_build_manifest, layout, run_in_runner
 from executable_facts import parse_defines
 from test_sc037_adjudication import (
-    CONSOLIDATION_ADDED, CONSOLIDATION_CHANGED,
+    CONSOLIDATION_ADDED, CONSOLIDATION_CHANGED, LEXICAL_GRAMMAR_CHANGED,
     INTERVENTION_ADDED, INTERVENTION_CHANGED, assert_intervention_scope,
 )
 
@@ -80,7 +80,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "OEVelarPalatalizationStops",
                 # Independently source-bound by test_sc037_adjudication.py.
                 "OECompoundLinkingSyncope",
-            } | INTERVENTION_CHANGED | (CONSOLIDATION_CHANGED & old.keys())
+            } | INTERVENTION_CHANGED | (
+                (CONSOLIDATION_CHANGED | LEXICAL_GRAMMAR_CHANGED) & old.keys())
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         expected = old[name].definition_raw
         if name == "pgrmSimpleWord":

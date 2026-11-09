@@ -2,7 +2,7 @@
 
 The selected cell is the strong neuter nominative–accusative plural.
 PROTO *lūtilaz is a dictionary-supported citation; PROTOFORM *lūtilō
-is an explicitly assembled, regularly inflected Proto-Germanic cell.
+is a regularly inflected Proto-Germanic cell, also printed whole by Fulk.
 The ancestral cell is not inferred from the computational outcome.
 
 | Evidence | Exact location | What is directly established | Reconstruction or inference | Verification |
@@ -10,6 +10,7 @@ The ancestral cell is not inferred from the computational outcome.
 | Orel2003 | p. 248, *lītilaz ~ *lūtilaz ~ *luttilaz; PDF sheet 287 | Three printed whole-word alternatives, including long ū | Select the supported ū variant for OE long ȳ under ordinary i-mutation; do not erase the alternatives | Original page image inspected |
 | Kroonen2013 | p. 339, *lītila-; PDF sheet 379 | The headword has ī; the līt-/lūt-/lutt- distribution is expressly unexplained | Does not print the selected ū headword or explain away the variants | Original page image inspected |
 | Fulk2018 | p. 209, §9.2; PDF sheet 226 | Strong-adjective neuter nom./acc.pl. *-ō; separately, masculine acc.pl. *-anz | Assemble *lūtilō from the Orel stem and this ending; not a quoted whole word | Original paradigm image inspected |
+| Fulk2018 | p. 92, §5.6; PDF sheet 109; discussion continues on p. 93 | Explicit Mercian neuter nom./acc.pl. lȳtelu < *lūtilō, beside nētenu < *nēatinu < *nautīnō | Additional direct whole-plural authority; the earlier stem-plus-ending assembly remains valid but is no longer the only cited basis | Original page image inspected in renewed closeout; no illustrative “like” qualification in the passage |
 | Sweet1885 | p. 336, Vespasian Psalter 103:25; PDF sheet 350 | Diplomatic `netenu lytelu 7 micel`, aligned with `animalia pusilla et magna` | Neuter plural agreement and nominative clause interpretation; spelling has no macron | Original edition page inspected |
 | Fulk2010 | pp. 133–134, West Mercian discussion | Quantity-marked lȳtelu; retained u-ending forms contrasted with lȳtle and weak forms | Supports the normalization and quantity-based interpretation, not a new PGmc quotation | Original p. 133 inspected; surrounding discussion read |
 | Goering2016 | pp. 176–177, 186–188; original p. 176 inspected | Adjectival HLL retention and quantitative account; separates the conservative evidence from later analogical plurals | Comparative rationale for retaining the two weak vowels | Original p. 176 inspected and adjoining text read |
@@ -31,6 +32,13 @@ adjudicated here. No analogy is inserted in the selected derivation.
 PGmc stage assignment is based on comparative stem and inherited
 inflectional morphology, independently of confidence in the remote
 etymology.
+
+The initial dossier overlooked Fulk's full-word reconstruction at p. 92.
+The renewed source inspection corrects that omission without rewriting
+the original experimental receipts or claiming that the earlier worker
+had consulted this passage. Fulk2010 pp. 134–135 independently gives
+the West Mercian distribution; the full *lūtilō citation here is
+Fulk2018's, not a quotation manufactured from that distribution.
 
 The exploratory masculine accusative plural *lūtilanz was rejected
 at EnglishProtoInput in the original pinned assay. Fulk's *-anz ending

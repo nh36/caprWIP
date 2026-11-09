@@ -1,0 +1,59 @@
+{
+ "experiment_id": "hvd-lexical-finish-full-pgmc-01",
+ "outcome": "passed",
+ "summary": "Canonical 99b1d2e9 baseline equality and bounded candidate discrimination; not final adoption certification.",
+ "completed_at": "2026-11-08T23:49:32Z",
+ "command_receipts": [
+  {
+   "receipt_version": 2,
+   "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/hvd-lexical-finish-full-pgmc-01/staging/hvd-lexical-coverage-8f3b9657ec1b4e25b51c1a6cdb342d65.receipt.json",
+   "label": "hvd-lexical-coverage",
+   "argv": [
+    "docker",
+    "compose",
+    "exec",
+    "-T",
+    "backend",
+    "python3",
+    "/tmp/capr-exp-hvd-lexical-finish-full-pgmc-01-61c8d3d30679460bb24a93d0a0d176c4/worker.py",
+    "/tmp/capr-exp-hvd-lexical-finish-full-pgmc-01-61c8d3d30679460bb24a93d0a0d176c4"
+   ],
+   "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+   "cwd": "/Users/nathanhill/Code/capr",
+   "started_at": "2026-11-08T23:43:41Z",
+   "finished_at": "2026-11-08T23:49:32Z",
+   "returncode": 0,
+   "timed_out": false,
+   "ok": true,
+   "source_identity": {
+    "head_commit": "7083b698a1b6d0b73296397b9b31a1e60c5f557a",
+    "worktree_changes": {},
+    "identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d",
+    "recorded_at": "2026-11-08T23:43:41Z"
+   },
+   "source_identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d",
+   "source_identity_after": {
+    "head_commit": "7083b698a1b6d0b73296397b9b31a1e60c5f557a",
+    "worktree_changes": {},
+    "identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d",
+    "recorded_at": "2026-11-08T23:49:32Z"
+   },
+   "source_changed": false,
+   "level": null,
+   "lane": null,
+   "pytest_addopts": "",
+   "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/hvd-lexical-finish-full-pgmc-01/staging/hvd-lexical-coverage-8f3b9657ec1b4e25b51c1a6cdb342d65.stdout.log",
+   "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/hvd-lexical-finish-full-pgmc-01/staging/hvd-lexical-coverage-8f3b9657ec1b4e25b51c1a6cdb342d65.stderr.log",
+   "stdout_sha256": "d0b2afb3b904bb14e4eddf8eaa7ea9dffab5e43545081ceb69d9c4848e4a36aa",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "evidence": {},
+ "result_hashes": {
+  "hvd-lexical-coverage-8f3b9657ec1b4e25b51c1a6cdb342d65.receipt.json": "0bf361cb9552ed3067db0178deae7d099eb2e1dd20dfc58ce7a6e47047bf339e",
+  "hvd-lexical-coverage-8f3b9657ec1b4e25b51c1a6cdb342d65.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hvd-lexical-coverage-8f3b9657ec1b4e25b51c1a6cdb342d65.stdout.log": "d0b2afb3b904bb14e4eddf8eaa7ea9dffab5e43545081ceb69d9c4848e4a36aa",
+  "report.json": "db813f9b99ebe3680b04c8fead3db21bc2020f5d08df2a1765e63355b120fb79"
+ },
+ "source_identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d"
+}

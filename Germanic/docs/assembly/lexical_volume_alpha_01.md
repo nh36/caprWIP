@@ -29,7 +29,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes and, within each class, alphabetically by headword. Counts in this alpha are:
 
-- Regular derivations: 95
+- Regular derivations: 97
 - Attested variants: 6
 - Early analogy: 36
 - Late analogy: 28
@@ -1034,6 +1034,124 @@ Clark Hall gives _corn n. 'corn,' grain_, Bright's glossary lists _corn, n._ wit
 #### Development to Old English
 
 With northwest Germanic lowering, [kúrną]{.recon} ‘corn’ becomes [kórną]{.recon} ‘corn’, and later loss of final nasal after a heavy syllable yields [kórn]{.recon} ‘corn’, whence [_corn_]{.iv lang=oe sort=corn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/1979-corn-corn.model.md:29:1"} 'corn, grain'. The oblique form [kurnăn]{.recon} ‘corn’ belongs to comparative background rather than to the derivational input of this entry.
+
+### dart — OE _sċytel_
+
+Derivation: citation reconstruction _\*skutilaz_; form followed here _\*skútilaz_ > _sċytel_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*skútilaz_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Final Z Deletion} & \emph{*skútila} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc Final Bare A Loss} & \emph{*skútil} \\
+\mbox{OE Sk Palatalization} & \emph{*ʃútil} \\
+\mbox{OE I Umlaut} & \emph{*ʃytil} \\
+OE Med Unstressed I Lowering1 & \emph{*ʃytel} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _sċytel_
+
+#### Old English evidence and selected cell
+
+The Corpus Glossary has
+[scytel]{.iv lang=oe sort=scytel role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:11" occ_id="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:11:1"} 'balance beam', glossing Latin
+*momentum* [@Sweet1885, p. 79, Corpus 1325]. The corresponding Épinal
+and Erfurt item632 has
+[scytil]{.iv lang=oe sort=scytil role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:14:1"} 'balance beam'
+[@Pheifer1974, p. 34]. Both spellings preserve the vowel before final
+*l*; the Corpus spelling independently supplies *e*.
+
+The glossary meaning requires care. Pheifer interprets the earlier item
+as the moving beam or lever of a balance, not its tongue or pointer
+[@Pheifer1974, p. 101, note 632]. The comparative dictionary also
+identifies Old English *scytel* 'dart' beside Old Norse *skutill*
+'harpoon, bolt' [@Orel2003, pp. 346--347]. CAPR does not claim that
+the Latin glossary lemma means 'dart'. The selected spelling belongs
+to this moving-object noun; the lexical headword retains the
+dictionary's projectile sense.
+
+The normalized comparator
+[sċytel]{.iv lang=oe sort=scytel role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:28:1"} 'dart; balance beam'
+adds only the ordinary editorial palatal-consonant marking to the
+attested Corpus spelling. No reconstructed *ie*, altered root vowel
+or unattested medial vowel is substituted.
+Orel explicitly identifies the reconstructed noun as masculine.
+CAPR selects the ordinary strong masculine nominative singular;
+the uninflected glossary token itself cannot distinguish nominative
+from accusative. This citation-cell choice is not an assertion that
+the Latin lemma establishes an Old English syntactic nominative.
+
+#### Comparative formation
+
+Orel prints the complete
+[skutilaz]{.iv .recon lang=pgmc sort=skutilaz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:41" occ_id="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:41:1"} 'dart',
+masculine, and derives it from \emph{*skutan} 'shot, shooting'
+[@Orel2003, pp. 346--347]. The Old Norse and Old English witnesses
+support the inherited formation independently of the computational
+result. The selected
+[skútilaz]{.iv .recon lang=pgmc sort=skutilaz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:46" occ_id="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:46:1"} 'dart'
+marks ordinary initial root stress explicitly; no quantity, suffix
+or nominative ending has been changed.
+
+The projectile noun and its moving-beam usage need no morphological
+transponent. The derivational input is an inherited complete word,
+not a reconstruction beginning after the loss of its final ending.
+The precise semantic development is not turned into a conditioning
+factor in any sound law.
+
+#### Closed-syllable regression protection
+
+Ordinary final-ending losses reduce \emph{*skútilaz} to
+\emph{*skútil}. Palatalization and
+[SC055 OEIUmlaut](#rule-OEIUmlaut) give \emph{*ʃytil}.
+The medial high vowel survives
+[SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
+At [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope), the word
+has a light initial syllable followed by final closed \emph{*til}.
+The vowel is not in the open-medial pre-*l* environment of selected
+*nettle*. SC066 therefore correctly leaves it unchanged.
+
+Later [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1)
+lowers medial \emph{*i} to *e*, and ordinary orthography gives
+*sċytel* 'dart; balance beam'. Removing SC066's following-vowel
+restriction instead gives [*sċytl*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:71" occ_id="Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:71:1"}. That wrong alternative
+changes none of the earlier selected outputs; this noun therefore
+fills a genuine canonical closed-syllable gap rather than supplying
+an arbitrary nonfiring word.
 
 ### deed — OE _dǣd_
 
@@ -3970,8 +4088,13 @@ The selected [lūtilō]{.iv .recon lang=pgmc sort=lutilo role=selected_input sou
 combines that independently supported stem with the ordinary strong
 neuter nominative–accusative plural ending \emph{*-ō}.
 Fulk explicitly reconstructs this ending in the strong-adjective
-paradigm [@Fulk2018, p. 209, §9.2]. No authority is represented as
-printing the entire selected word verbatim. Citation and selected
+paradigm [@Fulk2018, p. 209, §9.2]. He also prints the complete
+\emph{*lūtilō} as the predecessor of Mercian *lȳtelu*
+[@Fulk2018, p. 92, §5.6]. This is a stated derivation, not a merely
+illustrative “form like” the selected reconstruction. The independent
+stem and paradigm evidence remains important: his printed plural does
+not resolve Kroonen's uncertainty about the wider root variants.
+Citation and selected
 form are two Proto-Germanic cells, not different historical stages;
 no transponent, analogical replacement or artificial accent is used.
 
@@ -3997,16 +4120,146 @@ gives \emph{*lȳtelu}. The complete cascade thus reaches the attested
 comparator without an analogical restoration.
 
 An indiscriminate rule deleting a medial high vowel after every heavy
-root instead yields [*lȳtlu*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:92" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:92:1"}. That wrong alternative changes
+root instead yields [*lȳtlu*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:97" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:97:1"}. That wrong alternative changes
 none of the previously selected histories, but fails on this plural.
 An overgeneralized final apocope in HLL instead gives
-[*lȳtel*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:95" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:95:1"}, likewise without changing any previously selected
+[*lȳtel*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:100" occ_id="Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:100:1"}, likewise without changing any previously selected
 history. Thus the attested plural independently protects both its
 medial and final retained high vowels.
 The word is therefore a positive historical witness of retention and
 a genuine nonapplication control for deletion. It does not replace
 the selected singular history of 'head', nor does it imply that every
 form of 'little' should retain its medial vowel.
+
+### livestock — OE _nīetenu_
+
+Derivation: citation reconstruction _\*nautīną_; form followed here _\*náutīnō_ > _nīetenu_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*náutīnō_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{PNWGmc Final Long O Raising} & \emph{*náutīnu} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Au Brightening} & \emph{*náeutīnu} \\
+\mbox{OE Diphthong Leveling} & \emph{*nēatīnu} \\
+\mbox{OE I Umlaut} & \emph{*nīetīnu} \\
+\mbox{OE Med Long Short} & \emph{*nīetinu} \\
+OE Med Unstressed I Lowering1 & \emph{*nīetenu} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _nīetenu_
+
+#### Selected cell and Old English evidence
+
+The form compared here is the strong neuter nominative–accusative plural
+[nīetenu]{.iv lang=oe sort=nietenu role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:11" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:11:1"} 'animals, livestock'.
+Sweet's edition of the Hatton manuscript of the *Pastoral Care* prints
+[nietenu]{.iv lang=oe sort=nietenu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:13" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:13:1"} 'animals' repeatedly:
+*Se monn is on gecynde betera þonne dysig nietenu* 'the human being is
+by nature better than foolish animals', and the contrasted subject
+*ac nietenu* 'but animals' [@Sweet1871, p. 109, lines 8--11].
+These are plural animals, not an endingless singular. The common
+nominative–accusative ending is selected without inventing a new
+inflectional cell.
+
+Quantity and dialect are not read out of Sweet's unmarked spelling.
+Ringe and Taylor identify West Saxon *nīetenu*, against Mercian
+[nētenu]{.iv lang=oe sort=netenu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:23:1"} 'animals'
+[@RingeTaylor2014, pp. 298--299]. Goering likewise identifies these
+nominative–accusative plurals and the later West Saxon
+[nytenu]{.iv lang=oe sort=nytenu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:26" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:26:1"} 'animals'
+[@Goering2016, p. 186]. CAPR selects the independently attested
+West Saxon endpoint, not a Mercian spelling imposed on a West Saxon
+root-vowel history.
+
+#### Reconstruction and morphological limits
+
+Fulk prints the complete ancestral plural
+[nautīnō]{.iv .recon lang=pgmc sort=nautino role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:34:1"} 'animals'
+as the predecessor of Mercian *nētenu* 'animals', through
+\emph{*nēatinu} [@Fulk2018, p. 92, §5.6]. The inherited long medial
+\emph{*ī} and the plain neuter plural \emph{*-ō} are therefore
+not values selected from the transducer's prediction.
+
+The comparative base is \emph{*nauta-} 'cattle', supported by
+Old Norse *naut*, Old English *nēat* and Old High German *nōz*
+[@Kroonen2013, p. 385; @Orel2003, p. 282]. These dictionaries establish
+the base, not a quoted complete \emph{*nautīna-} derivative.
+The citation \emph{*nautīną} is explicitly reconstructed from Fulk's
+derived plural stem and ordinary neuter a-stem singular inflection
+[@Fulk2018, pp. 145--148, §§7.7--7.8]; it is not passed off as a dictionary headword.
+The selected [náutīnō]{.iv .recon lang=pgmc sort=nautino role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:47:1"} 'animals'
+marks the inherited initial root stress explicitly. Fulk's printed
+form does not contain that acute accent. This annotation resolves
+input tokenization; it does not introduce secondary stress, change
+vowel quantity or supply an analogical transponent.
+
+This plural does not depend on the later singular's final *n*.
+In the derivational input, \emph{*n} precedes the plural vowel and is
+not word-final. Campbell attributes the singular's retained or restored
+consonant to inflected forms [@Campbell1959, p. 189, §473].
+That account does not fix the restoration's exact date and is not
+needed to make the present plural derive regularly.
+
+#### Development and regression value
+
+[SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising)
+gives \emph{*náutīnu}. Root brightening and diphthong leveling give
+\emph{*nēatīnu}; [SC055 OEIUmlaut](#rule-OEIUmlaut) gives West
+Saxon \emph{*nīetīnu}. The medial nasal remains unchanged under
+[SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss):
+no exception to final-n loss is introduced.
+
+[SC117 OEMedLongShort](#rule-OEMedLongShort), the early medial
+component of the established shortening history, gives
+\emph{*nīetinu}. This is HLL, and neither weak high vowel is deleted
+by [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope).
+Later [SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1)
+gives *nīetenu* 'animals'. The full inherited input, not a later-stage
+surrogate, produces the attested comparator.
+
+Indiscriminate heavy-root medial deletion instead gives
+[*nīetnu*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:78" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:78:1"}; HLL final apocope gives [*nīeten*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:78" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:78:2"}.
+More importantly, omitting early medial shortening also gives
+[*nīeten*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:80" occ_id="Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:80:1"}: the still-heavy medial syllable changes the
+quantitative deletion environment. The same omission leaves selected
+*lȳtelu* 'little' and every earlier selected output unchanged.
+Livestock therefore protects a real dependency not supplied by the
+short-medial little plural or by merely listing SC117's live firings.
+The two controls are complementary rather than duplicate admissions.
 
 ### louse — OE _lūs_
 

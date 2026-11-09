@@ -4134,6 +4134,15 @@ Final \emph{*ī} remains long until later shortening, while medial
 No word-specific protection or added accent is required. The exact date
 of paradigmatic retention or restoration is not fixed by these comparisons.
 
+The selected plural avoids that singular problem. Fulk prints
+\emph{*nautīnō}, the ancestor of the Mercian plural, while the
+Hatton *Pastoral Care* attests West Saxon *nietenu* 'animals, livestock'
+[@Fulk2018, p. 92, §5.6; @Sweet1871, p. 109, lines 8--11;
+@RingeTaylor2014, pp. 298--299]. Its medial nasal is followed by the
+plural vowel throughout this early loss and therefore survives
+regularly. The full plural reaches *nīetenu* 'animals' without either an
+exception to this law or a transponent with restored final *n*.
+
 ## Surviving bimoric \emph{*ō} unrounding
 
 ### Historical discussion
@@ -5639,6 +5648,9 @@ from the medially shortened inflected forms that yield *nētenu*
 [@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
 The same quantity distinction is required in the earlier comparison of
 unstressed vowels [@Fulk2018, pp. 90--96, §§5.6--5.7].
+The later singular's final consonant is paradigmatically preserved or
+restored, not a survival through early final-n loss; the source does not
+fix the restoration's date [@Campbell1959, p. 189, §473].
 
 The root and transmitted prominence are protected. Final long vowels
 remain for the later component of shortening; this early component is
@@ -5653,6 +5665,17 @@ ending and final-\emph{*n} loss; that vowel remains long here
 a target of [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), wrongly
 giving [*fyrht*]{.pred}. The later component, not this medial realization,
 licenses the regular final vowel of *fyrhte*.
+
+The inherited neuter plural \emph{*nautīnō} provides the complementary
+positive dependency: West Saxon *nīetenu* 'animals, livestock' requires
+medial shortening before quantitative deletion
+[@Fulk2018, p. 92, §5.6; @Sweet1871, p. 109, lines 8--11;
+@Goering2016, pp. 186--188]. Shortening produces HLL
+\emph{*nīetinu}, retaining both high vowels; omission wrongly gives
+[*nīeten*]{.pred}. The selected *lȳtelu* 'little' already has a short
+medial vowel and is unchanged by the same omission. This full inherited
+plural protects the dependency without relying on a singular with
+restored final *n* or inventing another sound law.
 
 ## Quantitative high-vowel deletion
 
@@ -5680,8 +5703,12 @@ selected corpus's match count [@Fulk2010, pp. 129--134, 140--142;
 Early medial shortening, realized in
 [SC117 OEMedLongShort](#rule-OEMedLongShort), gives short medial
 \emph{*i} in the inflected livestock forms while final \emph{*ī}
-remains long in \emph{*nētīn}. Later shortening yields *nēten*
-'livestock'; the earlier final-n law does not restart here.
+remains long in the later compared state \emph{*nētīn}.
+Its final consonant is not an uninterrupted survival through early
+final-n loss: Campbell attributes it to the inflected forms, without
+fixing the restoration's precise date [@Campbell1959, p. 189, §473].
+Later shortening yields *nēten* 'livestock'; the earlier final-n law
+does not restart here.
 
 The alternatives remain substantive. Conventional apocope followed by
 syncope gives \emph{*hēafdu}, whereas Ringe and Taylor's
@@ -5698,13 +5725,27 @@ plural, while Fulk independently establishes the West Mercian quantity
 [@Sweet1885, p. 336, Psalm 103:25; @Fulk2010, pp. 133--134;
 @Goering2016, pp. 176--177]. Orel's comparative \emph{*lūtilaz}
 and the inherited strong neuter plural ending \emph{*-ō} support
-\emph{*lūtilō}, without attributing the assembled word to a single source
-[@Orel2003, p. 248; @Fulk2018, p. 209, §9.2]. This selected plural
+\emph{*lūtilō}; Fulk also prints this complete ancestral plural explicitly
+[@Orel2003, p. 248; @Fulk2018, p. 92, §5.6; p. 209, §9.2]. This selected plural
 preserves both weak high vowels: indiscriminate heavy-root syncope gives
 [*lȳtlu*]{.pred}, and final apocope in HLL gives [*lȳtel*]{.pred}.
 Neither error is exposed by the selected singular *hēafod* 'head'.
 The comparative root alternation remains unexplained; retention is
 not a grammatical exception [@Kroonen2013, p. 339].
+
+The selected West Saxon *nīetenu* 'animals, livestock' supplies a
+complementary test. The Hatton *Pastoral Care* has plural *nietenu*;
+Fulk prints the complete ancestral \emph{*nautīnō}, and the dialectal
+comparison distinguishes West Saxon *nīetenu* from Mercian *nētenu* 'animals'
+[@Sweet1871, p. 109, lines 8--11; @Fulk2018, p. 92, §5.6;
+@RingeTaylor2014, pp. 298--299; @Goering2016, p. 186].
+The medial nasal is never final in this plural and needs no restoration
+or exception. After mutation, early medial shortening makes
+\emph{*nīetinu} HLL: both high vowels survive. Omitting that shortening
+instead gives [*nīeten*]{.pred}, while the short-medial *lȳtelu*
+is unaffected. Indiscriminate heavy-root medial deletion gives
+[*nīetnu*]{.pred}. These independently reconstructed plurals protect
+different aspects of the quantitative account.
 
 This loss is distinct from West Germanic weak-word deletion in
 [SC098 PWGmcUnstressedWordFinalIApocope](#rule-PWGmcUnstressedWordFinalIApocope).
@@ -6008,12 +6049,29 @@ The open-syllable condition carries the explanatory weight. *Cetel* ‘kettle’
 an early Latin loan ([katilaz]{.recon} ‘kettle’, from \emph{catillus}), famously fails
 to syncopate [@Orel2003, p. 211; @RingeTaylor2014, p. 272]. It is not a
 lexical exception. Its nominative \emph{*i} stands, after apocope, in a
-word-final closed syllable — light and closed — a position that no published
-formulation of the change reaches. The same structural point explains the
+word-final closed syllable with a short nucleus, but heavy by closure —
+a position the adopted light/open formulation does not reach.
+The same structural point explains the
 nominative--oblique split that Campbell records for the *netel*/*spinel*
 class, where the nominative retains its vowel while the syllabically open
 oblique cases syncopate [@Campbell1959, pp. 235--236, §589].
 The current component contains only the later light-syllable loss.
+
+The selected *sċytel* 'dart' supplies a complete inherited closed-final
+control. Orel reconstructs \emph{*skutilaz}, beside Old Norse *skutill*;
+the Corpus Glossary prints *scytel*, with retained medial *e*
+[@Orel2003, pp. 346--347; @Sweet1885, p. 79, Corpus 1325].
+The corresponding Épinal and Erfurt glosses have *scytil*. Their Latin
+*momentum* denotes the moving beam or lever of a balance, not an
+unqualified dart or a balance pointer [@Pheifer1974, p. 34, gloss 632;
+p. 101, commentary 632]. The palatal dot is editorial, and the Corpus
+form is not relabelled West Saxon. After apocope and mutation,
+\emph{*sċytil} has the closed final syllable \emph{-til}. Its vowel
+survives this law and later lowers to *e*. Removing the following-vowel
+restriction from the adopted operation wrongly gives [*sċytl*]{.pred}.
+This tests the open-medial domain, without forcing an unverified
+West Saxon spelling of *cetel* into the selected population.
+
 Brunner's original passage excludes the environments between
 \emph{d} and \emph{l}, and between inherited Germanic \emph{þ/f} and
 \emph{l}; the \emph{f} descended from earlier \emph{bh} is explicitly
@@ -6029,10 +6087,10 @@ conditions, explaining late West Saxon *netele* as anaptyxis, a secondary
 vowel reinserted in the cluster [@Luick1914, §336; @SieversBrunner1965,
 p. 133, §159 Anm. 3]. Ringe and Taylor instead read pairs such as *crypel*
 beside dative *cryple* as a change arrested before completion, leaving stable
-variation [@RingeTaylor2014, p. 272]. The selected corpus cannot discriminate
-between these readings, since its witnesses lie in the post-dental territory
-that all parties treat as deleted; both accounts are therefore recorded
-without a forced choice.
+variation [@RingeTaylor2014, p. 272]. The selected positive *netle* does not discriminate between these
+readings of open-medial variation; both accounts are therefore recorded
+without a forced choice. The closed-final *sċytel* control protects
+the distinct open-versus-closed domain of the adopted categorical law.
 
 Barrack reaches the same material through his framework of progressive
 environment simplification. His rule for medial high-vowel deletion in open

@@ -25,6 +25,9 @@ from the medially shortened inflected forms that yield *nētenu*
 [@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
 The same quantity distinction is required in the earlier comparison of
 unstressed vowels [@Fulk2018, pp. 90--96, §§5.6--5.7].
+The later singular's final consonant is paradigmatically preserved or
+restored, not a survival through early final-n loss; the source does not
+fix the restoration's date [@Campbell1959, p. 189, §473].
 
 The root and transmitted prominence are protected. Final long vowels
 remain for the later component of shortening; this early component is
@@ -39,3 +42,14 @@ ending and final-\emph{*n} loss; that vowel remains long here
 a target of [SC063 OEHighVowelApocope](#rule-OEHighVowelApocope), wrongly
 giving [*fyrht*]{.pred}. The later component, not this medial realization,
 licenses the regular final vowel of *fyrhte*.
+
+The inherited neuter plural \emph{*nautīnō} provides the complementary
+positive dependency: West Saxon *nīetenu* 'animals, livestock' requires
+medial shortening before quantitative deletion
+[@Fulk2018, p. 92, §5.6; @Sweet1871, p. 109, lines 8--11;
+@Goering2016, pp. 186--188]. Shortening produces HLL
+\emph{*nīetinu}, retaining both high vowels; omission wrongly gives
+[*nīeten*]{.pred}. The selected *lȳtelu* 'little' already has a short
+medial vowel and is unchanged by the same omission. This full inherited
+plural protects the dependency without relying on a singular with
+restored final *n* or inventing another sound law.

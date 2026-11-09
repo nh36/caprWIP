@@ -81,6 +81,8 @@ rows = corpus_rows(Path("/usr/app/data/germanic-aligned-final.tsv"))
 by_concept = {row["concept"]: row for row in rows}
 little = by_concept["little"]
 forms.append(little["fst_input"])
+coverage_finish = {concept: by_concept[concept] for concept in ("livestock", "dart")}
+forms.extend(row["fst_input"] for row in coverage_finish.values())
 trace_text = Path("/usr/app/docs/debug_snapshots/oe_full_trace_report.txt").read_text()
 assert not structural_problems(trace_text)
 provenance = parse_provenance(trace_text)
@@ -145,6 +147,7 @@ closeout_rules = {
     "AF66Heavy": ("OELAdjacentSyncope", "AFLHeavy"),
     "AF117Good": ("OEMedLongShort", "OEMedLongShort"),
     "AF117Final": ("OEMedLongShort", "AFShFinal"),
+    "AF117Omitted": ("OEMedLongShort", "AFPass"),
     "AF54Good": ("OEWLossBeforeI", "OEWLossBeforeI"),
     "AF54Post": ("OEWLossBeforeI", "AFWPost"),
     "AF54Short": ("OEWLossBeforeI", "AFWShort"),
@@ -242,6 +245,21 @@ with tempfile.TemporaryDirectory(prefix="capr-sc037-controls-") as temporary:
             value["lexical_closeout"] = {
                 "little": {"row_id": little["id"], "input": little["fst_input"],
                            "target": little["counterpart"]},
+                "coverage_finish": {
+                    concept: {"row_id": row["id"], "input": row["fst_input"],
+                              "target": row["counterpart"]}
+                    for concept, row in coverage_finish.items()},
+                "livestock_hll": {label: batch_apply_down(bins["component:" + label], [
+                    before("livestock", "OEHighVowelApocope")])
+                    for label in ("AF63Good", "AF63Heavy", "AF63Hap")},
+                "livestock_shortening": {
+                    label: batch_apply_down(bins["component:" + label], [
+                        before("livestock", "OEMedLongShort"),
+                        before("little", "OEMedLongShort")])
+                    for label in ("AF117Good", "AF117Omitted")},
+                "closed_dart": {label: batch_apply_down(bins["component:" + label], [
+                    before("dart", "OELAdjacentSyncope")])
+                    for label in ("AF66Good", "AF66Closed")},
                 "hll": {label: batch_apply_down(bins["component:" + label], [
                     before("little", "OEHighVowelApocope")])
                     for label in ("AF63Good", "AF63Heavy", "AF63Hap")},

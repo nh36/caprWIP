@@ -21,6 +21,14 @@ and produces the Actions job summary. Scratch files stay inside that directory.
 A missing required tracked basis stops at preflight, rather than producing
 hundreds of dependent failures.
 
+Portable survey validation permits unavailable, untracked declared original
+PDFs and private `.txt` transcriptions under `docs/references/local/`.
+A verification basis must belong to that source's declared holdings; this
+does not exempt arbitrary untracked text or missing tracked evidence.
+Historical verification labels and unavailable-source hashes are preserved,
+not freshly certified or manufactured. Available holding hashes still have
+to agree, and full validation continues to require the actual private text.
+
 Actions fetches repository history because the lexical-publication preservation
 tests compare current models with the committed errata baseline. A portable
 checkout excludes untracked holdings and runtime assets, not the historical Git

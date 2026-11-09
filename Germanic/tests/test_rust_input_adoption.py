@@ -158,7 +158,8 @@ class RustInputAdoptionTests(unittest.TestCase):
         census = read_tsv(BASE / "rule_coverage_census.tsv")
         # The independent rainbow adoption adds one live SC017 application;
         # Soul, spindle and filth accusatives no longer fire SC019; hammer fires SC020.
-        for identifier, count in (("SC017", "40"), ("SC019", "26"), ("SC020", "115")):
+        # Little and livestock add final-ō raising; dart adds bare-a loss.
+        for identifier, count in (("SC017", "40"), ("SC019", "28"), ("SC020", "116")):
             row = next(row for row in census if row["sc_id"] == identifier)
             self.assertEqual(row["corpus_firing_count"], count)
         ledger = known.load_ledger(ROOT / "Germanic/data/oe_known_problems.tsv")

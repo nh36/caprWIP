@@ -115,3 +115,21 @@ source-backed *-anz gate admission and its unresolved unselected ending.
 No SC063 sound-law verdict or chronology is reopened. New lexical
 publication and promotion remain conditional on their own complete
 serial/exclusive and rendered-book certification.
+
+The renewed full-word investigation retains little, adds the complementary
+West Saxon livestock plural and inherited dart closed-final control, and
+defers kettle's exact primary comparator. Fulk2018 p92§5.6 explicitly
+prints both *lūtilō and *nautīnō; this corrects the earlier claim that
+the full plurals lacked direct authority. Livestock's singular PROTO
+citation is explicitly assembled from the printed derivative stem and
+ordinary neuter morphology, not quoted from a dictionary. Its selected
+plural needs neither final-n restoration nor a transponent. Dart follows
+Orel2003 pp346–347 and Corpus1325/Sweet1885 p79, with Pheifer1974
+pp34,101 qualifying the glossary's balance-beam sense.
+The immutable full-cascade assays preserve all392 research records and
+rehearse394 single outputs,386 matches/eight inherited mismatches.
+Livestock uniquely detects omitted SC117 (nīeten); dart detects removal
+of SC066's following-vowel requirement (sċytl). This is lexical
+protection of the adopted laws, not a new SC063 verdict or chronology.
+The separate coverage_finish approval must preserve the published392
+archive and original little approval before any certified promotion.

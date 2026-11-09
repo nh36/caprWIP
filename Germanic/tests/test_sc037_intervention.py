@@ -50,7 +50,7 @@ def test_selected_weight_negative_and_previous_breaking_umlaut_histories(current
     assert values["fūliθǭ"] == ["fȳlþe"]
     assert values["spénnilǭ"] == ["spinle"]
     selected = current["current"]["selected"]
-    assert len(selected) == 392
+    assert len(selected) == 394
     assert all(len(row["outputs"]) == 1 for row in selected)
     assert {row["concept"] for row in selected
             if row["outputs"] != [row["counterpart"]]} == {
@@ -141,6 +141,29 @@ def test_selected_little_protects_both_hll_vowels_against_wrong_deletions(curren
     assert controls["hll"]["AF63Good"] == [[little["target"]]]
     assert controls["hll"]["AF63Heavy"] == [["lȳtlu"]]
     assert controls["hll"]["AF63Hap"] == [["lȳtel"]]
+
+
+def test_inherited_livestock_plural_protects_shortening_dependency_and_hll(current):
+    controls = current["current"]["lexical_closeout"]
+    livestock = controls["coverage_finish"]["livestock"]
+    assert livestock["row_id"] == "2338"
+    assert current["current"]["canonical"][livestock["input"]] == ["nīetenu"]
+    assert livestock["target"] == "nīetenu"
+    assert controls["livestock_hll"]["AF63Good"] == [["nīetenu"]]
+    assert controls["livestock_hll"]["AF63Heavy"] == [["nīetnu"]]
+    assert controls["livestock_hll"]["AF63Hap"] == [["nīeten"]]
+    assert controls["livestock_shortening"]["AF117Good"] == [["nīetenu"], ["lȳtelu"]]
+    assert controls["livestock_shortening"]["AF117Omitted"] == [["nīeten"], ["lȳtelu"]]
+
+
+def test_selected_dart_protects_closed_final_pre_l_nonapplication(current):
+    controls = current["current"]["lexical_closeout"]
+    dart = controls["coverage_finish"]["dart"]
+    assert dart["row_id"] == "2339"
+    assert current["current"]["canonical"][dart["input"]] == ["sċytel"]
+    assert dart["target"] == "sċytel"
+    assert controls["closed_dart"]["AF66Good"] == [["sċytel"]]
+    assert controls["closed_dart"]["AF66Closed"] == [["sċytl"]]
 
 
 def test_light_root_and_open_medial_conditions_have_distinct_controls(current):

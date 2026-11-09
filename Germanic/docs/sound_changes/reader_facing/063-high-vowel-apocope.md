@@ -24,8 +24,12 @@ selected corpus's match count [@Fulk2010, pp. 129--134, 140--142;
 Early medial shortening, realized in
 [SC117 OEMedLongShort](#rule-OEMedLongShort), gives short medial
 \emph{*i} in the inflected livestock forms while final \emph{*ī}
-remains long in \emph{*nētīn}. Later shortening yields *nēten*
-'livestock'; the earlier final-n law does not restart here.
+remains long in the later compared state \emph{*nētīn}.
+Its final consonant is not an uninterrupted survival through early
+final-n loss: Campbell attributes it to the inflected forms, without
+fixing the restoration's precise date [@Campbell1959, p. 189, §473].
+Later shortening yields *nēten* 'livestock'; the earlier final-n law
+does not restart here.
 
 The alternatives remain substantive. Conventional apocope followed by
 syncope gives \emph{*hēafdu}, whereas Ringe and Taylor's
@@ -42,13 +46,27 @@ plural, while Fulk independently establishes the West Mercian quantity
 [@Sweet1885, p. 336, Psalm 103:25; @Fulk2010, pp. 133--134;
 @Goering2016, pp. 176--177]. Orel's comparative \emph{*lūtilaz}
 and the inherited strong neuter plural ending \emph{*-ō} support
-\emph{*lūtilō}, without attributing the assembled word to a single source
-[@Orel2003, p. 248; @Fulk2018, p. 209, §9.2]. This selected plural
+\emph{*lūtilō}; Fulk also prints this complete ancestral plural explicitly
+[@Orel2003, p. 248; @Fulk2018, p. 92, §5.6; p. 209, §9.2]. This selected plural
 preserves both weak high vowels: indiscriminate heavy-root syncope gives
 [*lȳtlu*]{.pred}, and final apocope in HLL gives [*lȳtel*]{.pred}.
 Neither error is exposed by the selected singular *hēafod* 'head'.
 The comparative root alternation remains unexplained; retention is
 not a grammatical exception [@Kroonen2013, p. 339].
+
+The selected West Saxon *nīetenu* 'animals, livestock' supplies a
+complementary test. The Hatton *Pastoral Care* has plural *nietenu*;
+Fulk prints the complete ancestral \emph{*nautīnō}, and the dialectal
+comparison distinguishes West Saxon *nīetenu* from Mercian *nētenu* 'animals'
+[@Sweet1871, p. 109, lines 8--11; @Fulk2018, p. 92, §5.6;
+@RingeTaylor2014, pp. 298--299; @Goering2016, p. 186].
+The medial nasal is never final in this plural and needs no restoration
+or exception. After mutation, early medial shortening makes
+\emph{*nīetinu} HLL: both high vowels survive. Omitting that shortening
+instead gives [*nīeten*]{.pred}, while the short-medial *lȳtelu*
+is unaffected. Indiscriminate heavy-root medial deletion gives
+[*nīetnu*]{.pred}. These independently reconstructed plurals protect
+different aspects of the quantitative account.
 
 This loss is distinct from West Germanic weak-word deletion in
 [SC098 PWGmcUnstressedWordFinalIApocope](#rule-PWGmcUnstressedWordFinalIApocope).

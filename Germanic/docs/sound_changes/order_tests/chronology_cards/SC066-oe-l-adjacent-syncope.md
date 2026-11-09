@@ -9,6 +9,13 @@ quantitative deletion; SC065 is identity. The old
 SC066/SC068 reciprocal group and every measured result below are preserved
 but superseded as current chronology; nettle remains its mutation witness.
 
+The new inherited dart citation *skútilaz reaches Corpus sċytel
+(Orel2003 pp346–347; Sweet1885 p79, Corpus1325). Its final closed
+*til retains the high vowel. Removing the following-vowel condition
+gives sċytl while changing none of the earlier392 selected endpoints.
+This supports the conditioning restriction, not a new chronology edge
+or an assertion of West Saxon provenance for the Corpus spelling.
+
 ## Position at experiment time
 - order_at_experiment_time: `66`
 - rule_name: `OELAdjacentSyncope`

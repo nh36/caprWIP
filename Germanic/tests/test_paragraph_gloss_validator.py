@@ -105,6 +105,25 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         result = self.validate(prefix + paragraph.replace("'rainbow'", ""))
         self.assertEqual(result.returncode, 2, result.stderr)
 
+    def test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context(self):
+        for form, gloss, context in (
+            ("lȳtelu", "little", "The foil fails while the short-medial *lȳtelu* is unaffected."),
+            ("sċytel", "dart", "The closed-final *sċytel* control protects retention."),
+        ):
+            anchor = f"*{form}* '{gloss}' is independently attested.\n\n"
+            with self.subTest(form=form):
+                self.assertEqual(self.validate(anchor + context).returncode, 0)
+            for text in (
+                context,
+                context + "\n\n" + anchor,
+                anchor + f"An unrelated mention of *{form}* survives.",
+                "# Word-by-word derivations\n\n#### Old English evidence\n\n" + anchor + context,
+            ):
+                with self.subTest(form=form, text=text):
+                    result = self.validate(text)
+                    self.assertEqual(result.returncode, 2, result.stderr)
+                    self.assertIn(f"missing gloss for *{form}*", result.stderr)
+
     def test_glossed_forms_pass(self):
         result = self.validate(
             "*cȳ* 'cow' and [giftiz]{.recon .iv lang=pgmc} 'gift' survive.\n"

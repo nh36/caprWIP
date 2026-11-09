@@ -308,14 +308,15 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_current_core_citation_units_retain_every_alternative(self):
         analytical.require_complete(self.corpus, self.tables["comparisons"])
         core = [case for case in self.cases.values() if case["scope"] == "core_triage"]
-        self.assertEqual(len(core), 398)
+        self.assertEqual(len(core), 400)
         self.assertEqual({case["row_ids"] for case in core},
                          {row["row_id"] for row in self.corpus})
 
     def test_source_silence_is_not_agreement(self):
         negative_rows = {review["row_id"] for review in self.reviews
                          if review["source_key"] == "Kroonen2013" and review["status"] == "no_form_found"}
-        self.assertEqual(len(negative_rows), 33)
+        self.assertEqual(len(negative_rows), 34)
+        self.assertIn("2339", negative_rows)
         for row_id in negative_rows:
             self.assertEqual(self.cases[f"core-{row_id}"]["comparability"], "insufficient_evidence")
 
@@ -631,7 +632,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t398\n")
+        """), "alignment_status\trows\nbounded_limit\t400\n")
         for row in map(str, range(2046, 2054)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -825,7 +826,7 @@ class LiveAnalyticalTests(unittest.TestCase):
         self.assertEqual(analytical.query(tables, """
             SELECT alignment_status,count(*) AS rows FROM comparisons WHERE scope='core_triage'
             GROUP BY alignment_status ORDER BY alignment_status
-        """), "alignment_status\trows\nbounded_limit\t398\n")
+        """), "alignment_status\trows\nbounded_limit\t400\n")
         for row in map(str, range(2110, 2118)):
             self.assertEqual(self.cases["core-" + row]["explanation_status"], "unestablished")
 
@@ -1247,9 +1248,9 @@ class LiveAnalyticalTests(unittest.TestCase):
     def test_core_reading_population_and_supplements(self):
         survey.require_core_complete(self.corpus, self.sources, self.reviews)
         self.assertEqual(sum(form["source_key"] in survey.CORE_SOURCES
-                             for form in self.forms), 2502)
+                             for form in self.forms), 2505)
         self.assertEqual(sum(review["source_key"] in survey.CORE_SOURCES
-                             for review in self.reviews), 796)
+                             for review in self.reviews), 800)
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1956-01"]["row_ids"])),
                          {"1956", "2311", "2312"})
         self.assertEqual(set(survey.ids(self.evidence["orel-core-1963-01"]["row_ids"])),

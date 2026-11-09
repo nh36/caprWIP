@@ -77,7 +77,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | 22 | 90 | no |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | 14 | 61 | no |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | 14 | 32 | no |
-| 063-high-vowel-apocope.md | SC063. Quantitative deletion of short unstressed high vowels (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 64 | 78 | no |
+| 063-high-vowel-apocope.md | SC063. Quantitative deletion of short unstressed high vowels (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 82 | 78 | no |
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | 20 | 55 | no |
 | 065-medial-syncope.md | SC065. Former general-syncope trace anchor (`OEMedialSyncope`) {#rule-OEMedialSyncope} | 122 | 26 | no |
 | 066-l-adjacent-syncope.md | SC066. Later light-syllable pre-\emph{*l} syncope (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | 18 | 69 | no |

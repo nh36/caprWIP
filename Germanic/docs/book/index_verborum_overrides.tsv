@@ -1,4 +1,6 @@
 action	language	variety	form	display	sort_key	source_scope	source_ref	note
+ignore			*nīetīnu				Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:65	Computed post-mutation Old English checkpoint before early medial shortening, not an independent Proto-Germanic citation.
+ignore			*ʃytil				Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md:60	Computed post-palatalization and mutation checkpoint, not an independently cited Proto-Germanic reconstruction.
 ignore			*eorþconde				Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:204	Counterfactual unprotected Old English output, not a Proto-Germanic citation or attestation.
 ignore			*eorþcundes				Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:257	Independent computed Old English genitive control, not an additional source citation or admitted attestation.
 ignore			*régnabogô				Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:79	Computed annotation-decoding intermediate before ordinary nonhigh syncope, not a Proto-Germanic citation.

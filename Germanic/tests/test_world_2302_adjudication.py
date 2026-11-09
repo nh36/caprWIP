@@ -107,7 +107,7 @@ def test_scientific_sources_and_archives_are_preserved():
         "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json").read_text())
     assert equivalent["status"] == "equivalent"
     # Filth and earthly are subsequent individually authorized admissions.
-    assert equivalent["rows_compared"] == 391
+    assert equivalent["rows_compared"] == 394
 
 
 def test_only_authorized_world_fields_changed():
@@ -427,7 +427,7 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
     observed = json.loads((ASSAY / "migration.json").read_text())
     assert current["component_results"]["OEInterStressRaising"] == (
         observed["component_results"]["MCombined"])
-    assert current["selected_rows"] == 391
+    assert current["selected_rows"] == 394
     assert current["legacy380_identities"] == 380
     for model in current["models"].values():
         assert model["final_differences"] == []
@@ -635,6 +635,53 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     assert sum(row["action"] == "add" for row in fee) == 7
     assert sum(row["action"] == "remove" for row in fee) == 1
     added = [row for row in added if row not in fee]
+    published_hvd = read_tsv(subprocess.check_output([
+        "git", "show", "e16ac243382280b0c7ffc50335d6cc1f28051b3e:" + path],
+        cwd=ROOT, text=True))
+    hvd = [row for row in published_hvd if row["note"].startswith(
+        ("SC063 lexical coverage:", "SC063 closeout:"))]
+    assert len(hvd) == 22
+    assert all(row in added for row in hvd)
+    added = [row for row in added if row not in hvd]
+    livestock = "Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md"
+    dart = "Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md"
+    finish_keys = {
+        ("oe", "", form, role, "explicit_tag", reference)
+        for reference, forms in (
+            (livestock, (("nietenu", "comparison_form"), ("nytenu", "comparison_form"),
+                         ("nētenu", "comparison_form"), ("nīetenu", "target_form"))),
+            (dart, (("scytel", "comparison_form"), ("scytil", "comparison_form"),
+                    ("sċytel", "target_form"))),
+        )
+        for form, role in forms
+    } | {
+        ("pgmc", "", form, role, "explicit_tag", reference)
+        for reference, forms in (
+            (livestock, (("nautīnō", "source_protoform"), ("náutīnō", "selected_input"))),
+            (dart, (("skutilaz", "source_protoform"), ("skútilaz", "selected_input"))),
+        )
+        for form, role in forms
+    } | {
+        ("oe", "", "nīetenu", "target_form", "lexical_heading", "livestock — OE nīetenu"),
+        ("oe", "", "sċytel", "target_form", "lexical_heading", "dart — OE sċytel"),
+    } | {
+        ("pgmc", "", form, role, scope, reference)
+        for reference, citation, selected in (
+            ("livestock — OE nīetenu", "*nautīną", "*náutīnō"),
+            ("dart — OE sċytel", "*skutilaz", "*skútilaz"),
+        )
+        for form, role, scope in (
+            (citation, "source_protoform", "lexical_proto"),
+            (selected, "source_protoform", "lexical_protoform"),
+            (selected, "selected_input", "trace_proto_input"),
+        )
+    }
+    finish = [row for row in added if row["note"].startswith("SC063 coverage finish:")]
+    assert len(finish) == len(finish_keys) == 19
+    assert {(row["language"], row.get("variety", ""), row["form"], row["form_role"],
+             row["source_scope"], row["source_ref"]) for row in finish} == finish_keys
+    assert all(row["action"] == "add" for row in finish)
+    added = [row for row in added if row not in finish]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

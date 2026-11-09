@@ -216,13 +216,30 @@ class LegacySubsetTests(unittest.TestCase):
         previous = mod.read_baseline(
             BASELINE_DIR / "cascade_baseline_outputs_pre_sc063_lexical_coverage.tsv",
             BASELINE_DIR / "cascade_baseline_summary_pre_sc063_lexical_coverage.json")
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc063_coverage_finish.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc063_coverage_finish.json")
         approval = json.loads(
             (BASELINE_DIR / "approved_hvd_lexical_expansion.json").read_text())
         mod.validate_expansion_transition(previous, current, approval)
         self.assertEqual([row["row_id"] for row in approval["additions"]], ["2337"])
         self.assertEqual(current["summary"]["total_lexemes"] -
                          previous["summary"]["total_lexemes"], 1)
+
+    def test_hvd_finish_preserves_every_published_research_record(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc063_coverage_finish.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc063_coverage_finish.json")
+        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        approval = json.loads(
+            (BASELINE_DIR / "approved_hvd_coverage_finish_expansion.json").read_text())
+        mod.validate_expansion_transition(previous, current, approval)
+        self.assertEqual([row["row_id"] for row in approval["additions"]], ["2338", "2339"])
+        self.assertEqual(previous["summary"]["total_lexemes"], 392)
+        self.assertEqual(current["summary"]["total_lexemes"], 394)
+        self.assertEqual(current["summary"]["matched"], 386)
+        self.assertEqual(current["summary"]["ambiguous_outputs"], 0)
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy

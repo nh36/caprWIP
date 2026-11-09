@@ -4,8 +4,8 @@ GENERATED from research SOURCE tables and the live corpus. Never hand-edit.
 
 Row-target status: **INCOMPLETE**. Row coverage is not passage or analytical completion.
 The separately generated [reading progress](reading_progress.md) tracks the three-source passages and applicability screens.
-Population: 398 OE rows; 392 runnable.
-Required source/row targets: 1399; retained actual consultations: 25; unchecked targets: 0; declared verification gaps: 0.
+Population: 400 OE rows; 394 runnable.
+Required source/row targets: 1403; retained actual consultations: 29; unchecked targets: 0; declared verification gaps: 0.
 
 Current CAPR fields below are observations, not new endorsements or approvals.
 A PGmc equality stage is the encoding convention, not independent author evidence.
@@ -11501,5 +11501,37 @@ Runnable: 1; derivation class: regular.
 | little-sweet-psalter-2337 | Sweet1885 pp.336 | lytelu | oe / attestation / Vespasian Psalter103:25: netenu lytelu 7 micel; animalia pusilla et magna | lytelu Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Neuter plural agreement is fixed by the noun and Latin gloss. Diplomatic spelling does not mark quantity. | page_image_checked |
 | little-fulk-hll-2337 | Fulk2010 pp.133-134 | (process discussion, no quoted form) | oe / process / West Mercian retained lȳtelu versus masculine acc.pl lȳtle |  Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Explicit long ȳ, conservative neuter plural retention and contrast with syncopated inflection support the comparator and its historical quantity. | page_image_checked |
 | little-goering-hll-2337 | Goering2016 pp.176-177,186-188 | (process discussion, no quoted form) | oe / process / HLL retention and quantitative deletion discussion |  Retain source quantity, ending, root/stem dash and notation; do not insert CAPR's selected ending. Independent historical interpretation of the conservative HLL forms; not a newly printed whole-word PGmc reconstruction. | page_image_checked |
+| little-fulk-whole-plural-2337 | Fulk2018 pp.92 | *lūtilō | dictionary_context / word / §5.6, complete Mercian neuter nom./acc.pl. predecessor | *lūtilō Identity; source spelling and quantities preserved. Fulk explicitly prints the whole plural, not an illustrative form; root-variant genealogy remains separate. | page_image_checked |
 
 Coverage: 6 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2338"></a>
+
+## 2338: livestock / nīetenu
+
+Current citation: *nautīną (pgmc); selected input: *náutīnō (pgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| livestock-fulk-plural-2338 | Fulk2018 pp.92 | *nautīnō | dictionary_context / word / §5.6, *nautīnō > *nēatinu > Mercian nētenu, neuter nom./acc.pl. | *nautīnō Identity; source spelling and quantities preserved. Complete printed ancestral plural with medial long ī and final ō. This is not a late nētīn input. | page_image_checked |
+| livestock-orel-base-2338 | Orel2003 pp.282 | *nautan | dictionary_context / word / s.v. *nautan, cattle base | *nautan Identity; source spelling and quantities preserved. Comparative base only; not a quotation of the complete derived *nautīną citation. | page_image_checked |
+| livestock-kroonen-base-2338 | Kroonen2013 pp.385 | *nauta- | dictionary_context / stem / s.v. *nauta-, cattle base | *nauta- Identity; source spelling and quantities preserved. Comparative base with ON/OE/OHG evidence, not the complete derived stem. | page_image_checked |
+| livestock-sweet-plural-2338 | Sweet1871 pp.109 | nietenu | oe / attestation / Hatton Pastoral Care, lines8-11, repeated plural nietenu | nietenu Identity; source spelling and quantities preserved. Direct West Saxon spelling and plural syntax; macron is supplied by historical grammars, not the source spelling. | page_image_checked |
+
+Coverage: 4 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2339"></a>
+
+## 2339: dart / sċytel
+
+Current citation: *skutilaz (pgmc); selected input: *skútilaz (pgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| dart-orel-citation-2339 | Orel2003 pp.346-347 | *skutilaz | dictionary_context / word / s.v. *skutilaz, masculine citation | *skutilaz Identity; source spelling and quantities preserved. Whole masculine noun with ON skutill and OE scytel; derived from *skutan. | page_image_checked |
+| dart-sweet-corpus-2339 | Sweet1885 pp.79 | scytel | oe / attestation / Corpus1325: momentum scytel | scytel Identity; source spelling and quantities preserved. Direct e-spelling before final l; bare gloss does not distinguish nom.sg. and acc.sg. | page_image_checked |
+| dart-pheifer-epinal-2339 | Pheifer1974 pp.34,101 | scytil | oe / attestation / Epinal/Erfurt632 and commentary: momentum scytil | scytil Identity; source spelling and quantities preserved. Earlier i-spelling; commentary identifies a balance beam/lever, not a tongue or pointer. | page_image_checked |
+
+Coverage: 4 checks; 0 unchecked; 0 verification gaps.

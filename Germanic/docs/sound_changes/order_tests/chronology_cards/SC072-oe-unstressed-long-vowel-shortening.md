@@ -9,6 +9,14 @@ owner, before quantitative HVD; final long vowels survive to the later
 component. Goering2016 pp186--188 / 2023 pp67--68 independently supports
 the nētīn/inflected quantity contrast. See `audits/sc063-adjudication.md`.
 
+Full inherited *náutīnō supplies canonical nīetenu
+(Fulk2018 p92§5.6; Sweet1871 p109:8–11), with nonfinal n.
+Omitting its early medial shortening gives nīeten; selected little
+and every earlier392 final remain unchanged. Fright independently
+excludes premature final shortening. The late singular's restored
+n and its undated restoration are not part of the adopted plural
+history. SC117 remains this owner's executable medial component.
+
 ## Position at experiment time
 - order_at_experiment_time: `72`
 - rule_name: `OEUnstressedLongVowelShortening`

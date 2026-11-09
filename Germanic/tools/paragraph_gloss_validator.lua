@@ -463,6 +463,10 @@ local SHARED_GLOSS_VARIANTS = {
 local REPEATED_GLOSS_CONTEXTS = {
   ["lȳtelu"] = {
     {part2 = false, context = "The conservative neuter plural"},
+    {part2 = false, context = "while the short-medial"},
+  },
+  ["sċytel"] = {
+    {part2 = false, context = "closed-final sċytel control protects"},
   },
   ["fȳlþe"] = {
     {part2 = false, context = "The same word fixes a relative chronology"},

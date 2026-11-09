@@ -7,19 +7,19 @@ report manifest and class assembly manifest. Regenerate only with
 | Measure | Count |
 | --- | ---: |
 | legacy | 380 |
-| selected | 392 |
-| audit | 398 |
+| selected | 394 |
+| audit | 400 |
 | legacy_current_required | 155 |
-| required | 167 |
-| assembled | 175 |
+| required | 169 |
+| assembled | 177 |
 | production_pilots | 11 |
 | format_tests | 1 |
-| reviewed_rows | 23 |
-| scoped_cases | 26 |
-| philological_selected | 21 |
-| pilot_current_required | 171 |
+| reviewed_rows | 25 |
+| scoped_cases | 28 |
+| philological_selected | 23 |
+| pilot_current_required | 173 |
 
-added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335, 2336, 2337.
+added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339.
 
 research_only: 1935, 1947, 1948, 1994, 2156, 2218.
 
@@ -31,8 +31,8 @@ assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113, 2137, 21
 
 - candidate_comparison_review: 1
 - focused_comparison_review: 91
-- ordinary_evidence_review: 297
-- unit_comparability_review: 9
+- ordinary_evidence_review: 298
+- unit_comparability_review: 10
 
 A scoped review is not whole-row closure. All other rows retain
 not_editorially_reviewed; bounded_limit and type tags assign no editorial category.

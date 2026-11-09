@@ -62,8 +62,13 @@ The selected [lūtilō]{.iv .recon lang=pgmc sort=lutilo role=selected_input}
 combines that independently supported stem with the ordinary strong
 neuter nominative–accusative plural ending \emph{*-ō}.
 Fulk explicitly reconstructs this ending in the strong-adjective
-paradigm [@Fulk2018, p. 209, §9.2]. No authority is represented as
-printing the entire selected word verbatim. Citation and selected
+paradigm [@Fulk2018, p. 209, §9.2]. He also prints the complete
+\emph{*lūtilō} as the predecessor of Mercian *lȳtelu*
+[@Fulk2018, p. 92, §5.6]. This is a stated derivation, not a merely
+illustrative “form like” the selected reconstruction. The independent
+stem and paradigm evidence remains important: his printed plural does
+not resolve Kroonen's uncertainty about the wider root variants.
+Citation and selected
 form are two Proto-Germanic cells, not different historical stages;
 no transponent, analogical replacement or artificial accent is used.
 

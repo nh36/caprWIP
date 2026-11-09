@@ -1,18 +1,18 @@
 # Old English lexeme-report coverage audit
 
-- Total OE rows with real counterpart: 392
+- Total OE rows with real counterpart: 394
 - Manifest entries loaded: 12
-- Rows requiring lexeme report: 171
-- Required rows with published SOURCE: 31
+- Rows requiring lexeme report: 173
+- Required rows with published SOURCE: 33
 - Required rows with no published SOURCE: 140
-- Rows selected independently for philological discussion: 21
+- Rows selected independently for philological discussion: 23
 - Required rows with manifest-backed production reports: 11
-- Required rows with source material available but no manifest-backed production report: 156
+- Required rows with source material available but no manifest-backed production report: 158
 - Required rows with no source material found: 4
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 224
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 87
+- Regular rows with NOTE (report required): 89
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 12
 
 ## Counts by DERIVATION_CLASS
@@ -24,7 +24,7 @@
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 28 | 28 | 4 | 24 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 312 | 91 | 0 | 87 | 4 |
+| regular | 314 | 93 | 0 | 89 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -52,6 +52,8 @@
 | 2335 | filth | fȳlþe | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 | 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
 | 2337 | little | lȳtelu | regular | yes | certified_editorial_source | - | model_entries/2337-little-lȳtelu.model.md | NOTE, philological=little-hll-retention |
+| 2338 | livestock | nīetenu | regular | yes | certified_editorial_source | - | model_entries/2338-livestock-nīetenu.model.md | NOTE, philological=livestock-hvd-regression |
+| 2339 | dart | sċytel | regular | yes | certified_editorial_source | - | model_entries/2339-dart-sċytel.model.md | NOTE, philological=dart-hvd-regression |
 
 ## Required rows with manifest-backed production reports
 
@@ -229,6 +231,8 @@
 | 2335 | filth | fȳlþe | regular | yes | certified_editorial_source | - | model_entries/2335-filth-fȳlþ.model.md | NOTE, philological=filth-endingless-nominative |
 | 2336 | earthly | eorþcunde | attested_variant | yes | certified_editorial_source | - | model_entries/2336-earthly-eorþcunde.model.md | NOTE, DERIVATION_CLASS=attested_variant, philological=earthly-weak-neuter-medial-protection |
 | 2337 | little | lȳtelu | regular | yes | certified_editorial_source | - | model_entries/2337-little-lȳtelu.model.md | NOTE, philological=little-hll-retention |
+| 2338 | livestock | nīetenu | regular | yes | certified_editorial_source | - | model_entries/2338-livestock-nīetenu.model.md | NOTE, philological=livestock-hvd-regression |
+| 2339 | dart | sċytel | regular | yes | certified_editorial_source | - | model_entries/2339-dart-sċytel.model.md | NOTE, philological=dart-hvd-regression |
 
 ## Required rows with no source material found
 
@@ -484,7 +488,6 @@
 
 - archive/dev_notes_slices/2156-roe-hrogn.md -> ambiguous among 2111:loc, 2301:word
 - archive/dev_notes_slices/orphan_fragments.md -> ambiguous among 2068:heofon, 2139:netle, 2174:seofon
-- model_entries/2337-little-lȳtelu.source_ledger.md -> ambiguous among 2301:word, 2337:lȳtelu
 - pgmc_integration/README.md -> ambiguous among 2054:hand, 2194:six
 - pgmc_integration/examples/2330-thought.md -> ambiguous among 1992:dor, 2301:word
 - pgmc_integration/schema-proposal.md -> ambiguous among 2072:help, 2194:six, 2301:word

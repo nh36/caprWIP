@@ -8,7 +8,10 @@ after unstressed ī. SC041 exposes final n in the selected fright encoding;
 SC072 preserves its long-i environment. Both are implementation visibility
 bounds. The rule now follows bare-a exposure, before mutation and later
 HVD. Late nētīn is outside the old law; Campbell473 attributes retained n
-to inflected forms. Independent strenge/pyle controls corroborate n-loss
+to inflected forms without fixing restoration's date. The full
+*nautīnō plural (Fulk2018 p92§5.6) never has final n here and reaches
+West Saxon nīetenu without restoration or an SC064 exemption.
+Independent strenge/pyle controls corroborate n-loss
 without an abstract-class restriction. See `audits/sc064-adjudication.md`.
 
 ## Position at experiment time

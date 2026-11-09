@@ -1,0 +1,41 @@
+{
+  "adjudication": "SC063",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc063-adjudication.md",
+  "transition_id": "coverage_finish",
+  "previous_summary": {
+    "outputs_sha256": "050be9a640d5c9fe2d3496da300933c04c00b69dca0771cdc143637934a26668",
+    "lexical_outputs_sha256": "6a528f0bd0c3c575d0b883d47e5fb827998fadee1c86bc430f3246259f2f977d",
+    "legacy_subset_sha256": "a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "additions": [
+    {
+      "row_id": "2338",
+      "concept": "livestock",
+      "proto": "*náutīnō",
+      "proto_norm": "náutīnō",
+      "fst_input": "náutīnō",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "nīetenu",
+      "accepted": "1",
+      "output_count": "1",
+      "match": "1",
+      "outputs": "nīetenu"
+    },
+    {
+      "row_id": "2339",
+      "concept": "dart",
+      "proto": "*skútilaz",
+      "proto_norm": "skútilaz",
+      "fst_input": "skútilaz",
+      "word_stress": "stressed",
+      "phonological_finality": "final",
+      "counterpart": "sċytel",
+      "accepted": "1",
+      "output_count": "1",
+      "match": "1",
+      "outputs": "sċytel"
+    }
+  ]
+}

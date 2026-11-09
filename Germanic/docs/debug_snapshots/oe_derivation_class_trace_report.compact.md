@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (312) ===
+=== DERIVATION_CLASS: regular (314) ===
 
 
 
@@ -977,6 +977,32 @@ English Proto Input: *dálaz
 ### Orthography & surface
 
 Outcome: dæl
+
+
+
+# dart
+PROTO: *skútilaz
+EXPECTED: sċytel
+OUTPUTS: sċytel
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *skútilaz
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>EAF Final Z Deletion: *skútila<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *skútil<br>OE Sk Palatalization: *ʃútil<br>OE I Umlaut: *ʃytil<br>OE Med Unstressed I Lowering1: *ʃytel |
+
+
+
+### Orthography & surface
+
+Old English Orthography: sċ*ytel
+Outcome: sċytel
+
+NOTE: Strong masculine nominative singular citation. Orel2003 pp346-347 prints *skutilaz with ON skutill and OE scytel. Corpus1325 momentum: scytel (Sweet1885 p79); Epinal/Erfurt632 scytil (Pheifer1974 p34). The bare gloss does not distinguish nominative from accusative; nominative is the inherited citation cell. Pheifer p101 identifies the balance beam/lever sense, not a tongue; the dictionary separately gives dart. The consonant dot is editorial normalization, not a vowel substitution.
 
 
 
@@ -3504,7 +3530,7 @@ English Proto Input: *lūtilō
 
 Outcome: lȳtelu
 
-NOTE: Selected strong neuter nominative-accusative plural, West Mercian Vespasian Psalter103:25: netenu lytelu 7 micel, glossing animalia pusilla et magna (Sweet1885 p336). Normalized long ȳ is independently supported by Fulk2010 pp133-134 and Goering2016 pp176-177. Orel2003 p248 prints *lūtilaz beside *lītilaz and *luttilaz; Fulk2018 p209 §9.2 supplies the inherited strong neuter plural *-ō. The whole selected cell is CAPR comparative assembly, not an authored quotation or transponent.
+NOTE: Selected strong neuter nominative-accusative plural, West Mercian Vespasian Psalter103:25: netenu lytelu 7 micel, glossing animalia pusilla et magna (Sweet1885 p336). Normalized long ȳ is independently supported by Fulk2010 pp133-134 and Goering2016 pp176-177. Orel2003 p248 prints *lūtilaz beside *lītilaz and *luttilaz; Fulk2018 p209 §9.2 supplies the inherited strong neuter plural *-ō. Fulk2018 p92 §5.6 also prints the complete *lūtilō; the earlier stem-plus-ending assembly remains independently valid. No transponent.
 
 
 
@@ -3528,6 +3554,31 @@ English Proto Input: *líbrō
 ### Orthography & surface
 
 Outcome: lifer
+
+
+
+# livestock
+PROTO: *náutīnō
+EXPECTED: nīetenu
+OUTPUTS: nīetenu
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *náutīnō
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Final Long O Raising: *náutīnu<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Au Brightening: *náeutīnu<br>OE Diphthong Leveling: *nēatīnu<br>OE I Umlaut: *nīetīnu<br>OE Med Long Short: *nīetinu<br>OE Med Unstressed I Lowering1: *nīetenu |
+
+
+
+### Orthography & surface
+
+Outcome: nīetenu
+
+NOTE: Strong neuter nominative-accusative plural. Fulk2018 p92 §5.6 prints *nautīnō; Sweet1871 p109:8-11 Hatton Pastoral Care attests nietenu. RingeTaylor2014 pp298-299 and Goering2016 p186 establish WS nīetenu versus Mercian nētenu. PROTO is the regular singular citation assembled from the printed derivative stem and neuter a-stem inflection (Fulk2018 pp145-148). The selected acute marks inherited root stress; no altered ending, later-stage substitute or transponent.
 
 
 

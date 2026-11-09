@@ -8,11 +8,20 @@ retaining HLL but deleting a medial short high vowel before a heavy
 following syllable. Selected filth/spindle still establish mutation
 before loss and loss before degemination. Final/medial quantity is
 independently tested by nēten/nētenu/nētna; the earlier SC064 law no
-longer damages late nētīn. See `audits/sc063-adjudication.md`.
+longer applies to the later nētīn state with paradigmatically preserved
+or restored n (Campbell473; restoration not independently dated).
+See `audits/sc063-adjudication.md`.
+
+Renewed lexical protection uses full inherited *lūtilō and *náutīnō
+(Fulk2018 p92§5.6). Both retain HLL; omitting early medial shortening
+changes only the new livestock endpoint nīetenu → nīeten among the
+394 proposed selections. This is a quantity dependency assay, not
+an independently dated chronology edge. The old displacement
+measurements below are not rerun or rewritten.
 
 ## Consolidated current interpretation
 
-See `audits/sc065-adjudication.md`: the conventional account now retains a
+See `audits/sc065-adjudication.md`: the adopted unified account retains a
 final high vowel after a heavy first plus light second syllable. The heads
 control and Fulk/Ringe--Taylor alternatives are distinguished; the two former
 nominatives are comparisons, not current selections. All original experiment

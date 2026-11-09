@@ -1,0 +1,83 @@
+{
+ "experiment_id": "hvd-lexical-finish-full-pgmc-01",
+ "purpose": "Compare Fulk2018 printed92 §5.6 complete nautīnō with lūtilō, kettle cells and specific quantitative/closed-syllable counterfactuals; the certified sound laws and all392 research selections are unchanged.",
+ "created_at": "2026-11-08T23:43:41Z",
+ "source_identity": {
+  "head_commit": "7083b698a1b6d0b73296397b9b31a1e60c5f557a",
+  "worktree_changes": {},
+  "identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d",
+  "recorded_at": "2026-11-08T23:43:41Z"
+ },
+ "inputs": {
+  "fst": {
+   "original_path": "Germanic/fsts/germanic.txt",
+   "snapshot_name": "fst.txt",
+   "sha256": "37b7811ca68c0358d26e25d58fe5d697e7d560a61a1896190c5c72f93583af0e"
+  },
+  "corpus": {
+   "original_path": "Germanic/data/germanic-aligned-final.tsv",
+   "snapshot_name": "corpus.tsv",
+   "sha256": "b4331ed32ac158ee005e04379ca9f5bc566d3f89eabbe2b79f4020f3b53a3819"
+  },
+  "context": {
+   "original_path": "Germanic/data/entry_context_metadata.tsv",
+   "snapshot_name": "context.tsv",
+   "sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914"
+  },
+  "baseline": {
+   "original_path": "Germanic/docs/sound_changes/cascade_baseline/cascade_baseline_outputs.tsv",
+   "snapshot_name": "baseline.tsv",
+   "sha256": "086b4670c0ca843136538c96554703b0e8de1f913a6e7c83777805b3fe763674"
+  },
+  "worker": {
+   "original_path": ".capr-work/hvd-lexical-finish/worker.py",
+   "snapshot_name": "worker.py",
+   "sha256": "1dfa6ba96722fd14da97456a582729b2c75f9ed4a3f3841750b11482c8892c22"
+  },
+  "question": {
+   "original_path": ".capr-work/hvd-lexical-finish/question.json",
+   "snapshot_name": "question.json",
+   "sha256": "c0df00167e80547323e921cfeae44c63567a17f8d5567b1ba93476276688e410"
+  },
+  "compiler": {
+   "original_path": "Germanic/tools/anglo_frisian_experiments.py",
+   "snapshot_name": "compiler.py",
+   "sha256": "a379a3e8edfab3b6b66f8e88d2a7c78c86d9c610b5d936d172d0aac38dd7705f"
+  },
+  "pipeline": {
+   "original_path": "Germanic/tools/oe_pipeline.py",
+   "snapshot_name": "pipeline.py",
+   "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+  },
+  "lookup": {
+   "original_path": "Germanic/tools/sound_change_order_sensitivity.py",
+   "snapshot_name": "lookup.py",
+   "sha256": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c"
+  },
+  "context_helper": {
+   "original_path": "backend/oe_input_context.py",
+   "snapshot_name": "context_helper.py",
+   "sha256": "d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67"
+  }
+ },
+ "variants": {
+  "worker": "\"\"\"Pinned canonical traces and single-component historically wrong alternatives.\"\"\"\nimport csv\nimport json\nimport os\nfrom pathlib import Path\nimport shutil\nimport sys\n\nsys.path.insert(0, \"/usr/app/tools\")\nimport oe_pipeline\nfrom anglo_frisian_experiments import (\n    compile_isolated, complete_variant_order, corpus_rows, prepare_definition_image,\n)\nfrom oe_input_context import METADATA_FILENAME\nfrom sound_change_order_sensitivity import batch_apply_down\n\nroot = Path(sys.argv[1])\nsource = root / \"fst.txt\"\nshutil.copyfile(root / \"context.tsv\", root / METADATA_FILENAME)\noe_pipeline.stages = lambda: oe_pipeline.parse_stages(source)\nrows = corpus_rows(root / \"corpus.tsv\")\nassert len(rows) == 392\ndefinitions = \"\"\"\ndefine LxHv [OEHighVowelApocope .o. FootCtx([\n    [{*i}|{*u}|{*y}|{*ų}] -> 0 ||\n    .#. OEAnyConsonant* HvH _ OEAnyConsonant EnglishStarVocalic\n])];\ndefine LxL Ctx([\n    {*i} -> 0 || [EnglishStarShortVowel|EnglishStarShortDiphthong]\n    [OEAnyConsonant - [{*d}|{*θ}|{*f}]] _ {*l}\n]);\ndefine LxSh [OEMedLongShort .o. FootCtx([\n    {*ī} -> {*i} || EnglishStarVocalic OEAnyConsonant+ _ .#.\n])];\ndefine LxWv Ctx([{*w} -> 0 || EnglishStarVocalic _ [{*i}|{*ī}]]);\ndefine LxWi Ctx([\n    {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ {*i}\n]);\ndefine LxWAll Ctx([\n    {*w} -> 0 || EnglishStarVocalic EnglishStarConsonant* _ EnglishStarVocalic\n]);\ndefine LxNAll Ctx([\n    {*n} -> 0 || [EnglishStarShortVowel|EnglishStarLongVowel] _ .#.\n]);\ndefine LxHap [OEHighVowelApocope .o. FootCtx([\n    [{*i}|{*u}|{*y}|{*ų}] -> 0 ||\n    .#. OEAnyConsonant* HvH EnglishStarVocalic OEAnyConsonant+ _ .#.\n])];\ndefine LxNat _unambpart(EnglishProtoNative);\ndefine LxEnd [PGCellEnd | a:{*a} n:{*n} z:{*z}];\ndefine LxPlain [PGCellRoot PGCellStem* LxEnd];\ndefine LxPrefix [pgrmPrefix PGCellRoot PGCellStem* LxEnd];\ndefine LxRaw [LxPlain | LxPrefix];\ndefine LxGate [\n    LxNat | _unambpart([[LxRaw.u - EnglishProtoNative.u] .o. LxRaw])\n];\n\"\"\"\nfoils = {\n    \"heavy-root-overdeletion\": (\"OEHighVowelApocope\", \"LxHv\"),\n    \"HLL-final-apocope\": (\"OEHighVowelApocope\", \"LxHap\"),\n    \"closed-pre-l-overdeletion\": (\"OELAdjacentSyncope\", \"LxL\"),\n    \"no-early-medial-shortening\": (\"OEMedLongShort\", \"OEMedialSyncope\"),\n}\nrecipe = {\n    \"id\": \"current\", \"definitions\": definitions,\n    \"insert_rule\": None, \"insert_after\": None, \"replace\": {},\n    \"component_checks\": [{\"component\": name} for name in (\n        *[name for _, name in foils.values()],\n        \"EnglishProtoNative\", \"PGCellRaw\", \"PGCellCanonical\", \"LxNat\", \"LxRaw\", \"LxGate\")],\n}\nout = root / \"output\"\nout.mkdir()\nimage = prepare_definition_image(source, out)\nif image:\n    os.environ[\"CAPR_FOMA_DEFINITION_IMAGE\"] = str(image)\norder = complete_variant_order(recipe)\ndirectory = out / \"current\"\ndirectory.mkdir()\nprint(\"Compiling pinned current cascade and component foils\", flush=True)\nbins = compile_isolated(source, recipe, [], directory, diagnostic_stages=order)\nnative = [\n    (\"little-pl\", \"lūtilō\"),\n    (\"little-acc-pl\", \"lūtilanz\"),\n    (\"livestock-pl\", \"nautīnō\"),\n    (\"livestock-pl-explicit-stress\", \"náutīnō\"),\n    (\"head-pl\", \"xáubudō\"),\n    (\"kettle-nom\", \"kátilaz\"),\n    (\"kettle-acc\", \"kátilą\"),\n    (\"kettle-dat\", \"kátilai\"),\n    (\"idle-pl\", \"īdalō\"),\n]\ninputs = [row[\"fst_input\"] for row in rows] + [value for _, value in native]\nbaseline = {\n    row[\"row_id\"]: row for row in csv.DictReader(\n        (root / \"baseline.tsv\").open(), delimiter=\"\\t\")\n}\noriginal = batch_apply_down(bins[\"final\"], inputs)\nfor row, values in zip(rows, original):\n    assert values == baseline[row[\"id\"]][\"outputs\"].split(\"|\"), row[\"id\"]\n\n\ndef evaluate(replacement=None, initial=None, start=0):\n    states = list(inputs if initial is None else initial)\n    trace = []\n    for index in range(start, len(order)):\n        stage = order[index]\n        path = bins[f\"diagnostic:{index}\"]\n        if replacement and stage == replacement[0]:\n            path = bins[f\"component:{replacement[1]}\"]\n        before = list(states)\n        active = [i for i, value in enumerate(states) if value is not None]\n        values = [[] for _ in states]\n        for i, value in zip(active, batch_apply_down(path, [states[i] for i in active])):\n            if len(value) > 1:\n                raise AssertionError((stage, replacement, i, value))\n            values[i] = [] if value == [\"+?\"] else value\n        if initial is None and replacement is None:\n            assert all(len(value) == 1 for value in values[:len(rows)]), stage\n        states = [value[0] if value else None for value in values]\n        trace.append({\"stage\": stage, \"before\": before, \"after\": states})\n    return states, trace\n\n\ncurrent, trace = evaluate()\nassert original == [[value] if value is not None else [] for value in current]\nreport = {\n    \"rows\": rows, \"native\": native, \"current\": current,\n    \"trace\": trace, \"foils\": {}, \"staged\": {},\n}\nreport[\"proto_gate_components\"] = {\n    name: batch_apply_down(bins[\"component:\" + name], [value for _, value in native])\n    for name in (\"EnglishProtoNative\", \"PGCellRaw\", \"PGCellCanonical\", \"LxNat\", \"LxRaw\", \"LxGate\")\n}\nreport[\"rejected_candidates\"] = {\n    name: next(item[\"stage\"] for item in trace\n               if item[\"after\"][len(rows) + i] is None)\n    for i, (name, _) in enumerate(native) if current[len(rows) + i] is None\n}\nfor name, replacement in foils.items():\n    values, _ = evaluate(replacement)\n    changed = [\n        {\"id\": row[\"id\"], \"concept\": row[\"concept\"], \"before\": old, \"after\": new}\n        for row, old, new in zip(rows, current, values) if old != new\n    ]\n    report[\"foils\"][name] = {\n        \"changed_selected\": changed,\n        \"native\": dict(zip([name for name, _ in native], values[len(rows):])),\n    }\n    print(name, \"changed selected:\", changed, \"; native:\",\n          report[\"foils\"][name][\"native\"], flush=True)\nprint(\"Current native:\", dict(zip([name for name, _ in native], current[len(rows):])),\n      flush=True)\n(out / \"report.json\").write_text(json.dumps(report, ensure_ascii=False))\n"
+ },
+ "variant_sha256": {
+  "worker": "1dfa6ba96722fd14da97456a582729b2c75f9ed4a3f3841750b11482c8892c22"
+ },
+ "probes": [],
+ "expected_outcomes": {},
+ "negative_controls": [
+  "HLL medial/final retention",
+  "closed pre-l",
+  "early medial shortening omitted",
+  "all392 research records"
+ ],
+ "environment": {
+  "service": "backend",
+  "foma": "0.10.0alpha"
+ },
+ "staging_dir": "staging",
+ "results_dir": "results"
+}

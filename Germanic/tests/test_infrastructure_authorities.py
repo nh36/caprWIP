@@ -67,7 +67,7 @@ EXPECTED_OUTPUTS_SHA256 = (
 EXPECTED_LEGACY_SUBSET_SHA256 = (
     "43de8a47b7aaf17f860c9e3009617002ddb36e4d32a90ede1a99525858a417ce")
 EXPECTED_ROW_COUNT = 387
-EXPECTED_ACTIVE_ROW_COUNT = 391
+EXPECTED_ACTIVE_ROW_COUNT = 394
 
 
 def _load(name):
@@ -1103,17 +1103,18 @@ class PositionPinGuardrailTests(unittest.TestCase):
 
 
 class CurrentStateFingerprintTests(unittest.TestCase):
-    """CURRENT_STATE.md must advertise the canonical current baseline."""
+    """Current counts are projected; certified before-fingerprints remain historical."""
 
     def test_current_state_matches_cascade_baseline_summary(self):
         summary = json.loads(
-            (BASELINE_DIR / "cascade_baseline_summary.json").read_text(
+            (BASELINE_DIR / "cascade_baseline_summary_pre_sc063_lexical_coverage.json").read_text(
                 encoding="utf-8"))
         text = (REPO_ROOT / "Germanic/docs/CURRENT_STATE.md").read_text(
             encoding="utf-8")
         self.assertIn(summary["outputs_sha256"], text)
         self.assertIn(summary["legacy_subset_sha256"], text)
-        # no superseded fingerprints advertised as current
+        self.assertIn("lexeme_reports/pgmc_integration/population_summary.md", text)
+        self.assertIn("certified", text)
         self.assertNotIn(
             "7bed2ba862d91f82a0b7553e1a98fc78d9137483d39d94af0050af5aa18bdd33",
             text)

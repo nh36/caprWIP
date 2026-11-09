@@ -53,12 +53,29 @@ The open-syllable condition carries the explanatory weight. *Cetel* ‘kettle’
 an early Latin loan ([katilaz]{.recon} ‘kettle’, from \emph{catillus}), famously fails
 to syncopate [@Orel2003, p. 211; @RingeTaylor2014, p. 272]. It is not a
 lexical exception. Its nominative \emph{*i} stands, after apocope, in a
-word-final closed syllable — light and closed — a position that no published
-formulation of the change reaches. The same structural point explains the
+word-final closed syllable with a short nucleus, but heavy by closure —
+a position the adopted light/open formulation does not reach.
+The same structural point explains the
 nominative--oblique split that Campbell records for the *netel*/*spinel*
 class, where the nominative retains its vowel while the syllabically open
 oblique cases syncopate [@Campbell1959, pp. 235--236, §589].
 The current component contains only the later light-syllable loss.
+
+The selected *sċytel* 'dart' supplies a complete inherited closed-final
+control. Orel reconstructs \emph{*skutilaz}, beside Old Norse *skutill*;
+the Corpus Glossary prints *scytel*, with retained medial *e*
+[@Orel2003, pp. 346--347; @Sweet1885, p. 79, Corpus 1325].
+The corresponding Épinal and Erfurt glosses have *scytil*. Their Latin
+*momentum* denotes the moving beam or lever of a balance, not an
+unqualified dart or a balance pointer [@Pheifer1974, p. 34, gloss 632;
+p. 101, commentary 632]. The palatal dot is editorial, and the Corpus
+form is not relabelled West Saxon. After apocope and mutation,
+\emph{*sċytil} has the closed final syllable \emph{-til}. Its vowel
+survives this law and later lowers to *e*. Removing the following-vowel
+restriction from the adopted operation wrongly gives [*sċytl*]{.pred}.
+This tests the open-medial domain, without forcing an unverified
+West Saxon spelling of *cetel* into the selected population.
+
 Brunner's original passage excludes the environments between
 \emph{d} and \emph{l}, and between inherited Germanic \emph{þ/f} and
 \emph{l}; the \emph{f} descended from earlier \emph{bh} is explicitly
@@ -74,10 +91,10 @@ conditions, explaining late West Saxon *netele* as anaptyxis, a secondary
 vowel reinserted in the cluster [@Luick1914, §336; @SieversBrunner1965,
 p. 133, §159 Anm. 3]. Ringe and Taylor instead read pairs such as *crypel*
 beside dative *cryple* as a change arrested before completion, leaving stable
-variation [@RingeTaylor2014, p. 272]. The selected corpus cannot discriminate
-between these readings, since its witnesses lie in the post-dental territory
-that all parties treat as deleted; both accounts are therefore recorded
-without a forced choice.
+variation [@RingeTaylor2014, p. 272]. The selected positive *netle* does not discriminate between these
+readings of open-medial variation; both accounts are therefore recorded
+without a forced choice. The closed-final *sċytel* control protects
+the distinct open-versus-closed domain of the adopted categorical law.
 
 Barrack reaches the same material through his framework of progressive
 environment simplification. His rule for medial high-vowel deletion in open

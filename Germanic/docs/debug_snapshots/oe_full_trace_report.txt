@@ -2,24 +2,24 @@
 trace_provenance_version: 2
 germanic.txt sha256: 37b7811ca68c0358d26e25d58fe5d697e7d560a61a1896190c5c72f93583af0e
 old_english_sandbox.txt sha256: 64c0b672831b8f73778a00386095791412bddebde330fbc3e2240800b048be0b
-germanic-aligned-final.tsv sha256: b4331ed32ac158ee005e04379ca9f5bc566d3f89eabbe2b79f4020f3b53a3819
+germanic-aligned-final.tsv sha256: c1ebc87c2c535fe24628bf34b8b7b25e73602b1cad59072fcd9d5a289543edf9
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
 oe_input_context.py sha256: d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67
 oe_full_trace_report.py sha256: dad0d16f3c52b89c2a3e2ef52d7f5126659cd045d93df73c4cb3652765f14ec0
 oe_pipeline.py sha256: 742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6
 sound_change_order_sensitivity.py sha256: 99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c
 capr_runtime.py sha256: e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec
-old_english.bin sha256 (informational): 4ea094de80ac5181fd711710f6493fe05560294eb78579a74504065ce7312088
+old_english.bin sha256 (informational): 9204df331f02f54347bd94128e6df15b443c7ed1882d019cfb043d223b241e64
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-11-08T20:47:05+0000
+build_manifest_built_at: 2026-11-09T00:42:45+0000
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
 build_manifest_expected_bins: 114
-manifest:germanic-aligned-final.tsv sha256: b4331ed32ac158ee005e04379ca9f5bc566d3f89eabbe2b79f4020f3b53a3819
+manifest:germanic-aligned-final.tsv sha256: c1ebc87c2c535fe24628bf34b8b7b25e73602b1cad59072fcd9d5a289543edf9
 manifest:germanic.txt sha256: 37b7811ca68c0358d26e25d58fe5d697e7d560a61a1896190c5c72f93583af0e
 manifest:old_english_sandbox.txt sha256: 64c0b672831b8f73778a00386095791412bddebde330fbc3e2240800b048be0b
 
-=== BUCKET: exact_match (384) ===
+=== BUCKET: exact_match (386) ===
 
 --- adder ---
 PROTO: *nḗdrōn
@@ -51861,6 +51861,276 @@ OEWsPalatalGlide [no-change]: *l*ȳ*t*e*l*u
 OldEnglishRemoveStars: lȳtelu
 OldEnglishSurface [no-change]: lȳtelu
 
+--- livestock ---
+PROTO: *náutīnō
+INPUT_CONTEXT: SC098; stress=stressed; finality=final
+EXPECTED: nīetenu
+OUTPUTS: nīetenu
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *n*áu*t*ī*n*ō
+PGmcGmSimplification [no-change]: *n*áu*t*ī*n*ō
+PGmcNasalLossBeforeX [no-change]: *n*áu*t*ī*n*ō
+RootNounNomZLoss [no-change]: *n*áu*t*ī*n*ō
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *n*áu*t*ī*n*ō
+PNWGmcAToUBeforeM [no-change]: *n*áu*t*ī*n*ō
+PNWGmcLongELowering [no-change]: *n*áu*t*ī*n*ō
+PWGmcEarlyIApocope [no-change]: *n*áu*t*ī*n*ō
+PWGmcFinalOrLowering [no-change]: *n*áu*t*ī*n*ō
+PWGmcCoronalWAssimilation [no-change]: *n*áu*t*ī*n*ō
+OEWWSimplification [no-change]: *n*áu*t*ī*n*ō
+PWGmcIjContraction [no-change]: *n*áu*t*ī*n*ō
+PWGmcJGemination [no-change]: *n*áu*t*ī*n*ō
+PWGmcSyllabicJ [no-change]: *n*áu*t*ī*n*ō
+PNWGmcPreconsonantalXLoss [no-change]: *n*áu*t*ī*n*ō
+EAFLThVoicing [no-change]: *n*áu*t*ī*n*ō
+PWGmcDentalHardening [no-change]: *n*áu*t*ī*n*ō
+PWGmcEndinglessAw [no-change]: *n*áu*t*ī*n*ō
+PNWGmcILowering [no-change]: *n*áu*t*ī*n*ō
+PNWGmcULowering [no-change]: *n*áu*t*ī*n*ō
+PNWGmcStressedMonosyllableORaising [no-change]: *n*áu*t*ī*n*ō
+PNWGmcFinalLongORaising: *n*áu*t*ī*n*u
+EAFFinalZDeletion [no-change]: *n*áu*t*ī*n*u
+PWGmcUnstressedWordFinalIApocope [no-change]: *n*áu*t*ī*n*u
+MonosyllabicFinalZLoss [no-change]: *n*áu*t*ī*n*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *n*áu*t*ī*n*u
+EAFRhotacism [no-change]: *n*áu*t*ī*n*u
+PNWGmcMnDissimilation [no-change]: *n*áu*t*ī*n*u
+PNWGmcNStemNLoss [no-change]: *n*áu*t*ī*n*u
+EAFNasalSpirantLengthening [no-change]: *n*áu*t*ī*n*u
+EAFNasalSpirantLoss [no-change]: *n*áu*t*ī*n*u
+EAFHiatusWInsertion [no-change]: *n*áu*t*ī*n*u
+EAFLongANasalRounding [no-change]: *n*áu*t*ī*n*u
+EAFNasalizedLowRounding [no-change]: *n*áu*t*ī*n*u
+EAFLongAFronting [no-change]: *n*áu*t*ī*n*u
+OEStressFootContext [no-change]: *n*áu*t*ī*n*u
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *n*áu*t*ī*n*u
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *n*áu*t*ī*n*u
+OEAuBrightening: *n*áeu*t*ī*n*u
+OEEwLongDiphthong [no-change]: *n*áeu*t*ī*n*u
+OEJWWSimplification [no-change]: *n*áeu*t*ī*n*u
+OEJGlideIO [no-change]: *n*áeu*t*ī*n*u
+OEDiphthongLeveling: *n*ēa*t*ī*n*u
+OEAwLongDiphthong [no-change]: *n*ēa*t*ī*n*u
+OECompoundLinkingSyncope [no-change]: *n*ēa*t*ī*n*u
+OEStripSecondaryStress [no-change]: *n*ēa*t*ī*n*u
+OEInterStressRaising [no-change]: *n*ēa*t*ī*n*u
+OEWICombinativeUUmlaut [no-change]: *n*ēa*t*ī*n*u
+PWGmcFinalBareALoss [no-change]: *n*ēa*t*ī*n*u
+NWGmcInStemNLoss [no-change]: *n*ēa*t*ī*n*u
+PWGmcSurvivingBimoricOUnrounding [no-change]: *n*ēa*t*ī*n*u
+EAFBrighteningUnstressed [no-change]: *n*ēa*t*ī*n*u
+EAFBrightening [no-change]: *n*ēa*t*ī*n*u
+EAFBrighteningLongFinal [no-change]: *n*ēa*t*ī*n*u
+OEBreaking [no-change]: *n*ēa*t*ī*n*u
+OEVelarFricativePalatalization [no-change]: *n*ēa*t*ī*n*u
+OEARestoration [no-change]: *n*ēa*t*ī*n*u
+OEHeavySyllableNasalApocope [no-change]: *n*ēa*t*ī*n*u
+OESecondaryNasalization [no-change]: *n*ēa*t*ī*n*u
+SieversLawSyncope [no-change]: *n*ēa*t*ī*n*u
+OESkPalatalization [no-change]: *n*ēa*t*ī*n*u
+OEVelarPalatalization [no-change]: *n*ēa*t*ī*n*u
+OEPrefixAReduction [no-change]: *n*ēa*t*ī*n*u
+OEPostVelarWLoss [no-change]: *n*ēa*t*ī*n*u
+OEWsPalatalDiphthongization [no-change]: *n*ēa*t*ī*n*u
+OEIUmlaut: *n*īe*t*ī*n*u
+OEWLossBeforeI [no-change]: *n*īe*t*ī*n*u
+OELatePalatalDiphthong [no-change]: *n*īe*t*ī*n*u
+OEJClusterCoalescence [no-change]: *n*īe*t*ī*n*u
+OEBackMutation [no-change]: *n*īe*t*ī*n*u
+OEWsPalatalUmlaut [no-change]: *n*īe*t*ī*n*u
+OEWeakTailNasalLoss [no-change]: *n*īe*t*ī*n*u
+OEWeightMarkers [no-change]: *n*īe*t*ī*n*u
+OENonHighSyn [no-change]: *n*īe*t*ī*n*u
+PGmcBAllophony [no-change]: *n*īe*t*ī*n*u
+OEMedLongShort: *n*īe*t*i*n*u
+OEHighVowelApocope [no-change]: *n*īe*t*i*n*u
+OEMedialSyncope [no-change]: *n*īe*t*i*n*u
+OEHighLinkSyncope [no-change]: *n*īe*t*i*n*u
+OELAdjacentSyncope [no-change]: *n*īe*t*i*n*u
+OEHighStressDecode [no-change]: *n*īe*t*i*n*u
+OEDentalAssimilation [no-change]: *n*īe*t*i*n*u
+OEPreconsonantalDegemination [no-change]: *n*īe*t*i*n*u
+OEEarlyOShortening [no-change]: *n*īe*t*i*n*u
+OEUnstressedFrontingEarly [no-change]: *n*īe*t*i*n*u
+OELateOShortening [no-change]: *n*īe*t*i*n*u
+OEMedUnstressedORaising [no-change]: *n*īe*t*i*n*u
+OEFinalUnstressedOLowering [no-change]: *n*īe*t*i*n*u
+OEUnstressedLongVowelShortening [no-change]: *n*īe*t*i*n*u
+OEUnstressedAEMerger [no-change]: *n*īe*t*i*n*u
+OEMedUnstressedILowering1: *n*īe*t*e*n*u
+OEMedUnstressedILowering [no-change]: *n*īe*t*e*n*u
+OEMedUnstressedULowering [no-change]: *n*īe*t*e*n*u
+OEPrefixIReduction [no-change]: *n*īe*t*e*n*u
+OEWeakTailReduction [no-change]: *n*īe*t*e*n*u
+OEJLossAfterHeavy [no-change]: *n*īe*t*e*n*u
+OEFinalGeminateSimplification [no-change]: *n*īe*t*e*n*u
+OEJStrengtheningAfterFrontDiphthong [no-change]: *n*īe*t*e*n*u
+OEIntervocalicJVocalization [no-change]: *n*īe*t*e*n*u
+OEUnstressedEIContraction [no-change]: *n*īe*t*e*n*u
+OEWeightCleanup [no-change]: *n*īe*t*e*n*u
+OEHLoss [no-change]: *n*īe*t*e*n*u
+OEContraction [no-change]: *n*īe*t*e*n*u
+OERMetathesis [no-change]: *n*īe*t*e*n*u
+OEEpentheticVowel [no-change]: *n*īe*t*e*n*u
+OELateUnstressedAgSuffix [no-change]: *n*īe*t*e*n*u
+OEPalatalFricativeMerger [no-change]: *n*īe*t*e*n*u
+OECjCleanup [no-change]: *n*īe*t*e*n*u
+OEXsMerge [no-change]: *n*īe*t*e*n*u
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography [no-change]: *n*īe*t*e*n*u
+OEWsPalatalGlide [no-change]: *n*īe*t*e*n*u
+OldEnglishRemoveStars: nīetenu
+OldEnglishSurface [no-change]: nīetenu
+
+--- dart ---
+PROTO: *skútilaz
+INPUT_CONTEXT: SC098; stress=stressed; finality=final
+EXPECTED: sċytel
+OUTPUTS: sċytel
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *s*k*ú*t*i*l*a*z
+PGmcGmSimplification [no-change]: *s*k*ú*t*i*l*a*z
+PGmcNasalLossBeforeX [no-change]: *s*k*ú*t*i*l*a*z
+RootNounNomZLoss [no-change]: *s*k*ú*t*i*l*a*z
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *s*k*ú*t*i*l*a*z
+PNWGmcAToUBeforeM [no-change]: *s*k*ú*t*i*l*a*z
+PNWGmcLongELowering [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcEarlyIApocope [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcFinalOrLowering [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcCoronalWAssimilation [no-change]: *s*k*ú*t*i*l*a*z
+OEWWSimplification [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcIjContraction [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcJGemination [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcSyllabicJ [no-change]: *s*k*ú*t*i*l*a*z
+PNWGmcPreconsonantalXLoss [no-change]: *s*k*ú*t*i*l*a*z
+EAFLThVoicing [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcDentalHardening [no-change]: *s*k*ú*t*i*l*a*z
+PWGmcEndinglessAw [no-change]: *s*k*ú*t*i*l*a*z
+PNWGmcILowering [no-change]: *s*k*ú*t*i*l*a*z
+PNWGmcULowering [no-change]: *s*k*ú*t*i*l*a*z
+PNWGmcStressedMonosyllableORaising [no-change]: *s*k*ú*t*i*l*a*z
+PNWGmcFinalLongORaising [no-change]: *s*k*ú*t*i*l*a*z
+EAFFinalZDeletion: *s*k*ú*t*i*l*a
+PWGmcUnstressedWordFinalIApocope [no-change]: *s*k*ú*t*i*l*a
+MonosyllabicFinalZLoss [no-change]: *s*k*ú*t*i*l*a
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *s*k*ú*t*i*l*a
+EAFRhotacism [no-change]: *s*k*ú*t*i*l*a
+PNWGmcMnDissimilation [no-change]: *s*k*ú*t*i*l*a
+PNWGmcNStemNLoss [no-change]: *s*k*ú*t*i*l*a
+EAFNasalSpirantLengthening [no-change]: *s*k*ú*t*i*l*a
+EAFNasalSpirantLoss [no-change]: *s*k*ú*t*i*l*a
+EAFHiatusWInsertion [no-change]: *s*k*ú*t*i*l*a
+EAFLongANasalRounding [no-change]: *s*k*ú*t*i*l*a
+EAFNasalizedLowRounding [no-change]: *s*k*ú*t*i*l*a
+EAFLongAFronting [no-change]: *s*k*ú*t*i*l*a
+OEStressFootContext [no-change]: *s*k*ú*t*i*l*a
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *s*k*ú*t*i*l*a
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *s*k*ú*t*i*l*a
+OEAuBrightening [no-change]: *s*k*ú*t*i*l*a
+OEEwLongDiphthong [no-change]: *s*k*ú*t*i*l*a
+OEJWWSimplification [no-change]: *s*k*ú*t*i*l*a
+OEJGlideIO [no-change]: *s*k*ú*t*i*l*a
+OEDiphthongLeveling [no-change]: *s*k*ú*t*i*l*a
+OEAwLongDiphthong [no-change]: *s*k*ú*t*i*l*a
+OECompoundLinkingSyncope [no-change]: *s*k*ú*t*i*l*a
+OEStripSecondaryStress [no-change]: *s*k*ú*t*i*l*a
+OEInterStressRaising [no-change]: *s*k*ú*t*i*l*a
+OEWICombinativeUUmlaut [no-change]: *s*k*ú*t*i*l*a
+PWGmcFinalBareALoss: *s*k*ú*t*i*l
+NWGmcInStemNLoss [no-change]: *s*k*ú*t*i*l
+PWGmcSurvivingBimoricOUnrounding [no-change]: *s*k*ú*t*i*l
+EAFBrighteningUnstressed [no-change]: *s*k*ú*t*i*l
+EAFBrightening [no-change]: *s*k*ú*t*i*l
+EAFBrighteningLongFinal [no-change]: *s*k*ú*t*i*l
+OEBreaking [no-change]: *s*k*ú*t*i*l
+OEVelarFricativePalatalization [no-change]: *s*k*ú*t*i*l
+OEARestoration [no-change]: *s*k*ú*t*i*l
+OEHeavySyllableNasalApocope [no-change]: *s*k*ú*t*i*l
+OESecondaryNasalization [no-change]: *s*k*ú*t*i*l
+SieversLawSyncope [no-change]: *s*k*ú*t*i*l
+OESkPalatalization: *ʃ*ú*t*i*l
+OEVelarPalatalization [no-change]: *ʃ*ú*t*i*l
+OEPrefixAReduction [no-change]: *ʃ*ú*t*i*l
+OEPostVelarWLoss [no-change]: *ʃ*ú*t*i*l
+OEWsPalatalDiphthongization [no-change]: *ʃ*ú*t*i*l
+OEIUmlaut: *ʃ*y*t*i*l
+OEWLossBeforeI [no-change]: *ʃ*y*t*i*l
+OELatePalatalDiphthong [no-change]: *ʃ*y*t*i*l
+OEJClusterCoalescence [no-change]: *ʃ*y*t*i*l
+OEBackMutation [no-change]: *ʃ*y*t*i*l
+OEWsPalatalUmlaut [no-change]: *ʃ*y*t*i*l
+OEWeakTailNasalLoss [no-change]: *ʃ*y*t*i*l
+OEWeightMarkers [no-change]: *ʃ*y*t*i*l
+OENonHighSyn [no-change]: *ʃ*y*t*i*l
+PGmcBAllophony [no-change]: *ʃ*y*t*i*l
+OEMedLongShort [no-change]: *ʃ*y*t*i*l
+OEHighVowelApocope [no-change]: *ʃ*y*t*i*l
+OEMedialSyncope [no-change]: *ʃ*y*t*i*l
+OEHighLinkSyncope [no-change]: *ʃ*y*t*i*l
+OELAdjacentSyncope [no-change]: *ʃ*y*t*i*l
+OEHighStressDecode [no-change]: *ʃ*y*t*i*l
+OEDentalAssimilation [no-change]: *ʃ*y*t*i*l
+OEPreconsonantalDegemination [no-change]: *ʃ*y*t*i*l
+OEEarlyOShortening [no-change]: *ʃ*y*t*i*l
+OEUnstressedFrontingEarly [no-change]: *ʃ*y*t*i*l
+OELateOShortening [no-change]: *ʃ*y*t*i*l
+OEMedUnstressedORaising [no-change]: *ʃ*y*t*i*l
+OEFinalUnstressedOLowering [no-change]: *ʃ*y*t*i*l
+OEUnstressedLongVowelShortening [no-change]: *ʃ*y*t*i*l
+OEUnstressedAEMerger [no-change]: *ʃ*y*t*i*l
+OEMedUnstressedILowering1: *ʃ*y*t*e*l
+OEMedUnstressedILowering [no-change]: *ʃ*y*t*e*l
+OEMedUnstressedULowering [no-change]: *ʃ*y*t*e*l
+OEPrefixIReduction [no-change]: *ʃ*y*t*e*l
+OEWeakTailReduction [no-change]: *ʃ*y*t*e*l
+OEJLossAfterHeavy [no-change]: *ʃ*y*t*e*l
+OEFinalGeminateSimplification [no-change]: *ʃ*y*t*e*l
+OEJStrengtheningAfterFrontDiphthong [no-change]: *ʃ*y*t*e*l
+OEIntervocalicJVocalization [no-change]: *ʃ*y*t*e*l
+OEUnstressedEIContraction [no-change]: *ʃ*y*t*e*l
+OEWeightCleanup [no-change]: *ʃ*y*t*e*l
+OEHLoss [no-change]: *ʃ*y*t*e*l
+OEContraction [no-change]: *ʃ*y*t*e*l
+OERMetathesis [no-change]: *ʃ*y*t*e*l
+OEEpentheticVowel [no-change]: *ʃ*y*t*e*l
+OELateUnstressedAgSuffix [no-change]: *ʃ*y*t*e*l
+OEPalatalFricativeMerger [no-change]: *ʃ*y*t*e*l
+OECjCleanup [no-change]: *ʃ*y*t*e*l
+OEXsMerge [no-change]: *ʃ*y*t*e*l
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography: sċ*y*t*e*l
+OEWsPalatalGlide [no-change]: sċ*y*t*e*l
+OldEnglishRemoveStars: sċytel
+OldEnglishSurface [no-change]: sċytel
+
 
 === BUCKET: final_vowel_extra (1) ===
 
@@ -53283,11 +53553,11 @@ board :: *búrdą, bore :: *búrōjaną, bottom :: *búttmaz, bow :: *búgô, co
 PNWGmcStressedMonosyllableORaising: 1
 both :: *bō
 
-PNWGmcFinalLongORaising: 27
-beech :: *bōkō, bier :: *bḗrō, dew :: *dáwwō, hall :: *xállō, help :: *xélpō, herd :: *xérdō, hind :: *xéndjō, linden :: *líndō, liver :: *líbrō, lung :: *lúnganjō, lye :: *láugō, march :: *márkō, nave :: *nábō, needle :: *nḗðlō, nose :: *núsō, rind :: *ríndō, rood :: *rōdō, sake :: *sákō, salve :: *sálbō, shame :: *skámō, shovel :: *skúflō, shower :: *skūrō, sorrow :: *súrgō, tongs :: *tángō, while :: *xwḯlō, little :: *lūtilō, wool :: *wúllō
+PNWGmcFinalLongORaising: 28
+beech :: *bōkō, bier :: *bḗrō, dew :: *dáwwō, hall :: *xállō, help :: *xélpō, herd :: *xérdō, hind :: *xéndjō, linden :: *líndō, liver :: *líbrō, lung :: *lúnganjō, lye :: *láugō, march :: *márkō, nave :: *nábō, needle :: *nḗðlō, nose :: *núsō, rind :: *ríndō, rood :: *rōdō, sake :: *sákō, salve :: *sálbō, shame :: *skámō, shovel :: *skúflō, shower :: *skūrō, sorrow :: *súrgō, tongs :: *tángō, while :: *xwḯlō, little :: *lūtilō, livestock :: *náutīnō, wool :: *wúllō
 
-EAFFinalZDeletion: 115
-beard :: *bárdaz, beaver :: *bébruz, belly :: *bálgiz, birth :: *búrdiz, bosom :: *bōsmaz, bottom :: *búttmaz, bough :: *bōguz, breeches :: *brōkiz, bride :: *brūdiz, calf :: *kálbaz, comb :: *kámbaz, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, dill :: *déliz, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, eel :: *ḗlaz, fern :: *fárnaz, field :: *félθuz, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flesh :: *fláiskiz, flood :: *flōduz, fox :: *fúxsaz, friend :: *fríjōndz, fright :: *fúrxtīnaz, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, ground :: *grúnduz, guest :: *gástiz, hammer :: *xámaraz, hand :: *xánduz, harm :: *xármaz, harvest :: *xárbistuz, hawk :: *xábukaz, hazel :: *xáslaz, hearth :: *xérθaz, heath :: *xáiθiz, hedge :: *xágjaz, helm :: *xélmaz, home :: *xáimaz, hood :: *xōdaz, hoof :: *xōfaz, hound :: *xúndaz, knight :: *knéxtaz, leek :: *láukaz, loath :: *láiθaz, lock :: *lúkkaz, lust :: *lústuz, malt :: *máltaz, mast :: *mástaz, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, nail :: *náglaz, need :: *náudiz, one :: *áinaz, oven :: *úfnaz, raven :: *xrábnaz, reek :: *ráukaz, rest :: *rástōz, coat :: *rúkkaz, rudder :: *rōθraz, rye :: *rúgiz, sea :: *sáiwiz, seam :: *sáumaz, sheath :: *skáiθiz, shield :: *skélduz, shilling :: *skíllingaz, shoulder :: *skúldramiz, snow :: *snáiwaz, spoon :: *spḗnuz, staff :: *stábaz, stem :: *stámniz, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, string :: *strángiz, summer :: *súmaraz, team :: *táugmaz, thane :: *θégnaz, thanks :: *θánkaz, thief :: *θéubaz, thirst :: *θúrstuz, thorn :: *θúrnaz, three :: *θréjez, thunder :: *θúnraz, tide :: *tḯdiz, wain :: *wágnaz, wasp :: *wábsaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, wight :: *wéxtiz, winter :: *wíntruz, wold :: *wálθuz, world :: *wír-àldiz, worm :: *wúrmiz, you :: *ízwiz, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz
+EAFFinalZDeletion: 116
+beard :: *bárdaz, beaver :: *bébruz, belly :: *bálgiz, birth :: *búrdiz, bosom :: *bōsmaz, bottom :: *búttmaz, bough :: *bōguz, breeches :: *brōkiz, bride :: *brūdiz, calf :: *kálbaz, comb :: *kámbaz, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, dill :: *déliz, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, eel :: *ḗlaz, fern :: *fárnaz, field :: *félθuz, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flesh :: *fláiskiz, flood :: *flōduz, fox :: *fúxsaz, friend :: *fríjōndz, fright :: *fúrxtīnaz, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, ground :: *grúnduz, guest :: *gástiz, hammer :: *xámaraz, hand :: *xánduz, harm :: *xármaz, harvest :: *xárbistuz, hawk :: *xábukaz, hazel :: *xáslaz, hearth :: *xérθaz, heath :: *xáiθiz, hedge :: *xágjaz, helm :: *xélmaz, home :: *xáimaz, hood :: *xōdaz, hoof :: *xōfaz, hound :: *xúndaz, knight :: *knéxtaz, leek :: *láukaz, loath :: *láiθaz, lock :: *lúkkaz, lust :: *lústuz, malt :: *máltaz, mast :: *mástaz, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, nail :: *náglaz, need :: *náudiz, one :: *áinaz, oven :: *úfnaz, raven :: *xrábnaz, reek :: *ráukaz, rest :: *rástōz, coat :: *rúkkaz, rudder :: *rōθraz, rye :: *rúgiz, sea :: *sáiwiz, seam :: *sáumaz, sheath :: *skáiθiz, shield :: *skélduz, shilling :: *skíllingaz, shoulder :: *skúldramiz, snow :: *snáiwaz, spoon :: *spḗnuz, staff :: *stábaz, stem :: *stámniz, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, string :: *strángiz, summer :: *súmaraz, team :: *táugmaz, thane :: *θégnaz, thanks :: *θánkaz, thief :: *θéubaz, thirst :: *θúrstuz, thorn :: *θúrnaz, three :: *θréjez, thunder :: *θúnraz, tide :: *tḯdiz, wain :: *wágnaz, wasp :: *wábsaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, wight :: *wéxtiz, winter :: *wíntruz, wold :: *wálθuz, world :: *wír-àldiz, worm :: *wúrmiz, you :: *ízwiz, dart :: *skútilaz, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz
 
 PWGmcUnstressedWordFinalIApocope: 1
 you :: *ízwiz
@@ -53333,8 +53603,8 @@ bone :: *báiną, deal :: *dáiliz, dough :: *dáigaz, flesh :: *fláiskiz, ghos
 OEAwwjResolution: 2
 hay :: *xáwją, strew :: *stráwjaną
 
-OEAuBrightening: 21
-believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz, straw :: *stráwą
+OEAuBrightening: 22
+believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz, livestock :: *náutīnō, straw :: *stráwą
 
 OEEwLongDiphthong: 1
 hue :: *xíwją
@@ -53344,8 +53614,8 @@ OEJWWSimplification: 0
 OEJGlideIO: 1
 hue :: *xíwją
 
-OEDiphthongLeveling: 33
-believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, breast :: *bréustą, chew :: *kéwwaną, deer :: *déuzą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, flee :: *fléuxaną, fly :: *fléuganą, forlorn :: *léusaną, four :: *fédwōr, freeze :: *fréusaną, friend :: *fríjōndz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, light :: *léuxtijaną, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz, thief :: *θéubaz, you :: *ízwiz, straw :: *stráwą
+OEDiphthongLeveling: 34
+believe :: *galáubijaną, bow :: *báugijaną, bow :: *báug, bread :: *bráudą, breast :: *bréustą, chew :: *kéwwaną, deer :: *déuzą, dew :: *dáwwō, dream :: *dráugmaz, flea :: *fláuxz, flee :: *fléuxaną, fly :: *fléuganą, forlorn :: *léusaną, four :: *fédwōr, freeze :: *fréusaną, friend :: *fríjōndz, hay :: *xáwją, head :: *xáubudą, hew :: *xáwwaną, leaf :: *láubą, leek :: *láukaz, light :: *léuxtijaną, lye :: *láugō, need :: *náudiz, reek :: *ráukaz, seam :: *sáumaz, shove :: *skáub, stream :: *stráumaz, strew :: *stráwjaną, team :: *táugmaz, thief :: *θéubaz, you :: *ízwiz, livestock :: *náutīnō, straw :: *stráwą
 
 OEAwLongDiphthong: 3
 show :: *skáwōjaną, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi
@@ -53361,8 +53631,8 @@ world :: *wír-àldiz
 OEWICombinativeUUmlaut: 1
 widow :: *wíduwōn
 
-PWGmcFinalBareALoss: 69
-beard :: *bárdaz, bosom :: *bōsmaz, bottom :: *búttmaz, calf :: *kálbaz, comb :: *kámbaz, craft :: *kráftaz, crop :: *krúppaz, dale :: *dálaz, day :: *dágaz, dough :: *dáigaz, dream :: *dráugmaz, eel :: *ḗlaz, fern :: *fárnaz, finger :: *fíngraz, fish :: *fískaz, fox :: *fúxsaz, fright :: *fúrxtīnaz, gang :: *gángaz, ghost :: *gáistaz, hammer :: *xámaraz, harm :: *xármaz, hawk :: *xábukaz, hazel :: *xáslaz, hearth :: *xérθaz, hedge :: *xágjaz, helm :: *xélmaz, home :: *xáimaz, hood :: *xōdaz, hoof :: *xōfaz, hound :: *xúndaz, knight :: *knéxtaz, leek :: *láukaz, loath :: *láiθaz, lock :: *lúkkaz, malt :: *máltaz, mast :: *mástaz, mood :: *mōdaz, nail :: *náglaz, one :: *áinaz, oven :: *úfnaz, raven :: *xrábnaz, reek :: *ráukaz, coat :: *rúkkaz, rudder :: *rōθraz, seam :: *sáumaz, shilling :: *skíllingaz, snow :: *snáiwaz, staff :: *stábaz, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, summer :: *súmaraz, team :: *táugmaz, thane :: *θégnaz, thanks :: *θánkaz, thief :: *θéubaz, thorn :: *θúrnaz, thunder :: *θúnraz, wain :: *wágnaz, wasp :: *wábsaz, way :: *wégaz, whale :: *xwálaz, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz
+PWGmcFinalBareALoss: 70
+beard :: *bárdaz, bosom :: *bōsmaz, bottom :: *búttmaz, calf :: *kálbaz, comb :: *kámbaz, craft :: *kráftaz, crop :: *krúppaz, dale :: *dálaz, day :: *dágaz, dough :: *dáigaz, dream :: *dráugmaz, eel :: *ḗlaz, fern :: *fárnaz, finger :: *fíngraz, fish :: *fískaz, fox :: *fúxsaz, fright :: *fúrxtīnaz, gang :: *gángaz, ghost :: *gáistaz, hammer :: *xámaraz, harm :: *xármaz, hawk :: *xábukaz, hazel :: *xáslaz, hearth :: *xérθaz, hedge :: *xágjaz, helm :: *xélmaz, home :: *xáimaz, hood :: *xōdaz, hoof :: *xōfaz, hound :: *xúndaz, knight :: *knéxtaz, leek :: *láukaz, loath :: *láiθaz, lock :: *lúkkaz, malt :: *máltaz, mast :: *mástaz, mood :: *mōdaz, nail :: *náglaz, one :: *áinaz, oven :: *úfnaz, raven :: *xrábnaz, reek :: *ráukaz, coat :: *rúkkaz, rudder :: *rōθraz, seam :: *sáumaz, shilling :: *skíllingaz, snow :: *snáiwaz, staff :: *stábaz, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, summer :: *súmaraz, team :: *táugmaz, thane :: *θégnaz, thanks :: *θánkaz, thief :: *θéubaz, thorn :: *θúrnaz, thunder :: *θúnraz, wain :: *wágnaz, wasp :: *wábsaz, way :: *wégaz, whale :: *xwálaz, dart :: *skútilaz, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz
 
 NWGmcInStemNLoss: 1
 fright :: *fúrxtīnaz
@@ -53397,8 +53667,8 @@ bake :: *bákaną, begin :: *bigínnaną, believe :: *galáubijaną, bind :: *b�
 SieversLawSyncope: 19
 believe :: *galáubijaną, bow :: *báugijaną, fast :: *fástijaną, follow :: *fúlgijaną, heal :: *xáilijaną, last :: *láistijaną, lead :: *láidijaną, light :: *léuxtijaną, mean :: *máinijaną, seek :: *sōkijaną, send :: *sándijaną, singe :: *sángijaną, smear :: *smérwijaną, spread :: *spráidijaną, start :: *stúrtijaną, still :: *stéllijaną, stretch :: *strákkijaną, think :: *θánkijaną, betray :: *lḗwijaną
 
-OESkPalatalization: 18
-fish :: *fískaz, flesh :: *fláiskiz, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, thrash :: *θréskaną, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi
+OESkPalatalization: 19
+fish :: *fískaz, flesh :: *fláiskiz, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, thrash :: *θréskaną, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, dart :: *skútilaz
 
 OEVelarPalatalization: 32
 begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, follow :: *fúlgijaną, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hedge :: *xágjaz, honey :: *xúnagą, nail :: *náglaz, rain :: *régną, rainbow :: *régna-bùgô, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, singe :: *sángijaną, stretch :: *strákkijaną, string :: *strángiz, thane :: *θégnaz, think :: *θánkijaną, wain :: *wágnaz, way :: *wégaz, withy :: *wḯθagą, yarn :: *gárną
@@ -53412,8 +53682,8 @@ sing :: *síngwaną
 OEWsPalatalDiphthongization: 7
 give :: *gébaną, guest :: *gástiz, shaft :: *skáftą, shear :: *skéraną, sheep :: *skḗpą, shield :: *skélduz, year :: *jḗrą
 
-OEIUmlaut: 70
-believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, birth :: *búrdiz, bore :: *búrōjaną, bow :: *báugijaną, breeches :: *brōkiz, bride :: *brūdiz, cow :: *kūi, deal :: *dáiliz, dill :: *déliz, drench :: *dránkiz, fast :: *fástijaną, fist :: *fúnxstiz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, guest :: *gástiz, handle :: *xándlōjaną, harvest :: *xárbistuz, hay :: *xáwją, heal :: *xáilijaną, heath :: *xáiθiz, hedge :: *xágjaz, hind :: *xéndjō, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, learn :: *líznōjaną, lick :: *líkkōjaną, light :: *léuxtijaną, lung :: *lúnganjō, make :: *mákōjaną, mean :: *máinijaną, might :: *máxtiz, need :: *náudiz, net :: *nátją, nettle :: *nátilōn, night :: *náxti, rye :: *rúgiz, sea :: *sáiwiz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, sheath :: *skáiθiz, show :: *skáwōjaną, singe :: *sángijaną, sit :: *sétjaną, smear :: *smérwijaną, spare :: *spárōjaną, spindle :: *spénnilǭ, spread :: *spráidijaną, start :: *stúrtijaną, stem :: *stámniz, still :: *stéllijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, sunder :: *súndrōjaną, think :: *θánkijaną, thistle :: *θístilas, three :: *θréjez, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, worm :: *wúrmiz, hue :: *xíwją, filth :: *fūliþǭ, little :: *lūtilō, fire :: *fūri
+OEIUmlaut: 72
+believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, birth :: *búrdiz, bore :: *búrōjaną, bow :: *báugijaną, breeches :: *brōkiz, bride :: *brūdiz, cow :: *kūi, deal :: *dáiliz, dill :: *déliz, drench :: *dránkiz, fast :: *fástijaną, fist :: *fúnxstiz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, guest :: *gástiz, handle :: *xándlōjaną, harvest :: *xárbistuz, hay :: *xáwją, heal :: *xáilijaną, heath :: *xáiθiz, hedge :: *xágjaz, hind :: *xéndjō, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, learn :: *líznōjaną, lick :: *líkkōjaną, light :: *léuxtijaną, lung :: *lúnganjō, make :: *mákōjaną, mean :: *máinijaną, might :: *máxtiz, need :: *náudiz, net :: *nátją, nettle :: *nátilōn, night :: *náxti, rye :: *rúgiz, sea :: *sáiwiz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, sheath :: *skáiθiz, show :: *skáwōjaną, singe :: *sángijaną, sit :: *sétjaną, smear :: *smérwijaną, spare :: *spárōjaną, spindle :: *spénnilǭ, spread :: *spráidijaną, start :: *stúrtijaną, stem :: *stámniz, still :: *stéllijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, sunder :: *súndrōjaną, think :: *θánkijaną, thistle :: *θístilas, three :: *θréjez, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, worm :: *wúrmiz, hue :: *xíwją, filth :: *fūliþǭ, little :: *lūtilō, livestock :: *náutīnō, dart :: *skútilaz, fire :: *fūri
 
 OEWLossBeforeI: 1
 sea :: *sáiwiz
@@ -53439,8 +53709,8 @@ find :: *fúnðanai, rainbow :: *régna-bùgô, soul :: *sáiwalǭ, earthly :: *
 PGmcBAllophony: 28
 beaver :: *bébruz, believe :: *galáubijaną, calf :: *kálbaz, drive :: *drḯbaną, give :: *gébaną, grave :: *grábaną, harvest :: *xárbistuz, have :: *xábēθi, hawk :: *xábukaz, head :: *xáubudą, heaven :: *xébun, leaf :: *láubą, life :: *lḯbą, live :: *líbēθi, liver :: *líbrō, nave :: *nábō, navel :: *nábulô, raven :: *xrábnaz, salve :: *sálbō, seven :: *sébun, shove :: *skáub, sieve :: *síbi, staff :: *stábaz, starve :: *stérbaną, thief :: *θéubaz, wasp :: *wábsaz, weave :: *wébaną, wife :: *wḯbą
 
-OEMedLongShort: 9
-bore :: *búrōjaną, handle :: *xándlōjaną, learn :: *líznōjaną, lick :: *líkkōjaną, make :: *mákōjaną, show :: *skáwōjaną, spare :: *spárōjaną, sunder :: *súndrōjaną, wound :: *wúndōdē
+OEMedLongShort: 10
+bore :: *búrōjaną, handle :: *xándlōjaną, learn :: *líznōjaną, lick :: *líkkōjaną, make :: *mákōjaną, show :: *skáwōjaną, spare :: *spárōjaną, sunder :: *súndrōjaną, wound :: *wúndōdē, livestock :: *náutīnō
 
 OEHighVowelApocope: 63
 beaver :: *bébruz, beech :: *bōkō, belly :: *bálgiz, bier :: *bḗrō, birth :: *búrdiz, bough :: *bōguz, breeches :: *brōkiz, bride :: *brūdiz, cow :: *kūi, deal :: *dáiliz, deed :: *dḗdiz, dew :: *dáwwō, drench :: *dránkiz, field :: *félθuz, fist :: *fúnxstiz, flesh :: *fláiskiz, flood :: *flōduz, gift :: *gíftiz, ground :: *grúnduz, guest :: *gástiz, hall :: *xállō, hand :: *xánduz, harvest :: *xárbistuz, heath :: *xáiθiz, help :: *xélpō, herd :: *xérdō, hind :: *xéndjō, linden :: *líndō, liver :: *líbrō, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, march :: *márkō, might :: *máxtiz, need :: *náudiz, needle :: *nḗðlō, night :: *náxti, rind :: *ríndō, rood :: *rōdō, salve :: *sálbō, sea :: *sáiwiz, sheath :: *skáiθiz, shield :: *skélduz, shovel :: *skúflō, shower :: *skūrō, sorrow :: *súrgō, spindle :: *spénnilǭ, spoon :: *spḗnuz, stem :: *stámniz, string :: *strángiz, thirst :: *θúrstuz, thistle :: *θístilas, tide :: *tḯdiz, tongs :: *tángō, wether :: *wéθruz, while :: *xwḯlō, wight :: *wéxtiz, winter :: *wíntruz, wold :: *wálθuz, worm :: *wúrmiz, filth :: *fūliþǭ, fire :: *fūri, wool :: *wúllō
@@ -53479,8 +53749,8 @@ adder :: *nḗdrōn, bow :: *búgô, earth :: *érθōn, father :: *fádēr, fin
 OEUnstressedAEMerger: 34
 adder :: *nḗdrōn, ban :: *bánnas, berry :: *bázjas, brand :: *brándas, earth :: *érθōn, flask :: *fláskōn, four :: *fédwōr, hammer :: *xámaraz, heart :: *xértōn, honey :: *xúnagą, line :: *lḯnōn, list :: *lḯstōn, man :: *mánnas, nettle :: *nátilōn, nightmare :: *márōn, rest :: *rástōz, side :: *sḯdōn, soul :: *sáiwalǭ, spindle :: *spénnilǭ, summer :: *súmaraz, sun :: *súnnōn, swallow :: *swálwōn, swan :: *swánas, thistle :: *θístilas, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, water :: *wátōr, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, withy :: *wḯθagą, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ
 
-OEMedUnstressedILowering1: 7
-dill :: *déliz, fright :: *fúrxtīnaz, harvest :: *xárbistuz, rye :: *rúgiz, shilling :: *skíllingaz, sieve :: *síbi, little :: *lūtilō
+OEMedUnstressedILowering1: 9
+dill :: *déliz, fright :: *fúrxtīnaz, harvest :: *xárbistuz, rye :: *rúgiz, shilling :: *skíllingaz, sieve :: *síbi, little :: *lūtilō, livestock :: *náutīnō, dart :: *skútilaz
 
 OEMedUnstressedILowering: 1
 shilling :: *skíllingaz
@@ -53534,13 +53804,13 @@ OECjCleanup: 0
 OEXsMerge: 6
 flax :: *fláxsą, fox :: *fúxsaz, ox :: *úxsô, six :: *séxs, wax :: *wáxsą, wax :: *wáxsaną
 
-OldEnglishOrthography: 134
-bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, earth :: *érθōn, fee :: *féx, fight :: *féxtaną, fish :: *fískaz, flea :: *fláuxz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, furrow :: *fúrx, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knight :: *knéxtaz, lade :: *xláðaną, laugh :: *xláxjaną, leather :: *léθrą, lid :: *xlídą, light :: *léuxtijaną, live :: *líbēθi, loath :: *láiθaz, might :: *máxtiz, month :: *mḗnōθz, nail :: *náglaz, neck :: *xnékkô, night :: *náxti, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, rudder :: *rōθraz, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, singe :: *sángijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, wain :: *wágnaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, wight :: *wéxtiz, withy :: *wḯθagą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ
+OldEnglishOrthography: 135
+bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, earth :: *érθōn, fee :: *féx, fight :: *féxtaną, fish :: *fískaz, flea :: *fláuxz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, furrow :: *fúrx, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knight :: *knéxtaz, lade :: *xláðaną, laugh :: *xláxjaną, leather :: *léθrą, lid :: *xlídą, light :: *léuxtijaną, live :: *líbēθi, loath :: *láiθaz, might :: *máxtiz, month :: *mḗnōθz, nail :: *náglaz, neck :: *xnékkô, night :: *náxti, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, rudder :: *rōθraz, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, singe :: *sángijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, wain :: *wágnaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, wight :: *wéxtiz, withy :: *wḯθagą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, dart :: *skútilaz
 
 OEWsPalatalGlide: 2
 yoke :: *júką, youth :: *júgunθ
 
-OldEnglishRemoveStars: 392
-adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féx, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanai, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flask :: *fláskōn, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalǭ, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilǭ, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstą, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldiz, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, little :: *lūtilō, straw :: *stráwą, tap :: *táppô, fire :: *fūri, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
+OldEnglishRemoveStars: 394
+adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féx, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanai, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flask :: *fláskōn, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalǭ, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilǭ, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstą, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldiz, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, little :: *lūtilō, livestock :: *náutīnō, dart :: *skútilaz, straw :: *stráwą, tap :: *táppô, fire :: *fūri, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
 
 OldEnglishSurface: 0

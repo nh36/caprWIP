@@ -1,0 +1,59 @@
+{
+ "experiment_id": "hvd-lexical-finish-dart-gate-02",
+ "outcome": "passed",
+ "summary": "All392 current records preserved and bounded alternative-control/native-grammar discrimination; not final adoption certification.",
+ "completed_at": "2026-11-08T23:59:47Z",
+ "command_receipts": [
+  {
+   "receipt_version": 2,
+   "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/hvd-lexical-finish-dart-gate-02/staging/hvd-lexical-coverage-8f227bf78788407591703126aa1120f5.receipt.json",
+   "label": "hvd-lexical-coverage",
+   "argv": [
+    "docker",
+    "compose",
+    "exec",
+    "-T",
+    "backend",
+    "python3",
+    "/tmp/capr-exp-hvd-lexical-finish-dart-gate-02-d45a5b8b894f4c7988527344f61c9031/worker.py",
+    "/tmp/capr-exp-hvd-lexical-finish-dart-gate-02-d45a5b8b894f4c7988527344f61c9031"
+   ],
+   "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+   "cwd": "/Users/nathanhill/Code/capr",
+   "started_at": "2026-11-08T23:54:05Z",
+   "finished_at": "2026-11-08T23:59:47Z",
+   "returncode": 0,
+   "timed_out": false,
+   "ok": true,
+   "source_identity": {
+    "head_commit": "7083b698a1b6d0b73296397b9b31a1e60c5f557a",
+    "worktree_changes": {},
+    "identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d",
+    "recorded_at": "2026-11-08T23:54:05Z"
+   },
+   "source_identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d",
+   "source_identity_after": {
+    "head_commit": "7083b698a1b6d0b73296397b9b31a1e60c5f557a",
+    "worktree_changes": {},
+    "identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d",
+    "recorded_at": "2026-11-08T23:59:47Z"
+   },
+   "source_changed": false,
+   "level": null,
+   "lane": null,
+   "pytest_addopts": "",
+   "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/hvd-lexical-finish-dart-gate-02/staging/hvd-lexical-coverage-8f227bf78788407591703126aa1120f5.stdout.log",
+   "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/hvd-lexical-finish-dart-gate-02/staging/hvd-lexical-coverage-8f227bf78788407591703126aa1120f5.stderr.log",
+   "stdout_sha256": "8f08239929044e079bd46c81834066251f4d06736d4111111d550af2b8be478f",
+   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "evidence": {},
+ "result_hashes": {
+  "hvd-lexical-coverage-8f227bf78788407591703126aa1120f5.receipt.json": "5e8b3c2dcc2b1586058e1939c1835b75c754624a7fd61ea4f401d92e25e234b3",
+  "hvd-lexical-coverage-8f227bf78788407591703126aa1120f5.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "hvd-lexical-coverage-8f227bf78788407591703126aa1120f5.stdout.log": "8f08239929044e079bd46c81834066251f4d06736d4111111d550af2b8be478f",
+  "report.json": "8319fea3163cb4a3e967afc11e1149f0f00066476c84895629c8c1bff6c84795"
+ },
+ "source_identity_sha256": "3c61442310962502b53f9baa7e9f5ab57766dc1a1dedf97cdcd8df86068d9c9d"
+}

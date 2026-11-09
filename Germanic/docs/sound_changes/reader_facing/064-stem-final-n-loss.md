@@ -54,3 +54,12 @@ Final \emph{*ī} remains long until later shortening, while medial
 [@Goering2016, pp. 186--188; @Goering2023, pp. 67--68].
 No word-specific protection or added accent is required. The exact date
 of paradigmatic retention or restoration is not fixed by these comparisons.
+
+The selected plural avoids that singular problem. Fulk prints
+\emph{*nautīnō}, the ancestor of the Mercian plural, while the
+Hatton *Pastoral Care* attests West Saxon *nietenu* 'animals, livestock'
+[@Fulk2018, p. 92, §5.6; @Sweet1871, p. 109, lines 8--11;
+@RingeTaylor2014, pp. 298--299]. Its medial nasal is followed by the
+plural vowel throughout this early loss and therefore survives
+regularly. The full plural reaches *nīetenu* 'animals' without either an
+exception to this law or a transponent with restored final *n*.

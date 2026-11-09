@@ -25,6 +25,7 @@ CONSOLIDATION_CHANGED = {
     "OEMedialSyncope", "OELAdjacentSyncope", "OENonHighSyn", "OEHighVowelApocope",
     "OEWLossBeforeI",
 }
+LEXICAL_GRAMMAR_CHANGED = {"PGCellEnd"}
 
 
 def assert_intervention_scope():
@@ -51,12 +52,20 @@ def assert_intervention_scope():
     assert not consolidated_base.keys() - current.keys()
     assert {name for name in consolidated_base
             if "".join(current[name].body.split()) !=
-               "".join(consolidated_base[name].body.split())} == CONSOLIDATION_CHANGED
+               "".join(consolidated_base[name].body.split())} == (
+                   CONSOLIDATION_CHANGED | LEXICAL_GRAMMAR_CHANGED)
     corrected = parse_defines(subprocess.check_output(
         ["git", "show", "3e2fe1b6d8ac606e854534798bb6688805c3875e:Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True))
     for name in CONSOLIDATION_ADDED | CONSOLIDATION_CHANGED:
         assert current[name].body == corrected[name].body
+    lexical = parse_defines(subprocess.check_output(
+        ["git", "show", "e16ac243382280b0c7ffc50335d6cc1f28051b3e:Germanic/fsts/germanic.txt"],
+        cwd=ROOT, text=True))
+    assert "".join(lexical["PGCellEnd"].body.split()) == (
+        "".join(corrected["PGCellEnd"].body.split()).replace(
+            "a:{*a}s:{*s}|", "a:{*a}s:{*s}|a:{*a}n:{*n}z:{*z}|"))
+    assert current["PGCellEnd"].body == lexical["PGCellEnd"].body
 
 
 def test_intervention_changes_are_exactly_source_bound():

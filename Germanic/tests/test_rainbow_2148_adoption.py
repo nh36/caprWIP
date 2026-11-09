@@ -119,9 +119,9 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assembly = ROOT / "Germanic/docs/assembly"
     with (assembly / "manifest_all_by_class.tsv").open() as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    assert len(rows) == 173
+    assert len(rows) == 177
     regular = [row for row in rows if row["derivation_class"] == "regular"]
-    assert len(regular) == 93
+    assert len(regular) == 97
     rainbow = [row for row in regular if row["row_id"] == "2148"]
     assert len(rainbow) == 1
     assert (rainbow[0]["proto"], rainbow[0]["protoform"],

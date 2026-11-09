@@ -181,7 +181,7 @@ def test_fresh_adopted_cascade_and_phonological_components(isolated_definitions)
         isolated_definitions + "python3 docs/sound_changes/audits/sc035-prosody/verify.py",
         text=True, capture_output=True, check=True, timeout=1800)
     data = json.loads(result.stdout)
-    assert data["selected_rows"] == 391
+    assert data["selected_rows"] == 394
     assert data["canonical_and_isolated_agree"] and data["composed_and_incremental_agree"]
     assert data["full_input_climb"] == [["ġestīgan"]]
     expected = dict(receipt()["models"]["C"]["staged_control_finals"])

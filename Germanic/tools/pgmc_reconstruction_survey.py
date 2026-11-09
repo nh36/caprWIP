@@ -145,6 +145,14 @@ def validate_mode(mode: str) -> None:
         raise ValueError(f"unknown validation mode: {mode}")
 
 
+def external_holding(relative: str, path: Path, tracked: set[str],
+                     references: Path) -> bool:
+    return relative not in tracked and (
+        path.suffix.lower() == ".pdf" or
+        (path.suffix.lower() == ".txt" and
+         path.is_relative_to(references / "local")))
+
+
 def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path,
              *, mode: str = "full") -> None:
     validate_mode(mode)
@@ -185,8 +193,8 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
             path = (root / relative).resolve()
             if not path.is_relative_to(references):
                 raise SurveyError(f"source {key}: missing or out-of-library holding {relative}")
-            optional_original = (mode == "portable" and relative not in tracked
-                                 and path.suffix.lower() == ".pdf")
+            optional_original = (mode == "portable" and
+                                 external_holding(relative, path, tracked, references))
             if not path.exists() and not optional_original:
                 raise SurveyError(f"source {key}: missing or out-of-library holding {relative}")
             if path.is_file():
@@ -208,8 +216,8 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
                 raise SurveyError(f"{evidence_id}: {field} must be explicit")
         basis = (root / form["basis"]).resolve()
         original_basis = (
-            mode == "portable" and form["basis"] not in tracked
-            and basis.suffix.lower() == ".pdf"
+            mode == "portable"
+            and external_holding(form["basis"], basis, tracked, references)
             and form["basis"] in ids(source_map[key]["holding_paths"])
             and basis.is_relative_to(references))
         if not basis.is_relative_to(root.resolve()) or (not basis.is_file() and not original_basis):

@@ -73,7 +73,7 @@ class SC032AdjudicationTests(unittest.TestCase):
 
     def test_trace_is_fresh_and_complete(self):
         self.assertEqual(trace_provenance_problems(TRACE.read_text(encoding="utf-8")), [])
-        self.assertEqual(len(self.records), 391)
+        self.assertEqual(len(self.records), 394)
         self.assertEqual({"2333", "2334"} <= set(self.records), True)
         for identifier in ("2333", "2334"):
             forms = self.records[identifier][2]

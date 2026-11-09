@@ -18,7 +18,7 @@ controls. A wrong alternative that changes no old selected history but
 fails on an independently reconstructible candidate confirms that gap.
 An existing selected counterexample would refute it.
 
-## Current state (before any edits)
+## Certified before-state (before the original lexical closeout)
 
 The certified reference has391 singly accepted selections,383 matches
 and eight inherited mismatches: buck, fire, fowl, rust, straw, tap, wolf,
@@ -40,10 +40,10 @@ complete census; counts below do not turn retention into live deletion.
 | Operation and conditioning | Canonical positive application | Canonical discriminatory nonapplication | Plausible wrong alternative and measured failure | Coverage decision |
 | --- | --- | --- | --- | --- |
 | SC054: noninitial w before unstressed i/ī, after mutation | sea, `*s*ǣ*w*i → *s*ǣ*i` | dew retains w outside i/ī; its complete comparator is dēaw | Deletion before any vowel gives dēa; eleven old selections change, including rejected widow. Postvocalic-only and short-i-only restrictions change no old selection but give staged pillow pylwe instead of pyle | Existing canonical positive/non-i negative are adequate; independently sourced pillow remains necessary for consonant adjacency and long ī |
-| SC063: one quantitative high-vowel deletion, retaining HLL | 60 final applications; medial spindle, thistle, filth | New little plural retains `*l*ȳ*t*i*l*u`; head singular is not an HLL plural control | Extra heavy-root medial deletion gives lȳtlu; HLL final apocope gives lȳtel. Both change zero old selected outputs | Admit one source-led plural to close both genuine retention gaps |
+| SC063: one quantitative high-vowel deletion, retaining HLL | 60 final applications; medial spindle, thistle, filth | Little retains `*l*ȳ*t*i*l*u`; full inherited livestock retains `*n*īe*t*i*n*u`; head singular is not an HLL plural control | Extra heavy-root medial deletion gives lȳtlu/nīetnu; HLL final apocope gives lȳtel/nīeten. Neither error changes the certified391 endpoints | Retain little and admit the complementary long-medial livestock plural; no head migration |
 | SC064: early word-final n after unstressed ī | fright, `*f*ú*r*x*t*ī*n → *f*ú*r*x*t*ī` | heaven retains n after short u: `*x*é*b*u*n` | Broad final-n loss after plain short/long vowels gives heofu instead of heofon, with five other old selections changed; heaven is the nearby weak-vowel negative, not all six words | Existing heaven and fright suffice; staged later nētīn remains an independent dead-law control, not a livestock exemption |
-| SC066: later light-root open-medial i loss before l | nettle, `*n*e*t*i*l*ǭ → *n*e*t*l*ǭ` | New little supplies heavy-root nonapplication, not the closed-final negative | Dropping the following-vowel condition gives experimental kettle ċietl instead of ċietel, changing zero old selected outputs | Closed-final canonical gap remains justified until an exact complete kettle endpoint is independently supported; retain the stage control |
-| SC117: early medial shortening within SC072, not final shortening | bore, handle, learn, lick, make, show, spare, sunder, wound | fright keeps final ī for later shortening | Premature final-ī shortening changes fright alone, fyrhte → fyrht | Existing canonical witnesses suffice; no new law or admission |
+| SC066: later light-root open-medial i loss before l | nettle, `*n*e*t*i*l*ǭ → *n*e*t*l*ǭ` | Little supplies heavy-root nonapplication; dart's final `*t*i*l` is closed, unlike nettle's medial `*t*i*l*ǭ` | Dropping the following-vowel condition gives selected dart sċytl instead of sċytel; the same foil gives staged kettle ċietl. Zero earlier392 endpoints change | Admit inherited dart; retain staged kettle and defer its exact primary endpoint |
+| SC117: early medial shortening within SC072, not final shortening | Nine certified firings: bore, handle, learn, lick, make, show, spare, sunder, wound; new livestock shortens medial ī | Fright keeps final ī for later shortening; little's already short medial vowel is unchanged | Premature final-ī shortening changes fright alone, fyrhte → fyrht. Omission changes full inherited livestock nīetenu → nīeten, but no earlier392 endpoint | Livestock adds an otherwise absent complete-cascade dependency discriminator, not a new shortening law |
 
 The complete selected SC063 firing inventory is beaver, beech, belly,
 bier, birth, bough, breeches, bride, cow, deal, deed, dew, drench, field,
@@ -101,10 +101,33 @@ rule is introduced merely to admit it.
 
 Idle's inherited medial a is supported by Orel2003 p203 and
 Kroonen2013 p268. Native *īdalō gives īdl, not īdelu; no inherited
-medial i is manufactured. Livestock remains later-stage evidence:
-Campbell1959 p189 §473 attributes surviving n to inflected forms,
-but does not fix restoration's exact date. A simplex cattle stem
-does not establish a complete derived PGmc livestock cell.
+medial i is manufactured. The renewed original inspection corrects
+the earlier livestock limitation: Fulk2018 p92§5.6 explicitly prints
+*nautīnō > *nēatinu > Mercian nētenu, beside lȳtelu < *lūtilō.
+The passage does not qualify these as illustrative “forms like”.
+RingeTaylor2014 pp298–299 and Goering2016 p186 independently
+distinguish the West Saxon nīetenu endpoint, attested as nietenu
+in Sweet1871 p109:8–11. The long-medial plural is fully inherited,
+not the later-stage nētīn singular. Campbell1959 p189§473 attributes
+that singular's surviving or restored n to inflected forms and does
+not date restoration precisely. The plural has nonfinal n throughout
+and needs no transponent or SC064 exception. Orel2003 p282 and
+Kroonen2013 p385 establish the cattle base only; PROTO *nautīną
+is transparently assembled from Fulk's derivative stem and ordinary
+neuter a-stem singular morphology (Fulk2018 pp145–148§§7.7–7.8),
+not falsely quoted as their derived dictionary entry.
+
+Orel2003 pp346–347 prints masculine *skutilaz, with ON skutill and
+OE scytel. Corpus1325/Sweet1885 p79 directly prints momentum scytel.
+Épinal/Erfurt632/Pheifer1974 p34 prints scytil; p101 explains the
+glossary sense as a balance's moving beam/lever, not a tongue/pointer.
+The dictionary's dart sense and the glossary token's balance sense
+remain distinguished. The selected nominative is the independently
+reconstructed citation cell; a bare Latin gloss does not independently
+identify nominative versus accusative syntax. The target sċytel adds
+only editorial palatal marking, not a new dialectal vowel normalization.
+The Corpus form is not relabelled West Saxon. All these original
+dictionary, edition and paradigm pages were inspected.
 
 Spindle remains the approved accusative. Orel2003 p364 supplies the
 feminine optional-n citation; ClarkHall1960 p272 labels spinle as
@@ -124,7 +147,12 @@ preserves all391 old selected outputs. The admitted exploratory word
 gives lȳtlan rather than lȳtle; the medial deletion is expected but the
 ending's full history is not resolved here. This is an explicit
 unselected-cascade limitation, not grounds to reject a genuine input
-or to change SC063/SC064.
+or to change SC063/SC064. Renewed experiment02 accepts genuine
+*katilanz and *skutilanz on distinct roots (ordinary initial stress
+annotated explicitly) and rejects lūtilanzz/lūtilannz/lūtilanzai.
+It preserves all392 earlier selected outputs. The grammar extension is
+general eligibility, not a claim that every unselected full ending
+history is already solved.
 
 Historical stages, geographical scope and quantitative law remain the
 certified registry decisions, not inferences from network prefixes.
@@ -146,7 +174,7 @@ the selected filth/spindle dependencies retain their established
 source-backed interpretation. Model-local serialization is not new
 historical dating.
 
-## Verdict
+## Original published one-item verdict
 
 RETAIN the certified sound-change decisions; admit little2337 alone
 on the research branch through the controlled expansion route.
@@ -162,7 +190,27 @@ to all391 old selections. Using fewer than the three allowed slots
 is deliberate; neither output agreement nor a population quota
 establishes a reconstruction.
 
-## Propagation (only after verdict)
+## Renewed bounded verdict
+
+RETAIN the adopted sound changes and little2337; add livestock2338
+and dart2339 through the separate coverage_finish approval.
+Keep head's established singular and the spindle/filth accusatives.
+The three total admissions exhaust the assignment ceiling relative
+to391. Kettle remains deferred for its precise primary spelling gap,
+not because its Latin origin makes it a late loan.
+
+The immutable renewed assays are
+`hvd-lexical-finish-full-pgmc-01` and
+`hvd-lexical-finish-dart-gate-02`. Both preserve every392 research
+endpoint. They rehearse394 singly accepted records,386 matches and
+the same eight mismatches. Livestock detects omitted early medial
+shortening, which little and every earlier selected final do not.
+Dart closes the open-versus-final-closed pre-l gap with a genuine
+full reconstruction. Neither admission changes a sound-law body or
+executable order. No analogy, arbitrary target or new chronology is
+introduced to recover an output.
+
+## Original one-item propagation (historical record)
 
 Intended SOURCE includes one OE-only corpus row; explicit same-stage
 PGmc metadata; mature little and current spindle articles/ledgers;
@@ -201,12 +249,105 @@ mandatory for promotion; the definitive execution certificate belongs
 to the resulting tested commit, separately from this scientific record.
 Nothing here authorizes promotion of update before those gates pass.
 
+## Renewed propagation and bounded publication repair
+
+The official fresh-runtime coverage_finish adopter has now established
+394 accepted,386 matched,8 mismatched,0 rejected and0 ambiguous records.
+Its complete outputs hash is
+`43a57847b70b39ec130b4b52a17065be8cedd0e5fe7c6cc801ae1bcecae9fe2c`;
+its lexical projection hash is
+`2783f9617b26caf0ad10836a99d4502f80f47ee13f858aaea123b9351b1c5514`.
+The392-record predecessor is archived intact in
+`cascade_baseline_*_pre_sc063_coverage_finish.*`; its original little
+approval and391-record archive remain unchanged. The baseline-chain
+tests pass22 tests and397 subtests.
+
+The first adopter correctly refused stale corpus-bound bins. The
+official evidence refresh rebuilt all394 equivalent production/sandbox
+outputs and their full trace, then stopped because integration still
+saw the unexpanded392 baseline. The freshly rebuilt official adopter
+then passed, followed by the official SC063 graph finalizer. These
+authentic failures are sequencing receipts, not sound-law failures.
+PROPAGATE was sealed immediately, before publication rendering.
+
+The actual manifest has177 entries,97 regular; reconstruction survey
+has400 identities and394 runnable records, complete800 core reviews,
+and no missing selected source ledgers. SC117 now has the additional
+livestock firing; the other focal firing inventories are unchanged.
+The measured semantic index delta is exactly19 additions, zero removals,
+all confined to the two new lexical articles and their heading/input
+scopes. The existing allowlist is extended only for those exact keys;
+the predecessor22 little/spindle approvals are pinned separately.
+No prose is rewritten to appease index matching.
+
+The directly affected pre-l explanation also distinguishes a short
+nucleus from a light syllable: final closed *til is heavy by closure.
+The adopted following-vowel condition excludes it, while Barrack's
+broader reported formulation must not be described as if no published
+account reaches closed finals. This is explanatory correction, not
+a rule change. The final-n reader now explicitly distinguishes the
+regular nonfinal-n plural from the singular's undated restoration.
+
+Portable holding validation and the exact shared grammar-scope repair
+pass21 focused tests and10 subtests. Complete serial/exclusive,
+rendered-book and exact-commit certification remain mandatory;
+neither the adopter nor these focused passes authorize update promotion.
+
+The renewed strict book's first attempt found two additional scanner
+false positives: the explicitly computed postmutation checkpoints
+*nīetīnu and *ʃytil in the new articles. Exact existing-locator overrides
+classify those as computed intermediates, not independent PGmc citations.
+The mature explanations and nineteen semantic approvals remain unchanged.
+
+The original twenty-six strict failures are classified by their owning
+assertions, not as twenty-six lexical mismatches:
+
+| Class | Original failing assertions | Bounded repair |
+| --- | --- | --- |
+| Current population or fresh evidence denominators | Anglo-Frisian selection; sandbox equivalence; input-context population; registry fingerprint; SC032/034 traces; SC035 cascade; SC112 counts, expansion and runtime; world equivalence and current migration | Use the measured394 current rows while keeping immutable391,392 and380 records and approval receipts |
+| Independently valid input-grammar scope | Two bounded-domain guards; lexical gate extension, archived receipt and runtime; SC035 segmental kernels; SC036 scope; SC037 intervention | Shared exact PGCellEnd ending delta only; source-bound historical kernels and every accepted predecessor output remain protected |
+| Publication and firing population | Rainbow and SC112 manifests; rust census; published-stage authority | Reconcile the generated177-entry/97-regular manifest and actual firing evidence, without changing historical receipts or stage/confidence independence |
+| Current-state presentation | Infrastructure current-state fingerprint | Read the live generated population authority, not an obsolete prose count |
+| Index semantic approvals | World's exact approval-scope guard | Preserve all earlier22 lexical keys and add exactly19 measured new-article/input keys; preserve world's independent eight keys |
+
+The public Colman transcription failure is a separate pre-existing portable
+environment issue. Portable validation now permits only unavailable,
+untracked declared private holdings within the existing library contract;
+full validation still requires originals and actual provenance. Restricted
+texts are not published to satisfy CI. Authentic failed and successful
+receipts are preserved; final certification belongs to the exact tested
+commit, separately from this scholarly decision.
+
+The renewed owner run passed634 tests and1105 subtests but exposed six
+remaining apparatus assertions: Fulk's151 forms had been confused with150
+coverage reviews in three guards; the extra bounded Kroonen no-form review
+raises source-silence rows to34; two projection guards retained398 rows and
+the preceding routing totals. The dart core-author comparison is explicitly
+insufficient evidence, not agreement or disagreement inferred from Kroonen's
+silence. Its Orel citation and primary comparator remain independently secure.
+The measured400-row routing is1 candidate,91 focused,298 ordinary and10
+unit-comparability reviews. None of these repairs changes a lexical input,
+target, historical law or frozen receipt.
+
+The next actual combined-book attempt reached the paragraph-gloss gate.
+Nine genuinely first-mentioned lexical/citation forms lacked explicit
+English glosses: these receive source-appropriate glosses, including the
+primary scytel/scytil balance-beam usage distinguished from the comparative
+dart sense. Two already-glossed reader controls were false positives in
+their later recap paragraphs. The existing validator's exact-context
+mechanism now recognizes those two Part-I recaps only after a prior
+direct gloss; missing, later, unrelated and Part-II anchors remain errors.
+No historical discussion is rewritten to trigger indexing, no global
+gloss exemption is added, and the exact19 semantic keys are unchanged.
+
 ## Residue
 
 Remaining justified gaps are an independently verified full kettle
-endpoint, livestock's complete comparative derivative and restoration,
-and independently staged pillow rather than a newly admitted lexical
-history. Little's deeper root alternation and spindle's comparative
+endpoint and independently staged pillow rather than a newly admitted
+lexical history. Livestock's singular restoration has no independently
+fixed date; it is not required by the adopted plural. Its singular
+PROTO citation remains an explicit morphological reconstruction,
+not a dictionary quotation. Little's deeper root alternation and spindle's comparative
 gemination remain explicit, bounded uncertainties. No general HVD,
 spindle, SC041/042 or SC067/080 investigation is begun.
 The unselected masculine plural's lȳtlan endpoint is also preserved as

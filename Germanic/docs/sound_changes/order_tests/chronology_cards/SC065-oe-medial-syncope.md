@@ -40,7 +40,12 @@ Current first-break evidence does **not** yet identify a historical first-break 
 ## Caveats
 Both sides are boundary-limited rather than historically interpretable. This card should not be used to claim that SC065 must follow any specific earlier stage or precede `SC087`.
 
-## Update (2026-10-29): independently demonstrated earlier boundary SC055 < SC065
+## Historical update (2026-10-29; superseded): earlier boundary SC055 < SC065
+
+This dated interpretation belongs to the former productive SC065.
+Its lexical evidence is retained, but the feeding relation now belongs
+to SC063; current SC065 is an identity anchor.
+
 The negative first-break result above predates the SC065 adjudication and
 its lexical admission of *filth* (row 2335, *fūliþō > fȳlþ). That witness
 independently demonstrates the ordering `SC055 OEIUmlaut < SC065
