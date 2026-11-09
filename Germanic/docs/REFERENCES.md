@@ -210,6 +210,12 @@ preserves that bibliographic distinction.
 
 ### Specific etyma / lexical studies
 
+The [little source intake](../../docs/references/little_2026-11-09/README.md)
+records Meillet1902, Krogmann1935, Heidermanns1993, Levitsky2003,
+Melazzo2014, Luehr2017 and the edition-qualified Luehr1982 author reissue.
+Bibliographic authority is `docs/refs.bib`; PDFs and complete extracts
+remain private. Orel2003, Kroonen2013 and Fulk2018 reuse existing holdings.
+
 - `docs/references/bammesberger_1997_herfest.{pdf,txt}` — Bammesberger on *herfest*
 - `docs/references/hamp_1990_pie_bottom.{pdf,txt}` — Hamp on PIE *bottom*
 - `docs/references/van_helten_1905_zahlwort.{pdf,txt}` — van Helten on a numeral
