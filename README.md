@@ -11,7 +11,7 @@ This repository contains **three parallel research pipelines** sharing common in
 
 | Component | Description | Status |
 |-----------|-------------|--------|
-| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Sequential per-SC adjudication; selected baseline: 7 documented mismatches in 387 runnable OE rows. See [current state](Germanic/docs/CURRENT_STATE.md). |
+| **[Germanic/](Germanic/)** | Proto-Germanic → Old English sound changes | Active research; [current state](Germanic/docs/CURRENT_STATE.md) owns the phase and protected-baseline pointers. |
 | **[Burmish/](Burmish/)** | Proto-Burmish reconstruction | Maintenance mode |
 | **[Celtic/](Celtic/)** | Proto-Celtic → daughter languages (Old/Middle Irish, Welsh, Breton, Cornish, Gaulish, Celtiberian) | Early development |
 
@@ -34,12 +34,12 @@ The Docker stack mounts **Germanic/** by default. To switch to Burmish, edit `do
 ## Repository Structure
 
 ```
-capr-v3-working/
+capr/
 ├── Germanic/               # Proto-Germanic → OE pipeline
 │   ├── data/               # TSV wordlists (germanic-aligned-final.tsv)
 │   ├── fsts/               # FST sources (germanic.txt)
 │   ├── tools/              # Python analysis tools
-│   └── docs/               # DEV_NOTES.md, debug snapshots
+│   └── docs/               # Task routing, SOURCE, publications and archives
 ├── Burmish/                # Proto-Burmish pipeline
 │   ├── data/               # Burmish wordlists
 │   ├── fsts/               # burmish.txt
@@ -47,16 +47,13 @@ capr-v3-working/
 ├── Celtic/                 # Proto-Celtic pipeline
 │   ├── data/               # celtic-aligned-final.tsv
 │   └── fsts/               # celtic.txt + compiled .bin per daughter language
-├── app/                    # Shared web application
-│   ├── backend/            # Flask API (compare_fst.py, refish.py, etc.)
-│   └── frontend/           # Svelte cognate board UI
-├── server/                 # Docker working directory (code copied here)
-├── cognate-app/            # Svelte source (mirrored in app/frontend/)
+├── backend/                # Shared Flask API (compare_fst.py, refish.py)
+├── frontend/               # Shared Svelte cognate board UI
 ├── docs/                   # Shared documentation
-│   ├── references/         # Scholarly sources (PDFs, text extracts)
+│   ├── references/         # Holding metadata and provisioned private sources
 │   ├── runbook.md          # Operational checklist
 │   └── README.md           # Documentation index
-├── build/                  # Compiled .bin files (gitignored)
+├── .capr-work/             # Ignored local evidence and retained linked worktrees
 ├── docker-compose.yml      # Development stack
 └── Caddyfile.dev           # Reverse proxy config
 ```
@@ -67,28 +64,30 @@ The active focus is modeling Proto-Germanic → Old English sound changes via FS
 
 **Current status:** sequential per-SC adjudication with separately instructed
 scoped work; [Germanic/docs/CURRENT_STATE.md](Germanic/docs/CURRENT_STATE.md)
-owns the phase and commands. The selected baseline has **8 documented
-mismatches out of 390 runnable OE rows** (**97.9% accuracy**), not a declaration
+owns the phase, commands and protected-baseline pointers; it is not a declaration
 that research is complete. [Germanic/docs/README.md](Germanic/docs/README.md)
-defines the SOURCE/GENERATED/ARCHIVE hierarchy. Lexical publication has 390
-runnable derivation write-ups, 396 audit records and 169 elaborated assembled
-model entries; see the [generated population summary](Germanic/docs/lexeme_reports/pgmc_integration/population_summary.md).
+defines the SOURCE/GENERATED/ARCHIVE hierarchy. The
+[generated population summary](Germanic/docs/lexeme_reports/pgmc_integration/population_summary.md)
+owns the distinct runnable, audit and editorial populations; this landing page
+does not maintain another set of counts.
 
 Key files:
 - `Germanic/fsts/germanic.txt` — Main FST with all sound change rules
 - `Germanic/data/germanic-aligned-final.tsv` — Aligned proto-forms and OE targets
-- `Germanic/docs/DEV_NOTES.md` — Detailed research log and phonological decisions
+- `Germanic/docs/README.md` — Task routing and current authority
+- `Germanic/docs/archive/DEV_NOTES.md` — Historical research log, not current authority
 
 **Development workflow:**
 ```bash
-# Compile FST and check results
-docker compose exec -T backend bash -c "cd /usr/app && foma -q -l fsts/germanic.txt -e quit"
+# Read-only scientific preparation
+python3 Germanic/tools/adjudicate.py SCNNN --prepare
 
-# Run mismatch analysis
-docker compose exec -T backend python3 tools/oe_mismatch_report.py
+# After authorized SOURCE edits, propagate through the sole artifact graph
+python3 Germanic/tools/adjudicate.py --refresh
 ```
 
-See [Germanic/README.md](Germanic/README.md) for detailed documentation.
+Use [Germanic task routing](Germanic/docs/README.md) before scientific work;
+the controller owns container execution and generated-output propagation.
 
 ## Burmish Pipeline
 
@@ -113,7 +112,7 @@ docker compose exec -T backend bash -c "cd /usr/app && foma -q -l fsts/celtic.tx
 To use Celtic data in the UI, mount Celtic paths in `docker-compose.yml`:
 ```yaml
 volumes:
-  - ./server:/usr/app
+  - ./backend:/usr/app
   - ./Celtic/data:/usr/app/data
   - ./Celtic/fsts:/usr/app/fsts
 ```
@@ -123,10 +122,11 @@ See [Celtic/README.md](Celtic/README.md) for full documentation.
 ## Documentation
 
 - [docs/README.md](docs/README.md) — Documentation index
-- [SETUP.md](SETUP.md) — Full installation guide
-- [USAGE.md](USAGE.md) — UI walkthrough
+- [docs/SETUP.md](docs/SETUP.md) — Full installation guide
+- [docs/USAGE.md](docs/USAGE.md) — UI walkthrough
 - [docs/runbook.md](docs/runbook.md) — Operational checklist
-- [WORKFLOW.md](WORKFLOW.md) — Development workflow
+- [Germanic/docs/README.md](Germanic/docs/README.md) — Scientific task routing
+- [docs/CI_VALIDATION.md](docs/CI_VALIDATION.md) — Portable versus strict validation
 
 ## Citations
 

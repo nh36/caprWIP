@@ -13,6 +13,17 @@ rendering. It fails rather than publishing stale inputs. Outputs are
 the intermediate TeX for diagnosis. Inspect the rendered pages after changes.
 For portable versus strict validation, see [CI validation](../../../docs/CI_VALIDATION.md).
 
+The combined TeX is currently tracked. For a strict publication intended to
+preserve that artifact, use:
+
+```sh
+INDEX_VERBORUM_STRICT=1 ASSEMBLY_KEEP_DEBUG_TEX=1 bash Germanic/docs/assembly/build_capr_book_draft_docker.sh
+```
+
+Without the retention flag, the wrapper's normal intermediate-file cleanup
+removes it. This documents the existing wrapper behavior; it does not change
+the publication generator.
+
 ## Edit the source, not the assembly
 
 | Material | Editable owner |
