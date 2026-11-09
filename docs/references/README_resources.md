@@ -2,6 +2,28 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## Local-library consolidation, 9 November 2026
+
+`docs/references/` remains the canonical provisioned library. Bibliographic
+identity belongs to `docs/refs.bib`; the existing intake manifests, page maps,
+source reviews and consultation records retain their separate responsibilities.
+No new resolver or parallel source manager was introduced.
+
+Retiring ten completed linked worktrees removed 1039 repeated holding paths.
+Each matched both the canonical relative path and SHA256 and a separately
+verified copy in the preserved source-plan restoration package. No canonical
+holding was moved, renamed or overwritten. These are logical duplicate
+paths, not a claim about APFS space reclaimed.
+
+Original PDFs, native extraction, OCR, corrected transcription, annotations
+and page maps were not collapsed merely because they concern the same work.
+Other version-specific local material was privately archived with its path,
+hash and recovery mapping. Historical receipts were not rewritten.
+See the [consolidation record](../POST_AUDIT_INVENTORY.md) for retention
+boundaries. Recovery copies remain on the same volume; independent disaster
+recovery is still outstanding. Complete restricted sources and private
+backup manifests must not be added to public Git.
+
 ## Christiansen2018 acquisition, 9 November 2026
 
 The [intake record](christiansen_2018/README.md), `holdings.tsv` and
