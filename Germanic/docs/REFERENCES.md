@@ -97,6 +97,19 @@ manuscript attestations.
 
 ## Specialist articles and monographs
 
+### Christiansen2018: scytel
+
+Bethany Christiansen, “Scytel: A New Old English Word for ‘Penis’,”
+*Anglia* 136(4), 2018, pp.581–610, DOI10.1515/ang-2018-0060.
+The [intake record](../../docs/references/christiansen_2018/README.md)
+registers the complete, checksum-verified private original,
+`docs/references/christiansen_2018_scytel.pdf`, and local-only search text.
+Pages583–584 explain the glossary semantics; pp.587–590 identify the
+shared translation tradition and syntactically accusative medical examples;
+pp.593–598 discuss reconstruction, suffixation and stressed *y*;
+pp.599–602 distinguish spellings and semantic formations. This strengthens
+the dart article's source apparatus without changing its selected nominative.
+
 ### World/prosody intake, 26 October 2026
 
 The [acquisition record](../../docs/references/world_2026-10-26/README.md)

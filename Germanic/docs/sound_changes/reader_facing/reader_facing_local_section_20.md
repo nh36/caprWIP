@@ -6449,6 +6449,27 @@ weak vowel. Initial-root \emph{*y} and still marked subordinate
 \emph{*ỳ} are not weak-vowel applications
 [@HoggGrammar2011, p. 219, §6.10 and note 1].
 
+Épinal–Erfurt *scytil* 'balance beam', glossing Latin *momentum*, retains
+medial unstressed *i*; Corpus *scytel* 'balance beam' has *e*
+[@Pheifer1974, pp. 34, 101, item 632; @Sweet1885, p. 79, Corpus 1325;
+@Christiansen2018, p. 583, note 3, and pp. 599--600, note 52].
+After ending loss and the appropriate earlier changes, inherited
+\emph{*skútilaz} retains its *i* in final closed \emph{*-til}:
+[SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) does not delete
+that vowel. It subsequently lowers to *e* under
+[SC074 OEMedUnstressedILowering1](#rule-OEMedUnstressedILowering1),
+giving normalized *sċytel* 'dart; balance beam'.
+Pheifer's discussion already recognizes both retained *i* and *e*
+spellings in the early glossaries and variation attributable to their
+common exemplar [@Pheifer1974, p. lxxv, §63]. The contrast illustrates
+retained and lowered vowel qualities, not a precisely dated interval
+between surviving manuscripts; their exemplars need not have the same
+dates or orthographic histories. Nor does the Corpus form by itself
+establish a specifically West Saxon reflex. This medial *i/e* evidence
+is separate from Christiansen's etymological argument about stressed
+root *y* against an alleged connection with the *scit-* 'excrement'
+family [@Christiansen2018, pp. 593--598].
+
 The unrounding component is computed after general high-vowel syncope
 and before the later light pre-\emph{*l} loss. It is separate from both
 deletion and later lowering. Unrounding preserves vowel height and

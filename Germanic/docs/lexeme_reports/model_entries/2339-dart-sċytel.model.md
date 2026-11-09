@@ -23,6 +23,8 @@ identifies Old English *scytel* 'dart' beside Old Norse *skutill*
 the Latin glossary lemma means 'dart'. The selected spelling belongs
 to this moving-object noun; the lexical headword retains the
 dictionary's projectile sense.
+Christiansen traces the dictionary confusion over *momentum* and confirms
+the moving-beam interpretation [@Christiansen2018, pp. 583--584, note 3].
 
 The normalized comparator
 [sċytel]{.iv lang=oe sort=scytel role=target_form} 'dart; balance beam'
@@ -35,6 +37,24 @@ the uninflected glossary token itself cannot distinguish nominative
 from accusative. This citation-cell choice is not an assertion that
 the Latin lemma establishes an Old English syntactic nominative.
 
+The case evidence is nevertheless asymmetric. Christiansen quotes
+*nim heortes scytel* 'take a stag's penis' and
+*nim fearres scytel* 'take a bull's penis' from the
+*Medicina de quadrupedibus*: in each, *scytel* is accusative singular,
+the object of *nim* 'take' [@Christiansen2018, pp. 589--590].
+The manuscript witnesses transmit a shared Old English translation,
+not independent translations establishing separate lexical histories
+[@Christiansen2018, pp. 587--588].
+Thus the accusative is positively and more securely attested in syntax,
+whereas nominative attestation remains ambiguous in the bare glossary forms.
+CAPR nevertheless retains its default nominative citation input
+\emph{*skútilaz}: nominative and accusative converge in Old English, and
+the existing full-cascade experiments regularly produce *sċytel* from
+both that nominative and the inherited accusative \emph{*skútilą}.
+The stronger accusative evidence is acknowledged, but it supplies no
+substantive reason to depart from the nominative default here.
+No selected-input revision follows from the new source.
+
 ### Comparative formation
 
 Orel prints the complete
@@ -46,6 +66,23 @@ result. The selected
 [skútilaz]{.iv .recon lang=pgmc sort=skutilaz role=selected_input} 'dart'
 marks ordinary initial root stress explicitly; no quantity, suffix
 or nominative ending has been changed.
+
+Christiansen independently reconstructs \emph{*skutilaz} 'projectile',
+comparing Old Norse *skutill* 'harpoon' and Old High German *scozila*
+'harpoon, missile', and discusses the instrumental formation in
+\emph{*-ila-} [@Christiansen2018, pp. 593, 595].
+Her account separates the etymological stressed *y* of *scytel* from
+the vowel of the \emph{scit-} 'excrement' family; that root-vowel issue is
+not the unstressed medial *i/e* alternation
+[@Christiansen2018, pp. 593--598].
+
+Semantically, she treats medical *scytel* 'penis' as a metaphorical
+extension of inherited 'dart, missile'. The frequent *scyttel/scyttels*
+'bar, bolt' formations present additional questions about gemination
+and suffixation; their relationship cannot simply be assumed from
+overlapping meanings or spellings [@Christiansen2018, pp. 599--602].
+Neither those formations nor their proposed histories replace the
+single-consonant noun selected here.
 
 The projectile noun and its moving-beam usage need no morphological
 transponent. The selected input is an inherited complete word,

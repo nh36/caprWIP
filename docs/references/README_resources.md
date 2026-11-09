@@ -2,6 +2,21 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## Christiansen2018 acquisition, 9 November 2026
+
+The [intake record](christiansen_2018/README.md), `holdings.tsv` and
+`page_map.tsv` register the complete30-page article, printed581–610:
+`christiansen_2018_scytel.pdf`, SHA256
+`a87d1410d5da7696684ee0a7774907148810ef9acd32727e08879bf295853a89`.
+It is byte-identical to supplied `christiansen2018.pdf`.
+The complete native-layout search aid is private:
+`local/christiansen-2018/complete.txt`. The original remains authoritative
+for special characters, reconstructions, notes and printed pagination.
+Consultation and image-check limits are recorded separately from acquisition.
+The PDF and complete text are ignored; no redistribution permission is
+asserted. Bibliographic identity belongs only to `Christiansen2018` in
+`docs/refs.bib`, not a second bibliography.
+
 ## Goering2016 and Russom2001 acquisition, 8 November 2026
 
 The [acquisition record](prosody_2026-11-08/README.md), `holdings.tsv` and

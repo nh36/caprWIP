@@ -88,7 +88,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 071-late-o-shortening.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | 7 | 140 | yes |
 | 072-unstressed-long-vowel-shortening.md | SC072. Shortening of unstressed long vowels (`OEUnstressedLongVowelShortening`) {#rule-OEUnstressedLongVowelShortening} | 20 | 79 | no |
 | 073-unstressed-ae-merger.md | SC073. Merger of unstressed \emph{*æ} with \emph{*e} (`OEUnstressedAEMerger`) {#rule-OEUnstressedAEMerger} | 7 | 48 | no |
-| 074-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | 44 | 90 | no |
+| 074-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | 65 | 90 | no |
 | 075-i-preservation-before-ng.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | 7 | 37 | no |
 | 076-prefix-i-reduction.md | SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | 30 | 48 | no |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | 14 | 48 | no |
