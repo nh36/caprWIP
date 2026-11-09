@@ -16,7 +16,9 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from capr_runtime import check_build_manifest, layout, run_in_runner
 from executable_facts import parse_defines
 import oe_pipeline
-from test_sc037_adjudication import INTERVENTION_CHANGED, assert_intervention_scope
+from test_sc037_adjudication import (
+    INTERVENTION_CHANGED, LEXICAL_GRAMMAR_CHANGED, assert_intervention_scope,
+)
 
 AUDIT = ROOT / "Germanic/docs/sound_changes/audits/bounded-domain-adoption"
 BASE = "7e6023eda8a52df8916181aa98bbd935f331d069"
@@ -51,7 +53,8 @@ def test_certificates_are_bound_to_the_archived_parser_closure_and_orthography()
         if name in visited:
             continue
         visited.add(name)
-        if name not in INTERVENTION_CHANGED:
+        # The shared guard pins the later native -anz extension exactly.
+        if name not in INTERVENTION_CHANGED | LEXICAL_GRAMMAR_CHANGED:
             assert current[name].body == expected[name].body
         pending.extend(set(re.findall(r"\b[A-Za-z][A-Za-z0-9_]*\b", expected[name].body))
                        & expected.keys() - visited)

@@ -1,0 +1,142 @@
+{
+  "publication_receipt": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-strict-final-indexed-book-845cb2b0c0914d4081d9fc8816864965.receipt.json",
+  "inspection": "Viewed all nineteen actual combined-book page images in the terminal: SC054/063/064/065/066/117, little, livestock, dart, current filth/spindle accusatives and OE/PGmc printed indexes. Checked legible diacritics, tables, Foma blocks, heading continuations, glosses and citation/index locators. No clipping, missing glyphs or unresolved references observed. Companion PDFs were rebuilt and checked by the official wrapper; this does not claim separate visual inspection of their pages.",
+  "pdfs": [
+    {
+      "path": "Germanic/docs/assembly/capr_book_draft_alpha_01.pdf",
+      "sha256": "27beb44270098b7911eec90a92fceaf108e3ef5294208a1cb4e50c322e061842",
+      "physical_pages": 335
+    },
+    {
+      "path": "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.pdf",
+      "sha256": "d3ebe53dd36e4df374f981d07305ae41cbf1cf1c09abf3484a841101497fb28e",
+      "physical_pages": 123
+    },
+    {
+      "path": "Germanic/docs/assembly/lexical_volume_alpha_01.pdf",
+      "sha256": "724078551c1892e1658bb08bb561c0124631c6779d6f9e43c20928bbfe64b0b3",
+      "physical_pages": 173
+    },
+    {
+      "path": "Germanic/docs/assembly/capr_book_intro_alpha_01.pdf",
+      "sha256": "b0a4080a549e3e39a735fb8b3d17ba8299c60aee35c03b7bc066767f149ee11d",
+      "physical_pages": 4
+    }
+  ],
+  "combined_visually_inspected_pages": [
+    {
+      "physical_page": 76,
+      "printed_page": 74,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p76.png",
+      "sha256": "33a5f84b32584ab7a2bd9cf90a0afb98279cde3a928c78fcdbf1d3f1ee518cc9"
+    },
+    {
+      "physical_page": 77,
+      "printed_page": 75,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p77.png",
+      "sha256": "1f233881b74675a477791a2ac857e72423f1f6796f9d0c003d6ed5eed62286f8"
+    },
+    {
+      "physical_page": 92,
+      "printed_page": 90,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p92.png",
+      "sha256": "9c2b555489f1b50a451b6f53e68d361ea1830287de3e2d91da5dac52e0f8150f"
+    },
+    {
+      "physical_page": 93,
+      "printed_page": 91,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p93.png",
+      "sha256": "6e09245ff564448de4b996d65b79a2007ca85938496953953a857d05a82b6954"
+    },
+    {
+      "physical_page": 99,
+      "printed_page": 97,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p99.png",
+      "sha256": "102d393b62dc8dca08929c8126541936c40dca463d8b2ee97de3f34ea57cac37"
+    },
+    {
+      "physical_page": 100,
+      "printed_page": 98,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p100.png",
+      "sha256": "426ea9cb89e2f59605fc6dddbc666e0d39a1cc6fbfe507ec322f483dce544f4b"
+    },
+    {
+      "physical_page": 101,
+      "printed_page": 99,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p101.png",
+      "sha256": "70ee5d0c006cad66b5be9a6d948e41228b86150663d026c7866d753db41b5e3c"
+    },
+    {
+      "physical_page": 104,
+      "printed_page": 102,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p104.png",
+      "sha256": "306c69182a878c37ce5886ecfd81774e9b0cba0b3b84d062de820c86adb01c77"
+    },
+    {
+      "physical_page": 105,
+      "printed_page": 103,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p105.png",
+      "sha256": "5c996a1db0569e96c3c0c7be7c4def2a4ef7367eacfcac963cdabfa64c750b5c"
+    },
+    {
+      "physical_page": 137,
+      "printed_page": 135,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p137.png",
+      "sha256": "0953a44a1fd9cf9c840423da2f3051ebfa2cafc3a7d2d213a4760de67ecfc6c3"
+    },
+    {
+      "physical_page": 138,
+      "printed_page": 136,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p138.png",
+      "sha256": "dbf87988750ed5e7fbda172a08927b3acb2f18fc1e7421b21edb54c4a6d97b00"
+    },
+    {
+      "physical_page": 144,
+      "printed_page": 142,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p144.png",
+      "sha256": "62a1b612c903f93254f18d85d8b1a67a5889514b390344a0cc2bd052ceb2feb4"
+    },
+    {
+      "physical_page": 170,
+      "printed_page": 168,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p170.png",
+      "sha256": "5f396a84f460f1f7dc81e78b474195c4127bfb04bafba083f15542650814db50"
+    },
+    {
+      "physical_page": 171,
+      "printed_page": 169,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p171.png",
+      "sha256": "a5c445f7851b6e8a108c68ea20bab233c7edcf2b0c3dce311f71aba504939aa5"
+    },
+    {
+      "physical_page": 172,
+      "printed_page": 170,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p172.png",
+      "sha256": "594e444bc8fcf21134f7183e60e9620019971c592e21bc0fde5ef79a200170fa"
+    },
+    {
+      "physical_page": 187,
+      "printed_page": 185,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p187.png",
+      "sha256": "f295dd35d6356493f0c55ec769ec42471d616ffbd3c70d7e65c14c9100295db6"
+    },
+    {
+      "physical_page": 330,
+      "printed_page": 328,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p330.png",
+      "sha256": "9bab41531f588b662a23a11c0b88d0b4797477352db727b5208dd643a8784d9e"
+    },
+    {
+      "physical_page": 331,
+      "printed_page": 329,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p331.png",
+      "sha256": "251bbbbb0152e2e1b7de2e5f19fe963991478ae4616409650342bc236fe8bafa"
+    },
+    {
+      "physical_page": 333,
+      "printed_page": 331,
+      "image": ".capr-work/hvd-lexical-finish/validation/visual-final/combined-p333.png",
+      "sha256": "b4e82d95548ed018bdeb46aa491227cc149bc56b3a4727f9d6a2c02be036c73a"
+    }
+  ]
+}

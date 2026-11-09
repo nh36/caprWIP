@@ -1,0 +1,23 @@
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+Paragraph gloss validator:
+  Part I:  720 prose paragraphs, 851 Emph/iv/recon/lex occurrences, 736 first-occurrence candidates, 4 violation(s)
+  Part II: 1911 top-level paragraphs visited; 0 prose paragraphs in ordinary-form scope; 1911 .recon-only paragraphs outside ordinary scope; 649 .recon, 845 .iv, 32 .lex, 0 plain-italic, 0 code occurrences, 1358 first-occurrence candidates, 7 violation(s)
+  Total violations: 11
+  Part I violations:
+    Para 439: missing gloss for *nīetenu*
+    Para 575: missing gloss for *nētenu*
+    Para 575: missing gloss for *lȳtelu*
+    Para 603: missing gloss for *sċytel*
+  Part II violations:
+    [Old English evidence and selected cell] []: missing gloss for *scytel* (iv)
+    [Old English evidence and selected cell] []: missing gloss for *scytil* (iv)
+    [Comparative formation] []: missing gloss for *skutilaz* (recon)
+    [Comparative formation] []: missing gloss for *skútilaz* (recon)
+    [Selected cell and Old English evidence] []: missing gloss for *nietenu* (iv)
+    [Reconstruction and morphological limits] []: missing gloss for *nautīnō* (recon)
+    [Reconstruction and morphological limits] []: missing gloss for *náutīnō* (recon)

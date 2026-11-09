@@ -78,7 +78,8 @@ class ContextAdoptionTests(unittest.TestCase):
         self.assertEqual(summary["OEEwLongDiphthong"], (1, ["hue"]))
         self.assertEqual(summary.get("OEJWWSimplification", (0, [])), (0, []))
         self.assertEqual(summary["OEJGlideIO"], (1, ["hue"]))
-        self.assertEqual(summary["OEDiphthongLeveling"][0], 33)
+        self.assertEqual(summary["OEDiphthongLeveling"][0], 34)
+        self.assertIn("livestock", summary["OEDiphthongLeveling"][1])
         self.assertEqual(summary["OEAwLongDiphthong"][0], 3)
         self.assertEqual(summary["PWGmcEndinglessAw"], (1, ["straw"]))
         for concept in ("four", "you"):

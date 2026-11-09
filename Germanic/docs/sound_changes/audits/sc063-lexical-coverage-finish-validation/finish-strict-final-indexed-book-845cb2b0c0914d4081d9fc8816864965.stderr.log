@@ -1,0 +1,30 @@
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+pandoc: Ticker: poll failed: Interrupted system call: Interrupted system call
+Paragraph gloss validator:
+  Part I:  720 prose paragraphs, 851 Emph/iv/recon/lex occurrences, 736 first-occurrence candidates, 0 violation(s)
+  Part II: 1911 top-level paragraphs visited; 0 prose paragraphs in ordinary-form scope; 1911 .recon-only paragraphs outside ordinary scope; 649 .recon, 845 .iv, 32 .lex, 0 plain-italic, 0 code occurrences, 1358 first-occurrence candidates, 0 violation(s)
+  Total violations: 0
+This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
+Scanning input file iv.idx......done (2063 entries accepted, 0 rejected).
+Sorting entries....................done (24360 comparisons).
+Generating output file iv.ind.....done (1057 lines written, 0 warnings).
+Output written in iv.ind.
+Transcript written in iv.ilg.
+This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
+Scanning input file iv.idx......done (2063 entries accepted, 0 rejected).
+Sorting entries....................done (24428 comparisons).
+Generating output file iv.ind.....done (1052 lines written, 0 warnings).
+Output written in iv.ind.
+Transcript written in iv.ilg.
+This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
+Scanning input file iv.idx......done (2063 entries accepted, 0 rejected).
+Sorting entries....................done (24428 comparisons).
+Generating output file iv.ind.....done (1052 lines written, 0 warnings).
+Output written in iv.ind.
+Transcript written in iv.ilg.

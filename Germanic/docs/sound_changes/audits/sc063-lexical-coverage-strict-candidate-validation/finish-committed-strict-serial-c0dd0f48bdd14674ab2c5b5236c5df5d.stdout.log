@@ -1,0 +1,257 @@
+................................................................... [  3%]
+............................................. [  5%]
+.......................................................................................F........................................... [ 12%]
+........s.......................................................... [ 15%]
+........F............................... [ 17%]
+...................................................................FF... [ 21%]
+........................................................................ [ 25%]
+................................................................. [ 28%]
+....................................................................F................................................................................................. [ 36%]
+................................................................................................... [ 41%]
+..................................................................... [ 45%]
+................................................................................................................................................................................................................... [ 56%]
+........................................................................ [ 59%]
+............................................. [ 61%]
+.................. [ 62%]
+..................................................................................................... [ 67%]
+.....Fs.......................................................... [ 71%]
+.................................................... [ 73%]
+................................................................................................................. [ 79%]
+....................................................... [ 82%]
+............................................................................F........................................................... [ 89%]
+...s..s............s........................................... [ 92%]
+................................................................................. [ 96%]
+.................................... [ 98%]
+..............................                                           [100%]
+=================================== FAILURES ===================================
+__ test_certificates_are_bound_to_the_archived_parser_closure_and_orthography __
+
+    def test_certificates_are_bound_to_the_archived_parser_closure_and_orthography():
+        assert_intervention_scope()
+        source = frozen("snapshot/candidate.txt")
+        expected = parse_defines(source)
+        current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+        pending = ["EnglishProtoInput", "OldEnglishOrthography",
+                   "EnglishStarAlphabet", "EnglishPalatalConsonant"]
+        visited = set()
+        while pending:
+            name = pending.pop()
+            if name in visited:
+                continue
+            visited.add(name)
+            if name not in INTERVENTION_CHANGED:
+>               assert current[name].body == expected[name].body
+E               AssertionError: assert '[\n    ō:{*ō...}|i:{*i}|0\n]' == '[\n    ō:{*ō...}|i:{*i}|0\n]'
+E                 
+E                 Skipping 77 identical leading characters in diff, use -v to show
+E                 + *s}|a:{*a} n:{*n} z:{*z}|
+E                 - *s}|a:{*a}|ą:{*ą}|{ai}:{*ai}|i:{*i}|0
+E                 ? ^^^^
+E                 +     a:{*a}|ą:{*ą}|{ai}:{*ai}|i:{*i}|0
+E                 ? ^^^^
+E                   ]
+
+test_bounded_domain_adoption.py:55: AssertionError
+_ ContextAdoptionTests.test_fresh_canonical_census_and_source_supported_feeders _
+
+self = <test_glide_context_adoption.ContextAdoptionTests testMethod=test_fresh_canonical_census_and_source_supported_feeders>
+
+    def test_fresh_canonical_census_and_source_supported_feeders(self):
+        text = (ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt").read_text()
+        summary = load_firing_summary(text)
+        self.assertEqual(summary["OEWWSimplification"], (5, ["chew", "dew", "four", "hew", "you"]))
+        self.assertEqual(summary["OEEwLongDiphthong"], (1, ["hue"]))
+        self.assertEqual(summary.get("OEJWWSimplification", (0, [])), (0, []))
+        self.assertEqual(summary["OEJGlideIO"], (1, ["hue"]))
+>       self.assertEqual(summary["OEDiphthongLeveling"][0], 33)
+E       AssertionError: 34 != 33
+
+test_glide_context_adoption.py:81: AssertionError
+_______________ AuditSidecarAgreementTests.test_same_population ________________
+
+self = <test_index_verborum_stage_architecture.AuditSidecarAgreementTests testMethod=test_same_population>
+
+    def test_same_population(self):
+>       self.assertEqual(set(self.sidecar), set(self.audit))
+E       AssertionError: Items in the first set but not the second:
+E       '2338'
+E       '2339'
+
+test_index_verborum_stage_architecture.py:283: AssertionError
+___________ AuditSidecarAgreementTests.test_stage_and_variety_agree ____________
+
+self = <test_index_verborum_stage_architecture.AuditSidecarAgreementTests testMethod=test_stage_and_variety_agree>
+
+    def test_stage_and_variety_agree(self):
+        for rid, s in self.sidecar.items():
+>           a = self.audit[rid]
+                ^^^^^^^^^^^^^^^
+E           KeyError: '2338'
+
+test_index_verborum_stage_architecture.py:287: KeyError
+_ GeneratedManifestTests.test_sc112_witnesses_sit_at_their_alphabetical_positions _
+
+self = <test_lexical_editorial_order.GeneratedManifestTests testMethod=test_sc112_witnesses_sit_at_their_alphabetical_positions>
+
+    def test_sc112_witnesses_sit_at_their_alphabetical_positions(self):
+        regular = [r["lexical_item"] for r in self.rows if r["class_bucket"] == "regular"]
+        # Little and current spindle publication join the prior regular articles.
+>       self.assertEqual(len(regular), 95)
+E       AssertionError: 97 != 95
+
+test_lexical_editorial_order.py:164: AssertionError
+_ test_rainbow_is_published_once_in_both_presentations_without_reclassification _
+
+    def test_rainbow_is_published_once_in_both_presentations_without_reclassification():
+        assembly = ROOT / "Germanic/docs/assembly"
+        with (assembly / "manifest_all_by_class.tsv").open() as handle:
+            rows = list(csv.DictReader(handle, delimiter="\t"))
+        assert len(rows) == 177
+        regular = [row for row in rows if row["derivation_class"] == "regular"]
+        assert len(regular) == 97
+        rainbow = [row for row in regular if row["row_id"] == "2148"]
+        assert len(rainbow) == 1
+        assert (rainbow[0]["proto"], rainbow[0]["protoform"],
+                rainbow[0]["counterpart"]) == (
+            "*régna-bùgô", "*régna-bùgô", "reġnboga")
+        words = [row["lexical_item"] for row in regular]
+        assert words == sorted(words)
+        for path in (assembly / "lexical_volume_alpha_01.md",
+                     assembly / "capr_book_draft_alpha_01.md",
+                     ROOT / "Germanic/docs/debug_snapshots/"
+                     "oe_derivation_class_trace_report.with_lexeme_reports.publish.md"):
+            assert path.read_text().count("The compound means 'rain-bow'.") == 1, path
+        path = "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv"
+        previous = list(csv.DictReader(subprocess.check_output(
+            ["git", "show", read("before")["base_commit"] + ":" + path],
+            cwd=ROOT, text=True).splitlines(), delimiter="\t"))
+        current = list(csv.DictReader((ROOT / path).read_text().splitlines(), delimiter="\t"))
+        assert all(row in current for row in previous)
+        added = [row for row in current if row not in previous]
+        consolidation = [row for row in added
+                         if row["note"].startswith("SC065 syncope consolidation:")]
+        assert len(consolidation) == 10
+        added = [row for row in added if row not in consolidation]
+        earthly = [row for row in added if row["source_ref"] == "earthly — OE eorþcunde"]
+        assert len(earthly) == 4
+        added = [row for row in added if row not in earthly]
+        # The SC065 adjudication and the filth publication closeout (row 2335)
+        # pin their own rows: 3 under the volume heading ref, 8 under the model
+        # path, 2 explicit section-20 cognate tags (os/ohg).
+        filth_refs = {
+            "filth — OE fȳlþ",
+            "Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md",
+        }
+        filth = [row for row in added if row["source_ref"] in filth_refs
+                 or (row["source_ref"].endswith("reader_facing_local_section_20.md")
+                     and (row["language"], row["form"]) in {("os", "fulitha"),
+                                                            ("ohg", "fülida")})]
+        assert len(filth) == 13
+        added = [row for row in added if row not in filth]
+        four_cells = [row for row in added if row["source_ref"].startswith((
+            "find — OE ", "hammer — OE ", "soul — OE ", "west — OE ",
+            "Germanic/docs/lexeme_reports/model_entries/2011-",
+            "Germanic/docs/lexeme_reports/model_entries/2053-",
+            "Germanic/docs/lexeme_reports/model_entries/2201-",
+            "Germanic/docs/lexeme_reports/model_entries/2282-",
+        ))]
+        assert len(four_cells) == 70
+        assert sum(row["action"] == "add" for row in four_cells) == 47
+        assert sum(row["action"] == "remove" for row in four_cells) == 23
+        added = [row for row in added if row not in four_cells]
+        sc037_hock_keys = {
+            ("oe", "heonan", "comparison_form"),
+            ("oe", "neoðan", "comparison_form"),
+            ("pgmc", "đura-warđaz", "source_protoform"),
+            ("goth", "daura-wards", "comparison_form"),
+            ("oe", "duru", "comparison_form"),
+            ("pgmc", "durō-", "source_protoform"),
+            ("oe", "duruweard", "comparison_form"),
+            ("oe", "reġnboga", "evidence_form"),
+            ("oe", "eorþcunde", "evidence_form"),
+            ("oe", "Sigfrið", "comparison_form"),
+            ("oe", "Hyglāc", "comparison_form"),
+            ("oe", "seleweard", "comparison_form"),
+            ("pgmc", "sali-warđaz", "source_protoform"),
+            ("pgmc", "sali-warđuz", "source_protoform"),
+            ("on", "sal-vǫrðr", "comparison_form"),
+        }
+        sc037_hock = [row for row in added if
+                      row["source_ref"] == "Germanic/docs/sound_changes/reader_facing/"
+                      "reader_facing_local_section_20.md" and
+                      (row["language"], row["form"], row["form_role"]) in sc037_hock_keys]
+        assert len(sc037_hock) == 15
+        assert {(row["language"], row["form"], row["form_role"])
+                for row in sc037_hock} == sc037_hock_keys
+        assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
+                   and not row["variety"] for row in sc037_hock)
+        added = [row for row in added if row not in sc037_hock]
+        intervention_keys = {
+            ("preoe", "ūtumist", "source_protoform"),
+            ("preoe", "ȳtymist", "source_protoform"),
+            ("oe", "ȳtmest", "evidence_form"),
+            ("preoe", "skuldihātijā", "source_protoform"),
+            ("preoe", "sċyldihǣtjā", "source_protoform"),
+            ("oe", "sċyldhǣta", "comparison_form"),
+            ("pgmc", "wiđuwōn", "source_protoform"),
+            ("oe", "widuwe", "comparison_form"),
+            ("oe", "wuduwe", "evidence_form"),
+            ("preoe", "gaduling", "source_protoform"),
+            ("oe", "gædeling", "evidence_form"),
+        }
+        intervention = [row for row in added if
+                        row["source_ref"] == "Germanic/docs/sound_changes/reader_facing/"
+                        "reader_facing_local_section_20.md" and
+                        (row["language"], row["form"], row["form_role"]) in intervention_keys]
+        assert len(intervention) == 11
+        assert {(row["language"], row["form"], row["form_role"])
+                for row in intervention} == intervention_keys
+        assert all(row["action"] == "add" and row["source_scope"] == "explicit_tag"
+                   and not row["variety"] for row in intervention)
+        added = [row for row in added if row not in intervention]
+        fee = [row for row in added if row["source_ref"] in {
+            "fee — OE feoh", "Germanic/docs/lexeme_reports/model_entries/2006-fee-feoh.model.md"}]
+        assert len(fee) == 8
+        assert sum(row["action"] == "add" for row in fee) == 7
+        assert sum(row["action"] == "remove" for row in fee) == 1
+        added = [row for row in added if row not in fee]
+>       assert len(added) == 8
+E       AssertionError: assert 49 == 8
+E        +  where 49 = len([{'action': 'add', 'form': 'reġnboga', 'form_role': 'target_form', 'language': 'oe', ...}, {'action': 'add', 'form': '... 'language': 'oe', ...}, {'action': 'add', 'form': 'Boga', 'form_role': 'comparison_form', 'language': 'oe', ...}, ...])
+
+test_rainbow_2148_adoption.py:231: AssertionError
+_ SC032AdjudicationTests.test_full_census_and_overlapping_clause_applications __
+
+self = <test_sc032_adjudication.SC032AdjudicationTests testMethod=test_full_census_and_overlapping_clause_applications>
+
+    def test_full_census_and_overlapping_clause_applications(self):
+        populations = collections.defaultdict(set)
+        for identifier, (_, _, forms) in self.records.items():
+            before, after = forms["OEJGlideIO"], forms["OEDiphthongLeveling"]
+            symbols = tokens(before)
+            applications = []
+            for left, right in CLAUSES:
+                for position in range(len(symbols) - len(left) + 1):
+                    if tuple(symbols[position:position + len(left)]) == left:
+                        applications.append((position, left, right))
+            self.assertEqual(bool(applications), before != after, identifier)
+            self.assertLessEqual(len(applications), 1, identifier)
+            if applications:
+                position, left, right = applications[0]
+                predicted = symbols[:position] + [right] + symbols[position + len(left):]
+                self.assertEqual("*" + "*".join(predicted), after, identifier)
+                populations["+".join(left)].add(identifier)
+>       self.assertEqual(dict(populations), EXPECTED)
+E       AssertionError: {'áeu': {'2074', '2097', '2061', '2063', '2135', '222[239 chars]33'}} != {'áeu': {'2094', '2074', '2097', '2061', '2063', '196[231 chars]33'}}
+E       Diff is 667 characters long. Set self.maxDiff to None to see it.
+
+test_sc032_adjudication.py:129: AssertionError
+=========================== short test summary info ============================
+FAILED test_bounded_domain_adoption.py::test_certificates_are_bound_to_the_archived_parser_closure_and_orthography
+FAILED test_glide_context_adoption.py::ContextAdoptionTests::test_fresh_canonical_census_and_source_supported_feeders
+FAILED test_index_verborum_stage_architecture.py::AuditSidecarAgreementTests::test_same_population
+FAILED test_index_verborum_stage_architecture.py::AuditSidecarAgreementTests::test_stage_and_variety_agree
+FAILED test_lexical_editorial_order.py::GeneratedManifestTests::test_sc112_witnesses_sit_at_their_alphabetical_positions
+FAILED test_rainbow_2148_adoption.py::test_rainbow_is_published_once_in_both_presentations_without_reclassification
+FAILED test_sc032_adjudication.py::SC032AdjudicationTests::test_full_census_and_overlapping_clause_applications
+7 failed, 1959 passed, 5 skipped, 9795 subtests passed in 3744.29s (1:02:24)

@@ -1,0 +1,4 @@
+Paragraph gloss validator:
+  Part I:  720 prose paragraphs, 851 Emph/iv/recon/lex occurrences, 736 first-occurrence candidates, 0 violation(s)
+  Part II: 1911 top-level paragraphs visited; 0 prose paragraphs in ordinary-form scope; 1911 .recon-only paragraphs outside ordinary scope; 649 .recon, 845 .iv, 32 .lex, 0 plain-italic, 0 code occurrences, 1358 first-occurrence candidates, 0 violation(s)
+  Total violations: 0

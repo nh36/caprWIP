@@ -24,7 +24,7 @@ EXPECTED = {
     "áeu": {
         "1944", "1961", "1962", "1966", "1989", "1995", "2018", "2061",
         "2063", "2074", "2094", "2097", "2116", "2135", "2151", "2170",
-        "2184", "2224", "2225", "2227", "2241",
+        "2184", "2224", "2225", "2227", "2241", "2338",
     },
     "éu": {"1968", "1976", "1988", "2019", "2022", "2028", "2029",
            "2032", "2102", "2246"},
@@ -137,7 +137,12 @@ class SC032AdjudicationTests(unittest.TestCase):
         firing_ids = set().union(*EXPECTED.values())
         original = {identifier for identifier in firing_ids
                     if self.records[identifier][:2] in legacy}
-        self.assertEqual(original, firing_ids - {"2326"})
+        self.assertEqual(original, firing_ids - {"2326", "2338"})
+
+    def test_inherited_livestock_adds_exactly_the_atomic_aeu_firing(self):
+        forms = self.records["2338"][2]
+        self.assertEqual(forms["OEJGlideIO"], "*n*áeu*t*ī*n*u")
+        self.assertEqual(forms["OEDiphthongLeveling"], "*n*ēa*t*ī*n*u")
 
     def test_early_glide_feeders_retain_the_second_glide(self):
         for identifier, old, new in (

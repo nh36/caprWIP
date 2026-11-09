@@ -1,0 +1,50 @@
+{
+ "receipt_version": 2,
+ "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-strict-serial-c0dd0f48bdd14674ab2c5b5236c5df5d.receipt.json",
+ "label": "finish-committed-strict-serial",
+ "argv": [
+  "python3",
+  "-m",
+  "pytest",
+  "-q",
+  "--ignore=test_evidence_interface.py",
+  "--junitxml=/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-strict-serial-c0dd0f48bdd14674ab2c5b5236c5df5d.junit.xml",
+  "--validation-mode=full"
+ ],
+ "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+ "cwd": "/Users/nathanhill/Code/capr/Germanic/tests",
+ "started_at": "2026-11-09T02:14:21Z",
+ "finished_at": "2026-11-09T03:16:51Z",
+ "returncode": 1,
+ "timed_out": false,
+ "ok": false,
+ "source_identity": {
+  "head_commit": "de29cf3e3e4db451fb693a83b74e0f84ebe211bd",
+  "worktree_changes": {},
+  "identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+  "recorded_at": "2026-11-09T02:14:21Z"
+ },
+ "source_identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+ "source_identity_after": {
+  "head_commit": "de29cf3e3e4db451fb693a83b74e0f84ebe211bd",
+  "worktree_changes": {},
+  "identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+  "recorded_at": "2026-11-09T03:16:51Z"
+ },
+ "source_changed": false,
+ "level": "C",
+ "lane": "serial",
+ "pytest_addopts": "",
+ "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-strict-serial-c0dd0f48bdd14674ab2c5b5236c5df5d.stdout.log",
+ "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-strict-serial-c0dd0f48bdd14674ab2c5b5236c5df5d.stderr.log",
+ "stdout_sha256": "7aff79d73b9f0831dab70ecf572d7bb07593f3beb0a35497bc30ccd6bb8597b2",
+ "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "test_counts": {
+  "tests": 11766,
+  "failures": 7,
+  "errors": 0,
+  "skipped": 5
+ },
+ "junit_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-strict-serial-c0dd0f48bdd14674ab2c5b5236c5df5d.junit.xml",
+ "junit_sha256": "212f0bbc40f0639bff702da6d08546fec29780ed78bf604bc23e85944fd507e3"
+}

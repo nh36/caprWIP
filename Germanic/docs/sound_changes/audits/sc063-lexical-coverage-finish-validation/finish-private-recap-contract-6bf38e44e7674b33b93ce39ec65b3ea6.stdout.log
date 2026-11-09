@@ -1,0 +1,60 @@
+.                                                              [100%]
+=================================== FAILURES ===================================
+_ ParagraphGlossValidatorTests.test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context (form='lȳtelu', text="# Word-by-word derivations\n\n*lȳtelu* 'little' is independently attested.\n\nThe foil fails while the short-medial *lȳtelu* is unaffected.") _
+
+self = <test_paragraph_gloss_validator.ParagraphGlossValidatorTests testMethod=test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context>
+
+    def test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context(self):
+        for form, gloss, context in (
+            ("lȳtelu", "little", "The foil fails while the short-medial *lȳtelu* is unaffected."),
+            ("sċytel", "dart", "The closed-final *sċytel* control protects retention."),
+        ):
+            anchor = f"*{form}* '{gloss}' is independently attested.\n\n"
+            with self.subTest(form=form):
+                self.assertEqual(self.validate(anchor + context).returncode, 0)
+            for text in (
+                context,
+                context + "\n\n" + anchor,
+                anchor + f"An unrelated mention of *{form}* survives.",
+                "# Word-by-word derivations\n\n" + anchor + context,
+            ):
+                with self.subTest(form=form, text=text):
+                    result = self.validate(text)
+>                   self.assertEqual(result.returncode, 2, result.stderr)
+E                   AssertionError: 0 != 2 : Paragraph gloss validator:
+E                     Part I:  0 prose paragraphs, 0 Emph/iv/recon/lex occurrences, 0 first-occurrence candidates, 0 violation(s)
+E                     Part II: 2 top-level paragraphs visited; 0 prose paragraphs in ordinary-form scope; 2 .recon-only paragraphs outside ordinary scope; 0 .recon, 0 .iv, 0 .lex, 0 plain-italic, 0 code occurrences, 0 first-occurrence candidates, 0 violation(s)
+E                     Total violations: 0
+
+.capr-work/hvd-lexical-finish/source/Germanic/tests/test_paragraph_gloss_validator.py:124: AssertionError
+_ ParagraphGlossValidatorTests.test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context (form='sċytel', text="# Word-by-word derivations\n\n*sċytel* 'dart' is independently attested.\n\nThe closed-final *sċytel* control protects retention.") _
+
+self = <test_paragraph_gloss_validator.ParagraphGlossValidatorTests testMethod=test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context>
+
+    def test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context(self):
+        for form, gloss, context in (
+            ("lȳtelu", "little", "The foil fails while the short-medial *lȳtelu* is unaffected."),
+            ("sċytel", "dart", "The closed-final *sċytel* control protects retention."),
+        ):
+            anchor = f"*{form}* '{gloss}' is independently attested.\n\n"
+            with self.subTest(form=form):
+                self.assertEqual(self.validate(anchor + context).returncode, 0)
+            for text in (
+                context,
+                context + "\n\n" + anchor,
+                anchor + f"An unrelated mention of *{form}* survives.",
+                "# Word-by-word derivations\n\n" + anchor + context,
+            ):
+                with self.subTest(form=form, text=text):
+                    result = self.validate(text)
+>                   self.assertEqual(result.returncode, 2, result.stderr)
+E                   AssertionError: 0 != 2 : Paragraph gloss validator:
+E                     Part I:  0 prose paragraphs, 0 Emph/iv/recon/lex occurrences, 0 first-occurrence candidates, 0 violation(s)
+E                     Part II: 2 top-level paragraphs visited; 0 prose paragraphs in ordinary-form scope; 2 .recon-only paragraphs outside ordinary scope; 0 .recon, 0 .iv, 0 .lex, 0 plain-italic, 0 code occurrences, 0 first-occurrence candidates, 0 violation(s)
+E                     Total violations: 0
+
+.capr-work/hvd-lexical-finish/source/Germanic/tests/test_paragraph_gloss_validator.py:124: AssertionError
+=========================== short test summary info ============================
+SUBFAILED(form='lȳtelu', text="# Word-by-word derivations\n\n*lȳtelu* 'little' is independently attested.\n\nThe foil fails while the short-medial *lȳtelu* is unaffected.") .capr-work/hvd-lexical-finish/source/Germanic/tests/test_paragraph_gloss_validator.py::ParagraphGlossValidatorTests::test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context
+SUBFAILED(form='sċytel', text="# Word-by-word derivations\n\n*sċytel* 'dart' is independently attested.\n\nThe closed-final *sċytel* control protects retention.") .capr-work/hvd-lexical-finish/source/Germanic/tests/test_paragraph_gloss_validator.py::ParagraphGlossValidatorTests::test_hvd_repeated_controls_require_prior_gloss_and_exact_reader_context
+2 failed, 1 passed, 8 subtests passed in 0.42s

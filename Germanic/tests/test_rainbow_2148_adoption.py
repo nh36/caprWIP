@@ -228,6 +228,15 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assert sum(row["action"] == "add" for row in fee) == 7
     assert sum(row["action"] == "remove" for row in fee) == 1
     added = [row for row in added if row not in fee]
+    published_hvd = list(csv.DictReader(subprocess.check_output([
+        "git", "show", "de29cf3e3e4db451fb693a83b74e0f84ebe211bd:" + path],
+        cwd=ROOT, text=True).splitlines(), delimiter="\t"))
+    hvd = [row for row in published_hvd if row["note"].startswith(
+        ("SC063 lexical coverage:", "SC063 closeout:", "SC063 coverage finish:"))]
+    assert sum(row["note"].startswith("SC063 coverage finish:") for row in hvd) == 19
+    assert len(hvd) == 41
+    assert all(row in added for row in hvd)
+    added = [row for row in added if row not in hvd]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

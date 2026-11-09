@@ -1,0 +1,7 @@
+== control-plane refresh (artifact graph) ==
+  runtime_bins: fresh (recorded provenance matches)
+  full_trace: fresh (recorded provenance matches)
+  lexical_sources: fresh (recorded provenance matches)
+  interaction_matrix: fresh (recorded provenance matches)
+CONTROL PLANE CLEAN
+Warning: unresolved index candidates = 2; see /Users/nathanhill/Code/capr/Germanic/docs/book/index_verborum_audit.md

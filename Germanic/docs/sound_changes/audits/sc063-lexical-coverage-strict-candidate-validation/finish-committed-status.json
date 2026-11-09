@@ -1,0 +1,38 @@
+{
+  "receipt_version": 2,
+  "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-status-931c8ad5cf9a49bbbceb4a8fd8f074d4.receipt.json",
+  "label": "finish-committed-status",
+  "argv": [
+    "python3",
+    "Germanic/tools/adjudicate.py",
+    "--status"
+  ],
+  "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+  "cwd": "/Users/nathanhill/Code/capr",
+  "started_at": "2026-11-09T02:13:12Z",
+  "finished_at": "2026-11-09T02:13:57Z",
+  "returncode": 0,
+  "timed_out": false,
+  "ok": true,
+  "source_identity": {
+    "head_commit": "de29cf3e3e4db451fb693a83b74e0f84ebe211bd",
+    "worktree_changes": {},
+    "identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+    "recorded_at": "2026-11-09T02:13:12Z"
+  },
+  "source_identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+  "source_identity_after": {
+    "head_commit": "de29cf3e3e4db451fb693a83b74e0f84ebe211bd",
+    "worktree_changes": {},
+    "identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+    "recorded_at": "2026-11-09T02:13:57Z"
+  },
+  "source_changed": false,
+  "level": "B",
+  "lane": null,
+  "pytest_addopts": "",
+  "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-status-931c8ad5cf9a49bbbceb4a8fd8f074d4.stdout.log",
+  "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-status-931c8ad5cf9a49bbbceb4a8fd8f074d4.stderr.log",
+  "stdout_sha256": "791ca81cb80ca5887d289666a19b66e24ec94654c42014405f8498dc0bc90d83",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

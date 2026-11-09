@@ -1,0 +1,47 @@
+{
+  "receipt_version": 2,
+  "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-focused-f4e8823678bf47e2ae9abf15523475c8.receipt.json",
+  "label": "finish-committed-focused",
+  "argv": [
+    "python3",
+    "-m",
+    "pytest",
+    "-q",
+    "Germanic/tests/test_cascade_baseline.py",
+    "Germanic/tests/test_paragraph_gloss_validator.py",
+    "Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_completed_readings_preserve_local_dates_quantity_and_cell_variants",
+    "Germanic/tests/test_pgmc_reconstruction_survey.py::ReadingScopeTests::test_seventh_tranche_aligns_every_position_without_settling_core_causes",
+    "Germanic/tests/test_pgmc_reconstruction_survey.py::EighteenthAlignmentTests::test_existing_consultation_status_changes_have_exact_owners",
+    "Germanic/tests/test_pgmc_reconstruction_analysis.py::LiveAnalyticalTests::test_source_silence_is_not_agreement",
+    "Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_deterministic_projection",
+    "Germanic/tests/test_pgmc_lexical_integration.py::IntegrationTests::test_inventory_is_not_a_controversy_census"
+  ],
+  "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+  "cwd": "/Users/nathanhill/Code/capr",
+  "started_at": "2026-11-09T02:11:19Z",
+  "finished_at": "2026-11-09T02:11:51Z",
+  "returncode": 0,
+  "timed_out": false,
+  "ok": true,
+  "source_identity": {
+    "head_commit": "de29cf3e3e4db451fb693a83b74e0f84ebe211bd",
+    "worktree_changes": {},
+    "identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+    "recorded_at": "2026-11-09T02:11:19Z"
+  },
+  "source_identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+  "source_identity_after": {
+    "head_commit": "de29cf3e3e4db451fb693a83b74e0f84ebe211bd",
+    "worktree_changes": {},
+    "identity_sha256": "1b7335c16a7ecf89bd3a7736d3e005dcf41dd05db954ebaf165c89b23685e87e",
+    "recorded_at": "2026-11-09T02:11:51Z"
+  },
+  "source_changed": false,
+  "level": "A",
+  "lane": null,
+  "pytest_addopts": "",
+  "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-focused-f4e8823678bf47e2ae9abf15523475c8.stdout.log",
+  "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-committed-focused-f4e8823678bf47e2ae9abf15523475c8.stderr.log",
+  "stdout_sha256": "0ba2ed05632ce131f274218c48fdbd260ec03b698237a6be06e423c3928e22b2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

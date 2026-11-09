@@ -340,6 +340,40 @@ direct gloss; missing, later, unrelated and Part-II anchors remain errors.
 No historical discussion is rewritten to trigger indexing, no global
 gloss exemption is added, and the exact19 semantic keys are unchanged.
 
+## Exact-candidate strict validation and bounded reconciliation
+
+The committed de29cf3e candidate passed fresh A (59 tests,482 subtests) and
+B (CONTROL PLANE CLEAN and STATUS OK). Its authentic strict serial C run
+finished with seven failures,1959 passes,9795 passing subtests and the five
+explicit historical-replay skips in3744.29 seconds. The exclusive lane did
+not execute after that failure. This is not full certification.
+
+Five underlying apparatus omissions explain the seven failures. The bounded
+parser closure guard still treated the independently pinned native -anz
+extension as forbidden; its existing shared exact-body guard now accounts
+for that authorized difference without changing the released proof.
+Livestock supplies exactly one additional atomic *áeu to *ēa leveling
+application, raising the live census33 to34; the full clause population and
+the original380 membership distinction are updated explicitly.
+The selected-stage sidecar had two entries missing from its human-readable
+audit ledger: those documented pgmc labels are mirrored with independent
+confidence, not reclassified or inferred from executable behavior.
+The alphabetical publication guard still counted95 rather than97 regular
+articles. The rainbow approval guard omitted the independently frozen22
+earlier HVD and19 renewed semantic approvals; their published rows are
+checked byte-for-field before exclusion, preserving rainbow's exact eight
+keys. No unrestricted future-approval exemption is introduced.
+
+The initial preparatory archive publication also omitted ignored full logs
+and JUnit files from Git staging. Their original bytes and existing manifest
+are unchanged; explicit staging of this new archive completes its public
+contents. The separate original7083 evidence archive is not modified.
+
+These repairs do not change a sound-law body, ordering, selected input,
+target, stage decision, protected baseline, source ledger or rendered book.
+A/B/C must nevertheless execute again on the new committed candidate;
+the failed de29cf3e receipt remains immutable and does not attest success.
+
 ## Residue
 
 Remaining justified gaps are an independently verified full kettle

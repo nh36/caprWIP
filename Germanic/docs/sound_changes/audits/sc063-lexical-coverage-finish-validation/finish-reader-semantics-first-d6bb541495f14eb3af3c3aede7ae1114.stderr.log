@@ -1,0 +1,11 @@
+Reader-facing semantic regression failure: unexpected semantic index fingerprint drift: +19 -0
+  + ('oe', '', 'nietenu', 'comparison_form', 'explicit_tag', 'Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md')
+  + ('oe', '', 'nytenu', 'comparison_form', 'explicit_tag', 'Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md')
+  + ('oe', '', 'nētenu', 'comparison_form', 'explicit_tag', 'Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md')
+  + ('oe', '', 'nīetenu', 'target_form', 'explicit_tag', 'Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md')
+  + ('oe', '', 'nīetenu', 'target_form', 'lexical_heading', 'livestock — OE nīetenu')
+  + ('oe', '', 'scytel', 'comparison_form', 'explicit_tag', 'Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md')
+  + ('oe', '', 'scytil', 'comparison_form', 'explicit_tag', 'Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md')
+  + ('oe', '', 'sċytel', 'target_form', 'explicit_tag', 'Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md')
+  + ('oe', '', 'sċytel', 'target_form', 'lexical_heading', 'dart — OE sċytel')
+  + ('pgmc', '', '*nautīną', 'source_protoform', 'lexical_proto', 'livestock — OE nīetenu')

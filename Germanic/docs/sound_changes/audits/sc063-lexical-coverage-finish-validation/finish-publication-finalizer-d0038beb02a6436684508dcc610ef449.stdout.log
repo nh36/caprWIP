@@ -1,0 +1,36 @@
+== preflight: SC063 (finalize) ==
+          PASS  registry_row: SC063 registered (lifecycle: active, adjudication: adjudicated)
+          PASS  registry_documents: all registry document pointers resolve
+          PASS  verdict_vocabulary: verdict 'REFORMULATE' well-formed
+          PASS  fst_identifier: OEHighVowelApocope
+          PASS  memo_verdict: memo Registry-verdict agrees with the registry
+          PASS  memo_sections: all template-mandated sections present
+          PASS  archive_frozen: no frozen ARCHIVE record modified
+          PASS  protected_baselines: no unapproved protected-baseline change
+          INFO  generated_ownership: generated artifacts are owned by the artifact graph; freshness is checked after refresh, not here
+          PASS  runtime_runner: backend runner reachable
+          PASS  work_dir: .capr-work/ writable
+          PASS  runtime_conflict: no other process holds the runtime artifacts
+          INFO  source identity: 83a0f7d249e829b1 (HEAD 7083b698a1b6, 106 worktree changes)
+PREFLIGHT PASS
+== control-plane refresh (artifact graph) ==
+  runtime_bins: fresh (recorded provenance matches)
+  full_trace: fresh (recorded provenance matches)
+  reader_book: wrote Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md
+  lexical_sources: fresh (recorded provenance matches)
+  book_draft: wrote Germanic/docs/assembly/capr_book_draft_alpha_01.md
+  index_verborum: wrote Germanic/docs/book/index_verborum_audit.md
+  index_verborum: wrote Germanic/docs/book/index_verborum_book_emissions.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_book_main.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_book_occurrences.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_book_print_unique.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_emission_table.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_forms.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_preoe_review.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_print_main.tsv
+  index_verborum: wrote Germanic/docs/book/index_verborum_print_unique.tsv
+  index_verborum: wrote Germanic/docs/book/reader_facing_example_forms.tsv
+  interaction_matrix: fresh (recorded provenance matches)
+CONTROL PLANE CLEAN
+== propagation checks ==
+SC063: propagation checks passed. Remember: cd Germanic/tests && python3 -m pytest -q
