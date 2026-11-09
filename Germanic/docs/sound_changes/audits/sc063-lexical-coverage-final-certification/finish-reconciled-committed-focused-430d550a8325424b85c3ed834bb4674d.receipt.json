@@ -1,0 +1,48 @@
+{
+ "receipt_version": 2,
+ "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-focused-430d550a8325424b85c3ed834bb4674d.receipt.json",
+ "label": "finish-reconciled-committed-focused",
+ "argv": [
+  "python3",
+  "-m",
+  "pytest",
+  "-q",
+  "Germanic/tests/test_cascade_baseline.py",
+  "Germanic/tests/test_paragraph_gloss_validator.py",
+  "Germanic/tests/test_bounded_domain_adoption.py::test_certificates_are_bound_to_the_archived_parser_closure_and_orthography",
+  "Germanic/tests/test_glide_context_adoption.py::ContextAdoptionTests::test_fresh_canonical_census_and_source_supported_feeders",
+  "Germanic/tests/test_index_verborum_stage_architecture.py",
+  "Germanic/tests/test_lexical_editorial_order.py",
+  "Germanic/tests/test_rainbow_2148_adoption.py::test_rainbow_is_published_once_in_both_presentations_without_reclassification",
+  "Germanic/tests/test_sc032_adjudication.py",
+  "Germanic/tests/test_world_2302_adjudication.py::test_index_approval_changes_only_exact_world_input_and_variety_provenance"
+ ],
+ "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+ "cwd": "/Users/nathanhill/Code/capr",
+ "started_at": "2026-11-09T03:24:51Z",
+ "finished_at": "2026-11-09T03:24:59Z",
+ "returncode": 0,
+ "timed_out": false,
+ "ok": true,
+ "source_identity": {
+  "head_commit": "1cb8896765fb304fee35139fc9d6b788d04d32ce",
+  "worktree_changes": {},
+  "identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+  "recorded_at": "2026-11-09T03:24:51Z"
+ },
+ "source_identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+ "source_identity_after": {
+  "head_commit": "1cb8896765fb304fee35139fc9d6b788d04d32ce",
+  "worktree_changes": {},
+  "identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+  "recorded_at": "2026-11-09T03:24:59Z"
+ },
+ "source_changed": false,
+ "level": "A",
+ "lane": null,
+ "pytest_addopts": "",
+ "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-focused-430d550a8325424b85c3ed834bb4674d.stdout.log",
+ "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-focused-430d550a8325424b85c3ed834bb4674d.stderr.log",
+ "stdout_sha256": "a2371b0b333930e9e40e4341e63f8a33b0d53491ab725a2e1957b06ab25fcfac",
+ "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

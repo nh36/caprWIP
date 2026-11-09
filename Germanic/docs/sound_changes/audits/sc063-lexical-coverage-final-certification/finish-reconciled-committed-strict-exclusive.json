@@ -1,0 +1,50 @@
+{
+  "receipt_version": 2,
+  "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-exclusive-18de4c00d5e443e9bd7c572af7287f2d.receipt.json",
+  "label": "finish-reconciled-committed-strict-exclusive",
+  "argv": [
+    "python3",
+    "-m",
+    "pytest",
+    "-q",
+    "test_evidence_interface.py",
+    "--junitxml=/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-exclusive-18de4c00d5e443e9bd7c572af7287f2d.junit.xml",
+    "--validation-mode=full"
+  ],
+  "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+  "cwd": "/Users/nathanhill/Code/capr/Germanic/tests",
+  "started_at": "2026-11-09T04:29:19Z",
+  "finished_at": "2026-11-09T04:36:05Z",
+  "returncode": 0,
+  "timed_out": false,
+  "ok": true,
+  "source_identity": {
+    "head_commit": "1cb8896765fb304fee35139fc9d6b788d04d32ce",
+    "worktree_changes": {},
+    "identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+    "recorded_at": "2026-11-09T04:29:19Z"
+  },
+  "source_identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+  "source_identity_after": {
+    "head_commit": "1cb8896765fb304fee35139fc9d6b788d04d32ce",
+    "worktree_changes": {},
+    "identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+    "recorded_at": "2026-11-09T04:36:05Z"
+  },
+  "source_changed": false,
+  "level": "C",
+  "lane": "exclusive",
+  "pytest_addopts": "",
+  "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-exclusive-18de4c00d5e443e9bd7c572af7287f2d.stdout.log",
+  "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-exclusive-18de4c00d5e443e9bd7c572af7287f2d.stderr.log",
+  "stdout_sha256": "005cf1d78b163d46a620e6e1fac7f28f11f665c6b58db038eae7506eee494c30",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "test_counts": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "junit_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-exclusive-18de4c00d5e443e9bd7c572af7287f2d.junit.xml",
+  "junit_sha256": "70f47fd0978cbe48442159b202ebddf13a6c8703b33d7733d913c61a877c9f76"
+}

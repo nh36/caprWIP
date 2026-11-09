@@ -1,0 +1,50 @@
+{
+ "receipt_version": 2,
+ "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-serial-e3fc3fbeb1d846cfb14abd3f238f056a.receipt.json",
+ "label": "finish-reconciled-committed-strict-serial",
+ "argv": [
+  "python3",
+  "-m",
+  "pytest",
+  "-q",
+  "--ignore=test_evidence_interface.py",
+  "--junitxml=/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-serial-e3fc3fbeb1d846cfb14abd3f238f056a.junit.xml",
+  "--validation-mode=full"
+ ],
+ "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+ "cwd": "/Users/nathanhill/Code/capr/Germanic/tests",
+ "started_at": "2026-11-09T03:27:18Z",
+ "finished_at": "2026-11-09T04:29:19Z",
+ "returncode": 0,
+ "timed_out": false,
+ "ok": true,
+ "source_identity": {
+  "head_commit": "1cb8896765fb304fee35139fc9d6b788d04d32ce",
+  "worktree_changes": {},
+  "identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+  "recorded_at": "2026-11-09T03:27:18Z"
+ },
+ "source_identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+ "source_identity_after": {
+  "head_commit": "1cb8896765fb304fee35139fc9d6b788d04d32ce",
+  "worktree_changes": {},
+  "identity_sha256": "0c87c15e4264564a75d97d343c2bb15f5899fb986c2474503f662e4978a40d29",
+  "recorded_at": "2026-11-09T04:29:19Z"
+ },
+ "source_changed": false,
+ "level": "C",
+ "lane": "serial",
+ "pytest_addopts": "",
+ "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-serial-e3fc3fbeb1d846cfb14abd3f238f056a.stdout.log",
+ "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-serial-e3fc3fbeb1d846cfb14abd3f238f056a.stderr.log",
+ "stdout_sha256": "a0c9f98e9e993d4419542b4d87210dbe3527b7ece02a617e0dd06474d80d0843",
+ "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "test_counts": {
+  "tests": 11767,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 5
+ },
+ "junit_path": "/Users/nathanhill/Code/capr/.capr-work/hvd-lexical-finish/validation/finish-reconciled-committed-strict-serial-e3fc3fbeb1d846cfb14abd3f238f056a.junit.xml",
+ "junit_sha256": "d5cea449b0ca168d099dbbbaca506e660ad0f14fda183f62af0e9432fe5789e6"
+}
