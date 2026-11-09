@@ -237,6 +237,15 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     assert len(hvd) == 41
     assert all(row in added for row in hvd)
     added = [row for row in added if row not in hvd]
+    little = [row for row in added if row["source_ref"] ==
+              "Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md"]
+    assert len(little) == 2
+    assert {row["form"] for row in little} == {"hlūtor", "lūtan"}
+    assert all(row["action"] == "add" and row["language"] == "oe"
+               and row["form_role"] == "comparison_form"
+               and row["source_scope"] == "override" and not row["variety"]
+               for row in little)
+    added = [row for row in added if row not in little]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

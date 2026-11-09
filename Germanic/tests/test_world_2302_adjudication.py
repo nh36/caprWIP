@@ -682,6 +682,15 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
              row["source_scope"], row["source_ref"]) for row in finish} == finish_keys
     assert all(row["action"] == "add" for row in finish)
     added = [row for row in added if row not in finish]
+    little = [row for row in added if row["source_ref"] ==
+              "Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md"]
+    assert len(little) == 2
+    assert {row["form"] for row in little} == {"hlūtor", "lūtan"}
+    assert all(row["action"] == "add" and row["language"] == "oe"
+               and row["form_role"] == "comparison_form"
+               and row["source_scope"] == "override" and not row["variety"]
+               for row in little)
+    added = [row for row in added if row not in little]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

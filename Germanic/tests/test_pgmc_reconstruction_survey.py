@@ -3657,9 +3657,9 @@ class LiveSurveyTests(unittest.TestCase):
         self.assertIn("review_targets.tsv", readme)
         self.assertIn("Cartesian workload is obsolete", readme)
         # Bounded source additions do not create Cartesian obligations.
-        self.assertEqual(len(sources), 101)
-        self.assertEqual(len({row["source_key"] for row in sources}), 101)
-        self.assertEqual(sum(row["role"] != "excluded" for row in sources), 92)
+        self.assertEqual(len(sources), 108)
+        self.assertEqual(len({row["source_key"] for row in sources}), 108)
+        self.assertEqual(sum(row["role"] != "excluded" for row in sources), 99)
         self.assertTrue(all(row["consultation_mode"] and row["payoff"] for row in sources))
         self.assertEqual(
             {row["source_key"] for row in sources if row["consultation_mode"] == "core_dictionary"},
