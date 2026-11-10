@@ -40,6 +40,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import re
+import shlex
 import sys
 import unittest
 from pathlib import Path
@@ -414,10 +415,21 @@ class Sc097SyntheticControlTests(unittest.TestCase):
         for form, _ in cls.CONTROLS:
             script += f"down {form}\n"
         script += "quit\n"
+        worker = """
+import subprocess, sys, tempfile
+from pathlib import Path
+with tempfile.TemporaryDirectory(prefix="capr-sc097-") as directory:
+    path = Path(directory) / "controls.foma"
+    path.write_text(sys.stdin.read(), encoding="utf-8")
+    result = subprocess.run(
+        ["foma", "-q", "-f", str(path)], capture_output=True, text=True, timeout=600)
+    sys.stdout.write(result.stdout)
+    sys.stderr.write(result.stderr)
+    raise SystemExit(result.returncode)
+"""
         proc = run_in_runner(
-            't=$(mktemp) && cat > "$t" && foma -q -f "$t"; '
-            'rc=$?; rm -f "$t"; exit "$rc"',
-            input=script, text=True, capture_output=True, check=True, timeout=600)
+            "python3 -c " + shlex.quote(worker), input=script, text=True,
+            capture_output=True, check=True, timeout=660)
         cls.outputs = [line.strip() for line in
                        proc.stdout.splitlines() if line.strip()]
 
