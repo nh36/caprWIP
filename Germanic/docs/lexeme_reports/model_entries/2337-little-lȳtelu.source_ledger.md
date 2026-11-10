@@ -5,6 +5,76 @@ PROTO *lūtilaz is a dictionary-supported citation; PROTOFORM *lūtilō
 is a regularly inflected Proto-Germanic cell, also printed whole by Fulk.
 The ancestral cell is not inferred from the computational outcome.
 
+## Expanded source review, 9 November 2026
+
+This editorial pass retains PROTO, PROTOFORM, target, stage assignment,
+phonology and protected expectations. Before the first tracked edit,
+the existing corpus row and canonical trace were inspected and their
+state recorded privately. The recorded complete output is `lȳtelu`;
+inspection of that report is not claimed as a new Foma execution.
+The source analysis confirms the existing back-vowel selection rather
+than discovering an adopted front-vowel input.
+
+The acquisition authority is
+[`docs/references/little_2026-11-09/`](../../../../docs/references/little_2026-11-09/README.md).
+Six supplied originals and the separately obtained author reissue are
+preserved privately, byte-for-byte, with complete search aids. The
+intake distinguishes the seven new holdings from the three reused
+dictionaries/grammar. Full text and page images are not redistributed.
+
+| Source | Actual consultation and verification | Argument and limit |
+| :--- | :--- | :--- |
+| Meillet1902 | Printed172–174, PDF177–179; original173 image checked | Gothic/OHG identification explicitly problematic; antonym pairs support morphological endings, not a root-vowel law. The older `luzȥil` typography is normalized as luzzil in discussion, not treated as an extra reconstructed form. |
+| Krogmann1935 | Entire article44–48, PDF1–5, read directly; original48 image checked | Front līt- and back leut- initially distinct; bending/crouching and deceit linked semantically44–45; Greek/Latvian alternatives rejected45–46; lei-/leud- linked through elei-/eleu- bases of el-46–48. Final48 prints d-extension for BOTH bases, not an ed-extension. No conditioned ī > ū or complete quantity/suffix derivation is supplied. |
+| Heidermanns1993 | Title/imprint and371–372,390–391, PDF379–380,398–399; original371,372,390 images checked | Diplomatic headwords leitila-, lūtila- (luttila-); distinguish the author's ei notation from CAPR's ī normalization. Rare OE lītel, Middle Dutch littel/luttel, Frisian lītik/littik and -ika formations complicate a branch split. liuzzil/liuzilu are attributed to Matzel's contamination analysis; Matzel himself not newly consulted. Expressive gemination is an attributed proposal, not an adopted law. |
+| Luehr1982 | Author's2016 reissue: II381–387, PDF634–640; original reissue385 and387 images checked | Two roots, i/ja stem analysis, -l addition, objection to liquid-gemination account384 n2392, alternative explanations of verbal long ū383 n2384, and paradigmatic motivation for front-vowel remodelling385–387. Reissue footnote2400 reports Krogmann; the new article instead checks Krogmann directly. |
+| Luehr2017 | Printed152–153 and bibliography162–163; PDF6–7,16–17; original152–153 images checked | Explicit noncognacy, separate PIE lud-/lei̯h₂- associations, comparative Baltic/Celtic forms and lī-i̯a- remodelling. Footnote4 records a competing etymology of Gothic undarleijin, not of little directly. Old Saxon lītil is reported without a textual locator and is absent from Heidermanns' corresponding inventory; it is not promoted into an independently verified attestation. |
+| Levitsky2003 | Printed37–38,58–62, PDF1–2,22–26; original37,58–59 images checked | Actual Russian original, Voprosy jazykoznanija2003(1):37–62, V. V. Левицкий. Title covers sep(h)ə-/sp(h)ē-, erə-/rē-, elə-/lē-. Persson-style extensions/anomalous ablaut38; explicit alternative to Krogmann and cutting/fragmentation semantics59. Not ordinary e/o/zero ablaut or a demonstrated Germanic vowel law. Earlier web-search guesses about author/title were rejected, not ingested. |
+| Melazzo2014 | Title9, discussion10/n3 and closing bibliography17, PDF1–2,9; original10 image checked | Actual article9–17, not9–18; PDF10 blank. Primarily Greek μέγας. Thurneysen1917:61 is known here through Melazzo; no independent original consultation claimed. |
+| Fulk2018 | Printed15,92–93,127,132,209 reread in existing original; earlier image verification of92/209 retained | Liquid gemination/closed-syllable shortening127 and paradigmatic redistribution132 are distinct from an unconditional long-vowel shortening law. The selected complete plural remains explicitly printed92. |
+
+### Edition and diplomatic qualifications
+
+The freely author-posted Hildebrandlied PDF begins with Lühr's
+24 May2016 declaration that this is a retyping of her unchanged
+dissertation, with transcription assistance acknowledged. It is not
+a photographic1982 edition. Its PartII little discussion is paginated
+381–387, not496–501; Lühr2017 explicitly refers to original500, and
+Heidermanns372 to original496–501. Those original-edition pages have
+not been independently image-checked. The article therefore cites the
+reissue's actual pages, not an invented sheet-to-1982-folio map.
+The final reissue sheet has an index heading and placeholders; acquisition
+of all878 PDF sheets is not acquisition of a complete1982 facsimile/index.
+
+The 1982 reissue's preform is `*līi̯a-`, with a glide, not two
+independently syllabic i-vowels. The reader's `*lī-ja-` and `*lut-ja-la-`
+use j for the sources' nonsyllabic i; root quantities are unchanged.
+Lühr2017 explicitly indexes the laryngeal h₂ where the earlier
+discussion has unindexed h. Her printed Greek λῖμος is retained
+as her comparison, not silently replaced by an OCR approximation.
+The semantic and morphological comparisons remain hypotheses.
+“Regular” applies only to the selected complete PGmc-to-OE history.
+
+The two West Germanic gemination proposals remain distinct:
+Lühr's i-to-ja transfer plus suffixal remodelling, versus Fulk's
+stop-plus-liquid environment with closed-syllable shortening and
+later paradigm redistribution. Neither is adopted or recoded here.
+Heidermanns' expressive explanation is reported accurately without
+introducing semantic conditioning or lexical diffusion.
+
+### Decision
+
+Retain `*lūtilaz`, selected `*lūtilō` and `lȳtelu`. Orel supports
+the back-vowel citation and Fulk the complete selected plural.
+Heidermanns restricts the back-vowel attestations to West Germanic:
+that geographical observation does not independently prove a
+pan-Germanic ū adjective or authorize a silent stage reassignment.
+Kroonen's representative ī headword cannot replace the selected
+input without a different OE history. No lexical-data correction
+is recommended in this editorial pass. Remote cognacy, precise
+back-vowel formation and variant distribution remain open scientific
+questions, separate from the verified selected derivation.
+
 | Evidence | Exact location | What is directly established | Reconstruction or inference | Verification |
 | :--- | :--- | :--- | :--- | :--- |
 | Orel2003 | p. 248, *lītilaz ~ *lūtilaz ~ *luttilaz; PDF sheet 287 | Three printed whole-word alternatives, including long ū | Select the supported ū variant for OE long ȳ under ordinary i-mutation; do not erase the alternatives | Original page image inspected |

@@ -182,7 +182,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2334-where-hw\u01e3r.model.md": "3aa0f860d546e84c82f9f5a8522da3e84ea12a540c7d0b4580d414795ffcdc30",
     "Germanic/docs/lexeme_reports/model_entries/2335-filth-f\u0233l\u00fe.model.md": "cab3ee8173b581ca652d41da75c1c3749e6b1d1345f33b428e153e4640eb41ad",
     "Germanic/docs/lexeme_reports/model_entries/2336-earthly-eor\u00fecunde.model.md": "5595575bbbb9d5576efe2cd79d5918f3e6cc571c7ab8193ec78e7f5bfec4e410",
-    "Germanic/docs/lexeme_reports/model_entries/2337-little-l\u0233telu.model.md": "0796cf73adf280e4d4d033b58f99a942c1f9a07419ab4d4418d7ff198ef9aca5",
+    "Germanic/docs/lexeme_reports/model_entries/2337-little-l\u0233telu.model.md": "feb12352a8f0617f984fc7c4d3a6b8cc34d86ff0598a5917048d9ce0b1609b46",
     "Germanic/docs/lexeme_reports/model_entries/2338-livestock-n\u012betenu.model.md": "af0e93c049beb6ffe9124b94cdb7aa44b966cc4ce7255401fbb0208cb9b95802",
     "Germanic/docs/lexeme_reports/model_entries/2339-dart-s\u010bytel.model.md": "217341ca4bda9f5782681410af1ee3c285b9ac7fe4fed7f799c5f44940de12d8",
     "Germanic/fsts/old_english_sandbox.txt": "64c0b672831b8f73778a00386095791412bddebde330fbc3e2240800b048be0b",
@@ -194,7 +194,7 @@
     "backend/oe_input_context.py": "d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67"
   },
   "outputs": {
-    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "81d71c67b7568b96eba2322e8d204ddd29a07e8ab3a9861f19761abe44a0f82c",
+    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "cb2cc9872cb5bbb4cb2c6aa799f08009cfa897b225f441a2b08efd9732382dc8",
     "Germanic/docs/assembly/manifest_all_by_class.tsv": "819060273c957bb4243535eac454250b34f693b575bf8ed64e8d4361c0ed70ee",
     "Germanic/docs/assembly/manifest_attested_variant.tsv": "9d896dce0656d1749707c50315c11c5c802cb50de7b25458253cd29726038e9c",
     "Germanic/docs/assembly/manifest_early_analogy.tsv": "cff0f17dcccda0632df02d8893863230897504004d450a0c277acb967f5aaf31",

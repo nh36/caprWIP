@@ -24,6 +24,22 @@ boundaries. Recovery copies remain on the same volume; independent disaster
 recovery is still outstanding. Complete restricted sources and private
 backup manifests must not be added to public Git.
 
+## Little source acquisition, 9 November 2026
+
+The [intake and consultation record](little_2026-11-09/README.md)
+registers six supplied PDFs (Meillet1902, Krogmann1935, Heidermanns1993,
+Levitsky2003, Melazzo2014, Luehr2017) and Lühr's separately acquired
+author-posted dissertation reissue. `holdings.tsv` records original
+filenames and hashes; `page_map.tsv` records bounded folio anchors.
+The Russian article needed complete independent OCR because its native
+extraction loses Cyrillic. Original PDFs and complete texts remain private.
+
+The Luehr1982 holding is a2016 retyping with different pagination,
+not a1982 facsimile; citations identify its actual PartII pages.
+Orel2003, Kroonen2013 and Fulk2018 reuse existing originals. The
+canonical little model/ledger expands the comparative and intellectual
+history while retaining the selected input and all production phonology.
+
 ## Christiansen2018 acquisition, 9 November 2026
 
 The [intake record](christiansen_2018/README.md), `holdings.tsv` and
