@@ -246,16 +246,20 @@ class GeneratedProjectionTests(unittest.TestCase):
                                  self.ann[sc]["firing_count"])
 
     def test_check_mode_detects_a_stale_projection(self):
-        original = ANNOTATIONS.read_text(encoding="utf-8")
-        try:
-            ANNOTATIONS.write_text(original + "SC999\tx\n", encoding="utf-8")
-            proc = subprocess.run(
-                [sys.executable, str(TOOLS / "generate_registry_views.py"), "--check"],
-                capture_output=True, text=True)
-            self.assertNotEqual(proc.returncode, 0,
-                                "--check must fail on a stale projection")
-        finally:
-            ANNOTATIONS.write_text(original, encoding="utf-8")
+        mod = load_module("generate_registry_views")
+        scratch = REPO_ROOT / ".ci-results" / "scratch"
+        scratch.mkdir(parents=True, exist_ok=True)
+        original = ANNOTATIONS.read_bytes()
+        with tempfile.TemporaryDirectory(prefix="registry-stale-", dir=scratch) as directory:
+            isolated = Path(directory) / ANNOTATIONS.name
+            isolated.write_bytes(original)
+            with mock.patch.object(mod, "ANNOTATIONS", isolated), \
+                    mock.patch.object(sys, "argv", [mod.__file__, "--check"]):
+                self.assertEqual(mod.main(), 0)
+                isolated.write_bytes(original + b"SC999\tx\n")
+                self.assertNotEqual(mod.main(), 0,
+                                    "--check must fail on a stale projection")
+        self.assertEqual(ANNOTATIONS.read_bytes(), original)
 
     def test_projections_are_clean(self):
         proc = subprocess.run(

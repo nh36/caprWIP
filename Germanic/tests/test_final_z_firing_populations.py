@@ -31,7 +31,8 @@ population.
 Population tests are host-runnable (no foma/Docker): they read the committed
 full trace report, the committed firing table, and the live TSV. The
 synthetic-control tests run the real MonosyllabicFinalZLoss definition
-extracted from germanic.txt and are skipped when foma is not installed.
+extracted from germanic.txt inside the provisioned backend. They belong
+to the strict serial runtime lane, not portable validation.
 """
 
 from __future__ import annotations
@@ -39,14 +40,17 @@ from __future__ import annotations
 import csv
 import hashlib
 import re
-import shutil
-import subprocess
-import tempfile
+import sys
 import unittest
 from pathlib import Path
 
+import pytest
+
 TESTS_DIR = Path(__file__).resolve().parent
 GERMANIC_DIR = TESTS_DIR.parent
+sys.path.insert(0, str(GERMANIC_DIR / "tools"))
+from capr_runtime import run_in_runner
+
 FULL_TRACE = GERMANIC_DIR / "docs" / "debug_snapshots" / "oe_full_trace_report.txt"
 FIRING_TABLE = (
     GERMANIC_DIR
@@ -378,7 +382,6 @@ def _extract_define_closure(source: str, roots: list[str]) -> str:
     return "\n".join(text for _, text in ordered)
 
 
-@unittest.skipIf(shutil.which("foma") is None, "foma not available")
 class Sc097SyntheticControlTests(unittest.TestCase):
     """Run the real MonosyllabicFinalZLoss definition on synthetic controls.
 
@@ -386,6 +389,8 @@ class Sc097SyntheticControlTests(unittest.TestCase):
     cascade slot, in the internal star-token notation (R/T's *h is the FST's
     *x). Expected outputs verified against R/T 2014: 86-87 and Dossier C.
     """
+
+    pytestmark = [pytest.mark.runtime]
 
     # (input, expected output at the SC097 stage)
     CONTROLS = [
@@ -408,18 +413,13 @@ class Sc097SyntheticControlTests(unittest.TestCase):
         script += "\nregex MonosyllabicFinalZLoss;\n"
         for form, _ in cls.CONTROLS:
             script += f"down {form}\n"
-        with tempfile.NamedTemporaryFile(
-                "w", suffix=".foma", delete=False, encoding="utf-8") as handle:
-            handle.write(script)
-            script_path = handle.name
-        try:
-            proc = subprocess.run(
-                ["foma", "-q", "-f", script_path],
-                stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
-        finally:
-            Path(script_path).unlink()
+        script += "quit\n"
+        proc = run_in_runner(
+            't=$(mktemp) && cat > "$t" && foma -q -f "$t"; '
+            'rc=$?; rm -f "$t"; exit "$rc"',
+            input=script, text=True, capture_output=True, check=True, timeout=600)
         cls.outputs = [line.strip() for line in
-                       proc.stdout.decode("utf-8").splitlines() if line.strip()]
+                       proc.stdout.splitlines() if line.strip()]
 
     def test_synthetic_controls_behave_as_adjudicated(self):
         self.assertEqual(len(self.outputs), len(self.CONTROLS),

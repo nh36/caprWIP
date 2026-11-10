@@ -742,7 +742,7 @@ class ScholarlyPropagationTests(RunHarness):
                  self.tmp / "../outside-source.md"]
         generated = SimpleNamespace(outputs=lambda: [paths[0]])
         for path in paths:
-            with self.subTest(path=path):
+            with self.subTest(path=str(path)):
                 run = self.start()
                 modifications = {str(path): "a" * 64}
                 self.advance_to(run, "DECIDE", decision=dict(

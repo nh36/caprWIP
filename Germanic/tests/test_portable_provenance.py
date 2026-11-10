@@ -194,8 +194,10 @@ def test_runtime_capability_selection_covers_live_evidence(mode, expected_skips)
     from conftest import pytest_collection_modifyitems
     from types import SimpleNamespace
     from test_evidence_interface import EvidenceIntegrationTests
+    from test_final_z_firing_populations import Sc097SyntheticControlTests
 
     assert any(mark.name == "runtime" for mark in EvidenceIntegrationTests.pytestmark)
+    assert any(mark.name == "runtime" for mark in Sc097SyntheticControlTests.pytestmark)
     skipped = []
     runtime = SimpleNamespace(get_closest_marker=lambda name: object(),
                               add_marker=skipped.append)
