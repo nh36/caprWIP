@@ -18,6 +18,7 @@ From the repository root:
 
 ```sh
 python3 Germanic/tools/run_portable_checks.py
+python3 Germanic/tools/run_portable_checks.py --workers 4
 python3 -m pytest -q --validation-mode=portable Germanic/tests
 python3 Germanic/tools/pgmc_reconstruction_survey.py --mode portable
 python3 Germanic/tools/artifact_graph.py --check --mode portable
@@ -28,6 +29,33 @@ graph and index checks, writes complete logs and JUnit results to `.ci-results/`
 and produces the Actions job summary. Scratch files stay inside that directory.
 A missing required tracked basis stops at preflight, rather than producing
 hundreds of dependent failures.
+
+The serial command remains the reference/default. `--workers 2` and `4` use
+xdist `--dist loadfile`; install `Germanic/tests/requirements-test.txt`.
+All nodes remain collected, including explicitly skipped runtime/historical
+capabilities; the portable runner does not deselect them. Hidden
+`PYTEST_ADDOPTS` are rejected: execution options belong in the recorded command.
+Runtime-marked tests still cannot execute inside workers.
+
+Every phase emits START/END, elapsed time and original exit status. Genuine
+verbose pytest output is relayed immediately while the exact subprocess bytes
+are retained in its log; a named test/fixture can legitimately remain silent
+and silence alone is not a hang diagnosis. There is no whole-pytest timeout.
+The first failing subprocess status is returned; missing, malformed or failing
+JUnit also prevents a success claim without hiding the original status/log.
+`timings.json`, full logs/JUnit, slow cases and `--durations=40` are retained.
+Actions receives completed-phase summaries before the final comprehensive result.
+
+Push checks run on authoritative `update`; development branches receive the
+same comprehensive check on pull requests or explicit `workflow_dispatch`.
+This avoids duplicate push/PR checks without path exclusions. Superseded
+pushes/PR updates cancel only their own event/ref or PR group. Manual runs
+have a separate, non-cancelling group and cannot cancel a final push check.
+The workflow chooses four workers with at least four available CPUs, two
+with two or three, otherwise serial, and prints CPU/memory provisioning.
+Use fewer workers on memory-constrained local hosts.
+The measured concurrency audit, retained coverage and timing qualifications
+are in [the performance report](VALIDATION_PERFORMANCE_2026-11-10.md).
 
 Portable survey validation permits unavailable, untracked declared original
 PDFs and private `.txt` transcriptions under `docs/references/local/`.
@@ -87,7 +115,8 @@ synthetic validator tests remain portable.
 ## Three-level development validation workflow
 
 Running the entire strict suite after every intermediate edit is unnecessary;
-running it once against the final candidate state is mandatory. The levels are
+run it once against the final scientific/publication candidate state, including
+validation infrastructure changes that alter execution semantics. The levels are
 cumulative capabilities, not alternatives, and a previous full pass never
 certifies a subsequently changed scientific or publication state.
 
@@ -103,7 +132,7 @@ python3 Germanic/tools/check_reader_facing_semantics.py
 ```
 
 **Level B — integrated consistency** (a few minutes). After a coherent group
-of SOURCE edits:
+of SOURCE edits with generated-output consequences:
 
 ```sh
 python3 Germanic/tools/adjudicate.py --refresh   # must end CONTROL PLANE CLEAN
@@ -114,6 +143,16 @@ python3 Germanic/tools/adjudicate.py --status    # read-only three-axis report
 artifact-graph freshness and lexical publication obligations (including
 explicitly selected articles that are missing, unassembled or unledgered),
 and states explicitly that full validation is a separate axis it cannot attest.
+
+For work without SOURCE/generated-output consequences, use the relevant
+read-only consistency checks rather than regenerating everything. Pure Git,
+filesystem or administrative documentation changes do not need a fresh Level C
+when dependency analysis establishes unchanged scientific/publication inputs.
+Do not classify by extension: lexical prose, holdings metadata and bibliography
+can affect generated publication and indexes. State any equivalence explicitly;
+an earlier exact-commit receipt remains historical, not a certificate for a new
+commit. Scientific adjudication journals retain the prescribed A/B/C commands
+and authentic receipt requirements below.
 
 Execution receipts must identify these commands, not merely carry an A/B
 label: A requires targeted pytest selectors with executed passing tests, or
@@ -263,9 +302,11 @@ validation, not historical replay, and is unchanged.
 
 The suite divides into three concurrency classes:
 
-1. **Independent tests** (unmarked): pure source/projection checks using
-   read-only authorities or disposable temporary directories. Safe in
-   separate processes.
+1. **Audited independent tests**: read-only source/projection checks or
+   disposable, isolated fixtures. A missing `runtime` marker alone is not a
+   safety proof: audit actual writes, builders, fixed paths and subprocesses.
+   The portable audit isolated a tracked-projection mutation and moved an
+   unmarked synthetic Foma test into the strict backend/runtime category.
 2. **Runtime tests** (`-m runtime`): share the single authoritative Foma
    binary directory and backend container (`capr_runtime.layout()`); two
    concurrent compilations against those bins are forbidden. Serial only;
@@ -287,8 +328,9 @@ python3 -m pytest -q test_evidence_interface.py  # lane 3: exclusive
 ```
 
 `--dist loadfile` keeps each test module's shared fixtures on one worker. The
-three lanes together collect exactly the tests of the serial Level C commands
-(measured 2026-10-29: 1584 + 45 + 24 = 1653 collected tests); verify with
+three lanes together collect exactly the tests of the serial Level C commands.
+The earlier 2026-10-29 inventory was 1584 + 45 + 24 = 1653 collected tests;
+it is a dated observation, not today's suite count. Verify current coverage with
 `--collect-only -q` when in doubt. Each xdist worker repeats the
 session holding/evidence preflight (a few seconds per worker). The serial
 route remains the reference; use the lanes when iterating on large changes.

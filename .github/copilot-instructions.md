@@ -6,6 +6,12 @@
 - Germanic validation: `docs/CI_VALIDATION.md` distinguishes portable checks from strict holding/runtime checks. Use targeted pytest selectors under `Germanic/tests/`; a portable pass does not certify original PDFs or fresh Foma execution.
 - Default book: `bash Germanic/docs/assembly/build_capr_book_draft_docker.sh`. See `Germanic/docs/assembly/README.md` for standalone presentations and publication checks.
 
+## Proportional validation
+- Level A during development: run focused owning tests, normally seconds or minutes; do not run the strict suite after each edit or intermediate commit.
+- Level B after coherent SOURCE changes: use `adjudicate.py --refresh` and `--status`. Without generated-output consequences, use relevant read-only consistency checks instead of regeneration. Never invoke a hand-picked generator list.
+- Level C once the scientific/publication state or validation execution semantics are final: run strict serial then exclusive validation, or documented proven-equivalent lanes, recording the exact tested commit/source identities. Rerun only affected checks after repairs unless the final certified state changes.
+- Pure administrative, Git or filesystem work needs no fresh hour-long scientific run when dependency analysis establishes unchanged science/publication inputs. Documentation can have publication consequences: classify dependencies, not filename extensions. Never transfer an older exact-commit certificate or describe portable/historical-receipt checks as fresh runtime execution.
+
 ## High-level architecture
 - CAPR is a shared Flask API in `backend/` plus a Svelte UI in `frontend/`, used by three parallel research pipelines: Germanic, Burmish, and Celtic.
 - `docker-compose.yml` mounts Germanic data, FSTs, tools, and docs into `/usr/app` by default, so the running backend operates on Germanic unless those volume mounts are changed.
