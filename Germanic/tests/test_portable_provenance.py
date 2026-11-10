@@ -1,5 +1,8 @@
 """Capability separation must fail closed on available-source regressions."""
 import json
+import io
+import os
+import sys
 from pathlib import Path
 from unittest.mock import patch
 
@@ -104,21 +107,124 @@ def test_variety_locator_rebase_requires_unique_unchanged_source_anchor(tmp_path
 
 def test_reporter_stops_once_at_preflight_and_does_not_reuse_old_results(tmp_path):
     import run_portable_checks as runner
-    import subprocess
     output = tmp_path / "results"
     output.mkdir()
     (output / "tests.xml").write_text("<testsuites><testcase name='stale-result'/></testsuites>")
     with patch.object(runner, "ROOT", tmp_path), patch.object(runner, "OUTPUT", output), \
-            patch.object(runner.subprocess, "run",
-                         return_value=subprocess.CompletedProcess([], 1)) as execute, \
+            patch.object(runner, "run_check", return_value=23) as execute, \
             patch.dict(runner.os.environ, {"GITHUB_STEP_SUMMARY": ""}):
-        assert runner.main() == 1
+        assert runner.main() == 23
     assert execute.call_count == 1
     summary = (output / "summary.md").read_text()
     assert "Portable: FAIL" in summary
     assert "Preflight failed once" in summary
     assert "NOT RUN" in summary
     assert "stale-result" not in summary
+
+
+def test_reporter_streams_before_child_exit_and_preserves_bytes_and_status(tmp_path):
+    import run_portable_checks as runner
+    log = tmp_path / "child.log"
+    acknowledged = tmp_path / "acknowledged"
+
+    class LiveOutput(io.StringIO):
+        def write(self, text):
+            if "first " in text:
+                assert log.read_bytes() == b"first \xc4"
+                acknowledged.touch()
+            return super().write(text)
+
+    script = (
+        "import pathlib,sys,time\n"
+        "sys.stdout.buffer.write(b'first \\xc4'); sys.stdout.buffer.flush()\n"
+        "for _ in range(500):\n"
+        f" if pathlib.Path({str(acknowledged)!r}).exists(): break\n"
+        " time.sleep(.01)\n"
+        "else: sys.exit(93)\n"
+        "sys.stdout.buffer.write(b'\\x81\\n'); sys.stdout.buffer.flush()\n"
+        "sys.stderr.write('second\\n'); sys.exit(7)\n"
+    )
+    output = LiveOutput()
+    with patch.object(runner.sys, "stdout", output):
+        assert runner.run_check([sys.executable, "-c", script], log, dict(os.environ)) == 7
+    assert log.read_bytes() == b"first \xc4\x81\nsecond\n"
+    assert output.getvalue() == "first \u0101\nsecond\n"
+
+
+@pytest.mark.parametrize("code,xml,expected", [
+    (17, None, 17),
+    (0, None, 1),
+    (0, "<broken>", 1),
+    (0, '<testsuites><testsuite tests="1" failures="1"><testcase name="bad">'
+        '<failure message="deliberate"/></testcase></testsuite></testsuites>', 1),
+])
+def test_reporter_keeps_fatal_pytest_diagnostics_without_usable_junit(tmp_path, code, xml, expected):
+    import run_portable_checks as runner
+    output = tmp_path / "results"
+
+    def execute(argv, log, env):
+        log.write_text("complete original diagnostics\n")
+        if argv[1:3] == ["-m", "pytest"]:
+            if xml is not None:
+                (output / "tests.xml").write_text(xml)
+            return code
+        return 0
+
+    with patch.object(runner, "ROOT", tmp_path), patch.object(runner, "OUTPUT", output), \
+            patch.object(runner, "run_check", side_effect=execute), \
+            patch.dict(os.environ, {"GITHUB_STEP_SUMMARY": ""}):
+        assert runner.main() == expected
+    summary = (output / "summary.md").read_text()
+    assert "Portable: FAIL" in summary
+    assert "Preflight failed once" not in summary
+    assert (output / "regressions.log").read_text() == "complete original diagnostics\n"
+    phases = json.loads((output / "timings.json").read_text())["phases"]
+    assert len(phases) == 5
+    assert phases[2]["returncode"] == code
+    assert all(phase["elapsed_seconds"] >= 0 for phase in phases)
+
+
+@pytest.mark.parametrize("workers", [1, 2, 4])
+def test_reporter_workers_do_not_change_portable_selection(tmp_path, workers, capsys):
+    import run_portable_checks as runner
+    output = tmp_path / "results"
+    commands = []
+
+    def execute(argv, log, env):
+        log.write_text("original output\n")
+        assert env["PYTHONUNBUFFERED"] == "1"
+        if argv[1:3] == ["-m", "pytest"]:
+            commands.append(argv)
+            (output / "tests.xml").write_text(
+                '<testsuites><testsuite tests="1"><testcase name="passing" '
+                'time="0.1"/></testsuite></testsuites>')
+        return 0
+
+    with patch.object(runner, "ROOT", tmp_path), patch.object(runner, "OUTPUT", output), \
+            patch.object(runner, "run_check", side_effect=execute), \
+            patch.dict(os.environ, {"GITHUB_STEP_SUMMARY": ""}):
+        assert runner.main(["--workers", str(workers)]) == 0
+    command, = commands
+    assert "--validation-mode=portable" in command
+    assert "--durations=40" in command
+    assert "Germanic/tests" in command
+    if workers == 1:
+        assert "-n" not in command
+    else:
+        assert command[command.index("-n") + 1] == str(workers)
+        assert command[command.index("--dist") + 1] == "loadfile"
+    assert not any(arg.startswith(("-k", "--deselect", "--ignore")) for arg in command)
+    live = capsys.readouterr().out
+    assert "START regressions" in live
+    assert "END regressions: PASS" in live
+    assert "Slowest test cases" in live
+
+
+def test_reporter_missing_executable_retains_failure_diagnostic(tmp_path):
+    import run_portable_checks as runner
+    log = tmp_path / "missing.log"
+    assert runner.run_check([str(tmp_path / "missing")], log, dict(os.environ)) == 127
+    assert "Cannot start" in log.read_text()
 
 
 def test_direct_memo_check_is_independent_but_strict_propagation_keeps_runtime_gate(tmp_path):
