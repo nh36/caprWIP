@@ -94,7 +94,10 @@ def indexed(rows, column):
 
 def links(value, available, label, required=False):
     linked = ids(value)
-    if (required and not linked) or len(linked) != len(set(linked)) or not set(linked) <= set(available):
+    if type(available) not in (dict, set, frozenset):
+        available = set(available)
+    if ((required and not linked) or len(linked) != len(set(linked))
+            or any(key not in available for key in linked)):
         raise AnalysisError(f"{label}: missing, duplicate or unknown links")
     return linked
 
@@ -148,6 +151,7 @@ def validate(corpus, forms, analyses, comparisons, rationales):
         links(position["feature_evidence_ids"], evidence, f"{key} features", bool(features))
         if form["form_kind"] != "process" and not position["analytical_form"]:
             raise AnalysisError(f"{key}: non-process analytical form must be explicit")
+    forms_by_row = None
     for case in comparisons:
         key = case["comparison_id"]
         affected = links(case["row_ids"], rows, f"{key} rows", True)
@@ -224,22 +228,25 @@ def validate(corpus, forms, analyses, comparisons, rationales):
             if not targets & required:
                 raise AnalysisError(f"{key}: position support does not explain inter-author divergence")
         if case["scope"] == "core_triage" and case["status"] == "reviewed":
+            if forms_by_row is None:
+                forms_by_row = {}
+                for form in forms:
+                    for row_id in ids(form["row_ids"]):
+                        forms_by_row.setdefault(row_id, []).append(form)
             for row_id in affected:
                 linked_sources = {
                     evidence[positions[member]["evidence_id"]]["source_key"]
                     for member in members if positions[member]["row_id"] == row_id
                 }
                 available_sources = {
-                    form["source_key"] for form in forms
-                    if row_id in ids(form["row_ids"])
-                    and form["source_key"] in {"Orel2003", "Kroonen2013"}
+                    form["source_key"] for form in forms_by_row.get(row_id, ())
+                    if form["source_key"] in {"Orel2003", "Kroonen2013"}
                 }
                 if not available_sources <= linked_sources:
                     raise AnalysisError(f"{key}: core triage omits available core-source evidence")
                 available_evidence = {
-                    form["evidence_id"] for form in forms
-                    if row_id in ids(form["row_ids"])
-                    and form["source_key"] in {"Orel2003", "Kroonen2013"}
+                    form["evidence_id"] for form in forms_by_row.get(row_id, ())
+                    if form["source_key"] in {"Orel2003", "Kroonen2013"}
                 }
                 linked_evidence = {
                     positions[member]["evidence_id"] for member in members

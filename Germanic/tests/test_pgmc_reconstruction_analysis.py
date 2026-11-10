@@ -199,6 +199,36 @@ class AnalyticalValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(analytical.AnalysisError, "alternatives"):
             self.validate()
 
+    def test_core_lookup_is_prepared_once_and_rebuilt_for_changed_evidence(self):
+        class ScannedForms(list):
+            scans = 0
+
+            def __iter__(self):
+                self.scans += 1
+                return super().__iter__()
+
+        self.forms = ScannedForms(self.forms)
+        self.cases.append(dict(self.cases[0], comparison_id="c2"))
+        self.validate()
+        self.assertLessEqual(self.forms.scans, 2)
+        additional = dict(self.forms[0], evidence_id="e3", row_ids="2")
+        self.forms.append(additional)
+        self.validate()
+        additional["row_ids"] = "1;2"
+        with self.assertRaisesRegex(analytical.AnalysisError, "alternatives"):
+            self.validate()
+        additional["source_key"] = "Other"
+        self.validate()
+
+    def test_link_checks_keep_duplicate_unknown_and_required_failures(self):
+        for factory in (dict.fromkeys, set, list, iter):
+            with self.subTest(container=factory.__name__):
+                self.assertEqual(analytical.links(
+                    "e2;e1", factory(["e1", "e2"]), "fixture"), ["e2", "e1"])
+                for value in ("e1;e1", "missing", ""):
+                    with self.assertRaisesRegex(analytical.AnalysisError, "links"):
+                        analytical.links(value, factory(["e1", "e2"]), "fixture", True)
+
     def test_reviewed_case_cannot_hide_unreviewed_position(self):
         self.positions[0]["status"] = "unreviewed"
         with self.assertRaisesRegex(analytical.AnalysisError, "unreviewed positions"):

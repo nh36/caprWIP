@@ -49,6 +49,25 @@ class SurveyValidationTests(unittest.TestCase):
         survey.validate(self.sources, self.forms, self.reviews, self.corpus,
                         {"Source"}, self.root)
 
+    def test_holding_preparation_is_reused_only_within_one_pass(self):
+        self.forms.append(dict(self.forms[0], evidence_id="form2"))
+        self.reviews[0]["evidence_ids"] = "form1;form2"
+        original_open = Path.open
+        with patch.object(Path, "open", autospec=True, side_effect=original_open) as opened:
+            self.validate()
+            self.assertEqual(opened.call_count, 1)
+            self.validate()
+            self.assertEqual(opened.call_count, 2)
+        (self.root / self.forms[0]["basis"]).unlink()
+        with self.assertRaisesRegex(survey.SurveyError, "missing.*holding"):
+            self.validate()
+
+    def test_reused_holding_does_not_skip_other_evidence_checks(self):
+        self.forms.append(dict(self.forms[0], evidence_id="form2", printed_pages="invalid"))
+        self.reviews[0]["evidence_ids"] = "form1;form2"
+        with self.assertRaisesRegex(survey.SurveyError, "form2: printed pages"):
+            self.validate()
+
     def test_missing_review_is_unchecked_not_absent(self):
         self.validate()
         checks = survey.coverage_rows(self.corpus, self.sources, self.reviews, [{

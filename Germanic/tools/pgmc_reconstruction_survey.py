@@ -17,6 +17,7 @@ import sqlite3
 import subprocess
 import sys
 from collections import Counter
+from functools import cache
 from pathlib import Path
 
 from check_bibliography_sanity import parse_entries
@@ -156,6 +157,22 @@ def external_holding(relative: str, path: Path, tracked: set[str],
 def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path,
              *, mode: str = "full") -> None:
     validate_mode(mode)
+    canonical_root = root.resolve()
+
+    # Preparation is shared only within this pass; later calls recheck the filesystem.
+    @cache
+    def resolved(relative):
+        return (root / relative).resolve()
+
+    @cache
+    def is_file(path):
+        return path.is_file()
+
+    @cache
+    def readable(path):
+        with path.open("rb") as stream:
+            stream.read(1)
+
     tracked = tracked_paths(root) if mode == "portable" else set()
     source_map = {key[0]: row for key, row in unique(
         sources, ("source_key",), "sources").items()}
@@ -165,8 +182,8 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
     row_ids = {row["row_id"] for row in corpus}
     if not row_ids or not any(source["role"] != "excluded" for source in sources):
         raise SurveyError("survey requires a nonempty corpus and included source universe")
-    references = (root / "docs/references").resolve()
-    if not references.is_relative_to(root.resolve()):
+    references = resolved("docs/references")
+    if not references.is_relative_to(canonical_root):
         raise SurveyError("reference library escapes repository containment")
     for source in sources:
         key = source["source_key"]
@@ -190,16 +207,15 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
             if source[field] not in {"verified", "unreviewed", "verification_gap"}:
                 raise SurveyError(f"source {key}: invalid {field}")
         for relative in ids(source["holding_paths"]):
-            path = (root / relative).resolve()
+            path = resolved(relative)
             if not path.is_relative_to(references):
                 raise SurveyError(f"source {key}: missing or out-of-library holding {relative}")
             optional_original = (mode == "portable" and
                                  external_holding(relative, path, tracked, references))
             if not path.exists() and not optional_original:
                 raise SurveyError(f"source {key}: missing or out-of-library holding {relative}")
-            if path.is_file():
-                with path.open("rb") as stream:
-                    stream.read(1)
+            if is_file(path):
+                readable(path)
     for form in forms:
         evidence_id, key = form["evidence_id"], form["source_key"]
         linked = ids(form["row_ids"])
@@ -214,19 +230,18 @@ def validate(sources, forms, reviews, corpus, bibliography: set[str], root: Path
         for field in ("asserted_stage", "cell", "argument", "basis", "locator"):
             if not form[field]:
                 raise SurveyError(f"{evidence_id}: {field} must be explicit")
-        basis = (root / form["basis"]).resolve()
+        basis = resolved(form["basis"])
         original_basis = (
             mode == "portable"
             and external_holding(form["basis"], basis, tracked, references)
             and form["basis"] in ids(source_map[key]["holding_paths"])
             and basis.is_relative_to(references))
-        if not basis.is_relative_to(root.resolve()) or (not basis.is_file() and not original_basis):
+        if not basis.is_relative_to(canonical_root) or (not is_file(basis) and not original_basis):
             raise SurveyError(f"{evidence_id}: missing or out-of-repository verification basis")
         if mode == "portable" and form["basis"] not in tracked and not original_basis:
             raise SurveyError(f"{evidence_id}: verification basis must be tracked in portable mode")
-        if basis.is_file():
-            with basis.open("rb") as stream:
-                stream.read(1)
+        if is_file(basis):
+            readable(basis)
         if form["form_kind"] != "process" and not form["diplomatic_form"]:
             raise SurveyError(f"{evidence_id}: authored form is required")
         if form["form_kind"] == "process" and form["diplomatic_form"]:
