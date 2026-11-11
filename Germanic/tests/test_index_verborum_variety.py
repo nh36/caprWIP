@@ -134,6 +134,7 @@ def test_actual_sc041_comparisons_have_independent_example_roles():
     for form in ("*bárda", "*kámba"):
         row = next(r for r in rows if r["form"] == form and "SC041." in r["nearest_heading"])
         assert row["example_role"] == "model_stage"
+        assert row["inferred_language"] == ""
     failure_refs = {r["source_ref"] for r in rows
                     if r["form"] in {"bearda", "camba", "craft", "dag"} and "SC041." in r["nearest_heading"]}
     assert not any(r.source_ref in failure_refs and r.form in {"bearda", "camba", "craft", "dag"}

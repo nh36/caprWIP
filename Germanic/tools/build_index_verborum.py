@@ -2247,7 +2247,9 @@ def same_entry_old_english_hint(candidate: CandidateOccurrence) -> bool:
 
 
 def infer_broad_prose_language(candidate: CandidateOccurrence) -> str:
-    text = " ".join([candidate.heading, candidate.line_text])
+    text = EXPLICIT_TAG_RE.sub(
+        lambda match: match.group("content"), " ".join([candidate.heading, candidate.line_text])
+    )
     inline_code = inline_labeled_language(candidate)
     if inline_code:
         return inline_code

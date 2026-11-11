@@ -163,7 +163,7 @@
 
 ### Included rows by inferred language
 
-- `unknown`: 132
+- `unknown`: 134
 - `german`: 1
 - `goth`: 18
 - `lat`: 1
@@ -173,7 +173,7 @@
 - `ohg`: 9
 - `on`: 14
 - `os`: 3
-- `pgmc`: 159
+- `pgmc`: 157
 - `pie`: 5
 - `pnwgmc`: 2
 - `preoe`: 92
