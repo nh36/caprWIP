@@ -1274,6 +1274,36 @@ def assert_reader_failure_pair_roles() -> None:
         assert row["include_in_example_index"] == "yes"
 
 
+def assert_sc041_failure_examples(rows: list[dict[str, str]] | None = None) -> None:
+    """Independent editorial expectations, not inferred from the extractor."""
+    reader = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing"
+    source_lines = (reader / "041-final-bare-a-loss.md").read_text(encoding="utf-8").splitlines()
+    combined = reader / "reader_facing_local_section_20.md"
+    combined_lines = combined.read_text(encoding="utf-8").splitlines()
+    row_by_key = {(row["source_ref"], row["form"]): row
+                  for row in (load_reader_facing_example_rows() if rows is None else rows)}
+    for yielded, inherited, expected in (
+        ("bearda", "*bárdaz", "beard"),
+        ("camba", "*kámbaz", "camb"),
+        ("craft", None, "cræft"),
+        ("dag", None, "dæġ"),
+    ):
+        paragraphs = [line for line in source_lines if f"[{yielded}]" in line]
+        assert len(paragraphs) == 1, f"Missing or ambiguous SC041 comparison: {yielded}"
+        locations = [i for i, line in enumerate(combined_lines, 1) if line == paragraphs[0]]
+        assert len(locations) == 1, f"SC041 comparison not uniquely assembled: {yielded}"
+        ref = f"{combined.relative_to(REPO_ROOT).as_posix()}:{locations[0]}"
+        expected_roles = [(yielded, "yielded_output", "oe"), (expected, "expected_output", "oe")]
+        if inherited:
+            expected_roles.append((inherited, "example_input", "pgmc"))
+        for form, role, language in expected_roles:
+            row = row_by_key.get((ref, form))
+            assert row is not None, f"Missing SC041 example {form} at {ref}"
+            assert row["example_role"] == role, f"Wrong SC041 role for {form}: {row['example_role']}"
+            assert row["inferred_language"] == language, f"Wrong SC041 language for {form}"
+            assert row["include_in_example_index"] == "yes", f"Excluded SC041 example {form}"
+
+
 def assert_reconstructed_oe_index_commands() -> None:
     text = COMBINED_MD_PATH.read_text(encoding="utf-8")
     for heading, needle in (
@@ -1345,6 +1375,7 @@ def main() -> None:
     assert_broad_prose_decisions_and_inference()
     assert_print_layer_outputs()
     assert_reader_failure_pair_roles()
+    assert_sc041_failure_examples()
     assert_no_derivational_expression_rows()
     assert_reconstructed_oe_index_commands()
     assert_sortkey_allow_no_collisions()

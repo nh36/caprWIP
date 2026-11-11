@@ -1057,6 +1057,7 @@ def normalize_failure_form(text: str) -> str:
 
 
 def iter_failure_example_matches(line: str) -> list[dict[str, str]]:
+    """Read legacy comparisons or explicit .pred example-* editorial metadata."""
     matches: list[dict[str, str]] = []
     for match in FAILURE_EXAMPLE_RE.finditer(line):
         input_form = normalize_failure_form(match.group("input"))
@@ -1072,6 +1073,19 @@ def iter_failure_example_matches(line: str) -> list[dict[str, str]]:
                 "expected": expected,
             }
         )
+    for match in EXPLICIT_TAG_RE.finditer(line):
+        attrs = parse_attr_string(match.group("attrs"))
+        if not has_tag_class(match.group("attrs"), "pred") or "example-expected" not in attrs:
+            continue
+        yielded = normalize_failure_form(match.group("content"))
+        expected = normalize_failure_form(attrs["example-expected"])
+        inherited = normalize_failure_form(attrs.get("example-input", ""))
+        label = attrs.get("example-stage", "")
+        if not yielded or not expected or (
+            inherited and label not in {"PGmc", "PWGmc", "NWGmc", "OE", "Old English"}
+        ):
+            raise ValueError(f"Invalid annotated failure comparison: {match.group(0)}")
+        matches.append({"label": label, "input": inherited, "yield": yielded, "expected": expected})
     return matches
 
 
@@ -1083,18 +1097,19 @@ def reader_facing_failure_occurrences() -> list[dict[str, str]]:
             input_form = match["input"]
             yielded = match["yield"]
             expected = match["expected"]
-            occurrences.append(
-                {
-                    "language": stage_to_language(match["label"], input_form),
-                    "form": input_form,
-                    "display": input_form,
-                    "sort_key": transliterate_sort_key(input_form),
-                    "form_role": "selected_input",
-                    "source_scope": "reader_failure_input",
-                    "source_ref": f"{rel}:{line_no}",
-                    "origin": rel,
-                }
-            )
+            if input_form:
+                occurrences.append(
+                    {
+                        "language": stage_to_language(match["label"], input_form),
+                        "form": input_form,
+                        "display": input_form,
+                        "sort_key": transliterate_sort_key(input_form),
+                        "form_role": "selected_input",
+                        "source_scope": "reader_failure_input",
+                        "source_ref": f"{rel}:{line_no}",
+                        "origin": rel,
+                    }
+                )
             for form, scope in ((yielded, "reader_failure_output"), (expected, "reader_failure_expected")):
                 occurrences.append(
                     {

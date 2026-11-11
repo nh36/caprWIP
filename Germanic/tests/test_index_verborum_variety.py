@@ -126,6 +126,46 @@ def test_failure_pair_report_still_rejects_missing_or_misclassified_forms(tmp_pa
         checker.assert_reader_failure_pair_roles()
 
 
+def test_actual_sc041_comparisons_have_independent_example_roles():
+    import check_index_verborum as checker
+
+    rows = builder.build_reader_facing_example_rows([])
+    checker.assert_sc041_failure_examples(rows)
+    for form in ("*bárda", "*kámba"):
+        row = next(r for r in rows if r["form"] == form and "SC041." in r["nearest_heading"])
+        assert row["example_role"] == "model_stage"
+    failure_refs = {r["source_ref"] for r in rows
+                    if r["form"] in {"bearda", "camba", "craft", "dag"} and "SC041." in r["nearest_heading"]}
+    assert not any(r.source_ref in failure_refs and r.form in {"bearda", "camba", "craft", "dag"}
+                   for r in current_source_production())
+
+
+def test_sc041_independent_check_rejects_each_missing_misclassified_or_excluded_prediction():
+    import check_index_verborum as checker
+
+    rows = builder.build_reader_facing_example_rows([])
+    case = unittest.TestCase()
+    for form in ("bearda", "camba", "craft", "dag"):
+        row = next(r for r in rows if r["form"] == form and "SC041." in r["nearest_heading"])
+        for field, value in (("example_role", "expected_output"), ("include_in_example_index", "no")):
+            changed = [dict(r, **{field: value}) if r is row else r for r in rows]
+            with case.assertRaises(AssertionError):
+                checker.assert_sc041_failure_examples(changed)
+        with case.assertRaises(AssertionError):
+            checker.assert_sc041_failure_examples([r for r in rows if r is not row])
+        with case.assertRaises(AssertionError):
+            checker.assert_sc041_failure_examples(
+                [r for r in rows if r["source_ref"] != row["source_ref"]])
+
+
+def test_sc041_independent_check_detects_silently_unrecognized_comparisons(monkeypatch):
+    import check_index_verborum as checker
+
+    monkeypatch.setattr(builder, "iter_failure_example_matches", lambda line: [])
+    with unittest.TestCase().assertRaises(AssertionError):
+        checker.assert_sc041_failure_examples(builder.build_reader_facing_example_rows([]))
+
+
 class VarietyRegistryTests(unittest.TestCase):
     def test_valid_registry_loads(self):
         reg = load_variety(CANON_ROWS)

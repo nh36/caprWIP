@@ -15,8 +15,8 @@
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 0
 - Pre-OE review rows: 32
-- Reader-facing example candidate rows: 1508
-- Reader-facing rows include_in_example_index=yes: 577
+- Reader-facing example candidate rows: 1516
+- Reader-facing rows include_in_example_index=yes: 585
 - Reader-facing rows include_in_example_index=no: 931
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
