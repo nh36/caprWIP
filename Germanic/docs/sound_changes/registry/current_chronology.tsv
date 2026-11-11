@@ -66,8 +66,8 @@ SC039	SC040	one_sided_chronology	later_boundary	independently_demonstrated	displ
 SC040	SC039	superseded_experiment	earlier_boundary	archived_experiment	displacement_witness	91	46	93	48	superseded_experiment
 SC040	SC072	superseded_experiment	later_boundary	archived_experiment	displacement_witness	91	87	93	89	superseded_experiment
 SC072	SC040	one_sided_chronology	later_boundary	stage_entailed	stage_entailed	87	91	89	93	consistent
-SC041	SC020	broad_far_chronology	earlier_boundary	independently_demonstrated	displacement_witness	47	21	49	23	consistent
-SC041	SC046	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	47	55	49	57	consistent
+SC041	SC020	broad_far_chronology	earlier_boundary	independently_demonstrated	feeding	47	21	49	23	consistent
+SC041	SC046	one_sided_chronology	later_boundary	independently_demonstrated	bleeding	47	55	49	57	consistent
 SC042	SC020	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	49	21	51	23	consistent
 SC042	SC108	technical_computational	later_boundary	technical	displacement_witness	49	52	51	54	consistent
 SC108	SC042	technical_computational	earlier_boundary	technical	displacement_witness	52	49	54	51	consistent

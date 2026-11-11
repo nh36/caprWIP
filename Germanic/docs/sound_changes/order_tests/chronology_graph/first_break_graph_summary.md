@@ -20,8 +20,8 @@ chronology constraints.
 | --- | ---: |
 | `boundary_limited` | 2 |
 | `boundary_observation` | 2 |
-| `broad_far` | 5 |
-| `mixed` | 14 |
+| `broad_far` | 4 |
+| `mixed` | 15 |
 | `negative_boundary` | 7 |
 | `one_sided` | 1 |
 | `one_sided_chronology` | 8 |
@@ -69,8 +69,8 @@ chronology constraints.
 1. `SC031 -> SC032` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `chew; dew; four; hew; you`; forms: Inherited/coronal-created a/e/i+ww gives au/eu/iu plus retained w; SC030 fronts au and SC032 realizes the long English products.
 1. `SC039 -> SC040` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `widow`; forms: PGmc `*wíduwōn` yields expected OE `wuduwe`; delaying SC039 until after late SC040 gives `wudowe`.
 1. `SC072 -> SC040` (one_sided_chronology; stage_entailed; witness role: stage_entailed) — lexemes: `(none claimed)`; forms: (none claimed)
-1. `SC041 -> SC020` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `beard; bosom; bottom; calf; coat`; forms: PGmc `*bárdaz` yields expected OE `beard`, but the earlier-shifted variant yields `bearda`; PGmc `*kámbaz` likewise yields `camba` instead of expected `camb`
-1. `SC041 -> SC046` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `craft; dale; day; hazel; mast`; forms: PGmc `*kráftaz` yields expected OE `cræft`, but the later-shifted variant yields `craft`; PGmc `*dágaz` likewise yields `dag` instead of expected `dæġ`
+1. `SC041 -> SC020` (broad_far_chronology; independently_demonstrated; witness role: feeding) — lexemes: `beard; bosom; bottom; calf; coat`; forms: PGmc `*bárdaz` yields expected OE `beard`, but the earlier-shifted variant yields `bearda`; PGmc `*kámbaz` likewise yields `camba` instead of expected `camb`
+1. `SC041 -> SC046` (one_sided_chronology; independently_demonstrated; witness role: bleeding) — lexemes: `craft; dale; day; hazel; mast; staff; whale`; forms: PGmc `*kráftaz` yields expected OE `cræft`, but the later-shifted variant yields `craft`; PGmc `*dágaz` likewise yields `dag` instead of expected `dæġ`
 1. `SC042 -> SC020` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `rest`; forms: PGmc `*rástōz` yields expected OE `ræste`, but the earlier-shifted variant yields `rasta`
 1. `SC043 -> SC044` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `slay`; forms: PGmc `*sláxaną` yields expected OE `slēan`, but the later-shifted variant yields `sleaan | slēaan`
 1. `SC044 -> SC043` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `slay`; forms: PGmc `*sláxaną` yields expected OE `slēan`, but the earlier-shifted variant yields `sleaan | slēaan`

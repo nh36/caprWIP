@@ -89,6 +89,43 @@ def load_variety(rows: list[list[str]]) -> ivr.VarietyRegistry:
         path.unlink(missing_ok=True)
 
 
+def _failure_pair_report(tmp_path, monkeypatch):
+    import check_index_verborum as checker
+
+    source = tmp_path / "reader.md"
+    source.write_text(
+        "PGmc \\emph{*bárdaz} yields [*bearda*]{.pred} rather than expected OE *beard*.\n\n"
+        "PGmc \\emph{*dágaz} yields [*dag*]{.pred} rather than expected OE *dæġ*.\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(builder, "REPO_ROOT", tmp_path)
+    monkeypatch.setattr(builder, "CHRONOLOGY_PATH", source)
+    roles = builder.failure_example_roles_by_ref()
+    assert len(roles) == 6
+    rows = [{"source_ref": ref, "form": form, "example_role": role,
+             "include_in_example_index": "yes"}
+            for (form, ref), (role, _, _) in roles.items()]
+    monkeypatch.setattr(checker, "load_reader_facing_example_rows", lambda: rows)
+    return checker, rows
+
+
+def test_failure_pair_report_allows_independent_comparisons_in_separate_paragraphs(tmp_path, monkeypatch):
+    checker, _ = _failure_pair_report(tmp_path, monkeypatch)
+    checker.assert_reader_failure_pair_roles()
+
+
+def test_failure_pair_report_still_rejects_missing_or_misclassified_forms(tmp_path, monkeypatch):
+    checker, rows = _failure_pair_report(tmp_path, monkeypatch)
+    case = unittest.TestCase()
+    removed = rows.pop()
+    with case.assertRaisesRegex(AssertionError, "Missing reader-facing failure example"):
+        checker.assert_reader_failure_pair_roles()
+    rows.append(removed)
+    rows[0]["example_role"] = "notation_or_segment"
+    with case.assertRaisesRegex(AssertionError, "Expected"):
+        checker.assert_reader_failure_pair_roles()
+
+
 class VarietyRegistryTests(unittest.TestCase):
     def test_valid_registry_loads(self):
         reg = load_variety(CANON_ROWS)

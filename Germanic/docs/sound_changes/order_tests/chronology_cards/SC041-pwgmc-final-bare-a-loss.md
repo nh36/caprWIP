@@ -35,3 +35,38 @@ Both observed boundaries are historically interpretable, because both crossed st
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_failures.tsv`
 - `Germanic/docs/sound_changes/sound_change_order_sensitivity.tsv`
+
+## Source-critical adjudication addendum — 11 November 2026
+
+The observations and interpretations above preserve the original experiment;
+they are not rewritten as measurements of the current cascade. The current
+interpretation is `audits/sc041-adjudication.md`.
+
+The original earlier displacement changed67 outputs:64 newly failed and
+buck/fowl/wolf stayed failing. In the current394-row cascade, moving SC041
+immediately before current SC020 changes70 outputs,66 newly failing.
+Hammer's approved cell, rust's approved input and dart's admission account
+for the additional three changes. Rust is an inherited mismatch, not a new
+failure caused by this adjudication. SC020's old PGmc name is historical;
+its accepted present identity is unstressed West Germanic final-z loss.
+
+The current paired shifts immediately before and immediately after SC046
+give one failure (fright) and eight respectively. Their difference is
+exactly the original seven restoration witnesses:
+craft/dale/day/hazel/mast/staff/whale. Fright fails in both because early
+SC064 received final-a, not the n exposed by live SC041. Consequently the
+old21–45 safe window must not be presented as a current safe transit to
+restoration; no new complete first-break sweep was performed.
+
+The mechanisms are broad **feeding** by z-loss, **bleeding** of restoration
+by removal of its back-vowel trigger, and separate **technical feeding**
+of n-loss. An edge's historical-stage classification alone does not prove
+historical chronology. Ringe–Taylor printed46 supports z-first by
+comparative economy; Fulk25n1 provides the locally interpreted kaba/kamba
+witness without universal dating. Ringe–Taylor189–190 supports the
+restoration trigger. Broader oral/nasal apocope before Cj gemination
+(printed44–47) is not identical to the late executable fragment.
+
+The rule, order, selected corpus and protected baselines are retained.
+The frozen new snapshots, full observations, authentic receipts and checksums
+are in `audits/sc041-experiments/`; the original TSVs named above are unchanged.

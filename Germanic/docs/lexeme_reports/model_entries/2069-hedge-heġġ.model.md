@@ -31,7 +31,9 @@ This is the geminate-stop class, distinct from the singleton fricative in
 affrication had already occurred at the articulation checkpoint
 [@RingeTaylor2014, pp. 203–204; @Fulk2018, pp. 131–132].
 
-From [xágjaz]{.recon} ‘hedge’, West Germanic j-gemination first yields a geminate stop, and later Old English palatalization and loss of final `j` produce `heġġ` 'hedge'. The development is treated as regular rather than exceptional.
+From [xágjaz]{.recon} ‘hedge’, the current serialized model first applies West Germanic j-gemination to produce a geminate stop; later Old English palatalization and loss of final `j` produce `heġġ` 'hedge'. This preserves the selected regular executable derivation, not independent evidence for the historical position of final low-vowel loss.
+
+Ringe and Taylor place broader oral/nasal low-vowel apocope before West Germanic j-gemination and distinguish stranded-glide outcomes from later paradigmatic leveling [@RingeTaylor2014, pp. 46--47]. The late oral-a fragment therefore does not establish an uninterrupted regular history of this selected nominative. Reconciling its formation and cell with that chronology remains open; no word-specific analogical repair or change to the selected reconstruction is asserted here.
 
 ### Form note
 

@@ -20,6 +20,7 @@ from build_index_verborum import (
     compare_against_baseline,
     excluded_intermediate_trace_forms,
     explicit_tag_occurrences,
+    failure_example_roles_by_ref,
     infer_broad_prose_language,
     infer_broad_prose_suggestion,
     is_already_indexed_nearby,
@@ -1264,33 +1265,11 @@ def assert_print_layer_outputs() -> None:
 
 def assert_reader_failure_pair_roles() -> None:
     rows = load_reader_facing_example_rows()
-    expected_roles = {
-        "*bárdaz": "example_input",
-        "*bearda": "yielded_output",
-        "*beard": "expected_output",
-        "*kámbaz": "example_input",
-        "*camba": "yielded_output",
-        "*camb": "expected_output",
-        "*kráftaz": "example_input",
-        "*craft": "yielded_output",
-        "*cræft": "expected_output",
-        "*dágaz": "example_input",
-        "*dag": "yielded_output",
-        "*dæġ": "expected_output",
-    }
     row_by_key = {(row["source_ref"], row["form"]): row for row in rows}
-    source_refs = {row["source_ref"] for row in rows if row["form"] == "*bárdaz"}
-    source_ref = next(
-        (
-            ref
-            for ref in source_refs
-            if all((ref, form) in row_by_key for form in expected_roles)
-        ),
-        None,
-    )
-    assert source_ref is not None, "Missing reader-facing failure-pair example group"
-    for form, expected_role in expected_roles.items():
-        row = row_by_key[(source_ref, form)]
+    for (form, source_ref), (expected_role, _, _) in failure_example_roles_by_ref().items():
+        key = (source_ref, form)
+        assert key in row_by_key, f"Missing reader-facing failure example {form} at {source_ref}"
+        row = row_by_key[key]
         assert row["example_role"] == expected_role, f"Expected {form} to be {expected_role}, got {row['example_role']}"
         assert row["include_in_example_index"] == "yes"
 

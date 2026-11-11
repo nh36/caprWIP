@@ -55,12 +55,12 @@ For subsequently authorized per-SC adjudication, the next SC is derived from
 the registry and the explicit programme policy, not from a prose override:
 `python3 Germanic/tools/adjudicate.py --next`
 
-The preserved, paused programmes are sequential SC041 then SC042
-(SC039 deferred, SC040 closed), and the Barrack crosswalk SC067 then
-SC080, retaining WG117, 300b and 440b as prospective omissions or
-discrepancies. No work on either programme starts automatically.
-After HVD closeout, the next separately authorized assignment resumes
-the sequential programme.
+The resumed sequential research is recorded in the source-critical
+[final bare-a loss adjudication](sound_changes/audits/sc041-adjudication.md);
+the next assignment remains a derived registry selection, not an automatic
+continuation. The separate Barrack crosswalk SC067 then SC080 stays paused,
+retaining WG117, 300b and440b as prospective omissions or discrepancies.
+Neither that programme nor the qualified lexical residues starts automatically.
 
 `registry/adjudication_programme.json` owns the administrative programme
 start. Scoped verdicts cannot skip earlier pending work, and technical

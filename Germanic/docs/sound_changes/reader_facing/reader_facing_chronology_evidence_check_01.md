@@ -7,7 +7,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 ## Summary
 
 - Sections checked: 109.
-- Sections with absent cues or notation observations: 74.
+- Sections with absent cues or notation observations: 73.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -56,7 +56,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | yes | yes | yes | yes | yes | yes | no | — |
-| 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | no | yes | yes | no | yes | no | no | missing move-condition wording; missing SC-plus-rule reference in chronology prose |
+| 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | yes | no | no | yes | yes | yes | no | — |
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 107-unstressed-fronting-support.md | SC107. Retained unstressed contribution (`EAFBrighteningUnstressed`) {#rule-EAFBrighteningUnstressed} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |

@@ -272,9 +272,9 @@
       "lifecycle_status": "active",
       "rule_name": "PWGmcFinalBareALoss",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC041-pwgmc-final-bare-a-loss.md",
-      "card_type": "broad_far",
+      "card_type": "mixed",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Earlier boundary is far from current order and should be narrated as a broad computational limit."
+      "short_summary": "SC020 feeds exposed oral-a loss across a broad interval; SC041 bleeds SC046 restoration. Paired local displacements isolate seven restoration witnesses from the common fright residual; SC064 n-exposure remains technical feeding, not a historical adjacency."
     },
     {
       "change_id": "SC042",
@@ -1528,13 +1528,13 @@
       "relation_type": "broad_far_chronology",
       "direction_basis": "earlier_boundary",
       "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "witness_role": "feeding",
       "representative_lexemes": "beard; bosom; bottom; calf; coat",
       "representative_forms": "PGmc `*bárdaz` yields expected OE `beard`, but the earlier-shifted variant yields `bearda`; PGmc `*kámbaz` likewise yields `camba` instead of expected `camb`",
       "strength": "broad_far",
       "interpretation_category": "broad_far",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is far from current order and should be narrated as a broad computational limit."
+      "notes": "Z-loss exposes final oral a: broad feeding, not adjacency. Current displacement changes70 outputs,66 newly failing; original64 failures/67 changes remain archived. Independent historical grounds: Ringe-Taylor46 comparative economy and Fulk25n1 local kaba with a retained; neither supplies a universal date. See sc041-adjudication.md."
     },
     {
       "source_change_id": "SC041",
@@ -1542,13 +1542,13 @@
       "relation_type": "one_sided_chronology",
       "direction_basis": "later_boundary",
       "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
-      "representative_lexemes": "craft; dale; day; hazel; mast",
+      "witness_role": "bleeding",
+      "representative_lexemes": "craft; dale; day; hazel; mast; staff; whale",
       "representative_forms": "PGmc `*kráftaz` yields expected OE `cræft`, but the later-shifted variant yields `craft`; PGmc `*dágaz` likewise yields `dag` instead of expected `dæġ`",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is far from current order and should be narrated as a broad computational limit."
+      "notes": "Loss removes the back-vowel trigger and bleeds restoration, not feeding it. Paired current displacements immediately before/after SC046 isolate seven witnesses; fright fails in both because SC064 already missed n-exposure. Historical ordering also follows early PWGmc loss versus English restoration; Ringe-Taylor44-47/189-190. No adjacency claim."
     },
     {
       "source_change_id": "SC042",
@@ -2108,7 +2108,7 @@
       "strength": "technical_marker",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Original displacement preserved. Bare-a loss exposes word-final n in this encoding; not independent proof of an adjacent historical date. Ringe-Taylor87-88 dates final n-loss after PWGmc differentiation; see sc064-adjudication.md."
+      "notes": "Original displacement preserved. Bare-a loss exposes word-final n in this encoding; not independent proof of an adjacent historical date. Ringe-Taylor87-88 dates final n-loss after PWGmc differentiation; see sc064-adjudication.md. SC041 paired late displacements independently retain fyrhten in both variants, separating this visibility failure from restoration."
     },
     {
       "source_change_id": "SC064",

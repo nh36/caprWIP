@@ -31,6 +31,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC037 | Former compound-syncope trace anchor | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC039 | OE WI Combinative U Umlaut | active | DEFER | `Germanic/docs/sound_changes/audits/sc039-adjudication.md` |
 | SC040 | OE Med Unstressed U Lowering | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc040-adjudication.md` |
+| SC041 | PWGmc Final Bare A Loss | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc041-adjudication.md` |
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
 | SC049 | Inherited labial positional realization | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |

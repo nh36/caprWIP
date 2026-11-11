@@ -54,7 +54,13 @@ chronology already adopted in `audits/sc021-adjudication.md`, section 9a.
 
 SC041 retains the separate support of Campbell's account of unaccented
 final-vowel loss and Ringe and Taylor's discussion of word-final short
-low vowels [@Campbell1959, §341; @RingeTaylor2014, pp. 60--61].
+low vowels [@Campbell1959, pp. 137--138, §331; p. 143, §341;
+@RingeTaylor2014, pp. 44--47]. The former60--61 locator counted PDF
+sheets, not printed pages. Campbell's retrospective §341 reference
+does not date the earlier protected-a loss to OE medial syncope.
+Ringe and Taylor include both short oral a and nasal a; Fulk likewise
+distinguishes their loss, irrespective of preceding syllable weight,
+from subsequent high-vowel reductions [@Fulk2018, p. 91, §5.6].
 The handbooks do not supply a single three-change textbook chapter.
 
 The initial LH accommodation versus a later heavy head after initial H
@@ -91,9 +97,25 @@ shortening/later lowering chronology is source-dated, not a reversed
 arrow inferred from code.
 
 SC041's separately recorded broad boundary evidence remains: SC020
-precedes it on the beard/bosom/bottom/calf/coat set, and it precedes
-SC046 on craft/dale/day/hazel/mast. These wider links are not chapter
-boundaries. A runner limit for SC039 is likewise not a historical event.
+feeds it on the beard/bosom/bottom/calf/coat set, and its removal of the
+back-vowel trigger bleeds SC046 on craft/dale/day/hazel/mast/staff/whale.
+The source-bound SC041 adjudication distinguishes the original64 newly
+failing rows from67 changed outputs, and today's66 newly failing rows
+from70 changes. Moving loss immediately before restoration now already
+fails fright, because accepted early SC064 has missed its exposed final n;
+moving it immediately after restoration adds precisely the seven
+restoration failures. The old safe window is not a fresh current result.
+These wider links are not chapter boundaries. A runner limit for SC039
+is likewise not a historical event.
+
+The z-first history is independently favored by comparative economy
+[@RingeTaylor2014, p. 46] and locally supported by the Frienstedt
+comb's retained a after z-loss [@Fulk2018, p. 25, n. 1], without an
+exact pan-WG completion date. Broader apocope precedes Cj gemination and
+strands glides [@RingeTaylor2014, pp. 46--47]; the late oral-a proxy
+cannot itself reconstruct that whole history. Hedge's current geminated
+ja-stem path therefore remains explicitly qualified, not certified merely
+by its successful output. See `audits/sc041-adjudication.md`.
 
 ## 5. Publication and remaining work
 
