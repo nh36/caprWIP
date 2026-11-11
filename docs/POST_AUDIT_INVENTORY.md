@@ -134,3 +134,20 @@ TimeMachine destination could not mount; local snapshots and additional
 directories on this APFS volume do not provide independent disaster recovery.
 That limitation remains explicit for every new private recovery package.
 The provisional controls and lazy dart selector remain deferred.
+
+## Subsequent remote-label retirement, 11 November 2026
+
+The separately authorized [branch-retirement execution record](BRANCH_CONSOLIDATION_2026-11-10.md#remote-label-retirement-executed-11-november-2026)
+documents the actual deletion of 24 remote labels after renewed ancestry,
+patch-equivalence, archival-tag and complete restoration checks. Four remote
+names remain, including the performance branch created after the original
+inventory; local branch labels and all six working directories are untouched.
+
+Six annotated original-identity tags are durable on `origin`. The private,
+self-contained bundle and complete working/evidence snapshots are organised
+as one checksum-verified local transfer package. Source-plan's ignored and
+untracked contents, exact dirty index/status and original rescue reference are
+preserved. At the user's explicit direction, independent physical backup was
+not required for this operation: the package is on the same APFS volume and
+is ready to copy, not an independent disaster-recovery copy. No archive or
+repository relocation occurred, and no experimental implementation was adopted.

@@ -3,8 +3,10 @@
 ## Scope and integration identity
 
 This is a Git-history inventory, not a scientific adjudication or a
-filesystem-reorganisation authorization. No remote branch is deleted by
-this assignment. No experimental implementation is adopted.
+filesystem-reorganisation authorization. The original consolidation deleted
+no remote branches. The separately authorized retirement is recorded in
+[the 11 November execution addendum](#remote-label-retirement-executed-11-november-2026).
+No experimental implementation is adopted.
 
 The approved integration is the two-parent merge
 `dbfa22cb93046e5775bf4f56276aef3ceeb3dac4`:
@@ -210,8 +212,9 @@ import or merge is performed here.
 
 ## Retention and proposed retirement inventory
 
-No remote names, local branches, worktrees or old tags are deleted, renamed
-or force-updated. In particular the original local rescue ref
+At the original consolidation close, no remote names, local branches,
+worktrees or old tags were deleted, renamed or force-updated. In particular
+the original local rescue ref
 `rescue/source-plan-2026-11-09-03d1e58b` remains at
 `03d1e58b67cf76a10955d5a74482ac37c8e5bec4`.
 
@@ -227,7 +230,7 @@ Thus 21 names are substantively redundant to `update`, and another three
 are intermediate labels recoverable through the retained experimental
 chain. This is a proposed 24-name retirement list, not deletion authority.
 
-Keep the following remote names for now:
+The original recommendation was to keep the following remote names:
 
 - `update`: sole authoritative approved integration branch.
 - `index-broad-prose-placement-shadow`: parked architectural-review history,
@@ -325,3 +328,178 @@ unimplemented and outside this assignment.
 | I12 | `237a7799390c9749951718c0ae4fbf35a257a01a` | Harden placement identities. |
 | I13 | `42f2db31f181cfdae0871c4a73cf2c4f56f9860d` | Validate page impact. |
 | I14 | `8c1f2d47d3d045a4c28d74cecc56fe340ec6b337` | Correct exact index-key impact comparison. |
+
+## Remote-label retirement executed, 11 November 2026
+
+### Authority, current baseline and recheck
+
+The follow-up assignment authorized actual retirement of the 24 names above.
+The user subsequently waived an independent physical copy: a tidy, verified
+local package ready to transfer was sufficient. The resulting package is on
+the same APFS volume as the source, not an independent disaster-recovery backup.
+No drive migration, repository relocation or scientific adjudication occurred.
+
+The validation-performance work had finished and published
+`cd1f15807b4cbfbf1bd7c40bfcdfd7eecae8d61f` before this operation.
+Its [exact-state execution certificate](https://github.com/nh36/caprWIP/commit/cd1f15807b4cbfbf1bd7c40bfcdfd7eecae8d61f#commitcomment-209326146)
+remains attached to that commit, not transferred to this administrative update.
+
+The live inventory had 28 remote branches, rather than the earlier 27: the
+completed `maintenance/validation-performance-2026-11-10` branch was new.
+Every one of the original 24 candidate tips was unchanged. For all 18 table-A
+tips, ancestry, tip-equals-merge-base and an empty unique-commit set were
+reconfirmed against the current `update`. The three table-B originals still
+have one unique commit, matching stable patch IDs and incorporated replacements.
+All 11 compound and 18 earthly packet paths remain byte-identical; the original
+controls-review document also remains unchanged. The three intermediate index
+tips still have 4/5/8 unique experimental commits, are nested ancestors of the
+retained broad experiment, and are not equivalent to adopted production code.
+
+No open pull request, running CI job, protected branch/ruleset or tracked
+branch-dependent GitHub link required a retiring label. The only configured
+workflow branch selector was `update`. No process working directory used a
+non-primary retained checkout. Local branches, upstream configurations and
+working directories were retained; their retired upstream labels may now show
+as gone. This is intentional historical-reference status, not deletion of a
+checkout or reassignment of an old research branch to `update`. Offline clones
+cannot be inventoried; exact original histories remain recoverable.
+
+### Durable annotated archives
+
+Six annotated tags were created at the original commits and atomically pushed
+to `origin`. All use prefix `archive/branch-retirement-2026-11-11/`.
+Messages record original branch/commit/base, purpose, exact equivalent
+replacement or later experimental descendant, and absence of new scientific
+certification/adoption. None was squashed, rewritten or force-updated.
+
+| Tag suffix | Annotated tag object | Original commit |
+|---|---|---|
+| `post-audit-preservation-controls-review-original` | `4ac3c487e240c52c1e72f61f436a54cc9f28b6db` | `d99ccb404002ad2681059df191a51f926a8da73f` |
+| `compound-secondary-stress-original` | `cc08567e8a64d3d4b22fb2a6d22fbcec965cf720` | `29ec734406d2bf1714d37a41980d453c7a4872aa` |
+| `earthly-regular-cell-original` | `aff52398d71e380ecdc6af97857c90fdfbe53767` | `7215497ba5cdc2a1b8bef6303cb8c1bf4e9e13f2` |
+| `index-iv-anchor-shadow` | `679dc9c52422c1c4050d643c23e823165bc3027d` | `480228db93393fb160fbba64b28264f330228065` |
+| `index-explicit-plan-shadow` | `dc5d3b6516193c11130f81aff943b726690ec81f` | `3cd5d7ba0460a52e72e8eecef62599f52d4792eb` |
+| `index-explicit-plan-production` | `54f36c3a7b2301fd43ec3da035c16a64115c3826` | `b604598ab7642078fad25b2ab2f8be5ae849abf4` |
+
+Every existing tag object is unchanged. The syncope publication tag remains
+local-only at annotated object `923e919afac3943fc39176d5f78ed80f7bcf6753`,
+targeting `b58e7af59d5675fb2c01a2f5acc2b8b15148d2b6`; it is included in
+the private verified bundle rather than silently assumed to exist remotely.
+The original local source-plan rescue still targets
+`03d1e58b67cf76a10955d5a74482ac37c8e5bec4`.
+
+### Verified transfer package
+
+The private package is
+`CAPR-local-archive-2026-08-11/remote-branch-retirement-2026-11-11/`
+under the local archive root. Its README, relative `SHA256SUMS`, metadata and
+restoration records travel with the package. Restricted holdings, private paths
+and complete manifests are not published with this document.
+
+The self-contained `git/capr-pre-retirement.bundle` is 3,269,372,195 bytes:
+
+```text
+SHA256 6a8af9c2cec5e6b24ea632f8c9930c57d5af14ce8e18305f0d533cd76f5515f5
+```
+
+It records 64 advertised identities, including the original remote labels,
+six new archives, all existing local tags and rescue references. It has no
+prerequisites. A new mirror restored the references and passed full strict
+`git fsck` without borrowing the original object store. Additional historical
+`worktrees/.../HEAD` identities were restored into explicit preservation refs,
+not registered as additional live worktrees. Bare repositories were addressed
+with explicit `--git-dir`; Git's bare-repository safety policy was not relaxed.
+
+All six complete working snapshots were extracted and checked: 50,998 regular
+files, including ignored/untracked material. Source-plan alone contains 4,582.
+Each original HEAD, exact saved index, staged index entries, dirty status and
+binary staged/unstaged patches was reproduced using only restored objects.
+The shared Git administration/object archive additionally protects staged and
+unreachable blobs that a reachable-history bundle alone would not preserve.
+Original source-plan remains 98 modified tracked paths plus three untracked
+files; its original index and working contents were not changed.
+
+macOS tar extraction can change filename representation between NFC and NFD.
+Filesystem comparisons therefore required bijective, collision-checked Unicode
+path equivalence and identical hashes/modes; raw original paths remain recorded.
+Git index entries/status/patches were still compared byte-for-byte, using
+disposable inspection indexes so stat-cache refresh could not alter saved ones.
+
+The package also preserves the four earlier historical bundles, prior private
+source-plan/retired-worktree preservation payloads, and 375 current-session
+research-delivery/evidence files. All included historical bundles were restored
+and checked, not merely copied by filename. Duplicate verification repositories
+were not treated as unique evidence. Before deletion, all 203 sealed package
+files, totalling 28,728,397,699 payload bytes, passed SHA256 verification.
+That pre-retirement checksum inventory is retained; the final inventory also
+covers subsequent operation records and the administrative documentation
+increment. These counts describe the pre-retirement seal, not a frozen claim
+about future additions to the package.
+
+This same-volume package is ready to copy; loss of this computer/disk could
+still lose the private evidence. The six public archival tags protect public
+Git history independently, not the private working contents. No physical
+backup or fresh page-image/source inspection is claimed.
+
+### Actual remote deletions and retained inventory
+
+One atomic Git deletion removed exactly the following approved names:
+
+```text
+family-evidence-audit
+historical-cascade-order
+integration/earthly-sc040
+integration/nonhigh-four-cells
+integration/parser-four-cells
+maintenance/pandoc-ci-provisioning
+maintenance/repository-consolidation-2026-11-09
+research/christiansen-2018-scytel
+research/full-cascade-functionality
+research/high-vowel-deletion-fulk-goering
+research/little-etymology-source-review
+research/soul-fulk-oblique
+research/soul-lexical-reassessment
+research/soul-syncope-resolution
+review/sc112-checkpoint
+review/sc112-lexical-publication
+sc001-sc020-chronology-audit
+wip/syncope-consolidation-review
+maintenance/post-audit-preservation-controls-review
+research/compound-secondary-stress
+research/earthly-regular-cell
+index-iv-anchor-shadow
+index-explicit-plan-shadow
+index-explicit-plan-production
+```
+
+The command used ordinary `git push --atomic --delete`, with one explicit
+expected-old-tip lease per deleted ref. Those leases guard against concurrent
+unreviewed updates; no commit/tag was force-updated, no history was rewritten
+and no object was deleted. Full argv, original exits and before/after refs are
+retained privately. All 24 passed the safety conditions; none required deferral.
+
+The final remote branch count is four:
+
+| Retained branch | Identity at retirement | Reason |
+|---|---|---|
+| `update` | `cd1f15807b4cbfbf1bd7c40bfcdfd7eecae8d61f` | Authoritative integration; the subsequent retirement-documentation commit advances it normally. |
+| `index-broad-prose-placement-shadow` | `8c1f2d47d3d045a4c28d74cecc56fe340ec6b337` | Required retained experimental architecture and all three intermediate histories. |
+| `research/hvd-lexical-regression-closeout` | `08a3e30663a93d788adfe67254dfef4541468adc` | Required exact historical certification-evidence preservation. |
+| `maintenance/validation-performance-2026-11-10` | `cd1f15807b4cbfbf1bd7c40bfcdfd7eecae8d61f` | New since the approved inventory, already incorporated but outside the specifically authorized 24 deletions. |
+
+The extra performance name is not outstanding scientific work. Its retirement
+was not silently added to this assignment. All six original worktrees and local
+branches remain, and the index experiments were not merged into production.
+
+### Closing checks and certification boundary
+
+Targeted reference/ancestry/tag checks, isolated bundle and working-state
+restoration, checksums, documentation checks and the read-only artifact graph
+verify this administrative operation. The scientific sources, selections,
+corpus, FST, bibliography/holdings metadata and generated publications remain
+identical to `cd1f1580`; only the administrative retirement documentation changes.
+The canonical population stays 394 accepted, 386 matching and eight inherited
+mismatches. No source refresh, scientific baseline adjustment or full strict
+scientific rerun is justified solely by removing branch labels. The existing
+portable update workflow remains the automatic gate; its result and the exact
+documentation commit belong in the closing operation record.
