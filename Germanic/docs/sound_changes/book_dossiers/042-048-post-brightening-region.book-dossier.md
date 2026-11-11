@@ -20,6 +20,28 @@ the required velar trigger. They cannot prove a direct feeding relation
 or date voiced merger. The older scaffold below is historical where it
 conflates those classes.
 
+## SC042 source-critical update, 11 November 2026
+
+SC042 is REFORMULATE/RETAIN: Ringe and Taylor explicitly reconstruct
+bimoric ō > long ā finally and before final r, with a trimoric contrast
+and comparative witnesses beyond rest [@RingeTaylor2014, pp.58--60,
+299--300]. Hogg's separate monograph qualifies the quantity classification
+[@HoggGrammar2011, p.64, §3.32; pp.227--228, §§6.26--28].
+The original Hogg chapter remains contextual fronting/restoration evidence
+[@HoggPhonology1992, pp.102,105], as does Campbell
+[@Campbell1959, pp.52,60--61, §§131,157--158].
+
+The current394-row census has one in-domain oral-final application:
+selected genitive *rástōz gives ræste. Before SC020 or after SC108,
+only rest changes, to rasta; after stressed SC043 but before SC108,
+all394 outputs remain. Z-loss feeds final-environment exposure; SC042
+feeds final support, which removes a restoration trigger. The broader
+source-backed law is not inferred from that single model witness.
+Rule, order, selected cells, stage/scope/confidence and baselines remain.
+The [adjudication](../audits/sc042-adjudication.md) and its authenticated
+archive own the current interpretation; the dated387-row measurements
+below remain unchanged historical observations.
+
 ## 1. Role in the book
 
 This region sits immediately after the promoted SC043 Anglo-Frisian Brightening report and immediately before the promoted SC049-SC050 bridge. Its editorial problem is not whether the material matters, but how to keep strict chronology while converting scaffold bands into adjacent production units.
@@ -40,7 +62,7 @@ That means:
 
 ### SC042
 
-SC042 is a narrow context rule rather than a chapter center. The `rest` derivation gives it a real local window, `SC020 < SC042 < SC043`, but both sides depend on the same witness. In book terms that makes SC042 useful as a brief prefatory note explaining one model-specific left edge of the brightening corridor, not as the center of a larger chapter.
+SC042 models the surviving oral-final fragment of a broader source-supported WG development. The current `rest` dependency is `SC020 < SC042 < SC108`, not a local requirement before stressed SC043. The two measured boundaries depend on one selected genitive; independent comparative evidence, not that window, supports the broader historical law. Its reader treatment therefore explains the historical law and the limited executable contribution separately.
 
 ### SC044-SC045
 
@@ -63,7 +85,7 @@ The sources are not evenly distributed across the region.
 
 1. **Strongest source-backed pair:** SC044-SC045.
 2. **Strong standalone source-backed member:** SC046.
-3. **Thin but real context note:** SC042.
+3. **Source-backed broader law with a single-word residual implementation:** SC042.
 4. **Most model-shaped material:** SC047-SC048, even though their reciprocal card evidence is strong.
 
 That distribution is the main reason not to treat the entire SC042-SC048 stretch as a single production chapter.
@@ -109,7 +131,7 @@ The region is now dossier-prepared enough for a human chapter-shape decision.
 ### SC042 note
 
 1. One short paragraph on the surviving-bimoric `ō` / `ā` path behind `rest`
-2. Cross-reference to SC043 as the real brightening pivot
+2. Distinguish ordinary stressed SC043 from the SC108 final-vowel support that SC042 feeds
 
 ### SC044-SC045 report
 

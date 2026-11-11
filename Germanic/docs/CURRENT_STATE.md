@@ -56,9 +56,10 @@ the registry and the explicit programme policy, not from a prose override:
 `python3 Germanic/tools/adjudicate.py --next`
 
 The resumed sequential research is recorded in the source-critical
-[final bare-a loss adjudication](sound_changes/audits/sc041-adjudication.md);
-the next assignment remains a derived registry selection, not an automatic
-continuation. The separate Barrack crosswalk SC067 then SC080 stays paused,
+[final bare-a loss adjudication](sound_changes/audits/sc041-adjudication.md)
+and [surviving long-o unrounding adjudication](sound_changes/audits/sc042-adjudication.md).
+The independent SC041 example-index correction remains separately reviewed;
+no subsequent adjudication starts automatically. The separate Barrack crosswalk SC067 then SC080 stays paused,
 retaining WG117, 300b and440b as prospective omissions or discrepancies.
 Neither that programme nor the qualified lexical residues starts automatically.
 

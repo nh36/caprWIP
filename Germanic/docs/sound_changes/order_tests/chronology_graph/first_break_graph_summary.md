@@ -24,8 +24,8 @@ chronology constraints.
 | `mixed` | 15 |
 | `negative_boundary` | 7 |
 | `one_sided` | 1 |
-| `one_sided_chronology` | 8 |
-| `reciprocal_or_near_reciprocal` | 17 |
+| `one_sided_chronology` | 9 |
+| `reciprocal_or_near_reciprocal` | 16 |
 | `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
 | `source_partial_chain` | 10 |
@@ -71,7 +71,7 @@ chronology constraints.
 1. `SC072 -> SC040` (one_sided_chronology; stage_entailed; witness role: stage_entailed) — lexemes: `(none claimed)`; forms: (none claimed)
 1. `SC041 -> SC020` (broad_far_chronology; independently_demonstrated; witness role: feeding) — lexemes: `beard; bosom; bottom; calf; coat`; forms: PGmc `*bárdaz` yields expected OE `beard`, but the earlier-shifted variant yields `bearda`; PGmc `*kámbaz` likewise yields `camba` instead of expected `camb`
 1. `SC041 -> SC046` (one_sided_chronology; independently_demonstrated; witness role: bleeding) — lexemes: `craft; dale; day; hazel; mast; staff; whale`; forms: PGmc `*kráftaz` yields expected OE `cræft`, but the later-shifted variant yields `craft`; PGmc `*dágaz` likewise yields `dag` instead of expected `dæġ`
-1. `SC042 -> SC020` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `rest`; forms: PGmc `*rástōz` yields expected OE `ræste`, but the earlier-shifted variant yields `rasta`
+1. `SC042 -> SC020` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `rest`; forms: PGmc `*rástōz` yields expected OE `ræste`, but the earlier-shifted variant yields `rasta`
 1. `SC043 -> SC044` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `slay`; forms: PGmc `*sláxaną` yields expected OE `slēan`, but the later-shifted variant yields `sleaan | slēaan`
 1. `SC044 -> SC043` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `slay`; forms: PGmc `*sláxaną` yields expected OE `slēan`, but the earlier-shifted variant yields `sleaan | slēaan`
 1. `SC044 -> SC045` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fee; fight; flax; knight; laugh`; forms: PGmc `*féxu` yields expected OE `feoh`, but the later-shifted variant yields `fehu`; PGmc `*féxtaną` likewise yields `fehtan` instead of expected `feohtan`

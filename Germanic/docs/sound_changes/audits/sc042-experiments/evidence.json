@@ -1,0 +1,1001 @@
+{
+  "base_commit": "ea7c9b5e1381832cd205df400dcab9ff86fa326b",
+  "fst_sha256": "37b7811ca68c0358d26e25d58fe5d697e7d560a61a1896190c5c72f93583af0e",
+  "canonical": {
+    "accepted": 394,
+    "matches": 386,
+    "firings": [
+      {
+        "concept": "rest",
+        "proto": "*rástōz",
+        "counterpart": "ræste",
+        "before": [
+          "*r*á*s*t*ō"
+        ],
+        "after": [
+          "*r*á*s*t*ā"
+        ],
+        "outputs": "ræste"
+      }
+    ],
+    "controls": [
+      {
+        "concept": "bake",
+        "proto": "*bákaną",
+        "counterpart": "bacan",
+        "before": [
+          "*b*á*k*a*n*ą"
+        ],
+        "after": [
+          "*b*á*k*a*n*ą"
+        ],
+        "outputs": "bacan"
+      },
+      {
+        "concept": "earth",
+        "proto": "*érθōn",
+        "counterpart": "eorþe",
+        "before": [
+          "*é*r*θ*ǭ"
+        ],
+        "after": [
+          "*é*r*θ*ǭ"
+        ],
+        "outputs": "eorþe"
+      },
+      {
+        "concept": "four",
+        "proto": "*fédwōr",
+        "counterpart": "fēower",
+        "before": [
+          "*f*ēo*w*a*r"
+        ],
+        "after": [
+          "*f*ēo*w*a*r"
+        ],
+        "outputs": "fēower"
+      },
+      {
+        "concept": "gift",
+        "proto": "*gíftiz",
+        "counterpart": "ġift",
+        "before": [
+          "*g*í*f*t*i"
+        ],
+        "after": [
+          "*g*í*f*t*i"
+        ],
+        "outputs": "ġift"
+      },
+      {
+        "concept": "heart",
+        "proto": "*xértōn",
+        "counterpart": "heorte",
+        "before": [
+          "*x*é*r*t*ǭ"
+        ],
+        "after": [
+          "*x*é*r*t*ǭ"
+        ],
+        "outputs": "heorte"
+      },
+      {
+        "concept": "horn",
+        "proto": "*xúrną",
+        "counterpart": "horn",
+        "before": [
+          "*x*ó*r*n*ą"
+        ],
+        "after": [
+          "*x*ó*r*n*ą"
+        ],
+        "outputs": "horn"
+      },
+      {
+        "concept": "name",
+        "proto": "*námô",
+        "counterpart": "nama",
+        "before": [
+          "*n*á*m*ô"
+        ],
+        "after": [
+          "*n*á*m*ô"
+        ],
+        "outputs": "nama"
+      },
+      {
+        "concept": "tongue",
+        "proto": "*túngōn",
+        "counterpart": "tunge",
+        "before": [
+          "*t*ú*n*g*ǭ"
+        ],
+        "after": [
+          "*t*ú*n*g*ǭ"
+        ],
+        "outputs": "tunge"
+      },
+      {
+        "concept": "water",
+        "proto": "*wátōr",
+        "counterpart": "wæter",
+        "before": [
+          "*w*á*t*a*r"
+        ],
+        "after": [
+          "*w*á*t*a*r"
+        ],
+        "outputs": "wæter"
+      },
+      {
+        "concept": "who",
+        "proto": "*xwáz",
+        "counterpart": "hwā",
+        "before": [
+          "*x*w*ā"
+        ],
+        "after": [
+          "*x*w*ā"
+        ],
+        "outputs": "hwā"
+      }
+    ],
+    "literal_original380_replay_performed": false
+  },
+  "source_review": {
+    "scope": "SC042 source criticism; originals consulted locally, no copyrighted holdings or page reproductions in the public evidence archive",
+    "readings": [
+      {
+        "key": "RingeTaylor2014",
+        "holding": "docs/references/ringe_taylor_linguistic_history_vol2.pdf",
+        "printed_pages": "58-60,157-158,189-190,299-300",
+        "verified_images": [
+          59,
+          299
+        ],
+        "pagination": "Printed 59 is physical sheet 74; printed 299 is physical sheet 314.",
+        "finding": "Explicit WGmc bimoric long o to long a finally and before final r, contrasted with trimoric o and other unstressed environments; comparative examples include gift genitive/accusative, water, four, tongue, heart, weak-past endings, and negative name/plural quantities. Early Runic is reported as retaining o. Long a and long ae in the later endings are explicitly reconstructed, not a length invented by CAPR. Pages157-158 are not direct evidence for this law;189-190 concern restoration.",
+        "limits": "Comparative and runic evidence is the secondary authors' argument; Stiles1988 and the primary inscriptions were not freshly independently examined.",
+        "holding_sha256": "278f94f6076a31278ecca75d8d0429f0822728e5efe0ec3011186a694cf8d6f2"
+      },
+      {
+        "key": "Campbell1959",
+        "holding": "docs/references/campbell_old_english_grammar.pdf",
+        "printed_pages": "52,60-61",
+        "sections": "131,157-158",
+        "pagination": "Printed52 is physical70; printed60-61 are physical78-79. Section158 is on printed61, not60.",
+        "finding": "Stressed a-fronting and later back-vowel-conditioned restoration, including sC clusters. Context for the downstream mechanism, not independent documentation of the WGmc unrounding law.",
+        "holding_sha256": "fcb26efd5537a04ae3b202154e79a06b1b0c719e2f0ebabd261442e7449d3611"
+      },
+      {
+        "key": "HoggPhonology1992",
+        "holding": "docs/references/hogg_chel_1992_volume1.pdf",
+        "printed_pages": "102,105",
+        "verified_images": [
+          102,
+          105
+        ],
+        "pagination": "Printed102/105 are physical126/129.",
+        "identity": "Phonology and Morphology, Cambridge History of the English Language I, not the similarly dated monograph.",
+        "finding": "The original cited chapter discusses stressed low-vowel fronting/breaking on102 and restoration on105. It contextualizes the English developments but is not direct independent support for the unrounding law.",
+        "holding_sha256": "0874395a7ae66ed27641f8e937d0e2fd300b4af11aae60757f732c4cbae9c486"
+      },
+      {
+        "key": "HoggGrammar2011",
+        "holding": "docs/references/hogg_fulk_2011_grammar_old_english_vol1_phonology.pdf",
+        "printed_pages": "64,227-228",
+        "sections": "3.32,6.26-28 and6.27 note2",
+        "verified_images": [
+          64,
+          227,
+          228
+        ],
+        "pagination": "Printed64 is physical77;227-228 are physical240-241. The title/copyright establish the2011 paperback reissue of the1992 monograph; no transferred1992 page claims.",
+        "finding": "Separates nasal-associated low-vowel outcomes, preserved long quantities and subsequent shortening. Lists o-stem genitives among the long-vowel histories under discussion and explicitly warns that classification of all such cases as trimoric is difficult and controversial. This is not identical to Ringe-Taylor's bimoric-genitive analysis.",
+        "limits": "Lane1963 and Stiles1988 are cited by Hogg but not independently consulted. The2011 monograph and1992 chapter were verified as distinct bibliographic identities before the verdict.",
+        "holding_sha256": "f8e6d35e5ff1c6ca3a4c26f425a8fb38462d7a96a5255d4f16f4f9337b28a773"
+      }
+    ],
+    "selected_cell": {
+      "row_id": "2152",
+      "concept": "rest",
+      "input": "*rástōz",
+      "target": "ræste",
+      "cell": "Proto-Germanic o-stem genitive singular, explicitly selected in entry_stage_metadata.tsv",
+      "authorities_reused": [
+        "Germanic/data/entry_stage_metadata.tsv",
+        "Germanic/data/protoform_stage_audit.tsv",
+        "Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md"
+      ],
+      "limits": "The mature lexical source/attestation account is reused, not freshly certified from dictionary images. Ringe-Taylor's generic genitive ending supports the phonological pathway; it does not supply CAPR's complete accented rest protoform."
+    }
+  },
+  "current_firings_in_original380_identity_lineage": [
+    "rest"
+  ],
+  "literal_original380_replay_performed": false,
+  "identity_control": {
+    "full_source_compilation": true,
+    "different_from_canonical_trace": [],
+    "matches": 386
+  },
+  "variants": {
+    "before-z": {
+      "elapsed_seconds": 73.69932690891437,
+      "definition_image_reused": true,
+      "order": [
+        "EnglishProtoInput",
+        "PGmcGmSimplification",
+        "PGmcNasalLossBeforeX",
+        "RootNounNomZLoss",
+        "PNWGmcUnstressedAiMonophthongization",
+        "PNWGmcAToUBeforeM",
+        "PNWGmcLongELowering",
+        "PWGmcEarlyIApocope",
+        "PWGmcFinalOrLowering",
+        "PWGmcCoronalWAssimilation",
+        "OEWWSimplification",
+        "PWGmcIjContraction",
+        "PWGmcJGemination",
+        "PWGmcSyllabicJ",
+        "PNWGmcPreconsonantalXLoss",
+        "EAFLThVoicing",
+        "PWGmcDentalHardening",
+        "PWGmcEndinglessAw",
+        "PNWGmcILowering",
+        "PNWGmcULowering",
+        "PNWGmcStressedMonosyllableORaising",
+        "PNWGmcFinalLongORaising",
+        "AF42",
+        "EAFFinalZDeletion",
+        "PWGmcUnstressedWordFinalIApocope",
+        "MonosyllabicFinalZLoss",
+        "PNWGmcMonosyllabicFinalRLengthening",
+        "EAFRhotacism",
+        "PNWGmcMnDissimilation",
+        "PNWGmcNStemNLoss",
+        "EAFNasalSpirantLengthening",
+        "EAFNasalSpirantLoss",
+        "EAFHiatusWInsertion",
+        "EAFLongANasalRounding",
+        "EAFNasalizedLowRounding",
+        "EAFLongAFronting",
+        "OEStressFootContext",
+        "EAFAiMonophthongization",
+        "OEAwwjResolution",
+        "OEAuBrightening",
+        "OEEwLongDiphthong",
+        "OEJWWSimplification",
+        "OEJGlideIO",
+        "OEDiphthongLeveling",
+        "OEAwLongDiphthong",
+        "OECompoundLinkingSyncope",
+        "OEStripSecondaryStress",
+        "OEInterStressRaising",
+        "OEWICombinativeUUmlaut",
+        "PWGmcFinalBareALoss",
+        "NWGmcInStemNLoss",
+        "AF0",
+        "EAFBrighteningUnstressed",
+        "EAFBrightening",
+        "EAFBrighteningLongFinal",
+        "OEBreaking",
+        "OEVelarFricativePalatalization",
+        "OEARestoration",
+        "OEHeavySyllableNasalApocope",
+        "OESecondaryNasalization",
+        "SieversLawSyncope",
+        "OESkPalatalization",
+        "OEVelarPalatalization",
+        "OEPrefixAReduction",
+        "OEPostVelarWLoss",
+        "OEWsPalatalDiphthongization",
+        "OEIUmlaut",
+        "OEWLossBeforeI",
+        "OELatePalatalDiphthong",
+        "OEJClusterCoalescence",
+        "OEBackMutation",
+        "OEWsPalatalUmlaut",
+        "OEWeakTailNasalLoss",
+        "OEWeightMarkers",
+        "OENonHighSyn",
+        "PGmcBAllophony",
+        "OEMedLongShort",
+        "OEHighVowelApocope",
+        "OEMedialSyncope",
+        "OEHighLinkSyncope",
+        "OELAdjacentSyncope",
+        "OEHighStressDecode",
+        "OEDentalAssimilation",
+        "OEPreconsonantalDegemination",
+        "OEEarlyOShortening",
+        "OEUnstressedFrontingEarly",
+        "OELateOShortening",
+        "OEMedUnstressedORaising",
+        "OEFinalUnstressedOLowering",
+        "OEUnstressedLongVowelShortening",
+        "OEUnstressedAEMerger",
+        "OEMedUnstressedILowering1",
+        "OEMedUnstressedILowering",
+        "OEMedUnstressedULowering",
+        "OEPrefixIReduction",
+        "OEWeakTailReduction",
+        "OEJLossAfterHeavy",
+        "OEFinalGeminateSimplification",
+        "OEJStrengtheningAfterFrontDiphthong",
+        "OEIntervocalicJVocalization",
+        "OEUnstressedEIContraction",
+        "OEWeightCleanup",
+        "OEHLoss",
+        "OEContraction",
+        "OERMetathesis",
+        "OEEpentheticVowel",
+        "OELateUnstressedAgSuffix",
+        "OEPalatalFricativeMerger",
+        "OECjCleanup",
+        "OEXsMerge",
+        "OldEnglishOrthography",
+        "OEWsPalatalGlide",
+        "OldEnglishRemoveStars",
+        "OldEnglishSurface"
+      ],
+      "matches": 385,
+      "no_output": 0,
+      "multiple_output": 0,
+      "component_checks": [
+        {
+          "id": "light-final-oral",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*r*á*t*ō",
+          "expected": "*r*á*t*ā",
+          "outputs": [
+            "*r*á*t*ā"
+          ]
+        },
+        {
+          "id": "heavy-final-oral",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*r*á*s*t*ō",
+          "expected": "*r*á*s*t*ā",
+          "outputs": [
+            "*r*á*s*t*ā"
+          ]
+        },
+        {
+          "id": "monosyllabic-long-o",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*d*ō",
+          "expected": "*d*ō",
+          "outputs": [
+            "*d*ō"
+          ]
+        },
+        {
+          "id": "nasal-long-o",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*r*á*s*t*ǭ",
+          "expected": "*r*á*s*t*ǭ",
+          "outputs": [
+            "*r*á*s*t*ǭ"
+          ]
+        },
+        {
+          "id": "short-o",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*r*á*s*t*o",
+          "expected": "*r*á*s*t*o",
+          "outputs": [
+            "*r*á*s*t*o"
+          ]
+        },
+        {
+          "id": "trimoric-marker",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*n*á*m*ô",
+          "expected": "*n*á*m*ô",
+          "outputs": [
+            "*n*á*m*ô"
+          ]
+        },
+        {
+          "id": "protected-by-z",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*r*á*s*t*ō*z",
+          "expected": "*r*á*s*t*ō*z",
+          "outputs": [
+            "*r*á*s*t*ō*z"
+          ]
+        },
+        {
+          "id": "protected-by-r-proxy-limit",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*w*á*t*ō*r",
+          "expected": "*w*á*t*ō*r",
+          "outputs": [
+            "*w*á*t*ō*r"
+          ]
+        },
+        {
+          "id": "no-intervening-consonant",
+          "component": "PWGmcSurvivingBimoricOUnrounding",
+          "input": "*r*á*ō",
+          "expected": "*r*á*ō",
+          "outputs": [
+            "*r*á*ō"
+          ]
+        },
+        {
+          "id": "final-fronting-feeder",
+          "component": "EAFBrighteningLongFinal",
+          "input": "*r*æ*s*t*ā",
+          "expected": "*r*æ*s*t*ǣ",
+          "outputs": [
+            "*r*æ*s*t*ǣ"
+          ]
+        },
+        {
+          "id": "final-fronting-unfed",
+          "component": "EAFBrighteningLongFinal",
+          "input": "*r*æ*s*t*ō",
+          "expected": "*r*æ*s*t*ō",
+          "outputs": [
+            "*r*æ*s*t*ō"
+          ]
+        },
+        {
+          "id": "who-final-fronting-negative",
+          "component": "EAFBrighteningLongFinal",
+          "input": "*x*w*ā",
+          "expected": "*x*w*ā",
+          "outputs": [
+            "*x*w*ā"
+          ]
+        }
+      ],
+      "changed": 1,
+      "newly_failing": 1,
+      "changed_rows": [
+        {
+          "row_id": "2152",
+          "concept": "rest",
+          "proto": "*rástōz",
+          "proto_norm": "rástōz",
+          "fst_input": "rástōz",
+          "word_stress": "stressed",
+          "phonological_finality": "final",
+          "counterpart": "ræste",
+          "baseline_outputs": [
+            "ræste"
+          ],
+          "outputs": [
+            "rasta"
+          ],
+          "changed": true,
+          "baseline_match": true,
+          "variant_match": false,
+          "intermediates": {
+            "moved_before": [
+              "*r*á*s*t*ō*z"
+            ],
+            "moved_after": [
+              "*r*á*s*t*ō*z"
+            ],
+            "z_before": [
+              "*r*á*s*t*ō*z"
+            ],
+            "z_after": [
+              "*r*á*s*t*ō"
+            ],
+            "root_before": [
+              "*r*á*s*t*ō"
+            ],
+            "root_after": [
+              "*r*æ*s*t*ō"
+            ],
+            "final_before": [
+              "*r*æ*s*t*ō"
+            ],
+            "final_after": [
+              "*r*æ*s*t*ō"
+            ],
+            "restoration_before": [
+              "*r*æ*s*t*ō"
+            ],
+            "restoration_after": [
+              "*r*a*s*t*ō"
+            ],
+            "shortening_after": [
+              "*r*a*s*t*a"
+            ],
+            "merger_after": [
+              "*r*a*s*t*a"
+            ]
+          }
+        }
+      ],
+      "rest": {
+        "row_id": "2152",
+        "concept": "rest",
+        "proto": "*rástōz",
+        "proto_norm": "rástōz",
+        "fst_input": "rástōz",
+        "word_stress": "stressed",
+        "phonological_finality": "final",
+        "counterpart": "ræste",
+        "baseline_outputs": [
+          "ræste"
+        ],
+        "outputs": [
+          "rasta"
+        ],
+        "changed": true,
+        "baseline_match": true,
+        "variant_match": false,
+        "intermediates": {
+          "moved_before": [
+            "*r*á*s*t*ō*z"
+          ],
+          "moved_after": [
+            "*r*á*s*t*ō*z"
+          ],
+          "z_before": [
+            "*r*á*s*t*ō*z"
+          ],
+          "z_after": [
+            "*r*á*s*t*ō"
+          ],
+          "root_before": [
+            "*r*á*s*t*ō"
+          ],
+          "root_after": [
+            "*r*æ*s*t*ō"
+          ],
+          "final_before": [
+            "*r*æ*s*t*ō"
+          ],
+          "final_after": [
+            "*r*æ*s*t*ō"
+          ],
+          "restoration_before": [
+            "*r*æ*s*t*ō"
+          ],
+          "restoration_after": [
+            "*r*a*s*t*ō"
+          ],
+          "shortening_after": [
+            "*r*a*s*t*a"
+          ],
+          "merger_after": [
+            "*r*a*s*t*a"
+          ]
+        }
+      }
+    },
+    "after-stressed-fronting": {
+      "elapsed_seconds": 71.60760336602107,
+      "definition_image_reused": true,
+      "order": [
+        "EnglishProtoInput",
+        "PGmcGmSimplification",
+        "PGmcNasalLossBeforeX",
+        "RootNounNomZLoss",
+        "PNWGmcUnstressedAiMonophthongization",
+        "PNWGmcAToUBeforeM",
+        "PNWGmcLongELowering",
+        "PWGmcEarlyIApocope",
+        "PWGmcFinalOrLowering",
+        "PWGmcCoronalWAssimilation",
+        "OEWWSimplification",
+        "PWGmcIjContraction",
+        "PWGmcJGemination",
+        "PWGmcSyllabicJ",
+        "PNWGmcPreconsonantalXLoss",
+        "EAFLThVoicing",
+        "PWGmcDentalHardening",
+        "PWGmcEndinglessAw",
+        "PNWGmcILowering",
+        "PNWGmcULowering",
+        "PNWGmcStressedMonosyllableORaising",
+        "PNWGmcFinalLongORaising",
+        "EAFFinalZDeletion",
+        "PWGmcUnstressedWordFinalIApocope",
+        "MonosyllabicFinalZLoss",
+        "PNWGmcMonosyllabicFinalRLengthening",
+        "EAFRhotacism",
+        "PNWGmcMnDissimilation",
+        "PNWGmcNStemNLoss",
+        "EAFNasalSpirantLengthening",
+        "EAFNasalSpirantLoss",
+        "EAFHiatusWInsertion",
+        "EAFLongANasalRounding",
+        "EAFNasalizedLowRounding",
+        "EAFLongAFronting",
+        "OEStressFootContext",
+        "EAFAiMonophthongization",
+        "OEAwwjResolution",
+        "OEAuBrightening",
+        "OEEwLongDiphthong",
+        "OEJWWSimplification",
+        "OEJGlideIO",
+        "OEDiphthongLeveling",
+        "OEAwLongDiphthong",
+        "OECompoundLinkingSyncope",
+        "OEStripSecondaryStress",
+        "OEInterStressRaising",
+        "OEWICombinativeUUmlaut",
+        "PWGmcFinalBareALoss",
+        "NWGmcInStemNLoss",
+        "AF0",
+        "EAFBrighteningUnstressed",
+        "EAFBrightening",
+        "AF42",
+        "EAFBrighteningLongFinal",
+        "OEBreaking",
+        "OEVelarFricativePalatalization",
+        "OEARestoration",
+        "OEHeavySyllableNasalApocope",
+        "OESecondaryNasalization",
+        "SieversLawSyncope",
+        "OESkPalatalization",
+        "OEVelarPalatalization",
+        "OEPrefixAReduction",
+        "OEPostVelarWLoss",
+        "OEWsPalatalDiphthongization",
+        "OEIUmlaut",
+        "OEWLossBeforeI",
+        "OELatePalatalDiphthong",
+        "OEJClusterCoalescence",
+        "OEBackMutation",
+        "OEWsPalatalUmlaut",
+        "OEWeakTailNasalLoss",
+        "OEWeightMarkers",
+        "OENonHighSyn",
+        "PGmcBAllophony",
+        "OEMedLongShort",
+        "OEHighVowelApocope",
+        "OEMedialSyncope",
+        "OEHighLinkSyncope",
+        "OELAdjacentSyncope",
+        "OEHighStressDecode",
+        "OEDentalAssimilation",
+        "OEPreconsonantalDegemination",
+        "OEEarlyOShortening",
+        "OEUnstressedFrontingEarly",
+        "OELateOShortening",
+        "OEMedUnstressedORaising",
+        "OEFinalUnstressedOLowering",
+        "OEUnstressedLongVowelShortening",
+        "OEUnstressedAEMerger",
+        "OEMedUnstressedILowering1",
+        "OEMedUnstressedILowering",
+        "OEMedUnstressedULowering",
+        "OEPrefixIReduction",
+        "OEWeakTailReduction",
+        "OEJLossAfterHeavy",
+        "OEFinalGeminateSimplification",
+        "OEJStrengtheningAfterFrontDiphthong",
+        "OEIntervocalicJVocalization",
+        "OEUnstressedEIContraction",
+        "OEWeightCleanup",
+        "OEHLoss",
+        "OEContraction",
+        "OERMetathesis",
+        "OEEpentheticVowel",
+        "OELateUnstressedAgSuffix",
+        "OEPalatalFricativeMerger",
+        "OECjCleanup",
+        "OEXsMerge",
+        "OldEnglishOrthography",
+        "OEWsPalatalGlide",
+        "OldEnglishRemoveStars",
+        "OldEnglishSurface"
+      ],
+      "matches": 386,
+      "no_output": 0,
+      "multiple_output": 0,
+      "component_checks": [],
+      "changed": 0,
+      "newly_failing": 0,
+      "changed_rows": [],
+      "rest": {
+        "row_id": "2152",
+        "concept": "rest",
+        "proto": "*rástōz",
+        "proto_norm": "rástōz",
+        "fst_input": "rástōz",
+        "word_stress": "stressed",
+        "phonological_finality": "final",
+        "counterpart": "ræste",
+        "baseline_outputs": [
+          "ræste"
+        ],
+        "outputs": [
+          "ræste"
+        ],
+        "changed": false,
+        "baseline_match": true,
+        "variant_match": true,
+        "intermediates": {
+          "moved_before": [
+            "*r*æ*s*t*ō"
+          ],
+          "moved_after": [
+            "*r*æ*s*t*ā"
+          ],
+          "z_before": [
+            "*r*á*s*t*ō*z"
+          ],
+          "z_after": [
+            "*r*á*s*t*ō"
+          ],
+          "root_before": [
+            "*r*á*s*t*ō"
+          ],
+          "root_after": [
+            "*r*æ*s*t*ō"
+          ],
+          "final_before": [
+            "*r*æ*s*t*ā"
+          ],
+          "final_after": [
+            "*r*æ*s*t*ǣ"
+          ],
+          "restoration_before": [
+            "*r*æ*s*t*ǣ"
+          ],
+          "restoration_after": [
+            "*r*æ*s*t*ǣ"
+          ],
+          "shortening_after": [
+            "*r*æ*s*t*æ"
+          ],
+          "merger_after": [
+            "*r*æ*s*t*e"
+          ]
+        }
+      }
+    },
+    "after-final-fronting": {
+      "elapsed_seconds": 71.57628353196196,
+      "definition_image_reused": true,
+      "order": [
+        "EnglishProtoInput",
+        "PGmcGmSimplification",
+        "PGmcNasalLossBeforeX",
+        "RootNounNomZLoss",
+        "PNWGmcUnstressedAiMonophthongization",
+        "PNWGmcAToUBeforeM",
+        "PNWGmcLongELowering",
+        "PWGmcEarlyIApocope",
+        "PWGmcFinalOrLowering",
+        "PWGmcCoronalWAssimilation",
+        "OEWWSimplification",
+        "PWGmcIjContraction",
+        "PWGmcJGemination",
+        "PWGmcSyllabicJ",
+        "PNWGmcPreconsonantalXLoss",
+        "EAFLThVoicing",
+        "PWGmcDentalHardening",
+        "PWGmcEndinglessAw",
+        "PNWGmcILowering",
+        "PNWGmcULowering",
+        "PNWGmcStressedMonosyllableORaising",
+        "PNWGmcFinalLongORaising",
+        "EAFFinalZDeletion",
+        "PWGmcUnstressedWordFinalIApocope",
+        "MonosyllabicFinalZLoss",
+        "PNWGmcMonosyllabicFinalRLengthening",
+        "EAFRhotacism",
+        "PNWGmcMnDissimilation",
+        "PNWGmcNStemNLoss",
+        "EAFNasalSpirantLengthening",
+        "EAFNasalSpirantLoss",
+        "EAFHiatusWInsertion",
+        "EAFLongANasalRounding",
+        "EAFNasalizedLowRounding",
+        "EAFLongAFronting",
+        "OEStressFootContext",
+        "EAFAiMonophthongization",
+        "OEAwwjResolution",
+        "OEAuBrightening",
+        "OEEwLongDiphthong",
+        "OEJWWSimplification",
+        "OEJGlideIO",
+        "OEDiphthongLeveling",
+        "OEAwLongDiphthong",
+        "OECompoundLinkingSyncope",
+        "OEStripSecondaryStress",
+        "OEInterStressRaising",
+        "OEWICombinativeUUmlaut",
+        "PWGmcFinalBareALoss",
+        "NWGmcInStemNLoss",
+        "AF0",
+        "EAFBrighteningUnstressed",
+        "EAFBrightening",
+        "EAFBrighteningLongFinal",
+        "AF42",
+        "OEBreaking",
+        "OEVelarFricativePalatalization",
+        "OEARestoration",
+        "OEHeavySyllableNasalApocope",
+        "OESecondaryNasalization",
+        "SieversLawSyncope",
+        "OESkPalatalization",
+        "OEVelarPalatalization",
+        "OEPrefixAReduction",
+        "OEPostVelarWLoss",
+        "OEWsPalatalDiphthongization",
+        "OEIUmlaut",
+        "OEWLossBeforeI",
+        "OELatePalatalDiphthong",
+        "OEJClusterCoalescence",
+        "OEBackMutation",
+        "OEWsPalatalUmlaut",
+        "OEWeakTailNasalLoss",
+        "OEWeightMarkers",
+        "OENonHighSyn",
+        "PGmcBAllophony",
+        "OEMedLongShort",
+        "OEHighVowelApocope",
+        "OEMedialSyncope",
+        "OEHighLinkSyncope",
+        "OELAdjacentSyncope",
+        "OEHighStressDecode",
+        "OEDentalAssimilation",
+        "OEPreconsonantalDegemination",
+        "OEEarlyOShortening",
+        "OEUnstressedFrontingEarly",
+        "OELateOShortening",
+        "OEMedUnstressedORaising",
+        "OEFinalUnstressedOLowering",
+        "OEUnstressedLongVowelShortening",
+        "OEUnstressedAEMerger",
+        "OEMedUnstressedILowering1",
+        "OEMedUnstressedILowering",
+        "OEMedUnstressedULowering",
+        "OEPrefixIReduction",
+        "OEWeakTailReduction",
+        "OEJLossAfterHeavy",
+        "OEFinalGeminateSimplification",
+        "OEJStrengtheningAfterFrontDiphthong",
+        "OEIntervocalicJVocalization",
+        "OEUnstressedEIContraction",
+        "OEWeightCleanup",
+        "OEHLoss",
+        "OEContraction",
+        "OERMetathesis",
+        "OEEpentheticVowel",
+        "OELateUnstressedAgSuffix",
+        "OEPalatalFricativeMerger",
+        "OECjCleanup",
+        "OEXsMerge",
+        "OldEnglishOrthography",
+        "OEWsPalatalGlide",
+        "OldEnglishRemoveStars",
+        "OldEnglishSurface"
+      ],
+      "matches": 385,
+      "no_output": 0,
+      "multiple_output": 0,
+      "component_checks": [],
+      "changed": 1,
+      "newly_failing": 1,
+      "changed_rows": [
+        {
+          "row_id": "2152",
+          "concept": "rest",
+          "proto": "*rástōz",
+          "proto_norm": "rástōz",
+          "fst_input": "rástōz",
+          "word_stress": "stressed",
+          "phonological_finality": "final",
+          "counterpart": "ræste",
+          "baseline_outputs": [
+            "ræste"
+          ],
+          "outputs": [
+            "rasta"
+          ],
+          "changed": true,
+          "baseline_match": true,
+          "variant_match": false,
+          "intermediates": {
+            "moved_before": [
+              "*r*æ*s*t*ō"
+            ],
+            "moved_after": [
+              "*r*æ*s*t*ā"
+            ],
+            "z_before": [
+              "*r*á*s*t*ō*z"
+            ],
+            "z_after": [
+              "*r*á*s*t*ō"
+            ],
+            "root_before": [
+              "*r*á*s*t*ō"
+            ],
+            "root_after": [
+              "*r*æ*s*t*ō"
+            ],
+            "final_before": [
+              "*r*æ*s*t*ō"
+            ],
+            "final_after": [
+              "*r*æ*s*t*ō"
+            ],
+            "restoration_before": [
+              "*r*æ*s*t*ā"
+            ],
+            "restoration_after": [
+              "*r*a*s*t*ā"
+            ],
+            "shortening_after": [
+              "*r*a*s*t*a"
+            ],
+            "merger_after": [
+              "*r*a*s*t*a"
+            ]
+          }
+        }
+      ],
+      "rest": {
+        "row_id": "2152",
+        "concept": "rest",
+        "proto": "*rástōz",
+        "proto_norm": "rástōz",
+        "fst_input": "rástōz",
+        "word_stress": "stressed",
+        "phonological_finality": "final",
+        "counterpart": "ræste",
+        "baseline_outputs": [
+          "ræste"
+        ],
+        "outputs": [
+          "rasta"
+        ],
+        "changed": true,
+        "baseline_match": true,
+        "variant_match": false,
+        "intermediates": {
+          "moved_before": [
+            "*r*æ*s*t*ō"
+          ],
+          "moved_after": [
+            "*r*æ*s*t*ā"
+          ],
+          "z_before": [
+            "*r*á*s*t*ō*z"
+          ],
+          "z_after": [
+            "*r*á*s*t*ō"
+          ],
+          "root_before": [
+            "*r*á*s*t*ō"
+          ],
+          "root_after": [
+            "*r*æ*s*t*ō"
+          ],
+          "final_before": [
+            "*r*æ*s*t*ō"
+          ],
+          "final_after": [
+            "*r*æ*s*t*ō"
+          ],
+          "restoration_before": [
+            "*r*æ*s*t*ā"
+          ],
+          "restoration_after": [
+            "*r*a*s*t*ā"
+          ],
+          "shortening_after": [
+            "*r*a*s*t*a"
+          ],
+          "merger_after": [
+            "*r*a*s*t*a"
+          ]
+        }
+      }
+    }
+  }
+}

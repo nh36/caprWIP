@@ -282,9 +282,9 @@
       "lifecycle_status": "active",
       "rule_name": "PWGmcSurvivingBimoricOUnrounding",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC042-pwgmc-surviving-bimoric-o-unrounding.md",
-      "card_type": "reciprocal_or_near_reciprocal",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "-"
+      "card_type": "one_sided_chronology",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "One live application; z-loss feeding and technical final-support dependency, not stressed SC043."
     },
     {
       "change_id": "SC043",
@@ -1556,13 +1556,13 @@
       "relation_type": "one_sided_chronology",
       "direction_basis": "earlier_boundary",
       "evidence_basis": "independently_demonstrated",
-      "witness_role": "displacement_witness",
+      "witness_role": "feeding",
       "representative_lexemes": "rest",
       "representative_forms": "PGmc `*rástōz` yields expected OE `ræste`, but the earlier-shifted variant yields `rasta`",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "-"
+      "notes": "Current displacement before z-loss changes only rest to rasta: protected o becomes final too late. Ringe-Taylor58-60/299 supports the final-vowel/genitive account independently; source-conditional exposure chronology, not adjacency or a universal date from one word. See sc042-adjudication.md."
     },
     {
       "source_change_id": "SC042",
@@ -1570,13 +1570,13 @@
       "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
       "evidence_basis": "technical",
-      "witness_role": "displacement_witness",
+      "witness_role": "feeding",
       "representative_lexemes": "rest",
-      "representative_forms": "Old composite displacement: PGmc `*rástōz` yields expected OE `ræste`, but the later-shifted variant yields `rasta`",
+      "representative_forms": "Current SC042-after-SC108 displacement: PGmc `*rástōz` yields `rasta` rather than expected OE `ræste`.",
       "strength": "tight_local",
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "RG09_SC042_SC108",
-      "notes": "SC042 feeds the carried final quantity, not the stressed root fronting. This reciprocal displacement record is not two strict historical before-edges."
+      "notes": "SC042 supplies long a to final-vowel support; the later displacement misses final fronting, leaving a back-vowel restoration trigger. Moving SC042 past stressed SC043 but before SC108 preserves all394 outputs. Technical feeding, not a local date for stressed fronting; see sc042-adjudication.md."
     },
     {
       "source_change_id": "SC108",
@@ -1584,13 +1584,13 @@
       "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
       "evidence_basis": "technical",
-      "witness_role": "displacement_witness",
+      "witness_role": "feeding",
       "representative_lexemes": "rest",
-      "representative_forms": "Old composite displacement: PGmc `*rástōz` yields expected OE `ræste`, but the earlier-shifted variant yields `rasta`",
+      "representative_forms": "Current SC042-after-SC108 displacement gives `rasta` rather than expected OE `ræste`; no new early-SC108 experiment is claimed.",
       "strength": "tight_local",
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "RG09_SC042_SC108",
-      "notes": "Historical composite card preserved; component-local quantity dependency, not a date for ordinary stressed SC043."
+      "notes": "Reverse-endpoint representation of the same SC042-before-SC108 technical feeding constraint, not another historical edge or independent reciprocal measurement. Original composite card remains archived; see sc042-adjudication.md."
     },
     {
       "source_change_id": "SC043",

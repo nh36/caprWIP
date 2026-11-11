@@ -4158,16 +4158,13 @@ exception to this law or a transponent with restored final *n*.
 
 ### Historical discussion
 
-The handbooks do not isolate a large independent sound change under this label.
-The surviving bimoric \emph{*ō} in the pathway to *ræste* ‘rest’ nevertheless
-undergoes unrounding before
-[SC043 EAFBrightening](#rule-EAFBrightening). Campbell, Hogg,
-and Ringe and Taylor describe the surrounding fronting and restoration history
-without naming this feeder separately [@Campbell1959, pp. 52, 60,
-§§131, 157--158; @HoggPhonology1992, pp. 102, 105; @RingeTaylor2014, pp. 157--158,
-189--190].
+The development has independent comparative support, not merely a successful derivation of one Old English word. Ringe and Taylor explicitly reconstruct surviving bimoric \emph{*ō} as West Germanic \emph{*ā} word-finally and before final \emph{*r}; trimoric vowels instead give \emph{*ō}, while the two quantities merge as \emph{*ō} in other unstressed environments [@RingeTaylor2014, pp. 58--60]. Quantity, finality and the remaining consonants are therefore essential to their account. A phonological law, not membership in a declension, distinguishes the outcomes.
 
-The sole witness establishes a local relation to brightening but supports no broader generalization.
+Their comparative examples include the histories of *wæter* 'water' and *fēower* 'four' before final \emph{*r}, and final-vowel histories continued by *ġiefe* 'gift', *tunge* 'tongue' and *heorte* 'heart'. The different quantity underlying *nama* 'name' supplies a contrast, not an exception. They place unrounding before shortening before final \emph{*r} and argue for a West Germanic development partly from the retention of rounded vowels in Early Runic [@RingeTaylor2014, pp. 59--60]. These are the authors' comparative and runic arguments, not additional applications of the operation printed below or new independent readings of inscriptions.
+
+The quantity analysis is not uniform across handbooks. Hogg discusses nasal-associated low-vowel outcomes and the survival and shortening of long vowels, but includes the genitive singular among the endings considered in his trimoric-vowel discussion and explicitly qualifies the security of that classification [@HoggGrammar2011, p. 64, §3.32; pp. 227--228, §§6.26--28, especially §6.27 n. 2]. Ringe and Taylor instead explicitly assign the relevant genitive a bimoric input and reconstruct long \emph{*ā} followed by long \emph{*ǣ} on its way to final *-e* [@RingeTaylor2014, pp. 59, 299--300]. The length is consequently not an invention required only to obtain a particular output, although the detailed prehistoric quantity remains a matter for source criticism.
+
+Campbell's discussion of fronting and restoration, Hogg's separate historical chapter, and Ringe and Taylor's English restoration account explain the surrounding English developments, rather than independently establishing the West Germanic unrounding law [@Campbell1959, pp. 52, 60--61, §§131, 157--158; @HoggPhonology1992, pp. 102, 105; @RingeTaylor2014, pp. 189--190]. The grammar cited for long-vowel quantity above is Hogg's monograph in its 2011 pagination, not that 1992 chapter.
 
 ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding}
 
@@ -4177,7 +4174,15 @@ define PWGmcSurvivingBimoricOUnrounding Ctx([
 ]);
 ```
 
-The single *ræste* ‘rest’ derivation carries the chronology of bimoric \emph{*ō} > \emph{*ā}. Before [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) or after [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [rástōz]{.recon} ‘rest’ yields [*rasta*]{.pred} rather than expected OE *ræste*. Unrounding must therefore follow final \emph{z}-loss and precede brightening, although only the relation to brightening is local.
+This operation represents only the surviving oral-final fragment of the broader development. Its preceding-nucleus and intervening-consonant guard selects a final vowel in a polysyllabic shape; it does not independently reconstruct historical stress. Before-final-\emph{*r} histories and nasal-vowel histories have other executable treatments. At this point the selected water and four inputs already contain \emph{*a} before \emph{*r}, whereas the tongue and heart inputs retain the distinct nasal token \emph{*ǭ}. Name retains a separate trimoric marker. Their nonapplication here is therefore not a counterexample to the broader comparative account.
+
+The complete current population has one live application: *ræste* 'rest', from the selected Proto-Germanic genitive singular \emph{*rástōz}, not the citation nominative \emph{*rastō}. The selected gift input is instead \emph{*gíftiz}, so the literature's genitive \emph{*gebōz} must not silently replace it as another corpus witness. Neither a lexical exception nor a grammatical condition is introduced.
+
+After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. The West Germanic long-vowel reconstruction has a source basis, but this exact serialized chain remains a computational representation of the selected history.
+
+For the selected \emph{*rástōz}, moving unrounding before z-loss or after final-vowel support gives [rasta]{.pred example-input="*rástōz" example-stage=PGmc example-expected=ræste}, rather than *ræste* 'rest'. In the early displacement the vowel is still protected by \emph{*z}; in the late displacement its unrounded output arrives too late for final-vowel fronting. In both, a surviving back vowel permits [SC046 OEARestoration](#rule-OEARestoration) to retract the root, and later shortening leaves final *-a*. By contrast, placing unrounding after ordinary stressed fronting but before final-vowel support preserves all current outputs. Thus z-loss feeds the exposed-final-vowel operation, which feeds the final support; it is not the stressed fronting operation that needs the unrounded final vowel.
+
+The historical West Germanic development precedes the English fronting history in the adopted account. That does not establish an independently witnessed local relation to ordinary stressed fronting: the single selected rest derivation distinguishes exposure of a final vowel and the use of its unrounded output by final-vowel support. The rule, its order and the selected forms are retained; its historical interpretation is reformulated to distinguish this narrow executable contribution from the independently argued broader law.
 
 ## Technical support: retained unstressed fronting
 

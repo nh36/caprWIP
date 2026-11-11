@@ -48,7 +48,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 65 | no |
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 5 | 67 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 15 | 32 | no |
-| 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 18 | 94 | yes |
+| 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 15 | 94 | yes |
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 40 | 27 | no |
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 48 | 69 | no |
 | 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 24 | 37 | no |
@@ -135,7 +135,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 - `108` chars — `    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,`
 - `134` chars — `    .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]`
 
-### 042-surviving-bimoric-o-unrounding.md:18 — SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding}
+### 042-surviving-bimoric-o-unrounding.md:15 — SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding}
 
 - `94` chars — `    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.`
 

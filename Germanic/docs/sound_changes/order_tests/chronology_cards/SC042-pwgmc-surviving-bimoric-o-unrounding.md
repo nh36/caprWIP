@@ -35,3 +35,32 @@ Both observed boundaries are historically interpretable, because both crossed st
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_failures.tsv`
 - `Germanic/docs/sound_changes/sound_change_order_sensitivity.tsv`
+
+
+## Source-critical current-cascade addendum, 11 November 2026
+
+The original measurements above remain unchanged. The old composite
+SC043 is not today's ordinary stressed SC043: SC108 separately carries
+the final-vowel component. The current complete394-row census has one
+application, rest, `*r*á*s*t*ō` > `*r*á*s*t*ā`.
+
+New isolated displacements accept all394 inputs singly. Before SC020,
+only rest fails, giving rasta: z still protects the vowel when moved
+unrounding runs. After SC108, only rest fails, again giving rasta:
+unrounding arrives too late to feed final fronting. In both, a surviving
+back vowel allows restoration to retract the root. Moving SC042 after
+stressed SC043 but before SC108 changes no final output. Twelve
+component predictions and the all394 identity control pass.
+
+Thus final-z loss feeds exposed finality, and SC042 feeds SC108; the
+latter is a technical quantity dependency, not a new historical law or
+an independently measured reciprocal early-SC108 displacement. The
+original safe window was not resurveyed. A historical_sound_change type
+on a crossed row alone never proves historical interpretability.
+
+Ringe-Taylor58-60/299-300 independently supports broader WG unrounding,
+including before-r and nasal histories not implemented by this one
+oral-final fragment. Hogg2011 64/227-228 qualifies the quantity analysis.
+Neither rest alone nor the late serialization establishes a universal
+historical date. See [the full adjudication](../../audits/sc042-adjudication.md)
+and [authenticated evidence](../../audits/sc042-experiments/evidence.json).

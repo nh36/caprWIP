@@ -1,0 +1,33 @@
+{
+  "archive_sha256": "36a3ee3dc730dda9fb8306491ed6ade375137486eea05d894815a30fcee2b3a5",
+  "evidence_sha256": "62790eddc379ec029654899fb198b9fdeea0154aee9cd42d419470c010ac736b",
+  "members": {
+    "sc042-baseline-20261111/completion.json": "19a4efacd5fc44ecf962b7b4589898963d792eea5438338f51ecf6ed56bb9dbe",
+    "sc042-baseline-20261111/receipt.json": "882eccde2afb2121359df8513735cd3f6ab654795156484a0ad137d66bbba10b",
+    "sc042-baseline-20261111/snapshot/context_helper.py": "d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67",
+    "sc042-baseline-20261111/snapshot/contexts.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "sc042-baseline-20261111/snapshot/corpus.tsv": "c1ebc87c2c535fe24628bf34b8b7b25e73602b1cad59072fcd9d5a289543edf9",
+    "sc042-baseline-20261111/snapshot/full_trace.txt": "ba00e177dd6d13fae7994ce9b8998086321a40a51c9f1892dc499e701084d6dd",
+    "sc042-baseline-20261111/snapshot/germanic_fst.txt": "37b7811ca68c0358d26e25d58fe5d697e7d560a61a1896190c5c72f93583af0e",
+    "sc042-baseline-20261111/snapshot/hypothesis.json": "0b91394365d7c60213733bde9b347b2b96741153582aa931a5ca0c907c95e715",
+    "sc042-baseline-20261111/snapshot/order_helper.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+    "sc042-baseline-20261111/snapshot/pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+    "sc042-baseline-20261111/snapshot/runtime_helper.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+    "sc042-displacements-20261111/completion.json": "9078edec637fb100ecad97959bd3761f2e431a5433196537c71296a64db5b652",
+    "sc042-displacements-20261111/receipt.json": "e8089acae9b1fd2c740ed5b21144cd8cf8a8e8742217579a0e559ada193b326e",
+    "sc042-displacements-20261111/results/observations.json": "46665d59ce1a0248e1f072cdefc2aa2d76ed06258697462e0d593adfd3d79cd5",
+    "sc042-displacements-20261111/snapshot/driver.py": "47a0054aeb017490083b31ff8b4d9573f712d4a954b9493e39c116125383fec5",
+    "sc042-displacements-20261111/snapshot/parent_receipt.json": "882eccde2afb2121359df8513735cd3f6ab654795156484a0ad137d66bbba10b",
+    "sc042-displacements-20261111/snapshot/recipes.json": "07e44770d75b9b5b748f2a5dc6fcbe3a2a725b6c983d6bcbb13a80229ff3d412",
+    "sc042-displacements-20261111/snapshot/rows.json": "f1aeed974d29e2ed1e87dd7d688930494cd4d8592a67eac15eb0e1e6f25f1e43",
+    "execution/canonical-evidence-receipt.json": "e00ce4a59059cb5f5b6746e5475d86a7170a32b9e21cab6f7b14960f6dad2ce1",
+    "execution/sc042-canonical-evidence-b12ea77e752d4a279e7cc94de3c21f22.stdout.log": "30c865a5c41d26f7915460511209e88ccf029fa7d8243f08a692025ea46984c0",
+    "execution/sc042-canonical-evidence-b12ea77e752d4a279e7cc94de3c21f22.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "execution/counterfactual-execution-receipt.json": "59bc3277ee20f0b5777a1338bf4f5a223c00b3c5189f117e8f6ec7e74389c1b7",
+    "execution/sc042-current-counterfactuals-970093af15bd4fbaa416525287486075.stdout.log": "1b122433bbb974520a86a468a71cf9c1102dd03f24b9061f8c594d8600e6d50c",
+    "execution/sc042-current-counterfactuals-970093af15bd4fbaa416525287486075.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source-review.json": "2564badacf8dc4baf5b728509571c13619cd9c1f9e92476d49aa27f38fbb98d7",
+    "canonical-full-trace.txt": "ba00e177dd6d13fae7994ce9b8998086321a40a51c9f1892dc499e701084d6dd"
+  },
+  "note": "Frozen original scientific observations; no PDF holdings, source images or runtime binaries."
+}

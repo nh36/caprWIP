@@ -1412,25 +1412,22 @@ define PWGmcFinalBareALoss Ctx([
     {*a} -> 0 || _ .#.
 ]);
 
-# PWGmc/WGmc surviving-bimoric *-ō unrounding (R/T vol.2 §3.1, pp.58-59).
-# After z-loss has exposed a new crop of word-final *-ō (from *-ōz), and
-# after bare-a-loss has run, the surviving bimoric *-ō unrounds. R/T
-# write this output as PWGmc "*-a" but the IMMEDIATELY-following pre-OE
-# stage in their derivation (pp.299-300) is long *-ǣ, so length must be
-# carried across this change. We represent the output as LONG *-ā and
-# let the existing downstream OE shortening (§6.8.3) reduce the length
-# at the stage R/T themselves date the shortening to.
+# WG surviving-bimoric o unrounding (R/T vol.2 pp.58-60,299-300).
+# R/T explicitly reconstruct LONG *-ā, not short *-a: bimoric *ō
+# becomes *ā finally and before final r, while trimoric o gives *ō.
+# Their later ending histories explicitly carry long *ǣ before shortening.
+# Hogg (2011) §§3.32,6.27-28 qualifies the prehistoric quantity analysis.
 #
-# Context `_ .#.` (word-final only): at the pipeline position where this
-# rule fires, all pre-existing word-final *-ō has already been raised to
-# *-u by PNWGmcFinalLongORaising, and nasalized *-ǭ is a distinct symbol.
-# So the only *-ō reaching this rule is the z-loss-exposed "surviving"
-# one. See DEV_NOTES §17.10.23 for the full chronology and audit.
+# This is only the current oral-final fragment. Before-r histories and
+# nasal *ǭ have other treatments; at this point water/four already have a.
+# Z-loss exposes rest's *-ōz ending. SC042 then feeds SC108 final-vowel
+# support, not ordinary stressed SC043. Its late serialized position is
+# an implementation accommodation, not a new historical dating claim.
 #
-# §17.31: defensive "preceded by another nucleus" guard added in parallel
-# with PNWGmcFinalLongORaising. Stressed monosyllabic *ō is raised to *ū
-# by PNWGmcStressedMonosyllableORaising upstream and so does not reach
-# this rule; the guard belt-and-braces against any future re-ordering.
+# The preceding-nucleus/consonant guard excludes monosyllabic shapes;
+# it is not an independent reconstruction of historical stress. Earlier
+# final-o raising and distinct nasal/trimoric symbols limit the surviving
+# population. See sc042-adjudication.md and the preserved §17.10.23 audit.
 define PWGmcSurvivingBimoricOUnrounding Ctx([
     {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ]);

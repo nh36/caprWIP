@@ -7,7 +7,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 ## Summary
 
 - Sections checked: 109.
-- Sections with absent cues or notation observations: 73.
+- Sections with absent cues or notation observations: 72.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -58,7 +58,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | yes | yes | yes | yes | yes | yes | no | — |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | yes | yes | no | yes | yes | yes | no | — |
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
+| 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | yes | yes | yes | yes | yes | yes | no | — |
 | 107-unstressed-fronting-support.md | SC107. Retained unstressed contribution (`EAFBrighteningUnstressed`) {#rule-EAFBrighteningUnstressed} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | yes | no | no | yes | yes | no | no | missing explicit wrong-output/result wording; missing expected-form wording |
 | 108-final-vowel-fronting-support.md | SC108. Retained final-vowel representation (`EAFBrighteningLongFinal`) {#rule-EAFBrighteningLongFinal} | no | no | no | yes | no | yes | no | missing move-condition wording |
