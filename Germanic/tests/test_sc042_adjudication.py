@@ -185,3 +185,63 @@ def test_targeted_orderings_preserve_every_output_but_do_not_establish_a_hiatus_
     assert hiatus["early"]["outputs"] == ["*t*ā*w*ō"]
     assert hiatus["post-hiatus"]["outputs"] == ["*t*ā*w*ǣ"]
     assert all("not an attested" in row["status"] for row in hiatus.values())
+
+
+
+NASAL = AUDIT.parent / "sc042-nasal-interaction-experiments"
+
+
+def test_nasal_interaction_failure_is_authentic_and_not_hidden_by_matching_endings():
+    manifest = json.loads((NASAL / "manifest.json").read_text())
+    data = json.loads((NASAL / "evidence.json").read_text())
+    assert hashlib.sha256((NASAL / "experiments.zip").read_bytes()).hexdigest() == manifest["archive_sha256"]
+    assert hashlib.sha256((NASAL / "evidence.json").read_bytes()).hexdigest() == manifest["evidence_sha256"]
+    with zipfile.ZipFile(NASAL / "experiments.zip") as archive:
+        assert set(archive.namelist()) == set(manifest["members"])
+        for name, digest in manifest["members"].items():
+            assert hashlib.sha256(archive.read(name)).hexdigest() == digest
+        for label in ("canonical", "prototype"):
+            completion = json.loads(archive.read(label + "/completion.json"))
+            receipt = completion["command_receipts"][0]
+            assert not receipt["source_changed"]
+            assert receipt["ok"] == (label == "prototype")
+            for stream in ("stdout", "stderr"):
+                name = label + "/results/" + Path(receipt[stream + "_log"]).name
+                assert hashlib.sha256(archive.read(name)).hexdigest() == receipt[stream + "_sha256"]
+    observed = data["canonical"]
+    assert observed["raw_inputs"][:4] == ["rátōz", "rátǭ", "gébōz", "gébǭ"]
+    assert observed["final_outputs"][:4] == [["ræte"], ["rate"], ["ġiefe"], ["ġiefe"]]
+    checkpoints = {row["stage"]: row["outputs"] for row in observed["checkpoints"]}
+    assert checkpoints["EnglishProtoInput"][:2] == [["*r*á*t*ō*z"], ["*r*á*t*ǭ"]]
+    assert checkpoints["EAFBrighteningLongFinal"][:2] == [["*r*æ*t*ǣ"], ["*r*æ*t*ǭ"]]
+    assert checkpoints["OEARestoration"][:2] == [["*r*æ*t*ǣ"], ["*r*a*t*ǭ"]]
+    assert checkpoints["OEUnstressedAEMerger"][:2] == [["*r*æ*t*e"], ["*r*a*t*e"]]
+
+
+def test_unadopted_nasal_merger_quantifies_all_protected_output_conflicts():
+    data = json.loads((NASAL / "evidence.json").read_text())
+    proposal = data["proposal"]
+    assert proposal["accepted"] == len(proposal["rows"]) == 394
+    assert proposal["no_output"] == proposal["multiple_output"] == 0
+    changed = {row["concept"]: (row["baseline_outputs"], row["outputs"])
+               for row in proposal["rows"] if row["changed"]}
+    assert changed == {
+        "flask": (["flasce"], ["flæsċe"]),
+        "nightmare": (["mare"], ["mære"]),
+        "toe": (["tā"], ["tāhe"]),
+        "tongue": (["tunge"], ["tunġe"]),
+    }
+    assert proposal["changed"] == 4 and proposal["matches"] == 382
+    for row in proposal["rows"]:
+        assert row["changed"] == (row["outputs"] != row["baseline_outputs"])
+        assert len(row["outputs"]) == 1
+    assert proposal["phonological_controls"]["outputs"] == [
+        ["ræte"], ["ræte"], ["ġiefe"], ["ġiefe"], ["ġiefa"], ["nama"]]
+    normalize = lambda body: " ".join(body.split())
+    with zipfile.ZipFile(NASAL / "experiments.zip") as archive:
+        original = parse_defines(archive.read("prototype/snapshot/current_source.txt").decode())
+    prototype = parse_defines(proposal["recipe"]["definitions"])
+    expected = original["PWGmcSurvivingBimoricOUnrounding"].body.replace(
+        "{*ō} -> {*ā}", "[{*ō} | {*ǭ}] -> {*ā}")
+    assert normalize(prototype["AF42N"].body) == "[ " + normalize(expected) + " ]"
+    assert normalize(prototype["AF20"].body) == "[ " + normalize(original["EAFFinalZDeletion"].body) + " ]"

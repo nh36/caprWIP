@@ -88,3 +88,10 @@ the mappings, boundary analysis and bounded SC020 trimoric-nucleus correction;
 [new evidence](../../audits/sc042-verification-experiments/evidence.json) retains
 the genuine initial negative as well as the successful prototype. SC042 itself
 is neither broadened nor reordered.
+
+The later nasal/root-restoration cross-check in the final memorandum defers
+certification of complete distributed conditioning. Its unadopted nasal-merger
+prototype changes flask, nightmare, toe and tongue; the oral-only ordering
+measurements above remain valid under their original identities, not evidence
+that the broader nasal implementation is healthy. No new chronology edge is
+inferred from those output differences.

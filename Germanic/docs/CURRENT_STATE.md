@@ -59,7 +59,10 @@ The resumed sequential research is recorded in the source-critical
 [final bare-a loss adjudication](sound_changes/audits/sc041-adjudication.md)
 and [surviving long-o unrounding adjudication](sound_changes/audits/sc042-adjudication.md).
 The independent SC041 example-index correction remains separately reviewed;
-no subsequent adjudication starts automatically. The separate Barrack crosswalk SC067 then SC080 stays paused,
+no subsequent adjudication starts automatically. The
+[final SC042 verification](sound_changes/audits/sc042-final-verification.md)
+records the bounded quantity repair and a precisely deferred nasal-interaction
+correction; it does not authorize proceeding to SC044. The separate Barrack crosswalk SC067 then SC080 stays paused,
 retaining WG117, 300b and440b as prospective omissions or discrepancies.
 Neither that programme nor the qualified lexical residues starts automatically.
 

@@ -152,3 +152,7 @@ requested vowel histories, tests eighteen distributed controls and two
 additional current ordering positions, and identifies one quantity-recognition
 gap in neighboring SC020. Its local trimoric-nucleus correction preserves
 all394 accepted outputs; SC042's own definition and position remain unchanged.
+A subsequent cross-check in that same final memorandum demonstrates that delayed
+nasal-vowel treatment is not root-restoration-equivalent. Current certification
+is DEFER: the unadopted early-merger correction changes four protected outputs.
+The original verdict and measurements above remain historical records.
