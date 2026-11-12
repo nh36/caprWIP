@@ -26,6 +26,7 @@ CONSOLIDATION_CHANGED = {
     "OEWLossBeforeI",
 }
 LEXICAL_GRAMMAR_CHANGED = {"PGCellEnd"}
+FINAL_Z_QUANTITY_CHANGED = {"EAFFinalZDeletion"}
 
 
 def assert_intervention_scope():
@@ -53,7 +54,7 @@ def assert_intervention_scope():
     assert {name for name in consolidated_base
             if "".join(current[name].body.split()) !=
                "".join(consolidated_base[name].body.split())} == (
-                   CONSOLIDATION_CHANGED | LEXICAL_GRAMMAR_CHANGED)
+                   CONSOLIDATION_CHANGED | LEXICAL_GRAMMAR_CHANGED | FINAL_Z_QUANTITY_CHANGED)
     corrected = parse_defines(subprocess.check_output(
         ["git", "show", "3e2fe1b6d8ac606e854534798bb6688805c3875e:Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True))
@@ -66,6 +67,12 @@ def assert_intervention_scope():
         "".join(corrected["PGCellEnd"].body.split()).replace(
             "a:{*a}s:{*s}|", "a:{*a}s:{*s}|a:{*a}n:{*n}z:{*z}|"))
     assert current["PGCellEnd"].body == lexical["PGCellEnd"].body
+    # SC042 verification authorizes one exact later feeder repair, not an exemption.
+    before_z = "".join(lexical["EAFFinalZDeletion"].body.split())
+    after_z = "".join(current["EAFFinalZDeletion"].body.split())
+    nucleus = "EnglishStarVocalic?*_.#."
+    assert before_z.count(nucleus) == 1
+    assert after_z == before_z.replace(nucleus, "[EnglishStarVocalic|{*ô}]?*_.#.")
 
 
 def test_intervention_changes_are_exactly_source_bound():

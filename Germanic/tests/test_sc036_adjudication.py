@@ -15,7 +15,7 @@ import oe_pipeline
 from check_bibliography_sanity import parse_entries
 from test_sc037_adjudication import (
     INTERVENTION_ADDED, INTERVENTION_CHANGED, CONSOLIDATION_ADDED,
-    CONSOLIDATION_CHANGED, assert_intervention_scope,
+    CONSOLIDATION_CHANGED, FINAL_Z_QUANTITY_CHANGED, assert_intervention_scope,
 )
 
 
@@ -82,7 +82,7 @@ def test_sc036_and_separately_adjudicated_changes_remain_bounded():
         {"OEMedUnstressedULowering", "EnglishProtoInput", "OEVelarPalatalizationStops",
          "OldEnglishOrthography"} |
         # Independently source-bound by test_sc037_adjudication.py.
-        {"OECompoundLinkingSyncope"} | INTERVENTION_CHANGED |
+        {"OECompoundLinkingSyncope"} | INTERVENTION_CHANGED | FINAL_Z_QUANTITY_CHANGED |
         (CONSOLIDATION_CHANGED & old.keys()))
     assert current["OEInterStressRaising"] == "OELHWeakRaising"
     accepted = definitions(git_bytes(
