@@ -2138,12 +2138,14 @@ At the boundary with Chapter 2's Northwest Germanic sequence, the derivation of 
 ```foma
 define EAFFinalZDeletion Ctx([
     [{*z} -> 0 ||
-    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,
+    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ [EnglishStarVocalic | {*ô}] ?* _ .#.,
     .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]
 ]);
 ```
 
 The rule deletes word-final \emph{*z} in unstressed syllables, stated through two environments. The first clause covers polysyllables, where the final syllable of these corpus forms is unstressed: this is the ordinary case, with 110 corpus derivations, such as PGmc [bárdaz]{.recon} 'beard' on its way to OE *beard* 'beard' and [rástōz]{.recon} 'rest' on its way to *ræste* 'rest'. The second clause covers post-consonantal \emph{*z} in monosyllables. By the time this rule runs, [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss) has already removed the genuine root-noun nominative endings, so the only form reaching the second clause is [fríjōndz]{.recon} 'friend', contracted to monosyllabic \emph{*fríundz} by [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction); its ending, like that of \emph{*fadurz}, stood in an unstressed syllable when the Proto-West Germanic change applied and so belongs here rather than to the root-noun development [@RingeTaylor2014, pp. 44--45, §3.1.1]. Stressed monosyllables ending in vowel plus \emph{*z} meet neither clause and are left for [SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss).
+
+The polysyllabic environment counts trimoric vowels as nuclei as well as bimoric vowels. Ringe and Taylor's contrast between the trimoric nominative plural ending in \emph{*gebō̄z} and the bimoric genitive singular ending in \emph{*gebōz} requires loss of \emph{*z} in both, without merging their quantities: the former leads to OE *ġiefa* 'gifts', the latter to *ġiefe* 'of a gift' [@RingeTaylor2014, p. 59]. The extra trimoric symbol in the first environment represents this quantity distinction; it does not extend the rule to stressed monosyllables.
 
 The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
 

@@ -142,3 +142,13 @@ The original quantity classification of particular inflectional endings is not u
 The existing lexical source and attestation ledger is reused without claiming fresh dictionary-image verification or new proof of each grammatical use of ræste. The selected genitive is explicit and its generic ending history is independently supported; its successful output alone does not certify every aspect of the mature lexical entry.
 
 No lexical exceptions, grammatical conditioning, unsupported analogical repair or new vowel law is introduced. SC043, the separate Barrack programme, HVD controls, index architecture, protected histories, archives and source-plan rescue are not begun, relocated or rewritten.
+
+
+## Final conditioning/order verification, 12 November 2026
+
+The original adjudication and measurements above remain historical records.
+[The bounded final verification](sc042-final-verification.md) maps all seven
+requested vowel histories, tests eighteen distributed controls and two
+additional current ordering positions, and identifies one quantity-recognition
+gap in neighboring SC020. Its local trimoric-nucleus correction preserves
+all394 accepted outputs; SC042's own definition and position remain unchanged.

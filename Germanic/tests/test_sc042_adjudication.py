@@ -99,3 +99,89 @@ def test_displacements_require_exposure_and_final_support_not_stressed_fronting(
     assert late["moved_before"] == ["*r*æ*s*t*ō"]
     assert late["moved_after"] == late["restoration_before"] == ["*r*æ*s*t*ā"]
     assert late["restoration_after"] == ["*r*a*s*t*ā"]
+
+
+VERIFICATION = AUDIT.parent / "sc042-verification-experiments"
+
+
+def verification():
+    return json.loads((VERIFICATION / "evidence.json").read_text())
+
+
+def test_verification_preserves_genuine_failure_and_authenticates_the_local_repair():
+    manifest = json.loads((VERIFICATION / "manifest.json").read_text())
+    assert hashlib.sha256((VERIFICATION / "experiments.zip").read_bytes()).hexdigest() == manifest["archive_sha256"]
+    assert hashlib.sha256((VERIFICATION / "evidence.json").read_bytes()).hexdigest() == manifest["evidence_sha256"]
+    with zipfile.ZipFile(VERIFICATION / "experiments.zip") as archive:
+        assert set(archive.namelist()) == set(manifest["members"])
+        for name, digest in manifest["members"].items():
+            assert hashlib.sha256(archive.read(name)).hexdigest() == digest
+        receipts = {
+            "initial": json.loads(archive.read("execution/initial.receipt.json")),
+            "followup": json.loads(archive.read("execution/followup.receipt.json")),
+        }
+        assert not receipts["initial"]["ok"] and receipts["initial"]["returncode"] == 1
+        assert receipts["followup"]["ok"] and receipts["followup"]["returncode"] == 0
+        for label, receipt in receipts.items():
+            assert not receipt["source_changed"]
+            for stream in ("stdout", "stderr"):
+                assert hashlib.sha256(archive.read(f"execution/{label}.{stream}.log")).hexdigest() == receipt[f"{stream}_sha256"]
+        recipes = json.loads(archive.read("followup/snapshot/recipes.json"))
+        repair = next(r for r in recipes["recipes"] if r["id"] == "trimoric-z")
+        prototype = parse_defines(repair["definitions"])["AF20"].body
+        original = parse_defines(archive.read("initial/snapshot/current_fst.txt").decode())
+    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    normalize = lambda body: " ".join(body.split())
+    expected = original["EAFFinalZDeletion"].body.replace(
+        "EnglishStarVocalic ?* _ .#.", "[EnglishStarVocalic | {*ô}] ?* _ .#.")
+    assert normalize(current["EAFFinalZDeletion"].body) == normalize(expected)
+    assert normalize(prototype) == "[ " + normalize(expected) + " ]"
+    assert current["PWGmcSurvivingBimoricOUnrounding"].body == original["PWGmcSurvivingBimoricOUnrounding"].body
+
+
+def test_trimoric_positive_and_bimoric_nasal_protected_negatives_are_independent():
+    result = verification()
+    initial = {c["id"]: c for c in result["initial"]["controls"]}
+    repaired = {c["id"]: c for c in result["followup"]["variants"]["trimoric-z"]["controls"]}
+    assert set(initial) == set(repaired)
+    assert [name for name, c in initial.items() if not c["passed"]] == ["z-protected-trimoric"]
+    assert initial["z-protected-trimoric"]["outputs"] == ["*r*á*t*a*z"]
+    assert all(c["passed"] and c["outputs"] == [c["expected"]] for c in repaired.values())
+    for name, expected in {
+        "z-protected-trimoric": "*r*á*t*a",
+        "light-surviving-final": "*r*á*t*ā",
+        "heavy-surviving-final": "*r*á*s*t*ā",
+        "inherited-oral-final": "*r*á*t*u",
+        "bimoric-before-r": "*w*á*t*a*r",
+        "trimoric-before-r-negative": "*r*á*t*ô*r",
+        "nonfinal-r-negative": "*r*á*t*ō*r*u",
+        "already-nasal-final": "*r*á*t*e",
+        "trimoric-final": "*n*á*m*a",
+        "stressed-monosyllable": "*d*ū",
+        "other-final-consonant": "*r*á*t*ō*s",
+        "medial-long-o": "*r*á*t*ō*d*u*n",
+    }.items():
+        assert repaired[name]["outputs"] == [expected]
+    assert result["diagnosis"]["parser"][0] == ["*g*é*b*ô*z"]
+    assert result["diagnosis"]["full_outputs"][0] == []
+    contrast = result["followup"]["variants"]["trimoric-z"]["source_positives"]
+    assert contrast["raw"] == ["gébôz", "gébōz", "námô"]
+    assert contrast["outputs"] == [["ġiefa"], ["ġiefe"], ["nama"]]
+
+
+def test_targeted_orderings_preserve_every_output_but_do_not_establish_a_hiatus_history():
+    result = verification()["followup"]
+    for variant in result["variants"].values():
+        assert variant["changed"] == variant["no_output"] == variant["multiple_output"] == 0
+        assert len(variant["rows"]) == result["accepted"]
+        for row in variant["rows"]:
+            assert row["outputs"] == row["baseline_outputs"] and len(row["outputs"]) == 1
+    for name in ("after-z", "after-hiatus"):
+        rest = next(r for r in result["variants"][name]["rows"] if r["concept"] == "rest")
+        assert rest["intermediates"]["moved_before"] == ["*r*á*s*t*ō"]
+        assert rest["intermediates"]["moved_after"] == ["*r*á*s*t*ā"]
+        assert rest["intermediates"]["final_after"] == ["*r*æ*s*t*ǣ"]
+    hiatus = result["hiatus_diagnostic"]
+    assert hiatus["early"]["outputs"] == ["*t*ā*w*ō"]
+    assert hiatus["post-hiatus"]["outputs"] == ["*t*ā*w*ǣ"]
+    assert all("not an attested" in row["status"] for row in hiatus.values())

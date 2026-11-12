@@ -1309,9 +1309,10 @@ define PGmcGmSimplification Ctx([
 #        friend *fríjōndz → *fríundz, whose final syllable was
 #        unstressed when this change applied (adjudication memo §5:
 #        friend/milk/month belong to SC020, per R/T 2014: 44 *fadurz).
+# Trimoric *ô counts as a nucleus here, not as bimoric *ō (R/T 2014: 59).
 define EAFFinalZDeletion Ctx([
     [{*z} -> 0 ||
-    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,
+    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ [EnglishStarVocalic | {*ô}] ?* _ .#.,
     .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]
 ]);
 define EAFFinalZLoss EAFFinalZDeletion;

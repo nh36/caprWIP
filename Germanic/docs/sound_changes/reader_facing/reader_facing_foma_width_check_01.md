@@ -132,7 +132,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ### 020-wgmc-final-z-deletion.md:15 — SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion}
 
-- `108` chars — `    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ EnglishStarVocalic ?* _ .#.,`
+- `117` chars — `    .#. ?* EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ [EnglishStarVocalic | {*ô}] ?* _ .#.,`
 - `134` chars — `    .#. [EnglishStarConsonant | EnglishPalatalConsonant]* EnglishStarVocalic+ [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.]`
 
 ### 042-surviving-bimoric-o-unrounding.md:15 — SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding}

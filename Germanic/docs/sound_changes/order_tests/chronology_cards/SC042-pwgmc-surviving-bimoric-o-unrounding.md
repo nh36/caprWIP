@@ -64,3 +64,27 @@ oral-final fragment. Hogg2011 64/227-228 qualifies the quantity analysis.
 Neither rest alone nor the late serialization establishes a universal
 historical date. See [the full adjudication](../../audits/sc042-adjudication.md)
 and [authenticated evidence](../../audits/sc042-experiments/evidence.json).
+
+
+## Bounded current-interval verification, 12 November 2026
+
+The earlier measurements and the 11 November interpretation above are preserved.
+Additional variants immediately after SC020 and immediately after hiatus-w
+insertion each preserve all394 accepted outputs, singly, with386 matches and
+eight inherited mismatches. Original post-stressed-SC043 success and the
+before-SC020/after-SC108 failures remain separately authenticated.
+
+The corpus-supported interval is after SC020 and before SC108. A conditional
+structural hiatus probe can create SC042's consonantal guard only after
+w-insertion, so the conservative symbolically tested region is post-hiatus
+and pre-SC108. That probe is not an attested or independently reconstructed
+lexeme and licenses no new historical edge. Intervening-operation analysis
+and measured representatives, not an exhaustive fresh sweep, support these
+statements. The present position satisfies both regions; no alternative is
+independently demonstrated to be historically better.
+
+The [verification memorandum](../../audits/sc042-final-verification.md) records
+the mappings, boundary analysis and bounded SC020 trimoric-nucleus correction;
+[new evidence](../../audits/sc042-verification-experiments/evidence.json) retains
+the genuine initial negative as well as the successful prototype. SC042 itself
+is neither broadened nor reordered.

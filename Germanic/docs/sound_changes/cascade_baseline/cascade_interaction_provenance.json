@@ -1,6 +1,6 @@
 {
   "definition_networks": 81,
-  "definitions_sha256": "bd8e31cd8d6b1c78dba42ce787b1dbcb2041e85aa2ac325773812005105104a9",
+  "definitions_sha256": "c7a2ee2877dfb6f97d38fbf8a3544878da41d39b968feb6d48f2779dbc7c446a",
   "earlier_stages": "nwgmc,pnwgmc",
   "generator": "Germanic/tools/artifact_graph.py",
   "harness_sha256": "7d9edfc0459d883e3243b159c2d58f52f59a9cc8ef0fb2eab8de7dcee34be98f",
@@ -8,5 +8,5 @@
   "note": "CURRENT-STATE analysis: hash covers harness source, stage-derived pair list, and the executable_facts definition closure; pure cascade reorders do not invalidate it, rule edits do.",
   "pair_count": 112,
   "pairs_sha256": "74d16c0efb54815ae9e74183e9ae21bf89bb651c31ea59706bc38e0b01781619",
-  "provenance_sha256": "018dbd990b1576f4a599c9d849589504950be20862667fef91282dbd08a281e5"
+  "provenance_sha256": "7d91fb035944a9b354e1464fe1655f064eaaa65cfadd90eea0c68c0fd5b062b5"
 }

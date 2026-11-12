@@ -53,15 +53,15 @@
 
 ## Reader-facing example rows by role
 
-- `diagnostic_comparator`: 268
+- `diagnostic_comparator`: 271
 - `example_input`: 73
 - `expected_output`: 69
 - `model_stage`: 119
-- `notation_or_segment`: 937
+- `notation_or_segment`: 938
 - `yielded_output`: 63
 
-- Reader-facing include_in_example_index=yes: 592
-- Reader-facing include_in_example_index=no: 937
+- Reader-facing include_in_example_index=yes: 595
+- Reader-facing include_in_example_index=no: 938
 
 ## Print-unique entry audit
 
@@ -155,7 +155,7 @@
 
 ### Included rows by role
 
-- `diagnostic_comparator`: 268
+- `diagnostic_comparator`: 271
 - `example_input`: 73
 - `expected_output`: 69
 - `model_stage`: 119
@@ -163,12 +163,12 @@
 
 ### Included rows by inferred language
 
-- `unknown`: 137
+- `unknown`: 139
 - `german`: 1
 - `goth`: 18
 - `lat`: 1
 - `nsgmc`: 4
-- `oe`: 109
+- `oe`: 110
 - `ofris`: 4
 - `ohg`: 9
 - `on`: 14
@@ -181,12 +181,12 @@
 
 ### Included rows by main-index overlap
 
-- `no`: 414
+- `no`: 417
 - `yes`: 178
 
-- Included whole-form rows with asterisks: 421
+- Included whole-form rows with asterisks: 424
 - Included whole-form rows without asterisks: 171
-- Included rows inferred_language=oe with leading asterisk: 21
+- Included rows inferred_language=oe with leading asterisk: 22
 - Included rows inferred_language=pgmc but OE-output-like form shape: 32
 
 ## Included main-index rows (sample)
