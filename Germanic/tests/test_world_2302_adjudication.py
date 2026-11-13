@@ -19,6 +19,7 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import adjudicate
 from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
+from test_lexical_editorial_publication import assert_nightmare_index_delta
 
 
 def receipt():
@@ -691,6 +692,10 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
                and row["source_scope"] == "override" and not row["variety"]
                for row in little)
     added = [row for row in added if row not in little]
+    nightmare = [row for row in added if row["source_ref"].startswith("nightmare — OE ")
+                 or "2141-nightmare-mare.model.md" in row["source_ref"]]
+    assert_nightmare_index_delta(nightmare)
+    added = [row for row in added if row not in nightmare]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

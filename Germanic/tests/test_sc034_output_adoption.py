@@ -90,9 +90,10 @@ class StrawOutputAdoptionTests(unittest.TestCase):
     def test_legacy_migration_rejects_noop_and_false_match_flags(self):
         with (BASE / "approved_input_migrations.tsv").open() as handle:
             migrations = [row for row in csv.DictReader(handle, delimiter="\t")
-                          if row["row_id"] not in {"2162", "2283", "2095", "2313", "2314", "2302"}]
+                          if row["row_id"] in {"2040", "2085", "2224"}]
         with (BASE / "cascade_baseline_outputs_legacy380.tsv").open() as handle:
             legacy = list(csv.DictReader(handle, delimiter="\t"))
+        self.assertEqual(len(baseline.legacy_subset(self.current["records"], legacy, migrations)), 380)
         for kind in ("no_op", "wrong_old", "wrong_new", "false_match"):
             approved = copy.deepcopy(migrations)
             records = copy.deepcopy(self.current["records"])
@@ -123,9 +124,8 @@ class StrawOutputAdoptionTests(unittest.TestCase):
             with (BASE / "approved_input_migrations.tsv").open() as handle:
                 reader = csv.DictReader(handle, delimiter="\t")
                 fields = reader.fieldnames
-                migrations = [row for row in reader if row["row_id"] not in {
-                    "2162", "2283", "2095", "2313", "2314", "2302",
-                    "2011", "2053", "2201", "2282", "2208", "2335", "2006"}]
+                migrations = [row for row in reader
+                              if row["row_id"] in {"2040", "2085", "2224"}]
             with (target / "approved_input_migrations.tsv").open("w") as handle:
                 writer = csv.DictWriter(handle, fields, delimiter="\t")
                 writer.writeheader()
