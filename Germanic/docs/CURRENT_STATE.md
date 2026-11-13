@@ -66,6 +66,10 @@ correction; it does not authorize proceeding to SC044. The separate Barrack cros
 retaining WG117, 300b and440b as prospective omissions or discrepancies.
 Neither that programme nor the qualified lexical residues starts automatically.
 
+The separate [clay/fringe glossary-stage controls](sound_changes/audits/clay-fringe-stage-witnesses.md)
+clarify the reader's h-loss, hiatus and merger evidence without admitting
+either witness to the lexical corpus or changing production rules.
+
 `registry/adjudication_programme.json` owns the administrative programme
 start. Scoped verdicts cannot skip earlier pending work, and technical
 support stages are excluded. Earlier pending cases and support stages

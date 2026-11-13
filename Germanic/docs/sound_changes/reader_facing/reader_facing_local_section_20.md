@@ -6441,11 +6441,20 @@ Hogg places it marginally after the earlier merger
 @HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239);
 @RingeTaylor2014, pp. 334--335].
 
-Its earlier and later relations are both concrete. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* 'father'. If the rule is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. These failures show that [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening) must come before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), and that [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) must come before [SC085 OEHLoss](#rule-OEHLoss).
+The displacement tests expose dependencies of the current cascade. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* 'father'. They therefore require shortening before merger in this implementation. If merger is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. That narrower result establishes the current representation's merger-before-loss dependency, not an independently demonstrated historical order.
 
-The lexical evidence fixes the local order after
-[SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening)
-and places the merger before the later h-loss and contraction.
+Clay makes the distinction important. Corpus 207 *thoae* 'clay', beside
+Épinal 3 *thohae* 'clay', is read as hiatus *thōæ* 'clay' beside
+h-bearing *thōhæ* 'clay' [@Sweet1885, pp. 36, 41;
+@RingeTaylor2014, p. 314, §6.9.3].
+If written \emph{ae} preserves distinct unstressed \emph{æ}, this form
+instead places loss before merger. If the spelling does not distinguish
+\emph{æ} from \emph{e} here, it cannot decide their relative order.
+The spelling question remains open: the current stage trial has
+\emph{e}, not \emph{æ}, in hiatus, and its successful contraction is
+not a philological argument for identifying the two.
+The parallel account under [SC085 OEHLoss](#rule-OEHLoss) keeps this
+conditional historical interpretation separate from the toe displacement.
 
 ## Medial weak front-vowel quality changes
 
@@ -6885,13 +6894,45 @@ Moving the rule before [SC082 OEIntervocalicJVocalization](#rule-OEIntervocalicJ
 ### Historical discussion
 
 When [SC085 OEHLoss](#rule-OEHLoss) removes intervocalic \emph{*h}, it creates
-hiatus. [SC086 OEContraction](#rule-OEContraction) immediately resolves the
-resulting vowel sequence.
+hiatus. [SC086 OEContraction](#rule-OEContraction) is the next operation in
+the executable cascade, but loss and contraction are distinguishable
+historical developments: the glossaries preserve forms still in hiatus.
 
 Ringe and Taylor describe this late sequence of \emph{h}-loss and contraction
 [@RingeTaylor2014, pp. 305--314, §§6.9.1--6.9.3]. Fulk places the contracted
 verbs in a broader Germanic context [@Fulk2018, p. 270, §12.21], and Luick
 describes the corresponding West Germanic contractions [@Luick1914, p. 165].
+
+For clay, Épinal 3 has *thohae* 'clay' under Latin argillus (-a), while
+Corpus 207 has *thoae* 'clay' under argilla [@Sweet1885, pp. 36, 41].
+Ringe and Taylor read these as *thōhæ* 'clay' and *thōæ* 'clay', followed
+by contracted *þō* 'clay' [@RingeTaylor2014, p. 314, §6.9.3].
+On that reading a front ending was already present with the fricative;
+loss then left the vowels in hiatus, before contraction.
+
+Fringe supplies the contrasting environment. Épinal 1066 and the aligned
+Erfurt parallel have *uulohum* 'fringe', whereas Corpus 2122 has *uuloum*
+'fringe', all under Latin villis [@Sweet1885, pp. 104, 107].
+The normalized dative plural *wlōhum* 'fringe' thus gives *wlōum* 'fringe':
+both flanking vowels are back, and both the vowel and consonant of the
+ending \emph{-um} survive loss. A front vowel was therefore unnecessary
+for intervocalic loss [@RingeTaylor2014, p. 314, §6.9.3].
+
+These related early Mercian glossary witnesses preserve different states
+of the forms. Their textual relationship permits comparison without
+assigning absolute dates to the changes from the dates of the surviving
+copies. Nor does written \emph{h} by itself settle the fricative's phonetic
+value: CAPR's assignment of [ç] before a following front vowel at
+palatalization is a model analysis, not a transcription of that letter.
+
+In the current stage trial for *þō* 'clay', the ending is still back when
+palatalization applies, so the velar fricative remains. Later ending
+changes supply \emph{e} while the fricative is still present; loss leaves
+\emph{ō + e}, and contraction produces the contracted form. This verifies
+the front-ending/fricative/hiatus sequence without equating the trial's
+\emph{e} with the glossary spelling \emph{ae}. The historical interpretation
+of that distinction is discussed with
+[SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
 
 ### SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss}
 
@@ -6901,12 +6942,12 @@ define OEHLoss [
 ];
 ```
 
-The rule removes intervocalic \emph{*h}, creating the hiatus that later contraction must resolve.
+The rule removes intervocalic \emph{*h}; contraction can subsequently
+resolve the hiatus, but the hiatus is itself attested.
 
-If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. If it is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} yields [*tāe*]{.pred} rather than expected *tā*. These outputs require [SC085 OEHLoss](#rule-OEHLoss) to follow [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger) and precede [SC086 OEContraction](#rule-OEContraction).
+If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. This establishes a dependency of the current merger and contraction implementations, not independent historical proof that merger preceded loss. If Corpus *thoae* 'clay' preserves distinct unstressed \emph{æ}, the clay witness instead puts loss before merger in that form. Whether this spelling distinguishes \emph{æ} from \emph{e} remains open; a successful contracted endpoint cannot decide it.
 
-The earlier boundary rests on one witness; the four later witnesses establish
-the immediate relation to contraction.
+If loss is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} ‘toe’ yields [*tāe*]{.pred} rather than expected *tā* ‘toe’. These outputs require loss before contraction in the current cascade. The four displacement witnesses agree with the glossary evidence for that sequence; neither their executable adjacency nor the copy dates establish an immediate historical succession.
 
 ## Contraction after h-loss
 
@@ -6948,6 +6989,27 @@ define OEContraction [
 
 The rule contracts the vowel sequences created after \emph{h}-loss, producing
 *flēon* ‘flee’, *slēan* ‘slay’, and *tēon* ‘draw’.
+
+Clay exposes the separate states. Épinal 3 *thohae* 'clay' and Corpus 207
+*thoae* 'clay' are the diplomatic spellings [@Sweet1885, pp. 36, 41].
+Ringe and Taylor's normalized *thōhæ* 'clay' passes through attested
+hiatus *thōæ* 'clay' before contracted *þō* 'clay'
+[@RingeTaylor2014, p. 314, §6.9.3].
+The front ending is present before loss; contraction follows the hiatus
+state, rather than being inseparable from the disappearance of the
+fricative. In the current executable trial, the hiatus vowels are
+\emph{ō + e}, and this rule contracts them to the long back vowel.
+This models the sequence, not a proof that written \emph{ae} equals
+unstressed \emph{e}; see
+[SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger).
+
+The dative plural *wlōum* 'fringe' is an attested hiatus comparison,
+discussed with its h-bearing counterpart under
+[SC085 OEHLoss](#rule-OEHLoss). Ringe and Taylor's contracted
+\emph{*wlōm} 'fringe' is reconstructed, not an attested endpoint in the
+cited texts [@RingeTaylor2014, p. 314, §6.9.3].
+The evidence to preserve here is the hiatus with both segments of
+\emph{-um} retained, not an additional contraction target.
 
 Moving contraction before [SC085 OEHLoss](#rule-OEHLoss) makes PGmc [fléuxaną]{.recon} ‘flee’ yield [*flēoan*]{.pred} rather than expected OE *flēon* 'flee', PGmc [sláxaną]{.recon} ‘slay’ yield [*sleaan*]{.pred} rather than expected *slēan* 'slay', PGmc [téxun]{.recon} ‘draw’ yield [*teoon*]{.pred} rather than expected *tēon* 'draw', and PGmc [táixōn]{.recon} ‘toe’ yield [*tāe*]{.pred} rather than expected *tā* 'toe'. The derivations require [SC086 OEContraction](#rule-OEContraction) to follow [SC085 OEHLoss](#rule-OEHLoss). Moving it later within the tested range before [SC087 OERMetathesis](#rule-OERMetathesis) creates no new failure.
 The more distant [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction)
