@@ -266,6 +266,15 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertTrue(confident)
         self.assertEqual(trace["outcome"], "mære")
         self.assertEqual(model["metadata"]["COUNTERPART"], "mære")
+        with (ROOT / "Germanic/data/germanic-aligned-final.tsv").open() as handle:
+            live = next(row for row in csv.DictReader(handle, delimiter="\t")
+                        if row["ID"] == "2141")
+        self.assertEqual((live["PROTOFORM"], live["COUNTERPART"]), ("*márōn", "mære"))
+        self.assertIn("derives selected mære from unchanged input *márōn", live["NOTE"])
+        self.assertNotIn("cascade still yields mare", live["NOTE"])
+        with (ROOT / "Germanic/data/oe_known_problems.tsv").open() as handle:
+            ledger = list(csv.DictReader(handle, delimiter="\t"))
+        self.assertNotIn("*márōn", {row["proto"] for row in ledger})
         for prose in (None, ROOT / "Germanic/docs/assembly/book_prose/regular_all_01"):
             with self.subTest(prose=str(prose)):
                 rendered = render_entry(

@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "e72f54ead8622db00650fca77bf4078b62e7a61a5eaf451d64a7c23f096eae96",
+  "evidence_sha256": "8d99f207e27f579404eec18d36d1e3be73a4a440e0b3bc5365a0968ab653cb12",
+  "members": {
+    "completion.json": "dfd2ca221bb7b37d8273a3e0d6a062fe466dc4a8c7e2e7b97399501fca0cb072",
+    "receipt.json": "93c4aadb81d0b1e6066ca7be7d57473f6871d68304b0932e4b783069006152ab",
+    "results/compile.json": "92aee5ea7d70b0a78866adbb2bbd85c021ee350f53591cbe3a7a2b4c9415b89e",
+    "results/isolated-compile-41969fba59e643ab9bfbbe5ca5ca3b4c.receipt.json": "5ed87ea451d79505d875b29a384dd7f7cf4f217606a729ab52d1725d1d5d18e0",
+    "results/isolated-compile-41969fba59e643ab9bfbbe5ca5ca3b4c.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/isolated-compile-41969fba59e643ab9bfbbe5ca5ca3b4c.stdout.log": "c7b11b94ef949d9a299c3c5655322aa7704ea1d346c48ccb5012e93831618645",
+    "results/observed.json": "de9b9b00c70e27be3a8c2fca823b8bfd6c614dd2de779b470e16149701636268",
+    "results/toe-boundary-4b232d22-assay-9c007665a0164e889fd6332b1b0c3756.receipt.json": "1cfef4eb66c897367067dd8bb0b1a2463986cc8b746fbb124355e3aaaec65978",
+    "results/toe-boundary-4b232d22-assay-9c007665a0164e889fd6332b1b0c3756.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/toe-boundary-4b232d22-assay-9c007665a0164e889fd6332b1b0c3756.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "snapshot/baseline.tsv": "88804876257b6100643e6d63f1e3e145666ffb2db0b904f4561ea7b33c0735a2",
+    "snapshot/compiler.py": "a379a3e8edfab3b6b66f8e88d2a7c78c86d9c610b5d936d172d0aac38dd7705f",
+    "snapshot/contexts.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "snapshot/corpus.tsv": "27101099ca4b5b7b52d97061134b82c43114965f47cba2c571ee637c1cb33153",
+    "snapshot/driver.py": "d94f99af57889d64075de1114d338c40e3f32ba6bc408bb947a0fd3ad4ebb9af",
+    "snapshot/payload.json": "d256ee890fa4d003ef992ff86e45cde71e7f1be6b3fb310d8397242bbface7af",
+    "snapshot/pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+    "snapshot/recipe.json": "cde65063f14305069148458b58d86b90e88757c1ea3139f02ff7b479701b0518",
+    "snapshot/source.txt": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539"
+  },
+  "limits": "Each displacement assays toe only; no new displaced-corpus census or safe-window search. All 394 ordinary inputs were assayed in the unperturbed identity control. Both full composition and component-by-component execution agree. No original historical Foma replay or new glossary collation is claimed."
+}

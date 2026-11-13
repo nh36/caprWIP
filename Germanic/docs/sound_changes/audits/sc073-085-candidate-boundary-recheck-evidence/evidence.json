@@ -1,0 +1,221 @@
+{
+  "tested_head": "4b232d22ad3d55ecf0eb2111b736dcf4349a4bde",
+  "fst_sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539",
+  "corpus_sha256": "27101099ca4b5b7b52d97061134b82c43114965f47cba2c571ee637c1cb33153",
+  "snapshot_source_identity": {
+    "head_commit": "4b232d22ad3d55ecf0eb2111b736dcf4349a4bde",
+    "worktree_changes": {},
+    "identity_sha256": "3f76f997780a6050afc3c1dd6000cc7de3658a84e8bc37b74df67b5a257d3d9f",
+    "recorded_at": "2026-11-13T20:58:24Z"
+  },
+  "identity_corpus": {
+    "accepted": 394,
+    "matched": 385,
+    "output_delta_against_reviewed_candidate": []
+  },
+  "nightmare_isolated_full_input_output": [
+    "mære"
+  ],
+  "toe_input": {
+    "row_id": "2259",
+    "concept": "toe",
+    "proto": "*táixōn",
+    "proto_norm": "táixōn",
+    "fst_input": "táixōn",
+    "word_stress": "stressed",
+    "phonological_finality": "final",
+    "counterpart": "tā",
+    "id": "2259",
+    "reconstruction": "*táixōn",
+    "input_context": {
+      "word_stress": "stressed",
+      "phonological_finality": "final"
+    }
+  },
+  "variants": {
+    "identity": {
+      "checkpoints": [
+        {
+          "stage": "OEVelarFricativePalatalization",
+          "before": [
+            "*t*ā*x*ǣ"
+          ],
+          "after": [
+            "*t*ā*ç*ǣ"
+          ]
+        },
+        {
+          "stage": "OEUnstressedLongVowelShortening",
+          "before": [
+            "*t*ā*ç*ǣ"
+          ],
+          "after": [
+            "*t*ā*ç*æ"
+          ]
+        },
+        {
+          "stage": "OEUnstressedAEMerger",
+          "before": [
+            "*t*ā*ç*æ"
+          ],
+          "after": [
+            "*t*ā*ç*e"
+          ]
+        },
+        {
+          "stage": "OEHLoss",
+          "before": [
+            "*t*ā*ç*e"
+          ],
+          "after": [
+            "*t*ā*e"
+          ]
+        },
+        {
+          "stage": "OEContraction",
+          "before": [
+            "*t*ā*e"
+          ],
+          "after": [
+            "*t*ā"
+          ]
+        },
+        {
+          "stage": "OldEnglishSurface",
+          "before": [
+            "tā"
+          ],
+          "after": [
+            "tā"
+          ]
+        }
+      ],
+      "final": [
+        "tā"
+      ]
+    },
+    "loss_before_merger": {
+      "checkpoints": [
+        {
+          "stage": "OEVelarFricativePalatalization",
+          "before": [
+            "*t*ā*x*ǣ"
+          ],
+          "after": [
+            "*t*ā*ç*ǣ"
+          ]
+        },
+        {
+          "stage": "OEUnstressedLongVowelShortening",
+          "before": [
+            "*t*ā*ç*ǣ"
+          ],
+          "after": [
+            "*t*ā*ç*æ"
+          ]
+        },
+        {
+          "stage": "OEHLoss",
+          "before": [
+            "*t*ā*ç*æ"
+          ],
+          "after": [
+            "*t*ā*æ"
+          ]
+        },
+        {
+          "stage": "OEUnstressedAEMerger",
+          "before": [
+            "*t*ā*æ"
+          ],
+          "after": [
+            "*t*ā*æ"
+          ]
+        },
+        {
+          "stage": "OEContraction",
+          "before": [
+            "*t*ā*æ"
+          ],
+          "after": [
+            "*t*ā*æ"
+          ]
+        },
+        {
+          "stage": "OldEnglishSurface",
+          "before": [
+            "tāæ"
+          ],
+          "after": [
+            "tāæ"
+          ]
+        }
+      ],
+      "final": [
+        "tāæ"
+      ]
+    },
+    "merger_after_loss": {
+      "checkpoints": [
+        {
+          "stage": "OEVelarFricativePalatalization",
+          "before": [
+            "*t*ā*x*ǣ"
+          ],
+          "after": [
+            "*t*ā*ç*ǣ"
+          ]
+        },
+        {
+          "stage": "OEUnstressedLongVowelShortening",
+          "before": [
+            "*t*ā*ç*ǣ"
+          ],
+          "after": [
+            "*t*ā*ç*æ"
+          ]
+        },
+        {
+          "stage": "OEHLoss",
+          "before": [
+            "*t*ā*ç*æ"
+          ],
+          "after": [
+            "*t*ā*æ"
+          ]
+        },
+        {
+          "stage": "OEUnstressedAEMerger",
+          "before": [
+            "*t*ā*æ"
+          ],
+          "after": [
+            "*t*ā*æ"
+          ]
+        },
+        {
+          "stage": "OEContraction",
+          "before": [
+            "*t*ā*æ"
+          ],
+          "after": [
+            "*t*ā*æ"
+          ]
+        },
+        {
+          "stage": "OldEnglishSurface",
+          "before": [
+            "tāæ"
+          ],
+          "after": [
+            "tāæ"
+          ]
+        }
+      ],
+      "final": [
+        "tāæ"
+      ]
+    }
+  },
+  "limits": "Each displacement assays toe only; no new displaced-corpus census or safe-window search. All 394 ordinary inputs were assayed in the unperturbed identity control. Both full composition and component-by-component execution agree. No original historical Foma replay or new glossary collation is claimed."
+}

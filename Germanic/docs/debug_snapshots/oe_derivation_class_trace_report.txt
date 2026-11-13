@@ -23236,7 +23236,7 @@ OldEnglishSurface [no-change]: netle
 PROTO: *márōn
 EXPECTED: mære
 OUTPUTS: mære
-NOTE: Selects attested weak feminine nominative singular mære 'nightmare', normalized from Corpus Glossary maere under incuba (Lindsay 1921 p.96 I225). The English concept indexes the OE simplex. Hall 2007 §2 and table1 pp.313-314 distinguishes weak mære from strong mær and explains attested mare (Bald's Leechbook) as levelling from obliques such as maran. Neither noun is the adjective mǣre 'famous'. Ringe & Taylor 2014 p.192 includes mære and reconstructs a front-root nominative. Input *márōn and production rules are unchanged: the cascade still yields mare, a documented mismatch against selected mære; research Model B's mære is unadopted.
+NOTE: Selects attested weak feminine nominative singular mære 'nightmare', normalized from Corpus Glossary maere under incuba (Lindsay 1921 p.96 I225). The English concept indexes the OE simplex. Hall 2007 §2 and table1 pp.313-314 distinguishes weak mære from strong mær and explains attested mare (Bald's Leechbook) as levelling from obliques such as maran. Neither noun is the adjective mǣre 'famous'. Ringe & Taylor 2014 p.192 includes mære and reconstructs a front-root nominative. The reviewed final-nasal candidate (4b232d22) derives selected mære from unchanged input *márōn: early ending merger and subsequent fronting remove the restoration trigger. The earlier mare mismatch is preserved as a dated observation in nightmare-2141-target-selection.md; mare and maran remain attested paradigm comparisons, not replacement targets.
 
 
 ## Section 1: Proto-Germanic consonant inheritance

@@ -584,7 +584,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC073-oe-unstressed-ae-merger.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC072 later and is broad; the SC085 toe displacement is only a computational boundary of the current rules, not independently demonstrated historical chronology."
+      "short_summary": "SC072 earlier evidence is retained, not remeasured. At reviewed candidate 4b232d22, separately moving SC073 after SC085 and SC085 before SC073 each gives toe tāæ versus identity tā: technical_computational / boundary_observation only."
     },
     {
       "change_id": "SC074",
@@ -684,7 +684,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC085-oe-h-loss.md",
       "card_type": "reciprocal_or_near_reciprocal",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "The SC073 toe displacement is only a current-rule computational boundary; the separate reciprocal SC086 relation retains independently demonstrated loss-before-contraction evidence."
+      "short_summary": "Reviewed candidate 4b232d22 independently reproduces toe tāæ in each SC073/SC085 displacement versus identity tā, a computational boundary only; separate SC085-before-SC086 historical evidence is unchanged."
     },
     {
       "change_id": "SC086",
@@ -2384,11 +2384,11 @@
       "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "toe",
-      "representative_forms": "PGmc `*táixōn` yields expected OE `tā`, but the later-shifted variant yields `tāæ`",
+      "representative_forms": "At reviewed candidate 4b232d22, identity *tāçæ -> *tāçe -> *tāe -> *tā -> tā; moving SC073 immediately after SC085 gives *tāçæ -> *tāæ, unchanged through merger/contraction, final tāæ.",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Measured toe displacement retained as a computational boundary of the current merger/loss/contraction rules, not independently demonstrated historical chronology. If Corpus thoae preserves distinct unstressed æ, clay instead supports loss before merger in that form; its spelling remains unresolved. See clay-fringe-chronology-followup.md."
+      "notes": "Fresh toe-only full-composition and component replay at 4b232d22ad3d55ecf0eb2111b736dcf4349a4bde; no new all-corpus displacement count or safe window. Earlier SC073-later tāæ published at 25ca025f (source SHA256 11ca1917c5f257b37dddc005709501f64f128bd1f6f3946844aac4dcb2766173) remains historical. This is a computational boundary, not historical chronology. Corpus thoae conditionally supports loss before merger if ae distinguishes unstressed æ/e. See sc073-085-candidate-boundary-recheck.md."
     },
     {
       "source_change_id": "SC074",
@@ -2650,11 +2650,11 @@
       "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "toe",
-      "representative_forms": "PGmc `*táixōn` yields expected OE `tā`, but the earlier-shifted variant yields `tāæ`",
+      "representative_forms": "At reviewed candidate 4b232d22, identity *tāçæ -> *tāçe -> *tāe -> *tā -> tā; moving SC085 immediately before SC073 gives *tāçæ -> *tāæ, unchanged through merger/contraction, final tāæ.",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Measured toe displacement retained as the reciprocal computational boundary, not a historical merger-before-loss constraint. Corpus thoae has the conditional interpretation recorded with SC073; the separately supported SC085-before-SC086 relation is unchanged. See clay-fringe-chronology-followup.md."
+      "notes": "Separately measured toe-only full-composition and component replay at 4b232d22ad3d55ecf0eb2111b736dcf4349a4bde, not an inferred reciprocal result. Earlier SC085-earlier tāæ published at 196b8f6b (source SHA256 11ca1917c5f257b37dddc005709501f64f128bd1f6f3946844aac4dcb2766173) remains historical. No historical merger-before-loss constraint is adopted. Corpus thoae remains conditional; both separately supported SC085/SC086 records are unchanged. See sc073-085-candidate-boundary-recheck.md."
     },
     {
       "source_change_id": "SC085",

@@ -9301,18 +9301,29 @@ OEPrefixIReduction}; Hogg places it marginally after the earlier merger
 reprint, pp.~237--239); \citeproc{ref-RingeTaylor2014}{Ringe and Taylor
 2014, 334--35}).
 
-The displacement tests expose dependencies of the current cascade. If
+The earlier displacement tests expose implementation dependencies. If
 the rule is moved before
 \hyperref[rule-OEUnstressedLongVowelShortening]{SC072
 OEUnstressedLongVowelShortening}, PGmc \Recon{nḗdrōn} `adder' yields
 \Pred{nǣdræ} rather than expected OE \emph{nǣdre} `adder', and PGmc
 \Recon{fádēr} `father' yields \Pred{fædær} rather than expected
-\emph{fæder} `father'. They therefore require shortening before merger
-in this implementation. If merger is delayed until after
-\hyperref[rule-OEHLoss]{SC085 OEHLoss}, PGmc \Recon{táixōn} `toe' yields
-\Pred{tāæ} rather than expected OE \emph{tā} `toe'. That narrower result
-establishes the current representation's merger-before-loss dependency,
-not an independently demonstrated historical order.
+\emph{fæder} `father'. That experiment requires shortening before merger
+in its tested implementation; it is not newly remeasured here.
+
+The toe boundary has also been rechecked on the
+\href{https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde}{reviewed
+final-nasal candidate}. Its unperturbed derivation has a palatal
+fricative and unstressed \emph{æ}, then merger supplies \emph{e} before
+loss creates hiatus. Contraction yields OE \emph{tā} `toe'. Two
+separately executed displacements, moving \hyperref[rule-OEHLoss]{SC085
+OEHLoss} before merger and moving merger after loss, both instead leave
+\emph{ā + æ}: the merger's consonantal context is gone, and contraction
+does not resolve that sequence. Both yield \Pred{tāæ} rather than
+\emph{tā} `toe'. This reproduces the endpoint in the
+\href{https://github.com/nh36/caprWIP/commit/25ca025f5b065671092fc8c7a4107611588cdcf9}{earlier
+merger-displacement record}, but now with the candidate's actual
+intermediate forms. It remains a computational boundary observation, not
+independently demonstrated historical merger-before-loss chronology.
 
 Clay makes the distinction important. Corpus 207 \emph{thoae} `clay',
 beside Épinal 3 \emph{thohae} `clay', is read as hiatus \emph{thōæ}
@@ -9977,10 +9988,20 @@ Thus the prosodic guard has independent support; it is not a lexical
 exception introduced to protect matching outputs. Contraction can
 subsequently resolve the hiatus, but the hiatus is itself attested.
 
-If the rule is moved before \hyperref[rule-OEUnstressedAEMerger]{SC073
-OEUnstressedAEMerger}, PGmc \Recon{táixōn} `toe' yields \Pred{tāæ}
-rather than expected OE \emph{tā} `toe'. This establishes a dependency
-of the current merger and contraction implementations, not independent
+The
+\href{https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde}{reviewed
+final-nasal candidate} reproduces the toe boundary in two separately
+executed trials. Moving loss before
+\hyperref[rule-OEUnstressedAEMerger]{SC073 OEUnstressedAEMerger}, or
+moving merger after loss, removes the palatal fricative while the ending
+is still \emph{æ}. The resulting \emph{ā + æ} neither meets the merger's
+consonantal context nor contracts, yielding \Pred{tāæ} rather than OE
+\emph{tā} `toe'. Unperturbed, merger first supplies \emph{e}; loss
+leaves \emph{ā + e}, and contraction gives \emph{tā} `toe'. The
+\href{https://github.com/nh36/caprWIP/commit/196b8f6b73d825d86830bb8612834f50f865b9e4}{earlier
+loss-displacement record} has the same final failure, but is a distinct,
+dated measurement, not the source of these candidate intermediates. The
+result remains a computational boundary observation, not independent
 historical proof that merger preceded loss. If Corpus \emph{thoae}
 `clay' preserves distinct unstressed \emph{æ}, the clay witness instead
 puts loss before merger in that form. Whether this spelling

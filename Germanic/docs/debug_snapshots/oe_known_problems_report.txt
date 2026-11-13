@@ -8,7 +8,7 @@ Total mismatches:         9
   open                    0
   parked                  0
   wontfix                 5
-Stale ledger entries:     1
+Stale ledger entries:     0
 
 Tractable = candidate for the mismatch-loop methodology.
 Parked    = investigated, recorded as notable finding, no fix.
@@ -84,11 +84,11 @@ OPEN  (0)
   (none)
 
 ========================================================================
-STALE LEDGER ENTRIES  (1)
+STALE LEDGER ENTRIES  (0)
 ========================================================================
 Ledger protos that no longer appear in the mismatch report.
 These may indicate fixed mismatches whose ledger entry should be
 removed, or proto-string drift between TSV and ledger.
 
-  *márōn              status=parked  category=final_nasal_vowel_restoration
+  (none)
 

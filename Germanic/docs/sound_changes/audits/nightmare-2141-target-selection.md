@@ -1,5 +1,17 @@
 # Nightmare2141: attested weak nominative selection
 
+## Status of this dated record
+
+The target-only mismatch and validation below describe the earlier cascade,
+not the reviewed final-nasal candidate. At `4b232d22ad3d55ecf0eb2111b736dcf4349a4bde`,
+the unchanged selected input *márōn yields selected mære. The candidate's
+early ending merger and subsequent fronting remove the restoration trigger.
+The [candidate boundary recheck](sc073-085-candidate-boundary-recheck.md)
+records the fresh normal-entry verification and removal of the resolved
+nightmare item from the live known-problems ledger. Mare and maran remain
+attested paradigm comparisons. No dated mismatch, archive, approval or
+earlier verification result below is rewritten.
+
 ## Identity
 
 13 November 2026; `review/2141-nightmare-maere`, base `9882f3e7`.

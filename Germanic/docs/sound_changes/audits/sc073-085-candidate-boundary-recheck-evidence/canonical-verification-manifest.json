@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "88382f49f114e8ca08cc060c8bea46f8112fb161dbb04790950f5743a5fc950e",
+  "members": {
+    "focused-receipt.json": "077a1b54324aa0150b0ed2ca4633458b25b1079421e619876a9560764a3c5e64",
+    "focused.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "focused.stdout.log": "f8522955ba99d2afae916439afe8c58834b2a9e86007bb74ac6caa0141096aff",
+    "fresh-394-comparison-receipt.json": "19c836565fa8e033c5be0012d41e9d9d0c5dfca30719253f0405036899c0372e",
+    "fresh-394-comparison.json": "2a10efc4c7a72761a2a33f99c9322346b6a45a612bf523167ad2f08d1bf23d92",
+    "fresh-394-comparison.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fresh-394-comparison.stdout.log": "4d3e8e798136c21b9cd0863fb51a1492e4448a96c710c338476716aa43e8bc84",
+    "normal-entry-evidence-receipt.json": "23d912876ef021f1f0cc93ab0bc60300bec888ef888e870164205f1c08403946",
+    "normal-entry-evidence.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "normal-entry-evidence.stdout.log": "ec0dd0832c0e7ec78b736820e0662f9c13a7fcfafe2fb971a0a19faf67cd4165",
+    "protected-baseline-check.json": "5fdf73be20b8f22dfc255249a07f656edddaf303f3689de6226a02a857353e4b",
+    "strict-publication-receipt.json": "588ce5d62c4ab354883fa85e6c564e1a998096f87d7a98df5c55231e4bf4645f",
+    "strict-publication.stderr.log": "40696ec862bd64aaba26311f44a49bf79b588fc0bdbadc2c31ac0b127ea063d5",
+    "strict-publication.stdout.log": "32cf87f184ba159fcb8f70466091b218b18a0b57fb8f91168e1cb0d771aeafe4"
+  },
+  "limits": "Canonical execution starts at 4b232d22 plus the explicit cleanup worktree. Expected generation changes are not a claim of source-stable execution or testing a later Git SHA."
+}
