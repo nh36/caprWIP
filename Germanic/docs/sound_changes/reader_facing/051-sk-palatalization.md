@@ -5,7 +5,7 @@
 The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the recognizable early
 cluster changes in the larger palatalization zone. Campbell distinguishes the
 cluster from plain velars when he remarks that \emph{*sk} is especially prone to
-palatalization and assibilation [@Campbell1959, p. 278, §440]. Barrack
+palatalization and assibilation [@Campbell1959, pp. 177--178, §440]. Barrack
 treats the cluster in the same zone as his 440 series: 440a summarizes the
 developments [@Barrack1975, pp. 112--113] and 440c states the
 palatalization of \emph{*sk} itself [@Barrack1975, p. 113], kept beside, but
@@ -46,6 +46,17 @@ define OESkPalatalization Ctx([
 ]);
 ```
 
-The non-fronted vowels of *flasce* ‘flask’ and *wascan* ‘wash’ fix the lower boundary of \emph{*sk} > \emph{*sc}. Before [SC046 OEARestoration](#rule-OEARestoration), the forms are fronted too soon, yielding *flæsce* ‘flask’ and *wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This places [SC051 OESkPalatalization](#rule-OESkPalatalization) after restoration.
+The displacement of cluster palatalization before
+[SC046 OEARestoration](#rule-OEARestoration) now changes *wascan* 'wash'
+to [wæsċan]{.pred}; wash remains the current lower-boundary witness.
+The old flask displacement belonged to an implementation that retained
+its final nasal vowel through restoration. After the earlier ending
+merger, the nominative already has a front root and gives
+\emph{*flæsċe} in either order. Attested *flasce* 'flask' has an
+independently sourced levelled root, after inflected *flascan* 'flask'
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+It must not be used as if its former executable agreement independently
+proved a regular back-root nominative history. The consonantal history
+of the paradigm remains distinct from that root-vowel levelling.
 
 Five witnesses establish the upper boundary collectively. The palatal cluster must already underlie *sċeaft* ‘shaft’, *sċēar* ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’ before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). The \emph{*sċea-* 'sea'}/\emph{*sċie-*} set therefore places cluster palatalization before the West Saxon vowel change. The cluster change occupies the same palatalization zone as [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) while remaining distinct from plain-velar palatalization and the later vowel changes.

@@ -6,9 +6,9 @@ Sweet1885 p.104, Epinal1066 and the aligned Erfurt parallel: uulohum
 (villis); p.107, Corpus2122: uuloum. Normalized wlōhum > wlōum is dat.pl.;
 RingeTaylor's *wlōm is reconstructed, not the attested test target.
 
-Written h does not identify [x] versus [ç]. The current clay observation has
-x before the late front ending e; research Model B instead supplies an early
-front ending and ç. The feature assertion below does not equate cascade e
+Written h does not identify [x] versus [ç]. The corrected candidate supplies
+an early front ending and ç; the corrected lexical base had x before the
+late front ending e. The feature assertion below does not equate cascade e
 with diplomatic ae or establish the historical chronology of the ae/e merger.
 """
 
@@ -203,7 +203,7 @@ def test_clay_has_a_front_ending_with_h_then_hiatus_then_contraction(observed):
 
 def test_ordinary_toe_uses_existing_cumulative_snapshots(observed):
     toe = observed["toe"]
-    assert toe["before_h_loss"] == ["*t*ā*x*e"]
+    assert toe["before_h_loss"] == ["*t*ā*ç*e"]
     assert toe["before_contraction"] == ["*t*ā*e"]
     assert toe["after_contraction"] == ["*t*ā"]
     assert toe["surface"] == ["tā"]

@@ -3,12 +3,12 @@ OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
 Total mismatches:         9
-  Tractable (no ledger):  0
+  Tractable (no ledger):  1
   exception               3
   open                    0
-  parked                  1
+  parked                  0
   wontfix                 5
-Stale ledger entries:     0
+Stale ledger entries:     1
 
 Tractable = candidate for the mismatch-loop methodology.
 Parked    = investigated, recorded as notable finding, no fix.
@@ -17,21 +17,18 @@ Exception = documented in literature/notes as genuine exception.
 Open      = currently being investigated (transient).
 
 ========================================================================
-TRACTABLE MISMATCHES  (0)
+TRACTABLE MISMATCHES  (1)
 ========================================================================
 These mismatches have no ledger entry and are candidates for the
 mismatch-loop workflow (research dossier → review → implement).
 
-  (none)
+--- other__palatal_marker_variant (1) ---
+  *fláskōn           -> flæsċe               (expected flasce)
 
 ========================================================================
-PARKED  (1)
+PARKED  (0)
 ========================================================================
---- final_nasal_vowel_restoration (1) ---
-  *márōn             -> mare                 (expected mære)
-    reason: Row2141 selects attested weak nominative mære (Corpus maere under incuba). Unchanged production yields mare because the retained nasal ending triggers restoration; mare is an attested levelled variant, not the selected comparator. Research Model B yields mære but is not adopted. Input and sound rules remain unchanged.
-    refs:   Lindsay1921 p.96 I225;Hall2007 §2 pp.301-302 and table1 pp.313-314;RingeTaylor2014 p.192;Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.source_ledger.md
-    added:  2026-11-13
+  (none)
 
 ========================================================================
 WONTFIX  (5)
@@ -87,11 +84,11 @@ OPEN  (0)
   (none)
 
 ========================================================================
-STALE LEDGER ENTRIES  (0)
+STALE LEDGER ENTRIES  (1)
 ========================================================================
 Ledger protos that no longer appear in the mismatch report.
 These may indicate fixed mismatches whose ledger entry should be
 removed, or proto-string drift between TSV and ledger.
 
-  (none)
+  *márōn              status=parked  category=final_nasal_vowel_restoration
 

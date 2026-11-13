@@ -1,4 +1,6 @@
 action	language	variety	form	display	sort_key	source_scope	source_ref	note
+ignore			*fláskōni				Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:97	Complete diagnostic dative hypothesis from the generic weak paradigm, not a separately verified lexical citation or an adopted corpus cell.
+ignore			*fláskōnų				Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:97	Complete diagnostic accusative hypothesis from the generic weak paradigm, not a separately verified lexical citation or an adopted corpus cell.
 ignore			history				Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:296	Ordinary English prose, not a historical lexical form.
 ignore			history				Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:308	Ordinary English prose, not a historical lexical form.
 ignore			*hlūtor				Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:268	Broad scanner captures Markdown emphasis as a reconstruction asterisk; the actual Old English form is indexed separately.

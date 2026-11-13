@@ -63,6 +63,7 @@ def legacy_subset(records: list[dict], legacy_rows: list[dict],
         by_key[key] = record
         by_id[record["row_id"]] = record
     approved = {}
+    chains = {}
     for migration in migrations:
         if set(migration) != {"row_id", "concept", "counterpart", "new_counterpart",
                               "old_proto", "new_proto", "old_outputs", "new_outputs",
@@ -70,14 +71,29 @@ def legacy_subset(records: list[dict], legacy_rows: list[dict],
             raise ValueError("invalid approved input migration")
         key = (normalize_proto(migration["old_proto"]),
                migration["counterpart"], migration["concept"])
-        if key in approved or any(m["row_id"] == migration["row_id"] for m in approved.values()):
-            raise ValueError("duplicate approved input migration")
         if migration["old_proto"] == migration["new_proto"] and (
             migration["counterpart"] == migration["new_counterpart"]
             and migration["old_outputs"] == migration["new_outputs"]
         ):
             raise ValueError("unchanged-input migration must change target or outputs")
-        approved[key] = migration
+        previous = chains.get(migration["row_id"])
+        if previous is None:
+            if key in approved:
+                raise ValueError("duplicate approved input migration")
+            approved[key] = dict(migration)
+            chains[migration["row_id"]] = (key, migration)
+        else:
+            first_key, last = previous
+            if any(last[before] != migration[after] for before, after in (
+                ("concept", "concept"), ("new_proto", "old_proto"),
+                ("new_counterpart", "counterpart"), ("new_outputs", "old_outputs"),
+            )):
+                raise ValueError("noncontiguous approved input migration")
+            # Keep the frozen starting identity and the exact terminal state.
+            approved[first_key].update(
+                (field, migration[field])
+                for field in ("new_proto", "new_counterpart", "new_outputs"))
+            chains[migration["row_id"]] = (first_key, migration)
     selected = []
     used = set()
     seen = set()

@@ -171,7 +171,7 @@ class RustInputAdoptionTests(unittest.TestCase):
         nightmare = next(row for row in live["records"] if row["row_id"] == "2141")
         self.assertEqual(
             (nightmare["proto"], nightmare["counterpart"], nightmare["outputs"], nightmare["match"]),
-            ("*márōn", "mære", "mare", "0"))
+            ("*márōn", "mære", "mære", "1"))
         report = known.render_report(known.baseline_mismatches(live["records"]), ledger)
         self.assertIn("Total mismatches:         9", report)
         self.assertEqual(

@@ -1419,18 +1419,18 @@ define PWGmcFinalBareALoss Ctx([
 # Their later ending histories explicitly carry long *ǣ before shortening.
 # Hogg (2011) §§3.32,6.27-28 qualifies the prehistoric quantity analysis.
 #
-# This is only the current oral-final fragment. Before-r histories and
-# nasal *ǭ have other treatments; at this point water/four already have a.
+# Final oral and nasal bimoric vowels merge here; stressed nasal roots and
+# trimoric vowels stay distinct. Before-r water/four already have a.
 # Z-loss exposes rest's *-ōz ending. SC042 then feeds SC108 final-vowel
 # support, not ordinary stressed SC043. Its late serialized position is
 # an implementation accommodation, not a new historical dating claim.
 #
 # The preceding-nucleus/consonant guard excludes monosyllabic shapes;
 # it is not an independent reconstruction of historical stress. Earlier
-# final-o raising and distinct nasal/trimoric symbols limit the surviving
+# final-o raising and distinct trimoric symbols limit the surviving
 # population. See sc042-adjudication.md and the preserved §17.10.23 audit.
 define PWGmcSurvivingBimoricOUnrounding Ctx([
-    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
+    [{*ō}|{*ǭ}] -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ]);
 
 # §17.13: OEFinalSchwaApocope removed — body was {*ă} -> 0 || _ .#.,
@@ -3449,8 +3449,8 @@ define OEGFricativePalatal [
 define OEVelarPalatalizationStops [
     OEVelarPalatalizationKFront
 ] .o. [
-    # Retained stop-proxy contexts; singleton fricatives have left this domain.
-    {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
+    # Following-vowel stop conditioning: Ringe-Taylor 2014 p.203.
+    {*g} -> {*ʤ} || _ [{*i}|{*í}|{*ì}|{*ī}],
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],,
@@ -3653,9 +3653,9 @@ define OEPostVelarWLoss Ctx([
     {*w} -> 0 || {*n} {*g} _
 ]);
 
-define OEHLoss [
-    {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
-];
+define OEHLoss FootCtx([
+    [{*x}|{*ç}] -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+]);
 
 define OEContraction [
     {*a} {*a} -> {*ā},

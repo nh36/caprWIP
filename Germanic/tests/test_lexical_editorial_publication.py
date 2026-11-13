@@ -191,7 +191,13 @@ class EditorialPublicationTests(unittest.TestCase):
                 before = dict(before, counterpart=selected[before["row_id"]])
             if before["row_id"] == "2141":
                 before = dict(before, counterpart="mære",
-                              trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED")
+                              trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS")
+            if before["row_id"] == "2016":
+                self.assertEqual(before["counterpart"], "flasce")
+                self.assertEqual(before["trace_match_basis"],
+                                 "lexical item + PROTOFORM + EXPECTED + OUTPUTS")
+                before = dict(before,
+                              trace_match_basis="lexical item + PROTOFORM + EXPECTED")
             if before["row_id"] == "2302":
                 before = dict(before, protoform="*wír-àldiz", protoform_variety="",
                               derivation_class="regular", class_bucket="regular",
@@ -230,7 +236,7 @@ class EditorialPublicationTests(unittest.TestCase):
                                "DERIVATION_CLASS": row.derivation_class}.items():
                 self.assertEqual(metadata[key], value, path.name)
 
-    def test_nightmare_both_presentations_preserve_the_output_gap(self):
+    def test_nightmare_both_presentations_derive_the_selected_nominative(self):
         with (ROOT / "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv").open() as handle:
             index = list(csv.DictReader(handle, delimiter="\t"))
         assert_nightmare_index_delta([
@@ -240,20 +246,55 @@ class EditorialPublicationTests(unittest.TestCase):
         model = parse_model_entry(path)
         trace, _, confident = match_trace_entry(model, parse_trace_entries(self.compact))
         self.assertTrue(confident)
-        self.assertEqual(trace["outcome"], "mare")
+        self.assertEqual(trace["outcome"], "mære")
         self.assertEqual(model["metadata"]["COUNTERPART"], "mære")
         for prose in (None, ROOT / "Germanic/docs/assembly/book_prose/regular_all_01"):
             with self.subTest(prose=str(prose)):
                 rendered = render_entry(
                     model, trace, entry_path=path, regular_book_prose_dir=prose)
-                self.assertIn("implementation mismatch", rendered)
-                self.assertIn("Old English form is _mære_", rendered)
-                self.assertIn("yields _mare_ in the current cascade", rendered)
-                self.assertNotIn("yields regular", rendered)
+                self.assertNotIn("implementation mismatch", rendered)
+                self.assertIn("_mære_ (regular)", rendered)
                 self.assertNotIn("Regular outcome:", rendered)
                 self.assertNotIn("[mare]{.recon", rendered)
                 self.assertIn("@Lindsay1921, 96, I225", rendered)
                 self.assertIn("@Hall2007", rendered)
+
+    def test_flask_shared_publication_discloses_the_unmodelled_selected_comparator(self):
+        path = REPORTS / "model_entries/2016-flask-flasce.model.md"
+        model = parse_model_entry(path)
+        trace, _, confident = match_trace_entry(model, parse_trace_entries(self.compact))
+        self.assertTrue(confident)
+        self.assertEqual(trace["outcome"], "flæsċe")
+        self.assertEqual(model["metadata"]["COUNTERPART"], "flasce")
+        for prose in (None, ROOT / "Germanic/docs/assembly/book_prose/regular_all_01"):
+            rendered = render_entry(model, trace, entry_path=path, regular_book_prose_dir=prose)
+            self.assertIn("Current cascade output: _flæsċe_", rendered)
+            self.assertNotIn("Regular outcome:", rendered)
+            self.assertIn("@Hecht1900", rendered)
+            self.assertIn("accusative singular", rendered)
+            self.assertIn("genitive plural", rendered)
+            self.assertIn("not evidence for a", rendered)
+
+    def test_final_nasal_candidate_index_changes_are_exactly_attributed(self):
+        path = ROOT / "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv"
+        with path.open() as handle:
+            rows = [row for row in csv.DictReader(handle, delimiter="\t")
+                    if row["note"].startswith("Final nasal candidate:")]
+        expected = {
+            ("add", "oe", "flascena", "comparison_form"),
+            ("remove", "oe", "flasce", "regular_output"),
+            ("remove", "pgmc", "*flaskō", "source_protoform"),
+            ("remove", "pgmc", "*fláskōn", "selected_input"),
+            ("remove", "pgmc", "flaskǭ", "source_protoform"),
+        }
+        fields = ("action", "language", "form", "form_role")
+        self.assertEqual(len(rows), len(expected))
+        self.assertEqual({tuple(row[field] for field in fields) for row in rows}, expected)
+        self.assertTrue(all(
+            row["source_scope"] == "explicit_tag" and not row["variety"]
+            and row["source_ref"] ==
+            "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
+            for row in rows))
 
     def test_source_and_live_identity_mismatches_fail_closed(self):
         rows = copy.deepcopy(self.rows)

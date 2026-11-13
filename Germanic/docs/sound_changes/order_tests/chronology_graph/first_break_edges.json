@@ -284,7 +284,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC042-pwgmc-surviving-bimoric-o-unrounding.md",
       "card_type": "one_sided_chronology",
       "has_reciprocal_boundary": "no",
-      "short_summary": "One live application; z-loss feeding and technical final-support dependency, not stressed SC043."
+      "short_summary": "Twenty-two final-bimoric applications; rest witnesses z exposure, final support remains technical, not ordinary stressed SC043."
     },
     {
       "change_id": "SC043",
@@ -1562,7 +1562,7 @@
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Current displacement before z-loss changes only rest to rasta: protected o becomes final too late. Ringe-Taylor58-60/299 supports the final-vowel/genitive account independently; source-conditional exposure chronology, not adjacency or a universal date from one word. See sc042-adjudication.md."
+      "notes": "Rest still demonstrates z exposure. The candidate displacement also crosses SC023 nasal exposure and changes flask/nightmare; those are not additional witnesses specifically for z-loss. Ringe-Taylor58-60/299 independently supports the source-conditional genitive account, not adjacency or a universal date. See sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC042",
@@ -1571,12 +1571,12 @@
       "direction_basis": "later_boundary",
       "evidence_basis": "technical",
       "witness_role": "feeding",
-      "representative_lexemes": "rest",
-      "representative_forms": "Current SC042-after-SC108 displacement: PGmc `*rástōz` yields `rasta` rather than expected OE `ræste`.",
+      "representative_lexemes": "rest; nightmare; flask",
+      "representative_forms": "Candidate SC042-after-SC108 displacement changes21 finals; rest becomes rasta, nightmare mara and flask flasca.",
       "strength": "tight_local",
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "RG09_SC042_SC108",
-      "notes": "SC042 supplies long a to final-vowel support; the later displacement misses final fronting, leaving a back-vowel restoration trigger. Moving SC042 past stressed SC043 but before SC108 preserves all394 outputs. Technical feeding, not a local date for stressed fronting; see sc042-adjudication.md."
+      "notes": "Final merger supplies long a to SC108; late application misses final fronting. Moving it after stressed SC043 but before SC108 preserves all394 outputs. Technical feeding, not independent historical dating of support or stressed fronting; see sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC108",
@@ -1585,12 +1585,12 @@
       "direction_basis": "earlier_boundary",
       "evidence_basis": "technical",
       "witness_role": "feeding",
-      "representative_lexemes": "rest",
-      "representative_forms": "Current SC042-after-SC108 displacement gives `rasta` rather than expected OE `ræste`; no new early-SC108 experiment is claimed.",
+      "representative_lexemes": "rest; nightmare; flask",
+      "representative_forms": "Same candidate SC042-after-SC108 displacement changes21 finals; no separate early-SC108 trial is claimed.",
       "strength": "tight_local",
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "RG09_SC042_SC108",
-      "notes": "Reverse-endpoint representation of the same SC042-before-SC108 technical feeding constraint, not another historical edge or independent reciprocal measurement. Original composite card remains archived; see sc042-adjudication.md."
+      "notes": "Reverse representation of the same technical constraint, not another historical edge or independent reciprocal measurement. Original composite and oral-only records remain archived; see sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC043",
@@ -1809,12 +1809,12 @@
       "direction_basis": "earlier_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
-      "representative_lexemes": "flask; wash",
-      "representative_forms": "PGmc `*fláskōn` yields expected OE `flasce`, but the earlier-shifted variant yields `flæsċe`; PGmc `*wáskaną` likewise yields `wæsċan` instead of expected `wascan`",
+      "representative_lexemes": "wash",
+      "representative_forms": "Candidate displacement before restoration changes only wash, wascan to wæsċan; flask already gives flæsċe in either order.",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "-"
+      "notes": "Original two-witness experiment remains on the card. The source-backed levelled flask nominative is not a current regular restoration witness; retain wash and the separate upper-boundary evidence. See sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC051",

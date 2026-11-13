@@ -1,4 +1,4 @@
-"""SC042's source-bound oral-final fragment and separated fronting dependencies."""
+"""SC042's current final merger and authenticated historical experiments."""
 
 import hashlib
 import json
@@ -17,10 +17,35 @@ def evidence():
     return json.loads((AUDIT / "evidence.json").read_text())
 
 
-def test_complete_live_census_is_rest_and_protected_quantities_remain_unchanged():
+def test_candidate_receipts_authenticate_the_five_way_ablation_and_stable_replay():
+    directory = AUDIT.parent / "sc042-final-nasal-candidate-experiments"
+    manifest = json.loads((directory / "manifest.json").read_text())
+    for filename, field in (("experiments.zip", "archive_sha256"), ("evidence.json", "evidence_sha256")):
+        assert hashlib.sha256((directory / filename).read_bytes()).hexdigest() == manifest[field]
+    with zipfile.ZipFile(directory / "experiments.zip") as archive:
+        assert set(archive.namelist()) == set(manifest["members"])
+        for name, digest in manifest["members"].items():
+            assert hashlib.sha256(archive.read(name)).hexdigest() == digest
+        replay = json.loads(archive.read("supplement-receipt.json"))
+        assert replay["ok"] and not replay["source_changed"]
+        for field in ("stdout_log", "stderr_log"):
+            assert hashlib.sha256(archive.read(
+                "validation/" + Path(replay[field]).name)).hexdigest() == replay[field.replace("_log", "_sha256")]
+    results = json.loads((directory / "evidence.json").read_text())
+    assert results["production_unchanged"] and results["all_frozen_model_b_finals_reproduced"]
+    assert {name: v["matches"] for name, v in results["variants"].items()} == {
+        "identity": 385, "merger": 383, "merger-g": 384, "merger-h": 384, "complete": 385}
+    for variant in results["variants"].values():
+        assert variant["accepted"] == 394 and variant["rejected"] == variant["ambiguous"] == 0
+        assert variant["supplement"]["entire_matrix_replayed"]
+    assert {r["id"]: (r["baseline_outputs"], r["outputs"])
+            for r in results["variants"]["complete"]["changed"]} == {
+        "2016": (["flasce"], ["flæsċe"]), "2141": (["mare"], ["mære"])}
+
+
+def test_complete_live_census_merges_only_final_bimoric_vowels():
     controls = {
         "water": "*w*á*t*a*r", "four": "*f*ēo*w*a*r", "gift": "*g*í*f*t*i",
-        "tongue": "*t*ú*n*g*ǭ", "heart": "*x*é*r*t*ǭ", "earth": "*é*r*θ*ǭ",
         "name": "*n*á*m*ô", "who": "*x*w*ā", "horn": "*x*ó*r*n*ą",
         "bake": "*b*á*k*a*n*ą",
     }
@@ -36,7 +61,17 @@ def test_complete_live_census_is_rest_and_protected_quantities_remain_unchanged(
             assert before == after == (controls[entry.concept],)
             checked.add(entry.concept)
     assert checked == set(controls)
-    assert firings == {"rest": ("*rástōz", ("*r*á*s*t*ō",), ("*r*á*s*t*ā",), "ræste")}
+    assert set(firings) == {
+        "adder", "earth", "flask", "heart", "line", "list", "nettle",
+        "nightmare", "rest", "side", "soul", "spindle", "sun", "swallow",
+        "toe", "tongue", "wart", "weasel", "whore", "widow", "filth", "earthly",
+    }
+    for _, before, after, _ in firings.values():
+        assert len(before) == len(after) == 1
+        assert before[0].endswith(("*ō", "*ǭ"))
+        assert after == (before[0][:-2] + "*ā",)
+    assert firings["nightmare"][-1] == "mære"
+    assert firings["flask"][-1] == "flæsċe"
 
 
 def test_immutable_assays_authenticate_logs_and_preserve_the_sc042_definition():
@@ -57,7 +92,8 @@ def test_immutable_assays_authenticate_logs_and_preserve_the_sc042_definition():
     current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
     assayed = parse_defines(source)
     rule = "PWGmcSurvivingBimoricOUnrounding"
-    assert current[rule].body == assayed[rule].body
+    assert current[rule].body == assayed[rule].body.replace(
+        "{*ō} -> {*ā}", "[{*ō}|{*ǭ}] -> {*ā}")
 
 
 def test_executed_component_controls_distinguish_quantity_nasality_finality_and_proxy_scope():
@@ -136,7 +172,9 @@ def test_verification_preserves_genuine_failure_and_authenticates_the_local_repa
         "EnglishStarVocalic ?* _ .#.", "[EnglishStarVocalic | {*ô}] ?* _ .#.")
     assert normalize(current["EAFFinalZDeletion"].body) == normalize(expected)
     assert normalize(prototype) == "[ " + normalize(expected) + " ]"
-    assert current["PWGmcSurvivingBimoricOUnrounding"].body == original["PWGmcSurvivingBimoricOUnrounding"].body
+    assert current["PWGmcSurvivingBimoricOUnrounding"].body == original[
+        "PWGmcSurvivingBimoricOUnrounding"].body.replace(
+            "{*ō} -> {*ā}", "[{*ō}|{*ǭ}] -> {*ā}")
 
 
 def test_trimoric_positive_and_bimoric_nasal_protected_negatives_are_independent():

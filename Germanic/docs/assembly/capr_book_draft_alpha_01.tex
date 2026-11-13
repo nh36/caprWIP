@@ -6480,27 +6480,26 @@ grammar cited for long-vowel quantity above is Hogg's monograph in its
 
 \begin{ReaderFacingFoma}
 define PWGmcSurvivingBimoricOUnrounding Ctx([
-    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
+    [{*ō}|{*ǭ}] -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ]);
 \end{ReaderFacingFoma}
 
-This operation represents only the surviving oral-final fragment of the
-broader development. Its preceding-nucleus and intervening-consonant
-guard selects a final vowel in a polysyllabic shape; it does not
-independently reconstruct historical stress. Before-final-\emph{*r}
-histories and nasal-vowel histories have other executable treatments. At
-this point the selected water and four inputs already contain \emph{*a}
-before \emph{*r}, whereas the tongue and heart inputs retain the
-distinct nasal token \emph{*ǭ}. Name retains a separate trimoric marker.
-Their nonapplication here is therefore not a counterexample to the
-broader comparative account.
+The operation merges surviving final oral and nasal bimoric vowels in
+\emph{*ā} before English final-vowel fronting. Its preceding-nucleus and
+intervening-consonant guard selects a polysyllabic shape; it does not
+independently reconstruct historical stress. The restriction to the
+final vowel preserves nasalized roots and the separate trimoric
+quantity. Before-final-\emph{*r} histories remain distributed: the
+selected water and four inputs already contain \emph{*a} there.
 
-The complete current population has one live application: \emph{ræste}
-`rest', from the selected Proto-Germanic genitive singular
-\emph{*rástōz}, not the citation nominative \emph{*rastō}. The selected
-gift input is instead \emph{*gíftiz}, so the literature's genitive
-\emph{*gebōz} must not silently replace it as another corpus witness.
-Neither a lexical exception nor a grammatical condition is introduced.
+The complete current population has twenty-two applications: the oral
+ending in \emph{ræste} `rest', from selected genitive \emph{*rástōz},
+and twenty-one nasal-final histories. These include \emph{mære}
+`nightmare', \emph{tunge} `tongue', \emph{heorte} `heart' and
+\emph{sāwle} `soul'. The selected gift input remains \emph{*gíftiz}: the
+literature's \emph{*gebōz} is a separate control, not another corpus
+application. No lexical list or grammatical condition selects the
+endings.
 
 After \hyperref[rule-EAFFinalZDeletion]{SC020 EAFFinalZDeletion} exposes
 \emph{*rástō}, unrounding gives \emph{*rástā}.
@@ -6513,26 +6512,30 @@ another independently dated sound law. The West Germanic long-vowel
 reconstruction has a source basis, but this exact serialized chain
 remains a computational representation of the selected history.
 
-For the selected \emph{*rástōz}, moving unrounding before z-loss or
-after final-vowel support gives \Pred{rasta}, rather than \emph{ræste}
-`rest'. In the early displacement the vowel is still protected by
-\emph{*z}; in the late displacement its unrounded output arrives too
-late for final-vowel fronting. In both, a surviving back vowel permits
-\hyperref[rule-OEARestoration]{SC046 OEARestoration} to retract the
-root, and later shortening leaves final \emph{-a}. By contrast, placing
-unrounding after ordinary stressed fronting but before final-vowel
-support preserves all current outputs. Thus z-loss feeds the
-exposed-final-vowel operation, which feeds the final support; it is not
-the stressed fronting operation that needs the unrounded final vowel.
+For \emph{mære} `nightmare', the final nasal vowel becomes \emph{*ā}
+here, then \emph{*ǣ} under \hyperref[rule-EAFBrighteningLongFinal]{SC108
+EAFBrighteningLongFinal}. The front ending no longer conditions root
+retraction under \hyperref[rule-OEARestoration]{SC046 OEARestoration}.
+Subsequent shortening and merger yield the selected short-vowel
+nominative. Attested \emph{mare} `nightmare' instead has independently
+identified levelling from obliques such as \emph{maran} `nightmare'
+(\citeproc{ref-Hall2007}{Hall 2007, 301--2}, §2). The analogous
+nominative calculation for \emph{flasce} `flask' produces
+\emph{*flæsċe}, not the attested comparator: Campbell and Luick
+explicitly identify levelling from inflected forms there
+(\citeproc{ref-Campbell1959}{Campbell 1959, 61}, §158;
+\citeproc{ref-Luick1914}{Luick 1914-\/-1940, 152--53}, §161).
 
-The historical West Germanic development precedes the English fronting
-history in the adopted account. That does not establish an independently
-witnessed local relation to ordinary stressed fronting: the single
-selected rest derivation distinguishes exposure of a final vowel and the
-use of its unrounded output by final-vowel support. The rule, its order
-and the selected forms are retained; its historical interpretation is
-reformulated to distinguish this narrow executable contribution from the
-independently argued broader law.
+Moving the operation before z-loss still gives \Pred{rasta} instead of
+\emph{ræste} `rest'. This trial also crosses nasal-ending exposure; its
+changed nominatives are not additional witnesses specifically for
+z-loss. Moving it after final support changes twenty-one finals, whereas
+moving it after ordinary stressed fronting but before final support
+preserves every final. The component dependencies are final-environment
+exposure and final-vowel support, not a local feeding requirement before
+ordinary stressed fronting. The independently argued West Germanic
+development precedes the English history in the adopted account; its
+late executable placement does not date it.
 
 \section{Technical support: retained unstressed
 fronting}\label{technical-support-retained-unstressed-fronting}
@@ -6964,9 +6967,9 @@ The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the
 recognizable early cluster changes in the larger palatalization zone.
 Campbell distinguishes the cluster from plain velars when he remarks
 that \emph{*sk} is especially prone to palatalization and assibilation
-(\citeproc{ref-Campbell1959}{Campbell 1959, 278}, §440). Barrack treats
-the cluster in the same zone as his 440 series: 440a summarizes the
-developments (\citeproc{ref-Barrack1975}{Barrack 1975, 112--13}) and
+(\citeproc{ref-Campbell1959}{Campbell 1959, 177--78}, §440). Barrack
+treats the cluster in the same zone as his 440 series: 440a summarizes
+the developments (\citeproc{ref-Barrack1975}{Barrack 1975, 112--13}) and
 440c states the palatalization of \emph{*sk} itself
 (\citeproc{ref-Barrack1975}{Barrack 1975, 113}), kept beside, but
 distinct from, plain velar palatalization (his rule 170a)
@@ -7013,13 +7016,19 @@ define OESkPalatalization Ctx([
 ]);
 \end{ReaderFacingFoma}
 
-The non-fronted vowels of \emph{flasce} `flask' and \emph{wascan} `wash'
-fix the lower boundary of \emph{*sk} \textgreater{} \emph{*sc}. Before
-\hyperref[rule-OEARestoration]{SC046 OEARestoration}, the forms are
-fronted too soon, yielding \emph{flæsce} `flask' and \emph{wæscan}
-`wash' rather than expected OE \emph{flasce} and \emph{wascan}. This
-places \hyperref[rule-OESkPalatalization]{SC051 OESkPalatalization}
-after restoration.
+The displacement of cluster palatalization before
+\hyperref[rule-OEARestoration]{SC046 OEARestoration} now changes
+\emph{wascan} `wash' to \Pred{wæsċan}; wash remains the current
+lower-boundary witness. The old flask displacement belonged to an
+implementation that retained its final nasal vowel through restoration.
+After the earlier ending merger, the nominative already has a front root
+and gives \emph{*flæsċe} in either order. Attested \emph{flasce} `flask'
+has an independently sourced levelled root, after inflected
+\emph{flascan} `flask' (\citeproc{ref-Campbell1959}{Campbell 1959, 61},
+§158; \citeproc{ref-Luick1914}{Luick 1914-\/-1940, 152--53}, §161). It
+must not be used as if its former executable agreement independently
+proved a regular back-root nominative history. The consonantal history
+of the paradigm remains distinct from that root-vowel levelling.
 
 Five witnesses establish the upper boundary collectively. The palatal
 cluster must already underlie \emph{sċeaft} `shaft', \emph{sċēar}
@@ -7150,7 +7159,7 @@ can give only a cutoff before later unrounding
 define OEVelarPalatalizationStops [
     OEVelarPalatalizationKFront
 ] .o. [
-    {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
+    {*g} -> {*ʤ} || _ [{*i}|{*í}|{*ì}|{*ī}],
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],,
@@ -7159,6 +7168,17 @@ define OEVelarPalatalizationStops [
     {*g} -> {*ʤ} || _ {*j}
 ];
 \end{ReaderFacingFoma}
+
+The following-vowel clause now requires immediately following original
+\emph{i} or \emph{ī}, including the transducer's stress spellings,
+rather than any front vowel (\citeproc{ref-RingeTaylor2014}{Ringe and
+Taylor 2014, 203}). This does not narrow the separate
+singleton-fricative rule. The earlier final-vowel merger makes the
+ending of \emph{tunge} `tongue' front before palatalization, but
+secondary \emph{ǣ} does not meet this stop condition. The corrected
+calculation retains the stop rather than producing a spurious affricate.
+Possible effects of preceding \emph{i} through a nasal remain a separate
+question; no additional such clause is introduced here.
 
 Singleton fricatives have already left this domain. The remaining gg/ng
 paths use ʤ as an eventual-reflex proxy; the initial singleton fricative
@@ -9923,13 +9943,14 @@ phonetic value: CAPR's assignment of {[}ç{]} before a following front
 vowel at palatalization is a model analysis, not a transcription of that
 letter.
 
-In the current stage trial for \emph{þō} `clay', the ending is still
-back when palatalization applies, so the velar fricative remains. Later
-ending changes supply \emph{e} while the fricative is still present;
-loss leaves \emph{ō + e}, and contraction produces the contracted form.
-This verifies the front-ending/fricative/hiatus sequence without
-equating the trial's \emph{e} with the glossary spelling \emph{ae}. The
-historical interpretation of that distinction is discussed with
+In the current stage trial for \emph{þō} `clay', the early final-vowel
+merger and subsequent fronting supply \emph{ǣ} before palatalization,
+where CAPR assigns {[}ç{]}. Shortening and merger then supply \emph{e}
+while the fricative is still present; loss leaves \emph{ō + e}, and
+contraction produces the contracted form. This verifies the
+front-ending/fricative/hiatus sequence without equating the trial's
+\emph{e} with the glossary spelling \emph{ae}. The historical
+interpretation of that distinction is discussed with
 \hyperref[rule-OEUnstressedAEMerger]{SC073 OEUnstressedAEMerger}.
 
 \subsection{\texorpdfstring{SC085. Loss of intervocalic \emph{*h}
@@ -9937,14 +9958,24 @@ historical interpretation of that distinction is discussed with
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define OEHLoss [
-    {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
-];
+define OEHLoss FootCtx([
+    [{*x}|{*ç}] -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+]);
 \end{ReaderFacingFoma}
 \end{minipage}
 
-The rule removes intervocalic \emph{*h}; contraction can subsequently
-resolve the hiatus, but the hiatus is itself attested.
+The rule removes singleton intervocalic \emph{*h} in either model
+allophone. It must not depend on a front neighbour: \emph{wlōhum}
+`fringe' loses the fricative between back vowels while retaining
+\emph{-um}. Geminates do not meet the singleton environment. The
+existing foot wrapper protects pretonic material: Campbell explicitly
+retains intervocalic \emph{h} between an unaccented and an accented
+vowel in \emph{behindan} `behind', \emph{behealdan} `hold',
+\emph{gehelpan} `help' and \emph{toheald} `inclined'
+(\citeproc{ref-Campbell1959}{Campbell 1959, 186--87}, §§461, 464--465).
+Thus the prosodic guard has independent support; it is not a lexical
+exception introduced to protect matching outputs. Contraction can
+subsequently resolve the hiatus, but the hiatus is itself attested.
 
 If the rule is moved before \hyperref[rule-OEUnstressedAEMerger]{SC073
 OEUnstressedAEMerger}, PGmc \Recon{táixōn} `toe' yields \Pred{tāæ}
@@ -10499,6 +10530,8 @@ Proto input: \emph{*nḗdrōn}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PWGmc Surviving Bimoric O Unrounding & \emph{*nǣdrā} \\
+\mbox{EAF Brightening Long Final} & \emph{*nǣdrǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*nǣdræ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*nǣdre} \\
 \end{tabularx}
@@ -12761,7 +12794,7 @@ Proto input: \emph{*fūliθǭ}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -12782,8 +12815,10 @@ Proto input: \emph{*fūliθǭ}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE I Umlaut} & \emph{*fȳliθǭ} \\
-\mbox{OE High Vowel Apocope} & \emph{*fȳlθǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*fūliθā} \\
+\mbox{EAF Brightening Long Final} & \emph{*fūliθǣ} \\
+\mbox{OE I Umlaut} & \emph{*fȳliθǣ} \\
+\mbox{OE High Vowel Apocope} & \emph{*fȳlθǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*fȳlθæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*fȳlθe} \\
 \end{tabularx}
@@ -16804,8 +16839,7 @@ the lexical target supported by the dictionary evidence is
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!maere@\iventry{mære}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!maron@\iventry{*márōn}{}}
 
-Derivation: \emph{*márōn} yields \emph{mare} in the current cascade; the
-selected Old English form is \emph{mære} (implementation mismatch).
+Derivation: \emph{*márōn} \textgreater{} \emph{mære} (regular).
 
 \subsection{Derivation trace}\label{derivation-trace-56}
 
@@ -16840,18 +16874,17 @@ Proto input: \emph{*márōn}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening} & \emph{*mærǭ} \\
-\mbox{OE A Restoration} & \emph{*marǭ} \\
-OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
-\mbox{OE Unstressed AE Merger} & \Recon{mare} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*márā} \\
+\mbox{EAF Brightening} & \emph{*mærā} \\
+\mbox{EAF Brightening Long Final} & \emph{*mærǣ} \\
+OE Unstressed Long Vowel Shortening & \emph{*mæræ} \\
+\mbox{OE Unstressed AE Merger} & \emph{*mære} \\
 \end{tabularx}
 \end{minipage}
 \\
 \end{tabular}
 \end{minipage}%
 } \endgroup
-
-Current cascade output: \emph{mare}
 
 Old English form: \emph{mære}
 
@@ -16890,17 +16923,20 @@ had applied. This is a paradigmatic development, not evidence that the
 nominative itself regularly underwent the same restoration
 (\citeproc{ref-Hall2007}{Hall 2007, 301}, §2).
 
-\subsection{Current derivation and implementation
-gap}\label{current-derivation-and-implementation-gap}
+\subsection{Current derivation}\label{current-derivation}
 
-The derivational input remains \emph{*márōn}. The unchanged cascade
-produces \emph{mare}, not the selected \emph{mære}. In the current
-implementation, the retained nasal ending triggers root-vowel
-restoration; its output matches an attested variant but does not
-implement the cited front-root nominative history. The unadopted Model B
-research experiment yields \emph{mære}. Selecting that attested
-nominative does not adopt the experiment or change any production sound
-rule.
+The derivational input remains \emph{*márōn}. Early final nasal bimoric
+\emph{*ǭ} merges with oral \emph{*ō} in \emph{*ā}; subsequent ending
+fronting gives \emph{*ǣ}. The resulting \emph{*mærǣ} no longer has the
+back ending needed to retract the root. Shortening and unstressed merger
+give the selected \emph{mære}. The corrected cascade therefore
+implements the front-root nominative history, not the later levelled
+variant.
+
+The corrected lexical base previously produced \emph{mare} because its
+nasal ending survived until restoration. Frozen Model B first exhibited
+the corrected result experimentally; the present candidate separately
+reproduces and source-checks its three necessary rule changes.
 
 The English concept label `nightmare' indexes the Old English simplex,
 not an attested compound. The regular classification describes the
@@ -17813,9 +17849,10 @@ Proto input: \emph{*sáiwalǭ}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening Unstressed} & \emph{*sāwælǭ} \\
-\mbox{OE A Restoration} & \emph{*sāwalǭ} \\
-\mbox{OE Non High Syn} & \emph{*sāwlǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*sāwalā} \\
+\mbox{EAF Brightening Unstressed} & \emph{*sāwælā} \\
+\mbox{EAF Brightening Long Final} & \emph{*sāwælǣ} \\
+\mbox{OE Non High Syn} & \emph{*sāwlǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*sāwlæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*sāwle} \\
 \end{tabularx}
@@ -18107,8 +18144,8 @@ Proto input: \emph{*spénnilǭ}
 
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
-\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -18128,10 +18165,12 @@ Proto input: \emph{*spénnilǭ}
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{OE I Umlaut} & \emph{*spinnilǭ} \\
-\mbox{OE High Vowel Apocope} & \emph{*spinnlǭ} \\
-OE Preconsonantal Degemination & \emph{*spinlǭ} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+PWGmc Surviving Bimoric O Unrounding & \emph{*spénnilā} \\
+\mbox{EAF Brightening Long Final} & \emph{*spénnilǣ} \\
+\mbox{OE I Umlaut} & \emph{*spinnilǣ} \\
+\mbox{OE High Vowel Apocope} & \emph{*spinnlǣ} \\
+OE Preconsonantal Degemination & \emph{*spinlǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*spinlæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*spinle} \\
 \end{tabularx}
@@ -18551,7 +18590,7 @@ Proto input: \emph{*swálwōn}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -18574,8 +18613,10 @@ Proto input: \emph{*swálwōn}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening} & \emph{*swælwǭ} \\
-\mbox{OE Breaking} & \emph{*swealwǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*swálwā} \\
+\mbox{EAF Brightening} & \emph{*swælwā} \\
+\mbox{EAF Brightening Long Final} & \emph{*swælwǣ} \\
+\mbox{OE Breaking} & \emph{*swealwǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*swealwæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*swealwe} \\
 \end{tabularx}
@@ -21433,11 +21474,13 @@ Proto input: \emph{*érθakùnðǭ}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.26\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening Unstressed} & \emph{*érθækùndǭ} \\
-\mbox{OE Breaking} & \emph{*éorθækùndǭ} \\
-\mbox{OE A Restoration} & \emph{*éorθakùndǭ} \\
-\mbox{OE Non High Syn} & \emph{*éorθkùndǭ} \\
-\mbox{OE High Stress Decode} & \emph{*éorθkundǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*érθakùndā} \\
+\mbox{EAF Brightening Unstressed} & \emph{*érθækùndā} \\
+\mbox{EAF Brightening Long Final} & \emph{*érθækùndǣ} \\
+\mbox{OE Breaking} & \emph{*éorθækùndǣ} \\
+\mbox{OE A Restoration} & \emph{*éorθakùndǣ} \\
+\mbox{OE Non High Syn} & \emph{*éorθkùndǣ} \\
+\mbox{OE High Stress Decode} & \emph{*éorθkundǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*éorθkundæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*éorθkunde} \\
 \end{tabularx}
@@ -23322,7 +23365,8 @@ remain unchanged.
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@\iventry{*fláskōn}{}}
 
 Derivation: citation reconstruction \emph{*flaskō}; form followed here
-\emph{*fláskōn} \textgreater{} \emph{flasce} (early analogy).
+\emph{*fláskōn} yields \emph{flæsċe}; the Old English form here is
+\emph{flasce} (early analogy).
 
 \subsection{Derivation trace}\label{derivation-trace-110}
 
@@ -23334,7 +23378,7 @@ Proto input: \emph{*fláskōn}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -23357,16 +23401,20 @@ Proto input: \emph{*fláskōn}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening} & \emph{*flæskǭ} \\
-\mbox{OE A Restoration} & \emph{*flaskǭ} \\
-OE Unstressed Long Vowel Shortening & \emph{*flaskæ} \\
-\mbox{OE Unstressed AE Merger} & \emph{*flaske} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*fláskā} \\
+\mbox{EAF Brightening} & \emph{*flæskā} \\
+\mbox{EAF Brightening Long Final} & \emph{*flæskǣ} \\
+\mbox{OE Sk Palatalization} & \emph{*flæʃǣ} \\
+OE Unstressed Long Vowel Shortening & \emph{*flæʃæ} \\
+\mbox{OE Unstressed AE Merger} & \emph{*flæʃe} \\
 \end{tabularx}
 \end{minipage}
 \\
 \end{tabular}
 \end{minipage}%
 } \endgroup
+
+Current cascade output: \emph{flæsċe}
 
 Old English form: \emph{flasce}
 
@@ -23375,106 +23423,121 @@ evidence}\label{reconstruction-and-comparative-evidence-94}
 
 The wider Germanic family is often cited under a form such as
 \Recon{flaskō}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flasko@\iventry{*flaskō}{}}
-`flask', but the evidence relevant for Old English points instead to a
-weak feminine formation
+`flask', whereas the formation relevant to Old English is weak feminine
 \Recon{fláskōn}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@\iventry{*fláskōn}{}}
-`flask' /
-\Recon{flaskǭ}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flasko@\iventry{*flaskǭ}{}}
-`flask' (\citeproc{ref-Orel2003}{Orel 2003, 104}). That distinction is
-crucial for the suffixal history of the noun.
+`flask' (\citeproc{ref-Orel2003}{Orel 2003, 104}). Choosing the weak
+formation identifies the relevant ending history; it does not make the
+attested nominative's root vowel the outcome of an uninterrupted
+sequence of sound changes.
 
-The derivational input therefore differs from the citation label in stem
-class. Old English
-{\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-`flask' belongs with the weak feminine line, and the plural or oblique
-forms
-{\emph{flascan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flascan@\iventry{flascan}{}}
-`flask' support that analysis (\citeproc{ref-RingeTaylor2014}{Ringe and
-Taylor 2014, 192}).
+Ringe and Taylor reconstruct a nominative \emph{*flaskā}, later
+\emph{*flæskǣ}, beside the oblique stem \emph{*flaskōn-}, later
+\emph{*flæskōn-}. Their final arrow to \emph{flasċe} `flask' and
+\emph{flascan} is explicitly marked as involving development beyond
+ordinary sound change (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor
+2014, 192}). The stem followed by a hyphen is not a complete genitive or
+accusative reconstruction.
 
 \subsection{Old English evidence}\label{old-english-evidence-95}
 
-Old English dictionaries record the noun as
+The dictionaries give
 {\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-`flask', with inflectional support from forms such as
-{\emph{flascan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flascan@\iventry{flascan}{}}
-`flask'; a later West Saxon
+`flask', with
 {\emph{flaxe}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flaxe@\iventry{flaxe}{}}
-`flask' is also noted as a secondary variant
-(\citeproc{ref-BosworthToller1898}{Bosworth and Toller 1898, 235};
-\citeproc{ref-ClarkHall1960}{Clark Hall 1960, 121}).
+`flask' as a variant (\citeproc{ref-BosworthToller1898}{Bosworth and
+Toller 1898, 235}; \citeproc{ref-ClarkHall1960}{Clark Hall 1960, 121}).
+Ringe and Taylor identify \emph{flaxe} and \emph{flaxan} as late West
+Saxon (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 192}).
 
-The relevant comparison form is therefore the weak feminine noun
-{\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-`flask'. The plural and oblique evidence helps explain why the vowel and
-ending are preserved as they are in the singular.
+The inflected forms must be identified from their syntax. In Gregory's
+\emph{Dialogues}, \emph{āne trȳwene flascan wīnes fulle} `one wooden
+flask full of wine' makes
+{\emph{flascan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flascan@\iventry{flascan}{}}
+`flask' accusative singular, the direct object of \emph{sealde};
+\emph{flaxan} stands in the parallel recension
+(\citeproc{ref-Hecht1900}{Hecht 1900, 66}, lines 8--10). At another
+occurrence, \emph{twā fatu \ldots{} flascan gehātene} `two vessels
+called flasks' has nominative plural \emph{flascan}, whereas \emph{ōðre
+þāra flascena} `one of the flasks' contains genitive plural
+{\emph{flascena}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flascena@\iventry{flascena}{}}
+`flasks' (\citeproc{ref-Hecht1900}{Hecht 1900, 141}, lines 25--30;
+\citeproc{ref-Toller1921}{Toller 1921, 223}). The following \emph{be
+þǣre flascan} is dative singular, not evidence for a genitive singular
+(\citeproc{ref-Hecht1900}{Hecht 1900, 142}, lines 2--4). These passages
+establish the weak paradigm but do not supply a securely identified
+genitive singular.
 
 \subsection{Development to Old
 English}\label{development-to-old-english-93}
 
-From
-\Recon{fláskōn}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@\iventry{*fláskōn}{}}
-`flask', the weak feminine passes through the expected loss of \emph{n}
-and the later Old English development of the unstressed ending, reaching
-{\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-`flask'. Campbell cites restored \emph{a} in exactly this environment,
-including
-{\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-`flask' after inflected
-{\emph{flascan}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flascan@\iventry{flascan}{}}
-`flask' (\citeproc{ref-Campbell1959}{Campbell 1959, § 158}). Once
-the weak feminine formation is chosen, the noun follows a regular path
-to its Old English shape.
+Campbell explicitly explains singular \emph{flasce} after inflected
+\emph{flascan}; Luick likewise derives the singular's root vowel from
+the plural (\citeproc{ref-Campbell1959}{Campbell 1959, 61}, §158;
+\citeproc{ref-Luick1914}{Luick 1914-\/-1940, 152--53}, §161). This is
+positive evidence for root-vowel levelling, not a licence to let the
+nominative retain an obsolete back ending until restoration. The early
+final-vowel merger removes that trigger: final \emph{*ǭ} joins \emph{*ō}
+in \emph{*ā}, which fronts to \emph{*ǣ}. The nominative consequently
+keeps its front root and subsequently undergoes palatalization of
+\emph{*sk}. The cascade produces \emph{*flæsċe}, not selected
+\emph{flasce}.
 
-The decisive issue is morphological rather than phonological. A simple
-strong feminine citation form does not capture the OE weak noun as
-cleanly as the selected \Recon{fláskōn} `flask' does.
+The oblique root provides an independently identified analogical donor,
+but the consonantal history needs separate care. Ringe and Taylor print
+palatal \emph{flasċe}. Campbell also discusses \emph{flasce} and
+\emph{flaxe} among the forms associated with retained \emph{sk} and
+later \emph{ks} (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
+192}; \citeproc{ref-Campbell1959}{Campbell 1959, 178}, §§440--441).
+Plain written \emph{sc} does not by itself decide its pronunciation, and
+root-vowel levelling alone does not demonstrate when a consonantal
+alternation was levelled.
 
-\subsection{Formation comparison}\label{formation-comparison-2}
-
-The comparison below sets the relevant forms side by side. It separates
-the broader comparative headword from the weak feminine formation
-actually reflected in Old English.
+\subsection{Formation and cell
+comparison}\label{formation-and-cell-comparison}
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-Formation
+Formation or cell
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Candidate input
+Reconstructed input
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Expected or documented OE outcome
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-OE comparison form
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Result
+Evidential status
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-broader comparative headword &
-{\emph{*flaskō}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flasko@\iventry{*flaskō}{}}
-& broader family label & wider family context & useful lexeme label, but
-not the cleanest OE-facing derivation \\
-selected weak feminine formation &
-{\emph{*fláskōn}}\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!flaskon@\iventry{*fláskōn}{}}
-& regular output: {\emph{flasce}} &
-{\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-& exact match between formation and attested OE noun \\
+comparative headword & \emph{*flaskō} & Family label, not the selected
+weak nominative history \\
+selected weak nominative & \emph{*fláskōn} & Current cascade gives
+front-root \emph{*flæsċe}; attested comparator \emph{flasce} has an
+explicitly sourced levelled root \\
+weak accusative singular & \emph{*flaskōnų} & Ending reconstructed by
+applying the weak-feminine paradigm to the stem; not a complete form
+quoted by Ringe and Taylor \\
 \end{longtable}
 }
 
-The weak feminine suffix is the relevant point. It aligns the inherited
-form with attested
-{\emph{flasce}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!flasce@\iventry{flasce}{}}
-`flask' and its supporting paradigm forms.
+The generic inherited accusative ending is supported by Ringe's
+\emph{*tungōnų} paradigm, and its West Germanic erosion is discussed
+separately (\citeproc{ref-Ringe2017}{Ringe 2017, 312}, §4.3.4(ii);
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 55--58}). That
+evidence warrants testing a complete oblique, not adding an ending
+solely to obtain a back root. Inflectional remodelling and the distinct
+consonantal question prevent an automatic replacement of the selected
+nominative by an oblique. Both complete raw inputs \emph{*fláskōnų} and
+dative \emph{*fláskōni} are rejected by the current tokenizer.
+Diagnostic entry after tokenization instead gives \emph{*flasconu} and
+\emph{*flæsċe}, respectively, not attested \emph{flascan}. This is a
+modelling limit, not a demonstration that the inherited endings or the
+attestations are wrong. The comparator remains \emph{flasce}; the
+computational mismatch is disclosed rather than removed by changing the
+target.
 
 \section{\texorpdfstring{follow --- OE
 \emph{fylġan}}{follow --- OE fylġan}}\label{follow-oe-fylux121an}
@@ -24973,7 +25036,7 @@ vowel adjustments lead to
 `lung'. Once the expanded feminine formation is chosen, the Old English
 outcome is regular.
 
-\subsection{Formation comparison}\label{formation-comparison-3}
+\subsection{Formation comparison}\label{formation-comparison-2}
 
 The comparison below sets the relevant forms side by side. It separates
 the base noun from the derived feminine formation reflected in Old
@@ -26222,7 +26285,7 @@ weak-tail reduction, and contraction to
 \Recon{spárē}\index[iv]{08preoe@\ivlangheader{Pre-Old English / prehistoric English}{}!spare@\iventry{*spárē}{}}
 `spare' (\citeproc{ref-SieversBrunner1965}{Brunner 1965, § 150}).
 
-\subsection{Formation comparison}\label{formation-comparison-4}
+\subsection{Formation comparison}\label{formation-comparison-3}
 
 The comparison below sets the relevant forms side by side. It contrasts
 the inherited class-III formation with the refashioned class-II one that
@@ -26382,7 +26445,7 @@ is \Recon{stábaz} `staff' \textgreater{} \Recon{stába} `staff'
 {\emph{stefe}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!stefe@\iventry{stefe}{}}
 `stave, staff' rather than the attested singular.
 
-\subsection{Formation comparison}\label{formation-comparison-5}
+\subsection{Formation comparison}\label{formation-comparison-4}
 
 The comparison below sets the relevant forms side by side. It separates
 the rejected i-stem line from the selected a-stem input.
@@ -27061,7 +27124,7 @@ handbook treatment of this epenthetic vowel point to the same Old
 English result (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
 327}; \citeproc{ref-Campbell1959}{Campbell 1959, §§ 463--464}).
 
-\subsection{Formation comparison}\label{formation-comparison-6}
+\subsection{Formation comparison}\label{formation-comparison-5}
 
 The comparison below sets the relevant forms side by side. It separates
 the comparative headword from the OE-facing consonantal input.
@@ -27493,7 +27556,7 @@ closed monosyllable, and Old English orthography writes
 {\emph{hwæl}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hwael@\iventry{hwæl}{}}
 `whale'.
 
-\subsection{Formation comparison}\label{formation-comparison-7}
+\subsection{Formation comparison}\label{formation-comparison-6}
 
 The comparison below sets the relevant forms side by side. It separates
 the competing comparative notations from the normalized Old English
@@ -27826,7 +27889,7 @@ of the entry is therefore morphological: Old English \emph{wīþiġ}
 \Recon{wīþja} `withy' label belongs to a different way of presenting the
 cognate family.
 
-\subsection{Formation comparison}\label{formation-comparison-8}
+\subsection{Formation comparison}\label{formation-comparison-7}
 
 The comparison below sets the relevant formations side by side. It
 distinguishes the comparative headword from the Old English-facing
@@ -34272,6 +34335,12 @@ British Academy.
 Hall, Alaric. 2007. {`The Evidence for {maran}, the {Anglo-Saxon}
 'Nightmares''}. \emph{Neophilologus} 91 (2): 299--317.
 \url{https://doi.org/10.1007/s11061-005-4256-8}.
+
+\bibitem[\citeproctext]{ref-Hecht1900}
+Hecht, Hans, ed. 1900. \emph{Bischof Waerferths von Worcester
+{Uebersetzung} Der {Dialoge} {Gregors} Des {Grossen}: Text Und
+Varianten}. Vol. 1. Bibliothek Der Angelsaechsischen Prosa 5. Georg H.
+Wigand. \url{https://archive.org/details/bischofswaerfer00johngoog}.
 
 \bibitem[\citeproctext]{ref-Heidermanns1993}
 Heidermanns, Frank. 1993. \emph{{Etymologisches Wörterbuch der

@@ -66,6 +66,13 @@ correction; it does not authorize proceeding to SC044. The separate Barrack cros
 retaining WG117, 300b and440b as prospective omissions or discrepancies.
 Neither that programme nor the qualified lexical residues starts automatically.
 
+The separate [final-nasal production candidate](sound_changes/audits/sc042-final-nasal-candidate.md)
+reproduces Model B from the corrected lexical baseline and isolates the
+ending merger, following-vowel stop conditioning and prosodically bounded
+h-loss. Its two-output migration resolves the selected mære calculation
+while disclosing the flask mismatch; no lexical target or input is changed.
+SC044 and the separate SC067 then SC080 programme remain queued.
+
 The separate [clay/fringe glossary-stage controls](sound_changes/audits/clay-fringe-stage-witnesses.md)
 clarify the reader's h-loss, hiatus and merger evidence without admitting
 either witness to the lexical corpus or changing production rules.

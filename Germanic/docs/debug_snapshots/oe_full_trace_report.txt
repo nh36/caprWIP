@@ -1,6 +1,6 @@
 === PROVENANCE ===
 trace_provenance_version: 2
-germanic.txt sha256: 62fb821f9988cf995043cb9a978b76a5a3fc83caff5b026928c64a0dd378062c
+germanic.txt sha256: 6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539
 old_english_sandbox.txt sha256: 64c0b672831b8f73778a00386095791412bddebde330fbc3e2240800b048be0b
 germanic-aligned-final.tsv sha256: 27101099ca4b5b7b52d97061134b82c43114965f47cba2c571ee637c1cb33153
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
@@ -9,14 +9,14 @@ oe_full_trace_report.py sha256: dad0d16f3c52b89c2a3e2ef52d7f5126659cd045d93df73c
 oe_pipeline.py sha256: 742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6
 sound_change_order_sensitivity.py sha256: 99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c
 capr_runtime.py sha256: e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec
-old_english.bin sha256 (informational): 53e32e329d71be1149c25ea2321080f67c911acebf18639846d672ff877df271
+old_english.bin sha256 (informational): 81bcb75e7d987a00571e8f963ba66d7ef56efcc9a19722734d06913e25bff2bf
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-11-13T08:49:09+0000
+build_manifest_built_at: 2026-11-13T18:39:05+0000
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
 build_manifest_expected_bins: 114
 manifest:germanic-aligned-final.tsv sha256: 27101099ca4b5b7b52d97061134b82c43114965f47cba2c571ee637c1cb33153
-manifest:germanic.txt sha256: 62fb821f9988cf995043cb9a978b76a5a3fc83caff5b026928c64a0dd378062c
+manifest:germanic.txt sha256: 6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539
 manifest:old_english_sandbox.txt sha256: 64c0b672831b8f73778a00386095791412bddebde330fbc3e2240800b048be0b
 
 === BUCKET: exact_match (385) ===
@@ -89,44 +89,44 @@ OEInterStressRaising [no-change]: *n*ǣ*d*r*ǭ
 OEWICombinativeUUmlaut [no-change]: *n*ǣ*d*r*ǭ
 PWGmcFinalBareALoss [no-change]: *n*ǣ*d*r*ǭ
 NWGmcInStemNLoss [no-change]: *n*ǣ*d*r*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *n*ǣ*d*r*ǭ
-EAFBrighteningUnstressed [no-change]: *n*ǣ*d*r*ǭ
-EAFBrightening [no-change]: *n*ǣ*d*r*ǭ
-EAFBrighteningLongFinal [no-change]: *n*ǣ*d*r*ǭ
-OEBreaking [no-change]: *n*ǣ*d*r*ǭ
-OEVelarFricativePalatalization [no-change]: *n*ǣ*d*r*ǭ
-OEARestoration [no-change]: *n*ǣ*d*r*ǭ
-OEHeavySyllableNasalApocope [no-change]: *n*ǣ*d*r*ǭ
-OESecondaryNasalization [no-change]: *n*ǣ*d*r*ǭ
-SieversLawSyncope [no-change]: *n*ǣ*d*r*ǭ
-OESkPalatalization [no-change]: *n*ǣ*d*r*ǭ
-OEVelarPalatalization [no-change]: *n*ǣ*d*r*ǭ
-OEPrefixAReduction [no-change]: *n*ǣ*d*r*ǭ
-OEPostVelarWLoss [no-change]: *n*ǣ*d*r*ǭ
-OEWsPalatalDiphthongization [no-change]: *n*ǣ*d*r*ǭ
-OEIUmlaut [no-change]: *n*ǣ*d*r*ǭ
-OEWLossBeforeI [no-change]: *n*ǣ*d*r*ǭ
-OELatePalatalDiphthong [no-change]: *n*ǣ*d*r*ǭ
-OEJClusterCoalescence [no-change]: *n*ǣ*d*r*ǭ
-OEBackMutation [no-change]: *n*ǣ*d*r*ǭ
-OEWsPalatalUmlaut [no-change]: *n*ǣ*d*r*ǭ
-OEWeakTailNasalLoss [no-change]: *n*ǣ*d*r*ǭ
-OEWeightMarkers [no-change]: *n*ǣ*d*r*ǭ
-OENonHighSyn [no-change]: *n*ǣ*d*r*ǭ
-PGmcBAllophony [no-change]: *n*ǣ*d*r*ǭ
-OEMedLongShort [no-change]: *n*ǣ*d*r*ǭ
-OEHighVowelApocope [no-change]: *n*ǣ*d*r*ǭ
-OEMedialSyncope [no-change]: *n*ǣ*d*r*ǭ
-OEHighLinkSyncope [no-change]: *n*ǣ*d*r*ǭ
-OELAdjacentSyncope [no-change]: *n*ǣ*d*r*ǭ
-OEHighStressDecode [no-change]: *n*ǣ*d*r*ǭ
-OEDentalAssimilation [no-change]: *n*ǣ*d*r*ǭ
-OEPreconsonantalDegemination [no-change]: *n*ǣ*d*r*ǭ
-OEEarlyOShortening [no-change]: *n*ǣ*d*r*ǭ
-OEUnstressedFrontingEarly [no-change]: *n*ǣ*d*r*ǭ
-OELateOShortening [no-change]: *n*ǣ*d*r*ǭ
-OEMedUnstressedORaising [no-change]: *n*ǣ*d*r*ǭ
-OEFinalUnstressedOLowering [no-change]: *n*ǣ*d*r*ǭ
+PWGmcSurvivingBimoricOUnrounding: *n*ǣ*d*r*ā
+EAFBrighteningUnstressed [no-change]: *n*ǣ*d*r*ā
+EAFBrightening [no-change]: *n*ǣ*d*r*ā
+EAFBrighteningLongFinal: *n*ǣ*d*r*ǣ
+OEBreaking [no-change]: *n*ǣ*d*r*ǣ
+OEVelarFricativePalatalization [no-change]: *n*ǣ*d*r*ǣ
+OEARestoration [no-change]: *n*ǣ*d*r*ǣ
+OEHeavySyllableNasalApocope [no-change]: *n*ǣ*d*r*ǣ
+OESecondaryNasalization [no-change]: *n*ǣ*d*r*ǣ
+SieversLawSyncope [no-change]: *n*ǣ*d*r*ǣ
+OESkPalatalization [no-change]: *n*ǣ*d*r*ǣ
+OEVelarPalatalization [no-change]: *n*ǣ*d*r*ǣ
+OEPrefixAReduction [no-change]: *n*ǣ*d*r*ǣ
+OEPostVelarWLoss [no-change]: *n*ǣ*d*r*ǣ
+OEWsPalatalDiphthongization [no-change]: *n*ǣ*d*r*ǣ
+OEIUmlaut [no-change]: *n*ǣ*d*r*ǣ
+OEWLossBeforeI [no-change]: *n*ǣ*d*r*ǣ
+OELatePalatalDiphthong [no-change]: *n*ǣ*d*r*ǣ
+OEJClusterCoalescence [no-change]: *n*ǣ*d*r*ǣ
+OEBackMutation [no-change]: *n*ǣ*d*r*ǣ
+OEWsPalatalUmlaut [no-change]: *n*ǣ*d*r*ǣ
+OEWeakTailNasalLoss [no-change]: *n*ǣ*d*r*ǣ
+OEWeightMarkers [no-change]: *n*ǣ*d*r*ǣ
+OENonHighSyn [no-change]: *n*ǣ*d*r*ǣ
+PGmcBAllophony [no-change]: *n*ǣ*d*r*ǣ
+OEMedLongShort [no-change]: *n*ǣ*d*r*ǣ
+OEHighVowelApocope [no-change]: *n*ǣ*d*r*ǣ
+OEMedialSyncope [no-change]: *n*ǣ*d*r*ǣ
+OEHighLinkSyncope [no-change]: *n*ǣ*d*r*ǣ
+OELAdjacentSyncope [no-change]: *n*ǣ*d*r*ǣ
+OEHighStressDecode [no-change]: *n*ǣ*d*r*ǣ
+OEDentalAssimilation [no-change]: *n*ǣ*d*r*ǣ
+OEPreconsonantalDegemination [no-change]: *n*ǣ*d*r*ǣ
+OEEarlyOShortening [no-change]: *n*ǣ*d*r*ǣ
+OEUnstressedFrontingEarly [no-change]: *n*ǣ*d*r*ǣ
+OELateOShortening [no-change]: *n*ǣ*d*r*ǣ
+OEMedUnstressedORaising [no-change]: *n*ǣ*d*r*ǣ
+OEFinalUnstressedOLowering [no-change]: *n*ǣ*d*r*ǣ
 OEUnstressedLongVowelShortening: *n*ǣ*d*r*æ
 OEUnstressedAEMerger: *n*ǣ*d*r*e
 OEMedUnstressedILowering1 [no-change]: *n*ǣ*d*r*e
@@ -8324,44 +8324,44 @@ OEInterStressRaising [no-change]: *é*r*θ*ǭ
 OEWICombinativeUUmlaut [no-change]: *é*r*θ*ǭ
 PWGmcFinalBareALoss [no-change]: *é*r*θ*ǭ
 NWGmcInStemNLoss [no-change]: *é*r*θ*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *é*r*θ*ǭ
-EAFBrighteningUnstressed [no-change]: *é*r*θ*ǭ
-EAFBrightening [no-change]: *é*r*θ*ǭ
-EAFBrighteningLongFinal [no-change]: *é*r*θ*ǭ
-OEBreaking: *éo*r*θ*ǭ
-OEVelarFricativePalatalization [no-change]: *éo*r*θ*ǭ
-OEARestoration [no-change]: *éo*r*θ*ǭ
-OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*ǭ
-OESecondaryNasalization [no-change]: *éo*r*θ*ǭ
-SieversLawSyncope [no-change]: *éo*r*θ*ǭ
-OESkPalatalization [no-change]: *éo*r*θ*ǭ
-OEVelarPalatalization [no-change]: *éo*r*θ*ǭ
-OEPrefixAReduction [no-change]: *éo*r*θ*ǭ
-OEPostVelarWLoss [no-change]: *éo*r*θ*ǭ
-OEWsPalatalDiphthongization [no-change]: *éo*r*θ*ǭ
-OEIUmlaut [no-change]: *éo*r*θ*ǭ
-OEWLossBeforeI [no-change]: *éo*r*θ*ǭ
-OELatePalatalDiphthong [no-change]: *éo*r*θ*ǭ
-OEJClusterCoalescence [no-change]: *éo*r*θ*ǭ
-OEBackMutation [no-change]: *éo*r*θ*ǭ
-OEWsPalatalUmlaut [no-change]: *éo*r*θ*ǭ
-OEWeakTailNasalLoss [no-change]: *éo*r*θ*ǭ
-OEWeightMarkers [no-change]: *éo*r*θ*ǭ
-OENonHighSyn [no-change]: *éo*r*θ*ǭ
-PGmcBAllophony [no-change]: *éo*r*θ*ǭ
-OEMedLongShort [no-change]: *éo*r*θ*ǭ
-OEHighVowelApocope [no-change]: *éo*r*θ*ǭ
-OEMedialSyncope [no-change]: *éo*r*θ*ǭ
-OEHighLinkSyncope [no-change]: *éo*r*θ*ǭ
-OELAdjacentSyncope [no-change]: *éo*r*θ*ǭ
-OEHighStressDecode [no-change]: *éo*r*θ*ǭ
-OEDentalAssimilation [no-change]: *éo*r*θ*ǭ
-OEPreconsonantalDegemination [no-change]: *éo*r*θ*ǭ
-OEEarlyOShortening [no-change]: *éo*r*θ*ǭ
-OEUnstressedFrontingEarly [no-change]: *éo*r*θ*ǭ
-OELateOShortening [no-change]: *éo*r*θ*ǭ
-OEMedUnstressedORaising [no-change]: *éo*r*θ*ǭ
-OEFinalUnstressedOLowering [no-change]: *éo*r*θ*ǭ
+PWGmcSurvivingBimoricOUnrounding: *é*r*θ*ā
+EAFBrighteningUnstressed [no-change]: *é*r*θ*ā
+EAFBrightening [no-change]: *é*r*θ*ā
+EAFBrighteningLongFinal: *é*r*θ*ǣ
+OEBreaking: *éo*r*θ*ǣ
+OEVelarFricativePalatalization [no-change]: *éo*r*θ*ǣ
+OEARestoration [no-change]: *éo*r*θ*ǣ
+OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*ǣ
+OESecondaryNasalization [no-change]: *éo*r*θ*ǣ
+SieversLawSyncope [no-change]: *éo*r*θ*ǣ
+OESkPalatalization [no-change]: *éo*r*θ*ǣ
+OEVelarPalatalization [no-change]: *éo*r*θ*ǣ
+OEPrefixAReduction [no-change]: *éo*r*θ*ǣ
+OEPostVelarWLoss [no-change]: *éo*r*θ*ǣ
+OEWsPalatalDiphthongization [no-change]: *éo*r*θ*ǣ
+OEIUmlaut [no-change]: *éo*r*θ*ǣ
+OEWLossBeforeI [no-change]: *éo*r*θ*ǣ
+OELatePalatalDiphthong [no-change]: *éo*r*θ*ǣ
+OEJClusterCoalescence [no-change]: *éo*r*θ*ǣ
+OEBackMutation [no-change]: *éo*r*θ*ǣ
+OEWsPalatalUmlaut [no-change]: *éo*r*θ*ǣ
+OEWeakTailNasalLoss [no-change]: *éo*r*θ*ǣ
+OEWeightMarkers [no-change]: *éo*r*θ*ǣ
+OENonHighSyn [no-change]: *éo*r*θ*ǣ
+PGmcBAllophony [no-change]: *éo*r*θ*ǣ
+OEMedLongShort [no-change]: *éo*r*θ*ǣ
+OEHighVowelApocope [no-change]: *éo*r*θ*ǣ
+OEMedialSyncope [no-change]: *éo*r*θ*ǣ
+OEHighLinkSyncope [no-change]: *éo*r*θ*ǣ
+OELAdjacentSyncope [no-change]: *éo*r*θ*ǣ
+OEHighStressDecode [no-change]: *éo*r*θ*ǣ
+OEDentalAssimilation [no-change]: *éo*r*θ*ǣ
+OEPreconsonantalDegemination [no-change]: *éo*r*θ*ǣ
+OEEarlyOShortening [no-change]: *éo*r*θ*ǣ
+OEUnstressedFrontingEarly [no-change]: *éo*r*θ*ǣ
+OELateOShortening [no-change]: *éo*r*θ*ǣ
+OEMedUnstressedORaising [no-change]: *éo*r*θ*ǣ
+OEFinalUnstressedOLowering [no-change]: *éo*r*θ*ǣ
 OEUnstressedLongVowelShortening: *éo*r*θ*æ
 OEUnstressedAEMerger: *éo*r*θ*e
 OEMedUnstressedILowering1 [no-change]: *éo*r*θ*e
@@ -10415,141 +10415,6 @@ OldEnglishOrthography [no-change]: *f*ȳ*s*t
 OEWsPalatalGlide [no-change]: *f*ȳ*s*t
 OldEnglishRemoveStars: fȳst
 OldEnglishSurface [no-change]: fȳst
-
---- flask ---
-PROTO: *fláskōn
-INPUT_CONTEXT: SC098; stress=stressed; finality=final
-EXPECTED: flasce
-OUTPUTS: flasce
-
-
-## Section 1: Proto-Germanic consonant inheritance
-
-EnglishProtoInput: *f*l*á*s*k*ō*n
-PGmcGmSimplification [no-change]: *f*l*á*s*k*ō*n
-PGmcNasalLossBeforeX [no-change]: *f*l*á*s*k*ō*n
-RootNounNomZLoss [no-change]: *f*l*á*s*k*ō*n
-
-## Section 2: Northwest and West Germanic developments
-
-PNWGmcUnstressedAiMonophthongization [no-change]: *f*l*á*s*k*ō*n
-PNWGmcAToUBeforeM [no-change]: *f*l*á*s*k*ō*n
-PNWGmcLongELowering [no-change]: *f*l*á*s*k*ō*n
-PWGmcEarlyIApocope [no-change]: *f*l*á*s*k*ō*n
-PWGmcFinalOrLowering [no-change]: *f*l*á*s*k*ō*n
-PWGmcCoronalWAssimilation [no-change]: *f*l*á*s*k*ō*n
-OEWWSimplification [no-change]: *f*l*á*s*k*ō*n
-PWGmcIjContraction [no-change]: *f*l*á*s*k*ō*n
-PWGmcJGemination [no-change]: *f*l*á*s*k*ō*n
-PWGmcSyllabicJ [no-change]: *f*l*á*s*k*ō*n
-PNWGmcPreconsonantalXLoss [no-change]: *f*l*á*s*k*ō*n
-EAFLThVoicing [no-change]: *f*l*á*s*k*ō*n
-PWGmcDentalHardening [no-change]: *f*l*á*s*k*ō*n
-PWGmcEndinglessAw [no-change]: *f*l*á*s*k*ō*n
-PNWGmcILowering [no-change]: *f*l*á*s*k*ō*n
-PNWGmcULowering [no-change]: *f*l*á*s*k*ō*n
-PNWGmcStressedMonosyllableORaising [no-change]: *f*l*á*s*k*ō*n
-PNWGmcFinalLongORaising [no-change]: *f*l*á*s*k*ō*n
-EAFFinalZDeletion [no-change]: *f*l*á*s*k*ō*n
-PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*á*s*k*ō*n
-MonosyllabicFinalZLoss [no-change]: *f*l*á*s*k*ō*n
-PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*á*s*k*ō*n
-EAFRhotacism [no-change]: *f*l*á*s*k*ō*n
-PNWGmcMnDissimilation [no-change]: *f*l*á*s*k*ō*n
-PNWGmcNStemNLoss: *f*l*á*s*k*ǭ
-EAFNasalSpirantLengthening [no-change]: *f*l*á*s*k*ǭ
-EAFNasalSpirantLoss [no-change]: *f*l*á*s*k*ǭ
-EAFHiatusWInsertion [no-change]: *f*l*á*s*k*ǭ
-EAFLongANasalRounding [no-change]: *f*l*á*s*k*ǭ
-EAFNasalizedLowRounding [no-change]: *f*l*á*s*k*ǭ
-EAFLongAFronting [no-change]: *f*l*á*s*k*ǭ
-OEStressFootContext [no-change]: *f*l*á*s*k*ǭ
-
-## Section 3: Early Anglo-Frisian (North Sea Germanic)
-
-EAFAiMonophthongization [no-change]: *f*l*á*s*k*ǭ
-
-## Section 4: Old English
-
-OEAwwjResolution [no-change]: *f*l*á*s*k*ǭ
-OEAuBrightening [no-change]: *f*l*á*s*k*ǭ
-OEEwLongDiphthong [no-change]: *f*l*á*s*k*ǭ
-OEJWWSimplification [no-change]: *f*l*á*s*k*ǭ
-OEJGlideIO [no-change]: *f*l*á*s*k*ǭ
-OEDiphthongLeveling [no-change]: *f*l*á*s*k*ǭ
-OEAwLongDiphthong [no-change]: *f*l*á*s*k*ǭ
-OECompoundLinkingSyncope [no-change]: *f*l*á*s*k*ǭ
-OEStripSecondaryStress [no-change]: *f*l*á*s*k*ǭ
-OEInterStressRaising [no-change]: *f*l*á*s*k*ǭ
-OEWICombinativeUUmlaut [no-change]: *f*l*á*s*k*ǭ
-PWGmcFinalBareALoss [no-change]: *f*l*á*s*k*ǭ
-NWGmcInStemNLoss [no-change]: *f*l*á*s*k*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *f*l*á*s*k*ǭ
-EAFBrighteningUnstressed [no-change]: *f*l*á*s*k*ǭ
-EAFBrightening: *f*l*æ*s*k*ǭ
-EAFBrighteningLongFinal [no-change]: *f*l*æ*s*k*ǭ
-OEBreaking [no-change]: *f*l*æ*s*k*ǭ
-OEVelarFricativePalatalization [no-change]: *f*l*æ*s*k*ǭ
-OEARestoration: *f*l*a*s*k*ǭ
-OEHeavySyllableNasalApocope [no-change]: *f*l*a*s*k*ǭ
-OESecondaryNasalization [no-change]: *f*l*a*s*k*ǭ
-SieversLawSyncope [no-change]: *f*l*a*s*k*ǭ
-OESkPalatalization [no-change]: *f*l*a*s*k*ǭ
-OEVelarPalatalization [no-change]: *f*l*a*s*k*ǭ
-OEPrefixAReduction [no-change]: *f*l*a*s*k*ǭ
-OEPostVelarWLoss [no-change]: *f*l*a*s*k*ǭ
-OEWsPalatalDiphthongization [no-change]: *f*l*a*s*k*ǭ
-OEIUmlaut [no-change]: *f*l*a*s*k*ǭ
-OEWLossBeforeI [no-change]: *f*l*a*s*k*ǭ
-OELatePalatalDiphthong [no-change]: *f*l*a*s*k*ǭ
-OEJClusterCoalescence [no-change]: *f*l*a*s*k*ǭ
-OEBackMutation [no-change]: *f*l*a*s*k*ǭ
-OEWsPalatalUmlaut [no-change]: *f*l*a*s*k*ǭ
-OEWeakTailNasalLoss [no-change]: *f*l*a*s*k*ǭ
-OEWeightMarkers [no-change]: *f*l*a*s*k*ǭ
-OENonHighSyn [no-change]: *f*l*a*s*k*ǭ
-PGmcBAllophony [no-change]: *f*l*a*s*k*ǭ
-OEMedLongShort [no-change]: *f*l*a*s*k*ǭ
-OEHighVowelApocope [no-change]: *f*l*a*s*k*ǭ
-OEMedialSyncope [no-change]: *f*l*a*s*k*ǭ
-OEHighLinkSyncope [no-change]: *f*l*a*s*k*ǭ
-OELAdjacentSyncope [no-change]: *f*l*a*s*k*ǭ
-OEHighStressDecode [no-change]: *f*l*a*s*k*ǭ
-OEDentalAssimilation [no-change]: *f*l*a*s*k*ǭ
-OEPreconsonantalDegemination [no-change]: *f*l*a*s*k*ǭ
-OEEarlyOShortening [no-change]: *f*l*a*s*k*ǭ
-OEUnstressedFrontingEarly [no-change]: *f*l*a*s*k*ǭ
-OELateOShortening [no-change]: *f*l*a*s*k*ǭ
-OEMedUnstressedORaising [no-change]: *f*l*a*s*k*ǭ
-OEFinalUnstressedOLowering [no-change]: *f*l*a*s*k*ǭ
-OEUnstressedLongVowelShortening: *f*l*a*s*k*æ
-OEUnstressedAEMerger: *f*l*a*s*k*e
-OEMedUnstressedILowering1 [no-change]: *f*l*a*s*k*e
-OEMedUnstressedILowering [no-change]: *f*l*a*s*k*e
-OEMedUnstressedULowering [no-change]: *f*l*a*s*k*e
-OEPrefixIReduction [no-change]: *f*l*a*s*k*e
-OEWeakTailReduction [no-change]: *f*l*a*s*k*e
-OEJLossAfterHeavy [no-change]: *f*l*a*s*k*e
-OEFinalGeminateSimplification [no-change]: *f*l*a*s*k*e
-OEJStrengtheningAfterFrontDiphthong [no-change]: *f*l*a*s*k*e
-OEIntervocalicJVocalization [no-change]: *f*l*a*s*k*e
-OEUnstressedEIContraction [no-change]: *f*l*a*s*k*e
-OEWeightCleanup [no-change]: *f*l*a*s*k*e
-OEHLoss [no-change]: *f*l*a*s*k*e
-OEContraction [no-change]: *f*l*a*s*k*e
-OERMetathesis [no-change]: *f*l*a*s*k*e
-OEEpentheticVowel [no-change]: *f*l*a*s*k*e
-OELateUnstressedAgSuffix [no-change]: *f*l*a*s*k*e
-OEPalatalFricativeMerger [no-change]: *f*l*a*s*k*e
-OECjCleanup [no-change]: *f*l*a*s*k*e
-OEXsMerge [no-change]: *f*l*a*s*k*e
-
-## Section 5: Orthography & surface
-
-OldEnglishOrthography [no-change]: *f*l*a*s*k*e
-OEWsPalatalGlide [no-change]: *f*l*a*s*k*e
-OldEnglishRemoveStars: flasce
-OldEnglishSurface [no-change]: flasce
 
 --- flax ---
 PROTO: *fláxsą
@@ -16964,44 +16829,44 @@ OEInterStressRaising [no-change]: *x*é*r*t*ǭ
 OEWICombinativeUUmlaut [no-change]: *x*é*r*t*ǭ
 PWGmcFinalBareALoss [no-change]: *x*é*r*t*ǭ
 NWGmcInStemNLoss [no-change]: *x*é*r*t*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *x*é*r*t*ǭ
-EAFBrighteningUnstressed [no-change]: *x*é*r*t*ǭ
-EAFBrightening [no-change]: *x*é*r*t*ǭ
-EAFBrighteningLongFinal [no-change]: *x*é*r*t*ǭ
-OEBreaking: *x*éo*r*t*ǭ
-OEVelarFricativePalatalization: *ç*éo*r*t*ǭ
-OEARestoration [no-change]: *ç*éo*r*t*ǭ
-OEHeavySyllableNasalApocope [no-change]: *ç*éo*r*t*ǭ
-OESecondaryNasalization [no-change]: *ç*éo*r*t*ǭ
-SieversLawSyncope [no-change]: *ç*éo*r*t*ǭ
-OESkPalatalization [no-change]: *ç*éo*r*t*ǭ
-OEVelarPalatalization [no-change]: *ç*éo*r*t*ǭ
-OEPrefixAReduction [no-change]: *ç*éo*r*t*ǭ
-OEPostVelarWLoss [no-change]: *ç*éo*r*t*ǭ
-OEWsPalatalDiphthongization [no-change]: *ç*éo*r*t*ǭ
-OEIUmlaut [no-change]: *ç*éo*r*t*ǭ
-OEWLossBeforeI [no-change]: *ç*éo*r*t*ǭ
-OELatePalatalDiphthong [no-change]: *ç*éo*r*t*ǭ
-OEJClusterCoalescence [no-change]: *ç*éo*r*t*ǭ
-OEBackMutation [no-change]: *ç*éo*r*t*ǭ
-OEWsPalatalUmlaut [no-change]: *ç*éo*r*t*ǭ
-OEWeakTailNasalLoss [no-change]: *ç*éo*r*t*ǭ
-OEWeightMarkers [no-change]: *ç*éo*r*t*ǭ
-OENonHighSyn [no-change]: *ç*éo*r*t*ǭ
-PGmcBAllophony [no-change]: *ç*éo*r*t*ǭ
-OEMedLongShort [no-change]: *ç*éo*r*t*ǭ
-OEHighVowelApocope [no-change]: *ç*éo*r*t*ǭ
-OEMedialSyncope [no-change]: *ç*éo*r*t*ǭ
-OEHighLinkSyncope [no-change]: *ç*éo*r*t*ǭ
-OELAdjacentSyncope [no-change]: *ç*éo*r*t*ǭ
-OEHighStressDecode [no-change]: *ç*éo*r*t*ǭ
-OEDentalAssimilation [no-change]: *ç*éo*r*t*ǭ
-OEPreconsonantalDegemination [no-change]: *ç*éo*r*t*ǭ
-OEEarlyOShortening [no-change]: *ç*éo*r*t*ǭ
-OEUnstressedFrontingEarly [no-change]: *ç*éo*r*t*ǭ
-OELateOShortening [no-change]: *ç*éo*r*t*ǭ
-OEMedUnstressedORaising [no-change]: *ç*éo*r*t*ǭ
-OEFinalUnstressedOLowering [no-change]: *ç*éo*r*t*ǭ
+PWGmcSurvivingBimoricOUnrounding: *x*é*r*t*ā
+EAFBrighteningUnstressed [no-change]: *x*é*r*t*ā
+EAFBrightening [no-change]: *x*é*r*t*ā
+EAFBrighteningLongFinal: *x*é*r*t*ǣ
+OEBreaking: *x*éo*r*t*ǣ
+OEVelarFricativePalatalization: *ç*éo*r*t*ǣ
+OEARestoration [no-change]: *ç*éo*r*t*ǣ
+OEHeavySyllableNasalApocope [no-change]: *ç*éo*r*t*ǣ
+OESecondaryNasalization [no-change]: *ç*éo*r*t*ǣ
+SieversLawSyncope [no-change]: *ç*éo*r*t*ǣ
+OESkPalatalization [no-change]: *ç*éo*r*t*ǣ
+OEVelarPalatalization [no-change]: *ç*éo*r*t*ǣ
+OEPrefixAReduction [no-change]: *ç*éo*r*t*ǣ
+OEPostVelarWLoss [no-change]: *ç*éo*r*t*ǣ
+OEWsPalatalDiphthongization [no-change]: *ç*éo*r*t*ǣ
+OEIUmlaut [no-change]: *ç*éo*r*t*ǣ
+OEWLossBeforeI [no-change]: *ç*éo*r*t*ǣ
+OELatePalatalDiphthong [no-change]: *ç*éo*r*t*ǣ
+OEJClusterCoalescence [no-change]: *ç*éo*r*t*ǣ
+OEBackMutation [no-change]: *ç*éo*r*t*ǣ
+OEWsPalatalUmlaut [no-change]: *ç*éo*r*t*ǣ
+OEWeakTailNasalLoss [no-change]: *ç*éo*r*t*ǣ
+OEWeightMarkers [no-change]: *ç*éo*r*t*ǣ
+OENonHighSyn [no-change]: *ç*éo*r*t*ǣ
+PGmcBAllophony [no-change]: *ç*éo*r*t*ǣ
+OEMedLongShort [no-change]: *ç*éo*r*t*ǣ
+OEHighVowelApocope [no-change]: *ç*éo*r*t*ǣ
+OEMedialSyncope [no-change]: *ç*éo*r*t*ǣ
+OEHighLinkSyncope [no-change]: *ç*éo*r*t*ǣ
+OELAdjacentSyncope [no-change]: *ç*éo*r*t*ǣ
+OEHighStressDecode [no-change]: *ç*éo*r*t*ǣ
+OEDentalAssimilation [no-change]: *ç*éo*r*t*ǣ
+OEPreconsonantalDegemination [no-change]: *ç*éo*r*t*ǣ
+OEEarlyOShortening [no-change]: *ç*éo*r*t*ǣ
+OEUnstressedFrontingEarly [no-change]: *ç*éo*r*t*ǣ
+OELateOShortening [no-change]: *ç*éo*r*t*ǣ
+OEMedUnstressedORaising [no-change]: *ç*éo*r*t*ǣ
+OEFinalUnstressedOLowering [no-change]: *ç*éo*r*t*ǣ
 OEUnstressedLongVowelShortening: *ç*éo*r*t*æ
 OEUnstressedAEMerger: *ç*éo*r*t*e
 OEMedUnstressedILowering1 [no-change]: *ç*éo*r*t*e
@@ -22364,44 +22229,44 @@ OEInterStressRaising [no-change]: *l*ḯ*n*ǭ
 OEWICombinativeUUmlaut [no-change]: *l*ḯ*n*ǭ
 PWGmcFinalBareALoss [no-change]: *l*ḯ*n*ǭ
 NWGmcInStemNLoss [no-change]: *l*ḯ*n*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *l*ḯ*n*ǭ
-EAFBrighteningUnstressed [no-change]: *l*ḯ*n*ǭ
-EAFBrightening [no-change]: *l*ḯ*n*ǭ
-EAFBrighteningLongFinal [no-change]: *l*ḯ*n*ǭ
-OEBreaking [no-change]: *l*ḯ*n*ǭ
-OEVelarFricativePalatalization [no-change]: *l*ḯ*n*ǭ
-OEARestoration [no-change]: *l*ḯ*n*ǭ
-OEHeavySyllableNasalApocope [no-change]: *l*ḯ*n*ǭ
-OESecondaryNasalization [no-change]: *l*ḯ*n*ǭ
-SieversLawSyncope [no-change]: *l*ḯ*n*ǭ
-OESkPalatalization [no-change]: *l*ḯ*n*ǭ
-OEVelarPalatalization [no-change]: *l*ḯ*n*ǭ
-OEPrefixAReduction [no-change]: *l*ḯ*n*ǭ
-OEPostVelarWLoss [no-change]: *l*ḯ*n*ǭ
-OEWsPalatalDiphthongization [no-change]: *l*ḯ*n*ǭ
-OEIUmlaut [no-change]: *l*ḯ*n*ǭ
-OEWLossBeforeI [no-change]: *l*ḯ*n*ǭ
-OELatePalatalDiphthong [no-change]: *l*ḯ*n*ǭ
-OEJClusterCoalescence [no-change]: *l*ḯ*n*ǭ
-OEBackMutation [no-change]: *l*ḯ*n*ǭ
-OEWsPalatalUmlaut [no-change]: *l*ḯ*n*ǭ
-OEWeakTailNasalLoss [no-change]: *l*ḯ*n*ǭ
-OEWeightMarkers [no-change]: *l*ḯ*n*ǭ
-OENonHighSyn [no-change]: *l*ḯ*n*ǭ
-PGmcBAllophony [no-change]: *l*ḯ*n*ǭ
-OEMedLongShort [no-change]: *l*ḯ*n*ǭ
-OEHighVowelApocope [no-change]: *l*ḯ*n*ǭ
-OEMedialSyncope [no-change]: *l*ḯ*n*ǭ
-OEHighLinkSyncope [no-change]: *l*ḯ*n*ǭ
-OELAdjacentSyncope [no-change]: *l*ḯ*n*ǭ
-OEHighStressDecode [no-change]: *l*ḯ*n*ǭ
-OEDentalAssimilation [no-change]: *l*ḯ*n*ǭ
-OEPreconsonantalDegemination [no-change]: *l*ḯ*n*ǭ
-OEEarlyOShortening [no-change]: *l*ḯ*n*ǭ
-OEUnstressedFrontingEarly [no-change]: *l*ḯ*n*ǭ
-OELateOShortening [no-change]: *l*ḯ*n*ǭ
-OEMedUnstressedORaising [no-change]: *l*ḯ*n*ǭ
-OEFinalUnstressedOLowering [no-change]: *l*ḯ*n*ǭ
+PWGmcSurvivingBimoricOUnrounding: *l*ḯ*n*ā
+EAFBrighteningUnstressed [no-change]: *l*ḯ*n*ā
+EAFBrightening [no-change]: *l*ḯ*n*ā
+EAFBrighteningLongFinal: *l*ḯ*n*ǣ
+OEBreaking [no-change]: *l*ḯ*n*ǣ
+OEVelarFricativePalatalization [no-change]: *l*ḯ*n*ǣ
+OEARestoration [no-change]: *l*ḯ*n*ǣ
+OEHeavySyllableNasalApocope [no-change]: *l*ḯ*n*ǣ
+OESecondaryNasalization [no-change]: *l*ḯ*n*ǣ
+SieversLawSyncope [no-change]: *l*ḯ*n*ǣ
+OESkPalatalization [no-change]: *l*ḯ*n*ǣ
+OEVelarPalatalization [no-change]: *l*ḯ*n*ǣ
+OEPrefixAReduction [no-change]: *l*ḯ*n*ǣ
+OEPostVelarWLoss [no-change]: *l*ḯ*n*ǣ
+OEWsPalatalDiphthongization [no-change]: *l*ḯ*n*ǣ
+OEIUmlaut [no-change]: *l*ḯ*n*ǣ
+OEWLossBeforeI [no-change]: *l*ḯ*n*ǣ
+OELatePalatalDiphthong [no-change]: *l*ḯ*n*ǣ
+OEJClusterCoalescence [no-change]: *l*ḯ*n*ǣ
+OEBackMutation [no-change]: *l*ḯ*n*ǣ
+OEWsPalatalUmlaut [no-change]: *l*ḯ*n*ǣ
+OEWeakTailNasalLoss [no-change]: *l*ḯ*n*ǣ
+OEWeightMarkers [no-change]: *l*ḯ*n*ǣ
+OENonHighSyn [no-change]: *l*ḯ*n*ǣ
+PGmcBAllophony [no-change]: *l*ḯ*n*ǣ
+OEMedLongShort [no-change]: *l*ḯ*n*ǣ
+OEHighVowelApocope [no-change]: *l*ḯ*n*ǣ
+OEMedialSyncope [no-change]: *l*ḯ*n*ǣ
+OEHighLinkSyncope [no-change]: *l*ḯ*n*ǣ
+OELAdjacentSyncope [no-change]: *l*ḯ*n*ǣ
+OEHighStressDecode [no-change]: *l*ḯ*n*ǣ
+OEDentalAssimilation [no-change]: *l*ḯ*n*ǣ
+OEPreconsonantalDegemination [no-change]: *l*ḯ*n*ǣ
+OEEarlyOShortening [no-change]: *l*ḯ*n*ǣ
+OEUnstressedFrontingEarly [no-change]: *l*ḯ*n*ǣ
+OELateOShortening [no-change]: *l*ḯ*n*ǣ
+OEMedUnstressedORaising [no-change]: *l*ḯ*n*ǣ
+OEFinalUnstressedOLowering [no-change]: *l*ḯ*n*ǣ
 OEUnstressedLongVowelShortening: *l*ḯ*n*æ
 OEUnstressedAEMerger: *l*ḯ*n*e
 OEMedUnstressedILowering1 [no-change]: *l*ḯ*n*e
@@ -22499,44 +22364,44 @@ OEInterStressRaising [no-change]: *l*ḯ*s*t*ǭ
 OEWICombinativeUUmlaut [no-change]: *l*ḯ*s*t*ǭ
 PWGmcFinalBareALoss [no-change]: *l*ḯ*s*t*ǭ
 NWGmcInStemNLoss [no-change]: *l*ḯ*s*t*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *l*ḯ*s*t*ǭ
-EAFBrighteningUnstressed [no-change]: *l*ḯ*s*t*ǭ
-EAFBrightening [no-change]: *l*ḯ*s*t*ǭ
-EAFBrighteningLongFinal [no-change]: *l*ḯ*s*t*ǭ
-OEBreaking [no-change]: *l*ḯ*s*t*ǭ
-OEVelarFricativePalatalization [no-change]: *l*ḯ*s*t*ǭ
-OEARestoration [no-change]: *l*ḯ*s*t*ǭ
-OEHeavySyllableNasalApocope [no-change]: *l*ḯ*s*t*ǭ
-OESecondaryNasalization [no-change]: *l*ḯ*s*t*ǭ
-SieversLawSyncope [no-change]: *l*ḯ*s*t*ǭ
-OESkPalatalization [no-change]: *l*ḯ*s*t*ǭ
-OEVelarPalatalization [no-change]: *l*ḯ*s*t*ǭ
-OEPrefixAReduction [no-change]: *l*ḯ*s*t*ǭ
-OEPostVelarWLoss [no-change]: *l*ḯ*s*t*ǭ
-OEWsPalatalDiphthongization [no-change]: *l*ḯ*s*t*ǭ
-OEIUmlaut [no-change]: *l*ḯ*s*t*ǭ
-OEWLossBeforeI [no-change]: *l*ḯ*s*t*ǭ
-OELatePalatalDiphthong [no-change]: *l*ḯ*s*t*ǭ
-OEJClusterCoalescence [no-change]: *l*ḯ*s*t*ǭ
-OEBackMutation [no-change]: *l*ḯ*s*t*ǭ
-OEWsPalatalUmlaut [no-change]: *l*ḯ*s*t*ǭ
-OEWeakTailNasalLoss [no-change]: *l*ḯ*s*t*ǭ
-OEWeightMarkers [no-change]: *l*ḯ*s*t*ǭ
-OENonHighSyn [no-change]: *l*ḯ*s*t*ǭ
-PGmcBAllophony [no-change]: *l*ḯ*s*t*ǭ
-OEMedLongShort [no-change]: *l*ḯ*s*t*ǭ
-OEHighVowelApocope [no-change]: *l*ḯ*s*t*ǭ
-OEMedialSyncope [no-change]: *l*ḯ*s*t*ǭ
-OEHighLinkSyncope [no-change]: *l*ḯ*s*t*ǭ
-OELAdjacentSyncope [no-change]: *l*ḯ*s*t*ǭ
-OEHighStressDecode [no-change]: *l*ḯ*s*t*ǭ
-OEDentalAssimilation [no-change]: *l*ḯ*s*t*ǭ
-OEPreconsonantalDegemination [no-change]: *l*ḯ*s*t*ǭ
-OEEarlyOShortening [no-change]: *l*ḯ*s*t*ǭ
-OEUnstressedFrontingEarly [no-change]: *l*ḯ*s*t*ǭ
-OELateOShortening [no-change]: *l*ḯ*s*t*ǭ
-OEMedUnstressedORaising [no-change]: *l*ḯ*s*t*ǭ
-OEFinalUnstressedOLowering [no-change]: *l*ḯ*s*t*ǭ
+PWGmcSurvivingBimoricOUnrounding: *l*ḯ*s*t*ā
+EAFBrighteningUnstressed [no-change]: *l*ḯ*s*t*ā
+EAFBrightening [no-change]: *l*ḯ*s*t*ā
+EAFBrighteningLongFinal: *l*ḯ*s*t*ǣ
+OEBreaking [no-change]: *l*ḯ*s*t*ǣ
+OEVelarFricativePalatalization [no-change]: *l*ḯ*s*t*ǣ
+OEARestoration [no-change]: *l*ḯ*s*t*ǣ
+OEHeavySyllableNasalApocope [no-change]: *l*ḯ*s*t*ǣ
+OESecondaryNasalization [no-change]: *l*ḯ*s*t*ǣ
+SieversLawSyncope [no-change]: *l*ḯ*s*t*ǣ
+OESkPalatalization [no-change]: *l*ḯ*s*t*ǣ
+OEVelarPalatalization [no-change]: *l*ḯ*s*t*ǣ
+OEPrefixAReduction [no-change]: *l*ḯ*s*t*ǣ
+OEPostVelarWLoss [no-change]: *l*ḯ*s*t*ǣ
+OEWsPalatalDiphthongization [no-change]: *l*ḯ*s*t*ǣ
+OEIUmlaut [no-change]: *l*ḯ*s*t*ǣ
+OEWLossBeforeI [no-change]: *l*ḯ*s*t*ǣ
+OELatePalatalDiphthong [no-change]: *l*ḯ*s*t*ǣ
+OEJClusterCoalescence [no-change]: *l*ḯ*s*t*ǣ
+OEBackMutation [no-change]: *l*ḯ*s*t*ǣ
+OEWsPalatalUmlaut [no-change]: *l*ḯ*s*t*ǣ
+OEWeakTailNasalLoss [no-change]: *l*ḯ*s*t*ǣ
+OEWeightMarkers [no-change]: *l*ḯ*s*t*ǣ
+OENonHighSyn [no-change]: *l*ḯ*s*t*ǣ
+PGmcBAllophony [no-change]: *l*ḯ*s*t*ǣ
+OEMedLongShort [no-change]: *l*ḯ*s*t*ǣ
+OEHighVowelApocope [no-change]: *l*ḯ*s*t*ǣ
+OEMedialSyncope [no-change]: *l*ḯ*s*t*ǣ
+OEHighLinkSyncope [no-change]: *l*ḯ*s*t*ǣ
+OELAdjacentSyncope [no-change]: *l*ḯ*s*t*ǣ
+OEHighStressDecode [no-change]: *l*ḯ*s*t*ǣ
+OEDentalAssimilation [no-change]: *l*ḯ*s*t*ǣ
+OEPreconsonantalDegemination [no-change]: *l*ḯ*s*t*ǣ
+OEEarlyOShortening [no-change]: *l*ḯ*s*t*ǣ
+OEUnstressedFrontingEarly [no-change]: *l*ḯ*s*t*ǣ
+OELateOShortening [no-change]: *l*ḯ*s*t*ǣ
+OEMedUnstressedORaising [no-change]: *l*ḯ*s*t*ǣ
+OEFinalUnstressedOLowering [no-change]: *l*ḯ*s*t*ǣ
 OEUnstressedLongVowelShortening: *l*ḯ*s*t*æ
 OEUnstressedAEMerger: *l*ḯ*s*t*e
 OEMedUnstressedILowering1 [no-change]: *l*ḯ*s*t*e
@@ -26954,44 +26819,44 @@ OEInterStressRaising [no-change]: *n*á*t*i*l*ǭ
 OEWICombinativeUUmlaut [no-change]: *n*á*t*i*l*ǭ
 PWGmcFinalBareALoss [no-change]: *n*á*t*i*l*ǭ
 NWGmcInStemNLoss [no-change]: *n*á*t*i*l*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *n*á*t*i*l*ǭ
-EAFBrighteningUnstressed [no-change]: *n*á*t*i*l*ǭ
-EAFBrightening: *n*æ*t*i*l*ǭ
-EAFBrighteningLongFinal [no-change]: *n*æ*t*i*l*ǭ
-OEBreaking [no-change]: *n*æ*t*i*l*ǭ
-OEVelarFricativePalatalization [no-change]: *n*æ*t*i*l*ǭ
-OEARestoration [no-change]: *n*æ*t*i*l*ǭ
-OEHeavySyllableNasalApocope [no-change]: *n*æ*t*i*l*ǭ
-OESecondaryNasalization [no-change]: *n*æ*t*i*l*ǭ
-SieversLawSyncope [no-change]: *n*æ*t*i*l*ǭ
-OESkPalatalization [no-change]: *n*æ*t*i*l*ǭ
-OEVelarPalatalization [no-change]: *n*æ*t*i*l*ǭ
-OEPrefixAReduction [no-change]: *n*æ*t*i*l*ǭ
-OEPostVelarWLoss [no-change]: *n*æ*t*i*l*ǭ
-OEWsPalatalDiphthongization [no-change]: *n*æ*t*i*l*ǭ
-OEIUmlaut: *n*e*t*i*l*ǭ
-OEWLossBeforeI [no-change]: *n*e*t*i*l*ǭ
-OELatePalatalDiphthong [no-change]: *n*e*t*i*l*ǭ
-OEJClusterCoalescence [no-change]: *n*e*t*i*l*ǭ
-OEBackMutation [no-change]: *n*e*t*i*l*ǭ
-OEWsPalatalUmlaut [no-change]: *n*e*t*i*l*ǭ
-OEWeakTailNasalLoss [no-change]: *n*e*t*i*l*ǭ
-OEWeightMarkers [no-change]: *n*e*t*i*l*ǭ
-OENonHighSyn [no-change]: *n*e*t*i*l*ǭ
-PGmcBAllophony [no-change]: *n*e*t*i*l*ǭ
-OEMedLongShort [no-change]: *n*e*t*i*l*ǭ
-OEHighVowelApocope [no-change]: *n*e*t*i*l*ǭ
-OEMedialSyncope [no-change]: *n*e*t*i*l*ǭ
-OEHighLinkSyncope [no-change]: *n*e*t*i*l*ǭ
-OELAdjacentSyncope: *n*e*t*l*ǭ
-OEHighStressDecode [no-change]: *n*e*t*l*ǭ
-OEDentalAssimilation [no-change]: *n*e*t*l*ǭ
-OEPreconsonantalDegemination [no-change]: *n*e*t*l*ǭ
-OEEarlyOShortening [no-change]: *n*e*t*l*ǭ
-OEUnstressedFrontingEarly [no-change]: *n*e*t*l*ǭ
-OELateOShortening [no-change]: *n*e*t*l*ǭ
-OEMedUnstressedORaising [no-change]: *n*e*t*l*ǭ
-OEFinalUnstressedOLowering [no-change]: *n*e*t*l*ǭ
+PWGmcSurvivingBimoricOUnrounding: *n*á*t*i*l*ā
+EAFBrighteningUnstressed [no-change]: *n*á*t*i*l*ā
+EAFBrightening: *n*æ*t*i*l*ā
+EAFBrighteningLongFinal: *n*æ*t*i*l*ǣ
+OEBreaking [no-change]: *n*æ*t*i*l*ǣ
+OEVelarFricativePalatalization [no-change]: *n*æ*t*i*l*ǣ
+OEARestoration [no-change]: *n*æ*t*i*l*ǣ
+OEHeavySyllableNasalApocope [no-change]: *n*æ*t*i*l*ǣ
+OESecondaryNasalization [no-change]: *n*æ*t*i*l*ǣ
+SieversLawSyncope [no-change]: *n*æ*t*i*l*ǣ
+OESkPalatalization [no-change]: *n*æ*t*i*l*ǣ
+OEVelarPalatalization [no-change]: *n*æ*t*i*l*ǣ
+OEPrefixAReduction [no-change]: *n*æ*t*i*l*ǣ
+OEPostVelarWLoss [no-change]: *n*æ*t*i*l*ǣ
+OEWsPalatalDiphthongization [no-change]: *n*æ*t*i*l*ǣ
+OEIUmlaut: *n*e*t*i*l*ǣ
+OEWLossBeforeI [no-change]: *n*e*t*i*l*ǣ
+OELatePalatalDiphthong [no-change]: *n*e*t*i*l*ǣ
+OEJClusterCoalescence [no-change]: *n*e*t*i*l*ǣ
+OEBackMutation [no-change]: *n*e*t*i*l*ǣ
+OEWsPalatalUmlaut [no-change]: *n*e*t*i*l*ǣ
+OEWeakTailNasalLoss [no-change]: *n*e*t*i*l*ǣ
+OEWeightMarkers [no-change]: *n*e*t*i*l*ǣ
+OENonHighSyn [no-change]: *n*e*t*i*l*ǣ
+PGmcBAllophony [no-change]: *n*e*t*i*l*ǣ
+OEMedLongShort [no-change]: *n*e*t*i*l*ǣ
+OEHighVowelApocope [no-change]: *n*e*t*i*l*ǣ
+OEMedialSyncope [no-change]: *n*e*t*i*l*ǣ
+OEHighLinkSyncope [no-change]: *n*e*t*i*l*ǣ
+OELAdjacentSyncope: *n*e*t*l*ǣ
+OEHighStressDecode [no-change]: *n*e*t*l*ǣ
+OEDentalAssimilation [no-change]: *n*e*t*l*ǣ
+OEPreconsonantalDegemination [no-change]: *n*e*t*l*ǣ
+OEEarlyOShortening [no-change]: *n*e*t*l*ǣ
+OEUnstressedFrontingEarly [no-change]: *n*e*t*l*ǣ
+OELateOShortening [no-change]: *n*e*t*l*ǣ
+OEMedUnstressedORaising [no-change]: *n*e*t*l*ǣ
+OEFinalUnstressedOLowering [no-change]: *n*e*t*l*ǣ
 OEUnstressedLongVowelShortening: *n*e*t*l*æ
 OEUnstressedAEMerger: *n*e*t*l*e
 OEMedUnstressedILowering1 [no-change]: *n*e*t*l*e
@@ -27155,6 +27020,141 @@ OldEnglishOrthography: *n*ih*t
 OEWsPalatalGlide [no-change]: *n*ih*t
 OldEnglishRemoveStars: niht
 OldEnglishSurface [no-change]: niht
+
+--- nightmare ---
+PROTO: *márōn
+INPUT_CONTEXT: SC098; stress=stressed; finality=final
+EXPECTED: mære
+OUTPUTS: mære
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *m*á*r*ō*n
+PGmcGmSimplification [no-change]: *m*á*r*ō*n
+PGmcNasalLossBeforeX [no-change]: *m*á*r*ō*n
+RootNounNomZLoss [no-change]: *m*á*r*ō*n
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *m*á*r*ō*n
+PNWGmcAToUBeforeM [no-change]: *m*á*r*ō*n
+PNWGmcLongELowering [no-change]: *m*á*r*ō*n
+PWGmcEarlyIApocope [no-change]: *m*á*r*ō*n
+PWGmcFinalOrLowering [no-change]: *m*á*r*ō*n
+PWGmcCoronalWAssimilation [no-change]: *m*á*r*ō*n
+OEWWSimplification [no-change]: *m*á*r*ō*n
+PWGmcIjContraction [no-change]: *m*á*r*ō*n
+PWGmcJGemination [no-change]: *m*á*r*ō*n
+PWGmcSyllabicJ [no-change]: *m*á*r*ō*n
+PNWGmcPreconsonantalXLoss [no-change]: *m*á*r*ō*n
+EAFLThVoicing [no-change]: *m*á*r*ō*n
+PWGmcDentalHardening [no-change]: *m*á*r*ō*n
+PWGmcEndinglessAw [no-change]: *m*á*r*ō*n
+PNWGmcILowering [no-change]: *m*á*r*ō*n
+PNWGmcULowering [no-change]: *m*á*r*ō*n
+PNWGmcStressedMonosyllableORaising [no-change]: *m*á*r*ō*n
+PNWGmcFinalLongORaising [no-change]: *m*á*r*ō*n
+EAFFinalZDeletion [no-change]: *m*á*r*ō*n
+PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*r*ō*n
+MonosyllabicFinalZLoss [no-change]: *m*á*r*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*r*ō*n
+EAFRhotacism [no-change]: *m*á*r*ō*n
+PNWGmcMnDissimilation [no-change]: *m*á*r*ō*n
+PNWGmcNStemNLoss: *m*á*r*ǭ
+EAFNasalSpirantLengthening [no-change]: *m*á*r*ǭ
+EAFNasalSpirantLoss [no-change]: *m*á*r*ǭ
+EAFHiatusWInsertion [no-change]: *m*á*r*ǭ
+EAFLongANasalRounding [no-change]: *m*á*r*ǭ
+EAFNasalizedLowRounding [no-change]: *m*á*r*ǭ
+EAFLongAFronting [no-change]: *m*á*r*ǭ
+OEStressFootContext [no-change]: *m*á*r*ǭ
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *m*á*r*ǭ
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *m*á*r*ǭ
+OEAuBrightening [no-change]: *m*á*r*ǭ
+OEEwLongDiphthong [no-change]: *m*á*r*ǭ
+OEJWWSimplification [no-change]: *m*á*r*ǭ
+OEJGlideIO [no-change]: *m*á*r*ǭ
+OEDiphthongLeveling [no-change]: *m*á*r*ǭ
+OEAwLongDiphthong [no-change]: *m*á*r*ǭ
+OECompoundLinkingSyncope [no-change]: *m*á*r*ǭ
+OEStripSecondaryStress [no-change]: *m*á*r*ǭ
+OEInterStressRaising [no-change]: *m*á*r*ǭ
+OEWICombinativeUUmlaut [no-change]: *m*á*r*ǭ
+PWGmcFinalBareALoss [no-change]: *m*á*r*ǭ
+NWGmcInStemNLoss [no-change]: *m*á*r*ǭ
+PWGmcSurvivingBimoricOUnrounding: *m*á*r*ā
+EAFBrighteningUnstressed [no-change]: *m*á*r*ā
+EAFBrightening: *m*æ*r*ā
+EAFBrighteningLongFinal: *m*æ*r*ǣ
+OEBreaking [no-change]: *m*æ*r*ǣ
+OEVelarFricativePalatalization [no-change]: *m*æ*r*ǣ
+OEARestoration [no-change]: *m*æ*r*ǣ
+OEHeavySyllableNasalApocope [no-change]: *m*æ*r*ǣ
+OESecondaryNasalization [no-change]: *m*æ*r*ǣ
+SieversLawSyncope [no-change]: *m*æ*r*ǣ
+OESkPalatalization [no-change]: *m*æ*r*ǣ
+OEVelarPalatalization [no-change]: *m*æ*r*ǣ
+OEPrefixAReduction [no-change]: *m*æ*r*ǣ
+OEPostVelarWLoss [no-change]: *m*æ*r*ǣ
+OEWsPalatalDiphthongization [no-change]: *m*æ*r*ǣ
+OEIUmlaut [no-change]: *m*æ*r*ǣ
+OEWLossBeforeI [no-change]: *m*æ*r*ǣ
+OELatePalatalDiphthong [no-change]: *m*æ*r*ǣ
+OEJClusterCoalescence [no-change]: *m*æ*r*ǣ
+OEBackMutation [no-change]: *m*æ*r*ǣ
+OEWsPalatalUmlaut [no-change]: *m*æ*r*ǣ
+OEWeakTailNasalLoss [no-change]: *m*æ*r*ǣ
+OEWeightMarkers [no-change]: *m*æ*r*ǣ
+OENonHighSyn [no-change]: *m*æ*r*ǣ
+PGmcBAllophony [no-change]: *m*æ*r*ǣ
+OEMedLongShort [no-change]: *m*æ*r*ǣ
+OEHighVowelApocope [no-change]: *m*æ*r*ǣ
+OEMedialSyncope [no-change]: *m*æ*r*ǣ
+OEHighLinkSyncope [no-change]: *m*æ*r*ǣ
+OELAdjacentSyncope [no-change]: *m*æ*r*ǣ
+OEHighStressDecode [no-change]: *m*æ*r*ǣ
+OEDentalAssimilation [no-change]: *m*æ*r*ǣ
+OEPreconsonantalDegemination [no-change]: *m*æ*r*ǣ
+OEEarlyOShortening [no-change]: *m*æ*r*ǣ
+OEUnstressedFrontingEarly [no-change]: *m*æ*r*ǣ
+OELateOShortening [no-change]: *m*æ*r*ǣ
+OEMedUnstressedORaising [no-change]: *m*æ*r*ǣ
+OEFinalUnstressedOLowering [no-change]: *m*æ*r*ǣ
+OEUnstressedLongVowelShortening: *m*æ*r*æ
+OEUnstressedAEMerger: *m*æ*r*e
+OEMedUnstressedILowering1 [no-change]: *m*æ*r*e
+OEMedUnstressedILowering [no-change]: *m*æ*r*e
+OEMedUnstressedULowering [no-change]: *m*æ*r*e
+OEPrefixIReduction [no-change]: *m*æ*r*e
+OEWeakTailReduction [no-change]: *m*æ*r*e
+OEJLossAfterHeavy [no-change]: *m*æ*r*e
+OEFinalGeminateSimplification [no-change]: *m*æ*r*e
+OEJStrengtheningAfterFrontDiphthong [no-change]: *m*æ*r*e
+OEIntervocalicJVocalization [no-change]: *m*æ*r*e
+OEUnstressedEIContraction [no-change]: *m*æ*r*e
+OEWeightCleanup [no-change]: *m*æ*r*e
+OEHLoss [no-change]: *m*æ*r*e
+OEContraction [no-change]: *m*æ*r*e
+OERMetathesis [no-change]: *m*æ*r*e
+OEEpentheticVowel [no-change]: *m*æ*r*e
+OELateUnstressedAgSuffix [no-change]: *m*æ*r*e
+OEPalatalFricativeMerger [no-change]: *m*æ*r*e
+OECjCleanup [no-change]: *m*æ*r*e
+OEXsMerge [no-change]: *m*æ*r*e
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography [no-change]: *m*æ*r*e
+OEWsPalatalGlide [no-change]: *m*æ*r*e
+OldEnglishRemoveStars: mære
+OldEnglishSurface [no-change]: mære
 
 --- nine ---
 PROTO: *nígun
@@ -33164,44 +33164,44 @@ OEInterStressRaising [no-change]: *s*ḯ*d*ǭ
 OEWICombinativeUUmlaut [no-change]: *s*ḯ*d*ǭ
 PWGmcFinalBareALoss [no-change]: *s*ḯ*d*ǭ
 NWGmcInStemNLoss [no-change]: *s*ḯ*d*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *s*ḯ*d*ǭ
-EAFBrighteningUnstressed [no-change]: *s*ḯ*d*ǭ
-EAFBrightening [no-change]: *s*ḯ*d*ǭ
-EAFBrighteningLongFinal [no-change]: *s*ḯ*d*ǭ
-OEBreaking [no-change]: *s*ḯ*d*ǭ
-OEVelarFricativePalatalization [no-change]: *s*ḯ*d*ǭ
-OEARestoration [no-change]: *s*ḯ*d*ǭ
-OEHeavySyllableNasalApocope [no-change]: *s*ḯ*d*ǭ
-OESecondaryNasalization [no-change]: *s*ḯ*d*ǭ
-SieversLawSyncope [no-change]: *s*ḯ*d*ǭ
-OESkPalatalization [no-change]: *s*ḯ*d*ǭ
-OEVelarPalatalization [no-change]: *s*ḯ*d*ǭ
-OEPrefixAReduction [no-change]: *s*ḯ*d*ǭ
-OEPostVelarWLoss [no-change]: *s*ḯ*d*ǭ
-OEWsPalatalDiphthongization [no-change]: *s*ḯ*d*ǭ
-OEIUmlaut [no-change]: *s*ḯ*d*ǭ
-OEWLossBeforeI [no-change]: *s*ḯ*d*ǭ
-OELatePalatalDiphthong [no-change]: *s*ḯ*d*ǭ
-OEJClusterCoalescence [no-change]: *s*ḯ*d*ǭ
-OEBackMutation [no-change]: *s*ḯ*d*ǭ
-OEWsPalatalUmlaut [no-change]: *s*ḯ*d*ǭ
-OEWeakTailNasalLoss [no-change]: *s*ḯ*d*ǭ
-OEWeightMarkers [no-change]: *s*ḯ*d*ǭ
-OENonHighSyn [no-change]: *s*ḯ*d*ǭ
-PGmcBAllophony [no-change]: *s*ḯ*d*ǭ
-OEMedLongShort [no-change]: *s*ḯ*d*ǭ
-OEHighVowelApocope [no-change]: *s*ḯ*d*ǭ
-OEMedialSyncope [no-change]: *s*ḯ*d*ǭ
-OEHighLinkSyncope [no-change]: *s*ḯ*d*ǭ
-OELAdjacentSyncope [no-change]: *s*ḯ*d*ǭ
-OEHighStressDecode [no-change]: *s*ḯ*d*ǭ
-OEDentalAssimilation [no-change]: *s*ḯ*d*ǭ
-OEPreconsonantalDegemination [no-change]: *s*ḯ*d*ǭ
-OEEarlyOShortening [no-change]: *s*ḯ*d*ǭ
-OEUnstressedFrontingEarly [no-change]: *s*ḯ*d*ǭ
-OELateOShortening [no-change]: *s*ḯ*d*ǭ
-OEMedUnstressedORaising [no-change]: *s*ḯ*d*ǭ
-OEFinalUnstressedOLowering [no-change]: *s*ḯ*d*ǭ
+PWGmcSurvivingBimoricOUnrounding: *s*ḯ*d*ā
+EAFBrighteningUnstressed [no-change]: *s*ḯ*d*ā
+EAFBrightening [no-change]: *s*ḯ*d*ā
+EAFBrighteningLongFinal: *s*ḯ*d*ǣ
+OEBreaking [no-change]: *s*ḯ*d*ǣ
+OEVelarFricativePalatalization [no-change]: *s*ḯ*d*ǣ
+OEARestoration [no-change]: *s*ḯ*d*ǣ
+OEHeavySyllableNasalApocope [no-change]: *s*ḯ*d*ǣ
+OESecondaryNasalization [no-change]: *s*ḯ*d*ǣ
+SieversLawSyncope [no-change]: *s*ḯ*d*ǣ
+OESkPalatalization [no-change]: *s*ḯ*d*ǣ
+OEVelarPalatalization [no-change]: *s*ḯ*d*ǣ
+OEPrefixAReduction [no-change]: *s*ḯ*d*ǣ
+OEPostVelarWLoss [no-change]: *s*ḯ*d*ǣ
+OEWsPalatalDiphthongization [no-change]: *s*ḯ*d*ǣ
+OEIUmlaut [no-change]: *s*ḯ*d*ǣ
+OEWLossBeforeI [no-change]: *s*ḯ*d*ǣ
+OELatePalatalDiphthong [no-change]: *s*ḯ*d*ǣ
+OEJClusterCoalescence [no-change]: *s*ḯ*d*ǣ
+OEBackMutation [no-change]: *s*ḯ*d*ǣ
+OEWsPalatalUmlaut [no-change]: *s*ḯ*d*ǣ
+OEWeakTailNasalLoss [no-change]: *s*ḯ*d*ǣ
+OEWeightMarkers [no-change]: *s*ḯ*d*ǣ
+OENonHighSyn [no-change]: *s*ḯ*d*ǣ
+PGmcBAllophony [no-change]: *s*ḯ*d*ǣ
+OEMedLongShort [no-change]: *s*ḯ*d*ǣ
+OEHighVowelApocope [no-change]: *s*ḯ*d*ǣ
+OEMedialSyncope [no-change]: *s*ḯ*d*ǣ
+OEHighLinkSyncope [no-change]: *s*ḯ*d*ǣ
+OELAdjacentSyncope [no-change]: *s*ḯ*d*ǣ
+OEHighStressDecode [no-change]: *s*ḯ*d*ǣ
+OEDentalAssimilation [no-change]: *s*ḯ*d*ǣ
+OEPreconsonantalDegemination [no-change]: *s*ḯ*d*ǣ
+OEEarlyOShortening [no-change]: *s*ḯ*d*ǣ
+OEUnstressedFrontingEarly [no-change]: *s*ḯ*d*ǣ
+OELateOShortening [no-change]: *s*ḯ*d*ǣ
+OEMedUnstressedORaising [no-change]: *s*ḯ*d*ǣ
+OEFinalUnstressedOLowering [no-change]: *s*ḯ*d*ǣ
 OEUnstressedLongVowelShortening: *s*ḯ*d*æ
 OEUnstressedAEMerger: *s*ḯ*d*e
 OEMedUnstressedILowering1 [no-change]: *s*ḯ*d*e
@@ -34919,44 +34919,44 @@ OEInterStressRaising [no-change]: *s*ā*w*a*l*ǭ
 OEWICombinativeUUmlaut [no-change]: *s*ā*w*a*l*ǭ
 PWGmcFinalBareALoss [no-change]: *s*ā*w*a*l*ǭ
 NWGmcInStemNLoss [no-change]: *s*ā*w*a*l*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *s*ā*w*a*l*ǭ
-EAFBrighteningUnstressed: *s*ā*w*æ*l*ǭ
-EAFBrightening [no-change]: *s*ā*w*æ*l*ǭ
-EAFBrighteningLongFinal [no-change]: *s*ā*w*æ*l*ǭ
-OEBreaking [no-change]: *s*ā*w*æ*l*ǭ
-OEVelarFricativePalatalization [no-change]: *s*ā*w*æ*l*ǭ
-OEARestoration: *s*ā*w*a*l*ǭ
-OEHeavySyllableNasalApocope [no-change]: *s*ā*w*a*l*ǭ
-OESecondaryNasalization [no-change]: *s*ā*w*a*l*ǭ
-SieversLawSyncope [no-change]: *s*ā*w*a*l*ǭ
-OESkPalatalization [no-change]: *s*ā*w*a*l*ǭ
-OEVelarPalatalization [no-change]: *s*ā*w*a*l*ǭ
-OEPrefixAReduction [no-change]: *s*ā*w*a*l*ǭ
-OEPostVelarWLoss [no-change]: *s*ā*w*a*l*ǭ
-OEWsPalatalDiphthongization [no-change]: *s*ā*w*a*l*ǭ
-OEIUmlaut [no-change]: *s*ā*w*a*l*ǭ
-OEWLossBeforeI [no-change]: *s*ā*w*a*l*ǭ
-OELatePalatalDiphthong [no-change]: *s*ā*w*a*l*ǭ
-OEJClusterCoalescence [no-change]: *s*ā*w*a*l*ǭ
-OEBackMutation [no-change]: *s*ā*w*a*l*ǭ
-OEWsPalatalUmlaut [no-change]: *s*ā*w*a*l*ǭ
-OEWeakTailNasalLoss [no-change]: *s*ā*w*a*l*ǭ
-OEWeightMarkers [no-change]: *s*ā*w*a*l*ǭ
-OENonHighSyn: *s*ā*w*l*ǭ
-PGmcBAllophony [no-change]: *s*ā*w*l*ǭ
-OEMedLongShort [no-change]: *s*ā*w*l*ǭ
-OEHighVowelApocope [no-change]: *s*ā*w*l*ǭ
-OEMedialSyncope [no-change]: *s*ā*w*l*ǭ
-OEHighLinkSyncope [no-change]: *s*ā*w*l*ǭ
-OELAdjacentSyncope [no-change]: *s*ā*w*l*ǭ
-OEHighStressDecode [no-change]: *s*ā*w*l*ǭ
-OEDentalAssimilation [no-change]: *s*ā*w*l*ǭ
-OEPreconsonantalDegemination [no-change]: *s*ā*w*l*ǭ
-OEEarlyOShortening [no-change]: *s*ā*w*l*ǭ
-OEUnstressedFrontingEarly [no-change]: *s*ā*w*l*ǭ
-OELateOShortening [no-change]: *s*ā*w*l*ǭ
-OEMedUnstressedORaising [no-change]: *s*ā*w*l*ǭ
-OEFinalUnstressedOLowering [no-change]: *s*ā*w*l*ǭ
+PWGmcSurvivingBimoricOUnrounding: *s*ā*w*a*l*ā
+EAFBrighteningUnstressed: *s*ā*w*æ*l*ā
+EAFBrightening [no-change]: *s*ā*w*æ*l*ā
+EAFBrighteningLongFinal: *s*ā*w*æ*l*ǣ
+OEBreaking [no-change]: *s*ā*w*æ*l*ǣ
+OEVelarFricativePalatalization [no-change]: *s*ā*w*æ*l*ǣ
+OEARestoration [no-change]: *s*ā*w*æ*l*ǣ
+OEHeavySyllableNasalApocope [no-change]: *s*ā*w*æ*l*ǣ
+OESecondaryNasalization [no-change]: *s*ā*w*æ*l*ǣ
+SieversLawSyncope [no-change]: *s*ā*w*æ*l*ǣ
+OESkPalatalization [no-change]: *s*ā*w*æ*l*ǣ
+OEVelarPalatalization [no-change]: *s*ā*w*æ*l*ǣ
+OEPrefixAReduction [no-change]: *s*ā*w*æ*l*ǣ
+OEPostVelarWLoss [no-change]: *s*ā*w*æ*l*ǣ
+OEWsPalatalDiphthongization [no-change]: *s*ā*w*æ*l*ǣ
+OEIUmlaut [no-change]: *s*ā*w*æ*l*ǣ
+OEWLossBeforeI [no-change]: *s*ā*w*æ*l*ǣ
+OELatePalatalDiphthong [no-change]: *s*ā*w*æ*l*ǣ
+OEJClusterCoalescence [no-change]: *s*ā*w*æ*l*ǣ
+OEBackMutation [no-change]: *s*ā*w*æ*l*ǣ
+OEWsPalatalUmlaut [no-change]: *s*ā*w*æ*l*ǣ
+OEWeakTailNasalLoss [no-change]: *s*ā*w*æ*l*ǣ
+OEWeightMarkers [no-change]: *s*ā*w*æ*l*ǣ
+OENonHighSyn: *s*ā*w*l*ǣ
+PGmcBAllophony [no-change]: *s*ā*w*l*ǣ
+OEMedLongShort [no-change]: *s*ā*w*l*ǣ
+OEHighVowelApocope [no-change]: *s*ā*w*l*ǣ
+OEMedialSyncope [no-change]: *s*ā*w*l*ǣ
+OEHighLinkSyncope [no-change]: *s*ā*w*l*ǣ
+OELAdjacentSyncope [no-change]: *s*ā*w*l*ǣ
+OEHighStressDecode [no-change]: *s*ā*w*l*ǣ
+OEDentalAssimilation [no-change]: *s*ā*w*l*ǣ
+OEPreconsonantalDegemination [no-change]: *s*ā*w*l*ǣ
+OEEarlyOShortening [no-change]: *s*ā*w*l*ǣ
+OEUnstressedFrontingEarly [no-change]: *s*ā*w*l*ǣ
+OELateOShortening [no-change]: *s*ā*w*l*ǣ
+OEMedUnstressedORaising [no-change]: *s*ā*w*l*ǣ
+OEFinalUnstressedOLowering [no-change]: *s*ā*w*l*ǣ
 OEUnstressedLongVowelShortening: *s*ā*w*l*æ
 OEUnstressedAEMerger: *s*ā*w*l*e
 OEMedUnstressedILowering1 [no-change]: *s*ā*w*l*e
@@ -35864,44 +35864,44 @@ OEInterStressRaising [no-change]: *s*p*é*n*n*i*l*ǭ
 OEWICombinativeUUmlaut [no-change]: *s*p*é*n*n*i*l*ǭ
 PWGmcFinalBareALoss [no-change]: *s*p*é*n*n*i*l*ǭ
 NWGmcInStemNLoss [no-change]: *s*p*é*n*n*i*l*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *s*p*é*n*n*i*l*ǭ
-EAFBrighteningUnstressed [no-change]: *s*p*é*n*n*i*l*ǭ
-EAFBrightening [no-change]: *s*p*é*n*n*i*l*ǭ
-EAFBrighteningLongFinal [no-change]: *s*p*é*n*n*i*l*ǭ
-OEBreaking [no-change]: *s*p*é*n*n*i*l*ǭ
-OEVelarFricativePalatalization [no-change]: *s*p*é*n*n*i*l*ǭ
-OEARestoration [no-change]: *s*p*é*n*n*i*l*ǭ
-OEHeavySyllableNasalApocope [no-change]: *s*p*é*n*n*i*l*ǭ
-OESecondaryNasalization [no-change]: *s*p*é*n*n*i*l*ǭ
-SieversLawSyncope [no-change]: *s*p*é*n*n*i*l*ǭ
-OESkPalatalization [no-change]: *s*p*é*n*n*i*l*ǭ
-OEVelarPalatalization [no-change]: *s*p*é*n*n*i*l*ǭ
-OEPrefixAReduction [no-change]: *s*p*é*n*n*i*l*ǭ
-OEPostVelarWLoss [no-change]: *s*p*é*n*n*i*l*ǭ
-OEWsPalatalDiphthongization [no-change]: *s*p*é*n*n*i*l*ǭ
-OEIUmlaut: *s*p*i*n*n*i*l*ǭ
-OEWLossBeforeI [no-change]: *s*p*i*n*n*i*l*ǭ
-OELatePalatalDiphthong [no-change]: *s*p*i*n*n*i*l*ǭ
-OEJClusterCoalescence [no-change]: *s*p*i*n*n*i*l*ǭ
-OEBackMutation [no-change]: *s*p*i*n*n*i*l*ǭ
-OEWsPalatalUmlaut [no-change]: *s*p*i*n*n*i*l*ǭ
-OEWeakTailNasalLoss [no-change]: *s*p*i*n*n*i*l*ǭ
-OEWeightMarkers [no-change]: *s*p*i*n*n*i*l*ǭ
-OENonHighSyn [no-change]: *s*p*i*n*n*i*l*ǭ
-PGmcBAllophony [no-change]: *s*p*i*n*n*i*l*ǭ
-OEMedLongShort [no-change]: *s*p*i*n*n*i*l*ǭ
-OEHighVowelApocope: *s*p*i*n*n*l*ǭ
-OEMedialSyncope [no-change]: *s*p*i*n*n*l*ǭ
-OEHighLinkSyncope [no-change]: *s*p*i*n*n*l*ǭ
-OELAdjacentSyncope [no-change]: *s*p*i*n*n*l*ǭ
-OEHighStressDecode [no-change]: *s*p*i*n*n*l*ǭ
-OEDentalAssimilation [no-change]: *s*p*i*n*n*l*ǭ
-OEPreconsonantalDegemination: *s*p*i*n*l*ǭ
-OEEarlyOShortening [no-change]: *s*p*i*n*l*ǭ
-OEUnstressedFrontingEarly [no-change]: *s*p*i*n*l*ǭ
-OELateOShortening [no-change]: *s*p*i*n*l*ǭ
-OEMedUnstressedORaising [no-change]: *s*p*i*n*l*ǭ
-OEFinalUnstressedOLowering [no-change]: *s*p*i*n*l*ǭ
+PWGmcSurvivingBimoricOUnrounding: *s*p*é*n*n*i*l*ā
+EAFBrighteningUnstressed [no-change]: *s*p*é*n*n*i*l*ā
+EAFBrightening [no-change]: *s*p*é*n*n*i*l*ā
+EAFBrighteningLongFinal: *s*p*é*n*n*i*l*ǣ
+OEBreaking [no-change]: *s*p*é*n*n*i*l*ǣ
+OEVelarFricativePalatalization [no-change]: *s*p*é*n*n*i*l*ǣ
+OEARestoration [no-change]: *s*p*é*n*n*i*l*ǣ
+OEHeavySyllableNasalApocope [no-change]: *s*p*é*n*n*i*l*ǣ
+OESecondaryNasalization [no-change]: *s*p*é*n*n*i*l*ǣ
+SieversLawSyncope [no-change]: *s*p*é*n*n*i*l*ǣ
+OESkPalatalization [no-change]: *s*p*é*n*n*i*l*ǣ
+OEVelarPalatalization [no-change]: *s*p*é*n*n*i*l*ǣ
+OEPrefixAReduction [no-change]: *s*p*é*n*n*i*l*ǣ
+OEPostVelarWLoss [no-change]: *s*p*é*n*n*i*l*ǣ
+OEWsPalatalDiphthongization [no-change]: *s*p*é*n*n*i*l*ǣ
+OEIUmlaut: *s*p*i*n*n*i*l*ǣ
+OEWLossBeforeI [no-change]: *s*p*i*n*n*i*l*ǣ
+OELatePalatalDiphthong [no-change]: *s*p*i*n*n*i*l*ǣ
+OEJClusterCoalescence [no-change]: *s*p*i*n*n*i*l*ǣ
+OEBackMutation [no-change]: *s*p*i*n*n*i*l*ǣ
+OEWsPalatalUmlaut [no-change]: *s*p*i*n*n*i*l*ǣ
+OEWeakTailNasalLoss [no-change]: *s*p*i*n*n*i*l*ǣ
+OEWeightMarkers [no-change]: *s*p*i*n*n*i*l*ǣ
+OENonHighSyn [no-change]: *s*p*i*n*n*i*l*ǣ
+PGmcBAllophony [no-change]: *s*p*i*n*n*i*l*ǣ
+OEMedLongShort [no-change]: *s*p*i*n*n*i*l*ǣ
+OEHighVowelApocope: *s*p*i*n*n*l*ǣ
+OEMedialSyncope [no-change]: *s*p*i*n*n*l*ǣ
+OEHighLinkSyncope [no-change]: *s*p*i*n*n*l*ǣ
+OELAdjacentSyncope [no-change]: *s*p*i*n*n*l*ǣ
+OEHighStressDecode [no-change]: *s*p*i*n*n*l*ǣ
+OEDentalAssimilation [no-change]: *s*p*i*n*n*l*ǣ
+OEPreconsonantalDegemination: *s*p*i*n*l*ǣ
+OEEarlyOShortening [no-change]: *s*p*i*n*l*ǣ
+OEUnstressedFrontingEarly [no-change]: *s*p*i*n*l*ǣ
+OELateOShortening [no-change]: *s*p*i*n*l*ǣ
+OEMedUnstressedORaising [no-change]: *s*p*i*n*l*ǣ
+OEFinalUnstressedOLowering [no-change]: *s*p*i*n*l*ǣ
 OEUnstressedLongVowelShortening: *s*p*i*n*l*æ
 OEUnstressedAEMerger: *s*p*i*n*l*e
 OEMedUnstressedILowering1 [no-change]: *s*p*i*n*l*e
@@ -38699,44 +38699,44 @@ OEInterStressRaising [no-change]: *s*ú*n*n*ǭ
 OEWICombinativeUUmlaut [no-change]: *s*ú*n*n*ǭ
 PWGmcFinalBareALoss [no-change]: *s*ú*n*n*ǭ
 NWGmcInStemNLoss [no-change]: *s*ú*n*n*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *s*ú*n*n*ǭ
-EAFBrighteningUnstressed [no-change]: *s*ú*n*n*ǭ
-EAFBrightening [no-change]: *s*ú*n*n*ǭ
-EAFBrighteningLongFinal [no-change]: *s*ú*n*n*ǭ
-OEBreaking [no-change]: *s*ú*n*n*ǭ
-OEVelarFricativePalatalization [no-change]: *s*ú*n*n*ǭ
-OEARestoration [no-change]: *s*ú*n*n*ǭ
-OEHeavySyllableNasalApocope [no-change]: *s*ú*n*n*ǭ
-OESecondaryNasalization [no-change]: *s*ú*n*n*ǭ
-SieversLawSyncope [no-change]: *s*ú*n*n*ǭ
-OESkPalatalization [no-change]: *s*ú*n*n*ǭ
-OEVelarPalatalization [no-change]: *s*ú*n*n*ǭ
-OEPrefixAReduction [no-change]: *s*ú*n*n*ǭ
-OEPostVelarWLoss [no-change]: *s*ú*n*n*ǭ
-OEWsPalatalDiphthongization [no-change]: *s*ú*n*n*ǭ
-OEIUmlaut [no-change]: *s*ú*n*n*ǭ
-OEWLossBeforeI [no-change]: *s*ú*n*n*ǭ
-OELatePalatalDiphthong [no-change]: *s*ú*n*n*ǭ
-OEJClusterCoalescence [no-change]: *s*ú*n*n*ǭ
-OEBackMutation [no-change]: *s*ú*n*n*ǭ
-OEWsPalatalUmlaut [no-change]: *s*ú*n*n*ǭ
-OEWeakTailNasalLoss [no-change]: *s*ú*n*n*ǭ
-OEWeightMarkers [no-change]: *s*ú*n*n*ǭ
-OENonHighSyn [no-change]: *s*ú*n*n*ǭ
-PGmcBAllophony [no-change]: *s*ú*n*n*ǭ
-OEMedLongShort [no-change]: *s*ú*n*n*ǭ
-OEHighVowelApocope [no-change]: *s*ú*n*n*ǭ
-OEMedialSyncope [no-change]: *s*ú*n*n*ǭ
-OEHighLinkSyncope [no-change]: *s*ú*n*n*ǭ
-OELAdjacentSyncope [no-change]: *s*ú*n*n*ǭ
-OEHighStressDecode [no-change]: *s*ú*n*n*ǭ
-OEDentalAssimilation [no-change]: *s*ú*n*n*ǭ
-OEPreconsonantalDegemination [no-change]: *s*ú*n*n*ǭ
-OEEarlyOShortening [no-change]: *s*ú*n*n*ǭ
-OEUnstressedFrontingEarly [no-change]: *s*ú*n*n*ǭ
-OELateOShortening [no-change]: *s*ú*n*n*ǭ
-OEMedUnstressedORaising [no-change]: *s*ú*n*n*ǭ
-OEFinalUnstressedOLowering [no-change]: *s*ú*n*n*ǭ
+PWGmcSurvivingBimoricOUnrounding: *s*ú*n*n*ā
+EAFBrighteningUnstressed [no-change]: *s*ú*n*n*ā
+EAFBrightening [no-change]: *s*ú*n*n*ā
+EAFBrighteningLongFinal: *s*ú*n*n*ǣ
+OEBreaking [no-change]: *s*ú*n*n*ǣ
+OEVelarFricativePalatalization [no-change]: *s*ú*n*n*ǣ
+OEARestoration [no-change]: *s*ú*n*n*ǣ
+OEHeavySyllableNasalApocope [no-change]: *s*ú*n*n*ǣ
+OESecondaryNasalization [no-change]: *s*ú*n*n*ǣ
+SieversLawSyncope [no-change]: *s*ú*n*n*ǣ
+OESkPalatalization [no-change]: *s*ú*n*n*ǣ
+OEVelarPalatalization [no-change]: *s*ú*n*n*ǣ
+OEPrefixAReduction [no-change]: *s*ú*n*n*ǣ
+OEPostVelarWLoss [no-change]: *s*ú*n*n*ǣ
+OEWsPalatalDiphthongization [no-change]: *s*ú*n*n*ǣ
+OEIUmlaut [no-change]: *s*ú*n*n*ǣ
+OEWLossBeforeI [no-change]: *s*ú*n*n*ǣ
+OELatePalatalDiphthong [no-change]: *s*ú*n*n*ǣ
+OEJClusterCoalescence [no-change]: *s*ú*n*n*ǣ
+OEBackMutation [no-change]: *s*ú*n*n*ǣ
+OEWsPalatalUmlaut [no-change]: *s*ú*n*n*ǣ
+OEWeakTailNasalLoss [no-change]: *s*ú*n*n*ǣ
+OEWeightMarkers [no-change]: *s*ú*n*n*ǣ
+OENonHighSyn [no-change]: *s*ú*n*n*ǣ
+PGmcBAllophony [no-change]: *s*ú*n*n*ǣ
+OEMedLongShort [no-change]: *s*ú*n*n*ǣ
+OEHighVowelApocope [no-change]: *s*ú*n*n*ǣ
+OEMedialSyncope [no-change]: *s*ú*n*n*ǣ
+OEHighLinkSyncope [no-change]: *s*ú*n*n*ǣ
+OELAdjacentSyncope [no-change]: *s*ú*n*n*ǣ
+OEHighStressDecode [no-change]: *s*ú*n*n*ǣ
+OEDentalAssimilation [no-change]: *s*ú*n*n*ǣ
+OEPreconsonantalDegemination [no-change]: *s*ú*n*n*ǣ
+OEEarlyOShortening [no-change]: *s*ú*n*n*ǣ
+OEUnstressedFrontingEarly [no-change]: *s*ú*n*n*ǣ
+OELateOShortening [no-change]: *s*ú*n*n*ǣ
+OEMedUnstressedORaising [no-change]: *s*ú*n*n*ǣ
+OEFinalUnstressedOLowering [no-change]: *s*ú*n*n*ǣ
 OEUnstressedLongVowelShortening: *s*ú*n*n*æ
 OEUnstressedAEMerger: *s*ú*n*n*e
 OEMedUnstressedILowering1 [no-change]: *s*ú*n*n*e
@@ -39104,44 +39104,44 @@ OEInterStressRaising [no-change]: *s*w*á*l*w*ǭ
 OEWICombinativeUUmlaut [no-change]: *s*w*á*l*w*ǭ
 PWGmcFinalBareALoss [no-change]: *s*w*á*l*w*ǭ
 NWGmcInStemNLoss [no-change]: *s*w*á*l*w*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *s*w*á*l*w*ǭ
-EAFBrighteningUnstressed [no-change]: *s*w*á*l*w*ǭ
-EAFBrightening: *s*w*æ*l*w*ǭ
-EAFBrighteningLongFinal [no-change]: *s*w*æ*l*w*ǭ
-OEBreaking: *s*w*ea*l*w*ǭ
-OEVelarFricativePalatalization [no-change]: *s*w*ea*l*w*ǭ
-OEARestoration [no-change]: *s*w*ea*l*w*ǭ
-OEHeavySyllableNasalApocope [no-change]: *s*w*ea*l*w*ǭ
-OESecondaryNasalization [no-change]: *s*w*ea*l*w*ǭ
-SieversLawSyncope [no-change]: *s*w*ea*l*w*ǭ
-OESkPalatalization [no-change]: *s*w*ea*l*w*ǭ
-OEVelarPalatalization [no-change]: *s*w*ea*l*w*ǭ
-OEPrefixAReduction [no-change]: *s*w*ea*l*w*ǭ
-OEPostVelarWLoss [no-change]: *s*w*ea*l*w*ǭ
-OEWsPalatalDiphthongization [no-change]: *s*w*ea*l*w*ǭ
-OEIUmlaut [no-change]: *s*w*ea*l*w*ǭ
-OEWLossBeforeI [no-change]: *s*w*ea*l*w*ǭ
-OELatePalatalDiphthong [no-change]: *s*w*ea*l*w*ǭ
-OEJClusterCoalescence [no-change]: *s*w*ea*l*w*ǭ
-OEBackMutation [no-change]: *s*w*ea*l*w*ǭ
-OEWsPalatalUmlaut [no-change]: *s*w*ea*l*w*ǭ
-OEWeakTailNasalLoss [no-change]: *s*w*ea*l*w*ǭ
-OEWeightMarkers [no-change]: *s*w*ea*l*w*ǭ
-OENonHighSyn [no-change]: *s*w*ea*l*w*ǭ
-PGmcBAllophony [no-change]: *s*w*ea*l*w*ǭ
-OEMedLongShort [no-change]: *s*w*ea*l*w*ǭ
-OEHighVowelApocope [no-change]: *s*w*ea*l*w*ǭ
-OEMedialSyncope [no-change]: *s*w*ea*l*w*ǭ
-OEHighLinkSyncope [no-change]: *s*w*ea*l*w*ǭ
-OELAdjacentSyncope [no-change]: *s*w*ea*l*w*ǭ
-OEHighStressDecode [no-change]: *s*w*ea*l*w*ǭ
-OEDentalAssimilation [no-change]: *s*w*ea*l*w*ǭ
-OEPreconsonantalDegemination [no-change]: *s*w*ea*l*w*ǭ
-OEEarlyOShortening [no-change]: *s*w*ea*l*w*ǭ
-OEUnstressedFrontingEarly [no-change]: *s*w*ea*l*w*ǭ
-OELateOShortening [no-change]: *s*w*ea*l*w*ǭ
-OEMedUnstressedORaising [no-change]: *s*w*ea*l*w*ǭ
-OEFinalUnstressedOLowering [no-change]: *s*w*ea*l*w*ǭ
+PWGmcSurvivingBimoricOUnrounding: *s*w*á*l*w*ā
+EAFBrighteningUnstressed [no-change]: *s*w*á*l*w*ā
+EAFBrightening: *s*w*æ*l*w*ā
+EAFBrighteningLongFinal: *s*w*æ*l*w*ǣ
+OEBreaking: *s*w*ea*l*w*ǣ
+OEVelarFricativePalatalization [no-change]: *s*w*ea*l*w*ǣ
+OEARestoration [no-change]: *s*w*ea*l*w*ǣ
+OEHeavySyllableNasalApocope [no-change]: *s*w*ea*l*w*ǣ
+OESecondaryNasalization [no-change]: *s*w*ea*l*w*ǣ
+SieversLawSyncope [no-change]: *s*w*ea*l*w*ǣ
+OESkPalatalization [no-change]: *s*w*ea*l*w*ǣ
+OEVelarPalatalization [no-change]: *s*w*ea*l*w*ǣ
+OEPrefixAReduction [no-change]: *s*w*ea*l*w*ǣ
+OEPostVelarWLoss [no-change]: *s*w*ea*l*w*ǣ
+OEWsPalatalDiphthongization [no-change]: *s*w*ea*l*w*ǣ
+OEIUmlaut [no-change]: *s*w*ea*l*w*ǣ
+OEWLossBeforeI [no-change]: *s*w*ea*l*w*ǣ
+OELatePalatalDiphthong [no-change]: *s*w*ea*l*w*ǣ
+OEJClusterCoalescence [no-change]: *s*w*ea*l*w*ǣ
+OEBackMutation [no-change]: *s*w*ea*l*w*ǣ
+OEWsPalatalUmlaut [no-change]: *s*w*ea*l*w*ǣ
+OEWeakTailNasalLoss [no-change]: *s*w*ea*l*w*ǣ
+OEWeightMarkers [no-change]: *s*w*ea*l*w*ǣ
+OENonHighSyn [no-change]: *s*w*ea*l*w*ǣ
+PGmcBAllophony [no-change]: *s*w*ea*l*w*ǣ
+OEMedLongShort [no-change]: *s*w*ea*l*w*ǣ
+OEHighVowelApocope [no-change]: *s*w*ea*l*w*ǣ
+OEMedialSyncope [no-change]: *s*w*ea*l*w*ǣ
+OEHighLinkSyncope [no-change]: *s*w*ea*l*w*ǣ
+OELAdjacentSyncope [no-change]: *s*w*ea*l*w*ǣ
+OEHighStressDecode [no-change]: *s*w*ea*l*w*ǣ
+OEDentalAssimilation [no-change]: *s*w*ea*l*w*ǣ
+OEPreconsonantalDegemination [no-change]: *s*w*ea*l*w*ǣ
+OEEarlyOShortening [no-change]: *s*w*ea*l*w*ǣ
+OEUnstressedFrontingEarly [no-change]: *s*w*ea*l*w*ǣ
+OELateOShortening [no-change]: *s*w*ea*l*w*ǣ
+OEMedUnstressedORaising [no-change]: *s*w*ea*l*w*ǣ
+OEFinalUnstressedOLowering [no-change]: *s*w*ea*l*w*ǣ
 OEUnstressedLongVowelShortening: *s*w*ea*l*w*æ
 OEUnstressedAEMerger: *s*w*ea*l*w*e
 OEMedUnstressedILowering1 [no-change]: *s*w*ea*l*w*e
@@ -42344,57 +42344,57 @@ OEInterStressRaising [no-change]: *t*ā*x*ǭ
 OEWICombinativeUUmlaut [no-change]: *t*ā*x*ǭ
 PWGmcFinalBareALoss [no-change]: *t*ā*x*ǭ
 NWGmcInStemNLoss [no-change]: *t*ā*x*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *t*ā*x*ǭ
-EAFBrighteningUnstressed [no-change]: *t*ā*x*ǭ
-EAFBrightening [no-change]: *t*ā*x*ǭ
-EAFBrighteningLongFinal [no-change]: *t*ā*x*ǭ
-OEBreaking [no-change]: *t*ā*x*ǭ
-OEVelarFricativePalatalization [no-change]: *t*ā*x*ǭ
-OEARestoration [no-change]: *t*ā*x*ǭ
-OEHeavySyllableNasalApocope [no-change]: *t*ā*x*ǭ
-OESecondaryNasalization [no-change]: *t*ā*x*ǭ
-SieversLawSyncope [no-change]: *t*ā*x*ǭ
-OESkPalatalization [no-change]: *t*ā*x*ǭ
-OEVelarPalatalization [no-change]: *t*ā*x*ǭ
-OEPrefixAReduction [no-change]: *t*ā*x*ǭ
-OEPostVelarWLoss [no-change]: *t*ā*x*ǭ
-OEWsPalatalDiphthongization [no-change]: *t*ā*x*ǭ
-OEIUmlaut [no-change]: *t*ā*x*ǭ
-OEWLossBeforeI [no-change]: *t*ā*x*ǭ
-OELatePalatalDiphthong [no-change]: *t*ā*x*ǭ
-OEJClusterCoalescence [no-change]: *t*ā*x*ǭ
-OEBackMutation [no-change]: *t*ā*x*ǭ
-OEWsPalatalUmlaut [no-change]: *t*ā*x*ǭ
-OEWeakTailNasalLoss [no-change]: *t*ā*x*ǭ
-OEWeightMarkers [no-change]: *t*ā*x*ǭ
-OENonHighSyn [no-change]: *t*ā*x*ǭ
-PGmcBAllophony [no-change]: *t*ā*x*ǭ
-OEMedLongShort [no-change]: *t*ā*x*ǭ
-OEHighVowelApocope [no-change]: *t*ā*x*ǭ
-OEMedialSyncope [no-change]: *t*ā*x*ǭ
-OEHighLinkSyncope [no-change]: *t*ā*x*ǭ
-OELAdjacentSyncope [no-change]: *t*ā*x*ǭ
-OEHighStressDecode [no-change]: *t*ā*x*ǭ
-OEDentalAssimilation [no-change]: *t*ā*x*ǭ
-OEPreconsonantalDegemination [no-change]: *t*ā*x*ǭ
-OEEarlyOShortening [no-change]: *t*ā*x*ǭ
-OEUnstressedFrontingEarly [no-change]: *t*ā*x*ǭ
-OELateOShortening [no-change]: *t*ā*x*ǭ
-OEMedUnstressedORaising [no-change]: *t*ā*x*ǭ
-OEFinalUnstressedOLowering [no-change]: *t*ā*x*ǭ
-OEUnstressedLongVowelShortening: *t*ā*x*æ
-OEUnstressedAEMerger: *t*ā*x*e
-OEMedUnstressedILowering1 [no-change]: *t*ā*x*e
-OEMedUnstressedILowering [no-change]: *t*ā*x*e
-OEMedUnstressedULowering [no-change]: *t*ā*x*e
-OEPrefixIReduction [no-change]: *t*ā*x*e
-OEWeakTailReduction [no-change]: *t*ā*x*e
-OEJLossAfterHeavy [no-change]: *t*ā*x*e
-OEFinalGeminateSimplification [no-change]: *t*ā*x*e
-OEJStrengtheningAfterFrontDiphthong [no-change]: *t*ā*x*e
-OEIntervocalicJVocalization [no-change]: *t*ā*x*e
-OEUnstressedEIContraction [no-change]: *t*ā*x*e
-OEWeightCleanup [no-change]: *t*ā*x*e
+PWGmcSurvivingBimoricOUnrounding: *t*ā*x*ā
+EAFBrighteningUnstressed [no-change]: *t*ā*x*ā
+EAFBrightening [no-change]: *t*ā*x*ā
+EAFBrighteningLongFinal: *t*ā*x*ǣ
+OEBreaking [no-change]: *t*ā*x*ǣ
+OEVelarFricativePalatalization: *t*ā*ç*ǣ
+OEARestoration [no-change]: *t*ā*ç*ǣ
+OEHeavySyllableNasalApocope [no-change]: *t*ā*ç*ǣ
+OESecondaryNasalization [no-change]: *t*ā*ç*ǣ
+SieversLawSyncope [no-change]: *t*ā*ç*ǣ
+OESkPalatalization [no-change]: *t*ā*ç*ǣ
+OEVelarPalatalization [no-change]: *t*ā*ç*ǣ
+OEPrefixAReduction [no-change]: *t*ā*ç*ǣ
+OEPostVelarWLoss [no-change]: *t*ā*ç*ǣ
+OEWsPalatalDiphthongization [no-change]: *t*ā*ç*ǣ
+OEIUmlaut [no-change]: *t*ā*ç*ǣ
+OEWLossBeforeI [no-change]: *t*ā*ç*ǣ
+OELatePalatalDiphthong [no-change]: *t*ā*ç*ǣ
+OEJClusterCoalescence [no-change]: *t*ā*ç*ǣ
+OEBackMutation [no-change]: *t*ā*ç*ǣ
+OEWsPalatalUmlaut [no-change]: *t*ā*ç*ǣ
+OEWeakTailNasalLoss [no-change]: *t*ā*ç*ǣ
+OEWeightMarkers [no-change]: *t*ā*ç*ǣ
+OENonHighSyn [no-change]: *t*ā*ç*ǣ
+PGmcBAllophony [no-change]: *t*ā*ç*ǣ
+OEMedLongShort [no-change]: *t*ā*ç*ǣ
+OEHighVowelApocope [no-change]: *t*ā*ç*ǣ
+OEMedialSyncope [no-change]: *t*ā*ç*ǣ
+OEHighLinkSyncope [no-change]: *t*ā*ç*ǣ
+OELAdjacentSyncope [no-change]: *t*ā*ç*ǣ
+OEHighStressDecode [no-change]: *t*ā*ç*ǣ
+OEDentalAssimilation [no-change]: *t*ā*ç*ǣ
+OEPreconsonantalDegemination [no-change]: *t*ā*ç*ǣ
+OEEarlyOShortening [no-change]: *t*ā*ç*ǣ
+OEUnstressedFrontingEarly [no-change]: *t*ā*ç*ǣ
+OELateOShortening [no-change]: *t*ā*ç*ǣ
+OEMedUnstressedORaising [no-change]: *t*ā*ç*ǣ
+OEFinalUnstressedOLowering [no-change]: *t*ā*ç*ǣ
+OEUnstressedLongVowelShortening: *t*ā*ç*æ
+OEUnstressedAEMerger: *t*ā*ç*e
+OEMedUnstressedILowering1 [no-change]: *t*ā*ç*e
+OEMedUnstressedILowering [no-change]: *t*ā*ç*e
+OEMedUnstressedULowering [no-change]: *t*ā*ç*e
+OEPrefixIReduction [no-change]: *t*ā*ç*e
+OEWeakTailReduction [no-change]: *t*ā*ç*e
+OEJLossAfterHeavy [no-change]: *t*ā*ç*e
+OEFinalGeminateSimplification [no-change]: *t*ā*ç*e
+OEJStrengtheningAfterFrontDiphthong [no-change]: *t*ā*ç*e
+OEIntervocalicJVocalization [no-change]: *t*ā*ç*e
+OEUnstressedEIContraction [no-change]: *t*ā*ç*e
+OEWeightCleanup [no-change]: *t*ā*ç*e
 OEHLoss: *t*ā*e
 OEContraction: *t*ā
 OERMetathesis [no-change]: *t*ā
@@ -42749,44 +42749,44 @@ OEInterStressRaising [no-change]: *t*ú*n*g*ǭ
 OEWICombinativeUUmlaut [no-change]: *t*ú*n*g*ǭ
 PWGmcFinalBareALoss [no-change]: *t*ú*n*g*ǭ
 NWGmcInStemNLoss [no-change]: *t*ú*n*g*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *t*ú*n*g*ǭ
-EAFBrighteningUnstressed [no-change]: *t*ú*n*g*ǭ
-EAFBrightening [no-change]: *t*ú*n*g*ǭ
-EAFBrighteningLongFinal [no-change]: *t*ú*n*g*ǭ
-OEBreaking [no-change]: *t*ú*n*g*ǭ
-OEVelarFricativePalatalization [no-change]: *t*ú*n*g*ǭ
-OEARestoration [no-change]: *t*ú*n*g*ǭ
-OEHeavySyllableNasalApocope [no-change]: *t*ú*n*g*ǭ
-OESecondaryNasalization [no-change]: *t*ú*n*g*ǭ
-SieversLawSyncope [no-change]: *t*ú*n*g*ǭ
-OESkPalatalization [no-change]: *t*ú*n*g*ǭ
-OEVelarPalatalization [no-change]: *t*ú*n*g*ǭ
-OEPrefixAReduction [no-change]: *t*ú*n*g*ǭ
-OEPostVelarWLoss [no-change]: *t*ú*n*g*ǭ
-OEWsPalatalDiphthongization [no-change]: *t*ú*n*g*ǭ
-OEIUmlaut [no-change]: *t*ú*n*g*ǭ
-OEWLossBeforeI [no-change]: *t*ú*n*g*ǭ
-OELatePalatalDiphthong [no-change]: *t*ú*n*g*ǭ
-OEJClusterCoalescence [no-change]: *t*ú*n*g*ǭ
-OEBackMutation [no-change]: *t*ú*n*g*ǭ
-OEWsPalatalUmlaut [no-change]: *t*ú*n*g*ǭ
-OEWeakTailNasalLoss [no-change]: *t*ú*n*g*ǭ
-OEWeightMarkers [no-change]: *t*ú*n*g*ǭ
-OENonHighSyn [no-change]: *t*ú*n*g*ǭ
-PGmcBAllophony [no-change]: *t*ú*n*g*ǭ
-OEMedLongShort [no-change]: *t*ú*n*g*ǭ
-OEHighVowelApocope [no-change]: *t*ú*n*g*ǭ
-OEMedialSyncope [no-change]: *t*ú*n*g*ǭ
-OEHighLinkSyncope [no-change]: *t*ú*n*g*ǭ
-OELAdjacentSyncope [no-change]: *t*ú*n*g*ǭ
-OEHighStressDecode [no-change]: *t*ú*n*g*ǭ
-OEDentalAssimilation [no-change]: *t*ú*n*g*ǭ
-OEPreconsonantalDegemination [no-change]: *t*ú*n*g*ǭ
-OEEarlyOShortening [no-change]: *t*ú*n*g*ǭ
-OEUnstressedFrontingEarly [no-change]: *t*ú*n*g*ǭ
-OELateOShortening [no-change]: *t*ú*n*g*ǭ
-OEMedUnstressedORaising [no-change]: *t*ú*n*g*ǭ
-OEFinalUnstressedOLowering [no-change]: *t*ú*n*g*ǭ
+PWGmcSurvivingBimoricOUnrounding: *t*ú*n*g*ā
+EAFBrighteningUnstressed [no-change]: *t*ú*n*g*ā
+EAFBrightening [no-change]: *t*ú*n*g*ā
+EAFBrighteningLongFinal: *t*ú*n*g*ǣ
+OEBreaking [no-change]: *t*ú*n*g*ǣ
+OEVelarFricativePalatalization [no-change]: *t*ú*n*g*ǣ
+OEARestoration [no-change]: *t*ú*n*g*ǣ
+OEHeavySyllableNasalApocope [no-change]: *t*ú*n*g*ǣ
+OESecondaryNasalization [no-change]: *t*ú*n*g*ǣ
+SieversLawSyncope [no-change]: *t*ú*n*g*ǣ
+OESkPalatalization [no-change]: *t*ú*n*g*ǣ
+OEVelarPalatalization [no-change]: *t*ú*n*g*ǣ
+OEPrefixAReduction [no-change]: *t*ú*n*g*ǣ
+OEPostVelarWLoss [no-change]: *t*ú*n*g*ǣ
+OEWsPalatalDiphthongization [no-change]: *t*ú*n*g*ǣ
+OEIUmlaut [no-change]: *t*ú*n*g*ǣ
+OEWLossBeforeI [no-change]: *t*ú*n*g*ǣ
+OELatePalatalDiphthong [no-change]: *t*ú*n*g*ǣ
+OEJClusterCoalescence [no-change]: *t*ú*n*g*ǣ
+OEBackMutation [no-change]: *t*ú*n*g*ǣ
+OEWsPalatalUmlaut [no-change]: *t*ú*n*g*ǣ
+OEWeakTailNasalLoss [no-change]: *t*ú*n*g*ǣ
+OEWeightMarkers [no-change]: *t*ú*n*g*ǣ
+OENonHighSyn [no-change]: *t*ú*n*g*ǣ
+PGmcBAllophony [no-change]: *t*ú*n*g*ǣ
+OEMedLongShort [no-change]: *t*ú*n*g*ǣ
+OEHighVowelApocope [no-change]: *t*ú*n*g*ǣ
+OEMedialSyncope [no-change]: *t*ú*n*g*ǣ
+OEHighLinkSyncope [no-change]: *t*ú*n*g*ǣ
+OELAdjacentSyncope [no-change]: *t*ú*n*g*ǣ
+OEHighStressDecode [no-change]: *t*ú*n*g*ǣ
+OEDentalAssimilation [no-change]: *t*ú*n*g*ǣ
+OEPreconsonantalDegemination [no-change]: *t*ú*n*g*ǣ
+OEEarlyOShortening [no-change]: *t*ú*n*g*ǣ
+OEUnstressedFrontingEarly [no-change]: *t*ú*n*g*ǣ
+OELateOShortening [no-change]: *t*ú*n*g*ǣ
+OEMedUnstressedORaising [no-change]: *t*ú*n*g*ǣ
+OEFinalUnstressedOLowering [no-change]: *t*ú*n*g*ǣ
 OEUnstressedLongVowelShortening: *t*ú*n*g*æ
 OEUnstressedAEMerger: *t*ú*n*g*e
 OEMedUnstressedILowering1 [no-change]: *t*ú*n*g*e
@@ -43964,44 +43964,44 @@ OEInterStressRaising [no-change]: *w*á*r*t*ǭ
 OEWICombinativeUUmlaut [no-change]: *w*á*r*t*ǭ
 PWGmcFinalBareALoss [no-change]: *w*á*r*t*ǭ
 NWGmcInStemNLoss [no-change]: *w*á*r*t*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *w*á*r*t*ǭ
-EAFBrighteningUnstressed [no-change]: *w*á*r*t*ǭ
-EAFBrightening: *w*æ*r*t*ǭ
-EAFBrighteningLongFinal [no-change]: *w*æ*r*t*ǭ
-OEBreaking: *w*ea*r*t*ǭ
-OEVelarFricativePalatalization [no-change]: *w*ea*r*t*ǭ
-OEARestoration [no-change]: *w*ea*r*t*ǭ
-OEHeavySyllableNasalApocope [no-change]: *w*ea*r*t*ǭ
-OESecondaryNasalization [no-change]: *w*ea*r*t*ǭ
-SieversLawSyncope [no-change]: *w*ea*r*t*ǭ
-OESkPalatalization [no-change]: *w*ea*r*t*ǭ
-OEVelarPalatalization [no-change]: *w*ea*r*t*ǭ
-OEPrefixAReduction [no-change]: *w*ea*r*t*ǭ
-OEPostVelarWLoss [no-change]: *w*ea*r*t*ǭ
-OEWsPalatalDiphthongization [no-change]: *w*ea*r*t*ǭ
-OEIUmlaut [no-change]: *w*ea*r*t*ǭ
-OEWLossBeforeI [no-change]: *w*ea*r*t*ǭ
-OELatePalatalDiphthong [no-change]: *w*ea*r*t*ǭ
-OEJClusterCoalescence [no-change]: *w*ea*r*t*ǭ
-OEBackMutation [no-change]: *w*ea*r*t*ǭ
-OEWsPalatalUmlaut [no-change]: *w*ea*r*t*ǭ
-OEWeakTailNasalLoss [no-change]: *w*ea*r*t*ǭ
-OEWeightMarkers [no-change]: *w*ea*r*t*ǭ
-OENonHighSyn [no-change]: *w*ea*r*t*ǭ
-PGmcBAllophony [no-change]: *w*ea*r*t*ǭ
-OEMedLongShort [no-change]: *w*ea*r*t*ǭ
-OEHighVowelApocope [no-change]: *w*ea*r*t*ǭ
-OEMedialSyncope [no-change]: *w*ea*r*t*ǭ
-OEHighLinkSyncope [no-change]: *w*ea*r*t*ǭ
-OELAdjacentSyncope [no-change]: *w*ea*r*t*ǭ
-OEHighStressDecode [no-change]: *w*ea*r*t*ǭ
-OEDentalAssimilation [no-change]: *w*ea*r*t*ǭ
-OEPreconsonantalDegemination [no-change]: *w*ea*r*t*ǭ
-OEEarlyOShortening [no-change]: *w*ea*r*t*ǭ
-OEUnstressedFrontingEarly [no-change]: *w*ea*r*t*ǭ
-OELateOShortening [no-change]: *w*ea*r*t*ǭ
-OEMedUnstressedORaising [no-change]: *w*ea*r*t*ǭ
-OEFinalUnstressedOLowering [no-change]: *w*ea*r*t*ǭ
+PWGmcSurvivingBimoricOUnrounding: *w*á*r*t*ā
+EAFBrighteningUnstressed [no-change]: *w*á*r*t*ā
+EAFBrightening: *w*æ*r*t*ā
+EAFBrighteningLongFinal: *w*æ*r*t*ǣ
+OEBreaking: *w*ea*r*t*ǣ
+OEVelarFricativePalatalization [no-change]: *w*ea*r*t*ǣ
+OEARestoration [no-change]: *w*ea*r*t*ǣ
+OEHeavySyllableNasalApocope [no-change]: *w*ea*r*t*ǣ
+OESecondaryNasalization [no-change]: *w*ea*r*t*ǣ
+SieversLawSyncope [no-change]: *w*ea*r*t*ǣ
+OESkPalatalization [no-change]: *w*ea*r*t*ǣ
+OEVelarPalatalization [no-change]: *w*ea*r*t*ǣ
+OEPrefixAReduction [no-change]: *w*ea*r*t*ǣ
+OEPostVelarWLoss [no-change]: *w*ea*r*t*ǣ
+OEWsPalatalDiphthongization [no-change]: *w*ea*r*t*ǣ
+OEIUmlaut [no-change]: *w*ea*r*t*ǣ
+OEWLossBeforeI [no-change]: *w*ea*r*t*ǣ
+OELatePalatalDiphthong [no-change]: *w*ea*r*t*ǣ
+OEJClusterCoalescence [no-change]: *w*ea*r*t*ǣ
+OEBackMutation [no-change]: *w*ea*r*t*ǣ
+OEWsPalatalUmlaut [no-change]: *w*ea*r*t*ǣ
+OEWeakTailNasalLoss [no-change]: *w*ea*r*t*ǣ
+OEWeightMarkers [no-change]: *w*ea*r*t*ǣ
+OENonHighSyn [no-change]: *w*ea*r*t*ǣ
+PGmcBAllophony [no-change]: *w*ea*r*t*ǣ
+OEMedLongShort [no-change]: *w*ea*r*t*ǣ
+OEHighVowelApocope [no-change]: *w*ea*r*t*ǣ
+OEMedialSyncope [no-change]: *w*ea*r*t*ǣ
+OEHighLinkSyncope [no-change]: *w*ea*r*t*ǣ
+OELAdjacentSyncope [no-change]: *w*ea*r*t*ǣ
+OEHighStressDecode [no-change]: *w*ea*r*t*ǣ
+OEDentalAssimilation [no-change]: *w*ea*r*t*ǣ
+OEPreconsonantalDegemination [no-change]: *w*ea*r*t*ǣ
+OEEarlyOShortening [no-change]: *w*ea*r*t*ǣ
+OEUnstressedFrontingEarly [no-change]: *w*ea*r*t*ǣ
+OELateOShortening [no-change]: *w*ea*r*t*ǣ
+OEMedUnstressedORaising [no-change]: *w*ea*r*t*ǣ
+OEFinalUnstressedOLowering [no-change]: *w*ea*r*t*ǣ
 OEUnstressedLongVowelShortening: *w*ea*r*t*æ
 OEUnstressedAEMerger: *w*ea*r*t*e
 OEMedUnstressedILowering1 [no-change]: *w*ea*r*t*e
@@ -45044,44 +45044,44 @@ OEInterStressRaising [no-change]: *w*é*s*l*ǭ
 OEWICombinativeUUmlaut [no-change]: *w*é*s*l*ǭ
 PWGmcFinalBareALoss [no-change]: *w*é*s*l*ǭ
 NWGmcInStemNLoss [no-change]: *w*é*s*l*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *w*é*s*l*ǭ
-EAFBrighteningUnstressed [no-change]: *w*é*s*l*ǭ
-EAFBrightening [no-change]: *w*é*s*l*ǭ
-EAFBrighteningLongFinal [no-change]: *w*é*s*l*ǭ
-OEBreaking [no-change]: *w*é*s*l*ǭ
-OEVelarFricativePalatalization [no-change]: *w*é*s*l*ǭ
-OEARestoration [no-change]: *w*é*s*l*ǭ
-OEHeavySyllableNasalApocope [no-change]: *w*é*s*l*ǭ
-OESecondaryNasalization [no-change]: *w*é*s*l*ǭ
-SieversLawSyncope [no-change]: *w*é*s*l*ǭ
-OESkPalatalization [no-change]: *w*é*s*l*ǭ
-OEVelarPalatalization [no-change]: *w*é*s*l*ǭ
-OEPrefixAReduction [no-change]: *w*é*s*l*ǭ
-OEPostVelarWLoss [no-change]: *w*é*s*l*ǭ
-OEWsPalatalDiphthongization [no-change]: *w*é*s*l*ǭ
-OEIUmlaut [no-change]: *w*é*s*l*ǭ
-OEWLossBeforeI [no-change]: *w*é*s*l*ǭ
-OELatePalatalDiphthong [no-change]: *w*é*s*l*ǭ
-OEJClusterCoalescence [no-change]: *w*é*s*l*ǭ
-OEBackMutation [no-change]: *w*é*s*l*ǭ
-OEWsPalatalUmlaut [no-change]: *w*é*s*l*ǭ
-OEWeakTailNasalLoss [no-change]: *w*é*s*l*ǭ
-OEWeightMarkers [no-change]: *w*é*s*l*ǭ
-OENonHighSyn [no-change]: *w*é*s*l*ǭ
-PGmcBAllophony [no-change]: *w*é*s*l*ǭ
-OEMedLongShort [no-change]: *w*é*s*l*ǭ
-OEHighVowelApocope [no-change]: *w*é*s*l*ǭ
-OEMedialSyncope [no-change]: *w*é*s*l*ǭ
-OEHighLinkSyncope [no-change]: *w*é*s*l*ǭ
-OELAdjacentSyncope [no-change]: *w*é*s*l*ǭ
-OEHighStressDecode [no-change]: *w*é*s*l*ǭ
-OEDentalAssimilation [no-change]: *w*é*s*l*ǭ
-OEPreconsonantalDegemination [no-change]: *w*é*s*l*ǭ
-OEEarlyOShortening [no-change]: *w*é*s*l*ǭ
-OEUnstressedFrontingEarly [no-change]: *w*é*s*l*ǭ
-OELateOShortening [no-change]: *w*é*s*l*ǭ
-OEMedUnstressedORaising [no-change]: *w*é*s*l*ǭ
-OEFinalUnstressedOLowering [no-change]: *w*é*s*l*ǭ
+PWGmcSurvivingBimoricOUnrounding: *w*é*s*l*ā
+EAFBrighteningUnstressed [no-change]: *w*é*s*l*ā
+EAFBrightening [no-change]: *w*é*s*l*ā
+EAFBrighteningLongFinal: *w*é*s*l*ǣ
+OEBreaking [no-change]: *w*é*s*l*ǣ
+OEVelarFricativePalatalization [no-change]: *w*é*s*l*ǣ
+OEARestoration [no-change]: *w*é*s*l*ǣ
+OEHeavySyllableNasalApocope [no-change]: *w*é*s*l*ǣ
+OESecondaryNasalization [no-change]: *w*é*s*l*ǣ
+SieversLawSyncope [no-change]: *w*é*s*l*ǣ
+OESkPalatalization [no-change]: *w*é*s*l*ǣ
+OEVelarPalatalization [no-change]: *w*é*s*l*ǣ
+OEPrefixAReduction [no-change]: *w*é*s*l*ǣ
+OEPostVelarWLoss [no-change]: *w*é*s*l*ǣ
+OEWsPalatalDiphthongization [no-change]: *w*é*s*l*ǣ
+OEIUmlaut [no-change]: *w*é*s*l*ǣ
+OEWLossBeforeI [no-change]: *w*é*s*l*ǣ
+OELatePalatalDiphthong [no-change]: *w*é*s*l*ǣ
+OEJClusterCoalescence [no-change]: *w*é*s*l*ǣ
+OEBackMutation [no-change]: *w*é*s*l*ǣ
+OEWsPalatalUmlaut [no-change]: *w*é*s*l*ǣ
+OEWeakTailNasalLoss [no-change]: *w*é*s*l*ǣ
+OEWeightMarkers [no-change]: *w*é*s*l*ǣ
+OENonHighSyn [no-change]: *w*é*s*l*ǣ
+PGmcBAllophony [no-change]: *w*é*s*l*ǣ
+OEMedLongShort [no-change]: *w*é*s*l*ǣ
+OEHighVowelApocope [no-change]: *w*é*s*l*ǣ
+OEMedialSyncope [no-change]: *w*é*s*l*ǣ
+OEHighLinkSyncope [no-change]: *w*é*s*l*ǣ
+OELAdjacentSyncope [no-change]: *w*é*s*l*ǣ
+OEHighStressDecode [no-change]: *w*é*s*l*ǣ
+OEDentalAssimilation [no-change]: *w*é*s*l*ǣ
+OEPreconsonantalDegemination [no-change]: *w*é*s*l*ǣ
+OEEarlyOShortening [no-change]: *w*é*s*l*ǣ
+OEUnstressedFrontingEarly [no-change]: *w*é*s*l*ǣ
+OELateOShortening [no-change]: *w*é*s*l*ǣ
+OEMedUnstressedORaising [no-change]: *w*é*s*l*ǣ
+OEFinalUnstressedOLowering [no-change]: *w*é*s*l*ǣ
 OEUnstressedLongVowelShortening: *w*é*s*l*æ
 OEUnstressedAEMerger: *w*é*s*l*e
 OEMedUnstressedILowering1 [no-change]: *w*é*s*l*e
@@ -46124,44 +46124,44 @@ OEInterStressRaising [no-change]: *x*ō*r*ǭ
 OEWICombinativeUUmlaut [no-change]: *x*ō*r*ǭ
 PWGmcFinalBareALoss [no-change]: *x*ō*r*ǭ
 NWGmcInStemNLoss [no-change]: *x*ō*r*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *x*ō*r*ǭ
-EAFBrighteningUnstressed [no-change]: *x*ō*r*ǭ
-EAFBrightening [no-change]: *x*ō*r*ǭ
-EAFBrighteningLongFinal [no-change]: *x*ō*r*ǭ
-OEBreaking [no-change]: *x*ō*r*ǭ
-OEVelarFricativePalatalization [no-change]: *x*ō*r*ǭ
-OEARestoration [no-change]: *x*ō*r*ǭ
-OEHeavySyllableNasalApocope [no-change]: *x*ō*r*ǭ
-OESecondaryNasalization [no-change]: *x*ō*r*ǭ
-SieversLawSyncope [no-change]: *x*ō*r*ǭ
-OESkPalatalization [no-change]: *x*ō*r*ǭ
-OEVelarPalatalization [no-change]: *x*ō*r*ǭ
-OEPrefixAReduction [no-change]: *x*ō*r*ǭ
-OEPostVelarWLoss [no-change]: *x*ō*r*ǭ
-OEWsPalatalDiphthongization [no-change]: *x*ō*r*ǭ
-OEIUmlaut [no-change]: *x*ō*r*ǭ
-OEWLossBeforeI [no-change]: *x*ō*r*ǭ
-OELatePalatalDiphthong [no-change]: *x*ō*r*ǭ
-OEJClusterCoalescence [no-change]: *x*ō*r*ǭ
-OEBackMutation [no-change]: *x*ō*r*ǭ
-OEWsPalatalUmlaut [no-change]: *x*ō*r*ǭ
-OEWeakTailNasalLoss [no-change]: *x*ō*r*ǭ
-OEWeightMarkers [no-change]: *x*ō*r*ǭ
-OENonHighSyn [no-change]: *x*ō*r*ǭ
-PGmcBAllophony [no-change]: *x*ō*r*ǭ
-OEMedLongShort [no-change]: *x*ō*r*ǭ
-OEHighVowelApocope [no-change]: *x*ō*r*ǭ
-OEMedialSyncope [no-change]: *x*ō*r*ǭ
-OEHighLinkSyncope [no-change]: *x*ō*r*ǭ
-OELAdjacentSyncope [no-change]: *x*ō*r*ǭ
-OEHighStressDecode [no-change]: *x*ō*r*ǭ
-OEDentalAssimilation [no-change]: *x*ō*r*ǭ
-OEPreconsonantalDegemination [no-change]: *x*ō*r*ǭ
-OEEarlyOShortening [no-change]: *x*ō*r*ǭ
-OEUnstressedFrontingEarly [no-change]: *x*ō*r*ǭ
-OELateOShortening [no-change]: *x*ō*r*ǭ
-OEMedUnstressedORaising [no-change]: *x*ō*r*ǭ
-OEFinalUnstressedOLowering [no-change]: *x*ō*r*ǭ
+PWGmcSurvivingBimoricOUnrounding: *x*ō*r*ā
+EAFBrighteningUnstressed [no-change]: *x*ō*r*ā
+EAFBrightening [no-change]: *x*ō*r*ā
+EAFBrighteningLongFinal: *x*ō*r*ǣ
+OEBreaking [no-change]: *x*ō*r*ǣ
+OEVelarFricativePalatalization [no-change]: *x*ō*r*ǣ
+OEARestoration [no-change]: *x*ō*r*ǣ
+OEHeavySyllableNasalApocope [no-change]: *x*ō*r*ǣ
+OESecondaryNasalization [no-change]: *x*ō*r*ǣ
+SieversLawSyncope [no-change]: *x*ō*r*ǣ
+OESkPalatalization [no-change]: *x*ō*r*ǣ
+OEVelarPalatalization [no-change]: *x*ō*r*ǣ
+OEPrefixAReduction [no-change]: *x*ō*r*ǣ
+OEPostVelarWLoss [no-change]: *x*ō*r*ǣ
+OEWsPalatalDiphthongization [no-change]: *x*ō*r*ǣ
+OEIUmlaut [no-change]: *x*ō*r*ǣ
+OEWLossBeforeI [no-change]: *x*ō*r*ǣ
+OELatePalatalDiphthong [no-change]: *x*ō*r*ǣ
+OEJClusterCoalescence [no-change]: *x*ō*r*ǣ
+OEBackMutation [no-change]: *x*ō*r*ǣ
+OEWsPalatalUmlaut [no-change]: *x*ō*r*ǣ
+OEWeakTailNasalLoss [no-change]: *x*ō*r*ǣ
+OEWeightMarkers [no-change]: *x*ō*r*ǣ
+OENonHighSyn [no-change]: *x*ō*r*ǣ
+PGmcBAllophony [no-change]: *x*ō*r*ǣ
+OEMedLongShort [no-change]: *x*ō*r*ǣ
+OEHighVowelApocope [no-change]: *x*ō*r*ǣ
+OEMedialSyncope [no-change]: *x*ō*r*ǣ
+OEHighLinkSyncope [no-change]: *x*ō*r*ǣ
+OELAdjacentSyncope [no-change]: *x*ō*r*ǣ
+OEHighStressDecode [no-change]: *x*ō*r*ǣ
+OEDentalAssimilation [no-change]: *x*ō*r*ǣ
+OEPreconsonantalDegemination [no-change]: *x*ō*r*ǣ
+OEEarlyOShortening [no-change]: *x*ō*r*ǣ
+OEUnstressedFrontingEarly [no-change]: *x*ō*r*ǣ
+OELateOShortening [no-change]: *x*ō*r*ǣ
+OEMedUnstressedORaising [no-change]: *x*ō*r*ǣ
+OEFinalUnstressedOLowering [no-change]: *x*ō*r*ǣ
 OEUnstressedLongVowelShortening: *x*ō*r*æ
 OEUnstressedAEMerger: *x*ō*r*e
 OEMedUnstressedILowering1 [no-change]: *x*ō*r*e
@@ -46259,44 +46259,44 @@ OEInterStressRaising [no-change]: *w*í*d*u*w*ǭ
 OEWICombinativeUUmlaut: *w*ú*d*u*w*ǭ
 PWGmcFinalBareALoss [no-change]: *w*ú*d*u*w*ǭ
 NWGmcInStemNLoss [no-change]: *w*ú*d*u*w*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *w*ú*d*u*w*ǭ
-EAFBrighteningUnstressed [no-change]: *w*ú*d*u*w*ǭ
-EAFBrightening [no-change]: *w*ú*d*u*w*ǭ
-EAFBrighteningLongFinal [no-change]: *w*ú*d*u*w*ǭ
-OEBreaking [no-change]: *w*ú*d*u*w*ǭ
-OEVelarFricativePalatalization [no-change]: *w*ú*d*u*w*ǭ
-OEARestoration [no-change]: *w*ú*d*u*w*ǭ
-OEHeavySyllableNasalApocope [no-change]: *w*ú*d*u*w*ǭ
-OESecondaryNasalization [no-change]: *w*ú*d*u*w*ǭ
-SieversLawSyncope [no-change]: *w*ú*d*u*w*ǭ
-OESkPalatalization [no-change]: *w*ú*d*u*w*ǭ
-OEVelarPalatalization [no-change]: *w*ú*d*u*w*ǭ
-OEPrefixAReduction [no-change]: *w*ú*d*u*w*ǭ
-OEPostVelarWLoss [no-change]: *w*ú*d*u*w*ǭ
-OEWsPalatalDiphthongization [no-change]: *w*ú*d*u*w*ǭ
-OEIUmlaut [no-change]: *w*ú*d*u*w*ǭ
-OEWLossBeforeI [no-change]: *w*ú*d*u*w*ǭ
-OELatePalatalDiphthong [no-change]: *w*ú*d*u*w*ǭ
-OEJClusterCoalescence [no-change]: *w*ú*d*u*w*ǭ
-OEBackMutation [no-change]: *w*ú*d*u*w*ǭ
-OEWsPalatalUmlaut [no-change]: *w*ú*d*u*w*ǭ
-OEWeakTailNasalLoss [no-change]: *w*ú*d*u*w*ǭ
-OEWeightMarkers [no-change]: *w*ú*d*u*w*ǭ
-OENonHighSyn [no-change]: *w*ú*d*u*w*ǭ
-PGmcBAllophony [no-change]: *w*ú*d*u*w*ǭ
-OEMedLongShort [no-change]: *w*ú*d*u*w*ǭ
-OEHighVowelApocope [no-change]: *w*ú*d*u*w*ǭ
-OEMedialSyncope [no-change]: *w*ú*d*u*w*ǭ
-OEHighLinkSyncope [no-change]: *w*ú*d*u*w*ǭ
-OELAdjacentSyncope [no-change]: *w*ú*d*u*w*ǭ
-OEHighStressDecode [no-change]: *w*ú*d*u*w*ǭ
-OEDentalAssimilation [no-change]: *w*ú*d*u*w*ǭ
-OEPreconsonantalDegemination [no-change]: *w*ú*d*u*w*ǭ
-OEEarlyOShortening [no-change]: *w*ú*d*u*w*ǭ
-OEUnstressedFrontingEarly [no-change]: *w*ú*d*u*w*ǭ
-OELateOShortening [no-change]: *w*ú*d*u*w*ǭ
-OEMedUnstressedORaising [no-change]: *w*ú*d*u*w*ǭ
-OEFinalUnstressedOLowering [no-change]: *w*ú*d*u*w*ǭ
+PWGmcSurvivingBimoricOUnrounding: *w*ú*d*u*w*ā
+EAFBrighteningUnstressed [no-change]: *w*ú*d*u*w*ā
+EAFBrightening [no-change]: *w*ú*d*u*w*ā
+EAFBrighteningLongFinal: *w*ú*d*u*w*ǣ
+OEBreaking [no-change]: *w*ú*d*u*w*ǣ
+OEVelarFricativePalatalization [no-change]: *w*ú*d*u*w*ǣ
+OEARestoration [no-change]: *w*ú*d*u*w*ǣ
+OEHeavySyllableNasalApocope [no-change]: *w*ú*d*u*w*ǣ
+OESecondaryNasalization [no-change]: *w*ú*d*u*w*ǣ
+SieversLawSyncope [no-change]: *w*ú*d*u*w*ǣ
+OESkPalatalization [no-change]: *w*ú*d*u*w*ǣ
+OEVelarPalatalization [no-change]: *w*ú*d*u*w*ǣ
+OEPrefixAReduction [no-change]: *w*ú*d*u*w*ǣ
+OEPostVelarWLoss [no-change]: *w*ú*d*u*w*ǣ
+OEWsPalatalDiphthongization [no-change]: *w*ú*d*u*w*ǣ
+OEIUmlaut [no-change]: *w*ú*d*u*w*ǣ
+OEWLossBeforeI [no-change]: *w*ú*d*u*w*ǣ
+OELatePalatalDiphthong [no-change]: *w*ú*d*u*w*ǣ
+OEJClusterCoalescence [no-change]: *w*ú*d*u*w*ǣ
+OEBackMutation [no-change]: *w*ú*d*u*w*ǣ
+OEWsPalatalUmlaut [no-change]: *w*ú*d*u*w*ǣ
+OEWeakTailNasalLoss [no-change]: *w*ú*d*u*w*ǣ
+OEWeightMarkers [no-change]: *w*ú*d*u*w*ǣ
+OENonHighSyn [no-change]: *w*ú*d*u*w*ǣ
+PGmcBAllophony [no-change]: *w*ú*d*u*w*ǣ
+OEMedLongShort [no-change]: *w*ú*d*u*w*ǣ
+OEHighVowelApocope [no-change]: *w*ú*d*u*w*ǣ
+OEMedialSyncope [no-change]: *w*ú*d*u*w*ǣ
+OEHighLinkSyncope [no-change]: *w*ú*d*u*w*ǣ
+OELAdjacentSyncope [no-change]: *w*ú*d*u*w*ǣ
+OEHighStressDecode [no-change]: *w*ú*d*u*w*ǣ
+OEDentalAssimilation [no-change]: *w*ú*d*u*w*ǣ
+OEPreconsonantalDegemination [no-change]: *w*ú*d*u*w*ǣ
+OEEarlyOShortening [no-change]: *w*ú*d*u*w*ǣ
+OEUnstressedFrontingEarly [no-change]: *w*ú*d*u*w*ǣ
+OELateOShortening [no-change]: *w*ú*d*u*w*ǣ
+OEMedUnstressedORaising [no-change]: *w*ú*d*u*w*ǣ
+OEFinalUnstressedOLowering [no-change]: *w*ú*d*u*w*ǣ
 OEUnstressedLongVowelShortening: *w*ú*d*u*w*æ
 OEUnstressedAEMerger: *w*ú*d*u*w*e
 OEMedUnstressedILowering1 [no-change]: *w*ú*d*u*w*e
@@ -51389,44 +51389,44 @@ OEInterStressRaising [no-change]: *f*ū*l*i*θ*ǭ
 OEWICombinativeUUmlaut [no-change]: *f*ū*l*i*θ*ǭ
 PWGmcFinalBareALoss [no-change]: *f*ū*l*i*θ*ǭ
 NWGmcInStemNLoss [no-change]: *f*ū*l*i*θ*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *f*ū*l*i*θ*ǭ
-EAFBrighteningUnstressed [no-change]: *f*ū*l*i*θ*ǭ
-EAFBrightening [no-change]: *f*ū*l*i*θ*ǭ
-EAFBrighteningLongFinal [no-change]: *f*ū*l*i*θ*ǭ
-OEBreaking [no-change]: *f*ū*l*i*θ*ǭ
-OEVelarFricativePalatalization [no-change]: *f*ū*l*i*θ*ǭ
-OEARestoration [no-change]: *f*ū*l*i*θ*ǭ
-OEHeavySyllableNasalApocope [no-change]: *f*ū*l*i*θ*ǭ
-OESecondaryNasalization [no-change]: *f*ū*l*i*θ*ǭ
-SieversLawSyncope [no-change]: *f*ū*l*i*θ*ǭ
-OESkPalatalization [no-change]: *f*ū*l*i*θ*ǭ
-OEVelarPalatalization [no-change]: *f*ū*l*i*θ*ǭ
-OEPrefixAReduction [no-change]: *f*ū*l*i*θ*ǭ
-OEPostVelarWLoss [no-change]: *f*ū*l*i*θ*ǭ
-OEWsPalatalDiphthongization [no-change]: *f*ū*l*i*θ*ǭ
-OEIUmlaut: *f*ȳ*l*i*θ*ǭ
-OEWLossBeforeI [no-change]: *f*ȳ*l*i*θ*ǭ
-OELatePalatalDiphthong [no-change]: *f*ȳ*l*i*θ*ǭ
-OEJClusterCoalescence [no-change]: *f*ȳ*l*i*θ*ǭ
-OEBackMutation [no-change]: *f*ȳ*l*i*θ*ǭ
-OEWsPalatalUmlaut [no-change]: *f*ȳ*l*i*θ*ǭ
-OEWeakTailNasalLoss [no-change]: *f*ȳ*l*i*θ*ǭ
-OEWeightMarkers [no-change]: *f*ȳ*l*i*θ*ǭ
-OENonHighSyn [no-change]: *f*ȳ*l*i*θ*ǭ
-PGmcBAllophony [no-change]: *f*ȳ*l*i*θ*ǭ
-OEMedLongShort [no-change]: *f*ȳ*l*i*θ*ǭ
-OEHighVowelApocope: *f*ȳ*l*θ*ǭ
-OEMedialSyncope [no-change]: *f*ȳ*l*θ*ǭ
-OEHighLinkSyncope [no-change]: *f*ȳ*l*θ*ǭ
-OELAdjacentSyncope [no-change]: *f*ȳ*l*θ*ǭ
-OEHighStressDecode [no-change]: *f*ȳ*l*θ*ǭ
-OEDentalAssimilation [no-change]: *f*ȳ*l*θ*ǭ
-OEPreconsonantalDegemination [no-change]: *f*ȳ*l*θ*ǭ
-OEEarlyOShortening [no-change]: *f*ȳ*l*θ*ǭ
-OEUnstressedFrontingEarly [no-change]: *f*ȳ*l*θ*ǭ
-OELateOShortening [no-change]: *f*ȳ*l*θ*ǭ
-OEMedUnstressedORaising [no-change]: *f*ȳ*l*θ*ǭ
-OEFinalUnstressedOLowering [no-change]: *f*ȳ*l*θ*ǭ
+PWGmcSurvivingBimoricOUnrounding: *f*ū*l*i*θ*ā
+EAFBrighteningUnstressed [no-change]: *f*ū*l*i*θ*ā
+EAFBrightening [no-change]: *f*ū*l*i*θ*ā
+EAFBrighteningLongFinal: *f*ū*l*i*θ*ǣ
+OEBreaking [no-change]: *f*ū*l*i*θ*ǣ
+OEVelarFricativePalatalization [no-change]: *f*ū*l*i*θ*ǣ
+OEARestoration [no-change]: *f*ū*l*i*θ*ǣ
+OEHeavySyllableNasalApocope [no-change]: *f*ū*l*i*θ*ǣ
+OESecondaryNasalization [no-change]: *f*ū*l*i*θ*ǣ
+SieversLawSyncope [no-change]: *f*ū*l*i*θ*ǣ
+OESkPalatalization [no-change]: *f*ū*l*i*θ*ǣ
+OEVelarPalatalization [no-change]: *f*ū*l*i*θ*ǣ
+OEPrefixAReduction [no-change]: *f*ū*l*i*θ*ǣ
+OEPostVelarWLoss [no-change]: *f*ū*l*i*θ*ǣ
+OEWsPalatalDiphthongization [no-change]: *f*ū*l*i*θ*ǣ
+OEIUmlaut: *f*ȳ*l*i*θ*ǣ
+OEWLossBeforeI [no-change]: *f*ȳ*l*i*θ*ǣ
+OELatePalatalDiphthong [no-change]: *f*ȳ*l*i*θ*ǣ
+OEJClusterCoalescence [no-change]: *f*ȳ*l*i*θ*ǣ
+OEBackMutation [no-change]: *f*ȳ*l*i*θ*ǣ
+OEWsPalatalUmlaut [no-change]: *f*ȳ*l*i*θ*ǣ
+OEWeakTailNasalLoss [no-change]: *f*ȳ*l*i*θ*ǣ
+OEWeightMarkers [no-change]: *f*ȳ*l*i*θ*ǣ
+OENonHighSyn [no-change]: *f*ȳ*l*i*θ*ǣ
+PGmcBAllophony [no-change]: *f*ȳ*l*i*θ*ǣ
+OEMedLongShort [no-change]: *f*ȳ*l*i*θ*ǣ
+OEHighVowelApocope: *f*ȳ*l*θ*ǣ
+OEMedialSyncope [no-change]: *f*ȳ*l*θ*ǣ
+OEHighLinkSyncope [no-change]: *f*ȳ*l*θ*ǣ
+OELAdjacentSyncope [no-change]: *f*ȳ*l*θ*ǣ
+OEHighStressDecode [no-change]: *f*ȳ*l*θ*ǣ
+OEDentalAssimilation [no-change]: *f*ȳ*l*θ*ǣ
+OEPreconsonantalDegemination [no-change]: *f*ȳ*l*θ*ǣ
+OEEarlyOShortening [no-change]: *f*ȳ*l*θ*ǣ
+OEUnstressedFrontingEarly [no-change]: *f*ȳ*l*θ*ǣ
+OELateOShortening [no-change]: *f*ȳ*l*θ*ǣ
+OEMedUnstressedORaising [no-change]: *f*ȳ*l*θ*ǣ
+OEFinalUnstressedOLowering [no-change]: *f*ȳ*l*θ*ǣ
 OEUnstressedLongVowelShortening: *f*ȳ*l*θ*æ
 OEUnstressedAEMerger: *f*ȳ*l*θ*e
 OEMedUnstressedILowering1 [no-change]: *f*ȳ*l*θ*e
@@ -51524,44 +51524,44 @@ OEInterStressRaising [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
 OEWICombinativeUUmlaut [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
 PWGmcFinalBareALoss [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
 NWGmcInStemNLoss [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *é*r*θ*a*k*ù*n*d*ǭ
-EAFBrighteningUnstressed: *é*r*θ*æ*k*ù*n*d*ǭ
-EAFBrightening [no-change]: *é*r*θ*æ*k*ù*n*d*ǭ
-EAFBrighteningLongFinal [no-change]: *é*r*θ*æ*k*ù*n*d*ǭ
-OEBreaking: *éo*r*θ*æ*k*ù*n*d*ǭ
-OEVelarFricativePalatalization [no-change]: *éo*r*θ*æ*k*ù*n*d*ǭ
-OEARestoration: *éo*r*θ*a*k*ù*n*d*ǭ
-OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OESecondaryNasalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-SieversLawSyncope [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OESkPalatalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEVelarPalatalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEPrefixAReduction [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEPostVelarWLoss [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEWsPalatalDiphthongization [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEIUmlaut [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEWLossBeforeI [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OELatePalatalDiphthong [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEJClusterCoalescence [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEBackMutation [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEWsPalatalUmlaut [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEWeakTailNasalLoss [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OEWeightMarkers [no-change]: *éo*r*θ*a*k*ù*n*d*ǭ
-OENonHighSyn: *éo*r*θ*k*ù*n*d*ǭ
-PGmcBAllophony [no-change]: *éo*r*θ*k*ù*n*d*ǭ
-OEMedLongShort [no-change]: *éo*r*θ*k*ù*n*d*ǭ
-OEHighVowelApocope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
-OEMedialSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
-OEHighLinkSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
-OELAdjacentSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǭ
-OEHighStressDecode: *éo*r*θ*k*u*n*d*ǭ
-OEDentalAssimilation [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEPreconsonantalDegemination [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEEarlyOShortening [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEUnstressedFrontingEarly [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OELateOShortening [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEMedUnstressedORaising [no-change]: *éo*r*θ*k*u*n*d*ǭ
-OEFinalUnstressedOLowering [no-change]: *éo*r*θ*k*u*n*d*ǭ
+PWGmcSurvivingBimoricOUnrounding: *é*r*θ*a*k*ù*n*d*ā
+EAFBrighteningUnstressed: *é*r*θ*æ*k*ù*n*d*ā
+EAFBrightening [no-change]: *é*r*θ*æ*k*ù*n*d*ā
+EAFBrighteningLongFinal: *é*r*θ*æ*k*ù*n*d*ǣ
+OEBreaking: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEVelarFricativePalatalization [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEARestoration: *éo*r*θ*a*k*ù*n*d*ǣ
+OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OESecondaryNasalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+SieversLawSyncope [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OESkPalatalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEVelarPalatalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEPrefixAReduction [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEPostVelarWLoss [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEWsPalatalDiphthongization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEIUmlaut [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEWLossBeforeI [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OELatePalatalDiphthong [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEJClusterCoalescence [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEBackMutation [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEWsPalatalUmlaut [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEWeakTailNasalLoss [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEWeightMarkers [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OENonHighSyn: *éo*r*θ*k*ù*n*d*ǣ
+PGmcBAllophony [no-change]: *éo*r*θ*k*ù*n*d*ǣ
+OEMedLongShort [no-change]: *éo*r*θ*k*ù*n*d*ǣ
+OEHighVowelApocope [no-change]: *éo*r*θ*k*ù*n*d*ǣ
+OEMedialSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǣ
+OEHighLinkSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǣ
+OELAdjacentSyncope [no-change]: *éo*r*θ*k*ù*n*d*ǣ
+OEHighStressDecode: *éo*r*θ*k*u*n*d*ǣ
+OEDentalAssimilation [no-change]: *éo*r*θ*k*u*n*d*ǣ
+OEPreconsonantalDegemination [no-change]: *éo*r*θ*k*u*n*d*ǣ
+OEEarlyOShortening [no-change]: *éo*r*θ*k*u*n*d*ǣ
+OEUnstressedFrontingEarly [no-change]: *éo*r*θ*k*u*n*d*ǣ
+OELateOShortening [no-change]: *éo*r*θ*k*u*n*d*ǣ
+OEMedUnstressedORaising [no-change]: *éo*r*θ*k*u*n*d*ǣ
+OEFinalUnstressedOLowering [no-change]: *éo*r*θ*k*u*n*d*ǣ
 OEUnstressedLongVowelShortening: *éo*r*θ*k*u*n*d*æ
 OEUnstressedAEMerger: *éo*r*θ*k*u*n*d*e
 OEMedUnstressedILowering1 [no-change]: *éo*r*θ*k*u*n*d*e
@@ -52135,142 +52135,7 @@ OldEnglishRemoveStars: strēa
 OldEnglishSurface [no-change]: strēa
 
 
-=== BUCKET: front_expected_back_out (2) ===
-
---- nightmare ---
-PROTO: *márōn
-INPUT_CONTEXT: SC098; stress=stressed; finality=final
-EXPECTED: mære
-OUTPUTS: mare
-
-
-## Section 1: Proto-Germanic consonant inheritance
-
-EnglishProtoInput: *m*á*r*ō*n
-PGmcGmSimplification [no-change]: *m*á*r*ō*n
-PGmcNasalLossBeforeX [no-change]: *m*á*r*ō*n
-RootNounNomZLoss [no-change]: *m*á*r*ō*n
-
-## Section 2: Northwest and West Germanic developments
-
-PNWGmcUnstressedAiMonophthongization [no-change]: *m*á*r*ō*n
-PNWGmcAToUBeforeM [no-change]: *m*á*r*ō*n
-PNWGmcLongELowering [no-change]: *m*á*r*ō*n
-PWGmcEarlyIApocope [no-change]: *m*á*r*ō*n
-PWGmcFinalOrLowering [no-change]: *m*á*r*ō*n
-PWGmcCoronalWAssimilation [no-change]: *m*á*r*ō*n
-OEWWSimplification [no-change]: *m*á*r*ō*n
-PWGmcIjContraction [no-change]: *m*á*r*ō*n
-PWGmcJGemination [no-change]: *m*á*r*ō*n
-PWGmcSyllabicJ [no-change]: *m*á*r*ō*n
-PNWGmcPreconsonantalXLoss [no-change]: *m*á*r*ō*n
-EAFLThVoicing [no-change]: *m*á*r*ō*n
-PWGmcDentalHardening [no-change]: *m*á*r*ō*n
-PWGmcEndinglessAw [no-change]: *m*á*r*ō*n
-PNWGmcILowering [no-change]: *m*á*r*ō*n
-PNWGmcULowering [no-change]: *m*á*r*ō*n
-PNWGmcStressedMonosyllableORaising [no-change]: *m*á*r*ō*n
-PNWGmcFinalLongORaising [no-change]: *m*á*r*ō*n
-EAFFinalZDeletion [no-change]: *m*á*r*ō*n
-PWGmcUnstressedWordFinalIApocope [no-change]: *m*á*r*ō*n
-MonosyllabicFinalZLoss [no-change]: *m*á*r*ō*n
-PNWGmcMonosyllabicFinalRLengthening [no-change]: *m*á*r*ō*n
-EAFRhotacism [no-change]: *m*á*r*ō*n
-PNWGmcMnDissimilation [no-change]: *m*á*r*ō*n
-PNWGmcNStemNLoss: *m*á*r*ǭ
-EAFNasalSpirantLengthening [no-change]: *m*á*r*ǭ
-EAFNasalSpirantLoss [no-change]: *m*á*r*ǭ
-EAFHiatusWInsertion [no-change]: *m*á*r*ǭ
-EAFLongANasalRounding [no-change]: *m*á*r*ǭ
-EAFNasalizedLowRounding [no-change]: *m*á*r*ǭ
-EAFLongAFronting [no-change]: *m*á*r*ǭ
-OEStressFootContext [no-change]: *m*á*r*ǭ
-
-## Section 3: Early Anglo-Frisian (North Sea Germanic)
-
-EAFAiMonophthongization [no-change]: *m*á*r*ǭ
-
-## Section 4: Old English
-
-OEAwwjResolution [no-change]: *m*á*r*ǭ
-OEAuBrightening [no-change]: *m*á*r*ǭ
-OEEwLongDiphthong [no-change]: *m*á*r*ǭ
-OEJWWSimplification [no-change]: *m*á*r*ǭ
-OEJGlideIO [no-change]: *m*á*r*ǭ
-OEDiphthongLeveling [no-change]: *m*á*r*ǭ
-OEAwLongDiphthong [no-change]: *m*á*r*ǭ
-OECompoundLinkingSyncope [no-change]: *m*á*r*ǭ
-OEStripSecondaryStress [no-change]: *m*á*r*ǭ
-OEInterStressRaising [no-change]: *m*á*r*ǭ
-OEWICombinativeUUmlaut [no-change]: *m*á*r*ǭ
-PWGmcFinalBareALoss [no-change]: *m*á*r*ǭ
-NWGmcInStemNLoss [no-change]: *m*á*r*ǭ
-PWGmcSurvivingBimoricOUnrounding [no-change]: *m*á*r*ǭ
-EAFBrighteningUnstressed [no-change]: *m*á*r*ǭ
-EAFBrightening: *m*æ*r*ǭ
-EAFBrighteningLongFinal [no-change]: *m*æ*r*ǭ
-OEBreaking [no-change]: *m*æ*r*ǭ
-OEVelarFricativePalatalization [no-change]: *m*æ*r*ǭ
-OEARestoration: *m*a*r*ǭ
-OEHeavySyllableNasalApocope [no-change]: *m*a*r*ǭ
-OESecondaryNasalization [no-change]: *m*a*r*ǭ
-SieversLawSyncope [no-change]: *m*a*r*ǭ
-OESkPalatalization [no-change]: *m*a*r*ǭ
-OEVelarPalatalization [no-change]: *m*a*r*ǭ
-OEPrefixAReduction [no-change]: *m*a*r*ǭ
-OEPostVelarWLoss [no-change]: *m*a*r*ǭ
-OEWsPalatalDiphthongization [no-change]: *m*a*r*ǭ
-OEIUmlaut [no-change]: *m*a*r*ǭ
-OEWLossBeforeI [no-change]: *m*a*r*ǭ
-OELatePalatalDiphthong [no-change]: *m*a*r*ǭ
-OEJClusterCoalescence [no-change]: *m*a*r*ǭ
-OEBackMutation [no-change]: *m*a*r*ǭ
-OEWsPalatalUmlaut [no-change]: *m*a*r*ǭ
-OEWeakTailNasalLoss [no-change]: *m*a*r*ǭ
-OEWeightMarkers [no-change]: *m*a*r*ǭ
-OENonHighSyn [no-change]: *m*a*r*ǭ
-PGmcBAllophony [no-change]: *m*a*r*ǭ
-OEMedLongShort [no-change]: *m*a*r*ǭ
-OEHighVowelApocope [no-change]: *m*a*r*ǭ
-OEMedialSyncope [no-change]: *m*a*r*ǭ
-OEHighLinkSyncope [no-change]: *m*a*r*ǭ
-OELAdjacentSyncope [no-change]: *m*a*r*ǭ
-OEHighStressDecode [no-change]: *m*a*r*ǭ
-OEDentalAssimilation [no-change]: *m*a*r*ǭ
-OEPreconsonantalDegemination [no-change]: *m*a*r*ǭ
-OEEarlyOShortening [no-change]: *m*a*r*ǭ
-OEUnstressedFrontingEarly [no-change]: *m*a*r*ǭ
-OELateOShortening [no-change]: *m*a*r*ǭ
-OEMedUnstressedORaising [no-change]: *m*a*r*ǭ
-OEFinalUnstressedOLowering [no-change]: *m*a*r*ǭ
-OEUnstressedLongVowelShortening: *m*a*r*æ
-OEUnstressedAEMerger: *m*a*r*e
-OEMedUnstressedILowering1 [no-change]: *m*a*r*e
-OEMedUnstressedILowering [no-change]: *m*a*r*e
-OEMedUnstressedULowering [no-change]: *m*a*r*e
-OEPrefixIReduction [no-change]: *m*a*r*e
-OEWeakTailReduction [no-change]: *m*a*r*e
-OEJLossAfterHeavy [no-change]: *m*a*r*e
-OEFinalGeminateSimplification [no-change]: *m*a*r*e
-OEJStrengtheningAfterFrontDiphthong [no-change]: *m*a*r*e
-OEIntervocalicJVocalization [no-change]: *m*a*r*e
-OEUnstressedEIContraction [no-change]: *m*a*r*e
-OEWeightCleanup [no-change]: *m*a*r*e
-OEHLoss [no-change]: *m*a*r*e
-OEContraction [no-change]: *m*a*r*e
-OERMetathesis [no-change]: *m*a*r*e
-OEEpentheticVowel [no-change]: *m*a*r*e
-OELateUnstressedAgSuffix [no-change]: *m*a*r*e
-OEPalatalFricativeMerger [no-change]: *m*a*r*e
-OECjCleanup [no-change]: *m*a*r*e
-OEXsMerge [no-change]: *m*a*r*e
-
-## Section 5: Orthography & surface
-
-OldEnglishOrthography [no-change]: *m*a*r*e
-OEWsPalatalGlide [no-change]: *m*a*r*e
-OldEnglishRemoveStars: mare
-OldEnglishSurface [no-change]: mare
+=== BUCKET: front_expected_back_out (1) ===
 
 --- tap ---
 PROTO: *táppô
@@ -52544,6 +52409,144 @@ OldEnglishOrthography [no-change]: *f*ȳ*r
 OEWsPalatalGlide [no-change]: *f*ȳ*r
 OldEnglishRemoveStars: fȳr
 OldEnglishSurface [no-change]: fȳr
+
+
+=== BUCKET: palatal_marker_variant (1) ===
+
+--- flask ---
+PROTO: *fláskōn
+INPUT_CONTEXT: SC098; stress=stressed; finality=final
+EXPECTED: flasce
+OUTPUTS: flæsċe
+
+
+## Section 1: Proto-Germanic consonant inheritance
+
+EnglishProtoInput: *f*l*á*s*k*ō*n
+PGmcGmSimplification [no-change]: *f*l*á*s*k*ō*n
+PGmcNasalLossBeforeX [no-change]: *f*l*á*s*k*ō*n
+RootNounNomZLoss [no-change]: *f*l*á*s*k*ō*n
+
+## Section 2: Northwest and West Germanic developments
+
+PNWGmcUnstressedAiMonophthongization [no-change]: *f*l*á*s*k*ō*n
+PNWGmcAToUBeforeM [no-change]: *f*l*á*s*k*ō*n
+PNWGmcLongELowering [no-change]: *f*l*á*s*k*ō*n
+PWGmcEarlyIApocope [no-change]: *f*l*á*s*k*ō*n
+PWGmcFinalOrLowering [no-change]: *f*l*á*s*k*ō*n
+PWGmcCoronalWAssimilation [no-change]: *f*l*á*s*k*ō*n
+OEWWSimplification [no-change]: *f*l*á*s*k*ō*n
+PWGmcIjContraction [no-change]: *f*l*á*s*k*ō*n
+PWGmcJGemination [no-change]: *f*l*á*s*k*ō*n
+PWGmcSyllabicJ [no-change]: *f*l*á*s*k*ō*n
+PNWGmcPreconsonantalXLoss [no-change]: *f*l*á*s*k*ō*n
+EAFLThVoicing [no-change]: *f*l*á*s*k*ō*n
+PWGmcDentalHardening [no-change]: *f*l*á*s*k*ō*n
+PWGmcEndinglessAw [no-change]: *f*l*á*s*k*ō*n
+PNWGmcILowering [no-change]: *f*l*á*s*k*ō*n
+PNWGmcULowering [no-change]: *f*l*á*s*k*ō*n
+PNWGmcStressedMonosyllableORaising [no-change]: *f*l*á*s*k*ō*n
+PNWGmcFinalLongORaising [no-change]: *f*l*á*s*k*ō*n
+EAFFinalZDeletion [no-change]: *f*l*á*s*k*ō*n
+PWGmcUnstressedWordFinalIApocope [no-change]: *f*l*á*s*k*ō*n
+MonosyllabicFinalZLoss [no-change]: *f*l*á*s*k*ō*n
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *f*l*á*s*k*ō*n
+EAFRhotacism [no-change]: *f*l*á*s*k*ō*n
+PNWGmcMnDissimilation [no-change]: *f*l*á*s*k*ō*n
+PNWGmcNStemNLoss: *f*l*á*s*k*ǭ
+EAFNasalSpirantLengthening [no-change]: *f*l*á*s*k*ǭ
+EAFNasalSpirantLoss [no-change]: *f*l*á*s*k*ǭ
+EAFHiatusWInsertion [no-change]: *f*l*á*s*k*ǭ
+EAFLongANasalRounding [no-change]: *f*l*á*s*k*ǭ
+EAFNasalizedLowRounding [no-change]: *f*l*á*s*k*ǭ
+EAFLongAFronting [no-change]: *f*l*á*s*k*ǭ
+OEStressFootContext [no-change]: *f*l*á*s*k*ǭ
+
+## Section 3: Early Anglo-Frisian (North Sea Germanic)
+
+EAFAiMonophthongization [no-change]: *f*l*á*s*k*ǭ
+
+## Section 4: Old English
+
+OEAwwjResolution [no-change]: *f*l*á*s*k*ǭ
+OEAuBrightening [no-change]: *f*l*á*s*k*ǭ
+OEEwLongDiphthong [no-change]: *f*l*á*s*k*ǭ
+OEJWWSimplification [no-change]: *f*l*á*s*k*ǭ
+OEJGlideIO [no-change]: *f*l*á*s*k*ǭ
+OEDiphthongLeveling [no-change]: *f*l*á*s*k*ǭ
+OEAwLongDiphthong [no-change]: *f*l*á*s*k*ǭ
+OECompoundLinkingSyncope [no-change]: *f*l*á*s*k*ǭ
+OEStripSecondaryStress [no-change]: *f*l*á*s*k*ǭ
+OEInterStressRaising [no-change]: *f*l*á*s*k*ǭ
+OEWICombinativeUUmlaut [no-change]: *f*l*á*s*k*ǭ
+PWGmcFinalBareALoss [no-change]: *f*l*á*s*k*ǭ
+NWGmcInStemNLoss [no-change]: *f*l*á*s*k*ǭ
+PWGmcSurvivingBimoricOUnrounding: *f*l*á*s*k*ā
+EAFBrighteningUnstressed [no-change]: *f*l*á*s*k*ā
+EAFBrightening: *f*l*æ*s*k*ā
+EAFBrighteningLongFinal: *f*l*æ*s*k*ǣ
+OEBreaking [no-change]: *f*l*æ*s*k*ǣ
+OEVelarFricativePalatalization [no-change]: *f*l*æ*s*k*ǣ
+OEARestoration [no-change]: *f*l*æ*s*k*ǣ
+OEHeavySyllableNasalApocope [no-change]: *f*l*æ*s*k*ǣ
+OESecondaryNasalization [no-change]: *f*l*æ*s*k*ǣ
+SieversLawSyncope [no-change]: *f*l*æ*s*k*ǣ
+OESkPalatalization: *f*l*æ*ʃ*ǣ
+OEVelarPalatalization [no-change]: *f*l*æ*ʃ*ǣ
+OEPrefixAReduction [no-change]: *f*l*æ*ʃ*ǣ
+OEPostVelarWLoss [no-change]: *f*l*æ*ʃ*ǣ
+OEWsPalatalDiphthongization [no-change]: *f*l*æ*ʃ*ǣ
+OEIUmlaut [no-change]: *f*l*æ*ʃ*ǣ
+OEWLossBeforeI [no-change]: *f*l*æ*ʃ*ǣ
+OELatePalatalDiphthong [no-change]: *f*l*æ*ʃ*ǣ
+OEJClusterCoalescence [no-change]: *f*l*æ*ʃ*ǣ
+OEBackMutation [no-change]: *f*l*æ*ʃ*ǣ
+OEWsPalatalUmlaut [no-change]: *f*l*æ*ʃ*ǣ
+OEWeakTailNasalLoss [no-change]: *f*l*æ*ʃ*ǣ
+OEWeightMarkers [no-change]: *f*l*æ*ʃ*ǣ
+OENonHighSyn [no-change]: *f*l*æ*ʃ*ǣ
+PGmcBAllophony [no-change]: *f*l*æ*ʃ*ǣ
+OEMedLongShort [no-change]: *f*l*æ*ʃ*ǣ
+OEHighVowelApocope [no-change]: *f*l*æ*ʃ*ǣ
+OEMedialSyncope [no-change]: *f*l*æ*ʃ*ǣ
+OEHighLinkSyncope [no-change]: *f*l*æ*ʃ*ǣ
+OELAdjacentSyncope [no-change]: *f*l*æ*ʃ*ǣ
+OEHighStressDecode [no-change]: *f*l*æ*ʃ*ǣ
+OEDentalAssimilation [no-change]: *f*l*æ*ʃ*ǣ
+OEPreconsonantalDegemination [no-change]: *f*l*æ*ʃ*ǣ
+OEEarlyOShortening [no-change]: *f*l*æ*ʃ*ǣ
+OEUnstressedFrontingEarly [no-change]: *f*l*æ*ʃ*ǣ
+OELateOShortening [no-change]: *f*l*æ*ʃ*ǣ
+OEMedUnstressedORaising [no-change]: *f*l*æ*ʃ*ǣ
+OEFinalUnstressedOLowering [no-change]: *f*l*æ*ʃ*ǣ
+OEUnstressedLongVowelShortening: *f*l*æ*ʃ*æ
+OEUnstressedAEMerger: *f*l*æ*ʃ*e
+OEMedUnstressedILowering1 [no-change]: *f*l*æ*ʃ*e
+OEMedUnstressedILowering [no-change]: *f*l*æ*ʃ*e
+OEMedUnstressedULowering [no-change]: *f*l*æ*ʃ*e
+OEPrefixIReduction [no-change]: *f*l*æ*ʃ*e
+OEWeakTailReduction [no-change]: *f*l*æ*ʃ*e
+OEJLossAfterHeavy [no-change]: *f*l*æ*ʃ*e
+OEFinalGeminateSimplification [no-change]: *f*l*æ*ʃ*e
+OEJStrengtheningAfterFrontDiphthong [no-change]: *f*l*æ*ʃ*e
+OEIntervocalicJVocalization [no-change]: *f*l*æ*ʃ*e
+OEUnstressedEIContraction [no-change]: *f*l*æ*ʃ*e
+OEWeightCleanup [no-change]: *f*l*æ*ʃ*e
+OEHLoss [no-change]: *f*l*æ*ʃ*e
+OEContraction [no-change]: *f*l*æ*ʃ*e
+OERMetathesis [no-change]: *f*l*æ*ʃ*e
+OEEpentheticVowel [no-change]: *f*l*æ*ʃ*e
+OELateUnstressedAgSuffix [no-change]: *f*l*æ*ʃ*e
+OEPalatalFricativeMerger [no-change]: *f*l*æ*ʃ*e
+OECjCleanup [no-change]: *f*l*æ*ʃ*e
+OEXsMerge [no-change]: *f*l*æ*ʃ*e
+
+## Section 5: Orthography & surface
+
+OldEnglishOrthography: *f*l*æsċ*e
+OEWsPalatalGlide [no-change]: *f*l*æsċ*e
+OldEnglishRemoveStars: flæsċe
+OldEnglishSurface [no-change]: flæsċe
 
 
 === BUCKET: vowel_quality_other (5) ===
@@ -53277,7 +53280,7 @@ wax | *wáxsaną | exp weaxan | afb *w*æ*x*s*a*n*ą | ar *w*ea*x*s*a*n*ą
 whale | *xwálaz | exp hwæl | afb *x*w*æ*l | ar *x*w*æ*l
 wield | *wáldaną | exp wealdan | afb *w*æ*l*d*a*n*ą | ar *w*ea*l*d*a*n*ą
 withy | *wḯθagą | exp wīþiġ | afb *w*ḯ*θ*æ*g*ą | ar *w*ḯ*θ*æ*g*ą
-earthly | *érθa-kùnðǭ | exp eorþcunde | afb *é*r*θ*æ*k*ù*n*d*ǭ | ar *éo*r*θ*a*k*ù*n*d*ǭ
+earthly | *érθa-kùnðǭ | exp eorþcunde | afb *é*r*θ*æ*k*ù*n*d*ā | ar *éo*r*θ*a*k*ù*n*d*ǣ
 
 --- unfronted_by_ar (9) ---
 bake | *bákaną | exp bacan | afb *b*æ*k*a*n*ą | ar *b*a*k*a*n*ą
@@ -53288,7 +53291,7 @@ rainbow | *régna-bùgô | exp reġnboga | afb *r*é*g*n*æ*b*o*g*ô | ar *r*é*
 wade | *wádaną | exp wadan | afb *w*æ*d*a*n*ą | ar *w*a*d*a*n*ą
 wake | *wákaną | exp wacan | afb *w*æ*k*a*n*ą | ar *w*a*k*a*n*ą
 wash | *wáskaną | exp wascan | afb *w*æ*s*k*a*n*ą | ar *w*a*s*k*a*n*ą
-earthly | *érθa-kùnðǭ | exp eorþcunde | afb *é*r*θ*æ*k*ù*n*d*ǭ | ar *éo*r*θ*a*k*ù*n*d*ǭ
+earthly | *érθa-kùnðǭ | exp eorþcunde | afb *é*r*θ*æ*k*ù*n*d*ā | ar *éo*r*θ*a*k*ù*n*d*ǣ
 
 --- fronting_correct (35) ---
 beard | *bárdaz | exp beard | afb *b*æ*r*d | ar *b*ea*r*d
@@ -53338,7 +53341,7 @@ wash | *wáskaną | exp wascan | afb *w*æ*s*k*a*n*ą | ar *w*a*s*k*a*n*ą
 
 --- fronting_plus_unfronting_incorrect (2) ---
 rainbow | *régna-bùgô | exp reġnboga | afb *r*é*g*n*æ*b*o*g*ô | ar *r*é*g*n*a*b*o*g*ô
-earthly | *érθa-kùnðǭ | exp eorþcunde | afb *é*r*θ*æ*k*ù*n*d*ǭ | ar *éo*r*θ*a*k*ù*n*d*ǭ
+earthly | *érθa-kùnðǭ | exp eorþcunde | afb *é*r*θ*æ*k*ù*n*d*ā | ar *éo*r*θ*a*k*ù*n*d*ǣ
 
 === RAW STAGE FIDELITY ===
 
@@ -53575,7 +53578,7 @@ PNWGmcMnDissimilation: 1
 stem :: *stámniz
 
 PNWGmcNStemNLoss: 17
-adder :: *nḗdrōn, earth :: *érθōn, flask :: *fláskōn, heart :: *xértōn, line :: *lḯnōn, list :: *lḯstōn, nettle :: *nátilōn, side :: *sḯdōn, sun :: *súnnōn, swallow :: *swálwōn, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, nightmare :: *márōn
+adder :: *nḗdrōn, earth :: *érθōn, heart :: *xértōn, line :: *lḯnōn, list :: *lḯstōn, nettle :: *nátilōn, nightmare :: *márōn, side :: *sḯdōn, sun :: *súnnōn, swallow :: *swálwōn, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, flask :: *fláskōn
 
 EAFNasalSpirantLengthening: 2
 goose :: *gánsz, youth :: *júgunθ
@@ -53637,26 +53640,26 @@ beard :: *bárdaz, bosom :: *bōsmaz, bottom :: *búttmaz, calf :: *kálbaz, com
 NWGmcInStemNLoss: 1
 fright :: *fúrxtīnaz
 
-PWGmcSurvivingBimoricOUnrounding: 1
-rest :: *rástōz
+PWGmcSurvivingBimoricOUnrounding: 22
+adder :: *nḗdrōn, earth :: *érθōn, heart :: *xértōn, line :: *lḯnōn, list :: *lḯstōn, nettle :: *nátilōn, nightmare :: *márōn, rest :: *rástōz, side :: *sḯdōn, soul :: *sáiwalǭ, spindle :: *spénnilǭ, sun :: *súnnōn, swallow :: *swálwōn, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, flask :: *fláskōn
 
 EAFBrighteningUnstressed: 16
 ban :: *bánnas, believe :: *galáubijaną, berry :: *bázjas, brand :: *brándas, four :: *fédwōr, hammer :: *xámaraz, honey :: *xúnagą, man :: *mánnas, rainbow :: *régna-bùgô, soul :: *sáiwalǭ, summer :: *súmaraz, swan :: *swánas, thistle :: *θístilas, water :: *wátōr, withy :: *wḯθagą, earthly :: *érθa-kùnðǭ
 
 EAFBrightening: 80
-bake :: *bákaną, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, belly :: *bálgiz, berry :: *bázjas, calf :: *kálbaz, craft :: *kráftaz, dale :: *dálaz, day :: *dágaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fern :: *fárnaz, flask :: *fláskōn, flax :: *fláxsą, fold :: *fálθaną, gall :: *gállô, grass :: *grásą, grave :: *grábaną, guest :: *gástiz, hail :: *xáglą, hall :: *xállō, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hazel :: *xáslaz, hedge :: *xágjaz, hold :: *xáldaną, lade :: *xláðaną, lap :: *láppô, laugh :: *xláxjaną, make :: *mákōjaną, malt :: *máltaz, march :: *márkō, mast :: *mástaz, might :: *máxtiz, nail :: *náglaz, nave :: *nábō, navel :: *nábulô, net :: *nátją, nettle :: *nátilōn, night :: *náxti, raven :: *xrábnaz, rest :: *rástōz, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, set :: *sátjaną, shaft :: *skáftą, slay :: *sláxaną, spar :: *spárrô, spare :: *spárōjaną, staff :: *stábaz, stem :: *stámniz, stretch :: *strákkijaną, swallow :: *swálwōn, thatch :: *θáką, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, whale :: *xwálaz, wield :: *wáldaną, wold :: *wálθuz, yarn :: *gárną, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, nightmare :: *márōn, tap :: *táppô
+bake :: *bákaną, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, belly :: *bálgiz, berry :: *bázjas, calf :: *kálbaz, craft :: *kráftaz, dale :: *dálaz, day :: *dágaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fern :: *fárnaz, flax :: *fláxsą, fold :: *fálθaną, gall :: *gállô, grass :: *grásą, grave :: *grábaną, guest :: *gástiz, hail :: *xáglą, hall :: *xállō, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hazel :: *xáslaz, hedge :: *xágjaz, hold :: *xáldaną, lade :: *xláðaną, lap :: *láppô, laugh :: *xláxjaną, make :: *mákōjaną, malt :: *máltaz, march :: *márkō, mast :: *mástaz, might :: *máxtiz, nail :: *náglaz, nave :: *nábō, navel :: *nábulô, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, raven :: *xrábnaz, rest :: *rástōz, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, set :: *sátjaną, shaft :: *skáftą, slay :: *sláxaną, spar :: *spárrô, spare :: *spárōjaną, staff :: *stábaz, stem :: *stámniz, stretch :: *strákkijaną, swallow :: *swálwōn, thatch :: *θáką, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, whale :: *xwálaz, wield :: *wáldaną, wold :: *wálθuz, yarn :: *gárną, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, tap :: *táppô, flask :: *fláskōn
 
-EAFBrighteningLongFinal: 1
-rest :: *rástōz
+EAFBrighteningLongFinal: 22
+adder :: *nḗdrōn, earth :: *érθōn, heart :: *xértōn, line :: *lḯnōn, list :: *lḯstōn, nettle :: *nátilōn, nightmare :: *márōn, rest :: *rástōz, side :: *sḯdōn, soul :: *sáiwalǭ, spindle :: *spénnilǭ, sun :: *súnnōn, swallow :: *swálwōn, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, flask :: *fláskōn
 
 OEBreaking: 50
 barrow :: *bérgą, beard :: *bárdaz, belly :: *bálgiz, calf :: *kálbaz, earth :: *érθōn, fall :: *fállaną, fee :: *féx, fern :: *fárnaz, fight :: *féxtaną, flax :: *fláxsą, fold :: *fálθaną, gall :: *gállô, hall :: *xállō, harm :: *xármaz, harvest :: *xárbistuz, heart :: *xértōn, hearth :: *xérθaz, herd :: *xérdō, hold :: *xáldaną, knee :: *knéwai, knight :: *knéxtaz, laugh :: *xláxjaną, learn :: *líznōjaną, malt :: *máltaz, march :: *márkō, meed :: *mízdai, might :: *máxtiz, night :: *náxti, salt :: *sáltą, salve :: *sálbō, six :: *séxs, slay :: *sláxaną, smear :: *smérwijaną, spar :: *spárrô, starve :: *stérbaną, swallow :: *swálwōn, sword :: *swérdą, ten :: *téxun, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wax :: *wáxsą, wax :: *wáxsaną, wield :: *wáldaną, wight :: *wéxtiz, wold :: *wálθuz, yarn :: *gárną, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, earthly :: *érθa-kùnðǭ
 
-OEVelarFricativePalatalization: 24
-hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heart :: *xértōn, hearth :: *xérθaz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hold :: *xáldaną, laugh :: *xláxjaną, hue :: *xíwją
+OEVelarFricativePalatalization: 25
+hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heart :: *xértōn, hearth :: *xérθaz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hold :: *xáldaną, laugh :: *xláxjaną, toe :: *táixōn, hue :: *xíwją
 
-OEARestoration: 23
-bake :: *bákaną, fare :: *fáraną, flask :: *fláskōn, grave :: *grábaną, haw :: *xágô, hawk :: *xábukaz, lade :: *xláðaną, lap :: *láppô, make :: *mákōjaną, nave :: *nábō, navel :: *nábulô, rainbow :: *régna-bùgô, sake :: *sákō, soul :: *sáiwalǭ, spare :: *spárōjaną, wade :: *wádaną, wake :: *wákaną, wash :: *wáskaną, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, earthly :: *érθa-kùnðǭ, nightmare :: *márōn, tap :: *táppô
+OEARestoration: 20
+bake :: *bákaną, fare :: *fáraną, grave :: *grábaną, haw :: *xágô, hawk :: *xábukaz, lade :: *xláðaną, lap :: *láppô, make :: *mákōjaną, nave :: *nábō, navel :: *nábulô, rainbow :: *régna-bùgô, sake :: *sákō, spare :: *spárōjaną, wade :: *wádaną, wake :: *wákaną, wash :: *wáskaną, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, earthly :: *érθa-kùnðǭ, tap :: *táppô
 
 OEHeavySyllableNasalApocope: 159
 bake :: *bákaną, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, bind :: *bíndaną, blood :: *blōdą, board :: *búrdą, bone :: *báiną, bore :: *búrōjaną, bow :: *báugijaną, bower :: *būrą, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, chew :: *kéwwaną, climb :: *klímbaną, corn :: *kúrną, deer :: *déuzą, do :: *dōną, door :: *dúrą, drink :: *drínkaną, drive :: *drḯbaną, eat :: *étaną, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, fell :: *féllą, fight :: *féxtaną, flax :: *fláxsą, flee :: *fléuxaną, fly :: *fléuganą, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, freeze :: *fréusaną, frost :: *frústą, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, hail :: *xáglą, hair :: *xḗrą, handle :: *xándlōjaną, hay :: *xáwją, head :: *xáubudą, heal :: *xáilijaną, help :: *xélpaną, hew :: *xáwwaną, hoard :: *xúzdą, hold :: *xáldaną, honey :: *xúnagą, horn :: *xúrną, knead :: *knédaną, lade :: *xláðaną, land :: *lándą, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, loam :: *láimą, lock :: *lúką, make :: *mákōjaną, meal :: *mḗlą, mean :: *máinijaną, nest :: *nístą, net :: *nátją, rain :: *régną, read :: *rḗdaną, ride :: *rḯdaną, room :: *rūmą, rope :: *ráipą, run :: *rínnaną, sail :: *séglą, salt :: *sáltą, sap :: *sápą, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, shaft :: *skáftą, shear :: *skéraną, sheep :: *skḗpą, shine :: *skḯnaną, show :: *skáwōjaną, sing :: *síngwaną, singe :: *sángijaną, sit :: *sétjaną, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, span :: *spánnaną, spare :: *spárōjaną, spin :: *spínnaną, spread :: *spráidijaną, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, still :: *stéllijaną, stretch :: *strákkijaną, strew :: *stráwjaną, stud :: *stōdą, sunder :: *súndrōjaną, sup :: *sūpaną, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, thatch :: *θáką, thing :: *θíngą, think :: *θánkijaną, thrash :: *θréskaną, timber :: *tímbrą, token :: *táikną, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wash :: *wáskaną, wax :: *wáxsą, wax :: *wáxsaną, weapon :: *wḗpną, weather :: *wédrą, weave :: *wébaną, west :: *wéstą, whine :: *xwḯnaną, wield :: *wáldaną, wife :: *wḯbą, will :: *wéljaną, wind :: *wíndaną, withy :: *wḯθagą, wonder :: *wúndrą, word :: *wúrdą, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, sow :: *sḗaną, betray :: *lḗwijaną, hue :: *xíwją
@@ -53667,8 +53670,8 @@ bake :: *bákaną, begin :: *bigínnaną, believe :: *galáubijaną, bind :: *b�
 SieversLawSyncope: 19
 believe :: *galáubijaną, bow :: *báugijaną, fast :: *fástijaną, follow :: *fúlgijaną, heal :: *xáilijaną, last :: *láistijaną, lead :: *láidijaną, light :: *léuxtijaną, mean :: *máinijaną, seek :: *sōkijaną, send :: *sándijaną, singe :: *sángijaną, smear :: *smérwijaną, spread :: *spráidijaną, start :: *stúrtijaną, still :: *stéllijaną, stretch :: *strákkijaną, think :: *θánkijaną, betray :: *lḗwijaną
 
-OESkPalatalization: 19
-fish :: *fískaz, flesh :: *fláiskiz, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, thrash :: *θréskaną, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, dart :: *skútilaz
+OESkPalatalization: 20
+fish :: *fískaz, flesh :: *fláiskiz, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, thrash :: *θréskaną, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, dart :: *skútilaz, flask :: *fláskōn
 
 OEVelarPalatalization: 32
 begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, follow :: *fúlgijaną, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hedge :: *xágjaz, honey :: *xúnagą, nail :: *náglaz, rain :: *régną, rainbow :: *régna-bùgô, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, singe :: *sángijaną, stretch :: *strákkijaną, string :: *strángiz, thane :: *θégnaz, think :: *θánkijaną, wain :: *wágnaz, way :: *wégaz, withy :: *wḯθagą, yarn :: *gárną
@@ -53744,10 +53747,10 @@ OEFinalUnstressedOLowering: 6
 month :: *mḗnōθz, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (3sg) :: *skáwōθi
 
 OEUnstressedLongVowelShortening: 56
-adder :: *nḗdrōn, bow :: *búgô, earth :: *érθōn, father :: *fádēr, find :: *fúnðanai, flask :: *fláskōn, foal :: *fúlô, fright :: *fúrxtīnaz, gall :: *gállô, have :: *xábēθi, haw :: *xágô, heart :: *xértōn, knee :: *knéwai, knob :: *knúbbô, lap :: *láppô, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, meed :: *mízdai, mother :: *mōdēr, name :: *námô, navel :: *nábulô, neck :: *xnékkô, nettle :: *nátilōn, ox :: *úxsô, rainbow :: *régna-bùgô, rest :: *rástōz, side :: *sḯdōn, sister :: *swéstēr, soul :: *sáiwalǭ, span :: *spánnai, spar :: *spárrô, spindle :: *spénnilǭ, spur :: *spúrô, sun :: *súnnōn, swallow :: *swálwōn, tick :: *tíkkô, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, will :: *wéljô, youth :: *júgunθ, make (iptv.2sg) :: *mákô, bore (iptv.2sg) :: *búrô, learn (iptv.2sg) :: *líznô, lick (iptv.2sg) :: *líkkô, show (iptv.2sg) :: *skáwô, wound :: *wúndōdē, thought :: *θánxtē, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, nightmare :: *márōn, tap :: *táppô
+adder :: *nḗdrōn, bow :: *búgô, earth :: *érθōn, father :: *fádēr, find :: *fúnðanai, foal :: *fúlô, fright :: *fúrxtīnaz, gall :: *gállô, have :: *xábēθi, haw :: *xágô, heart :: *xértōn, knee :: *knéwai, knob :: *knúbbô, lap :: *láppô, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, meed :: *mízdai, mother :: *mōdēr, name :: *námô, navel :: *nábulô, neck :: *xnékkô, nettle :: *nátilōn, nightmare :: *márōn, ox :: *úxsô, rainbow :: *régna-bùgô, rest :: *rástōz, side :: *sḯdōn, sister :: *swéstēr, soul :: *sáiwalǭ, span :: *spánnai, spar :: *spárrô, spindle :: *spénnilǭ, spur :: *spúrô, sun :: *súnnōn, swallow :: *swálwōn, tick :: *tíkkô, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, will :: *wéljô, youth :: *júgunθ, make (iptv.2sg) :: *mákô, bore (iptv.2sg) :: *búrô, learn (iptv.2sg) :: *líznô, lick (iptv.2sg) :: *líkkô, show (iptv.2sg) :: *skáwô, wound :: *wúndōdē, thought :: *θánxtē, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, tap :: *táppô, flask :: *fláskōn
 
 OEUnstressedAEMerger: 34
-adder :: *nḗdrōn, ban :: *bánnas, berry :: *bázjas, brand :: *brándas, earth :: *érθōn, flask :: *fláskōn, four :: *fédwōr, hammer :: *xámaraz, heart :: *xértōn, honey :: *xúnagą, line :: *lḯnōn, list :: *lḯstōn, man :: *mánnas, nettle :: *nátilōn, rest :: *rástōz, side :: *sḯdōn, soul :: *sáiwalǭ, spindle :: *spénnilǭ, summer :: *súmaraz, sun :: *súnnōn, swallow :: *swálwōn, swan :: *swánas, thistle :: *θístilas, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, water :: *wátōr, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, withy :: *wḯθagą, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, nightmare :: *márōn
+adder :: *nḗdrōn, ban :: *bánnas, berry :: *bázjas, brand :: *brándas, earth :: *érθōn, four :: *fédwōr, hammer :: *xámaraz, heart :: *xértōn, honey :: *xúnagą, line :: *lḯnōn, list :: *lḯstōn, man :: *mánnas, nettle :: *nátilōn, nightmare :: *márōn, rest :: *rástōz, side :: *sḯdōn, soul :: *sáiwalǭ, spindle :: *spénnilǭ, summer :: *súmaraz, sun :: *súnnōn, swallow :: *swálwōn, swan :: *swánas, thistle :: *θístilas, toe :: *táixōn, tongue :: *túngōn, wart :: *wártōn, water :: *wátōr, weasel :: *wéslōn, whore :: *xōrōn, widow :: *wíduwōn, withy :: *wḯθagą, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, flask :: *fláskōn
 
 OEMedUnstressedILowering1: 9
 dill :: *déliz, fright :: *fúrxtīnaz, harvest :: *xárbistuz, rye :: *rúgiz, shilling :: *skíllingaz, sieve :: *síbi, little :: *lūtilō, livestock :: *náutīnō, dart :: *skútilaz
@@ -53804,13 +53807,13 @@ OECjCleanup: 0
 OEXsMerge: 6
 flax :: *fláxsą, fox :: *fúxsaz, ox :: *úxsô, six :: *séxs, wax :: *wáxsą, wax :: *wáxsaną
 
-OldEnglishOrthography: 135
-bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, earth :: *érθōn, fee :: *féx, fight :: *féxtaną, fish :: *fískaz, flea :: *fláuxz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, furrow :: *fúrx, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knight :: *knéxtaz, lade :: *xláðaną, laugh :: *xláxjaną, leather :: *léθrą, lid :: *xlídą, light :: *léuxtijaną, live :: *líbēθi, loath :: *láiθaz, might :: *máxtiz, month :: *mḗnōθz, nail :: *náglaz, neck :: *xnékkô, night :: *náxti, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, rudder :: *rōθraz, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, singe :: *sángijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, wain :: *wágnaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, wight :: *wéxtiz, withy :: *wḯθagą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, dart :: *skútilaz
+OldEnglishOrthography: 136
+bath :: *báθą, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bow :: *báugijaną, breeches :: *brōkiz, calf :: *kálbaz, chew :: *kéwwaną, day :: *dágaz, drench :: *dránkiz, earth :: *érθōn, fee :: *féx, fight :: *féxtaną, fish :: *fískaz, flea :: *fláuxz, flesh :: *fláiskiz, follow :: *fúlgijaną, fright :: *fúrxtīnaz, furrow :: *fúrx, gall :: *gállô, gift :: *gíftiz, give :: *gébaną, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knight :: *knéxtaz, lade :: *xláðaną, laugh :: *xláxjaną, leather :: *léθrą, lid :: *xlídą, light :: *léuxtijaną, live :: *líbēθi, loath :: *láiθaz, might :: *máxtiz, month :: *mḗnōθz, nail :: *náglaz, neck :: *xnékkô, night :: *náxti, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, rudder :: *rōθraz, rye :: *rúgiz, sail :: *séglą, seek :: *sōkijaną, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, singe :: *sángijaną, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, wain :: *wágnaz, way :: *wégaz, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, wight :: *wéxtiz, withy :: *wḯθagą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (3sg) :: *mákōθi, bore (3sg) :: *búrōθi, learn (3sg) :: *líznōθi, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, dart :: *skútilaz, flask :: *fláskōn
 
 OEWsPalatalGlide: 2
 yoke :: *júką, youth :: *júgunθ
 
 OldEnglishRemoveStars: 394
-adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féx, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanai, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flask :: *fláskōn, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalǭ, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilǭ, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstą, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldiz, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, little :: *lūtilō, livestock :: *náutīnō, dart :: *skútilaz, straw :: *stráwą, nightmare :: *márōn, tap :: *táppô, fire :: *fūri, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
+adder :: *nḗdrōn, bake :: *bákaną, ban :: *bánnas, barrow :: *bérgą, bast :: *bástą, bath :: *báθą, beard :: *bárdaz, beaver :: *bébruz, beech :: *bōkō, begin :: *bigínnaną, believe :: *galáubijaną, belly :: *bálgiz, berry :: *bázjas, bier :: *bḗrō, bind :: *bíndaną, birth :: *búrdiz, blood :: *blōdą, board :: *búrdą, bone :: *báiną, book :: *bōkz, bore :: *búrōjaną, bosom :: *bōsmaz, both :: *bō, bottom :: *búttmaz, bough :: *bōguz, bow :: *báugijaną, bow :: *báug, bow :: *búgô, bower :: *būrą, brand :: *brándas, bread :: *bráudą, break :: *brékaną, breast :: *bréustą, breeches :: *brōkiz, bride :: *brūdiz, bring :: *brínganą, brook :: *brūkaną, burst :: *bréstaną, calf :: *kálbaz, chew :: *kéwwaną, climb :: *klímbaną, comb :: *kámbaz, corn :: *kúrną, cow :: *kūi, craft :: *kráftaz, crop :: *krúppaz, cud :: *kwéðuz, dale :: *dálaz, day :: *dágaz, deal :: *dáiliz, deed :: *dḗdiz, deer :: *déuzą, dew :: *dáwwō, dill :: *déliz, do :: *dōną, door :: *dúrą, dough :: *dáigaz, dream :: *dráugmaz, drench :: *dránkiz, drink :: *drínkaną, drive :: *drḯbaną, earth :: *érθōn, eat :: *étaną, eel :: *ḗlaz, fall :: *fállaną, fare :: *fáraną, fast :: *fástijaną, father :: *fádēr, fee :: *féx, fell :: *féllą, fern :: *fárnaz, field :: *félθuz, fight :: *féxtaną, find :: *fúnðanai, finger :: *fíngraz, fish :: *fískaz, fist :: *fúnxstiz, flax :: *fláxsą, flea :: *fláuxz, flee :: *fléuxaną, flesh :: *fláiskiz, flood :: *flōduz, fly :: *fléuganą, foal :: *fúlô, fodder :: *fōdrą, fold :: *fálθaną, folk :: *fúlką, follow :: *fúlgijaną, forlorn :: *léusaną, four :: *fédwōr, fox :: *fúxsaz, freeze :: *fréusaną, friend :: *fríjōndz, fright :: *fúrxtīnaz, frost :: *frústą, furrow :: *fúrx, gall :: *gállô, gang :: *gángaz, ghost :: *gáistaz, gift :: *gíftiz, give :: *gébaną, god :: *gúdą, gold :: *gúlθą, goose :: *gánsz, grass :: *grásą, grave :: *grábaną, gripe :: *grḯpaną, ground :: *grúnduz, guest :: *gástiz, hail :: *xáglą, hair :: *xḗrą, hall :: *xállō, hammer :: *xámaraz, hand :: *xánduz, handle :: *xándlōjaną, harm :: *xármaz, harvest :: *xárbistuz, have :: *xábēθi, haw :: *xágô, hawk :: *xábukaz, hay :: *xáwją, hazel :: *xáslaz, head :: *xáubudą, heal :: *xáilijaną, heart :: *xértōn, hearth :: *xérθaz, heath :: *xáiθiz, heaven :: *xébun, hedge :: *xágjaz, helm :: *xélmaz, help :: *xélpaną, help :: *xélpō, herd :: *xérdō, hew :: *xáwwaną, hind :: *xéndjō, hoard :: *xúzdą, hold :: *xáldaną, home :: *xáimaz, honey :: *xúnagą, hood :: *xōdaz, hoof :: *xōfaz, horn :: *xúrną, hound :: *xúndaz, knead :: *knédaną, knee :: *knéwai, knight :: *knéxtaz, knob :: *knúbbô, lade :: *xláðaną, land :: *lándą, lap :: *láppô, last :: *láistijaną, laugh :: *xláxjaną, lead :: *láidijaną, leaf :: *láubą, learn :: *líznōjaną, leather :: *léθrą, leek :: *láukaz, let :: *lḗtaną, lick :: *líkkōjaną, lid :: *xlídą, life :: *lḯbą, light :: *léuxtijaną, lime :: *lḯmą, linden :: *líndō, line :: *lḯnōn, list :: *lḯstōn, live :: *líbēθi, liver :: *líbrō, loam :: *láimą, loath :: *láiθaz, lock :: *lúką, lock :: *lúkkaz, louse :: *lūsz, lung :: *lúnganjō, lust :: *lústuz, lye :: *láugō, make :: *mákōjaną, malt :: *máltaz, man :: *mánnas, march :: *márkō, mast :: *mástaz, meal :: *mḗlą, mean :: *máinijaną, meed :: *mízdai, might :: *máxtiz, milk :: *mélukz, month :: *mḗnōθz, mood :: *mōdaz, mother :: *mōdēr, nail :: *náglaz, name :: *námô, nave :: *nábō, navel :: *nábulô, neck :: *xnékkô, need :: *náudiz, needle :: *nḗðlō, nest :: *nístą, net :: *nátją, nettle :: *nátilōn, night :: *náxti, nightmare :: *márōn, nine :: *nígun, nose :: *núsō, one :: *áinaz, oven :: *úfnaz, ox :: *úxsô, rain :: *régną, rainbow :: *régna-bùgô, raven :: *xrábnaz, read :: *rḗdaną, reek :: *ráukaz, rest :: *rástōz, ride :: *rḯdaną, rind :: *ríndō, coat :: *rúkkaz, rood :: *rōdō, room :: *rūmą, rope :: *ráipą, rudder :: *rōθraz, run :: *rínnaną, rye :: *rúgiz, sail :: *séglą, sake :: *sákō, salt :: *sáltą, salve :: *sálbō, sap :: *sápą, sea :: *sáiwiz, seam :: *sáumaz, seek :: *sōkijaną, send :: *sándijaną, set :: *sátjaną, seven :: *sébun, shaft :: *skáftą, shame :: *skámō, shear :: *skéraną, sheath :: *skáiθiz, sheep :: *skḗpą, shield :: *skélduz, shilling :: *skíllingaz, shine :: *skḯnaną, shoulder :: *skúldramiz, shove :: *skáub, shovel :: *skúflō, show :: *skáwōjaną, shower :: *skūrō, side :: *sḯdōn, sieve :: *síbi, sing :: *síngwaną, singe :: *sángijaną, sister :: *swéstēr, sit :: *sétjaną, six :: *séxs, slay :: *sláxaną, sleep :: *slḗpaną, slime :: *slḯmą, smear :: *smérwijaną, snow :: *snáiwaz, sorrow :: *súrgō, soul :: *sáiwalǭ, span :: *spánnaną, span :: *spánnai, spar :: *spárrô, spare :: *spárōjaną, spear :: *spéru, spin :: *spínnaną, spindle :: *spénnilǭ, spoon :: *spḗnuz, spread :: *spráidijaną, spur :: *spúrô, staff :: *stábaz, start :: *stúrtijaną, starve :: *stérbaną, steal :: *stélaną, stem :: *stámniz, still :: *stéllijaną, stock :: *stúkkaz, stone :: *stáinaz, stool :: *stōlaz, stork :: *stúrkaz, storm :: *stúrmaz, stream :: *stráumaz, stretch :: *strákkijaną, strew :: *stráwjaną, string :: *strángiz, stud :: *stōdą, summer :: *súmaraz, sun :: *súnnōn, sunder :: *súndrōjaną, sup :: *sūpaną, swallow :: *swálwōn, swan :: *swánas, swell :: *swéllaną, swim :: *swímmaną, swine :: *swḯną, sword :: *swérdą, team :: *táugmaz, ten :: *téxun, thane :: *θégnaz, thanks :: *θánkaz, thatch :: *θáką, thief :: *θéubaz, thing :: *θíngą, think :: *θánkijaną, thirst :: *θúrstuz, thistle :: *θístilas, thorn :: *θúrnaz, thousand :: *θūs-èndi, thrash :: *θréskaną, three :: *θréjez, thunder :: *θúnraz, tick :: *tíkkô, tide :: *tḯdiz, timber :: *tímbrą, toe :: *táixōn, token :: *táikną, tongs :: *tángō, tongue :: *túngōn, town :: *tūną, tread :: *trédaną, trough :: *trúgą, wade :: *wádaną, wain :: *wágnaz, wake :: *wákaną, warp :: *wárpą, warp :: *wérpaną, wart :: *wártōn, wash :: *wáskaną, wasp :: *wábsaz, water :: *wátōr, wax :: *wáxsą, wax :: *wáxsaną, way :: *wégaz, weapon :: *wḗpną, weasel :: *wéslōn, weather :: *wédrą, weave :: *wébaną, west :: *wéstą, wether :: *wéθruz, whale :: *xwálaz, while :: *xwḯlō, whine :: *xwḯnaną, whore :: *xōrōn, widow :: *wíduwōn, wield :: *wáldaną, wife :: *wḯbą, wight :: *wéxtiz, will :: *wéljaną, will :: *wéljô, wind :: *wíndaną, winter :: *wíntruz, withy :: *wḯθagą, wold :: *wálθuz, wonder :: *wúndrą, word :: *wúrdą, world :: *wír-àldiz, worm :: *wúrmiz, wring :: *wrínganą, yarn :: *gárną, year :: *jḗrą, yoke :: *júką, youth :: *júgunθ, make (iptv.2sg) :: *mákô, make (3sg) :: *mákōθi, bore (iptv.2sg) :: *búrô, bore (3sg) :: *búrōθi, learn (iptv.2sg) :: *líznô, learn (3sg) :: *líznōθi, lick (iptv.2sg) :: *líkkô, lick (3sg) :: *líkkōθi, show (iptv.2sg) :: *skáwô, show (3sg) :: *skáwōθi, who :: *xwáz, you :: *ízwiz, wound :: *wúndōdē, sow :: *sḗaną, betray :: *lḗwijaną, thought :: *θánxtē, hue :: *xíwją, there :: *θár, where :: *xwár, filth :: *fūliþǭ, earthly :: *érθa-kùnðǭ, little :: *lūtilō, livestock :: *náutīnō, dart :: *skútilaz, straw :: *stráwą, tap :: *táppô, fire :: *fūri, flask :: *fláskōn, buck :: *búkkaz, fowl :: *fúglaz, rust :: *rústaz, wolf :: *wúlfaz, wool :: *wúllō
 
 OldEnglishSurface: 0

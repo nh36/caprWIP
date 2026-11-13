@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47"
+    ACTIVE_SHA = "6e098bbd407f42f17c9aac05fcf164f5bf91ab1ad29730d362a83f9fef068960"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -124,7 +124,7 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual([m["row_id"] for m in migrations],
                          ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
                           "2302", "2011", "2201", "2282", "2053", "2335", "2208", "2006",
-                          "2141"])
+                          "2141", "2016", "2141"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -177,6 +177,89 @@ class LegacySubsetTests(unittest.TestCase):
                 approved[0]["old_proto"] = "*gēftiz"
             else:
                 approved = []
+            with self.subTest(case=case), self.assertRaises(ValueError):
+                mod.legacy_subset(current, old, approved)
+
+    def test_contiguous_target_then_output_migrations_preserve_frozen_identity(self):
+        import copy
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        original = next(r for r in self.legacy_rows if r["concept"] == "nightmare")
+        selected = {
+            **original, "row_id": "2141", "counterpart": "mære",
+            "outputs": "mære", "match": "1",
+        }
+        first = dict(
+            row_id="2141", concept=original["concept"],
+            counterpart=original["counterpart"], new_counterpart="mære",
+            old_proto=original["proto"], new_proto=original["proto"],
+            old_outputs=original["outputs"], new_outputs=original["outputs"],
+            adjudication_memo="target-selection.md")
+        second = {
+            **first, "counterpart": "mære", "new_outputs": "mære",
+            "adjudication_memo": "output-correction.md",
+        }
+        approvals = [first, second]
+        frozen = copy.deepcopy((original, approvals))
+        self.assertEqual(mod.legacy_subset([selected], [original], approvals), [selected])
+        self.assertEqual((original, approvals), frozen)
+        # A later output-only correction can start at the same lexical key.
+        third = {
+            **second, "old_outputs": "mære", "new_outputs": "mæri",
+            "adjudication_memo": "third-correction.md",
+        }
+        terminal = {**selected, "outputs": "mæri", "match": "0"}
+        self.assertEqual(
+            mod.legacy_subset([terminal], [original], [*approvals, third]), [terminal])
+        with self.assertRaisesRegex(ValueError, "output_count"):
+            mod.legacy_subset(
+                [{**selected, "outputs": "mære|mare", "output_count": "2"}],
+                [original], [*approvals, {**third, "new_outputs": "mære|mare"}])
+
+    def test_migration_chains_reject_missing_links_forks_and_terminal_drift(self):
+        import copy
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        original = next(r for r in self.legacy_rows if r["concept"] == "nightmare")
+        first = dict(
+            row_id="2141", concept=original["concept"],
+            counterpart=original["counterpart"], new_counterpart="mære",
+            old_proto=original["proto"], new_proto=original["proto"],
+            old_outputs=original["outputs"], new_outputs=original["outputs"],
+            adjudication_memo="target-selection.md")
+        second = {
+            **first, "counterpart": "mære", "new_outputs": "mære",
+            "adjudication_memo": "output-correction.md",
+        }
+        for case in ("missing-first", "missing-last", "reversed", "duplicate",
+                     "fork", "concept", "bridge-output", "bridge-input",
+                     "frozen-output", "terminal-output", "terminal-input", "match"):
+            current, old, approved = copy.deepcopy((
+                [{**original, "row_id": "2141", "counterpart": "mære",
+                  "outputs": "mære", "match": "1"}],
+                [original], [first, second]))
+            if case == "missing-first":
+                approved.pop(0)
+            elif case == "missing-last":
+                approved.pop()
+            elif case == "reversed":
+                approved.reverse()
+            elif case == "duplicate":
+                approved.append(copy.deepcopy(second))
+            elif case == "fork":
+                approved.append({**second, "new_outputs": "mare"})
+            elif case == "concept":
+                approved[1]["concept"] = "other"
+            elif case == "bridge-output":
+                approved[1]["old_outputs"] = "other"
+            elif case == "bridge-input":
+                approved[1]["old_proto"] = "*other"
+            elif case == "frozen-output":
+                old[0]["outputs"] = "other"
+            elif case == "terminal-output":
+                current[0]["outputs"] = "mare"
+            elif case == "terminal-input":
+                current[0]["proto"] = "*other"
+            else:
+                current[0]["match"] = "0"
             with self.subTest(case=case), self.assertRaises(ValueError):
                 mod.legacy_subset(current, old, approved)
 
@@ -249,7 +332,9 @@ class LegacySubsetTests(unittest.TestCase):
         previous = mod.read_baseline(
             BASELINE_DIR / "cascade_baseline_outputs_pre_sc042_nightmare_target.tsv",
             BASELINE_DIR / "cascade_baseline_summary_pre_sc042_nightmare_target.json")
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc042_final_nasal_candidate.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc042_final_nasal_candidate.json")
         approval = json.loads(
             (BASELINE_DIR / "approved_nightmare_target_migration.json").read_text())
         mod.validate_cell_transition(previous, current, approval)
@@ -266,6 +351,23 @@ class LegacySubsetTests(unittest.TestCase):
         next(r for r in wrong["records"] if r["row_id"] == "2141")["outputs"] = "mære"
         with self.assertRaises(ValueError):
             mod.validate_cell_transition(previous, wrong, approval)
+
+    def test_final_nasal_candidate_changes_only_the_two_approved_outputs(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc042_final_nasal_candidate.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc042_final_nasal_candidate.json")
+        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        approval = json.loads(
+            (BASELINE_DIR / "approved_final_nasal_candidate_migration.json").read_text())
+        mod.validate_cell_transition(previous, current, approval)
+        before = {r["row_id"]: r for r in previous["records"]}
+        after = {r["row_id"]: r for r in current["records"]}
+        assert {i for i in before if before[i] != after[i]} == {"2016", "2141"}
+        assert after["2016"] == dict(before["2016"], outputs="flæsċe", match="0")
+        assert after["2141"] == dict(before["2141"], outputs="mære", match="1")
+        assert previous["summary"]["matched"] == current["summary"]["matched"] == 385
+        assert previous["summary"]["mismatched"] == current["summary"]["mismatched"] == 9
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy
@@ -339,7 +441,7 @@ class LegacySubsetTests(unittest.TestCase):
             previous["records"], old,
             [m for m in migrations if m["row_id"] not in {
                 "2224", "2162", "2283", "2095", "2313", "2314", "2302",
-                "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141"}],
+                "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141", "2016"}],
         )), 387)
 
 

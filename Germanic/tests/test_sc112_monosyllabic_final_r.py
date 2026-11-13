@@ -157,7 +157,9 @@ class Sc112Tests(unittest.TestCase):
                     previous = dict(previous, proto=proto, proto_norm=proto[1:],
                                     fst_input=proto[1:], counterpart=output, outputs=output)
                 if row_id == "2141":
-                    previous = dict(previous, counterpart="mære")
+                    previous = dict(previous, counterpart="mære", outputs="mære")
+                if row_id == "2016":
+                    previous = dict(previous, outputs="flæsċe")
                 self.assertEqual(
                     tuple(self.current[row_id][field] for field in fields),
                     tuple(previous[field] for field in fields),
@@ -197,12 +199,13 @@ class Sc112Tests(unittest.TestCase):
         self.assertEqual(set(self.previous), set(self.current) -
                          {"2333", "2334", "2335", "2336", "2337", "2338", "2339"})
         self.assertEqual(
-            [(row_id, self.previous[row_id]["outputs"], self.current[row_id]["outputs"])
+            {row_id: (self.previous[row_id]["outputs"], self.current[row_id]["outputs"])
              for row_id in self.previous
-             if self.previous[row_id]["outputs"] != self.current[row_id]["outputs"]],
-            [("2011", "fundene", "fundne"), ("2208", "spinl", "spinle"),
-             ("2201", "sāwol", "sāwle"),
-             ("2282", "westene", "west"), ("2053", "hameres", "hamer")],
+             if self.previous[row_id]["outputs"] != self.current[row_id]["outputs"]},
+            {"2011": ("fundene", "fundne"), "2208": ("spinl", "spinle"),
+             "2201": ("sāwol", "sāwle"), "2282": ("westene", "west"),
+             "2053": ("hameres", "hamer"), "2016": ("flasce", "flæsċe"),
+             "2141": ("mare", "mære")},
         )
         self.assertEqual(len(rows(LEGACY)), 380)
 
@@ -211,7 +214,7 @@ class Sc112Tests(unittest.TestCase):
         self.assertEqual(sum(r["match"] == "0" for r in self.current.values()), 9)
         self.assertEqual(
             {r["row_id"] for r in self.current.values() if r["match"] == "0"},
-            {"1973", "2013", "2030", "2141", "2162", "2224", "2240", "2298", "2300"},
+            {"1973", "2013", "2016", "2030", "2162", "2224", "2240", "2298", "2300"},
         )
 
 
