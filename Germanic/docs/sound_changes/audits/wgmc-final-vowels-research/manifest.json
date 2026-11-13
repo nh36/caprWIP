@@ -1,0 +1,220 @@
+{
+  "archive_sha256": "e74de91cbdad1995206b1d82f3e94bab6fde59baca80b0e366a1a6ebc6aabcec",
+  "members": {
+    "research-observations.json": {
+      "sha256": "3e3c45c661bb6d47798406a32dcffca0bb6fc7592d2a99d7b7650b93fbb02800",
+      "size": 21200422
+    },
+    "research-predictions.json": {
+      "sha256": "17e6a0ae74abc1b27f2c2f1236097f5b33edab28532be209ef1b1846d332cf87",
+      "size": 3114
+    },
+    "research-recipes.json": {
+      "sha256": "e654934f8bcff76400895d15595e1edf3214ace57256de419fa343e0234c21a1",
+      "size": 5670
+    },
+    "research-rows.json": {
+      "sha256": "cdc8295cd1c21198d8d5161c8e24e2146f29a62e69c18d7312514b542cbf9d1b",
+      "size": 118981
+    },
+    "research-receipt.json": {
+      "sha256": "a3487c9513414579b01ee59efdebbb10301d4b40010fad48c23880fc9a18fdfb",
+      "size": 3383
+    },
+    "supplement-observations.json": {
+      "sha256": "9d55c0fb589d072a705a4f3293e33f0145594ee19d26cbc073ef49ec82c2074b",
+      "size": 42164
+    },
+    "supplement-predictions.json": {
+      "sha256": "251a475543626a5949ccc8e1363dc727803ca417403e1be0c36a8946014eaa46",
+      "size": 2209
+    },
+    "supplement-receipt.json": {
+      "sha256": "658349beea4af2cf8b6fca678fea9c87efddd5992253b4b867e27e0fe9ea6942",
+      "size": 3508
+    },
+    "clay-observations.json": {
+      "sha256": "7630fc5776b74d4146d0235497df6fcbe9b1ddf05ffc0b41c3650501f6c65090",
+      "size": 48603
+    },
+    "clay-predictions.json": {
+      "sha256": "d14c48ce99c9d7744027e1ae09f6c1284c660720f678886f3082ccfd5263978b",
+      "size": 889
+    },
+    "clay-receipt.json": {
+      "sha256": "fb87441120c2a515f101ed30cee16fe89680c261eda1fc327c998d06b2fe979f",
+      "size": 3522
+    },
+    "validation/wgmc-final-vowels-unadopted-9feae4fe007c403d94a4aa3ccaeaa95c.stdout.log": {
+      "sha256": "47ba6a8b7f63b5e5174473bcd46c2f621b3316d8d59647dec2fe31f27a6c014e",
+      "size": 306
+    },
+    "validation/wgmc-final-vowels-unadopted-9feae4fe007c403d94a4aa3ccaeaa95c.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "validation/wgmc-final-vowels-held-out-3c8e6f4800d746398d5d9abf392aaadc.stdout.log": {
+      "sha256": "4ce6da4ab5ed42431b70a74062ba159373438c7a777d76d8d2c74205a846193b",
+      "size": 399
+    },
+    "validation/wgmc-final-vowels-held-out-3c8e6f4800d746398d5d9abf392aaadc.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "validation/wgmc-final-vowels-held-out-2de84e2c6b0b48b68612f43bbbeee815.stdout.log": {
+      "sha256": "90b244a37af541a8fffe60d2d8b3509c96eeb2f24ebf0db58df7393466fda5db",
+      "size": 327
+    },
+    "validation/wgmc-final-vowels-held-out-2de84e2c6b0b48b68612f43bbbeee815.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "snapshots/0/completion.json": {
+      "sha256": "6f00c90672429b4b150967976d77d6529089a448adc7e5f896999c2bc45d4411",
+      "size": 3775
+    },
+    "snapshots/0/receipt.json": {
+      "sha256": "287912b544ecd32a02df8c3964978ec760384e20b5eb5ef08ce4d56e8ff679f1",
+      "size": 12086
+    },
+    "snapshots/0/snapshot/current_source.txt": {
+      "sha256": "62fb821f9988cf995043cb9a978b76a5a3fc83caff5b026928c64a0dd378062c",
+      "size": 181841
+    },
+    "snapshots/0/snapshot/driver.py": {
+      "sha256": "1b483c85aa3405bd5bdf1ae11d52ee4f79f4999ee8520ee0843aae82ec666c23",
+      "size": 16699
+    },
+    "snapshots/0/snapshot/held_out_witnesses.tsv": {
+      "sha256": "461093e33c6a0a8d9771d794968329532fcf80416f5db7a706fd2d2d9fa02966",
+      "size": 3681
+    },
+    "snapshots/0/snapshot/predictions.json": {
+      "sha256": "17e6a0ae74abc1b27f2c2f1236097f5b33edab28532be209ef1b1846d332cf87",
+      "size": 3114
+    },
+    "snapshots/0/snapshot/recipes.json": {
+      "sha256": "e654934f8bcff76400895d15595e1edf3214ace57256de419fa343e0234c21a1",
+      "size": 5670
+    },
+    "snapshots/0/snapshot/research_memorandum.md": {
+      "sha256": "168d8c686d1dedc6d9fd92e29badbf7b50396bb1fe96f00ba4b7c8b686237919",
+      "size": 16928
+    },
+    "snapshots/0/snapshot/rows.json": {
+      "sha256": "cdc8295cd1c21198d8d5161c8e24e2146f29a62e69c18d7312514b542cbf9d1b",
+      "size": 118981
+    },
+    "snapshots/0/snapshot/source.txt": {
+      "sha256": "37b7811ca68c0358d26e25d58fe5d697e7d560a61a1896190c5c72f93583af0e",
+      "size": 181962
+    },
+    "snapshots/1/completion.json": {
+      "sha256": "c84cbaf971bd9b59e32071f2e1b105b51425c55aab291439f9682fc05c1f781a",
+      "size": 3904
+    },
+    "snapshots/1/receipt.json": {
+      "sha256": "848fbd9678e807213d4d228e468faee23734f8d3f852deb98b899a6c9965b9a8",
+      "size": 4585
+    },
+    "snapshots/1/snapshot/driver.py": {
+      "sha256": "2507104cd9a3324f81b842767fc872d1485c2af5125bafa976948e4f15423075",
+      "size": 7434
+    },
+    "snapshots/1/snapshot/parent_observations.json": {
+      "sha256": "3e3c45c661bb6d47798406a32dcffca0bb6fc7592d2a99d7b7650b93fbb02800",
+      "size": 21200422
+    },
+    "snapshots/1/snapshot/parent_receipt.json": {
+      "sha256": "a3487c9513414579b01ee59efdebbb10301d4b40010fad48c23880fc9a18fdfb",
+      "size": 3383
+    },
+    "snapshots/1/snapshot/predictions.json": {
+      "sha256": "251a475543626a5949ccc8e1363dc727803ca417403e1be0c36a8946014eaa46",
+      "size": 2209
+    },
+    "snapshots/2/completion.json": {
+      "sha256": "4387065053e2ca2ba5941418874bc1484ed37c5a7a0284f26bc45efbc74b1b84",
+      "size": 3923
+    },
+    "snapshots/2/receipt.json": {
+      "sha256": "1ec6be1e11b11a70ec4bed0f0ba8e5d2aec71ceb5ea10d784da5a2486db46a66",
+      "size": 3347
+    },
+    "snapshots/2/snapshot/driver.py": {
+      "sha256": "6353fc1b468773e2863bb0ef5e5004699fb7d27686d65e59224e4b24299412ef",
+      "size": 9255
+    },
+    "snapshots/2/snapshot/parent_observations.json": {
+      "sha256": "3e3c45c661bb6d47798406a32dcffca0bb6fc7592d2a99d7b7650b93fbb02800",
+      "size": 21200422
+    },
+    "snapshots/2/snapshot/parent_receipt.json": {
+      "sha256": "a3487c9513414579b01ee59efdebbb10301d4b40010fad48c23880fc9a18fdfb",
+      "size": 3383
+    },
+    "snapshots/2/snapshot/predictions.json": {
+      "sha256": "d14c48ce99c9d7744027e1ae09f6c1284c660720f678886f3082ccfd5263978b",
+      "size": 889
+    }
+  },
+  "base_commit": "7604cdb1b7e4432ef1f7b4bae1fa5b91aa134d9d",
+  "status": "unadopted research",
+  "receipt": {
+    "receipt_version": 2,
+    "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/wgmc-final-vowels-research/validation/wgmc-final-vowels-unadopted-9feae4fe007c403d94a4aa3ccaeaa95c.receipt.json",
+    "label": "wgmc-final-vowels-unadopted",
+    "argv": [
+      "docker",
+      "compose",
+      "exec",
+      "-T",
+      "backend",
+      "python3",
+      "-u",
+      "/tmp/capr-exp-wgmc-final-vowels-20261113T070441-3291193c41ac4330b60e65bcc8a30a71/driver.py",
+      "run",
+      "/tmp/capr-exp-wgmc-final-vowels-20261113T070441-3291193c41ac4330b60e65bcc8a30a71/source.txt",
+      "/tmp/capr-exp-wgmc-final-vowels-20261113T070441-3291193c41ac4330b60e65bcc8a30a71/recipes.json",
+      "/tmp/capr-exp-wgmc-final-vowels-20261113T070441-3291193c41ac4330b60e65bcc8a30a71/rows.json",
+      "/tmp/capr-exp-wgmc-final-vowels-20261113T070441-3291193c41ac4330b60e65bcc8a30a71/predictions.json",
+      "/tmp/capr-exp-wgmc-final-vowels-20261113T070441-3291193c41ac4330b60e65bcc8a30a71/observations.json"
+    ],
+    "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+    "cwd": "/Users/nathanhill/Code/capr",
+    "started_at": "2026-11-13T07:04:46Z",
+    "finished_at": "2026-11-13T07:07:36Z",
+    "returncode": 0,
+    "timed_out": false,
+    "ok": true,
+    "source_identity": {
+      "head_commit": "7604cdb1b7e4432ef1f7b4bae1fa5b91aa134d9d",
+      "worktree_changes": {
+        "Germanic/docs/sound_changes/audits/wgmc-final-vowels-research/experiment.py": "1b483c85aa3405bd5bdf1ae11d52ee4f79f4999ee8520ee0843aae82ec666c23",
+        "Germanic/docs/sound_changes/audits/wgmc-final-vowels-research/held-out-witnesses.tsv": "461093e33c6a0a8d9771d794968329532fcf80416f5db7a706fd2d2d9fa02966",
+        "Germanic/docs/sound_changes/audits/wgmc-final-vowels-research/research-memorandum.md": "168d8c686d1dedc6d9fd92e29badbf7b50396bb1fe96f00ba4b7c8b686237919"
+      },
+      "identity_sha256": "f773df8961a206be5633157c9279e260d38f84192f30e02e8105a791617c06cb",
+      "recorded_at": "2026-11-13T07:04:46Z"
+    },
+    "source_identity_sha256": "f773df8961a206be5633157c9279e260d38f84192f30e02e8105a791617c06cb",
+    "source_identity_after": {
+      "head_commit": "7604cdb1b7e4432ef1f7b4bae1fa5b91aa134d9d",
+      "worktree_changes": {
+        "Germanic/docs/sound_changes/audits/wgmc-final-vowels-research/experiment.py": "1b483c85aa3405bd5bdf1ae11d52ee4f79f4999ee8520ee0843aae82ec666c23",
+        "Germanic/docs/sound_changes/audits/wgmc-final-vowels-research/held-out-witnesses.tsv": "461093e33c6a0a8d9771d794968329532fcf80416f5db7a706fd2d2d9fa02966",
+        "Germanic/docs/sound_changes/audits/wgmc-final-vowels-research/research-memorandum.md": "168d8c686d1dedc6d9fd92e29badbf7b50396bb1fe96f00ba4b7c8b686237919"
+      },
+      "identity_sha256": "f773df8961a206be5633157c9279e260d38f84192f30e02e8105a791617c06cb",
+      "recorded_at": "2026-11-13T07:07:36Z"
+    },
+    "source_changed": false,
+    "level": null,
+    "lane": null,
+    "pytest_addopts": "",
+    "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/wgmc-final-vowels-research/validation/wgmc-final-vowels-unadopted-9feae4fe007c403d94a4aa3ccaeaa95c.stdout.log",
+    "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/wgmc-final-vowels-research/validation/wgmc-final-vowels-unadopted-9feae4fe007c403d94a4aa3ccaeaa95c.stderr.log",
+    "stdout_sha256": "47ba6a8b7f63b5e5174473bcd46c2f621b3316d8d59647dec2fe31f27a6c014e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
