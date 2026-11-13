@@ -70,9 +70,30 @@ def test_authorised_writer_transition_preserves_every_original_record_and_archiv
                 ["git", "show", "ee73f189d2c4af2fab6170f7af066d96611ce749:"
                  + str((BASELINE / name).relative_to(ROOT))], cwd=ROOT)
             assert data.startswith(previous_ledger)
-            assert [row["row_id"] for row in rows(BASELINE / name)][-7:] == [
-                "2011", "2201", "2282", "2053", "2335", "2208", "2006"]
-            assert len(data.splitlines()) == len(previous_ledger.splitlines()) + 7
+            previous_rows = list(csv.DictReader(
+                previous_ledger.decode().splitlines(), delimiter="\t"))
+            added = [row for row in rows(BASELINE / name) if row not in previous_rows]
+            expected = {}
+            for filename in (
+                "approved_nonhigh_cells_migration.json", "approved_syncope_cells_migration.json",
+                "approved_fee_input_migration.json", "approved_nightmare_target_migration.json",
+            ):
+                approval = json.loads((BASELINE / filename).read_text())
+                for change in approval["changes"]:
+                    identifier = change["row_id"]
+                    before, after = change["before"], change["after"]
+                    memo = approval["adjudication_memo"]
+                    if identifier == "2141":
+                        memo = "Germanic/docs/sound_changes/audits/nightmare-2141-target-selection.md"
+                    expected[identifier] = dict(
+                        row_id=identifier, concept=current[identifier]["concept"],
+                        counterpart=before["counterpart"], new_counterpart=after["counterpart"],
+                        old_proto=before["proto"], new_proto=after["proto"],
+                        old_outputs=before["outputs"], new_outputs=after["outputs"],
+                        adjudication_memo=memo)
+            assert set(expected) == {"2011", "2201", "2282", "2053", "2335", "2208", "2006", "2141"}
+            assert len(added) == len(expected)
+            assert {row["row_id"]: row for row in added} == expected
             data = previous_ledger
         assert hashlib.sha256(data).hexdigest() == sha, name
     assert {key for key, record in current.items() if record["match"] == "0"} == {

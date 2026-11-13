@@ -16,6 +16,7 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from capr_runtime import run_in_runner
 from executable_facts import parse_defines
 from historical_sc035 import historical_runtime
+from test_lexical_editorial_publication import assert_nightmare_index_delta
 
 # The adoption commit: replaying its frozen capture must pin both the adopted
 # FST and the 389-row corpus of that moment (later admissions are separate).
@@ -246,6 +247,10 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
                and row["source_scope"] == "override" and not row["variety"]
                for row in little)
     added = [row for row in added if row not in little]
+    nightmare = [row for row in added if row["source_ref"].startswith("nightmare — OE ")
+                 or "2141-nightmare-mare.model.md" in row["source_ref"]]
+    assert_nightmare_index_delta(nightmare)
+    added = [row for row in added if row not in nightmare]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

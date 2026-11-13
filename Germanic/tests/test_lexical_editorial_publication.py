@@ -34,6 +34,26 @@ def committed(path: Path) -> str:
         ["git", "show", f"{BASE}:{path.relative_to(ROOT)}"], cwd=ROOT, text=True)
 
 
+def assert_nightmare_index_delta(rows):
+    model = "Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md"
+    expected = {
+        (action, language, form, role, scope, f"nightmare — OE {target}")
+        for action, target in (("remove", "mare"), ("add", "mære"))
+        for language, form, role, scope in (
+            ("oe", target, "target_form", "lexical_heading"),
+            ("pgmc", "*márōn", "selected_input", "trace_proto_input"),
+            ("pgmc", "*márōn", "source_protoform", "lexical_protoform"),
+        )
+    } | {
+        ("add", "oe", form, "comparison_form", "explicit_tag", model)
+        for form in ("mare", "maran")
+    }
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == len(expected) == 8
+    assert {tuple(row[field] for field in fields) for row in rows} == expected
+    assert all(not row.get("variety") for row in rows)
+
+
 class EditorialPublicationTests(unittest.TestCase):
     def test_selected_find_and_soul_have_one_printed_entry_with_all_sites(self):
         path = ROOT / "Germanic/docs/book/index_verborum_book_print_unique.tsv"
@@ -211,6 +231,11 @@ class EditorialPublicationTests(unittest.TestCase):
                 self.assertEqual(metadata[key], value, path.name)
 
     def test_nightmare_both_presentations_preserve_the_output_gap(self):
+        with (ROOT / "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv").open() as handle:
+            index = list(csv.DictReader(handle, delimiter="\t"))
+        assert_nightmare_index_delta([
+            row for row in index if row["source_ref"].startswith("nightmare — OE ")
+            or "2141-nightmare-mare.model.md" in row["source_ref"]])
         path = REPORTS / "model_entries/2141-nightmare-mare.model.md"
         model = parse_model_entry(path)
         trace, _, confident = match_trace_entry(model, parse_trace_entries(self.compact))

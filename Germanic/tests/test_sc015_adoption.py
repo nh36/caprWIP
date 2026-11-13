@@ -183,8 +183,8 @@ class SC015AdoptionTests(unittest.TestCase):
             with (target / "approved_input_migrations.tsv").open("w") as handle:
                 writer = csv.DictWriter(handle, fieldnames=list(migrations[0]), delimiter="\t")
                 writer.writeheader()
-                writer.writerows(row for row in migrations if row["row_id"] not in {
-                    "2302", "2011", "2053", "2201", "2282", "2208", "2335", "2006"})
+                writer.writerows(row for row in migrations if row["row_id"] in {
+                    "2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314"})
             initial = {p.name: p.read_bytes() for p in target.iterdir()}
             baseline.adopt_cell_baseline(self.current, target, self.approval)
             self.assertEqual(initial, {p.name: p.read_bytes() for p in target.iterdir()})
