@@ -188,10 +188,17 @@ class CorpusTotalsTests(unittest.TestCase):
             (BASELINE.parent / "cascade_baseline_summary.json").read_text(encoding="utf-8")
         )
         with BASELINE.open(encoding="utf-8") as handle:
-            mismatches = {row["row_id"] for row in csv.DictReader(handle, delimiter="\t")
-                          if row["match"] == "0"}
+            rows = list(csv.DictReader(handle, delimiter="\t"))
+        mismatches = {row["row_id"] for row in rows if row["match"] == "0"}
         self.assertEqual(mismatches,
-                         {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"})
+                         {"1973", "2013", "2030", "2141", "2162", "2224", "2240", "2298", "2300"})
+        nightmare = next(row for row in rows if row["row_id"] == "2141")
+        self.assertEqual(
+            (nightmare["proto"], nightmare["counterpart"], nightmare["outputs"], nightmare["match"]),
+            ("*márōn", "mære", "mare", "0"))
+        self.assertEqual(
+            (summary["total_lexemes"], summary["accepted"], summary["matched"], summary["mismatched"]),
+            (394, 394, 385, 9))
         self.assertEqual(summary["legacy_subset_count"], 380)
         self.assertGreaterEqual(summary["total_lexemes"], 380)
         self.assertEqual(summary["accepted"], summary["total_lexemes"])

@@ -101,6 +101,11 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
                               section_title="Regular derivations")
             if row_id == "2011":
                 before = dict(before, counterpart="fundne", protoform="*fúnðanai")
+            if row_id == "2141":
+                self.assertEqual((before["counterpart"], before["proto"], before["protoform"]),
+                                 ("mare", "*márōn", "*márōn"))
+                before = dict(before, counterpart="mære",
+                              trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED")
             if row_id == "2053":
                 before = dict(
                     before, counterpart="hamer", protoform="*xámaraz",

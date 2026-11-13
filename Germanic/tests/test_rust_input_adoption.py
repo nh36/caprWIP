@@ -59,9 +59,7 @@ class RustInputAdoptionTests(unittest.TestCase):
     def test_original380_rust_identity_requires_exact_migration(self):
         legacy = read_tsv(BASE / "cascade_baseline_outputs_legacy380.tsv")
         migrations = [row for row in read_tsv(BASE / "approved_input_migrations.tsv")
-                      if row["row_id"] not in {
-                          "2283", "2095", "2313", "2314", "2302",
-                          "2011", "2053", "2201", "2282", "2208", "2335", "2006"}]
+                      if row["row_id"] in {"2040", "2085", "2224", "2162"}]
         original = next(row for row in legacy
                         if (row["concept"], row["counterpart"]) == ("rust", "rust"))
         self.assertEqual(original["proto"], "*rústō")
@@ -102,9 +100,7 @@ class RustInputAdoptionTests(unittest.TestCase):
                 (target / destination).write_bytes((BASE / source).read_bytes())
             migrations_path = target / "approved_input_migrations.tsv"
             migrations = [row for row in read_tsv(migrations_path)
-                          if row["row_id"] not in {
-                              "2283", "2095", "2313", "2314", "2302",
-                              "2011", "2053", "2201", "2282", "2208", "2335", "2006"}]
+                          if row["row_id"] in {"2040", "2085", "2224", "2162"}]
             with migrations_path.open("w", encoding="utf-8", newline="") as handle:
                 writer = csv.DictWriter(handle, fieldnames=list(migrations[0]), delimiter="\t")
                 writer.writeheader()
@@ -170,6 +166,14 @@ class RustInputAdoptionTests(unittest.TestCase):
         self.assertIn("Total mismatches:         8", report)
         self.assertIn("*stráwą", report)
         self.assertNotIn("orst", rust["reason"].replace("forst", ""))
+        live = baseline.read_baseline(
+            BASE / "cascade_baseline_outputs.tsv", BASE / "cascade_baseline_summary.json")
+        nightmare = next(row for row in live["records"] if row["row_id"] == "2141")
+        self.assertEqual(
+            (nightmare["proto"], nightmare["counterpart"], nightmare["outputs"], nightmare["match"]),
+            ("*márōn", "mære", "mare", "0"))
+        report = known.render_report(known.baseline_mismatches(live["records"]), ledger)
+        self.assertIn("Total mismatches:         9", report)
         self.assertEqual(
             (ROOT / "Germanic/docs/debug_snapshots/oe_known_problems_report.txt").read_text(), report)
 

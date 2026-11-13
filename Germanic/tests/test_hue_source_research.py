@@ -117,9 +117,7 @@ class HueSourceResearchTests(unittest.TestCase):
             legacy = list(csv.DictReader(handle, delimiter="\t"))
         with (baseline / "approved_input_migrations.tsv").open() as handle:
             migrations = [row for row in csv.DictReader(handle, delimiter="\t")
-                          if row["row_id"] not in {
-                              "2224", "2162", "2283", "2095", "2313", "2314", "2302",
-                              "2011", "2053", "2201", "2282", "2208", "2335", "2006"}]
+                          if row["row_id"] in {"2040", "2085"}]
         self.assertFalse(any(row["concept"] == "hue" for row in legacy))
         self.assertEqual(
             cascade_baseline.projection_sha256(
