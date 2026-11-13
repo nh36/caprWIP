@@ -1,0 +1,78 @@
+{
+  "source_sha256": "62fb821f9988cf995043cb9a978b76a5a3fc83caff5b026928c64a0dd378062c",
+  "checkpoints": {
+    "nasal_loss": "PGmcNasalLossBeforeX",
+    "palatalization": "OEVelarFricativePalatalization",
+    "before_h_loss": "OEWeightCleanup",
+    "before_contraction": "OEHLoss",
+    "after_contraction": "OEContraction",
+    "surface": "OldEnglishSurface"
+  },
+  "clay_entry": {
+    "before": "PGmcNasalLossBeforeX",
+    "input": "*θ*á*n*x*ō*n"
+  },
+  "clay": {
+    "nasal_loss": [
+      "*θ*ã*x*ō*n"
+    ],
+    "palatalization": [
+      "*θ*ō*x*ǭ"
+    ],
+    "before_h_loss": [
+      "*θ*ō*x*e"
+    ],
+    "before_contraction": [
+      "*θ*ō*e"
+    ],
+    "after_contraction": [
+      "*θ*ō"
+    ],
+    "surface": [
+      "þō"
+    ]
+  },
+  "reversed_clay": {
+    "before_contraction": [
+      "*θ*ō*x*e"
+    ],
+    "after_contraction": [
+      "*θ*ō*x*e"
+    ],
+    "after_loss": [
+      "*θ*ō*e"
+    ],
+    "surface": [
+      "þōe"
+    ]
+  },
+  "fringe": {
+    "input": "*w*l*ō*x*u*m",
+    "after_h_loss": [
+      "*w*l*ō*u*m"
+    ],
+    "front_only": [
+      "*w*l*ō*x*u*m"
+    ],
+    "front_only_positive_input": "*t*ā*x*e",
+    "front_only_positive": [
+      "*t*ā*e"
+    ]
+  },
+  "raw_clay_tokenizer": [
+    "+?"
+  ],
+  "baseline": {
+    "total_lexemes": 394,
+    "accepted": 394,
+    "rejected": 0,
+    "matched": 385,
+    "mismatched": 9,
+    "ambiguous_outputs": 0,
+    "outputs_sha256": "43a57847b70b39ec130b4b52a17065be8cedd0e5fe7c6cc801ae1bcecae9fe2c",
+    "lexical_outputs_sha256": "2783f9617b26caf0ad10836a99d4502f80f47ee13f858aaea123b9351b1c5514",
+    "legacy_subset_count": 380,
+    "legacy_subset_sha256": "a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47"
+  },
+  "protected_artifacts_unchanged": true
+}

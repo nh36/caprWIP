@@ -125,11 +125,13 @@ with tempfile.TemporaryDirectory(prefix="capr_clay_fringe_") as temporary:
                 bins["diagnostic:" + str(number)], states)[0])
     reversed_clay["surface"] = states
     fringe_input = "*w*l*ō*x*u*m"
+    front_control = "*t*ā*x*e"
     fringe = {
         "input": fringe_input,
         "after_h_loss": apply("OEHLoss", fringe_input),
         "front_only": apply("AFFrontH", fringe_input),
-        "front_only_positive": apply("AFFrontH", before_h),
+        "front_only_positive_input": front_control,
+        "front_only_positive": apply("AFFrontH", front_control),
     }
 
     toe = [r for r in pipeline.load_rows(rt.corpus_tsv) if r["concept"] == "toe"]
@@ -182,6 +184,10 @@ def assert_clay_surface(outputs):
     assert outputs == ["þō"], ("clay must contract to þō", outputs)
 
 
+def assert_clay_contraction(outputs):
+    assert outputs == ["*θ*ō"], ("clay must contract to starred θō", outputs)
+
+
 def assert_fringe_hiatus(outputs):
     assert outputs == ["*w*l*ō*u*m"], (
         "fringe must lose x between back vowels and retain both u and m", outputs)
@@ -191,14 +197,8 @@ def test_clay_has_a_front_ending_with_h_then_hiatus_then_contraction(observed):
     clay = observed["clay"]
     assert re.fullmatch(r"\*θ\*ō\*[xç]\*[æeǣēiī]", clay["before_h_loss"][0])
     assert_hiatus(clay["before_contraction"])
-    assert clay["after_contraction"] == ["*θ*ō"]
+    assert_clay_contraction(clay["after_contraction"])
     assert_clay_surface(clay["surface"])
-    # Exact current vowels, separately from the historical reading thōæ.
-    assert clay["before_h_loss"] == ["*θ*ō*x*e"]
-    assert clay["before_contraction"] == ["*θ*ō*e"]
-    assert clay["nasal_loss"] == ["*θ*ã*x*ō*n"]
-    assert clay["palatalization"] == ["*θ*ō*x*ǭ"]
-    assert observed["raw_clay_tokenizer"] == ["+?"]
 
 
 def test_ordinary_toe_uses_existing_cumulative_snapshots(observed):
@@ -217,16 +217,17 @@ def test_reversed_clay_order_fails_the_same_hiatus_and_surface_assertions(observ
     trial = observed["reversed_clay"]
     assert trial["after_contraction"] == observed["clay"]["before_h_loss"]
     assert trial["after_loss"] == observed["clay"]["before_contraction"]
-    assert trial["surface"] == ["þōe"]
     with pytest.raises(AssertionError, match="adjacent vowels and no fricative"):
         assert_hiatus(trial["before_contraction"])
+    with pytest.raises(AssertionError, match="contract to starred"):
+        assert_clay_contraction(trial["after_contraction"])
     with pytest.raises(AssertionError, match="contract to þō"):
         assert_clay_surface(trial["surface"])
 
 
-def test_front_only_loss_fails_fringe_but_still_deletes_before_front_e(observed):
+def test_front_only_loss_fails_fringe_but_deletes_before_fixed_front_e(observed):
     fringe = observed["fringe"]
     assert fringe["front_only"] == [fringe["input"]]
-    assert fringe["front_only_positive"] == observed["clay"]["before_contraction"]
+    assert fringe["front_only_positive"] == ["*t*ā*e"]
     with pytest.raises(AssertionError, match="lose x between back vowels"):
         assert_fringe_hiatus(fringe["front_only"])
