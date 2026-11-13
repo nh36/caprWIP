@@ -172,3 +172,22 @@ Neither question licenses a production rule change in this follow-up.
 This stacked review is based on `review/2141-nightmare-maere`, so it
 includes the clay/fringe commit and this follow-up only; a direct PR to
 `update` would additionally land `9882f3e7` and `1fa39ed8`.
+
+## Clean integration provenance (13 November 2026)
+
+The preceding paragraph records the original stacked review. The clean
+integration candidate instead starts at `update` (`7604cdb1`) and
+transplants the mære adoption, the historical-ledger/current-state CI
+repair, its portable worker-label fix, and both clay/fringe commits.
+It does not inherit `9882f3e7` or contain the final-vowel research tree.
+The research-only supersession notice is preserved in the
+[lexical audit](nightmare-2141-target-selection.md); the source ledger
+links the separate immutable research manifest.
+
+The repairs supply only the approvals valid for each historical replay,
+without weakening `cascade_baseline.py` or changing archived fixtures.
+Current-state checks require the authorized mære target, mare output
+and nine mismatches; migration and index deltas are checked as exact
+publication-specific records rather than positional tails.
+The clay/fringe rules, checkpoints, assertions and evidence
+classifications remain those of this follow-up.
