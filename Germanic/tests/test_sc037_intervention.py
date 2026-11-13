@@ -52,9 +52,15 @@ def test_selected_weight_negative_and_previous_breaking_umlaut_histories(current
     selected = current["current"]["selected"]
     assert len(selected) == 394
     assert all(len(row["outputs"]) == 1 for row in selected)
+    by_id = {row["id"]: row for row in selected}
+    assert by_id["2141"]["counterpart"] == "mære"
+    assert by_id["2141"]["outputs"] == ["mære"]
+    assert by_id["2016"]["counterpart"] == "flasce"
+    assert by_id["2016"]["outputs"] == ["flæsċe"]
     assert {row["concept"] for row in selected
             if row["outputs"] != [row["counterpart"]]} == {
-                "buck", "fire", "fowl", "rust", "straw", "tap", "wolf", "wool"}
+                "buck", "fire", "flask", "fowl", "rust", "straw", "tap",
+                "wolf", "wool"}
 
 
 def test_weak_breaking_root_breaking_and_high_front_blockers(current):
