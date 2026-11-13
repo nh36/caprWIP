@@ -243,7 +243,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertEqual(trace["outcome"], "mare")
         self.assertEqual(model["metadata"]["COUNTERPART"], "mære")
         for prose in (None, ROOT / "Germanic/docs/assembly/book_prose/regular_all_01"):
-            with self.subTest(prose=prose):
+            with self.subTest(prose=str(prose)):
                 rendered = render_entry(
                     model, trace, entry_path=path, regular_book_prose_dir=prose)
                 self.assertIn("implementation mismatch", rendered)
