@@ -297,11 +297,13 @@ oe	maca	maca			6	comparison_form; target_form	explicit_tag; lexical_heading	Germ
 oe	Macaþ	macath			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:40
 oe	macaþ	macath			6	comparison_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:36; Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:62; Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:34; Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:63; make (3sg) — OE macaþ
 oe	macian	macian			10	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:22; Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:34; Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:36; Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:60; Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:24
+oe	mære	maere			1	target_form	lexical_heading	nightmare — OE mære
 oe	man	man			4	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:33; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:34; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:58
 oe	mann	mann			4	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:35; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:39; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:57
 oe	manne	manne			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:59
 oe	mannes	mannes			5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:33; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:39; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:60; man — OE mannes
-oe	mare	mare			1	target_form	lexical_heading	nightmare — OE mare
+oe	maran	maran			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24
+oe	mare	mare			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24
 oe	mēd	med			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:25; Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:53
 oe	menn	menn			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31; Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:43
 oe	meoloc	meoloc			3	comparison_form; target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25; Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:29; milk — OE meoloc
@@ -805,7 +807,7 @@ pgmc	*mánnas	mannas			4	selected_input; source_protoform	explicit_tag; lexical_
 pgmc	*mannăz	mannaz			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:57
 pgmc	*mánnaz	mannaz			1	source_protoform	lexical_proto	man — OE mannes
 pgmc	*márkō	marko			1	selected_input	trace_proto_input	march — OE mearc
-pgmc	*márōn	maron			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	nightmare — OE mare
+pgmc	*márōn	maron			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	nightmare — OE mære
 pgmc	*mástaz	mastaz			1	selected_input	trace_proto_input	mast — OE mæst
 pgmc	*máxtiz	maxtiz			1	selected_input	trace_proto_input	might — OE miht
 pgmc	*mḗlą	mela			1	selected_input	trace_proto_input	meal — OE mǣl

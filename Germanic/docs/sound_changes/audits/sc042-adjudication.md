@@ -156,3 +156,12 @@ A subsequent cross-check in that same final memorandum demonstrates that delayed
 nasal-vowel treatment is not root-restoration-equivalent. Current certification
 is DEFER: the unadopted early-merger correction changes four protected outputs.
 The original verdict and measurements above remain historical records.
+
+## Row2141 editorial selection, 13 November 2026
+
+The [one-lexeme decision](nightmare-2141-target-selection.md) selects
+attested weak nominative mære without changing the input or any sound law.
+Its exact target-only baseline transition uses the existing SC042 approval
+namespace and a distinct `nightmare_target` archive suffix; this is not
+adoption of the deferred nasal correction. Production still yields mare.
+The registry verdict remains DEFER and all earlier measurements are retained.

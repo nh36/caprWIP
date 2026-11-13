@@ -703,6 +703,7 @@ oe		macian	macian	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_repor
 oe		macian	macian	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:47	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:47:1	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md	auto
 oe		macian	macian	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:62	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:62:2	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md	auto
 oe		macian	macian	macian	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:62	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:62:3	Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md	auto
+oe		mære	mære	maere	target_form	lexical_heading	nightmare — OE mære	heading:4ad1f66f6db917	manifest	auto
 oe		man	man	man	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31:2	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
 oe		man	man	man	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:33	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:33:1	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
 oe		man	man	man	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:34	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:34:1	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
@@ -717,7 +718,8 @@ oe		mannes	mannes	mannes	target_form	explicit_tag	Germanic/docs/lexeme_reports/m
 oe		mannes	mannes	mannes	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:39	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:39:1	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
 oe		mannes	mannes	mannes	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:60	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:60:3	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
 oe		mannes	mannes	mannes	target_form	lexical_heading	man — OE mannes	heading:b4e2db489a2983	manifest	auto
-oe		mare	mare	mare	target_form	lexical_heading	nightmare — OE mare	heading:cbdcfa9304932f	manifest	auto
+oe		maran	maran	maran	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24:2	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md	auto
+oe		mare	mare	mare	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24:1	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md	auto
 oe		mēd	mēd	med	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:25	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:25:1	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md	auto
 oe		mēd	mēd	med	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:53	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:53:1	Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md	auto
 oe		menn	menn	menn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:31:4	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
@@ -1757,8 +1759,8 @@ pgmc		*mánnas	*mánnas	mannas	selected_input	trace_proto_input	man — OE manne
 pgmc		*mannăz	*mannăz	mannaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:57	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:57:1	Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md	auto
 pgmc		*mánnaz	*mánnaz	mannaz	source_protoform	lexical_proto	man — OE mannes	lexical-proto:1eafd1bf6bb2d7	manifest	auto
 pgmc		*márkō	*márkō	marko	selected_input	trace_proto_input	march — OE mearc	trace:4133a1beb61861	compact	auto
-pgmc		*márōn	*márōn	maron	source_protoform	lexical_protoform	nightmare — OE mare	lexical-protoform:5c1be9e53a900a	manifest	auto
-pgmc		*márōn	*márōn	maron	selected_input	trace_proto_input	nightmare — OE mare	trace:02a4b72ef3fb4e	compact	auto
+pgmc		*márōn	*márōn	maron	source_protoform	lexical_protoform	nightmare — OE mære	lexical-protoform:1eab6c8c37f169	manifest	auto
+pgmc		*márōn	*márōn	maron	selected_input	trace_proto_input	nightmare — OE mære	trace:111b8c61e10a08	compact	auto
 pgmc		*mástaz	*mástaz	mastaz	selected_input	trace_proto_input	mast — OE mæst	trace:ca5417698def57	compact	auto
 pgmc		*máxtiz	*máxtiz	maxtiz	selected_input	trace_proto_input	might — OE miht	trace:14ce19710c13cc	compact	auto
 pgmc		*mḗlą	*mḗlą	mela	selected_input	trace_proto_input	meal — OE mǣl	trace:9e0625472fe270	compact	auto

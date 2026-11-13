@@ -1,18 +1,34 @@
-# Source extraction ledger — nightmare / mare
+# Source extraction ledger — nightmare / mære
 
-This ledger records the compact evidence used for the regular model entry rewrite.
+Editorial decision, 13 November 2026: select the attested short-vowel weak
+feminine nominative singular mære. Row2141's identity, concept, cognate
+group, PROTO and PROTOFORM remain unchanged. The source filenames are
+retained for stable lookup; their mare suffix is not a selected-form owner.
 
-| Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| TSV row 2141 | live row | `PROTO *márōn`; target `mare`; note on unattested `*nihtmare` | n-stem feminine | `mare` | The live row explicitly targets the simplex noun and keeps the compound unattested. | no | `Germanic/data/germanic-aligned-final.tsv`; `production_backlog.tsv` | high |
-| Compact derivation trace | current trace | `*márōn -> mare` | n-stem feminine | `mare` | Confirms the successful regular derivation. | no | `Germanic/docs/lexeme_reports/packets/2141-nightmare-mare.md` | high |
-| Ringe & Taylor | comparative grammar | `*marōn-`; `mare, maran, mere` | n-stem paradigm | `mare`, `maran`, `mere` | Main OE-philological authority for the simplex noun and its variants. | yes — `RingeTaylor2014` | `docs/references/ringe_taylor_linguistic_history_vol2.txt`; packet; memo | high |
-| Clark Hall | OE lexicographic evidence | `mare`; `mera / mere` | noun and variant tradition | `mare`, `mera`, `mere` | Confirms the simplex noun and related variants. | yes — `ClarkHall1960` | `docs/references/clark_hall_concise_anglo_saxon_dictionary.vision.txt`; memo | high |
-| Orel | comparative etymology | `*marōn`; OE `mære` | comparative headword tradition | `mære` | Useful only to explain the secondary long-vowel headword tradition. | yes — `Orel2003` | `docs/references/orel_handbook_germanic_etymology.vision.txt`; memo | medium |
-| Packet / memo source audit | current project audit | stale `mære` and unattested compound background | source-hierarchy note | `mare` vs `mære` | Important for keeping simplex attestation separate from later headword drift. | no | packet; memo | high |
+| Source | Printed locator and actual evidence | Editorial interpretation | Verification / limits |
+| :--- | :--- | :--- | :--- |
+| Lindsay1921 | p.96, I225: `Incuba: *maere.` | Normalize diplomatic maere to mære (ae → æ); the edition's prefixed asterisk marks a vernacular gloss, not an unattested reconstruction. | Original printed page image checked at PDF sheet116 of the linked Internet Archive edition. The entry and its footnote are not a modern dictionary-headword inference. |
+| Hall2007 | §2, pp.301–302: weak mære beside strong mær; explicit levelling to the root vowel of maran. | Select the weak nominative, with short æ. Mare is a genuine variant with an identified oblique donor, not the only legitimate nominative. | Original published PDF checked. The adjective mǣre 'famous' is not this noun. |
+| Hall2007 | Table1, pp.313–314: Bald's Leechbook I, `mare`, ff.5 and52v–53r; Leechbook III, `maran`, f.111v (Wright1955's facsimile locators). | Preserve mare as attested variant and maran as oblique comparison; do not merge strong and weak attestations or count glossary copies as independent evidence. | Original table checked; Wright's original manuscript facsimile is not newly collated. Hall's table transcribes I225 as merae, whereas Lindsay's printed entry reads maere; the diplomatic spelling here follows Lindsay directly. |
+| RingeTaylor2014 | p.192: `*marā, *marōn- > *mærǣ, *mærōn- >! OE mare, maran, and mære`. | Front-root nominative intermediate and explicit mære in the endpoint list; the old reading mere was not a faithful transcription of this printed passage. | Original page image checked at PDF sheet207; the book uses æ with a combining macron for the final vowel represented here as ǣ. |
+| Current production evaluation | `*márōn → mare`; selected comparator mære. | A documented implementation mismatch, not a successful regular derivation of the new selection. | Unchanged production source and executable-output fingerprints; exact target-only baseline approval and before archive accompany this decision. |
+| Final-vowel research Model B | `*márōn → mære` in the frozen 394-row experimental population. | Reproducible research result, not a production adoption. | `sound_changes/audits/wgmc-final-vowels-research/` on the research branch; original snapshot and receipts remain unchanged. |
 
-## Citation-locator full-corpus high-confidence pass
+## Selection, schema, and preserved history
 
-- Added page-specific locators for `ClarkHall1960, 213`.
-- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
-- Existing citations to conditional or unresolved locator sources were left unchanged.
+COUNTERPART owns the selected written form. TOKENS and ALIGNMENT now
+segment that simplex as `m æ r e`; IPA is synchronized as `mæ.re`,
+with no long root vowel. These replace inherited English-compound
+material, not the transducer input. HISTORY retains its import provenance.
+DERIVATION_CLASS remains regular for the selected historical nominative;
+there is no lexical exception or rule edit.
+The model's publication-only OUTPUT_STATUS is implementation_gap, so both
+renderers label mare as the current cascade output rather than assert it
+is the regular historical nominative or print an unattested-form asterisk.
+
+The earlier `research_memos/2141-nightmare-mare.md` recommendation is
+explicitly superseded, with its old text retained as history. Old packets,
+batch summaries, the extraction-time comparative survey, original380 and
+other baseline archives, and frozen experimental receipts are not rewritten.
+No Orel/Wiktionary provenance argument can invalidate the directly attested
+short-vowel mære.

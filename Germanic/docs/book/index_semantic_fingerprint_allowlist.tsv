@@ -1,4 +1,12 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+remove	oe	mare	target_form	lexical_heading	nightmare — OE mare	Row2141 selects attested weak nominative mære; mare remains a separately indexed attested variant.
+add	oe	mære	target_form	lexical_heading	nightmare — OE mære	Row2141 authorized nominative selection; Lindsay1921 p.96 I225.
+remove	pgmc	*márōn	selected_input	trace_proto_input	nightmare — OE mare	Row2141 heading changes only; selected input is unchanged.
+add	pgmc	*márōn	selected_input	trace_proto_input	nightmare — OE mære	Row2141 heading changes only; selected input is unchanged.
+remove	pgmc	*márōn	source_protoform	lexical_protoform	nightmare — OE mare	Row2141 heading changes only; PROTO is unchanged.
+add	pgmc	*márōn	source_protoform	lexical_protoform	nightmare — OE mære	Row2141 heading changes only; PROTO is unchanged.
+add	oe	mare	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md	Attested levelled variant, not the selected form; Hall2007 table1 pp.313-314.
+add	oe	maran	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md	Attested oblique comparison and levelling donor; Hall2007 §2 and table1.
 add	oe	hlūtor	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md	Little source review: attested Old English comparator in Fulk2018 p.127, not a reconstructed Proto-Germanic form.
 add	oe	lūtan	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md	Little source review: attested Old English bending verb in Krogmann1935 p.44 and Luehr2017 p.152.
 add	oe	eorþcunde	target_form	lexical_heading	earthly — OE eorþcunde	SC040 authorized weak-neuter admission and mature publication, Genesis A 1627.

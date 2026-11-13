@@ -23234,9 +23234,9 @@ OldEnglishSurface [no-change]: netle
 
 --- nightmare ---
 PROTO: *márōn
-EXPECTED: mare
+EXPECTED: mære
 OUTPUTS: mare
-NOTE: Unattested OE compound *nihtmare; second element is OE mare 'nightmare' (n-stem fem., < PWGmc *mara, *marōn-, cf. ON mara, OHG mara). Per Ringe & Taylor *Development of Old English* vol. 2 p. 192 the attested OE forms are mare (nom.sg.), maran (obl.), and variant mere. Earlier target mære reflected Wiktionary headword (Orel-style spelling) and was conflated with the unrelated OE adjective mǣre 'famous' (< PGmc *mēriz, jō/jā-stem); corrected per §17.28.
+NOTE: Selects attested weak feminine nominative singular mære 'nightmare', normalized from Corpus Glossary maere under incuba (Lindsay 1921 p.96 I225). The English concept indexes the OE simplex. Hall 2007 §2 and table1 pp.313-314 distinguishes weak mære from strong mær and explains attested mare (Bald's Leechbook) as levelling from obliques such as maran. Neither noun is the adjective mǣre 'famous'. Ringe & Taylor 2014 p.192 includes mære and reconstructs a front-root nominative. Input *márōn and production rules are unchanged: the cascade still yields mare, a documented mismatch against selected mære; research Model B's mære is unadopted.
 
 
 ## Section 1: Proto-Germanic consonant inheritance

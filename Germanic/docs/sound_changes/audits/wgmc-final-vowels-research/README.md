@@ -1,5 +1,13 @@
 # West Germanic final vowels and their Old English interactions
 
+Subsequent editorial decision (13 November 2026): row2141 now selects
+attested weak nominative mære, retaining the regular classification.
+The recommendation below to reconsider the old mare selection is
+superseded by that one-lexeme decision, not by adoption of Model B.
+The experiment counts and selected targets below describe the frozen
+pre-change research population; its memorandum, snapshots and receipts
+remain unchanged. The production output is still mare.
+
 ## Executive conclusion
 
 RECOMMEND CONDITIONAL ADOPTION of Model B's bounded phonological

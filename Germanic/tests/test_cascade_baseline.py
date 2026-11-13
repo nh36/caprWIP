@@ -123,7 +123,8 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual(len(selected), 380)
         self.assertEqual([m["row_id"] for m in migrations],
                          ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
-                          "2302", "2011", "2201", "2282", "2053", "2335", "2208", "2006"])
+                          "2302", "2011", "2201", "2282", "2053", "2335", "2208", "2006",
+                          "2141"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -231,7 +232,9 @@ class LegacySubsetTests(unittest.TestCase):
         previous = mod.read_baseline(
             BASELINE_DIR / "cascade_baseline_outputs_pre_sc063_coverage_finish.tsv",
             BASELINE_DIR / "cascade_baseline_summary_pre_sc063_coverage_finish.json")
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc042_nightmare_target.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc042_nightmare_target.json")
         approval = json.loads(
             (BASELINE_DIR / "approved_hvd_coverage_finish_expansion.json").read_text())
         mod.validate_expansion_transition(previous, current, approval)
@@ -240,6 +243,29 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual(current["summary"]["total_lexemes"], 394)
         self.assertEqual(current["summary"]["matched"], 386)
         self.assertEqual(current["summary"]["ambiguous_outputs"], 0)
+
+    def test_nightmare_target_only_transition_preserves_every_output(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc042_nightmare_target.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc042_nightmare_target.json")
+        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        approval = json.loads(
+            (BASELINE_DIR / "approved_nightmare_target_migration.json").read_text())
+        mod.validate_cell_transition(previous, current, approval)
+        before = {r["row_id"]: r for r in previous["records"]}
+        after = {r["row_id"]: r for r in current["records"]}
+        self.assertEqual({i for i in before if before[i] != after[i]}, {"2141"})
+        self.assertEqual(after["2141"], dict(before["2141"], counterpart="mære", match="0"))
+        for field in ("outputs_sha256", "lexical_outputs_sha256", "legacy_subset_sha256"):
+            self.assertEqual(previous["summary"][field], current["summary"][field])
+        self.assertEqual((current["summary"]["matched"], current["summary"]["mismatched"]),
+                         (385, 9))
+        import copy
+        wrong = copy.deepcopy(current)
+        next(r for r in wrong["records"] if r["row_id"] == "2141")["outputs"] = "mære"
+        with self.assertRaises(ValueError):
+            mod.validate_cell_transition(previous, wrong, approval)
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy
@@ -313,7 +339,7 @@ class LegacySubsetTests(unittest.TestCase):
             previous["records"], old,
             [m for m in migrations if m["row_id"] not in {
                 "2224", "2162", "2283", "2095", "2313", "2314", "2302",
-                "2011", "2201", "2282", "2053", "2208", "2335", "2006"}],
+                "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141"}],
         )), 387)
 
 
