@@ -1,5 +1,18 @@
 # Research memo — 2141 nightmare / mare
 
+## Superseded recommendation
+
+The recommendation below is superseded by the 13 November 2026
+[editorial selection](../model_entries/2141-nightmare-mare.model.md)
+and its source ledger. The live target is the attested weak feminine
+nominative singular mære, not mare; the input and production rules
+are unchanged, so mare is now a documented computational mismatch.
+Lindsay1921 p.96 I225 prints maere, Hall2007 §2 explains levelling
+from maran, and RingeTaylor2014 p.192 actually includes mære.
+The old stale-headword/conflation argument and its reading of
+Ringe–Taylor are withdrawn. The following text is retained verbatim
+as the superseded research record, not current advice.
+
 ## Starting point
 
 - **ID:** 2141

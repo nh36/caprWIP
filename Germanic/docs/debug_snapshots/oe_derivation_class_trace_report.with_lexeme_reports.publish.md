@@ -4483,7 +4483,7 @@ English Proto Input: *nátilōn
 Outcome: netle
 # nightmare
 PROTO: *márōn
-EXPECTED: mare
+EXPECTED: mære
 OUTPUTS: mare
 
 

@@ -1,9 +1,9 @@
 # Index verborum audit
 
-- Internal production occurrences: 2574
-- Internal production unique forms: 1233
-- Printed main-index occurrences: 2481
-- Printed main-index unique forms: 1223
+- Internal production occurrences: 2576
+- Internal production unique forms: 1235
+- Printed main-index occurrences: 2483
+- Printed main-index unique forms: 1225
 - Print-excluded occurrences: 93
 - Print-excluded unique forms: 70
 - Print exclusions (regular_output_default_exclusion): 93
@@ -21,10 +21,10 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 446
-- Broad-prose notation / compound expressions: 519
-- Broad-prose evidence suggestions: 319
-- Curated broad-prose deferred: 25
+- Already indexed in same entry: 444
+- Broad-prose notation / compound expressions: 516
+- Broad-prose evidence suggestions: 317
+- Curated broad-prose deferred: 24
 - Curated broad-prose ignored: 7
 - Reader-facing examples quarantined (separate example index policy): 1460
 - Ordinary prose/gloss ignored: 30
@@ -35,7 +35,7 @@
 - Table semantic ignored: 3
 - Table semantic notation / compound expressions: 15
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 468
+- Ignored fragments or sequences: 470
 - Possible extraction garbage: 15
 - Excluded intermediate trace forms: 1373
 - New unresolved candidates relative to baseline: 0
@@ -45,7 +45,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1370 | 540 |
+| Old English | 1372 | 542 |
 | Proto-Germanic | 1037 | 576 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
@@ -183,7 +183,7 @@
 | target_form | 421 |
 | source_protoform | 396 |
 | selected_input | 566 |
-| comparison_form | 871 |
+| comparison_form | 873 |
 | regular_output | 93 |
 | evidence_form | 227 |
 
@@ -191,7 +191,7 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1277 | 530 |
+| Old English | 1279 | 532 |
 | Proto-Germanic | 1037 | 576 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
@@ -215,7 +215,7 @@
 | target_form | 421 |
 | source_protoform | 396 |
 | selected_input | 566 |
-| comparison_form | 871 |
+| comparison_form | 873 |
 | evidence_form | 227 |
 
 ## Internal-only rows by reason
@@ -436,9 +436,7 @@
 | `*mákōθi` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:45 | ### Development to Old English | same form already indexed in this entry |
 | `*mánnas` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:44 | ### Development to Old English | same form already indexed in this entry |
 | `mannes` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:46 | ### Development to Old English | same form already indexed in this entry |
-| `mare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:25 | ### Old English evidence | same form already indexed in this entry |
-| `mare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:29 | ### Development to Old English | same form already indexed in this entry |
-| `mare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | ### Form note | same form already indexed in this entry |
+| `*márōn` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:32 | ### Current derivation and implementation gap | same form already indexed in this entry |
 | `mēd` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:36 | ### Old English evidence | same form already indexed in this entry |
 | `mēd` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:41 | ### Old English evidence | same form already indexed in this entry |
 | `*mélukz` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
@@ -983,19 +981,16 @@
 | `*lȳtilu` | Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:330 | intermediate or model-stage form in development chain |
 | `*mækô` | Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md:43 | intermediate or model-stage form in development chain |
 | `*mækōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:46 | intermediate or model-stage form in development chain |
+| `*mærōn-` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:28 | notation or compound expression |
 | `mak-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:47 | notation or compound expression |
 | `*maka-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:23 | notation or compound expression |
 | `*makaθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:50 | intermediate or model-stage form in development chain |
 | `*makōθ` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:50 | intermediate or model-stage form in development chain |
 | `*mannan-` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:21 | notation or compound expression |
-| `mare, maran` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | notation or compound expression |
-| `*marōn-` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | notation or compound expression |
-| `*márōn` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:29 | intermediate or model-stage form in development chain |
+| `*marōn-` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:28 | notation or compound expression |
 | `*mekila-` | Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:202 | notation or compound expression |
 | `*meluk-` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:21 | notation or compound expression |
 | `meoloc / meoluc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | notation or compound expression |
-| `mera / mere` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:25 | notation or compound expression |
-| `mere / mera` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | notation or compound expression |
 | `-mn-` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:86 | notation or compound expression |
 | `mn > βn` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:155 | notation or compound expression |
 | `mn > βn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:79 | notation or compound expression |
@@ -1309,7 +1304,6 @@
 | `make` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:25 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `*makon` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:25 | pwgmc | source_protoform | citation or reconstructed source form in prose |
 | `*mannz` | Germanic/docs/lexeme_reports/model_entries/2119-man-mannes.model.md:22 |  | selected_input | selected input described in prose |
-| `maran` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mēder` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `mēder` | Germanic/docs/lexeme_reports/model_entries/2129-mother-mōder.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*mekojan` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:25 | pwgmc | source_protoform | citation or reconstructed source form in prose |
@@ -1317,7 +1311,6 @@
 | `meolc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `meolc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `meoluc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `mere` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:21 | oe | comparison_form | attested Old English comparison form in surrounding prose |
 | `*mēriþō` | Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:60 |  | source_protoform | citation or reconstructed source form in prose |
 | `milc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `milc` | Germanic/docs/lexeme_reports/model_entries/2126-milk-meoloc.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1540,7 +1533,6 @@
 | `*niexti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49 | pgmc | source_protoform | Intermediate night dev stage; deferred |
 | `*nixti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49 | pgmc | source_protoform | Intermediate night dev stage; deferred |
 | `*næxti` | Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:49 | pgmc | source_protoform | Intermediate night dev stage; deferred |
-| `*nihtmare` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:33 | pgmc | comparison_form | unattested compound label kept for review only |
 | `*saiui` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:33 | pgmc | comparison_form | comparative headword variant cited in same entry |
 | `*sāwiz` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:39 | pwgmc | comparison_form | intermediate development stage in the sea derivation chain |
 | `*sāwiz` | Germanic/docs/lexeme_reports/model_entries/2169-sea-sǣ.model.md:40 | pwgmc | comparison_form | intermediate development stage in the sea derivation chain |
@@ -3473,6 +3465,8 @@ _None._
 | `lw` | Germanic/docs/lexeme_reports/model_entries/2234-swallow-swealwe.model.md:29 |
 | `*lȳt` | Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:168 |
 | `m` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:37 |
+| `*mærǣ` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:28 |
+| `*marā` | Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:28 |
 | `mn` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:25 |
 | `mn` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:90 |
 | `mn` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:49 |
