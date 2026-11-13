@@ -320,13 +320,16 @@ class ArchiveIsolationTests(unittest.TestCase):
 
 
 class FingerprintGuardTests(unittest.TestCase):
-    def test_fingerprints_match_approved_sc015_target_transition(self):
+    def test_fingerprints_preserve_historical_and_candidate_transitions(self):
         historical = json.loads(
             (BASELINE / "cascade_baseline_summary_pre_sc112_expansion.json").read_text(
                 encoding="utf-8"
             )
         )
         data = json.loads(BASELINE_SUMMARY.read_text(encoding="utf-8"))
+        before_candidate = json.loads(
+            (BASELINE / "cascade_baseline_summary_pre_sc042_final_nasal_candidate.json").read_text(
+                encoding="utf-8"))
         # outputs_sha256 rebaselined 2026-09-06 for the sow/laewan
         # follow-up (memo §12.4): two corpus rows added (sow, betray);
         # every pre-existing output byte-identical (legacy sha unchanged).
@@ -360,13 +363,17 @@ class FingerprintGuardTests(unittest.TestCase):
             "e495ab40d4fb34f2117c6d8590ee11e18166271e01712755b99507bf9933aef2",
         )
         self.assertEqual(
-            data["legacy_subset_sha256"],
+            before_candidate["legacy_subset_sha256"],
             "a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47",
         )
         self.assertEqual(
-            data["outputs_sha256"],
+            before_candidate["outputs_sha256"],
             "43a57847b70b39ec130b4b52a17065be8cedd0e5fe7c6cc801ae1bcecae9fe2c",
         )
+        self.assertEqual(data["legacy_subset_sha256"],
+                         "6e098bbd407f42f17c9aac05fcf164f5bf91ab1ad29730d362a83f9fef068960")
+        self.assertEqual(data["outputs_sha256"],
+                         "3fd12209d595843df3f4f56e7d667293ba56611ffc7c96f2aec19eef7b06325a")
         previous = {
             row["row_id"]: row
             for row in csv.DictReader(

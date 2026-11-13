@@ -54,6 +54,24 @@ def assert_nightmare_index_delta(rows):
     assert all(not row.get("variety") for row in rows)
 
 
+def assert_final_nasal_index_delta(rows):
+    model = "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
+    expected = {
+        (action, language, form, role, "explicit_tag", model)
+        for action, language, form, role in (
+            ("add", "oe", "flascena", "comparison_form"),
+            ("remove", "oe", "flasce", "regular_output"),
+            ("remove", "pgmc", "*flaskō", "source_protoform"),
+            ("remove", "pgmc", "*fláskōn", "selected_input"),
+            ("remove", "pgmc", "flaskǭ", "source_protoform"),
+        )
+    }
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == len(expected) == 5
+    assert {tuple(row[field] for field in fields) for row in rows} == expected
+    assert all(not row.get("variety") for row in rows)
+
+
 class EditorialPublicationTests(unittest.TestCase):
     def test_selected_find_and_soul_have_one_printed_entry_with_all_sites(self):
         path = ROOT / "Germanic/docs/book/index_verborum_book_print_unique.tsv"
@@ -280,21 +298,7 @@ class EditorialPublicationTests(unittest.TestCase):
         with path.open() as handle:
             rows = [row for row in csv.DictReader(handle, delimiter="\t")
                     if row["note"].startswith("Final nasal candidate:")]
-        expected = {
-            ("add", "oe", "flascena", "comparison_form"),
-            ("remove", "oe", "flasce", "regular_output"),
-            ("remove", "pgmc", "*flaskō", "source_protoform"),
-            ("remove", "pgmc", "*fláskōn", "selected_input"),
-            ("remove", "pgmc", "flaskǭ", "source_protoform"),
-        }
-        fields = ("action", "language", "form", "form_role")
-        self.assertEqual(len(rows), len(expected))
-        self.assertEqual({tuple(row[field] for field in fields) for row in rows}, expected)
-        self.assertTrue(all(
-            row["source_scope"] == "explicit_tag" and not row["variety"]
-            and row["source_ref"] ==
-            "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
-            for row in rows))
+        assert_final_nasal_index_delta(rows)
 
     def test_source_and_live_identity_mismatches_fail_closed(self):
         rows = copy.deepcopy(self.rows)

@@ -19,7 +19,9 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import adjudicate
 from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
-from test_lexical_editorial_publication import assert_nightmare_index_delta
+from test_lexical_editorial_publication import (
+    assert_nightmare_index_delta, assert_final_nasal_index_delta,
+)
 
 
 def receipt():
@@ -696,6 +698,9 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
                  or "2141-nightmare-mare.model.md" in row["source_ref"]]
     assert_nightmare_index_delta(nightmare)
     added = [row for row in added if row not in nightmare]
+    final_nasal = [row for row in added if row["note"].startswith("Final nasal candidate:")]
+    assert_final_nasal_index_delta(final_nasal)
+    added = [row for row in added if row not in final_nasal]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

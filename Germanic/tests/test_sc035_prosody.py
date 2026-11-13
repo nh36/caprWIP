@@ -19,7 +19,8 @@ from check_bibliography_sanity import parse_entries
 from historical_sc035 import historical_runtime
 from test_sc037_adjudication import (
     INTERVENTION_ADDED, INTERVENTION_CHANGED, CONSOLIDATION_ADDED,
-    CONSOLIDATION_CHANGED, FINAL_Z_QUANTITY_CHANGED, assert_intervention_scope,
+    CONSOLIDATION_CHANGED, FINAL_Z_QUANTITY_CHANGED, FINAL_NASAL_CHANGED,
+    assert_intervention_scope,
 )
 
 
@@ -98,7 +99,8 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
                        "OldEnglishOrthography",
                        # Independently source-bound by test_sc037_adjudication.py.
                        "OECompoundLinkingSyncope"} | (
-                           (INTERVENTION_CHANGED | CONSOLIDATION_CHANGED | FINAL_Z_QUANTITY_CHANGED) & {
+                           (INTERVENTION_CHANGED | CONSOLIDATION_CHANGED |
+                            FINAL_Z_QUANTITY_CHANGED | FINAL_NASAL_CHANGED) & {
                                stage.foma_identifier for stage in oe_pipeline.named_stages()
                                if stage.foma_identifier in previous})
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
