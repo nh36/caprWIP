@@ -13,7 +13,7 @@
 - failure count: `1`
 - representative failures: `toe`
 - concrete failure example: PGmc `*táixōn` yields expected OE `tā`, but the earlier-shifted variant yields `tāæ`
-- interpretation: SC085 can move earlier safely through order `74`, but it cannot move earlier across SC073. Pulling OE H Loss ahead of OE Unstressed AE Merger leaves an extra final vowel in the `toe` derivation and links directly back to the already documented SC073 later boundary.
+- interpretation: In the measured implementation, SC085 can move earlier safely through order `74`, but crossing SC073 leaves an extra final vowel in the `toe` derivation. This reciprocates the SC073 later observation and is classified `technical_computational` / `boundary_observation`, not independently demonstrated historical chronology.
 
 ## Later boundary
 - first later break: order `85`
@@ -25,10 +25,12 @@
 - interpretation: SC085 can move later safely through its current order, but it cannot move later across SC086. Delaying OE H Loss past OE Contraction leaves over-long vocalic sequences in four late derivations.
 
 ## Chronology statement
-Current first-break evidence places SC085 after `SC073` OE Unstressed AE Merger and before `SC086` OE Contraction. If OE H Loss is moved before `SC073`, PGmc `*táixōn` yields `tāæ` rather than expected OE `tā`; if it is moved later than `SC086`, PGmc `*fléuxaną` yields `flēoan` rather than `flēon`, PGmc `*sláxaną` yields `sleaan` rather than `slēan`, PGmc `*téxun` yields `teoon` rather than `tēon`, and PGmc `*táixōn` yields `tāe` rather than `tā`. The later side therefore directly reciprocates `SC086` earlier.
+The current cascade keeps SC085 after SC073, but the toe result `tāæ` for expected `tā` is only a computational boundary of its merger/loss/contraction rules. It does not independently establish historical merger before loss. If Corpus 207 *thoae* preserves distinct unstressed æ, clay instead supports loss before merger in that form; whether ae distinguishes æ from e here remains unresolved (Sweet 1885, pp. 36, 41; Ringe and Taylor 2014, p. 314, §6.9.3).
+
+The separate SC085-before-SC086 relation is unchanged. Delaying loss past contraction yields `flēoan` rather than `flēon`, `sleaan` rather than `slēan`, `teoon` rather than `tēon`, and `tāe` rather than `tā`. This later side directly reciprocates SC086 earlier and agrees with the independently attested glossary hiatus and subsequent contraction.
 
 ## Caveats
-Both observed boundaries are historically interpretable. The earlier side is narrow and currently concentrated in the same `toe` derivation already visible in the SC073 later evidence, while the later side is a tighter four-row reciprocal contraction set.
+The earlier side is a narrow computational observation in the same toe derivation as SC073 later, not a historical constraint. The later side retains the separate four-row reciprocal loss/contraction evidence. Original experiment positions, counts and outputs above remain unchanged; see [the focused follow-up](../../audits/clay-fringe-chronology-followup.md).
 
 ## Source files
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03.tsv`

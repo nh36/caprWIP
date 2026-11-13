@@ -1,5 +1,9 @@
 # Clay and fringe: external glossary-stage controls
 
+The [focused chronology/test follow-up](clay-fringe-chronology-followup.md)
+supersedes the original registry-retention decision and exact-string test
+contract below. This dated run and its observations remain unchanged.
+
 ## Identity
 
 13 November 2026; `review/clay-fringe-stage-witnesses`, base `1fa39ed8`.

@@ -69,6 +69,8 @@ Neither that programme nor the qualified lexical residues starts automatically.
 The separate [clay/fringe glossary-stage controls](sound_changes/audits/clay-fringe-stage-witnesses.md)
 clarify the reader's h-loss, hiatus and merger evidence without admitting
 either witness to the lexical corpus or changing production rules.
+The [focused follow-up](sound_changes/audits/clay-fringe-chronology-followup.md)
+aligns the chronology classification and sequence-only runtime controls.
 
 `registry/adjudication_programme.json` owns the administrative programme
 start. Scoped verdicts cannot skip earlier pending work, and technical

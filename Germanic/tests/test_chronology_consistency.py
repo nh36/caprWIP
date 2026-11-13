@@ -81,6 +81,26 @@ def test_current_source_distinguishes_old_experiments_from_adopted_relations():
             assert e["evidence_basis"] == "technical"
 
 
+def test_toe_displacement_is_nonordering_without_weakening_loss_before_contraction():
+    reg = registry.read_tsv(registry.SC_REGISTRY)
+    edges = registry.read_tsv(registry.EDGE_REGISTRY)
+    toe = [e for e in edges if
+           {e["source_change_id"], e["target_change_id"]} == {"SC073", "SC085"}]
+    assert len(toe) == 2
+    assert all(e["relation_type"] == "technical_computational"
+               and e["evidence_basis"] == "boundary_observation" for e in toe)
+    assert all(o["order_check"] == "nonordering_observation"
+               for o in registry.chronology_order_observations(reg, toe))
+    contraction = [e for e in edges if
+                   {e["source_change_id"], e["target_change_id"]} == {"SC085", "SC086"}]
+    assert len(contraction) == 2
+    assert all(e["relation_type"] == "reciprocal_chronology"
+               and e["evidence_basis"] == "independently_demonstrated"
+               for e in contraction)
+    assert all(o["order_check"] == "consistent"
+               for o in registry.chronology_order_observations(reg, contraction))
+
+
 def _selected_rows():
     return [r for r in oe_pipeline.load_rows(layout().corpus_tsv)
             if r["concept"] in {"yoke", "youth", "widow", "world"}]

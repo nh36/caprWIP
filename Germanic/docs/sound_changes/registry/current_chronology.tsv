@@ -127,7 +127,7 @@ SC071	SC087	no_break_search_boundary	later_boundary	boundary_observation		84	102
 SC072	SC064	technical_computational	earlier_boundary	technical	feeding	87	48	89	50	consistent
 SC072	SC073	broad_far_chronology	later_boundary	independently_demonstrated	displacement_witness	87	88	89	90	consistent
 SC073	SC072	broad_far_chronology	earlier_boundary	independently_demonstrated	displacement_witness	88	87	90	89	consistent
-SC073	SC085	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	88	100	90	102	consistent
+SC073	SC085	technical_computational	later_boundary	boundary_observation	displacement_witness	88	100	90	102	nonordering_observation
 SC074	SC072	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	89	87	91	89	consistent
 SC074	SC075	reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	89	90	91	92	consistent
 SC075	SC074	reciprocal_chronology	earlier_boundary	independently_demonstrated	displacement_witness	90	89	92	91	consistent
@@ -146,7 +146,7 @@ SC082	SC081	reciprocal_chronology	earlier_boundary	independently_demonstrated	di
 SC082	SC083	reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	97	98	99	100	consistent
 SC083	SC082	reciprocal_chronology	earlier_boundary	independently_demonstrated	displacement_witness	98	97	100	99	consistent
 SC083	SC087	no_break_search_boundary	later_boundary	boundary_observation		98	102	100	104	nonordering_observation
-SC085	SC073	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	100	88	102	90	consistent
+SC085	SC073	technical_computational	earlier_boundary	boundary_observation	displacement_witness	100	88	102	90	nonordering_observation
 SC085	SC086	reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	100	101	102	103	consistent
 SC086	SC085	reciprocal_chronology	earlier_boundary	independently_demonstrated	displacement_witness	101	100	103	102	consistent
 SC086	SC087	no_break_search_boundary	later_boundary	boundary_observation		101	102	103	104	nonordering_observation

@@ -584,7 +584,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC073-oe-unstressed-ae-merger.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary is reciprocal with SC072 later and broad; later boundary is one-sided across SC085 and should trust crossed_change_id/display_name from the TSV."
+      "short_summary": "Earlier boundary reciprocates SC072 later and is broad; the SC085 toe displacement is only a computational boundary of the current rules, not independently demonstrated historical chronology."
     },
     {
       "change_id": "SC074",
@@ -684,7 +684,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC085-oe-h-loss.md",
       "card_type": "reciprocal_or_near_reciprocal",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary links back to the existing SC073 later toe relation, and the later boundary reciprocates SC086 earlier."
+      "short_summary": "The SC073 toe displacement is only a current-rule computational boundary; the separate reciprocal SC086 relation retains independently demonstrated loss-before-contraction evidence."
     },
     {
       "change_id": "SC086",
@@ -2379,16 +2379,16 @@
     {
       "source_change_id": "SC073",
       "target_change_id": "SC085",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "toe",
       "representative_forms": "PGmc `*táixōn` yields expected OE `tā`, but the later-shifted variant yields `tāæ`",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is reciprocal with SC072 later and broad; later boundary is one-sided across SC085 and should trust crossed_change_id/display_name from the TSV."
+      "notes": "Measured toe displacement retained as a computational boundary of the current merger/loss/contraction rules, not independently demonstrated historical chronology. If Corpus thoae preserves distinct unstressed æ, clay instead supports loss before merger in that form; its spelling remains unresolved. See clay-fringe-chronology-followup.md."
     },
     {
       "source_change_id": "SC074",
@@ -2645,16 +2645,16 @@
     {
       "source_change_id": "SC085",
       "target_change_id": "SC073",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "toe",
       "representative_forms": "PGmc `*táixōn` yields expected OE `tā`, but the earlier-shifted variant yields `tāæ`",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary links back to the existing SC073 later toe relation, and the later boundary reciprocates SC086 earlier."
+      "notes": "Measured toe displacement retained as the reciprocal computational boundary, not a historical merger-before-loss constraint. Corpus thoae has the conditional interpretation recorded with SC073; the separately supported SC085-before-SC086 relation is unchanged. See clay-fringe-chronology-followup.md."
     },
     {
       "source_change_id": "SC085",

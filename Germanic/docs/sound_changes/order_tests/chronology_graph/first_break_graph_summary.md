@@ -39,11 +39,11 @@ chronology constraints.
 | --- | ---: |
 | `broad_far_chronology` | 13 |
 | `no_break_search_boundary` | 21 |
-| `one_sided_chronology` | 41 |
+| `one_sided_chronology` | 39 |
 | `reciprocal_chronology` | 24 |
 | `runner_limited_boundary` | 18 |
 | `superseded_experiment` | 12 |
-| `technical_computational` | 19 |
+| `technical_computational` | 21 |
 
 ## Chronology edges
 
@@ -104,7 +104,6 @@ chronology constraints.
 1. `SC071 -> SC070` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bore (3sg); learn (3sg); lick (3sg); make (3sg); month`; forms: PGmc `*búrōθi` yields expected OE `boraþ`, but the earlier-shifted variant yields `boreþ`; PGmc `*líznōθi` likewise yields `liorneþ` instead of expected `liornaþ`
 1. `SC072 -> SC073` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `adder; earth; father; find; flask`; forms: PGmc `*nḗdrōn` yields expected OE `nǣdre`, but the later-shifted variant yields `nǣdræ`; PGmc `*fádēr` likewise yields `fædær` instead of expected `fæder`
 1. `SC073 -> SC072` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `adder; earth; father; find; flask`; forms: PGmc `*nḗdrōn` yields expected OE `nǣdre`, but the earlier-shifted variant yields `nǣdræ`; PGmc `*fádēr` likewise yields `fædær` instead of expected `fæder`
-1. `SC073 -> SC085` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `toe`; forms: PGmc `*táixōn` yields expected OE `tā`, but the later-shifted variant yields `tāæ`
 1. `SC074 -> SC072` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `fright`; forms: PGmc `*fúrxtīnaz` yields expected OE `fyrhte`, but the earlier-shifted variant yields `fyrhti`
 1. `SC074 -> SC075` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `shilling`; forms: PGmc `*skíllingaz` yields expected OE `sċilling`, but the later-shifted variant yields `sċilleng`
 1. `SC075 -> SC074` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `shilling`; forms: PGmc `*skíllingaz` yields expected OE `sċilling`, but the earlier-shifted variant yields `sċilleng`
@@ -118,7 +117,6 @@ chronology constraints.
 1. `SC082 -> SC081` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `strew`; forms: PGmc `*stráwjaną` yields expected OE `strīeġan`, but the earlier-shifted variant yields `strīeian`
 1. `SC082 -> SC083` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bore; handle; learn; lick; make`; forms: PGmc `*búrōjaną` yields expected OE `borian`, but the later-shifted variant yields `boreian`; PGmc `*xándlōjaną` likewise yields `handleian` instead of expected `handlian`; PGmc `*mákōjaną` yields `maceian` instead of `macian`
 1. `SC083 -> SC082` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bore; handle; learn; lick; make`; forms: PGmc `*búrōjaną` yields expected OE `borian`, but the earlier-shifted variant yields `boreian`; PGmc `*líznōjaną` likewise yields `liorneian` instead of expected `liornian`; PGmc `*líkkōjaną` yields `licceian` instead of `liccian`
-1. `SC085 -> SC073` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `toe`; forms: PGmc `*táixōn` yields expected OE `tā`, but the earlier-shifted variant yields `tāæ`
 1. `SC085 -> SC086` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `flee; slay; ten; toe`; forms: PGmc `*fléuxaną` yields expected OE `flēon`, but the later-shifted variant yields `flēoan`; PGmc `*sláxaną` likewise yields `sleaan` instead of expected `slēan`; PGmc `*téxun` yields `teoon` instead of `tēon`; PGmc `*táixōn` yields `tāe` instead of `tā`
 1. `SC086 -> SC085` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `flee; slay; ten; toe`; forms: PGmc `*fléuxaną` yields expected OE `flēon`, but the earlier-shifted variant yields `flēoan`; PGmc `*sláxaną` likewise yields `sleaan` instead of expected `slēan`; PGmc `*téxun` yields `teoon` instead of `tēon`; PGmc `*táixōn` yields `tāe` instead of `tā`
 1. `SC087 -> SC044` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `burst`; forms: PGmc `*bréstaną` yields expected OE `berstan`, but the earlier-shifted variant yields `beorstan`
@@ -188,11 +186,13 @@ chronology constraints.
 1. `SC069 -> SC087` (no_break_search_boundary)
 1. `SC071 -> SC087` (no_break_search_boundary)
 1. `SC072 -> SC064` (technical_computational)
+1. `SC073 -> SC085` (technical_computational)
 1. `SC075 -> SC087` (no_break_search_boundary)
 1. `SC076 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC076 -> SC087` (no_break_search_boundary)
 1. `SC080 -> SC087` (no_break_search_boundary)
 1. `SC083 -> SC087` (no_break_search_boundary)
+1. `SC085 -> SC073` (technical_computational)
 1. `SC086 -> SC087` (no_break_search_boundary)
 1. `SC087 -> RUNNER_LIMIT` (runner_limited_boundary)
 1. `SC035 -> SC107` (technical_computational)
