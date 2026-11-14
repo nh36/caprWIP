@@ -214,6 +214,43 @@ not the differently numbered Cambridge History chapter. Older
 diagnostic records and their dated corpus measurements remain intact.
 This pass makes no new full-corpus or publication-validation claim.
 
+## 14 November attested-cell and late-ending follow-up
+
+The [cell audit](../../sound_changes/audits/flask-attested-cells-late-ending.md)
+uses exact reference `a829dfcb4a80eac9113ac473e06258edd7285002`.
+It reuses unchanged production traces and newly executes inherited
+accusative plural `*fláskōnunz` (Ringe 2017, p.313): the production
+gateway rejects it, and its separately labelled post-gateway diagnostic
+gives `flasconun`, not attested accusative plural *flaxan*. Substitution
+of `*-ōniz` would presuppose accusative/nominative syncretism, which
+Ringe–Taylor pp.62–63 discuss as early; it is not the inherited
+accusative input or a demonstrated pre-Proto-Germanic replacement.
+
+The strongest late experiment exempts unstressed `ōn#` from early
+shortening after protecting secondary n. Full `*fláskōniz` and
+`*fláskōni` now both give *flascan* through experimental normal
+entry: root fronting/restoration gives `flaskōn`, existing late
+shortening gives `flaskon`, and final o-lowering gives `flaskan`.
+Nominative singular *tunge*, *dōn* and independent late-mechanism
+*boraþ* remain; parallel *tungan* has the same ending uncertainty.
+This keeps SC051 fixed and derives hard sk written sc, not literal
+x or a newly demonstrated metathesis.
+
+Ringe–Taylor p.164 scenario (3) supplies the regular northern ending
+hypothesis; Campbell pp.147–148 §355 and Hogg pp.227–228
+§§6.27–6.28 support late shortening elsewhere. None independently
+demonstrates retained ō in this particular ending until that stage.
+Hogg p.65 §3.34 and Fulk p.172 §7.33 retain raising/redistribution
+alternatives. The raised northern accusative diagnostics still expose
+separate implementation gaps; *tungum* remains a pre-m question.
+
+Verdict: unresolved between historically justified CAPR repair (1B)
+and analogy (2), not proof of analogy from a rejected gateway or failed
+derivation. No 1A is demonstrated. Keep the selected nominative and
+comparator; no new 394-row result, strict validation or publication
+rebuild is claimed. Genitive singular and dative plural remain
+unattested on the present evidence.
+
 ## Publication ownership and preserved history
 
 Both lexical presentations use this mature model because the entry is
