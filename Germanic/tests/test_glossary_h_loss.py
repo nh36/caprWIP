@@ -105,12 +105,36 @@ with tempfile.TemporaryDirectory(prefix="capr_clay_fringe_") as temporary:
     def apply(component, value):
         return one(batch_apply_down(bins["component:" + component], [value])[0])
     clay, clay_trace, states = {}, [], [clay_input]
+    pretonic, pretonic_trace = {}, []
+    pretonic_states = ["*ᶠ*b*i*x*í*n*d*a*n"]
+    unmarked_states = None
+    prefix_stage = named("OEPrefixIReduction")
+    h_loss_stage = named("OEHLoss")
     for number, stage in enumerate(stage_slice):
         states = one(batch_apply_down(bins["diagnostic:" + str(number)], states)[0])
         clay_trace.append({"stage": slice_components[number], "outputs": states})
         for key, stop in clay_stops.items():
             if stage.foma_identifier == stop:
                 clay[key] = states
+        if stage.exec_index >= prefix_stage.exec_index:
+            pretonic_states = one(batch_apply_down(
+                bins["diagnostic:" + str(number)], pretonic_states)[0])
+            if stage == prefix_stage:
+                pretonic["after_prefix_reduction"] = pretonic_states
+                unmarked_states = [pretonic_states[0].replace("*ᶠ", "")]
+            elif stage.exec_index < h_loss_stage.exec_index:
+                unmarked_states = one(batch_apply_down(
+                    bins["diagnostic:" + str(number)], unmarked_states)[0])
+                assert [pretonic_states[0].replace("*ᶠ", "")] == unmarked_states, (
+                    "retained stress marker changed an intervening stage", stage)
+            if stage.foma_identifier == predecessor("OEHLoss"):
+                pretonic["before_h_loss"] = pretonic_states
+            if stage == h_loss_stage:
+                pretonic["after_h_loss"] = pretonic_states
+            if stage.foma_identifier == "OldEnglishSurface":
+                pretonic["surface"] = pretonic_states
+            pretonic_trace.append({
+                "stage": slice_components[number], "outputs": pretonic_states})
     assert set(clay) == set(clay_stops), "missing clay checkpoint"
     before_h = clay["before_h_loss"][0]
     reversed_clay = {
@@ -147,7 +171,13 @@ with tempfile.TemporaryDirectory(prefix="capr_clay_fringe_") as temporary:
     current = build_baseline(rt.corpus_tsv, rt.bin_dir / "old_english.bin")
     frozen = read_baseline(baseline_dir / "cascade_baseline_outputs.tsv",
                            baseline_dir / "cascade_baseline_summary.json")
-    assert current == frozen, "accepted corpus no longer matches protected baseline"
+    previous = {r["row_id"]: r for r in frozen["records"]}
+    corpus_delta = [
+        {"row_id": r["row_id"], "concept": r["concept"],
+         "before": previous[r["row_id"]]["outputs"], "after": r["outputs"]}
+        for r in current["records"] if r["outputs"] != previous[r["row_id"]]["outputs"]]
+    assert current == frozen, (
+        "accepted corpus no longer matches protected baseline", corpus_delta)
     assert not {r["concept"] for r in current["records"]} & {"clay", "fringe"}
 after = {str(p): hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in protected}
 assert before == after, "stage assays mutated canonical runtime or baselines"
@@ -155,9 +185,11 @@ print(json.dumps({
     "source_sha256": before[str(rt.germanic_fst)], "checkpoints": clay_stops,
     "clay_entry": {"before": entry, "input": clay_input},
     "clay": clay, "clay_trace": clay_trace,
+    "pretonic": pretonic, "pretonic_trace": pretonic_trace,
     "reversed_clay": reversed_clay, "fringe": fringe,
     "toe": toe_trace, "raw_clay_tokenizer": raw_clay,
-    "baseline": current["summary"], "protected_artifacts_unchanged": before == after,
+    "baseline": current["summary"], "corpus_delta": corpus_delta,
+    "protected_artifacts_unchanged": before == after,
 }, ensure_ascii=False))
 '''
 
@@ -207,6 +239,16 @@ def test_ordinary_toe_uses_existing_cumulative_snapshots(observed):
     assert toe["before_contraction"] == ["*t*ā*e"]
     assert toe["after_contraction"] == ["*t*ā"]
     assert toe["surface"] == ["tā"]
+
+
+def test_pretonic_h_survives_prefix_reduction_and_h_loss_without_marker_leak(observed):
+    pretonic = observed["pretonic"]
+    assert pretonic["after_prefix_reduction"] == ["*ᶠ*b*e*x*í*n*d*a*n"]
+    assert "*ᶠ" in pretonic["before_h_loss"][0]
+    assert "*x" in pretonic["after_h_loss"][0]
+    assert "*ᶠ" not in pretonic["after_h_loss"][0]
+    assert pretonic["surface"] == ["behindan"]
+    assert "ᶠ" not in pretonic["surface"][0]
 
 
 def test_fringe_loses_h_between_back_vowels_without_losing_um(observed):

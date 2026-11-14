@@ -29,6 +29,8 @@ LEXICAL_GRAMMAR_CHANGED = {"PGCellEnd"}
 FINAL_Z_QUANTITY_CHANGED = {"EAFFinalZDeletion"}
 FINAL_NASAL_CHANGED = {
     "PWGmcSurvivingBimoricOUnrounding", "OEVelarPalatalizationStops", "OEHLoss",
+    # PR10 review moves technical stress-marker cleanup from SC076 to SC085.
+    "OEPrefixIReduction",
 }
 
 
@@ -52,7 +54,10 @@ def assert_final_nasal_scope(current):
                 "||_EnglishStarFrontVowel,", "||_[{*i}|{*í}|{*ì}|{*ī}],", 1),
         "OEHLoss":
             "FootCtx(" + compact(previous["OEHLoss"].body).replace(
-                "{*x}->0", "[{*x}|{*ç}]->0") + ")",
+                "{*x}->0", "[{*x}|{*ç}]->0") + ").o.[{*ᶠ}->0]",
+        "OEPrefixIReduction":
+            compact(previous["OEPrefixIReduction"].body).replace(
+                ".o.[{*ᶠ}->0]", ""),
     }
     for name, body in expected.items():
         assert compact(current[name].body) == body

@@ -69,6 +69,8 @@ def legacy_subset(records: list[dict], legacy_rows: list[dict],
                               "old_proto", "new_proto", "old_outputs", "new_outputs",
                               "adjudication_memo"} or not all(migration.values()):
             raise ValueError("invalid approved input migration")
+        if len(migration["old_outputs"].split("|")) != len(migration["new_outputs"].split("|")):
+            raise ValueError("unapproved migration output_count drift")
         key = (normalize_proto(migration["old_proto"]),
                migration["counterpart"], migration["concept"])
         if migration["old_proto"] == migration["new_proto"] and (

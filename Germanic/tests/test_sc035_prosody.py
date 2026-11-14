@@ -201,5 +201,5 @@ def test_fresh_adopted_cascade_and_phonological_components(isolated_definitions)
     assert controls["ae_merger"]["outputs"] == [
         ["*ᶠ*b*e*t*á"], ["*b*æ*t"], ["*ᶠ*ʝ*i*s*t*ḯ*g*a"]]
     assert controls["i_lowering"]["outputs"] == [
-        ["*ʝ*e*s*t*ḯ*g*a"], ["*b*e*g*í*n*n*a*n"], ["*n*e*t*á"],
+        ["*ᶠ*ʝ*e*s*t*ḯ*g*a"], ["*ᶠ*b*e*g*í*n*n*a*n"], ["*ᶠ*n*e*t*á"],
         ["*b*í*n*d*a*n"], ["*n*i"]]

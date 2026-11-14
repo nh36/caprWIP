@@ -30,7 +30,7 @@ CONTROLS = [
     ("palatal-loss", "OEHLoss", "*θ*ō*ç*æ", "*θ*ō*æ"),
     ("geminate-velar", "OEHLoss", "*a*x*x*a", "*a*x*x*a"),
     ("geminate-palatal", "OEHLoss", "*a*ç*ç*a", "*a*ç*ç*a"),
-    ("pretonic", "OEHLoss", "*ᶠ*b*i*x*í*n*d*a*n", "*ᶠ*b*i*x*í*n*d*a*n"),
+    ("pretonic", "OEHLoss", "*ᶠ*b*i*x*í*n*d*a*n", "*b*i*x*í*n*d*a*n"),
 ]
 
 SCRIPT = r'''

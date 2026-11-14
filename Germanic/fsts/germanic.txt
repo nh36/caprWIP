@@ -2947,10 +2947,9 @@ define OEMedUnstressedILowering Ctx([
 # Later pretonic i-lowering (Hogg Grammar 6.50-6.54; R/T 2014:335),
 # after the ae/e merger. Positive prosody replaces the old bi/ni proxy.
 # Short *i becomes ordinary *e directly; no protected vowel is introduced.
-# The retained pretonic annotation is removed after serving its purpose.
+# Retain the pretonic annotation through h-loss, which removes it afterward.
 define OEPrefixIReduction SentenceCtx([
     [{*i} -> {*e} || .#. {*ᶠ} OEAnyConsonant* _]
-    .o. [{*ᶠ} -> 0]
 ]);
 
 # SC035: regular working reconstruction of pretonic raising after the
@@ -3655,7 +3654,7 @@ define OEPostVelarWLoss Ctx([
 
 define OEHLoss FootCtx([
     [{*x}|{*ç}] -> 0 || EnglishStarVocalic _ EnglishStarVocalic
-]);
+]) .o. [{*ᶠ} -> 0];
 
 define OEContraction [
     {*a} {*a} -> {*ā},

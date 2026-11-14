@@ -215,6 +215,27 @@ class LegacySubsetTests(unittest.TestCase):
                 [{**selected, "outputs": "mære|mare", "output_count": "2"}],
                 [original], [*approvals, {**third, "new_outputs": "mære|mare"}])
 
+    def test_migration_chain_rejects_transient_ambiguity(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        original = next(r for r in self.legacy_rows if r["concept"] == "nightmare")
+        self.assertEqual(original["outputs"], "mare")
+        selected = {
+            **original, "row_id": "2141", "counterpart": "mære",
+            "outputs": "mære", "match": "1",
+        }
+        first = dict(
+            row_id="2141", concept=original["concept"],
+            counterpart=original["counterpart"], new_counterpart="mære",
+            old_proto=original["proto"], new_proto=original["proto"],
+            old_outputs="mare", new_outputs="mare|mære",
+            adjudication_memo="ambiguous-intermediate.md")
+        second = {
+            **first, "counterpart": "mære", "old_outputs": "mare|mære",
+            "new_outputs": "mære", "adjudication_memo": "singleton-terminal.md",
+        }
+        with self.assertRaisesRegex(ValueError, "output_count"):
+            mod.legacy_subset([selected], [original], [first, second])
+
     def test_migration_chains_reject_missing_links_forks_and_terminal_drift(self):
         import copy
         mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
