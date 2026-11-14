@@ -1,6 +1,6 @@
 === PROVENANCE ===
 trace_provenance_version: 2
-germanic.txt sha256: 6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539
+germanic.txt sha256: 21f86e76dd3d7f3f76633fabd679d3fab2d40548a5b8dc84596c6760d11b52d6
 old_english_sandbox.txt sha256: 64c0b672831b8f73778a00386095791412bddebde330fbc3e2240800b048be0b
 germanic-aligned-final.tsv sha256: 8b300c3116465cda233e964c8e623f79edbf210a2d3f7f7f073a1542178f965f
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
@@ -9,14 +9,14 @@ oe_full_trace_report.py sha256: dad0d16f3c52b89c2a3e2ef52d7f5126659cd045d93df73c
 oe_pipeline.py sha256: 742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6
 sound_change_order_sensitivity.py sha256: 99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c
 capr_runtime.py sha256: e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec
-old_english.bin sha256 (informational): 0559cfa4e12ea8f917f344b5dcd492f0fda71fe7f6f2f3355c320bb9e555e6d7
+old_english.bin sha256 (informational): 96e203bbbb184846f3742efe7359e98812f8442965fd69f8fcbaec9b83d14229
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-11-13T21:55:15+0000
+build_manifest_built_at: 2026-11-14T00:30:45+0000
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
 build_manifest_expected_bins: 114
 manifest:germanic-aligned-final.tsv sha256: 8b300c3116465cda233e964c8e623f79edbf210a2d3f7f7f073a1542178f965f
-manifest:germanic.txt sha256: 6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539
+manifest:germanic.txt sha256: 21f86e76dd3d7f3f76633fabd679d3fab2d40548a5b8dc84596c6760d11b52d6
 manifest:old_english_sandbox.txt sha256: 64c0b672831b8f73778a00386095791412bddebde330fbc3e2240800b048be0b
 
 === BUCKET: exact_match (385) ===

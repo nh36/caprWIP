@@ -1,0 +1,295 @@
+variant	probe	raw	raw_output	entry	before	diagnostic_output	status
+identity	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flæsċe	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flæsċe	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+identity	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+identity	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	æsċe	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	æsċe	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+identity	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+identity	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+identity	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+identity	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+identity	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+identity	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+identity	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+identity	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+identity	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+identity	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+identity	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+identity	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+identity	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+identity	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+identity	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+retain	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+retain	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+retain	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retain	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+retain	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+retain	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+retain	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+retain	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+retain	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+retain	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+retain	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+retain	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+retain	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+retain	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+retain	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+retain	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+retain	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+retain	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+retract	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+retract	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+retract	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+retract	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+retract	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+retract	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+retract	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+retract	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+retract	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+retract	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+retract	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+retract	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+retract	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+retract	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+retract	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+retract	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+retract	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+retract	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+whole_sk_negative	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flæsċan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flæsċem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flæsċen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+whole_sk_negative	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+whole_sk_negative	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	æsċan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	æsċem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+whole_sk_negative	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	æsċen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+whole_sk_negative	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	wáskō	wáskō	wæsċu	*w*á*s*k*ō	PGmcGmSimplification	wæsċu	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	wáskô	wáskô	wæsċa	*w*á*s*k*ô	PGmcGmSimplification	wæsċa	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+whole_sk_negative	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+whole_sk_negative	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+whole_sk_negative	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+st_negative	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+st_negative	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+st_negative	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+st_negative	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+st_negative	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+st_negative	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+st_negative	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+st_negative	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+st_negative	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+st_negative	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+high_only_negative	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+high_only_negative	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+high_only_negative	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+high_only_negative	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+high_only_negative	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+high_only_negative	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+high_only_negative	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+high_only_negative	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+n_loss_before_i	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flascen	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flascen	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_before_i	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tungen	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tungen	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_before_i	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	ascen	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	ascen	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_before_i	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+n_loss_before_i	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+n_loss_before_i	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+n_loss_before_i_and_unrounding	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascan	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_before_i_and_unrounding	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tungan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tungan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungan	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_before_i_and_unrounding	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	ascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	ascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_before_i_and_unrounding	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascan	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_before_i_and_unrounding	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_before_i_and_unrounding	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+n_loss_before_i_and_unrounding	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+n_loss_before_i_and_unrounding	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+n_loss_and_shortening_before_nasalization	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flascn	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascan	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_and_shortening_before_nasalization	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tungan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungn	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tungan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungan	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_and_shortening_before_nasalization	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	ascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	ascn	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	ascan	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+n_loss_and_shortening_before_nasalization	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascan	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+n_loss_and_shortening_before_nasalization	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+n_loss_and_shortening_before_nasalization	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+n_loss_and_shortening_before_nasalization	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+n_loss_and_shortening_before_nasalization	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+following_high_only	flásk-nompl_gen	fláskōniz		*f*l*á*s*k*ō*n*i*z	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	flásk-accsg	fláskōnų		*f*l*á*s*k*ō*n*ų	PGmcGmSimplification	flasconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	flásk-datsg	fláskōni		*f*l*á*s*k*ō*n*i	PGmcGmSimplification	flasce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	flásk-datpl	fláskōmaz		*f*l*á*s*k*ō*m*a*z	PGmcGmSimplification	flascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	flásk-secondary-n			*f*l*á*s*k*ō*n	EAFNasalSpirantLengthening	flascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+following_high_only	túng-nompl_gen	túngōniz		*t*ú*n*g*ō*n*i*z	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	túng-accsg	túngōnų		*t*ú*n*g*ō*n*ų	PGmcGmSimplification	tungunu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	túng-datsg	túngōni		*t*ú*n*g*ō*n*i	PGmcGmSimplification	tunge	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	túng-datpl	túngōmaz		*t*ú*n*g*ō*m*a*z	PGmcGmSimplification	tungem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	túng-secondary-n			*t*ú*n*g*ō*n	EAFNasalSpirantLengthening	tungen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+following_high_only	ásk-nompl_gen	áskōniz		*á*s*k*ō*n*i*z	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	ásk-accsg	áskōnų		*á*s*k*ō*n*ų	PGmcGmSimplification	asconu	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	ásk-datsg	áskōni		*á*s*k*ō*n*i	PGmcGmSimplification	asce	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	ásk-datpl	áskōmaz		*á*s*k*ō*m*a*z	PGmcGmSimplification	ascem	CAPR application of Ringe2017 pp312–313 generic feminine paradigm
+following_high_only	ásk-secondary-n			*á*s*k*ō*n	EAFNasalSpirantLengthening	ascen	Post-apocope diagnostic immediately after SC023, not ordinary raw entry
+following_high_only	námô	námô	nama	*n*á*m*ô	PGmcGmSimplification	nama	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	náminiz	náminiz	nemen	*n*á*m*i*n*i*z	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	námini	námini	nemen	*n*á*m*i*n*i	PGmcGmSimplification	nemen	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	námaniz	námaniz	naman	*n*á*m*a*n*i*z	PGmcGmSimplification	naman	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	dōną	dōną	dōn	*d*ō*n*ą	PGmcGmSimplification	dōn	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	wáskō	wáskō	wasc	*w*á*s*k*ō	PGmcGmSimplification	wasc	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	þérskō	þérskō		*þ*é*r*s*k*ō	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	wáskô	wáskô	wasca	*w*á*s*k*ô	PGmcGmSimplification	wasca	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	þérskô	þérskô		*þ*é*r*s*k*ô	PGmcGmSimplification		Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	dískiz	dískiz	disċe	*d*í*s*k*i*z	PGmcGmSimplification	disċe	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	dískas	dískas	disċes	*d*í*s*k*a*s	PGmcGmSimplification	disċes	Quantity/cell hypothesis; historical input must be verified independently
+following_high_only	do-secondary-n			*d*ō*n	EAFNasalSpirantLengthening	dōn	Negative control for secondary n survival
+following_high_only	clay			*θ*á*n*x*ō*n	PGmcNasalLossBeforeX	þō	Documented glossary witness entry after tokenization
+following_high_only	fringe			*w*l*ō*x*u*m	OEHLoss	wlōum	Normalized attested dative plural; h represented x
+following_high_only	control-wasce			*w*a*s*k*e	AFHigh	wasce	Attested structural control at palatalization, not a PGmc cell
+following_high_only	control-thersce			*θ*e*r*s*k*e	AFHigh	þersce	Attested structural control at palatalization, not a PGmc cell
+following_high_only	control-disces			*d*i*s*k*e*s	AFHigh	disċes	Attested structural control at palatalization, not a PGmc cell
+following_high_only	control-discas			*d*i*s*k*a*s	AFHigh	disċes	Attested structural control at palatalization, not a PGmc cell

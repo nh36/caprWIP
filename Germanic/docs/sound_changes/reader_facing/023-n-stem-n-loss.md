@@ -17,3 +17,12 @@ define PNWGmcNStemNLoss [
 The verb *dōn* 'do' supplies the negative, counterfeeding witness for the chronology. PGmc [dōną]{.recon} 'do' passes this rule untouched; only [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) later strips the final [ą]{.recon} and creates a new word-final [-ōn]{.recon}. That secondary [-n]{.recon} survives into *dōn* precisely because the old loss was no longer active: if [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) is displaced after the apocope, it consumes the new nasal and the derivation collapses entirely (\emph{+?}).
 
 The retained \emph{-n} of *dōn* 'do' therefore supplies a terminus ante quem for the loss — it must be dead before the apocope — while the seventeen weak nouns above are its positive witnesses; the lower boundary remains unattested within the cascade, as befits a change already complete in Proto-Germanic.
+
+This citation-form proxy is not a general entry route for inherited
+plurals. After early apocope, \emph{*fláskōniz} 'flasks' has a secondary
+final nasal, like the independently later nasal of *dōn* 'do'. In the present
+serialization the proxy consumes it; protecting it restores the back-root
+history but leaves the separate ending question. The
+[weak-paradigm comparison after early apocope](#weak-n-paradigms-after-apocope)
+sets out the inherited cells and rival regular and remodelled accounts
+[@Ringe2017, pp. 312--313; @RingeTaylor2014, pp. 117--118, 163--164].

@@ -1,5 +1,14 @@
 # Research memo — 2016 flask / flasce
 
+Historical April 2026 memo, retained without rewriting its old observations.
+The 14 November 2026 research audit at reference
+`2805d98ae5ecf7df33c65dc0caf7d9df2ed22077` supersedes its claims of a live
+match, its proposed metadata changes, and its dismissal of paradigm probes.
+The live output is `flæsċe`, selected input `*fláskōn` and comparator
+`flasce` remain protected, and `early_analogy` does not establish root-vowel
+levelling. See the [current mature entry](../model_entries/2016-flask-flasce.model.md)
+and [inherited-paradigm audit](../../sound_changes/audits/flask-inherited-paradigm-research.md).
+
 ## Starting point
 
 - **ID:** 2016

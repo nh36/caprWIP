@@ -1,0 +1,11 @@
+variant	accepted	matches	mismatches	changed_ids
+identity	394	385	9	
+retain	394	386	8	2016
+retract	394	386	8	2016
+whole_sk_negative	394	385	9	2016;2272
+st_negative	394	385	9	2016;2152
+high_only_negative	394	385	9	2016;2253
+n_loss_before_i	394	385	9	
+n_loss_before_i_and_unrounding	394	385	9	
+n_loss_and_shortening_before_nasalization	394	385	9	
+following_high_only	394	386	8	2016

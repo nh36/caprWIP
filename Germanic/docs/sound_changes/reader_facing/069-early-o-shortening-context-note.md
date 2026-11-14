@@ -41,3 +41,14 @@ expected one. The lexical evidence therefore does not
 identify a corresponding later constraint. The sources place early
 \emph{*ō}-shortening before the later weak-tail changes without fixing a closer
 local order.
+
+The selected nominative witnesses do not by themselves resolve inherited
+weak plurals. With a secondary final nasal protected, \emph{*flaskōn}
+'flasks' undergoes root restoration but is shortened only after
+[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization),
+leaving newly short \emph{*a} available for fronting and predicted
+[flascen]{.pred}. The [weak-paradigm comparison](#weak-n-paradigms-after-apocope)
+contrasts that result with experimental earlier shortening and with
+the rival regular and remodelled ending histories. Neither a new
+ordering nor an inherited-cell selection is adopted on that fit alone
+[@RingeTaylor2014, pp. 117--118, 163--164].

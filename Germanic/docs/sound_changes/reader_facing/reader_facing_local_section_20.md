@@ -1893,6 +1893,90 @@ segmental reconstruction and of lexical accent
 [@RingeTaylor2014, pp. 41--42, 55, 57--58, 65--66, 171--175;
 @Fulk2018, p. 117].
 
+## Weak paradigms after early apocope {#weak-n-paradigms-after-apocope}
+
+Early apocope exposes a class-wide question which a nominative citation
+form alone cannot answer. Ringe reconstructs feminine \emph{*tungōniz}
+'tongues' for the nominative plural, with the same ending in the genitive
+singular, beside accusative singular \emph{*tungōnų}, dative singular
+\emph{*tungōni} and dative plural \emph{*tungōmaz}
+[@Ringe2017, pp. 312--313]. After loss of final \emph{*i} and \emph{*z},
+the resulting final \emph{*n} is secondary. It must not be consumed as
+though it were the old nominative nasal lost in
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss). The survival of a
+secondary nasal and the subsequent vowel outcome are separate questions.
+
+The daughter paradigms disagree in ways that prevent simply reading
+Old English \emph{-an} back into every inherited cell. Ringe and Taylor
+give the following contrasts [@RingeTaylor2014, pp. 117--118, 163--164].
+
+| Cell | Old English | Old Frisian | Old Saxon | Old High German |
+|---|---|---|---|---|
+| Masculine nominative singular | *nama* 'name' | *noma* | *namo* | *namo* |
+| Masculine accusative singular | *naman* | *noma* | *namon*, *-an* | *namon*, *-un* |
+| Feminine nominative singular | *tunge* 'tongue' | *tunge* | *tunga* | *zunga* |
+| Feminine accusative singular | *tungan* | *tunga* | *tungun* | *zungūn* |
+| Feminine nominative–accusative plural | *tungan* | *tunga* | *tungun* | *zungūn* |
+| Feminine dative plural | *tungum* | *tungum* | *tungon* | *zungōm* |
+
+The Old English masculine *nama : naman* paradigm is not an inherited
+Proto-Germanic masculine paradigm: Ringe's earlier 'name' paradigm is
+neuter, \emph{*namô : *naminiz : *namini}. Its gender history must be
+distinguished from the genuinely inherited masculine \emph{*gumô}
+'man' class [@Ringe2017, pp. 312--313; @RingeTaylor2014, p. 117].
+Likewise, Northumbrian *foldu* and *eorðu* 'earth' are accusative-singular
+relics, not nominatives or evidence that every weak cell ended in
+\emph{-u} [@RingeTaylor2014, p. 164;
+@HoggGrammar2011, pp. 65, 298--299, §§3.34, 7.98].
+
+Three accounts remain distinguishable. First, inherited
+\emph{*-ōn > *-ūn}, followed by redistribution of masculine
+\emph{*-an}, can explain the northern feminine endings; the relics
+then preserve part of the unlevelled development. Second, the same
+raising account can start with an earlier replacement of masculine
+genitive–dative \emph{*-ini} by \emph{*-ani}, changing the basis for
+generalization. Third, northern \emph{*-ōn > -an} can be regular, with
+feminine endings subsequently spreading into the other genders.
+Ringe and Taylor explicitly leave the complete solution open
+[@RingeTaylor2014, p. 164]. Fulk's raising discussion and Hogg's
+account connect the accusatives and dative plurals with conditioned
+raising; Fulk describes northern masculine conformity in the feminine,
+without declaring the competing reconstructions settled
+[@Fulk2018, pp. 88--90, 171--172, §§5.5--5.6, 7.32--7.33;
+@HoggGrammar2011, pp. 64--65, §§3.32--3.34].
+
+The phonological distinction is testable. If inherited \emph{*ō}
+remains before the retained nasal, it can feed
+[SC046 OEARestoration](#rule-OEARestoration). If it then shortens only
+after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization),
+the newly short vowel can still front under
+[SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly),
+giving predicted \emph{-en}. Earlier shortening before nasalization,
+or an independently justified earlier unrounding, offers a different
+route to \emph{-an}. The corresponding experimental routes give
+*flascan* 'flasks', *tungan* and *ascan* 'ashes'; the current execution
+with a protected secondary nasal instead gives predicted
+[flascen]{.pred}, [tungen]{.pred} and [ascen]{.pred}.
+These are alternative histories to evaluate against the entire
+paradigm, not grammatical conditions on a sound law. In particular,
+the inherited dative-plural route must also account for attested
+*tungum*, rather than predicted [tungem]{.pred}.
+
+Root-vowel levelling is a further, not identical, issue. Campbell and
+Luick derive singular *flasce* 'flask' from the oblique or plural
+root, as with *asce* 'ash' beside *ascan*
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+Wright and Wright instead motivate a retention formulation before
+an originally back vowel, including \emph{*sk} and \emph{*st}
+[@Wright1908, pp. 37--38, §57]. Their account does not independently
+establish a narrow \emph{*sk}-only condition or date the following-vowel
+clause of [SC051 OESkPalatalization](#rule-OESkPalatalization) before
+final \emph{*ā}-fronting. Versloot motivates comparing restricted
+fronting, but not that particular combination of conditions
+[@Versloot2025, pp. 122--124]. The lexeme discussion therefore compares
+regular alternatives with the explicit levelling account, without
+treating either the existing output or the formation label as proof.
+
 ## Alternative cuts and their tree consequences
 
 A more expansive common-stem reconstruction is possible only with different
@@ -2367,6 +2451,15 @@ define PNWGmcNStemNLoss [
 The verb *dōn* 'do' supplies the negative, counterfeeding witness for the chronology. PGmc [dōną]{.recon} 'do' passes this rule untouched; only [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) later strips the final [ą]{.recon} and creates a new word-final [-ōn]{.recon}. That secondary [-n]{.recon} survives into *dōn* precisely because the old loss was no longer active: if [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) is displaced after the apocope, it consumes the new nasal and the derivation collapses entirely (\emph{+?}).
 
 The retained \emph{-n} of *dōn* 'do' therefore supplies a terminus ante quem for the loss — it must be dead before the apocope — while the seventeen weak nouns above are its positive witnesses; the lower boundary remains unattested within the cascade, as befits a change already complete in Proto-Germanic.
+
+This citation-form proxy is not a general entry route for inherited
+plurals. After early apocope, \emph{*fláskōniz} 'flasks' has a secondary
+final nasal, like the independently later nasal of *dōn* 'do'. In the present
+serialization the proxy consumes it; protecting it restores the back-root
+history but leaves the separate ending question. The
+[weak-paradigm comparison after early apocope](#weak-n-paradigms-after-apocope)
+sets out the inherited cells and rival regular and remodelled accounts
+[@Ringe2017, pp. 312--313; @RingeTaylor2014, pp. 117--118, 163--164].
 
 ## Nasal-spirant lengthening
 
@@ -4453,6 +4546,17 @@ define OEARestoration FootCtx((
 
 Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasal-tail changes. Before [SC043 EAFBrightening](#rule-EAFBrightening), PGmc [bákaną]{.recon} ‘bake’ yields [*bæcan*]{.pred} rather than expected OE *bacan* ‘bake’, and PGmc [fáraną]{.recon} ‘fare’ yields [*færan*]{.pred} rather than expected *faran* ‘fare’. After [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), [bákaną]{.recon} again yields [*bæcan*]{.pred} instead of *bacan*, while PGmc [wádaną]{.recon} ‘wade’ yields [*wædan*]{.pred} instead of *wadan* ‘wade’. These independent witness pairs place restoration after brightening and before secondary nasalization.
 
+The weak-noun plural must be distinguished from its nominative citation
+form. A protected secondary nasal leaves \emph{*flæskōn} 'flasks'
+with a back-vowel trigger, and restoration gives \emph{*flaskōn}.
+The subsequent predicted ending \emph{-en} concerns shortening and
+nasalization, not a failure of root restoration. The
+[weak-paradigm comparison](#weak-n-paradigms-after-apocope) separates
+that ending dispute from Campbell's and Luick's analysis of singular
+*flasce* 'flask' after inflected *flascan*
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161;
+@RingeTaylor2014, pp. 163--164, 192].
+
 ## Heavy-syllable nasal apocope
 
 ### Historical discussion of heavy-syllable nasal loss and secondary nasalization
@@ -4508,6 +4612,18 @@ define OESecondaryNasalization Ctx([
 ```
 
 The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
+
+The [weak-paradigm comparison](#weak-n-paradigms-after-apocope) exposes
+an additional, unresolved ordering question. Long \emph{*ō} in a
+protected plural \emph{*flaskōn} 'flasks' is not a target of this
+short-\emph{*a} rule. In the present sequence shortening creates
+\emph{*a} too late for nasalization, so unstressed fronting yields
+predicted [flascen]{.pred}. Experimental shortening after restoration
+but before nasalization instead gives \emph{*flaskąn} and *flascan*.
+That regular route must be assessed against the rival class-wide
+ending histories, not promoted to an independent historical edge
+merely because it fits the plural [@RingeTaylor2014, pp. 163--164;
+@Fulk2018, pp. 90, 171--172, §§5.6, 7.32--7.33].
 
 ## Sievers-law syncope
 
@@ -4589,11 +4705,32 @@ The old flask displacement belonged to an implementation that retained
 its final nasal vowel through restoration. After the earlier ending
 merger, the nominative already has a front root and gives
 \emph{*flæsċe} in either order. Attested *flasce* 'flask' has an
-independently sourced levelled root, after inflected *flascan* 'flask'
+explicitly sourced levelling analysis, after inflected *flascan* 'flask'
 [@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
 It must not be used as if its former executable agreement independently
 proved a regular back-root nominative history. The consonantal history
-of the paradigm remains distinct from that root-vowel levelling.
+of the paradigm remains distinct from that proposed root-vowel levelling.
+
+Regular alternatives remain open, as explained in the
+[weak-paradigm comparison](#weak-n-paradigms-after-apocope).
+Moving only the following-vowel clause before final \emph{*ā}-fronting,
+with retention or early retraction of \emph{*a} before
+\emph{*skā}, derives *flasce* without the overextension to *wascan*.
+That is a computational result, not independent evidence for the
+new order. Wright and Wright's retention account includes other clusters,
+and does not establish this narrow condition
+[@Wright1908, pp. 37--38, §57].
+
+Campbell specifically requires medial palatalization before all front
+vowels, including *wasċe* 'I wash', *þersċe* 'I thresh' and *disċes*
+'dish', while retaining the cluster in back-vowel *discas* 'dishes'
+[@Campbell1959, pp. 177--178, §§440--441]. A high-front-only
+following-vowel trigger loses the first two palatals even though it
+fits the selected corpus. Conversely, the present preceding-front-vowel
+clause creates a palatal cluster in a structural *discas* control in
+both regular nominative variants. This unresolved conditioning must
+not be hidden by their improved flask output, or by changing the
+selected comparator.
 
 Five witnesses establish the upper boundary collectively. The palatal cluster must already underlie *sċeaft* ‘shaft’, *sċēar* ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’ before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). The \emph{*sċea-* 'sea'}/\emph{*sċie-*} set therefore places cluster palatalization before the West Saxon vowel change. The cluster change occupies the same palatalization zone as [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) while remaining distinct from plain-velar palatalization and the later vowel changes.
 
@@ -6320,6 +6457,17 @@ identify a corresponding later constraint. The sources place early
 \emph{*ō}-shortening before the later weak-tail changes without fixing a closer
 local order.
 
+The selected nominative witnesses do not by themselves resolve inherited
+weak plurals. With a secondary final nasal protected, \emph{*flaskōn}
+'flasks' undergoes root restoration but is shortened only after
+[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization),
+leaving newly short \emph{*a} available for fronting and predicted
+[flascen]{.pred}. The [weak-paradigm comparison](#weak-n-paradigms-after-apocope)
+contrasts that result with experimental earlier shortening and with
+the rival regular and remodelled ending histories. Neither a new
+ordering nor an inherited-cell selection is adopted on that fit alone
+[@RingeTaylor2014, pp. 117--118, 163--164].
+
 ## Early unstressed fronting
 
 ### Historical discussion
@@ -6352,6 +6500,16 @@ The relation to [SC071 OELateOShortening](#rule-OELateOShortening) is local.
 The earlier boundary at
 [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) places fronting after
 the older palatal developments.
+
+Whether a weak plural reaches this rule with oral \emph{*a} or
+nasalized \emph{*ą} depends on the earlier ending history. The
+[weak-paradigm comparison](#weak-n-paradigms-after-apocope) explains
+why a protected secondary nasal alone still gives predicted
+[flascen]{.pred}, while the experimental shortening-before-nasalization
+route gives *flascan* 'flasks'. The difference tests the source of the
+vowel presented to fronting; it does not justify conditioning the
+sound law by declension [@RingeTaylor2014, pp. 163--164;
+@Fulk2018, pp. 171--172, §§7.32--7.33].
 
 ## Late o-shortening
 

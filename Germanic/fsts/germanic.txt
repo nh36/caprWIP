@@ -2326,9 +2326,9 @@ define EAFBrightening Ctx([
 # pattern-based via OEARestorationStrongOTail exclusion subtraction.)
 # {*ô} (trimoric *ō) is a back vowel that triggers A-restoration, but is not
 # in PGmcStarBackVowel to avoid regressions in general vowel rules.
-# {*ǭ} (nasalized *ō, from fem. n-stem *-ōn via PNWGmcNStemNLoss) is phonetically
-# back and must trigger A-restoration. Without it, *flaskōn wrongly yields flæsċe
-# instead of flasce: AFB fronts *a→*æ, then SkPalatalization palatalizes after *æ.
+# {*ǭ} is a back vowel, but the early final-vowel merger now removes this
+# nominative ending before restoration. At reference 2805d98a, *fláskōn yields
+# flæsċe, not selected flasce; the older match is an archived runtime observation.
 define OEARestorationTriggerVowel [EnglishStarBackVowel | {*ô} | {*ǭ}];
 
 # Per Campbell §158 and Ringe/Taylor vol. II §6.3.1: the intervening

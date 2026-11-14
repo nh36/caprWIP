@@ -1,0 +1,384 @@
+{
+  "id": "flask-raw-variants",
+  "insert_rule": null,
+  "insert_after": null,
+  "replace": {},
+  "definitions": "define AFSkF Ctx([\n    {*s} {*k} -> {*ʃ} || (EnglishStarConsonant | .#.) _ EnglishStarFrontVowel\n]);\ndefine AFSkL Ctx([\n    {*s} {*k} -> {*ʃ} || .#. _\n] .o. [\n    {*s} {*k} -> {*ʃ} || EnglishStarFrontVowel _ (EnglishStarConsonant | .#.)\n] .o. [\n    {*s} {*k} -> {*ʃ} || _ {*j}\n] .o. [\n    {*s} {*k} -> {*ʃ} || {*j} _\n]);\ndefine AFHold Ctx([[{*á} -> {*a} || _ {*s} {*k} {*ā} .#.] .o. EAFBrighteningStressed]);\ndefine AFRet FootCtx([{*æ} -> {*a} || _ {*s} {*k} {*ā} .#.]);\ndefine AFSt FootCtx([{*æ} -> {*a} || _ {*s} [{*k}|{*t}] {*ā} .#.]);\ndefine AFHigh Ctx([\n    {*s} {*k} -> {*ʃ} || .#. _\n] .o. [\n    {*s} {*k} -> {*ʃ} || [{*i}|{*í}|{*ì}|{*ī}|{*y}|{*ȳ}] _ (EnglishStarConsonant | .#.)\n] .o. [\n    {*s} {*k} -> {*ʃ} || (EnglishStarConsonant | .#.) _ [{*i}|{*í}|{*ì}|{*ī}|{*y}|{*ȳ}]\n] .o. [\n    {*s} {*k} -> {*ʃ} || _ {*j}\n] .o. [\n    {*s} {*k} -> {*ʃ} || {*j} _\n]);\ndefine AFV0 EnglishProtoInput .o. PGmcGmSimplification .o. PGmcNasalLossBeforeX .o. RootNounNomZLoss .o. PNWGmcUnstressedAiMonophthongization .o. PNWGmcAToUBeforeM .o. PNWGmcLongELowering .o. PWGmcEarlyIApocope .o. PWGmcFinalOrLowering .o. PWGmcCoronalWAssimilation .o. OEWWSimplification .o. PWGmcIjContraction .o. PWGmcJGemination .o. PWGmcSyllabicJ .o. PNWGmcPreconsonantalXLoss .o. EAFLThVoicing .o. PWGmcDentalHardening .o. PWGmcEndinglessAw .o. PNWGmcILowering .o. PNWGmcULowering .o. PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising .o. EAFFinalZDeletion .o. PWGmcUnstressedWordFinalIApocope .o. MonosyllabicFinalZLoss .o. PNWGmcMonosyllabicFinalRLengthening .o. EAFRhotacism .o. PNWGmcMnDissimilation .o. PNWGmcNStemNLoss .o. EAFNasalSpirantLengthening .o. EAFNasalSpirantLoss .o. EAFHiatusWInsertion .o. EAFLongANasalRounding .o. EAFNasalizedLowRounding .o. EAFLongAFronting .o. OEStressFootContext .o. EAFAiMonophthongization .o. OEAwwjResolution .o. OEAuBrightening .o. OEEwLongDiphthong .o. OEJWWSimplification .o. OEJGlideIO .o. OEDiphthongLeveling .o. OEAwLongDiphthong .o. OECompoundLinkingSyncope .o. OEStripSecondaryStress .o. OEInterStressRaising .o. OEWICombinativeUUmlaut .o. PWGmcFinalBareALoss .o. NWGmcInStemNLoss .o. PWGmcSurvivingBimoricOUnrounding .o. EAFBrighteningUnstressed .o. EAFBrightening .o. EAFBrighteningLongFinal .o. OEBreaking .o. OEVelarFricativePalatalization .o. OEARestoration .o. OEHeavySyllableNasalApocope .o. OESecondaryNasalization .o. SieversLawSyncope .o. OESkPalatalization .o. OEVelarPalatalization .o. OEPrefixAReduction .o. OEPostVelarWLoss .o. OEWsPalatalDiphthongization .o. OEIUmlaut .o. OEWLossBeforeI .o. OELatePalatalDiphthong .o. OEJClusterCoalescence .o. OEBackMutation .o. OEWsPalatalUmlaut .o. OEWeakTailNasalLoss .o. OEWeightMarkers .o. OENonHighSyn .o. PGmcBAllophony .o. OEMedLongShort .o. OEHighVowelApocope .o. OEMedialSyncope .o. OEHighLinkSyncope .o. OELAdjacentSyncope .o. OEHighStressDecode .o. OEDentalAssimilation .o. OEPreconsonantalDegemination .o. OEEarlyOShortening .o. OEUnstressedFrontingEarly .o. OELateOShortening .o. OEMedUnstressedORaising .o. OEFinalUnstressedOLowering .o. OEUnstressedLongVowelShortening .o. OEUnstressedAEMerger .o. OEMedUnstressedILowering1 .o. OEMedUnstressedILowering .o. OEMedUnstressedULowering .o. OEPrefixIReduction .o. OEWeakTailReduction .o. OEJLossAfterHeavy .o. OEFinalGeminateSimplification .o. OEJStrengtheningAfterFrontDiphthong .o. OEIntervocalicJVocalization .o. OEUnstressedEIContraction .o. OEWeightCleanup .o. OEHLoss .o. OEContraction .o. OERMetathesis .o. OEEpentheticVowel .o. OELateUnstressedAgSuffix .o. OEPalatalFricativeMerger .o. OECjCleanup .o. OEXsMerge .o. OldEnglishOrthography .o. OEWsPalatalGlide .o. OldEnglishRemoveStars .o. OldEnglishSurface;\ndefine AFV1 EnglishProtoInput .o. PGmcGmSimplification .o. PGmcNasalLossBeforeX .o. RootNounNomZLoss .o. PNWGmcUnstressedAiMonophthongization .o. PNWGmcAToUBeforeM .o. PNWGmcLongELowering .o. PWGmcEarlyIApocope .o. PWGmcFinalOrLowering .o. PWGmcCoronalWAssimilation .o. OEWWSimplification .o. PWGmcIjContraction .o. PWGmcJGemination .o. PWGmcSyllabicJ .o. PNWGmcPreconsonantalXLoss .o. EAFLThVoicing .o. PWGmcDentalHardening .o. PWGmcEndinglessAw .o. PNWGmcILowering .o. PNWGmcULowering .o. PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising .o. EAFFinalZDeletion .o. PWGmcUnstressedWordFinalIApocope .o. MonosyllabicFinalZLoss .o. PNWGmcMonosyllabicFinalRLengthening .o. EAFRhotacism .o. PNWGmcMnDissimilation .o. PNWGmcNStemNLoss .o. EAFNasalSpirantLengthening .o. EAFNasalSpirantLoss .o. EAFHiatusWInsertion .o. EAFLongANasalRounding .o. EAFNasalizedLowRounding .o. EAFLongAFronting .o. OEStressFootContext .o. EAFAiMonophthongization .o. OEAwwjResolution .o. OEAuBrightening .o. OEEwLongDiphthong .o. OEJWWSimplification .o. OEJGlideIO .o. OEDiphthongLeveling .o. OEAwLongDiphthong .o. OECompoundLinkingSyncope .o. OEStripSecondaryStress .o. OEInterStressRaising .o. OEWICombinativeUUmlaut .o. PWGmcFinalBareALoss .o. NWGmcInStemNLoss .o. PWGmcSurvivingBimoricOUnrounding .o. EAFBrighteningUnstressed .o. AFHold .o. AFSkF .o. EAFBrighteningLongFinal .o. OEBreaking .o. OEVelarFricativePalatalization .o. OEARestoration .o. OEHeavySyllableNasalApocope .o. OESecondaryNasalization .o. SieversLawSyncope .o. AFSkL .o. OEVelarPalatalization .o. OEPrefixAReduction .o. OEPostVelarWLoss .o. OEWsPalatalDiphthongization .o. OEIUmlaut .o. OEWLossBeforeI .o. OELatePalatalDiphthong .o. OEJClusterCoalescence .o. OEBackMutation .o. OEWsPalatalUmlaut .o. OEWeakTailNasalLoss .o. OEWeightMarkers .o. OENonHighSyn .o. PGmcBAllophony .o. OEMedLongShort .o. OEHighVowelApocope .o. OEMedialSyncope .o. OEHighLinkSyncope .o. OELAdjacentSyncope .o. OEHighStressDecode .o. OEDentalAssimilation .o. OEPreconsonantalDegemination .o. OEEarlyOShortening .o. OEUnstressedFrontingEarly .o. OELateOShortening .o. OEMedUnstressedORaising .o. OEFinalUnstressedOLowering .o. OEUnstressedLongVowelShortening .o. OEUnstressedAEMerger .o. OEMedUnstressedILowering1 .o. OEMedUnstressedILowering .o. OEMedUnstressedULowering .o. OEPrefixIReduction .o. OEWeakTailReduction .o. OEJLossAfterHeavy .o. OEFinalGeminateSimplification .o. OEJStrengtheningAfterFrontDiphthong .o. OEIntervocalicJVocalization .o. OEUnstressedEIContraction .o. OEWeightCleanup .o. OEHLoss .o. OEContraction .o. OERMetathesis .o. OEEpentheticVowel .o. OELateUnstressedAgSuffix .o. OEPalatalFricativeMerger .o. OECjCleanup .o. OEXsMerge .o. OldEnglishOrthography .o. OEWsPalatalGlide .o. OldEnglishRemoveStars .o. OldEnglishSurface;\ndefine AFV2 EnglishProtoInput .o. PGmcGmSimplification .o. PGmcNasalLossBeforeX .o. RootNounNomZLoss .o. PNWGmcUnstressedAiMonophthongization .o. PNWGmcAToUBeforeM .o. PNWGmcLongELowering .o. PWGmcEarlyIApocope .o. PWGmcFinalOrLowering .o. PWGmcCoronalWAssimilation .o. OEWWSimplification .o. PWGmcIjContraction .o. PWGmcJGemination .o. PWGmcSyllabicJ .o. PNWGmcPreconsonantalXLoss .o. EAFLThVoicing .o. PWGmcDentalHardening .o. PWGmcEndinglessAw .o. PNWGmcILowering .o. PNWGmcULowering .o. PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising .o. EAFFinalZDeletion .o. PWGmcUnstressedWordFinalIApocope .o. MonosyllabicFinalZLoss .o. PNWGmcMonosyllabicFinalRLengthening .o. EAFRhotacism .o. PNWGmcMnDissimilation .o. PNWGmcNStemNLoss .o. EAFNasalSpirantLengthening .o. EAFNasalSpirantLoss .o. EAFHiatusWInsertion .o. EAFLongANasalRounding .o. EAFNasalizedLowRounding .o. EAFLongAFronting .o. OEStressFootContext .o. EAFAiMonophthongization .o. OEAwwjResolution .o. OEAuBrightening .o. OEEwLongDiphthong .o. OEJWWSimplification .o. OEJGlideIO .o. OEDiphthongLeveling .o. OEAwLongDiphthong .o. OECompoundLinkingSyncope .o. OEStripSecondaryStress .o. OEInterStressRaising .o. OEWICombinativeUUmlaut .o. PWGmcFinalBareALoss .o. NWGmcInStemNLoss .o. PWGmcSurvivingBimoricOUnrounding .o. EAFBrighteningUnstressed .o. EAFBrightening .o. AFRet .o. AFSkF .o. EAFBrighteningLongFinal .o. OEBreaking .o. OEVelarFricativePalatalization .o. OEARestoration .o. OEHeavySyllableNasalApocope .o. OESecondaryNasalization .o. SieversLawSyncope .o. AFSkL .o. OEVelarPalatalization .o. OEPrefixAReduction .o. OEPostVelarWLoss .o. OEWsPalatalDiphthongization .o. OEIUmlaut .o. OEWLossBeforeI .o. OELatePalatalDiphthong .o. OEJClusterCoalescence .o. OEBackMutation .o. OEWsPalatalUmlaut .o. OEWeakTailNasalLoss .o. OEWeightMarkers .o. OENonHighSyn .o. PGmcBAllophony .o. OEMedLongShort .o. OEHighVowelApocope .o. OEMedialSyncope .o. OEHighLinkSyncope .o. OELAdjacentSyncope .o. OEHighStressDecode .o. OEDentalAssimilation .o. OEPreconsonantalDegemination .o. OEEarlyOShortening .o. OEUnstressedFrontingEarly .o. OELateOShortening .o. OEMedUnstressedORaising .o. OEFinalUnstressedOLowering .o. OEUnstressedLongVowelShortening .o. OEUnstressedAEMerger .o. OEMedUnstressedILowering1 .o. OEMedUnstressedILowering .o. OEMedUnstressedULowering .o. OEPrefixIReduction .o. OEWeakTailReduction .o. OEJLossAfterHeavy .o. OEFinalGeminateSimplification .o. OEJStrengtheningAfterFrontDiphthong .o. OEIntervocalicJVocalization .o. OEUnstressedEIContraction .o. OEWeightCleanup .o. OEHLoss .o. OEContraction .o. OERMetathesis .o. OEEpentheticVowel .o. OELateUnstressedAgSuffix .o. OEPalatalFricativeMerger .o. OECjCleanup .o. OEXsMerge .o. OldEnglishOrthography .o. OEWsPalatalGlide .o. OldEnglishRemoveStars .o. OldEnglishSurface;\ndefine AFV3 EnglishProtoInput .o. PGmcGmSimplification .o. PGmcNasalLossBeforeX .o. RootNounNomZLoss .o. PNWGmcUnstressedAiMonophthongization .o. PNWGmcAToUBeforeM .o. PNWGmcLongELowering .o. PWGmcEarlyIApocope .o. PWGmcFinalOrLowering .o. PWGmcCoronalWAssimilation .o. OEWWSimplification .o. PWGmcIjContraction .o. PWGmcJGemination .o. PWGmcSyllabicJ .o. PNWGmcPreconsonantalXLoss .o. EAFLThVoicing .o. PWGmcDentalHardening .o. PWGmcEndinglessAw .o. PNWGmcILowering .o. PNWGmcULowering .o. PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising .o. EAFFinalZDeletion .o. PWGmcUnstressedWordFinalIApocope .o. MonosyllabicFinalZLoss .o. PNWGmcMonosyllabicFinalRLengthening .o. EAFRhotacism .o. PNWGmcMnDissimilation .o. PNWGmcNStemNLoss .o. EAFNasalSpirantLengthening .o. EAFNasalSpirantLoss .o. EAFHiatusWInsertion .o. EAFLongANasalRounding .o. EAFNasalizedLowRounding .o. EAFLongAFronting .o. OEStressFootContext .o. EAFAiMonophthongization .o. OEAwwjResolution .o. OEAuBrightening .o. OEEwLongDiphthong .o. OEJWWSimplification .o. OEJGlideIO .o. OEDiphthongLeveling .o. OEAwLongDiphthong .o. OECompoundLinkingSyncope .o. OEStripSecondaryStress .o. OEInterStressRaising .o. OEWICombinativeUUmlaut .o. PWGmcFinalBareALoss .o. NWGmcInStemNLoss .o. PWGmcSurvivingBimoricOUnrounding .o. EAFBrighteningUnstressed .o. AFHold .o. OESkPalatalization .o. EAFBrighteningLongFinal .o. OEBreaking .o. OEVelarFricativePalatalization .o. OEARestoration .o. OEHeavySyllableNasalApocope .o. OESecondaryNasalization .o. SieversLawSyncope .o. OEVelarPalatalization .o. OEPrefixAReduction .o. OEPostVelarWLoss .o. OEWsPalatalDiphthongization .o. OEIUmlaut .o. OEWLossBeforeI .o. OELatePalatalDiphthong .o. OEJClusterCoalescence .o. OEBackMutation .o. OEWsPalatalUmlaut .o. OEWeakTailNasalLoss .o. OEWeightMarkers .o. OENonHighSyn .o. PGmcBAllophony .o. OEMedLongShort .o. OEHighVowelApocope .o. OEMedialSyncope .o. OEHighLinkSyncope .o. OELAdjacentSyncope .o. OEHighStressDecode .o. OEDentalAssimilation .o. OEPreconsonantalDegemination .o. OEEarlyOShortening .o. OEUnstressedFrontingEarly .o. OELateOShortening .o. OEMedUnstressedORaising .o. OEFinalUnstressedOLowering .o. OEUnstressedLongVowelShortening .o. OEUnstressedAEMerger .o. OEMedUnstressedILowering1 .o. OEMedUnstressedILowering .o. OEMedUnstressedULowering .o. OEPrefixIReduction .o. OEWeakTailReduction .o. OEJLossAfterHeavy .o. OEFinalGeminateSimplification .o. OEJStrengtheningAfterFrontDiphthong .o. OEIntervocalicJVocalization .o. OEUnstressedEIContraction .o. OEWeightCleanup .o. OEHLoss .o. OEContraction .o. OERMetathesis .o. OEEpentheticVowel .o. OELateUnstressedAgSuffix .o. OEPalatalFricativeMerger .o. OECjCleanup .o. OEXsMerge .o. OldEnglishOrthography .o. OEWsPalatalGlide .o. OldEnglishRemoveStars .o. OldEnglishSurface;\ndefine AFV4 EnglishProtoInput .o. PGmcGmSimplification .o. PGmcNasalLossBeforeX .o. RootNounNomZLoss .o. PNWGmcUnstressedAiMonophthongization .o. PNWGmcAToUBeforeM .o. PNWGmcLongELowering .o. PWGmcEarlyIApocope .o. PWGmcFinalOrLowering .o. PWGmcCoronalWAssimilation .o. OEWWSimplification .o. PWGmcIjContraction .o. PWGmcJGemination .o. PWGmcSyllabicJ .o. PNWGmcPreconsonantalXLoss .o. EAFLThVoicing .o. PWGmcDentalHardening .o. PWGmcEndinglessAw .o. PNWGmcILowering .o. PNWGmcULowering .o. PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising .o. EAFFinalZDeletion .o. PWGmcUnstressedWordFinalIApocope .o. MonosyllabicFinalZLoss .o. PNWGmcMonosyllabicFinalRLengthening .o. EAFRhotacism .o. PNWGmcMnDissimilation .o. PNWGmcNStemNLoss .o. EAFNasalSpirantLengthening .o. EAFNasalSpirantLoss .o. EAFHiatusWInsertion .o. EAFLongANasalRounding .o. EAFNasalizedLowRounding .o. EAFLongAFronting .o. OEStressFootContext .o. EAFAiMonophthongization .o. OEAwwjResolution .o. OEAuBrightening .o. OEEwLongDiphthong .o. OEJWWSimplification .o. OEJGlideIO .o. OEDiphthongLeveling .o. OEAwLongDiphthong .o. OECompoundLinkingSyncope .o. OEStripSecondaryStress .o. OEInterStressRaising .o. OEWICombinativeUUmlaut .o. PWGmcFinalBareALoss .o. NWGmcInStemNLoss .o. PWGmcSurvivingBimoricOUnrounding .o. EAFBrighteningUnstressed .o. EAFBrightening .o. AFSt .o. AFSkF .o. EAFBrighteningLongFinal .o. OEBreaking .o. OEVelarFricativePalatalization .o. OEARestoration .o. OEHeavySyllableNasalApocope .o. OESecondaryNasalization .o. SieversLawSyncope .o. AFSkL .o. OEVelarPalatalization .o. OEPrefixAReduction .o. OEPostVelarWLoss .o. OEWsPalatalDiphthongization .o. OEIUmlaut .o. OEWLossBeforeI .o. OELatePalatalDiphthong .o. OEJClusterCoalescence .o. OEBackMutation .o. OEWsPalatalUmlaut .o. OEWeakTailNasalLoss .o. OEWeightMarkers .o. OENonHighSyn .o. PGmcBAllophony .o. OEMedLongShort .o. OEHighVowelApocope .o. OEMedialSyncope .o. OEHighLinkSyncope .o. OELAdjacentSyncope .o. OEHighStressDecode .o. OEDentalAssimilation .o. OEPreconsonantalDegemination .o. OEEarlyOShortening .o. OEUnstressedFrontingEarly .o. OELateOShortening .o. OEMedUnstressedORaising .o. OEFinalUnstressedOLowering .o. OEUnstressedLongVowelShortening .o. OEUnstressedAEMerger .o. OEMedUnstressedILowering1 .o. OEMedUnstressedILowering .o. OEMedUnstressedULowering .o. OEPrefixIReduction .o. OEWeakTailReduction .o. OEJLossAfterHeavy .o. OEFinalGeminateSimplification .o. OEJStrengtheningAfterFrontDiphthong .o. OEIntervocalicJVocalization .o. OEUnstressedEIContraction .o. OEWeightCleanup .o. OEHLoss .o. OEContraction .o. OERMetathesis .o. OEEpentheticVowel .o. OELateUnstressedAgSuffix .o. OEPalatalFricativeMerger .o. OECjCleanup .o. OEXsMerge .o. OldEnglishOrthography .o. OEWsPalatalGlide .o. OldEnglishRemoveStars .o. OldEnglishSurface;\ndefine AFV5 EnglishProtoInput .o. PGmcGmSimplification .o. PGmcNasalLossBeforeX .o. RootNounNomZLoss .o. PNWGmcUnstressedAiMonophthongization .o. PNWGmcAToUBeforeM .o. PNWGmcLongELowering .o. PWGmcEarlyIApocope .o. PWGmcFinalOrLowering .o. PWGmcCoronalWAssimilation .o. OEWWSimplification .o. PWGmcIjContraction .o. PWGmcJGemination .o. PWGmcSyllabicJ .o. PNWGmcPreconsonantalXLoss .o. EAFLThVoicing .o. PWGmcDentalHardening .o. PWGmcEndinglessAw .o. PNWGmcILowering .o. PNWGmcULowering .o. PNWGmcStressedMonosyllableORaising .o. PNWGmcFinalLongORaising .o. EAFFinalZDeletion .o. PWGmcUnstressedWordFinalIApocope .o. MonosyllabicFinalZLoss .o. PNWGmcMonosyllabicFinalRLengthening .o. EAFRhotacism .o. PNWGmcMnDissimilation .o. PNWGmcNStemNLoss .o. EAFNasalSpirantLengthening .o. EAFNasalSpirantLoss .o. EAFHiatusWInsertion .o. EAFLongANasalRounding .o. EAFNasalizedLowRounding .o. EAFLongAFronting .o. OEStressFootContext .o. EAFAiMonophthongization .o. OEAwwjResolution .o. OEAuBrightening .o. OEEwLongDiphthong .o. OEJWWSimplification .o. OEJGlideIO .o. OEDiphthongLeveling .o. OEAwLongDiphthong .o. OECompoundLinkingSyncope .o. OEStripSecondaryStress .o. OEInterStressRaising .o. OEWICombinativeUUmlaut .o. PWGmcFinalBareALoss .o. NWGmcInStemNLoss .o. PWGmcSurvivingBimoricOUnrounding .o. EAFBrighteningUnstressed .o. AFHold .o. EAFBrighteningLongFinal .o. OEBreaking .o. OEVelarFricativePalatalization .o. OEARestoration .o. OEHeavySyllableNasalApocope .o. OESecondaryNasalization .o. SieversLawSyncope .o. AFHigh .o. OEVelarPalatalization .o. OEPrefixAReduction .o. OEPostVelarWLoss .o. OEWsPalatalDiphthongization .o. OEIUmlaut .o. OEWLossBeforeI .o. OELatePalatalDiphthong .o. OEJClusterCoalescence .o. OEBackMutation .o. OEWsPalatalUmlaut .o. OEWeakTailNasalLoss .o. OEWeightMarkers .o. OENonHighSyn .o. PGmcBAllophony .o. OEMedLongShort .o. OEHighVowelApocope .o. OEMedialSyncope .o. OEHighLinkSyncope .o. OELAdjacentSyncope .o. OEHighStressDecode .o. OEDentalAssimilation .o. OEPreconsonantalDegemination .o. OEEarlyOShortening .o. OEUnstressedFrontingEarly .o. OELateOShortening .o. OEMedUnstressedORaising .o. OEFinalUnstressedOLowering .o. OEUnstressedLongVowelShortening .o. OEUnstressedAEMerger .o. OEMedUnstressedILowering1 .o. OEMedUnstressedILowering .o. OEMedUnstressedULowering .o. OEPrefixIReduction .o. OEWeakTailReduction .o. OEJLossAfterHeavy .o. OEFinalGeminateSimplification .o. OEJStrengtheningAfterFrontDiphthong .o. OEIntervocalicJVocalization .o. OEUnstressedEIContraction .o. OEWeightCleanup .o. OEHLoss .o. OEContraction .o. OERMetathesis .o. OEEpentheticVowel .o. OELateUnstressedAgSuffix .o. OEPalatalFricativeMerger .o. OECjCleanup .o. OEXsMerge .o. OldEnglishOrthography .o. OEWsPalatalGlide .o. OldEnglishRemoveStars .o. OldEnglishSurface;",
+  "component_checks": [
+    {
+      "component": "EnglishProtoInput"
+    },
+    {
+      "component": "PGmcGmSimplification"
+    },
+    {
+      "component": "PGmcNasalLossBeforeX"
+    },
+    {
+      "component": "RootNounNomZLoss"
+    },
+    {
+      "component": "PNWGmcUnstressedAiMonophthongization"
+    },
+    {
+      "component": "PNWGmcAToUBeforeM"
+    },
+    {
+      "component": "PNWGmcLongELowering"
+    },
+    {
+      "component": "PWGmcEarlyIApocope"
+    },
+    {
+      "component": "PWGmcFinalOrLowering"
+    },
+    {
+      "component": "PWGmcCoronalWAssimilation"
+    },
+    {
+      "component": "OEWWSimplification"
+    },
+    {
+      "component": "PWGmcIjContraction"
+    },
+    {
+      "component": "PWGmcJGemination"
+    },
+    {
+      "component": "PWGmcSyllabicJ"
+    },
+    {
+      "component": "PNWGmcPreconsonantalXLoss"
+    },
+    {
+      "component": "EAFLThVoicing"
+    },
+    {
+      "component": "PWGmcDentalHardening"
+    },
+    {
+      "component": "PWGmcEndinglessAw"
+    },
+    {
+      "component": "PNWGmcILowering"
+    },
+    {
+      "component": "PNWGmcULowering"
+    },
+    {
+      "component": "PNWGmcStressedMonosyllableORaising"
+    },
+    {
+      "component": "PNWGmcFinalLongORaising"
+    },
+    {
+      "component": "EAFFinalZDeletion"
+    },
+    {
+      "component": "PWGmcUnstressedWordFinalIApocope"
+    },
+    {
+      "component": "MonosyllabicFinalZLoss"
+    },
+    {
+      "component": "PNWGmcMonosyllabicFinalRLengthening"
+    },
+    {
+      "component": "EAFRhotacism"
+    },
+    {
+      "component": "PNWGmcMnDissimilation"
+    },
+    {
+      "component": "PNWGmcNStemNLoss"
+    },
+    {
+      "component": "EAFNasalSpirantLengthening"
+    },
+    {
+      "component": "EAFNasalSpirantLoss"
+    },
+    {
+      "component": "EAFHiatusWInsertion"
+    },
+    {
+      "component": "EAFLongANasalRounding"
+    },
+    {
+      "component": "EAFNasalizedLowRounding"
+    },
+    {
+      "component": "EAFLongAFronting"
+    },
+    {
+      "component": "OEStressFootContext"
+    },
+    {
+      "component": "EAFAiMonophthongization"
+    },
+    {
+      "component": "OEAwwjResolution"
+    },
+    {
+      "component": "OEAuBrightening"
+    },
+    {
+      "component": "OEEwLongDiphthong"
+    },
+    {
+      "component": "OEJWWSimplification"
+    },
+    {
+      "component": "OEJGlideIO"
+    },
+    {
+      "component": "OEDiphthongLeveling"
+    },
+    {
+      "component": "OEAwLongDiphthong"
+    },
+    {
+      "component": "OECompoundLinkingSyncope"
+    },
+    {
+      "component": "OEStripSecondaryStress"
+    },
+    {
+      "component": "OEInterStressRaising"
+    },
+    {
+      "component": "OEWICombinativeUUmlaut"
+    },
+    {
+      "component": "PWGmcFinalBareALoss"
+    },
+    {
+      "component": "NWGmcInStemNLoss"
+    },
+    {
+      "component": "PWGmcSurvivingBimoricOUnrounding"
+    },
+    {
+      "component": "EAFBrighteningUnstressed"
+    },
+    {
+      "component": "EAFBrightening"
+    },
+    {
+      "component": "EAFBrighteningLongFinal"
+    },
+    {
+      "component": "OEBreaking"
+    },
+    {
+      "component": "OEVelarFricativePalatalization"
+    },
+    {
+      "component": "OEARestoration"
+    },
+    {
+      "component": "OEHeavySyllableNasalApocope"
+    },
+    {
+      "component": "OESecondaryNasalization"
+    },
+    {
+      "component": "SieversLawSyncope"
+    },
+    {
+      "component": "OESkPalatalization"
+    },
+    {
+      "component": "OEVelarPalatalization"
+    },
+    {
+      "component": "OEPrefixAReduction"
+    },
+    {
+      "component": "OEPostVelarWLoss"
+    },
+    {
+      "component": "OEWsPalatalDiphthongization"
+    },
+    {
+      "component": "OEIUmlaut"
+    },
+    {
+      "component": "OEWLossBeforeI"
+    },
+    {
+      "component": "OELatePalatalDiphthong"
+    },
+    {
+      "component": "OEJClusterCoalescence"
+    },
+    {
+      "component": "OEBackMutation"
+    },
+    {
+      "component": "OEWsPalatalUmlaut"
+    },
+    {
+      "component": "OEWeakTailNasalLoss"
+    },
+    {
+      "component": "OEWeightMarkers"
+    },
+    {
+      "component": "OENonHighSyn"
+    },
+    {
+      "component": "PGmcBAllophony"
+    },
+    {
+      "component": "OEMedLongShort"
+    },
+    {
+      "component": "OEHighVowelApocope"
+    },
+    {
+      "component": "OEMedialSyncope"
+    },
+    {
+      "component": "OEHighLinkSyncope"
+    },
+    {
+      "component": "OELAdjacentSyncope"
+    },
+    {
+      "component": "OEHighStressDecode"
+    },
+    {
+      "component": "OEDentalAssimilation"
+    },
+    {
+      "component": "OEPreconsonantalDegemination"
+    },
+    {
+      "component": "OEEarlyOShortening"
+    },
+    {
+      "component": "OEUnstressedFrontingEarly"
+    },
+    {
+      "component": "OELateOShortening"
+    },
+    {
+      "component": "OEMedUnstressedORaising"
+    },
+    {
+      "component": "OEFinalUnstressedOLowering"
+    },
+    {
+      "component": "OEUnstressedLongVowelShortening"
+    },
+    {
+      "component": "OEUnstressedAEMerger"
+    },
+    {
+      "component": "OEMedUnstressedILowering1"
+    },
+    {
+      "component": "OEMedUnstressedILowering"
+    },
+    {
+      "component": "OEMedUnstressedULowering"
+    },
+    {
+      "component": "OEPrefixIReduction"
+    },
+    {
+      "component": "OEWeakTailReduction"
+    },
+    {
+      "component": "OEJLossAfterHeavy"
+    },
+    {
+      "component": "OEFinalGeminateSimplification"
+    },
+    {
+      "component": "OEJStrengtheningAfterFrontDiphthong"
+    },
+    {
+      "component": "OEIntervocalicJVocalization"
+    },
+    {
+      "component": "OEUnstressedEIContraction"
+    },
+    {
+      "component": "OEWeightCleanup"
+    },
+    {
+      "component": "OEHLoss"
+    },
+    {
+      "component": "OEContraction"
+    },
+    {
+      "component": "OERMetathesis"
+    },
+    {
+      "component": "OEEpentheticVowel"
+    },
+    {
+      "component": "OELateUnstressedAgSuffix"
+    },
+    {
+      "component": "OEPalatalFricativeMerger"
+    },
+    {
+      "component": "OECjCleanup"
+    },
+    {
+      "component": "OEXsMerge"
+    },
+    {
+      "component": "OldEnglishOrthography"
+    },
+    {
+      "component": "OEWsPalatalGlide"
+    },
+    {
+      "component": "OldEnglishRemoveStars"
+    },
+    {
+      "component": "OldEnglishSurface"
+    },
+    {
+      "component": "AFHold"
+    },
+    {
+      "component": "AFSkF"
+    },
+    {
+      "component": "AFSkL"
+    },
+    {
+      "component": "AFRet"
+    },
+    {
+      "component": "AFSt"
+    },
+    {
+      "component": "AFHigh"
+    },
+    {
+      "component": "AFV0"
+    },
+    {
+      "component": "AFV1"
+    },
+    {
+      "component": "AFV2"
+    },
+    {
+      "component": "AFV3"
+    },
+    {
+      "component": "AFV4"
+    },
+    {
+      "component": "AFV5"
+    }
+  ]
+}
