@@ -19,7 +19,8 @@ from check_bibliography_sanity import parse_entries
 from historical_sc035 import historical_runtime
 from test_sc037_adjudication import (
     INTERVENTION_ADDED, INTERVENTION_CHANGED, CONSOLIDATION_ADDED,
-    CONSOLIDATION_CHANGED, FINAL_Z_QUANTITY_CHANGED, assert_intervention_scope,
+    CONSOLIDATION_CHANGED, FINAL_Z_QUANTITY_CHANGED, FINAL_NASAL_CHANGED,
+    assert_intervention_scope,
 )
 
 
@@ -98,7 +99,8 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
                        "OldEnglishOrthography",
                        # Independently source-bound by test_sc037_adjudication.py.
                        "OECompoundLinkingSyncope"} | (
-                           (INTERVENTION_CHANGED | CONSOLIDATION_CHANGED | FINAL_Z_QUANTITY_CHANGED) & {
+                           (INTERVENTION_CHANGED | CONSOLIDATION_CHANGED |
+                            FINAL_Z_QUANTITY_CHANGED | FINAL_NASAL_CHANGED) & {
                                stage.foma_identifier for stage in oe_pipeline.named_stages()
                                if stage.foma_identifier in previous})
     assert current["OEWsPalatalDiphthongization"].startswith("FootCtx(")
@@ -199,5 +201,5 @@ def test_fresh_adopted_cascade_and_phonological_components(isolated_definitions)
     assert controls["ae_merger"]["outputs"] == [
         ["*ᶠ*b*e*t*á"], ["*b*æ*t"], ["*ᶠ*ʝ*i*s*t*ḯ*g*a"]]
     assert controls["i_lowering"]["outputs"] == [
-        ["*ʝ*e*s*t*ḯ*g*a"], ["*b*e*g*í*n*n*a*n"], ["*n*e*t*á"],
+        ["*ᶠ*ʝ*e*s*t*ḯ*g*a"], ["*ᶠ*b*e*g*í*n*n*a*n"], ["*ᶠ*n*e*t*á"],
         ["*b*í*n*d*a*n"], ["*n*i"]]

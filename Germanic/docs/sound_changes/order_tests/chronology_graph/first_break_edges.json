@@ -284,7 +284,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC042-pwgmc-surviving-bimoric-o-unrounding.md",
       "card_type": "one_sided_chronology",
       "has_reciprocal_boundary": "no",
-      "short_summary": "One live application; z-loss feeding and technical final-support dependency, not stressed SC043."
+      "short_summary": "Twenty-two final-bimoric applications; rest witnesses z exposure, final support remains technical, not ordinary stressed SC043."
     },
     {
       "change_id": "SC043",
@@ -584,7 +584,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC073-oe-unstressed-ae-merger.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary reciprocates SC072 later and is broad; the SC085 toe displacement is only a computational boundary of the current rules, not independently demonstrated historical chronology."
+      "short_summary": "SC072 earlier evidence is retained, not remeasured. At reviewed candidate 4b232d22, separately moving SC073 after SC085 and SC085 before SC073 each gives toe tāæ versus identity tā: technical_computational / boundary_observation only."
     },
     {
       "change_id": "SC074",
@@ -684,7 +684,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC085-oe-h-loss.md",
       "card_type": "reciprocal_or_near_reciprocal",
       "has_reciprocal_boundary": "yes",
-      "short_summary": "The SC073 toe displacement is only a current-rule computational boundary; the separate reciprocal SC086 relation retains independently demonstrated loss-before-contraction evidence."
+      "short_summary": "Reviewed candidate 4b232d22 independently reproduces toe tāæ in each SC073/SC085 displacement versus identity tā, a computational boundary only; separate SC085-before-SC086 historical evidence is unchanged."
     },
     {
       "change_id": "SC086",
@@ -1562,7 +1562,7 @@
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Current displacement before z-loss changes only rest to rasta: protected o becomes final too late. Ringe-Taylor58-60/299 supports the final-vowel/genitive account independently; source-conditional exposure chronology, not adjacency or a universal date from one word. See sc042-adjudication.md."
+      "notes": "Rest still demonstrates z exposure. The candidate displacement also crosses SC023 nasal exposure and changes flask/nightmare; those are not additional witnesses specifically for z-loss. Ringe-Taylor58-60/299 independently supports the source-conditional genitive account, not adjacency or a universal date. See sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC042",
@@ -1571,12 +1571,12 @@
       "direction_basis": "later_boundary",
       "evidence_basis": "technical",
       "witness_role": "feeding",
-      "representative_lexemes": "rest",
-      "representative_forms": "Current SC042-after-SC108 displacement: PGmc `*rástōz` yields `rasta` rather than expected OE `ræste`.",
+      "representative_lexemes": "rest; nightmare; flask",
+      "representative_forms": "Candidate SC042-after-SC108 displacement changes21 finals; rest becomes rasta, nightmare mara and flask flasca.",
       "strength": "tight_local",
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "RG09_SC042_SC108",
-      "notes": "SC042 supplies long a to final-vowel support; the later displacement misses final fronting, leaving a back-vowel restoration trigger. Moving SC042 past stressed SC043 but before SC108 preserves all394 outputs. Technical feeding, not a local date for stressed fronting; see sc042-adjudication.md."
+      "notes": "Final merger supplies long a to SC108; late application misses final fronting. Moving it after stressed SC043 but before SC108 preserves all394 outputs. Technical feeding, not independent historical dating of support or stressed fronting; see sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC108",
@@ -1585,12 +1585,12 @@
       "direction_basis": "earlier_boundary",
       "evidence_basis": "technical",
       "witness_role": "feeding",
-      "representative_lexemes": "rest",
-      "representative_forms": "Current SC042-after-SC108 displacement gives `rasta` rather than expected OE `ræste`; no new early-SC108 experiment is claimed.",
+      "representative_lexemes": "rest; nightmare; flask",
+      "representative_forms": "Same candidate SC042-after-SC108 displacement changes21 finals; no separate early-SC108 trial is claimed.",
       "strength": "tight_local",
       "interpretation_category": "component_reclassified",
       "reciprocal_group_id": "RG09_SC042_SC108",
-      "notes": "Reverse-endpoint representation of the same SC042-before-SC108 technical feeding constraint, not another historical edge or independent reciprocal measurement. Original composite card remains archived; see sc042-adjudication.md."
+      "notes": "Reverse representation of the same technical constraint, not another historical edge or independent reciprocal measurement. Original composite and oral-only records remain archived; see sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC043",
@@ -1809,12 +1809,12 @@
       "direction_basis": "earlier_boundary",
       "evidence_basis": "independently_demonstrated",
       "witness_role": "displacement_witness",
-      "representative_lexemes": "flask; wash",
-      "representative_forms": "PGmc `*fláskōn` yields expected OE `flasce`, but the earlier-shifted variant yields `flæsċe`; PGmc `*wáskaną` likewise yields `wæsċan` instead of expected `wascan`",
+      "representative_lexemes": "wash",
+      "representative_forms": "Candidate displacement before restoration changes only wash, wascan to wæsċan; flask already gives flæsċe in either order.",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "-"
+      "notes": "Original two-witness experiment remains on the card. The source-backed levelled flask nominative is not a current regular restoration witness; retain wash and the separate upper-boundary evidence. See sc042-final-nasal-candidate.md."
     },
     {
       "source_change_id": "SC051",
@@ -2384,11 +2384,11 @@
       "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "toe",
-      "representative_forms": "PGmc `*táixōn` yields expected OE `tā`, but the later-shifted variant yields `tāæ`",
+      "representative_forms": "At reviewed candidate 4b232d22, identity *tāçæ -> *tāçe -> *tāe -> *tā -> tā; moving SC073 immediately after SC085 gives *tāçæ -> *tāæ, unchanged through merger/contraction, final tāæ.",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Measured toe displacement retained as a computational boundary of the current merger/loss/contraction rules, not independently demonstrated historical chronology. If Corpus thoae preserves distinct unstressed æ, clay instead supports loss before merger in that form; its spelling remains unresolved. See clay-fringe-chronology-followup.md."
+      "notes": "Fresh toe-only full-composition and component replay at 4b232d22ad3d55ecf0eb2111b736dcf4349a4bde; no new all-corpus displacement count or safe window. Earlier SC073-later tāæ published at 25ca025f (source SHA256 11ca1917c5f257b37dddc005709501f64f128bd1f6f3946844aac4dcb2766173) remains historical. This is a computational boundary, not historical chronology. Corpus thoae conditionally supports loss before merger if ae distinguishes unstressed æ/e. See sc073-085-candidate-boundary-recheck.md."
     },
     {
       "source_change_id": "SC074",
@@ -2650,11 +2650,11 @@
       "evidence_basis": "boundary_observation",
       "witness_role": "displacement_witness",
       "representative_lexemes": "toe",
-      "representative_forms": "PGmc `*táixōn` yields expected OE `tā`, but the earlier-shifted variant yields `tāæ`",
+      "representative_forms": "At reviewed candidate 4b232d22, identity *tāçæ -> *tāçe -> *tāe -> *tā -> tā; moving SC085 immediately before SC073 gives *tāçæ -> *tāæ, unchanged through merger/contraction, final tāæ.",
       "strength": "one_sided",
       "interpretation_category": "one_sided_chronology",
       "reciprocal_group_id": "",
-      "notes": "Measured toe displacement retained as the reciprocal computational boundary, not a historical merger-before-loss constraint. Corpus thoae has the conditional interpretation recorded with SC073; the separately supported SC085-before-SC086 relation is unchanged. See clay-fringe-chronology-followup.md."
+      "notes": "Separately measured toe-only full-composition and component replay at 4b232d22ad3d55ecf0eb2111b736dcf4349a4bde, not an inferred reciprocal result. Earlier SC085-earlier tāæ published at 196b8f6b (source SHA256 11ca1917c5f257b37dddc005709501f64f128bd1f6f3946844aac4dcb2766173) remains historical. No historical merger-before-loss constraint is adopted. Corpus thoae remains conditional; both separately supported SC085/SC086 records are unchanged. See sc073-085-candidate-boundary-recheck.md."
     },
     {
       "source_change_id": "SC085",

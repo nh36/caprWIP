@@ -1,0 +1,61 @@
+{
+  "reference_head": "4b232d22ad3d55ecf0eb2111b736dcf4349a4bde",
+  "fst_sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539",
+  "summary": {
+    "total_lexemes": 394,
+    "accepted": 394,
+    "rejected": 0,
+    "matched": 385,
+    "mismatched": 9,
+    "ambiguous_outputs": 0,
+    "outputs_sha256": "3fd12209d595843df3f4f56e7d667293ba56611ffc7c96f2aec19eef7b06325a",
+    "lexical_outputs_sha256": "3a08bf273fb89edf434fd86729215a6877f8e2383a512a13461ac55f80e597b5",
+    "legacy_subset_count": 380,
+    "legacy_subset_sha256": "6e098bbd407f42f17c9aac05fcf164f5bf91ab1ad29730d362a83f9fef068960"
+  },
+  "changed_records": [],
+  "nightmare": [
+    {
+      "stage": "PNWGmcNStemNLoss",
+      "outputs": [
+        "*m*á*r*ǭ"
+      ]
+    },
+    {
+      "stage": "PWGmcSurvivingBimoricOUnrounding",
+      "outputs": [
+        "*m*á*r*ā"
+      ]
+    },
+    {
+      "stage": "EAFBrightening",
+      "outputs": [
+        "*m*æ*r*ā"
+      ]
+    },
+    {
+      "stage": "EAFBrighteningLongFinal",
+      "outputs": [
+        "*m*æ*r*ǣ"
+      ]
+    },
+    {
+      "stage": "OEARestoration",
+      "outputs": [
+        "*m*æ*r*ǣ"
+      ]
+    },
+    {
+      "stage": "OEUnstressedAEMerger",
+      "outputs": [
+        "*m*æ*r*e"
+      ]
+    },
+    {
+      "stage": "OldEnglishSurface",
+      "outputs": [
+        "mære"
+      ]
+    }
+  ]
+}

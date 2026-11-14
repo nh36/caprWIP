@@ -405,11 +405,20 @@ class ControlledCellPropagationTests(RunHarness):
     def test_declared_sidecars_and_shared_bibliography_do_not_admit_other_docs(self):
         for relative in (
                 "docs/refs.bib", "Germanic/data/entry_stage_metadata.tsv",
-                "Germanic/docs/lexeme_reports/model_entries/1-fixture.source_ledger.md"):
+                "Germanic/docs/lexeme_reports/model_entries/1-fixture.source_ledger.md",
+                "Germanic/docs/assembly/book_prose/regular_all_01/1-fixture.book.md"):
             self.assertEqual(ag.propagation_path_kind(
                 self.tmp / relative, generated=set()), "SOURCE")
         self.assertEqual(ag.propagation_path_kind(
             self.tmp / "docs/unowned.md", generated=set()), "UNKNOWN")
+        for relative in (
+                "Germanic/docs/assembly/book_prose/unowned/1-fixture.book.md",
+                "Germanic/docs/assembly/book_prose/regular_all_01/measurements.tsv"):
+            self.assertEqual(ag.propagation_path_kind(
+                self.tmp / relative, generated=set()), "UNKNOWN")
+        published = self.tmp / "Germanic/docs/assembly/book_prose/regular_all_01/1-fixture.book.md"
+        self.assertEqual(ag.propagation_path_kind(
+            published, generated={published}), "GENERATED")
 
 
 class ResumeAndInvalidationTests(RunHarness):

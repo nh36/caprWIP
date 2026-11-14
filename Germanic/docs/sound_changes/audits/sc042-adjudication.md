@@ -1,5 +1,14 @@
 # SC042: West Germanic unrounding and the surviving oral-final fragment
 
+Current candidate disposition, 13 November 2026:
+[the source-supported final-nasal extension](sc042-final-nasal-candidate.md)
+supersedes the later DEFER for the measured package. The dated original
+adjudication and all experiments below are retained. Current SC042 includes
+oral and nasal final bimoric vowels, with22 applications; no input or target
+changes. Its exact output-only migration resolves nightmare and discloses
+flask. Complete source criticism, ablations, controls and remaining limits
+are recorded in that template-shaped candidate memorandum.
+
 ## Identity
 
 - SC042; executable identifier `PWGmcSurvivingBimoricOUnrounding`, not a stage argument.

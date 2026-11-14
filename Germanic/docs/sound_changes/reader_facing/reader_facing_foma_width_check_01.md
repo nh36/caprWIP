@@ -48,7 +48,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 65 | no |
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 5 | 67 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 15 | 32 | no |
-| 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 15 | 94 | yes |
+| 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 15 | 101 | yes |
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 40 | 27 | no |
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 48 | 69 | no |
 | 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 24 | 37 | no |
@@ -64,7 +64,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 052-velar-palatalization.md | SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal} | 49 | 61 | no |
 | 052-velar-palatalization.md | SC052. K articulation and eventual reflex (`OEVelarPalatalizationKFront`) {#rule-OEVelarPalatalizationKFront} | 71 | 58 | no |
 | 052-velar-palatalization.md | SC052. Retained stop paths (`OEVelarPalatalizationStops`) {#rule-OEVelarPalatalizationStops} | 103 | 75 | no |
-| 052-velar-palatalization.md | SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization} | 132 | 54 | no |
+| 052-velar-palatalization.md | SC052. Combined articulation (`OEVelarPalatalization`) {#rule-OEVelarPalatalization} | 142 | 54 | no |
 | 053-post-velar-w-loss.md | SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | 5 | 29 | no |
 | 054-w-loss-before-final-i.md | SC054. Noninitial \emph{*w}-loss before unstressed \emph{*i/ī} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | 5 | 71 | no |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 5 | 67 | no |
@@ -97,7 +97,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 081-j-strengthening.md | SC081. Strengthening of \emph{*j} after front diphthongs (`OEJStrengtheningAfterFrontDiphthong`) {#rule-OEJStrengtheningAfterFrontDiphthong} | 22 | 72 | no |
 | 082-intervocalic-j-vocalization.md | SC082. Bounded inherited-j normalization (`OEIntervocalicJVocalization`) {#rule-OEIntervocalicJVocalization} | 5 | 68 | no |
 | 083-unstressed-ei-contraction.md | SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction} | 7 | 92 | yes |
-| 085-h-loss.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | 48 | 56 | no |
+| 085-h-loss.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | 49 | 63 | no |
 | 086-contraction.md | SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | 7 | 24 | no |
 | 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | 76 | 63 | no |
 | 089-late-unstressed-ag-suffix.md | SC089. Late suffix consumer (`OELateUnstressedAgSuffix`) {#rule-OELateUnstressedAgSuffix} | 14 | 91 | yes |
@@ -137,7 +137,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ### 042-surviving-bimoric-o-unrounding.md:15 — SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding}
 
-- `94` chars — `    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.`
+- `101` chars — `    [{*ō}|{*ǭ}] -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.`
 
 ### 055-i-umlaut.md:50 — SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
 

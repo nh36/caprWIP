@@ -105,7 +105,13 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
                 self.assertEqual((before["counterpart"], before["proto"], before["protoform"]),
                                  ("mare", "*márōn", "*márōn"))
                 before = dict(before, counterpart="mære",
-                              trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED")
+                              trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS")
+            if row_id == "2016":
+                self.assertEqual(before["counterpart"], "flasce")
+                self.assertEqual(before["trace_match_basis"],
+                                 "lexical item + PROTOFORM + EXPECTED + OUTPUTS")
+                before = dict(before,
+                              trace_match_basis="lexical item + PROTOFORM + EXPECTED")
             if row_id == "2053":
                 before = dict(
                     before, counterpart="hamer", protoform="*xámaraz",

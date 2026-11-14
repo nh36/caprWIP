@@ -57,7 +57,7 @@ SC036	OEInterStressRaising	historical_sound_change	Old English	OE weak medial vo
 SC039	OEWICombinativeUUmlaut	historical_sound_change	Old English	OE WI Combinative U Umlaut	oe	english_specific	B	adjudicated	DEFER	48	46
 SC041	PWGmcFinalBareALoss	historical_sound_change	Old English	PWGmc Final Bare A Loss	pwgmc	pan_wgmc	B	adjudicated	REFORMULATE/RETAIN	49	47
 SC064	NWGmcInStemNLoss	historical_sound_change	Pre-Old English	Early final n-loss after unstressed ī	preoe	english_specific	A	adjudicated	REFORMULATE/REORDER	50	48
-SC042	PWGmcSurvivingBimoricOUnrounding	historical_sound_change	Old English	PWGmc Surviving Bimoric O Unrounding	pwgmc	pan_wgmc	B	adjudicated	DEFER	51	49
+SC042	PWGmcSurvivingBimoricOUnrounding	historical_sound_change	Old English	PWGmc Surviving Bimoric O Unrounding	pwgmc	pan_wgmc	B	adjudicated	REFORMULATE/RETAIN	51	49
 SC107	EAFBrighteningUnstressed	support_stage	Old English	Retained early unstressed fronting component				unadjudicated		52	50
 SC043	EAFBrightening	historical_sound_change	Old English	Ordinary English stressed a-fronting	preoe	english_specific	A	adjudicated	REFORMULATE/SPLIT	53	51
 SC108	EAFBrighteningLongFinal	support_stage	Old English	Retained final-vowel quantity component				unadjudicated		54	52
@@ -108,7 +108,7 @@ SC081	OEJStrengtheningAfterFrontDiphthong	historical_sound_change	Old English	OE
 SC082	OEIntervocalicJVocalization	historical_sound_change	Old English	Bounded inherited-j normalization	oe	english_specific	B	adjudicated	RESTRICT/REFORMULATE	99	97
 SC083	OEUnstressedEIContraction	historical_sound_change	Old English	OE Unstressed EI Contraction	oe	english_specific	A	unadjudicated		100	98
 SC084	OEWeightCleanup	technical_marker	Old English	OE Weight Cleanup				unadjudicated		101	99
-SC085	OEHLoss	historical_sound_change	Old English	OE H Loss	oe	english_specific	A	unadjudicated		102	100
+SC085	OEHLoss	historical_sound_change	Old English	OE H Loss	oe	english_specific	A	adjudicated	REFORMULATE/RESTRICT	102	100
 SC086	OEContraction	historical_sound_change	Old English	OE Contraction	oe	english_specific	A	unadjudicated		103	101
 SC087	OERMetathesis	historical_sound_change	Old English	OE R Metathesis	oe	english_specific	A	adjudicated	RETAIN	104	102
 SC088	OEEpentheticVowel	historical_sound_change	Old English	OE Epenthetic Vowel				unadjudicated		105	103

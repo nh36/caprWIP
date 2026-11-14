@@ -1,5 +1,14 @@
 # SC051 OE Sk Palatalization — chronology evidence card
 
+Current candidate, 13 November 2026: the two-word original lower-boundary
+measurement below is preserved, not repeated as current evidence.
+With the early final merger, flask gives flæsċe in either order; its
+attested back-root nominative involves independently sourced levelling.
+The fresh displacement before restoration changes only wash, wascan to
+wæsċan. Retain the wash boundary and the separate upper-boundary evidence;
+do not infer historical regularity from flask's former executable match.
+See [the candidate memorandum](../../audits/sc042-final-nasal-candidate.md).
+
 ## Position at experiment time
 - order_at_experiment_time: `51`
 - rule_name: `OESkPalatalization`

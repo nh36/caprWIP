@@ -15,7 +15,7 @@ English Proto Input: *nḗdrōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *nādrōn<br>PNWGmc N Stem N Loss: *nādrǭ<br>EAF Long A Fronting: *nǣdrǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *nǣdræ<br>OE Unstressed AE Merger: *nǣdre |
+| **Northwest and West Germanic**<br>PNWGmc Long E Lowering: *nādrōn<br>PNWGmc N Stem N Loss: *nādrǭ<br>EAF Long A Fronting: *nǣdrǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *nǣdrā<br>EAF Brightening Long Final: *nǣdrǣ<br>OE Unstressed Long Vowel Shortening: *nǣdræ<br>OE Unstressed AE Merger: *nǣdre |
 
 
 
@@ -1340,7 +1340,7 @@ English Proto Input: *érθōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *érθǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *éorθǭ<br>OE Unstressed Long Vowel Shortening: *éorθæ<br>OE Unstressed AE Merger: *éorθe |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *érθǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *érθā<br>EAF Brightening Long Final: *érθǣ<br>OE Breaking: *éorθǣ<br>OE Unstressed Long Vowel Shortening: *éorθæ<br>OE Unstressed AE Merger: *éorθe |
 
 
 
@@ -1542,7 +1542,7 @@ English Proto Input: *fūliθǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *fȳliθǭ<br>OE High Vowel Apocope: *fȳlθǭ<br>OE Unstressed Long Vowel Shortening: *fȳlθæ<br>OE Unstressed AE Merger: *fȳlθe |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *fūliθā<br>EAF Brightening Long Final: *fūliθǣ<br>OE I Umlaut: *fȳliθǣ<br>OE High Vowel Apocope: *fȳlθǣ<br>OE Unstressed Long Vowel Shortening: *fȳlθæ<br>OE Unstressed AE Merger: *fȳlθe |
 
 
 
@@ -2604,7 +2604,7 @@ English Proto Input: *xértōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *xértǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *xéortǭ<br>OE Velar Fricative Palatalization: *çéortǭ<br>OE Unstressed Long Vowel Shortening: *çéortæ<br>OE Unstressed AE Merger: *çéorte |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *xértǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *xértā<br>EAF Brightening Long Final: *xértǣ<br>OE Breaking: *xéortǣ<br>OE Velar Fricative Palatalization: *çéortǣ<br>OE Unstressed Long Vowel Shortening: *çéortæ<br>OE Unstressed AE Merger: *çéorte |
 
 
 
@@ -3482,7 +3482,7 @@ English Proto Input: *lḯnōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *lḯnǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *lḯnæ<br>OE Unstressed AE Merger: *lḯne |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *lḯnǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *lḯnā<br>EAF Brightening Long Final: *lḯnǣ<br>OE Unstressed Long Vowel Shortening: *lḯnæ<br>OE Unstressed AE Merger: *lḯne |
 
 
 
@@ -3502,7 +3502,7 @@ English Proto Input: *lḯstōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *lḯstǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *lḯstæ<br>OE Unstressed AE Merger: *lḯste |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *lḯstǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *lḯstā<br>EAF Brightening Long Final: *lḯstǣ<br>OE Unstressed Long Vowel Shortening: *lḯstæ<br>OE Unstressed AE Merger: *lḯste |
 
 
 
@@ -4474,7 +4474,7 @@ English Proto Input: *nátilōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *nátilǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *nætilǭ<br>OE I Umlaut: *netilǭ<br>OE L Adjacent Syncope: *netlǭ<br>OE Unstressed Long Vowel Shortening: *netlæ<br>OE Unstressed AE Merger: *netle |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *nátilǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *nátilā<br>EAF Brightening: *nætilā<br>EAF Brightening Long Final: *nætilǣ<br>OE I Umlaut: *netilǣ<br>OE L Adjacent Syncope: *netlǣ<br>OE Unstressed Long Vowel Shortening: *netlæ<br>OE Unstressed AE Merger: *netle |
 
 
 
@@ -4484,7 +4484,7 @@ Outcome: netle
 # nightmare
 PROTO: *márōn
 EXPECTED: mære
-OUTPUTS: mare
+OUTPUTS: mære
 
 
 
@@ -4494,13 +4494,13 @@ English Proto Input: *márōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *márǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *mærǭ<br>OE A Restoration: *marǭ<br>OE Unstressed Long Vowel Shortening: *maræ<br>OE Unstressed AE Merger: *mare |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *márǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *márā<br>EAF Brightening: *mærā<br>EAF Brightening Long Final: *mærǣ<br>OE Unstressed Long Vowel Shortening: *mæræ<br>OE Unstressed AE Merger: *mære |
 
 
 
 ### Orthography & surface
 
-Outcome: mare
+Outcome: mære
 # nine
 PROTO: *nígun
 EXPECTED: nigon
@@ -5384,7 +5384,7 @@ English Proto Input: *sḯdōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *sḯdǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *sḯdæ<br>OE Unstressed AE Merger: *sḯde |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *sḯdǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *sḯdā<br>EAF Brightening Long Final: *sḯdǣ<br>OE Unstressed Long Vowel Shortening: *sḯdæ<br>OE Unstressed AE Merger: *sḯde |
 
 
 
@@ -5625,7 +5625,7 @@ English Proto Input: *sáiwalǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalǭ | **Old English**<br>EAF Brightening Unstressed: *sāwælǭ<br>OE A Restoration: *sāwalǭ<br>OE Non High Syn: *sāwlǭ<br>OE Unstressed Long Vowel Shortening: *sāwlæ<br>OE Unstressed AE Merger: *sāwle |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *sāwalǭ | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *sāwalā<br>EAF Brightening Unstressed: *sāwælā<br>EAF Brightening Long Final: *sāwælǣ<br>OE Non High Syn: *sāwlǣ<br>OE Unstressed Long Vowel Shortening: *sāwlæ<br>OE Unstressed AE Merger: *sāwle |
 
 
 
@@ -5829,7 +5829,7 @@ English Proto Input: *spénnilǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE I Umlaut: *spinnilǭ<br>OE High Vowel Apocope: *spinnlǭ<br>OE Preconsonantal Degemination: *spinlǭ<br>OE Unstressed Long Vowel Shortening: *spinlæ<br>OE Unstressed AE Merger: *spinle |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *spénnilā<br>EAF Brightening Long Final: *spénnilǣ<br>OE I Umlaut: *spinnilǣ<br>OE High Vowel Apocope: *spinnlǣ<br>OE Preconsonantal Degemination: *spinlǣ<br>OE Unstressed Long Vowel Shortening: *spinlæ<br>OE Unstressed AE Merger: *spinle |
 
 
 
@@ -6270,7 +6270,7 @@ English Proto Input: *súnnōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *súnnǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *súnnæ<br>OE Unstressed AE Merger: *súnne |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *súnnǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *súnnā<br>EAF Brightening Long Final: *súnnǣ<br>OE Unstressed Long Vowel Shortening: *súnnæ<br>OE Unstressed AE Merger: *súnne |
 
 
 
@@ -6330,7 +6330,7 @@ English Proto Input: *swálwōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *swálwǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *swælwǭ<br>OE Breaking: *swealwǭ<br>OE Unstressed Long Vowel Shortening: *swealwæ<br>OE Unstressed AE Merger: *swealwe |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *swálwǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *swálwā<br>EAF Brightening: *swælwā<br>EAF Brightening Long Final: *swælwǣ<br>OE Breaking: *swealwǣ<br>OE Unstressed Long Vowel Shortening: *swealwæ<br>OE Unstressed AE Merger: *swealwe |
 
 
 
@@ -6791,7 +6791,7 @@ English Proto Input: *táixōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *táixǭ<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *tāxǭ | **Old English**<br>OE Unstressed Long Vowel Shortening: *tāxæ<br>OE Unstressed AE Merger: *tāxe<br>OE H Loss: *tāe<br>OE Contraction: *tā |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *táixǭ<br><br>**Early Anglo-Frisian**<br>EAF Ai Monophthongization: *tāxǭ | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *tāxā<br>EAF Brightening Long Final: *tāxǣ<br>OE Velar Fricative Palatalization: *tāçǣ<br>OE Unstressed Long Vowel Shortening: *tāçæ<br>OE Unstressed AE Merger: *tāçe<br>OE H Loss: *tāe<br>OE Contraction: *tā |
 
 
 
@@ -6851,7 +6851,7 @@ English Proto Input: *túngōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *túngǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *túngæ<br>OE Unstressed AE Merger: *túnge |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *túngǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *túngā<br>EAF Brightening Long Final: *túngǣ<br>OE Unstressed Long Vowel Shortening: *túngæ<br>OE Unstressed AE Merger: *túnge |
 
 
 
@@ -7012,7 +7012,7 @@ English Proto Input: *wártōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *wártǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *wærtǭ<br>OE Breaking: *weartǭ<br>OE Unstressed Long Vowel Shortening: *weartæ<br>OE Unstressed AE Merger: *wearte |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *wártǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *wártā<br>EAF Brightening: *wærtā<br>EAF Brightening Long Final: *wærtǣ<br>OE Breaking: *weartǣ<br>OE Unstressed Long Vowel Shortening: *weartæ<br>OE Unstressed AE Merger: *wearte |
 
 
 
@@ -7133,7 +7133,7 @@ English Proto Input: *wéslōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *wéslǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *wéslæ<br>OE Unstressed AE Merger: *wésle |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *wéslǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *wéslā<br>EAF Brightening Long Final: *wéslǣ<br>OE Unstressed Long Vowel Shortening: *wéslæ<br>OE Unstressed AE Merger: *wésle |
 
 
 
@@ -7423,7 +7423,7 @@ English Proto Input: *xōrōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *xōrǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Unstressed Long Vowel Shortening: *xōræ<br>OE Unstressed AE Merger: *xōre |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *xōrǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *xōrā<br>EAF Brightening Long Final: *xōrǣ<br>OE Unstressed Long Vowel Shortening: *xōræ<br>OE Unstressed AE Merger: *xōre |
 
 
 
@@ -7444,7 +7444,7 @@ English Proto Input: *wíduwōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *wíduwǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE WI Combinative U Umlaut: *wúduwǭ<br>OE Unstressed Long Vowel Shortening: *wúduwæ<br>OE Unstressed AE Merger: *wúduwe |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *wíduwǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE WI Combinative U Umlaut: *wúduwǭ<br>PWGmc Surviving Bimoric O Unrounding: *wúduwā<br>EAF Brightening Long Final: *wúduwǣ<br>OE Unstressed Long Vowel Shortening: *wúduwæ<br>OE Unstressed AE Merger: *wúduwe |
 
 
 
@@ -8134,7 +8134,7 @@ remain unchanged.
 # flask
 PROTO: *fláskōn
 EXPECTED: flasce
-OUTPUTS: flasce
+OUTPUTS: flæsċe
 
 
 
@@ -8144,13 +8144,14 @@ English Proto Input: *fláskōn
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *fláskǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *flæskǭ<br>OE A Restoration: *flaskǭ<br>OE Unstressed Long Vowel Shortening: *flaskæ<br>OE Unstressed AE Merger: *flaske |
+| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *fláskǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *fláskā<br>EAF Brightening: *flæskā<br>EAF Brightening Long Final: *flæskǣ<br>OE Sk Palatalization: *flæʃǣ<br>OE Unstressed Long Vowel Shortening: *flæʃæ<br>OE Unstressed AE Merger: *flæʃe |
 
 
 
 ### Orthography & surface
 
-Outcome: flasce
+Old English Orthography: *flæsċe
+Outcome: flæsċe
 # follow
 PROTO: *fúlgijaną
 EXPECTED: fylġan
@@ -9784,7 +9785,7 @@ English Proto Input: *érθakùnðǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *érθækùndǭ<br>OE Breaking: *éorθækùndǭ<br>OE A Restoration: *éorθakùndǭ<br>OE Non High Syn: *éorθkùndǭ<br>OE High Stress Decode: *éorθkundǭ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
+| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *érθakùndā<br>EAF Brightening Unstressed: *érθækùndā<br>EAF Brightening Long Final: *érθækùndǣ<br>OE Breaking: *éorθækùndǣ<br>OE A Restoration: *éorθakùndǣ<br>OE Non High Syn: *éorθkùndǣ<br>OE High Stress Decode: *éorθkundǣ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
 
 
 

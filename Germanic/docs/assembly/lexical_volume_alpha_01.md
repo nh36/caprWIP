@@ -83,6 +83,8 @@ Proto input: _\*nḗdrōn_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PWGmc Surviving Bimoric O Unrounding & \emph{*nǣdrā} \\
+\mbox{EAF Brightening Long Final} & \emph{*nǣdrǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*nǣdræ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*nǣdre} \\
 \end{tabularx}
@@ -1632,7 +1634,7 @@ Proto input: _\*fūliθǭ_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -1653,8 +1655,10 @@ Proto input: _\*fūliθǭ_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE I Umlaut} & \emph{*fȳliθǭ} \\
-\mbox{OE High Vowel Apocope} & \emph{*fȳlθǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*fūliθā} \\
+\mbox{EAF Brightening Long Final} & \emph{*fūliθǣ} \\
+\mbox{OE I Umlaut} & \emph{*fȳliθǣ} \\
+\mbox{OE High Vowel Apocope} & \emph{*fȳlθǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*fȳlθæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*fȳlθe} \\
 \end{tabularx}
@@ -4914,7 +4918,7 @@ Spellings in _net_ can therefore be graphic simplifications, but the lexical tar
 
 ### nightmare — OE _mære_
 
-Derivation: _\*márōn_ yields _mare_ in the current cascade; the selected Old English form is _mære_ (implementation mismatch).
+Derivation: _\*márōn_ > _mære_ (regular).
 
 #### Derivation trace
 
@@ -4948,10 +4952,11 @@ Proto input: _\*márōn_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening} & \emph{*mærǭ} \\
-\mbox{OE A Restoration} & \emph{*marǭ} \\
-OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
-\mbox{OE Unstressed AE Merger} & \Recon{mare} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*márā} \\
+\mbox{EAF Brightening} & \emph{*mærā} \\
+\mbox{EAF Brightening Long Final} & \emph{*mærǣ} \\
+OE Unstressed Long Vowel Shortening & \emph{*mæræ} \\
+\mbox{OE Unstressed AE Merger} & \emph{*mære} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -4960,23 +4965,31 @@ OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
 }
 \endgroup
 
-Current cascade output: _mare_
-
 Old English form: _mære_
 
 #### Old English evidence and selected form
 
 The form compared here is the weak feminine nominative singular *mære* 'nightmare'. The Corpus Glossary gives *maere* under Latin *incuba*; normalizing the spelling *ae* as *æ* gives *mære* [@Lindsay1921, 96, I225]. Hall distinguishes this weak noun from the strong noun *mær*. Both have a short root vowel and are distinct from the adjective *mǣre* 'famous' [@Hall2007, 301–302, §2].
 
-The variant [*mare*]{.iv lang=oe sort=mare role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24:1"} 'nightmare' is also attested: *Bald's Leechbook* has the expression *Gif mon mare ride*. Oblique [*maran*]{.iv lang=oe sort=maran role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24:2"} 'nightmare' occurs in *Leechbook III*. Hall's table separates these contexts from the related glossary copies, which do not constitute independent attestations of one gloss [@Hall2007, 313–314, table 1].
+The variant [*mare*]{.iv lang=oe sort=mare role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:23:1"} 'nightmare' is also attested: *Bald's Leechbook* has the expression *Gif mon mare ride*. Oblique [*maran*]{.iv lang=oe sort=maran role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:23:2"} 'nightmare' occurs in *Leechbook III*. Hall's table separates these contexts from the related glossary copies, which do not constitute independent attestations of one gloss [@Hall2007, 313–314, table 1].
 
 #### Reconstruction and the variant
 
 Ringe and Taylor reconstruct a nominative \emph{*marā} beside an oblique stem \emph{*marōn-}, followed by the front-root forms \emph{*mærǣ} and \emph{*mærōn-}. Their printed list includes *mare*, *maran*, and *mære*, not merely *mare* and *mere* [@RingeTaylor2014, 192]. Hall explicitly explains *mare* as levelling of the nominative root vowel to that of oblique forms such as *maran*, in which retraction had applied. This is a paradigmatic development, not evidence that the nominative itself regularly underwent the same restoration [@Hall2007, 301, §2].
 
-#### Current derivation and implementation gap
+#### Current derivation
 
-The derivational input remains \emph{*márōn}. The unchanged cascade produces *mare*, not the selected *mære*. In the current implementation, the retained nasal ending triggers root-vowel restoration; its output matches an attested variant but does not implement the cited front-root nominative history. The unadopted Model B research experiment yields *mære*. Selecting that attested nominative does not adopt the experiment or change any production sound rule.
+The derivational input remains \emph{*márōn}. Early final nasal bimoric
+\emph{*ǭ} merges with oral \emph{*ō} in \emph{*ā}; subsequent ending
+fronting gives \emph{*ǣ}. The resulting \emph{*mærǣ} no longer has the
+back ending needed to retract the root. Shortening and unstressed merger
+give the selected *mære*. The corrected cascade therefore implements
+the front-root nominative history, not the later levelled variant.
+
+The corrected lexical base previously produced *mare* because its
+nasal ending survived until restoration. Frozen Model B first exhibited
+the corrected result experimentally; the present candidate separately
+reproduces and source-checks its three necessary rule changes.
 
 The English concept label 'nightmare' indexes the Old English simplex, not an attested compound. The regular classification describes the selected nominative history; the later levelled variant is retained as comparison, not substituted for the form compared here to obtain a computational match.
 
@@ -5666,9 +5679,10 @@ Proto input: _\*sáiwalǭ_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening Unstressed} & \emph{*sāwælǭ} \\
-\mbox{OE A Restoration} & \emph{*sāwalǭ} \\
-\mbox{OE Non High Syn} & \emph{*sāwlǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*sāwalā} \\
+\mbox{EAF Brightening Unstressed} & \emph{*sāwælā} \\
+\mbox{EAF Brightening Long Final} & \emph{*sāwælǣ} \\
+\mbox{OE Non High Syn} & \emph{*sāwlǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*sāwlæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*sāwle} \\
 \end{tabularx}
@@ -5899,8 +5913,8 @@ Proto input: _\*spénnilǭ_
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
-\small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5920,10 +5934,12 @@ Proto input: _\*spénnilǭ_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.20\linewidth}@{\hspace{0.25em}}}
-\mbox{OE I Umlaut} & \emph{*spinnilǭ} \\
-\mbox{OE High Vowel Apocope} & \emph{*spinnlǭ} \\
-OE Preconsonantal Degemination & \emph{*spinlǭ} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.22\linewidth}@{\hspace{0.25em}}}
+PWGmc Surviving Bimoric O Unrounding & \emph{*spénnilā} \\
+\mbox{EAF Brightening Long Final} & \emph{*spénnilǣ} \\
+\mbox{OE I Umlaut} & \emph{*spinnilǣ} \\
+\mbox{OE High Vowel Apocope} & \emph{*spinnlǣ} \\
+OE Preconsonantal Degemination & \emph{*spinlǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*spinlæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*spinle} \\
 \end{tabularx}
@@ -6224,7 +6240,7 @@ Proto input: _\*swálwōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -6247,8 +6263,10 @@ Proto input: _\*swálwōn_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening} & \emph{*swælwǭ} \\
-\mbox{OE Breaking} & \emph{*swealwǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*swálwā} \\
+\mbox{EAF Brightening} & \emph{*swælwā} \\
+\mbox{EAF Brightening Long Final} & \emph{*swælwǣ} \\
+\mbox{OE Breaking} & \emph{*swealwǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*swealwæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*swealwe} \\
 \end{tabularx}
@@ -8398,11 +8416,13 @@ Proto input: _\*érθakùnðǭ_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.26\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening Unstressed} & \emph{*érθækùndǭ} \\
-\mbox{OE Breaking} & \emph{*éorθækùndǭ} \\
-\mbox{OE A Restoration} & \emph{*éorθakùndǭ} \\
-\mbox{OE Non High Syn} & \emph{*éorθkùndǭ} \\
-\mbox{OE High Stress Decode} & \emph{*éorθkundǭ} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*érθakùndā} \\
+\mbox{EAF Brightening Unstressed} & \emph{*érθækùndā} \\
+\mbox{EAF Brightening Long Final} & \emph{*érθækùndǣ} \\
+\mbox{OE Breaking} & \emph{*éorθækùndǣ} \\
+\mbox{OE A Restoration} & \emph{*éorθakùndǣ} \\
+\mbox{OE Non High Syn} & \emph{*éorθkùndǣ} \\
+\mbox{OE High Stress Decode} & \emph{*éorθkundǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*éorθkundæ} \\
 \mbox{OE Unstressed AE Merger} & \emph{*éorθkunde} \\
 \end{tabularx}
@@ -9700,7 +9720,7 @@ remain unchanged.
 
 ### flask — OE _flasce_
 
-Derivation: citation reconstruction _\*flaskō_; form followed here _\*fláskōn_ > _flasce_ (early analogy).
+Derivation: citation reconstruction _\*flaskō_; form followed here _\*fláskōn_ yields _flæsċe_; the Old English form here is _flasce_ (early analogy).
 
 #### Derivation trace
 
@@ -9711,7 +9731,7 @@ Proto input: _\*fláskōn_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -9734,10 +9754,12 @@ Proto input: _\*fláskōn_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening} & \emph{*flæskǭ} \\
-\mbox{OE A Restoration} & \emph{*flaskǭ} \\
-OE Unstressed Long Vowel Shortening & \emph{*flaskæ} \\
-\mbox{OE Unstressed AE Merger} & \emph{*flaske} \\
+PWGmc Surviving Bimoric O Unrounding & \emph{*fláskā} \\
+\mbox{EAF Brightening} & \emph{*flæskā} \\
+\mbox{EAF Brightening Long Final} & \emph{*flæskǣ} \\
+\mbox{OE Sk Palatalization} & \emph{*flæʃǣ} \\
+OE Unstressed Long Vowel Shortening & \emph{*flæʃæ} \\
+\mbox{OE Unstressed AE Merger} & \emph{*flæʃe} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -9746,53 +9768,94 @@ OE Unstressed Long Vowel Shortening & \emph{*flaskæ} \\
 }
 \endgroup
 
+Current cascade output: _flæsċe_
+
 Old English form: _flasce_
 
 #### Reconstruction and comparative evidence
 
-The wider Germanic family is often cited under a form such as [flaskō]{.iv .recon lang=pgmc sort=flasko role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:21:1"} ‘flask’, but
-the evidence relevant for Old English points instead to a weak feminine
-formation [fláskōn]{.iv .recon lang=pgmc sort=flaskon role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23:1"} ‘flask’ / [flaskǭ]{.iv .recon lang=pgmc sort=flasko role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23:2"} ‘flask’ [@Orel2003, 104]. That distinction is
-crucial for the suffixal history of the noun.
+The wider Germanic family is often cited under a form such as
+[flaskō]{.iv .recon lang=pgmc sort=flasko role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:23:1"} 'flask',
+whereas the formation relevant to Old English is weak feminine
+[fláskōn]{.iv .recon lang=pgmc sort=flaskon role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:25:1"} 'flask'
+[@Orel2003, p. 104]. Choosing the weak formation identifies the relevant
+ending history; it does not make the attested nominative's root vowel
+the outcome of an uninterrupted sequence of sound changes.
 
-The derivational input therefore differs from the citation label in stem class. Old
-English [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:27:1"} 'flask' belongs with the weak feminine line, and the plural or oblique
-forms [_flascan_]{.iv lang=oe sort=flascan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:28" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:28:1"} 'flask' support that analysis [@RingeTaylor2014, 192].
+Ringe and Taylor reconstruct a nominative \emph{*flaskā}, later
+\emph{*flæskǣ}, beside the oblique stem \emph{*flaskōn-}, later
+\emph{*flæskōn-}. Their final arrow to *flasċe* 'flask' and *flascan*
+is explicitly marked as involving development beyond ordinary sound
+change [@RingeTaylor2014, p. 192]. The stem followed by a hyphen is not
+a complete genitive or accusative reconstruction.
 
 #### Old English evidence
 
-Old English dictionaries record the noun as [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:32" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:32:1"} 'flask', with inflectional support
-from forms such as [_flascan_]{.iv lang=oe sort=flascan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33:1"} 'flask'; a later West Saxon [_flaxe_]{.iv lang=oe sort=flaxe role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:33:2"} 'flask' is also noted as a
-secondary variant [@BosworthToller1898, 235; @ClarkHall1960, 121].
+The dictionaries give [*flasce*]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:39" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:39:1"}
+'flask', with [*flaxe*]{.iv lang=oe sort=flaxe role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:40" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:40:1"} 'flask'
+as a variant [@BosworthToller1898, p. 235; @ClarkHall1960, p. 121].
+Ringe and Taylor identify *flaxe* and *flaxan* as late West Saxon
+[@RingeTaylor2014, p. 192].
 
-The relevant comparison form is therefore the weak feminine noun [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:36" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:36:1"} 'flask'.
-The plural and oblique evidence helps explain why the vowel
-and ending are preserved as they are in the singular.
+The inflected forms must be identified from their syntax. In Gregory's
+*Dialogues*, *āne trȳwene flascan wīnes fulle* 'one wooden flask full of
+wine' makes [*flascan*]{.iv lang=oe sort=flascan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:47" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:47:1"} 'flask'
+accusative singular, the direct object of *sealde*; *flaxan* stands in
+the parallel recension [@Hecht1900, p. 66, lines 8--10].
+At another occurrence, *twā fatu ... flascan gehātene* 'two vessels
+called flasks' has nominative plural *flascan*, whereas *ōðre þāra
+flascena* 'one of the flasks' contains genitive plural
+[*flascena*]{.iv lang=oe sort=flascena role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:53" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:53:1"} 'flasks'
+[@Hecht1900, p. 141, lines 25--30; @Toller1921, p. 223].
+The following *be þǣre flascan* is dative singular, not evidence for a
+genitive singular [@Hecht1900, p. 142, lines 2--4].
+These passages establish the weak paradigm but do not supply a securely
+identified genitive singular.
 
 #### Development to Old English
 
-From [fláskōn]{.iv .recon lang=pgmc sort=flaskon role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:42" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:42:1"} ‘flask’, the weak feminine passes through the expected loss of _n_ and
-the later Old English development of the unstressed ending, reaching [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:43" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:43:1"} 'flask'.
-Campbell cites restored _a_ in exactly this environment, including [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:44:1"} 'flask'
-after inflected [_flascan_]{.iv lang=oe sort=flascan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:45" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:45:1"} 'flask' [@Campbell1959, §158]. Once the weak feminine
-formation is chosen, the noun follows a regular path to its Old English shape.
+Campbell explicitly explains singular *flasce* after inflected *flascan*;
+Luick likewise derives the singular's root vowel from the plural
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+This is positive evidence for root-vowel levelling, not a licence to let
+the nominative retain an obsolete back ending until restoration.
+The early final-vowel merger removes that trigger: final \emph{*ǭ}
+joins \emph{*ō} in \emph{*ā}, which fronts to \emph{*ǣ}.
+The nominative consequently keeps its front root and subsequently
+undergoes palatalization of \emph{*sk}. The cascade produces
+\emph{*flæsċe}, not selected *flasce*.
 
-The decisive issue is morphological rather than phonological. A simple strong
-feminine citation form does not capture the OE weak noun as cleanly as the
-selected [fláskōn]{.recon} ‘flask’ does.
+The oblique root provides an independently identified analogical donor,
+but the consonantal history needs separate care. Ringe and Taylor print
+palatal *flasċe*. Campbell also discusses *flasce* and *flaxe* among
+the forms associated with retained \emph{sk} and later \emph{ks}
+[@RingeTaylor2014, p. 192; @Campbell1959, p. 178, §§440--441].
+Plain written *sc* does not by itself decide its pronunciation, and
+root-vowel levelling alone does not demonstrate when a consonantal
+alternation was levelled.
 
-#### Formation comparison
+#### Formation and cell comparison
 
-The comparison below sets the relevant forms side by side. It separates the broader comparative headword
-from the weak feminine formation actually reflected in Old English.
+| Formation or cell | Reconstructed input | Evidential status |
+| :--- | :--- | :--- |
+| comparative headword | \emph{*flaskō} | Family label, not the selected weak nominative history |
+| selected weak nominative | \emph{*fláskōn} | Current cascade gives front-root \emph{*flæsċe}; attested comparator *flasce* has an explicitly sourced levelled root |
+| weak accusative singular | \emph{*flaskōnų} | Ending reconstructed by applying the weak-feminine paradigm to the stem; not a complete form quoted by Ringe and Taylor |
 
-| Formation | Candidate input | Expected or documented OE outcome | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| broader comparative headword | [_\*flaskō_]{.iv lang=pgmc sort=flasko role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:59:1"} | broader family label | wider family context | useful lexeme label, but not the cleanest OE-facing derivation |
-| selected weak feminine formation | [_\*fláskōn_]{.iv lang=pgmc sort=flaskon role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60:1"} | regular output: [_flasce_]{.iv lang=oe sort=flasce role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60:2"} | [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:60:3"} | exact match between formation and attested OE noun |
-
-The weak feminine suffix is the relevant point. It aligns the inherited form
-with attested [_flasce_]{.iv lang=oe sort=flasce role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:63" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:63:1"} 'flask' and its supporting paradigm forms.
+The generic inherited accusative ending is supported by Ringe's
+\emph{*tungōnų} paradigm, and its West Germanic erosion is discussed
+separately [@Ringe2017, p. 312, §4.3.4(ii);
+@RingeTaylor2014, pp. 55--58]. That evidence warrants testing a complete
+oblique, not adding an ending solely to obtain a back root. Inflectional
+remodelling and the distinct consonantal question prevent an automatic
+replacement of the selected nominative by an oblique. Both complete raw
+inputs \emph{*fláskōnų} and dative \emph{*fláskōni} are rejected by the
+current tokenizer. Diagnostic entry after tokenization instead gives
+\emph{*flasconu} and \emph{*flæsċe}, respectively, not attested
+*flascan*. This is a modelling limit, not a demonstration that the
+inherited endings or the attestations are wrong. The comparator
+remains *flasce*; the computational mismatch is disclosed rather than
+removed by changing the target.
 
 ### follow — OE _fylġan_
 

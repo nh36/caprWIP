@@ -138,8 +138,8 @@ class SC066SC068AdjudicationTests(unittest.TestCase):
         self.assertEqual(fired, SC066_EXPECTED_FIRING_CONCEPTS,
                          "SC066 firing census changed")
         nettle = live[self.by_concept["nettle"]["row_id"]]
-        self.assertEqual(nettle["before"], ["*n*e*t*i*l*ǭ"])
-        self.assertEqual(nettle["after"], ["*n*e*t*l*ǭ"])
+        self.assertEqual(nettle["before"], ["*n*e*t*i*l*ǣ"])
+        self.assertEqual(nettle["after"], ["*n*e*t*l*ǣ"])
         for concept in sorted(SC066_NEGATIVE_CONTROL_CONCEPTS):
             actual = live[self.by_concept[concept]["row_id"]]
             self.assertEqual(actual["before"], actual["after"],
@@ -154,8 +154,8 @@ class SC066SC068AdjudicationTests(unittest.TestCase):
         self.assertEqual(fired, SC068_EXPECTED_FIRING_CONCEPTS,
                          "SC068 firing census changed")
         spindle = live[self.by_concept["spindle"]["row_id"]]
-        self.assertEqual(spindle["before"], ["*s*p*i*n*n*l*ǭ"])
-        self.assertEqual(spindle["after"], ["*s*p*i*n*l*ǭ"])
+        self.assertEqual(spindle["before"], ["*s*p*i*n*n*l*ǣ"])
+        self.assertEqual(spindle["after"], ["*s*p*i*n*l*ǣ"])
 
     # ------------------------------------------------------------------
     # Registry and chronology

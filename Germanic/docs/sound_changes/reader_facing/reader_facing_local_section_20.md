@@ -4172,19 +4172,51 @@ Campbell's discussion of fronting and restoration, Hogg's separate historical ch
 
 ```foma
 define PWGmcSurvivingBimoricOUnrounding Ctx([
-    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
+    [{*ō}|{*ǭ}] -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ]);
 ```
 
-This operation represents only the surviving oral-final fragment of the broader development. Its preceding-nucleus and intervening-consonant guard selects a final vowel in a polysyllabic shape; it does not independently reconstruct historical stress. Before-final-\emph{*r} histories and nasal-vowel histories have other executable treatments. At this point the selected water and four inputs already contain \emph{*a} before \emph{*r}, whereas the tongue and heart inputs retain the distinct nasal token \emph{*ǭ}. Name retains a separate trimoric marker. Their nonapplication here is therefore not a counterexample to the broader comparative account.
+The operation merges surviving final oral and nasal bimoric vowels in
+\emph{*ā} before English final-vowel fronting. Its preceding-nucleus and
+intervening-consonant guard selects a polysyllabic shape; it does not
+independently reconstruct historical stress. The restriction to the final
+vowel preserves nasalized roots and the separate trimoric quantity.
+Before-final-\emph{*r} histories remain distributed: the selected water
+and four inputs already contain \emph{*a} there.
 
-The complete current population has one live application: *ræste* 'rest', from the selected Proto-Germanic genitive singular \emph{*rástōz}, not the citation nominative \emph{*rastō}. The selected gift input is instead \emph{*gíftiz}, so the literature's genitive \emph{*gebōz} must not silently replace it as another corpus witness. Neither a lexical exception nor a grammatical condition is introduced.
+The complete current population has twenty-two applications: the oral
+ending in *ræste* 'rest', from selected genitive \emph{*rástōz}, and
+twenty-one nasal-final histories. These include *mære* 'nightmare',
+*tunge* 'tongue', *heorte* 'heart' and *sāwle* 'soul'.
+The selected gift input remains \emph{*gíftiz}: the literature's
+\emph{*gebōz} is a separate control, not another corpus application.
+No lexical list or grammatical condition selects the endings.
 
 After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. The West Germanic long-vowel reconstruction has a source basis, but this exact serialized chain remains a computational representation of the selected history.
 
-For the selected \emph{*rástōz}, moving unrounding before z-loss or after final-vowel support gives [rasta]{.pred example-input="*rástōz" example-stage=PGmc example-expected=ræste}, rather than *ræste* 'rest'. In the early displacement the vowel is still protected by \emph{*z}; in the late displacement its unrounded output arrives too late for final-vowel fronting. In both, a surviving back vowel permits [SC046 OEARestoration](#rule-OEARestoration) to retract the root, and later shortening leaves final *-a*. By contrast, placing unrounding after ordinary stressed fronting but before final-vowel support preserves all current outputs. Thus z-loss feeds the exposed-final-vowel operation, which feeds the final support; it is not the stressed fronting operation that needs the unrounded final vowel.
+For *mære* 'nightmare', the final nasal vowel becomes \emph{*ā} here,
+then \emph{*ǣ} under [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal).
+The front ending no longer conditions root retraction under
+[SC046 OEARestoration](#rule-OEARestoration). Subsequent shortening and
+merger yield the selected short-vowel nominative. Attested *mare*
+'nightmare' instead has independently identified levelling from obliques
+such as *maran* 'nightmare' [@Hall2007, pp. 301--302, §2].
+The analogous nominative calculation for *flasce* 'flask' produces
+\emph{*flæsċe}, not the attested comparator: Campbell and Luick explicitly
+identify levelling from inflected forms there
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
 
-The historical West Germanic development precedes the English fronting history in the adopted account. That does not establish an independently witnessed local relation to ordinary stressed fronting: the single selected rest derivation distinguishes exposure of a final vowel and the use of its unrounded output by final-vowel support. The rule, its order and the selected forms are retained; its historical interpretation is reformulated to distinguish this narrow executable contribution from the independently argued broader law.
+Moving the operation before z-loss still gives
+[rasta]{.pred example-input="*rástōz" example-stage=PGmc example-expected=ræste}
+instead of *ræste* 'rest'. This trial also crosses nasal-ending exposure;
+its changed nominatives are not additional witnesses specifically for
+z-loss. Moving it after final support changes twenty-one finals, whereas
+moving it after ordinary stressed fronting but before final support
+preserves every final. The component dependencies are final-environment
+exposure and final-vowel support, not a local feeding requirement before
+ordinary stressed fronting. The independently argued West Germanic
+development precedes the English history in the adopted account; its late
+executable placement does not date it.
 
 ## Technical support: retained unstressed fronting
 
@@ -4509,7 +4541,7 @@ The Sievers-law reduction \emph{*-CijV-*} > \emph{*-CjV-*}, including loss of \e
 The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the recognizable early
 cluster changes in the larger palatalization zone. Campbell distinguishes the
 cluster from plain velars when he remarks that \emph{*sk} is especially prone to
-palatalization and assibilation [@Campbell1959, p. 278, §440]. Barrack
+palatalization and assibilation [@Campbell1959, pp. 177--178, §440]. Barrack
 treats the cluster in the same zone as his 440 series: 440a summarizes the
 developments [@Barrack1975, pp. 112--113] and 440c states the
 palatalization of \emph{*sk} itself [@Barrack1975, p. 113], kept beside, but
@@ -4550,7 +4582,18 @@ define OESkPalatalization Ctx([
 ]);
 ```
 
-The non-fronted vowels of *flasce* ‘flask’ and *wascan* ‘wash’ fix the lower boundary of \emph{*sk} > \emph{*sc}. Before [SC046 OEARestoration](#rule-OEARestoration), the forms are fronted too soon, yielding *flæsce* ‘flask’ and *wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This places [SC051 OESkPalatalization](#rule-OESkPalatalization) after restoration.
+The displacement of cluster palatalization before
+[SC046 OEARestoration](#rule-OEARestoration) now changes *wascan* 'wash'
+to [wæsċan]{.pred}; wash remains the current lower-boundary witness.
+The old flask displacement belonged to an implementation that retained
+its final nasal vowel through restoration. After the earlier ending
+merger, the nominative already has a front root and gives
+\emph{*flæsċe} in either order. Attested *flasce* 'flask' has an
+independently sourced levelled root, after inflected *flascan* 'flask'
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+It must not be used as if its former executable agreement independently
+proved a regular back-root nominative history. The consonantal history
+of the paradigm remains distinct from that root-vowel levelling.
 
 Five witnesses establish the upper boundary collectively. The palatal cluster must already underlie *sċeaft* ‘shaft’, *sċēar* ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’ before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). The \emph{*sċea-* 'sea'}/\emph{*sċie-*} set therefore places cluster palatalization before the West Saxon vowel change. The cluster change occupies the same palatalization zone as [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) while remaining distinct from plain-velar palatalization and the later vowel changes.
 
@@ -4660,7 +4703,7 @@ give only a cutoff before later unrounding
 define OEVelarPalatalizationStops [
     OEVelarPalatalizationKFront
 ] .o. [
-    {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
+    {*g} -> {*ʤ} || _ [{*i}|{*í}|{*ì}|{*ī}],
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],,
@@ -4669,6 +4712,16 @@ define OEVelarPalatalizationStops [
     {*g} -> {*ʤ} || _ {*j}
 ];
 ```
+
+The following-vowel clause now requires immediately following original
+\emph{i} or \emph{ī}, including the transducer's stress spellings, rather
+than any front vowel [@RingeTaylor2014, p. 203]. This does not narrow the
+separate singleton-fricative rule. The earlier final-vowel merger makes
+the ending of *tunge* 'tongue' front before palatalization, but secondary
+\emph{ǣ} does not meet this stop condition. The corrected calculation
+retains the stop rather than producing a spurious affricate.
+Possible effects of preceding \emph{i} through a nasal remain a separate
+question; no additional such clause is introduced here.
 
 Singleton fricatives have already left this domain. The remaining gg/ng
 paths use ʤ as an eventual-reflex proxy; the initial singleton fricative
@@ -6441,7 +6494,21 @@ Hogg places it marginally after the earlier merger
 @HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239);
 @RingeTaylor2014, pp. 334--335].
 
-The displacement tests expose dependencies of the current cascade. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* 'father'. They therefore require shortening before merger in this implementation. If merger is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. That narrower result establishes the current representation's merger-before-loss dependency, not an independently demonstrated historical order.
+The earlier displacement tests expose implementation dependencies. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* 'father'. That experiment requires shortening before merger in its tested implementation; it is not newly remeasured here.
+
+The toe boundary has also been rechecked on the
+[reviewed final-nasal candidate](https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde).
+Its unperturbed derivation has a palatal fricative and unstressed
+\emph{æ}, then merger supplies \emph{e} before loss creates hiatus.
+Contraction yields OE *tā* 'toe'. Two separately executed displacements,
+moving [SC085 OEHLoss](#rule-OEHLoss) before merger and moving merger after
+loss, both instead leave \emph{ā + æ}: the merger's consonantal context is
+gone, and contraction does not resolve that sequence. Both yield
+[*tāæ*]{.pred} rather than *tā* 'toe'. This reproduces the endpoint in the
+[earlier merger-displacement record](https://github.com/nh36/caprWIP/commit/25ca025f5b065671092fc8c7a4107611588cdcf9),
+but now with the candidate's actual intermediate forms. It remains a
+computational boundary observation, not independently demonstrated
+historical merger-before-loss chronology.
 
 Clay makes the distinction important. Corpus 207 *thoae* 'clay', beside
 Épinal 3 *thohae* 'clay', is read as hiatus *thōæ* 'clay' beside
@@ -6925,9 +6992,10 @@ copies. Nor does written \emph{h} by itself settle the fricative's phonetic
 value: CAPR's assignment of [ç] before a following front vowel at
 palatalization is a model analysis, not a transcription of that letter.
 
-In the current stage trial for *þō* 'clay', the ending is still back when
-palatalization applies, so the velar fricative remains. Later ending
-changes supply \emph{e} while the fricative is still present; loss leaves
+In the current stage trial for *þō* 'clay', the early final-vowel merger
+and subsequent fronting supply \emph{ǣ} before palatalization, where
+CAPR assigns [ç]. Shortening and merger then supply \emph{e}
+while the fricative is still present; loss leaves
 \emph{ō + e}, and contraction produces the contracted form. This verifies
 the front-ending/fricative/hiatus sequence without equating the trial's
 \emph{e} with the glossary spelling \emph{ae}. The historical interpretation
@@ -6937,15 +7005,39 @@ of that distinction is discussed with
 ### SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss}
 
 ```foma
-define OEHLoss [
-    {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
-];
+define OEHLoss FootCtx([
+    [{*x}|{*ç}] -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+]);
 ```
 
-The rule removes intervocalic \emph{*h}; contraction can subsequently
-resolve the hiatus, but the hiatus is itself attested.
+The rule removes singleton intervocalic \emph{*h} in either model
+allophone. It must not depend on a front neighbour: *wlōhum* 'fringe'
+loses the fricative between back vowels while retaining \emph{-um}.
+Geminates do not meet the singleton environment. The existing foot
+wrapper protects pretonic material: Campbell explicitly retains
+intervocalic \emph{h} between an unaccented and an accented vowel in
+*behindan* 'behind', *behealdan* 'hold', *gehelpan* 'help' and
+*toheald* 'inclined' [@Campbell1959, pp. 186--187, §§461, 464--465].
+Thus the prosodic guard has independent support; it is not a lexical
+exception introduced to protect matching outputs.
+Contraction can subsequently resolve the hiatus, but the hiatus is itself attested.
 
-If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. This establishes a dependency of the current merger and contraction implementations, not independent historical proof that merger preceded loss. If Corpus *thoae* 'clay' preserves distinct unstressed \emph{æ}, the clay witness instead puts loss before merger in that form. Whether this spelling distinguishes \emph{æ} from \emph{e} remains open; a successful contracted endpoint cannot decide it.
+The [reviewed final-nasal candidate](https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde)
+reproduces the toe boundary in two separately executed trials. Moving
+loss before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), or
+moving merger after loss, removes the palatal fricative while the ending
+is still \emph{æ}. The resulting \emph{ā + æ} neither meets the merger's
+consonantal context nor contracts, yielding [*tāæ*]{.pred} rather than
+OE *tā* 'toe'. Unperturbed, merger first supplies \emph{e}; loss leaves
+\emph{ā + e}, and contraction gives *tā* 'toe'.
+The [earlier loss-displacement record](https://github.com/nh36/caprWIP/commit/196b8f6b73d825d86830bb8612834f50f865b9e4)
+has the same final failure, but is a distinct, dated measurement, not the
+source of these candidate intermediates. The result remains a computational
+boundary observation, not independent historical proof that merger preceded
+loss. If Corpus *thoae* 'clay' preserves distinct unstressed \emph{æ},
+the clay witness instead puts loss before merger in that form. Whether this
+spelling distinguishes \emph{æ} from \emph{e} remains open; a successful
+contracted endpoint cannot decide it.
 
 If loss is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} ‘toe’ yields [*tāe*]{.pred} rather than expected *tā* ‘toe’. These outputs require loss before contraction in the current cascade. The four displacement witnesses agree with the glossary evidence for that sequence; neither their executable adjacency nor the copy dates establish an immediate historical succession.
 

@@ -27,6 +27,40 @@ CONSOLIDATION_CHANGED = {
 }
 LEXICAL_GRAMMAR_CHANGED = {"PGCellEnd"}
 FINAL_Z_QUANTITY_CHANGED = {"EAFFinalZDeletion"}
+FINAL_NASAL_CHANGED = {
+    "PWGmcSurvivingBimoricOUnrounding", "OEVelarPalatalizationStops", "OEHLoss",
+    # PR10 review moves technical stress-marker cleanup from SC076 to SC085.
+    "OEPrefixIReduction",
+}
+
+
+def assert_final_nasal_scope(current):
+    source = subprocess.check_output(
+        ["git", "show", "d067bab941d69227652961999fb6b0961851c4d4:Germanic/fsts/germanic.txt"],
+        cwd=ROOT)
+    assert hashlib.sha256(source).hexdigest() == (
+        "62fb821f9988cf995043cb9a978b76a5a3fc83caff5b026928c64a0dd378062c")
+    previous = parse_defines(source.decode())
+    compact = lambda body: "".join(body.split())
+    assert current.keys() == previous.keys()
+    assert {name for name in previous
+            if compact(current[name].body) != compact(previous[name].body)} == FINAL_NASAL_CHANGED
+    expected = {
+        "PWGmcSurvivingBimoricOUnrounding":
+            compact(previous["PWGmcSurvivingBimoricOUnrounding"].body).replace(
+                "{*ō}->{*ā}", "[{*ō}|{*ǭ}]->{*ā}"),
+        "OEVelarPalatalizationStops":
+            compact(previous["OEVelarPalatalizationStops"].body).replace(
+                "||_EnglishStarFrontVowel,", "||_[{*i}|{*í}|{*ì}|{*ī}],", 1),
+        "OEHLoss":
+            "FootCtx(" + compact(previous["OEHLoss"].body).replace(
+                "{*x}->0", "[{*x}|{*ç}]->0") + ").o.[{*ᶠ}->0]",
+        "OEPrefixIReduction":
+            compact(previous["OEPrefixIReduction"].body).replace(
+                ".o.[{*ᶠ}->0]", ""),
+    }
+    for name, body in expected.items():
+        assert compact(current[name].body) == body
 
 
 def assert_intervention_scope():
@@ -54,7 +88,8 @@ def assert_intervention_scope():
     assert {name for name in consolidated_base
             if "".join(current[name].body.split()) !=
                "".join(consolidated_base[name].body.split())} == (
-                   CONSOLIDATION_CHANGED | LEXICAL_GRAMMAR_CHANGED | FINAL_Z_QUANTITY_CHANGED)
+                   CONSOLIDATION_CHANGED | LEXICAL_GRAMMAR_CHANGED |
+                   FINAL_Z_QUANTITY_CHANGED | FINAL_NASAL_CHANGED)
     corrected = parse_defines(subprocess.check_output(
         ["git", "show", "3e2fe1b6d8ac606e854534798bb6688805c3875e:Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True))
@@ -73,6 +108,7 @@ def assert_intervention_scope():
     nucleus = "EnglishStarVocalic?*_.#."
     assert before_z.count(nucleus) == 1
     assert after_z == before_z.replace(nucleus, "[EnglishStarVocalic|{*ô}]?*_.#.")
+    assert_final_nasal_scope(current)
 
 
 def test_intervention_changes_are_exactly_source_bound():

@@ -1,5 +1,14 @@
 # SC042 PWGmc Surviving Bimoric O Unrounding — chronology evidence card
 
+Current candidate, 13 November 2026: the original records and dated
+interpretations below are preserved. The source-supported final merger
+has22 applications. Its current post-stressed-fronting displacement
+preserves every final; post-SC108 changes21 finals. Moving it before SC020
+changes rest to rasta and restores the former flask/nightmare outputs.
+That trial also crosses SC023 nasal-ending exposure: only rest specifically
+demonstrates the z-loss feeding mechanism. See
+[the candidate memorandum](../../audits/sc042-final-nasal-candidate.md).
+
 ## Position at experiment time
 - order_at_experiment_time: `42`
 - rule_name: `PWGmcSurvivingBimoricOUnrounding`

@@ -32,7 +32,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC039 | OE WI Combinative U Umlaut | active | DEFER | `Germanic/docs/sound_changes/audits/sc039-adjudication.md` |
 | SC040 | OE Med Unstressed U Lowering | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc040-adjudication.md` |
 | SC041 | PWGmc Final Bare A Loss | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc041-adjudication.md` |
-| SC042 | PWGmc Surviving Bimoric O Unrounding | active | DEFER | `Germanic/docs/sound_changes/audits/sc042-final-verification.md` |
+| SC042 | PWGmc Surviving Bimoric O Unrounding | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc042-adjudication.md` |
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
 | SC049 | Inherited labial positional realization | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
@@ -48,6 +48,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC074 | Later medial weak-i lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC076 | Pretonic i-lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC082 | Bounded inherited-j normalization | active | RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc082-adjudication.md` |
+| SC085 | OE H Loss | active | REFORMULATE/RESTRICT | `Germanic/docs/sound_changes/audits/sc085-adjudication.md` |
 | SC087 | OE R Metathesis | active | RETAIN | `Germanic/docs/sound_changes/audits/sc087-adjudication.md` |
 | SC089 | Late unstressed ag-suffix raising | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc089-adjudication.md` |
 | SC092 | Old English Orthography | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc092-adjudication.md` |

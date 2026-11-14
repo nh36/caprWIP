@@ -1,5 +1,14 @@
 # SC052: controlled context-scoping adoption
 
+Current candidate follow-up, 13 November 2026:
+[SC042's coordinated candidate](sc042-final-nasal-candidate.md) narrows only
+the stop-g following-vowel clause to original i/ī, following Ringe–Taylor203.
+The early final-vowel merger otherwise spuriously palatalizes tongue before
+secondary ǣ. Singleton-fricative eligibility, preceding-vowel clauses,
+geminate scoping and merger chronology remain unchanged. The dated adoption
+below and its original receipts remain historical records, not an assertion
+that this later following-vowel correction was already present.
+
 ## Identity
 
 SC052, `OEVelarPalatalization`, on `research/full-cascade-functionality`.
