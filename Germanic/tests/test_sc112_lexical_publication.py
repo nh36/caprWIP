@@ -89,7 +89,7 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
             "2148", "2333", "2334", "2335", "2336", "2201", "2282", "2006",
             "2337", "2208", "2338", "2339"})
         self.assertEqual(set(old) - set(now), set())
-        self.assertEqual(sum(r["derivation_class"] == "regular" for r in current), 97)
+        self.assertEqual(sum(r["derivation_class"] == "regular" for r in current), 98)
         # Positions are editorial (see test_lexical_editorial_order); every
         # scientific column of every pre-existing entry must be unchanged.
         presentation = {"global_order", "class_order"}
@@ -111,7 +111,10 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
                 self.assertEqual(before["trace_match_basis"],
                                  "lexical item + PROTOFORM + EXPECTED + OUTPUTS")
                 before = dict(before,
-                              trace_match_basis="lexical item + PROTOFORM + EXPECTED")
+                              protoform="*fláskōniz", counterpart="flascan",
+                              derivation_class="regular", class_bucket="regular",
+                              section_title="Regular derivations",
+                              trace_match_basis="lexical item + PROTOFORM + EXPECTED + OUTPUTS")
             if row_id == "2053":
                 before = dict(
                     before, counterpart="hamer", protoform="*xámaraz",

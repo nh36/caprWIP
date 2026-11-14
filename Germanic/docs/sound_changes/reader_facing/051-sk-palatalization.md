@@ -55,7 +55,11 @@ merger, the nominative already has a front root and gives
 \emph{*flæsċe} in either order. Attested *flasce* 'flask' has an
 explicitly sourced levelling analysis, after inflected *flascan* 'flask'
 [@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
-It must not be used as if its former executable agreement independently
+The selected nominative plural instead gives *flascan* with the
+restored back root and hard cluster before its late-reduced ending.
+Its plain written *sc* does not independently date palatalization,
+and the metathesized *flaxan* remains a separate consonantal question.
+The singular must not be used as if its former executable agreement independently
 proved a regular back-root nominative history. The consonantal history
 of the paradigm remains distinct from that proposed root-vowel levelling.
 

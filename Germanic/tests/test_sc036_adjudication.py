@@ -12,11 +12,12 @@ ASSAY = ROOT / "Germanic/docs/sound_changes/audits/sc036-experiments"
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import adjudicate
 import oe_pipeline
+from executable_facts import parse_defines
 from check_bibliography_sanity import parse_entries
 from test_sc037_adjudication import (
     INTERVENTION_ADDED, INTERVENTION_CHANGED, CONSOLIDATION_ADDED,
     CONSOLIDATION_CHANGED, FINAL_Z_QUANTITY_CHANGED, FINAL_NASAL_CHANGED,
-    assert_intervention_scope,
+    assert_intervention_scope, before_flask_adoption,
 )
 
 
@@ -51,7 +52,9 @@ def test_sc036_and_separately_adjudicated_changes_remain_bounded():
         return {name: re.sub(r"\s+", "", body) for name, body in
                 oe_pipeline._define_bodies(oe_pipeline._strip_comments(text)).items()}
 
-    current, old = definitions(source), definitions(base)
+    current = {name: re.sub(r"\s+", "", fact.body)
+               for name, fact in before_flask_adoption(parse_defines(source)).items()}
+    old = definitions(base)
     # The input-gate extension (audits/lexical-witnesses-2335-2336,
     # commit 7d79e179) is adjudicated separately and pinned exactly by
     # test_lexical_witness_input_gate.py; relative to SC036's base it

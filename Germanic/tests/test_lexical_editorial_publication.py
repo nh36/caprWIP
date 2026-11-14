@@ -72,6 +72,34 @@ def assert_final_nasal_index_delta(rows):
     assert all(not row.get("variety") for row in rows)
 
 
+def assert_flask_nompl_index_delta(rows):
+    model = "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
+    expected = {
+        (action, language, form, role, scope, f"flask — OE {target}")
+        for action, target, proto in (
+            ("remove", "flasce", "*fláskōn"), ("add", "flascan", "*fláskōniz"))
+        for language, form, role, scope in (
+            ("oe", target, "target_form", "lexical_heading"),
+            ("pgmc", "*flaskō", "source_protoform", "lexical_proto"),
+            ("pgmc", proto, "source_protoform", "lexical_protoform"),
+            ("pgmc", proto, "selected_input", "trace_proto_input"),
+        )
+    } | {
+        (action, language, form, role, "explicit_tag", model)
+        for action, language, form, role in (
+            ("remove", "oe", "flasce", "target_form"),
+            ("add", "oe", "flascan", "target_form"),
+            ("add", "oe", "flasce", "comparison_form"),
+            ("remove", "pgmc", "fláskōn", "selected_input"),
+            ("add", "pgmc", "fláskōniz", "selected_input"),
+        )
+    }
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == len(expected) == 13
+    assert {tuple(row[field] for field in fields) for row in rows} == expected
+    assert all(not row.get("variety") for row in rows)
+
+
 class EditorialPublicationTests(unittest.TestCase):
     def test_selected_find_and_soul_have_one_printed_entry_with_all_sites(self):
         path = ROOT / "Germanic/docs/book/index_verborum_book_print_unique.tsv"
@@ -215,7 +243,10 @@ class EditorialPublicationTests(unittest.TestCase):
                 self.assertEqual(before["trace_match_basis"],
                                  "lexical item + PROTOFORM + EXPECTED + OUTPUTS")
                 before = dict(before,
-                              trace_match_basis="lexical item + PROTOFORM + EXPECTED")
+                              protoform="*fláskōniz", counterpart="flascan",
+                              derivation_class="regular", class_bucket="regular",
+                              section_title="Regular derivations",
+                              trace_match_basis="lexical item + PROTOFORM + EXPECTED + OUTPUTS")
             if before["row_id"] == "2302":
                 before = dict(before, protoform="*wír-àldiz", protoform_variety="",
                               derivation_class="regular", class_bucket="regular",
@@ -286,21 +317,28 @@ class EditorialPublicationTests(unittest.TestCase):
                 self.assertIn("@Lindsay1921, 96, I225", rendered)
                 self.assertIn("@Hall2007", rendered)
 
-    def test_flask_shared_publication_discloses_the_unmodelled_selected_comparator(self):
+    def test_flask_shared_publication_selects_plural_and_preserves_singular_problem(self):
         path = REPORTS / "model_entries/2016-flask-flasce.model.md"
         model = parse_model_entry(path)
         trace, _, confident = match_trace_entry(model, parse_trace_entries(self.compact))
         self.assertTrue(confident)
-        self.assertEqual(trace["outcome"], "flæsċe")
-        self.assertEqual(model["metadata"]["COUNTERPART"], "flasce")
+        self.assertEqual(trace["outcome"], "flascan")
+        self.assertEqual(model["metadata"]["PROTOFORM"], "*fláskōniz")
+        self.assertEqual(model["metadata"]["COUNTERPART"], "flascan")
         for prose in (None, ROOT / "Germanic/docs/assembly/book_prose/regular_all_01"):
             rendered = render_entry(model, trace, entry_path=path, regular_book_prose_dir=prose)
-            self.assertIn("Current cascade output: _flæsċe_", rendered)
+            self.assertIn("_flascan_ (regular)", rendered)
+            self.assertNotIn("implementation mismatch", rendered)
+            self.assertIn("flæsċe", rendered)
+            self.assertIn("nominative plural", rendered)
             self.assertNotIn("Regular outcome:", rendered)
             self.assertIn("@Hecht1900", rendered)
-            self.assertIn("accusative singular", rendered)
-            self.assertIn("genitive plural", rendered)
-            self.assertIn("not evidence for a", rendered)
+            if prose is None:
+                self.assertIn("unselected genitive singular", rendered)
+                self.assertNotIn("ungenitive singular", rendered)
+                self.assertIn("accusative singular", rendered)
+                self.assertIn("genitive plural", rendered)
+                self.assertIn("not evidence for a", rendered)
 
     def test_final_nasal_candidate_index_changes_are_exactly_attributed(self):
         path = ROOT / "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv"
@@ -308,6 +346,13 @@ class EditorialPublicationTests(unittest.TestCase):
             rows = [row for row in csv.DictReader(handle, delimiter="\t")
                     if row["note"].startswith("Final nasal candidate:")]
         assert_final_nasal_index_delta(rows)
+
+    def test_flask_plural_index_changes_are_exactly_attributed(self):
+        path = ROOT / "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv"
+        with path.open() as handle:
+            rows = [row for row in csv.DictReader(handle, delimiter="\t")
+                    if row["note"].startswith("Flask nominative-plural adoption:")]
+        assert_flask_nompl_index_delta(rows)
 
     def test_source_and_live_identity_mismatches_fail_closed(self):
         rows = copy.deepcopy(self.rows)

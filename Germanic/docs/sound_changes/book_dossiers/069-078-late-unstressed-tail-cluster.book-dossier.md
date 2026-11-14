@@ -1,5 +1,13 @@
 # SC069-SC078: Late unstressed-tail cluster
 
+Flask adoption (14 November 2026): SC069 now shortens before m and
+nonfinal n only; secondary final -ōn reaches existing SC071/SC100.
+This supersedes the older unrestricted-rule displacement interpretation,
+not the unchanged late mechanism or SC051. The selected nominative
+plural and independently attested dative singular give flascan.
+Hill's raising/redistribution remains an explicit alternative; see
+`audits/sc069-adjudication.md` and the Anglo-Frisian source backlog.
+
 Current scoped pretonic follow-up: `audits/sc035-prosody-adjudication.md`
 (2026-10-23). SC073 now includes positively identified pretonic ae/e
 merger alongside the retained post-tonic domain. SC076 is general

@@ -7,7 +7,8 @@ Protected invariants:
 
   * The executable rule `PNWGmcNStemNLoss` is unchanged (stable identifier;
     `{*ō} {*n} -> {*ǭ}` word-finally) and remains in the numbered cascade.
-  * The 17 adjudicated weak-noun citation stems in `*-ōn-` all fire, the
+  * The 16 selected weak-noun citation stems and unselected Flask singular
+    in `*-ōn-` all fire, the
     protected `-un` controls do not, and every live firing satisfies the
     rule's formal domain (final `*ōn` -> `*ǭ`); the complete current firing
     population is machine-derived and owned by the coverage census.
@@ -134,7 +135,7 @@ class SC023AdjudicationTests(unittest.TestCase):
 
     @requires_runtime
     def test_required_weak_nouns_fire_and_the_domain_is_respected(self):
-        """§17 semantics: the 17 adjudicated weak-noun diagnostics must fire,
+        """The 17 adjudicated singular diagnostics must still fire,
         the protected -un controls must not, and every live firing must
         satisfy the rule's formal domain (final *ōn -> *ǭ). The complete
         current firing population is machine-derived (coverage census); a
@@ -144,13 +145,16 @@ class SC023AdjudicationTests(unittest.TestCase):
             concept: row for concept, row in self.baseline.items()
             if row["proto"].endswith("n")
         }
+        # Flask now selects the plural; retain its singular as an independent
+        # diagnostic without counting it as a selected-corpus application.
+        candidates["flask"] = {"proto": "*fláskōn"}
         # Every possible live firing must involve a proto in final -n;
         # censusing only those rows keeps the test fast while remaining
         # exhaustive for this rule (a firing requires a final *ōn match).
         candidates = sorted(candidates.items())
         forms = [row["proto"].lstrip("*") for _, row in candidates]
         before_outputs = runtime_stage_batch(
-            "old_english_sandbox_after_pnwgmc_mn_dissimilation.bin", forms)
+            "old_english_sandbox_after_pnwgmc_long_e_lowering.bin", forms)
         after_outputs = runtime_stage_batch(
             "old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin", forms)
         for (concept, row), before, after in zip(candidates, before_outputs, after_outputs):
@@ -180,7 +184,7 @@ class SC023AdjudicationTests(unittest.TestCase):
     def test_do_is_not_a_live_application_and_don_keeps_secondary_n(self):
         row = self.baseline["do"]
         self.assertEqual(row["proto"], "*dōną")
-        before = self.stage("pnwgmc_mn_dissimilation", "dōną")
+        before = self.stage("pnwgmc_long_e_lowering", "dōną")
         after = self.stage("pnwgmc_n_stem_n_loss", "dōną")
         self.assertEqual(before, after, "do must pass SC023 untouched")
         # Counterfeeding: SC047 creates the secondary final -n and it must
@@ -194,7 +198,7 @@ class SC023AdjudicationTests(unittest.TestCase):
         for concept in sorted(UN_FINAL_CONCEPTS):
             row = self.baseline[concept]
             form = row["proto"].lstrip("*")
-            before = self.stage("pnwgmc_mn_dissimilation", form)
+            before = self.stage("pnwgmc_long_e_lowering", form)
             after = self.stage("pnwgmc_n_stem_n_loss", form)
             self.assertEqual(
                 before, after,
@@ -205,6 +209,31 @@ class SC023AdjudicationTests(unittest.TestCase):
     def test_tongue_normalizes_citation_stem_to_nasalized_nom_sg(self):
         after = self.stage("pnwgmc_n_stem_n_loss", "túngōn")
         self.assertEqual(after, ["*t*ú*n*g*ǭ"])
+
+    @requires_runtime
+    def test_complete_flask_cells_preserve_secondary_n_and_take_the_late_route(self):
+        forms = ["fláskōniz", "fláskōni"]
+        gateway = runtime_stage_batch(
+            "old_english_sandbox_after_english_proto_input.bin", forms)
+        self.assertEqual(gateway, [
+            ["*f*l*á*s*k*ō*n*i*z"], ["*f*l*á*s*k*ō*n*i"],
+        ])
+        self.assertEqual(runtime_stage_batch(
+            "old_english_sandbox_after_pnwgmc_n_stem_n_loss.bin", forms), gateway)
+        for stage, ending in [
+            ("oe_early_o_shortening", "ō"),
+            ("oe_late_o_shortening", "o"),
+            ("oe_final_unstressed_o_lowering", "a"),
+        ]:
+            with self.subTest(stage=stage):
+                self.assertEqual(runtime_stage_batch(
+                    f"old_english_sandbox_after_{stage}.bin", forms),
+                    [[f"*f*l*a*s*k*{ending}*n"]] * 2)
+        self.assertEqual(runtime_stage_batch("old_english.bin", forms),
+                         [["flascan"], ["flascan"]])
+        self.assertEqual(self.baseline["flask"]["proto"], "*fláskōniz")
+        self.assertEqual(self.baseline["flask"]["counterpart"], "flascan")
+        self.assertEqual(self.baseline["flask"]["match"], "1")
 
     # ------------------------------------------------------------------
     # Canonical metadata: stage from metadata, not from the name prefix
@@ -219,11 +248,11 @@ class SC023AdjudicationTests(unittest.TestCase):
         self.assertEqual(row["action_status"], "metadata_corrected")
         self.assertEqual(row["fst_identifier"], "PNWGmcNStemNLoss")
 
-    def test_inventory_says_proto_germanic_holding_zone(self):
+    def test_inventory_says_proto_germanic_before_early_apocope(self):
         row = {r["change_id"]: r for r in _tsv_rows(INVENTORY)}["SC023"]
         self.assertEqual(row["stage"], "Proto-Germanic")
         self.assertEqual(row["historical_stage"], "Proto-Germanic")
-        self.assertEqual(row["pipeline_stage"], "SC018-SC025 editorial holding zone")
+        self.assertEqual(row["pipeline_stage"], "Before early i-apocope")
         # The firing count is machine evidence: assert it AGREES with the
         # canonical census rather than pinning a hand-copied number.
         census = {r["sc_id"]: r for r in _tsv_rows(CENSUS)}["SC023"]

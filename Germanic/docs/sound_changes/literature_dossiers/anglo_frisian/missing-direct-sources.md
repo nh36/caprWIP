@@ -11,6 +11,22 @@ Earlier acquisition/coverage statements below remain historical receipts;
 they do not override this current access update. The earlier synthesis has
 not been silently rewritten or retrospectively upgraded to direct Fulk evidence.
 
+## Post-adoption ending follow-up, 14 November 2026
+
+Flask's adopted regular nominative plural does not close the comparative
+history of newly final `*-ōn`. Obtain and read Boutkan 1995,
+*The Germanic “Auslautgesetze”*, §3.2.14 (especially pp.289–290),
+against Hill 2010 pp.433–443 and Ringe–Taylor 2014 pp.62–63,163–164.
+Hill is now directly held; Boutkan is not yet directly consulted.
+Collect cell-secure early English and Frisian evidence distinguishing
+`*-ōni/-ōniz` from following-u accusatives, date raising relative to
+apocope and the Anglo-Frisian split, and check possible redistribution.
+Evaluate *Ēastron/-un* by inherited cell, not rounded spelling alone;
+keep *foldu/eorðu* and the pre-m *tungum* problem separate.
+This follow-up proceeds after adoption and is not an acquisition veto
+on the user-authorized production change. No shared innovation or
+chronology edge is established merely by the successful Flask output.
+
 ## Why this file exists
 
 The specialist sources ingested in this pass depend heavily on a smaller set of

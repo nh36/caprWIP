@@ -70,9 +70,12 @@ class RegistryCoherenceTests(unittest.TestCase):
             if tgt in sentinels:
                 self.assertIn(
                     e["relation_type"],
-                    {"runner_limited_boundary", "technical_computational"},
+                    {"runner_limited_boundary", "technical_computational",
+                     "superseded_experiment"},
                     e,
                 )
+                if e["relation_type"] == "superseded_experiment":
+                    self.assertEqual(e["evidence_basis"], "archived_experiment", e)
             else:
                 self.assertIn(tgt, self.by_id)
 
@@ -371,9 +374,9 @@ class FingerprintGuardTests(unittest.TestCase):
             "43a57847b70b39ec130b4b52a17065be8cedd0e5fe7c6cc801ae1bcecae9fe2c",
         )
         self.assertEqual(data["legacy_subset_sha256"],
-                         "6e098bbd407f42f17c9aac05fcf164f5bf91ab1ad29730d362a83f9fef068960")
+                         "145b92fe89d055e8a14e900cc0755ac3f4f1219b5ba815e10d111a057a016624")
         self.assertEqual(data["outputs_sha256"],
-                         "3fd12209d595843df3f4f56e7d667293ba56611ffc7c96f2aec19eef7b06325a")
+                         "1bef3798e864ce1277511f9d9f6bf5c461dcbfa4608173849f4b467225e89727")
         previous = {
             row["row_id"]: row
             for row in csv.DictReader(

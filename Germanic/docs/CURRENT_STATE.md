@@ -5,6 +5,12 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The user-authorized [Flask nominative-plural adoption](sound_changes/audits/sc069-adjudication.md)
+promotes the measured late-final-n cascade on the research branch.
+Hill's alternative and the comparative English/Frisian ending follow-up
+remain explicit; production certification is recorded separately from
+the earlier experimental verdict.
+
 The unified Fulk--Goering account, early final-n loss, corrected w-loss
 and fee transponent were certified at
 [99b1d2e9](https://github.com/nh36/caprWIP/commit/99b1d2e919a191910e8e6df5ef4b138e9bad4de1#commitcomment-208866282).

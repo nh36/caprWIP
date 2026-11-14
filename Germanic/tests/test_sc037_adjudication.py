@@ -32,6 +32,43 @@ FINAL_NASAL_CHANGED = {
 }
 
 
+def before_flask_adoption(current):
+    """Validate the exact later promotion before checking older source freezes."""
+    previous = parse_defines(subprocess.check_output(
+        ["git", "show", "07829f2e88e5afb60e7949adbf77bdd9e4909b00:Germanic/fsts/germanic.txt"],
+        cwd=ROOT, text=True))
+    expected = {name: fact.body for name, fact in previous.items()}
+    expected.update({
+        "PGWeakTails": """[
+            ō:{*ō} n:{*n} u:{*u} n:{*n} z:{*z} |
+            ō:{*ō} n:{*n} i:{*i} z:{*z} |
+            ō:{*ō} n:{*n} i:{*i} |
+            ō:{*ō} n:{*n} ų:{*ų} |
+            ō:{*ō} m:{*m} a:{*a} z:{*z}
+        ]""",
+        "EnglishProtoNative": """[
+            [{ᵘ}:{*ᵘ} | {ᶜ}:{*ᶜ} | 0] pgrmWord |
+            [{ᵘ}:{*ᵘ} | {ᶜ}:{*ᶜ} | 0]
+            [pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed |
+             pgrmStrongNasal | pgrmStrongNasalPrefixed] PGWeakTails
+        ]""",
+        "EarlyEnglishLineChanges": previous["EarlyEnglishLineChanges"].body.replace(
+            ".o. PNWGmcLongELowering",
+            ".o. PNWGmcLongELowering .o. PNWGmcNStemNLoss"),
+        "EnglishProtoToOE": previous["EnglishProtoToOE"].body.replace(
+            ".o. PNWGmcNStemNLoss", ""),
+        "OEEarlyOShortening": """Ctx([
+            {*ō} -> {*a} || EnglishStarVocalic
+            [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+            [{*m} | {*n} ContextSegments]
+        ])""",
+    })
+    assert current.keys() == expected.keys()
+    for name, body in expected.items():
+        assert "".join(current[name].body.split()) == "".join(body.split()), name
+    return previous
+
+
 def assert_final_nasal_scope(current):
     source = subprocess.check_output(
         ["git", "show", "d067bab941d69227652961999fb6b0961851c4d4:Germanic/fsts/germanic.txt"],
@@ -72,7 +109,8 @@ def assert_intervention_scope():
     assert not old.keys() - tested.keys()
     assert {name for name in old if old[name].definition_raw != tested[name].definition_raw} == (
         INTERVENTION_CHANGED)
-    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    current = before_flask_adoption(
+        parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text()))
     for name in (INTERVENTION_ADDED | INTERVENTION_CHANGED) - CONSOLIDATION_CHANGED:
         assert current[name].definition_raw == tested[name].definition_raw
     consolidated_base = parse_defines(subprocess.check_output(

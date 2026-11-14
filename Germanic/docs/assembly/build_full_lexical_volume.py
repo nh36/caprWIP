@@ -380,7 +380,7 @@ def clean_reader_facing_prose(text: str) -> str:
         ("selected comparison for", "comparison used for"),
     ]
     for old, new in specific_replacements:
-        cleaned = cleaned.replace(old, new)
+        cleaned = re.sub(r"\b" + re.escape(old) + r"\b", new, cleaned)
     cleaned = re.sub(r"\bselected input form\b", "form followed here", cleaned)
     cleaned = re.sub(r"\bselected input\b", "derivational input", cleaned)
     cleaned = re.sub(r"\bselected target\b", "Old English form here", cleaned)

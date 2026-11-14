@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (314) ===
+=== DERIVATION_CLASS: regular (315) ===
 
 
 
@@ -1623,6 +1623,31 @@ PGmc Nasal Loss Before X: *fūxstiz
 ### Orthography & surface
 
 Outcome: fȳst
+
+
+
+# flask
+PROTO: *fláskōniz
+EXPECTED: flascan
+OUTPUTS: flascan
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *fláskōniz
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *fláskōnz<br>EAF Final Z Deletion: *fláskōn<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *flæskōn<br>OE A Restoration: *flaskōn<br>OE Late O Shortening: *flaskon<br>OE Final Unstressed O Lowering: *flaskan |
+
+
+
+### Orthography & surface
+
+Outcome: flascan
+
+NOTE: Selected nominative plural flascan: Hecht 1900, C p.141 l.27.
 
 
 
@@ -7515,7 +7540,7 @@ NOTE: Second-person plural pronoun, dat.(-acc.) pl. PGmc *izwiz (Goth. izwis) > 
 
 
 
-=== DERIVATION_CLASS: early_analogy (36) ===
+=== DERIVATION_CLASS: early_analogy (35) ===
 
 
 
@@ -7686,30 +7711,6 @@ English Proto Input: *féx
 
 Old English Orthography: *féoh
 Outcome: feoh
-
-
-
-# flask
-PROTO: *fláskōn
-EXPECTED: flasce
-OUTPUTS: flæsċe
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *fláskōn
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *fláskǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *fláskā<br>EAF Brightening: *flæskā<br>EAF Brightening Long Final: *flæskǣ<br>OE Sk Palatalization: *flæʃǣ<br>OE Unstressed Long Vowel Shortening: *flæʃæ<br>OE Unstressed AE Merger: *flæʃe |
-
-
-
-### Orthography & surface
-
-Old English Orthography: *flæsċe
-Outcome: flæsċe
 
 
 

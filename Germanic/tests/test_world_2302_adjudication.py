@@ -21,6 +21,7 @@ from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
 from test_lexical_editorial_publication import (
     assert_nightmare_index_delta, assert_final_nasal_index_delta,
+    assert_flask_nompl_index_delta,
 )
 
 
@@ -701,6 +702,9 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     final_nasal = [row for row in added if row["note"].startswith("Final nasal candidate:")]
     assert_final_nasal_index_delta(final_nasal)
     added = [row for row in added if row not in final_nasal]
+    flask = [row for row in added if row["note"].startswith("Flask nominative-plural adoption:")]
+    assert_flask_nompl_index_delta(flask)
+    added = [row for row in added if row not in flask]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

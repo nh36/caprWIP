@@ -462,6 +462,37 @@ The rule reads the stressed tier \emph{*ḗ} only, in keeping with the stress re
 
 The rule stands near the head of the cascade, before the genuinely West Germanic innovations such as early \emph{i}-apocope, \emph{*ij}-contraction, and \emph{j}-gemination — the placement follows from the dating: the second-century runic evidence puts the lowering among the earliest Northwest Germanic developments, well before the changes that separate West Germanic from Norse. Its output \emph{*ā} is consumed much later in the cascade by [SC102 EAFHiatusWInsertion](#rule-EAFHiatusWInsertion), [SC025 EAFLongANasalRounding](#rule-EAFLongANasalRounding), and [SC101 EAFLongAFronting](#rule-EAFLongAFronting): if the lowering is instead displaced after those rules, [mḗnōθz]{.recon} 'month' yields [*mānaþ*]{.pred} rather than OE *mōnaþ* 'month', [skḗpą]{.recon} 'sheep' yields [*sċāp*]{.pred} rather than *sċēap* 'sheep', and [sḗaną]{.recon} 'to sow' never acquires the hiatus-filling \emph{w} of *sāwan* 'to sow'. Within the cascade no earlier boundary has been demonstrated; the second-century runic attestation supplies the absolute dating.
 
+## Word-final \emph{n}-loss
+
+### Historical discussion
+
+The change isolated here is far older than its position in the cascade suggests: it is the general (pre-)Proto-Germanic loss of word-final \emph{*n}, with nasalization of the preceding vowel, in polysyllables. Ringe's proof set for the law spans the whole grammar — nouns such as \emph{*yugón} > \emph{*juką} 'yoke', pronouns such as \emph{*tón} > \emph{*þanǭ}, and even the verb form \emph{*dedǭ} 'I did' — so it is general phonology, not a fact about any one declension [@Ringe2017, pp. 101--103]. Gothic \emph{tuggo} shares the weak nominative-singular outcome, and the nasalized reflex \emph{*-ǭ} remained contrastive into Proto-West Germanic before yielding OE \emph{-e} [@RingeTaylor2014, pp. 54--55, 58--59].
+
+Within the present corpus the change surfaces in exactly one shape: the weak nouns are cited in the stem form \emph{*-ōn-}, and this rule carries them to the Proto-Germanic nominative singular in \emph{*-ǭ}, as in \emph{*túngōn} > \emph{*túngǭ} > *tunge* 'tongue', alongside *eorþe* 'earth', *heorte* 'heart', *nǣdre* 'adder', and twelve further weak nouns. The masculine weak nominative singular in trimoric \emph{*-ô} never had a final \emph{*-n} to lose, and Proto-Germanic \emph{*sebun} 'seven', \emph{*nigun} 'nine', and \emph{*tehun} 'ten' kept their \emph{-n} by lexical analogy among the numerals [@Ringe2017, p. 103]; the rule's narrow \emph{*-ōn} environment leaves all of these correctly untouched.
+
+### SC023. Loss of word-final \emph{*n} after \emph{*ō} (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss}
+
+```foma
+define PNWGmcNStemNLoss [
+    {*ō} {*n} -> {*ǭ} || _ .#.
+];
+```
+
+The verb *dōn* 'do' supplies the negative, counterfeeding witness for the chronology. PGmc [dōną]{.recon} 'do' passes this rule untouched; only [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) later strips the final [ą]{.recon} and creates a new word-final [-ōn]{.recon}. That secondary [-n]{.recon} survives into *dōn* precisely because the old loss was no longer active: if [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) is displaced after the apocope, it consumes the new nasal and the derivation collapses entirely (\emph{+?}).
+
+The retained \emph{-n} of *dōn* 'do' therefore supplies a terminus ante quem for the loss — it must be dead before the apocope — while the sixteen selected weak nouns above are its positive witnesses; the lower boundary remains unattested within the cascade, as befits a change already complete in Proto-Germanic.
+
+The rule now executes before early apocope. After that apocope,
+\emph{*fláskōniz} 'flasks' and dative singular \emph{*fláskōni}
+'flask' have secondary final nasals, like the independently later nasal
+of *dōn* 'do'. The completed old loss leaves them untouched.
+Flask's unselected singular remains a positive diagnostic, but the
+selected plural is not a live application of this rule. The
+[weak-paradigm comparison after early apocope](#weak-n-paradigms-after-apocope)
+sets out the adopted late-shortening route to *flascan* and the
+alternative raising-and-redistribution account
+[@Ringe2017, pp. 312--313; @RingeTaylor2014, pp. 117--118, 163--164].
+
 ## Early i-apocope
 
 ### Historical discussion
@@ -1945,7 +1976,52 @@ without declaring the competing reconstructions settled
 [@Fulk2018, pp. 88--90, 171--172, §§5.5--5.6, 7.32--7.33;
 @HoggGrammar2011, pp. 64--65, §§3.32--3.34].
 
-The phonological distinction is testable. If inherited \emph{*ō}
+The northern relics constrain raising before the later loss of final
+\emph{*n}, not the date of the old loss in
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss). Hogg identifies
+*foldu* 'earth' in Cædmon's Hymn and *eorðu* 'earth' in the Leiden Riddle as early
+Northumbrian accusatives; the same texts also retain final \emph{-n}
+[@HoggGrammar2011, pp. 298--299, §§7.98--7.100].
+Their \emph{-u} supports a raising history, but does not choose the
+quantity and nasalization history of the secondary-nasal plural.
+
+CAPR adopts the third, regular northern ending history for the selected
+Flask nominative plural, while retaining the other accounts as
+historical alternatives. Hill argues specifically for common West
+Germanic raising before tautosyllabic \emph{n}, with redistribution
+in English and Frisian; his later North Germanic raising is a separate
+development [@Hill2010, pp. 433--443]. The northern following-\emph{u}
+accusatives do not independently date raising in every newly final
+\emph{*-ōn} cell.
+
+The adopted derivation retains \emph{*ō} in nominative plural
+\emph{*fláskōniz} and dative singular \emph{*fláskōni}. Old n-loss
+precedes apocope, so the newly exposed final nasal survives. Root
+fronting and restoration give \emph{*flæskōn > *flaskōn};
+[SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) now applies before
+\emph{m} and nonfinal \emph{n}, not before final \emph{n}. The long
+vowel therefore survives unstressed fronting and follows the existing
+late route, \emph{*flaskōn > *flaskon > *flaskan}, under
+[SC071 OELateOShortening](#rule-OELateOShortening) and
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering).
+Both attested cells give *flascan* through normal entry; the nominative
+plural is selected, not an identically spelled singular substituted
+for it [@Hecht1900, C p. 141, line 27; p. 142, lines 2--4].
+The parallel plural gives *tungan*, while inherited nominative
+singular \emph{*túngōn} still gives *tunge*.
+
+Campbell and Hogg support late shortening of retained long vowels;
+Stausland Johnsen supplies the late medial/final split
+[@Campbell1959, pp. 147--148, §355;
+@HoggGrammar2011, pp. 227--228, §§6.27--6.28;
+@StauslandJohnsen2015, pp. 28--31]. His corpus test concerns West
+Saxon class-II verbs, not a separately demonstrated history of every
+noun ending [@StauslandJohnsen2015, p. 36]. Retention of \emph{*ō}
+in these secondary-final-n cells is the adopted synthesis of these
+analyses and Ringe and Taylor's third account, not a new inference
+from output agreement alone.
+
+Earlier experiments distinguished other possible mechanisms. If inherited \emph{*ō}
 remains before the retained nasal, it can feed
 [SC046 OEARestoration](#rule-OEARestoration). If it then shortens only
 after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization),
@@ -1953,14 +2029,23 @@ the newly short vowel can still front under
 [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly),
 giving predicted \emph{-en}. Earlier shortening before nasalization,
 or an independently justified earlier unrounding, offers a different
-route to \emph{-an}. The corresponding experimental routes give
-*flascan* 'flasks', *tungan* and *ascan* 'ashes'; the current execution
-with a protected secondary nasal instead gives predicted
+route to \emph{-an}. Both routes derive *flascan* 'flasks' and
+*tungan* from the full inherited inputs through an experimental
+normal-entry relation admitting the independently reconstructed weak
+endings. A conditional ashes plural gives *ascan* 'ashes'; it is not
+an additional case-secure textual witness. Protecting the secondary
+nasal without either vowel change under the former unrestricted early shortening instead gave predicted
 [flascen]{.pred}, [tungen]{.pred} and [ascen]{.pred}.
 These are alternative histories to evaluate against the entire
-paradigm, not grammatical conditions on a sound law. In particular,
+paradigm, not grammatical conditions on a sound law. They differ before
+another vowel: early shortening of accusative \emph{*tungōnų} feeds
+syncope and gives predicted [tungn]{.pred}, whereas final-only unrounding
+leaves predicted [tungunu]{.pred}. Neither result completes the raising
+and ending history. In particular,
 the inherited dative-plural route must also account for attested
-*tungum*, rather than predicted [tungem]{.pred}.
+*tungum*, rather than predicted [tungem]{.pred}. The adopted admission and late-final-n route remove the input-coverage
+and selected-plural obstacles, not these accusative and pre-\emph{m}
+raising problems. They do not purport to regularize the whole paradigm.
 
 ### The genitive plural is a separate test
 
@@ -2020,6 +2105,11 @@ fronting, but not that particular combination of conditions
 [@Versloot2025, pp. 122--124]. The lexeme discussion therefore compares
 regular alternatives with the explicit levelling account, without
 treating either the existing output or the formation label as proof.
+CAPR declines to adopt retention; the historical possibility remains
+open. The working singular account is root-vowel extension from the
+inflected paradigm, as explained under
+[SC043 EAFBrightening](#rule-EAFBrightening). That decision does not
+settle which ending history produced the plural.
 
 ## Alternative cuts and their tree consequences
 
@@ -2475,35 +2565,6 @@ later nasal has been retired: it simulated paradigm levelling rather than a soun
 law.)
 
 Moving [SC022 PNWGmcMnDissimilation](#rule-PNWGmcMnDissimilation) earlier or later leaves every output unchanged. Its executable place in this holding zone is therefore editorial/computational, while its historical classification rests on the handbook account of \emph{mn}-dissimilation.
-
-## Word-final \emph{n}-loss
-
-### Historical discussion
-
-The change isolated here is far older than its position in the cascade suggests: it is the general (pre-)Proto-Germanic loss of word-final \emph{*n}, with nasalization of the preceding vowel, in polysyllables. Ringe's proof set for the law spans the whole grammar — nouns such as \emph{*yugón} > \emph{*juką} 'yoke', pronouns such as \emph{*tón} > \emph{*þanǭ}, and even the verb form \emph{*dedǭ} 'I did' — so it is general phonology, not a fact about any one declension [@Ringe2017, pp. 101--103]. Gothic \emph{tuggo} shares the weak nominative-singular outcome, and the nasalized reflex \emph{*-ǭ} remained contrastive into Proto-West Germanic before yielding OE \emph{-e} [@RingeTaylor2014, pp. 54--55, 58--59].
-
-Within the present corpus the change surfaces in exactly one shape: the weak nouns are cited in the stem form \emph{*-ōn-}, and this rule carries them to the Proto-Germanic nominative singular in \emph{*-ǭ}, as in \emph{*túngōn} > \emph{*túngǭ} > *tunge* 'tongue', alongside *eorþe* 'earth', *heorte* 'heart', *nǣdre* 'adder', and thirteen further weak nouns. The masculine weak nominative singular in trimoric \emph{*-ô} never had a final \emph{*-n} to lose, and Proto-Germanic \emph{*sebun} 'seven', \emph{*nigun} 'nine', and \emph{*tehun} 'ten' kept their \emph{-n} by lexical analogy among the numerals [@Ringe2017, p. 103]; the rule's narrow \emph{*-ōn} environment leaves all of these correctly untouched.
-
-### SC023. Loss of word-final \emph{*n} after \emph{*ō} (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss}
-
-```foma
-define PNWGmcNStemNLoss [
-    {*ō} {*n} -> {*ǭ} || _ .#.
-];
-```
-
-The verb *dōn* 'do' supplies the negative, counterfeeding witness for the chronology. PGmc [dōną]{.recon} 'do' passes this rule untouched; only [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope) later strips the final [ą]{.recon} and creates a new word-final [-ōn]{.recon}. That secondary [-n]{.recon} survives into *dōn* precisely because the old loss was no longer active: if [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) is displaced after the apocope, it consumes the new nasal and the derivation collapses entirely (\emph{+?}).
-
-The retained \emph{-n} of *dōn* 'do' therefore supplies a terminus ante quem for the loss — it must be dead before the apocope — while the seventeen weak nouns above are its positive witnesses; the lower boundary remains unattested within the cascade, as befits a change already complete in Proto-Germanic.
-
-This citation-form proxy is not a general entry route for inherited
-plurals. After early apocope, \emph{*fláskōniz} 'flasks' has a secondary
-final nasal, like the independently later nasal of *dōn* 'do'. In the present
-serialization the proxy consumes it; protecting it restores the back-root
-history but leaves the separate ending question. The
-[weak-paradigm comparison after early apocope](#weak-n-paradigms-after-apocope)
-sets out the inherited cells and rival regular and remodelled accounts
-[@Ringe2017, pp. 312--313; @RingeTaylor2014, pp. 117--118, 163--164].
 
 ## Nasal-spirant lengthening
 
@@ -4378,6 +4439,34 @@ Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \em
 
 Brightening creates the input to [SC044 OEBreaking](#rule-OEBreaking), while [SC046 OEARestoration](#rule-OEARestoration) later partly reverses its outcome before back vowels.
 
+Wright and Wright (§57) explain the root vowel of *flasce* 'flask' by
+retention of Germanic \emph{*a} before \emph{*sk} when the following
+syllable originally contained a back vowel. Their formulation also covers
+\emph{*st} and most geminates. Two of their examples, *wascan* 'wash' and
+*masc/max* 'net, mesh', allow the same root vowel through fronting followed
+by restoration. In the infinitive the following \emph{*a} is still present
+at restoration. In the reconstructed neuter plural of 'net', \emph{*u}
+can trigger restoration before its loss. The front-vowel infinitive
+*wæscan* 'wash' remains unexplained by either derivation. Applying the wider
+retention condition at first fronting also gives predicted [raste]{.pred}
+for the selected input of *ræste* 'rest'. The historical force of that
+comparison depends on the reconstruction of the stem. Wright and Wright
+discuss *rest* under i-umlaut in §56
+[@Wright1908, pp. 37--38, §§56--57;
+@HoggGrammar2011, pp. 93--96, §§5.35--5.38].
+
+The model therefore retains first fronting followed by restoration.
+A restriction on fronting before final \emph{*skā} gives the back vowel
+of *flasce* and *asce* 'ashes', but the comparisons provide no independent
+evidence for that restriction. CAPR declines to adopt the retention rule;
+the evidence leaves the historical possibility open. The working
+explanation of singular *flasce* is extension of the back vowel from
+inflected forms such as *flascan*, as proposed by Campbell and Luick.
+The selected nominative plural now follows regular restoration and
+late ending reduction, without adopting root retention. Its history is discussed in
+[Chapter 3](#weak-n-paradigms-after-apocope)
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+
 The traditional name does not itself establish one inherited event.
 Under Campbell's premise that the daughter contractions precede ordinary
 fronting, comparable English and Frisian outcomes require separate
@@ -4593,8 +4682,10 @@ Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasa
 The weak-noun plural must be distinguished from its nominative citation
 form. A protected secondary nasal leaves \emph{*flæskōn} 'flasks'
 with a back-vowel trigger, and restoration gives \emph{*flaskōn}.
-The subsequent predicted ending \emph{-en} concerns shortening and
-nasalization, not a failure of root restoration. The
+The former predicted ending \emph{-en} concerned early shortening
+and nasalization, not a failure of root restoration. The adopted
+late shortening and lowering now give *flascan* through normal entry
+from both the inherited nominative plural and dative singular. The
 [weak-paradigm comparison](#weak-n-paradigms-after-apocope) separates
 that ending dispute from Campbell's and Luick's analysis of singular
 *flasce* 'flask' after inflected *flascan*
@@ -4658,15 +4749,16 @@ define OESecondaryNasalization Ctx([
 The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
 
 The [weak-paradigm comparison](#weak-n-paradigms-after-apocope) exposes
-an additional, unresolved ordering question. Long \emph{*ō} in a
+the distinction between the adopted and earlier experimental histories. Long \emph{*ō} in a
 protected plural \emph{*flaskōn} 'flasks' is not a target of this
-short-\emph{*a} rule. In the present sequence shortening creates
-\emph{*a} too late for nasalization, so unstressed fronting yields
+short-\emph{*a} rule. In the former unrestricted sequence shortening created
+\emph{*a} too late for nasalization, so unstressed fronting yielded
 predicted [flascen]{.pred}. Experimental shortening after restoration
 but before nasalization instead gives \emph{*flaskąn} and *flascan*.
-That regular route must be assessed against the rival class-wide
-ending histories, not promoted to an independent historical edge
-merely because it fits the plural [@RingeTaylor2014, pp. 163--164;
+Neither that experiment nor its output establishes an independent
+historical edge. In the adopted history long \emph{*ō} survives both
+this rule and unstressed fronting; later shortening and lowering give
+*flascan* without changing secondary nasalization [@RingeTaylor2014, pp. 163--164;
 @Fulk2018, pp. 90, 171--172, §§5.6, 7.32--7.33].
 
 ## Sievers-law syncope
@@ -4751,7 +4843,11 @@ merger, the nominative already has a front root and gives
 \emph{*flæsċe} in either order. Attested *flasce* 'flask' has an
 explicitly sourced levelling analysis, after inflected *flascan* 'flask'
 [@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
-It must not be used as if its former executable agreement independently
+The selected nominative plural instead gives *flascan* with the
+restored back root and hard cluster before its late-reduced ending.
+Its plain written *sc* does not independently date palatalization,
+and the metathesized *flaxan* remains a separate consonantal question.
+The singular must not be used as if its former executable agreement independently
 proved a regular back-root nominative history. The consonantal history
 of the paradigm remains distinct from that proposed root-vowel levelling.
 
@@ -6482,48 +6578,51 @@ and Fulk relate it to apocope, syncope, and the later reductions
 @RingeTaylor2014, pp. 298--314, §§6.8.3--6.9.3;
 @Fulk2018, pp. 90--96, §§5.6--5.7].
 
-Early o-shortening has only a distant earlier boundary. The rules that follow,
+Earlier displacement tests concerned the unrestricted nasal environment;
+they are not current constraints on the restricted rule. The rules that follow,
 especially [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly)
 and [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening),
 have more closely defined relations.
 
-### \CAPRRuleHeading{SC069. Early shortening of unstressed \emph{*ō} before nasals}{OEEarlyOShortening} {#rule-OEEarlyOShortening}
+### \CAPRRuleHeading{SC069. Early shortening of unstressed \emph{*ō} before m and nonfinal n}{OEEarlyOShortening} {#rule-OEEarlyOShortening}
 
 ```foma
 define OEEarlyOShortening Ctx([
-    # EARLY: *ō → *a before nasals (runs BEFORE fronting)
-    # This *a will undergo fronting: *a → *æ → e (Campbell §333, §369)
-    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ EnglishStarNasal
+    # Final *ōn survives to SC071/SC100, after unstressed fronting.
+    # Adopted northern ending route: Ringe/Taylor 2014:164, scenario 3.
+    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+    [{*m} | {*n} ContextSegments]
 ]);
 ```
 
-The rule shortens unstressed long \emph{*ō} before a following nasal. Because this shortening happens early, the resulting \emph{*a} can still participate in the later fronting and merger that shape many weak final syllables.
+The rule shortens unstressed long \emph{*ō} before \emph{m}, and before
+\emph{n} when another segment follows. Its product can undergo later
+unstressed fronting. It does not shorten \emph{*ō} before word-final
+\emph{n}; this is a phonological condition, not a declension restriction.
 
-Moving the rule before
-[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss), PGmc [nḗdrōn]{.recon} ‘adder’ yields
-[*nǣdran*]{.pred} rather than expected OE *nǣdre* ‘adder’, PGmc [érθōn]{.recon} ‘earth’ yields
-[*eorþan*]{.pred} rather than expected *eorþe* ‘earth’, and PGmc [fláskōn]{.recon} ‘flask’ yields
-[*flascan*]{.pred} rather than expected *flasce* ‘flask’. The same earlier shift also
-disrupts forms such as *heorte* ‘heart’ and *līne* ‘line’. This broad set of
-failures requires [SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) to follow
+The distinction admits the regular northern ending history discussed by
+Ringe and Taylor. In nominative plural \emph{*fláskōniz} and dative
+singular \emph{*fláskōni}, early apocope exposes secondary final
+\emph{*n}, protected by the earlier completion of
 [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss).
+Restoration gives \emph{*flaskōn}; the long vowel survives this rule
+and fronting, then
+[SC071 OELateOShortening](#rule-OELateOShortening) and
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering)
+give attested *flascan* 'flasks' and 'flask', respectively.
+The [weak-paradigm discussion](#weak-n-paradigms-after-apocope)
+sets out the adopted history and Hill's raising-and-redistribution
+alternative [@RingeTaylor2014, pp. 163--164;
+@Hill2010, pp. 433--443].
 
-If the rule is moved later within the tested sequence, no output differs from the
-expected one. The lexical evidence therefore does not
-identify a corresponding later constraint. The sources place early
-\emph{*ō}-shortening before the later weak-tail changes without fixing a closer
-local order.
-
-The selected nominative witnesses do not by themselves resolve inherited
-weak plurals. With a secondary final nasal protected, \emph{*flaskōn}
-'flasks' undergoes root restoration but is shortened only after
-[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization),
-leaving newly short \emph{*a} available for fronting and predicted
-[flascen]{.pred}. The [weak-paradigm comparison](#weak-n-paradigms-after-apocope)
-contrasts that result with experimental earlier shortening and with
-the rival regular and remodelled ending histories. Neither a new
-ordering nor an inherited-cell selection is adopted on that fit alone
-[@RingeTaylor2014, pp. 117--118, 163--164].
+The older unrestricted rule, applied to a protected secondary nasal,
+gave predicted [flascen]{.pred}. Earlier shortening before nasalization
+and early unrounding also reproduced \emph{-an} in experiments, but are
+not adopted. Likewise, the old broad displacement failures for
+*nǣdre* 'adder', *eorþe* 'earth', *flasce* 'flask',
+*heorte* 'heart' and *līne* 'line' measured that unrestricted rule,
+not the final-n exemption now implemented. They establish no new
+local boundary for the restricted rule.
 
 ## Early unstressed fronting
 
@@ -6561,10 +6660,13 @@ the older palatal developments.
 Whether a weak plural reaches this rule with oral \emph{*a} or
 nasalized \emph{*ą} depends on the earlier ending history. The
 [weak-paradigm comparison](#weak-n-paradigms-after-apocope) explains
-why a protected secondary nasal alone still gives predicted
-[flascen]{.pred}, while the experimental shortening-before-nasalization
-route gives *flascan* 'flasks'. The difference tests the source of the
-vowel presented to fronting; it does not justify conditioning the
+why a protected secondary nasal with the former unrestricted early
+shortening gave predicted
+[flascen]{.pred}, while experimental shortening-before-nasalization also gave
+*flascan* 'flasks'. The adopted route instead retains long
+\emph{*ō} through this rule and reaches \emph{-an} by late shortening
+and lowering. The difference tests the source of the vowel presented
+to fronting; it does not justify conditioning the
 sound law by declension [@RingeTaylor2014, pp. 163--164;
 @Fulk2018, pp. 171--172, §§7.32--7.33].
 
@@ -6597,6 +6699,17 @@ define OELateOShortening Ctx([
 The rule shortens the remaining unstressed long \emph{*ō} after fronting. The
 shortened vowel is then resolved by the following medial/final distribution,
 not directly as \emph{a} [@StauslandJohnsen2015, pp. 28--31].
+
+The adopted weak-noun history supplies another final-syllable witness:
+nominative plural \emph{*fláskōniz} and dative singular
+\emph{*fláskōni} both reach \emph{*flaskōn}, with restored root
+\emph{a} and a secondary nasal. Their ending escapes early shortening
+and fronting; this rule gives \emph{*flaskon}, and
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering)
+gives attested *flascan* 'flasks' and 'flask'. The
+[weak-paradigm discussion](#weak-n-paradigms-after-apocope) distinguishes
+this adopted noun-ending history from the independently tested
+verb mechanism and Hill's raising-and-redistribution alternative.
 
 Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc [búrōθi]{.recon} ‘bears’ yield [*boreþ*]{.pred} rather than expected OE *boraþ* 'bears'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly).
 
@@ -6634,6 +6747,15 @@ month control continues PGmc [mḗnōθz]{.recon} ‘month’ through shortened
 instead. The medial/final contrast and its chronology after long-vowel
 shortening are Stausland Johnsen's analysis [@StauslandJohnsen2015,
 pp. 28--31].
+
+In the adopted weak-noun history, newly final \emph{*-ōn} also reaches
+this late route. Nominative plural \emph{*fláskōniz} and dative
+singular \emph{*fláskōni} share \emph{*flaskōn > *flaskon > *flaskan},
+giving attested *flascan* 'flasks' and 'flask'. The long vowel has
+survived early shortening and fronting; this rule supplies only the
+last lowering, not the earlier nasal survival or root restoration.
+The inherited singular still gives predicted [flæsċe]{.pred},
+not attested *flasce* 'flask'; its root-vowel problem is separate.
 
 ## Unstressed long-vowel shortening
 

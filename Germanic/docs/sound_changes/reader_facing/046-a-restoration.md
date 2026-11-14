@@ -21,8 +21,10 @@ Restoration must receive fronted \emph{*æ} and return \emph{*a} before the nasa
 The weak-noun plural must be distinguished from its nominative citation
 form. A protected secondary nasal leaves \emph{*flæskōn} 'flasks'
 with a back-vowel trigger, and restoration gives \emph{*flaskōn}.
-The subsequent predicted ending \emph{-en} concerns shortening and
-nasalization, not a failure of root restoration. The
+The former predicted ending \emph{-en} concerned early shortening
+and nasalization, not a failure of root restoration. The adopted
+late shortening and lowering now give *flascan* through normal entry
+from both the inherited nominative plural and dative singular. The
 [weak-paradigm comparison](#weak-n-paradigms-after-apocope) separates
 that ending dispute from Campbell's and Luick's analysis of singular
 *flasce* 'flask' after inflected *flascan*

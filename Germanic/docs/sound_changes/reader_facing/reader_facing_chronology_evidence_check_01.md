@@ -7,7 +7,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 ## Summary
 
 - Sections checked: 109.
-- Sections with absent cues or notation observations: 71.
+- Sections with absent cues or notation observations: 72.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -16,6 +16,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 014-unstressed-ai-monophthongization.md | SC014. Monophthongization of unstressed \emph{*ai} (`PNWGmcUnstressedAiMonophthongization`) {#rule-PNWGmcUnstressedAiMonophthongization} | yes | yes | yes | yes | yes | no | no | — |
 | 005-unstressed-a-raising-before-final-m.md | SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`PNWGmcAToUBeforeM`) {#rule-PNWGmcAToUBeforeM} | yes | yes | yes | yes | no | no | no | missing explicit verbal boundary conclusion |
 | 024-long-e-lowering.md | SC024. Lowering of stressed long \emph{ē} (`PNWGmcLongELowering`) {#rule-PNWGmcLongELowering} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 023-n-stem-n-loss.md | SC023. Loss of word-final \emph{*n} after \emph{*ō} (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 006-early-i-apocope.md | SC006. Early i-apocope (`PWGmcEarlyIApocope`) {#rule-PWGmcEarlyIApocope} | yes | yes | yes | yes | yes | yes | no | — |
 | 007-final-o-lowering-before-r.md | SC007. Lowering of final bimoric \emph{*ō} before \emph{*r} (`PWGmcFinalOrLowering`) {#rule-PWGmcFinalOrLowering} | yes | yes | yes | yes | yes | no | no | — |
 | 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
@@ -37,7 +38,6 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 112-monosyllabic-final-r-lengthening.md | SC112. Stressed monosyllabic lengthening before inherited final \emph{r} (`PNWGmcMonosyllabicFinalRLengthening`) {#rule-PNWGmcMonosyllabicFinalRLengthening} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 003-west-germanic-rhotacism.md | SC003. West Germanic rhotacism (`EAFRhotacism`) {#rule-EAFRhotacism} | yes | yes | yes | yes | yes | no | no | — |
 | 022-mn-dissimilation.md | SC022. Dissimilation of adjacent \emph{mn} (`PNWGmcMnDissimilation`) {#rule-PNWGmcMnDissimilation} | yes | no | no | yes | no | yes | no | — |
-| 023-n-stem-n-loss.md | SC023. Loss of word-final \emph{*n} after \emph{*ō} (`PNWGmcNStemNLoss`) {#rule-PNWGmcNStemNLoss} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 026-nasal-spirant-lengthening.md | SC026. North Sea Germanic nasal-spirant law, first step (`EAFNasalSpirantLengthening`) {#rule-EAFNasalSpirantLengthening} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 027-nasal-spirant-loss.md | SC027. North Sea Germanic nasal-spirant law, second step (`EAFNasalSpirantLoss`) {#rule-EAFNasalSpirantLoss} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 102-hiatus-w-insertion.md | SC102. Generalized hiatus-breaking \emph{w} after long \emph{ā} (`EAFHiatusWInsertion`) {#rule-EAFHiatusWInsertion} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
@@ -97,7 +97,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 116-secondary-high-marker-decoding.md | SC116. Technical secondary high-marker decoding (`OEHighStressDecode`) {#rule-OEHighStressDecode} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 067-dental-assimilation.md | SC067. Dental assimilation in newly formed clusters (`OEDentalAssimilation`) {#rule-OEDentalAssimilation} | no | no | no | no | yes | yes | no | missing move-condition wording |
 | 068-preconsonantal-degemination.md | SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination} | no | yes | yes | yes | yes | yes | no | missing move-condition wording |
-| 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before nasals (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | yes | yes | yes | yes | yes | no | no | — |
+| 069-early-o-shortening-context-note.md | SC069. Early shortening of unstressed \emph{*ō} before m and nonfinal n (`OEEarlyOShortening`) {#rule-OEEarlyOShortening} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 070-early-unstressed-fronting.md | SC070. Early fronting of unstressed \emph{*a} (`OEUnstressedFrontingEarly`) {#rule-OEUnstressedFrontingEarly} | yes | yes | yes | yes | yes | no | no | — |
 | 071-late-o-shortening.md | SC071. Later shortening of unstressed \emph{*ō} (`OELateOShortening`) {#rule-OELateOShortening} | yes | yes | yes | yes | yes | no | no | — |
 | 099-medial-unstressed-o-raising.md | SC099. Medial raising of shortened unstressed \emph{*o} (`OEMedUnstressedORaising`) {#rule-OEMedUnstressedORaising} | no | no | no | yes | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |

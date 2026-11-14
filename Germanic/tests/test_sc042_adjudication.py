@@ -48,6 +48,7 @@ def test_complete_live_census_merges_only_final_bimoric_vowels():
         "water": "*w*á*t*a*r", "four": "*f*ēo*w*a*r", "gift": "*g*í*f*t*i",
         "name": "*n*á*m*ô", "who": "*x*w*ā", "horn": "*x*ó*r*n*ą",
         "bake": "*b*á*k*a*n*ą",
+        "flask": "*f*l*á*s*k*ō*n",
     }
     firings, checked = {}, set()
     entries = parse_entries((ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt").read_text())
@@ -62,7 +63,7 @@ def test_complete_live_census_merges_only_final_bimoric_vowels():
             checked.add(entry.concept)
     assert checked == set(controls)
     assert set(firings) == {
-        "adder", "earth", "flask", "heart", "line", "list", "nettle",
+        "adder", "earth", "heart", "line", "list", "nettle",
         "nightmare", "rest", "side", "soul", "spindle", "sun", "swallow",
         "toe", "tongue", "wart", "weasel", "whore", "widow", "filth", "earthly",
     }
@@ -71,7 +72,6 @@ def test_complete_live_census_merges_only_final_bimoric_vowels():
         assert before[0].endswith(("*ō", "*ǭ"))
         assert after == (before[0][:-2] + "*ā",)
     assert firings["nightmare"][-1] == "mære"
-    assert firings["flask"][-1] == "flæsċe"
 
 
 def test_immutable_assays_authenticate_logs_and_preserve_the_sc042_definition():

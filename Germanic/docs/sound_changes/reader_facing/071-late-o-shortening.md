@@ -28,4 +28,15 @@ The rule shortens the remaining unstressed long \emph{*ō} after fronting. The
 shortened vowel is then resolved by the following medial/final distribution,
 not directly as \emph{a} [@StauslandJohnsen2015, pp. 28--31].
 
+The adopted weak-noun history supplies another final-syllable witness:
+nominative plural \emph{*fláskōniz} and dative singular
+\emph{*fláskōni} both reach \emph{*flaskōn}, with restored root
+\emph{a} and a secondary nasal. Their ending escapes early shortening
+and fronting; this rule gives \emph{*flaskon}, and
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering)
+gives attested *flascan* 'flasks' and 'flask'. The
+[weak-paradigm discussion](#weak-n-paradigms-after-apocope) distinguishes
+this adopted noun-ending history from the independently tested
+verb mechanism and Hill's raising-and-redistribution alternative.
+
 Moving the rule before [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly) makes PGmc [búrōθi]{.recon} ‘bears’ yield [*boreþ*]{.pred} rather than expected OE *boraþ* 'bears'. The contrast requires [SC071 OELateOShortening](#rule-OELateOShortening) to follow [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly).

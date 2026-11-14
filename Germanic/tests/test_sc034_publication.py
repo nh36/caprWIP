@@ -127,6 +127,21 @@ class PublicationTests(unittest.TestCase):
         for i, rule in enumerate(RULES):
             self.assertIn(f"SC{i + 1} descriptive {rule}", plain)
 
+    @unittest.skipUnless(shutil.which("pandoc"), "Pandoc not provisioned")
+    def test_weak_paradigm_cross_volume_link_requires_its_destination(self):
+        target = "weak-n-paradigms-after-apocope"
+        for present in (False, True):
+            with self.subTest(destination_present=present):
+                markdown = f"[weak paradigms](#{target})"
+                if present:
+                    markdown += f"\n\n# Weak paradigms {{#{target}}}\n"
+                result = subprocess.run(
+                    ["pandoc", "--from=markdown", "--to=json",
+                     "--lua-filter=" + str(ROOT / "Germanic/tools/standalone_lexical_links.lua")],
+                    input=markdown, text=True, capture_output=True, check=True)
+                paragraph = json.loads(result.stdout)["blocks"][0]
+                self.assertEqual(paragraph["c"][0]["t"], "Link" if present else "Str")
+
     def test_all_combined_rule_links_have_real_sections(self):
         import re
         book = (ROOT / "Germanic/docs/assembly/capr_book_draft_alpha_01.md").read_text()

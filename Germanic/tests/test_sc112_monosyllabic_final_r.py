@@ -145,6 +145,7 @@ class Sc112Tests(unittest.TestCase):
                     previous = dict(previous, proto="*wír-àldiz",
                                     proto_norm="wír-àldiz", fst_input="wír-àldiz")
                 selected_cells = {
+                    "2016": ("*fláskōniz", "flascan"),
                     "2006": ("*féx", "feoh"),
                     "2011": ("*fúnðanai", "fundne"),
                     "2053": ("*xámaraz", "hamer"),
@@ -158,8 +159,6 @@ class Sc112Tests(unittest.TestCase):
                                     fst_input=proto[1:], counterpart=output, outputs=output)
                 if row_id == "2141":
                     previous = dict(previous, counterpart="mære", outputs="mære")
-                if row_id == "2016":
-                    previous = dict(previous, outputs="flæsċe")
                 self.assertEqual(
                     tuple(self.current[row_id][field] for field in fields),
                     tuple(previous[field] for field in fields),
@@ -204,17 +203,17 @@ class Sc112Tests(unittest.TestCase):
              if self.previous[row_id]["outputs"] != self.current[row_id]["outputs"]},
             {"2011": ("fundene", "fundne"), "2208": ("spinl", "spinle"),
              "2201": ("sāwol", "sāwle"), "2282": ("westene", "west"),
-             "2053": ("hameres", "hamer"), "2016": ("flasce", "flæsċe"),
+             "2053": ("hameres", "hamer"), "2016": ("flasce", "flascan"),
              "2141": ("mare", "mære")},
         )
         self.assertEqual(len(rows(LEGACY)), 380)
 
     def test_exact_counts_and_known_mismatch_membership(self):
-        self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 385)
-        self.assertEqual(sum(r["match"] == "0" for r in self.current.values()), 9)
+        self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 386)
+        self.assertEqual(sum(r["match"] == "0" for r in self.current.values()), 8)
         self.assertEqual(
             {r["row_id"] for r in self.current.values() if r["match"] == "0"},
-            {"1973", "2013", "2016", "2030", "2162", "2224", "2240", "2298", "2300"},
+            {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"},
         )
 
 

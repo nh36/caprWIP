@@ -14,7 +14,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC020 | West Germanic final *z*-deletion | active | SPLIT | `Germanic/docs/sound_changes/audits/sc020-three-rule-adjudication.md` |
 | SC021 | Retired NWGmc Unstressed O Raising | retired | RETIRE | `Germanic/docs/sound_changes/audits/sc021-adjudication.md` |
 | SC022 | Common Germanic Mn Dissimilation | active | REFORMULATE/RETAIN | `Germanic/docs/dossier-sc022-mn-dissimilation-2026.md` |
-| SC023 | Proto-Germanic Word-Final N Loss | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc023-adjudication.md` |
+| SC023 | Proto-Germanic Word-Final N Loss | active | REFORMULATE/RETAIN/REORDER | `Germanic/docs/sound_changes/audits/sc023-adjudication.md` |
 | SC024 | NWGmc Long E1 Lowering | active | SPLIT/REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc024-sc025-sc101-e1-complex-adjudication.md` |
 | SC025 | North Sea Germanic nasalization of long a before a nasal | active | SPLIT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc025-sc104-nasalized-low-vowel-adjudication.md` |
 | SC026 | North Sea Germanic nasal-spirant law (step 1: nasalization and compensatory lengthening) | active | SPLIT/RESTRICT/REFORMULATE | `Germanic/docs/sound_changes/audits/sc026-sc027-nasal-spirant-adjudication.md` |
@@ -44,6 +44,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC065 | Former general-syncope trace anchor | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC066 | Later light-syllable pre-l syncope | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC068 | Preconsonantal degemination before sonorants | active | RETAIN | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
+| SC069 | OE Early O Shortening | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc069-adjudication.md` |
 | SC073 | OE Unstressed AE Merger | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
 | SC074 | Later medial weak-i lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC076 | Pretonic i-lowering | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |

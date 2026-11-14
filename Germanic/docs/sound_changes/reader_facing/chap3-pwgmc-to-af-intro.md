@@ -234,7 +234,43 @@ Northumbrian accusatives; the same texts also retain final \emph{-n}
 Their \emph{-u} supports a raising history, but does not choose the
 quantity and nasalization history of the secondary-nasal plural.
 
-The phonological distinction is testable. If inherited \emph{*ō}
+CAPR adopts the third, regular northern ending history for the selected
+Flask nominative plural, while retaining the other accounts as
+historical alternatives. Hill argues specifically for common West
+Germanic raising before tautosyllabic \emph{n}, with redistribution
+in English and Frisian; his later North Germanic raising is a separate
+development [@Hill2010, pp. 433--443]. The northern following-\emph{u}
+accusatives do not independently date raising in every newly final
+\emph{*-ōn} cell.
+
+The adopted derivation retains \emph{*ō} in nominative plural
+\emph{*fláskōniz} and dative singular \emph{*fláskōni}. Old n-loss
+precedes apocope, so the newly exposed final nasal survives. Root
+fronting and restoration give \emph{*flæskōn > *flaskōn};
+[SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) now applies before
+\emph{m} and nonfinal \emph{n}, not before final \emph{n}. The long
+vowel therefore survives unstressed fronting and follows the existing
+late route, \emph{*flaskōn > *flaskon > *flaskan}, under
+[SC071 OELateOShortening](#rule-OELateOShortening) and
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering).
+Both attested cells give *flascan* through normal entry; the nominative
+plural is selected, not an identically spelled singular substituted
+for it [@Hecht1900, C p. 141, line 27; p. 142, lines 2--4].
+The parallel plural gives *tungan*, while inherited nominative
+singular \emph{*túngōn} still gives *tunge*.
+
+Campbell and Hogg support late shortening of retained long vowels;
+Stausland Johnsen supplies the late medial/final split
+[@Campbell1959, pp. 147--148, §355;
+@HoggGrammar2011, pp. 227--228, §§6.27--6.28;
+@StauslandJohnsen2015, pp. 28--31]. His corpus test concerns West
+Saxon class-II verbs, not a separately demonstrated history of every
+noun ending [@StauslandJohnsen2015, p. 36]. Retention of \emph{*ō}
+in these secondary-final-n cells is the adopted synthesis of these
+analyses and Ringe and Taylor's third account, not a new inference
+from output agreement alone.
+
+Earlier experiments distinguished other possible mechanisms. If inherited \emph{*ō}
 remains before the retained nasal, it can feed
 [SC046 OEARestoration](#rule-OEARestoration). If it then shortens only
 after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization),
@@ -247,7 +283,7 @@ route to \emph{-an}. Both routes derive *flascan* 'flasks' and
 normal-entry relation admitting the independently reconstructed weak
 endings. A conditional ashes plural gives *ascan* 'ashes'; it is not
 an additional case-secure textual witness. Protecting the secondary
-nasal without either vowel change instead gives predicted
+nasal without either vowel change under the former unrestricted early shortening instead gave predicted
 [flascen]{.pred}, [tungen]{.pred} and [ascen]{.pred}.
 These are alternative histories to evaluate against the entire
 paradigm, not grammatical conditions on a sound law. They differ before
@@ -256,9 +292,9 @@ syncope and gives predicted [tungn]{.pred}, whereas final-only unrounding
 leaves predicted [tungunu]{.pred}. Neither result completes the raising
 and ending history. In particular,
 the inherited dative-plural route must also account for attested
-*tungum*, rather than predicted [tungem]{.pred}. Experimental admission
-therefore removes an input-coverage obstacle without settling the
-historical choice.
+*tungum*, rather than predicted [tungem]{.pred}. The adopted admission and late-final-n route remove the input-coverage
+and selected-plural obstacles, not these accusative and pre-\emph{m}
+raising problems. They do not purport to regularize the whole paradigm.
 
 ### The genitive plural is a separate test
 

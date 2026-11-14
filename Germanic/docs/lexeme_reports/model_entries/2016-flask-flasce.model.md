@@ -1,10 +1,9 @@
-# flask — OE flasce
+# flask — OE flascan
 
 PROTO: *flaskō
-PROTOFORM: *fláskōn
-COUNTERPART: flasce
-DERIVATION_CLASS: early_analogy
-OUTPUT_STATUS: implementation_gap
+PROTOFORM: *fláskōniz
+COUNTERPART: flascan
+DERIVATION_CLASS: regular
 
 ### Transducer input and output
 
@@ -12,18 +11,21 @@ OUTPUT_STATUS: implementation_gap
 | :--- | :--- |
 | lexical item | flask |
 | citation reconstruction / lexeme label | *flaskō |
-| selected input form | *fláskōn |
-| Old English comparator | flasce |
-| classification | early_analogy |
-| current cascade output | *fláskōn -> flæsċe |
+| selected input form | *fláskōniz |
+| selected cell | nominative plural, Hecht 1900, C p. 141 l. 27 |
+| Old English comparator | flascan |
+| classification | regular |
+| current cascade output | *fláskōniz -> flascan |
 
 ### Reconstruction and comparative evidence
 
 The wider Germanic family is often cited under a form such as
 [flaskō]{.iv .recon lang=pgmc sort=flasko role=source_protoform} 'flask',
 whereas the formation relevant to Old English is weak feminine
-[fláskōn]{.iv .recon lang=pgmc sort=flaskon role=selected_input} 'flask'
-[@Orel2003, p. 104]. Choosing the weak formation identifies the relevant
+[fláskōniz]{.iv .recon lang=pgmc sort=flaskoniz role=selected_input} 'flasks',
+the inherited weak feminine nominative plural. The weak formation and
+its full ending have separate warrants [@Orel2003, p. 104;
+@Ringe2017, pp. 312--313]. Choosing the weak formation identifies the relevant
 ending history; it does not make the attested nominative's root vowel
 either regular or analogical by definition. The formation label records
 the difference between the comparative headword and selected weak input,
@@ -38,7 +40,7 @@ a complete genitive or accusative reconstruction.
 
 ### Old English evidence
 
-The dictionaries give [*flasce*]{.iv lang=oe sort=flasce role=target_form}
+The dictionaries give [*flasce*]{.iv lang=oe sort=flasce role=comparison_form}
 'flask', with [*flaxe*]{.iv lang=oe sort=flaxe role=comparison_form} 'flask'
 as a variant [@BosworthToller1898, p. 235; @ClarkHall1960, p. 121].
 Ringe and Taylor identify *flaxe* and *flaxan* as late West Saxon
@@ -50,7 +52,9 @@ wine' makes [*flascan*]{.iv lang=oe sort=flascan role=comparison_form} 'flask'
 accusative singular, the direct object of *sealde*; *flaxan* stands in
 the parallel recension [@Hecht1900, p. 66, lines 8--10].
 At another occurrence, *twā fatu ... flascan gehātene* 'two vessels
-called flasks' has nominative plural *flascan*, whereas *ōðre þāra
+called flasks' has the selected nominative plural
+[*flascan*]{.iv lang=oe sort=flascan role=target_form} 'flasks'
+(C p. 141 l. 27), whereas *ōðre þāra
 flascena* 'one of the flasks' contains genitive plural
 [*flascena*]{.iv lang=oe sort=flascena role=comparison_form} 'flasks'
 [@Hecht1900, p. 141, lines 25--30; @Toller1921, p. 223].
@@ -86,7 +90,8 @@ The early final-vowel merger removes that trigger: final \emph{*ǭ}
 joins \emph{*ō} in \emph{*ā}, which fronts to \emph{*ǣ}.
 The nominative consequently keeps its front root and subsequently
 undergoes palatalization of \emph{*sk}. The cascade produces
-\emph{*flæsċe}, not selected *flasce*.
+\emph{*flæsċe}, not attested nominative singular *flasce*.
+This inherited singular input is not the selected plural cell.
 
 The oblique root provides an attested possible analogical donor,
 but the consonantal history needs separate care. Ringe and Taylor print
@@ -101,11 +106,11 @@ alternation was levelled.
 
 | Formation or cell | Reconstructed input | Evidential status |
 | :--- | :--- | :--- |
-| comparative headword | \emph{*flaskō} | Family label, not the selected weak nominative history |
-| selected weak nominative | \emph{*fláskōn} | Current cascade gives front-root \emph{*flæsċe}; the sources' levelling account and regular alternatives remain distinguishable hypotheses |
+| comparative headword | \emph{*flaskō} | Family label, retained independently of the selected plural |
+| unselected weak nominative singular | \emph{*fláskōn} | Current cascade gives front-root \emph{*flæsċe}; the singular levelling account and regular alternatives remain distinguishable hypotheses |
 | weak accusative singular | \emph{*flaskōnų} | Ending reconstructed by applying the weak-feminine paradigm to the stem; not a complete form quoted by Ringe and Taylor |
-| weak genitive singular / nominative plural | \emph{*fláskōniz} | Inherited ending from the class paradigm; nominative plural *flascan* is attested, but no secure genitive-singular token was found |
-| weak dative singular | \emph{*fláskōni} | Complete inherited hypothesis against attested singular *flascan* |
+| selected weak nominative plural / unselected genitive singular | \emph{*fláskōniz} | Normal entry gives attested nominative plural *flascan*; no secure genitive-singular token was found |
+| weak dative singular | \emph{*fláskōni} | Normal entry independently gives attested dative singular *flascan* |
 | weak dative plural | \emph{*fláskōmaz} | Prediction, not a newly attested *flascum*; compare independently attested *tungum* 'tongues' |
 
 The generic inherited accusative ending is supported by Ringe's
@@ -113,32 +118,50 @@ The generic inherited accusative ending is supported by Ringe's
 separately [@Ringe2017, p. 312, §4.3.4(ii);
 @RingeTaylor2014, pp. 55--58]. That evidence warrants testing a complete
 oblique, not adding an ending solely to obtain a back root. Inflectional
-remodelling and the distinct consonantal question prevent an automatic
-replacement of the selected nominative by an oblique. Both complete raw
-inputs \emph{*fláskōnų} and dative \emph{*fláskōni} are rejected by the
-current tokenizer. Diagnostic entry after tokenization instead gives
-\emph{*flasconu} and \emph{*flæsċe}, respectively, not attested
-*flascan*. This is a modelling limit, not a demonstration that the
-inherited endings or the attestations are wrong. The comparator
-remains *flasce*; the computational mismatch is disclosed rather than
-removed by changing the target.
+remodelling and the distinct consonantal question prevent treating
+identically spelled cells as interchangeable evidence. The normal
+entry relation now admits the full reconstructed endings without
+changing their segments or quantities. The accusative singular still
+gives predicted [flasconu]{.pred}; it has not been repaired by selecting
+the separately attested nominative plural.
 
 ### Inherited plurals and the ending disagreement
 
 Chapter 3's “Weak paradigms after early apocope” discussion
 separates three questions: survival of a secondary final nasal, development
 of the preceding vowel, and levelling within the paradigm. In the current
-execution, diagnostic \emph{*fláskōniz} loses \emph{*i} and \emph{*z},
-then the nominative citation-form proxy consumes the newly final nasal.
-It therefore gives \emph{*flæsċe}, not plural *flascan*. This is not a
-regular historical account of a secondary nasal: the old loss had already
-ceased before West Germanic apocope.
+execution, old final-n loss precedes early apocope. Full
+\emph{*fláskōniz} loses \emph{*i} and \emph{*z}, leaving secondary
+\emph{*-ōn}; full dative singular \emph{*fláskōni} converges on the
+same sequence after i-loss. The old loss no longer consumes either
+nasal. Root fronting and restoration give \emph{*flæskōn > *flaskōn}.
+Long \emph{*ō} before final \emph{*n} escapes
+[SC069 OEEarlyOShortening](#rule-OEEarlyOShortening), remains long
+through unstressed fronting, and gives \emph{*flaskon > *flaskan}
+under [SC071 OELateOShortening](#rule-OELateOShortening) and
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering).
+Both attested cells therefore yield *flascan* through the same normal
+entry point, without supplying a post-apocope intermediate.
 
-Entering post-apocope \emph{*fláskōn} after that loss, but before ordinary
+CAPR adopts this regular northern ending history from among Ringe and
+Taylor's alternatives. Hill's common West Germanic raising followed
+by masculine redistribution remains a historical alternative, not a
+law silently included in this derivation [@RingeTaylor2014, p. 164;
+@Hill2010, pp. 433--443]. The independent verb evidence warrants
+the late-shortening mechanism but does not itself settle which
+prehistoric noun endings retained \emph{*ō}
+[@Campbell1959, pp. 147--148, §355;
+@HoggGrammar2011, pp. 227--228, §§6.27--6.28;
+@StauslandJohnsen2015, pp. 28--31, 36].
+
+### Earlier ending experiments
+
+In the earlier protected-n control, entering post-apocope \emph{*fláskōn}
+after that loss, but before ordinary
 root fronting and restoration, preserves the nasal. Restoration then
 returns the root to \emph{*a}; later shortening produces short \emph{*a}
 only after secondary nasalization has passed, and unstressed fronting
-leads to predicted [flascen]{.pred}. The same diagnostic gives
+led to predicted [flascen]{.pred}. The same diagnostic gave
 [tungen]{.pred} and [ascen]{.pred}, while secondary \emph{*n} survives
 in *dōn* 'do'. Thus the wrong ending cannot be blamed on failure of
 root restoration.
@@ -158,10 +181,10 @@ connect the class with raising and subsequent morphological redistribution
 [@RingeTaylor2014, pp. 117--118, 163--164;
 @Fulk2018, pp. 88--90, 171--172, §§5.5--5.6, 7.32--7.33;
 @HoggGrammar2011, pp. 64--65, §§3.32--3.34].
-The production input relation still rejects the raw plural because
-its native weak tails omit \emph{*-ōniz}, while the fallback stem
-template cannot supply medial \emph{*ō}. A general experimental
-admission extension now derives *flascan* from full
+The former production input relation rejected the raw plural because
+its native weak tails omitted \emph{*-ōniz}, while the fallback stem
+template could not supply medial \emph{*ō}. A general experimental
+admission extension derived *flascan* from full
 \emph{*fláskōniz} under either ending history, without supplying an
 intermediate. It likewise derives *tungan* from
 \emph{*túngōniz}, while preserving nominative singular *tunge* and
@@ -176,9 +199,11 @@ later Northumbrian final-n loss, not the old loss in
 [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss)
 [@HoggGrammar2011, pp. 65, 298--299, §§3.34, 7.98--7.100].
 The inherited dative-plural route still gives [tungem]{.pred}, not
-attested *tungum*. Thus normal experimental entry demonstrates
-computational feasibility, not an independently established plural
-chronology; see [Chapter 3](#weak-n-paradigms-after-apocope).
+attested *tungum*. Thus normal entry does not resolve every member of the inherited paradigm;
+see [Chapter 3](#weak-n-paradigms-after-apocope). The adopted route
+differs from both earlier experiments by retaining \emph{*ō} until
+the existing late shortening rather than moving shortening earlier
+or adding an early unrounding rule.
 
 ### Regular nominative alternatives
 
@@ -194,7 +219,7 @@ The two regular nominative experiments retain \emph{*a} before
 \emph{*sk} plus final \emph{*ā}, or first front it and then retract it
 in that environment. In each, only the following-vowel part of cluster
 palatalization precedes final \emph{*ā}-fronting; its other environments
-remain later. Both derive *flasce* from the unchanged raw selected input
+remain later. Both derived *flasce* from the formerly selected singular input
 and preserve all other 393 selected outputs, including *mære* 'nightmare'.
 Wright and Wright motivate testing retention before an originally back
 vowel, but include \emph{*st} and other clusters, not an independently
@@ -245,8 +270,8 @@ separate inherited-cell test, not the nominative-plural ending
 masculine \emph{*guman-}, each with a nasal trimoric genitive-plural
 final; Ringe and Taylor explicitly discuss masculine influence on
 the feminine genitive's stem syllable [@Ringe2017, pp. 312--313;
-@RingeTaylor2014, pp. 59, 153--154]. The complete inherited forms
-are rejected by the normal input relation. Quantity-preserving
+@RingeTaylor2014, pp. 59, 153--154]. The complete inherited genitive-plural forms
+remain outside the normal input relation. Quantity-preserving
 diagnostics give feminine [flascona]{.pred} and [tungona]{.pred},
 against masculine-source *flascena*, *tungena* 'tongues' and control
 *gumena* 'men'. But the latter matches depend on the diagnostic
@@ -269,13 +294,15 @@ consonant's realization against the additional *x* evidence.
 
 Regular phonology has explanatory priority; an author's levelling
 analysis or the formation label cannot settle the issue by itself.
-The inherited nominative plural now succeeds through experimental
-normal entry, but the rival vowel histories remain independently
-undated and the accusative and dative controls remain unresolved.
-It is not yet a historically validated replacement.
-No independently dated intermediate justifies a transponent
-that silently supplies the desired root and ending. The selected
-nominative input, *flasce* comparator and disclosed mismatch therefore
-remain in place. Independent evidence dating the following vowel at
-palatalization, or distinguishing inherited northern \emph{*-an}
-from redistributed endings, would discriminate the rival histories.
+The scored derivation is now the attested nominative plural
+\emph{*fláskōniz >} *flascan*, not the singular *flasce* or an
+accusative substituted for it. The independently attested dative
+singular reaches the same ending regularly in the adopted model.
+This selection needs no transponent and does not claim that every
+cell is regular: inherited accusatives, the dative plural and the
+genitive-plural reconstruction retain their separate problems.
+The singular front-root prediction remains disclosed, with Wright
+and Wright's retention account and Campbell and Luick's levelling
+account still discussed. Comparative evidence distinguishing inherited
+northern \emph{-an} from redistributed endings remains a literature
+follow-up, not a prerequisite silently reopened by this selection.

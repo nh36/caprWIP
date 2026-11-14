@@ -14,13 +14,14 @@ ASSAY = SC / "audits/sc035-prosody"
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 import oe_pipeline
 import adjudicate
+from executable_facts import parse_defines
 from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
 from historical_sc035 import historical_runtime
 from test_sc037_adjudication import (
     INTERVENTION_ADDED, INTERVENTION_CHANGED, CONSOLIDATION_ADDED,
     CONSOLIDATION_CHANGED, FINAL_Z_QUANTITY_CHANGED, FINAL_NASAL_CHANGED,
-    assert_intervention_scope,
+    assert_intervention_scope, before_flask_adoption,
 )
 
 
@@ -76,8 +77,8 @@ def test_context_lifting_preserves_the_other_segmental_rule_kernels():
         ["git", "show", receipt()["accepted_base_commit"] + ":Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True)
     previous = oe_pipeline._define_bodies(oe_pipeline._strip_comments(old))
-    current = oe_pipeline._define_bodies(oe_pipeline._strip_comments(
-        (ROOT / "Germanic/fsts/germanic.txt").read_text()))
+    current = {name: fact.body for name, fact in before_flask_adoption(
+        parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())).items()}
     changed = set()
     for stage in oe_pipeline.named_stages():
         name = stage.foma_identifier

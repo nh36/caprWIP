@@ -1836,6 +1836,15 @@ define PGmcStarStressedVowel [
     # included here; *áu, *éu, *íu may still be present).
     {*áu} | {*éu} | {*íu}
 ];
+# SC023: the citation-form proxy for old (pre-)PGmc final-n loss.
+# Ringe 2017:101-103; Ringe/Taylor 2014:54-59. Execute before apocope
+# exposes secondary n in inherited *-ōni/*-ōniz; that n must survive.
+# Other outputs and the retained -un numerals are already encoded in
+# the inputs. The stable identifier is not a historical stage claim.
+define PNWGmcNStemNLoss [
+    {*ō} {*n} -> {*ǭ} || _ .#.
+];
+
 define PWGmcEarlyIApocope Ctx([
     [
     {*i} -> 0 || PGmcStarStressedVowel PGmcStarConsonant+ PGmcStarVocalic PGmcStarConsonant+ _ .#.,
@@ -2059,6 +2068,7 @@ define EarlyEnglishLineChanges [ # capr:bundle
     # SC024 early NWGmc *ē₁ > *ā (2nd c. AD): before the PWGmc innovations
     # below — see the rule's header comment for the chronology argument.
     .o. PNWGmcLongELowering
+    .o. PNWGmcNStemNLoss
     .o. PWGmcEarlyIApocope  # Early i-apocope: loss of final -i in 3rd/4th syllable
     .o. PWGmcFinalOrLowering
     .o. PWGmcCoronalWAssimilation
@@ -2451,28 +2461,6 @@ define PNWGmcILowering Ctx([
 # head of EarlyEnglishLineChanges (its old SC004 slot). The breve-marked {*ăi}
 # placeholder is gone. See sc004_component_dossier.md.
 
-# SC023. General (pre-)Proto-Germanic loss of word-final *-n with
-# nasalization of the preceding vowel in polysyllables (Ringe 2017
-# pp.101-103; proof set includes *juką, *wullǭ, *dedǭ, *þanǭ — nouns,
-# verbs, and pronouns alike, so this is general phonology, not n-stem
-# morphology). Goth. tuggo shares the weak nom.sg. outcome, so the change
-# is Common Germanic at the latest; R/T 2014 pp.54-55 keep the nasalized
-# reflex contrastive into PWGmc. The {*ō}{*n}-only environment below is a
-# deliberate citation-form proxy: corpus protoforms already encode the
-# law's other outputs (*dōną, *wulfą, *sunų), and PGmc *sebun/*nigun/
-# *tehun (numeral analogy, Ringe 2017 p.103) plus *hebun- retained -un
-# and must not be touched. Live firings are exactly the 17 weak-noun
-# citation stems in *-ōn- (stem-form *túngōn → PGmc nom.sg. *túngǭ).
-# The *-ǭ is bimoric; it shortens to *-æ → OE -e (unstressed fronting).
-# Masc. n-stem nom.sg. uses trimoric *-ô (no -n), which is NOT affected.
-# OE dōn is the counterfeeding witness: its secondary final -n (created
-# by the later *ą-apocope) survives because this loss was long complete.
-# PNWGmcNStemNLoss remains the stable executable identifier; it is not a
-# stage claim. See docs/sound_changes/audits/sc023-adjudication.md.
-define PNWGmcNStemNLoss [
-    {*ō} {*n} -> {*ǭ} || _ .#.
-];
-
 # Post-PWGmc *-n loss after unstressed *ī (R/T vol.2 §3.3.1 pp.87-88,
 # lines 5514-5545; Campbell §473 / §589.7; Brunner §280; Fulk Comp.Gr.
 # §7.34 citing Boutkan 1995b: 292-3). Fem. in-stem oblique-singular and
@@ -2705,9 +2693,10 @@ define OEUnstressedLongVowelShortening3 [
 #   - R/T vol.2 p.80: "weak II pres. 2sg -as(t), 3sg -aþ have stable a"
 
 define OEEarlyOShortening Ctx([
-    # EARLY: *ō → *a before nasals (runs BEFORE fronting)
-    # This *a will undergo fronting: *a → *æ → e (Campbell §333, §369)
-    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ EnglishStarNasal
+    # Final *ōn survives to SC071/SC100, after unstressed fronting.
+    # Adopted northern ending route: Ringe/Taylor 2014:164, scenario 3.
+    {*ō} -> {*a} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _
+    [{*m} | {*n} ContextSegments]
 ]);
 
 define OELateOShortening Ctx([
@@ -3738,7 +3727,6 @@ define EnglishProtoToOE ( # capr:bundle
     .o. PNWGmcMonosyllabicFinalRLengthening
     .o. EAFRhotacism
     .o. PNWGmcMnDissimilation
-    .o. PNWGmcNStemNLoss
     .o. EAFNasalSpirantLengthening
     .o. EAFNasalSpirantLoss
     .o. EAFHiatusWInsertion
@@ -3816,8 +3804,18 @@ define EnglishProtoToOE ( # capr:bundle
     .o. OERMetathesis
 );
 
+define PGWeakTails [
+    ō:{*ō} n:{*n} u:{*u} n:{*n} z:{*z} |
+    ō:{*ō} n:{*n} i:{*i} z:{*z} |
+    ō:{*ō} n:{*n} i:{*i} |
+    ō:{*ō} n:{*n} ų:{*ų} |
+    ō:{*ō} m:{*m} a:{*a} z:{*z}
+];
 define EnglishProtoNative [
-    [{ᵘ}:{*ᵘ} | {ᶜ}:{*ᶜ} | 0] pgrmWord
+    [{ᵘ}:{*ᵘ} | {ᶜ}:{*ᶜ} | 0] pgrmWord |
+    [{ᵘ}:{*ᵘ} | {ᶜ}:{*ᶜ} | 0]
+    [pgrmStrongPlainHeavy | pgrmStrongPlainHeavyPrefixed |
+     pgrmStrongNasal | pgrmStrongNasalPrefixed] PGWeakTails
 ];
 
 define PGCellStem [

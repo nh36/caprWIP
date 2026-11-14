@@ -18,7 +18,7 @@ from executable_facts import parse_defines
 from test_sc037_adjudication import (
     CONSOLIDATION_ADDED, CONSOLIDATION_CHANGED, LEXICAL_GRAMMAR_CHANGED,
     INTERVENTION_ADDED, INTERVENTION_CHANGED, FINAL_Z_QUANTITY_CHANGED,
-    FINAL_NASAL_CHANGED, assert_intervention_scope,
+    FINAL_NASAL_CHANGED, assert_intervention_scope, before_flask_adoption,
 )
 
 AUDIT = ROOT / "Germanic/docs/sound_changes/audits/lexical-witnesses-2335-2336"
@@ -53,7 +53,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
     old = parse_defines(subprocess.check_output(
         ["git", "show", f"{BASE}:Germanic/fsts/germanic.txt"], cwd=ROOT, text=True,
     ))
-    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    current = before_flask_adoption(
+        parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text()))
     medial = {"MP" + suffix for suffix in (
         "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
         "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")}

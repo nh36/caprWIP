@@ -29,7 +29,8 @@ evidence for that restriction. CAPR declines to adopt the retention rule;
 the evidence leaves the historical possibility open. The working
 explanation of singular *flasce* is extension of the back vowel from
 inflected forms such as *flascan*, as proposed by Campbell and Luick.
-The history of the plural ending is discussed in
+The selected nominative plural now follows regular restoration and
+late ending reduction, without adopting root retention. Its history is discussed in
 [Chapter 3](#weak-n-paradigms-after-apocope)
 [@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
 

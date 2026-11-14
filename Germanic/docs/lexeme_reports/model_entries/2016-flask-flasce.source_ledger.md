@@ -2,14 +2,32 @@
 
 ## Current distinctions
 
-The selected row2016 remains `PROTO *flaskō`, `PROTOFORM *fláskōn`,
-`COUNTERPART flasce`, class `early_analogy`. The candidate separates the
-current front-root nominative output from the sources' levelling analysis
-and the regular alternatives under investigation.
+The adopted row2016 retains `PROTO *flaskō`, selects nominative plural
+`PROTOFORM *fláskōniz`, `COUNTERPART flascan`, class `regular`,
+Hecht1900 C p.141 l.27. Normal production entry gives unique flascan,
+as does independently attested dative singular `*fláskōni`.
+The dated research records below retain their original decisions;
+their deferrals are superseded by the user's production-adoption decision.
 The old executable agreement `*fláskōn → flasce` is a fact about the
 corrected lexical base d067bab941d69227652961999fb6b0961851c4d4, not
 proof that its retained nasal-ending restoration was historically regular.
-The candidate gives `flæsċe` and keeps flasce as comparator.
+The inherited singular still gives `flæsċe`; attested singular flasce
+remains in the discussion, not as the selected plural's comparator.
+
+## Production adoption, 14 November 2026
+
+The exact late-final-n variant measured at07829f2e is promoted:
+expanded native admission, old n-loss before early i-apocope, and
+early shortening before m/nonfinal n only. SC051, root fronting and
+restoration remain unchanged. NP and DS share newly final -ōn and
+the existing late shortening/lowering; this is not an ending taken
+from an accusative or an unspecified oblique. The whole paradigm is
+not declared regular. Hill2010 pp.433–443 remains the explicit
+raising/redistribution alternative. Boutkan1995 §3.2.14 and early
+English/Frisian secondary-final-n evidence are queued in the existing
+Anglo-Frisian backlog without blocking adoption.
+See `sc069-adjudication.md` and `flask-production-certification.md`
+for the decision and fresh production certification, respectively.
 
 | Source / printed locator | Verified evidence and use | Limits |
 | :--- | :--- | :--- |

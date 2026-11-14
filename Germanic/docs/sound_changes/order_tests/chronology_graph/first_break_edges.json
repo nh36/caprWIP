@@ -104,7 +104,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC023-nwgmc-n-stem-n-loss.md",
       "card_type": "broad_far",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Stage corrected to (pre-)PGmc general word-final *-n loss (sc023-adjudication.md). No earlier ordinary chronology break was found before bundled PWGmcChanges; later side is a one-sided counterfeeding boundary across SC047 with do as a negative witness (no-output `+?` derivation), stage-entailed rather than locally adjacent."
+      "short_summary": "Old final-n loss now precedes early i-apocope, preserving secondary n in inherited -oni/-oniz. The SC047 do counterfeeding boundary remains stage-entailed, not locally adjacent; older runner limits are archived observations."
     },
     {
       "change_id": "SC024",
@@ -544,7 +544,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC069-oe-early-o-shortening.md",
       "card_type": "broad_far",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Earlier boundary is broad and far away across SC023 rather than a tight local adjacency claim."
+      "short_summary": "Adopted final-n exemption permits the existing SC071/SC100 late route; old unrestricted-rule displacement measurements are superseded, not new local chronology."
     },
     {
       "change_id": "SC070",
@@ -965,16 +965,30 @@
     {
       "source_change_id": "SC023",
       "target_change_id": "PWGmcChanges",
-      "relation_type": "runner_limited_boundary",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "boundary_observation",
+      "evidence_basis": "archived_experiment",
       "witness_role": "",
       "representative_lexemes": "",
       "representative_forms": "`none — no earlier real break was found before the runner boundary`",
-      "strength": "runner_boundary",
-      "interpretation_category": "runner_boundary",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "",
-      "notes": "Stage corrected to (pre-)PGmc general word-final *-n loss (sc023-adjudication.md); no earlier in-cascade boundary is historically expected. Later side is a one-sided counterfeeding boundary across SC047."
+      "notes": "Old runner limit before the Flask adoption; SC023 now executes inside EarlyEnglishLineChanges before early i-apocope. The historical (pre-)PGmc stage is unchanged; this observation asserts no current precedence."
+    },
+    {
+      "source_change_id": "SC023",
+      "target_change_id": "SC006",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "stage_entailed",
+      "witness_role": "counterfeeding_negative",
+      "representative_lexemes": "flask; tongue",
+      "representative_forms": "Old final n is lost before apocope exposes secondary final n in *fláskōni/*fláskōniz",
+      "strength": "stage_entailed",
+      "interpretation_category": "stage_entailed",
+      "reciprocal_group_id": "",
+      "notes": "Ringe2017 pp.101-103 and Ringe-Taylor2014 pp.54-59 establish the historical stage distinction; the normal-entry regression verifies its implementation, not independent historical adjacency. See sc069-adjudication.md."
     },
     {
       "source_change_id": "SC023",
@@ -2253,16 +2267,16 @@
     {
       "source_change_id": "SC069",
       "target_change_id": "SC023",
-      "relation_type": "broad_far_chronology",
+      "relation_type": "superseded_experiment",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "archived_experiment",
       "witness_role": "displacement_witness",
       "representative_lexemes": "adder; earth; flask; heart; line",
       "representative_forms": "PGmc `*nḗdrōn` yields expected OE `nǣdre`, but the earlier-shifted variant yields `nǣdran`; PGmc `*érθōn` likewise yields `eorþan` instead of expected `eorþe`; PGmc `*fláskōn` yields `flascan` instead of `flasce`",
-      "strength": "broad_far",
-      "interpretation_category": "broad_far",
+      "strength": "archived",
+      "interpretation_category": "superseded",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is broad and far away across SC023 rather than a tight local adjacency claim."
+      "notes": "Measurements of the former unrestricted pre-nasal shortening, superseded by the final-n exemption and earlier SC023 serialization. They do not establish a boundary for the restricted rule; sc069-adjudication.md."
     },
     {
       "source_change_id": "SC069",
@@ -2276,7 +2290,7 @@
       "strength": "search_boundary",
       "interpretation_category": "search_boundary",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary is broad and far away across SC023 rather than a tight local adjacency claim."
+      "notes": "Historical search result for the former unrestricted rule, not a fresh displacement result or historical constraint on the adopted restriction; sc069-adjudication.md."
     },
     {
       "source_change_id": "SC070",

@@ -55,11 +55,11 @@ def test_selected_weight_negative_and_previous_breaking_umlaut_histories(current
     by_id = {row["id"]: row for row in selected}
     assert by_id["2141"]["counterpart"] == "mære"
     assert by_id["2141"]["outputs"] == ["mære"]
-    assert by_id["2016"]["counterpart"] == "flasce"
-    assert by_id["2016"]["outputs"] == ["flæsċe"]
+    assert by_id["2016"]["counterpart"] == "flascan"
+    assert by_id["2016"]["outputs"] == ["flascan"]
     assert {row["concept"] for row in selected
             if row["outputs"] != [row["counterpart"]]} == {
-                "buck", "fire", "flask", "fowl", "rust", "straw", "tap",
+                "buck", "fire", "fowl", "rust", "straw", "tap",
                 "wolf", "wool"}
 
 

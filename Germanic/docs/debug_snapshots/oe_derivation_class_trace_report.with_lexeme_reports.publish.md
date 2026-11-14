@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (314) ===
+=== DERIVATION_CLASS: regular (315) ===
 
 
 
@@ -1730,6 +1730,26 @@ PGmc Nasal Loss Before X: *fūxstiz
 ### Orthography & surface
 
 Outcome: fȳst
+# flask
+PROTO: *fláskōniz
+EXPECTED: flascan
+OUTPUTS: flascan
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *fláskōniz
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *fláskōnz<br>EAF Final Z Deletion: *fláskōn<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *flæskōn<br>OE A Restoration: *flaskōn<br>OE Late O Shortening: *flaskon<br>OE Final Unstressed O Lowering: *flaskan |
+
+
+
+### Orthography & surface
+
+Outcome: flascan
 # flax
 PROTO: *fláxsą
 EXPECTED: fleax
@@ -7885,7 +7905,7 @@ vocalization-before-degemination order. That older interpretation belonged
 to the superseded ww proxy. The independently justified assimilation
 feeder and the prosodic condition now remain separate
 [@RingeTaylor2014, pp. 41--42, 55, 57--58].
-=== DERIVATION_CLASS: early_analogy (36) ===
+=== DERIVATION_CLASS: early_analogy (35) ===
 
 
 
@@ -8131,27 +8151,6 @@ An a-stem carrier *féxą* also gives *feoh* conditionally, but is
 unnecessary: the cited later formation already lacks an ending.
 The inherited comparative headword and the attested cell compared here
 remain unchanged.
-# flask
-PROTO: *fláskōn
-EXPECTED: flasce
-OUTPUTS: flæsċe
-
-
-
-### Proto-Germanic consonant inheritance
-
-English Proto Input: *fláskōn
-
-| Earlier Germanic developments | Old English developments |
-|:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc N Stem N Loss: *fláskǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *fláskā<br>EAF Brightening: *flæskā<br>EAF Brightening Long Final: *flæskǣ<br>OE Sk Palatalization: *flæʃǣ<br>OE Unstressed Long Vowel Shortening: *flæʃæ<br>OE Unstressed AE Merger: *flæʃe |
-
-
-
-### Orthography & surface
-
-Old English Orthography: *flæsċe
-Outcome: flæsċe
 # follow
 PROTO: *fúlgijaną
 EXPECTED: fylġan
