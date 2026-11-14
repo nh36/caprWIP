@@ -1,0 +1,8 @@
+source	url	sha256	printed_locator	pdf_sheet	inspection
+Wright1857	https://archive.org/download/avolumevocabula00wriggoog/avolumevocabula00wriggoog.pdf	4ee3051f2a4ebc1cdd81c40b8c7e353833143166ce5baa3b3e5cba49b4807e2e	pp62,66,284; appendix opening	93,97,315,311	original page images; p66 enlarged to distinguish ærce from the conjecture
+Wright1873	https://archive.org/download/ASecondVolumeOfVocabularies/A_Second_Volume_of_Vocabularies.pdf	46e27fbf88c0af977f319696b1df35ab23a036f9e82c7f0ae0c166945b5bf01c	pp1,16	15,30	original page images; second volume of text, not the 1884 index volume
+Cockayne1864I	https://archive.org/download/leechdomswortcun01cock/leechdomswortcun01cock.pdf	0407e7d056c1c2c0b8164919e9bb71496a80cb5eac5e8b2c25158a10aa429faa	pp334,335,340,370,371; preface lxxv-lxxvii,lxxxiv	456,457,462,492,493; preface89-91,98	original textual/apparatus images and English translation; preface read from PDF text
+WrightWuelcker1884I	held:docs/references/wright_wuelcker_1884_volume1_variant.pdf	69e55fda05e9a0ca6c4c2e16de972199d4d4e1e60ab1afe8afb5a3984cfcaa34	col294 n8	181	original page image; explicit editorial correction
+WrightWright1908	https://upload.wikimedia.org/wikipedia/commons/a/a0/Old_English_grammar_%28IA_oldenglishgramma00wrig%29.pdf	ee453f429ed6212d71fd23505b587de050a2460fa6bc53b6b201462adbc29cfb	pp37-38 section57	56-57	original page images; broad condition and explicit æsce variant
+TollerSupplement1921	https://bosworthtoller.com/38960		p48 asce	n/a	dictionary leads; not counted as primary tokens
+EWAaska2	https://ewa.saw-leipzig.de/articles/8890/en		s.v. aska2, comparison and Germanic stem reconstruction	n/a	n-stem *askōn-, not a quoted complete nominative
