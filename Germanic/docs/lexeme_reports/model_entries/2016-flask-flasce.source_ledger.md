@@ -25,6 +25,7 @@ The candidate gives `flæsċe` and keeps flasce as comparator.
 | BosworthToller1898, p.235; ClarkHall1960, p.121 | Earlier dictionary-headword evidence flasce/flaxe retained. | Earlier consultation, not independent evidence for regularity or chronology. |
 | Ringe2017, pp.312–313, §4.3.4(ii) | Original PDF sheets323–324 checked: weak-feminine accusative singular tungōnų, genitive singular/nominative plural tungōniz, dative singular tungōni and dative plural tungōmaz. | Applying the generic ending to flask is CAPR reconstruction, not a quoted complete flask form. The name paradigm is neuter; OE masculine nama requires its separate gender history. |
 | RingeTaylor2014, pp.55–58 | Original printed pages checked: erosion of third-syllable high vowels and possible spread of -an- within weak paradigms. | Remodelling must not be disguised as an exceptionless sound-law change. |
+| Hill2010, pp.432–443, especially §§4.2–4.6 | Supplied original PDF checked: common West Germanic raising before tautosyllabic n; explicit treatment of OE/OFr ending redistribution and independent “friend” evidence; separate North Germanic raising. | Hill's PGmc *ān* notation differs from the Ringe-based input. His comparative argument is not a directly dated northern Flask cell; Ringe–Taylor's retained-ō alternative remains live. Boutkan pp.289–290 has not been consulted directly. |
 
 ## Attestation search and cell-selection limit
 
@@ -250,6 +251,43 @@ derivation. No 1A is demonstrated. Keep the selected nominative and
 comparator; no new 394-row result, strict validation or publication
 rebuild is claimed. Genitive singular and dative plural remain
 unattested on the present evidence.
+
+## 14 November full-corpus and Hill follow-up
+
+The [adoption assessment](../../sound_changes/audits/flask-late-final-n-adoption.md)
+pins reference `1bad32cd15dfdc10c154c3e90fcfe9afd0e42eb4` and the
+exact archived `late_final_n` variant, including inherited accusative
+input coverage. Three fresh 394-row normal-entry runs were executed.
+With identical vocabulary the candidate changes no admissions,
+ambiguities, outputs or match statuses: 394 unique outputs, 385 matches.
+The separate selection experiment changes only row2016 from
+`*fláskōn : flasce → flæsċe` to `*fláskōniz : flascan → flascan`,
+giving 386 matches. The other 393 derivations remain identical.
+All 15 independent raw controls reproduce the previous candidate;
+dat.sg. also gives *flascan*, with no new accusative or pre-m failure.
+SC051 is fixed; literal *flaxan* is not a newly derived output.
+
+Hill 2010 pp.432–443 was newly consulted from the supplied original.
+His explicit OE/OFr discussion and lexicalized “friend” argument make
+raising plus redistribution a substantively supported competitor.
+The fifth-century Runic evidence argues against a shared Northwest
+Germanic raising event, not against Hill's common West Germanic
+account. Ringe–Taylor p.62 cautions against generalizing from the
+exceptional contracted vowel in “friend”; the ordinary -an forms still
+fit both ending histories. Campbell/Hogg and Stausland Johnsen support
+late shortening, but do not by themselves establish retained ō in
+these particular noun endings. The exact exemption consequently
+remains less independently secured than its late mechanism.
+
+Recommendation: defer production adoption and target migration.
+This is unresolved between 1B and 2, not a new proof of analogy in
+every cell. The full computational requirement now passes, but a
+securely unremodelled northern non-u case or independent dating of
+raising relative to the Anglo-Frisian branch remains decisive.
+Boutkan pp.289–290 remains unavailable; reports of it in Hill and Fulk
+are indirect evidence only. Production, selection, classification and
+book source remain unchanged; strict certification and publication
+rebuild remain deferred until a candidate is settled.
 
 ## Publication ownership and preserved history
 
