@@ -18,7 +18,9 @@ import oe_derivation_report_with_lexeme_reports as assembly
 import oe_lexeme_report_coverage as coverage
 import pgmc_lexical_integration as editorial
 import check_reader_facing_citations as reader_citations
-from build_full_lexical_volume import parse_model_entry
+from build_full_lexical_volume import (
+    match_trace_entry, parse_model_entry, parse_trace_entries, render_entry,
+)
 from validate_oe_lexeme_report_assembly import parse_entries
 
 BASE = "b74e3ce3f60f05c8843555eb409b35020386dcf0"
@@ -30,6 +32,26 @@ PRINCIPAL = {"1933", "2013", "2085", "2326", "2330", "2332"}
 def committed(path: Path) -> str:
     return subprocess.check_output(
         ["git", "show", f"{BASE}:{path.relative_to(ROOT)}"], cwd=ROOT, text=True)
+
+
+def assert_nightmare_index_delta(rows):
+    model = "Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md"
+    expected = {
+        (action, language, form, role, scope, f"nightmare — OE {target}")
+        for action, target in (("remove", "mare"), ("add", "mære"))
+        for language, form, role, scope in (
+            ("oe", target, "target_form", "lexical_heading"),
+            ("pgmc", "*márōn", "selected_input", "trace_proto_input"),
+            ("pgmc", "*márōn", "source_protoform", "lexical_protoform"),
+        )
+    } | {
+        ("add", "oe", form, "comparison_form", "explicit_tag", model)
+        for form in ("mare", "maran")
+    }
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == len(expected) == 8
+    assert {tuple(row[field] for field in fields) for row in rows} == expected
+    assert all(not row.get("variety") for row in rows)
 
 
 class EditorialPublicationTests(unittest.TestCase):
@@ -167,6 +189,9 @@ class EditorialPublicationTests(unittest.TestCase):
             if before["row_id"] in {"2095", "2313", "2314"}:
                 selected = {"2095": "leornian", "2313": "leorna", "2314": "leornaþ"}
                 before = dict(before, counterpart=selected[before["row_id"]])
+            if before["row_id"] == "2141":
+                before = dict(before, counterpart="mære",
+                              trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED")
             if before["row_id"] == "2302":
                 before = dict(before, protoform="*wír-àldiz", protoform_variety="",
                               derivation_class="regular", class_bucket="regular",
@@ -204,6 +229,31 @@ class EditorialPublicationTests(unittest.TestCase):
                                "COUNTERPART": row.counterpart,
                                "DERIVATION_CLASS": row.derivation_class}.items():
                 self.assertEqual(metadata[key], value, path.name)
+
+    def test_nightmare_both_presentations_preserve_the_output_gap(self):
+        with (ROOT / "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv").open() as handle:
+            index = list(csv.DictReader(handle, delimiter="\t"))
+        assert_nightmare_index_delta([
+            row for row in index if row["source_ref"].startswith("nightmare — OE ")
+            or "2141-nightmare-mare.model.md" in row["source_ref"]])
+        path = REPORTS / "model_entries/2141-nightmare-mare.model.md"
+        model = parse_model_entry(path)
+        trace, _, confident = match_trace_entry(model, parse_trace_entries(self.compact))
+        self.assertTrue(confident)
+        self.assertEqual(trace["outcome"], "mare")
+        self.assertEqual(model["metadata"]["COUNTERPART"], "mære")
+        for prose in (None, ROOT / "Germanic/docs/assembly/book_prose/regular_all_01"):
+            with self.subTest(prose=str(prose)):
+                rendered = render_entry(
+                    model, trace, entry_path=path, regular_book_prose_dir=prose)
+                self.assertIn("implementation mismatch", rendered)
+                self.assertIn("Old English form is _mære_", rendered)
+                self.assertIn("yields _mare_ in the current cascade", rendered)
+                self.assertNotIn("yields regular", rendered)
+                self.assertNotIn("Regular outcome:", rendered)
+                self.assertNotIn("[mare]{.recon", rendered)
+                self.assertIn("@Lindsay1921, 96, I225", rendered)
+                self.assertIn("@Hall2007", rendered)
 
     def test_source_and_live_identity_mismatches_fail_closed(self):
         rows = copy.deepcopy(self.rows)

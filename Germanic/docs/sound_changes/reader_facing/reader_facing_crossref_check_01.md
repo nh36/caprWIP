@@ -7,7 +7,7 @@ _Generated from the generated reader manifest's chapter files and their SC-numbe
 - Reader manifest: `Germanic/docs/sound_changes/registry/reader_manifest.tsv`.
 - Chapter files checked: 101.
 - Rule headings mapped from current chapter files: 109.
-- Sound-change links checked: 357.
+- Sound-change links checked: 353.
 - Symbolic `<` relations found: 0.
 - Bare SC references found: 0.
 - Rule-name-only references found: 0.

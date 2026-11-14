@@ -5905,7 +5905,7 @@ Coverage: 4 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2141"></a>
 
-## 2141: nightmare / mare
+## 2141: nightmare / mære
 
 Current citation: *márōn (pgmc); selected input: *márōn (pgmc; variety: none; equality_convention).
 Runnable: 1; derivation class: regular.

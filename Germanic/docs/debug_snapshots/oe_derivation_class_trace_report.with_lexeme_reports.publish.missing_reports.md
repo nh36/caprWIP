@@ -73,7 +73,7 @@
 | 2136 | needle | nǣdl | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2138 | net | nett | regular | yes | NOTE |
 | 2140 | night | niht | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
-| 2141 | nightmare | mare | regular | yes | NOTE |
+| 2141 | nightmare | mære | regular | yes | NOTE |
 | 2143 | nose | nosu | early_analogy | no | DERIVATION_CLASS=early_analogy |
 | 2152 | rest | ræste | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2155 | coat | rocc | regular | yes | NOTE |

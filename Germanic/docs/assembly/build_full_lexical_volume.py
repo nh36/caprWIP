@@ -486,6 +486,8 @@ def display_entry_form(metadata: dict[str, str], form: str) -> str:
 
 
 def regular_output_markup(metadata: dict[str, str], form: str) -> str:
+    if metadata.get("OUTPUT_STATUS") == "implementation_gap":
+        return italicize_form(form)
     if form and form != metadata.get("COUNTERPART", ""):
         return f"[{normalize_print_text(form).removeprefix('*')}]{{.recon form_role=regular_output}}"
     return italicize_form(display_entry_form(metadata, form))
@@ -516,6 +518,11 @@ def derivation_summary(model: dict[str, object], trace_entry: dict[str, str] | N
             f"form followed here {italicize_form(selected)} {arrow} {italicize_form(display_target)} ({label})."
         )
     if citation == selected and output != target:
+        if metadata.get("OUTPUT_STATUS") == "implementation_gap":
+            return (
+                f"Derivation: {italicize_form(selected)} yields {display_output} in the current cascade; "
+                f"the selected Old English form is {italicize_form(display_target)} (implementation mismatch)."
+            )
         return (
             f"Derivation: {italicize_form(selected)} yields regular {display_output}; "
             f"the Old English form here is {italicize_form(display_target)} ({label})."
@@ -982,7 +989,9 @@ def rewrite_entry(model: dict[str, object], trace_entry: dict[str, str] | None) 
         if trace_entry["outcome"] == model["metadata"].get("COUNTERPART", ""):
             out.append(f"Old English form: {italicize_form(display_entry_form(model['metadata'], trace_entry['outcome']))}")
         else:
-            out.append(f"Regular outcome: {regular_output_markup(model['metadata'], trace_entry['outcome'])}")
+            output_label = ("Current cascade output" if model["metadata"].get("OUTPUT_STATUS")
+                            == "implementation_gap" else "Regular outcome")
+            out.append(f"{output_label}: {regular_output_markup(model['metadata'], trace_entry['outcome'])}")
             out.append("")
             out.append(
                 f"Old English form: {italicize_form(display_entry_form(model['metadata'], model['metadata'].get('COUNTERPART', '')))}"

@@ -97,7 +97,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 081-j-strengthening.md | SC081. Strengthening of \emph{*j} after front diphthongs (`OEJStrengtheningAfterFrontDiphthong`) {#rule-OEJStrengtheningAfterFrontDiphthong} | 22 | 72 | no |
 | 082-intervocalic-j-vocalization.md | SC082. Bounded inherited-j normalization (`OEIntervocalicJVocalization`) {#rule-OEIntervocalicJVocalization} | 5 | 68 | no |
 | 083-unstressed-ei-contraction.md | SC083. Contraction of unstressed \emph{ei} (`OEUnstressedEIContraction`) {#rule-OEUnstressedEIContraction} | 7 | 92 | yes |
-| 085-h-loss.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | 16 | 56 | no |
+| 085-h-loss.md | SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss} | 48 | 56 | no |
 | 086-contraction.md | SC086. Contraction of the resulting hiatus (`OEContraction`) {#rule-OEContraction} | 7 | 24 | no |
 | 087-r-metathesis.md | SC087. Metathesis of \emph{*r} with a following short vowel (`OERMetathesis`) {#rule-OERMetathesis} | 76 | 63 | no |
 | 089-late-unstressed-ag-suffix.md | SC089. Late suffix consumer (`OELateUnstressedAgSuffix`) {#rule-OELateUnstressedAgSuffix} | 14 | 91 | yes |

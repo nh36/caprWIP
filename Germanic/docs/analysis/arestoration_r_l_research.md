@@ -1,5 +1,11 @@
 # A-Restoration in Old English: the role of intervening *r and *l
 
+Historical research note. Its row2141 selection and transcription of
+the nightmare example are superseded by the
+[mære lexical entry](../lexeme_reports/model_entries/2141-nightmare-mare.model.md).
+The older tables and quotations below are retained as the research record,
+not authority for the current target.
+
 **Status:** research note (no FST or TSV modifications made).
 **Scope:** Diagnose why the current FST blocks A-restoration before single *r* and *l*, document the canonical conditioning environment from the philological literature, and propose a single, surgical change to `OEARestorationIntervening` in `Germanic/fsts/germanic.txt`.
 **Date:** generated 2026-03 from local `docs/references/`.

@@ -2,11 +2,11 @@
 OE KNOWN PROBLEMS / MISMATCH TRIAGE REPORT
 ========================================================================
 
-Total mismatches:         8
+Total mismatches:         9
   Tractable (no ledger):  0
   exception               3
   open                    0
-  parked                  0
+  parked                  1
   wontfix                 5
 Stale ledger entries:     0
 
@@ -25,9 +25,13 @@ mismatch-loop workflow (research dossier → review → implement).
   (none)
 
 ========================================================================
-PARKED  (0)
+PARKED  (1)
 ========================================================================
-  (none)
+--- final_nasal_vowel_restoration (1) ---
+  *márōn             -> mare                 (expected mære)
+    reason: Row2141 selects attested weak nominative mære (Corpus maere under incuba). Unchanged production yields mare because the retained nasal ending triggers restoration; mare is an attested levelled variant, not the selected comparator. Research Model B yields mære but is not adopted. Input and sound rules remain unchanged.
+    refs:   Lindsay1921 p.96 I225;Hall2007 §2 pp.301-302 and table1 pp.313-314;RingeTaylor2014 p.192;Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.source_ledger.md
+    added:  2026-11-13
 
 ========================================================================
 WONTFIX  (5)

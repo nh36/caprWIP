@@ -4912,9 +4912,9 @@ From [nátją]{.recon} ‘net’, West Germanic j-gemination first gives [náttj
 
 Spellings in _net_ can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is [_nett_]{.iv lang=oe sort=nett role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:33:1"} 'net' [@Campbell1959; @Orel2003].
 
-### nightmare — OE _mare_
+### nightmare — OE _mære_
 
-Derivation: _\*márōn_ > _mare_ (regular).
+Derivation: _\*márōn_ yields _mare_ in the current cascade; the selected Old English form is _mære_ (implementation mismatch).
 
 #### Derivation trace
 
@@ -4951,7 +4951,7 @@ Proto input: _\*márōn_
 \mbox{EAF Brightening} & \emph{*mærǭ} \\
 \mbox{OE A Restoration} & \emph{*marǭ} \\
 OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
-\mbox{OE Unstressed AE Merger} & \emph{*mare} \\
+\mbox{OE Unstressed AE Merger} & \Recon{mare} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -4960,23 +4960,25 @@ OE Unstressed Long Vowel Shortening & \emph{*maræ} \\
 }
 \endgroup
 
-Old English form: _mare_
+Current cascade output: _mare_
 
-#### Reconstruction and comparative evidence
+Old English form: _mære_
 
-Ringe and Taylor treat the lexeme as Proto-Germanic / Proto-Northwest-Germanic _\*marōn-_, with Old English _mare, maran_, and variant _mere_; Orel preserves the same comparative lemma though with a different Old English headword tradition [@RingeTaylor2014; @Orel2003].
+#### Old English evidence and selected form
 
-#### Old English evidence
+The form compared here is the weak feminine nominative singular *mære* 'nightmare'. The Corpus Glossary gives *maere* under Latin *incuba*; normalizing the spelling *ae* as *æ* gives *mære* [@Lindsay1921, 96, I225]. Hall distinguishes this weak noun from the strong noun *mær*. Both have a short root vowel and are distinct from the adjective *mǣre* 'famous' [@Hall2007, 301–302, §2].
 
-Clark Hall records _mare_ 'nightmare, monster' and also preserves related variant forms _mera_ / _mere_ [@ClarkHall1960, 213].
+The variant [*mare*]{.iv lang=oe sort=mare role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24:1"} 'nightmare' is also attested: *Bald's Leechbook* has the expression *Gif mon mare ride*. Oblique [*maran*]{.iv lang=oe sort=maran role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24" occ_id="Germanic/docs/lexeme_reports/model_entries/2141-nightmare-mare.model.md:24:2"} 'nightmare' occurs in *Leechbook III*. Hall's table separates these contexts from the related glossary copies, which do not constitute independent attestations of one gloss [@Hall2007, 313–314, table 1].
 
-#### Development to Old English
+#### Reconstruction and the variant
 
-The selected simplex input [márōn]{.recon} ‘nightmare’ regularly gives _mare_ 'nightmare' after brightening, A-restoration before the n-stem ending, and later reduction of the final vowel. The word represented here is the attested simplex noun, not an attested compound [@RingeTaylor2014].
+Ringe and Taylor reconstruct a nominative \emph{*marā} beside an oblique stem \emph{*marōn-}, followed by the front-root forms \emph{*mærǣ} and \emph{*mærōn-}. Their printed list includes *mare*, *maran*, and *mære*, not merely *mare* and *mere* [@RingeTaylor2014, 192]. Hall explicitly explains *mare* as levelling of the nominative root vowel to that of oblique forms such as *maran*, in which retraction had applied. This is a paradigmatic development, not evidence that the nominative itself regularly underwent the same restoration [@Hall2007, 301, §2].
 
-#### Form note
+#### Current derivation and implementation gap
 
-The concept corresponds to an unattested compound [nihtmare]{.recon} ‘nightmare’, but the Old English lexical evidence is for simplex _mare_ 'nightmare', with oblique _maran_ and variant _mere_ / _mera_ [@RingeTaylor2014; @ClarkHall1960, 213].
+The derivational input remains \emph{*márōn}. The unchanged cascade produces *mare*, not the selected *mære*. In the current implementation, the retained nasal ending triggers root-vowel restoration; its output matches an attested variant but does not implement the cited front-root nominative history. The unadopted Model B research experiment yields *mære*. Selecting that attested nominative does not adopt the experiment or change any production sound rule.
+
+The English concept label 'nightmare' indexes the Old English simplex, not an attested compound. The regular classification describes the selected nominative history; the later levelled variant is retained as comparison, not substituted for the form compared here to obtain a computational match.
 
 ### rainbow — OE _reġnboga_
 
