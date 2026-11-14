@@ -225,6 +225,15 @@ without declaring the competing reconstructions settled
 [@Fulk2018, pp. 88--90, 171--172, §§5.5--5.6, 7.32--7.33;
 @HoggGrammar2011, pp. 64--65, §§3.32--3.34].
 
+The northern relics constrain raising before the later loss of final
+\emph{*n}, not the date of the old loss in
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss). Hogg identifies
+*foldu* 'earth' in Cædmon's Hymn and *eorðu* 'earth' in the Leiden Riddle as early
+Northumbrian accusatives; the same texts also retain final \emph{-n}
+[@HoggGrammar2011, pp. 298--299, §§7.98--7.100].
+Their \emph{-u} supports a raising history, but does not choose the
+quantity and nasalization history of the secondary-nasal plural.
+
 The phonological distinction is testable. If inherited \emph{*ō}
 remains before the retained nasal, it can feed
 [SC046 OEARestoration](#rule-OEARestoration). If it then shortens only
@@ -233,14 +242,23 @@ the newly short vowel can still front under
 [SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly),
 giving predicted \emph{-en}. Earlier shortening before nasalization,
 or an independently justified earlier unrounding, offers a different
-route to \emph{-an}. The corresponding experimental routes give
-*flascan* 'flasks', *tungan* and *ascan* 'ashes'; the current execution
-with a protected secondary nasal instead gives predicted
+route to \emph{-an}. Both routes derive *flascan* 'flasks' and
+*tungan* from the full inherited inputs through an experimental
+normal-entry relation admitting the independently reconstructed weak
+endings. A conditional ashes plural gives *ascan* 'ashes'; it is not
+an additional case-secure textual witness. Protecting the secondary
+nasal without either vowel change instead gives predicted
 [flascen]{.pred}, [tungen]{.pred} and [ascen]{.pred}.
 These are alternative histories to evaluate against the entire
-paradigm, not grammatical conditions on a sound law. In particular,
+paradigm, not grammatical conditions on a sound law. They differ before
+another vowel: early shortening of accusative \emph{*tungōnų} feeds
+syncope and gives predicted [tungn]{.pred}, whereas final-only unrounding
+leaves predicted [tungunu]{.pred}. Neither result completes the raising
+and ending history. In particular,
 the inherited dative-plural route must also account for attested
-*tungum*, rather than predicted [tungem]{.pred}.
+*tungum*, rather than predicted [tungem]{.pred}. Experimental admission
+therefore removes an input-coverage obstacle without settling the
+historical choice.
 
 ### The genitive plural is a separate test
 
@@ -300,6 +318,11 @@ fronting, but not that particular combination of conditions
 [@Versloot2025, pp. 122--124]. The lexeme discussion therefore compares
 regular alternatives with the explicit levelling account, without
 treating either the existing output or the formation label as proof.
+CAPR declines to adopt retention; the historical possibility remains
+open. The working singular account is root-vowel extension from the
+inflected paradigm, as explained under
+[SC043 EAFBrightening](#rule-EAFBrightening). That decision does not
+settle which ending history produced the plural.
 
 ## Alternative cuts and their tree consequences
 

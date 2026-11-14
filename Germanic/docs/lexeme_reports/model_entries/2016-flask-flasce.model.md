@@ -143,8 +143,10 @@ leads to predicted [flascen]{.pred}. The same diagnostic gives
 in *dōn* 'do'. Thus the wrong ending cannot be blamed on failure of
 root restoration.
 
-Two general experimental repairs yield *flascan*, *tungan* 'tongues'
-and *ascan* 'ashes' without changing any selected-corpus final. Both
+Two general experimental repairs yield *flascan* and *tungan* 'tongues'.
+The conditional ashes plural also gives *ascan* 'ashes', but is not
+another case-secure textual nominative plural. Earlier diagnostic
+comparisons found no selected-corpus final changes. Both
 protect secondary nasals by placing the old loss before early apocope.
 One then tests polysyllabic \emph{*-ōn > *-ān} before fronting; the other
 shortens \emph{*ō} after restoration but before secondary nasalization,
@@ -156,12 +158,37 @@ connect the class with raising and subsequent morphological redistribution
 [@RingeTaylor2014, pp. 117--118, 163--164;
 @Fulk2018, pp. 88--90, 171--172, §§5.5--5.6, 7.32--7.33;
 @HoggGrammar2011, pp. 64--65, §§3.32--3.34].
-The raw plural is still rejected at the normal input relation. The
-inherited dative-plural diagnostic also gives [flascem]{.pred} and
-[tungem]{.pred}, not independently attested *tungum*. A successful
-plural fit therefore does not yet certify an inherited whole paradigm.
+The production input relation still rejects the raw plural because
+its native weak tails omit \emph{*-ōniz}, while the fallback stem
+template cannot supply medial \emph{*ō}. A general experimental
+admission extension now derives *flascan* from full
+\emph{*fláskōniz} under either ending history, without supplying an
+intermediate. It likewise derives *tungan* from
+\emph{*túngōniz}, while preserving nominative singular *tunge* and
+*dōn* 'do'.
+
+The accusative distinguishes the implementations: earlier shortening
+gives predicted [flascn]{.pred} and [tungn]{.pred}, while final-only
+unrounding leaves predicted [flasconu]{.pred} and [tungunu]{.pred}.
+Neither supplies the independently motivated raising history behind
+the northern accusative relics. The latter also involve a separate,
+later Northumbrian final-n loss, not the old loss in
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss)
+[@HoggGrammar2011, pp. 65, 298--299, §§3.34, 7.98--7.100].
+The inherited dative-plural route still gives [tungem]{.pred}, not
+attested *tungum*. Thus normal experimental entry demonstrates
+computational feasibility, not an independently established plural
+chronology; see [Chapter 3](#weak-n-paradigms-after-apocope).
 
 ### Regular nominative alternatives
+
+CAPR declines to adopt the retention rule, while leaving its historical
+possibility open. The working explanation of singular *flasce* remains
+extension of the inflected root vowel; see
+[SC043 EAFBrightening](#rule-EAFBrightening) and the separate ending
+comparison in [Chapter 3](#weak-n-paradigms-after-apocope).
+The following experiments are evidence for that decision, not adopted
+production rules.
 
 The two regular nominative experiments retain \emph{*a} before
 \emph{*sk} plus final \emph{*ā}, or first front it and then retract it
@@ -172,8 +199,11 @@ and preserve all other 393 selected outputs, including *mære* 'nightmare'.
 Wright and Wright motivate testing retention before an originally back
 vowel, but include \emph{*st} and other clusters, not an independently
 demonstrated \emph{*sk}-only law or this precise ordering
-[@Wright1908, pp. 37--38, §57]. Extending the early retraction to
-\emph{*st} incorrectly gives [raste]{.pred} for *ræste* 'rest'.
+[@Wright1908, pp. 37--38, §57]. With the selected reconstruction,
+extending the early retraction to \emph{*st} gives [raste]{.pred} for
+*ræste* 'rest'. The historical force of that comparison depends on
+the stem reconstruction: Wright and Wright discuss *rest* under
+i-umlaut [@Wright1908, p. 37, §56].
 Versloot's restricted-fronting account motivates testing the alternative,
 but does not establish the proposed narrow environment
 [@Versloot2025, pp. 122--124].
@@ -239,9 +269,11 @@ consonant's realization against the additional *x* evidence.
 
 Regular phonology has explanatory priority; an author's levelling
 analysis or the formation label cannot settle the issue by itself.
-The inherited nominative plural is a promising cell for further
-general ending work, not yet a replacement validated through the normal
-entry point. No independently dated intermediate justifies a transponent
+The inherited nominative plural now succeeds through experimental
+normal entry, but the rival vowel histories remain independently
+undated and the accusative and dative controls remain unresolved.
+It is not yet a historically validated replacement.
+No independently dated intermediate justifies a transponent
 that silently supplies the desired root and ending. The selected
 nominative input, *flasce* comparator and disclosed mismatch therefore
 remain in place. Independent evidence dating the following vowel at

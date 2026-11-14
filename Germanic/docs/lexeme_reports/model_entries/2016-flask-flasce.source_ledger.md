@@ -186,6 +186,34 @@ printed masculine-source discussion is Ringe–Taylor153–154.
 The experiment distinguishes the ending hypotheses but does not decide
 the nominative's root or consonantal history.
 
+## 14 November nominative-plural follow-up
+
+The [ending/admission audit](../../sound_changes/audits/flask-nominative-plural-followup.md)
+tests reference `1181f62303972f9538a3a4d8d18dd63ab2f35c70`.
+Hecht C141.27 remains the secure nominative plural *flascan*;
+C66.9/C142.3 are singular, and C141.28–29 is genitive plural
+*flascena*. No new ashes nominative-plural token is claimed.
+
+An input-only class extension admits Ringe's feminine endings through
+normal experimental entry. Both earlier ending variants now derive
+*fláskōniz → flascan* and *túngōniz → tungan*, preserving *tunge*
+and *dōn*. Shortening differs from final unrounding in the accusative:
+*flascn/tungn* versus *flasconu/tungunu*. Neither supplies a complete
+raising account, and both still give dative plural *tungem*, not
+*tungum*. Hogg 2011 [1992], pp.65, 298–299, §§3.34, 7.98–7.100,
+distinguishes raising from the separate late Northumbrian final-n loss
+in accusative *foldu/eorðu*. Those relics do not independently date
+either plural implementation.
+
+Normal admission is therefore resolved experimentally, but the target
+recommendation remains unchanged: retain selected *fláskōn : flasce*
+and its disclosed mismatch. The supplied SC043 discussion is incorporated
+with retention explicitly unadopted and historically open; its Hogg
+§§5.35–5.38 citation uses the held monograph reissue, pp.93–96,
+not the differently numbered Cambridge History chapter. Older
+diagnostic records and their dated corpus measurements remain intact.
+This pass makes no new full-corpus or publication-validation claim.
+
 ## Publication ownership and preserved history
 
 Both lexical presentations use this mature model because the entry is
