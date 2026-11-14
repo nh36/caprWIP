@@ -242,6 +242,50 @@ paradigm, not grammatical conditions on a sound law. In particular,
 the inherited dative-plural route must also account for attested
 *tungum*, rather than predicted [tungem]{.pred}.
 
+### The genitive plural is a separate test
+
+The genitive plural does not have the nominative plural's
+\emph{*-ōniz}. Ringe's inherited feminine *tunge* 'tongue' class has
+the stem \emph{*tungōn-}, whereas inherited masculine *guma* 'man'
+has \emph{*guman-}; both take a nasal trimoric genitive-plural final
+[@Ringe2017, pp. 312--313]. After denasalization, Ringe and Taylor
+give \emph{*tungōnō} beside masculine \emph{*gumanō}.
+They explicitly explain the feminine genitive's stem syllable by
+levelling from the masculine [@RingeTaylor2014, pp. 59, 153--154].
+The contextual *flascena* 'flasks', with parallel *flaxena*, in
+Gregory's *Dialogues* is therefore a useful independent cell, not a
+genitive-singular substitute for the nominative [@Hecht1900, p. 141,
+lines 28--29].
+
+The comparison distinguishes the medial stem vowel from the final
+vowel's quantity. Quantity-preserving diagnostic histories give
+feminine [flascona]{.pred} and [tungona]{.pred}, but masculine-source
+*flascena* 'flasks' and *tungena* 'tongues', alongside masculine
+*gumena* 'men'. These are named-boundary diagnostics: the full
+inherited nasal-trimoric forms are not admitted by the normal input
+relation. More importantly, the apparent masculine-source success
+depends on the diagnostic carrier escaping ordinary syncope's
+immediately following-vowel class. Recognizing that carrier instead
+gives predicted [flascna]{.pred}, *tungna* 'tongues' and
+[gumna]{.pred}, without changing any selected-corpus output.
+The expected medial e cannot therefore be credited to a completed
+regular inherited derivation simply because the first replay fits.
+
+This distinction agrees with the need to examine the ending's history
+in layers. Ringe and Taylor cite early West Saxon *tungna* 'tongues'
+and poetic syncopated forms, then restored \emph{-ana} and its later
+development to \emph{-ena} [@RingeTaylor2014, pp. 153--154].
+Campbell places \emph{-ena} beside older \emph{-ana} in a wider
+medial-vowel process [@Campbell1959, pp. 158--159, §385].
+Supplying restored \emph{-ana} before syncope still loses its vowel;
+supplying it after syncope gives *flascena* 'flasks', *tungena*
+'tongues' and *gumena* 'men' in the downstream experiment.
+That result explicitly presupposes morphological restoration.
+It does not date the later vowel process, justify a new transponent,
+or prove that the nominative's root vowel was levelled. The cell
+supports a class-wide ending comparison while leaving the separate
+root and consonant histories open.
+
 Root-vowel levelling is a further, not identical, issue. Campbell and
 Luick derive singular *flasce* 'flask' from the oblique or plural
 root, as with *asce* 'ash' beside *ascan*

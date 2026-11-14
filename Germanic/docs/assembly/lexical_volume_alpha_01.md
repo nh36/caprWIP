@@ -9944,6 +9944,52 @@ palatalization in the structural *discas* control in both promising
 variants. Their improved nominative result is real; it is not sufficient
 evidence for adoption of the whole cluster account.
 
+The subsequent guarded comparison repairs that particular consonant
+failure: requiring a following consonant or boundary in the
+preceding-front-vowel clause preserves *fiscas* 'fishes' and *discas*
+'dishes', without losing *wasċe* 'I wash' or *þersċe* 'I thresh'
+[@Campbell1959, pp. 177--178, §§440--441;
+@RingeTaylor2014, p. 204]. With that guard, moving the following-vowel
+clause alone gives front-root [flæsce]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:198" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:198:1"}; changing the root alone
+with the old timing gives back-root [flasċe]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:199" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:199:1"}. The combined
+retention or retraction variants give *flasce* 'flask', but also expose
+the independent hard-cluster outcome [þrescan]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:201" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:201:1"} for the selected
+palatal-marked thresh comparator. Thus their score is no longer an
+improvement over the reference. The repaired consonantal controls
+remove the earlier *discas* objection; they do not supply the missing
+independent evidence for the narrow root environment or its date.
+Written *sc* remains ambiguous, while attested *flaxe* 'flask' and
+*flaxena* 'flasks' also require accounting for the hard/metathesized
+cluster. Root-vowel agreement alone cannot settle that history.
+
+#### The attested genitive plural
+
+The genitive plural *flascena* 'flasks', parallel *flaxena*, is a
+separate inherited-cell test, not the nominative-plural ending
+\emph{*-ōniz}. Ringe contrasts feminine \emph{*tungōn-} with inherited
+masculine \emph{*guman-}, each with a nasal trimoric genitive-plural
+final; Ringe and Taylor explicitly discuss masculine influence on
+the feminine genitive's stem syllable [@Ringe2017, pp. 312--313;
+@RingeTaylor2014, pp. 59, 153--154]. The complete inherited forms
+are rejected by the normal input relation. Quantity-preserving
+diagnostics give feminine [flascona]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:220" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:220:1"} and [tungona]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:220" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:220:2"},
+against masculine-source *flascena*, *tungena* 'tongues' and control
+*gumena* 'men'. But the latter matches depend on the diagnostic
+quantity carrier escaping syncope: recognizing it gives
+[flascna]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:224" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:224:1"}, *tungna* 'tongues' and [gumna]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:224" occ_id="Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:224:2"}.
+This is not yet a regular derivation of the attested genitive.
+
+The source-reported sequence distinguishes syncopated *tungna*
+'tongues', restored \emph{-ana} and later \emph{-ena}
+[@RingeTaylor2014, pp. 153--154; @Campbell1959, pp. 158--159, §385].
+Explicitly entering restored \emph{-ana} after syncope gives
+*flascena* 'flasks' with successful tongue and inherited masculine
+controls. That diagnostic presupposes morphological remodelling;
+it neither supplies a normal inherited entry nor licenses silently
+adopting a late form. The ending comparison does not settle the
+nominative's root vowel, and its plain *sc* still cannot decide the
+consonant's realization against the additional *x* evidence.
+
 #### Present selection
 
 Regular phonology has explanatory priority; an author's levelling

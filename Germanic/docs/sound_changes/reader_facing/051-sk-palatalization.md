@@ -76,8 +76,21 @@ vowels, including *wasċe* 'I wash', *þersċe* 'I thresh' and *disċes*
 following-vowel trigger loses the first two palatals even though it
 fits the selected corpus. Conversely, the present preceding-front-vowel
 clause creates a palatal cluster in a structural *discas* control in
-both regular nominative variants. This unresolved conditioning must
-not be hidden by their improved flask output, or by changing the
-selected comparator.
+both original regular nominative variants. A subsequent controlled
+comparison repairs that overgeneration by requiring a consonant or
+word boundary after the cluster in the preceding-front-vowel clause.
+The repaired relation preserves *fiscas* 'fishes' and *discas* 'dishes'
+while retaining *fisċes* 'fish', *disċes* 'dish', *wasċe* 'I wash'
+and *þersċe* 'I thresh'. This is independently motivated conditioning,
+not evidence for the proposed earlier date of the following-vowel
+clause [@Campbell1959, pp. 177--178, §§440--441;
+@RingeTaylor2014, p. 204]. Written *sc* does not settle the consonant's
+value; *fixas* 'fishes' and *þerxan* 'thresh' additionally attest a
+hard, metathesized cluster, whose metathesis is a separate development.
+The guarded flask experiments therefore distinguish front-root
+[flæsce]{.pred} from back-root [flasċe]{.pred}; only combining the
+root hypothesis with the earlier following-vowel clause gives *flasce*
+'flask'. Neither successful conditioning controls nor that combined
+fit independently dates the proposed order.
 
 Five witnesses establish the upper boundary collectively. The palatal cluster must already underlie *sċeaft* ‘shaft’, *sċēar* ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’ before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). The \emph{*sċea-* 'sea'}/\emph{*sċie-*} set therefore places cluster palatalization before the West Saxon vowel change. The cluster change occupies the same palatalization zone as [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) while remaining distinct from plain-velar palatalization and the later vowel changes.

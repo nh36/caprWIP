@@ -144,6 +144,48 @@ dated intermediate warrants a transponent that supplies already desired
 root a and ending -an; neither an unattested short ending nor an
 arbitrarily late entry is selected.
 
+## 14 November follow-up: SC051 and the genitive plural
+
+The earlier386/394 figures above belong to the unguarded experiments
+against2805d98a. The verified integrated PR10 reference is now
+77f314bf85035c23706b6b09b3a1855aa23c0620, with the same executable tree.
+The [SC051 comparison](../../sound_changes/audits/sc051-medial-context-research.md)
+requires a following consonant/boundary in the preceding-front clause.
+All14 independent consonant controls pass; the sole guard-only final
+delta is2253 þresċan→þrescan, giving384/394 against unchanged targets.
+The two guarded root/timing packages also change2016 to flasce and
+score385/394. This removes the old discas objection without proving the
+narrow root condition or its date. Campbell177–178 and original
+Ringe–Taylor204 were re-inspected for those distinctions.
+
+| Source / exact locator | Newly verified distinction | Limit |
+| :--- | :--- | :--- |
+| Ringe2017 p313, original sheet324, with p312 headings | Feminine tungōnǭ̄ versus inherited masculine gumanǭ̄ in the genitive plural | Not nom.pl./gen.sg. -ōniz; the nasal trimoric is not the cascade's bimoric ǭ |
+| RingeTaylor2014 pp59,153–154, original sheets74,168–169 | Denasalized final quantity, inherited masculine guma, feminine stem-syllable levelling from masculine, syncopated tungna, restored -ana and later -ena | Full flask forms and exact diagnostic entry positions are CAPR extrapolations |
+| Campbell1959 pp158–159 §385, original sheets176–177 | Weak genitive-plural -ena compared with older -ana in a general medial-vowel process | Not evidence that early fronting and late dissimilation share one date |
+| Hecht1900 p141 C ll28–29/O apparatus l29 | Previously verified contextual flascena/flaxena remains the attested genitive-plural comparator | Not a new attestation or genitive singular |
+
+The [genitive-plural experiment](../../sound_changes/audits/flask-genitive-plural-research.md)
+keeps the production candidate, not an adopted SC051 variant.
+All complete nasal-trimoric raw forms are rejected. Oral quantity-shadow
+diagnostics give inherited-feminine flascona/tungona versus
+masculine-source flascena/tungena, with inherited guma→gumena.
+The apparent masculine success is sensitive to the following-vowel
+class: allowing the trimoric carrier in immediate syncope context gives
+flascna/tungna/gumna. That general experimental repair changes exactly
+zero of394 selected outputs. Literal final PWGmc ō is also measured:
+it loses the origin distinction at the early merger and does not
+silently count as a successful inherited genitive.
+
+Late -ana entered before syncope still syncopates; after syncope it
+gives flascena/tungena/gumena. This explicitly presupposes analogical
+restoration and does not establish a normal-input derivation or a
+historically validated transponent. No new Hill bibliographic authority
+is inferred from the assignment's label; the independently verified
+printed masculine-source discussion is Ringe–Taylor153–154.
+The experiment distinguishes the ending hypotheses but does not decide
+the nominative's root or consonantal history.
+
 ## Publication ownership and preserved history
 
 Both lexical presentations use this mature model because the entry is

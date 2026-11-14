@@ -3,11 +3,23 @@
 Current candidate, 13 November 2026: the two-word original lower-boundary
 measurement below is preserved, not repeated as current evidence.
 With the early final merger, flask gives flæsċe in either order; its
-attested back-root nominative involves independently sourced levelling.
+attested back-root nominative has an explicitly sourced levelling analysis,
+not independent proof against a regular alternative.
 The fresh displacement before restoration changes only wash, wascan to
 wæsċan. Retain the wash boundary and the separate upper-boundary evidence;
 do not infer historical regularity from flask's former executable match.
 See [the candidate memorandum](../../audits/sc042-final-nasal-candidate.md).
+
+Research follow-up, 14 November 2026, reference
+`77f314bf85035c23706b6b09b3a1855aa23c0620`: requiring a following
+consonant or boundary in the preceding-front-vowel clause repairs the
+fiscas/discas negative controls while retaining non-high-front positives.
+Its only selected final delta is2253 þresċan to þrescan. Moving only
+the following-vowel clause earlier is a separate trial; it gives
+flæsce until a further root hypothesis is added. Neither trial
+establishes a new historical chronology edge or replaces the old
+composite-rule displacement measurements below. See
+[the bounded research comparison](../../audits/sc051-medial-context-research.md).
 
 ## Position at experiment time
 - order_at_experiment_time: `51`

@@ -1,0 +1,132 @@
+variant	id	concept	stage	before	after
+identity	2014	fish	OESkPalatalization	*f*í*s*k	*f*í*ʃ
+identity	2016	flask	OESkPalatalization	*f*l*æ*s*k*ǣ	*f*l*æ*ʃ*ǣ
+identity	2020	flesh	OESkPalatalization	*f*l*ā*s*k*i	*f*l*ā*ʃ*i
+identity	2175	shaft	OESkPalatalization	*s*k*æ*f*t	*ʃ*æ*f*t
+identity	2176	shame	OESkPalatalization	*s*k*á*m*u	*ʃ*á*m*u
+identity	2177	shear	OESkPalatalization	*s*k*é*r*ą*n	*ʃ*é*r*ą*n
+identity	2178	sheath	OESkPalatalization	*s*k*ā*θ*i	*ʃ*ā*θ*i
+identity	2179	sheep	OESkPalatalization	*s*k*ǣ*p	*ʃ*ǣ*p
+identity	2180	shield	OESkPalatalization	*s*k*é*l*d*u	*ʃ*é*l*d*u
+identity	2181	shilling	OESkPalatalization	*s*k*í*l*l*i*n*g	*ʃ*í*l*l*i*n*g
+identity	2182	shine	OESkPalatalization	*s*k*ḯ*n*ą*n	*ʃ*ḯ*n*ą*n
+identity	2183	shoulder	OESkPalatalization	*s*k*ú*l*d*r*u*m	*ʃ*ú*l*d*r*u*m
+identity	2184	shove	OESkPalatalization	*s*k*ēa*b	*ʃ*ēa*b
+identity	2185	shovel	OESkPalatalization	*s*k*ó*f*l*u	*ʃ*ó*f*l*u
+identity	2186	show	OESkPalatalization	*s*k*ḗa*w*ō*j*ą*n	*ʃ*ḗa*w*ō*j*ą*n
+identity	2187	shower	OESkPalatalization	*s*k*ū*r*u	*ʃ*ū*r*u
+identity	2253	thrash	OESkPalatalization	*θ*r*é*s*k*ą*n	*θ*r*é*ʃ*ą*n
+identity	2317	show (iptv.2sg)	OESkPalatalization	*s*k*ḗa*w*ô	*ʃ*ḗa*w*ô
+identity	2318	show (3sg)	OESkPalatalization	*s*k*ḗa*w*ō*θ	*ʃ*ḗa*w*ō*θ
+identity	2339	dart	OESkPalatalization	*s*k*ú*t*i*l	*ʃ*ú*t*i*l
+guard_only	2014	fish	AGSkG	*f*í*s*k	*f*í*ʃ
+guard_only	2016	flask	AGSkG	*f*l*æ*s*k*ǣ	*f*l*æ*ʃ*ǣ
+guard_only	2020	flesh	AGSkG	*f*l*ā*s*k*i	*f*l*ā*ʃ*i
+guard_only	2175	shaft	AGSkG	*s*k*æ*f*t	*ʃ*æ*f*t
+guard_only	2176	shame	AGSkG	*s*k*á*m*u	*ʃ*á*m*u
+guard_only	2177	shear	AGSkG	*s*k*é*r*ą*n	*ʃ*é*r*ą*n
+guard_only	2178	sheath	AGSkG	*s*k*ā*θ*i	*ʃ*ā*θ*i
+guard_only	2179	sheep	AGSkG	*s*k*ǣ*p	*ʃ*ǣ*p
+guard_only	2180	shield	AGSkG	*s*k*é*l*d*u	*ʃ*é*l*d*u
+guard_only	2181	shilling	AGSkG	*s*k*í*l*l*i*n*g	*ʃ*í*l*l*i*n*g
+guard_only	2182	shine	AGSkG	*s*k*ḯ*n*ą*n	*ʃ*ḯ*n*ą*n
+guard_only	2183	shoulder	AGSkG	*s*k*ú*l*d*r*u*m	*ʃ*ú*l*d*r*u*m
+guard_only	2184	shove	AGSkG	*s*k*ēa*b	*ʃ*ēa*b
+guard_only	2185	shovel	AGSkG	*s*k*ó*f*l*u	*ʃ*ó*f*l*u
+guard_only	2186	show	AGSkG	*s*k*ḗa*w*ō*j*ą*n	*ʃ*ḗa*w*ō*j*ą*n
+guard_only	2187	shower	AGSkG	*s*k*ū*r*u	*ʃ*ū*r*u
+guard_only	2317	show (iptv.2sg)	AGSkG	*s*k*ḗa*w*ô	*ʃ*ḗa*w*ô
+guard_only	2318	show (3sg)	AGSkG	*s*k*ḗa*w*ō*θ	*ʃ*ḗa*w*ō*θ
+guard_only	2339	dart	AGSkG	*s*k*ú*t*i*l	*ʃ*ú*t*i*l
+guard_split_early	2014	fish	AGSkL	*f*í*s*k	*f*í*ʃ
+guard_split_early	2020	flesh	AGSkF	*f*l*ā*s*k*i	*f*l*ā*ʃ*i
+guard_split_early	2175	shaft	AGSkF	*s*k*æ*f*t*ą	*ʃ*æ*f*t*ą
+guard_split_early	2176	shame	AGSkL	*s*k*á*m*u	*ʃ*á*m*u
+guard_split_early	2177	shear	AGSkF	*s*k*é*r*a*n*ą	*ʃ*é*r*a*n*ą
+guard_split_early	2178	sheath	AGSkL	*s*k*ā*θ*i	*ʃ*ā*θ*i
+guard_split_early	2179	sheep	AGSkF	*s*k*ǣ*p*ą	*ʃ*ǣ*p*ą
+guard_split_early	2180	shield	AGSkF	*s*k*é*l*d*u	*ʃ*é*l*d*u
+guard_split_early	2181	shilling	AGSkF	*s*k*í*l*l*i*n*g	*ʃ*í*l*l*i*n*g
+guard_split_early	2182	shine	AGSkL	*s*k*ḯ*n*ą*n	*ʃ*ḯ*n*ą*n
+guard_split_early	2183	shoulder	AGSkL	*s*k*ú*l*d*r*u*m	*ʃ*ú*l*d*r*u*m
+guard_split_early	2184	shove	AGSkF	*s*k*ēa*b	*ʃ*ēa*b
+guard_split_early	2185	shovel	AGSkL	*s*k*ó*f*l*u	*ʃ*ó*f*l*u
+guard_split_early	2186	show	AGSkF	*s*k*ḗa*w*ō*j*a*n*ą	*ʃ*ḗa*w*ō*j*a*n*ą
+guard_split_early	2187	shower	AGSkL	*s*k*ū*r*u	*ʃ*ū*r*u
+guard_split_early	2317	show (iptv.2sg)	AGSkF	*s*k*ḗa*w*ô	*ʃ*ḗa*w*ô
+guard_split_early	2318	show (3sg)	AGSkF	*s*k*ḗa*w*ō*θ	*ʃ*ḗa*w*ō*θ
+guard_split_early	2339	dart	AGSkL	*s*k*ú*t*i*l	*ʃ*ú*t*i*l
+guard_retain_late	2014	fish	AGSkG	*f*í*s*k	*f*í*ʃ
+guard_retain_late	2016	flask	AGSkG	*f*l*a*s*k*ǣ	*f*l*a*ʃ*ǣ
+guard_retain_late	2020	flesh	AGSkG	*f*l*ā*s*k*i	*f*l*ā*ʃ*i
+guard_retain_late	2175	shaft	AGSkG	*s*k*æ*f*t	*ʃ*æ*f*t
+guard_retain_late	2176	shame	AGSkG	*s*k*á*m*u	*ʃ*á*m*u
+guard_retain_late	2177	shear	AGSkG	*s*k*é*r*ą*n	*ʃ*é*r*ą*n
+guard_retain_late	2178	sheath	AGSkG	*s*k*ā*θ*i	*ʃ*ā*θ*i
+guard_retain_late	2179	sheep	AGSkG	*s*k*ǣ*p	*ʃ*ǣ*p
+guard_retain_late	2180	shield	AGSkG	*s*k*é*l*d*u	*ʃ*é*l*d*u
+guard_retain_late	2181	shilling	AGSkG	*s*k*í*l*l*i*n*g	*ʃ*í*l*l*i*n*g
+guard_retain_late	2182	shine	AGSkG	*s*k*ḯ*n*ą*n	*ʃ*ḯ*n*ą*n
+guard_retain_late	2183	shoulder	AGSkG	*s*k*ú*l*d*r*u*m	*ʃ*ú*l*d*r*u*m
+guard_retain_late	2184	shove	AGSkG	*s*k*ēa*b	*ʃ*ēa*b
+guard_retain_late	2185	shovel	AGSkG	*s*k*ó*f*l*u	*ʃ*ó*f*l*u
+guard_retain_late	2186	show	AGSkG	*s*k*ḗa*w*ō*j*ą*n	*ʃ*ḗa*w*ō*j*ą*n
+guard_retain_late	2187	shower	AGSkG	*s*k*ū*r*u	*ʃ*ū*r*u
+guard_retain_late	2317	show (iptv.2sg)	AGSkG	*s*k*ḗa*w*ô	*ʃ*ḗa*w*ô
+guard_retain_late	2318	show (3sg)	AGSkG	*s*k*ḗa*w*ō*θ	*ʃ*ḗa*w*ō*θ
+guard_retain_late	2339	dart	AGSkG	*s*k*ú*t*i*l	*ʃ*ú*t*i*l
+guard_retract_late	2014	fish	AGSkG	*f*í*s*k	*f*í*ʃ
+guard_retract_late	2016	flask	AGSkG	*f*l*a*s*k*ǣ	*f*l*a*ʃ*ǣ
+guard_retract_late	2020	flesh	AGSkG	*f*l*ā*s*k*i	*f*l*ā*ʃ*i
+guard_retract_late	2175	shaft	AGSkG	*s*k*æ*f*t	*ʃ*æ*f*t
+guard_retract_late	2176	shame	AGSkG	*s*k*á*m*u	*ʃ*á*m*u
+guard_retract_late	2177	shear	AGSkG	*s*k*é*r*ą*n	*ʃ*é*r*ą*n
+guard_retract_late	2178	sheath	AGSkG	*s*k*ā*θ*i	*ʃ*ā*θ*i
+guard_retract_late	2179	sheep	AGSkG	*s*k*ǣ*p	*ʃ*ǣ*p
+guard_retract_late	2180	shield	AGSkG	*s*k*é*l*d*u	*ʃ*é*l*d*u
+guard_retract_late	2181	shilling	AGSkG	*s*k*í*l*l*i*n*g	*ʃ*í*l*l*i*n*g
+guard_retract_late	2182	shine	AGSkG	*s*k*ḯ*n*ą*n	*ʃ*ḯ*n*ą*n
+guard_retract_late	2183	shoulder	AGSkG	*s*k*ú*l*d*r*u*m	*ʃ*ú*l*d*r*u*m
+guard_retract_late	2184	shove	AGSkG	*s*k*ēa*b	*ʃ*ēa*b
+guard_retract_late	2185	shovel	AGSkG	*s*k*ó*f*l*u	*ʃ*ó*f*l*u
+guard_retract_late	2186	show	AGSkG	*s*k*ḗa*w*ō*j*ą*n	*ʃ*ḗa*w*ō*j*ą*n
+guard_retract_late	2187	shower	AGSkG	*s*k*ū*r*u	*ʃ*ū*r*u
+guard_retract_late	2317	show (iptv.2sg)	AGSkG	*s*k*ḗa*w*ô	*ʃ*ḗa*w*ô
+guard_retract_late	2318	show (3sg)	AGSkG	*s*k*ḗa*w*ō*θ	*ʃ*ḗa*w*ō*θ
+guard_retract_late	2339	dart	AGSkG	*s*k*ú*t*i*l	*ʃ*ú*t*i*l
+guard_early_retain	2014	fish	AGSkL	*f*í*s*k	*f*í*ʃ
+guard_early_retain	2020	flesh	AGSkF	*f*l*ā*s*k*i	*f*l*ā*ʃ*i
+guard_early_retain	2175	shaft	AGSkF	*s*k*æ*f*t*ą	*ʃ*æ*f*t*ą
+guard_early_retain	2176	shame	AGSkL	*s*k*á*m*u	*ʃ*á*m*u
+guard_early_retain	2177	shear	AGSkF	*s*k*é*r*a*n*ą	*ʃ*é*r*a*n*ą
+guard_early_retain	2178	sheath	AGSkL	*s*k*ā*θ*i	*ʃ*ā*θ*i
+guard_early_retain	2179	sheep	AGSkF	*s*k*ǣ*p*ą	*ʃ*ǣ*p*ą
+guard_early_retain	2180	shield	AGSkF	*s*k*é*l*d*u	*ʃ*é*l*d*u
+guard_early_retain	2181	shilling	AGSkF	*s*k*í*l*l*i*n*g	*ʃ*í*l*l*i*n*g
+guard_early_retain	2182	shine	AGSkL	*s*k*ḯ*n*ą*n	*ʃ*ḯ*n*ą*n
+guard_early_retain	2183	shoulder	AGSkL	*s*k*ú*l*d*r*u*m	*ʃ*ú*l*d*r*u*m
+guard_early_retain	2184	shove	AGSkF	*s*k*ēa*b	*ʃ*ēa*b
+guard_early_retain	2185	shovel	AGSkL	*s*k*ó*f*l*u	*ʃ*ó*f*l*u
+guard_early_retain	2186	show	AGSkF	*s*k*ḗa*w*ō*j*a*n*ą	*ʃ*ḗa*w*ō*j*a*n*ą
+guard_early_retain	2187	shower	AGSkL	*s*k*ū*r*u	*ʃ*ū*r*u
+guard_early_retain	2317	show (iptv.2sg)	AGSkF	*s*k*ḗa*w*ô	*ʃ*ḗa*w*ô
+guard_early_retain	2318	show (3sg)	AGSkF	*s*k*ḗa*w*ō*θ	*ʃ*ḗa*w*ō*θ
+guard_early_retain	2339	dart	AGSkL	*s*k*ú*t*i*l	*ʃ*ú*t*i*l
+guard_early_retract	2014	fish	AGSkL	*f*í*s*k	*f*í*ʃ
+guard_early_retract	2020	flesh	AGSkF	*f*l*ā*s*k*i	*f*l*ā*ʃ*i
+guard_early_retract	2175	shaft	AGSkF	*s*k*æ*f*t*ą	*ʃ*æ*f*t*ą
+guard_early_retract	2176	shame	AGSkL	*s*k*á*m*u	*ʃ*á*m*u
+guard_early_retract	2177	shear	AGSkF	*s*k*é*r*a*n*ą	*ʃ*é*r*a*n*ą
+guard_early_retract	2178	sheath	AGSkL	*s*k*ā*θ*i	*ʃ*ā*θ*i
+guard_early_retract	2179	sheep	AGSkF	*s*k*ǣ*p*ą	*ʃ*ǣ*p*ą
+guard_early_retract	2180	shield	AGSkF	*s*k*é*l*d*u	*ʃ*é*l*d*u
+guard_early_retract	2181	shilling	AGSkF	*s*k*í*l*l*i*n*g	*ʃ*í*l*l*i*n*g
+guard_early_retract	2182	shine	AGSkL	*s*k*ḯ*n*ą*n	*ʃ*ḯ*n*ą*n
+guard_early_retract	2183	shoulder	AGSkL	*s*k*ú*l*d*r*u*m	*ʃ*ú*l*d*r*u*m
+guard_early_retract	2184	shove	AGSkF	*s*k*ēa*b	*ʃ*ēa*b
+guard_early_retract	2185	shovel	AGSkL	*s*k*ó*f*l*u	*ʃ*ó*f*l*u
+guard_early_retract	2186	show	AGSkF	*s*k*ḗa*w*ō*j*a*n*ą	*ʃ*ḗa*w*ō*j*a*n*ą
+guard_early_retract	2187	shower	AGSkL	*s*k*ū*r*u	*ʃ*ū*r*u
+guard_early_retract	2317	show (iptv.2sg)	AGSkF	*s*k*ḗa*w*ô	*ʃ*ḗa*w*ô
+guard_early_retract	2318	show (3sg)	AGSkF	*s*k*ḗa*w*ō*θ	*ʃ*ḗa*w*ō*θ
+guard_early_retract	2339	dart	AGSkL	*s*k*ú*t*i*l	*ʃ*ú*t*i*l

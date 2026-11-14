@@ -1962,6 +1962,50 @@ paradigm, not grammatical conditions on a sound law. In particular,
 the inherited dative-plural route must also account for attested
 *tungum*, rather than predicted [tungem]{.pred}.
 
+### The genitive plural is a separate test
+
+The genitive plural does not have the nominative plural's
+\emph{*-ōniz}. Ringe's inherited feminine *tunge* 'tongue' class has
+the stem \emph{*tungōn-}, whereas inherited masculine *guma* 'man'
+has \emph{*guman-}; both take a nasal trimoric genitive-plural final
+[@Ringe2017, pp. 312--313]. After denasalization, Ringe and Taylor
+give \emph{*tungōnō} beside masculine \emph{*gumanō}.
+They explicitly explain the feminine genitive's stem syllable by
+levelling from the masculine [@RingeTaylor2014, pp. 59, 153--154].
+The contextual *flascena* 'flasks', with parallel *flaxena*, in
+Gregory's *Dialogues* is therefore a useful independent cell, not a
+genitive-singular substitute for the nominative [@Hecht1900, p. 141,
+lines 28--29].
+
+The comparison distinguishes the medial stem vowel from the final
+vowel's quantity. Quantity-preserving diagnostic histories give
+feminine [flascona]{.pred} and [tungona]{.pred}, but masculine-source
+*flascena* 'flasks' and *tungena* 'tongues', alongside masculine
+*gumena* 'men'. These are named-boundary diagnostics: the full
+inherited nasal-trimoric forms are not admitted by the normal input
+relation. More importantly, the apparent masculine-source success
+depends on the diagnostic carrier escaping ordinary syncope's
+immediately following-vowel class. Recognizing that carrier instead
+gives predicted [flascna]{.pred}, *tungna* 'tongues' and
+[gumna]{.pred}, without changing any selected-corpus output.
+The expected medial e cannot therefore be credited to a completed
+regular inherited derivation simply because the first replay fits.
+
+This distinction agrees with the need to examine the ending's history
+in layers. Ringe and Taylor cite early West Saxon *tungna* 'tongues'
+and poetic syncopated forms, then restored \emph{-ana} and its later
+development to \emph{-ena} [@RingeTaylor2014, pp. 153--154].
+Campbell places \emph{-ena} beside older \emph{-ana} in a wider
+medial-vowel process [@Campbell1959, pp. 158--159, §385].
+Supplying restored \emph{-ana} before syncope still loses its vowel;
+supplying it after syncope gives *flascena* 'flasks', *tungena*
+'tongues' and *gumena* 'men' in the downstream experiment.
+That result explicitly presupposes morphological restoration.
+It does not date the later vowel process, justify a new transponent,
+or prove that the nominative's root vowel was levelled. The cell
+supports a class-wide ending comparison while leaving the separate
+root and consonant histories open.
+
 Root-vowel levelling is a further, not identical, issue. Campbell and
 Luick derive singular *flasce* 'flask' from the oblique or plural
 root, as with *asce* 'ash' beside *ascan*
@@ -4728,9 +4772,22 @@ vowels, including *wasċe* 'I wash', *þersċe* 'I thresh' and *disċes*
 following-vowel trigger loses the first two palatals even though it
 fits the selected corpus. Conversely, the present preceding-front-vowel
 clause creates a palatal cluster in a structural *discas* control in
-both regular nominative variants. This unresolved conditioning must
-not be hidden by their improved flask output, or by changing the
-selected comparator.
+both original regular nominative variants. A subsequent controlled
+comparison repairs that overgeneration by requiring a consonant or
+word boundary after the cluster in the preceding-front-vowel clause.
+The repaired relation preserves *fiscas* 'fishes' and *discas* 'dishes'
+while retaining *fisċes* 'fish', *disċes* 'dish', *wasċe* 'I wash'
+and *þersċe* 'I thresh'. This is independently motivated conditioning,
+not evidence for the proposed earlier date of the following-vowel
+clause [@Campbell1959, pp. 177--178, §§440--441;
+@RingeTaylor2014, p. 204]. Written *sc* does not settle the consonant's
+value; *fixas* 'fishes' and *þerxan* 'thresh' additionally attest a
+hard, metathesized cluster, whose metathesis is a separate development.
+The guarded flask experiments therefore distinguish front-root
+[flæsce]{.pred} from back-root [flasċe]{.pred}; only combining the
+root hypothesis with the earlier following-vowel clause gives *flasce*
+'flask'. Neither successful conditioning controls nor that combined
+fit independently dates the proposed order.
 
 Five witnesses establish the upper boundary collectively. The palatal cluster must already underlie *sċeaft* ‘shaft’, *sċēar* ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’ before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). The \emph{*sċea-* 'sea'}/\emph{*sċie-*} set therefore places cluster palatalization before the West Saxon vowel change. The cluster change occupies the same palatalization zone as [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) while remaining distinct from plain-velar palatalization and the later vowel changes.
 

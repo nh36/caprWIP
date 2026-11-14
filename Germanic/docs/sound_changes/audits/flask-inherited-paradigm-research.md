@@ -1,5 +1,13 @@
 # Flask: inherited cells and regular nominative alternatives
 
+Follow-up, 14 November 2026: the
+[guarded SC051 comparison](sc051-medial-context-research.md) repairs
+the discas control and discloses the additional thrash delta.
+The subsequent [genitive-plural investigation](flask-genitive-plural-research.md)
+tests flascena/flaxena with inherited guma and exposes a quantity-carrier
+syncope sensitivity. The original measurements below remain dated
+observations, not silently updated scores or current unresolved controls.
+
 ## Identity
 
 - **SC id:** cross-rule research on SC023, SC046, SC048, SC051, SC069
