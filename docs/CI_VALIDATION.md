@@ -438,6 +438,19 @@ runs cannot establish a timing budget. See the
 [SC037 measurements](VALIDATION_PERFORMANCE_2026-11-15.md); its full checkpoint
 still exceeds ten minutes, and all strict promotion gates remain in force.
 
+The current chronology assay validates the canonical manifest, evaluates
+identity through production and derives each counterfactual's cumulative
+prefix/remainder boundary from `oe_pipeline.stages()`. Remainders are compiled
+only over their freshly evaluated intermediate inputs; every branch is then
+looked up live. Epsilon intermediates require complete-composition fallback,
+not an empty `flookup` input. Original assertions and the pinned historical
+evaluator remain unchanged. `.ci-results/chronology-current.json` and JUnit's
+`chronology_execution` property expose the plans, domains, owners and actual
+compiler/lookup costs. See the [chronology measurements](
+VALIDATION_PERFORMANCE_CHRONOLOGY_2026-11-15.md): that owning-plus-portable
+checkpoint took 8m06s, but final strict certification still has no ten-minute
+guarantee.
+
 The five current-runtime rust, SC035 generality/prosody, world migration and
 chronology assays opt into one **freshly prepared, disposable definition image
 per pytest session**. `anglo_frisian_experiments.compile_isolated()` loads that
@@ -457,8 +470,9 @@ is recovered using the existing definition parser and restored after loading.
 
 Image use is explicit through `CAPR_FOMA_DEFINITION_IMAGE`; ordinary standalone
 assays still compile their full source. `use_definition_image=False` overrides
-even a selected image. Reproduce the independent full-source control using the
-same existing runtime tests:
+even a selected image. Reproduce full-source compilation without a definition
+image using the same existing runtime tests (the chronology prefix/remainder
+strategy remains in force):
 
 ```sh
 cd Germanic/tests
