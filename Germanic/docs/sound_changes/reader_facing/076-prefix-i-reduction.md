@@ -30,7 +30,6 @@ successive reconstructed vowels; the accentual status of contested
 ```foma
 define OEPrefixIReduction SentenceCtx([
     [{*i} -> {*e} || .#. {*ᶠ} OEAnyConsonant* _]
-    .o. [{*ᶠ} -> 0]
 ]);
 ```
 
@@ -39,7 +38,9 @@ syllable, not specifically in morphemes beginning with a particular
 consonant. Thus the same conditioning treats inherited weak \emph{*bi-}
 and the raised vowel in \emph{*gi-}; stressed roots remain outside its
 domain. The superscript `*ᶠ` is a nonsegmental prosodic annotation,
-removed once it is no longer needed. The rule therefore produces
+retained for pretonic protection at
+[SC085 OEHLoss](#rule-OEHLoss) and removed after that operation.
+The rule therefore produces
 \emph{*e} directly, not a protected intermediate breve-e.
 
 This bounded implementation requires a following headed syllable.

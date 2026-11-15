@@ -14,16 +14,48 @@ Campbell's discussion of fronting and restoration, Hogg's separate historical ch
 
 ```foma
 define PWGmcSurvivingBimoricOUnrounding Ctx([
-    {*ō} -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
+    [{*ō}|{*ǭ}] -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.
 ]);
 ```
 
-This operation represents only the surviving oral-final fragment of the broader development. Its preceding-nucleus and intervening-consonant guard selects a final vowel in a polysyllabic shape; it does not independently reconstruct historical stress. Before-final-\emph{*r} histories and nasal-vowel histories have other executable treatments. At this point the selected water and four inputs already contain \emph{*a} before \emph{*r}, whereas the tongue and heart inputs retain the distinct nasal token \emph{*ǭ}. Name retains a separate trimoric marker. Their nonapplication here is therefore not a counterexample to the broader comparative account.
+The operation merges surviving final oral and nasal bimoric vowels in
+\emph{*ā} before English final-vowel fronting. Its preceding-nucleus and
+intervening-consonant guard selects a polysyllabic shape; it does not
+independently reconstruct historical stress. The restriction to the final
+vowel preserves nasalized roots and the separate trimoric quantity.
+Before-final-\emph{*r} histories remain distributed: the selected water
+and four inputs already contain \emph{*a} there.
 
-The complete current population has one live application: *ræste* 'rest', from the selected Proto-Germanic genitive singular \emph{*rástōz}, not the citation nominative \emph{*rastō}. The selected gift input is instead \emph{*gíftiz}, so the literature's genitive \emph{*gebōz} must not silently replace it as another corpus witness. Neither a lexical exception nor a grammatical condition is introduced.
+The complete current population has twenty-two applications: the oral
+ending in *ræste* 'rest', from selected genitive \emph{*rástōz}, and
+twenty-one nasal-final histories. These include *mære* 'nightmare',
+*tunge* 'tongue', *heorte* 'heart' and *sāwle* 'soul'.
+The selected gift input remains \emph{*gíftiz}: the literature's
+\emph{*gebōz} is a separate control, not another corpus application.
+No lexical list or grammatical condition selects the endings.
 
 After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. The West Germanic long-vowel reconstruction has a source basis, but this exact serialized chain remains a computational representation of the selected history.
 
-For the selected \emph{*rástōz}, moving unrounding before z-loss or after final-vowel support gives [rasta]{.pred example-input="*rástōz" example-stage=PGmc example-expected=ræste}, rather than *ræste* 'rest'. In the early displacement the vowel is still protected by \emph{*z}; in the late displacement its unrounded output arrives too late for final-vowel fronting. In both, a surviving back vowel permits [SC046 OEARestoration](#rule-OEARestoration) to retract the root, and later shortening leaves final *-a*. By contrast, placing unrounding after ordinary stressed fronting but before final-vowel support preserves all current outputs. Thus z-loss feeds the exposed-final-vowel operation, which feeds the final support; it is not the stressed fronting operation that needs the unrounded final vowel.
+For *mære* 'nightmare', the final nasal vowel becomes \emph{*ā} here,
+then \emph{*ǣ} under [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal).
+The front ending no longer conditions root retraction under
+[SC046 OEARestoration](#rule-OEARestoration). Subsequent shortening and
+merger yield the selected short-vowel nominative. Attested *mare*
+'nightmare' instead has independently identified levelling from obliques
+such as *maran* 'nightmare' [@Hall2007, pp. 301--302, §2].
+The analogous nominative calculation for *flasce* 'flask' produces
+\emph{*flæsċe}, not the attested comparator: Campbell and Luick explicitly
+identify levelling from inflected forms there
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
 
-The historical West Germanic development precedes the English fronting history in the adopted account. That does not establish an independently witnessed local relation to ordinary stressed fronting: the single selected rest derivation distinguishes exposure of a final vowel and the use of its unrounded output by final-vowel support. The rule, its order and the selected forms are retained; its historical interpretation is reformulated to distinguish this narrow executable contribution from the independently argued broader law.
+Moving the operation before z-loss still gives
+[rasta]{.pred example-input="*rástōz" example-stage=PGmc example-expected=ræste}
+instead of *ræste* 'rest'. This trial also crosses nasal-ending exposure;
+its changed nominatives are not additional witnesses specifically for
+z-loss. Moving it after final support changes twenty-one finals, whereas
+moving it after ordinary stressed fronting but before final support
+preserves every final. The component dependencies are final-environment
+exposure and final-vowel support, not a local feeding requirement before
+ordinary stressed fronting. The independently argued West Germanic
+development precedes the English history in the adopted account; its late
+executable placement does not date it.

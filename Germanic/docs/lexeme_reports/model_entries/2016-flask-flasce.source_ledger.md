@@ -1,36 +1,323 @@
 # Source extraction ledger — flask / flasce
 
-This ledger records the source forms and working distinctions gathered before the
-book-style entry was drafted.
+## Current distinctions
 
-| Source | Date / position | Form(s) given | Morphology / formation | Old English form(s) | Claim used for the entry | Citation key available? | Local path | Confidence / review note |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| TSV row 2016 | live row | `PROTO *flaskō`; `PROTOFORM *fláskōn`; `flasce` | comparative headword vs selected weak feminine input | `flasce` | The row distinguishes the wider family label from the OE-facing weak feminine formation. | no | `Germanic/data/germanic-aligned-final.tsv` | high |
-| Compact trace | current trace | `*fláskōn -> flasce` | weak feminine derivation | `flasce` | Confirms that the selected `PROTOFORM` produces the target directly. | no | `Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md` | high |
-| Orel | etymological reconstruction | weak feminine `*flaskò(n)` | weak feminine noun | OE `flasce` | Supplies the comparative support for the weak feminine formation. | yes — `Orel2003` | cited in packet/memo/slice | high |
-| Kroonen | etymological reconstruction | `*flaskǭ` | weak feminine noun | OE `flasce` | Reinforces the weak-feminine analysis behind the OE noun. | yes — `Kroonen2013` | cited in packet/memo/slice | high |
-| Ringe-Taylor | pre-OE formulation | pre-OE `*flæske`, `*flæskon-` type analysis | weak feminine paradigm | `flasce`; `flascan` | Supplies comparative support for the OE weak-feminine pathway. | yes — `RingeTaylor2014` | cited in packet/memo/slice | medium |
-| Campbell | OE phonology | restoration and related vowel history before clusters | OE phonological support | `flasce` | Supports the OE development once the weak feminine formation is chosen. | yes — `Campbell1959` | cited in packet/memo/slice | medium |
-| Bosworth-Toller / Clark Hall | OE dictionary evidence | `flasce`, with oblique / plural `flascan`; later `flaxe` variant | OE weak feminine noun | `flasce`; `flascan`; `flaxe` | Confirms the OE noun and the supporting inflectional evidence. | yes — `BosworthToller1898`; `ClarkHall1960` | cited in packet/memo/slice | high |
-| Local memo / slice synthesis | current project analysis | strong feminine label rejected for OE derivation; weak feminine `*fláskōn` accepted | formation choice | `flasce` | The decisive issue is stem class and suffixal support, not a missing OE sound law. | no | `Germanic/docs/lexeme_reports/research_memos/2016-flask-flasce.md`; `Germanic/docs/lexeme_reports/dev_notes_slices/2016-flask-flasce.md` | high; keep local-file narration out of final prose |
+The adopted row2016 retains `PROTO *flaskō`, selects nominative plural
+`PROTOFORM *fláskōniz`, `COUNTERPART flascan`, class `regular`,
+Hecht1900 C p.141 l.27. Normal production entry gives unique flascan,
+as does independently attested dative singular `*fláskōni`.
+The dated research records below retain their original decisions;
+their deferrals are superseded by the user's production-adoption decision.
+The old executable agreement `*fláskōn → flasce` is a fact about the
+corrected lexical base d067bab941d69227652961999fb6b0961851c4d4, not
+proof that its retained nasal-ending restoration was historically regular.
+The inherited singular still gives `flæsċe`; attested singular flasce
+remains in the discussion, not as the selected plural's comparator.
 
-## Citation-locator full-corpus high-confidence pass
+## Production adoption, 14 November 2026
 
-- Added page-specific locators for `ClarkHall1960, 121`.
-- This pass was limited to high-confidence sources (`Kroonen2013`, `Orel2003`, `ClarkHall1960`, `RingeTaylor2014`, `Fulk2018`, `Seebold1970`, `BrightCassidyRingler1971`).
-- Existing citations to conditional or unresolved locator sources were left unchanged.
+The exact late-final-n variant measured at07829f2e is promoted:
+expanded native admission, old n-loss before early i-apocope, and
+early shortening before m/nonfinal n only. SC051, root fronting and
+restoration remain unchanged. NP and DS share newly final -ōn and
+the existing late shortening/lowering; this is not an ending taken
+from an accusative or an unspecified oblique. The whole paradigm is
+not declared regular. Hill2010 pp.433–443 remains the explicit
+raising/redistribution alternative. Boutkan1995 §3.2.14 and early
+English/Frisian secondary-final-n evidence are queued in the existing
+Anglo-Frisian backlog without blocking adoption.
+See `sc069-adjudication.md` and `flask-production-certification.md`
+for the decision and fresh production certification, respectively.
 
-## Citation-locator conditional-source pass
+| Source / printed locator | Verified evidence and use | Limits |
+| :--- | :--- | :--- |
+| Orel2003, p.104 | Earlier ledger's weak-feminine *flaskò(n) supports the formation distinction. | Inherited consultation, not a fresh verification of every comparative cognate. |
+| RingeTaylor2014, p.192 | Original PDF sheet207 checked: nominative *flaskā > *flæskǣ beside oblique *flaskōn- > *flæskōn-; final `>!` to OE flasċe, flascan (> late WS flaxe, flaxan). | A hyphenated stem is not a full case form. Printed palatal mark in flasċe must not be silently omitted in a phonetic argument. |
+| Campbell1959, p.61, §158 | Singular flasce explicitly follows inflected flascan in the restoration discussion. Original sheet79 rechecked. | Explicit levelling analysis, not independent exclusion of every regular alternative. |
+| Luick1914, pp.152–153, §161 | flascan 'Flaschen', then singular flasce/flaxe; the oblique donor is explicit. | Does not date an independently demonstrated consonantal levelling. |
+| Campbell1959, p.178, §§440–441 | Original PDF sheet196 checked: flasce and later flaxe in the discussion of sk/ks; the following section explicitly allows analogical redistribution. | Distinguish this consonantal discussion from the better-supported root-vowel levelling. |
+| Hecht1900, p.66, lines8–10 | Original edition image inspected: `āne trȳwene flascan wīnes fulle`, object of sealde; parallel recension flaxan. | Accusative singular, not plural, dative, or genitive singular. Editorial vowel lengths in the normalized quotation are not diplomatic marks in the edition. |
+| Hecht1900, p.141, lines25–30 | Original edition image inspected: two fatu called flascan, then `ōðre þāra flascena`; apparatus flaxena. | Nominative plural and partitive genitive plural respectively. The English translation 'one of the flasks' does not make the genitive singular. |
+| Hecht1900, p.142, lines2–4 | Original edition image inspected: `be þǣre flascan`, parallel flaxan. | Dative singular governed by be, not genitive singular. |
+| Toller1921, p.223, flasce | Supplement quotations independently located at https://bosworthtoller.com/45173 and checked against Hecht. | Main-dictionary p.235 must not be used as the Supplement's page number. |
+| BosworthToller1898, p.235; ClarkHall1960, p.121 | Earlier dictionary-headword evidence flasce/flaxe retained. | Earlier consultation, not independent evidence for regularity or chronology. |
+| Ringe2017, pp.312–313, §4.3.4(ii) | Original PDF sheets323–324 checked: weak-feminine accusative singular tungōnų, genitive singular/nominative plural tungōniz, dative singular tungōni and dative plural tungōmaz. | Applying the generic ending to flask is CAPR reconstruction, not a quoted complete flask form. The name paradigm is neuter; OE masculine nama requires its separate gender history. |
+| RingeTaylor2014, pp.55–58 | Original printed pages checked: erosion of third-syllable high vowels and possible spread of -an- within weak paradigms. | Remodelling must not be disguised as an exceptionless sound-law change. |
+| Hill2010, pp.432–443, especially §§4.2–4.6 | Supplied original PDF checked: common West Germanic raising before tautosyllabic n; explicit treatment of OE/OFr ending redistribution and independent “friend” evidence; separate North Germanic raising. | Hill's PGmc *ān* notation differs from the Ringe-based input. His comparative argument is not a directly dated northern Flask cell; Ringe–Taylor's retained-ō alternative remains live. Boutkan pp.289–290 has not been consulted directly. |
 
-- Added page-specific locators for `BosworthToller1898, 235`.
-- This pass was limited to claim-by-claim localization for `Campbell1959`, `BosworthToller1898`, and `Luick1914`.
-- `KlugeSeebold2011` remained unchanged because the local text still does not preserve a reliable page marker.
+## Attestation search and cell-selection limit
 
-## Citation-locator claim-isolation 03
+The expanded 13–14 November 2026 audit is at exact PR10 reference
+`2805d98ae5ecf7df33c65dc0caf7d9df2ed22077`. Its
+[token register](../../sound_changes/audits/flask-inherited-paradigm-evidence/attestations.tsv)
+records each admitted spelling, witness/recension, syntax, case, number
+and edition locator, and separates excluded leads from textual attestations.
+C = Cambridge, Corpus Christi College 322; O = British Library,
+Cotton Otho C.i; H = Oxford, Bodleian Library, Hatton 76.
+The main left Hecht text is C, not a new manuscript “G” inferred from OCR.
 
-- Citation locator tightened after claim-isolation pass; verified against `RingeTaylor2014, 192`.
-- Citation locator tightened after claim-isolation pass; verified against `Campbell1959, §158`.
+| Witness and exact printed locator | Spelling / syntax | Cell |
+| :--- | :--- | :--- |
+| Hecht1900, C p.66 l.9; H p.66 l.10; O apparatus to l.9 | C flascan, H/O flaxan; object of sealde, with ane and wines | accusative singular |
+| Hecht1900, C p.141 l.27; H p.141 l.26; O apparatus to l.27 | C flascan, H/O flaxan; predicate agreeing with twa ... fatu | nominative plural |
+| Hecht1900, C p.141 ll.28–29; O apparatus l.29 | C flascena, O flaxena; oðre þara ... | genitive plural |
+| Hecht1900, C/H p.142 l.3; O apparatus to l.3 | C flascan, H/O flaxan; be þære ... | dative singular |
+| Hecht1900, C p.142 l.12; H p.142 l.11; O apparatus to l.12 | C flascan, H/O flaxan; object of gehylde/onhylde | accusative singular |
+| Goodwin1848, prose Guthlac XV, p.64 l.15 | flaxan; hæfdon ... twa flaxan | accusative plural |
+| Goodwin1848, prose Guthlac XV, p.64 l.24 | flaxan; behydde git þa flaxan | accusative plural |
+| WrightWuelcker1884, Ælfric's Colloquy col.97, shoemaker's answer | flaxan; object in the list governed by wyrce, opposite flascones | accusative plural |
+| WrightWuelcker1884, Ælfric's vocabulary col.109 l.5 and col.123 l.21 | flaxe, opposite Ascopa and Flaxa respectively | nominative-equivalent glossary form, not a contextual oblique |
+| WrightWuelcker1884, Harley3376 glossary col.240 l.3 | roman-type flasce in Flasca ... uel flasce, trywen byt | nominative-equivalent glossary form |
 
-## Citation locator full-exhaustion 02
+Goodwin's prose text is from Cotton Vespasian D.xxi, not the verse
+Guthlac poems. The Colloquy edition is based on Cotton Tiberius A.iii,
+with separately signalled Oxford additions; its introductory fol.58v
+is the beginning of the work, not a newly established folio for flaxan.
+The run printed `flaxanwelpinnan` is segmented as flaxan in the
+object enumeration, with Latin flascones and the edition's lexical index
+as corroboration. The Ælfric vocabulary is transmitted through a Junius
+manuscript used by the editor; this audit has not established its precise
+shelfmark or the originating codex and does not invent one.
 
-- Citation locator full-exhaustion 02: citation localized / removed / retained broad after primary-source review.
+The superficially similar `Flasce` at col.411 l.22 is italic Latin,
+followed by OE `trinnubytte` and Latin `eadem et flascones`.
+It is **not** an additional OE nominative flasce token. Original images
+and enlargements distinguish this from roman OE flasce at col.240.
+Likewise Latin `flascumna` there must not become an alleged dative
+plural flascum through substring matching.
+
+The Hecht text and its parallel recension, the Supplement's flasce entry,
+and online searches for flascan/flaxan supply singular accusative/dative,
+nominative plural and genitive plural contexts. None of those inspected
+contexts is a securely identified genitive singular. This is a bounded
+negative finding, not a claim that no genitive singular exists anywhere.
+The source-backed complete accusative hypothesis is *flaskōnų, not a
+bare *flaskōn- stem or an invented short ending chosen for restoration.
+
+The public Bosworth–Toller flasce/Supplement entry and searches for
+flascum, flaxum, flascan and flaxan were checked. No secure genitive
+singular or dative plural was established. The Dictionary of Old English
+Corpus could not be searched: the official links failed to retrieve and
+an independent 20-second request to corpus.doe.utoronto.ca timed out.
+This is a material coverage limit, not a claimed exhaustive zero result.
+The compound wæterflaxan in the dictionary's quotation of Mark14:13
+(`Sum man berende sume wæterflaxan`, Latin singular lagenam) corroborates
+an accusative singular only. It is explicitly a compound and a
+dictionary-transmitted quotation, not an independently re-inspected
+Gospel manuscript token or evidence for a dative plural.
+
+The complete raw accusative *fláskōnų and dative *fláskōni are rejected
+by the current tokenizer in every ablation. Entry immediately after
+tokenization gives flasconu for the accusative in all five variants.
+The dative gives flasce in the base and flæsċe with the early merger:
+PWGmcEarlyIApocope removes i, then PNWGmcNStemNLoss erases its nasal
+and sends it down the nominative ending path. Neither is attested flascan. These are explicit
+implementation limits, not grounds for inventing an alternative inherited
+ending or adopting an unverified regular oblique cell.
+
+## New source comparison and controlled execution
+
+| Source / exact locator | Claim verified | What it does not establish |
+| :--- | :--- | :--- |
+| Wright1908, pp.37–38, §57; authentic first-edition title and original sheets56–57 | Retention formulation before an originally back vowel, including sc, st and other consonant groups; flasce and wascan occur. | Not i-umlaut; not independent evidence for skā# alone or a split palatalization chronology. This is not the falsely associated Thomas Wright vocabulary or the uninspected 1925 edition. |
+| RingeTaylor2014, pp.117–118, 163–164; original sheets132–133,178–179 | Inherited weak paradigm; OE/OF -an redistribution versus OS/OHG contrasts; three alternative northern ending histories, explicitly unresolved. | foldu/eorðu are accusative singular, not nominative. Regular -ōn > -an is a live alternative, not the adopted conclusion. |
+| Fulk2018, pp.88–90, §§5.5–5.6; pp.171–172, §§7.32–7.33; original sheets105–107,188–189 | Conditioned raising, Northumbrian relics, inherited feminine paradigm and northern masculine conformity; disagreement with Ringe and Taylor is explicit. | Does not prove a flask-specific analogical root or settle the exact timing of every nasal/quantity change. |
+| HoggGrammar2011, pp.64–65, §§3.32–3.34; pp.93–95, §§5.35–5.37; original sheets77–78,106–108 | Nasal final-vowel development, raising before u/m, inherited tungum, and restoration across sk/st with inflected flascan/flaxan. | Held 2011 reissue is not an independent 1992 holding; reconstructed intermediate tungun is not a new flask attestation. |
+| Campbell1959, pp.177–178, §§440–441; original sheets195–196 | Medial palatalization before non-high as well as high front vowels: wasċe, þersċe, disċes; retained cluster in discas. | The ordinary spelling sc alone does not determine pronunciation. |
+| Luick1914, pp.152–153, §161; original sheet169 for153 | flascan and ascan precede the singular levelling explanation; restoration includes st. | Does not independently date consonantal levelling. |
+| Versloot2025, pp.122–124; original sheets20–22 | Explicit restricted-fronting alternative and comparison against standard restoration; note27 records worse predictions from adding geminate/sC retraction contexts. | Not authority for our specific skā# condition or its timing. Bibliography dates the published article 2026; the citation key retains its existing name. |
+| Goodwin1848, p.64, XV; original sheet72 | Two contextual accusative-plural flaxan tokens. | Not a dative-plural or verse-Guthlac attestation. |
+| WrightWuelcker1884, original sheets79,88,95,130,154,239 | Colloquy and glossary tokens, manuscript notices, and Latin/OE type distinction. | Modern index hits and Latin lookalikes are not new OE tokens. |
+
+The raw selected corpus was run from EnglishProtoInput, not resumed
+from archived pre-fronting forms. Both retain-a and front-then-retract
+variants give **386/394**, resolving only row2016; the other393 finals,
+including mære, are identical to the reference. Whole-rule movement also
+changes wash to wæsċan; extending early retraction to st changes ræste
+to raste. A precisely following-vowel-only high trigger also scores386,
+but loses the wasċe/þersċe palatals in structural controls. A different,
+stronger restriction of *both* medial trigger classes scores385 and
+additionally loses the selected thrash palatal; these trials must not
+be conflated.
+
+All four inherited flask cell hypotheses fail at the normal tokenizer.
+After tokenization, reference nominative plural/genitive singular
+*fláskōniz gives flæsċe, accusative *fláskōnų gives flasconu,
+dative singular *fláskōni gives flæsċe, and dative plural
+*fláskōmaz gives flascem. The latter is a prediction; no flascum
+token was established. Its independent tongue control gives tungem,
+not attested tungum, exposing a class-wide missing/ineffective raising
+route rather than a flask-only licence.
+
+| Diagnostic experiment | Flask inherited nominative plural | Class controls | Selected394 finals |
+| :--- | :--- | :--- | :--- |
+| Reference, entry after tokenizer | flæsċe: secondary n consumed by citation proxy | tunge, æsċe |385 matches |
+| Move old n-loss before early i-apocope | flascen: root restores, late short a fronts | tungen, ascen; dōn retains n | unchanged |
+| Also test polysyllabic -ōn > -ān before fronting | flascan | tungan, ascan; dōn unchanged | unchanged |
+| Instead shorten after restoration, before secondary nasalization | flascan | tungan, ascan; dōn unchanged | unchanged |
+
+The last trial gives acc.sg. flascn, not flascan; its plural success is
+not a completed paradigm repair. The two successful plural hypotheses
+are recorded for general research, not adopted. No independently
+dated intermediate warrants a transponent that supplies already desired
+root a and ending -an; neither an unattested short ending nor an
+arbitrarily late entry is selected.
+
+## 14 November follow-up: SC051 and the genitive plural
+
+The earlier386/394 figures above belong to the unguarded experiments
+against2805d98a. The verified integrated PR10 reference is now
+77f314bf85035c23706b6b09b3a1855aa23c0620, with the same executable tree.
+The [SC051 comparison](../../sound_changes/audits/sc051-medial-context-research.md)
+requires a following consonant/boundary in the preceding-front clause.
+All14 independent consonant controls pass; the sole guard-only final
+delta is2253 þresċan→þrescan, giving384/394 against unchanged targets.
+The two guarded root/timing packages also change2016 to flasce and
+score385/394. This removes the old discas objection without proving the
+narrow root condition or its date. Campbell177–178 and original
+Ringe–Taylor204 were re-inspected for those distinctions.
+
+| Source / exact locator | Newly verified distinction | Limit |
+| :--- | :--- | :--- |
+| Ringe2017 p313, original sheet324, with p312 headings | Feminine tungōnǭ̄ versus inherited masculine gumanǭ̄ in the genitive plural | Not nom.pl./gen.sg. -ōniz; the nasal trimoric is not the cascade's bimoric ǭ |
+| RingeTaylor2014 pp59,153–154, original sheets74,168–169 | Denasalized final quantity, inherited masculine guma, feminine stem-syllable levelling from masculine, syncopated tungna, restored -ana and later -ena | Full flask forms and exact diagnostic entry positions are CAPR extrapolations |
+| Campbell1959 pp158–159 §385, original sheets176–177 | Weak genitive-plural -ena compared with older -ana in a general medial-vowel process | Not evidence that early fronting and late dissimilation share one date |
+| Hecht1900 p141 C ll28–29/O apparatus l29 | Previously verified contextual flascena/flaxena remains the attested genitive-plural comparator | Not a new attestation or genitive singular |
+
+The [genitive-plural experiment](../../sound_changes/audits/flask-genitive-plural-research.md)
+keeps the production candidate, not an adopted SC051 variant.
+All complete nasal-trimoric raw forms are rejected. Oral quantity-shadow
+diagnostics give inherited-feminine flascona/tungona versus
+masculine-source flascena/tungena, with inherited guma→gumena.
+The apparent masculine success is sensitive to the following-vowel
+class: allowing the trimoric carrier in immediate syncope context gives
+flascna/tungna/gumna. That general experimental repair changes exactly
+zero of394 selected outputs. Literal final PWGmc ō is also measured:
+it loses the origin distinction at the early merger and does not
+silently count as a successful inherited genitive.
+
+Late -ana entered before syncope still syncopates; after syncope it
+gives flascena/tungena/gumena. This explicitly presupposes analogical
+restoration and does not establish a normal-input derivation or a
+historically validated transponent. No new Hill bibliographic authority
+is inferred from the assignment's label; the independently verified
+printed masculine-source discussion is Ringe–Taylor153–154.
+The experiment distinguishes the ending hypotheses but does not decide
+the nominative's root or consonantal history.
+
+## 14 November nominative-plural follow-up
+
+The [ending/admission audit](../../sound_changes/audits/flask-nominative-plural-followup.md)
+tests reference `1181f62303972f9538a3a4d8d18dd63ab2f35c70`.
+Hecht C141.27 remains the secure nominative plural *flascan*;
+C66.9/C142.3 are singular, and C141.28–29 is genitive plural
+*flascena*. No new ashes nominative-plural token is claimed.
+
+An input-only class extension admits Ringe's feminine endings through
+normal experimental entry. Both earlier ending variants now derive
+*fláskōniz → flascan* and *túngōniz → tungan*, preserving *tunge*
+and *dōn*. Shortening differs from final unrounding in the accusative:
+*flascn/tungn* versus *flasconu/tungunu*. Neither supplies a complete
+raising account, and both still give dative plural *tungem*, not
+*tungum*. Hogg 2011 [1992], pp.65, 298–299, §§3.34, 7.98–7.100,
+distinguishes raising from the separate late Northumbrian final-n loss
+in accusative *foldu/eorðu*. Those relics do not independently date
+either plural implementation.
+
+Normal admission is therefore resolved experimentally, but the target
+recommendation remains unchanged: retain selected *fláskōn : flasce*
+and its disclosed mismatch. The supplied SC043 discussion is incorporated
+with retention explicitly unadopted and historically open; its Hogg
+§§5.35–5.38 citation uses the held monograph reissue, pp.93–96,
+not the differently numbered Cambridge History chapter. Older
+diagnostic records and their dated corpus measurements remain intact.
+This pass makes no new full-corpus or publication-validation claim.
+
+## 14 November attested-cell and late-ending follow-up
+
+The [cell audit](../../sound_changes/audits/flask-attested-cells-late-ending.md)
+uses exact reference `a829dfcb4a80eac9113ac473e06258edd7285002`.
+It reuses unchanged production traces and newly executes inherited
+accusative plural `*fláskōnunz` (Ringe 2017, p.313): the production
+gateway rejects it, and its separately labelled post-gateway diagnostic
+gives `flasconun`, not attested accusative plural *flaxan*. Substitution
+of `*-ōniz` would presuppose accusative/nominative syncretism, which
+Ringe–Taylor pp.62–63 discuss as early; it is not the inherited
+accusative input or a demonstrated pre-Proto-Germanic replacement.
+
+The strongest late experiment exempts unstressed `ōn#` from early
+shortening after protecting secondary n. Full `*fláskōniz` and
+`*fláskōni` now both give *flascan* through experimental normal
+entry: root fronting/restoration gives `flaskōn`, existing late
+shortening gives `flaskon`, and final o-lowering gives `flaskan`.
+Nominative singular *tunge*, *dōn* and independent late-mechanism
+*boraþ* remain; parallel *tungan* has the same ending uncertainty.
+This keeps SC051 fixed and derives hard sk written sc, not literal
+x or a newly demonstrated metathesis.
+
+Ringe–Taylor p.164 scenario (3) supplies the regular northern ending
+hypothesis; Campbell pp.147–148 §355 and Hogg pp.227–228
+§§6.27–6.28 support late shortening elsewhere. None independently
+demonstrates retained ō in this particular ending until that stage.
+Hogg p.65 §3.34 and Fulk p.172 §7.33 retain raising/redistribution
+alternatives. The raised northern accusative diagnostics still expose
+separate implementation gaps; *tungum* remains a pre-m question.
+
+Verdict: unresolved between historically justified CAPR repair (1B)
+and analogy (2), not proof of analogy from a rejected gateway or failed
+derivation. No 1A is demonstrated. Keep the selected nominative and
+comparator; no new 394-row result, strict validation or publication
+rebuild is claimed. Genitive singular and dative plural remain
+unattested on the present evidence.
+
+## 14 November full-corpus and Hill follow-up
+
+The [adoption assessment](../../sound_changes/audits/flask-late-final-n-adoption.md)
+pins reference `1bad32cd15dfdc10c154c3e90fcfe9afd0e42eb4` and the
+exact archived `late_final_n` variant, including inherited accusative
+input coverage. Three fresh 394-row normal-entry runs were executed.
+With identical vocabulary the candidate changes no admissions,
+ambiguities, outputs or match statuses: 394 unique outputs, 385 matches.
+The separate selection experiment changes only row2016 from
+`*fláskōn : flasce → flæsċe` to `*fláskōniz : flascan → flascan`,
+giving 386 matches. The other 393 derivations remain identical.
+All 15 independent raw controls reproduce the previous candidate;
+dat.sg. also gives *flascan*, with no new accusative or pre-m failure.
+SC051 is fixed; literal *flaxan* is not a newly derived output.
+
+Hill 2010 pp.432–443 was newly consulted from the supplied original.
+His explicit OE/OFr discussion and lexicalized “friend” argument make
+raising plus redistribution a substantively supported competitor.
+The fifth-century Runic evidence argues against a shared Northwest
+Germanic raising event, not against Hill's common West Germanic
+account. Ringe–Taylor p.62 cautions against generalizing from the
+exceptional contracted vowel in “friend”; the ordinary -an forms still
+fit both ending histories. Campbell/Hogg and Stausland Johnsen support
+late shortening, but do not by themselves establish retained ō in
+these particular noun endings. The exact exemption consequently
+remains less independently secured than its late mechanism.
+
+Recommendation: defer production adoption and target migration.
+This is unresolved between 1B and 2, not a new proof of analogy in
+every cell. The full computational requirement now passes, but a
+securely unremodelled northern non-u case or independent dating of
+raising relative to the Anglo-Frisian branch remains decisive.
+Boutkan pp.289–290 remains unavailable; reports of it in Hill and Fulk
+are indirect evidence only. Production, selection, classification and
+book source remain unchanged; strict certification and publication
+rebuild remain deferred until a candidate is settled.
+
+## Publication ownership and preserved history
+
+Both lexical presentations use this mature model because the entry is
+`early_analogy`; there is no separate regular-only compact prose source.
+The shared model is therefore the source of the compact correction too.
+Publication-only `OUTPUT_STATUS implementation_gap` discloses the
+candidate output without presenting it as an attested selected form.
+No selected row, stage sidecar, input, target or cognate grouping changes.
+
+The earlier research memo, dev-notes slice, and original source-extraction
+passes remain historical records. Their executable-match rationale is
+superseded by this distinction; frozen experiment receipts are unchanged.
+The earlier Kroonen row is not promoted: a prior project citation without
+an authenticated claim-specific extraction cannot establish a full cell.

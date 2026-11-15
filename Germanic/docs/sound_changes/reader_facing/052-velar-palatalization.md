@@ -104,7 +104,7 @@ give only a cutoff before later unrounding
 define OEVelarPalatalizationStops [
     OEVelarPalatalizationKFront
 ] .o. [
-    {*g} -> {*ʤ} || _ EnglishStarFrontVowel,
+    {*g} -> {*ʤ} || _ [{*i}|{*í}|{*ì}|{*ī}],
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ .#.,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ EnglishStarFrontVowel,
     {*g} -> {*ʤ} || EnglishStarFrontVowel _ [EnglishStarConsonant - {*j}],,
@@ -113,6 +113,16 @@ define OEVelarPalatalizationStops [
     {*g} -> {*ʤ} || _ {*j}
 ];
 ```
+
+The following-vowel clause now requires immediately following original
+\emph{i} or \emph{ī}, including the transducer's stress spellings, rather
+than any front vowel [@RingeTaylor2014, p. 203]. This does not narrow the
+separate singleton-fricative rule. The earlier final-vowel merger makes
+the ending of *tunge* 'tongue' front before palatalization, but secondary
+\emph{ǣ} does not meet this stop condition. The corrected calculation
+retains the stop rather than producing a spurious affricate.
+Possible effects of preceding \emph{i} through a nasal remain a separate
+question; no additional such clause is introduced here.
 
 Singleton fricatives have already left this domain. The remaining gg/ng
 paths use ʤ as an eventual-reflex proxy; the initial singleton fricative

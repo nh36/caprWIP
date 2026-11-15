@@ -5,7 +5,7 @@
 The palatalization of \emph{*sk} to Old English \emph{*sc} is one of the recognizable early
 cluster changes in the larger palatalization zone. Campbell distinguishes the
 cluster from plain velars when he remarks that \emph{*sk} is especially prone to
-palatalization and assibilation [@Campbell1959, p. 278, §440]. Barrack
+palatalization and assibilation [@Campbell1959, pp. 177--178, §440]. Barrack
 treats the cluster in the same zone as his 440 series: 440a summarizes the
 developments [@Barrack1975, pp. 112--113] and 440c states the
 palatalization of \emph{*sk} itself [@Barrack1975, p. 113], kept beside, but
@@ -46,6 +46,55 @@ define OESkPalatalization Ctx([
 ]);
 ```
 
-The non-fronted vowels of *flasce* ‘flask’ and *wascan* ‘wash’ fix the lower boundary of \emph{*sk} > \emph{*sc}. Before [SC046 OEARestoration](#rule-OEARestoration), the forms are fronted too soon, yielding *flæsce* ‘flask’ and *wæscan* ‘wash’ rather than expected OE *flasce* and *wascan*. This places [SC051 OESkPalatalization](#rule-OESkPalatalization) after restoration.
+The displacement of cluster palatalization before
+[SC046 OEARestoration](#rule-OEARestoration) now changes *wascan* 'wash'
+to [wæsċan]{.pred}; wash remains the current lower-boundary witness.
+The old flask displacement belonged to an implementation that retained
+its final nasal vowel through restoration. After the earlier ending
+merger, the nominative already has a front root and gives
+\emph{*flæsċe} in either order. Attested *flasce* 'flask' has an
+explicitly sourced levelling analysis, after inflected *flascan* 'flask'
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+The selected nominative plural instead gives *flascan* with the
+restored back root and hard cluster before its late-reduced ending.
+Its plain written *sc* does not independently date palatalization,
+and the metathesized *flaxan* remains a separate consonantal question.
+The singular must not be used as if its former executable agreement independently
+proved a regular back-root nominative history. The consonantal history
+of the paradigm remains distinct from that proposed root-vowel levelling.
+
+Regular alternatives remain open, as explained in the
+[weak-paradigm comparison](#weak-n-paradigms-after-apocope).
+Moving only the following-vowel clause before final \emph{*ā}-fronting,
+with retention or early retraction of \emph{*a} before
+\emph{*skā}, derives *flasce* without the overextension to *wascan*.
+That is a computational result, not independent evidence for the
+new order. Wright and Wright's retention account includes other clusters,
+and does not establish this narrow condition
+[@Wright1908, pp. 37--38, §57].
+
+Campbell specifically requires medial palatalization before all front
+vowels, including *wasċe* 'I wash', *þersċe* 'I thresh' and *disċes*
+'dish', while retaining the cluster in back-vowel *discas* 'dishes'
+[@Campbell1959, pp. 177--178, §§440--441]. A high-front-only
+following-vowel trigger loses the first two palatals even though it
+fits the selected corpus. Conversely, the present preceding-front-vowel
+clause creates a palatal cluster in a structural *discas* control in
+both original regular nominative variants. A subsequent controlled
+comparison repairs that overgeneration by requiring a consonant or
+word boundary after the cluster in the preceding-front-vowel clause.
+The repaired relation preserves *fiscas* 'fishes' and *discas* 'dishes'
+while retaining *fisċes* 'fish', *disċes* 'dish', *wasċe* 'I wash'
+and *þersċe* 'I thresh'. This is independently motivated conditioning,
+not evidence for the proposed earlier date of the following-vowel
+clause [@Campbell1959, pp. 177--178, §§440--441;
+@RingeTaylor2014, p. 204]. Written *sc* does not settle the consonant's
+value; *fixas* 'fishes' and *þerxan* 'thresh' additionally attest a
+hard, metathesized cluster, whose metathesis is a separate development.
+The guarded flask experiments therefore distinguish front-root
+[flæsce]{.pred} from back-root [flasċe]{.pred}; only combining the
+root hypothesis with the earlier following-vowel clause gives *flasce*
+'flask'. Neither successful conditioning controls nor that combined
+fit independently dates the proposed order.
 
 Five witnesses establish the upper boundary collectively. The palatal cluster must already underlie *sċeaft* ‘shaft’, *sċēar* ‘shear’, *sċēaþ* ‘sheath’, *sċēap* ‘sheep’, and *sċield* ‘shield’ before [SC056 OEWsPalatalDiphthongization](#rule-OEWsPalatalDiphthongization). The \emph{*sċea-* 'sea'}/\emph{*sċie-*} set therefore places cluster palatalization before the West Saxon vowel change. The cluster change occupies the same palatalization zone as [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) while remaining distinct from plain-velar palatalization and the later vowel changes.

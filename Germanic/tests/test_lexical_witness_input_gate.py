@@ -17,7 +17,8 @@ from capr_runtime import check_build_manifest, layout, run_in_runner
 from executable_facts import parse_defines
 from test_sc037_adjudication import (
     CONSOLIDATION_ADDED, CONSOLIDATION_CHANGED, LEXICAL_GRAMMAR_CHANGED,
-    INTERVENTION_ADDED, INTERVENTION_CHANGED, FINAL_Z_QUANTITY_CHANGED, assert_intervention_scope,
+    INTERVENTION_ADDED, INTERVENTION_CHANGED, FINAL_Z_QUANTITY_CHANGED,
+    FINAL_NASAL_CHANGED, assert_intervention_scope, before_flask_adoption,
 )
 
 AUDIT = ROOT / "Germanic/docs/sound_changes/audits/lexical-witnesses-2335-2336"
@@ -52,7 +53,8 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
     old = parse_defines(subprocess.check_output(
         ["git", "show", f"{BASE}:Germanic/fsts/germanic.txt"], cwd=ROOT, text=True,
     ))
-    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    current = before_flask_adoption(
+        parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text()))
     medial = {"MP" + suffix for suffix in (
         "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
         "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")}
@@ -80,7 +82,7 @@ def test_extension_changes_only_input_grammar_not_sound_laws():
                 "OEVelarPalatalizationStops",
                 # Independently source-bound by test_sc037_adjudication.py.
                 "OECompoundLinkingSyncope",
-            } | INTERVENTION_CHANGED | FINAL_Z_QUANTITY_CHANGED | (
+            } | INTERVENTION_CHANGED | FINAL_Z_QUANTITY_CHANGED | FINAL_NASAL_CHANGED | (
                 (CONSOLIDATION_CHANGED | LEXICAL_GRAMMAR_CHANGED) & old.keys())
     for name in ("pgrmSimpleWord", "pgrmCompoundSecond"):
         expected = old[name].definition_raw
@@ -167,12 +169,16 @@ def test_production_gate_is_generic_and_preserves_every_old_output():
     assert_intervention_scope()
     assert outputs["xláiba-warðaz"] == ["*x*l*ái*b*a*w*a*r*ð*a*z"]
     records = receipt("pre_gate.json.gz")["existing_population"]["records"]
+    archived = {row["fst_input"]: row["outputs"] for row in records}
+    assert archived["fláskōn"] == "flasce"
+    assert archived["márōn"] == "mare"
     old_inputs = [row["fst_input"] for row in records]
     current = lookup("old_english.bin", old_inputs + forms[:2] + ["xwí-līkaz"])
     counterfactuals = {
         "fúnðanǭ": ["fundne"], "xámaras": ["hamres"],
         "sáiwalō": ["sāwl"], "wéstanē": ["westne"],
         "spénnilō": ["spinnelu"], "féxu": ["feou"],
+        "fláskōn": ["flæsċe"], "márōn": ["mære"],
     }
     assert {row["fst_input"] for row in records
             if current[row["fst_input"]] != row["outputs"].split("|")} == set(counterfactuals)

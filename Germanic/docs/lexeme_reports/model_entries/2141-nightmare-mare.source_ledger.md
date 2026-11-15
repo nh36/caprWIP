@@ -11,7 +11,8 @@ retained for stable lookup; their mare suffix is not a selected-form owner.
 | Hall2007 | §2, pp.301–302: weak mære beside strong mær; explicit levelling to the root vowel of maran. | Select the weak nominative, with short æ. Mare is a genuine variant with an identified oblique donor, not the only legitimate nominative. | Original published PDF checked. The adjective mǣre 'famous' is not this noun. |
 | Hall2007 | Table1, pp.313–314: Bald's Leechbook I, `mare`, ff.5 and52v–53r; Leechbook III, `maran`, f.111v (Wright1955's facsimile locators). | Preserve mare as attested variant and maran as oblique comparison; do not merge strong and weak attestations or count glossary copies as independent evidence. | Original table checked; Wright's original manuscript facsimile is not newly collated. Hall's table transcribes I225 as merae, whereas Lindsay's printed entry reads maere; the diplomatic spelling here follows Lindsay directly. |
 | RingeTaylor2014 | p.192: `*marā, *marōn- > *mærǣ, *mærōn- >! OE mare, maran, and mære`. | Front-root nominative intermediate and explicit mære in the endpoint list; the old reading mere was not a faithful transcription of this printed passage. | Original page image checked at PDF sheet207; the book uses æ with a combining macron for the final vowel represented here as ǣ. |
-| Current production evaluation | `*márōn → mare`; selected comparator mære. | A documented implementation mismatch, not a successful regular derivation of the new selection. | Unchanged production source and executable-output fingerprints; exact target-only baseline approval and before archive accompany this decision. |
+| Corrected lexical base d067bab9 | `*márōn → mare`; selected comparator mære. | The target-only correction disclosed an implementation mismatch. | Its original approval, archived outputs and source fingerprints are preserved unchanged. |
+| Source-supported cascade candidate | `*márōn → mære`, through final ǭ → ā → ǣ before restoration. | Implements the selected regular nominative, retaining mare and maran as separately attested paradigm evidence. | Five-way ablation and stable-source replay reproduce all394 outputs; the exact two-output migration preserves the prior target approval. |
 | Final-vowel research Model B | `*márōn → mære` in the frozen 394-row experimental population. | Reproducible research result, not a production adoption. | Frozen [manifest](https://github.com/nh36/caprWIP/blob/9882f3e7008b0ba5c6b93a02ef5a3944572aaec7/Germanic/docs/sound_changes/audits/wgmc-final-vowels-research/manifest.json) on `research/wgmc-final-vowels-source-critical`; original snapshot and receipts remain unchanged. |
 
 ## Selection, schema, and preserved history
@@ -22,9 +23,9 @@ with no long root vowel. These replace inherited English-compound
 material, not the transducer input. HISTORY retains its import provenance.
 DERIVATION_CLASS remains regular for the selected historical nominative;
 there is no lexical exception or rule edit.
-The model's publication-only OUTPUT_STATUS is implementation_gap, so both
-renderers label mare as the current cascade output rather than assert it
-is the regular historical nominative or print an unattested-form asterisk.
+The former publication-only implementation_gap flag is removed because
+the corrected cascade produces the selected attested mære. Both renderers
+retain mare as a variant and maran as an oblique, not as selected targets.
 
 The earlier `research_memos/2141-nightmare-mare.md` recommendation is
 explicitly superseded, with its old text retained as history. Old packets,

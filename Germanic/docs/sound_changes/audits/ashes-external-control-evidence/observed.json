@@ -1,0 +1,1534 @@
+{
+  "reference_sha": "5df7b9daef1a4da88abba30f0c9681c8e91d9a36",
+  "predictions": {
+    "class_assumption": "EWA supplies *askōn-, not a complete nominative. *áskōn is CAPR's weak-feminine citation encoding, parallel to selected *fláskōn; the shared later *-ā follows the class hypothesis, not a quoted EWA form.",
+    "categorical_narrow_rule": "Both roots must remain/become a before *sk plus final *ā. A secure front-root nominative in that environment requires a further account.",
+    "wright_section_57": "The published back-vowel condition includes sc, st and certain geminates; it explicitly acknowledges æsce beside asce. Do not equate it with an exception-free assertion that no front-root ashes form exists.",
+    "levelling": "Back-root obliques can supply donors, but their existence alone does not establish direction; front-root inflected æscan must also be accounted for.",
+    "controls": "Original production SC051 and its timing are identical in all trials. No context guard, early palatalization, corpus change or analogy is added."
+  },
+  "binary_sha256": {
+    "AGHold": "3b439f340c92ff74bbbddfa634ee64363bfa6b7a013dc2cfe218f5a012bb654a",
+    "AGRet": "e560665c49b153f1d35119beadd49eb7b6e8e83f4914cadcd67c0a22dee66f30",
+    "EAFAiMonophthongization": "48015bebf74d862f66a31fe8eeba8290d1a480d16ef4c6f197eaeb7697faaeb7",
+    "EAFBrightening": "496b05939c5e55f0c4d29168782d9323ccc110c274a0d716015931206216e2f3",
+    "EAFBrighteningLongFinal": "69fc6fd34e91e3547efd19daae9acace51e82a49250535ec70ae8d91f2ef7456",
+    "EAFBrighteningUnstressed": "7b187e65548d16ec8efd5f977bf3844c029adc4a48050ebcaa482586316596e7",
+    "EAFFinalZDeletion": "6418a5ffb8746f82e020058898c757ae1edc7c7d5dc48218554c1420c09f9a0d",
+    "EAFHiatusWInsertion": "a127c8509e1d8c27344c2a754de9afae65433c6175aecdf4904ce7c652d331a9",
+    "EAFLThVoicing": "009916bf9bae1c24c6b41e4b6a8e74578c1ec3f94bdd91d0775df6a44aec7229",
+    "EAFLongAFronting": "dc0766b0b298647761b1d631a4996ae1054c8c0c5fdf348ea0582ae261419740",
+    "EAFLongANasalRounding": "c51fe7de66a54e65978c0006e5378d676fa4b7fea9681eec8a5f4f6b28804c18",
+    "EAFNasalSpirantLengthening": "8884750c737a662171cb46d49ba759d6b2151f742af130163e5c628dc33bffe9",
+    "EAFNasalSpirantLoss": "781b8808beb9a1adb152f817c64e37e07fdbfcc40690ccbce361ff0ffd22c802",
+    "EAFNasalizedLowRounding": "66e4e91efce11eeae4a969cf2a3b862373308e45a83c95f28333310d681021f4",
+    "EAFRhotacism": "aa0953cc0f3f5250a1745023fbf2cedce85b32af2a87245f867360e1661914d0",
+    "EnglishProtoInput": "f843f473788d203f218a77f8aab5dd9fa1596ee7a50b588898d19a89e092fb48",
+    "MonosyllabicFinalZLoss": "a805c730fe670cca9d3111a4137bb321fac49fa5094aedf6b021753a2f3990d4",
+    "NWGmcInStemNLoss": "5f46a1fc19c70a1d071eb1fe9a583ed81c7c01f6abd4a0add33cba136d609467",
+    "OEARestoration": "1a083a84234aa4c93d2d9fe333c1b3a5cdf06851b26bf5f31498421cf4ad530f",
+    "OEAuBrightening": "111163d6d937df1511f45336cfe3ea55295d1fda57a67bb0cc3a191b70600b25",
+    "OEAwLongDiphthong": "3d1aaeb5d8d73190bcbcddafd9d9654f4f5264300335e6299ef70d98cfe74fc8",
+    "OEAwwjResolution": "e5b12ce25acc3550012c96eb54c0a364b6921f892b3be3fae5c55c6555a82c79",
+    "OEBackMutation": "673a4f9b0efbdaac441a84a582226e2a4479d4bee1c39db28a04bc9c11c3cf84",
+    "OEBreaking": "efbf6b1a0288a2d259a71656e5d04f68dad4171c9f59628b48b50562a2375436",
+    "OECjCleanup": "4d14dc9d7f48701c62cf4df225d595cdf110a27c4c882b4442c3d65a34ff1260",
+    "OECompoundLinkingSyncope": "e5e310ad16809a8215d26baf8b9ba4a153e57d5ccf0fc849f1164f4064c0310c",
+    "OEContraction": "71d655214c19ec81c9ff1e9211050b7b1fe1311fa8926008804d7481a5076ad4",
+    "OEDentalAssimilation": "65adf1dd7191049871efb4404b317fca3c64613422020ce1cd891ebc5c8047cc",
+    "OEDiphthongLeveling": "0e5aed03e080551e748e4ad8833ed76a0b40de7373128e506202b75eb13ac928",
+    "OEEarlyOShortening": "2c4b291e63c47c2fb0b96f8af6f928201edeb0852fa34f86bdc7ee1616389fbf",
+    "OEEpentheticVowel": "7b5ae4ade559cccbdc33bb886c81bc69be413a38bc86b0a45d25570b4a8415e1",
+    "OEEwLongDiphthong": "8f43e035f247ba7f5ebfe53a5d5d0782da19969e2d0ae572da802a506a355059",
+    "OEFinalGeminateSimplification": "d6ee1d77546d347c7748035969d73b029692046019af5808cba98dc393f7ea58",
+    "OEFinalUnstressedOLowering": "108089543d02c2902365f7622b6281ef6d340a8dd56952aaaf10a1edb4ab0d93",
+    "OEHLoss": "88cc518f3fc440cff8a72b772a14fa60a1518a1ee699f9b475d0ee8ef3729c41",
+    "OEHeavySyllableNasalApocope": "4507871dd30e6c2b004bdf120b0f1ca3dfb7f793efd963d78d9b28bfac005962",
+    "OEHighLinkSyncope": "705a301a2949c078433b0d28d8250191d17900cacb5a045abe20cddb41d7b0bd",
+    "OEHighStressDecode": "e97bd003747351477e272254f0449e6b1280c1974781dd6f89c996aacc291de7",
+    "OEHighVowelApocope": "a368611c753cc028fe9a8557667b7e6c33e68a5193f33c59b6c577a9144cd5aa",
+    "OEIUmlaut": "243d6994af734b60cdfb3137e85cb4706a1d1d3e318516328cea246a3976cde9",
+    "OEInterStressRaising": "aed7496c8a32d445641a5141ae2abb9ccbbf9831c3390bcc12c54aeb274bd598",
+    "OEIntervocalicJVocalization": "aa5a99f43e5f0a774b1a4cf1861204aab15bffd0c6610826a7ebade81fcf19b1",
+    "OEJClusterCoalescence": "ad3f6bb34365320c1b4badadce07b67ca8811e1122b231ae21f36546caa2f072",
+    "OEJGlideIO": "16e4fe06c3382a445f5e6739c629afbcea6dae148de78b3bdaba20ef79cda9ff",
+    "OEJLossAfterHeavy": "03683687f42c7fbead12cbe69bb75e63efaac8de76537974b9a4c7d7790b5f7e",
+    "OEJStrengtheningAfterFrontDiphthong": "29449f4705acbc1964cf5ddb96ffab59deab19f99812869afc6301b26976a2e3",
+    "OEJWWSimplification": "437b4d32a0f9487e67f8d0dc82f58faf8c2b1adf18c4cdf9ad6184a4e094bb7d",
+    "OELAdjacentSyncope": "4fd30e465e1ec6bd9503c46e88ded954e750a3dfa435bdcef7ceffcc49fa1ba1",
+    "OELateOShortening": "21e63ce5c4f30ea68594a587c77f38670567258ef6d616d6dc80da8ca638d2e8",
+    "OELatePalatalDiphthong": "7de9e94bfe604fe8fd3aeb972aa0b8e9bd5aa4edf2df20cdeb48a644014f064f",
+    "OELateUnstressedAgSuffix": "0828d109435fe5cac3a84e872196f634fbe5faba7375f1e05d2fc23dfd5644e7",
+    "OEMedLongShort": "05b9edbaf61aa65450062f5dc7cf67be09923270a5d153700fc8dc6b65a6b5bc",
+    "OEMedUnstressedILowering": "e091a4b9d0893c0bdaa630c8a16933ee836d0f4743ca374b5c6d4e7c96f81fe9",
+    "OEMedUnstressedILowering1": "3c02fa358540d1f02c11e5ea19441792fdb461ae3bc80706adc88be7bf930ec8",
+    "OEMedUnstressedORaising": "d3dcb1074e9852d703e5394f1cfdfe76e3248255903b161f17c251fecb0048a3",
+    "OEMedUnstressedULowering": "67f7b7589d31cc41aaed8e56ee7dfb8735fa1cec0838ab9e673605740346ccb4",
+    "OEMedialSyncope": "a16be67c9995fee12757ccd94e800c610814e01e7ee9bbf3b9914cc7bd8b6936",
+    "OENonHighSyn": "804ce9c1cf442130952bb76bfe69d01ae38ec1b5b6d5f357056e624459a99b86",
+    "OEPalatalFricativeMerger": "6790b05f86b686bec28635d3e8d5113026dfd2320f958495253dd4718e270aab",
+    "OEPostVelarWLoss": "82fc524fbd39d295dd76f8f2ebee171324264f9f97b4b34b4d5f6cfb531f7ec4",
+    "OEPreconsonantalDegemination": "0fc6798498e2ec29b7d35653b72e6fc15a200569de902f4ad64e582e4515a45c",
+    "OEPrefixAReduction": "125237546260fcefecdf59a16a16141399e2cbc3c8316d7e8911171fb2e3ca05",
+    "OEPrefixIReduction": "16b7754218b7a7c273d9eb1b57a757b140a9298b6a517529bc4db89cffc65ef6",
+    "OERMetathesis": "4e9b1d58981292b0b0513d233b33a9a736fdc94e522ac1b41290fe143514333c",
+    "OESecondaryNasalization": "ff174d3db6336751572a18ef0b7ca5079e63b74f5b94ffdcb8d57939ad1ce8a0",
+    "OESkPalatalization": "ffa3dd21fe53087ff62d7a5eb97b949a8b0e0aeb8a4af5ee380c9bd50f40c9fc",
+    "OEStressFootContext": "f10d735c5bd8f51b52f5b67a4f647bc02cc4209e391a9f54bbd2879e4e869283",
+    "OEStripSecondaryStress": "471f25494972c4978b27cfb4c551d935e89b4ba4fc55dac515b85ce705a57c55",
+    "OEUnstressedAEMerger": "aeccd737c0b71a6f4fa91193779463ea6255134e3f48925841d7a3cb594ac37e",
+    "OEUnstressedEIContraction": "e894e4f00689a16ce46c8b63f7861f7090c1cdc6747b0eedf6efecb8e48f43bf",
+    "OEUnstressedFrontingEarly": "d08d25b79636b3b57e3d2b18ce03c606fcdde2622b3a6dd0dae8d1f0fbfa8cfa",
+    "OEUnstressedLongVowelShortening": "58c827827760f017edceae583d76657eae4d943016618a2d41355bf3c44c1d57",
+    "OEVelarFricativePalatalization": "1a9d90f30ca97a3408586b6019ccc7d73cb41a47df7bd3245588ad01e81f242b",
+    "OEVelarPalatalization": "eb46a13911de0666c8a08d5d338c4cc827ac3c5d376677ce1ac6a8e7ab774722",
+    "OEWICombinativeUUmlaut": "96b7f09c15349c4094df822d39d50d297a6f28258d4d0b405568f263c9f1309c",
+    "OEWLossBeforeI": "b2c736a7ef001fc80fb36fb708a8b6879867daf4d8bc58dd631723fac09e7d83",
+    "OEWWSimplification": "7500d897e2bbed61765eb3eac71b059277630b0196031ab0e776a1d21a0d0416",
+    "OEWeakTailNasalLoss": "cbcbc305a8a42f465f5a27bc074bc340aa5bfbe263164cdbda5fd9c025f471ec",
+    "OEWeakTailReduction": "9505b9d4ee677041922c07e035eb55e9b5df9b7362f3c8b140a71b9fdfc399cc",
+    "OEWeightCleanup": "0a8f378b9090851f8548420413fa99654a310743d9c637ca5322d3403632e318",
+    "OEWeightMarkers": "d6fc341177b7282644474c8b03f677ea9b4e7f30250e89c6977f3de98b8752da",
+    "OEWsPalatalDiphthongization": "59260a3a43fe04763071b4f876e78e531256f2304f3e49a1be7ffc8ccf2bd32a",
+    "OEWsPalatalGlide": "9b1550fc41c76c45b5f448487d109347174775bcbbc3155f2a72d079513c8d7b",
+    "OEWsPalatalUmlaut": "41ef5731ba2215779582f049416bfa4133da45c69a4475980eab85484fd35dfb",
+    "OEXsMerge": "519dd8e7a50e1ae37a96a42d9ebedae588f75e8909d730f97a983d2a1a914df8",
+    "OldEnglishOrthography": "0b7c16f0cf81b8f18231f8739b945cb34369fb04e3f397422f1801c63793a2a4",
+    "OldEnglishRemoveStars": "d51f2b188da9b8e304b36a10cc38ed427c9f275735b12f1c804de733149536fa",
+    "OldEnglishSurface": "ec1a7bce6fa42ab21c4da5411ec48bbdbe210fdb81dda13dff1ddd7982761cdb",
+    "PGmcBAllophony": "82674e611ad61789faacc7d843217f65f2d3a3eabf76d173426d03b415a07edf",
+    "PGmcGmSimplification": "7cf60708bdfb28c049f78e68823c6794871761490386f58bac2913edcef95618",
+    "PGmcNasalLossBeforeX": "cd1c547a795d72dccc7669c9434a2d87d66943ed5bf9a1323ce9135b1ee21486",
+    "PNWGmcAToUBeforeM": "8223adaed50e1b2146f3ac4744828712f5bc4d14639fb4cfdd129732a7aa1e76",
+    "PNWGmcFinalLongORaising": "468a625b4bcca20be8a4d662e3686b0ab5e4a3f901212ebd0f0fcc557df2e8ac",
+    "PNWGmcILowering": "4d36c22a533e96d4a255f614663d954de4dc37a79404d195f0e8f9a917e64324",
+    "PNWGmcLongELowering": "ca013a2c1a194b2f735f7560c9f759588dddcf5f69dbbe3bfaf64a90839a3ef5",
+    "PNWGmcMnDissimilation": "293fc364971c1ba7cd6ba28b4928d9d7486e82ba51147a534c9bf106fee69d25",
+    "PNWGmcMonosyllabicFinalRLengthening": "9c28d582ff659ec1e28a8c362ea9f1f5cc2e95dacbe6af29588a2b135a75548c",
+    "PNWGmcNStemNLoss": "1b95be4997a16c3ddeec6de93e036ab1f2e270c2884a5dfe700979f9fbeb8555",
+    "PNWGmcPreconsonantalXLoss": "ae832fc9fcae051a94c5f870313c0c130e3dc4e2d964c86f9634b449f1ccc882",
+    "PNWGmcStressedMonosyllableORaising": "ea15e95fbea6fa0e9a6649f952fd6797444113510a8d12d2dfb6353dfc0a5fa1",
+    "PNWGmcULowering": "2e235f2fb265ebca0e492947456e9bb6bd907959f284bf03e208d66cc4b7edb3",
+    "PNWGmcUnstressedAiMonophthongization": "37780c8cb7283cd158297eef2ba99380904cedc54fae38750f1af43c83c87752",
+    "PWGmcCoronalWAssimilation": "afdcd275cf8b3282981e7d5cebae74ce635ecacb8b86d886da6c35c8f5d9a80a",
+    "PWGmcDentalHardening": "1d1ef400c9b6b76305f7d0b48547ffab2a80fb9957d5dc76d1d98a4f37090406",
+    "PWGmcEarlyIApocope": "d18a44347e77fae3a529e2de2dead3161ad825f02611d33be5f2e0d632ffd9c5",
+    "PWGmcEndinglessAw": "e56ca1091dd2003c62ae61fb821e40d5e19ca5d15c155b3f8cd6af85fe3e479f",
+    "PWGmcFinalBareALoss": "379766cceb220d6ca5b1f1a8d3725c24ec82b1c6613d8fce68b57d429c393ab7",
+    "PWGmcFinalOrLowering": "d2c0c285d123a7e27444b5a4c86d09d1ad6e57e0b092627d6852f489ef65623d",
+    "PWGmcIjContraction": "cff1e71090d7d87650ab372a654d00a541ea19bcab37a308e12e17471c64c0a8",
+    "PWGmcJGemination": "7e8d723f804788abb1430fa3a68e59debc0097455102eba0831ec54343ee2603",
+    "PWGmcSurvivingBimoricOUnrounding": "38e85167979245e363a7a612f1f63a827c2676281efe100c51e9cb0f0648e39b",
+    "PWGmcSyllabicJ": "36497dd238e885dcafbce375cf7535c8cf7e14489b153c8139f38560959615a3",
+    "PWGmcUnstressedWordFinalIApocope": "d4dc0423471e72d28f0b167af2ff5abdb859da7059901111ac4d6adde0ea9708",
+    "RootNounNomZLoss": "bbf79fef9d6d33f34768f1202d8b18b2cf027536d745a45399f598718cbf8e2f",
+    "SieversLawSyncope": "d93743b33af3d1b363dd40263ba7df78dcae66d88460589a241d77d4b929c3ff"
+  },
+  "variants": {
+    "baseline": {
+      "ashes": {
+        "raw": "*áskōn",
+        "normalized_raw_input": "áskōn",
+        "normal_entry": {
+          "output": [
+            "æsċe"
+          ],
+          "trace": [
+            {
+              "stage": "EnglishProtoInput",
+              "before": [
+                "áskōn"
+              ],
+              "after": [
+                "*á*s*k*ō*n"
+              ]
+            },
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*á*s*k*ō*n"
+              ],
+              "after": [
+                "*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*á*s*k*ǭ"
+              ],
+              "after": [
+                "*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*á*s*k*ā"
+              ],
+              "after": [
+                "*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*æ*s*k*ā"
+              ],
+              "after": [
+                "*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*æ*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*æ*ʃ*ǣ"
+              ],
+              "after": [
+                "*æ*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*æ*ʃ*æ"
+              ],
+              "after": [
+                "*æ*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*æ*ʃ*e"
+              ],
+              "after": [
+                "*æsċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*æsċ*e"
+              ],
+              "after": [
+                "æsċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "æsċe"
+              ],
+              "after": [
+                "æsċe"
+              ]
+            }
+          ]
+        },
+        "diagnostic_entry": "immediately after EnglishProtoInput",
+        "tokenized_input": "*á*s*k*ō*n",
+        "post_tokenization_diagnostic": {
+          "output": [
+            "æsċe"
+          ],
+          "trace": [
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*á*s*k*ō*n"
+              ],
+              "after": [
+                "*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*á*s*k*ǭ"
+              ],
+              "after": [
+                "*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*á*s*k*ā"
+              ],
+              "after": [
+                "*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*æ*s*k*ā"
+              ],
+              "after": [
+                "*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*æ*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*æ*ʃ*ǣ"
+              ],
+              "after": [
+                "*æ*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*æ*ʃ*æ"
+              ],
+              "after": [
+                "*æ*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*æ*ʃ*e"
+              ],
+              "after": [
+                "*æsċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*æsċ*e"
+              ],
+              "after": [
+                "æsċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "æsċe"
+              ],
+              "after": [
+                "æsċe"
+              ]
+            }
+          ]
+        }
+      },
+      "flask": {
+        "raw": "*fláskōn",
+        "normalized_raw_input": "fláskōn",
+        "normal_entry": {
+          "output": [
+            "flæsċe"
+          ],
+          "trace": [
+            {
+              "stage": "EnglishProtoInput",
+              "before": [
+                "fláskōn"
+              ],
+              "after": [
+                "*f*l*á*s*k*ō*n"
+              ]
+            },
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*f*l*á*s*k*ō*n"
+              ],
+              "after": [
+                "*f*l*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*f*l*á*s*k*ǭ"
+              ],
+              "after": [
+                "*f*l*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*f*l*á*s*k*ā"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*f*l*æ*s*k*ā"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*f*l*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*f*l*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*æ*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*f*l*æ*ʃ*ǣ"
+              ],
+              "after": [
+                "*f*l*æ*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*f*l*æ*ʃ*æ"
+              ],
+              "after": [
+                "*f*l*æ*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*f*l*æ*ʃ*e"
+              ],
+              "after": [
+                "*f*l*æsċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*f*l*æsċ*e"
+              ],
+              "after": [
+                "flæsċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "flæsċe"
+              ],
+              "after": [
+                "flæsċe"
+              ]
+            }
+          ]
+        },
+        "diagnostic_entry": "immediately after EnglishProtoInput",
+        "tokenized_input": "*f*l*á*s*k*ō*n",
+        "post_tokenization_diagnostic": {
+          "output": [
+            "flæsċe"
+          ],
+          "trace": [
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*f*l*á*s*k*ō*n"
+              ],
+              "after": [
+                "*f*l*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*f*l*á*s*k*ǭ"
+              ],
+              "after": [
+                "*f*l*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*f*l*á*s*k*ā"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*f*l*æ*s*k*ā"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*f*l*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*f*l*æ*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*æ*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*f*l*æ*ʃ*ǣ"
+              ],
+              "after": [
+                "*f*l*æ*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*f*l*æ*ʃ*æ"
+              ],
+              "after": [
+                "*f*l*æ*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*f*l*æ*ʃ*e"
+              ],
+              "after": [
+                "*f*l*æsċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*f*l*æsċ*e"
+              ],
+              "after": [
+                "flæsċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "flæsċe"
+              ],
+              "after": [
+                "flæsċe"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "retain": {
+      "ashes": {
+        "raw": "*áskōn",
+        "normalized_raw_input": "áskōn",
+        "normal_entry": {
+          "output": [
+            "asċe"
+          ],
+          "trace": [
+            {
+              "stage": "EnglishProtoInput",
+              "before": [
+                "áskōn"
+              ],
+              "after": [
+                "*á*s*k*ō*n"
+              ]
+            },
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*á*s*k*ō*n"
+              ],
+              "after": [
+                "*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*á*s*k*ǭ"
+              ],
+              "after": [
+                "*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGHold",
+              "before": [
+                "*á*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*a*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*a*ʃ*æ"
+              ],
+              "after": [
+                "*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*a*ʃ*e"
+              ],
+              "after": [
+                "*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*asċ*e"
+              ],
+              "after": [
+                "asċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "asċe"
+              ],
+              "after": [
+                "asċe"
+              ]
+            }
+          ]
+        },
+        "diagnostic_entry": "immediately after EnglishProtoInput",
+        "tokenized_input": "*á*s*k*ō*n",
+        "post_tokenization_diagnostic": {
+          "output": [
+            "asċe"
+          ],
+          "trace": [
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*á*s*k*ō*n"
+              ],
+              "after": [
+                "*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*á*s*k*ǭ"
+              ],
+              "after": [
+                "*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGHold",
+              "before": [
+                "*á*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*a*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*a*ʃ*æ"
+              ],
+              "after": [
+                "*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*a*ʃ*e"
+              ],
+              "after": [
+                "*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*asċ*e"
+              ],
+              "after": [
+                "asċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "asċe"
+              ],
+              "after": [
+                "asċe"
+              ]
+            }
+          ]
+        }
+      },
+      "flask": {
+        "raw": "*fláskōn",
+        "normalized_raw_input": "fláskōn",
+        "normal_entry": {
+          "output": [
+            "flasċe"
+          ],
+          "trace": [
+            {
+              "stage": "EnglishProtoInput",
+              "before": [
+                "fláskōn"
+              ],
+              "after": [
+                "*f*l*á*s*k*ō*n"
+              ]
+            },
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*f*l*á*s*k*ō*n"
+              ],
+              "after": [
+                "*f*l*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*f*l*á*s*k*ǭ"
+              ],
+              "after": [
+                "*f*l*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGHold",
+              "before": [
+                "*f*l*á*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*f*l*a*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*f*l*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*f*l*a*ʃ*æ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*f*l*a*ʃ*e"
+              ],
+              "after": [
+                "*f*l*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*f*l*asċ*e"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "flasċe"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            }
+          ]
+        },
+        "diagnostic_entry": "immediately after EnglishProtoInput",
+        "tokenized_input": "*f*l*á*s*k*ō*n",
+        "post_tokenization_diagnostic": {
+          "output": [
+            "flasċe"
+          ],
+          "trace": [
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*f*l*á*s*k*ō*n"
+              ],
+              "after": [
+                "*f*l*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*f*l*á*s*k*ǭ"
+              ],
+              "after": [
+                "*f*l*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGHold",
+              "before": [
+                "*f*l*á*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*f*l*a*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*f*l*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*f*l*a*ʃ*æ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*f*l*a*ʃ*e"
+              ],
+              "after": [
+                "*f*l*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*f*l*asċ*e"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "flasċe"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "retract": {
+      "ashes": {
+        "raw": "*áskōn",
+        "normalized_raw_input": "áskōn",
+        "normal_entry": {
+          "output": [
+            "asċe"
+          ],
+          "trace": [
+            {
+              "stage": "EnglishProtoInput",
+              "before": [
+                "áskōn"
+              ],
+              "after": [
+                "*á*s*k*ō*n"
+              ]
+            },
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*á*s*k*ō*n"
+              ],
+              "after": [
+                "*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*á*s*k*ǭ"
+              ],
+              "after": [
+                "*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*á*s*k*ā"
+              ],
+              "after": [
+                "*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGRet",
+              "before": [
+                "*æ*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*a*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*a*ʃ*æ"
+              ],
+              "after": [
+                "*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*a*ʃ*e"
+              ],
+              "after": [
+                "*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*asċ*e"
+              ],
+              "after": [
+                "asċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "asċe"
+              ],
+              "after": [
+                "asċe"
+              ]
+            }
+          ]
+        },
+        "diagnostic_entry": "immediately after EnglishProtoInput",
+        "tokenized_input": "*á*s*k*ō*n",
+        "post_tokenization_diagnostic": {
+          "output": [
+            "asċe"
+          ],
+          "trace": [
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*á*s*k*ō*n"
+              ],
+              "after": [
+                "*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*á*s*k*ǭ"
+              ],
+              "after": [
+                "*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*á*s*k*ā"
+              ],
+              "after": [
+                "*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGRet",
+              "before": [
+                "*æ*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*a*s*k*ā"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*a*s*k*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*a*ʃ*æ"
+              ],
+              "after": [
+                "*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*a*ʃ*e"
+              ],
+              "after": [
+                "*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*asċ*e"
+              ],
+              "after": [
+                "asċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "asċe"
+              ],
+              "after": [
+                "asċe"
+              ]
+            }
+          ]
+        }
+      },
+      "flask": {
+        "raw": "*fláskōn",
+        "normalized_raw_input": "fláskōn",
+        "normal_entry": {
+          "output": [
+            "flasċe"
+          ],
+          "trace": [
+            {
+              "stage": "EnglishProtoInput",
+              "before": [
+                "fláskōn"
+              ],
+              "after": [
+                "*f*l*á*s*k*ō*n"
+              ]
+            },
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*f*l*á*s*k*ō*n"
+              ],
+              "after": [
+                "*f*l*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*f*l*á*s*k*ǭ"
+              ],
+              "after": [
+                "*f*l*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*f*l*á*s*k*ā"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGRet",
+              "before": [
+                "*f*l*æ*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*f*l*a*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*f*l*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*f*l*a*ʃ*æ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*f*l*a*ʃ*e"
+              ],
+              "after": [
+                "*f*l*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*f*l*asċ*e"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "flasċe"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            }
+          ]
+        },
+        "diagnostic_entry": "immediately after EnglishProtoInput",
+        "tokenized_input": "*f*l*á*s*k*ō*n",
+        "post_tokenization_diagnostic": {
+          "output": [
+            "flasċe"
+          ],
+          "trace": [
+            {
+              "stage": "PNWGmcNStemNLoss",
+              "before": [
+                "*f*l*á*s*k*ō*n"
+              ],
+              "after": [
+                "*f*l*á*s*k*ǭ"
+              ]
+            },
+            {
+              "stage": "PWGmcSurvivingBimoricOUnrounding",
+              "before": [
+                "*f*l*á*s*k*ǭ"
+              ],
+              "after": [
+                "*f*l*á*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrightening",
+              "before": [
+                "*f*l*á*s*k*ā"
+              ],
+              "after": [
+                "*f*l*æ*s*k*ā"
+              ]
+            },
+            {
+              "stage": "AGRet",
+              "before": [
+                "*f*l*æ*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ā"
+              ]
+            },
+            {
+              "stage": "EAFBrighteningLongFinal",
+              "before": [
+                "*f*l*a*s*k*ā"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OEARestoration",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*s*k*ǣ"
+              ]
+            },
+            {
+              "stage": "OESkPalatalization",
+              "before": [
+                "*f*l*a*s*k*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*ǣ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedLongVowelShortening",
+              "before": [
+                "*f*l*a*ʃ*ǣ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*æ"
+              ]
+            },
+            {
+              "stage": "OEUnstressedAEMerger",
+              "before": [
+                "*f*l*a*ʃ*æ"
+              ],
+              "after": [
+                "*f*l*a*ʃ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishOrthography",
+              "before": [
+                "*f*l*a*ʃ*e"
+              ],
+              "after": [
+                "*f*l*asċ*e"
+              ]
+            },
+            {
+              "stage": "OldEnglishRemoveStars",
+              "before": [
+                "*f*l*asċ*e"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            },
+            {
+              "stage": "OldEnglishSurface",
+              "before": [
+                "flasċe"
+              ],
+              "after": [
+                "flasċe"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "trace_policy": "Changed relations plus named checkpoints and final; full history in sealed snapshot."
+}

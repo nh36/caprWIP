@@ -93,7 +93,10 @@ def test_adopted_sc052_matches_the_independently_compiled_scoped_candidate(monke
     current = parse_defines((root / "fsts/germanic.txt").read_text())
     name = "OEVelarPalatalizationStops"
     assert candidate[name].definition_raw.replace(",,", ",", 1) == original[name].definition_raw
-    assert current[name].definition_raw == candidate[name].definition_raw
+    expected = candidate[name].definition_raw.replace(
+        "|| _ EnglishStarFrontVowel,", "|| _ [{*i}|{*í}|{*ì}|{*ī}],", 1)
+    assert expected != candidate[name].definition_raw
+    assert current[name].definition_raw == expected
     for name in ("OEVelarPalatalization", "OEGFricativePalatal",
                  "OEVelarPalatalizationKFront"):
         assert current[name].definition_raw == original[name].definition_raw

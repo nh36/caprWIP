@@ -1,0 +1,8 @@
+variant	accepted	matches	mismatches	changed_ids	control_passes	control_total
+identity	394	385	9		11	14
+guard_only	394	384	10	2253	14	14
+guard_split_early	394	384	10	2016;2253	14	14
+guard_retain_late	394	384	10	2016;2253	14	14
+guard_retract_late	394	384	10	2016;2253	14	14
+guard_early_retain	394	385	9	2016;2253	14	14
+guard_early_retract	394	385	9	2016;2253	14	14

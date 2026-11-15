@@ -15,6 +15,7 @@ function Pandoc(doc)
     Link = function(el)
       local target = el.target:match("^#(rule%-.+)$")
         or el.target:match("^#(.+%-oe%-.+)$")
+        or el.target:match("^#(weak%-n%-paradigms%-after%-apocope)$")
       if target and not destinations[target] then
         return el.content
       end

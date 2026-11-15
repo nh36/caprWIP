@@ -1,0 +1,51 @@
+{
+  "adjudication": "SC042",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc042-adjudication.md",
+  "transition_id": "final_nasal_candidate",
+  "previous_summary": {
+    "outputs_sha256": "43a57847b70b39ec130b4b52a17065be8cedd0e5fe7c6cc801ae1bcecae9fe2c",
+    "lexical_outputs_sha256": "2783f9617b26caf0ad10836a99d4502f80f47ee13f858aaea123b9351b1c5514",
+    "legacy_subset_sha256": "a004ea461f76e5ca0c00d4ab407648247222a5123ccad31e2c6a89fe0223ed47"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "2016",
+      "before": {
+        "proto": "*fláskōn",
+        "proto_norm": "fláskōn",
+        "fst_input": "fláskōn",
+        "counterpart": "flasce",
+        "outputs": "flasce",
+        "match": "1"
+      },
+      "after": {
+        "proto": "*fláskōn",
+        "proto_norm": "fláskōn",
+        "fst_input": "fláskōn",
+        "counterpart": "flasce",
+        "outputs": "flæsċe",
+        "match": "0"
+      }
+    },
+    {
+      "row_id": "2141",
+      "before": {
+        "proto": "*márōn",
+        "proto_norm": "márōn",
+        "fst_input": "márōn",
+        "counterpart": "mære",
+        "outputs": "mare",
+        "match": "0"
+      },
+      "after": {
+        "proto": "*márōn",
+        "proto_norm": "márōn",
+        "fst_input": "márōn",
+        "counterpart": "mære",
+        "outputs": "mære",
+        "match": "1"
+      }
+    }
+  ]
+}

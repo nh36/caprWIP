@@ -12,19 +12,19 @@
 - Regular rows with empty NOTE and no report required: 1
 - Regular rows with empty NOTE but supporting material present: 224
 - Rows with STATUS=format_test manifest entries: 1
-- Regular rows with NOTE (report required): 89
-- Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 12
+- Regular rows with NOTE (report required): 90
+- Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
 
 ## Counts by DERIVATION_CLASS
 
 | DERIVATION_CLASS | Total rows | Required | Manifest-backed production reports | Source material available | No source material found |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | attested_variant | 6 | 6 | 1 | 5 | 0 |
-| early_analogy | 36 | 36 | 2 | 34 | 0 |
+| early_analogy | 35 | 35 | 2 | 33 | 0 |
 | known_unmodelled | 2 | 2 | 2 | 0 | 0 |
 | late_analogy | 28 | 28 | 4 | 24 | 0 |
 | reconstructed_oe | 3 | 3 | 1 | 2 | 0 |
-| regular | 314 | 93 | 0 | 89 | 4 |
+| regular | 315 | 94 | 0 | 90 | 4 |
 | unexplained_unmodelled | 5 | 5 | 1 | 4 | 0 |
 
 ## Required rows with certified editorial SOURCE
@@ -102,7 +102,7 @@
 | 2008 | fern | fearn | regular | yes | source_material | - | archive/dev_notes_slices/2008-fern-fearn.md, archive/packets/2008-fern-fearn.md, model_entries/2008-fern-fearn.model.md, model_entries/2008-fern-fearn.source_ledger.md, research_memos/2008-fern-fearn.md | NOTE |
 | 2009 | field | feld | regular | yes | source_material | - | archive/dev_notes_slices/2009-field-feld.md, archive/packets/2009-field-feld.md, model_entries/2009-field-feld.model.md, model_entries/2009-field-feld.source_ledger.md, research_memos/2009-field-feld.md | NOTE |
 | 2011 | find | fundne | late_analogy | yes | certified_editorial_source | - | model_entries/2011-find-fundene.model.md | NOTE, DERIVATION_CLASS=late_analogy, philological=find-strong-nominative-plural |
-| 2016 | flask | flasce | early_analogy | no | source_material | - | archive/dev_notes_slices/2016-flask-flasce.md, archive/packets/2016-flask-flasce.md, model_entries/2016-flask-flasce.model.md, model_entries/2016-flask-flasce.source_ledger.md, research_memos/2016-flask-flasce.md | DERIVATION_CLASS=early_analogy |
+| 2016 | flask | flascan | regular | yes | source_material | - | archive/dev_notes_slices/2016-flask-flasce.md, archive/packets/2016-flask-flasce.md, model_entries/2016-flask-flasce.model.md, model_entries/2016-flask-flasce.source_ledger.md, research_memos/2016-flask-flasce.md | NOTE |
 | 2022 | fly | flēogan | regular | yes | source_material | - | archive/dev_notes_slices/2022-fly-flēogan.md, archive/packets/2022-fly-flēogan.md, model_entries/2022-fly-flēogan.model.md, model_entries/2022-fly-flēogan.source_ledger.md, research_memos/2022-fly-flēogan.md | NOTE |
 | 2027 | follow | fylġan | early_analogy | yes | source_material | - | archive/dev_notes_slices/2027-follow-fylġan.md, archive/packets/2027-follow-fylġan.md, model_entries/2027-follow-fylġan.model.md, model_entries/2027-follow-fylġan.source_ledger.md, research_memos/2027-follow-fylġan.md | NOTE, DERIVATION_CLASS=early_analogy |
 | 2028 | forlorn | lēosan | regular | yes | source_material | - | archive/dev_notes_slices/2028-forlorn-lēosan.md, archive/packets/2028-forlorn-lēosan.md, model_entries/2028-forlorn-lēosan.model.md, model_entries/2028-forlorn-lēosan.source_ledger.md, research_memos/2028-forlorn-lēosan.md | NOTE |

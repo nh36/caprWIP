@@ -4,7 +4,6 @@ PROTO: *márōn
 PROTOFORM: *márōn
 COUNTERPART: mære
 DERIVATION_CLASS: regular
-OUTPUT_STATUS: implementation_gap
 
 ### Transducer input and output
 
@@ -15,7 +14,7 @@ OUTPUT_STATUS: implementation_gap
 | selected input form | *márōn |
 | Old English target | mære |
 | classification | regular |
-| documented output | *márōn -> mare |
+| documented output | *márōn -> mære |
 
 ### Old English evidence and selected form
 
@@ -27,8 +26,18 @@ The variant [*mare*]{.iv lang=oe sort=mare role=comparison_form} 'nightmare' is 
 
 Ringe and Taylor reconstruct a nominative \emph{*marā} beside an oblique stem \emph{*marōn-}, followed by the front-root forms \emph{*mærǣ} and \emph{*mærōn-}. Their printed list includes *mare*, *maran*, and *mære*, not merely *mare* and *mere* [@RingeTaylor2014, 192]. Hall explicitly explains *mare* as levelling of the nominative root vowel to that of oblique forms such as *maran*, in which retraction had applied. This is a paradigmatic development, not evidence that the nominative itself regularly underwent the same restoration [@Hall2007, 301, §2].
 
-### Current derivation and implementation gap
+### Current derivation
 
-The selected input remains \emph{*márōn}. The unchanged cascade produces *mare*, not the selected *mære*. In the current implementation, the retained nasal ending triggers root-vowel restoration; its output matches an attested variant but does not implement the cited front-root nominative history. The unadopted Model B research experiment yields *mære*. Selecting that attested nominative does not adopt the experiment or change any production sound rule.
+The selected input remains \emph{*márōn}. Early final nasal bimoric
+\emph{*ǭ} merges with oral \emph{*ō} in \emph{*ā}; subsequent ending
+fronting gives \emph{*ǣ}. The resulting \emph{*mærǣ} no longer has the
+back ending needed to retract the root. Shortening and unstressed merger
+give the selected *mære*. The corrected cascade therefore implements
+the front-root nominative history, not the later levelled variant.
+
+The corrected lexical base previously produced *mare* because its
+nasal ending survived until restoration. Frozen Model B first exhibited
+the corrected result experimentally; the present candidate separately
+reproduces and source-checks its three necessary rule changes.
 
 The English concept label 'nightmare' indexes the Old English simplex, not an attested compound. The regular classification describes the selected nominative history; the later levelled variant is retained as comparison, not substituted for the selected form to obtain a computational match.

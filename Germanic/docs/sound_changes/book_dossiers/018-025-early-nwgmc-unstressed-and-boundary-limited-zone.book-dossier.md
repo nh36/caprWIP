@@ -1,5 +1,12 @@
 # SC018-SC025 book dossier: editorial holding zone after SC021/SC022 adjudication
 
+SC023's serialization was subsequently corrected before early i-apocope
+in the coordinated Flask adoption (`audits/sc069-adjudication.md`).
+The older runner boundary below is historical; secondary final n in
+inherited -ōni/-ōniz now survives. The selected census contains16
+weak singular firings, with Flask's singular retained as a separate
+diagnostic and its nominative plural selected instead.
+
 > **Partially superseded (e1-complex re-adjudication,
 > `audits/sc024-sc025-sc101-e1-complex-adjudication.md`).** The SC024 and
 > SC025 characterizations below predate the split of the old one-step

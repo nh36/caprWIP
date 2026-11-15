@@ -1,0 +1,212 @@
+{
+  "experiment_id": "flask-genpl-77f314bf-v1",
+  "reference_sha": "77f314bf85035c23706b6b09b3a1855aa23c0620",
+  "outcome": "passed",
+  "completed_at": "2026-11-14T10:20:07Z",
+  "receipt_sha256": "e7ad549016711c3cb564dcc48bcf494c7e892cf08128e1a7abee534bfd642e62",
+  "completion_sha256": "5ea3ea3dbb2ae466de84ad2bd32c7cd87a6f89ffe81efd7a399edbe075c1c4ee",
+  "inputs": {
+    "source": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/flask-genitive-plural-77f314bf/reference.txt",
+      "snapshot_name": "source.txt",
+      "sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539"
+    },
+    "driver": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/flask-research/genitive_plural.py",
+      "snapshot_name": "driver.py",
+      "sha256": "b89183321c2b51b687ce5cd0841c55362e14c31c1d51b0d5a1281d66a42d8e89"
+    },
+    "recipe": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/flask-genitive-plural-77f314bf/recipe.json",
+      "snapshot_name": "recipe.json",
+      "sha256": "a1fee59117e07275c081ba795ff81d3108cbb321c733c298223041de05d270bb"
+    },
+    "payload": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/flask-genitive-plural-77f314bf/payload.json",
+      "snapshot_name": "payload.json",
+      "sha256": "5b13c67b59599b14cc5c2d7d54e0dae9a8c697320b700ac616a8529261aa4a6b"
+    },
+    "corpus": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/data/germanic-aligned-final.tsv",
+      "snapshot_name": "corpus.tsv",
+      "sha256": "8b300c3116465cda233e964c8e623f79edbf210a2d3f7f7f073a1542178f965f"
+    },
+    "contexts": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/data/entry_context_metadata.tsv",
+      "snapshot_name": "contexts.tsv",
+      "sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914"
+    },
+    "pipeline": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/oe_pipeline.py",
+      "snapshot_name": "pipeline.py",
+      "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+    },
+    "compiler": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/anglo_frisian_experiments.py",
+      "snapshot_name": "compiler.py",
+      "sha256": "a379a3e8edfab3b6b66f8e88d2a7c78c86d9c610b5d936d172d0aac38dd7705f"
+    }
+  },
+  "order": [
+    "EnglishProtoInput",
+    "PGmcGmSimplification",
+    "PGmcNasalLossBeforeX",
+    "RootNounNomZLoss",
+    "PNWGmcUnstressedAiMonophthongization",
+    "PNWGmcAToUBeforeM",
+    "PNWGmcLongELowering",
+    "PWGmcEarlyIApocope",
+    "PWGmcFinalOrLowering",
+    "PWGmcCoronalWAssimilation",
+    "OEWWSimplification",
+    "PWGmcIjContraction",
+    "PWGmcJGemination",
+    "PWGmcSyllabicJ",
+    "PNWGmcPreconsonantalXLoss",
+    "EAFLThVoicing",
+    "PWGmcDentalHardening",
+    "PWGmcEndinglessAw",
+    "PNWGmcILowering",
+    "PNWGmcULowering",
+    "PNWGmcStressedMonosyllableORaising",
+    "PNWGmcFinalLongORaising",
+    "EAFFinalZDeletion",
+    "PWGmcUnstressedWordFinalIApocope",
+    "MonosyllabicFinalZLoss",
+    "PNWGmcMonosyllabicFinalRLengthening",
+    "EAFRhotacism",
+    "PNWGmcMnDissimilation",
+    "PNWGmcNStemNLoss",
+    "EAFNasalSpirantLengthening",
+    "EAFNasalSpirantLoss",
+    "EAFHiatusWInsertion",
+    "EAFLongANasalRounding",
+    "EAFNasalizedLowRounding",
+    "EAFLongAFronting",
+    "OEStressFootContext",
+    "EAFAiMonophthongization",
+    "OEAwwjResolution",
+    "OEAuBrightening",
+    "OEEwLongDiphthong",
+    "OEJWWSimplification",
+    "OEJGlideIO",
+    "OEDiphthongLeveling",
+    "OEAwLongDiphthong",
+    "OECompoundLinkingSyncope",
+    "OEStripSecondaryStress",
+    "OEInterStressRaising",
+    "OEWICombinativeUUmlaut",
+    "PWGmcFinalBareALoss",
+    "NWGmcInStemNLoss",
+    "PWGmcSurvivingBimoricOUnrounding",
+    "EAFBrighteningUnstressed",
+    "EAFBrightening",
+    "EAFBrighteningLongFinal",
+    "OEBreaking",
+    "OEVelarFricativePalatalization",
+    "OEARestoration",
+    "OEHeavySyllableNasalApocope",
+    "OESecondaryNasalization",
+    "SieversLawSyncope",
+    "OESkPalatalization",
+    "OEVelarPalatalization",
+    "OEPrefixAReduction",
+    "OEPostVelarWLoss",
+    "OEWsPalatalDiphthongization",
+    "OEIUmlaut",
+    "OEWLossBeforeI",
+    "OELatePalatalDiphthong",
+    "OEJClusterCoalescence",
+    "OEBackMutation",
+    "OEWsPalatalUmlaut",
+    "OEWeakTailNasalLoss",
+    "OEWeightMarkers",
+    "OENonHighSyn",
+    "PGmcBAllophony",
+    "OEMedLongShort",
+    "OEHighVowelApocope",
+    "OEMedialSyncope",
+    "OEHighLinkSyncope",
+    "OELAdjacentSyncope",
+    "OEHighStressDecode",
+    "OEDentalAssimilation",
+    "OEPreconsonantalDegemination",
+    "OEEarlyOShortening",
+    "OEUnstressedFrontingEarly",
+    "OELateOShortening",
+    "OEMedUnstressedORaising",
+    "OEFinalUnstressedOLowering",
+    "OEUnstressedLongVowelShortening",
+    "OEUnstressedAEMerger",
+    "OEMedUnstressedILowering1",
+    "OEMedUnstressedILowering",
+    "OEMedUnstressedULowering",
+    "OEPrefixIReduction",
+    "OEWeakTailReduction",
+    "OEJLossAfterHeavy",
+    "OEFinalGeminateSimplification",
+    "OEJStrengtheningAfterFrontDiphthong",
+    "OEIntervocalicJVocalization",
+    "OEUnstressedEIContraction",
+    "OEWeightCleanup",
+    "OEHLoss",
+    "OEContraction",
+    "OERMetathesis",
+    "OEEpentheticVowel",
+    "OELateUnstressedAgSuffix",
+    "OEPalatalFricativeMerger",
+    "OECjCleanup",
+    "OEXsMerge",
+    "OldEnglishOrthography",
+    "OEWsPalatalGlide",
+    "OldEnglishRemoveStars",
+    "OldEnglishSurface"
+  ],
+  "protected_artifacts_unchanged": true,
+  "commands": [
+    {
+      "label": "isolated-compile",
+      "started_at": "2026-11-14T10:15:00Z",
+      "finished_at": "2026-11-14T10:20:00Z",
+      "returncode": 0,
+      "source_changed": false,
+      "stdout_sha256": "6dd20b38b3213f26144b947077510cc322b6b24c46c341880fdee1798f8643c9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "flask-genitive-plural",
+      "started_at": "2026-11-14T10:20:00Z",
+      "finished_at": "2026-11-14T10:20:07Z",
+      "returncode": 0,
+      "source_changed": false,
+      "stdout_sha256": "406425b3285279e6aa03cfe75d12d1fcfd4b4b8633053f8f59ff656b749a8414",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_images": [
+    {
+      "path": ".capr-work/flask-research/ringe-page-324.png",
+      "sha256": "726eb84e5aeed73f7b41ee62a4e0c207f19be381a64ac2efad76ceafb4ef8936"
+    },
+    {
+      "path": ".capr-work/flask-research/rt-59.png",
+      "sha256": "53d5640da0bf875ccc50dda150280a754d04427a215631bbcafb55f533ddc9e1"
+    },
+    {
+      "path": ".capr-work/flask-research/rt-153.png",
+      "sha256": "89abe02fff5910507c53bca10ea0bd08ddb9deb9335a65d823f9e5cc058202a2"
+    },
+    {
+      "path": ".capr-work/flask-research/rt-154.png",
+      "sha256": "568d9fc23e4e6ca74d168f1836fa67505e60d5ced4d985e28284472e1daed65f"
+    },
+    {
+      "path": ".capr-work/flask-research/campbell-158.png",
+      "sha256": "144f8ef5a8d00ded1813c24dcc40810fb8969a94c58cc9b757b3d43f0f9770cc"
+    },
+    {
+      "path": ".capr-work/flask-research/campbell-159.png",
+      "sha256": "c5fe9b646e8798634a78618ebcd013a52e45b4eabfe2ecdd2bab3d5abe7d0149"
+    }
+  ]
+}

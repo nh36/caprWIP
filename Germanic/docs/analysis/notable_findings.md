@@ -18,6 +18,7 @@ discussion in the eventual write-up of the project.
 9. [OE wīþiġ 'withy': ja-stem vs. -ig suffix problem](#9-oe-wīþiġ-withy-ja-stem-vs--ig-suffix-problem)
 10. [OE rēc 'smoke': the missing WS rīec problem](#10-oe-rēc-smoke-the-missing-ws-rīec-problem)
 11. [PGmc \*mizdō 'reward': the méd / meord dialectal doublet and z-loss before dentals](#11-pgmc-mizdō-reward-the-méd--meord-dialectal-doublet-and-z-loss-before-dentals)
+12. [Secondary final n and late shortening in Old English flascan](#12-secondary-final-n-and-late-shortening-in-old-english-flascan)
 
 ---
 
@@ -1728,3 +1729,43 @@ dialect-relic-target treatment.
 - Hall, J. R. C. *Concise Anglo-Saxon Dictionary*. s.v. *meard* / *meord*
   (in repo at `docs/references/aconciseanglosa01hallgoog.txt:14793`).
 - DEV_NOTES.md §17.24 (full investigation), §17.24.7 (correction trail).
+
+---
+
+## 12. Secondary final n and late shortening in Old English flascan
+
+**Finding (2026-11-14).** Two attested cells of the weak feminine 'flask'
+can be derived regularly under the same chronology. Early loss of
+`*i` and, in the nominative plural, of `*z`, brings nominative plural
+`*fláskōniz` and dative singular `*fláskōni` together in `*-ōn`.
+The nasal becomes word-final after the older loss of final `*n`
+(SC023). Root fronting and restoration give `*flæskōn` → `*flaskōn`.
+With early shortening (SC069) restricted to `*ō` before `*m` and
+before nonfinal `*n`, the long vowel survives unstressed fronting.
+Late shortening and lowering (SC071 and SC100) give `*flaskon` →
+`*flaskan`, written *flascan* in both cells (Hecht 1900, C p. 141
+l. 27 and p. 142 ll. 2–4).
+
+**What formalization added.** Protecting secondary final `*n` alone
+left the older early-shortening rule in force and gave predicted
+*flascen*. Restricting that rule lets the existing late rules derive
+`*-an` from both inherited endings. The same cascade gives *tungan*
+from the inherited nominative plural and preserves nominative singular
+*tunge* and *dōn*. The rule changes alone altered none of the 394
+outputs with the old inputs. Selecting the attested nominative plural
+for row 2016 then produced the sole output change, with 386 matches
+and the same eight remaining mismatches. The inherited Flask
+nominative singular still gives predicted *flæsċe* beside attested
+*flasce*.
+
+**Historical scope.** The derivation gives an explicit chronology and
+conditioning for Ringe and Taylor’s regular northern alternative
+(2014, p. 164, scenario 3). Hill’s account of raising followed by
+redistribution (2010, pp. 433–443) remains viable. The accusative and
+other weak endings require separate evidence. Comparative dating of
+newly final `*-ōn` in English and Frisian remains open.
+
+**Book and evidence.** See the [Flask lexical entry](../lexeme_reports/model_entries/2016-flask-flasce.model.md),
+[SC069](../sound_changes/reader_facing/069-early-o-shortening-context-note.md#rule-OEEarlyOShortening),
+[Chapter 3](../sound_changes/reader_facing/chap3-pwgmc-to-af-intro.md#weak-n-paradigms-after-apocope),
+and the [production traces and comparison](../sound_changes/audits/flask-production-certification.md).

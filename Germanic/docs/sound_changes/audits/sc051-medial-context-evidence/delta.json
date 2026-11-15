@@ -1,0 +1,125 @@
+{
+  "identity": [],
+  "guard_only": [
+    {
+      "id": "2253",
+      "concept": "thrash",
+      "before": [
+        "þresċan"
+      ],
+      "after": [
+        "þrescan"
+      ]
+    }
+  ],
+  "guard_split_early": [
+    {
+      "id": "2016",
+      "concept": "flask",
+      "before": [
+        "flæsċe"
+      ],
+      "after": [
+        "flæsce"
+      ]
+    },
+    {
+      "id": "2253",
+      "concept": "thrash",
+      "before": [
+        "þresċan"
+      ],
+      "after": [
+        "þrescan"
+      ]
+    }
+  ],
+  "guard_retain_late": [
+    {
+      "id": "2016",
+      "concept": "flask",
+      "before": [
+        "flæsċe"
+      ],
+      "after": [
+        "flasċe"
+      ]
+    },
+    {
+      "id": "2253",
+      "concept": "thrash",
+      "before": [
+        "þresċan"
+      ],
+      "after": [
+        "þrescan"
+      ]
+    }
+  ],
+  "guard_retract_late": [
+    {
+      "id": "2016",
+      "concept": "flask",
+      "before": [
+        "flæsċe"
+      ],
+      "after": [
+        "flasċe"
+      ]
+    },
+    {
+      "id": "2253",
+      "concept": "thrash",
+      "before": [
+        "þresċan"
+      ],
+      "after": [
+        "þrescan"
+      ]
+    }
+  ],
+  "guard_early_retain": [
+    {
+      "id": "2016",
+      "concept": "flask",
+      "before": [
+        "flæsċe"
+      ],
+      "after": [
+        "flasce"
+      ]
+    },
+    {
+      "id": "2253",
+      "concept": "thrash",
+      "before": [
+        "þresċan"
+      ],
+      "after": [
+        "þrescan"
+      ]
+    }
+  ],
+  "guard_early_retract": [
+    {
+      "id": "2016",
+      "concept": "flask",
+      "before": [
+        "flæsċe"
+      ],
+      "after": [
+        "flasce"
+      ]
+    },
+    {
+      "id": "2253",
+      "concept": "thrash",
+      "before": [
+        "þresċan"
+      ],
+      "after": [
+        "þrescan"
+      ]
+    }
+  ]
+}

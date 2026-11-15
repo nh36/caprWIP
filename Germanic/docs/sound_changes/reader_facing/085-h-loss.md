@@ -34,9 +34,10 @@ copies. Nor does written \emph{h} by itself settle the fricative's phonetic
 value: CAPR's assignment of [ç] before a following front vowel at
 palatalization is a model analysis, not a transcription of that letter.
 
-In the current stage trial for *þō* 'clay', the ending is still back when
-palatalization applies, so the velar fricative remains. Later ending
-changes supply \emph{e} while the fricative is still present; loss leaves
+In the current stage trial for *þō* 'clay', the early final-vowel merger
+and subsequent fronting supply \emph{ǣ} before palatalization, where
+CAPR assigns [ç]. Shortening and merger then supply \emph{e}
+while the fricative is still present; loss leaves
 \emph{ō + e}, and contraction produces the contracted form. This verifies
 the front-ending/fricative/hiatus sequence without equating the trial's
 \emph{e} with the glossary spelling \emph{ae}. The historical interpretation
@@ -46,14 +47,40 @@ of that distinction is discussed with
 ## SC085. Loss of intervocalic \emph{*h} (`OEHLoss`) {#rule-OEHLoss}
 
 ```foma
-define OEHLoss [
-    {*x} -> 0 || EnglishStarVocalic _ EnglishStarVocalic
-];
+define OEHLoss FootCtx([
+    [{*x}|{*ç}] -> 0 || EnglishStarVocalic _ EnglishStarVocalic
+]) .o. [{*ᶠ} -> 0];
 ```
 
-The rule removes intervocalic \emph{*h}; contraction can subsequently
-resolve the hiatus, but the hiatus is itself attested.
+The rule removes singleton intervocalic \emph{*h} in either model
+allophone. It must not depend on a front neighbour: *wlōhum* 'fringe'
+loses the fricative between back vowels while retaining \emph{-um}.
+Geminates do not meet the singleton environment. The existing foot
+wrapper protects pretonic material: Campbell explicitly retains
+intervocalic \emph{h} between an unaccented and an accented vowel in
+*behindan* 'behind', *behealdan* 'hold', *gehelpan* 'help' and
+*toheald* 'inclined' [@Campbell1959, pp. 186--187, §§461, 464--465].
+Thus the prosodic guard has independent support; it is not a lexical
+exception introduced to protect matching outputs.
+The pretonic annotation survives the preceding vowel reduction and is
+removed only after this protection has been applied.
+Contraction can subsequently resolve the hiatus, but the hiatus is itself attested.
 
-If the rule is moved before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. This establishes a dependency of the current merger and contraction implementations, not independent historical proof that merger preceded loss. If Corpus *thoae* 'clay' preserves distinct unstressed \emph{æ}, the clay witness instead puts loss before merger in that form. Whether this spelling distinguishes \emph{æ} from \emph{e} remains open; a successful contracted endpoint cannot decide it.
+The [reviewed final-nasal candidate](https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde)
+reproduces the toe boundary in two separately executed trials. Moving
+loss before [SC073 OEUnstressedAEMerger](#rule-OEUnstressedAEMerger), or
+moving merger after loss, removes the palatal fricative while the ending
+is still \emph{æ}. The resulting \emph{ā + æ} neither meets the merger's
+consonantal context nor contracts, yielding [*tāæ*]{.pred} rather than
+OE *tā* 'toe'. Unperturbed, merger first supplies \emph{e}; loss leaves
+\emph{ā + e}, and contraction gives *tā* 'toe'.
+The [earlier loss-displacement record](https://github.com/nh36/caprWIP/commit/196b8f6b73d825d86830bb8612834f50f865b9e4)
+has the same final failure, but is a distinct, dated measurement, not the
+source of these candidate intermediates. The result remains a computational
+boundary observation, not independent historical proof that merger preceded
+loss. If Corpus *thoae* 'clay' preserves distinct unstressed \emph{æ},
+the clay witness instead puts loss before merger in that form. Whether this
+spelling distinguishes \emph{æ} from \emph{e} remains open; a successful
+contracted endpoint cannot decide it.
 
 If loss is delayed until after [SC086 OEContraction](#rule-OEContraction), PGmc [fléuxaną]{.recon} ‘flee’ yields [*flēoan*]{.pred} rather than expected OE *flēon* ‘flee’, PGmc [sláxaną]{.recon} ‘slay’ yields [*sleaan*]{.pred} rather than expected *slēan* ‘slay’, PGmc [téxun]{.recon} ‘draw’ yields [*teoon*]{.pred} rather than expected *tēon* ‘draw’, and PGmc [táixōn]{.recon} ‘toe’ yields [*tāe*]{.pred} rather than expected *tā* ‘toe’. These outputs require loss before contraction in the current cascade. The four displacement witnesses agree with the glossary evidence for that sequence; neither their executable adjacency nor the copy dates establish an immediate historical succession.

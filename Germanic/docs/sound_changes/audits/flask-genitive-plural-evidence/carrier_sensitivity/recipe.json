@@ -1,0 +1,348 @@
+{
+  "id": "genitive-plural-carrier",
+  "replace": {},
+  "insert_rule": null,
+  "insert_after": null,
+  "definitions": "define GPNHS FootCtx([\n    [{*a}|{*æ}|{*e}] -> 0 ||\n        .#. OEAnyConsonant* EnglishStarVocalic\n        [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+\n        _ OEAnyConsonant [EnglishStarVocalic|{*ô}]\n        [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.\n]);",
+  "component_checks": [
+    {
+      "component": "EnglishProtoInput"
+    },
+    {
+      "component": "PGmcGmSimplification"
+    },
+    {
+      "component": "PGmcNasalLossBeforeX"
+    },
+    {
+      "component": "RootNounNomZLoss"
+    },
+    {
+      "component": "PNWGmcUnstressedAiMonophthongization"
+    },
+    {
+      "component": "PNWGmcAToUBeforeM"
+    },
+    {
+      "component": "PNWGmcLongELowering"
+    },
+    {
+      "component": "PWGmcEarlyIApocope"
+    },
+    {
+      "component": "PWGmcFinalOrLowering"
+    },
+    {
+      "component": "PWGmcCoronalWAssimilation"
+    },
+    {
+      "component": "OEWWSimplification"
+    },
+    {
+      "component": "PWGmcIjContraction"
+    },
+    {
+      "component": "PWGmcJGemination"
+    },
+    {
+      "component": "PWGmcSyllabicJ"
+    },
+    {
+      "component": "PNWGmcPreconsonantalXLoss"
+    },
+    {
+      "component": "EAFLThVoicing"
+    },
+    {
+      "component": "PWGmcDentalHardening"
+    },
+    {
+      "component": "PWGmcEndinglessAw"
+    },
+    {
+      "component": "PNWGmcILowering"
+    },
+    {
+      "component": "PNWGmcULowering"
+    },
+    {
+      "component": "PNWGmcStressedMonosyllableORaising"
+    },
+    {
+      "component": "PNWGmcFinalLongORaising"
+    },
+    {
+      "component": "EAFFinalZDeletion"
+    },
+    {
+      "component": "PWGmcUnstressedWordFinalIApocope"
+    },
+    {
+      "component": "MonosyllabicFinalZLoss"
+    },
+    {
+      "component": "PNWGmcMonosyllabicFinalRLengthening"
+    },
+    {
+      "component": "EAFRhotacism"
+    },
+    {
+      "component": "PNWGmcMnDissimilation"
+    },
+    {
+      "component": "PNWGmcNStemNLoss"
+    },
+    {
+      "component": "EAFNasalSpirantLengthening"
+    },
+    {
+      "component": "EAFNasalSpirantLoss"
+    },
+    {
+      "component": "EAFHiatusWInsertion"
+    },
+    {
+      "component": "EAFLongANasalRounding"
+    },
+    {
+      "component": "EAFNasalizedLowRounding"
+    },
+    {
+      "component": "EAFLongAFronting"
+    },
+    {
+      "component": "OEStressFootContext"
+    },
+    {
+      "component": "EAFAiMonophthongization"
+    },
+    {
+      "component": "OEAwwjResolution"
+    },
+    {
+      "component": "OEAuBrightening"
+    },
+    {
+      "component": "OEEwLongDiphthong"
+    },
+    {
+      "component": "OEJWWSimplification"
+    },
+    {
+      "component": "OEJGlideIO"
+    },
+    {
+      "component": "OEDiphthongLeveling"
+    },
+    {
+      "component": "OEAwLongDiphthong"
+    },
+    {
+      "component": "OECompoundLinkingSyncope"
+    },
+    {
+      "component": "OEStripSecondaryStress"
+    },
+    {
+      "component": "OEInterStressRaising"
+    },
+    {
+      "component": "OEWICombinativeUUmlaut"
+    },
+    {
+      "component": "PWGmcFinalBareALoss"
+    },
+    {
+      "component": "NWGmcInStemNLoss"
+    },
+    {
+      "component": "PWGmcSurvivingBimoricOUnrounding"
+    },
+    {
+      "component": "EAFBrighteningUnstressed"
+    },
+    {
+      "component": "EAFBrightening"
+    },
+    {
+      "component": "EAFBrighteningLongFinal"
+    },
+    {
+      "component": "OEBreaking"
+    },
+    {
+      "component": "OEVelarFricativePalatalization"
+    },
+    {
+      "component": "OEARestoration"
+    },
+    {
+      "component": "OEHeavySyllableNasalApocope"
+    },
+    {
+      "component": "OESecondaryNasalization"
+    },
+    {
+      "component": "SieversLawSyncope"
+    },
+    {
+      "component": "OESkPalatalization"
+    },
+    {
+      "component": "OEVelarPalatalization"
+    },
+    {
+      "component": "OEPrefixAReduction"
+    },
+    {
+      "component": "OEPostVelarWLoss"
+    },
+    {
+      "component": "OEWsPalatalDiphthongization"
+    },
+    {
+      "component": "OEIUmlaut"
+    },
+    {
+      "component": "OEWLossBeforeI"
+    },
+    {
+      "component": "OELatePalatalDiphthong"
+    },
+    {
+      "component": "OEJClusterCoalescence"
+    },
+    {
+      "component": "OEBackMutation"
+    },
+    {
+      "component": "OEWsPalatalUmlaut"
+    },
+    {
+      "component": "OEWeakTailNasalLoss"
+    },
+    {
+      "component": "OEWeightMarkers"
+    },
+    {
+      "component": "GPNHS"
+    },
+    {
+      "component": "PGmcBAllophony"
+    },
+    {
+      "component": "OEMedLongShort"
+    },
+    {
+      "component": "OEHighVowelApocope"
+    },
+    {
+      "component": "OEMedialSyncope"
+    },
+    {
+      "component": "OEHighLinkSyncope"
+    },
+    {
+      "component": "OELAdjacentSyncope"
+    },
+    {
+      "component": "OEHighStressDecode"
+    },
+    {
+      "component": "OEDentalAssimilation"
+    },
+    {
+      "component": "OEPreconsonantalDegemination"
+    },
+    {
+      "component": "OEEarlyOShortening"
+    },
+    {
+      "component": "OEUnstressedFrontingEarly"
+    },
+    {
+      "component": "OELateOShortening"
+    },
+    {
+      "component": "OEMedUnstressedORaising"
+    },
+    {
+      "component": "OEFinalUnstressedOLowering"
+    },
+    {
+      "component": "OEUnstressedLongVowelShortening"
+    },
+    {
+      "component": "OEUnstressedAEMerger"
+    },
+    {
+      "component": "OEMedUnstressedILowering1"
+    },
+    {
+      "component": "OEMedUnstressedILowering"
+    },
+    {
+      "component": "OEMedUnstressedULowering"
+    },
+    {
+      "component": "OEPrefixIReduction"
+    },
+    {
+      "component": "OEWeakTailReduction"
+    },
+    {
+      "component": "OEJLossAfterHeavy"
+    },
+    {
+      "component": "OEFinalGeminateSimplification"
+    },
+    {
+      "component": "OEJStrengtheningAfterFrontDiphthong"
+    },
+    {
+      "component": "OEIntervocalicJVocalization"
+    },
+    {
+      "component": "OEUnstressedEIContraction"
+    },
+    {
+      "component": "OEWeightCleanup"
+    },
+    {
+      "component": "OEHLoss"
+    },
+    {
+      "component": "OEContraction"
+    },
+    {
+      "component": "OERMetathesis"
+    },
+    {
+      "component": "OEEpentheticVowel"
+    },
+    {
+      "component": "OELateUnstressedAgSuffix"
+    },
+    {
+      "component": "OEPalatalFricativeMerger"
+    },
+    {
+      "component": "OECjCleanup"
+    },
+    {
+      "component": "OEXsMerge"
+    },
+    {
+      "component": "OldEnglishOrthography"
+    },
+    {
+      "component": "OEWsPalatalGlide"
+    },
+    {
+      "component": "OldEnglishRemoveStars"
+    },
+    {
+      "component": "OldEnglishSurface"
+    }
+  ]
+}

@@ -127,8 +127,8 @@ print(json.dumps({r["row_id"]: {"concept": r["concept"],
         self.assertEqual(medial, EXPECTED_FIRING_CONCEPTS,
                          f"Quantitative medial census changed: {sorted(fired)}")
         concept, before, after = fired[self.by_concept["filth"]["row_id"]]
-        self.assertEqual(before, ["*f*ȳ*l*i*θ*ǭ"])
-        self.assertEqual(after, ["*f*ȳ*l*θ*ǭ"])
+        self.assertEqual(before, ["*f*ȳ*l*i*θ*ǣ"])
+        self.assertEqual(after, ["*f*ȳ*l*θ*ǣ"])
 
     @pytest.mark.runtime
     def test_negative_controls_pass_the_stage_untouched(self):

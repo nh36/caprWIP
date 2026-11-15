@@ -173,6 +173,193 @@ segmental reconstruction and of lexical accent
 [@RingeTaylor2014, pp. 41--42, 55, 57--58, 65--66, 171--175;
 @Fulk2018, p. 117].
 
+## Weak paradigms after early apocope {#weak-n-paradigms-after-apocope}
+
+Early apocope exposes a class-wide question which a nominative citation
+form alone cannot answer. Ringe reconstructs feminine \emph{*tungōniz}
+'tongues' for the nominative plural, with the same ending in the genitive
+singular, beside accusative singular \emph{*tungōnų}, dative singular
+\emph{*tungōni} and dative plural \emph{*tungōmaz}
+[@Ringe2017, pp. 312--313]. After loss of final \emph{*i} and \emph{*z},
+the resulting final \emph{*n} is secondary. It must not be consumed as
+though it were the old nominative nasal lost in
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss). The survival of a
+secondary nasal and the subsequent vowel outcome are separate questions.
+
+The daughter paradigms disagree in ways that prevent simply reading
+Old English \emph{-an} back into every inherited cell. Ringe and Taylor
+give the following contrasts [@RingeTaylor2014, pp. 117--118, 163--164].
+
+| Cell | Old English | Old Frisian | Old Saxon | Old High German |
+|---|---|---|---|---|
+| Masculine nominative singular | *nama* 'name' | *noma* | *namo* | *namo* |
+| Masculine accusative singular | *naman* | *noma* | *namon*, *-an* | *namon*, *-un* |
+| Feminine nominative singular | *tunge* 'tongue' | *tunge* | *tunga* | *zunga* |
+| Feminine accusative singular | *tungan* | *tunga* | *tungun* | *zungūn* |
+| Feminine nominative–accusative plural | *tungan* | *tunga* | *tungun* | *zungūn* |
+| Feminine dative plural | *tungum* | *tungum* | *tungon* | *zungōm* |
+
+The Old English masculine *nama : naman* paradigm is not an inherited
+Proto-Germanic masculine paradigm: Ringe's earlier 'name' paradigm is
+neuter, \emph{*namô : *naminiz : *namini}. Its gender history must be
+distinguished from the genuinely inherited masculine \emph{*gumô}
+'man' class [@Ringe2017, pp. 312--313; @RingeTaylor2014, p. 117].
+Likewise, Northumbrian *foldu* and *eorðu* 'earth' are accusative-singular
+relics, not nominatives or evidence that every weak cell ended in
+\emph{-u} [@RingeTaylor2014, p. 164;
+@HoggGrammar2011, pp. 65, 298--299, §§3.34, 7.98].
+
+Three accounts remain distinguishable. First, inherited
+\emph{*-ōn > *-ūn}, followed by redistribution of masculine
+\emph{*-an}, can explain the northern feminine endings; the relics
+then preserve part of the unlevelled development. Second, the same
+raising account can start with an earlier replacement of masculine
+genitive–dative \emph{*-ini} by \emph{*-ani}, changing the basis for
+generalization. Third, northern \emph{*-ōn > -an} can be regular, with
+feminine endings subsequently spreading into the other genders.
+Ringe and Taylor explicitly leave the complete solution open
+[@RingeTaylor2014, p. 164]. Fulk's raising discussion and Hogg's
+account connect the accusatives and dative plurals with conditioned
+raising; Fulk describes northern masculine conformity in the feminine,
+without declaring the competing reconstructions settled
+[@Fulk2018, pp. 88--90, 171--172, §§5.5--5.6, 7.32--7.33;
+@HoggGrammar2011, pp. 64--65, §§3.32--3.34].
+
+The northern relics constrain raising before the later loss of final
+\emph{*n}, not the date of the old loss in
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss). Hogg identifies
+*foldu* 'earth' in Cædmon's Hymn and *eorðu* 'earth' in the Leiden Riddle as early
+Northumbrian accusatives; the same texts also retain final \emph{-n}
+[@HoggGrammar2011, pp. 298--299, §§7.98--7.100].
+Their \emph{-u} supports a raising history, but does not choose the
+quantity and nasalization history of the secondary-nasal plural.
+
+CAPR adopts the third, regular northern ending history for the selected
+Flask nominative plural, while retaining the other accounts as
+historical alternatives. Hill argues specifically for common West
+Germanic raising before tautosyllabic \emph{n}, with redistribution
+in English and Frisian; his later North Germanic raising is a separate
+development [@Hill2010, pp. 433--443]. The northern following-\emph{u}
+accusatives do not independently date raising in every newly final
+\emph{*-ōn} cell.
+
+The adopted derivation retains \emph{*ō} in nominative plural
+\emph{*fláskōniz} and dative singular \emph{*fláskōni}. Old n-loss
+precedes apocope, so the newly exposed final nasal survives. Root
+fronting and restoration give \emph{*flæskōn > *flaskōn};
+[SC069 OEEarlyOShortening](#rule-OEEarlyOShortening) now applies before
+\emph{m} and nonfinal \emph{n}, not before final \emph{n}. The long
+vowel therefore survives unstressed fronting and follows the existing
+late route, \emph{*flaskōn > *flaskon > *flaskan}, under
+[SC071 OELateOShortening](#rule-OELateOShortening) and
+[SC100 OEFinalUnstressedOLowering](#rule-OEFinalUnstressedOLowering).
+Both attested cells give *flascan* through normal entry; the nominative
+plural is selected, not an identically spelled singular substituted
+for it [@Hecht1900, C p. 141, line 27; p. 142, lines 2--4].
+The parallel plural gives *tungan*, while inherited nominative
+singular \emph{*túngōn} still gives *tunge*.
+
+Campbell and Hogg support late shortening of retained long vowels;
+Stausland Johnsen supplies the late medial/final split
+[@Campbell1959, pp. 147--148, §355;
+@HoggGrammar2011, pp. 227--228, §§6.27--6.28;
+@StauslandJohnsen2015, pp. 28--31]. His corpus test concerns West
+Saxon class-II verbs, not a separately demonstrated history of every
+noun ending [@StauslandJohnsen2015, p. 36]. Retention of \emph{*ō}
+in these secondary-final-n cells is the adopted synthesis of these
+analyses and Ringe and Taylor's third account, not a new inference
+from output agreement alone.
+
+Earlier experiments distinguished other possible mechanisms. If inherited \emph{*ō}
+remains before the retained nasal, it can feed
+[SC046 OEARestoration](#rule-OEARestoration). If it then shortens only
+after [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization),
+the newly short vowel can still front under
+[SC070 OEUnstressedFrontingEarly](#rule-OEUnstressedFrontingEarly),
+giving predicted \emph{-en}. Earlier shortening before nasalization,
+or an independently justified earlier unrounding, offers a different
+route to \emph{-an}. Both routes derive *flascan* 'flasks' and
+*tungan* from the full inherited inputs through an experimental
+normal-entry relation admitting the independently reconstructed weak
+endings. A conditional ashes plural gives *ascan* 'ashes'; it is not
+an additional case-secure textual witness. Protecting the secondary
+nasal without either vowel change under the former unrestricted early shortening instead gave predicted
+[flascen]{.pred}, [tungen]{.pred} and [ascen]{.pred}.
+These are alternative histories to evaluate against the entire
+paradigm, not grammatical conditions on a sound law. They differ before
+another vowel: early shortening of accusative \emph{*tungōnų} feeds
+syncope and gives predicted [tungn]{.pred}, whereas final-only unrounding
+leaves predicted [tungunu]{.pred}. Neither result completes the raising
+and ending history. In particular,
+the inherited dative-plural route must also account for attested
+*tungum*, rather than predicted [tungem]{.pred}. The adopted admission and late-final-n route remove the input-coverage
+and selected-plural obstacles, not these accusative and pre-\emph{m}
+raising problems. They do not purport to regularize the whole paradigm.
+
+### The genitive plural is a separate test
+
+The genitive plural does not have the nominative plural's
+\emph{*-ōniz}. Ringe's inherited feminine *tunge* 'tongue' class has
+the stem \emph{*tungōn-}, whereas inherited masculine *guma* 'man'
+has \emph{*guman-}; both take a nasal trimoric genitive-plural final
+[@Ringe2017, pp. 312--313]. After denasalization, Ringe and Taylor
+give \emph{*tungōnō} beside masculine \emph{*gumanō}.
+They explicitly explain the feminine genitive's stem syllable by
+levelling from the masculine [@RingeTaylor2014, pp. 59, 153--154].
+The contextual *flascena* 'flasks', with parallel *flaxena*, in
+Gregory's *Dialogues* is therefore a useful independent cell, not a
+genitive-singular substitute for the nominative [@Hecht1900, p. 141,
+lines 28--29].
+
+The comparison distinguishes the medial stem vowel from the final
+vowel's quantity. Quantity-preserving diagnostic histories give
+feminine [flascona]{.pred} and [tungona]{.pred}, but masculine-source
+*flascena* 'flasks' and *tungena* 'tongues', alongside masculine
+*gumena* 'men'. These are named-boundary diagnostics: the full
+inherited nasal-trimoric forms are not admitted by the normal input
+relation. More importantly, the apparent masculine-source success
+depends on the diagnostic carrier escaping ordinary syncope's
+immediately following-vowel class. Recognizing that carrier instead
+gives predicted [flascna]{.pred}, *tungna* 'tongues' and
+[gumna]{.pred}, without changing any selected-corpus output.
+The expected medial e cannot therefore be credited to a completed
+regular inherited derivation simply because the first replay fits.
+
+This distinction agrees with the need to examine the ending's history
+in layers. Ringe and Taylor cite early West Saxon *tungna* 'tongues'
+and poetic syncopated forms, then restored \emph{-ana} and its later
+development to \emph{-ena} [@RingeTaylor2014, pp. 153--154].
+Campbell places \emph{-ena} beside older \emph{-ana} in a wider
+medial-vowel process [@Campbell1959, pp. 158--159, §385].
+Supplying restored \emph{-ana} before syncope still loses its vowel;
+supplying it after syncope gives *flascena* 'flasks', *tungena*
+'tongues' and *gumena* 'men' in the downstream experiment.
+That result explicitly presupposes morphological restoration.
+It does not date the later vowel process, justify a new transponent,
+or prove that the nominative's root vowel was levelled. The cell
+supports a class-wide ending comparison while leaving the separate
+root and consonant histories open.
+
+Root-vowel levelling is a further, not identical, issue. Campbell and
+Luick derive singular *flasce* 'flask' from the oblique or plural
+root, as with *asce* 'ash' beside *ascan*
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+Wright and Wright instead motivate a retention formulation before
+an originally back vowel, including \emph{*sk} and \emph{*st}
+[@Wright1908, pp. 37--38, §57]. Their account does not independently
+establish a narrow \emph{*sk}-only condition or date the following-vowel
+clause of [SC051 OESkPalatalization](#rule-OESkPalatalization) before
+final \emph{*ā}-fronting. Versloot motivates comparing restricted
+fronting, but not that particular combination of conditions
+[@Versloot2025, pp. 122--124]. The lexeme discussion therefore compares
+regular alternatives with the explicit levelling account, without
+treating either the existing output or the formation label as proof.
+CAPR declines to adopt retention; the historical possibility remains
+open. The working singular account is root-vowel extension from the
+inflected paradigm, as explained under
+[SC043 EAFBrightening](#rule-EAFBrightening). That decision does not
+settle which ending history produced the plural.
+
 ## Alternative cuts and their tree consequences
 
 A more expansive common-stem reconstruction is possible only with different

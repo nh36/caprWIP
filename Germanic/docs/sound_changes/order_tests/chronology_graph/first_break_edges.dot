@@ -96,7 +96,8 @@ digraph first_break_chronology {
   "SC020" -> "SC040" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC022" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC022" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC023" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
+  "SC023" -> "PWGmcChanges" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
+  "SC023" -> "SC006" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC023" -> "SC047" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC024" -> "EarlyEnglishLineChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC024" -> "SC025" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
@@ -188,7 +189,7 @@ digraph first_break_chronology {
   "SC067" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC068" -> "SC066" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC068" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC069" -> "SC023" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC069" -> "SC023" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC069" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC070" -> "SC052" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC070" -> "SC071" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];

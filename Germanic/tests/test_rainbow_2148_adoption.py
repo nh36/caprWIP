@@ -16,7 +16,10 @@ sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from capr_runtime import run_in_runner
 from executable_facts import parse_defines
 from historical_sc035 import historical_runtime
-from test_lexical_editorial_publication import assert_nightmare_index_delta
+from test_lexical_editorial_publication import (
+    assert_nightmare_index_delta, assert_final_nasal_index_delta,
+    assert_flask_nompl_index_delta,
+)
 
 # The adoption commit: replaying its frozen capture must pin both the adopted
 # FST and the 389-row corpus of that moment (later admissions are separate).
@@ -122,7 +125,7 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
         rows = list(csv.DictReader(handle, delimiter="\t"))
     assert len(rows) == 177
     regular = [row for row in rows if row["derivation_class"] == "regular"]
-    assert len(regular) == 97
+    assert len(regular) == 98
     rainbow = [row for row in regular if row["row_id"] == "2148"]
     assert len(rainbow) == 1
     assert (rainbow[0]["proto"], rainbow[0]["protoform"],
@@ -251,6 +254,12 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
                  or "2141-nightmare-mare.model.md" in row["source_ref"]]
     assert_nightmare_index_delta(nightmare)
     added = [row for row in added if row not in nightmare]
+    final_nasal = [row for row in added if row["note"].startswith("Final nasal candidate:")]
+    assert_final_nasal_index_delta(final_nasal)
+    added = [row for row in added if row not in final_nasal]
+    flask = [row for row in added if row["note"].startswith("Flask nominative-plural adoption:")]
+    assert_flask_nompl_index_delta(flask)
+    added = [row for row in added if row not in flask]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

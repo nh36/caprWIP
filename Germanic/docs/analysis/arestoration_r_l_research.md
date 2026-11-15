@@ -6,6 +6,15 @@ the nightmare example are superseded by the
 The older tables and quotations below are retained as the research record,
 not authority for the current target.
 
+14 November 2026 qualification, reference
+`2805d98ae5ecf7df33c65dc0caf7d9df2ed22077`: the flask matches below belong
+to the older cascade that retained its final nasal vowel through restoration.
+The reference candidate instead gives `*fláskōn → flæsċe`, against selected
+`flasce`. The discussion of liquids remains historical research; neither the
+old executable match nor the weak-formation label proves the history of the
+root vowel. The [flask audit](../sound_changes/audits/flask-inherited-paradigm-research.md)
+compares regular and analogical accounts without changing that selection.
+
 **Status:** research note (no FST or TSV modifications made).
 **Scope:** Diagnose why the current FST blocks A-restoration before single *r* and *l*, document the canonical conditioning environment from the philological literature, and propose a single, surgical change to `OEARestorationIntervening` in `Germanic/fsts/germanic.txt`.
 **Date:** generated 2026-03 from local `docs/references/`.

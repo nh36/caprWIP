@@ -26,7 +26,7 @@
 | 2007 | fell | fell | regular | yes | NOTE |
 | 2008 | fern | fearn | regular | yes | NOTE |
 | 2009 | field | feld | regular | yes | NOTE |
-| 2016 | flask | flasce | early_analogy | no | DERIVATION_CLASS=early_analogy |
+| 2016 | flask | flascan | regular | yes | NOTE |
 | 2022 | fly | flēogan | regular | yes | NOTE |
 | 2027 | follow | fylġan | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2028 | forlorn | lēosan | regular | yes | NOTE |

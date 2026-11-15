@@ -5,6 +5,15 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The [integrated mære and Flask production state](sound_changes/audits/maere-flask-integration.md)
+combines the source-backed final-nasal merger with the user-authorized
+[Flask nominative-plural adoption](sound_changes/audits/sc069-adjudication.md).
+The pretonic annotation now survives until guarded h-loss consumes it,
+and every migration link must preserve output cardinality.
+Hill's alternative and the Boutkan/Anglo-Frisian ending follow-up remain
+explicit. Integration certification is separate from the earlier
+experimental verdicts; SC044 is a separate, unstarted assignment.
+
 The unified Fulk--Goering account, early final-n loss, corrected w-loss
 and fee transponent were certified at
 [99b1d2e9](https://github.com/nh36/caprWIP/commit/99b1d2e919a191910e8e6df5ef4b138e9bad4de1#commitcomment-208866282).
@@ -65,6 +74,15 @@ records the bounded quantity repair and a precisely deferred nasal-interaction
 correction; it does not authorize proceeding to SC044. The separate Barrack crosswalk SC067 then SC080 stays paused,
 retaining WG117, 300b and440b as prospective omissions or discrepancies.
 Neither that programme nor the qualified lexical residues starts automatically.
+
+The [final-nasal analysis](sound_changes/audits/sc042-final-nasal-candidate.md)
+reproduces Model B from the corrected lexical baseline and isolates the
+ending merger, following-vowel stop conditioning and prosodically bounded
+h-loss. Its preserved two-output migration resolved the selected mære
+calculation while disclosing the then-selected Flask singular mismatch.
+The subsequent Flask migration selects attested nominative plural
+flascan without rewriting that history or its frozen baselines.
+SC044 and the separate SC067 then SC080 programme remain queued.
 
 The separate [clay/fringe glossary-stage controls](sound_changes/audits/clay-fringe-stage-witnesses.md)
 clarify the reader's h-loss, hiatus and merger evidence without admitting

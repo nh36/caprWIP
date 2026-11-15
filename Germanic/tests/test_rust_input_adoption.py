@@ -155,7 +155,8 @@ class RustInputAdoptionTests(unittest.TestCase):
         # The independent rainbow adoption adds one live SC017 application;
         # Soul, spindle and filth accusatives no longer fire SC019; hammer fires SC020.
         # Little and livestock add final-ō raising; dart adds bare-a loss.
-        for identifier, count in (("SC017", "40"), ("SC019", "28"), ("SC020", "116")):
+        # Flask's selected plural adds one final-z deletion.
+        for identifier, count in (("SC017", "40"), ("SC019", "28"), ("SC020", "117")):
             row = next(row for row in census if row["sc_id"] == identifier)
             self.assertEqual(row["corpus_firing_count"], count)
         ledger = known.load_ledger(ROOT / "Germanic/data/oe_known_problems.tsv")
@@ -171,9 +172,10 @@ class RustInputAdoptionTests(unittest.TestCase):
         nightmare = next(row for row in live["records"] if row["row_id"] == "2141")
         self.assertEqual(
             (nightmare["proto"], nightmare["counterpart"], nightmare["outputs"], nightmare["match"]),
-            ("*márōn", "mære", "mare", "0"))
+            ("*márōn", "mære", "mære", "1"))
         report = known.render_report(known.baseline_mismatches(live["records"]), ledger)
-        self.assertIn("Total mismatches:         9", report)
+        self.assertIn("Total mismatches:         8", report)
+        self.assertNotIn("*fláskōniz", report)
         self.assertEqual(
             (ROOT / "Germanic/docs/debug_snapshots/oe_known_problems_report.txt").read_text(), report)
 

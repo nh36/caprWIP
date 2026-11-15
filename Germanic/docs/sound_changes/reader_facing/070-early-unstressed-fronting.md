@@ -30,3 +30,16 @@ The relation to [SC071 OELateOShortening](#rule-OELateOShortening) is local.
 The earlier boundary at
 [SC052 OEVelarPalatalization](#rule-OEVelarPalatalization) places fronting after
 the older palatal developments.
+
+Whether a weak plural reaches this rule with oral \emph{*a} or
+nasalized \emph{*ą} depends on the earlier ending history. The
+[weak-paradigm comparison](#weak-n-paradigms-after-apocope) explains
+why a protected secondary nasal with the former unrestricted early
+shortening gave predicted
+[flascen]{.pred}, while experimental shortening-before-nasalization also gave
+*flascan* 'flasks'. The adopted route instead retains long
+\emph{*ō} through this rule and reaches \emph{-an} by late shortening
+and lowering. The difference tests the source of the vowel presented
+to fronting; it does not justify conditioning the
+sound law by declension [@RingeTaylor2014, pp. 163--164;
+@Fulk2018, pp. 171--172, §§7.32--7.33].

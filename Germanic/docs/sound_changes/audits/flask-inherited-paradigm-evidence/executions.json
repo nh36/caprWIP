@@ -1,0 +1,247 @@
+[
+  {
+    "experiment_id": "flask-raw-2805d98a-v2",
+    "reference_sha": "2805d98ae5ecf7df33c65dc0caf7d9df2ed22077",
+    "outcome": "passed",
+    "completed_at": "2026-11-14T00:07:02Z",
+    "receipt_sha256": "f9c0f3c7e7ffc01f5331195c03e6d6743f77bb735e137826cbb22f04510379de",
+    "completion_sha256": "f413d208746b46664e11ded498ee97c5f5afaaee3b15a240aef389032ad6e465",
+    "inputs": {
+      "source": {
+        "sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539",
+        "snapshot_name": "source.txt"
+      },
+      "corpus": {
+        "sha256": "8b300c3116465cda233e964c8e623f79edbf210a2d3f7f7f073a1542178f965f",
+        "snapshot_name": "corpus.tsv"
+      },
+      "contexts": {
+        "sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+        "snapshot_name": "contexts.tsv"
+      },
+      "payload": {
+        "sha256": "902335479ede0bd168f5934b475374aba1bc38b4833a2bc7ec59c5b66031c987",
+        "snapshot_name": "payload.json"
+      },
+      "recipe": {
+        "sha256": "6c82c4a2ec3e4988c76d68a54e7ae2d0692f964ab7b241acc0d09214abbca3be",
+        "snapshot_name": "recipe.json"
+      },
+      "driver": {
+        "sha256": "9d45621b304d160101b53764391b7ffee029d998c9ae09a54efddb787c059480",
+        "snapshot_name": "driver.py"
+      },
+      "pipeline": {
+        "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+        "snapshot_name": "pipeline.py"
+      },
+      "compiler": {
+        "sha256": "a379a3e8edfab3b6b66f8e88d2a7c78c86d9c610b5d936d172d0aac38dd7705f",
+        "snapshot_name": "compiler.py"
+      }
+    },
+    "commands": [
+      {
+        "label": "isolated-compile",
+        "started_at": "2026-11-13T23:57:17Z",
+        "finished_at": "2026-11-14T00:05:29Z",
+        "returncode": 0,
+        "source_changed": false,
+        "stdout_sha256": "ad715de9c1e578f01b53d4b59607875c39eec43136cffdf64086189311a736b5",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "flask-2805-raw-assay",
+        "started_at": "2026-11-14T00:05:29Z",
+        "finished_at": "2026-11-14T00:07:02Z",
+        "returncode": 0,
+        "source_changed": false,
+        "stdout_sha256": "549f42f01355b212a4b2167654d52be8e8edfb4a8435f5b3965f0cfdaa28dd7c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "reproduction_driver": "raw_experiment.py",
+    "reproduction_driver_sha256": "f0640c6f57e2459fe9e902f1784f57c17925883f8f16cdb5d717d8b371e824fa"
+  },
+  {
+    "experiment_id": "flask-secondary-n-2805d98a-v1",
+    "reference_sha": "2805d98ae5ecf7df33c65dc0caf7d9df2ed22077",
+    "outcome": "passed",
+    "completed_at": "2026-11-14T00:12:47Z",
+    "receipt_sha256": "4a23537237c796417c6948da9b8d65d5add611321f1db3cf8a1f5ba388cc7ca2",
+    "completion_sha256": "9392127c002c6366baf37a82d2338b39da886d78381929d680ddb9611f435544",
+    "inputs": {
+      "source": {
+        "sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539",
+        "snapshot_name": "source.txt"
+      },
+      "corpus": {
+        "sha256": "8b300c3116465cda233e964c8e623f79edbf210a2d3f7f7f073a1542178f965f",
+        "snapshot_name": "corpus.tsv"
+      },
+      "contexts": {
+        "sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+        "snapshot_name": "contexts.tsv"
+      },
+      "payload": {
+        "sha256": "ce4fc7b678faaddf0b5fda3e7b16df3f5ac9145259018934b63f26bac2372c37",
+        "snapshot_name": "payload.json"
+      },
+      "recipe": {
+        "sha256": "d1d7d13a94e380353a8de0ea2541c1c205e46532de92b04568e79cf6b2378d62",
+        "snapshot_name": "recipe.json"
+      },
+      "driver": {
+        "sha256": "e85489bbb64e26e1c76c314fefcf2ce0934f1d8acf056bcaf788826424deb3ba",
+        "snapshot_name": "driver.py"
+      },
+      "pipeline": {
+        "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+        "snapshot_name": "pipeline.py"
+      },
+      "compiler": {
+        "sha256": "a379a3e8edfab3b6b66f8e88d2a7c78c86d9c610b5d936d172d0aac38dd7705f",
+        "snapshot_name": "compiler.py"
+      }
+    },
+    "commands": [
+      {
+        "label": "isolated-compile",
+        "started_at": "2026-11-14T00:05:25Z",
+        "finished_at": "2026-11-14T00:12:14Z",
+        "returncode": 0,
+        "source_changed": false,
+        "stdout_sha256": "381198cfae0609c3753ca2d7e8db9688427b2cbe8c45cdf01dd8cb107e1579b0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "flask-2805-raw-assay",
+        "started_at": "2026-11-14T00:12:14Z",
+        "finished_at": "2026-11-14T00:12:47Z",
+        "returncode": 0,
+        "source_changed": false,
+        "stdout_sha256": "f209a92bcfb30b97614da27e524f87a917abd6ba80d1dbfa5c4e18c673165eb6",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "reproduction_driver": "secondary_experiment.py",
+    "reproduction_driver_sha256": "7386421c403f36d6cb074effa95cee9e37b1e9ed9b27b0c2470c8fbae87e9966"
+  },
+  {
+    "experiment_id": "flask-front-controls-2805d98a-v3",
+    "reference_sha": "2805d98ae5ecf7df33c65dc0caf7d9df2ed22077",
+    "outcome": "passed",
+    "completed_at": "2026-11-14T00:09:22Z",
+    "receipt_sha256": "6dbaa826a9931434e32cf351a9645b5b19af47bacad4ecb46906771fbdae7c40",
+    "completion_sha256": "69c96269b9fc2c6a09ffc50aa229f948499c2bc052fc9941cdc82e9816fded3f",
+    "inputs": {
+      "driver": {
+        "sha256": "ee882c40c90929fbb2723b4e8323337d53cf9e77e8c3a8e9b3e03b751b987cfa",
+        "snapshot_name": "driver.py"
+      },
+      "compiled": {
+        "sha256": "c1be304d3a59d35b79ec77eae344753c1c25bf4924c290217b9c36e0c67ba63f",
+        "snapshot_name": "compiled.json"
+      },
+      "payload": {
+        "sha256": "902335479ede0bd168f5934b475374aba1bc38b4833a2bc7ec59c5b66031c987",
+        "snapshot_name": "payload.json"
+      },
+      "source": {
+        "sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539",
+        "snapshot_name": "source.txt"
+      }
+    },
+    "commands": [
+      {
+        "label": "flask-front-controls",
+        "started_at": "2026-11-14T00:09:21Z",
+        "finished_at": "2026-11-14T00:09:21Z",
+        "returncode": 0,
+        "source_changed": false,
+        "stdout_sha256": "0a5bba43ae2b419f3bfeb26c7b2d09f6cd85facf7da48660e12b39f025c2ddbb",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "reproduction_driver": "front_controls.py",
+    "reproduction_driver_sha256": "ee882c40c90929fbb2723b4e8323337d53cf9e77e8c3a8e9b3e03b751b987cfa"
+  },
+  {
+    "experiment_id": "flask-shortening-order-2805d98a-v1",
+    "reference_sha": "2805d98ae5ecf7df33c65dc0caf7d9df2ed22077",
+    "outcome": "passed",
+    "completed_at": "2026-11-14T00:14:06Z",
+    "receipt_sha256": "4362afe2141229f1afe68b4981cbedb665455babf517e1517ef79ce0c9f92407",
+    "completion_sha256": "2b5087e8d3e540577000b78dbaf5e96b66424c86faca6d569e84bf885902c925",
+    "inputs": {
+      "driver": {
+        "sha256": "01a26fbc714673f264dd8846e0756b837ee4a709c39e777102bc330ed0a97b51",
+        "snapshot_name": "driver.py"
+      },
+      "compiled": {
+        "sha256": "c1be304d3a59d35b79ec77eae344753c1c25bf4924c290217b9c36e0c67ba63f",
+        "snapshot_name": "compiled.json"
+      },
+      "payload": {
+        "sha256": "902335479ede0bd168f5934b475374aba1bc38b4833a2bc7ec59c5b66031c987",
+        "snapshot_name": "payload.json"
+      },
+      "source": {
+        "sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539",
+        "snapshot_name": "source.txt"
+      }
+    },
+    "commands": [
+      {
+        "label": "flask-shortening-order",
+        "started_at": "2026-11-14T00:13:48Z",
+        "finished_at": "2026-11-14T00:14:06Z",
+        "returncode": 0,
+        "source_changed": false,
+        "stdout_sha256": "68e58386385da95b6f4512f8596668c0decf4212bf45036d098a78387150f3ce",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "reproduction_driver": "shortening_order.py",
+    "reproduction_driver_sha256": "01a26fbc714673f264dd8846e0756b837ee4a709c39e777102bc330ed0a97b51"
+  },
+  {
+    "experiment_id": "flask-following-high-2805d98a-v1",
+    "reference_sha": "2805d98ae5ecf7df33c65dc0caf7d9df2ed22077",
+    "outcome": "passed",
+    "completed_at": "2026-11-14T00:15:47Z",
+    "receipt_sha256": "dbf984892bdcf9764101238a8e1ed7942c5e30e66fc54e777db483eef56b1a95",
+    "completion_sha256": "a0aa7d432ea537fc7249fc4d28af34db2a6938ae99567df14c53035cb2ec4859",
+    "inputs": {
+      "driver": {
+        "sha256": "008da0348d85e7a3ff843be4390c1187426fff1f591e3da3a89a14f577065b56",
+        "snapshot_name": "driver.py"
+      },
+      "compiled": {
+        "sha256": "c1be304d3a59d35b79ec77eae344753c1c25bf4924c290217b9c36e0c67ba63f",
+        "snapshot_name": "compiled.json"
+      },
+      "payload": {
+        "sha256": "51515ab0395ad1cbe4f323b2eb53bd46e5a5491e96c3a6bbb8e35cdd9a180739",
+        "snapshot_name": "payload.json"
+      },
+      "source": {
+        "sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539",
+        "snapshot_name": "source.txt"
+      }
+    },
+    "commands": [
+      {
+        "label": "flask-shortening-order",
+        "started_at": "2026-11-14T00:15:36Z",
+        "finished_at": "2026-11-14T00:15:47Z",
+        "returncode": 0,
+        "source_changed": false,
+        "stdout_sha256": "428ef13e72f819cf2c1d2eae4c1c0851e0bae286a8e09597d7bd855777a94d02",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "reproduction_driver": "following_high.py",
+    "reproduction_driver_sha256": "008da0348d85e7a3ff843be4390c1187426fff1f591e3da3a89a14f577065b56"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "reference_sha": "77f314bf85035c23706b6b09b3a1855aa23c0620",
+  "experiment_id": "sc051-guard-77f314bf-v2",
+  "receipt_sha256": "875051b0a21f717435987ee81ac6a74e3ff82177dd221e28c2751d5a6454e620",
+  "completion_sha256": "d0a610ac0ad2eaa51d3f7d9ac78a0b06207ed6e8a4a9503a1eedfbe599449fbe",
+  "completed_at": "2026-11-14T10:08:55Z",
+  "outcome": "passed",
+  "execution_method": "Every raw input traverses all compiled stage relations; identity is checked against the canonical whole-cascade bin. Variant whole-root bins are not claimed.",
+  "superseded_attempt": {
+    "experiment_id": "sc051-guard-77f314bf-v1",
+    "outcome": "failed",
+    "reason": "Compiling seven whole-root definitions exceeded the compiler's existing 600-second limit.",
+    "completion_sha256": "eaf37c34c996c2ef82168269f5a3e811ac1a52cdd74610221ee05ee9e4fef2a1"
+  },
+  "inputs": {
+    "source": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/sc051-guard-77f314bf/reference.txt",
+      "snapshot_name": "source.txt",
+      "sha256": "6b019ee2df2db8238b1ee552b249f356aec36b6c68eb37bb1a9c82ccaa272539"
+    },
+    "driver": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/flask-research/sc051_guard.py",
+      "snapshot_name": "driver.py",
+      "sha256": "2c07f505d9d684d29b2dc5a2014f217f4c8f6e497b1a48edfd72455d88c7aeae"
+    },
+    "recipe": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/sc051-guard-77f314bf/recipe.json",
+      "snapshot_name": "recipe.json",
+      "sha256": "e9fc9a1c96bf44603a10f940d79f64d2b004e730b37ac3ec2faa3e09c03bcaa8"
+    },
+    "payload": {
+      "original_path": "/Users/nathanhill/Code/capr/.capr-work/sc051-guard-77f314bf/payload.json",
+      "snapshot_name": "payload.json",
+      "sha256": "027b048dfd5a64db8d40339d9c55fb39b60ec5ff8c0ecf5be1b64bbdebc89f10"
+    },
+    "corpus": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/data/germanic-aligned-final.tsv",
+      "snapshot_name": "corpus.tsv",
+      "sha256": "8b300c3116465cda233e964c8e623f79edbf210a2d3f7f7f073a1542178f965f"
+    },
+    "contexts": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/data/entry_context_metadata.tsv",
+      "snapshot_name": "contexts.tsv",
+      "sha256": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914"
+    },
+    "pipeline": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/oe_pipeline.py",
+      "snapshot_name": "pipeline.py",
+      "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+    },
+    "compiler": {
+      "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/anglo_frisian_experiments.py",
+      "snapshot_name": "compiler.py",
+      "sha256": "a379a3e8edfab3b6b66f8e88d2a7c78c86d9c610b5d936d172d0aac38dd7705f"
+    }
+  },
+  "commands": [
+    {
+      "label": "isolated-compile",
+      "started_at": "2026-11-14T10:03:53Z",
+      "finished_at": "2026-11-14T10:08:29Z",
+      "returncode": 0,
+      "source_changed": false,
+      "stdout_sha256": "28132f0197b8351fa61e6cd58cccb55b2fd50020da6002b6fdf68ce1423d3c98",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "sc051-guard-seven-variants",
+      "started_at": "2026-11-14T10:08:29Z",
+      "finished_at": "2026-11-14T10:08:55Z",
+      "returncode": 0,
+      "source_changed": false,
+      "stdout_sha256": "5c0860371f4fe2cc2179df9b171c4a7d53b14b1716bb3dd6ec5bb20c63bfbcf0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_images": [
+    {
+      "path": ".capr-work/flask-research/campbell-195.png",
+      "sha256": "c175990fb2777f6cdb36fdfa218167ca081ad51ad25ff0ed21e2418ddfac10a3"
+    },
+    {
+      "path": ".capr-work/flask-research/campbell-196.png",
+      "sha256": "b6d02b44402e0cd724b9137e678cd7c54d9818bbc9136a36c19e9b820525410f"
+    },
+    {
+      "path": ".capr-work/flask-research/rt-204.png",
+      "sha256": "a68706a69a6387bb0bbafbd4dd6dd0d45f9c58891c109b2195afda7089aab06c"
+    }
+  ]
+}

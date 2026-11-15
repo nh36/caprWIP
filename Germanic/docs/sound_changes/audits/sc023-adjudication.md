@@ -1,6 +1,94 @@
 # SC023 adjudication — scope and stage of the n-stem *n*-loss
 
-Registry-verdict: SC023=REFORMULATE/RETAIN
+Registry-verdict: SC023=REFORMULATE/RETAIN/REORDER
+
+## Adopted serialization, 14 November 2026
+
+The user-authorized Flask adoption at reference `07829f2e` retains the
+rule body and historical scope, but supersedes the older RETAIN-order
+decision below. SC023 now executes immediately before
+`PWGmcEarlyIApocope`, protecting n exposed by loss of i/z in full inherited
+`*fláskōni/*fláskōniz`. Sixteen selected citation stems still fire;
+Flask's unselected singular remains a positive diagnostic, but the
+selected plural does not fire. This is the old/new nasal distinction
+already motivated below, not a new historical stage inferred from
+position. See `sc069-adjudication.md` for the coordinated conditioning
+and selected-cell adoption. The original census and displacement
+measurements below remain historical evidence, not fresh measurements.
+
+## Identity
+
+SC023 `PNWGmcNStemNLoss`; coordinated adoption dated14 November2026
+on `research/flask-inherited-paradigm`, before-reference07829f2e.
+The stable identifier does not assign historical stage or scope.
+
+## Question
+
+Does placing old n-loss immediately before early i-apocope express the
+old/secondary nasal distinction while preserving ordinary weak
+nominatives and deriving the adopted Flask cells through normal entry?
+
+## Current state (before any edits)
+
+The rule was the unchanged final `*ōn > *ǭ` citation proxy, historically
+(pre-)PGmc/pan-Germanic but serialized after early i-apocope.
+Seventeen selected weak singular stems fired; Flask selected
+`*fláskōn : flasce`, with computed output flæsċe.
+The original adjudication below documented its historical scope,
+old17-member census and do counterfeeding evidence.
+
+## Diagnosis
+
+Fresh production retains all16 other selected weak-noun applications;
+the unselected Flask singular remains the seventeenth positive
+diagnostic. Full `*fláskōniz/*fláskōni` pass old n-loss untouched,
+then expose secondary n under apocope. Required -un controls and do
+remain negative controls. The focused regression compares the actual
+immediate predecessor, long-e lowering, rather than a later cumulative
+snapshot. The complete394-row comparison changes only selected Flask;
+all15 controls agree with the frozen exact candidate.
+
+## Literature
+
+Ringe2017 pp.101–103 establishes the old general loss and the retained
+numeral forms; Ringe–Taylor2014 pp.54–59 distinguishes nasal reflexes
+and later high-vowel erosion. The original source-critical discussion
+below is retained. The separate ending decision and Hill's alternative
+belong to `sc069-adjudication.md`.
+
+## Historical analysis
+
+Stage remains (pre-)PGmc, scope pan-Germanic; no label is inferred from
+the new physical position. The unchanged citation proxy is narrower
+than the historical law because other reflexes are already encoded
+in the inputs. Its order before early apocope is stage-entailed, not
+an independently demonstrated local historical adjacency. The later
+do counterfeeding boundary is retained. The prior bundled-runner
+limit is an archived observation, not a current constraint.
+
+## Verdict
+
+REFORMULATE historical metadata / RETAIN the rule body / REORDER
+before early i-apocope. The explicit user adoption authorizes this
+coordinated correction. The rule must not delete nasals which were
+not word-final when the historical loss applied.
+
+## Propagation (only after verdict)
+
+Production definition and call are moved together to avoid a Foma
+forward reference. Registry, chronology classifications, reader source
+and tests are aligned. SC069 owns the controlled Flask cell migration,
+not a routine baseline refreeze. `flask-production-certification.md`
+and its machine evidence record the production delta and certification.
+
+## Residue
+
+The proxy does not newly generalize every prehistoric n-loss output.
+The full weak paradigm's accusative and pre-m raising problems remain
+separate. SC051 is unchanged; neither these stage labels nor the new
+serialization settles consonant timing or the rival ending history.
+
+## Original adjudication record (retained)
 
 Status: adjudicated (this memo governs the outcome)
 Scope: SC023 `PNWGmcNStemNLoss` only.

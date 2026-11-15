@@ -1,0 +1,27 @@
+record	source	witness_or_recension	locator	spelling	syntax	case	number	status	limit
+hecht66-C	Hecht1900	Cambridge Corpus Christi College 322 (C)	p.66 l.9	flascan	ane trywene flascan wines fulle; object of sealde	accusative	singular	admitted	Edition spelling; no editorial vowel lengths added
+hecht66-H	Hecht1900	Bodleian Hatton76 (H)	p.66 l.10	flaxan	ane treowene flaxan fulle wines; object of sealde	accusative	singular	admitted	Parallel recension, not an independent chronology
+hecht66-O	Hecht1900	British Library Cotton Otho C.i (O)	apparatus to p.66 l.9	flaxan	treowene flaxan; variant in same object construction	accusative	singular	admitted	Apparatus reading, not a separately inspected manuscript image
+hecht141-C-npl	Hecht1900	C	p.141 l.27	flascan	þa syndon on folcisc flascan gehatene; predicate of twa ... fatu	nominative	plural	admitted	Not accusative singular despite identical ending
+hecht141-H-npl	Hecht1900	H	p.141 l.26	flaxan	þa syndon on folcisc flaxan gehatene; predicate of twa ... fatu	nominative	plural	admitted	H line numbering differs from C
+hecht141-O-npl	Hecht1900	O	apparatus to p.141 l.27	flaxan	Variant of predicate flascan	nominative	plural	admitted	Apparatus reading
+hecht141-C-gpl	Hecht1900	C	p.141 ll.28–29	flascena	oðre þara flascena; partitive genitive	genitive	plural	admitted	English one of the flasks does not make the genitive singular
+hecht141-O-gpl	Hecht1900	O	apparatus p.141 l.29	flaxena	Variant in oðre þara construction	genitive	plural	admitted	No corresponding genitive construction supplied by H here
+hecht141-C-asg	Hecht1900	C	p.141 l.33	flascan	oþre flascan ... onfeng; the other vessel received	accusative	singular	admitted	One of the previously specified two vessels
+hecht141-H-asg	Hecht1900	H	p.141 l.33	flaxan	þa ane flaxan; object of underfeng	accusative	singular	admitted	Numeral ane independently identifies singular
+hecht141-O-asg	Hecht1900	O	apparatus to p.141 l.33	flaxan	Variant of the received-vessel object	accusative	singular	admitted	Apparatus reading
+hecht142-C-dsg	Hecht1900	C	p.142 l.3	flascan	be þære flascan	dative	singular	admitted	Prepositional construction, not genitive
+hecht142-H-dsg	Hecht1900	H	p.142 l.3	flaxan	be þære flaxan	dative	singular	admitted	Parallel recension
+hecht142-O-dsg	Hecht1900	O	apparatus to p.142 l.3	flaxan	Variant in be þære construction	dative	singular	admitted	Apparatus reading
+hecht142-C-asg	Hecht1900	C	p.142 l.12	flascan	þa flascan gehylde	accusative	singular	admitted	The single hidden vessel of the narrative
+hecht142-H-asg	Hecht1900	H	p.142 l.11	flaxan	þa flaxan onhylde	accusative	singular	admitted	H line numbering differs from C
+hecht142-O-asg	Hecht1900	O	apparatus to p.142 l.12	flaxan	flaxan onhylde	accusative	singular	admitted	Apparatus reading
+guthlac64-first	Goodwin1848	Prose Life; principally Cotton Vespasian D.xxi	ch.XV p.64 l.15	flaxan	hæfdon hi mid heom twa flaxan ... gefylde	accusative	plural	admitted	Not verse Guthlac or a dative plural
+guthlac64-second	Goodwin1848	Same prose recension	ch.XV p.64 l.24	flaxan	For hwon behydde git þa flaxan under ane tyrf	accusative	plural	admitted	Object of behydde, referring to the two vessels
+colloquy97	WrightWuelcker1884	OE gloss, Cotton Tiberius A.iii; edition collated with MS	col.97 shoemaker's answer (OE index locator 97,10)	flaxan	ic ... wyrce ... flaxan; Latin flascones	accusative	plural	admitted	Printed run flaxanwelpinnan; segmentation supported by object list, Latin and index; work begins fol.58v but token folio not established
+gloss109	WrightWuelcker1884	Ælfric vocabulary through Junius manuscript used by edition	col.109 l.5	flaxe	Ascopa, flaxe oþþe cylle	nominative-equivalent	singular	admitted	Glossary citation, not syntactic oblique; exact Junius shelfmark/originating codex not established here
+gloss123	WrightWuelcker1884	Same vocabulary tradition	col.123 l.21	flaxe	Flaxa, flaxe	nominative-equivalent	singular	admitted	OE is second roman-type form, not first Latin lemma
+gloss240	WrightWuelcker1884	British Library Harley3376 glossary	col.240 l.3	flasce	Flasca ... uel flasce, trywen byt	nominative-equivalent	singular	admitted	OE flasce is roman type; Latin flascumna is not OE flascum
+latin411	WrightWuelcker1884	Cotton Cleopatra A.iii glossary	col.411 l.22	Flasce	Latin Flasce, OE trinnubytte, Latin eadem et flascones	Latin lemma	not assigned	excluded	Italic Latin lookalike is not an OE nominative flasce attestation
+compound-mark	BosworthToller1898	public dictionary quotation of Mark14:13	wæter-flasce entry; Mk.Skt.14,13	wæterflaxan	Sum man berende sume wæterflaxan; Latin lagenam	accusative	singular	secondary-corroboration	Compound; primary Gospel witness not independently inspected; not a new token or dative plural
+hecht-rubrics	Hecht1900	Edition's shared chapter rubrics	p.66 Boniface rubric; p.141 XVIII	flaxan	Objects of gefylde / wiste	accusative	contextual singular	not-independent	Duplicate narrative reference; not assigned to a manuscript from shared printed rubric alone

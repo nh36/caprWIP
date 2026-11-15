@@ -12,28 +12,28 @@ reader_order	sc_id	fst_identifier	exec_index	cascade_position	reader_file	chapte
 3	SC014	PNWGmcUnstressedAiMonophthongization	5	3	014-unstressed-ai-monophthongization.md	2	From Proto-Northwest Germanic to Proto-West Germanic
 4	SC005	PNWGmcAToUBeforeM	6	4	005-unstressed-a-raising-before-final-m.md	2	From Proto-Northwest Germanic to Proto-West Germanic
 5	SC024	PNWGmcLongELowering	7	5	024-long-e-lowering.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-6	SC006	PWGmcEarlyIApocope	8	6	006-early-i-apocope.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-7	SC007	PWGmcFinalOrLowering	9	7	007-final-o-lowering-before-r.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-8	SC008	PWGmcCoronalWAssimilation	10	8	008-coronal-w-assimilation.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-9	SC031	OEWWSimplification	11	9	031-ww-simplification.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-10	SC009	PWGmcIjContraction	12	10	009-ij-contraction-in-friend.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-11	SC010	PWGmcJGemination	13	11	010-west-germanic-j-gemination.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-12	SC011	PWGmcSyllabicJ	14	12	011-syllabic-j-after-final-vowel-loss.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-13	SC028	PNWGmcPreconsonantalXLoss	15	13	028-preconsonantal-x-loss.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-14	SC012	EAFLThVoicing	16	14	012-lth-voicing.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-15	SC013	PWGmcDentalHardening	17	15	013-dental-hardening.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-16	SC111	PWGmcEndinglessAw	18	16	111-endingless-aw-fragment.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-17	SC015	PNWGmcILowering	19	17	015-stressed-i-lowering.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-18	SC017	PNWGmcULowering	20	18	017-nwgmc-u-lowering.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-19	SC018	PNWGmcStressedMonosyllableORaising	21	19	018-stressed-monosyllable-o-raising.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-20	SC019	PNWGmcFinalLongORaising	22	20	019-nwgmc-final-long-o-raising.md	2	From Proto-Northwest Germanic to Proto-West Germanic
-21	SC020	EAFFinalZDeletion	23	21	020-wgmc-final-z-deletion.md	3	From Proto-West Germanic to Anglo-Frisian
-22	SC098	PWGmcUnstressedWordFinalIApocope	24	22	098-early-apocope-in-unstressed-words.md	3	From Proto-West Germanic to Anglo-Frisian
-23	SC097	MonosyllabicFinalZLoss	25	23	097-monosyllabic-final-z-loss.md	3	From Proto-West Germanic to Anglo-Frisian
-24	SC112	PNWGmcMonosyllabicFinalRLengthening	26	24	112-monosyllabic-final-r-lengthening.md	3	From Proto-West Germanic to Anglo-Frisian
-25	SC003	EAFRhotacism	27	25	003-west-germanic-rhotacism.md	3	From Proto-West Germanic to Anglo-Frisian
-26	SC022	PNWGmcMnDissimilation	28	26	022-mn-dissimilation.md	3	From Proto-West Germanic to Anglo-Frisian
-27	SC023	PNWGmcNStemNLoss	29	27	023-n-stem-n-loss.md	3	From Proto-West Germanic to Anglo-Frisian
+6	SC023	PNWGmcNStemNLoss	8	6	023-n-stem-n-loss.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+7	SC006	PWGmcEarlyIApocope	9	7	006-early-i-apocope.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+8	SC007	PWGmcFinalOrLowering	10	8	007-final-o-lowering-before-r.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+9	SC008	PWGmcCoronalWAssimilation	11	9	008-coronal-w-assimilation.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+10	SC031	OEWWSimplification	12	10	031-ww-simplification.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+11	SC009	PWGmcIjContraction	13	11	009-ij-contraction-in-friend.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+12	SC010	PWGmcJGemination	14	12	010-west-germanic-j-gemination.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+13	SC011	PWGmcSyllabicJ	15	13	011-syllabic-j-after-final-vowel-loss.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+14	SC028	PNWGmcPreconsonantalXLoss	16	14	028-preconsonantal-x-loss.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+15	SC012	EAFLThVoicing	17	15	012-lth-voicing.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+16	SC013	PWGmcDentalHardening	18	16	013-dental-hardening.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+17	SC111	PWGmcEndinglessAw	19	17	111-endingless-aw-fragment.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+18	SC015	PNWGmcILowering	20	18	015-stressed-i-lowering.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+19	SC017	PNWGmcULowering	21	19	017-nwgmc-u-lowering.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+20	SC018	PNWGmcStressedMonosyllableORaising	22	20	018-stressed-monosyllable-o-raising.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+21	SC019	PNWGmcFinalLongORaising	23	21	019-nwgmc-final-long-o-raising.md	2	From Proto-Northwest Germanic to Proto-West Germanic
+22	SC020	EAFFinalZDeletion	24	22	020-wgmc-final-z-deletion.md	3	From Proto-West Germanic to Anglo-Frisian
+23	SC098	PWGmcUnstressedWordFinalIApocope	25	23	098-early-apocope-in-unstressed-words.md	3	From Proto-West Germanic to Anglo-Frisian
+24	SC097	MonosyllabicFinalZLoss	26	24	097-monosyllabic-final-z-loss.md	3	From Proto-West Germanic to Anglo-Frisian
+25	SC112	PNWGmcMonosyllabicFinalRLengthening	27	25	112-monosyllabic-final-r-lengthening.md	3	From Proto-West Germanic to Anglo-Frisian
+26	SC003	EAFRhotacism	28	26	003-west-germanic-rhotacism.md	3	From Proto-West Germanic to Anglo-Frisian
+27	SC022	PNWGmcMnDissimilation	29	27	022-mn-dissimilation.md	3	From Proto-West Germanic to Anglo-Frisian
 28	SC026	EAFNasalSpirantLengthening	30	28	026-nasal-spirant-lengthening.md	3	From Proto-West Germanic to Anglo-Frisian
 29	SC027	EAFNasalSpirantLoss	31	29	027-nasal-spirant-loss.md	3	From Proto-West Germanic to Anglo-Frisian
 30	SC102	EAFHiatusWInsertion	32	30	102-hiatus-w-insertion.md	3	From Proto-West Germanic to Anglo-Frisian

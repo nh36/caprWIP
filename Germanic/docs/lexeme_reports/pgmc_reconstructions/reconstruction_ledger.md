@@ -2228,10 +2228,10 @@ Coverage: 4 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2016"></a>
 
-## 2016: flask / flasce
+## 2016: flask / flascan
 
-Current citation: *flaskō (pgmc); selected input: *fláskōn (pgmc; variety: none; explicit_sidecar).
-Runnable: 1; derivation class: early_analogy.
+Current citation: *flaskō (pgmc); selected input: *fláskōniz (pgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
 | --- | --- | --- | --- | --- | --- |

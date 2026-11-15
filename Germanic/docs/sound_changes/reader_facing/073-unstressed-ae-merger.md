@@ -26,7 +26,21 @@ Hogg places it marginally after the earlier merger
 @HoggGrammar1992, §§6.50--6.54 (held 2011 reprint, pp. 237--239);
 @RingeTaylor2014, pp. 334--335].
 
-The displacement tests expose dependencies of the current cascade. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* 'father'. They therefore require shortening before merger in this implementation. If merger is delayed until after [SC085 OEHLoss](#rule-OEHLoss), PGmc [táixōn]{.recon} ‘toe’ yields [*tāæ*]{.pred} rather than expected OE *tā* ‘toe’. That narrower result establishes the current representation's merger-before-loss dependency, not an independently demonstrated historical order.
+The earlier displacement tests expose implementation dependencies. If the rule is moved before [SC072 OEUnstressedLongVowelShortening](#rule-OEUnstressedLongVowelShortening), PGmc [nḗdrōn]{.recon} ‘adder’ yields [*nǣdræ*]{.pred} rather than expected OE *nǣdre* 'adder', and PGmc [fádēr]{.recon} ‘father’ yields [*fædær*]{.pred} rather than expected *fæder* 'father'. That experiment requires shortening before merger in its tested implementation; it is not newly remeasured here.
+
+The toe boundary has also been rechecked on the
+[reviewed final-nasal candidate](https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde).
+Its unperturbed derivation has a palatal fricative and unstressed
+\emph{æ}, then merger supplies \emph{e} before loss creates hiatus.
+Contraction yields OE *tā* 'toe'. Two separately executed displacements,
+moving [SC085 OEHLoss](#rule-OEHLoss) before merger and moving merger after
+loss, both instead leave \emph{ā + æ}: the merger's consonantal context is
+gone, and contraction does not resolve that sequence. Both yield
+[*tāæ*]{.pred} rather than *tā* 'toe'. This reproduces the endpoint in the
+[earlier merger-displacement record](https://github.com/nh36/caprWIP/commit/25ca025f5b065671092fc8c7a4107611588cdcf9),
+but now with the candidate's actual intermediate forms. It remains a
+computational boundary observation, not independently demonstrated
+historical merger-before-loss chronology.
 
 Clay makes the distinction important. Corpus 207 *thoae* 'clay', beside
 Épinal 3 *thohae* 'clay', is read as hiatus *thōæ* 'clay' beside

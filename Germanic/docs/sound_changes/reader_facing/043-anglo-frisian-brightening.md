@@ -6,6 +6,34 @@ Anglo-Frisian Brightening or First Fronting turns low \emph{*a} into fronted \em
 
 Brightening creates the input to [SC044 OEBreaking](#rule-OEBreaking), while [SC046 OEARestoration](#rule-OEARestoration) later partly reverses its outcome before back vowels.
 
+Wright and Wright (§57) explain the root vowel of *flasce* 'flask' by
+retention of Germanic \emph{*a} before \emph{*sk} when the following
+syllable originally contained a back vowel. Their formulation also covers
+\emph{*st} and most geminates. Two of their examples, *wascan* 'wash' and
+*masc/max* 'net, mesh', allow the same root vowel through fronting followed
+by restoration. In the infinitive the following \emph{*a} is still present
+at restoration. In the reconstructed neuter plural of 'net', \emph{*u}
+can trigger restoration before its loss. The front-vowel infinitive
+*wæscan* 'wash' remains unexplained by either derivation. Applying the wider
+retention condition at first fronting also gives predicted [raste]{.pred}
+for the selected input of *ræste* 'rest'. The historical force of that
+comparison depends on the reconstruction of the stem. Wright and Wright
+discuss *rest* under i-umlaut in §56
+[@Wright1908, pp. 37--38, §§56--57;
+@HoggGrammar2011, pp. 93--96, §§5.35--5.38].
+
+The model therefore retains first fronting followed by restoration.
+A restriction on fronting before final \emph{*skā} gives the back vowel
+of *flasce* and *asce* 'ashes', but the comparisons provide no independent
+evidence for that restriction. CAPR declines to adopt the retention rule;
+the evidence leaves the historical possibility open. The working
+explanation of singular *flasce* is extension of the back vowel from
+inflected forms such as *flascan*, as proposed by Campbell and Luick.
+The selected nominative plural now follows regular restoration and
+late ending reduction, without adopting root retention. Its history is discussed in
+[Chapter 3](#weak-n-paradigms-after-apocope)
+[@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161].
+
 The traditional name does not itself establish one inherited event.
 Under Campbell's premise that the daughter contractions precede ordinary
 fronting, comparable English and Frisian outcomes require separate

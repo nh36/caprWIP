@@ -1,4 +1,17 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+remove	oe	flasce	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: singular becomes a comparison, not the selected cell.	
+add	oe	flascan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: Hecht1900 C p.141 l.27 supplies the selected cell.	
+add	oe	flasce	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: retain the attested singular and its separate root-vowel discussion.	
+remove	oe	flasce	target_form	lexical_heading	flask — OE flasce	Flask nominative-plural adoption: replace the old singular heading identity.	
+add	oe	flascan	target_form	lexical_heading	flask — OE flascan	Flask nominative-plural adoption: selected plural heading identity.	
+remove	pgmc	*flaskō	source_protoform	lexical_proto	flask — OE flasce	Flask nominative-plural adoption: heading changes; comparative PROTO is retained.	
+add	pgmc	*flaskō	source_protoform	lexical_proto	flask — OE flascan	Flask nominative-plural adoption: unchanged comparative PROTO under the new heading.	
+remove	pgmc	*fláskōn	selected_input	trace_proto_input	flask — OE flasce	Flask nominative-plural adoption: replace the inherited singular scored input.	
+add	pgmc	*fláskōniz	selected_input	trace_proto_input	flask — OE flascan	Flask nominative-plural adoption: complete inherited plural enters production normally.	
+remove	pgmc	*fláskōn	source_protoform	lexical_protoform	flask — OE flasce	Flask nominative-plural adoption: old selected-form metadata is replaced.	
+add	pgmc	*fláskōniz	source_protoform	lexical_protoform	flask — OE flascan	Flask nominative-plural adoption: same-stage selected plural, not a transponent.	
+remove	pgmc	fláskōn	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: explicit selected-input span changes cell.	
+add	pgmc	fláskōniz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: explicit selected-input span preserves the reconstructed quantity and ending.	
 remove	oe	mare	target_form	lexical_heading	nightmare — OE mare	Row2141 selects attested weak nominative mære; mare remains a separately indexed attested variant.
 add	oe	mære	target_form	lexical_heading	nightmare — OE mære	Row2141 authorized nominative selection; Lindsay1921 p.96 I225.
 remove	pgmc	*márōn	selected_input	trace_proto_input	nightmare — OE mare	Row2141 heading changes only; selected input is unchanged.
@@ -365,3 +378,8 @@ add	pgmc	nautīnō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/mo
 add	pgmc	náutīnō	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md	SC063 coverage finish: canonical livestock and dart; printed source, assembled citation, annotated input and target/comparison roles remain distinct.	
 add	pgmc	skutilaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md	SC063 coverage finish: canonical livestock and dart; printed source, assembled citation, annotated input and target/comparison roles remain distinct.	
 add	pgmc	skútilaz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2339-dart-sċytel.model.md	SC063 coverage finish: canonical livestock and dart; printed source, assembled citation, annotated input and target/comparison roles remain distinct.	
+add	oe	flascena	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: verified genitive plural, Hecht1900 p.141, not a new selected cell.	
+remove	oe	flasce	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: selected comparator remains flasce; current output flæsċe is not an attested regular nominative.	
+remove	pgmc	*flaskō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: comparative headword remains in metadata and unstarred tagged prose, not a complete weak nominative.	
+remove	pgmc	*fláskōn	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: unchanged selected input remains in metadata and unstarred tagged prose; redundant starred tag removed.	
+remove	pgmc	flaskǭ	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: obsolete ending illustration replaced by independently justified complete oblique hypotheses.	

@@ -18,6 +18,7 @@ from executable_facts import parse_defines
 import oe_pipeline
 from test_sc037_adjudication import (
     INTERVENTION_CHANGED, LEXICAL_GRAMMAR_CHANGED, assert_intervention_scope,
+    before_flask_adoption,
 )
 
 AUDIT = ROOT / "Germanic/docs/sound_changes/audits/bounded-domain-adoption"
@@ -44,7 +45,8 @@ def test_certificates_are_bound_to_the_archived_parser_closure_and_orthography()
     assert_intervention_scope()
     source = frozen("snapshot/candidate.txt")
     expected = parse_defines(source)
-    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    current = before_flask_adoption(
+        parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text()))
     pending = ["EnglishProtoInput", "OldEnglishOrthography",
                "EnglishStarAlphabet", "EnglishPalatalConsonant"]
     visited = set()
@@ -107,8 +109,11 @@ def test_actual_surviving_gamma_projection_and_unchanged_selected_finals():
     assert expected["fūliθō"] == ["fȳlþ"]
     # The unchanged historical inputs are counterfactuals after consolidation.
     assert expected["féxu"] == ["feoh"]
+    assert expected["fláskōn"] == ["flasce"]
+    assert expected["márōn"] == ["mare"]
     expected.update({
         "spénnilō": ["spinnelu"], "fūliθō": ["fȳleþu"], "féxu": ["feou"],
+        "fláskōn": ["flæsċe"], "márōn": ["mære"],
     })
     actual = lookup("old_english.bin", list(dict.fromkeys([*expected, *controls])))
     assert {word: actual[word] for word in expected} == expected

@@ -298,9 +298,9 @@ class NasalSpirantAdjudicationTests(unittest.TestCase):
                          ["*f*ū*s*t*i*z"],
                          "SC028 deletes the *x of the *xst cluster")
         # Neither step of the North Sea Germanic law may touch it: the state
-        # entering the law (after SC023 PNWGmcNStemNLoss, the stage
+        # entering the law (after SC022 PNWGmcMnDissimilation, the stage
         # immediately preceding SC026) survives both steps unchanged.
-        before_law = self.stage("pnwgmc_n_stem_n_loss", form)
+        before_law = self.stage("pnwgmc_mn_dissimilation", form)
         self.assertEqual(before_law, ["*f*ū*s*t*i"])
         self.assertEqual(self.stage("eaf_nasal_spirant_lengthening", form),
                          before_law)
