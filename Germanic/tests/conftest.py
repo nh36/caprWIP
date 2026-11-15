@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import shlex
 import sys
+import time
 
 import pytest
 
@@ -45,6 +46,9 @@ def pytest_addoption(parser):
 
 
 def pytest_configure(config):
+    config.addinivalue_line(
+        "markers", "sc037_extended: targeted compound-input/breaking or labial-placement "
+        "counterfactual; included by the complete module and final strict suite")
     config.addinivalue_line(
         "markers", "runtime: strict provisioned-runtime validation, explicitly not run in portable mode")
     config.addinivalue_line(
@@ -121,24 +125,33 @@ def isolated_definitions(request):
         yield ""
         return
     script = """
-import json, sys, tempfile
+import json, sys, tempfile, time
 from pathlib import Path
 sys.path.insert(0, "tools")
 from anglo_frisian_experiments import prepare_definition_image
 from capr_runtime import layout
 directory = Path(tempfile.mkdtemp(prefix="capr_defined_", dir="/tmp"))
 try:
+    started = time.perf_counter()
     image = prepare_definition_image(layout().germanic_fst, directory)
-    print(json.dumps({"directory": str(directory), "image": str(image) if image else None}))
+    print(json.dumps({
+        "directory": str(directory), "image": str(image) if image else None,
+        "preparation_seconds": time.perf_counter() - started,
+        "receipt": json.loads(image.with_suffix(".json").read_text()) if image else None}))
 except BaseException:
     import shutil
     shutil.rmtree(directory)
     raise
 """
+    started = time.perf_counter()
     result = run_in_runner(
         "python3 -c " + shlex.quote(script), text=True, capture_output=True,
         check=True, timeout=900)
     state = json.loads(result.stdout)
+    state["runner_seconds"] = time.perf_counter() - started
+    diagnostic = Path(__file__).resolve().parents[2] / ".ci-results/isolated-definitions.json"
+    diagnostic.parent.mkdir(exist_ok=True)
+    diagnostic.write_text(json.dumps(state, indent=2))
     try:
         yield ("export CAPR_FOMA_DEFINITION_IMAGE=" + shlex.quote(state["image"]) + "; "
                if state["image"] else "")
