@@ -125,6 +125,21 @@ baseline, prior approval, migration row or historical production-evidence
 file was rewritten; only the generated equivalence report changed in
 the baseline directory.
 
-Portable CI and complete strict serial/exclusive certification of the
-stable combined candidate, followed by PR landing, remain to be recorded
-after execution.
+Portable CI passed locally (1969 tests, 98 explicitly skipped,
+9781 passing subtests) and on integration PR11. The first complete strict
+serial run passed 2035 tests and 9821 subtests, with five prescribed skips,
+but failed the older SC035 generality assay's live SC076 expectations.
+The exclusive suite was not started after that failure.
+
+The assay's six annotated i-lowering controls still expected cleanup at
+SC076. Its live mode now retains the marker; its default historical cases,
+frozen observation and original holdings remain unchanged. The current
+comparison permits only that exact annotation-lifetime difference, not
+segmental drift. No production rule, baseline or publication change
+accompanies this test-harness reconciliation. All 11 generality tests,
+including the fresh runtime assay and checks against the unchanged
+345-control historical observation, passed after this repair
+(`integration-generality-repair-e4fe66d68d13491f99d119b9fcd78193.receipt.json`).
+Complete strict
+serial/exclusive certification of the repaired candidate and PR landing
+remain to be recorded after execution.

@@ -18,7 +18,7 @@ spec.loader.exec_module(prosody)
 apply = prosody.historical.checked_apply
 
 
-def cases():
+def cases(*, retain_pretonic=False):
     groups = {}
     annotation = []
     for onset in ("", "*b", "*b*l", "*ʝ"):
@@ -77,6 +77,12 @@ def cases():
         ("*n*i", "*n*i"),
         ("*ᶠ*ʝ*ī*t*á", "*ʝ*ī*t*á"),
     ])
+    if retain_pretonic:
+        identifier, pairs = groups["i_lowering"]
+        groups["i_lowering"] = (identifier, [
+            (form, "*ᶠ" + expected if form.startswith("*ᶠ") else expected)
+            for form, expected in pairs
+        ])
     return groups
 
 
@@ -84,7 +90,7 @@ def run():
     runtime = layout()
     if not runtime.is_container:
         raise RuntimeError("run in the backend container; host Foma is prohibited")
-    groups = cases()
+    groups = cases(retain_pretonic=True)
     recipe = {
         "definitions": "", "insert_after": "", "insert_rule": "", "replace": {},
         "component_checks": [{"component": identifier}
