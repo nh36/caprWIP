@@ -49,7 +49,7 @@ of that distinction is discussed with
 ```foma
 define OEHLoss FootCtx([
     [{*x}|{*ç}] -> 0 || EnglishStarVocalic _ EnglishStarVocalic
-]);
+]) .o. [{*ᶠ} -> 0];
 ```
 
 The rule removes singleton intervocalic \emph{*h} in either model
@@ -62,6 +62,8 @@ intervocalic \emph{h} between an unaccented and an accented vowel in
 *toheald* 'inclined' [@Campbell1959, pp. 186--187, §§461, 464--465].
 Thus the prosodic guard has independent support; it is not a lexical
 exception introduced to protect matching outputs.
+The pretonic annotation survives the preceding vowel reduction and is
+removed only after this protection has been applied.
 Contraction can subsequently resolve the hiatus, but the hiatus is itself attested.
 
 The [reviewed final-nasal candidate](https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde)

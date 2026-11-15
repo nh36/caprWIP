@@ -107,7 +107,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 074-medial-unstressed-i-lowering.md | SC074. First medial unstressed-\emph{i} lowering (`OEMedUnstressedILowering1`) {#rule-OEMedUnstressedILowering1} | yes | yes | yes | yes | yes | no | no | — |
 | 075-i-preservation-before-ng.md | SC075. Preservation of medial unstressed \emph{*i} before \emph{*ng} (`OEMedUnstressedILowering`) {#rule-OEMedUnstressedILowering} | yes | yes | yes | yes | yes | no | no | — |
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | yes | yes | yes | yes | yes | yes | no | — |
-| 076-prefix-i-reduction.md | SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | no | no | yes | no | yes | no | no | missing move-condition wording; missing expected-form wording; missing SC-plus-rule reference in chronology prose |
+| 076-prefix-i-reduction.md | SC076. Pretonic i-lowering (`OEPrefixIReduction`) {#rule-OEPrefixIReduction} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
 | 078-weak-tail-reduction.md | SC078. Reduction of remaining weak-tail vowels (`OEWeakTailReduction`) {#rule-OEWeakTailReduction} | yes | yes | yes | yes | yes | yes | no | — |
 | 079-j-loss-after-heavy-syllables.md | SC079. Loss of \emph{*j} after heavy syllables (`OEJLossAfterHeavy`) {#rule-OEJLossAfterHeavy} | yes | yes | yes | yes | yes | no | no | — |
 | 080-final-geminate-simplification.md | SC080. Simplification of final geminates (`OEFinalGeminateSimplification`) {#rule-OEFinalGeminateSimplification} | yes | yes | yes | yes | yes | no | no | — |

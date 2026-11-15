@@ -33,7 +33,7 @@ FINAL_NASAL_CHANGED = {
 
 
 def before_flask_adoption(current):
-    """Validate the exact later promotion before checking older source freezes."""
+    """Validate the exact later promotions before checking older source freezes."""
     previous = parse_defines(subprocess.check_output(
         ["git", "show", "07829f2e88e5afb60e7949adbf77bdd9e4909b00:Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True))
@@ -62,6 +62,9 @@ def before_flask_adoption(current):
             [EnglishStarConsonant | EnglishPalatalConsonant]+ _
             [{*m} | {*n} ContextSegments]
         ])""",
+        "OEPrefixIReduction": previous["OEPrefixIReduction"].body.replace(
+            ".o. [{*ᶠ} -> 0]", "", 1),
+        "OEHLoss": previous["OEHLoss"].body + " .o. [{*ᶠ} -> 0]",
     })
     assert current.keys() == expected.keys()
     for name, body in expected.items():

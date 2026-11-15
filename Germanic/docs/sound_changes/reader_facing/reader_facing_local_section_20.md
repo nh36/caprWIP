@@ -7098,7 +7098,6 @@ successive reconstructed vowels; the accentual status of contested
 ```foma
 define OEPrefixIReduction SentenceCtx([
     [{*i} -> {*e} || .#. {*ᶠ} OEAnyConsonant* _]
-    .o. [{*ᶠ} -> 0]
 ]);
 ```
 
@@ -7107,7 +7106,9 @@ syllable, not specifically in morphemes beginning with a particular
 consonant. Thus the same conditioning treats inherited weak \emph{*bi-}
 and the raised vowel in \emph{*gi-}; stressed roots remain outside its
 domain. The superscript `*ᶠ` is a nonsegmental prosodic annotation,
-removed once it is no longer needed. The rule therefore produces
+retained for pretonic protection at
+[SC085 OEHLoss](#rule-OEHLoss) and removed after that operation.
+The rule therefore produces
 \emph{*e} directly, not a protected intermediate breve-e.
 
 This bounded implementation requires a following headed syllable.
@@ -7344,7 +7345,7 @@ of that distinction is discussed with
 ```foma
 define OEHLoss FootCtx([
     [{*x}|{*ç}] -> 0 || EnglishStarVocalic _ EnglishStarVocalic
-]);
+]) .o. [{*ᶠ} -> 0];
 ```
 
 The rule removes singleton intervocalic \emph{*h} in either model
@@ -7357,6 +7358,8 @@ intervocalic \emph{h} between an unaccented and an accented vowel in
 *toheald* 'inclined' [@Campbell1959, pp. 186--187, §§461, 464--465].
 Thus the prosodic guard has independent support; it is not a lexical
 exception introduced to protect matching outputs.
+The pretonic annotation survives the preceding vowel reduction and is
+removed only after this protection has been applied.
 Contraction can subsequently resolve the hiatus, but the hiatus is itself attested.
 
 The [reviewed final-nasal candidate](https://github.com/nh36/caprWIP/commit/4b232d22ad3d55ecf0eb2111b736dcf4349a4bde)

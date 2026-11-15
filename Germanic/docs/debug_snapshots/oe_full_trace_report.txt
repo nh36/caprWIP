@@ -1,6 +1,6 @@
 === PROVENANCE ===
 trace_provenance_version: 2
-germanic.txt sha256: 35903595cb20d982933b7431254497dbfc441ec10ab01e533e52ec48fc73bb63
+germanic.txt sha256: 56369de5575623beb4b36473dae214a158a5748353039f0623161831b08e08de
 old_english_sandbox.txt sha256: 3753d17cdb928652a8d0090e632d0fcf20a42e488a4a3c3d485868cb74e0b1a7
 germanic-aligned-final.tsv sha256: 31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1
 entry_context_metadata.tsv sha256: 6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914
@@ -9,14 +9,14 @@ oe_full_trace_report.py sha256: dad0d16f3c52b89c2a3e2ef52d7f5126659cd045d93df73c
 oe_pipeline.py sha256: 742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6
 sound_change_order_sensitivity.py sha256: 99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c
 capr_runtime.py sha256: e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec
-old_english.bin sha256 (informational): 5c9889ab3a11fb0ec7dd5fdffa3320410ca82288c221251c24361fed8ffb40b9
+old_english.bin sha256 (informational): 3a05e78a853b7d983e0694a150960543f7dbcaa01276fe760a85c98ded22c900
 bins_provenance: canonical (build manifest validated against current sources and expected bin set)
-build_manifest_built_at: 2026-11-14T20:19:47+0000
+build_manifest_built_at: 2026-11-15T06:42:31+0000
 build_manifest_runner: docker
 build_manifest_foma_version: foma 0.10.0alpha
 build_manifest_expected_bins: 114
 manifest:germanic-aligned-final.tsv sha256: 31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1
-manifest:germanic.txt sha256: 35903595cb20d982933b7431254497dbfc441ec10ab01e533e52ec48fc73bb63
+manifest:germanic.txt sha256: 56369de5575623beb4b36473dae214a158a5748353039f0623161831b08e08de
 manifest:old_english_sandbox.txt sha256: 3753d17cdb928652a8d0090e632d0fcf20a42e488a4a3c3d485868cb74e0b1a7
 
 === BUCKET: exact_match (386) ===
@@ -53403,6 +53403,14 @@ OEUnstressedAEMerger: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
 OEMedUnstressedILowering1: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
 OEMedUnstressedILowering: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
 OEMedUnstressedULowering: raw = *ᶠ*b*i*ʝ*í*n*n*ą*n
+OEPrefixIReduction: raw = *ᶠ*b*e*ʝ*í*n*n*ą*n
+OEWeakTailReduction: raw = *ᶠ*b*e*ʝ*í*n*n*a*n
+OEJLossAfterHeavy: raw = *ᶠ*b*e*ʝ*í*n*n*a*n
+OEFinalGeminateSimplification: raw = *ᶠ*b*e*ʝ*í*n*n*a*n
+OEJStrengtheningAfterFrontDiphthong: raw = *ᶠ*b*e*ʝ*í*n*n*a*n
+OEIntervocalicJVocalization: raw = *ᶠ*b*e*ʝ*í*n*n*a*n
+OEUnstressedEIContraction: raw = *ᶠ*b*e*ʝ*í*n*n*a*n
+OEWeightCleanup: raw = *ᶠ*b*e*ʝ*í*n*n*a*n
 
 --- believe | *galáubijaną | ġelīefan ---
 OEStressFootContext: raw = *ᶠ*g*a*l*áu*b*i*j*a*n*ą
@@ -53463,6 +53471,14 @@ OEUnstressedAEMerger: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
 OEMedUnstressedILowering1: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
 OEMedUnstressedILowering: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
 OEMedUnstressedULowering: raw = *ᶠ*ʝ*i*l*īe*β*j*ą*n
+OEPrefixIReduction: raw = *ᶠ*ʝ*e*l*īe*β*j*ą*n
+OEWeakTailReduction: raw = *ᶠ*ʝ*e*l*īe*β*j*a*n
+OEJLossAfterHeavy: raw = *ᶠ*ʝ*e*l*īe*β*a*n
+OEFinalGeminateSimplification: raw = *ᶠ*ʝ*e*l*īe*β*a*n
+OEJStrengtheningAfterFrontDiphthong: raw = *ᶠ*ʝ*e*l*īe*β*a*n
+OEIntervocalicJVocalization: raw = *ᶠ*ʝ*e*l*īe*β*a*n
+OEUnstressedEIContraction: raw = *ᶠ*ʝ*e*l*īe*β*a*n
+OEWeightCleanup: raw = *ᶠ*ʝ*e*l*īe*β*a*n
 
 --- you | *ízwiz | ēow ---
 EnglishProtoInput: raw = *ᵘ*í*z*w*i*z
