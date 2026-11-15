@@ -71,7 +71,7 @@ components = ["EnglishProtoInput", "OEBreaking", "OEIUmlaut",
               "OEStripSecondaryStress", "NWGmcInStemNLoss", "OEWLossBeforeI"]
 break_inputs = ["*f*u*l*w*i*x*t", "*n*a*w*i*x*t", "*s*i*w", "*s*í*w",
                 "*b*i*r*x*t", "*w*i*w*i", "*w*i*w*ī",
-                "*s*æ*l*ì*w*æ*r*d", "*ᶠ*b*i*s*i*w"]
+                "*s*æ*l*ì*w*ǽ*r*d", "*ᶠ*b*i*s*i*w"]
 high_inputs = ["*s*e*l*i*w*ea*r*d", "*x*a*n*d*u*s*ea*x",
                "*ȳ*t*y*m*i*s*t", "*b*o*n*d*i*n*s*t*a",
                "*ʃ*y*l*d*i*ç*ǣ*t*j*ā", "*l*a*n*d*w*ì*n*a"]

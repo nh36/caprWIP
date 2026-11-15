@@ -102,9 +102,14 @@ def test_actual_surviving_gamma_projection_and_unchanged_selected_finals():
     controls = json.loads(frozen("outputs/controls.json"))["full"]
     assert_intervention_scope()
     assert controls["é-ìwi"] == ["iī", "īi"]
-    # This synthetic stress control changes under the separately pinned
-    # marker/breaking intervention, not the unchanged gamma projection.
-    current_controls = {**controls, "é-ìwi": ["eī"]}
+    # These synthetic stress changes are independent of gamma projection.
+    # Bare secondary a was already parsed, but no longer loses its label
+    # before final-a deletion; regular secondary fronting now gives ae.
+    assert controls["à"] == []
+    assert json.loads(frozen("outputs/controls.json"))["parser"]["à"] == ["*à"]
+    gate = oe_pipeline.stage_for("EnglishProtoInput").snapshot_bin
+    assert lookup(gate, ["à"]) == {"à": ["*à"]}
+    current_controls = {**controls, "é-ìwi": ["eī"], "à": ["æ"]}
     assert expected["spénnilō"] == ["spinl"]
     assert expected["fūliθō"] == ["fȳlþ"]
     # The unchanged historical inputs are counterfactuals after consolidation.

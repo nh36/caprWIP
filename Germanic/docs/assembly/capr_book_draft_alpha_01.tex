@@ -6378,18 +6378,16 @@ English scope and secure attestations.
 \subsection{\texorpdfstring{SC036. Light-initial weak raising
 (\texttt{OELHWeakRaising})}{SC036. Light-initial weak raising (OELHWeakRaising)}}\label{rule-OELHWeakRaising}
 
-\noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define OELHWeakRaising Ctx([
-    {*a} -> {*u} || .#. EnglishStarConsonant* [{*á}|{*é}|{*í}|{*ó}|{*ú}]
-        EnglishStarConsonant _ {*l} EnglishStarConsonant
-]);
+define OELHWeakRaising Ctx([ [{*a}|{*à}] -> {*u} || .#. EnglishStarConsonant*
+    [{*á}|{*é}|{*í}|{*ó}|{*ú}] EnglishStarConsonant _ {*l} EnglishStarConsonant ]);
 \end{ReaderFacingFoma}
-\end{minipage}
 
 The boundary and short acute nucleus restrict the initial domain; one
-intervening consonant distinguishes the light initial syllable. Only
-plain short \emph{a} is rewritten, after removal of the earlier grave.
+intervening consonant distinguishes the light initial syllable. The
+carried secondary annotation does not exempt short \emph{a} from this
+same weight condition. Its marked and unmarked spellings represent the
+same input vowel; the phonological environment is unchanged.
 
 \section{Combinative u-umlaut in
 wi-forms}\label{combinative-u-umlaut-in-wi-forms}
@@ -6885,28 +6883,37 @@ not independent evidence for a historical long-vowel fronting
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define EAFBrightening Ctx([
-    EAFBrighteningStressed
-]);
+define EAFBrightening Ctx([ EAFBrighteningStressed ]);
 \end{ReaderFacingFoma}
 \end{minipage}
 
 \subsubsection{Stressed component}\label{stressed-component}
 
+The secondary-stressed short vowel is kept distinct until breaking. The
+precomposed \emph{ǽ} carries fronted secondary \emph{à}; it is short and
+is not a new primary accent or a long vowel. Decoding the annotation is
+not a claim about the historical loss of subordinate stress
+(\citeproc{ref-HoggGrammar2011}{Hogg 2011, 217--18}, §§6.7--8;
+\citeproc{ref-Russom2001}{Russom 2001, 39--64}).
+
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define EAFBrighteningStressed [
-    {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
-];
+define EAFBrighteningStressed [ {*á} -> {*æ} || _ [EnglishStarConsonant -
+    EnglishStarNasal | .#.] ]
+    .o. [ {*à} -> {*ǽ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.] ];
 \end{ReaderFacingFoma}
 \end{minipage}
 
-Slay requires breaking to receive the fronted root vowel: delaying the
-stressed member until after \hyperref[rule-OEBreaking]{SC044 OEBreaking}
-gives \emph{sleaan | slēaan}, rather than OE \emph{slēan} `slay'. Rest
-involves two different changes, root fronting and the separately
-retained final-vowel representation. Its final-vowel dependency must not
-be used to date this stressed rule.
+Slay requires breaking to receive the fronted root vowel:
+\emph{*sláxan-} → \emph{*slæxan-} → \emph{*sleaxan-}. With the
+back-vowel fallback excluded, moving \hyperref[rule-OEBreaking]{SC044
+OEBreaking} before this stressed contribution leaves predicted
+\Pred{slæan}, rather than \emph{slēan} `slay'. The older whole-bundle
+trial's \emph{sleaan | slēaan} additionally activated an unsupported
+quantity shortcut; it was not a clean measurement of the fronting feeder
+alone. Rest involves two different changes, root fronting and the
+separately retained final-vowel representation. Its final-vowel
+dependency must not be used to date this stressed rule.
 
 \section{Technical support: retained final-vowel
 representation}\label{technical-support-retained-final-vowel-representation}
@@ -6932,116 +6939,281 @@ Taylor 2014, 58--59, 299--300}; \citeproc{ref-Campbell1959}{Campbell
 
 \subsection{Historical discussion}\label{historical-discussion-39}
 
-Breaking creates \emph{eo}-type outputs before \emph{h}, \emph{rC}, and
-\emph{lC}; velar-fricative palatalization then operates in that reshaped
-environment. Campbell, Ringe and Taylor, and Fulk place breaking after
-brightening. The following fricative palatalization is more narrowly
-conditioned (\citeproc{ref-Campbell1959}{Campbell 1959, 54, 166}, §§139,
-405--406; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 168--69,
-213--14}, §§6.2.1--6.2.3, 6.4.1--6.4.2; \citeproc{ref-Fulk2018}{Fulk
-2018, 73--74}, §4.13).
+Breaking is a family of conditioned developments of stressed front
+vowels, not one identical environment for every vowel. In the
+conventional account short \emph{æ}, \emph{e} and \emph{i} acquire short
+diphthongs; inherited long front vowels have a separate long outcome
+before \emph{h}. The low-vowel history of \emph{slēan} `slay' is
+\emph{*slæxan-} → \emph{*sleaxan-}, with length arising only in the
+subsequent loss-and-contraction history. A following weak ending does
+not itself justify making short \emph{a} directly into long \emph{ēa}
+{[}Campbell (\citeproc{ref-Campbell1959}{1959}), pp.54--59, §§139--154;
+p.98, §234; Hogg (\citeproc{ref-HoggGrammar2011}{2011}), pp.81--88,
+§§5.15--25; Ringe and Taylor (\citeproc{ref-RingeTaylor2014}{2014}),
+pp.177--178, 186--188; Fulk (\citeproc{ref-Fulk2018}{2018}), pp.73--75,
+§4.13 and n.5{]}.
 
-Breaking has the fuller handbook treatment. The \emph{feoh} `cattle' and
-\emph{feohtan} `fight' type derivations preserve its velar-fricative
-trigger; they do not subsequently undergo velar-fricative
-palatalization.
+The southern covered-\emph{l} outcomes, such as \emph{healf} `half' and
+\emph{eall} `all', must be distinguished from Anglian \emph{half} and
+\emph{all}. Hogg permits failure of the first fronting in that
+environment, whereas Ringe and Taylor defend fronting followed by
+retraction. Supplying back \emph{*a} rather than front \emph{*æ} to a
+breaking rule does not decide between those accounts. The palatal
+\emph{ll} of \emph{hell} `hell' and \emph{sellan} `give, sell' is a
+different contrast: it does not trigger the ordinary southern breaking.
+The earlier gemination retains the following \emph{j} needed to express
+that contrast here. Neither gemination in general nor the mere spelling
+\emph{ll} is an exclusion (\citeproc{ref-Campbell1959}{Campbell 1959,
+54--56}, §§139, 143--145; \citeproc{ref-HoggGrammar2011}{Hogg 2011,
+81--85}, §§5.15--20; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor
+2014, 184--86}; \citeproc{ref-Fulk1998}{Fulk 1998, 145--46}).
 
-Fulk cautions that breaking before \emph{h} does not necessarily date
-the articulation of \emph{k/g}: the consonantal histories must be
-distinguished. His English and later Frisian breaking processes are also
-not one inherited event (\citeproc{ref-Fulk1998}{Fulk 1998, 145--46,
-152}).
-
-\subsection{\texorpdfstring{SC044. Breaking before \emph{h}, \emph{rC},
-\emph{lC}, and conditioned \emph{w}
-(\texttt{OEBreaking})}{SC044. Breaking before , , , and conditioned  (OEBreaking)}}\label{rule-OEBreaking}
+\subsection{\texorpdfstring{SC044. Vowel-specific breaking
+(\texttt{OEBreaking})}{SC044. Vowel-specific breaking (OEBreaking)}}\label{rule-OEBreaking}
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
 define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
-    .o. OEBreakingI);
+    .o. OEBreakingI
+    .o. OEBreakingLong
+    .o. [{*ǽ} -> {*æ},
+    {*à} -> {*a},
+    {*è} -> {*e}]);
 \end{ReaderFacingFoma}
 \end{minipage}
 
-Short \emph{e} and \emph{i} also develop short \emph{eo} and \emph{io}
-before singleton \emph{w}, except when a high front vowel or \emph{j}
-follows it. This is the regular pre-ending history of \emph{cneowe}
-`knee (dat.sg.)', not long-diphthong promotion
-(\citeproc{ref-Luick1914}{Luick 1914-\/-1940, 139}, §134;
-\citeproc{ref-HoggGrammar2011}{Hogg 2011, 86}, §5.22;
-\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 187--88}, §6.2.4).
-The shared w conditioner makes that exclusion explicit:
+\subsubsection{Short low front vowel}\label{rule-OEBreakingA}
+
+\begin{ReaderFacingFoma}
+define OEBreakingA [ {*æ} -> {*ea} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ EnglishBreakingLContext,
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ EnglishBreakingHContext ]
+    .o. [ {*ǽ} -> {*ea} || _ EnglishBreakingRContext,
+    {*ǽ} -> {*ea} || _ EnglishBreakingLContext,
+    {*ǽ} -> {*ea} || _ EnglishBreakingHContext ];
+\end{ReaderFacingFoma}
+
+The ordinary stressed fronting in \hyperref[rule-EAFBrightening]{SC043
+EAFBrightening} supplies the short \emph{æ}. The right contexts are
+\emph{h}, covered \emph{r} other than \emph{rj}, and the nonpalatal
+covered-\emph{l} environment:
+
+\begin{ReaderFacingFoma}
+define EnglishBreakingLContext [ {*l} [EnglishStarConsonant - [{*l}|{*j}]] | {*l} {*l}
+    [[ContextSegments - {*j}] | .#.] ];
+\end{ReaderFacingFoma}
+
+The initial-nucleus restriction is an executable proxy for stress after
+the primary accent has been consumed. It excludes genuinely weak medial
+vowels. Secondary short front \emph{ǽ} is carried separately from
+earlier \emph{à}; it can break in a noninitial root. The annotation is
+decoded only after its breaking consumer, not at an invented historical
+date of general destressing. \emph{erian} `plough' independently
+protects the unbroken \emph{rj} history
+(\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 182};
+\citeproc{ref-HoggGrammar2011}{Hogg 2011, 217--18}, §§6.7--8).
+
+\subsubsection{Short e and the lateral
+distinctions}\label{rule-OEBreakingE}
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define EnglishBreakingWContext [
-    {*w} [[EnglishStarVocalic | EnglishStarConsonant]
-        - [{*i} | {*ì} | {*í} | {*ī} | {*ḯ} | {*j}]] |
-    {*w} .#.
-];
+define EnglishBreakingLContextE [{*l} [{*x} | {*w}]];
 \end{ReaderFacingFoma}
 \end{minipage}
 
-Root stress notation does not determine vowel length. The short knee
-dative is the selected comparison; long endingless \emph{cnēo} `knee'
-and the restored \emph{w} of \emph{cnēow} `knee' are separate paradigm
-histories, discussed with \hyperref[rule-OEEwLongDiphthong]{SC033
-OEEwLongDiphthong}.
+\emph{seolh} `seal' and \emph{eolh} `elk' support breaking before
+\emph{lh}. \emph{āseolcan} `languish' does not license a general
+\emph{lk} rule: \emph{melcan} `milk' remains unbroken. The model keeps
+only the narrower preceding-\emph{s} proxy for that exceptional
+comparison; its ultimate historical explanation and dialectal reach are
+less secure than \emph{lh}. No independently verified \emph{lg} witness
+supports the old generalization. Non-West-Saxon \emph{seolf} `self' is
+not a reason to change early West Saxon \emph{self} or \emph{delfan}
+`dig' (\citeproc{ref-Campbell1959}{Campbell 1959, 56--57}, §§146--147;
+\citeproc{ref-HoggGrammar2011}{Hogg 2011, 85--86}, §5.22;
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 186--88}).
 
-Breaking must encounter the vowel created by brightening and must
-precede the rule that would otherwise palatalize its velar trigger in
-\emph{feoh} `cattle' and \emph{feohtan} `fight'. Before
-\hyperref[rule-EAFBrightening]{SC043 EAFBrightening}, PGmc
-\Recon{sláxaną} `slay' yields \emph{sleaan | slēaan} rather than
-expected OE \emph{slēan} `slay'. After
-\hyperref[rule-OEVelarFricativePalatalization]{SC045
-OEVelarFricativePalatalization}, PGmc \Recon{féxu} `cattle' yields
-\Pred{fehu} rather than expected OE \emph{feoh}, and PGmc
-\Recon{féxtaną} `fight' yields \Pred{fehtan} rather than expected
-\emph{feohtan}. The fronting relation feeds breaking. The fee/fight
-relation instead protects breaking's velar trigger from premature
-palatalization: those forms are displacement negatives, not live
-\hyperref[rule-OEVelarFricativePalatalization]{SC045
-OEVelarFricativePalatalization} applications.
-
-\subsection{\texorpdfstring{SC044. Stress-sensitive short-i breaking
-(\texttt{OEBreakingI})}{SC044. Stress-sensitive short-i breaking (OEBreakingI)}}\label{rule-OEBreakingI}
+Hogg and Ringe and Taylor defend direct breaking before \emph{lw},
+including \emph{ġeolwe} `yellow' and genitive \emph{meolwes} `meal,
+flour'. The alternative derives the diphthongs in nominative
+\emph{ġeolu} `yellow' and \emph{meolu} `meal, flour' by back mutation
+and transfers them into inflected forms. Hogg argues against treating
+that transfer as the established explanation, particularly given the
+distribution of \emph{ġeolu}. The model adopts the regular \emph{lw}
+account while retaining the alternative. A later rule can already supply
+these surface diphthongs in the executable cascade; surface agreement
+therefore does not independently date the change
+(\citeproc{ref-HoggGrammar2011}{Hogg 2011, 86}, §5.22 n.3;
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 187--88}).
 
 \begin{ReaderFacingFoma}
-define OEBreakingI [
-    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+define OEBreakingE [ {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingWContext,
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingLContextE,
+    {*e} -> {*eo} || .#. OEAnyConsonant* {*s} _ {*l} {*k} ]
+    .o. [ {*é} -> {*éo} || _ EnglishBreakingRContext,
+    {*é} -> {*éo} || _ EnglishBreakingHContext,
+    {*é} -> {*éo} || _ EnglishBreakingWContext,
+    {*é} -> {*éo} || _ EnglishBreakingLContextE,
+    {*é} -> {*éo} || {*s} _ {*l} {*k} ]
+    .o. [ {*è} -> {*eo} || _ EnglishBreakingRContext,
+    {*è} -> {*eo} || _ EnglishBreakingHContext,
+    {*è} -> {*eo} || _ EnglishBreakingWContext,
+    {*è} -> {*eo} || _ EnglishBreakingLContextE,
+    {*è} -> {*eo} || {*s} _ {*l} {*k} ];
+\end{ReaderFacingFoma}
+
+Short \emph{e} and \emph{i} also break before singleton \emph{w}, except
+when a high front vowel or \emph{j} follows it. Dative \emph{cneowe}
+`knee' is the short-vowel comparison, not long-diphthong promotion
+(\citeproc{ref-Luick1914}{Luick 1914-\/-1940, 139}, §134;
+\citeproc{ref-HoggGrammar2011}{Hogg 2011, 86}, §5.22;
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 187--88}):
+
+\begin{ReaderFacingFoma}
+define EnglishBreakingWContext [ {*w} [[EnglishStarVocalic | EnglishStarConsonant] -
+    [{*i} | {*ì} | {*í} | {*ī} | {*ḯ} | {*j}]] | {*w} .#. ];
+\end{ReaderFacingFoma}
+
+Long endingless \emph{cnēo} `knee' and the restored \emph{w} of
+\emph{cnēow} `knee' have separate histories, discussed under
+\hyperref[rule-OEEwLongDiphthong]{SC033 OEEwLongDiphthong}.
+
+\subsubsection{Short i and stress}\label{rule-OEBreakingI}
+
+\emph{meox} `manure' and \emph{Peohtas} `Picts' independently support
+short \emph{i}-breaking before \emph{h}. Their short \emph{io} may
+develop later \emph{eo}; it is not born long. The three selected learn
+forms already have \emph{e} at breaking and cannot witness this
+component. Hogg's \emph{*filhiþ} comparison supplies the narrow
+\emph{lh} environment, not every covered lateral. West Saxon and Kentish
+breaking before covered \emph{r} must also be distinguished from the
+Anglian following-\emph{i/j} exclusions
+(\citeproc{ref-Campbell1959}{Campbell 1959, 57--59}, §§148--154;
+\citeproc{ref-HoggGrammar2011}{Hogg 2011, 87--88}, §§5.24--25;
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 177--78,
+187--88}).
+
+\noindent\begin{minipage}{\linewidth}
+\begin{ReaderFacingFoma}
+define EnglishBreakingLContextI [{*l} {*x}];
+\end{ReaderFacingFoma}
+\end{minipage}
+
+\begin{ReaderFacingFoma}
+define OEBreakingI [ {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
     {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
-    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingWContext
-] .o. [
-    {*í} -> {*ío} || _ EnglishBreakingRContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingLContextI,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingWContext ]
+    .o. [ {*í} -> {*ío} || _ EnglishBreakingRContext,
     {*í} -> {*ío} || _ EnglishBreakingHContext,
+    {*í} -> {*ío} || _ EnglishBreakingLContextI,
     {*í} -> {*ío} || _ EnglishBreakingWContext,
     {*ì} -> {*io} || _ EnglishBreakingRContext,
     {*ì} -> {*io} || _ EnglishBreakingHContext,
-    {*ì} -> {*io} || _ EnglishBreakingWContext
-];
+    {*ì} -> {*io} || _ EnglishBreakingLContextI,
+    {*ì} -> {*io} || _ EnglishBreakingWContext ];
 \end{ReaderFacingFoma}
 
 Breaking is not an ordinary unstressed-vowel development. \emph{fulwiht}
-`baptism' and \emph{nawiht} `nothing' supply independent negative
-evidence; the latter has separately explained stressed byforms. A plain
-vowel can nevertheless represent the stressed initial nucleus after an
-earlier accent-consuming change. This component therefore admits that
-nucleus, explicit primary \emph{í}, and preserved subordinate \emph{ì},
-but excludes plain medial \emph{i}. Positive pretonic foot marking
-retains its existing scope (\citeproc{ref-HoggGrammar2011}{Hogg 2011,
-217--18}, §§6.7--6.8; \citeproc{ref-Campbell1959}{Campbell 1959,
-54--56}, §§139--144; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor
-2014, 187--88}).
+`baptism' and \emph{nawiht} `nothing' retain weak \emph{i} or undergo
+the separately described retraction beside \emph{w}; the existence of
+retracted alternatives does not make them stressed breaking positives. A
+no-\emph{w} comparison isolates the stress condition. Plain initial
+nuclei, explicit primary \emph{í} and preserved subordinate \emph{ì} are
+distinguished from plain weak medial \emph{i}. In the conditional
+\emph{seleweard} history, medial \emph{i} causes mutation without
+breaking and later lowers, while the subordinate root independently
+breaks to \emph{weard}. The regular weight-conditioned reduction of a
+secondary low vowel remains available in the separate \emph{weorold}
+`world' history. The date at which an annotation is removed is not a
+date for obligatory historical destressing
+(\citeproc{ref-HoggGrammar2011}{Hogg 2011, 217--18}, §§6.7--8;
+\citeproc{ref-Russom2001}{Russom 2001, 39--64}).
 
-In the conditional \emph{seleweard} history the retained medial \emph{i}
-causes mutation without breaking and later lowers to \emph{e}. This is a
-general stress distinction, not suppression of a diphthong by lexical
-identity. The second root's subordinate marker survives until its
-phonological consumers; its technical decoding is not a date for
-obligatory historical destressing (\citeproc{ref-Russom2001}{Russom
-2001, 39--64}).
+\subsubsection{Inherited long quantity}\label{rule-OEBreakingLong}
+
+\noindent\begin{minipage}{\linewidth}
+\begin{ReaderFacingFoma}
+define OEBreakingLong [ {*ǣ} -> {*ēa} || .#. OEAnyConsonant* _
+    EnglishBreakingHContext,
+    {*ē} -> {*ēo} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*ī} -> {*īo} || .#. OEAnyConsonant* _ EnglishBreakingHContext ]
+    .o. [ {*ḗ} -> {*ḗo} || _ EnglishBreakingHContext,
+    {*ḯ} -> {*īo} || _ EnglishBreakingHContext ];
+\end{ReaderFacingFoma}
+\end{minipage}
+
+West Saxon \emph{nēah} `near' continues long front \emph{ǣ}; the
+corresponding non-West-Saxon input is long \emph{ē}. In \emph{lēoht}
+`light in weight', with earlier \emph{līoht} `light in weight', the
+vowel has become long before breaking. These histories are distinct from
+short breaking followed by contraction in \emph{slēan} `slay'. The long
+component models the breaking intermediate; it is not a claim to supply
+every later dialect-specific merger or loss
+(\citeproc{ref-HoggGrammar2011}{Hogg 2011, 85--88}, §§5.21, 5.23, 5.25;
+\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 177--78}).
+
+\subsubsection{What the chronology witnesses
+establish}\label{what-the-chronology-witnesses-establish}
+
+Under the conventional account the stressed low-vowel contribution of
+\hyperref[rule-EAFBrightening]{SC043 EAFBrightening} feeds breaking. The
+older whole-rule displacement also activated a back-\emph{a} fallback
+and therefore was not, by itself, a clean test of that history.
+
+In \emph{feoh} `cattle' and \emph{feohtan} `fight', breaking removes the
+front-vowel environment while preserving \emph{x}. They do not undergo a
+subsequent live \hyperref[rule-OEVelarFricativePalatalization]{SC045
+OEVelarFricativePalatalization} change. Premature effective
+palatalization would instead remove the velar breaking trigger.
+\emph{hliehhan} `laugh' contributes something different: the second
+fricative of the geminate remains next to \emph{j} and does undergo the
+following rule. Hogg's \emph{feoh} argument concerns effective
+\emph{h}-palatalization, while Fulk correctly distinguishes that
+evidence from the dating of all \emph{k/g} articulation. Neither
+argument proves that English and later Frisian breaking were one
+inherited event (\citeproc{ref-Hogg1979}{Hogg 1979, 90--92};
+\citeproc{ref-Fulk1998}{Fulk 1998, 145--46, 152}).
+
+\subsubsection{The early Anglian
+alternative}\label{the-early-anglian-alternative}
+
+Versloot's late Anglian \emph{rC} analysis makes a different prediction
+for mutation-created \emph{e}. Given \emph{*farmjan-}, an early-breaking
+account gives fronting, breaking and mutation, with final short
+\emph{e}; post-mutation breaking restricted to \emph{rm} instead gives
+\emph{eo}. Épinal \emph{feormat} `nourished' favours the latter under
+that reconstruction. Pheifer separately records Erfurt \emph{caeormad}
+and the Corpus parallel; one manuscript's spelling must not be silently
+substituted for another (\citeproc{ref-Pheifer1974}{Pheifer 1974, 22,
+no.402}; \citeproc{ref-Versloot2025}{Versloot 2026, 130--32},
+§§5.4--5.5).
+
+An original-front-vowel analysis of \emph{geormantlab} `mallow' can give
+\emph{eo} in both orders; its complete etymology remains qualified by
+Pheifer. The \emph{gard}\textasciitilde{}\emph{geard} comparison
+concerns the low vowel supplied to breaking, not by itself the date of
+mutation-created \emph{e}. A bounded late \emph{rm} account must also be
+distinguished from unrestricted breaking before every \emph{rC}:
+\emph{uuerci} `works', \emph{smeruui} `fat' and \emph{teru} `tar'
+constrain its scope. Published levelling from \emph{smeru} is a
+competing explanation of \emph{smeruui}. For \emph{teru} the presence or
+prior vocalization of inherited consonantal \emph{w} matters to whether
+there was a covered-\emph{r} environment at all
+(\citeproc{ref-Pheifer1974}{Pheifer 1974, 103, no.656};
+\citeproc{ref-HoggGrammar2011}{Hogg 2011, 86}, §5.22 n.6;
+\citeproc{ref-Versloot2025}{Versloot 2026, 114--16, 130--32, 138--40},
+§§3.3, 5.4--5.5, 7).
+
+The discriminating result is a reason to retain the late Anglian account
+as a substantive alternative, not to replace the West Saxon sequence
+globally. Establishing the relevant reconstruction and a wider regular
+Anglian distribution would determine its extension. Later Frisian
+breaking is a comparative check, not a shared inherited date.
 
 \section{Velar-fricative
 palatalization}\label{velar-fricative-palatalization}
@@ -7064,8 +7236,18 @@ The live population concerns voiceless x, as in \emph{hēafod} `head' and
 `cattle' and \emph{feohtan} `fight', breaking removes the original
 front-vowel context: they do not change at this rule in the live
 derivation. Moving the rule before \hyperref[rule-OEBreaking]{SC044
-OEBreaking} instead consumes its velar trigger, yielding \Pred{fehu} and
-\Pred{fehtan}. This is counterbleeding protection, not direct feeding.
+OEBreaking} instead consumes its velar trigger, yielding \Pred{feh} from
+the endingless cattle input and \Pred{fehtan} from the fight infinitive.
+This is counterbleeding protection, not direct feeding.
+
+\emph{hliehhan} `laugh' is a distinct live application: after breaking,
+\emph{*hleaxxjan-} still has a second fricative adjacent to \emph{j},
+which becomes palatal. In the reversed order both fricatives become
+palatal before breaking can apply. It must not be counted as another
+instance of the nonapplication illustrated by \emph{feoh}. The effective
+\emph{h}-palatalization argument does not date every \emph{k/g}
+articulation (\citeproc{ref-Hogg1979}{Hogg 1979, 90--92};
+\citeproc{ref-Fulk1998}{Fulk 1998, 145--46}).
 
 The distant \emph{six} `six' displacement test supplies only a broader
 constraint: after \hyperref[rule-OEWsPalatalUmlaut]{SC060
@@ -21540,7 +21722,6 @@ Proto input: \emph{*wíràldiz}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Strip Secondary Stress} & \emph{*wérald} \\
 \mbox{OE Inter Stress Raising} & \emph{*wéruld} \\
 \mbox{OE Back Mutation} & \emph{*wéoruld} \\
 \mbox{OE Med Unstressed U Lowering} & \emph{*wéorold} \\
@@ -27532,7 +27713,7 @@ Proto input: \emph{*θūsèndi}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -27540,7 +27721,7 @@ Proto input: \emph{*θūsèndi}
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*θūsènd} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -27555,7 +27736,7 @@ Proto input: \emph{*θūsèndi}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Strip Secondary Stress} & \emph{*θūsend} \\
+\mbox{OE Breaking} & \emph{*θūsend} \\
 \end{tabularx}
 \end{minipage}
 \\

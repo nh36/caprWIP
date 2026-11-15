@@ -61,7 +61,7 @@ SC042	PWGmcSurvivingBimoricOUnrounding	historical_sound_change	Old English	PWGmc
 SC107	EAFBrighteningUnstressed	support_stage	Old English	Retained early unstressed fronting component				unadjudicated		52	50
 SC043	EAFBrightening	historical_sound_change	Old English	Ordinary English stressed a-fronting	preoe	english_specific	A	adjudicated	REFORMULATE/SPLIT	53	51
 SC108	EAFBrighteningLongFinal	support_stage	Old English	Retained final-vowel quantity component				unadjudicated		54	52
-SC044	OEBreaking	historical_sound_change	Old English	OE Breaking	oe	english_specific	A	unadjudicated		55	53
+SC044	OEBreaking	historical_sound_change	Old English	OE Breaking	oe	english_specific	A	adjudicated	REFORMULATE/RESTRICT	55	53
 SC045	OEVelarFricativePalatalization	historical_sound_change	Old English	Voiceless velar-fricative palatal articulation	oe	english_specific	A	adjudicated	RESTRICT/SPLIT	56	54
 SC046	OEARestoration	historical_sound_change	Old English	OE A Restoration	oe	english_specific	A	unadjudicated		57	55
 SC047	OEHeavySyllableNasalApocope	historical_sound_change	Old English	OE Heavy Syllable Nasal Apocope	oe	english_specific	A	unadjudicated		58	56

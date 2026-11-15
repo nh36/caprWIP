@@ -186,12 +186,12 @@ the Old English scope and secure attestations.
 ## SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising}
 
 ```foma
-define OELHWeakRaising Ctx([
-    {*a} -> {*u} || .#. EnglishStarConsonant* [{*á}|{*é}|{*í}|{*ó}|{*ú}]
-        EnglishStarConsonant _ {*l} EnglishStarConsonant
-]);
+define OELHWeakRaising Ctx([ [{*a}|{*à}] -> {*u} || .#. EnglishStarConsonant*
+    [{*á}|{*é}|{*í}|{*ó}|{*ú}] EnglishStarConsonant _ {*l} EnglishStarConsonant ]);
 ```
 
 The boundary and short acute nucleus restrict the initial domain; one
-intervening consonant distinguishes the light initial syllable. Only plain
-short \emph{a} is rewritten, after removal of the earlier grave.
+intervening consonant distinguishes the light initial syllable. The carried
+secondary annotation does not exempt short \emph{a} from this same weight
+condition. Its marked and unmarked spellings represent the same input vowel;
+the phonological environment is unchanged.

@@ -6,8 +6,8 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 
 ## Summary
 
-- Sections checked: 109.
-- Sections with absent cues or notation observations: 72.
+- Sections checked: 108.
+- Sections with absent cues or notation observations: 71.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -60,10 +60,9 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 064-stem-final-n-loss.md | SC064. Loss of stem-final \emph{*n} after long \emph{*ī} (`NWGmcInStemNLoss`) {#rule-NWGmcInStemNLoss} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | yes | yes | yes | yes | yes | no | no | — |
 | 107-unstressed-fronting-support.md | SC107. Retained unstressed contribution (`EAFBrighteningUnstressed`) {#rule-EAFBrighteningUnstressed} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
-| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | yes | no | no | yes | yes | no | no | missing explicit wrong-output/result wording; missing expected-form wording |
+| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | yes | no | no | yes | no | no | no | missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 108-final-vowel-fronting-support.md | SC108. Retained final-vowel representation (`EAFBrighteningLongFinal`) {#rule-EAFBrighteningLongFinal} | no | no | no | yes | no | yes | no | missing move-condition wording |
-| 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | no | yes | yes | yes | yes | yes | no | missing move-condition wording |
-| 044-breaking.md | SC044. Stress-sensitive short-i breaking (`OEBreakingI`) {#rule-OEBreakingI} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | yes | no | no | yes | yes | no | no | missing explicit wrong-output/result wording; missing expected-form wording |
 | 045-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | yes | yes | yes | yes | yes | no | no | — |
 | 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | yes | yes | yes | yes | yes | no | no | — |

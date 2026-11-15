@@ -16,8 +16,17 @@ The live population concerns voiceless x, as in *hēafod* 'head' and
 *feohtan* 'fight', breaking removes the original front-vowel context:
 they do not change at this rule in the live derivation. Moving the rule
 before [SC044 OEBreaking](#rule-OEBreaking) instead consumes its velar
-trigger, yielding [*fehu*]{.pred} and [*fehtan*]{.pred}. This is
+trigger, yielding [feh]{.pred} from the endingless cattle input and
+[fehtan]{.pred} from the fight infinitive. This is
 counterbleeding protection, not direct feeding.
+
+*hliehhan* 'laugh' is a distinct live application: after breaking,
+\emph{*hleaxxjan-} still has a second fricative adjacent to \emph{j},
+which becomes palatal. In the reversed order both fricatives become
+palatal before breaking can apply. It must not be counted as another
+instance of the nonapplication illustrated by *feoh*. The effective
+\emph{h}-palatalization argument does not date every \emph{k/g}
+articulation [@Hogg1979, pp.90--92; @Fulk1998, pp.145--146].
 
 The distant *six* 'six' displacement test supplies only a broader
 constraint: after [SC060 OEWsPalatalUmlaut](#rule-OEWsPalatalUmlaut),

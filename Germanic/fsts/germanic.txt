@@ -539,7 +539,7 @@ define pgrmWord [pgrmSimpleWord | pgrmCompoundWord];
 ## Proto-Germanic starred inventories        ##
 ##############################################
 
-define PGmcStarVowel [
+define PGmcStarVowel [[
     {*a} |
     {*e} |
     {*ĕ} |
@@ -583,13 +583,15 @@ define PGmcStarVowel [
     # root vowels marked with grave per Luick/Brunner/Bülbring convention.
     # See DEV_NOTES §16.6.
     {*à} | {*è} | {*ì} | {*ò} | {*ù}
-];
+] | {*ǽ}];
 
+# The precomposed short ǽ carries fronted secondary à until SC044;
+# its glyph does not mean primary stress or long quantity.
 # §17.11: acute/grave short-vowel helpers for trough-conditioned changes.
 # Acute = primary stress (Hauptton); Grave = secondary stress (Nebenton).
 # See DEV_NOTES §§16.6, 17.11 for the Luick/Brunner/R-T/Fulk background.
 define PGmcStarAcuteVowel [{*á}|{*é}|{*í}|{*ó}|{*ú}|{*ḯ}|{*ḗ}];
-define PGmcStarGraveVowel [{*à}|{*è}|{*ì}|{*ò}|{*ù}];
+define PGmcStarGraveVowel [[{*à}|{*è}|{*ì}|{*ò}|{*ù}] | {*ǽ}];
 
 define PGmcStarDiphthong [
     {*ai} |
@@ -608,7 +610,7 @@ define PGmcStarDiphthong [
     {*ái} | {*áu} | {*éu} | {*íu} |
     # Stressed breaking products (prosodic tier):
     {*éa} |  # Breaking of stressed *á
-    {*ḗa} |  # Breaking of stressed *á before x+weak tail (lengthened)
+    {*ḗa} |  # Long stressed ea from contraction or a glide history
     {*éo} |  # Breaking of stressed *é
     {*ḗo} |  # Long stressed *éo from contraction (e.g. *téxun → tēon)
     {*ío} |  # Breaking of stressed *í
@@ -644,7 +646,7 @@ define PGmcStarConsonant [
     {*β}
 ];
 
-define PGmcStarFrontVowel [
+define PGmcStarFrontVowel [[
     {*e} |
     {*ĕ} |
     {*i} |
@@ -665,7 +667,7 @@ define PGmcStarFrontVowel [
     # Secondary-stress (Nebenton) front short vowels — see §16.6
     {*è} |
     {*ì}
-];
+] | {*ǽ}];
 
 define PGmcStarBackVowel [
     {*a} |
@@ -932,8 +934,7 @@ define OldEnglishRemoveStars [
     {*í} -> i,
     {*ó} -> o,
     {*ú} -> u,
-    # Belt-and-braces grave stripping (OEStripSecondaryStress should
-    # already have fired by this point; these are safety nets).
+    # Safety-net stripping after the annotations' phonological consumers.
     {*à} -> a,
     {*è} -> e,
     {*ì} -> i,
@@ -1008,19 +1009,18 @@ define EnglishStarLongDiphthong [
     {*ḗa} |
     {*ḗo}
     # Inherited long diphthongs (*ai, *au, *eu, *iu) and their acute counterparts;
-    # {*ḗa} is the lengthened breaking product of long *ā.
 ];
 
 define EnglishStarDiphthong [EnglishStarShortDiphthong | EnglishStarLongDiphthong];
 
 define EnglishStarLongVowel [{*ā} | {*ē} | {*ḗ} | {*ī} | {*ō} | {*ǭ} | {*ū} | {*ȳ} | {*ǣ} | {*ḯ} | {*ã}];
 
-define EnglishStarShortVowel [
+define EnglishStarShortVowel [[
     {*a} | {*e} | {*ĕ} | {*i} | {*o} | {*u} | {*y} | {*æ} | {*ą} |
     {*á} | {*é} | {*í} | {*ó} | {*ú} |
     # Secondary-stress (Nebenton) short vowels — §16.6
     {*à} | {*è} | {*ì} | {*ò} | {*ù}
-];
+] | {*ǽ}];
 
 define EnglishStarConsonant PGmcStarConsonant;
 
@@ -2096,18 +2096,16 @@ define EnglishOpenSyllableLengthening [
     {*u} -> {*ū} || _ EnglishStarConsonant EnglishStarVocalic
 ];
 
-# Old English breaking before x, rC, lC, and select w contexts (split by vowel).
+# SC044: vowel-specific stressed breaking (Hogg §§5.15-25).
 define EnglishBreakingHContext [{*x}];
-define EnglishBreakingXContextNonWeakA [
-    {*x} (EnglishStarVocalic - EnglishWeakTailVowelStar) |
-    {*x} EnglishStarConsonant
-];
-define EnglishBreakingXContextWeakTail [{*x} EnglishWeakTailVowelStar];
 # Breaking did not occur before *rj (R/T vol.2 p.182: "breaking did not occur
 # in OE before *rj"; cf. *harjaz > here, *arjana > erian — no diphthongization).
 define EnglishBreakingRContext [{*r} [EnglishStarConsonant - {*j}]];
-define EnglishBreakingLContext [{*l} EnglishStarConsonant];
-define EnglishBreakingLContextE [{*l} [{*x} | {*k} | {*g}]];
+define EnglishBreakingLContext [
+    {*l} [EnglishStarConsonant - [{*l}|{*j}]] |
+    {*l} {*l} [[ContextSegments - {*j}] | .#.]
+];
+define EnglishBreakingLContextE [{*l} [{*x} | {*w}]];
 # Short pre-w diphthongization excludes a following high front vocalic
 # (Luick p.139; Ringe-Taylor pp.187-188). Knee's dative remains short.
 define EnglishBreakingWContext [
@@ -2117,70 +2115,83 @@ define EnglishBreakingWContext [
 ];
 
 define OEBreakingA [
-    {*a} -> {*ea} || _ EnglishBreakingRContext,
-    {*a} -> {*ea} || _ EnglishBreakingLContext,
-    {*a} -> {*ēa} || _ EnglishBreakingXContextWeakTail,
-    {*a} -> {*ea} || _ EnglishBreakingXContextNonWeakA,
-    {*æ} -> {*ea} || _ EnglishBreakingRContext,
-    {*æ} -> {*ea} || _ EnglishBreakingLContext,
-    {*æ} -> {*ea} || _ EnglishBreakingHContext,
-    # Stressed variants: stressed *á also breaks to stressed *éa
-    {*á} -> {*éa} || _ EnglishBreakingRContext,
-    {*á} -> {*éa} || _ EnglishBreakingLContext,
-    {*á} -> {*ḗa} || _ EnglishBreakingXContextWeakTail,
-    {*á} -> {*éa} || _ EnglishBreakingXContextNonWeakA
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ EnglishBreakingLContext,
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ EnglishBreakingHContext
+] .o. [
+    {*ǽ} -> {*ea} || _ EnglishBreakingRContext,
+    {*ǽ} -> {*ea} || _ EnglishBreakingLContext,
+    {*ǽ} -> {*ea} || _ EnglishBreakingHContext
 ];
 
+# Keep initial plain and explicitly marked stress domains in separate compositions.
 define OEBreakingE [
-    {*e} -> {*eo} || _ EnglishBreakingRContext,
-    {*e} -> {*eo} || _ EnglishBreakingHContext,
-    {*e} -> {*eo} || _ EnglishBreakingWContext,
-    {*e} -> {*eo} || _ EnglishBreakingLContextE,
-    # Stressed variants
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingWContext,
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ EnglishBreakingLContextE,
+    {*e} -> {*eo} || .#. OEAnyConsonant* {*s} _ {*l} {*k}
+] .o. [
     {*é} -> {*éo} || _ EnglishBreakingRContext,
     {*é} -> {*éo} || _ EnglishBreakingHContext,
     {*é} -> {*éo} || _ EnglishBreakingWContext,
-    {*é} -> {*éo} || _ EnglishBreakingLContextE
+    {*é} -> {*éo} || _ EnglishBreakingLContextE,
+    {*é} -> {*éo} || {*s} _ {*l} {*k}
+] .o. [
+    {*è} -> {*eo} || _ EnglishBreakingRContext,
+    {*è} -> {*eo} || _ EnglishBreakingHContext,
+    {*è} -> {*eo} || _ EnglishBreakingWContext,
+    {*è} -> {*eo} || _ EnglishBreakingLContextE,
+    {*è} -> {*eo} || {*s} _ {*l} {*k}
 ];
 
 # Campbell §148: "i was broken, and appears as io (later eo in most dialects)"
 # The *ie outcome in WS comes from subsequent i-umlaut of *io (Campbell §201),
 # NOT from breaking directly. See DEV_NOTES.md "Comprehensive Analysis: Breaking
 # of *i and I-Umlaut of Diphthongs (2026-04-07)" for full documentation.
+define EnglishBreakingLContextI [{*l} {*x}];
 define OEBreakingI [
     {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingRContext,
     {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingLContextI,
     {*i} -> {*io} || .#. OEAnyConsonant* _ EnglishBreakingWContext
 ] .o. [
     {*í} -> {*ío} || _ EnglishBreakingRContext,
     {*í} -> {*ío} || _ EnglishBreakingHContext,
+    {*í} -> {*ío} || _ EnglishBreakingLContextI,
     {*í} -> {*ío} || _ EnglishBreakingWContext,
     {*ì} -> {*io} || _ EnglishBreakingRContext,
     {*ì} -> {*io} || _ EnglishBreakingHContext,
+    {*ì} -> {*io} || _ EnglishBreakingLContextI,
     {*ì} -> {*io} || _ EnglishBreakingWContext
 ];
 
+define OEBreakingLong [
+    {*ǣ} -> {*ēa} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*ē} -> {*ēo} || .#. OEAnyConsonant* _ EnglishBreakingHContext,
+    {*ī} -> {*īo} || .#. OEAnyConsonant* _ EnglishBreakingHContext
+] .o. [
+    {*ḗ} -> {*ḗo} || _ EnglishBreakingHContext,
+    {*ḯ} -> {*īo} || _ EnglishBreakingHContext
+];
 define OEBreaking FootCtx(OEBreakingA
-    .o. OEBreakingE
-    .o. OEBreakingI);
+    .o. OEBreakingE .o. OEBreakingI .o. OEBreakingLong
+    .o. [{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);
 
 # SC036: bounded LH weak rounding/raising (Luick §113; Goering §4.5.1.2).
 # The a>u rewrite compresses phonetic stages; its placement is not a date.
+# A carried secondary label does not exempt a from this same weight condition.
 define OELHWeakRaising Ctx([
-    {*a} -> {*u} || .#. EnglishStarConsonant* [{*á}|{*é}|{*í}|{*ó}|{*ú}]
+    [{*a}|{*à}] -> {*u} || .#. EnglishStarConsonant* [{*á}|{*é}|{*í}|{*ó}|{*ú}]
         EnglishStarConsonant _ {*l} EnglishStarConsonant
 ]);
 
 # The retired soul proxy remains documented in the SC036 adjudication.
 define OEInterStressRaising OELHWeakRaising;
 
-# SC037 reads graves first; SC038 then removes the secondary-stress annotation
-# before weak raising. This annotation lifetime is not a general stress-loss date.
-define OEStripSecondaryStress Ctx([
-    {*à} -> {*a},
-    {*è} -> {*e},
-    {*ò} -> {*o}
-]);
+# Decode secondary o here; low/front labels survive to breaking at SC044.
+# Annotation decoding is not a general historical stress-loss date.
+define OEStripSecondaryStress Ctx([{*ò} -> {*o}]);
 
 # OEAwwjResolution (SC029): resolution of the PWGmc geminate
 # *aww + *j to *au + *j. The Foma identifier is retained for this
@@ -2289,6 +2300,8 @@ define EAFBrighteningUnstressed Ctx([
 ]);
 define EAFBrighteningStressed [
     {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
+] .o. [
+    {*à} -> {*ǽ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
 ];
 # Long-vowel AFB clause for the surviving-bimoric outcome (R/T
 # vol.2 §3.1 pp.58-59 → §6.8.3 pp.299-300). The "*-ā" here is the
@@ -2790,8 +2803,8 @@ define OEUnstressedLongVowelShortening FootCtx(OEUnstressedLongVowelShortening1
 #
 # Quantity-sensitive medial prominence after the initial H(+L) or L+syllable
 # foot (Goering 2023 pp.79-84; McCully/Hogg 1990 pp.330-333).
-# SC038 still removes inherited accent at its existing position. These
-# temporary short-vowel graves are computed and decoded only inside SC040.
+# These temporary short-vowel graves are computed and decoded only inside
+# SC040, not inherited secondary labels carried through breaking.
 # No initial boundary is added: stranded onset consonants precede MPFirst
 # without contributing a nucleus or changing weight. See sc040-adjudication.md.
 define MPC OEAnyConsonant;

@@ -41,7 +41,8 @@ class FrontingComponentTests(unittest.TestCase):
         self.assertEqual(segmental_definition(text, "EAFBrightening"),
                          "[ EAFBrighteningStressed ]")
         self.assertEqual(definition(text, "EAFBrighteningStressed"),
-                         "[ {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.] ]")
+                         "[ {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.] ]"
+                         " .o. [ {*à} -> {*ǽ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.] ]")
         self.assertEqual(segmental_definition(text, "EAFBrighteningUnstressed"),
                          "[ {*a} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal] ]")
         self.assertEqual(segmental_definition(text, "EAFBrighteningLongFinal"),
