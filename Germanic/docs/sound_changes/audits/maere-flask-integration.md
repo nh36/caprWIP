@@ -140,6 +140,51 @@ accompanies this test-harness reconciliation. All 11 generality tests,
 including the fresh runtime assay and checks against the unchanged
 345-control historical observation, passed after this repair
 (`integration-generality-repair-e4fe66d68d13491f99d119b9fcd78193.receipt.json`).
-Complete strict
-serial/exclusive certification of the repaired candidate and PR landing
-remain to be recorded after execution.
+
+## Final combined-state certification
+
+The repaired candidate
+`06bd0abbd94da0e59dae34d7e7402e70269105c9` passed portable CI again:
+1969 tests, 98 explicitly skipped and 9781 passing subtests.
+Canonical refresh and status then passed with all graph nodes fresh.
+The complete strict serial run passed 2036 tests and 9821 subtests,
+with five prescribed historical-replay skips, in 3238.25 seconds.
+The subsequent exclusive evidence-interface run passed all 26 tests
+in 387.72 seconds, without concurrent canonical runtime work.
+
+| Final check | Receipt |
+|---|---|
+| Portable | `integration-final-portable-71be156162984ed7995370a79af504d2.receipt.json` |
+| Strict serial | `integration-final-strict-serial-2cbfec24b4a6437d8d8fd12bdd280753.receipt.json` |
+| Strict exclusive | `integration-final-strict-exclusive-105a5883e0a442ddbc173dd067d00ffa.receipt.json` |
+
+All three receipts attest the same clean commit and source identity
+`92ab4889f08a4da3d068c6296b6cff2508c926c82459ac5b4ae22cabc9670cb0`;
+none records a source change, failure or timeout. Both strict lanes
+were journaled together after execution. Independent portable CI also
+passed on PR11 for that repaired commit.
+
+The publication's sources and products remain byte-identical across the
+live-assay repair: only that assay, its test and this report changed
+after the successful build. Freshness was verified on the repaired
+candidate. The only post-strict edit is this report's receipt accounting,
+not a scientific, executable, test or publication change. This records
+dependency-based equivalence, not an exact-commit certificate for a
+subsequent report or merge commit.
+
+The landing vehicle is [PR11](https://github.com/nh36/caprWIP/pull/11),
+targeting `update`; PR10 must be closed as superseded only after that
+merge. GitHub's merge record and PR10's closing comment identify the
+actual landed SHA rather than anticipating it in this pre-merge certificate.
+SC044 remains separate and unstarted.
+
+```sh
+python3 Germanic/tools/adjudicate.py --refresh
+python3 Germanic/tools/adjudicate.py --status
+INDEX_VERBORUM_STRICT=1 ASSEMBLY_KEEP_DEBUG_TEX=1 \
+  bash Germanic/docs/assembly/build_capr_book_draft_docker.sh
+python3 Germanic/tools/run_portable_checks.py --workers 4
+cd Germanic/tests
+python3 -m pytest -q --ignore=test_evidence_interface.py
+python3 -m pytest -q test_evidence_interface.py
+```
