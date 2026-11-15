@@ -418,6 +418,26 @@ end-to-end gains need separate investigation, not another lookup cache.
 
 ### Isolated common-definition reuse
 
+SC037 controls now use an assertion-directed full/dart plan in the existing
+worker. Selecting only
+`test_sc037_intervention.py::test_selected_dart_protects_closed_final_pre_l_nonapplication`
+freshly evaluates its current endpoint and two tails, without claiming a
+394-row sweep. The default module retains every original assertion and all
+15 closeout tails. Its measured compiler inventory is eight complete roots,
+11 distinct staged suffixes and 28 component/tail exports, with 14 actual Foma
+subprocesses including fresh definitions. A smaller network inventory does not
+imply fewer subprocesses.
+
+The fixture reports actual costs through the terminal and the JUnit
+`sc037_execution` property; full raw results, requested owners, recipes,
+checkpoints and subprocess timings are in `.ci-results/sc037-full.json`
+or `sc037-dart.json`. These are invocation diagnostics, not reusable evidence.
+Any review adding a routine compile must identify the live assertion consuming
+it and record its observed cost and network/call extent. Partial or timed-out
+runs cannot establish a timing budget. See the
+[SC037 measurements](VALIDATION_PERFORMANCE_2026-11-15.md); its full checkpoint
+still exceeds ten minutes, and all strict promotion gates remain in force.
+
 The five current-runtime rust, SC035 generality/prosody, world migration and
 chronology assays opt into one **freshly prepared, disposable definition image
 per pytest session**. `anglo_frisian_experiments.compile_isolated()` loads that
