@@ -7,6 +7,7 @@ import tempfile
 import time
 from unittest.mock import patch
 
+from anglo_frisian_experiments import foma_domain
 
 def remainder_plans(variants):
     baseline = variants["current_identity"]
@@ -78,16 +79,6 @@ def continue_outputs(states, lookup):
             if output not in outputs:
                 outputs.append(output)
     return outputs
-
-
-def foma_domain(forms):
-    literals = []
-    for form in sorted(set(forms)):
-        if not form or any(char in "\r\n\t" for char in form):
-            raise ValueError("unsupported finite-domain input; epsilon requires full composition")
-        # Spaces prevent adjacent escaped characters becoming one multichar symbol.
-        literals.append(" ".join("%" + char for char in form))
-    return "[" + " | ".join(literals) + "]" if literals else "[0 - 0]"
 
 
 def run_controls(payload, profile):

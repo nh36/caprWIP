@@ -418,25 +418,43 @@ end-to-end gains need separate investigation, not another lookup cache.
 
 ### Isolated common-definition reuse
 
-SC037 controls now use an assertion-directed full/dart plan in the existing
-worker. Selecting only
-`test_sc037_intervention.py::test_selected_dart_protects_closed_final_pre_l_nonapplication`
-freshly evaluates its current endpoint and two tails, without claiming a
-394-row sweep. The default module retains every original assertion and all
-15 closeout tails. Its measured compiler inventory is eight complete roots,
-11 distinct staged suffixes and 28 component/tail exports, with 14 actual Foma
-subprocesses including fresh definitions. A smaller network inventory does not
-imply fewer subprocesses.
+SC037 controls take the union of probes owned by the selected pytest nodes.
+Unknown owners and missing required results fail explicitly. Current raw-input
+endpoints use manifest-validated production; canonical stage checks use
+cumulative raw-input snapshots, while independently staged forms use their
+declared remainder. Counterfactuals, components and closeout tails are evaluated
+live over the exact requested finite input domains. The default complete module
+retains all comparisons and all 15 closeout tail definitions.
+
+The routine SC037 checkpoint excludes only `sc037_extended`: the full
+*seleweard* comparison (`old-early`, `bad-breaking`) and early labial realization
+(`early-b`). Reconsidering compound syncope, breaking or compound input hypotheses
+requires the former; changes to labial-realization placement require the latter.
+Use the complete module for broad grammar changes, ambiguous scope, or machinery
+changes potentially affecting every comparison. The complete module remains in
+final strict certification, without this marker exclusion.
+
+The measured owning/planning/compiler selection plus portable validation took
+8m11s, including fresh shared definitions, the unchanged all-row protected
+production-baseline owner and the separate live HVD census. See the
+[SC037 checkpoint report](VALIDATION_PERFORMANCE_SC037_CHECKPOINT.md) for the
+exact command, dart-plus-nettle worked example, coverage ownership, semantic
+comparisons and per-variant costs. No regeneration was required by these
+validation-only edits; a source-changing checkpoint must also include any
+required canonical refresh/status.
 
 The fixture reports actual costs through the terminal and the JUnit
 `sc037_execution` property; full raw results, requested owners, recipes,
-checkpoints and subprocess timings are in `.ci-results/sc037-full.json`
-or `sc037-dart.json`. These are invocation diagnostics, not reusable evidence.
+checkpoints and subprocess timings are in `.ci-results/sc037-selected.json`.
+Session preparation is separately recorded in
+`.ci-results/isolated-definitions.json`; worker time alone excludes that cost.
+These are invocation diagnostics, not reusable evidence.
 Any review adding a routine compile must identify the live assertion consuming
 it and record its observed cost and network/call extent. Partial or timed-out
-runs cannot establish a timing budget. See the
-[SC037 measurements](VALIDATION_PERFORMANCE_2026-11-15.md); its full checkpoint
-still exceeds ten minutes, and all strict promotion gates remain in force.
+runs cannot establish a timing budget. The
+[previous SC037 measurements](VALIDATION_PERFORMANCE_2026-11-15.md) remain the
+historical comparison, not the current checkpoint estimate. All strict
+promotion gates remain in force.
 
 The current chronology assay validates the canonical manifest, evaluates
 identity through production and derives each counterfactual's cumulative
@@ -451,8 +469,8 @@ VALIDATION_PERFORMANCE_CHRONOLOGY_2026-11-15.md): that owning-plus-portable
 checkpoint took 8m06s, but final strict certification still has no ten-minute
 guarantee.
 
-The five current-runtime rust, SC035 generality/prosody, world migration and
-chronology assays opt into one **freshly prepared, disposable definition image
+The current-runtime rust, SC035 generality/prosody, world migration, chronology
+and selected SC037 assays opt into one **freshly prepared, disposable definition image
 per pytest session**. `anglo_frisian_experiments.compile_isolated()` loads that
 table before compiling the unchanged experimental definitions, compositions
 and output bins. The chronology fixture uses the same source-prefix helper.

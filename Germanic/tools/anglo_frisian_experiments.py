@@ -515,6 +515,16 @@ def definition_image_source(
     return f"load defined {image}\n{macros}\nclear stack\n"
 
 
+def foma_domain(forms):
+    literals = []
+    for form in sorted(set(forms)):
+        if not form or any(char in "\r\n\t" for char in form):
+            raise ValueError("unsupported finite-domain input; epsilon requires full composition")
+        # Spaces prevent adjacent escaped characters becoming one multichar symbol.
+        literals.append(" ".join("%" + char for char in form))
+    return "[" + " | ".join(literals) + "]" if literals else "[0 - 0]"
+
+
 def compile_isolated(
     source: Path, recipe: dict, probes: list[dict], directory: Path, *, components_only: bool = False,
     diagnostic_stages: list[str] | None = None, use_definition_image: bool = True,

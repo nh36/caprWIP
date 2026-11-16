@@ -931,6 +931,18 @@ with tempfile.TemporaryDirectory(prefix="capr_definition_equivalence_") as tempo
     assert sorted(results[0][0]) == ["b", "c"]
     assert results[0][1] == [] and results[0][2] == ["d"]
     assert results[0][0] == results[0][3]
+    os.environ["CAPR_AF_DEFINITION_ISOLATED"] = "1"
+    mismatch = root / "mismatch"
+    mismatch.mkdir()
+    bins = compile_isolated(source, recipe, [], mismatch, components_only=True)
+    assert not (mismatch / "experiment.foma").read_text().startswith("load defined ")
+    assert batch_apply_down(bins["component:Probe"], ["a", "x", "d", "a", "e"]) == results[0]
+    del os.environ["CAPR_AF_DEFINITION_ISOLATED"]
+    shared = root / "shared"
+    shared.mkdir()
+    bins = compile_isolated(source, recipe, [], shared, components_only=True)
+    assert (shared / "experiment.foma").read_text().startswith("load defined ")
+    assert batch_apply_down(bins["component:Probe"], ["a", "x", "d", "a", "e"]) == results[0]
     print(json.dumps(results))
 """
     result = run_in_runner("python3 -c " + shlex.quote(script), text=True,
