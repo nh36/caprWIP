@@ -79,7 +79,11 @@ define EnglishBreakingLContextE [{*l} [{*x} | {*w}]];
 
 *seolh* 'seal' and *eolh* 'elk' support breaking before \emph{lh}.
 *āseolcan* 'languish' does not license a general \emph{lk} rule:
-*melcan* 'milk' remains unbroken. The model keeps only the narrower
+*melcan* 'milk' remains unbroken and rules out obligatory breaking in
+this environment. Wright and Wright list *meolcan* 'milk' beside Anglian
+*melcan*, but give no manuscript locator there; their listing alone does
+not verify an attestation or establish its dialectal distribution
+[@Wright1908, p.46, §84]. The model keeps only the narrower
 preceding-\emph{s} proxy for that exceptional comparison; its ultimate
 historical explanation and dialectal reach are less secure than
 \emph{lh}. No independently verified \emph{lg} witness supports the old
@@ -205,7 +209,11 @@ a claim to supply every later dialect-specific merger or loss
 Under the conventional account the stressed low-vowel contribution of
 [SC043 EAFBrightening](#rule-EAFBrightening) feeds breaking. The older
 whole-rule displacement also activated a back-\emph{a} fallback and
-therefore was not, by itself, a clean test of that history.
+therefore was not, by itself, a clean test of that history. The
+[26-row front-only intervention](../audits/sc044-adjudication.md#front-only-brightening-displacement)
+records each changed endpoint when the fallback-free rule is moved
+before stressed brightening. This is not the 29-row ambiguous
+whole-bundle intervention.
 
 In *feoh* 'cattle' and *feohtan* 'fight', breaking removes the front-vowel
 environment while preserving \emph{x}. They do not undergo a subsequent
@@ -213,11 +221,41 @@ live [SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization
 change. Premature effective palatalization would instead remove the
 velar breaking trigger. *hliehhan* 'laugh' contributes something different:
 the second fricative of the geminate remains next to \emph{j} and does
-undergo the following rule. Hogg's *feoh* argument concerns effective
+undergo the following rule. The
+[12-row fricative-palatalization intervention](../audits/sc044-adjudication.md#breaking-after-fricative-palatalization)
+records the separate displacement of breaking after that rule.
+Hogg's *feoh* argument concerns effective
 \emph{h}-palatalization, while Fulk correctly distinguishes that evidence
 from the dating of all \emph{k/g} articulation. Neither argument proves
 that English and later Frisian breaking were one inherited event
 [@Hogg1979, pp.90--92; @Fulk1998, pp.145--146, 152].
+
+The West Saxon comparison with
+[SC055 OEIUmlaut](#rule-OEIUmlaut) concerns a different contrast.
+In live *bielġ* 'belly, bag', \emph{*bálgiz} has \emph{æ} after
+brightening, \emph{ea} after breaking and \emph{ie} after mutation.
+At the same prebreaking state, with consonants and surviving \emph{i}
+held constant, reversing the vowel operations gives \emph{æ > e},
+not \emph{ea > ie}: revised \emph{e}-breaking leaves \emph{e}
+before \emph{lg}. The live remainder gives predicted [*belġ*]{.pred},
+not *bielġ*. This supports the conventional West Saxon sequence for
+this covered-lateral witness [@RingeTaylor2014, p.243, §6.6.3].
+
+For *hliehhan*, the corresponding local comparison is \emph{æ > ea > ie}
+against \emph{æ > e > eo}, with both fricatives and \emph{j} unchanged
+inside that comparison. Moving mutation early while retaining breaking
+before fricative palatalization gives predicted [*hleohhan*]{.pred}.
+Moving the entire breaking rule later also lets both fricatives
+palatalize first and instead gives predicted [*hlehhan*]{.pred}.
+Neither reversed remainder restores \emph{ie}. Ringe and Taylor's
+reconstruction already marks a palatalized geminate before breaking;
+CAPR's explicit \emph{j}-adjacent consonantal rewrite follows it.
+These are not interchangeable consonantal histories
+[@RingeTaylor2014, pp.240--244, §6.6.3]. The
+[paired West Saxon intervention record](../audits/sc044-adjudication.md#west-saxon-vowel-order-follow-up)
+preserves the exact forms and both displacement definitions. It supports
+the two selected West Saxon histories, not a universal date for every
+component or dialect.
 
 ### The early Anglian alternative
 
@@ -225,11 +263,24 @@ Versloot's late Anglian \emph{rC} analysis makes a different prediction
 for mutation-created \emph{e}. Given \emph{*farmjan-}, an early-breaking
 account gives fronting, breaking and mutation, with final short
 \emph{e}; post-mutation breaking restricted to \emph{rm} instead gives
-\emph{eo}. Épinal *feormat* 'nourished' favours the latter under that
-reconstruction. Pheifer separately records Erfurt *caeormad* and the
-Corpus parallel; one manuscript's spelling must not be silently
-substituted for another [@Pheifer1974, p.22, no.402;
+\emph{eo}. Épinal *feormat* 'fosters, nourishes', a third-person singular
+present, favours the latter only under that reconstruction. Pheifer's
+§70 identifies the Old English inflection. The text and apparatus to
+no.402 give Latin *fouit* in Épinal and Erfurt, but *fouet* in Corpus;
+the Latin variants do not change the Old English parse. Pheifer
+separately records Erfurt *caeormad* and the Corpus parallel; one
+manuscript's spelling must not be silently substituted for another
+[@Pheifer1974, p.lxxxii, §70, p.22, no.402;
 @Versloot2025, pp.130--132, §§5.4--5.5].
+
+The input premise is substantive. Lloyd and Lühr also consider an
+original-\emph{e} analysis, deriving the verbs from North-West-Germanic
+\emph{*ferma(n)-}, while leaving the deeper etymology problematic.
+On that alternative either Anglian ordering can yield \emph{eo};
+*feormat* is then not an independent date for breaking after mutation.
+Their proposal is an alternative, not a verified replacement for every
+part of the \emph{*farmjan-} history
+[@LloydLuhr2007, cols.492--493, s.v. \emph{formôn}].
 
 An original-front-vowel analysis of *geormantlab* 'mallow' can give
 \emph{eo} in both orders; its complete etymology remains qualified by

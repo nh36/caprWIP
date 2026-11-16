@@ -96,8 +96,8 @@ accept	Germanic/docs/lexeme_reports/model_entries/2217-still-stillan.model.md:21
 accept	Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:28	strēzan	oe		comparison_form	Anglian OE comparison form
 ignore	Germanic/docs/lexeme_reports/model_entries/2252-thousand-þūsend.model.md:47	thousand				ordinary English gloss word in the lexical note
 accept	Germanic/docs/lexeme_reports/model_entries/2257-tide-tīd.model.md:33	tīdan	oe		comparison_form	separate OE weak-verb comparator in the lexical note
-accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:46	hleahtor	oe		comparison_form	related OE noun cited as comparison evidence
-accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:47	*hlahtraz	pgmc		comparison_form	related PGmc noun cited as comparison evidence
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:56	hleahtor	oe		comparison_form	related OE noun cited as comparison evidence
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57	*hlahtraz	pgmc		comparison_form	related PGmc noun cited as comparison evidence
 defer	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:46	*neahti	preoe		comparison_form	intermediate model-stage form in the night development chain
 defer	Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:66	*wér-uldu	preoe		comparison_form	intermediate compound stage in the world development chain
 defer	Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:94	*lizniþ	pgmc		source_protoform	Jasanoff1973 p.868 conditional lost third-singular proposal, not the selected cell or recovered paradigm.

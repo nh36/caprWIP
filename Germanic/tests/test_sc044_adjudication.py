@@ -118,3 +118,46 @@ def test_complete_selected_records_are_conserved(observed):
     assert all(row["identical_record"] == "1" for row in rows)
     assert observed["adopted"]["corpus_delta"] == []
     assert observed["adopted"]["summary"] == observed["summary"]
+
+
+@pytest.mark.runtime
+def test_west_saxon_vowel_order_with_live_remainder(isolated_definitions, record_testsuite_property):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("sc044_west_saxon", AUDIT / "west_saxon.py")
+    experiment = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(experiment)
+    result = experiment.capture(isolated_definitions, ROOT)
+    assert result["endpoints"] == [["bielġ"], ["hliehhan"]]
+    assert result["live"]["EAFBrightening"] == [
+        ["*b*æ*l*g*i"], ["*x*l*æ*x*x*j*a*n*ą"]]
+    queries = result["queries"]
+    assert queries["breaking"]["outputs"] == [
+        ["*b*ea*l*g*i"], ["*x*l*ea*x*x*j*a*n*ą"]]
+    assert queries["breaking_then_mutation"]["outputs"] == [
+        ["*b*ie*l*g*i"], ["*x*l*ie*x*x*j*a*n*ą"]]
+    assert queries["mutation"]["outputs"] == [
+        ["*b*e*l*g*i"], ["*x*l*e*x*x*j*a*n*ą"]]
+    assert queries["mutation_then_breaking"]["outputs"] == [
+        ["*b*e*l*g*i"], ["*x*l*eo*x*x*j*a*n*ą"]]
+    assert result["live"]["OEVelarFricativePalatalization"][1] == [
+        "*x*l*ea*x*ç*j*a*n*ą"]
+    assert queries["mutation_early:palatalization"]["outputs"][1] == [
+        "*x*l*eo*x*ç*j*a*n*ą"]
+    assert queries["breaking_late:palatalization"]["outputs"][1] == [
+        "*x*l*æ*ç*ç*j*a*n*ą"]
+    assert queries["mutation_early:second_operation"]["outputs"] == [
+        ["*b*e*l*g*i"], ["*x*l*eo*x*x*j*a*n*ą"]]
+    assert queries["breaking_late:second_operation"]["outputs"] == [
+        ["*b*e*l*ʝ*i"], ["*x*l*e*ç*ç*j*ą*n"]]
+    for variant, laugh in (("mutation_early", "*x*l*eo*x*ç*j*ą*n"),
+                           ("breaking_late", "*x*l*e*ç*ç*j*ą*n")):
+        for checkpoint in ("before_late_palatal", "late_palatal"):
+            assert queries[variant + ":" + checkpoint]["outputs"] == [
+                ["*b*e*l*ʝ*i"], [laugh]]
+    assert queries["mutation_early:final"]["outputs"] == [["belġ"], ["hleohhan"]]
+    assert queries["breaking_late:final"]["outputs"] == [["belġ"], ["hlehhan"]]
+    assert result["cost"]["networks"] == 14
+    assert result["cost"]["compiler_calls"] == 1
+    assert result["cost"]["definition_preparation_calls"] == 0
+    assert result["cost"]["image_loaded"] == bool(isolated_definitions)
+    record_testsuite_property("sc044_west_saxon", json.dumps(result, ensure_ascii=False))

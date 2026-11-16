@@ -35,11 +35,15 @@ below retain their dated evidential role, not production authority.
   control; bounded A excludes it and permits weak twofold-shaped raising.
   These are explicit phonological controls, not new corpus attestations.
   Actual rainbow and lung remain unchanged.
-- Adopted sequence: early short-i apocope, SC015, final-z loss, SC037
-  retaining earlier grave information, SC038 removing the grave, SC036,
+- Adopted sequence, with the SC044 annotation-carry correction: early
+  short-i apocope, SC015, final-z loss, SC037 retaining earlier grave
+  information, SC038 retaining low/front secondary labels, SC036
+  rewriting marked à under its unchanged light-initial condition,
   SC059 and SC040. The later high-vowel apocope has no final vowel to
   remove in this nominative. Narrow u-only back mutation also succeeds.
   Soul remains protected by an explicit temporary technical branch.
+  The earlier general grave-removal description is superseded; annotation
+  lifetime is not an independently established historical prominence date.
 
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

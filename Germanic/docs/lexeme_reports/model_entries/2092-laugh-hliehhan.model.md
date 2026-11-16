@@ -42,8 +42,18 @@ supplies the evidence followed here.
 
 From [xláxjaną]{.recon} ‘laugh’, West Germanic j-gemination yields the doubled consonant
 [@Campbell1959, §407]. Ringe and Taylor derive Old English [`hliehhan`]{.iv lang=oe sort=hliehhan role=comparison_form} 'laugh' from the
-j-present branch via breaking before the palatalized geminate
-[@RingeTaylor2014, 240]. They separately compare the related noun `hleahtor`
+j-present branch with a palatalized geminate already present in their
+West Germanic reconstruction, before fronting and breaking
+[@RingeTaylor2014, p.240, §6.6.3]. CAPR does not encode that consonantal
+sequence identically: [SC044 OEBreaking](#rule-OEBreaking) changes the
+vowel while both fricatives are still \emph{x}; only then does
+[SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization)
+change the \emph{j}-adjacent member, giving \emph{xçj}.
+The following [SC055 OEIUmlaut](#rule-OEIUmlaut) supplies \emph{ie}.
+The controlled comparison in SC044 distinguishes that live vowel history
+from both mutation-first and whole-rule displacement, rather than treating
+Ringe and Taylor's geminate notation as a transcript of CAPR.
+They separately compare the related noun `hleahtor` 'laughter'
 as the outcome of [hlahtraz]{.recon} ‘laugh’ [@RingeTaylor2014, 328].
 
 ### Branch comparison

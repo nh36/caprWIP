@@ -263,6 +263,157 @@ In live laugh `*xlæxxjan- -> *xleaxxjan- -> *xleaxçjan-`;
 reversal instead gives `*xlæççjan-` before breaking. No independent
 early-SC045 run is claimed for the registry's reverse representation.
 
+#### Front-only brightening displacement
+
+The following is the complete word-by-word `front-before043` intervention,
+not the ambiguous 29-row whole-rule trial. It moves fallback-free breaking
+before stressed SC043 on the pinned `54b15a2d` control. These are archived
+observations from `observed.json`, not new runs on the secondary-stress repair.
+All 26 changed output sets are singleton; matches fall from 386 to 360.
+
+| Concept | Selected input | Control | Displaced |
+|---|---|---|---|
+| belly | *bálgiz | bielġ | belġ |
+| beard | *bárdaz | beard | bærd |
+| flax | *fláxsą | fleax | flæhs |
+| fall | *fállaną | feallan | fallan |
+| fold | *fálθaną | fealdan | fældan |
+| fern | *fárnaz | fearn | færn |
+| gall | *gállô | ġealla | galla |
+| malt | *máltaz | mealt | mælt |
+| march | *márkō | mearc | mærc |
+| might | *máxtiz | miht | meht |
+| night | *náxti | niht | neht |
+| slay | *sláxaną | slēan | slæan |
+| spar | *spárrô | spearra | sparra |
+| salve | *sálbō | sealf | sælf |
+| salt | *sáltą | sealt | sælt |
+| wield | *wáldaną | wealdan | wældan |
+| wold | *wálθuz | weald | wæld |
+| warp | *wárpą | wearp | wærp |
+| wart | *wártōn | wearte | wærte |
+| wax (verb) | *wáxsaną | weaxan | wæhsan |
+| wax (noun) | *wáxsą | weax | wæhs |
+| laugh | *xláxjaną | hliehhan | hlehhan |
+| hold | *xáldaną | healdan | hældan |
+| hall | *xállō | heall | hall |
+| harvest | *xárbistuz | hierfest | herfest |
+| harm | *xármaz | hearm | hærm |
+
+#### Breaking after fricative palatalization
+
+This is the separate complete `after045` intervention: original breaking
+moved after voiceless fricative palatalization, on the same pinned control.
+All twelve changed output sets are singleton; matches fall to 374.
+
+| Concept | Selected input | Control | Displaced |
+|---|---|---|---|
+| flax | *fláxsą | fleax | flæhs |
+| fee | *féx | feoh | feh |
+| fight | *féxtaną | feohtan | fehtan |
+| knight | *knéxtaz | cniht | cneht |
+| might | *máxtiz | miht | meht |
+| night | *náxti | niht | neht |
+| slay | *sláxaną | slēan | slæan |
+| six | *séxs | six | sehs |
+| ten | *téxun | tēon | teon |
+| wax (verb) | *wáxsaną | weaxan | wæhsan |
+| wax (noun) | *wáxsą | weax | wæhs |
+| laugh | *xláxjaną | hliehhan | hlehhan |
+
+#### West Saxon vowel-order follow-up
+
+The falsifiable question was whether the actual SC044/SC055 vowel
+operations commute on the selected West Saxon inputs when consonants and
+the surviving mutation trigger are held fixed. This follow-up retains
+the existing verdict, order, corpus and production source: FST SHA-256
+`74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b`.
+The original complete census and its 50 phonological versus 51 mechanical
+SC044 applications remain the before-state; no new census population or
+chronology edge is adopted.
+
+`west_saxon.py` uses manifest-validated production endpoints and cumulative
+snapshots reached from the actual raw inputs. Both rows enter the finite
+counterfactual immediately before `OEBreaking`, at the live
+`EAFBrighteningLongFinal` output. Source, plan, worker, corpus and helper
+hashes are pinned in the separate immutable experiment snapshot.
+
+| Checkpoint | bielġ 'belly, bag', row 1945 | hliehhan 'laugh', row 2092 |
+|---|---|---|
+| Selected raw input | `bálgiz` | `xláxjaną` |
+| After stressed brightening / common entry | `*b*æ*l*g*i` | `*x*l*æ*x*x*j*a*n*ą` |
+| Live after SC044 | `*b*ea*l*g*i` | `*x*l*ea*x*x*j*a*n*ą` |
+| Live after SC045 | `*b*ea*l*g*i` | `*x*l*ea*x*ç*j*a*n*ą` |
+| Live after SC055 | `*b*ie*l*ʝ*i` | `*x*l*ie*x*ç*j*ą*n` |
+| Live normal endpoint | `bielġ` | `hliehhan` |
+| Local SC044 then SC055, no intervening rules | `*b*ie*l*g*i` | `*x*l*ie*x*x*j*a*n*ą` |
+| Local SC055 alone | `*b*e*l*g*i` | `*x*l*e*x*x*j*a*n*ą` |
+| Local SC055 then SC044, no intervening rules | `*b*e*l*g*i` | `*x*l*eo*x*x*j*a*n*ą` |
+
+The local pairs have identical consonants and the same surviving i/j.
+The early mutation gives e in both rows; revised e-breaking does not
+break before lg, but does give eo before the still-velar fricative in
+laugh. Thus the local reverse prediction is e for belly, not e for every
+environment. Both rows distinguish the local operations from the live
+West Saxon ie path. The current consonantal realization is not silently
+substituted into one side of that controlled pair.
+
+Two full live remainders distinguish vowel order from a consonantal
+displacement effect. Write B for SC044, U for SC055, M for the unchanged
+intervening sequence and T for the entire unchanged suffix after SC055.
+The current order is B·M·U·T. The finite variants are U·B·M·T
+(`mutation_early`) and M·U·B·T (`breaking_late`); each consumes the exact
+two common-entry forms, not raw PGmc input.
+
+| Full variant / checkpoint | Belly | Laugh |
+|---|---|---|
+| U·B·M·T after B | `*b*e*l*g*i` | `*x*l*eo*x*x*j*a*n*ą` |
+| U·B·M·T after fricative palatalization | `*b*e*l*g*i` | `*x*l*eo*x*ç*j*a*n*ą` |
+| U·B·M·T final | `belġ` | `hleohhan` |
+| M·U·B·T after fricative palatalization, before U/B | `*b*æ*l*g*i` | `*x*l*æ*ç*ç*j*a*n*ą` |
+| M·U·B·T after B | `*b*e*l*ʝ*i` | `*x*l*e*ç*ç*j*ą*n` |
+| M·U·B·T final | `belġ` | `hlehhan` |
+
+No rule restores ie in either reversed remainder. In particular the
+recorded before/after `OEWsPalatalUmlaut` states are identical: its ht/hp/hs
+environments are not the laugh cluster. Belly's two reversed experiments
+converge on belġ; laugh's do not, because moving whole breaking past
+SC045 also changes x·x·j to ç·ç·j, rather than the live x·ç·j.
+The local breaking-first vowels agree with the live ie results despite
+deliberately omitting intervening consonantal changes. Agreement of those
+vowels is not identity of the complete intermediate strings.
+
+Ringe and Taylor §6.6.3, pp.240–244, distinguish the West Saxon ie
+outcomes of broken ea from non-West-Saxon outcomes. Their p.243 balgiz
+example directly supports the covered-lateral vowel path; their p.240
+laugh derivation already marks a palatalized geminate in the West
+Germanic reconstruction. The PDF notation was checked visually. CAPR
+instead retains xx through breaking and explicitly changes the
+j-adjacent fricative afterwards. The experiments support these two
+selected West Saxon vowel histories under the current formalization,
+not the identity of those consonantal reconstructions or a global
+reordering of every breaking/mutation component. Wierman and iermþ
+remain literature examples, not unexecuted extra experimental witnesses.
+
+The new source-bound comparison and capture receipts are preserved in
+`sc044-breaking-evidence/west-saxon-evidence.zip`, with inspectable
+`west-saxon-observed.json`. The original `experiments.zip` remains byte
+identical (SHA-256
+`64cdb3963efdc5d7612df52cda4611359c1a28ba6997dbcca8db192f4ec3b157`);
+its archive-review issue remains open. The new comparison does not repair
+or regenerate that historical archive.
+
+The new live regression is
+`test_sc044_adjudication.py::test_west_saxon_vowel_order_with_live_remainder`.
+It compiles fourteen finite two-input networks in one call through the
+matching isolated session image, with no private image preparation or
+full-root/corpus variant. The first owning run measured 4.155 s in the
+actual Foma child and 1,229,204 KiB peak RSS (`wait4`, Linux), 4.893 s
+worker time and 5.97 s pytest call time. Shared fresh definitions took
+452.490 s; the paired integrated selection, including both affected
+SC037 owners and every SC044 control, passed 30 tests in 469.36 s.
+These are measurements of that invocation, not a new global timing claim.
+
 ### A discriminating early Anglian test
 
 The finite comparison explicitly gives the two histories different
@@ -272,6 +423,18 @@ rm-breaking history gives æ→e→eo. The actual observed finite relations
 produce these distinct outputs. Épinal feormat therefore favours the late
 account under that reconstruction. It is not corpus parity masquerading
 as discrimination, and not a result against the rival.
+
+The Old English form is third-person singular present feormat 'fosters'
+or 'nourishes', as Pheifer §70, p.lxxxii, explicitly parses it. No.402,
+p.22, and its apparatus give Latin fouit in Épinal and Erfurt, against
+fouet in Corpus. The Latin tense variants do not turn the Old English
+form into a past tense. Lloyd and Lühr 2007, III, cols.492–493,
+s.v. formôn (online article 45160, directly consulted), consider deriving
+the verbs from original-e North-West-Germanic *ferma(n)- while expressly
+retaining etymological difficulties. On that alternative either Anglian
+order can yield eo; the farmjan-based contrast is not reconstruction-free
+chronology evidence. This is a source alternative, not a new executable
+trial or an unqualified adoption of a complete protoform.
 
 Original-front *germ- can yield eo in both orders. Pheifer's qualification
 of geormantlab's etymology and t remains important: the complete preform
@@ -296,6 +459,16 @@ farmjan reconstruction, the vowel identity immediately before breaking,
 and a wider regular Anglian rm distribution would decide how far the
 late account should be extended. Later, differently conditioned Frisian
 breaking supplies comparative plausibility, not a shared inherited date.
+
+For the lateral negative, unbroken melcan rules out obligatory breaking
+in that environment, not every reported broken variant. Wright and
+Wright 1908 §84, p.46, list meolcan and Anglian melcan without a manuscript
+locator. The original 1908 text was checked; the listing does not by
+itself verify an attestation or the distribution of a particular token.
+No independent manuscript claim is made here. The two weorold passages
+now carry à to SC036's existing light-initial rewrite, and the laugh
+article distinguishes the handbook's palatalized geminate reconstruction
+from CAPR's explicit post-breaking j-adjacent rewrite.
 
 ## Verdict
 

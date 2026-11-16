@@ -1,0 +1,562 @@
+{
+  "snapshot_id": "sc044-west-saxon-69b6e6ce",
+  "result": {
+    "source_sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b",
+    "entry": {
+      "stage": "OEBreaking",
+      "side": "before",
+      "forms": [
+        "*b*æ*l*g*i",
+        "*x*l*æ*x*x*j*a*n*ą"
+      ]
+    },
+    "rows": [
+      {
+        "row_id": "1945",
+        "input": "bálgiz",
+        "target": "bielġ"
+      },
+      {
+        "row_id": "2092",
+        "input": "xláxjaną",
+        "target": "hliehhan"
+      }
+    ],
+    "live": {
+      "EAFBrightening": [
+        [
+          "*b*æ*l*g*i"
+        ],
+        [
+          "*x*l*æ*x*x*j*a*n*ą"
+        ]
+      ],
+      "EAFBrighteningLongFinal": [
+        [
+          "*b*æ*l*g*i"
+        ],
+        [
+          "*x*l*æ*x*x*j*a*n*ą"
+        ]
+      ],
+      "OEBreaking": [
+        [
+          "*b*ea*l*g*i"
+        ],
+        [
+          "*x*l*ea*x*x*j*a*n*ą"
+        ]
+      ],
+      "OEVelarFricativePalatalization": [
+        [
+          "*b*ea*l*g*i"
+        ],
+        [
+          "*x*l*ea*x*ç*j*a*n*ą"
+        ]
+      ],
+      "OEIUmlaut": [
+        [
+          "*b*ie*l*ʝ*i"
+        ],
+        [
+          "*x*l*ie*x*ç*j*ą*n"
+        ]
+      ],
+      "OEWsPalatalUmlaut": [
+        [
+          "*b*ie*l*ʝ*i"
+        ],
+        [
+          "*x*l*ie*x*ç*j*ą*n"
+        ]
+      ]
+    },
+    "endpoints": [
+      [
+        "bielġ"
+      ],
+      [
+        "hliehhan"
+      ]
+    ],
+    "queries": {
+      "breaking": {
+        "members": [
+          "OEBreaking"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*ea*l*g*i"
+          ],
+          [
+            "*x*l*ea*x*x*j*a*n*ą"
+          ]
+        ]
+      },
+      "mutation": {
+        "members": [
+          "OEIUmlaut"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*g*i"
+          ],
+          [
+            "*x*l*e*x*x*j*a*n*ą"
+          ]
+        ]
+      },
+      "breaking_then_mutation": {
+        "members": [
+          "OEBreaking",
+          "OEIUmlaut"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*ie*l*g*i"
+          ],
+          [
+            "*x*l*ie*x*x*j*a*n*ą"
+          ]
+        ]
+      },
+      "mutation_then_breaking": {
+        "members": [
+          "OEIUmlaut",
+          "OEBreaking"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*g*i"
+          ],
+          [
+            "*x*l*eo*x*x*j*a*n*ą"
+          ]
+        ]
+      },
+      "mutation_early:palatalization": {
+        "members": [
+          "OEIUmlaut",
+          "OEBreaking",
+          "OEVelarFricativePalatalization"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*g*i"
+          ],
+          [
+            "*x*l*eo*x*ç*j*a*n*ą"
+          ]
+        ]
+      },
+      "mutation_early:second_operation": {
+        "members": [
+          "OEIUmlaut",
+          "OEBreaking"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*g*i"
+          ],
+          [
+            "*x*l*eo*x*x*j*a*n*ą"
+          ]
+        ]
+      },
+      "mutation_early:before_late_palatal": {
+        "members": [
+          "OEIUmlaut",
+          "OEBreaking",
+          "OEVelarFricativePalatalization",
+          "OEARestoration",
+          "OEHeavySyllableNasalApocope",
+          "OESecondaryNasalization",
+          "SieversLawSyncope",
+          "OESkPalatalization",
+          "OEVelarPalatalization",
+          "OEPrefixAReduction",
+          "OEPostVelarWLoss",
+          "OEWsPalatalDiphthongization",
+          "OEWLossBeforeI",
+          "OELatePalatalDiphthong",
+          "OEJClusterCoalescence",
+          "OEBackMutation"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*ʝ*i"
+          ],
+          [
+            "*x*l*eo*x*ç*j*ą*n"
+          ]
+        ]
+      },
+      "mutation_early:late_palatal": {
+        "members": [
+          "OEIUmlaut",
+          "OEBreaking",
+          "OEVelarFricativePalatalization",
+          "OEARestoration",
+          "OEHeavySyllableNasalApocope",
+          "OESecondaryNasalization",
+          "SieversLawSyncope",
+          "OESkPalatalization",
+          "OEVelarPalatalization",
+          "OEPrefixAReduction",
+          "OEPostVelarWLoss",
+          "OEWsPalatalDiphthongization",
+          "OEWLossBeforeI",
+          "OELatePalatalDiphthong",
+          "OEJClusterCoalescence",
+          "OEBackMutation",
+          "OEWsPalatalUmlaut"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*ʝ*i"
+          ],
+          [
+            "*x*l*eo*x*ç*j*ą*n"
+          ]
+        ]
+      },
+      "mutation_early:final": {
+        "members": [
+          "OEIUmlaut",
+          "OEBreaking",
+          "OEVelarFricativePalatalization",
+          "OEARestoration",
+          "OEHeavySyllableNasalApocope",
+          "OESecondaryNasalization",
+          "SieversLawSyncope",
+          "OESkPalatalization",
+          "OEVelarPalatalization",
+          "OEPrefixAReduction",
+          "OEPostVelarWLoss",
+          "OEWsPalatalDiphthongization",
+          "OEWLossBeforeI",
+          "OELatePalatalDiphthong",
+          "OEJClusterCoalescence",
+          "OEBackMutation",
+          "OEWsPalatalUmlaut",
+          "OEWeakTailNasalLoss",
+          "OEWeightMarkers",
+          "OENonHighSyn",
+          "PGmcBAllophony",
+          "OEMedLongShort",
+          "OEHighVowelApocope",
+          "OEMedialSyncope",
+          "OEHighLinkSyncope",
+          "OELAdjacentSyncope",
+          "OEHighStressDecode",
+          "OEDentalAssimilation",
+          "OEPreconsonantalDegemination",
+          "OEEarlyOShortening",
+          "OEUnstressedFrontingEarly",
+          "OELateOShortening",
+          "OEMedUnstressedORaising",
+          "OEFinalUnstressedOLowering",
+          "OEUnstressedLongVowelShortening",
+          "OEUnstressedAEMerger",
+          "OEMedUnstressedILowering1",
+          "OEMedUnstressedILowering",
+          "OEMedUnstressedULowering",
+          "OEPrefixIReduction",
+          "OEWeakTailReduction",
+          "OEJLossAfterHeavy",
+          "OEFinalGeminateSimplification",
+          "OEJStrengtheningAfterFrontDiphthong",
+          "OEIntervocalicJVocalization",
+          "OEUnstressedEIContraction",
+          "OEWeightCleanup",
+          "OEHLoss",
+          "OEContraction",
+          "OERMetathesis",
+          "OEEpentheticVowel",
+          "OELateUnstressedAgSuffix",
+          "OEPalatalFricativeMerger",
+          "OECjCleanup",
+          "OEXsMerge",
+          "OldEnglishOrthography",
+          "OEWsPalatalGlide",
+          "OldEnglishRemoveStars",
+          "OldEnglishSurface"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "belġ"
+          ],
+          [
+            "hleohhan"
+          ]
+        ]
+      },
+      "breaking_late:palatalization": {
+        "members": [
+          "OEVelarFricativePalatalization"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*æ*l*g*i"
+          ],
+          [
+            "*x*l*æ*ç*ç*j*a*n*ą"
+          ]
+        ]
+      },
+      "breaking_late:second_operation": {
+        "members": [
+          "OEVelarFricativePalatalization",
+          "OEARestoration",
+          "OEHeavySyllableNasalApocope",
+          "OESecondaryNasalization",
+          "SieversLawSyncope",
+          "OESkPalatalization",
+          "OEVelarPalatalization",
+          "OEPrefixAReduction",
+          "OEPostVelarWLoss",
+          "OEWsPalatalDiphthongization",
+          "OEIUmlaut",
+          "OEBreaking"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*ʝ*i"
+          ],
+          [
+            "*x*l*e*ç*ç*j*ą*n"
+          ]
+        ]
+      },
+      "breaking_late:before_late_palatal": {
+        "members": [
+          "OEVelarFricativePalatalization",
+          "OEARestoration",
+          "OEHeavySyllableNasalApocope",
+          "OESecondaryNasalization",
+          "SieversLawSyncope",
+          "OESkPalatalization",
+          "OEVelarPalatalization",
+          "OEPrefixAReduction",
+          "OEPostVelarWLoss",
+          "OEWsPalatalDiphthongization",
+          "OEIUmlaut",
+          "OEBreaking",
+          "OEWLossBeforeI",
+          "OELatePalatalDiphthong",
+          "OEJClusterCoalescence",
+          "OEBackMutation"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*ʝ*i"
+          ],
+          [
+            "*x*l*e*ç*ç*j*ą*n"
+          ]
+        ]
+      },
+      "breaking_late:late_palatal": {
+        "members": [
+          "OEVelarFricativePalatalization",
+          "OEARestoration",
+          "OEHeavySyllableNasalApocope",
+          "OESecondaryNasalization",
+          "SieversLawSyncope",
+          "OESkPalatalization",
+          "OEVelarPalatalization",
+          "OEPrefixAReduction",
+          "OEPostVelarWLoss",
+          "OEWsPalatalDiphthongization",
+          "OEIUmlaut",
+          "OEBreaking",
+          "OEWLossBeforeI",
+          "OELatePalatalDiphthong",
+          "OEJClusterCoalescence",
+          "OEBackMutation",
+          "OEWsPalatalUmlaut"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "*b*e*l*ʝ*i"
+          ],
+          [
+            "*x*l*e*ç*ç*j*ą*n"
+          ]
+        ]
+      },
+      "breaking_late:final": {
+        "members": [
+          "OEVelarFricativePalatalization",
+          "OEARestoration",
+          "OEHeavySyllableNasalApocope",
+          "OESecondaryNasalization",
+          "SieversLawSyncope",
+          "OESkPalatalization",
+          "OEVelarPalatalization",
+          "OEPrefixAReduction",
+          "OEPostVelarWLoss",
+          "OEWsPalatalDiphthongization",
+          "OEIUmlaut",
+          "OEBreaking",
+          "OEWLossBeforeI",
+          "OELatePalatalDiphthong",
+          "OEJClusterCoalescence",
+          "OEBackMutation",
+          "OEWsPalatalUmlaut",
+          "OEWeakTailNasalLoss",
+          "OEWeightMarkers",
+          "OENonHighSyn",
+          "PGmcBAllophony",
+          "OEMedLongShort",
+          "OEHighVowelApocope",
+          "OEMedialSyncope",
+          "OEHighLinkSyncope",
+          "OELAdjacentSyncope",
+          "OEHighStressDecode",
+          "OEDentalAssimilation",
+          "OEPreconsonantalDegemination",
+          "OEEarlyOShortening",
+          "OEUnstressedFrontingEarly",
+          "OELateOShortening",
+          "OEMedUnstressedORaising",
+          "OEFinalUnstressedOLowering",
+          "OEUnstressedLongVowelShortening",
+          "OEUnstressedAEMerger",
+          "OEMedUnstressedILowering1",
+          "OEMedUnstressedILowering",
+          "OEMedUnstressedULowering",
+          "OEPrefixIReduction",
+          "OEWeakTailReduction",
+          "OEJLossAfterHeavy",
+          "OEFinalGeminateSimplification",
+          "OEJStrengtheningAfterFrontDiphthong",
+          "OEIntervocalicJVocalization",
+          "OEUnstressedEIContraction",
+          "OEWeightCleanup",
+          "OEHLoss",
+          "OEContraction",
+          "OERMetathesis",
+          "OEEpentheticVowel",
+          "OELateUnstressedAgSuffix",
+          "OEPalatalFricativeMerger",
+          "OECjCleanup",
+          "OEXsMerge",
+          "OldEnglishOrthography",
+          "OEWsPalatalGlide",
+          "OldEnglishRemoveStars",
+          "OldEnglishSurface"
+        ],
+        "inputs": [
+          "*b*æ*l*g*i",
+          "*x*l*æ*x*x*j*a*n*ą"
+        ],
+        "outputs": [
+          [
+            "belġ"
+          ],
+          [
+            "hlehhan"
+          ]
+        ]
+      }
+    },
+    "cost": {
+      "variants": 2,
+      "networks": 14,
+      "compiler_calls": 1,
+      "foma_processes": [
+        {
+          "seconds": 4.154752627015114,
+          "peak_rss_kib": 1229204,
+          "returncode": 0
+        }
+      ],
+      "image_loaded": true,
+      "definition_preparation_calls": 0,
+      "seconds": 4.8929743357002735
+    }
+  },
+  "scope": "Two West Saxon witnesses; no production, selected-input or chronology change",
+  "local_expectation_note": "The original plan's mutation_first=e describes the immediate mutation output. Applying breaking next retains e before lg but produces eo before the still-velar fricative in laugh.",
+  "sources": [
+    {
+      "source": "Ringe and Taylor 2014",
+      "locator": "6.6.3, pp.240-244",
+      "image_checked": "p.240, PDF sheet255",
+      "sha256": "278f94f6076a31278ecca75d8d0429f0822728e5efe0ec3011186a694cf8d6f2"
+    },
+    {
+      "source": "Pheifer 1974",
+      "locator": "p.lxxxii section70; p.22 no.402 and apparatus",
+      "claim": "OE feormat is 3sg present; Latin fouit in Epinal/Erfurt, fouet in Corpus"
+    },
+    {
+      "source": "Wright and Wright 1908",
+      "locator": "p.46 section84",
+      "url": "https://archive.org/download/oldenglishgramm00wriggoog/oldenglishgramm00wriggoog_djvu.txt",
+      "sha256": "ed1c597fa79c9b1351437b87eed2c7bb555691d5ec3275374a036280537fc68c",
+      "limit": "Grammar listing of meolcan; no manuscript locator, no independent attestation claim"
+    },
+    {
+      "source": "Lloyd and Luhr 2007",
+      "locator": "III cols.492-493, formon",
+      "url": "https://ewa.saw-leipzig.de/articles/45160/de",
+      "sha256": "8ddb422c4bf13f0dac90b80e1ee57ec04ab741773e9ac9f962d63c0c285b0247",
+      "claim": "Conditional original-e NWGmc ferma(n)- alternative, deeper etymology problematic"
+    }
+  ]
+}
