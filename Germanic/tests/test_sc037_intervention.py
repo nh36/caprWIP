@@ -14,13 +14,30 @@ pytestmark = pytest.mark.runtime
 
 
 @pytest.fixture(scope="module")
-def current():
+def current(request, record_testsuite_property):
     worker = Path(__file__).with_name("sc037_intervention_controls.py")
+    owners = sorted(item.nodeid for item in request.session.items
+                    if item.module is request.module)
+    dart = "test_selected_dart_protects_closed_final_pre_l_nonapplication"
+    selection = "dart" if len(owners) == 1 and owners[0].endswith("::" + dart) else "full"
     result = run_in_runner(
-        "CAPR_AF_DEFINITION_ISOLATED=1 python3 -",
+        "CAPR_AF_DEFINITION_ISOLATED=1 python3 - --request " + selection,
         input=worker.read_text(), text=True, capture_output=True,
         check=True, timeout=3600)
-    return json.loads(result.stdout)
+    report = json.loads(result.stdout)
+    execution = report["_execution"]
+    execution["assertion_owners"] = owners
+    directory = ROOT / ".ci-results"
+    directory.mkdir(exist_ok=True)
+    path = directory / f"sc037-{selection}.json"
+    path.write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    summary = {key: execution[key] for key in
+               ("request", "networks", "subprocess_counts", "seconds", "assertion_owners")}
+    record_testsuite_property("sc037_execution", json.dumps(summary, ensure_ascii=False))
+    reporter = request.config.pluginmanager.getplugin("terminalreporter")
+    if reporter:
+        reporter.write_line("SC037 live execution: " + json.dumps(summary, ensure_ascii=False))
+    return report
 
 
 def test_canonical_compound_hypotheses_discriminate_three_wrong_accounts(current):
