@@ -1,5 +1,9 @@
 # SC037 assertion-selected research checkpoint
 
+The PR #15 measurements below are retained as historical comparisons. The
+[bounded closeout](#bounded-validation-closeout) gives the current complete
+routine command and enforceable cost-review policy.
+
 ## Scope and source identity
 
 This validation-only change is stacked on PR #14,
@@ -221,3 +225,142 @@ reuse or receipt-contract shortcut is introduced. The previous strict run took
 phase times and remaining bottleneck independently of the under-ten-minute
 research checkpoint. No publication build is included or required by this
 validation-only patch.
+
+## Bounded validation closeout
+
+The closeout starts from PR #15 at
+`33f63f6fb56d8d9504319960dd37dec4014b69ee`; live #13--#15 heads were verified.
+The authoritative new/enlarged-regression policy is
+[regression execution and cost review](CI_VALIDATION.md#regression-execution-and-cost-review),
+linked from the repository Copilot instructions. This is not a new validation
+system or a CI timeout gate.
+
+The raw single-input record parser is shared only by the current chronology and
+SC037 workers. It preserves epsilon, rejection, branches and first-seen
+deduplication, rejecting absent, malformed and wrong-input records. Each caller
+retains its error/evaluation policy: chronology's epsilon fallback and SC037's
+epsilon-input adapter remain separate. The helper is outside canonical trace
+hash dependencies because neither the trace generator nor its hashed evaluators
+imports it. All `SOURCE_PATHS` bytes, SC037 reference function bodies and the
+chronology historical test file were checked unchanged.
+
+Pytest explicitly passes SC037 `session` or `full-source` intent.
+`--fresh-isolated-definitions` neither prepares nor loads an image, even with an
+ambient image variable. Normal compiling selections require the verified session
+image; production-only selections request none. Standalone `--definitions auto`
+deliberately retains the previous private preparation behavior.
+
+Portable tests execute the real worker with preparation/compiler spies and
+inspect the actual compiler's emitted script. They protect exact probe unions,
+unmapped-owner failures, production-only zero compilation/preparation, subset
+scope, finite domains and shared-image use. A small live worker case proves both
+definition modes with branching, rejection and duplicate inputs, rather than
+merely checking the generic compiler option.
+
+### Paired checkpoint and normal command
+
+The same provisioned machine, source, actual Foma binary and workload were used
+sequentially. Canonical bins were already fresh; each session image was freshly
+prepared and disposable. OS caches were not flushed.
+
+| Phase | Two extended nodes excluded | Complete module |
+|---|---:|---:|
+| Owning/planning/compiler command | 366.69s; 118 passed, two deselected | 371.75s; 120 passed |
+| Portable, four workers | 117.41s | 112.33s |
+| End-to-end checkpoint | 484.10s (8m04s) | 484.09s (8m04s) |
+| Shared definition preparation | 318.71s | 316.09s |
+| SC037 worker | 39.09s | 46.84s |
+| SC037 fixture setup | 358.31s | 363.37s |
+| Compiled variants / bounded exports / worker Foma calls | 10 / 54 / 10 | 13 / 57 / 13 |
+| Worker lookups | 89 | 92 |
+
+Both owning runs passed 156 subtests; both portable runs passed 2,010 tests and
+9,784 subtests, with 104 explicit capability skips. The worker's additional
+7.75 seconds were offset by variation elsewhere; the equal totals are observed
+measurements, not a claim that extra compilation is free.
+No regeneration was required: its measured contribution is zero. Required
+SOURCE regeneration must still be included for a scientific checkpoint.
+
+The normal command, with `EVIDENCE` naming an existing directory outside the
+checkout, is:
+
+```sh
+python3 -m pytest -q \
+  Germanic/tests/test_sc037_execution_plan.py \
+  Germanic/tests/test_anglo_frisian_experiments.py \
+  Germanic/tests/test_chronology_execution.py \
+  Germanic/tests/test_sc037_intervention.py \
+  Germanic/tests/test_glossary_h_loss.py::test_clay_has_a_front_ending_with_h_then_hiatus_then_contraction \
+  Germanic/tests/test_sc065_adjudication.py::SC065AdjudicationTests::test_firing_population_over_all_rows_is_the_consolidated_population \
+  Germanic/tests/test_sc065_adjudication.py::SC065AdjudicationTests::test_negative_controls_pass_the_stage_untouched \
+  --durations=12 --durations-min=0 \
+  --junitxml="$EVIDENCE/complete-owning.junit.xml"
+python3 Germanic/tools/run_portable_checks.py --workers 4
+```
+
+This includes every SC037 comparison as well as planning/compiler owners, the
+unchanged all-row protected-baseline owner and the separate HVD census/negative
+controls. Targeted dart/nettle and other individual selectors remain available.
+
+### Validation cost entry
+
+The selected portable execution guards are
+`test_production_only_worker_never_prepares_or_compiles_definitions`,
+`test_worker_sends_only_bounded_selected_compositions_through_shared_definitions`,
+`test_full_source_intent_and_standalone_preparation`,
+`test_missing_session_image_fails_instead_of_preparing_a_private_one` and
+`test_pytest_fixture_passes_definition_intent_without_accidental_preparation`
+in `test_sc037_execution_plan.py`. They add no Foma work: compiler/preparation
+spies catch work the declarative plan alone cannot see.
+
+The added live owner in that file is
+`test_sc037_worker_shared_and_explicit_full_source_execute_the_same_small_live_case`.
+The existing generic compiler-equivalence test was considered for reuse but
+does not exercise the SC037 private-preparation fallback. This additional case
+uses a tiny grammar instead of recompiling production. Before: no added call.
+After: one tiny image preparation and two single-network compilations of the
+same current probe under shared/full-source modes. Setup printed 0.00s,
+call 0.43s and isolated pytest end-to-end 0.46s; the paired run's call was 0.24s.
+The maximum actual Foma child RSS was 17,304 KiB (16.9 MiB).
+
+The normal checkpoint also widens from 18 to 20 SC037 owners: the existing
+`test_canonical_compound_hypotheses_discriminate_three_wrong_accounts` and
+`test_early_labial_realization_changes_rainbow` catch wrong compound accounts
+and early labial placement. Before/after counts and setup/end-to-end costs are
+in the paired table. Reuse of current production endpoints and existing shared
+definitions is retained; no unrestricted root, extra corpus sweep, rebuild or
+concurrency is added. Actual Foma peak RSS for `old-early`, `bad-breaking` and
+`early-b` was respectively 1,179,012, 1,176,896 and 1,176,972 KiB; the existing
+`no-weight` comparison measured 1,177,012 KiB in the same diagnostic.
+
+Memory used Linux `os.wait4` child `rusage.ru_maxrss`, in KiB, for the actual
+Foma processes inside the backend, including process startup, not host Python
+or a sum of serial peaks. The variant diagnostic reused a verified disposable
+image captured from this checkpoint solely for measurement and then deleted
+it; ordinary validation did not use a persistent cache. The three extra live
+comparisons are justified in routine review by their measured sub-ten-minute
+complete checkpoint and unchanged serial memory/concurrency policy.
+
+### Evidence and promotion boundary
+
+The #13--#15 draft artifact was downloaded through authenticated `nh36`
+repository-admin/collaborator access, its archive SHA256 was checked, and the
+portable verifier rechecked 282 files, 52 successful receipts, retained failures,
+399 production comparisons, 70 legacy probes and selected slices. All three
+committed-byte proofs were additionally checked against their Git blobs.
+This is authenticated owner/admin verification, not an independent second
+reviewer's approval. Fresh live manifest-validated production lookups also
+matched all 399 archived outputs.
+
+`paired-summary.json`, per-command JUnit/receipts, `memory.json`,
+`variant-memory.json`, `prior-review-verification.json` and
+`live-production-parity.json` are in the closeout review evidence. Final strict
+certification and the exact-byte delivery proof bind the settled candidate;
+their results are recorded in the promotion review without transferring the
+older candidate's certificate.
+
+The serial runtime guard, real exclusive SC024 rebuild, receipt requirements
+and five prescribed historical skips remain. No scientific or SC044 assets
+change. Promotion is reviewed in stack order; this closeout does not authorize
+further definition-preparation optimization, rebuild reuse, parallel Foma
+execution or unrelated evaluator migration.

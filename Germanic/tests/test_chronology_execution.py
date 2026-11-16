@@ -56,6 +56,7 @@ def test_current_boundaries_are_derived_without_losing_any_variant_members():
     (b"a\tb\na\tc\na\tb\n\n", ["b", "c"]),
     (b"a\t\n\n", [""]),
     (b"a\t+?\n\n", []),
+    (b"a\tb\na\t\na\tc\na\tb\na\t\n\n", ["b", "", "c"]),
 ])
 def test_prefix_parser_distinguishes_epsilon_rejection_and_branching(monkeypatch, stdout, expected):
     monkeypatch.setattr(controls.subprocess, "run", lambda *a, **k:
@@ -63,7 +64,7 @@ def test_prefix_parser_distinguishes_epsilon_rejection_and_branching(monkeypatch
     assert controls.prefix_outputs(Path("prefix.bin"), "a") == expected
 
 
-@pytest.mark.parametrize("stdout", [b"", b"bad\n", b"other\tb\n"])
+@pytest.mark.parametrize("stdout", [b"", b"bad\n", b"other\tb\n", b"a\tb\tc\n"])
 def test_prefix_parser_fails_closed_on_missing_or_malformed_results(monkeypatch, stdout):
     monkeypatch.setattr(controls.subprocess, "run", lambda *a, **k:
                         subprocess.CompletedProcess(a, 0, stdout=stdout))

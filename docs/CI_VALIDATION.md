@@ -416,6 +416,43 @@ variance also limit causal interpretation of the total elapsed difference.
 Compilation still accounts for roughly 90% of lane 2; further substantial
 end-to-end gains need separate investigation, not another lookup cache.
 
+### Regression execution and cost review
+
+This section is the authority for new or enlarged regression tests. Use the
+cheapest live check that distinguishes the intended behavior:
+
+- Evaluate production endpoints through manifest-validated production bins.
+  Use cumulative snapshots for named stages reached from raw input. For an
+  independently staged input or counterfactual, respect its declared entry and
+  compile only the necessary rule or remainder over the actual probe inputs.
+- Batch lookups and share the existing isolated session definitions when their
+  identity matches. Production-only selections must not compile or prepare
+  definitions. Honor `--fresh-isolated-definitions`: neither load nor prepare an
+  image. Keep expected answers independent of the execution plan.
+- Keep commit-pinned live replays in the opt-in historical lane, with ordinary
+  archive-integrity checks retained. Use the existing exclusive lane for real
+  shared-bin rebuild integration tests; do not replace them with mocked builds.
+
+A PR must include a short validation cost entry whenever it adds a compiler
+call, widens a fixture, adds a corpus sweep or rebuild, or changes runtime
+concurrency. State the selected node IDs and the failure each catches, any
+existing check considered for reuse, and before/after work performed. Include
+variant, emitted-network and actual compiler-call counts, fixture setup and
+end-to-end wall time, and peak memory for added or widened compiler work.
+Measure memory in the actual Foma process or backend container, identifying
+which, the units and measurement method; host Python memory is not a substitute.
+Reuse timing reports, JUnit and source-bound receipts. Material cost increases
+require an explicit justification in review, not an unreliable wall-clock
+timeout on shared CI.
+
+The existing portable planning/execution tests are the mechanical guard: retain
+the exact selected-probe union and explicit failure for unmapped owners; execute
+production-only and bounded-subset paths with compiler/preparation spies.
+Inspect actual compiler arguments and emitted scripts where feasible, including
+finite domains and shared definitions, rather than trusting a declarative plan
+alone. Keep validation commands and evidence in the existing workflow; do not
+add a parallel validation system or repository-wide filename-pattern lint.
+
 ### Isolated common-definition reuse
 
 SC037 controls take the union of probes owned by the selected pytest nodes.
@@ -426,18 +463,18 @@ declared remainder. Counterfactuals, components and closeout tails are evaluated
 live over the exact requested finite input domains. The default complete module
 retains all comparisons and all 15 closeout tail definitions.
 
-The routine SC037 checkpoint excludes only `sc037_extended`: the full
-*seleweard* comparison (`old-early`, `bad-breaking`) and early labial realization
-(`early-b`). Reconsidering compound syncope, breaking or compound input hypotheses
-requires the former; changes to labial-realization placement require the latter.
-Use the complete module for broad grammar changes, ambiguous scope, or machinery
-changes potentially affecting every comparison. The complete module remains in
-final strict certification, without this marker exclusion.
+The documented routine SC037 checkpoint now includes the complete module:
+all 20 owners, including the *seleweard* and early labial-realization comparisons.
+The paired owning-plus-portable measurements both took 8m04s, with and without
+the two `sc037_extended` nodes. No marker exclusion belongs in the normal
+command. Keep exact targeted selectors for individual investigations; the
+legacy narrow `routine` alias and explicit marker remain available for scoped
+diagnostics, not as the default checkpoint.
 
-The measured owning/planning/compiler selection plus portable validation took
-8m11s, including fresh shared definitions, the unchanged all-row protected
+The complete owning/planning/compiler selection plus portable validation took
+8m04s, including fresh shared definitions, the unchanged all-row protected
 production-baseline owner and the separate live HVD census. See the
-[SC037 checkpoint report](VALIDATION_PERFORMANCE_SC037_CHECKPOINT.md) for the
+[SC037 checkpoint closeout](VALIDATION_PERFORMANCE_SC037_CHECKPOINT.md#bounded-validation-closeout) for the
 exact command, dart-plus-nettle worked example, coverage ownership, semantic
 comparisons and per-variant costs. No regeneration was required by these
 validation-only edits; a source-changing checkpoint must also include any
@@ -487,7 +524,12 @@ path. `save defined` does not preserve parameterised macros: their exact source
 is recovered using the existing definition parser and restored after loading.
 
 Image use is explicit through `CAPR_FOMA_DEFINITION_IMAGE`; ordinary standalone
-assays still compile their full source. `use_definition_image=False` overrides
+assays still compile their full source. SC037 standalone `--definitions auto`
+deliberately retains its private-image preparation when no image is supplied;
+pytest instead requires its verified session image. SC037
+`--definitions full-source` and pytest `--fresh-isolated-definitions` neither
+load nor prepare an image, even if an image variable is inherited.
+`use_definition_image=False` overrides
 even a selected image. Reproduce full-source compilation without a definition
 image using the same existing runtime tests (the chronology prefix/remainder
 strategy remains in force):

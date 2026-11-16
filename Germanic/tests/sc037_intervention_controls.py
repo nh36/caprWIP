@@ -19,6 +19,7 @@ from anglo_frisian_experiments import (
 )
 import entry_stages
 from executable_facts import parse_defines
+from flookup_records import parse_records
 from oe_trace_parse import (
     SOURCE_PATHS, parse_entries, parse_fidelity, provenance_problems, structural_problems,
 )
@@ -620,10 +621,12 @@ def bounded_expression(members, forms):
     return "[" + adapter + "] .o. " + expression, labels
 
 
-def run_controls(request, profile):
+def run_controls(request, profile, *, definition_mode="auto"):
     from capr_runtime import check_build_manifest, layout
     import oe_pipeline
 
+    if definition_mode not in {"auto", "session", "full-source"}:
+        raise ValueError("unknown SC037 definition mode: " + definition_mode)
     plan = execution_plan(request)
     rt = layout()
     profile["phase"] = "canonical manifest"
@@ -635,7 +638,8 @@ def run_controls(request, profile):
     stages = oe_pipeline.stages()
     cache, report = {}, {}
     profile.update(plan=plan, evaluated=[], models=[], lookups=[], checkpoints=[],
-                   definition_preparation_seconds=0, definition_image_origin="none")
+                   definition_preparation_seconds=0, definition_image_origin="none",
+                   definition_mode=definition_mode)
 
     def apply(binary, forms, probe):
         outputs = batch_apply_down(binary, forms)
@@ -658,18 +662,10 @@ def run_controls(request, profile):
             def raw_stage(stage):
                 proc = subprocess.run(["flookup", "-i", str(rt.bin_dir / stage.snapshot_bin)],
                                       input=(form + "\n").encode(), capture_output=True, check=True)
-                outputs, seen = [], False
-                for line in proc.stdout.decode().splitlines():
-                    if not line:
-                        continue
-                    head, separator, output = line.partition("\t")
-                    if not separator or head != form:
-                        raise ValueError("malformed live SC037 checkpoint result")
-                    seen = True
-                    if output != "+?" and output not in outputs:
-                        outputs.append(output)
-                if not seen:
-                    raise ValueError("missing live SC037 checkpoint result")
+                try:
+                    outputs = parse_records(proc.stdout.decode(), form)
+                except ValueError as exc:
+                    raise ValueError("invalid live SC037 checkpoint result: " + str(exc)) from exc
                 profile["lookups"].append({
                     "probe": concept + ":" + identifier, "bin": stage.snapshot_bin,
                     "inputs": [form], "outputs": [outputs]})
@@ -738,8 +734,12 @@ def run_controls(request, profile):
     canonical_order = complete_variant_order({"replace": {}, "insert_rule": None, "insert_after": None})
     with tempfile.TemporaryDirectory(prefix="capr_sc037_selected_") as temporary:
         root = Path(temporary)
-        if os.environ.get("CAPR_FOMA_DEFINITION_IMAGE"):
+        if definition_mode == "full-source":
+            profile["definition_image_origin"] = "full-source"
+        elif os.environ.get("CAPR_FOMA_DEFINITION_IMAGE"):
             profile["definition_image_origin"] = "session"
+        elif definition_mode == "session":
+            raise ValueError("SC037 requires the selected session definition image")
         else:
             profile["phase"] = "definitions"
             started = time.perf_counter()
@@ -748,7 +748,8 @@ def run_controls(request, profile):
             if image:
                 os.environ["CAPR_FOMA_DEFINITION_IMAGE"] = str(image)
             profile["definition_image_origin"] = "worker"
-        selected_image = os.environ.get("CAPR_FOMA_DEFINITION_IMAGE")
+        selected_image = (os.environ.get("CAPR_FOMA_DEFINITION_IMAGE")
+                          if definition_mode != "full-source" else None)
         profile["definition_image_receipt"] = (
             json.loads(Path(selected_image).with_suffix(".json").read_text())
             if selected_image else None)
@@ -785,12 +786,14 @@ def run_controls(request, profile):
             recipe["definitions"] = selected_definitions(extra + helpers, requested) + "\n" + "\n".join(expressions)
             profile["phase"] = name + " compilation"
             started = time.perf_counter()
-            bins = compile_isolated(rt.germanic_fst, recipe, [], directory, components_only=True)
+            bins = compile_isolated(
+                rt.germanic_fst, recipe, [], directory, components_only=True,
+                use_definition_image=definition_mode != "full-source")
             script = (directory / "experiment.foma").read_text()
             loaded = script.startswith("load defined ")
             profile["models"].append({
                 "variant": name, "seconds": time.perf_counter() - started,
-                "image_supplied": bool(os.environ.get("CAPR_FOMA_DEFINITION_IMAGE")),
+                "image_supplied": bool(selected_image),
                 "image_loaded": loaded, "fallback": not loaded,
                 "recipe": {**recipe, "definitions": selected_definitions(extra + helpers, requested)},
                 "queries": [{"id": p["id"], "members": members, "inputs": forms,
@@ -822,7 +825,11 @@ def main():
     parser.add_argument("--request", default="full")
     parser.add_argument("--tests", help="JSON array of actually selected pytest node IDs")
     parser.add_argument("--reference", action="store_true", help="run the preserved PR13/14 compiler")
+    parser.add_argument("--definitions", choices=("auto", "session", "full-source"), default="auto",
+                        help="standalone auto preparation, required session image, or no image")
     args = parser.parse_args()
+    if args.reference and args.definitions != "auto":
+        parser.error("--definitions applies only to the current worker")
     request = json.loads(args.tests) if args.tests else args.request
     (reference_plan if args.reference else execution_plan)(request)
     profile = {"request": request, "subprocesses": []}
@@ -838,7 +845,8 @@ def main():
 
     started = time.perf_counter()
     with patch.object(subprocess, "run", side_effect=measured):
-        report = (reference_controls if args.reference else run_controls)(request, profile)
+        report = (reference_controls(request, profile) if args.reference else
+                  run_controls(request, profile, definition_mode=args.definitions))
     profile["seconds"] = time.perf_counter() - started
     profile["subprocess_counts"] = dict(Counter(item["command"] for item in profile["subprocesses"]))
     report["_execution"] = profile

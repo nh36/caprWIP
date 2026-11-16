@@ -8,6 +8,7 @@ import time
 from unittest.mock import patch
 
 from anglo_frisian_experiments import foma_domain
+from flookup_records import parse_records
 
 def remainder_plans(variants):
     baseline = variants["current_identity"]
@@ -47,20 +48,10 @@ def prefix_outputs(binary, form):
     """Unlike the final evaluator, retain epsilon for full-composition fallback."""
     proc = subprocess.run(["flookup", "-i", str(binary)], input=(form + "\n").encode(),
                           stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
-    outputs = []
-    seen = False
-    for line in proc.stdout.decode().splitlines():
-        if not line:
-            continue
-        head, separator, output = line.partition("\t")
-        if not separator or head != form:
-            raise RuntimeError("unrecognized cumulative-prefix lookup output")
-        seen = True
-        if output != "+?" and output not in outputs:
-            outputs.append(output)
-    if not seen:
-        raise RuntimeError("missing cumulative-prefix lookup output")
-    return outputs
+    try:
+        return parse_records(proc.stdout.decode(), form)
+    except ValueError as exc:
+        raise RuntimeError("invalid cumulative-prefix lookup output: " + str(exc)) from exc
 
 
 def effective_plan(plan, states):

@@ -21,9 +21,12 @@ def current(request, record_testsuite_property):
     owners = sorted(item.nodeid for item in request.session.items
                     if item.module is request.module)
     plan = execution_plan(owners)
-    prefix = request.getfixturevalue("isolated_definitions") if plan["compilation_required"] else ""
+    fresh = request.config.getoption("--fresh-isolated-definitions")
+    prefix = (request.getfixturevalue("isolated_definitions")
+              if plan["compilation_required"] and not fresh else "")
+    mode = "full-source" if fresh else "session"
     result = run_in_runner(
-        prefix + "python3 - --tests " + shlex.quote(json.dumps(owners)),
+        prefix + "python3 - --definitions " + mode + " --tests " + shlex.quote(json.dumps(owners)),
         input=worker.read_text(), text=True, capture_output=True,
         check=True, timeout=3600)
     report = json.loads(result.stdout)
