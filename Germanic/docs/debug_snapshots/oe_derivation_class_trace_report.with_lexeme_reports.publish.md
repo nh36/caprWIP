@@ -7685,7 +7685,7 @@ English Proto Input: *wíràldiz
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *wíràldz<br>PNWGmc I Lowering: *wéràldz<br>EAF Final Z Deletion: *wéràld<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *wérald<br>OE Inter Stress Raising: *wéruld<br>OE Back Mutation: *wéoruld<br>OE Med Unstressed U Lowering: *wéorold |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *wíràldz<br>PNWGmc I Lowering: *wéràldz<br>EAF Final Z Deletion: *wéràld<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Inter Stress Raising: *wéruld<br>OE Back Mutation: *wéoruld<br>OE Med Unstressed U Lowering: *wéorold |
 
 
 
@@ -8571,7 +8571,7 @@ English Proto Input: *θūsèndi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *θūsènd<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *θūsend |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *θūsènd<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *θūsend |
 
 
 

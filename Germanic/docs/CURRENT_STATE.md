@@ -12,7 +12,14 @@ The pretonic annotation now survives until guarded h-loss consumes it,
 and every migration link must preserve output cardinality.
 Hill's alternative and the Boutkan/Anglo-Frisian ending follow-up remain
 explicit. Integration certification is separate from the earlier
-experimental verdicts; SC044 is a separate, unstarted assignment.
+experimental verdicts.
+The [SC044 adjudication](sound_changes/audits/sc044-adjudication.md)
+records the vowel-specific breaking repair, independent controls and
+qualified conventional chronology. The late Anglian feormat result
+favours the rival under its stated reconstruction; it is not suppressed
+by production corpus parity. Strict compound controls additionally preserve
+secondary low/front annotation to breaking without changing world's
+existing weight-conditioned reduction. This assignment ends at SC044.
 
 The unified Fulk--Goering account, early final-n loss, corrected w-loss
 and fee transponent were certified at
@@ -71,7 +78,7 @@ The independent SC041 example-index correction remains separately reviewed;
 no subsequent adjudication starts automatically. The
 [final SC042 verification](sound_changes/audits/sc042-final-verification.md)
 records the bounded quantity repair and a precisely deferred nasal-interaction
-correction; it does not authorize proceeding to SC044. The separate Barrack crosswalk SC067 then SC080 stays paused,
+correction; SC044 was subsequently authorized separately. The Barrack crosswalk SC067 then SC080 stays paused,
 retaining WG117, 300b and440b as prospective omissions or discrepancies.
 Neither that programme nor the qualified lexical residues starts automatically.
 
@@ -82,7 +89,7 @@ h-loss. Its preserved two-output migration resolved the selected mære
 calculation while disclosing the then-selected Flask singular mismatch.
 The subsequent Flask migration selects attested nominative plural
 flascan without rewriting that history or its frozen baselines.
-SC044 and the separate SC067 then SC080 programme remain queued.
+The separate SC067 then SC080 programme remains queued.
 
 The separate [clay/fringe glossary-stage controls](sound_changes/audits/clay-fringe-stage-witnesses.md)
 clarify the reader's h-loss, hiatus and merger evidence without admitting

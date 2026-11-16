@@ -4,7 +4,6 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path
-import re
 import tarfile
 
 import pytest
@@ -86,12 +85,17 @@ def test_corrected_component_and_wrapper_pass_the_unchanged_formal_gate(report):
     assert report["canonical_before"] == report["canonical_after"]
 
 
-def test_current_rule_and_shared_domains_equal_the_formally_certified_production_closure():
+def test_certified_closure_applies_after_the_breaking_carrier_is_decoded():
+    """The archived proof covers decoded inputs, not arbitrary carrier-bearing probes."""
+    from test_sc044_adjudication import before_sc044_adoption
+    from executable_facts import parse_defines
+
     with tarfile.open(EVIDENCE / "production-closure.tar.gz") as archive:
         receipt = json.load(archive.extractfile("receipt.json"))
         snapshot = "snapshot/" + receipt["inputs"]["source"]["snapshot_name"]
-        certified = archive.extractfile(snapshot).read().decode()
-    current = (ROOT / "Germanic/fsts/germanic.txt").read_text()
+        certified = parse_defines(archive.extractfile(snapshot).read().decode())
+    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    previous = before_sc044_adoption(current)
     names = ["MP" + suffix for suffix in (
         "C", "V", "VStart", "Short", "Long", "Prefix", "L", "H", "S",
         "First", "Rest", "Syll", "Accent", "Unsyll", "Foot", "Decode", "ULower")]
@@ -99,11 +103,16 @@ def test_current_rule_and_shared_domains_equal_the_formally_certified_production
               "EnglishStarShortVowel", "EnglishStarShortDiphthong",
               "EnglishStarConsonant", "EnglishPalatalConsonant",
               "SentenceCtx", "FootCtx", "Ctx", "OEStressFootContext"]
+    compact = lambda body: "".join(body.split())
     for name in names:
-        pattern = r"define " + name + r"(?:\([^)]*\))?\s+.*?;"
-        previous = re.search(pattern, certified, re.S).group()
-        actual = re.search(pattern, current, re.S).group()
-        assert re.sub(r"\s+", "", actual) == re.sub(r"\s+", "", previous), name
+        assert compact(previous[name].body) == compact(certified[name].body), name
+        expected = previous[name].body
+        if name == "EnglishStarShortVowel":
+            expected = "[" + expected + " | {*ǽ}]"
+        assert compact(current[name].body) == compact(expected), name
+    pipeline = current["EnglishProtoToOE"].body
+    assert pipeline.index("OEBreaking") < pipeline.index("OEMedUnstressedULowering")
+    assert "{*ǽ}->{*æ}" in compact(current["OEBreaking"].body)
     closure = json.loads((EVIDENCE / "production-closure.json").read_text())
     for component in closure["components"].values():
         assert component["functional_stdout"].strip() == "1 (1 = TRUE, 0 = FALSE)"

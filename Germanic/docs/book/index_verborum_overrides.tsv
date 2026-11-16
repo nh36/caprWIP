@@ -1,4 +1,5 @@
 action	language	variety	form	display	sort_key	source_scope	source_ref	note
+ignore			xçj				Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:51	Consonantal checkpoint notation in the SC044/SC045 comparison, not a lexical form.
 ignore			*fláskōn				Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:159	Explicitly post-apocope input to an earlier diagnostic, not a separately cited Proto-Germanic lexical form or the adopted plural cell.
 ignore			*fláskōni				Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:118	Complete diagnostic dative hypothesis from the generic weak paradigm, not a separately verified lexical citation or an adopted corpus cell.
 ignore			*fláskōnų				Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:118	Complete diagnostic accusative hypothesis from the generic weak paradigm, not a separately verified lexical citation or an adopted corpus cell.
@@ -84,7 +85,7 @@ ignore			e-to-i				Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.mod
 ignore			reconstruction				Germanic/docs/lexeme_reports/model_entries/2326-you-ēow.model.md:39	Ordinary English description of the unchanged PGmc reconstruction, not a reconstructed lexical form.
 ignore			*s*k*á*w*ō*θ				Germanic/docs/lexeme_reports/model_entries/2318-show-(3sg)-sċēawaþ.model.md:36	Explicit token-separated intermediate checkpoint demonstrating prior final-i loss; not a separately quoted reconstructed lexical form.
 ignore			a+a				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:66	Adjacent-vowel sequence used to discuss hypothetical hiatus resolution, not a lexical form.
-ignore			*wér-àld				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:190	Mechanical checkpoint after early apocope, lowering and z loss, not an independently sourced stage citation.
-ignore			*wérald				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:191	Mechanical grave-removal checkpoint in the inherited selected derivation, not a separate source reconstruction.
-ignore			*wéoruld				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:194	Mechanical back-mutation checkpoint, not a separate source citation.
+ignore			*wér-àld				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:193	Mechanical checkpoint after early apocope, lowering and z loss, not an independently sourced stage citation.
+ignore			*wérald				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:194	Explicitly rejected unmarked input to SC036, not a separate source reconstruction.
+ignore			*wéoruld				Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:198	Mechanical back-mutation checkpoint, not a separate source citation.
 ignore			*fūliþu				Germanic/docs/lexeme_reports/model_entries/2335-filth-fȳlþ.model.md:71	Mechanical SC019 raising checkpoint inside the adopted derivation, not a separately quoted reconstructed citation.

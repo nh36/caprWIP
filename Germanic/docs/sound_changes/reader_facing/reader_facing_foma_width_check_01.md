@@ -4,7 +4,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 112.
+- Foma blocks checked: 118.
 - Blocks over the conservative 90-character threshold: 16.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
@@ -43,17 +43,23 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 034-long-eaw-diphthong.md | SC034. Retained show long-diphthong proxy (`OEAwLongDiphthong`) {#rule-OEAwLongDiphthong} | 50 | 61 | no |
 | 035-pretonic-front-vowel-raising.md | SC035. Raising of pretonic \emph{*æ} after a palatal fricative (`OEPrefixAReduction`) {#rule-OEPrefixAReduction} | 214 | 51 | no |
 | 036-inter-stress-raising.md | SC036. Weak medial vocalism (`OEInterStressRaising`) {#rule-OEInterStressRaising} | 177 | 44 | no |
-| 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | 188 | 72 | no |
+| 036-inter-stress-raising.md | SC036. Light-initial weak raising (`OELHWeakRaising`) {#rule-OELHWeakRaising} | 188 | 83 | no |
 | 037-compound-linking-syncope.md | SC037. Former compound-syncope trace anchor (`OECompoundLinkingSyncope`) {#rule-OECompoundLinkingSyncope} | 12 | 35 | no |
 | 039-combinative-u-umlaut.md | SC039. Combinative \emph{*u}-umlaut in \emph{wi}-forms (`OEWICombinativeUUmlaut`) {#rule-OEWICombinativeUUmlaut} | 21 | 65 | no |
 | 040-medial-unstressed-u-lowering.md | SC040. Lowering of medial unstressed \emph{*u} (`OEMedUnstressedULowering`) {#rule-OEMedUnstressedULowering} | 5 | 67 | no |
 | 041-final-bare-a-loss.md | SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | 15 | 32 | no |
 | 042-surviving-bimoric-o-unrounding.md | SC042. Unrounding of the surviving bimoric \emph{*ō} (`PWGmcSurvivingBimoricOUnrounding`) {#rule-PWGmcSurvivingBimoricOUnrounding} | 15 | 101 | yes |
-| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 68 | 27 | no |
-| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 76 | 69 | no |
-| 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 24 | 37 | no |
-| 044-breaking.md | SC044. Breaking before \emph{h}, \emph{rC}, \emph{lC}, and conditioned \emph{w} (`OEBreaking`) {#rule-OEBreaking} | 38 | 54 | no |
-| 044-breaking.md | SC044. Stress-sensitive short-i breaking (`OEBreakingI`) {#rule-OEBreakingI} | 62 | 67 | no |
+| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 68 | 54 | no |
+| 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 80 | 78 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 34 | 37 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 46 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 60 | 86 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 76 | 53 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 107 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 131 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 154 | 44 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 158 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 189 | 68 | no |
 | 045-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | 5 | 44 | no |
 | 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 11 | 63 | no |
 | 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 19 | 40 | no |
@@ -71,7 +77,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 50 | 92 | yes |
 | 055-i-umlaut.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | 63 | 69 | no |
 | 055-i-umlaut.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | 86 | 72 | no |
-| 055-i-umlaut.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 118 | 42 | no |
+| 055-i-umlaut.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 138 | 42 | no |
 | 056-west-saxon-palatal-diphthongization.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | 5 | 117 | yes |
 | 057-j-cluster-coalescence.md | SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence} | 16 | 79 | no |
 | 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | 22 | 90 | no |

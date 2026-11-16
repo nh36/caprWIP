@@ -66,22 +66,31 @@ not independent evidence for a historical long-vowel fronting
 ## SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening}
 
 ```foma
-define EAFBrightening Ctx([
-    EAFBrighteningStressed
-]);
+define EAFBrightening Ctx([ EAFBrighteningStressed ]);
 ```
 
 ### Stressed component
 
+The secondary-stressed short vowel is kept distinct until breaking. The
+precomposed \emph{ǽ} carries fronted secondary \emph{à}; it is short and
+is not a new primary accent or a long vowel. Decoding the annotation is
+not a claim about the historical loss of subordinate stress
+[@HoggGrammar2011, pp.217--218, §§6.7--8; @Russom2001, pp.39--64].
+
 ```foma
-define EAFBrighteningStressed [
-    {*á} -> {*æ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.]
-];
+define EAFBrighteningStressed [ {*á} -> {*æ} || _ [EnglishStarConsonant -
+    EnglishStarNasal | .#.] ]
+    .o. [ {*à} -> {*ǽ} || _ [EnglishStarConsonant - EnglishStarNasal | .#.] ];
 ```
 
-Slay requires breaking to receive the fronted root vowel: delaying the
-stressed member until after [SC044 OEBreaking](#rule-OEBreaking) gives
-\emph{sleaan | slēaan}, rather than OE *slēan* ‘slay’.
+Slay requires breaking to receive the fronted root vowel:
+\emph{*sláxan-} → \emph{*slæxan-} → \emph{*sleaxan-}. With the
+back-vowel fallback excluded, moving
+[SC044 OEBreaking](#rule-OEBreaking) before this stressed contribution
+leaves predicted [slæan]{.pred}, rather than *slēan* 'slay'.
+The older whole-bundle trial's \emph{sleaan | slēaan} additionally
+activated an unsupported quantity shortcut; it was not a clean
+measurement of the fronting feeder alone.
 Rest involves two different changes, root fronting and the separately
 retained final-vowel representation. Its final-vowel dependency must not
 be used to date this stressed rule.

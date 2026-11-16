@@ -15,6 +15,7 @@ import oe_pipeline
 from anglo_frisian_experiments import compile_isolated
 from capr_runtime import check_build_manifest, layout
 from cascade_baseline import legacy_subset
+from executable_facts import parse_defines
 from sound_change_order_sensitivity import batch_apply_down
 
 
@@ -431,8 +432,18 @@ def run_reassessment(migration=False):
         *(["MProxy"] if migration else []),
     ]))
     definitions = DEFINITIONS + REASSESSMENT_DEFINITIONS
+    notation_transport = {}
     if migration:
-        definitions += MIGRATION_DEFINITIONS
+        migration_definitions = MIGRATION_DEFINITIONS
+        # Transport the adopted weak-LH kernel only; dated alternatives
+        # and the historical definition constant remain unchanged.
+        weak = parse_defines(runtime.germanic_fst.read_text()).get("OELHWeakRaising")
+        if weak and "[{*a}|{*à}]->{*u}" in "".join(weak.body.split()):
+            migration_definitions = migration_definitions.replace(
+                "{*a} -> {*u} || .#. EnglishStarConsonant* MLight",
+                "[{*a}|{*à}] -> {*u} || .#. EnglishStarConsonant* MLight", 1)
+            notation_transport["MWeakA"] = {"from": "{*a}", "to": "[{*a}|{*à}]"}
+        definitions += migration_definitions
     probes = MIGRATION_PROBES if migration else REASSESSMENT_PROBES
     recipe = dict(
         definitions=definitions, insert_after="", insert_rule="", replace={},
@@ -515,6 +526,7 @@ def run_reassessment(migration=False):
         component_results=controls,
         **(dict(prior_reassessment_sha256=digest(
             Path(__file__).with_name("reassessment.json")),
+            notation_transport=notation_transport,
             selected_replacement=dict(row_id="2302", old="*wír-àldu",
                                       new="*wír-àldiz")) if migration else {}),
         coordinates=[dict(identifier=stage.foma_identifier,

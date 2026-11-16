@@ -41287,7 +41287,7 @@ OEJGlideIO [no-change]: *w*é*r*à*l*d
 OEDiphthongLeveling [no-change]: *w*é*r*à*l*d
 OEAwLongDiphthong [no-change]: *w*é*r*à*l*d
 OECompoundLinkingSyncope [no-change]: *w*é*r*à*l*d
-OEStripSecondaryStress: *w*é*r*a*l*d
+OEStripSecondaryStress [no-change]: *w*é*r*à*l*d
 OEInterStressRaising: *w*é*r*u*l*d
 OEWICombinativeUUmlaut [no-change]: *w*é*r*u*l*d
 PWGmcFinalBareALoss [no-change]: *w*é*r*u*l*d
@@ -46000,16 +46000,16 @@ OEJGlideIO [no-change]: *θ*ū*s*è*n*d
 OEDiphthongLeveling [no-change]: *θ*ū*s*è*n*d
 OEAwLongDiphthong [no-change]: *θ*ū*s*è*n*d
 OECompoundLinkingSyncope [no-change]: *θ*ū*s*è*n*d
-OEStripSecondaryStress: *θ*ū*s*e*n*d
-OEInterStressRaising [no-change]: *θ*ū*s*e*n*d
-OEWICombinativeUUmlaut [no-change]: *θ*ū*s*e*n*d
-PWGmcFinalBareALoss [no-change]: *θ*ū*s*e*n*d
-NWGmcInStemNLoss [no-change]: *θ*ū*s*e*n*d
-PWGmcSurvivingBimoricOUnrounding [no-change]: *θ*ū*s*e*n*d
-EAFBrighteningUnstressed [no-change]: *θ*ū*s*e*n*d
-EAFBrightening [no-change]: *θ*ū*s*e*n*d
-EAFBrighteningLongFinal [no-change]: *θ*ū*s*e*n*d
-OEBreaking [no-change]: *θ*ū*s*e*n*d
+OEStripSecondaryStress [no-change]: *θ*ū*s*è*n*d
+OEInterStressRaising [no-change]: *θ*ū*s*è*n*d
+OEWICombinativeUUmlaut [no-change]: *θ*ū*s*è*n*d
+PWGmcFinalBareALoss [no-change]: *θ*ū*s*è*n*d
+NWGmcInStemNLoss [no-change]: *θ*ū*s*è*n*d
+PWGmcSurvivingBimoricOUnrounding [no-change]: *θ*ū*s*è*n*d
+EAFBrighteningUnstressed [no-change]: *θ*ū*s*è*n*d
+EAFBrightening [no-change]: *θ*ū*s*è*n*d
+EAFBrighteningLongFinal [no-change]: *θ*ū*s*è*n*d
+OEBreaking: *θ*ū*s*e*n*d
 OEVelarFricativePalatalization [no-change]: *θ*ū*s*e*n*d
 OEARestoration [no-change]: *θ*ū*s*e*n*d
 OEHeavySyllableNasalApocope [no-change]: *θ*ū*s*e*n*d

@@ -429,8 +429,14 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
     current = json.loads(result.stdout)
     (tmp_path / "world-migration-current.json").write_text(result.stdout)
     observed = json.loads((ASSAY / "migration.json").read_text())
-    assert current["component_results"]["OEInterStressRaising"] == (
-        observed["component_results"]["MCombined"])
+    expected = dict(observed["component_results"]["MCombined"])
+    for name in ("twofold-shaped-grave", "grave-before-l-without-u"):
+        assert expected[name] == observed["component_inputs"][name]
+        expected[name] = expected[name].replace("*à", "*u")
+    assert current["notation_transport"] == {
+        "MWeakA": {"from": "{*a}", "to": "[{*a}|{*à}]"}}
+    assert current["component_results"]["OEInterStressRaising"] == expected
+    assert current["component_results"]["MCombined"] == expected
     assert current["selected_rows"] == 394
     assert current["legacy380_identities"] == 380
     for model in current["models"].values():

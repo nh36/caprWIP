@@ -3,6 +3,13 @@
 This ledger records the source forms and working distinctions gathered before the
 book-style entry was drafted.
 
+The SC044 follow-up visually checked Ringe–Taylor p.240 (PDF sheet255),
+§6.6.3. Their West Germanic geminate is already marked palatalized before
+fronting/breaking. CAPR instead breaks with xxj and then explicitly
+palatalizes the j-adjacent x, producing xçj. The source reconstruction
+and executable serialization are distinguished in the model article;
+the paired finite vowel-order comparison is preserved in the SC044 audit.
+
 | Source | Date / position | Form(s) given | Morphology / formation | Old English form(s) | Claim used for the entry | Citation key available? | Local path | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | TSV row 2092 | live row | `PROTO *lákaną`; `PROTOFORM *xláxjaną`; `hliehhan`; `NOTE_PRESENT yes` | comparative non-j branch vs selected j-present input | `hliehhan` | The row distinguishes the wider cognate-set label from the OE-facing j-present formation. | no | `Germanic/data/germanic-aligned-final.tsv` | high |

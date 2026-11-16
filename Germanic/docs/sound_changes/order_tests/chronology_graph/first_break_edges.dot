@@ -142,10 +142,11 @@ digraph first_break_chronology {
   "SC042" -> "SC020" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC042" -> "SC108" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC108" -> "SC042" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
-  "SC043" -> "SC044" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
-  "SC044" -> "SC043" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
-  "SC044" -> "SC045" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
-  "SC045" -> "SC044" [label="reciprocal_chronology", color="#2f855a", fontcolor="#2f855a"];
+  "SC043" -> "SC044" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC044" -> "SC043" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC044" -> "SC045" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC044" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC045" -> "SC044" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC045" -> "SC060" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC046" -> "SC043" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC046" -> "SC048" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];

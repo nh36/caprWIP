@@ -1,5 +1,90 @@
 # SC044 OE Breaking — chronology evidence card
 
+## Current adjudication at integrated control 54b15a2d
+
+The [SC044 memo](../../audits/sc044-adjudication.md) and its pinned
+experiments supersede the interpretation, not the measurements, of the
+pilot card below. The old card was last committed at
+`16ed33ae4090390c99c5ea87e1c69b5b44fdd5e4`.
+
+| Experiment on all 394 rows | Output-set changes | Ambiguous rows | Matches |
+|---|---:|---:|---:|
+| Landed control | 0 | 0 | 386 |
+| Original SC044 before stressed SC043 | 29 | 29 | 385 |
+| Front-only SC044 before stressed SC043 | 26 | 0 | 360 |
+| Original SC044 after voiceless SC045 | 12 | 0 | 374 |
+| Adopted vowel-specific repair, original order | 0 | 0 | 386 |
+
+The word-by-word records are identified by their actual interventions:
+[26 rows, front-only breaking before stressed brightening](../../audits/sc044-adjudication.md#front-only-brightening-displacement)
+and [12 rows, original breaking after fricative palatalization](../../audits/sc044-adjudication.md#breaking-after-fricative-palatalization).
+They remain pinned observations, not reruns on the repaired source.
+
+The early original bundle activates its back-a fallback, yielding short
+and long alternatives, including before rC/lC. Only one selected match is
+lost, but 29 complete output sets change. Those are different metrics.
+For slay the first difference is the inserted early breaking:
+`*sláxaną -> *sléaxaną | *slḗaxaną`; later h-loss leaves `*sléaan | *slḗaan`,
+which the contraction rule does not collapse. The finals are
+`sleaan | slēaan`. Removing the fallback isolates the conventional
+stressed low-vowel feeder: early breaking leaves á, SC043 supplies æ too
+late, and the final is slæan. Calf, swallow and yarn regain their control
+finals in this latter experiment; that convergence does not mean their
+intermediate histories were unchanged.
+
+The later trial gives fee feh (not the older fehu), fight fehtan,
+flax flæhs, knight cneht and laugh hlehhan. Fee/fight lose the effective
+velar trigger to premature x→ç. In the live order é→éo instead removes
+the front-vowel context while preserving x. Laugh independently changes
+the second x of xxj next to j in the live order; the displaced order
+changes both x's to ç before breaking.
+
+Supported conventional precedence is stressed SC043 feeding short
+æ-breaking, and breaking bleeding effective x-palatalization in the
+fee/fight witnesses. Reverse registry representations are not separate
+historical before-edges or independent reciprocal measurements.
+Hogg1979 pp.90–92 and Fulk1998 pp.145–146 require distinguishing effective
+h-palatalization from all k/g articulation. The finite early Anglian
+farmjan test instead favours post-mutation rm breaking under its
+reconstruction; it does not reorder the WS cascade.
+
+### West Saxon follow-up on the secondary-stress repair
+
+The [exact two-input comparison](../../audits/sc044-adjudication.md#west-saxon-vowel-order-follow-up)
+uses live production/snapshot bins and finite remainders. In bielġ
+'belly, bag', bálgiz gives æ after brightening, ea after SC044 and ie
+after SC055. With the same lg and surviving i, reversing the local vowel
+operations gives e, which revised breaking leaves unbroken; both full
+reversed remainders end in belġ.
+
+For hliehhan 'laugh', the fixed-consonant pair is æ→ea→ie against
+æ→e→eo. Moving mutation early while keeping breaking before SC045 ends
+in hleohhan, with xçj after palatalization. Moving breaking past SC045
+also changes both fricatives first (ççj), and ends in hlehhan.
+Neither remainder restores ie. This separates vowel order from whole-rule
+displacement rather than calling their different laugh outputs one test.
+Ringe and Taylor §6.6.3, pp.240–244, supply the conventional West Saxon
+vowel histories, but their p.240 reconstruction already has a palatalized
+geminate before breaking; CAPR's explicit j-adjacent rewrite follows it.
+The registry now records one witness-scoped feeding relation,
+SC044 -> SC055: bielġ (row 1945) is the clearest witness and hliehhan
+(row 2092) corroborates. This dates the adopted West Saxon vowel
+histories only, not a global reordering or a reciprocal constraint.
+The existing source-running regression is
+`test_sc044_adjudication.py::test_west_saxon_vowel_order_with_live_remainder`.
+
+The feormat comparison is conditional on farmjan-, not an etymology-free
+date: Lloyd and Lühr's original-e alternative can give eo in either
+Anglian order. Pheifer §70 and no.402 parse feormat 'fosters, nourishes'
+as third-person singular present; Latin fouit (Épinal/Erfurt) and fouet
+(Corpus) are separately recorded in the reader and audit.
+
+## Archived pilot card (dated evidence, not current interpretation)
+
+The following measurements and wording are retained from the old card.
+Its old order numbers, vocabulary and ambiguous-output interpretation
+must not be treated as a fresh experiment on 54b15a2d.
+
 ## Position at experiment time
 - order_at_experiment_time: `44`
 - rule_name: `OEBreaking`

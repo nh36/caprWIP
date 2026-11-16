@@ -8211,7 +8211,6 @@ Proto input: _\*wíràldiz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Strip Secondary Stress} & \emph{*wérald} \\
 \mbox{OE Inter Stress Raising} & \emph{*wéruld} \\
 \mbox{OE Back Mutation} & \emph{*wéoruld} \\
 \mbox{OE Med Unstressed U Lowering} & \emph{*wéorold} \\
@@ -8344,9 +8343,12 @@ name for the desired outcome; Minkova likewise requires independent
 linguistic controls on metrical reconstruction
 [@Hogg1996, pp. 3, 9--11; @Minkova1996, pp. 20--29].
 The grave in the selected reconstruction marks the earlier second-root
-accent, not an unstressed linking vowel. It survives the linking-syncope
-operation and is then removed before weak raising, not asserted as actual
-independent prominence at the latter change.
+accent, not an unstressed linking vowel. It survives linking-syncope and
+reaches [SC036 OEInterStressRaising](#rule-OEInterStressRaising) as marked
+\emph{à}. That rule rewrites the marked vowel under the same light-initial
+condition as plain \emph{a}; there is no intervening general grave-removal
+operation. The annotation's survival does not assert actual independent
+prominence at weak raising.
 True compound secondary stress can protect a vowel, while obscured
 compounds reduce; the history of transparency cannot be inferred from a
 hyphen alone [@Fulk2018, pp. 36--38, §2.2].
@@ -8396,9 +8398,10 @@ in *world* [@HoggGrammar2011, pp. 217--218;
 
 From selected \emph{*wír-àldiz}, early short-\emph{i} apocope,
 [SC015 PNWGmcILowering](#rule-PNWGmcILowering), and final-\emph{z}
-loss give \emph{*wér-àld}. After linking-syncope has read the earlier
-accent information, grave removal gives \emph{*wérald}.
-[SC036 OEInterStressRaising](#rule-OEInterStressRaising) supplies
+loss give \emph{*wér-àld}. Linking-syncope preserves the earlier accent
+information, so this marked form, not \emph{*wérald}, reaches
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising). Its existing
+light-initial condition rewrites \emph{à} and supplies
 \emph{*wéruld}; [SC059 OEBackMutation](#rule-OEBackMutation)
 gives \emph{*wéoruld}; and
 [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering)
@@ -8430,10 +8433,10 @@ OE-facing stage chosen for the derivation.
 
 | Stage / interpretation | Candidate form | Old English outcome or comparison | Relevance to this entry |
 | :--- | :--- | :--- | :--- |
-| comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:224" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:224:1"} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
-| literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:1"} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:2"} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:3"} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:4"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:225:5"} 'world' | explains the older comparative literature cited for the word |
-| selected inherited compact nominative | [_\*wír-àldiz_]{.iv lang=pgmc sort=wiraldiz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:226:2"} 'world' | exact West Saxon match; junction pre-encoded, no necessary early analogy |
-| broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:1"} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:2"} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:3"} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:4"} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:227:5"} 'world' | real attested comparanda that remain outside that West Saxon line |
+| comparative compound with older first-element vowel | [_\*wíra-àldiz_]{.iv lang=pgmc sort=wiraaldiz role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:228" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:228:1"} | citation reconstruction / lexeme label | preserves the older _\*wir-_ tradition of the compound |
+| literature-stage lowered compound after early stem-class shift | [weraldiz]{.iv .recon lang=preoe sort=weraldiz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229:1"} > [weraldu]{.iv .recon lang=preoe sort=weraldu role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229:2"} > [weruld]{.iv .recon lang=preoe sort=weruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229:3"} | Ringe-Taylor background chain to OE [_weorold_]{.iv lang=oe sort=weorold role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229:4"} 'world' ~ [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:229:5"} 'world' | explains the older comparative literature cited for the word |
+| selected inherited compact nominative | [_\*wír-àldiz_]{.iv lang=pgmc sort=wiraldiz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:230" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:230:1"} | regular output: [_weorold_]{.iv lang=oe sort=weorold role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:230" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:230:2"} 'world' | exact West Saxon match; junction pre-encoded, no necessary early analogy |
+| broader OE variant cluster | — | [_worold_]{.iv lang=oe sort=worold role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231:1"} 'world', [_weoruld_]{.iv lang=oe sort=weoruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231:2"} 'world', [_woruld_]{.iv lang=oe sort=woruld role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231:3"} 'world', [_wiarald_]{.iv lang=oe sort=wiarald role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231:4"} 'world', [_world_]{.iv lang=oe sort=world role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231" occ_id="Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md:231:5"} 'world' | real attested comparanda that remain outside that West Saxon line |
 
 ### yarn — OE _ġearn_
 
@@ -10806,8 +10809,18 @@ supplies the evidence followed here.
 
 From [xláxjaną]{.recon} ‘laugh’, West Germanic j-gemination yields the doubled consonant
 [@Campbell1959, §407]. Ringe and Taylor derive Old English [_hliehhan_]{.iv lang=oe sort=hliehhan role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:44" occ_id="Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:44:1"} 'laugh' from the
-j-present branch via breaking before the palatalized geminate
-[@RingeTaylor2014, 240]. They separately compare the related noun _hleahtor_
+j-present branch with a palatalized geminate already present in their
+West Germanic reconstruction, before fronting and breaking
+[@RingeTaylor2014, p.240, §6.6.3]. CAPR does not encode that consonantal
+sequence identically: [SC044 OEBreaking](#rule-OEBreaking) changes the
+vowel while both fricatives are still \emph{x}; only then does
+[SC045 OEVelarFricativePalatalization](#rule-OEVelarFricativePalatalization)
+change the \emph{j}-adjacent member, giving \emph{xçj}.
+The following [SC055 OEIUmlaut](#rule-OEIUmlaut) supplies \emph{ie}.
+The controlled comparison in SC044 distinguishes that live vowel history
+from both mutation-first and whole-rule displacement, rather than treating
+Ringe and Taylor's geminate notation as a transcript of CAPR.
+They separately compare the related noun _hleahtor_ 'laughter'
 as the outcome of [hlahtraz]{.recon} ‘laugh’ [@RingeTaylor2014, 328].
 
 #### Branch comparison
@@ -12054,7 +12067,7 @@ Proto input: _\*θūsèndi_
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -12062,7 +12075,7 @@ Proto input: _\*θūsèndi_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
 \mbox{PWGmc Early I Apocope} & \emph{*θūsènd} \\
 \end{tabularx}
 \vspace{0.6em}
@@ -12077,7 +12090,7 @@ Proto input: _\*θūsèndi_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Strip Secondary Stress} & \emph{*θūsend} \\
+\mbox{OE Breaking} & \emph{*θūsend} \\
 \end{tabularx}
 \end{minipage}
 \\

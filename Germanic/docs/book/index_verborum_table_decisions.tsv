@@ -6,8 +6,8 @@ defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:65	cū	oe
 defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:66	*kūi	pgmc		selected_input	short dative-cell input; keep manual review
 defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	*kūiz	pgmc		comparison_form	unstable genitive comparator
 defer	Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:67	cā	oe		comparison_form	unstable genitive evidence only
-accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	hlæhhan	oe		comparison_form	attested OE variant in the same verb line
-accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:58	hlehhan	oe		comparison_form	attested OE variant in the same verb line
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:68	hlæhhan	oe		comparison_form	attested OE variant in the same verb line
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:68	hlehhan	oe		comparison_form	attested OE variant in the same verb line
 accept	Germanic/docs/lexeme_reports/model_entries/2133-navel-nafola.model.md:60	næfla	oe		comparison_form	reduced OE comparative citation form
 defer	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:59	*nḗdlō	preoe		comparison_form	intermediate pre-OE stage; keep deferred
 defer	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:69	*nasō	pgmc		comparison_form	full-grade comparative background only
@@ -21,7 +21,7 @@ accept	Germanic/docs/lexeme_reports/model_entries/1981-craft-cræft.model.md:50	
 accept	Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md:56	*xláðaną	pgmc		selected_input	selected PGmc strong-verb input (explicit stage)
 accept	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:57	*lábbaz	pgmc		source_protoform	PGmc competing labial-grade comparator (explicit stage)
 accept	Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md:58	*láppô	pgmc		selected_input	selected PGmc weak-noun input (explicit stage)
-accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:57	*xláxjaną	pgmc		selected_input	selected PGmc j-present input (explicit stage)
+accept	Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:67	*xláxjaną	pgmc		selected_input	selected PGmc j-present input (explicit stage)
 accept	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:52	*laimōn	pgmc		selected_input	PGmc comparative-family form (explicit stage)
 accept	Germanic/docs/lexeme_reports/model_entries/2109-loam-lām.model.md:53	*láimą	preoe	transponent	selected_input	selected pre-OE transponent stem-class input (OE-internal class reformation)
 accept	Germanic/docs/lexeme_reports/model_entries/2114-lung-lungen.model.md:56	*lúnganjō	pgmc		selected_input	selected PGmc derived formation (explicit stage)

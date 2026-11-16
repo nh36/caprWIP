@@ -135,9 +135,12 @@ name for the desired outcome; Minkova likewise requires independent
 linguistic controls on metrical reconstruction
 [@Hogg1996, pp. 3, 9--11; @Minkova1996, pp. 20--29].
 The grave in the selected reconstruction marks the earlier second-root
-accent, not an unstressed linking vowel. It survives the linking-syncope
-operation and is then removed before weak raising, not asserted as actual
-independent prominence at the latter change.
+accent, not an unstressed linking vowel. It survives linking-syncope and
+reaches [SC036 OEInterStressRaising](#rule-OEInterStressRaising) as marked
+\emph{à}. That rule rewrites the marked vowel under the same light-initial
+condition as plain \emph{a}; there is no intervening general grave-removal
+operation. The annotation's survival does not assert actual independent
+prominence at weak raising.
 True compound secondary stress can protect a vowel, while obscured
 compounds reduce; the history of transparency cannot be inferred from a
 hyphen alone [@Fulk2018, pp. 36--38, §2.2].
@@ -187,9 +190,10 @@ in *world* [@HoggGrammar2011, pp. 217--218;
 
 From selected \emph{*wír-àldiz}, early short-\emph{i} apocope,
 [SC015 PNWGmcILowering](#rule-PNWGmcILowering), and final-\emph{z}
-loss give \emph{*wér-àld}. After linking-syncope has read the earlier
-accent information, grave removal gives \emph{*wérald}.
-[SC036 OEInterStressRaising](#rule-OEInterStressRaising) supplies
+loss give \emph{*wér-àld}. Linking-syncope preserves the earlier accent
+information, so this marked form, not \emph{*wérald}, reaches
+[SC036 OEInterStressRaising](#rule-OEInterStressRaising). Its existing
+light-initial condition rewrites \emph{à} and supplies
 \emph{*wéruld}; [SC059 OEBackMutation](#rule-OEBackMutation)
 gives \emph{*wéoruld}; and
 [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering)

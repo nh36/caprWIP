@@ -34,6 +34,8 @@ FINAL_NASAL_CHANGED = {
 
 def before_flask_adoption(current):
     """Validate the exact later promotions before checking older source freezes."""
+    from test_sc044_adjudication import before_sc044_adoption
+    current = before_sc044_adoption(current)
     previous = parse_defines(subprocess.check_output(
         ["git", "show", "07829f2e88e5afb60e7949adbf77bdd9e4909b00:Germanic/fsts/germanic.txt"],
         cwd=ROOT, text=True))

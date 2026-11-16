@@ -341,7 +341,7 @@ def reference_controls(request, profile):
             value["breaking"] = apply(bins["component:OEBreaking"], [
                 "*f*u*l*w*i*x*t", "*n*a*w*i*x*t", "*s*i*w", "*s*í*w",
                 "*b*i*r*x*t", "*w*i*w*i", "*w*i*w*ī",
-                "*s*æ*l*ì*w*æ*r*d", "*ᶠ*b*i*s*i*w"])
+                "*s*æ*l*ì*w*ǽ*r*d", "*ᶠ*b*i*s*i*w"])
             value["high"] = apply(bins["component:AFHighHandling"], [
                 "*s*e*l*i*w*ea*r*d", "*x*a*n*d*u*s*ea*x",
                 "*ȳ*t*y*m*i*s*t", "*b*o*n*d*i*n*s*t*a",
@@ -490,7 +490,7 @@ def probe_catalog():
     add("fee", "fee", "fee", "raw", ["féx", "féxu", "féxą"])
     component("breaking", "breaking", "breaking", "OEBreaking", [
         "*f*u*l*w*i*x*t", "*n*a*w*i*x*t", "*s*i*w", "*s*í*w", "*b*i*r*x*t",
-        "*w*i*w*i", "*w*i*w*ī", "*s*æ*l*ì*w*æ*r*d", "*ᶠ*b*i*s*i*w"])
+        "*w*i*w*i", "*w*i*w*ī", "*s*æ*l*ì*w*ǽ*r*d", "*ᶠ*b*i*s*i*w"])
     component("high", "high", "high", "AFHighHandling", [
         "*s*e*l*i*w*ea*r*d", "*x*a*n*d*u*s*ea*x", "*ȳ*t*y*m*i*s*t",
         "*b*o*n*d*i*n*s*t*a", "*ʃ*y*l*d*i*ç*ǣ*t*j*ā", "*l*a*n*d*w*ì*n*a"])

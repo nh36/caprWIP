@@ -7,7 +7,7 @@
     "Germanic/docs/assembly/build_full_lexical_volume.py": "a4e6c8b7900a300cf73f69e65bbdf4f796359a926d90f90e7791699366eaef8b",
     "Germanic/docs/assembly/lexical_editorial_order.tsv": "7cdafe042fb24f8be02533b762841917351e0e10037a7f79f23096cdc2240a5d",
     "Germanic/docs/assembly/section_introductions_draft.md": "d2af1bd13554449b7053b038ce493ea90c98cbe8e41da6b8c362d276b59867bd",
-    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "a69e8e02a4c9cb2e9654893edbd7b1e8260fe59e8f4bbddd1fe25e5949fc99c7",
+    "Germanic/docs/debug_snapshots/oe_full_trace_report.txt": "c1392f0d7140c10bd9eff451b58f72023aefbbe98587103a60c3441a870c3339",
     "Germanic/docs/lexeme_reports/model_entries/1933-adder-n\u01e3dre.model.md": "52549a9050ba8eb79643b769ec290b5ba323de44c757b9641ae0ed35ed04fb98",
     "Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md": "dc2610f275dc925e44f886bc8efab18d4ade9fc16cbfe9d38154ad3ee4222a90",
     "Germanic/docs/lexeme_reports/model_entries/1936-ban-bannes.model.md": "e14c2eb8eaa31c708bca41b5d2e1d6d147e3b3bffd66a323f3daa9c4f74d6164",
@@ -76,7 +76,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2087-knob-cnobba.model.md": "be990fa7c01fe301368aafb0937485d538538eb6e7122b02a93c07d4b4018843",
     "Germanic/docs/lexeme_reports/model_entries/2088-lade-hladan.model.md": "08339fe3535d694d27ab1a93213f5c1aa3ffbf4dd80354f5e999f8cbe27fa68f",
     "Germanic/docs/lexeme_reports/model_entries/2090-lap-lappa.model.md": "5bdc3571216d1f8f4aff70a090f108f91fa11a9943d2523b9090b4410483732c",
-    "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md": "6d130502046fe80147fe3df68da1b0850ce5453e4225e06a3020234bcabff8c7",
+    "Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md": "385efaac47e32fa5ed75777070ac7d33f81444010339891dfaf320ffd035c292",
     "Germanic/docs/lexeme_reports/model_entries/2093-lead-l\u01e3dan.model.md": "037a754c1824c5b013f5151004f541cf98882ab647131e1663b011a963269565",
     "Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md": "d96a4890ddd93dc2856997bd2bf00de90eac0d69cb2af93ba0d2ccc0aa2b1335",
     "Germanic/docs/lexeme_reports/model_entries/2100-lid-hlid.model.md": "01ba172a03b51bf07c2eeae63812ba9667f6a7883e57ba6271eb1b7b5dd46472",
@@ -161,7 +161,7 @@
     "Germanic/docs/lexeme_reports/model_entries/2297-wold-weald.model.md": "0b171bf7a7d889f0412555b6e6745204f8d07d70675b60c5737101b349e694c9",
     "Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md": "ad9c322cbe54c106094ffb925e956331034984298b685089708ce557f372a459",
     "Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md": "dd2c930561a1476458237584429f34763545167ff2d9c28fdf1763fa710f6fd5",
-    "Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md": "cf3a280f5a9795b4e2a26cd4a9cd4138e128bebc079b216d615210261ec956ce",
+    "Germanic/docs/lexeme_reports/model_entries/2302-world-weorold.model.md": "174cfba360db0fc0558f21f44fae50135e32f24416fd348cb31b63dde5bed38d",
     "Germanic/docs/lexeme_reports/model_entries/2305-yarn-\u0121earn.model.md": "6274d3110dc6c430931f89e66d72c1b5ef533b3f7d486c9dd8ca1b0d55f2741a",
     "Germanic/docs/lexeme_reports/model_entries/2308-youth-\u0121eogu\u00fe.model.md": "9f13996ea0c3c1ca8dc978d77af43d0f3305fc5b4771caeb89fd768d7dabdff3",
     "Germanic/docs/lexeme_reports/model_entries/2309-make-(iptv.2sg)-maca.model.md": "ad60c2e00f48382a582615a9e0aaa7802b2e0adea4d1efb7b594df79f5b008e8",
@@ -194,7 +194,7 @@
     "backend/oe_input_context.py": "d5ffa81382d7117d59a3ca031a038d98ef64e94d24e03a8152815f46c88d9b67"
   },
   "outputs": {
-    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "f3e0dc8e1e1e44c941249c584d8b1dda0611f6dc8914eb1a64ddfdcd044c6eed",
+    "Germanic/docs/assembly/lexical_volume_alpha_01.md": "922c37d771383433055a24d9f24939dfc5f888d8e943aafbb8e8ee153b530332",
     "Germanic/docs/assembly/manifest_all_by_class.tsv": "20873e98647ec5b262bbf932458fec846a7e56651c1698f174528fe39f76fe59",
     "Germanic/docs/assembly/manifest_attested_variant.tsv": "589883b27dd6c13cd3dceb6df23509b72d3f83ddea75b6275408715fd1c8a0e8",
     "Germanic/docs/assembly/manifest_early_analogy.tsv": "f58889406287fe947728125d61c71b868c39de7b00987873546367b27b757178",
@@ -204,7 +204,7 @@
     "Germanic/docs/assembly/manifest_regular.tsv": "32e47ba98b750c592644ef89f868b370cab6c29941217314e8a91fc371a0335b",
     "Germanic/docs/assembly/manifest_summary.md": "56f9f53f58a9675f517f4637d0c2e501ae73f91c10202e6e0a2fb73a19a7dacd",
     "Germanic/docs/assembly/manifest_unexplained.tsv": "eeebc32b70eef7e96cc6627a9b17374bba164c469eb21427d3c30e82629bf492",
-    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md": "e905c728e7f9eed4cf370e5001218a7f19816e0803ad1c82079d156c09e70001",
-    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt": "c3930fc1a46794a312a13f512a59868cec8e0c1a707b67261d91737f6cdf14e6"
+    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.compact.md": "fbe394e85086b9e83018e5aa67caf9375b447c4ff476d79e40e2f6747e242fcd",
+    "Germanic/docs/debug_snapshots/oe_derivation_class_trace_report.txt": "39c52eb2c31b4f40bdb29cad6565b6a2d503ed3088ac1da337658a55992444e8"
   }
 }

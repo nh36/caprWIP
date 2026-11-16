@@ -1,5 +1,45 @@
 # SC042-SC048 Post-brightening Region
 
+## SC044 source-critical update, 15 November 2026
+
+The [SC044 adjudication](../audits/sc044-adjudication.md), at integrated
+`54b15a2d`, supersedes the older whole-bundle interpretation below.
+The canonical census is 50: 29 short-æ A applications and 21 stressed
+short-é E applications; all three learn forms enter with e, not i.
+The main B/P packet below remains evidence from `67a18cfb`, not a fresh
+observation of this cascade. The settled SC043/045 memos are reused from
+`671edc53`, with their original 387-row scope explicit.
+
+The repaired vowel-specific component preserves every selected record.
+Independent controls remove the unsupported back-a/long fallback,
+restrict E laterals, exclude palatal ll, distinguish weak and stressed
+nuclei, and supply source-backed I/lx and inherited-long x breaking.
+The original early displacement changes 29 output sets with ambiguity,
+although it loses only the slay match; the front-only trial isolates the
+stressed low-vowel feeder and changes 26 finals. The later reversal
+changes 12 finals, with current fee feh rather than old fehu.
+Fee/fight demonstrate bleeding, while laugh's j-adjacent second fricative
+is a live SC045 application. Both reciprocal registry representations
+are reconciled; there is no newly proved reciprocal chronology for all
+k/g articulation [@Hogg1979, pp.90--92; @Fulk1998, pp.145--146].
+
+The finite farmjan experiment genuinely favours post-mutation Anglian
+rm breaking under its reconstruction. Pheifer's manuscript distinctions
+and etymological qualifications remain, as do the limits on uuerci,
+smeruui and teru. This does not replace the conventional WS production
+order or identify later Frisian breaking with one inherited event
+[@Pheifer1974, pp.22,103, nos.402,656;
+@Versloot2025, pp.130--132, §§5.4--5.5].
+
+The full strict compound controls additionally require secondary low/front
+annotations to survive until breaking. Their first repair missed world's
+existing LH reduction; the final annotation-aware version preserves that
+same condition, all selected outputs and conditional seleweard. Annotation
+cleanup in thousand must not be counted as a new phonological witness.
+
+The remaining scaffold and pilot recommendations are dated editorial
+history, not instructions to regroup the current per-SC reader.
+
 Current component correction: SC043 is ordinary stressed English fronting,
 not the old composite. SC107 retains the earlier unstressed contribution
 and SC108 the carried final quantity. In rest, SC042 feeds SC108 while

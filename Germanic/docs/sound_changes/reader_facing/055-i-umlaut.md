@@ -113,6 +113,26 @@ can be mutated, as in the source derivation of *ġiest* 'guest'
 simple-vowel route converged on the same final form, showing why final
 agreement alone could not establish the relative chronology.
 
+The paired West Saxon test under
+[SC044 OEBreaking](#rule-OEBreaking) supplies two more direct controls.
+Live *bielġ* 'belly, bag' has \emph{æ > ea > ie}; mutation first gives
+\emph{e}, which revised breaking leaves unbroken before \emph{lg}.
+Both tested reversed remainders end in predicted [*belġ*]{.pred}.
+For *hliehhan* 'laugh', holding consonants and \emph{j} fixed gives
+\emph{æ > ea > ie} against \emph{æ > e > eo}. Moving mutation early
+gives predicted [*hleohhan*]{.pred}; delaying the whole breaking rule
+also changes fricative palatalization and gives predicted [*hlehhan*]{.pred}.
+Neither remainder restores \emph{ie}. These live comparisons support
+the conventional West Saxon vowel history in Ringe and Taylor,
+without identifying their reconstructed palatalized geminate with
+CAPR's differently serialized consonantal rewrite
+[@RingeTaylor2014, pp.240--244, §6.6.3].
+[SC044 OEBreaking](#rule-OEBreaking) preserves the
+[exact paired intervention](../audits/sc044-adjudication.md#west-saxon-vowel-order-follow-up);
+the older 26-row brightening and 12-row fricative-palatalization
+displacements test different interventions, not additional mutation-order
+experiments.
+
 ## SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut}
 
 ```foma
