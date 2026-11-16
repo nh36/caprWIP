@@ -9,6 +9,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import executable_facts
+from chronology_controls import remainder_plans
 import generate_registry_views as registry
 import oe_pipeline
 from capr_runtime import layout, run_in_runner
@@ -192,9 +193,7 @@ def chronology_replay_historical(tmp_path_factory):
                               _selected_rows(), use_proto_norm=True)
 
 
-@pytest.fixture(scope="module")
-def chronology_replay_current(isolated_definitions):
-    """Current-model controls: compiles only the working grammar + variants."""
+def _current_variants():
     stages = oe_pipeline.stages()
     current_variants = {"current_identity": stages}
     earlier = [s for s in stages if s.foma_identifier != "OEMedUnstressedULowering"]
@@ -216,18 +215,39 @@ def chronology_replay_current(isolated_definitions):
                        if s.foma_identifier == "OEMedUnstressedULowering")
     delayed_umlaut.insert(destination + 1, umlaut)
     current_variants["current_delayed_umlaut"] = delayed_umlaut
-    current_appendix = ""
-    for i, (name, sequence) in enumerate(current_variants.items()):
-        members = [s.foma_identifier if s.kind == "named" else s.inline_text
-                   for s in sequence]
-        current_appendix += (
-            f"\ndefine A{i} " + " .o. ".join(members) +
-            f";\nclear stack\nregex A{i};\nsave stack {name}.bin\n")
-    common = (ROOT / "Germanic/fsts/germanic.txt").read_text()
-    source = common + current_appendix
-    return _compile_and_assay(source, list(current_variants), _selected_rows(),
-                              use_proto_norm=False, common_source=common,
-                              command_prefix=isolated_definitions)
+    return current_variants
+
+
+@pytest.fixture(scope="module")
+def chronology_replay_current(isolated_definitions, request):
+    """Current controls use canonical cumulative prefixes and live remainders."""
+    payload = {"plans": remainder_plans(_current_variants()), "rows": _selected_rows()}
+    worker = Path(__file__).with_name("chronology_controls.py").read_text()
+    script = ("import sys\nsys.path.insert(0, '/usr/app/tools')\nPAYLOAD = " +
+              repr(payload) + "\n" + worker)
+    proc = run_in_runner(
+        isolated_definitions +
+        't=$(mktemp) && cat > "$t" && python3 "$t"; rc=$?; rm -f "$t"; exit $rc',
+        input=script, text=True, capture_output=True, check=True, timeout=3900)
+    report = json.loads(proc.stdout)
+    owners = [item for item in request.session.items
+              if item.module is request.module
+              and "chronology_replay_current" in item.fixturenames]
+    profile = report["execution"]
+    profile["assertion_owners"] = [item.nodeid for item in owners]
+    diagnostic = ROOT / ".ci-results/chronology-current.json"
+    diagnostic.parent.mkdir(exist_ok=True)
+    diagnostic.write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    for item in owners:
+        item.user_properties.append(("chronology_execution", json.dumps(profile)))
+    terminal = request.config.pluginmanager.getplugin("terminalreporter")
+    if terminal:
+        terminal.write_line(
+            f"Chronology: {profile['complete_roots']} complete roots, "
+            f"{profile['remainders']} remainders; "
+            f"{profile['compiler_calls']} compiler calls, "
+            f"{profile['seconds']:.2f}s worker")
+    return report["outputs"]
 
 
 @pytest.mark.runtime

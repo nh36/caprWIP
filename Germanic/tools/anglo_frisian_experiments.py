@@ -515,9 +515,20 @@ def definition_image_source(
     return f"load defined {image}\n{macros}\nclear stack\n"
 
 
+def foma_domain(forms):
+    literals = []
+    for form in sorted(set(forms)):
+        if not form or any(char in "\r\n\t" for char in form):
+            raise ValueError("unsupported finite-domain input; epsilon requires full composition")
+        # Spaces prevent adjacent escaped characters becoming one multichar symbol.
+        literals.append(" ".join("%" + char for char in form))
+    return "[" + " | ".join(literals) + "]" if literals else "[0 - 0]"
+
+
 def compile_isolated(
     source: Path, recipe: dict, probes: list[dict], directory: Path, *, components_only: bool = False,
     diagnostic_stages: list[str] | None = None, use_definition_image: bool = True,
+    include_final: bool = True,
 ) -> dict[str, Path]:
     source_text = source.read_text(encoding="utf-8")
     _validate_isolated_source(source_text)
@@ -539,7 +550,7 @@ def compile_isolated(
         component_lines.extend(["clear stack", f"regex {stage};", f"save stack {filename}"])
         bins[f"diagnostic:{number}"] = filename
     complete, definitions = context_lifted_order(recipe, complete_variant_order(recipe))
-    if components_only:
+    if components_only or not include_final:
         variant_text = definitions
     else:
         variant_text = (
@@ -557,7 +568,8 @@ def compile_isolated(
         encoding="utf-8",
     )
     _compile_foma(script, directory)
-    outputs = {} if components_only else {"final": directory / "old_english_variant.bin"}
+    outputs = ({"final": directory / "old_english_variant.bin"}
+               if include_final and not components_only else {})
     outputs.update({name: directory / filename for name, filename in bins.items()})
     missing = [str(path) for path in outputs.values() if not path.is_file() or path.stat().st_size == 0]
     if missing:

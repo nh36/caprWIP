@@ -2,6 +2,7 @@
 
 import json
 from pathlib import Path
+import shlex
 import sys
 
 import pytest
@@ -9,26 +10,56 @@ import pytest
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
 from capr_runtime import run_in_runner
+from sc037_intervention_controls import execution_plan, validate_results
 
 pytestmark = pytest.mark.runtime
 
 
 @pytest.fixture(scope="module")
-def current():
+def current(request, record_testsuite_property):
     worker = Path(__file__).with_name("sc037_intervention_controls.py")
+    owners = sorted(item.nodeid for item in request.session.items
+                    if item.module is request.module)
+    plan = execution_plan(owners)
+    fresh = request.config.getoption("--fresh-isolated-definitions")
+    prefix = (request.getfixturevalue("isolated_definitions")
+              if plan["compilation_required"] and not fresh else "")
+    mode = "full-source" if fresh else "session"
     result = run_in_runner(
-        "CAPR_AF_DEFINITION_ISOLATED=1 python3 -",
+        prefix + "python3 - --definitions " + mode + " --tests " + shlex.quote(json.dumps(owners)),
         input=worker.read_text(), text=True, capture_output=True,
         check=True, timeout=3600)
-    return json.loads(result.stdout)
+    report = json.loads(result.stdout)
+    validate_results(owners, report)
+    execution = report["_execution"]
+    execution["assertion_owners"] = owners
+    directory = ROOT / ".ci-results"
+    directory.mkdir(exist_ok=True)
+    path = directory / "sc037-selected.json"
+    path.write_text(json.dumps(report, ensure_ascii=False, indent=2))
+    summary = {key: execution[key] for key in
+               ("request", "networks", "subprocess_counts", "seconds", "assertion_owners")}
+    record_testsuite_property("sc037_execution", json.dumps(summary, ensure_ascii=False))
+    reporter = request.config.pluginmanager.getplugin("terminalreporter")
+    if reporter:
+        reporter.write_line("SC037 live execution: " + json.dumps(summary, ensure_ascii=False))
+    return report
 
 
+@pytest.mark.sc037_extended
 def test_canonical_compound_hypotheses_discriminate_three_wrong_accounts(current):
     for form in ("sáli-wàrðaz", "sáli-wàrðuz", "sáli-wàrðą"):
         assert current["current"]["canonical"][form] == ["seleweard"]
         assert current["old-early"]["canonical"][form] == ["sealweard"]
         assert current["bad-breaking"]["canonical"][form] == ["seleoweard"]
         # Replacing unified HVD also removes final deletion in the u-stem foil.
+        wrong = "selweardu" if form == "sáli-wàrðuz" else "selweard"
+        assert current["no-weight"]["canonical"][form] == [wrong]
+
+
+def test_current_compounds_retain_outputs_and_weight_contrast(current):
+    for form in ("sáli-wàrðaz", "sáli-wàrðuz", "sáli-wàrðą"):
+        assert current["current"]["canonical"][form] == ["seleweard"]
         wrong = "selweardu" if form == "sáli-wàrðuz" else "selweard"
         assert current["no-weight"]["canonical"][form] == [wrong]
 
@@ -49,18 +80,12 @@ def test_selected_weight_negative_and_previous_breaking_umlaut_histories(current
     assert values["knéwai"] == ["cneowe"]
     assert values["fūliθǭ"] == ["fȳlþe"]
     assert values["spénnilǭ"] == ["spinle"]
-    selected = current["current"]["selected"]
-    assert len(selected) == 394
-    assert all(len(row["outputs"]) == 1 for row in selected)
-    by_id = {row["id"]: row for row in selected}
+    # The clay/fringe fixture owns the live all-row protected-baseline invariant.
+    by_id = current["current"]["entries"]
     assert by_id["2141"]["counterpart"] == "mære"
     assert by_id["2141"]["outputs"] == ["mære"]
     assert by_id["2016"]["counterpart"] == "flascan"
     assert by_id["2016"]["outputs"] == ["flascan"]
-    assert {row["concept"] for row in selected
-            if row["outputs"] != [row["counterpart"]]} == {
-                "buck", "fire", "fowl", "rust", "straw", "tap",
-                "wolf", "wool"}
 
 
 def test_weak_breaking_root_breaking_and_high_front_blockers(current):
@@ -119,7 +144,7 @@ def test_pillow_requires_general_noninitial_w_loss_not_a_lexical_exemption(curre
 
 def test_fee_transponent_is_not_a_new_post_h_deletion(current):
     assert current["current"]["fee"] == [["feoh"], ["feou"], ["feoh"]]
-    fee = next(row for row in current["current"]["selected"] if row["id"] == "2006")
+    fee = current["current"]["entries"]["2006"]
     assert fee["reconstruction"] == "*féxu"
     assert fee["proto"] == "*féx"
     assert fee["outputs"] == ["feoh"]
@@ -127,7 +152,6 @@ def test_fee_transponent_is_not_a_new_post_h_deletion(current):
 
 def test_weak_unrounding_light_retention_and_positional_labials(current):
     assert current["current"]["canonical"]["régna-bùgô"] == ["reġnboga"]
-    assert current["early-b"]["canonical"]["régna-bùgô"] == ["reġnfoga"]
     assert current["no-unrounding"]["companion"] == [["gædyling"]]
     assert current["current"]["weak"] == [
         ["*y*n"], ["*g*æ*d*i*l*i*n*g"], ["*l*a*n*d*x*ỳ*m*i"]]
@@ -137,6 +161,12 @@ def test_weak_unrounding_light_retention_and_positional_labials(current):
     assert current["current"]["labial"] == [
         ["*b*a"], ["*a*β*a"], ["*l*a*m*b"], ["*x*a*b*b*a"],
         ["*r*e*g*n*b*o*g*ô"], ["*r*e*g*n*β*o*g*ô"]]
+
+
+@pytest.mark.sc037_extended
+def test_early_labial_realization_changes_rainbow(current):
+    assert current["current"]["canonical"]["régna-bùgô"] == ["reġnboga"]
+    assert current["early-b"]["canonical"]["régna-bùgô"] == ["reġnfoga"]
 
 
 def test_selected_little_protects_both_hll_vowels_against_wrong_deletions(current):
@@ -170,6 +200,23 @@ def test_selected_dart_protects_closed_final_pre_l_nonapplication(current):
     assert dart["target"] == "sċytel"
     assert controls["closed_dart"]["AF66Good"] == [["sċytel"]]
     assert controls["closed_dart"]["AF66Closed"] == [["sċytl"]]
+    stage = current["current"]["stages"]["dart"]
+    assert stage["before"] == ["*ʃ*y*t*i*l"]
+    assert_prel_nonapplication(stage["before"], stage["after"])
+    assert stage["foil_after"] == [["*ʃ*y*t*l"]]
+    with pytest.raises(AssertionError):
+        assert_prel_nonapplication(stage["before"], stage["foil_after"][0])
+
+
+def assert_prel_nonapplication(before, after):
+    assert before and set(before) == set(after), (before, after)
+
+
+def test_selected_nettle_has_live_open_medial_deletion(current):
+    stage = current["current"]["stages"]["nettle"]
+    assert stage["before"] == ["*n*e*t*i*l*ǣ"]
+    assert stage["after"] == ["*n*e*t*l*ǣ"]
+    assert current["current"]["canonical"][stage["input"]] == ["netle"]
 
 
 def test_light_root_and_open_medial_conditions_have_distinct_controls(current):

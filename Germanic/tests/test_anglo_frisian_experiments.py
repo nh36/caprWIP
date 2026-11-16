@@ -761,6 +761,33 @@ class ExperimentTests(unittest.TestCase):
 
 
 class DefinitionImageTests(unittest.TestCase):
+    def test_staged_only_compilation_omits_root_without_suppressing_suffixes(self):
+        recipe = {
+            "id": "staged-only", "definitions": "", "replace": {},
+            "insert_rule": None, "insert_after": None,
+            "staged_checks": [{"id": "tail", "stage": "OEIUmlaut", "side": "before"}],
+        }
+        for options, expected in (({"include_final": False}, {"staged:tail"}),
+                                  ({}, {"final", "staged:tail"}),
+                                  ({"components_only": True}, set())):
+            with self.subTest(options=options), tempfile.TemporaryDirectory() as temporary:
+                directory = Path(temporary)
+                source = directory / "source.txt"
+                source.write_text("define A a;\n")
+                scripts = []
+                def compile_stub(script, cwd):
+                    text = script.read_text()
+                    scripts.append(text)
+                    for line in text.splitlines():
+                        if line.startswith("save stack "):
+                            (cwd / line.removeprefix("save stack ")).write_bytes(b"compiled")
+                with patch.object(experiments, "_compile_foma", side_effect=compile_stub):
+                    bins = experiments.compile_isolated(
+                        source, recipe, [], directory, use_definition_image=False, **options)
+                self.assertEqual(set(bins), expected)
+                self.assertEqual("define AFContextRoot" in scripts[0], "final" in expected)
+                self.assertEqual("define AFS00" in scripts[0], "staged:tail" in expected)
+
     def image(self, source, directory):
         image = directory / "defined.bin"
         image.write_bytes(b"definition image")
@@ -904,6 +931,18 @@ with tempfile.TemporaryDirectory(prefix="capr_definition_equivalence_") as tempo
     assert sorted(results[0][0]) == ["b", "c"]
     assert results[0][1] == [] and results[0][2] == ["d"]
     assert results[0][0] == results[0][3]
+    os.environ["CAPR_AF_DEFINITION_ISOLATED"] = "1"
+    mismatch = root / "mismatch"
+    mismatch.mkdir()
+    bins = compile_isolated(source, recipe, [], mismatch, components_only=True)
+    assert not (mismatch / "experiment.foma").read_text().startswith("load defined ")
+    assert batch_apply_down(bins["component:Probe"], ["a", "x", "d", "a", "e"]) == results[0]
+    del os.environ["CAPR_AF_DEFINITION_ISOLATED"]
+    shared = root / "shared"
+    shared.mkdir()
+    bins = compile_isolated(source, recipe, [], shared, components_only=True)
+    assert (shared / "experiment.foma").read_text().startswith("load defined ")
+    assert batch_apply_down(bins["component:Probe"], ["a", "x", "d", "a", "e"]) == results[0]
     print(json.dumps(results))
 """
     result = run_in_runner("python3 -c " + shlex.quote(script), text=True,
