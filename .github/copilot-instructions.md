@@ -7,6 +7,7 @@
 - Default book: `bash Germanic/docs/assembly/build_capr_book_draft_docker.sh`. See `Germanic/docs/assembly/README.md` for standalone presentations and publication checks.
 
 ## Proportional validation
+- New or enlarged regression tests must follow the authoritative [regression execution and cost review](../docs/CI_VALIDATION.md#regression-execution-and-cost-review) rules, including a PR validation cost entry for added compilation, fixture scope, sweeps, rebuilds or runtime concurrency changes.
 - Level A during development: run focused owning tests, normally seconds or minutes; do not run the strict suite after each edit or intermediate commit.
 - Level B after coherent SOURCE changes: use `adjudicate.py --refresh` and `--status`. Without generated-output consequences, use relevant read-only consistency checks instead of regeneration. Never invoke a hand-picked generator list.
 - Level C once the scientific/publication state or validation execution semantics are final: run strict serial then exclusive validation, or documented proven-equivalent lanes, recording the exact tested commit/source identities. Rerun only affected checks after repairs unless the final certified state changes.
