@@ -75,6 +75,7 @@ SC108	SC042	technical_computational	earlier_boundary	technical	feeding	52	49	54	
 SC043	SC044	one_sided_chronology	later_boundary	independently_demonstrated	feeding	51	53	53	55	consistent
 SC044	SC043	technical_computational	earlier_boundary	technical	feeding	53	51	55	53	consistent
 SC044	SC045	one_sided_chronology	later_boundary	independently_demonstrated	bleeding	53	54	55	56	consistent
+SC044	SC055	one_sided_chronology	later_boundary	independently_demonstrated	feeding	53	64	55	66	consistent
 SC045	SC044	technical_computational	earlier_boundary	technical	counterbleeding_negative	54	53	56	55	consistent
 SC045	SC060	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	54	69	56	71	consistent
 SC046	SC043	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	55	51	57	53	consistent

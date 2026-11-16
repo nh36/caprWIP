@@ -66,7 +66,12 @@ displacement rather than calling their different laugh outputs one test.
 Ringe and Taylor §6.6.3, pp.240–244, supply the conventional West Saxon
 vowel histories, but their p.240 reconstruction already has a palatalized
 geminate before breaking; CAPR's explicit j-adjacent rewrite follows it.
-No new registry edge or global reordering is inferred.
+The registry now records one witness-scoped feeding relation,
+SC044 -> SC055: bielġ (row 1945) is the clearest witness and hliehhan
+(row 2092) corroborates. This dates the adopted West Saxon vowel
+histories only, not a global reordering or a reciprocal constraint.
+The existing source-running regression is
+`test_sc044_adjudication.py::test_west_saxon_vowel_order_with_live_remainder`.
 
 The feormat comparison is conditional on farmjan-, not an etymology-free
 date: Lloyd and Lühr's original-e alternative can give eo in either

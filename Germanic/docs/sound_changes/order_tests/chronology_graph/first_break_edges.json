@@ -1649,6 +1649,20 @@
       "notes": "Hogg1979 pp90-92 supports breaking before effective h-palatalization. Fulk1998 pp145-146 prevents dating all k/g. Laugh separately changes the second x next to j live; flax/knight are comparison controls, not additional independent dates."
     },
     {
+      "source_change_id": "SC044",
+      "target_change_id": "SC055",
+      "relation_type": "one_sided_chronology",
+      "direction_basis": "later_boundary",
+      "evidence_basis": "independently_demonstrated",
+      "witness_role": "feeding",
+      "representative_lexemes": "belly; laugh",
+      "representative_forms": "bielġ: æ -> ea -> ie; reversed belġ. hliehhan: æ -> ea -> ie; mutation-first hleohhan; breaking also past SC045 hlehhan.",
+      "strength": "one_sided",
+      "interpretation_category": "witness_scoped",
+      "reciprocal_group_id": "",
+      "notes": "West Saxon vowel histories under the adopted rules only. Bielġ row 1945 is the clearest witness; hliehhan row 2092 corroborates. Ringe-Taylor2014 §6.6.3 pp240-244; sc044-adjudication.md#west-saxon-vowel-order-follow-up; test_west_saxon_vowel_order_with_live_remainder. Whole-breaking displacement also changes fricative palatalization; no universal or reciprocal date."
+    },
+    {
       "source_change_id": "SC045",
       "target_change_id": "SC044",
       "relation_type": "technical_computational",

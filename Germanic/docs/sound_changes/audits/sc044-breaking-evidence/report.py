@@ -6,6 +6,7 @@ import hashlib
 import io
 import json
 import sys
+import tempfile
 import zipfile
 from collections import Counter
 from pathlib import Path
@@ -39,6 +40,49 @@ def differences(before, after):
          "before": old[identifier], "after": new[identifier]}
         for identifier in old if old[identifier] != new[identifier]
     ]
+
+
+def write_archive(roots, reverified, validation=None, destination=HERE):
+    roots = tuple(roots)
+    for root in roots:
+        try:
+            snapshot = Snapshot(root)
+            snapshot.verify()
+            for name, digest in snapshot.completion()["result_hashes"].items():
+                if hashlib.sha256((snapshot.results_dir / name).read_bytes()).hexdigest() != digest:
+                    raise ValueError(f"changed result: {name}")
+        except (OSError, ValueError, KeyError, RuntimeError) as exc:
+            raise RuntimeError(
+                f"Required SC044 historical snapshot unavailable or invalid: {root}. "
+                "Restore the complete snapshot from the preserved experiments.zip "
+                "(verify archive.sha256) before retrying; archive and checksum "
+                "have not been replaced.") from exc
+
+    with tempfile.TemporaryDirectory(dir=destination, prefix=".sc044-archive-") as temporary:
+        archive_path = Path(temporary) / "experiments.zip"
+        with zipfile.ZipFile(archive_path, "w", zipfile.ZIP_DEFLATED) as archive:
+            for root in roots:
+                for path in sorted(root.rglob("*")):
+                    if path.is_file():
+                        archive.write(path, root.name + "/" + str(path.relative_to(root)))
+            for path in sorted(reverified.glob("*")):
+                if path.is_file():
+                    archive.write(path, "reverification/" + path.name)
+            if validation is not None:
+                for receipt_path in sorted(validation.glob("sc044-strict-serial-*.receipt.json")):
+                    receipt = json.loads(receipt_path.read_text())
+                    if receipt["ok"]:
+                        continue
+                    paths = [receipt_path, Path(receipt["stdout_log"]), Path(receipt["stderr_log"])]
+                    if receipt.get("junit_path"):
+                        paths.append(Path(receipt["junit_path"]))
+                    for path in paths:
+                        archive.write(path, "prior-strict-failure/" + path.name)
+        checksum = Path(temporary) / "archive.sha256"
+        checksum.write_text(hashlib.sha256(archive_path.read_bytes()).hexdigest()
+                            + "  experiments.zip\n")
+        archive_path.replace(destination / archive_path.name)
+        checksum.replace(destination / checksum.name)
 
 
 def main():
@@ -169,27 +213,10 @@ def main():
         })
     write_tsv(HERE / "corpus-comparison.tsv", comparison)
     (HERE / "observed.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+    write_archive(
+        (snapshot.root, followup.root, *additional_roots), reverified,
+        work / "validation" if args.secondary else None)
     archive_path = HERE / "experiments.zip"
-    with zipfile.ZipFile(archive_path, "w", zipfile.ZIP_DEFLATED) as archive:
-        for root in (snapshot.root, followup.root, *additional_roots):
-            for path in sorted(root.rglob("*")):
-                if path.is_file():
-                    archive.write(path, root.name + "/" + str(path.relative_to(root)))
-        for path in sorted(reverified.glob("*")):
-            if path.is_file():
-                archive.write(path, "reverification/" + path.name)
-        if args.secondary:
-            for receipt_path in sorted((work / "validation").glob("sc044-strict-serial-*.receipt.json")):
-                receipt = json.loads(receipt_path.read_text())
-                if receipt["ok"]:
-                    continue
-                paths = [receipt_path, Path(receipt["stdout_log"]), Path(receipt["stderr_log"])]
-                if receipt.get("junit_path"):
-                    paths.append(Path(receipt["junit_path"]))
-                for path in paths:
-                    archive.write(path, "prior-strict-failure/" + path.name)
-    (HERE / "archive.sha256").write_text(
-        hashlib.sha256(archive_path.read_bytes()).hexdigest() + "  experiments.zip\n")
     print(json.dumps({
         "summary": report["summary"], "firing_count": len(census),
         "protected_firings": report["protected_firing_count"],

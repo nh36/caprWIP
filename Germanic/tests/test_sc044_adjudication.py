@@ -2,6 +2,7 @@
 import csv
 import functools
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
@@ -118,6 +119,83 @@ def test_complete_selected_records_are_conserved(observed):
     assert all(row["identical_record"] == "1" for row in rows)
     assert observed["adopted"]["corpus_delta"] == []
     assert observed["adopted"]["summary"] == observed["summary"]
+
+
+@pytest.fixture
+def archive_writer():
+    spec = importlib.util.spec_from_file_location("sc044_report", AUDIT / "report.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+@pytest.fixture
+def historical_snapshots(tmp_path):
+    from experiment_snapshot import create_snapshot
+    source = tmp_path / "source.txt"
+    source.write_text("pinned historical input\n")
+    snapshots = []
+    for name in ("historical-first", "historical-second"):
+        snapshot = create_snapshot(name, "archive failure-path control",
+                                   {"source": source}, work_root=tmp_path)
+        (snapshot.staging_dir / "failure.log").write_text("preserved rejected trial\n")
+        snapshot.complete("failed", "Preserve failed trials as well as successful ones.")
+        snapshots.append(snapshot)
+    return snapshots
+
+
+@pytest.mark.parametrize("missing", [0, 1])
+def test_missing_historical_snapshot_preserves_archive_and_checksum(
+        archive_writer, historical_snapshots, tmp_path, missing):
+    published = {name: (AUDIT / name).read_bytes()
+                 for name in ("experiments.zip", "archive.sha256")}
+    for name, data in published.items():
+        (tmp_path / name).write_bytes(data)
+    root = historical_snapshots[missing].root
+    root.rename(tmp_path / ("unavailable-" + root.name))
+    with pytest.raises(RuntimeError, match="Required SC044 historical snapshot.*Restore.*experiments.zip"):
+        archive_writer.write_archive([s.root for s in historical_snapshots],
+                                     tmp_path / "reverification", destination=tmp_path)
+    assert {name: (tmp_path / name).read_bytes() for name in published} == published
+
+
+def test_corrupt_historical_result_preserves_archive_and_checksum(
+        archive_writer, historical_snapshots, tmp_path):
+    published = {name: (AUDIT / name).read_bytes()
+                 for name in ("experiments.zip", "archive.sha256")}
+    for name, data in published.items():
+        (tmp_path / name).write_bytes(data)
+    (historical_snapshots[0].results_dir / "failure.log").write_text("corrupted result\n")
+    with pytest.raises(RuntimeError, match="Required SC044 historical snapshot"):
+        archive_writer.write_archive([s.root for s in historical_snapshots],
+                                     tmp_path / "reverification", destination=tmp_path)
+    assert {name: (tmp_path / name).read_bytes() for name in published} == published
+
+
+def test_archive_writer_retains_verified_failed_trials(
+        archive_writer, historical_snapshots, tmp_path):
+    archive_writer.write_archive([s.root for s in historical_snapshots],
+                                 tmp_path / "reverification", destination=tmp_path)
+    archive_path = tmp_path / "experiments.zip"
+    assert hashlib.sha256(archive_path.read_bytes()).hexdigest() == (
+        tmp_path / "archive.sha256").read_text().split()[0]
+    with zipfile.ZipFile(archive_path) as archive:
+        for snapshot in historical_snapshots:
+            assert archive.read(snapshot.root.name + "/results/failure.log") == (
+                b"preserved rejected trial\n")
+
+
+def test_west_saxon_registry_relation_is_witness_scoped_feeding():
+    from generate_registry_views import EDGE_REGISTRY, read_tsv
+    edges = [row for row in read_tsv(EDGE_REGISTRY)
+             if row["source_change_id"] == "SC044" and row["target_change_id"] == "SC055"]
+    assert len(edges) == 1
+    edge = edges[0]
+    assert edge["witness_role"] == "feeding"
+    assert edge["evidence_basis"] == "independently_demonstrated"
+    assert edge["interpretation_category"] == "witness_scoped"
+    assert set(edge["representative_lexemes"].split("; ")) == {"belly", "laugh"}
+    assert edge["machine_evidence"] == "test:Germanic/tests/test_sc044_adjudication.py"
 
 
 @pytest.mark.runtime

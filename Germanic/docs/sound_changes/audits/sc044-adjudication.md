@@ -395,13 +395,33 @@ not the identity of those consonantal reconstructions or a global
 reordering of every breaking/mutation component. Wierman and iermþ
 remain literature examples, not unexecuted extra experimental witnesses.
 
-The new source-bound comparison and capture receipts are preserved in
-`sc044-breaking-evidence/west-saxon-evidence.zip`, with inspectable
-`west-saxon-observed.json`. The original `experiments.zip` remains byte
-identical (SHA-256
-`64cdb3963efdc5d7612df52cda4611359c1a28ba6997dbcca8db192f4ec3b157`);
-its archive-review issue remains open. The new comparison does not repair
-or regenerate that historical archive.
+The 16 November 2026 registry closeout records one independently
+demonstrated, witness-scoped feeding relation, SC044 -> SC055. Bielġ
+(row 1945) is the clearest witness: breaking supplies ea for mutation to
+ie, whereas mutation first leaves e before lg and ends in belġ.
+Hliehhan (row 2092) corroborates the vowel relation with hleohhan under
+mutation-first; hlehhan belongs to the separate whole-breaking
+displacement past fricative palatalization. This retains the adopted
+rules and order; it asserts neither a reciprocal edge nor a universal
+date outside these West Saxon vowel histories. The positive live
+derivations, not merely a changed harness endpoint, establish feeding.
+
+The source-bound comparison, capture receipts and final strict evidence
+are preserved in the existing
+[GitHub review bundle](https://github.com/nh36/caprWIP/releases/tag/sc044/west-saxon-612ffcae),
+archive SHA-256
+`f247041e8f6b1eceff62a6e1e0dfd7d457baa8772fd9d64d5631cb9ce7f8920e`.
+The duplicate West Saxon ZIP is no longer tracked; `west_saxon.py` and
+inspectable `west-saxon-observed.json` remain in Git. The live regression
+runs from source, not that bundle. The original `experiments.zip` remains
+byte identical (SHA-256
+`64cdb3963efdc5d7612df52cda4611359c1a28ba6997dbcca8db192f4ec3b157`).
+Its writer now verifies every required snapshot's inputs and completed
+result hashes before replacing the archive or checksum. Temporary-directory
+regressions remove either historical snapshot or corrupt a result and
+require both published files to remain byte-identical; verified failed
+trials are still included. This fixes the archive-review failure path
+without regenerating the historical evidence.
 
 The new live regression is
 `test_sc044_adjudication.py::test_west_saxon_vowel_order_with_live_remainder`.
