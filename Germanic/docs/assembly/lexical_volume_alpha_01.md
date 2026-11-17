@@ -5515,6 +5515,58 @@ manuscript date or a narrower dialect label to every normalized spelling.
 The selected regular span is retained without claiming to model every
 attested orthographic or inflectional variant.
 
+#### The unstressed linker and the joint stress-domain test
+
+The inherited analysis does not require the intervening linker to remain
+back. Nonhigh medial syncope affects unstressed vowels, and Hogg explicitly
+includes thematic first-member \emph{a} in compounds
+[@HoggGrammar2011, pp. 220--222, §§6.14--6.18]. Purnell, Raimy and Salmons
+describe restoration and back mutation as operations on stressed targets
+[@PurnellRaimySalmons2019, pp. e461--e463]. Under both restrictions the
+working history is therefore
+\emph{*régna-bùgô > *régna-bògô > *régnæbogô > *réʝnæbogô
+> *réʝnbogô > *reġnboga}: early lowering concerns the second root's
+stressed vowel and its own ending; later syncope concerns the different,
+unstressed first-member vowel.
+
+The current implementation instead retracts that linker to \emph{a}
+before deleting it. Restricting restoration alone exposes it to back
+mutation, producing \emph{ea}, which escapes monophthong syncope and gives
+predicted \emph{*reġneafoga}. Restricting back mutation alone leaves the
+current path intact; restricting both preserves short \emph{æ} until
+syncope and again gives *reġnboga*. The two joint restrictions change
+none of the 394 selected endpoints. The unstressed linker of *eorþcunde*
+'earthly' likewise disappears, while independent *boga* keeps its early
+lowered vowel.
+
+This supports the conditional inherited derivation, not an unrestricted
+implementation claim. Earlier annotation decoding has already erased
+some secondary prominence before these rules. Preserving it through the
+two operations and syncope repairs the local distinction, but constructed
+subordinate-root controls expose further late weak-vowel processing.
+The joint correction remains a research proposal rather than silently
+altering production on the strength of the matching endpoint.
+
+#### What the English witnesses can date
+
+Crawford's edition has *renbogan* in Genesis 9:13, independent *boga* in
+9:14, and nominative *renboga* in 9:16 [@Crawford1922, p. 107].
+These coexistence and inflectional facts confirm the bow constituent
+without preserving the prehistoric linker. Čermák's distinction between
+secondary-stress modification, unaccented-vowel loss and cluster
+simplification supplies a useful analytical separation, not a formation
+date for this compound [@Cermak2005, pp. 35--45].
+
+Orel's inherited compound remains the working reconstruction. It
+permits regular syncope, without positive evidence requiring replacement
+from the simplex. But formation later from the already developed rain
+and bow words is not the same claim as analogical replacement. The
+English spellings and the sources checked here do not choose between
+inherited syncope and later composition. No independently attested linker
+or independently established date of formation has been found; the
+regular inherited route is viable, not demonstrably earlier than its
+compositional alternative.
+
 ### sheep — OE _sċēap_
 
 Derivation: _\*skḗpą_ > _sċēap_ (regular).

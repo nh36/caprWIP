@@ -321,3 +321,19 @@ unsupported analogy. *Hebuc*'s distinct spellings and the full
 prehistoric case endings in the deciding set remain qualified.
 Lass and Anderson1975:66--69 is deferred. No SC044 revision, broad
 chronology rewrite, Foma optimization or new corpus admission is begun.
+
+### Rainbow follow-up (2026-11-17)
+
+The separate [SC059 memorandum](sc059-adjudication.md) now records the
+literature-led joint stress-domain comparison. Restricting SC046 alone
+still gives predicted *reġneafoga*; jointly restricting SC059 retains
+short unstressed linker *æ* until ordinary syncope and restores the
+selected *reġnboga* endpoint. All394 selected endpoints are unchanged
+under the joint candidate. Earlier trials above remain frozen.
+
+This resolves the named rainbow interaction conditionally, not the
+whole restoration adjudication. Source-backed stressed positives pass,
+but the full-cascade secondary-label controls expose decoding and later
+weak-vowel issues. The companion research diff is unapplied; the
+production/cell DEFER here remains in force. Neither this result nor
+Orel's reconstructed compound independently dates its formation.

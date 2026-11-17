@@ -38,3 +38,28 @@ back mutation until after
 [wébaną]{.recon} ‘weave’ yield *weofan* ‘weave’; the expected form is *wefan* ‘weave’.
 Thus back mutation follows secondary nasalization but precedes the weak-tail
 reductions.
+
+## Stress and the compound linker
+
+Restoration and back mutation must distinguish the stressed target from
+the following vowel that conditions it. Purnell, Raimy and Salmons
+explicitly state a stressed front-vowel target, including short
+\emph{æ} [@PurnellRaimySalmons2019, pp. e461--e463].
+West Saxon *ealu* 'ale' supplies a relevant short-\emph{æ} comparison
+within a liquid environment: Hogg explains its earlier \emph{*ælu}
+through mutation in the inflected paradigm, not Mercian second fronting
+[@HoggGrammar2011, pp. 156--157, §5.106 and n.6].
+
+Under the inherited analysis of *reġnboga* 'rainbow', the unstressed
+linker need undergo neither [SC046 OEARestoration](#rule-OEARestoration)
+nor [SC059 OEBackMutation](#rule-OEBackMutation). It can remain short \emph{æ} until
+[SC114 OENonHighSyn](#rule-OENonHighSyn), while the subordinate root's
+\emph{o} has already arisen by
+[SC017 PNWGmcULowering](#rule-PNWGmcULowering). This joint restriction
+reaches the selected endpoint; restricting restoration alone instead
+exposes the linker to back mutation.
+The present executable remains unchanged: secondary prominence is partly
+decoded earlier, and a complete implementation must preserve the relevant
+information rather than infer stress from the absence of an accent.
+The compound's spelling does not distinguish this inherited history from
+later composition of the developed rain and bow words.

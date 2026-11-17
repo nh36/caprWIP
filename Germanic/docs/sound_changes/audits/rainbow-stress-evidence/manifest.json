@@ -1,0 +1,35 @@
+{
+  "source_sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b",
+  "corpus_sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1",
+  "candidate_sha256": "db0058f211138238c703bfdb75b3e4a95c1d5bfd714e1412a149bbf5c7e8c6c9",
+  "base_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+  "candidate_definitions": {
+    "RB44": "OEBreaking",
+    "RB46": "OEARestoration",
+    "RBIF": "OEIUmlautFronting",
+    "RBIR": "OEIUmlautRaising",
+    "RBN": "OESecondaryNasalization",
+    "RB59": "OEBackMutation",
+    "RB114": "OENonHighSyn",
+    "RBD": "OESecondaryFrontDecode"
+  },
+  "members": {
+    "annotation-assessment.md": "dffee3988c85af6cf6d4064b40956b47893678b75bbe02da77f61716061b4660",
+    "annotation-observed.json.gz": "e1785e8c624eab66d92b932b0fcdadc9ed2fbeff8277213d97b15de117f07aa4",
+    "annotation-plan.json": "05bf4189a9ef97fbdecef3d85162ce1f15aa0b37b07720bda2a6aa839cb5a28d",
+    "annotation-worker.py": "ee9119ca0720efb30d52d369c274bc96e5e585a8ca7205794a8031590639c7c0",
+    "experiment.py": "722d056a3a4871a1578154e6e74ec345db1ff8f7d9e102c0529ab37074c38997",
+    "final-assessment.md": "dad06108fa04b101aa758ea80e50b427e9ae89e0e05951294a8211d45f6fb0a5",
+    "final-observed.json.gz": "5cf8eb03551b487850e6153460851f5889072d3e9db8b866d5603da60138413e",
+    "final-plan.json": "6985e8b3cbffd515a19b8fac4dc61a8d1b3de151f6f5c28de033c1429b03db3a",
+    "final-worker.py": "722d056a3a4871a1578154e6e74ec345db1ff8f7d9e102c0529ab37074c38997",
+    "initial-assessment.md": "bf47ae6fa5b80a4521d039439ff65f0daff0869636c5fe16958706f1222a0f6c",
+    "initial-observed.json.gz": "71c26aee53c200a86ce9773dd6520c4f0f3b034c5d1052d575c5ef71efbe786d",
+    "initial-plan.json": "ed5ff1161989bb634c13038bf5705750f2ddc29e1244e93bf3f320cfc3264dee",
+    "initial-worker.py": "82fa9357bf443bcf5b8b973bb3e5a477af1a554a1e457e96051c196504b66c1d",
+    "proposed-joint-stress.patch": "4eac9ff06eeb1ef9b9e8e661a51c27ee2e4999d8f593e19bfa1b4a50bf96c4c7",
+    "provenance.json": "031dbf05a2ce46223c7ee686ff56463878fc8fc422064d3c5615ee1534c11659",
+    "baseline-sc059.receipt.json": "49a83a8c98d94a777453f850d83ba7c32c4c4f0b3e3d0335450c324e0d332238",
+    "baseline-sc059.stdout.log": "4e4b020b8fe11f546ab3da638913019211029eda759a1c1237e2d626d08a1fdc"
+  }
+}

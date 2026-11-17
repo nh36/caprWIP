@@ -406,6 +406,12 @@ class EditorialPublicationTests(unittest.TestCase):
             for target in re.findall(r"\]\(#(rule-[^)]+)\)", source):
                 self.assertRegex(book, r"\{#" + re.escape(target) + r"(?:\s|\})")
 
+    def test_electronic_page_locators_remain_page_numbered(self):
+        for citation in ("p. e462", "pp. e461--e463", "pp. 95--98", "p. xiv"):
+            self.assertIsNotNone(reader_citations.PAGE_RE.search(citation), citation)
+        for citation in ("pp. electronic edition", "p. eAppendix", "no page locator"):
+            self.assertIsNone(reader_citations.PAGE_RE.search(citation), citation)
+
     def test_new_citation_objects_keep_keys_and_printed_page_locators(self):
         import re
 

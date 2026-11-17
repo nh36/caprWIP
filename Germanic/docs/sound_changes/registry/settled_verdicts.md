@@ -41,6 +41,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-scoping-adoption.md` |
 | SC054 | Noninitial w-loss before unstressed i/ī | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc054-adjudication.md` |
 | SC056 | Ordinary West Saxon palatal diphthongization | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc035-prosody-adjudication.md` |
+| SC059 | OE Back Mutation | active | DEFER | `Germanic/docs/sound_changes/audits/sc059-adjudication.md` |
 | SC063 | Quantitative high-vowel deletion | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc063-adjudication.md` |
 | SC064 | Early final n-loss after unstressed ī | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc064-adjudication.md` |
 | SC065 | Former general-syncope trace anchor | active | REFORMULATE | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |

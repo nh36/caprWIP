@@ -76,7 +76,7 @@ SC055	OEIUmlaut	historical_sound_change	Old English	OE I Umlaut	oe	english_speci
 SC054	OEWLossBeforeI	historical_sound_change	Old English	Noninitial w-loss before unstressed i/ī	oe	english_specific	A	adjudicated	REFORMULATE/REORDER	67	65
 SC105	OELatePalatalDiphthong	support_stage	Old English	Retained late palatal approximation				unadjudicated		68	66
 SC057	OEJClusterCoalescence	historical_sound_change	Old English	OE J Cluster Coalescence	oe	english_specific	A	unadjudicated		69	67
-SC059	OEBackMutation	historical_sound_change	Old English	OE Back Mutation	oe	english_specific	A	unadjudicated		70	68
+SC059	OEBackMutation	historical_sound_change	Old English	OE Back Mutation	oe	english_specific	A	adjudicated	DEFER	70	68
 SC060	OEWsPalatalUmlaut	historical_sound_change	Old English	OE Ws Palatal Umlaut	ws_oe	west_saxon	A	unadjudicated		71	69
 SC061	OEWeakTailNasalLoss	historical_sound_change	Old English	OE Weak Tail Nasal Loss	oe	english_specific	A	unadjudicated		72	70
 SC062	OEWeightMarkers	technical_marker	Old English	OE Weight Markers				unadjudicated		73	71
