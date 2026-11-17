@@ -78,8 +78,8 @@ SC044	SC045	one_sided_chronology	later_boundary	independently_demonstrated	bleed
 SC044	SC055	one_sided_chronology	later_boundary	independently_demonstrated	feeding	53	64	55	66	consistent
 SC045	SC044	technical_computational	earlier_boundary	technical	counterbleeding_negative	54	53	56	55	consistent
 SC045	SC060	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	54	69	56	71	consistent
-SC046	SC043	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	55	51	57	53	consistent
-SC046	SC048	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	55	57	57	59	consistent
+SC046	SC043	technical_computational	earlier_boundary	technical	displacement_witness	55	51	57	53	consistent
+SC046	SC048	technical_computational	later_boundary	technical	displacement_witness	55	57	57	59	consistent
 SC047	SC034	technical_computational	earlier_boundary	technical	displacement_witness	56	42	58	44	consistent
 SC047	SC048	broad_far_chronology	later_boundary	independently_demonstrated	displacement_witness	56	57	58	59	consistent
 SC048	SC047	broad_far_chronology	earlier_boundary	independently_demonstrated	displacement_witness	57	56	59	58	consistent
@@ -88,7 +88,7 @@ SC049	SC037	superseded_experiment	earlier_boundary	archived_experiment	displacem
 SC049	SC087	no_break_search_boundary	later_boundary	boundary_observation		73	102	75	104	nonordering_observation
 SC050	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation		58		60		nonordering_observation
 SC050	SC052	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	58	60	60	62	consistent
-SC051	SC046	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	59	55	61	57	consistent
+SC051	SC046	technical_computational	earlier_boundary	technical	displacement_witness	59	55	61	57	consistent
 SC051	SC056	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	59	63	61	65	consistent
 SC052	SC050	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	60	58	62	60	consistent
 SC052	SC055	reciprocal_chronology	later_boundary	independently_demonstrated	displacement_witness	60	64	62	66	consistent

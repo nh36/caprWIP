@@ -39,11 +39,11 @@ chronology constraints.
 | --- | ---: |
 | `broad_far_chronology` | 12 |
 | `no_break_search_boundary` | 21 |
-| `one_sided_chronology` | 43 |
+| `one_sided_chronology` | 40 |
 | `reciprocal_chronology` | 20 |
 | `runner_limited_boundary` | 17 |
 | `superseded_experiment` | 14 |
-| `technical_computational` | 23 |
+| `technical_computational` | 26 |
 
 ## Chronology edges
 
@@ -77,13 +77,10 @@ chronology constraints.
 1. `SC044 -> SC045` (one_sided_chronology; independently_demonstrated; witness role: bleeding) — lexemes: `fee; fight`; forms: Live é -> éo preserves x but removes its front-vowel context; SC044-after-SC045 yields feh and fehtan.
 1. `SC044 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `belly; laugh`; forms: bielġ: æ -> ea -> ie; reversed belġ. hliehhan: æ -> ea -> ie; mutation-first hleohhan; breaking also past SC045 hlehhan.
 1. `SC045 -> SC060` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `six`; forms: PGmc `*séxs` yields expected OE `six`, but the later-shifted variant yields `sihs`
-1. `SC046 -> SC043` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bake; fare; flask; grave; haw`; forms: PGmc `*bákaną` yields expected OE `bacan`, but the earlier-shifted variant yields `bæcan`; PGmc `*fáraną` likewise yields `færan` instead of expected `faran`
-1. `SC046 -> SC048` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bake; fare; grave; lade; wade`; forms: PGmc `*bákaną` yields expected OE `bacan`, but the later-shifted variant yields `bæcan`; PGmc `*wádaną` likewise yields `wædan` instead of expected `wadan`
 1. `SC047 -> SC048` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bake; begin; believe; bind; bore`; forms: PGmc `*bákaną` yields expected OE `bacan`, but the later-shifted variant yields `bacen`; PGmc `*bíndaną` likewise yields `binden` instead of expected `bindan`
 1. `SC048 -> SC047` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bake; begin; believe; bind; bore`; forms: PGmc `*bákaną` yields expected OE `bacan`, but the earlier-shifted variant yields `bacen`; PGmc `*bíndaną` likewise yields `binden` instead of expected `bindan`
 1. `SC048 -> SC059` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `steal; weave`; forms: PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`
 1. `SC050 -> SC052` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stretch`; forms: PGmc `*strákkijaną` yields expected OE `streċċan`, but the later-shifted variant yields `strecċan`
-1. `SC051 -> SC046` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `wash`; forms: Candidate displacement before restoration changes only wash, wascan to wæsċan; flask already gives flæsċe in either order.
 1. `SC051 -> SC056` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `shaft; shear; sheep; shield`; forms: PGmc `*skáftą` yields expected OE `sċeaft`, but the later-shifted variant yields `sċæft`; PGmc `*skéraną` likewise yields `sċeran` instead of expected `sċieran`
 1. `SC052 -> SC050` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stretch`; forms: PGmc `*strákkijaną` yields expected OE `streċċan`, but the earlier-shifted variant yields `strecċan`
 1. `SC052 -> SC055` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `cow; lung`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the later-shifted variant yields `ċȳ`; PGmc `*lúnganjō` likewise yields `lunġen` instead of expected `lungen`
@@ -163,10 +160,13 @@ chronology constraints.
 1. `SC108 -> SC042` (technical_computational)
 1. `SC044 -> SC043` (technical_computational)
 1. `SC045 -> SC044` (technical_computational)
+1. `SC046 -> SC043` (technical_computational)
+1. `SC046 -> SC048` (technical_computational)
 1. `SC047 -> SC034` (technical_computational)
 1. `SC049 -> SC037` (superseded_experiment)
 1. `SC049 -> SC087` (no_break_search_boundary)
 1. `SC050 -> PWGmcChanges` (runner_limited_boundary)
+1. `SC051 -> SC046` (technical_computational)
 1. `SC053 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC053 -> SC087` (no_break_search_boundary)
 1. `SC057 -> SC087` (no_break_search_boundary)

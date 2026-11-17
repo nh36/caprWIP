@@ -36,6 +36,7 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC043 | Ordinary English stressed a-fronting | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc043-adjudication.md` |
 | SC044 | OE Breaking | active | REFORMULATE/RESTRICT | `Germanic/docs/sound_changes/audits/sc044-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
+| SC046 | OE A Restoration | active | DEFER | `Germanic/docs/sound_changes/audits/sc046-adjudication.md` |
 | SC049 | Inherited labial positional realization | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-scoping-adoption.md` |
 | SC054 | Noninitial w-loss before unstressed i/ī | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc054-adjudication.md` |

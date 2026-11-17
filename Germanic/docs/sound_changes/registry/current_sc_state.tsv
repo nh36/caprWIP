@@ -63,7 +63,7 @@ SC043	EAFBrightening	historical_sound_change	Old English	Ordinary English stress
 SC108	EAFBrighteningLongFinal	support_stage	Old English	Retained final-vowel quantity component				unadjudicated		54	52
 SC044	OEBreaking	historical_sound_change	Old English	OE Breaking	oe	english_specific	A	adjudicated	REFORMULATE/RESTRICT	55	53
 SC045	OEVelarFricativePalatalization	historical_sound_change	Old English	Voiceless velar-fricative palatal articulation	oe	english_specific	A	adjudicated	RESTRICT/SPLIT	56	54
-SC046	OEARestoration	historical_sound_change	Old English	OE A Restoration	oe	english_specific	A	unadjudicated		57	55
+SC046	OEARestoration	historical_sound_change	Old English	OE A Restoration	oe	english_specific	A	adjudicated	DEFER	57	55
 SC047	OEHeavySyllableNasalApocope	historical_sound_change	Old English	OE Heavy Syllable Nasal Apocope	oe	english_specific	A	unadjudicated		58	56
 SC048	OESecondaryNasalization	historical_sound_change	Old English	OE Secondary Nasalization	oe	english_specific	A	unadjudicated		59	57
 SC050	SieversLawSyncope	historical_sound_change	Old English	Sievers Law Syncope	pwgmc	pan_wgmc	B	unadjudicated		60	58
