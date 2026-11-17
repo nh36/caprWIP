@@ -61,7 +61,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 158 | 84 | no |
 | 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 189 | 68 | no |
 | 045-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | 5 | 44 | no |
-| 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 11 | 63 | no |
+| 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 15 | 63 | no |
 | 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 19 | 40 | no |
 | 048-secondary-nasalization.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 5 | 36 | no |
 | 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 40 | 38 | no |

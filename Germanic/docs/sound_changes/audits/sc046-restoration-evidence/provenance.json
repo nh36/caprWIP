@@ -1,0 +1,580 @@
+{
+  "initial": {
+    "snapshot": {
+      "experiment_id": "sc046-restoration-ac4635b7",
+      "purpose": "Separate target stress, trigger quality, geminates and model-local 46/48 ordering",
+      "created_at": "2026-11-16T23:24:37Z",
+      "source_identity": {
+        "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+        "worktree_changes": {
+          "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+          "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "83f14c7c00de9462377e55c6ffd68ab9a07e34e97de6f5f749644c5bc1e3651d",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+          "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+          "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+          "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+          "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+          "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+          "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+          "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+        },
+        "identity_sha256": "f4e2431af633ee125c36c5eeffe708a7885314f120f388a749d2877862f8e86f",
+        "recorded_at": "2026-11-16T23:24:37Z"
+      },
+      "inputs": {
+        "source": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/fsts/germanic.txt",
+          "snapshot_name": "source.txt",
+          "sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b"
+        },
+        "corpus": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/data/germanic-aligned-final.tsv",
+          "snapshot_name": "corpus.tsv",
+          "sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1"
+        },
+        "worker": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py",
+          "snapshot_name": "worker.py",
+          "sha256": "83f14c7c00de9462377e55c6ffd68ab9a07e34e97de6f5f749644c5bc1e3651d"
+        },
+        "plan": {
+          "original_path": "/Users/nathanhill/Code/capr/.capr-work/sc046/plan.json",
+          "snapshot_name": "plan.json",
+          "sha256": "d8cfac68568f5032d9573c79416c6cad9d4c348a6f95fa47c4f1036d56155a22"
+        },
+        "assessment": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md",
+          "snapshot_name": "assessment.md",
+          "sha256": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05"
+        },
+        "anglo_frisian_experiments": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/anglo_frisian_experiments.py",
+          "snapshot_name": "anglo_frisian_experiments.py",
+          "sha256": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa"
+        },
+        "oe_pipeline": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/oe_pipeline.py",
+          "snapshot_name": "oe_pipeline.py",
+          "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+        },
+        "capr_runtime": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/capr_runtime.py",
+          "snapshot_name": "capr_runtime.py",
+          "sha256": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec"
+        },
+        "sound_change_order_sensitivity": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/sound_change_order_sensitivity.py",
+          "snapshot_name": "sound_change_order_sensitivity.py",
+          "sha256": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c"
+        },
+        "executable_facts": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/executable_facts.py",
+          "snapshot_name": "executable_facts.py",
+          "sha256": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+        }
+      },
+      "variants": {
+        "stress": "define AF46S [FootCtx((\n    {*æ} -> {*a} || .#. OEAnyConsonant* _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "no_geminate": "define AF46C [EnglishStarConsonant | {*s} EnglishStarConsonant | {*f} EnglishStarConsonant];\ndefine AF46G FootCtx((\n    {*æ} -> {*a} || _\n        AF46C OEARestorationTriggerVowel\n        - AF46C OEARestorationWeakTailVowel\n));"
+      },
+      "variant_sha256": {
+        "stress": "576dc294a5db8f0a956f635fdb5e6a4ad6ba3ae0351d43cac92f5648698dda8e",
+        "no_geminate": "78feda656fe757820931e4a386be1770007943283e0fc76d9d7842e3f8ce99e6"
+      },
+      "probes": [
+        "1934",
+        "1938",
+        "1981",
+        "1985",
+        "2016",
+        "2141",
+        "2148",
+        "2240",
+        "2266",
+        "2336",
+        "2090",
+        "*k*r*æ*b*b*ô",
+        "*r*æ*k*k*ô",
+        "*g*e*b*ǽ*k*ō"
+      ],
+      "expected_outcomes": {
+        "oral_nasal": "bake retracts; bast does not",
+        "SC041": "day and craft lost the trigger and remain front",
+        "local_order": "46 before 48 retains a; reversed retains ae; SC047 remains in its slot",
+        "geminates": "no-geminate retains taepp- but contradicts crabba/racca root positives",
+        "stress": "unstressed compound linkers remain front; follow syncope and final, do not infer",
+        "secondary": "explicit secondary-stressed ae is eligible; unstressed linker is not"
+      },
+      "negative_controls": [
+        "bast",
+        "day",
+        "craft",
+        "mære",
+        "unstressed compound linker"
+      ],
+      "environment": {
+        "recorded": false,
+        "reason": "caller did not supply Foma/container identity"
+      },
+      "staging_dir": "staging",
+      "results_dir": "results"
+    },
+    "plan": {
+      "full_corpus": true,
+      "selected": [
+        "1934",
+        "1938",
+        "1981",
+        "1985",
+        "2016",
+        "2141",
+        "2148",
+        "2240",
+        "2266",
+        "2336",
+        "2090"
+      ],
+      "variants": {
+        "stress": "define AF46S [FootCtx((\n    {*æ} -> {*a} || .#. OEAnyConsonant* _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "no_geminate": "define AF46C [EnglishStarConsonant | {*s} EnglishStarConsonant | {*f} EnglishStarConsonant];\ndefine AF46G FootCtx((\n    {*æ} -> {*a} || _\n        AF46C OEARestorationTriggerVowel\n        - AF46C OEARestorationWeakTailVowel\n));"
+      },
+      "helpers": {
+        "anglo_frisian_experiments.py": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa",
+        "oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+        "capr_runtime.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+        "sound_change_order_sensitivity.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+        "executable_facts.py": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+      },
+      "predictions": {
+        "oral_nasal": "bake retracts; bast does not",
+        "SC041": "day and craft lost the trigger and remain front",
+        "local_order": "46 before 48 retains a; reversed retains ae; SC047 remains in its slot",
+        "geminates": "no-geminate retains taepp- but contradicts crabba/racca root positives",
+        "stress": "unstressed compound linkers remain front; follow syncope and final, do not infer",
+        "secondary": "explicit secondary-stressed ae is eligible; unstressed linker is not"
+      }
+    },
+    "completion": {
+      "experiment_id": "sc046-restoration-ac4635b7",
+      "outcome": "passed",
+      "summary": "Manifest-validated cumulative entries and finite-domain comparisons",
+      "completed_at": "2026-11-16T23:29:39Z",
+      "command_receipts": [
+        {
+          "receipt_version": 2,
+          "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-ac4635b7/staging/sc046-full-8ddfcc70f4674f0486e894e0a1713088.receipt.json",
+          "label": "sc046-full",
+          "argv": [
+            "docker",
+            "compose",
+            "exec",
+            "-T",
+            "backend",
+            "sh",
+            "-lc",
+            "cd /usr/app && python3 /tmp/capr-exp-sc046-restoration-ac4635b7-d9a3ee7106024863b2ea9144daec8a54/worker.py --worker /tmp/capr-exp-sc046-restoration-ac4635b7-d9a3ee7106024863b2ea9144daec8a54"
+          ],
+          "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+          "cwd": "/Users/nathanhill/Code/capr",
+          "started_at": "2026-11-16T23:24:38Z",
+          "finished_at": "2026-11-16T23:29:39Z",
+          "returncode": 0,
+          "timed_out": false,
+          "ok": true,
+          "source_identity": {
+            "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+            "worktree_changes": {
+              "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+              "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "83f14c7c00de9462377e55c6ffd68ab9a07e34e97de6f5f749644c5bc1e3651d",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+              "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+              "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+              "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+              "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+              "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+              "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+              "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+            },
+            "identity_sha256": "f4e2431af633ee125c36c5eeffe708a7885314f120f388a749d2877862f8e86f",
+            "recorded_at": "2026-11-16T23:24:38Z"
+          },
+          "source_identity_sha256": "f4e2431af633ee125c36c5eeffe708a7885314f120f388a749d2877862f8e86f",
+          "source_identity_after": {
+            "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+            "worktree_changes": {
+              "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+              "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "83f14c7c00de9462377e55c6ffd68ab9a07e34e97de6f5f749644c5bc1e3651d",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+              "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+              "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+              "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+              "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+              "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+              "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+              "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+            },
+            "identity_sha256": "f4e2431af633ee125c36c5eeffe708a7885314f120f388a749d2877862f8e86f",
+            "recorded_at": "2026-11-16T23:29:39Z"
+          },
+          "source_changed": false,
+          "level": null,
+          "lane": null,
+          "pytest_addopts": "",
+          "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-ac4635b7/staging/sc046-full-8ddfcc70f4674f0486e894e0a1713088.stdout.log",
+          "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-ac4635b7/staging/sc046-full-8ddfcc70f4674f0486e894e0a1713088.stderr.log",
+          "stdout_sha256": "617ff7ec9d6cbecaa75f8ce23e93da55759d8491ddeaebe60d0d70b5b0becfc9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "evidence": {},
+      "result_hashes": {
+        "sc046-full-8ddfcc70f4674f0486e894e0a1713088.receipt.json": "90ded736c880fec9d98be364bf02ce5ed75e59a987a41ff98c2e3c4cba167edf",
+        "sc046-full-8ddfcc70f4674f0486e894e0a1713088.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sc046-full-8ddfcc70f4674f0486e894e0a1713088.stdout.log": "617ff7ec9d6cbecaa75f8ce23e93da55759d8491ddeaebe60d0d70b5b0becfc9"
+      },
+      "source_identity_sha256": "f4e2431af633ee125c36c5eeffe708a7885314f120f388a749d2877862f8e86f"
+    },
+    "stderr": ""
+  },
+  "followup": {
+    "snapshot": {
+      "experiment_id": "sc046-restoration-9fd9b9cf",
+      "purpose": "Separate target stress, trigger quality, geminates and model-local 46/48 ordering",
+      "created_at": "2026-11-17T05:22:03Z",
+      "source_identity": {
+        "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+        "worktree_changes": {
+          "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+          "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "f150a181853ff8c4a24c04a86f8c825acff8200091b2a442d8640bebdb90adb7",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+          "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+          "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+          "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+          "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+          "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+          "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+          "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+          "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+        },
+        "identity_sha256": "91ccc016c90481596e1d310610334b33bc834b3c4da02279e8987b7e6b9d56a7",
+        "recorded_at": "2026-11-17T05:22:03Z"
+      },
+      "inputs": {
+        "source": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/fsts/germanic.txt",
+          "snapshot_name": "source.txt",
+          "sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b"
+        },
+        "corpus": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/data/germanic-aligned-final.tsv",
+          "snapshot_name": "corpus.tsv",
+          "sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1"
+        },
+        "worker": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py",
+          "snapshot_name": "worker.py",
+          "sha256": "f150a181853ff8c4a24c04a86f8c825acff8200091b2a442d8640bebdb90adb7"
+        },
+        "plan": {
+          "original_path": "/Users/nathanhill/Code/capr/.capr-work/sc046/plan.json",
+          "snapshot_name": "plan.json",
+          "sha256": "8b73b7d8168e4b6f5596abd902dd511c5aca7adfbfa7c802be7c5dd1fb63e442"
+        },
+        "assessment": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md",
+          "snapshot_name": "assessment.md",
+          "sha256": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05"
+        },
+        "anglo_frisian_experiments": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/anglo_frisian_experiments.py",
+          "snapshot_name": "anglo_frisian_experiments.py",
+          "sha256": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa"
+        },
+        "oe_pipeline": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/oe_pipeline.py",
+          "snapshot_name": "oe_pipeline.py",
+          "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+        },
+        "capr_runtime": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/capr_runtime.py",
+          "snapshot_name": "capr_runtime.py",
+          "sha256": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec"
+        },
+        "sound_change_order_sensitivity": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/sound_change_order_sensitivity.py",
+          "snapshot_name": "sound_change_order_sensitivity.py",
+          "sha256": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c"
+        },
+        "executable_facts": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/executable_facts.py",
+          "snapshot_name": "executable_facts.py",
+          "sha256": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+        }
+      },
+      "variants": {
+        "stress": "define AF46S [FootCtx((\n    {*æ} -> {*a} || .#. OEAnyConsonant* _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "no_geminate": "define AF46C [EnglishStarConsonant | {*s} EnglishStarConsonant | {*f} EnglishStarConsonant];\ndefine AF46G FootCtx((\n    {*æ} -> {*a} || _\n        AF46C OEARestorationTriggerVowel\n        - AF46C OEARestorationWeakTailVowel\n));"
+      },
+      "variant_sha256": {
+        "stress": "576dc294a5db8f0a956f635fdb5e6a4ad6ba3ae0351d43cac92f5648698dda8e",
+        "no_geminate": "78feda656fe757820931e4a386be1770007943283e0fc76d9d7842e3f8ce99e6"
+      },
+      "probes": [
+        "1934",
+        "1938",
+        "1981",
+        "1985",
+        "2016",
+        "2141",
+        "2148",
+        "2240",
+        "2266",
+        "2336",
+        "2090",
+        "*k*r*æ*b*b*ô",
+        "*r*æ*k*k*ô",
+        "*g*e*b*ǽ*k*ō"
+      ],
+      "expected_outcomes": {
+        "oral_nasal": "bake retracts; bast does not",
+        "SC041": "day and craft lost the trigger and remain front",
+        "local_order": "46 before 48 retains a; reversed retains ae; SC047 remains in its slot",
+        "geminates": "no-geminate retains taepp- but contradicts crabba/racca root positives",
+        "stress": "unstressed compound linkers remain front; follow syncope and final, do not infer",
+        "secondary": "explicit secondary-stressed ae is eligible; unstressed linker is not",
+        "fixed_47": "After common SC047, 46/48 gives a; 48/46 should preserve ae. The first trial's slot reversal instead retained a because 48 missed its context.",
+        "back_mutation": "The un-retracted rainbow linker should become ea at OEBackMutation; earthly should not. This would explain the differential survival at syncope."
+      },
+      "negative_controls": [
+        "bast",
+        "day",
+        "craft",
+        "mære",
+        "unstressed compound linker"
+      ],
+      "environment": {
+        "recorded": false,
+        "reason": "caller did not supply Foma/container identity"
+      },
+      "staging_dir": "staging",
+      "results_dir": "results"
+    },
+    "plan": {
+      "full_corpus": false,
+      "followup_only": true,
+      "selected": [
+        "1934",
+        "2266",
+        "2148",
+        "2336"
+      ],
+      "variants": {
+        "stress": "define AF46S [FootCtx((\n    {*æ} -> {*a} || .#. OEAnyConsonant* _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "no_geminate": "define AF46C [EnglishStarConsonant | {*s} EnglishStarConsonant | {*f} EnglishStarConsonant];\ndefine AF46G FootCtx((\n    {*æ} -> {*a} || _\n        AF46C OEARestorationTriggerVowel\n        - AF46C OEARestorationWeakTailVowel\n));"
+      },
+      "helpers": {
+        "anglo_frisian_experiments.py": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa",
+        "oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+        "capr_runtime.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+        "sound_change_order_sensitivity.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+        "executable_facts.py": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+      },
+      "predictions": {
+        "oral_nasal": "bake retracts; bast does not",
+        "SC041": "day and craft lost the trigger and remain front",
+        "local_order": "46 before 48 retains a; reversed retains ae; SC047 remains in its slot",
+        "geminates": "no-geminate retains taepp- but contradicts crabba/racca root positives",
+        "stress": "unstressed compound linkers remain front; follow syncope and final, do not infer",
+        "secondary": "explicit secondary-stressed ae is eligible; unstressed linker is not",
+        "fixed_47": "After common SC047, 46/48 gives a; 48/46 should preserve ae. The first trial's slot reversal instead retained a because 48 missed its context.",
+        "back_mutation": "The un-retracted rainbow linker should become ea at OEBackMutation; earthly should not. This would explain the differential survival at syncope."
+      }
+    },
+    "completion": {
+      "experiment_id": "sc046-restoration-9fd9b9cf",
+      "outcome": "passed",
+      "summary": "Manifest-validated cumulative entries and finite-domain comparisons",
+      "completed_at": "2026-11-17T05:29:23Z",
+      "command_receipts": [
+        {
+          "receipt_version": 2,
+          "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-9fd9b9cf/execution/sc046-focused-03af8c8d8a3d47f38797b2d7033c6559.receipt.json",
+          "label": "sc046-focused",
+          "argv": [
+            "docker",
+            "compose",
+            "exec",
+            "-T",
+            "backend",
+            "sh",
+            "-lc",
+            "cd /usr/app && python3 /tmp/capr-exp-sc046-restoration-9fd9b9cf-7d1b75cba5824c91807a3f7d297b3899/worker.py --worker /tmp/capr-exp-sc046-restoration-9fd9b9cf-7d1b75cba5824c91807a3f7d297b3899"
+          ],
+          "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+          "cwd": "/Users/nathanhill/Code/capr",
+          "started_at": "2026-11-17T05:22:04Z",
+          "finished_at": "2026-11-17T05:29:23Z",
+          "returncode": 0,
+          "timed_out": false,
+          "ok": true,
+          "source_identity": {
+            "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+            "worktree_changes": {
+              "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+              "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "f150a181853ff8c4a24c04a86f8c825acff8200091b2a442d8640bebdb90adb7",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+              "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+              "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+              "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+              "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+              "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+              "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+              "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+            },
+            "identity_sha256": "91ccc016c90481596e1d310610334b33bc834b3c4da02279e8987b7e6b9d56a7",
+            "recorded_at": "2026-11-17T05:22:04Z"
+          },
+          "source_identity_sha256": "91ccc016c90481596e1d310610334b33bc834b3c4da02279e8987b7e6b9d56a7",
+          "source_identity_after": {
+            "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+            "worktree_changes": {
+              "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+              "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "f150a181853ff8c4a24c04a86f8c825acff8200091b2a442d8640bebdb90adb7",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+              "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+              "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+              "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+              "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+              "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+              "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+              "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+            },
+            "identity_sha256": "91ccc016c90481596e1d310610334b33bc834b3c4da02279e8987b7e6b9d56a7",
+            "recorded_at": "2026-11-17T05:29:23Z"
+          },
+          "source_changed": false,
+          "level": null,
+          "lane": null,
+          "pytest_addopts": "",
+          "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-9fd9b9cf/execution/sc046-focused-03af8c8d8a3d47f38797b2d7033c6559.stdout.log",
+          "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-9fd9b9cf/execution/sc046-focused-03af8c8d8a3d47f38797b2d7033c6559.stderr.log",
+          "stdout_sha256": "c2e7ef03db0cc3ac052be3f6962f3601dc212dd9baa51f5ef49e49a0587a44f1",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "evidence": {},
+      "result_hashes": {
+        "observed.json": "c2e7ef03db0cc3ac052be3f6962f3601dc212dd9baa51f5ef49e49a0587a44f1"
+      },
+      "source_identity_sha256": "91ccc016c90481596e1d310610334b33bc834b3c4da02279e8987b7e6b9d56a7"
+    },
+    "stderr": ""
+  },
+  "bootstrap_failure": {
+    "completion": {
+      "experiment_id": "sc046-restoration-638733cb",
+      "outcome": "failed",
+      "summary": "Manifest-validated cumulative entries and finite-domain comparisons",
+      "completed_at": "2026-11-16T23:24:00Z",
+      "command_receipts": [
+        {
+          "receipt_version": 2,
+          "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-638733cb/staging/sc046-full-99261be4e0ae42b18f9103cb2e85ab8d.receipt.json",
+          "label": "sc046-full",
+          "argv": [
+            "docker",
+            "compose",
+            "exec",
+            "-T",
+            "backend",
+            "sh",
+            "-lc",
+            "cd /usr/app && python3 /tmp/capr-exp-sc046-restoration-638733cb-2de040847ea448faaded2bbd034ec2fb/worker.py --worker /tmp/capr-exp-sc046-restoration-638733cb-2de040847ea448faaded2bbd034ec2fb"
+          ],
+          "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+          "cwd": "/Users/nathanhill/Code/capr",
+          "started_at": "2026-11-16T23:24:00Z",
+          "finished_at": "2026-11-16T23:24:00Z",
+          "returncode": 1,
+          "timed_out": false,
+          "ok": false,
+          "source_identity": {
+            "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+            "worktree_changes": {
+              "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+              "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "d88340f2a2e98e8e1a41ab81b89d508b6937ae5a0afe7acd237d9556b354b7b1",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+              "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+              "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+              "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+              "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+              "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+              "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+              "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+            },
+            "identity_sha256": "5e332c243bb2f8fc7965df794418e45047839dc4491e36ed91af7ebf744129e3",
+            "recorded_at": "2026-11-16T23:24:00Z"
+          },
+          "source_identity_sha256": "5e332c243bb2f8fc7965df794418e45047839dc4491e36ed91af7ebf744129e3",
+          "source_identity_after": {
+            "head_commit": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+            "worktree_changes": {
+              "Germanic/docs/lexeme_reports/pgmc_reconstructions/survey_provenance.json": "626985e7d9cb440f052c555793111221f4bb6a1116d50e84fa553b7637a44859",
+              "Germanic/docs/sound_changes/audits/sc046-restoration-evidence/experiment.py": "d88340f2a2e98e8e1a41ab81b89d508b6937ae5a0afe7acd237d9556b354b7b1",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/01-dresher-1985.md": "2b715460df4864203430135eec159df975f29f6ff5f5b36e27d339afbc98eace",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/02-versloot-2021-review.md": "5ac3c8f33503eadb937b31ab275ff62a3c814e77adda17fc8619453bed596a76",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/03-glossary-witnesses.md": "07caf535e1ecd5b593ccdac124ee5a772f7c5694fde972afefb710a1c8a9de6e",
+              "Germanic/docs/sound_changes/literature_dossiers/sc046-a-restoration/04-source-assessment.md": "98f5134d167f9e5080afc6217e6ccf43eb41cf925bee738d80ed07a8e30eea05",
+              "docs/references/dresher_1985/README.md": "2bbc4aa69ac96458fdcd8289bb0adc4295444d6a4709d25e5790085d88265a77",
+              "docs/references/dresher_1985/holdings.tsv": "d7c517c7ecd57a51b9eaf7b5df589bdd35ba3bc97d4bbd0dbdd36e78138c5793",
+              "docs/references/dresher_1985/page_map.tsv": "d7a543ab23b11863e5d7da3ddfcf7558c3e45ed028f6506da7a371863fd6b30f",
+              "docs/references/dresher_1985/prepare_holding.py": "b99d802067f480177a629f341674975f6763c0cb1553fdcf798c934484ec6250",
+              "docs/references/versloot_2021_review/README.md": "3799aebd762fd426dda8a1c5bccfae5ae3bfe5f12d309314ba79105cac05d5f7",
+              "docs/references/versloot_2021_review/holdings.tsv": "e7072a7f075ca4f3acb1aed03849dc42bc0054937f119aedd2afab0fcc43f236",
+              "docs/refs.bib": "6e2a6292f644f818c1d3e07d4a298f27f129359c66d2480d385b716201dd4c7b"
+            },
+            "identity_sha256": "5e332c243bb2f8fc7965df794418e45047839dc4491e36ed91af7ebf744129e3",
+            "recorded_at": "2026-11-16T23:24:00Z"
+          },
+          "source_changed": false,
+          "level": null,
+          "lane": null,
+          "pytest_addopts": "",
+          "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-638733cb/staging/sc046-full-99261be4e0ae42b18f9103cb2e85ab8d.stdout.log",
+          "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/sc046-restoration-638733cb/staging/sc046-full-99261be4e0ae42b18f9103cb2e85ab8d.stderr.log",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "a1536329f2c4fdefcd9b8cdc11b6c9a77bcdb1d82f42e5646bf929e7e88bed8b"
+        }
+      ],
+      "evidence": {},
+      "result_hashes": {
+        "sc046-full-99261be4e0ae42b18f9103cb2e85ab8d.receipt.json": "321a23f49b53cf29421d9db462ae891e3b80bc60bcf95c8cebbc2dc76455e734",
+        "sc046-full-99261be4e0ae42b18f9103cb2e85ab8d.stderr.log": "a1536329f2c4fdefcd9b8cdc11b6c9a77bcdb1d82f42e5646bf929e7e88bed8b",
+        "sc046-full-99261be4e0ae42b18f9103cb2e85ab8d.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "source_identity_sha256": "5e332c243bb2f8fc7965df794418e45047839dc4491e36ed91af7ebf744129e3"
+    },
+    "stderr": "Traceback (most recent call last):\n  File \"/tmp/capr-exp-sc046-restoration-638733cb-2de040847ea448faaded2bbd034ec2fb/worker.py\", line 18, in <module>\n    ROOT = Path(__file__).resolve().parents[5]\n  File \"/usr/local/lib/python3.9/pathlib.py\", line 563, in __getitem__\n    raise IndexError(idx)\nIndexError: 5\n",
+    "note": "Container import failed before any compiler call; corrected host-only ROOT resolution and selected lap row 2090 before initial scientific execution."
+  }
+}

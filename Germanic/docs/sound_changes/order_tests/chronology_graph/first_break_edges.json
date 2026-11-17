@@ -324,7 +324,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC046-oe-a-restoration.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "no",
-      "short_summary": "-"
+      "short_summary": "SC041 bleeding retained; brightening and local SC048 boundaries are dependencies of adopted inputs, not independent proof against blocked fronting"
     },
     {
       "change_id": "SC047",
@@ -1693,30 +1693,30 @@
     {
       "source_change_id": "SC046",
       "target_change_id": "SC043",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "bake; fare; flask; grave; haw",
       "representative_forms": "PGmc `*bákaną` yields expected OE `bacan`, but the earlier-shifted variant yields `bæcan`; PGmc `*fáraną` likewise yields `færan` instead of expected `faran`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "-"
+      "notes": "Earlier-boundary representation: SC043 precedes SC046. Preserved displacement shows feeding under adopted fronted inputs; it does not independently distinguish restoration from blocked fronting. See sc046-adjudication.md."
     },
     {
       "source_change_id": "SC046",
       "target_change_id": "SC048",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "bake; fare; grave; lade; wade",
       "representative_forms": "PGmc `*bákaną` yields expected OE `bacan`, but the later-shifted variant yields `bæcan`; PGmc `*wádaną` likewise yields `wædan` instead of expected `wadan`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "-"
+      "notes": "Preserve original displacement summary as historical measurement. New fixed-SC047 comparison gives bacan/wadan versus bæcan/wædan; swapping outer slots with SC047 between instead gives bacen/waden. Trigger/exposure dependency, not an independently dated universal history. See sc046-adjudication.md."
     },
     {
       "source_change_id": "SC047",
@@ -1833,16 +1833,16 @@
     {
       "source_change_id": "SC051",
       "target_change_id": "SC046",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "wash",
       "representative_forms": "Candidate displacement before restoration changes only wash, wascan to wæsċan; flask already gives flæsċe in either order.",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Original two-witness experiment remains on the card. The source-backed levelled flask nominative is not a current regular restoration witness; retain wash and the separate upper-boundary evidence. See sc042-final-nasal-candidate.md."
+      "notes": "Preserve older wash/flask displacement, not a new experiment. This stage is specifically sk-palatalization, not generic stop palatalization. The adopted flascan ending supersedes the older selected flask analysis; no independent universal sk chronology is established by its output. See sc046-adjudication.md."
     },
     {
       "source_change_id": "SC051",

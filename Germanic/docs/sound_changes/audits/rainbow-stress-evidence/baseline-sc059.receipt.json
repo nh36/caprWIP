@@ -1,0 +1,39 @@
+{
+ "receipt_version": 2,
+ "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/rainbow/receipts/rainbow-baseline-sc059-73235f7790534db78df9f0330097d97c.receipt.json",
+ "label": "rainbow-baseline-sc059",
+ "argv": [
+  "/opt/homebrew/opt/python@3.14/bin/python3.14",
+  "Germanic/tools/adjudicate.py",
+  "SC059",
+  "--evidence"
+ ],
+ "executable_path": "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+ "cwd": "/Users/nathanhill/Code/capr",
+ "started_at": "2026-11-17T09:47:13Z",
+ "finished_at": "2026-11-17T09:54:54Z",
+ "returncode": 0,
+ "timed_out": false,
+ "ok": true,
+ "source_identity": {
+  "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+  "worktree_changes": {},
+  "identity_sha256": "12358590193a8c0e624d870f3144eb6fd65b1daadf9b0d8b29763e9dc0c76a6a",
+  "recorded_at": "2026-11-17T09:47:13Z"
+ },
+ "source_identity_sha256": "12358590193a8c0e624d870f3144eb6fd65b1daadf9b0d8b29763e9dc0c76a6a",
+ "source_identity_after": {
+  "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+  "worktree_changes": {},
+  "identity_sha256": "12358590193a8c0e624d870f3144eb6fd65b1daadf9b0d8b29763e9dc0c76a6a",
+  "recorded_at": "2026-11-17T09:54:54Z"
+ },
+ "source_changed": false,
+ "level": null,
+ "lane": null,
+ "pytest_addopts": "",
+ "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/rainbow/receipts/rainbow-baseline-sc059-73235f7790534db78df9f0330097d97c.stdout.log",
+ "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/rainbow/receipts/rainbow-baseline-sc059-73235f7790534db78df9f0330097d97c.stderr.log",
+ "stdout_sha256": "4e4b020b8fe11f546ab3da638913019211029eda759a1c1237e2d626d08a1fdc",
+ "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
