@@ -452,9 +452,9 @@
       "lifecycle_status": "active",
       "rule_name": "OEBackMutation",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC059-oe-back-mutation.md",
-      "card_type": "reciprocal_or_near_reciprocal",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "-"
+      "card_type": "mixed",
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Old shared-context steal/weave artifacts removed; corrected late trial exposes u-trigger loss, not an independent SC078 date."
     },
     {
       "change_id": "SC060",
@@ -1772,7 +1772,7 @@
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Preserve original measurement. Literal parallel back-mutation clauses admit a for e; separated strict-WS clauses remove steal/weave deltas. Model dependency, not independent WS chronology. See sc047-adjudication.md and sc048-adjudication.md."
+      "notes": "Prior-implementation measurement preserved in original tables/card. Adopted separate SC059 clauses remove both deltas in the fresh394-record delayed-SC048 comparison. No surviving selected endpoint distinction here independently dates WS nasalization. See sc059-clause-evidence/README.md."
     },
     {
       "source_change_id": "SC049",
@@ -2024,7 +2024,7 @@
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Preserve original measurement. Literal parallel back-mutation clauses admit a for e; separated strict-WS clauses remove steal/weave deltas. Model dependency, not independent WS chronology. See sc047-adjudication.md and sc048-adjudication.md."
+      "notes": "Prior-implementation first-break record, not a current historical boundary. Fresh separated-clause delayed-SC048 trial preserves394 endpoints and removes steal/weave artifacts. The older broader move also crossed palatal operations; no new earlier first-break sweep is claimed. See sc059-clause-evidence/README.md."
     },
     {
       "source_change_id": "SC059",
@@ -2033,12 +2033,12 @@
       "direction_basis": "later_boundary",
       "evidence_basis": "technical",
       "witness_role": "displacement_witness",
-      "representative_lexemes": "steal; weave",
-      "representative_forms": "PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`",
+      "representative_lexemes": "heaven; milk; seven; world",
+      "representative_forms": "Corrected SC059 after SC078 gives hefon, meloc, sefon and werold instead of heofon, meoloc, seofon and weorold; final-u speoru remains",
       "strength": "model_local",
       "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Preserve the original later-boundary measurement. The same literal e/a back-mutation behavior is not independent West Saxon chronology; the reader's model-local qualification also applies here. No new SC078 displacement was run. See sc059-adjudication.md and sc048-adjudication.md."
+      "notes": "Original steal/weave measurement preserved in the historical card/tables. Fresh separate-clause trial loses four genuine u-trigger positives: medial u has become o at OEMedUnstressedULowering. This spans several operations, not a new nearest-boundary sweep or independent dating of SC078. See sc059-clause-evidence/README.md."
     },
     {
       "source_change_id": "SC060",

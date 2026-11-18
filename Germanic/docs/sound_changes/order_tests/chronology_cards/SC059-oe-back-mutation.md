@@ -1,5 +1,27 @@
 # SC059 OE Back Mutation — chronology evidence card
 
+## Current qualification: separated-clause follow-up
+
+The record below preserves the earlier experiment and its original
+expectations. It concerns the previous parallel-clause implementation,
+whose shared replacement contexts admitted a before e. It is not a
+current West Saxon chronology certificate.
+
+The current-source six-configuration assay, in
+`audits/sc059-clause-evidence/`, adopts separately composed e/u and
+ae/back-vowel clauses. The corrected SC048-after-SC059 comparison removes
+the steal/weave artifacts and preserves every one of394 selected outputs.
+There is no surviving selected endpoint distinction supporting that
+old SC048 boundary under the corrected rule.
+
+Moving corrected SC059 after SC078 instead loses genuine e/u mutation in
+heaven2068, milk2126, seven2174 and world2302: their medial u triggers have
+become o at OEMedUnstressedULowering. Spear2206 retains final u and still
+mutates. This is a technical trigger-preservation comparison across several
+rules, not an exhaustive new first-break sweep or independent dating of
+SC078. The old steal/weave late-boundary measurement remains unchanged
+below and in its original tables.
+
 ## Position at experiment time
 - order_at_experiment_time: `59`
 - rule_name: `OEBackMutation`

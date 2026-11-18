@@ -141,8 +141,10 @@ def before_joint_adoption(current):
 
 
 def test_unapplied_review_diff_matches_the_exact_compiled_definitions():
+    from test_sc059_clause_separation import before_sc059_separation
     _, after = joint_sources()
     current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    current = before_sc059_separation(current)
     mapping = json.loads((EVIDENCE / "manifest.json").read_text())["candidate_definitions"]
     assert {name: current[name].body for name in mapping.values()} == {
         name: after[name].body for name in mapping.values()}
@@ -161,7 +163,9 @@ from anglo_frisian_experiments import definition_image_source, foma_domain
 from capr_runtime import layout
 from sound_change_order_sensitivity import batch_apply_down
 started = time.perf_counter()
-inputs = ["*æ*l*u", "*g*e*b*æ*b*u", "*g*e*b*ǽ*b*u", "*s*t*æ*ð*u*l"]
+inputs = ["*æ*l*u", "*g*e*b*æ*b*u", "*g*e*b*ǽ*b*u", "*s*t*æ*ð*u*l",
+          "*s*t*e*l*u*n", "*s*t*e*l*a*n", "*s*t*é*l*u*n", "*s*t*é*l*a*n",
+          "*g*e*b*è*b*u", "*g*e*b*è*b*a", "*æ*l*a", "*g*e*b*ǽ*b*a"]
 with tempfile.TemporaryDirectory(prefix="capr_staged_ealu_") as temporary:
     directory = Path(temporary)
     setup = time.perf_counter()
@@ -201,7 +205,9 @@ with tempfile.TemporaryDirectory(prefix="capr_staged_ealu_") as temporary:
         text=True, capture_output=True, check=True, timeout=900)
     observed = json.loads(result.stdout)
     assert observed["outputs"] == [
-        ["*ea*l*u"], ["*g*e*b*æ*b*u"], ["*g*e*b*ea*b*u"], ["*s*t*æ*ð*u*l"]]
+        ["*ea*l*u"], ["*g*e*b*æ*b*u"], ["*g*e*b*ea*b*u"], ["*s*t*æ*ð*u*l"],
+        ["*s*t*eo*l*u*n"], ["*s*t*e*l*a*n"], ["*s*t*éo*l*u*n"], ["*s*t*é*l*a*n"],
+        ["*g*e*b*eo*b*u"], ["*g*e*b*è*b*a"], ["*ea*l*a"], ["*g*e*b*ea*b*a"]]
     assert observed["compiler_appendix"].count("regex ") == 1
     assert " .o. OEBackMutation;\nsave stack staged.bin\nquit\n" in (
         observed["compiler_appendix"])

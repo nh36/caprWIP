@@ -21,11 +21,11 @@ chronology constraints.
 | `boundary_limited` | 2 |
 | `boundary_observation` | 2 |
 | `broad_far` | 4 |
-| `mixed` | 16 |
+| `mixed` | 17 |
 | `negative_boundary` | 7 |
 | `one_sided` | 1 |
 | `one_sided_chronology` | 9 |
-| `reciprocal_or_near_reciprocal` | 15 |
+| `reciprocal_or_near_reciprocal` | 14 |
 | `retired` | 1 |
 | `runner_limited_or_technical` | 1 |
 | `source_partial_chain` | 10 |

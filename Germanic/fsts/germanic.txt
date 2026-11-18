@@ -3230,11 +3230,14 @@ define OEUnstressedEIContraction [
 # NOTE: Context must NOT be optional — [X | Y] not (X | Y).
 
 define OEBackMutation FootCtx([
-    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. FootCtx([
     {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]) .o. Ctx([
-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
+    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
     {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]);
 

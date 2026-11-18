@@ -204,7 +204,7 @@ but does not by itself resolve the wider glide/ending histories.
 SC047/048 registry rows, inventory notes, affected edge interpretations,
 reader chapters, current-state routing and a dated dossier/card addendum
 are reconciled. The earlier packet and measurement tables remain historical.
-The unchanged SC059 implementation receives only a bounded reader caveat:
+This initial pass left SC059 unchanged and added a bounded reader caveat:
 its literal parallel clauses leak the a-trigger to e, so the stelan/wefan
 dependency is not independent WS chronology. The joint rainbow restriction
 and all secondary annotation companions are preserved.
@@ -224,9 +224,10 @@ source identity separately from these archived experiments.
 
 ## Residue
 
-The full source-shaped coda architecture and the strict WS clause
-separation remain reviewable alternatives, not silently adopted changes
-to settled rules. Directly blocked fronting can equal the selected
+The full source-shaped coda architecture remains a reviewable alternative.
+The subsequent discrete SC059 follow-up adopts the previously experimental
+strict WS clause separation; see sc059-adjudication.md and
+sc059-clause-evidence/README.md. Directly blocked fronting can equal the selected
 endpoints without a nasal intermediate. The two relations differ on a
 constructed gumanô control, but ô is CAPR's protected-tail carrier,
 not the source's literal PWGmc quantity; that difference is not independent

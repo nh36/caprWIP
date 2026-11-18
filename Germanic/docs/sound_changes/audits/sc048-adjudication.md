@@ -56,7 +56,7 @@ bindende and lungen. Onset fronting and a nasal low-vowel restoration
 trigger are independently specified companions, not consequences of
 moving SC048 alone. The coupled alternative preserves all394 endpoints.
 
-The literal current back-mutation relation accepts an a-trigger for e,
+The pre-follow-up back-mutation relation at c749 accepts an a-trigger for e,
 despite its written u-only e clauses: the parallel replacements share
 contexts. Thus delayed SC048 still gives steolan/weofan in the live
 implementation. Separating the five clauses into composition, with their
@@ -162,7 +162,8 @@ distinguishes the tested relations but does not choose the history.
 Actual PGmc gumanǭ gives gumne; newly admitted gumanų gives gumn,
 and the dative controls also expose wider cascade limitations. No wrong
 whole-word history is passed off as an established regular guma paradigm.
-The source-shaped wider coda implementation and strict WS clause
-separation are reviewable, unadopted alternatives. Full missing originals
+The source-shaped wider coda implementation remains unadopted. The subsequent
+discrete SC059 follow-up adopts strict WS clause separation as the control;
+see sc059-adjudication.md and sc059-clause-evidence/README.md. Full missing originals
 and whole-paradigm modelling remain qualified. No new Mercian cascade or
 next sound-change investigation is begun.

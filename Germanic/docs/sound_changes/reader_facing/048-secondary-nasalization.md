@@ -59,12 +59,13 @@ Neither comparison independently dates all historical coda nasalization.
 Back mutation requires a dialect-specific qualification. West Saxon
 \emph{e} is regularly mutated by following \emph{u}, not by the
 \emph{a} of the infinitive; Mercian *weofan* 'weave' is not the West
-Saxon *wefan*. The retained parallel clauses of
-[SC059 OEBackMutation](#rule-OEBackMutation) nevertheless admit an
-a-trigger for e. Thus delaying nasalization still yields predicted
-\emph{*steolan} and \emph{*weofan} computationally. Separating those
-clauses under the stated West Saxon trigger removes both differences.
-The old examples remain implementation dependencies, not independent
+Saxon *wefan*. The previous parallel clauses of
+[SC059 OEBackMutation](#rule-OEBackMutation) nevertheless admitted an
+a-trigger for e, so delaying nasalization yielded predicted
+\emph{*steolan} and \emph{*weofan} computationally. The adopted,
+separately composed clauses enforce the stated West Saxon trigger and
+remove both differences. The old examples remain observations about
+that previous implementation, not independent
 historical proof of nasalization before West Saxon back mutation
 [@RingeTaylor2014, pp. 319--327, especially p. 325;
 @HoggGrammar2011, pp. 149--157, §§5.103--5.106;
@@ -87,6 +88,6 @@ give *flascan* without changing this rule
 Wider early coda nasalization can preserve the selected endpoints when
 its i-mutation consumer and nasal restoration trigger are also represented.
 Directly blocking fronting before coda nasals can preserve them without
-a nasal intermediate under a strict West Saxon back-mutation condition.
+a nasal intermediate under the corrected West Saxon back-mutation condition.
 The retained final-n proxy does not choose between otherwise equivalent
 observations or claim to implement every reconstructed paradigm cell.

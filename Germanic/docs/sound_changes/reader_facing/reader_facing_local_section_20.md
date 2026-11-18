@@ -5082,12 +5082,13 @@ Neither comparison independently dates all historical coda nasalization.
 Back mutation requires a dialect-specific qualification. West Saxon
 \emph{e} is regularly mutated by following \emph{u}, not by the
 \emph{a} of the infinitive; Mercian *weofan* 'weave' is not the West
-Saxon *wefan*. The retained parallel clauses of
-[SC059 OEBackMutation](#rule-OEBackMutation) nevertheless admit an
-a-trigger for e. Thus delaying nasalization still yields predicted
-\emph{*steolan} and \emph{*weofan} computationally. Separating those
-clauses under the stated West Saxon trigger removes both differences.
-The old examples remain implementation dependencies, not independent
+Saxon *wefan*. The previous parallel clauses of
+[SC059 OEBackMutation](#rule-OEBackMutation) nevertheless admitted an
+a-trigger for e, so delaying nasalization yielded predicted
+\emph{*steolan} and \emph{*weofan} computationally. The adopted,
+separately composed clauses enforce the stated West Saxon trigger and
+remove both differences. The old examples remain observations about
+that previous implementation, not independent
 historical proof of nasalization before West Saxon back mutation
 [@RingeTaylor2014, pp. 319--327, especially p. 325;
 @HoggGrammar2011, pp. 149--157, §§5.103--5.106;
@@ -5110,7 +5111,7 @@ give *flascan* without changing this rule
 Wider early coda nasalization can preserve the selected endpoints when
 its i-mutation consumer and nasal restoration trigger are also represented.
 Directly blocking fronting before coda nasals can preserve them without
-a nasal intermediate under a strict West Saxon back-mutation condition.
+a nasal intermediate under the corrected West Saxon back-mutation condition.
 The retained final-n proxy does not choose between otherwise equivalent
 observations or claim to implement every reconstructed paradigm cell.
 
@@ -6015,11 +6016,14 @@ are logical rather than chronological relations [@Barrack1975, p. 34].
 
 ```foma
 define OEBackMutation FootCtx([
-    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. FootCtx([
     {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]) .o. Ctx([
-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
+    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
     {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]);
 ```
@@ -6027,17 +6031,25 @@ define OEBackMutation FootCtx([
 The older displacement tests produce predicted \emph{*ġeofan},
 \emph{*steolan} and \emph{*weofan} when mutation precedes
 [SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
-These remain implementation observations, not independent West Saxon
-chronology. The literal parallel clauses above admit an a-trigger for e,
-despite their written u-only condition; separating them into composed
-clauses under the same stated conditions removes the steal/weave
-difference. West Saxon e/u mutation must be distinguished from non-West-
+These remain observations about the previous parallel-clause
+implementation, not independent West Saxon chronology. Its shared
+replacement contexts admitted an a-trigger for e despite the written
+u-only condition. The separately composed clauses above enforce each
+stated environment: eligible e mutates before u but retains e before a.
+The corrected reversal removes the steal/weave difference while
+preserving all selected outputs. West Saxon e/u mutation must be distinguished from non-West-
 Saxon e/a mutation [@RingeTaylor2014, pp.319--327, especially p.325;
 @HoggGrammar2011, pp.149--157, §§5.103--5.106].
 The recorded later displacement across
 [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), yielding predicted
-\emph{*weofan}, likewise remains model-local. The source's broader
-mutation chronology is not decided by this one proxy interaction.
+\emph{*weofan}, likewise belongs to the previous implementation.
+With the corrected relation, that late placement instead loses mutation
+in *heofon*, *meoloc* 'milk', *seofon* 'seven' and *weorold* 'world':
+their medial u triggers have already become o, whereas final u still
+licenses mutation in *speoru* 'spear'. This is a dependency of the
+serialized cascade, not proof that weak-tail reduction itself was the
+historical boundary. The source's broader mutation chronology is not
+decided by either displacement.
 
 ### Stress and the compound linker
 

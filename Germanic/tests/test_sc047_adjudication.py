@@ -27,6 +27,8 @@ def baseline_definitions():
 
 def before_sc047_adoption(current):
     """Authenticate the input-only layer before applying older exact guards."""
+    from test_sc059_clause_separation import before_sc059_separation
+    current = before_sc059_separation(current)
     previous = baseline_definitions()
     extra = """a:{*a} n:{*n} ų:{*ų} |
         a:{*a} m:{*m} a:{*a} z:{*z} |
