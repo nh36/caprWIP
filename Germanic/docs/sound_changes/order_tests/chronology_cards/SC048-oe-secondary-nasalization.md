@@ -54,3 +54,21 @@ The wider early-coda candidate and direct blocking with strict WS triggers
 both preserve394 selected outputs; source paradigm and glide limits
 remain explicit. Earlier161/89 censuses,87 expectations and local
 experimental prose are dated historical evidence, not current censuses.
+
+## Corrected-control follow-up after SC059 adoption
+
+The preceding update describes its experiment-time implementation.
+SC059's separately composed WS clauses are now adopted at d83324ce;
+the old delayed-nasalization steal/weave effects are absent.
+The wider-coda candidate reaches bindąndī, but needs an explicit
+nasal-vowel i-consumer to recover bindende. Its nasal restoration
+trigger is a separate companion. Complete wider and direct-blocking
+variants both preserve394 selected outputs; their artificial protected
+gumanô carrier differs, while ordinary gumanō/gumanā continuations
+both give unresolved gumne. Source accusative, donor and recipient
+cells remain separately traced. The live final-n proxy is retained,
+not declared coextensive with the historical coda domain. See
+sc048-adjudication.md and sc047-sc048-followup-evidence/README.md.
+These are bounded comparisons, not a new nearest-boundary sweep;
+the original87 reversal and two previous-implementation WS failures
+remain unchanged historical evidence.

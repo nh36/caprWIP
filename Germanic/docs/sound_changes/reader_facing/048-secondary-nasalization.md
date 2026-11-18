@@ -91,3 +91,40 @@ Directly blocking fronting before coda nasals can preserve them without
 a nasal intermediate under the corrected West Saxon back-mutation condition.
 The retained final-n proxy does not choose between otherwise equivalent
 observations or claim to implement every reconstructed paradigm cell.
+
+Staged \emph{*bindandī} makes the missing domain visible without
+treating a West Germanic participle as a Proto-Germanic input. The
+final-n proxy leaves its internal vowel oral, yet ordinary i-mutation
+still gives *bindende*. Wider early nasalization instead gives
+\emph{*bindąndī}; without a corresponding nasal-vowel i-mutation
+consumer it incorrectly preserves \emph{*bindande}. Adding that
+consumer recovers the front vowel and *bindende*. The intermediate
+nasality is thus a prediction of the wider account, not something
+proved by their common spelling. An onset-nasal negative and paired
+short/long and accented controls keep these mechanisms separate
+[@RingeTaylor2014, p. 153].
+
+The weak-noun tests remain incomplete. Ringe and Taylor's reconstructed
+accusative \emph{*gumanų} needs early loss of its final high vowel;
+leaving it until quantitative high-vowel deletion lets intervening
+syncope give predicted \emph{*gumn}. The alternative accusative based
+on Fulk's \emph{-on-um} reaches *guman* in the present cascade, but
+without his preceding \emph{-un-} stage: late o-lowering supplies the
+same spelling by a different route. The regular nominative plural
+supplies *guman*, whereas unrelevelled genitive and dative inputs give
+predicted \emph{*gymen}. Those recipient cells require the source's
+independently argued paradigm extension, not a grammatical condition
+on the sound law
+[@RingeTaylor2014, pp. 153--154; @Fulk2018, pp. 169--171, §7.31].
+
+The wider and direct accounts agree on the selected corpus, these
+accusative and recipient-cell endpoints, and ordinary-vowel onset
+endpoints, but are not identical transducers. A constructed
+protected-tail carrier distinguishes their encoded vowel classes.
+It is not a literal reconstruction of the genitive-plural ending.
+With ordinary long-vowel genitive-plural stages both give predicted
+\emph{*gumne}, not *gumena*: syncope and the source's subsequent
+paradigm restoration and dissimilation have not all been modelled.
+Neither that artificial carrier nor a correct aggregate score settles
+the historical nasal intermediate
+[@RingeTaylor2014, pp. 153--154].

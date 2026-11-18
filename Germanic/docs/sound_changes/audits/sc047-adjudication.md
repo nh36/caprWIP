@@ -1,5 +1,9 @@
 # SC047: early low-vowel apocope and its late nasal fragment
 
+The initial pass below remains dated evidence. The corrected-control
+follow-up at the end records the disposition after the discrete SC059
+adoption; it does not overwrite the original experiments or expectations.
+
 ## Identity
 
 - SC047; `OEHeavySyllableNasalApocope` is a stable identifier, not a
@@ -237,3 +241,174 @@ not yet implement every source paradigm. A successful selected score is
 therefore not universal coverage. Full Hogg/Fulk Morphology, Boutkan, Hollifield
 and Ball/Stiles originals remain access gaps. No next sound change is
 started.
+
+## Corrected-control follow-up: disposition for PR19
+
+### Identity, question and sources
+
+Control commit `d83324ce433f135d6ea58d307555768efe5b4a36` first adopts
+SC059 clause separation in a discrete commit. Its FST digest is
+`43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f`.
+The 29 initial trials and their original predictions remain unchanged.
+The [follow-up evidence](sc047-sc048-followup-evidence/README.md) contains
+the preregistrations, exact definitions/orders, every output set,
+all changed records, complete witness prefixes and command receipts.
+
+The falsifiable question was whether prior lowering explains the twelve
+root-vowel deltas without late historical apocope, and whether adding
+source-supported glide nuclearization makes a general early move adequate.
+Sources were read before variants: Ringe--Taylor2014 pp.27--29
+§2.3.1(i),44--47 §§3.1.2--3.1.3,152--154 §5.1.2,189--192
+§6.3.1 and325--326 §6.9.4; Fulk2018 pp.55--57,91--92,169--171;
+Hogg Phonology pp.156--157. Fulk's requested §4.2 (p.55) concerns
+closed-syllable shortening; **u-lowering is §4.3**, including the
+ordering argument on p.57 n.1. No missing original listed above has
+silently become a directly consulted source.
+
+Ringe--Taylor29 contrasts a-stems with root nouns to motivate lowering
+before low-final loss;45 explicitly allows prior lowering within the
+developing dialect continuum. Their46--47 connects low loss and
+postconsonantal j/w/ij nuclearization to pre-gemination history. Their
+economical final-z-first analysis is qualified, not a proof of an
+absolute pan-WG date. Fulk91 denies a preceding-weight restriction on
+this low loss and separates quantitative high-vowel deletion. These
+arguments, not a winning endpoint count, establish the historical bounds.
+
+### Actual execution order and all fourteen original deltas
+
+The expanded `EarlyEnglishLineChanges` executes ai-monophthongization,
+a-to-u-before-m, long-e lowering, SC023, early-i apocope, final-or
+lowering, coronal-w assimilation, ww simplification, ij contraction,
+j-gemination, syllabic-j handling, xsC simplification, lþ voicing,
+dental hardening and SC111, in that order. Outside the bundle come
+i-lowering, SC017, the o-raising rules, ordinary final-z deletion,
+word-final-i loss, monosyllabic-z loss, final-r lengthening and
+rhotacism. Numerical SC order is not execution order.
+
+Moving SC017 directly after ij contraction crosses gemination,
+syllabic-j handling, xsC simplification, lþ voicing, dental hardening,
+SC111 and i-lowering. Moving SC047 there additionally crosses the
+z/r operations and the intervening brightening, breaking and restoration
+region. The archived full order lists identify every crossed operation.
+The first representation change in the loss-only trial is deletion of
+final short ą at the new SC047 site:
+
+| Row; selected input | Live endpoint | Loss alone before gemination | SC017 then SC047 there |
+|---|---|---|---|
+|1953 board; búrdą|bord|burd|bord|
+|1979 corn; kúrną|corn|curn|corn|
+|1988 deer; déuzą|dēor|dēo|dēo|
+|1992 door; dúrą|dor|dūr|dōr|
+|2026 folk; fúlką|folc|fulc|folc|
+|2035 frost; frústą|forst|frust|forst|
+|2042 god; gúdą|god|gud|god|
+|2043 gold; gúlθą|gold|guld|gold|
+|2076 hoard; xúzdą|hord|hurd|hord|
+|2082 horn; xúrną|horn|hurn|horn|
+|2111 lock; lúką|loc|luc|loc|
+|2224 straw; stráwą|strēa|stræw|stræw|
+|2265 trough; trúgą|trog|trug|trog|
+|2301 word; wúrdą|word|wurd|word|
+
+Twelve changed root vowels lose SC017's nonhigh trigger.
+In frost, lost lowering additionally prevents `OERMetathesis`:
+live fróst > fórst gives forst, while frúst remains frust.
+In deer,
+exposed final z survives ordinary final-z deletion but is deleted by
+`MonosyllabicFinalZLoss`; live z instead survives until rhotacism,
+giving déurą, then dēorą. In door, early apocope separately exposes
+stressed final r to `PNWGmcMonosyllabicFinalRLengthening`: dúr becomes
+dūr, and recovered dór becomes dōr. The after-ordinary-z trial still
+gives dōr for dor, so lowering is not its second dependency.
+Live straw has SC111 stráwą > stráu, then `OEAuBrightening` stráeu
+and `OEDiphthongLeveling` strēa. Early deletion removes the input
+of that accepted route; it is not the obsolete SC034-only test.
+
+There are **thirteen**, not twelve, lost SC017 firings in the loss-only
+trial. Yoke2307 additionally loses júką > jóką, but the final
+`OEWsPalatalGlide` maps both ġúk and ġók to ġéok, hiding its endpoint
+effect. All forty original firings, including Rainbow's secondary
+ù, are recovered by moving SC017 alone or before early SC047; there
+are no new firings and no conditioning changes. Current acute roots
+and the one secondary-stress target are separately identifiable in
+the complete census. Gold's earlier consonant is θ rather than the
+later d; that representational change does not alter lowering's domain.
+Nasal, high-vowel, intervening-j and unmarked-medial controls remain
+negative, including source-shaped synthetic knusjanan/trumjanan.
+
+The four-way trial gives identity386/0 changes, loss-only373/14,
+lowering-only386/0, and joint384/3. No narrower SC017 prerequisite
+repair is called for. After ordinary final-z deletion there remain two
+changes (deer/door); after rhotacism or SC041 there are none. Before
+SC023 there are fifteen changes including rejection of dōn: the exposed
+n is consumed by old final-n loss. This is the established
+counterfeeding negative, not evidence for late historical apocope.
+
+### Source-staged glides: gains and unresolved predictions
+
+Ringe--Taylor46 has **rīkiją > rīkī**, with long final ī, not rīki.
+The independently staged experiment deletes short ą then nuclearizes
+postconsonantal ij > ī, j > i and w > u, in separately composed
+clauses. It reaches saru and rīkī before gemination. Rīkī retains
+its final long vowel through quantitative high-vowel deletion,
+palatalizes k, then shortens and lowers the ending to give rīċe.
+Genitive *sagjas (Ringe--Taylor47) retains its medial j and geminates
+g > gg; the test does not abolish gemination generally.
+
+The early saru path is **not solved**. Brightening gives særu, which
+no longer has rw to trigger breaking; SC046 then restores saru, so
+back mutation never sees æ and the endpoint is saru, not searu.
+No settled SC046 domain is reopened to repair it. The oral parallel
+gelwa > gelu works locally with SC041 plus nuclearization, but its
+tested full continuation gives ġielu, not the source's ġeolu. This
+is also an unresolved wider-cascade derivation, not an accepted witness.
+
+The full nuclearization candidate has six changed selected endpoints:
+deer1988 dēo, door1992 dōr, hay2061 hēa (hīeġ), net2138 nete
+(nett), straw2224 stræw, hue2332 hii (hīew). For hay, net and hue,
+the first additional divergence is stranded j > i before gemination;
+current later syllabic-j handling no longer receives the same input.
+Their complete downstream traces are preserved. The three older
+dependencies remain: straw's w is postvocalic, outside this
+postconsonantal nuclearization, and z/r rules are unchanged.
+These changes do not refute early historical loss. The source's
+paradigm-levelling argument remains relevant, but no particular
+hay/net/hue donor is invented or silently applied to repair this trial.
+
+### Verdict, propagation and residue
+
+**REFORMULATE/RETAIN remains the SC047 verdict.** Retain the current
+rule and executable position, with explicitly early historical low loss.
+Earlier lowering explains the twelve root-vowel effects but does not
+repair the independent final-consonant and SC111 dependencies.
+Source-supported nuclearization improves rīkī/rīċe while leaving
+searu unresolved and changing three further selected outputs. A general
+reorder or glide adoption is therefore not ready; neither source evidence
+nor this bounded pass authorizes a z/r or SC111 historical rewrite.
+
+SC059 clause separation is the only adopted production rule change in
+this follow-up. No corpus entry, selected cell, target, stress-domain
+restriction or baseline is changed. Reader quantity, current prose,
+registry notes and chronology qualifications are reconciled; original
+measurements remain untouched. SC048's accompanying disposition records
+the coda/direct comparison, source cells and analogy donors.
+
+The new tests authenticate frozen compiled observations and complete
+row-level delta sets; they add no compiler, fixture or routine sweep.
+The opt-in matrices' actual variant/network/time/RSS costs are recorded
+in the evidence. Focused A and canonical B precede the final strict C
+and book certificate; earlier exact-commit certificates are historical.
+Review-ready: SC059's condition correction and these qualified findings.
+Experimental: early reordering, glide nuclearization and wider
+nasalization/direct blocking. No next sound change is begun.
+
+The first final book attempt found one gloss-gate false positive:
+dotted rīċe in the nuclearization discussion repeated the already
+glossed rīce 'kingdom'. The prose is unchanged. The existing contextual
+shared-gloss table now recognizes only that spelling in that exact
+discussion after its glossed lemma, with negative checks for missing
+or later anchors, another context, Part II and different quantities.
+The failed receipt and pre-repair journal are preserved. This adds
+one inexpensive Pandoc regression, not another runtime compiler,
+fixture or scientific experiment; a new publication attempt and
+the final strict certificate cover the repaired checker.

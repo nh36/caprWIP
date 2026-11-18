@@ -1,5 +1,8 @@
 # SC048: coda nasalization and the final-n proxy
 
+The initial pass below remains dated evidence. The corrected-control
+follow-up at the end records what the later experiments establish.
+
 ## Identity
 
 - SC048; stable identifier `OESecondaryNasalization`.
@@ -167,3 +170,121 @@ discrete SC059 follow-up adopts strict WS clause separation as the control;
 see sc059-adjudication.md and sc059-clause-evidence/README.md. Full missing originals
 and whole-paradigm modelling remain qualified. No new Mercian cascade or
 next sound-change investigation is begun.
+
+## Corrected-control follow-up: staged codas and paradigm cells
+
+### Identity, question and evidence
+
+Control: discrete SC059 commit `d83324ce433f135d6ea58d307555768efe5b4a36`.
+The question was whether internal-coda witnesses select wider nasalization
+over direct blocking once the actual WS back-mutation clauses are corrected.
+Ringe--Taylor153--154 supplies bindandī and explicit guma cells;
+Fulk169--171 §7.31 supplies the alternative accusative and its donor
+argument. Source-stage quantities and cells are kept distinct. See
+[the follow-up evidence](sc047-sc048-followup-evidence/README.md) for
+all preregistrations, definitions, command receipts and full394 sets.
+
+SC048 remains a two-clause final-n proxy with89 ordinary-a firings and
+no selected secondary-à firing. SC047 remains159. The corrected
+SC059 delayed-SC048 trial has no steal/weave displacement. Its former
+two differences belong to the previous implementation, not a surviving
+historical ordering proof. No source or target is changed.
+
+### Competing staged analyses
+
+All staged forms enter after the named SC041 checkpoint, not a PGmc
+gate. The source *bindandī has short unstressed internal a before
+nd; *bindan has final-n coda a. Bacan/wadan enter as bákan/wádan
+before brightening, not prematurely fronted WGmc reconstructions.
+Synthetic onset, final/internal m, stress and length pairs are explicitly
+transducer probes. Protected flaskōn contrasts with short flascan.
+
+| Analysis |394 matches / changes|Staged bindandī endpoint|Restoration controls|
+|---|---|---|---|
+|Incumbent|386 /0|bindende|bacan/wadan|
+|Early final-n proxy|379 /7|bindende|bæcan/wædan|
+|Wider coda only|378 /8|bindande|bæcan/wædan; lung also lungan|
+|Wider + nasal i-consumer|379 /7|bindende|bæcan/wædan; lung recovered|
+|Plus onset fronting|379 /7|bindende|same seven roots|
+|Plus explicit nasal restoration trigger|386 /0|bindende|bacan/wadan|
+|Direct coda blocking|386 /0|bindende|bacan/wadan|
+
+The seven changed roots are bake1934, fare2003, grave2046, lade2088,
+wade2266, wake2268 and wash2272; every full output is retained.
+Lung2114 is the eighth without an i-consumer. Wide nasalization reaches
+bindąndī; its separate nasal-fronting step reaches bindændī before
+ordinary i-mutation gives the front-vowel outcome and the final ending
+shortens. This is the source-predicted intermediate, not a spelling
+contrast: incumbent oral a and direct blocking also give bindende.
+Wider final/internal m controls preserve a where the final-n proxy
+fronts it. Long ā and acute á are not targets of nasalization;
+secondary à is. Later ordinary i-mutation may erase these contrasts,
+so intermediate observations are retained even when endpoints agree.
+
+The complete coupled candidate and direct blocking agree on all394
+selected outputs and on the source-based accusative and genitive/dative
+diagnostic endpoints. They are **not identical transducers**. Synthetic
+gumanô gives gumena versus gumana; the protected ô carrier is excluded
+from `EnglishStarVocalic`, unlike ordinary ō/ā. A resolving experiment
+shows local direct fronting before n+ō/ā but not n+ô. Ordinary gumanō
+and gumanā give gumne under both complete continuations, although the
+wider candidate fronts their medial a earlier. Thus the carrier's
+difference is a representation-domain limit, not independent evidence
+for historical nasality. The ordinary genitive plural is not solved
+by either route: syncope, paradigm restoration and dissimilation
+remain distinct in Ringe--Taylor153--154.
+
+### Parallel guma histories, first missing stages and levelling
+
+The accents are CAPR stress encodings, not source diacritics. Ringe--Taylor's
+PGmc accusative *gumanų and the PG adaptation gúmonų of Fulk's
+*-on-um remain separate source-based inputs.
+
+| Cell/input | Actual decisive stages | Endpoint; status |
+|---|---|---|
+|Ringe--Taylor acc.sg. gúmanų|Final ų survives early loss; SC114 removes medial a, quantitative HVD later removes ų|gumn; unresolved, missing early high-tail loss|
+|Fulk acc.sg. gúmonų|No expected early medial o > u; ų survives until quantitative HVD; late unstressed-o lowering supplies a|guman; spelling agreement by the wrong route, not verified inherited -un|
+|Nom.pl. gúmaniz|Early i-loss and ordinary z-loss expose guman; final-n nasalization protects a|guman; potential an donor|
+|Gen.sg. gúminiz / dat.sg. gúmini|Early ending reduction exposes gumin; i-mutation fronts root u, later i lowers|gymen; unrelevelled recipient cells|
+|Dat.pl. gúmammaz|Early oral-a loss exposes final mm; narrow proxy misses m|gumemm live, gumamm wide/direct; no claim to derive gumum|
+
+Ringe--Taylor153 explicitly supplies regular accusative singular and
+nominative plural an for extension to genitive/dative singular;154
+discusses the more complex genitive plural. Fulk170 instead reconstructs
+inherited accusative un, supported by Northumbrian Ruthwell galgu,
+and extends an from other cases, with nominative plural an a concrete
+donor. That dialect-specific evidence is not silently made a production
+target. Neither failure proves analogy everywhere, and no grammatical
+condition or levelling operation is added to the sound laws.
+Replacing in by an before i-mutation could prevent gymen; later
+levelling would also have to restore the root vowel from donor cells.
+That is an explicit modelling distinction, not a date proved by the
+common guman spelling. Ringe--Taylor154 adduces early high-vowel loss
+after unstressed syllables (§3.1.4) from the regular donor cells.
+For the genitive plural his concrete support is early WS tungna and
+poetic syncopated forms, followed by -ana spellings including early
+Mercian fingirdoccana and WS examples, then dissimilation to -ena.
+These are positive evidence for the additional paradigm history,
+not licence to install an arbitrary phonological repair.
+The ordinary-vowel gumne result likewise cannot stand in for attested
+gumena without the source's additional paradigm history.
+
+### Verdict, propagation and residue
+
+**REFORMULATE/RETAIN remains the verdict.** The source supports a coda
+domain broader than final n, but the staged bindende contrast does not
+choose actual nasalization over direct fronting conditions. A coupled
+wider candidate needs three companion changes, does not complete the
+source paradigms and is not preferable merely because it equals386.
+Retain the narrow live implementation; keep the wider/direct definitions
+and staged diagnostics available for review, not production.
+
+Current registry and reader claims distinguish historical coda
+conditioning, the retained final-n exposure dependency, and previous
+SC059 artifacts. Every original experiment and expectation remains
+historical. No selected input, target, cardinality, stress restriction
+or baseline changes; SC059's separate clause correction is the only
+production rule adoption. Tests read authenticated frozen results and
+add no normal runtime compilation or sweep. Final A/B/C and publication
+receipts identify the final source state separately from earlier
+certification. Access gaps listed in the initial pass remain explicit.

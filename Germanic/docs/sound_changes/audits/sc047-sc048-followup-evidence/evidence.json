@@ -1,0 +1,1705 @@
+{
+  "runs": {
+    "controlled": {
+      "identity": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "loss_only_pre_gemination": {
+        "matches": 373,
+        "changed": 14,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1953",
+            "concept": "board",
+            "proto": "*búrdą",
+            "proto_norm": "búrdą",
+            "fst_input": "búrdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "bord",
+            "baseline": [
+              "bord"
+            ],
+            "outputs": [
+              "burd"
+            ]
+          },
+          {
+            "row_id": "1979",
+            "concept": "corn",
+            "proto": "*kúrną",
+            "proto_norm": "kúrną",
+            "fst_input": "kúrną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "corn",
+            "baseline": [
+              "corn"
+            ],
+            "outputs": [
+              "curn"
+            ]
+          },
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dūr"
+            ]
+          },
+          {
+            "row_id": "2026",
+            "concept": "folk",
+            "proto": "*fúlką",
+            "proto_norm": "fúlką",
+            "fst_input": "fúlką",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "folc",
+            "baseline": [
+              "folc"
+            ],
+            "outputs": [
+              "fulc"
+            ]
+          },
+          {
+            "row_id": "2035",
+            "concept": "frost",
+            "proto": "*frústą",
+            "proto_norm": "frústą",
+            "fst_input": "frústą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "forst",
+            "baseline": [
+              "forst"
+            ],
+            "outputs": [
+              "frust"
+            ]
+          },
+          {
+            "row_id": "2042",
+            "concept": "god",
+            "proto": "*gúdą",
+            "proto_norm": "gúdą",
+            "fst_input": "gúdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "god",
+            "baseline": [
+              "god"
+            ],
+            "outputs": [
+              "gud"
+            ]
+          },
+          {
+            "row_id": "2043",
+            "concept": "gold",
+            "proto": "*gúlθą",
+            "proto_norm": "gúlθą",
+            "fst_input": "gúlθą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "gold",
+            "baseline": [
+              "gold"
+            ],
+            "outputs": [
+              "guld"
+            ]
+          },
+          {
+            "row_id": "2076",
+            "concept": "hoard",
+            "proto": "*xúzdą",
+            "proto_norm": "xúzdą",
+            "fst_input": "xúzdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hord",
+            "baseline": [
+              "hord"
+            ],
+            "outputs": [
+              "hurd"
+            ]
+          },
+          {
+            "row_id": "2082",
+            "concept": "horn",
+            "proto": "*xúrną",
+            "proto_norm": "xúrną",
+            "fst_input": "xúrną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "horn",
+            "baseline": [
+              "horn"
+            ],
+            "outputs": [
+              "hurn"
+            ]
+          },
+          {
+            "row_id": "2111",
+            "concept": "lock",
+            "proto": "*lúką",
+            "proto_norm": "lúką",
+            "fst_input": "lúką",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "loc",
+            "baseline": [
+              "loc"
+            ],
+            "outputs": [
+              "luc"
+            ]
+          },
+          {
+            "row_id": "2224",
+            "concept": "straw",
+            "proto": "*stráwą",
+            "proto_norm": "stráwą",
+            "fst_input": "stráwą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "strēaw",
+            "baseline": [
+              "strēa"
+            ],
+            "outputs": [
+              "stræw"
+            ]
+          },
+          {
+            "row_id": "2265",
+            "concept": "trough",
+            "proto": "*trúgą",
+            "proto_norm": "trúgą",
+            "fst_input": "trúgą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "trog",
+            "baseline": [
+              "trog"
+            ],
+            "outputs": [
+              "trug"
+            ]
+          },
+          {
+            "row_id": "2301",
+            "concept": "word",
+            "proto": "*wúrdą",
+            "proto_norm": "wúrdą",
+            "fst_input": "wúrdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "word",
+            "baseline": [
+              "word"
+            ],
+            "outputs": [
+              "wurd"
+            ]
+          }
+        ]
+      },
+      "lower_only_pre_gemination": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "lower_then_loss_pre_gemination": {
+        "matches": 384,
+        "changed": 3,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dōr"
+            ]
+          },
+          {
+            "row_id": "2224",
+            "concept": "straw",
+            "proto": "*stráwą",
+            "proto_norm": "stráwą",
+            "fst_input": "stráwą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "strēaw",
+            "baseline": [
+              "strēa"
+            ],
+            "outputs": [
+              "stræw"
+            ]
+          }
+        ]
+      }
+    },
+    "staged": {
+      "identity": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "loss_only_pre_gemination": {
+        "matches": 373,
+        "changed": 14,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1953",
+            "concept": "board",
+            "proto": "*búrdą",
+            "proto_norm": "búrdą",
+            "fst_input": "búrdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "bord",
+            "baseline": [
+              "bord"
+            ],
+            "outputs": [
+              "burd"
+            ]
+          },
+          {
+            "row_id": "1979",
+            "concept": "corn",
+            "proto": "*kúrną",
+            "proto_norm": "kúrną",
+            "fst_input": "kúrną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "corn",
+            "baseline": [
+              "corn"
+            ],
+            "outputs": [
+              "curn"
+            ]
+          },
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dūr"
+            ]
+          },
+          {
+            "row_id": "2026",
+            "concept": "folk",
+            "proto": "*fúlką",
+            "proto_norm": "fúlką",
+            "fst_input": "fúlką",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "folc",
+            "baseline": [
+              "folc"
+            ],
+            "outputs": [
+              "fulc"
+            ]
+          },
+          {
+            "row_id": "2035",
+            "concept": "frost",
+            "proto": "*frústą",
+            "proto_norm": "frústą",
+            "fst_input": "frústą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "forst",
+            "baseline": [
+              "forst"
+            ],
+            "outputs": [
+              "frust"
+            ]
+          },
+          {
+            "row_id": "2042",
+            "concept": "god",
+            "proto": "*gúdą",
+            "proto_norm": "gúdą",
+            "fst_input": "gúdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "god",
+            "baseline": [
+              "god"
+            ],
+            "outputs": [
+              "gud"
+            ]
+          },
+          {
+            "row_id": "2043",
+            "concept": "gold",
+            "proto": "*gúlθą",
+            "proto_norm": "gúlθą",
+            "fst_input": "gúlθą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "gold",
+            "baseline": [
+              "gold"
+            ],
+            "outputs": [
+              "guld"
+            ]
+          },
+          {
+            "row_id": "2076",
+            "concept": "hoard",
+            "proto": "*xúzdą",
+            "proto_norm": "xúzdą",
+            "fst_input": "xúzdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hord",
+            "baseline": [
+              "hord"
+            ],
+            "outputs": [
+              "hurd"
+            ]
+          },
+          {
+            "row_id": "2082",
+            "concept": "horn",
+            "proto": "*xúrną",
+            "proto_norm": "xúrną",
+            "fst_input": "xúrną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "horn",
+            "baseline": [
+              "horn"
+            ],
+            "outputs": [
+              "hurn"
+            ]
+          },
+          {
+            "row_id": "2111",
+            "concept": "lock",
+            "proto": "*lúką",
+            "proto_norm": "lúką",
+            "fst_input": "lúką",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "loc",
+            "baseline": [
+              "loc"
+            ],
+            "outputs": [
+              "luc"
+            ]
+          },
+          {
+            "row_id": "2224",
+            "concept": "straw",
+            "proto": "*stráwą",
+            "proto_norm": "stráwą",
+            "fst_input": "stráwą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "strēaw",
+            "baseline": [
+              "strēa"
+            ],
+            "outputs": [
+              "stræw"
+            ]
+          },
+          {
+            "row_id": "2265",
+            "concept": "trough",
+            "proto": "*trúgą",
+            "proto_norm": "trúgą",
+            "fst_input": "trúgą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "trog",
+            "baseline": [
+              "trog"
+            ],
+            "outputs": [
+              "trug"
+            ]
+          },
+          {
+            "row_id": "2301",
+            "concept": "word",
+            "proto": "*wúrdą",
+            "proto_norm": "wúrdą",
+            "fst_input": "wúrdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "word",
+            "baseline": [
+              "word"
+            ],
+            "outputs": [
+              "wurd"
+            ]
+          }
+        ]
+      },
+      "lower_then_loss_pre_gemination": {
+        "matches": 384,
+        "changed": 3,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dōr"
+            ]
+          },
+          {
+            "row_id": "2224",
+            "concept": "straw",
+            "proto": "*stráwą",
+            "proto_norm": "stráwą",
+            "fst_input": "stráwą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "strēaw",
+            "baseline": [
+              "strēa"
+            ],
+            "outputs": [
+              "stræw"
+            ]
+          }
+        ]
+      },
+      "pre_gemination_nuclearization": {
+        "matches": 381,
+        "changed": 6,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dōr"
+            ]
+          },
+          {
+            "row_id": "2061",
+            "concept": "hay",
+            "proto": "*xáwją",
+            "proto_norm": "xáwją",
+            "fst_input": "xáwją",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hīeġ",
+            "baseline": [
+              "hīeġ"
+            ],
+            "outputs": [
+              "hēa"
+            ]
+          },
+          {
+            "row_id": "2138",
+            "concept": "net",
+            "proto": "*nátją",
+            "proto_norm": "nátją",
+            "fst_input": "nátją",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "nett",
+            "baseline": [
+              "nett"
+            ],
+            "outputs": [
+              "nete"
+            ]
+          },
+          {
+            "row_id": "2224",
+            "concept": "straw",
+            "proto": "*stráwą",
+            "proto_norm": "stráwą",
+            "fst_input": "stráwą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "strēaw",
+            "baseline": [
+              "strēa"
+            ],
+            "outputs": [
+              "stræw"
+            ]
+          },
+          {
+            "row_id": "2332",
+            "concept": "hue",
+            "proto": "*xíwją",
+            "proto_norm": "xíwją",
+            "fst_input": "xíwją",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hīew",
+            "baseline": [
+              "hīew"
+            ],
+            "outputs": [
+              "hii"
+            ]
+          }
+        ]
+      },
+      "loss_after_ordinary_z": {
+        "matches": 384,
+        "changed": 2,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dōr"
+            ]
+          }
+        ]
+      },
+      "loss_after_rhotacism": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "loss_after_SC041": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "before_SC023_negative": {
+        "matches": 372,
+        "changed": 15,
+        "rejected": 1,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1953",
+            "concept": "board",
+            "proto": "*búrdą",
+            "proto_norm": "búrdą",
+            "fst_input": "búrdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "bord",
+            "baseline": [
+              "bord"
+            ],
+            "outputs": [
+              "burd"
+            ]
+          },
+          {
+            "row_id": "1979",
+            "concept": "corn",
+            "proto": "*kúrną",
+            "proto_norm": "kúrną",
+            "fst_input": "kúrną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "corn",
+            "baseline": [
+              "corn"
+            ],
+            "outputs": [
+              "curn"
+            ]
+          },
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1991",
+            "concept": "do",
+            "proto": "*dōną",
+            "proto_norm": "dōną",
+            "fst_input": "dōną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dōn",
+            "baseline": [
+              "dōn"
+            ],
+            "outputs": []
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dūr"
+            ]
+          },
+          {
+            "row_id": "2026",
+            "concept": "folk",
+            "proto": "*fúlką",
+            "proto_norm": "fúlką",
+            "fst_input": "fúlką",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "folc",
+            "baseline": [
+              "folc"
+            ],
+            "outputs": [
+              "fulc"
+            ]
+          },
+          {
+            "row_id": "2035",
+            "concept": "frost",
+            "proto": "*frústą",
+            "proto_norm": "frústą",
+            "fst_input": "frústą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "forst",
+            "baseline": [
+              "forst"
+            ],
+            "outputs": [
+              "frust"
+            ]
+          },
+          {
+            "row_id": "2042",
+            "concept": "god",
+            "proto": "*gúdą",
+            "proto_norm": "gúdą",
+            "fst_input": "gúdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "god",
+            "baseline": [
+              "god"
+            ],
+            "outputs": [
+              "gud"
+            ]
+          },
+          {
+            "row_id": "2043",
+            "concept": "gold",
+            "proto": "*gúlθą",
+            "proto_norm": "gúlθą",
+            "fst_input": "gúlθą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "gold",
+            "baseline": [
+              "gold"
+            ],
+            "outputs": [
+              "guld"
+            ]
+          },
+          {
+            "row_id": "2076",
+            "concept": "hoard",
+            "proto": "*xúzdą",
+            "proto_norm": "xúzdą",
+            "fst_input": "xúzdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hord",
+            "baseline": [
+              "hord"
+            ],
+            "outputs": [
+              "hurd"
+            ]
+          },
+          {
+            "row_id": "2082",
+            "concept": "horn",
+            "proto": "*xúrną",
+            "proto_norm": "xúrną",
+            "fst_input": "xúrną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "horn",
+            "baseline": [
+              "horn"
+            ],
+            "outputs": [
+              "hurn"
+            ]
+          },
+          {
+            "row_id": "2111",
+            "concept": "lock",
+            "proto": "*lúką",
+            "proto_norm": "lúką",
+            "fst_input": "lúką",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "loc",
+            "baseline": [
+              "loc"
+            ],
+            "outputs": [
+              "luc"
+            ]
+          },
+          {
+            "row_id": "2224",
+            "concept": "straw",
+            "proto": "*stráwą",
+            "proto_norm": "stráwą",
+            "fst_input": "stráwą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "strēaw",
+            "baseline": [
+              "strēa"
+            ],
+            "outputs": [
+              "stræw"
+            ]
+          },
+          {
+            "row_id": "2265",
+            "concept": "trough",
+            "proto": "*trúgą",
+            "proto_norm": "trúgą",
+            "fst_input": "trúgą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "trog",
+            "baseline": [
+              "trog"
+            ],
+            "outputs": [
+              "trug"
+            ]
+          },
+          {
+            "row_id": "2301",
+            "concept": "word",
+            "proto": "*wúrdą",
+            "proto_norm": "wúrdą",
+            "fst_input": "wúrdą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "word",
+            "baseline": [
+              "word"
+            ],
+            "outputs": [
+              "wurd"
+            ]
+          }
+        ]
+      },
+      "early_final_n": {
+        "matches": 379,
+        "changed": 7,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1934",
+            "concept": "bake",
+            "proto": "*bákaną",
+            "proto_norm": "bákaną",
+            "fst_input": "bákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "bacan",
+            "baseline": [
+              "bacan"
+            ],
+            "outputs": [
+              "bæcan"
+            ]
+          },
+          {
+            "row_id": "2003",
+            "concept": "fare",
+            "proto": "*fáraną",
+            "proto_norm": "fáraną",
+            "fst_input": "fáraną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "faran",
+            "baseline": [
+              "faran"
+            ],
+            "outputs": [
+              "færan"
+            ]
+          },
+          {
+            "row_id": "2046",
+            "concept": "grave",
+            "proto": "*grábaną",
+            "proto_norm": "grábaną",
+            "fst_input": "grábaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "grafan",
+            "baseline": [
+              "grafan"
+            ],
+            "outputs": [
+              "græfan"
+            ]
+          },
+          {
+            "row_id": "2088",
+            "concept": "lade",
+            "proto": "*xláðaną",
+            "proto_norm": "xláðaną",
+            "fst_input": "xláðaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hladan",
+            "baseline": [
+              "hladan"
+            ],
+            "outputs": [
+              "hlædan"
+            ]
+          },
+          {
+            "row_id": "2266",
+            "concept": "wade",
+            "proto": "*wádaną",
+            "proto_norm": "wádaną",
+            "fst_input": "wádaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wadan",
+            "baseline": [
+              "wadan"
+            ],
+            "outputs": [
+              "wædan"
+            ]
+          },
+          {
+            "row_id": "2268",
+            "concept": "wake",
+            "proto": "*wákaną",
+            "proto_norm": "wákaną",
+            "fst_input": "wákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wacan",
+            "baseline": [
+              "wacan"
+            ],
+            "outputs": [
+              "wæcan"
+            ]
+          },
+          {
+            "row_id": "2272",
+            "concept": "wash",
+            "proto": "*wáskaną",
+            "proto_norm": "wáskaną",
+            "fst_input": "wáskaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wascan",
+            "baseline": [
+              "wascan"
+            ],
+            "outputs": [
+              "wæsċan"
+            ]
+          }
+        ]
+      },
+      "early_coda": {
+        "matches": 378,
+        "changed": 8,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1934",
+            "concept": "bake",
+            "proto": "*bákaną",
+            "proto_norm": "bákaną",
+            "fst_input": "bákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "bacan",
+            "baseline": [
+              "bacan"
+            ],
+            "outputs": [
+              "bæcan"
+            ]
+          },
+          {
+            "row_id": "2003",
+            "concept": "fare",
+            "proto": "*fáraną",
+            "proto_norm": "fáraną",
+            "fst_input": "fáraną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "faran",
+            "baseline": [
+              "faran"
+            ],
+            "outputs": [
+              "færan"
+            ]
+          },
+          {
+            "row_id": "2046",
+            "concept": "grave",
+            "proto": "*grábaną",
+            "proto_norm": "grábaną",
+            "fst_input": "grábaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "grafan",
+            "baseline": [
+              "grafan"
+            ],
+            "outputs": [
+              "græfan"
+            ]
+          },
+          {
+            "row_id": "2088",
+            "concept": "lade",
+            "proto": "*xláðaną",
+            "proto_norm": "xláðaną",
+            "fst_input": "xláðaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hladan",
+            "baseline": [
+              "hladan"
+            ],
+            "outputs": [
+              "hlædan"
+            ]
+          },
+          {
+            "row_id": "2114",
+            "concept": "lung",
+            "proto": "*lúnganjō",
+            "proto_norm": "lúnganjō",
+            "fst_input": "lúnganjō",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "lungen",
+            "baseline": [
+              "lungen"
+            ],
+            "outputs": [
+              "lungan"
+            ]
+          },
+          {
+            "row_id": "2266",
+            "concept": "wade",
+            "proto": "*wádaną",
+            "proto_norm": "wádaną",
+            "fst_input": "wádaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wadan",
+            "baseline": [
+              "wadan"
+            ],
+            "outputs": [
+              "wædan"
+            ]
+          },
+          {
+            "row_id": "2268",
+            "concept": "wake",
+            "proto": "*wákaną",
+            "proto_norm": "wákaną",
+            "fst_input": "wákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wacan",
+            "baseline": [
+              "wacan"
+            ],
+            "outputs": [
+              "wæcan"
+            ]
+          },
+          {
+            "row_id": "2272",
+            "concept": "wash",
+            "proto": "*wáskaną",
+            "proto_norm": "wáskaną",
+            "fst_input": "wáskaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wascan",
+            "baseline": [
+              "wascan"
+            ],
+            "outputs": [
+              "wæsċan"
+            ]
+          }
+        ]
+      },
+      "early_coda_i": {
+        "matches": 379,
+        "changed": 7,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1934",
+            "concept": "bake",
+            "proto": "*bákaną",
+            "proto_norm": "bákaną",
+            "fst_input": "bákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "bacan",
+            "baseline": [
+              "bacan"
+            ],
+            "outputs": [
+              "bæcan"
+            ]
+          },
+          {
+            "row_id": "2003",
+            "concept": "fare",
+            "proto": "*fáraną",
+            "proto_norm": "fáraną",
+            "fst_input": "fáraną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "faran",
+            "baseline": [
+              "faran"
+            ],
+            "outputs": [
+              "færan"
+            ]
+          },
+          {
+            "row_id": "2046",
+            "concept": "grave",
+            "proto": "*grábaną",
+            "proto_norm": "grábaną",
+            "fst_input": "grábaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "grafan",
+            "baseline": [
+              "grafan"
+            ],
+            "outputs": [
+              "græfan"
+            ]
+          },
+          {
+            "row_id": "2088",
+            "concept": "lade",
+            "proto": "*xláðaną",
+            "proto_norm": "xláðaną",
+            "fst_input": "xláðaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hladan",
+            "baseline": [
+              "hladan"
+            ],
+            "outputs": [
+              "hlædan"
+            ]
+          },
+          {
+            "row_id": "2266",
+            "concept": "wade",
+            "proto": "*wádaną",
+            "proto_norm": "wádaną",
+            "fst_input": "wádaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wadan",
+            "baseline": [
+              "wadan"
+            ],
+            "outputs": [
+              "wædan"
+            ]
+          },
+          {
+            "row_id": "2268",
+            "concept": "wake",
+            "proto": "*wákaną",
+            "proto_norm": "wákaną",
+            "fst_input": "wákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wacan",
+            "baseline": [
+              "wacan"
+            ],
+            "outputs": [
+              "wæcan"
+            ]
+          },
+          {
+            "row_id": "2272",
+            "concept": "wash",
+            "proto": "*wáskaną",
+            "proto_norm": "wáskaną",
+            "fst_input": "wáskaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wascan",
+            "baseline": [
+              "wascan"
+            ],
+            "outputs": [
+              "wæsċan"
+            ]
+          }
+        ]
+      },
+      "early_coda_i_onset": {
+        "matches": 379,
+        "changed": 7,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1934",
+            "concept": "bake",
+            "proto": "*bákaną",
+            "proto_norm": "bákaną",
+            "fst_input": "bákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "bacan",
+            "baseline": [
+              "bacan"
+            ],
+            "outputs": [
+              "bæcan"
+            ]
+          },
+          {
+            "row_id": "2003",
+            "concept": "fare",
+            "proto": "*fáraną",
+            "proto_norm": "fáraną",
+            "fst_input": "fáraną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "faran",
+            "baseline": [
+              "faran"
+            ],
+            "outputs": [
+              "færan"
+            ]
+          },
+          {
+            "row_id": "2046",
+            "concept": "grave",
+            "proto": "*grábaną",
+            "proto_norm": "grábaną",
+            "fst_input": "grábaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "grafan",
+            "baseline": [
+              "grafan"
+            ],
+            "outputs": [
+              "græfan"
+            ]
+          },
+          {
+            "row_id": "2088",
+            "concept": "lade",
+            "proto": "*xláðaną",
+            "proto_norm": "xláðaną",
+            "fst_input": "xláðaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hladan",
+            "baseline": [
+              "hladan"
+            ],
+            "outputs": [
+              "hlædan"
+            ]
+          },
+          {
+            "row_id": "2266",
+            "concept": "wade",
+            "proto": "*wádaną",
+            "proto_norm": "wádaną",
+            "fst_input": "wádaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wadan",
+            "baseline": [
+              "wadan"
+            ],
+            "outputs": [
+              "wædan"
+            ]
+          },
+          {
+            "row_id": "2268",
+            "concept": "wake",
+            "proto": "*wákaną",
+            "proto_norm": "wákaną",
+            "fst_input": "wákaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wacan",
+            "baseline": [
+              "wacan"
+            ],
+            "outputs": [
+              "wæcan"
+            ]
+          },
+          {
+            "row_id": "2272",
+            "concept": "wash",
+            "proto": "*wáskaną",
+            "proto_norm": "wáskaną",
+            "fst_input": "wáskaną",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "wascan",
+            "baseline": [
+              "wascan"
+            ],
+            "outputs": [
+              "wæsċan"
+            ]
+          }
+        ]
+      },
+      "early_coda_i_onset_restore": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "early_direct_coda": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      }
+    },
+    "resolution": {
+      "identity": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "pre_gemination_nuclearization": {
+        "matches": 381,
+        "changed": 6,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": [
+          {
+            "row_id": "1988",
+            "concept": "deer",
+            "proto": "*déuzą",
+            "proto_norm": "déuzą",
+            "fst_input": "déuzą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dēor",
+            "baseline": [
+              "dēor"
+            ],
+            "outputs": [
+              "dēo"
+            ]
+          },
+          {
+            "row_id": "1992",
+            "concept": "door",
+            "proto": "*dúrą",
+            "proto_norm": "dúrą",
+            "fst_input": "dúrą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "dor",
+            "baseline": [
+              "dor"
+            ],
+            "outputs": [
+              "dōr"
+            ]
+          },
+          {
+            "row_id": "2061",
+            "concept": "hay",
+            "proto": "*xáwją",
+            "proto_norm": "xáwją",
+            "fst_input": "xáwją",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hīeġ",
+            "baseline": [
+              "hīeġ"
+            ],
+            "outputs": [
+              "hēa"
+            ]
+          },
+          {
+            "row_id": "2138",
+            "concept": "net",
+            "proto": "*nátją",
+            "proto_norm": "nátją",
+            "fst_input": "nátją",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "nett",
+            "baseline": [
+              "nett"
+            ],
+            "outputs": [
+              "nete"
+            ]
+          },
+          {
+            "row_id": "2224",
+            "concept": "straw",
+            "proto": "*stráwą",
+            "proto_norm": "stráwą",
+            "fst_input": "stráwą",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "strēaw",
+            "baseline": [
+              "strēa"
+            ],
+            "outputs": [
+              "stræw"
+            ]
+          },
+          {
+            "row_id": "2332",
+            "concept": "hue",
+            "proto": "*xíwją",
+            "proto_norm": "xíwją",
+            "fst_input": "xíwją",
+            "word_stress": "stressed",
+            "phonological_finality": "final",
+            "counterpart": "hīew",
+            "baseline": [
+              "hīew"
+            ],
+            "outputs": [
+              "hii"
+            ]
+          }
+        ]
+      },
+      "early_coda_i_onset_restore": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      },
+      "early_direct_coda": {
+        "matches": 386,
+        "changed": 0,
+        "rejected": 0,
+        "ambiguous": 0,
+        "deltas": []
+      }
+    }
+  },
+  "cost": {
+    "controlled": {
+      "networks": 299,
+      "compiler": [
+        {
+          "script": "common-definitions.foma",
+          "seconds": 304.9314603060484,
+          "peak_rss_kib": 2243696,
+          "returncode": 0
+        },
+        {
+          "script": "experiment.foma",
+          "seconds": 5.568566543981433,
+          "peak_rss_kib": 1148108,
+          "returncode": 0
+        }
+      ],
+      "variants": 4,
+      "seconds": 311.72826435090974
+    },
+    "staged": {
+      "networks": 1101,
+      "compiler": [
+        {
+          "script": "common-definitions.foma",
+          "seconds": 295.9914535530843,
+          "peak_rss_kib": 2243788,
+          "returncode": 0
+        },
+        {
+          "script": "experiment.foma",
+          "seconds": 9.073259879369289,
+          "peak_rss_kib": 1150212,
+          "returncode": 0
+        }
+      ],
+      "variants": 14,
+      "seconds": 307.05978418234736
+    },
+    "resolution": {
+      "networks": 221,
+      "compiler": [
+        {
+          "script": "common-definitions.foma",
+          "seconds": 301.21514747012407,
+          "peak_rss_kib": 2245812,
+          "returncode": 0
+        },
+        {
+          "script": "experiment.foma",
+          "seconds": 3.8046118770726025,
+          "peak_rss_kib": 1146840,
+          "returncode": 0
+        }
+      ],
+      "variants": 4,
+      "seconds": 305.8514112220146
+    }
+  }
+}

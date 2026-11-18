@@ -54,3 +54,21 @@ The wider early-coda candidate and direct blocking with strict WS triggers
 both preserve394 selected outputs; source paradigm and glide limits
 remain explicit. Earlier161/89 censuses,87 expectations and local
 experimental prose are dated historical evidence, not current censuses.
+
+## Corrected-control follow-up after SC059 adoption
+
+The preceding update describes its experiment-time implementation.
+SC059's separately composed WS clauses are now adopted at d83324ce;
+the old delayed-nasalization steal/weave effects are absent.
+The first new controlled comparison preserves all40 lowering firings
+when SC017 is moved alone, and recovers all twelve changed root vowels
+when it precedes pre-gemination SC047. Deer, door length and straw
+remain separate endpoint differences. After ordinary final-z loss,
+door still lengthens to dōr; after rhotacism or SC041 all394 outputs
+are preserved. This sampled comparison is not a new first-break sweep.
+The early glide candidate reaches source rīkī and rīċe but leaves
+searu unresolved and changes hay/net/hue in addition to those three
+dependencies. SC047 remains a late executable fragment of historically
+early, weight-independent loss. See sc047-adjudication.md and
+sc047-sc048-followup-evidence/README.md; original cards/tables are
+preserved measurements, not current historical bounds.

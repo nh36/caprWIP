@@ -334,7 +334,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC047-oe-heavy-syllable-nasal-apocope.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Early weight-independent low-vowel loss, shared with SC041; late nasal fragment retained. SC047/048 reversal is one technical exposure dependency, not two historical dates."
+      "short_summary": "Early weight-independent low-vowel loss, shared with SC041; late nasal fragment retained. Corrected-control SC017 movement recovers all40 firings and12 changed root vowels; deer, door length and SC111 straw remain independent dependencies."
     },
     {
       "change_id": "SC048",
@@ -344,7 +344,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC048-oe-secondary-nasalization.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Historical coda domain precedes relevant fronting; selected final-n proxy retained. SC046 trigger quality and SC059 parallel-context leakage are model-local, not independent dates."
+      "short_summary": "Historical coda conditioning precedes fronting; final-n proxy retained. Corrected SC059 removes old steal/weave artifacts. Wider nasalization needs separate i-consumer/restoration handling; direct blocking remains a selected-endpoint alternative."
     },
     {
       "change_id": "SC049",

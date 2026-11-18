@@ -7,7 +7,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 ## Summary
 
 - Sections checked: 108.
-- Sections with absent cues or notation observations: 72.
+- Sections with absent cues or notation observations: 71.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -65,8 +65,8 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | yes | no | yes | yes | yes | no | no | missing expected-form wording |
 | 045-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | yes | yes | yes | yes | yes | no | no | — |
 | 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | yes | no | yes | yes | no | yes | no | — |
-| 047-heavy-syllable-nasal-apocope.md | SC047. Final short nasal low-vowel apocope (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | yes | no | no | yes | yes | no | no | missing explicit wrong-output/result wording; missing expected-form wording |
-| 048-secondary-nasalization.md | SC048. Unstressed nasalization before final n (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | no | no | yes | yes | yes | no | no | missing move-condition wording; missing expected-form wording |
+| 047-heavy-syllable-nasal-apocope.md | SC047. Final short nasal low-vowel apocope (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | yes | no | no | yes | yes | yes | no | — |
+| 048-secondary-nasalization.md | SC048. Unstressed nasalization before final n (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | yes | no | no | yes | yes | yes | no | — |
 | 052-velar-palatalization.md | SC052. Singleton-fricative articulation (`OEGFricativePalatal`) {#rule-OEGFricativePalatal} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
