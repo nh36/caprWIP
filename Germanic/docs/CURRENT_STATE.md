@@ -5,6 +5,13 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The [joint rainbow correction](sound_changes/audits/sc059-adjudication.md)
+adopts the stressed-target domains of restoration and back mutation together,
+preserving secondary low/front annotation through ordinary nonhigh syncope.
+The SC046 source-critical alternatives and wider secondary-stress limitations
+remain explicit in the memoranda. This closeout ends with publication on
+`update`; no next sound change is authorized.
+
 The [integrated mære and Flask production state](sound_changes/audits/maere-flask-integration.md)
 combines the source-backed final-nasal merger with the user-authorized
 [Flask nominative-plural adoption](sound_changes/audits/sc069-adjudication.md).

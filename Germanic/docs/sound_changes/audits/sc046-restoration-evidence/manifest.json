@@ -1,0 +1,11 @@
+{
+  "scientific_reference": "aea30b033f911d7417f8e38f87b02c9b35cbcda9",
+  "source_sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b",
+  "members": {
+    "initial-observed.json": "617ff7ec9d6cbecaa75f8ce23e93da55759d8491ddeaebe60d0d70b5b0becfc9",
+    "followup-observed.json": "c2e7ef03db0cc3ac052be3f6962f3601dc212dd9baa51f5ef49e49a0587a44f1",
+    "initial-worker.py": "83f14c7c00de9462377e55c6ffd68ab9a07e34e97de6f5f749644c5bc1e3651d",
+    "followup-worker.py": "f150a181853ff8c4a24c04a86f8c825acff8200091b2a442d8640bebdb90adb7",
+    "provenance.json": "c4de8cb4ca6e090262e734f93128d48063cc425d42415fb7af67750a4e6e3b3f"
+  }
+}

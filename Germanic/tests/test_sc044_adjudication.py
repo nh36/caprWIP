@@ -36,6 +36,8 @@ def source_pair():
 
 def before_sc044_adoption(current):
     """Verify the exact new promotion, then preserve all older historical guards."""
+    from test_rainbow_stress_domains import before_joint_adoption
+    current = before_joint_adoption(current)
     control, adopted = source_pair()
     retired = {"EnglishBreakingXContextNonWeakA", "EnglishBreakingXContextWeakTail"}
     assert current.keys() == adopted.keys() - retired

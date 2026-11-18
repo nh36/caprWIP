@@ -5372,8 +5372,7 @@ Proto input: _\*régnabùgô_
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{OE Strip Secondary Stress} & \emph{*régnabogô} \\
 \mbox{EAF Brightening Unstressed} & \emph{*régnæbogô} \\
-\mbox{OE A Restoration} & \emph{*régnabogô} \\
-\mbox{OE Velar Palatalization} & \emph{*réʝnabogô} \\
+\mbox{OE Velar Palatalization} & \emph{*réʝnæbogô} \\
 \mbox{OE Non High Syn} & \emph{*réʝnbogô} \\
 OE Unstressed Long Vowel Shortening & \emph{*réʝnboga} \\
 \mbox{OE Palatal Fricative Merger} & \emph{*réjnboga} \\
@@ -5458,7 +5457,7 @@ The first velar undergoes palatalization, the final long weak vowel
 shortens, and the palatal consonant is represented in the selected spelling
 [*reġnboga*]{.iv lang=oe sort=regnboga role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:87:1"}. The second velar remains before a back vowel.
 Thus the adopted chain is
-\emph{*régna-bùgô > *régna-bògô > *régnabogô > *réʝnabogô
+\emph{*régna-bùgô > *régna-bògô > *régnabogô > *régnæbogô > *réʝnæbogô
 > *réʝnbogô > *réʝnboga > *réjnboga}, then *reġnboga*.
 The intermediate accented and palatal symbols are analytical
 representations, not alternative manuscript spellings.
@@ -5514,6 +5513,59 @@ second-root \emph{o}. The quotations do not justify attaching an exact
 manuscript date or a narrower dialect label to every normalized spelling.
 The selected regular span is retained without claiming to model every
 attested orthographic or inflectional variant.
+
+#### The unstressed linker and the joint stress-domain test
+
+The inherited analysis does not require the intervening linker to remain
+back. Nonhigh medial syncope affects unstressed vowels, and Hogg explicitly
+includes thematic first-member \emph{a} in compounds
+[@HoggGrammar2011, pp. 220--222, §§6.14--6.18]. Purnell, Raimy and Salmons
+describe restoration and back mutation as operations on stressed targets
+[@PurnellRaimySalmons2019, pp. e461--e463]. Under both restrictions the
+working history is therefore
+\emph{*régna-bùgô > *régna-bògô > *régnæbogô > *réʝnæbogô
+> *réʝnbogô > *reġnboga}: early lowering concerns the second root's
+stressed vowel and its own ending; later syncope concerns the different,
+unstressed first-member vowel.
+
+The earlier implementation instead retracted that linker to \emph{a}
+before deleting it. Restricting restoration alone exposed it to back
+mutation, producing \emph{ea}, which escapes monophthong syncope and gives
+predicted \emph{*reġneafoga}. Restricting back mutation alone leaves the
+current path intact; restricting both preserves short \emph{æ} until
+syncope and again gives *reġnboga*. The two joint restrictions change
+none of the 394 selected endpoints. The unstressed linker of *eorþcunde*
+'earthly' likewise disappears, while independent *boga* keeps its early
+lowered vowel.
+
+This supports the conditional inherited derivation, not an unrestricted
+implementation claim. In the former implementation, annotation decoding
+erased some secondary prominence before these rules. Preserving it through the
+two operations and syncope repairs the local distinction, but constructed
+subordinate-root controls expose further late weak-vowel processing.
+The adopted joint correction preserves those annotations through syncope.
+The later constructed-control limitation remains disclosed; adoption does
+not claim a complete account of every secondary-stress development.
+
+#### What the English witnesses can date
+
+Crawford's edition has *renbogan* in Genesis 9:13, independent *boga* in
+9:14, and nominative *renboga* in 9:16 [@Crawford1922, p. 107].
+These coexistence and inflectional facts confirm the bow constituent
+without preserving the prehistoric linker. Čermák's distinction between
+secondary-stress modification, unaccented-vowel loss and cluster
+simplification supplies a useful analytical separation, not a formation
+date for this compound [@Cermak2005, pp. 35--45].
+
+Orel's inherited compound remains the working reconstruction. It
+permits regular syncope, without positive evidence requiring replacement
+from the simplex. But formation later from the already developed rain
+and bow words is not the same claim as analogical replacement. The
+English spellings and the sources checked here do not choose between
+inherited syncope and later composition. No independently attested linker
+or independently established date of formation has been found; the
+regular inherited route is viable, not demonstrably earlier than its
+compositional alternative.
 
 ### sheep — OE _sċēap_
 
@@ -8764,7 +8816,6 @@ PWGmc Surviving Bimoric O Unrounding & \emph{*érθakùndā} \\
 \mbox{EAF Brightening Unstressed} & \emph{*érθækùndā} \\
 \mbox{EAF Brightening Long Final} & \emph{*érθækùndǣ} \\
 \mbox{OE Breaking} & \emph{*éorθækùndǣ} \\
-\mbox{OE A Restoration} & \emph{*éorθakùndǣ} \\
 \mbox{OE Non High Syn} & \emph{*éorθkùndǣ} \\
 \mbox{OE High Stress Decode} & \emph{*éorθkundǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*éorθkundæ} \\
@@ -8963,11 +9014,19 @@ Metrical prominence is not automatically attested speech stress
 
 The supported chain is
 \emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθakundǭ >
-*éorθakundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
+*éorθækundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
 followed by *eorþcunde*. Dental hardening, linking-vowel deletion,
 breaking and existing final shortening and merger account for the
 changes other than medial protection. The selected bimoric nasal
 ending is already within the input notation.
+
+The unstressed linker remains short \emph{æ} under the jointly restricted
+[SC046 OEARestoration](#rule-OEARestoration) and
+[SC059 OEBackMutation](#rule-OEBackMutation), then deletes by ordinary
+nonhigh syncope. This changes its intermediate quality, not the selected
+cell, medial-root protection or endpoint
+[@PurnellRaimySalmons2019, pp. e461--e463;
+@HoggGrammar2011, pp. 220--222, §§6.14--6.18].
 
 SC038 OEStripSecondaryStress removes the earlier compound annotation
 at its inherited position; ordinary nonhigh medial loss later belongs to
@@ -12090,7 +12149,7 @@ Proto input: _\*θūsèndi_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Breaking} & \emph{*θūsend} \\
+\mbox{OE Non High Syn} & \emph{*θūsend} \\
 \end{tabularx}
 \end{minipage}
 \\

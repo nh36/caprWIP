@@ -1,0 +1,21 @@
+--- a/Germanic/fsts/germanic.txt
++++ b/Germanic/fsts/germanic.txt
+@@ -2397,11 +2397,15 @@
+ # NOTE: In foma replacement rules, parentheses around the context make it OPTIONAL.
+ # Use `_ A` for required context, `_ (A)` for optional context.
+ # The context here MUST be required, not optional.
+-define OEARestoration FootCtx((
+-    {*æ} -> {*a} || _
++define OEARestoration [FootCtx((
++    {*æ} -> {*a} || .#. OEAnyConsonant* _
+         OEARestorationIntervening OEARestorationTriggerVowel
+         - OEARestorationIntervening OEARestorationWeakTailVowel
+-));
++))] .o. [FootCtx((
++    {*ǽ} -> {*à} || _
++        OEARestorationIntervening OEARestorationTriggerVowel
++        - OEARestorationIntervening OEARestorationWeakTailVowel
++))];
+ 
+ # NOTE (2026-02-06): EnglishLiquidLowering DELETED. Investigation showed no
+ # evidence in literature for "lowering *ō before liquids". The real change is

@@ -71,8 +71,8 @@ kept separate. The rules
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) now distinguish
 ordinary heavy/open high-vowel loss from later light pre-\emph{*l}
 loss. *Weorold* 'world' retains its established selected history.
-*Eorþcunde* 'earthly' and *reġnboga* 'rainbow' now lose the linking
-\emph{*a} here rather than through the former early proxy.
+*Eorþcunde* 'earthly' and *reġnboga* 'rainbow' now lose their short
+fronted linker \emph{æ} here rather than through the former early proxy.
 
 ## Compound formation and comparative linking-vowel evidence
 
@@ -157,7 +157,7 @@ premise. Complete selected weight controls and independently reconstructed
 later-stage controls now test the high-vowel core described under
 [SC065 OEMedialSyncope](#rule-OEMedialSyncope); they do not supply a
 complete inherited-compound discriminator for the former early rule. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
-remain genuine selected *a*-deletion witnesses, not evidence for the
+remain genuine selected nonhigh-vowel deletion witnesses, not evidence for the
 new high-vowel restriction. The source-proposed *ūtumist* history supplies a
 distinct transmitted-mutation and weak-vowel-loss control; its final root
 alone does not independently order mutation against loss of *u*
@@ -194,11 +194,21 @@ The earlier proxy's apparent dependency on grave removal did not date a universa
 ## SC114. Ordinary nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn}
 
 ```foma
-define OENonHighSyn FootCtx([
+define OENonHighSyn [FootCtx([
     [{*a}|{*æ}|{*e}] -> 0 ||
         .#. OEAnyConsonant* EnglishStarVocalic
         [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
         _ OEAnyConsonant EnglishStarVocalic
         [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.
-]);
+])] .o. OESecondaryFrontDecode;
+```
+
+Surviving secondary low/front labels are decoded only after this deletion,
+so a marked subordinate-root vowel is not mistaken for an unstressed
+medial vowel. This is notation management, not a new historical destressing
+law. Later weak-vowel processing remains a limitation of constructed
+subordinate-root controls.
+
+```foma
+define OESecondaryFrontDecode Ctx([{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);
 ```

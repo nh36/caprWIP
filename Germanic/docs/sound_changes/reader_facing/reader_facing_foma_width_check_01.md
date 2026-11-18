@@ -4,8 +4,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 ## Summary
 
-- Foma blocks checked: 118.
-- Blocks over the conservative 90-character threshold: 16.
+- Foma blocks checked: 119.
+- Blocks over the conservative 90-character threshold: 17.
 - Width-safe rendering protocol: `ReaderFacingFoma` uses `fvextra`/`Verbatim` with `breaklines=true`, `breakanywhere=true`, and `fontsize=\small` in the Docker XeLaTeX build.
 
 | File | Rule section | Start line | Longest line | Over threshold under old rendering |
@@ -52,18 +52,18 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 68 | 54 | no |
 | 043-anglo-frisian-brightening.md | SC043. Fronting of low \emph{*a} outside nasal environments (`EAFBrightening`) {#rule-EAFBrightening} | 80 | 78 | no |
 | 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 34 | 37 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 46 | 84 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 60 | 86 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 76 | 53 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 107 | 84 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 131 | 84 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 154 | 44 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 158 | 84 | no |
-| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 189 | 68 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 44 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 58 | 86 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 75 | 53 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 106 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 130 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 153 | 44 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 157 | 84 | no |
+| 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 188 | 68 | no |
 | 045-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | 5 | 44 | no |
-| 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 11 | 63 | no |
+| 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 15 | 63 | no |
 | 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 19 | 40 | no |
-| 048-secondary-nasalization.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 5 | 36 | no |
+| 048-secondary-nasalization.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 5 | 37 | no |
 | 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 40 | 38 | no |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | 18 | 72 | no |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | 35 | 77 | no |
@@ -74,13 +74,13 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 053-post-velar-w-loss.md | SC053. Loss of \emph{*w} after velars (`OEPostVelarWLoss`) {#rule-OEPostVelarWLoss} | 5 | 29 | no |
 | 054-w-loss-before-final-i.md | SC054. Noninitial \emph{*w}-loss before unstressed \emph{*i/ī} (`OEWLossBeforeI`) {#rule-OEWLossBeforeI} | 5 | 71 | no |
 | 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 5 | 67 | no |
-| 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 50 | 92 | yes |
-| 055-i-umlaut.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | 63 | 69 | no |
-| 055-i-umlaut.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | 86 | 72 | no |
-| 055-i-umlaut.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 138 | 42 | no |
+| 055-i-umlaut.md | SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting} | 52 | 92 | yes |
+| 055-i-umlaut.md | SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising} | 65 | 69 | no |
+| 055-i-umlaut.md | SC055. Diphthongal outcomes under i-umlaut (`OEIUmlautDiphthong`) {#rule-OEIUmlautDiphthong} | 90 | 72 | no |
+| 055-i-umlaut.md | SC055. The composite i-umlaut rule (`OEIUmlaut`) {#rule-OEIUmlaut} | 142 | 42 | no |
 | 056-west-saxon-palatal-diphthongization.md | SC056. West Saxon palatal diphthongization (`OEWsPalatalDiphthongization`) {#rule-OEWsPalatalDiphthongization} | 5 | 117 | yes |
 | 057-j-cluster-coalescence.md | SC057. Coalescence of velar + \emph{*j} clusters (`OEJClusterCoalescence`) {#rule-OEJClusterCoalescence} | 16 | 79 | no |
-| 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | 22 | 90 | no |
+| 059-oe-back-mutation.md | SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation} | 22 | 109 | yes |
 | 060-ws-palatal-umlaut-note.md | SC060. West Saxon palatal umlaut before \emph{*h}-clusters (`OEWsPalatalUmlaut`) {#rule-OEWsPalatalUmlaut} | 14 | 61 | no |
 | 061-weak-tail-nasal-loss-note.md | SC061. Reduction of final nasal weak-tail endings (`OEWeakTailNasalLoss`) {#rule-OEWeakTailNasalLoss} | 14 | 32 | no |
 | 063-high-vowel-apocope.md | SC063. Quantitative deletion of short unstressed high vowels (`OEHighVowelApocope`) {#rule-OEHighVowelApocope} | 82 | 78 | no |
@@ -125,6 +125,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 111-endingless-aw-fragment.md | SC111. Endingless \emph{aw} fragment (`PWGmcEndinglessAw`) {#rule-PWGmcEndinglessAw} | 26 | 38 | no |
 | 112-monosyllabic-final-r-lengthening.md | SC112. Stressed monosyllabic lengthening before inherited final \emph{r} (`PNWGmcMonosyllabicFinalRLengthening`) {#rule-PNWGmcMonosyllabicFinalRLengthening} | 11 | 47 | no |
 | 114-early-nonhigh-syncope.md | SC114. Ordinary nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn} | 196 | 61 | no |
+| 114-early-nonhigh-syncope.md | SC114. Ordinary nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn} | 212 | 78 | no |
 | 115-post-umlaut-high-syncope.md | SC115. Early weak-front-vowel unrounding component (`OEHighLinkSyncope`) {#rule-OEHighLinkSyncope} | 17 | 56 | no |
 | 116-secondary-high-marker-decoding.md | SC116. Technical secondary high-marker decoding (`OEHighStressDecode`) {#rule-OEHighStressDecode} | 9 | 74 | no |
 | 117-medial-long-vowel-shortening.md | SC117. Medial component of SC072 unstressed shortening (`OEMedLongShort`) {#rule-OEMedLongShort} | 5 | 99 | yes |
@@ -145,7 +146,7 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 
 - `101` chars — `    [{*ō}|{*ǭ}] -> {*ā} || EnglishStarVocalic [EnglishStarConsonant | EnglishPalatalConsonant]+ _ .#.`
 
-### 055-i-umlaut.md:50 — SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
+### 055-i-umlaut.md:52 — SC055. Fronting under i-umlaut (`OEIUmlautFronting`) {#rule-OEIUmlautFronting}
 
 - `92` chars — `define EnglishIUmlautThroughU [EnglishIUmlautIntervening [{*u} EnglishIUmlautIntervening]*];`
 
@@ -157,6 +158,10 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 - `117` chars — `    {*ē} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],`
 - `117` chars — `    {*é} -> {*íe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.],`
 - `116` chars — `    {*ḗ} -> {*īe} || .#. [{*ʧ} | {*ʤ} | {*ʝ} | {*ʃ} | {*j}] _ [EnglishStarConsonant | EnglishPalatalConsonant | .#.]`
+
+### 059-oe-back-mutation.md:22 — SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
+
+- `109` chars — `    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger`
 
 ### 068-preconsonantal-degemination.md:5 — SC068. Preconsonantal degemination before sonorants (`OEPreconsonantalDegemination`) {#rule-OEPreconsonantalDegemination}
 

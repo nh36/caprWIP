@@ -1,5 +1,31 @@
 # SC042-SC048 Post-brightening Region
 
+## SC046 source-critical update, 17 November 2026
+
+The [SC046 adjudication](../audits/sc046-adjudication.md) supersedes only
+the unqualified SC046 historical generalizations in the older discussion
+below. Brightening feeding restoration and restoration's local nasal
+boundary are dependencies of the adopted inputs and operation sequence,
+not independent proof against blocked fronting. Holding SC047 exposure
+fixed is essential to isolate the latter root-vowel comparison.
+Dresher's Mercian restoration-loss account, the exact glossary witnesses,
+consonant-class limits and conditional Northumbrian evidence are assessed
+in the new memorandum and linked source cards.
+
+At the original research checkpoint, executable adoption was deferred:
+the stressed-target candidate exposes
+rainbow's back-mutation/syncope interaction, while removing geminate
+restoration trades lap for tap and contradicts independent positives.
+No production rule, cell or protected baseline changes. The dated
+measurements below remain intact, and the SC044 decision is not reopened.
+
+The subsequent user-authorized joint correction adopts stressed targets
+for SC046 and SC059 with secondary annotations preserved through SC114.
+Rainbow's linker remains short ae through both rules and deletes there;
+the constructed secondary-root weak-vowel limitation remains disclosed.
+The earlier experiments below are historical, not rerun under this source.
+No geminate ban, lexical cell, chronology edge or protected baseline changes.
+
 ## SC044 source-critical update, 15 November 2026
 
 The [SC044 adjudication](../audits/sc044-adjudication.md), at integrated

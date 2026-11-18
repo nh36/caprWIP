@@ -24245,23 +24245,23 @@ EAFBrightening [no-change]: *r*é*g*n*æ*b*o*g*ô
 EAFBrighteningLongFinal [no-change]: *r*é*g*n*æ*b*o*g*ô
 OEBreaking [no-change]: *r*é*g*n*æ*b*o*g*ô
 OEVelarFricativePalatalization [no-change]: *r*é*g*n*æ*b*o*g*ô
-OEARestoration: *r*é*g*n*a*b*o*g*ô
-OEHeavySyllableNasalApocope [no-change]: *r*é*g*n*a*b*o*g*ô
-OESecondaryNasalization [no-change]: *r*é*g*n*a*b*o*g*ô
-SieversLawSyncope [no-change]: *r*é*g*n*a*b*o*g*ô
-OESkPalatalization [no-change]: *r*é*g*n*a*b*o*g*ô
-OEVelarPalatalization: *r*é*ʝ*n*a*b*o*g*ô
-OEPrefixAReduction [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEPostVelarWLoss [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEWsPalatalDiphthongization [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEIUmlaut [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEWLossBeforeI [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OELatePalatalDiphthong [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEJClusterCoalescence [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEBackMutation [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEWsPalatalUmlaut [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEWeakTailNasalLoss [no-change]: *r*é*ʝ*n*a*b*o*g*ô
-OEWeightMarkers [no-change]: *r*é*ʝ*n*a*b*o*g*ô
+OEARestoration [no-change]: *r*é*g*n*æ*b*o*g*ô
+OEHeavySyllableNasalApocope [no-change]: *r*é*g*n*æ*b*o*g*ô
+OESecondaryNasalization [no-change]: *r*é*g*n*æ*b*o*g*ô
+SieversLawSyncope [no-change]: *r*é*g*n*æ*b*o*g*ô
+OESkPalatalization [no-change]: *r*é*g*n*æ*b*o*g*ô
+OEVelarPalatalization: *r*é*ʝ*n*æ*b*o*g*ô
+OEPrefixAReduction [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEPostVelarWLoss [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEWsPalatalDiphthongization [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEIUmlaut [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEWLossBeforeI [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OELatePalatalDiphthong [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEJClusterCoalescence [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEBackMutation [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEWsPalatalUmlaut [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEWeakTailNasalLoss [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
+OEWeightMarkers [no-change]: *r*é*ʝ*n*æ*b*o*g*ô
 OENonHighSyn: *r*é*ʝ*n*b*o*g*ô
 PGmcBAllophony [no-change]: *r*é*ʝ*n*b*o*g*ô
 OEMedLongShort [no-change]: *r*é*ʝ*n*b*o*g*ô
@@ -46009,26 +46009,26 @@ PWGmcSurvivingBimoricOUnrounding [no-change]: *θ*ū*s*è*n*d
 EAFBrighteningUnstressed [no-change]: *θ*ū*s*è*n*d
 EAFBrightening [no-change]: *θ*ū*s*è*n*d
 EAFBrighteningLongFinal [no-change]: *θ*ū*s*è*n*d
-OEBreaking: *θ*ū*s*e*n*d
-OEVelarFricativePalatalization [no-change]: *θ*ū*s*e*n*d
-OEARestoration [no-change]: *θ*ū*s*e*n*d
-OEHeavySyllableNasalApocope [no-change]: *θ*ū*s*e*n*d
-OESecondaryNasalization [no-change]: *θ*ū*s*e*n*d
-SieversLawSyncope [no-change]: *θ*ū*s*e*n*d
-OESkPalatalization [no-change]: *θ*ū*s*e*n*d
-OEVelarPalatalization [no-change]: *θ*ū*s*e*n*d
-OEPrefixAReduction [no-change]: *θ*ū*s*e*n*d
-OEPostVelarWLoss [no-change]: *θ*ū*s*e*n*d
-OEWsPalatalDiphthongization [no-change]: *θ*ū*s*e*n*d
-OEIUmlaut [no-change]: *θ*ū*s*e*n*d
-OEWLossBeforeI [no-change]: *θ*ū*s*e*n*d
-OELatePalatalDiphthong [no-change]: *θ*ū*s*e*n*d
-OEJClusterCoalescence [no-change]: *θ*ū*s*e*n*d
-OEBackMutation [no-change]: *θ*ū*s*e*n*d
-OEWsPalatalUmlaut [no-change]: *θ*ū*s*e*n*d
-OEWeakTailNasalLoss [no-change]: *θ*ū*s*e*n*d
-OEWeightMarkers [no-change]: *θ*ū*s*e*n*d
-OENonHighSyn [no-change]: *θ*ū*s*e*n*d
+OEBreaking [no-change]: *θ*ū*s*è*n*d
+OEVelarFricativePalatalization [no-change]: *θ*ū*s*è*n*d
+OEARestoration [no-change]: *θ*ū*s*è*n*d
+OEHeavySyllableNasalApocope [no-change]: *θ*ū*s*è*n*d
+OESecondaryNasalization [no-change]: *θ*ū*s*è*n*d
+SieversLawSyncope [no-change]: *θ*ū*s*è*n*d
+OESkPalatalization [no-change]: *θ*ū*s*è*n*d
+OEVelarPalatalization [no-change]: *θ*ū*s*è*n*d
+OEPrefixAReduction [no-change]: *θ*ū*s*è*n*d
+OEPostVelarWLoss [no-change]: *θ*ū*s*è*n*d
+OEWsPalatalDiphthongization [no-change]: *θ*ū*s*è*n*d
+OEIUmlaut [no-change]: *θ*ū*s*è*n*d
+OEWLossBeforeI [no-change]: *θ*ū*s*è*n*d
+OELatePalatalDiphthong [no-change]: *θ*ū*s*è*n*d
+OEJClusterCoalescence [no-change]: *θ*ū*s*è*n*d
+OEBackMutation [no-change]: *θ*ū*s*è*n*d
+OEWsPalatalUmlaut [no-change]: *θ*ū*s*è*n*d
+OEWeakTailNasalLoss [no-change]: *θ*ū*s*è*n*d
+OEWeightMarkers [no-change]: *θ*ū*s*è*n*d
+OENonHighSyn: *θ*ū*s*e*n*d
 PGmcBAllophony [no-change]: *θ*ū*s*e*n*d
 OEMedLongShort [no-change]: *θ*ū*s*e*n*d
 OEHighVowelApocope [no-change]: *θ*ū*s*e*n*d
@@ -51009,23 +51009,23 @@ EAFBrightening [no-change]: *é*r*θ*æ*k*ù*n*d*ā
 EAFBrighteningLongFinal: *é*r*θ*æ*k*ù*n*d*ǣ
 OEBreaking: *éo*r*θ*æ*k*ù*n*d*ǣ
 OEVelarFricativePalatalization [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
-OEARestoration: *éo*r*θ*a*k*ù*n*d*ǣ
-OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OESecondaryNasalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-SieversLawSyncope [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OESkPalatalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEVelarPalatalization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEPrefixAReduction [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEPostVelarWLoss [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEWsPalatalDiphthongization [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEIUmlaut [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEWLossBeforeI [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OELatePalatalDiphthong [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEJClusterCoalescence [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEBackMutation [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEWsPalatalUmlaut [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEWeakTailNasalLoss [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
-OEWeightMarkers [no-change]: *éo*r*θ*a*k*ù*n*d*ǣ
+OEARestoration [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEHeavySyllableNasalApocope [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OESecondaryNasalization [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+SieversLawSyncope [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OESkPalatalization [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEVelarPalatalization [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEPrefixAReduction [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEPostVelarWLoss [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEWsPalatalDiphthongization [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEIUmlaut [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEWLossBeforeI [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OELatePalatalDiphthong [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEJClusterCoalescence [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEBackMutation [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEWsPalatalUmlaut [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEWeakTailNasalLoss [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
+OEWeightMarkers [no-change]: *éo*r*θ*æ*k*ù*n*d*ǣ
 OENonHighSyn: *éo*r*θ*k*ù*n*d*ǣ
 PGmcBAllophony [no-change]: *éo*r*θ*k*ù*n*d*ǣ
 OEMedLongShort [no-change]: *éo*r*θ*k*ù*n*d*ǣ

@@ -66,3 +66,44 @@ selected/protected populations are preserved in the adoption receipts.
 Those receipts concern the earlier SC017 adoption. Consolidation's
 new intermediate stages and unchanged final reġnboga are measured
 separately in the SC065 memorandum; earlier receipts are not rewritten.
+
+## Stress-domain follow-up
+
+Research base `4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38`.
+See `../../sound_changes/audits/sc059-adjudication.md` and the separate
+`rainbow-stress-evidence/` records; the earlier adoption receipts above
+are not overwritten or treated as certificates for this proposal.
+
+- PurnellRaimySalmons2019 e461–e463, image-checked e462, explicitly
+  states stressed targets for restoration and back mutation. Hogg
+  pp220–222 §§6.14–18 supplies unstressed nonhigh syncope and first-member
+  thematic-a loss.
+- Hogg p157 §5.106(2), n6, image checked at PDF170: West Saxon *ealu*
+  < `*ælu`, with fronting supported by the inflected paradigm. Its
+  experiment entry is after that paradigm history and before SC059,
+  not a silently invented PGmc whole-word input. Mercian second-fronting
+  positives and dental *steaðul* are not misrepresented as evidence for
+  every consonant in a West Saxon proxy.
+- Crawford p107/PDF129, edition image checked: Gen9:13 *renbogan*,
+  9:14 simplex *boga*, 9:16 nominative *renboga*. The supplied Helsinki
+  transcription agrees in these contexts. The BT Aelfric/glossary
+  evidence remains dictionary-mediated, not newly manuscript-collated.
+- Cermak2005 pp35–45 does not date rainbow. The supplied DOCX is the
+  non-`(2)` version with unauthenticated author/publication metadata and
+  partly superseded CAPR descriptions. The Lockwood claim remains
+  attributed only to the indirectly supplied OEN40(2):25 summary;
+  neither original nor404 summary PDF was directly read.
+- All four histories are observed, including full raw-input controls.
+  Joint restrictions preserve linker *æ* to SC114 and give *reġnboga*;
+  only SC046-only changes a selected endpoint, to predicted
+  `*reġneafoga`. Joint and SC059-only retain386/394, the same eight
+  mismatches, no ambiguity and no rejections.
+
+The sources support a regular inherited route conditional on early
+compound formation. They do not independently establish a prehistoric
+linker or formation date. Later composition from developed rain and bow
+remains equally compatible with the English spellings; it is not
+silently relabelled analogical replacement. The exact review diff was
+subsequently authorized and adopted jointly for SC046/SC059, including
+annotation preservation through SC114. Its remaining whole-cascade
+secondary-stress limitation is retained in the current memorandum.

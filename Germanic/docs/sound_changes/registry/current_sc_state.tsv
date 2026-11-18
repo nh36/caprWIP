@@ -63,7 +63,7 @@ SC043	EAFBrightening	historical_sound_change	Old English	Ordinary English stress
 SC108	EAFBrighteningLongFinal	support_stage	Old English	Retained final-vowel quantity component				unadjudicated		54	52
 SC044	OEBreaking	historical_sound_change	Old English	OE Breaking	oe	english_specific	A	adjudicated	REFORMULATE/RESTRICT	55	53
 SC045	OEVelarFricativePalatalization	historical_sound_change	Old English	Voiceless velar-fricative palatal articulation	oe	english_specific	A	adjudicated	RESTRICT/SPLIT	56	54
-SC046	OEARestoration	historical_sound_change	Old English	OE A Restoration	oe	english_specific	A	unadjudicated		57	55
+SC046	OEARestoration	historical_sound_change	Old English	OE A Restoration	oe	english_specific	A	adjudicated	RESTRICT	57	55
 SC047	OEHeavySyllableNasalApocope	historical_sound_change	Old English	OE Heavy Syllable Nasal Apocope	oe	english_specific	A	unadjudicated		58	56
 SC048	OESecondaryNasalization	historical_sound_change	Old English	OE Secondary Nasalization	oe	english_specific	A	unadjudicated		59	57
 SC050	SieversLawSyncope	historical_sound_change	Old English	Sievers Law Syncope	pwgmc	pan_wgmc	B	unadjudicated		60	58
@@ -76,7 +76,7 @@ SC055	OEIUmlaut	historical_sound_change	Old English	OE I Umlaut	oe	english_speci
 SC054	OEWLossBeforeI	historical_sound_change	Old English	Noninitial w-loss before unstressed i/ī	oe	english_specific	A	adjudicated	REFORMULATE/REORDER	67	65
 SC105	OELatePalatalDiphthong	support_stage	Old English	Retained late palatal approximation				unadjudicated		68	66
 SC057	OEJClusterCoalescence	historical_sound_change	Old English	OE J Cluster Coalescence	oe	english_specific	A	unadjudicated		69	67
-SC059	OEBackMutation	historical_sound_change	Old English	OE Back Mutation	oe	english_specific	A	unadjudicated		70	68
+SC059	OEBackMutation	historical_sound_change	Old English	OE Back Mutation	oe	english_specific	A	adjudicated	RESTRICT	70	68
 SC060	OEWsPalatalUmlaut	historical_sound_change	Old English	OE Ws Palatal Umlaut	ws_oe	west_saxon	A	unadjudicated		71	69
 SC061	OEWeakTailNasalLoss	historical_sound_change	Old English	OE Weak Tail Nasal Loss	oe	english_specific	A	unadjudicated		72	70
 SC062	OEWeightMarkers	technical_marker	Old English	OE Weight Markers				unadjudicated		73	71

@@ -4326,7 +4326,7 @@ English Proto Input: *régnabùgô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc U Lowering: *régnabògô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *régnabogô<br>EAF Brightening Unstressed: *régnæbogô<br>OE A Restoration: *régnabogô<br>OE Velar Palatalization: *réʝnabogô<br>OE Non High Syn: *réʝnbogô<br>OE Unstressed Long Vowel Shortening: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *régnabògô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *régnabogô<br>EAF Brightening Unstressed: *régnæbogô<br>OE Velar Palatalization: *réʝnæbogô<br>OE Non High Syn: *réʝnbogô<br>OE Unstressed Long Vowel Shortening: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
 
 
 
@@ -8220,7 +8220,7 @@ English Proto Input: *θūsèndi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *θūsènd<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *θūsend |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *θūsènd<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Non High Syn: *θūsend |
 
 
 
@@ -9171,7 +9171,7 @@ English Proto Input: *érθakùnðǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *érθakùndā<br>EAF Brightening Unstressed: *érθækùndā<br>EAF Brightening Long Final: *érθækùndǣ<br>OE Breaking: *éorθækùndǣ<br>OE A Restoration: *éorθakùndǣ<br>OE Non High Syn: *éorθkùndǣ<br>OE High Stress Decode: *éorθkundǣ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
+| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *érθakùndā<br>EAF Brightening Unstressed: *érθækùndā<br>EAF Brightening Long Final: *érθækùndǣ<br>OE Breaking: *éorθækùndǣ<br>OE Non High Syn: *éorθkùndǣ<br>OE High Stress Decode: *éorθkundǣ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
 
 
 

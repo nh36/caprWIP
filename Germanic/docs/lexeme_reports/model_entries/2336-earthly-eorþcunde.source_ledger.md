@@ -1,5 +1,13 @@
 # Source ledger: earthly / eorþcunde
 
+## Joint target-stress adoption, 17 November 2026
+
+The SC046/SC059 joint adoption preserves the unstressed linker as short
+ae until SC114, instead of restoring it to a first. The selected cell,
+source readings, medial-root protection and endpoint remain unchanged.
+The [joint memorandum](../../sound_changes/audits/sc059-adjudication.md)
+records the live checkpoint controls and wider-cascade limitation.
+
 ## Later source-access overlay
 
 The post-acquisition review based at `7a3fb4df` recovered McCully–Hogg1990

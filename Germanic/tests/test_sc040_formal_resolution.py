@@ -88,6 +88,7 @@ def test_corrected_component_and_wrapper_pass_the_unchanged_formal_gate(report):
 def test_certified_closure_applies_after_the_breaking_carrier_is_decoded():
     """The archived proof covers decoded inputs, not arbitrary carrier-bearing probes."""
     from test_sc044_adjudication import before_sc044_adoption
+    from test_rainbow_stress_domains import before_joint_adoption
     from executable_facts import parse_defines
 
     with tarfile.open(EVIDENCE / "production-closure.tar.gz") as archive:
@@ -112,7 +113,10 @@ def test_certified_closure_applies_after_the_breaking_carrier_is_decoded():
         assert compact(current[name].body) == compact(expected), name
     pipeline = current["EnglishProtoToOE"].body
     assert pipeline.index("OEBreaking") < pipeline.index("OEMedUnstressedULowering")
-    assert "{*ǽ}->{*æ}" in compact(current["OEBreaking"].body)
+    assert "{*ǽ}->{*æ}" in compact(before_joint_adoption(current)["OEBreaking"].body)
+    assert pipeline.index("OENonHighSyn") < pipeline.index("OEMedUnstressedULowering")
+    assert compact(current["OENonHighSyn"].body).endswith(".o.OESecondaryFrontDecode")
+    assert "{*ǽ}->{*æ}" in compact(current["OESecondaryFrontDecode"].body)
     closure = json.loads((EVIDENCE / "production-closure.json").read_text())
     for component in closure["components"].values():
         assert component["functional_stdout"].strip() == "1 (1 = TRUE, 0 = FALSE)"

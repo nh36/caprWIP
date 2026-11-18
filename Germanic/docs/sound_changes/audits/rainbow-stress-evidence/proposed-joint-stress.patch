@@ -1,0 +1,113 @@
+--- a/Germanic/fsts/germanic.txt
++++ b/Germanic/fsts/germanic.txt
+@@ -2176,7 +2176,7 @@
+ ];
+ define OEBreaking FootCtx(OEBreakingA
+     .o. OEBreakingE .o. OEBreakingI .o. OEBreakingLong
+-    .o. [{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);
++    );
+ 
+ # SC036: bounded LH weak rounding/raising (Luick §113; Goering §4.5.1.2).
+ # The a>u rewrite compresses phonetic stages; its placement is not a date.
+@@ -2397,11 +2397,15 @@
+ # NOTE: In foma replacement rules, parentheses around the context make it OPTIONAL.
+ # Use `_ A` for required context, `_ (A)` for optional context.
+ # The context here MUST be required, not optional.
+-define OEARestoration FootCtx((
+-    {*æ} -> {*a} || _
++define OEARestoration [FootCtx((
++    {*æ} -> {*a} || .#. OEAnyConsonant* _
+         OEARestorationIntervening OEARestorationTriggerVowel
+         - OEARestorationIntervening OEARestorationWeakTailVowel
+-));
++))] .o. [FootCtx((
++    {*ǽ} -> {*à} || _
++        OEARestorationIntervening OEARestorationTriggerVowel
++        - OEARestorationIntervening OEARestorationWeakTailVowel
++))];
+ 
+ # NOTE (2026-02-06): EnglishLiquidLowering DELETED. Investigation showed no
+ # evidence in literature for "lowering *ō before liquids". The real change is
+@@ -3003,9 +3007,11 @@
+ # Examples:
+ #   Infinitive *bakaną: *bak-a-ną → *bak-ą-ną (nasalized) → bacan
+ #   Participle *fundanăz: *fund-an-ăz → no match → *fund-æn-ăz → funden
+-define OESecondaryNasalization Ctx([
++define OESecondaryNasalization [Ctx([
+     {*a} -> {*ą} || _ {*n} .#.
+-]);
++])] .o. [Ctx([
++    {*à} -> {*ą} || _ {*n} .#.
++])];
+ 
+ define OEUnstressedAFronting [
+     # Campbell §333: unaccented *a > *æ (later *e, §369) EXCEPT before a
+@@ -3110,6 +3116,8 @@
+ 
+ define OEIUmlautFronting [
+     {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
++    {*à} -> {*ǽ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
++    {*è} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+     {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+     {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+     {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+@@ -3117,7 +3125,7 @@
+     {*ù} -> {*ỳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+     {*u} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+     {*ū} -> {*ȳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+-    # Stressed variants (stress mark absorbed into output):
++                                                           
+     {*á} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+     {*é} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+     {*ó} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+@@ -3128,9 +3136,11 @@
+ # of short *a: *a → *æ (fronting) → e (raising). Forms like OE stæf, cræft
+ # that retain æ do so because their proto-forms lacked i-umlaut triggers
+ # (e.g. *staba- a-stem, not *stabiz i-stem).
+-define OEIUmlautRaising [
++define OEIUmlautRaising [[
+     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+-];
++]] .o. [[
++    {*ǽ} -> {*è} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
++]];
+ 
+ # Campbell §201: "io: the i-umlaut of these sounds in W-S is ie"
+ # The *io rule handles breaking products; *eo rule handles breaking of *e.
+@@ -3252,11 +3262,13 @@
+ # NOTE: Use separate symbols {*e} {*o} not multichar {*eo} for proper pipeline handling.
+ # NOTE: Context must NOT be optional — [X | Y] not (X | Y).
+ 
+-define OEBackMutation Ctx([
+-    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+-    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
+-    # Stressed variant (stress preserved on first element):
+-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
++define OEBackMutation FootCtx([
++    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
++    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
++]) .o. Ctx([
++    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
++    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
++    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
+ ]);
+ 
+ # §17.51.A1: OE combinative u-umlaut on *í (the "w-effect").
+@@ -3527,13 +3539,15 @@
+ # SC114: ordinary nonhigh syncope, including thematic compound a.
+ # Hogg §§6.14-18; the singleton onset bounds medial openness.
+ # FootCtx protects the primary root; ô remains a following quantity carrier.
+-define OENonHighSyn FootCtx([
++define OESecondaryFrontDecode Ctx([{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);
++
++define OENonHighSyn [FootCtx([
+     [{*a}|{*æ}|{*e}] -> 0 ||
+         .#. OEAnyConsonant* EnglishStarVocalic
+         [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
+         _ OEAnyConsonant EnglishStarVocalic
+         [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.
+-]);
++])] .o. OESecondaryFrontDecode;
+ 
+ # SC063: quantitative HVD, following Fulk 2010 pp.129-134 and
+ # Goering 2016 pp.186-188 / 2023 pp.67-68. No post-h deletion.

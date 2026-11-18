@@ -1,0 +1,562 @@
+{
+  "initial": {
+    "snapshot": {
+      "experiment_id": "rainbow-stress-23605564",
+      "purpose": "Separate linker stress domains and test inherited syncope against controls",
+      "created_at": "2026-11-17T10:09:58Z",
+      "source_identity": {
+        "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+        "worktree_changes": {
+          "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "82fa9357bf443bcf5b8b973bb3e5a477af1a554a1e457e96051c196504b66c1d",
+          "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "bf47ae6fa5b80a4521d039439ff65f0daff0869636c5fe16958706f1222a0f6c"
+        },
+        "identity_sha256": "5d18d4e6b4273867669d8c15fec5f2362dc848beabbe89c42d6f48928ecaf150",
+        "recorded_at": "2026-11-17T10:09:59Z"
+      },
+      "inputs": {
+        "source": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/fsts/germanic.txt",
+          "snapshot_name": "source.txt",
+          "sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b"
+        },
+        "corpus": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/data/germanic-aligned-final.tsv",
+          "snapshot_name": "corpus.tsv",
+          "sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1"
+        },
+        "worker": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py",
+          "snapshot_name": "worker.py",
+          "sha256": "82fa9357bf443bcf5b8b973bb3e5a477af1a554a1e457e96051c196504b66c1d"
+        },
+        "plan": {
+          "original_path": "/Users/nathanhill/Code/capr/.capr-work/rainbow/plan.json",
+          "snapshot_name": "plan.json",
+          "sha256": "ed5ff1161989bb634c13038bf5705750f2ddc29e1244e93bf3f320cfc3264dee"
+        },
+        "assessment": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md",
+          "snapshot_name": "assessment.md",
+          "sha256": "bf47ae6fa5b80a4521d039439ff65f0daff0869636c5fe16958706f1222a0f6c"
+        },
+        "anglo_frisian_experiments": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/anglo_frisian_experiments.py",
+          "snapshot_name": "anglo_frisian_experiments.py",
+          "sha256": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa"
+        },
+        "oe_pipeline": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/oe_pipeline.py",
+          "snapshot_name": "oe_pipeline.py",
+          "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+        },
+        "capr_runtime": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/capr_runtime.py",
+          "snapshot_name": "capr_runtime.py",
+          "sha256": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec"
+        },
+        "sound_change_order_sensitivity": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/sound_change_order_sensitivity.py",
+          "snapshot_name": "sound_change_order_sensitivity.py",
+          "sha256": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c"
+        },
+        "executable_facts": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/executable_facts.py",
+          "snapshot_name": "executable_facts.py",
+          "sha256": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+        }
+      },
+      "variants": {
+        "RB46": "define RB46 [FootCtx((\n    {*æ} -> {*a} || .#. OEAnyConsonant* _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "RB59": "define RB59 FootCtx([\n    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]) .o. Ctx([\n    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]);"
+      },
+      "variant_sha256": {
+        "RB46": "1e6d35bebf1584209f4cad959c8b11c501a225a7b803e32a3633452b0cd6ddeb",
+        "RB59": "5ccf1a7e7fbc31575f68d662b8b4bafeaf76726bf63a131b1237085a23a81bff"
+      },
+      "probes": [
+        "1934",
+        "2266",
+        "1963",
+        "2068",
+        "2174",
+        "2148",
+        "2302",
+        "2336",
+        "régna-bàkô",
+        "régna-bakô",
+        "*æ*l*u",
+        "*s*t*æ*ð*u*l",
+        "*g*e*b*ǽ*b*u",
+        "*g*e*b*æ*b*u",
+        "*g*e*b*è*b*u",
+        "*g*e*b*e*b*u"
+      ],
+      "expected_outcomes": {
+        "assessment": "# Rainbow: source assessment and preregistration\n\nResearch base: `4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38`;\nbranch `research/rainbow-stress-domains`. This assessment precedes the\nnew counterfactual execution. The earlier SC046 trials remain unchanged.\n\n## Sources and limits\n\n| Source | Evidence read | What it does not establish |\n|---|---|---|\n| Orel2003 pp.61,300 | Bow n-stem and complete `*reʒna-buʒōn` compound, including linking *a* | No independent dating argument for formation before the relevant English changes |\n| Kroonen2013 pp.82,408; bend family pp.61–62 | Bow and rain constituents | Not an independent reconstruction of the complete accented compound |\n| HoggGrammar2011 pp.54–55 §§3.10–11; RingeTaylor2014 pp.27–29; Colman2011 pp.95–98 | Early stressed *u* lowering before a following nonhigh vowel; ordinary *boga* explicitly discussed by Colman | Applying this to the compound's subordinate root is an inference; late unstressed lowering is not its explanation |\n| HoggGrammar2011 pp.220–222 §§6.14–18 | Unstressed nonhigh medial-vowel syncope, including thematic *a* in compound first members (§6.15) | No rainbow-specific attestation of the prehistoric linker or date of compound formation |\n| PurnellRaimySalmons2019 pp.e461–e463, especially e462 | Restoration targets stressed low front /æ/; back mutation targets stressed front vowels, including /æ/; *steaðul* illustrates the latter | This representational discussion does not establish a uniform West Saxon consonantal domain |\n| HoggGrammar2011 pp.156–157 §5.106 | Mercian *heafuces, geabuli* follow second fronting. West Saxon *ealu* < `*ælu` is instead explained through suffix variation and i-mutation in the paradigm (n.6) | Mercian examples are not direct West Saxon positives; *steaðul* before a dental does not validate CAPR's labial/liquid proxy |\n| Čermák2005 pp.35–45 | Separates secondary-stress modification, unaccented-vowel loss and cluster simplification; warns against circular semantic dating and orthographic inference | No independently dated rainbow linker or compound formation |\n| Supplied secondary-stress memorandum, “The origin of o in -boga” | Distinguishes early stressed root lowering from weak-vowel developments | Unauthenticated research document, not a published authority; several CAPR descriptions are superseded |\n\nThe supplied file is `Secondary_Stress_in_Old_English_revised_comments.docx`,\nnot the requested `(2)` filename. Its account of grave-dependent linker\ndeletion and its older *earthly* input are not descriptions of the current\nrules. Neither author nor publication status has been authenticated.\n\nThe original Lockwood2005 article was not found in Downloads or the\naccessible journal archive. The supplied OEN40(2):25 summary reports an\nargument for Christianisation-era borrowing/calquing of Scandinavian\nrainbow terms. The OEN PDF URL returns404; neither original nor summary\npage has been directly read. That indirectly supplied report is a reason\nnot to infer inheritance from shared Scandinavian terminology, not\npositive evidence dating the English compound.\n\n## Documentary evidence\n\nCrawford1922 p.107 (held PDF129), Genesis9:13–16, has accusative\n*minne renbogan*, simplex *min boga*, and nominative *se min renboga*.\nThe supplied Helsinki Corpus transcription independently exposes these\nthree contexts. Bosworth–Toller online25654 gives nominative *se rénboga*\nand accusative *ðone rénbogan* at *Boutr.Scrd.*21,19–26, and the vocabulary\nlocators *Wrt.Voc.*i.52,42 and76,33. These are edition/dictionary checks,\nnot new manuscript collation. Normalized accents do not encode PGmc\nstress. None of these spellings distinguishes inherited syncope from\nlater composition of the already developed words for rain and bow.\n\n## Predictions, before execution\n\n1. Baseline: second-root `ù>ò` at SC017, decoding to *o* before SC046;\n   the unstressed linker fronts, retracts at SC046, and syncopates at\n   SC114. Post-syncope positional realization retains stop *b* after *n*.\n2. SC046-only restriction: linker remains *æ*, becomes *ea* at SC059,\n   escapes nonhigh monophthong syncope and gives the previously observed\n   *reġneafoga*. Reproduce rather than assume this result.\n3. SC059-only restriction: SC046 has already supplied *a*; the restriction\n   should not change rainbow's endpoint.\n4. Joint restriction: linker remains short unstressed *æ* through SC059,\n   deletes at SC114, and leaves postnasal *b*: *reġnboga*.\n5. Independent *boga* row1963, *eorþcunde* row2336, stressed restoration\n   positives *bake/wade*, and current back-mutation positives\n   *heaven/milk/seven/spear/world* must retain their endpoints.\n6. Independently staged West Saxon `*ælu`, immediately before SC059,\n   must give `*ealu` under the candidate labial/liquid domain. Its /æ/\n   is paradigm-supported, not a claimed direct full-cascade PGmc input.\n   Dental `*stæðul` is a declared outside-proxy comparison, not a failed\n   West Saxon labial-domain positive.\n7. Test complete raw-input cascades as well as local probes. SC044\n   currently decodes secondary `ǽ/à/è`; therefore first-nucleus anchoring\n   alone might misclassify a genuinely subordinate-stressed root.\n   A constructed marked/unmarked compound pair will test information\n   loss, without being presented as an attested lexical reconstruction.\n8. Compare all394 selected rows in each candidate, recording complete\n   output sets, every delta, rejection and ambiguity. Match counts cannot\n   establish historical conditioning or a compound's formation date.\n\nAny necessary annotation repair must be separated from the two\nhistorical domain restrictions and tested for observational equivalence.\nAn apparently successful rainbow endpoint cannot license a rule that\nfails a required stressed-target control.\n"
+      },
+      "negative_controls": [
+        "unstressed compound linker",
+        "dental outside labial/liquid proxy"
+      ],
+      "environment": {
+        "recorded": false,
+        "reason": "caller did not supply Foma/container identity"
+      },
+      "staging_dir": "staging",
+      "results_dir": "results"
+    },
+    "completion": {
+      "experiment_id": "rainbow-stress-23605564",
+      "outcome": "passed",
+      "summary": "Executed comparisons; scientific acceptance is assessed separately",
+      "completed_at": "2026-11-17T10:14:50Z",
+      "command_receipts": [
+        {
+          "receipt_version": 2,
+          "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-23605564/execution/rainbow-four-way-71e481f1960c4edbad1dd6c2b9bb28e4.receipt.json",
+          "label": "rainbow-four-way",
+          "argv": [
+            "docker",
+            "compose",
+            "exec",
+            "-T",
+            "backend",
+            "sh",
+            "-lc",
+            "cd /usr/app && python3 /tmp/capr-exp-rainbow-stress-23605564-168cfedf1b9b4b97b12502b2663c16fa/worker.py --worker /tmp/capr-exp-rainbow-stress-23605564-168cfedf1b9b4b97b12502b2663c16fa"
+          ],
+          "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+          "cwd": "/Users/nathanhill/Code/capr",
+          "started_at": "2026-11-17T10:09:59Z",
+          "finished_at": "2026-11-17T10:14:50Z",
+          "returncode": 0,
+          "timed_out": false,
+          "ok": true,
+          "source_identity": {
+            "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+            "worktree_changes": {
+              "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "82fa9357bf443bcf5b8b973bb3e5a477af1a554a1e457e96051c196504b66c1d",
+              "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "bf47ae6fa5b80a4521d039439ff65f0daff0869636c5fe16958706f1222a0f6c"
+            },
+            "identity_sha256": "5d18d4e6b4273867669d8c15fec5f2362dc848beabbe89c42d6f48928ecaf150",
+            "recorded_at": "2026-11-17T10:09:59Z"
+          },
+          "source_identity_sha256": "5d18d4e6b4273867669d8c15fec5f2362dc848beabbe89c42d6f48928ecaf150",
+          "source_identity_after": {
+            "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+            "worktree_changes": {
+              "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "82fa9357bf443bcf5b8b973bb3e5a477af1a554a1e457e96051c196504b66c1d",
+              "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "bf47ae6fa5b80a4521d039439ff65f0daff0869636c5fe16958706f1222a0f6c"
+            },
+            "identity_sha256": "5d18d4e6b4273867669d8c15fec5f2362dc848beabbe89c42d6f48928ecaf150",
+            "recorded_at": "2026-11-17T10:14:50Z"
+          },
+          "source_changed": false,
+          "level": null,
+          "lane": null,
+          "pytest_addopts": "",
+          "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-23605564/execution/rainbow-four-way-71e481f1960c4edbad1dd6c2b9bb28e4.stdout.log",
+          "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-23605564/execution/rainbow-four-way-71e481f1960c4edbad1dd6c2b9bb28e4.stderr.log",
+          "stdout_sha256": "6f014b662186bba016c916fcaa86f63ae5e8e2daddcae8573dfb9daf713b31f7",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "evidence": {},
+      "result_hashes": {
+        "observed.json": "6f014b662186bba016c916fcaa86f63ae5e8e2daddcae8573dfb9daf713b31f7"
+      },
+      "source_identity_sha256": "5d18d4e6b4273867669d8c15fec5f2362dc848beabbe89c42d6f48928ecaf150"
+    },
+    "stderr": ""
+  },
+  "annotation": {
+    "snapshot": {
+      "experiment_id": "rainbow-stress-4fe85f20",
+      "purpose": "Separate linker stress domains and test inherited syncope against controls",
+      "created_at": "2026-11-17T20:36:11Z",
+      "source_identity": {
+        "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+        "worktree_changes": {
+          "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "ee9119ca0720efb30d52d369c274bc96e5e585a8ca7205794a8031590639c7c0",
+          "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "dffee3988c85af6cf6d4064b40956b47893678b75bbe02da77f61716061b4660"
+        },
+        "identity_sha256": "c9dd3a4197d82b89bb9db6eeaefd26079d704163a9067fa9cb511462e66affe4",
+        "recorded_at": "2026-11-17T20:36:11Z"
+      },
+      "inputs": {
+        "source": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/fsts/germanic.txt",
+          "snapshot_name": "source.txt",
+          "sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b"
+        },
+        "corpus": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/data/germanic-aligned-final.tsv",
+          "snapshot_name": "corpus.tsv",
+          "sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1"
+        },
+        "worker": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py",
+          "snapshot_name": "worker.py",
+          "sha256": "ee9119ca0720efb30d52d369c274bc96e5e585a8ca7205794a8031590639c7c0"
+        },
+        "plan": {
+          "original_path": "/Users/nathanhill/Code/capr/.capr-work/rainbow/plan.json",
+          "snapshot_name": "plan.json",
+          "sha256": "05bf4189a9ef97fbdecef3d85162ce1f15aa0b37b07720bda2a6aa839cb5a28d"
+        },
+        "assessment": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md",
+          "snapshot_name": "assessment.md",
+          "sha256": "dffee3988c85af6cf6d4064b40956b47893678b75bbe02da77f61716061b4660"
+        },
+        "anglo_frisian_experiments": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/anglo_frisian_experiments.py",
+          "snapshot_name": "anglo_frisian_experiments.py",
+          "sha256": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa"
+        },
+        "oe_pipeline": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/oe_pipeline.py",
+          "snapshot_name": "oe_pipeline.py",
+          "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+        },
+        "capr_runtime": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/capr_runtime.py",
+          "snapshot_name": "capr_runtime.py",
+          "sha256": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec"
+        },
+        "sound_change_order_sensitivity": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/sound_change_order_sensitivity.py",
+          "snapshot_name": "sound_change_order_sensitivity.py",
+          "sha256": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c"
+        },
+        "executable_facts": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/executable_facts.py",
+          "snapshot_name": "executable_facts.py",
+          "sha256": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+        }
+      },
+      "variants": {
+        "RB46": "define RB46 [FootCtx((\n    {*æ} -> {*a} || .#. OEAnyConsonant* _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "RB59": "define RB59 FootCtx([\n    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]) .o. Ctx([\n    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]);",
+        "RB44": "define RB44 FootCtx(OEBreakingA\n    .o. OEBreakingE .o. OEBreakingI .o. OEBreakingLong\n    );",
+        "RB46C": "define RB46C [FootCtx((\n    {*æ} -> {*a} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "RBIF": "define RBIF [\n    {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*à} -> {*ǽ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*è} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ō} -> {*ē} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ù} -> {*ỳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*u} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ū} -> {*ȳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n                                                           \n    {*á} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*é} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ó} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ú} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger\n];",
+        "RBIR": "define RBIR [[\n    {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger\n]] .o. [[\n    {*ǽ} -> {*è} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger\n]];",
+        "RBI": "define RBI FootCtx(RBIF .o. RBIR .o. OEIUmlautDiphthong);",
+        "RBN": "define RBN [Ctx([\n    {*a} -> {*ą} || _ {*n} .#.\n])] .o. [Ctx([\n    {*à} -> {*ą} || _ {*n} .#.\n])];",
+        "RBD": "define RBD Ctx([{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);",
+        "RB59C": "define RB59C [Ctx([\n    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,\n                                                           \n    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}\n])] .o. Ctx([\n    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]) .o. RBD;",
+        "RB59D": "define RB59D RB59 .o. RBD;"
+      },
+      "variant_sha256": {
+        "RB46": "1e6d35bebf1584209f4cad959c8b11c501a225a7b803e32a3633452b0cd6ddeb",
+        "RB59": "5ccf1a7e7fbc31575f68d662b8b4bafeaf76726bf63a131b1237085a23a81bff",
+        "RB44": "daaec834e5d543c7eb963d3d4120628fdc4f2d0bbe40d5d5f06248a0ec06a75d",
+        "RB46C": "1c673e9420920d45035760c02745230758f229491b4db060f75cd9dcfa3f48a4",
+        "RBIF": "c8e092a7af64498e772086cb7fcf99e7e100544ea99270c89f33bdff88021d02",
+        "RBIR": "309290582df6c6a373ea9e9cb6589d12348b7091de4cfda1a4a46664a094d5a6",
+        "RBI": "34989570145883072170a2d8cc59bce8b403eced696845ed2c8b0cbb34da262c",
+        "RBN": "81492f88f3a1665b3d2c4b7998f198482c578d590452150805cb0b20724ccfe2",
+        "RBD": "3f92ca9d891da46ef84d76907542912e55defe4edeb051c3a231190c741f39e4",
+        "RB59C": "57860fb4fac5c41c997438cffca6de1c2b47a936ecb18ac0c538b590fe71674a",
+        "RB59D": "ec05a3aba85e8bbaeba116bf3787c7bc18fde5b1a7024940878afef757b13525"
+      },
+      "probes": [
+        "1934",
+        "2266",
+        "1963",
+        "2068",
+        "2174",
+        "2148",
+        "2302",
+        "2336",
+        "régna-bàkô",
+        "régna-bakô",
+        "*æ*l*u",
+        "*s*t*æ*ð*u*l",
+        "*g*e*b*ǽ*b*u",
+        "*g*e*b*æ*b*u",
+        "*g*e*b*è*b*u",
+        "*g*e*b*e*b*u"
+      ],
+      "expected_outcomes": {
+        "assessment": "# Rainbow: source assessment and preregistration\n\nResearch base: `4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38`;\nbranch `research/rainbow-stress-domains`. This assessment precedes the\nnew counterfactual execution. The earlier SC046 trials remain unchanged.\n\n## Sources and limits\n\n| Source | Evidence read | What it does not establish |\n|---|---|---|\n| Orel2003 pp.61,300 | Bow n-stem and complete `*reʒna-buʒōn` compound, including linking *a* | No independent dating argument for formation before the relevant English changes |\n| Kroonen2013 pp.82,408; bend family pp.61–62 | Bow and rain constituents | Not an independent reconstruction of the complete accented compound |\n| HoggGrammar2011 pp.54–55 §§3.10–11; RingeTaylor2014 pp.27–29; Colman2011 pp.95–98 | Early stressed *u* lowering before a following nonhigh vowel; ordinary *boga* explicitly discussed by Colman | Applying this to the compound's subordinate root is an inference; late unstressed lowering is not its explanation |\n| HoggGrammar2011 pp.220–222 §§6.14–18 | Unstressed nonhigh medial-vowel syncope, including thematic *a* in compound first members (§6.15) | No rainbow-specific attestation of the prehistoric linker or date of compound formation |\n| PurnellRaimySalmons2019 pp.e461–e463, especially e462 | Restoration targets stressed low front /æ/; back mutation targets stressed front vowels, including /æ/; *steaðul* illustrates the latter | This representational discussion does not establish a uniform West Saxon consonantal domain |\n| HoggGrammar2011 pp.156–157 §5.106 | Mercian *heafuces, geabuli* follow second fronting. West Saxon *ealu* < `*ælu` is instead explained through suffix variation and i-mutation in the paradigm (n.6) | Mercian examples are not direct West Saxon positives; *steaðul* before a dental does not validate CAPR's labial/liquid proxy |\n| Čermák2005 pp.35–45 | Separates secondary-stress modification, unaccented-vowel loss and cluster simplification; warns against circular semantic dating and orthographic inference | No independently dated rainbow linker or compound formation |\n| Supplied secondary-stress memorandum, “The origin of o in -boga” | Distinguishes early stressed root lowering from weak-vowel developments | Unauthenticated research document, not a published authority; several CAPR descriptions are superseded |\n\nThe supplied file is `Secondary_Stress_in_Old_English_revised_comments.docx`,\nnot the requested `(2)` filename. Its account of grave-dependent linker\ndeletion and its older *earthly* input are not descriptions of the current\nrules. Neither author nor publication status has been authenticated.\n\nThe original Lockwood2005 article was not found in Downloads or the\naccessible journal archive. The supplied OEN40(2):25 summary reports an\nargument for Christianisation-era borrowing/calquing of Scandinavian\nrainbow terms. The OEN PDF URL returns404; neither original nor summary\npage has been directly read. That indirectly supplied report is a reason\nnot to infer inheritance from shared Scandinavian terminology, not\npositive evidence dating the English compound.\n\n## Documentary evidence\n\nCrawford1922 p.107 (held PDF129), Genesis9:13–16, has accusative\n*minne renbogan*, simplex *min boga*, and nominative *se min renboga*.\nThe supplied Helsinki Corpus transcription independently exposes these\nthree contexts. Bosworth–Toller online25654 gives nominative *se rénboga*\nand accusative *ðone rénbogan* at *Boutr.Scrd.*21,19–26, and the vocabulary\nlocators *Wrt.Voc.*i.52,42 and76,33. These are edition/dictionary checks,\nnot new manuscript collation. Normalized accents do not encode PGmc\nstress. None of these spellings distinguishes inherited syncope from\nlater composition of the already developed words for rain and bow.\n\n## Predictions, before execution\n\n1. Baseline: second-root `ù>ò` at SC017, decoding to *o* before SC046;\n   the unstressed linker fronts, retracts at SC046, and syncopates at\n   SC114. Post-syncope positional realization retains stop *b* after *n*.\n2. SC046-only restriction: linker remains *æ*, becomes *ea* at SC059,\n   escapes nonhigh monophthong syncope and gives the previously observed\n   *reġneafoga*. Reproduce rather than assume this result.\n3. SC059-only restriction: SC046 has already supplied *a*; the restriction\n   should not change rainbow's endpoint.\n4. Joint restriction: linker remains short unstressed *æ* through SC059,\n   deletes at SC114, and leaves postnasal *b*: *reġnboga*.\n5. Independent *boga* row1963, *eorþcunde* row2336, stressed restoration\n   positives *bake/wade*, and current back-mutation positives\n   *heaven/milk/seven/spear/world* must retain their endpoints.\n6. Independently staged West Saxon `*ælu`, immediately before SC059,\n   must give `*ealu` under the candidate labial/liquid domain. Its /æ/\n   is paradigm-supported, not a claimed direct full-cascade PGmc input.\n   Dental `*stæðul` is a declared outside-proxy comparison, not a failed\n   West Saxon labial-domain positive.\n7. Test complete raw-input cascades as well as local probes. SC044\n   currently decodes secondary `ǽ/à/è`; therefore first-nucleus anchoring\n   alone might misclassify a genuinely subordinate-stressed root.\n   A constructed marked/unmarked compound pair will test information\n   loss, without being presented as an attested lexical reconstruction.\n8. Compare all394 selected rows in each candidate, recording complete\n   output sets, every delta, rejection and ambiguity. Match counts cannot\n   establish historical conditioning or a compound's formation date.\n\nAny necessary annotation repair must be separated from the two\nhistorical domain restrictions and tested for observational equivalence.\nAn apparently successful rainbow endpoint cannot license a rule that\nfails a required stressed-target control.\n\n## Follow-up preregistration: annotation preservation\n\nThe first trial confirms predictions1–6, but its constructed pair reaches\nidentical inputs after SC044 despite distinct secondary prominence before\nit. This is information loss, not evidence for historical deaccentuation.\nThe first-nucleus-only joint candidate is therefore not ready for adoption.\n\nThe next trial will preserve the existing low/front secondary labels from\nSC044 through SC059 and decode them there, without inserting a historical\nstress-loss event. Consonantal front-vowel classes already admit these\nsymbols. The intervening secondary nasalization and i-mutation consumers\nwill explicitly mirror their plain-vowel operations; a high output from\ni-mutation can be decoded immediately because neither investigated rule\ntargets it.\n\nAn annotation-only control must reproduce the current outputs for every\nselected row. Against that common representation, compare neither\nrestriction, SC046 alone, SC059 alone and both. The rainbow predictions\nremain unchanged. Constructed compounds with the independently established\n*bake* and *heaven* root histories (`régna-bàkaną`, `régna-xèbun`) test the\nsurviving subordinate labels through the complete cascade; they are\nnotation controls, not proposed lexical admissions or attested compounds.\nThe marked bake root must still retract, and the marked heaven root must\nstill back-mutate. Their unmarked counterparts test exclusion. Raw\npretonic `gabákaną/gasébun` test the existing positive-headed-foot\nrepresentation, not a new historical assertion about these compounds.\n"
+      },
+      "negative_controls": [
+        "unstressed compound linker",
+        "dental outside labial/liquid proxy"
+      ],
+      "environment": {
+        "recorded": false,
+        "reason": "caller did not supply Foma/container identity"
+      },
+      "staging_dir": "staging",
+      "results_dir": "results"
+    },
+    "completion": {
+      "experiment_id": "rainbow-stress-4fe85f20",
+      "outcome": "passed",
+      "summary": "Executed comparisons; scientific acceptance is assessed separately",
+      "completed_at": "2026-11-17T20:42:18Z",
+      "command_receipts": [
+        {
+          "receipt_version": 2,
+          "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-4fe85f20/execution/rainbow-four-way-9f7581f27c1d41dc9183001e1bd3c106.receipt.json",
+          "label": "rainbow-four-way",
+          "argv": [
+            "docker",
+            "compose",
+            "exec",
+            "-T",
+            "backend",
+            "sh",
+            "-lc",
+            "cd /usr/app && python3 /tmp/capr-exp-rainbow-stress-4fe85f20-0e82570a3fcc4d069fd3a851d556eb07/worker.py --worker /tmp/capr-exp-rainbow-stress-4fe85f20-0e82570a3fcc4d069fd3a851d556eb07"
+          ],
+          "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+          "cwd": "/Users/nathanhill/Code/capr",
+          "started_at": "2026-11-17T20:36:12Z",
+          "finished_at": "2026-11-17T20:42:18Z",
+          "returncode": 0,
+          "timed_out": false,
+          "ok": true,
+          "source_identity": {
+            "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+            "worktree_changes": {
+              "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "ee9119ca0720efb30d52d369c274bc96e5e585a8ca7205794a8031590639c7c0",
+              "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "dffee3988c85af6cf6d4064b40956b47893678b75bbe02da77f61716061b4660"
+            },
+            "identity_sha256": "c9dd3a4197d82b89bb9db6eeaefd26079d704163a9067fa9cb511462e66affe4",
+            "recorded_at": "2026-11-17T20:36:12Z"
+          },
+          "source_identity_sha256": "c9dd3a4197d82b89bb9db6eeaefd26079d704163a9067fa9cb511462e66affe4",
+          "source_identity_after": {
+            "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+            "worktree_changes": {
+              "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "ee9119ca0720efb30d52d369c274bc96e5e585a8ca7205794a8031590639c7c0",
+              "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "dffee3988c85af6cf6d4064b40956b47893678b75bbe02da77f61716061b4660",
+              "docs/references/rainbow_stress_domains/README.md": "15281496a94e71648cd8eece47faa8ccb4b6ab4110bcbf7f48588e74c07a9a0c",
+              "docs/references/rainbow_stress_domains/holdings.tsv": "9fb4ed068843a6ce54155371539edca9e1b54cb15e1939f3ab1c486edaa71148",
+              "docs/refs.bib": "02da2b2ee7324e9ebd9bacf25f69529e8355709ed485ebfb11cba332e1b9fa73"
+            },
+            "identity_sha256": "5035116a358b7d199ec045881e953d3b451b7c72dcea030fb387c9c8fed26fa2",
+            "recorded_at": "2026-11-17T20:42:18Z"
+          },
+          "source_changed": true,
+          "level": null,
+          "lane": null,
+          "pytest_addopts": "",
+          "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-4fe85f20/execution/rainbow-four-way-9f7581f27c1d41dc9183001e1bd3c106.stdout.log",
+          "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-4fe85f20/execution/rainbow-four-way-9f7581f27c1d41dc9183001e1bd3c106.stderr.log",
+          "stdout_sha256": "9616323df770e0e29253961b986b613a66f56a2d72308bad86cf4e46501cbb20",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "evidence": {},
+      "result_hashes": {
+        "observed.json": "9616323df770e0e29253961b986b613a66f56a2d72308bad86cf4e46501cbb20"
+      },
+      "source_identity_sha256": "c9dd3a4197d82b89bb9db6eeaefd26079d704163a9067fa9cb511462e66affe4"
+    },
+    "stderr": ""
+  },
+  "final": {
+    "snapshot": {
+      "experiment_id": "rainbow-stress-005a6650",
+      "purpose": "Separate linker stress domains and test inherited syncope against controls",
+      "created_at": "2026-11-17T20:43:14Z",
+      "source_identity": {
+        "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+        "worktree_changes": {
+          "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "722d056a3a4871a1578154e6e74ec345db1ff8f7d9e102c0529ab37074c38997",
+          "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "dad06108fa04b101aa758ea80e50b427e9ae89e0e05951294a8211d45f6fb0a5",
+          "docs/references/rainbow_stress_domains/README.md": "15281496a94e71648cd8eece47faa8ccb4b6ab4110bcbf7f48588e74c07a9a0c",
+          "docs/references/rainbow_stress_domains/holdings.tsv": "9fb4ed068843a6ce54155371539edca9e1b54cb15e1939f3ab1c486edaa71148",
+          "docs/refs.bib": "02da2b2ee7324e9ebd9bacf25f69529e8355709ed485ebfb11cba332e1b9fa73"
+        },
+        "identity_sha256": "982f41990c9710cc1cc956fad17458a6648698c2ad73d6b1476d91c7ee641ead",
+        "recorded_at": "2026-11-17T20:43:14Z"
+      },
+      "inputs": {
+        "source": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/fsts/germanic.txt",
+          "snapshot_name": "source.txt",
+          "sha256": "74d13549dfce23dca7690d2b095ee0bbf6b550faf5816241c823343035de7c5b"
+        },
+        "corpus": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/data/germanic-aligned-final.tsv",
+          "snapshot_name": "corpus.tsv",
+          "sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1"
+        },
+        "worker": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py",
+          "snapshot_name": "worker.py",
+          "sha256": "722d056a3a4871a1578154e6e74ec345db1ff8f7d9e102c0529ab37074c38997"
+        },
+        "plan": {
+          "original_path": "/Users/nathanhill/Code/capr/.capr-work/rainbow/plan.json",
+          "snapshot_name": "plan.json",
+          "sha256": "6985e8b3cbffd515a19b8fac4dc61a8d1b3de151f6f5c28de033c1429b03db3a"
+        },
+        "assessment": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md",
+          "snapshot_name": "assessment.md",
+          "sha256": "dad06108fa04b101aa758ea80e50b427e9ae89e0e05951294a8211d45f6fb0a5"
+        },
+        "anglo_frisian_experiments": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/anglo_frisian_experiments.py",
+          "snapshot_name": "anglo_frisian_experiments.py",
+          "sha256": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa"
+        },
+        "oe_pipeline": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/oe_pipeline.py",
+          "snapshot_name": "oe_pipeline.py",
+          "sha256": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6"
+        },
+        "capr_runtime": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/capr_runtime.py",
+          "snapshot_name": "capr_runtime.py",
+          "sha256": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec"
+        },
+        "sound_change_order_sensitivity": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/sound_change_order_sensitivity.py",
+          "snapshot_name": "sound_change_order_sensitivity.py",
+          "sha256": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c"
+        },
+        "executable_facts": {
+          "original_path": "/Users/nathanhill/Code/capr/Germanic/tools/executable_facts.py",
+          "snapshot_name": "executable_facts.py",
+          "sha256": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+        }
+      },
+      "variants": {
+        "RB46": "define RB46 [FootCtx((\n    {*æ} -> {*a} || .#. OEAnyConsonant* _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "RB59": "define RB59 FootCtx([\n    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]) .o. Ctx([\n    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]);",
+        "RB44": "define RB44 FootCtx(OEBreakingA\n    .o. OEBreakingE .o. OEBreakingI .o. OEBreakingLong\n    );",
+        "RB46C": "define RB46C [FootCtx((\n    {*æ} -> {*a} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))] .o. [FootCtx((\n    {*ǽ} -> {*à} || _\n        OEARestorationIntervening OEARestorationTriggerVowel\n        - OEARestorationIntervening OEARestorationWeakTailVowel\n))];",
+        "RBIF": "define RBIF [\n    {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*à} -> {*ǽ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*è} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ō} -> {*ē} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ù} -> {*ỳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*u} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ū} -> {*ȳ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n                                                           \n    {*á} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*é} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ó} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,\n    {*ú} -> {*y} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger\n];",
+        "RBIR": "define RBIR [[\n    {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger\n]] .o. [[\n    {*ǽ} -> {*è} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger\n]];",
+        "RBI": "define RBI FootCtx(RBIF .o. RBIR .o. OEIUmlautDiphthong);",
+        "RBN": "define RBN [Ctx([\n    {*a} -> {*ą} || _ {*n} .#.\n])] .o. [Ctx([\n    {*à} -> {*ą} || _ {*n} .#.\n])];",
+        "RBD": "define RBD Ctx([{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);",
+        "RB59C": "define RB59C [Ctx([\n    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,\n                                                           \n    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}\n])] .o. Ctx([\n    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},\n    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger\n]);",
+        "RB59D": "define RB59D RB59;",
+        "RB114": "define RB114 [FootCtx([\n    [{*a}|{*æ}|{*e}] -> 0 ||\n        .#. OEAnyConsonant* EnglishStarVocalic\n        [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+\n        _ OEAnyConsonant EnglishStarVocalic\n        [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.\n])] .o. RBD;"
+      },
+      "variant_sha256": {
+        "RB46": "1e6d35bebf1584209f4cad959c8b11c501a225a7b803e32a3633452b0cd6ddeb",
+        "RB59": "5ccf1a7e7fbc31575f68d662b8b4bafeaf76726bf63a131b1237085a23a81bff",
+        "RB44": "daaec834e5d543c7eb963d3d4120628fdc4f2d0bbe40d5d5f06248a0ec06a75d",
+        "RB46C": "1c673e9420920d45035760c02745230758f229491b4db060f75cd9dcfa3f48a4",
+        "RBIF": "c8e092a7af64498e772086cb7fcf99e7e100544ea99270c89f33bdff88021d02",
+        "RBIR": "309290582df6c6a373ea9e9cb6589d12348b7091de4cfda1a4a46664a094d5a6",
+        "RBI": "34989570145883072170a2d8cc59bce8b403eced696845ed2c8b0cbb34da262c",
+        "RBN": "81492f88f3a1665b3d2c4b7998f198482c578d590452150805cb0b20724ccfe2",
+        "RBD": "3f92ca9d891da46ef84d76907542912e55defe4edeb051c3a231190c741f39e4",
+        "RB59C": "1c4c8ca51231b2edf36ec03c049456c30c022c9cc6900364405e493955a81d82",
+        "RB59D": "29b27fc47227438f70f794f6f540c5751999448cfb9887dede90a5b7ba57c907",
+        "RB114": "a86e7685f4ebdd1c01f2e4f3170a37c323a63eeaefb7df95c4d48ad5bcea62cf"
+      },
+      "probes": [
+        "1934",
+        "2266",
+        "1963",
+        "2068",
+        "2174",
+        "2148",
+        "2302",
+        "2336",
+        "régna-bàkô",
+        "régna-bakô",
+        "*æ*l*u",
+        "*s*t*æ*ð*u*l",
+        "*g*e*b*ǽ*b*u",
+        "*g*e*b*æ*b*u",
+        "*g*e*b*è*b*u",
+        "*g*e*b*e*b*u"
+      ],
+      "expected_outcomes": {
+        "assessment": "# Rainbow: source assessment and preregistration\n\nResearch base: `4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38`;\nbranch `research/rainbow-stress-domains`. This assessment precedes the\nnew counterfactual execution. The earlier SC046 trials remain unchanged.\n\n## Sources and limits\n\n| Source | Evidence read | What it does not establish |\n|---|---|---|\n| Orel2003 pp.61,300 | Bow n-stem and complete `*reʒna-buʒōn` compound, including linking *a* | No independent dating argument for formation before the relevant English changes |\n| Kroonen2013 pp.82,408; bend family pp.61–62 | Bow and rain constituents | Not an independent reconstruction of the complete accented compound |\n| HoggGrammar2011 pp.54–55 §§3.10–11; RingeTaylor2014 pp.27–29; Colman2011 pp.95–98 | Early stressed *u* lowering before a following nonhigh vowel; ordinary *boga* explicitly discussed by Colman | Applying this to the compound's subordinate root is an inference; late unstressed lowering is not its explanation |\n| HoggGrammar2011 pp.220–222 §§6.14–18 | Unstressed nonhigh medial-vowel syncope, including thematic *a* in compound first members (§6.15) | No rainbow-specific attestation of the prehistoric linker or date of compound formation |\n| PurnellRaimySalmons2019 pp.e461–e463, especially e462 | Restoration targets stressed low front /æ/; back mutation targets stressed front vowels, including /æ/; *steaðul* illustrates the latter | This representational discussion does not establish a uniform West Saxon consonantal domain |\n| HoggGrammar2011 pp.156–157 §5.106 | Mercian *heafuces, geabuli* follow second fronting. West Saxon *ealu* < `*ælu` is instead explained through suffix variation and i-mutation in the paradigm (n.6) | Mercian examples are not direct West Saxon positives; *steaðul* before a dental does not validate CAPR's labial/liquid proxy |\n| Čermák2005 pp.35–45 | Separates secondary-stress modification, unaccented-vowel loss and cluster simplification; warns against circular semantic dating and orthographic inference | No independently dated rainbow linker or compound formation |\n| Supplied secondary-stress memorandum, “The origin of o in -boga” | Distinguishes early stressed root lowering from weak-vowel developments | Unauthenticated research document, not a published authority; several CAPR descriptions are superseded |\n\nThe supplied file is `Secondary_Stress_in_Old_English_revised_comments.docx`,\nnot the requested `(2)` filename. Its account of grave-dependent linker\ndeletion and its older *earthly* input are not descriptions of the current\nrules. Neither author nor publication status has been authenticated.\n\nThe original Lockwood2005 article was not found in Downloads or the\naccessible journal archive. The supplied OEN40(2):25 summary reports an\nargument for Christianisation-era borrowing/calquing of Scandinavian\nrainbow terms. The OEN PDF URL returns404; neither original nor summary\npage has been directly read. That indirectly supplied report is a reason\nnot to infer inheritance from shared Scandinavian terminology, not\npositive evidence dating the English compound.\n\n## Documentary evidence\n\nCrawford1922 p.107 (held PDF129), Genesis9:13–16, has accusative\n*minne renbogan*, simplex *min boga*, and nominative *se min renboga*.\nThe supplied Helsinki Corpus transcription independently exposes these\nthree contexts. Bosworth–Toller online25654 gives nominative *se rénboga*\nand accusative *ðone rénbogan* at *Boutr.Scrd.*21,19–26, and the vocabulary\nlocators *Wrt.Voc.*i.52,42 and76,33. These are edition/dictionary checks,\nnot new manuscript collation. Normalized accents do not encode PGmc\nstress. None of these spellings distinguishes inherited syncope from\nlater composition of the already developed words for rain and bow.\n\n## Predictions, before execution\n\n1. Baseline: second-root `ù>ò` at SC017, decoding to *o* before SC046;\n   the unstressed linker fronts, retracts at SC046, and syncopates at\n   SC114. Post-syncope positional realization retains stop *b* after *n*.\n2. SC046-only restriction: linker remains *æ*, becomes *ea* at SC059,\n   escapes nonhigh monophthong syncope and gives the previously observed\n   *reġneafoga*. Reproduce rather than assume this result.\n3. SC059-only restriction: SC046 has already supplied *a*; the restriction\n   should not change rainbow's endpoint.\n4. Joint restriction: linker remains short unstressed *æ* through SC059,\n   deletes at SC114, and leaves postnasal *b*: *reġnboga*.\n5. Independent *boga* row1963, *eorþcunde* row2336, stressed restoration\n   positives *bake/wade*, and current back-mutation positives\n   *heaven/milk/seven/spear/world* must retain their endpoints.\n6. Independently staged West Saxon `*ælu`, immediately before SC059,\n   must give `*ealu` under the candidate labial/liquid domain. Its /æ/\n   is paradigm-supported, not a claimed direct full-cascade PGmc input.\n   Dental `*stæðul` is a declared outside-proxy comparison, not a failed\n   West Saxon labial-domain positive.\n7. Test complete raw-input cascades as well as local probes. SC044\n   currently decodes secondary `ǽ/à/è`; therefore first-nucleus anchoring\n   alone might misclassify a genuinely subordinate-stressed root.\n   A constructed marked/unmarked compound pair will test information\n   loss, without being presented as an attested lexical reconstruction.\n8. Compare all394 selected rows in each candidate, recording complete\n   output sets, every delta, rejection and ambiguity. Match counts cannot\n   establish historical conditioning or a compound's formation date.\n\nAny necessary annotation repair must be separated from the two\nhistorical domain restrictions and tested for observational equivalence.\nAn apparently successful rainbow endpoint cannot license a rule that\nfails a required stressed-target control.\n\n## Follow-up preregistration: annotation preservation\n\nThe first trial confirms predictions1–6, but its constructed pair reaches\nidentical inputs after SC044 despite distinct secondary prominence before\nit. This is information loss, not evidence for historical deaccentuation.\nThe first-nucleus-only joint candidate is therefore not ready for adoption.\n\nThe next trial will preserve the existing low/front secondary labels from\nSC044 through SC059 and decode them there, without inserting a historical\nstress-loss event. Consonantal front-vowel classes already admit these\nsymbols. The intervening secondary nasalization and i-mutation consumers\nwill explicitly mirror their plain-vowel operations; a high output from\ni-mutation can be decoded immediately because neither investigated rule\ntargets it.\n\nAn annotation-only control must reproduce the current outputs for every\nselected row. Against that common representation, compare neither\nrestriction, SC046 alone, SC059 alone and both. The rainbow predictions\nremain unchanged. Constructed compounds with the independently established\n*bake* and *heaven* root histories (`régna-bàkaną`, `régna-xèbun`) test the\nsurviving subordinate labels through the complete cascade; they are\nnotation controls, not proposed lexical admissions or attested compounds.\nThe marked bake root must still retract, and the marked heaven root must\nstill back-mutate. Their unmarked counterparts test exclusion. Raw\npretonic `gabákaną/gasébun` test the existing positive-headed-foot\nrepresentation, not a new historical assertion about these compounds.\n\nThe annotation trial preserves subordinate restoration at SC046 and\nsubordinate back mutation at SC059, and its annotation-only control is\nendpoint-equivalent on394/394 selected rows. It also exposes a later\nproblem: decoding the restored subordinate *à* immediately after SC059\nlets SC114 delete it as if unstressed. Its disappearance at the endpoint\nis therefore not evidence against stressed restoration.\n\nThe final bounded comparison will retain the same labels through SC114\nand decode them only after its unstressed-vowel deletion. This follows\nHogg's independently stated unstressed domain; it is not a proposed\nhistorical date of stress loss. Recheck all394 rows, the four interventions,\nthe staged West Saxon positive, and the constructed marked/unmarked roots\nat SC046, SC059, syncope, positional *b*, and the endpoint. The secondary\nbake root must retain its restored short *a* through syncope, whereas the\nunmarked counterpart may lose its nonhigh vowel. The secondary heaven\nroot must retain its back-mutated vowel.\n"
+      },
+      "negative_controls": [
+        "unstressed compound linker",
+        "dental outside labial/liquid proxy"
+      ],
+      "environment": {
+        "recorded": false,
+        "reason": "caller did not supply Foma/container identity"
+      },
+      "staging_dir": "staging",
+      "results_dir": "results"
+    },
+    "completion": {
+      "experiment_id": "rainbow-stress-005a6650",
+      "outcome": "passed",
+      "summary": "Executed comparisons; scientific acceptance is assessed separately",
+      "completed_at": "2026-11-17T20:48:25Z",
+      "command_receipts": [
+        {
+          "receipt_version": 2,
+          "receipt_path": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-005a6650/execution/rainbow-four-way-413b08e26e73454a968a4c9b3dde614b.receipt.json",
+          "label": "rainbow-four-way",
+          "argv": [
+            "docker",
+            "compose",
+            "exec",
+            "-T",
+            "backend",
+            "sh",
+            "-lc",
+            "cd /usr/app && python3 /tmp/capr-exp-rainbow-stress-005a6650-5cf3213e6a4240bc984e056f2e57b2ff/worker.py --worker /tmp/capr-exp-rainbow-stress-005a6650-5cf3213e6a4240bc984e056f2e57b2ff"
+          ],
+          "executable_path": "/Applications/Docker.app/Contents/Resources/bin/docker",
+          "cwd": "/Users/nathanhill/Code/capr",
+          "started_at": "2026-11-17T20:43:15Z",
+          "finished_at": "2026-11-17T20:48:25Z",
+          "returncode": 0,
+          "timed_out": false,
+          "ok": true,
+          "source_identity": {
+            "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+            "worktree_changes": {
+              "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "722d056a3a4871a1578154e6e74ec345db1ff8f7d9e102c0529ab37074c38997",
+              "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "dad06108fa04b101aa758ea80e50b427e9ae89e0e05951294a8211d45f6fb0a5",
+              "docs/references/rainbow_stress_domains/README.md": "15281496a94e71648cd8eece47faa8ccb4b6ab4110bcbf7f48588e74c07a9a0c",
+              "docs/references/rainbow_stress_domains/holdings.tsv": "9fb4ed068843a6ce54155371539edca9e1b54cb15e1939f3ab1c486edaa71148",
+              "docs/refs.bib": "02da2b2ee7324e9ebd9bacf25f69529e8355709ed485ebfb11cba332e1b9fa73"
+            },
+            "identity_sha256": "982f41990c9710cc1cc956fad17458a6648698c2ad73d6b1476d91c7ee641ead",
+            "recorded_at": "2026-11-17T20:43:15Z"
+          },
+          "source_identity_sha256": "982f41990c9710cc1cc956fad17458a6648698c2ad73d6b1476d91c7ee641ead",
+          "source_identity_after": {
+            "head_commit": "4bb89958b0b5392c0d9cca5d1ee8f73a86c61d38",
+            "worktree_changes": {
+              "Germanic/docs/sound_changes/audits/rainbow-stress-evidence/experiment.py": "722d056a3a4871a1578154e6e74ec345db1ff8f7d9e102c0529ab37074c38997",
+              "Germanic/docs/sound_changes/literature_dossiers/rainbow-stress-domains/01-source-assessment.md": "dad06108fa04b101aa758ea80e50b427e9ae89e0e05951294a8211d45f6fb0a5",
+              "docs/references/rainbow_stress_domains/README.md": "15281496a94e71648cd8eece47faa8ccb4b6ab4110bcbf7f48588e74c07a9a0c",
+              "docs/references/rainbow_stress_domains/holdings.tsv": "9fb4ed068843a6ce54155371539edca9e1b54cb15e1939f3ab1c486edaa71148",
+              "docs/refs.bib": "02da2b2ee7324e9ebd9bacf25f69529e8355709ed485ebfb11cba332e1b9fa73"
+            },
+            "identity_sha256": "982f41990c9710cc1cc956fad17458a6648698c2ad73d6b1476d91c7ee641ead",
+            "recorded_at": "2026-11-17T20:48:25Z"
+          },
+          "source_changed": false,
+          "level": null,
+          "lane": null,
+          "pytest_addopts": "",
+          "stdout_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-005a6650/execution/rainbow-four-way-413b08e26e73454a968a4c9b3dde614b.stdout.log",
+          "stderr_log": "/Users/nathanhill/Code/capr/.capr-work/experiments/rainbow-stress-005a6650/execution/rainbow-four-way-413b08e26e73454a968a4c9b3dde614b.stderr.log",
+          "stdout_sha256": "9e4793371cf1be07d6e6c26ef1a3a39b5628ef3e58a4fd1d55e43979d033a70c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "evidence": {},
+      "result_hashes": {
+        "observed.json": "9e4793371cf1be07d6e6c26ef1a3a39b5628ef3e58a4fd1d55e43979d033a70c"
+      },
+      "source_identity_sha256": "982f41990c9710cc1cc956fad17458a6648698c2ad73d6b1476d91c7ee641ead"
+    },
+    "stderr": ""
+  }
+}

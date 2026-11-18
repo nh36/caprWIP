@@ -35,3 +35,51 @@ Both observed boundaries are historically interpretable rather than technical. T
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_failures.tsv`
 - `Germanic/docs/sound_changes/sound_change_order_sensitivity.tsv`
+
+
+## Source-critical adjudication, 17 November 2026
+
+The [SC046 memorandum](../../audits/sc046-adjudication.md) qualifies the
+historical interpretation of the preserved measurements above; none of
+their counts, outputs or original inputs has been regenerated or replaced.
+The new source-bound observations use the SC044-certified `aea30b03`
+executable and current 394-row corpus.
+
+Brightening supplies restoration's front input in the adopted southern
+account. Displacing restoration before it demonstrates that model's
+feeding, not independent evidence against blocked fronting in *dagum*.
+Campbell's *slēan* argument assumes front-vowel breaking; Versloot's
+alternative contraction and Hogg/Fulk's Northumbrian qualification must
+be considered separately.
+
+Two local interventions are not interchangeable. Exchanging the outer
+SC046/SC048 slots with SC047 left between them gives `*bakan/*wadan`
+instead of `*bakąn/*wadąn`, hence *bacen/waden*: ending exposure fails,
+but root restoration still applies. Fixing SC047 before both competing
+operations instead compares shared `*bækan/*wædan` inputs: SC046 then
+SC048 gives `*bakąn/*wadąn`; the reverse gives `*bækąn/*wædąn`,
+with remainder endpoints *bæcan/wædan*. These establish a trigger/
+exposure dependency of this implementation, not a universal historical
+date. Exact tokenized intermediates and all output sets are in
+[the initial and follow-up records](../../audits/sc046-restoration-evidence/README.md).
+
+The SC051 boundary concerns `OESkPalatalization`, not generic stop
+palatalization. Its older wash/flask measurement remains historical;
+the subsequently adopted *flascan* cell must not be read as the older
+levelled *flasce* experiment. No new sk displacement is claimed here.
+
+At the original research checkpoint, the executable revision was deferred:
+a blanket geminate ban fails
+independent *crabba/racca* positives and trades lap for tap; a
+stressed-target restriction exposes rainbow's SC059 back-mutation/
+syncope interaction. The production source, inputs and 386/394 reference
+remain unchanged. Source review, evidence limitations and the unapplied
+restriction belong to the memorandum, not a newly inferred broad interval.
+
+The subsequent joint adoption restricts SC046 and SC059 together, preserving
+the necessary secondary annotations through SC114. Rainbow's unstressed
+linker now remains *æ* at both rules and deletes by ordinary syncope.
+The historical displacement counts above are unchanged and are not fresh
+measurements of this adopted source. The wider weak-vowel limitation and
+source-critical residues remain in the current memorandum; no new
+chronology relation follows from this correction.

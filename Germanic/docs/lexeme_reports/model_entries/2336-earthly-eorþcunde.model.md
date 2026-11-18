@@ -189,11 +189,19 @@ Metrical prominence is not automatically attested speech stress
 
 The supported chain is
 \emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθakundǭ >
-*éorθakundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
+*éorθækundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
 followed by *eorþcunde*. Dental hardening, linking-vowel deletion,
 breaking and existing final shortening and merger account for the
 changes other than medial protection. The selected bimoric nasal
 ending is already within the input notation.
+
+The unstressed linker remains short \emph{æ} under the jointly restricted
+[SC046 OEARestoration](#rule-OEARestoration) and
+[SC059 OEBackMutation](#rule-OEBackMutation), then deletes by ordinary
+nonhigh syncope. This changes its intermediate quality, not the selected
+cell, medial-root protection or endpoint
+[@PurnellRaimySalmons2019, pp. e461--e463;
+@HoggGrammar2011, pp. 220--222, §§6.14--6.18].
 
 SC038 OEStripSecondaryStress removes the earlier compound annotation
 at its inherited position; ordinary nonhigh medial loss later belongs to

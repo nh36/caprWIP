@@ -5,6 +5,8 @@
 ```foma
 define OEIUmlautFronting [
     {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*à} -> {*ǽ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*è} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
@@ -61,9 +63,11 @@ preserves the previously selected mutation and breaking histories.
 ## SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
 ```foma
-define OEIUmlautRaising [
+define OEIUmlautRaising [[
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
-];
+]] .o. [[
+    {*ǽ} -> {*è} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+]];
 ```
 
 Raising of umlauted `æ` to `e` continues the same assimilatory event as fronting and therefore shares the chronology of general i-umlaut.
