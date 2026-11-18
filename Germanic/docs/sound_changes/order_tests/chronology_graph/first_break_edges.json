@@ -2029,16 +2029,16 @@
     {
       "source_change_id": "SC059",
       "target_change_id": "SC078",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "steal; weave",
       "representative_forms": "PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "-"
+      "notes": "Preserve the original later-boundary measurement. The same literal e/a back-mutation behavior is not independent West Saxon chronology; the reader's model-local qualification also applies here. No new SC078 displacement was run. See sc059-adjudication.md and sc048-adjudication.md."
     },
     {
       "source_change_id": "SC060",

@@ -265,3 +265,8 @@ it is a reviewable, unadopted alternative, not a reopened rainbow decision.
 The SC048/SC059 edges are consequently model-local rather than independently
 dated West Saxon chronology. See sc048-adjudication.md and its source
 assessment for Ringe--Taylor319--327/Hogg149--157 and the exact records.
+The same dialect objection applies to the older steal/weave boundary at
+SC078: its retained measurement is model-local, not independent West Saxon
+dating. The canonical SC059→SC078 edge now agrees with the existing reader
+qualification. This is not a new SC078 displacement experiment or a change
+to either executable rule.

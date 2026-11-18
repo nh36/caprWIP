@@ -39,11 +39,11 @@ chronology constraints.
 | --- | ---: |
 | `broad_far_chronology` | 10 |
 | `no_break_search_boundary` | 21 |
-| `one_sided_chronology` | 38 |
+| `one_sided_chronology` | 37 |
 | `reciprocal_chronology` | 20 |
 | `runner_limited_boundary` | 17 |
 | `superseded_experiment` | 14 |
-| `technical_computational` | 30 |
+| `technical_computational` | 31 |
 
 ## Chronology edges
 
@@ -85,7 +85,6 @@ chronology constraints.
 1. `SC054 -> SC063` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sea`; forms: PGmc `*sáiwiz` yields expected OE `sǣ`, but the later-shifted variant again yields `sǣw`
 1. `SC055 -> SC052` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `cow; lung`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `ċȳ`; PGmc `*lúnganjō` likewise yields `lunġen` instead of expected `lungen`
 1. `SC057 -> SC052` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bow; follow; hedge; seek; singe`; forms: PGmc `*báugijaną` yields expected OE `bīeġan`, but the earlier-shifted variant yields `bēaġan`; PGmc `*sōkijaną` likewise yields `sōċan` instead of expected `sēċan`
-1. `SC059 -> SC078` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `steal; weave`; forms: PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`
 1. `SC060 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `might; night`; forms: PGmc `*máxtiz` yields expected OE `miht`, but the earlier-shifted variant yields `mieht`; PGmc `*náxti` likewise yields `nieht` instead of expected `niht`
 1. `SC061 -> SC023` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `do`; forms: PGmc `*dōną` yields expected OE `dōn`, but the earlier-shifted variant yields no output (`+?` in the TSV)
 1. `SC063 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `belly; birth; breeches; bride; cow; filth`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `cū`; PGmc `*brūdiz` likewise yields `brūd` instead of expected `brȳd`; selected *fūliþǭ yields fȳlþe, but quantitative high loss before mutation gives fūlþe.
@@ -172,6 +171,7 @@ chronology constraints.
 1. `SC058 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC058 -> SC087` (no_break_search_boundary)
 1. `SC059 -> SC048` (technical_computational)
+1. `SC059 -> SC078` (technical_computational)
 1. `SC060 -> SC087` (no_break_search_boundary)
 1. `SC061 -> SC087` (no_break_search_boundary)
 1. `SC064 -> SC041` (technical_computational)

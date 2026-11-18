@@ -1,4 +1,6 @@
 """Low-vowel loss, final-n exposure and source-backed weak-cell admission."""
+import copy
+import csv
 import functools
 import hashlib
 import json
@@ -38,8 +40,74 @@ def before_sc047_adoption(current):
     return previous
 
 
+@functools.lru_cache(maxsize=1)
+def archived_observations():
+    manifest = json.loads((AUDIT / "manifest.json").read_text())
+    assert hashlib.sha256((AUDIT / "experiments.zip").read_bytes()).hexdigest() == (
+        manifest["archive_sha256"])
+    snapshots = {
+        "initial": "sc047-apocope-60dc1031",
+        "followup": "sc047-apocope-10c83962",
+        "admission": "sc047-apocope-ed090c66",
+    }
+    with zipfile.ZipFile(AUDIT / "experiments.zip") as archive:
+        assert set(archive.namelist()) == set(manifest["members"])
+        for name, digest in manifest["members"].items():
+            assert hashlib.sha256(archive.read(name)).hexdigest() == digest
+        return {name: json.loads(archive.read(root + "/results/observed.json"))
+                for name, root in snapshots.items()}
+
+
+def assert_archived_projection(data):
+    observed = archived_observations()
+    assert data["base"] == BASE
+    for key in ["source_sha256", "corpus_sha256"]:
+        assert data[key] == observed["initial"][key]
+    assert data["runs"] == {
+        name: {
+            label: {k: v for k, v in summary.items() if k != "rows"} | {
+                "deltas": [r for r in summary["rows"]
+                           if r["baseline"] != r["outputs"]]}
+            for label, summary in result["corpus"].items()}
+        for name, result in observed.items()}
+    assert data["cost"] == {name: result["cost"]
+                            for name, result in observed.items()}
+    admission = observed["admission"]
+    assert data["admitted_source_cells"] == dict(zip(
+        admission["heldout_labels"],
+        admission["queries"]["admission:heldout"]["outputs"], strict=True))
+    for sc, before, after in [
+        ("SC047", "OEARestoration", "OEHeavySyllableNasalApocope"),
+        ("SC048", "OEHeavySyllableNasalApocope", "OESecondaryNasalization"),
+    ]:
+        rows = [r for r in observed["initial"]["rows"]
+                if r["live"][before] != r["live"][after]]
+        assert len(data["census"][sc]) == len(rows)
+        for summary, original in zip(data["census"][sc], rows, strict=True):
+            assert {key: summary[key] for key in original} == original
+            assert summary["before"] == original["live"][before]
+            assert summary["after"] == original["live"][after]
+    path = ROOT / ("Germanic/docs/sound_changes/order_tests/summaries/"
+                   "order_sensitivity_first_break_pilot_03_failures.tsv")
+    with path.open() as handle:
+        historical = [r for r in csv.DictReader(handle, delimiter="\t")
+                      if r["change_id"] == "SC047" and r["direction"] == "later"]
+    assert len(data["historical_reversal"]) == len(historical)
+    for summary, original in zip(data["historical_reversal"], historical, strict=True):
+        assert {key: summary[key] for key in original} == original
+        word = original["lexical_item"]
+        mechanism = ("h-loss/hiatus" if word in {"flee", "slay"} else
+                     "extra back mutation" if word in {"steal", "weave"} else
+                     "weak-ian tail" if original["baseline_output"].endswith("ian")
+                     else "plain an/en")
+        assert summary["mechanism"] == mechanism
+
+
+@functools.lru_cache(maxsize=1)
 def report():
-    return json.loads((AUDIT / "evidence.json").read_text())
+    data = json.loads((AUDIT / "evidence.json").read_text())
+    assert_archived_projection(data)
+    return data
 
 
 def test_current_census_deletes_short_nasal_a_without_a_weight_or_class_filter():
@@ -75,14 +143,20 @@ def test_current_census_deletes_short_nasal_a_without_a_weight_or_class_filter()
 
 
 def test_archived_matrix_authenticates_execution_and_distinct_mechanisms():
-    manifest = json.loads((AUDIT / "manifest.json").read_text())
-    assert hashlib.sha256((AUDIT / "experiments.zip").read_bytes()).hexdigest() == (
-        manifest["archive_sha256"])
-    with zipfile.ZipFile(AUDIT / "experiments.zip") as archive:
-        assert set(archive.namelist()) == set(manifest["members"])
-        for name, digest in manifest["members"].items():
-            assert hashlib.sha256(archive.read(name)).hexdigest() == digest
     data = report()
+    for path in [
+        ("runs", "initial", "early_loss", "changed"),
+        ("runs", "initial", "47-48-46", "deltas", 0, "outputs"),
+        ("census", "SC047", 0, "final"),
+        ("admitted_source_cells", "guma_acc_RTaylor"),
+    ]:
+        altered = copy.deepcopy(data)
+        parent = altered
+        for key in path[:-1]:
+            parent = parent[key]
+        parent[path[-1]] = None
+        with pytest.raises(AssertionError):
+            assert_archived_projection(altered)
     initial = data["runs"]["initial"]
     assert initial["early_loss"]["changed"] == 0
     assert initial["47-46-48"]["changed"] == 0

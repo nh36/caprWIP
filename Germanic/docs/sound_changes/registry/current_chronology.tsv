@@ -102,7 +102,7 @@ SC057	SC087	no_break_search_boundary	later_boundary	boundary_observation		67	102
 SC058	PWGmcChanges	runner_limited_boundary	earlier_boundary	boundary_observation						nonordering_observation
 SC058	SC087	no_break_search_boundary	later_boundary	boundary_observation			102		104	nonordering_observation
 SC059	SC048	technical_computational	earlier_boundary	technical	displacement_witness	68	57	70	59	consistent
-SC059	SC078	one_sided_chronology	later_boundary	independently_demonstrated	displacement_witness	68	93	70	95	consistent
+SC059	SC078	technical_computational	later_boundary	technical	displacement_witness	68	93	70	95	consistent
 SC060	SC055	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	69	64	71	66	consistent
 SC060	SC087	no_break_search_boundary	later_boundary	boundary_observation		69	102	71	104	nonordering_observation
 SC061	SC023	one_sided_chronology	earlier_boundary	independently_demonstrated	displacement_witness	70	6	72	8	consistent

@@ -172,7 +172,7 @@ digraph first_break_chronology {
   "SC058" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC058" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC059" -> "SC048" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
-  "SC059" -> "SC078" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC059" -> "SC078" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC060" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC060" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC061" -> "SC023" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
