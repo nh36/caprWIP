@@ -4945,23 +4945,33 @@ Ringe and Taylor's unstressed-vowel argument from *hegtis* 'witch'
 remains relevant, with its explicitly qualified syncope history
 [@RingeTaylor2014, p. 192].
 
-## Heavy-syllable nasal apocope
+## Final short nasal low-vowel apocope
 
-### Historical discussion of heavy-syllable nasal loss and secondary nasalization
+### Early low-vowel loss and its nasal fragment
 
-Heavy-syllable nasal apocope removes the final nasalized vowel; secondary
-nasalization then marks the preceding \emph{a} before final \emph{n}. The
-handbooks do not isolate both developments under equally prominent labels.
-Campbell describes later nasal loss and the back-mutation environment; Ringe
-and Taylor provide the later relation to back mutation
-[@Campbell1959, pp. 86, 166, §§205--206, 403;
-@RingeTaylor2014, p. 319, §6.9.4].
+The nasal deletion represented here belongs with
+[SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), not with a
+separately established heavy-syllable Old English apocope. Ringe and
+Taylor treat oral and nasal short-final low-vowel loss together as a
+West Germanic development. Their comparative evidence includes *horn*
+'horn' and the vocalization of glides stranded by vowel loss. Fulk
+explicitly distinguishes this weight-independent loss from later,
+quantitatively conditioned high-vowel loss
+[@RingeTaylor2014, pp. 44--47, §§3.1.2--3.1.3;
+@Fulk2018, pp. 79--81, 91--92, §§5.2, 5.6].
 
-The reciprocal failure set fixes the order: apocope removes the ending before
-secondary nasalization acts on the remaining structure. Restoration receives
-the fuller historical treatment in the handbooks.
+Campbell's discussion of protected endings and Hogg's account of earlier
+final-consonant and vowel losses provide the surrounding history
+[@Campbell1959, pp. 137--140, §331;
+@HoggPhonology1992, pp. 62--64, §§3.27--3.32].
+Campbell's separate discussion of nasal loss before fricatives does not
+date this apocope or secondary vowel nasalization
+[@Campbell1959, p. 166, §403].
+The later back-mutation discussion concerns a different interaction
+[@Campbell1959, pp. 85--86, §§205--206;
+@RingeTaylor2014, pp. 319--327, §6.9.4].
 
-### \CAPRRuleHeading{SC047. Heavy-syllable nasal apocope of final \emph{*ą}}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope}
+### \CAPRRuleHeading{SC047. Final short nasal low-vowel apocope}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope}
 
 ```foma
 define OEHeavySyllableNasalApocope Ctx([
@@ -4969,29 +4979,79 @@ define OEHeavySyllableNasalApocope Ctx([
 ]);
 ```
 
+The retained identifier contains an obsolete heavy-syllable description.
+The operation has no weight restriction: both the light stem of *þæc*
+'roof' and the heavy stem of *horn* undergo loss. Its consonant class
+also includes the glides. That does not reconstruct their entire history:
+Ringe and Taylor derive \emph{*sarwą > *saru} and
+\emph{*rīkiją > *rīki}, continued by *searu* 'device' and *rīce*
+'kingdom'. Their *mettas* 'foods' beside *mete* 'food' and OHG
+*beti* 'bed' support low-vowel loss and glide vocalization before
+j-gemination; the familiar geminate citation forms often reflect
+extension from other paradigm cells
+[@RingeTaylor2014, pp. 46--47].
+
+The executable position is later than that historical argument would
+suggest. Moving this fragment beside the oral loss changes no selected
+endpoint; its present position after restoration is not necessary.
+Moving it before gemination alone, however, removes vowel triggers
+still needed by the serialized u-lowering and changes the treatment
+of final consonants. Those dependencies explain limitations of the
+implementation, not a historically late date for apocope. The secondary
+final n of *dōn* 'do' must likewise be exposed only after
+[SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) has ceased to operate.
+
 The old lower-bound test depended on the superseded straw proxy:
 moving apocope before [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong)
-made PGmc [stráwą]{.recon} ‘straw’ yield [*stræw*]{.pred} rather than
-attested OE *strēaw* 'straw'. The adopted regular endingless branch now reaches
-reconstructed \emph{*strēa} through
-[SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw), before this
-apocope. The attested target retains analogically restored \emph{w}
-and explicitly mismatches the regular output. The old failure therefore
-does not independently place nasal apocope after a universal singleton
-long-diphthong law
+gave predicted \emph{*stræw} rather than attested OE *strēaw* 'straw'.
+The adopted regular endingless branch now reaches reconstructed
+\emph{*strēa} through
+[SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw), before this apocope.
+The attested target retains analogically restored \emph{w} and explicitly
+mismatches the regular output. That older failure does not independently
+place nasal apocope after a universal singleton long-diphthong law
 [@Campbell1959, pp. 46--47, 232--233;
 @RingeTaylor2014, pp. 172--173, 387].
 
-The separate recorded upper-bound test is unchanged: after
-[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), PGmc
-[bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE
-*bacan*, and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred}
-rather than expected *bindan*, alongside a broad \emph{-en} failure set.
-That secondary-nasalization dependency is not newly adjudicated here.
+For the retained final-n implementation,
+[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization) must see
+the n exposed by loss. Inverting the two operations gives predicted
+\emph{*bacen} for *bacan* 'bake' and \emph{*binden} for *bindan* 'bind'.
+This demonstrates a feeding relation between the two representations;
+the same reversal recorded from both directions is not two independent
+historical dates.
 
-## Secondary nasalization
+## Coda nasalization and the final-n proxy
 
-### \CAPRRuleHeading{SC048. Secondary nasalization before final \emph{*n}}{OESecondaryNasalization} {#rule-OESecondaryNasalization}
+### Historical conditioning and paradigms
+
+Unstressed short \emph{a} remained back before a nasal in the same
+syllable, while a nasal belonging to the next syllable did not prevent
+fronting. Ringe and Taylor give
+\emph{*bindaną > *bindan > *bindąn} for *bindan* 'bind', but also
+\emph{*bindandī > *bindąndī > *bindændi} for *bindende* 'binding'.
+The latter contains an internal coda: subsequent i-mutation changes
+its nasal low vowel. Final n alone is therefore too narrow as a statement
+of the historical phenomenon
+[@RingeTaylor2014, pp. 152--154, §5.1.2;
+@HoggPhonology1992, pp. 214--217, §§6.1--6.6;
+@Campbell1959, pp. 140--141, §§333--334].
+
+The paradigm of *guma* 'man' supplies independent evidence, but not
+uniformly inherited \emph{-an} in every cell. Ringe and Taylor take
+accusative singular and nominative plural as regular donors for extension
+to other cases. Fulk instead reconstructs an older accusative with
+\emph{-un}, citing Northumbrian *galgu* 'gallows' on the Ruthwell Cross,
+and derives the general \emph{-an} from other cells. The genitive and
+dative singulars and the complex history of *gumena* 'of men' must
+therefore be kept distinct from regular nasalization
+[@RingeTaylor2014, pp. 153--154; @Fulk2018, pp. 168--171, §§7.30--7.31].
+Likewise, inflected participial forms supply the proposed source of
+\emph{-en} in endingless participles; this is a paradigmatic argument,
+not grammatical conditioning of fronting
+[@RingeTaylor2014, p. 152; @Campbell1959, pp. 140--141, §§333--334].
+
+### \CAPRRuleHeading{SC048. Unstressed nasalization before final n}{OESecondaryNasalization} {#rule-OESecondaryNasalization}
 
 ```foma
 define OESecondaryNasalization [Ctx([
@@ -5001,20 +5061,58 @@ define OESecondaryNasalization [Ctx([
 ])];
 ```
 
-The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
+The retained relation is an explicit final-n proxy. Its selected
+applications affect short unaccented a exposed by
+[SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope);
+the secondary-stress companion is separately represented. Long \emph{ā}
+and accented \emph{á} are not targets; decoded unmarked vowels still
+require an independently justified stress history. The spelling evidence
+alone does not prove a nasal intermediate: Faulkner's 19,315 infinitives
+are written with \emph{-an} 96.1% of the time, including manuscripts
+whose conservative spellings cannot directly date the phonetic reduction
+[@Faulkner2020, pp. 3--7].
+
+The broad predicted \emph{-en} failure set when this proxy precedes
+apocope establishes a computational exposure dependency. The position
+of [SC046 OEARestoration](#rule-OEARestoration) matters separately:
+when apocope precedes both operations, premature nasalization can remove
+the encoded restoration trigger and give predicted \emph{*bæcan}.
+Neither comparison independently dates all historical coda nasalization.
+
+Back mutation requires a dialect-specific qualification. West Saxon
+\emph{e} is regularly mutated by following \emph{u}, not by the
+\emph{a} of the infinitive; Mercian *weofan* 'weave' is not the West
+Saxon *wefan*. The retained parallel clauses of
+[SC059 OEBackMutation](#rule-OEBackMutation) nevertheless admit an
+a-trigger for e. Thus delaying nasalization still yields predicted
+\emph{*steolan} and \emph{*weofan} computationally. Separating those
+clauses under the stated West Saxon trigger removes both differences.
+The old examples remain implementation dependencies, not independent
+historical proof of nasalization before West Saxon back mutation
+[@RingeTaylor2014, pp. 319--327, especially p. 325;
+@HoggPhonology1992, pp. 149--157, §§5.103--5.106;
+@Campbell1959, pp. 85--86, §§205--206].
 
 The [weak-paradigm comparison](#weak-n-paradigms-after-apocope) exposes
-the distinction between the adopted and earlier experimental histories. Long \emph{*ō} in a
-protected plural \emph{*flaskōn} 'flasks' is not a target of this
-short-\emph{*a} rule. In the former unrestricted sequence shortening created
-\emph{*a} too late for nasalization, so unstressed fronting yielded
-predicted [flascen]{.pred}. Experimental shortening after restoration
-but before nasalization instead gives \emph{*flaskąn} and *flascan*.
-Neither that experiment nor its output establishes an independent
-historical edge. In the adopted history long \emph{*ō} survives both
-this rule and unstressed fronting; later shortening and lowering give
-*flascan* without changing secondary nasalization [@RingeTaylor2014, pp. 163--164;
+the distinction between the adopted and earlier experimental histories.
+Long \emph{*ō} in a protected plural \emph{*flaskōn} 'flasks' is not
+a target of this short-a rule. In the former unrestricted sequence,
+shortening created a too late for nasalization, so unstressed fronting
+yielded predicted \emph{*flascen}. Experimental shortening after
+restoration but before nasalization instead gives \emph{*flaskąn} and
+*flascan*. Neither that experiment nor its output establishes an
+independent historical edge. In the adopted history long ō survives
+both nasalization and unstressed fronting; later shortening and lowering
+give *flascan* without changing this rule
+[@RingeTaylor2014, pp. 163--164;
 @Fulk2018, pp. 90, 171--172, §§5.6, 7.32--7.33].
+
+Wider early coda nasalization can preserve the selected endpoints when
+its i-mutation consumer and nasal restoration trigger are also represented.
+Directly blocking fronting before coda nasals can preserve them without
+a nasal intermediate under a strict West Saxon back-mutation condition.
+The retained final-n proxy does not choose between otherwise equivalent
+observations or claim to implement every reconstructed paradigm cell.
 
 ## Sievers-law syncope
 
@@ -5926,16 +6024,20 @@ define OEBackMutation FootCtx([
 ]);
 ```
 
-Three witness forms bracket the chronology. If back mutation precedes
-[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), forms such as
-[gébaną]{.recon} ‘give’ produce *ġeofan* ‘give’; the
-expected form is *ġiefan* ‘give’. [stélaną]{.recon} ‘steal’ likewise produces *steolan*
-‘steal’; the expected form is *stelan* ‘steal’. At the other edge, delaying
-back mutation until after
-[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) makes
-[wébaną]{.recon} ‘weave’ yield *weofan* ‘weave’; the expected form is *wefan* ‘weave’.
-Thus back mutation follows secondary nasalization but precedes the weak-tail
-reductions.
+The older displacement tests produce predicted \emph{*ġeofan},
+\emph{*steolan} and \emph{*weofan} when mutation precedes
+[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
+These remain implementation observations, not independent West Saxon
+chronology. The literal parallel clauses above admit an a-trigger for e,
+despite their written u-only condition; separating them into composed
+clauses under the same stated conditions removes the steal/weave
+difference. West Saxon e/u mutation must be distinguished from non-West-
+Saxon e/a mutation [@RingeTaylor2014, pp.319--327, especially p.325;
+@HoggPhonology1992, pp.149--157, §§5.103--5.106].
+The recorded later displacement across
+[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), yielding predicted
+\emph{*weofan}, likewise remains model-local. The source's broader
+mutation chronology is not decided by this one proxy interaction.
 
 ### Stress and the compound linker
 

@@ -131,6 +131,8 @@ def joint_sources():
 
 def before_joint_adoption(current):
     """Authenticate the adopted layer before applying older historical guards."""
+    from test_sc047_adjudication import before_sc047_adoption
+    current = before_sc047_adoption(current)
     before, after = joint_sources()
     assert current.keys() == after.keys()
     for name in current:

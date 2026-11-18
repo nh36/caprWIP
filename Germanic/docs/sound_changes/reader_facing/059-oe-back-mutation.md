@@ -30,16 +30,20 @@ define OEBackMutation FootCtx([
 ]);
 ```
 
-Three witness forms bracket the chronology. If back mutation precedes
-[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), forms such as
-[gébaną]{.recon} ‘give’ produce *ġeofan* ‘give’; the
-expected form is *ġiefan* ‘give’. [stélaną]{.recon} ‘steal’ likewise produces *steolan*
-‘steal’; the expected form is *stelan* ‘steal’. At the other edge, delaying
-back mutation until after
-[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) makes
-[wébaną]{.recon} ‘weave’ yield *weofan* ‘weave’; the expected form is *wefan* ‘weave’.
-Thus back mutation follows secondary nasalization but precedes the weak-tail
-reductions.
+The older displacement tests produce predicted \emph{*ġeofan},
+\emph{*steolan} and \emph{*weofan} when mutation precedes
+[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
+These remain implementation observations, not independent West Saxon
+chronology. The literal parallel clauses above admit an a-trigger for e,
+despite their written u-only condition; separating them into composed
+clauses under the same stated conditions removes the steal/weave
+difference. West Saxon e/u mutation must be distinguished from non-West-
+Saxon e/a mutation [@RingeTaylor2014, pp.319--327, especially p.325;
+@HoggPhonology1992, pp.149--157, §§5.103--5.106].
+The recorded later displacement across
+[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), yielding predicted
+\emph{*weofan}, likewise remains model-local. The source's broader
+mutation chronology is not decided by this one proxy interaction.
 
 ## Stress and the compound linker
 

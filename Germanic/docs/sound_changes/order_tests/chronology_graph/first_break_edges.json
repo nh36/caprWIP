@@ -328,23 +328,23 @@
     },
     {
       "change_id": "SC047",
-      "display_name": "OE Heavy Syllable Nasal Apocope",
+      "display_name": "Final short nasal low-vowel apocope",
       "lifecycle_status": "active",
       "rule_name": "OEHeavySyllableNasalApocope",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC047-oe-heavy-syllable-nasal-apocope.md",
       "card_type": "mixed",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "Later boundary carries the reciprocal 87-row broad -en failure set with SC048 earlier."
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Early weight-independent low-vowel loss, shared with SC041; late nasal fragment retained. SC047/048 reversal is one technical exposure dependency, not two historical dates."
     },
     {
       "change_id": "SC048",
-      "display_name": "OE Secondary Nasalization",
+      "display_name": "Coda nasalization: final-n proxy",
       "lifecycle_status": "active",
       "rule_name": "OESecondaryNasalization",
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC048-oe-secondary-nasalization.md",
       "card_type": "mixed",
-      "has_reciprocal_boundary": "yes",
-      "short_summary": "Earlier boundary carries the reciprocal 87-row broad -en failure set with SC047 later."
+      "has_reciprocal_boundary": "no",
+      "short_summary": "Historical coda domain precedes relevant fronting; selected final-n proxy retained. SC046 trigger quality and SC059 parallel-context leakage are model-local, not independent dates."
     },
     {
       "change_id": "SC049",
@@ -1735,44 +1735,44 @@
     {
       "source_change_id": "SC047",
       "target_change_id": "SC048",
-      "relation_type": "broad_far_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "bake; begin; believe; bind; bore",
       "representative_forms": "PGmc `*bákaną` yields expected OE `bacan`, but the later-shifted variant yields `bacen`; PGmc `*bíndaną` likewise yields `binden` instead of expected `bindan`",
-      "strength": "broad_reciprocal",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "RG12_SC047_SC048",
-      "notes": "Later boundary carries the reciprocal 87-row broad -en failure set with SC048 earlier."
+      "notes": "Preserve original87-row measurement. This is one reversal, currently89 with sow/betray: technical final-n exposure, not two independent historical dates. See sc047-adjudication.md and sc048-adjudication.md."
     },
     {
       "source_change_id": "SC048",
       "target_change_id": "SC047",
-      "relation_type": "broad_far_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "bake; begin; believe; bind; bore",
       "representative_forms": "PGmc `*bákaną` yields expected OE `bacan`, but the earlier-shifted variant yields `bacen`; PGmc `*bíndaną` likewise yields `binden` instead of expected `bindan`",
-      "strength": "broad_reciprocal",
-      "interpretation_category": "reciprocal_or_near_reciprocal",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "RG12_SC047_SC048",
-      "notes": "Earlier boundary carries the reciprocal 87-row broad -en failure set with SC047 later."
+      "notes": "Preserve original87-row measurement. This is one reversal, currently89 with sow/betray: technical final-n exposure, not two independent historical dates. See sc047-adjudication.md and sc048-adjudication.md."
     },
     {
       "source_change_id": "SC048",
       "target_change_id": "SC059",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "later_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "steal; weave",
       "representative_forms": "PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "Earlier boundary carries the reciprocal 87-row broad -en failure set with SC047 later."
+      "notes": "Preserve original measurement. Literal parallel back-mutation clauses admit a for e; separated strict-WS clauses remove steal/weave deltas. Model dependency, not independent WS chronology. See sc047-adjudication.md and sc048-adjudication.md."
     },
     {
       "source_change_id": "SC049",
@@ -2015,16 +2015,16 @@
     {
       "source_change_id": "SC059",
       "target_change_id": "SC048",
-      "relation_type": "one_sided_chronology",
+      "relation_type": "technical_computational",
       "direction_basis": "earlier_boundary",
-      "evidence_basis": "independently_demonstrated",
+      "evidence_basis": "technical",
       "witness_role": "displacement_witness",
       "representative_lexemes": "give; shear; steal; weave",
       "representative_forms": "PGmc `*gébaną` yields expected OE `ġiefan`, but the earlier-shifted variant yields `ġeofan`; PGmc `*stélaną` likewise yields `steolan` instead of expected `stelan`",
-      "strength": "one_sided",
-      "interpretation_category": "one_sided_chronology",
+      "strength": "model_local",
+      "interpretation_category": "technical_computational",
       "reciprocal_group_id": "",
-      "notes": "-"
+      "notes": "Preserve original measurement. Literal parallel back-mutation clauses admit a for e; separated strict-WS clauses remove steal/weave deltas. Model dependency, not independent WS chronology. See sc047-adjudication.md and sc048-adjudication.md."
     },
     {
       "source_change_id": "SC059",

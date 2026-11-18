@@ -36,8 +36,8 @@ digraph first_break_chronology {
   "SC044" [label="SC044\nOE Breaking"];
   "SC045" [label="SC045\nVoiceless velar-fricative palatal articulation"];
   "SC046" [label="SC046\nOE A Restoration"];
-  "SC047" [label="SC047\nOE Heavy Syllable Nasal Apocope"];
-  "SC048" [label="SC048\nOE Secondary Nasalization"];
+  "SC047" [label="SC047\nFinal short nasal low-vowel apocope"];
+  "SC048" [label="SC048\nCoda nasalization: final-n proxy"];
   "SC049" [label="SC049\nInherited labial positional realization"];
   "SC050" [label="SC050\nSievers Law Syncope"];
   "SC051" [label="SC051\nOE Sk Palatalization"];
@@ -151,9 +151,9 @@ digraph first_break_chronology {
   "SC046" -> "SC043" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC046" -> "SC048" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC047" -> "SC034" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
-  "SC047" -> "SC048" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC048" -> "SC047" [label="broad_far_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
-  "SC048" -> "SC059" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC047" -> "SC048" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC048" -> "SC047" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
+  "SC048" -> "SC059" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC049" -> "SC037" [label="superseded_experiment", color="#4a5568", fontcolor="#4a5568", style=dashed];
   "SC049" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC050" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
@@ -171,7 +171,7 @@ digraph first_break_chronology {
   "SC057" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC058" -> "PWGmcChanges" [label="runner_limited_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
   "SC058" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];
-  "SC059" -> "SC048" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
+  "SC059" -> "SC048" [label="technical_computational", color="#718096", fontcolor="#718096", style=dashed];
   "SC059" -> "SC078" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC060" -> "SC055" [label="one_sided_chronology", color="#2b6cb0", fontcolor="#2b6cb0"];
   "SC060" -> "SC087" [label="no_break_search_boundary", color="#c05621", fontcolor="#c05621", style=dashed];

@@ -35,3 +35,22 @@ Both observed boundaries are historically interpretable rather than technical. T
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_failures.tsv`
 - `Germanic/docs/sound_changes/sound_change_order_sensitivity.tsv`
+
+
+## SC047/SC048 source-critical update,18 November2026
+
+The current [SC047 memorandum](../audits/sc047-adjudication.md) and
+[SC048 memorandum](../audits/sc048-adjudication.md) supersede earlier
+interpretations, not the measurements above/below. SC047 is the
+weight-independent nasal fragment of SC041's early low-vowel apocope;
+SC048 is the final-n proxy for a wider historical coda-nasal domain.
+The historical87 reversal is one experiment, now89 with sow/betray.
+The late loss can move beside SC041 or after rhotacism without selected
+endpoint changes; pre-gemination movement alone crosses other consumers.
+The literal back-mutation relation still produces steolan/weofan when
+nasalization is delayed, but strict separated WS clauses remove that
+dependence. No independent WS historical edge follows from those words.
+The wider early-coda candidate and direct blocking with strict WS triggers
+both preserve394 selected outputs; source paradigm and glide limits
+remain explicit. Earlier161/89 censuses,87 expectations and local
+experimental prose are dated historical evidence, not current censuses.

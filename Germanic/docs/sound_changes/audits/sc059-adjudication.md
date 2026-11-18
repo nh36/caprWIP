@@ -252,3 +252,16 @@ are exactly those in the executed final trial. Earlier expected answers
 remain independent frozen observations, not rewritten for the new production.
 Measured adoption costs and final source-bound validation are recorded with
 the landing commit; no timeout substitutes for the cost review.
+
+
+## SC047/SC048 interaction qualification,18 November2026
+
+The stress restriction above is retained unchanged. The new coordinated
+SC047/048 assay finds that the literal parallel clauses accept an a-trigger
+for e despite their written u-only environments. Delayed nasalization
+therefore still gives steolan/weofan. A separately compiled strict-WS
+composition removes those differences while preserving all394 outputs;
+it is a reviewable, unadopted alternative, not a reopened rainbow decision.
+The SC048/SC059 edges are consequently model-local rather than independently
+dated West Saxon chronology. See sc048-adjudication.md and its source
+assessment for Ringe--Taylor319--327/Hogg149--157 and the exact records.

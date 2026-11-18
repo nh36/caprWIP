@@ -37,13 +37,13 @@ chronology constraints.
 
 | relation_type | count |
 | --- | ---: |
-| `broad_far_chronology` | 12 |
+| `broad_far_chronology` | 10 |
 | `no_break_search_boundary` | 21 |
-| `one_sided_chronology` | 40 |
+| `one_sided_chronology` | 38 |
 | `reciprocal_chronology` | 20 |
 | `runner_limited_boundary` | 17 |
 | `superseded_experiment` | 14 |
-| `technical_computational` | 26 |
+| `technical_computational` | 30 |
 
 ## Chronology edges
 
@@ -77,9 +77,6 @@ chronology constraints.
 1. `SC044 -> SC045` (one_sided_chronology; independently_demonstrated; witness role: bleeding) — lexemes: `fee; fight`; forms: Live é -> éo preserves x but removes its front-vowel context; SC044-after-SC045 yields feh and fehtan.
 1. `SC044 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: feeding) — lexemes: `belly; laugh`; forms: bielġ: æ -> ea -> ie; reversed belġ. hliehhan: æ -> ea -> ie; mutation-first hleohhan; breaking also past SC045 hlehhan.
 1. `SC045 -> SC060` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `six`; forms: PGmc `*séxs` yields expected OE `six`, but the later-shifted variant yields `sihs`
-1. `SC047 -> SC048` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bake; begin; believe; bind; bore`; forms: PGmc `*bákaną` yields expected OE `bacan`, but the later-shifted variant yields `bacen`; PGmc `*bíndaną` likewise yields `binden` instead of expected `bindan`
-1. `SC048 -> SC047` (broad_far_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bake; begin; believe; bind; bore`; forms: PGmc `*bákaną` yields expected OE `bacan`, but the earlier-shifted variant yields `bacen`; PGmc `*bíndaną` likewise yields `binden` instead of expected `bindan`
-1. `SC048 -> SC059` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `steal; weave`; forms: PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`
 1. `SC050 -> SC052` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stretch`; forms: PGmc `*strákkijaną` yields expected OE `streċċan`, but the later-shifted variant yields `strecċan`
 1. `SC051 -> SC056` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `shaft; shear; sheep; shield`; forms: PGmc `*skáftą` yields expected OE `sċeaft`, but the later-shifted variant yields `sċæft`; PGmc `*skéraną` likewise yields `sċeran` instead of expected `sċieran`
 1. `SC052 -> SC050` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `stretch`; forms: PGmc `*strákkijaną` yields expected OE `streċċan`, but the earlier-shifted variant yields `strecċan`
@@ -88,7 +85,6 @@ chronology constraints.
 1. `SC054 -> SC063` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `sea`; forms: PGmc `*sáiwiz` yields expected OE `sǣ`, but the later-shifted variant again yields `sǣw`
 1. `SC055 -> SC052` (reciprocal_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `cow; lung`; forms: PGmc `*kūi` yields expected OE `cȳ`, but the earlier-shifted variant yields `ċȳ`; PGmc `*lúnganjō` likewise yields `lunġen` instead of expected `lungen`
 1. `SC057 -> SC052` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `bow; follow; hedge; seek; singe`; forms: PGmc `*báugijaną` yields expected OE `bīeġan`, but the earlier-shifted variant yields `bēaġan`; PGmc `*sōkijaną` likewise yields `sōċan` instead of expected `sēċan`
-1. `SC059 -> SC048` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `give; shear; steal; weave`; forms: PGmc `*gébaną` yields expected OE `ġiefan`, but the earlier-shifted variant yields `ġeofan`; PGmc `*stélaną` likewise yields `steolan` instead of expected `stelan`
 1. `SC059 -> SC078` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `steal; weave`; forms: PGmc `*stélaną` yields expected OE `stelan`, but the later-shifted variant yields `steolan`; PGmc `*wébaną` likewise yields `weofan` instead of expected `wefan`
 1. `SC060 -> SC055` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `might; night`; forms: PGmc `*máxtiz` yields expected OE `miht`, but the earlier-shifted variant yields `mieht`; PGmc `*náxti` likewise yields `nieht` instead of expected `niht`
 1. `SC061 -> SC023` (one_sided_chronology; independently_demonstrated; witness role: displacement_witness) — lexemes: `do`; forms: PGmc `*dōną` yields expected OE `dōn`, but the earlier-shifted variant yields no output (`+?` in the TSV)
@@ -163,6 +159,9 @@ chronology constraints.
 1. `SC046 -> SC043` (technical_computational)
 1. `SC046 -> SC048` (technical_computational)
 1. `SC047 -> SC034` (technical_computational)
+1. `SC047 -> SC048` (technical_computational)
+1. `SC048 -> SC047` (technical_computational)
+1. `SC048 -> SC059` (technical_computational)
 1. `SC049 -> SC037` (superseded_experiment)
 1. `SC049 -> SC087` (no_break_search_boundary)
 1. `SC050 -> PWGmcChanges` (runner_limited_boundary)
@@ -172,6 +171,7 @@ chronology constraints.
 1. `SC057 -> SC087` (no_break_search_boundary)
 1. `SC058 -> PWGmcChanges` (runner_limited_boundary)
 1. `SC058 -> SC087` (no_break_search_boundary)
+1. `SC059 -> SC048` (technical_computational)
 1. `SC060 -> SC087` (no_break_search_boundary)
 1. `SC061 -> SC087` (no_break_search_boundary)
 1. `SC064 -> SC041` (technical_computational)
