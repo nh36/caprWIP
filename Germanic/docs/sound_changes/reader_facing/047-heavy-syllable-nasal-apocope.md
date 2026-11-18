@@ -16,7 +16,7 @@ quantitatively conditioned high-vowel loss
 Campbell's discussion of protected endings and Hogg's account of earlier
 final-consonant and vowel losses provide the surrounding history
 [@Campbell1959, pp. 137--140, §331;
-@HoggPhonology1992, pp. 62--64, §§3.27--3.32].
+@HoggGrammar2011, pp. 62--64, §§3.27--3.32].
 Campbell's separate discussion of nasal loss before fricatives does not
 date this apocope or secondary vowel nasalization
 [@Campbell1959, p. 166, §403].

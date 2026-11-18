@@ -258,3 +258,14 @@ only the independently source-backed productive input-tail coverage repair.
 Keep the wider coda and strict-WS clause separation as explicit reviewable
 alternatives. No settled stress domain, selected input, target, lexical
 population or baseline is changed.
+
+### Publication citation correction
+
+The portable chapter-range check caught an incorrect bibliographic key,
+not an incorrect page in the held source. The consulted Hogg volume is
+the 2011 reissue of *A Grammar of Old English*, volume 1, cited as
+`HoggGrammar2011`; `HoggPhonology1992` instead identifies the Cambridge
+History chapter on pp.67--167. Correct the current reader citations and
+holdings key without changing the consulted PDF, printed-page locators,
+historical conclusions or archived experiment measurements. The earlier
+failed validation receipt is preserved rather than relabelled as a pass.

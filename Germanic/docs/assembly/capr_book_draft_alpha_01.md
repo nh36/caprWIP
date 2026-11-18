@@ -5045,7 +5045,7 @@ quantitatively conditioned high-vowel loss
 Campbell's discussion of protected endings and Hogg's account of earlier
 final-consonant and vowel losses provide the surrounding history
 [@Campbell1959, pp. 137--140, §331;
-@HoggPhonology1992, pp. 62--64, §§3.27--3.32].
+@HoggGrammar2011, pp. 62--64, §§3.27--3.32].
 Campbell's separate discussion of nasal loss before fricatives does not
 date this apocope or secondary vowel nasalization
 [@Campbell1959, p. 166, §403].
@@ -5116,7 +5116,7 @@ The latter contains an internal coda: subsequent i-mutation changes
 its nasal low vowel. Final n alone is therefore too narrow as a statement
 of the historical phenomenon
 [@RingeTaylor2014, pp. 152--154, §5.1.2;
-@HoggPhonology1992, pp. 214--217, §§6.1--6.6;
+@HoggGrammar2011, pp. 214--217, §§6.1--6.6;
 @Campbell1959, pp. 140--141, §§333--334].
 
 The paradigm of *guma* 'man' supplies independent evidence, but not
@@ -5172,7 +5172,7 @@ clauses under the stated West Saxon trigger removes both differences.
 The old examples remain implementation dependencies, not independent
 historical proof of nasalization before West Saxon back mutation
 [@RingeTaylor2014, pp. 319--327, especially p. 325;
-@HoggPhonology1992, pp. 149--157, §§5.103--5.106;
+@HoggGrammar2011, pp. 149--157, §§5.103--5.106;
 @Campbell1959, pp. 85--86, §§205--206].
 
 The [weak-paradigm comparison](#weak-n-paradigms-after-apocope) exposes
@@ -6115,7 +6115,7 @@ despite their written u-only condition; separating them into composed
 clauses under the same stated conditions removes the steal/weave
 difference. West Saxon e/u mutation must be distinguished from non-West-
 Saxon e/a mutation [@RingeTaylor2014, pp.319--327, especially p.325;
-@HoggPhonology1992, pp.149--157, §§5.103--5.106].
+@HoggGrammar2011, pp.149--157, §§5.103--5.106].
 The recorded later displacement across
 [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), yielding predicted
 \emph{*weofan}, likewise remains model-local. The source's broader

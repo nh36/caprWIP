@@ -39,7 +39,7 @@ despite their written u-only condition; separating them into composed
 clauses under the same stated conditions removes the steal/weave
 difference. West Saxon e/u mutation must be distinguished from non-West-
 Saxon e/a mutation [@RingeTaylor2014, pp.319--327, especially p.325;
-@HoggPhonology1992, pp.149--157, §§5.103--5.106].
+@HoggGrammar2011, pp.149--157, §§5.103--5.106].
 The recorded later displacement across
 [SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), yielding predicted
 \emph{*weofan}, likewise remains model-local. The source's broader
