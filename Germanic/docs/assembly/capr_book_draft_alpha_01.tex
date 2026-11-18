@@ -6977,9 +6977,7 @@ define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
     .o. OEBreakingI
     .o. OEBreakingLong
-    .o. [{*ǽ} -> {*æ},
-    {*à} -> {*a},
-    {*è} -> {*e}]);
+    );
 \end{ReaderFacingFoma}
 \end{minipage}
 
@@ -7007,10 +7005,11 @@ define EnglishBreakingLContext [ {*l} [EnglishStarConsonant - [{*l}|{*j}]] | {*l
 The initial-nucleus restriction is an executable proxy for stress after
 the primary accent has been consumed. It excludes genuinely weak medial
 vowels. Secondary short front \emph{ǽ} is carried separately from
-earlier \emph{à}; it can break in a noninitial root. The annotation is
-decoded only after its breaking consumer, not at an invented historical
-date of general destressing. \emph{erian} `plough' independently
-protects the unbroken \emph{rj} history
+earlier \emph{à}; it can break in a noninitial root. Surviving low/front
+annotation is retained through restoration, mutation and
+\hyperref[rule-OENonHighSyn]{SC114 OENonHighSyn}, not decoded at an
+invented historical date of general destressing. \emph{erian} `plough'
+independently protects the unbroken \emph{rj} history
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 182};
 \citeproc{ref-HoggGrammar2011}{Hogg 2011, 217--18}, §§6.7--8).
 
@@ -7375,15 +7374,17 @@ nos. 497,547,1087; \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014,
 
 \subsection{\texorpdfstring{\CAPRRuleHeading{SC046. Restoration of \emph{*a} before following back vowels}{OEARestoration}}{}}\label{rule-OEARestoration}
 
-\noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define OEARestoration FootCtx((
-    {*æ} -> {*a} || _
+define OEARestoration [FootCtx((
+    {*æ} -> {*a} || .#. OEAnyConsonant* _
         OEARestorationIntervening OEARestorationTriggerVowel
         - OEARestorationIntervening OEARestorationWeakTailVowel
-));
+))] .o. [FootCtx((
+    {*ǽ} -> {*à} || _
+        OEARestorationIntervening OEARestorationTriggerVowel
+        - OEARestorationIntervening OEARestorationWeakTailVowel
+))];
 \end{ReaderFacingFoma}
-\end{minipage}
 
 The working account requires a stressed short front target and a
 historically back following vowel; stress on the target must not be
@@ -7432,17 +7433,21 @@ singular \emph{flasce} `flask' after inflected \emph{flascan}
 \citeproc{ref-Luick1914}{Luick 1914-\/-1940, 152--53}, §161;
 \citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 163--64, 192}).
 
-The printed executable remains a broader proxy than the stressed-target
-history. It also retracts unstressed linkers in \emph{reġnboga}
-`rainbow' and \emph{eorþcunde} `earthly'. A stressed-target restriction
-removes both applications: the latter still converges through ordinary
-syncope, but the former develops a diphthong at
-\hyperref[rule-OEBackMutation]{SC059 OEBackMutation} which then escapes
-syncope, yielding \Pred{reġneafoga}. This is a disclosed interaction
-requiring further adjudication, not evidence that the linker was
-stressed. The restriction is therefore not adopted here. Ringe and
-Taylor's unstressed-vowel argument from \emph{hegtis} `witch' remains
-relevant, with its explicitly qualified syncope history
+The executable now restricts restoration and
+\hyperref[rule-OEBackMutation]{SC059 OEBackMutation} jointly to stressed
+targets. The unstressed linkers in \emph{reġnboga} `rainbow' and
+\emph{eorþcunde} `earthly' remain short \emph{æ} until
+\hyperref[rule-OENonHighSyn]{SC114 OENonHighSyn}. Restricting
+restoration alone, with the former broader back mutation, instead gives
+predicted \Pred{reġneafoga}; that counterfactual is not the adopted
+derivation. Secondary low/front annotations survive the two rules and
+syncope before being decoded. Later weak-vowel processing still limits
+the representation of constructed subordinate-root controls; this does
+not establish a historical date of stress loss
+(\citeproc{ref-PurnellRaimySalmons2019}{Purnell et al. 2019, e461--63};
+\citeproc{ref-HoggGrammar2011}{Hogg 2011, 220--22}, §§6.14--6.18). Ringe
+and Taylor's unstressed-vowel argument from \emph{hegtis} `witch'
+remains relevant, with its explicitly qualified syncope history
 (\citeproc{ref-RingeTaylor2014}{Ringe and Taylor 2014, 192}).
 
 \section{Heavy-syllable nasal
@@ -7502,9 +7507,11 @@ here.
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define OESecondaryNasalization Ctx([
+define OESecondaryNasalization [Ctx([
     {*a} -> {*ą} || _ {*n} .#.
-]);
+])] .o. [Ctx([
+    {*à} -> {*ą} || _ {*n} .#.
+])];
 \end{ReaderFacingFoma}
 \end{minipage}
 
@@ -8295,6 +8302,8 @@ displacement failure supplies no positive historical terminus.
 \begin{ReaderFacingFoma}
 define OEIUmlautFronting [
     {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*à} -> {*ǽ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*è} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
@@ -8363,9 +8372,11 @@ histories.
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define OEIUmlautRaising [
+define OEIUmlautRaising [[
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
-];
+]] .o. [[
+    {*ǽ} -> {*è} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+]];
 \end{ReaderFacingFoma}
 \end{minipage}
 
@@ -8617,11 +8628,13 @@ liquids
 (\texttt{OEBackMutation})}{SC059. Back mutation before labials and liquids (OEBackMutation)}}\label{rule-OEBackMutation}
 
 \begin{ReaderFacingFoma}
-define OEBackMutation Ctx([
-    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
-    # Stressed variant (stress preserved on first element):
-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+define OEBackMutation FootCtx([
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
+]) .o. Ctx([
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]);
 \end{ReaderFacingFoma}
 
@@ -8657,12 +8670,13 @@ short \emph{æ} until \hyperref[rule-OENonHighSyn]{SC114 OENonHighSyn},
 while the subordinate root's \emph{o} has already arisen by
 \hyperref[rule-PNWGmcULowering]{SC017 PNWGmcULowering}. This joint
 restriction reaches the selected endpoint; restricting restoration alone
-instead exposes the linker to back mutation. The present executable
-remains unchanged: secondary prominence is partly decoded earlier, and a
-complete implementation must preserve the relevant information rather
-than infer stress from the absence of an accent. The compound's spelling
-does not distinguish this inherited history from later composition of
-the developed rain and bow words.
+instead exposes the linker to back mutation. The adopted joint
+implementation preserves the relevant secondary low/front annotation
+through syncope rather than infer stress from an unmarked medial vowel.
+Later weak-vowel processing remains a limitation for constructed
+subordinate-root controls, not a dated stress-loss law. The compound's
+spelling does not distinguish this inherited history from later
+composition of the developed rain and bow words.
 
 \section{West Saxon palatal umlaut}\label{west-saxon-palatal-umlaut}
 
@@ -8818,8 +8832,8 @@ chronology and the notation's lifetime must be kept separate. The rules
 distinguish ordinary heavy/open high-vowel loss from later light
 pre-\emph{*l} loss. \emph{Weorold} `world' retains its established
 selected history. \emph{Eorþcunde} `earthly' and \emph{reġnboga}
-`rainbow' now lose the linking \emph{*a} here rather than through the
-former early proxy.
+`rainbow' now lose their short fronted linker \emph{æ} here rather than
+through the former early proxy.
 
 \subsection{Compound formation and comparative linking-vowel
 evidence}\label{compound-formation-and-comparative-linking-vowel-evidence}
@@ -8931,7 +8945,7 @@ former early rule.
 {\emph{reġnboga}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!regnboga@\iventry{reġnboga}{}}
 `rainbow' and
 {\emph{eorþcunde}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!eorthcunde@\iventry{eorþcunde}{}}
-`earthly' remain genuine selected \emph{a}-deletion witnesses, not
+`earthly' remain genuine selected nonhigh-vowel deletion witnesses, not
 evidence for the new high-vowel restriction. The source-proposed
 \emph{ūtumist} history supplies a distinct transmitted-mutation and
 weak-vowel-loss control; its final root alone does not independently
@@ -8979,13 +8993,25 @@ for every historical name (\citeproc{ref-Russom2001}{Russom 2001,
 
 \noindent\begin{minipage}{\linewidth}
 \begin{ReaderFacingFoma}
-define OENonHighSyn FootCtx([
+define OENonHighSyn [FootCtx([
     [{*a}|{*æ}|{*e}] -> 0 ||
         .#. OEAnyConsonant* EnglishStarVocalic
         [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
         _ OEAnyConsonant EnglishStarVocalic
         [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.
-]);
+])] .o. OESecondaryFrontDecode;
+\end{ReaderFacingFoma}
+\end{minipage}
+
+Surviving secondary low/front labels are decoded only after this
+deletion, so a marked subordinate-root vowel is not mistaken for an
+unstressed medial vowel. This is notation management, not a new
+historical destressing law. Later weak-vowel processing remains a
+limitation of constructed subordinate-root controls.
+
+\noindent\begin{minipage}{\linewidth}
+\begin{ReaderFacingFoma}
+define OESecondaryFrontDecode Ctx([{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);
 \end{ReaderFacingFoma}
 \end{minipage}
 
@@ -18163,8 +18189,7 @@ Proto input: \emph{*régnabùgô}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
 \mbox{OE Strip Secondary Stress} & \emph{*régnabogô} \\
 \mbox{EAF Brightening Unstressed} & \emph{*régnæbogô} \\
-\mbox{OE A Restoration} & \emph{*régnabogô} \\
-\mbox{OE Velar Palatalization} & \emph{*réʝnabogô} \\
+\mbox{OE Velar Palatalization} & \emph{*réʝnæbogô} \\
 \mbox{OE Non High Syn} & \emph{*réʝnbogô} \\
 OE Unstressed Long Vowel Shortening & \emph{*réʝnboga} \\
 \mbox{OE Palatal Fricative Merger} & \emph{*réjnboga} \\
@@ -18257,7 +18282,7 @@ shortens, and the palatal consonant is represented in the selected
 spelling
 {\emph{reġnboga}}\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!regnboga@\iventry{reġnboga}{}}.
 The second velar remains before a back vowel. Thus the adopted chain is
-\emph{*régna-bùgô > *régna-bògô > *régnabogô > *réʝnabogô
+\emph{*régna-bùgô > *régna-bògô > *régnabogô > *régnæbogô > *réʝnæbogô
 > *réʝnbogô > *réʝnboga > *réjnboga}, then \emph{reġnboga}. The
 intermediate accented and palatal symbols are analytical
 representations, not alternative manuscript spellings. The principal
@@ -18331,8 +18356,8 @@ Under both restrictions the working history is therefore
 stressed vowel and its own ending; later syncope concerns the different,
 unstressed first-member vowel.
 
-The current implementation instead retracts that linker to \emph{a}
-before deleting it. Restricting restoration alone exposes it to back
+The earlier implementation instead retracted that linker to \emph{a}
+before deleting it. Restricting restoration alone exposed it to back
 mutation, producing \emph{ea}, which escapes monophthong syncope and
 gives predicted \emph{*reġneafoga}. Restricting back mutation alone
 leaves the current path intact; restricting both preserves short
@@ -18342,12 +18367,14 @@ linker of \emph{eorþcunde} `earthly' likewise disappears, while
 independent \emph{boga} keeps its early lowered vowel.
 
 This supports the conditional inherited derivation, not an unrestricted
-implementation claim. Earlier annotation decoding has already erased
-some secondary prominence before these rules. Preserving it through the
-two operations and syncope repairs the local distinction, but
-constructed subordinate-root controls expose further late weak-vowel
-processing. The joint correction remains a research proposal rather than
-silently altering production on the strength of the matching endpoint.
+implementation claim. In the former implementation, annotation decoding
+erased some secondary prominence before these rules. Preserving it
+through the two operations and syncope repairs the local distinction,
+but constructed subordinate-root controls expose further late weak-vowel
+processing. The adopted joint correction preserves those annotations
+through syncope. The later constructed-control limitation remains
+disclosed; adoption does not claim a complete account of every
+secondary-stress development.
 
 \subsection{What the English witnesses can
 date}\label{what-the-english-witnesses-can-date}
@@ -22712,7 +22739,6 @@ PWGmc Surviving Bimoric O Unrounding & \emph{*érθakùndā} \\
 \mbox{EAF Brightening Unstressed} & \emph{*érθækùndā} \\
 \mbox{EAF Brightening Long Final} & \emph{*érθækùndǣ} \\
 \mbox{OE Breaking} & \emph{*éorθækùndǣ} \\
-\mbox{OE A Restoration} & \emph{*éorθakùndǣ} \\
 \mbox{OE Non High Syn} & \emph{*éorθkùndǣ} \\
 \mbox{OE High Stress Decode} & \emph{*éorθkundǣ} \\
 OE Unstressed Long Vowel Shortening & \emph{*éorθkundæ} \\
@@ -22938,11 +22964,19 @@ prominence is not automatically attested speech stress
 representation}\label{the-selected-regular-span-and-its-executable-representation}
 
 The supported chain is \emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθakundǭ >
-*éorθakundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde}, followed by
+*éorθækundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde}, followed by
 \emph{eorþcunde}. Dental hardening, linking-vowel deletion, breaking and
 existing final shortening and merger account for the changes other than
 medial protection. The selected bimoric nasal ending is already within
 the input notation.
+
+The unstressed linker remains short \emph{æ} under the jointly
+restricted \hyperref[rule-OEARestoration]{SC046 OEARestoration} and
+\hyperref[rule-OEBackMutation]{SC059 OEBackMutation}, then deletes by
+ordinary nonhigh syncope. This changes its intermediate quality, not the
+selected cell, medial-root protection or endpoint
+(\citeproc{ref-PurnellRaimySalmons2019}{Purnell et al. 2019, e461--63};
+\citeproc{ref-HoggGrammar2011}{Hogg 2011, 220--22}, §§6.14--6.18).
 
 SC038 OEStripSecondaryStress removes the earlier compound annotation at
 its inherited position; ordinary nonhigh medial loss later belongs to
@@ -27988,7 +28022,7 @@ Proto input: \emph{*θūsèndi}
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Breaking} & \emph{*θūsend} \\
+\mbox{OE Non High Syn} & \emph{*θūsend} \\
 \end{tabularx}
 \end{minipage}
 \\

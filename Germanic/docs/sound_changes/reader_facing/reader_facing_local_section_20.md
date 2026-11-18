@@ -4583,9 +4583,7 @@ define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
     .o. OEBreakingI
     .o. OEBreakingLong
-    .o. [{*ǽ} -> {*æ},
-    {*à} -> {*a},
-    {*è} -> {*e}]);
+    );
 ```
 
 #### Short low front vowel {#rule-OEBreakingA}
@@ -4612,8 +4610,9 @@ define EnglishBreakingLContext [ {*l} [EnglishStarConsonant - [{*l}|{*j}]] | {*l
 The initial-nucleus restriction is an executable proxy for stress after
 the primary accent has been consumed. It excludes genuinely weak medial
 vowels. Secondary short front \emph{ǽ} is carried separately from earlier
-\emph{à}; it can break in a noninitial root. The annotation is decoded
-only after its breaking consumer, not at an invented historical date of
+\emph{à}; it can break in a noninitial root. Surviving low/front annotation
+is retained through restoration, mutation and
+[SC114 OENonHighSyn](#rule-OENonHighSyn), not decoded at an invented historical date of
 general destressing. *erian* 'plough' independently protects the
 unbroken \emph{rj} history [@RingeTaylor2014, p.182;
 @HoggGrammar2011, pp.217--218, §§6.7--8].
@@ -4902,11 +4901,15 @@ The early evidence does not uniformly decide between restoration and blocked fro
 ### \CAPRRuleHeading{SC046. Restoration of \emph{*a} before following back vowels}{OEARestoration} {#rule-OEARestoration}
 
 ```foma
-define OEARestoration FootCtx((
-    {*æ} -> {*a} || _
+define OEARestoration [FootCtx((
+    {*æ} -> {*a} || .#. OEAnyConsonant* _
         OEARestorationIntervening OEARestorationTriggerVowel
         - OEARestorationIntervening OEARestorationWeakTailVowel
-));
+))] .o. [FootCtx((
+    {*ǽ} -> {*à} || _
+        OEARestorationIntervening OEARestorationTriggerVowel
+        - OEARestorationIntervening OEARestorationWeakTailVowel
+))];
 ```
 
 The working account requires a stressed short front target and a historically back following vowel; stress on the target must not be confused with stress or subsequent changes in the following vowel. Singleton examples are strongest. Geminates include both *crabba* 'crab' and *racca* 'sailyard ring' as positives and *tæppa* 'tap' as a substantive negative. Neither a blanket geminate ban nor a special ban on *pp* is established. Evidence for *sk* and *st* does not equally license every *sC*, and the very limited *fC* evidence is specifically questioned by Hogg. A few consonant-plus-liquid forms do not establish an unrestricted extension to that class [@Campbell1959, p. 61, §§158--159; @HoggGrammar2011, pp. 93--96, §§5.35--37; @RingeTaylor2014, pp. 189--192].
@@ -4926,14 +4929,18 @@ that ending dispute from Campbell's and Luick's analysis of singular
 [@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161;
 @RingeTaylor2014, pp. 163--164, 192].
 
-The printed executable remains a broader proxy than the stressed-target
-history. It also retracts unstressed linkers in *reġnboga* 'rainbow' and
-*eorþcunde* 'earthly'. A stressed-target restriction removes both
-applications: the latter still converges through ordinary syncope, but
-the former develops a diphthong at [SC059 OEBackMutation](#rule-OEBackMutation)
-which then escapes syncope, yielding [reġneafoga]{.pred}. This is a
-disclosed interaction requiring further adjudication, not evidence that
-the linker was stressed. The restriction is therefore not adopted here.
+The executable now restricts restoration and
+[SC059 OEBackMutation](#rule-OEBackMutation) jointly to stressed targets.
+The unstressed linkers in *reġnboga* 'rainbow' and *eorþcunde* 'earthly'
+remain short \emph{æ} until
+[SC114 OENonHighSyn](#rule-OENonHighSyn). Restricting restoration alone,
+with the former broader back mutation, instead gives predicted
+[reġneafoga]{.pred}; that counterfactual is not the adopted derivation.
+Secondary low/front annotations survive the two rules and syncope before
+being decoded. Later weak-vowel processing still limits the representation
+of constructed subordinate-root controls; this does not establish a
+historical date of stress loss [@PurnellRaimySalmons2019, pp. e461--e463;
+@HoggGrammar2011, pp. 220--222, §§6.14--6.18].
 Ringe and Taylor's unstressed-vowel argument from *hegtis* 'witch'
 remains relevant, with its explicitly qualified syncope history
 [@RingeTaylor2014, p. 192].
@@ -4987,9 +4994,11 @@ That secondary-nasalization dependency is not newly adjudicated here.
 ### \CAPRRuleHeading{SC048. Secondary nasalization before final \emph{*n}}{OESecondaryNasalization} {#rule-OESecondaryNasalization}
 
 ```foma
-define OESecondaryNasalization Ctx([
+define OESecondaryNasalization [Ctx([
     {*a} -> {*ą} || _ {*n} .#.
-]);
+])] .o. [Ctx([
+    {*à} -> {*ą} || _ {*n} .#.
+])];
 ```
 
 The broad \emph{-an}/\emph{-en} split fixes the lower boundary of final \emph{*a} nasalization before \emph{n}. Before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope), PGmc [bákaną]{.recon} ‘bake’ yields [*bacen*]{.pred} rather than expected OE *bacan* 'bake', and PGmc [bíndaną]{.recon} ‘bind’ yields [*binden*]{.pred} rather than expected *bindan* 'bind'. The upper boundary comes from back mutation. After [SC059 OEBackMutation](#rule-OEBackMutation), PGmc [stélaną]{.recon} ‘steal’ yields [*steolan*]{.pred} rather than expected OE *stelan* ‘steal’, and PGmc [wébaną]{.recon} ‘weave’ yields [*weofan*]{.pred} rather than expected *wefan* ‘weave’. Reciprocal nasal-tail failures place secondary nasalization after apocope, and the later mutation witnesses place it before back mutation; [SC046 OEARestoration](#rule-OEARestoration) retains the clearest independent historical support.
@@ -5635,6 +5644,8 @@ displacement failure supplies no positive historical terminus.
 ```foma
 define OEIUmlautFronting [
     {*a} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*à} -> {*ǽ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
+    {*è} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*ā} -> {*ǣ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*e} -> {*i} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
     {*o} -> {*e} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger,
@@ -5691,9 +5702,11 @@ preserves the previously selected mutation and breaking histories.
 ### SC055. Raising under i-umlaut (`OEIUmlautRaising`) {#rule-OEIUmlautRaising}
 
 ```foma
-define OEIUmlautRaising [
+define OEIUmlautRaising [[
     {*æ} -> {*e} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
-];
+]] .o. [[
+    {*ǽ} -> {*è} || _ EnglishIUmlautIntervening EnglishIUmlautTrigger
+]];
 ```
 
 Raising of umlauted `æ` to `e` continues the same assimilatory event as fronting and therefore shares the chronology of general i-umlaut.
@@ -5903,11 +5916,13 @@ are logical rather than chronological relations [@Barrack1975, p. 34].
 ### SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
 
 ```foma
-define OEBackMutation Ctx([
-    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
-    # Stressed variant (stress preserved on first element):
-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+define OEBackMutation FootCtx([
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
+]) .o. Ctx([
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]);
 ```
 
@@ -5941,9 +5956,10 @@ nor [SC059 OEBackMutation](#rule-OEBackMutation). It can remain short \emph{æ} 
 [SC017 PNWGmcULowering](#rule-PNWGmcULowering). This joint restriction
 reaches the selected endpoint; restricting restoration alone instead
 exposes the linker to back mutation.
-The present executable remains unchanged: secondary prominence is partly
-decoded earlier, and a complete implementation must preserve the relevant
-information rather than infer stress from the absence of an accent.
+The adopted joint implementation preserves the relevant secondary
+low/front annotation through syncope rather than infer stress from an
+unmarked medial vowel. Later weak-vowel processing remains a limitation
+for constructed subordinate-root controls, not a dated stress-loss law.
 The compound's spelling does not distinguish this inherited history from
 later composition of the developed rain and bow words.
 
@@ -6088,8 +6104,8 @@ kept separate. The rules
 [SC066 OELAdjacentSyncope](#rule-OELAdjacentSyncope) now distinguish
 ordinary heavy/open high-vowel loss from later light pre-\emph{*l}
 loss. *Weorold* 'world' retains its established selected history.
-*Eorþcunde* 'earthly' and *reġnboga* 'rainbow' now lose the linking
-\emph{*a} here rather than through the former early proxy.
+*Eorþcunde* 'earthly' and *reġnboga* 'rainbow' now lose their short
+fronted linker \emph{æ} here rather than through the former early proxy.
 
 ### Compound formation and comparative linking-vowel evidence
 
@@ -6174,7 +6190,7 @@ premise. Complete selected weight controls and independently reconstructed
 later-stage controls now test the high-vowel core described under
 [SC065 OEMedialSyncope](#rule-OEMedialSyncope); they do not supply a
 complete inherited-compound discriminator for the former early rule. [*reġnboga*]{.iv lang=oe sort=regnboga} 'rainbow' and [*eorþcunde*]{.iv lang=oe sort=eorthcunde} 'earthly'
-remain genuine selected *a*-deletion witnesses, not evidence for the
+remain genuine selected nonhigh-vowel deletion witnesses, not evidence for the
 new high-vowel restriction. The source-proposed *ūtumist* history supplies a
 distinct transmitted-mutation and weak-vowel-loss control; its final root
 alone does not independently order mutation against loss of *u*
@@ -6211,13 +6227,23 @@ The earlier proxy's apparent dependency on grave removal did not date a universa
 ### SC114. Ordinary nonhigh syncope (`OENonHighSyn`) {#rule-OENonHighSyn}
 
 ```foma
-define OENonHighSyn FootCtx([
+define OENonHighSyn [FootCtx([
     [{*a}|{*æ}|{*e}] -> 0 ||
         .#. OEAnyConsonant* EnglishStarVocalic
         [OEAnyConsonant+ EnglishStarVocalic]* OEAnyConsonant+
         _ OEAnyConsonant EnglishStarVocalic
         [OEAnyConsonant|EnglishStarVocalic|{*ô}]* .#.
-]);
+])] .o. OESecondaryFrontDecode;
+```
+
+Surviving secondary low/front labels are decoded only after this deletion,
+so a marked subordinate-root vowel is not mistaken for an unstressed
+medial vowel. This is notation management, not a new historical destressing
+law. Later weak-vowel processing remains a limitation of constructed
+subordinate-root controls.
+
+```foma
+define OESecondaryFrontDecode Ctx([{*ǽ} -> {*æ}, {*à} -> {*a}, {*è} -> {*e}]);
 ```
 
 ## B allophony

@@ -1,11 +1,15 @@
-"""Authenticate research trials; these are not fresh counterfactual execution."""
+"""Authenticate frozen research and exercise the adopted stress domains."""
 import gzip
+import functools
 import hashlib
 import json
 from pathlib import Path
+import shlex
 import subprocess
 import sys
 import tempfile
+
+import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "Germanic/tools"))
@@ -96,7 +100,8 @@ def test_stressed_ae_positive_and_secondary_decoding_limits_are_not_hidden():
     assert endpoints["gasébun"] == ["ġeseofon"]
 
 
-def test_unapplied_review_diff_matches_the_exact_compiled_definitions():
+@functools.lru_cache(maxsize=1)
+def joint_sources():
     trials()
     manifest = json.loads((EVIDENCE / "manifest.json").read_text())
     source = subprocess.check_output(
@@ -121,3 +126,81 @@ def test_unapplied_review_diff_matches_the_exact_compiled_definitions():
         definition = re.sub(r"\b(" + "|".join(mapping) + r")\b",
                             lambda match: mapping[match[0]], plan["variants"][key])
         assert after[name].body == parse_defines(definition)[name].body
+    return before, after
+
+
+def before_joint_adoption(current):
+    """Authenticate the adopted layer before applying older historical guards."""
+    before, after = joint_sources()
+    assert current.keys() == after.keys()
+    for name in current:
+        assert "".join(current[name].body.split()) == "".join(after[name].body.split()), name
+    return before
+
+
+def test_unapplied_review_diff_matches_the_exact_compiled_definitions():
+    _, after = joint_sources()
+    current = parse_defines((ROOT / "Germanic/fsts/germanic.txt").read_text())
+    mapping = json.loads((EVIDENCE / "manifest.json").read_text())["candidate_definitions"]
+    assert {name: current[name].body for name in mapping.values()} == {
+        name: after[name].body for name in mapping.values()}
+
+
+@pytest.mark.runtime
+def test_staged_west_saxon_ae_and_stress_domain_live(
+        isolated_definitions, record_testsuite_property):
+    from capr_runtime import run_in_runner
+
+    script = r"""
+import json, os, re, subprocess, sys, tempfile, time
+from pathlib import Path
+sys.path.insert(0, "/usr/app/tools")
+from anglo_frisian_experiments import definition_image_source, foma_domain
+from capr_runtime import layout
+from sound_change_order_sensitivity import batch_apply_down
+started = time.perf_counter()
+inputs = ["*æ*l*u", "*g*e*b*æ*b*u", "*g*e*b*ǽ*b*u", "*s*t*æ*ð*u*l"]
+with tempfile.TemporaryDirectory(prefix="capr_staged_ealu_") as temporary:
+    directory = Path(temporary)
+    setup = time.perf_counter()
+    prefix = definition_image_source(layout().germanic_fst.read_text(), directory)
+    setup_seconds = time.perf_counter() - setup
+    appendix = ("clear stack\nregex " + foma_domain(inputs)
+                + " .o. OEBackMutation;\nsave stack staged.bin\nquit\n")
+    script = directory / "staged.foma"
+    script.write_text(prefix + "\n" + appendix)
+    with tempfile.TemporaryFile() as stdout, tempfile.TemporaryFile() as stderr:
+        compiling = time.perf_counter()
+        process = subprocess.Popen(
+            ["foma", "-q", "-f", script.name], cwd=directory,
+            stdout=stdout, stderr=stderr)
+        _, status, usage = os.wait4(process.pid, 0)
+        process.returncode = os.waitstatus_to_exitcode(status)
+        compile_seconds = time.perf_counter() - compiling
+        stdout.seek(0)
+        stderr.seek(0)
+        log = stdout.read().decode() + "\n" + stderr.read().decode()
+        if process.returncode or re.search(r"(?im)\b(error|syntax error|not defined)\b", log):
+            raise RuntimeError(log)
+    outputs = batch_apply_down(directory / "staged.bin", inputs)
+    print(json.dumps({
+        "inputs": inputs, "outputs": outputs,
+        "compiler_appendix": script.read_text()[len(prefix) + 1:],
+        "variants": 0, "networks": 1, "compiler_calls": 1,
+        "definition_preparation_calls": 0,
+        "image_loaded": prefix.startswith("load defined "),
+        "setup_seconds": setup_seconds, "compile_seconds": compile_seconds,
+        "seconds": time.perf_counter() - started,
+        "peak_foma_rss_kib": usage.ru_maxrss,
+        "memory_scope": "actual Linux Foma child via wait4"}))
+"""
+    result = run_in_runner(
+        isolated_definitions + "python3 -c " + shlex.quote(script),
+        text=True, capture_output=True, check=True, timeout=900)
+    observed = json.loads(result.stdout)
+    assert observed["outputs"] == [
+        ["*ea*l*u"], ["*g*e*b*æ*b*u"], ["*g*e*b*ea*b*u"], ["*s*t*æ*ð*u*l"]]
+    assert observed["compiler_appendix"].count("regex ") == 1
+    assert " .o. OEBackMutation;\nsave stack staged.bin\nquit\n" in (
+        observed["compiler_appendix"])
+    record_testsuite_property("rainbow_staged_ealu_execution", json.dumps(observed))

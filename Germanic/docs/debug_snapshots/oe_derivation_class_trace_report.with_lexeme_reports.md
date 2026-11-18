@@ -5003,7 +5003,7 @@ English Proto Input: *régnabùgô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PNWGmc U Lowering: *régnabògô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *régnabogô<br>EAF Brightening Unstressed: *régnæbogô<br>OE A Restoration: *régnabogô<br>OE Velar Palatalization: *réʝnabogô<br>OE Non High Syn: *réʝnbogô<br>OE Unstressed Long Vowel Shortening: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
+| **Northwest and West Germanic**<br>PNWGmc U Lowering: *régnabògô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Strip Secondary Stress: *régnabogô<br>EAF Brightening Unstressed: *régnæbogô<br>OE Velar Palatalization: *réʝnæbogô<br>OE Non High Syn: *réʝnbogô<br>OE Unstressed Long Vowel Shortening: *réʝnboga<br>OE Palatal Fricative Merger: *réjnboga |
 
 
 
@@ -5087,7 +5087,7 @@ The first velar undergoes palatalization, the final long weak vowel
 shortens, and the palatal consonant is represented in the selected spelling
 [*reġnboga*]{.iv lang=oe sort=regnboga role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:87" occ_id="Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:87:1"}. The second velar remains before a back vowel.
 Thus the adopted chain is
-\emph{*régna-bùgô > *régna-bògô > *régnabogô > *réʝnabogô
+\emph{*régna-bùgô > *régna-bògô > *régnabogô > *régnæbogô > *réʝnæbogô
 > *réʝnbogô > *réʝnboga > *réjnboga}, then *reġnboga*.
 The intermediate accented and palatal symbols are analytical
 representations, not alternative manuscript spellings.
@@ -5158,8 +5158,8 @@ working history is therefore
 stressed vowel and its own ending; later syncope concerns the different,
 unstressed first-member vowel.
 
-The current implementation instead retracts that linker to \emph{a}
-before deleting it. Restricting restoration alone exposes it to back
+The earlier implementation instead retracted that linker to \emph{a}
+before deleting it. Restricting restoration alone exposed it to back
 mutation, producing \emph{ea}, which escapes monophthong syncope and gives
 predicted \emph{*reġneafoga}. Restricting back mutation alone leaves the
 current path intact; restricting both preserves short \emph{æ} until
@@ -5169,12 +5169,13 @@ none of the 394 selected endpoints. The unstressed linker of *eorþcunde*
 lowered vowel.
 
 This supports the conditional inherited derivation, not an unrestricted
-implementation claim. Earlier annotation decoding has already erased
-some secondary prominence before these rules. Preserving it through the
+implementation claim. In the former implementation, annotation decoding
+erased some secondary prominence before these rules. Preserving it through the
 two operations and syncope repairs the local distinction, but constructed
 subordinate-root controls expose further late weak-vowel processing.
-The joint correction remains a research proposal rather than silently
-altering production on the strength of the matching endpoint.
+The adopted joint correction preserves those annotations through syncope.
+The later constructed-control limitation remains disclosed; adoption does
+not claim a complete account of every secondary-stress development.
 
 #### What the English witnesses can date
 
@@ -9447,7 +9448,7 @@ English Proto Input: *θūsèndi
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *θūsènd<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Breaking: *θūsend |
+| **Northwest and West Germanic**<br>PWGmc Early I Apocope: *θūsènd<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Non High Syn: *θūsend |
 
 
 
@@ -10892,7 +10893,7 @@ English Proto Input: *érθakùnðǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *érθakùndā<br>EAF Brightening Unstressed: *érθækùndā<br>EAF Brightening Long Final: *érθækùndǣ<br>OE Breaking: *éorθækùndǣ<br>OE A Restoration: *éorθakùndǣ<br>OE Non High Syn: *éorθkùndǣ<br>OE High Stress Decode: *éorθkundǣ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
+| **Northwest and West Germanic**<br>PWGmc Dental Hardening: *érθakùndǭ<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *érθakùndā<br>EAF Brightening Unstressed: *érθækùndā<br>EAF Brightening Long Final: *érθækùndǣ<br>OE Breaking: *éorθækùndǣ<br>OE Non High Syn: *éorθkùndǣ<br>OE High Stress Decode: *éorθkundǣ<br>OE Unstressed Long Vowel Shortening: *éorθkundæ<br>OE Unstressed AE Merger: *éorθkunde |
 
 
 
@@ -11089,11 +11090,19 @@ Metrical prominence is not automatically attested speech stress
 
 The supported chain is
 \emph{*érθa-kùnðǭ > *érθa-kùndǭ > *érθakundǭ >
-*éorθakundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
+*éorθækundǭ > *éorθkundǭ > *éorθkundæ > *éorθkunde},
 followed by *eorþcunde*. Dental hardening, linking-vowel deletion,
 breaking and existing final shortening and merger account for the
 changes other than medial protection. The selected bimoric nasal
 ending is already within the input notation.
+
+The unstressed linker remains short \emph{æ} under the jointly restricted
+[SC046 OEARestoration](#rule-OEARestoration) and
+[SC059 OEBackMutation](#rule-OEBackMutation), then deletes by ordinary
+nonhigh syncope. This changes its intermediate quality, not the selected
+cell, medial-root protection or endpoint
+[@PurnellRaimySalmons2019, pp. e461--e463;
+@HoggGrammar2011, pp. 220--222, §§6.14--6.18].
 
 SC038 OEStripSecondaryStress removes the earlier compound annotation
 at its inherited position; ordinary nonhigh medial loss later belongs to

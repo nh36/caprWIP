@@ -86,7 +86,7 @@ The first velar undergoes palatalization, the final long weak vowel
 shortens, and the palatal consonant is represented in the selected spelling
 [*reġnboga*]{.iv lang=oe sort=regnboga role=target_form}. The second velar remains before a back vowel.
 Thus the adopted chain is
-\emph{*régna-bùgô > *régna-bògô > *régnabogô > *réʝnabogô
+\emph{*régna-bùgô > *régna-bògô > *régnabogô > *régnæbogô > *réʝnæbogô
 > *réʝnbogô > *réʝnboga > *réjnboga}, then *reġnboga*.
 The intermediate accented and palatal symbols are analytical
 representations, not alternative manuscript spellings.
@@ -157,8 +157,8 @@ working history is therefore
 stressed vowel and its own ending; later syncope concerns the different,
 unstressed first-member vowel.
 
-The current implementation instead retracts that linker to \emph{a}
-before deleting it. Restricting restoration alone exposes it to back
+The earlier implementation instead retracted that linker to \emph{a}
+before deleting it. Restricting restoration alone exposed it to back
 mutation, producing \emph{ea}, which escapes monophthong syncope and gives
 predicted \emph{*reġneafoga}. Restricting back mutation alone leaves the
 current path intact; restricting both preserves short \emph{æ} until
@@ -168,12 +168,13 @@ none of the 394 selected endpoints. The unstressed linker of *eorþcunde*
 lowered vowel.
 
 This supports the conditional inherited derivation, not an unrestricted
-implementation claim. Earlier annotation decoding has already erased
-some secondary prominence before these rules. Preserving it through the
+implementation claim. In the former implementation, annotation decoding
+erased some secondary prominence before these rules. Preserving it through the
 two operations and syncope repairs the local distinction, but constructed
 subordinate-root controls expose further late weak-vowel processing.
-The joint correction remains a research proposal rather than silently
-altering production on the strength of the matching endpoint.
+The adopted joint correction preserves those annotations through syncope.
+The later constructed-control limitation remains disclosed; adoption does
+not claim a complete account of every secondary-stress development.
 
 ### What the English witnesses can date
 

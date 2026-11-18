@@ -13,11 +13,15 @@ The early evidence does not uniformly decide between restoration and blocked fro
 ## SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration}
 
 ```foma
-define OEARestoration FootCtx((
-    {*æ} -> {*a} || _
+define OEARestoration [FootCtx((
+    {*æ} -> {*a} || .#. OEAnyConsonant* _
         OEARestorationIntervening OEARestorationTriggerVowel
         - OEARestorationIntervening OEARestorationWeakTailVowel
-));
+))] .o. [FootCtx((
+    {*ǽ} -> {*à} || _
+        OEARestorationIntervening OEARestorationTriggerVowel
+        - OEARestorationIntervening OEARestorationWeakTailVowel
+))];
 ```
 
 The working account requires a stressed short front target and a historically back following vowel; stress on the target must not be confused with stress or subsequent changes in the following vowel. Singleton examples are strongest. Geminates include both *crabba* 'crab' and *racca* 'sailyard ring' as positives and *tæppa* 'tap' as a substantive negative. Neither a blanket geminate ban nor a special ban on *pp* is established. Evidence for *sk* and *st* does not equally license every *sC*, and the very limited *fC* evidence is specifically questioned by Hogg. A few consonant-plus-liquid forms do not establish an unrestricted extension to that class [@Campbell1959, p. 61, §§158--159; @HoggGrammar2011, pp. 93--96, §§5.35--37; @RingeTaylor2014, pp. 189--192].
@@ -37,14 +41,18 @@ that ending dispute from Campbell's and Luick's analysis of singular
 [@Campbell1959, p. 61, §158; @Luick1914, pp. 152--153, §161;
 @RingeTaylor2014, pp. 163--164, 192].
 
-The printed executable remains a broader proxy than the stressed-target
-history. It also retracts unstressed linkers in *reġnboga* 'rainbow' and
-*eorþcunde* 'earthly'. A stressed-target restriction removes both
-applications: the latter still converges through ordinary syncope, but
-the former develops a diphthong at [SC059 OEBackMutation](#rule-OEBackMutation)
-which then escapes syncope, yielding [reġneafoga]{.pred}. This is a
-disclosed interaction requiring further adjudication, not evidence that
-the linker was stressed. The restriction is therefore not adopted here.
+The executable now restricts restoration and
+[SC059 OEBackMutation](#rule-OEBackMutation) jointly to stressed targets.
+The unstressed linkers in *reġnboga* 'rainbow' and *eorþcunde* 'earthly'
+remain short \emph{æ} until
+[SC114 OENonHighSyn](#rule-OENonHighSyn). Restricting restoration alone,
+with the former broader back mutation, instead gives predicted
+[reġneafoga]{.pred}; that counterfactual is not the adopted derivation.
+Secondary low/front annotations survive the two rules and syncope before
+being decoded. Later weak-vowel processing still limits the representation
+of constructed subordinate-root controls; this does not establish a
+historical date of stress loss [@PurnellRaimySalmons2019, pp. e461--e463;
+@HoggGrammar2011, pp. 220--222, §§6.14--6.18].
 Ringe and Taylor's unstressed-vowel argument from *hegtis* 'witch'
 remains relevant, with its explicitly qualified syncope history
 [@RingeTaylor2014, p. 192].

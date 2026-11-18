@@ -68,9 +68,18 @@ palatalization. Its older wash/flask measurement remains historical;
 the subsequently adopted *flascan* cell must not be read as the older
 levelled *flasce* experiment. No new sk displacement is claimed here.
 
-The executable revision is deferred: a blanket geminate ban fails
+At the original research checkpoint, the executable revision was deferred:
+a blanket geminate ban fails
 independent *crabba/racca* positives and trades lap for tap; a
 stressed-target restriction exposes rainbow's SC059 back-mutation/
 syncope interaction. The production source, inputs and 386/394 reference
 remain unchanged. Source review, evidence limitations and the unapplied
 restriction belong to the memorandum, not a newly inferred broad interval.
+
+The subsequent joint adoption restricts SC046 and SC059 together, preserving
+the necessary secondary annotations through SC114. Rainbow's unstressed
+linker now remains *æ* at both rules and deletes by ordinary syncope.
+The historical displacement counts above are unchanged and are not fresh
+measurements of this adopted source. The wider weak-vowel limitation and
+source-critical residues remain in the current memorandum; no new
+chronology relation follows from this correction.

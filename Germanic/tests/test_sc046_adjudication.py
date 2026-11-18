@@ -2,6 +2,7 @@
 import hashlib
 import json
 from pathlib import Path
+import shlex
 import sys
 
 import pytest
@@ -82,8 +83,25 @@ def test_fixed_apocope_and_compound_interventions_have_distinct_observed_effects
 
 @pytest.mark.runtime
 def test_current_production_restoration_positives_and_scoped_residue(record_testsuite_property):
+    script = """
+import json, sys
+sys.path.insert(0, "docs/sound_changes/audits/sc046-restoration-evidence")
+import experiment
+import oe_pipeline
+from capr_runtime import layout
+from sound_change_order_sensitivity import batch_apply_down
+actual = experiment.production()
+runtime = layout()
+rows = {row["row_id"]: row for row in oe_pipeline.load_rows(runtime.corpus_tsv)}
+inputs = [rows[key]["fst_input"] for key in actual]
+for name in ("PNWGmcULowering", "OEBackMutation", "OENonHighSyn", "PGmcBAllophony"):
+    path = runtime.bin_dir / oe_pipeline.stage_for(name).snapshot_bin
+    for key, values in zip(actual, batch_apply_down(path, inputs)):
+        actual[key][name] = values
+print(json.dumps(actual))
+"""
     result = run_in_runner(
-        "python3 docs/sound_changes/audits/sc046-restoration-evidence/experiment.py --production",
+        "python3 -c " + shlex.quote(script),
         text=True, capture_output=True, check=True, timeout=180)
     actual = json.loads(result.stdout)
     expected = {
@@ -94,14 +112,22 @@ def test_current_production_restoration_positives_and_scoped_residue(record_test
         "2016": ("*f*l*æ*s*k*ō*n", "*f*l*a*s*k*ō*n", "flascan"),
         "2090": ("*l*æ*p*p*ô", "*l*a*p*p*ô", "lappa"),
         "2141": ("*m*æ*r*ǣ", "*m*æ*r*ǣ", "mære"),
-        "2148": ("*r*é*g*n*æ*b*o*g*ô", "*r*é*g*n*a*b*o*g*ô", "reġnboga"),
+        "2148": ("*r*é*g*n*æ*b*o*g*ô", "*r*é*g*n*æ*b*o*g*ô", "reġnboga"),
         "2240": ("*t*æ*p*p*ô", "*t*a*p*p*ô", "tappa"),
         "2266": ("*w*æ*d*a*n*ą", "*w*a*d*a*n*ą", "wadan"),
-        "2336": ("*éo*r*θ*æ*k*ù*n*d*ǣ", "*éo*r*θ*a*k*ù*n*d*ǣ", "eorþcunde"),
+        "2336": ("*éo*r*θ*æ*k*ù*n*d*ǣ", "*éo*r*θ*æ*k*ù*n*d*ǣ", "eorþcunde"),
     }
     assert actual.keys() == expected.keys()
     for key, (before, after, final) in expected.items():
         assert actual[key]["OEVelarFricativePalatalization"] == [before]
         assert actual[key]["OEARestoration"] == [after]
         assert actual[key]["final"] == [final]
+    assert actual["2148"]["PNWGmcULowering"] == ["*r*é*g*n*a*b*ò*g*ô"]
+    for key, before, after in (
+            ("2148", "*r*é*ʝ*n*æ*b*o*g*ô", "*r*é*ʝ*n*b*o*g*ô"),
+            ("2336", "*éo*r*θ*æ*k*ù*n*d*ǣ", "*éo*r*θ*k*ù*n*d*ǣ")):
+        assert actual[key]["OEBackMutation"] == [before]
+        assert actual[key]["OENonHighSyn"] == [after]
+        if key == "2148":
+            assert actual[key]["PGmcBAllophony"] == [after]
     record_testsuite_property("sc046_production_only", json.dumps(actual, ensure_ascii=False))

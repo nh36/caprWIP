@@ -20,11 +20,13 @@ are logical rather than chronological relations [@Barrack1975, p. 34].
 ## SC059. Back mutation before labials and liquids (`OEBackMutation`) {#rule-OEBackMutation}
 
 ```foma
-define OEBackMutation Ctx([
-    {*e} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*æ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger,
-    # Stressed variant (stress preserved on first element):
-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+define OEBackMutation FootCtx([
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
+]) .o. Ctx([
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]);
 ```
 
@@ -58,8 +60,9 @@ nor [SC059 OEBackMutation](#rule-OEBackMutation). It can remain short \emph{æ} 
 [SC017 PNWGmcULowering](#rule-PNWGmcULowering). This joint restriction
 reaches the selected endpoint; restricting restoration alone instead
 exposes the linker to back mutation.
-The present executable remains unchanged: secondary prominence is partly
-decoded earlier, and a complete implementation must preserve the relevant
-information rather than infer stress from the absence of an accent.
+The adopted joint implementation preserves the relevant secondary
+low/front annotation through syncope rather than infer stress from an
+unmarked medial vowel. Later weak-vowel processing remains a limitation
+for constructed subordinate-root controls, not a dated stress-loss law.
 The compound's spelling does not distinguish this inherited history from
 later composition of the developed rain and bow words.

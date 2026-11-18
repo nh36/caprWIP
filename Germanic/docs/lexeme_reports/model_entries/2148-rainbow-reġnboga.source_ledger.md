@@ -103,6 +103,7 @@ The sources support a regular inherited route conditional on early
 compound formation. They do not independently establish a prehistoric
 linker or formation date. Later composition from developed rain and bow
 remains equally compatible with the English spellings; it is not
-silently relabelled analogical replacement. The unapplied review diff
-also records the necessary annotation plumbing and its remaining
-whole-cascade secondary-stress limitation.
+silently relabelled analogical replacement. The exact review diff was
+subsequently authorized and adopted jointly for SC046/SC059, including
+annotation preservation through SC114. Its remaining whole-cascade
+secondary-stress limitation is retained in the current memorandum.

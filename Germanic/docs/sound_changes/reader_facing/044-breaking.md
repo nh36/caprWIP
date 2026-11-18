@@ -36,9 +36,7 @@ define OEBreaking FootCtx(OEBreakingA
     .o. OEBreakingE
     .o. OEBreakingI
     .o. OEBreakingLong
-    .o. [{*ǽ} -> {*æ},
-    {*à} -> {*a},
-    {*è} -> {*e}]);
+    );
 ```
 
 ### Short low front vowel {#rule-OEBreakingA}
@@ -65,8 +63,9 @@ define EnglishBreakingLContext [ {*l} [EnglishStarConsonant - [{*l}|{*j}]] | {*l
 The initial-nucleus restriction is an executable proxy for stress after
 the primary accent has been consumed. It excludes genuinely weak medial
 vowels. Secondary short front \emph{ǽ} is carried separately from earlier
-\emph{à}; it can break in a noninitial root. The annotation is decoded
-only after its breaking consumer, not at an invented historical date of
+\emph{à}; it can break in a noninitial root. Surviving low/front annotation
+is retained through restoration, mutation and
+[SC114 OENonHighSyn](#rule-OENonHighSyn), not decoded at an invented historical date of
 general destressing. *erian* 'plough' independently protects the
 unbroken \emph{rj} history [@RingeTaylor2014, p.182;
 @HoggGrammar2011, pp.217--218, §§6.7--8].

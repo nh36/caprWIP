@@ -439,11 +439,18 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
     assert current["component_results"]["MCombined"] == expected
     assert current["selected_rows"] == 394
     assert current["legacy380_identities"] == 380
-    for model in current["models"].values():
-        assert model["final_differences"] == []
+    for name, model in current["models"].items():
+        # WBackU retains the historical, unrestricted SC059 counterfactual.
+        differences = ([{
+            "row_id": "2148", "concept": "rainbow", "existing": "reġnboga",
+            "candidate": "reġneafoga", "target": "reġnboga",
+            "legacy380_identity": True,
+        }] if name == "A-light-combined-strict-back" else [])
+        assert model["final_differences"] == differences
         assert inherited_candidate(model)["final"] == "weorold"
         assert model["focal_traces"]["2201"][-1]["post"] == "sāwle"
-        assert model["focal_traces"]["2148"][-1]["post"] == "reġnboga"
+        assert model["focal_traces"]["2148"][-1]["post"] == (
+            "reġneafoga" if differences else "reġnboga")
     assert current["protected_files_unchanged"] >= 172
     assert current["identity_incremental_all_snapshots_agree"]
 

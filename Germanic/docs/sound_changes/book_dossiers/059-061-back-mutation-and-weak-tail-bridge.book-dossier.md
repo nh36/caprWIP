@@ -1,5 +1,15 @@
 # SC059-SC061: Back mutation and weak-tail bridge
 
+## Joint target-stress adoption, 17 November 2026
+
+The [SC059 memorandum](../audits/sc059-adjudication.md) records the adopted
+stressed-target restriction, jointly with SC046 and secondary low/front
+annotation through SC114. Staged West Saxon ealu is a short-ae positive
+within the current labial/liquid proxy, not a new lexical entry or Mercian
+implementation. Rainbow's unstressed ae linker deletes by ordinary syncope.
+The older bridge measurements below remain historical; the wider-cascade
+secondary weak-vowel limitation is retained rather than repaired here.
+
 ## 1. Role in the book
 
 This row is the compact seam between the promoted `SC055-SC056` umlaut core and

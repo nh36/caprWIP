@@ -1,5 +1,10 @@
 # SC059: rainbow and stressed-target domains
 
+**Current scoped verdict:** RESTRICT, jointly adopted with SC046 by the
+user's 17 November 2026 closeout instruction. The original three research
+trials and their expectations are preserved unchanged. The earlier DEFER
+below records the research decision before that explicit scoped adoption.
+
 ## Identity
 
 - **SC id:** SC059, coordinated research comparison with SC046.
@@ -146,12 +151,12 @@ as if either original had been read.
   dependency is conditional on inheritance; surviving English spelling
   does not independently establish a formation date.
 
-## Verdict
+## Original research verdict
 
 **DEFER production promotion; retain the literature-supported joint
 restriction as a reviewable research proposal.**
 
-Registry-verdict: SC059=DEFER
+The registry verdict at that research checkpoint was SC059=DEFER.
 
 The joint restrictions derive the requested inherited history without
 changing any selected endpoint and preserve the source-backed stressed
@@ -162,6 +167,9 @@ later weak-vowel limitation must be reviewed together. No production
 change is silently made to settle that broader issue.
 
 ## Propagation (only after verdict)
+
+The original documentary-only propagation was followed by the adoption
+below; immutable workers, plans, observations and patch remain unchanged.
 
 Update the rainbow model and ledger with both viable histories, source
 limits and the conditional joint derivation. Link this follow-up from
@@ -181,3 +189,66 @@ remain deferred; this research is not an omnibus adjudication of them.
 Lockwood's original and an authenticated later DOCX version remain
 unavailable, explicitly not prerequisites invented to invalidate the
 sources already in hand.
+
+## Verdict
+
+Registry-verdict: SC059=RESTRICT
+
+Adopt the exact tested joint patch with SC046, including preservation of
+secondary low/front labels through SC114 and the intervening consumers.
+The literal primary/positive-foot targets and explicit secondary targets
+now implement the stressed domain of the present labial/liquid proxy.
+The current corpus and all frozen baselines remain unchanged. No general
+Mercian implementation or new lexical admission is part of this decision.
+
+The live cumulative route must show `*r*é*g*n*æ*b*o*g*ô` after restoration,
+`*r*é*ʝ*n*æ*b*o*g*ô` after back mutation, and
+`*r*é*ʝ*n*b*o*g*ô` after SC114, with selected endpoint *reġnboga*.
+Early lowering at SC017, independent *boga*, earthly and the stressed
+restoration/back-mutation positives remain controls. Staged West Saxon
+`*ælu > *ealu` is the source-backed short-*æ* positive; the dental comparison
+remains outside the current consonantal proxy.
+
+The secondary bake-root schema retains restored *a* through SC114 but
+later has *e* under existing weak-vowel processing. That wider-cascade
+limitation remains explicitly acknowledged, not repaired or presented as
+an attested lexical counterexample here. Neither this adoption nor the
+shared English endpoint decides inherited formation versus later composition.
+
+The refreshed corpus census has 19 SC046 firings rather than 21: rainbow
+and earthly are the two excluded unstressed targets. SC059 still has the
+same five stressed firings. Moving the decoder also moves thousand's
+`*θ*ū*s*è*n*d > *θ*ū*s*e*n*d` from the SC044 composite to SC114:
+the composite counts change from 51 to 50 and from 4 to 5 respectively.
+That is annotation decoding, not new breaking or syncope of a vowel.
+All 394 complete endpoint records, including acceptance, cardinality and
+match status, equal the prior baseline exactly; the inherited eight
+mismatches are buck, fowl, fire, rust, straw, tap, wolf and wool.
+
+### Adoption regression execution and cost review
+
+The existing production owner
+`test_sc046_adjudication.py::test_current_production_restoration_positives_and_scoped_residue`
+keeps the same eleven selected rows. It now batches seven rather than
+three manifest-validated lookups to cover SC017, both target rules, SC114
+and positional *b*. It prepares no definitions and invokes no compiler.
+The existing strict all-corpus owner supplies the 394-row endpoint check.
+
+`test_rainbow_stress_domains.py::test_staged_west_saxon_ae_and_stress_domain_live`
+adds one finite-domain composition of current SC059 over four explicitly
+staged inputs. It catches loss of stressed short-*æ* mutation, mutation of
+an unstressed medial vowel, loss of a marked secondary target, or accidental
+widening to the dental environment. Reusing the corpus owner cannot test
+this positive: no selected row has *æ* immediately before SC059.
+The test shares the verified isolated session definitions when their identity
+matches; it performs no image preparation itself, full-cascade rebuild,
+corpus sweep or concurrency change. It records the actual compiler input,
+one network, one compiler call, setup/end-to-end wall and actual Linux
+Foma-child peak RSS through the existing JUnit receipt workflow. Full-source
+opt-in remains explicit through the existing fixture.
+
+The historical proposal test also checks that the adopted definition bodies
+are exactly those in the executed final trial. Earlier expected answers
+remain independent frozen observations, not rewritten for the new production.
+Measured adoption costs and final source-bound validation are recorded with
+the landing commit; no timeout substitutes for the cost review.

@@ -1,5 +1,12 @@
 # SC046 adjudication: Old English a-restoration
 
+**Current scoped verdict:** RESTRICT the target to stressed vowels, jointly
+with SC059 and the tested secondary-annotation companions. The user authorized
+this adoption on 17 November 2026 after the research closeout. The original
+experiments and their DEFER reasoning below remain historical evidence,
+not descriptions of the subsequently adopted executable. Other conditioning,
+early-Anglian and geminate questions remain open.
+
 ## Identity
 
 - SC id: SC046.
@@ -239,12 +246,12 @@ memorandum; their explicit gaps are part of the decision.
   Breaking/restoration ordering in *slēan* is source-conditional and
   dialect-scoped; no universal new edge is introduced.
 
-## Verdict
+## Original research verdict (superseded for target stress only)
 
 DEFER the executable revision; preserve the working southern restoration
 account and record the source-critical and computational limits.
 
-Registry-verdict: SC046=DEFER
+The registry verdict at that research checkpoint was SC046=DEFER.
 
 A generic geminate ban is falsified by independent positives. The
 stressed-target restriction is source-led but not independently
@@ -255,6 +262,9 @@ blocked fronting in nondiscriminating forms. No FST/cell/baseline
 adoption is authorized by this verdict.
 
 ## Propagation (only after verdict)
+
+The original documentary propagation below preceded the joint adoption
+recorded at the end of this memo.
 
 Authoritative targets: SC046 registry verdict and human note,
 this memorandum, SC046 reader and dated chronology-card qualification,
@@ -337,3 +347,31 @@ but the full-cascade secondary-label controls expose decoding and later
 weak-vowel issues. The companion research diff is unapplied; the
 production/cell DEFER here remains in force. Neither this result nor
 Orel's reconstructed compound independently dates its formation.
+
+## Verdict
+
+Registry-verdict: SC046=RESTRICT
+
+Adopt the exact `rainbow-stress-evidence/proposed-joint-stress.patch`
+jointly with SC059. This restricts plain front targets to the primary or
+positive-headed foot's first nucleus and separately recognizes surviving
+secondary `ǽ`; it does not change the following-vowel or consonant classes.
+SC044 retains secondary low/front annotations, the intervening umlaut and
+nasalization consumers preserve their intended operations, and decoding
+follows SC114. These are representational companions, not a new historical
+stress-loss date or a revision of breaking's vowel operation.
+
+The inherited rainbow linker stays `*æ` at SC046 and SC059, deletes at
+SC114 and leaves postnasal stop `*b`, ending in *reġnboga*. Earthly converges
+by the same unstressed-linker syncope; independent bow and the established
+stressed positives retain their histories. West Saxon *ealu* is checked at
+its independently declared pre-SC059 entry, not admitted as a new corpus row.
+The selected reference remains 394 rows, 386 matches and the same eight
+mismatches; adoption requires comparison of every complete output set.
+
+The constructed secondary bake-root's later *a > e* is a disclosed
+limitation of the wider weak-vowel cascade, not a reason to retract an
+unstressed linker or a claim that the constructed compound is attested.
+This scoped adoption does not settle geminate exceptions, blocked-fronting
+equifinality, *hebuc*, or the compound's formation date. It introduces no
+new chronology edge, Mercian implementation, lexical entry or baseline.

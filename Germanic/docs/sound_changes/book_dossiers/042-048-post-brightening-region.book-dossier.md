@@ -12,11 +12,19 @@ Dresher's Mercian restoration-loss account, the exact glossary witnesses,
 consonant-class limits and conditional Northumbrian evidence are assessed
 in the new memorandum and linked source cards.
 
-Executable adoption is deferred: the stressed-target candidate exposes
+At the original research checkpoint, executable adoption was deferred:
+the stressed-target candidate exposes
 rainbow's back-mutation/syncope interaction, while removing geminate
 restoration trades lap for tap and contradicts independent positives.
 No production rule, cell or protected baseline changes. The dated
 measurements below remain intact, and the SC044 decision is not reopened.
+
+The subsequent user-authorized joint correction adopts stressed targets
+for SC046 and SC059 with secondary annotations preserved through SC114.
+Rainbow's linker remains short ae through both rules and deletes there;
+the constructed secondary-root weak-vowel limitation remains disclosed.
+The earlier experiments below are historical, not rerun under this source.
+No geminate ban, lexical cell, chronology edge or protected baseline changes.
 
 ## SC044 source-critical update, 15 November 2026
 
