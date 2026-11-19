@@ -320,3 +320,38 @@ existing finite-domain runtime test, rather than adding a compiler.
 The archive's cost entry and PR summary distinguish this intermediate
 focused/canonical checkpoint from final follow-up strict certification.
 SC047/048 executable definitions and their positions are untouched.
+
+### Final current-control regression qualification
+
+The first final strict serial run on
+`f45140e4f1f026a490525cac9cee652351b56d7f` passed 2,134 tests
+and 9,797 subtests, with five historical skips, but found one stale
+current-model expectation in the existing lowering-displacement control.
+Its old expected `weorald` assumed the previous shared back-vowel
+context; the corrected relation gives `werald`.
+
+The [complete compiled control report](sc059-clause-evidence/post-separation-lowering-controls.json)
+is preserved byte-for-byte (SHA256
+`e9d208976ad613f9d2f52475853c2f3959d3f95da178e98106b3401c8dba0d8d`).
+The common cumulative prefix for world is `*w*é*r*u*l*d`.
+Moving medial-u lowering before the w-conditioned umlaut removes the
+u trigger before SC059: the target now precedes r plus o. Separately
+composed e/u clauses cannot mutate it before o; SC100 later lowers
+the ending vowel to a. The former parallel clauses admitted that
+back-vowel trigger and produced the old `weorald` expectation.
+This is the o counterpart of the already diagnosed e/a leakage,
+not a revised production history or another chronology edge.
+
+All other nineteen recorded current-control outputs retain their
+expectations, including live world `weorold`, the later-lowering
+control, and widow/yoke/youth. Only that existing assertion changes;
+the original historical replay is untouched. No test node, compiler,
+fixture scope, sweep, network or concurrency is added. The failed
+strict receipt is preserved (SHA256
+`9be523abd47bba8ec4d1df53a95a8cf808642ce8e1692c83910471b66dc80c75`).
+Focused current-control verification and final strict serial/exclusive
+certification are repeated on the repaired source. Reader, bibliography,
+renderer and rendered manuscript/TeX/PDF inputs are unchanged by this
+test-and-non-rendered-memo repair; their inspected book remains applicable
+by explicit content/dependency comparison, not an older exact-head
+strict certificate.
