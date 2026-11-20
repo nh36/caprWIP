@@ -54,6 +54,16 @@ def assert_nightmare_index_delta(rows):
     assert all(not row.get("variety") for row in rows)
 
 
+def assert_deer_genpl_index_delta(rows):
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == 2
+    assert {tuple(row[field] for field in fields) for row in rows} == {
+        ("remove", "pgmc", "*déuzą", "selected_input", "trace_proto_input", "deer — OE dēor"),
+        ("add", "pgmc", "*déuzô", "selected_input", "trace_proto_input", "deer — OE dēora"),
+    }
+    assert all(not row.get("variety") for row in rows)
+
+
 def assert_final_nasal_index_delta(rows):
     model = "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
     expected = {

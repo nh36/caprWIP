@@ -145,6 +145,7 @@ class Sc112Tests(unittest.TestCase):
                     previous = dict(previous, proto="*wír-àldiz",
                                     proto_norm="wír-àldiz", fst_input="wír-àldiz")
                 selected_cells = {
+                    "1988": ("*déuzô", "dēora"),
                     "2016": ("*fláskōniz", "flascan"),
                     "2006": ("*féx", "feoh"),
                     "2011": ("*fúnðanai", "fundne"),
@@ -201,7 +202,8 @@ class Sc112Tests(unittest.TestCase):
             {row_id: (self.previous[row_id]["outputs"], self.current[row_id]["outputs"])
              for row_id in self.previous
              if self.previous[row_id]["outputs"] != self.current[row_id]["outputs"]},
-            {"2011": ("fundene", "fundne"), "2208": ("spinl", "spinle"),
+            {"1988": ("dēor", "dēora"),
+             "2011": ("fundene", "fundne"), "2208": ("spinl", "spinle"),
              "2201": ("sāwol", "sāwle"), "2282": ("westene", "west"),
              "2053": ("hameres", "hamer"), "2016": ("flasce", "flascan"),
              "2141": ("mare", "mære")},

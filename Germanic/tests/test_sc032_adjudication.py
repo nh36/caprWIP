@@ -137,7 +137,7 @@ class SC032AdjudicationTests(unittest.TestCase):
         firing_ids = set().union(*EXPECTED.values())
         original = {identifier for identifier in firing_ids
                     if self.records[identifier][:2] in legacy}
-        self.assertEqual(original, firing_ids - {"2326", "2338"})
+        self.assertEqual(original, firing_ids - {"1988", "2326", "2338"})
 
     def test_inherited_livestock_adds_exactly_the_atomic_aeu_firing(self):
         forms = self.records["2338"][2]
