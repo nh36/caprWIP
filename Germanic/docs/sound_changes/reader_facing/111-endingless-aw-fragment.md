@@ -37,3 +37,16 @@ show proxy [SC034 OEAwLongDiphthong](#rule-OEAwLongDiphthong).
 The early holding site is compatible with the source's West Germanic
 history, not evidence for strict relative order against unrelated
 dental hardening [@RingeTaylor2014, pp. 172--173].
+
+An early-loss experiment can delete the ending first and then apply
+a separately tested final \emph{aw > au} companion at this same
+position. It restores reconstructed \emph{*strēa}, with no change to
+the selected target *strēaw* 'straw'. Matched suffixed, long-vowel and
+consonant-plus-w controls do not undergo that added operation.
+The old matcher is therefore an executable dependency, not an
+independent argument that historical apocope must follow this
+fragment. The companion is not installed while
+[SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope)
+retains its present production position; the regular-versus-analogical
+distinction remains the source's distinction
+[@RingeTaylor2014, pp. 172--173, 387].

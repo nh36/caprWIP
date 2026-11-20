@@ -334,7 +334,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC047-oe-heavy-syllable-nasal-apocope.md",
       "card_type": "mixed",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Early weight-independent low-vowel loss, shared with SC041; late nasal fragment retained. Corrected-control SC017 movement recovers all40 firings and12 changed root vowels; deer, door length and SC111 straw remain independent dependencies."
+      "short_summary": "Early weight-independent low loss shared with SC041; retain late nasal fragment. New controlled SC112-before-loss restores dor; same-site SC111 companion restores modelled strēa. No production moves."
     },
     {
       "change_id": "SC048",
@@ -734,7 +734,7 @@
       "card_path": "Germanic/docs/sound_changes/order_tests/chronology_cards/SC112-monosyllabic-final-r-lengthening.md",
       "card_type": "boundary_limited",
       "has_reciprocal_boundary": "no",
-      "short_summary": "Admitted *þǣr and *hwǣr support a general stressed monosyllabic lengthening before inherited final *r, but do not fix its date or establish an SC015/SC024 edge. Early executable placement before rhotacism preserves inherited-r conditioning and avoids secondary-r overapplication."
+      "short_summary": "General stressed monosyllabic final-r lengthening retained. Hill comparative evidence and Ringe–Taylor deictic/reanalysis alternatives qualified. Unchanged rule before experimental early SC047 restores dor and exactly the original two applications; no strict historical edge."
     }
   ],
   "edges": [

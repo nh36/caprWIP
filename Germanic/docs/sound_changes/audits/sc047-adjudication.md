@@ -412,3 +412,82 @@ The failed receipt and pre-repair journal are preserved. This adds
 one inexpensive Pandoc regression, not another runtime compiler,
 fixture or scientific experiment; a new publication attempt and
 the final strict certificate cover the repaired checker.
+
+## Third pass: three source-led decisions on the certified control
+
+### Identity and question
+
+19 November 2026; scientific control634a1335, PR #19, no merge.
+The preceding experiments and their original expectations remain historical.
+The complete new assessment and exact evidence are in
+[three-decision evidence](../literature_dossiers/sc047_three_decisions/README.md).
+
+### Current state and literature
+
+Live SC047 remains159 applications, with no weight filter; SC112 has two.
+The original Hogg–Fulk Morphology, Boutkan, Ball–Stiles, Stiles and
+Versloot were read alongside the previously held handbooks. The assessment
+records pages, notation, paradigm cells and the still-indirect originals.
+Hogg–Fulk §2.23 and Boutkan retain a gemination-first nasal-loss alternative;
+Ringe–Taylor's early-both-loss analysis is not the only published account.
+
+### Historical analysis and diagnosis
+
+The B–T dative citation resolves to Northumbrian deare in Matthew's
+prefatory capitulum LXXIX, Kemble–Hardwick1858 p.19, not Matthew19:11
+or a diplomatic WS dēore. A secure WS genitive plural is deora,
+Orosius I.1§15, Bosworth1859 p.20.25–27. Propose assembled *déuzôⁿ,
+serialized *déuzô, target dēora, headword dēor. It gives dēora in all
+seven configurations; source nasality is not separately serialized by ô.
+The selected row and frozen baseline are deliberately unchanged.
+Internal-z obliques do not prove regular direct-case r retention: in
+the early-loss account direct dēor receives r from those obliques.
+
+The unchanged SC112-before-early-loss comparison removes the extra door
+firing and restores dor; there/where and all40 lowering identities remain.
+This is a demonstrated executable prerequisite, not a strict historical
+edge from output agreement. Hill's broader argument and Ringe–Taylor's
+deictic/reanalysis alternatives are separately assessed.
+
+Searu now has positively documented analogy from searwes, not an
+unexplained historical failure. Ball–Stiles similarly identifies the
+geolw- breaking branch for yellow. The direct regular saru/ġielu
+branches and their w-bearing donors must remain separate.
+Rīkī→rīċe succeeds; sagjas retains medial-j gemination.
+Calu succeeds directly; ċealwes is not certified as its correct oblique.
+The same-site SC111 aw# companion restores modelled strēa after early
+loss, without deriving attested analogical strēaw.
+
+### Counterfactual results
+
+All394 inputs remain accepted/unambiguous in each of seven variants.
+Identity/after-SC041386 matches; joint early384; plus earlier SC112385;
+plus glides382; SC112+early-loss+aw385; complete glides+aw382.
+The exhaustive changed-row union is deer1988,door1992,hay2061,net2138,
+straw2224,hue2332. First divergences and full downstream checkpoints
+are archived. Early SC047 adds only straw to its159 live firings.
+The review-only deer migration would make the complete early trial383,
+not386; it is not evidence that the order was historically wrong.
+The retained-o dative input-template rejection and invalid hay alias are
+preserved separately from the successful selected-corpus comparisons.
+
+### Verdict and propagation
+
+Registry-verdict: SC047=REFORMULATE/RETAIN
+
+Retain body/order and all selections. Propose the genitive-plural cell
+for review; do not adopt it silently. Correct the account of the viable
+SC112/SC111 components and the source-supported paradigm alternatives.
+Update SC047/097/111/112 readers, current registry notes and chronology
+interpretations; preserve every older measurement and expectation.
+No new strict historical edge, global z/r order, analogy transducer,
+SC041/045/046 change, or further SC048/059 change is adopted.
+
+### Residue
+
+Hay/net/hue still distinguish paradigm histories and the alternative
+nasal-loss chronologies. Hue's direct contraction and calu's oblique/
+dialect history remain incomplete. The retained-o gate gap and the
+unheld originals are explicit. The archive's cost review records740
+opt-in networks; no routine test cost is added. Final certification is
+for the final tree, not inherited from control634a1335.

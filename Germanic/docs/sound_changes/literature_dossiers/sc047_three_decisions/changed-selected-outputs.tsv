@@ -1,0 +1,16 @@
+configuration	row_id	concept	input	target	control_outputs	outputs	changed
+joint_pre_gemination	1988	deer	déuzą	dēor	"[""dēor""]"	"[""dēo""]"	1
+joint_pre_gemination	1992	door	dúrą	dor	"[""dor""]"	"[""dōr""]"	1
+joint_pre_gemination	2224	straw	stráwą	strēaw	"[""strēa""]"	"[""stræw""]"	1
+SC112_before_early_SC047	1988	deer	déuzą	dēor	"[""dēor""]"	"[""dēo""]"	1
+SC112_before_early_SC047	2224	straw	stráwą	strēaw	"[""strēa""]"	"[""stræw""]"	1
+SC112_early_SC047_glides	1988	deer	déuzą	dēor	"[""dēor""]"	"[""dēo""]"	1
+SC112_early_SC047_glides	2061	hay	xáwją	hīeġ	"[""hīeġ""]"	"[""hēa""]"	1
+SC112_early_SC047_glides	2138	net	nátją	nett	"[""nett""]"	"[""nete""]"	1
+SC112_early_SC047_glides	2224	straw	stráwą	strēaw	"[""strēa""]"	"[""stræw""]"	1
+SC112_early_SC047_glides	2332	hue	xíwją	hīew	"[""hīew""]"	"[""hii""]"	1
+SC112_early_SC047_aw	1988	deer	déuzą	dēor	"[""dēor""]"	"[""dēo""]"	1
+SC112_early_SC047_glides_aw	1988	deer	déuzą	dēor	"[""dēor""]"	"[""dēo""]"	1
+SC112_early_SC047_glides_aw	2061	hay	xáwją	hīeġ	"[""hīeġ""]"	"[""hēa""]"	1
+SC112_early_SC047_glides_aw	2138	net	nátją	nett	"[""nett""]"	"[""nete""]"	1
+SC112_early_SC047_glides_aw	2332	hue	xíwją	hīew	"[""hīew""]"	"[""hii""]"	1

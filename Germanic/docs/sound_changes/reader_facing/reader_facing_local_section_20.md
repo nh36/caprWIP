@@ -925,6 +925,19 @@ The early holding site is compatible with the source's West Germanic
 history, not evidence for strict relative order against unrelated
 dental hardening [@RingeTaylor2014, pp. 172--173].
 
+An early-loss experiment can delete the ending first and then apply
+a separately tested final \emph{aw > au} companion at this same
+position. It restores reconstructed \emph{*strēa}, with no change to
+the selected target *strēaw* 'straw'. Matched suffixed, long-vowel and
+consonant-plus-w controls do not undergo that added operation.
+The old matcher is therefore an executable dependency, not an
+independent argument that historical apocope must follow this
+fragment. The companion is not installed while
+[SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope)
+retains its present production position; the regular-versus-analogical
+distinction remains the source's distinction
+[@RingeTaylor2014, pp. 172--173, 387].
+
 ## Consonant-conditioned lowering of stressed short i
 
 ### \CAPRRuleHeading{SC015. Consonant-conditioned lowering of stressed short \emph{*i}}{PNWGmcILowering} {#rule-PNWGmcILowering}
@@ -2446,7 +2459,7 @@ Long after the Proto-West Germanic loss of final \emph{*z} in unstressed syllabl
 
 The scholarship disagrees about the exact conditioning, and the disagreement is worth recording. An older account, represented by Campbell and going back to Luick, derived the endingless pronouns from unaccented sentence variants rather than from a regular sound change [@Campbell1959, p. 166; @Luick1914, p. 819]. Ringe and Taylor reject that analysis because *mā* 'more' and *cū* 'cow' are not plausibly unaccented words [@RingeTaylor2014, p. 86, §3.3.1]. Crist formulates an Ingvaeonic rule in which \emph{*z} is lost after front vowels, with compensatory lengthening, covering preconsonantal cases as well; his data contain no word-final back-vowel monosyllables, so forms like \emph{*hwaz} and the ancestor of *cū* fall outside what his statement can decide — a documented gap rather than a refutation [@Crist2002, pp. 1, 4, §§1, 10]. Kilday narrows the preconsonantal subcase to Old Saxon and Old Frisian while accepting the word-final monosyllabic loss for Old English, contrasting regular *meord* 'reward' with the loanword-influenced *mēd* 'reward' [@Kilday2024, pp. 1--3]. CAPR adopts Ringe and Taylor's quality-neutral formulation because it alone generates the back-vowel witnesses, while noting that the front-vowel forms are compatible with both analyses.
 
-Apparent counterexamples are analogical, not phonological: OE *dēor* 'deer', *ār* 'oar', and *gār* 'spear' show final \emph{-r} from levelling out of inflected forms where the sibilant was word-internal and regularly rhotacized, not from retention of word-final \emph{*z} [@RingeTaylor2014, p. 86, §3.3.1, n. 24]. The change precedes rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)), which Ringe and Taylor place last in this sequence of northern developments [@RingeTaylor2014, p. 87, §3.3.1].
+Apparent counterexamples are analogical, not phonological: OE *dēor* 'deer', *ār* 'bronze', and *gār* 'spear' show final \emph{-r} from levelling out of inflected forms where the sibilant was word-internal and regularly rhotacized, not from retention of word-final \emph{*z} [@RingeTaylor2014, p. 86, §3.3.1, n. 24]. The change precedes rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)), which Ringe and Taylor place last in this sequence of northern developments [@RingeTaylor2014, p. 87, §3.3.1].
 
 The corpus now witnesses this change directly. The interrogative pronoun 'who' is selected in its nominative singular masculine cell, PGmc \emph{*hwaz} (Gothic \emph{hwas}), precisely the form Ringe and Taylor cite for this loss [@RingeTaylor2014, p. 86, §3.3.1]: the rule lengthens the short nucleus and deletes the sibilant, giving \emph{*hwā}, whence OE *hwā* 'who'. The resulting back vowel never undergoes Anglo-Frisian brightening — "\emph{*hwǣ} does not exist", as Campbell puts it [@Campbell1959, §125, p. 49; @SieversBrunner1965, §137 Anm. 1, p. 129] — so the derivation ends with the attested form. Other members of Ringe and Taylor's witness set remain outside the corpus because it selects oblique or plural cells for them — 'cow' and 'meed', for instance, enter the cascade in inflected forms whose \emph{*z}, where present, is word-internal.
 
@@ -2470,7 +2483,20 @@ define MonosyllabicFinalZLoss [
 
 The rule first lengthens a short nucleus standing immediately before word-final \emph{*z} in a monosyllable, then deletes the \emph{*z} after any vowel in a monosyllable. The principal synthetic controls run the change on Ringe and Taylor's own witnesses, fed to the rule in their chronologically correct intermediate shapes. Short-nucleus inputs show both halves of the change at once: \emph{*hwaz} yields \emph{*hwā} and \emph{*hiz} yields \emph{*hī}, each with loss of the sibilant and compensatory lengthening [@RingeTaylor2014, p. 86, §3.3.1]. A form whose nucleus is already bimoric skips the lengthening step and simply loses the sibilant: \emph{*maiz} yields \emph{*mai} at this stage, with its diphthong intact; the attested OE *mā* 'more' arises only later, when the stressed monophthongization ([SC004 EAFAiMonophthongization](#rule-EAFAiMonophthongization)) takes \emph{*ai} to \emph{*ā}. The word 'cow', whose history Ringe and Taylor themselves print with question marks and whose analysis remains disputed, is deliberately not used as a principal control; a long-vowel input of that shape (\emph{*kūz} yielding \emph{*kū}) merely repeats what \emph{*maiz} already demonstrates, and the word's evidentiary weight is discussed in the historical dossier rather than leaned on here.
 
-The corpus derivation of *hwā* 'who' now fixes this rule's position empirically as well as philologically. It stands after [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), since the two losses are historically distinct changes with the unstressed loss earlier [@RingeTaylor2014, pp. 44--45, §3.1.1]. Rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) follows in the executable cascade as in the historical account: Ringe and Taylor place rhotacism after this loss, at the end of the sequence of \emph{*z}-losses [@RingeTaylor2014, p. 87, §3.3.1], and the cascade composes it immediately after this rule, so a sibilant removed here can never surface as \emph{-r} — were the order reversed, \emph{*hwaz} would rhotacize to \emph{*hwar} and 'who' could never be derived; the negative controls below confirm this. Consonant-final monosyllables are untouched: their nominative \emph{*-z}, where it ever existed, was eliminated before Proto-West Germanic under [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss). Word-internal \emph{*z}, as in PGmc [déuzą]{.recon} 'deer' on its way to OE *dēor* 'deer', does not meet the environment of this rule and duly rhotacizes.
+The corpus derivation of *hwā* 'who' now fixes this rule's position empirically as well as philologically. It stands after [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion), since the two losses are historically distinct changes with the unstressed loss earlier [@RingeTaylor2014, pp. 44--45, §3.1.1]. Rhotacism ([SC003 EAFRhotacism](#rule-EAFRhotacism)) follows in the executable cascade as in the historical account: Ringe and Taylor place rhotacism after this loss, at the end of the sequence of \emph{*z}-losses [@RingeTaylor2014, p. 87, §3.3.1], and the cascade composes it after this rule and the intervening final-r lengthening, so a sibilant removed here can never surface as \emph{-r} — were the order reversed, \emph{*hwaz} would rhotacize to \emph{*hwar} and 'who' could never be derived; the negative controls below confirm this. Consonant-final monosyllables are untouched: their nominative \emph{*-z}, where it ever existed, was eliminated before Proto-West Germanic under [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss). In the present late-apocope implementation, the z of
+\emph{*deuzą} remains internal here and rhotacizes. That successful
+trace must not be mistaken for independent evidence of regular
+direct-case r retention. Earlier loss instead exposes final z and
+produces the expected r-less direct branch; Ringe and Taylor extend
+r from the inflected paradigm. A source-based genitive-plural
+\emph{*deuzôⁿ} retains internal z in either order and gives *dēora*
+'animals', independently attested in the West Saxon Orosius. Gothic
+*diuzam* 'animals' (dative plural) provides the comparative internal-z
+witness. OHG *mir* 'me' beside OE *mē* 'me' shows why a German
+final-r reflex alone cannot establish English retention
+[@RingeTaylor2014, pp. 86--87, 174;
+@Stiles2013, pp. 15--16; @Fulk2018, pp. 129--130, §6.16;
+@Bosworth1859, p. 20, lines 25--27].
 
 ## Monosyllabic lengthening before final \emph{r}
 
@@ -2502,6 +2528,27 @@ admitted witnesses, not a lexical exception list or a claim of strict
 relative chronology against
 [SC015 PNWGmcILowering](#rule-PNWGmcILowering) or
 [SC024 PNWGmcLongELowering](#rule-PNWGmcLongELowering).
+
+Hill's comparison of monosyllabic local with longer directional
+forms supplies a broader phonological argument than the two selected
+adverbs alone; the pan-Germanic extension additionally involves his
+Scandinavian levelling analysis. Ringe and Taylor allow deictic stress
+or reanalysis involving *hēr* 'here'. The long adverbs therefore
+motivate the working generalization without uniquely deciding its
+cause or date [@Hill2017, pp. 142--148;
+@RingeTaylor2014, p. 65; @Stiles2013, pp. 15--16].
+
+The short neuter *dor* 'door', compared with OS *dor* and OHG *tor*,
+is distinct from feminine *duru* 'door'; the selected direct cell
+must not be replaced by the latter paradigm
+[@Fulk2018, pp. 56--57, §4.3; @RingeTaylor2014, p. 385].
+In the controlled early-apocope experiment, placing this unchanged
+rule before [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope)
+makes it see still-suffixed \emph{*dorą}. No lengthening occurs,
+and subsequent loss gives short *dor*. The same two there/where
+applications survive, while z has not yet supplied secondary r.
+This establishes a viable executable prerequisite for that candidate,
+not a newly proved historical edge. The production order is unchanged.
 
 ## West Germanic rhotacism
 
@@ -4999,9 +5046,27 @@ every derivation. Early \emph{*sarwą > *saru} loses the consonantal
 environment for breaking; the present restoration then gives
 \emph{*saru}, not *searu*. An oral-ending parallel likewise recovers
 \emph{*gelu} but not the complete history of *ġeolu* 'yellow'.
-These are wider-cascade limitations, not evidence against the
-comparative vocalization or grounds for silently changing its quantity
-[@RingeTaylor2014, pp. 46--47].
+The isolated direct branches are incomplete, but the history of *searu*
+is not unexplained: *searwes* 'of a device' preserves the environment for breaking,
+and Campbell, Hogg, and Hogg and Fulk explicitly extend its diphthong
+into the direct cases. This is positive evidence for analogy, not a
+repair inferred merely from a failed output. Ball and Stiles likewise
+derive the broken root of *ġeolu* from w-bearing forms; the direct
+\emph{*gelu} branch instead has a different regular continuation.
+The model has no paradigm-transfer operation
+[@Campbell1959, pp. 230--232, §§579--582;
+@HoggGrammar2011, p. 92, §5.32(4);
+@HoggFulk2011, pp. 22--26, §§2.27--2.33;
+@BallStiles1983, pp. 15--18, §4].
+
+The chronology itself has a published alternative. Hogg and Fulk
+prefer oral nominative loss before gemination but nasal accusative
+loss afterwards; their alternative, following Campbell and Dal,
+loses both early and extends geminates from other cells. Boutkan also
+prefers gemination before low apocope. These accounts must be compared
+as histories of paradigms, not chosen by the fit of citation forms
+[@HoggFulk2011, pp. 20--21, §2.23;
+@Boutkan1995, pp. 209--213, 435--436].
 
 The executable position is later than that historical argument would
 suggest. Moving this fragment beside the oral loss changes no selected
@@ -5028,6 +5093,10 @@ differences remain: *dēor* 'deer' loses z instead of rhotacizing it,
 straw loses its endingless-diphthong input. Loss after ordinary final-z
 deletion still gives predicted \emph{*dōr}; that is a separate
 lengthening dependency, not a failure to restore lowering.
+Moving unchanged [SC112 PNWGmcMonosyllabicFinalRLengthening](#rule-PNWGmcMonosyllabicFinalRLengthening)
+before the experimental loss restores short *dor*, preserving exactly
+the two original lengthening applications. This is an executable
+prerequisite of that candidate, not an independent historical date.
 A thirteenth lost lowering, in *ġeoc* 'yoke', is hidden at the endpoint
 by the later palatal-glide treatment. Endpoint agreement alone therefore
 does not establish an unchanged derivation.
@@ -5051,6 +5120,29 @@ the n exposed by loss. Inverting the two operations gives predicted
 This demonstrates a feeding relation between the two representations;
 the same reversal recorded from both directions is not two independent
 historical dates.
+
+The direct-case *r* of *dēor* 'deer' is likewise not independently established
+by the late executable derivation. Under the early-loss account it
+comes from inflected cells with internal z. The supplied dictionary
+dative resolves to Northumbrian *deare* 'animal' (dative singular), not
+a diplomatic West Saxon *dēore* 'animal' token; West Saxon *deora*
+'animals', the genitive plural in
+Ohthere's account, provides a secure independent oblique. Its
+reconstruction \emph{*deuzôⁿ} regularly retains internal z, whereas
+the direct cell exposes it to northern final-z loss. The genitive
+plural is a proposed scoring alternative, not a silently changed
+selection [@KembleHardwick1858, p. 19, capitulum LXXIX;
+@Bosworth1859, p. 20, lines 25--27;
+@RingeTaylor2014, pp. 86--87, 174; @Fulk2018, pp. 148--149, §7.8].
+
+The current apocope position is retained. The position beside oral
+loss remains endpoint-equivalent; the pre-gemination package makes
+real progress on the stranded-glide intermediates, but still changes
+hay, net and hue and needs explicit paradigm histories. The
+same-site endingless-aw companion to
+[SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) separately restores
+regular reconstructed \emph{*strēa}; it does not derive attested
+*strēaw* 'straw'. These are tested alternatives, not adopted reorderings.
 
 ## Coda nasalization and the final-n proxy
 

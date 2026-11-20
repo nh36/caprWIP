@@ -17,3 +17,20 @@ receipt.
 
 The executable position preserves inherited-*r* conditioning and is not
 itself evidence for the historical date of the change.
+
+## Controlled early-SC047 comparison
+
+On certified control634a1335, moving unchanged SC112 alone in the
+SC017-before-pre-gemination-SC047 candidate prevents extra door
+lengthening: dorą remains suffixed here and subsequently gives dor.
+The exact original there/where applications and their intermediate
+forms survive. Secondary-r, suffixed, stress, length and syllable-count
+negatives remain unchanged. Production SC112 stays in place because
+production SC047 stays late.
+
+Hill2017 pp.142–148 supplies a broader comparative argument;
+Ringe–Taylor2014 p.65 permits deictic stress or reanalysis involving
+here. Two selected adverbs alone do not independently establish a
+universal law or a strict SC112→SC047 historical edge. This experiment
+establishes a viable executable prerequisite, not a new date.
+See [the full assessment](../../literature_dossiers/sc047_three_decisions/source-assessment.md).

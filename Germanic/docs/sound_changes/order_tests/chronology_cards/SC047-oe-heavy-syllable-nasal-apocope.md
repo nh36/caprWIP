@@ -72,3 +72,21 @@ dependencies. SC047 remains a late executable fragment of historically
 early, weight-independent loss. See sc047-adjudication.md and
 sc047-sc048-followup-evidence/README.md; original cards/tables are
 preserved measurements, not current historical bounds.
+
+## Three-decision controlled follow-up on634a1335
+
+The seven-way a2ca7453 matrix supersedes the preceding *interpretation*,
+not its measurements. Unchanged SC112 before the joint early loss
+restores short dor and exactly its original two firing identities.
+A separate same-site SC111 aw# companion restores modelled strēa,
+not attested analogical strēaw. Neither is adopted in production.
+Deer direct-case r is analogical under the early-loss account; a
+secure WS genitive-plural scoring cell is proposed, not adopted.
+Searu has explicit source-backed extension from searwes; it is not
+an unexplained historical failure. The full early nuclearization
+package still changes hay/net/hue. All40 lowering identities survive;
+early SC047 adds only straw to the original159. The late position
+is retained with the source disagreement over nasal loss/gemination.
+No selected-output equivalence becomes a new strict historical edge.
+See [the three-decision assessment](../../literature_dossiers/sc047_three_decisions/source-assessment.md)
+and complete row/census/checkpoint tables alongside it.
