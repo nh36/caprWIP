@@ -4996,12 +4996,13 @@ remains relevant, with its explicitly qualified syncope history
 
 ### Early low-vowel loss and its nasal fragment
 
-The nasal deletion represented here belongs with
-[SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), not with a
-separately established heavy-syllable Old English apocope. Ringe and
-Taylor treat oral and nasal short-final low-vowel loss together as a
-West Germanic development. Their comparative evidence includes *horn*
-'horn' and the vocalization of glides stranded by vowel loss. Fulk
+The nasal deletion represented here is the counterpart of
+[SC041 PWGmcFinalBareALoss](#rule-PWGmcFinalBareALoss), not a
+separately established heavy-syllable Old English apocope. The two
+losses have comparable conditioning; it does not follow that they
+occurred at the same time. Ringe and Taylor treat both as a West
+Germanic development before j-gemination. Their comparative evidence
+includes *horn* 'horn' and the vocalization of glides stranded by vowel loss. Fulk
 explicitly distinguishes this weight-independent loss from later,
 quantitatively conditioned high-vowel loss
 [@RingeTaylor2014, pp. 44--47, §§3.1.2--3.1.3;
@@ -5059,14 +5060,52 @@ The model has no paradigm-transfer operation
 @HoggFulk2011, pp. 22--26, §§2.27--2.33;
 @BallStiles1983, pp. 15--18, §4].
 
-The chronology itself has a published alternative. Hogg and Fulk
-prefer oral nominative loss before gemination but nasal accusative
-loss afterwards; their alternative, following Campbell and Dal,
-loses both early and extends geminates from other cells. Boutkan also
-prefers gemination before low apocope. These accounts must be compared
-as histories of paradigms, not chosen by the fit of citation forms
-[@HoggFulk2011, pp. 20--21, §2.23;
+Hogg and Fulk put oral nominative loss before gemination but
+nasal loss after it. In their example, the oral nominative
+\emph{*sagjaz} gives \emph{*sagi}; the nasal accusative
+\emph{*sagją} gives \emph{*saggją} and then \emph{*saggi}.
+Both tested orders therefore give the reconstructed nominative
+\emph{*seġe}, not attested nominative *seċġ* 'retainer'; only the
+split chronology derives the geminate accusative directly, supplying
+a model for remodelling the nominative. The oral-ending control
+\emph{*andijaz} gives *ende* 'end' through long \emph{*andī} in
+both orders. Boutkan instead puts gemination before low-vowel loss
+more generally [@HoggFulk2011, pp. 19--22, §§2.20--2.24;
 @Boutkan1995, pp. 209--213, 435--436].
+
+The light neuter *nett* 'net' is a sharper test because its nominative
+and accusative both have the nasal ending. If \emph{*natją}
+loses the vowel and vocalizes j before gemination, the direct
+derivation gives \emph{*nati} and then reconstructed \emph{*nete}.
+If it geminates first, *i* from the stranded glide is subsequently
+lost after the heavy syllable, giving attested *nett* without
+levelling. This favours split loss for the direct cell, but both
+orders derive geminated donors such as attested dative *nette*
+'with a net' and predicted genitive \emph{*nettes}. The existence
+of those donors does not establish that their geminate spread.
+Old High German *beti* 'bed' beside *betti* supports early nasal
+loss if the ungeminated form is inherited rather than remodelled;
+it does not attest \emph{*nete} in English
+[@BosworthToller1898, s.v. net;
+@Campbell1959, pp. 229--230, §576;
+@HoggFulk2011, pp. 19--21, §§2.20--2.23;
+@RingeTaylor2014, pp. 46--47, 173--174].
+
+Hay and hue distinguish the order of nasal loss and gemination at
+the first fork, but their final forms depend also on how the
+geminated labial cluster develops. Early loss gives singleton
+\emph{*xawi} and \emph{*xiwi}; split loss first produces a
+geminate. Vocalizing its stranded j at once misses the later
+palatalized-glide developments. If that conditioning survives,
+the split model derives *hīeġ* 'hay' and *hīew* 'appearance'
+directly. The surviving inflected stems supply a separate route
+to the same root shapes. Both chronologies recover heavy-stem
+\emph{*rīkī} and permit the broken oblique *searwes* to supply
+the diphthong of *searu*. These establish which glides and
+paradigm forms matter, but not the place of short nasal-vowel
+loss relative to j-gemination in all stems
+[@Campbell1959, pp. 46, 230--232, §§120, 579--582;
+@RingeTaylor2014, pp. 46--47, 53, 238, 250].
 
 The executable position is later than that historical argument would
 suggest. Moving this fragment beside the oral loss changes no selected
@@ -5121,7 +5160,7 @@ This demonstrates a feeding relation between the two representations;
 the same reversal recorded from both directions is not two independent
 historical dates.
 
-The lexeme headed *dēor* is represented by the genitive plural *dēora*
+The lexeme headed *dēor* 'deer' is represented by the genitive plural *dēora*
 'of deer', attested as *deora* 'of deer' in Ohthere's account (Orosius
 I.1 §15). The reconstructed genitive ending in \emph{*déuzôⁿ} keeps z
 word-internal through rhotacism; CAPR writes \emph{*déuzô}, retaining
@@ -5135,10 +5174,16 @@ attestation [@KembleHardwick1858, p. 19, capitulum LXXIX;
 @Bosworth1859, p. 20, lines 25--27;
 @RingeTaylor2014, pp. 86--87, 174; @Fulk2018, pp. 148--149, §7.8].
 
-The current apocope position is retained. The position beside oral
-loss remains endpoint-equivalent; the pre-gemination package makes
-real progress on the stranded-glide intermediates, but still changes
-hay, net and hue and needs explicit paradigm histories. The
+The current apocope position is retained. The direct neuter
+geminates support the split route, while comparative ungeminated
+relics and the independently available donors leave early nasal
+loss with levelling viable. Frisian rune forms may retain reduced
+low endings regionally and do not determine their order against
+gemination in Old English. The order remains open, not resolved
+by the selected-corpus score
+[@Stiles2013, pp. 15--16; @Versloot2019, pp. 78--92].
+The position beside oral loss remains endpoint-equivalent in the
+simple displacement test. The
 same-site endingless-aw companion to
 [SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) separately restores
 regular reconstructed \emph{*strēa}; it does not derive attested

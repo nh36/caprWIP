@@ -515,3 +515,35 @@ presupposing the disputed apocope order. No rule, cascade position, or
 other scoreable selection changes. The exact transition preserves the
 pre-migration baseline and the immutable original 380; only the active
 fingerprints that hash the selected deer cell must change.
+
+## Paired oral/nasal chronology follow-up (20 November 2026)
+
+The [source and experiment matrix](../literature_dossiers/sc047_paired_chronologies/README.md)
+compares Ringe–Taylor's early-both-loss order directly with Hogg–Fulk's
+oral-first split at the same reconstructed cells. It preserves all
+394 output sets per variant, complete SC017/047/112 censuses and
+staged extra cells outside scoring. There are 158 live SC047
+applications; the experimental placements add straw, not a second
+deer entry. No inherited mismatch or production rule changes.
+
+The split order regularly gives nett and bedd; early nasal loss gives
+nete and bede but leaves geminated obliques that could supply levelling.
+OHG beti and the other comparative relics positively favour early
+loss under their inherited analyses, without establishing an OE
+direct nete. The matched oral ending of secg predicts ungeminated
+seġe in both orders; ende is an attested oral control. The narrow
+split-labial test separates genuine gemination from the later need
+for palatalized w in hay and hue. Rīċe and searu test vocalization
+and independently documented oblique breaking, not the relative
+order under dispute. The controls reproduce short dor with unchanged
+SC112 early, the there/where applications, and all lowering identities;
+they add no historical chronology edge.
+
+**Disposition:** retain the executable position and conditioning.
+Reformulate the reader and metadata to distinguish evidence for the
+split regular direct cells from evidence for early loss in the
+comparative record. Neither establishes a general nasal-loss order
+relative to gemination for Old English. Record the competing
+falsifiers and representation gaps rather than changing more scored
+cells. The deer transition remains the only baseline change, in its
+own preceding commit.
