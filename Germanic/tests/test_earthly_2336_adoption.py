@@ -79,6 +79,7 @@ def test_authorised_writer_transition_preserves_every_original_record_and_archiv
                 "approved_fee_input_migration.json", "approved_nightmare_target_migration.json",
                 "approved_final_nasal_candidate_migration.json",
                 "approved_flask_nompl_migration.json",
+                "approved_deer_genpl_migration.json",
             ):
                 approval = json.loads((BASELINE / filename).read_text())
                 for change in approval["changes"]:
@@ -94,8 +95,8 @@ def test_authorised_writer_transition_preserves_every_original_record_and_archiv
                         old_outputs=before["outputs"], new_outputs=after["outputs"],
                         adjudication_memo=memo))
             assert {r["row_id"] for r in expected} == {
-                "2011", "2201", "2282", "2053", "2335", "2208", "2006", "2141", "2016"}
-            assert len(expected) == 11
+                "1988", "2011", "2201", "2282", "2053", "2335", "2208", "2006", "2141", "2016"}
+            assert len(expected) == 12
             assert len(added) == len(expected)
             assert {tuple(sorted(row.items())) for row in added} == {
                 tuple(sorted(row.items())) for row in expected}

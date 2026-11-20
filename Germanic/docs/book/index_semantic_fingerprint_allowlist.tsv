@@ -383,3 +383,5 @@ remove	oe	flasce	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_
 remove	pgmc	*flaskō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: comparative headword remains in metadata and unstarred tagged prose, not a complete weak nominative.	
 remove	pgmc	*fláskōn	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: unchanged selected input remains in metadata and unstarred tagged prose; redundant starred tag removed.	
 remove	pgmc	flaskǭ	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: obsolete ending illustration replaced by independently justified complete oblique hypotheses.	
+remove	pgmc	*déuzą	selected_input	trace_proto_input	deer — OE dēor	SC047 deer migration: direct singular retained as a diagnostic, not as the selected trace.	
+add	pgmc	*déuzô	selected_input	trace_proto_input	deer — OE dēora	SC047 deer migration: independently attested genitive plural replaces the selected direct singular.	

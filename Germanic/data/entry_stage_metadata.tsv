@@ -8,6 +8,7 @@ row_id	proto_stage	protoform_stage	protoform_variety	decision_type	evidence
 1980	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Root noun *kō- ~ *kū- (Kroonen): nom. *kōz, obl. *kū-. OE leveled zero-grade *kū- to all cases; dat.sg. cȳ < *kūi is lautgesetzlich.
 1981	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen: *kraftu- m. 'strength' (u-stem); Orel: *kraftiz ~ *kraftuz. OE cræft has æ (not e), ruling out i-stem *-iz which would trigger i-umlaut. Using a-stem *
 1983	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Kroonen (2013:313) *kweduz m. u-stem 'resin' (Leiden orthography: *d* = [ð] intervocalically); Orel (2003) *kweðuz explicit; R/T (2014:323) PWGmc *kwidu presupp
+1988	pgmc	pgmc		same_stage_pgmc_paradigm_cell	Inherited neuter genitive plural *déuzôⁿ (CAPR *déuzô), attested dēora in Orosius I.1 §15, Bosworth 1859 p.20 lines 25–27. Comparative PROTO *déuzą and headword dēor retained.
 1990	pgmc	pgmc		same_stage_pgmc_paradigm_cell	I-stem *deliz per Kroonen p.93: "evidence for both an i-stem (OE dile) and a ja-stem (OS dilli, OHG tilli)". OE generalized i-stem; OS/OHG generalized ja-stem.
 1998	pgmc	pgmc		same_stage_pgmc_model_encoding	(no TSV NOTE; PGmc paradigm/stem variant)
 2006	pgmc	preoe	transponent	post_pgmc_u_to_a_stem_transfer	RingeTaylor2014 p177 n4 gives transferred endingless *feh before breaking and intervocalic h-loss; Brunner1965 p221 §275 confirms OE a-declension. PROTO *féxu remains inherited u-stem; PROTOFORM *féx encodes this later nom./acc.sg. All earlier executable stages preserve its pre-breaking shape.

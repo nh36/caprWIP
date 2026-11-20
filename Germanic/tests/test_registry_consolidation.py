@@ -357,6 +357,7 @@ class FingerprintGuardTests(unittest.TestCase):
         # the immutable380 conserved (test_earthly_2336_adoption.py).
         # Consolidation migrates only the two approved spindle/filth cells;
         # the earlier expansion archives and mismatch identities remain.
+        # Deer genitive plural changes only the scored cell for row 1988.
         self.assertEqual(
             historical["outputs_sha256"],
             "b85be7e765245d5fabc05f536b19a8e35f0ec2e4220e6f23237d81d83ceb42bb",
@@ -374,9 +375,9 @@ class FingerprintGuardTests(unittest.TestCase):
             "43a57847b70b39ec130b4b52a17065be8cedd0e5fe7c6cc801ae1bcecae9fe2c",
         )
         self.assertEqual(data["legacy_subset_sha256"],
-                         "145b92fe89d055e8a14e900cc0755ac3f4f1219b5ba815e10d111a057a016624")
+                         "8ebd6ea867424da7f9bb23cdc72d9a8a6dc4e7f1fbfb9e9a3bb3936f5a76e65d")
         self.assertEqual(data["outputs_sha256"],
-                         "1bef3798e864ce1277511f9d9f6bf5c461dcbfa4608173849f4b467225e89727")
+                         "8405a0661e893ba512b032dcd427c7f812c5688fa09cba1b271fe42afdd1c900")
         previous = {
             row["row_id"]: row
             for row in csv.DictReader(

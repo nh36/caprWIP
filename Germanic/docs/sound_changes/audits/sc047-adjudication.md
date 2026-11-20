@@ -491,3 +491,59 @@ dialect history remain incomplete. The retained-o gate gap and the
 unheld originals are explicit. The archive's cost review records740
 opt-in networks; no routine test cost is added. Final certification is
 for the final tree, not inherited from control634a1335.
+
+## Selected deer cell after PR19 (20 November 2026)
+
+The landed comparison at `545ba40ab3fa363249562bc032f7df1c3923dc47`
+is the pre-migration reference. Adopt the genitive plural for row 1988
+alone; retain *dēor* as the headword and `*déuzą` as the comparative PROTO
+and unscored direct-singular diagnostic. Ohthere's partitive *tamra
+deora unbebohtra syx hund* in Orosius I.1 §15 (Bosworth 1859, p. 20,
+lines 25–27; Cotton Tiberius B.I) attests the oblique. The whole-cell
+reconstruction `*déuzôⁿ` combines the stem with Fulk's genitive-plural
+ending (2018, pp. 148–149, §7.8); CAPR `*déuzô` represents its trimoric
+quantity without separately marking nasality. See the [original
+assessment](../literature_dossiers/sc047_three_decisions/source-assessment.md#historical-analysis-deer)
+for the source distinctions and original paired traces.
+
+The genitive ending keeps z internal through rhotacism. Early low-vowel
+loss in the direct singular instead exposes final z to loss and gives
+regular dēo; Ringe and Taylor (2014, pp. 86–87, 174) derive the r of
+attested dēor by levelling from inflected forms. Selecting an attested
+regular oblique avoids making that proposed levelling a sound change or
+presupposing the disputed apocope order. No rule, cascade position, or
+other scoreable selection changes. The exact transition preserves the
+pre-migration baseline and the immutable original 380; only the active
+fingerprints that hash the selected deer cell must change.
+
+## Paired oral/nasal chronology follow-up (20 November 2026)
+
+The [source and experiment matrix](../literature_dossiers/sc047_paired_chronologies/README.md)
+compares Ringe–Taylor's early-both-loss order directly with Hogg–Fulk's
+oral-first split at the same reconstructed cells. It preserves all
+394 output sets per variant, complete SC017/047/112 censuses and
+staged extra cells outside scoring. There are 158 live SC047
+applications; the experimental placements add straw, not a second
+deer entry. No inherited mismatch or production rule changes.
+
+The split order regularly gives nett and bedd; early nasal loss gives
+nete and bede but leaves geminated obliques that could supply levelling.
+OHG beti and the other comparative relics positively favour early
+loss under their inherited analyses, without establishing an OE
+direct nete. The matched oral ending of secg predicts ungeminated
+seġe in both orders; ende is an attested oral control. The narrow
+split-labial test separates genuine gemination from the later need
+for palatalized w in hay and hue. Rīċe and searu test vocalization
+and independently documented oblique breaking, not the relative
+order under dispute. The controls reproduce short dor with unchanged
+SC112 early, the there/where applications, and all lowering identities;
+they add no historical chronology edge.
+
+**Disposition:** retain the executable position and conditioning.
+Reformulate the reader and metadata to distinguish evidence for the
+split regular direct cells from evidence for early loss in the
+comparative record. Neither establishes a general nasal-loss order
+relative to gemination for Old English. Record the competing
+falsifiers and representation gaps rather than changing more scored
+cells. The deer transition remains the only baseline change, in its
+own preceding commit.

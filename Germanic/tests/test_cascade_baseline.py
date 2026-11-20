@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "145b92fe89d055e8a14e900cc0755ac3f4f1219b5ba815e10d111a057a016624"
+    ACTIVE_SHA = "8ebd6ea867424da7f9bb23cdc72d9a8a6dc4e7f1fbfb9e9a3bb3936f5a76e65d"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -124,7 +124,7 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual([m["row_id"] for m in migrations],
                          ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
                           "2302", "2011", "2201", "2282", "2053", "2335", "2208", "2006",
-                          "2141", "2016", "2141", "2016"])
+                          "2141", "2016", "2141", "2016", "1988"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -397,7 +397,9 @@ class LegacySubsetTests(unittest.TestCase):
         previous = mod.read_baseline(
             BASELINE_DIR / "cascade_baseline_outputs_pre_sc069_flask_nompl.tsv",
             BASELINE_DIR / "cascade_baseline_summary_pre_sc069_flask_nompl.json")
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_deer_genpl.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc047_deer_genpl.json")
         approval = json.loads(
             (BASELINE_DIR / "approved_flask_nompl_migration.json").read_text())
         mod.validate_cell_transition(previous, current, approval)
@@ -408,6 +410,25 @@ class LegacySubsetTests(unittest.TestCase):
             before["2016"], proto="*fláskōniz", proto_norm="fláskōniz",
             fst_input="fláskōniz", counterpart="flascan", outputs="flascan", match="1")
         assert (current["summary"]["matched"], current["summary"]["mismatched"]) == (386, 8)
+
+    def test_deer_genitive_plural_preserves_all_other_records_and_mismatches(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_deer_genpl.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc047_deer_genpl.json")
+        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        approval = json.loads(
+            (BASELINE_DIR / "approved_deer_genpl_migration.json").read_text())
+        mod.validate_cell_transition(previous, current, approval)
+        before = {r["row_id"]: r for r in previous["records"]}
+        after = {r["row_id"]: r for r in current["records"]}
+        assert {key for key in before if before[key] != after[key]} == {"1988"}
+        assert after["1988"] == dict(
+            before["1988"], proto="*déuzô", proto_norm="déuzô", fst_input="déuzô",
+            counterpart="dēora", outputs="dēora")
+        assert (len(after), current["summary"]["matched"]) == (394, 386)
+        assert {key for key, row in after.items() if row["match"] == "0"} == {
+            key for key, row in before.items() if row["match"] == "0"}
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy
@@ -481,7 +502,8 @@ class LegacySubsetTests(unittest.TestCase):
             previous["records"], old,
             [m for m in migrations if m["row_id"] not in {
                 "2224", "2162", "2283", "2095", "2313", "2314", "2302",
-                "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141", "2016"}],
+                "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141", "2016",
+                "1988"}],
         )), 387)
 
 
