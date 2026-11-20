@@ -311,6 +311,10 @@ end
 -- head (Campbell1959, pp. 155–156). This is a contextual shared-gloss allowance,
 -- not spelling normalization or permission to omit the paragraph's first gloss.
 local SHARED_GLOSS_VARIANTS = {
+  ["rīċe"] = {
+    anchor = "rīce", context = "The long final vowel",
+    prior = true,
+  },
   ["lītilaz"] = {
     anchor = "luttilaz", context = "Orel prints the alternatives",
     following = true, part2 = true,

@@ -1,5 +1,23 @@
 # SC059-SC061: Back mutation and weak-tail bridge
 
+## Current chronology qualification, SC059 clause-separation follow-up
+
+The chapter-shape discussion below predates the current source-critical
+adjudication and preserves its earlier expectations. Its descriptions of a
+historically demonstrated two-sided SC048 < SC059 < SC078 window are no
+longer current conclusions. The adopted separately composed SC059 clauses
+enforce West Saxon e/u versus e/a conditioning while preserving all394
+selected outputs and the joint Rainbow stress restriction.
+
+The corrected SC048 reversal removes the old steal/weave artifacts.
+The corrected late placement after SC078 instead loses genuine e/u mutation
+in heaven, milk, seven and world because medial u has already lowered to o.
+This is a serialized trigger-preservation comparison across several rules,
+not independent dating of SC078 itself. Current interpretations and the
+unchanged original measurements are distinguished in the SC059 memorandum,
+chronology card and `audits/sc059-clause-evidence/README.md`.
+No chapter regrouping, SC060 or SC061 change is adopted here.
+
 ## Joint target-stress adoption, 17 November 2026
 
 The [SC059 memorandum](../audits/sc059-adjudication.md) records the adopted

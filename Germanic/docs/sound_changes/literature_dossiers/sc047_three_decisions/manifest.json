@@ -1,0 +1,46 @@
+{
+  "control_commit": "634a133538bed66df7edd0737b1c5776cda8739d",
+  "source_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+  "corpus_sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1",
+  "snapshot": "sc047-followup-a2ca7453",
+  "archive_sha256": "0e24fb159b354e62657de13db511940d8564cc1a3edbc16caa5bbba4282a109c",
+  "members": {
+    "sc047-followup-a2ca7453/completion.json": "e2c40972320904ac499c458d58334fd8efb8a4156dac78bb2b8de4cc24ef2808",
+    "sc047-followup-a2ca7453/execution/decisions-plan-b6f067dad61740a78403e2e18cb32d20.receipt.json": "acab7822b9aa09c69950b901fb933bf7d2b3acd09ac0c485d8b6eda275d52c8b",
+    "sc047-followup-a2ca7453/execution/decisions-plan-b6f067dad61740a78403e2e18cb32d20.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sc047-followup-a2ca7453/execution/decisions-plan-b6f067dad61740a78403e2e18cb32d20.stdout.log": "4687755614084ad07cf8421339b078cce15d1f633d295464abae2076bff56433",
+    "sc047-followup-a2ca7453/receipt.json": "c213fc0b9cd2c72e77a211c28256f50c87bf6933a6d4e151af42ff0a15eb939f",
+    "sc047-followup-a2ca7453/results/observed.json": "4687755614084ad07cf8421339b078cce15d1f633d295464abae2076bff56433",
+    "sc047-followup-a2ca7453/snapshot/anglo_frisian_experiments.py": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa",
+    "sc047-followup-a2ca7453/snapshot/capr_runtime.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+    "sc047-followup-a2ca7453/snapshot/contexts.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "sc047-followup-a2ca7453/snapshot/corpus.tsv": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1",
+    "sc047-followup-a2ca7453/snapshot/executable_facts.py": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd",
+    "sc047-followup-a2ca7453/snapshot/oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+    "sc047-followup-a2ca7453/snapshot/plan.json": "d34d707a2958d92e971b3fb0b42ebb1f6efd2265037f193e4c0a252de5fcdda3",
+    "sc047-followup-a2ca7453/snapshot/sound_change_order_sensitivity.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+    "sc047-followup-a2ca7453/snapshot/source.txt": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+    "sc047-followup-a2ca7453/snapshot/worker.py": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e"
+  },
+  "cost": {
+    "networks": 740,
+    "compiler": [
+      {
+        "script": "common-definitions.foma",
+        "seconds": 317.39786047814414,
+        "peak_rss_kib": 2243756,
+        "returncode": 0
+      },
+      {
+        "script": "experiment.foma",
+        "seconds": 8.013665420003235,
+        "peak_rss_kib": 1149852,
+        "returncode": 0
+      }
+    ],
+    "variants": 7,
+    "seconds": 327.11293931584805
+  },
+  "restricted_source_texts_or_images_included": false,
+  "diagnostic_correction": "The staged *h*á*w*j*ą token uses non-native h and is rejected. The operative hay witness is canonical row2061 xáwją, whose complete compiled prefixes are retained. The archived token and rejection are not rewritten."
+}

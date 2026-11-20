@@ -2966,47 +2966,14 @@ define OEPrefixAReduction SentenceCtx([
     {*æ} -> {*i} || .#. {*ᶠ} OEAnyConsonant* {*ʝ} _
 ]);
 
-# Split into separate composed rules to avoid foma parallel rule context leakage.
-# When using [R1, R2] syntax, contextual restrictions can affect all rules.
-# Hogg (1992) p.120: "By First Fronting /a/ became /æ/ as in stressed syllables"
-# Unstressed suffix *a → *æ (parallel to stressed AFB, but applies before nasals too).
-# This feeds OEWeakTailReduction3 (*æ → *e), giving the chain: *a → *æ → *e.
-#
-# §17.13: Previously the grammar distinguished breve-marked weak *ă from plain
-# *a via OEWeakTailReduction1a ({*ă}→{*a}). The OEUnstressedAFronting rule
-# ran BEFORE Reduction1a so only genuine unstressed *a (e.g. in *-anaz
-# participle suffix) fronted, while transient *ă (e.g. in -janą infinitive
-# before OESecondaryNasalization) was protected. With breve eliminated the
-# stressed/unstressed partition is now carried entirely by:
-#   (a) OESecondaryNasalization protecting coda-nasal *a via *a→*ą before this
-#       rule fires, and
-#   (b) the right-context requirement below restricting fronting to
-#       non-initial medial syllables.
-#
-# This is NOT a separate sound change but an extension of AFB to unstressed
-# positions. AFB (line 1248) explicitly blocks before nasals, which is
-# correct for STRESSED syllables (giving OE mann not *mænn). But in
-# UNSTRESSED syllables, fronting did occur, as shown by participle
-# *-anaz → *-æn → -en.
-#
-# Example: PGmc *funðanaz → *funðænaz → *funden (via *æ→*e)
-# Counter-example: *bakaną → *bakąną (nasalized, protected) → bacan
-
-# SECONDARY NASALIZATION (R/T vol.2 §5.1.2, p.153):
-# "Unstressed *a was nasalized, and therefore not fronted, only if it was
-# followed by a nasal in the syllable coda."
-#
-# FIXED 2026-03-13: The original rule context was `_ {*n} .#.` which matched
-# both infinitives AND participles AFTER apocope had deleted final vowels.
-# This incorrectly nasalized participle -an- suffix, blocking fronting.
-#
-# The corrected rule runs BEFORE apocope, when final vowels are still present:
-#   - Infinitive *bakaną: matches `*a*n*ą.#.` → nasalize → bacan ✓
-#   - Participle *bakanăz: has `*a*n*ă*z.#.` → no match → fronts to -en ✓
-#
-# Examples:
-#   Infinitive *bakaną: *bak-a-ną → *bak-ą-ną (nasalized) → bacan
-#   Participle *fundanăz: *fund-an-ăz → no match → *fund-æn-ăz → funden
+# SC048 retains a final-n proxy after SC047 exposes n in selected -aną.
+# The historical domain is an unstressed vowel before a coda nasal, including
+# internal codas (Ringe/Taylor2014 pp.152-154; Hogg §§6.1-6).
+# Inflected participles can front before an onset nasal; i-mutation can front
+# an earlier nasalized vowel in bindandī. Neither is a grammatical exception.
+# The composed a/à clauses retain the adopted secondary annotation handling.
+# See sc047-adjudication.md and sc048-adjudication.md; older measurements stay
+# archived. Later unstressed fronting consumes vowels this proxy leaves oral.
 define OESecondaryNasalization [Ctx([
     {*a} -> {*ą} || _ {*n} .#.
 ])] .o. [Ctx([
@@ -3263,11 +3230,14 @@ define OEUnstressedEIContraction [
 # NOTE: Context must NOT be optional — [X | Y] not (X | Y).
 
 define OEBackMutation FootCtx([
-    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. FootCtx([
     {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]) .o. Ctx([
-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
+    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
     {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]);
 
@@ -3579,9 +3549,9 @@ define OEMedLongShort FootCtx([
     {*ō} -> {*o} || EnglishStarVocalic OEAnyConsonant+ _ OEAnyConsonant+ [EnglishStarVocalic|{*ô}]
 ]);
 
-# Apocope of word-final neuter *-ą. Unlike *i/*u apocope, this appears to be
-# unconditional (not restricted to heavy syllables). The original system's
-# marker-based approach effectively deleted *ą after any consonant.
+# SC047: nasal fragment of early WGmc short-low-vowel loss, alongside SC041.
+# No weight or grammatical-class condition (Fulk2018 p.91; R/T2014 pp.44-47).
+# Retained late executable position is not the historical date; see its audit.
 define OEHeavySyllableNasalApocope Ctx([
     {*ą} -> 0 || OEAnyConsonant _ .#.
 ]);
@@ -3835,7 +3805,13 @@ define PGWeakTails [
     ō:{*ō} n:{*n} i:{*i} z:{*z} |
     ō:{*ō} n:{*n} i:{*i} |
     ō:{*ō} n:{*n} ų:{*ų} |
-    ō:{*ō} m:{*m} a:{*a} z:{*z}
+    ō:{*ō} m:{*m} a:{*a} z:{*z} |
+    # Unselected weak cells: Ringe/Taylor2014 p.153; Fulk2018 p.170.
+    # Productive input coverage only, not a claim that every paradigm is derived.
+    a:{*a} n:{*n} ų:{*ų} |
+    a:{*a} m:{*m} a:{*a} z:{*z} |
+    a:{*a} m:{*m} m:{*m} a:{*a} z:{*z} |
+    o:{*o} n:{*n} m:{*m} i:{*i} z:{*z}
 ];
 define EnglishProtoNative [
     [{ᵘ}:{*ᵘ} | {ᶜ}:{*ᶜ} | 0] pgrmWord |

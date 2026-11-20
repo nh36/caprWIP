@@ -1,0 +1,27 @@
+{
+  "base_commit": "c7497b7de23c8e9c43d568454be317b3f918ffde",
+  "source_sha256": "61932c29b3c36f376bc56a2cc46c801dbbbf1d992a2403c5319fd821c5a418c1",
+  "candidate_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+  "corpus_sha256": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1",
+  "archived_patch_sha256": "3d4f7dc7c95b59610ca6bac1cc5a763c5d240545217a4c3b4ba6e674d3383eaa",
+  "snapshot": "sc047-followup-dc764bd9",
+  "archive_sha256": "58e4a07bed6f4e9bbefaf43b103d9658498ba351bed1ed1edd2b7e96a84d900c",
+  "members": {
+    "sc047-followup-dc764bd9/completion.json": "69d10bbccb61592788f2af3e5a117ce6be2d2bce5babe38de04def16f40b5f0a",
+    "sc047-followup-dc764bd9/execution/sc059-plan-4a8d95ef6b494c3cbf7d998fe4fa6820.receipt.json": "db42a3ebb0c5f5e5c1eb4e9488ac78bc5a5418cff5aaf5ca0b5c90e43a29a7c0",
+    "sc047-followup-dc764bd9/execution/sc059-plan-4a8d95ef6b494c3cbf7d998fe4fa6820.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sc047-followup-dc764bd9/execution/sc059-plan-4a8d95ef6b494c3cbf7d998fe4fa6820.stdout.log": "1128a57512c6119364cf92befd8bb3176e3a700f89ae09e6911b66350dba3779",
+    "sc047-followup-dc764bd9/receipt.json": "7f526872360ee0ffbb45ed695b998809718cd768c3aa01b84a741e61f8b169e6",
+    "sc047-followup-dc764bd9/results/observed.json": "1128a57512c6119364cf92befd8bb3176e3a700f89ae09e6911b66350dba3779",
+    "sc047-followup-dc764bd9/snapshot/anglo_frisian_experiments.py": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa",
+    "sc047-followup-dc764bd9/snapshot/capr_runtime.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+    "sc047-followup-dc764bd9/snapshot/contexts.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "sc047-followup-dc764bd9/snapshot/corpus.tsv": "31ef6a72f138a777fc682bfdab41b57ab36dfc3797d567e8e7eb2c3f61a438b1",
+    "sc047-followup-dc764bd9/snapshot/executable_facts.py": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd",
+    "sc047-followup-dc764bd9/snapshot/oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+    "sc047-followup-dc764bd9/snapshot/plan.json": "3c73841034ac4cbf70c2013539fafb2aa0aa957a3b5ccd1f9defb2574a2191d3",
+    "sc047-followup-dc764bd9/snapshot/sound_change_order_sensitivity.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+    "sc047-followup-dc764bd9/snapshot/source.txt": "61932c29b3c36f376bc56a2cc46c801dbbbf1d992a2403c5319fd821c5a418c1",
+    "sc047-followup-dc764bd9/snapshot/worker.py": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e"
+  }
+}

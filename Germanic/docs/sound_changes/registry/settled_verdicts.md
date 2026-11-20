@@ -37,6 +37,8 @@ Generator: `Germanic/tools/generate_registry_views.py`.
 | SC044 | OE Breaking | active | REFORMULATE/RESTRICT | `Germanic/docs/sound_changes/audits/sc044-adjudication.md` |
 | SC045 | Voiceless velar-fricative palatal articulation | active | RESTRICT/SPLIT | `Germanic/docs/sound_changes/audits/sc045-adjudication.md` |
 | SC046 | OE A Restoration | active | RESTRICT | `Germanic/docs/sound_changes/audits/sc046-adjudication.md` |
+| SC047 | Final short nasal low-vowel apocope | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc047-adjudication.md` |
+| SC048 | Coda nasalization: final-n proxy | active | REFORMULATE/RETAIN | `Germanic/docs/sound_changes/audits/sc048-adjudication.md` |
 | SC049 | Inherited labial positional realization | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc065-adjudication.md` |
 | SC052 | Class-distinct English velar palatalization | active | REFORMULATE/SPLIT | `Germanic/docs/sound_changes/audits/sc052-scoping-adoption.md` |
 | SC054 | Noninitial w-loss before unstressed i/ī | active | REFORMULATE/REORDER | `Germanic/docs/sound_changes/audits/sc054-adjudication.md` |

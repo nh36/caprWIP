@@ -62,8 +62,8 @@ _Generated from the current fenced `foma` blocks in the reader-facing chapter fi
 | 044-breaking.md | SC044. Vowel-specific breaking (`OEBreaking`) {#rule-OEBreaking} | 188 | 68 | no |
 | 045-velar-fricative-palatalization.md | SC045. Palatalization of velar fricatives beside front vowels (`OEVelarFricativePalatalization`) {#rule-OEVelarFricativePalatalization} | 5 | 44 | no |
 | 046-a-restoration.md | SC046. Restoration of \emph{*a} before following back vowels (`OEARestoration`) {#rule-OEARestoration} | 15 | 63 | no |
-| 047-heavy-syllable-nasal-apocope.md | SC047. Heavy-syllable nasal apocope of final \emph{*ą} (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 19 | 40 | no |
-| 048-secondary-nasalization.md | SC048. Secondary nasalization before final \emph{*n} (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 5 | 37 | no |
+| 047-heavy-syllable-nasal-apocope.md | SC047. Final short nasal low-vowel apocope (`OEHeavySyllableNasalApocope`) {#rule-OEHeavySyllableNasalApocope} | 29 | 40 | no |
+| 048-secondary-nasalization.md | SC048. Unstressed nasalization before final n (`OESecondaryNasalization`) {#rule-OESecondaryNasalization} | 33 | 37 | no |
 | 049-pgmc-b-allophony.md | SC049. Distribution of \emph{*b} after vowels and liquids (`PGmcBAllophony`) {#rule-PGmcBAllophony} | 40 | 38 | no |
 | 050-pwgmc-sievers-law-syncope.md | SC050. Sievers-law syncope (`SieversLawSyncope`) {#rule-SieversLawSyncope} | 18 | 72 | no |
 | 051-sk-palatalization.md | SC051. Palatalization of \emph{*sk} to \emph{*sc} (`OESkPalatalization`) {#rule-OESkPalatalization} | 35 | 77 | no |

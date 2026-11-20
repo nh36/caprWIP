@@ -5,6 +5,13 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The [SC047/SC048 research pass](sound_changes/audits/sc047-adjudication.md)
+distinguishes early low-vowel loss from its retained late nasal fragment,
+and historical coda conditioning from the final-n proxy. The reviewable
+source assessment and bounded alternatives preserve the settled SC045,
+SC046 and rainbow domains. This pass ends at publication for review;
+no further sound change is begun.
+
 The [joint rainbow correction](sound_changes/audits/sc059-adjudication.md)
 adopts the stressed-target domains of restoration and back mutation together,
 preserving secondary low/front annotation through ordinary nonhigh syncope.

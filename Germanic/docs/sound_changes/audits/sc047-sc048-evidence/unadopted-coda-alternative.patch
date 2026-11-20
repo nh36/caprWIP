@@ -1,0 +1,49 @@
+--- a/Germanic/fsts/germanic.txt
++++ b/Germanic/fsts/germanic.txt
+@@ -3739,6 +3739,17 @@
+ # Stages: PGmc → PWGmc → NWGmc → Anglo-Frisian → OE
+ # Note: pipeline order reflects FST composition dependencies, not strict chronology.
+ # Some PWGmc changes (e.g. j-gemination) are placed later due to token visibility needs.
++define SFN Ctx([{*a} -> {*ą} || _ EnglishStarNasal [OEAnyConsonant | .#.]]).o.Ctx([{*à} -> {*ą} || _ EnglishStarNasal [OEAnyConsonant | .#.]]);
++
++define SFI Ctx([{*ą} -> {*æ} || _ EnglishIUmlautThroughU EnglishIUmlautTrigger]).o.OEIUmlaut;
++
++define SFO EAFBrighteningUnstressed.o.Ctx([{*a} -> {*æ} || _ EnglishStarNasal EnglishStarVocalic]);
++
++define SFR OEARestoration
++            .o.FootCtx([{*æ} -> {*a} || .#. OEAnyConsonant* _
++                OEARestorationIntervening {*ą}])
++            .o.FootCtx([{*ǽ} -> {*à} || _ OEARestorationIntervening {*ą}]);
++
+ define EnglishProtoToOE ( # capr:bundle
+     PGmcNasalLossBeforeX
+     .o. RootNounNomZLoss
+@@ -3773,23 +3784,23 @@
+     .o. OEInterStressRaising
+     .o. OEWICombinativeUUmlaut
+     .o. PWGmcFinalBareALoss
++    .o. OEHeavySyllableNasalApocope
++    .o. SFN
+     .o. NWGmcInStemNLoss
+     .o. PWGmcSurvivingBimoricOUnrounding
+-    .o. EAFBrighteningUnstressed
++    .o. SFO
+     .o. EAFBrightening
+     .o. EAFBrighteningLongFinal
+     .o. OEBreaking
+     .o. OEVelarFricativePalatalization
+-    .o. OEARestoration
+-    .o. OEHeavySyllableNasalApocope
+-    .o. OESecondaryNasalization
++    .o. SFR
+     .o. SieversLawSyncope
+     .o. OESkPalatalization
+     .o. OEVelarPalatalization
+     .o. OEPrefixAReduction
+     .o. OEPostVelarWLoss
+     .o. OEWsPalatalDiphthongization
+-    .o. OEIUmlaut
++    .o. SFI
+     .o. OEWLossBeforeI
+     .o. OELatePalatalDiphthong
+     .o. OEJClusterCoalescence

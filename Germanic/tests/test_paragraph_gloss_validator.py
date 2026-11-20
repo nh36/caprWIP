@@ -94,6 +94,23 @@ class ParagraphGlossValidatorTests(unittest.TestCase):
         result = self.validate("*reġnboga* 'rainbow' is known.\n\nAgain *reġnboga*.")
         self.assertEqual(result.returncode, 2, result.stderr)
 
+    def test_sc047_dotted_spelling_requires_the_prior_lemma_and_exact_context(self):
+        anchor = "*rīce* 'kingdom' is recorded.\n\n"
+        context = "The long final vowel subsequently yields *rīċe*."
+        result = self.validate(anchor + context)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for text in (
+            context,
+            context + "\n\n" + anchor,
+            anchor + "An unrelated mention of *rīċe* survives.",
+            anchor.replace("rīce", "rīcē") + context,
+            anchor + context.replace("rīċe", "rīċē"),
+            "# Word-by-word derivations\n\n#### Old English evidence\n\n" + anchor + context,
+        ):
+            with self.subTest(text=text):
+                result = self.validate(text)
+                self.assertEqual(result.returncode, 2, result.stderr)
+
     def test_documented_inflections_share_the_local_dictionary_lemma_gloss(self):
         prefix = "# Word-by-word derivations\n\n"
         paragraph = (

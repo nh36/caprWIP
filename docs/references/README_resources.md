@@ -2,6 +2,20 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## SC047 early-apocope source acquisition
+
+The [intake record](sc047_early_apocope/README.md), `holdings.tsv` and
+`page_map.tsv` register five supplied originals: Hogg and Fulk's actual
+Volume 2 *Morphology* (`HoggFulk2011`), `Boutkan1995`, `BallStiles1983`,
+`Stiles2013` and `Versloot2019`. Originals have canonical local PDF paths;
+complete search aids are private under `local/sc047-early-apocope/`.
+Boutkan's image-only spreads have complete independent left/right OCR.
+Morphology's native vowel encoding requires original-image checking.
+The malformed first morphology download and empty extra Boutkan file
+were not installed. Hollifield1980 remains unacquired.
+Acquisition does not revise the historical dossiers or claim consultation
+of every passage. Bibliographic identity belongs to `docs/refs.bib`.
+
 ## Local-library consolidation, 9 November 2026
 
 `docs/references/` remains the canonical provisioned library. Bibliographic

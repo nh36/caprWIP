@@ -35,3 +35,40 @@ The earlier boundary is directly reciprocal with SC047 later and carries the sam
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_changes.tsv`
 - `Germanic/docs/sound_changes/order_tests/summaries/order_sensitivity_first_break_pilot_03_failures.tsv`
 - `Germanic/docs/sound_changes/sound_change_order_sensitivity.tsv`
+
+
+## SC047/SC048 source-critical update,18 November2026
+
+The current [SC047 memorandum](../audits/sc047-adjudication.md) and
+[SC048 memorandum](../audits/sc048-adjudication.md) supersede earlier
+interpretations, not the measurements above/below. SC047 is the
+weight-independent nasal fragment of SC041's early low-vowel apocope;
+SC048 is the final-n proxy for a wider historical coda-nasal domain.
+The historical87 reversal is one experiment, now89 with sow/betray.
+The late loss can move beside SC041 or after rhotacism without selected
+endpoint changes; pre-gemination movement alone crosses other consumers.
+The literal back-mutation relation still produces steolan/weofan when
+nasalization is delayed, but strict separated WS clauses remove that
+dependence. No independent WS historical edge follows from those words.
+The wider early-coda candidate and direct blocking with strict WS triggers
+both preserve394 selected outputs; source paradigm and glide limits
+remain explicit. Earlier161/89 censuses,87 expectations and local
+experimental prose are dated historical evidence, not current censuses.
+
+## Corrected-control follow-up after SC059 adoption
+
+The preceding update describes its experiment-time implementation.
+SC059's separately composed WS clauses are now adopted at d83324ce;
+the old delayed-nasalization steal/weave effects are absent.
+The wider-coda candidate reaches bindąndī, but needs an explicit
+nasal-vowel i-consumer to recover bindende. Its nasal restoration
+trigger is a separate companion. Complete wider and direct-blocking
+variants both preserve394 selected outputs; their artificial protected
+gumanô carrier differs, while ordinary gumanō/gumanā continuations
+both give unresolved gumne. Source accusative, donor and recipient
+cells remain separately traced. The live final-n proxy is retained,
+not declared coextensive with the historical coda domain. See
+sc048-adjudication.md and sc047-sc048-followup-evidence/README.md.
+These are bounded comparisons, not a new nearest-boundary sweep;
+the original87 reversal and two previous-implementation WS failures
+remain unchanged historical evidence.

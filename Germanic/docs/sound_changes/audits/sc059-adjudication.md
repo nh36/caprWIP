@@ -252,3 +252,106 @@ are exactly those in the executed final trial. Earlier expected answers
 remain independent frozen observations, not rewritten for the new production.
 Measured adoption costs and final source-bound validation are recorded with
 the landing commit; no timeout substitutes for the cost review.
+
+
+## Historical first-pass SC047/SC048 qualification,18 November2026
+
+The stress restriction above is retained unchanged. The new coordinated
+SC047/048 assay finds that the literal parallel clauses accept an a-trigger
+for e despite their written u-only environments. Delayed nasalization
+therefore still gives steolan/weofan. A separately compiled strict-WS
+composition removes those differences while preserving all394 outputs;
+it is a reviewable, unadopted alternative, not a reopened rainbow decision.
+The SC048/SC059 edges are consequently model-local rather than independently
+dated West Saxon chronology. See sc048-adjudication.md and its source
+assessment for Ringe--Taylor319--327/Hogg149--157 and the exact records.
+The same dialect objection applies to the older steal/weave boundary at
+SC078: its retained measurement is model-local, not independent West Saxon
+dating. The canonical SC059→SC078 edge now agrees with the existing reader
+qualification. This is not a new SC078 displacement experiment or a change
+to either executable rule.
+
+## Adopted clause separation, PR19 follow-up
+
+The explicit continuation from c7497b7de23c8e9c43d568454be317b3f918ffde
+authorizes the previously unadopted strict-WS patch as a discrete change.
+The [new immutable assay](sc059-clause-evidence/README.md) records its
+preregistered predictions, complete output sets, compiled local relation,
+source and helper identities and execution costs. This section supersedes
+the preceding section's *unadopted* status, not its original observations.
+
+**Diagnosis and literature.** Foma parallel replacements share contexts.
+Separate composition makes the existing e/u and ae/back-vowel clauses
+accurate without changing their stated stress or consonant domains.
+Ringe--Taylor2014 pp.319--327, especially325, distinguishes Mercian
+weofan from WS wefan; HoggGrammar2011 pp.149--157 §§5.103--106 gives
+the dialectal conditioning and staged WS ealu at156--157 §5.106(2), n.6.
+Those held passages were rechecked before the new assay. No Mercian
+implementation, new lexical entry, or new stress restriction is adopted.
+
+**Census and controls.** Canonical evidence at the pinned base reports
+five firings: heaven2068, milk2126, seven2174, spear2206, world2302.
+The candidate retains them and all394 output sets:386 matches, no
+rejection or ambiguity, and the same eight inherited mismatches.
+Compiled plain-initial, acute and secondary-grave e/u positives retain e
+before a; medial unstressed targets and the dental negative stay unchanged.
+Eligible ae/u and ae/a mutate; staged aelu reaches ealu.
+Rainbow's secondary u lowers at SC017, its linker remains ae through
+SC046/059 and deletes at SC114, b stays a stop after n, and regnboga
+is preserved. The constructed subordinate-root reġnbecan limitation remains.
+
+**Chronology.** Repeating SC048 after SC059 with the old relation gives
+steal2215 steolan and weave2281 weofan; separate clauses remove both.
+Repeating SC059 after SC078 with the old relation gives the same two
+artifacts. With separate clauses, it instead loses four genuine positives:
+heofon→hefon, meoloc→meloc, seofon→sefon, weorold→werold.
+Current full traces locate their medial u→o at OEMedUnstressedULowering;
+final u in speoru survives. This sampled late placement crosses that
+operation as well as weak-tail reduction: it is not a new first-break
+sweep and does not prove SC078 itself is the relevant historical boundary.
+The edge registry/card preserves the original measurements as prior-
+implementation evidence and records this corrected technical comparison.
+
+**Disposition and propagation.** Retain the RESTRICT verdict and all
+adopted Rainbow domains; implement exactly the archived five-clause
+separation. Update current prose/chronology interpretations and authenticate
+this new layer before applying older exact-definition guards. Extend the
+existing finite-domain runtime test, rather than adding a compiler.
+The archive's cost entry and PR summary distinguish this intermediate
+focused/canonical checkpoint from final follow-up strict certification.
+SC047/048 executable definitions and their positions are untouched.
+
+### Final current-control regression qualification
+
+The first final strict serial run on
+`f45140e4f1f026a490525cac9cee652351b56d7f` passed 2,134 tests
+and 9,797 subtests, with five historical skips, but found one stale
+current-model expectation in the existing lowering-displacement control.
+Its old expected `weorald` assumed the previous shared back-vowel
+context; the corrected relation gives `werald`.
+
+The [complete compiled control report](sc059-clause-evidence/post-separation-lowering-controls.json)
+is preserved byte-for-byte (SHA256
+`e9d208976ad613f9d2f52475853c2f3959d3f95da178e98106b3401c8dba0d8d`).
+The common cumulative prefix for world is `*w*é*r*u*l*d`.
+Moving medial-u lowering before the w-conditioned umlaut removes the
+u trigger before SC059: the target now precedes r plus o. Separately
+composed e/u clauses cannot mutate it before o; SC100 later lowers
+the ending vowel to a. The former parallel clauses admitted that
+back-vowel trigger and produced the old `weorald` expectation.
+This is the o counterpart of the already diagnosed e/a leakage,
+not a revised production history or another chronology edge.
+
+All other nineteen recorded current-control outputs retain their
+expectations, including live world `weorold`, the later-lowering
+control, and widow/yoke/youth. Only that existing assertion changes;
+the original historical replay is untouched. No test node, compiler,
+fixture scope, sweep, network or concurrency is added. The failed
+strict receipt is preserved (SHA256
+`9be523abd47bba8ec4d1df53a95a8cf808642ce8e1692c83910471b66dc80c75`).
+Focused current-control verification and final strict serial/exclusive
+certification are repeated on the repaired source. Reader, bibliography,
+renderer and rendered manuscript/TeX/PDF inputs are unchanged by this
+test-and-non-rendered-memo repair; their inspected book remains applicable
+by explicit content/dependency comparison, not an older exact-head
+strict certificate.

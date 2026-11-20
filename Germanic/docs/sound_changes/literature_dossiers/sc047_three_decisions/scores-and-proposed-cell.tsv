@@ -1,0 +1,8 @@
+configuration	original_matches	original_changed	original_rejected	original_ambiguous	proposed_genitive_plural_matches	proposed_row_output	migration_status
+identity	386	0	0	0	386	"[""dēora""]"	proposal_only_not_adopted
+after_SC041	386	0	0	0	386	"[""dēora""]"	proposal_only_not_adopted
+joint_pre_gemination	384	3	0	0	385	"[""dēora""]"	proposal_only_not_adopted
+SC112_before_early_SC047	385	2	0	0	386	"[""dēora""]"	proposal_only_not_adopted
+SC112_early_SC047_glides	382	5	0	0	383	"[""dēora""]"	proposal_only_not_adopted
+SC112_early_SC047_aw	385	1	0	0	386	"[""dēora""]"	proposal_only_not_adopted
+SC112_early_SC047_glides_aw	382	4	0	0	383	"[""dēora""]"	proposal_only_not_adopted

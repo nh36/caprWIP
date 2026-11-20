@@ -276,6 +276,8 @@ def test_current_lowering_displacement_and_written_surface_controls(
     for concept in ("widow", "world"):
         assert result["current_without_glide"][concept] == result["current_identity"][concept]
     assert result["current_before_umlaut"]["widow"] == ["wuduwe"]
-    assert result["current_before_umlaut"]["world"] == ["weorald"]
+    # Early medial u > o removes SC059's u trigger; former weorald
+    # depended on the parallel clauses admitting other back vowels.
+    assert result["current_before_umlaut"]["world"] == ["werald"]
     assert result["current_delayed_umlaut"]["widow"] == ["wudowe"]
     assert result["current_delayed_umlaut"]["world"] == ["weorold"]

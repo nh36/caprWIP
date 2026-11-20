@@ -21,25 +21,40 @@ are logical rather than chronological relations [@Barrack1975, p. 34].
 
 ```foma
 define OEBackMutation FootCtx([
-    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*e} -> {*eo} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. FootCtx([
     {*æ} -> {*ea} || .#. OEAnyConsonant* _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]) .o. Ctx([
-    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
-    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u},
+    {*é} -> {*éo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
+    {*è} -> {*eo} || _ [EnglishStarLabial | EnglishStarLiquid] {*u}
+]) .o. Ctx([
     {*ǽ} -> {*ea} || _ [EnglishStarLabial | EnglishStarLiquid] EnglishBackMutationTrigger
 ]);
 ```
 
-Three witness forms bracket the chronology. If back mutation precedes
-[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization), forms such as
-[gébaną]{.recon} ‘give’ produce *ġeofan* ‘give’; the
-expected form is *ġiefan* ‘give’. [stélaną]{.recon} ‘steal’ likewise produces *steolan*
-‘steal’; the expected form is *stelan* ‘steal’. At the other edge, delaying
-back mutation until after
-[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction) makes
-[wébaną]{.recon} ‘weave’ yield *weofan* ‘weave’; the expected form is *wefan* ‘weave’.
-Thus back mutation follows secondary nasalization but precedes the weak-tail
-reductions.
+The older displacement tests produce predicted \emph{*ġeofan},
+\emph{*steolan} and \emph{*weofan} when mutation precedes
+[SC048 OESecondaryNasalization](#rule-OESecondaryNasalization).
+These remain observations about the previous parallel-clause
+implementation, not independent West Saxon chronology. Its shared
+replacement contexts admitted an a-trigger for e despite the written
+u-only condition. The separately composed clauses above enforce each
+stated environment: eligible e mutates before u but retains e before a.
+The corrected reversal removes the steal/weave difference while
+preserving all selected outputs. West Saxon e/u mutation must be distinguished from non-West-
+Saxon e/a mutation [@RingeTaylor2014, pp.319--327, especially p.325;
+@HoggGrammar2011, pp.149--157, §§5.103--5.106].
+The recorded later displacement across
+[SC078 OEWeakTailReduction](#rule-OEWeakTailReduction), yielding predicted
+\emph{*weofan}, likewise belongs to the previous implementation.
+With the corrected relation, that late placement instead loses mutation
+in *heofon*, *meoloc* 'milk', *seofon* 'seven' and *weorold* 'world':
+their medial u triggers have already become o, whereas final u still
+licenses mutation in *speoru* 'spear'. This is a dependency of the
+serialized cascade, not proof that weak-tail reduction itself was the
+historical boundary. The source's broader mutation chronology is not
+decided by either displacement.
 
 ## Stress and the compound linker
 
