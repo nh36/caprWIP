@@ -1400,9 +1400,9 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-1988"></a>
 
-## 1988: deer / dēor
+## 1988: deer / dēora
 
-Current citation: *déuzą (pgmc); selected input: *déuzą (pgmc; variety: none; equality_convention).
+Current citation: *déuzą (pgmc); selected input: *déuzô (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |

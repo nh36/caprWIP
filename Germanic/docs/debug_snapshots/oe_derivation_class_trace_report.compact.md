@@ -1079,25 +1079,25 @@ NOTE: R/T vol.2 13823: PGmc *dēdiz > WS OE dǣd (not Anglian dēd)
 
 
 # deer
-PROTO: *déuzą
-EXPECTED: dēor
-OUTPUTS: dēor
+PROTO: *déuzô
+EXPECTED: dēora
+OUTPUTS: dēora
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *déuzą
+English Proto Input: *déuzô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Rhotacism: *déurą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *dēorą<br>OE Heavy Syllable Nasal Apocope: *dēor |
+| **Northwest and West Germanic**<br>EAF Rhotacism: *déurô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *dēorô<br>OE Unstressed Long Vowel Shortening: *dēora |
 
 
 
 ### Orthography & surface
 
-Outcome: dēor
+Outcome: dēora
 
 
 

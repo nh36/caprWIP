@@ -1511,8 +1511,8 @@ pgmc		*déliz	*déliz	deliz	selected_input	trace_proto_input	dill — OE dile	tr
 pgmc		déljaz	*déljaz	deljaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:25	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:25:1	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
 pgmc		*déljaz	*déljaz	deljaz	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:59	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md:59:1	Germanic/docs/lexeme_reports/model_entries/1990-dill-dile.model.md	auto
 pgmc		*déljaz	*déljaz	deljaz	source_protoform	lexical_proto	dill — OE dile	lexical-proto:ca5a56551f754c	manifest	auto
-pgmc		*déuzą	*déuzą	deuza	selected_input	trace_proto_input	deer — OE dēor	trace:1b24f2319d2ab6	compact	auto
 pgmc		déuzaz	*déuzaz	deuzaz	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2201	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2201:1	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	auto
+pgmc		*déuzô	*déuzô	deuzo	selected_input	trace_proto_input	deer — OE dēora	trace:9a31cb2e7fd3bf	compact	auto
 pgmc		*dōną	*dōną	dona	selected_input	trace_proto_input	do — OE dōn	trace:f8e7cba4d5a0d4	compact	auto
 pgmc		*dránkiz	*dránkiz	drankiz	selected_input	trace_proto_input	drench — OE drenċ	trace:b21a98f9e5e7cc	compact	auto
 pgmc		draugma-	*draugma-	draugma	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:62	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:62:1	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md	auto

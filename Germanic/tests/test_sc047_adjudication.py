@@ -136,7 +136,7 @@ def test_current_census_deletes_short_nasal_a_without_a_weight_or_class_filter()
                 assert before[0].endswith("*a*n")
                 assert after == (before[0][:-4] + "*ą*n",)
     expected = report()["census"]
-    assert nasal == {r["concept"] for r in expected["SC047"]}
+    assert nasal == {r["concept"] for r in expected["SC047"]} - {"deer"}
     assert secondary == {r["concept"] for r in expected["SC048"]}
     assert {"thatch", "horn", "bake", "bind", "net", "hue"} <= nasal
     assert {"bake", "bind", "sow", "betray"} <= secondary

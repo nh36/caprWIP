@@ -1,0 +1,32 @@
+{
+  "adjudication": "SC047",
+  "transition_id": "deer_genpl",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc047-adjudication.md",
+  "previous_summary": {
+    "outputs_sha256": "1bef3798e864ce1277511f9d9f6bf5c461dcbfa4608173849f4b467225e89727",
+    "lexical_outputs_sha256": "011d7f433c8407f6b8020465da0a029bcc324535c0372ea869f2b4ac651da830",
+    "legacy_subset_sha256": "145b92fe89d055e8a14e900cc0755ac3f4f1219b5ba815e10d111a057a016624"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "1988",
+      "before": {
+        "proto": "*déuzą",
+        "proto_norm": "déuzą",
+        "fst_input": "déuzą",
+        "counterpart": "dēor",
+        "outputs": "dēor",
+        "match": "1"
+      },
+      "after": {
+        "proto": "*déuzô",
+        "proto_norm": "déuzô",
+        "fst_input": "déuzô",
+        "counterpart": "dēora",
+        "outputs": "dēora",
+        "match": "1"
+      }
+    }
+  ]
+}

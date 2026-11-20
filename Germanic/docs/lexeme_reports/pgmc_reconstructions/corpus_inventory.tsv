@@ -54,7 +54,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 1985	day	dæġ	*dágaz	pgmc	*dágaz	pgmc		equality_convention	regular	1	stressed	final
 1986	deal	dǣl	*dáiliz	pgmc	*dáiliz	pgmc		equality_convention	regular	1	stressed	final
 1987	deed	dǣd	*dḗdiz	pgmc	*dḗdiz	pgmc		equality_convention	regular	1	stressed	final
-1988	deer	dēor	*déuzą	pgmc	*déuzą	pgmc		equality_convention	regular	1	stressed	final
+1988	deer	dēora	*déuzą	pgmc	*déuzô	pgmc		explicit_sidecar	regular	1	stressed	final
 1989	dew	dēaw	*dáwwō	pgmc	*dáwwō	pgmc		equality_convention	regular	1	stressed	final
 1990	dill	dile	*déljaz	pgmc	*déliz	pgmc		explicit_sidecar	early_analogy	1	stressed	final
 1991	do	dōn	*dōną	pgmc	*dōną	pgmc		equality_convention	regular	1	stressed	final

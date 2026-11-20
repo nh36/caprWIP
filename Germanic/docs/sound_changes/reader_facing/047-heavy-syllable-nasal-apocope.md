@@ -127,17 +127,17 @@ This demonstrates a feeding relation between the two representations;
 the same reversal recorded from both directions is not two independent
 historical dates.
 
-The direct-case *r* of *dēor* 'deer' is likewise not independently established
-by the late executable derivation. Under the early-loss account it
-comes from inflected cells with internal z. The supplied dictionary
-dative resolves to Northumbrian *deare* 'animal' (dative singular), not
-a diplomatic West Saxon *dēore* 'animal' token; West Saxon *deora*
-'animals', the genitive plural in
-Ohthere's account, provides a secure independent oblique. Its
-reconstruction \emph{*deuzôⁿ} regularly retains internal z, whereas
-the direct cell exposes it to northern final-z loss. The genitive
-plural is a proposed scoring alternative, not a silently changed
-selection [@KembleHardwick1858, p. 19, capitulum LXXIX;
+The lexeme headed *dēor* is represented by the genitive plural *dēora*
+'of deer', attested as *deora* 'of deer' in Ohthere's account (Orosius
+I.1 §15). The reconstructed genitive ending in \emph{*déuzôⁿ} keeps z
+word-internal through rhotacism; CAPR writes \emph{*déuzô}, retaining
+the trimoric quantity without a separate nasal feature. With early
+apocope the direct singular \emph{*déuzą} instead exposes z to final
+loss and regularly gives reconstructed \emph{*dēo}. On that account,
+the r of attested *dēor* is levelled from inflected forms. The direct
+singular remains a diagnostic, not a second selection. The Northumbrian
+dative *deare* 'animal' is a separate comparison, not a West Saxon
+attestation [@KembleHardwick1858, p. 19, capitulum LXXIX;
 @Bosworth1859, p. 20, lines 25--27;
 @RingeTaylor2014, pp. 86--87, 174; @Fulk2018, pp. 148--149, §7.8].
 

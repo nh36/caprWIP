@@ -9,8 +9,8 @@
 - Required rows with manifest-backed production reports: 11
 - Required rows with source material available but no manifest-backed production report: 158
 - Required rows with no source material found: 4
-- Regular rows with empty NOTE and no report required: 1
-- Regular rows with empty NOTE but supporting material present: 224
+- Regular rows with empty NOTE and no report required: 2
+- Regular rows with empty NOTE but supporting material present: 223
 - Rows with STATUS=format_test manifest entries: 1
 - Regular rows with NOTE (report required): 90
 - Non-regular rows with empty NOTE (report required because of DERIVATION_CLASS): 11
@@ -87,7 +87,7 @@
 | 1961 | bow | bīeġan | regular | yes | source_material | - | archive/dev_notes_slices/1961-bow-bīeġan.md, archive/packets/1961-bow-bīeġan.md, model_entries/1961-bow-bīeġan.model.md, model_entries/1961-bow-bīeġan.source_ledger.md, research_memos/1961-bow-bīeġan.md | NOTE |
 | 1962 | bow | bēag | late_analogy | yes | source_material | - | archive/dev_notes_slices/1962-bow-bēag.md, model_entries/1962-bow-bēag.model.md, model_entries/1962-bow-bēag.source_ledger.md, research_memos/1962-bow-bēag.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 1965 | brand | brandes | early_analogy | no | source_material | - | archive/dev_notes_slices/1965-brand-brandes.md, archive/packets/1965-brand-brandes.md, model_entries/1965-brand-brandes.model.md, model_entries/1965-brand-brandes.source_ledger.md, research_memos/1965-brand-brandes.md | DERIVATION_CLASS=early_analogy |
-| 1968 | breast | brēost | early_analogy | no | source_material | - | archive/dev_notes_slices/1968-breast-brēost.md, archive/packets/1968-breast-brēost.md, model_entries/1968-breast-brēost.model.md, model_entries/1968-breast-brēost.source_ledger.md, research_memos/1968-breast-brēost.md | DERIVATION_CLASS=early_analogy |
+| 1968 | breast | brēost | early_analogy | no | source_material | - | archive/dev_notes_slices/1968-breast-brēost.md, archive/dev_notes_slices/1988-deer-dēor.md, archive/packets/1968-breast-brēost.md, model_entries/1968-breast-brēost.model.md, model_entries/1968-breast-brēost.source_ledger.md, research_memos/1968-breast-brēost.md | DERIVATION_CLASS=early_analogy |
 | 1969 | breeches | brēċ | regular | yes | source_material | - | archive/dev_notes_slices/1969-breeches-brēċ.md, model_entries/1969-breeches-brēċ.model.md, model_entries/1969-breeches-brēċ.source_ledger.md, research_memos/1969-breeches-brēċ.md | NOTE |
 | 1975 | calf | ċealf | regular | yes | source_material | - | archive/dev_notes_slices/1975-calf-ċealf.md, archive/packets/1975-calf-ċealf.md, model_entries/1975-calf-ċealf.model.md, model_entries/1975-calf-ċealf.source_ledger.md, research_memos/1975-calf-ċealf.md | NOTE |
 | 1979 | corn | corn | regular | yes | source_material | - | archive/dev_notes_slices/1979-corn-corn.md, archive/packets/1979-corn-corn.md, model_entries/1979-corn-corn.model.md, model_entries/1979-corn-corn.source_ledger.md, research_memos/1979-corn-corn.md | NOTE |
@@ -247,6 +247,7 @@
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Coverage category | Production status | Production report / source-material path(s) | Requirement basis |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1988 | deer | dēora | regular | no | none | - | - | none |
 | 2127 | month | mōnaþ | regular | no | none | - | - | none |
 
 ## Regular rows with empty NOTE but supporting material present
@@ -283,7 +284,6 @@
 | 1984 | dale | dæl | regular | no | source_material | - | archive/dev_notes_slices/1984-dale-dæl.md | none |
 | 1985 | day | dæġ | regular | no | source_material | - | archive/dev_notes_slices/1985-day-dæġ.md | none |
 | 1986 | deal | dǣl | regular | no | source_material | - | archive/dev_notes_slices/1986-deal-dǣl.md | none |
-| 1988 | deer | dēor | regular | no | source_material | - | archive/dev_notes_slices/1988-deer-dēor.md | none |
 | 1989 | dew | dēaw | regular | no | source_material | - | archive/dev_notes_slices/1989-dew-dēaw.md, model_entries/1989-dew-dēaw.model.md | none |
 | 1991 | do | dōn | regular | no | source_material | - | archive/dev_notes_slices/1991-do-dōn.md | none |
 | 1993 | dough | dāg | regular | no | source_material | - | archive/dev_notes_slices/1993-dough-dāg.md | none |

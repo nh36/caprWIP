@@ -15,9 +15,9 @@
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 0
 - Pre-OE review rows: 32
-- Reader-facing example candidate rows: 1657
-- Reader-facing rows include_in_example_index=yes: 583
-- Reader-facing rows include_in_example_index=no: 1074
+- Reader-facing example candidate rows: 1660
+- Reader-facing rows include_in_example_index=yes: 585
+- Reader-facing rows include_in_example_index=no: 1075
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
@@ -26,7 +26,7 @@
 - Broad-prose evidence suggestions: 318
 - Curated broad-prose deferred: 24
 - Curated broad-prose ignored: 7
-- Reader-facing examples quarantined (separate example index policy): 1599
+- Reader-facing examples quarantined (separate example index policy): 1602
 - Ordinary prose/gloss ignored: 29
 - Orthographic/normalization variants: 9
 - Table semantic auto-promoted: 18
@@ -1893,11 +1893,14 @@
 | `days` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:439 | ### SC005. Unstressed \emph{*a}-raising before final \emph{*m} (`PNWGmcAToUBeforeM`) {#rule-PNWGmcAToUBeforeM} | Here the witness word and the comparative evidence serve different purposes. If raising is delayed until after [SC017 PNWGmcULowering](#rule-PNWGmcULowering), P |
 | `*dedǭ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:469 | ### Historical discussion | The change isolated here is far older than its position in the cascade suggests: it is the general (pre-)Proto-Germanic loss of word-final \emph{*n}, with nasal |
 | `deer` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:392 | ### SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | Negative controls behave as the morphology predicts. Stressed monosyllables whose \emph{*z} follows a vowel — the domain of the later northern change — do not m |
+| `*dēo` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5130 | ### \CAPRRuleHeading{SC047. Final short nasal low-vowel apocope}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope} | loss and regularly gives reconstructed \emph{*dēo}. On that account, |
 | `*dēor` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2462 | ### Historical discussion | Apparent counterexamples are analogical, not phonological: OE *dēor* 'deer', *ār* 'bronze', and *gār* 'spear' show final \emph{-r} from levelling out of inflect |
 | `*dēor` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:392 | ### SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | Negative controls behave as the morphology predicts. Stressed monosyllables whose \emph{*z} follows a vowel — the domain of the later northern change — do not m |
 | `*déuzą` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:392 | ### SC096. Root-noun nominative \emph{*-z} loss (`RootNounNomZLoss`) {#rule-RootNounNomZLoss} | Negative controls behave as the morphology predicts. Stressed monosyllables whose \emph{*z} follows a vowel — the domain of the later northern change — do not m |
+| `*déuzą` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5129 | ### \CAPRRuleHeading{SC047. Final short nasal low-vowel apocope}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope} | apocope the direct singular \emph{*déuzą} instead exposes z to final |
 | `*déuzaz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2201 | ### West Germanic rhotacism (SC003) | The medial change of `*z` to `*r` in environments such as [déuzaz]{.recon .iv lang=pgmc sort=deuzaz} 'deer', |
-| `*deuzôⁿ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5131 | ### \CAPRRuleHeading{SC047. Final short nasal low-vowel apocope}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope} | reconstruction \emph{*deuzôⁿ} regularly retains internal z, whereas |
+| `*déuzô` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5127 | ### \CAPRRuleHeading{SC047. Final short nasal low-vowel apocope}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope} | word-internal through rhotacism; CAPR writes \emph{*déuzô}, retaining |
+| `*déuzôⁿ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:5126 | ### \CAPRRuleHeading{SC047. Final short nasal low-vowel apocope}{OEHeavySyllableNasalApocope} {#rule-OEHeavySyllableNasalApocope} | I.1 §15). The reconstructed genitive ending in \emph{*déuzôⁿ} keeps z |
 | `development` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:849 | ### Historical discussion | Germanic, not as an unqualified pan-PWGmc development. |
 | `d/l` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:6939 | ### \CAPRRuleHeading{SC115. Early weak-front-vowel unrounding component}{OEHighLinkSyncope} {#rule-OEHighLinkSyncope} | syncope. The \emph{d/l} protection in the later light component permits |
 | `d/l` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7500 | ### Historical discussion | source-supported \emph{d/l} retention condition, *gædeling* 'companion' |
