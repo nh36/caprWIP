@@ -9503,7 +9503,7 @@ English Proto Input: *náxti
 Old English Orthography: *niht
 Outcome: niht
 # rest
-PROTO: *rástōz
+PROTO: *rástǭ
 EXPECTED: ræste
 OUTPUTS: ræste
 
@@ -9511,11 +9511,11 @@ OUTPUTS: ræste
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *rástōz
+English Proto Input: *rástǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *rástō<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
 
 
 

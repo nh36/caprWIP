@@ -8925,7 +8925,7 @@ NOTE: R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > 
 
 
 # rest
-PROTO: *rástōz
+PROTO: *rástǭ
 EXPECTED: ræste
 OUTPUTS: ræste
 
@@ -8933,11 +8933,11 @@ OUTPUTS: ræste
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *rástōz
+English Proto Input: *rástǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *rástō<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
 
 
 
@@ -8945,7 +8945,7 @@ English Proto Input: *rástōz
 
 Outcome: ræste
 
-NOTE: Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not undergo NWGmcFinalLongORaising (R/T §5.1.3) because *-ō was not word-final (*-z still present). After PWGmc z-loss with vowel shortening and simultaneous AFB-fronting of the unstressed final (*-ōz > {*æ}, R/T §6.8.3 pp.299-300; see DEV_NOTES §17.10.20), suffix is front, no A-restoration, AFB gives ræ-. Attested ræste abundantly in BT (tó ræste, on ræste, etc.). Paradigmatic leveling from oblique ræst- to nom.sg. (cf. R/T §6.3.2 on dag paradigm).
+NOTE: Feminine ō-stem accusative singular; ræste is the direct object in Blickling Homilies 101.26 (Morris). The nominative ræst can reflect extension of oblique ræst-; the accusative itself is regular.
 
 
 

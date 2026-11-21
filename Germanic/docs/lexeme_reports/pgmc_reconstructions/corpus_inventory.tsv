@@ -218,7 +218,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2149	raven	hræfn	*xrábnaz	pgmc	*xrábnaz	pgmc		equality_convention	regular	1	stressed	final
 2150	read	rǣdan	*rḗdaną	pgmc	*rḗdaną	pgmc		equality_convention	regular	1	stressed	final
 2151	reek	rēac	*ráukiz	pgmc	*ráukaz	pgmc		explicit_sidecar	reconstructed_oe	1	stressed	final
-2152	rest	ræste	*rastō	pgmc	*rástōz	pgmc		explicit_sidecar	late_analogy	1	stressed	final
+2152	rest	ræste	*rastō	pgmc	*rástǭ	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2153	ride	rīdan	*rī́daną	pgmc	*rḯdaną	pgmc		explicit_sidecar	regular	1	stressed	final
 2154	rind	rind	*ríndō	pgmc	*ríndō	pgmc		equality_convention	regular	1	stressed	final
 2155	coat	rocc	*rúkkaz	pgmc	*rúkkaz	pgmc		equality_convention	regular	1	stressed	final

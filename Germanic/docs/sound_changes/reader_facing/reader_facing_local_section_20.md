@@ -2220,8 +2220,8 @@ placement follows the adopted executable sequence.
 The loss of word-final `*z` is not one process but three historically
 distinct developments, and this chapter contains two of them. The central
 one, SC020, is the Proto-West Germanic loss of `*z` in unstressed syllables,
-seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest
-(nom.sg.)' and stated for the whole branch by Ringe and Taylor
+seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'of rest'
+and stated for the whole branch by Ringe and Taylor
 [@RingeTaylor2014, pp. 44--45]; Crist's analysis distinguishes it both from
 the earlier NWGmc changes and from the later narrower Ingvaeonic deletion
 rules [@Crist2002, pp. 1, 4]. Earlier still, the consonant-stem root nouns
@@ -2378,11 +2378,11 @@ The rule deletes word-final \emph{*z} in unstressed syllables, stated through tw
 
 The polysyllabic environment counts trimoric vowels as nuclei as well as bimoric vowels. Ringe and Taylor's contrast between the trimoric nominative plural ending in \emph{*gebō̄z} and the bimoric genitive singular ending in \emph{*gebōz} requires loss of \emph{*z} in both, without merging their quantities: the former leads to OE *ġiefa* 'gifts', the latter to *ġiefe* 'of a gift' [@RingeTaylor2014, p. 59]. The extra trimoric symbol in the first environment represents this quantity distinction; it does not extend the rule to stressed monosyllables.
 
-The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
+The early boundary for word-final \emph{*z}-loss follows from the distinct histories of inherited final oral \emph{*ō} and the oral vowel protected by \emph{*z}; later weak syllables supply a separate late boundary [@RingeTaylor2014, §§2.1.1, 3.1.1]. The genitive of ‘rest’ remains a diagnostic; the selected accusative contains no \emph{*z}.
 
 Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected OE *ræste* 'rest'. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [bébruz]{.recon} 'beaver' yields [*befro*]{.pred} rather than expected *befer* 'beaver', PGmc [kwéðuz]{.recon} 'cud' yields [*cwedo*]{.pred} rather than expected *cwedu* 'cud', and PGmc [félθuz]{.recon} 'field' yields [*feldo*]{.pred} rather than expected *feld* 'field', alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
-The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising). The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
+The genitive [rástōz]{.recon} 'of rest' illustrates the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), not the provenance of the selected accusative. The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
 
 ## Early apocope in unstressed words
 
@@ -4429,15 +4429,15 @@ vowel preserves nasalized roots and the separate trimoric quantity.
 Before-final-\emph{*r} histories remain distributed: the selected water
 and four inputs already contain \emph{*a} there.
 
-The complete current population has twenty-two applications: the oral
-ending in *ræste* 'rest', from selected genitive \emph{*rástōz}, and
-twenty-one nasal-final histories. These include *mære* 'nightmare',
+The complete current population has twenty-two applications from
+nasal-final inputs. These include *ræste* 'rest', from accusative
+\emph{*rástǭ}, as well as *mære* 'nightmare',
 *tunge* 'tongue', *heorte* 'heart' and *sāwle* 'soul'.
 The selected gift input remains \emph{*gíftiz}: the literature's
 \emph{*gebōz} is a separate control, not another corpus application.
 No lexical list or grammatical condition selects the endings.
 
-After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. The West Germanic long-vowel reconstruction has a source basis, but this exact serialized chain remains a computational representation of the selected history.
+In the selected accusative, unrounding turns final nasal \emph{*ǭ} into \emph{*ā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. In the separate genitive diagnostic, [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) first exposes oral \emph{*ō} to the same unrounding operation.
 
 For *mære* 'nightmare', the final nasal vowel becomes \emph{*ā} here,
 then \emph{*ǣ} under [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal).

@@ -547,3 +547,17 @@ relative to gemination for Old English. Record the competing
 falsifiers and representation gaps rather than changing more scored
 cells. The deer transition remains the only baseline change, in its
 own preceding commit.
+
+## Independent lexical proposal: rest (21 November 2026)
+
+Correct row 2152 from genitive `*rástōz` to accusative `*rástǭ`, retaining
+*ræste* and the citation reconstruction `*rastō`. Morris 101.26 attests
+the accusative as the direct object of *geearnige*; the proposed genitive
+attestation is less secure. Both selected inputs give *ræste* canonically.
+The `late_analogy` classification describes possible oblique stem transfer
+into nominative *ræst*, not the regular accusative sound history.
+
+The old genitive remains an unscored diagnostic of the separate long-vowel
+and final-*z* dependency. The dative `*rástōi` is not admitted by the input
+gate. The exact one-row migration is authorized on this proposal only;
+the rules, ordering and frozen A/B comparison do not change.

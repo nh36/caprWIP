@@ -456,8 +456,8 @@ placement follows the adopted executable sequence.
 The loss of word-final `*z` is not one process but three historically
 distinct developments, and this chapter contains two of them. The central
 one, SC020, is the Proto-West Germanic loss of `*z` in unstressed syllables,
-seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest
-(nom.sg.)' and stated for the whole branch by Ringe and Taylor
+seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'of rest'
+and stated for the whole branch by Ringe and Taylor
 [@RingeTaylor2014, pp. 44--45]; Crist's analysis distinguishes it both from
 the earlier NWGmc changes and from the later narrower Ingvaeonic deletion
 rules [@Crist2002, pp. 1, 4]. Earlier still, the consonant-stem root nouns

@@ -14846,11 +14846,11 @@ attested Old English form.
 
 ### rest — OE _ræste_
 
-Derivation: citation reconstruction _\*rastō_; form followed here _\*rástōz_ > _ræste_ (late analogy).
+Derivation: citation reconstruction _\*rastō_; form followed here _\*rástǭ_ > _ræste_ (late analogy).
 
 #### Derivation trace
 
-Proto input: _\*rástōz_
+Proto input: _\*rástǭ_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -14865,9 +14865,7 @@ Proto input: _\*rástōz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*rástō} \\
-\end{tabularx}
+\raggedright [no change]\par
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
 \raggedright
@@ -14895,48 +14893,17 @@ OE Unstressed Long Vowel Shortening & \emph{*ræstæ} \\
 
 Old English form: _ræste_
 
-#### Reconstruction and comparative evidence
+#### Reconstruction and Old English evidence
 
-Kroonen treats the noun as a feminine ō-stem [_\*rastō-_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:1"}, continued by Old English
-[_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22:1"} 'rest' [@Kroonen2013, 445]. The derivational input [rástōz]{.iv .recon lang=pgmc sort=rastoz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22:2"} ‘rest’ therefore does not replace
-the lexeme-level headword. It identifies one oblique singular cell on the side of
-the paradigm that yields _ræste_ 'rest'.
+Kroonen treats the noun as a feminine ō-stem [_\*rastō-_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:1"}, continued by Old English [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:2"} ‘rest’ [@Kroonen2013, p. 405]. The selected [rástǭ]{.iv .recon lang=pgmc sort=rasto role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:3"} ‘rest’ is the independently reconstructed accusative singular of this stem, not a substitute for its nominative citation reconstruction [@Ringe2017, p. 312; @RingeTaylor2014, pp. 299–300].
 
-The source tradition used here labels that cell specifically as genitive
-singular, but the broader local synthesis of the ō-stem paradigm shows that the
-oblique singulars converge on the same front-vocalic _ræste_ 'rest' side, in contrast
-to a nominative singular that would remain _rast_ 'rest'.
-
-#### Old English evidence
-
-The ordinary Old English citation form is [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:33:1"} 'rest' [@Kroonen2013, 445]. Clark
-Hall likewise gives [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34:1"} 'rest' [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34:2"} 'rest', including prepositional
-examples such as [on ræste]{.ex} 'at rest' and [tó ræste]{.ex} 'to rest' [@BosworthToller1898, 121].
-
-The comparison form used here is therefore an attested oblique [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:37:1"} 'rest', not a
-reconstructed surrogate. The dictionary headword [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:38:1"} 'rest' remains an equally real
-part of the Old English record.
+The direct object [þā ēcean ræste]{.ex} ‘the eternal rest’ in *Blickling Homilies* 101.26 (Morris) supplies the accusative. The *Boethius* passage with [sēo ræst]{.ex} ‘the rest’ and [tō ræste]{.ex} ‘to rest’ (ch. 25, Fox 88.29–32) attests nominative and dative respectively; [on ræste]{.ex} ‘at rest’ gives another prepositional dative. These are not genitive attestations. A genitive construal is possible in *Guthlac B* 1068, [him ræste nēod]{.ex} ‘he needed rest’, without using that less secure cell as the selected comparison [@BosworthToller1898, s.v. *ræst*; @ClarkHall1960, p. 239].
 
 #### Development to Old English
 
-Once final _\*z_ is lost, the derivational input moves through the front-vocalic
-oblique side of the paradigm rather than the back-vocalic nominative side. In
-the modeled derivation, the surviving final long vowel is first exposed,
-unrounded, fronted, shortened, and then reduced to the final _-e_ of _ræste_ 'rest'.
+The accusative long nasal ending does not undergo final short nasal apocope or the raising of final oral long *ō*. Its front-vocalic ending in the English derivation preserves root fronting and becomes *-e*, giving [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:1"} ‘rest’. The reconstructed dative takes a different route, Proto-Germanic \emph{*-ōi} to West Germanic \emph{*-ē}; the model yields *ræste* from the later input but does not admit the Proto-Germanic form. Genitive [rástōz]{.recon} ‘of rest’ remains a separate comparison: earlier *z*-loss in the experimental cascades exposes the oral ending to raising; that interaction does not occur in the accusative [@RingeTaylor2014, pp. 61, 299–300].
 
-The key point is the paradigm split. Nominative [rastō]{.recon} ‘rest’ yields a regular _rast_ 'rest',
-whereas the selected oblique input yields _ræste_ 'rest'. The later citation form _ræst_ 'rest'
-is best explained as leveling from that oblique _ræst-_ stem.
-
-#### Paradigm comparison
-
-The comparison below sets the relevant forms side by side. It distinguishes the nominative citation form
-from the oblique singular chosen here.
-
-| PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [_\*rastō_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59:1"} | expected regular outcome _rast_ | [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59:2"} 'rest' | useful background, but not the cell that matches attested oblique _ræste_ |
-| selected oblique singular | [_\*rástōz_]{.iv lang=pgmc sort=rastoz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:1"} | regular output: [_ræste_]{.iv lang=oe sort=raeste role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:2"} 'rest' | [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:3"} 'rest' | exact match between derivational input and attested OE oblique form |
+The citation nominative [rastō]{.recon} ‘rest’ gives reconstructed \emph{*rast} in the cascade. The attested *ræst* can be explained by extension of the independently attested front-vocalic oblique stem into the nominative. This is a hypothesis about the lemma’s paradigm, not an analogy required to derive the selected accusative. The _late_analogy_ classification records why the inherited nominative is not the selected route to the attested stem.
 
 ### shoulder — OE _sċuldrum_
 

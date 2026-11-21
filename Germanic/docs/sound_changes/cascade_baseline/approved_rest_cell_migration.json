@@ -1,0 +1,18 @@
+{
+  "adjudication": "SC047",
+  "transition_id": "rest_cell",
+  "adjudication_memo": "Germanic/docs/sound_changes/audits/sc047-adjudication.md",
+  "previous_summary": {
+    "outputs_sha256": "8405a0661e893ba512b032dcd427c7f812c5688fa09cba1b271fe42afdd1c900",
+    "lexical_outputs_sha256": "81ec961d262a2f3622c5d81108592de245addf477c11f9906e81b80cc61fd095",
+    "legacy_subset_sha256": "8ebd6ea867424da7f9bb23cdc72d9a8a6dc4e7f1fbfb9e9a3bb3936f5a76e65d"
+  },
+  "legacy_archive_sha256": "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf",
+  "changes": [
+    {
+      "row_id": "2152",
+      "before": {"proto": "*rástōz", "proto_norm": "rástōz", "fst_input": "rástōz", "counterpart": "ræste", "outputs": "ræste"},
+      "after": {"proto": "*rástǭ", "proto_norm": "rástǭ", "fst_input": "rástǭ", "counterpart": "ræste", "outputs": "ræste"}
+    }
+  ]
+}

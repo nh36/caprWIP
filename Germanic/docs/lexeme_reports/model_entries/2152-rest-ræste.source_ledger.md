@@ -4,6 +4,16 @@ This ledger is an evidence-gathering aid for the lexical entry. It records the
 forms, claims, and local discovery paths extracted from the current source stack
 before the book-style prose was drafted.
 
+The proposed selection supersedes the former genitive in the historical
+ledger below. The printed Kroonen locator is p. 405 (PDF sheet 445).
+
+| Source | Proposed use |
+| :--- | :--- |
+| [Morris, *Blickling Homilies* 101.26](https://archive.org/details/blicklinghomilie00morr/page/n110/mode/1up); Bosworth–Toller, s.v. *ræst* | The printed *þa écean ræste* is the direct object of *geearnige*, with distinct beneficiary *him*: accusative singular. The normalized target is unchanged. |
+| Ringe 2017:225, 312; Ringe–Taylor 2014:61, 299–300 | Inherited accusative *-ǭ* is distinct from nominative *-ō*, genitive *-ōz* and dative *-ōi*. Dative *-ōi* to West Germanic *-ē* is a reconstruction, not a completed CAPR lookup. |
+| *Boethius* 25, Fox 88.29–32; *Guthlac B* 1068 | Nominative *sēo ræst* and dative *tō ræste* are secure. *Ræste* with *nēod* is a genitive candidate; neither prepositional citation exemplifies it. |
+| Canonical and matched-cell traces | Accusative *rástǭ* gives *ræste* in all orders. Retain *rástōz → rast* in the historical trials as a distinct long-ending dependency; do not change the phonological order. |
+
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Kroonen | 2013 etymological dictionary | `*rastō- f.` | feminine ō-stem lexeme | `OE ræst` | The lexeme-level headword is a feminine ō-stem whose ordinary OE citation form is `ræst`. | yes — `Kroonen2013` | `Germanic/docs/lexeme_reports/research_memos/2152-rest-ræste.md:17-20,43-49`; `docs/references/kroonen_etymological_dictionary_pgmc.vision.txt:21137-21139` | high |

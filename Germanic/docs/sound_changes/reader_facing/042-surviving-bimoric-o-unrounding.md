@@ -26,15 +26,15 @@ vowel preserves nasalized roots and the separate trimoric quantity.
 Before-final-\emph{*r} histories remain distributed: the selected water
 and four inputs already contain \emph{*a} there.
 
-The complete current population has twenty-two applications: the oral
-ending in *ræste* 'rest', from selected genitive \emph{*rástōz}, and
-twenty-one nasal-final histories. These include *mære* 'nightmare',
+The complete current population has twenty-two applications from
+nasal-final inputs. These include *ræste* 'rest', from accusative
+\emph{*rástǭ}, as well as *mære* 'nightmare',
 *tunge* 'tongue', *heorte* 'heart' and *sāwle* 'soul'.
 The selected gift input remains \emph{*gíftiz}: the literature's
 \emph{*gebōz} is a separate control, not another corpus application.
 No lexical list or grammatical condition selects the endings.
 
-After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. The West Germanic long-vowel reconstruction has a source basis, but this exact serialized chain remains a computational representation of the selected history.
+In the selected accusative, unrounding turns final nasal \emph{*ǭ} into \emph{*ā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. In the separate genitive diagnostic, [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) first exposes oral \emph{*ō} to the same unrounding operation.
 
 For *mære* 'nightmare', the final nasal vowel becomes \emph{*ā} here,
 then \emph{*ǣ} under [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal).
