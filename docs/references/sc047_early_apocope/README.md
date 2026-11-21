@@ -4,6 +4,8 @@ Bibliographic identity belongs to `docs/refs.bib`. This record registers
 acquisition, not completion of the SC047 research or adoption of a sound law.
 The historical adjudications retain their original consultation limits:
 newly acquiring an original does not retroactively certify an earlier citation.
+For the later [Dahl, Hogg and Adamczyk intake and reading record](nominal-levelling.md),
+see the separate nominal-levelling bibliography.
 
 | Key | Original and supplied coverage | Search aid |
 | :--- | :--- | :--- |

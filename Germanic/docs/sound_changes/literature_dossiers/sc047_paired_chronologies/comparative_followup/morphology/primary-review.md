@@ -1,5 +1,10 @@
 # SC047 primary-source review: early loss remains preferred, not adopted
 
+The [subsequent early English levelling report](early-oe-levelling.md)
+reads the newly acquired originals and adds a classified
+[witness register](early-oe-witnesses.md). It leaves this comparative
+recommendation and the production order unchanged.
+
 ## Identity, question and current state
 
 SC047 (`OEHeavySyllableNasalApocope`), 2026-11-21,

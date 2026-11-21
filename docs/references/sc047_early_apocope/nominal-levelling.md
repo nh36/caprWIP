@@ -31,9 +31,8 @@ registered. Dal 1934 (pp. 243–252; 1971 reprint pp. 65–73) is still missing.
 
 - Dahl: pp. 74–90, with pp. 81–86 checked against the page images; consulted
   pp. 91–93, 118–119, 162 and 166 for neuter, feminine and mixed paradigms.
-- Hogg: §5 read closely, with derivations and the predicted paradigm checked
-  against page images; the rest of the article was consulted for its general
-  argument and comparisons, not collated at the same level.
+- Hogg: pp. 55–85 read, with close reading of §5 and its derivations,
+  published spellings and predicted paradigm checked against page images.
 - Adamczyk: consulted Chapter 1's framework, corpus design and counting
   conventions; read the OE i-stem analysis (§§3.5.2.2–3), including tables
   3.1, 3.2 and 3.6 checked against the images. Consulted §§4.5.2, 5.6.2,
