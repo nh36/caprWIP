@@ -28,7 +28,7 @@ def recipe():
                 for label, previous in (("A", "early"), ("B", "split"))}
     definitions = {name: original["definitions"][name] for name in ("FW", "FNU", "FON")}
     cells = dict(zip(original["probe_ids"],
-                     original["queries"][f"identity:cell:{LAST}"]["inputs"], strict=True))
+                     original["queries"][f"identity:cell:{LAST}"]["inputs"]))
     cells.pop("nett.dat.pl.retained_o")
     cells.update({
         "bedd.dat.sg": "bádjai",
@@ -98,7 +98,7 @@ def run():
     baseline = batch_apply_down(runtime.bin_dir / "old_english.bin", raw)
     assert all(len(output) == 1 for output in incoming + baseline)
     assert len(rows) == 394 and sum(row["counterpart"] in output
-                                   for row, output in zip(rows, baseline, strict=True)) == 386
+                                   for row, output in zip(rows, baseline)) == 386
     indices = [i for i, row in enumerate(rows) if row["concept"] in CONTROLS]
     orders = {label: order_for(canonical, ops) for label, ops in variants.items()}
     probes = [oe_pipeline.CITATION_CONTEXT.encode(form) for form in cells.values()]
@@ -138,7 +138,7 @@ def run():
         assert digest(path) == hashes[path.name], path
     return {
         "inputs_sha256": hashes, "configurations": orders, "prefix": FIRST,
-        "cells": dict(zip(cells, probes, strict=True)),
+        "cells": dict(zip(cells, probes)),
         "controls": [rows[i]["row_id"] for i in indices],
         "corpus": [{**row, "identity": baseline[i],
                     **{label: output[f"{label}:corpus"][i] for label in orders}}
