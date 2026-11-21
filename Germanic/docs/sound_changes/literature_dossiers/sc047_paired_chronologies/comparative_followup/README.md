@@ -2,7 +2,13 @@
 
 Subsequent work: [Hollifield source assessment](hollifield.md),
 [source integration and matched A/B/C trials](source_integration/README.md),
-and the [current comparative recommendation](morphology/README.md).
+the [morphology review](morphology/README.md), and the
+[independently replayed A/B pair](parallel/README.md). The latest
+[lexical-cell adjudication](cell-adjudication.md) separates inherited
+predictions, witnessed cases and potential donors in a
+[consolidated matrix](cell-matrix.md), supported by a
+[source audit](cell-sources.md). Neither it nor its supplementary
+probes alters the selected rows or the frozen pair.
 The historical capture below is retained as executed.
 
 ## Identity and question
