@@ -57,6 +57,9 @@ coverage or an original/reissue concordance.
 
 All PDFs, complete extracts, OCR and page images remain ignored/private.
 No redistribution permission has been established or asserted.
+The exact Meillet1902 scan is publicly accessible from
+[Humboldt University](https://edoc.hu-berlin.de/bitstream/handle/18452/1077/h242_meillet_1902_1.pdf).
+Download access is not redistribution permission for this digitization.
 Only bibliographic metadata, provenance, short analytical paraphrases
 and consultation records are committed. Preserve the originals and
 the manifest together in a local backup; a public clone alone cannot

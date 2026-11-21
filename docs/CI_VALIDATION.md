@@ -92,6 +92,34 @@ the pytest suite performs the same holding/evidence preflight once. Completeness
 flags such as `--require-feature-alignment-complete` retain their independent
 reading, attribution and analytical gates in either mode.
 
+### Provision private reference holdings in a Git worktree
+
+Run these from the main checkout, using the target worktree's registered pins:
+
+```sh
+python3 Germanic/tools/bootstrap_references.py Meillet1902 --checkout /path/to/worktree
+python3 Germanic/tools/bootstrap_references.py --survey --checkout /path/to/worktree
+```
+
+The first command resolves citation keys from the `docs/references/*/holdings.tsv`
+ledgers. The second uses the survey's recorded file hashes, including private
+transcriptions. The main checkout and the private `~/.cache/capr/references/`
+cache are searched in that order. The cache, or a directory specified by
+`--cache`, mirrors repository-relative paths, for example
+`~/.cache/capr/references/docs/references/meillet_1902_vieux_slave_part1.pdf`.
+The tool copies only into Git-ignored paths, does not overwrite existing files
+and refuses mismatched hashes. It does not download, restage Git files or
+record a source inspection.
+
+The survey runs on the host. If a Docker check also needs originals, bind the
+target checkout's `./docs/references` directory read-only, for example to
+`/usr/app/references` in a worktree-specific Compose override. A host symlink
+to another checkout is not a substitute for a container-visible copy or mount.
+Use portable mode for bibliography, metadata and publication checks that do
+not need local originals or live Foma. For a fresh page-image check, provision
+the pinned scan and inspect the relevant folios; neither provisioning nor a
+survey pass repeats historical page inspection.
+
 Full pytest and graph validation additionally require the canonical isolated Foma runner,
 compiled stage bins and build manifests. Portable mode never executes the
 `runtime_bins`, `full_trace`, `lexical_sources` or `interaction_matrix` nodes,
