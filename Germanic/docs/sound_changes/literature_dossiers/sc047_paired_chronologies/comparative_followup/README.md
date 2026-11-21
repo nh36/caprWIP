@@ -1,5 +1,9 @@
 # SC047: comparative chronology and independent labial questions
 
+Subsequent work: [Hollifield source assessment](hollifield.md) and
+[source integration and matched A/B/C trials](source_integration/README.md).
+The historical capture below is retained as executed.
+
 ## Identity and question
 
 SC047 (`OEHeavySyllableNasalApocope`), interacting with SC041 and
