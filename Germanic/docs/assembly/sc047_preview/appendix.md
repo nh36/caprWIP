@@ -20,7 +20,7 @@ In both arms the common prefix includes the inherited input checks, early conson
 
 The ordinary syllabic-glide treatment follows this block. A shared expansion of endingless \emph{*aw} treatment recovers newly exposed final \emph{*aw} without changing the historical hypothesis being compared. Later loss of newly exposed final \emph{*z} precedes rhotacism. For ‘deer’, direct \emph{*déuzą} gives reconstructed \emph{*dēo}, whereas the selected genitive plural \emph{*déuzô} protects internal \emph{*z}, giving *dēora* ‘of deer’, attested in Ohthere’s account, *Orosius* I.1 §15 [@Bosworth1859, p. 20, lines 25–27]. The direct singular is not scored. The same labial rules, fronting, mutation, high-vowel loss and final consonant simplification follow both trial blocks.
 
-Immediate vocalization removes \emph{*j} from a newly endingless doubled labial before rules that otherwise consume the doubled cluster. Preservation of \emph{*wwj} through those rules is a separate phonological hypothesis. Other tests separately delay vocalization of singleton \emph{*wj}, contract short stressed and unstressed \emph{*ii}, or narrow a singleton-\emph{*aw} diphthong proxy. These tests distinguish the initial chronological fork from later dependencies; none is used to give one principal model a different set of downstream rules.
+Immediate vocalization removes \emph{*j} from a newly endingless doubled labial before rules that otherwise consume the doubled cluster. Variant B2 uses the archived geminate-only nuclearizer: it leaves \emph{*wwj} available to those rules, but still vocalizes singleton \emph{*Vwj} and stranded nonlabial glides. The retained \emph{*j} marks conditioning; the assay does not decide whether it was a separate segment or a property of the labial. Other tests separately delay vocalization of singleton \emph{*wj}, contract short stressed and unstressed \emph{*ii}, or narrow a singleton-\emph{*aw} diphthong proxy. None changes either principal model.
 
 ## Matched derivations and witness status
 
@@ -49,7 +49,19 @@ Three comparison types must be kept apart. First, Continental *peti/bedi* belong
 | rest | *ræste* | \emph{*rast} | \emph{*rast} |
 | hue | *hīew* | \emph{*hii} | \emph{*hiewe} |
 
-There were 386 canonical matches, 381 in A and 382 in B, with the same original 394 inputs in each. The proposed feminine hedge and accusative rest inputs are not substituted here. The first discrepancy compares different formations; the second reflects a separate interaction of final consonant loss and long-vowel raising. Neither is a vote on the order of short nasal loss. The full traces preserve the unchanged controls, including strew, the selected deer cell, and the door and adverb controls. No model counts an analogically supplied result as a regular phonological match.
+There were 386 canonical matches, 381 in A and 382 in B, with the same original 394 inputs in each. The proposed feminine hedge and accusative rest inputs are not substituted here. The hedge discrepancy compares different formations; rest reflects the selected genitive and a separate interaction of final consonant loss and long-vowel raising. Neither is a vote on the order of short nasal loss. The full traces preserve the unchanged controls, including ‘strew’, the selected deer cell, and the door and adverb controls. No model counts an analogically supplied result as a regular phonological match.
+
+## Prospective comparison with corrected cells
+
+The separate corrected-selection replay substitutes only the feminine nominative \emph{*xágjō} and the long-nasal accusative \emph{*rástǭ}. The two re-executed cells give *heġġ* ‘hedge’ and *ræste* ‘rest’ in all arms. The other 392 inputs, contexts and endpoints come from the frozen runs. With the corrected selection the canonical cascade gives 386/394, A gives 383/394, B gives 384/394, and B2 gives 386/394. Each retains the same eight inherited mismatches. The following are all additional differences:
+
+| Item | Canonical | A | B | B2 |
+|---|---|---|---|---|
+| ‘hay’ | *hīeġ* | \emph{*hēa} | \emph{*hewe} | *hīeġ* |
+| ‘net’ | *nett* | \emph{*nete} | *nett* | *nett* |
+| ‘hue’ | *hīew* | \emph{*hii} | \emph{*hiewe} | *hīew* |
+
+In B2, \emph{*xáwwj} passes through \emph{*xáuj} on the way to *hīeġ*; \emph{*xíwwj} passes through \emph{*xíuwj} and \emph{*xīowj} on the way to *hīew*. In B, immediate vocalization gives \emph{*xáwwi} and \emph{*xíwwi} instead. The unscored direct ‘glee’ probe shows the same sensitivity as ‘hue’. Protected inflected cells and ‘sew’ and ‘strew’ retain a prevocalic trigger; ‘new’ still vocalizes its singleton in the oral direct singular. ‘Believe’, ‘straw’ and ‘show’ do not change, and ‘net’ keeps its nonlabial contrast. This isolates a shared representational dependency, not a new chronology or a proof of inherited direct gemination.
 
 ## Inherited cells outside the score
 

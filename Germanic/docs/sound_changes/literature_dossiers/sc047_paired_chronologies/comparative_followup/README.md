@@ -9,6 +9,10 @@ predictions, witnessed cases and potential donors in a
 [consolidated matrix](cell-matrix.md), supported by a
 [source audit](cell-sources.md). Neither it nor its supplementary
 probes alters the selected rows or the frozen pair.
+The [corrected-selection replay](corrected-selection.md) evaluates two
+different lexical selections without replacing that pair; the accompanying
+[discrepancy classification](discrepancy-classification.md) distinguishes
+historical predictions from selection and implementation problems.
 The historical capture below is retained as executed.
 
 ## Identity and question
