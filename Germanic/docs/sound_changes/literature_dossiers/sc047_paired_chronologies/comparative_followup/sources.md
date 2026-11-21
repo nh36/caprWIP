@@ -61,9 +61,11 @@ Ryan **Sandell**, *Foot Structure in Indo-European and Sievers’ Law*,
 [Academia.edu holding](https://www.academia.edu/98014359/Foot_Structure_in_Indo_European_and_Sievers_Law),
 15 pp., supplied download SHA-256
 `7ba08f180a5ab8cf1b8e02e761861c01deffa16cb91f6bedb56ada483c7dd33f`.
-The project incorporates its bibliographic record and §9.2 analysis, not a
-redistributed copy of the handout. PDF metadata records creation in March
-2023; the handout is cited without a formal publication date.
+The byte-identical original is held privately at
+`docs/references/local/sc047-early-apocope/sandell_foot_structure_and_sievers_law.pdf`.
+Only its bibliographic record and §9.2 analysis are tracked. PDF metadata
+records creation in March 2023; the handout is cited without a formal
+publication date.
 
 **Highest priority from its bibliography:** Sievers (1892), *Zur
 westgermanischen Gemination*, pp. 262–265, for the original distinction
