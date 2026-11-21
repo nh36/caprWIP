@@ -261,6 +261,9 @@ class EditorialPublicationTests(unittest.TestCase):
         # Presentation order is editorial; compare scientific columns by stable row ID.
         for before in old:
             now = unchanged[before["row_id"]]
+            if before["row_id"] == "2152":
+                self.assertEqual((before["protoform"], before["counterpart"]), ("*rástōz", "ræste"))
+                before = dict(before, protoform="*rástǭ")
             if before["row_id"] == "2162":
                 self.assertEqual((before["proto"], before["protoform"]), ("*rústō", "*rústō"))
                 before = dict(before, proto="*rústaz", protoform="*rústaz")

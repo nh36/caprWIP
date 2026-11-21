@@ -156,7 +156,8 @@ class RustInputAdoptionTests(unittest.TestCase):
         # Soul, spindle and filth accusatives no longer fire SC019; hammer fires SC020.
         # Little and livestock add final-ō raising; dart adds bare-a loss.
         # Flask's selected plural adds one final-z deletion.
-        for identifier, count in (("SC017", "40"), ("SC019", "28"), ("SC020", "117")):
+        # The selected rest accusative has no final z.
+        for identifier, count in (("SC017", "40"), ("SC019", "28"), ("SC020", "116")):
             row = next(row for row in census if row["sc_id"] == identifier)
             self.assertEqual(row["corpus_firing_count"], count)
         ledger = known.load_ledger(ROOT / "Germanic/data/oe_known_problems.tsv")
