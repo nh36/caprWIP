@@ -385,3 +385,13 @@ remove	pgmc	*fláskōn	selected_input	explicit_tag	Germanic/docs/lexeme_reports/
 remove	pgmc	flaskǭ	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Final nasal candidate: obsolete ending illustration replaced by independently justified complete oblique hypotheses.	
 remove	pgmc	*déuzą	selected_input	trace_proto_input	deer — OE dēor	SC047 deer migration: direct singular retained as a diagnostic, not as the selected trace.	
 add	pgmc	*déuzô	selected_input	trace_proto_input	deer — OE dēora	SC047 deer migration: independently attested genitive plural replaces the selected direct singular.	
+add	pgmc	*rástǭ	selected_input	trace_proto_input	rest — OE ræste	Rest accusative selection: attested and regularly derived.
+add	pgmc	*rástǭ	source_protoform	lexical_protoform	rest — OE ræste	Rest accusative selection: selected lexical input.
+add	pgmc	rástǭ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	Rest accusative selection: explicit selected input.
+remove	oe	rast	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	Rest accusative selection: predicted nominative is not an attested comparison.
+remove	oe	ræste	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	Rest accusative selection: obsolete genitive output table; attested target retained.
+remove	pgmc	*rastō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	Rest accusative selection: redundant former table tag; headword retained.
+remove	pgmc	*rástōz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	Rest accusative selection: genitive retained only as an unscored diagnostic.
+remove	pgmc	*rástōz	selected_input	trace_proto_input	rest — OE ræste	Rest accusative selection: replace old genitive trace input.
+remove	pgmc	*rástōz	source_protoform	lexical_protoform	rest — OE ræste	Rest accusative selection: replace old genitive lexical input.
+remove	pgmc	rástōz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	Rest accusative selection: remove old explicit selection.

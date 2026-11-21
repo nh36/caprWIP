@@ -64,6 +64,28 @@ def assert_deer_genpl_index_delta(rows):
     assert all(not row.get("variety") for row in rows)
 
 
+def assert_rest_cell_index_delta(rows):
+    model = "Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md"
+    heading = "rest — OE ræste"
+    expected = {
+        (action, "pgmc", form, role, scope, heading)
+        for action, form in (("add", "*rástǭ"), ("remove", "*rástōz"))
+        for role, scope in (("selected_input", "trace_proto_input"),
+                            ("source_protoform", "lexical_protoform"))
+    } | {
+        ("add", "pgmc", "rástǭ", "selected_input", "explicit_tag", model),
+        ("remove", "pgmc", "rástōz", "selected_input", "explicit_tag", model),
+        ("remove", "pgmc", "*rástōz", "selected_input", "explicit_tag", model),
+        ("remove", "pgmc", "*rastō", "source_protoform", "explicit_tag", model),
+        ("remove", "oe", "ræste", "regular_output", "explicit_tag", model),
+        ("remove", "oe", "rast", "comparison_form", "table_semantic_decision", model),
+    }
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == len(expected)
+    assert {tuple(row[field] for field in fields) for row in rows} == expected
+    assert all(not row.get("variety") for row in rows)
+
+
 def assert_final_nasal_index_delta(rows):
     model = "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
     expected = {
