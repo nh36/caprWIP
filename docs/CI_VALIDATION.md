@@ -111,6 +111,12 @@ The tool copies only into Git-ignored paths, does not overwrite existing files
 and refuses mismatched hashes. It does not download, restage Git files or
 record a source inspection.
 
+Some live tests check originals not used by the survey. For the SC035
+original-holding check, also provision `Stevenson1840`, `LucasLucas2012`
+and `Lucas2016` by citation key; the two Sweet scans are already covered
+by survey provisioning. The additional registrations use the existing
+test's exact hashes, not newly designated scans.
+
 The survey runs on the host. If a Docker check also needs originals, bind the
 target checkout's `./docs/references` directory read-only, for example to
 `/usr/app/references` in a worktree-specific Compose override. A host symlink
