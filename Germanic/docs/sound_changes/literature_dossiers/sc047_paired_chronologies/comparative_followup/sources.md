@@ -34,6 +34,33 @@ entry distinguishes direct `*badi` from oblique `*badj-` with doubling.
 This strengthens the comparative alternation, while still not giving
 the cell, locality, and writing conventions of every early token.
 
+**Old High German bed, token-level check.** [AWb I cols. 935–937,
+*betti*](https://awb.saw-leipzig.de/?sigle=AWB&lemid=B00752) lists
+accusative *peti* glossing *stratum* at *Gl.* II 221.60 (ninth-century
+Clm 18550,1), nominative *beti* glossing *area* at IV 228.15, and
+accusative *bedi* in the ninth-century Fulda witness (MGH *SS rer.
+Langob.*, p. 144). The East Franconian *Tatian* has accusative
+*betti* (25.2, 54.7) and dative *bette* (54.2, 147.4). The
+glosses do not all express the same sense or preserve an unambiguous
+cell, and AWb also lists occasional single-letter obliques. This is
+stronger evidence for a singleton-plus-vowel direct type than final
+English spelling, not proof of a pristine distribution or of
+phonetic consonant quantity from any one grapheme.
+
+**Old High German hay, token-level check.** [AWb IV col. 1043,
+*heuui, houuui*](https://awb.saw-leipzig.de/?sigle=AWB&lemid=H02092)
+lists nominative singular *heuui* at *Gl.* III 16.34, and in the
+Alemannic Notker Psalter tradition nominative *heuue* at Np 91.8,
+nominative *houue* at Np 36.2 (Npw *houui*), accusative *houue*
+at Np 146.8, and genitive *heuues* at Np/Npw 105.20. These are
+edition-indexed forms, not newly read manuscript images. Both stem
+types really occur in the direct singular in that tradition, but
+the *hewi* type is not confined to the direct cells in the surviving
+record. Ringe and Taylor's assignment of earlier inherited *hewi*
+and remodelled direct *houwi* therefore remains a historical
+inference from comparison, not a transcription of an attested
+direct-versus-oblique split.
+
 Pheifer (1974; 1998 reprint), pp. 14 and 50, confirms edited *bedd*
 243 (Latin *culcites*) and *bed* 971 (*spatula*) in both Épinal and
 Erfurt. Pheifer §49 treats both spellings together for i-mutation;
@@ -88,5 +115,6 @@ actually geminated; Barber (2013) is background rather than a prerequisite.
 Outside that bibliography, Dahl (1938), pp. 81–86, Dal (1934), especially
 pp. 243–246, and the relevant OHG grammar/edition loci are more urgent
 than further general debate about Gothic syllabicity. Dahl and Dal are
-not conflated; the relevant original passages and token-level OHG
-editions were not independently obtained here.
+not conflated; their relevant original passages were not obtained.
+The OHG token checks above use edition citations in AWb, not a
+fresh collation of the underlying editions or manuscripts.
