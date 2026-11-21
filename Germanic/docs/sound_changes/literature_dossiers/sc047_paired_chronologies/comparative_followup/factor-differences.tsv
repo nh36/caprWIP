@@ -1,0 +1,14 @@
+arm	control	row_id	concept	control_output	arm_output
+B_geminate_only	B	2061	hay	hewe	hīeġ
+B_geminate_only	B	2332	hue	hiewe	hīew
+B_consumers_before_loss	B	1944	believe	ġelīefan	ġealīefan
+B_consumers_before_loss	B	2061	hay	hewe	hīeġ
+B_consumers_before_loss	B	2224	straw	strēa	strau
+B_consumers_before_loss	B	2332	hue	hiewe	hīe
+C_consumers_before_loss	C_northern_order	1944	believe	ġelīefan	ġealīefan
+C_consumers_before_loss	C_northern_order	2061	hay	hewe	hīeġ
+C_consumers_before_loss	C_northern_order	2224	straw	strēa	strau
+C_consumers_before_loss	C_northern_order	2332	hue	hiewe	hīe
+A_contraction	A	2332	hue	hii	hī
+A_late_contraction	A	2332	hue	hii	hī
+A_singleton_aw	A	2061	hay	hēa	hei
