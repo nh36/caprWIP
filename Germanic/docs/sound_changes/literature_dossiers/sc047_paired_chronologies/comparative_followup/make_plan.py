@@ -50,8 +50,9 @@ def main():
         "B_consumers_before_loss": old["split"] + placed,
         "C_consumers_before_loss": north + placed,
     }
+    # The snapshot compiler reads definitions in insertion order.
     definitions = {
-        name: previous["definitions"][name] for name in ("FW", "FON", "FNU", "FNG")
+        name: previous["definitions"][name] for name in ("FW", "FNU", "FON", "FNG")
     }
     definitions["FII"] = "define FII [{*í} {*i} -> {*ḯ}];"
     definitions["FWA"] = """define FWA Ctx([
@@ -103,6 +104,17 @@ def main():
     queries["existing.contraction.local"] = {
         **queries["contraction.local"], "members": [late],
     }
+    for arm in ("A", "A_singleton_aw"):
+        for stage in (aw, "EAFBrightening", "OEIUmlaut", wloss, final):
+            queries[f"{arm}:aw_local:{stage}"] = {
+                "configuration": arm,
+                "after": "OEDiphthongLeveling",
+                "through": "FWA" if arm == "A_singleton_aw" and stage == aw else stage,
+                "inputs": [
+                    "*x*á*w*i", "*á*w*i*d*i", "*s*t*r*á*w*i*d*ē",
+                    "*g*a*k*á*w*i*d*ē", "*s*k*á*w*ō*j*a*n*ą"
+                ],
+            }
     plan = {
         "purpose": "Compare early, split and Northern gemination-first apocope, with independent labial sensitivities.",
         "start_after": previous["start_after"],

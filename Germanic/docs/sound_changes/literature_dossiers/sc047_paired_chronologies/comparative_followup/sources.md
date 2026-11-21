@@ -46,6 +46,11 @@ consonant improves the evidence for that cell. The glossary's
 *nettae* 702 is not used here as a direct citation for the fishing
 net.
 
+[Bosworth–Toller s.v. *bed*](https://bosworthtoller.com/39676)
+also cites *beddes* (genitive, *Beowulf* 1791) and *bedde* (dative,
+the *Collocutio*). These are independent edited attestations of the
+protected vowel-bearing stem, not just predictions of the model.
+
 The simplex [*mene, myne*](https://bosworthtoller.com/22609) is
 independently attested in glossary editions. Pheifer's introduction
 identifies Corpus Glossary C887 *maenoe* for Latin *crepundia*.
