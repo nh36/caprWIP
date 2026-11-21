@@ -3807,7 +3807,7 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 ## 2069: hedge / heġġ
 
-Current citation: *xágjaz (pgmc); selected input: *xágjaz (pgmc; variety: none; equality_convention).
+Current citation: *xágjō (pgmc); selected input: *xágjō (pgmc; variety: none; equality_convention).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |

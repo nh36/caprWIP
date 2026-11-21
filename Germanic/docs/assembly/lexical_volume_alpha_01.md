@@ -3256,18 +3256,18 @@ The Old English form here, _hierfest_, represents the regular native West Saxon 
 
 ### hedge — OE _heġġ_
 
-Derivation: _\*xágjaz_ > _heġġ_ (regular).
+Derivation: _\*xágjō_ > _heġġ_ (regular).
 
 #### Derivation trace
 
-Proto input: _\*xágjaz_
+Proto input: _\*xágjō_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3275,9 +3275,9 @@ Proto input: _\*xágjaz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc J Gemination} & \emph{*xággjaz} \\
-\mbox{EAF Final Z Deletion} & \emph{*xággja} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc J Gemination} & \emph{*xággjō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*xággju} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -3291,11 +3291,11 @@ Proto input: _\*xágjaz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Final Bare A Loss} & \emph{*xággj} \\
-\mbox{EAF Brightening} & \emph{*xæggj} \\
-OE Velar Fricative Palatalization & \emph{*çæggj} \\
-\mbox{OE Velar Palatalization} & \emph{*çæʤʤj} \\
-\mbox{OE I Umlaut} & \emph{*çeʤʤj} \\
+\mbox{EAF Brightening} & \emph{*xæggju} \\
+OE Velar Fricative Palatalization & \emph{*çæggju} \\
+\mbox{OE Velar Palatalization} & \emph{*çæʤʤju} \\
+\mbox{OE I Umlaut} & \emph{*çeʤʤju} \\
+\mbox{OE High Vowel Apocope} & \emph{*çeʤʤj} \\
 \mbox{OE J Loss After Heavy} & \emph{*çeʤʤ} \\
 \end{tabularx}
 \end{minipage}
@@ -3309,11 +3309,11 @@ Old English form: _heġġ_
 
 #### Reconstruction and comparative evidence
 
-The derivational input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ 'hedge' type [@Campbell1959].
+Kroonen connects feminine *hecg* ‘hedge’ and OHG *heckia, heggia* with [hagjō-]{.recon} ‘hedge’, separately from the masculine formation represented by ON *heggr* ‘bird cherry’. Orel associates masculine [xaǥjaz]{.recon} ‘hedge’ with OE *hege* ‘hedge’. The two are formations of the same lexical family, not interchangeable citation forms [@Kroonen2013, p. 198; @Orel2003, p. 150].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ 'hedge' / _heċġ_ 'hedge' [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the form compared here is normalized.
+The charter evidence distinguishes masculine [of þām hege]{.ex} ‘from the hedge’ from feminine [in þā hegce]{.ex} ‘into the hedge’ [@KembleHardwick1858, vol. III, pp. 78 and 52]. The Supplement reassigns the doubled Bamborough spelling to the feminine; the spelling alone does not determine gender [@Toller1921, p. 528]. These are edition readings. The selected nominative is the normalized *heġġ* ‘hedge’, corresponding to lexicographic *hecg/heċġ* [@BosworthToller1898, s.v. *hege* and *hecg*; @ClarkHall1960].
 
 #### Development to Old English
 
@@ -3322,9 +3322,7 @@ This is the geminate-stop class, distinct from the singleton fricative in
 affrication had already occurred at the articulation checkpoint
 [@RingeTaylor2014, pp. 203–204; @Fulk2018, pp. 131–132].
 
-From [xágjaz]{.recon} ‘hedge’, the current serialized model first applies West Germanic j-gemination to produce a geminate stop; later Old English palatalization and loss of final _j_ produce _heġġ_ 'hedge'. This preserves the selected regular executable derivation, not independent evidence for the historical position of final low-vowel loss.
-
-Ringe and Taylor place broader oral/nasal low-vowel apocope before West Germanic j-gemination and distinguish stranded-glide outcomes from later paradigmatic leveling [@RingeTaylor2014, pp. 46--47]. The late oral-a fragment therefore does not establish an uninterrupted regular history of this selected nominative. Reconciling its formation and cell with that chronology remains open; no word-specific analogical repair or change to the selected reconstruction is asserted here.
+From [xágjō]{.recon} ‘hedge’, the long vowel preserves nonsyllabic *j* at West Germanic gemination. Palatalization and i-mutation lead to *heġġ*; the short nasal apocope controversy does not govern this ending. The masculine *hege* and its singleton obliques are a separate paradigm: extending the singleton from the masculine nominative is possible, but neither its direction of spread nor an alternative inherited formation is demonstrated here [@Ringe2017, p. 312; @RingeTaylor2014, pp. 44–47].
 
 #### Form note
 

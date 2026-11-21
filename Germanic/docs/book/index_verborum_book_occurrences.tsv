@@ -2017,8 +2017,8 @@ pgmc		xábēθi	*xábēθi	xabethi	selected_input	explicit_tag	Germanic/docs/lex
 pgmc		*xábēθi	*xábēθi	xabethi	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62:1	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md	auto
 pgmc		*xábēθi	*xábēθi	xabethi	source_protoform	lexical_protoform	have — OE hæfeþ	lexical-protoform:83cda0a929fd54	manifest	auto
 pgmc		*xábēθi	*xábēθi	xabethi	selected_input	trace_proto_input	have — OE hæfeþ	trace:e10ada4240e330	compact	auto
-pgmc		*xágjaz	*xágjaz	xagjaz	source_protoform	lexical_protoform	hedge — OE heġġ	lexical-protoform:70d8470624ba44	manifest	auto
-pgmc		*xágjaz	*xágjaz	xagjaz	selected_input	trace_proto_input	hedge — OE heġġ	trace:7b4585cc6fbe74	compact	auto
+pgmc		*xágjō	*xágjō	xagjo	source_protoform	lexical_protoform	hedge — OE heġġ	lexical-protoform:3496f5b4903349	manifest	auto
+pgmc		*xágjō	*xágjō	xagjo	selected_input	trace_proto_input	hedge — OE heġġ	trace:4c279f5e1167f0	compact	auto
 pgmc		*xáldaną	*xáldaną	xaldana	source_protoform	lexical_protoform	hold — OE healdan	lexical-protoform:ef1135494b3e88	manifest	auto
 pgmc		*xáldaną	*xáldaną	xaldana	selected_input	trace_proto_input	hold — OE healdan	trace:339a7c8781a5b3	compact	auto
 pgmc		xámaras	*xámaras	xamaras	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:69	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:69:1	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md	auto

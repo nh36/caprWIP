@@ -2915,7 +2915,7 @@ English Proto Input: *xáiθiz
 Old English Orthography: h*ǣþ
 Outcome: hǣþ
 # hedge
-PROTO: *xágjaz
+PROTO: *xágjō
 EXPECTED: heġġ
 OUTPUTS: heġġ
 
@@ -2923,11 +2923,11 @@ OUTPUTS: heġġ
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *xágjaz
+English Proto Input: *xágjō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc J Gemination: *xággjaz<br>EAF Final Z Deletion: *xággja<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *xággj<br>EAF Brightening: *xæggj<br>OE Velar Fricative Palatalization: *çæggj<br>OE Velar Palatalization: *çæʤʤj<br>OE I Umlaut: *çeʤʤj<br>OE J Loss After Heavy: *çeʤʤ |
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *xággjō<br>PNWGmc Final Long O Raising: *xággju<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *xæggju<br>OE Velar Fricative Palatalization: *çæggju<br>OE Velar Palatalization: *çæʤʤju<br>OE I Umlaut: *çeʤʤju<br>OE High Vowel Apocope: *çeʤʤj<br>OE J Loss After Heavy: *çeʤʤ |
 
 
 
@@ -2942,7 +2942,7 @@ Outcome: heġġ
 
 #### Project note
 
-Original TSV note: Note: heċġ is the more standard spelling; using heġġ here
+Original TSV note: Feminine jō-stem nominative singular; heġġ normalizes hecg/heċġ. The masculine xágjaz belongs with hege.
 # helm
 PROTO: *xélmaz
 EXPECTED: helm

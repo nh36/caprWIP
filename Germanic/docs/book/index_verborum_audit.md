@@ -21,9 +21,9 @@
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 443
+- Already indexed in same entry: 441
 - Broad-prose notation / compound expressions: 526
-- Broad-prose evidence suggestions: 318
+- Broad-prose evidence suggestions: 319
 - Curated broad-prose deferred: 24
 - Curated broad-prose ignored: 7
 - Reader-facing examples quarantined (separate example index policy): 1607
@@ -342,9 +342,7 @@
 | `hǣr` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | ### Form note | same form already indexed in this entry |
 | `hefnes` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:107 | ### E. Deep oblique controls | same form already indexed in this entry |
 | `hefnum` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:107 | ### E. Deep oblique controls | same form already indexed in this entry |
-| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 | ### Development to Old English | same form already indexed in this entry |
-| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:40 | ### Form note | same form already indexed in this entry |
+| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:38 | ### Form note | same form already indexed in this entry |
 | `heofnes` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:106 | ### E. Deep oblique controls | same form already indexed in this entry |
 | `heofnum` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:106 | ### E. Deep oblique controls | same form already indexed in this entry |
 | `heofon` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:105 | ### E. Deep oblique controls | same form already indexed in this entry |
@@ -650,7 +648,7 @@
 | `wulf` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:54 | ### Development to Old English | same form already indexed in this entry |
 | `*wúlfaz` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49 | ### Development to Old English | same form already indexed in this entry |
 | `*wúllō` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:20 | ### The inherited paradigm | same form already indexed in this entry |
-| `*xágjaz` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 | ### Development to Old English | same form already indexed in this entry |
+| `*xágjō` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 | ### Development to Old English | same form already indexed in this entry |
 | `*xáldaną` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `*xárbistuz` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `*xáwwaną` | Germanic/docs/lexeme_reports/model_entries/2074-hew-hēawan.model.md:10 | ### Reconstruction and development | same form already indexed in this entry |
@@ -848,7 +846,6 @@
 | `(ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:21 | notation or compound expression |
 | `(ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25 | notation or compound expression |
 | `*gefti-` | Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:57 | notation or compound expression |
-| `-gj-` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | notation or compound expression |
 | `*góldą` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33 | intermediate or model-stage form in development chain |
 | `gong (gang), m., path, course` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:25 | notation or compound expression |
 | `*gōs` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:56 | intermediate or model-stage form in development chain |
@@ -858,6 +855,7 @@
 | `*guman-` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:270 | notation or compound expression |
 | `haddr / heordan / hād-` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | notation or compound expression |
 | `hæf-` | Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:36 | notation or compound expression |
+| `*hagjō-` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | notation or compound expression |
 | `*hamara-` | Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:24 | notation or compound expression |
 | `*harbist-` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:21 | notation or compound expression |
 | `*hauwja-` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:30 | notation or compound expression |
@@ -1266,11 +1264,11 @@
 | `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*hēawan` | Germanic/docs/lexeme_reports/model_entries/2074-hew-hēawan.model.md:10 | oe | source_protoform | citation or reconstructed source form in prose |
-| `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*heckia` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | ohg | source_protoform | citation or reconstructed source form in prose |
 | `hefn` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:127 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*heggr` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | on | source_protoform | citation or reconstructed source form in prose |
 | `herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hindan` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1518,6 +1516,7 @@
 | `*wulfaz` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `wulle` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wylfe` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:54 | oe | comparison_form | attested Old English comparison form in development prose |
+| `*xaǥjaz` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `*xamaraz` | Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:24 |  | source_protoform | citation or reconstructed source form in prose |
 | `*xáwją` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:174 |  | source_protoform | source form in development prose |
 | `*xawwanan` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:35 |  | source_protoform | citation or reconstructed source form in prose |
@@ -3538,6 +3537,7 @@ _None._
 | `*ǵʰān` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:29 |
 | `*gj` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29 |
 | `h` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:59 |
+| `*hege` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 |
 | `*hiwi` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:61 |
 | `*hwēr` | Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:35 |
 | `*i` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:29 |
@@ -3594,7 +3594,6 @@ _None._
 | `*j` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:45 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:55 |
-| `j` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:51 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:29 |

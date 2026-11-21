@@ -547,3 +547,17 @@ relative to gemination for Old English. Record the competing
 falsifiers and representation gaps rather than changing more scored
 cells. The deer transition remains the only baseline change, in its
 own preceding commit.
+
+## Independent lexical proposal: hedge (21 November 2026)
+
+Correct row 2069 from masculine `*xágjaz` to feminine `*xágjō`, retaining
+the normalized target *heġġ* and the `regular` classification. The old
+and new canonical derivations both give *heġġ*, but only the feminine
+formation agrees with the target evidence. See Kroonen (2013:198), Orel
+(2003:150), Kemble III 52.25 and 78.21, and the Bosworth–Toller Supplement
+(p. 528). The masculine *hege/heges* obliques remain unexplained by
+regular gemination in inherited `*-jai/-jas`; nominative levelling and
+reclassification are distinct possibilities, not established events.
+
+The exact one-row migration is authorized on this proposal only. It
+does not adopt a chronology, move a rule, or revise the frozen A/B comparison.

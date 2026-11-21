@@ -15310,100 +15310,100 @@ OldEnglishRemoveStars: hǣþ
 OldEnglishSurface [no-change]: hǣþ
 
 --- hedge ---
-PROTO: *xágjaz
+PROTO: *xágjō
 EXPECTED: heġġ
 OUTPUTS: heġġ
-NOTE: Note: heċġ is the more standard spelling; using heġġ here
+NOTE: Feminine jō-stem nominative singular; heġġ normalizes hecg/heċġ. The masculine xágjaz belongs with hege.
 
 
 ## Section 1: Proto-Germanic consonant inheritance
 
-EnglishProtoInput: *x*á*g*j*a*z
-PGmcGmSimplification [no-change]: *x*á*g*j*a*z
-PGmcNasalLossBeforeX [no-change]: *x*á*g*j*a*z
-RootNounNomZLoss [no-change]: *x*á*g*j*a*z
+EnglishProtoInput: *x*á*g*j*ō
+PGmcGmSimplification [no-change]: *x*á*g*j*ō
+PGmcNasalLossBeforeX [no-change]: *x*á*g*j*ō
+RootNounNomZLoss [no-change]: *x*á*g*j*ō
 
 ## Section 2: Northwest and West Germanic developments
 
-PNWGmcUnstressedAiMonophthongization [no-change]: *x*á*g*j*a*z
-PNWGmcAToUBeforeM [no-change]: *x*á*g*j*a*z
-PNWGmcLongELowering [no-change]: *x*á*g*j*a*z
-PNWGmcNStemNLoss [no-change]: *x*á*g*j*a*z
-PWGmcEarlyIApocope [no-change]: *x*á*g*j*a*z
-PWGmcFinalOrLowering [no-change]: *x*á*g*j*a*z
-PWGmcCoronalWAssimilation [no-change]: *x*á*g*j*a*z
-OEWWSimplification [no-change]: *x*á*g*j*a*z
-PWGmcIjContraction [no-change]: *x*á*g*j*a*z
-PWGmcJGemination: *x*á*g*g*j*a*z
-PWGmcSyllabicJ [no-change]: *x*á*g*g*j*a*z
-PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*g*j*a*z
-EAFLThVoicing [no-change]: *x*á*g*g*j*a*z
-PWGmcDentalHardening [no-change]: *x*á*g*g*j*a*z
-PWGmcEndinglessAw [no-change]: *x*á*g*g*j*a*z
-PNWGmcILowering [no-change]: *x*á*g*g*j*a*z
-PNWGmcULowering [no-change]: *x*á*g*g*j*a*z
-PNWGmcStressedMonosyllableORaising [no-change]: *x*á*g*g*j*a*z
-PNWGmcFinalLongORaising [no-change]: *x*á*g*g*j*a*z
-EAFFinalZDeletion: *x*á*g*g*j*a
-PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*g*g*j*a
-MonosyllabicFinalZLoss [no-change]: *x*á*g*g*j*a
-PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*g*g*j*a
-EAFRhotacism [no-change]: *x*á*g*g*j*a
-PNWGmcMnDissimilation [no-change]: *x*á*g*g*j*a
-EAFNasalSpirantLengthening [no-change]: *x*á*g*g*j*a
-EAFNasalSpirantLoss [no-change]: *x*á*g*g*j*a
-EAFHiatusWInsertion [no-change]: *x*á*g*g*j*a
-EAFLongANasalRounding [no-change]: *x*á*g*g*j*a
-EAFNasalizedLowRounding [no-change]: *x*á*g*g*j*a
-EAFLongAFronting [no-change]: *x*á*g*g*j*a
-OEStressFootContext [no-change]: *x*á*g*g*j*a
+PNWGmcUnstressedAiMonophthongization [no-change]: *x*á*g*j*ō
+PNWGmcAToUBeforeM [no-change]: *x*á*g*j*ō
+PNWGmcLongELowering [no-change]: *x*á*g*j*ō
+PNWGmcNStemNLoss [no-change]: *x*á*g*j*ō
+PWGmcEarlyIApocope [no-change]: *x*á*g*j*ō
+PWGmcFinalOrLowering [no-change]: *x*á*g*j*ō
+PWGmcCoronalWAssimilation [no-change]: *x*á*g*j*ō
+OEWWSimplification [no-change]: *x*á*g*j*ō
+PWGmcIjContraction [no-change]: *x*á*g*j*ō
+PWGmcJGemination: *x*á*g*g*j*ō
+PWGmcSyllabicJ [no-change]: *x*á*g*g*j*ō
+PNWGmcPreconsonantalXLoss [no-change]: *x*á*g*g*j*ō
+EAFLThVoicing [no-change]: *x*á*g*g*j*ō
+PWGmcDentalHardening [no-change]: *x*á*g*g*j*ō
+PWGmcEndinglessAw [no-change]: *x*á*g*g*j*ō
+PNWGmcILowering [no-change]: *x*á*g*g*j*ō
+PNWGmcULowering [no-change]: *x*á*g*g*j*ō
+PNWGmcStressedMonosyllableORaising [no-change]: *x*á*g*g*j*ō
+PNWGmcFinalLongORaising: *x*á*g*g*j*u
+EAFFinalZDeletion [no-change]: *x*á*g*g*j*u
+PWGmcUnstressedWordFinalIApocope [no-change]: *x*á*g*g*j*u
+MonosyllabicFinalZLoss [no-change]: *x*á*g*g*j*u
+PNWGmcMonosyllabicFinalRLengthening [no-change]: *x*á*g*g*j*u
+EAFRhotacism [no-change]: *x*á*g*g*j*u
+PNWGmcMnDissimilation [no-change]: *x*á*g*g*j*u
+EAFNasalSpirantLengthening [no-change]: *x*á*g*g*j*u
+EAFNasalSpirantLoss [no-change]: *x*á*g*g*j*u
+EAFHiatusWInsertion [no-change]: *x*á*g*g*j*u
+EAFLongANasalRounding [no-change]: *x*á*g*g*j*u
+EAFNasalizedLowRounding [no-change]: *x*á*g*g*j*u
+EAFLongAFronting [no-change]: *x*á*g*g*j*u
+OEStressFootContext [no-change]: *x*á*g*g*j*u
 
 ## Section 3: Early Anglo-Frisian (North Sea Germanic)
 
-EAFAiMonophthongization [no-change]: *x*á*g*g*j*a
+EAFAiMonophthongization [no-change]: *x*á*g*g*j*u
 
 ## Section 4: Old English
 
-OEAwwjResolution [no-change]: *x*á*g*g*j*a
-OEAuBrightening [no-change]: *x*á*g*g*j*a
-OEEwLongDiphthong [no-change]: *x*á*g*g*j*a
-OEJWWSimplification [no-change]: *x*á*g*g*j*a
-OEJGlideIO [no-change]: *x*á*g*g*j*a
-OEDiphthongLeveling [no-change]: *x*á*g*g*j*a
-OEAwLongDiphthong [no-change]: *x*á*g*g*j*a
-OECompoundLinkingSyncope [no-change]: *x*á*g*g*j*a
-OEStripSecondaryStress [no-change]: *x*á*g*g*j*a
-OEInterStressRaising [no-change]: *x*á*g*g*j*a
-OEWICombinativeUUmlaut [no-change]: *x*á*g*g*j*a
-PWGmcFinalBareALoss: *x*á*g*g*j
-NWGmcInStemNLoss [no-change]: *x*á*g*g*j
-PWGmcSurvivingBimoricOUnrounding [no-change]: *x*á*g*g*j
-EAFBrighteningUnstressed [no-change]: *x*á*g*g*j
-EAFBrightening: *x*æ*g*g*j
-EAFBrighteningLongFinal [no-change]: *x*æ*g*g*j
-OEBreaking [no-change]: *x*æ*g*g*j
-OEVelarFricativePalatalization: *ç*æ*g*g*j
-OEARestoration [no-change]: *ç*æ*g*g*j
-OEHeavySyllableNasalApocope [no-change]: *ç*æ*g*g*j
-OESecondaryNasalization [no-change]: *ç*æ*g*g*j
-SieversLawSyncope [no-change]: *ç*æ*g*g*j
-OESkPalatalization [no-change]: *ç*æ*g*g*j
-OEVelarPalatalization: *ç*æ*ʤ*ʤ*j
-OEPrefixAReduction [no-change]: *ç*æ*ʤ*ʤ*j
-OEPostVelarWLoss [no-change]: *ç*æ*ʤ*ʤ*j
-OEWsPalatalDiphthongization [no-change]: *ç*æ*ʤ*ʤ*j
-OEIUmlaut: *ç*e*ʤ*ʤ*j
-OEWLossBeforeI [no-change]: *ç*e*ʤ*ʤ*j
-OELatePalatalDiphthong [no-change]: *ç*e*ʤ*ʤ*j
-OEJClusterCoalescence [no-change]: *ç*e*ʤ*ʤ*j
-OEBackMutation [no-change]: *ç*e*ʤ*ʤ*j
-OEWsPalatalUmlaut [no-change]: *ç*e*ʤ*ʤ*j
-OEWeakTailNasalLoss [no-change]: *ç*e*ʤ*ʤ*j
-OEWeightMarkers [no-change]: *ç*e*ʤ*ʤ*j
-OENonHighSyn [no-change]: *ç*e*ʤ*ʤ*j
-PGmcBAllophony [no-change]: *ç*e*ʤ*ʤ*j
-OEMedLongShort [no-change]: *ç*e*ʤ*ʤ*j
-OEHighVowelApocope [no-change]: *ç*e*ʤ*ʤ*j
+OEAwwjResolution [no-change]: *x*á*g*g*j*u
+OEAuBrightening [no-change]: *x*á*g*g*j*u
+OEEwLongDiphthong [no-change]: *x*á*g*g*j*u
+OEJWWSimplification [no-change]: *x*á*g*g*j*u
+OEJGlideIO [no-change]: *x*á*g*g*j*u
+OEDiphthongLeveling [no-change]: *x*á*g*g*j*u
+OEAwLongDiphthong [no-change]: *x*á*g*g*j*u
+OECompoundLinkingSyncope [no-change]: *x*á*g*g*j*u
+OEStripSecondaryStress [no-change]: *x*á*g*g*j*u
+OEInterStressRaising [no-change]: *x*á*g*g*j*u
+OEWICombinativeUUmlaut [no-change]: *x*á*g*g*j*u
+PWGmcFinalBareALoss [no-change]: *x*á*g*g*j*u
+NWGmcInStemNLoss [no-change]: *x*á*g*g*j*u
+PWGmcSurvivingBimoricOUnrounding [no-change]: *x*á*g*g*j*u
+EAFBrighteningUnstressed [no-change]: *x*á*g*g*j*u
+EAFBrightening: *x*æ*g*g*j*u
+EAFBrighteningLongFinal [no-change]: *x*æ*g*g*j*u
+OEBreaking [no-change]: *x*æ*g*g*j*u
+OEVelarFricativePalatalization: *ç*æ*g*g*j*u
+OEARestoration [no-change]: *ç*æ*g*g*j*u
+OEHeavySyllableNasalApocope [no-change]: *ç*æ*g*g*j*u
+OESecondaryNasalization [no-change]: *ç*æ*g*g*j*u
+SieversLawSyncope [no-change]: *ç*æ*g*g*j*u
+OESkPalatalization [no-change]: *ç*æ*g*g*j*u
+OEVelarPalatalization: *ç*æ*ʤ*ʤ*j*u
+OEPrefixAReduction [no-change]: *ç*æ*ʤ*ʤ*j*u
+OEPostVelarWLoss [no-change]: *ç*æ*ʤ*ʤ*j*u
+OEWsPalatalDiphthongization [no-change]: *ç*æ*ʤ*ʤ*j*u
+OEIUmlaut: *ç*e*ʤ*ʤ*j*u
+OEWLossBeforeI [no-change]: *ç*e*ʤ*ʤ*j*u
+OELatePalatalDiphthong [no-change]: *ç*e*ʤ*ʤ*j*u
+OEJClusterCoalescence [no-change]: *ç*e*ʤ*ʤ*j*u
+OEBackMutation [no-change]: *ç*e*ʤ*ʤ*j*u
+OEWsPalatalUmlaut [no-change]: *ç*e*ʤ*ʤ*j*u
+OEWeakTailNasalLoss [no-change]: *ç*e*ʤ*ʤ*j*u
+OEWeightMarkers [no-change]: *ç*e*ʤ*ʤ*j*u
+OENonHighSyn [no-change]: *ç*e*ʤ*ʤ*j*u
+PGmcBAllophony [no-change]: *ç*e*ʤ*ʤ*j*u
+OEMedLongShort [no-change]: *ç*e*ʤ*ʤ*j*u
+OEHighVowelApocope: *ç*e*ʤ*ʤ*j
 OEMedialSyncope [no-change]: *ç*e*ʤ*ʤ*j
 OEHighLinkSyncope [no-change]: *ç*e*ʤ*ʤ*j
 OELAdjacentSyncope [no-change]: *ç*e*ʤ*ʤ*j
