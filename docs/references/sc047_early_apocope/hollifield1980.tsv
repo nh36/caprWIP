@@ -1,0 +1,3 @@
+citation_key	part	supplied_filename	pdf_path	pdf_sha256	pdf_sheets	article_first_sheet	article_last_sheet	printed_first	printed_last	mapping_basis	access
+Hollifield1980	1	TC82304.1.pdf	docs/references/local/sc047-early-apocope/hollifield1980/part1.pdf	cfbdd4524cfd2cb08913108719068eb594fe4ed46f679cd0fd184cfc5f394c29	35	1	35	19	53	printed page = sheet + 18; unnumbered article title at sheet 1	local_only_licensed_interlibrary_loan
+Hollifield1980	2	TC82304.pdf	docs/references/local/sc047-early-apocope/hollifield1980/part2.pdf	867939435039f6b02d09009ce98b59a4522b1cd056bee51f2120b498e3437c46	35	2	35	145	178	printed page = sheet + 143 for sheets 2–35; volume cover at sheet 1; unnumbered article title at sheet 2	local_only_licensed_interlibrary_loan

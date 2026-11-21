@@ -12,7 +12,9 @@ complete search aids are private under `local/sc047-early-apocope/`.
 Boutkan's image-only spreads have complete independent left/right OCR.
 Morphology's native vowel encoding requires original-image checking.
 The malformed first morphology download and empty extra Boutkan file
-were not installed. Hollifield1980 remains unacquired.
+were not installed. Both parts of `Hollifield1980` are registered in the
+[private intake receipt](sc047_early_apocope/hollifield1980.tsv); the loan scans
+and their OCR are local only.
 Acquisition does not revise the historical dossiers or claim consultation
 of every passage. Bibliographic identity belongs to `docs/refs.bib`.
 

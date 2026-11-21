@@ -12,6 +12,7 @@ newly acquiring an original does not retroactively certify an earlier citation.
 | `BallStiles1983` | Original *Anglia* 101 article, printed 5--28, 24 sheets | Complete native-layout extraction, including notes and references |
 | `Stiles2013` | Original *NOWELE* 66(1) article, printed 5--38, 34 sheets | Complete native-layout extraction, including notes and references |
 | `Versloot2019` | Original *NOWELE* 72(1) article, printed 78--98, 21 sheets | Complete native-layout extraction, including both appendices |
+| `Hollifield1980` | Both parts of *The Phonological Development of Final Syllables in Germanic*, *Die Sprache* 26 (1980), 19--53 and 145--178 | Private per-sheet OCR, including title sheets and the volume cover; use the original images for notation |
 
 Installed originals are byte-identical to the valid supplied files.
 `holdings.tsv` records their original filenames, exact SHA256 identities,
@@ -24,7 +25,8 @@ extra Boutkan download was also excluded, not treated as a second original.
 The valid morphology title and imprint identify Volume 2, not the
 previously held Volume 1 *Phonology*. The held Boutkan title/series pages,
 not the supplied filename's added subtitle or volume zero, own its identity.
-Hollifield1980 remains unacquired.
+The two licensed Hollifield originals have their own [part-level receipt and
+page map](hollifield1980.tsv), linked to the single bibliographic identity.
 
 ## Extraction, pagination and reading limits
 
