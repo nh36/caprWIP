@@ -1,5 +1,10 @@
 # SC047 comparative recommendation — retain production, keep open
 
+The later [primary-source review](primary-review.md) adds
+[manuscript collation of *peti*](peti.md), full [English cell and
+exclusion tables](english-cells.md), and the current decision. This
+report and its experiment files are retained as executed.
+
 **Provisionally prefer early loss of both endings for the comparative
 history, but retain the production order.** The important positive
 evidence is the Continental bed-type singleton **with** its high
