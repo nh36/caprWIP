@@ -3313,7 +3313,7 @@ Kroonen connects feminine *hecg* ‘hedge’ and OHG *heckia, heggia* with [hagj
 
 #### Old English evidence
 
-The charter evidence distinguishes masculine [of þām hege]{.ex} ‘from the hedge’ from feminine [in þā hegce]{.ex} ‘into the hedge’ [@KembleHardwick1858, vol. III, pp. 78 and 52]. The Supplement reassigns the doubled Bamborough spelling to the feminine; the spelling alone does not determine gender [@Toller1921, p. 528]. These are edition readings. The selected nominative is the normalized *heġġ* ‘hedge’, corresponding to lexicographic *hecg/heċġ* [@BosworthToller1898, s.v. *hege* and *hecg*; @ClarkHall1960].
+The charter evidence distinguishes masculine [of þām hege]{.ex} ‘from the hedge’ from feminine [in þā hegce]{.ex} ‘into the hedge’ (Kemble, *Codex Diplomaticus* III 78.21 and 52.25, cited by Bosworth–Toller). The Supplement reassigns the doubled Bamborough spelling to the feminine; the spelling alone does not determine gender [@Toller1921, p. 528]. These are edition readings. The selected nominative is the normalized *heġġ* ‘hedge’, corresponding to lexicographic *hecg/heċġ* [@BosworthToller1898, s.v. *hege* and *hecg*; @ClarkHall1960].
 
 #### Development to Old English
 
