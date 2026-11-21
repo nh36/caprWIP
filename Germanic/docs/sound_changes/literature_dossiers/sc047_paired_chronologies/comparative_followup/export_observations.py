@@ -48,9 +48,7 @@ def diagnostic_changes(result, plan):
                 previous[probe] = output
 
 
-def main():
-    snapshot = Path(sys.argv[1])
-    destination = Path(__file__).resolve().parent
+def read_capture(snapshot):
     raw = (snapshot / "results/observed.json").read_bytes()
     sha = lambda data: hashlib.sha256(data).hexdigest()
     completion_path = snapshot / "completion.json"
@@ -62,8 +60,43 @@ def main():
     result = json.loads(raw)
     command = completion["command_receipts"][0]
     assert command["ok"] and command["stdout_sha256"] == sha(raw)
-    plan_bytes = (snapshot / "snapshot/plan.json").read_bytes()
-    plan = json.loads(plan_bytes)
+    assert command["source_identity_sha256"] == completion["source_identity_sha256"]
+    pinned = {entry["snapshot_name"]: entry["sha256"] for entry in receipt["inputs"].values()}
+    for name, digest in pinned.items():
+        assert sha((snapshot / "snapshot" / name).read_bytes()) == digest, name
+    plan = json.loads((snapshot / "snapshot/plan.json").read_bytes())
+    assert all(pinned[name] == digest for name, digest in plan["helpers"].items())
+    assert result["source_sha256"] == pinned["source.txt"]
+    assert result["corpus_sha256"] == pinned["corpus.tsv"]
+    provenance = {
+        "snapshot": snapshot.name,
+        "capture_head": receipt["source_identity"]["head_commit"],
+        "capture_identity_sha256": completion["source_identity_sha256"],
+        "completed_at": completion["completed_at"],
+        "completion_receipt_sha256": sha(completion_path.read_bytes()),
+        "execution_start": command["started_at"],
+        "execution_finish": command["finished_at"],
+        "worktree_identity_changed_during_run": command["source_changed"],
+        "fst_sha256": result["source_sha256"],
+        "corpus_sha256": result["corpus_sha256"],
+        "worker_sha256": pinned["worker.py"],
+        "pinned_plan_sha256": pinned["plan.json"],
+        "pinned_inputs": pinned,
+        "raw_observations_sha256": sha(raw),
+        "cost": result["cost"],
+    }
+    return result, plan, raw, provenance
+
+
+def write_archive(path, raw, provenance):
+    frozen = gzip.compress(raw, mtime=0)
+    path.write_bytes(frozen)
+    provenance["frozen_observations_sha256"] = hashlib.sha256(frozen).hexdigest()
+
+
+def main():
+    destination = Path(__file__).resolve().parent
+    result, plan, raw, provenance = read_capture(Path(sys.argv[1]))
     comparison = destination.parent / "labial_review" / "observations.json.gz"
     archived = json.loads(gzip.decompress(comparison.read_bytes()))
     arms = list(result["corpus"])
@@ -117,26 +150,30 @@ def main():
         ["arm", "checkpoint", "probe", "input", "previous_checked_output", "output"],
         diagnostic_changes(result, plan),
     )
-    (destination / "observations.json.gz").write_bytes(gzip.compress(raw, mtime=0))
     provenance = {
         "production_reference": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
         "discussion_base": "489f7d424942cea22844925f599b95c120f4a079",
-        "snapshot": snapshot.name,
-        "capture_head": receipt["source_identity"]["head_commit"],
-        "capture_identity_sha256": completion["source_identity_sha256"],
-        "completed_at": completion["completed_at"],
-        "completion_receipt_sha256": sha(completion_path.read_bytes()),
-        "execution_start": command["started_at"],
-        "execution_finish": command["finished_at"],
-        "worktree_identity_changed_during_run": command["source_changed"],
-        "fst_sha256": result["source_sha256"],
-        "corpus_sha256": result["corpus_sha256"],
-        "worker_sha256": sha((snapshot / "snapshot/worker.py").read_bytes()),
-        "pinned_plan_sha256": sha(plan_bytes),
-        "raw_observations_sha256": sha(raw),
-        "frozen_observations_sha256": sha((destination / "observations.json.gz").read_bytes()),
-        "cost": result["cost"],
+        **provenance,
     }
+    write_archive(destination / "observations.json.gz", raw, provenance)
+    if len(sys.argv) > 2:
+        placement, _, placement_raw, placement_provenance = read_capture(Path(sys.argv[2]))
+        assert {name: digest for name, digest in placement_provenance["pinned_inputs"].items()
+                if name != "plan.json"} == {
+            name: digest for name, digest in provenance["pinned_inputs"].items()
+            if name != "plan.json"
+        }
+        for arm, summary in placement["corpus"].items():
+            assert summary == result["corpus"][arm], arm
+            assert placement["configurations"][arm] == result["configurations"][arm], arm
+            assert firings(placement, arm, "PWGmcEndinglessAw") == firings(
+                result, arm, "PWGmcEndinglessAw"
+            ), arm
+        assert placement["witness_row_ids"] == ["1944", "2224"]
+        write_archive(
+            destination / "placement-traces.json.gz", placement_raw, placement_provenance
+        )
+        provenance["placement_trace"] = placement_provenance
     (destination / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
     for arm, summary in result["corpus"].items():
         changes = [(row["concept"], cell(row["outputs"])) for row in summary["rows"]

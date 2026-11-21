@@ -149,6 +149,19 @@ def main():
             "Nonhomorganic vowels, two stressed vowels, and existing long vowels do not undergo FII.",
         ],
     }
+    if sys.argv[2:] == ["--placement-trace"]:
+        placement_arms = (
+            "B", "C_northern_order", "B_consumers_before_loss", "C_consumers_before_loss",
+        )
+        plan.update(
+            purpose="Localize the two unrelated terminal differences in early labial placement",
+            configurations={arm: arms[arm] for arm in placement_arms},
+            aliases={arm: plan["aliases"][arm] for arm in placement_arms},
+            trace_concepts=["believe", "straw"],
+            complete_traces=list(placement_arms),
+            census_stages=["PWGmcEndinglessAw"],
+            queries={},
+        )
     Path(sys.argv[1]).write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n")
 
 
