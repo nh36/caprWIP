@@ -64,6 +64,40 @@ def assert_deer_genpl_index_delta(rows):
     assert all(not row.get("variety") for row in rows)
 
 
+def assert_hedge_cell_index_delta(rows):
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == 4
+    assert {tuple(row[field] for field in fields) for row in rows} == {
+        (action, "pgmc", form, role, scope, "hedge — OE heġġ")
+        for action, form in (("add", "*xágjō"), ("remove", "*xágjaz"))
+        for role, scope in (("selected_input", "trace_proto_input"),
+                            ("source_protoform", "lexical_protoform"))
+    }
+    assert all(not row.get("variety") for row in rows)
+
+
+def assert_rest_cell_index_delta(rows):
+    model = "Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md"
+    heading = "rest — OE ræste"
+    expected = {
+        (action, "pgmc", form, role, scope, heading)
+        for action, form in (("add", "*rástǭ"), ("remove", "*rástōz"))
+        for role, scope in (("selected_input", "trace_proto_input"),
+                            ("source_protoform", "lexical_protoform"))
+    } | {
+        ("add", "pgmc", "rástǭ", "selected_input", "explicit_tag", model),
+        ("remove", "pgmc", "rástōz", "selected_input", "explicit_tag", model),
+        ("remove", "pgmc", "*rástōz", "selected_input", "explicit_tag", model),
+        ("remove", "pgmc", "*rastō", "source_protoform", "explicit_tag", model),
+        ("remove", "oe", "ræste", "regular_output", "explicit_tag", model),
+        ("remove", "oe", "rast", "comparison_form", "table_semantic_decision", model),
+    }
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == len(expected)
+    assert {tuple(row[field] for field in fields) for row in rows} == expected
+    assert all(not row.get("variety") for row in rows)
+
+
 def assert_final_nasal_index_delta(rows):
     model = "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
     expected = {
@@ -239,6 +273,12 @@ class EditorialPublicationTests(unittest.TestCase):
         # Presentation order is editorial; compare scientific columns by stable row ID.
         for before in old:
             now = unchanged[before["row_id"]]
+            if before["row_id"] == "2069":
+                self.assertEqual((before["proto"], before["protoform"]), ("*xágjaz", "*xágjaz"))
+                before = dict(before, proto="*xágjō", protoform="*xágjō")
+            if before["row_id"] == "2152":
+                self.assertEqual((before["protoform"], before["counterpart"]), ("*rástōz", "ræste"))
+                before = dict(before, protoform="*rástǭ")
             if before["row_id"] == "2162":
                 self.assertEqual((before["proto"], before["protoform"]), ("*rústō", "*rústō"))
                 before = dict(before, proto="*rústaz", protoform="*rústaz")

@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "8ebd6ea867424da7f9bb23cdc72d9a8a6dc4e7f1fbfb9e9a3bb3936f5a76e65d"
+    ACTIVE_SHA = "4bf54265a8b397cdd0b068ae94be6b9816291a9290bfe22c34ffeddb45e7b55b"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -124,7 +124,7 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual([m["row_id"] for m in migrations],
                          ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
                           "2302", "2011", "2201", "2282", "2053", "2335", "2208", "2006",
-                          "2141", "2016", "2141", "2016", "1988"])
+                          "2141", "2016", "2141", "2016", "1988", "2069", "2152"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -416,7 +416,9 @@ class LegacySubsetTests(unittest.TestCase):
         previous = mod.read_baseline(
             BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_deer_genpl.tsv",
             BASELINE_DIR / "cascade_baseline_summary_pre_sc047_deer_genpl.json")
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_hedge_rest_cells.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc047_hedge_rest_cells.json")
         approval = json.loads(
             (BASELINE_DIR / "approved_deer_genpl_migration.json").read_text())
         mod.validate_cell_transition(previous, current, approval)
@@ -429,6 +431,22 @@ class LegacySubsetTests(unittest.TestCase):
         assert (len(after), current["summary"]["matched"]) == (394, 386)
         assert {key for key, row in after.items() if row["match"] == "0"} == {
             key for key, row in before.items() if row["match"] == "0"}
+
+    def test_hedge_rest_migration_changes_only_the_selected_inputs(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_hedge_rest_cells.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc047_hedge_rest_cells.json")
+        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        approval = json.loads((BASELINE_DIR / "approved_hedge_rest_cells_migration.json").read_text())
+        mod.validate_cell_transition(previous, current, approval)
+        before = {row["row_id"]: row for row in previous["records"]}
+        after = {row["row_id"]: row for row in current["records"]}
+        self.assertEqual({key for key in before if before[key] != after[key]}, {"2069", "2152"})
+        self.assertEqual(after["2069"], dict(
+            before["2069"], proto="*xágjō", proto_norm="xágjō", fst_input="xágjō"))
+        self.assertEqual(after["2152"], dict(
+            before["2152"], proto="*rástǭ", proto_norm="rástǭ", fst_input="rástǭ"))
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy
@@ -503,7 +521,7 @@ class LegacySubsetTests(unittest.TestCase):
             [m for m in migrations if m["row_id"] not in {
                 "2224", "2162", "2283", "2095", "2313", "2314", "2302",
                 "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141", "2016",
-                "1988"}],
+                "1988", "2069", "2152"}],
         )), 387)
 
 

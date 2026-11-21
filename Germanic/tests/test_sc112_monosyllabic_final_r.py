@@ -150,6 +150,8 @@ class Sc112Tests(unittest.TestCase):
                     "2006": ("*féx", "feoh"),
                     "2011": ("*fúnðanai", "fundne"),
                     "2053": ("*xámaraz", "hamer"),
+                    "2069": ("*xágjō", "heġġ"),
+                    "2152": ("*rástǭ", "ræste"),
                     "2201": ("*sáiwalǭ", "sāwle"),
                     "2208": ("*spénnilǭ", "spinle"),
                     "2282": ("*wéstą", "west"),

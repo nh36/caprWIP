@@ -547,3 +547,27 @@ relative to gemination for Old English. Record the competing
 falsifiers and representation gaps rather than changing more scored
 cells. The deer transition remains the only baseline change, in its
 own preceding commit.
+
+## Combined proposal: hedge and rest (21 November 2026)
+
+Correct row 2069 from masculine `*xágjaz` to feminine `*xágjō`, retaining
+the normalized target *heġġ* and the `regular` classification. The old
+and new canonical derivations both give *heġġ*, but only the feminine
+formation agrees with the target evidence. See Kroonen (2013:198), Orel
+(2003:150), Kemble III 52.25 and 78.21, and the Bosworth–Toller Supplement
+(p. 528). The masculine *hege/heges* obliques remain unexplained by
+regular gemination in inherited `*-jai/-jas`; nominative levelling and
+reclassification are distinct possibilities, not established events.
+
+Correct row 2152 separately, from genitive `*rástōz` to accusative `*rástǭ`,
+retaining *ræste* and comparative `*rastō*. Morris 101.26 attests the
+accusative as the direct object of *geearnige*; the proposed genitive is less
+secure. The retained `late_analogy` classification addresses possible transfer
+to nominative *ræst*, not the regular derivation of the selected accusative.
+The genitive remains a long-vowel diagnostic and `*rástōi` remains unadmitted.
+
+The combined migration on the review branch preserves the outputs and
+mismatch identities of all 394 rows and archives its common parent baseline.
+Neither correction changes a rule or rewrites the frozen historical A/B
+selection. No additional compiler call, corpus sweep, rebuilt fixture,
+or runtime-concurrency change is added to routine validation.

@@ -2,11 +2,11 @@
   "accepted": 394,
   "ambiguous_outputs": 0,
   "legacy_subset_count": 380,
-  "legacy_subset_sha256": "8ebd6ea867424da7f9bb23cdc72d9a8a6dc4e7f1fbfb9e9a3bb3936f5a76e65d",
-  "lexical_outputs_sha256": "81ec961d262a2f3622c5d81108592de245addf477c11f9906e81b80cc61fd095",
+  "legacy_subset_sha256": "4bf54265a8b397cdd0b068ae94be6b9816291a9290bfe22c34ffeddb45e7b55b",
+  "lexical_outputs_sha256": "0f8cb77b203010980bb7d61f30e1422bd647d2b862292f24fcde3361b0ed9bf4",
   "matched": 386,
   "mismatched": 8,
-  "outputs_sha256": "8405a0661e893ba512b032dcd427c7f812c5688fa09cba1b271fe42afdd1c900",
+  "outputs_sha256": "80eeffbdd7d22a1814289ba9b0189aa639bd5aa92f6c4e60b908615b2d656aa4",
   "rejected": 0,
   "total_lexemes": 394
 }

@@ -1,29 +1,29 @@
 # Index verborum audit
 
-- Internal production occurrences: 2565
+- Internal production occurrences: 2555
 - Internal production unique forms: 1235
-- Printed main-index occurrences: 2473
+- Printed main-index occurrences: 2464
 - Printed main-index unique forms: 1225
-- Print-excluded occurrences: 92
-- Print-excluded unique forms: 69
-- Print exclusions (regular_output_default_exclusion): 92
+- Print-excluded occurrences: 91
+- Print-excluded unique forms: 68
+- Print exclusions (regular_output_default_exclusion): 91
 - Print exclusions (reader_facing_pedagogical_example): 0
 - Print exclusions (deferred_by_print_decision): 0
 - Print exclusions (excluded_by_print_decision): 0
-- Internal-only rows (regular_output_default_exclusion): 92
+- Internal-only rows (regular_output_default_exclusion): 91
 - Internal-only rows (reader_facing_pedagogical_example): 0
 - Internal-only rows (deferred_by_print_decision): 0
 - Internal-only rows (excluded_by_print_decision): 0
 - Pre-OE review rows: 32
 - Reader-facing example candidate rows: 1665
-- Reader-facing rows include_in_example_index=yes: 587
-- Reader-facing rows include_in_example_index=no: 1078
+- Reader-facing rows include_in_example_index=yes: 583
+- Reader-facing rows include_in_example_index=no: 1082
 - Audit-only candidates needing review: 0
 - True remaining unresolved: 0
 - Table-scanned unresolved candidates: 0
-- Already indexed in same entry: 443
-- Broad-prose notation / compound expressions: 526
-- Broad-prose evidence suggestions: 318
+- Already indexed in same entry: 434
+- Broad-prose notation / compound expressions: 527
+- Broad-prose evidence suggestions: 320
 - Curated broad-prose deferred: 24
 - Curated broad-prose ignored: 7
 - Reader-facing examples quarantined (separate example index policy): 1607
@@ -35,9 +35,9 @@
 - Table semantic ignored: 3
 - Table semantic notation / compound expressions: 15
 - Already indexed nearby: 0
-- Ignored fragments or sequences: 503
-- Possible extraction garbage: 15
-- Excluded intermediate trace forms: 1410
+- Ignored fragments or sequences: 502
+- Possible extraction garbage: 16
+- Excluded intermediate trace forms: 1409
 - New unresolved candidates relative to baseline: 0
 - Baseline candidates now resolved or ignored: 0
 
@@ -45,8 +45,8 @@
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1365 | 543 |
-| Proto-Germanic | 1033 | 575 |
+| Old English | 1357 | 542 |
+| Proto-Germanic | 1031 | 576 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -180,19 +180,19 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 415 |
-| source_protoform | 394 |
-| selected_input | 564 |
-| comparison_form | 873 |
-| regular_output | 92 |
+| target_form | 413 |
+| source_protoform | 393 |
+| selected_input | 563 |
+| comparison_form | 868 |
+| regular_output | 91 |
 | evidence_form | 227 |
 
 ## Printed main-index forms by language
 
 | Language | Occurrences | Unique forms |
 | --- | ---: | ---: |
-| Old English | 1273 | 533 |
-| Proto-Germanic | 1033 | 575 |
+| Old English | 1266 | 532 |
+| Proto-Germanic | 1031 | 576 |
 | Proto-Northwest Germanic | 2 | 1 |
 | Proto-West Germanic | 14 | 6 |
 | Northern West Germanic | 8 | 4 |
@@ -212,17 +212,17 @@
 
 | Role | Occurrences |
 | --- | ---: |
-| target_form | 415 |
-| source_protoform | 394 |
-| selected_input | 564 |
-| comparison_form | 873 |
+| target_form | 413 |
+| source_protoform | 393 |
+| selected_input | 563 |
+| comparison_form | 868 |
 | evidence_form | 227 |
 
 ## Internal-only rows by reason
 
 | Reason | Occurrences |
 | --- | ---: |
-| regular_output_default_exclusion | 92 |
+| regular_output_default_exclusion | 91 |
 
 ## Already indexed in same entry
 
@@ -342,9 +342,7 @@
 | `hǣr` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | ### Form note | same form already indexed in this entry |
 | `hefnes` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:107 | ### E. Deep oblique controls | same form already indexed in this entry |
 | `hefnum` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:107 | ### E. Deep oblique controls | same form already indexed in this entry |
-| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 | ### Development to Old English | same form already indexed in this entry |
-| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:40 | ### Form note | same form already indexed in this entry |
+| `heġġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:38 | ### Form note | same form already indexed in this entry |
 | `heofnes` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:106 | ### E. Deep oblique controls | same form already indexed in this entry |
 | `heofnum` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:106 | ### E. Deep oblique controls | same form already indexed in this entry |
 | `heofon` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:105 | ### E. Deep oblique controls | same form already indexed in this entry |
@@ -472,13 +470,6 @@
 | `*núsō` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:27 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
 | `*núsō` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:45 | ### Development to Old English | same form already indexed in this entry |
 | `*núsō` | Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:46 | ### Development to Old English | same form already indexed in this entry |
-| `ræst` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:49 | ### Development to Old English | same form already indexed in this entry |
-| `ræste` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:24 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `ræste` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:28 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `ræste` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:46 | ### Development to Old English | same form already indexed in this entry |
-| `ræste` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:49 | ### Development to Old English | same form already indexed in this entry |
-| `rast` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:29 | ### Reconstruction and comparative evidence | same form already indexed in this entry |
-| `rast` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:48 | ### Development to Old English | same form already indexed in this entry |
 | `*régna-bùgô` | Germanic/docs/lexeme_reports/model_entries/2148-rainbow-reġnboga.model.md:31 | ### Reconstruction and compound formation | same form already indexed in this entry |
 | `rocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:25 | ### Old English evidence | same form already indexed in this entry |
 | `rocc` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:29 | ### Development to Old English | same form already indexed in this entry |
@@ -650,7 +641,7 @@
 | `wulf` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:54 | ### Development to Old English | same form already indexed in this entry |
 | `*wúlfaz` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:49 | ### Development to Old English | same form already indexed in this entry |
 | `*wúllō` | Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:20 | ### The inherited paradigm | same form already indexed in this entry |
-| `*xágjaz` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 | ### Development to Old English | same form already indexed in this entry |
+| `*xágjō` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 | ### Development to Old English | same form already indexed in this entry |
 | `*xáldaną` | Germanic/docs/lexeme_reports/model_entries/2077-hold-healdan.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `*xárbistuz` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:29 | ### Development to Old English | same form already indexed in this entry |
 | `*xáwwaną` | Germanic/docs/lexeme_reports/model_entries/2074-hew-hēawan.model.md:10 | ### Reconstruction and development | same form already indexed in this entry |
@@ -783,10 +774,10 @@
 | `*dura-` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21 | notation or compound expression |
 | `*dúrą > dor` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:29 | notation or compound expression |
 | `*durō-` | Germanic/docs/lexeme_reports/model_entries/1992-door-dor.model.md:21 | notation or compound expression |
+| `*-ē` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27 | notation or compound expression |
 | `-e` | Germanic/docs/lexeme_reports/model_entries/1933-adder-nǣdre.model.md:58 | notation or compound expression |
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:58 | notation or compound expression |
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:71 | notation or compound expression |
-| `-e` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:46 | notation or compound expression |
 | `-e` | Germanic/docs/lexeme_reports/model_entries/2205-spare-sparian.model.md:46 | notation or compound expression |
 | `-e-` | Germanic/docs/lexeme_reports/model_entries/2310-make-(3sg)-macaþ.model.md:39 | notation or compound expression |
 | `-e-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:35 | notation or compound expression |
@@ -848,7 +839,6 @@
 | `(ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:21 | notation or compound expression |
 | `(ge-)byrd` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:25 | notation or compound expression |
 | `*gefti-` | Germanic/docs/lexeme_reports/model_entries/2040-gift-ġift.model.md:57 | notation or compound expression |
-| `-gj-` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | notation or compound expression |
 | `*góldą` | Germanic/docs/lexeme_reports/model_entries/2043-gold-gold.model.md:33 | intermediate or model-stage form in development chain |
 | `gong (gang), m., path, course` | Germanic/docs/lexeme_reports/model_entries/2038-gang-gang.model.md:25 | notation or compound expression |
 | `*gōs` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:56 | intermediate or model-stage form in development chain |
@@ -858,6 +848,7 @@
 | `*guman-` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:270 | notation or compound expression |
 | `haddr / heordan / hād-` | Germanic/docs/lexeme_reports/model_entries/2051-hair-hǣr.model.md:33 | notation or compound expression |
 | `hæf-` | Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:36 | notation or compound expression |
+| `*hagjō-` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | notation or compound expression |
 | `*hamara-` | Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:24 | notation or compound expression |
 | `*harbist-` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:21 | notation or compound expression |
 | `*hauwja-` | Germanic/docs/lexeme_reports/model_entries/2227-strew-strīeġan.model.md:30 | notation or compound expression |
@@ -1030,6 +1021,7 @@
 | `-o-` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:39 | notation or compound expression |
 | `-o-` | Germanic/docs/lexeme_reports/model_entries/2030-fowl-fugol.model.md:68 | notation or compound expression |
 | `-o-` | Germanic/docs/lexeme_reports/model_entries/2312-bore-(3sg)-boraþ.model.md:35 | notation or compound expression |
+| `*-ōi` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27 | notation or compound expression |
 | `*-ōjan-` | Germanic/docs/lexeme_reports/model_entries/2232-sunder-sundrian.model.md:31 | notation or compound expression |
 | `*-ōⁿ` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:100 | notation or compound expression |
 | `*-ōn > *-ān` | Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md:174 | notation or compound expression |
@@ -1040,8 +1032,8 @@
 | `*-r` | Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:33 | notation or compound expression |
 | `-r` | Germanic/docs/lexeme_reports/model_entries/1955-book-bōc.model.md:46 | notation or compound expression |
 | `-r-` | Germanic/docs/lexeme_reports/model_entries/1975-calf-ċealf.model.md:25 | notation or compound expression |
-| `ræst-` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:50 | notation or compound expression |
-| `*rastō` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:48 | intermediate or model-stage form in development chain |
+| `*rast` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:29 | intermediate or model-stage form in development chain |
+| `*rastō` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:29 | intermediate or model-stage form in development chain |
 | `r + C` | Germanic/docs/lexeme_reports/model_entries/2270-warp-weorpan.model.md:29 | notation or compound expression |
 | `rC` | Germanic/docs/lexeme_reports/model_entries/2008-fern-fearn.model.md:29 | phonological environment notation |
 | `r + consonant` | Germanic/docs/lexeme_reports/model_entries/2198-smear-smierwan.model.md:29 | notation or compound expression |
@@ -1266,11 +1258,11 @@
 | `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hærfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `*hēawan` | Germanic/docs/lexeme_reports/model_entries/2074-hew-hēawan.model.md:10 | oe | source_protoform | citation or reconstructed source form in prose |
-| `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
-| `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:40 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `hecg` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `heċġ` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:38 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*heckia` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | ohg | source_protoform | citation or reconstructed source form in prose |
 | `hefn` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:127 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*heggr` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 | on | source_protoform | citation or reconstructed source form in prose |
 | `herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:25 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `herfest` | Germanic/docs/lexeme_reports/model_entries/2057-harvest-hierfest.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `hindan` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:33 | oe | comparison_form | attested comparison or dictionary form described in prose |
@@ -1358,6 +1350,7 @@
 | `*ph₂-uōr` | Germanic/docs/lexeme_reports/model_entries/2013-fire-fȳre.model.md:34 |  | comparison_form | comparative or background source form in prose |
 | `plural` | Germanic/docs/lexeme_reports/model_entries/2337-little-lȳtelu.model.md:54 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `pret` | Germanic/docs/lexeme_reports/model_entries/2330-thought-þōhte.model.md:50 | oe | comparison_form | attested comparison or dictionary form described in prose |
+| `*rástōz` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27 | pgmc | source_protoform | source form in development prose |
 | `*rukkaz` | Germanic/docs/lexeme_reports/model_entries/2155-coat-rocc.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `*rustaz` | Germanic/docs/lexeme_reports/model_entries/2162-rust-rust.model.md:27 |  | source_protoform | citation or reconstructed source form in prose |
@@ -1518,6 +1511,7 @@
 | `*wulfaz` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:22 | pgmc | source_protoform | citation or reconstructed source form in prose |
 | `wulle` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:28 | oe | comparison_form | attested comparison or dictionary form described in prose |
 | `wylfe` | Germanic/docs/lexeme_reports/model_entries/2298-wolf-wulf.model.md:54 | oe | comparison_form | attested Old English comparison form in development prose |
+| `*xaǥjaz` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 |  | source_protoform | citation or reconstructed source form in prose |
 | `*xamaraz` | Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:24 |  | source_protoform | citation or reconstructed source form in prose |
 | `*xáwją` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:174 |  | source_protoform | source form in development prose |
 | `*xawwanan` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:35 |  | source_protoform | citation or reconstructed source form in prose |
@@ -1620,6 +1614,7 @@
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4328 | ### SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss} | This is a narrower proxy than the historical change. It deletes an unaccented, short, oral final \emph{*a}; it does not delete nasal \emph{*ą}, long \emph{*ā},  |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4408 | ### Historical discussion | The development has independent comparative support, not merely a successful derivation of one Old English word. Ringe and Taylor explicitly reconstruct survivi |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4412 | ### Historical discussion | The quantity analysis is not uniform across handbooks. Hogg discusses nasal-associated low-vowel outcomes and the survival and shortening of long vowels, but in |
+| `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4440 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | In the selected accusative, unrounding turns final nasal \emph{*ǭ} into \emph{*ā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-v |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4442 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | For *mære* 'nightmare', the final nasal vowel becomes \emph{*ā} here, |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:445 | ### Historical discussion | Proto-Germanic \emph{*ē₁} (the long mid vowel of PIE origin, as against the later \emph{*ē₂}) split East Germanic from the rest of the family. Gothic keeps a mi |
 | `*ā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:447 | ### Historical discussion | The change affected stressed syllables only. Ringe and Taylor restrict it explicitly: unstressed \emph{*ē} did not lower but was eventually shortened, as in \em |
@@ -2601,10 +2596,12 @@
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2032 | ## Weak paradigms after early apocope {#weak-n-paradigms-after-apocope} | noun ending [@StauslandJohnsen2015, p. 36]. Retention of \emph{*ō} |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2037 | ## Weak paradigms after early apocope {#weak-n-paradigms-after-apocope} | Earlier experiments distinguished other possible mechanisms. If inherited \emph{*ō} |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2365 | ### Historical discussion | At the boundary with Chapter 2's Northwest Germanic sequence, the derivation of *ræste* 'rest' shows that final \emph{*ō}-raising ([SC019 PNWGmcFinalLongORaisin |
-| `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2385 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising). The distant boundary at [SC04 |
+| `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2381 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The early boundary for word-final \emph{*z}-loss follows from the distinct histories of inherited final oral \emph{*ō} and the oral vowel protected by \emph{*z} |
+| `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2385 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The genitive [rástōz]{.recon} 'of rest' illustrates the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), not the provenance of  |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:312 | ## Major changes | labels — final bare-`*a` loss (SC041), surviving bimoric `*ō` unrounding |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:3430 | ## Executable serialization and unresolved interfaces | * SC041 (PWGmc Final Bare-`*a` Loss) and SC042 (Surviving Bimoric `*ō` |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4408 | ### Historical discussion | The development has independent comparative support, not merely a successful derivation of one Old English word. Ringe and Taylor explicitly reconstruct survivi |
+| `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4440 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | In the selected accusative, unrounding turns final nasal \emph{*ǭ} into \emph{*ā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-v |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:523 | ### Historical discussion | Ringe and Taylor separate two points here: a broader shortening of vowels before word-final \emph{*r} in unstressed syllables (for which kinship \emph{*r}-stems |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:525 | ### Historical discussion | The rule is historically secure but narrow: final or pre-final \emph{*ō} before word-final \emph{*r}. The clearest evidence remains concentrated in the `four` a |
 | `*ō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:526 | ### Historical discussion | No broader environment for \emph{*ō} is attested. |
@@ -2616,6 +2613,7 @@
 | `*ǭ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1473 | ### Historical discussion | conditioning class includes nasalized long \emph{*ǭ}, not just oral |
 | `*ǭ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1604 | ### Historical discussion | Germanic. The qualification matters: oral \emph{*ō}, nasalized \emph{*ǭ} |
 | `*ǭ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1752 | #### Final consonants and later ending reduction | Nasal \emph{*ǭ} does not raise here. Its later reduction yields the |
+| `*ǭ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4440 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | In the selected accusative, unrounding turns final nasal \emph{*ǭ} into \emph{*ā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-v |
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1484 | #### The second root of rainbow | Its short \emph{o} continues inherited \emph{u} lowered before a |
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1512 | #### The second root of rainbow | consequence is chronological: *rainbow* already has \emph{o} before |
 | `o` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1556 | ### \CAPRRuleHeading{SC017. Lowering of \emph{*u} before following non-high vowels}{PNWGmcULowering} {#rule-PNWGmcULowering} | ([SC016 OEWsPalatalGlide](#rule-OEWsPalatalGlide)): the \emph{o} that the |
@@ -2682,17 +2680,13 @@
 | `r` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4887 | #### The early Anglian alternative | to whether there was a covered-\emph{r} environment at all |
 | `r` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:7042 | ### SC066. Later light-syllable pre-\emph{*l} syncope (`OELAdjacentSyncope`) {#rule-OELAdjacentSyncope} | a group of consonant plus \emph{l} or \emph{r} would result [@Campbell1959, |
 | `r` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:8106 | ### Historical discussion | treats the regressive movement of \emph{r} back across an accented short |
-| `*ræstǣ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4440 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fro |
+| `*ræstǣ` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4440 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | In the selected accusative, unrounding turns final nasal \emph{*ǭ} into \emph{*ā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-v |
 | `*ræste` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected OE *ræste* 'rest |
 | `*rast` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1749 | #### Final consonants and later ending reduction | and gives \emph{*rast} instead. This relation is retained separately; |
-| `*rástā` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4440 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fro |
-| `*rástō` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4440 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fro |
 | `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1743 | #### Final consonants and later ending reduction | In \emph{*rástōz} 'rest', \emph{*z} protects oral \emph{*ō} from this |
-| `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223 | ### Word-final `*z` deletion (SC020) and the three final-`*z` developments | seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'rest |
-| `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2377 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The rule deletes word-final \emph{*z} in unstressed syllables, stated through two environments. The first clause covers polysyllables, where the final syllable  |
+| `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223 | ### Word-final `*z` deletion (SC020) and the three final-`*z` developments | seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz} 'of rest' |
 | `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred} rather than expected OE *ræste* 'rest |
-| `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2385 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising). The distant boundary at [SC04 |
-| `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4433 | ### \CAPRRuleHeading{SC042. Unrounding of the surviving bimoric \emph{*ō}}{PWGmcSurvivingBimoricOUnrounding} {#rule-PWGmcSurvivingBimoricOUnrounding} | ending in *ræste* 'rest', from selected genitive \emph{*rástōz}, and |
+| `*rástōz` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2385 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The genitive [rástōz]{.recon} 'of rest' illustrates the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), not the provenance of  |
 | `rC` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4855 | #### The early Anglian alternative | Versloot's late Anglian \emph{rC} analysis makes a different prediction |
 | `rC` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:4883 | #### The early Anglian alternative | from unrestricted breaking before every \emph{rC}: *uuerci* 'works', |
 | `reconstruction` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2414 | ### \CAPRRuleHeading{SC098. Early apocope in unstressed words}{PWGmcUnstressedWordFinalIApocope} {#rule-PWGmcUnstressedWordFinalIApocope} | selected context. They do not alter the PGmc reconstruction, the selected |
@@ -3147,8 +3141,8 @@
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2377 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The rule deletes word-final \emph{*z} in unstressed syllables, stated through two environments. The first clause covers polysyllables, where the final syllable  |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2379 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The polysyllabic environment counts trimoric vowels as nuclei as well as bimoric vowels. Ringe and Taylor's contrast between the trimoric nominative plural endi |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:238 | ## Major changes | the earliest of the three historically distinct final-`*z` developments; the |
-| `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2381 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late  |
-| `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2385 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising). The distant boundary at [SC04 |
+| `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2381 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The early boundary for word-final \emph{*z}-loss follows from the distinct histories of inherited final oral \emph{*ō} and the oral vowel protected by \emph{*z} |
+| `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2385 | ### SC020. West Germanic final \emph{*z}-deletion (`EAFFinalZDeletion`) {#rule-EAFFinalZDeletion} | The genitive [rástōz]{.recon} 'of rest' illustrates the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), not the provenance of  |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2395 | ### Historical discussion | The diagnostic witness is the second-person plural pronoun. Ringe and Taylor print the Proto-West Germanic form as a doublet: PGmc \emph{*izwiz} (Gothic \emph{i |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:243 | ## Major changes | retention of final \emph{*z} appear as rules 404a--e |
 | `*z` | Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2458 | ### Historical discussion | Long after the Proto-West Germanic loss of final \emph{*z} in unstressed syllables ([SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion)), the northern West Germa |
@@ -3538,6 +3532,7 @@ _None._
 | `*ǵʰān` | Germanic/docs/lexeme_reports/model_entries/2044-goose-gōs.model.md:29 |
 | `*gj` | Germanic/docs/lexeme_reports/model_entries/1961-bow-bīeġan.model.md:29 |
 | `h` | Germanic/docs/lexeme_reports/model_entries/2018-flea-flēah.model.md:59 |
+| `*hege` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21 |
 | `*hiwi` | Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:61 |
 | `*hwēr` | Germanic/docs/lexeme_reports/model_entries/2334-where-hwǣr.model.md:35 |
 | `*i` | Germanic/docs/lexeme_reports/model_entries/1980-cow-cȳ.model.md:29 |
@@ -3594,7 +3589,6 @@ _None._
 | `*j` | Germanic/docs/lexeme_reports/model_entries/2248-think-þenċan.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2004-fast-festan.model.md:45 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2027-follow-fylġan.model.md:55 |
-| `j` | Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:34 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2075-hind-hind.model.md:29 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2092-laugh-hliehhan.model.md:51 |
 | `j` | Germanic/docs/lexeme_reports/model_entries/2093-lead-lǣdan.model.md:29 |
@@ -3817,7 +3811,6 @@ _None._
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2095-learn-liornian.model.md:81 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2113-louse-lūs.model.md:57 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2124-meed-meorde.model.md:67 |
-| `*z` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:43 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2183-shoulder-sċuldrum.model.md:39 |
 | `*z` | Germanic/docs/lexeme_reports/model_entries/2313-learn-(iptv.2sg)-liorna.model.md:40 |
 | `z` | Germanic/docs/lexeme_reports/model_entries/1951-birth-byrd.model.md:33 |
@@ -3909,6 +3902,7 @@ _None._
 | `known_unmodelled` | Germanic/docs/lexeme_reports/model_entries/2216-stem-stefn.model.md:99 |
 | `late_analogy` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:136 |
 | `late_analogy` | Germanic/docs/lexeme_reports/model_entries/2068-heaven-heofon.model.md:144 |
+| `late_analogy` | Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:29 |
 | `late_analogy` | Germanic/docs/lexeme_reports/model_entries/2317-show-(iptv.2sg)-sċēawa.model.md:36 |
 | `ⁿ` | Germanic/docs/lexeme_reports/model_entries/2336-earthly-eorþcunde.model.md:103 |
 

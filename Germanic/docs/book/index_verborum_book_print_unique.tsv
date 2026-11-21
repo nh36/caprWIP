@@ -365,9 +365,8 @@ oe	nīetenu	nietenu			2	target_form	explicit_tag; lexical_heading	Germanic/docs/
 oe	niht	niht			5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:21; Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:32; Germanic/docs/lexeme_reports/model_entries/2140-night-niht.model.md:34
 oe	nosu	nosu			2	target_form	lexical_heading; table_semantic_auto	Germanic/docs/lexeme_reports/model_entries/2143-nose-nosu.model.md:70; nose — OE nosu
 oe	nytenu	nytenu			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2338-livestock-nīetenu.model.md:26
-oe	ræst	raest			5	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:33; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34
-oe	ræste	raeste			4	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:37; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60
-oe	rast	rast			1	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59
+oe	ræst	raest			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21
+oe	ræste	raeste			2	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27; rest — OE ræste
 oe	*rēac	reac			5	target_form	explicit_tag; lexical_heading	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:28; Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:35; Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:40
 oe	rēac	reac			1	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:31
 oe	rēc	rec			6	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:22; Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:28; Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:30
@@ -834,9 +833,10 @@ pgmc	*nḗdrōn	nedron			3	selected_input; source_protoform	explicit_tag; lexica
 pgmc	*nḗθlō	nethlo			3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:24; Germanic/docs/lexeme_reports/model_entries/2136-needle-nǣdl.model.md:57; needle — OE nǣdl
 pgmc	*nístą	nista			3	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2137-nest-nest.model.md:34; nest — OE nest
 pgmc	*núsō	nuso			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	nose — OE nosu
-pgmc	*rastō	rasto			2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59; rest — OE ræste
+pgmc	*rastō	rasto			1	source_protoform	lexical_proto	rest — OE ræste
 pgmc	*rastō-	rasto			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21
-pgmc	*rástōz	rastoz			5	evidence_form; selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22; Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223
+pgmc	*rástǭ	rasto			3	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21; rest — OE ræste
+pgmc	*rástōz	rastoz			1	evidence_form	explicit_tag	Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223
 pgmc	*ráukaz	raukaz			4	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:23; Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:40; reek — OE *rēac
 pgmc	*rauki-	rauki			1	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:21
 pgmc	*ráukiz	raukiz			2	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2151-reek-rēac.model.md:21; reek — OE *rēac
@@ -966,7 +966,7 @@ pgmc	*wúllō	wullo			2	selected_input; source_protoform	lexical_protoform; trac
 pgmc	*wúllǭ	wullǭ			1	comparison_form	override	Germanic/docs/lexeme_reports/model_entries/2300-wool-wull.model.md:21
 pgmc	*xabēną	xabena			3	source_protoform	explicit_tag; lexical_proto	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:22; Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:61; have — OE hæfeþ
 pgmc	*xábēθi	xabethi			5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:28; Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:45; Germanic/docs/lexeme_reports/model_entries/2058-have-hæfeþ.model.md:62
-pgmc	*xágjaz	xagjaz			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	hedge — OE heġġ
+pgmc	*xágjō	xagjo			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	hedge — OE heġġ
 pgmc	*xáldaną	xaldana			2	selected_input; source_protoform	lexical_protoform; trace_proto_input	hold — OE healdan
 pgmc	*xámaras	xamaras			2	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:69; Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:81
 pgmc	*xámaraz	xamaraz			5	selected_input; source_protoform	explicit_tag; lexical_protoform; trace_proto_input	Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:22; Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:60; Germanic/docs/lexeme_reports/model_entries/2053-hammer-hameres.model.md:80

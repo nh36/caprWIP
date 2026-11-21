@@ -2302,8 +2302,8 @@ placement follows the adopted executable sequence.
 The loss of word-final `*z` is not one process but three historically
 distinct developments, and this chapter contains two of them. The central
 one, SC020, is the Proto-West Germanic loss of `*z` in unstressed syllables,
-seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223:1"} 'rest
-(nom.sg.)' and stated for the whole branch by Ringe and Taylor
+seen in forms such as [rástōz]{.recon .iv lang=pgmc sort=rastoz source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2223:1"} 'of rest'
+and stated for the whole branch by Ringe and Taylor
 [@RingeTaylor2014, pp. 44--45]; Crist's analysis distinguishes it both from
 the earlier NWGmc changes and from the later narrower Ingvaeonic deletion
 rules [@Crist2002, pp. 1, 4]. Earlier still, the consonant-stem root nouns
@@ -2456,15 +2456,15 @@ define EAFFinalZDeletion Ctx([
 ]);
 ```
 
-The rule deletes word-final \emph{*z} in unstressed syllables, stated through two environments. The first clause covers polysyllables, where the final syllable of these corpus forms is unstressed: this is the ordinary case, with 110 corpus derivations, such as PGmc [bárdaz]{.recon} 'beard' on its way to OE *beard* 'beard' and [rástōz]{.recon} 'rest' on its way to *ræste* 'rest'. The second clause covers post-consonantal \emph{*z} in monosyllables. By the time this rule runs, [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss) has already removed the genuine root-noun nominative endings, so the only form reaching the second clause is [fríjōndz]{.recon} 'friend', contracted to monosyllabic \emph{*fríundz} by [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction); its ending, like that of \emph{*fadurz}, stood in an unstressed syllable when the Proto-West Germanic change applied and so belongs here rather than to the root-noun development [@RingeTaylor2014, pp. 44--45, §3.1.1]. Stressed monosyllables ending in vowel plus \emph{*z} meet neither clause and are left for [SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss).
+The rule deletes word-final \emph{*z} in unstressed syllables, stated through two environments. The first clause covers polysyllables, where the final syllable of these corpus forms is unstressed: this is the ordinary case, as in PGmc [bárdaz]{.recon} 'beard' on its way to OE *beard* 'beard'. The second clause covers post-consonantal \emph{*z} in monosyllables. By the time this rule runs, [SC096 RootNounNomZLoss](#rule-RootNounNomZLoss) has already removed the genuine root-noun nominative endings, so the only form reaching the second clause is [fríjōndz]{.recon} 'friend', contracted to monosyllabic \emph{*fríundz} by [SC009 PWGmcIjContraction](#rule-PWGmcIjContraction); its ending, like that of \emph{*fadurz}, stood in an unstressed syllable when the Proto-West Germanic change applied and so belongs here rather than to the root-noun development [@RingeTaylor2014, pp. 44--45, §3.1.1]. Stressed monosyllables ending in vowel plus \emph{*z} meet neither clause and are left for [SC097 MonosyllabicFinalZLoss](#rule-MonosyllabicFinalZLoss).
 
 The polysyllabic environment counts trimoric vowels as nuclei as well as bimoric vowels. Ringe and Taylor's contrast between the trimoric nominative plural ending in \emph{*gebō̄z} and the bimoric genitive singular ending in \emph{*gebōz} requires loss of \emph{*z} in both, without merging their quantities: the former leads to OE *ġiefa* 'gifts', the latter to *ġiefe* 'of a gift' [@RingeTaylor2014, p. 59]. The extra trimoric symbol in the first environment represents this quantity distinction; it does not extend the rule to stressed monosyllables.
 
-The chronology of word-final \emph{*z}-loss is unusually well delimited: *ræste* 'rest' supplies its early boundary, while later weak syllables supply its late boundary.
+The early boundary for word-final \emph{*z}-loss follows from the distinct histories of inherited final oral \emph{*ō} and the oral vowel protected by \emph{*z}; later weak syllables supply a separate late boundary [@RingeTaylor2014, §§2.1.1, 3.1.1]. The genitive of ‘rest’ remains a diagnostic; the selected accusative contains no \emph{*z}.
 
 Before [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), PGmc [rástōz]{.recon} 'rest' yields [*rast*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383:1"} rather than expected OE *ræste* 'rest'. After [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering), PGmc [bébruz]{.recon} 'beaver' yields [*befro*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383:2"} rather than expected *befer* 'beaver', PGmc [kwéðuz]{.recon} 'cud' yields [*cwedo*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383:3"} rather than expected *cwedu* 'cud', and PGmc [félθuz]{.recon} 'field' yields [*feldo*]{.pred source_ref="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383" occ_id="Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:2383:4"} rather than expected *feld* 'field', alongside eight other newly failing rows. Final \emph{z}-loss therefore follows [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising) and precedes [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering).
 
-The [rástōz]{.recon} 'rest' derivation fixes the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising). The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
+The genitive [rástōz]{.recon} 'of rest' illustrates the local relation to [SC019 PNWGmcFinalLongORaising](#rule-PNWGmcFinalLongORaising), not the provenance of the selected accusative. The distant boundary at [SC040 OEMedUnstressedULowering](#rule-OEMedUnstressedULowering) shows only that word-final \emph{*z}-loss precedes the later weak-syllable sequence; its placement within that wider interval follows the handbook chronology after final \emph{*ō}-raising.
 
 ## Early apocope in unstressed words
 
@@ -4511,15 +4511,15 @@ vowel preserves nasalized roots and the separate trimoric quantity.
 Before-final-\emph{*r} histories remain distributed: the selected water
 and four inputs already contain \emph{*a} there.
 
-The complete current population has twenty-two applications: the oral
-ending in *ræste* 'rest', from selected genitive \emph{*rástōz}, and
-twenty-one nasal-final histories. These include *mære* 'nightmare',
+The complete current population has twenty-two applications from
+nasal-final inputs. These include *ræste* 'rest', from accusative
+\emph{*rástǭ}, as well as *mære* 'nightmare',
 *tunge* 'tongue', *heorte* 'heart' and *sāwle* 'soul'.
 The selected gift input remains \emph{*gíftiz}: the literature's
 \emph{*gebōz} is a separate control, not another corpus application.
 No lexical list or grammatical condition selects the endings.
 
-After [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes \emph{*rástō}, unrounding gives \emph{*rástā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. The West Germanic long-vowel reconstruction has a source basis, but this exact serialized chain remains a computational representation of the selected history.
+In the selected accusative, unrounding turns final nasal \emph{*ǭ} into \emph{*ā}. [SC043 EAFBrightening](#rule-EAFBrightening) fronts the root, and the final-vowel support [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal) gives \emph{*ræstǣ}; subsequent shortening and merger yield *ræste* 'rest'. The final support carries quantity in the model and is not another independently dated sound law. In the separate genitive diagnostic, [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) first exposes oral \emph{*ō} to the same unrounding operation.
 
 For *mære* 'nightmare', the final nasal vowel becomes \emph{*ā} here,
 then \emph{*ǣ} under [SC108 EAFBrighteningLongFinal](#rule-EAFBrighteningLongFinal).
@@ -11880,20 +11880,20 @@ The Old English form here, _hierfest_, represents the regular native West Saxon 
 ## hedge — OE _heġġ_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!hegg@\iventry{heġġ}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xagjaz@\iventry{*xágjaz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!xagjo@\iventry{*xágjō}{}}
 
-Derivation: _\*xágjaz_ > _heġġ_ (regular).
+Derivation: _\*xágjō_ > _heġġ_ (regular).
 
 ### Derivation trace
 
-Proto input: _\*xágjaz_
+Proto input: _\*xágjō_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -11901,9 +11901,9 @@ Proto input: _\*xágjaz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc J Gemination} & \emph{*xággjaz} \\
-\mbox{EAF Final Z Deletion} & \emph{*xággja} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc J Gemination} & \emph{*xággjō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*xággju} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -11917,11 +11917,11 @@ Proto input: _\*xágjaz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Final Bare A Loss} & \emph{*xággj} \\
-\mbox{EAF Brightening} & \emph{*xæggj} \\
-OE Velar Fricative Palatalization & \emph{*çæggj} \\
-\mbox{OE Velar Palatalization} & \emph{*çæʤʤj} \\
-\mbox{OE I Umlaut} & \emph{*çeʤʤj} \\
+\mbox{EAF Brightening} & \emph{*xæggju} \\
+OE Velar Fricative Palatalization & \emph{*çæggju} \\
+\mbox{OE Velar Palatalization} & \emph{*çæʤʤju} \\
+\mbox{OE I Umlaut} & \emph{*çeʤʤju} \\
+\mbox{OE High Vowel Apocope} & \emph{*çeʤʤj} \\
 \mbox{OE J Loss After Heavy} & \emph{*çeʤʤ} \\
 \end{tabularx}
 \end{minipage}
@@ -11935,11 +11935,11 @@ Old English form: _heġġ_
 
 ### Reconstruction and comparative evidence
 
-The derivational input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ 'hedge' type [@Campbell1959].
+Kroonen connects feminine *hecg* ‘hedge’ and OHG *heckia, heggia* with [hagjō-]{.recon} ‘hedge’, separately from the masculine formation represented by ON *heggr* ‘bird cherry’. Orel associates masculine [xaǥjaz]{.recon} ‘hedge’ with OE *hege* ‘hedge’. The two are formations of the same lexical family, not interchangeable citation forms [@Kroonen2013, p. 198; @Orel2003, p. 150].
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ 'hedge' / _heċġ_ 'hedge' [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the form compared here is normalized.
+The charter evidence distinguishes masculine [of þām hege]{.ex} ‘from the hedge’ from feminine [in þā hegce]{.ex} ‘into the hedge’ (Kemble, *Codex Diplomaticus* III 78.21 and 52.25, cited by Bosworth–Toller). The Supplement reassigns the doubled Bamborough spelling to the feminine; the spelling alone does not determine gender [@Toller1921, p. 528]. These are edition readings. The selected nominative is the normalized *heġġ* ‘hedge’, corresponding to lexicographic *hecg/heċġ* [@BosworthToller1898, s.v. *hege* and *hecg*; @ClarkHall1960].
 
 ### Development to Old English
 
@@ -11948,9 +11948,7 @@ This is the geminate-stop class, distinct from the singleton fricative in
 affrication had already occurred at the articulation checkpoint
 [@RingeTaylor2014, pp. 203–204; @Fulk2018, pp. 131–132].
 
-From [xágjaz]{.recon} ‘hedge’, the current serialized model first applies West Germanic j-gemination to produce a geminate stop; later Old English palatalization and loss of final _j_ produce _heġġ_ 'hedge'. This preserves the selected regular executable derivation, not independent evidence for the historical position of final low-vowel loss.
-
-Ringe and Taylor place broader oral/nasal low-vowel apocope before West Germanic j-gemination and distinguish stranded-glide outcomes from later paradigmatic leveling [@RingeTaylor2014, pp. 46--47]. The late oral-a fragment therefore does not establish an uninterrupted regular history of this selected nominative. Reconciling its formation and cell with that chronology remains open; no word-specific analogical repair or change to the selected reconstruction is asserted here.
+From [xágjō]{.recon} ‘hedge’, the long vowel preserves nonsyllabic *j* at West Germanic gemination. Palatalization and i-mutation lead to *heġġ*; the short nasal apocope controversy does not govern this ending. The masculine *hege* and its singleton obliques are a separate paradigm: extending the singleton from the masculine nominative is possible, but neither its direction of spread nor an alternative inherited formation is demonstrated here [@Ringe2017, p. 312; @RingeTaylor2014, pp. 44–47].
 
 ### Form note
 
@@ -23927,15 +23925,14 @@ attested Old English form.
 ## rest — OE _ræste_
 
 \index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!raeste@\iventry{ræste}{}}
-\index[iv]{02oe@\ivlangheader{Old English}{West Saxon normalization unmarked}!rast@\iventry{rast}{}}
 \index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rasto@\iventry{*rastō}{}}
-\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rastoz@\iventry{*rástōz}{}}
+\index[iv]{03pgmc@\ivlangheader{Proto-Germanic}{}!rasto@\iventry{*rástǭ}{}}
 
-Derivation: citation reconstruction _\*rastō_; form followed here _\*rástōz_ > _ræste_ (late analogy).
+Derivation: citation reconstruction _\*rastō_; form followed here _\*rástǭ_ > _ræste_ (late analogy).
 
 ### Derivation trace
 
-Proto input: _\*rástōz_
+Proto input: _\*rástǭ_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -23950,9 +23947,7 @@ Proto input: _\*rástōz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*rástō} \\
-\end{tabularx}
+\raggedright [no change]\par
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
 \raggedright
@@ -23980,48 +23975,17 @@ OE Unstressed Long Vowel Shortening & \emph{*ræstæ} \\
 
 Old English form: _ræste_
 
-### Reconstruction and comparative evidence
+### Reconstruction and Old English evidence
 
-Kroonen treats the noun as a feminine ō-stem [_\*rastō-_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:1"}, continued by Old English
-[_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22:1"} 'rest' [@Kroonen2013, 445]. The derivational input [rástōz]{.iv .recon lang=pgmc sort=rastoz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22:2"} ‘rest’ therefore does not replace
-the lexeme-level headword. It identifies one oblique singular cell on the side of
-the paradigm that yields _ræste_ 'rest'.
+Kroonen treats the noun as a feminine ō-stem [_\*rastō-_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:1"}, continued by Old English [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:2"} ‘rest’ [@Kroonen2013, p. 405]. The selected [rástǭ]{.iv .recon lang=pgmc sort=rasto role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:3"} ‘rest’ is the independently reconstructed accusative singular of this stem, not a substitute for its nominative citation reconstruction [@Ringe2017, p. 312; @RingeTaylor2014, pp. 299–300].
 
-The source tradition used here labels that cell specifically as genitive
-singular, but the broader local synthesis of the ō-stem paradigm shows that the
-oblique singulars converge on the same front-vocalic _ræste_ 'rest' side, in contrast
-to a nominative singular that would remain _rast_ 'rest'.
-
-### Old English evidence
-
-The ordinary Old English citation form is [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:33:1"} 'rest' [@Kroonen2013, 445]. Clark
-Hall likewise gives [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34:1"} 'rest' [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34:2"} 'rest', including prepositional
-examples such as [on ræste]{.ex} 'at rest' and [tó ræste]{.ex} 'to rest' [@BosworthToller1898, 121].
-
-The comparison form used here is therefore an attested oblique [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:37:1"} 'rest', not a
-reconstructed surrogate. The dictionary headword [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:38:1"} 'rest' remains an equally real
-part of the Old English record.
+The direct object [þā ēcean ræste]{.ex} ‘the eternal rest’ in *Blickling Homilies* 101.26 (Morris) supplies the accusative. The *Boethius* passage with [sēo ræst]{.ex} ‘the rest’ and [tō ræste]{.ex} ‘to rest’ (ch. 25, Fox 88.29–32) attests nominative and dative respectively; [on ræste]{.ex} ‘at rest’ gives another prepositional dative. These are not genitive attestations. A genitive construal is possible in *Guthlac B* 1068, [him ræste nēod]{.ex} ‘he needed rest’, without using that less secure cell as the selected comparison [@BosworthToller1898, s.v. *ræst*; @ClarkHall1960, p. 239].
 
 ### Development to Old English
 
-Once final _\*z_ is lost, the derivational input moves through the front-vocalic
-oblique side of the paradigm rather than the back-vocalic nominative side. In
-the modeled derivation, the surviving final long vowel is first exposed,
-unrounded, fronted, shortened, and then reduced to the final _-e_ of _ræste_ 'rest'.
+The accusative long nasal ending does not undergo final short nasal apocope or the raising of final oral long *ō*. Its front-vocalic ending in the English derivation preserves root fronting and becomes *-e*, giving [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:1"} ‘rest’. The reconstructed dative takes a different route, Proto-Germanic \emph{*-ōi} to West Germanic \emph{*-ē}; the model yields *ræste* from the later input but does not admit the Proto-Germanic form. Genitive [rástōz]{.recon} ‘of rest’ remains a separate comparison: earlier *z*-loss in the experimental cascades exposes the oral ending to raising; that interaction does not occur in the accusative [@RingeTaylor2014, pp. 61, 299–300].
 
-The key point is the paradigm split. Nominative [rastō]{.recon} ‘rest’ yields a regular _rast_ 'rest',
-whereas the selected oblique input yields _ræste_ 'rest'. The later citation form _ræst_ 'rest'
-is best explained as leveling from that oblique _ræst-_ stem.
-
-### Paradigm comparison
-
-The comparison below sets the relevant forms side by side. It distinguishes the nominative citation form
-from the oblique singular chosen here.
-
-| PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [_\*rastō_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59:1"} | expected regular outcome _rast_ | [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59:2"} 'rest' | useful background, but not the cell that matches attested oblique _ræste_ |
-| selected oblique singular | [_\*rástōz_]{.iv lang=pgmc sort=rastoz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:1"} | regular output: [_ræste_]{.iv lang=oe sort=raeste role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:2"} 'rest' | [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:3"} 'rest' | exact match between derivational input and attested OE oblique form |
+The citation nominative [rastō]{.recon} ‘rest’ gives reconstructed \emph{*rast} in the cascade. The attested *ræst* can be explained by extension of the independently attested front-vocalic oblique stem into the nominative. This is a hypothesis about the lemma’s paradigm, not an analogy required to derive the selected accusative. The _late_analogy_ classification records why the inherited nominative is not the selected route to the attested stem.
 
 ## shoulder — OE _sċuldrum_
 

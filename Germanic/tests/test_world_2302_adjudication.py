@@ -21,7 +21,8 @@ from capr_runtime import run_in_runner
 from check_bibliography_sanity import parse_entries
 from test_lexical_editorial_publication import (
     assert_nightmare_index_delta, assert_final_nasal_index_delta,
-    assert_flask_nompl_index_delta, assert_deer_genpl_index_delta,
+    assert_flask_nompl_index_delta, assert_deer_genpl_index_delta, assert_hedge_cell_index_delta,
+    assert_rest_cell_index_delta,
 )
 
 
@@ -721,6 +722,12 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     deer = [row for row in added if row["source_ref"].startswith("deer — OE ")]
     assert_deer_genpl_index_delta(deer)
     added = [row for row in added if row not in deer]
+    hedge = [row for row in added if row["note"].startswith("Hedge feminine selection:")]
+    assert_hedge_cell_index_delta(hedge)
+    added = [row for row in added if row not in hedge]
+    rest = [row for row in added if row["note"].startswith("Rest accusative selection:")]
+    assert_rest_cell_index_delta(rest)
+    added = [row for row in added if row not in rest]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

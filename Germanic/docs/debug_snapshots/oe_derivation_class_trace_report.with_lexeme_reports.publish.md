@@ -2675,7 +2675,7 @@ English Proto Input: *xáiθiz
 Old English Orthography: h*ǣþ
 Outcome: hǣþ
 # hedge
-PROTO: *xágjaz
+PROTO: *xágjō
 EXPECTED: heġġ
 OUTPUTS: heġġ
 
@@ -2683,11 +2683,11 @@ OUTPUTS: heġġ
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *xágjaz
+English Proto Input: *xágjō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc J Gemination: *xággjaz<br>EAF Final Z Deletion: *xággja<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *xággj<br>EAF Brightening: *xæggj<br>OE Velar Fricative Palatalization: *çæggj<br>OE Velar Palatalization: *çæʤʤj<br>OE I Umlaut: *çeʤʤj<br>OE J Loss After Heavy: *çeʤʤ |
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *xággjō<br>PNWGmc Final Long O Raising: *xággju<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *xæggju<br>OE Velar Fricative Palatalization: *çæggju<br>OE Velar Palatalization: *çæʤʤju<br>OE I Umlaut: *çeʤʤju<br>OE High Vowel Apocope: *çeʤʤj<br>OE J Loss After Heavy: *çeʤʤ |
 
 
 
@@ -9503,7 +9503,7 @@ English Proto Input: *náxti
 Old English Orthography: *niht
 Outcome: niht
 # rest
-PROTO: *rástōz
+PROTO: *rástǭ
 EXPECTED: ræste
 OUTPUTS: ræste
 
@@ -9511,11 +9511,11 @@ OUTPUTS: ræste
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *rástōz
+English Proto Input: *rástǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *rástō<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
 
 
 
