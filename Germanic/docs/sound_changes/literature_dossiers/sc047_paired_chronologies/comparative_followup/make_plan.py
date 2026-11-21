@@ -150,15 +150,16 @@ def main():
         ],
     }
     if sys.argv[2:] == ["--placement-trace"]:
-        placement_arms = (
+        traced_arms = (
             "B", "C_northern_order", "B_consumers_before_loss", "C_consumers_before_loss",
         )
+        placement_arms = ("identity", *traced_arms)
         plan.update(
             purpose="Localize the two unrelated terminal differences in early labial placement",
             configurations={arm: arms[arm] for arm in placement_arms},
             aliases={arm: plan["aliases"][arm] for arm in placement_arms},
             trace_concepts=["believe", "straw"],
-            complete_traces=list(placement_arms),
+            complete_traces=list(traced_arms),
             census_stages=["PWGmcEndinglessAw"],
             queries={},
         )
