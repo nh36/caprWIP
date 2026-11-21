@@ -1,0 +1,235 @@
+{
+  "scope": "Authenticated public projections; host paths and original logs omitted.",
+  "validated_head": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+  "receipts": [
+    {
+      "label": "paired-sc047-final-focused",
+      "level": "A",
+      "lane": null,
+      "started_at": "2026-11-20T08:46:39Z",
+      "finished_at": "2026-11-20T08:46:43Z",
+      "returncode": 0,
+      "source_identity": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:46:39Z"
+      },
+      "source_identity_after": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:46:43Z"
+      },
+      "source_changed": false,
+      "stdout_sha256": "5f3ab84b6dbc791ef7b949c6870c8a50031d5e37492462a01972e76d1394da14",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_receipt_sha256": "64bc2be2d7e73902bc1ed820a18a1013cc38eb489bcd92d9991efdee50ff1bf8"
+    },
+    {
+      "label": "paired-sc047-final-refresh",
+      "level": "B",
+      "lane": null,
+      "started_at": "2026-11-20T08:46:43Z",
+      "finished_at": "2026-11-20T08:47:42Z",
+      "returncode": 0,
+      "source_identity": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:46:43Z"
+      },
+      "source_identity_after": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:47:42Z"
+      },
+      "source_changed": false,
+      "stdout_sha256": "d8c144e84a58d562f99d4544239fa582a676f85ee1a9ca72632527b707aa1e09",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_receipt_sha256": "fc38833d5ef0a4c0a45e987cc0b249468e61e642a87e29fd7a6ec15729f0df0b"
+    },
+    {
+      "label": "paired-sc047-final-status",
+      "level": "B",
+      "lane": null,
+      "started_at": "2026-11-20T08:47:42Z",
+      "finished_at": "2026-11-20T08:48:13Z",
+      "returncode": 0,
+      "source_identity": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:47:42Z"
+      },
+      "source_identity_after": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:48:13Z"
+      },
+      "source_changed": false,
+      "stdout_sha256": "b826001b0a3d307ac84bd22a701a2203cd5cdd4cf0c92f583a9f15deb03c1bb6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_receipt_sha256": "bfb46d489aaa038c10e9d52a40c01b3e89a35096695f477f757b8682e7f608c1"
+    },
+    {
+      "label": "paired-sc047-final-strict-exclusive",
+      "level": "C",
+      "lane": "exclusive",
+      "started_at": "2026-11-20T08:59:42Z",
+      "finished_at": "2026-11-20T09:06:28Z",
+      "returncode": 0,
+      "source_identity": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:59:42Z"
+      },
+      "source_identity_after": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T09:06:28Z"
+      },
+      "source_changed": false,
+      "stdout_sha256": "9df3d47614add9430f74230caf26ce6b686d055bc35f99afd663f6ebc599a290",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "junit_sha256": "0335b8c1034dd79ab111a7d2d626f9548636a05eb1b6af737581823982c03219",
+      "test_counts": {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "original_receipt_sha256": "c2f27f036e330b754f1c819813e2de98e70fca6a98261dc8525071ab456c43bb"
+    },
+    {
+      "label": "paired-sc047-final-strict-serial",
+      "level": "C",
+      "lane": "serial",
+      "started_at": "2026-11-20T08:48:13Z",
+      "finished_at": "2026-11-20T08:59:42Z",
+      "returncode": 0,
+      "source_identity": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:48:13Z"
+      },
+      "source_identity_after": {
+        "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+        "worktree_changes": {},
+        "identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+        "recorded_at": "2026-11-20T08:59:42Z"
+      },
+      "source_changed": false,
+      "stdout_sha256": "8bd14a80e40d7ffc68d42e0d7db3f4c7bda57eff38e7a4193eb2c4256e6fd660",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "junit_sha256": "31c2f7d07e0cb4310dd5115b7d4c638ff76226030f5a87c7b84eec0a1edf95bd",
+      "test_counts": {
+        "tests": 11938,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 5
+      },
+      "original_receipt_sha256": "6c65ae4daaa1066d2ba043f14979af84cb8281afe4c5984cf8106a530d08f105"
+    },
+    {
+      "label": "paired-sc047-strict-book",
+      "level": null,
+      "lane": null,
+      "started_at": "2026-11-20T08:25:16Z",
+      "finished_at": "2026-11-20T08:31:51Z",
+      "returncode": 0,
+      "source_identity": {
+        "head_commit": "a7099eb55b9ee88550f83b695989a8f688e05b5b",
+        "worktree_changes": {
+          "Germanic/docs/assembly/capr_book_draft_alpha_01.md": "b0e8f79bba38e742b59ccc9cfac1458388dd208bf616cf55981fa4721190df7c",
+          "Germanic/docs/assembly/capr_book_intro_alpha_01.pdf": "a1da21fc41af596b13321bf8a509061f4a9129daaa2b0cb51e29bedfb5b7952c",
+          "Germanic/docs/assembly/lexical_volume_alpha_01.pdf": "cac06b0a24f73b774b6853357ac3f9fa7d7830dce18582ccfdb3a29fb2a805e2",
+          "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv": "bf3aa9ddfc7ee4894ce40648ea618d818b0144e01dd42a506808030f943499f9",
+          "Germanic/docs/book/index_verborum_audit.md": "06a9124d1d876964e74f6b34d8373ab39c649521a738cf0f19525437258d3c9e",
+          "Germanic/docs/book/index_verborum_book_emissions.tsv": "72491bfec6255c662d6a641d8a39702338b50a76d4b775c7575dc82cd92a0bdf",
+          "Germanic/docs/book/index_verborum_book_main.tsv": "72491bfec6255c662d6a641d8a39702338b50a76d4b775c7575dc82cd92a0bdf",
+          "Germanic/docs/book/index_verborum_book_occurrences.tsv": "8ef1e563f091e03351b88e3608cfb2cab902aac1b9e9a774bdec568d8f756792",
+          "Germanic/docs/book/index_verborum_book_print_unique.tsv": "bc0813fbdc45ca0f2a516065d8bbf56c17205398371d8875082d209e1da313ca",
+          "Germanic/docs/book/index_verborum_emission_table.tsv": "b694db98176cf93b635650749a6ab67811007edc6632cbc3551ec3cf3189cafb",
+          "Germanic/docs/book/index_verborum_forms.tsv": "0d740db4689a5443821776e670bae1c4d9d943842e13f41af7a3231099bfa13f",
+          "Germanic/docs/book/index_verborum_preoe_review.tsv": "4dda3ff91dd8be59f079fa9737ec0b1ee1a420bfa319cd4b32c26a40e8beae69",
+          "Germanic/docs/book/index_verborum_print_audit.md": "2888fbcb9857f6617c3f42cb843f8c9aa1c63eeff30ce054aae5a8f26d32093c",
+          "Germanic/docs/book/index_verborum_print_main.tsv": "baff613159d60aafd6032363272179bc546821c56013dcf34e01d9d6d587dd4d",
+          "Germanic/docs/book/index_verborum_print_unique.tsv": "329dec9bff769936d04a65b6183aade78cb9c672a62b2cfc013392c3e5dac69f",
+          "Germanic/docs/book/reader_facing_example_forms.tsv": "495aaf7b6276ffec312d82bf42ca1d0158c9127f503098e41fd606cc6b0dfa17",
+          "Germanic/docs/sound_changes/audits/sc047-adjudication.md": "0ffc49b1b5c7be2924f83aaecc855dd9e02721733c37249555c73075182c68bf",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/README.md": "2419f5f052b7f7d842ca819b127cf1dc18d260d757545ad45fd6de21bd8f2fe2",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/observation-provenance.json": "916f1996fea0e600feb76cc1312ca4ea38854ceb55f163284646b5b9a79dccc7",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/observations.json.gz": "5d92b61a709fe4ea80a9278db4063cbd093ca3a881c76e2bcdc5e72d9ee2a430",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/plan.json": "abafd6fc8f25564a63ddf666e4c2ae0878c2291d3ec94907dd684c30d186d7d4",
+          "Germanic/docs/sound_changes/order_tests/chronology_graph/first_break_edges.json": "a6713447e386550b2cfe3fb1912ce447e8cad0e58d55947bd0a2447ef7ab098c",
+          "Germanic/docs/sound_changes/order_tests/chronology_graph/first_break_nodes.tsv": "0f719691ae2a459cb7716819e0bbd70b0c0f3e28df6c31f1172f7d1a63b4a091",
+          "Germanic/docs/sound_changes/reader_facing/047-heavy-syllable-nasal-apocope.md": "84dc67506c7990c822c2a1e5fd6a93cab83b11e799cd0e7360e88b0c6c6c6c9f",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_chronology_evidence_check_01.md": "3525c27085e10a5a930d96a44177883453af3dde000117c883c2dc470eaf5183",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_foma_width_check_01.md": "2a71652c56e29c8ba1dd96c5856dacefb35fa130680ce485356389b615f88e9d",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md": "040d430a4d47ede87125a9674c8352ee145e98649f54639a174ebba4998ad44e",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.pdf": "b69bae80929e4a7a0862b2158d3233982b4c1cf12ef2a7d027a045e0b1db2061",
+          "Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv": "b24db65c2614908ec3036d7a61ea115dd26a31fb6b1c42cef5c5961d5660324e",
+          "Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv": "df12d107e262075bb42428c659f0aeabc265c41e856d3047fbd49d3b32bd8844",
+          "Germanic/docs/sound_changes/registry/sc_registry.tsv": "2400e784672db953f980dddc248d4f5f1642689b5b3ce7c93f4d3154d438294b",
+          "Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv": "d6779e25f29a74f8e4e0d1fbf4afeb566e0956b220be40411fe6754d033f1c5c",
+          "Germanic/docs/sound_changes/sound_change_inventory.tsv": "92cb2cec2560eb2f12312882be28685736831b48769c72a0c8e1c8714dfec7ca"
+        },
+        "identity_sha256": "2f9061809774bcbe485e5e2ae843fc66a4c97bb7b079d46c909c5320ec40bf5a",
+        "recorded_at": "2026-11-20T08:25:16Z"
+      },
+      "source_identity_after": {
+        "head_commit": "a7099eb55b9ee88550f83b695989a8f688e05b5b",
+        "worktree_changes": {
+          "Germanic/docs/assembly/capr_book_draft_alpha_01.md": "921ac0388dfd98c0fdb242531ff286d734b4e4fdbc326f0e632005514122dca4",
+          "Germanic/docs/assembly/capr_book_draft_alpha_01.pdf": "16617ddec9ec8cebdecbc2b8f68483c78b6df1ecf37cb5ae82e650d213dbd0d5",
+          "Germanic/docs/assembly/capr_book_draft_alpha_01.tex": "729e7c30ec7f10e33fcaed5e4bd83ef37159c8f794915d4298e178301db2d39f",
+          "Germanic/docs/assembly/capr_book_intro_alpha_01.pdf": "6061f42f8c3c5dca6953149c35049a84b3962ae247322ab0a6725447e9c6c8b5",
+          "Germanic/docs/assembly/lexical_volume_alpha_01.pdf": "fd5cccd51db3f3c33925f9b9e9444b9362ac357bf2f1bfee4ece633292b451db",
+          "Germanic/docs/assembly/lexical_volume_alpha_01_build.log": "05f8e85489b47e1048d88a7f7346df0888f192aa8355b8b785ebf6e414099d00",
+          "Germanic/docs/book/index_semantic_fingerprint_allowlist.tsv": "bf3aa9ddfc7ee4894ce40648ea618d818b0144e01dd42a506808030f943499f9",
+          "Germanic/docs/book/index_verborum_audit.md": "06a9124d1d876964e74f6b34d8373ab39c649521a738cf0f19525437258d3c9e",
+          "Germanic/docs/book/index_verborum_book_emissions.tsv": "72491bfec6255c662d6a641d8a39702338b50a76d4b775c7575dc82cd92a0bdf",
+          "Germanic/docs/book/index_verborum_book_main.tsv": "72491bfec6255c662d6a641d8a39702338b50a76d4b775c7575dc82cd92a0bdf",
+          "Germanic/docs/book/index_verborum_book_occurrences.tsv": "8ef1e563f091e03351b88e3608cfb2cab902aac1b9e9a774bdec568d8f756792",
+          "Germanic/docs/book/index_verborum_book_print_unique.tsv": "bc0813fbdc45ca0f2a516065d8bbf56c17205398371d8875082d209e1da313ca",
+          "Germanic/docs/book/index_verborum_emission_table.tsv": "b694db98176cf93b635650749a6ab67811007edc6632cbc3551ec3cf3189cafb",
+          "Germanic/docs/book/index_verborum_forms.tsv": "0d740db4689a5443821776e670bae1c4d9d943842e13f41af7a3231099bfa13f",
+          "Germanic/docs/book/index_verborum_preoe_review.tsv": "4dda3ff91dd8be59f079fa9737ec0b1ee1a420bfa319cd4b32c26a40e8beae69",
+          "Germanic/docs/book/index_verborum_print_audit.md": "2888fbcb9857f6617c3f42cb843f8c9aa1c63eeff30ce054aae5a8f26d32093c",
+          "Germanic/docs/book/index_verborum_print_main.tsv": "baff613159d60aafd6032363272179bc546821c56013dcf34e01d9d6d587dd4d",
+          "Germanic/docs/book/index_verborum_print_unique.tsv": "329dec9bff769936d04a65b6183aade78cb9c672a62b2cfc013392c3e5dac69f",
+          "Germanic/docs/book/reader_facing_example_forms.tsv": "495aaf7b6276ffec312d82bf42ca1d0158c9127f503098e41fd606cc6b0dfa17",
+          "Germanic/docs/sound_changes/audits/sc047-adjudication.md": "0ffc49b1b5c7be2924f83aaecc855dd9e02721733c37249555c73075182c68bf",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/README.md": "2419f5f052b7f7d842ca819b127cf1dc18d260d757545ad45fd6de21bd8f2fe2",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/observation-provenance.json": "916f1996fea0e600feb76cc1312ca4ea38854ceb55f163284646b5b9a79dccc7",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/observations.json.gz": "5d92b61a709fe4ea80a9278db4063cbd093ca3a881c76e2bcdc5e72d9ee2a430",
+          "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/plan.json": "abafd6fc8f25564a63ddf666e4c2ae0878c2291d3ec94907dd684c30d186d7d4",
+          "Germanic/docs/sound_changes/order_tests/chronology_graph/first_break_edges.json": "a6713447e386550b2cfe3fb1912ce447e8cad0e58d55947bd0a2447ef7ab098c",
+          "Germanic/docs/sound_changes/order_tests/chronology_graph/first_break_nodes.tsv": "0f719691ae2a459cb7716819e0bbd70b0c0f3e28df6c31f1172f7d1a63b4a091",
+          "Germanic/docs/sound_changes/reader_facing/047-heavy-syllable-nasal-apocope.md": "84dc67506c7990c822c2a1e5fd6a93cab83b11e799cd0e7360e88b0c6c6c6c9f",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_chronology_evidence_check_01.md": "3525c27085e10a5a930d96a44177883453af3dde000117c883c2dc470eaf5183",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_foma_width_check_01.md": "2a71652c56e29c8ba1dd96c5856dacefb35fa130680ce485356389b615f88e9d",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md": "5017435d6181f80a07a8b1f53415598cd9486b42379b194251f13f5f35de1c54",
+          "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.pdf": "427d51a12bbd82dbb6f16c7ac07a6b80beabc3e7ac3c30b83d676a7c31963324",
+          "Germanic/docs/sound_changes/registry/sc_inventory_annotations.tsv": "b24db65c2614908ec3036d7a61ea115dd26a31fb6b1c42cef5c5961d5660324e",
+          "Germanic/docs/sound_changes/registry/sc_inventory_notes.tsv": "df12d107e262075bb42428c659f0aeabc265c41e856d3047fbd49d3b32bd8844",
+          "Germanic/docs/sound_changes/registry/sc_registry.tsv": "2400e784672db953f980dddc248d4f5f1642689b5b3ce7c93f4d3154d438294b",
+          "Germanic/docs/sound_changes/sound_change_historical_staging_map.tsv": "d6779e25f29a74f8e4e0d1fbf4afeb566e0956b220be40411fe6754d033f1c5c",
+          "Germanic/docs/sound_changes/sound_change_inventory.tsv": "92cb2cec2560eb2f12312882be28685736831b48769c72a0c8e1c8714dfec7ca"
+        },
+        "identity_sha256": "30b89fb328f9362057e33908a7975a92fef56b67866eed0aded8fe384990c7c1",
+        "recorded_at": "2026-11-20T08:31:51Z"
+      },
+      "source_changed": true,
+      "stdout_sha256": "dc54b12d8ae82079ad68f09eac30b735eeb2cffaffbfab4dacabe30914877685",
+      "stderr_sha256": "61c3c6803bd1436a43d6f8067f06c37672c68846b3ddadcc99fe1dd36e7fc2e5",
+      "original_receipt_sha256": "595b4387ff17313c1b1ae241c971a28d22447338eec335b27da65fb8bba67bbc"
+    }
+  ]
+}

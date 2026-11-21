@@ -1,0 +1,43 @@
+{
+  "source_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+  "source_identity_sha256": "80be197fda52805cd84fcad6e3ddc9b3d39a500cf6d066ecfba78baa5d2a19b1",
+  "source_identity_after": {
+    "head_commit": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+    "worktree_changes": {
+      "Germanic/docs/sound_changes/literature_dossiers/sc047_paired_chronologies/labial_review/README.md": "f2a6a4bd23acc896434f8ffa0ce05506895ac8399c776c5c6c020816b98833cc"
+    },
+    "identity_sha256": "69b47cb43bdb9a3fccf0073150157bcd4843b42a936cf07d6d87a7c93af8d829",
+    "recorded_at": "2026-11-20T09:42:45Z"
+  },
+  "execution_input_scope": "The only concurrent worktree addition was the discussion README; the worker checked the pinned FST, corpus, helpers and runtime manifest before analysis.",
+  "snapshot_id": "sc047-followup-24c0b3b2",
+  "fst_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+  "corpus_sha256": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+  "archived_result_sha256": "e83a6945980b432289b4bf5d56e054bb3b2662f2d061c0553ab8237824804ae1",
+  "plan_sha256": "71b0bf5b33e9ee8196964245b6f0050ea3a200a71f7ba10065f3379f9ca155d5",
+  "worker_sha256": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+  "raw_result_sha256": "2b2e4cfe914a573cfa4279244d3aa63363a11ed3ec488bb961604058ef083786",
+  "frozen_result_sha256": "b95da7feb2ec6f8ca95b6ccb81c5672111c90b991fac7be12d7d488680c9f4d1",
+  "execution_returncode": 0,
+  "started_at": "2026-11-20T09:36:41Z",
+  "finished_at": "2026-11-20T09:42:45Z",
+  "cost": {
+    "networks": 451,
+    "compiler": [
+      {
+        "script": "common-definitions.foma",
+        "seconds": 344.8028403239996,
+        "peak_rss_kib": 2245604,
+        "returncode": 0
+      },
+      {
+        "script": "experiment.foma",
+        "seconds": 16.82523204900008,
+        "peak_rss_kib": 1155872,
+        "returncode": 0
+      }
+    ],
+    "variants": 8,
+    "seconds": 363.7366842900001
+  }
+}
