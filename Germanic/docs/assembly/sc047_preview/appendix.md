@@ -49,7 +49,7 @@ Three comparison types must be kept apart. First, Continental *peti/bedi* belong
 | rest | *ræste* | \emph{*rast} | \emph{*rast} |
 | hue | *hīew* | \emph{*hii} | \emph{*hiewe} |
 
-There were 386 canonical matches, 381 in A and 382 in B, with 394 inputs in each. The full traces preserve the unchanged controls, including strew, the selected deer cell, and the door and adverb controls. No model counts an analogically supplied result as a regular phonological match.
+There were 386 canonical matches, 381 in A and 382 in B, with the same original 394 inputs in each. The proposed feminine hedge and accusative rest inputs are not substituted here. The first discrepancy compares different formations; the second reflects a separate interaction of final consonant loss and long-vowel raising. Neither is a vote on the order of short nasal loss. The full traces preserve the unchanged controls, including strew, the selected deer cell, and the door and adverb controls. No model counts an analogically supplied result as a regular phonological match.
 
 ## Inherited cells outside the score
 
@@ -63,3 +63,5 @@ The accompanying research supplement, *Inherited and protected cells in the SC04
 | ‘Hue’, genitive and direct plural | Both give *hīewes* and predicted \emph{*hīew}; the Cotton genitive verifies the former stem. Short-\emph{*i.i} fusion under A is independent of preserving the geminated cluster under B; neither is incorporated in the matched models. |
 
 The original rejections of ‘army’, ‘yellow’ and the conditional *hyse* forms are not findings about their historical reflexes. A component assay on specified post-admission strings can test whether the remaining rules behave as expected, but it is not admission of a Proto-Germanic form and cannot independently establish the class of *hyse*. The production gate and its scope are unchanged.
+
+Separate canonical checks reject the inherited dative \emph{*-ōi} inputs for ‘rest’, ‘gift’ and ‘soul’. Later \emph{*-ē} inputs for ‘rest’ and ‘gift’ give *ræste* and *ġiefe*; the later ‘soul’ input is still rejected. These checks identify a limit of the implemented derivation, not a result about the historical reflex of the diphthong.
