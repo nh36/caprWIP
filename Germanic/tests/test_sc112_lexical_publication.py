@@ -95,6 +95,8 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         presentation = {"global_order", "class_order"}
         for row_id, before in old.items():
             after = now[row_id]
+            if row_id == "2069":
+                before = dict(before, proto="*xágjō", protoform="*xágjō")
             if row_id == "2302":
                 before = dict(before, protoform="*wír-àldiz", protoform_variety="",
                               derivation_class="regular", class_bucket="regular",

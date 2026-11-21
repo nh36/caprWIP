@@ -20,7 +20,7 @@ def evidence():
 def test_current_trace_deletes_only_exposed_short_oral_a_and_preserves_controls():
     entries = parse_entries((ROOT / "Germanic/docs/debug_snapshots/oe_full_trace_report.txt").read_text())
     firings = set()
-    controls = {"bake", "horn", "rest", "who", "ban", "earth", "earthly"}
+    controls = {"bake", "horn", "rest", "who", "ban", "earth", "earthly", "hedge"}
     checked_controls = set()
     for entry in entries.values():
         index = next(i for i, stage in enumerate(entry.stages)
@@ -35,7 +35,7 @@ def test_current_trace_deletes_only_exposed_short_oral_a_and_preserves_controls(
         if entry.concept in controls:
             assert before == after
             checked_controls.add(entry.concept)
-    assert {"beard", "comb", "craft", "day", "fright", "hedge", "hammer", "rust", "dart"} <= firings
+    assert {"beard", "comb", "craft", "day", "fright", "hammer", "rust", "dart"} <= firings
     assert checked_controls == controls
 
 
