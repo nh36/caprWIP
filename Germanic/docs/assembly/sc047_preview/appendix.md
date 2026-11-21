@@ -49,4 +49,17 @@ Three comparison types must be kept apart. First, Continental *peti/bedi* belong
 | rest | *ræste* | \emph{*rast} | \emph{*rast} |
 | hue | *hīew* | \emph{*hii} | \emph{*hiewe} |
 
-There were 386 canonical matches, 381 in A and 382 in B. The shared change for ‘hedge’ reflects the early oral path; ‘rest’ has an exposed stressed-vowel development, not a diagnostic ja-stem direct opposition. The experiments classify the two labial departures separately rather than treating them as independent votes for an order. The full traces also preserve the unchanged controls, including strew, the selected deer cell, and the door and adverb controls. Other grammatical cells are unscored; they do not affect either count. No model is entitled to count an analogically supplied result as a regular phonological match.
+There were 386 canonical matches, 381 in A and 382 in B, with 394 inputs in each. The full traces preserve the unchanged controls, including strew, the selected deer cell, and the door and adverb controls. No model counts an analogically supplied result as a regular phonological match.
+
+## Inherited cells outside the score
+
+The accompanying research supplement, *Inherited and protected cells in the SC047 comparison*, records the inputs, outputs, witnessed cells, donor status and confidence together. The supplementary finite assay uses the same orders and does not amend the original 52 probes.
+
+| Comparison | Shared A/B result or separate limitation |
+|---|---|
+| Masculine ‘hedge’, \emph{*xagjaz} versus feminine \emph{*xagjō} | The former strands the glide and gives *hege*; the latter retains a vowel through gemination and gives *heċġ*. Feminine \emph{*xagjǭ} gives oblique *heċġe*. This is a stem-class distinction, not a short nasal contrast. |
+| ‘Rest’, \emph{*rastō}, \emph{*rastōz}, \emph{*rastōi}, \emph{*rastǭ} | Nominative and genitive give \emph{*rast}; the genitive enters final-\emph{*ō} raising after earlier \emph{*z}-loss. The long nasal accusative gives *ræste*. The PGmc dative spelling is rejected; the published West Germanic stage \emph{*rastē} motivates the expected *ræste*, not a successful lookup of the PGmc input. |
+| ‘Hay’, genitive and direct plural | Both give \emph{*hīeġes} and \emph{*hīeġ}, potential donors, not verified tokens of those cells. For A’s singleton route the narrower labial experiment gives \emph{*hei}, not \emph{*hīeġ}. B’s direct cell geminates but loses the conditioning glide early. |
+| ‘Hue’, genitive and direct plural | Both give *hīewes* and predicted \emph{*hīew}; the Cotton genitive verifies the former stem. Short-\emph{*i.i} fusion under A is independent of preserving the geminated cluster under B; neither is incorporated in the matched models. |
+
+The original rejections of ‘army’, ‘yellow’ and the conditional *hyse* forms are not findings about their historical reflexes. A component assay on specified post-admission strings can test whether the remaining rules behave as expected, but it is not admission of a Proto-Germanic form and cannot independently establish the class of *hyse*. The production gate and its scope are unchanged.
