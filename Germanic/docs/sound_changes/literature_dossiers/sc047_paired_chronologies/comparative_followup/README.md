@@ -1,7 +1,8 @@
 # SC047: comparative chronology and independent labial questions
 
-Subsequent work: [Hollifield source assessment](hollifield.md) and
-[source integration and matched A/B/C trials](source_integration/README.md).
+Subsequent work: [Hollifield source assessment](hollifield.md),
+[source integration and matched A/B/C trials](source_integration/README.md),
+and the [current comparative recommendation](morphology/README.md).
 The historical capture below is retained as executed.
 
 ## Identity and question

@@ -1,0 +1,48 @@
+{
+  "snapshot": "sc047-followup-9507ce18",
+  "capture_head": "25359c81a586dfc92bcd54df9eca9f1673205004",
+  "capture_identity_sha256": "e99ac53c2319addbe0a8e5c6daf27ef5c559bde3dfd82d77ea0b9c089770dcc8",
+  "completed_at": "2026-11-21T16:02:54Z",
+  "completion_receipt_sha256": "eb19037f4abcf17ca12d115d4d8b63bdcc0835fa42529f8fe732a11b6778df50",
+  "execution_start": "2026-11-21T15:57:33Z",
+  "execution_finish": "2026-11-21T16:02:54Z",
+  "worktree_identity_changed_during_run": false,
+  "fst_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+  "corpus_sha256": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+  "worker_sha256": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+  "pinned_plan_sha256": "86cd9ea557481f6be5b6df89273d748e41b9d3c1bab6862ba755caab3ef34e5e",
+  "pinned_inputs": {
+    "source.txt": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+    "corpus.tsv": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+    "contexts.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "worker.py": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+    "plan.json": "86cd9ea557481f6be5b6df89273d748e41b9d3c1bab6862ba755caab3ef34e5e",
+    "anglo_frisian_experiments.py": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa",
+    "oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+    "capr_runtime.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+    "sound_change_order_sensitivity.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+    "executable_facts.py": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+  },
+  "raw_observations_sha256": "06d4f62fac8b9c297e6e6a23da9eb0d1e300efbe21ec3844b42ab5a7fa72f620",
+  "cost": {
+    "networks": 36,
+    "compiler": [
+      {
+        "script": "common-definitions.foma",
+        "seconds": 315.87773543600633,
+        "peak_rss_kib": 2243600,
+        "returncode": 0
+      },
+      {
+        "script": "experiment.foma",
+        "seconds": 3.776247460002196,
+        "peak_rss_kib": 1146228,
+        "returncode": 0
+      }
+    ],
+    "variants": 4,
+    "seconds": 320.43115718799527
+  },
+  "frozen_observations_sha256": "a96b1145f191434a37aea8be1f493f4afa923cde60cb44a280231126f8116047",
+  "frozen_comparison": "source_integration/observations.json.gz"
+}
