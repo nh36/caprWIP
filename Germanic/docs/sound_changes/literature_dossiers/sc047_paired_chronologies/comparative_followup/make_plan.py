@@ -163,6 +163,60 @@ def main():
             census_stages=["PWGmcEndinglessAw"],
             queries={},
         )
+    elif sys.argv[2:] == ["--source-integration"]:
+        probes.update({
+            "cynn.direct": "kúnją",
+            "cynn.gen.sg": "kúnjas",
+            "cynn.dat.sg": "kúnjai",
+        })
+        control_arms = ("identity", "A", "B", "C_northern_order",
+                        "A_contraction", "A_late_contraction", "A_singleton_aw")
+        combined = [narrow, insert("FII", wloss)]
+        matched = {arm + "_matched": arms[arm] + combined
+                   for arm in ("A", "B", "C_northern_order")}
+        matched["A_presyncope_contraction"] = arms["A"] + [
+            insert("FII", "OEWeakTailNasalLoss"),
+        ]
+        matched["B_matched_geminate_only"] = arms["B_geminate_only"] + combined
+        matched["C_matched_geminate_only"] = [
+            {**op, "insert": "FNG"} if op.get("insert") == "FNU" else
+            {**op, "move": "FNG"} if op.get("move") == "FNU" else op
+            for op in north
+        ] + combined
+        integrated = {arm: arms[arm] for arm in control_arms} | matched
+        aliases = {
+            arm: {op["replace"]: op["with"] for op in ops if "replace" in op}
+            for arm, ops in integrated.items()
+        }
+        for arm, ops in integrated.items():
+            for stage in stages:
+                if stage in definitions and not any(op.get("insert") == stage for op in ops):
+                    continue
+                queries[f"{arm}:cell:{stage}"] = {
+                    "configuration": arm, "through": aliases[arm].get(stage, stage),
+                    "inputs": list(probes.values()),
+                }
+        queries = {
+            name: query for name, query in queries.items()
+            if query.get("configuration", "identity") in integrated
+        }
+        queries["erdmann.gemination.local"] = {
+            "members": [gem],
+            "inputs": ["*d*á*n*i*j*ō", "*d*á*n*j*ō",
+                       "*w*í*n*i*j*ō", "*w*í*n*j*ō"],
+        }
+        plan.update(
+            purpose="Recompare low-vowel orders with identical narrow labial and hiatus treatments",
+            configurations=integrated,
+            aliases=aliases,
+            trace_concepts=plan["trace_concepts"] + [
+                "believe", "straw", "dill", "show (iptv.2sg)", "show (3sg)",
+            ],
+            complete_traces=list(integrated),
+            census_stages=plan["census_stages"] + [gem, oral, nasal],
+            probe_ids=list(probes),
+            queries=queries,
+        )
     Path(sys.argv[1]).write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n")
 
 
