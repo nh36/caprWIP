@@ -18,7 +18,7 @@ from executable_facts import parse_defines
 from historical_sc035 import historical_runtime
 from test_lexical_editorial_publication import (
     assert_nightmare_index_delta, assert_final_nasal_index_delta,
-    assert_flask_nompl_index_delta, assert_deer_genpl_index_delta,
+    assert_flask_nompl_index_delta, assert_deer_genpl_index_delta, assert_hedge_cell_index_delta,
 )
 
 # The adoption commit: replaying its frozen capture must pin both the adopted
@@ -263,6 +263,9 @@ def test_rainbow_is_published_once_in_both_presentations_without_reclassificatio
     deer = [row for row in added if row["source_ref"].startswith("deer — OE ")]
     assert_deer_genpl_index_delta(deer)
     added = [row for row in added if row not in deer]
+    hedge = [row for row in added if row["note"].startswith("Hedge feminine selection:")]
+    assert_hedge_cell_index_delta(hedge)
+    added = [row for row in added if row not in hedge]
     assert len(added) == 8
     assert {(r["language"], r["form"], r["form_role"], r["source_scope"])
             for r in added} == {

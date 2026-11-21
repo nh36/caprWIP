@@ -64,6 +64,18 @@ def assert_deer_genpl_index_delta(rows):
     assert all(not row.get("variety") for row in rows)
 
 
+def assert_hedge_cell_index_delta(rows):
+    fields = ("action", "language", "form", "form_role", "source_scope", "source_ref")
+    assert len(rows) == 4
+    assert {tuple(row[field] for field in fields) for row in rows} == {
+        (action, "pgmc", form, role, scope, "hedge — OE heġġ")
+        for action, form in (("add", "*xágjō"), ("remove", "*xágjaz"))
+        for role, scope in (("selected_input", "trace_proto_input"),
+                            ("source_protoform", "lexical_protoform"))
+    }
+    assert all(not row.get("variety") for row in rows)
+
+
 def assert_final_nasal_index_delta(rows):
     model = "Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md"
     expected = {
