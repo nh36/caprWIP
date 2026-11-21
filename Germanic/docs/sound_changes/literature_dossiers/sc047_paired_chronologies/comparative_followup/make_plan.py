@@ -217,6 +217,60 @@ def main():
             probe_ids=list(probes),
             queries=queries,
         )
+    elif sys.argv[2:] == ["--morphology"]:
+        probes = {
+            f"{word}.{cell}": stem + ending
+            for word, stem in (("fenn", "fánj"), ("wedd", "wádj"), ("webb", "wábj"))
+            for cell, ending in (("direct", "ą"), ("gen", "as"), ("dat", "ai"))
+        }
+        selected = {arm: arms[arm] for arm in ("identity", "A", "B", "C_northern_order")}
+        queries = {
+            f"{arm}:cell:{stage}": {
+                "configuration": arm, "through": stage, "inputs": list(probes.values()),
+            }
+            for arm in selected
+            for stage in (oral, nasal, gem, "FNU", "OEHighVowelApocope",
+                          "OEFinalGeminateSimplification", final)
+            if stage != "FNU" or arm != "identity"
+        }
+        # A broad compensatory-lengthening countermodel, not a proposed sound law.
+        definitions["FWL"] = """define FWL Ctx([
+            {*í} {*w} -> {*ḯ} || _ [{*i}|{*ī}],
+            {*é} {*w} -> {*ḗ} || _ [{*i}|{*ī}],
+            {*ý} {*w} -> {*ȳ} || _ [{*i}|{*ī}]
+        ]) .o. OEWLossBeforeI;"""
+        hiatus = [
+            "*ç*í*w*i", "*g*l*í*w*i", "*n*í*w*i",
+            "*p*í*w*ī", "*p*í*w*í", "*p*í*i", "*p*í*w*j*i",
+            "*p*y*l*w*ī", "*g*e*r*w*i*þ*i", "*s*t*r*é*w*i*d*ē",
+            "*s*ǣ*w*i",
+        ]
+        for label, members in (
+            ("loss", [wloss]), ("fusion", [wloss, "FII"]),
+            ("lengthening", ["FWL"]),
+            ("lengthening_hvd", ["FWL", "OEHighVowelApocope"]),
+            ("fusion_hvd", [wloss, "FII", "OEHighVowelApocope"]),
+        ):
+            queries[f"hiatus:{label}"] = {"members": members, "inputs": hiatus}
+        plan.update(
+            purpose="Screen additional inherited light ja-stems and distinguish hiatus mechanisms",
+            configurations=selected,
+            aliases={arm: plan["aliases"][arm] for arm in selected},
+            definitions={name: value for name, value in definitions.items() if name != "FWA"},
+            census_stages=[], complete_traces=[], trace_concepts=[], trace_stages=[],
+            probe_ids=list(probes), queries=queries,
+            predictions={
+                "light ja-stems": "With early loss direct cells strand j; protected cells still geminate.",
+                "hiatus": "Fusion consumes i; broad compensation retains it and also lengthens short e before lost w.",
+            },
+            negative_controls=[
+                "Exact identity and reference-arm corpus equality.",
+                "Long, stressed or glide-separated second vowels do not feed FII.",
+                "Attested Mercian streide preserves both vowel qualities; a long first vowel is not licensed by that spelling alone.",
+            ],
+        )
+    elif len(sys.argv) != 2:
+        raise SystemExit("use make_plan.py OUTPUT [--placement-trace|--source-integration|--morphology]")
     Path(sys.argv[1]).write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n")
 
 
