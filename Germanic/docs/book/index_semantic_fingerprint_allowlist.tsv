@@ -1,4 +1,78 @@
 action	language	form	form_role	source_scope	source_ref	note	variety
+add	goth	badi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: bed cognate.	
+add	goth	kuni	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: kin cognate.	
+add	oe	bedd	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: direct bed comparison.	
+add	oe	bedde	target_form	lexical_heading	bed — OE bedde	SC047 model adoption: selected dative.	
+add	oe	beddes	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: Beowulf oblique.	
+add	oe	beddum	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: Beowulf oblique.	
+add	oe	cyn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: direct kin witness.	
+add	oe	cynn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: separate doubled spelling.	
+add	oe	cynne	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: dative control.	
+add	oe	cynnes	target_form	lexical_heading	kin — OE cynnes	SC047 model adoption: selected genitive.	
+add	oe	hecg	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md	SC047 model adoption: feminine spelling.	
+add	oe	heg	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md	SC047 model adoption: hay spelling.	
+add	oe	hege	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md	SC047 model adoption: separate masculine hedge.	
+add	oe	heig	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md	SC047 model adoption: hay spelling.	
+add	oe	hiewes	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md	SC047 model adoption: Cotton spelling.	
+add	oe	hig	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md	SC047 model adoption: hay spelling.	
+add	oe	hīewes	target_form	lexical_heading	hue — OE hīewes	SC047 model adoption: selected genitive.	
+add	oe	hīeġ	target_form	lexical_heading	hay — OE hīeġ	SC047 model adoption: new assembled dossier, same target.	
+add	oe	net	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md	SC047 model adoption: direct net witness.	
+add	oe	nette	target_form	lexical_heading	net — OE nette	SC047 model adoption: selected dative.	
+add	oe	wicg	comparison_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md	SC047 model adoption: velar control.	
+add	oe	wicga	comparison_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md	SC047 model adoption: velar control.	
+add	oe	wicge	comparison_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md	SC047 model adoption: velar control.	
+add	ofris	fene	comparison_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md	SC047 model adoption: Brokmer comparison.	
+add	ofris	fenne	comparison_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md	SC047 model adoption: Brokmer comparison.	
+add	ofris	fennem	comparison_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md	SC047 model adoption: Brokmer comparison.	
+add	ohg	bedi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: Continental singleton control.	
+add	ohg	betti	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: Continental cognate.	
+add	ohg	heckia	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md	SC047 model adoption: feminine cognate.	
+add	ohg	heggia	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md	SC047 model adoption: feminine cognate.	
+add	ohg	peti	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: Continental singleton control.	
+add	on	heggr	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md	SC047 model adoption: related masculine formation.	
+add	on	kyn	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: kin cognate.	
+add	os	feni	comparison_form	explicit_tag	Germanic/docs/assembly/capr_book_intro_alpha_01.md	SC047 model adoption: Continental fen.	
+add	os	kunni	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: kin cognate.	
+add	pgmc	*bádjai	selected_input	trace_proto_input	bed — OE bedde	SC047 model adoption: selected dative.	
+add	pgmc	*bádjai	source_protoform	lexical_protoform	bed — OE bedde	SC047 model adoption: selected dative.	
+add	pgmc	*bádją	source_protoform	lexical_proto	bed — OE bedde	SC047 model adoption: citation form.	
+add	pgmc	*déuzô	selected_input	trace_proto_input	deer — OE dēora	SC047 model adoption: selected genitive plural.	
+add	pgmc	*kúnjas	selected_input	trace_proto_input	kin — OE cynnes	SC047 model adoption: selected genitive.	
+add	pgmc	*kúnjas	source_protoform	lexical_protoform	kin — OE cynnes	SC047 model adoption: selected genitive.	
+add	pgmc	*kúnją	source_protoform	lexical_proto	kin — OE cynnes	SC047 model adoption: citation form.	
+add	pgmc	*nátjai	selected_input	trace_proto_input	net — OE nette	SC047 model adoption: selected dative.	
+add	pgmc	*nátjai	source_protoform	lexical_protoform	net — OE nette	SC047 model adoption: selected dative.	
+add	pgmc	*nátją	source_protoform	lexical_proto	net — OE nette	SC047 model adoption: citation form.	
+add	pgmc	*rástǭ	selected_input	trace_proto_input	rest — OE ræste	SC047 model adoption: selected accusative.	
+add	pgmc	*rástǭ	source_protoform	lexical_protoform	rest — OE ræste	SC047 model adoption: selected accusative.	
+add	pgmc	*xágjō	selected_input	trace_proto_input	hedge — OE heġġ	SC047 model adoption: feminine nominative.	
+add	pgmc	*xágjō	source_protoform	lexical_protoform	hedge — OE heġġ	SC047 model adoption: feminine nominative.	
+add	pgmc	*xáwją	source_protoform	lexical_protoform	hay — OE hīeġ	SC047 model adoption: new assembled dossier, same input.	
+add	pgmc	*xíwjas	selected_input	trace_proto_input	hue — OE hīewes	SC047 model adoption: selected genitive.	
+add	pgmc	*xíwjas	source_protoform	lexical_protoform	hue — OE hīewes	SC047 model adoption: selected genitive.	
+add	pgmc	*xíwją	source_protoform	lexical_proto	hue — OE hīewes	SC047 model adoption: citation form.	
+add	pgmc	badja-	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md	SC047 model adoption: comparative stem.	
+add	pgmc	hagjō-	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md	SC047 model adoption: comparative feminine stem.	
+add	pgmc	kunja-	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md	SC047 model adoption: comparative stem.	
+add	pgmc	rástōi	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: reconstructed dative control.	
+add	pgmc	rástōz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: unselected genitive.	
+add	pgmc	rástǭ	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: selected accusative.	
+add	pgmc	xaǥjaz	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md	SC047 model adoption: separate masculine formation.	
+add	pwgmc	rástē	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: intermediate dative.	
+remove	oe	nett	target_form	lexical_heading	net — OE nett	SC047 model adoption: direct singular not selected.	
+remove	oe	rast	comparison_form	table_semantic_decision	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: predicted nominative is not an attested OE form.	
+remove	oe	ræste	regular_output	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: selected target, not a separate comparison output.	
+remove	pgmc	*déuzą	selected_input	trace_proto_input	deer — OE dēor	SC047 model adoption: direct singular not selected.	
+remove	pgmc	*nátją	selected_input	trace_proto_input	net — OE nett	SC047 model adoption: direct singular not selected.	
+remove	pgmc	*nátją	source_protoform	lexical_protoform	net — OE nett	SC047 model adoption: retained as the citation form.	
+remove	pgmc	*rastō	source_protoform	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: redundant table tag; citation retained in metadata.	
+remove	pgmc	*rástōz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: genitive not selected.	
+remove	pgmc	*rástōz	selected_input	trace_proto_input	rest — OE ræste	SC047 model adoption: genitive not selected.	
+remove	pgmc	*rástōz	source_protoform	lexical_protoform	rest — OE ræste	SC047 model adoption: genitive not selected.	
+remove	pgmc	*xágjaz	selected_input	trace_proto_input	hedge — OE heġġ	SC047 model adoption: masculine not selected.	
+remove	pgmc	*xágjaz	source_protoform	lexical_protoform	hedge — OE heġġ	SC047 model adoption: masculine not selected.	
+remove	pgmc	rástōz	selected_input	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md	SC047 model adoption: genitive retagged as comparison.	
 remove	oe	flasce	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: singular becomes a comparison, not the selected cell.	
 add	oe	flascan	target_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: Hecht1900 C p.141 l.27 supplies the selected cell.	
 add	oe	flasce	comparison_form	explicit_tag	Germanic/docs/lexeme_reports/model_entries/2016-flask-flasce.model.md	Flask nominative-plural adoption: retain the attested singular and its separate root-vowel discussion.	

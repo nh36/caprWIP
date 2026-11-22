@@ -4,13 +4,17 @@
 
 ## Active model outputs
 
-The active volumes use one shared catalogue, with model-specific
-endpoints and traces. The full stage orders, unmatched forms, and
-unscored probes are published separately for A and B2. The immutable
-394-input comparison remains a separate diagnostic. In particular,
-hay is counted in the active catalogue of both models and explicitly
-unmatched in A. The figures and traces below belong only to the
-archived experiment, not the active system.
+Both models use the same 396 selected inputs and targets. They derive
+all six common selections for net, hue, bed, kin, hedge and rest.
+A derives 387 of 396 active targets; B2 derives 388. Hay remains a direct
+comparison in both models, unmatched in A. The full stage orders,
+unmatched forms and unscored probes are published in the model
+companions; the 394-input benchmark remains separate from the active
+catalogue. The default compatibility cascade is not a third historical
+hypothesis.
+
+The figures and traces in the following sections are historical
+experiment results, not the results of the active catalogue.
 
 ## Archived matched comparison: scope and reproduction
 

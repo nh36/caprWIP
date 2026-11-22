@@ -4,8 +4,8 @@ GENERATED from research SOURCE tables and the live corpus. Never hand-edit.
 
 Row-target status: **INCOMPLETE**. Row coverage is not passage or analytical completion.
 The separately generated [reading progress](reading_progress.md) tracks the three-source passages and applicability screens.
-Population: 400 OE rows; 394 runnable.
-Required source/row targets: 1403; retained actual consultations: 29; unchecked targets: 0; declared verification gaps: 0.
+Population: 402 OE rows; 396 runnable.
+Required source/row targets: 1407; retained actual consultations: 29; unchecked targets: 0; declared verification gaps: 0.
 
 Current CAPR fields below are observations, not new endorsements or approvals.
 A PGmc equality stage is the encoding convention, not independent author evidence.
@@ -1400,9 +1400,9 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-1988"></a>
 
-## 1988: deer / dēor
+## 1988: deer / dēora
 
-Current citation: *déuzą (pgmc); selected input: *déuzą (pgmc; variety: none; equality_convention).
+Current citation: *déuzą (pgmc); selected input: *déuzô (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -3807,7 +3807,7 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 ## 2069: hedge / heġġ
 
-Current citation: *xágjaz (pgmc); selected input: *xágjaz (pgmc; variety: none; equality_convention).
+Current citation: *xágjō (pgmc); selected input: *xágjō (pgmc; variety: none; equality_convention).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -5800,9 +5800,9 @@ Coverage: 6 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2138"></a>
 
-## 2138: net / nett
+## 2138: net / nette
 
-Current citation: *nátją (pgmc); selected input: *nátją (pgmc; variety: none; equality_convention).
+Current citation: *nátją (pgmc); selected input: *nátjai (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -6242,7 +6242,7 @@ Coverage: 2 checks; 0 unchecked; 0 verification gaps.
 
 ## 2152: rest / ræste
 
-Current citation: *rastō (pgmc); selected input: *rástōz (pgmc; variety: none; explicit_sidecar).
+Current citation: *rastō (pgmc); selected input: *rástǭ (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: late_analogy.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -11353,9 +11353,9 @@ Coverage: 5 checks; 0 unchecked; 0 verification gaps.
 
 <a id="row-2332"></a>
 
-## 2332: hue / hīew
+## 2332: hue / hīewes
 
-Current citation: *xíwją (pgmc); selected input: *xíwją (pgmc; variety: none; equality_convention).
+Current citation: *xíwją (pgmc); selected input: *xíwjas (pgmc; variety: none; explicit_sidecar).
 Runnable: 1; derivation class: regular.
 
 | Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
@@ -11535,3 +11535,31 @@ Runnable: 1; derivation class: regular.
 | dart-pheifer-epinal-2339 | Pheifer1974 pp.34,101 | scytil | oe / attestation / Epinal/Erfurt632 and commentary: momentum scytil | scytil Identity; source spelling and quantities preserved. Earlier i-spelling; commentary identifies a balance beam/lever, not a tongue or pointer. | page_image_checked |
 
 Coverage: 4 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2340"></a>
+
+## 2340: bed / bedde
+
+Current citation: *bádją (pgmc); selected input: *bádjai (pgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| bed-kroonen-2340 | Kroonen2013 pp.84 | *badja- | pgmc / stem / Neuter citation stem | *badja- Identity; preserve the stem dash. Comparative neuter stem, not a whole dative reconstruction. | text_checked |
+| bed-orel-2340 | Orel2003 pp.32 | *badjan | dictionary_context / word / Neuter dictionary citation | *badjan Identity; retain Orel's ending notation. Neuter headword with Gothic badi and OE bedd; not a dative. | text_checked |
+
+Coverage: 2 checks; 0 unchecked; 0 verification gaps.
+
+<a id="row-2341"></a>
+
+## 2341: kin / cynnes
+
+Current citation: *kúnją (pgmc); selected input: *kúnjas (pgmc; variety: none; explicit_sidecar).
+Runnable: 1; derivation class: regular.
+
+| Evidence | Source / printed pages | Diplomatic form | Asserted stage / kind / cell | Comparison and argument | Verification |
+| --- | --- | --- | --- | --- | --- |
+| kin-kroonen-2341 | Kroonen2013 pp.351 | *kunja- | pgmc / stem / Neuter citation stem, first homonym | *kunja- Identity; preserve the stem dash. Comparative neuter stem meaning clan, not a whole genitive reconstruction. | text_checked |
+| kin-orel-2341 | Orel2003 pp.224 | *kunjan | dictionary_context / word / Neuter dictionary citation | *kunjan Identity; retain Orel's ending notation. Neuter clan headword with Gothic kuni and OE cyn; not a genitive. | text_checked |
+
+Coverage: 2 checks; 0 unchecked; 0 verification gaps.

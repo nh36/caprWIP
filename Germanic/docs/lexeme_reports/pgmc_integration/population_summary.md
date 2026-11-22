@@ -7,31 +7,31 @@ report manifest and class assembly manifest. Regenerate only with
 | Measure | Count |
 | --- | ---: |
 | legacy | 380 |
-| selected | 394 |
-| audit | 400 |
+| selected | 396 |
+| audit | 402 |
 | legacy_current_required | 155 |
-| required | 169 |
-| assembled | 177 |
+| required | 171 |
+| assembled | 180 |
 | production_pilots | 11 |
 | format_tests | 1 |
 | reviewed_rows | 25 |
 | scoped_cases | 28 |
 | philological_selected | 23 |
-| pilot_current_required | 173 |
+| pilot_current_required | 175 |
 
-added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339.
+added_selected: 2322, 2326, 2327, 2328, 2329, 2330, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339, 2340, 2341.
 
 research_only: 1935, 1947, 1948, 1994, 2156, 2218.
 
 required_not_assembled: 2055, 2120, 2327, 2328, 2329.
 
-assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2074, 2113, 2137, 2148, 2185, 2200, 2283.
+assembled_not_required: 1933, 1955, 1989, 2018, 2029, 2044, 2061, 2074, 2113, 2137, 2148, 2185, 2200, 2283.
 
 ## Automated inspection routes, not controversy counts
 
 - candidate_comparison_review: 1
 - focused_comparison_review: 91
-- ordinary_evidence_review: 298
+- ordinary_evidence_review: 300
 - unit_comparability_review: 10
 
 A scoped review is not whole-row closure. All other rows retain

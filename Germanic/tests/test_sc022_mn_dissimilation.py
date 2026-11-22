@@ -198,7 +198,7 @@ class CorpusTotalsTests(unittest.TestCase):
             ("*márōn", "mære", "mære", "1"))
         self.assertEqual(
             (summary["total_lexemes"], summary["accepted"], summary["matched"], summary["mismatched"]),
-            (394, 394, 386, 8))
+            (396, 396, 388, 8))
         self.assertEqual(summary["legacy_subset_count"], 380)
         self.assertGreaterEqual(summary["total_lexemes"], 380)
         self.assertEqual(summary["accepted"], summary["total_lexemes"])

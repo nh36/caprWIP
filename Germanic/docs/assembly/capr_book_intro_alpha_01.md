@@ -76,7 +76,7 @@ A book must advance an argument. Mine is that traditional rule-based reconstruct
 
 The sound-change chapters ask how tightly the lexical evidence constrains the cascade. The lexical chapters ask whether individual etymologies survive that cascade without philological sleight of hand. Neither inquiry suffices alone. A formal system that reaches the targets by hiding doubtful inputs is bad historical linguistics; elegant prose that never reproduces its derivations is an incomplete formal account. Executable derivations make those two standards answer to one another.
 
-## Two histories of final low vowels and gemination {#sc047-competing-chronologies}
+## Two histories of final low vowels and gemination {#sc047-competing-chronologies .unnumbered}
 
 Both models lose exposed short oral *a* before West Germanic gemination. A follows Ringe and Taylor in also losing the nasal vowel before gemination; B2 follows Dahl, Hogg and Fulk in retaining it through gemination. Both share the downstream palatal conditioning of an already geminated labial. They also preserve the evidence for prior lowering and for the short vowel of *dor* without treating the position of those executable operations as independent dating evidence [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, §2.23].
 

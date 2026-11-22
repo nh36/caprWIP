@@ -72,7 +72,8 @@ def test_authorised_writer_transition_preserves_every_original_record_and_archiv
             assert data.startswith(previous_ledger)
             previous_rows = list(csv.DictReader(
                 previous_ledger.decode().splitlines(), delimiter="\t"))
-            added = [row for row in rows(BASELINE / name) if row not in previous_rows]
+            added = [row for row in rows(BASELINE / name) if row not in previous_rows
+                     and row["adjudication_memo"] != "Germanic/docs/models/sc047/adoption.md"]
             expected = []
             for filename in (
                 "approved_nonhigh_cells_migration.json", "approved_syncope_cells_migration.json",

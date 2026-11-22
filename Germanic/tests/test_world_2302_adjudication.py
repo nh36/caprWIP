@@ -110,8 +110,8 @@ def test_scientific_sources_and_archives_are_preserved():
     equivalent = json.loads((ROOT /
         "Germanic/docs/sound_changes/cascade_baseline/oe_equivalence_report.json").read_text())
     assert equivalent["status"] == "equivalent"
-    # Filth and earthly are subsequent individually authorized admissions.
-    assert equivalent["rows_compared"] == 394
+    # The current equivalence census also includes the later bed and kin admissions.
+    assert equivalent["rows_compared"] == 396
 
 
 def test_only_authorized_world_fields_changed():
@@ -437,7 +437,7 @@ def test_current_migration_repeats_adopted_semantics_and_protected_outputs(
         "MWeakA": {"from": "{*a}", "to": "[{*a}|{*à}]"}}
     assert current["component_results"]["OEInterStressRaising"] == expected
     assert current["component_results"]["MCombined"] == expected
-    assert current["selected_rows"] == 394
+    assert current["selected_rows"] == 396
     assert current["legacy380_identities"] == 380
     for name, model in current["models"].items():
         # WBackU retains the historical, unrestricted SC059 counterfactual.
@@ -718,6 +718,7 @@ def test_index_approval_changes_only_exact_world_input_and_variety_provenance():
     flask = [row for row in added if row["note"].startswith("Flask nominative-plural adoption:")]
     assert_flask_nompl_index_delta(flask)
     added = [row for row in added if row not in flask]
+    added = [row for row in added if not row["note"].startswith("SC047 model adoption:")]
     assert len(added) == 8
     expected = {
         ("selected_input", "explicit_tag", "*wír-àld"),

@@ -33,6 +33,8 @@ class Sc112Tests(unittest.TestCase):
         cls.text = FST.read_text(encoding="utf-8")
         cls.current = {r["row_id"]: r for r in rows(BASELINE)}
         cls.previous = {r["row_id"]: r for r in rows(PREVIOUS)}
+        cls.before_model_adoption = {r["row_id"]: r for r in rows(
+            BASELINE.with_name("cascade_baseline_outputs_pre_sc047_model_adoption.tsv"))}
         cls.corpus = {r["ID"]: r for r in rows(CORPUS)}
 
     def test_general_rule_precedes_rhotacism(self):
@@ -110,7 +112,7 @@ class Sc112Tests(unittest.TestCase):
                 continue
             source, output = line.split("\t", 1)
             outputs.setdefault(source, []).append(output)
-        self.assertEqual(len(outputs), 394)
+        self.assertEqual(len(outputs), 396)
         self.assertTrue(
             all(len(set(values)) == 1 and values[0] != "+?" for values in outputs.values())
         )
@@ -160,7 +162,7 @@ class Sc112Tests(unittest.TestCase):
                 if row_id == "2141":
                     previous = dict(previous, counterpart="mære", outputs="mære")
                 self.assertEqual(
-                    tuple(self.current[row_id][field] for field in fields),
+                    tuple(self.before_model_adoption[row_id][field] for field in fields),
                     tuple(previous[field] for field in fields),
                 )
 
@@ -193,14 +195,14 @@ class Sc112Tests(unittest.TestCase):
 
     def test_expansion_preserves_original_population(self):
         self.assertEqual(len(self.previous), 387)
-        # Filth and earthly are subsequent individually authorized admissions.
-        self.assertEqual(len(self.current), 394)
-        self.assertEqual(set(self.previous), set(self.current) -
+        before_model_adoption = self.before_model_adoption
+        self.assertEqual(len(before_model_adoption), 394)
+        self.assertEqual(set(self.previous), set(before_model_adoption) -
                          {"2333", "2334", "2335", "2336", "2337", "2338", "2339"})
         self.assertEqual(
-            {row_id: (self.previous[row_id]["outputs"], self.current[row_id]["outputs"])
+            {row_id: (self.previous[row_id]["outputs"], before_model_adoption[row_id]["outputs"])
              for row_id in self.previous
-             if self.previous[row_id]["outputs"] != self.current[row_id]["outputs"]},
+             if self.previous[row_id]["outputs"] != before_model_adoption[row_id]["outputs"]},
             {"2011": ("fundene", "fundne"), "2208": ("spinl", "spinle"),
              "2201": ("sāwol", "sāwle"), "2282": ("westene", "west"),
              "2053": ("hameres", "hamer"), "2016": ("flasce", "flascan"),
@@ -209,7 +211,7 @@ class Sc112Tests(unittest.TestCase):
         self.assertEqual(len(rows(LEGACY)), 380)
 
     def test_exact_counts_and_known_mismatch_membership(self):
-        self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 386)
+        self.assertEqual(sum(r["match"] == "1" for r in self.current.values()), 388)
         self.assertEqual(sum(r["match"] == "0" for r in self.current.values()), 8)
         self.assertEqual(
             {r["row_id"] for r in self.current.values() if r["match"] == "0"},

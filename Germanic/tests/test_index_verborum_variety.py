@@ -1446,7 +1446,7 @@ class BookTexExplicitScopeTests(unittest.TestCase):
         headings = [line for line in intro.splitlines() if line.startswith("#")]
         self.assertTrue(headings)
         self.assertEqual(headings[0], "# Introduction {.unnumbered}")
-        self.assertTrue(all(line.endswith("{.unnumbered}") for line in headings))
+        self.assertTrue(all(line.endswith(".unnumbered}") for line in headings))
 
     def test_only_assembled_explicit_sites_are_required(self):
         from check_book_draft_tex_indexes import explicit_emission_counts

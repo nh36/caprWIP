@@ -29,7 +29,7 @@ Four objects must be distinguished in every derivation: the citation reconstruct
 
 The lexical catalogue is ordered by seven derivation classes and, within each class, alphabetically by headword. Counts in this alpha are:
 
-- Regular derivations: 98
+- Regular derivations: 101
 - Attested variants: 6
 - Early analogy: 35
 - Late analogy: 28
@@ -220,6 +220,71 @@ Bosworth-Toller and Clark Hall both record [_bacan_]{.iv lang=oe sort=bacan sour
 #### Development to Old English
 
 From [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:1"} 'bake', Anglo-Frisian brightening first gives [bækaną]{.recon} 'bake'. A-restoration then returns the stem vowel to _a_ before single _k_ plus the back-vocalic infinitive suffix, and later apocope and weak-tail reduction yield [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:2"} 'bake' [@Campbell1959, 61; @RingeTaylor2014]. The development is therefore straightforward: [bákaną]{.iv .recon lang=pgmc sort=bakana source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:3"} > [_bacan_]{.iv lang=oe sort=bacan source_ref="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50" occ_id="Germanic/docs/lexeme_reports/model_entries/1934-bake-bacan.model.md:50:4"}.
+
+### bed — OE _bedd_
+
+Derivation: citation reconstruction _\*bádją_; form followed here _\*bádjai_ > _bedde_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*bádjai_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PNWGmc Unstressed Ai Monophthongization & \emph{*bádjē} \\
+\mbox{PWGmc J Gemination} & \emph{*báddjē} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Brightening} & \emph{*bæddjē} \\
+\mbox{OE I Umlaut} & \emph{*beddjē} \\
+OE Unstressed Long Vowel Shortening & \emph{*beddje} \\
+\mbox{OE J Loss After Heavy} & \emph{*bedde} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _bedde_
+
+#### Reconstruction and comparative evidence
+
+Kroonen reconstructs the light neuter stem [badja-]{.iv .recon lang=pgmc sort=badja role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:10:1"} ‘bed’, supported by Gothic [badi]{.iv lang=goth sort=badi role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:10:2"} and Old High German [betti]{.iv lang=ohg sort=betti role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:10:3"}. Old Norse *beðr* is masculine and does not establish the inherited English gender [@Kroonen2013, p. 84].
+
+The Munich gloss Clm 18550a, fol. 154v, l. 22, gives *p&i* (edited [peti]{.iv lang=ohg sort=peti role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:12" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:12:1"}) by Latin *stratum* (Steinmeyer and Sievers 1882, p. 221, l. 60). Frankish [bedi]{.iv lang=ohg sort=bedi role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:12" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:12:2"} glosses *culcitram* in the Paulus tradition (1878 edition, p. 144, l. 4, apparatus p). The Latin establishes the glossing context, not necessarily the vernacular case. The two witnesses support a regional singleton with a following vowel; they do not date nasal loss in the varieties ancestral to English.
+
+#### Old English evidence
+
+The Paris Psalter has *tō his bedde* ‘to his bed’ and *eall his* [bedd]{.iv lang=oe sort=bedd role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:16" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:16:1"} ‘all his bed’ in Psalm 40.3. The former is dative and the latter is the object of *onwent*. *Beowulf* 1791 attests [beddes]{.iv lang=oe sort=beddes role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:16" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:16:2"} with *nēosan*, and 1240 has [beddum]{.iv lang=oe sort=beddum role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:16" occ_id="Germanic/docs/lexeme_reports/model_entries/2340-bed-bedd.model.md:16:3"} beside *bolstrum*. The isolated Épinal–Erfurt gloss *bedd* does not establish vernacular case [@Thorpe1835, p. 99; @Pheifer1974, no. 243].
+
+#### Development to Old English
+
+Both histories select the dative [bádjai]{.recon} ‘to a bed’. Unstressed *ai* monophthongizes, the retained vowel protects *j* through gemination, and the double survives umlaut, shortening, and glide loss: \emph{*bádjai → bádjē → báddjē → bedde}. The inherited direct [bádją]{.recon} gives A \emph{*bede} and B2 *bedd*. In A the attested direct double can come from protected forms or the direct plural; the availability of those donors does not establish transfer [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23].
 
 ### beech — OE _bōc_
 
@@ -3254,20 +3319,20 @@ From [xárbistuz]{.recon} ‘harvest’, Anglo-Frisian brightening, breaking, an
 
 The Old English form here, _hierfest_, represents the regular native West Saxon outcome discussed by Bammesberger and Ringe-Taylor. The attested Old English lexical tradition, however, is chiefly _hærfest_ 'harvest' / _herfest_ 'harvest', commonly treated as non-West-Saxon or Anglian material in West Saxon transmission [@Bammesberger1997; @RingeTaylor2014].
 
-### hedge — OE _heġġ_
+### hay — OE _hīeġ_
 
-Derivation: _\*xágjaz_ > _heġġ_ (regular).
+Derivation: _\*xáwją_ > _hīeġ_ (regular).
 
 #### Derivation trace
 
-Proto input: _\*xágjaz_
+Proto input: _\*xáwją_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.388\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.582\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.339\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.630\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -3276,8 +3341,7 @@ Proto input: _\*xágjaz_
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc J Gemination} & \emph{*xággjaz} \\
-\mbox{EAF Final Z Deletion} & \emph{*xággja} \\
+\mbox{PWGmc J Gemination} & \emph{*xáwwją} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -3291,11 +3355,72 @@ Proto input: _\*xágjaz_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc Final Bare A Loss} & \emph{*xággj} \\
-\mbox{EAF Brightening} & \emph{*xæggj} \\
-OE Velar Fricative Palatalization & \emph{*çæggj} \\
-\mbox{OE Velar Palatalization} & \emph{*çæʤʤj} \\
-\mbox{OE I Umlaut} & \emph{*çeʤʤj} \\
+\mbox{OE Awwj Resolution} & \emph{*xáują} \\
+\mbox{OE Au Brightening} & \emph{*xáeują} \\
+\mbox{OE Diphthong Leveling} & \emph{*xēają} \\
+OE Velar Fricative Palatalization & \emph{*çēają} \\
+OE Heavy Syllable Nasal Apocope & \emph{*çēaj} \\
+\mbox{OE I Umlaut} & \emph{*çīej} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _hīeġ_
+
+#### Old English evidence
+
+Hecht's edition of the Old English *Dialogues* prints direct [heig]{.iv lang=oe sort=heig role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:1"}; compare [hig]{.iv lang=oe sort=hig role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:2"} and apparatus [heg]{.iv lang=oe sort=heg role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:3"} [@Hecht1900, p. 36, ll. 2, 13]. The normalized comparison is *hīeġ*. The phrase *mid hig* attests oblique use but not a preserved dative ending.
+
+#### Development to Old English
+
+B2 retains the nasal ending through gemination of the glide-bearing stem and preserves palatal conditioning on the labial before low-vowel resolution and mutation [@Campbell1959, p. 46, §120.2; @RingeTaylor2014, pp. 246--250]. A instead strands and vocalizes the singleton glide; the route passes through \emph{*hæwi} and ends in \emph{*hei}. A derives the protected double, but no independently attested protected target with the required ending has been verified. The inherited direct comparison stays in both denominators; A's mismatch is explicit rather than repaired with a reconstructed oblique.
+
+### hedge — OE _heġġ_
+
+Derivation: _\*xágjō_ > _heġġ_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*xágjō_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc J Gemination} & \emph{*xággjō} \\
+\mbox{PNWGmc Final Long O Raising} & \emph{*xággju} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Brightening} & \emph{*xæggju} \\
+OE Velar Fricative Palatalization & \emph{*çæggju} \\
+\mbox{OE Velar Palatalization} & \emph{*çæʤʤju} \\
+\mbox{OE I Umlaut} & \emph{*çeʤʤju} \\
+\mbox{OE High Vowel Apocope} & \emph{*çeʤʤj} \\
 \mbox{OE J Loss After Heavy} & \emph{*çeʤʤ} \\
 \end{tabularx}
 \end{minipage}
@@ -3309,11 +3434,11 @@ Old English form: _heġġ_
 
 #### Reconstruction and comparative evidence
 
-The derivational input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the _heġġ_ 'hedge' type [@Campbell1959].
+Kroonen connects feminine [hecg]{.iv lang=oe sort=hecg role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21:1"} ‘hedge’ and OHG [heckia]{.iv lang=ohg sort=heckia role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21:2"}, [heggia]{.iv lang=ohg sort=heggia role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21:3"} with [hagjō-]{.iv .recon lang=pgmc sort=hagjo role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21:4"} ‘hedge’, separately from the masculine formation represented by ON [heggr]{.iv lang=on sort=heggr role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21:5"} ‘bird cherry’. Orel associates masculine [xaǥjaz]{.iv .recon lang=pgmc sort=xagjaz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21:6"} ‘hedge’ with OE [hege]{.iv lang=oe sort=hege role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2069-hedge-heġġ.model.md:21:7"} ‘hedge’. The two are formations of the same lexical family, not interchangeable citation forms [@Kroonen2013, p. 198; @Orel2003, p. 150].
 
 #### Old English evidence
 
-Bosworth-Toller and Clark Hall record the noun under standard spellings _hecg_ 'hedge' / _heċġ_ 'hedge' [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the form compared here is normalized.
+The charter evidence distinguishes masculine [of þām hege]{.ex} ‘from the hedge’ from feminine [in þā hegce]{.ex} ‘into the hedge’ (Kemble, *Codex Diplomaticus* III 78.21 and 52.25, cited by Bosworth–Toller). The Supplement reassigns the doubled Bamborough spelling to the feminine; the spelling alone does not determine gender [@Toller1921, p. 528]. These are edition readings. The selected nominative is the normalized *heġġ* ‘hedge’, corresponding to lexicographic *hecg/heċġ* [@BosworthToller1898, s.v. *hege* and *hecg*; @ClarkHall1960].
 
 #### Development to Old English
 
@@ -3322,9 +3447,7 @@ This is the geminate-stop class, distinct from the singleton fricative in
 affrication had already occurred at the articulation checkpoint
 [@RingeTaylor2014, pp. 203–204; @Fulk2018, pp. 131–132].
 
-From [xágjaz]{.recon} ‘hedge’, the current serialized model first applies West Germanic j-gemination to produce a geminate stop; later Old English palatalization and loss of final _j_ produce _heġġ_ 'hedge'. This preserves the selected regular executable derivation, not independent evidence for the historical position of final low-vowel loss.
-
-Ringe and Taylor place broader oral/nasal low-vowel apocope before West Germanic j-gemination and distinguish stranded-glide outcomes from later paradigmatic leveling [@RingeTaylor2014, pp. 46--47]. The late oral-a fragment therefore does not establish an uninterrupted regular history of this selected nominative. Reconciling its formation and cell with that chronology remains open; no word-specific analogical repair or change to the selected reconstruction is asserted here.
+From [xágjō]{.recon} ‘hedge’, the long vowel preserves nonsyllabic *j* at West Germanic gemination. Palatalization and i-mutation lead to *heġġ*; the short nasal apocope controversy does not govern this ending. The masculine *hege* and its singleton obliques are a separate paradigm: extending the singleton from the masculine nominative is possible, but neither its direction of spread nor an alternative inherited formation is demonstrated here [@Ringe2017, p. 312; @RingeTaylor2014, pp. 44–47].
 
 #### Form note
 
@@ -3726,11 +3849,11 @@ The note's oblique [xurnăn]{.recon} 'horn' belongs to comparative stem backgrou
 
 ### hue — OE _hīew_
 
-Derivation: _\*xíwją_ > _hīew_ (regular).
+Derivation: citation reconstruction _\*xíwją_; form followed here _\*xíwjas_ > _hīewes_ (regular).
 
 #### Derivation trace
 
-Proto input: _\*xíwją_
+Proto input: _\*xíwjas_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -3746,7 +3869,7 @@ Proto input: _\*xíwją_
 \raggedright
 \vspace{0.2em}
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc J Gemination} & \emph{*xíwwją} \\
+\mbox{PWGmc J Gemination} & \emph{*xíwwjas} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -3759,13 +3882,14 @@ Proto input: _\*xíwją_
 \centering\textbf{Old English changes}\par
 \vspace{0.35em}
 \raggedright
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{OE Ew Long Diphthong} & \emph{*xíuwją} \\
-\mbox{OE J Glide IO} & \emph{*xīowją} \\
-OE Velar Fricative Palatalization & \emph{*çīowją} \\
-OE Heavy Syllable Nasal Apocope & \emph{*çīowj} \\
-\mbox{OE I Umlaut} & \emph{*çīewj} \\
-\mbox{OE J Loss After Heavy} & \emph{*çīew} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{OE Ew Long Diphthong} & \emph{*xíuwjas} \\
+\mbox{OE J Glide IO} & \emph{*xīowjas} \\
+\mbox{EAF Brightening Unstressed} & \emph{*xīowjæs} \\
+OE Velar Fricative Palatalization & \emph{*çīowjæs} \\
+\mbox{OE I Umlaut} & \emph{*çīewjæs} \\
+\mbox{OE Unstressed AE Merger} & \emph{*çīewjes} \\
+\mbox{OE J Loss After Heavy} & \emph{*çīewes} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -3774,11 +3898,11 @@ OE Heavy Syllable Nasal Apocope & \emph{*çīowj} \\
 }
 \endgroup
 
-Old English form: _hīew_
+Old English form: _hīewes_
 
 #### Reconstruction and comparative evidence
 
-The selected reconstruction is realized Proto-Germanic
+The citation reconstruction is realized Proto-Germanic
 \emph{*xíwją} 'form, appearance', a neuter *ja*-stem. It follows
 Ringe and Taylor's explicit PGmc [hiwją]{.iv .recon lang=pgmc sort=hiwja role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:23" occ_id="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:23:1"} 'form, appearance',
 normalized with CAPR's dorsal \emph{x} and lexical acute
@@ -3882,9 +4006,11 @@ not replaced by a summary of dictionary vowels.
 
 #### Old English evidence
 
-Campbell prints [hīew]{.iv lang=oe sort=hiew role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125" occ_id="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125:1"} 'form' beside *hīow* 'form' in the section that derives this stem type, alongside *nīowe*, *nīewe* 'new' and *glīow*, *glīw* 'mirth' [@Campbell1959, §120.2, p. 46]. He distinguishes non-West-Saxon io from West Saxon ie. CAPR selects *hīew* as the source-supported West Saxon counterpart, not as the only attested spelling. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
+Cotton [hiewes]{.iv lang=oe sort=hiewes role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125" occ_id="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125:1"} ‘of form, appearance’ in Ælfric's *Grammar* (Zupitza, p. 30, l. 11) is the witness for selected genitive *hīewes*. Campbell prints direct *hīew* beside *hīow* and distinguishes non-West-Saxon io from West Saxon ie [@Campbell1959, §120.2, p. 46]. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
 
 #### Development to Old English
+
+The genitive [xíwjas]{.recon} protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The checkpoints below illustrate the inherited direct form under B2 (and the compatibility cascade), not the selected derivation. A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
 
 Campbell's decisive class contrast is that awj and iwj share gemination
 but thereafter lose different glides: the low-vowel type yields the
@@ -3902,7 +4028,7 @@ proxy for their long īo [@RingeTaylor2014, p. 250].
 | English realization | \emph{*xīowją} | Long īo, distinct from ordinary ēo |
 | Palatal articulation and ending loss | \emph{*çīowj} | Independent dorsal history and reduction in the existing cascade |
 | Mutation | \emph{*çīewj} | Existing long-diphthong mutation conditioned by the retained palatal carrier |
-| Later glide loss and spelling | *hīew* | Retained w and the selected native orthography |
+| Later glide loss and spelling | *hīew* | Retained w in the direct comparison |
 
 These are CAPR's checkpoints, not diplomatic quotations of all the
 authors' intermediate forms. In particular, superscript j on a source
@@ -3931,8 +4057,8 @@ of redundancy. The earlier inherited-reanalysis placement remains a
 representative serialization, not a newly proved strict chronology
 [@Campbell1959, pp. 45--47; @RingeTaylor2014, pp. 53, 65--66, 171--175, 250].
 
-The contrast with *hīeġ* 'hay', from \emph{*xáwją}, remains exact:
-the selected inputs differ in one vowel and both geminate, but the
+The inherited direct inputs for hue and *hīeġ* 'hay', from \emph{*xáwją}, differ
+in one vowel. Both geminate in B2, but the
 low-vowel word loses w and retains the palatal consonant while hue
 retains w. The low-vowel resolution and subsequent fronting do not
 apply here [@Campbell1959, p. 46; @RingeTaylor2014, pp. 53, 250].
@@ -3947,6 +4073,68 @@ control for [SC029 OEAwwjResolution](#rule-OEAwwjResolution).
 The corrected input and distinct intermediate history now make that
 contrast scientifically informative rather than merely spelling-compatible.
 No additional lexeme or analogical mechanism is introduced.
+
+### kin — OE _cynn_
+
+Derivation: citation reconstruction _\*kúnją_; form followed here _\*kúnjas_ > _cynnes_ (regular).
+
+#### Derivation trace
+
+Proto input: _\*kúnjas_
+
+\begingroup
+\setlength{\fboxsep}{6pt}
+\noindent\fbox{%
+\begin{minipage}{0.97\linewidth}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Earlier Germanic changes}\par
+\vspace{0.35em}
+\raggedright
+\centering\textbf{Northwest and West Germanic}\par
+\raggedright
+\vspace{0.2em}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
+\mbox{PWGmc J Gemination} & \emph{*kúnnjas} \\
+\end{tabularx}
+\vspace{0.6em}
+\centering\textbf{Early Anglo-Frisian}\par
+\raggedright
+\vspace{0.2em}
+\raggedright [no change]\par
+\end{minipage}
+&
+\begin{minipage}[t]{\linewidth}
+\centering\textbf{Old English changes}\par
+\vspace{0.35em}
+\raggedright
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{0.25em}}}
+\mbox{EAF Brightening Unstressed} & \emph{*kúnnjæs} \\
+\mbox{OE I Umlaut} & \emph{*kynnjæs} \\
+\mbox{OE Unstressed AE Merger} & \emph{*kynnjes} \\
+\mbox{OE J Loss After Heavy} & \emph{*kynnes} \\
+\end{tabularx}
+\end{minipage}
+\\
+\end{tabular}
+\end{minipage}%
+}
+\endgroup
+
+Old English form: _cynnes_
+
+#### Reconstruction and comparative evidence
+
+Kroonen reconstructs neuter [kunja-]{.iv .recon lang=pgmc sort=kunja role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10:1"} ‘clan’, distinct from the homonym ‘omen’, from Gothic [kuni]{.iv lang=goth sort=kuni role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10:2"}, Old Norse [kyn]{.iv lang=on sort=kyn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10:3"}, Old Saxon [kunni]{.iv lang=os sort=kunni role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:10:4"} and other cognates [@Kroonen2013, p. 351].
+
+#### Old English evidence
+
+The selected genitive *cynnes* ‘of stock’ stands with the agreeing adjective in *Sirofenisces cynnes*, West Saxon Mark 7:26 (Bosworth–Toller, s.v. *hǣþen*); compare *Exodus* 228 and 436. *Exodus* 352 has dative [cynne]{.iv lang=oe sort=cynne role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:14:1"} in *cynn æfter cynne*. Psalm 23.6 prints nominative [cyn]{.iv lang=oe sort=cyn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:14:2"}; the Latin and singular demonstrative confirm the construction. That single-*n* spelling and the separate [cynn]{.iv lang=oe sort=cynn role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2341-kin-cynn.model.md:14:3"} spelling are not interchangeable evidence for historical quantity. The compound *moncynnæs* in the Moore Bede is corroboration, not a simplex token [@BosworthToller1898; @Thorpe1835, p. 51].
+
+#### Development to Old English
+
+Both models select genitive [kúnjas]{.recon}. The unchanged ending protects the glide while *n* doubles. Unstressed brightening, umlaut, the unstressed vowel merger and glide loss give \emph{*kúnjas → kúnnjas → kynnjæs → kynnes}, written *cynnes*. Direct [kúnją]{.recon} instead gives A \emph{*cyne}. B2 gives \emph{*kunnją → kynni → kynn → kyn}: high-vowel loss precedes final simplification. A possible source for remodelling in A is the protected double; neither the compound *cyne- nor the final written quantity dates the transfer [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23].
 
 ### lead — OE _lǣdan_
 
@@ -5193,18 +5381,18 @@ qualification [@Hill2017, pp. 153--156].
 
 ### net — OE _nett_
 
-Derivation: _\*nátją_ > _nett_ (regular).
+Derivation: citation reconstruction _\*nátją_; form followed here _\*nátjai_ > _nette_ (regular).
 
 #### Derivation trace
 
-Proto input: _\*nátją_
+Proto input: _\*nátjai_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
 \noindent\fbox{%
 \begin{minipage}{0.97\linewidth}
 \small
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.359\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.611\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.485\linewidth}@{\hspace{0.030\linewidth}}>{\raggedright\arraybackslash}p{0.485\linewidth}@{}}
 \begin{minipage}[t]{\linewidth}
 \centering\textbf{Earlier Germanic changes}\par
 \vspace{0.35em}
@@ -5212,8 +5400,9 @@ Proto input: _\*nátją_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.24\linewidth}@{\hspace{0.25em}}}
-\mbox{PWGmc J Gemination} & \emph{*náttją} \\
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
+PNWGmc Unstressed Ai Monophthongization & \emph{*nátjē} \\
+\mbox{PWGmc J Gemination} & \emph{*náttjē} \\
 \end{tabularx}
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
@@ -5227,10 +5416,10 @@ Proto input: _\*nátją_
 \vspace{0.35em}
 \raggedright
 \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Brightening} & \emph{*nættją} \\
-OE Heavy Syllable Nasal Apocope & \emph{*nættj} \\
-\mbox{OE I Umlaut} & \emph{*nettj} \\
-\mbox{OE J Loss After Heavy} & \emph{*nett} \\
+\mbox{EAF Brightening} & \emph{*nættjē} \\
+\mbox{OE I Umlaut} & \emph{*nettjē} \\
+OE Unstressed Long Vowel Shortening & \emph{*nettje} \\
+\mbox{OE J Loss After Heavy} & \emph{*nette} \\
 \end{tabularx}
 \end{minipage}
 \\
@@ -5239,7 +5428,7 @@ OE Heavy Syllable Nasal Apocope & \emph{*nættj} \\
 }
 \endgroup
 
-Old English form: _nett_
+Old English form: _nette_
 
 #### Reconstruction and comparative evidence
 
@@ -5247,15 +5436,15 @@ Orel gives [natjan]{.recon} ‘net’ with Old English [_nett_]{.iv lang=oe sort
 
 #### Old English evidence
 
-Clark Hall and Bosworth-Toller record [_nett_]{.iv lang=oe sort=nett role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:25:1"} 'net' as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959].
+The Paris Psalter 89.10 attests dative *nette* ‘net’ in a prepositional phrase [@Thorpe1835, Psalm 89.10]. Lindisfarne Luke 5:6 has nominative [net]{.iv lang=oe sort=net role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:25:1"}; John 21:6 has accusative [nett]{.iv lang=oe sort=nett role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:25" occ_id="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:25:2"}. Final single spellings do not alone establish historical singleton quantity [@Campbell1959].
 
 #### Development to Old English
 
-From [nátją]{.recon} ‘net’, West Germanic j-gemination first gives [náttją]{.recon} ‘net’. Later brightening, loss of the weak ending, and loss of final _j_ after a heavy stem yield [_nett_]{.iv lang=oe sort=nett role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:29" occ_id="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:29:1"} 'net', so the development represented here is regular [@Fulk2018].
+In both models, [nátjai]{.recon} gives \emph{*nátjē} by monophthongization. The vowel protects the glide through gemination, and brightening, umlaut, shortening and glide loss give *nette*. Direct [nátją]{.recon} loses its nasal ending first in A and the stranded glide vocalizes, giving \emph{*nete}. In B2 [náttją]{.recon} precedes ending loss and yields *nett*. The attested direct double decides between these histories only if inherited rather than extended from a protected cell [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23].
 
 #### Form note
 
-Spellings in _net_ can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is [_nett_]{.iv lang=oe sort=nett role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2138-net-nett.model.md:33:1"} 'net' [@Campbell1959; @Orel2003].
+The direct spelling remains the citation form and a control rather than the Old English form here.
 
 ### nightmare — OE _mære_
 
@@ -14846,11 +15035,11 @@ attested Old English form.
 
 ### rest — OE _ræste_
 
-Derivation: citation reconstruction _\*rastō_; form followed here _\*rástōz_ > _ræste_ (late analogy).
+Derivation: citation reconstruction _\*rastō_; form followed here _\*rástǭ_ > _ræste_ (late analogy).
 
 #### Derivation trace
 
-Proto input: _\*rástōz_
+Proto input: _\*rástǭ_
 
 \begingroup
 \setlength{\fboxsep}{6pt}
@@ -14865,9 +15054,7 @@ Proto input: _\*rástōz_
 \centering\textbf{Northwest and West Germanic}\par
 \raggedright
 \vspace{0.2em}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{0.55em}}>{\raggedright\arraybackslash}p{0.14\linewidth}@{\hspace{0.25em}}}
-\mbox{EAF Final Z Deletion} & \emph{*rástō} \\
-\end{tabularx}
+\raggedright [no change]\par
 \vspace{0.6em}
 \centering\textbf{Early Anglo-Frisian}\par
 \raggedright
@@ -14895,48 +15082,17 @@ OE Unstressed Long Vowel Shortening & \emph{*ræstæ} \\
 
 Old English form: _ræste_
 
-#### Reconstruction and comparative evidence
+#### Reconstruction and Old English evidence
 
-Kroonen treats the noun as a feminine ō-stem [_\*rastō-_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:1"}, continued by Old English
-[_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22:1"} 'rest' [@Kroonen2013, 445]. The derivational input [rástōz]{.iv .recon lang=pgmc sort=rastoz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:22:2"} ‘rest’ therefore does not replace
-the lexeme-level headword. It identifies one oblique singular cell on the side of
-the paradigm that yields _ræste_ 'rest'.
+Kroonen treats the noun as a feminine ō-stem [_\*rastō-_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:1"}, continued by Old English [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:2"} ‘rest’ [@Kroonen2013, p. 405]. The selected [rástǭ]{.iv .recon lang=pgmc sort=rasto role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:21:3"} ‘rest’ is the independently reconstructed accusative singular of this stem, not a substitute for its nominative citation reconstruction [@Ringe2017, p. 312; @RingeTaylor2014, pp. 299–300].
 
-The source tradition used here labels that cell specifically as genitive
-singular, but the broader local synthesis of the ō-stem paradigm shows that the
-oblique singulars converge on the same front-vocalic _ræste_ 'rest' side, in contrast
-to a nominative singular that would remain _rast_ 'rest'.
-
-#### Old English evidence
-
-The ordinary Old English citation form is [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:33" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:33:1"} 'rest' [@Kroonen2013, 445]. Clark
-Hall likewise gives [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34:1"} 'rest' [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:34:2"} 'rest', including prepositional
-examples such as [on ræste]{.ex} 'at rest' and [tó ræste]{.ex} 'to rest' [@BosworthToller1898, 121].
-
-The comparison form used here is therefore an attested oblique [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:37" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:37:1"} 'rest', not a
-reconstructed surrogate. The dictionary headword [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:38" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:38:1"} 'rest' remains an equally real
-part of the Old English record.
+The direct object [þā ēcean ræste]{.ex} ‘the eternal rest’ in *Blickling Homilies* 101.26 (Morris) supplies the accusative. The *Boethius* passage with [sēo ræst]{.ex} ‘the rest’ and [tō ræste]{.ex} ‘to rest’ (ch. 25, Fox 88.29–32) attests nominative and dative respectively; [on ræste]{.ex} ‘at rest’ gives another prepositional dative. These are not genitive attestations. A genitive construal is possible in *Guthlac B* 1068, [him ræste nēod]{.ex} ‘he needed rest’, without using that less secure cell as the selected comparison [@BosworthToller1898, s.v. *ræst*; @ClarkHall1960, p. 239].
 
 #### Development to Old English
 
-Once final _\*z_ is lost, the derivational input moves through the front-vocalic
-oblique side of the paradigm rather than the back-vocalic nominative side. In
-the modeled derivation, the surviving final long vowel is first exposed,
-unrounded, fronted, shortened, and then reduced to the final _-e_ of _ræste_ 'rest'.
+The accusative long nasal ending does not undergo final short nasal apocope or the raising of final oral long *ō*. Its front-vocalic ending in the English derivation preserves root fronting and becomes *-e*, giving [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:1"} ‘rest’. The reconstructed dative takes a different route, Proto-Germanic [rástōi]{.iv .recon lang=pgmc sort=rastoi role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:2"} to West Germanic [rástē]{.iv .recon lang=pwgmc sort=raste role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:3"}; the model yields *ræste* from the later input but does not admit the Proto-Germanic form. Genitive [rástōz]{.iv .recon lang=pgmc sort=rastoz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:4"} ‘of rest’ remains a separate comparison: earlier *z*-loss in the experimental cascades exposes the oral ending to raising; that interaction does not occur in the accusative [@RingeTaylor2014, pp. 61, 299–300].
 
-The key point is the paradigm split. Nominative [rastō]{.recon} ‘rest’ yields a regular _rast_ 'rest',
-whereas the selected oblique input yields _ræste_ 'rest'. The later citation form _ræst_ 'rest'
-is best explained as leveling from that oblique _ræst-_ stem.
-
-#### Paradigm comparison
-
-The comparison below sets the relevant forms side by side. It distinguishes the nominative citation form
-from the oblique singular chosen here.
-
-| PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [_\*rastō_]{.iv lang=pgmc sort=rasto role=source_protoform source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59:1"} | expected regular outcome _rast_ | [_ræst_]{.iv lang=oe sort=raest role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:59:2"} 'rest' | useful background, but not the cell that matches attested oblique _ræste_ |
-| selected oblique singular | [_\*rástōz_]{.iv lang=pgmc sort=rastoz role=selected_input source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:1"} | regular output: [_ræste_]{.iv lang=oe sort=raeste role=regular_output source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:2"} 'rest' | [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:60:3"} 'rest' | exact match between derivational input and attested OE oblique form |
+The citation nominative [rastō]{.recon} ‘rest’ gives reconstructed \emph{*rast} in the cascade. The attested *ræst* can be explained by extension of the independently attested front-vocalic oblique stem into the nominative. This is a hypothesis about the lemma’s paradigm, not an analogy required to derive the selected accusative. The _late_analogy_ classification records why the inherited nominative is not the selected route to the attested stem.
 
 ### shoulder — OE _sċuldrum_
 

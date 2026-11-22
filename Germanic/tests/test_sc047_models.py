@@ -234,3 +234,32 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
         for key, row in source.items():
             assert all(active[key][field] == expected for field, expected in row.items())
         assert all(active[key]["outputs"] == [active[key]["counterpart"]] for key in shared)
+
+
+def test_shared_book_indexes_admitted_entries_and_comparative_evidence():
+    docs = models.ROOT / "docs"
+    with (docs / "assembly/manifest_all_by_class.tsv").open(encoding="utf-8") as stream:
+        manifest = list(csv.DictReader(stream, delimiter="\t"))
+    book = (docs / "assembly/capr_book_draft_alpha_01.md").read_text(encoding="utf-8")
+    for key, headword, target in (("2340", "bedd", "bedde"), ("2341", "cynn", "cynnes")):
+        row, = [entry for entry in manifest if entry["row_id"] == key]
+        assert row["counterpart"] == target
+        dossier = models.ROOT.parent / row["model_entry_path"]
+        assert dossier.with_name(dossier.name.replace(".model.md", ".source_ledger.md")).is_file()
+        label = f"{row['lexical_item']} — OE"
+        chapter, = [section for section in book.split("\n## ") if section.startswith(label)]
+        assert headword in chapter.splitlines()[0]
+        assert f"@\\iventry{{{target}}}" in chapter
+    with (docs / "book/index_verborum_print_main.tsv").open(encoding="utf-8") as stream:
+        entries = {(row["language"], row["form"], row["form_role"])
+                   for row in csv.DictReader(stream, delimiter="\t")}
+    assert {("oe", "bedde", "target_form"), ("oe", "cynnes", "target_form"),
+            ("oe", "nette", "target_form"), ("oe", "hīewes", "target_form"),
+            ("oe", "hīeġ", "target_form"), ("oe", "heġġ", "target_form"),
+            ("oe", "ræste", "target_form"), ("oe", "hiewes", "comparison_form"),
+            ("oe", "hege", "comparison_form"), ("pwgmc", "rástē", "comparison_form"),
+            ("pgmc", "rástōz", "comparison_form"),
+            ("oe", "bedd", "comparison_form"), ("oe", "cyn", "comparison_form"),
+            ("ohg", "peti", "comparison_form"), ("os", "feni", "comparison_form"),
+            ("ofris", "fennem", "comparison_form"),
+            ("oe", "wicg", "comparison_form")} <= entries

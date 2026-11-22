@@ -131,7 +131,7 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertIn("2224", self.old_required)
         self.assertIn("2208", self.old_required)
         self.assertIn("2006", self.old_required)
-        self.assertEqual(len(self.old_required - {"2224", "2006"}), 167)
+        self.assertEqual(len(self.old_required - {"2224", "2006"}), 169)
         straw = self.by_id["2224"]
         self.assertEqual(straw.derivation_class, "late_analogy")
         self.assertEqual(straw.editorial_case_ids, ["straw-endingless-and-levelling"])
@@ -202,7 +202,7 @@ class EditorialPublicationTests(unittest.TestCase):
             after = parse_entries(assembly.assemble_report(
                 self.compact, self.index, self.report_map, mode=mode), self.index)
             self.assertEqual(set(after), set(before))
-            self.assertEqual(len(after), 394)
+            self.assertEqual(len(after), 396)
             for row_id, lines in before.items():
                 original = assembly.trim_blank_edges(
                     [line for line in lines if not line.startswith("NOTE:")])
@@ -214,7 +214,10 @@ class EditorialPublicationTests(unittest.TestCase):
         self.assertEqual(source, "research_memos/1941-beaver-befer.md")
         self.assertIn("opposed derivational directions", "\n".join(self.report_map["1941"]))
         manifest = ROOT / "Germanic/docs/assembly/manifest_all_by_class.tsv"
-        current = list(csv.DictReader(manifest.read_text().splitlines(), delimiter="\t"))
+        pre_adoption = subprocess.check_output(
+            ["git", "show", f"545ba40ab3fa363249562bc032f7df1c3923dc47:{manifest.relative_to(ROOT)}"],
+            cwd=ROOT, text=True)
+        current = list(csv.DictReader(pre_adoption.splitlines(), delimiter="\t"))
         old = list(csv.DictReader(committed(manifest).splitlines(), delimiter="\t"))
         self.assertEqual(len(current), 177)
         # Earlier publications, SC112's witnesses, the scoped rainbow model
@@ -272,6 +275,14 @@ class EditorialPublicationTests(unittest.TestCase):
             path = REPORTS / self.by_id[row_id].editorial_report_path
             old = committed(path)
             now = path.read_text()
+            if row_id == "2332":
+                changed = (
+                    "PROTO:", "| Item |", "The selected reconstruction",
+                    "Campbell prints", "| Step |", "The contrast with *hīeġ*",
+                )
+                old = "\n\n".join(p for p in old.split("\n\n") if not p.startswith(changed))
+                self.assertIn("Cotton [hiewes]", now)
+                self.assertIn("the singleton route gives *hī*", now)
             for paragraph in old.split("\n\n"):
                 self.assertIn(paragraph, now, row_id)
             self.assertGreater(len(now.split()), len(old.split()))

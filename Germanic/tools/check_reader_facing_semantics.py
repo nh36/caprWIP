@@ -1370,15 +1370,16 @@ def run_manifest_consistency() -> None:
                         f"Row {row_id}: heading lexical_item {heading_lex!r} does not match manifest {lex_item!r}"
                     )
 
-        # Check heading counterpart — must match manifest counterpart exactly
-        # (heading may list multiple forms as "form1, form2" — counterpart must be in list)
+        # An oblique selection can keep the citation form in its stable dossier title.
         heading_counterpart = meta.get("heading_counterpart", "")
         manifest_counterpart = row.get("counterpart", "")
         if heading_counterpart and manifest_counterpart:
-            # The heading may list multiple forms; the manifest counterpart should appear in them
-            if manifest_counterpart not in heading_counterpart:
+            expected_citation_title = f"{row_id}-{lex_item}-{heading_counterpart}.model.md"
+            if (manifest_counterpart not in heading_counterpart
+                    and entry_path.name != expected_citation_title):
                 mismatches.append(
-                    f"Row {row_id} ({lex_item}): heading counterpart {heading_counterpart!r} doesn't contain manifest counterpart {manifest_counterpart!r}"
+                    f"Row {row_id} ({lex_item}): heading form {heading_counterpart!r} "
+                    f"is neither selected ({manifest_counterpart!r}) nor the stable dossier's citation form"
                 )
 
         for field, manifest_val, entry_val in checks:

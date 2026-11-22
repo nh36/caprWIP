@@ -55,7 +55,7 @@ class HueAdoptionTests(unittest.TestCase):
                          self.previous["summary"]["legacy_subset_sha256"])
         corpus = next(row for row in rows(ROOT / "Germanic/data/germanic-aligned-final.tsv")
                       if row["ID"] == "2332")
-        self.assertEqual((corpus["PROTO"], corpus["PROTOFORM"]), ("*xíwją", "*xíwją"))
+        self.assertEqual((corpus["PROTO"], corpus["PROTOFORM"]), ("*xíwją", "*xíwjas"))
         self.assertEqual(corpus["DERIVATION_CLASS"], "regular")
 
     def test_rejects_undeclared_hue_and_other_row_drift(self):

@@ -54,7 +54,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 1985	day	dæġ	*dágaz	pgmc	*dágaz	pgmc		equality_convention	regular	1	stressed	final
 1986	deal	dǣl	*dáiliz	pgmc	*dáiliz	pgmc		equality_convention	regular	1	stressed	final
 1987	deed	dǣd	*dḗdiz	pgmc	*dḗdiz	pgmc		equality_convention	regular	1	stressed	final
-1988	deer	dēor	*déuzą	pgmc	*déuzą	pgmc		equality_convention	regular	1	stressed	final
+1988	deer	dēora	*déuzą	pgmc	*déuzô	pgmc		explicit_sidecar	regular	1	stressed	final
 1989	dew	dēaw	*dáwwō	pgmc	*dáwwō	pgmc		equality_convention	regular	1	stressed	final
 1990	dill	dile	*déljaz	pgmc	*déliz	pgmc		explicit_sidecar	early_analogy	1	stressed	final
 1991	do	dōn	*dōną	pgmc	*dōną	pgmc		equality_convention	regular	1	stressed	final
@@ -135,7 +135,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2066	hearth	heorþ	*xérθaz	pgmc	*xérθaz	pgmc		equality_convention	regular	1	stressed	final
 2067	heath	hǣþ	*xáiθiz	pgmc	*xáiθiz	pgmc		equality_convention	regular	1	stressed	final
 2068	heaven	heofon	*xémenaz	pgmc	*xébun	nsgmc		explicit_sidecar	early_analogy	1	stressed	final
-2069	hedge	heġġ	*xágjaz	pgmc	*xágjaz	pgmc		equality_convention	regular	1	stressed	final
+2069	hedge	heġġ	*xágjō	pgmc	*xágjō	pgmc		equality_convention	regular	1	stressed	final
 2070	helm	helm	*xélmaz	pgmc	*xélmaz	pgmc		equality_convention	regular	1	stressed	final
 2071	help	helpan	*xélpaną	pgmc	*xélpaną	pgmc		equality_convention	regular	1	stressed	final
 2072	help	help	*xélpō	pgmc	*xélpō	pgmc		equality_convention	regular	1	stressed	final
@@ -204,7 +204,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2135	need	nīed	*náudiz	pgmc	*náudiz	pgmc		equality_convention	regular	1	stressed	final
 2136	needle	nǣdl	*nḗθlō	pgmc	*nḗðlō	pgmc		explicit_sidecar	early_analogy	1	stressed	final
 2137	nest	nest	*nístą	pgmc	*nístą	pgmc		equality_convention	regular	1	stressed	final
-2138	net	nett	*nátją	pgmc	*nátją	pgmc		equality_convention	regular	1	stressed	final
+2138	net	nette	*nátją	pgmc	*nátjai	pgmc		explicit_sidecar	regular	1	stressed	final
 2139	nettle	netle	*nátilōn	pgmc	*nátilōn	pgmc		equality_convention	regular	1	stressed	final
 2140	night	niht	*náxtz	pgmc	*náxti	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2141	nightmare	mære	*márōn	pgmc	*márōn	pgmc		equality_convention	regular	1	stressed	final
@@ -218,7 +218,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2149	raven	hræfn	*xrábnaz	pgmc	*xrábnaz	pgmc		equality_convention	regular	1	stressed	final
 2150	read	rǣdan	*rḗdaną	pgmc	*rḗdaną	pgmc		equality_convention	regular	1	stressed	final
 2151	reek	rēac	*ráukiz	pgmc	*ráukaz	pgmc		explicit_sidecar	reconstructed_oe	1	stressed	final
-2152	rest	ræste	*rastō	pgmc	*rástōz	pgmc		explicit_sidecar	late_analogy	1	stressed	final
+2152	rest	ræste	*rastō	pgmc	*rástǭ	pgmc		explicit_sidecar	late_analogy	1	stressed	final
 2153	ride	rīdan	*rī́daną	pgmc	*rḯdaną	pgmc		explicit_sidecar	regular	1	stressed	final
 2154	rind	rind	*ríndō	pgmc	*ríndō	pgmc		equality_convention	regular	1	stressed	final
 2155	coat	rocc	*rúkkaz	pgmc	*rúkkaz	pgmc		equality_convention	regular	1	stressed	final
@@ -391,7 +391,7 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2328	sow	sāwan	*sḗaną	pgmc	*sḗaną	pgmc		equality_convention	regular	1	stressed	final
 2329	betray	lǣwan	*lḗwijaną	pgmc	*lḗwijaną	pgmc		equality_convention	regular	1	stressed	final
 2330	thought	þōhte	*θánxtē	pgmc	*θánxtē	pgmc		equality_convention	regular	1	stressed	final
-2332	hue	hīew	*xíwją	pgmc	*xíwją	pgmc		equality_convention	regular	1	stressed	final
+2332	hue	hīewes	*xíwją	pgmc	*xíwjas	pgmc		explicit_sidecar	regular	1	stressed	final
 2333	there	þǣr	*θár	pgmc	*θár	pgmc		equality_convention	regular	1	stressed	final
 2334	where	hwǣr	*xwár	pgmc	*xwár	pgmc		equality_convention	regular	1	stressed	final
 2335	filth	fȳlþe	*fūliþō	pgmc	*fūliþǭ	pgmc		explicit_sidecar	regular	1	stressed	final
@@ -399,3 +399,5 @@ row_id	concept	target	proto	proto_stage	protoform	input_stage	input_variety	stag
 2337	little	lȳtelu	*lūtilaz	pgmc	*lūtilō	pgmc		explicit_sidecar	regular	1	stressed	final
 2338	livestock	nīetenu	*nautīną	pgmc	*náutīnō	pgmc		explicit_sidecar	regular	1	stressed	final
 2339	dart	sċytel	*skutilaz	pgmc	*skútilaz	pgmc		explicit_sidecar	regular	1	stressed	final
+2340	bed	bedde	*bádją	pgmc	*bádjai	pgmc		explicit_sidecar	regular	1	stressed	final
+2341	kin	cynnes	*kúnją	pgmc	*kúnjas	pgmc		explicit_sidecar	regular	1	stressed	final

@@ -64,6 +64,12 @@ components and calls is unchanged.
 | Active catalogue (hay included) | 387/396 | 388/396 |
 | Newly admitted bed and kin | 2/2 | 2/2 |
 
+The unchanged compatibility cascade gives 388/396, compared with
+386/394 in the archived pre-adoption compatibility baseline. Every
+unmigrated row is identical and the same eight rows remain unmatched.
+The active compatibility output fingerprint is
+`51953ed3a411b10bfa551de996053bc805ba87525180c4bf13f9b1ba46d4ee0e`.
+
 The [full capture](captures/sc047-adoption-v1.json.gz) has 97
 registered paradigm traces and 13 supplementary probes per model.
 Their full results are identical to the supplemental research
@@ -87,6 +93,21 @@ additional deer transition relative to `update`.
 | 2298 wolf | *wolf → wulf* | Shared lowering |
 | 2300 wool | *woll → wull* | Shared lowering |
 
+The inherited direct controls remain distinct from the selected cells:
+
+| Direct singular | A | B2 |
+|---|---|---|
+| Net | *nete* | *nett* |
+| Bed | *bede* | *bedd* |
+| Kin | *cyne* | *cyn* |
+| Hay | *hei* | *hīeġ* |
+| Hue | *hī* | *hīew* |
+
+These diagnostics preserve the intermediate differences in doubling
+and final simplification. The 97 paradigm traces and 13 supplementary
+probes also preserve the protected donors, pledge and wicg, the later
+rest dative, both genitive quantities, and the lowering controls.
+
 Re-execute with the command in [results](results.md#lexical-expansion-capture)
 and add `--active`. Raw run SHA-256:
 `e7dd900f8ea01e10d2d5a5d4cf03541868926754ca0f5a6939928af525badbb1`.
@@ -94,3 +115,12 @@ Corpus SHA-256:
 `29f11c10e7cf8756c2708334fbd6947a4629ddcb9e69ac28bfbf9a920c5f9cf7`.
 Full executable-input hashes are embedded in the capture. The
 model capture alone is not an exact-commit strict certificate.
+
+The companion volumes and full alternative traces can be regenerated
+from that capture without rerunning Foma:
+
+```sh
+python3 Germanic/docs/models/sc047/publish.py \
+  Germanic/docs/models/sc047/captures/sc047-adoption-v1.json.gz \
+  .capr-work/adoption-models --pdf
+```

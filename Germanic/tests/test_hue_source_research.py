@@ -27,8 +27,8 @@ class HueSourceResearchTests(unittest.TestCase):
             row for row in experiments.corpus_rows(experiments.layout().corpus_tsv)
             if row["id"] == "2332"
         )
-        self.assertEqual(hue["proto"], "*xíwją")
-        self.assertEqual(hue["counterpart"], "hīew")
+        self.assertEqual(hue["proto"], "*xíwjas")
+        self.assertEqual(hue["counterpart"], "hīewes")
 
     def test_persisted_reports_prove_input_and_intermediate_changes_not_final_drift(self):
         data = experiments.load_recipes(DIRECTORY / "oe_hue_recipes.json")

@@ -2,15 +2,15 @@
 
 ## Corpus scan summary
 
-- Total current model entries found: **177**
-- Confident trace matches: **177**
+- Total current model entries found: **180**
+- Confident trace matches: **180**
 - Non-confident trace matches: **0**
 
 ## Counts by derivation class
 
 | Derivation class | Count |
 | :--- | ---: |
-| `regular` (Regular derivations) | 98 |
+| `regular` (Regular derivations) | 101 |
 | `attested_variant` (Attested variants and selected comparison forms) | 6 |
 | `early_analogy` (Early analogy and pre-Old-English input selection) | 35 |
 | `late_analogy` (Late analogy and paradigm-cell selection) | 28 |
@@ -27,7 +27,7 @@
 
 | Trace-match status | Count |
 | :--- | ---: |
-| `confident` | 177 |
+| `confident` | 180 |
 | `ambiguous` | 0 |
 | `low_confidence` | 0 |
 | `no_lexical_match` | 0 |
@@ -48,6 +48,10 @@
 
 | Row ID | File | Trigger |
 | :--- | :--- | :--- |
+| 2340 | `2340-bed-bedd.model.md` | title counterpart differs from metadata COUNTERPART |
+| 2332 | `2332-hue-hīew.model.md` | title counterpart differs from metadata COUNTERPART |
+| 2341 | `2341-kin-cynn.model.md` | title counterpart differs from metadata COUNTERPART |
+| 2138 | `2138-net-nett.model.md` | title counterpart differs from metadata COUNTERPART |
 | 2087 | `2087-knob-cnobba.model.md` | title counterpart differs from metadata COUNTERPART |
 | 2151 | `2151-reek-rēac.model.md` | title counterpart differs from metadata COUNTERPART |
 | 2227 | `2227-strew-strīeġan.model.md` | title counterpart differs from metadata COUNTERPART |

@@ -94,7 +94,7 @@ class LegacySubsetTests(unittest.TestCase):
 
     LEGACY_TSV = BASELINE_DIR / "cascade_baseline_outputs_legacy380.tsv"
     LEGACY_SHA = "fae656520e9ebf446854643907a1ba48a511877fc25b1fae39649d5b97e9a6cf"
-    ACTIVE_SHA = "145b92fe89d055e8a14e900cc0755ac3f4f1219b5ba815e10d111a057a016624"
+    ACTIVE_SHA = "1b53e382bb320caf05c795218fe626bf7d0fd8f4e19da3af7f4ef6190d7892ee"
 
     def setUp(self):
         self.assertTrue(self.LEGACY_TSV.exists(), f"missing {self.LEGACY_TSV}")
@@ -124,7 +124,8 @@ class LegacySubsetTests(unittest.TestCase):
         self.assertEqual([m["row_id"] for m in migrations],
                          ["2040", "2085", "2224", "2162", "2283", "2095", "2313", "2314",
                           "2302", "2011", "2201", "2282", "2053", "2335", "2208", "2006",
-                          "2141", "2016", "2141", "2016"])
+                          "2141", "2016", "2141", "2016",
+                          "1988", "2069", "2138", "2152", "2332"])
         import hashlib
         digest = hashlib.sha256()
         for row in selected:
@@ -397,7 +398,9 @@ class LegacySubsetTests(unittest.TestCase):
         previous = mod.read_baseline(
             BASELINE_DIR / "cascade_baseline_outputs_pre_sc069_flask_nompl.tsv",
             BASELINE_DIR / "cascade_baseline_summary_pre_sc069_flask_nompl.json")
-        current = mod.read_baseline(OUTPUTS_TSV, SUMMARY_JSON)
+        current = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_model_adoption.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc047_model_adoption.json")
         approval = json.loads(
             (BASELINE_DIR / "approved_flask_nompl_migration.json").read_text())
         mod.validate_cell_transition(previous, current, approval)
@@ -408,6 +411,21 @@ class LegacySubsetTests(unittest.TestCase):
             before["2016"], proto="*fláskōniz", proto_norm="fláskōniz",
             fst_input="fláskōniz", counterpart="flascan", outputs="flascan", match="1")
         assert (current["summary"]["matched"], current["summary"]["mismatched"]) == (386, 8)
+
+    def test_model_adoption_preserves_unmigrated_compatibility_rows(self):
+        mod = _load_module("cascade_baseline", TOOLS / "cascade_baseline.py")
+        previous = mod.read_baseline(
+            BASELINE_DIR / "cascade_baseline_outputs_pre_sc047_model_adoption.tsv",
+            BASELINE_DIR / "cascade_baseline_summary_pre_sc047_model_adoption.json")
+        before = {r["row_id"]: r for r in previous["records"]}
+        after = {r["row_id"]: r for r in self.current_rows}
+        assert len(before) == 394 and len(after) == 396
+        assert after.keys() - before.keys() == {"2340", "2341"}
+        assert not before.keys() - after.keys()
+        assert {k for k in before if before[k] != after[k]} == {
+            "1988", "2069", "2138", "2152", "2332"}
+        assert {k for k in before if before[k]["match"] == "0"} == {
+            k for k in after if after[k]["match"] == "0"}
 
     def test_later_admitted_migration_is_checked_but_not_added_to_legacy(self):
         import copy
@@ -481,7 +499,8 @@ class LegacySubsetTests(unittest.TestCase):
             previous["records"], old,
             [m for m in migrations if m["row_id"] not in {
                 "2224", "2162", "2283", "2095", "2313", "2314", "2302",
-                "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141", "2016"}],
+                "2011", "2201", "2282", "2053", "2208", "2335", "2006", "2141", "2016",
+                "1988", "2069", "2138", "2152", "2332"}],
         )), 387)
 
 

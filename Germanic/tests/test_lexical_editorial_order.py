@@ -160,7 +160,7 @@ class GeneratedManifestTests(unittest.TestCase):
 
     def test_sc112_witnesses_sit_at_their_alphabetical_positions(self):
         regular = [r["lexical_item"] for r in self.rows if r["class_bucket"] == "regular"]
-        self.assertEqual(len(regular), 98)
+        self.assertEqual(len(regular), 101)
         self.assertTrue({"little", "livestock", "dart", "flask"} <= set(regular))
         self.assertEqual(regular, sorted(regular))
         self.assertLess(regular.index("there"), regular.index("where"))

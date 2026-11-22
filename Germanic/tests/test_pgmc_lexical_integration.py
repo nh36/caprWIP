@@ -42,10 +42,10 @@ class IntegrationTests(unittest.TestCase):
         cls.cases = integration.table(ROOT / integration.DIRECTORY / "editorial_cases.tsv")
 
     def test_population_counts_and_unique_ids(self):
-        self.assertEqual(len(self.rows), 400)
-        self.assertEqual(len(self.editorial), 400)
-        for key, value in {"legacy": 380, "selected": 394, "audit": 400,
-                           "assembled": 177, "production_pilots": 11,
+        self.assertEqual(len(self.rows), 402)
+        self.assertEqual(len(self.editorial), 402)
+        for key, value in {"legacy": 380, "selected": 396, "audit": 402,
+                           "assembled": 180, "production_pilots": 11,
                            "format_tests": 1, "reviewed_rows": 25, "scoped_cases": 28}.items():
             with self.subTest(key=key):
                 self.assertEqual(self.stats[key], value)
@@ -54,7 +54,7 @@ class IntegrationTests(unittest.TestCase):
                            if self.rows[identifier]["legacy380"]}
         self.assertIn("2224", legacy_required)
         self.assertIn("2006", legacy_required)
-        self.assertEqual(len(required - {"2224", "2006"}), 167)
+        self.assertEqual(len(required - {"2224", "2006"}), 169)
         self.assertEqual(len(legacy_required - {"2224", "2006"}), 153)
         self.assertEqual(self.stats["required"], len(required))
         self.assertEqual(self.stats["legacy_current_required"], len(legacy_required))
@@ -62,7 +62,7 @@ class IntegrationTests(unittest.TestCase):
     def test_added_witnesses_and_research_only(self):
         self.assertEqual(self.stats["added_selected"],
                          ["2322", "2326", "2327", "2328", "2329", "2330", "2332",
-                          "2333", "2334", "2335", "2336", "2337", "2338", "2339"])
+                          "2333", "2334", "2335", "2336", "2337", "2338", "2339", "2340", "2341"])
         self.assertEqual(self.stats["research_only"],
                          ["1935", "1947", "1948", "1994", "2156", "2218"])
         for row_id in self.stats["research_only"]:
@@ -75,7 +75,7 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(self.stats["required_not_assembled"],
                          ["2055", "2120", "2327", "2328", "2329"])
         self.assertEqual(self.stats["assembled_not_required"],
-                         ["1933", "1955", "1989", "2018", "2029", "2044", "2074",
+                         ["1933", "1955", "1989", "2018", "2029", "2044", "2061", "2074",
                           "2113", "2137", "2148", "2185", "2200", "2283"])
         self.assertIn("/2055-", self.rows["2055"]["stable_id_material_paths"])
         self.assertNotIn("/2055-", self.rows["2054"]["stable_id_material_paths"])
@@ -95,7 +95,7 @@ class IntegrationTests(unittest.TestCase):
             "2283": ("*wéθruz", "*wéθruz", "weþer", "regular", "weþer"),
             "2326": ("*ízwiz", "*ízwiz", "ēow", "regular", "ēow"),
             "2330": ("*θánxtē", "*θánxtē", "þōhte", "regular", "þōhte"),
-            "2332": ("*xíwją", "*xíwją", "hīew", "regular", "hīew"),
+            "2332": ("*xíwją", "*xíwjas", "hīewes", "regular", "hīewes"),
             "2337": ("*lūtilaz", "*lūtilō", "lȳtelu", "regular", "lȳtelu"),
             "2338": ("*nautīną", "*náutīnō", "nīetenu", "regular", "nīetenu"),
             "2339": ("*skutilaz", "*skútilaz", "sċytel", "regular", "sċytel"),
@@ -128,10 +128,10 @@ class IntegrationTests(unittest.TestCase):
     def test_inventory_is_not_a_controversy_census(self):
         self.assertEqual(self.stats["routes"], {
             "candidate_comparison_review": 1, "focused_comparison_review": 91,
-            "ordinary_evidence_review": 298, "unit_comparability_review": 10})
+            "ordinary_evidence_review": 300, "unit_comparability_review": 10})
         unreviewed = [r for r in self.inventory if r["editorial_review"] == "not_editorially_reviewed"]
         # Little and current spindle publication join the prior scoped reviews.
-        self.assertEqual(len(unreviewed), 375)
+        self.assertEqual(len(unreviewed), 377)
         self.assertTrue(all(not r["reviewed_categories"] for r in unreviewed))
         self.assertEqual(self.editorial["2085"]["reviewed_categories"],
                          "non_substantive_difference;qualified_alternative")
@@ -265,8 +265,8 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual({p.name for p in first}, set(integration.OUTPUT_NAMES))
         rows = list(csv.DictReader(first[ROOT / integration.DIRECTORY / "population_crosswalk.tsv"]
                                    .splitlines(), delimiter="\t"))
-        self.assertEqual(len(rows), 400)
-        self.assertEqual(len({r["row_id"] for r in rows}), 400)
+        self.assertEqual(len(rows), 402)
+        self.assertEqual(len({r["row_id"] for r in rows}), 402)
 
     def test_graph_integration_follows_lexical_assembly(self):
         import artifact_graph

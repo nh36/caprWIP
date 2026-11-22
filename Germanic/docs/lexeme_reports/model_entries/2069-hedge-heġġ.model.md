@@ -18,7 +18,7 @@ DERIVATION_CLASS: regular
 
 ### Reconstruction and comparative evidence
 
-Kroonen connects feminine *hecg* ‘hedge’ and OHG *heckia, heggia* with [hagjō-]{.recon} ‘hedge’, separately from the masculine formation represented by ON *heggr* ‘bird cherry’. Orel associates masculine [xaǥjaz]{.recon} ‘hedge’ with OE *hege* ‘hedge’. The two are formations of the same lexical family, not interchangeable citation forms [@Kroonen2013, p. 198; @Orel2003, p. 150].
+Kroonen connects feminine [hecg]{.iv lang=oe sort=hecg role=comparison_form} ‘hedge’ and OHG [heckia]{.iv lang=ohg sort=heckia role=comparison_form}, [heggia]{.iv lang=ohg sort=heggia role=comparison_form} with [hagjō-]{.iv .recon lang=pgmc sort=hagjo role=source_protoform} ‘hedge’, separately from the masculine formation represented by ON [heggr]{.iv lang=on sort=heggr role=comparison_form} ‘bird cherry’. Orel associates masculine [xaǥjaz]{.iv .recon lang=pgmc sort=xagjaz role=comparison_form} ‘hedge’ with OE [hege]{.iv lang=oe sort=hege role=comparison_form} ‘hedge’. The two are formations of the same lexical family, not interchangeable citation forms [@Kroonen2013, p. 198; @Orel2003, p. 150].
 
 ### Old English evidence
 

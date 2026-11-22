@@ -73,7 +73,7 @@ class SC032AdjudicationTests(unittest.TestCase):
 
     def test_trace_is_fresh_and_complete(self):
         self.assertEqual(trace_provenance_problems(TRACE.read_text(encoding="utf-8")), [])
-        self.assertEqual(len(self.records), 394)
+        self.assertEqual(len(self.records), 396)
         self.assertEqual({"2333", "2334"} <= set(self.records), True)
         for identifier in ("2333", "2334"):
             forms = self.records[identifier][2]
@@ -135,8 +135,9 @@ class SC032AdjudicationTests(unittest.TestCase):
             legacy = {(row["concept"], row["proto"])
                       for row in csv.DictReader(handle, delimiter="\t")}
         firing_ids = set().union(*EXPECTED.values())
+        original_inputs = {"1988": ("deer", "*déuzą")}
         original = {identifier for identifier in firing_ids
-                    if self.records[identifier][:2] in legacy}
+                    if original_inputs.get(identifier, self.records[identifier][:2]) in legacy}
         self.assertEqual(original, firing_ids - {"2326", "2338"})
 
     def test_inherited_livestock_adds_exactly_the_atomic_aeu_firing(self):
@@ -167,10 +168,10 @@ class SC032AdjudicationTests(unittest.TestCase):
 
     def test_hue_knee_and_singleton_aw_are_negative_controls(self):
         hue = self.records["2332"][2]
-        self.assertEqual(hue["OEEwLongDiphthong"], "*x*íu*w*j*ą")
-        self.assertEqual(hue["OEJGlideIO"], "*x*īo*w*j*ą")
-        self.assertEqual(hue["OEDiphthongLeveling"], "*x*īo*w*j*ą")
-        self.assertEqual(hue["OEIUmlaut"], "*ç*īe*w*j")
+        self.assertEqual(hue["OEEwLongDiphthong"], "*x*íu*w*j*a*s")
+        self.assertEqual(hue["OEJGlideIO"], "*x*īo*w*j*a*s")
+        self.assertEqual(hue["OEDiphthongLeveling"], "*x*īo*w*j*a*s")
+        self.assertEqual(hue["OEIUmlaut"], "*ç*īe*w*j*æ*s")
         knee = self.records["2085"][2]
         self.assertEqual(knee["OEDiphthongLeveling"], "*k*n*é*w*ē")
         self.assertEqual(knee["OEBreaking"], "*k*n*éo*w*ē")

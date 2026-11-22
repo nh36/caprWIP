@@ -374,9 +374,9 @@ class FingerprintGuardTests(unittest.TestCase):
             "43a57847b70b39ec130b4b52a17065be8cedd0e5fe7c6cc801ae1bcecae9fe2c",
         )
         self.assertEqual(data["legacy_subset_sha256"],
-                         "145b92fe89d055e8a14e900cc0755ac3f4f1219b5ba815e10d111a057a016624")
+                         "1b53e382bb320caf05c795218fe626bf7d0fd8f4e19da3af7f4ef6190d7892ee")
         self.assertEqual(data["outputs_sha256"],
-                         "1bef3798e864ce1277511f9d9f6bf5c461dcbfa4608173849f4b467225e89727")
+                         "51953ed3a411b10bfa551de996053bc805ba87525180c4bf13f9b1ba46d4ee0e")
         previous = {
             row["row_id"]: row
             for row in csv.DictReader(

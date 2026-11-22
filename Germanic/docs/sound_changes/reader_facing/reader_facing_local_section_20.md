@@ -697,7 +697,7 @@ define PWGmcJGemination Ctx([
 ]);
 ```
 
-OE *nett* 'net' fixes the order because the syllabic-\emph{j} development would remove the glide that conditions gemination. If [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) precedes [SC010 PWGmcJGemination](#rule-PWGmcJGemination), PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred} rather than expected OE *nett* 'net'. Earlier movement of gemination changes no output.
+OE *nett* 'net' separates two predictions for the inherited direct singular. If early nasal loss strands the glide and it vocalizes before gemination, PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred}; if the ending protects the glide through gemination, the direct route gives *nett*. The attested geminate constrains the order only if it is inherited in that cell, rather than extended from a protected form such as the dative *nette* [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, §2.23].
 
 The chronology is phonologically transparent: the consonant must geminate before \emph{*j} ceases to be consonantal. The witness establishes no earlier boundary.
 
@@ -4315,7 +4315,7 @@ Ringe and Taylor reconstruct West Germanic loss of unstressed short oral \emph{*
 
 Loss of \emph{*z} before apocope is the economical West Germanic analysis, not a logical consequence of an endingless descendant. Old Norse demonstrates the possibility of the opposite order. The West Germanic survival of vowels before \emph{*s} and \emph{*r} favors the \emph{*z}-first account, while the possible Matronae-name counterexamples have uncertain linguistic affiliation and different syllabic positions [@RingeTaylor2014, p. 46]. The Frienstedt comb inscription \emph{kaba} 'comb', interpreted as \emph{kamba} and dated approximately 250--300 CE, provides a more concrete local witness: on that interpretation, \emph{*z} has gone while \emph{*a} remains. Fulk expressly cautions against extending that date to completed \emph{*z}-loss throughout West Germanic [@Fulk2018, p. 25, n. 1]. Neither observation supplies an exact universal date for apocope; the runic and Latinized evidence remains qualified [@RingeTaylor2014, p. 45, n. 4].
 
-The broader apocope also stranded glides, producing syllabic outcomes, and preceded West Germanic consonant gemination before \emph{*j}. Ringe and Taylor distinguish those early outcomes from later paradigmatic leveling [@RingeTaylor2014, pp. 46--47]. This is a historical constraint on the broader account, not a reason to date apocope from the late position of the following executable fragment. In particular, a successful geminated ja-stem output does not by itself establish an uninterrupted regular history of its selected nominative.
+Loss of exposed unstressed short oral \emph{*a} could strand a glide, as in masculine nominative singulars of light ja-stems after final \emph{*z} loss. Both historical models place short oral loss before [SC010 West Germanic j-gemination](#rule-PWGmcJGemination); they differ on short nasal loss. This historical distinction cannot be read off the compatibility cascade: its bare-vowel deletion fragment follows gemination and treats only the oral vowel [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, §2.23].
 
 ### SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss}
 
@@ -5068,14 +5068,16 @@ as histories of paradigms, not chosen by the fit of citation forms
 [@HoggFulk2011, pp. 20--21, §2.23;
 @Boutkan1995, pp. 209--213, 435--436].
 
-The executable position is later than that historical argument would
-suggest. Moving this fragment beside the oral loss changes no selected
-endpoint; its present position after restoration is not necessary.
-Moving it before gemination alone, however, removes vowel triggers
-still needed by the serialized u-lowering and changes the treatment
-of final consonants. Those dependencies explain limitations of the
-implementation, not a historically late date for apocope. The secondary
-final n of *dōn* 'do' must likewise be exposed only after
+The compatibility fragment deletes short final nasal \emph{*ą} after
+a consonant without testing syllable weight. It follows gemination,
+as does the oral fragment, and therefore does not implement the
+published split chronology. The two historical models put oral loss
+before gemination; A moves nasal loss there too, whereas B2 retains
+the nasal ending through gemination. Moving the nasal fragment alone
+removes triggers visible to u-lowering and exposes final consonants
+at a different point. These dependencies constrain implementation
+rather than date the historical changes. The secondary final
+n of *dōn* 'do' must likewise be exposed only after
 [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) has ceased to operate.
 
 Prior lowering is independently compatible with early loss:

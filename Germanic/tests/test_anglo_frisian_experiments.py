@@ -378,9 +378,9 @@ class ExperimentTests(unittest.TestCase):
 
     def test_live_selection_has_all_stable_ids(self):
         rows = experiments.corpus_rows(layout().corpus_tsv)
-        # The SC040 earthly admission adds exactly one selected identity.
-        self.assertEqual(len(rows), 394)
-        self.assertEqual(len({row["id"] for row in rows}), 394)
+        # Bed and kin extend the active intake, not these historical fixtures.
+        self.assertEqual(len(rows), 396)
+        self.assertEqual(len({row["id"] for row in rows}), 396)
         self.assertEqual(next(row["proto"] for row in rows if row["id"] == "2061"), "*xáwją")
 
     def test_fixtures_match_live_inputs_and_recipe_provenance(self):
@@ -415,7 +415,10 @@ class ExperimentTests(unittest.TestCase):
             with self.subTest(fixture=fixture["fixture_id"]):
                 row = corpus[fixture["row_id"]]
                 selected = fixture["selected_input"]
-                if fixture["row_id"] in migrations:
+                if fixture["row_id"] == "2332":
+                    self.assertEqual(selected, input_changes["2332"]["before"]["proto"])
+                    self.assertEqual((row["PROTOFORM"], row["COUNTERPART"]), ("*xíwjas", "hīewes"))
+                elif fixture["row_id"] in migrations:
                     migration = migrations[fixture["row_id"]]
                     self.assertEqual(selected, migration["old_proto"])
                     self.assertEqual(row["PROTOFORM"], migration["new_proto"])
@@ -430,7 +433,8 @@ class ExperimentTests(unittest.TestCase):
                 else:
                     self.assertEqual(fixture["input_stage"], stages[row["ID"]])
                 self.assertEqual(fixture["normalized_input"], experiments.oe_pipeline.normalize_proto(selected))
-                self.assertEqual(fixture["target"], row["COUNTERPART"])
+                expected = input_changes["2332"]["before"]["counterpart"] if fixture["row_id"] == "2332" else row["COUNTERPART"]
+                self.assertEqual(fixture["target"], expected)
                 self.assertIn(fixture["recipe"], recipes)
                 self.assertIn(fixture["probe"], probes)
                 self.assertIn(fixture["source_key"], keys)

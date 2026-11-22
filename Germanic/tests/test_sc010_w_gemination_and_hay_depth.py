@@ -57,7 +57,7 @@ AWJ_WITNESSES = {"hay": "hīeġ", "strew": "strīeġan"}
 
 # The *iwj witness: geminates at SC010 like the *awj words, but the later
 # resolution is restricted to the low-vowel type, so it must not fire here.
-IWJ_WITNESS = ("hue", "*xíwją", "hīew")
+IWJ_WITNESS = ("hue", "*xíwjas", "hīewes")
 
 # Structural non-members of the *w branch. These are engineering near-misses,
 # NOT independent demonstrations of the short-syllable conditioning: in every
@@ -356,7 +356,7 @@ class WGeminationRepairTests(unittest.TestCase):
                       f"{concept} must yield {expected}")
 
     def test_the_two_wj_types_diverge_after_the_geminate(self):
-        """The minimal pair hay : hue must differ only after gemination.
+        """The selected hay and hue cells must diverge after gemination.
 
         Both enter with a short vowel before *wj and both geminate. Thereafter
         the low-vowel word keeps its *j to the surface as orthographic g, and
@@ -367,7 +367,7 @@ class WGeminationRepairTests(unittest.TestCase):
         for block in (hay_block, hue_block):
             self.assertRegex(block, r"PWGmcJGemination: \S*\*w\*w\*j")
         self.assertIn("OUTPUTS: hīeġ", hay_block)
-        self.assertIn("OUTPUTS: hīew", hue_block)
+        self.assertIn("OUTPUTS: hīewes", hue_block)
 
     def test_negative_controls_do_not_geminate(self):
         """A broad *w branch must not create accidental geminates.

@@ -84,12 +84,12 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
         current = table(path.read_text())
         now = {row["row_id"]: row for row in current}
         self.assertEqual(len(current), len(now))
-        self.assertEqual((len(old), len(now)), (165, 177))
+        self.assertEqual((len(old), len(now)), (165, 180))
         self.assertEqual(set(now) - set(old), {
             "2148", "2333", "2334", "2335", "2336", "2201", "2282", "2006",
-            "2337", "2208", "2338", "2339"})
+            "2337", "2208", "2338", "2339", "2061", "2340", "2341"})
         self.assertEqual(set(old) - set(now), set())
-        self.assertEqual(sum(r["derivation_class"] == "regular" for r in current), 98)
+        self.assertEqual(sum(r["derivation_class"] == "regular" for r in current), 101)
         # Positions are editorial (see test_lexical_editorial_order); every
         # scientific column of every pre-existing entry must be unchanged.
         presentation = {"global_order", "class_order"}
@@ -121,6 +121,17 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
                     derivation_class="attested_variant", class_bucket="attested_variant",
                     section_title="Attested variants and selected comparison forms",
                     trace_match_basis="lexical item + PROTOFORM + PROTO + EXPECTED + OUTPUTS")
+            if row_id == "2069":
+                before = dict(before, proto="*xágjō", protoform="*xágjō")
+            if row_id == "2152":
+                before = dict(before, protoform="*rástǭ")
+            if row_id in {"2138", "2332"}:
+                protoform, target = {
+                    "2138": ("*nátjai", "nette"), "2332": ("*xíwjas", "hīewes"),
+                }[row_id]
+                before = dict(before, protoform=protoform, counterpart=target,
+                              notes="title counterpart differs from metadata COUNTERPART",
+                              trace_match_basis="lexical item + PROTOFORM + EXPECTED + OUTPUTS")
             self.assertEqual(
                 {k: v for k, v in after.items() if k not in presentation},
                 {k: v for k, v in before.items() if k not in presentation},

@@ -1,6 +1,6 @@
 # Missing lexeme reports for publish mode
 
-- Missing required production reports: 140
+- Missing required production reports: 142
 
 | ID | Concept | Counterpart | DERIVATION_CLASS | NOTE? | Reason |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -71,7 +71,7 @@
 | 2133 | navel | nafola | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
 | 2134 | neck | hnecca | early_analogy | no | DERIVATION_CLASS=early_analogy |
 | 2136 | needle | nǣdl | early_analogy | yes | NOTE, DERIVATION_CLASS=early_analogy |
-| 2138 | net | nett | regular | yes | NOTE |
+| 2138 | net | nette | regular | yes | NOTE |
 | 2140 | night | niht | late_analogy | yes | NOTE, DERIVATION_CLASS=late_analogy |
 | 2141 | nightmare | mære | regular | yes | NOTE |
 | 2143 | nose | nosu | early_analogy | no | DERIVATION_CLASS=early_analogy |
@@ -144,4 +144,6 @@
 | 2329 | betray | lǣwan | regular | yes | NOTE |
 | 2333 | there | þǣr | regular | yes | NOTE |
 | 2334 | where | hwǣr | regular | yes | NOTE |
+| 2340 | bed | bedde | regular | yes | NOTE |
+| 2341 | kin | cynnes | regular | yes | NOTE |
 

@@ -1,4 +1,4 @@
-=== DERIVATION_CLASS: regular (315) ===
+=== DERIVATION_CLASS: regular (317) ===
 
 
 
@@ -163,6 +163,31 @@ English Proto Input: *bébruz
 ### Orthography & surface
 
 Outcome: befer
+
+
+
+# bed
+PROTO: *bádjai
+EXPECTED: bedde
+OUTPUTS: bedde
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *bádjai
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PNWGmc Unstressed Ai Monophthongization: *bádjē<br>PWGmc J Gemination: *báddjē<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *bæddjē<br>OE I Umlaut: *beddjē<br>OE Unstressed Long Vowel Shortening: *beddje<br>OE J Loss After Heavy: *bedde |
+
+
+
+### Orthography & surface
+
+Outcome: bedde
+
+NOTE: Dative singular to his bedde, Paris Psalter 40.3 (Thorpe 1835 p.99).
 
 
 
@@ -1079,25 +1104,25 @@ NOTE: R/T vol.2 13823: PGmc *dēdiz > WS OE dǣd (not Anglian dēd)
 
 
 # deer
-PROTO: *déuzą
-EXPECTED: dēor
-OUTPUTS: dēor
+PROTO: *déuzô
+EXPECTED: dēora
+OUTPUTS: dēora
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *déuzą
+English Proto Input: *déuzô
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Rhotacism: *déurą<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *dēorą<br>OE Heavy Syllable Nasal Apocope: *dēor |
+| **Northwest and West Germanic**<br>EAF Rhotacism: *déurô<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Diphthong Leveling: *dēorô<br>OE Unstressed Long Vowel Shortening: *dēora |
 
 
 
 ### Orthography & surface
 
-Outcome: dēor
+Outcome: dēora
 
 
 
@@ -2733,7 +2758,7 @@ Outcome: hǣþ
 
 
 # hedge
-PROTO: *xágjaz
+PROTO: *xágjō
 EXPECTED: heġġ
 OUTPUTS: heġġ
 
@@ -2741,11 +2766,11 @@ OUTPUTS: heġġ
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *xágjaz
+English Proto Input: *xágjō
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc J Gemination: *xággjaz<br>EAF Final Z Deletion: *xággja<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Final Bare A Loss: *xággj<br>EAF Brightening: *xæggj<br>OE Velar Fricative Palatalization: *çæggj<br>OE Velar Palatalization: *çæʤʤj<br>OE I Umlaut: *çeʤʤj<br>OE J Loss After Heavy: *çeʤʤ |
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *xággjō<br>PNWGmc Final Long O Raising: *xággju<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *xæggju<br>OE Velar Fricative Palatalization: *çæggju<br>OE Velar Palatalization: *çæʤʤju<br>OE I Umlaut: *çeʤʤju<br>OE High Vowel Apocope: *çeʤʤj<br>OE J Loss After Heavy: *çeʤʤ |
 
 
 
@@ -2754,7 +2779,7 @@ English Proto Input: *xágjaz
 Old English Orthography: h*eġġ
 Outcome: heġġ
 
-NOTE: Note: heċġ is the more standard spelling; using heġġ here
+NOTE: Feminine jō-stem nominative singular; heġġ normalizes hecg/heċġ. The masculine xágjaz belongs with hege.
 
 
 
@@ -3105,28 +3130,53 @@ Outcome: hund
 
 
 # hue
-PROTO: *xíwją
-EXPECTED: hīew
-OUTPUTS: hīew
+PROTO: *xíwjas
+EXPECTED: hīewes
+OUTPUTS: hīewes
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *xíwją
+English Proto Input: *xíwjas
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc J Gemination: *xíwwją<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Ew Long Diphthong: *xíuwją<br>OE J Glide IO: *xīowją<br>OE Velar Fricative Palatalization: *çīowją<br>OE Heavy Syllable Nasal Apocope: *çīowj<br>OE I Umlaut: *çīewj<br>OE J Loss After Heavy: *çīew |
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *xíwwjas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>OE Ew Long Diphthong: *xíuwjas<br>OE J Glide IO: *xīowjas<br>EAF Brightening Unstressed: *xīowjæs<br>OE Velar Fricative Palatalization: *çīowjæs<br>OE I Umlaut: *çīewjæs<br>OE Unstressed AE Merger: *çīewjes<br>OE J Loss After Heavy: *çīewes |
 
 
 
 ### Orthography & surface
 
-Old English Orthography: h*īew
-Outcome: hīew
+Old English Orthography: h*īewes
+Outcome: hīewes
 
-NOTE: J-gemination witness for *w after a short front vowel, contrasting with hay (*xáwją, row 2061). Adopted realized PGmc *xíwją normalizes Ringe-Taylor 2014 p.250 *hiwją, with CAPR dorsal x and lexical acute: palatalized iww becomes iuw, then pre-OE long iow and WS long iew. The ww+j/w+j encoding carries palatal conditioning without settling the authors' uncertain phonemic analysis. Orel 2003 pp.171-172 *xewjan and Kroonen 2013 p.224 *heuja- remain genuine e-form alternatives with different derivational accounts and ending conventions. Ringe 2017 pp.151-153 and Fulk 2018 p.59 support inherited raising before high front i/j; no later one-word raising law is introduced. Fulk 2018 pp.71-72,126 disputes traditional geminate dismantling, a retained qualification. Campbell 1959 p.46 contrasts awj/iwj and prints hīow/hīew; p.167 describes general gemination. Target hīew, context and regular classification are unchanged. Positive witness for SC010 and the separate SC033/SC110 reanalysis/realization; negative control for low-vowel SC029.
+NOTE: Genitive singular Cotton hiewes, Ælfric's Grammar, Zupitza p.30 l.11; normalized hīewes. Inherited direct *xíwją and hīew remain separate diagnostic and headword.
+
+
+
+# kin
+PROTO: *kúnjas
+EXPECTED: cynnes
+OUTPUTS: cynnes
+
+
+
+### Proto-Germanic consonant inheritance
+
+English Proto Input: *kúnjas
+
+| Earlier Germanic developments | Old English developments |
+|:---|:---|
+| **Northwest and West Germanic**<br>PWGmc J Gemination: *kúnnjas<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening Unstressed: *kúnnjæs<br>OE I Umlaut: *kynnjæs<br>OE Unstressed AE Merger: *kynnjes<br>OE J Loss After Heavy: *kynnes |
+
+
+
+### Orthography & surface
+
+Outcome: cynnes
+
+NOTE: Genitive singular Sirofenisces cynnes, West Saxon Mark 7:26; compare Exodus 228 and 436.
 
 
 
@@ -4125,27 +4175,27 @@ Outcome: nest
 
 
 # net
-PROTO: *nátją
-EXPECTED: nett
-OUTPUTS: nett
+PROTO: *nátjai
+EXPECTED: nette
+OUTPUTS: nette
 
 
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *nátją
+English Proto Input: *nátjai
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>PWGmc J Gemination: *náttją<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *nættją<br>OE Heavy Syllable Nasal Apocope: *nættj<br>OE I Umlaut: *nettj<br>OE J Loss After Heavy: *nett |
+| **Northwest and West Germanic**<br>PNWGmc Unstressed Ai Monophthongization: *nátjē<br>PWGmc J Gemination: *náttjē<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>EAF Brightening: *nættjē<br>OE I Umlaut: *nettjē<br>OE Unstressed Long Vowel Shortening: *nettje<br>OE J Loss After Heavy: *nette |
 
 
 
 ### Orthography & surface
 
-Outcome: nett
+Outcome: nette
 
-NOTE: Orel: OE nett (geminate); Source: Wiktionary etymology (template:inh)
+NOTE: Dative singular nette, Paris Psalter 89.10 (Thorpe 1835). The inherited direct singular remains a chronology diagnostic.
 
 
 
@@ -8925,7 +8975,7 @@ NOTE: R/T vol.2 13912-15: OE niht < dat.sg. *nahti (i-umlaut); nom.sg. *nahts > 
 
 
 # rest
-PROTO: *rástōz
+PROTO: *rástǭ
 EXPECTED: ræste
 OUTPUTS: ræste
 
@@ -8933,11 +8983,11 @@ OUTPUTS: ræste
 
 ### Proto-Germanic consonant inheritance
 
-English Proto Input: *rástōz
+English Proto Input: *rástǭ
 
 | Earlier Germanic developments | Old English developments |
 |:---|:---|
-| **Northwest and West Germanic**<br>EAF Final Z Deletion: *rástō<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
+| **Northwest and West Germanic**<br>[no change]<br><br>**Early Anglo-Frisian**<br>[no change] | **Old English**<br>PWGmc Surviving Bimoric O Unrounding: *rástā<br>EAF Brightening: *ræstā<br>EAF Brightening Long Final: *ræstǣ<br>OE Unstressed Long Vowel Shortening: *ræstæ<br>OE Unstressed AE Merger: *ræste |
 
 
 
@@ -8945,7 +8995,7 @@ English Proto Input: *rástōz
 
 Outcome: ræste
 
-NOTE: Oblique (ō-stem gen.sg.) *rastōz > ræste: PGmc gen.sg. *-ōz did not undergo NWGmcFinalLongORaising (R/T §5.1.3) because *-ō was not word-final (*-z still present). After PWGmc z-loss with vowel shortening and simultaneous AFB-fronting of the unstressed final (*-ōz > {*æ}, R/T §6.8.3 pp.299-300; see DEV_NOTES §17.10.20), suffix is front, no A-restoration, AFB gives ræ-. Attested ræste abundantly in BT (tó ræste, on ræste, etc.). Paradigmatic leveling from oblique ræst- to nom.sg. (cf. R/T §6.3.2 on dag paradigm).
+NOTE: Feminine ō-stem accusative singular; ræste is the direct object in Blickling Homilies 101.26 (Morris). The nominative ræst can reflect extension of oblique ræst-; the accusative itself is regular.
 
 
 

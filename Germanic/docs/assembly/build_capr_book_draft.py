@@ -15,6 +15,7 @@ from index_verborum_emission import build_emission_table, load_model_entry_headi
 INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
+MODEL_APPENDIX_PATH = SCRIPT_DIR / "sc047_preview" / "appendix.md"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
@@ -289,6 +290,7 @@ def build_book_markdown() -> str:
         chronology,
         r"\part{Lexical derivations}",
         lexical,
+        MODEL_APPENDIX_PATH.read_text(encoding="utf-8").strip(),
         r"\backmatter",
         "# References",
         "",
