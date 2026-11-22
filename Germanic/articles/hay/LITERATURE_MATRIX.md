@@ -38,7 +38,8 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
 ## 2. Campbell 1959 [@Campbell1959, §§120.2, 579(4)]
 
 - **Chronology**: both endings lost before gemination (§576), i.e. early
-  apocope, following Dal 1934 per Hogg–Fulk's report.
+  apocope, following Dal 1934 as reported by Hogg–Fulk. Dal 1934 itself is
+  unavailable and is not directly consulted here.
 - **Direct sg.**: §579(4): "\*hewi, \*gliwi without gemination would be the
   undisturbed developments"; the attested nom.-acc. sg. of both types is
   "under influence of the other cases"; *glīg* is a "re-formation (§411)".
@@ -108,9 +109,10 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
 ## 6. Dahl 1938 [@Dahl1938, pp. 81–86 and the hay section]
 
 - **Chronology**: late nasal apocope — gemination precedes \*-ą loss
-  (*cynn* < \*kunją regular; Weser runic *kunni*). Explicitly opposes
-  **Dal 1934** [@Dal1934], who defended apocope-before-gemination resting
-  mainly on OHG *hewi*/*gewi*.
+  (*cynn* < \*kunją regular; Weser runic *kunni*). Dahl 1938 reports Dal
+  as defending an apocope-before-gemination account resting mainly on OHG
+  *hewi*/*gewi* [@Dahl1938, pp. 82–84]. The Dal original is unavailable and
+  is not directly consulted here.
 - **Hay specifically — a third analysis**: **no gemination at all** in
   English \*-awj-: "no recorded w-forms of OE nouns containing PrG -aui-";
   diphthong differentiation of \*aw was already under way when \*-j became

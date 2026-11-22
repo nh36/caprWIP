@@ -43,8 +43,9 @@ QUANTITY_EVIDENCE.md (D), DERIVATIONS.md (E), DRAFT.md (F).
 
 ## Evidential gaps
 
-- Ritt 2000 (Lindisfarne accents) and Dal 1934 — ILL pending. Dal is the
-  historical foundation of the early-loss chronology; Ritt could supply a
+- Ritt 2000 (Lindisfarne accents) and Dal 1934 — ILL pending. Dahl (1938)
+  and Hogg–Fulk (2011) report Dal's early-loss argument; its original text
+  has not been directly consulted. Ritt could supply a
   calibrated accent witness if Lindisfarne carries an accented hay token
   (the Lindisfarne heig/heg alternation cited by Jones is not yet
   verified to a locus in our held editions; CONCORDANCE.tsv id 26).

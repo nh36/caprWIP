@@ -75,7 +75,8 @@ Campbell (1977: §576), see also Dal (1934), that both inflexions were
 lost prior to gemination, in which event all geminated forms in the
 nom.acc.sg. would be re-formations from the oblique forms or the plural"
 [@HoggFulk2011, pp. 20–21, §2.23]. The two alternatives named in that
-paragraph — Dahl's split chronology and Dal's early loss — remain the
+paragraph — Dahl's split chronology and Dal's early loss, as reported by
+Hogg–Fulk — remain the
 live options; Ringe and Taylor's ordering is a modern restatement of the
 second [@RingeTaylor2014, pp. 44–47], and Boutkan's of the first
 [@Boutkan1995, pp. 209–213]. For the neuter 'hay' the difference is
@@ -127,9 +128,10 @@ analogical account must keep these scopes apart.
 
 Dahl's discussion remains the fullest treatment of the word. On the
 general chronology he holds that gemination preceded the loss of \*-ą,
-so that *cynn* < \*kunją is regular, citing the Weser runic *kunni*; he
-explicitly rejects Dal's contrary argument from Old High German *hewi*
-and *gewi* [@Dahl1938, pp. 82–84; @Dal1934]. But for 'hay' itself he
+so that *cynn* < \*kunją is regular, citing the Weser runic *kunni*;
+Dahl (1938) reports that he rejects Dal's contrary argument from Old
+High German *hewi* and *gewi* [@Dahl1938, pp. 82–84]. The original Dal
+1934 article is not directly consulted here. But for 'hay' itself Dahl
 proposes something that cuts across the whole debate: that English
 \*-awj- never geminated at all, there being "no recorded w-forms" of Old
 English nouns of this shape; diphthongal differentiation of \*aw was
