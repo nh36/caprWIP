@@ -150,7 +150,10 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
 
     def test_each_book_includes_each_entry_once_with_its_own_trace(self):
         traces = volume.parse_trace_entries(volume.TRACE_REPORT_PATH.read_text())
-        for word, target, proto in (("there", "þǣr", "*θár"), ("where", "hwǣr", "*xwár")):
+        for word, target, proto, lengthened, fronted in (
+            ("there", "þǣr", "*θár", "θār", "θǣr"),
+            ("where", "hwǣr", "*xwár", "xwār", "xwǣr"),
+        ):
             path = next(MODELS.glob(f"*-{word}-{target}.model.md"))
             model = volume.parse_model_entry(path)
             trace, _, confident = volume.match_trace_entry(model, traces)
@@ -176,9 +179,13 @@ class Sc112LexicalPublicationTests(unittest.TestCase):
                 self.assertLess(text.index(start), text.index(heading))
                 self.assertLess(text.index(heading), text.index(stop))
                 entry = text[text.index(heading):].split("Reconstruction and comparative evidence", 1)[0]
-                self.assertIn(f"Proto input: _\\{proto}_", entry)
-                self.assertIn(f"Old English form: _{target}_", entry)
-                self.assertIn("PNWGmc Monosyllabic Final R Lengthening", entry)
+                if filename == "lexical_volume_alpha_01.md":
+                    self.assertIn(f"Proto input: _\\{proto}_", entry)
+                    self.assertIn(f"Old English form: _{target}_", entry)
+                    self.assertIn("PNWGmc Monosyllabic Final R Lengthening", entry)
+                else:
+                    forms = " → ".join(f"`{form}`" for form in (proto[1:], lengthened, fronted, target))
+                    self.assertIn(f"Model A and B2: {forms}\n", entry)
 
     def test_publication_index_delta_has_only_exact_new_provenance(self):
         path = semantics.ALLOWLIST_TSV
