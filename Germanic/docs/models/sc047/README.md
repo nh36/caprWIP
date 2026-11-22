@@ -54,7 +54,12 @@ spelling in two grammatical cells does not merge their identities.
 
 Bed, pledge, and kin have no row in this frozen 394-word selection.
 Their direct and protected forms are computed in both models, but not
-added to either denominator. In A, *nette* and Cotton *hiewes* provide
+added to either denominator. `expansions.tsv` selects the proposed
+bed and kin cells under stable research identities and places them
+in separate per-model tables and `*-expansions.tsv` files. Pledge
+remains an unscored control. The [lexical follow-up](lexical-followup.md)
+describes the unscored fen and wicg probes and their source limits.
+In A, *nette* and Cotton *hiewes* provide
 independent protected selections. *Hay* has no verified target for a
 protected reconstructed cell; its frozen direct comparison remains a
 visible unresolved mismatch rather than a falsely certified selection.
@@ -110,3 +115,16 @@ Revision 2 measured 5m41s end to end for the opt-in two-model command
 peak observed resident high-water mark for Foma was 2,243,756 KiB,
 sampled from `/proc/<pid>/status` inside the backend. Normal tests
 have zero Foma calls before or after this change.
+
+The lexical expansion checks reuse the existing trace archives.
+`test_light_neuter_paradigms_distinguish_loss_gemination_and_simplification`
+checks first divergent stages, protected doubling, oral negatives,
+final nasal simplification and the stranded-*w* controls.
+`test_supplemental_capture_preserves_the_benchmark_and_records_new_probes`
+guards the old corpus and trace inventory while checking the new
+palatalization and *r* controls. The publisher test checks separation
+of proposals from the scored inventories. No fixture setup, compiler
+call, additional emitted network, live corpus sweep or concurrency
+was added to the test lane. The opt-in research run reused the full
+two-model build once and added 11 batched query inputs; see
+[results and provenance](results.md#lexical-expansion-capture).

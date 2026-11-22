@@ -130,6 +130,16 @@
 
 ## Residue
 
+The [lexical follow-up](../../models/sc047/lexical-followup.md) tests
+the same alternatives against two further stem classes and a regional
+comparison. It adds no historical edge or stage claim: Hofmann's
+regional singleton evidence does not independently date Old English
+nasal loss, and the protected *wicg* cells support a doubled palatal
+stem without establishing its route into the direct singular.
+The [supplemental run](../../models/sc047/results.md#lexical-expansion-capture)
+confirms unchanged corpus and paradigm firing traces. The registry
+verdict and production order are unchanged.
+
 Secure case-specific hay evidence, independent evidence for a broader
 short-hiatus rule, and the history of the conflicting stem vowels in
 the labial class remain open. An unselected form and its possible donor

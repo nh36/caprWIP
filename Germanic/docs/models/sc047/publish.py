@@ -174,7 +174,7 @@ def publish(result, directory):
                 if cell:
                     publication.update({key: cell[key] for key in ("cell", "input", "target")})
                     publication.update(status="proposed selection", outputs=display(cell["outputs"]))
-                    md.extend((f"Proposed {cell['cell']}: `*{cell['input']}` → *{cell['target']}*.", ""))
+                    md.extend((f"Proposed {cell['cell']}: `*{cell['input']}` yields *{cell['target']}*.", ""))
                     traces.extend((f"## {row['id']} — selected {cell['cell']}", "",
                                    trace_text(cell["input"], cell["trace"]), ""))
                 else:

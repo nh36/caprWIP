@@ -23,7 +23,9 @@ accusative lose *ą* before gemination: \emph{*badj} becomes
 \emph{*bede}. In B2 the glide is still prevocalic at gemination;
 \emph{*baddją} ultimately gives *bedd* after heavy-stem apocope.
 Both models give protected *bedde*, *beddes* and direct plural
-*bedd*. A selects the attested dative, not a direct form.
+*bedd*. The separate inherited plural probe \emph{*bádjamiz}
+gives *beddum* in both models. A selects the attested dative,
+not a direct form.
 Its possible sources for the surviving direct stem include the
 protected obliques and the endingless plural. The attested
 alternants establish the available stem material, not the

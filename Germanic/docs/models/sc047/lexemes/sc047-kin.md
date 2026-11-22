@@ -16,8 +16,9 @@ from 23.6, not a silently normalized *cynn*. A selects
 genitive *cynnes* ‘of stock’, with an agreeing genitive adjective
 in West Saxon Mark 7:26, *Sirofenisces cynnes*, as transcribed in
 [Bosworth–Toller, s.v. *hǣþen*](https://bosworthtoller.com/51580).
-Dative *cynne* remains a control; the genitive has the firmer
-edition locator for a simplex protected cell.
+Dative *cynne* remains a control, directly attested in *Exodus*
+352 (*cynn æfter cynne*); *Exodus* 228 (*æðelan cynnes*) and
+436 (*þines cynnes*) also corroborate the simplex genitive.
 Thorpe's Psalm 17.48 prints *his cynne* but his apparatus
 reports manuscript *cyn* there: it is not an independent
 manuscript witness for *cynne*. Moore Bede

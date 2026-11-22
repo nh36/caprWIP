@@ -89,7 +89,8 @@ early loss of *i* after this sequence and the historical dative–
 instrumental merger, but the merger need not have been purely
 phonological. These model outputs do not account for the usual
 Old English dative plural *-um*. Do not promote the outputs to attested
-targets or add a special rule for ō-stems. Conditional ‘youth’
+targets or add a special rule for ō-stems. Extension of *-um*
+from other declensions is plausible but unproved. Conditional ‘youth’
 nominative and dative probes are the only two remaining gate rejections
 among 97 probes per model; the disputed inherited class (and lost
 *Maldon* manuscript) prevents treating either as a negative sound-law
@@ -104,7 +105,35 @@ oblique vowel rather than a geminate. For ‘bed’, ‘pledge’ and ‘kin’,
 A gives *bede*, *wede*, *cyne* and B2 gives *bedd*, *wedd*, *cyn*
 (with final nasal simplification); both give protected *bedde*,
 *wedde*, *cynne* and *beddes*, *weddes*, *cynnes*. These words are
-probes, not additions to the 394.
+probes, not additions to the 394. Bed and kin now have separate
+proposed selections; pledge does not.
+
+## Lexical expansion capture
+
+[`sc047-lexical-expansion-v1.json.gz`](captures/sc047-lexical-expansion-v1.json.gz)
+re-executes active runner `sc047-active-v2` with the following inputs
+from the Germanic backend:
+
+```sh
+docker compose exec -T backend python3 /usr/app/tools/sc047_models.py \
+  --form sáiwalōi --form sáiwalôi --form bádjamiz \
+  --form fánją --form fánjai --form fánjas --form fánjō \
+  --form wígjaz --form wígją --form wígjai --form wígjas --form wígjô \
+  --form bázjas
+```
+
+The run began at source `2a14a1cfa8ab53004b0b5f9667ae8651575ec0a5`
+and exited 0 in 5m58s. Publication-only commits and test/document
+edits occurred during the run; the executable input hashes, both
+orders, all 394 corpus records and all 97 paradigm traces per model
+are identical to active v2. The 11 added queries are not scored.
+Raw stdout SHA-256:
+`9fe0dfc95d2e078f2921f50a101ed7c92ffe50daccdbb61d4415d4315eacef9c`;
+gzip SHA-256:
+`89a4fdd6459665212ffaa5669520d1d180a1214844745df358d777bdc051b2e4`.
+The archive embeds the exact FST, runner, plan, inventory and corpus
+hashes. This is fresh research execution, not a clean exact-commit
+strict production certificate. Earlier captures are unchanged.
 
 ## Unmatched rows and next decisions
 
@@ -123,10 +152,10 @@ The next lexical dependency is a securely case-identified hay
 witness with the predicted protected shape. An independently inherited
 English singleton with a vowel, or a case-localized early double,
 would have greater chronological force than a higher selected-form
-score. The two other priorities are the independent source and
-conditioning of the downstream labial reflexes and the shared
-unstressed plural endings and lowering problems. Only then should
-further cell changes or general rule changes be considered. Neither
+score. The source and conditioning of the downstream labial reflexes
+remain open. The shared unstressed plural endings and inherited
+lowering problems are separate questions, not blockers for these
+lexical proposals. Neither
 the ordinary selected outputs nor the use of Cotton *hiewes* dates
 paradigm transfer. Masculine ‘retainer’ and ‘hill’ retain the
 unselected accusative contrasts; the source basis for the hypothetical

@@ -1,6 +1,8 @@
+import csv
 import gzip
 import json
 from pathlib import Path
+import runpy
 
 import pytest
 
@@ -84,3 +86,103 @@ def test_recorded_active_build_preserves_controls_and_separates_inherited_and_se
             assert probes[lexeme, "gen.sg.trimoric"]["outputs"] == [expected[1]]
             assert probes[lexeme, "inst.pl"]["outputs"]
         assert [models.DAT_MONO in dict(probe["trace"]) for probe in result["queries"]] == [True, False]
+
+
+def test_light_neuter_paradigms_distinguish_loss_gemination_and_simplification():
+    capture = models.CELLS.parent / "captures" / f"{models.VERSION}.json.gz"
+    with gzip.open(capture, "rt", encoding="utf-8") as stream:
+        results = json.load(stream)["models"]
+
+    for model, result in results.items():
+        probes = {(cell["lexeme"], cell["cell"]): cell for cell in result["paradigms"]}
+        for lexeme, stem, consonant, a, b2, dat, gen in (
+            ("net", "*n*á*t", "t", "nete", "nett", "nette", "nettes"),
+            ("bed", "*b*á*d", "d", "bede", "bedd", "bedde", "beddes"),
+            ("pledge", "*w*á*d", "d", "wede", "wedd", "wedde", "weddes"),
+            ("kin", "*k*ú*n", "n", "cyne", "cyn", "cynne", "cynnes"),
+        ):
+            doubled = f"{stem}*{consonant}*j"
+            for label in ("nom.sg", "acc.sg"):
+                probe = probes[lexeme, label]
+                trace = probe["trace"]
+                assert probe["outputs"] == [a if model == "A" else b2]
+                if model == "A":
+                    assert trace[1:3] == [[models.NASAL, [f"{stem}*j"]],
+                                          ["FNG", [f"{stem}*i"]]]
+                    assert models.GEM not in dict(trace)
+                else:
+                    assert trace[1:3] == [[models.GEM, [f"{doubled}*ą"]],
+                                          [models.NASAL, [doubled]]]
+            for label, output, ending in (("dat.sg", dat, "*ē"), ("gen.sg", gen, "*a*s")):
+                probe = probes[lexeme, label]
+                assert probe["outputs"] == [output]
+                assert dict(probe["trace"])[models.GEM] == [doubled + ending]
+
+        kin = dict(probes["kin", "nom.sg"]["trace"])
+        if model == "B2":
+            assert kin["OEHighVowelApocope"] == ["*k*y*n*n"]
+            assert kin["OEFinalGeminateSimplification"] == ["*k*y*n"]
+        else:
+            assert "OEFinalGeminateSimplification" not in kin
+
+        for lexeme, output in (("retainer", "seġe"), ("end", "ende")):
+            probe = probes[lexeme, "nom.sg"]
+            trace = dict(probe["trace"])
+            assert probe["outputs"] == [output]
+            assert models.ORAL in trace and models.GEM not in trace
+        assert dict(probes["retainer", "gen.sg"]["trace"])[models.GEM] == ["*s*á*g*g*j*a*s"]
+        assert probes["searu", "direct"]["outputs"] == ["saru"]
+        assert probes["searu", "gen.sg"]["outputs"] == ["searwes"]
+
+
+def test_supplemental_capture_preserves_the_benchmark_and_records_new_probes():
+    captures = models.CELLS.parent / "captures"
+    with gzip.open(captures / f"{models.VERSION}.json.gz", "rt", encoding="utf-8") as stream:
+        baseline = json.load(stream)
+    with gzip.open(captures / "sc047-lexical-expansion-v1.json.gz", "rt", encoding="utf-8") as stream:
+        expanded = json.load(stream)
+    assert {k: v for k, v in expanded.items() if k != "models"} == {
+        k: v for k, v in baseline.items() if k != "models"}
+    assert expanded["models"].keys() == baseline["models"].keys()
+    for model, result in expanded["models"].items():
+        previous = baseline["models"][model]
+        for key in ("order", "corpus", "paradigms"):
+            assert result[key] == previous[key]
+        assert result["queries"][:2] == previous["queries"]
+        probes = {probe["input"]: probe for probe in result["queries"][2:]}
+        assert probes["bádjamiz"]["outputs"] == ["beddum"]
+        assert probes["bázjas"]["outputs"] == ["berġes"]
+        assert models.GEM not in dict(probes["bázjas"]["trace"])
+        assert probes["fánją"]["outputs"] == (["fene"] if model == "A" else ["fen"])
+        assert probes["fánjai"]["outputs"] == ["fenne"]
+        direct = probes["wígją"]
+        trace = dict(direct["trace"])
+        if model == "A":
+            assert direct["outputs"] == ["wiġe"]
+            assert models.GEM not in trace
+            assert trace["OEVelarPalatalization"] == ["*w*í*ʝ*i"]
+        else:
+            assert direct["outputs"] == ["wiġġ"]
+            assert trace[models.GEM] == ["*w*í*g*g*j*ą"]
+            assert trace["OEVelarPalatalization"] == ["*w*í*ʤ*ʤ*i"]
+        protected = dict(probes["wígjai"]["trace"])
+        assert protected[models.GEM] == ["*w*í*g*g*j*ē"]
+        assert protected["OEVelarPalatalization"] == ["*w*í*ʤ*ʤ*j*ē"]
+        assert probes["wígjô"]["outputs"] == ["wiġġa"]
+
+
+def test_publisher_keeps_expansion_proposals_outside_scored_catalogues(tmp_path):
+    source = models.CELLS.parent
+    with gzip.open(source / "captures" / f"{models.VERSION}.json.gz", "rt", encoding="utf-8") as stream:
+        result = json.load(stream)
+    runpy.run_path(str(source / "publish.py"))["publish"](result, tmp_path)
+    for model, expected in {
+        "A": [("sc047-bed", "dat.sg", "bedde"), ("sc047-kin", "gen.sg", "cynnes")],
+        "B2": [("sc047-bed", "acc.sg", "bedd"), ("sc047-kin", "nom.sg", "cyn")],
+    }.items():
+        with (tmp_path / f"{model}-expansions.tsv").open(encoding="utf-8") as stream:
+            assert [(r["id"], r["cell"], r["target"])
+                    for r in csv.DictReader(stream, delimiter="\t")] == expected
+    summary = json.loads((tmp_path / "summary.json").read_text(encoding="utf-8"))
+    assert [(summary[m]["matches"], summary[m]["selected_slots"]) for m in ("A", "B2")] == [
+        (385, 393), (386, 394)]
