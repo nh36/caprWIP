@@ -43,6 +43,7 @@ let loaded: CognateApp = window.localStorage.getItem('boards') == null ? {
 
 // Set hasLoaded to true while we are just testing for POC.
 let hasLoaded = false;
+let germanicModel = "A";
 
 // Status info for the top bar.
 let statusMessage = "Board loaded."
@@ -73,10 +74,15 @@ const handleRefish = async () => {
 				boards: loaded.boards,
 								syllables: loaded.syllables,
 								fstDoculects: loaded.fstDoculects,
-				transducer: useNewFst ? newFst : "internal"
+				transducer: useNewFst ? newFst : "internal",
+				model: loaded.fstDoculects.includes("Old_English") ? germanicModel : undefined
 			})
 		})
-			.then((res => res.json()))
+			.then(async res => {
+				const data = await res.json();
+				if (!res.ok) throw new Error(data.message);
+				return data;
+			})
 			.then((data: any) => {
 			// If we have our data, we should have refished correctly.
 			console.log("Successfully refished.")
@@ -95,6 +101,10 @@ const handleRefish = async () => {
 }
 
 	const loadNewBoard = async (getExistingTransducers: boolean) => {
+			if (!selectedDataPath?.value) return;
+			const isGermanic = selectedDataPath.value.startsWith("germanic-");
+			const model = isGermanic ? germanicModel : undefined;
+			const custom = useNewFst && newFst?.trim().length;
 			loaded = {...initialData} as unknown as CognateApp;
 			hasLoaded = false;
 			statusLoading = true;
@@ -107,15 +117,20 @@ const handleRefish = async () => {
 			},
 			body: JSON.stringify({
 				dataPath: selectedDataPath.value,
-								transducer: useNewFst && newFst?.trim().length ? newFst : "internal"
+								transducer: custom ? newFst : "internal",
+								model
 			})
 		})
-			.then((res => res.json()))
+			.then(async res => {
+				const data = await res.json();
+				if (!res.ok) throw new Error(data.message);
+				return data;
+			})
 			.then((data: any) => {
 			// If we have our data, we should have loaded correctly.
 			console.log("Successfully loaded new board.")
 							loaded = data;
-			statusMessage = "Loading completed.";
+			statusMessage = data.germanicModel ? `Loaded Old English model ${data.germanicModel}.` : "Loading completed.";
 							statusError = false;
 			$currentBoard = "board-1";
 							hasLoaded = true;
@@ -127,6 +142,7 @@ const handleRefish = async () => {
 			console.error(e);
 			statusError = true;
 			statusMessage = e.message;
+			statusLoading = false;
 		})
 			
 			if (getExistingTransducers) {
@@ -136,7 +152,8 @@ const handleRefish = async () => {
 										"Content-Type": "application/json"
 								},
 								body: JSON.stringify({
-										name: `${selectedDataPath.value.split("-")[0]}.txt`
+										name: `${selectedDataPath.value.split("-")[0]}.txt`,
+										model
 								})
 						})
 								.then((res => res.json()))
@@ -286,6 +303,16 @@ $: if (files) {
 			<!-- <span class="info sticky">Using source: <a href="/sources/{currentSourceFile}">{currentSourceFile}</a> (<a href="/sources/{currentSourceFile.substring(0, currentSourceFile.length-4)}-lexicon.{currentSourceFile.substring(currentSourceFile.length-3)}">lexicon</a>)</span> -->
 			<button class="sticky" on:click={() => {loadNewBoard(true)}}>Load</button>
 			<Select items={dataPaths} placeholder="Available input sources" bind:value={selectedDataPath} />
+			{#if selectedDataPath?.value?.startsWith("germanic-") || loaded.fstDoculects.includes("Old_English")}
+				<label>
+					Old English model
+					<select bind:value={germanicModel}>
+						<option value="A">A (Ringe–Taylor; default)</option>
+						<option value="B2">B2 (Dahl–Hogg–Fulk)</option>
+						<option value="compatibility">Compatibility (historical)</option>
+					</select>
+				</label>
+			{/if}
 			<button on:click={() => {showCognateInterface = !showCognateInterface}}>{showCognateInterface ? "Show FST Editor" : "Show Cognate Editor"}</button>
 	</div>
 			{#if showCognateInterface}

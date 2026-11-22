@@ -187,6 +187,7 @@ import argparse
 
 # Compile transducers
 from foma import FST
+from germanic_models import board_apply_up, model_bins
 import tempfile
 import os
 import subprocess
@@ -196,8 +197,6 @@ from disjointset import DisjointSet
 
 def refish(jsonfile, csvfile="lexicon.tsv", fstfile="refishing-fst2.txt"):
     # Board from JSON
-    script_path = os.path.dirname(os.path.realpath(__file__))
-
     fsts_new = {}
     new_transducer = ""
 
@@ -208,6 +207,8 @@ def refish(jsonfile, csvfile="lexicon.tsv", fstfile="refishing-fst2.txt"):
         if "transducer" in jsonfile:
             eprint("Using user provided transducer")
             new_transducer = jsonfile["transducer"]
+        elif "model" in jsonfile:
+            fsts_new = model_bins(jsonfile["model"], jsonfile["fstDoculects"])
         else:
             eprint("Using default transducer")
             with open(fstfile) as fst_file:
@@ -222,29 +223,27 @@ def refish(jsonfile, csvfile="lexicon.tsv", fstfile="refishing-fst2.txt"):
         with open(fstfile) as fst_file:
             new_transducer = fst_file.read()
 
-    with tempfile.TemporaryDirectory() as tmpdirname:
-        os.chdir(tmpdirname)
-        eprint("Compiling FSTs (new)")
-        with open("transducer.foma", "w") as fp:
-            fp.write(new_transducer)
-        output = subprocess.check_output(["foma", "-f", "transducer.foma"]).decode(
-            "UTF-8"
-        )
-        eprint("\n".join(output.split("\n")[-5:]))
-        for doculect_name in input_board["fstDoculects"]:
-            fst_path = fst_index.get(doculect_name)
-            if not fst_path:
-                eprint(f"[refish] Skipping {doculect_name}: not in fst_index")
-                continue
-            bin_path = fst_path + ".bin"
-            if os.path.isfile(bin_path):
-                fsts_new[doculect_name] = lexical_fst(FST.load(bin_path), doculect_name)
-            else:
-                eprint(f"[refish] Skipping {doculect_name}: missing {bin_path}")
-        os.chdir(script_path)
-        eprint("FSTs loaded:", ", ".join(fsts_new))
-        if not new_transducer.strip() and not fsts_new:
-            raise RuntimeError("No transducer available: turn on 'Use new FST?' or provide a default transducer file (refishing-fst2.txt).")
+    if new_transducer.strip():
+        with tempfile.TemporaryDirectory() as tmpdirname:
+            eprint("Compiling FSTs (new)")
+            with open(os.path.join(tmpdirname, "transducer.foma"), "w", encoding="utf-8") as fp:
+                fp.write(new_transducer)
+            output = subprocess.check_output(["foma", "-f", "transducer.foma", "-e", "quit"],
+                                             cwd=tmpdirname).decode("UTF-8")
+            eprint("\n".join(output.split("\n")[-5:]))
+            for doculect_name in input_board["fstDoculects"]:
+                fst_path = fst_index.get(doculect_name)
+                if not fst_path:
+                    eprint(f"[refish] Skipping {doculect_name}: not in fst_index")
+                    continue
+                bin_path = os.path.join(tmpdirname, fst_path + ".bin")
+                if os.path.isfile(bin_path):
+                    fsts_new[doculect_name] = lexical_fst(FST.load(bin_path), doculect_name)
+                else:
+                    eprint(f"[refish] Skipping {doculect_name}: missing {bin_path}")
+            eprint("FSTs loaded:", ", ".join(fsts_new))
+    if not new_transducer.strip() and not fsts_new:
+        raise RuntimeError("No transducer available: select a built model or provide a transducer.")
 
     # read the word CSV
     input_syllables = input_board["syllables"]
@@ -312,9 +311,10 @@ def refish(jsonfile, csvfile="lexicon.tsv", fstfile="refishing-fst2.txt"):
             syllable = input_syllables[syllable_id]
             if syllable["doculect"] in fsts_new:
                 the_syl = replace_diacritics_up(syllable["syllable"])
-                reconstructions = list(lexical_apply_up(
+                reconstructions = list(board_apply_up(
                     fsts_new[syllable["doculect"]], the_syl,
                     board_context(syllable.get("inputContext")),
+                    (syllable.get("fstForm"), syllable.get("fstInput")),
                 ))
                 for rec in reconstructions:
                     if (rec, syllable["glossid"]) not in first_column_of_gr:
@@ -373,9 +373,10 @@ def refish(jsonfile, csvfile="lexicon.tsv", fstfile="refishing-fst2.txt"):
 
             if syllable["doculect"] in fsts_new:
                 the_syl = replace_diacritics_up(syllable["syllable"])
-                rec = list(lexical_apply_up(
+                rec = list(board_apply_up(
                     fsts_new[syllable["doculect"]], the_syl,
                     board_context(syllable.get("inputContext")),
+                    (syllable.get("fstForm"), syllable.get("fstInput")),
                 ))
 
                 if rec:

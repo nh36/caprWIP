@@ -7,9 +7,21 @@ from compile_lexicon_to_json import compile_to_json, compile_to_json_full_cognat
 from refish import refish
 from compare_fst import compare_fst
 import glob
+from germanic_models import ModelUnavailable, UnknownModel, model_name, tool_path
 
 app = Flask(__name__)
 CORS(app)
+
+
+@app.errorhandler(UnknownModel)
+def unknown_model(error):
+    return jsonify({"message": str(error)}), 400
+
+
+@app.errorhandler(ModelUnavailable)
+def unavailable_model(error):
+    return jsonify({"message": str(error)}), 503
+
 
 def _resp(success: bool, message: str, data: object = None):
     """
@@ -69,6 +81,14 @@ def list_inputs():
 @app.route("/get-transducers", methods=["POST"])
 @with_json("name")
 def get_transducer(json_body):
+    model = None
+    if json_body["name"] == "germanic.txt":
+        model = model_name(request.json.get("model"))
+        if model != "compatibility":
+            tool_path()
+            from sc047_models import editor_source
+            return {"name": json_body["name"], "model": model,
+                    "transducer": editor_source(model)}
     files = [f.split("/")[-1] for f in glob.glob("/usr/app/fsts/*.txt")]
     
     new_transducer = ""
@@ -76,6 +96,9 @@ def get_transducer(json_body):
         new_transducer = ""
         with open(os.path.join("/usr/app/fsts/", json_body["name"]), encoding="utf-8") as fst_file:
             new_transducer = fst_file.read()
+    if model is not None:
+        return {"name": json_body["name"], "model": model,
+                "transducer": new_transducer + "\nquit\n" if new_transducer else ""}
     return {
         "name": json_body["name"],
         "transducer": new_transducer
@@ -89,7 +112,8 @@ def new_board(json_body):
         transducer = json_body["transducer"]
         if not transducer or (isinstance(transducer, str) and transducer.strip() == ""):
             transducer = "internal"
-        return compile_to_json_full_cognates(json_body["dataPath"], transducer)
+        return compile_to_json_full_cognates(
+            json_body["dataPath"], transducer, model=request.json.get("model"))
 
     return compile_to_json_full_cognates("./pipeline/output/germanic/stage3/germanic-aligned-final.tsv")
 
@@ -99,9 +123,13 @@ def new_board(json_body):
 def refish_board(json_body):
     if (json_body['transducer'] == 'internal'):
         del json_body['transducer']
+    if request.json.get("model") is not None or "Old_English" in json_body["fstDoculects"]:
+        json_body["model"] = model_name(request.json.get("model"))
 
     try:
         board = refish(json_body)
+    except ModelUnavailable:
+        raise
     except RuntimeError as err:
         resp = jsonify({"message": str(err)})
         resp.status_code = 500
@@ -113,5 +141,8 @@ def refish_board(json_body):
 @app.route("/compare-fst", methods=["POST"])
 @with_json("langsUnderStudy", "oldTransducer", "newTransducer", "board")
 def compare(json_body):
-    print(json_body['langsUnderStudy'])
+    for side in ("old", "new"):
+        field = f"{side}Model"
+        if request.json.get(field) is not None:
+            json_body[field] = model_name(request.json[field])
     return compare_fst(json_body)

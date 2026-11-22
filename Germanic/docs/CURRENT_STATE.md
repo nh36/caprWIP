@@ -5,6 +5,11 @@ in the canonical registry; do not duplicate them here.
 
 ## Current phase
 
+The [SC047 adoption candidate](models/sc047/adoption.md) maintains A
+and B2 as selectable historical Old English transducers against one
+lexical catalogue. The compatibility cascade remains available for
+replay and rule-inventory evidence, not as a third historical model.
+
 The [SC047/SC048 research pass](sound_changes/audits/sc047-adjudication.md)
 distinguishes early low-vowel loss from its retained late nasal fragment,
 and historical coda conditioning from the final-n proxy. The reviewable

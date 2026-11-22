@@ -7,7 +7,7 @@
     import { Circle2 } from "svelte-loading-spinners";
     import { apiFetch } from "./api";
 
-    export let data: CognateApp;
+    export let data: CognateApp & { dataProfile?: string };
     export let showNewFst = false;
     export let statusMessage: string;
     export let statusError: boolean;
@@ -31,7 +31,7 @@
     export let handleDebugComparison = async () => {};
 
     // Calls the comparison route with our FSTs, returning the new data.
-    const handleComparison = async () => {
+    const handleComparison = async (published = false) => {
         if (selectedDoculects.map(f => f.value).includes('Debug')) {
             console.log("Running debug rerun")
             await handleDebugComparison();
@@ -49,17 +49,24 @@
                 },
                 body: JSON.stringify({
                     langsUnderStudy: selectedDoculects.map(p => p.value),
-                    oldTransducer: oldFst,
-                    newTransducer: newFst,
+                    oldTransducer: published ? "internal" : oldFst,
+                    newTransducer: published ? "internal" : newFst,
+                    oldModel: published ? "A" : undefined,
+                    newModel: published ? "B2" : undefined,
                     board: {
                         columns: data.columns,
                         boards: data.boards,
                         words: data.words,
-                        syllables: data.syllables
+                        syllables: data.syllables,
+                        dataProfile: data.dataProfile
                     }
                 })
             })
-            .then(res => res.json())
+            .then(async res => {
+                const data = await res.json();
+                if (!res.ok) throw new Error(data.message);
+                return data;
+            })
             .then(data => {
                 // If we have our data, we should have calculated correctly.
                 console.log("Successfully calculated correspondence.")
@@ -110,7 +117,10 @@
         <div class="compare-list">
             <!-- Select component from @svelte-select -->
             <Select placeholder="Select languages" placeholderAlwaysShow={true} items={doculects} isMulti={true} bind:value={selectedDoculects} />
-            <button on:click={handleComparison}>Go</button>
+            <button on:click={() => handleComparison()}>Go</button>
+            {#if data.fstDoculects.includes("Old_English")}
+                <button on:click={() => handleComparison(true)}>Compare A and B2</button>
+            {/if}
         </div>
         {#if compilerErrors.length > 0}
             {#each compilerErrors as err}

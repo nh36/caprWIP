@@ -13,6 +13,11 @@ rendering. It fails rather than publishing stale inputs. Outputs are
 the intermediate TeX for diagnosis. Inspect the rendered pages after changes.
 For portable versus strict validation, see [CI validation](../../../docs/CI_VALIDATION.md).
 
+The combined book prints both A and B2 lexical derivations from the verified
+[production model capture](../models/sc047/adoption.md#execution-and-publication).
+Its sound-change inventory uses the compatibility order as a reference, not as
+a third historical model.
+
 The combined TeX is currently tracked. For a strict publication intended to
 preserve that artifact, use:
 

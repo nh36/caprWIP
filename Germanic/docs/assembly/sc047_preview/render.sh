@@ -20,7 +20,7 @@ pandoc "$preview/preview.md" --standalone --from=markdown+raw_tex+citations --to
   --include-in-header="$reader/reader_facing_pdf_header.tex" \
   --metadata-file="$assembly/book_draft_metadata.yaml" \
   --variable="monofont:${SC047_PREVIEW_MONOFONT:-Noto Sans Mono}" \
-  --bibliography=docs/refs.bib --bibliography="$assembly/sc047_preview/supplement.bib" \
+  --bibliography=docs/refs.bib \
   --citeproc -o "$preview/preview.tex" 2>"$preview/pandoc.log"
 python3 "$tools/normalize_citeproc_section_locators.py" --tex-path "$preview/preview.tex"
 

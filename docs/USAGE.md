@@ -15,6 +15,22 @@ If you are starting from a blank FST (or one that generates no boards), loading 
 
 ### Old English selected context
 
+Before loading the Germanic board in a fresh checkout, build the application
+transducers in the backend:
+
+```sh
+docker compose exec -T backend python3 tools/build_germanic_models.py
+```
+
+Choose **A (Ringe–Taylor)** or **B2 (Dahl–Hogg–Fulk)** in the Old English
+model menu, then load the board. A is the interface default. The selector
+also controls internal refishing; edited FST text takes precedence when
+**Use new FST?** is enabled. **Compare A and B2** compares the installed
+networks without compiling editor text. **Compatibility (historical)**
+selects the previous cascade explicitly. See the
+[adoption report](../Germanic/docs/models/sc047/adoption.md) for API,
+publication and benchmark commands.
+
 Reload `germanic-aligned-final.tsv` after adopting the glide/apocope update.
 Previously saved boards lack the new `inputContext` metadata and explicitly
 use strong-final citation context; reloading attaches the selected weak-final

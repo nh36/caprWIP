@@ -724,7 +724,7 @@ define PWGmcSyllabicJ Ctx([
 
 In the compatibility cascade, placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred} from PGmc [nátją]{.recon} ‘net’; moving it later changes no output. This contrast fixes the order for a regular direct derivation of OE *nett* 'net', but does not fix the historical order if the direct singular acquired its geminate from a protected cell.
 
-Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. The lexicon adds only that vocalization followed gemination, not where it falls among subsequent changes.
+Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. Both historical models allow oral loss to strand a glide before gemination; only A does so with the short nasal ending. A protected vowel, as in the shared dative of 'net', instead keeps the glide consonantal through gemination in both models.
 
 ## Simplification of the cluster \emph{*xs} before a consonant
 
@@ -4327,7 +4327,7 @@ define PWGmcFinalBareALoss Ctx([
 
 This is a narrower proxy than the historical change. It deletes an unaccented, short, oral final \emph{*a}; it does not delete nasal \emph{*ą}, long \emph{*ā}, stressed \emph{*á}, or a vowel still protected by a consonant. Nasal endings have a separate executable treatment, including [SC047 OEHeavySyllableNasalApocope](#rule-OEHeavySyllableNasalApocope); that division of labor does not establish an Old English date for their historical loss.
 
-The adjudicated population contains seventy live applications, all with selected inputs ending in \emph{*-az}. That agreement is a consequence of the inputs and preceding sound changes, not a grammatical condition on the rule. The inherited oblique used for *fyrhte* 'fright' is among them, so they are not simply seventy nominatives of one declension. The selected \emph{*stáinaz} gives *stān* 'stone'; an accusative discussed in the comparative literature is not silently substituted for this selected nominative. Nasal-final *horn* 'horn', the infinitive *bacan* 'bake', and consonant-protected *bannes* 'ban' do not undergo this particular operation.
+The compatibility census contains seventy applications, all with selected inputs ending in \emph{*-az}. That agreement is a consequence of the inputs and preceding sound changes, not a grammatical condition on the rule. The inherited oblique used for *fyrhte* 'fright' is among them, so they are not simply seventy nominatives of one declension. The selected \emph{*stáinaz} gives *stān* 'stone'; an accusative discussed in the comparative literature is not silently substituted for this selected nominative. Nasal-final *horn* 'horn', the infinitive *bacan* 'bake', and consonant-protected *bannes* 'ban' do not undergo this particular operation.
 
 [SC020 EAFFinalZDeletion](#rule-EAFFinalZDeletion) exposes the final vowel in \emph{*bárdaz} and \emph{*kámbaz}, giving the immediately pre-loss forms \emph{*bárda} and \emph{*kámba}. The live rule removes their final vowel and eventually gives *beard* 'beard' and *camb* 'comb'. Moving it before the exposing loss instead gives [bearda]{.pred example-input="*bárdaz" example-stage=PGmc example-expected=beard} and [camba]{.pred example-input="*kámbaz" example-stage=PGmc example-expected=camb}. This is feeding across a broad computational interval, not evidence that the two historical changes were adjacent.
 
@@ -5137,14 +5137,19 @@ selection [@KembleHardwick1858, p. 19, capitulum LXXIX;
 @Bosworth1859, p. 20, lines 25--27;
 @RingeTaylor2014, pp. 86--87, 174; @Fulk2018, pp. 148--149, §7.8].
 
-The current apocope position is retained. The position beside oral
-loss remains endpoint-equivalent; the pre-gemination package makes
-real progress on the stranded-glide intermediates, but still changes
-hay, net and hue and needs explicit paradigm histories. The
+In the compatibility reference, the original apocope position is
+retained. The archived relocation beside oral loss was
+endpoint-equivalent; the early package improved the stranded-glide
+intermediates but changed direct hay, net and hue. In the active
+comparison, A loses the nasal ending before gemination and B2
+retains it through gemination. Both select protected cells for net
+and hue; hay retains the direct comparison because no protected
+target is securely attested. The
 same-site endingless-aw companion to
 [SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) separately restores
 regular reconstructed \emph{*strēa}; it does not derive attested
-*strēaw* 'straw'. These are tested alternatives, not adopted reorderings.
+*strēaw* 'straw'. That companion experiment does not establish a
+relative historical date for apocope.
 
 ## Coda nasalization and the final-n proxy
 

@@ -143,11 +143,16 @@ selection [@KembleHardwick1858, p. 19, capitulum LXXIX;
 @Bosworth1859, p. 20, lines 25--27;
 @RingeTaylor2014, pp. 86--87, 174; @Fulk2018, pp. 148--149, §7.8].
 
-The current apocope position is retained. The position beside oral
-loss remains endpoint-equivalent; the pre-gemination package makes
-real progress on the stranded-glide intermediates, but still changes
-hay, net and hue and needs explicit paradigm histories. The
+In the compatibility reference, the original apocope position is
+retained. The archived relocation beside oral loss was
+endpoint-equivalent; the early package improved the stranded-glide
+intermediates but changed direct hay, net and hue. In the active
+comparison, A loses the nasal ending before gemination and B2
+retains it through gemination. Both select protected cells for net
+and hue; hay retains the direct comparison because no protected
+target is securely attested. The
 same-site endingless-aw companion to
 [SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) separately restores
 regular reconstructed \emph{*strēa}; it does not derive attested
-*strēaw* 'straw'. These are tested alternatives, not adopted reorderings.
+*strēaw* 'straw'. That companion experiment does not establish a
+relative historical date for apocope.

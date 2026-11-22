@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build and audit the two active SC047 research cascades inside CAPR's backend."""
+"""Build and audit the two active Old English cascades inside CAPR's backend."""
 
 import argparse
 import csv
@@ -13,7 +13,7 @@ from unittest.mock import patch
 
 import anglo_frisian_experiments as compiler
 from capr_runtime import layout
-from oe_pipeline import CITATION_CONTEXT, load_rows, stages
+from oe_pipeline import CITATION_CONTEXT, load_rows, parse_stages
 from sound_change_order_sensitivity import batch_apply_down
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -121,7 +121,44 @@ def trace(order, paths, inputs):
     return previous, changes
 
 
-def run(models, forms=(), *, active=False):
+def model_sources(source):
+    if sha(PLAN) != PLAN_SHA:
+        raise ValueError("SC047 configuration does not match the reviewed plan")
+    canonical = [stage.foma_identifier for stage in parse_stages(source)]
+    plan = json.loads(PLAN.read_text(encoding="utf-8"))
+    orders = model_orders(canonical, plan)
+    definitions = [plan["definitions"][name] for name in ("FW", "FNU", "FON", "FNG")]
+    definitions.extend((
+        """define SC047NarrowAw Ctx([
+            {*a} {*w} -> {*ēa} {*w} || _ [[EnglishStarVocalic - [{*i}|{*ī}]] | {*ô}],
+            {*á} {*w} -> {*ḗa} {*w} || _ [[EnglishStarVocalic - [{*i}|{*ī}]] | {*ô}]
+        ]);""",
+        "define SC047FinalIi Ctx([{*í} {*i} -> {*ḯ} || _ .#.]);",
+        """define SC047ExtraCell [pgrmPrefix | 0] PGCellRoot PGCellStem*
+            ō:{*ō} [i:{*i} | m:{*m} i:{*i} z:{*z}];
+        define SC047ProtoInput [EnglishProtoInput |
+            _unambpart([[SC047ExtraCell.u - EnglishProtoInput.u] .o. SC047ExtraCell])];""",
+        "define SC047FinalOi Ctx([{*ō} {*i} -> {*ē} || _ .#.]);",
+    ))
+    return canonical, orders, "\n".join(definitions)
+
+
+def composition(model, order):
+    return f"define CAPR{model} " + "\n    .o. ".join(order) + ";\n"
+
+
+def editor_source(model):
+    source = layout().germanic_fst
+    text = source.read_text(encoding="utf-8")
+    _, orders, definitions = model_sources(source)
+    export = "regex OldEnglish;\nsave stack old_english.bin"
+    if text.count(export) != 1:
+        raise ValueError("Expected exactly one Old English export")
+    return text.replace(export, definitions + "\n" + composition(model, orders[model])
+                        + f"regex CAPR{model};\nsave stack old_english.bin") + "\nquit\n"
+
+
+def run(models, forms=(), *, active=False, binaries=None):
     source = layout().germanic_fst
     inputs = {"frozen_sha256": FROZEN, "plan_sha256": PLAN, "fst_sha256": source,
               "cells_sha256": CELLS, "runner_sha256": Path(__file__),
@@ -141,24 +178,12 @@ def run(models, forms=(), *, active=False):
     if len({row["row_id"] for row in live_rows}) != len(live_rows):
         raise ValueError("Duplicate active lexical identity")
 
-    canonical = [stage.foma_identifier for stage in stages()]
-    plan = json.loads(PLAN.read_text(encoding="utf-8"))
-    orders = model_orders(canonical, plan)
+    canonical, orders, definitions = model_sources(source)
     cells = read_cells()
-    definitions = [plan["definitions"][name] for name in ("FW", "FNU", "FON", "FNG")]
-    definitions.extend((
-        """define SC047NarrowAw Ctx([
-            {*a} {*w} -> {*ēa} {*w} || _ [[EnglishStarVocalic - [{*i}|{*ī}]] | {*ô}],
-            {*á} {*w} -> {*ḗa} {*w} || _ [[EnglishStarVocalic - [{*i}|{*ī}]] | {*ô}]
-        ]);""",
-        "define SC047FinalIi Ctx([{*í} {*i} -> {*ḯ} || _ .#.]);",
-        """define SC047ExtraCell [pgrmPrefix | 0] PGCellRoot PGCellStem*
-            ō:{*ō} [i:{*i} | m:{*m} i:{*i} z:{*z}];
-        define SC047ProtoInput [EnglishProtoInput |
-            _unambpart([[SC047ExtraCell.u - EnglishProtoInput.u] .o. SC047ExtraCell])];""",
-        "define SC047FinalOi Ctx([{*ō} {*i} -> {*ē} || _ .#.]);",
-    ))
     components = set(canonical).union(*(orders[model] for model in models))
+    exports = ("\n".join(composition(model, orders[model]) +
+                         f"clear stack\nregex CAPR{model};\nsave stack old_english_{model}.bin"
+                         for model in models) if binaries is not None else "")
     queries = {f"query:{i}": form for i, form in enumerate(forms)}
     results = {}
     with tempfile.TemporaryDirectory(prefix="capr-sc047-active-") as tmp:
@@ -168,7 +193,7 @@ def run(models, forms=(), *, active=False):
             raise RuntimeError("Unable to prepare the common definition image")
         with patch.dict(os.environ, {"CAPR_FOMA_DEFINITION_IMAGE": str(image)}):
             paths = compiler.compile_isolated(source, {
-                "definitions": "\n".join(definitions), "replace": {},
+                "definitions": definitions + "\n" + exports, "replace": {},
                 "insert_rule": None, "insert_after": None,
                 "component_checks": [{"component": stage} for stage in sorted(components)],
             }, [], work, components_only=True)
@@ -185,6 +210,13 @@ def run(models, forms=(), *, active=False):
             selected = {f"selected:{row_id}": override["selected_input"]
                         for row_id, override in overrides.items() if override}
             endpoints, traces = trace(orders[model], paths, diag | probes | selected | queries | live)
+            if binaries is not None:
+                path = work / f"old_english_{model}.bin"
+                inputs_to_verify = diag | probes | selected | queries | live
+                composed = batch_apply_down(path, list(inputs_to_verify.values()))
+                for key, output in zip(inputs_to_verify, composed):
+                    if sorted(set(output)) != endpoints[key]:
+                        raise RuntimeError(f"Model {model} composed output disagrees with trace: {key}")
             corpus = []
             for row in rows:
                 row_id = row["row_id"]
@@ -218,8 +250,18 @@ def run(models, forms=(), *, active=False):
                      "trace": traces[f"active:{row['row_id']}"]}
                     for row in live_rows
                 ]
-    if any(sha(path) != hashes[label] for label, path in inputs.items()):
-        raise RuntimeError("An input changed while evaluating the SC047 model")
+        if any(sha(path) != hashes[label] for label, path in inputs.items()):
+            raise RuntimeError("An input changed while evaluating the SC047 model")
+        if binaries is not None:
+            binaries.mkdir(parents=True, exist_ok=True)
+            files = [f"old_english_{model}.bin" for model in models]
+            files.extend(("english.bin", "german.bin", "dutch.bin", "old_english.bin"))
+            for name in files:
+                path = work / name
+                with tempfile.NamedTemporaryFile(dir=binaries, delete=False) as tmp_bin:
+                    tmp_bin.write(path.read_bytes())
+                    temp_path = Path(tmp_bin.name)
+                os.replace(temp_path, binaries / name)
     return {"version": VERSION, "lexical_proposal": PROPOSAL, **hashes, "models": results}
 
 
@@ -230,11 +272,16 @@ def main():
                         help="also evaluate the shared active lexical corpus, without changing the benchmark")
     parser.add_argument("--form", action="append", default=[],
                         help="also trace a CAPR-encoded input (omit the reconstruction asterisk)")
+    parser.add_argument("--build-bins", type=Path,
+                        help="compile each selected model, verify against stage traces, and write bins here")
     args = parser.parse_args()
+    if args.build_bins is not None and not args.active:
+        parser.error("--build-bins requires --active to verify the live corpus")
     if any(not form or any(c in form for c in "\r\n\t") for form in args.form):
         parser.error("--form must be nonempty and contain no tabs or line breaks")
     models = tuple(MODELS) if args.model == "both" else (args.model,)
-    print(json.dumps(run(models, args.form, active=args.active), ensure_ascii=False, separators=(",", ":")))
+    print(json.dumps(run(models, args.form, active=args.active, binaries=args.build_bins),
+                     ensure_ascii=False, separators=(",", ":")))
 
 
 if __name__ == "__main__":

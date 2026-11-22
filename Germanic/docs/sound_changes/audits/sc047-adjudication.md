@@ -228,6 +228,40 @@ source identity separately from these archived experiments.
 
 ## Residue
 
+### Production adoption follow-up
+
+The earlier verdict applies to the compatibility fragment and its
+evidence. No new historical stage, scope, conditioning or chronology
+edge is asserted here. Both already adjudicated historical orders
+are enabled as ordinary application transducers.
+
+**Question and test.** An independently attested protected hay cell
+with compatible manuscript spelling, grammatical case and dialect
+could replace the direct comparison in both models. The existing
+direct *heig/hig/heg* evidence and the endingless dative in *mid hig*
+would not establish such a replacement on their own.
+
+**Diagnosis and literature.** Ringe and Taylor (2014: 53, 173, 246)
+distinguish inherited direct *hawj → hawi → hæwi* from the geminated
+stem developing through *hauj-* and *hēaj-*. Their identification
+of the inherited Old High German direct *hewi* and remodelled
+*houwi* on p. 173 does not name a particular English donor cell.
+Campbell (1959: 46 §120.2, 231 §579(4)) likewise invokes the other
+cases generally. The source ledger distinguishes *heig* in the
+mowing context from the normalized comparison, and *mid hig* from a
+suffix-bearing dative. No verified English genitive or plural meets
+the selection test.
+
+**Verdict and propagation.** Retain the direct hay comparison:
+the predicted singleton in A and the geminated result in B2 remain
+diagnostic, while the verified derivability of a protected stem is
+only evidence of a possible donor. This is not a new sound law or a
+new census population. Both models must reproduce the existing
+active and frozen runs, including the gemination, lowering and
+final-simplification controls, in composed as well as ordered-stage
+lookup. The [adoption report](../../models/sc047/adoption.md) records
+the runtime, publication and validation results.
+
 The full source-shaped coda architecture remains a reviewable alternative.
 The subsequent discrete SC059 follow-up adopts the previously experimental
 strict WS clause separation; see sc059-adjudication.md and

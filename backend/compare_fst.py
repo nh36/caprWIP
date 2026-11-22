@@ -55,7 +55,7 @@ import json
 import csv
 from typing import Optional
 from oe_input_context import (
-    CITATION_CONTEXT, board_context, lexical_apply_down, lexical_apply_up, lexical_fst,
+    CITATION_CONTEXT, board_context, lexical_fst,
 )
 
 from numpy import equal
@@ -164,8 +164,9 @@ def back_reconstruct_list(syllable_ids, fsts, words):
             first_form = ipa
         if doculect in fsts:
             the_syl = replace_diacritics(ipa)
-            rec = list(lexical_apply_up(fsts[doculect], the_syl,
-                                       board_context(word.get("inputContext"))))
+            rec = list(board_apply_up(fsts[doculect], the_syl,
+                                      board_context(word.get("inputContext")),
+                                      (word.get("fstForm"), word.get("fstInput"))))
             if rec:
                 # only record reconstructions when something *is* reconstructed
                 at_least_one = True
@@ -201,22 +202,23 @@ def back_reconstruct_list(syllable_ids, fsts, words):
 
 # Compile transducers
 from foma import FST
+from germanic_models import board_apply_down, board_apply_up, model_bins
 import tempfile
 import os
 import subprocess
 
 
 def read_transducer(input_json, old_new, errors):
+    if input_json[f"{old_new}Transducer"] == "internal":
+        return model_bins(input_json.get(f"{old_new}Model"), input_json["langsUnderStudy"])
     ret = {}
-    script_path = os.path.dirname(os.path.realpath(__file__))
     with tempfile.TemporaryDirectory() as tmpdirname:
-        os.chdir(tmpdirname)
         eprint(f'Compiling FSTs ({old_new})')
-        with open('transducer.foma', 'w') as fp:
+        with open(os.path.join(tmpdirname, 'transducer.foma'), 'w', encoding='utf-8') as fp:
             fp.write(input_json[f'{old_new}Transducer'])
         eprint("---------")
-        output = subprocess.run(['foma', '-f', 'transducer.foma'],
-                                capture_output=True, check=True, text=True)
+        output = subprocess.run(['foma', '-f', 'transducer.foma', '-e', 'quit'],
+                                cwd=tmpdirname, capture_output=True, check=True, text=True)
 
         # Add errors from stderr
         if (len(output.stderr) > 0):
@@ -232,11 +234,11 @@ def read_transducer(input_json, old_new, errors):
             errors.append(error)
 
         for doculect_name in fst_index:
-            if os.path.isfile(fst_index[doculect_name] + '.bin'):
+            binary = os.path.join(tmpdirname, fst_index[doculect_name] + '.bin')
+            if os.path.isfile(binary):
                 ret[doculect_name] = lexical_fst(
-                    FST.load(fst_index[doculect_name] + '.bin'), doculect_name
+                    FST.load(binary), doculect_name
                 )
-        os.chdir(script_path)
         eprint('FSTs loaded:', ', '.join(ret))
     return ret
 
@@ -424,7 +426,8 @@ def compare_fst(input_json):
                         senses[position][doculect][sound] = []
                     cnt[position][doculect][sound] += 1
                     sylls[position][doculect][sound].append(
-                        (ipa, board_context(word.get("inputContext")))
+                        (ipa, (word.get("fstForm"), word.get("fstInput")),
+                         board_context(word.get("inputContext")))
                     )
                     senses[position][doculect][sound].append(gloss)
 
@@ -432,6 +435,7 @@ def compare_fst(input_json):
                 # generate the information needed for displaying a corr. chart
                 description = []
                 most_common_ipas = []
+                most_common_fst_forms = []
                 most_common_contexts = []
                 shared_senses = []
 
@@ -447,16 +451,18 @@ def compare_fst(input_json):
                             any_non_last_doculect_present = True
 
                         most_common_sound = cnt[position][doculect].most_common()[0][0]
-                        most_common_ipa, selected_context = Counter(
+                        most_common_ipa, most_common_fst_form, selected_context = Counter(
                             sylls[position][doculect][most_common_sound]
                         ).most_common()[0][0]
                         description.append(most_common_sound)
                         most_common_ipas.append(most_common_ipa)
+                        most_common_fst_forms.append(most_common_fst_form)
                         most_common_contexts.append(selected_context)
                         shared_senses.extend(senses[position][doculect][most_common_sound])
                     else:
                         description.append('-')
                         most_common_ipas.append('--')
+                        most_common_fst_forms.append((None, None))
                         most_common_contexts.append(CITATION_CONTEXT)
                 description = ':'.join(description)
 
@@ -467,6 +473,7 @@ def compare_fst(input_json):
                 column_info = {'column_id': column_id,
                         'most_common_gloss': most_common_gloss,
                         'most_common_ipas': most_common_ipas,
+                        'most_common_fst_forms': most_common_fst_forms,
                         'most_common_contexts': most_common_contexts,
                         'last_doculect_present': last_doculect_present,
                         'any_non_last_doculect_present': any_non_last_doculect_present,
@@ -518,8 +525,9 @@ def compare_fst(input_json):
                     rec = []
                     if doculect in fsts_old and column['most_common_ipas'][i] != '--':
                         the_syl = replace_diacritics(column['most_common_ipas'][i])
-                        rec = list(set(lexical_apply_up(
-                            fsts_old[doculect], the_syl, column['most_common_contexts'][i]
+                        rec = list(set(board_apply_up(
+                            fsts_old[doculect], the_syl, column['most_common_contexts'][i],
+                            column['most_common_fst_forms'][i],
                         )))
 
                     if rec:
@@ -539,7 +547,7 @@ def compare_fst(input_json):
                             # forward projection for the language under study
                             fwd_recs = []
                             for w in inferred_reconstructions:
-                                fwd_recs.extend(lexical_apply_down(
+                                fwd_recs.extend(board_apply_down(
                                     fsts_old[doculect], w, column['most_common_contexts'][i]
                                 ))
                             fwd_recs = [replace_diacritics_forward(w) for w in set(fwd_recs)]
@@ -562,8 +570,9 @@ def compare_fst(input_json):
                     rec = []
                     if doculect in fsts_new and column['most_common_ipas'][i] != '--':
                         the_syl = replace_diacritics(column['most_common_ipas'][i])
-                        rec = list(set(lexical_apply_up(
-                            fsts_new[doculect], the_syl, column['most_common_contexts'][i]
+                        rec = list(set(board_apply_up(
+                            fsts_new[doculect], the_syl, column['most_common_contexts'][i],
+                            column['most_common_fst_forms'][i],
                         )))
 
                     if rec:
@@ -583,7 +592,7 @@ def compare_fst(input_json):
                             # forward projection for the language under study
                             fwd_recs = []
                             for w in inferred_reconstructions:
-                                fwd_recs.extend(lexical_apply_down(
+                                fwd_recs.extend(board_apply_down(
                                     fsts_new[doculect], w, column['most_common_contexts'][i]
                                 ))
                             fwd_recs = [replace_diacritics_forward(w) for w in set(fwd_recs)]

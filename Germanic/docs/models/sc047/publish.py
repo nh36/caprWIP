@@ -302,7 +302,6 @@ def render(directory, models):
         subprocess.run([
             "pandoc", str(volume), "--pdf-engine=xelatex", "--toc", "--citeproc",
             "--bibliography", str(GERMANIC.parent / "docs/refs.bib"),
-            "--bibliography", str(ASSEMBLY / "sc047_preview/supplement.bib"),
             "-V", "mainfont=Noto Serif",
             "-V", f"monofont={os.environ.get('SC047_PREVIEW_MONOFONT', 'Noto Sans Mono')}",
             "-V", "geometry:margin=24mm", "-o", str(volume.with_suffix(".pdf")),

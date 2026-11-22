@@ -42,18 +42,44 @@ configuration. Without `--active`, the runner reads only the
 immutable 394-row archive for comparison; neither mode silently
 switches downstream callers to the other chronology.
 
-The Flask application, default bins, canonical graph, ordinary
-compatibility CI and ordinary book trace generation still use the
-compatibility cascade. The book describes A/B2 and indexes the
-shared lexical and comparative prose. The separately generated model
-reports give alternative derivations without repeating that prose.
-There is no default choice of A or B2 for existing runtime consumers.
+Build the application binaries in the backend with
+`docker compose exec -T backend python3 tools/build_germanic_models.py`.
+It builds both models by default, verifies composed outputs against
+ordered stage lookup, and writes distinct hash-bound Old English bins;
+`--model A` or `--model B2` builds just one. Missing or stale model
+bins fail rather than falling back to the historical cascade. The
+Germanic board, internal refishing and FST editor source default to
+A; select B2 in the UI or pass `"model": "B2"` to the corresponding
+Flask endpoint. A is a documented interface default, not a decision
+against B2. `/compare-fst` accepts `"internal"` for either
+transducer with independent `oldModel` and `newModel` fields; custom
+editor text is still supported. Explicit `compatibility` selects the
+historical Old English network. Modern doculect networks are unchanged.
+Internal Germanic board operations verify the TSV's selected input
+against each matching network rather than enumerating unrestricted
+inverse candidates. Old English uses the selected counterpart spelling;
+the display and modern doculect targets retain their IPA. Custom editor
+transducers retain the unrestricted comparison path.
 
-The model acceptance assertions reuse a capture instead of adding a
-Foma call or live corpus sweep to pytest. The explicit active run
-adds the selected inputs to the existing lookup batch at each stage,
-deduplicated with diagnostics and controls. The number of compiled
-components and calls is unchanged.
+The main book prints both active traces against the shared selections.
+The companion reports preserve all changed checkpoints and the full
+orders. The rule inventory, historical replay, standalone lexical
+reference and canonical graph's legacy diagnostic suite retain their
+compatibility ordering; they are not the default application model.
+
+Validation cost: `test_adoption_capture_is_bound_to_active_source_and_preserves_historical_controls`
+reuses the earlier capture checks, now bound to the verified production
+capture. `test_application_flask_selects_provisioned_historical_models`
+adds native endpoints, two board loads and one bounded comparison against
+the provisioned binaries; this catches model-selection and lookup-form errors
+that the existing stage assertions cannot see. The focused full-board test
+took about 14 seconds and adds no compilation in pytest. The one-time
+application build uses the same two compiler processes
+as the earlier staged assay (definition image and isolated export), adds
+two composed model networks and one lookup batch per model, and copies
+the four existing doculect exports. Build time was about eight minutes;
+the sampled Foma memory high-water mark was at least 2,245,632 KiB
+(`VmHWM` in `/proc/<pid>/status` inside the backend).
 
 ## Measured model results
 
@@ -70,7 +96,7 @@ unmigrated row is identical and the same eight rows remain unmatched.
 The active compatibility output fingerprint is
 `51953ed3a411b10bfa551de996053bc805ba87525180c4bf13f9b1ba46d4ee0e`.
 
-The [full capture](captures/sc047-adoption-v1.json.gz) has 97
+The [production capture](captures/sc047-production-v1.json.gz) has 97
 registered paradigm traces and 13 supplementary probes per model.
 Their full results are identical to the supplemental research
 capture; unscored forms have no match denominator. The original
@@ -108,9 +134,10 @@ and final simplification. The 97 paradigm traces and 13 supplementary
 probes also preserve the protected donors, pledge and wicg, the later
 rest dative, both genitive quantities, and the lowering controls.
 
-Re-execute with the command in [results](results.md#lexical-expansion-capture)
-and add `--active`. Raw run SHA-256:
-`e7dd900f8ea01e10d2d5a5d4cf03541868926754ca0f5a6939928af525badbb1`.
+Re-execute with the application build command above. Raw run SHA-256:
+`1644926a17ff2658ad855695d1f8465124e5b89835e287daba16ea0ff0412c76`.
+Compressed production capture SHA-256:
+`ed3ed52377ad1ce61f1ecac8e36df2a804916f1c008ff2523d2d773a8ed80d31`.
 Corpus SHA-256:
 `29f11c10e7cf8756c2708334fbd6947a4629ddcb9e69ac28bfbf9a920c5f9cf7`.
 Full executable-input hashes are embedded in the capture. The
@@ -118,11 +145,12 @@ model capture alone is not an exact-commit strict certificate.
 
 The [A](A-volume.pdf) and [B2](B2-volume.pdf) companion volumes and
 full alternative traces can be regenerated from that capture without
-rerunning Foma:
+rerunning Foma (set `SC047_PREVIEW_MONOFONT` to a local font that
+covers the transducer symbols if Noto Sans Mono is unavailable):
 
 ```sh
 python3 Germanic/docs/models/sc047/publish.py \
-  Germanic/docs/models/sc047/captures/sc047-adoption-v1.json.gz \
+  Germanic/docs/models/sc047/captures/sc047-production-v1.json.gz \
   .capr-work/adoption-models --pdf
 ```
 
@@ -135,16 +163,22 @@ semantic, citation, bibliography, occurrence-parity and rendered-reference
 checks. It found 1,561 printable and 83 excluded explicit occurrences,
 with no omissions, duplicates or semantic discrepancies.
 
-In the 367-page main PDF, all 1,405 Index Verborum page-number links
+In the 344-page main PDF, all 1,377 Index Verborum page-number links
 resolve to the matching printed page labels. Representative destinations
-include *bedde*, *peti* and *bedi* on p. 141, *heig* and *hīeġ* on
-p. 176, *hecg* and *heġġ* on p. 177, Cotton *hiewes* on p. 183,
-*cyn* and *cynnes* on p. 185, *nátjai* and *nette* on p. 198,
-and *rástǭ*, *rástē* and *ræste* on p. 319. The entries for Old
+include *bedde*, *peti* and *bedi* on p. 145, *heig* and *hīeġ* on
+p. 174, *hecg* and *heġġ* on p. 175, Cotton *hiewes* on p. 180,
+*cyn* and *cynnes* on p. 181, *nátjai* and *nette* on p. 193,
+and *rástǭ*, *rástē* and *ræste* on pp. 299–300. The entries for Old
 Saxon *feni*, Old Frisian *fene*, *fenne* and *fennem*, and Old
 English *wicg*, *wicge* and *wicga* resolve to their comparative
 discussion on p. 5. Their role and language metadata are checked
 separately from the page-link audit.
 
-Main PDF SHA-256:
-`ebab07f35c4943d866b3ad4e766f7b32ab0ae9729c89b6d0bf96aeeef727707f`.
+The comparative chapter begins on p. 137 and the shared references on
+p. 327. The Index Verborum bookmark opens the section's title page
+(p. 335); the contents lists the first index entries on p. 336.
+The main PDF SHA-256 is
+`b8a7c0a6c3a6d6c8b68ec532e4910f2bf2ea3a9178c993ee74d106a7b8c4281a`.
+The nine-page companion PDF hashes are
+`faa2299efbe27b4aa7deb4fc7976ebdf18a000ebc8f523cd87e15042d83f6bab` (A) and
+`3af8982e6ab96b9367577609d96979685d3a016647705d8f596c0e52343cf7ec` (B2).

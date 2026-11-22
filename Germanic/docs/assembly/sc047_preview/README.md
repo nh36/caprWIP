@@ -10,7 +10,7 @@ artifacts nor changes the sound-change reader manifest. The
 copy, not modifications to the included canonical entries.
 
 Run `bash Germanic/docs/assembly/sc047_preview/render.sh` for LaTeX and
-PDF using the canonical filters, headers and metadata and a second,
-preview-only bibliography. The PDF requires Pandoc, XeLaTeX, the
+PDF using the canonical filters, headers, metadata and bibliography.
+The PDF requires Pandoc, XeLaTeX, the
 configured fonts and `makeindex`. Set `SC047_PREVIEW_MONOFONT` to an
 installed substitute if Noto Sans Mono is unavailable.

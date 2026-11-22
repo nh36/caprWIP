@@ -176,6 +176,11 @@ python3 -m pytest -q --ignore=test_evidence_interface.py
 python3 -m pytest -q test_evidence_interface.py   # exclusive: rebuilds canonical bins
 ```
 
+From the repository root, provision the selectable application networks
+once with `docker compose exec -T backend python3 tools/build_germanic_models.py`
+before the strict lanes. The application regression uses those same
+verified binaries and does not compile them again in pytest.
+
 Level C validates the **current** scientific state. Five historical-replay
 tests (listed below) report as explicitly skipped here by design; they are an
 independent reproducibility lane, not part of current-state correctness.

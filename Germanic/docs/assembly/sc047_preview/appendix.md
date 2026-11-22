@@ -10,8 +10,9 @@ A derives 387 of 396 active targets; B2 derives 388. Hay remains a direct
 comparison in both models, unmatched in A. The full stage orders,
 unmatched forms and unscored probes are published in the model
 companions; the 394-input benchmark remains separate from the active
-catalogue. The default compatibility cascade is not a third historical
-hypothesis.
+catalogue. Ordinary Old English derivation can use either model; A is
+the application default. The compatibility cascade is retained for
+replay and is not a third historical hypothesis.
 
 The figures and traces in the following sections are historical
 experiment results, not the results of the active catalogue.

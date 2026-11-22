@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 import csv
+import gzip
+import hashlib
+import json
 import re
 import sys
 from collections import Counter, defaultdict
@@ -16,6 +19,8 @@ INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
 MODEL_APPENDIX_PATH = SCRIPT_DIR / "sc047_preview" / "appendix.md"
+MODEL_CHAPTER_PATH = SCRIPT_DIR / "sc047_preview" / "chronologies.md"
+MODEL_CAPTURE_PATH = REPO_ROOT / "Germanic/docs/models/sc047/captures/sc047-production-v1.json.gz"
 PRINT_MAIN_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_print_main.tsv"
 LANGUAGE_REGISTRY_PATH = REPO_ROOT / "Germanic/docs/book/index_verborum_languages.tsv"
 MANIFEST_PATH = SCRIPT_DIR / "manifest_all_by_class.tsv"
@@ -198,6 +203,10 @@ def transform_chronology(text: str) -> str:
             seen_chapter = True
             out.append("# " + m.group(1))
         elif not seen_chapter:
+            line = line.replace(
+                "The book automatically follows the individual stages of the canonical executable reconstruction;",
+                "The rule inventory follows the stages of the compatibility cascade for reference;",
+            )
             # Still accumulating preamble
             preamble.append(line)
         else:
@@ -209,7 +218,45 @@ def transform_chronology(text: str) -> str:
 _PART_HEADING_RE = re.compile(r"^## Part [IVX]+\.\s+(.+)$")
 
 
-def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
+def model_traces_by_heading() -> dict[str, list[str]]:
+    with gzip.open(MODEL_CAPTURE_PATH, "rt", encoding="utf-8") as stream:
+        capture = json.load(stream)
+    for field, relative in (
+        ("corpus_sha256", "Germanic/data/germanic-aligned-final.tsv"),
+        ("fst_sha256", "Germanic/fsts/germanic.txt"),
+        ("runner_sha256", "Germanic/tools/sc047_models.py"),
+    ):
+        if hashlib.sha256((REPO_ROOT / relative).read_bytes()).hexdigest() != capture[field]:
+            raise ValueError(f"Book model traces are stale for {relative}")
+    rows = {model: {row["row_id"]: row for row in capture["models"][model]["active_corpus"]}
+            for model in ("A", "B2")}
+    headings = {}
+    with MANIFEST_PATH.open(encoding="utf-8") as stream:
+        for entry in csv.DictReader(stream, delimiter="\t"):
+            source = entry["model_entry_path"]
+            ref = ((REPO_ROOT / source).read_text(encoding="utf-8").splitlines()[0].removeprefix("# ")
+                   if source else heading_ref(entry["lexical_item"], entry["counterpart"],
+                                              entry["derivation_class"]))
+            row_id = entry["row_id"]
+            a, b2 = rows["A"][row_id], rows["B2"][row_id]
+            sequences = [("A and B2", a)] if a["trace"] == b2["trace"] else [("A", a), ("B2", b2)]
+            lines = []
+            for label, row in sequences:
+                # Input tokenization and final orthography are still visible in the full companions.
+                changes = [row["proto_norm"]]
+                for _, outputs in row["trace"]:
+                    form = " / ".join(output.replace("*", "") for output in outputs) or "∅"
+                    if form != changes[-1]:
+                        changes.append(form)
+                lines.extend((f"Model {label}: " + " → ".join(f"`{form}`" for form in changes), ""))
+            if ref in headings:
+                raise ValueError(f"Ambiguous model trace heading: {ref}")
+            headings[ref] = lines
+    return headings
+
+
+def transform_lexical(text: str, commands_by_ref: dict[str, list[str]],
+                      model_traces: dict[str, list[str]]) -> str:
     """Emit lexical material at correct heading levels for the book.
 
     Front matter (Introduction, Data and sources, Transducer and derivation
@@ -224,6 +271,8 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
     out: list[str] = []
     preamble: list[str] = []
     seen_part = False
+    ref = ""
+    skip_compatibility = False
 
     lines = strip_title_block(text).splitlines()
     if lines and lines[0].startswith("_Alpha 01"):
@@ -232,12 +281,21 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
             lines = lines[1:]
 
     for line in lines:
+        if skip_compatibility:
+            if not line.startswith(("#### ", "### ", "## ")):
+                continue
+            skip_compatibility = False
         m_part = _PART_HEADING_RE.match(line)
         if m_part:
             if not seen_part and preamble:
                 # Emit front matter as unnumbered chapter with unnumbered sections
                 out.append("# Word-by-word derivations {.unnumbered}")
                 for p in preamble:
+                    if p.startswith("Four objects must be distinguished in every derivation:"):
+                        p = ("The citation reconstruction, selected input, predicted outcome and Old English "
+                             "target can differ. The traces print the changed forms for each active model, "
+                             "combining the two when their recorded traces agree. Class labels refer to the "
+                             "shared editorial classification; they do not override a model's endpoint.")
                     if p.startswith("## ") and not p.rstrip().endswith("{.unnumbered}"):
                         out.append(p.rstrip() + " {.unnumbered}")
                     else:
@@ -262,9 +320,16 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]]) -> str:
             if commands:
                 out.append("")
                 out.extend(commands)
+        elif line == "#### Derivation trace":
+            if ref not in model_traces:
+                raise ValueError(f"No active model trace for {ref}")
+            out.extend(("### Derivation trace", "", *model_traces[ref]))
+            skip_compatibility = True
         elif line.startswith("#### "):
             # Entry subsection (Derivation trace, Reconstruction...) → ###
             out.append("###" + line[4:])
+        elif ref.startswith("hay — OE ") and line.startswith("Derivation: "):
+            out.append(line.replace("(regular).", "(regular in B2; A predicts `hei`)."))
         elif line.startswith("##### "):
             out.append("####" + line[5:])
         else:
@@ -281,6 +346,7 @@ def build_book_markdown() -> str:
     lexical = transform_lexical(
         strip_lexical_terminal_references(lexical_text),
         commands_by_ref,
+        model_traces_by_heading(),
     )
     index_parts = [r"\printindex[iv]"]
     parts = [
@@ -288,6 +354,7 @@ def build_book_markdown() -> str:
         intro,
         r"\part{Sound changes, formalization, and relative chronology}",
         chronology,
+        MODEL_CHAPTER_PATH.read_text(encoding="utf-8").strip(),
         r"\part{Lexical derivations}",
         lexical,
         MODEL_APPENDIX_PATH.read_text(encoding="utf-8").strip(),

@@ -48,7 +48,9 @@ export async function apiFetch(path: string, init?: RequestOptions): Promise<Res
             const response = await fetch(url, init);
 
             if (!response.ok) {
-                if (response.status === 404 || response.status === 502 || response.status === 503 || response.status === 504) {
+                const appUnavailable = response.status === 503
+                    && response.headers.get('Content-Type')?.includes('application/json');
+                if (!appUnavailable && [404, 502, 503, 504].includes(response.status)) {
                     lastError = new Error(`Request to ${url} failed with status ${response.status}`);
                     continue;
                 }

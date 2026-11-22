@@ -3,6 +3,7 @@ import gzip
 import json
 from pathlib import Path
 import runpy
+import shlex
 
 import pytest
 
@@ -210,7 +211,7 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
 
     active_source = models.ROOT / "data/germanic-aligned-final.tsv"
     capture_dir = models.CELLS.parent / "captures"
-    with gzip.open(capture_dir / "sc047-adoption-v1.json.gz", "rt", encoding="utf-8") as stream:
+    with gzip.open(capture_dir / "sc047-production-v1.json.gz", "rt", encoding="utf-8") as stream:
         result = json.load(stream)
     with gzip.open(capture_dir / "sc047-lexical-expansion-v1.json.gz", "rt", encoding="utf-8") as stream:
         reference = json.load(stream)
@@ -236,6 +237,77 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
         assert all(active[key]["outputs"] == [active[key]["counterpart"]] for key in shared)
 
 
+@pytest.mark.runtime
+def test_application_flask_selects_provisioned_historical_models():
+    from capr_runtime import run_in_runner
+
+    script = """
+from pathlib import Path
+from tempfile import TemporaryDirectory
+
+import germanic_models
+from germanic_models import model_bins
+from server import app
+
+client = app.test_client()
+for requested, model, expected in (
+    ({}, "A", ["nete", "bede", "cyne", "hei", "hī"]),
+    ({"model": "B2"}, "B2", ["nett", "bedd", "cyn", "hīeġ", "hīew"]),
+):
+    response = client.post("/get-transducers", json={"name": "germanic.txt", **requested})
+    assert response.status_code == 200, response.data
+    assert response.json["model"] == model
+    assert f"regex CAPR{model};" in response.json["transducer"]
+    fst = model_bins(model, ["Old_English"])["Old_English"]
+    for form, output in zip(("nátją", "bádją", "kúnją", "xáwją", "xíwją"), expected):
+        assert set(fst.apply_down(form)) == {output}, (model, form, output)
+    for form, output in (("nátjai", "nette"), ("xíwjas", "hīewes"), ("bádjai", "bedde"),
+                         ("kúnjas", "cynnes"), ("xágjō", "heġġ"), ("rástǭ", "ræste")):
+        assert set(fst.apply_down(form)) == {output}, (model, form, output)
+    board = client.post("/new-board", json={"dataPath": "germanic-aligned-final.tsv",
+                                         "transducer": "internal", **requested})
+    assert board.status_code == 200, board.data
+    assert board.json["germanicModel"] == model
+    assert board.json["dataProfile"] == "germanic"
+    data = board.json
+    column_id, = [key for key, column in data["columns"].items()
+                  if "word-2061-0" in column["syllableIds"]]
+    column = data["columns"][column_id]
+    scope = {"boards": {"board-1": {"columnIds": [column_id]}}, "columns": {column_id: column},
+             "syllables": {key: data["syllables"][key] for key in column["syllableIds"]},
+             "words": {key.rpartition("-")[0]: data["words"][key.rpartition("-")[0]]
+                       for key in column["syllableIds"]},
+             "dataProfile": "germanic"}
+    assert scope["words"]["word-2061"]["fstForm"] == "hīeġ"
+    refish = client.post("/refish-board", json={**scope, "fstDoculects": ["English", "Old_English"],
+                                              "transducer": "internal", **requested})
+    assert refish.status_code == 200, refish.data
+    assert refish.json["columns"][column_id]["syllableIds"] == column["syllableIds"]
+compare = client.post("/compare-fst", json={"board": scope, "langsUnderStudy": ["English", "Old_English"],
+                                           "oldTransducer": "internal", "newTransducer": "internal",
+                                           "oldModel": "A", "newModel": "B2"})
+assert compare.status_code == 200 and compare.json["missing_transducers"] == [], compare.data
+rows = [row for sections in compare.json["chapters"].values()
+        for section in sections for row in section["rows"] if row["gloss"] == "hay"]
+assert rows and any("xáwją" in row["new_reconstructions"][-1]
+                    and "xáwją" not in row["old_reconstructions"][-1] for row in rows), rows
+response = client.post("/get-transducers", json={"name": "germanic.txt", "model": "B"})
+assert response.status_code == 400, response.data
+response = client.post("/get-transducers", json={"name": "germanic.txt", "model": "compatibility"})
+assert response.status_code == 200 and "regex OldEnglish;" in response.json["transducer"]
+with TemporaryDirectory() as directory:
+    compatibility = germanic_models.MODEL_DIR / "old_english.bin"
+    germanic_models.MODEL_DIR = Path(directory)
+    (germanic_models.MODEL_DIR / compatibility.name).symlink_to(compatibility)
+    response = client.post("/new-board", json={"dataPath": "germanic-aligned-final.tsv",
+                                              "transducer": "internal", "model": "B2"})
+    assert response.status_code == 503 and "Model B2" in response.json["message"], response.data
+"""
+    result = run_in_runner(f"python3 -c {shlex.quote(script)}",
+                           text=True, capture_output=True, timeout=180)
+    assert result.returncode == 0, result.stdout + result.stderr
+
+
 def test_shared_book_indexes_admitted_entries_and_comparative_evidence():
     docs = models.ROOT / "docs"
     with (docs / "assembly/manifest_all_by_class.tsv").open(encoding="utf-8") as stream:
@@ -250,6 +322,11 @@ def test_shared_book_indexes_admitted_entries_and_comparative_evidence():
         chapter, = [section for section in book.split("\n## ") if section.startswith(label)]
         assert headword in chapter.splitlines()[0]
         assert f"@\\iventry{{{target}}}" in chapter
+        assert "Model " in chapter and f"`{target}`" in chapter
+    hay, = [section for section in book.split("\n## ") if section.startswith("hay — OE ")]
+    trace = hay.split("### Derivation trace", 1)[1].split("\n### ", 1)[0]
+    assert any(line.startswith("Model A:") and line.endswith("`hei`") for line in trace.splitlines())
+    assert any(line.startswith("Model B2:") and line.endswith("`hīeġ`") for line in trace.splitlines())
     with (docs / "book/index_verborum_print_main.tsv").open(encoding="utf-8") as stream:
         entries = {(row["language"], row["form"], row["form_role"])
                    for row in csv.DictReader(stream, delimiter="\t")}

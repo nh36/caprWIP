@@ -13,6 +13,7 @@
 *.pyc
 *.mw
 /backend/*.bin
+/backend/germanic-model-bins/
 /build/
 /build/*.bin
 /Germanic/*.bin

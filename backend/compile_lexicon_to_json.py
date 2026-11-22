@@ -14,11 +14,12 @@ from functools import reduce
 import tempfile
 from disjointset import DisjointSet
 from foma import FST
+from germanic_models import board_apply_up, model_bins, model_name, selected_inputs
 from data_profiles import DataProfile, detect_profile
 from pathlib import Path
 from oe_input_context import (
     METADATA_FILENAME, context_for_row, lexical_fst, load_context_metadata,
-    validate_context_rows, board_context, lexical_apply_up,
+    validate_context_rows, board_context,
 )
 from syllable_parser import build_syllable_parsed_entries
 import argparse
@@ -185,6 +186,8 @@ def compile_to_json_full_cognates(
     transducer="internal",
     fst_path="/usr/app/refishing-fst.txt",
     cognates="COGIDS", #TODO: find out a good way of determ
+    *,
+    model=None,
 ):
     """
     Get the JSON from a wordlist file with "normal" cognates.
@@ -252,6 +255,7 @@ def compile_to_json_full_cognates(
         "syllables": {},
     }
     boards["dataProfile"] = profile.key
+    selected = selected_inputs(data_dict.values()) if profile.key == "germanic" else {}
     context_entries = {}
     if profile.key == "germanic":
         metadata_path = Path(path).with_name(METADATA_FILENAME)
@@ -300,6 +304,14 @@ def compile_to_json_full_cognates(
             "glossid": row["GLOSSID"],
             "syllables_parsed": profile.build_syllables_parsed(row, ipa_syllables),
         }
+        if selected.get(i):
+            if row["DOCULECT"] == "Old_English":
+                target = row.get("COUNTERPART")
+            else:
+                target = replace_diacritics_up(row["IPA"].replace(" ", "").replace(".", " "))
+            if target and target != "-":
+                boards["words"][idx]["fstForm"] = target
+                boards["words"][idx]["fstInput"] = selected[i]
         if profile.key == "germanic" and row["DOCULECT"] == "Old_English":
             context = context_for_row(i, row.get("PROTOFORM", "").strip(), context_entries)
             boards["words"][idx]["inputContext"] = {
@@ -324,6 +336,9 @@ def compile_to_json_full_cognates(
             }
             if "inputContext" in boards["words"][idx]:
                 boards["syllables"][syl_id]["inputContext"] = boards["words"][idx]["inputContext"]
+            if "fstForm" in boards["words"][idx]:
+                boards["syllables"][syl_id]["fstForm"] = boards["words"][idx]["fstForm"]
+                boards["syllables"][syl_id]["fstInput"] = boards["words"][idx]["fstInput"]
 
             # eprint(syllable_ids)
             # column ids are in fact the cognate sets
@@ -341,7 +356,11 @@ def compile_to_json_full_cognates(
     fsts = {}
     new_transducer = ""
 
-    if transducer == "internal":
+    if transducer == "internal" and pipeline_name == "germanic":
+        model = model_name(model)
+        fsts = model_bins(model, boards["fstDoculects"])
+        boards["germanicModel"] = model
+    elif transducer == "internal":
         # try and access the pipeline file in /fsts
         if os.path.isfile(f"/usr/app/fsts/{pipeline_name}.txt"):
             fst_path = f"/usr/app/fsts/{pipeline_name}.txt"
@@ -352,26 +371,17 @@ def compile_to_json_full_cognates(
     else:
         new_transducer = transducer
 
-    with tempfile.TemporaryDirectory() as tmpdirname:
-        os.chdir(tmpdirname)
-        eprint("Compiling FSTs (new)")
-        with open("transducer.foma", "w", encoding="utf-8") as fp:
-            fp.write(new_transducer)
-        output = subprocess.check_output(["foma", "-f", "transducer.foma"]).decode(
-            "UTF-8"
-        )
-        eprint("\n".join(output.split("\n")[-5:]))
-        
-        # debug
-        eprint(boards["fstDoculects"])
-
-        for doculect_name in boards["fstDoculects"]:
-            if os.path.isfile(doculect_name.lower() + ".bin"):
-                fsts[doculect_name] = lexical_fst(
-                    FST.load(doculect_name.lower() + ".bin"), doculect_name
-                )
-        eprint(fsts)
-        eprint("FSTs loaded:", ", ".join(fsts))
+    if new_transducer:
+        with tempfile.TemporaryDirectory() as tmpdirname:
+            script = os.path.join(tmpdirname, "transducer.foma")
+            with open(script, "w", encoding="utf-8") as fp:
+                fp.write(new_transducer)
+            subprocess.check_output(["foma", "-f", "transducer.foma", "-e", "quit"],
+                                    cwd=tmpdirname)
+            for doculect_name in boards["fstDoculects"]:
+                binary = os.path.join(tmpdirname, doculect_name.lower() + ".bin")
+                if os.path.isfile(binary):
+                    fsts[doculect_name] = lexical_fst(FST.load(binary), doculect_name)
 
 
     # Will hold something, TBD
@@ -451,9 +461,11 @@ def compile_to_json_full_cognates(
                 # print("trying ", row["DOCULECT"], " on ", syl, " : ", row["CONCEPT"])
 
                 # Apply the transducer upwards to this word
-                recs = list(lexical_apply_up(
+                entry = boards["words"]["word-" + row["ID"]]
+                recs = list(board_apply_up(
                     fsts[row["DOCULECT"]], syl,
-                    board_context(boards["words"]["word-" + row["ID"]].get("inputContext")),
+                    board_context(entry.get("inputContext")),
+                    (entry.get("fstForm"), entry.get("fstInput")),
                 ))
 
                 if not recs and pipeline_name == "germanic":
