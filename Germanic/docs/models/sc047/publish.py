@@ -73,6 +73,25 @@ def lexical_metadata():
     return headings, classes, decisions
 
 
+def expansion_entries(model, paradigms):
+    cells = {(row["lexeme"], row["cell"]): row for row in paradigms}
+    with (HERE / "expansions.tsv").open(encoding="utf-8") as stream:
+        proposals = list(csv.DictReader(stream, delimiter="\t"))
+    if len({row["id"] for row in proposals}) != len(proposals):
+        raise ValueError("Duplicate research lexical identity")
+    for row in proposals:
+        if not row["id"].startswith("sc047-"):
+            raise ValueError(f"Not a research lexical identity: {row['id']}")
+        label = row[f"{model}_cell"]
+        cell = cells.get((row["lexeme"], label)) if label else None
+        target = row.get(f"{model}_target")
+        if cell and target:
+            cell = {**cell, "target": target}
+        if label and (not cell or not cell["target"] or cell["target"] not in cell["outputs"]):
+            raise ValueError(f"Research proposal lacks a matching attested cell: {row['id']} {model}")
+        yield row, cell
+
+
 def publish(result, directory):
     directory.mkdir(parents=True, exist_ok=True)
     with (GERMANIC / "data/oe_known_problems.tsv").open(encoding="utf-8") as stream:
@@ -142,6 +161,27 @@ def publish(result, directory):
                 if row["selected_trace"] is not None:
                     traces.extend((f"Selected {row['selected_cell']}: "
                                    + trace_text(row["selected_input"], row["selected_trace"]), ""))
+        entries = list(expansion_entries(model, value["paradigms"]))
+        md.extend(("", "## Proposed catalogue additions", "",
+                   "These entries have separate research identities and do not enter either benchmark score.", ""))
+        fields = ("id", "lexeme", "headword", "cell", "input", "target", "outputs", "status")
+        with (directory / f"{model}-expansions.tsv").open("w", encoding="utf-8", newline="") as stream:
+            writer = csv.DictWriter(stream, fields, delimiter="\t", lineterminator="\n")
+            writer.writeheader()
+            for row, cell in entries:
+                md.extend(("", f"### {row['lexeme'].capitalize()} — *{row['headword']}*", ""))
+                publication = {key: row[key] for key in ("id", "lexeme", "headword")}
+                if cell:
+                    publication.update({key: cell[key] for key in ("cell", "input", "target")})
+                    publication.update(status="proposed selection", outputs=display(cell["outputs"]))
+                    md.extend((f"Proposed {cell['cell']}: `*{cell['input']}` → *{cell['target']}*.", ""))
+                    traces.extend((f"## {row['id']} — selected {cell['cell']}", "",
+                                   trace_text(cell["input"], cell["trace"]), ""))
+                else:
+                    publication["status"] = "pending selection"
+                    md.extend(("Selection pending; see the paradigm evidence below.", ""))
+                writer.writerow(publication)
+                md.append((HERE / "lexemes" / f"{row['id']}.md").read_text(encoding="utf-8"))
         md.extend(("", "## Technical appendix", "",
                    f"Frozen matches: {summary[model]['diagnostic']}/394. "
                    f"Selected matches: {summary[model]['matches']}/{summary[model]['selected_slots']}.",
@@ -155,6 +195,9 @@ def publish(result, directory):
                       f"| `{display(cell['outputs'])}` | {cell['target']} | {cell['evidence']} |")
             traces.extend((f"## {cell['lexeme']} — {cell['cell']}", "",
                            trace_text(cell["input"], cell["trace"]), ""))
+        for probe in value["queries"]:
+            traces.extend((f"## Exploratory input — {probe['input']}", "",
+                           trace_text(probe["input"], probe["trace"]), ""))
         md.extend(("", "### Unmatched forms and unresolved comparisons", ""))
         for item in summary[model]["unmatched"]:
             md.append(f"- {item['lexeme']} ({item['id']}), `*{item['input']}`: "
