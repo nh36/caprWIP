@@ -9,7 +9,9 @@ adds Seiler2019 and Fulk1998 from the user's supplied PDFs. They are no longer
 acquisition gaps. The original population/copy counts below describe the initial
 audit; current `inventory.json` also includes the two explicitly supplied
 Desktop files and their new holdings. The original snapshot remains in commit
-`cf77a36b`. Bennett1968, Stiles1995 and Hock1973 remain requested.
+`cf77a36b`. Bennett1968, Stiles1995 and Hock1973 remain requested in the
+historical snapshot. Later holdings work superseded Hock1973 and Stiles1995;
+Bennett1968 remains outstanding.
 
 ## Result and scope
 

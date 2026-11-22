@@ -1,9 +1,9 @@
 # Remaining requested originals
 
-Updated6 November2026: Seiler2019, the complete Fulk1998 chapter and now
-Hock1973 are held and removed from the acquisition requests.
-The two remaining chapter/article requests are below. A scan of the containing
-volume is equally useful. ISBNs identify volumes, not individual chapters.
+Updated22 November2026: Seiler2019, the complete Fulk1998 chapter, Hock1973,
+and Stiles1995 are held and removed from the acquisition requests. Stiles is
+now preserved in the locally acquired complete and companion
+`Friesische Studien II` scans. The remaining chapter/article request is below.
 
 1. Bennett, William H.1968. "The Accentuation of Gothic ga-."
    In F.A.Raven, W.K.Legner and J.C.King (eds.),
@@ -11,15 +11,6 @@ volume is equally useful. ISBNs identify volumes, not individual chapters.
    Coral Gables, FL: University of Miami Press.
    Volume ISBN10:0870240781; ISBN13:9780870240782.
    No chapter DOI verified.
-
-2. Stiles, Patrick V.1995. "Remarks on the 'Anglo-Frisian' Thesis."
-   In V.F.Faltings, A.G.H.Walker and O.Wilts (eds.),
-   *Friesische Studien II: Beiträge des Föhrer Symposiums zur Friesischen
-   Philologie vom 7.-8. April1994* (NOWELE Supplement Series12), pp.177-220.
-   Odense: Odense University Press.
-   Print ISBN13:9788778380593; ebook ISBN13:9789027272843.
-   Chapter DOI:[10.1075/nss.12.11sti](https://doi.org/10.1075/nss.12.11sti).
-   The1995 original is distinct from its2012 online availability.
 
 ## Hock request completed, 6 November2026
 
