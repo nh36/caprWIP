@@ -32,6 +32,13 @@ page map](hollifield1980.tsv), linked to the single bibliographic identity.
 
 ## Extraction, pagination and reading limits
 
+Hofmann (1970), *Niederdeutsches Wort* 10, pp. 95–108, was installed
+from `Downloads/Niederdeutsches_Wort_10_1970.pdf`. The private journal
+original and article extract are pinned in `holdings.tsv`; printed
+pages 95–108 are sheets 100–113 of the
+[journal issue](https://www.lwl.org/komuna/pdf/Niederdeutsches_Wort_10_1970.pdf).
+The new holding is not part of the earlier restoration bundle.
+
 Complete texts and intermediate OCR remain private under
 `docs/references/local/sc047-early-apocope/`. `pdftotext -layout` supplies
 the untouched native extracts. For Boutkan, all 484 page faces are rendered
