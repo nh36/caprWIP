@@ -31,8 +31,8 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
 
 ## Key paradigm findings
 
-1. **No inflected OE token of 'hay' is attested anywhere in the collated
-   material.** Wright's *hīeges*, *hīege* are paradigm illustrations. The
+1. **No overtly inflected OE token of 'hay' is identified in the sources
+   examined.** Wright's *hīeges*, *hīege* are paradigm illustrations. The
    proposed analogical donor of the direct singular's shape is therefore
    itself a reconstruction, never an observed OE form.
 2. Every attested token is direct (nom./acc.) or syntactically dative

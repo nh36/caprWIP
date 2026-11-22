@@ -9,7 +9,7 @@ QUANTITY_EVIDENCE.md (D), DERIVATIONS.md (E), DRAFT.md (F).
 
 1. The alleged analogical donor (gen./dat. *hīeġes/hīeġe*) is unattested
    in OE — the analogy rests on reconstructed forms (PARADIGM.md).
-2. No independent evidence establishes the conventional long vowel of the
+2. No independent evidence identified in the sources examined establishes the conventional long vowel of the
    direct singular; editorial acutes and ME/ModE reflexes are
    non-probative (QUANTITY_EVIDENCE.md; Minkova 2014: 178).
 3. The Anglian/Kentish record (⟨heg⟩ VP ×11, VH, Bede; ⟨hei-⟩ 839) and
@@ -59,7 +59,8 @@ attested?** ⟨heg⟩ (Mercian VP ×11, VH, Bede, charter 858), ⟨hei-⟩
 (Kentish 839, compound), ⟨hig/hyg⟩ (late WS psalters, gospels, Colloquy,
 glossaries), ⟨heig⟩ (Dialogues C, Royal Mk 6.39), ⟨haig⟩ (Hatton 38),
 ⟨hei⟩ (c. 1150 glossary). Only direct (nom./acc.) cells and endingless
-dative syntax (*mid hig*) are attested. **No inflected token exists.**
+dative syntax (*mid hig*) are attested. **No overtly inflected token was
+identified in the sources examined.**
 
 **2. Strongest independent evidence for a long vowel? Decisive?** There
 is none that is independent. The length of *hīeġ/hēġ* is theory-internal
@@ -107,12 +108,13 @@ neuters. 'Hay' itself is a poor diagnostic: Dahl's no-gemination analysis
 of \*-awj- (no w-forms recorded in OE) would detach it from the
 gemination question entirely, and the A2/B2 convergence erases the OE
 difference. The general chronology must be decided on *nett/bedd/cynn*,
-the \*\*se8e gap, and the comparative relics — as the SC047 dossier
+the *secg*/*sege* gap, and the comparative relics — as the SC047 dossier
 already concluded ("the evidence does not settle a general OE oral/nasal
 sequence").
 
 **9. What is genuinely original here?** (i) The source-critical
-concordance and the demonstration that **no inflected OE token exists** —
+concordance and the demonstration that **no overtly inflected OE token was
+identified in the sources examined** —
 the donor of every analogical account is unattested; (ii) the
 demonstration that the long vowel of the direct singular has no
 independent empirical support (the quantity is a theorem of the geminate

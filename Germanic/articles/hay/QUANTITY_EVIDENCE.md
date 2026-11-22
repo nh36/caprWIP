@@ -27,7 +27,7 @@ class), *glīg/glēo* 'glee' (\*gliwą/\*gliwi, same structure with i-grade).
 
 ## Assessment
 
-- **No independent, decisive evidence establishes a long vowel in the OE
+- **No independent, decisive evidence identified in the sources examined establishes a long vowel in the OE
   direct singular of 'hay'.** The conventional /eːj/ of *hēġ*/*hīeġ* is
   theory-internal: it is the regular output of the geminate-route stem
   (\*awwj > \*auj > ēa > īe), and the handbooks' length marks are editorial.

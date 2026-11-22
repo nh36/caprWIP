@@ -65,10 +65,10 @@ Hogg and Fulk set out the alternatives with exemplary clarity. The
 expected development, with nominative \*-az lost early and accusative
 \*-ą lost late, would give a pre-Old-English masculine paradigm with
 ungeminated nominative \*sagi beside geminated accusative \*saggi; "it is
-noteworthy, however, that \*\*se8e, the expected reflex of \*sagi, never
-occurs in OE, the nom.sg. always being of the type se78 ... We must
+noteworthy, however, that **\*sege**, the expected reflex of \*sagi, never
+occurs in OE, the nom.sg. always being of the type *secg* ... We must
 therefore assume, with Dahl (1938: 81–6), that only \*-az was lost prior
-to gemination and that acc.sg. se78, neut.sg. cynn are regular forms",
+to gemination and that acc.sg. *secg*, neut.sg. cynn are regular forms",
 the masculine nominative having been re-formed by the syncretism of
 nominative and accusative; "[a]lternatively, one might suggest, following
 Campbell (1977: §576), see also Dal (1934), that both inflexions were
@@ -114,8 +114,8 @@ a long vowel or diphthong, and "[f]orms like nom. hieg ... had the final
 g from the inflected forms, as gen. hieges, dat. hiege" [@Wright1914,
 §270 Note; cf. §357]. Two things deserve emphasis. First, Wright's
 *hīeges* and *hīege* are paradigm illustrations: as Section 3 shows, no
-inflected form of this noun is attested anywhere in the collated Old
-English record, a fact already registered by Dahl — "Inflected forms are
+overtly inflected form of this noun is identified in the sources examined,
+a fact already registered by Dahl — "Inflected forms are
 thus not to be found in my material" [@Dahl1938, hay section]. Second,
 the three early-apocope authorities do not invoke analogy for the same
 thing. Ringe–Taylor and Campbell replace the entire inherited stem,
@@ -217,7 +217,7 @@ glossing Latin *faenum*, always without an overt ending [@Dahl1938, hay
 section]. Two Kentish charters supply the earliest dated tokens, both as
 compound first elements: *heiweg* 'hay-road' (A.D. 839) — the earliest
 ⟨hei⟩ spelling — and *Hegforde* (A.D. 858). The Old English Bede has
-accusative *heg* in *on sumera heg ne māweþ* [@Miller1891, I p. 28].
+accusative *heg* in *on sumera heg ne māweþ* [@Miller1890, I p. 28].
 The late West Saxon Lambeth Psalter writes *hyg*, *hig* [@Dahl1938;
 Lindelöf's edition]. In Gregory's *Dialogues* the eleventh-century
 Corpus manuscript (C) writes *heig* and *hig* where Cotton Otho (O) has
@@ -228,7 +228,7 @@ gærs* (Julius A.ii), and — in a fragmentary vocabulary of about 1150 —
 *Fenum, hei, uel græs* [@WrightWuelcker1884, I.289.45, I.325.21, I.547].
 In the West Saxon gospels at Mark 6.39 Corpus 140 has *hig*, with later
 *haig* (Hatton 38) and *heig* (Royal); the Lindisfarne gloss there has
-*gers* and Rushworth *heggetgrese* [@Skeat1874, ad loc.].
+*gers* and Rushworth *heggetgrese* [@Skeat1871, Mark 6:39].
 
 Three classes of false positive must be excluded: the plural pronoun
 *hig*; the distinct noun *hege* 'hedge, enclosure', whose Middle English
@@ -244,16 +244,16 @@ Classified by grammatical cell (full table in `PARADIGM.md`), the record
 has a striking shape. Direct-case tokens (nominative or accusative,
 formally indistinguishable) are plentiful: every psalter, prose and
 glossary token above. Syntactically dative *mid hig* shows no ending.
-And there is no inflected token at all: no genitive, no dative in -e, no
-unambiguous plural, in any collated edition — Dahl's observation of 1938
+No overtly inflected token is identified in the collated sources: no genitive,
+no dative in -e, no unambiguous plural — Dahl's observation of 1938
 stands. Wright's *hīeges* and *hīege* are paradigm expectations, as is
 the *mid hīeġe* of normalized grammars. Both of the historically central
 reconstructed entities — the protected oblique stem that serves as the
 analogical donor in the early-apocope accounts, and the inherited
 ungeminated direct form \*hawi/\*hewi — are equally unattested in Old
 English. The analogical explanation and the regular-development
-explanation are, in this precise sense, evidentially symmetrical: each
-rests on a reconstructed form.
+explanation are, within the sources examined, evidentially symmetrical:
+each rests on a reconstructed form.
 
 ## 3.3 Dialect and date distribution
 

@@ -14,8 +14,9 @@ the original page image.]
 
 Later, Jones explicitly sets `[hej]`/`[heij]` for ‘hay’ among the Old English
 to Middle English diphthongization material and describes this as palatal
-glide vocalization. [@Jones1989, printed pp. 149 and 162; verified against
-the original page images.]
+glide vocalization. [@Jones1989, printed pp. 149 and 152; verified against
+the original page images.] The earlier pp. 162 locator was superseded:
+printed p. 162 concerns pre-nasal *frensh*/*henge* material, not hay.
 
 **Interpretive distinction:** Jones describes an observed alternation and a
 possible diphthong-producing process. He does not by itself establish that
@@ -99,7 +100,7 @@ orthographic heavy syllable into a compensatory-lengthening rule.
 1. Jones is the strongest immediate internal witness for Lindisfarne
    `heig`/`heg` being described as glide or diphthongization evidence.
 2. Minkova supplies the main theoretical objection to contrastive
-   diphthongal length and a direct discussion of *hæg* ‘hay’.
+   diphthongal length and a direct discussion of *hēġ* ‘hay’.
 3. Mokrowiecki supplies a cautious quantity/orthographic methodology.
 4. Goering is a control against a post-consonantal h-loss lengthening
    explanation, rather than a positive witness for *hay*.

@@ -32,8 +32,8 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
   (gemination levelled in from the obliques); OE *mete* : *mettas*;
   parallels \*gliwi > *glīg*, *ēg*/*īeg* 'island', *strēgan*, *cīegan*.
 - **Difficulty**: the regular fate of \*hǣwi is left unstated; the
-  replacement has no attested OE donor paradigm (no inflected OE token of
-  'hay' is attested; see CONCORDANCE.tsv).
+  replacement has no attested OE donor paradigm (no overtly inflected OE
+  token of 'hay' is identified in the sources examined; see CONCORDANCE.tsv).
 
 ## 2. Campbell 1959 [@Campbell1959, §§120.2, 579(4)]
 
@@ -60,7 +60,7 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
 - **Analogy**: narrower than Ringe–Taylor/Campbell: only the final **-g**
   is analogical; the vocalism is taken as regular. His *hīeges*, *hīege*
   are **paradigm illustrations, not manuscript citations** (confirmed:
-  no inflected OE token exists in any collated edition; see
+  no overtly inflected OE token is identified in the sources examined; see
   CONCORDANCE.tsv).
 - **Difficulty**: presupposes the long-diphthong stem in the direct cell
   before j-loss, i.e. implicitly the geminate-route vocalism.
@@ -87,10 +87,10 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
 
 - **Chronology**: split/late. §2.23: "nom.sg. \*-az was lost before ...
   gemination, giving \*sagjaz > \*sagi but ... acc.sg. \*-ã remained until
-  after gemination". "It is noteworthy ... that \*\*se8e, the expected
+  after gemination". "It is noteworthy ... that **\*sege**, the expected
   reflex of \*sagi, never occurs in OE ... We must therefore assume, with
   Dahl (1938: 81–6), that only \*-az was lost prior to gemination and that
-  acc.sg. se78, neut.sg. cynn are regular forms", the masc. nom. sg.
+  acc.sg. *secg*, neut.sg. cynn are regular forms", the masc. nom. sg.
   re-formed by nom./acc. syncretism; "Alternatively ... following Campbell
   (1977: §576), see also Dal (1934), that both inflexions were lost prior
   to gemination, in which event all geminated forms in the nom.acc.sg.
@@ -99,7 +99,7 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
   nasal \*-ą through gemination, so the geminate stem (and hence the īe/ē
   vocalism and final -ġ) is **regular** in the direct cell; no analogy
   needed for this word (= CAPR Model B2).
-- **Evidence**: total absence of \*\*se8e-type masculines; *cynn*, *nett*,
+- **Evidence**: total absence of *sege*-type masculines; *cynn*, *nett*,
   *bedd* as regular neuters.
 - **Difficulty**: OHG *hewi*, Goth. *hawi* (inherited ungeminated direct
   forms elsewhere in Germanic) must be regional or remodelled; comparative

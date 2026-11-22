@@ -25,6 +25,8 @@ Research artifacts (cycle 1):
   publishable prose, analytical scaffolding for 4–6 (artifact F).
 - `RESEARCH_MEMO.md` — critical assessment and answers to the ten
   final-judgment questions (artifact G).
+- `EDITORIAL_CLEANUP_REPORT.md` — bounded correction and verification
+  report for the first research cycle.
 - `article_refs.bib` — research-scoped supplemental citations (Dahl1938,
   Hogg1979Analogy, Adamczyk2018, Dal1934, Ritt2000); `docs/refs.bib`
   remains authoritative for all keys it contains.
