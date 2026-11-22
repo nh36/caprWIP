@@ -24,10 +24,16 @@ unique or that gemination/apocope chronology follows the same route.
 
 ## Donka Minkova (2014)
 
-Minkova discusses OE *hæg* ‘hay’, also spelled `<heig>`, and OE *weg* ‘way’
+Minkova discusses OE *hēġ* ‘hay’, also spelled `<heig>`, and OE *weġ* ‘way’
 as an objection to analyses claiming contrastive long and short diphthongs.
-Her argument is that if diphthongal length were contrastive, etymological
-length in `[ej]` in *hæg* and *weg* would have reasons to be preserved.
+Her argument is that if diphthongal length were contrastive, the expected
+contrast /eːj/ in *hay* versus /ej/ in *way* would have reasons to be
+preserved; it was not.
+
+**Supersession notice (22 November 2026, 400 dpi image verification):** an
+earlier reading reported the printed form as *hæg*. Direct inspection of the
+page image (printed p. 178, PDF sheet 198) shows italic *hēġ* with macron
+on the vowel and dot on the ġ. The earlier *hæg* report is superseded.
 This is a theoretical argument against the *ea/eo/ie* short-diphthong
 reconstruction, not a direct transcription of all manuscript occurrences.
 [@Minkova2014, printed p. 178; verified against the original page image.]
