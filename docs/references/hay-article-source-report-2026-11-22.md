@@ -74,8 +74,8 @@ metadata was reconciled in `docs/refs.bib` and the hay inventory TSV.
   holdings are already registered.
 - Stiles 1995 is now closed as an acquisition gap. The complete text is not
   verified; source pages remain the authority.
-- Bennett 1968 remains missing.
-- Dal 1934 remains missing.
+- Bennett 1968 is held in the Sehrt festschrift.
+- Dal 1934 is ILL requested and awaiting delivery.
 - *Approaches to Old Frisian Philology* 1998 remains incomplete as an edition,
   but Fulk 1998 and the complete Fulk chapter are already held.
 
@@ -134,10 +134,39 @@ Bennett 1968 is no longer missing: the Sehrt 274-sheet volume supplies printed
 pp. 53--60. The exact chapter scan is mapped to PDF sheets 64--71. Sheet 65
 was visually verified as printed p. 54. Load-bearing transcription remains.
 
-Goering 2025 is acquired and native-text searchable. Ritt 2000 remains
-unlocated in the searched sources. Dal 1934 remains unlocated.
+Goering 2025 is acquired and native-text searchable. Ritt 2000 and Dal 1934
+are ILL requested and awaiting delivery; no further local acquisition search
+is needed for them.
 
 The initial source-critical reading identifies Jones's Lindisfarne
 `heig`/`heg` diphthongization discussion and Minkova's objection to
-contrastive diphthongal length in *beg* ‘hay’/*weg* ‘way’ as the strongest
-immediate hay passages. Both still require original-page verification.
+contrastive diphthongal length in *hæg* ‘hay’/*weg* ‘way’ as the strongest
+immediate hay passages. These bounded page checks have now been completed.
+
+## Completion reconciliation
+
+The previous 14-candidate list has been resolved. Dresher's EPUB was
+preserved and extracted. Erdmann 1972 and Sievers 1892 were preserved with
+native text. The Sehrt and Goetz scans were preserved as incomplete, distinct
+holdings. The valid Boutkan PDF is an exact duplicate of the canonical copy;
+the extra zero-byte file is defective. The valid Hogg/Fulk -1 PDF is the
+canonical morphology holding; the extra 114-byte file is a download-limit
+message. CAPR manuscript, notes and the Secondary Stress working document
+are excluded from the external scholarship inventory.
+
+The Stiles 1995 printed chapter was OCRed for PDF sheets 186--229 and a
+sidecar was retained at
+`docs/references/local/stiles/stiles_1995_pp177-220.txt`.
+The Bennett 1968 chapter was OCRed for PDF sheets 64--71 and retained at
+`docs/references/local/bennett/bennett_1968_pp53-60.txt`.
+
+All four Goetz tranches were preserved and OCRed. Pages 51--68, 69--87,
+88--107 and 108--126 are available; printed p. 121 is missing from the final
+tranche. The Sehrt volume variants preserve the complete Bennett chapter but
+the volumes themselves omit pp. 33--34 and 255. These omissions are explicit
+and do not invalidate pp. 53--60.
+
+The 185-page PDF originally found in Downloads and later moved to Trash was
+recovered into the project as `Inscriptions of Burma, Portfolio IV`.
+It is unrelated to Germanic historical linguistics and is excluded from the
+hay/Germanic inventory.

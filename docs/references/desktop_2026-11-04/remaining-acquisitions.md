@@ -1,12 +1,9 @@
 # Remaining requested originals
 
 Updated22 November2026: Seiler2019, the complete Fulk1998 chapter, Hock1973,
-Stiles1995 and Bennett1968 are held and removed from the acquisition requests.
-Stiles is preserved in the complete and companion `Friesische Studien II`
-scans and in a born-digital revised standalone extraction. Bennett is supplied
-by the Sehrt festschrift in the locally acquired 274-sheet scan. The remaining
-major hay-source acquisition gaps are Goering2025 and Ritt2000, plus Dal1934
-in the nominal-levelling dossier.
+Stiles1995 and Bennett1968 are held and removed from the local acquisition
+requests. Goering2025 is also acquired. Ritt2000 and Dal1934 are ILL requested
+and awaiting delivery.
 
 ## Hock request completed, 6 November2026
 

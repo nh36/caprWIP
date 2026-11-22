@@ -30,6 +30,8 @@
 # Reference PDFs are not committed (kept local; .txt extracts are committed)
 # Temporary/sandbox files
 docs/references/*.pdf
+# Reference EPUB and other source documents are also kept local.
+docs/references/*.epub
 # Access-controlled source texts and local restoration bundles, not OCR caches.
 /docs/references/local/
 
