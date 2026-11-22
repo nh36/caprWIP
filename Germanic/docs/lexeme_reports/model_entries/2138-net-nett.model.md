@@ -22,11 +22,11 @@ Orel gives [natjan]{.recon} ‘net’ with Old English [`nett`]{.iv lang=oe sort
 
 ### Old English evidence
 
-The Paris Psalter 89.10 attests dative *nette* ‘net’ in a prepositional phrase [@Thorpe1835, Psalm 89.10]. Lindisfarne Luke 5:6 has nominative [net]{.iv lang=oe sort=net role=comparison_form}; John 21:6 has accusative [nett]{.iv lang=oe sort=nett role=comparison_form}. Final single spellings do not alone establish historical singleton quantity [@Campbell1959].
+The Paris Psalter 89.10 attests dative *nette* ‘net’ in a prepositional phrase [@Thorpe1835, Psalm 89.10]. Lindisfarne Luke 5:6 has nominative [net]{.iv lang=oe sort=net role=comparison_form} ‘net’; John 21:6 has accusative [nett]{.iv lang=oe sort=nett role=comparison_form} ‘net’. Final single spellings do not alone establish historical singleton quantity [@Campbell1959].
 
 ### Development to Old English
 
-In both models, [nátjai]{.recon} gives \emph{*nátjē} by monophthongization. The vowel protects the glide through gemination, and brightening, umlaut, shortening and glide loss give *nette*. Direct [nátją]{.recon} loses its nasal ending first in A and the stranded glide vocalizes, giving \emph{*nete}. In B2 [náttją]{.recon} precedes ending loss and yields *nett*. The attested direct double decides between these histories only if inherited rather than extended from a protected cell [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23].
+In both models, [nátjai]{.recon} ‘to a net’ gives \emph{*nátjē} by monophthongization. The vowel protects the glide through gemination, and brightening, umlaut, shortening and glide loss give *nette*. Direct [nátją]{.recon} ‘net’ loses its nasal ending first in A and the stranded glide vocalizes, giving \emph{*nete}. In B2 geminated [náttją]{.recon} ‘net’ precedes ending loss and yields *nett*. The attested direct double decides between these histories only if inherited rather than extended from a protected cell [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23].
 
 ### Form note
 

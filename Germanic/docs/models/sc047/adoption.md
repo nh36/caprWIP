@@ -116,11 +116,35 @@ Corpus SHA-256:
 Full executable-input hashes are embedded in the capture. The
 model capture alone is not an exact-commit strict certificate.
 
-The companion volumes and full alternative traces can be regenerated
-from that capture without rerunning Foma:
+The [A](A-volume.pdf) and [B2](B2-volume.pdf) companion volumes and
+full alternative traces can be regenerated from that capture without
+rerunning Foma:
 
 ```sh
 python3 Germanic/docs/models/sc047/publish.py \
   Germanic/docs/models/sc047/captures/sc047-adoption-v1.json.gz \
   .capr-work/adoption-models --pdf
 ```
+
+## Shared publication audit
+
+The ordinary indexed book contains 180 full dossiers, including bed,
+kin and hay; its selected catalogue and compact derivation projection
+cover all 396 active entries. The strict build passed the assembled
+semantic, citation, bibliography, occurrence-parity and rendered-reference
+checks. It found 1,561 printable and 83 excluded explicit occurrences,
+with no omissions, duplicates or semantic discrepancies.
+
+In the 367-page main PDF, all 1,405 Index Verborum page-number links
+resolve to the matching printed page labels. Representative destinations
+include *bedde*, *peti* and *bedi* on p. 141, *heig* and *hīeġ* on
+p. 176, *hecg* and *heġġ* on p. 177, Cotton *hiewes* on p. 183,
+*cyn* and *cynnes* on p. 185, *nátjai* and *nette* on p. 198,
+and *rástǭ*, *rástē* and *ræste* on p. 319. The entries for Old
+Saxon *feni*, Old Frisian *fene*, *fenne* and *fennem*, and Old
+English *wicg*, *wicge* and *wicga* resolve to their comparative
+discussion on p. 5. Their role and language metadata are checked
+separately from the page-link audit.
+
+Main PDF SHA-256:
+`ebab07f35c4943d866b3ad4e766f7b32ab0ae9729c89b6d0bf96aeeef727707f`.

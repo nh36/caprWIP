@@ -697,7 +697,7 @@ define PWGmcJGemination Ctx([
 ]);
 ```
 
-OE *nett* 'net' separates two predictions for the inherited direct singular. If early nasal loss strands the glide and it vocalizes before gemination, PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred}; if the ending protects the glide through gemination, the direct route gives *nett*. The attested geminate constrains the order only if it is inherited in that cell, rather than extended from a protected form such as the dative *nette* [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, §2.23].
+OE *nett* 'net' separates two predictions for the inherited direct singular. If early nasal loss strands the glide and it vocalizes before gemination, PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred}; if the ending protects the glide through gemination, the direct route gives *nett*. The attested geminate constrains the order only if it is inherited in that cell, rather than extended from a protected form such as the dative *nette* [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, pp. 20--21, §2.23].
 
 The chronology is phonologically transparent: the consonant must geminate before \emph{*j} ceases to be consonantal. The witness establishes no earlier boundary.
 
@@ -722,7 +722,7 @@ define PWGmcSyllabicJ Ctx([
 ]);
 ```
 
-The same PGmc [nátją]{.recon} ‘net’ witness supplies the only firm boundary. Placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred} rather than expected OE *nett* 'net'; moving it later changes no output.
+In the compatibility cascade, placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred} from PGmc [nátją]{.recon} ‘net’; moving it later changes no output. This contrast fixes the order for a regular direct derivation of OE *nett* 'net', but does not fix the historical order if the direct singular acquired its geminate from a protected cell.
 
 Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. The lexicon adds only that vocalization followed gemination, not where it falls among subsequent changes.
 
@@ -4315,7 +4315,7 @@ Ringe and Taylor reconstruct West Germanic loss of unstressed short oral \emph{*
 
 Loss of \emph{*z} before apocope is the economical West Germanic analysis, not a logical consequence of an endingless descendant. Old Norse demonstrates the possibility of the opposite order. The West Germanic survival of vowels before \emph{*s} and \emph{*r} favors the \emph{*z}-first account, while the possible Matronae-name counterexamples have uncertain linguistic affiliation and different syllabic positions [@RingeTaylor2014, p. 46]. The Frienstedt comb inscription \emph{kaba} 'comb', interpreted as \emph{kamba} and dated approximately 250--300 CE, provides a more concrete local witness: on that interpretation, \emph{*z} has gone while \emph{*a} remains. Fulk expressly cautions against extending that date to completed \emph{*z}-loss throughout West Germanic [@Fulk2018, p. 25, n. 1]. Neither observation supplies an exact universal date for apocope; the runic and Latinized evidence remains qualified [@RingeTaylor2014, p. 45, n. 4].
 
-Loss of exposed unstressed short oral \emph{*a} could strand a glide, as in masculine nominative singulars of light ja-stems after final \emph{*z} loss. Both historical models place short oral loss before [SC010 West Germanic j-gemination](#rule-PWGmcJGemination); they differ on short nasal loss. This historical distinction cannot be read off the compatibility cascade: its bare-vowel deletion fragment follows gemination and treats only the oral vowel [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, §2.23].
+Loss of exposed unstressed short oral \emph{*a} could strand a glide, as in masculine nominative singulars of light ja-stems after final \emph{*z} loss. Both historical models place short oral loss before West Germanic j-gemination ([SC010 PWGmcJGemination](#rule-PWGmcJGemination)); they differ on short nasal loss. This historical distinction cannot be read off the compatibility cascade: its bare-vowel deletion fragment follows gemination and treats only the oral vowel [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, pp. 20--21, §2.23].
 
 ### SC041. Loss of final bare \emph{*a} (`PWGmcFinalBareALoss`) {#rule-PWGmcFinalBareALoss}
 

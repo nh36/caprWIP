@@ -7,7 +7,7 @@ DERIVATION_CLASS: regular
 
 ### Old English evidence
 
-Hecht's edition of the Old English *Dialogues* prints direct [heig]{.iv lang=oe sort=heig role=comparison_form}; compare [hig]{.iv lang=oe sort=hig role=comparison_form} and apparatus [heg]{.iv lang=oe sort=heg role=comparison_form} [@Hecht1900, p. 36, ll. 2, 13]. The normalized comparison is *hīeġ*. The phrase *mid hig* attests oblique use but not a preserved dative ending.
+Hecht's edition of the Old English *Dialogues* prints direct [heig]{.iv lang=oe sort=heig role=comparison_form} ‘hay’; compare [hig]{.iv lang=oe sort=hig role=comparison_form} ‘hay’ and apparatus [heg]{.iv lang=oe sort=heg role=comparison_form} ‘hay’ [@Hecht1900, p. 36, ll. 2, 13]. The normalized comparison is *hīeġ*. The phrase *mid hig* attests oblique use but not a preserved dative ending.
 
 ### Development to Old English
 

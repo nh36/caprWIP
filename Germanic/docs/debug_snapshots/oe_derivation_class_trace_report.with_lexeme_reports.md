@@ -3441,7 +3441,7 @@ Cotton [hiewes]{.iv lang=oe sort=hiewes role=comparison_form source_ref="Germani
 
 #### Development to Old English
 
-The genitive [xíwjas]{.recon} protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The checkpoints below illustrate the inherited direct form under B2 (and the compatibility cascade), not the selected derivation. A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
+The genitive [xíwjas]{.recon} ‘of a hue’ protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The checkpoints below illustrate the inherited direct form under B2 (and the compatibility cascade), not the selected derivation. A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
 
 Campbell's decisive class contrast is that awj and iwj share gemination
 but thereafter lose different glides: the low-vowel type yields the

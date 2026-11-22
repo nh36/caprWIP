@@ -18,8 +18,8 @@ experiment results, not the results of the active catalogue.
 
 ## Archived matched comparison: scope and reproduction
 
-The original configurations were **SC047-A-early-v1** and
-**SC047-B-split-v1**. Neither archived snapshot has been revised in
+The original configurations were `SC047-A-early-v1` and
+`SC047-B-split-v1`. Neither archived snapshot has been revised in
 place. The initial B has been retired from the active implementation.
 The original arms shared reconstructed inputs and differed in the order
 of nasal loss, vocalization of the resulting stranded glide, and gemination.

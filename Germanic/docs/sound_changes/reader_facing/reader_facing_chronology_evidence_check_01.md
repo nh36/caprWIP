@@ -7,7 +7,7 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 ## Summary
 
 - Sections checked: 108.
-- Sections with absent cues or notation observations: 71.
+- Sections with absent cues or notation observations: 72.
 
 | File | Rule section | Move wording | Expected form | Wrong output/result | SC-plus-rule ref | Verbal boundary wording | Limitation wording | Symbolic `<` notation | Textual observations (not evidence verdicts) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -22,8 +22,8 @@ This is a non-normative surface-wording inventory, not a scientific evidence gat
 | 008-coronal-w-assimilation.md | SC008. Assimilation of coronal consonants before \emph{*w} (`PWGmcCoronalWAssimilation`) {#rule-PWGmcCoronalWAssimilation} | no | no | no | yes | yes | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording |
 | 031-ww-simplification.md | SC031. Inherited short-Vww reanalysis (`OEWWSimplification`) {#rule-OEWWSimplification} | no | no | no | yes | no | yes | no | missing move-condition wording |
 | 009-ij-contraction-in-friend.md | SC009. \emph{ij}-contraction in \emph{friend} (`PWGmcIjContraction`) {#rule-PWGmcIjContraction} | yes | yes | yes | yes | yes | no | no | — |
-| 010-west-germanic-j-gemination.md | SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination} | no | yes | yes | yes | yes | no | no | missing move-condition wording |
-| 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | yes | yes | yes | yes | yes | no | no | — |
+| 010-west-germanic-j-gemination.md | SC010. West Germanic j-gemination (`PWGmcJGemination`) {#rule-PWGmcJGemination} | no | no | yes | no | yes | no | no | missing move-condition wording; missing expected-form wording; missing SC-plus-rule reference in chronology prose |
+| 011-syllabic-j-after-final-vowel-loss.md | SC011. Syllabic \emph{*j} after final-vowel loss (`PWGmcSyllabicJ`) {#rule-PWGmcSyllabicJ} | yes | no | yes | yes | yes | no | no | missing expected-form wording |
 | 028-preconsonantal-x-loss.md | SC028. Simplification of \emph{*xs} before a consonant (`PNWGmcPreconsonantalXLoss`) {#rule-PNWGmcPreconsonantalXLoss} | no | no | no | no | no | no | no | missing move-condition wording; missing explicit wrong-output/result wording; missing expected-form wording; missing explicit verbal boundary conclusion |
 | 012-lth-voicing.md | SC012. Northern West Germanic \emph{lþ}-voicing (`EAFLThVoicing`) {#rule-EAFLThVoicing} | yes | no | no | no | yes | yes | no | — |
 | 013-dental-hardening.md | SC013. Dental hardening (`PWGmcDentalHardening`) {#rule-PWGmcDentalHardening} | yes | no | yes | yes | no | no | no | missing expected-form wording; missing explicit verbal boundary conclusion |
