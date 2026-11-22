@@ -104,7 +104,7 @@ def selections(rows, cells, model):
 
 def apply_stage(bin_path, previous):
     domain = sorted({value for outputs in previous.values() for value in outputs})
-    mapped = dict(zip(domain, batch_apply_down(bin_path, domain), strict=True)) if domain else {}
+    mapped = dict(zip(domain, batch_apply_down(bin_path, domain))) if domain else {}
     return {key: sorted({out for value in outputs for out in mapped[value]})
             for key, outputs in previous.items()}
 
@@ -172,7 +172,7 @@ def run(models, forms=()):
                 "component_checks": [{"component": stage} for stage in sorted(components)],
             }, [], work, components_only=True)
         diag = {f"row:{row['row_id']}": row["fst_input"] for row in rows}
-        canonical_outputs, _ = trace(canonical, paths, diag)
+        canonical_outputs, canonical_traces = trace(canonical, paths, diag)
         for row in rows:
             if canonical_outputs[f"row:{row['row_id']}"] != expected[row["row_id"]]["identity"]:
                 raise RuntimeError(f"Stage evaluation disagrees with canonical composition: {row['row_id']}")
@@ -192,6 +192,7 @@ def run(models, forms=()):
                     **row,
                     "diagnostic_outputs": endpoints[diag_key],
                     "canonical_outputs": canonical_outputs[diag_key],
+                    "canonical_trace": canonical_traces[diag_key],
                     "selected_cell": None,
                     "selection_status": ("unresolved comparison" if model == "A" and row_id == "2061"
                                          else "explicit cell" if overrides[row_id] else "retained"),
@@ -205,7 +206,7 @@ def run(models, forms=()):
             results[model] = {
                 "order": orders[model], "corpus": corpus,
                 "paradigms": [{**cell, "outputs": endpoints[key], "trace": traces[key]}
-                              for cell, key in zip(cells, probes, strict=True)],
+                              for cell, key in zip(cells, probes)],
                 "queries": [{"input": form, "outputs": endpoints[key], "trace": traces[key]}
                             for key, form in queries.items()],
             }
