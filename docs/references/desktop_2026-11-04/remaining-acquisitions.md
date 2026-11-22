@@ -1,16 +1,12 @@
 # Remaining requested originals
 
 Updated22 November2026: Seiler2019, the complete Fulk1998 chapter, Hock1973,
-and Stiles1995 are held and removed from the acquisition requests. Stiles is
-now preserved in the locally acquired complete and companion
-`Friesische Studien II` scans. The remaining chapter/article request is below.
-
-1. Bennett, William H.1968. "The Accentuation of Gothic ga-."
-   In F.A.Raven, W.K.Legner and J.C.King (eds.),
-   *Germanic Studies in Honor of Edward Henry Sehrt*, pp.53-60.
-   Coral Gables, FL: University of Miami Press.
-   Volume ISBN10:0870240781; ISBN13:9780870240782.
-   No chapter DOI verified.
+Stiles1995 and Bennett1968 are held and removed from the acquisition requests.
+Stiles is preserved in the complete and companion `Friesische Studien II`
+scans and in a born-digital revised standalone extraction. Bennett is supplied
+by the Sehrt festschrift in the locally acquired 274-sheet scan. The remaining
+major hay-source acquisition gaps are Goering2025 and Ritt2000, plus Dal1934
+in the nominal-levelling dossier.
 
 ## Hock request completed, 6 November2026
 

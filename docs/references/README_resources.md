@@ -115,8 +115,10 @@ The shared bibliography key is `Hock1973`; the
 [source-critical review](../../Germanic/docs/sound_changes/literature_dossiers/sc015-hock1973-source-review.md)
 compares Hock's actual argument with the five requested modern discussions.
 This is bounded source integration, not adoption of a new SC015 law.
-The live remaining article request is Bennett1968. Stiles1995 is now held in
-the complete and companion `Friesische Studien II` 1995 scans.
+The live main hay article acquisitions are Goering2025 and Ritt2000.
+Stiles1995 is held in the complete and companion `Friesische Studien II`
+scans and in a born-digital revised standalone extraction. Bennett1968 is
+held within the Sehrt festschrift.
 
 ## Holdings reconciliation, 4 November 2026
 

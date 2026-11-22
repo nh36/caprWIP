@@ -108,3 +108,36 @@ Mokrowiecki 2015 and Stiles 1995 pages as cross-controls. Visually verify only
 the central passages concerning *hay*, *way*, glide vocalization, length,
 gemination chronology and Anglo-Frisian controls. Do not alter the
 phonological models until that evidence is documented.
+
+## 22 November 2026 continuation
+
+The priority inventory now contains 106 sources in Downloads/Germanic and
+Downloads/Germanic 2. Exact hashes match 92 of them to canonical holdings;
+14 remain unregistered candidates or variant scans. Thirteen document-like
+items or PDFs had modification times on 22 November 2026; eight exact-byte
+matches resolve to existing holdings and five have no existing canonical match.
+The modification-time field is uncertain as a download-date field and is not
+used as proof of acquisition time.
+
+Newly registered or ingested sources include Nelson Goering's 2025/2026
+article, the revised 2018 standalone Stiles extraction, Wright's Old English
+grammar, Rask's Anglo-Saxon grammar, and the Sehrt festschrift containing
+Bennett's 1968 Gothic *ga-* chapter. The Rask and Wright scans are
+general historical grammars rather than hay-specific acquisitions.
+
+The Stiles chapter has two distinct holdings: the complete image scan in
+*Friesische Studien II* and a born-digital 38-sheet revised standalone
+extraction. The standalone text is usable for comparative reading but is not
+substituted for printed 1995 pp. 177--220.
+
+Bennett 1968 is no longer missing: the Sehrt 274-sheet volume supplies printed
+pp. 53--60. The exact chapter scan is mapped to PDF sheets 64--71. Sheet 65
+was visually verified as printed p. 54. Load-bearing transcription remains.
+
+Goering 2025 is acquired and native-text searchable. Ritt 2000 remains
+unlocated in the searched sources. Dal 1934 remains unlocated.
+
+The initial source-critical reading identifies Jones's Lindisfarne
+`heig`/`heg` diphthongization discussion and Minkova's objection to
+contrastive diphthongal length in *beg* ‘hay’/*weg* ‘way’ as the strongest
+immediate hay passages. Both still require original-page verification.
