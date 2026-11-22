@@ -215,9 +215,9 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
         result = json.load(stream)
     with gzip.open(capture_dir / "sc047-lexical-expansion-v1.json.gz", "rt", encoding="utf-8") as stream:
         reference = json.load(stream)
-    assert result["runner_sha256"] == models.sha(Path(models.__file__))
-    assert result["corpus_sha256"] == models.sha(active_source)
-    assert result["fst_sha256"] == models.sha(models.ROOT / "fsts/germanic.txt")
+    models.verify_capture_inputs(result)
+    with pytest.raises(ValueError, match="entry_context_metadata.tsv"):
+        models.verify_capture_inputs({**result, "context_metadata_sha256": "stale"})
     source = {row["row_id"]: row for row in load_rows(active_source)}
     shared = {"2069", "2138", "2152", "2332", "2340", "2341"}
     inherited = {"1973", "2013", "2030", "2162", "2224", "2240", "2298", "2300"}
@@ -235,6 +235,14 @@ def test_adoption_capture_is_bound_to_active_source_and_preserves_historical_con
         for key, row in source.items():
             assert all(active[key][field] == expected for field, expected in row.items())
         assert all(active[key]["outputs"] == [active[key]["counterpart"]] for key in shared)
+        hay = active["2061"]
+        assert (hay["proto_norm"], hay["counterpart"]) == ("xáwją", "hīeġ")
+        intermediate = dict(hay["trace"])
+        if model == "A":
+            assert intermediate[models.W_LOSS] == ["*ç*e*i"]
+            assert "SC047FinalIi" not in intermediate
+        else:
+            assert intermediate["OEIUmlaut"] == ["*ç*īe*j"]
 
 
 @pytest.mark.runtime

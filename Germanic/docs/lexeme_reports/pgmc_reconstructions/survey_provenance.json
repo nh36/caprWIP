@@ -7,7 +7,7 @@
     "Germanic/data/entry_stage_metadata.tsv": "e40c903037330879c04b7a9b1979bfb02ea97931a479950d79a18210444ef744",
     "Germanic/data/germanic-aligned-final.tsv": "29f11c10e7cf8756c2708334fbd6947a4629ddcb9e69ac28bfbf9a920c5f9cf7",
     "Germanic/docs/lexeme_reports/model_entries/2040-gift-\u0121ift.model.md": "53960957958afadcea0f3b4b788d7e25d6ccd45723cfc5f21d2ae4f64ae101de",
-    "Germanic/docs/lexeme_reports/model_entries/2332-hue-h\u012bew.source_ledger.md": "1fd78f6d3fa8ed239d5e02332cf4bc5cc316224af9cc4810ff0a8df696c1da60",
+    "Germanic/docs/lexeme_reports/model_entries/2332-hue-h\u012bew.source_ledger.md": "662b2a26e5ed09d34fb4c986768bb47730be0a72c981883b3ec3509643921a1d",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/analyses.tsv": "60d9ff84b9e74efd1e6c81673ac6d723f62704108190395b7050f6eb82a5ae8b",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/commentary.md": "4063546ab31ce95d11823fff85f2e267a13b5f57900b03df7750630f7bcd0ebd",
     "Germanic/docs/lexeme_reports/pgmc_reconstructions/comparisons.tsv": "e5b37d5e085bbe22df647d32e495cd07366aa451b4c0f554caeb1e469cd5ae20",
@@ -999,7 +999,7 @@
     "docs/references/versloot_2025_reconstructing_historical_phonology_of_oe.txt": "b2840038a3eea8205004c4f4d92b67494c5c2956b45bd2b1820a04ef875b3e52",
     "docs/references/vine_2019_greek_stomylos.txt": "2cc1ca95846b3bf5ac8ed42156f8eeb53e2306a1bca2987fac99fbbdab611004",
     "docs/references/waxenberger_2019_absolute_chronology_pre_oe_runic.txt": "94cbe811cf7b74d6f178dacc6795850d334e761112760fc857a756fff2474ab7",
-    "docs/refs.bib": "fb1abbd15b7db9a71f0fa913446ee6adcdeddc47603bd40516b1220ba7e67ecd"
+    "docs/refs.bib": "e522d54ab82b76c647ba9136bd35e3eb918ea0539035a86e70480a0209988db6"
   },
   "population": 402,
   "reading_scope_statuses": {

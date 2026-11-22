@@ -19,6 +19,6 @@ define PWGmcSyllabicJ Ctx([
 ]);
 ```
 
-In the compatibility cascade, placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred} from PGmc [nátją]{.recon} ‘net’; moving it later changes no output. This contrast fixes the order for a regular direct derivation of OE *nett* 'net', but does not fix the historical order if the direct singular acquired its geminate from a protected cell.
+The compatibility cascade uses this fused ending-loss and vocalization fragment after [SC010 PWGmcJGemination](#rule-PWGmcJGemination). Moving it before gemination yields [*nete*]{.pred} from PGmc [nátją]{.recon} ‘net’; a later displacement changes no endpoint in the compatibility test. Both active orders still compose the fragment, but it does not change any selected form or registered paradigm probe. Those derivations instead use separate apocope and vocalization stages: A gives direct [*nete*]{.pred}, B2 direct *nett*. The compatibility displacement is not independent evidence for dating either separate change.
 
 Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. Both historical models allow oral loss to strand a glide before gemination; only A does so with the short nasal ending. A protected vowel, as in the shared dative of 'net', instead keeps the glide consonantal through gemination in both models.

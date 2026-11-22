@@ -136,7 +136,7 @@
 | 2095 | learn | leornian | regular | yes | source_material | - | archive/dev_notes_slices/2095-learn-liornian.md, archive/dev_notes_slices/2314-learn-(3sg)-liornaþ.md, archive/packets/2095-learn-liornian.md, model_entries/2095-learn-liornian.model.md, model_entries/2095-learn-liornian.source_ledger.md, model_entries/2313-learn-(iptv.2sg)-liorna.source_ledger.md, model_entries/2314-learn-(3sg)-liornaþ.source_ledger.md, research_memos/2095-learn-liornian.md | NOTE |
 | 2100 | lid | hlid | regular | yes | source_material | - | archive/dev_notes_slices/2100-lid-hlid.md, archive/packets/2100-lid-hlid.md, model_entries/2100-lid-hlid.model.md, model_entries/2100-lid-hlid.source_ledger.md, research_memos/2100-lid-hlid.md | NOTE |
 | 2102 | light | līehtan | regular | yes | source_material | - | archive/dev_notes_slices/2102-light-līehtan.md, model_entries/2102-light-līehtan.model.md, model_entries/2102-light-līehtan.source_ledger.md, research_memos/2102-light-līehtan.md | NOTE |
-| 2104 | linden | lind | regular | yes | source_material | - | archive/dev_notes_slices/2104-linden-lind.md, archive/packets/2104-linden-lind.md, model_entries/2104-linden-lind.model.md, model_entries/2104-linden-lind.source_ledger.md, research_memos/2104-linden-lind.md | NOTE |
+| 2104 | linden | lind | regular | yes | source_material | - | archive/dev_notes_slices/2104-linden-lind.md, archive/packets/2104-linden-lind.md, model_entries/2061-hay-hīeġ.source_ledger.md, model_entries/2104-linden-lind.model.md, model_entries/2104-linden-lind.source_ledger.md, research_memos/2104-linden-lind.md | NOTE |
 | 2107 | live | lifeþ | late_analogy | yes | source_material | - | archive/dev_notes_slices/2107-live-lifeþ.md, archive/packets/2107-live-lifeþ.md, model_entries/2107-live-lifeþ.model.md, model_entries/2107-live-lifeþ.source_ledger.md, research_memos/2107-live-lifeþ.md | NOTE, DERIVATION_CLASS=late_analogy |
 | 2109 | loam | lām | early_analogy | no | source_material | - | archive/dev_notes_slices/2109-loam-lām.md, archive/packets/2109-loam-lām.md, model_entries/2109-loam-lām.model.md, model_entries/2109-loam-lām.source_ledger.md, research_memos/2109-loam-lām.md | DERIVATION_CLASS=early_analogy |
 | 2114 | lung | lungen | early_analogy | yes | source_material | - | archive/dev_notes_slices/2114-lung-lungen.md, archive/packets/2114-lung-lungen.md, model_entries/2114-lung-lungen.model.md, model_entries/2114-lung-lungen.source_ledger.md, research_memos/2114-lung-lungen.md | NOTE, DERIVATION_CLASS=early_analogy |
@@ -329,7 +329,7 @@
 | 2056 | harm | hearm | regular | no | source_material | - | archive/dev_notes_slices/2056-harm-hearm.md | none |
 | 2059 | haw | haga | regular | no | source_material | - | archive/dev_notes_slices/2059-haw-haga.md | none |
 | 2060 | hawk | hafoc | regular | no | source_material | - | archive/dev_notes_slices/2060-hawk-hafoc.md | none |
-| 2061 | hay | hīeġ | regular | no | source_material | - | archive/dev_notes_slices/2061-hay-hīeġ.md, model_entries/2061-hay-hīeġ.model.md, model_entries/2061-hay-hīeġ.source_ledger.md | none |
+| 2061 | hay | hīeġ | regular | no | source_material | - | archive/dev_notes_slices/2061-hay-hīeġ.md | none |
 | 2062 | hazel | hæsl | regular | no | source_material | - | archive/dev_notes_slices/2062-hazel-hæsl.md | none |
 | 2063 | head | hēafod | regular | no | source_material | - | archive/dev_notes_slices/2063-head-hēafod.md | none |
 | 2064 | heal | hǣlan | regular | no | source_material | - | archive/dev_notes_slices/2064-heal-hǣlan.md | none |
@@ -491,6 +491,7 @@
 - archive/dev_notes_slices/2156-roe-hrogn.md -> ambiguous among 2111:loc, 2301:word
 - archive/dev_notes_slices/orphan_fragments.md -> ambiguous among 2068:heofon, 2139:netle, 2174:seofon
 - archive/packets/2138-net-nett.md -> ambiguous among 1943:beġinnan, 2057:hierfest
+- model_entries/2061-hay-hīeġ.model.md -> ambiguous among 2061:hīeġ, 2282:west
 - pgmc_integration/README.md -> ambiguous among 2054:hand, 2194:six
 - pgmc_integration/examples/2330-thought.md -> ambiguous among 1992:dor, 2301:word
 - pgmc_integration/schema-proposal.md -> ambiguous among 2072:help, 2194:six, 2301:word

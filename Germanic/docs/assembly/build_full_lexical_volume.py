@@ -1072,7 +1072,7 @@ def build_front_matter(
     method_paragraph = (
         "Regular entries use the compact book-prose layer, while the remaining derivation classes retain their fuller entry prose. Each entry keeps a derivational summary and a boxed trace divided between Earlier Germanic and Old English developments."
         if compact_regular_active
-        else "Four objects must be distinguished in every derivation: the citation reconstruction, the selected input, the transducer outcome, and the Old English target. The summary identifies them where they differ; the boxed trace then divides the changes into Earlier Germanic and Old English stages."
+        else "Four objects must be distinguished in every derivation: the citation reconstruction, the selected input, the transducer outcome, and the Old English target. The summary identifies them where they differ; the boxed trace then divides the changes into Earlier Germanic and Old English stages. This standalone edition uses the compatibility cascade and its editorial classes; the combined book and model companions give the active A and B2 traces."
     )
     lines = [
         "# Germanic Lexeme Reports: Lexical Derivation Volume",

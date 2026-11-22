@@ -13,7 +13,7 @@ from unittest.mock import patch
 
 import anglo_frisian_experiments as compiler
 from capr_runtime import layout
-from oe_pipeline import CITATION_CONTEXT, load_rows, parse_stages
+from oe_pipeline import CITATION_CONTEXT, METADATA_FILENAME, load_rows, parse_stages
 from sound_change_order_sensitivity import batch_apply_down
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +42,30 @@ DAT_MONO = "SC047FinalOi"
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def capture_inputs(runtime=None):
+    runtime = runtime or layout()
+    return {
+        "frozen_sha256": FROZEN,
+        "plan_sha256": PLAN,
+        "cells_sha256": CELLS,
+        "fst_sha256": runtime.germanic_fst,
+        "corpus_sha256": runtime.corpus_tsv,
+        "context_metadata_sha256": runtime.data_dir / METADATA_FILENAME,
+        "runner_sha256": Path(__file__).resolve(),
+        "pipeline_sha256": runtime.tools_dir / "oe_pipeline.py",
+        "compiler_sha256": runtime.tools_dir / "anglo_frisian_experiments.py",
+        "executable_facts_sha256": runtime.tools_dir / "executable_facts.py",
+        "stage_lookup_sha256": runtime.tools_dir / "sound_change_order_sensitivity.py",
+        "input_context_sha256": runtime.bin_dir / "oe_input_context.py",
+    }
+
+
+def verify_capture_inputs(capture):
+    for field, path in capture_inputs().items():
+        if capture.get(field) != sha(path):
+            raise ValueError(f"Active model capture is stale for {path.name}")
 
 
 def model_orders(canonical, plan):
@@ -160,9 +184,7 @@ def editor_source(model):
 
 def run(models, forms=(), *, active=False, binaries=None):
     source = layout().germanic_fst
-    inputs = {"frozen_sha256": FROZEN, "plan_sha256": PLAN, "fst_sha256": source,
-              "cells_sha256": CELLS, "runner_sha256": Path(__file__),
-              "corpus_sha256": layout().corpus_tsv}
+    inputs = capture_inputs()
     hashes = {label: sha(path) for label, path in inputs.items()}
     if hashes["frozen_sha256"] != FROZEN_SHA or hashes["plan_sha256"] != PLAN_SHA:
         raise ValueError("SC047 historical input digest does not match the pinned archive")

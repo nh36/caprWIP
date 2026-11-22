@@ -138,8 +138,10 @@ a diplomatic West Saxon *dēore* 'animal' token; West Saxon *deora*
 Ohthere's account, provides a secure independent oblique. Its
 reconstruction \emph{*deuzôⁿ} regularly retains internal z, whereas
 the direct cell exposes it to northern final-z loss. The genitive
-plural is a proposed scoring alternative, not a silently changed
-selection [@KembleHardwick1858, p. 19, capitulum LXXIX;
+plural is now the shared scored selection: CAPR represents
+\emph{*déuzôⁿ} as \emph{*déuzô}, derives *dēora* 'of deer', and retains *dēor*
+as the headword. The direct singular remains an unscored diagnostic
+[@KembleHardwick1858, p. 19, capitulum LXXIX;
 @Bosworth1859, p. 20, lines 25--27;
 @RingeTaylor2014, pp. 86--87, 174; @Fulk2018, pp. 148--149, §7.8].
 
@@ -148,9 +150,10 @@ retained. The archived relocation beside oral loss was
 endpoint-equivalent; the early package improved the stranded-glide
 intermediates but changed direct hay, net and hue. In the active
 comparison, A loses the nasal ending before gemination and B2
-retains it through gemination. Both select protected cells for net
-and hue; hay retains the direct comparison because no protected
-target is securely attested. The
+retains it through gemination. Both select the same protected
+cells for net, hue, bed and kin. Hay retains the direct comparison:
+B2 gives *hīeġ* 'hay', while A yields short /e/ plus unstressed /i/, not a
+spelling of the long nucleus plus /j/. The
 same-site endingless-aw companion to
 [SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) separately restores
 regular reconstructed \emph{*strēa}; it does not derive attested

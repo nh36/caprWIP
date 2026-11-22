@@ -23,7 +23,7 @@ The result is a lexical catalogue rather than a separate report on citation meth
 
 ## Transducer and derivation method
 
-Four objects must be distinguished in every derivation: the citation reconstruction, the selected input, the transducer outcome, and the Old English target. The summary identifies them where they differ; the boxed trace then divides the changes into Earlier Germanic and Old English stages.
+Four objects must be distinguished in every derivation: the citation reconstruction, the selected input, the transducer outcome, and the Old English target. The summary identifies them where they differ; the boxed trace then divides the changes into Earlier Germanic and Old English stages. This standalone edition uses the compatibility cascade and its editorial classes; the combined book and model companions give the active A and B2 traces.
 
 ## Derivation classes
 
@@ -3373,13 +3373,21 @@ Old English form: _hīeġ_
 
 #### Old English evidence
 
-Hecht's edition of the Old English *Dialogues* prints direct [heig]{.iv lang=oe sort=heig role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:1"} ‘hay’; compare [hig]{.iv lang=oe sort=hig role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:2"} ‘hay’ and apparatus [heg]{.iv lang=oe sort=heg role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:3"} ‘hay’ [@Hecht1900, p. 36, ll. 2, 13]. The normalized comparison is *hīeġ*. The phrase *mid hig* attests oblique use but not a preserved dative ending.
+Hecht's edition of the Old English *Dialogues* prints [heig]{.iv lang=oe sort=heig role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:1"} ‘hay’ as the object of mowing and [hig]{.iv lang=oe sort=hig role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:2"} ‘hay’ as the object of carrying; the Cotton apparatus gives [heg]{.iv lang=oe sort=heg role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:10:3"} ‘hay’ in all three passages [@Hecht1900, p. 36, ll. 2, 13, 29]. The normalized West Saxon comparison is *hīeġ*. The *Colloquy* phrase *mid hig* attests oblique use but not an overt dative ending.
+
+The Old English *Bede* likewise has accusative *heg* in a mowing context. At Mark 6:39 the West Saxon Gospel tradition has *hig*, *haig* and *heig* for green grass; the Northumbrian glosses do not supply the same bare noun. A twelfth-century vocabulary prints *hei* as a gloss of Latin *fenum*, an exact spelling parallel but not evidence of short /e/ plus syllabic /i/ in Old English [@Miller1890, p. 28, l. 33; @Skeat1871, pp. 48–49; @WrightWuelcker1884, p. 547].
 
 #### Development to Old English
 
-B2 retains the nasal ending through gemination of the glide-bearing stem and preserves palatal conditioning on the labial before low-vowel resolution and mutation. With A's early nasal loss, the inherited direct singular instead follows \emph{*hawj → hawi → hæwi}; CAPR extends that singleton route to the experimental endpoint [*hei*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:14" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:14:1"}, not the manuscript spelling *heig*. Ringe and Taylor distinguish Old High German *hewi* ‘hay’, the inherited direct singular, from *houwi* ‘hay’, with the geminated stem extended from obliques. Their English account likewise distinguishes the singleton route from the protected stem \emph{*hawwj- → hauj- → hēaj-} that gives West Saxon *hīeġ* ‘hay’ and Anglian *hēg* ‘hay’. They do not identify a single English donor case. Campbell similarly explains the direct singular by influence from the other cases [@RingeTaylor2014, pp. 53, 173, 246; @Campbell1959, p. 46, §120.2 and p. 231, §579(4)].
+In A, nasal loss strands consonantal \emph{*j}. Vocalization and brightening give \emph{*hawj → hawi → hæwi}; in CAPR, umlaut and loss of \emph{*w} before unstressed \emph{*i} then yield [*hei*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:16" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:16:1"}. This writes short stressed /e/ followed by unstressed syllabic /i/. No rule makes the final vowel a diphthongal offglide or /j/, or lengthens the /e/. By contrast, B2 geminates \emph{*w} while the inherited direct ending still protects \emph{*j}. After nasal loss CAPR resolves \emph{*wwj} and develops the long nucleus through \emph{*auj → aeuj → ēaj → īej}. The final dotted *ġ* represents that consonantal /j/; it is not the unstressed vowel of A.
 
-Both models produce the protected stem. The *Colloquy* phrase *mid hig* ‘with hay’ identifies dative use, but the endingless spelling does not establish retention of the inherited dative ending or a dative origin for the remodelled stem. Neither a manuscript genitive corresponding to predicted [*hīeġes*]{.pred source_ref="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:16" occ_id="Germanic/docs/lexeme_reports/model_entries/2061-hay-hīeġ.model.md:16:1"} nor a securely identified protected plural is established. The inherited direct comparison therefore stays in both denominators: B2 derives the target directly; under A the attested direct stem requires morphological extension, not an additional sound law.
+Ringe and Taylor distinguish the inherited Old High German direct singular *hewi* ‘hay’ from *houwi* ‘hay’, with the geminated stem extended from obliques. Their English protected route \emph{*hawwj- → hauj- → hēaj-} supplies the stem of West Saxon *hīeġ* ‘hay’ and Mercian and Northumbrian *hēġ* ‘hay’; the analogy arrow marks the extension into the direct comparison, but they name no particular English donor. Campbell likewise treats \emph{*hewi} as the undisturbed direct outcome and invokes the other cases. In his protected sequence, written with \emph{u} and \emph{i} for the original glides, gemination gives a diphthong followed by both glides. The diphthong develops to \emph{*ēa}, is mutated by the palatal glide, and the labial glide is lost; the corresponding high-vowel class instead loses the palatal [@RingeTaylor2014, pp. 53, 173, 246; @Campbell1959, p. 46, §120.2 and p. 231, §579(4)].
+
+Hogg's phonology likewise keeps both glides through vowel development and umlaut, \emph{*hawwj- → hauwj- → hēawj- → hīewj-}, losing the labial glide later. He gives West Saxon *hīġ* with a long high monophthong and non-West-Saxon *hēġ* with a long mid monophthong. Transmitted *hig* and *heig* do not independently establish quantity or syllabification. The usual Old English spelling for /j/ is *g*; *i* sometimes represents it, especially initially in early texts and also before /u/ or in loans. The digraph *ig* is not a general spelling for /j/. None of these conventions licenses reading CAPR's vocalic *i* as /j/ [@HoggGrammar2011, §§2.76, 3.18].
+
+Wright proposes that inherited intervocalic *j* was lost after a long vowel or diphthong and a new glide later arose between vowels. On his account the direct singular takes its final *g* from inflected forms; his *hīeges* and *hīege* illustrate the paradigm, not separately cited manuscript tokens. That proposal concerns the source of the consonant after a long nucleus. It does not supply a development from A's short /e.i/ [@Wright1914, pp. 135–136, §270 and note; §357].
+
+Both models produce the geminated stem in protected cells. No independently attested suffix-bearing genitive or dative, or securely identified protected plural, warrants replacing the selected direct singular. A needs stem transfer or an independently supported further development to reach the long nucleus plus /j/; the comparative evidence supports transfer, but the surviving English spellings do not demonstrate its donor or timing. B2 derives the direct target without transfer. The mismatch in A is a segmental and syllabic difference under the implemented rules, not an orthographic penalty.
 
 ### hedge — OE _heġġ_
 
@@ -3453,7 +3461,7 @@ From [xágjō]{.recon} ‘hedge’, the long vowel preserves nonsyllabic *j* at 
 
 #### Form note
 
-Standard dictionary spelling is _heċġ_ 'hedge' or _hecg_ 'hedge'. Normalized _heġġ_ 'hedge' is the Old English form here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
+Standard dictionary spelling is _heċġ_ 'hedge' or _hecg_ 'hedge'. Normalized _heġġ_ 'hedge' is the Old English form here in both A and B2, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
 
 ### helm — OE _helm_
 
@@ -4008,11 +4016,11 @@ not replaced by a summary of dictionary vowels.
 
 #### Old English evidence
 
-Cotton [hiewes]{.iv lang=oe sort=hiewes role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125" occ_id="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125:1"} ‘of form, appearance’ in Ælfric's *Grammar* (Zupitza, p. 30, l. 11) is the witness for selected genitive *hīewes*. Campbell prints direct *hīew* beside *hīow* and distinguishes non-West-Saxon io from West Saxon ie [@Campbell1959, §120.2, p. 46]. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
+Cotton [hiewes]{.iv lang=oe sort=hiewes role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125" occ_id="Germanic/docs/lexeme_reports/model_entries/2332-hue-hīew.model.md:125:1"} ‘of form, appearance’ in *Pastoral Care* is the witness for selected genitive *hīewes*. Sweet prints Cotton *hwites hiewes* ‘of a white colour’ opposite Hatton *hwites hiwes* in the same passage [@Sweet1871, pp. 86–87, l. 20]. Ælfric's *Grammar* separately has *anes hiwes* ‘of one form’ (Zupitza, p. 287, l. 9), not Cotton's spelling. Campbell prints direct *hīew* beside *hīow* and distinguishes non-West-Saxon io from West Saxon ie [@Campbell1959, §120.2, p. 46]. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
 
 #### Development to Old English
 
-The genitive [xíwjas]{.recon} ‘of a hue’ protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The checkpoints below illustrate the inherited direct form under B2 (and the compatibility cascade), not the selected derivation. A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
+The genitive [xíwjas]{.recon} ‘of a hue’ protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The table illustrates the inherited direct form under B2, not the selected derivation or the compatibility order. In the direct form A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
 
 Campbell's decisive class contrast is that awj and iwj share gemination
 but thereafter lose different glides: the low-vowel type yields the
@@ -4022,13 +4030,14 @@ For hue, the adopted cascade now follows the independently specified
 Ringe-Taylor chain rather than using long ēo as an output-compatible
 proxy for their long īo [@RingeTaylor2014, p. 250].
 
-| Step | Selected reconstruction / represented checkpoint | Interpretation |
+| Step | B2 direct-singular checkpoint | Interpretation |
 | :--- | :--- | :--- |
 | PGmc input | \emph{*xíwją} | Inherited i, with early raising already reflected in the reconstruction |
 | J-gemination | \emph{*xíwwją} | Palatalized geminate carried as ww+j |
-| J-created reanalysis | \emph{*xíuwją} | Offglide formation, retaining palatalized w as w+j |
-| English realization | \emph{*xīowją} | Long īo, distinct from ordinary ēo |
-| Palatal articulation and ending loss | \emph{*çīowj} | Independent dorsal history and reduction in the existing cascade |
+| Nasal apocope | \emph{*xíwwj} | Ending loss after the glide has caused gemination |
+| J-created reanalysis | \emph{*xíuwj} | Offglide formation, retaining palatalized w as w+j |
+| English realization | \emph{*xīowj} | Long īo, distinct from ordinary ēo |
+| Initial fricative palatalization | \emph{*çīowj} | Independent dorsal history |
 | Mutation | \emph{*çīewj} | Existing long-diphthong mutation conditioned by the retained palatal carrier |
 | Later glide loss and spelling | *hīew* | Retained w in the direct comparison |
 
@@ -15094,7 +15103,7 @@ The direct object [þā ēcean ræste]{.ex} ‘the eternal rest’ in *Blickling
 
 The accusative long nasal ending does not undergo final short nasal apocope or the raising of final oral long *ō*. Its front-vocalic ending in the English derivation preserves root fronting and becomes *-e*, giving [_ræste_]{.iv lang=oe sort=raeste role=target_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:1"} ‘rest’. The reconstructed dative takes a different route, Proto-Germanic [rástōi]{.iv .recon lang=pgmc sort=rastoi role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:2"} ‘to rest’ to West Germanic [rástē]{.iv .recon lang=pwgmc sort=raste role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:3"} ‘to rest’; both active models admit the earlier input and implement the monophthongization. In the separate bimoric genitive [rástōz]{.iv .recon lang=pgmc sort=rastoz role=comparison_form source_ref="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27" occ_id="Germanic/docs/lexeme_reports/model_entries/2152-rest-ræste.model.md:27:4"} ‘of rest’, final *z* protects the oral vowel through raising in both models. Only the archived reversed order exposes the genitive ending prematurely [@RingeTaylor2014, pp. 61, 299–300].
 
-The citation nominative [rastō]{.recon} ‘rest’ gives reconstructed \emph{*rast} in the cascade. The attested *ræst* can be explained by extension of the independently attested front-vocalic oblique stem into the nominative. This is a hypothesis about the lemma’s paradigm, not an analogy required to derive the selected accusative. The _late_analogy_ classification records why the inherited nominative is not the selected route to the attested stem.
+The citation nominative [rastō]{.recon} ‘rest’ gives reconstructed \emph{*rast} in the compatibility cascade. The attested *ræst* can be explained by extension of the independently attested front-vocalic oblique stem into the nominative. This is a hypothesis about the lemma’s paradigm, not an analogy required to derive the selected accusative in either A or B2. The _late_analogy_ classification explains the choice of an independently attested accusative; it does not describe that cell's regular derivation.
 
 ### shoulder — OE _sċuldrum_
 

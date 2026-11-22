@@ -122,11 +122,11 @@ not replaced by a summary of dictionary vowels.
 
 ### Old English evidence
 
-Cotton [hiewes]{.iv lang=oe sort=hiewes role=comparison_form} ‘of form, appearance’ in Ælfric's *Grammar* (Zupitza, p. 30, l. 11) is the witness for selected genitive *hīewes*. Campbell prints direct *hīew* beside *hīow* and distinguishes non-West-Saxon io from West Saxon ie [@Campbell1959, §120.2, p. 46]. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
+Cotton [hiewes]{.iv lang=oe sort=hiewes role=comparison_form} ‘of form, appearance’ in *Pastoral Care* is the witness for selected genitive *hīewes*. Sweet prints Cotton *hwites hiewes* ‘of a white colour’ opposite Hatton *hwites hiwes* in the same passage [@Sweet1871, pp. 86–87, l. 20]. Ælfric's *Grammar* separately has *anes hiwes* ‘of one form’ (Zupitza, p. 287, l. 9), not Cotton's spelling. Campbell prints direct *hīew* beside *hīow* and distinguishes non-West-Saxon io from West Saxon ie [@Campbell1959, §120.2, p. 46]. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
 
 ### Development to Old English
 
-The genitive [xíwjas]{.recon} ‘of a hue’ protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The checkpoints below illustrate the inherited direct form under B2 (and the compatibility cascade), not the selected derivation. A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
+The genitive [xíwjas]{.recon} ‘of a hue’ protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The table illustrates the inherited direct form under B2, not the selected derivation or the compatibility order. In the direct form A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
 
 Campbell's decisive class contrast is that awj and iwj share gemination
 but thereafter lose different glides: the low-vowel type yields the
@@ -136,13 +136,14 @@ For hue, the adopted cascade now follows the independently specified
 Ringe-Taylor chain rather than using long ēo as an output-compatible
 proxy for their long īo [@RingeTaylor2014, p. 250].
 
-| Step | Selected reconstruction / represented checkpoint | Interpretation |
+| Step | B2 direct-singular checkpoint | Interpretation |
 | :--- | :--- | :--- |
 | PGmc input | \emph{*xíwją} | Inherited i, with early raising already reflected in the reconstruction |
 | J-gemination | \emph{*xíwwją} | Palatalized geminate carried as ww+j |
-| J-created reanalysis | \emph{*xíuwją} | Offglide formation, retaining palatalized w as w+j |
-| English realization | \emph{*xīowją} | Long īo, distinct from ordinary ēo |
-| Palatal articulation and ending loss | \emph{*çīowj} | Independent dorsal history and reduction in the existing cascade |
+| Nasal apocope | \emph{*xíwwj} | Ending loss after the glide has caused gemination |
+| J-created reanalysis | \emph{*xíuwj} | Offglide formation, retaining palatalized w as w+j |
+| English realization | \emph{*xīowj} | Long īo, distinct from ordinary ēo |
+| Initial fricative palatalization | \emph{*çīowj} | Independent dorsal history |
 | Mutation | \emph{*çīewj} | Existing long-diphthong mutation conditioned by the retained palatal carrier |
 | Later glide loss and spelling | *hīew* | Retained w in the direct comparison |
 

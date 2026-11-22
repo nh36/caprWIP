@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 
 HERE = Path(__file__).resolve().parent
 GERMANIC = HERE.parents[2]
@@ -93,12 +94,18 @@ def expansion_entries(model, paradigms):
 
 
 def publish(result, directory):
+    if all("active_corpus" in value for value in result["models"].values()):
+        sys.path.insert(0, str(GERMANIC / "tools"))
+        from sc047_models import verify_capture_inputs
+
+        verify_capture_inputs(result)
+        directory.mkdir(parents=True, exist_ok=True)
+        headings, _, _ = lexical_metadata()
+        return publish_active(result, directory, headings)
     directory.mkdir(parents=True, exist_ok=True)
     with (GERMANIC / "data/oe_known_problems.tsv").open(encoding="utf-8") as stream:
         known = {row["proto"]: row for row in csv.DictReader(stream, delimiter="\t")}
     headings, classes, decisions = lexical_metadata()
-    if all("active_corpus" in value for value in result["models"].values()):
-        return publish_active(result, directory, headings)
     chapter_lines = (ASSEMBLY / "sc047_preview/chronologies.md").read_text(encoding="utf-8").splitlines()
     chapter = "\n".join("#" + line if line.startswith("# ") else line for line in chapter_lines)
     summary = {}
@@ -246,6 +253,11 @@ def publish_active(result, directory, headings):
         volume = [f"# CAPR Germanic: Model {model}", "",
                   "This is the derivation companion to the common indexed lexical catalogue. "
                   "The archived selected-form comparisons do not enter this score.", "",
+                  ("For ‘hay’, `hei` represents short stressed /e/ followed by unstressed "
+                   "syllabic /i/, not the normalized target’s long nucleus plus /j/."
+                   if model == "A" else
+                   "The inherited direct singular of ‘hay’ gives *hīeġ* regularly: "
+                   "gemination precedes nasal apocope, and the final /j/ is consonantal."), "",
                   "| ID | Lexeme / headword | Input | Target | Regular output |",
                   "|---|---|---|---|---|"]
         traces = [f"# Model {model}: complete derivations", "",
@@ -290,6 +302,15 @@ def publish_active(result, directory, headings):
                        "no verified protected selection.", "", "### Unmatched active forms", ""))
         volume.extend(f"- {key}: *{target}* versus `{display(outputs)}`."
                       for key, (target, outputs) in missing.items())
+        volume.extend(("", "### Complete executable stage order", "",
+                       "Apply these stages from left to right within each numbered range, "
+                       "then proceed to the next range. A missing stage in a companion "
+                       "derivation means that it left the form unchanged.", ""))
+        order = value["order"]
+        for start in range(0, len(order), 8):
+            block = order[start:start + 8]
+            names = ", ".join(f"`{stage}`" for stage in block)
+            volume.extend((f"**{start + 1}–{start + len(block)}:** {names}", ""))
         (directory / f"{model}-volume.md").write_text("\n".join(volume) + "\n", encoding="utf-8")
         (directory / f"{model}-derivations.md").write_text("\n".join(traces) + "\n", encoding="utf-8")
     (directory / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n",

@@ -525,3 +525,67 @@ dialect history remain incomplete. The retained-o gate gap and the
 unheld originals are explicit. The archive's cost review records740
 opt-in networks; no routine test cost is added. Final certification is
 for the final tree, not inherited from control634a1335.
+
+## Follow-up: the direct singular of ‘hay’ in the active models
+
+### Identity and question
+
+SC047, `OEHeavySyllableNasalApocope`; integration/sc047-model-adoption
+at `ddd7f92a`. Does the A trace independently match an attested
+pronunciation? A secure direct pronunciation with short /e/ and
+syllabic /i/, or a general independently established late rule taking
+the singleton output to a securely attested pronunciation, would
+overturn the present assessment.
+
+### Current state and diagnosis
+
+The registry characterizes short nasal loss as weight-independent; its
+late fragment and historic 159-application census refer to the
+compatibility reference. No environment, composition, selected cell or
+census population is changed here. The selected neuter direct *xáwją*
+in row 2061 is the same in A and B2. The first divergence is nasal loss
+in A versus gemination with the nasal vowel present in B2. A vocalizes
+*j* and ultimately gives `*ç*e*i`; B2 retains consonantal *j* and
+ultimately gives `*ç*īe*j`. Final orthography and token stripping
+serialize these distinctions; they do not repair hiatus. The
+genitive is a protected-stem probe, not a second scoring input; hue
+is a control for high-vowel hiatus, not a general contraction of
+any vowel before *i*.
+
+### Literature and historical analysis
+
+Ringe–Taylor (2014: 53, 173, 246), Campbell (1959: 46 §120.2,
+231 §579(4)), Hogg (2011 reissue of vol. 1: §§2.76, 3.18), Wright (1914:
+§270 and note, §357), and the comparative dossier distinguish
+vocalic and consonantal developments. See the hay source ledger
+for manuscript/edition boundaries. The West Saxon long nucleus
+and Anglian long *ē* of the protected line differ from the short
+*e* in A; the attested variation does not directly measure either
+quantity or hiatus. The OHG *hewi/houwi* contrast supplies positive
+comparative evidence for transfer but not a named Old English
+donor. Wright's proposed loss and insertion of intervocalic *j*
+after a long nucleus does not supply a rule for A's short *e.i*.
+The executable singleton endpoint is CAPR's explicit prediction,
+not an endpoint attributed to Ringe and Taylor. No new chronology
+edge or geographical claim follows.
+
+### Verdict and propagation
+
+Registry-verdict: SC047=REFORMULATE/RETAIN
+
+Retain both implementations, the direct selection and A's
+phonological mismatch; reformulate its reader-facing interpretation.
+The transfer required by A to reach the familiar long-nucleus stem
+is historically plausible, not demonstrated in English; B2 needs
+no donor. The lexical and comparative chapters, technical appendix,
+companions and SC010/011/041/047 distinguish active from compatibility
+behavior. The live capture freshness gate adds only read-only digest
+checks, not new compilation or fixture scope in pytest. Neither the
+394-entry benchmark nor the 396-entry scientific output changes.
+
+### Residue
+
+No new dictionary spelling is promoted to a target. The precise
+sound values of individual unmarked historical spellings, unverified
+manuscript readings and the failure to establish an English oblique
+donor are recorded separately in the hay ledger.

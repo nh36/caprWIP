@@ -1,7 +1,13 @@
 # Source extraction ledger — hue / hīew
 
 The active target is normalized genitive *hīewes*, Cotton *hiewes* in
-Ælfric's *Grammar*, Zupitza p. 30 l. 11. The selected *xíwjas* assembles
+Sweet's *Pastoral Care*, p. 86 l. 20 (*hwites hiewes*, ‘of a white colour’);
+Hatton 20 reads *hiwes* in the same genitive at p. 87 l. 20.
+Zupitza's *Ælfrics Grammatik und Glossar*, p. 30 l. 11, is about names
+ending in Latin *-eus*, not this witness. The separate Grammar
+example *uniformis anes hiwes* (p. 287, l. 9) attests the genitive
+*hiwes*, not Cotton *hiewes*.
+The selected *xíwjas* assembles
 the documented inherited high-front stem with the regular genitive
 ending. The direct stem and witnesses below remain unscored controls.
 
@@ -9,7 +15,7 @@ This ledger records the evidence used for the addition of row 2332 (hue, OE *hī
 
 ## Current comparative reassessment: adopted working account
 
-The user approved PROTO = PROTOFORM = *xíwją and the separate j-created
+The direct singular reconstruction *xíwją* and the separate j-created
 reanalysis/long-io chain, retaining hīew. The original e-input admission
 and claim that early raising was left to the cascade are historical and
 superseded. The adopted realized-PGmc input already reflects the raising;
@@ -36,7 +42,8 @@ serialization, not a claimed resolution of the authors' phonemic question.
 The adopted preference is a source-backed realized-PGmc i account, not
 author counting or selection by output score. Orel and Kroonen remain
 genuine published e alternatives; their different derivational explanations
-are not silently harmonized. Both current fields are *xíwją; the e forms
+are not silently harmonized. PROTO retains *xíwją*; PROTOFORM selects
+genitive *xíwjas*. The e forms
 remain actual published alternatives, not automatically earlier stages.
 
 ## Admission ledger (historical source extraction)

@@ -35,4 +35,4 @@ From [xágjō]{.recon} ‘hedge’, the long vowel preserves nonsyllabic *j* at 
 
 ### Form note
 
-Standard dictionary spelling is `heċġ` 'hedge' or `hecg` 'hedge'. Normalized `heġġ` 'hedge' is the selected target here, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].
+Standard dictionary spelling is `heċġ` 'hedge' or `hecg` 'hedge'. Normalized `heġġ` 'hedge' is the selected target in both A and B2, while the ordinary lexicographic forms remain the main Old English citation evidence [@BosworthToller1898; @ClarkHall1960].

@@ -8,6 +8,10 @@ not re-adjudicate SC010 as a whole, and does not touch SC031-SC034.
 
 Status: repair adopted, architecture A.
 
+This memo records the earlier compatibility-cascade repair. For the
+active A and B2 models and the selected hue genitive *xíwjas*, see
+[`models/sc047/adoption.md`](../../models/sc047/adoption.md).
+
 ## Subsequent hue correction (2026-10-04)
 
 The admission-era e-input and traces below are historical. The approved

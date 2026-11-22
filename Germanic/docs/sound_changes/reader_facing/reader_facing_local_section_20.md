@@ -701,6 +701,8 @@ OE *nett* 'net' separates two predictions for the inherited direct singular. If 
 
 The chronology is phonologically transparent: the consonant must geminate before \emph{*j} ceases to be consonantal. The witness establishes no earlier boundary.
 
+The same distinction matters with the labials. In both active models the selected genitive \emph{*xíwjas} gives *hīewes* 'of hue'; the ending protects the glide and the stem has inherited \emph{*i}, not \emph{*e}. In the direct singular of hay, B2 retains the short nasal ending through gemination and gives *hīeġ* 'hay', whereas A loses the ending, vocalizes the glide and does not geminate. This contrast depends on the order of nasal apocope, not on a change to the consonants eligible for gemination [@Campbell1959, p. 46, §120.2; @RingeTaylor2014, pp. 53, 246, 250].
+
 ## Syllabic j after final-vowel loss
 
 ### Historical discussion
@@ -722,7 +724,7 @@ define PWGmcSyllabicJ Ctx([
 ]);
 ```
 
-In the compatibility cascade, placing [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) before [SC010 PWGmcJGemination](#rule-PWGmcJGemination) yields [*nete*]{.pred} from PGmc [nátją]{.recon} ‘net’; moving it later changes no output. This contrast fixes the order for a regular direct derivation of OE *nett* 'net', but does not fix the historical order if the direct singular acquired its geminate from a protected cell.
+The compatibility cascade uses this fused ending-loss and vocalization fragment after [SC010 PWGmcJGemination](#rule-PWGmcJGemination). Moving it before gemination yields [*nete*]{.pred} from PGmc [nátją]{.recon} ‘net’; a later displacement changes no endpoint in the compatibility test. Both active orders still compose the fragment, but it does not change any selected form or registered paradigm probe. Those derivations instead use separate apocope and vocalization stages: A gives direct [*nete*]{.pred}, B2 direct *nett*. The compatibility displacement is not independent evidence for dating either separate change.
 
 Comparative evidence establishes postconsonantal \emph{*j} to syllabic \emph{*i} after final unstressed \emph{*a} or \emph{*ą} loss, with *here* 'army' and *rice* 'kingdom' as outcomes. Both historical models allow oral loss to strand a glide before gemination; only A does so with the short nasal ending. A protected vowel, as in the shared dative of 'net', instead keeps the glide consonantal through gemination in both models.
 
@@ -4333,7 +4335,7 @@ The compatibility census contains seventy applications, all with selected inputs
 
 The relationship to [SC046 OEARestoration](#rule-OEARestoration) is different. In the live order, apocope removes a potential back-vowel trigger before restoration can use it: loss therefore bleeds restoration. For *cræft* 'craft' and *dæġ* 'day', delaying loss leaves a trigger present and gives [craft]{.pred example-expected=cræft} and [dag]{.pred example-expected=dæġ}. This does not mean that restoration requires an environment created by apocope; it is the environment destroyed by apocope that matters. The source account of restoration independently requires a surviving back vowel after the relevant consonantal material [@RingeTaylor2014, pp. 189--190, §6.3.1].
 
-The selected fright derivation imposes another, explicitly computational requirement: loss exposes final \emph{*n} for [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss). That visibility dependency is not independent proof of adjacent historical dates. The present position after medial developments is accordingly retained as an implementation accommodation, not as the historical chronology of West Germanic apocope. The unchanged operation correctly removes the exposed short oral vowel in its current firing population; it does not, by itself, certify the earlier history of nasal endings, stranded glides, or every selected paradigm cell.
+The selected fright derivation imposes another, explicitly computational requirement: loss exposes final \emph{*n} for [SC064 NWGmcInStemNLoss](#rule-NWGmcInStemNLoss). That visibility dependency is not independent proof of adjacent historical dates. The later position in the compatibility reference is an implementation accommodation retained for replay. In A and B2 the operation runs before gemination, as described above. The compatibility census does not certify the earlier history of nasal endings, stranded glides, or every selected paradigm cell.
 
 ## Stem-final n-loss after long i
 
@@ -5132,8 +5134,10 @@ a diplomatic West Saxon *dēore* 'animal' token; West Saxon *deora*
 Ohthere's account, provides a secure independent oblique. Its
 reconstruction \emph{*deuzôⁿ} regularly retains internal z, whereas
 the direct cell exposes it to northern final-z loss. The genitive
-plural is a proposed scoring alternative, not a silently changed
-selection [@KembleHardwick1858, p. 19, capitulum LXXIX;
+plural is now the shared scored selection: CAPR represents
+\emph{*déuzôⁿ} as \emph{*déuzô}, derives *dēora* 'of deer', and retains *dēor*
+as the headword. The direct singular remains an unscored diagnostic
+[@KembleHardwick1858, p. 19, capitulum LXXIX;
 @Bosworth1859, p. 20, lines 25--27;
 @RingeTaylor2014, pp. 86--87, 174; @Fulk2018, pp. 148--149, §7.8].
 
@@ -5142,9 +5146,10 @@ retained. The archived relocation beside oral loss was
 endpoint-equivalent; the early package improved the stranded-glide
 intermediates but changed direct hay, net and hue. In the active
 comparison, A loses the nasal ending before gemination and B2
-retains it through gemination. Both select protected cells for net
-and hue; hay retains the direct comparison because no protected
-target is securely attested. The
+retains it through gemination. Both select the same protected
+cells for net, hue, bed and kin. Hay retains the direct comparison:
+B2 gives *hīeġ* 'hay', while A yields short /e/ plus unstressed /i/, not a
+spelling of the long nucleus plus /j/. The
 same-site endingless-aw companion to
 [SC111 PWGmcEndinglessAw](#rule-PWGmcEndinglessAw) separately restores
 regular reconstructed \emph{*strēa}; it does not derive attested

@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import csv
 import gzip
-import hashlib
 import json
 import re
 import sys
@@ -15,6 +14,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[2]
 sys.path.insert(0, str(REPO_ROOT / "Germanic" / "tools"))
 from index_verborum_emission import build_emission_table, load_model_entry_headings, load_print_main
+from sc047_models import verify_capture_inputs
 INTRO_PATH = SCRIPT_DIR / "capr_book_intro_alpha_01.md"
 CHRONOLOGY_PATH = REPO_ROOT / "Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md"
 LEXICAL_PATH = SCRIPT_DIR / "lexical_volume_alpha_01.md"
@@ -221,13 +221,7 @@ _PART_HEADING_RE = re.compile(r"^## Part [IVX]+\.\s+(.+)$")
 def model_traces_by_heading() -> dict[str, list[str]]:
     with gzip.open(MODEL_CAPTURE_PATH, "rt", encoding="utf-8") as stream:
         capture = json.load(stream)
-    for field, relative in (
-        ("corpus_sha256", "Germanic/data/germanic-aligned-final.tsv"),
-        ("fst_sha256", "Germanic/fsts/germanic.txt"),
-        ("runner_sha256", "Germanic/tools/sc047_models.py"),
-    ):
-        if hashlib.sha256((REPO_ROOT / relative).read_bytes()).hexdigest() != capture[field]:
-            raise ValueError(f"Book model traces are stale for {relative}")
+    verify_capture_inputs(capture)
     rows = {model: {row["row_id"]: row for row in capture["models"][model]["active_corpus"]}
             for model in ("A", "B2")}
     headings = {}
@@ -294,8 +288,9 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]],
                     if p.startswith("Four objects must be distinguished in every derivation:"):
                         p = ("The citation reconstruction, selected input, predicted outcome and Old English "
                              "target can differ. The traces print the changed forms for each active model, "
-                             "combining the two when their recorded traces agree. Class labels refer to the "
-                             "shared editorial classification; they do not override a model's endpoint.")
+                             "combining the two when their recorded traces agree. The catalogue retains "
+                             "the shared editorial arrangement, not separate model scores. In particular, "
+                             "hay is regular only in B2, as its individual derivation shows.")
                     if p.startswith("## ") and not p.rstrip().endswith("{.unnumbered}"):
                         out.append(p.rstrip() + " {.unnumbered}")
                     else:
@@ -329,7 +324,7 @@ def transform_lexical(text: str, commands_by_ref: dict[str, list[str]],
             # Entry subsection (Derivation trace, Reconstruction...) → ###
             out.append("###" + line[4:])
         elif ref.startswith("hay — OE ") and line.startswith("Derivation: "):
-            out.append(line.replace("(regular).", "(regular in B2; A predicts `hei`)."))
+            out.append(line.replace("(regular).", "(regular in B2; A predicts short /e/ plus syllabic /i/)."))
         elif line.startswith("##### "):
             out.append("####" + line[5:])
         else:

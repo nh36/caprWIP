@@ -56,12 +56,12 @@
 - `diagnostic_comparator`: 293
 - `example_input`: 58
 - `expected_output`: 56
-- `model_stage`: 123
-- `notation_or_segment`: 1076
+- `model_stage`: 124
+- `notation_or_segment`: 1077
 - `yielded_output`: 51
 
-- Reader-facing include_in_example_index=yes: 581
-- Reader-facing include_in_example_index=no: 1076
+- Reader-facing include_in_example_index=yes: 582
+- Reader-facing include_in_example_index=no: 1077
 
 ## Print-unique entry audit
 
@@ -161,12 +161,12 @@
 - `diagnostic_comparator`: 293
 - `example_input`: 58
 - `expected_output`: 56
-- `model_stage`: 123
+- `model_stage`: 124
 - `yielded_output`: 51
 
 ### Included rows by inferred language
 
-- `unknown`: 167
+- `unknown`: 168
 - `german`: 1
 - `goth`: 18
 - `lat`: 1
@@ -185,9 +185,9 @@
 ### Included rows by main-index overlap
 
 - `no`: 426
-- `yes`: 155
+- `yes`: 156
 
-- Included whole-form rows with asterisks: 409
+- Included whole-form rows with asterisks: 410
 - Included whole-form rows without asterisks: 172
 - Included rows inferred_language=oe with leading asterisk: 21
 - Included rows inferred_language=pgmc but OE-output-like form shape: 30
@@ -232,10 +232,10 @@ _None._
 ## Reader-facing example rows (sample)
 
 - `PGmcX` (oe, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:100)
-- `*u` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1007)
-- `*i` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1019)
-- `*fiskaz` (pgmc, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1020)
-- `*u` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1034)
-- `hence` (oe, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1051)
-- `*e` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1073)
-- `*i` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1073)
+- `*u` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1009)
+- `*i` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1021)
+- `*fiskaz` (pgmc, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1022)
+- `*u` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1036)
+- `hence` (oe, diagnostic_comparator; include=yes; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1053)
+- `*e` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1075)
+- `*i` (, notation_or_segment; include=no; Germanic/docs/sound_changes/reader_facing/reader_facing_local_section_20.md:1075)

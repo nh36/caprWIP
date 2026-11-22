@@ -19,7 +19,7 @@ historical edge is asserted.
 | 2069 hedge | *xágjaz → heġġ* | *xágjō → heġġ* | Feminine nominative singular, not masculine *hege* |
 | 2138 net | *nátją → nett* | *nátjai → nette* | Dative singular, Paris Psalter 89.10 |
 | 2152 rest | *rástōz → ræste* | *rástǭ → ræste* | Accusative singular, *Blickling Homilies*, Morris 101.26 |
-| 2332 hue | *xíwją → hīew* | *xíwjas → hīewes* | Genitive singular, Cotton *hiewes*, Zupitza p. 30 l. 11 |
+| 2332 hue | *xíwją → hīew* | *xíwjas → hīewes* | Genitive singular, Cotton *hiewes* opposite Hatton *hiwes*, Sweet, *Pastoral Care*, pp. 86–87 l. 20 |
 | 2340 bed | — | *bádjai → bedde* | Dative singular, Paris Psalter 40.3 |
 | 2341 kin | — | *kúnjas → cynnes* | Genitive singular, West Saxon Mark 7:26 |
 
@@ -81,6 +81,12 @@ the four existing doculect exports. Build time was about eight minutes;
 the sampled Foma memory high-water mark was at least 2,245,632 KiB
 (`VmHWM` in `/proc/<pid>/status` inside the backend).
 
+The hay follow-up adds digest verification and two captured-stage assertions
+to the existing production-capture regression. It adds no compilation,
+fixture scope, sweep, rebuild or concurrency cost to pytest. Rebuilding
+the production capture and application binaries uses the existing
+two compiler processes with the same configurations and lexical inputs.
+
 ## Measured model results
 
 | Comparison | A | B2 |
@@ -129,15 +135,19 @@ The inherited direct controls remain distinct from the selected cells:
 | Hay | *hei* | *hīeġ* |
 | Hue | *hī* | *hīew* |
 
+The direct hay mismatch in A is phonological: its final *i* remains
+syllabic after labial loss, unlike the consonantal /j/ after B2's long
+nucleus. No spelling equivalence or alternate selection was adopted.
+
 These diagnostics preserve the intermediate differences in doubling
 and final simplification. The 97 paradigm traces and 13 supplementary
 probes also preserve the protected donors, pledge and wicg, the later
 rest dative, both genitive quantities, and the lowering controls.
 
 Re-execute with the application build command above. Raw run SHA-256:
-`1644926a17ff2658ad855695d1f8465124e5b89835e287daba16ea0ff0412c76`.
+`3bc373b67f20006d811130976312e7c0cdc198773804f48dc6ca4f980436594e`.
 Compressed production capture SHA-256:
-`ed3ed52377ad1ce61f1ecac8e36df2a804916f1c008ff2523d2d773a8ed80d31`.
+`f671333bcd313b3ad3e89a2cf9af2da115ca51ca8947bd67322bfb472e7d1d01`.
 Corpus SHA-256:
 `29f11c10e7cf8756c2708334fbd6947a4629ddcb9e69ac28bfbf9a920c5f9cf7`.
 Full executable-input hashes are embedded in the capture. The
@@ -167,18 +177,19 @@ In the 344-page main PDF, all 1,377 Index Verborum page-number links
 resolve to the matching printed page labels. Representative destinations
 include *bedde*, *peti* and *bedi* on p. 145, *heig* and *hīeġ* on
 p. 174, *hecg* and *heġġ* on p. 175, Cotton *hiewes* on p. 180,
-*cyn* and *cynnes* on p. 181, *nátjai* and *nette* on p. 193,
+*cynnes* on p. 182, *nátjai* and *nette* on p. 194,
 and *rástǭ*, *rástē* and *ræste* on pp. 299–300. The entries for Old
 Saxon *feni*, Old Frisian *fene*, *fenne* and *fennem*, and Old
 English *wicg*, *wicge* and *wicga* resolve to their comparative
 discussion on p. 5. Their role and language metadata are checked
 separately from the page-link audit.
 
-The comparative chapter begins on p. 137 and the shared references on
-p. 327. The Index Verborum bookmark opens the section's title page
+The comparative chapter begins on p. 137, the technical appendix on
+p. 322 and the shared references on p. 327. The Index Verborum bookmark opens the section's title page
 (p. 335); the contents lists the first index entries on p. 336.
 The main PDF SHA-256 is
-`b8a7c0a6c3a6d6c8b68ec532e4910f2bf2ea3a9178c993ee74d106a7b8c4281a`.
-The nine-page companion PDF hashes are
-`faa2299efbe27b4aa7deb4fc7976ebdf18a000ebc8f523cd87e15042d83f6bab` (A) and
-`3af8982e6ab96b9367577609d96979685d3a016647705d8f596c0e52343cf7ec` (B2).
+`9309765e4bd624d0fbc6bbe5ac60742d23c5515c94fe4be7b176820bb1d3da9d`.
+Each ten-page companion prints its 117 stages in executable order.
+Their PDF hashes are
+`0f61a6bffb80758e3a4d075f05c64c60edc8d9192156ba32e05524574336888a` (A) and
+`47586757329821d697a09f0b2f4068049ebc343be693d50002e64f486a8d693f` (B2).

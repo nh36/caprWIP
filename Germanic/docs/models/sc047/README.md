@@ -3,6 +3,10 @@
 For the [adoption candidate](adoption.md), use `--active` with the
 shared lexical corpus. The procedure below reproduces the historical
 benchmark and its research selections, not the active catalogue.
+The active companions publish each complete order and changed-stage
+trace from the production capture. Their publisher checks the same
+source digests as the main book; frozen research captures remain
+independently renderable.
 
 **A (Ringe–Taylor)** loses short oral and nasal low vowels before West
 Germanic j-gemination. **B2 (Dahl–Hogg–Fulk)** loses oral *a* before

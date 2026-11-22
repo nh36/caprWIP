@@ -7,12 +7,26 @@
 Both models use the same 396 selected inputs and targets. They derive
 all six common selections for net, hue, bed, kin, hedge and rest.
 A derives 387 of 396 active targets; B2 derives 388. Hay remains a direct
-comparison in both models, unmatched in A. The full stage orders,
+comparison in both models, unmatched in A because short /e/ plus
+syllabic /i/ differs from the target's long nucleus plus /j/. The full stage orders,
 unmatched forms and unscored probes are published in the model
 companions; the 394-input benchmark remains separate from the active
 catalogue. Ordinary Old English derivation can use either model; A is
 the application default. The compatibility cascade is retained for
 replay and is not a third historical hypothesis.
+
+For reproduction, start with the shared definitions and the two complete
+ordered stage lists in the companion derivations. The alternatives
+use the same input gate, lowering and lengthening, and put oral
+apocope and the resulting glide vocalization before gemination. A
+schedules nasal apocope and the corresponding glide vocalization before
+gemination, B2 after. Both still compose the fused compatibility
+fragment for syllabic j, which leaves the selected forms and registered
+paradigm probes unchanged. The live capture binds the shared
+definitions, order and cell configurations, corpus and context metadata,
+historical benchmark, and implementation of order construction and
+trace evaluation. This freshness check does not rewrite an archived
+capture.
 
 The figures and traces in the following sections are historical
 experiment results, not the results of the active catalogue.
