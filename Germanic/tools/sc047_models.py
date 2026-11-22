@@ -23,7 +23,7 @@ FROZEN = BASE / "comparative_followup/parallel/observations.json.gz"
 PLAN = BASE / "labial_review/plan.json"
 CELLS = DOCS / "models/sc047/cells.tsv"
 MODELS = {"A": "early", "B2": "split_geminate_only"}
-VERSION = "sc047-active-v1"
+VERSION = "sc047-active-v2"
 FROZEN_SHA = "f2962dde3a9f0e1771c6de1bab6cbd2b18f0f844bbddfcb6807b7dab81e43060"
 PLAN_SHA = "71b0bf5b33e9ee8196964245b6f0050ea3a200a71f7ba10065f3379f9ca155d5"
 PROPOSAL = "399c50ad1dd339df4d235dda53334b39fb5fec14"
@@ -152,9 +152,10 @@ def run(models, forms=()):
             {*á} {*w} -> {*ḗa} {*w} || _ [[EnglishStarVocalic - [{*i}|{*ī}]] | {*ô}]
         ]);""",
         "define SC047FinalIi Ctx([{*í} {*i} -> {*ḯ} || _ .#.]);",
-        """define SC047OiCell [pgrmPrefix | 0] PGCellRoot PGCellStem* ō:{*ō} i:{*i};
+        """define SC047ExtraCell [pgrmPrefix | 0] PGCellRoot PGCellStem*
+            ō:{*ō} [i:{*i} | m:{*m} i:{*i} z:{*z}];
         define SC047ProtoInput [EnglishProtoInput |
-            _unambpart([[SC047OiCell.u - EnglishProtoInput.u] .o. SC047OiCell])];""",
+            _unambpart([[SC047ExtraCell.u - EnglishProtoInput.u] .o. SC047ExtraCell])];""",
         "define SC047FinalOi Ctx([{*ō} {*i} -> {*ē} || _ .#.]);",
     ))
     components = set(canonical).union(*(orders[model] for model in models))
