@@ -23,7 +23,8 @@ From the warmed Germanic research checkout:
 
 ```sh
 mkdir -p .capr-work/sc047-models
-docker compose exec -T backend sh -lc 'cd /usr/app && python3 tools/sc047_models.py' \
+docker compose exec -T backend sh -lc \
+  'cd /usr/app && python3 tools/sc047_models.py --form sáiwalōi --form sáiwalôi' \
   > .capr-work/sc047-models/results.json
 python3 Germanic/docs/models/sc047/publish.py .capr-work/sc047-models/results.json \
   .capr-work/sc047-models
@@ -36,6 +37,10 @@ repeating Foma. The model chapter and bibliography are shared. Each
 catalogue is accompanied by complete changed-stage derivations and a
 394-row inventory; the cross-model comparison is restricted to frozen
 inputs.
+
+The [corpus audit](results.md) links the current and previous captures,
+documents remaining unmatched forms, and distinguishes the results of
+the two comparisons.
 
 `cells.tsv` is a small overlay on stable row IDs. The two common
 corrections come from the unmerged proposal `399c50ad1dd339df4d235dda53334b39fb5fec14`;
@@ -87,13 +92,21 @@ selected cells are not relative evidence for the chronologies.
 
 ## Validation cost
 
-The two tests in `test_sc047_models.py` read the existing frozen inputs
+The tests in `test_sc047_models.py` read the existing frozen inputs
 and plan without compiling: the first rejects unintended order or rule
 inventory differences, and the second rejects unrecognized or multiply
-selected corpus cells. The archived replay checks still test historical
+selected corpus cells. The recorded-run check verifies the exact corpus
+deltas, the 40 lowering identities, the lengthening controls, and the
+quantity and dative probes. The archived replay checks still test historical
 artifacts; they cannot validate the new selections. Ordinary test runs
 add no Foma process, rebuilt fixture, corpus runtime sweep or concurrency.
 The explicit research build uses one disposable common image and one
 component compile for both variants, then performs batched lookups.
 Neither it nor the PDF render writes production bins or generated
 production publication sources.
+
+Revision 2 measured 5m41s end to end for the opt-in two-model command
+(two compiler calls, 120 component networks, no fixture setup). The
+peak observed resident high-water mark for Foma was 2,243,756 KiB,
+sampled from `/proc/<pid>/status` inside the backend. Normal tests
+have zero Foma calls before or after this change.

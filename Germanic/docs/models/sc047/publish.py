@@ -13,7 +13,7 @@ GERMANIC = HERE.parents[2]
 ASSEMBLY = GERMANIC / "docs/assembly"
 FIELDS = ("row_id", "concept", "headword", "proto", "fst_input", "counterpart", "canonical_outputs",
           "diagnostic_outputs", "selection_status", "selected_cell", "selected_input", "selected_target",
-          "selected_outputs", "assessment")
+          "selected_outputs", "frozen_input_decision", "published_class", "assessment")
 
 
 def display(outputs):
@@ -51,28 +51,33 @@ def first_different_events(left, right):
             right[index] if index < len(right) else None]
 
 
-def headwords():
+def lexical_metadata():
     with (ASSEMBLY / "manifest_all_by_class.tsv").open(encoding="utf-8") as stream:
-        result = {}
+        headings = {}
+        classes = {}
         for row in csv.DictReader(stream, delimiter="\t"):
             path = row["model_entry_path"]
+            classes[row["row_id"]] = row["derivation_class"]
             if not path:
                 continue
             with (GERMANIC.parent / path).open(encoding="utf-8") as entry:
                 heading = entry.readline()
             _, separator, headword = heading.strip().partition(" — OE ")
             if separator:
-                result[row["row_id"]] = headword
+                headings[row["row_id"]] = headword
     # The frozen hay row has no assembled lexical dossier.
-    result["2061"] = "hīeġ"
-    return result
+    headings["2061"] = "hīeġ"
+    with (GERMANIC / "data/entry_stage_metadata.tsv").open(encoding="utf-8") as stream:
+        decisions = {row["row_id"]: row["decision_type"]
+                     for row in csv.DictReader(stream, delimiter="\t")}
+    return headings, classes, decisions
 
 
 def publish(result, directory):
     directory.mkdir(parents=True, exist_ok=True)
     with (GERMANIC / "data/oe_known_problems.tsv").open(encoding="utf-8") as stream:
         known = {row["proto"]: row for row in csv.DictReader(stream, delimiter="\t")}
-    headings = headwords()
+    headings, classes, decisions = lexical_metadata()
     chapter_lines = (ASSEMBLY / "sc047_preview/chronologies.md").read_text(encoding="utf-8").splitlines()
     chapter = "\n".join("#" + line if line.startswith("# ") else line for line in chapter_lines)
     summary = {}
@@ -99,6 +104,7 @@ def publish(result, directory):
                            row["selection_status"] != "unresolved comparison" for row in rows),
             "unmatched": [],
         }
+        derived_fields = {"assessment", "headword", "published_class", "frozen_input_decision"}
         with (directory / f"{model}-inventory.tsv").open("w", encoding="utf-8", newline="") as stream:
             writer = csv.DictWriter(stream, FIELDS, delimiter="\t", lineterminator="\n")
             writer.writeheader()
@@ -110,10 +116,12 @@ def publish(result, directory):
                 md.append(f"| {row['row_id']} | {label} | {cell_label} "
                           f"| `*{row['selected_input']}` | *{row['selected_target']}* "
                           f"| `{display(row['selected_outputs'])}` |")
-                leaf = {key: row[key] for key in FIELDS if key not in ("assessment", "headword")}
+                leaf = {key: row[key] for key in FIELDS if key not in derived_fields}
                 for key in ("canonical_outputs", "diagnostic_outputs", "selected_outputs"):
                     leaf[key] = " | ".join(leaf[key])
-                writer.writerow({**leaf, "headword": headword, "assessment": status})
+                writer.writerow({**leaf, "headword": headword, "assessment": status,
+                                 "frozen_input_decision": decisions.get(row["row_id"], ""),
+                                 "published_class": classes.get(row["row_id"], "")})
                 if row["selected_target"] not in row["selected_outputs"]:
                     entry = {"id": row["row_id"], "lexeme": row["concept"], "diagnosis": status,
                              "input": row["selected_input"], "target": row["selected_target"],
@@ -135,6 +143,9 @@ def publish(result, directory):
                     traces.extend((f"Selected {row['selected_cell']}: "
                                    + trace_text(row["selected_input"], row["selected_trace"]), ""))
         md.extend(("", "## Technical appendix", "",
+                   f"Frozen matches: {summary[model]['diagnostic']}/394. "
+                   f"Selected matches: {summary[model]['matches']}/{summary[model]['selected_slots']}.",
+                   "",
                    "Executable order: " + ", ".join(f"`{stage}`" for stage in value["order"]),
                    "", "### Paradigms and unselected cells", "",
                    "| Lexeme | Cell | Reconstructed input | Regular output | Comparison target | Witness and limits |",

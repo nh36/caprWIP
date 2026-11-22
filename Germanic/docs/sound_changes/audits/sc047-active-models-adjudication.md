@@ -38,7 +38,9 @@
 
 - **Firing census:** The active runner records every changed stage on
   every frozen and selected input and every paradigm probe. Empty output
-  after input admission is rejection, not a negative firing.
+  after input admission is rejection, not a negative firing. The
+  [complete captures and result audit](../../models/sc047/results.md)
+  identify all firing and endpoint differences.
 - **Principal witnesses:** Direct *natją* tests whether nasal loss and
   glide vocalization bleed gemination; protected *natjai* tests live
   gemination in both. Direct hay and hue test the same dependency plus
@@ -90,6 +92,10 @@
 - **Proxy limits:** The input extension for *ōi* parses phonologically
   admitted structures, not an inventory of dative words. Different
   end quantities run separately; they are not special-cased by cell.
+  Admitting inherited *ōmiz* (Ringe 2017, p. 312) exposes a distinct
+  unresolved plural issue: both *ōmaz* and *ōmiz* yield *-em* under
+  the shared shortening path, not the usual OE *-um*. Admission is
+  not proof of the plural's full phonological derivation.
 - **Chronology:** Raising before loss of shielding *z* is
   `independently_demonstrated` by the long-ending contrast discussed
   above. The oral-loss/gemination order is a shared premise of the
