@@ -1,0 +1,230 @@
+#!/usr/bin/env python3
+"""Build and audit the two active SC047 research cascades inside CAPR's backend."""
+
+import argparse
+import csv
+import gzip
+import hashlib
+import json
+import os
+import tempfile
+from pathlib import Path
+from unittest.mock import patch
+
+import anglo_frisian_experiments as compiler
+from capr_runtime import layout
+from oe_pipeline import CITATION_CONTEXT, load_rows, stages
+from sound_change_order_sensitivity import batch_apply_down
+
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / "docs"
+BASE = DOCS / "sound_changes/literature_dossiers/sc047_paired_chronologies"
+FROZEN = BASE / "comparative_followup/parallel/observations.json.gz"
+PLAN = BASE / "labial_review/plan.json"
+CELLS = DOCS / "models/sc047/cells.tsv"
+MODELS = {"A": "early", "B2": "split_geminate_only"}
+VERSION = "sc047-active-v1"
+FROZEN_SHA = "f2962dde3a9f0e1771c6de1bab6cbd2b18f0f844bbddfcb6807b7dab81e43060"
+PLAN_SHA = "71b0bf5b33e9ee8196964245b6f0050ea3a200a71f7ba10065f3379f9ca155d5"
+PROPOSAL = "399c50ad1dd339df4d235dda53334b39fb5fec14"
+RAISE = "PNWGmcFinalLongORaising"
+LOWER = "PNWGmcULowering"
+LENGTHEN = "PNWGmcMonosyllabicFinalRLengthening"
+Z_LOSS = "EAFFinalZDeletion"
+ORAL = "PWGmcFinalBareALoss"
+NASAL = "OEHeavySyllableNasalApocope"
+GEM = "PWGmcJGemination"
+W_LOSS = "OEWLossBeforeI"
+INPUT = "EnglishProtoInput"
+ACTIVE_INPUT = "SC047ProtoInput"
+DAT_MONO = "SC047FinalOi"
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def model_orders(canonical, plan):
+    orders = {}
+    for model, archived in MODELS.items():
+        order = list(canonical)
+        for op in plan["configurations"][archived]:
+            if "replace" in op:
+                order[order.index(op["replace"])] = op["with"]
+            else:
+                stage = op.get("move") or op["insert"]
+                if "move" in op:
+                    order.remove(stage)
+                order.insert(order.index(op["after"]) + 1, stage)
+        # Restore SC019 before SC020 without sacrificing the lowering and door controls.
+        order.remove(RAISE)
+        order.insert(order.index(LENGTHEN) + 1, RAISE)
+        order[order.index(INPUT)] = ACTIVE_INPUT
+        order.insert(order.index("PNWGmcUnstressedAiMonophthongization") + 1, DAT_MONO)
+        if model == "A":
+            order[order.index("FNU")] = "FNG"
+        order[order.index("OEAwLongDiphthong")] = "SC047NarrowAw"
+        order.insert(order.index(W_LOSS) + 1, "SC047FinalIi")
+        orders[model] = order
+    return orders
+
+
+def read_cells():
+    with CELLS.open(encoding="utf-8") as source:
+        cells = list(csv.DictReader(source, delimiter="\t"))
+    keys = {(row["lexeme"], row["cell"]) for row in cells}
+    if len(keys) != len(cells):
+        raise ValueError("Duplicate paradigm cell")
+    if any(row["selected_in"] not in ("", "A", "B2", "AB2") for row in cells):
+        raise ValueError("Unknown model in cell register")
+    return cells
+
+
+def selections(rows, cells, model):
+    by_id = {row["row_id"]: row for row in rows}
+    result = {row_id: {} for row_id in by_id}
+    for cell in cells:
+        if cell["selected_in"] not in (model, "AB2"):
+            continue
+        row_id = cell["row_id"]
+        if (row_id not in by_id or result[row_id] or cell["lexeme"] != by_id[row_id]["concept"]
+                or not cell["target"] or not cell["evidence"]
+                or not cell["input"]):
+            raise ValueError(f"Incomplete, duplicate or misidentified selection: {cell}")
+        row = by_id[row_id]
+        if CITATION_CONTEXT.encode(row["proto_norm"]) != row["fst_input"]:
+            raise ValueError(f"Selection needs an explicit non-citation context: {cell}")
+        result[row_id] = {
+            "selected_cell": cell["cell"],
+            "selected_input": CITATION_CONTEXT.encode(cell["input"]),
+            "selected_target": cell["target"],
+        }
+    return result
+
+
+def apply_stage(bin_path, previous):
+    domain = sorted({value for outputs in previous.values() for value in outputs})
+    mapped = dict(zip(domain, batch_apply_down(bin_path, domain), strict=True)) if domain else {}
+    return {key: sorted({out for value in outputs for out in mapped[value]})
+            for key, outputs in previous.items()}
+
+
+def trace(order, paths, inputs):
+    previous = {key: [value] for key, value in inputs.items()}
+    changes = {key: [] for key in inputs}
+    for stage in order:
+        current = apply_stage(paths[f"component:{stage}"], previous)
+        for key, output in current.items():
+            if output != previous[key]:
+                changes[key].append([stage, output])
+        previous = current
+    return previous, changes
+
+
+def run(models, forms=()):
+    source = layout().germanic_fst
+    inputs = {"frozen_sha256": FROZEN, "plan_sha256": PLAN, "fst_sha256": source,
+              "cells_sha256": CELLS, "runner_sha256": Path(__file__),
+              "corpus_sha256": layout().corpus_tsv}
+    hashes = {label: sha(path) for label, path in inputs.items()}
+    if hashes["frozen_sha256"] != FROZEN_SHA or hashes["plan_sha256"] != PLAN_SHA:
+        raise ValueError("SC047 historical input digest does not match the pinned archive")
+    with gzip.open(FROZEN, "rt", encoding="utf-8") as stream:
+        frozen = json.load(stream)
+    if hashes["fst_sha256"] != frozen["inputs_sha256"]["germanic.txt"]:
+        raise ValueError("A changed canonical FST needs a new reviewed model base")
+    rows = load_rows(layout().corpus_tsv)
+    expected = {row["row_id"]: row for row in frozen["corpus"]}
+    if len(rows) != 394 or {row["row_id"] for row in rows} != expected.keys():
+        raise ValueError("The live corpus does not cover the pinned diagnostic row identities")
+    for row in rows:
+        if any(expected[row["row_id"]][key] != value for key, value in row.items()):
+            raise ValueError(f"Live diagnostic inputs differ from the frozen set: {row['row_id']}")
+
+    canonical = [stage.foma_identifier for stage in stages()]
+    plan = json.loads(PLAN.read_text(encoding="utf-8"))
+    orders = model_orders(canonical, plan)
+    cells = read_cells()
+    definitions = [plan["definitions"][name] for name in ("FW", "FNU", "FON", "FNG")]
+    definitions.extend((
+        """define SC047NarrowAw Ctx([
+            {*a} {*w} -> {*ēa} {*w} || _ [[EnglishStarVocalic - [{*i}|{*ī}]] | {*ô}],
+            {*á} {*w} -> {*ḗa} {*w} || _ [[EnglishStarVocalic - [{*i}|{*ī}]] | {*ô}]
+        ]);""",
+        "define SC047FinalIi Ctx([{*í} {*i} -> {*ḯ} || _ .#.]);",
+        """define SC047OiCell [pgrmPrefix | 0] PGCellRoot PGCellStem* ō:{*ō} i:{*i};
+        define SC047ProtoInput [EnglishProtoInput |
+            _unambpart([[SC047OiCell.u - EnglishProtoInput.u] .o. SC047OiCell])];""",
+        "define SC047FinalOi Ctx([{*ō} {*i} -> {*ē} || _ .#.]);",
+    ))
+    components = set(canonical).union(*(orders[model] for model in models))
+    queries = {f"query:{i}": form for i, form in enumerate(forms)}
+    results = {}
+    with tempfile.TemporaryDirectory(prefix="capr-sc047-active-") as tmp:
+        work = Path(tmp)
+        image = compiler.prepare_definition_image(source, work)
+        if image is None:
+            raise RuntimeError("Unable to prepare the common definition image")
+        with patch.dict(os.environ, {"CAPR_FOMA_DEFINITION_IMAGE": str(image)}):
+            paths = compiler.compile_isolated(source, {
+                "definitions": "\n".join(definitions), "replace": {},
+                "insert_rule": None, "insert_after": None,
+                "component_checks": [{"component": stage} for stage in sorted(components)],
+            }, [], work, components_only=True)
+        diag = {f"row:{row['row_id']}": row["fst_input"] for row in rows}
+        canonical_outputs, _ = trace(canonical, paths, diag)
+        for row in rows:
+            if canonical_outputs[f"row:{row['row_id']}"] != expected[row["row_id"]]["identity"]:
+                raise RuntimeError(f"Stage evaluation disagrees with canonical composition: {row['row_id']}")
+        for model in models:
+            overrides = selections(rows, cells, model)
+            probes = {f"cell:{cell['lexeme']}:{cell['cell']}": CITATION_CONTEXT.encode(cell["input"])
+                      for cell in cells}
+            selected = {f"selected:{row_id}": override["selected_input"]
+                        for row_id, override in overrides.items() if override}
+            endpoints, traces = trace(orders[model], paths, diag | probes | selected | queries)
+            corpus = []
+            for row in rows:
+                row_id = row["row_id"]
+                diag_key = f"row:{row_id}"
+                selected_key = f"selected:{row_id}" if overrides[row_id] else diag_key
+                corpus.append({
+                    **row,
+                    "diagnostic_outputs": endpoints[diag_key],
+                    "canonical_outputs": canonical_outputs[diag_key],
+                    "selected_cell": None,
+                    "selection_status": ("unresolved comparison" if model == "A" and row_id == "2061"
+                                         else "explicit cell" if overrides[row_id] else "retained"),
+                    "selected_input": row["fst_input"],
+                    "selected_target": row["counterpart"],
+                    **overrides[row_id],
+                    "selected_outputs": endpoints[selected_key],
+                    "diagnostic_trace": traces[diag_key],
+                    "selected_trace": traces[selected_key] if selected_key != diag_key else None,
+                })
+            results[model] = {
+                "order": orders[model], "corpus": corpus,
+                "paradigms": [{**cell, "outputs": endpoints[key], "trace": traces[key]}
+                              for cell, key in zip(cells, probes, strict=True)],
+                "queries": [{"input": form, "outputs": endpoints[key], "trace": traces[key]}
+                            for key, form in queries.items()],
+            }
+    if any(sha(path) != hashes[label] for label, path in inputs.items()):
+        raise RuntimeError("An input changed while evaluating the SC047 model")
+    return {"version": VERSION, "lexical_proposal": PROPOSAL, **hashes, "models": results}
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--model", choices=(*MODELS, "both"), default="both")
+    parser.add_argument("--form", action="append", default=[],
+                        help="also trace a CAPR-encoded input (omit the reconstruction asterisk)")
+    args = parser.parse_args()
+    if any(not form or any(c in form for c in "\r\n\t") for form in args.form):
+        parser.error("--form must be nonempty and contain no tabs or line breaks")
+    models = tuple(MODELS) if args.model == "both" else (args.model,)
+    print(json.dumps(run(models, args.form), ensure_ascii=False, separators=(",", ":")))
+
+
+if __name__ == "__main__":
+    main()

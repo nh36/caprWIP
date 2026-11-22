@@ -1,0 +1,92 @@
+lexeme	row_id	cell	input	target	selected_in	evidence
+net	2138	nom.sg	nátją	nett		Lindisfarne Luke 5:6 nominative net; direct ending inherited
+net	2138	acc.sg	nátją	nett	B2	Lindisfarne John 21:6 accusative nett; direct ending inherited
+net	2138	gen.sg	nátjas			Reconstruction; no independently verified token
+net	2138	dat.sg	nátjai	nette	A	Paris Psalter 89.10 nette; preserved doubled stem is not proof of transfer
+net	2138	nom.acc.pl	nátjō	nett		Matthew 4:22; Lindisfarne has netta
+net	2138	dat.pl	nátjamiz	nettum		Ælfric Colloquy 21.21–22.11 and 25.11 mid nettum
+bed		nom.sg	bádją	bedd		Direct ending reconstructed; Épinal–Erfurt 243 bedd is not case-secure
+bed		acc.sg	bádją	bedd		Paris Psalter 40.3 direct object bedd
+bed		gen.sg	bádjas	beddes		Beowulf 1791 and Judith 63
+bed		dat.sg	bádjai	bedde		Paris Psalter 40.3 tō his bedde
+bed		nom.acc.pl	bádjō	bedd		OE Bede IV.25, Schipper 500.12, bedd/bed
+pledge		nom.sg	wádją	wedd		Ælfric, Thorpe II 272.6–8 subject wedd
+pledge		acc.sg	wádją	wed		Ælfric, Thorpe II 272.6–8 object wed; spelling variant
+pledge		gen.sg	wádjas	weddes		Genesis 9:12; Edmund B.6
+pledge		dat.sg	wádjai	wedde		Genesis 17:13; Alfred 36
+pledge		nom.acc.pl	wádjō			Reconstruction; no independently verified token here
+kin		nom.sg	kúnją	cynn		Dictionary cynn/cyn; final degemination complicates the comparison
+kin		acc.sg	kúnją	cyn		Direct ending reconstructed; normalized cyn is not a newly verified accusative token
+kin		gen.sg	kúnjas	cynnes		Compare Moore Bede Cædmon's Hymn 7 moncynnæs; simplex cynnes also recorded
+kin		dat.sg	kúnjai	cynne		Bosworth–Toller s.v. cynn
+kin		nom.acc.pl	kúnjō			Reconstruction; no independently verified token here
+hay	2061	nom.sg	xáwją	hīeġ		Normalized headword; Hecht 36 heig/hig, apparatus heg
+hay	2061	acc.sg	xáwją	hīeġ	B2	Hecht 36.2,13 heig object of mowing; spelling is not proof of inherited length
+hay	2061	gen.sg	xáwjas			Predicted donor hīeġes is not a verified token
+hay	2061	dat.sg	xáwjai			mid hig attests oblique use, not an overt inherited dative ending
+hay	2061	nom.acc.pl	xáwjō			No independently parsed plural of the predicted shape
+hue	2332	nom.sg	xíwją	hīew	B2	Normalized headword; Sweet Pastoral Care 133.11 edition reading
+hue	2332	acc.sg	xíwją			Direct input shared; no additional accusative token claimed
+hue	2332	gen.sg	xíwjas	hīewes	A	Cotton hiewes, Hatton hiwes, Sweet Pastoral Care 86–87 l. 20; target is Cotton normalized
+hue	2332	dat.sg	xíwjai	hīwe		Boethius 39.8 on ōþrum hīwe; attested variant need not match the protected output
+hue	2332	nom.acc.pl	xíwjō			Reconstruction; no independently verified token here
+hedge	2069	f.nom.sg	xágjō	heġġ	AB2	Kroonen 198; feminine charter inflections and Bosworth–Toller Supplement 528
+hedge	2069	f.acc.sg	xágjǭ	heġġe		Kemble III 52.25 in þā hegce
+hedge	2069	m.nom.sg	xágjaz	heġe		Orel 150; masculine hege is a separate formation
+hedge	2069	m.gen.sg	xágjas	heges		Kemble III 32.30 þæs mǣres heges
+hedge	2069	m.dat.sg	xágjai	hege		Kemble III 78.21 of þām hege
+rest	2152	nom.sg	rástō	ræst		Fox 88.29–32 sēo ræst; possible transfer of the fronted oblique stem
+rest	2152	acc.sg	rástǭ	ræste	AB2	Morris 101.26 þā ēcean ræste, object of geearnige
+rest	2152	gen.sg.bimoric	rástōz			Ringe–Taylor pp. 59, 299–300; genitive tokens uncertain
+rest	2152	gen.sg.trimoric	rástôz			Fulk p. 155 quantity alternative; not a second attestation
+rest	2152	dat.sg	rástōi	ræste		Fox 88.29–32 tō ræste; PGmc input, not later *rastē
+rest	2152	nom.pl	rástôz			Ringe–Taylor trimoric plural; homophonous with Fulk's genitive
+rest	2152	acc.pl	rástōz			Comparative accusative plural probe; no OE token claimed
+rest	2152	gen.pl	rástô			Trimoric nasal ending represented as ô; Ringe 2017 p. 312
+rest	2152	dat.pl	rástōmaz			Ringe 2017 p. 312 dat. ending; no OE token claimed
+rest	2152	inst.pl	rástōmiz			Ringe 2017 p. 312 instrumental ending; alternative input for later dative
+gift	2040	nom.sg	gébō			Ringe–Taylor p. 59 gift paradigm probe; separate from scored i-stem *gíftiz
+gift	2040	acc.sg	gébǭ			Ringe 2017 p. 225; long nasal control
+gift	2040	gen.sg.bimoric	gébōz	ġiefe		Ringe–Taylor pp. 59, 299–300
+gift	2040	gen.sg.trimoric	gébôz			Fulk p. 155 quantity alternative
+gift	2040	dat.sg	gébōi			Ringe 2017 p. 225; PGmc input
+gift	2040	nom.pl	gébôz	ġiefa		Ringe–Taylor p. 59
+gift	2040	acc.pl	gébōz			Ringe 2017 p. 312; cf. Fulk p. 156
+gift	2040	gen.pl	gébô	ġiefa		Ringe–Taylor p. 59; trimoric nasal ending represented as ô
+gift	2040	dat.pl	gébōmaz			Ringe 2017 p. 312
+gift	2040	inst.pl	gébōmiz			Ringe 2017 p. 312
+wool	2300	nom.sg	wúllō	wull		Selected wool; independent lowering and final raising control
+wool	2300	acc.sg	wúllǭ			Long nasal ō-stem control
+wool	2300	gen.sg.bimoric	wúllōz			Reconstructed quantity control
+wool	2300	gen.sg.trimoric	wúllôz			Alternative quantity control
+wool	2300	dat.sg	wúllōi			Reconstructed dative
+wool	2300	nom.pl	wúllôz			Reconstructed plural control; no OE token claimed
+wool	2300	acc.pl	wúllōz			Reconstructed plural control; no OE token claimed
+love		nom.sg	lúbō	lufu		ō-stem comparison, not a scored input
+love		acc.sg	lúbǭ			Reconstructed accusative probe
+love		gen.sg.bimoric	lúbōz			Reconstructed quantity control
+love		gen.sg.trimoric	lúbôz			Alternative quantity control
+love		dat.sg	lúbōi			Reconstructed dative
+love		nom.pl	lúbôz			Reconstructed plural control; no OE token claimed
+love		acc.pl	lúbōz			Reconstructed plural control; no OE token claimed
+door	1992	direct	dórą	dor		Lowering/early loss control (selected corpus input is separately traced)
+glee		direct	glíwją			Unscored geminate-only conditioning control
+glee		gen.sg	glíwjas			Protected form; Ringe–Taylor p. 250
+new		nom.sg	níwjaz			Oral singleton negative
+new		gen.sg	níwjas			Protected labial control
+sew		inf	síwjaną			Protected labial control
+strew	2227	inf.w	stráwjaną			Consonantal *w reconstruction; West Saxon output reconstructed
+strew	2227	inf.au	stráujaną			Fulk pp. 71–72 §4.10 alternative, not another active model
+searu		direct	sárwą			Stranded *w control; reconstructed saru
+searu		gen.sg	sárwas	searwes		Protected oblique stem vocalism, not gemination
+retainer		nom.sg	ságjaz	secg		Beowulf 208 and 2708; A needs a protected donor, B2 could copy the nasal accusative
+retainer		acc.sg	ságją			Reconstruction; no independent pre-transfer contrast
+retainer		gen.sg	ságjas			Dictionary paradigm; no token claimed
+retainer		dat.sg	ságjai			Reconstruction; no token claimed
+hill		nom.sg	xúljaz	hyll		Hogg's reconstructed hyle is not an attested form; class history uncertain
+hill		acc.sg	xúlją			Hypothetical accusative donor in B2, not a securely inherited cell
+hill		dat.sg	xúljai	hylle		Doubled oblique; Hogg 1979 pp. 68–73
+youth		nom.sg	xúsjaz	hyse		Conditional ja-stem; Maldon manuscript lost
+youth		acc.sg	xúsją			No verified early singleton/geminate accusative contrast
+youth		dat.sg	xúsjai			Maldon hysses is genitive, not this modeled dative
+end		nom.sg	ándijaz	ende		Hogg–Fulk §§2.20–2.24 heavy oral control
