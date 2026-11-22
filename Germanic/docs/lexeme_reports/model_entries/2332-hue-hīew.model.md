@@ -1,8 +1,8 @@
 # hue — OE hīew
 
 PROTO: *xíwją
-PROTOFORM: *xíwją
-COUNTERPART: hīew
+PROTOFORM: *xíwjas
+COUNTERPART: hīewes
 DERIVATION_CLASS: regular
 
 ### Transducer input and output
@@ -11,14 +11,14 @@ DERIVATION_CLASS: regular
 | :--- | :--- |
 | lexical item | hue |
 | cognate-set headword | *xíwją |
-| selected input form | *xíwją |
-| Old English target | hīew |
+| selected input form | *xíwjas |
+| Old English target | hīewes |
 | classification | regular |
-| documented output | *xíwją -> hīew |
+| documented output | *xíwjas -> hīewes |
 
 ### Reconstruction and comparative evidence
 
-The selected reconstruction is realized Proto-Germanic
+The citation reconstruction is realized Proto-Germanic
 \emph{*xíwją} 'form, appearance', a neuter *ja*-stem. It follows
 Ringe and Taylor's explicit PGmc [hiwją]{.iv .recon lang=pgmc sort=hiwja role=comparison_form} 'form, appearance',
 normalized with CAPR's dorsal \emph{x} and lexical acute
@@ -122,9 +122,11 @@ not replaced by a summary of dictionary vowels.
 
 ### Old English evidence
 
-Campbell prints [hīew]{.iv lang=oe sort=hiew role=target_form} 'form' beside *hīow* 'form' in the section that derives this stem type, alongside *nīowe*, *nīewe* 'new' and *glīow*, *glīw* 'mirth' [@Campbell1959, §120.2, p. 46]. He distinguishes non-West-Saxon io from West Saxon ie. CAPR selects *hīew* as the source-supported West Saxon counterpart, not as the only attested spelling. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
+Cotton [hiewes]{.iv lang=oe sort=hiewes role=comparison_form} ‘of form, appearance’ in Ælfric's *Grammar* (Zupitza, p. 30, l. 11) is the witness for selected genitive *hīewes*. Campbell prints direct *hīew* beside *hīow* and distinguishes non-West-Saxon io from West Saxon ie [@Campbell1959, §120.2, p. 46]. Orel gives *hīw*, and Kroonen gives *hīw*, *hēow* [@Orel2003, pp. 171--172; @Kroonen2013, p. 224].
 
 ### Development to Old English
+
+The genitive [xíwjas]{.recon} protects *j* in both histories, giving \emph{*xíwwjas}. Offglide formation, long-diphthong realization, mutation and glide loss give *hīewes* while the genitive ending survives. The checkpoints below illustrate the inherited direct form under B2 (and the compatibility cascade), not the selected derivation. A instead loses nasal *ą* before doubling; the singleton route gives *hī*. The protected double provides a possible donor but does not establish transfer.
 
 Campbell's decisive class contrast is that awj and iwj share gemination
 but thereafter lose different glides: the low-vowel type yields the
@@ -142,7 +144,7 @@ proxy for their long īo [@RingeTaylor2014, p. 250].
 | English realization | \emph{*xīowją} | Long īo, distinct from ordinary ēo |
 | Palatal articulation and ending loss | \emph{*çīowj} | Independent dorsal history and reduction in the existing cascade |
 | Mutation | \emph{*çīewj} | Existing long-diphthong mutation conditioned by the retained palatal carrier |
-| Later glide loss and spelling | *hīew* | Retained w and the selected native orthography |
+| Later glide loss and spelling | *hīew* | Retained w in the direct comparison |
 
 These are CAPR's checkpoints, not diplomatic quotations of all the
 authors' intermediate forms. In particular, superscript j on a source
@@ -171,8 +173,8 @@ of redundancy. The earlier inherited-reanalysis placement remains a
 representative serialization, not a newly proved strict chronology
 [@Campbell1959, pp. 45--47; @RingeTaylor2014, pp. 53, 65--66, 171--175, 250].
 
-The contrast with *hīeġ* 'hay', from \emph{*xáwją}, remains exact:
-the selected inputs differ in one vowel and both geminate, but the
+The inherited direct inputs for hue and *hīeġ* 'hay', from \emph{*xáwją}, differ
+in one vowel. Both geminate in B2, but the
 low-vowel word loses w and retains the palatal consonant while hue
 retains w. The low-vowel resolution and subsequent fronting do not
 apply here [@Campbell1959, p. 46; @RingeTaylor2014, pp. 53, 250].

@@ -1,0 +1,182 @@
+arm	checkpoint	probe	input	previous_checkpoint	output
+identity	PWGmcJGemination	fenn.direct	fánją		*f*á*n*n*j*ą
+identity	PWGmcJGemination	fenn.gen	fánjas		*f*á*n*n*j*a*s
+identity	PWGmcJGemination	fenn.dat	fánjai		*f*á*n*n*j*ē
+identity	PWGmcJGemination	wedd.direct	wádją		*w*á*d*d*j*ą
+identity	PWGmcJGemination	wedd.gen	wádjas		*w*á*d*d*j*a*s
+identity	PWGmcJGemination	wedd.dat	wádjai		*w*á*d*d*j*ē
+identity	PWGmcJGemination	webb.direct	wábją		*w*á*b*b*j*ą
+identity	PWGmcJGemination	webb.gen	wábjas		*w*á*b*b*j*a*s
+identity	PWGmcJGemination	webb.dat	wábjai		*w*á*b*b*j*ē
+identity	OEHeavySyllableNasalApocope	fenn.direct	fánją	*f*á*n*n*j*ą	*f*á*n*n*j
+identity	OEHeavySyllableNasalApocope	fenn.gen	fánjas	*f*á*n*n*j*a*s	*f*á*n*n*j*æ*s
+identity	OEHeavySyllableNasalApocope	wedd.direct	wádją	*w*á*d*d*j*ą	*w*æ*d*d*j
+identity	OEHeavySyllableNasalApocope	wedd.gen	wádjas	*w*á*d*d*j*a*s	*w*æ*d*d*j*æ*s
+identity	OEHeavySyllableNasalApocope	wedd.dat	wádjai	*w*á*d*d*j*ē	*w*æ*d*d*j*ē
+identity	OEHeavySyllableNasalApocope	webb.direct	wábją	*w*á*b*b*j*ą	*w*æ*b*b*j
+identity	OEHeavySyllableNasalApocope	webb.gen	wábjas	*w*á*b*b*j*a*s	*w*æ*b*b*j*æ*s
+identity	OEHeavySyllableNasalApocope	webb.dat	wábjai	*w*á*b*b*j*ē	*w*æ*b*b*j*ē
+identity	OEHighVowelApocope	fenn.direct	fánją	*f*á*n*n*j	*f*e*n*n*j
+identity	OEHighVowelApocope	fenn.gen	fánjas	*f*á*n*n*j*æ*s	*f*e*n*n*j*æ*s
+identity	OEHighVowelApocope	fenn.dat	fánjai	*f*á*n*n*j*ē	*f*e*n*n*j*ē
+identity	OEHighVowelApocope	wedd.direct	wádją	*w*æ*d*d*j	*w*e*d*d*j
+identity	OEHighVowelApocope	wedd.gen	wádjas	*w*æ*d*d*j*æ*s	*w*e*d*d*j*æ*s
+identity	OEHighVowelApocope	wedd.dat	wádjai	*w*æ*d*d*j*ē	*w*e*d*d*j*ē
+identity	OEHighVowelApocope	webb.direct	wábją	*w*æ*b*b*j	*w*e*b*b*j
+identity	OEHighVowelApocope	webb.gen	wábjas	*w*æ*b*b*j*æ*s	*w*e*b*b*j*æ*s
+identity	OEHighVowelApocope	webb.dat	wábjai	*w*æ*b*b*j*ē	*w*e*b*b*j*ē
+identity	OEFinalGeminateSimplification	fenn.direct	fánją	*f*e*n*n*j	*f*e*n
+identity	OEFinalGeminateSimplification	fenn.gen	fánjas	*f*e*n*n*j*æ*s	*f*e*n*n*e*s
+identity	OEFinalGeminateSimplification	fenn.dat	fánjai	*f*e*n*n*j*ē	*f*e*n*n*e
+identity	OEFinalGeminateSimplification	wedd.direct	wádją	*w*e*d*d*j	*w*e*d*d
+identity	OEFinalGeminateSimplification	wedd.gen	wádjas	*w*e*d*d*j*æ*s	*w*e*d*d*e*s
+identity	OEFinalGeminateSimplification	wedd.dat	wádjai	*w*e*d*d*j*ē	*w*e*d*d*e
+identity	OEFinalGeminateSimplification	webb.direct	wábją	*w*e*b*b*j	*w*e*b*b
+identity	OEFinalGeminateSimplification	webb.gen	wábjas	*w*e*b*b*j*æ*s	*w*e*b*b*e*s
+identity	OEFinalGeminateSimplification	webb.dat	wábjai	*w*e*b*b*j*ē	*w*e*b*b*e
+identity	OldEnglishSurface	fenn.direct	fánją	*f*e*n	fen
+identity	OldEnglishSurface	fenn.gen	fánjas	*f*e*n*n*e*s	fennes
+identity	OldEnglishSurface	fenn.dat	fánjai	*f*e*n*n*e	fenne
+identity	OldEnglishSurface	wedd.direct	wádją	*w*e*d*d	wedd
+identity	OldEnglishSurface	wedd.gen	wádjas	*w*e*d*d*e*s	weddes
+identity	OldEnglishSurface	wedd.dat	wádjai	*w*e*d*d*e	wedde
+identity	OldEnglishSurface	webb.direct	wábją	*w*e*b*b	webb
+identity	OldEnglishSurface	webb.gen	wábjas	*w*e*b*b*e*s	webbes
+identity	OldEnglishSurface	webb.dat	wábjai	*w*e*b*b*e	webbe
+A	PWGmcFinalBareALoss	fenn.direct	fánją		*f*á*n*j*ą
+A	PWGmcFinalBareALoss	fenn.gen	fánjas		*f*á*n*j*a*s
+A	PWGmcFinalBareALoss	fenn.dat	fánjai		*f*á*n*j*ē
+A	PWGmcFinalBareALoss	wedd.direct	wádją		*w*á*d*j*ą
+A	PWGmcFinalBareALoss	wedd.gen	wádjas		*w*á*d*j*a*s
+A	PWGmcFinalBareALoss	wedd.dat	wádjai		*w*á*d*j*ē
+A	PWGmcFinalBareALoss	webb.direct	wábją		*w*á*b*j*ą
+A	PWGmcFinalBareALoss	webb.gen	wábjas		*w*á*b*j*a*s
+A	PWGmcFinalBareALoss	webb.dat	wábjai		*w*á*b*j*ē
+A	OEHeavySyllableNasalApocope	fenn.direct	fánją	*f*á*n*j*ą	*f*á*n*j
+A	OEHeavySyllableNasalApocope	wedd.direct	wádją	*w*á*d*j*ą	*w*á*d*j
+A	OEHeavySyllableNasalApocope	webb.direct	wábją	*w*á*b*j*ą	*w*á*b*j
+A	FNU	fenn.direct	fánją	*f*á*n*j	*f*á*n*i
+A	FNU	wedd.direct	wádją	*w*á*d*j	*w*á*d*i
+A	FNU	webb.direct	wábją	*w*á*b*j	*w*á*b*i
+A	PWGmcJGemination	fenn.gen	fánjas	*f*á*n*j*a*s	*f*á*n*n*j*a*s
+A	PWGmcJGemination	fenn.dat	fánjai	*f*á*n*j*ē	*f*á*n*n*j*ē
+A	PWGmcJGemination	wedd.gen	wádjas	*w*á*d*j*a*s	*w*á*d*d*j*a*s
+A	PWGmcJGemination	wedd.dat	wádjai	*w*á*d*j*ē	*w*á*d*d*j*ē
+A	PWGmcJGemination	webb.gen	wábjas	*w*á*b*j*a*s	*w*á*b*b*j*a*s
+A	PWGmcJGemination	webb.dat	wábjai	*w*á*b*j*ē	*w*á*b*b*j*ē
+A	OEHighVowelApocope	fenn.direct	fánją	*f*á*n*i	*f*e*n*i
+A	OEHighVowelApocope	fenn.gen	fánjas	*f*á*n*n*j*a*s	*f*e*n*n*j*æ*s
+A	OEHighVowelApocope	fenn.dat	fánjai	*f*á*n*n*j*ē	*f*e*n*n*j*ē
+A	OEHighVowelApocope	wedd.direct	wádją	*w*á*d*i	*w*e*d*i
+A	OEHighVowelApocope	wedd.gen	wádjas	*w*á*d*d*j*a*s	*w*e*d*d*j*æ*s
+A	OEHighVowelApocope	wedd.dat	wádjai	*w*á*d*d*j*ē	*w*e*d*d*j*ē
+A	OEHighVowelApocope	webb.direct	wábją	*w*á*b*i	*w*e*β*i
+A	OEHighVowelApocope	webb.gen	wábjas	*w*á*b*b*j*a*s	*w*e*b*b*j*æ*s
+A	OEHighVowelApocope	webb.dat	wábjai	*w*á*b*b*j*ē	*w*e*b*b*j*ē
+A	OEFinalGeminateSimplification	fenn.direct	fánją	*f*e*n*i	*f*e*n*e
+A	OEFinalGeminateSimplification	fenn.gen	fánjas	*f*e*n*n*j*æ*s	*f*e*n*n*e*s
+A	OEFinalGeminateSimplification	fenn.dat	fánjai	*f*e*n*n*j*ē	*f*e*n*n*e
+A	OEFinalGeminateSimplification	wedd.direct	wádją	*w*e*d*i	*w*e*d*e
+A	OEFinalGeminateSimplification	wedd.gen	wádjas	*w*e*d*d*j*æ*s	*w*e*d*d*e*s
+A	OEFinalGeminateSimplification	wedd.dat	wádjai	*w*e*d*d*j*ē	*w*e*d*d*e
+A	OEFinalGeminateSimplification	webb.direct	wábją	*w*e*β*i	*w*e*β*e
+A	OEFinalGeminateSimplification	webb.gen	wábjas	*w*e*b*b*j*æ*s	*w*e*b*b*e*s
+A	OEFinalGeminateSimplification	webb.dat	wábjai	*w*e*b*b*j*ē	*w*e*b*b*e
+A	OldEnglishSurface	fenn.direct	fánją	*f*e*n*e	fene
+A	OldEnglishSurface	fenn.gen	fánjas	*f*e*n*n*e*s	fennes
+A	OldEnglishSurface	fenn.dat	fánjai	*f*e*n*n*e	fenne
+A	OldEnglishSurface	wedd.direct	wádją	*w*e*d*e	wede
+A	OldEnglishSurface	wedd.gen	wádjas	*w*e*d*d*e*s	weddes
+A	OldEnglishSurface	wedd.dat	wádjai	*w*e*d*d*e	wedde
+A	OldEnglishSurface	webb.direct	wábją	*w*e*β*e	wefe
+A	OldEnglishSurface	webb.gen	wábjas	*w*e*b*b*e*s	webbes
+A	OldEnglishSurface	webb.dat	wábjai	*w*e*b*b*e	webbe
+B	PWGmcFinalBareALoss	fenn.direct	fánją		*f*á*n*j*ą
+B	PWGmcFinalBareALoss	fenn.gen	fánjas		*f*á*n*j*a*s
+B	PWGmcFinalBareALoss	fenn.dat	fánjai		*f*á*n*j*ē
+B	PWGmcFinalBareALoss	wedd.direct	wádją		*w*á*d*j*ą
+B	PWGmcFinalBareALoss	wedd.gen	wádjas		*w*á*d*j*a*s
+B	PWGmcFinalBareALoss	wedd.dat	wádjai		*w*á*d*j*ē
+B	PWGmcFinalBareALoss	webb.direct	wábją		*w*á*b*j*ą
+B	PWGmcFinalBareALoss	webb.gen	wábjas		*w*á*b*j*a*s
+B	PWGmcFinalBareALoss	webb.dat	wábjai		*w*á*b*j*ē
+B	PWGmcJGemination	fenn.direct	fánją	*f*á*n*j*ą	*f*á*n*n*j*ą
+B	PWGmcJGemination	fenn.gen	fánjas	*f*á*n*j*a*s	*f*á*n*n*j*a*s
+B	PWGmcJGemination	fenn.dat	fánjai	*f*á*n*j*ē	*f*á*n*n*j*ē
+B	PWGmcJGemination	wedd.direct	wádją	*w*á*d*j*ą	*w*á*d*d*j*ą
+B	PWGmcJGemination	wedd.gen	wádjas	*w*á*d*j*a*s	*w*á*d*d*j*a*s
+B	PWGmcJGemination	wedd.dat	wádjai	*w*á*d*j*ē	*w*á*d*d*j*ē
+B	PWGmcJGemination	webb.direct	wábją	*w*á*b*j*ą	*w*á*b*b*j*ą
+B	PWGmcJGemination	webb.gen	wábjas	*w*á*b*j*a*s	*w*á*b*b*j*a*s
+B	PWGmcJGemination	webb.dat	wábjai	*w*á*b*j*ē	*w*á*b*b*j*ē
+B	OEHeavySyllableNasalApocope	fenn.direct	fánją	*f*á*n*n*j*ą	*f*á*n*n*j
+B	OEHeavySyllableNasalApocope	wedd.direct	wádją	*w*á*d*d*j*ą	*w*á*d*d*j
+B	OEHeavySyllableNasalApocope	webb.direct	wábją	*w*á*b*b*j*ą	*w*á*b*b*j
+B	FNU	fenn.direct	fánją	*f*á*n*n*j	*f*á*n*n*i
+B	FNU	wedd.direct	wádją	*w*á*d*d*j	*w*á*d*d*i
+B	FNU	webb.direct	wábją	*w*á*b*b*j	*w*á*b*b*i
+B	OEHighVowelApocope	fenn.direct	fánją	*f*á*n*n*i	*f*e*n*n
+B	OEHighVowelApocope	fenn.gen	fánjas	*f*á*n*n*j*a*s	*f*e*n*n*j*æ*s
+B	OEHighVowelApocope	fenn.dat	fánjai	*f*á*n*n*j*ē	*f*e*n*n*j*ē
+B	OEHighVowelApocope	wedd.direct	wádją	*w*á*d*d*i	*w*e*d*d
+B	OEHighVowelApocope	wedd.gen	wádjas	*w*á*d*d*j*a*s	*w*e*d*d*j*æ*s
+B	OEHighVowelApocope	wedd.dat	wádjai	*w*á*d*d*j*ē	*w*e*d*d*j*ē
+B	OEHighVowelApocope	webb.direct	wábją	*w*á*b*b*i	*w*e*b*b
+B	OEHighVowelApocope	webb.gen	wábjas	*w*á*b*b*j*a*s	*w*e*b*b*j*æ*s
+B	OEHighVowelApocope	webb.dat	wábjai	*w*á*b*b*j*ē	*w*e*b*b*j*ē
+B	OEFinalGeminateSimplification	fenn.direct	fánją	*f*e*n*n	*f*e*n
+B	OEFinalGeminateSimplification	fenn.gen	fánjas	*f*e*n*n*j*æ*s	*f*e*n*n*e*s
+B	OEFinalGeminateSimplification	fenn.dat	fánjai	*f*e*n*n*j*ē	*f*e*n*n*e
+B	OEFinalGeminateSimplification	wedd.gen	wádjas	*w*e*d*d*j*æ*s	*w*e*d*d*e*s
+B	OEFinalGeminateSimplification	wedd.dat	wádjai	*w*e*d*d*j*ē	*w*e*d*d*e
+B	OEFinalGeminateSimplification	webb.gen	wábjas	*w*e*b*b*j*æ*s	*w*e*b*b*e*s
+B	OEFinalGeminateSimplification	webb.dat	wábjai	*w*e*b*b*j*ē	*w*e*b*b*e
+B	OldEnglishSurface	fenn.direct	fánją	*f*e*n	fen
+B	OldEnglishSurface	fenn.gen	fánjas	*f*e*n*n*e*s	fennes
+B	OldEnglishSurface	fenn.dat	fánjai	*f*e*n*n*e	fenne
+B	OldEnglishSurface	wedd.direct	wádją	*w*e*d*d	wedd
+B	OldEnglishSurface	wedd.gen	wádjas	*w*e*d*d*e*s	weddes
+B	OldEnglishSurface	wedd.dat	wádjai	*w*e*d*d*e	wedde
+B	OldEnglishSurface	webb.direct	wábją	*w*e*b*b	webb
+B	OldEnglishSurface	webb.gen	wábjas	*w*e*b*b*e*s	webbes
+B	OldEnglishSurface	webb.dat	wábjai	*w*e*b*b*e	webbe
+C_northern_order	PWGmcJGemination	fenn.direct	fánją		*f*á*n*n*j*ą
+C_northern_order	PWGmcJGemination	fenn.gen	fánjas		*f*á*n*n*j*a*s
+C_northern_order	PWGmcJGemination	fenn.dat	fánjai		*f*á*n*n*j*ē
+C_northern_order	PWGmcJGemination	wedd.direct	wádją		*w*á*d*d*j*ą
+C_northern_order	PWGmcJGemination	wedd.gen	wádjas		*w*á*d*d*j*a*s
+C_northern_order	PWGmcJGemination	wedd.dat	wádjai		*w*á*d*d*j*ē
+C_northern_order	PWGmcJGemination	webb.direct	wábją		*w*á*b*b*j*ą
+C_northern_order	PWGmcJGemination	webb.gen	wábjas		*w*á*b*b*j*a*s
+C_northern_order	PWGmcJGemination	webb.dat	wábjai		*w*á*b*b*j*ē
+C_northern_order	OEHeavySyllableNasalApocope	fenn.direct	fánją	*f*á*n*n*j*ą	*f*á*n*n*j
+C_northern_order	OEHeavySyllableNasalApocope	wedd.direct	wádją	*w*á*d*d*j*ą	*w*á*d*d*j
+C_northern_order	OEHeavySyllableNasalApocope	webb.direct	wábją	*w*á*b*b*j*ą	*w*á*b*b*j
+C_northern_order	FNU	fenn.direct	fánją	*f*á*n*n*j	*f*á*n*n*i
+C_northern_order	FNU	wedd.direct	wádją	*w*á*d*d*j	*w*á*d*d*i
+C_northern_order	FNU	webb.direct	wábją	*w*á*b*b*j	*w*á*b*b*i
+C_northern_order	OEHighVowelApocope	fenn.direct	fánją	*f*á*n*n*i	*f*e*n*n
+C_northern_order	OEHighVowelApocope	fenn.gen	fánjas	*f*á*n*n*j*a*s	*f*e*n*n*j*æ*s
+C_northern_order	OEHighVowelApocope	fenn.dat	fánjai	*f*á*n*n*j*ē	*f*e*n*n*j*ē
+C_northern_order	OEHighVowelApocope	wedd.direct	wádją	*w*á*d*d*i	*w*e*d*d
+C_northern_order	OEHighVowelApocope	wedd.gen	wádjas	*w*á*d*d*j*a*s	*w*e*d*d*j*æ*s
+C_northern_order	OEHighVowelApocope	wedd.dat	wádjai	*w*á*d*d*j*ē	*w*e*d*d*j*ē
+C_northern_order	OEHighVowelApocope	webb.direct	wábją	*w*á*b*b*i	*w*e*b*b
+C_northern_order	OEHighVowelApocope	webb.gen	wábjas	*w*á*b*b*j*a*s	*w*e*b*b*j*æ*s
+C_northern_order	OEHighVowelApocope	webb.dat	wábjai	*w*á*b*b*j*ē	*w*e*b*b*j*ē
+C_northern_order	OEFinalGeminateSimplification	fenn.direct	fánją	*f*e*n*n	*f*e*n
+C_northern_order	OEFinalGeminateSimplification	fenn.gen	fánjas	*f*e*n*n*j*æ*s	*f*e*n*n*e*s
+C_northern_order	OEFinalGeminateSimplification	fenn.dat	fánjai	*f*e*n*n*j*ē	*f*e*n*n*e
+C_northern_order	OEFinalGeminateSimplification	wedd.gen	wádjas	*w*e*d*d*j*æ*s	*w*e*d*d*e*s
+C_northern_order	OEFinalGeminateSimplification	wedd.dat	wádjai	*w*e*d*d*j*ē	*w*e*d*d*e
+C_northern_order	OEFinalGeminateSimplification	webb.gen	wábjas	*w*e*b*b*j*æ*s	*w*e*b*b*e*s
+C_northern_order	OEFinalGeminateSimplification	webb.dat	wábjai	*w*e*b*b*j*ē	*w*e*b*b*e
+C_northern_order	OldEnglishSurface	fenn.direct	fánją	*f*e*n	fen
+C_northern_order	OldEnglishSurface	fenn.gen	fánjas	*f*e*n*n*e*s	fennes
+C_northern_order	OldEnglishSurface	fenn.dat	fánjai	*f*e*n*n*e	fenne
+C_northern_order	OldEnglishSurface	wedd.direct	wádją	*w*e*d*d	wedd
+C_northern_order	OldEnglishSurface	wedd.gen	wádjas	*w*e*d*d*e*s	weddes
+C_northern_order	OldEnglishSurface	wedd.dat	wádjai	*w*e*d*d*e	wedde
+C_northern_order	OldEnglishSurface	webb.direct	wábją	*w*e*b*b	webb
+C_northern_order	OldEnglishSurface	webb.gen	wábjas	*w*e*b*b*e*s	webbes
+C_northern_order	OldEnglishSurface	webb.dat	wábjai	*w*e*b*b*e	webbe

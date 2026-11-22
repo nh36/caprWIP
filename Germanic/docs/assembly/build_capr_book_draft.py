@@ -46,7 +46,12 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
     commands_by_heading_ref: dict[str, list[str]] = defaultdict(list)
     commands_by_line_ref: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
     main_rows = load_print_main()
-    emission_rows = build_emission_table(main_rows, load_model_entry_headings())
+    target_headings = load_model_entry_headings()
+    printed_headings = {
+        target: (REPO_ROOT / source).read_text(encoding="utf-8").splitlines()[0].removeprefix("# ")
+        for source, target in target_headings.items()
+    }
+    emission_rows = build_emission_table(main_rows, target_headings)
     seen_emission_ids: set[str] = set()
     for row in emission_rows:
         if row.get("in_book") != "1":
@@ -61,8 +66,9 @@ def load_production_rows() -> tuple[dict[str, list[str]], dict[str, dict[int, li
         cmd = row.get("index_command", "")
         site = row.get("site", "")
         if path == "heading_injection":
-            if cmd not in commands_by_heading_ref[site]:
-                commands_by_heading_ref[site].append(cmd)
+            heading = printed_headings.get(site, site)
+            if cmd not in commands_by_heading_ref[heading]:
+                commands_by_heading_ref[heading].append(cmd)
         elif path == "line_injection":
             if ".md:" not in site:
                 continue

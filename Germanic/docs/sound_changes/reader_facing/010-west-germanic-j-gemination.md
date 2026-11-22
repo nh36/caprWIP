@@ -36,6 +36,6 @@ define PWGmcJGemination Ctx([
 ]);
 ```
 
-OE *nett* 'net' fixes the order because the syllabic-\emph{j} development would remove the glide that conditions gemination. If [SC011 PWGmcSyllabicJ](#rule-PWGmcSyllabicJ) precedes [SC010 PWGmcJGemination](#rule-PWGmcJGemination), PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred} rather than expected OE *nett* 'net'. Earlier movement of gemination changes no output.
+OE *nett* 'net' separates two predictions for the inherited direct singular. If early nasal loss strands the glide and it vocalizes before gemination, PGmc [nátją]{.recon} ‘net’ yields [*nete*]{.pred}; if the ending protects the glide through gemination, the direct route gives *nett*. The attested geminate constrains the order only if it is inherited in that cell, rather than extended from a protected form such as the dative *nette* [@RingeTaylor2014, pp. 44--47; @HoggFulk2011, §2.23].
 
 The chronology is phonologically transparent: the consonant must geminate before \emph{*j} ceases to be consonantal. The witness establishes no earlier boundary.

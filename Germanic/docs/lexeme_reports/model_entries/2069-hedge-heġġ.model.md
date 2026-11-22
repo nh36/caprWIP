@@ -1,7 +1,7 @@
 # hedge — OE heġġ
 
-PROTO: *xágjaz
-PROTOFORM: *xágjaz
+PROTO: *xágjō
+PROTOFORM: *xágjō
 COUNTERPART: heġġ
 DERIVATION_CLASS: regular
 
@@ -10,19 +10,19 @@ DERIVATION_CLASS: regular
 | Item | Value |
 | :--- | :--- |
 | lexical item | hedge |
-| citation reconstruction / lexeme label | *xágjaz |
-| selected input form | *xágjaz |
+| citation reconstruction / lexeme label | *xágjō |
+| selected input form | *xágjō (feminine nominative singular) |
 | Old English target | heġġ |
 | classification | regular |
-| documented output | *xágjaz -> heġġ |
+| documented output | *xágjō -> heġġ |
 
 ### Reconstruction and comparative evidence
 
-The selected input models a palatal [-gj-*]{.recon} ‘hedge’ noun whose Old English development includes gemination, palatalization, and i-mutation. The current derivation therefore reaches a palatal-geminate outcome of the `heġġ` 'hedge' type [@Campbell1959].
+Kroonen connects feminine *hecg* ‘hedge’ and OHG *heckia, heggia* with [hagjō-]{.recon} ‘hedge’, separately from the masculine formation represented by ON *heggr* ‘bird cherry’. Orel associates masculine [xaǥjaz]{.recon} ‘hedge’ with OE *hege* ‘hedge’. The two are formations of the same lexical family, not interchangeable citation forms [@Kroonen2013, p. 198; @Orel2003, p. 150].
 
 ### Old English evidence
 
-Bosworth-Toller and Clark Hall record the noun under standard spellings `hecg` 'hedge' / `heċġ` 'hedge' [@BosworthToller1898; @ClarkHall1960]. The lexical item itself is therefore well attested even though the selected form is normalized.
+The charter evidence distinguishes masculine [of þām hege]{.ex} ‘from the hedge’ from feminine [in þā hegce]{.ex} ‘into the hedge’ (Kemble, *Codex Diplomaticus* III 78.21 and 52.25, cited by Bosworth–Toller). The Supplement reassigns the doubled Bamborough spelling to the feminine; the spelling alone does not determine gender [@Toller1921, p. 528]. These are edition readings. The selected nominative is the normalized *heġġ* ‘hedge’, corresponding to lexicographic *hecg/heċġ* [@BosworthToller1898, s.v. *hege* and *hecg*; @ClarkHall1960].
 
 ### Development to Old English
 
@@ -31,9 +31,7 @@ This is the geminate-stop class, distinct from the singleton fricative in
 affrication had already occurred at the articulation checkpoint
 [@RingeTaylor2014, pp. 203–204; @Fulk2018, pp. 131–132].
 
-From [xágjaz]{.recon} ‘hedge’, the current serialized model first applies West Germanic j-gemination to produce a geminate stop; later Old English palatalization and loss of final `j` produce `heġġ` 'hedge'. This preserves the selected regular executable derivation, not independent evidence for the historical position of final low-vowel loss.
-
-Ringe and Taylor place broader oral/nasal low-vowel apocope before West Germanic j-gemination and distinguish stranded-glide outcomes from later paradigmatic leveling [@RingeTaylor2014, pp. 46--47]. The late oral-a fragment therefore does not establish an uninterrupted regular history of this selected nominative. Reconciling its formation and cell with that chronology remains open; no word-specific analogical repair or change to the selected reconstruction is asserted here.
+From [xágjō]{.recon} ‘hedge’, the long vowel preserves nonsyllabic *j* at West Germanic gemination. Palatalization and i-mutation lead to *heġġ*; the short nasal apocope controversy does not govern this ending. The masculine *hege* and its singleton obliques are a separate paradigm: extending the singleton from the masculine nominative is possible, but neither its direction of spread nor an alternative inherited formation is demonstrated here [@Ringe2017, p. 312; @RingeTaylor2014, pp. 44–47].
 
 ### Form note
 

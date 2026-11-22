@@ -4,6 +4,8 @@ Bibliographic identity belongs to `docs/refs.bib`. This record registers
 acquisition, not completion of the SC047 research or adoption of a sound law.
 The historical adjudications retain their original consultation limits:
 newly acquiring an original does not retroactively certify an earlier citation.
+For the later [Dahl, Hogg and Adamczyk intake and reading record](nominal-levelling.md),
+see the separate nominal-levelling bibliography.
 
 | Key | Original and supplied coverage | Search aid |
 | :--- | :--- | :--- |
@@ -12,6 +14,7 @@ newly acquiring an original does not retroactively certify an earlier citation.
 | `BallStiles1983` | Original *Anglia* 101 article, printed 5--28, 24 sheets | Complete native-layout extraction, including notes and references |
 | `Stiles2013` | Original *NOWELE* 66(1) article, printed 5--38, 34 sheets | Complete native-layout extraction, including notes and references |
 | `Versloot2019` | Original *NOWELE* 72(1) article, printed 78--98, 21 sheets | Complete native-layout extraction, including both appendices |
+| `Hollifield1980` | Both parts of *The Phonological Development of Final Syllables in Germanic*, *Die Sprache* 26 (1980), 19--53 and 145--178 | Private per-sheet OCR, including title sheets and the volume cover; use the original images for notation |
 
 Installed originals are byte-identical to the valid supplied files.
 `holdings.tsv` records their original filenames, exact SHA256 identities,
@@ -24,9 +27,17 @@ extra Boutkan download was also excluded, not treated as a second original.
 The valid morphology title and imprint identify Volume 2, not the
 previously held Volume 1 *Phonology*. The held Boutkan title/series pages,
 not the supplied filename's added subtitle or volume zero, own its identity.
-Hollifield1980 remains unacquired.
+The two licensed Hollifield originals have their own [part-level receipt and
+page map](hollifield1980.tsv), linked to the single bibliographic identity.
 
 ## Extraction, pagination and reading limits
+
+Hofmann (1970), *Niederdeutsches Wort* 10, pp. 95–108, was installed
+from `Downloads/Niederdeutsches_Wort_10_1970.pdf`. The private journal
+original and article extract are pinned in `holdings.tsv`; printed
+pages 95–108 are sheets 100–113 of the
+[journal issue](https://www.lwl.org/komuna/pdf/Niederdeutsches_Wort_10_1970.pdf).
+The new holding is not part of the earlier restoration bundle.
 
 Complete texts and intermediate OCR remain private under
 `docs/references/local/sc047-early-apocope/`. `pdftotext -layout` supplies

@@ -1,0 +1,96 @@
+{
+  "production_reference": "1468c4ac0a6b4d4ca4997a28f82e88353f33c7a0",
+  "discussion_base": "489f7d424942cea22844925f599b95c120f4a079",
+  "snapshot": "sc047-followup-1dfb4053",
+  "capture_head": "cf170b111f17293c39dc98bd8b050f6d3ee32dc1",
+  "capture_identity_sha256": "9a941d41b9e8dcbb342085ddb64fa4dfceff636304773a96cb4203a039c8899d",
+  "completed_at": "2026-11-21T14:16:53Z",
+  "completion_receipt_sha256": "fb24d773797c4c93c5b24d5d038253ec6b00a706abcee9e6a2a988ab1a5e0f1e",
+  "execution_start": "2026-11-21T14:10:56Z",
+  "execution_finish": "2026-11-21T14:16:53Z",
+  "worktree_identity_changed_during_run": true,
+  "fst_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+  "corpus_sha256": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+  "worker_sha256": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+  "pinned_plan_sha256": "1bef9d93916c5a8538b8b50da1a62dbe88ae460965bebbf16e2e1b4053001d5b",
+  "pinned_inputs": {
+    "source.txt": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+    "corpus.tsv": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+    "contexts.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+    "worker.py": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+    "plan.json": "1bef9d93916c5a8538b8b50da1a62dbe88ae460965bebbf16e2e1b4053001d5b",
+    "anglo_frisian_experiments.py": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa",
+    "oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+    "capr_runtime.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+    "sound_change_order_sensitivity.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+    "executable_facts.py": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+  },
+  "raw_observations_sha256": "17c368a7955c953e7cf9e76cbe29fc1e03871c7f82bcfc6e96af39dc10715737",
+  "cost": {
+    "networks": 1571,
+    "compiler": [
+      {
+        "script": "common-definitions.foma",
+        "seconds": 333.397400818998,
+        "peak_rss_kib": 2243544,
+        "returncode": 0
+      },
+      {
+        "script": "experiment.foma",
+        "seconds": 20.614805468008853,
+        "peak_rss_kib": 1155052,
+        "returncode": 0
+      }
+    ],
+    "variants": 11,
+    "seconds": 356.95999162200314
+  },
+  "frozen_observations_sha256": "c1d423a941b17b34396e4373219466b87eb41fd17573f4df13780ac8c2157471",
+  "placement_trace": {
+    "snapshot": "sc047-followup-add6ded2",
+    "capture_head": "6aa8ae96d770efd3e1d88f5cb77eefbe3b80a7e9",
+    "capture_identity_sha256": "10d4d8b93fe98515835f7fe4db8ba1a3245d1953f163104798c7c84e5edc0950",
+    "completed_at": "2026-11-21T14:52:32Z",
+    "completion_receipt_sha256": "2fae7df625be7365bdb0e48270e28459e58f126e3c04b28ce24bb2a8da7de565",
+    "execution_start": "2026-11-21T14:47:02Z",
+    "execution_finish": "2026-11-21T14:52:32Z",
+    "worktree_identity_changed_during_run": true,
+    "fst_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+    "corpus_sha256": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+    "worker_sha256": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+    "pinned_plan_sha256": "0140cb39e869ea1716e5aaf2c588a83cb6b49d600a9784c022fc217316ab9354",
+    "pinned_inputs": {
+      "source.txt": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+      "corpus.tsv": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+      "contexts.tsv": "6a69a8d450a0ad5898bed7150136dc70e5731422c29803608825cdefc6b0f914",
+      "worker.py": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+      "plan.json": "0140cb39e869ea1716e5aaf2c588a83cb6b49d600a9784c022fc217316ab9354",
+      "anglo_frisian_experiments.py": "4501668b5934b567b690422cfb62f2c2319e724a8ddd33ceb11a885151ee73fa",
+      "oe_pipeline.py": "742068d0091372e72865c235b4289c430f30fab83e2d1b4a6edb040a7570fcd6",
+      "capr_runtime.py": "e9f5e2613fdaaeb8d80801751c734bb6dea4a414ce3e4c18e0e425223f13c8ec",
+      "sound_change_order_sensitivity.py": "99e5dbb355b2af3e2aa29b1ad2f5feaeaef75be7efaa11a3de824370e046a03c",
+      "executable_facts.py": "0379e28687d37dd368029176e320a1af95678ead131582a89142f4ba9452b8fd"
+    },
+    "raw_observations_sha256": "353135fb704beea87bc112f400ee85f51904d8ec5a505695d176b34c6c0e0333",
+    "cost": {
+      "networks": 447,
+      "compiler": [
+        {
+          "script": "common-definitions.foma",
+          "seconds": 323.1938863550022,
+          "peak_rss_kib": 2247776,
+          "returncode": 0
+        },
+        {
+          "script": "experiment.foma",
+          "seconds": 5.167331919001299,
+          "peak_rss_kib": 1149816,
+          "returncode": 0
+        }
+      ],
+      "variants": 5,
+      "seconds": 329.4704493169993
+    },
+    "frozen_observations_sha256": "8bf9d4e1170f076e194862e40891df95318c4aeac6eb2d92c9f2cd3810db588a"
+  }
+}

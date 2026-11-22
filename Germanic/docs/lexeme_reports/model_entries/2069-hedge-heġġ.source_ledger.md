@@ -1,6 +1,16 @@
 # Source extraction ledger — hedge / heġġ
 
-This ledger records the compact evidence used for the regular-with-note entry.
+The historical rows below describe the former masculine selection and its
+normalization. The proposal selects the independently supported feminine
+nominative; those historical records are retained as evidence, not authority
+for the proposed input.
+
+| Source | Proposed use |
+| :--- | :--- |
+| Kroonen 2013:198, s.v. *haga(n)-* | OE feminine *hecg* and OHG *heckia, heggia* continue *hagjō-*. CAPR nominative *xágjō* is an explicit model representation, not the printed stem notation. |
+| Orel 2003:150, s.v. *xaǥjaz* | The masculine formation is evidence for *hege*, not the feminine target. |
+| Bosworth–Toller Supplement p. 528; Kemble III 32.30, 52.25, 78.21, 385.7 | Edition readings distinguish masculine articles and singleton *hege/heges* from feminine *hegce/hegge*. No independent dating from spelling is claimed. |
+| Ringe 2017:302, 312; canonical and matched research traces | Feminine *-jō* and accusative *-jǭ* are distinct long endings; *xágjō → heġġ* and *xágjǭ → heġġe* preserve the contrast. The retained target spelling is normalized. |
 
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

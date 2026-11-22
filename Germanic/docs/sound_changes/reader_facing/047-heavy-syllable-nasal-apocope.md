@@ -74,14 +74,16 @@ as histories of paradigms, not chosen by the fit of citation forms
 [@HoggFulk2011, pp. 20--21, §2.23;
 @Boutkan1995, pp. 209--213, 435--436].
 
-The executable position is later than that historical argument would
-suggest. Moving this fragment beside the oral loss changes no selected
-endpoint; its present position after restoration is not necessary.
-Moving it before gemination alone, however, removes vowel triggers
-still needed by the serialized u-lowering and changes the treatment
-of final consonants. Those dependencies explain limitations of the
-implementation, not a historically late date for apocope. The secondary
-final n of *dōn* 'do' must likewise be exposed only after
+The compatibility fragment deletes short final nasal \emph{*ą} after
+a consonant without testing syllable weight. It follows gemination,
+as does the oral fragment, and therefore does not implement the
+published split chronology. The two historical models put oral loss
+before gemination; A moves nasal loss there too, whereas B2 retains
+the nasal ending through gemination. Moving the nasal fragment alone
+removes triggers visible to u-lowering and exposes final consonants
+at a different point. These dependencies constrain implementation
+rather than date the historical changes. The secondary final
+n of *dōn* 'do' must likewise be exposed only after
 [SC023 PNWGmcNStemNLoss](#rule-PNWGmcNStemNLoss) has ceased to operate.
 
 Prior lowering is independently compatible with early loss:

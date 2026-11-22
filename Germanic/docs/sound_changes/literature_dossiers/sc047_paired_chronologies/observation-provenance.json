@@ -1,0 +1,33 @@
+{
+  "snapshot_id": "sc047-followup-a23c8805",
+  "source_commit": "a7099eb55b9ee88550f83b695989a8f688e05b5b",
+  "source_identity_sha256": "737d1da6b9dbd75bea9bc51a1182ae3769c0eb97f629f5ba0124daefeabcab40",
+  "plan_sha256": "abafd6fc8f25564a63ddf666e4c2ae0878c2291d3ec94907dd684c30d186d7d4",
+  "worker_sha256": "24fd09ccff68fbd51d7288306ebbb63c5d6e7074a32d56ea36e478ad1938605e",
+  "fst_sha256": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+  "corpus_sha256": "c0e0ad11bb67b1e4c3d70642a0711cabb1c19afa6904752444342cc7d61d41f4",
+  "frozen_result_sha256": "5d92b61a709fe4ea80a9278db4063cbd093ca3a881c76e2bcdc5e72d9ee2a430",
+  "raw_result_sha256": "e83a6945980b432289b4bf5d56e054bb3b2662f2d061c0553ab8237824804ae1",
+  "execution_returncode": 0,
+  "started_at": "2026-11-20T08:06:46Z",
+  "finished_at": "2026-11-20T08:11:57Z",
+  "cost": {
+    "networks": 166,
+    "compiler": [
+      {
+        "script": "common-definitions.foma",
+        "seconds": 304.570117514,
+        "peak_rss_kib": 2243676,
+        "returncode": 0
+      },
+      {
+        "script": "experiment.foma",
+        "seconds": 4.887398293999922,
+        "peak_rss_kib": 1147828,
+        "returncode": 0
+      }
+    ],
+    "variants": 6,
+    "seconds": 310.4532017669999
+  }
+}

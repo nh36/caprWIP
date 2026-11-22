@@ -1,0 +1,1135 @@
+{
+  "sha256": {
+    "germanic.txt": "43188e9a8e5bcbd028043675586c6655f81394beba55f0a4bb4044792db4050f",
+    "plan.json": "71b0bf5b33e9ee8196964245b6f0050ea3a200a71f7ba10065f3379f9ca155d5",
+    "run_parallel.py": "b55c612c63162e8b88d734441ad888981b5ca47903f9040248d155738c2d1a9a",
+    "run_cells.py": "09181024ab47a3f8dc140df6ec45be8859bd88b271dc9c2d8a77e8211b55071c"
+  },
+  "inputs": {
+    "full": {
+      "hedge.f.nom.sg": "xágjō",
+      "hedge.f.acc.sg": "xágjǭ",
+      "rest.nom.sg": "rástō",
+      "rest.gen.sg.control": "rástōz",
+      "rest.dat.sg": "rástōi",
+      "rest.acc.sg": "rástǭ",
+      "hay.dat.sg": "xáwjai",
+      "hue.dat.sg": "xíwjai",
+      "net.direct.control": "nátją"
+    },
+    "component": {
+      "hyse.nom.sg.component": "*x*ú*s*j*a*z",
+      "hyse.dat.sg.component": "*x*ú*s*j*ai",
+      "hyse.acc.sg.component_control": "*x*ú*s*j*ą",
+      "net.direct.component_control": "*n*á*t*j*ą"
+    }
+  },
+  "traces": {
+    "identity:full:EnglishProtoInput": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō*z"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ai"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ai"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "identity:full:PWGmcJGemination": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō*z"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:full:PNWGmcFinalLongORaising": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*u"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*u"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō*z"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:full:EAFFinalZDeletion": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*u"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*u"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:full:PWGmcFinalBareALoss": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*u"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*u"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*ēa*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*īo*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:full:OEHeavySyllableNasalApocope": {
+      "hedge.f.nom.sg": [
+        "*ç*æ*g*g*j*u"
+      ],
+      "hedge.f.acc.sg": [
+        "*ç*æ*g*g*j*ǣ"
+      ],
+      "rest.nom.sg": [
+        "*r*a*s*t*u"
+      ],
+      "rest.gen.sg.control": [
+        "*r*æ*s*t*ǣ"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*æ*s*t*ǣ"
+      ],
+      "hay.dat.sg": [
+        "*ç*ēa*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*ç*īo*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*æ*t*t*j"
+      ]
+    },
+    "identity:full:OEHighVowelApocope": {
+      "hedge.f.nom.sg": [
+        "*ç*e*ʤ*ʤ*j"
+      ],
+      "hedge.f.acc.sg": [
+        "*ç*e*ʤ*ʤ*j*ǣ"
+      ],
+      "rest.nom.sg": [
+        "*r*a*s*t"
+      ],
+      "rest.gen.sg.control": [
+        "*r*æ*s*t*ǣ"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*æ*s*t*ǣ"
+      ],
+      "hay.dat.sg": [
+        "*ç*īe*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*ç*īe*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*e*t*t*j"
+      ]
+    },
+    "identity:full:OldEnglishSurface": {
+      "hedge.f.nom.sg": [
+        "heġġ"
+      ],
+      "hedge.f.acc.sg": [
+        "heġġe"
+      ],
+      "rest.nom.sg": [
+        "rast"
+      ],
+      "rest.gen.sg.control": [
+        "ræste"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "ræste"
+      ],
+      "hay.dat.sg": [
+        "hīeġe"
+      ],
+      "hue.dat.sg": [
+        "hīewe"
+      ],
+      "net.direct.control": [
+        "nett"
+      ]
+    },
+    "identity:component:PWGmcJGemination": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*s*j*a*z"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:component:PNWGmcFinalLongORaising": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*s*j*a*z"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:component:EAFFinalZDeletion": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*s*j*a"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:component:PWGmcFinalBareALoss": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*s*j"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "identity:component:OEHeavySyllableNasalApocope": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*s*j"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*j"
+      ],
+      "net.direct.component_control": [
+        "*n*æ*t*t*j"
+      ]
+    },
+    "identity:component:OEHighVowelApocope": {
+      "hyse.nom.sg.component": [
+        "*x*y*s*s*j"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*y*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*y*s*s*j"
+      ],
+      "net.direct.component_control": [
+        "*n*e*t*t*j"
+      ]
+    },
+    "identity:component:OldEnglishSurface": {
+      "hyse.nom.sg.component": [
+        "hyss"
+      ],
+      "hyse.dat.sg.component": [
+        "hysse"
+      ],
+      "hyse.acc.sg.component_control": [
+        "hyss"
+      ],
+      "net.direct.component_control": [
+        "nett"
+      ]
+    },
+    "A:full:EnglishProtoInput": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō*z"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ai"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ai"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "A:full:EAFFinalZDeletion": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "A:full:PWGmcFinalBareALoss": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "A:full:FON": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "A:full:OEHeavySyllableNasalApocope": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j"
+      ]
+    },
+    "A:full:FNU": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*i"
+      ]
+    },
+    "A:full:PWGmcJGemination": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*i"
+      ]
+    },
+    "A:full:PNWGmcFinalLongORaising": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*u"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*u"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*u"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*i"
+      ]
+    },
+    "A:full:OEHighVowelApocope": {
+      "hedge.f.nom.sg": [
+        "*ç*e*ʤ*ʤ*j"
+      ],
+      "hedge.f.acc.sg": [
+        "*ç*e*ʤ*ʤ*j*ǣ"
+      ],
+      "rest.nom.sg": [
+        "*r*a*s*t"
+      ],
+      "rest.gen.sg.control": [
+        "*r*a*s*t"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*æ*s*t*ǣ"
+      ],
+      "hay.dat.sg": [
+        "*ç*īe*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*ç*īe*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*e*t*i"
+      ]
+    },
+    "A:full:OldEnglishSurface": {
+      "hedge.f.nom.sg": [
+        "heġġ"
+      ],
+      "hedge.f.acc.sg": [
+        "heġġe"
+      ],
+      "rest.nom.sg": [
+        "rast"
+      ],
+      "rest.gen.sg.control": [
+        "rast"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "ræste"
+      ],
+      "hay.dat.sg": [
+        "hīeġe"
+      ],
+      "hue.dat.sg": [
+        "hīewe"
+      ],
+      "net.direct.control": [
+        "nete"
+      ]
+    },
+    "A:component:EAFFinalZDeletion": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*j*a"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "A:component:PWGmcFinalBareALoss": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*j"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "A:component:FON": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "A:component:OEHeavySyllableNasalApocope": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*j"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*j"
+      ]
+    },
+    "A:component:FNU": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*i"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*i"
+      ]
+    },
+    "A:component:PWGmcJGemination": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*i"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*i"
+      ]
+    },
+    "A:component:PNWGmcFinalLongORaising": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*i"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*i"
+      ]
+    },
+    "A:component:OEHighVowelApocope": {
+      "hyse.nom.sg.component": [
+        "*x*y*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*y*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*y*s*i"
+      ],
+      "net.direct.component_control": [
+        "*n*e*t*i"
+      ]
+    },
+    "A:component:OldEnglishSurface": {
+      "hyse.nom.sg.component": [
+        "hyse"
+      ],
+      "hyse.dat.sg.component": [
+        "hysse"
+      ],
+      "hyse.acc.sg.component_control": [
+        "hyse"
+      ],
+      "net.direct.component_control": [
+        "nete"
+      ]
+    },
+    "B:full:EnglishProtoInput": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō*z"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ai"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ai"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "B:full:EAFFinalZDeletion": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "B:full:PWGmcFinalBareALoss": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "B:full:FON": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "B:full:PWGmcJGemination": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "B:full:OEHeavySyllableNasalApocope": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*j"
+      ]
+    },
+    "B:full:FNU": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*ō"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*ō"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*i"
+      ]
+    },
+    "B:full:PNWGmcFinalLongORaising": {
+      "hedge.f.nom.sg": [
+        "*x*á*g*g*j*u"
+      ],
+      "hedge.f.acc.sg": [
+        "*x*á*g*g*j*ǭ"
+      ],
+      "rest.nom.sg": [
+        "*r*á*s*t*u"
+      ],
+      "rest.gen.sg.control": [
+        "*r*á*s*t*u"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*á*s*t*ǭ"
+      ],
+      "hay.dat.sg": [
+        "*x*á*w*w*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*x*í*w*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*á*t*t*i"
+      ]
+    },
+    "B:full:OEHighVowelApocope": {
+      "hedge.f.nom.sg": [
+        "*ç*e*ʤ*ʤ*j"
+      ],
+      "hedge.f.acc.sg": [
+        "*ç*e*ʤ*ʤ*j*ǣ"
+      ],
+      "rest.nom.sg": [
+        "*r*a*s*t"
+      ],
+      "rest.gen.sg.control": [
+        "*r*a*s*t"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "*r*æ*s*t*ǣ"
+      ],
+      "hay.dat.sg": [
+        "*ç*īe*j*ē"
+      ],
+      "hue.dat.sg": [
+        "*ç*īe*w*j*ē"
+      ],
+      "net.direct.control": [
+        "*n*e*t*t"
+      ]
+    },
+    "B:full:OldEnglishSurface": {
+      "hedge.f.nom.sg": [
+        "heġġ"
+      ],
+      "hedge.f.acc.sg": [
+        "heġġe"
+      ],
+      "rest.nom.sg": [
+        "rast"
+      ],
+      "rest.gen.sg.control": [
+        "rast"
+      ],
+      "rest.dat.sg": [],
+      "rest.acc.sg": [
+        "ræste"
+      ],
+      "hay.dat.sg": [
+        "hīeġe"
+      ],
+      "hue.dat.sg": [
+        "hīewe"
+      ],
+      "net.direct.control": [
+        "nett"
+      ]
+    },
+    "B:component:EAFFinalZDeletion": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*j*a"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "B:component:PWGmcFinalBareALoss": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*j"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "B:component:FON": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*j*ą"
+      ]
+    },
+    "B:component:PWGmcJGemination": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*j*ą"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*j*ą"
+      ]
+    },
+    "B:component:OEHeavySyllableNasalApocope": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*j"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*j"
+      ]
+    },
+    "B:component:FNU": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*i"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*i"
+      ]
+    },
+    "B:component:PNWGmcFinalLongORaising": {
+      "hyse.nom.sg.component": [
+        "*x*ú*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*ú*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*ú*s*s*i"
+      ],
+      "net.direct.component_control": [
+        "*n*á*t*t*i"
+      ]
+    },
+    "B:component:OEHighVowelApocope": {
+      "hyse.nom.sg.component": [
+        "*x*y*s*i"
+      ],
+      "hyse.dat.sg.component": [
+        "*x*y*s*s*j*ē"
+      ],
+      "hyse.acc.sg.component_control": [
+        "*x*y*s*s"
+      ],
+      "net.direct.component_control": [
+        "*n*e*t*t"
+      ]
+    },
+    "B:component:OldEnglishSurface": {
+      "hyse.nom.sg.component": [
+        "hyse"
+      ],
+      "hyse.dat.sg.component": [
+        "hysse"
+      ],
+      "hyse.acc.sg.component_control": [
+        "hyss"
+      ],
+      "net.direct.component_control": [
+        "nett"
+      ]
+    }
+  }
+}

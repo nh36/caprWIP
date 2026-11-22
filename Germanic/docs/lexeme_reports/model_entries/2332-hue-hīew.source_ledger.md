@@ -1,5 +1,10 @@
 # Source extraction ledger — hue / hīew
 
+The active target is normalized genitive *hīewes*, Cotton *hiewes* in
+Ælfric's *Grammar*, Zupitza p. 30 l. 11. The selected *xíwjas* assembles
+the documented inherited high-front stem with the regular genitive
+ending. The direct stem and witnesses below remain unscored controls.
+
 This ledger records the evidence used for the addition of row 2332 (hue, OE *hīew*), the \*iwj witness for the \*w branch of West Germanic *j*-gemination.
 
 ## Current comparative reassessment: adopted working account

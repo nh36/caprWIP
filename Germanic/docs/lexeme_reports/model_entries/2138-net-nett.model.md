@@ -1,8 +1,8 @@
 # net — OE nett
 
 PROTO: *nátją
-PROTOFORM: *nátją
-COUNTERPART: nett
+PROTOFORM: *nátjai
+COUNTERPART: nette
 DERIVATION_CLASS: regular
 
 ### Transducer input and output
@@ -11,10 +11,10 @@ DERIVATION_CLASS: regular
 | :--- | :--- |
 | lexical item | net |
 | citation reconstruction / lexeme label | *natjan |
-| selected input form | *nátją |
-| Old English target | nett |
+| selected input form | *nátjai |
+| Old English target | nette |
 | classification | regular |
-| documented output | *nátją -> nett |
+| documented output | *nátjai -> nette |
 
 ### Reconstruction and comparative evidence
 
@@ -22,12 +22,12 @@ Orel gives [natjan]{.recon} ‘net’ with Old English [`nett`]{.iv lang=oe sort
 
 ### Old English evidence
 
-Clark Hall and Bosworth-Toller record [`nett`]{.iv lang=oe sort=nett role=comparison_form} 'net' as the noun, and Campbell notes that final geminates are often graphically simplified in Old English spelling [@ClarkHall1960; @BosworthToller1898, 29; @Campbell1959].
+The Paris Psalter 89.10 attests dative *nette* ‘net’ in a prepositional phrase [@Thorpe1835, Psalm 89.10]. Lindisfarne Luke 5:6 has nominative [net]{.iv lang=oe sort=net role=comparison_form}; John 21:6 has accusative [nett]{.iv lang=oe sort=nett role=comparison_form}. Final single spellings do not alone establish historical singleton quantity [@Campbell1959].
 
 ### Development to Old English
 
-From [nátją]{.recon} ‘net’, West Germanic j-gemination first gives [náttją]{.recon} ‘net’. Later brightening, loss of the weak ending, and loss of final `j` after a heavy stem yield [`nett`]{.iv lang=oe sort=nett role=comparison_form} 'net', so the development represented here is regular [@Fulk2018].
+In both models, [nátjai]{.recon} gives \emph{*nátjē} by monophthongization. The vowel protects the glide through gemination, and brightening, umlaut, shortening and glide loss give *nette*. Direct [nátją]{.recon} loses its nasal ending first in A and the stranded glide vocalizes, giving \emph{*nete}. In B2 [náttją]{.recon} precedes ending loss and yields *nett*. The attested direct double decides between these histories only if inherited rather than extended from a protected cell [@RingeTaylor2014, pp. 44–47; @HoggFulk2011, §2.23].
 
 ### Form note
 
-Spellings in `net` can therefore be graphic simplifications, but the lexical target supported by the dictionary evidence is [`nett`]{.iv lang=oe sort=nett role=comparison_form} 'net' [@Campbell1959; @Orel2003].
+The direct spelling remains the citation form and a control rather than the selected target.

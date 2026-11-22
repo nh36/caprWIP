@@ -1,6 +1,6 @@
 # Source extraction ledger — net / nett
 
-This ledger records the compact evidence used for the regular model entry rewrite.
+The active selection is *nátjai → nette*, independent dative singular in Paris Psalter 89.10 (Thorpe 1835). Lindisfarne Luke 5:6 *net* and John 21:6 *nett* are direct-cell witnesses, not the scored target. The entries concerning the earlier selection below retain its provenance.
 
 | Source | Date / chronological position | Form(s) given | Stem class / morphology | Old English form(s) | Claim relevant to the entry | Citation key available? | Where this claim was found locally | Confidence / review note |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

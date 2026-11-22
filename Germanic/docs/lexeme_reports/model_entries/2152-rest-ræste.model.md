@@ -1,7 +1,7 @@
 # rest — OE ræste
 
 PROTO: *rastō
-PROTOFORM: *rástōz
+PROTOFORM: *rástǭ
 COUNTERPART: ræste
 DERIVATION_CLASS: late_analogy
 
@@ -11,50 +11,19 @@ DERIVATION_CLASS: late_analogy
 | :--- | :--- |
 | lexical item | rest |
 | citation reconstruction / lexeme label | *rastō |
-| selected input form | *rástōz |
+| selected input form | *rástǭ (accusative singular) |
 | Old English target | ræste |
 | classification | late_analogy |
-| documented output | *rástōz -> ræste |
+| documented output | *rástǭ -> ræste |
 
-### Reconstruction and comparative evidence
+### Reconstruction and Old English evidence
 
-Kroonen treats the noun as a feminine ō-stem [`*rastō-`]{.iv lang=pgmc sort=rasto role=source_protoform}, continued by Old English
-[`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. The selected input [rástōz]{.iv .recon lang=pgmc sort=rastoz role=selected_input} ‘rest’ therefore does not replace
-the lexeme-level headword. It identifies one oblique singular cell on the side of
-the paradigm that yields `ræste` 'rest'.
+Kroonen treats the noun as a feminine ō-stem [`*rastō-`]{.iv lang=pgmc sort=rasto role=source_protoform}, continued by Old English [`ræst`]{.iv lang=oe sort=raest role=comparison_form} ‘rest’ [@Kroonen2013, p. 405]. The selected [rástǭ]{.iv .recon lang=pgmc sort=rasto role=selected_input} ‘rest’ is the independently reconstructed accusative singular of this stem, not a substitute for its nominative citation reconstruction [@Ringe2017, p. 312; @RingeTaylor2014, pp. 299–300].
 
-The source tradition used here labels that cell specifically as genitive
-singular, but the broader local synthesis of the ō-stem paradigm shows that the
-oblique singulars converge on the same front-vocalic `ræste` 'rest' side, in contrast
-to a nominative singular that would remain `rast` 'rest'.
-
-### Old English evidence
-
-The ordinary Old English citation form is [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@Kroonen2013, 445]. Clark
-Hall likewise gives [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' [@ClarkHall1960, 239]. Bosworth-Toller also preserves oblique uses of [`ræste`]{.iv lang=oe sort=raeste role=target_form} 'rest', including prepositional
-examples such as [on ræste]{.ex} 'at rest' and [tó ræste]{.ex} 'to rest' [@BosworthToller1898, 121].
-
-The comparison form used here is therefore an attested oblique [`ræste`]{.iv lang=oe sort=raeste role=target_form} 'rest', not a
-reconstructed surrogate. The dictionary headword [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' remains an equally real
-part of the Old English record.
+The direct object [þā ēcean ræste]{.ex} ‘the eternal rest’ in *Blickling Homilies* 101.26 (Morris) supplies the accusative. The *Boethius* passage with [sēo ræst]{.ex} ‘the rest’ and [tō ræste]{.ex} ‘to rest’ (ch. 25, Fox 88.29–32) attests nominative and dative respectively; [on ræste]{.ex} ‘at rest’ gives another prepositional dative. These are not genitive attestations. A genitive construal is possible in *Guthlac B* 1068, [him ræste nēod]{.ex} ‘he needed rest’, without using that less secure cell as the selected comparison [@BosworthToller1898, s.v. *ræst*; @ClarkHall1960, p. 239].
 
 ### Development to Old English
 
-Once final `*z` is lost, the selected input moves through the front-vocalic
-oblique side of the paradigm rather than the back-vocalic nominative side. In
-the modeled derivation, the surviving final long vowel is first exposed,
-unrounded, fronted, shortened, and then reduced to the final `-e` of `ræste` 'rest'.
+The accusative long nasal ending does not undergo final short nasal apocope or the raising of final oral long *ō*. Its front-vocalic ending in the English derivation preserves root fronting and becomes *-e*, giving [`ræste`]{.iv lang=oe sort=raeste role=target_form} ‘rest’. The reconstructed dative takes a different route, Proto-Germanic \emph{*-ōi} to West Germanic \emph{*-ē}; the model yields *ræste* from the later input but does not admit the Proto-Germanic form. Genitive [rástōz]{.recon} ‘of rest’ remains a separate comparison: earlier *z*-loss in the experimental cascades exposes the oral ending to raising; that interaction does not occur in the accusative [@RingeTaylor2014, pp. 61, 299–300].
 
-The key point is the paradigm split. Nominative [rastō]{.recon} ‘rest’ yields a regular `rast` 'rest',
-whereas the selected oblique input yields `ræste` 'rest'. The later citation form `ræst` 'rest'
-is best explained as leveling from that oblique `ræst-` stem.
-
-### Paradigm comparison
-
-The comparison below is manual. It distinguishes the nominative citation form
-from the oblique singular chosen here.
-
-| PGmc cell / interpretation | Candidate input | OE output or comparison | OE comparison form | Result |
-| :--- | :--- | :--- | :--- | :--- |
-| citation nominative singular | [`*rastō`]{.iv lang=pgmc sort=rasto role=source_protoform} | expected regular outcome `rast` | [`ræst`]{.iv lang=oe sort=raest role=comparison_form} 'rest' | useful background, but not the cell that matches attested oblique `ræste` |
-| selected oblique singular | [`*rástōz`]{.iv lang=pgmc sort=rastoz role=selected_input} | compact-trace output: [`ræste`]{.iv lang=oe sort=raeste role=regular_output} 'rest' | [`ræste`]{.iv lang=oe sort=raeste role=target_form} 'rest' | exact match between selected input and attested OE oblique form |
+The citation nominative [rastō]{.recon} ‘rest’ gives reconstructed \emph{*rast} in the cascade. The attested *ræst* can be explained by extension of the independently attested front-vocalic oblique stem into the nominative. This is a hypothesis about the lemma’s paradigm, not an analogy required to derive the selected accusative. The `late_analogy` classification records why the inherited nominative is not the selected route to the attested stem.
