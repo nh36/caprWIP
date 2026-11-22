@@ -61,9 +61,8 @@ form. The source is useful for methodology and controls.
 The complete revised Stiles paper is native-text searchable and has 38 PDF
 sheets. The 1995 printed chapter is pp. 177--220 in the containing
 *Friesische Studien II* volume. A complete and a merged companion scan are
-preserved. The exact 1995 chapter text was not yet OCRed or mapped from the
-volume scan; the 2018 revised text is not treated as a substitute for the
-original print pagination.
+preserved. The 2018 revised text is not treated as a substitute for the
+1995 print pagination.
 
 The original 1995 chapter is now OCRed and locally searchable in
 `docs/references/local/stiles/stiles_1995_pp177-220.txt`. The OCR is

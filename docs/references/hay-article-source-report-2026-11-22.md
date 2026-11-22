@@ -62,8 +62,8 @@ metadata was reconciled in `docs/refs.bib` and the hay inventory TSV.
 | Minkova 2014 | Newly ingested | Locate hay/way, vowel length and glide vocalization passages |
 | Mokrowiecki 2015 | Newly ingested | Visually verify orthographic quantity marks |
 | Versloot 2025 | Located and preserved; acquisition variant retained | Assess the hay chronology against this account |
-| Goering 2025 | Missing | Acquire DOI 10.1017/S1360674325000164 |
-| Ritt 2000 | Missing from searched roots | Acquire the Lindisfarne Gospel accent study |
+| Goering 2025 | Acquired, extracted and partly page-verified | No reacquisition required |
+| Ritt 2000 | ILL requested; awaiting delivery | Wait for ILL |
 
 ## Priority 2 and existing holdings
 
@@ -72,8 +72,9 @@ metadata was reconciled in `docs/refs.bib` and the hay inventory TSV.
 - Hollifield 1980 has both parts privately held with per-sheet OCR.
 - Hogg/Fulk 2011 morphology, Boutkan 1995, and the Anglo-Frisian comparative
   holdings are already registered.
-- Stiles 1995 is now closed as an acquisition gap. The complete text is not
-  verified; source pages remain the authority.
+- Stiles 1995 is held and its original chapter pp. 177--220 is OCRed.
+  Representative pp. 177, 191 and 220 are image-verified; specialist whole-
+  chapter verification is not claimed.
 - Bennett 1968 is held in the Sehrt festschrift.
 - Dal 1934 is ILL requested and awaiting delivery.
 - *Approaches to Old Frisian Philology* 1998 remains incomplete as an edition,
@@ -94,10 +95,9 @@ the extent stated above.
 
 ## Outstanding ranked acquisitions
 
-1. Goering 2025 DOI 10.1017/S1360674325000164
-2. Ritt 2000 Lindisfarne Gospel accent marks
-3. Bennett 1968 Gothic ga- accentuation
-4. Dal 1934 in the nominal-levelling gap
+1. Ritt 2000 Lindisfarne Gospel accent marks — ILL requested
+2. Dal 1934 nominal-inflexion study — ILL requested
+3. Complete missing tail/printed page set for the 1998 Old Frisian volume
 5. Complete missing tail/printed page set for the 1998 Old Frisian volume,
    where needed beyond the complete Fulk chapter
 

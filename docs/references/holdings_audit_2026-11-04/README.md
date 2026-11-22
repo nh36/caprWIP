@@ -11,7 +11,9 @@ audit; current `inventory.json` also includes the two explicitly supplied
 Desktop files and their new holdings. The original snapshot remains in commit
 `cf77a36b`. Bennett1968, Stiles1995 and Hock1973 remain requested in the
 historical snapshot. Later holdings work superseded Hock1973 and Stiles1995;
-Bennett1968 remains outstanding.
+Bennett1968 also has since been located within the Sehrt festschrift in
+November 2026. These statements describe their 4 November snapshot, not the
+22 November current status.
 
 ## Result and scope
 

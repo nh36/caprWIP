@@ -1,0 +1,10 @@
+scan_key	pdf_sheet_printed_or_range	available_printed_pages	status	sha256	bennett_locator	notes
+SehrtMerged	1-32	1-32	complete	05229ea6638753928384c6471ce269628e6e35cc15fc04f061238fbbeed898e6	none	Sheet/printed relationship retained as supplied; no reorder or page completion
+SehrtMerged	-	33-34	missing	05229ea6638753928384c6471ce269628e6e35cc15fc04f061238fbbeed898e6	none	Explicitly unavailable
+SehrtMerged	-	35-254	available	05229ea6638753928384c6471ce269628e6e35cc15fc04f061238fbbeed898e6	64-71 for 53-60	Available supplied range
+SehrtMerged	-	255	missing	05229ea6638753928384c6471ce269628e6e35cc15fc04f061238fbbeed898e6	none	Explicitly unavailable
+SehrtMerged	-	256-end	available	05229ea6638753928384c6471ce269628e6e35cc15fc04f061238fbbeed898e6	none	Exact printed end depends on supplied pagination
+SehrtColor	-	33-34	missing	0df87b8706075b05493228f493026632e750b0d548f215bb6b973e6f8b56205f	none	Alternate reassembled color scan
+SehrtColor	-	255	missing	0df87b8706075b05493228f493026632e750b0d548f215bb6b973e6f8b56205f	none	Alternate reassembled color scan
+SehrtCompact	-	33-34	missing	0ec419bfd73c55b350f90474187dbb7cd26e09e878d2a813090e08dc800401df	none	Alternate reassembled compact scan
+SehrtCompact	-	255	missing	0ec419bfd73c55b350f90474187dbb7cd26e09e878d2a813090e08dc800401df	none	Alternate reassembled compact scan
