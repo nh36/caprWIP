@@ -1,10 +1,25 @@
 \appendix
 
-# Testing the Chronologies of Final Low-Vowel Loss {#sc047-technical-appendix}
+# CAPR Models A and B2: Technical Appendix {#sc047-technical-appendix}
 
-## Scope and reproduction
+## Active model outputs
 
-The two configurations are **SC047-A-early-v1** and **SC047-B-split-v1**. They share reconstructed inputs and differ in the order of nasal loss, vocalization of the resulting stranded glide, and gemination. The identity arm is the canonical cascade, not a third historical hypothesis. Both proposed chronologies lose oral \emph{*a} before gemination; the identity arm does not. There is no analogical operation in any arm.
+The standalone research volumes contain each model's lexical selections,
+complete cascade order, paradigm register and unmatched forms. Their
+companion derivation reports keep the frozen inputs separate from selected
+attested forms. The catalogue in this comparative preview is the
+canonical reference, not either model's selected catalogue.
+
+## Archived matched comparison: scope and reproduction
+
+The original configurations were **SC047-A-early-v1** and
+**SC047-B-split-v1**. Neither archived snapshot has been revised in
+place. The initial B has been retired from the active implementation.
+The original arms shared reconstructed inputs and differed in the order
+of nasal loss, vocalization of the resulting stranded glide, and gemination.
+The identity arm was the canonical cascade, not a historical alternative.
+Both proposed chronologies lose oral \emph{*a} before gemination; the
+identity arm does not. There is no analogical operation in any arm.
 
 The executable source revision is `60d6e3f0f3631fbdb63588830650b57a413af1e3`. The accompanying research supplement, *SC047: matched historical models*, specifies the container command and input manifest. Its `observations.json.gz` preserves the exact input digests, the complete orders, every selected endpoint and all checkpoints following the common prefix for the probes and traced controls; `matched-cells.tsv` and `changed-outputs.tsv` are tabular views. The comparison uses the frozen 394-row corpus, not a separately optimized corpus for each chronology. Five of the 52 unscored inputs, including the conditional nominative and dative of *hyse*, are rejected by the shared input gate; they supply no negative phonological evidence.
 
@@ -20,7 +35,7 @@ In both arms the common prefix includes the inherited input checks, early conson
 
 The ordinary syllabic-glide treatment follows this block. A shared expansion of endingless \emph{*aw} treatment recovers newly exposed final \emph{*aw} without changing the historical hypothesis being compared. Later loss of newly exposed final \emph{*z} precedes rhotacism. For ‘deer’, direct \emph{*déuzą} gives reconstructed \emph{*dēo}, whereas the selected genitive plural \emph{*déuzô} protects internal \emph{*z}, giving *dēora* ‘of deer’, attested in Ohthere’s account, *Orosius* I.1 §15 [@Bosworth1859, p. 20, lines 25–27]. The direct singular is not scored. The same labial rules, fronting, mutation, high-vowel loss and final consonant simplification follow both trial blocks.
 
-Immediate vocalization removes \emph{*j} from a newly endingless doubled labial before rules that otherwise consume the doubled cluster. Variant B2 uses the archived geminate-only nuclearizer: it leaves \emph{*wwj} available to those rules, but still vocalizes singleton \emph{*Vwj} and stranded nonlabial glides. The retained \emph{*j} marks conditioning; the assay does not decide whether it was a separate segment or a property of the labial. Other tests separately delay vocalization of singleton \emph{*wj}, contract short stressed and unstressed \emph{*ii}, or narrow a singleton-\emph{*aw} diphthong proxy. None changes either principal model.
+Immediate vocalization removes \emph{*j} from a newly endingless doubled labial before rules that otherwise consume the doubled cluster. The B2 prototype uses the geminate-only nuclearizer: it leaves \emph{*wwj} available to those rules, but still vocalizes singleton \emph{*Vwj} and stranded nonlabial glides. The retained \emph{*j} marks conditioning; the assay does not decide whether it was a separate segment or a property of the labial. Other tests separately delay vocalization of singleton \emph{*wj}, contract short stressed and unstressed \emph{*ii}, or narrow a singleton-\emph{*aw} diphthong proxy. Those tests did not alter the archived A or B snapshots.
 
 ## Matched derivations and witness status
 
