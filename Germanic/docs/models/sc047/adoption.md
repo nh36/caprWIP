@@ -51,6 +51,46 @@ There is no default choice of A or B2 for existing runtime consumers.
 
 The model acceptance assertions reuse a capture instead of adding a
 Foma call or live corpus sweep to pytest. The explicit active run
-adds one selected-row lookup batch per stage, deduplicated with the
-same diagnostics and controls; it does not increase the model
-orders or compiled component count.
+adds the selected inputs to the existing lookup batch at each stage,
+deduplicated with diagnostics and controls. The number of compiled
+components and calls is unchanged.
+
+## Measured model results
+
+| Comparison | A | B2 |
+|---|---:|---:|
+| Immutable research inputs | 382/394 | 385/394 |
+| Six common selected forms | 6/6 | 6/6 |
+| Active catalogue (hay included) | 387/396 | 388/396 |
+| Newly admitted bed and kin | 2/2 | 2/2 |
+
+The [full capture](captures/sc047-adoption-v1.json.gz) has 97
+registered paradigm traces and 13 supplementary probes per model.
+Their full results are identical to the supplemental research
+capture; unscored forms have no match denominator. The original
+frozen outputs are unchanged, including earlier comparisons for
+hedge (both models *heġe*) and A net (*nete*), A hue (*hī*) and
+A hay (*hei*). The only changed active selections relative to
+the frozen research inputs are 2069, 2138, 2152 and 2332; the two
+new rows are 2340 and 2341. See the migration table for the
+additional deer transition relative to `update`.
+
+| Identity | Active output → target | Scope |
+|---|---|---|
+| 1973 buck | *bocc → bucc* | Shared lowering |
+| 2013 fire | *fȳr → fȳre* | Proposed inflected vowel transfer |
+| 2030 fowl | *fogol → fugol* | Shared lowering |
+| 2061 hay | *hei → hīeġ* | A only; unverified protected target |
+| 2162 rust | *rost → rust* | Shared lowering |
+| 2224 straw | *strēa → strēaw* | Proposed glide restoration |
+| 2240 tap | *tappa → tæppa* | Proposed n-stem levelling |
+| 2298 wolf | *wolf → wulf* | Shared lowering |
+| 2300 wool | *woll → wull* | Shared lowering |
+
+Re-execute with the command in [results](results.md#lexical-expansion-capture)
+and add `--active`. Raw run SHA-256:
+`e7dd900f8ea01e10d2d5a5d4cf03541868926754ca0f5a6939928af525badbb1`.
+Corpus SHA-256:
+`29f11c10e7cf8756c2708334fbd6947a4629ddcb9e69ac28bfbf9a920c5f9cf7`.
+Full executable-input hashes are embedded in the capture. The
+model capture alone is not an exact-commit strict certificate.
