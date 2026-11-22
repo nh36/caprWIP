@@ -62,6 +62,9 @@ wool	2300	gen.sg.trimoric	wúllôz			Alternative quantity control
 wool	2300	dat.sg	wúllōi			Reconstructed dative
 wool	2300	nom.pl	wúllôz			Reconstructed plural control; no OE token claimed
 wool	2300	acc.pl	wúllōz			Reconstructed plural control; no OE token claimed
+wool	2300	gen.pl	wúllô			Reconstructed plural control; no OE token claimed
+wool	2300	dat.pl	wúllōmaz			Reconstructed plural control; no OE token claimed
+wool	2300	inst.pl	wúllōmiz			Reconstructed plural control; no OE token claimed
 love		nom.sg	lúbō	lufu		ō-stem comparison, not a scored input
 love		acc.sg	lúbǭ			Reconstructed accusative probe
 love		gen.sg.bimoric	lúbōz			Reconstructed quantity control
@@ -69,6 +72,9 @@ love		gen.sg.trimoric	lúbôz			Alternative quantity control
 love		dat.sg	lúbōi			Reconstructed dative
 love		nom.pl	lúbôz			Reconstructed plural control; no OE token claimed
 love		acc.pl	lúbōz			Reconstructed plural control; no OE token claimed
+love		gen.pl	lúbô			Reconstructed plural control; no OE token claimed
+love		dat.pl	lúbōmaz			Reconstructed plural control; no OE token claimed
+love		inst.pl	lúbōmiz			Reconstructed plural control; no OE token claimed
 door	1992	direct	dórą	dor		Lowering/early loss control (selected corpus input is separately traced)
 glee		direct	glíwją			Unscored geminate-only conditioning control
 glee		gen.sg	glíwjas			Protected form; Ringe–Taylor p. 250
