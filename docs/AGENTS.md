@@ -27,3 +27,10 @@ Follow `.github/copilot-instructions.md` and the user's instruction.
 Anything that runs `foma`/`flookup` runs inside the backend container
 (`docker compose exec -T backend ...`); for adjudication work this is
 already encapsulated by `--evidence`.
+
+For any Germanic task involving scholarly sources, first consult
+`docs/references/catalogue.tsv`, then `Germanic/docs/REFERENCES.md` and the
+linked intake records. Do not search the internet or report a source
+unavailable until checking its catalogue aliases and the current checkout.
+Private files under the Git-ignored `docs/references/local/` are
+worktree-specific and are not guaranteed to be present in another worktree.

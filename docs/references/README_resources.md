@@ -1,6 +1,10 @@
 # OCRed reference resources (quick index)
 
-This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
+This file lists OCRed reference texts in `docs/references/` with quick hints
+for searching. For cross-project source discovery, begin with the
+[central reference catalogue](catalogue.tsv) and its
+[schema and availability notes](README_catalogue.md); acquisition-specific
+manifests remain linked from catalogue records.
 
 ## Old English verse and glosses acquisition, 23 November 2026
 
@@ -35,9 +39,10 @@ of every passage. Bibliographic identity belongs to `docs/refs.bib`.
 ## Local-library consolidation, 9 November 2026
 
 `docs/references/` remains the canonical provisioned library. Bibliographic
-identity belongs to `docs/refs.bib`; the existing intake manifests, page maps,
-source reviews and consultation records retain their separate responsibilities.
-No new resolver or parallel source manager was introduced.
+identity belongs to `docs/refs.bib`; `catalogue.tsv` is the project-wide
+discovery index, while existing intake manifests, page maps, source reviews
+and consultation records retain their separate responsibilities. The
+catalogue is not a second bibliography or an automatic resolver.
 
 Retiring ten completed linked worktrees removed 1039 repeated holding paths.
 Each matched both the canonical relative path and SHA256 and a separately
