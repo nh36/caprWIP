@@ -6,13 +6,18 @@ GENERATED (never hand-edited), or ARCHIVE (historical; never authoritative).
 | Task | Start here |
 | --- | --- |
 | Sound-change adjudication | [CURRENT_STATE.md](CURRENT_STATE.md), then the required research protocol |
-| Lexical investigation and source verification | [Survey README](lexeme_reports/pgmc_reconstructions/README.md) |
+| Lexical investigation and source verification | [Central reference catalogue](../../docs/references/catalogue.tsv), then [Survey README](lexeme_reports/pgmc_reconstructions/README.md) |
 | Lexical publication and selection | [Report schema](lexeme_reports/report_schema.md) and [editorial integration](lexeme_reports/pgmc_integration/README.md) |
 | Manuscript and PDF production | [Assembly README](assembly/README.md) |
 | CI failure diagnosis | [Validation capabilities](../../docs/CI_VALIDATION.md) |
 | Current-state versus historical reproduction | [Historical replay](../../docs/HISTORICAL_REPLAY.md) |
 | Shared application, holding and recovery navigation | [Shared documentation](../../docs/README.md) |
 | Superseded lexical research/process | [Lexical archive](lexeme_reports/archive/README.md) |
+
+For any Germanic research using external scholarship or editions, check the
+central catalogue and the linked source manifests before web searching or
+declaring a source unavailable. Its private-file status reflects the checkout
+where recorded; ignored files may not exist in another worktree.
 
 ## Routine operations (the paved road)
 

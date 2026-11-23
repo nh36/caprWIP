@@ -1,7 +1,13 @@
 # References Index
 
-This repo keeps key linguistic references in `docs/references/`. Check these
-first before searching elsewhere.
+Before searching the internet or reporting a work unavailable, consult the
+[project-wide reference catalogue](../../docs/references/catalogue.tsv) and
+then this index and the linked acquisition manifests. Catalogue availability
+is specific to the checkout in which it was recorded: private, Git-ignored
+files may be absent from another worktree, so verify paths locally rather than
+treating a missing private copy as a global acquisition failure.
+
+This repo keeps key linguistic references in `docs/references/`.
 
 The [Desktop intake](../../docs/references/desktop_2026-11-04/README.md)
 adds complete local Seiler2019 and Fulk1998 chapter holdings, checked sheet/folio
