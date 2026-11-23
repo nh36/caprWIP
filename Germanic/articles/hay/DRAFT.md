@@ -259,8 +259,18 @@ Psalter the word appears as *heg* throughout — at least eleven tokens
 128.6, 146.8, with a further token in the Vespasian Hymns), always
 glossing Latin *faenum*, always without an overt ending [@Dahl1938, hay
 section]. Two Kentish charters supply the earliest dated tokens, both as
-compound first elements: *heiweg* 'hay-road' (A.D. 839) — the earliest
-⟨hei⟩ spelling — and *Hegforde* (A.D. 858). The Old English Bede has
+compound first elements: *heiweg* 'hay-road' (A.D. 859) — the earliest
+⟨hei⟩ spelling, in the contemporary Christ Church single sheet S 1196
+(BL Cotton Augustus ii.16; Sweet's *Oldest English Texts* Ct. 43 prints
+*cyniges hei weg*; Dahl's date "839" is a slip, since he dates the same
+charter 859 when citing *Scufelingforde* from its next phrase
+[@Dahl1938; @Sweet1885, p. 450]) — and *Hegforde* (A.D. 858). The
+same scribal milieu writes *dæġ* as *dei* (Sweet's Ct. 39 of 831 and
+Ct. 42 of 837) and the witness-name *Deimund* (= Dægmund) in S 1196
+itself, beside *deg*, *dege* elsewhere: ninth-century Kentish ⟨ei⟩ and
+⟨eg⟩ interchange freely over a certified short vowel plus /j/, so the
+⟨ei⟩ of *heiweg* carries no information about quantity. The Old English
+Bede has
 accusative *heg* in *on sumera heg ne māweþ* [@Miller1890, I p. 28].
 The late West Saxon Lambeth Psalter writes *hyg*, *hig* [@Dahl1938;
 Lindelöf's edition]. In Gregory's *Dialogues* the eleventh-century
@@ -268,8 +278,11 @@ Corpus manuscript (C) writes *heig* and *hig* where Cotton Otho (O) has
 *heg* and Hatton 76 (H) substitutes *gærs* 'grass' [@Hecht1900, pp.
 36–37]. Ælfric's Colloquy has *mid hig*, dative syntax with no overt
 ending. The glossaries give *Foenum, heg* (Cleopatra A.iii), *hig oððe
-gærs* (Julius A.ii), and — in a fragmentary vocabulary of about 1150 —
-*Fenum, hei, uel græs* [@WrightWuelcker1884, I.289.45, I.325.21, I.547].
+gærs* (Julius A.ii), and — in the "Semi-Saxon Vocabulary" copied into
+Worcester Cathedral F.174 by the Tremulous Hand of Worcester
+(s. xiii; Wright–Wülcker's "c. 1150" is superseded by the
+identification of the hand) — *Fenum, hei, uel græs*
+[@WrightWuelcker1884, I.289.45, I.325.21, I.547].
 In the West Saxon gospels at Mark 6.39 Corpus 140 has *hig*, with later
 *haig* (Hatton 38) and *heig* (Royal); the Lindisfarne gloss there has
 *gers* and Rushworth *heggetgrese* [@Skeat1871, Mark 6:39].
@@ -390,14 +403,25 @@ mixed ⟨heg(e)⟩ ~ ⟨hig⟩ fits the Saxonized-Anglian character of its
 transmission [@Fulk1992Meter, pp. 410–414]. The late
 ⟨ei⟩/⟨ai⟩ spellings belong to the Middle English diphthongal
 developments discussed by Jones, and the Lindisfarne ⟨heig⟩ ~ ⟨heg⟩
-variation is his earliest instance of them. The single ⟨hei⟩ of c. 1150
-postdates the Old English quantity system. Farman's ⟨oe⟩ is best read
-as an inverted spelling of /eː/: Kuhn's study of his orthography shows
-the unrounding of /ø(ː)/ complete in his dialect, with inverted
-spellings of the ⟨oele⟩ type for *ele*, while the \*au+i class at large
-is written with plain ⟨e⟩ throughout his gloss [@Kuhn1945]; a rounded
-vowel confined to this one word has nothing to recommend it. Nothing in
-the distribution requires —
+variation is his earliest instance of them. The single independent-noun
+⟨hei⟩ (Worcester F.174, s. xiii) not only postdates the Old English
+quantity system but is demonstrably discontinuous with it: the
+vocabulary abridges an eleventh-century glossary whose parallel entry
+reads *Foenum, hig, oðde gærs* [@WrightWuelcker1884, no. X], and the
+same thirteenth-century copy writes *Uia, wei* and *weibreode* for
+certified-short *weġ* — its ⟨hei⟩ is an Early Middle English
+⟨ei⟩-respelling of exemplar ⟨hig⟩, not a transmitted Old English
+spelling. Farman's ⟨oe⟩ is a fact about vowel quality and spelling
+convention, not length: Kuhn's study of his orthography shows the
+unrounding of /ø(ː)/ complete in his dialect, with retained or inverted
+rounded spellings of the ⟨oele⟩ type for *ele* — a word with umlaut of
+*short* o [@Kuhn1945, p. 646] — while the \*au+i class at large is
+written with plain ⟨e⟩ throughout his gloss. His ⟨oe⟩ attaches both to
+etymological œ̄ (boéc, foérde, gemoéted) and, as an inverted spelling,
+to ē of other origins, most pertinently the *hēran* < \*hauzjan class
+(gehóerde, gehóerað) — the exact structural parallel of *hēġ* <
+\*hauj-; a rounded vowel confined to 'hay' has nothing to recommend it.
+Nothing in the distribution requires —
 though nothing excludes — an ungeminated relic in the Anglian/Kentish
 ⟨heg⟩/⟨hei-⟩ forms (Section 5).
 
@@ -430,13 +454,28 @@ calibration of two late Old English manuscripts found acutes marking
 etymologically long vowels in roughly nine cases in ten, but
 manuscript-specifically [@Mokrowiecki2015], and Jones reads the
 Lindisfarne acute of ⟨wég⟩ 'way' as marking mere duration [@Jones1989,
-p. 55]. A collation of Farman's accented types across his Matthew gloss
-(from Tamoto's edition) yields the same shape as Mokrowiecki's: the
-acute falls predominantly on etymologically long stressed nuclei, with
-sporadic application and a residue of secure short-vowel exceptions
-(*wég* Mt 7:14, *stéfn* Mt 2:18, *mónige* Mt 16:9). Farman's acute on
+p. 55]. A full census of Farman's accented tokens across his stint
+(Matthew and Mark 1:1–2:15, from Tamoto's edition; the calibration
+table is maintained with this article) yields the same shape as
+Mokrowiecki's: of 194 Old English accented types (327 tokens), 160 have
+etymologically long nuclei, a further 14 are short vowels standing
+before the homorganic clusters ⟨ld, nd, rd, ng⟩ (*áld*, *hónd*, *lónd*,
+*wórd*, *góld*, *gángan* …) — nuclei plausibly already lengthened in
+Farman's late tenth-century Mercian — and only 13 are genuinely short
+(*wég* Mt 7:14, *stéfn* Mt 2:18, *mónige* Mt 16:9, *ége*, *físcæs*,
+*scípa*, *wítga*, *wýrhtu*, *ascákeþ*, with anomalous accents on *ón*,
+*ínn*, *únklene*, *ǽfter*), seven remaining uncertain: roughly nine
+classifiable types in ten are long, with sporadic application
+throughout. Two further observations sharpen the inference for this
+word. First, no short-vowel exception is ever written with ⟨oe⟩,
+whereas *hóeg* combines the acute with the digraph that Farman
+otherwise applies to his ē/œ̄ class (Section 3.3). Second, both *hóeg*
+tokens are accented while most long vowels are not — but two tokens of
+one word, from one scribe, a century and more after the earliest
+charter spellings, remain two tokens. Farman's acute on
 *hóeg* is accordingly probabilistic evidence for a long nucleus — real
-evidence, for the first time non-editorial, but defeasible, and (as
+evidence, for the first time non-editorial, but defeasible, confined to
+his own date and dialect, and (as
 Section 5 shows) incapable of discriminating among the surviving
 derivations, all of which predict length. Ritt's study of the
 neighbouring Lindisfarne practice has been ordered but not yet
@@ -452,7 +491,10 @@ not reached, turns out to supply tokens but no test. The monosyllabic
 direct forms (*heg*, *hig*) stand in lifts, where a closed monosyllable
 is metrically heavy whether its vowel is long or short; the disyllabic
 datives could in principle engage resolution, but they occur only in
-the metrical Paris Psalter, whose verse Fulk has shown to be too late,
+the metrical Paris Psalter — and there the two simile verses (*ic eom
+hege gelic*, 101.4; *and ic hege gelic*, 101.9) scan as type B whether
+*hege* is a resolved short lift or a long lift with *-ge* in the dip —
+whose verse Fulk has shown to be too late,
 too formulaic and too irregular to sustain quantitative inference —
 its metrical deviations are products of transmission and incompetence
 rather than phonology [@Fulk1992Meter, pp. 410–414; cf. @Toswell1990,
@@ -491,10 +533,23 @@ gemination [@RingeTaylor2014, pp. 44–47], the direct singular \*hawją >
 Campbell's "undisturbed" development [@Campbell1959, §579(4)] — and,
 with regular loss of \*w before unstressed \*i, something like \*hei.
 The outcome is a short-vowelled form with no final consonant, spelled
-⟨hei⟩ or ⟨heg⟩ at best. This matches the Anglian and Kentish spellings
-superficially, but it cannot produce the West Saxon ⟨ie/i/y⟩ vocalism
-at any stage, and it predicts a West Saxon e-vocalism that is not
-attested. As a derivation of the attested lexeme it fails.
+⟨hei⟩ or ⟨heg⟩ at best. Two points about this output must be kept
+apart. First, it would be **orthographically invisible**: ninth-century
+Kentish ⟨ei⟩ ~ ⟨eg⟩ interchange over short /e/ + /j/ (*dei* ~ *deg* for
+*dæġ*, Section 3.1), and no Old English spelling marks quantity, so the
+Anglian/Kentish ⟨heg⟩/⟨hei-⟩ tokens can neither confirm nor exclude an
+ungeminated relic — the earliest ⟨hei⟩, in *heiweg* of S 1196 (859), is
+literally the string A0 predicts, but every control shows the same
+digraph over certified short V+j, and the one later independent-noun
+⟨hei⟩ (F.174, s. xiii) is demonstrably a respelling of exemplar ⟨hig⟩
+(Section 3.3), i.e. continuous with the levelled/geminated form, not
+with A0. Second, and decisively for West Saxon: the derivation cannot
+produce the ⟨ie/i/y⟩ vocalism at any stage, and it predicts a West
+Saxon e-vocalism of which the record — against the *weġ* control,
+spelled ⟨weg⟩ 31 times and never ⟨wig/wyg⟩ in the same gospel
+manuscripts — shows no trace. As a derivation of the attested West
+Saxon lexeme it fails; as a possible unlevelled relic behind some
+Anglian/Kentish tokens it is unfalsifiable but undemonstrated.
 
 **A1: early apocope plus independently motivated later changes.** Two
 candidates were examined. Hogg's hiatus resolution [@HoggGrammar1992,
@@ -527,7 +582,17 @@ it is an extra, word-specific assumption, and its donor paradigm is
 attested in Old English only late: the Paris Psalter datives of
 Section 3.2 supply the protected oblique stem in the eleventh century,
 but nothing in the record dates the levelling itself to the pre-umlaut
-window the account requires.
+window the account requires. The continental cognates strengthen the
+typological case considerably: Middle Dutch shows **hoye** < \*hauj-
+(the oblique stem) beside **houwe** < \*hawi (the old nominative) as
+doublet reflexes of the very same paradigm split [@Boutkan1995,
+pp. 212–213], so 'hay' demonstrably levelled — in both directions —
+elsewhere in West Germanic. And for West Saxon the levelling is more
+than an assumption: granted early apocope, the attested īe/i/y
+vocalism *demonstrates* that the protected stem had replaced \*hǣwi in
+the direct cell before i-umlaut, since no regular chain reaches that
+vocalism from the inherited form (A1). What remains undated is the act,
+not the fact.
 
 **B2: late apocope.** If \*-ą survived gemination [@Dahl1938,
 pp. 81–86; @HoggFulk2011, §2.23; @Boutkan1995, pp. 209–213], the direct
@@ -660,7 +725,25 @@ attested record, the datives included; none can be eliminated by Old
 English evidence now identified. The Paris Psalter forms supply the
 oblique stem Ringe and Taylor's levelling requires, but five centuries
 too late to date the levelling, and so they shift no weight among the
-accounts. The honest
+accounts.
+
+The cycle-4 question — whether the early-apocope chronology's own
+regular output, serialized \*hei, survives in the record — admits three
+outcomes, and the evidence now locates the word among them precisely.
+That the inherited form explains all the spellings (outcome A) is
+excluded: the West Saxon ⟨ie/i/y⟩ tokens cannot continue it, by the
+manuscript-grounded controls of Section 5. That it explains the early
+non-West-Saxon spellings while West Saxon innovated (outcome B — a
+dialect-differentiated survival) is unfalsified but undemonstrated: the
+⟨heg⟩/⟨hei-⟩ graphs are compatible with it, but ninth-century ⟨ei⟩/⟨eg⟩
+spell /Vj/ regardless of quantity, so no non-West-Saxon spelling could
+ever reveal the relic even if it stood there; the alternative remains an
+open possibility, not a finding. What the record supports is outcome C
+for West Saxon: the inherited direct form, if early apocope created it,
+was replaced by the diphthongal stem before i-umlaut — so that under
+that chronology the West Saxon vocalism does not merely tolerate Ringe
+and Taylor's levelling but demonstrates it, while under late apocope
+the same forms are regular without it. The honest
 conclusion is that this word, so often cited in passing as if it bore
 on the gemination–apocope chronology, is a dependent of that debate and
 not a witness in it. What would change the verdict is identified,

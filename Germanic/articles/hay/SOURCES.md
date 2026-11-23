@@ -68,3 +68,28 @@ The full source inventory and TSV/JSON snapshots are under
   chapter.
 
 Ritt 2000 and Dal 1934 are ILL requested and awaiting delivery.
+
+## Cycle-4 consultations (24 November 2026)
+
+- **Sweet 1885, *Oldest English Texts*** (archive.org
+  `oldestenglishtex83sweeuoft`; the complete scan is also held locally at
+  `docs/references/sweet_1885_oldest_english_texts.pdf`): Ct. 43 =
+  S 1196 (p. 450, *cyniges hei weg*, dated 859) verified, with the ⟨ei⟩
+  controls *dei* (Ct. 39, 42) and *Deimund* (Ct. 43 witness list) and
+  *deg/dege* (Ct. 41, 45).
+- **Electronic Sawyer, S 1196**: date 859, contemporary Christ Church
+  single sheet (BL Cotton Augustus ii.16); authenticity acceptances
+  (Drögereit; Campbell 1938: 146–7; Kuhn 1943: 470) as reported there.
+- **Wright–Wülcker I** (already held): no. XIII "Semi-Saxon Vocabulary"
+  col. 547 *Fenum, hei, uel græs*; its exemplar entry in no. X *Foenum,
+  hig, oðde gærs*; F.174 ⟨ei⟩ controls *Uia, wei*, *weibreode*.
+- **Skeat 1871 (Mark)**: WS-control sweep — *weg* ⟨weg(e)(s)⟩ 31×, never
+  ⟨wig/wyg/wieg⟩; Royal 1 A.xiv *hig* 'they' = hī, *hwig/hwyg* = hwī.
+- **Boutkan 1995, pp. 212–213** (local
+  `Boutkan1995.txt`): MDu *hoye* < \*hauj- vs *houwe* < \*hawi; OHG
+  *hewi* ~ *houwi* doublets; chronology discussion.
+- **Kuhn 1945, p. 646** (local `kuhn1945.txt`): *oele* = i-umlaut of
+  short Latin *o*; basis of the cycle-4 ⟨oe⟩ reassessment.
+- **Tamoto 2013** (local `tamoto2013.txt`): full accent census of
+  Farman's stint (Mt 1:1–Mk 2:15), committed as `FARMAN_ACCENTS.tsv`
+  with generator `extract_farman_accents.py`.

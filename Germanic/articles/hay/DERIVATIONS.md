@@ -50,9 +50,26 @@ OldEnglishOrthography          hei
 - **Where it fails**: WS ⟨hieg/hig/hyg⟩ requires īe < \*ēa+umlaut, which
   this derivation never creates in the direct cell; it also predicts
   persistent e-vocalism in WS, against the record. Compatible only with
-  Anglian ⟨heg⟩, Kentish ⟨hei-⟩, and the c. 1150 ⟨hei⟩, all of which are
-  equally derivable from the geminate stem.
+  Anglian ⟨heg⟩ and Kentish ⟨hei-⟩, which are equally derivable from the
+  geminate stem.
 - Falsifier (satisfied): any WS direct token with ie/i/y vocalism.
+- **Cycle-4 manuscript grounding of both points** (RESEARCH_MEMO_CYCLE4.md):
+  (i) The compatibility claim is now anchored: S 1196 (A.D. 859, not
+  Dahl's misprinted "839"; contemporary Christ Church single sheet, BL
+  Cotton Augustus ii.16) carries *cyniges heiweg*, and the same scribal
+  milieu writes *dæġ* as **dei** (OET Ct. 39, 42) and **Deimund** in
+  S 1196 itself beside *deg/dege* — ninth-century Kentish ⟨ei⟩ ~ ⟨eg⟩
+  spell /Vj/ regardless of quantity, so A0's output would be
+  orthographically invisible beside levelled *hēġ*. (ii) The WS failure
+  is likewise manuscript-grounded: in Skeat's gospel witnesses *weġ*
+  (certified short e + /j/) is written ⟨weg(e)(s)⟩ 31× and never
+  ⟨wig/wyg/wieg⟩, while Royal 1 A.xiv's inorganic-⟨g⟩ convention (*hig*
+  'they' = hī, *hwig/hwyg* = hwī) attaches to /iː/ — so ⟨hig/hyg/hieg⟩
+  'hay' presupposes high front vocalism that /he(.)i~hej/ cannot supply.
+  (iii) The "c. 1150 ⟨hei⟩" (WW I.547) is withdrawn as even ambiguous
+  support: Worcester F.174 (Tremulous Hand, s. xiii) respells exemplar
+  ⟨hig⟩ (WW no. X *Foenum, hig, oðde gærs*) with the same ⟨ei⟩ it uses
+  in *Uia, wei* for short *weġ*.
 
 ## A1 — Early apocope + independently motivated further changes
 
@@ -128,7 +145,16 @@ rejected. This is a negative result, reported as such.
   remains unattested at any date.
 - Typological support: Hogg 1979's hyll/hyse evidence shows such mixed
   paradigms existed and levelled in both directions; Adamczyk 2018's
-  *mete/mette* alternations likewise.
+  *mete/mette* alternations likewise. **Cycle 4 adds the strongest
+  parallel, from this very word**: Middle Dutch **hoye** < \*hauj-
+  (oblique stem) beside **houwe** < \*hawi (old nominative stem)
+  (Boutkan 1995: 212–213, after van Loon 1986: 48 and Braune–Eggers), and
+  OHG *hewi* ~ *houwi* doublets — nominative and oblique stems of 'hay'
+  demonstrably yielded doublet reflexes and levelled in both directions
+  within West Germanic. Levelling is therefore possible, not obligatory;
+  but for WS the levelling is not merely assumed: **under early apocope
+  the WS īe-vocalism itself demonstrates that the protected stem stood in
+  the direct cell** (RESEARCH_MEMO_CYCLE4.md Prop. 3).
 - Predictions: after levelling, identical to B2 in every dialect and cell —
   **A2 and B2 are empirically indistinguishable for this word** except for
   the possibility of unlevelled relic spellings (heg/hei-?) which are

@@ -106,3 +106,31 @@ resolve it:
    evidence materially.
 
 These are substantive research questions, not metadata or ingestion failures.
+
+## Cycle-4 adjudications (24 Nov 2026)
+
+- ~~Whether Model A's regular output *hei* survives in the attested
+  record.~~ **Adjudicated** (RESEARCH_MEMO_CYCLE4.md): the spelling is
+  attested (S 1196 compound, 859; F.174 independent noun, s. xiii) but
+  not as an OE independent noun, and not demonstrably in continuity with
+  the early-apocope output — F.174's ⟨hei⟩ is positively excluded
+  (respelling of exemplar ⟨hig⟩). WS = Outcome C, manuscript-grounded;
+  a dialect-differentiated relic (Outcome B) remains **unfalsified but
+  undemonstrated and orthographically untestable** (ninth-century
+  ⟨ei⟩/⟨eg⟩ spell /Vj/ regardless of quantity: dei/deg controls).
+- ~~Date of the *heiweg* charter.~~ **Resolved:** S 1196, A.D. 859;
+  Dahl's "839" is a slip (he dates the same charter 859 at
+  *Scufelingforde*); contemporary single sheet, BL Cotton Augustus ii.16.
+- ~~Full calibration of Farman's accents.~~ **Done, committed**
+  (FARMAN_ACCENTS.tsv + extract_farman_accents.py): 194 OE types /
+  327 tokens; ~90% of classifiable types etymologically long (counting
+  homorganic-cluster shorts as lengthened); 13 genuine short
+  exceptions. Supersedes the cycle-3 "~90 types" estimate. Ritt 2000
+  remains open for Aldred's practice only.
+- ~~Interpretation of Farman's ⟨oe⟩ (refined).~~ **Revised cycle 4:**
+  ⟨oe⟩ is quality/convention evidence, not length (Kuhn 1945: 646 on
+  *oele* < short o); it groups *hóeg* with Farman's ē/œ̄ class
+  (gehóerde < \*hauzjan = structural parallel), while the acute alone
+  carries the quantity evidence. Supersedes the cycle-3 "inverted
+  spelling of /eː/" shorthand.
+- Remaining open: items 1–6 of the cycle-3 register above, unchanged.

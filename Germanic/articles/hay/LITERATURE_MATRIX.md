@@ -124,7 +124,9 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
 - **Corpus** (his early-OE material; extends the CAPR ledger): VP *heg*
   36/2, 71/16, 91/8, 101/5, 101/12, 102/15, 103/14 (acc.), 104/35, 105/20,
   128/6, 146/8; VH *heg* (acc.) 7/4; Kentish charters *Hegforde* (A.D. 858,
-  Ct 28/14) and *heiweg* 'hay-road' (A.D. 839, Ct 43/3) — the earliest
+  Ct 28/14) and *heiweg* 'hay-road' (Dahl prints "A.D. 839", a slip for
+  859 — he dates the same charter, S 1196 = Ct 43, to 859 when citing
+  *Scufelingforde*; cycle 4) — the earliest
   ⟨hei⟩ spelling. "Inflected forms are thus not to be found in my
   material." Late OE prevailing spelling *hig*; *hieg* "very rare". Also
   Ep/Erf/Cp ivy glosses (*ibaei*, *ifeg*, *ifegn*) referred to \*hauja- as
