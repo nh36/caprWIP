@@ -34,8 +34,8 @@ images, not manuscript facsimiles):
 
 | Verse | Latin | Lindisfarne gloss | Edition, page | Image checked |
 |---|---|---|---|---|
-| Mt 6:30 | faenum | **gers ɫ heg** | @KembleHardwick1858, p. 55 | yes |
-| Mt 14:19 | super fœnum | ofer **hehg ɫ gers** | @KembleHardwick1858, p. 117 | yes |
+| Mt 6:30 | faenum | **gers ɫ heg** | @KembleHardwick1858, p. 55; @Skeat1887, p. 59 | yes (both) |
+| Mt 14:19 | super fœnum | ofer **hehg ɫ gers** (1858); ofer **heg\* ɫ gers**, apparatus "\*hehg, *alt. to* heg" (1887) | @KembleHardwick1858, p. 117; @Skeat1887, p. 123 | yes (both) |
 | Mk 6:39 | super uiride faenum | ofer groene **gers** | @Skeat1871, OCR text | OCR only |
 | Lk 12:28 | faenum quod hodie in agro est | ðæt **gærs** | @Skeat1874, pp. 130–131 | OCR only |
 | Jn 6:10 | faenum multum | **gærs ɫ heig** micil | @Skeat1878, p. 55 | yes |
@@ -44,8 +44,8 @@ The Rushworth glosses on the same verses supply further tokens:
 
 | Verse | Glossator | Form | Edition, page | Image checked |
 |---|---|---|---|---|
-| Mt 6:30 | Farman (Ru1, Mercian) | londes **hóeg** | @KembleHardwick1858, p. 55 | yes |
-| Mt 14:19 | Farman (Ru1, Mercian) | gesittan on **hóeg** | @KembleHardwick1858, p. 117 | yes |
+| Mt 6:30 | Farman (Ru1, Mercian) | londes **hóeg** | @KembleHardwick1858, p. 55; @Skeat1887, p. 59; @Tamoto2013, p. 19 | yes (all three) |
+| Mt 14:19 | Farman (Ru1, Mercian) | gesittan on **hóeg** | @KembleHardwick1858, p. 117; @Skeat1887, p. 123; @Tamoto2013, p. 47 | yes (all three) |
 | Jn 6:10 | Owun (Ru2, Northumbrian) | **heg** ɫ gers micel | @Skeat1878, p. 55 | yes |
 
 Findings of note:
@@ -54,29 +54,51 @@ Findings of note:
    *gers/gærs* 'grass'.** Cook's entry silently normalizes this away
    (he lists bare "heg Mt. 6,30" etc.). Aldred treats *faenum* as
    needing both renderings; at Mk 6:39 and Lk 12:28 he uses *gers* alone.
-2. **The Mt 14:19 spelling is ⟨hehg⟩** in the 1858 edition
-   (image-verified), not Cook's normalized ⟨heg⟩. Until the manuscript
-   facsimile can be checked, ⟨hehg⟩ should be cited as the edition's
-   reading with Cook's ⟨heg⟩ noted as a discrepancy. If genuine, ⟨hg⟩
-   joins the well-known Northumbrian redundant-⟨h⟩ spellings before
-   consonants and says nothing direct about quantity.
+2. **The Mt 14:19 discrepancy is resolved (cycle 3): the manuscript
+   wrote ⟨hehg⟩ and altered it to ⟨heg⟩.** Skeat's re-edition prints
+   *ofer heg\* ɫ gers* with the apparatus note "\*hehg, *alt. to* heg"
+   [@Skeat1887, p. 123, page image verified]. Kemble–Hardwick printed
+   the original spelling, Skeat (followed by Cook and the DOE) the
+   corrected one; both are genuine readings of the same gloss at
+   different moments of its production. ⟨hehg⟩ thus joins the
+   Northumbrian redundant-⟨h⟩ spellings before consonants as a scribal
+   first attempt, corrected in situ, and says nothing direct about
+   quantity.
 3. **Jones's alternation is real but cross-verse**: ⟨heig⟩ is the
    John 6:10 token, ⟨heg⟩ the Matthew ones. It is not a single-passage
    variation.
 4. **Farman writes ⟨hóeg⟩ twice, with an acute accent**, in both the
    nominative (Mt 6:30) and the accusative (Mt 14:19) context. Farman's
    Matthew gloss is independent of Lindisfarne, so this is a distinct
-   Mercian witness. Two caveats: (i) the accent is as printed in the
-   1858 edition; whether it reproduces a manuscript accent has not been
-   verified against a facsimile, and the edition's practice has not been
-   calibrated (cf. the methodological warnings in QUANTITY_EVIDENCE.md
-   §2); (ii) the digraph ⟨oe⟩ in Farman needs interpretation — it may
-   represent a rounded front vowel, or be one of Farman's known
-   idiosyncratic spellings of /eː/ — and is recorded here, not resolved.
+   Mercian witness. Cycle-3 status of the two caveats: (i) the acute is
+   printed by three editors working independently on the manuscript
+   (1858, 1887, 2013), which makes an editorial invention very unlikely;
+   direct manuscript confirmation remains impossible online, since
+   Digital Bodleian's Auct. D. 2. 19 digitization is a 49-folio
+   selection that omits both relevant pages. A calibration of Farman's
+   accent practice from Tamoto's edition (~90 accented types) shows the
+   acute correlates strongly but not exceptionlessly with etymological
+   length (secure short exceptions: *wég* Mt 7:14, *stéfn* Mt 2:18,
+   *mónige* Mt 16:9) — probabilistic support for a long nucleus in
+   *hóeg*, and nothing more. (ii) The ⟨oe⟩ digraph is best read as an
+   **inverted spelling of /eː/**: Kuhn [-@Kuhn1945] shows the unrounding
+   of /ø(ː)/ was complete in Farman's dialect, with inverted spellings
+   such as ⟨oele⟩ for *ele*, and Farman writes the \*au+i class with
+   plain ⟨e⟩ about 140 times (also ⟨gehoe-⟩ beside usual ⟨gehe-⟩ in
+   'hear'). ⟨oe⟩ is therefore a point about orthography and vowel
+   quality, not an independent rounded-vowel phonology for this word.
 5. **Owun's Jn 6:10 reverses the gloss order and the spelling**
-   (*heg ɫ gers* against Li *gærs ɫ heig*). Since Ru2 John generally
-   depends on Li, Owun's ⟨heg⟩ for Aldred's ⟨heig⟩ is a copyist's
-   respelling rather than a fully independent token.
+   (*heg ɫ gers* against Li *gærs ɫ heig*). Ru2's John is textually very
+   close to Li, but Kotake [-@Kotake2016, pp. 377–396] shows the premise
+   of direct copying from the Lindisfarne manuscript itself is not
+   established: the non-R–Y readings in Owun's portions may instead
+   point to a common source or to intervening copies (his Type 1/Type 2
+   distinction, pp. 381–382). For the phonology the consequence is
+   limited either way: whether Owun copied Li directly or a close
+   congener, his ⟨heg⟩ for ⟨heig⟩ is a respelling within one textual
+   tradition, not a fully independent lexical witness — though the
+   respelling itself is his own orthographic act and retains that much
+   dialectal value.
 
 ## 3. Lexical identity
 
@@ -97,20 +119,23 @@ overt ending: nominatives at Mt 6:30 ("londes hóeg þæt to dæge is",
 "gers ɫ heg") and Jn 6:10 ("gærs ɫ heig micil ... wæs"), accusatives
 after *ofer/on* at Mt 14:19. **The cycle-1 finding that no overtly
 inflected Old English token has been identified in the sources examined
-is unchanged.**
+was accurate for the gospel glosses and remains so; cycle 3 has since
+identified overt dative singulars elsewhere (Paris Psalter *hege* ×3 —
+see PARADIGM.md), so the claim no longer holds of the language as a
+whole.**
 
 ## 5. Quantity and accentuation
 
-- No accent is printed on any Lindisfarne or Ru2 token (Skeat 1878 and
-  the 1858 Matthew both print accents where their manuscripts have
-  them — cf. ⟨hóeg⟩ on the same pages — so the absence is meaningful at
-  the edition level, though manuscript confirmation is still wanting).
-- The two Ru1 ⟨hóeg⟩ tokens carry printed acutes. If manuscript-genuine
-  and if Farman's accents mark length (neither yet established), they
-  would be the first non-editorial accent evidence bearing on the
-  word's quantity — in a Mercian witness. This is recorded as a lead,
-  not a result; Ritt (2000), still awaiting ILL delivery, bears on the
-  neighbouring Lindisfarne practice, not on Farman's.
+- No accent is printed on any Lindisfarne or Ru2 token (the editions
+  print accents where their manuscripts have them — cf. ⟨hóeg⟩ on the
+  same pages — so the absence is meaningful at the edition level).
+- The two Ru1 ⟨hóeg⟩ tokens carry acutes in all three editions
+  (Kemble–Hardwick, Skeat 1887, Tamoto). With the cycle-3 calibration of
+  Farman's practice (finding 4 above and QUANTITY_EVIDENCE.md §2) they
+  are probabilistic evidence for a long nucleus in a Mercian witness —
+  evidence that does not discriminate among the surviving derivations,
+  all of which predict length. Ritt (2000), still awaiting ILL delivery,
+  bears on the neighbouring Lindisfarne practice, not on Farman's.
 - ⟨heig⟩ (Jn 6:10) remains orthographically ambiguous among /ej/,
   /eːj/, /eij/ and a diphthong, exactly as cycle 1 concluded for the
   late West Saxon ⟨heig⟩ spellings.
@@ -126,6 +151,9 @@ is unchanged.**
   Anglian *hēġ* (smoothing of the geminate-route stem) and equally with
   an ungeminated reflex; they do not decide the stem question, but they
   materially broaden the dialect distribution in §3.3 of the draft.
-- Verification used edition page images. Manuscript-facsimile
-  confirmation (Nero D.iv; Bodleian Auct. D.2.19) remains open, and is
-  the natural next step once Ritt (2000) arrives.
+- Verification rests on edition page images for the readings, plus the
+  Skeat 1887 apparatus for the ⟨hehg⟩→⟨heg⟩ alteration. Manuscript
+  images remain unexamined for these pages: Nero D.iv was not consulted
+  directly, and the Digital Bodleian digitization of Auct. D.2.19 omits
+  the two Rushworth hay pages, so the Farman acutes cannot at present be
+  checked against the manuscript online.

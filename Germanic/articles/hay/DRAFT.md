@@ -3,18 +3,20 @@ title: "The Old English word for 'hay': West Germanic gemination, vowel quantity
 bibliography: ["../../../docs/refs.bib", "article_refs.bib"]
 ---
 
-<!-- Draft status: Sections 1-3 drafted and revised for the cycle-2
-     evidence; Sections 4-7 drafted in cycle 2 from QUANTITY_EVIDENCE.md,
-     DERIVATIONS.md, DAHL_REASSESSMENT.md, LINDISFARNE_EVIDENCE.md and
-     COMPARATIVE_CONTROLS.md; Section 8 provisional conclusion drafted.
-     Research cycle 2, branch research/hay-article. -->
+<!-- Draft status: Sections 1-8 revised in cycle 3 against the enlarged
+     evidence (Paris Psalter datives manuscript-verified; verse tokens;
+     Farman accent calibration; hehg resolution; Kotake on Ru2). See
+     RESEARCH_MEMO_CYCLE3.md for the adjudications and withdrawn claims.
+     Research cycle 3, branch research/hay-article. -->
 
 # 1. Introduction
 
 The Old English word for 'hay' survives in the manuscripts as *heg*,
-*heig*, *hig*, *hyg*, in the Northumbrian gospel glosses also *hehg* and
-Mercian *hóeg*, and, in late copies, *haig*; the grammars normalize
-it as West Saxon *hīeġ*, non-West-Saxon *hēġ*. Behind these spellings lies
+*heig*, *hig*, *hyg*, in the Northumbrian gospel glosses also *hehg*
+(corrected by the glossator to *heg*) and Mercian *hóeg*, in the metrical
+Paris Psalter as dative *hege*, and, in late copies, *haig*; the grammars
+normalize it as West Saxon *hīeġ*, non-West-Saxon *hēġ*. Behind these
+spellings lies
 a Proto-Germanic neuter ja-stem \*hawją (cf. Gothic *hawi*, Old High
 German *hewi* beside *houwi*, Old Norse *hey*), a derivative of the verb
 'to hew': hay is 'that which is cut'. The word is short, concrete, well
@@ -42,7 +44,8 @@ The problem has usually been treated as settled in one direction or the
 other by general arguments about the noun classes concerned. This article
 re-examines it from the word itself: a source-critical collection of the
 actual Old English attestations and their grammatical cells, including
-the previously unlocated Northumbrian and Mercian gospel-gloss tokens; an
+the previously unlocated Northumbrian and Mercian gospel-gloss tokens
+and the overtly inflected datives of the metrical Paris Psalter; an
 assessment of what the spellings do and do not establish about vowel
 quantity and syllabification; an explicit, stage-by-stage comparison of
 the competing derivations, including Dahl's neglected proposal that the
@@ -123,10 +126,13 @@ and only the final consonant is borrowed: intervocalic \*j was lost after
 a long vowel or diphthong, and "[f]orms like nom. hieg ... had the final
 g from the inflected forms, as gen. hieges, dat. hiege" [@Wright1914,
 §270 Note; cf. §357]. Two things deserve emphasis. First, Wright's
-*hīeges* and *hīege* are paradigm illustrations: as Section 3 shows, no
-overtly inflected form of this noun is identified in the sources examined,
-a fact already registered by Dahl — "Inflected forms are
-thus not to be found in my material" [@Dahl1938, hay section]. Second,
+*hīeges* and *hīege* are paradigm illustrations, not citations; Dahl
+could still write of his early Old English corpus that "[i]nflected
+forms are thus not to be found in my material" [@Dahl1938, hay
+section], and his genitive remains unattested at any date, but the
+metrical Paris Psalter supplies three overt dative singulars *hege*
+(Section 3.2), so the inflected paradigm is now attested — in the
+eleventh century. Second,
 the three early-apocope authorities do not invoke analogy for the same
 thing. Ringe–Taylor and Campbell replace the entire inherited stem,
 vocalism and all; Wright borrows only a final consonant into a stem
@@ -204,7 +210,8 @@ fricative — a diphthongization of the early Middle English Breaking type
 [hej] → [heij] → [hei] [@Jones1989, pp. 149, 152]. Jones cites no verse,
 but the tokens can be identified: the Lindisfarne gloss writes *heig* at
 John 6:10 and *heg* at Matthew 6:30, each paired with *gærs*/*gers* in a
-double gloss over Latin *faenum*, with a third token, printed *hehg*, at
+double gloss over Latin *faenum*, with a third token, first written
+*hehg* and corrected to *heg* by the glossator, at
 Matthew 14:19 (Section 3.1; @Cook1894, s.v. *heg*). The alternation is
 thus genuine but distributed across verses, not a variation within one
 passage. His quantity
@@ -235,7 +242,8 @@ gemination operated? The second is lexical: by what route did the
 attested Old English forms acquire their vocalism and their final -ġ?
 Every published account except the plain geminate route borrows the
 final consonant, the vocalism, or both from the inflected forms — forms
-which, for this noun, are nowhere attested in Old English. The following
+attested for this noun only in the dative, and only in the eleventh
+century (Section 3.2). The following
 sections assemble what is actually attested, and then ask what each
 proposed history predicts.
 
@@ -267,27 +275,62 @@ In the West Saxon gospels at Mark 6.39 Corpus 140 has *hig*, with later
 *gers* and Rushworth *heggetgrese* [@Skeat1871, Mark 6:39].
 
 The Northumbrian and Mercian gospel glosses supply six further tokens,
-all newly verified against the printed pages of the Cambridge synoptic
-editions. Aldred's Lindisfarne gloss renders *faenum* three times with
+verified against the printed pages of the Cambridge synoptic editions.
+Aldred's Lindisfarne gloss renders *faenum* three times with
 the hay-word, in each case as one member of a double gloss with
 *gers/gærs* 'grass': nominative *gers ɫ heg* at Matthew 6:30
-[@KembleHardwick1858, p. 55], accusative *ofer hehg ɫ gers* at Matthew
-14:19 [@KembleHardwick1858, p. 117], and nominative *gærs ɫ heig micil*
+[@KembleHardwick1858, p. 55; @Skeat1887, p. 59], accusative *ofer heg ɫ
+gers* at Matthew 14:19, where the gloss first wrote *hehg* and altered
+it to *heg* — Kemble–Hardwick print the original spelling
+[@KembleHardwick1858, p. 117], Skeat the correction, with the
+alteration recorded in his apparatus, "hehg, *alt. to* heg"
+[@Skeat1887, p. 123] — and nominative *gærs ɫ heig micil*
 at John 6:10 [@Skeat1878, p. 55]; at Mark 6:39 and Luke 12:28 he uses
 *gers/gærs* alone [@Skeat1871; @Skeat1874, pp. 130–131]. Cook's
 glossary registers the three tokens under a single strong neuter lemma
-glossing *fœnum* [@Cook1894, s.v. *heg*], though it silently normalizes
-the Matthew 14:19 spelling to *heg* where the edition prints *hehg*, and
-omits the double glosses. In the Rushworth Gospels, Farman's Mercian
+glossing *fœnum* [@Cook1894, s.v. *heg*], following the corrected
+Matthew 14:19 reading and omitting the double glosses. In the Rushworth
+Gospels, Farman's Mercian
 gloss — independent of Lindisfarne in Matthew — writes *londes hóeg*
 (nominative) at Matthew 6:30 and *on hóeg* (accusative) at Matthew
-14:19, both printed with an acute accent [@KembleHardwick1858, pp. 55,
-117]; Owun's Northumbrian gloss, which follows Lindisfarne in John, has
+14:19, with an acute accent printed by all three editions made from the
+manuscript [@KembleHardwick1858, pp. 55, 117; @Skeat1887, pp. 59, 123;
+@Tamoto2013, pp. 19, 47]; Owun's Northumbrian gloss has
 *heg ɫ gers micel* at John 6:10, reversing Aldred's order and respelling
-his *heig* [@Skeat1878, p. 55]. These verifications rest on the printed
-editions and their page images; the manuscripts themselves have not been
-re-examined, and the status of Farman's accents and of the ⟨hehg⟩
-spelling awaits facsimile confirmation.
+his *heig* [@Skeat1878, p. 55]. Owun's gloss is textually very close to
+Lindisfarne in John, though Kotake has shown that direct copying from
+that manuscript is a premise rather than an established fact — the
+non-Lindisfarne readings in his portions may reflect a common source or
+intervening copies [@Kotake2016, pp. 377–396]; on either view his
+⟨heg⟩ is a respelling within one textual tradition, not an independent
+lexical witness. These verifications rest on the printed editions and
+their page images. The Rushworth manuscript itself could not be
+consulted for the accents: the Bodleian's digitization of Auct. D. 2. 19
+covers a selection of folios that excludes both relevant pages.
+
+The metrical Paris Psalter — the Old English verse psalms of BnF lat.
+8824, an eleventh-century manuscript whose metrical portion is a
+Saxonized copy of an Anglian-coloured original [@Fulk1992Meter,
+pp. 410–414; @Toswell1990, ch. 1] — supplies six occurrences, of which
+five are tokens. Three are overt dative singulars *hege*, all in
+withering similes rendering *faenum*: *Ic eom hege gelic, þam þe hraðe
+weornað, ðonne hit byð amawyn mannes folmum* (101.4), *and ic hege
+gelic, swa hit hraðe weornað* (101.9), and *beoð mannes dagas mawenum
+hege æghwær anlice* (102.14) [@Krapp1932PPs, pp. 72–73, 75]. All three
+were verified in images of the manuscript (fols. 116r, 116v, 118v):
+⟨hege⟩ is plainly legible in each, without accent, facing the Latin
+*sicut foenum* verses. The dative reading is secured grammatically as
+well as lexically: *gelīc* and *anlīce* govern the dative, 101.4
+resumes the noun with dative *þam þe*, and 102.14 carries the agreeing
+dative participle *māwenum*. Two further Psalter tokens are direct
+forms, *heg* at 71.16 and *hig* at 105.17 [@Krapp1932PPs, pp. 31, 84];
+a sixth occurrence, *hig* at 146.9, is not a token at all — the
+manuscript reads *hio*, and *hig* is Krapp's emendation, as his
+apparatus records [@Krapp1932PPs, p. 146]. Outside the Psalter, verse
+offers one further token: accusative *hig* coordinated with *gærs* in
+Andreas 38, *hie hig ond gærs / for meteleaste meðe gedrehte*
+[@Krapp1932Vercelli, p. 4]. The six Psalter loci belong to a single
+textual tradition and count as one witness.
 
 Three classes of false positive must be excluded: the plural pronoun
 *hig*; the distinct noun *hege* 'hedge, enclosure', whose Middle English
@@ -300,42 +343,61 @@ witnesses.
 ## 3.2 The paradigm
 
 Classified by grammatical cell (full table in `PARADIGM.md`), the record
-has a striking shape. Direct-case tokens (nominative or accusative,
-formally indistinguishable) are plentiful: every psalter, prose,
-glossary and gospel-gloss token above. Syntactically dative *mid hig*
-shows no ending.
-No overtly inflected token is identified in the collated sources: no genitive,
-no dative in -e, no unambiguous plural — Dahl's observation of 1938
-stands. Wright's *hīeges* and *hīege* are paradigm expectations, as is
-the *mid hīeġe* of normalized grammars. Both of the historically central
-reconstructed entities — the protected oblique stem that serves as the
-analogical donor in the early-apocope accounts, and the inherited
-ungeminated direct form \*hawi/\*hewi — are thus equally unattested in
-Old English. That attestation gap is symmetrical; the evidential
-standing of the two reconstructions is not, since each is supported by
-different comparative and systemic considerations, weighed in Sections
-5 and 6. Nor is the gap very surprising: the noun is a mass noun used
-overwhelmingly to render Latin *faenum* in direct-case contexts, so
-oblique and plural tokens are antecedently rare, and the one oblique
-context attested (the Colloquy's *mid hig*) happens to show no overt
-ending.
+has a definite shape. Direct-case tokens (nominative or accusative,
+formally indistinguishable) are plentiful: every psalter-gloss, prose,
+glossary and gospel-gloss token above, the two direct Paris Psalter
+forms, and the Andreas accusative. The Colloquy's *mid hig* is dative
+syntax with no ending — unsurprising, since an endingless dative beside
+inflected variants is commonplace in late Old English. The dative with
+overt *-e* is attested three times, exclusively in the Paris Psalter
+tradition: *hege* at 101.4, 101.9 and 102.14. No genitive and no
+unambiguous plural is attested anywhere; Wright's *hīeges* remains a
+paradigm expectation. Dahl's observation that inflected forms are
+absent holds for his early Old English corpus, not for the language as
+a whole.
+
+What the dative tokens establish must be stated with the same care as
+what they do not. They show that eleventh-century Old English inflected
+the word as a regular neuter with stem *heg-* throughout — the uniform
+paradigm that every account on the table predicts for that date. They
+do not show that the oblique stem was available as an analogical donor
+before i-umlaut, which is when the early-apocope accounts need it
+(Section 5): a text composed late and transmitted in one tradition
+cannot date a pre-umlaut process. The two historically central
+reconstructed entities therefore retain different standings. The
+protected oblique stem is now attested in its late reflex but
+undocumented at the date the analogy requires; the inherited
+ungeminated direct form \*hawi/\*hewi remains wholly unattested in Old
+English. Nor is the surviving record's distribution surprising: the
+noun is a mass noun used overwhelmingly to render Latin *faenum* in
+direct-case contexts, and the dative similes of the Psalter (*gelīc* +
+dative) are exactly the construction in which an oblique of 'hay' would
+be expected to surface.
 
 ## 3.3 Dialect and date distribution
 
 The spellings sort cleanly. Anglian and early Kentish sources write
 ⟨heg⟩/⟨hei-⟩ (VP, VH, Bede, charters); the tenth-century Northumbrian
-gospel glosses write ⟨heg⟩, ⟨hehg⟩, ⟨heig⟩ and Farman's Mercian ⟨hóeg⟩;
-late West Saxon and later copies
+gospel glosses write ⟨heg⟩, ⟨heig⟩ (with the corrected first attempt
+⟨hehg⟩) and Farman's Mercian ⟨hóeg⟩; the eleventh-century Paris Psalter
+writes ⟨heg(e)⟩ and ⟨hig⟩ side by side; late West Saxon and later copies
 write ⟨hig⟩, ⟨hyg⟩, ⟨hieg⟩, with ⟨heig⟩/⟨haig⟩ in the latest gospel
 manuscripts and Dialogues C. The West Saxon i/y/ie-vocalism is the
 regular i-umlaut of \*ēa — a stem shape produced by the geminate route,
 by pre-umlaut levelling, or by Dahl's inherited diphthong (Section 5);
-the Anglian ē-vocalism is its regular smoothing. The late
+the Anglian ē-vocalism is its regular smoothing, and the Psalter's
+mixed ⟨heg(e)⟩ ~ ⟨hig⟩ fits the Saxonized-Anglian character of its
+transmission [@Fulk1992Meter, pp. 410–414]. The late
 ⟨ei⟩/⟨ai⟩ spellings belong to the Middle English diphthongal
 developments discussed by Jones, and the Lindisfarne ⟨heig⟩ ~ ⟨heg⟩
 variation is his earliest instance of them. The single ⟨hei⟩ of c. 1150
-postdates the Old English quantity system. Farman's ⟨oe⟩ awaits an
-orthographic interpretation. Nothing in the distribution requires —
+postdates the Old English quantity system. Farman's ⟨oe⟩ is best read
+as an inverted spelling of /eː/: Kuhn's study of his orthography shows
+the unrounding of /ø(ː)/ complete in his dialect, with inverted
+spellings of the ⟨oele⟩ type for *ele*, while the \*au+i class at large
+is written with plain ⟨e⟩ throughout his gloss [@Kuhn1945]; a rounded
+vowel confined to this one word has nothing to recommend it. Nothing in
+the distribution requires —
 though nothing excludes — an ungeminated relic in the Anglian/Kentish
 ⟨heg⟩/⟨hei-⟩ forms (Section 5).
 
@@ -343,41 +405,61 @@ though nothing excludes — an ungeminated relic in the Anglian/Kentish
 
 The conventional citation forms *hīeġ* and *hēġ* assert a long stressed
 nucleus. It is worth asking, with some care, where that length actually
-comes from, because the answer is: not from any direct Old English
-observation so far identified.
+comes from, because the answer is: from reconstruction, supported at one
+point — Farman's acute — by a direct but probabilistic Old English
+observation.
 
 The spellings themselves cannot decide. Old English ⟨g⟩ after a front
 vowel normally spells /j/ [@HoggGrammar1992, §2.76], and no Old English
 spelling distinguishes /e/ from /eː/ before /j/; ⟨heig⟩ is compatible
 with /ej/, /eij/, /eːj/ and a falling diphthong, and Jones's own
 transcriptions of the word span three of these possibilities
-[@Jones1989, pp. 21, 55, 149–152]. Manuscript accents would in principle
-help, but the acutes of the dictionaries — Wright–Wülcker's *Hég*,
-Bosworth–Toller's *hég*, *híg* — are editorial, and no accented token of
-the word had previously been identified in the collated material. The
-newly verified Rushworth tokens change the inventory without yet
-changing the conclusion: Farman writes *hóeg* with a printed acute at
-both Matthew 6:30 and 14:19 [@KembleHardwick1858, pp. 55, 117], while
-the Lindisfarne tokens carry no accent. Before Farman's acutes can bear
-on quantity, two things must be established that presently are not: that
-the printed accents reproduce manuscript accents, and that Farman's
-accentual practice correlates with etymological length. Mokrowiecki's
-study shows that such calibration is possible — in his two late Old
-English manuscripts acutes mark etymologically long vowels in roughly
-nine cases in ten — but also that it is manuscript-specific
-[@Mokrowiecki2015]; Jones reads the Lindisfarne acute of ⟨wég⟩ 'way', a
-conventionally short word, as marking mere duration [@Jones1989, p. 55],
-which is a standing warning against equating acute with length in these
-glosses. Ritt's study of the Lindisfarne acutes, the obvious control,
-has been ordered but not yet consulted [@Ritt2000].
+[@Jones1989, pp. 21, 55, 149–152]. Manuscript accents are the one place
+where the record has improved. The acutes of the dictionaries —
+Wright–Wülcker's *Hég*, Bosworth–Toller's *hég*, *híg* — are editorial,
+and the Lindisfarne, Rushworth² and Paris Psalter tokens carry no
+accent (the Psalter forms were checked in the manuscript images). But
+Farman writes *hóeg* with an acute at both Matthew 6:30 and 14:19, and
+the accent is printed by all three editions made independently from the
+manuscript [@KembleHardwick1858, pp. 55, 117; @Skeat1887, pp. 59, 123;
+@Tamoto2013, pp. 19, 47], which effectively excludes editorial
+invention even though the manuscript pages themselves are not among the
+folios the Bodleian has digitized. What the acute means is a question
+about Farman's practice, not about accents in general: Mokrowiecki's
+calibration of two late Old English manuscripts found acutes marking
+etymologically long vowels in roughly nine cases in ten, but
+manuscript-specifically [@Mokrowiecki2015], and Jones reads the
+Lindisfarne acute of ⟨wég⟩ 'way' as marking mere duration [@Jones1989,
+p. 55]. A collation of Farman's accented types across his Matthew gloss
+(from Tamoto's edition) yields the same shape as Mokrowiecki's: the
+acute falls predominantly on etymologically long stressed nuclei, with
+sporadic application and a residue of secure short-vowel exceptions
+(*wég* Mt 7:14, *stéfn* Mt 2:18, *mónige* Mt 16:9). Farman's acute on
+*hóeg* is accordingly probabilistic evidence for a long nucleus — real
+evidence, for the first time non-editorial, but defeasible, and (as
+Section 5 shows) incapable of discriminating among the surviving
+derivations, all of which predict length. Ritt's study of the
+neighbouring Lindisfarne practice has been ordered but not yet
+consulted [@Ritt2000].
 
 The Middle English and modern reflexes are, perhaps surprisingly,
 uninformative, and Minkova has explained why: the expected /eːj/ of
 *hēġ* 'hay' and /ej/ of *weġ* 'way' "should not have been preserved" as
 distinct — any length contrast before /j/ was neutralized, and the two
 words duly merge [@Minkova2014, p. 178]. Modern *hay* therefore cannot
-testify to Old English quantity. No verse token of the noun has been
-identified, so metre is silent. And syllabification is equally
+testify to Old English quantity. Verse, which cycle-1 collation had
+not reached, turns out to supply tokens but no test. The monosyllabic
+direct forms (*heg*, *hig*) stand in lifts, where a closed monosyllable
+is metrically heavy whether its vowel is long or short; the disyllabic
+datives could in principle engage resolution, but they occur only in
+the metrical Paris Psalter, whose verse Fulk has shown to be too late,
+too formulaic and too irregular to sustain quantitative inference —
+its metrical deviations are products of transmission and incompetence
+rather than phonology [@Fulk1992Meter, pp. 410–414; cf. @Toswell1990,
+ch. 6] — and resolution is in any case the metrical equivalence
+Minkova singles out as least directly grounded in the ambient language
+[@Minkova2003, pp. 23–25]. The metre is not silent; it is
+demonstrably unusable here. And syllabification is equally
 underdetermined: nothing in the record distinguishes /hej/ from
 disyllabic /he.i/ for the early non-West-Saxon spellings.
 
@@ -388,11 +470,10 @@ with glide resolution; pre-umlaut levelling; Dahl's inherited diphthong)
 all deliver a long nucleus, while the only derivation that delivers a
 short one (the untouched early-apocope form \*hewi) fails independently
 against the West Saxon vocalism. Long quantity in the direct singular is
-thus the shared prediction of every viable account rather than a datum;
-the reconstruction is secure exactly to the degree that the disjunction
-of those accounts is secure. A future calibration of Farman's accents is
-at present the only identified prospect of evidence that is independent
-of all of them.
+thus the shared prediction of every viable account rather than a datum —
+a prediction with which Farman's acute, the one non-editorial quantity
+signal in the record, is consistent without being able to adjudicate
+anything the accounts dispute.
 
 # 5. The competing derivations
 
@@ -443,7 +524,10 @@ Hogg's study of the masculine ja-stems shows mixed paradigms levelled
 in both directions [@Hogg1979Analogy, pp. 68–73], and Old High German
 *houwi* beside *hewi* may show the very same act on the continent — but
 it is an extra, word-specific assumption, and its donor paradigm is
-unattested in Old English (Section 3.2).
+attested in Old English only late: the Paris Psalter datives of
+Section 3.2 supply the protected oblique stem in the eleventh century,
+but nothing in the record dates the levelling itself to the pre-umlaut
+window the account requires.
 
 **B2: late apocope.** If \*-ą survived gemination [@Dahl1938,
 pp. 81–86; @HoggFulk2011, §2.23; @Boutkan1995, pp. 209–213], the direct
@@ -479,7 +563,8 @@ Since every account except plain B2 invokes analogy somewhere — Ringe–
 Taylor for the whole stem, Wright and Dahl for the final consonant — the
 comparative standing of the analogical operations matters.
 
-The donor side is secure in type though unattested in token. Mixed
+The donor side is secure in type and now attested in token, though only
+late (the Paris Psalter datives, Section 3.2). Mixed
 ja-stem paradigms with geminate and non-geminate alternants existed and
 levelled in both directions: *hyll* generalized the geminate, *hyse*,
 *mete*, *ile* the plain form, with "the balance ... a very slender one"
@@ -531,8 +616,9 @@ routes which converge on pre-Old-English \*auj and are thereafter
 indistinguishable in English; the final -ġ is regular under the
 geminate analysis and analogical (from the oblique cases) under the
 others; and the inherited consonantal-w form, if it ever existed in
-English, left no identified trace. For the chronology: the word tests
-nothing. Under late apocope it is regular; under early apocope it is
+English, left no identified trace. The newly established datives do not
+disturb this: by the eleventh century every account predicts *hēġe*. For
+the chronology: the word tests nothing. Under late apocope it is regular; under early apocope it is
 explained by a levelling with good typological parallels; under Dahl's
 parse it is outside gemination's input class altogether. A word
 compatible with every ordering on the table cannot evidence any of
@@ -556,23 +642,31 @@ cannot arbitrate history.
 # 8. Conclusion (provisional)
 
 The Old English word for 'hay' is abundantly attested in the direct
-case — now including three verified Lindisfarne tokens, two accented
-Mercian tokens in Rushworth¹, and one dependent token in Rushworth² —
-and attested nowhere with an overt inflection. Its conventional long
-vowel is a reconstruction on which all viable derivations agree, not an
-observation; its West Saxon vocalism requires a diphthongal stem but
-does not, by itself, prove gemination; its final consonant is either
-the one regular product that separates the geminate route from its
-rivals, or an analogical restoration with exact parallels in its own
-word class. Each of the three surviving histories — regular geminate
-development, early apocope repaired by levelling, Dahl's ungeminated
-diphthong — accounts for the full attested record; none can be
-eliminated by Old English evidence now identified. The honest
+case — including three verified Lindisfarne tokens (one first written
+⟨hehg⟩ and corrected by the glossator), two accented Mercian tokens in
+Rushworth¹, and one dependent token in Rushworth² — and attested with an
+overt inflection only in the dative, in the three manuscript-verified
+*hege* of the metrical Paris Psalter. Its conventional long vowel is a
+reconstruction on which all viable derivations agree, supported but not
+proved by Farman's acute, which calibration shows to be probabilistic
+evidence for a long nucleus; its West Saxon vocalism requires a
+diphthongal stem but does not, by itself, prove gemination; its final
+consonant is either the one regular product that separates the geminate
+route from its rivals, or an analogical restoration with exact
+parallels in its own word class. Each of the three surviving
+histories — regular geminate development, early apocope repaired by
+levelling, Dahl's ungeminated diphthong — accounts for the full
+attested record, the datives included; none can be eliminated by Old
+English evidence now identified. The Paris Psalter forms supply the
+oblique stem Ringe and Taylor's levelling requires, but five centuries
+too late to date the levelling, and so they shift no weight among the
+accounts. The honest
 conclusion is that this word, so often cited in passing as if it bore
 on the gemination–apocope chronology, is a dependent of that debate and
-not a witness in it. What would change the verdict is identified and
-finite: a calibrated reading of Farman's accents, the Lindisfarne
-accent study now on order, a manuscript check of the ⟨hehg⟩ spelling,
-and the arrival of Dal's original argument. Until then, the paradigm
+not a witness in it. What would change the verdict is identified,
+finite, and smaller than it was: the Lindisfarne
+accent study now on order, the arrival of Dal's original argument, and
+a manuscript check of Farman's acutes should the relevant Bodleian
+folios be digitized. Until then, the paradigm
 assembled here fixes what any future account of the word must explain,
 and the derivational comparison fixes what it cannot claim.

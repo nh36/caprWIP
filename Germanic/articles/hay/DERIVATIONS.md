@@ -116,8 +116,16 @@ rejected. This is a negative result, reported as such.
   sits exactly there (pp. 173, 246).
 - Donor status: gen./dat./pl. *hīeġes/hīeġe/hīeġ* are regular **in the
   model** and supported comparatively (OHG *houwi* with levelled geminate
-  beside *hewi*), but **no OE inflected token is attested** (PARADIGM.md).
-  The donor is reconstructed, not observed.
+  beside *hewi*). **Cycle-3 revision: the dative cell is now attested** —
+  Paris Psalter *hege* ×3 (101.4, 101.9, 102.14; ids 33–35,
+  manuscript-verified) shows stem + -e, exactly the oblique shape the
+  levelled paradigm predicts. But the attestation is eleventh-century,
+  in one Saxonized-Anglian poetic tradition, centuries after i-umlaut:
+  it confirms that the uniform paradigm existed in historical OE (which
+  every account predicts), not that the protected stem was available as
+  a donor **before umlaut**, which is when A2's replacement must occur.
+  The donor at the required date remains reconstructed; the genitive
+  remains unattested at any date.
 - Typological support: Hogg 1979's hyll/hyse evidence shows such mixed
   paradigms existed and levelled in both directions; Adamczyk 2018's
   *mete/mette* alternations likewise.
@@ -175,6 +183,33 @@ R&T's "reversible gemination" \*awj > [aww'] > [auj], p. 53). The route
 is conditionally defensible for the vocalism, analogical for the final
 consonant by his own statement, compatible with either apocope
 chronology, and observationally near-equivalent to B2 within English.
+
+## Cycle-3 comparison of the surviving accounts (deliverable D)
+
+The enlarged record (dative *hege* ×3 manuscript-verified; verse tokens
+identified; Farman's acutes calibrated; ⟨hehg⟩ resolved as a corrected
+scribal spelling) changes the evidential bookkeeping but not the
+standings. What each surviving account predicts, explains, and borrows:
+
+| | A2 (early apocope + levelling) | B2 (late apocope, geminate route) | Dahl (never geminated) |
+|---|---|---|---|
+| WS *hīeġ*, Anglian *hēġ* | regular **after** the pre-umlaut stem replacement | regular throughout | regular granted the diphthongal parse of \*-awj- |
+| Dative *hege* (PPs ×3, new) | regular (the donor cell itself) | regular | regular for the vocalism; final -g analogical by Dahl's own statement |
+| Long nucleus (Farman's acute, probabilistic) | predicted | predicted | predicted |
+| Analogical step required | whole direct-cell stem, dated before i-umlaut | none for this word | final consonant of the direct cell (any date) |
+| Attested support for that step | mixed-paradigm levelling typologically real (Hogg 1979); donor cell now attested, but only centuries post-umlaut | — | final -g restoration repeated in this class (glīg etc.) |
+| What would falsify it within OE | nothing identified | a secure direct-cell token requiring non-smoothing e-vocalism (none) | a secure w-form of an OE \*-awj- noun (none found) |
+
+The new dative tokens are compatible with all three accounts and are
+therefore **non-discriminating**: every account predicts *hēġe/hege* as
+the historical dative. Their real contribution is negative-critical —
+they retire the cycle-1/2 claim that the analogical donor was a
+paradigm cell never observed in any Old English text, while leaving
+intact the sharper point that no attestation dates the levelled oblique
+stem early enough to serve A2's pre-umlaut replacement. The word
+remains, as cycle 2 concluded, a dependent of the chronology debate and
+not a witness in it; the scores of the frozen models (387/396 vs
+388/396) remain formal controls, not historical evidence.
 
 ## Control words (frozen capture, direct cells)
 

@@ -13,10 +13,10 @@ class), *glīg/glēo* 'glee' (\*gliwą/\*gliwi, same structure with i-grade).
 | # | Evidence | Bears on | Finding | Decisive? |
 |---|---|---|---|---|
 | 1 | OE spellings ⟨heg, heig, hig, hyg, hieg, haig, hei⟩ | all | ⟨g⟩ normally spells /j/ (Hogg §2.76); no OE spelling distinguishes /e/ from /eː/ before /j/; ⟨ei⟩ can spell e+j, diphthong, or ē+glide | No |
-| 2 | Accent marks | /eː/ | **Updated cycle 2:** the Rushworth1 (Farman, Mercian) tokens are printed ⟨hóeg⟩ with an acute at both Mt 6:30 and Mt 14:19 (Kemble–Hardwick 1858: 55, 117; edition page images verified). Whether the acutes are manuscript-genuine, and whether Farman's accent practice calibrates toward etymological length, are both unestablished — so this is a lead, not yet evidence. The Lindisfarne and Ru2 tokens (heg, hehg, heig; heg) print no accent. WW *Hég*, BT *hég/híg* acutes remain **editorial**. Jones reads the Lindisfarne acute of ⟨wég⟩ 'way' as increased duration (p. 55) — on a word that is conventionally SHORT, which undermines acute = etymological length here; Mokrowiecki 2015 shows acutes mark etymological length ~90% only in his two calibrated LOE MSS; no calibration exists for our witnesses; Ritt 2000 (Lindisfarne accents) is ILL-pending | No (currently) |
+| 2 | Accent marks | /eː/ | **Updated cycle 3:** the Ru1 (Farman, Mercian) tokens print ⟨hóeg⟩ with an acute at Mt 6:30 and 14:19 in **three independent editions** (Kemble–Hardwick 1858: 55, 117; Skeat 1887: 59, 123; Tamoto 2013: 19, 47 — all page-image-verified). A manuscript check is impossible online: Digital Bodleian's Auct. D. 2. 19 digitization covers 49 selected (mainly illuminated) folios and excludes the two relevant pages. A cycle-3 calibration of Farman's Matthew accents (~90 accented types collated from Tamoto) shows the acute falls overwhelmingly on etymologically long nuclei, but not exceptionlessly: *wég* (Mt 7:14), *stéfn* (Mt 2:18), *mónige* (Mt 16:9) are secure short exceptions, and marking is sporadic (most long vowels unaccented). Farman's acute on *hóeg* is therefore **probabilistic evidence for a long nucleus** — and non-discriminating, since all three surviving derivations predict length. The Lindisfarne and Ru2 tokens print no accent; WW *Hég*, BT *hég/híg* remain editorial; Ritt 2000 (Lindisfarne practice) is still ILL-pending and bears on Aldred, not Farman | No (probabilistic, and non-discriminating among live accounts) |
 | 3 | ME reflexes: *hei/hai* merging with *wei/wai* 'way' | /eː/ vs /e/ | Minkova 2014: 178 (image-verified): expected /eːj/ 'hay' vs /ej/ 'way' "should not have been preserved" — the merger shows length was neutralized before /j/; therefore ME and ModE *hay* cannot recover OE quantity | No — positively excludes this route |
 | 4 | Jones's transcriptions | /e/ vs /eː/ | Internally mixed: [hej]/[heij] (pp. 149, 152) short; Table 3.17 [heej̆]/[hiij̆] long; Table 2.29 puts ⟨heg⟩ in the short [ɛ] class (but glosses it 'meadow', possibly the hedge word); his [klæj̆] 'clay' short against conventional *clǣg* shows his quantity assignments are analysis-dependent | No |
-| 5 | Poetic metre | /eː/, syllable count | No verse token of 'hay' identified in the collated material; the noun is confined to prose/gloss | No evidence either way |
+| 5 | Poetic metre | /eː/, syllable count | **Updated cycle 3:** verse tokens exist — Paris Psalter 71.16 *heg*, 101.4/101.9/102.14 *hege* (dat.), 105.17 *hig*, and Andreas 38 *hig* (146.9 *hig* is Krapp's emendation of MS ⟨hio⟩). They are metrically unusable: (i) the monosyllabic direct forms stand in lifts, where a closed monosyllable is heavy whether its vowel is long or short; (ii) resolution-based tests on disyllabic *hege* would require a secure metrical context, and Fulk (1992: 410–414) shows the Psalter's metre is too degenerate — late, formulaically padded, metrically irregular, and dialectally mixed in transmission — to sustain quantitative inference; (iii) Minkova (2003: 23–25) warns independently that resolution is the one metrical equivalence least straightforwardly grounded in the ambient language. A negative result, now demonstrated rather than vacuous | No — demonstrated unusable, not merely absent |
 | 6 | WS vocalism ⟨ie/i/y⟩ (hieg, hig, hyg) | stem identity | WS īe (> i/y) arises regularly from \*ēa + i-umlaut, which requires an ēa-type diphthongal stem nucleus in the direct cell; an ungeminated consonantal-w \*hæwi/\*hewi cannot yield WS īe by any attested change. That nucleus is reachable by gemination + \*wwj-resolution (B2, regular), by levelling before umlaut (A2), or by Dahl's never-resolved inherited diphthong (DAHL_REASSESSMENT.md) | **Yes for WS stem identity** (not directly for quantity, and not by itself for gemination) |
 | 7 | Anglian ⟨heg⟩ (VP ×11, VH, Bede), Kentish ⟨hei-⟩ (839) | stem identity | Ambiguous: Anglian smoothing of geminate-route \*ēaj gives ēġ (R&T's Merc/North *hēġ*); but early-apocope \*hewi > \*hei would also surface as ⟨heg⟩/⟨hei⟩. Both accounts fit these spellings | No |
 | 8 | Class parallels *ēg/īeg* 'island' < \*awjō-, *strēgan*, *cīegan* | /eː/ | These show long nuclei from \*auj/\*aujj contraction — but all derive from geminate/protected or heavy structures; they confirm the geminate route's output, not the inherited direct cell | No |
@@ -45,10 +45,17 @@ class), *glīg/glēo* 'glee' (\*gliwą/\*gliwi, same structure with i-grade).
   cell — reachable by gemination, levelling, or Dahl's diphthongal parse,
   but not from \*hæwi/\*hewi. The quantity follows from that stem
   identity; it has no separate empirical support at present.
-- The evidence that could in principle decide quantity independently —
-  calibrated accents and metre — is respectively pending (Ritt 2000 for
-  Lindisfarne; a Farman calibration for the new Ru1 ⟨hóeg⟩ acutes) and
-  nonexistent.
+- The evidence that could in principle decide quantity independently has
+  now been pursued to its current limits: Farman's accents are calibrated
+  (probabilistic support for a long nucleus; manuscript confirmation
+  blocked by the selective Bodleian digitization; Ritt 2000 still pending
+  for the neighbouring Lindisfarne practice), and the metre is
+  demonstrated unusable (row 5). A further lead is orthographic: Kuhn
+  (1945) shows the unrounding of /ø(ː)/ was complete in Farman's dialect,
+  with inverted spellings such as ⟨oele⟩ for *ele*, and Farman writes the
+  \*au+i class with plain ⟨e⟩ ~140 times; ⟨oe⟩ in *hóeg* is accordingly
+  best read as an inverted spelling of /eː/ — a point about quality, not
+  quantity (LINDISFARNE_EVIDENCE.md §5).
 - Syllabicity: nothing in the record distinguishes /hej/ from /he.i/ for
   the early, non-WS spellings; ⟨heig⟩ is compatible with /ej/, /eij/, /eːj/
   and a diphthong (Jones's own readings span three of these).

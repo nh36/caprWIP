@@ -1,5 +1,29 @@
 # Hay source handoff
 
+## Cycle-3 edition and manuscript consultations, 24 November 2026
+
+New consultations this cycle (none added to the private library; all are
+public-domain editions or open manuscript digitizations, cited directly):
+
+- **Skeat 1887** (Matthew re-edition): HathiTrust full view, record
+  `inu.32000000891434`. Pages 59 and 123 image-verified: Ru1 *hóeg* with
+  acute at both loci; Li Mt 14:19 printed *heg\** with apparatus
+  "\*hehg, *alt. to* heg" — resolving the K–H/Cook/DOE discrepancy.
+- **Krapp 1932, ASPR 5** (*The Paris Psalter and the Meters of
+  Boethius*): archive.org lending copy `parispsaltermete0000unse`.
+  Pages 31, 72–73, 75, 84, 146 verified, including the apparatus
+  "146,9,2 hig] hio".
+- **Krapp 1932, ASPR 2** (*The Vercelli Book*): archive.org copy
+  `vercellibook0002geor`. Page 4 verified (Andreas 36–39).
+- **BnF lat. 8824** (the Paris Psalter manuscript): Gallica digitization
+  `ark:/12148/btv1b8451636f` (394 canvases, complete). Folios 116r
+  (canvas f241), 116v (f242) and 118v (f246) inspected at 2400 px: all
+  three *hege* tokens plainly legible, unaccented, facing the Latin
+  *faenum* verses.
+- **Digital Bodleian, Auct. D. 2. 19** (Rushworth/Macregol): IIIF
+  manifest holds only 49 selected folios; the two hay pages are not
+  digitized. Recorded as a verification limit.
+
 ## DOE and six general-library acquisitions, 23 November 2026
 
 See [source intake](SOURCE_INTAKE_2026-11-23.md), the
