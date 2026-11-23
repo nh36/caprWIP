@@ -166,6 +166,16 @@ this word, at the cost of (i) a special diphthong-differentiation path and
 chronological contrast is moot **for this lexeme**: 'hay' ceases to be a
 gemination diagnostic at all.
 
+**Cycle-2 reassessment** (full analysis in DAHL_REASSESSMENT.md): the
+differentiation path is not in fact special — granted Dahl's diphthongal
+syllabification \*-au̯.ja-, the vocalism uses only the regular \*au > ēa
+change and i-umlaut, and from pre-OE \*auj onward his derivation is
+segment-for-segment identical with B2's post-resolution stages (and with
+R&T's "reversible gemination" \*awj > [aww'] > [auj], p. 53). The route
+is conditionally defensible for the vocalism, analogical for the final
+consonant by his own statement, compatible with either apocope
+chronology, and observationally near-equivalent to B2 within English.
+
 ## Control words (frozen capture, direct cells)
 
 | Lexeme | Input | A output | B2 output | Attested | Favors |
