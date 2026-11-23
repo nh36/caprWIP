@@ -2,6 +2,20 @@
 
 This file lists OCRed reference texts in `docs/references/` with quick hints for searching.
 
+## Old English verse and glosses acquisition, 23 November 2026
+
+The [holdings manifest](scholarly_2026-11-23/holdings.tsv) registers complete
+private copies and page-separated search texts of Fulk 1992, Tamoto 2013,
+Fernández Cuesta and Pons-Sanz 2016, Toswell 1990, Minkova 2003 and Kuhn
+1945. These are general research holdings, not article-only attachments.
+For bibliographic details, page anchors, extraction caveats and broader uses
+see the [intake record](../../Germanic/articles/hay/SOURCE_INTAKE_2026-11-23.md).
+The research-scoped BibTeX entries are in
+[`article_refs.bib`](../../Germanic/articles/hay/article_refs.bib); the shared
+`docs/refs.bib` was deliberately not changed during this bounded intake,
+because it is a publication and survey-provenance input.
+Private files remain local and ignored; page images are authoritative.
+
 ## SC047 early-apocope source acquisition
 
 The [intake record](sc047_early_apocope/README.md), `holdings.tsv` and

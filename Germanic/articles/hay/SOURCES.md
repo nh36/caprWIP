@@ -1,5 +1,17 @@
 # Hay source handoff
 
+## DOE and six general-library acquisitions, 23 November 2026
+
+See [source intake](SOURCE_INTAKE_2026-11-23.md), the
+[DOE crosswalk](DOE_CROSSWALK_2026-11-23.tsv), and
+[cycle 3 handoff](CYCLE3_RESEARCH_HANDOFF.md). All six complete books or
+articles and their page-separated search texts reside in the general private
+library at `docs/references/local/scholarly-2026-11-23/`, registered in
+`docs/references/scholarly_2026-11-23/holdings.tsv`. The two complete supplied
+DOE handoffs remain private under `docs/references/local/hay-article/`.
+The new source evidence requires reconsideration of some cycle-2 statements;
+it does not itself settle the proposed phonology or analogy.
+
 ## Priority sources
 
 | Key | Holding | Extraction | Page-specific verification |
