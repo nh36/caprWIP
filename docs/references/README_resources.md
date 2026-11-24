@@ -386,6 +386,20 @@ chapter is now ingested in the Desktop intake. The earlier unverified-source
 receipt remains historical evidence, not the current access status.
 Acquisition does not retroactively certify its argument or alter the collation.
 
+Complete private native-text and independent Tesseract OCR search aids for all
+five PDFs (178 sheets total) are prepared by
+`python3 docs/references/epinal_erfurt_2026/prepare_holdings.py`; run it with
+`--check` to verify source checksums, page coverage and recorded outputs.
+Versioned holdings and PDF-sheet maps are tracked beside the helper. The
+page-marked native and OCR texts, plus OCR PDFs, are Git-ignored under
+`docs/references/local/herren-erfurt-2026/`. The source PDFs already had
+complete text layers; the separate OCR run provides an independent search aid,
+not a replacement for the originals. Samples from sheets A59, B17, C46, P52
+and Introduction 1 show Tesseract often loses vowel-length marks and other
+diacritics; the native text layer preserves these better and is preferred for
+searches. Google Vision was not needed given the complete native layer. Consult
+PDF images for exact readings.
+
 These are source holdings, not generated manuscript text. Original PDFs follow
 the existing local-only ignored-PDF policy; no copyrighted catalogue is
 redistributed. Public-domain edition text extractions are navigation aids,

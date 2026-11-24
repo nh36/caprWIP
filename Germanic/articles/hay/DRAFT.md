@@ -1,6 +1,7 @@
 ---
 title: "The Old English word for 'hay': West Germanic gemination, vowel quantity, and paradigmatic levelling"
 bibliography: ["../../../docs/refs.bib", "article_refs.bib"]
+reference-section-title: "References"
 ---
 
 <!-- Draft status: Sections 1-8 revised in cycle 3 against the enlarged
