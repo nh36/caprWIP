@@ -75,18 +75,32 @@ Findings of note:
    (1858, 1887, 2013), which makes an editorial invention very unlikely;
    direct manuscript confirmation remains impossible online, since
    Digital Bodleian's Auct. D. 2. 19 digitization is a 49-folio
-   selection that omits both relevant pages. **Cycle 5:** the corrected
+   selection that omits both relevant pages. **Cycle 5 census; cycle 6
+   control audit:** the corrected
    extraction census (FARMAN_ACCENTS.tsv; `extract_farman_accents.py`)
    contains 196 non-target types (299 tokens) plus *hóeg* (one type/two
    tokens), 197 types and 301 Old English tokens total. The old range mixed
    LF line numbers and `splitlines()` indices; the old 327-token figure is
-   withdrawn. The bounded matched calibration
+   withdrawn. The cycle-6 audit adds unaccented *weig* ‘way’ at Mark 1:3
+   (fol. 52v) to the short-V+glide panel as a closed monosyllable. The
+   bounded matched calibration
    (FARMAN_ACCENT_CALIBRATION.tsv) includes unaccented occurrences:
-   *weg/dæg* 1/53 tokens, *stīg* 1/2, and the separate short-HL panel 5/133.
-   Surface-type and lexical-type counts are in the table; these small
-   selected controls are descriptive, not a population-wide accentuation
-   rate. They support only a cautious statement about Farman's own late
-   tenth-century practice, not a ninth-century quantity claim. (ii) The
+   *weg/dæg* 1/53 tokens (1/9 surface types; 1/2 lexical types), *stīg*
+   1/2 tokens (1/2 surface types; one lexical type), and the separate
+   short-HL panel 5/133 tokens (5/23 surface types; 4/5 lexical types).
+   Short-V+glide closed monosyllables are 1/26 accented and forms with
+   following vowel graphs 0/27. Both *stīg* forms have following vowel
+   graphs; *stígas* at Mt 3:3, fol. 4v, is supported as accusative plural
+   by Latin *semitas eius*, while *stige* on fol. 52v is an uncertain
+   alternative beside *gongas*. Treating short-HL as short gives 6/186
+   tokens (6/32 surface types; 5/7 lexical types); treating it as
+   lengthened gives 6/135 (6/25; 5/6). These selected controls are
+   descriptive, not a population-wide accentuation rate, and the single
+   long-control lexeme cannot yield a likelihood ratio. They support
+   only a cautious statement about Farman's own late tenth-century
+   practice, not a ninth-century quantity claim. Eight uncertain
+   *gang*-family tokens and one *dægne* are listed separately and
+   excluded. (ii) The
    ⟨oe⟩ digraph is a point about **quality and spelling convention, not
    length** (cycle 4, correcting the earlier "/eː/" shorthand): Kuhn
    [-@Kuhn1945, p. 646] discusses *oele* as i-umlaut of **short** Latin
@@ -140,13 +154,21 @@ whole.**
 - No accent is printed on any Lindisfarne or Ru2 token (the editions
   print accents where their manuscripts have them — cf. ⟨hóeg⟩ on the
   same pages — so the absence is meaningful at the edition level).
+- Ritt (2000) is now held and consulted. He proposes that Aldred may
+  preferentially mark long vowels where length is not predictable from
+  spelling; this is an alternative interpretation of the accent
+  distribution, not an observation that all accents encode quantity.
+  His Matthew count is 426 accents (318 graphically closed, 108 open);
+  his p. 508 table accounts for 328/376 non-ambiguous occurrences
+  (87.3%), leaving 48 exceptions. His p. 509 CVC sample has an
+  arithmetic inconsistency, so its reported predictive accuracy is not
+  reproduced. These findings concern Aldred, not Farman.
 - The two Ru1 ⟨hóeg⟩ tokens carry acutes in all three editions
   (Kemble–Hardwick, Skeat 1887, Tamoto). With the cycle-3 calibration of
   Farman's practice (finding 4 above and QUANTITY_EVIDENCE.md §2) they
-  are probabilistic evidence for a long nucleus in a Mercian witness —
-  evidence that does not discriminate among the surviving derivations,
-  all of which predict length. Ritt (2000), still awaiting ILL delivery,
-  bears on the neighbouring Lindisfarne practice, not on Farman's.
+  are probabilistic evidence about Farman's own practice in a Mercian
+  witness. The bounded controls do not establish a precise rate or
+  discriminate among historical derivations.
 - ⟨heig⟩ (Jn 6:10) remains orthographically ambiguous among /ej/,
   /eːj/, /eij/ and a diphthong, exactly as cycle 1 concluded for the
   late West Saxon ⟨heig⟩ spellings.

@@ -67,10 +67,33 @@ The full source inventory and TSV/JSON snapshots are under
 - Approaches to Old Frisian 1998 remains incomplete outside Fulk's complete
   chapter.
 
-Ritt 2000 and Dal 1934 are ILL requested and awaiting delivery. Dal's 1934
-article also has an identified 1971 reprint, pp. 65–73 (some catalogues
-list [1972]); it is registered but not held or inspected, and no new
-acquisition request was made for it.
+## Cycle-6 consultations
+
+- **Cooper 2003, p. 61 nn. 151 and 155**: checked against the page image.
+  Cooper knew of S 1196 and excluded it from his highway chronology
+  because he suspected corruption. His fourteen-charter corpus and
+  transcript limits are recorded in `COOPER_CHARTER_CORPUS.tsv`.
+- **Hogg 2006, pp. 398–409**: chapter author Richard M. Hogg (van
+  Kemenade and Los are editors). Checked dialect-cluster distinctions,
+  the three sources of West Saxon ⟨ie⟩, Mercian witness differences, and
+  Northumbrian dialect qualifications; see `RESEARCH_MEMO_CYCLE6.md`.
+- **Ritt 2000, pp. 498–501, 505–510**: article-only searchable OCR from
+  ILL sheets 3–18; relevant passages, including pp. 508–509, checked
+  against page images. Administrative sheets 1–2 are excluded from OCR.
+  Source and OCR are private, Git-ignored, and not for redistribution.
+- **Harsley 1889, pp. 72, 241**: online edition reads ⟨hieg⟩ at Eadwine
+  Psalter PPs 71.16 and 146.8. Trinity College Cambridge MS R.17.1 is
+  dated c. 1150; manuscript images were not checked and the dialect is
+  unassigned.
+- **Farman calibration**: the refreshed matched panel separates
+  closed monosyllables, following-vowel-graph forms, and other structures;
+  reports tokens, surface and lexical types; and retains short-HL
+  sensitivity analyses. See `FARMAN_ACCENT_CALIBRATION.tsv`.
+
+Dal's 1934 article remains on the existing ILL request. Its identified
+reprint in *Untersuchungen zur germanischen und deutschen
+Sprachgeschichte* (1971), pp. 65–73 (some catalogues list [1972]), is
+registered but not held or inspected.
 
 ## Cycle-4 consultations (24 November 2026)
 

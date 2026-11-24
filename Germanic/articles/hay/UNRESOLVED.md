@@ -2,7 +2,9 @@
 
 ## External evidence
 
-- Ritt 2000: ILL requested; accent marks in Lindisfarne Gospels.
+- Ritt 2000: acquired as a restricted ILL scan and consulted; the local
+  PDF and article-only OCR are Git-ignored. Its findings concern Aldred,
+  not Farman.
 - Dal 1934: original article remains on the existing ILL request; its 1971
   reprint is identified (pp. 65–73) but not held. It may clarify the
   original early-loss/inflection argument.
@@ -11,6 +13,32 @@
 - Goetz 1971: p. 121 and entire-work completeness beyond the four tranches
   remain unknown.
 - Sehrt festschrift: pp. 33--34 and 255 remain unavailable in the local variants.
+
+## Current status after cycle 6
+
+- Cooper (2003) knew of S 1196 and excluded it from his highway chronology
+  because he suspected corruption (p. 61 nn. 151, 155). The bounded
+  fourteen-charter corpus is in `COOPER_CHARTER_CORPUS.tsv`; it includes
+  *higi wegge* (S 508), *heige weye* (S 727), and later-copy *hig weg(e)*
+  forms, but their lexical identity and the source of ⟨i⟩ are unresolved.
+  S 1338 *heahstræt*, S 1361 *hæhstræte*, and S 911 *hehstræte* are
+  different compounds. The bounded corpus supplies no secure independent
+  derivation of S 1196 *heiweg* from *hēah*.
+- Farman's matched calibration is complete within its stated limits.
+  Correct totals are 1/53 short-V+glide tokens, 1/2 *stīg* tokens, and
+  5/133 short-HL tokens; the structure, surface-type, and lexical-type
+  counts and short-HL sensitivity analyses are in
+  `FARMAN_ACCENT_CALIBRATION.tsv`. The one long-control lexeme does not
+  support a precise probability or likelihood ratio.
+- The only direct edition ⟨hieg⟩ readings found are Eadwine Psalter PPs
+  71.16 and 146.8 (Harsley 1889: 72, 241), Trinity College Cambridge
+  MS R.17.1, c. 1150. The manuscript readings and dialect are unverified.
+  Normalized *hīeġ* must not be treated as a manuscript form or secure
+  West Saxon evidence. Hogg (2006: 400) describes three distinct sources
+  of West Saxon ⟨ie⟩; their applicability to ‘hay’ remains unsettled.
+- The remaining requested publications are Dal (1934) / its identified
+  1971 reprint, Wallenberg (1931: 203–205), and Brooks and Kelly (2013).
+  They are being pursued separately; no other acquisitions are planned.
 
 ## Bounded specialist questions
 
@@ -23,8 +51,9 @@
   quantity evidence establishes the long vowel. Farman's printed acutes
   are suggestive of his own practice, but the bounded matched calibration
   is small and not a population rate; it does not support a ninth-century
-  inference. The firm constraint remains WS stem identity (īe requires an
-  ēa-type diphthongal stem). Ritt 2000 concerns Lindisfarne, not Farman.
+  inference. The earlier claim that West Saxon ⟨ie/i/y⟩ securely requires
+  an ēa-type stem is not established by the current word-attestations;
+  Harsley's direct ⟨hieg⟩ readings have unassigned dialect.
 - ~~Determine whether Lindisfarne *heig*/*heg* supports independent
   diphthongization or is best explained by the palatal /j/ environment.~~
   **Locus resolved 23 Nov 2026 (cycle 2):** the tokens are Li Mt 6:30
@@ -33,7 +62,8 @@
   (LINDISFARNE_EVIDENCE.md, CONCORDANCE.tsv ids 26–32). The
   diphthongization-vs-orthography question remains open. Farman's
   cycle-5 calibration concerns his own Mercian practice and does not
-  resolve Lindisfarne; Ritt 2000 remains relevant to Aldred's practice.
+  resolve Lindisfarne; Ritt 2000 is now available as an alternative
+  analysis of Aldred's practice.
 - ~~Compare Jones, Minkova, Mokrowiecki and Goering without importing
   conclusions from later phonological models.~~ **Addressed 23 Nov 2026**
   in `LITERATURE_MATRIX.md` and `QUANTITY_EVIDENCE.md`.
@@ -96,7 +126,8 @@ Questions not settled by cycle 3; current status is noted below:
 1. **Farman's acutes in the manuscript.** Resolvable only by direct
    inspection (or new digitization) of Bodleian Auct. D. 2. 19, fols.
    containing Mt 6:30 and Mt 14:19; the online selection excludes them.
-2. **Aldred's accent practice as a control.** Ritt 2000 (ILL pending).
+2. **Aldred's accent practice as a control.** Ritt 2000 is now acquired
+   and consulted; see `LINDISFARNE_EVIDENCE.md`.
 3. **Dal's original 1934 early-loss argument.** The original article
    remains on the existing ILL request; the 1971 reprint, pp. 65–73, is
    registered but unheld. The argument is presently known through Dahl's
@@ -141,8 +172,8 @@ These are substantive research questions, not metadata or ingestion failures.
   1/53 tokens accented, *stīg* 1/2, and short-HL controls 5/133. The
   short-HL sensitivity treatments produce 6/186 if counted as short and
   6/135 if counted as lengthened. These small, selected counts describe
-  Farman's printed late tenth-century practice only; Ritt 2000 remains
-  open for Aldred's practice, not Farman's.
+  Farman's printed late tenth-century practice only; Ritt's analysis
+  concerns Aldred's practice, not Farman's.
 - ~~Interpretation of Farman's ⟨oe⟩ (refined).~~ **Revised cycle 4:**
   ⟨oe⟩ is quality/convention evidence, not length (Kuhn 1945: 646 on
   *oele* < short o); it groups *hóeg* with Farman's ē/œ̄ class

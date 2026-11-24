@@ -15,8 +15,10 @@ reference-section-title: "References"
 The Old English word for 'hay' survives in the manuscripts as *heg*,
 *heig*, *hig*, *hyg*, in the Northumbrian gospel glosses also *hehg*
 (corrected by the glossator to *heg*) and Mercian *hóeg*, in the metrical
-Paris Psalter as dative *hege*, and, in late copies, *haig*; the grammars
-normalize it as West Saxon *hīeġ*, non-West-Saxon *hēġ*. Behind these
+Paris Psalter as dative *hege*, and, in late copies, *haig*; grammars
+normalize it as West Saxon *hīeġ*, non-West-Saxon *hēġ*. These are
+historical citation forms, not uniform manuscript spellings; the status
+of the direct edition readings ⟨hieg⟩ is examined below. Behind these
 spellings lies
 a Proto-Germanic neuter ja-stem \*hawją (cf. Gothic *hawi*, Old High
 German *hewi* beside *houwi*, Old Norse *hey*), a derivative of the verb
@@ -57,10 +59,11 @@ analogical interference; and an evaluation of the analogical account
 against the comparative evidence. The aim is not to vindicate a
 chronology but to determine what the evidence of this word can, and
 cannot, decide. The answer defended below is largely negative, and, we
-will argue, instructive: every surviving derivation of the attested
-forms passes through the same pre-Old-English diphthongal stem, and the
-word therefore cannot discriminate the chronologies it has been asked
-to support.
+will argue, instructive: the direct spellings and Farman's accents do
+not determine the quantity or history of the direct singular. In
+particular, the traditional West Saxon ⟨ie⟩ argument depends on the
+status of normalized forms, the dialect of the direct ⟨hieg⟩ readings,
+and the conditions on the several documented sources of West Saxon ⟨ie⟩.
 
 # 2. Previous scholarship
 
@@ -235,6 +238,21 @@ vowel of *hēġ*; what her argument establishes is that the Middle English
 and modern reflexes are incapable of recovering the Old English
 quantity, since any contrast in this position was neutralized.
 
+Ritt offers a different account of the Lindisfarne accents. He proposes
+that Aldred preferentially marked long vowels where their length was not
+otherwise predictable from the spelling, and argues that this helps
+explain the distribution without treating every acute as a direct
+transcription of quantity [@Ritt2000, pp. 498–501, 505–508]. His Matthew
+census records 426 accents: 318 in graphically closed syllables and 108
+in graphically open syllables. In his table on p. 508, his alternative
+analysis accounts for 328 of 376 non-ambiguous occurrences (87.3%),
+leaving 48 exceptions. These totals describe the observed distribution
+and Ritt's interpretation of it; they do not establish Farman's practice.
+The subsequent 100-item CVC sample on p. 509 is arithmetically
+inconsistent: from 79 short and 21 long items, after 15 long items six
+items remain, but the prose says eight. Its reported 98% predictive
+accuracy is therefore not reproduced here.
+
 ## 2.5 What is at issue
 
 The scholarship thus divides over two separable questions. The first is
@@ -283,8 +301,23 @@ Kentish charter corpus also writes *dæġ* as *dei* (Sweet's Ct. 39 of
 S 1195; ⟨ei⟩ and ⟨eg⟩ therefore cannot be assumed to mark distinct
 quantities. The S 1196 witness-name *Deimund* is not a secure
 same-scribe control because the witness list may represent a separate
-writing stage. The ⟨ei⟩ of *heiweg* carries no independent information
-about vowel quantity. The Old English
+writing stage. Cooper knew of S 1196 and deliberately excluded it from
+his chronology of highway terminology because he suspected the document
+was corrupt [@Cooper2003, p. 61 nn. 151, 155]. He notes its anomalous
+dating, the transition from Latin into Old English, the apparent
+correspondence between *cyniges heiweg* and *cyninges strete*, and the
+unusual *communis via*. These are independent documentary difficulties.
+The claim that this is an unusually early occurrence of ‘highway’,
+however, depends on first identifying *heiweg* as ‘highway’; it cannot
+then independently prove that identification. Cooper's bounded list of
+fourteen charters and the spellings, witness dates, transaction dates,
+and contexts available in their Sawyer Old Texts are recorded in
+`COOPER_CHARTER_CORPUS.tsv`. S 508 has *higi wegge* and S 727 *heige
+weye* in the electronic texts; neither is an independent, securely
+dated demonstration of the etymology of S 1196. The table records the
+accessible transcripts rather than a collation of every manuscript or
+printed edition. The ⟨ei⟩ of *heiweg* carries no independent
+information about vowel quantity. The Old English
 Bede has
 accusative *heg* in *on sumera heg ne māweþ* [@Miller1890, I p. 28].
 The late West Saxon Lambeth Psalter writes *hyg*, *hig* [@Dahl1938;
@@ -303,6 +336,17 @@ In the West Saxon gospels at Mark 6:39 Corpus 140 has *hig*, with later
 *gers*, while Rushworth has *hegge* alongside *grese*. The Rushworth
 gloss is Owun's, not Farman's, whose contribution ends at Mark 2:15
 [@Skeat1871, pp. 48–49].
+
+The only direct edition readings ⟨hieg⟩ located in this audit are
+Eadwine Psalter glosses at PPs 71.16 and 146.8, printed by Harsley
+[@Harsley1889, pp. 72, 241]. The witness is Trinity College Cambridge,
+MS R.17.1, dated c. 1150; its folios have not been independently
+collated here, and the dialect of these glosses is not established.
+These readings must be distinguished from normalized *hīeġ* and from
+reconstructed or illustrative forms. The other inspected West Saxon
+traditions supply *hig/hyg* (including the Lambeth Psalter and CCCC 140)
+and, in later gospel copies, *haig/heig*; they do not provide a
+manuscript ⟨ie⟩ spelling of this noun.
 
 Independent support for a ‘hay-way’ compound comes from Langlands's
 topographical reading of S 445 *higweges*, though its transaction is
@@ -423,18 +467,37 @@ be expected to surface.
 
 ## 3.3 Dialect and date distribution
 
-The spellings sort cleanly. Anglian and early Kentish sources write
-⟨heg⟩/⟨hei-⟩ (VP, VH, Bede, charters); the tenth-century Northumbrian
-gospel glosses write ⟨heg⟩, ⟨heig⟩ (with the corrected first attempt
-⟨hehg⟩) and Farman's Mercian ⟨hóeg⟩; the eleventh-century Paris Psalter
-writes ⟨heg(e)⟩ and ⟨hig⟩ side by side; late West Saxon and later copies
-write ⟨hig⟩, ⟨hyg⟩, ⟨hieg⟩, with ⟨heig⟩/⟨haig⟩ in the latest gospel
-manuscripts and Dialogues C. The West Saxon i/y/ie-vocalism is the
-regular i-umlaut of \*ēa — a stem shape produced by the geminate route,
-by pre-umlaut levelling, or by Dahl's inherited diphthong (Section 5);
-the Anglian ē-vocalism is its regular smoothing, and the Psalter's
-mixed ⟨heg(e)⟩ ~ ⟨hig⟩ fits the Saxonized-Anglian character of its
-transmission [@Fulk1992Meter, pp. 410–414]. The late
+The spellings do not sort into a single, homogeneous dialect history.
+Anglian and early Kentish sources write ⟨heg⟩/⟨hei-⟩ (VP, VH, Bede,
+charters); the tenth-century Northumbrian gospel glosses write ⟨heg⟩,
+⟨heig⟩ (with the corrected first attempt ⟨hehg⟩) and Farman's Mercian
+⟨hóeg⟩; the eleventh-century Paris Psalter writes ⟨heg(e)⟩ and ⟨hig⟩
+side by side. Inspected West Saxon witnesses include ⟨hig/hyg⟩, with
+⟨heig/haig⟩ in later gospel copies and Dialogues C. The two Eadwine
+Psalter ⟨hieg⟩ readings are direct edition forms, but their dialect is
+unassigned and the manuscript images were not checked.
+
+Hogg distinguishes Alfredian and Ælfrician West Saxon dialect clusters
+[@Hogg2006, pp. 399–402]; he also stresses the linguistic differences
+between the Vespasian Psalter and Rushworth¹ (pp. 402–404), and cautions
+against treating differences between Aldred and Owun as straightforward
+geographical evidence for Northumbrian variation (pp. 405–406).
+
+For West Saxon ⟨ie⟩ more generally, Hogg lists three possible sources:
+palatalization of earlier /eː/, i-umlaut of earlier diphthongs, and
+hiatus resolution involving /i/ and /e/ [@Hogg2006, p. 400]. The first
+development is conditioned by a preceding palatal consonant (Hogg–Fulk
+2011, §§5.49, 5.53); the second is treated in their §§5.82–84; the
+third is discussed in §§5.146–147, where examples such as *sċe* and
+*hie* accompany an explicitly uncertain analysis. Campbell §234 also
+documents West Saxon contraction of /i+e/ and disyllabic forms in other
+dialects [@Campbell1959, §234]. These are attested developments, not
+evidence that any one applies to ‘hay’. Thus an ⟨ie⟩ reading, even if
+securely assigned to a West Saxon witness, would not by itself identify
+the source or prove an earlier diphthongal stem. The Anglian ē-vocalism
+is likewise not a proxy for a homogeneous West Saxon history; the
+Psalter's mixed ⟨heg(e)⟩ ~ ⟨hig⟩ fits its Saxonized-Anglian character
+[@Fulk1992Meter, pp. 410–414]. The late
 ⟨ei⟩/⟨ai⟩ spellings belong to the Middle English diphthongal
 developments discussed by Jones, and the Lindisfarne ⟨heig⟩ ~ ⟨heg⟩
 variation is his earliest instance of them. The single independent-noun
@@ -491,39 +554,52 @@ manuscript-specifically [@Mokrowiecki2015], and Jones reads the
 Lindisfarne acute of ⟨wég⟩ 'way' as marking mere duration [@Jones1989,
 p. 55]. The corrected accent census of Farman's Matthew–Mark stint
 (Mt 1:1–Mk 2:15; `FARMAN_ACCENTS.tsv`) contains 196 non-target types
-representing 299 tokens, plus target *hóeg* (one type, two tokens). The
-older 327-token total is withdrawn. This is a census of accented tokens,
-not a denominator for unaccented stressed vowels. The bounded matched
-calibration in `FARMAN_ACCENT_CALIBRATION.tsv` counts unaccented as well
-as accented occurrences: short-vowel-plus-glide controls (*weg*, *dæg*)
-have 1/53 accented tokens (1/9 surface types; 1/2 lexical types), the
-long-vowel-plus-glide control (*stīg*) 1/2 tokens (1/2 surface types; one
-lexical type), and the separate short-vowel-plus-homorganic-cluster panel
-5/133 tokens (5/23 surface types; 4/5 lexical types). The cluster panel
-comprises 32 clear verbal *gangan* forms plus *lond*, *word*, *hond*,
-and two *cild* tokens; eight ambiguous *gang*-family forms are reported
-separately and excluded. These small, selected controls are descriptive,
-not a corpus-wide rate: repeated tokens are not independent, and the long
-control is one word with two occurrences. If the short-HL panel is counted
-with short controls, the short rate is 6/186 tokens; if counted with
-lengthened controls, the combined long-like rate is 6/135. Neither
-sensitivity treatment supports a precise general calibration. The full
+representing 299 tokens, plus target *hóeg* (one type, two tokens): 197
+types and 301 Old English tokens total. The older 327-token total is
+withdrawn. This is a census of accented tokens, not a denominator for
+unaccented stressed vowels. The bounded matched calibration in
+`FARMAN_ACCENT_CALIBRATION.tsv` counts both accented and unaccented
+occurrences and separates tokens, surface types (acute ignored), exact
+spelling types, and lexical types. Short-vowel-plus-glide controls
+(*weg*, *dæg*) have 1/53 accented tokens, 1/9 surface types, and 1/2
+lexical types (ten exact spellings). Their closed monosyllables have
+1/26 accented tokens; forms with a following vowel graph have 0/27.
+The short-*e* panel includes the unaccented spelling *weig* at Mark 1:3
+(fol. 52v), where the gloss identifies ‘way’ in “prepare the way of the
+Lord”; this is counted as a closed monosyllable. The script separately
+excludes verbal *stigað/stigende* homographs from long-vowel noun *stīg*.
+The only long-vowel-plus-glide control, *stīg*, has 1/2 tokens, 1/2
+surface types, and 1/1 lexical type; both forms have following vowel
+graphs, so neither is a closed-monosyllable match. The accented
+*stígas* occurs at Mt 3:3, fol. 4v, where Latin *semitas eius* supports
+an accusative plural; the other token, *stige* on fol. 52v, is an
+alternative beside *gongas* and is not securely classified for case or
+number. No likelihood ratio is inferred from this single lexeme.
+
+Potential homorganic-cluster lengthening is kept separate. The short-HL
+panel has 5/133 accented tokens, 5/23 surface types, and 4/5 lexical
+types; by structure it has 3/52 closed monosyllables, 1/51 forms with a
+following vowel graph, and 1/30 multisyllabic forms. It comprises 32
+clear verbal *gangan* forms plus *lond*, *word*, *hond*, and two *cild*
+tokens. Eight ambiguous *gang*-family forms and one *dægne* token are
+reported separately and excluded. Treating the short-HL panel as short
+gives 6/186 accented tokens, 6/32 surface types, and 5/7 lexical types;
+treating it as lengthened gives 6/135 tokens, 6/25 surface types, and
+5/6 lexical types. These small, selected controls are descriptive, not
+a corpus-wide rate; repeated tokens are not independent. The full
 accent census separately classifies 162 long-vowel types, 14 short-HL
-types, 13 short types, and 7 uncertain types. Two further observations sharpen the inference for this
-word. First, no short-vowel exception is ever written with ⟨oe⟩,
-whereas *hóeg* combines the acute with the digraph that Farman
-otherwise applies to his ē/œ̄ class (Section 3.3). Second, both *hóeg*
-tokens are accented while most long vowels are not — but two tokens of
-one word, from one scribe, a century and more after the earliest
-charter spellings, remain two tokens. Farman's acute on
-*hóeg* is accordingly probabilistic evidence for a long nucleus — a
-printed, independently calibrated quantity signal, but not a direct
-manuscript verification; it is defeasible, confined to his own date and
-dialect, and (as
-Section 5 shows) incapable of discriminating among the surviving
-derivations, all of which predict length. Ritt's study of the
-neighbouring Lindisfarne practice has been ordered but not yet
-consulted [@Ritt2000].
+types, 13 short types, and 7 uncertain types.
+
+Two further observations sharpen but do not settle the inference for
+this word. First, no short-vowel control is written with ⟨oe⟩, whereas
+*hóeg* combines the acute with the digraph Farman otherwise applies to
+his ē/œ̄ class (Section 3.3). Second, both *hóeg* tokens are accented,
+but two tokens from one scribe are not independent lexical evidence.
+Farman's acute is probabilistic evidence about his own late tenth-century
+practice, not a precise rate or a ninth-century quantity fact. Ritt's
+completed analysis of Aldred's Lindisfarne accents is relevant
+methodologically but does not establish Farman's practice
+[@Ritt2000, pp. 498–510].
 
 The Middle English and modern reflexes are, perhaps surprisingly,
 uninformative, and Minkova has explained why: the expected /eːj/ of
@@ -549,17 +625,16 @@ demonstrably unusable here. And syllabification is equally
 underdetermined: nothing in the record distinguishes /hej/ from
 disyllabic /he.i/ for the early non-West-Saxon spellings.
 
-What remains is reconstruction — but reconstruction of a particular,
-non-circular kind. As Section 5 shows, the three derivations of the
-attested West Saxon and Anglian forms that survive scrutiny (gemination
-with glide resolution; pre-umlaut levelling; Dahl's inherited diphthong)
-all deliver a long nucleus, while the only derivation that delivers a
-short one (the untouched early-apocope form \*hewi) fails independently
-against the West Saxon vocalism. Long quantity in the direct singular is
-thus the shared prediction of every viable account rather than a datum —
-a prediction with which Farman's acute, the only printed and calibrated
-quantity signal in the record, is consistent without being able to
-adjudicate anything the accounts dispute.
+What remains is reconstruction, but its evidential premise must be
+explicit. The normalized West Saxon *hīeġ* is not itself a manuscript
+reading; the direct-edition ⟨hieg⟩ forms are in the Eadwine Psalter,
+whose dialect has not been established here. If those forms instantiate
+West Saxon ⟨ie⟩, the three documented historical sources of that
+diphthong still require separate evaluation before they can constrain
+the stem. The quantity of the direct singular is therefore not
+established by a securely localized West Saxon spelling. Farman's
+calibrated acute is a distinct, defeasible observation about his own
+practice and does not decide among the historical accounts.
 
 # 5. The competing derivations
 
@@ -588,13 +663,16 @@ literally the string A0 predicts, but every control shows the same
 digraph over certified short V+j, and the one later independent-noun
 ⟨hei⟩ (F.174, s. xiii) is demonstrably a respelling of exemplar ⟨hig⟩
 (Section 3.3), i.e. continuous with the levelled/geminated form, not
-with A0. Second, and decisively for West Saxon: the derivation cannot
-produce the ⟨ie/i/y⟩ vocalism at any stage, and it predicts a West
-Saxon e-vocalism of which the record — against the *weġ* control,
-spelled ⟨weg⟩ 31 times and never ⟨wig/wyg⟩ in the same gospel
-manuscripts — shows no trace. As a derivation of the attested West
-Saxon lexeme it fails; as a possible unlevelled relic behind some
-Anglian/Kentish tokens it is unfalsifiable but undemonstrated.
+with A0. Second, for the traditional normalized West Saxon *hīeġ*:
+the derivation cannot produce ⟨ie⟩. That inference is conditional,
+however: the direct ⟨hieg⟩ readings identified here are in the Eadwine
+Psalter, whose dialect is unassigned, while the inspected West Saxon
+manuscripts write ⟨hig/hyg⟩. The absence of ⟨ie⟩ from those witnesses
+does not establish a West Saxon e-vocalism, and the normalization is
+not a manuscript control. A0's failure as an account of a specifically
+West Saxon ⟨ie⟩ form therefore depends on a dialectal and textual
+identification not yet secured; its status behind Anglian/Kentish forms
+remains undetermined.
 
 **A1: early apocope plus independently motivated later changes.** Two
 candidates were examined. Hogg's hiatus resolution [@HoggGrammar1992,
@@ -608,8 +686,9 @@ A0's output into line with the non-West-Saxon ⟨heg⟩/⟨heig⟩ spellings,
 but no independent Old English change then supplies either length or
 West Saxon *īe*. The negative finding is worth stating precisely: **no
 independently supported chain of regular changes carries the
-early-apocope consonantal-w direct form to the attested West Saxon
-form — neither to its vocalism nor to its final consonant.** A
+early-apocope consonantal-w direct form to the normalized West Saxon
+form — neither to its vocalism nor to its final consonant — if that
+normalization represents the language of the relevant witness.** A
 lengthening rule invented for this word alone would be ad hoc and is
 rejected.
 
@@ -625,27 +704,26 @@ in both directions [@Hogg1979Analogy, pp. 68–73], and Old High German
 *houwi* beside *hewi* may show the very same act on the continent — but
 it is an extra, word-specific assumption, and its donor paradigm is
 attested in Old English only late: the Paris Psalter datives of
-Section 3.2 supply the protected oblique stem in the eleventh century,
-but nothing in the record dates the levelling itself to the pre-umlaut
+Section 3.2 supply an inflected stem in the eleventh century, but
+nothing in the record dates the levelling itself to the pre-umlaut
 window the account requires. The continental cognates strengthen the
 typological case considerably: Middle Dutch shows **hoye** < \*hauj-
 (the oblique stem) beside **houwe** < \*hawi (the old nominative) as
 doublet reflexes of the very same paradigm split [@Boutkan1995,
 pp. 212–213], so 'hay' demonstrably levelled — in both directions —
-elsewhere in West Germanic. And for West Saxon the levelling is more
-than an assumption: granted early apocope, the attested īe/i/y
-vocalism *demonstrates* that the protected stem had replaced \*hǣwi in
-the direct cell before i-umlaut, since no regular chain reaches that
-vocalism from the inherited form (A1). What remains undated is the act,
-not the fact.
+elsewhere in West Germanic. If the normalized West Saxon *hīeġ*
+reflects an actual West Saxon ⟨ie⟩ development, it would require an
+appropriate historical source. The available word-attestations do not
+establish that the source was specifically a protected stem, nor that
+levelling occurred; both remain inferences requiring adjudication.
 
 **B2: late apocope.** If \*-ą survived gemination [@Dahl1938,
 pp. 81–86; @HoggFulk2011, §2.23; @Boutkan1995, pp. 209–213], the direct
 singular geminated with its obliques: \*hawwją > (resolution of the
-geminate glide) \*hauj > \*ēaj-type diphthong > i-umlaut > West Saxon
-*hīeġ*, Anglian smoothed *hēġ*. Every step is regular; no analogy is
-needed for this word in any cell. This is the only account on the table
-that derives the complete attested form without analogical support. Its
+geminate glide) \*hauj > \*ēaj-type diphthong > i-umlaut > the
+normalized West Saxon *hīeġ*, Anglian smoothed *hēġ*. Every step is
+regular within the analysis; no analogy is needed for this word in any
+cell. Its
 cost is carried elsewhere: the ungeminated direct forms of Gothic and
 (on one reading) Old High German must be explained, and the chronology
 must survive the relic evidence (Section 6).
@@ -658,14 +736,13 @@ convergence: Ringe and Taylor themselves note that the West Germanic
 gemination of \*wj was "reversible" — \*awj > [aww'] > [auj]
 [@RingeTaylor2014, p. 53] — so that the geminate route, the reversed-
 geminate route and Dahl's never-geminated route all pass through the
-same pre-Old-English \*auj. **From that stage onward the three accounts
-are segment-for-segment identical, and no Old English datum in the
-collated record can distinguish them.** What the West Saxon vocalism
-requires is therefore weaker than cycle-1 formulations of the geminate
-argument suggested: not a historically geminated stem, but an ēa-type
-diphthongal nucleus feeding i-umlaut — which gemination, levelling and
-Dahl's parse each supply, and the consonantal-w form \*hewi alone does
-not.
+same pre-Old-English \*auj. **From that stage onward the accounts
+converge, but the currently identified ⟨hieg⟩ readings are not securely
+West Saxon and the normalized form is not an independent manuscript
+datum.** Hogg's several sources for West Saxon ⟨ie⟩ mean that even a
+securely West Saxon reading would require an additional
+environment-specific argument before it established an ēa-type stem
+in this word.
 
 # 6. Analogy and the comparative evidence
 
@@ -719,20 +796,18 @@ of that balance.
 
 # 7. Implications for the West Germanic chronology
 
-The result of Sections 4–6 can be stated compactly. For the lexeme: the
-attested Old English word continues an ēa-type diphthongal stem in the
-direct singular; that stem is reachable by three historically distinct
-routes which converge on pre-Old-English \*auj and are thereafter
-indistinguishable in English; the final -ġ is regular under the
-geminate analysis and analogical (from the oblique cases) under the
-others; and the inherited consonantal-w form, if it ever existed in
-English, left no identified trace. The newly established datives do not
-disturb this: by the eleventh century every account predicts *hēġe*. For
-the chronology: the word tests nothing. Under late apocope it is regular; under early apocope it is
-explained by a levelling with good typological parallels; under Dahl's
-parse it is outside gemination's input class altogether. A word
-compatible with every ordering on the table cannot evidence any of
-them.
+The result of Sections 4–6 is narrower than earlier versions of this
+argument claimed. The corpus establishes the noun and its inflected
+dative, but no securely localized manuscript ⟨ie⟩ form that by itself
+requires an ēa-type direct stem. The Eadwine Psalter's ⟨hieg⟩ readings
+are direct edition forms of c. 1150, but their dialect and manuscript
+readings remain unverified. If a West Saxon *hīeġ* analysis is adopted,
+gemination, pre-umlaut levelling, and Dahl's diphthongal parse remain
+possible routes; the surviving spellings do not choose among them. The
+final -ġ is regular under the geminate analysis and analogical under
+others, while the inherited consonantal-w form remains unattested in
+Old English. The Paris Psalter datives establish a late inflected stem,
+not the earlier chronology of any levelling.
 
 This negative has a positive use. 'Hay' has figured in the literature
 as part of the \*-awj- evidence for one chronology or another — Dal's
@@ -759,45 +834,26 @@ overt inflection only in the dative, in the three manuscript-verified
 *hege* of the metrical Paris Psalter. Its conventional long vowel is a
 reconstruction on which all viable derivations agree, supported but not
 proved by Farman's acute, which calibration shows to be probabilistic
-evidence for a long nucleus; its West Saxon vocalism requires a
-diphthongal stem but does not, by itself, prove gemination; its final
-consonant is either the one regular product that separates the geminate
-route from its rivals, or an analogical restoration with exact
-parallels in its own word class. Each of the three surviving
-histories — regular geminate development, early apocope repaired by
-levelling, Dahl's ungeminated diphthong — accounts for the full
-attested record, the datives included; none can be eliminated by Old
-English evidence now identified. The Paris Psalter forms supply the
-oblique stem Ringe and Taylor's levelling requires, but five centuries
-too late to date the levelling, and so they shift no weight among the
-accounts.
+evidence about his own practice. The direct ⟨hieg⟩ edition readings in
+the Eadwine Psalter are late and not securely assigned to West Saxon;
+the normalized *hīeġ* therefore cannot be treated as a manuscript fact.
+Hogg's three possible sources of West Saxon ⟨ie⟩ are real developments,
+but their applicability to this word remains to be demonstrated. The
+Paris Psalter forms supply an overtly inflected stem centuries too late
+to date the levelling proposed by the early-apocope account.
 
-The cycle-4 question — whether the early-apocope chronology's own
-regular output, serialized \*hei, survives in the record — admits three
-outcomes, and the evidence now locates the word among them precisely.
-That the inherited form explains all the spellings (outcome A) is
-excluded: the West Saxon ⟨ie/i/y⟩ tokens cannot continue it, by the
-manuscript-grounded controls of Section 5. That it explains the early
-non-West-Saxon spellings while West Saxon innovated (outcome B — a
-dialect-differentiated survival) is unfalsified but undemonstrated: the
-⟨heg⟩/⟨hei-⟩ graphs are compatible with it, but ninth-century ⟨ei⟩/⟨eg⟩
-spell /Vj/ regardless of quantity, so no non-West-Saxon spelling could
-ever reveal the relic even if it stood there; the alternative remains an
-open possibility, not a finding. What the record supports is outcome C
-for West Saxon: the inherited direct form, if early apocope created it,
-was replaced by the diphthongal stem before i-umlaut — so that under
-that chronology the West Saxon vocalism does not merely tolerate Ringe
-and Taylor's levelling but demonstrates it, while under late apocope
-the same forms are regular without it. The honest
-conclusion is that this word, so often cited in passing as if it bore
-on the gemination–apocope chronology, is a dependent of that debate and
-not a witness in it. What would change the verdict is identified,
-finite, and smaller than it was: the Lindisfarne
-accent study now on order, the arrival of Dal's original argument, and
-a manuscript check of Farman's acutes should the relevant Bodleian
-folios be digitized. Until then, the paradigm
-assembled here fixes what any future account of the word must explain,
-and the derivational comparison fixes what it cannot claim.
+The source record does not yet locate the early-apocope direct form
+among the proposed dialectal outcomes. The Kentish ⟨hei-⟩ is
+compound-internal and its lexical identification remains disputed; the
+thirteenth-century independent-noun ⟨hei⟩ in F.174 is a later
+respelling of ⟨hig⟩. The direct Eadwine Psalter ⟨hieg⟩ readings are
+potentially relevant to the West Saxon argument, but the witness's
+dialect and manuscript readings require verification. The next
+adjudication should assess the applicability of Hogg's ⟨ie⟩
+developments, the regular development of the inherited direct stem, and
+the necessity, timing, and scope of levelling. The source-preparation
+cycle has supplied the bounded evidence for that decision without
+settling it.
 
 [^s1196]: S 1196 is conventionally dated 859, but Lowe styles it “? 859” because Æthelwulf appears in its witness list despite having died in 858. Campbell suggests a slightly later copy with a date slip; Keynes notes the witnesses' smaller script may indicate a separate addition; Lapidge judges that the scribe copied from a charter he did not understand [@Lowe2001, pp. 76–78, 85–86]. The surviving sheet is s. ix med.; this qualification does not settle the date of the transaction or the authenticity of every textual layer.
 

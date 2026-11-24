@@ -25,7 +25,7 @@ hay-article	ref:Minkova2003	Minkova2003	cited source	Germanic/articles/hay/DRAFT
 hay-article	ref:Minkova2014	Minkova2014	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
 hay-article	ref:Mokrowiecki2015	Mokrowiecki2015	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md
 hay-article	ref:RingeTaylor2014	RingeTaylor2014	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
-hay-article	ref:Ritt2000	Ritt2000	cited source	Germanic/articles/hay/DRAFT.md
+hay-article	ref:Ritt2000	Ritt2000	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/QUANTITY_EVIDENCE.md; Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE6.md
 hay-article	ref:Skeat1871	Skeat1871	cited source	Germanic/articles/hay/EDITORIAL_CLEANUP_REPORT.md; Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md
 hay-article	ref:Skeat1874	Skeat1874	cited source	Germanic/articles/hay/EDITORIAL_CLEANUP_REPORT.md; Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md
 hay-article	ref:Skeat1878	Skeat1878	cited source	Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md
@@ -51,3 +51,6 @@ hay-article	ref:Cooper2000	Cooper2000	general library; future use	Germanic/artic
 hay-article	ref:Lowe2001	Lowe2001	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md; Germanic/articles/hay/SAME_SCRIBE_CONCORDANCE.tsv
 hay-article	ref:Wager2017	Wager2017	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md
 hay-article	ref:Versloot2025	Versloot2025	general library; future use	Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md
+hay-article	ref:Cooper2003	Cooper2003	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/COOPER_CHARTER_CORPUS.tsv; Germanic/articles/hay/RESEARCH_MEMO_CYCLE6.md; Germanic/articles/hay/SOURCE_PREPARATION_HANDOFF.md
+hay-article	ref:Harsley1889	Harsley1889	cited edition	Germanic/articles/hay/CONCORDANCE.tsv; Germanic/articles/hay/DOE_CROSSWALK_2026-11-23.tsv; Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE6.md
+hay-article	ref:Hogg2006	Hogg2006	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE6.md; Germanic/articles/hay/SOURCE_PREPARATION_HANDOFF.md

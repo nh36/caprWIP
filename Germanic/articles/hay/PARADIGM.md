@@ -47,17 +47,22 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
    still unattested.
 2. Outside the Paris Psalter datives, every attested token is direct
    (nom./acc.) or syntactically dative without an ending (*mid hig*), or
-   compound-internal. Verse now supplies direct-case tokens as well
-   (PPs 71.16, 105.17; Andreas 38); PPs 146.9 *hig* is Krapp's
-   emendation of manuscript ⟨hio⟩ and is not a token.
-3. The WS/late-WS spellings ⟨hig⟩, ⟨hieg⟩, ⟨hyg⟩ show the i/ie vocalism
-   that only an ēa-type diphthongal stem + i-umlaut produces regularly
-   (geminate route, levelling, or Dahl's diphthongal parse —
-   DAHL_REASSESSMENT.md); the Anglian ⟨heg⟩, the gospel-gloss ⟨heg, hehg,
-   heig, hóeg⟩ (cycle 2) and Kentish ⟨hei-⟩ are compatible both with
-   smoothed/Anglian ēġ from that stem and, in principle, with an
-   ungeminated \*hewi > \*hei reflex. The dative *hege* shares this
-   ambiguity at the segmental level (Anglian/poetic ⟨e⟩ vocalism).
+   compound-internal. Verse also supplies direct-case tokens (PPs 71.16,
+   105.17; Andreas 38); the Eadwine Psalter has direct-edition ⟨hieg⟩
+   readings at PPs 71.16 and 146.8 (Harsley 1889: 72, 241), but the
+   manuscript images have not been checked and the gloss dialect is
+   unassigned. PPs 146.9 *hig* is Krapp's emendation of manuscript ⟨hio⟩
+   and is not a token.
+3. West Saxon *hīeġ* is a normalized citation form, not a uniform
+   manuscript reading. Inspected West Saxon witnesses have ⟨hig/hyg⟩;
+   the only direct edition ⟨hieg⟩ readings located are the Eadwine Psalter
+   forms above, whose dialect is unassigned. Hogg (2006: 400) identifies
+   three possible sources of West Saxon ⟨ie⟩—palatalization of earlier
+   /eː/, i-umlaut of earlier diphthongs, and hiatus resolution involving
+   /i/ and /e/—but none is established for ‘hay’. Thus these spellings do
+   not by themselves decide the historical stem. Anglian ⟨heg⟩, the
+   gospel-gloss ⟨heg, hehg, heig, hóeg⟩ (cycle 2), Kentish ⟨hei-⟩, and
+   dative *hege* likewise remain compatible with competing accounts.
 4. Parallel copies (Dialogues C/O/H; the WS gospel MSS; **Ru2's John
    gloss, whose text-historical relation to Li is close but, per Kotake,
    possibly mediated rather than direct copying**) are single textual
