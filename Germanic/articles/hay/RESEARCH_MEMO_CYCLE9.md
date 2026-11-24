@@ -1,5 +1,10 @@
 # Research memorandum — cycle 9 (correction of cycle 8)
 
+> **Supersession:** `RESEARCH_MEMO_CYCLE10.md` retains the w-loss
+> correction but withdraws the assumption that contraction must predate
+> the earliest Anglian attestations and the corresponding categorical
+> predictions of analogy and quantity.
+
 Branch `research/hay-article`. This memorandum identifies the
 source-critical errors of cycle 8, their consequences, and the corrected
 historical argument. It supersedes `RESEARCH_MEMO_CYCLE8.md` wherever the

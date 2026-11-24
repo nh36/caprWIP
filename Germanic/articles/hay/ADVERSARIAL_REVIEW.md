@@ -1,5 +1,9 @@
 # Adversarial review of research cycle 1 (research cycle 2)
 
+> **Current review:** The two-sided evaluation of regular survival and
+> the controls that could discriminate it from remodelling are in
+> `RESEARCH_MEMO_CYCLE10.md`. The earlier verdicts below are historical.
+
 > **Cycle 7 status:** This file preserves earlier adversarial conclusions;
 > its categorical statements about Model A and a shared long-vowel
 > prediction are not current. Eadwine's ⟨hieg⟩ readings are now

@@ -1,5 +1,13 @@
 # Competing derivations of OE 'hay' (artifact E)
 
+> **Cycle 10:** Early apocope regularly gives \*hawi → \*hæwi →
+> \*hewi → \*he.i. The recorded \*hē is conditional on contraction;
+> its date is not established in final position. The alternative
+> \*he.i → \*hej has no independent historical control, and ⟨eg⟩ as
+> hiatus is not established. Contraction followed by restoration of /j/
+> remains a defensible Anglian account, not an identified historical
+> event. See `RESEARCH_MEMO_CYCLE10.md`.
+
 > **Cycle-9 correction (supersedes the cycle-8 section below and the
 > cycle-8 supersession notes above it).** Cycle 8's premise that loss of
 > \*w before unstressed \*i has no historical support was a

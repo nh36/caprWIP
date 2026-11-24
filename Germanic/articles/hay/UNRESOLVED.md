@@ -1,6 +1,22 @@
 # Hay research unresolved evidence
 
-## Current status after cycle 9 (supersedes "after cycle 8" below)
+## Current status after cycle 10
+
+- Early apocope yields hiatus; the date of word-final /e.i/ contraction
+  is open. A regular /e.i/ → /ej/ and ⟨eg⟩ as a hiatus spelling lack
+  independent evidence. Neither regular survival nor whole-stem
+  replacement is established for Vespasian.
+- Vowel length is not independently established in earliest Mercian.
+  Farman's repeated acute favours length locally, not generally.
+- Dated census: one secure endingless dative in a witness whose date
+  overlaps the Paris Psalter; Farman may supply an earlier one.
+  Additional corpus witnesses are not an exhaustively dated sample.
+- S 1196 probably merits considering ‘hay-road’ first, but the lexical
+  identification remains provisional and neither it nor S 328 decides
+  the history of a simplex form. The pending acquisitions remain out of
+  scope.
+
+## Historical status after cycle 9 (qualified above)
 
 Cycle 8's central result rested on a source-critical error and is
 corrected in `RESEARCH_MEMO_CYCLE9.md`. Loss of \*w before unstressed

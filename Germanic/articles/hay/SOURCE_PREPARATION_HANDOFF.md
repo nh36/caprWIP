@@ -1,8 +1,8 @@
 # Hay article source-preparation handoff
 
-> **Cycle-8 note.** The historical-inference cycle this handoff prepared
-> has now been completed: see `RESEARCH_MEMO_CYCLE8.md` for the current
-> verdicts and `README.md` for which assessments below are superseded.
+> **Current routing.** See `RESEARCH_MEMO_CYCLE10.md` for the present
+> historical assessment, `MORPHOLOGICAL_CONCORDANCE.tsv` for the expanded
+> census, and `README.md` for supersession and reproduction notes.
 > This document remains the authoritative record of the source-preparation
 > phase, its holdings, checkout dependencies, and access limitations.
 
@@ -171,7 +171,12 @@ The private PDFs and searchable texts are Git-ignored and checkout-specific
 under `docs/references/local/hay-article-literature-2026-11-24/`.
 Use `docs/references/hay-article-literature-2026-11-24/holdings.tsv` and
 `page_map.tsv` as the access and pagination index, and recheck paths and
-hashes in the next worktree. Cooper maps pp. 39–70 to sheets 2–33; Hogg
+hashes in the next worktree. Cycle 10 verified all 13 registered PDF
+and 13 searchable-text SHA-256 hashes in the research checkout. The
+additional DOE collation uses the Git-ignored corpus handoff under
+`docs/references/local/hay-article/`; the published appendix and token
+concordance retain the evidence and citation locators, not that export.
+Cooper maps pp. 39–70 to sheets 2–33; Hogg
 pp. 395–416 to sheets 2–23; Ritt pp. 497–512 to sheets 3–18 (admin
 sheets excluded from its OCR). Faulkner's local copy is a 28-sheet
 author preprint; no sheet-to-published-page mapping is claimed.

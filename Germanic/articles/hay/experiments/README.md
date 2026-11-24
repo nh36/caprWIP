@@ -18,6 +18,13 @@ pp. 260–1) as counterexamples. See `../RESEARCH_MEMO_CYCLE9.md`.
 
 ## Networks
 
+These networks test conditional outputs, not dates of application.
+The hiatus output `hei` denotes /he.i/; it is not a historical
+transcription of ⟨heg⟩. The contraction network assumes contraction has
+applied, not that unlike and identical sequences contracted together or
+before the Vespasian gloss. No resyllabification rule is justified by
+the attested controls. See `../RESEARCH_MEMO_CYCLE10.md`.
+
 - `wloss_contract.bin` — the regular post-umlaut chain: w-loss
   (R&T 6.7.1) + contraction (R&T 6.9.3 p. 318) + final-vowel weakening.
   Verified against *glī*, *pyle*, *ēde*, *mete*, *mene*; derives the

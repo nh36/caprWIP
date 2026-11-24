@@ -1,35 +1,31 @@
 # Old English ‘hay’ article
 
-**Status:** Research cycle 9 (critical correction of cycle 8) is
-complete. Cycle 8's central claim — that no loss of \*w before
-unstressed \*i exists, hence a regular \*\*hewe — was a
-source-critical error: Ringe & Taylor 2014: 257–61 (§6.7.1) establish
-the change, and the frozen `OEWLossBeforeI` correctly encodes it. The
-corrected result: the regular early-apocope direct cell is \*hē (via
-hiatus \*he.i and contraction); Anglian *hēġ* may continue it with only
-glīg-style analogical restoration of -ġ, while WS *hīeġ* requires the
-oblique vocalism; under late apocope no analogy is needed. The necessity
-and scope of analogy are dialect-differentiated, and the apocope
-chronology remains undecided.
+**Status:** Cycle 10 distinguishes the regular early-apocope hiatus
+\*he.i from a contracted continuation \*hē. Contraction has positive
+controls but no securely established terminus for final /e.i/ in
+earliest Mercian. Vespasian ⟨heg⟩ does not prove survival without
+analogy or wholesale replacement. Consonant restoration after
+contraction is a smaller plausible operation in Anglian; West Saxon
+high vowel quality favours protected vocalism under early apocope.
 
 ## Entry points
 
-1. [`RESEARCH_MEMO_CYCLE9.md`](RESEARCH_MEMO_CYCLE9.md) is the principal
-   memorandum: the cycle-8 errors, the corrected derivation, the
-   classified w-loss evidence, and the corrected verdicts.
-2. [`DRAFT.md`](DRAFT.md) is the current article (rewritten in cycle 9).
+1. [`RESEARCH_MEMO_CYCLE10.md`](RESEARCH_MEMO_CYCLE10.md) is the principal
+   memorandum and adversarial assessment. The cycle-9 memorandum remains
+   useful for the correction to the evidence for w-loss.
+2. [`DRAFT.md`](DRAFT.md) is the current, self-contained article.
    The built PDF is committed at [`hay-article.pdf`](hay-article.pdf).
-3. [`DERIVATIONS.md`](DERIVATIONS.md) holds the stage-by-stage derivation
-   record (cycle-9 correction at top); [`experiments/`](experiments/)
-   contains the reproducible finite-state verification (14/14 PASS;
-   research-only, not production).
+3. [`MORPHOLOGICAL_CONCORDANCE.tsv`](MORPHOLOGICAL_CONCORDANCE.tsv) records
+   individual readings and case decisions; [`DERIVATIONS.md`](DERIVATIONS.md)
+   and [`experiments/`](experiments/) document the conditional derivations
+   (research-only, not production).
 4. [`SOURCE_PREPARATION_HANDOFF.md`](SOURCE_PREPARATION_HANDOFF.md) and
    [`RESEARCH_MEMO_CYCLE7.md`](RESEARCH_MEMO_CYCLE7.md) document the
    completed source-preparation phase.
 
 ## Current assessments versus historical conclusions
 
-Use the cycle-9 memo and the **Current status after cycle 9** section at
+Use the cycle-10 memo and the **Current status after cycle 10** section at
 the top of [`UNRESOLVED.md`](UNRESOLVED.md) for present assessments.
 Earlier cycle memos (including `RESEARCH_MEMO_CYCLE8.md`, now flagged as
 superseded) preserve the research history; they are not current verdicts.
@@ -39,16 +35,41 @@ In particular:
   `OEWLossBeforeI`, the eowu/cleweþa "controls", the
   obligatory-whole-stem-levelling verdict, the bedd-equivalent weighting
   of 'hay', and the mene/hay minimal-pair symmetry are all withdrawn.
-- Quantity: long in the attested period on all surviving derivations;
-  the pre-contraction hiatus stage (⟨ei⟩, streide-type) could persist
-  into the earliest written period, so the earliest ⟨hei-⟩ items remain
-  unassigned.
+- Quantity: long under contraction or protected-stem derivations;
+  earliest Anglian spellings do not independently establish this
+  quantity. Farman provides moderate evidence for his own usage only.
 - The Eadwine ⟨hieg⟩ readings remain directly verified but dialectally
   unassigned; normalized *hīeġ* is not a manuscript reading.
-- The ‘hay-way’ reading of S 1196 *heiweg* remains disputed; no Kentish
-  paradigmatic history may be built on it.
+- ‘Hay-road’ has a provisional evidential advantage for S 1196
+  *heiweg*. No hypothesis about a Kentish simplex paradigm follows.
 - Farman sensitivity counts: use the cycle-7 6/147 figures,
   `FARMAN_ACCENT_CALIBRATION.tsv` and `calibrate_farman_accents.py`.
+
+## Reproducing the morphological census
+
+The tab-separated concordance has one row per witness reading, including
+parallel copies and one record (not two tokens) for a corrected form.
+`source` and `locus` identify the edition or corpus locator; `context`
+states the grounds for `case`. A `none` case is an isolated equivalent;
+`uncertain` is a construction without a decisive case marker.
+`ending` describes the visible form, independently of case.
+`image` means manuscript inspection, `edition` a printed reading,
+`apparatus` a reported correction, `corpus` an additional indexed
+reading, `candidate` an incompletely classified indexed result,
+`locator` an incompletely identified source, and `excluded` a diagnostic
+non-token. `unknown` does not imply absence. The article's dated set is
+the 9th–11th-century rows with status `edition`, `image`, or `apparatus`;
+all other rows remain available without contributing to its chronology.
+
+```sh
+awk -F '\t' 'NR > 1 && $2 ~ /^(09|10|11)c/ && $14 ~ /^(edition|image|apparatus)$/ {
+    print $10, $12
+}' Germanic/articles/hay/MORPHOLOGICAL_CONCORDANCE.tsv | sort | uniq -c
+```
+
+For group counts, count distinct `tradition` values within each case,
+not manuscript rows. Century-level date ranges do not resolve the
+relative order of overlapping witnesses.
 
 ## Private references and checkout dependency
 
