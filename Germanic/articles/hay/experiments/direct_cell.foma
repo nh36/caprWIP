@@ -1,74 +1,101 @@
-# Research-only cascade: regular development of the PWGmc direct cell *hawi
-# under early nasal apocope, with attested minimal-pair controls.
+# Research-only cascades: the direct cell of 'hay' under the competing
+# apocope chronologies. Cycle-9 revision.
 #
-# NOT a production cascade. This file exists solely to verify the cycle-8
-# reconstruction in ../DERIVATIONS.md ("Cycle 8 - the regular direct cell
-# established"). It must never be composed into Germanic/fsts/germanic.txt
-# or any adopted model.
+# NOT a production cascade. This file exists solely to verify the cycle-9
+# derivations in ../DERIVATIONS.md. It must never be composed into
+# Germanic/fsts/germanic.txt or any adopted model.
 #
-# Inputs are post-apocope PWGmc shapes (asterisks omitted):
-#   hawi     'hay'  direct cell (= attested OHG hewi, Goth. hawi)
-#   awi      'ewe'  (PGmc *awiz; R&T 5.1.2, 6.6.2, 6.9.4 -> OE eowu)
-#   klawiþa  'itch' (PNWGmc *klawiþo; R&T 5.1.2 -> OE cleweþa, attested)
-#   mani     'necklace' (early-apocope relic class; Stiles 2013 -> OE mene)
-#   mati     'food' (R&T 6.6.2 -> OE mete)
+# The cycle-8 version of this file encoded the (erroneous) assumption that
+# no loss of *w before *i existed. Ringe & Taylor 2014: 257-61 (6.7.1)
+# establish that non-word-initial *w was regularly lost before fully
+# unstressed *i, after i-umlaut and before general syncope; Campbell 1959:
+# SS237.1.b, 406, pp. 327-8 and Hogg 1992: S5.133 agree. The frozen
+# production definition OEWLossBeforeI already encodes this change with
+# those citations. The present cascades therefore INCLUDE the w-loss and
+# the subsequent contraction (R&T 6.9.3 p. 318), and model the documented
+# exceptions by their documented mechanisms:
+#   - eowu 'ewe': transferred to the o-stems BEFORE w-loss (R&T p. 259);
+#     modelled here as a post-umlaut input ewu, to which w-loss correctly
+#     does not apply.
+#   - cleweþa 'itch': R&T pp. 260-1 explicitly flag it as an isolated
+#     exception (lexical analogy with clawan, or suffix-form competition);
+#     the regular cascade accordingly predicts **cleþa, and the PASS below
+#     records that the attested form is the exception, not the rule.
 #
-# All rule motivations: R&T 5.1.2 (fronting before *wi), 6.6.2 (i-umlaut
-# raising ae > e; final -i > -e after light syllables), 6.2.4 (no
-# diphthongization before *wi); Hogg-Fulk SS3.19, 7.72 and Campbell S405
-# (w-loss confined to _u/_o and absolute final position - hence NO w-loss
-# rule in the regular cascade).
+# Inputs are post-i-umlaut pre-OE shapes (asterisks omitted), isolating
+# the two contested steps (w-loss, contraction) from uncontested earlier
+# developments:
+#   hewi      'hay' direct cell under early apocope (< *hawi < *hawja;
+#             = attested OHG hewi; R&T pp. 53, 173; Campbell S579(4))
+#   gliwi     'glee' direct cell (R&T pp. 259, 318 -> gli)
+#   pylwi     'pillow' (Lat. pulvinus; R&T p. 260 -> pyle)
+#   ewidi     'flock' (*awidi; R&T p. 259 -> Angl. ede with long e)
+#   meti      'food'      } no-w controls for the final-vowel treatment
+#   meni      'necklace'  } (R&T pp. 236-7; Stiles 2013: 15-16)
+#   ewu       'ewe' after o-stem transfer (R&T p. 259)
+#   klewiþa   'itch' (regular prediction **cleþa; attested cleweþa is
+#             R&T's flagged lexical exception)
 
-define TriggerC [w | n | t];
+define V [a|e|i|o|u|y|ā|ē|ī|ō|ū|ȳ|æ|ǣ];
+define Cns [b|c|d|f|g|h|k|l|m|n|p|r|s|t|w|þ|ð];
 
-# Anglo-Frisian fronting of *a before C + *i (R&T 5.1.2)
-define AFB a -> æ || _ TriggerC i;
+# Loss of non-word-initial *w before fully unstressed *i
+# (R&T 6.7.1 pp. 258-60; Campbell S406; cf. frozen OEWLossBeforeI, which
+# uses the same V Cns* _ i environment to cover the gierwan-class verbs)
+define WLoss w -> 0 || V Cns* _ [i|ī];
 
-# i-umlaut: raising of ae > e before C + *i (R&T 6.6.2)
-define IUmlaut æ -> e || _ TriggerC i;
+# Contraction of the resulting hiatus (R&T 6.9.3 p. 318: *glii, *eidi,
+# *streide "can only have become" gli, ede, strede by contraction, since
+# only contraction accounts for their long vowels). Possibly delayed by
+# generations: early Merc. streide (EpGl 899) and the disyllabic scansion
+# of stred at Beo 2436 show the uncontracted stage (Campbell S237.1.b;
+# Hogg S5.133).
+define Contract [e i -> ē , i i -> ī];
 
-# Weakening of unstressed medial *i in the -iþa suffix (cleweþa)
-define MedialWeaken i -> e || w _ þ;
-
-# Weakening of retained final *-i after a light syllable (mete, stede, mene)
-define FinalIWeaken i -> e || _ .#.;
+# Weakening of retained final *-i to -e after a consonant (mete class,
+# R&T pp. 236-7). Apocope after heavy syllables is not exercised by these
+# curated inputs and is not modelled.
+define FinalIWeaken i -> e || Cns _ .#.;
 
 # Orthography: k -> c
 define Orth k -> c;
 
-regex AFB .o. IUmlaut .o. MedialWeaken .o. FinalIWeaken .o. Orth;
-save stack regular_early.bin
+regex WLoss .o. Contract .o. FinalIWeaken .o. Orth;
+save stack wloss_contract.bin
 clear stack
 
 # ---------------------------------------------------------------------------
-# Variant cascade reproducing the frozen Model A step OEWLossBeforeI
-# (w -> 0 before unstressed i, ordered after i-umlaut as in the frozen
-# trace). Purpose: demonstrate overgeneration against the attested
-# controls eowu and cleweþa. Final-vowel weakening is left out, as in the
-# frozen A0 trace (output hei retains -i); the diagnostic failure is the
-# deleted medial w, which no final-vowel treatment can repair.
+# The pre-contraction hiatus stage (Campbell S237.1.b "*kaui- > *kei- >
+# *ke-"; spelling <ei> in Cp. streide). Relevant to the interpretation of
+# the earliest <hei-> spellings: hiatus could persist for some generations
+# (R&T p. 318).
 
-define WLoss w -> 0 || _ i;
+regex WLoss .o. Orth;
+save stack hiatus_stage.bin
+clear stack
 
-regex AFB .o. IUmlaut .o. WLoss .o. Orth;
-save stack wloss_variant.bin
+# ---------------------------------------------------------------------------
+# Analogical restoration of final -ġ from the protected cells. This is a
+# morphological operation, kept separate from the phonological cascades.
+# Precedent: gli -> glig "a re-formation" (Campbell SS411, 579(4): the
+# attested nom.-acc. sg. forms stand "under influence of the other
+# cases"); R&T p. 259 "gli, glig-".
+
+define GRestore [..] -> ġ || [ē|ī] _ .#.;
+
+regex GRestore;
+save stack g_restore.bin
 clear stack
 
 # ---------------------------------------------------------------------------
 # Late-apocope (B2-type) reference cascade for the diphthongal nucleus:
 # pre-OE *hauj (direct cell under late apocope, after *-awj- > *-auj-
-# resolution) and *auju 'island' (R&T pp. 173, 246).
+# resolution) and *auju 'island' (R&T pp. 173, 246). Unchanged from
+# cycle 8.
 
-# *au > *ea with brightening/levelling (R&T p. 173)
 define AuBright a u -> ē a;
-
-# i-umlaut of *ea by following j (R&T p. 246: *eaju > *ieju)
 define EaUmlaut ē a -> ī e || _ j;
-
-# Loss of final *-u after a heavy syllable (island: *ieju > ieg)
 define FinalULoss u -> 0 || j _ .#.;
-
-# Orthography: final j -> ġ
 define GOrth j -> ġ || _ .#.;
 
 regex AuBright .o. EaUmlaut .o. FinalULoss .o. GOrth;

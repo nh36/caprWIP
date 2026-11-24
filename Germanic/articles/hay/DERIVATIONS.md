@@ -1,5 +1,22 @@
 # Competing derivations of OE 'hay' (artifact E)
 
+> **Cycle-9 correction (supersedes the cycle-8 section below and the
+> cycle-8 supersession notes above it).** Cycle 8's premise that loss of
+> \*w before unstressed \*i has no historical support was a
+> source-critical error: Ringe & Taylor 2014: 257–61 (§6.7.1) establish
+> the change (post-i-umlaut, pre-syncope; positive examples sǣ, ǣ, glī,
+> nī-, ēde, pyle, strēn, streide/strēdun, gecnēþ, crēd, gecēd, the
+> gierwan-class), with Campbell §§237.1.b, 406, pp. 327–8 and Hogg §5.133
+> in agreement; eowu is saved by ō-stem transfer *before* w-loss (R&T
+> p. 259) and cleweþa is R&T's own flagged lexical exception (pp. 260–1).
+> The recommendation to withdraw the frozen `OEWLossBeforeI` is itself
+> withdrawn. The regular early-apocope outcome is **\*hē** (via hiatus
+> \*he.i and contraction, R&T 6.9.3 p. 318), not \*\*hewe; Anglian hēġ
+> may continue it with only glīg-style -ġ restoration, while WS hīeġ
+> requires the oblique vocalism. See `RESEARCH_MEMO_CYCLE9.md` and the
+> cycle-9 experiments (14/14 PASS).
+
+
 All CAPR stage traces below are quoted verbatim from the frozen PR #21
 capture `Germanic/docs/models/sc047/captures/sc047-adoption-v1.json.gz`
 (commit 113101ac5f169b589e1a9647cdf24d32cdd4d919, read-only worktree

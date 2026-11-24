@@ -24,7 +24,7 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
 
 | Cell | PGmc | Early apocope (A) regular | Geminate route (B2) regular | Dahl (no gemination) |
 |---|---|---|---|---|
-| nom.acc.sg | \*hawją | \*hawi > \*hæwi > (umlaut) \*hewi > \*\*hewe (cycle 8; the frozen CAPR *hei* is refuted — see DERIVATIONS.md) | \*hawwją > \*hauj- > \*ēa+i-uml > *hīeġ* | \*hauja̯ > \*hǣoi > \*hīe/\*hē |
+| nom.acc.sg | \*hawją | \*hawi > \*hæwi > (umlaut) \*hewi > (w-loss, R&T 6.7.1) \*he.i > (contraction) \*hē; attested Angl. *hēġ* = \*hē + analogical -ġ (glīg precedent). Cycle 9; the cycle-8 \*\*hewe is withdrawn — see RESEARCH_MEMO_CYCLE9.md | \*hawwją > \*hauj- > \*ēa+i-uml > *hīeġ* | \*hauja̯ > \*hǣoi > \*hīe/\*hē |
 | gen.sg | \*hawjas | \*hawwjas > *hīeġes* (protected; geminates in both models) | same | \*haujas > *hī(e)ges* |
 | dat.sg | \*hawjai | *hīeġe* | same | |
 | nom.acc.pl | \*hawjō | *hīeġ* | same | |
@@ -77,18 +77,20 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
    gloss is Owun's rather than Farman's. Cook 1894 lemmatizes Li *heg* 'hay' separately from *heh*
    'high' and the hedge word, securing the lexical identity of the
    gospel tokens.
-6. **Cycle-8 adjudication of the direct cell.** The regular
-   early-apocope development of the direct cell is now established:
-   \*hawi (= attested OHG *hewi*) > \*hǣwi > \*hewi > \*\*hewe, with w
-   retained at every stage (controls *eowu* 'ewe' and attested *cleweþa*
-   'itch', R&T 5.1.2, 6.6.2; final -i > -e after light syllables as in
-   *mete*, *mene*). \*\*hewe is unattested, and no attested spelling can
-   continue it. Consequently a mixed paradigm *hewe* ~ *hīeġes* cannot
-   be reconstructed as the ancestor of the attested record: under early
-   apocope the direct cell must have been replaced by the oblique stem
-   (R&T's ">—"), in every dialect; under late apocope the uniform
-   paradigm is regular from the start. The attested uniform paradigm
-   (direct *hēġ/hīeġ/hig*, dative *hege*) is thus either original (late
-   apocope) or the product of obligatory whole-stem levelling (early
-   apocope); an unlevelled mixed paradigm surviving into the record is
-   positively excluded.
+6. **Direct-cell adjudication (cycle 9, correcting cycle 8).** The
+   regular early-apocope development of the direct cell is \*hawi (=
+   attested OHG *hewi*) > \*hǣwi > \*hewi > (loss of w before unstressed
+   i, R&T 2014: 257–61 §6.7.1; Campbell §406) \*he.i > (contraction,
+   R&T 6.9.3 p. 318) \*hē, long by contraction (controls *glī*, *ēde*,
+   *gecēd*, *pyle*; *eowu* is saved by pre-w-loss ō-stem transfer and
+   *cleweþa* is R&T's flagged lexical exception). The cycle-8
+   reconstruction \*\*hewe and its "w retained at every stage" premise
+   are withdrawn. Consequently under early apocope Anglian *hēġ* may
+   continue the inherited direct cell with only analogical restoration
+   of -ġ (precedent *glī* → *glīg*, Campbell §§411, 579(4)), whereas WS
+   *hīeġ* requires the oblique vocalism (stem replacement or import);
+   under late apocope the uniform paradigm is regular from the start. A
+   mixed paradigm \*hē ~ *hīeġes* with dialect-internal WS survival of
+   \*hē is not attested (no WS †*hē* 'hay' forms); whether that absence
+   reflects levelling or the geminate route is the open chronological
+   question. See RESEARCH_MEMO_CYCLE9.md.

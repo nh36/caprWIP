@@ -131,36 +131,42 @@ the gemination–apocope debate rather than a *diagnostic* of it — and
 Dahl's analysis, if admitted, formalizes that dependence (see
 DAHL_REASSESSMENT.md §4).
 
-## 4. Cycle-8 revision: two new decisive controls, and a changed verdict
+## 4. Cycle-9 revision: the w-loss controls (supersedes the cycle-8 §4)
 
-Cycle 8 added the two words that settle the regular development of the
-*direct cell* itself (full derivation in DERIVATIONS.md; formal
-verification in experiments/):
+The cycle-8 version of this section misused *eowu* and *cleweþa* as
+proof that no loss of \*w before \*i existed, and concluded that the
+regular early-apocope direct cell was \*\*hewe. Ringe & Taylor treat
+the w-loss directly (2014: 257–61 §6.7.1: regular, post-i-umlaut,
+pre-syncope); *eowu* retains w only because 'ewe' was transferred to the
+ō-stems before the change (p. 259) — R&T use it to *date* the change —
+and *cleweþa* is their explicitly flagged lexical exception (pp. 260–1).
+The corrected control set:
 
-| Lexeme | Reconstruction | Structure | Regular OE outcome | Attested | What it secures |
-|---|---|---|---|---|---|
-| ewe | \*awiz, PWGmc \*awi | \*-awi-, i-stem | \*ǣwi > \*ewi (w retained) | *eowu* (after ō-stem shift; R&T 5.1.2, 6.6.2, 6.9.4) | the exact minimal pair for post-apocope \*hawi: fronting before \*wi, umlaut, **no w-loss** |
-| itch | PNWGmc \*klawiþō | \*-awi-, suffixed | \*klǣwiþa > \*klewiþa | **cleweþa** (attested; R&T 5.1.2) | \*-awi- survives as -ewe- inside an attested OE word |
+| Lexeme | Preform | Regular OE outcome | Attested | What it secures |
+|---|---|---|---|---|
+| glee | PWGmc \*gliwi | \*glii > *glī* (contraction) | *glī*, re-formed *glīg*, *glēo(w)* | **the structural twin of 'hay'**: light neuter ja-stem, direct cell survives w-loss + contraction, -g later restored from the inflected cases (Campbell §§411, 579(4)) |
+| flock | \*awidī | \*ēidi > Angl. *ēde* | *ēde* (North., N. Merc.) | medial \*-awi- with w-loss and contraction to a long vowel |
+| pillow | Lat. pulvinus → \*pylwi | \*pyli > *pyle* | *pyle* | postconsonantal w-loss; loanword, independent of Germanic reconstruction |
+| sea, law | \*sāwi, \*āwi | *sǣ*, *ǣ* | *sǣ*, *ǣ* | final \*-wi after long vowel (apocope or contraction) |
+| strew (pret.) | \*strawidē | \*strǣide > *strēde* | Cp. *streide*, Ru² *strēdun*, Beo 2436 *strēd* (disyllabic) | the persisting ⟨ei⟩ hiatus stage and its contraction |
+| food, necklace | \*mati, \*mani | *mete*, *mene* | *mete*, *mene* | final-vowel treatment where no w is involved |
+| ewe | \*awi → ō-stem | *eowu* | *eowu* | the dating of w-loss after i-umlaut (transfer precedes the change) |
+| itch | \*klawiþō | \*\*clēþa predicted | *cleweþa* | R&T's flagged exception (lexical analogy with *clāwan* or suffix competition) |
 
-These controls refute the frozen Model A step `OEWLossBeforeI` and fix
-the regular early-apocope outcome of the direct cell as \*\*hewe —
-disyllabic, short-vowelled, w-retaining, the structural twin of *mene*
-and of OHG *hewi*.
+With the w-loss admitted, the regular early-apocope direct cell of 'hay'
+is \*hē (via \*hewi > \*he.i, contraction), on the *glī* model.
 
-**Changed reading of the table.** The §3 verdict that the glide class is
-"internally non-discriminating" and that 'hay' is a mere *dependent* of
-the chronology debate rested on the possibility that A0's \*hei survived
-in ⟨heg/hei⟩-type spellings. That possibility is now closed: the regular
-early-apocope form is \*\*hewe, which no attested spelling can continue,
-and no regular route from \*hawi to a monosyllable exists. 'Hay'
-therefore moves into the same column as *net*, *bed* and *kin*: its
-attested paradigm is regular only under late apocope and requires
-whole-stem levelling under early apocope. It remains weaker than 'bed'
-in one respect — under late apocope its surface is also derivable
-without gemination (Dahl) — but on the apocope question itself the word
-now testifies, in the same direction as the other light neuter ja-stems.
-The *mene/meni* relics remain the strongest counterweight on the early
-side; note the sharpened contrast they now form with 'hay': \*manją and
-\*hawją are structurally parallel inputs, *mene* **is** the regular
-early-apocope outcome surviving, while \*\*hewe — its exact analogue —
-is nowhere attested.
+**Changed reading of the table (again).** 'Hay' does **not** move into
+the *net/bed/kin* column. Those words' geminate direct cells require
+whole-stem levelling under early apocope; 'hay''s early-apocope cost is
+dialect-differentiated and smaller — Anglian *hēġ* is derivable as \*hē
+plus the glīg-precedented restoration of -ġ, and only the WS vocalism
+(*hīeġ*, matching the oblique stem) requires a larger analogical
+operation (or the geminate route). The cycle-8 claim that the word
+"testifies with the other light neuter ja-stems" overstated its weight,
+as did the mene/hay "minimal pair" (under early apocope *mene* is
+regular **and** Anglian *hēġ* is near-regular; the pair is not
+symmetric). The §3 verdict that the glide class is internally
+non-discriminating stands; what cycle 9 adds is that within that class
+'glee' supplies a complete precedent for an inherited ungeminated direct
+stem with later limited paradigmatic restoration.

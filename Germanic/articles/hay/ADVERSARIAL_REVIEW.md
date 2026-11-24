@@ -144,7 +144,13 @@ what is established is the narrower attestation symmetry.**
 
 ---
 
-# Adversarial review of the cycle-8 argument (cycle 8)
+# Adversarial review of the cycle-8 argument (cycle 8) — SUPERSEDED
+
+> **Cycle 9:** the argument reviewed below was built on a source-critical
+> error (see RESEARCH_MEMO_CYCLE9.md); this review failed to catch it
+> because it did not re-verify the negative claim about w-loss against
+> R&T §6.7.1. Retained for the record. The current review follows at the
+> end of this file.
 
 The cycle-8 claims under attack: (i) regular early-apocope outcome of
 the direct cell is \*\*hewe; (ii) `OEWLossBeforeI` is refuted; (iii)
@@ -231,3 +237,79 @@ with the Objection-6 qualification built into its statement: 'hay'
 joins the C+j nouns as an analogical liability of early apocope, while
 *mene* remains an analogical liability of late apocope; the pair is
 now the sharpest known minimal contrast in the debate.
+
+
+# Adversarial review of the cycle-9 argument (cycle 9)
+
+Claims under attack: (i) the regular early-apocope direct cell is \*hē
+(via w-loss and contraction); (ii) Anglian *hēġ* may continue it with
+only analogical -ġ restoration; (iii) WS *hīeġ* requires the oblique
+vocalism under early apocope; (iv) the attested word is long in the
+attested period on all surviving derivations.
+
+**Objection 1: the handbooks themselves do not derive 'hay' this way.**
+Campbell §579(4) assigns *hīg* to the geminate \*-auj- route (§120.2),
+and R&T pp. 173, 246 posit stem replacement (\*hǣwi >— \*hēaj). No
+authority derives attested *hēġ* from \*hē + restored -ġ. — Accepted as
+a fact about the literature. The response is that every component of the
+proposed route is certified by the same authorities (w-loss: R&T 6.7.1,
+Campbell §406; contraction: R&T 6.9.3, Campbell §237.1.b; -ġ
+restoration: Campbell §§411, 579(4) for *glīg*), and Campbell §579(4)
+expressly says the attested direct forms stand "under influence of the
+other cases", with \*hewi "the undisturbed development". The article
+must present the \*hē + ġ account as a *derivable possibility* the
+handbooks' machinery licenses but does not state, not as received
+doctrine. VERDICT: presentation constraint, accepted.
+
+**Objection 2: Anglian ē cannot discriminate.** Smoothed ē < \*ēa
+(geminate route) and contracted ē < \*e.i are orthographically and
+phonologically identical in Anglian; the Anglian evidence is therefore
+consistent with both routes and proves neither. — Correct, and the
+article must say so. The claim is only that a *near-regular* Anglian
+derivation exists under early apocope, lowering that chronology's cost;
+it is not provable from the Anglian spellings. VERDICT: accepted;
+wording adjusted.
+
+**Objection 3: why no WS †hē?** If \*hē was the regular outcome
+everywhere (early WS *gecnēp* shows the same contraction in WS), the
+total absence of w-less, g-less 'hay' forms in WS needs explanation. —
+Under early apocope the WS paradigm replaced the direct cell with the
+oblique stem (R&T); under late apocope \*hē never existed. Both
+chronologies explain the absence; it discriminates nothing. But the
+absence does mean the \*hē stage is nowhere directly attested for this
+word — the argument is entirely derivational. VERDICT: accepted as a
+stated limitation.
+
+**Objection 4: the contraction's chronology is loose.** R&T p. 318:
+exactly when contraction occurred "is not recoverable with certainty";
+hiatus persisted into the earliest glossaries (*streide*). So the
+earliest ⟨hei-⟩ items could in principle spell \*he.i — reviving a
+version of the relic reading that cycle 8 thought closed. — Correct,
+with two bounds: (a) only the very earliest items qualify (S 1196's
+single-sheet date and lexical identity are both unresolved); (b) by the
+date of the secure attestations (Li., Ru., psalters) contraction is long
+complete on every account. VERDICT: accepted; the hedge is in
+QUANTITY_EVIDENCE.md and the article.
+
+**Objection 5: g-restoration after ē is unparalleled** — *glīg* restores
+-g after ī, and the gecēd-class relics show no †gecēġd. — The relics are
+verb forms, where no paradigm pressure favours -ġ; the noun's protected
+cells all contained -ġ-. As an analogical (morphological) operation it
+is not subject to a phonological parallel requirement, but the absence
+of a second noun showing ē + restored ġ keeps this a precedent-adjacent,
+not precedent-identical, operation. VERDICT: partially accepted; stated.
+
+**Objection 6: Dahl.** Cycle 9 calls Dahl's parse a live representational
+alternative but still runs the early-apocope derivation on the
+consonantal parse (\*hawi). If the direct cell was \*hau̯i̯ (Dahl), the
+w-loss/contraction machinery never engages. — Correct: the \*hē result
+is conditional on the consonantal parse, which OHG *hewi* (R&T's
+"inherited nom.-acc. sg.") supports but Dahl denies. The article states
+the conditionality. VERDICT: accepted.
+
+**Net assessment.** The cycle-9 corrections stand; the positive
+contribution survives in conditional, dialect-differentiated form: under
+early apocope with the consonantal parse, Anglian needs only -ġ
+restoration while WS needs the oblique vocalism; under late apocope (or
+Dahl's parse) other routes are regular. No categorical chronological
+verdict is licensed.

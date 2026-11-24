@@ -1,6 +1,33 @@
 # Hay research unresolved evidence
 
-## Current status after cycle 8
+## Current status after cycle 9 (supersedes "after cycle 8" below)
+
+Cycle 8's central result rested on a source-critical error and is
+corrected in `RESEARCH_MEMO_CYCLE9.md`. Loss of \*w before unstressed
+\*i is an established regular change (R&T 2014: 257–61 §6.7.1; Campbell
+§§237.1.b, 406; Hogg §5.133); the regular early-apocope outcome of the
+direct cell is \*hē (via hiatus \*he.i and contraction), not
+\*\*hewe. Consequently:
+
+- Anglian hēġ may continue the inherited direct cell with only the
+  analogical restoration of -ġ (precedent: glī → glīg); WS hīeġ requires
+  the oblique vocalism (stem replacement/import) under early apocope.
+  The necessity and scope of analogy are dialect-differentiated.
+- Under late apocope both dialects are regular without analogy; Dahl's
+  variant restores -ġ analogically by his own statement.
+- Quantity: long in the attested period on all surviving derivations
+  (the early-apocope route now by contraction); the pre-contraction
+  hiatus stage (⟨ei⟩, streide-type) could persist into the earliest
+  written period, so the earliest ⟨hei-⟩ items remain hedged.
+- The mene/hay minimal-pair symmetry and the bedd-equivalent weighting
+  of 'hay' are withdrawn.
+
+Still unresolved: the apocope chronology itself; the status of OHG hewi
+(inherited vs remodelled); the dialect/exemplar of the Eadwine ⟨hieg⟩
+readings; the lexical identity of S 1196 heiweg and S 328 Hegforde; the
+inheritance of the mene-type relics.
+
+## Current status after cycle 8 (superseded by cycle 9 above)
 
 Cycle 8 resolved the central open question of cycle 7. The regular
 development of the inherited direct cell under early nasal apocope is now

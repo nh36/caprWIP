@@ -1,44 +1,44 @@
-# Research-only formal experiments (cycle 8)
+# Direct-cell experiments ('hay')
 
-This directory verifies the cycle-8 reconstruction of the regular
-direct-cell development of OE 'hay' (see `../DERIVATIONS.md`, section
-"Cycle 8 — the regular direct cell established"). Nothing here is a
-production cascade; nothing here may be composed into
-`Germanic/fsts/germanic.txt` or the frozen SC047 models.
+Research-only finite-state verification of the derivations in
+`../DERIVATIONS.md`. Nothing here is a production cascade; nothing may be
+composed into `Germanic/fsts/germanic.txt` or any adopted model.
 
-## Contents
+## Cycle-9 revision
 
-- `direct_cell.foma` — three small cascades, each rule cited to
-  Ringe–Taylor, Hogg–Fulk or Campbell:
-  1. `regular_early.bin` — the regular early-apocope development of
-     post-apocope \*hawi with the attested minimal-pair controls
-     \*awi ('ewe'), \*klawiþa (> attested *cleweþa* 'itch'),
-     \*mani (> *mene*), \*mati (> *mete*). Contains **no w-loss rule**,
-     because none is documented before \*i.
-  2. `wloss_variant.bin` — reproduces the frozen Model A step
-     `OEWLossBeforeI` and demonstrates its overgeneration: it derives
-     \*\*ei for attested *eowu* and \*\*cleiþa for attested *cleweþa*.
-  3. `late_b2.bin` — the late-apocope diphthongal reference chain
-     (\*hauj > *hīeġ*) with the attested control \*auju > *īeġ* 'island'.
-- `expected.tsv` — the ten input/expected pairs with notes.
-- `run_direct_cell.sh` — compiles the cascades with `foma` inside the
-  backend container (in `/tmp`, nothing written to the repository or
-  `/usr/app`) and checks every pair; exits non-zero on any mismatch.
+The cycle-8 version of these experiments encoded the erroneous premise
+that loss of *w before unstressed *i has no historical support. Ringe &
+Taylor 2014: 257–61 (§6.7.1) establish the change (after i-umlaut, before
+general syncope), with Campbell 1959: §§237.1.b, 406, pp. 327–8 and Hogg
+1992: §5.133 in agreement, and the frozen production definition
+`OEWLossBeforeI` already cites them. The cycle-8 "overgeneration"
+demonstration misread *eowu* (saved by ō-stem transfer before w-loss,
+R&T p. 259) and *cleweþa* (R&T's own flagged lexical exception,
+pp. 260–1) as counterexamples. See `../RESEARCH_MEMO_CYCLE9.md`.
 
-## Reproduction
+## Networks
+
+- `wloss_contract.bin` — the regular post-umlaut chain: w-loss
+  (R&T 6.7.1) + contraction (R&T 6.9.3 p. 318) + final-vowel weakening.
+  Verified against *glī*, *pyle*, *ēde*, *mete*, *mene*; derives the
+  early-apocope direct cell of 'hay' to **\*hē**. The ō-stem transfer of
+  'ewe' is modelled explicitly (input `ewu`); the regular prediction
+  \*\*clēþa for 'itch' records that attested *cleweþa* is the exception.
+- `hiatus_stage.bin` — the pre-contraction hiatus stage (⟨ei⟩; Campbell
+  §237.1.b, early Merc. *streide*; Hogg §5.133).
+- `g_restore.bin` — the analogical restoration of final -ġ from the
+  protected cells, kept separate from the phonology (precedent:
+  *glī* → *glīg*, Campbell §§411, 579(4)).
+- `late_b2.bin` — late-apocope geminate route (*hauj* → *hīeġ*; *auju* →
+  *īeġ*), unchanged from cycle 8.
+
+## Run
+
+From the repository root, with the backend container up:
 
 ```sh
 bash Germanic/articles/hay/experiments/run_direct_cell.sh
 ```
 
-Requires the default `docker compose` stack to be up. Last verified:
-all 10 checks PASS.
-
-## Result
-
-The regular early-apocope outcome of the direct cell is disyllabic
-\*\*hewe with retained w (segment-for-segment the twin of attested OHG
-*hewi* and OE *mene*); it is unattested in Old English and cannot
-underlie any attested spelling of 'hay'. The Model A rule
-`OEWLossBeforeI` is contradicted by *eowu* and *cleweþa* and must not be
-promoted to production in any form.
+Compiles in a container tmpdir and checks every pair in `expected.tsv`
+(currently 14/14); exits nonzero on any mismatch.

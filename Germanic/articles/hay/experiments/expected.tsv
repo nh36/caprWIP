@@ -1,11 +1,15 @@
-# cascade bin	input (post-apocope PWGmc)	expected output	note
-regular_early.bin	hawi	hewe	regular direct cell: unattested **hewe, twin of OHG hewi
-regular_early.bin	awi	ewe	pre-OE *ewi/*ewe; attested eowu after o-stem shift (R&T 6.9.4)
-regular_early.bin	klawiþa	cleweþa	ATTESTED cleweþa 'itch' (R&T 5.1.2) - w retained
-regular_early.bin	mani	mene	ATTESTED mene, early-apocope relic (Stiles 2013)
-regular_early.bin	mati	mete	ATTESTED mete (R&T 6.6.2)
-wloss_variant.bin	hawi	hei	frozen Model A output
-wloss_variant.bin	awi	ei	WRONG vs attested eowu: OEWLossBeforeI overgenerates
-wloss_variant.bin	klawiþa	cleiþa	WRONG vs attested cleweþa: OEWLossBeforeI overgenerates
+# bin	input	expected	note
+wloss_contract.bin	hewi	hē	'hay' direct cell, early apocope: regular outcome (R&T 6.7.1+6.9.3)
+wloss_contract.bin	gliwi	glī	ATTESTED glī 'glee' (R&T pp. 259, 318)
+wloss_contract.bin	pylwi	pyle	ATTESTED pyle 'pillow' (R&T p. 260; postconsonantal w-loss, no hiatus)
+wloss_contract.bin	ewidi	ēde	ATTESTED Angl. ēde 'flock' (R&T p. 259; medial w-loss + contraction)
+wloss_contract.bin	meti	mete	ATTESTED mete: no w, final -i weakens (R&T pp. 236-7)
+wloss_contract.bin	meni	mene	ATTESTED mene: early-apocope relic (Stiles 2013: 15-16)
+wloss_contract.bin	ewu	ewu	'ewe' after o-stem transfer: w-loss correctly inapplicable (R&T p. 259)
+wloss_contract.bin	klewiþa	clēþa	regular prediction; attested cleweþa is R&T's flagged exception (pp. 260-1)
+hiatus_stage.bin	hewi	hei	pre-contraction hiatus stage (Campbell S237.1.b; cf. Cp. streide)
+hiatus_stage.bin	gliwi	glii	pre-contraction hiatus (R&T p. 318 *glii)
+g_restore.bin	hē	hēġ	analogical -ġ restoration -> Angl. hēġ (glīg precedent)
+g_restore.bin	glī	glīġ	ATTESTED glīg: re-formation (Campbell SS411, 579(4))
 late_b2.bin	hauj	hīeġ	late-apocope direct cell, regular (R&T p. 246)
-late_b2.bin	auju	īeġ	ATTESTED ieg 'island' control (R&T pp. 173, 246)
+late_b2.bin	auju	īeġ	ATTESTED īeġ 'island' control (R&T pp. 173, 246)

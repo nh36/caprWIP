@@ -1,5 +1,15 @@
 # Research memorandum — cycle 8 (Fable research cycle)
 
+> **SUPERSEDED (cycle 9).** This memorandum's central negative claim —
+> that no loss of \*w before unstressed \*i exists in the handbooks —
+> is a source-critical error (R&T 2014: 257–61 §6.7.1 treats the change
+> directly; the frozen `OEWLossBeforeI` cites it). The reconstruction
+> \*\*hewe, the refutation of the frozen rule, the eowu/cleweþa
+> "controls", the obligatory-whole-stem-levelling verdict, the quantity
+> argument's basis, and the mene/hay minimal-pair claim are all corrected
+> in `RESEARCH_MEMO_CYCLE9.md`. Retained for the research record only.
+
+
 Scope: the first-principles historical investigation commissioned after
 the seven source-preparation cycles. Central question: **did Old English
 'hay' require analogy under early nasal apocope?** Answer: **yes — and

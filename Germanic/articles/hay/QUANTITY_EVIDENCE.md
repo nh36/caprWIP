@@ -40,6 +40,23 @@ class), *glīg/glēo* 'glee' (\*gliwą/\*gliwi, same structure with i-grade).
 
 ## Assessment
 
+> **Cycle-9 revision (supersedes the cycle-8 revision, preserved
+> below).** Cycle 8's basis was wrong: `OEWLossBeforeI` is not refuted
+> (R&T 2014: 257–61 §6.7.1 establishes the w-loss; Campbell §§237.1.b,
+> 406; Hogg §5.133), \*\*hewe is withdrawn, and the regular
+> early-apocope outcome is \*hē via hiatus \*he.i and contraction
+> (R&T 6.9.3 p. 318) — **long by contraction**, like glī, ēde, gecēd.
+> The headline conclusion survives in corrected form: every surviving
+> derivation (regular early-apocope \*hē(+ġ), A2 levelling, B2
+> geminate, Dahl) yields a long vowel **in the attested period**. One
+> new hedge: the pre-contraction hiatus stage had a short first vowel
+> and could persist into the earliest written period (streide, EpGl;
+> Beo 2436 scansion), so the earliest ⟨hei-⟩ items (S 1196, if 'hay')
+> cannot be assigned quantity. The 9th–11th-century attestations are
+> long on all accounts. See `RESEARCH_MEMO_CYCLE9.md`.
+>
+> *Superseded cycle-8 text follows for the record:*
+>
 > **Cycle-8 revision.** The first bullet below and the cycle-7
 > qualifications are superseded in one specific respect: the regular
 > development of the inherited direct form is no longer unresolved.

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Research-only verification of the cycle-8 direct-cell reconstruction.
+# Research-only verification of the cycle-9 direct-cell derivations.
 # Compiles experiments/direct_cell.foma inside the backend container and
 # checks the derived outputs against expected.tsv. Touches nothing in
 # production; all compilation happens in a container tmpdir.
