@@ -75,11 +75,14 @@ Ritt 2000 and Dal 1934 are ILL requested and awaiting delivery.
   `oldestenglishtex83sweeuoft`; the complete scan is also held locally at
   `docs/references/sweet_1885_oldest_english_texts.pdf`): Ct. 43 =
   S 1196 (p. 450, *cyniges hei weg*, dated 859) verified, with the ⟨ei⟩
-  controls *dei* (Ct. 39, 42) and *Deimund* (Ct. 43 witness list) and
-  *deg/dege* (Ct. 41, 45).
-- **Electronic Sawyer, S 1196**: date 859, contemporary Christ Church
-  single sheet (BL Cotton Augustus ii.16); authenticity acceptances
-  (Drögereit; Campbell 1938: 146–7; Kuhn 1943: 470) as reported there.
+  charter controls *dei* (Ct. 39, 42) and *deg/dege* (Ct. 41, 45).
+  *Deimund* occurs in the S 1196 witness-list, whose hand/stage is not a
+  secure same-scribe control (Lowe 2001, pp. 76–78).
+- **Electronic Sawyer, S 1196**: conventionally dated 859; Lowe (2001,
+  pp. 76–78, 85–86) styles the date ?859 and discusses a possible later
+  copy/date slip and separately added witnesses. The surviving Christ
+  Church single sheet is BL Cotton Augustus ii.16, s. ix med.; this does
+  not establish that every textual layer is contemporary.
 - **Wright–Wülcker I** (already held): no. XIII "Semi-Saxon Vocabulary"
   col. 547 *Fenum, hei, uel græs*; its exemplar entry in no. X *Foenum,
   hig, oðde gærs*; F.174 ⟨ei⟩ controls *Uia, wei*, *weibreode*.

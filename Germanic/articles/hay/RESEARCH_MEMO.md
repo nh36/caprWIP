@@ -5,6 +5,11 @@ commit 113101ac5f169b589e1a9647cdf24d32cdd4d919. Companion artifacts:
 LITERATURE_MATRIX.md (A), CONCORDANCE.tsv (B), PARADIGM.md (C),
 QUANTITY_EVIDENCE.md (D), DERIVATIONS.md (E), DRAFT.md (F).
 
+**Status:** historical cycle-1 assessment, superseded where later evidence
+is cited. For current S 1196 dating/transmission, Farman counts, secure
+attestations and the three-way *heiweg* assessment, use
+`RESEARCH_MEMO_CYCLE5.md`.
+
 ## Findings supporting the starting thesis (early apocope, no analogy)
 
 1. The alleged analogical donor (gen./dat. *hīeġes/hīeġe*) is unattested

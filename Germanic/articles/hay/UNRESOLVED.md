@@ -118,15 +118,17 @@ These are substantive research questions, not metadata or ingestion failures.
   a dialect-differentiated relic (Outcome B) remains **unfalsified but
   undemonstrated and orthographically untestable** (ninth-century
   ⟨ei⟩/⟨eg⟩ spell /Vj/ regardless of quantity: dei/deg controls).
-- ~~Date of the *heiweg* charter.~~ **Resolved:** S 1196, A.D. 859;
-  Dahl's "839" is a slip (he dates the same charter 859 at
-  *Scufelingforde*); contemporary single sheet, BL Cotton Augustus ii.16.
-- ~~Full calibration of Farman's accents.~~ **Done, committed**
-  (FARMAN_ACCENTS.tsv + extract_farman_accents.py): 194 OE types /
-  327 tokens; ~90% of classifiable types etymologically long (counting
-  homorganic-cluster shorts as lengthened); 13 genuine short
-  exceptions. Supersedes the cycle-3 "~90 types" estimate. Ritt 2000
-  remains open for Aldred's practice only.
+- ~~Date of the *heiweg* charter.~~ **Qualified:** S 1196 is conventionally
+  dated 859 (?859 in Lowe); its surviving single sheet is BL Cotton
+  Augustus ii.16, s. ix med., and the witness list and possible later copy
+  require qualification. Dahl's "839" is a slip (he dates the same charter
+  859 at *Scufelingforde*). See `RESEARCH_MEMO_CYCLE5.md`.
+- ~~Full calibration of Farman's accents.~~ **Done; count corrected**
+  (FARMAN_ACCENTS.tsv + extract_farman_accents.py): 194 non-target OE
+  types/293 tokens plus *hóeg* (one type/two tokens). The previous
+  327-token figure is withdrawn; ~90% of classifiable non-target types
+  have etymologically long nuclei if homorganic-cluster shorts are
+  counted as lengthened. Ritt 2000 remains open for Aldred's practice only.
 - ~~Interpretation of Farman's ⟨oe⟩ (refined).~~ **Revised cycle 4:**
   ⟨oe⟩ is quality/convention evidence, not length (Kuhn 1945: 646 on
   *oele* < short o); it groups *hóeg* with Farman's ē/œ̄ class

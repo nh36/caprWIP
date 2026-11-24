@@ -259,18 +259,29 @@ Psalter the word appears as *heg* throughout — at least eleven tokens
 (Pss. 36.2, 71.16, 91.8, 101.5, 101.12, 102.15, 103.14, 104.35, 105.20,
 128.6, 146.8, with a further token in the Vespasian Hymns), always
 glossing Latin *faenum*, always without an overt ending [@Dahl1938, hay
-section]. Two Kentish charters supply the earliest dated tokens, both as
-compound first elements: *heiweg* 'hay-road' (A.D. 859) — the earliest
-⟨hei⟩ spelling, in the contemporary Christ Church single sheet S 1196
-(BL Cotton Augustus ii.16; Sweet's *Oldest English Texts* Ct. 43 prints
-*cyniges hei weg*; Dahl's date "839" is a slip, since he dates the same
-charter 859 when citing *Scufelingforde* from its next phrase
-[@Dahl1938; @Sweet1885, p. 450]) — and *Hegforde* (A.D. 858). The
-same scribal milieu writes *dæġ* as *dei* (Sweet's Ct. 39 of 831 and
-Ct. 42 of 837) and the witness-name *Deimund* (= Dægmund) in S 1196
-itself, beside *deg*, *dege* elsewhere: ninth-century Kentish ⟨ei⟩ and
-⟨eg⟩ interchange freely over a certified short vowel plus /j/, so the
-⟨ei⟩ of *heiweg* carries no information about quantity. The Old English
+section]. Two Kentish charters supply early compound forms: *heiweg*
+(S 1196, conventionally dated 859) and *Hegforde* (S 328, 858). The
+first is conventionally interpreted as ‘hay-way’; the first element of
+*Hegforde* is not securely identified as fodder ‘hay’ rather than an
+enclosure term or another lexical item [@Lowe2001, pp. 76–78, 85–86;
+@Langlands2019, pp. 45–46, 109, 126; @Wager2017, pp. 169–174]. S 1196
+is the earliest dated ⟨hei⟩ spelling, in the surviving Christ Church
+single sheet BL Cotton Augustus ii.16; Sweet's *Oldest English Texts*
+Ct. 43 prints *cyniges hei weg* (p. 450).[^dahl] The charter's text is
+conventionally dated 859, but its transmission and dating require
+qualification.[^s1196] Bryan had already printed *hei < *hauja-* and
+recognized both long- and short-vowel histories behind ⟨ei⟩: he
+contrasts *heiweg* with short-vowel *dei* ‘day’, and records
+*meihanda* beside *meghond* [@Bryan1915, pp. 8, 23, 25]. His
+reconstruction supports the ‘hay’ identification before Dahl, but is
+not independent evidence for vowel quantity.[^bryan] The ninth-century
+Kentish charter corpus also writes *dæġ* as *dei* (Sweet's Ct. 39 of
+831 and Ct. 42 of 837), while the same-scribe corpus includes *dei* in
+S 1195; ⟨ei⟩ and ⟨eg⟩ therefore cannot be assumed to mark distinct
+quantities. The S 1196 witness-name *Deimund* is not a secure
+same-scribe control because the witness list may represent a separate
+writing stage. The ⟨ei⟩ of *heiweg* carries no independent information
+about vowel quantity. The Old English
 Bede has
 accusative *heg* in *on sumera heg ne māweþ* [@Miller1890, I p. 28].
 The late West Saxon Lambeth Psalter writes *hyg*, *hig* [@Dahl1938;
@@ -284,9 +295,28 @@ Worcester Cathedral F.174 by the Tremulous Hand of Worcester
 (s. xiii; Wright–Wülcker's "c. 1150" is superseded by the
 identification of the hand) — *Fenum, hei, uel græs*
 [@WrightWuelcker1884, I.289.45, I.325.21, I.547].
-In the West Saxon gospels at Mark 6.39 Corpus 140 has *hig*, with later
+In the West Saxon gospels at Mark 6:39 Corpus 140 has *hig*, with later
 *haig* (Hatton 38) and *heig* (Royal); the Lindisfarne gloss there has
-*gers* and Rushworth *heggetgrese* [@Skeat1871, Mark 6:39].
+*gers*, while Rushworth has *hegge* alongside *grese*. The Rushworth
+gloss is Owun's, not Farman's, whose contribution ends at Mark 2:15
+[@Skeat1871, pp. 48–49].
+
+Independent support for a ‘hay-way’ compound comes from Langlands's
+topographical reading of S 445 *higweges*, though its transaction is
+dated 939 and its surviving witness is a fifteenth-century copy. He
+leaves S 963 *hig wege* disputed between ‘high-way’ and ‘hay-way’, and
+S 765 *hegweige* ambiguous; their surviving manuscripts are respectively
+eleventh- and fourteenth-century copies [@Langlands2019, pp. 45–46,
+109, 126]. These examples make ‘hay-way’ a credible compound, not a
+settled reading of S 1196. The enclosure vocabulary is a further live
+possibility: S 296 has *be norðan hege* beside a river meadow, and
+Wager discusses *hege*, *haga*, and *(ge)hæg* terminology, including
+the Reculver forms *ealden hege* and *Gata gehægge* in S 546
+[@Wager2017, pp. 169–174]. The first element of *Hegforde* cannot be
+assigned to fodder ‘hay’ by context alone; deriving it from *hege*
+would require an account of the absent final vowel, whereas a
+consonant-final *(ge)hæg* stem would pose a different morphological
+analysis.
 
 The Northumbrian and Mercian gospel glosses supply six further tokens,
 verified against the printed pages of the Cambridge synoptic editions.
@@ -457,8 +487,11 @@ manuscript-specifically [@Mokrowiecki2015], and Jones reads the
 Lindisfarne acute of ⟨wég⟩ 'way' as marking mere duration [@Jones1989,
 p. 55]. A full census of Farman's accented tokens across his stint
 (Matthew and Mark 1:1–2:15, from Tamoto's edition; the calibration
-table is maintained with this article) yields the same shape as
-Mokrowiecki's: of 194 Old English accented types (327 tokens), 160 have
+table is maintained with this article) yields a similar qualitative
+pattern: 194 non-target Old English types represent 293 tokens, plus
+the target type *hóeg* with two tokens. The earlier total of 327 tokens
+does not reconcile with the committed table and is withdrawn. Of the
+194 non-target types, 160 have
 etymologically long nuclei, a further 14 are short vowels standing
 before the homorganic clusters ⟨ld, nd, rd, ng⟩ (*áld*, *hónd*, *lónd*,
 *wórd*, *góld*, *gángan* …) — nuclei plausibly already lengthened in
@@ -539,7 +572,8 @@ apart. First, it would be **orthographically invisible**: ninth-century
 Kentish ⟨ei⟩ ~ ⟨eg⟩ interchange over short /e/ + /j/ (*dei* ~ *deg* for
 *dæġ*, Section 3.1), and no Old English spelling marks quantity, so the
 Anglian/Kentish ⟨heg⟩/⟨hei-⟩ tokens can neither confirm nor exclude an
-ungeminated relic — the earliest ⟨hei⟩, in *heiweg* of S 1196 (859), is
+ungeminated relic — the earliest ⟨hei⟩, in compound-internal
+*heiweg* of S 1196 (conventionally dated 859), is
 literally the string A0 predicts, but every control shows the same
 digraph over certified short V+j, and the one later independent-noun
 ⟨hei⟩ (F.174, s. xiii) is demonstrably a respelling of exemplar ⟨hig⟩
@@ -754,3 +788,9 @@ a manuscript check of Farman's acutes should the relevant Bodleian
 folios be digitized. Until then, the paradigm
 assembled here fixes what any future account of the word must explain,
 and the derivational comparison fixes what it cannot claim.
+
+[^s1196]: S 1196 is conventionally dated 859, but Lowe styles it “? 859” because Æthelwulf appears in its witness list despite having died in 858. Campbell suggests a slightly later copy with a date slip; Keynes notes the witnesses' smaller script may indicate a separate addition; Lapidge judges that the scribe copied from a charter he did not understand [@Lowe2001, pp. 76–78, 85–86]. The surviving sheet is s. ix med.; this qualification does not settle the date of the transaction or the authenticity of every textual layer.
+
+[^bryan]: Bryan's p. 8 list labels the item charter XXVI, but his p. 25 discussion correctly identifies it as XXIV. His note associates the *hauja-* comparison with earlier discussion by Miller and Chadwick; the identification is therefore not shown to be an independent lexical discovery. His quantity distinction is historical analysis, not a contrast encoded by ⟨ei⟩.
+
+[^dahl]: Dahl prints 839 alongside *heiweg* but gives 859 when citing *Scufelingforde* from the same charter [@Dahl1938, hay section]. The discrepancy is a misprint, not independent evidence for an earlier transaction date.

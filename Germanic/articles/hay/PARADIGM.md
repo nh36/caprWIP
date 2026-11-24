@@ -18,7 +18,7 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
 | nom.acc.pl | E | none identified | mass noun; plural not expected in use |
 | gen.pl | E | none identified | |
 | dat.pl | E | none identified | |
-| compound stem | A(compound) | *heg-* (Hegforde 858), *hei-* (heiweg 859, S 1196), cf. ivy glosses *ibaei/ifeg/ifegn* (Ep/Erf/Cp) if < \*iβ-hau(j)- (contested: Goering 2025: 301 n.4) | compound-internal, uninflected |
+| compound stem | A(compound) | *heg-* (S 328 *Hegforde*, 858; first element unresolved), *hei-* (S 1196 *heiweg*, conventionally 859; hay-way plausible but not settled), cf. ivy glosses *ibaei/ifeg/ifegn* (Ep/Erf/Cp) if < \*iβ-hau(j)- (contested: Goering 2025: 301 n.4) | compound-internal, uninflected |
 
 ## Reconstructions (class R; by hypothesis — see DERIVATIONS.md)
 
@@ -67,7 +67,8 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
 5. Excluded homographs: plural pronoun *hig*; *hege* 'hedge, enclosure'
    (Minkova 2014: 64 lists its ME continuation "hay (now dial.)");
    *gærs*/*gers* translations (now including Li Mk 6:39 and Lk 12:28,
-   verified); Rushworth *heggetgrese* (Mk 6:39) is a compound, not a
-   bare token. Cook 1894 lemmatizes Li *heg* 'hay' separately from *heh*
+   verified). Rushworth Mk 6:39 has *hegge* alongside *grese*, not a
+   compound *heggetgrese*; this reading is not a bare hay token, and the
+   gloss is Owun's rather than Farman's. Cook 1894 lemmatizes Li *heg* 'hay' separately from *heh*
    'high' and the hedge word, securing the lexical identity of the
    gospel tokens.

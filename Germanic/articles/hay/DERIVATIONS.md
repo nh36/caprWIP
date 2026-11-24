@@ -53,14 +53,16 @@ OldEnglishOrthography          hei
   Anglian ⟨heg⟩ and Kentish ⟨hei-⟩, which are equally derivable from the
   geminate stem.
 - Falsifier (satisfied): any WS direct token with ie/i/y vocalism.
-- **Cycle-4 manuscript grounding of both points** (RESEARCH_MEMO_CYCLE4.md):
-  (i) The compatibility claim is now anchored: S 1196 (A.D. 859, not
-  Dahl's misprinted "839"; contemporary Christ Church single sheet, BL
-  Cotton Augustus ii.16) carries *cyniges heiweg*, and the same scribal
-  milieu writes *dæġ* as **dei** (OET Ct. 39, 42) and **Deimund** in
-  S 1196 itself beside *deg/dege* — ninth-century Kentish ⟨ei⟩ ~ ⟨eg⟩
-  spell /Vj/ regardless of quantity, so A0's output would be
-  orthographically invisible beside levelled *hēġ*. (ii) The WS failure
+- **Cycle-4 manuscript grounding, qualified in cycle 5**
+  (`RESEARCH_MEMO_CYCLE5.md`): S 1196 (conventionally dated 859; Lowe
+  gives ?859) carries *cyniges heiweg* on a surviving single sheet,
+  Cotton Augustus ii.16, s. ix med. The broader ninth-century Kentish
+  charters write *dæġ* as **dei** (OET Ct. 39, 42), and the scribe-7
+  corpus has *dei* in S 1195. The S 1196 witness-list form **Deimund**
+  is not a secure same-hand control because the list may be a separate
+  addition. The corpus lacks a same-scribe long-vowel + palatal-glide
+  comparator; ⟨hei⟩ therefore cannot establish quantity or stem identity.
+  (ii) The WS failure
   is likewise manuscript-grounded: in Skeat's gospel witnesses *weġ*
   (certified short e + /j/) is written ⟨weg(e)(s)⟩ 31× and never
   ⟨wig/wyg/wieg⟩, while Royal 1 A.xiv's inorganic-⟨g⟩ convention (*hig*

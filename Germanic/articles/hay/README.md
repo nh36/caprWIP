@@ -25,8 +25,18 @@ Research artifacts (cycle 1):
   publishable prose, analytical scaffolding for 4–6 (artifact F).
 - `RESEARCH_MEMO.md` — critical assessment and answers to the ten
   final-judgment questions (artifact G).
+- `RESEARCH_MEMO_CYCLE5.md` — source-ingestion report, targeted
+  philological findings, and provisional three-way assessment of
+  *heiweg*.
+- `SAME_SCRIBE_CONCORDANCE.tsv` — spelling concordance for the seven
+  scribe-7 charter documents identified by Lowe, including the S 1197
+  scribe-7 confirmation.
 - `EDITORIAL_CLEANUP_REPORT.md` — bounded correction and verification
   report for the first research cycle.
+- `docs/references/hay-article-literature-2026-11-24/holdings.tsv` and
+  `page_map.tsv` — source IDs, citation keys, private holding paths,
+  searchable text, extraction status, and printed-page/PDF-sheet mapping
+  for the cycle-5 literature.
 - `article_refs.bib` — research-scoped supplemental citations (Dahl1938,
   Hogg1979Analogy, Adamczyk2018, Dal1934, Ritt2000); `docs/refs.bib`
   remains authoritative for all keys it contains.
