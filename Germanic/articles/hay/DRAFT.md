@@ -261,9 +261,12 @@ Psalter the word appears as *heg* throughout — at least eleven tokens
 glossing Latin *faenum*, always without an overt ending [@Dahl1938, hay
 section]. Two Kentish charters supply early compound forms: *heiweg*
 (S 1196, conventionally dated 859) and *Hegforde* (S 328, 858). The
-first is conventionally interpreted as ‘hay-way’; the first element of
-*Hegforde* is not securely identified as fodder ‘hay’ rather than an
-enclosure term or another lexical item [@Lowe2001, pp. 76–78, 85–86;
+first has been read as ‘hay-way’, but its first element remains
+disputed. The noun ‘hay’ is independently established by the *faenum*
+glosses; those glosses do not identify the first element of this
+compound. The first element of *Hegforde* is not securely identified as
+fodder ‘hay’ rather than an enclosure term or another lexical item
+[@Lowe2001, pp. 76–78, 85–86;
 @Langlands2019, pp. 45–46, 109, 126; @Wager2017, pp. 169–174]. S 1196
 is the earliest dated ⟨hei⟩ spelling, in the surviving Christ Church
 single sheet BL Cotton Augustus ii.16; Sweet's *Oldest English Texts*
@@ -479,37 +482,44 @@ the accent is printed by all three editions made independently from the
 manuscript [@KembleHardwick1858, pp. 55, 117; @Skeat1887, pp. 59, 123;
 @Tamoto2013, pp. 19, 47], which effectively excludes editorial
 invention even though the manuscript pages themselves are not among the
-folios the Bodleian has digitized. What the acute means is a question
+folios the Bodleian has digitized, so the manuscript reading remains
+unverified directly. What the acute means is a question
 about Farman's practice, not about accents in general: Mokrowiecki's
 calibration of two late Old English manuscripts found acutes marking
 etymologically long vowels in roughly nine cases in ten, but
 manuscript-specifically [@Mokrowiecki2015], and Jones reads the
 Lindisfarne acute of ⟨wég⟩ 'way' as marking mere duration [@Jones1989,
-p. 55]. A full census of Farman's accented tokens across his stint
-(Matthew and Mark 1:1–2:15, from Tamoto's edition; the calibration
-table is maintained with this article) yields a similar qualitative
-pattern: 194 non-target Old English types represent 293 tokens, plus
-the target type *hóeg* with two tokens. The earlier total of 327 tokens
-does not reconcile with the committed table and is withdrawn. Of the
-194 non-target types, 160 have
-etymologically long nuclei, a further 14 are short vowels standing
-before the homorganic clusters ⟨ld, nd, rd, ng⟩ (*áld*, *hónd*, *lónd*,
-*wórd*, *góld*, *gángan* …) — nuclei plausibly already lengthened in
-Farman's late tenth-century Mercian — and only 13 are genuinely short
-(*wég* Mt 7:14, *stéfn* Mt 2:18, *mónige* Mt 16:9, *ége*, *físcæs*,
-*scípa*, *wítga*, *wýrhtu*, *ascákeþ*, with anomalous accents on *ón*,
-*ínn*, *únklene*, *ǽfter*), seven remaining uncertain: roughly nine
-classifiable types in ten are long, with sporadic application
-throughout. Two further observations sharpen the inference for this
+p. 55]. The corrected accent census of Farman's Matthew–Mark stint
+(Mt 1:1–Mk 2:15; `FARMAN_ACCENTS.tsv`) contains 196 non-target types
+representing 299 tokens, plus target *hóeg* (one type, two tokens). The
+older 327-token total is withdrawn. This is a census of accented tokens,
+not a denominator for unaccented stressed vowels. The bounded matched
+calibration in `FARMAN_ACCENT_CALIBRATION.tsv` counts unaccented as well
+as accented occurrences: short-vowel-plus-glide controls (*weg*, *dæg*)
+have 1/53 accented tokens (1/9 surface types; 1/2 lexical types), the
+long-vowel-plus-glide control (*stīg*) 1/2 tokens (1/2 surface types; one
+lexical type), and the separate short-vowel-plus-homorganic-cluster panel
+5/133 tokens (5/23 surface types; 4/5 lexical types). The cluster panel
+comprises 32 clear verbal *gangan* forms plus *lond*, *word*, *hond*,
+and two *cild* tokens; eight ambiguous *gang*-family forms are reported
+separately and excluded. These small, selected controls are descriptive,
+not a corpus-wide rate: repeated tokens are not independent, and the long
+control is one word with two occurrences. If the short-HL panel is counted
+with short controls, the short rate is 6/186 tokens; if counted with
+lengthened controls, the combined long-like rate is 6/135. Neither
+sensitivity treatment supports a precise general calibration. The full
+accent census separately classifies 162 long-vowel types, 14 short-HL
+types, 13 short types, and 7 uncertain types. Two further observations sharpen the inference for this
 word. First, no short-vowel exception is ever written with ⟨oe⟩,
 whereas *hóeg* combines the acute with the digraph that Farman
 otherwise applies to his ē/œ̄ class (Section 3.3). Second, both *hóeg*
 tokens are accented while most long vowels are not — but two tokens of
 one word, from one scribe, a century and more after the earliest
 charter spellings, remain two tokens. Farman's acute on
-*hóeg* is accordingly probabilistic evidence for a long nucleus — real
-evidence, for the first time non-editorial, but defeasible, confined to
-his own date and dialect, and (as
+*hóeg* is accordingly probabilistic evidence for a long nucleus — a
+printed, independently calibrated quantity signal, but not a direct
+manuscript verification; it is defeasible, confined to his own date and
+dialect, and (as
 Section 5 shows) incapable of discriminating among the surviving
 derivations, all of which predict length. Ritt's study of the
 neighbouring Lindisfarne practice has been ordered but not yet
@@ -547,9 +557,9 @@ all deliver a long nucleus, while the only derivation that delivers a
 short one (the untouched early-apocope form \*hewi) fails independently
 against the West Saxon vocalism. Long quantity in the direct singular is
 thus the shared prediction of every viable account rather than a datum —
-a prediction with which Farman's acute, the one non-editorial quantity
-signal in the record, is consistent without being able to adjudicate
-anything the accounts dispute.
+a prediction with which Farman's acute, the only printed and calibrated
+quantity signal in the record, is consistent without being able to
+adjudicate anything the accounts dispute.
 
 # 5. The competing derivations
 

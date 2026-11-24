@@ -1,5 +1,12 @@
 # Hay article: cycle 3 research handoff
 
+> Historical cycle-3 routing; not the current task list. Cycle 5 completed
+> a bounded Farman accent calibration and Lowe-catalogued charter search.
+> The calibration is descriptive and not transferable to ninth-century
+> quantity; the expanded charter search found no diagnostic high-vowel
+> example. Use `SOURCE_PREPARATION_HANDOFF.md` for current evidence,
+> unresolved claims, and next-cycle scope.
+
 Start with [source intake](SOURCE_INTAKE_2026-11-23.md), the
 [DOE crosswalk](DOE_CROSSWALK_2026-11-23.tsv), and the complete private DOE
 handoffs identified there. The six full publications and page-separated texts
@@ -9,19 +16,18 @@ inspect original page images for exact forms and notation.
 
 ## New evidence and corrections to review
 
-- Three **candidate** overt oblique `hege` forms occur in one metrical Paris
-  Psalter tradition: `PPsA5 [76900 (101.4)]`, `[77400 (101.9)]`, and
-  `[80500 (102.14)]`. Syntax suggests dative but the lexical identification,
-  ending, editorial reading and manuscript witness need verification. They
-  do not themselves establish an analogical process.
+- Three overt dative-singular `hege` forms are manuscript-verified in one
+  Paris Psalter tradition: `PPsA5 [76900 (101.4)]`, `[77400 (101.9)]`, and
+  `[80500 (102.14)]`. BnF lat. 8824, fols. 116r, 116v, and 118v, reads
+  ⟨hege⟩ at all three loci; the Latin parallels and syntax identify ‘hay’.
+  These eleventh-century forms attest an inflected cell, but do not date a
+  donor stem to the pre-i-umlaut period.
 - Additional poetic candidates include `PPsA5 [29700 (71.16)] heg`,
   `[90300 (105.17)] hig` and `AndA2.1 [1200 (33)] hig`.
   `PPsA5 [158200 (146.9)] <hig>` is editorially supplied: retain brackets,
-  and do not call it a manuscript attestation. Earlier assertions in
-  `DRAFT.md`, `RESEARCH_MEMO_CYCLE2.md` and related cycle-2 evidence files
-  that no poetic tokens or overtly inflected candidates were identified
-  require reconsideration; those historical documents are intentionally
-  unchanged in this intake.
+  and do not call it a manuscript attestation. Cycle-1/2 claims that no
+  overtly inflected form exists are superseded; the remaining issue is
+  whether the late dative bears on an earlier donor stem.
 - Rushworth Mt 6:30 and 14:19 correspond to existing concordance **29 and
   30**, not new witnesses. DOE writes `hoeg`, while Tamoto's printed
   edition pp. 19 and 47 visibly has `hóeg`. No manuscript image was inspected.
@@ -59,5 +65,7 @@ inspect original page images for exact forms and notation.
 
 Do not treat these questions as decided by ingestion. Review edition and
 manuscript images, independence, grammar and counterevidence before proposing
-changes. Ritt 2000 and Dal 1934 remain unavailable pending ILL; distinguish
-reports by Dahl or Hogg–Fulk from direct inspection of Dal.
+changes. Ritt 2000 remains unavailable pending ILL. Dal 1934 is still
+unconsulted; its 1971 reprint at pp. 65–73 is a registered but unheld
+alternative. Distinguish reports by Dahl or Hogg–Fulk from direct
+inspection of either version.

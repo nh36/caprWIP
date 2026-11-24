@@ -19,17 +19,31 @@ this article directory. Downloads were not moved or deleted.
 
 The catalogue's November cleanup did not establish a cross-worktree private
 library: its documented shared-root/symlink design remains a recommendation,
-and `docs/references/local/` is checkout-specific. The current worktree has
-the private copies; their availability elsewhere must be rechecked. The
-reference-library validator confirms that private holdings remain ignored.
-Neither Wallenberg, *Kentish Place-Names*, pp. 203–205, nor Brooks and Kelly's
-2013 *Charters of Christ Church Canterbury* was found locally. Wallenberg
-could clarify the place-name geography and his interpretation of S 1196;
-Brooks and Kelly could provide authoritative charter texts and commentary
-for S 1196 and the scribe-7 comparisons. Investigation proceeded without
-either. Langlands's bibliography dates *The Place-Names of Kent* to 1934,
-whereas the request identified it as 1931; the edition/year needs
-bibliographic resolution before citation.
+and `docs/references/local/` is checkout-specific. All nine registered
+publications are accessible in this checkout; their next-worktree
+availability must be rechecked. The reference-library validator confirms
+that private holdings remain ignored. No hay-relevant publication was found
+in Downloads, and no further general acquisition was pursued.
+
+Pagination audit: Trousdale 2005 pp. 59–76 occupy PDF sheets 1–18
+(printed page = sheet + 58); cited pp. 60–65 are sheets 2–7. The existing
+Versloot article has 39 PDF sheets, with pp. 103–141 on sheets 1–39
+(printed page = sheet + 102). The holdings, catalogue and page map now agree.
+
+The Wallenberg discrepancy is resolved bibliographically: the required
+1931 *Kentish Place-Names: A Topographical and Etymological Study of the
+Place-Name Material in Kentish Charters Dated Before the Conquest* (378 pp.)
+and the 1934 *The Place-Names of Kent* (626 pp.) are different books. The
+1931 work, pp. 203–205, is not held; Electronic Sawyer cites Wallenberg,
+KPN, pp. 205–207 on S 327 place-names, so those pages may clarify the
+charter's toponymic segmentation, not independently establish the identity
+of *heiweg*. The 1934 book is not a substitute. Dal's 1934 article was
+reprinted in *Untersuchungen zur germanischen und deutschen
+Sprachgeschichte* (Universitetsforlaget, 1971), pp. 65–73. The reprint is
+not held; catalogues disagree between 1971 and [1972]. The original remains
+on the existing ILL record; no new request was initiated. Brooks and Kelly's
+2013 *Charters of Christ Church Canterbury* is also unheld and could provide
+authoritative texts and commentary for S 1196 and the scribe-7 comparisons.
 
 Bryan's native text layer is searchable but corrupts historical type and
 diacritics; Tesseract search aids were generated for the cited pages and the
@@ -164,6 +178,54 @@ same-scribe controls: Lowe notes their smaller script and possible separate
 addition. The non-target corpus does not settle whether *heiweg* means
 ‘hay-way’, ‘highway’, or an enclosure-related compound.
 
+## Expanded Lowe charter search
+
+The bounded extension searched the relevant spelling families in
+Lowe-catalogued Kentish charters, then inspected the candidate records and
+English bounds. Electronic Sawyer's text search is not fully reliable, so
+this is a documented targeted search, not an exhaustive searchable-database
+claim.
+
+- **S 332**: transaction 863; Canterbury D.C. M 14, s. ix med.; Lowe
+  Appendix II.17; Earle, pp. 133–136. *Heahmund* is a Latin witness-name,
+  not an English lexical token of ‘high’; English grant (b) has *higum*
+  ‘community/household’ from *hīw*.
+- **S 1203**: transaction 875; BL Cotton Augustus ii.89, s. ix 2
+  (BM Facs. ii.40); Lowe Appendix III.60; Earle, pp. 141–144. *Heahulf*
+  is a Latin witness-name, not a lexical token. The manuscript is usually
+  dated s. ix 2, but whether it was copied at the 890–923 Plegmund
+  confirmation is disputed; transaction and manuscript dates are distinct.
+- **S 327**: transaction ?860, with the date altered to 790; BL Cotton
+  Charter viii.29 (Sawyer dates the witness s. ix 2; its older-text
+  description gives s. x 2 [?]); Lowe Appendix II.15; Campbell,
+  *Rochester*, no. 24. Its bounds include *Meodowæge*, not an independent
+  occurrence of ‘high’.
+- **S 331**: transaction 862; BL Cotton Charter viii.32, s. ix 2; Lowe
+  Appendix II.16; Campbell, *Rochester*, no. 25. No secure lexical ‘high’
+  token occurs in the inspected bounds. S 344 (transaction 873; BL Stowe
+  Charters 19, s. ix 2; Lowe Appendix II.21; Sweet, OET no. 32, p. 440)
+  likewise supplies no diagnostic token.
+- **S 350**: transaction 898, a grant of land at Farleigh, Kent, issued at
+  Wulfamere; Canterbury D.C. F 150, s. ix/x; Lowe Appendix II.23; Earle,
+  pp. 157–158. *Bradan weg* is a short-vowel *weg* ‘way’ control. The date
+  of the language is disputed (Stevenson 1904, pp. 151 n. 2, 290 n. 1;
+  Brooks 1984, pp. 169, 359 n. 67, 361 n. 72). *Medewæge* is not counted
+  as a ‘meadow-way’ control: Sawyer translates the boundary as the Medway.
+- False positives were excluded: S 339 (transaction 868) survives only in
+  Textus Roffensis, s. xii 1; its *Heahmund* is a witness-name. Search-hit
+  S 403 contains *heagam* in Sussex bounds (transaction 930; Barker 1948,
+  pp. 139–145, no. 26), but its copies are s. xiii med. and s. xiv, so it
+  is neither Kentish nor a contemporary ninth-century witness.
+
+**Result:** no securely identified lexical *hēah* token or independent
+⟨i⟩ spelling of its relevant consonantal reflex was found in the targeted
+contemporary Kentish charter witnesses. The secure short-vowel controls
+include *dei* in S 1195 and *bradan weg* in S 350; no diagnostic
+long-vowel-plus-palatal-glide charter control was found. The proper names,
+compound *heiweg*, non-Kentish *heagam*, and *hīw* forms are not evidence
+for the missing regular sound correspondence. This negative result is
+limited to the inspected witnesses and spellings.
+
 ## Three-way assessment of *heiweg*
 
 1. **‘High’ from *hēah*.** The expected first member would be a
@@ -225,12 +287,29 @@ singular token. The other known secure OE ‘hay’ attestations do not positive
 identify the short ungeminated direct stem; the late Farman acutes instead
 offer defeasible evidence for a long nucleus in that witness.
 
-The Farman table contains 194 non-target accented types representing 293
-tokens, plus one target type (*hóeg*) representing two tokens: 195 types and
-295 Old English tokens total. An older statement of 327 tokens does not
-reconcile with those committed table totals and is withdrawn; the previously
-reported 163 Latin-token subtraction does not make the figures arithmetically
-consistent. No likelihood ratio is inferred from the proportion of accented
-types. This update does not alter the regular Model A derivation, the hiatus
-question, the West Saxon controls, or the distinction between generating a
-reconstructed cell and demonstrating its survival.
+The corrected Farman census contains 196 non-target accented types
+representing 299 tokens, plus target *hóeg* (one type, two tokens): 197
+types and 301 Old English tokens total. The former bounds were LF line
+numbers applied to a `splitlines()` slice; the corrected indices begin at
+the fol. 1r marker and include the final *hleonadun* at Mk 2:15. The older
+327-token statement and its purported Latin subtraction are withdrawn.
+
+The reproducible matched sample in `FARMAN_ACCENT_CALIBRATION.tsv` counts
+all tokens, accented or not, in selected glide and cluster-control words.
+Short-V+glide *weg/dæg*: 1/53 tokens accented, 1/9 surface forms and 1/2
+lexical types with an accent. Long-V+glide *stīg*: 1/2 tokens, 1/2 surface
+forms, one lexical type. Potential short-HL controls (*gangan* clear verbal
+forms, *lond*, *word*, *hond*, *cild*): 5/133 tokens, 5/23 surface forms,
+4/5 lexical types. Eight ambiguous *gang*-family forms are separately
+listed and excluded. Treating the short-HL panel as short yields 6/186
+accented tokens in the combined short class; treating it as lengthened
+yields 6/135 in the long-like class. These small, deliberately selected
+controls are descriptive and not a population-wide accentuation estimate;
+token repetitions are not independent, and the long-V+glide control is one
+lexeme with two occurrences. The full census has 162 accented long-vowel
+types, 14 short-HL types, 13 short types, and 7 uncertain types. This
+calibration describes Farman's printed late tenth-century practice only
+and does not establish ninth-century Old English quantity. It does not
+alter the regular Model A derivation, the hiatus question, the West Saxon
+controls, or the distinction between generating a reconstructed cell and
+demonstrating its survival.

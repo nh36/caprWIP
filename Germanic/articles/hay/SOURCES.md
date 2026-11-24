@@ -67,7 +67,10 @@ The full source inventory and TSV/JSON snapshots are under
 - Approaches to Old Frisian 1998 remains incomplete outside Fulk's complete
   chapter.
 
-Ritt 2000 and Dal 1934 are ILL requested and awaiting delivery.
+Ritt 2000 and Dal 1934 are ILL requested and awaiting delivery. Dal's 1934
+article also has an identified 1971 reprint, pp. 65–73 (some catalogues
+list [1972]); it is registered but not held or inspected, and no new
+acquisition request was made for it.
 
 ## Cycle-4 consultations (24 November 2026)
 

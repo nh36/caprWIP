@@ -32,14 +32,16 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
   (gemination levelled in from the obliques); OE *mete* : *mettas*;
   parallels \*gliwi > *glīg*, *ēg*/*īeg* 'island', *strēgan*, *cīegan*.
 - **Difficulty**: the regular fate of \*hǣwi is left unstated; the
-  replacement has no attested OE donor paradigm (no overtly inflected OE
-  token of 'hay' is identified in the sources examined; see CONCORDANCE.tsv).
+  replacement has no demonstrated pre-i-umlaut donor stem. The late Paris
+  Psalter supplies dative *hege* ×3, but cannot date that stem to the
+  proposed analogical period (see CONCORDANCE.tsv and RESEARCH_MEMO_CYCLE3.md).
 
 ## 2. Campbell 1959 [@Campbell1959, §§120.2, 579(4)]
 
 - **Chronology**: both endings lost before gemination (§576), i.e. early
-  apocope, following Dal 1934 as reported by Hogg–Fulk. Dal 1934 itself is
-  unavailable and is not directly consulted here.
+  apocope, following Dal 1934 as reported by Hogg–Fulk. Dal's 1934 article
+  has a 1971 reprint, pp. 65–73, but neither version is held or directly
+  consulted here.
 - **Direct sg.**: §579(4): "\*hewi, \*gliwi without gemination would be the
   undisturbed developments"; the attested nom.-acc. sg. of both types is
   "under influence of the other cases"; *glīg* is a "re-formation (§411)".
@@ -60,9 +62,9 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
   hieges, dat. hiege."
 - **Analogy**: narrower than Ringe–Taylor/Campbell: only the final **-g**
   is analogical; the vocalism is taken as regular. His *hīeges*, *hīege*
-  are **paradigm illustrations, not manuscript citations** (confirmed:
-  no overtly inflected OE token is identified in the sources examined; see
-  CONCORDANCE.tsv).
+  are **paradigm illustrations, not manuscript citations**. The late Paris
+  Psalter dative *hege* ×3 is manuscript-attested, but does not demonstrate
+  a pre-i-umlaut donor stem (see CONCORDANCE.tsv).
 - **Difficulty**: presupposes the long-diphthong stem in the direct cell
   before j-loss, i.e. implicitly the geminate-route vocalism.
 
@@ -124,7 +126,8 @@ before gemination, nasal \*-ą lost after it; **no-gemination (hay only)** =
 - **Corpus** (his early-OE material; extends the CAPR ledger): VP *heg*
   36/2, 71/16, 91/8, 101/5, 101/12, 102/15, 103/14 (acc.), 104/35, 105/20,
   128/6, 146/8; VH *heg* (acc.) 7/4; Kentish charters *Hegforde* (A.D. 858,
-  Ct 28/14) and *heiweg* 'hay-road' (Dahl prints "A.D. 839", a slip for
+  Ct 28/14) and *heiweg* (tentatively ‘hay-road’; interpretation disputed;
+  Dahl prints "A.D. 839", a slip for
   859 — he dates the same charter, S 1196 = Ct 43, to 859 when citing
   *Scufelingforde*; cycle 4) — the earliest
   ⟨hei⟩ spelling. "Inflected forms are thus not to be found in my
@@ -232,4 +235,5 @@ The disagreement is therefore not one problem but two: (i) the **vocalism**
 of the direct cell (early apocope predicts e-vocalism via \*hæwi/\*hewi;
 late/geminate and Dahl's no-gemination routes predict īe/ē); (ii) the
 **final -ġ**, which every account except the geminate route borrows from
-the inflected forms — forms that are nowhere attested in OE for this noun.
+inflected forms. The dative *hege* is attested in the late Paris Psalter,
+but no source establishes that form as a pre-i-umlaut donor.

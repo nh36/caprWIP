@@ -117,17 +117,15 @@ viable derivations, all of which predict a long nucleus.
 
 ### F. Does the absence of overtly inflected tokens weaken the analogical account?
 
-**Only mildly, and symmetrically understood it weakens nothing
-uniquely.** The attestation gap is real (no genitive, dative in -e, or
-unambiguous plural in the sources examined — now including six new
-gospel tokens, all direct-case). But the gap afflicts both central
-reconstructions equally: the analogical donor (oblique \*hēaj- stem)
-and the inherited ungeminated direct form (\*hewi) are both unattested.
-Attestation symmetry is not evidential symmetry (ADVERSARIAL_REVIEW,
-Claim E): B2 needs the fewest word-specific assumptions. The gap is
-also expected on usage grounds — a mass noun glossing *faenum* occurs
-overwhelmingly in direct cases. Verdict: the analogical account loses
-direct confirmation, not viability.
+**Cycle-2 status, superseded by the cycle-3 collation.** At the source
+cutoff for this memo, no genitive, dative in -e, or unambiguous plural
+had been identified; the six new gospel tokens were all direct-case.
+Cycle 3 verified Paris Psalter dative *hege* ×3 (101.4, 101.9, 102.14),
+so the general claim that no overtly inflected form exists is withdrawn.
+The remaining gap is chronological: those eleventh-century forms do not
+demonstrate an oblique donor stem available before i-umlaut. This late
+attestation bears on the existence of an inflected cell, not on the
+competing derivations' timing. See `RESEARCH_MEMO_CYCLE3.md`.
 
 ### G. Which derivations remain viable, and where do the others fail?
 

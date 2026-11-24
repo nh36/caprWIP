@@ -5,6 +5,7 @@ hay-article	ref:Campbell1959	Campbell1959	cited source	Germanic/articles/hay/DRA
 hay-article	ref:Cook1894	Cook1894	cited source	Germanic/articles/hay/LINDISFARNE_EVIDENCE.md; Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md
 hay-article	ref:Dahl1938	Dahl1938	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE2.md; Germanic/articles/hay/LITERATURE_MATRIX.md
 hay-article	ref:Dal1934	Dal1934	article bibliography	
+hay-article	ref:Dal1971	Dal1971	alternative reprint; not held	Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md; Germanic/articles/hay/SOURCE_PREPARATION_HANDOFF.md
 hay-article	ref:FernandezCuestaPonsSanz2016	FernandezCuestaPonsSanz2016	article bibliography	
 hay-article	ref:Fulk1992Meter	Fulk1992Meter	cited source	Germanic/articles/hay/DRAFT.md
 hay-article	ref:Goering2025	Goering2025	cited source	Germanic/articles/hay/LITERATURE_MATRIX.md
@@ -42,6 +43,8 @@ hay-article	dataset:DOE-hay-corpus-handoff-2026-11-23		DOE search export	Germani
 hay-article	dataset:DOE-hay-supplement-2026-11-23		DOE search export	Germanic/articles/hay/SOURCE_INTAKE_2026-11-23.md; Germanic/articles/hay/DOE_CROSSWALK_2026-11-23.tsv
 hay-article	ref:Bryan1915	Bryan1915	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md; Germanic/articles/hay/SAME_SCRIBE_CONCORDANCE.tsv
 hay-article	ref:Wallenberg1928	Wallenberg1928	general library; future use	Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md
+hay-article	ref:Wallenberg1931	Wallenberg1931	required source; not held	Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md; Germanic/articles/hay/SOURCE_PREPARATION_HANDOFF.md
+hay-article	ref:Wallenberg1934	Wallenberg1934	distinct bibliographic work; not a substitute	Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md; Germanic/articles/hay/SOURCE_PREPARATION_HANDOFF.md
 hay-article	ref:Langlands2019	Langlands2019	cited source	Germanic/articles/hay/DRAFT.md; Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md; Germanic/articles/hay/SAME_SCRIBE_CONCORDANCE.tsv
 hay-article	ref:Trousdale2005	Trousdale2005	cited source	Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md
 hay-article	ref:Cooper2000	Cooper2000	general library; future use	Germanic/articles/hay/RESEARCH_MEMO_CYCLE5.md

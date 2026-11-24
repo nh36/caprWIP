@@ -7,6 +7,13 @@ comparison) and the consequent revision of `DRAFT.md`. The frozen SC047
 models and PR #21 are untouched. Dal 1934 and Ritt 2000 remain
 ILL-pending.
 
+> **Cycle 5 correction:** The Farman extraction bounds used here were
+> incomplete, so the approximate accented-type calibration below is
+> withdrawn. The corrected census and bounded matched calibration are in
+> `RESEARCH_MEMO_CYCLE5.md`, `FARMAN_ACCENTS.tsv`, and
+> `FARMAN_ACCENT_CALIBRATION.tsv`; they support only a cautious,
+> witness-specific observation, not a general accentuation rate.
+
 ## 1. Principal adjudications
 
 ### 1.1 The Paris Psalter datives are accepted as genuine overt
@@ -70,12 +77,13 @@ verse technique).
   1887, Tamoto 2013); editorial invention is effectively excluded,
   though the manuscript itself cannot be checked online (Digital
   Bodleian's 49-folio selection omits both pages).
-- A calibration of Farman's accented types in Matthew (~90 types,
-  collated from Tamoto's edition) shows the acute falls predominantly on
-  etymologically long nuclei but is sporadic and not exceptionless
-  (secure short exceptions: *wég* Mt 7:14, *stéfn* Mt 2:18, *mónige*
-  Mt 16:9). Verdict: **probabilistic evidence for a long nucleus**,
-  which all surviving derivations predict — hence non-discriminating.
+- The previous calibration of approximately 90 accented types was based
+  on an incomplete extraction and is withdrawn. Cycle 5's bounded matched
+  sample includes unaccented *weg/dæg* (1/53 tokens accented), *stīg*
+  (1/2), and short-HL controls (5/133); it is selected and too small to
+  estimate Farman's overall rate. The two *hóeg* acutes remain suggestive
+  of Farman's own quantity-marking practice, but are not decisive and
+  cannot be projected to ninth-century quantity.
 - ⟨oe⟩ is adjudicated an **inverted spelling of /eː/**: Kuhn (1945)
   establishes that the unrounding of /ø(ː)/ was complete in Farman's
   dialect, with inverted spellings of the ⟨oele⟩ type; Farman writes
@@ -151,5 +159,7 @@ required); the non-evidential status of the frozen model scores.
 See the outstanding-evidence register in `UNRESOLVED.md` (cycle 3):
 Rushworth manuscript acutes (not digitized), Ritt 2000 and Dal 1934
 (ILL), the pre-umlaut dating of the levelled stem (unreachable by
-attestation), direct-case quantity (no identified OE-internal prospect),
-and Ru2's exact exemplar (Kotake's question, immaterial here).
+attestation), and Ru2's exact exemplar (Kotake's question, immaterial
+here). Cycle 5 added a bounded Farman calibration: its two acutes are
+suggestive of that witness's practice but do not establish ninth-century
+direct-case quantity.

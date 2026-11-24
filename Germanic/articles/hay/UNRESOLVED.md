@@ -3,7 +3,9 @@
 ## External evidence
 
 - Ritt 2000: ILL requested; accent marks in Lindisfarne Gospels.
-- Dal 1934: ILL requested; nominal inflection/relevant morphology.
+- Dal 1934: original article remains on the existing ILL request; its 1971
+  reprint is identified (pp. 65–73) but not held. It may clarify the
+  original early-loss/inflection argument.
 - Approaches to Old Frisian Philology 1998: pp. 21 and the tail after 329
   remain unavailable, while Fulk 1998 is complete.
 - Goetz 1971: p. 121 and entire-work completeness beyond the four tranches
@@ -17,17 +19,21 @@
   `<heig>`; the earlier *hæg* reading was erroneous.
 - ~~Separate OE short, long and diphthongal quantity evidence from later
   spelling and glide developments.~~ **Addressed 23 Nov 2026** in
-  `QUANTITY_EVIDENCE.md`: no independent evidence establishes the long
-  vowel; the firm constraint is WS stem identity (īe requires the
-  geminate-route stem). Accent calibration awaits Ritt 2000.
+  `QUANTITY_EVIDENCE.md` and updated cycle 5: no decisive independent
+  quantity evidence establishes the long vowel. Farman's printed acutes
+  are suggestive of his own practice, but the bounded matched calibration
+  is small and not a population rate; it does not support a ninth-century
+  inference. The firm constraint remains WS stem identity (īe requires an
+  ēa-type diphthongal stem). Ritt 2000 concerns Lindisfarne, not Farman.
 - ~~Determine whether Lindisfarne *heig*/*heg* supports independent
   diphthongization or is best explained by the palatal /j/ environment.~~
   **Locus resolved 23 Nov 2026 (cycle 2):** the tokens are Li Mt 6:30
   *heg*, Mt 14:19 *hehg*, Jn 6:10 *heig*, all double-glossed with
   *gers/gærs* over *faenum*; plus Ru1 *hóeg* ×2 and Ru2 *heg*
   (LINDISFARNE_EVIDENCE.md, CONCORDANCE.tsv ids 26–32). The
-  diphthongization-vs-orthography question itself remains open pending
-  accent calibration (Ritt 2000).
+  diphthongization-vs-orthography question remains open. Farman's
+  cycle-5 calibration concerns his own Mercian practice and does not
+  resolve Lindisfarne; Ritt 2000 remains relevant to Aldred's practice.
 - ~~Compare Jones, Minkova, Mokrowiecki and Goering without importing
   conclusions from later phonological models.~~ **Addressed 23 Nov 2026**
   in `LITERATURE_MATRIX.md` and `QUANTITY_EVIDENCE.md`.
@@ -42,8 +48,8 @@
   resolved (MS spelling altered to ⟨heg⟩, Skeat 1887: 123 apparatus);
   the Ru1 ⟨hóeg⟩ acutes are confirmed in three editions but cannot be
   checked online against the manuscript (see register below).
-- On delivery of Dal 1934: reconstruct the original early-loss argument
-  and test it against Dahl's objections.
+- On access to Dal 1934 or the 1971 reprint, reconstruct the original
+  early-loss argument and test it against Dahl's objections.
 - ~~Test Dahl's "no recorded w-forms of OE \*-awj- nouns" claim against the
   full lexicon.~~ **Addressed cycle 2** against the collated record
   (DAHL_REASSESSMENT.md §3): no counterexample found; remains a bounded
@@ -74,32 +80,36 @@
   /eː/ given Kuhn 1945's demonstration that unrounding was complete in
   Farman's dialect (⟨oele⟩-type inverted spellings; ~140 plain-⟨e⟩
   spellings of the \*au+i class).
-- ~~Calibration of Farman's accentual practice.~~ **Done cycle 3**
-  (QUANTITY_EVIDENCE.md §2): acute correlates strongly but not
-  exceptionlessly with etymological length (*wég*, *stéfn*, *mónige*
-  short); *hóeg* acute = probabilistic evidence for a long nucleus.
+- ~~Calibration of Farman's accentual practice.~~ **Bounded calibration
+  completed cycle 5** (`FARMAN_ACCENT_CALIBRATION.tsv`): short V+glide
+  controls *weg/dæg* 1/53 tokens accented; long V+glide *stīg* 1/2;
+  short-HL controls 5/133, with separate sensitivity analyses. This
+  selected panel is descriptive, not a population estimate; see
+  `QUANTITY_EVIDENCE.md` §2.
 - Whether Ross & Stanley 1956 (Bk. 2), Jones's actual source, adds
   manuscript detail beyond the editions used here.
 
 ## Outstanding-evidence register (cycle 3, 24 Nov 2026)
 
-Questions this cycle could not settle, each with the source that would
-resolve it:
+Questions not settled by cycle 3; current status is noted below:
 
 1. **Farman's acutes in the manuscript.** Resolvable only by direct
    inspection (or new digitization) of Bodleian Auct. D. 2. 19, fols.
    containing Mt 6:30 and Mt 14:19; the online selection excludes them.
 2. **Aldred's accent practice as a control.** Ritt 2000 (ILL pending).
-3. **Dal's original 1934 early-loss argument.** Dal 1934 (ILL pending);
-   presently known only through Dahl's and Hogg–Fulk's reports.
+3. **Dal's original 1934 early-loss argument.** The original article
+   remains on the existing ILL request; the 1971 reprint, pp. 65–73, is
+   registered but unheld. The argument is presently known through Dahl's
+   and Hogg–Fulk's reports.
 4. **The pre-umlaut dating of the levelled oblique stem.** No attestation
    can reach it: the earliest overt oblique (PPs *hege*, s. xi) postdates
    i-umlaut by centuries. Only comparative evidence (the status of OHG
    *hewi* as inheritance or remodelling) bears on it.
-5. **Direct-case quantity.** No identified prospect of OE-internal
-   evidence independent of the derivational disjunction; the metre is
-   demonstrated unusable (Fulk 1992: 410–414) and ME reflexes are
-   neutralized (Minkova 2014: 178).
+5. **Direct-case quantity.** Farman's two printed *hóeg* acutes have
+   bounded, selected calibration and suggest his own practice only; they
+   do not establish ninth-century quantity. The metre is demonstrated
+   unusable (Fulk 1992: 410–414) and ME reflexes are neutralized
+   (Minkova 2014: 178).
 6. **Ru2's exact exemplar.** Kotake 2016 leaves direct copying from Li
    unproven; a full collation of Owun's non-R–Y readings against the
    Aldredian manuscripts would be needed, and does not affect the hay
@@ -123,16 +133,25 @@ These are substantive research questions, not metadata or ingestion failures.
   Augustus ii.16, s. ix med., and the witness list and possible later copy
   require qualification. Dahl's "839" is a slip (he dates the same charter
   859 at *Scufelingforde*). See `RESEARCH_MEMO_CYCLE5.md`.
-- ~~Full calibration of Farman's accents.~~ **Done; count corrected**
-  (FARMAN_ACCENTS.tsv + extract_farman_accents.py): 194 non-target OE
-  types/293 tokens plus *hóeg* (one type/two tokens). The previous
-  327-token figure is withdrawn; ~90% of classifiable non-target types
-  have etymologically long nuclei if homorganic-cluster shorts are
-  counted as lengthened. Ritt 2000 remains open for Aldred's practice only.
+- **Bounded Farman calibration completed; no full-corpus rate claimed**
+  (`FARMAN_ACCENT_CALIBRATION.tsv` and `calibrate_farman_accents.py`).
+  The corrected accented census has 196 non-target types/299 tokens plus
+  *hóeg* (one type/two tokens); its boundary now uses `splitlines()` indices
+  anchored to fol. 1r and Mk 2:15. In the matched sample, *weg/dæg* are
+  1/53 tokens accented, *stīg* 1/2, and short-HL controls 5/133. The
+  short-HL sensitivity treatments produce 6/186 if counted as short and
+  6/135 if counted as lengthened. These small, selected counts describe
+  Farman's printed late tenth-century practice only; Ritt 2000 remains
+  open for Aldred's practice, not Farman's.
 - ~~Interpretation of Farman's ⟨oe⟩ (refined).~~ **Revised cycle 4:**
   ⟨oe⟩ is quality/convention evidence, not length (Kuhn 1945: 646 on
   *oele* < short o); it groups *hóeg* with Farman's ē/œ̄ class
   (gehóerde < \*hauzjan = structural parallel), while the acute alone
   carries the quantity evidence. Supersedes the cycle-3 "inverted
   spelling of /eː/" shorthand.
-- Remaining open: items 1–6 of the cycle-3 register above, unchanged.
+- Remaining open: direct manuscript confirmation of the Farman acutes,
+  Aldred's accent practice, access to Dal, pre-i-umlaut donor timing,
+  the exact historical inference from the quantity evidence, and Ru2's
+  exemplar. The bounded Kentish charter search and Farman calibration
+  are complete; neither supplies a diagnostic result for ninth-century
+  quantity.

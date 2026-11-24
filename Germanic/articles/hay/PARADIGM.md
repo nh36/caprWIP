@@ -18,7 +18,7 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
 | nom.acc.pl | E | none identified | mass noun; plural not expected in use |
 | gen.pl | E | none identified | |
 | dat.pl | E | none identified | |
-| compound stem | A(compound) | *heg-* (S 328 *Hegforde*, 858; first element unresolved), *hei-* (S 1196 *heiweg*, conventionally 859; hay-way plausible but not settled), cf. ivy glosses *ibaei/ifeg/ifegn* (Ep/Erf/Cp) if < \*iβ-hau(j)- (contested: Goering 2025: 301 n.4) | compound-internal, uninflected |
+| compound stem | A(compound) | *heg-* (S 328 *Hegforde*, 858; first element unresolved), *hei-* (S 1196 *heiweg*, conventionally dated 859; ‘hay-way’ proposed but not settled), cf. ivy glosses *ibaei/ifeg/ifegn* (Ep/Erf/Cp) if < \*iβ-hau(j)- (contested: Goering 2025: 301 n.4) | compound-internal, uninflected |
 
 ## Reconstructions (class R; by hypothesis — see DERIVATIONS.md)
 

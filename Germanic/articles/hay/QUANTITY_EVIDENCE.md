@@ -1,10 +1,11 @@
 # Vowel quantity and syllabification in OE 'hay' (artifact D)
 
-**Cycle 5 count correction:** `FARMAN_ACCENTS.tsv` contains 195 types and
-295 Old English tokens total: 194 non-target types/293 tokens plus one
-target type (*hóeg*)/two tokens. The older 327-token total and its
-associated Latin-token subtraction do not reconcile with the committed
-table and are withdrawn.
+**Cycle 5 extraction-boundary correction:** `FARMAN_ACCENTS.tsv` now
+contains 197 types and 301 Old English tokens total: 196 non-target
+types/299 tokens plus one target type (*hóeg*)/two tokens. The former
+range mixed LF line numbers with Python `splitlines()` indices, including
+pre-corpus matter and omitting the end of Farman's stint. The old 327-token
+total and its Latin-token subtraction are withdrawn.
 
 Question: what does the surviving evidence actually establish about the
 direct singular — short /e/ + syllabic /i/ (CAPR Model A's *hei*), /ej/,
@@ -19,16 +20,16 @@ class), *glīg/glēo* 'glee' (\*gliwą/\*gliwi, same structure with i-grade).
 | # | Evidence | Bears on | Finding | Decisive? |
 |---|---|---|---|---|
 | 1 | OE spellings ⟨heg, heig, hig, hyg, hieg, haig, hei⟩ | all | ⟨g⟩ normally spells /j/ (Hogg §2.76); no OE spelling distinguishes /e/ from /eː/ before /j/; ⟨ei⟩ can spell e+j, diphthong, or ē+glide | No |
-| 2 | Accent marks | /eː/ | The Ru1 (Farman, Mercian) tokens print ⟨hóeg⟩ with an acute at Mt 6:30 and 14:19 in three independent editions (Kemble–Hardwick 1858: 55, 117; Skeat 1887: 59, 123; Tamoto 2013: 19, 47; page images checked). The manuscript leaves are not digitized. The committed `FARMAN_ACCENTS.tsv` table covers Farman's full stint: 194 non-target types/293 tokens plus *hóeg* (one type/two tokens), 195 types/295 Old English tokens total. Among non-target types, 160 are etymologically long, 14 are short before homorganic clusters (plausibly already lengthened), 13 are short, and 7 uncertain. Counting the cluster class as lengthened, ~90% of classifiable types have long nuclei. The previous 327-token total and 163 Latin-text-token subtraction do not reconcile with the table and are withdrawn. Farman's two late tenth-century acutes are probabilistic evidence for length in that witness, not proof reaching back to the ninth century; the result does not discriminate among the surviving derivations. The Lindisfarne and Ru2 tokens print no accent; WW *Hég* and BT *hég/híg* remain editorial; Ritt 2000 is still ILL-pending and concerns Aldred, not Farman | No (probabilistic, and non-discriminating among live accounts) |
+| 2 | Accent marks | /eː/ | The Ru1 (Farman, Mercian) tokens print ⟨hóeg⟩ with an acute at Mt 6:30 and 14:19 in three independent editions (Kemble–Hardwick 1858: 55, 117; Skeat 1887: 59, 123; Tamoto 2013: 19, 47; page images checked). The manuscript leaves are not digitized. The corrected `FARMAN_ACCENTS.tsv` census has 196 non-target types/299 tokens plus target *hóeg* (one type/two tokens), 197 types/301 Old English tokens total; its corrected splitlines bounds are documented in the extractor. The separate matched calibration (`FARMAN_ACCENT_CALIBRATION.tsv`) includes unaccented tokens: short-V+glide *weg/dæg* 1/53 tokens, long-V+glide *stīg* 1/2, and short-HL controls 5/133; surface-type and lexical-type counts are recorded separately. The panel is small and deliberately matched, not a population estimate; repeated tokens are not independent. Treating the short-HL panel as short gives 6/186 short tokens accented; treating it as lengthened gives 6/135 long-like tokens accented. Farman's two late tenth-century acutes are probabilistic evidence for his own practice, not proof reaching back to the ninth century; the sample does not discriminate among the surviving derivations. The Lindisfarne and Ru2 tokens print no accent; WW *Hég* and BT *hég/híg* remain editorial; Ritt 2000 remains ILL-pending and concerns Aldred, not Farman | No (small descriptive calibration; non-discriminating among live accounts) |
 | 3 | ME reflexes: *hei/hai* merging with *wei/wai* 'way' | /eː/ vs /e/ | Minkova 2014: 178 (image-verified): expected /eːj/ 'hay' vs /ej/ 'way' "should not have been preserved" — the merger shows length was neutralized before /j/; therefore ME and ModE *hay* cannot recover OE quantity | No — positively excludes this route |
 | 4 | Jones's transcriptions | /e/ vs /eː/ | Internally mixed: [hej]/[heij] (pp. 149, 152) short; Table 3.17 [heej̆]/[hiij̆] long; Table 2.29 puts ⟨heg⟩ in the short [ɛ] class (but glosses it 'meadow', possibly the hedge word); his [klæj̆] 'clay' short against conventional *clǣg* shows his quantity assignments are analysis-dependent | No |
 | 5 | Poetic metre | /eː/, syllable count | **Updated cycle 4 (scansions supplied):** verse tokens exist — Paris Psalter 71.16 *heg*, 101.4/101.9/102.14 *hege* (dat.), 105.17 *hig*, and Andreas 38 *hig* (146.9 *hig* is Krapp's emendation of MS ⟨hio⟩). They cannot discriminate: (i) the monosyllabic direct forms stand in lifts, where a closed monosyllable (CVC) is heavy by position whether its vowel is long or short; (ii) the dative lines scan both ways — *ic eom hege gelic* (101.4) and *and ic hege gelic* (101.9) are type-B verses (dip + lift + dip + lift) in which *hege* supplies the first lift either as resolved short *hĕge* or as long *hē-* with *-ge* in the medial dip; both are metrically unexceptionable, so the scansion makes no discriminating prediction, and in 102.14 (*mawenum hege … anlice*) the word's position admits the same two parses; (iii) a resolution-based test would in any case be unsafe here: Fulk (1992: 410–414) shows the Psalter's metre is too degenerate — late, formulaically padded, metrically irregular, dialectally mixed in transmission — to sustain quantitative inference, and Minkova (2003: 23–25) warns independently that resolution is the metrical equivalence least straightforwardly grounded in the ambient language. A negative result, now demonstrated line by line rather than asserted | No — demonstrated unusable, not merely absent |
 | 6 | WS vocalism ⟨ie/i/y⟩ (hieg, hig, hyg) | stem identity | WS īe (> i/y) arises regularly from \*ēa + i-umlaut, which requires an ēa-type diphthongal stem nucleus in the direct cell; an ungeminated consonantal-w \*hæwi/\*hewi cannot yield WS īe by any attested change. That nucleus is reachable by gemination + \*wwj-resolution (B2, regular), by levelling before umlaut (A2), or by Dahl's never-resolved inherited diphthong (DAHL_REASSESSMENT.md) | **Yes for WS stem identity** (not directly for quantity, and not by itself for gemination) |
-| 7 | Anglian ⟨heg⟩ (VP ×11, VH, Bede), Kentish ⟨hei-⟩ (S 1196, conventionally 859) | stem identity | Ninth-century Kentish charters write *dæġ* as **dei** (OET Ct. 39, 831; Ct. 42, 837); scribe 7's S 1195 also has *dei*. S 1196's **Deimund** is in a witness list that Lowe says may have been added separately, so it is not a secure same-hand control. The corpus has no non-target same-scribe long-vowel + palatal-glide comparator; neither ⟨hei⟩ nor Anglian ⟨heg⟩ establishes quantity or stem identity. VP *heg* beside *deg* shows a separate short-vowel spelling control. Anglian smoothing of geminate-route \*ēaj gives ēġ; early-apocope \*hewi > \*hei would be orthographically compatible | No |
+| 7 | Anglian ⟨heg⟩ (VP ×11, VH, Bede), Kentish ⟨hei-⟩ (S 1196, conventionally 859) | stem identity | Ninth-century Kentish charters write *dæġ* as **dei** (OET Ct. 39, 831; Ct. 42, 837); scribe 7's S 1195 also has *dei*. The expanded Lowe sample adds S 350 *bradan weg* (transaction 898; Canterbury D.C. F 150, s. ix/x; Earle, pp. 157–158; Lowe, App. II.23), a short-vowel control whose language date is debated. S 1196's **Deimund** is in a witness list Lowe says may have been added separately. No diagnostic long-vowel + palatal-glide control was found in the screened Kentish witnesses. Neither ⟨hei⟩ nor Anglian ⟨heg⟩ establishes quantity or stem identity. VP *heg* beside *deg* shows a separate short-vowel spelling control. Anglian smoothing of geminate-route \*ēaj gives ēġ; early-apocope \*hewi > \*hei would be orthographically compatible | No |
 | 8 | Class parallels *ēg/īeg* 'island' < \*awjō-, *strēgan*, *cīegan* | /eː/ | These show long nuclei from \*auj/\*aujj contraction — but all derive from geminate/protected or heavy structures; they confirm the geminate route's output, not the inherited direct cell | No |
 | 9 | *glīg* ~ *glēo* 'glee' < \*gliwą (direct) | fate of \*-wi/\*-wą | Campbell §579(4): \*gliwi "undisturbed" would be ungeminated; attested *glīg* he calls re-formation (§411); *glēo* shows w-retention with back reflex. The one possible regular witness of the ungeminated type is itself disputed | No |
 | 10 | OHG *hewi*, Goth. *hawi* | existence of ungeminated direct cell in Gmc | Real and uncontested outside English (R&T p. 53); but Dahl doubts \*hewi ever existed in English ("no recorded w-forms" in OE \*-awj- nouns) | Supports the *possibility*, not the OE fact |
-| 11 | Colloquy *mid hig* (dative syntax, no ending) | syllabicity of final i | If the final -i of Model A's *hei* were syllabic, an unambiguous dative \*heie/\*hige might be expected somewhere; but with zero attested inflected tokens the argument from silence is weak | No |
+| 11 | Colloquy *mid hig* (dative syntax, no ending) | syllabicity of final i | The endingless Colloquy phrase is not an overt inflection. The late Paris Psalter supplies manuscript-verified dative *hege* ×3 (101.4, 101.9, 102.14), but this eleventh-century evidence cannot establish the date of the donor stem postulated for pre-i-umlaut analogy. The early-cell argument from silence is therefore reduced, not eliminated. | No |
 | 12 | WW I.547 *hei* (Worcester F.174, s. xiii) | spelling of final segment | Exact match for Model A's serialization, but **demonstrably discontinuous** (cycle 4): F.174 (Tremulous Hand, s. xiii, Early Middle English — WW's "c. 1150" superseded) abridges the 11th-c. glossary WW no. X, whose parallel entry reads *Foenum, hig, oðde gærs*; and the same F.174 glossary writes *Uia, wei* and *weibreode* for short *weġ*. Its ⟨hei⟩ is a 13th-c. ⟨ei⟩-respelling of exemplar ⟨hig⟩, not a relic | No — positively excluded as continuity evidence |
 
 ## Assessment
@@ -50,13 +51,18 @@ class), *glīg/glēo* 'glee' (\*gliwą/\*gliwi, same structure with i-grade).
   **ēa-type diphthongal stem nucleus feeding i-umlaut** in the direct
   cell — reachable by gemination, levelling, or Dahl's diphthongal parse,
   but not from \*hæwi/\*hewi. The quantity follows from that stem
-  identity; it has no separate empirical support at present.
+  identity in the surviving West Saxon accounts. Farman's calibrated
+  printed acutes are separate, defeasible evidence about his late
+  witness, but do not independently establish ninth-century quantity.
 - The evidence that could in principle decide quantity independently has
-  now been pursued to its current limits: Farman's accents are calibrated
-  and committed (FARMAN_ACCENTS.tsv; probabilistic support for a long
-  nucleus; manuscript confirmation blocked by the selective Bodleian
-  digitization; Ritt 2000 still pending for the neighbouring Lindisfarne
-  practice), and the metre is demonstrated unusable (row 5). The
+  now been pursued to its current limits: Farman's two *hóeg* acutes have
+  a bounded matched calibration (FARMAN_ACCENTS.tsv and
+  FARMAN_ACCENT_CALIBRATION.tsv). The small selected panel is descriptive,
+  not a population rate; the acutes are suggestive of Farman's own
+  quantity practice, not decisive or transferable to ninth-century
+  quantity. Manuscript confirmation is blocked by selective Bodleian
+  digitization; Ritt 2000 remains pending and concerns neighbouring
+  Lindisfarne practice. The metre is demonstrated unusable (row 5). The
   orthographic lead is now stated more carefully (cycle 4, correcting
   cycle 3): Kuhn (1945: 646) discusses *oele* as i-umlaut of **short**
   Latin *o* retaining a rounded spelling under Northumbrian influence —

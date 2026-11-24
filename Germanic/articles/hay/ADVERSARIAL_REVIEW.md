@@ -6,50 +6,45 @@ reconstruction of Dahl's analysis, the comparative-controls study) and
 assigned one of: **Confirmed / Confirmed only in a narrower sense /
 Not established / Contradicted by additional evidence.**
 
-## Claim A — "No overtly inflected Old English form of 'hay' is identified in the sources examined"
+## Claim A — "No pre-i-umlaut donor stem is identified"
 
-**Assessment: Confirmed (in its corrected, bounded form) — with the
-adjacent unverified-locus gap now closed.**
+**Assessment: the general absence of an overtly inflected form is
+contradicted; the donor's early availability remains unestablished.**
 
-- The six newly verified gospel-gloss tokens (Li Mt 6:30, Mt 14:19,
-  Jn 6:10; Ru1 Mt 6:30, Mt 14:19; Ru2 Jn 6:10) are all direct-case
-  forms without overt endings. The search base distinguished: (1)
-  Dahl's corpus ("Inflected forms are thus not to be found in my
-  material"); (2) the cycle-1 concordance; (3) this cycle's additions —
-  Cook's complete Lindisfarne glossary entry and the five *faenum*
-  gospel loci in the Cambridge editions. None yields a genitive, a
-  dative in -e, or an unambiguous plural. (4) The complete surviving OE
-  record has *not* been exhaustively searched (no DOE corpus query was
-  possible here); the claim remains bounded.
-- Strongest evidence against: none found; strongest residual risk: an
-  inflected token in unsearched charters, glossaries or homilies.
-- Materiality (assignment §5A): the noun is a mass noun used almost
-  exclusively to gloss *faenum* in direct-case contexts; oblique and
-  plural tokens are *a priori* rare. The absence of inflected tokens is
-  therefore largely unsurprising and only weakly damaging to the
-  analogical account: it leaves the donor unattested, but it does not
-  make the donor improbable — every account (including Dahl's)
-  reconstructs the same oblique stem vocalism, and the Colloquy's *mid
-  hig* shows the noun did occur in oblique syntax with no overt ending.
-  See Claim E for the asymmetry argument this feeds.
+- Three Paris Psalter dative singulars *hege* (PPs 101.4, 101.9, 102.14)
+  are manuscript-verified in BnF lat. 8824, s. xi med. (CONCORDANCE.tsv
+  33–35; `RESEARCH_MEMO_CYCLE3.md`). Their Latin parallels and syntax
+  identify the noun ‘hay’. They establish an overtly inflected cell, not a
+  pre-i-umlaut stem.
+- The six gospel-gloss tokens examined in this earlier cycle (Li Mt 6:30,
+  Mt 14:19, Jn 6:10; Ru1 Mt 6:30, Mt 14:19; Ru2 Jn 6:10) are direct-case
+  forms without overt endings. Hogg's statement that inflected forms are
+  absent from "my material" remains a statement about his own corpus.
+- The wider surviving OE record has not been exhaustively searched. The
+  bounded Lowe charter search found no diagnostic ninth-century Kentish
+  occurrence; this does not restore the former general absence claim.
+- The noun's mass-noun use helps explain why oblique forms are scarce.
+  The late dative is compatible with an oblique paradigm, but does not
+  establish the date or historical availability of its stem as an analogical
+  donor. See Claim E for the separate comparison of assumptions.
 
 ## Claim B — "The long vowel has no independent evidence"
 
 **Assessment: Confirmed only in a narrower sense.**
 
-- Correct core (restated): no *decisive* independent evidence for /eː/
-  in the direct singular exists in the material examined; editorial
-  acutes are not evidence; Minkova's merger argument blocks the
-  ME-reflex route; no metrical token; Mokrowiecki-style calibration is
-  unavailable for the relevant witnesses pending Ritt (2000).
+- Correct core (restated): no *decisive* evidence establishes /eː/ in
+  the ninth-century direct singular. The bounded matched Farman
+  calibration completed in cycle 5 makes his two printed acutes
+  suggestive of his own practice only; it is not a population rate or a
+  ninth-century calibration. Direct manuscript confirmation is
+  unavailable online. Ritt (2000) concerns Lindisfarne, not Farman.
 - Too categorical as originally worded, on two counts. (i) *New lead*:
   the two Rushworth1 tokens print acute accents (⟨hóeg⟩ ×2, Kemble–
-  Hardwick 1858, pp. 55, 117, image-verified at the edition level). If
-  the accents are manuscript-genuine and Farman's accentual practice
-  calibrates toward etymological length, this would be genuinely
-  independent quantity evidence — the first known for this word. Both
-  conditions are unverified; the claim's *current* truth survives, its
-  modal force ("no evidence could be forthcoming") does not. (ii)
+  Hardwick 1858, pp. 55, 117, checked against three editions). The
+  bounded matched sample now provides limited calibration of Farman's
+  practice, but it is small and selected; the manuscript acutes remain
+  unverified directly. They are suggestive witness-specific evidence,
+  not decisive evidence for earlier quantity. (ii)
   *Reconstructive evidence is not zero evidence*: the long nucleus
   follows from independently established sound laws on **all three**
   live derivations (geminate resolution, levelling before umlaut,
@@ -136,7 +131,7 @@ what is established is the narrower attestation symmetry.**
 
 | Claim | Verdict | Change required in article |
 |---|---|---|
-| A (no inflected token) | Confirmed (bounded form); Lindisfarne gap closed | §3 updated with verified tokens; materiality discussion added |
+| A (no pre-i-umlaut donor stem) | General no-inflection claim contradicted by Paris Psalter *hege* ×3; donor timing unresolved | Distinguish late inflection from early donor availability |
 | B (no independent quantity evidence) | Narrower sense only | §4: "no decisive independent evidence in the material examined"; Ru1 accent lead recorded; all-routes-converge point added |
 | C (WS requires gemination) | Narrower sense only | §5: restate as diphthongal-nucleus requirement |
 | D (no regular chain from early-apocope form) | Confirmed, scope fixed to the consonantal-w starting point | §5: scope language |

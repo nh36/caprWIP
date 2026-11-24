@@ -5,9 +5,8 @@ by Tamoto (2013).
 
 Source text (private, Git-ignored):
     docs/references/local/scholarly-2026-11-23/tamoto2013.txt
-Farman's stint occupies file lines 5908-11738 of that extraction
-(Mt begins at the edition's fol. 1r = file line 5908 "boéc sindun ...";
-Mk 2:15 "ł hleonadun", Farman's last word, is at file line 11738).
+Farman's stint occupies splitlines() lines 6037-11987 of that extraction,
+from the edition's fol. 1r marker through Mk 2:15, "ł hleonadun".
 
 Method:
   * A token counts as accented if its NFD normalization contains U+0301.
@@ -38,7 +37,7 @@ ROOT = Path(__file__).resolve().parents[3]
 SOURCE = ROOT / "docs/references/local/scholarly-2026-11-23/tamoto2013.txt"
 OUT = Path(__file__).resolve().parent / "FARMAN_ACCENTS.tsv"
 
-START, END = 5907, 11738  # 0-based slice bounds of Farman's stint
+START, END = 6036, 11987  # 0-based slice bounds; END is exclusive
 
 def nfc(s):
     return unicodedata.normalize("NFC", s)

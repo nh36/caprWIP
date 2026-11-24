@@ -135,7 +135,10 @@ The shared bibliography key is `Hock1973`; the
 compares Hock's actual argument with the five requested modern discussions.
 This is bounded source integration, not adoption of a new SC015 law.
 Goering2025 and Bennett1968 are acquired and preserved. Ritt2000 and Dal1934
-are explicitly ILL requested and awaiting delivery. Stiles1995 is held in the
+are explicitly ILL requested and awaiting delivery. Dal's 1934 article was
+also reprinted in her 1971 *Untersuchungen zur germanischen und deutschen
+Sprachgeschichte*, pp. 65–73 (some catalogues list [1972]); that separate
+edition is registered but not held or newly requested. Stiles1995 is held in the
 complete and companion `Friesische Studien II` scans and in a born-digital
 revised standalone extraction. The original 1995 chapter has also been OCRed
 and mapped locally.

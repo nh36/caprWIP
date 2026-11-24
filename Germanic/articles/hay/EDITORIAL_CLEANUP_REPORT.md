@@ -12,7 +12,7 @@
 | Corrupt gap record in research memo | `RESEARCH_MEMO.md` §8 | Replaced `se8e` gap wording with `secg/sege` | Same Hogg–Fulk p. 20 image | Corrupt strings absent | No |
 | Jones hay passage cited to p. 162 | `hay-source-critical-reading-2026-11-22.md`, Jones opening | Changed hay discussion to pp. 149 and 152; preserved p. 162 as non-hay pre-nasal matter | Earlier image verification and `PASSAGES.tsv` | PASSAGES.tsv already carries p. 152/sheet 166 and p. 162/sheet 176 distinctions | Lindisfarne locus itself remains unverified |
 | Minkova final assessment still said `hæg` | Critical-reading report, initial assessment | Changed superseded form to `hēġ`; dated 400-dpi supersession notice retained | Minkova p. 178, PDF sheet 198, held page image | Page prints italic `hēġ` | No |
-| Unqualified absence claims | `DRAFT.md`, `PARADIGM.md`, `LITERATURE_MATRIX.md`, `QUANTITY_EVIDENCE.md`, `RESEARCH_MEMO.md` | Qualified absence wording to “sources examined” or “overtly inflected form identified” | Sources examined have bounded ledger/edition scope | Wording now reflects search boundaries | Fable should review whether the absence materially weakens analogy |
+| Unqualified absence claims | `DRAFT.md`, `PARADIGM.md`, `LITERATURE_MATRIX.md`, `QUANTITY_EVIDENCE.md`, `RESEARCH_MEMO.md` | Qualified absence wording to “sources examined” or “overtly inflected form identified” | Sources examined have bounded ledger/edition scope | Wording now reflects search boundaries; Paris Psalter *hege* ×3 is acknowledged | Fable should assess whether these late datives bear on donor timing |
 | Concordance Mark/Bede edition identities | `CONCORDANCE.tsv` rows 20–23 | Preserved `Miller1890` and `Skeat1871`; unverified Lindisfarne row remains id 26 | Existing concordance and edition records | 26 unique identifiers; 14-column structure parse passes | Lindisfarne secondary report remains unverified |
 
 ## Bibliography integrity
@@ -53,5 +53,5 @@
 - Whether the Lindisfarne `heig/heg` evidence is genuine.
 - Whether the `glīg/glēo` doublet supplies independent phonological controls.
 - Whether the claims about vowel quantity and West Saxon vocalism need further qualification.
-- Whether the absence of overtly inflected tokens materially weakens the analogical account.
+- Whether the late Paris Psalter datives inform availability of an oblique donor before i-umlaut.
 - Whether the final derivational and evidential-symmetry claims should be revised after primary-source criticism.

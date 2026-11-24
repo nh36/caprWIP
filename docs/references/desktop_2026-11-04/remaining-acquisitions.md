@@ -3,7 +3,9 @@
 Updated22 November2026: Seiler2019, the complete Fulk1998 chapter, Hock1973,
 Stiles1995 and Bennett1968 are held and removed from the local acquisition
 requests. Goering2025 is also acquired. Ritt2000 and Dal1934 are ILL requested
-and awaiting delivery.
+and awaiting delivery. Dal's 1934 article is also available as an unheld
+1971 reprint at pp. 65–73 (some catalogues list [1972]); no new acquisition
+request was made for the reprint.
 
 ## Hock request completed, 6 November2026
 

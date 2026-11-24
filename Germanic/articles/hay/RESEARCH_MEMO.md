@@ -64,15 +64,21 @@ attestations and the three-way *heiweg* assessment, use
 attested?** ⟨heg⟩ (Mercian VP ×11, VH, Bede, charter 858), ⟨hei-⟩
 (Kentish 839, compound), ⟨hig/hyg⟩ (late WS psalters, gospels, Colloquy,
 glossaries), ⟨heig⟩ (Dialogues C, Royal Mk 6.39), ⟨haig⟩ (Hatton 38),
-⟨hei⟩ (c. 1150 glossary). Only direct (nom./acc.) cells and endingless
-dative syntax (*mid hig*) are attested. **No overtly inflected token was
-identified in the sources examined.**
+⟨hei⟩ (c. 1150 glossary). At this cycle-1 cutoff, the reviewed items
+supplied direct (nom./acc.) cells and endingless dative syntax (*mid hig*),
+but no overtly inflected token. Cycle 3 later verified Paris Psalter
+dative *hege* ×3; the remaining issue is whether that late form bears on
+a pre-i-umlaut donor stem.
 
-**2. Strongest independent evidence for a long vowel? Decisive?** There
-is none that is independent. The length of *hīeġ/hēġ* is theory-internal
-(regular output of the geminate stem); editorial acutes are not
-manuscript evidence; the ME merger of 'hay' and 'way' (Minkova) shows
-later reflexes cannot recover the quantity. Not decisive — genuinely open.
+**2. Strongest independent evidence for a long vowel? Decisive?** The
+Farman tokens *hóeg* (Mt 6:30, 14:19) carry acutes in three independent
+editions. The bounded matched calibration in cycle 5 makes them
+suggestive of Farman's own quantity-marking practice, but the sample is
+small and selected, and the manuscript leaves cannot be checked online.
+This is not decisive evidence for the ninth-century Kentish form or its
+quantity. The late ME merger of 'hay' and 'way' (Minkova) cannot recover
+earlier quantity; the remaining quantity argument is chiefly
+reconstructive.
 
 **3. Can the early-apocope direct form develop regularly into an attested
 OE form without analogy?** Into **WS *hīeġ***: no. Into the **Anglian/
@@ -119,12 +125,13 @@ already concluded ("the evidence does not settle a general OE oral/nasal
 sequence").
 
 **9. What is genuinely original here?** (i) The source-critical
-concordance and the demonstration that **no overtly inflected OE token was
-identified in the sources examined** —
-the donor of every analogical account is unattested; (ii) the
-demonstration that the long vowel of the direct singular has no
-independent empirical support (the quantity is a theorem of the geminate
-derivation, not a datum); (iii) the explicit negative result that no
+concordance, including the later manuscript-verified Paris Psalter dative
+*hege* ×3; no evidence currently dates an oblique donor stem before
+i-umlaut; (ii) the
+demonstration that the only calibrated accentual evidence is late,
+witness-specific and non-decisive: Farman's two *hóeg* acutes suggest
+quantity in his own practice but do not establish ninth-century quantity;
+(iii) the explicit negative result that no
 independently motivated regular chain carries the early-apocope output to
 WS *hīeġ*; (iv) the observation that the early-apocope output is
 spelling-compatible with precisely the early Anglian/Kentish record; (v)
@@ -135,29 +142,34 @@ ours, and are so credited.
 **10. Retain, narrow, or change the thesis?** **Narrow it.** The original
 thesis — that the early-apocope direct form developed regularly into an
 attested OE form, making Ringe–Taylor's analogy unnecessary — fails for
-West Saxon and is undecidable for Anglian/Kentish. The defensible article
-is: (a) the attested record is direct-case-only; (b) the reconstructed
-long vowel is evidentially unsupported though derivationally motivated;
-(c) WS *hīeġ* requires the geminate-shaped stem, regularly under late
-nasal apocope or by levelling under early apocope — the word cannot
-discriminate the chronologies; (d) the analogical machinery of the
-handbooks operates between two unattested forms. The article should not
+West Saxon and is undecidable for Anglian/Kentish. The attested record
+includes three late Paris Psalter dative singulars *hege*, but no evidence
+dates an oblique donor stem before i-umlaut. Farman's two printed acutes
+are suggestive of his own late tenth-century practice, not decisive
+evidence for ninth-century quantity. The defensible article is: (a) the
+record contains abundant direct forms and a late inflected cell, while
+donor timing remains unresolved; (b) the long nucleus is
+derivationally motivated and weakly supported in Farman's witness, but
+not established for the ninth-century target; (c) WS *hīeġ* requires the
+geminate-shaped stem, regularly under late nasal apocope or by levelling
+under early apocope — the word cannot discriminate the chronologies;
+(d) the analogical machinery of the handbooks operates between forms
+whose early chronology is not directly attested. The article should not
 claim that Ringe–Taylor's chronology is vindicated by 'hay', and should
 report the negative A1 result explicitly.
 
 ## Next substantive research questions
 
-1. Verify the Lindisfarne heig/heg locus (Jones p. 21) in a held edition
-   or facsimile; if a hay token exists in Lindisfarne, check it for an
-   accent and calibrate per Mokrowiecki's method (with Ritt 2000 when it
-   arrives).
-2. On delivery of Dal 1934: establish the original early-loss argument
-   from OHG *hewi/gewi* and whether it answers Dahl's objections.
+1. Assess whether the surviving quantity and paradigm evidence makes
+   analogy necessary, rather than assuming it from a late paradigm.
+2. If the existing ILL request or the registered 1971 reprint of Dal
+   becomes available, compare Dal's original early-loss argument with
+   Dahl's objections.
 3. Assess Dahl's no-gemination claim for \*-awj- against the full CAPR
-   \*aw(w)j lexicon (hue, strew, island classes) — does any OE w-form of
-   an \*-awj- noun exist?
-4. The *glīg/glēo* doublet deserves its own source-critical treatment as
-   the only possible regular witness of the ungeminated type.
-5. Sections 4–8 of the article remain to be written from the analytical
-   material; Section 7 should rest on the *nett/bedd/cynn* diagnostics,
-   not on 'hay'.
+   \*aw(w)j lexicon (hue, strew, island classes).
+4. Continue the source-critical comparison of *glīg/glēo* and related
+   independent controls.
+
+The bounded source-ingestion work is complete. Do not pursue further
+general acquisitions or treat these questions as settled by the
+source-preparation handoff.
