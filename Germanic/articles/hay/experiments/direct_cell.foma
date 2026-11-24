@@ -1,0 +1,77 @@
+# Research-only cascade: regular development of the PWGmc direct cell *hawi
+# under early nasal apocope, with attested minimal-pair controls.
+#
+# NOT a production cascade. This file exists solely to verify the cycle-8
+# reconstruction in ../DERIVATIONS.md ("Cycle 8 - the regular direct cell
+# established"). It must never be composed into Germanic/fsts/germanic.txt
+# or any adopted model.
+#
+# Inputs are post-apocope PWGmc shapes (asterisks omitted):
+#   hawi     'hay'  direct cell (= attested OHG hewi, Goth. hawi)
+#   awi      'ewe'  (PGmc *awiz; R&T 5.1.2, 6.6.2, 6.9.4 -> OE eowu)
+#   klawiþa  'itch' (PNWGmc *klawiþo; R&T 5.1.2 -> OE cleweþa, attested)
+#   mani     'necklace' (early-apocope relic class; Stiles 2013 -> OE mene)
+#   mati     'food' (R&T 6.6.2 -> OE mete)
+#
+# All rule motivations: R&T 5.1.2 (fronting before *wi), 6.6.2 (i-umlaut
+# raising ae > e; final -i > -e after light syllables), 6.2.4 (no
+# diphthongization before *wi); Hogg-Fulk SS3.19, 7.72 and Campbell S405
+# (w-loss confined to _u/_o and absolute final position - hence NO w-loss
+# rule in the regular cascade).
+
+define TriggerC [w | n | t];
+
+# Anglo-Frisian fronting of *a before C + *i (R&T 5.1.2)
+define AFB a -> æ || _ TriggerC i;
+
+# i-umlaut: raising of ae > e before C + *i (R&T 6.6.2)
+define IUmlaut æ -> e || _ TriggerC i;
+
+# Weakening of unstressed medial *i in the -iþa suffix (cleweþa)
+define MedialWeaken i -> e || w _ þ;
+
+# Weakening of retained final *-i after a light syllable (mete, stede, mene)
+define FinalIWeaken i -> e || _ .#.;
+
+# Orthography: k -> c
+define Orth k -> c;
+
+regex AFB .o. IUmlaut .o. MedialWeaken .o. FinalIWeaken .o. Orth;
+save stack regular_early.bin
+clear stack
+
+# ---------------------------------------------------------------------------
+# Variant cascade reproducing the frozen Model A step OEWLossBeforeI
+# (w -> 0 before unstressed i, ordered after i-umlaut as in the frozen
+# trace). Purpose: demonstrate overgeneration against the attested
+# controls eowu and cleweþa. Final-vowel weakening is left out, as in the
+# frozen A0 trace (output hei retains -i); the diagnostic failure is the
+# deleted medial w, which no final-vowel treatment can repair.
+
+define WLoss w -> 0 || _ i;
+
+regex AFB .o. IUmlaut .o. WLoss .o. Orth;
+save stack wloss_variant.bin
+clear stack
+
+# ---------------------------------------------------------------------------
+# Late-apocope (B2-type) reference cascade for the diphthongal nucleus:
+# pre-OE *hauj (direct cell under late apocope, after *-awj- > *-auj-
+# resolution) and *auju 'island' (R&T pp. 173, 246).
+
+# *au > *ea with brightening/levelling (R&T p. 173)
+define AuBright a u -> ē a;
+
+# i-umlaut of *ea by following j (R&T p. 246: *eaju > *ieju)
+define EaUmlaut ē a -> ī e || _ j;
+
+# Loss of final *-u after a heavy syllable (island: *ieju > ieg)
+define FinalULoss u -> 0 || j _ .#.;
+
+# Orthography: final j -> ġ
+define GOrth j -> ġ || _ .#.;
+
+regex AuBright .o. EaUmlaut .o. FinalULoss .o. GOrth;
+save stack late_b2.bin
+clear stack
+quit

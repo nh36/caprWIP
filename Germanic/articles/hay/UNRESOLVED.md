@@ -1,6 +1,57 @@
 # Hay research unresolved evidence
 
-## Current status after cycle 7
+## Current status after cycle 8
+
+Cycle 8 resolved the central open question of cycle 7. The regular
+development of the inherited direct cell under early nasal apocope is now
+established from first principles (DERIVATIONS.md, cycle-8 section;
+experiments/): PWGmc \*hawi (= attested OHG *hewi*) regularly yields
+disyllabic \*\*hewe with retained w, secured by the attested minimal-pair
+controls *eowu* 'ewe' (R&T 5.1.2, 6.6.2, 6.9.4) and *cleweþa* 'itch'
+(R&T 5.1.2), and by the light-syllable -i > -e class (*mete*, *mene*).
+Consequences now current:
+
+- The frozen Model A step `OEWLossBeforeI` is refuted as history: no
+  w-loss before \*i is documented anywhere, and *eowu*/*cleweþa*
+  positively contradict it. The A0/A1 chains to \*hei/\*hē are
+  historically indefensible; the hiatus-resolution and resyllabification
+  routes are moot because their input never arises.
+- Under early apocope, whole-stem levelling from the oblique cells is
+  **required** in every dialect; under late apocope the attested paradigm
+  is regular without analogy (B2), or with analogical -ġ only (Dahl's
+  ungeminated late variant). 'Hay' therefore patterns with *nett*,
+  *bedd*, *cynn* as an analogical liability of the early chronology.
+- The cycle-6/7 instruction not to treat "every viable derivation
+  predicts a long direct vowel" as current is itself superseded: the
+  only regular short-vowel candidate, \*\*hewe, is excluded by every
+  attested spelling (all monosyllabic, w-less), so every derivation
+  compatible with the record (B2, Dahl, A2 levelling) yields a long
+  umlauted nucleus. This is an argued conclusion, not the retired
+  cycle-4 assertion.
+- The cycle-7 statement that the applicability of the West Saxon ⟨ie⟩
+  developments to 'hay' "remains unsettled" is narrowed: of Hogg's three
+  sources of WS ⟨ie⟩, only i-umlaut of a diphthong is reachable from the
+  'hay' etymon; palatalization of /eː/ requires a preceding palatal
+  onset that 'hay' never had, and i+e hiatus requires a stem-final /iː/
+  that no viable derivation supplies before the oblique stem is already
+  in place. WS *hig/hyg* presuppose īe (or ī) by the regular LWS
+  developments and cannot continue \*\*hewe or \*hei.
+
+Still genuinely unresolved after cycle 8:
+
+- The apocope chronology itself. 'Hay' now weighs on the late side with
+  the other light neuter ja-stems, but early apocope plus levelling
+  remains available, and the *mene*-relic argument for early apocope
+  stands. The word constrains but does not decide the debate.
+- The dialect, exemplar language and transmission layer of the two
+  Eadwine ⟨hieg⟩ readings.
+- The lexical identity of S 1196 *heiweg* (possible, not probable
+  witness) and of S 328 *Hegforde* first element (unresolved).
+- Direct quantity evidence: the Farman acute remains probabilistic and
+  the calibration limits stand; the quantity conclusion above rests on
+  derivational exhaustion, not on a direct measurement.
+
+## Current status after cycle 7 (superseded by cycle 8 above)
 
 The final bounded verification is complete. Eadwine Psalter ⟨hieg⟩ at
 PPs 71.16 and 146.8 is directly confirmed on fols. 125r and 258r,

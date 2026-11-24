@@ -1,42 +1,52 @@
 # Old English ‘hay’ article
 
-**Status:** Source preparation is complete. The next cycle is for historical
-inference, not further philological investigation or general acquisition.
+**Status:** Research cycle 8 (the historical-inference cycle) is complete.
+The central question — did ‘hay’ require analogy under early nasal apocope?
+— is answered: the regular early-apocope outcome of the direct cell is
+disyllabic, w-retaining \*\*hewe (established from the *eowu*/*cleweþa*/
+*mete*/*mene* controls), so under early apocope the attested paradigm
+requires whole-stem levelling in every dialect, while under late apocope it
+is regular. The attested word is long-vowelled on all viable derivations.
+The apocope chronology itself remains undecided.
 
-## Start the next research cycle
+## Entry points
 
-1. [`SOURCE_PREPARATION_HANDOFF.md`](SOURCE_PREPARATION_HANDOFF.md) is the
-   principal operational entry point: it summarizes established
-   observations, disputed claims, source locations, checkout dependencies,
-   and access limitations.
-2. [`RESEARCH_MEMO_CYCLE7.md`](RESEARCH_MEMO_CYCLE7.md) is the principal
-   evidence memorandum for the final verification cycle, including Eadwine,
-   Faulkner, Hogg, Ritt, and the bounded Farman controls.
-3. [`DRAFT.md`](DRAFT.md) is the current article draft.
-   [`QUANTITY_EVIDENCE.md`](QUANTITY_EVIDENCE.md) and the **Current status
-   after cycle 7** section at the top of [`UNRESOLVED.md`](UNRESOLVED.md)
-   state the current evidence assessments and remaining historical questions.
+1. [`RESEARCH_MEMO_CYCLE8.md`](RESEARCH_MEMO_CYCLE8.md) is the principal
+   research memorandum: the established regular development, the refutation
+   of the `OEWLossBeforeI` experiment, the thirteen adjudicated verdicts,
+   and the production recommendation.
+2. [`DRAFT.md`](DRAFT.md) is the current article, rewritten in cycle 8
+   around the established result (Sections 5–9 new; Sections 1–4 philology
+   from cycles 3–7).
+3. [`DERIVATIONS.md`](DERIVATIONS.md) holds the authoritative stage-by-stage
+   derivation record; [`experiments/`](experiments/) contains the
+   reproducible finite-state verification (research-only, not production).
+4. [`SOURCE_PREPARATION_HANDOFF.md`](SOURCE_PREPARATION_HANDOFF.md) and
+   [`RESEARCH_MEMO_CYCLE7.md`](RESEARCH_MEMO_CYCLE7.md) document the
+   completed source-preparation phase: verified observations, source
+   locations, checkout dependencies, and access limitations.
 
 ## Current assessments versus historical conclusions
 
-Use the cycle-7 memo and the current-status section of `UNRESOLVED.md` for
-present assessments. Earlier cycle memos preserve the research history; they
-are not current verdicts where later evidence has superseded them. In
-particular:
+Use the cycle-8 memo and the **Current status after cycle 8** section at the
+top of [`UNRESOLVED.md`](UNRESOLVED.md) for present assessments. Earlier
+cycle memos preserve the research history; they are not current verdicts
+where later evidence has superseded them. In particular:
 
-- The categorical exclusion of Model A on West Saxon vocalism is superseded.
-  The two Eadwine ⟨hieg⟩ readings are directly verified, but their dialect and
-  exemplar provenance—and the applicable source of ⟨ie⟩—remain unresolved.
-  Normalized *hīeġ* is not a manuscript reading.
-- The claim that every viable derivation necessarily predicts a long direct
-  vowel is withdrawn. The regular development and quantity of the inherited
-  direct form remain open.
-- Paris Psalter *hege* supplies a late overtly inflected form; older
-  statements that no inflected form exists are historical, not current.
-- The ‘hay-way’ interpretation of S 1196 *heiweg* is disputed, not an
-  uncontested conventional identification.
-- Cycle-5/6 Farman sensitivity counts of 6/135 are superseded by the
-  expanded cycle-7 count of 6/147. Use
+- The cycle-7 statement that the regular development and quantity of the
+  inherited direct form "remain open" is superseded: both are now
+  established (\*\*hewe; long on all viable accounts).
+- The cycle-4 categorical "every viable derivation predicts a long vowel"
+  and its cycle-6/7 withdrawal are both superseded by the cycle-8 result,
+  which restores the conclusion on new (derivational-exhaustion) grounds.
+- The cycle-2/3 verdict that ‘hay’ is a non-discriminating dependent of the
+  apocope chronology is superseded: it now weighs with *nett*/*bedd*/*cynn*
+  for late apocope, paired against *mene*.
+- The Eadwine ⟨hieg⟩ readings remain directly verified but dialectally
+  unassigned; normalized *hīeġ* is not a manuscript reading.
+- The ‘hay-way’ interpretation of S 1196 *heiweg* remains disputed, and the
+  charter identifications no longer carry weight in the historical argument.
+- Farman sensitivity counts: use the cycle-7 6/147 figures,
   `FARMAN_ACCENT_CALIBRATION.tsv` and `calibrate_farman_accents.py`.
 
 ## Private references and checkout dependency
@@ -70,7 +80,7 @@ bash Germanic/articles/hay/build_article_docker.sh
 The generated PDF is
 `.capr-work/hay-article-publication/hay-article.pdf` (ignored build output,
 not a tracked source). The build also checks publication references. The
-current checkout's PDF is 14 pages.
+current checkout's PDF is 16 pages.
 
 ## Supporting evidence
 

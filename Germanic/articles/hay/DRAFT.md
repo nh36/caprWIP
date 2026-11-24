@@ -4,11 +4,12 @@ bibliography: ["../../../docs/refs.bib", "article_refs.bib"]
 reference-section-title: "References"
 ---
 
-<!-- Draft status: Sections 1-8 revised in cycle 3 against the enlarged
-     evidence (Paris Psalter datives manuscript-verified; verse tokens;
-     Farman accent calibration; hehg resolution; Kotake on Ru2). See
-     RESEARCH_MEMO_CYCLE3.md for the adjudications and withdrawn claims.
-     Research cycle 3, branch research/hay-article. -->
+<!-- Draft status: Sections 5-9 rewritten in cycle 8 around the
+     established regular development of the direct cell (**hewe);
+     sections 1-4 philology retained from cycles 3-7 with updated
+     framing. See RESEARCH_MEMO_CYCLE8.md for the adjudications and
+     DERIVATIONS.md for the verified derivations.
+     Research cycle 8, branch research/hay-article. -->
 
 # 1. Introduction
 
@@ -56,14 +57,30 @@ English sequence never geminated at all, and the question whether any
 independently motivated sequence of regular changes could carry the
 ungeminated direct form to an attested Old English shape without
 analogical interference; and an evaluation of the analogical account
-against the comparative evidence. The aim is not to vindicate a
-chronology but to determine what the evidence of this word can, and
-cannot, decide. The answer defended below is largely negative, and, we
-will argue, instructive: the direct spellings and Farman's accents do
-not determine the quantity or history of the direct singular. In
-particular, the traditional West Saxon ⟨ie⟩ argument depends on the
-status of normalized forms, the dialect of the direct ⟨hieg⟩ readings,
-and the conditions on the several documented sources of West Saxon ⟨ie⟩.
+against the comparative evidence.
+
+The answer defended below is definite. The regular development of the
+ungeminated direct form can be established segment by segment from
+independently attested controls — above all *eowu* 'ewe' and *cleweþa*
+'itch', which continue precisely the sequence \*-awi- that the
+early-apocope direct form contained — and the outcome is a disyllabic,
+w-retaining \*\*hewe, the exact structural twin of Old High German
+*hewi* and of Old English *mene* 'necklace'. No attested spelling of
+'hay' can continue that form, and no regular change known to Old
+English carries it to a monosyllable. It follows that, under the early
+chronology, the attested paradigm requires replacement of the entire
+direct-cell stem from the inflected cases, in every dialect; under the
+late chronology it is regular without analogy. 'Hay' thus takes its
+place beside *nett*, *bedd* and *cynn* as an analogical liability of
+the early chronology — while *mene*, its exact structural counterpart,
+remains a liability of the late one. A corollary falls out for the
+long-disputed vowel quantity: since the only regular short-vowelled
+candidate is excluded by every attested token, all derivations
+compatible with the record give the word a long umlauted nucleus. The
+direct spellings and Farman's accents, examined at length below, do not
+by themselves determine quantity or history; the determination comes
+from the derivations, and the direct evidence falls into place as
+corroboration.
 
 # 2. Previous scholarship
 
@@ -178,7 +195,7 @@ Two features of the account should be marked at once: every vocalic
 step is an ordinary Old English sound law granted the diphthongal
 parse, and the parse itself is the entire point at issue, since
 Ringe and Taylor's "reversible gemination" reaches the same pre-Old-
-English \*auj from the consonantal analysis (Section 5).
+English \*auj from the consonantal analysis (Section 6).
 
 Hogg's grammar derives the word from the geminated stem: \*hawwj- >
 \*hauwj- > \*hēawj- > \*hīewj- > West Saxon *hīġ*, non-West-Saxon *hēġ*,
@@ -263,8 +280,9 @@ Every published account except the plain geminate route borrows the
 final consonant, the vocalism, or both from the inflected forms — forms
 attested for this noun only in the dative, and only in the eleventh
 century (Section 3.2). The following
-sections assemble what is actually attested, and then ask what each
-proposed history predicts.
+sections assemble what is actually attested (Sections 3–4), establish
+the regular development of the ungeminated direct form (Section 5),
+and then ask what each proposed history predicts (Sections 6–8).
 
 # 3. The Old English evidence
 
@@ -472,7 +490,7 @@ the word as a regular neuter with stem *heg-* throughout — the uniform
 paradigm that every account on the table predicts for that date. They
 do not show that the oblique stem was available as an analogical donor
 before i-umlaut, which is when the early-apocope accounts need it
-(Section 5): a text composed late and transmitted in one tradition
+(Section 6): a text composed late and transmitted in one tradition
 cannot date a pre-umlaut process. The two historically central
 reconstructed entities therefore retain different standings. The
 protected oblique stem is now attested in its late reflex but
@@ -540,9 +558,9 @@ etymological œ̄ (boéc, foérde, gemoéted) and, as an inverted spelling,
 to ē of other origins, most pertinently the *hēran* < \*hauzjan class
 (gehóerde, gehóerað) — the exact structural parallel of *hēġ* <
 \*hauj-; a rounded vowel confined to 'hay' has nothing to recommend it.
-Nothing in the distribution requires —
-though nothing excludes — an ungeminated relic in the Anglian/Kentish
-⟨heg⟩/⟨hei-⟩ forms (Section 5).
+Nothing in the distribution itself requires an ungeminated relic in the
+Anglian/Kentish ⟨heg⟩/⟨hei-⟩ forms; whether anything in the grammar
+even permits one is the question Section 5 answers.
 
 # 4. Orthography, vowel quantity, and syllabification
 
@@ -658,243 +676,395 @@ whose dialect has not been established here. If those forms instantiate
 West Saxon ⟨ie⟩, the three documented historical sources of that
 diphthong still require separate evaluation before they can constrain
 the stem. The quantity of the direct singular is therefore not
-established by a securely localized West Saxon spelling. Farman's
+established by any securely localized West Saxon spelling, and Farman's
 calibrated acute is a distinct, defeasible observation about his own
-practice and does not decide among the historical accounts.
+practice. The question is settled, we will now argue, from the other
+end: not by measuring the attested forms, but by determining what the
+regular alternatives to a long vowel would have looked like — and
+observing that nothing attested looks like them.
 
-# 5. The competing derivations
+# 5. The regular development of the ungeminated direct form
 
-Five derivations of the attested direct singular deserve explicit
-statement. They are laid out stage by stage in the research files
-(`DERIVATIONS.md`, `DAHL_REASSESSMENT.md`); here we give their logical
-structure and where each succeeds or fails. Throughout, the two frozen
-CAPR models serve as explicitness checks on the handbook derivations —
-a model output is a prediction of the formalized account, not
-independent evidence about history.
+The early-apocope account owes us a definite claim: what would
+\*hawją, deprived of its ending before gemination, have become by
+regular change alone? Previous discussions — including earlier versions
+of this article — left that development unresolved, and the
+indeterminacy did real work: as long as the regular outcome might have
+been something like \*hei, the Anglian and Kentish ⟨heg⟩/⟨hei-⟩
+spellings could be read as its possible survivals, and the quantity of
+the attested word remained open. The development can in fact be
+established, segment by segment, from independently attested controls.
 
-**A0: early apocope, no further assumptions.** If \*-ą was lost before
-gemination [@RingeTaylor2014, pp. 44–47], the direct singular \*hawją >
-\*hawi developed ungeminated: \*hawi > \*hæwi > (i-umlaut) \*hewi —
-Campbell's "undisturbed" development [@Campbell1959, §579(4)] — and,
-with regular loss of \*w before unstressed \*i, something like \*hei.
-The outcome is a short-vowelled form with no final consonant, spelled
-⟨hei⟩ or ⟨heg⟩ at best. Two points about this output must be kept
-apart. First, it would be **orthographically invisible**: ninth-century
+## 5.1 The starting point: \*hawi
+
+Under the early chronology the direct singular lost \*-ą before
+gemination operated, and the stranded \*j vocalized: the West Germanic
+direct cell was \*hawi, with consonantal \*w and syllabic final
+\*-i. This is not a reconstruction of convenience. Ringe and Taylor
+identify Old High German *hewi* as "the inherited nom.-acc. sg.",
+beside *houwi* "with gemination levelled in from the oblique forms"
+[@RingeTaylor2014, pp. 53, 173], and Gothic *hawi* independently
+attests the ungeminated shape. It is also forced model-internally:
+under early apocope the cell has no \*j at the stage when gemination
+applies, so neither a geminate \*-ww- nor the diphthongal nucleus
+\*au that Ringe and Taylor's "reversible gemination" produces from
+\*[aww'] [@RingeTaylor2014, p. 53] was ever available to it. Whatever
+became of \*hawi became of it by the ordinary phonology of \*-awi-.
+
+## 5.2 Fronting and umlaut: the 'ewe' and 'itch' controls
+
+The sequence \*-awi- is directly observable elsewhere in Old English.
+Proto-Germanic \*awiz 'ewe' yields West Germanic \*awi — segmentally
+the minimal pair of \*hawi, identical but for the initial consonant —
+and Proto-Northwest-Germanic \*klawiþō 'itch' (Old Norse *kláði*)
+carries the same sequence word-internally. Ringe and Taylor adduce
+precisely these two words to show that Anglo-Frisian fronting operated
+"before \*w which was followed by \*i": \*awi > \*ǣwi, \*klawiþō >
+\*klǣwiþa [@RingeTaylor2014, p. 148]. I-umlaut then raised the
+fronted vowel with the \*w intact: \*ǣwi > \*ewi, \*klǣwiþa >
+\*klewiþa [@RingeTaylor2014, p. 237]. Both outcomes are attested:
+*eowu*, whose back vocalism reflects a later morphological transfer
+into the ō-stems (\*ewi → \*ewu > *eowu* [@RingeTaylor2014, p. 237]),
+and — decisively, because no paradigm could have restored its
+suffix-internal consonant — *cleweþa* 'itch', an attested Old English
+word in which \*-awi- survives as ⟨-ewe-⟩. Campbell's grammar agrees
+on the critical word: among forms where the gemination "was not always
+carried out" he cites "\*aui > OE eowu" [@Campbell1959, §402]. The
+regular development of \*hawi therefore runs \*hawi > \*hǣwi >
+\*hewi — which is exactly Campbell's "undisturbed" \*hewi
+[@Campbell1959, §579(4)] and Ringe and Taylor's pre-replacement
+\*hǣwi [@RingeTaylor2014, pp. 173, 246]. Both authorities stop at
+this point; the next two steps are where the present argument does its
+work.
+
+## 5.3 There was no loss of \*w before \*i
+
+A derivation of the attested monosyllables from \*hewi requires the
+loss of intervocalic \*w before unstressed \*i. No such change is on
+record. The documented environments of \*w-loss are two: before
+\*u/\*ō (*clēa*, *cnēo*, *þrēa* [@Campbell1959, §405;
+@HoggGrammar1992, §3.19]) and in absolute word-final position after a
+vowel, where the consonant is regularly lost and then "often restored
+on the analogy of inflected forms" (*snāw*-type [@HoggGrammar1992,
+§§3.17, 7.72]). Before \*i the consonant is positively retained: by
+*eowu* and *cleweþa* just cited, and by the West Saxon verbal
+alternations *crāwan* : *crǣwþ*, *oncnāwan* : *oncnǣwst*, where \*w
+stands before the umlaut-triggering vowel in exactly the relevant
+position [@RingeTaylor2014, p. 235]. The deletion would moreover have
+no landing site: Hogg argues that Old English never acquired a
+diphthong class /ei̯, æi̯/ at all — ⟨dei⟩-type spellings are "merely
+orthographic variants of *deġ*" — and that genuine vocalization of /j/
+is confined to position after /i(ː)/ [@HoggGrammar1992, §§7.69–70,
+following Colman]. The chain \*hewi > \*hei thus fails twice over:
+the deletion is unmotivated and counter-exemplified, and its output is
+not an available Old English phonological object. A deletion rule
+invented for this word alone would be ad hoc and is rejected.
+
+## 5.4 The final vowel: the *mete* and *mene* class
+
+With \*w retained, the final \*-i stands after a light syllable, and
+in that position it is not apocopated but weakened: *mete* < \*matiz,
+*stede* < \*stadiz, *hete*, *ege*, *slege*, *here* [@RingeTaylor2014,
+pp. 236–237]. The class includes the one secure neuter ja-stem relic
+of early apocope itself: *mene* 'necklace' < \*manją, beside Old Saxon
+*(hals-)meni* [@Stiles2013, pp. 15–16]. Nor could the preceding vowel
+have been caught up into a diphthong at this stage: the
+diphthongization of front vowels before \*w "did not occur by regular
+sound change before the sequences \*wi and \*wī" [@RingeTaylor2014,
+p. 188].
+
+## 5.5 The result: \*\*hewe, and what it excludes
+
+The regular early-apocope outcome of the direct cell is therefore
+\*\*hewe: disyllabic, short-vowelled, with its \*w intact — the
+exact structural twin of Old High German *hewi* and of Old English
+*mene*. No such form is attested, and no attested spelling of 'hay'
+can continue it: every token in the record is monosyllabic and
+w-less.[^formal] Three consequences follow.
+
+First, the rescue routes canvassed for the early chronology are moot.
+Hiatus resolution and resyllabification operate on \*he.i or /hej/;
+that input never arises by regular change, so there is nothing for
+them to apply to.
+
+Second, under early apocope the attested paradigm **requires** analogy
+— and not the one-segment restoration of a final consonant, but the
+replacement of the entire direct-cell stem by the stem of the
+inflected cases, in every dialect in which the word is attested, since
+West Saxon, Anglian and Kentish alike show only the oblique-stem
+vocalism. Ringe and Taylor's analogical replacement of \*hǣwi by
+\*hēaj- [@RingeTaylor2014, pp. 173, 246] is thus not one option among
+several but the only road open to their chronology. Under late apocope,
+by contrast, the attested paradigm is regular without analogy.
+
+Third, the question of quantity resolves at the level of the
+derivations. The only regular short-vowelled candidate for the direct
+cell now has a definite shape, and that shape is excluded by every
+attested token on surface-observable grounds. Every derivation
+compatible with the record — the geminate route, Dahl's ungeminated
+variant, the levelled early-apocope paradigm — gives the word a long
+umlauted nucleus (West Saxon *īe*, Anglian *ē*). The attested word had
+a long vowel on all viable accounts; Farman's acutes and the ⟨oe⟩
+digraph (Section 4) corroborate rather than carry that conclusion.
+
+[^formal]: The derivational claims of this section, including the
+controls and the overgeneration of the rejected deletion rule (which
+would derive \*\*ei for *eowu* and \*\*cleiþa for *cleweþa*), have
+been implemented as finite-state rule cascades and verified
+mechanically against the forms cited.
+
+# 6. The competing derivations
+
+With the regular development established, the five derivations of the
+attested direct singular can be stated and judged. They are laid out
+stage by stage in the project's research files; here we give their
+logical structure. Throughout, the two frozen CAPR models serve as
+explicitness checks on the handbook derivations — a model output is a
+prediction of the formalized account, not independent evidence about
+history.
+
+**A0: early apocope, no further assumptions.** The regular outcome is
+the \*\*hewe of Section 5, not the \*hei of the experimental
+formalization, whose \*w-deletion step is counter-exemplified
+(Section 5.3). The earlier, weaker assessment of this derivation —
+that its output would merely be orthographically invisible among the
+⟨heg⟩/⟨hei-⟩ spellings — is thereby superseded by a stronger one: there
+was no regular monosyllabic output to be spelled. The ninth-century
 Kentish ⟨ei⟩ ~ ⟨eg⟩ interchange over short /e/ + /j/ (*dei* ~ *deg* for
-*dæġ*, Section 3.1), and no Old English spelling marks quantity, so the
-Anglian/Kentish ⟨heg⟩/⟨hei-⟩ tokens can neither confirm nor exclude an
-ungeminated relic — the earliest ⟨hei⟩, in compound-internal
-*heiweg* of S 1196 (conventionally dated 859), is
-literally the string A0 predicts, but every control shows the same
-digraph over certified short V+j, and the one later independent-noun
-⟨hei⟩ (F.174, s. xiii) is demonstrably a respelling of exemplar ⟨hig⟩
-(Section 3.3), i.e. continuous with the levelled/geminated form, not
-with A0. Second, for the traditional normalized West Saxon *hīeġ*:
-the derivation cannot produce ⟨ie⟩. That inference is conditional,
-however: the direct ⟨hieg⟩ readings identified here are in the Eadwine
-Psalter, whose dialect is unassigned, while the inspected West Saxon
-manuscripts write ⟨hig/hyg⟩. The absence of ⟨ie⟩ from those witnesses
-does not establish a West Saxon e-vocalism, and the normalization is
-not a manuscript control. A0's failure as an account of a specifically
-West Saxon ⟨ie⟩ form therefore depends on a dialectal and textual
-identification not yet secured; its status behind Anglian/Kentish forms
-remains undetermined.
+*dæġ*, Section 3.1) remains philologically real, but what it could in
+principle have concealed does not exist on this chronology, and the one
+later independent-noun ⟨hei⟩ (F.174, s. xiii) is demonstrably a
+respelling of exemplar ⟨hig⟩ (Section 3.3). A0 is not a viable account
+of any attested form.
 
-**A1: early apocope plus independently motivated later changes.** Two
-candidates were examined. Hogg's hiatus resolution [@HoggGrammar1992,
-§§5.129–134] applies to post-w-loss \*he.i: the stressed vowel in open
-final position counts long, and resolution of long vowel plus front
-vowel is loss of the unstressed vowel, yielding *hē* — the right
-process, independently supported, but the wrong output: non-West-Saxon
-vocalism only, and the final segment destroyed rather than explained.
-Resyllabification of /e.i/ to /ej/ is phonetically trivial and brings
-A0's output into line with the non-West-Saxon ⟨heg⟩/⟨heig⟩ spellings,
-but no independent Old English change then supplies either length or
-West Saxon *īe*. The negative finding is worth stating precisely: **no
-independently supported chain of regular changes carries the
-early-apocope consonantal-w direct form to the normalized West Saxon
-form — neither to its vocalism nor to its final consonant — if that
-normalization represents the language of the relevant witness.** A
-lengthening rule invented for this word alone would be ad hoc and is
-rejected.
+**A1: early apocope plus independently motivated later changes.** Moot.
+Hogg's hiatus resolution [@HoggGrammar1992, §§5.129–134] and the
+resyllabification of /e.i/ both presuppose the \*w-less \*he.i;
+Section 5.3 shows that input never arises. The negative finding of the
+earlier cycles — that no independently supported chain of regular
+changes carries the early-apocope direct form to any attested shape —
+stands, now with its premise secured rather than assumed.
 
 **A2: early apocope plus paradigmatic levelling.** This is Ringe and
-Taylor's actual account: the inherited direct form, carried as far as
-\*hǣwi, was replaced by the protected stem \*hēaj- before i-umlaut,
-whence West Saxon *hīeġ*, Anglian *hēġ* [@RingeTaylor2014, pp. 173,
-246]. After the replacement the derivation is identical with the
-geminate route; the accounts differ only in history, not in any Old
-English prediction. The levelling is typologically unobjectionable —
-Hogg's study of the masculine ja-stems shows mixed paradigms levelled
-in both directions [@Hogg1979Analogy, pp. 68–73], and Old High German
-*houwi* beside *hewi* may show the very same act on the continent — but
-it is an extra, word-specific assumption, and its donor paradigm is
-attested in Old English only late: the Paris Psalter datives of
-Section 3.2 supply an inflected stem in the eleventh century, but
-nothing in the record dates the levelling itself to the pre-umlaut
-window the account requires. The continental cognates strengthen the
-typological case, but do not settle the direction of change: Middle
-Dutch attests **hoye/houwe**, and Old High German attests **hewi/houwi**.
-Boutkan assigns Middle Dutch *hoye* to an oblique stem and *houwe* to an
-old nominative stem, and analyzes the OHG forms in relation to competing
-chronologies [@Boutkan1995, pp. 212–213]. Those stem identities and the
-directions of any levelling are historical inferences, not facts entailed
-by the attested doublets; they depend in part on the chronology being
-argued for. The doublets establish comparative variation, not
-independently the direction of change or the history of the Old English
-paradigm. If the normalized West Saxon *hīeġ*
-reflects an actual West Saxon ⟨ie⟩ development, it would require an
-appropriate historical source. The available word-attestations do not
-establish that the source was specifically a protected stem, nor that
-levelling occurred; both remain inferences requiring adjudication.
+Taylor's actual account, and Section 5 shows it is the obligatory form
+of their chronology for this word: the inherited \*hǣwi (whose regular
+continuation would have been \*\*hewe) was replaced by the protected
+stem \*hēaj-, whence West Saxon *hīeġ*, Anglian *hēġ*
+[@RingeTaylor2014, pp. 173, 246]. A pre-umlaut replacement feeds
+i-umlaut in situ; a post-umlaut wholesale import of umlauted
+*hīeġ*/*hēġ* would serve equally — the record begins too late to
+distinguish them. After the replacement the derivation is identical
+with the geminate route; the accounts differ in history, not in any
+Old English prediction. The levelling is typologically unobjectionable
+— Hogg's study of the masculine ja-stems shows mixed paradigms
+levelled in both directions [@Hogg1979Analogy, pp. 68–73; cf.
+@Adamczyk2018 on *mete* ~ *mette*], and Old High German *houwi* beside
+*hewi* may show the very same act on the continent — but its donor
+paradigm is attested in Old English only late (the Paris Psalter
+datives, Section 3.2), and the direction of the continental levelling
+is itself chronology-dependent: Boutkan assigns Middle Dutch *hoye* to
+an oblique stem and *houwe* to an old nominative stem, but those stem
+identities presuppose the chronology being argued for
+[@Boutkan1995, pp. 212–213]. The doublets establish comparative
+variation, not independently the direction of change.
 
 **B2: late apocope.** If \*-ą survived gemination [@Dahl1938,
 pp. 81–86; @HoggFulk2011, §2.23; @Boutkan1995, pp. 209–213], the direct
 singular geminated with its obliques: \*hawwją > (resolution of the
-geminate glide) \*hauj > \*ēaj-type diphthong > i-umlaut > the
-normalized West Saxon *hīeġ*, Anglian smoothed *hēġ*. Every step is
-regular within the analysis; no analogy is needed for this word in any
-cell. Its
-cost is carried elsewhere: the ungeminated direct forms of Gothic and
-(on one reading) Old High German must be explained, and the chronology
-must survive the relic evidence (Section 6).
+geminate glide) \*hauj > \*ēaj-type diphthong > i-umlaut > West
+Saxon *hīeġ*, Anglian smoothed *hēġ*. Every step is regular within the
+analysis; no analogy is needed for this word in any cell. Its cost is
+carried elsewhere: the ungeminated direct forms of Gothic and Old High
+German must be explained as remodellings or as pre-gemination shapes,
+and the chronology must survive the relic evidence (Section 7).
 
 **Dahl: no gemination.** Dahl's derivation (Section 2.3) shares B2's
-output and A2's chronological innocence. Its vocalism is regular granted
-the diphthongal parse of \*-awj-; its final consonant is analogical by
-his own statement. The decisive observation, for our purposes, is a
-convergence: Ringe and Taylor themselves note that the West Germanic
-gemination of \*wj was "reversible" — \*awj > [aww'] > [auj]
-[@RingeTaylor2014, p. 53] — so that the geminate route, the reversed-
-geminate route and Dahl's never-geminated route all pass through the
-same pre-Old-English \*auj. **From that stage onward the accounts
-converge, but the currently identified ⟨hieg⟩ readings are not securely
-West Saxon and the normalized form is not an independent manuscript
-datum.** Hogg's several sources for West Saxon ⟨ie⟩ mean that even a
-securely West Saxon reading would require an additional
-environment-specific argument before it established an ēa-type stem
-in this word.
+output. Its vocalism is regular granted the diphthongal parse of
+\*-awj-; its final consonant is analogical by his own statement. Two
+points now locate it precisely. First, the convergence noted in
+earlier cycles stands: Ringe and Taylor themselves allow that the West
+Germanic gemination of \*wj was "reversible" — \*awj > [aww'] >
+[auj] [@RingeTaylor2014, p. 53] — so the geminate route, the
+reversed-geminate route and Dahl's never-geminated route all pass
+through the same pre-Old-English \*auj, and from that stage onward
+the accounts converge. Second, and newly: Dahl's route is available
+only under late apocope. The diphthongal nucleus \*au on which it
+rests exists only where \*j follows; in the early-apocope direct cell
+the \*j is gone before the nucleus could form, the shape \*hawi is
+fixed by Old High German *hewi*, and its development is fixed by the
+controls of Section 5. Dahl's analysis is therefore a variant of the
+late chronology — one that spares 'hay' the gemination but buys the
+final -ġ by analogy — not an escape route for the early one.
 
-# 6. Analogy and the comparative evidence
+# 7. Analogy and the comparative evidence
 
-Since every account except plain B2 invokes analogy somewhere — Ringe–
-Taylor for the whole stem, Wright and Dahl for the final consonant — the
-comparative standing of the analogical operations matters.
+Since every surviving account except plain B2 invokes analogy
+somewhere — Ringe–Taylor for the whole stem, Wright and Dahl for the
+final consonant — the comparative standing of the analogical
+operations matters.
 
-The donor side is secure in type and now attested in token, though only
-late (the Paris Psalter datives, Section 3.2). Mixed
-ja-stem paradigms with geminate and non-geminate alternants existed and
+The donor side is secure in type and now attested in token, though
+only late (the Paris Psalter datives, Section 3.2). Mixed ja-stem
+paradigms with geminate and non-geminate alternants existed and
 levelled in both directions: *hyll* generalized the geminate, *hyse*,
-*mete*, *ile* the plain form, with "the balance ... a very slender one"
-[@Hogg1979Analogy, pp. 68–73; cf. @Adamczyk2018 on *mete* ~ *mette*].
-Old High German *houwi* beside *hewi* is routinely read as the geminate
-stem levelled into the direct cell — but that direction of levelling is
-itself a consequence of the early-apocope chronology that creates the
-ungeminated cell in the first place; on the opposite chronology *houwi*
-is regular and *hewi* the innovation, and Dahl's Excursus duly derives
-the Old High German forms without gemination [@Dahl1938, pp. 107–109].
-The continental doublet therefore cannot fix the direction of levelling
-independently; what Gothic *hawi* and Old Norse *hey* secure is an
-ungeminated direct cell for Proto-Germanic, not a consonantal \*hewi
-stage for pre-Old-English — precisely the stage Dahl denies, with his
-observation, which has survived both research cycles' collations, that
-no w-form of any Old English \*-awj- noun is on record.
+*mete*, *ile* the plain form, with "the balance ... a very slender
+one" [@Hogg1979Analogy, pp. 68–73; cf. @Adamczyk2018 on *mete* ~
+*mette*]. Old High German *houwi* beside *hewi* is routinely read as
+the geminate stem levelled into the direct cell — but that direction
+of levelling is itself a consequence of the early-apocope chronology
+that creates the ungeminated cell in the first place; on the opposite
+chronology *houwi* is regular and *hewi* the innovation, and Dahl's
+Excursus duly derives the Old High German forms without gemination
+[@Dahl1938, pp. 107–109]. The continental doublet cannot fix the
+direction of levelling independently; what Gothic *hawi* and Old Norse
+*hey* secure is an ungeminated direct cell for Proto-Germanic, not a
+consonantal \*hewi stage for pre-Old-English — precisely the stage
+Dahl denies, with his observation, which has survived every collation
+of these cycles, that no w-form of any Old English \*-awj- noun is on
+record. Note what Section 5 adds to that observation: the \*-awi-
+words *outside* the ja-stem class, *eowu* and *cleweþa*, do keep their
+w — so the class-wide absence of w-forms among the \*-awj- nouns is
+itself a datum requiring explanation, and the explanations on offer
+are exactly two: the nouns' direct cells were diphthongal from the
+start (Dahl, late apocope), or their consonantal direct cells were
+levelled away without residue (Ringe–Taylor, early apocope).
 
-Within Old English the glide class itself is internally
-non-discriminating. The 'island' word and the verbs *cīegan*, *strēgan*
-reach their attested shapes on every account; the *glīg* ~ *glēo*
-doublet, examined closely (`COMPARATIVE_CONTROLS.md`), is consistent
+Within the glide class the attested surfaces remain reachable on every
+account: the 'island' word and the verbs *cīegan*, *strēgan* reach
+their shapes regularly, and the *glīg* ~ *glēo* doublet is consistent
 both with Campbell's verdict of re-formation [@Campbell1959, §411,
-§579(4)] and with Dahl's regular double development, and its chief
+§579(4)] and with Dahl's regular double development. Its chief
 contribution is indirect: the West-Saxon-only distribution of the
-g-forms, always ⟨i⟩ before ⟨g⟩, confirms that final -g restoration from
-oblique cases is a real and repeated process in exactly this class —
-which lowers the cost of the one analogical step that every surviving
-account of 'hay' except B2 requires. The only glide-class word that
-leans one way is 'hue': attested *hīew/hīw* with no †*hīeg* is what the
-geminate or levelled routes predict, and Dahl must explain the missing
-g-form by homonymic clash with 'hay' — the one plainly ad hoc move in
-his chapter.
+g-forms confirms that final -g restoration from oblique cases is a
+real and repeated process in exactly this class — which lowers the
+cost of the one analogical step that every surviving account of 'hay'
+except B2 requires. The only glide-class word that leans one way is
+'hue': attested *hīew/hīw* with no †*hīeg* is what the geminate or
+levelled routes predict, and Dahl must explain the missing g-form by
+homonymic clash with 'hay' — the one plainly ad hoc move in his
+chapter.
 
-The words that genuinely discriminate the chronologies lie outside the
-glide class: the light neuter C+j nouns, whose attested geminate direct
-cells (*nett*, *bedd*, *cynn*) are regular only under late apocope and
-require levelling under early apocope, against the ungeminated relics
-*mene*, Old Saxon *(hals-)meni* beside Old High German *menni*, which
-favour early apocope if their transmission is inherited [@Stiles2013,
-pp. 15–16; @Boutkan1995, pp. 435–436]. 'Hay' adds nothing to either pan
-of that balance.
+On the chronological question itself, however, 'hay' no longer stands
+apart from the discriminating evidence. The earlier cycles' verdict —
+that the word adds nothing to either pan of the balance — rested on
+the possibility that an ungeminated direct form survived unrecognized
+among the ⟨heg⟩/⟨hei-⟩ spellings. Section 5 closes that possibility:
+the regular early-apocope form was \*\*hewe, and nothing attested
+continues it. The word therefore patterns with the light neuter C+j
+nouns, whose attested geminate direct cells (*nett*, *bedd*, *cynn*)
+are regular only under late apocope and require levelling under early
+apocope — against the ungeminated relics *mene*, Old Saxon
+*(hals-)meni* beside Old High German *menni*, which favour early
+apocope if their transmission is inherited [@Stiles2013, pp. 15–16;
+@Boutkan1995, pp. 435–436].
 
-# 7. Implications for the West Germanic chronology
+The comparison with *mene* deserves to be drawn exactly, because the
+two words now form the sharpest minimal contrast in the debate.
+\*manją and \*hawją are structurally parallel inputs: light neuter
+ja-stems whose early-apocope direct cells, \*mani and \*hawi, would
+regularly yield *mene* and \*\*hewe. The record splits them: *mene*
+is attested — the regular early-apocope outcome surviving unlevelled —
+while \*\*hewe is not, the 'hay' paradigm showing only the
+oblique-stem shape. Under early apocope, then, levelling ran
+oblique→direct in 'hay' but nowhere in 'necklace'; under late
+apocope 'hay' is regular but *mene* must be explained away as a
+remodelling [@Boutkan1995, pp. 435–436]. **Under either chronology
+exactly one member of the pair requires analogy.** The pair thus
+demonstrates, in miniature, that neither chronology escapes analogical
+cost in this class; the argument can only be about where the cost
+falls more plausibly. 'Hay' adds real weight to the late-apocope pan —
+one more whole-stem levelling, in all dialects, that early apocope
+must assume — without tipping the scale alone.
 
-The result of Sections 4–6 is narrower than earlier versions of this
-argument claimed. The corpus establishes the noun and its inflected
-dative, as well as two direct manuscript ⟨hieg⟩ readings in Eadwine.
-Those readings do not establish the dialect of the gloss, the language
-of its exemplar, or which historical source of ⟨ie⟩ is relevant. The
-previous categorical exclusion of Model A on West Saxon vocalism is
-superseded: that exclusion is conditional on a West Saxon identification
-and on the applicable historical developments, neither of which is
-settled for these forms. The regular development and quantity of the
-inherited direct form under Model A remain unresolved; the claim that
-every viable derivation necessarily predicts a long direct vowel is
-withdrawn. Gemination, levelling, hiatus resolution, and Dahl's
-diphthongal analysis remain questions for adjudication, not findings of
-this source audit. The
-final -ġ is regular under the geminate analysis and analogical under
-others, while the inherited consonantal-w form remains unattested in
-Old English. The Paris Psalter datives establish a late inflected stem,
-not the earlier chronology of any levelling.
+# 8. Implications for the West Germanic chronology
 
-This negative has a positive use. 'Hay' has figured in the literature
-as part of the \*-awj- evidence for one chronology or another — Dal's
-early-loss argument rested in part on Old High German *hewi* and *gewi*
-as reported by Dahl [@Dahl1938, pp. 82–84], and the handbooks' geminate
-derivations of *hīeġ* implicitly enlist the word for the split
-chronology. Both enlistments overdraw the evidence. The chronological
-question must be decided where the classes actually diverge — the light
-C+j neuters against the *mene*-type relics — and the \*-awj- nouns
-should be struck from both sides' witness lists. Within the frozen CAPR
-models the same moral holds in formal dress: the two adopted
-chronologies differ for this word only in the direct cell of Model A,
-whose mismatch is a visible, deliberately uncertified residue, and the
-corpus-wide scores (387/396 against 388/396) share their inputs and
-cannot arbitrate history.
+The result of Sections 4–7 is more definite than earlier versions of
+this argument allowed. The regular development of the inherited direct
+form is no longer unresolved: it was \*\*hewe, and the experimental
+derivation to \*hei is refuted by the very grammars that supply the
+chronology it was built to test. With that gap closed, the word's
+testimony can be stated without conditionals. The attested Old English
+paradigm of 'hay' is either original (late apocope) or the product of
+an obligatory whole-stem levelling in every attested dialect (early
+apocope). An unlevelled mixed paradigm \*\*hewe ~ *hīeġes* surviving
+into the record is positively excluded. The quantity of the attested
+word is long on every viable derivation; the old question whether
+⟨heg⟩/⟨hei-⟩ might spell a short relic is closed, because the regular
+relic would have been disyllabic \*\*hewe and would have kept its w.
 
-# 8. Conclusion (provisional)
+For the chronology debate this redraws the map in one respect. 'Hay'
+has figured in the literature as part of the \*-awj- evidence for one
+chronology or another — Dal's early-loss argument rested in part on
+Old High German *hewi* and *gewi* as reported by Dahl [@Dahl1938,
+pp. 82–84], and the handbooks' geminate derivations of *hīeġ*
+implicitly enlist the word for the split chronology. The first
+enlistment still overdraws the evidence: within the glide class the
+attested English surfaces are derivable on every account, and the
+continental doublets' direction of levelling is chronology-dependent
+(Section 7). But the second enlistment turns out to be better founded
+than the earlier cycles granted — not because the geminate derivation
+can be read off the spellings, but because the alternative chronology
+has been shown to need an analogical replacement it cannot exhibit
+happening elsewhere in this word's class without residue. On the
+apocope question 'hay' now testifies with *nett*, *bedd* and *cynn*,
+and against it stands *mene* — a balance, but no longer one to which
+the word contributes nothing. Within the frozen CAPR models the same
+moral holds in formal dress: the two adopted chronologies differ for
+this word only in the direct cell of Model A, whose mismatch is a
+visible, deliberately uncertified residue, and the corpus-wide scores
+(387/396 against 388/396) share their inputs and cannot arbitrate
+history. The research-level verdict on that residue is now available:
+the Model A direct cell rests on a deletion rule that should be
+withdrawn, not repaired.
+
+What remains genuinely open is the chronology itself, and the
+subsidiary identifications this article has repeatedly declined to
+force: the dialect and exemplar of the Eadwine ⟨hieg⟩ readings, the
+lexical identity of the charter compounds (Section 3.1), and the
+inheritance of the *mene*-type relics on which the early chronology's
+best evidence rests.
+
+# 9. Conclusion
 
 The Old English word for 'hay' is abundantly attested in the direct
 case — including three verified Lindisfarne tokens (one first written
 ⟨hehg⟩ and corrected by the glossator), two accented Mercian tokens in
-Rushworth¹, and one dependent token in Rushworth² — and attested with an
-overt inflection only in the dative, in the three manuscript-verified
-*hege* of the metrical Paris Psalter. The quantity and regular
-development of the inherited direct cell remain unresolved. Farman's
-two printed acutes are limited, witness-specific evidence about his own
-practice, not a ninth-century quantity determination. Eadwine directly
-reads ⟨hieg⟩ twice, but normalized *hīeġ* remains an editorial citation
-form and the gloss's dialect and exemplar language are unassigned.
-Faulkner's account of transmission allows for both preservation and
-modernization, so neither reading can automatically be treated as
-inherited or contemporary.
-Hogg's three possible sources of West Saxon ⟨ie⟩ are real developments,
-but their applicability to this word remains to be demonstrated. The
-Paris Psalter forms supply an overtly inflected stem centuries too late
-to date the levelling proposed by the early-apocope account.
+Rushworth¹, and one dependent token in Rushworth² — and attested with
+an overt inflection only in the dative, in the three
+manuscript-verified *hege* of the metrical Paris Psalter. Against this
+record the present cycle set the regular development of the inherited
+direct form, reconstructed from the controls *eowu*, *cleweþa*, *mete*
+and *mene*: disyllabic \*\*hewe, with its \*w intact — a form
+nothing in Old English continues.
 
-The source record does not yet locate the early-apocope direct form
-among the proposed dialectal outcomes. The Kentish ⟨hei-⟩ is
-compound-internal and its lexical identification remains disputed; the
-thirteenth-century independent-noun ⟨hei⟩ in F.174 is a later
-respelling of ⟨hig⟩. The direct Eadwine Psalter ⟨hieg⟩ readings are
-potentially relevant to the West Saxon argument, but their dialect,
-exemplar provenance, and applicable historical development require
-adjudication. The next
-adjudication should assess the applicability of Hogg's ⟨ie⟩
-developments, the regular development of the inherited direct stem, and
-the necessity, timing, and scope of levelling. The source-preparation
-cycle has supplied the bounded evidence for that decision without
-settling it.
+The conclusions are these. There was no regular monosyllabic direct
+form of 'hay' under early nasal apocope; the proposed loss of \*w
+before \*i does not exist. Under the early chronology the attested
+paradigm requires the replacement of the whole direct-cell stem from
+the inflected cases, in every attested dialect; under the late
+chronology it is regular without analogy, whether through the geminate
+route or Dahl's diphthongal variant, which is itself confined to the
+late chronology. The attested word had a long umlauted nucleus on
+every viable derivation; Farman's acutes corroborate what the
+derivations require. The normalized *hīeġ* remains an editorial
+citation form; the only manuscript ⟨hieg⟩ tokens are Eadwine's, and
+their dialect and exemplar remain unassigned; the charter compounds
+remain lexically uncertain, S 1196 *heiweg* a possible but not
+probable witness and S 328 *Hegforde* indeterminate — but none of
+these identifications now carries weight in the historical argument,
+because the short-relic reading they might have supported is excluded
+on derivational grounds.
+
+'Hay' therefore enters the gemination–apocope debate on the same
+footing as *bedd*: regular only under late apocope, an analogical
+liability under early apocope — and paired, instructively, with
+*mene*, whose testimony runs the other way and ensures that neither
+chronology escapes analogy in this class. The word cannot decide the
+West Germanic question alone. But it is no longer a bystander, and the
+terms on which it testifies — established here from its own class's
+controls rather than from general theory — are the terms on which the
+remaining \*-awj- and C+j evidence should now be re-examined.
+
 
 [^s1196]: S 1196 is conventionally dated 859, but Lowe styles it “? 859” because Æthelwulf appears in its witness list despite having died in 858. Campbell suggests a slightly later copy with a date slip; Keynes notes the witnesses' smaller script may indicate a separate addition; Lapidge judges that the scribe copied from a charter he did not understand [@Lowe2001, pp. 76–78, 85–86]. The surviving sheet is s. ix med.; this qualification does not settle the date of the transaction or the authenticity of every textual layer.
 

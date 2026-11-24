@@ -24,7 +24,7 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
 
 | Cell | PGmc | Early apocope (A) regular | Geminate route (B2) regular | Dahl (no gemination) |
 |---|---|---|---|---|
-| nom.acc.sg | \*hawją | \*hawi > \*hæwi > (umlaut) \*hewi > ? (CAPR: *hei*) | \*hawwją > \*hauj- > \*ēa+i-uml > *hīeġ* | \*hauja̯ > \*hǣoi > \*hīe/\*hē |
+| nom.acc.sg | \*hawją | \*hawi > \*hæwi > (umlaut) \*hewi > \*\*hewe (cycle 8; the frozen CAPR *hei* is refuted — see DERIVATIONS.md) | \*hawwją > \*hauj- > \*ēa+i-uml > *hīeġ* | \*hauja̯ > \*hǣoi > \*hīe/\*hē |
 | gen.sg | \*hawjas | \*hawwjas > *hīeġes* (protected; geminates in both models) | same | \*haujas > *hī(e)ges* |
 | dat.sg | \*hawjai | *hīeġe* | same | |
 | nom.acc.pl | \*hawjō | *hīeġ* | same | |
@@ -77,3 +77,18 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
    gloss is Owun's rather than Farman's. Cook 1894 lemmatizes Li *heg* 'hay' separately from *heh*
    'high' and the hedge word, securing the lexical identity of the
    gospel tokens.
+6. **Cycle-8 adjudication of the direct cell.** The regular
+   early-apocope development of the direct cell is now established:
+   \*hawi (= attested OHG *hewi*) > \*hǣwi > \*hewi > \*\*hewe, with w
+   retained at every stage (controls *eowu* 'ewe' and attested *cleweþa*
+   'itch', R&T 5.1.2, 6.6.2; final -i > -e after light syllables as in
+   *mete*, *mene*). \*\*hewe is unattested, and no attested spelling can
+   continue it. Consequently a mixed paradigm *hewe* ~ *hīeġes* cannot
+   be reconstructed as the ancestor of the attested record: under early
+   apocope the direct cell must have been replaced by the oblique stem
+   (R&T's ">—"), in every dialect; under late apocope the uniform
+   paradigm is regular from the start. The attested uniform paradigm
+   (direct *hēġ/hīeġ/hig*, dative *hege*) is thus either original (late
+   apocope) or the product of obligatory whole-stem levelling (early
+   apocope); an unlevelled mixed paradigm surviving into the record is
+   positively excluded.

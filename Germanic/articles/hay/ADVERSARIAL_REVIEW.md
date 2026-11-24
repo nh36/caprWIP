@@ -141,3 +141,93 @@ what is established is the narrower attestation symmetry.**
 | C (WS requires gemination) | Narrower sense only | §5: restate as diphthongal-nucleus requirement |
 | D (no regular chain from early-apocope form) | Confirmed, scope fixed to the consonantal-w starting point | §5: scope language |
 | E (evidential symmetry) | Not established as stated; attestation symmetry only | §3.2 rewording |
+
+---
+
+# Adversarial review of the cycle-8 argument (cycle 8)
+
+The cycle-8 claims under attack: (i) regular early-apocope outcome of
+the direct cell is \*\*hewe; (ii) `OEWLossBeforeI` is refuted; (iii)
+'hay' requires whole-stem levelling under early apocope and is regular
+under late apocope; (iv) all derivations compatible with the attested
+record have a long nucleus.
+
+## Objection 1 — "eowu is not a clean control: its w could be analogically restored"
+
+Final postvocalic w is indeed often analogical (snāw-type, Hogg–Fulk
+§7.72). But eowu's w is *medial* (before the ō-stem ending), not final;
+there is no w-less byform †ēo(u) on record; and R&T (5.1.2, 6.6.2,
+6.9.4) and Campbell (§402: "\*aui > OE eowu") both treat the w as
+continuous. More decisively, *cleweþa* has no paradigm cell from which
+w could be restored — its w is suffix-internal. The objection fails
+against the pair; it would need both words to be independently
+remodelled, with no motive for the second.
+
+## Objection 2 — "w-loss might be conditioned on word-final -wi#, which cleweþa does not test"
+
+*eowu* tests exactly that environment: PWGmc \*awi was word-final -wi#
+(nom.sg.) before the morphological shift, and R&T's \*ǣwi > OE \*ewi
+carries the w through that stage. The crāwan : crǣwþ alternations add
+w before umlaut-triggering i in verbal inflection. No environment
+remains in which the rule could hide.
+
+## Objection 3 — "OHG hewi may be an OHG innovation, not the inherited PWGmc direct cell"
+
+R&T call *hewi* "the inherited nom.-acc. sg." (pp. 53, 173) and Gothic
+*hawi* independently attests the ungeminated direct shape. Moreover the
+point is model-internal: under early apocope the direct cell loses its
+\*j before gemination can apply, so \*hawi is forced by the ordering
+itself; OHG merely confirms it. (Under late apocope the objection is
+moot — the direct cell is \*hawwj-/\*hauj- anyway.)
+
+## Objection 4 — "The diphthongal parse could extend to \*hawi: [ha.wi] > [hau̯.i]"
+
+No independent example of such nuclearization before a syllabic vowel
+exists; the attested \*-awi- words (*eowu*, *cleweþa*) show the
+consonantal development; R&T's reversible gemination (p. 53) concerns
+\*[aww'] from \*awj, i.e. prevocalic j-cells only; and Hogg–Fulk §7.69
+deny that OE ever acquired the /ei̯ ~ æi̯/ diphthong class such a parse
+would need downstream. The rescue has no legs.
+
+## Objection 5 — "\*\*hewe may simply have been lost or replaced lexically"
+
+Possible, and unfalsifiable — but it concedes the claim: if \*\*hewe
+existed and was replaced by the oblique stem, that *is* the required
+levelling. The cycle-8 argument does not assert \*\*hewe never existed;
+it asserts no attested form continues it.
+
+## Objection 6 — "mene cuts the other way: if \*mani survived unlevelled, why not \*hawi?"
+
+The strongest objection, and it is accepted — as a fact about
+levelling, not about the phonology. \*manją and \*hawją are parallel
+inputs, and the record splits: *mene* preserves the regular
+early-apocope direct shape (if inherited; Stiles 2013), while 'hay'
+shows only the oblique-stem shape. Under early apocope this means
+levelling ran oblique→direct in 'hay' but direct→oblique (or nowhere)
+in 'necklace' — possible (Hogg 1979 documents both directions in the
+hyll/hyse classes) but word-by-word. Under late apocope the burden
+flips: *hīeġ* is regular and *mene* needs Boutkan-type remodelling.
+The honest summary, adopted in the article: **under either chronology
+exactly one member of the \*manją/\*hawją minimal pair requires
+analogy.** 'Hay' adds real weight to the late side of the scale; it
+does not tip it alone.
+
+## Objection 7 — "The quantity conclusion smuggles the old categorical claim back in"
+
+No: the cycle-4 claim was that all viable accounts predict length,
+asserted while the regular direct development was unknown and \*hei was
+a live candidate. Cycle 8 closed the gap in that argument rather than
+re-asserting it: the short-vowel candidate now has a definite shape
+(\*\*hewe), and that shape is excluded by every attested token on
+surface-observable grounds (monosyllabicity, absence of w). The
+conclusion is conditional in exactly one way: it concerns the attested
+word, and says nothing about what an unattested survival of \*\*hewe
+would have sounded like.
+
+## Standing after review
+
+Claims (i), (ii) and (iv) survive unqualified. Claim (iii) survives
+with the Objection-6 qualification built into its statement: 'hay'
+joins the C+j nouns as an analogical liability of early apocope, while
+*mene* remains an analogical liability of late apocope; the pair is
+now the sharpest known minimal contrast in the debate.

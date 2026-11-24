@@ -130,3 +130,37 @@ class laid out, cycle 1's instinct that the word is a *dependent* of
 the gemination–apocope debate rather than a *diagnostic* of it — and
 Dahl's analysis, if admitted, formalizes that dependence (see
 DAHL_REASSESSMENT.md §4).
+
+## 4. Cycle-8 revision: two new decisive controls, and a changed verdict
+
+Cycle 8 added the two words that settle the regular development of the
+*direct cell* itself (full derivation in DERIVATIONS.md; formal
+verification in experiments/):
+
+| Lexeme | Reconstruction | Structure | Regular OE outcome | Attested | What it secures |
+|---|---|---|---|---|---|
+| ewe | \*awiz, PWGmc \*awi | \*-awi-, i-stem | \*ǣwi > \*ewi (w retained) | *eowu* (after ō-stem shift; R&T 5.1.2, 6.6.2, 6.9.4) | the exact minimal pair for post-apocope \*hawi: fronting before \*wi, umlaut, **no w-loss** |
+| itch | PNWGmc \*klawiþō | \*-awi-, suffixed | \*klǣwiþa > \*klewiþa | **cleweþa** (attested; R&T 5.1.2) | \*-awi- survives as -ewe- inside an attested OE word |
+
+These controls refute the frozen Model A step `OEWLossBeforeI` and fix
+the regular early-apocope outcome of the direct cell as \*\*hewe —
+disyllabic, short-vowelled, w-retaining, the structural twin of *mene*
+and of OHG *hewi*.
+
+**Changed reading of the table.** The §3 verdict that the glide class is
+"internally non-discriminating" and that 'hay' is a mere *dependent* of
+the chronology debate rested on the possibility that A0's \*hei survived
+in ⟨heg/hei⟩-type spellings. That possibility is now closed: the regular
+early-apocope form is \*\*hewe, which no attested spelling can continue,
+and no regular route from \*hawi to a monosyllable exists. 'Hay'
+therefore moves into the same column as *net*, *bed* and *kin*: its
+attested paradigm is regular only under late apocope and requires
+whole-stem levelling under early apocope. It remains weaker than 'bed'
+in one respect — under late apocope its surface is also derivable
+without gemination (Dahl) — but on the apocope question itself the word
+now testifies, in the same direction as the other light neuter ja-stems.
+The *mene/meni* relics remain the strongest counterweight on the early
+side; note the sharpened contrast they now form with 'hay': \*manją and
+\*hawją are structurally parallel inputs, *mene* **is** the regular
+early-apocope outcome surviving, while \*\*hewe — its exact analogue —
+is nowhere attested.

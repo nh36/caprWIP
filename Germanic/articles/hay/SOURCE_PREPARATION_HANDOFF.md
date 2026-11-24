@@ -1,5 +1,11 @@
 # Hay article source-preparation handoff
 
+> **Cycle-8 note.** The historical-inference cycle this handoff prepared
+> has now been completed: see `RESEARCH_MEMO_CYCLE8.md` for the current
+> verdicts and `README.md` for which assessments below are superseded.
+> This document remains the authoritative record of the source-preparation
+> phase, its holdings, checkout dependencies, and access limitations.
+
 Source preparation is closed for the final bounded literature and
 evidential-audit cycle. The next cycle can focus on historical inference,
 the regular development of the inherited direct stem, and whether

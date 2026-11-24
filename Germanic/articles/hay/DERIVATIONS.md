@@ -22,6 +22,11 @@ production models. A missing stage in a trace means identity at that stage.
 
 ## A0 — Early apocope, no additional changes (frozen Model A trace)
 
+> **Cycle-8 adjudication: the `OEWLossBeforeI` step is refuted as
+> history.** See "Cycle 8 — the regular direct cell established" below.
+> The frozen trace remains the accurate record of what the experimental
+> Model A computes; its historical interpretation is superseded.
+
 ```
 SC047ProtoInput                *xáwją
 OEHeavySyllableNasalApocope    *xáwj
@@ -74,6 +79,12 @@ OldEnglishOrthography          hei
   in *Uia, wei* for short *weġ*.
 
 ## A1 — Early apocope + independently motivated further changes
+
+> **Cycle-8 adjudication: moot.** Every A1 candidate operates on \*çe.i
+> or /hej/, i.e. on the output of `OEWLossBeforeI`. Since that input
+> never arises by regular change (see cycle-8 section), the hiatus and
+> resyllabification routes have nothing to apply to. The analyses below
+> are retained as the record of why they were once live.
 
 Candidate processes examined (each must be independently supported, apply
 to /çewi/ or /çei/, and be chronologically possible):
@@ -264,3 +275,102 @@ under B2; under A they require the same levelling story as 'hay'
 (dossier disposition: "*Nett* and *bedd* favour the split account").
 Comparative ungeminated relics (OHG *hewi*, *beti*; OE *mene*, OS
 *(hals-)meni* — Stiles 2013) support early loss **if inherited**.
+
+## Cycle 8 — the regular direct cell established (first-principles reconstruction)
+
+Cycle 8 re-derived the direct cell from the grammars without assuming any
+prior CAPR adjudication. The result is a positive finding: under early
+nasal apocope the regular Old English continuation of the direct cell is
+the disyllabic, w-retaining form **\*\*hewe**, secured segment by segment
+by independently attested minimal-pair controls. Neither \*hei nor any
+monosyllabic form can be reached by regular change from \*hawi.
+
+### Stage-by-stage, with controls
+
+Starting point: PWGmc nom.acc.sg. \*hawi. This stage is not reconstructed
+from theory alone — it is **attested as OHG hewi** (R&T p. 53 and p. 173:
+"OHG hewi — the inherited nom.-acc. sg. — and houwi, with gemination
+levelled in from the oblique forms"), and Gothic *hawi* shows the same
+consonantal parse. Under early apocope the pre-OE direct cell is this
+form.
+
+| Stage | Form | Control securing the step |
+|---|---|---|
+| PWGmc after apocope | \*hawi | OHG *hewi*, Goth. *hawi* (consonantal w, syllabic -i) |
+| Anglo-Frisian fronting before \*wi | \*hǣwi | R&T 5.1.2: "fronting occurred before \*w which was followed by \*i": \*awi > \*ǣwi ('ewe'), \*klawiþō > \*klǣwiþa ('itch') |
+| i-umlaut (æ > e), **w retained** | \*hewi | R&T 6.6.2: \*ǣwi > OE \*ewi → *eowu*; \*klǣwiþa > OE \*klewiþa > **cleweþa** 'itch' (attested) |
+| No diphthongization before \*wi | \*hewi | R&T p. 203 (6.2.4): "this diphthongization did not occur by regular sound change before the sequences \*wi and \*wī" |
+| Final \*-i after a light syllable retained, weakened to -e | **\*\*hewe** | *mete* < \*mati, *stede* < \*stadi, *hete* < \*hati, *ege*, *slege*, *here* (R&T 6.6.2); crucially **mene** < \*mani < \*manją — the same early-apocope relic class (Stiles 2013) |
+
+### Why `OEWLossBeforeI` is refuted
+
+The frozen Model A step deletes /w/ before unstressed /i/. No such change
+exists in the handbooks, and two words directly contradict it:
+
+1. **eowu 'ewe'** < PGmc \*awiz: R&T carry \*awi > \*ǣwi > OE \*ewi with
+   w retained at every stage (5.1.2, 6.6.2, 6.9.4); the attested back
+   vocalism comes from the later morphological shift into the ō-stems
+   (\*ewi → \*ewu > eowu). Pre-OE \*awi is the **exact minimal pair** for
+   \*hawi — identical string but for the initial consonant.
+2. **cleweþa 'itch'** < PNWGmc \*klawiþō (ON kláði): an *attested* OE
+   word in which \*-awi- survives as -ewe- with the w intact (R&T 5.1.2).
+
+Supporting evidence: documented w-loss environments are confined to
+w before \*u/\*ō (Campbell §405; Hogg–Fulk §3.19: clēa, cnēo, þrēa) and
+to absolute final position after a vowel (Hogg–Fulk §§3.17, 4.9, 7.72);
+WS verb alternations *crāwan* : *crǣwþ*, *oncnāwan* : *oncnǣwst* show
+w intact before umlaut-triggering \*i in exactly the relevant position
+(R&T 6.6.3). There is no OE rule deleting intervocalic w before i.
+
+Additionally, Hogg–Fulk §7.69 (following Colman) deny that any new /ei̯/
+diphthong ever arose in OE: ⟨dei⟩-type spellings are "merely orthographic
+variants of deġ", and vocalization of /j/ is real only after /i(ː)/
+(§7.70). The A0 output /he.i/~/hei̯/ is thus not even an available OE
+phonological object.
+
+### Why the diphthongal rescue is unavailable under early apocope
+
+Dahl's route (and R&T's "reversible gemination" \*[aww'] > \*[auj], p. 53)
+nuclearizes the w — but only in cells where \*j follows (\*hawj-V, the
+oblique cells). Under early apocope the direct cell has already become
+\*hawi (onset w before syllabic i) **before** gemination, as R&T's own
+ordering requires; OHG *hewi* attests exactly that shape, and *eowu*/
+*cleweþa* fix its pre-OE development. The diphthongal parse therefore
+rescues the direct cell only if the final vowel survives long enough for
+the \*-awj- > \*-auj- nucleus to arise there too — i.e. only under late
+apocope, where it converges with B2 (DAHL_REASSESSMENT.md §4).
+
+### Consequences
+
+1. **Regular early-apocope outcome: \*\*hewe** — disyllabic, short e,
+   w retained; the exact structural twin of attested *mene* and of OHG
+   *hewi*. It is unattested in Old English and cannot underlie any
+   attested spelling of 'hay' (all are monosyllabic and w-less).
+2. **Therefore, under early apocope, analogy is required** — and not the
+   one-segment -ġ restoration, but replacement of the whole direct-cell
+   stem by the oblique \*hēaj-/hīeġ- stem, in every dialect (WS, Anglian,
+   Kentish alike show the oblique-stem vocalism). This is exactly R&T's
+   ">—" (pp. 173, 246); cycle 8 shows the replacement is forced, not
+   optional.
+3. **Under late apocope (B2) the attested paradigm is regular without
+   analogy**; Dahl's variant is a late-apocope route differing only in
+   denying gemination and borrowing final -ġ.
+4. **'Hay' therefore patterns with *nett*, *bedd*, *cynn***: regular only
+   under late apocope, an analogical liability under early apocope. It
+   is no longer a neutral "dependent of the chronology debate" (cycle-3
+   formulation, now superseded): it adds one more whole-stem levelling,
+   in all dialects, to the cost of the early chronology — while remaining
+   compatible with early apocope *plus* levelling, as 'bed' is.
+5. **Quantity resolved at the level of viable derivations**: the only
+   regular short-vowel candidate, \*\*hewe, is excluded by every attested
+   spelling. Every derivation consistent with the record (B2, Dahl, A2
+   levelling) yields a long umlauted nucleus (WS īe, Angl. ē). The
+   cycle-6 withdrawal of "all viable routes predict length" is itself
+   superseded in this sharpened, argued form.
+6. **Production recommendation (separate from this research)**: the
+   experimental Model A rule `OEWLossBeforeI` should not be promoted in
+   any form; it is contradicted by *eowu* and *cleweþa* and unsupported
+   in the literature. No production change is made in this cycle.
+
+Formal verification of these chains against the controls is in
+`experiments/` (research-only cascade; see experiments/README.md).

@@ -40,6 +40,26 @@ class), *glīg/glēo* 'glee' (\*gliwą/\*gliwi, same structure with i-grade).
 
 ## Assessment
 
+> **Cycle-8 revision.** The first bullet below and the cycle-7
+> qualifications are superseded in one specific respect: the regular
+> development of the inherited direct form is no longer unresolved.
+> Cycle 8 established (DERIVATIONS.md, cycle-8 section; experiments/)
+> that the regular early-apocope outcome is disyllabic \*\*hewe with
+> retained w (controls: *eowu*, *cleweþa*, *mete*, *mene*), which no
+> attested spelling of 'hay' can continue, and that no regular route to
+> a short monosyllable \*hei/\*hej exists (`OEWLossBeforeI` refuted;
+> Hogg–Fulk §7.69 denies the /ei̯/ diphthong outright). Every
+> derivation compatible with the attested record — B2, Dahl's
+> ungeminated late variant, A2 levelling — therefore yields a long
+> umlauted nucleus (WS īe, Angl. ē). **The attested word had a long
+> vowel on all viable accounts.** This is a conclusion from
+> derivational exhaustion, not a direct measurement: the direct
+> observational evidence below (Farman's acute, spellings, metre)
+> retains exactly the limited probative force stated for it, and now
+> corroborates rather than carries the conclusion. The remaining
+> genuinely open quantity question is not *whether* the attested word
+> was long but *which* long derivation produced it.
+
 - **No independent, decisive evidence identified in the sources examined establishes a long vowel in the OE
   direct singular of 'hay'.** The conventional /eːj/ of *hēġ*/*hīeġ* is
   theory-internal: it is the regular output of the geminate-route stem
