@@ -6,6 +6,8 @@
 > same-scribe control. The Farman census is corrected to 196 non-target
 > types/299 tokens plus *hóeg* (one type/two tokens); its bounded matched
 > calibration is descriptive, not a population-wide accentuation rate.
+> Cycle 7 further expands the long-V+glide controls with *stīgan*;
+> the prior 6/135 short-HL sensitivity count is superseded by 6/147.
 
 Date: 2026-11-24. Status: Stage A adjudication (precedes any revision of
 DRAFT.md). Brief: test seriously whether the early-apocope chronology's

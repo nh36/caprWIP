@@ -1,5 +1,11 @@
 # Hay source intake and targeted philological investigation: cycle 5
 
+> **Historical calibration status:** Cycle 7 expanded the long-V+glide
+> panel to include independently long *stīgan* forms and corrected the
+> short-HL sensitivity result: the old 6/135 count below is superseded by
+> 6/147. The current bounded results are in
+> `FARMAN_ACCENT_CALIBRATION.tsv` and `RESEARCH_MEMO_CYCLE7.md`.
+
 Date: 2026-11-24. Status: provisional evidence memorandum. This cycle
 verifies supplied publications, the charter and gospel witnesses, and the
 specific lexical/phonological implications requested. It does not adjudicate

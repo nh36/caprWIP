@@ -21,20 +21,26 @@ PR #21 materials were changed.
   *hóeg* (one type/two tokens), 197 types/301 Old English tokens total.
   The bounded matched calibration finds short V+glide *weg/dæg* accented
   in 1/53 tokens (1/9 surface types; 1/2 lexical types), long V+glide
-  *stīg* in 1/2 tokens (1/2 surface types; one lexical type), and
-  short-HL controls in 5/133 tokens (5/23 surface types; 4/5 lexical
-  types). Short-V+glide closed monosyllables are 1/26 accented and forms
-  with following vowel graphs 0/27; the panel includes unaccented *weig*
-  in the Mark 1:3 ‘way’ gloss (fol. 52v). Both *stīg* tokens have following
-  vowel graphs; *stígas* at Mt 3:3, fol. 4v, is supported as accusative
-  plural by Latin *semitas eius*, while *stige* on fol. 52v is an
-  uncertain alternative beside *gongas*. Eight uncertain *gang*-family
-  tokens and one *dægne* are reported separately and excluded. Counting
-  short-HL controls as short gives 6/186 accented;
-  treating them as lengthened gives 6/135. This selected sample is
-  descriptive, not a population rate; repeated tokens are not independent.
-  The acutes suggest Farman's own late tenth-century practice, not
-  ninth-century quantity.
+  controls *stīg* (1/2 tokens) and *stīgan* (0/12), and short-HL controls
+  in 5/133 tokens (5/23 surface types; 4/5 lexical types). The expanded
+  long-V+glide sample totals 1/14 accented tokens, 1/10 surface types,
+  and 1/2 related lexical types. *Stígas* at Mt 3:3, fol. 4v, is
+  supported as accusative plural by Latin *semitas eius*; *stige* at
+  Mark 1:3, fol. 52v, is an uncertain alternative beside *gongas*.
+  Both are following-vowel forms. One *stīgan* token, *astig* at Mt
+  27:40, fol. 48v, has a closed stressed root syllable but is a prefixed
+  disyllabic imperative; the other eleven are multisyllabic. No
+  long-V+glide monosyllabic word-form control was found. The two
+  lexemes share a root and are not independent evidence. Short-V+glide
+  closed monosyllables are 1/26 accented and forms with following vowel
+  graphs 0/27; *weig* at Mark 1:3 (fol. 52v) is included. Eight
+  uncertain *gang*-family tokens and one *dægne* are reported separately
+  and excluded. Counting short-HL controls as short gives 6/186
+  accented (6/32 surface types; 5/7 lexical types); treating them as
+  lengthened gives 6/147 (6/33; 5/7). This selected sample is
+  descriptive, not a population rate; repeated tokens are not
+  independent. The acutes suggest Farman's own late tenth-century
+  practice, not ninth-century quantity.
 - The spelling *cyniges heiweg* is secure in Sawyer S 1196, BL Cotton
   Augustus ii.16, a surviving sheet dated s. ix med. The transaction is
   conventionally dated ?859 by Lowe; the date may be erroneous, and the
@@ -56,12 +62,17 @@ PR #21 materials were changed.
   his p. 508 table accounts for 328/376 non-ambiguous occurrences
   (87.3%), with 48 exceptions. His p. 509 CVC arithmetic is inconsistent,
   so the reported 98% predictive accuracy is not reproduced.
-- The only direct edition readings ⟨hieg⟩ found are Eadwine Psalter PPs
-  71.16 and 146.8 (Harsley 1889: 72, 241), in Trinity College Cambridge
-  MS R.17.1, c. 1150. The manuscript images were not checked and the
-  dialect is unassigned. Normalized *hīeġ* is not a manuscript reading.
-  Hogg's three possible sources of West Saxon ⟨ie⟩ (2006: 400) have
-  distinct conditions; their applicability to ‘hay’ remains unsettled.
+- The two direct ⟨hieg⟩ readings are verified in Eadwine Psalter PPs
+  71.16 and 146.8 (Harsley 1889: 124, 241), Trinity College Cambridge
+  MS R.17.1, fols. 125r and 258r, Romanum column. Neither has a visible
+  accent or correction. The fol. 258r stint is attributed to OE3; fol.
+  125r's hand is not securely identified. Faulkner (2017), using an
+  author preprint, argues that the gloss largely derives from an older
+  exemplar but also records selective modernization and correction by
+  its twelfth-century scribes. These particular forms cannot be assigned
+  to the exemplar or to contemporary Canterbury English. Their dialect
+  and exemplar language remain unresolved; normalized *hīeġ* is not a
+  manuscript reading.
 - The bounded Lowe-catalogued charter search found no securely identified
   Kentish lexical *hēah* token. Cooper's separate fourteen-charter corpus
   includes *higi wegge* in S 508 (transaction 946; surviving CCCC 111,
@@ -106,9 +117,10 @@ PR #21 materials were changed.
 - The historical inference among the surviving derivations, including
   whether analogy is necessary. The source observations alone do not
   decide this.
-- Whether the Eadwine Psalter ⟨hieg⟩ readings are manuscript-accurate and
-  what dialect they represent. Even if West Saxon, the relevant source
-  among Hogg's three mechanisms for ⟨ie⟩ must be established for ‘hay’.
+- Whether the Eadwine Psalter ⟨hieg⟩ readings are inherited, contemporary,
+  or revised spellings, and what dialect or exemplar language they
+  represent. Hogg's three mechanisms for ⟨ie⟩ must be assessed for ‘hay’
+  before either reading constrains its historical derivation.
 
 ## Publications that could resolve specific questions
 
@@ -131,28 +143,38 @@ PR #21 materials were changed.
   holding status was not established in this closeout. Ritt 2000 is now
   held and audited; it is not an outstanding acquisition.
 
-No hay-relevant new publication was found in Downloads, and no new general
-acquisition was pursued.
+Faulkner (2017) was found in Downloads, ingested as an author preprint,
+and registered with searchable text. No further general acquisition was
+pursued; the three separately managed outstanding publications above were
+not searched for.
 
 ## Reference and research files
 
-The nine publications registered before this cycle (Bryan 1915,
+The nine publications registered before the final two source cycles (Bryan 1915,
 Wallenberg 1928, Langlands 2019, Trousdale 2005, Skeat 1871, Cooper 2000,
 Lowe 2001, Wager 2017, and Versloot 2025) remain accessible in this
-checkout. Cooper 2003, Hogg 2006, and Ritt 2000 are now added, for twelve
-local publications; Harsley 1889 is an online edition, not a local
-holding. The new private PDFs and searchable texts are Git-ignored and
-checkout-specific under `docs/references/local/hay-article-literature-2026-11-24/`.
+checkout. Cooper 2003, Hogg 2006, Ritt 2000, and Faulkner 2017 are now
+added, for thirteen local publications; Harsley 1889 is an online
+edition, not a local holding. The Faulkner author preprint is
+`docs/references/local/hay-article-literature-2026-11-24/faulkner2017_preprint.pdf`
+(SHA-256 `83919ce39e56d4f69c0902137a0d94a9aff212bf4bd9b30fdd4a7dd3ca57fcd7`);
+its searchable text is
+`docs/references/local/hay-article-literature-2026-11-24/faulkner2017_preprint.txt`
+(SHA-256 `92d396db4eeb968ee28e056e4ce69bd3f2ee9b650696848d743431768a1eca2e`).
+The private PDFs and searchable texts are Git-ignored and checkout-specific
+under `docs/references/local/hay-article-literature-2026-11-24/`.
 Use `docs/references/hay-article-literature-2026-11-24/holdings.tsv` and
 `page_map.tsv` as the access and pagination index, and recheck paths and
 hashes in the next worktree. Cooper maps pp. 39–70 to sheets 2–33; Hogg
 pp. 395–416 to sheets 2–23; Ritt pp. 497–512 to sheets 3–18 (admin
-sheets excluded from its OCR).
+sheets excluded from its OCR). Faulkner's local copy is a 28-sheet
+author preprint; no sheet-to-published-page mapping is claimed.
 
 Research artifacts: `CONCORDANCE.tsv`, `DOE_CROSSWALK_2026-11-23.tsv`,
 `SAME_SCRIBE_CONCORDANCE.tsv`, `COOPER_CHARTER_CORPUS.tsv`, `PARADIGM.md`,
 `QUANTITY_EVIDENCE.md`, `LINDISFARNE_EVIDENCE.md`,
-`RESEARCH_MEMO_CYCLE6.md`, `FARMAN_ACCENTS.tsv`, and
+`RESEARCH_MEMO_CYCLE6.md`, `RESEARCH_MEMO_CYCLE7.md`,
+`FARMAN_ACCENTS.tsv`, and
 `FARMAN_ACCENT_CALIBRATION.tsv`. The Farman files are generated by
 `extract_farman_accents.py` and `calibrate_farman_accents.py`.
 
@@ -160,9 +182,15 @@ Research artifacts: `CONCORDANCE.tsv`, `DOE_CROSSWALK_2026-11-23.tsv`,
 
 The Farman census relies on Tamoto's searchable extraction and edition
 readings; the target manuscript leaves cannot be checked online. Harsley's
-Eadwine ⟨hieg⟩ readings remain edition-only, with dialect unassigned.
-Cooper's charter negatives are limited to electronic transcripts, and
-the charter search was bounded, not a manuscript-wide collation. Several
-transaction dates, copy dates, and textual layers are disputed. The
-private local reference library is not portable automatically between
-worktrees. No new historical interpretation is adjudicated here.
+Eadwine ⟨hieg⟩ readings are directly verified in the manuscript, but the
+language of the exemplar and the dialect of these glosses remain
+unassigned. Faulkner's preprint/published pagination correspondence is
+not established. The British Library's available S 1196 preview was too
+faint for direct reading; Lindisfarne target images could not be
+retrieved reliably at usable resolution, and S 328 was not available as
+an adequate image. Cooper's charter negatives are limited to electronic
+transcripts, and the charter search was bounded, not a manuscript-wide
+collation. Several transaction dates, copy dates, and textual layers
+remain disputed. The private local reference library is not portable
+automatically between worktrees. No historical interpretation is
+adjudicated here.

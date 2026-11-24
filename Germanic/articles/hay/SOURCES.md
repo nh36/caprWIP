@@ -73,6 +73,10 @@ The full source inventory and TSV/JSON snapshots are under
   Cooper knew of S 1196 and excluded it from his highway chronology
   because he suspected corruption. His fourteen-charter corpus and
   transcript limits are recorded in `COOPER_CHARTER_CORPUS.tsv`.
+- **Faulkner 2017, author preprint**: searchable preprint is held locally;
+  its 28 PDF sheets are not mapped to the published pagination (pp. 72–107).
+  It treats Eadwine's gloss as a layered transmission from a possibly
+  pre-900 exemplar, with dialect and degree of scribal modernization open.
 - **Hogg 2006, pp. 398–409**: chapter author Richard M. Hogg (van
   Kemenade and Los are editors). Checked dialect-cluster distinctions,
   the three sources of West Saxon ⟨ie⟩, Mercian witness differences, and
@@ -81,10 +85,11 @@ The full source inventory and TSV/JSON snapshots are under
   ILL sheets 3–18; relevant passages, including pp. 508–509, checked
   against page images. Administrative sheets 1–2 are excluded from OCR.
   Source and OCR are private, Git-ignored, and not for redistribution.
-- **Harsley 1889, pp. 72, 241**: online edition reads ⟨hieg⟩ at Eadwine
-  Psalter PPs 71.16 and 146.8. Trinity College Cambridge MS R.17.1 is
-  dated c. 1150; manuscript images were not checked and the dialect is
-  unassigned.
+- **Harsley 1889, pp. 124, 241**: reads ⟨hieg⟩ at Eadwine Psalter PPs
+  71.16 and 146.8. Both readings were checked directly in Trinity College
+  Cambridge MS R.17.1, fols. 125r and 258r, Romanum column. Neither has a
+  visible accent or correction; the gloss dialect and the language of its
+  exemplar remain unassigned.
 - **Farman calibration**: the refreshed matched panel separates
   closed monosyllables, following-vowel-graph forms, and other structures;
   reports tokens, surface and lexical types; and retains short-HL

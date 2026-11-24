@@ -60,7 +60,9 @@ UNRESOLVED.md).
 ## 2. Old High German *hewi* ~ *houwi*
 
 **The facts.** OHG attests both *hewi* (matching Goth. *hawi*) and
-*houwi* (with the geminate/levelled stem shape); Old Norse *hey* and
+*houwi*; Middle Dutch attests *hoye/houwe*. These are attested doublets,
+while their identification as direct/oblique stems or as
+inherited/levelled forms is historical analysis. Old Norse *hey* and
 Gothic *hawi* agree on an ungeminated direct singular outside West
 Germanic.
 
@@ -74,8 +76,11 @@ opposite chronology (Dahl, Boutkan), *houwi*-type forms are regular and
 unmutated diphthong and explains *hewi* via \*haui with later diphthong
 modification (differentiation setting in later on the continent), with
 OFris *hā*, OS *gō* straight from -aui-. Each side can generate the
-other's "inherited" form by a mechanism of its own. The direction of
-levelling is thus **not independently established**: it is read off
+other's "inherited" form by a mechanism of its own. Boutkan likewise
+assigns Middle Dutch *hoye* to an oblique stem and *houwe* to an old
+nominative stem (1995: 212–213); those stem labels and any direction of
+levelling depend on his historical analysis. The direction of levelling
+is thus **not independently established**: it is inferred within
 whichever chronology one assumes. Gothic *hawi* and ON *hey* secure an
 ungeminated direct cell for *Proto-Germanic*; they cannot secure a
 consonantal-w \*hewi stage for *pre-Old-English* specifically, which is
@@ -84,11 +89,11 @@ nouns). An OHG form is not an OE attestation.
 
 **What the comparative evidence does establish.** (i) The inherited
 PGmc direct singular was unlike the obliques (ungeminated vs geminated
-or diphthongal); (ii) West Germanic languages levelled such paradigms,
-in the geminate direction at least once (*houwi*, on R&T's reading) —
-so the A2-type replacement posited for English has a genuine parallel;
-(iii) nothing in the continental record fixes which shape the *English*
-direct cell had on the eve of i-umlaut.
+or diphthongal); (ii) the continental languages attest doublets with
+different stem shapes, but whether a given form is inherited or levelled
+depends on the historical analysis; (iii) nothing in the continental
+record fixes which shape the *English* direct cell had on the eve of
+i-umlaut or establishes a particular direction of English levelling.
 
 ## 3. Other controls
 

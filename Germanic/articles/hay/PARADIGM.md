@@ -48,15 +48,15 @@ source ledger, extended by Dahl 1938's early-OE corpus). Evidence classes:
 2. Outside the Paris Psalter datives, every attested token is direct
    (nom./acc.) or syntactically dative without an ending (*mid hig*), or
    compound-internal. Verse also supplies direct-case tokens (PPs 71.16,
-   105.17; Andreas 38); the Eadwine Psalter has direct-edition ⟨hieg⟩
-   readings at PPs 71.16 and 146.8 (Harsley 1889: 72, 241), but the
-   manuscript images have not been checked and the gloss dialect is
+   105.17; Andreas 38); the Eadwine Psalter has directly verified ⟨hieg⟩
+   at PPs 71.16 and 146.8 (Harsley 1889: 124, 241), fols. 125r and 258r,
+   Romanum column. The gloss dialect and exemplar language remain
    unassigned. PPs 146.9 *hig* is Krapp's emendation of manuscript ⟨hio⟩
    and is not a token.
 3. West Saxon *hīeġ* is a normalized citation form, not a uniform
    manuscript reading. Inspected West Saxon witnesses have ⟨hig/hyg⟩;
-   the only direct edition ⟨hieg⟩ readings located are the Eadwine Psalter
-   forms above, whose dialect is unassigned. Hogg (2006: 400) identifies
+   the only directly verified manuscript ⟨hieg⟩ readings located are the
+   Eadwine Psalter forms above, whose dialect is unassigned. Hogg (2006: 400) identifies
    three possible sources of West Saxon ⟨ie⟩—palatalization of earlier
    /eː/, i-umlaut of earlier diphthongs, and hiatus resolution involving
    /i/ and /e/—but none is established for ‘hay’. Thus these spellings do

@@ -1,5 +1,15 @@
 # Research memo — cycle 2 (hay article)
 
+> **Historical status, superseded in part by cycles 3 and 7:** The
+> categorical cycle-2 conclusion that all attested properties are shared
+> by the surviving derivations is not the current adjudication. The
+> Paris Psalter supplies late inflected *hege* forms, so the earlier
+> statement that the putative oblique donor was wholly unattested is
+> superseded. The two Eadwine ⟨hieg⟩ readings are now manuscript-verified,
+> but their dialect and exemplar provenance are unresolved. See
+> `RESEARCH_MEMO_CYCLE7.md` and the current-status section of
+> `UNRESOLVED.md`; retain this memo as a record of the earlier argument.
+
 Date: 23 November 2026. Branch `research/hay-article`.
 Scope: second research cycle — adversarial re-testing of the cycle-1
 verdict, reconstruction of Dahl's no-gemination analysis, resolution of

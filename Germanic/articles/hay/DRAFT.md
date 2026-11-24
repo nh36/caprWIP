@@ -337,16 +337,35 @@ In the West Saxon gospels at Mark 6:39 Corpus 140 has *hig*, with later
 gloss is Owun's, not Farman's, whose contribution ends at Mark 2:15
 [@Skeat1871, pp. 48–49].
 
-The only direct edition readings ⟨hieg⟩ located in this audit are
-Eadwine Psalter glosses at PPs 71.16 and 146.8, printed by Harsley
-[@Harsley1889, pp. 72, 241]. The witness is Trinity College Cambridge,
-MS R.17.1, dated c. 1150; its folios have not been independently
-collated here, and the dialect of these glosses is not established.
-These readings must be distinguished from normalized *hīeġ* and from
-reconstructed or illustrative forms. The other inspected West Saxon
-traditions supply *hig/hyg* (including the Lambeth Psalter and CCCC 140)
-and, in later gospel copies, *haig/heig*; they do not provide a
-manuscript ⟨ie⟩ spelling of this noun.
+The only direct ⟨hieg⟩ readings located in this audit are in the Eadwine
+Psalter at PPs 71.16 and 146.8, printed by Harsley [@Harsley1889,
+pp. 124, 241]. Direct inspection of Trinity College Cambridge, MS R.17.1,
+confirms separate ⟨hieg⟩ at fol. 125r, Romanum column, aligned with
+*sicut fenum terrae* (PPs 71.16), and fol. 258r, Romanum column, aligned
+with *qui producit in montibus foenam et herbam servituti hominum*
+(PPs 146.8). Neither has a visible accent, erasure, or correction. The
+second folio is assigned to the OE3 stint in the consulted manuscript
+description; the hand at fol. 125r is not securely identified. These
+are copying-hand claims, not evidence that either reading is West Saxon,
+Kentish, or a faithful record of the exemplar's language.
+
+Faulkner's author preprint for the 2017 chapter describes the Psalter as
+made at Canterbury in the 1150s and argues that most of its English
+Psalter gloss derives from an older exemplar conventionally called
+*Ead*, while acknowledging uncertainty about that exemplar's date,
+textual layers, and dialect [@Faulkner2017]. He also documents selective modernization
+and correction by the twelfth-century scribes. The two ⟨hieg⟩ readings
+could therefore preserve exemplar forms, reflect contemporary copying,
+or result from local scribal revision; their individual histories cannot
+be resolved from these tokens. Vespasian has ⟨heg⟩ at both loci and
+Paris has ⟨heg⟩ at PPs 71.16. This places the readings in a wider Psalter
+gloss tradition but does not prove direct dependence or determine the
+source of Eadwine's ⟨i⟩. The readings must be distinguished from
+normalized *hīeġ* and from reconstructed or illustrative forms. The
+other inspected West Saxon traditions supply *hig/hyg* (including the
+Lambeth Psalter and CCCC 140) and, in later gospel copies, *haig/heig*;
+they do not provide a second securely West Saxon manuscript ⟨ie⟩
+spelling of this noun.
 
 Independent support for a ‘hay-way’ compound comes from Langlands's
 topographical reading of S 445 *higweges*, though its transaction is
@@ -474,8 +493,11 @@ charters); the tenth-century Northumbrian gospel glosses write ⟨heg⟩,
 ⟨hóeg⟩; the eleventh-century Paris Psalter writes ⟨heg(e)⟩ and ⟨hig⟩
 side by side. Inspected West Saxon witnesses include ⟨hig/hyg⟩, with
 ⟨heig/haig⟩ in later gospel copies and Dialogues C. The two Eadwine
-Psalter ⟨hieg⟩ readings are direct edition forms, but their dialect is
-unassigned and the manuscript images were not checked.
+Psalter ⟨hieg⟩ readings are now directly verified in the manuscript;
+their dialect and exemplar provenance remain unassigned. Faulkner's
+account of an old, possibly pre-900 exemplar and its twelfth-century
+copying cautions against equating manuscript provenance, copying-hand
+identity, and the language of an individual gloss.
 
 Hogg distinguishes Alfredian and Ælfrician West Saxon dialect clusters
 [@Hogg2006, pp. 399–402]; he also stresses the linguistic differences
@@ -566,15 +588,19 @@ lexical types (ten exact spellings). Their closed monosyllables have
 1/26 accented tokens; forms with a following vowel graph have 0/27.
 The short-*e* panel includes the unaccented spelling *weig* at Mark 1:3
 (fol. 52v), where the gloss identifies ‘way’ in “prepare the way of the
-Lord”; this is counted as a closed monosyllable. The script separately
-excludes verbal *stigað/stigende* homographs from long-vowel noun *stīg*.
-The only long-vowel-plus-glide control, *stīg*, has 1/2 tokens, 1/2
-surface types, and 1/1 lexical type; both forms have following vowel
-graphs, so neither is a closed-monosyllable match. The accented
-*stígas* occurs at Mt 3:3, fol. 4v, where Latin *semitas eius* supports
-an accusative plural; the other token, *stige* on fol. 52v, is an
-alternative beside *gongas* and is not securely classified for case or
-number. No likelihood ratio is inferred from this single lexeme.
+Lord”; this is counted as a closed monosyllable. The final bounded search adds twelve forms (eight surface types) of
+independently long-ī *stīgan*: none is accented. One, *astig* at Mt
+27:40 (fol. 48v), has a closed stressed root syllable, but the complete
+word is a prefixed disyllabic imperative; the other eleven are
+multisyllabic forms. The expanded long-V+glide panel has 1/14 accented
+tokens, 1/10 surface types, and 1/2 lexical types, but the noun and verb
+share a root and are not independent; there is no long-V+glide
+monosyllabic word-form control. The noun forms *stígas* (Mt 3:3, fol.
+4v; Latin *semitas eius*, accusative plural) and *stige* (fol. 52v;
+uncertain alternative beside *gongas*) were checked against Tamoto,
+pp. 8 and 104; the verb forms *astig* and *astigæ* were checked on
+Tamoto p. 96. No likelihood ratio or precise probability is inferred
+from this small, related sample.
 
 Potential homorganic-cluster lengthening is kept separate. The short-HL
 panel has 5/133 accented tokens, 5/23 surface types, and 4/5 lexical
@@ -584,8 +610,8 @@ clear verbal *gangan* forms plus *lond*, *word*, *hond*, and two *cild*
 tokens. Eight ambiguous *gang*-family forms and one *dægne* token are
 reported separately and excluded. Treating the short-HL panel as short
 gives 6/186 accented tokens, 6/32 surface types, and 5/7 lexical types;
-treating it as lengthened gives 6/135 tokens, 6/25 surface types, and
-5/6 lexical types. These small, selected controls are descriptive, not
+treating it as lengthened gives 6/147 tokens, 6/33 surface types, and
+5/7 lexical types. These small, selected controls are descriptive, not
 a corpus-wide rate; repeated tokens are not independent. The full
 accent census separately classifies 162 long-vowel types, 14 short-HL
 types, 13 short types, and 7 uncertain types.
@@ -707,11 +733,16 @@ attested in Old English only late: the Paris Psalter datives of
 Section 3.2 supply an inflected stem in the eleventh century, but
 nothing in the record dates the levelling itself to the pre-umlaut
 window the account requires. The continental cognates strengthen the
-typological case considerably: Middle Dutch shows **hoye** < \*hauj-
-(the oblique stem) beside **houwe** < \*hawi (the old nominative) as
-doublet reflexes of the very same paradigm split [@Boutkan1995,
-pp. 212–213], so 'hay' demonstrably levelled — in both directions —
-elsewhere in West Germanic. If the normalized West Saxon *hīeġ*
+typological case, but do not settle the direction of change: Middle
+Dutch attests **hoye/houwe**, and Old High German attests **hewi/houwi**.
+Boutkan assigns Middle Dutch *hoye* to an oblique stem and *houwe* to an
+old nominative stem, and analyzes the OHG forms in relation to competing
+chronologies [@Boutkan1995, pp. 212–213]. Those stem identities and the
+directions of any levelling are historical inferences, not facts entailed
+by the attested doublets; they depend in part on the chronology being
+argued for. The doublets establish comparative variation, not
+independently the direction of change or the history of the Old English
+paradigm. If the normalized West Saxon *hīeġ*
 reflects an actual West Saxon ⟨ie⟩ development, it would require an
 appropriate historical source. The available word-attestations do not
 establish that the source was specifically a protected stem, nor that
@@ -798,12 +829,18 @@ of that balance.
 
 The result of Sections 4–6 is narrower than earlier versions of this
 argument claimed. The corpus establishes the noun and its inflected
-dative, but no securely localized manuscript ⟨ie⟩ form that by itself
-requires an ēa-type direct stem. The Eadwine Psalter's ⟨hieg⟩ readings
-are direct edition forms of c. 1150, but their dialect and manuscript
-readings remain unverified. If a West Saxon *hīeġ* analysis is adopted,
-gemination, pre-umlaut levelling, and Dahl's diphthongal parse remain
-possible routes; the surviving spellings do not choose among them. The
+dative, as well as two direct manuscript ⟨hieg⟩ readings in Eadwine.
+Those readings do not establish the dialect of the gloss, the language
+of its exemplar, or which historical source of ⟨ie⟩ is relevant. The
+previous categorical exclusion of Model A on West Saxon vocalism is
+superseded: that exclusion is conditional on a West Saxon identification
+and on the applicable historical developments, neither of which is
+settled for these forms. The regular development and quantity of the
+inherited direct form under Model A remain unresolved; the claim that
+every viable derivation necessarily predicts a long direct vowel is
+withdrawn. Gemination, levelling, hiatus resolution, and Dahl's
+diphthongal analysis remain questions for adjudication, not findings of
+this source audit. The
 final -ġ is regular under the geminate analysis and analogical under
 others, while the inherited consonantal-w form remains unattested in
 Old English. The Paris Psalter datives establish a late inflected stem,
@@ -831,12 +868,15 @@ case — including three verified Lindisfarne tokens (one first written
 ⟨hehg⟩ and corrected by the glossator), two accented Mercian tokens in
 Rushworth¹, and one dependent token in Rushworth² — and attested with an
 overt inflection only in the dative, in the three manuscript-verified
-*hege* of the metrical Paris Psalter. Its conventional long vowel is a
-reconstruction on which all viable derivations agree, supported but not
-proved by Farman's acute, which calibration shows to be probabilistic
-evidence about his own practice. The direct ⟨hieg⟩ edition readings in
-the Eadwine Psalter are late and not securely assigned to West Saxon;
-the normalized *hīeġ* therefore cannot be treated as a manuscript fact.
+*hege* of the metrical Paris Psalter. The quantity and regular
+development of the inherited direct cell remain unresolved. Farman's
+two printed acutes are limited, witness-specific evidence about his own
+practice, not a ninth-century quantity determination. Eadwine directly
+reads ⟨hieg⟩ twice, but normalized *hīeġ* remains an editorial citation
+form and the gloss's dialect and exemplar language are unassigned.
+Faulkner's account of transmission allows for both preservation and
+modernization, so neither reading can automatically be treated as
+inherited or contemporary.
 Hogg's three possible sources of West Saxon ⟨ie⟩ are real developments,
 but their applicability to this word remains to be demonstrated. The
 Paris Psalter forms supply an overtly inflected stem centuries too late
@@ -847,8 +887,9 @@ among the proposed dialectal outcomes. The Kentish ⟨hei-⟩ is
 compound-internal and its lexical identification remains disputed; the
 thirteenth-century independent-noun ⟨hei⟩ in F.174 is a later
 respelling of ⟨hig⟩. The direct Eadwine Psalter ⟨hieg⟩ readings are
-potentially relevant to the West Saxon argument, but the witness's
-dialect and manuscript readings require verification. The next
+potentially relevant to the West Saxon argument, but their dialect,
+exemplar provenance, and applicable historical development require
+adjudication. The next
 adjudication should assess the applicability of Hogg's ⟨ie⟩
 developments, the regular development of the inherited direct stem, and
 the necessity, timing, and scope of levelling. The source-preparation

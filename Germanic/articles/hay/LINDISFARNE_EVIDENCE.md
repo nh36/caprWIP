@@ -83,24 +83,31 @@ Findings of note:
    LF line numbers and `splitlines()` indices; the old 327-token figure is
    withdrawn. The cycle-6 audit adds unaccented *weig* ‘way’ at Mark 1:3
    (fol. 52v) to the short-V+glide panel as a closed monosyllable. The
-   bounded matched calibration
-   (FARMAN_ACCENT_CALIBRATION.tsv) includes unaccented occurrences:
-   *weg/dæg* 1/53 tokens (1/9 surface types; 1/2 lexical types), *stīg*
-   1/2 tokens (1/2 surface types; one lexical type), and the separate
-   short-HL panel 5/133 tokens (5/23 surface types; 4/5 lexical types).
+   final bounded calibration (`FARMAN_ACCENT_CALIBRATION.tsv`) includes
+   unaccented occurrences: *weg/dæg* 1/53 tokens (1/9 surface types; 1/2
+   lexical types), long-V+glide controls 1/14 tokens (1/10 surface types;
+   1/2 lexical types), and the separate short-HL panel 5/133 tokens
+   (5/23 surface types; 4/5 lexical types). The *stīg* path noun
+   contributes *stígas* at Mt 3:3, fol. 4v (accented; Latin *semitas
+   eius* supports accusative plural) and uncertain *stige* at Mark 1:3,
+   fol. 52v (beside *gongas*); both have following vowel graphs.
+   Independently long-ī *stīgan* contributes twelve tokens (eight surface
+   types), none accented. One, *astig* at Mt 27:40, fol. 48v, has a
+   closed stressed root syllable but is a prefixed disyllabic imperative;
+   the other eleven are multisyllabic forms. The noun and verb share a
+   root and do not provide independent lexical evidence; no long-V+glide
+   monosyllabic word-form control was found. The noun and selected verbal
+   contexts were checked against Tamoto's edition, pp. 8, 96, and 104.
    Short-V+glide closed monosyllables are 1/26 accented and forms with
-   following vowel graphs 0/27. Both *stīg* forms have following vowel
-   graphs; *stígas* at Mt 3:3, fol. 4v, is supported as accusative plural
-   by Latin *semitas eius*, while *stige* on fol. 52v is an uncertain
-   alternative beside *gongas*. Treating short-HL as short gives 6/186
+   following vowel graphs 0/27. Treating short-HL as short gives 6/186
    tokens (6/32 surface types; 5/7 lexical types); treating it as
-   lengthened gives 6/135 (6/25; 5/6). These selected controls are
-   descriptive, not a population-wide accentuation rate, and the single
-   long-control lexeme cannot yield a likelihood ratio. They support
-   only a cautious statement about Farman's own late tenth-century
-   practice, not a ninth-century quantity claim. Eight uncertain
-   *gang*-family tokens and one *dægne* are listed separately and
-   excluded. (ii) The
+   lengthened gives 6/147 (6/33; 5/7). These selected controls are
+   descriptive, not a population-wide accentuation rate, and the related
+   long-control lexemes do not support a precise probability or likelihood
+   ratio. They support only a cautious statement about Farman's own late
+   tenth-century practice, not a ninth-century quantity claim. Eight
+   uncertain *gang*-family tokens and one *dægne* are listed separately
+   and excluded. (ii) The
    ⟨oe⟩ digraph is a point about **quality and spelling convention, not
    length** (cycle 4, correcting the earlier "/eː/" shorthand): Kuhn
    [-@Kuhn1945, p. 646] discusses *oele* as i-umlaut of **short** Latin
@@ -190,3 +197,17 @@ whole.**
   directly, and the Digital Bodleian digitization of Auct. D.2.19 omits
   the two Rushworth hay pages, so the Farman acutes cannot at present be
   checked against the manuscript online.
+
+## 7. Direct image access limits
+
+The British Library catalogue and IIIF manifest for the Lindisfarne
+Gospels were accessible, but the Matthew and John target images were not
+reliably retrieved at usable resolution; a larger image request returned
+403. The Lindisfarne readings and the ⟨hehg⟩ correction therefore remain
+edition- and apparatus-based, not direct manuscript observations.
+
+For S 1196, the British Library recto preview was visible but too worn
+and faint to establish ⟨cyniges heiweg⟩ or word division independently;
+larger requests also failed. The charter reading remains based on the
+edition. No adequate S 328 manuscript image or facsimile was available in
+this bounded check; *Hegforde* remains edition-based.

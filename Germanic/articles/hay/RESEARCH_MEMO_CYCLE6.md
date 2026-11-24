@@ -1,5 +1,16 @@
 # Hay article: final source-preparation memorandum
 
+> **Cycle 7 correction:** The Harsley reference for PPs 71.16 below was
+> mispaginated; it is p. 124, not p. 72. Both Eadwine readings have since
+> been checked directly in the manuscript. The cycle-6 text is updated
+> below to avoid perpetuating the error; the new evidence and the
+> remaining provenance question are documented in
+> `RESEARCH_MEMO_CYCLE7.md`.
+>
+> The Farman calibration below records the earlier *stīg*-only long-control
+> sample. Cycle 7 adds *stīgan* and supersedes the 6/135 short-HL sensitivity
+> count with 6/147; use the current calibration TSV for counts.
+
 ## Cooper (2003) and S 1196
 
 Cooper knew of S 1196 and deliberately excluded it from his chronology of
@@ -89,12 +100,13 @@ generated rows.
 
 ## West Saxon ⟨ie⟩ and the attestations of ‘hay’
 
-The only direct edition readings ⟨hieg⟩ found in this audit are Eadwine
-Psalter PPs 71.16 and 146.8, Harsley 1889: 72, 241. The witness is Trinity
-College Cambridge MS R.17.1, dated c. 1150. Its manuscript folios were
-not independently collated, and the dialect of these glosses has not
-been established. These readings are distinct from normalized *hīeġ*
-and from reconstructed or illustrative forms. The inspected West Saxon
+The two direct ⟨hieg⟩ readings found in this audit are Eadwine Psalter
+PPs 71.16 and 146.8, Harsley 1889: 124, 241. The witness is Trinity
+College Cambridge MS R.17.1, dated c. 1150. Direct images confirm fols.
+125r and 258r, Romanum column; neither reading has a visible accent or
+correction. The dialect and exemplar language have not been established.
+These readings are distinct from normalized *hīeġ* and from reconstructed
+or illustrative forms. The inspected West Saxon
 traditions attest *hig/hyg* (including Lambeth and CCCC 140); later
 gospel copies have *heig/haig*. The concordance and DOE crosswalk now
 record the Eadwine readings with their source, date qualification, and

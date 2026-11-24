@@ -1,5 +1,35 @@
 # Hay research unresolved evidence
 
+## Current status after cycle 7
+
+The final bounded verification is complete. Eadwine Psalter ⟨hieg⟩ at
+PPs 71.16 and 146.8 is directly confirmed on fols. 125r and 258r,
+Romanum column; neither has a visible accent or correction. Harsley's
+first citation is p. 124, not p. 72. Faulkner's account of an older
+exemplar and selective twelfth-century modernization does not determine
+whether either spelling was inherited, contemporary, or locally revised;
+the dialect and exemplar language remain unresolved.
+
+The Farman calibration now contains long-V+glide *stīg* (1/2 tokens) and
+*stīgan* (0/12), for 1/14 accented tokens, 1/10 surface types, and 1/2
+related lexical types. There is no long-V+glide monosyllabic word-form
+control. The only closed stressed-root token is prefixed disyllabic
+*astig* (0/1); see `FARMAN_ACCENT_CALIBRATION.tsv`.
+
+The cycle-4 categorical exclusion of Model A on West Saxon vocalism is
+superseded, not adjudicated: the direct ⟨hieg⟩ readings are verified but
+not dialect-assigned, and the applicability of the several West Saxon
+⟨ie⟩ developments to ‘hay’ remains unsettled. The regular development
+and quantity of the inherited direct form under Model A remain open.
+Do not treat the earlier claim that every viable derivation predicts a
+long direct vowel as current.
+
+Only Dal (1934), Wallenberg (1931: 203–205), and Brooks and Kelly (2013)
+remain acquisition items being handled separately by the project owner.
+Other acquisition notes in the historical cycle records below are not
+new acquisition requests. The cycle records are retained as history;
+this current-status section governs.
+
 ## External evidence
 
 - Ritt 2000: acquired as a restricted ILL scan and consulted; the local
@@ -14,7 +44,7 @@
   remain unknown.
 - Sehrt festschrift: pp. 33--34 and 255 remain unavailable in the local variants.
 
-## Current status after cycle 6
+## Historical status at cycle 6 (superseded by the current status above)
 
 - Cooper (2003) knew of S 1196 and excluded it from his highway chronology
   because he suspected corruption (p. 61 nn. 151, 155). The bounded
@@ -31,8 +61,11 @@
   `FARMAN_ACCENT_CALIBRATION.tsv`. The one long-control lexeme does not
   support a precise probability or likelihood ratio.
 - The only direct edition ⟨hieg⟩ readings found are Eadwine Psalter PPs
-  71.16 and 146.8 (Harsley 1889: 72, 241), Trinity College Cambridge
-  MS R.17.1, c. 1150. The manuscript readings and dialect are unverified.
+  71.16 and 146.8 (Harsley 1889: 124, 241; the p. 72 reference in this
+  historical cycle-6 record was incorrect), Trinity College Cambridge
+  MS R.17.1, c. 1150. These readings were not yet manuscript-verified
+  at cycle 6; cycle 7 confirms them directly but leaves their dialect
+  unassigned.
   Normalized *hīeġ* must not be treated as a manuscript form or secure
   West Saxon evidence. Hogg (2006: 400) describes three distinct sources
   of West Saxon ⟨ie⟩; their applicability to ‘hay’ remains unsettled.
@@ -148,17 +181,15 @@ Questions not settled by cycle 3; current status is noted below:
 
 These are substantive research questions, not metadata or ingestion failures.
 
-## Cycle-4 adjudications (24 Nov 2026)
+## Cycle-4 adjudications (historical; 24 Nov 2026)
 
 - ~~Whether Model A's regular output *hei* survives in the attested
-  record.~~ **Adjudicated** (RESEARCH_MEMO_CYCLE4.md): the spelling is
-  attested (S 1196 compound, 859; F.174 independent noun, s. xiii) but
-  not as an OE independent noun, and not demonstrably in continuity with
-  the early-apocope output — F.174's ⟨hei⟩ is positively excluded
-  (respelling of exemplar ⟨hig⟩). WS = Outcome C, manuscript-grounded;
-  a dialect-differentiated relic (Outcome B) remains **unfalsified but
-  undemonstrated and orthographically untestable** (ninth-century
-  ⟨ei⟩/⟨eg⟩ spell /Vj/ regardless of quantity: dei/deg controls).
+  record.~~ **Cycle-4 conclusion superseded by cycle 7:** the exclusion
+  of Model A based on categorical West Saxon vocalism was too strong.
+  The cycle-4 verdict "WS = Outcome C, manuscript-grounded" is retained
+  only as research history; the Eadwine ⟨hieg⟩ readings are now
+  manuscript-verified but remain dialectally and textually unassigned.
+  The dialect-differentiated alternative remains open for adjudication.
 - ~~Date of the *heiweg* charter.~~ **Qualified:** S 1196 is conventionally
   dated 859 (?859 in Lowe); its surviving single sheet is BL Cotton
   Augustus ii.16, s. ix med., and the witness list and possible later copy

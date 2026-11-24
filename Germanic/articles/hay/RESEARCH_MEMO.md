@@ -6,9 +6,11 @@ LITERATURE_MATRIX.md (A), CONCORDANCE.tsv (B), PARADIGM.md (C),
 QUANTITY_EVIDENCE.md (D), DERIVATIONS.md (E), DRAFT.md (F).
 
 **Status:** historical cycle-1 assessment, superseded where later evidence
-is cited. For current S 1196 dating/transmission, Farman counts, secure
-attestations and the three-way *heiweg* assessment, use
-`RESEARCH_MEMO_CYCLE5.md`.
+is cited. In particular, Paris Psalter *hege* establishes a late overtly
+inflected form, and Eadwine's two ⟨hieg⟩ readings are now manuscript-
+verified; neither result was available to this assessment. For current
+attestations, Farman counts, provenance, and source-access limits, use
+`RESEARCH_MEMO_CYCLE7.md` and the current-status section of `UNRESOLVED.md`.
 
 ## Findings supporting the starting thesis (early apocope, no analogy)
 

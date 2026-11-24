@@ -35,7 +35,16 @@ PANEL = (
         "long-V+palatal-glide",
         "stīg",
         {"stīg", "stīge", "stīges", "stīgas"},
-        "Long-vowel path noun; only two tokens occur in the bounded text.",
+        "Long-vowel path noun; two following-vowel forms, verified in Tamoto pp. 8 and 104.",
+    ),
+    (
+        "long-V+palatal-glide",
+        "stīgan",
+        {
+            "astig", "astigæ", "astigen", "astigende", "astigest",
+            "niþer-stigendne", "niþer-stigendum", "stigende",
+        },
+        "Long-ī verb forms with final g or g before a front-vowel ending; 12 tokens, one related lexical type, no monosyllabic word-form.",
     ),
     (
         "short-HL",
@@ -86,10 +95,10 @@ AUDIT_ONLY = (
         "Inflected day-forms with different syllable structures; excluded from the matched monosyllabic panel.",
     ),
     (
-        "stīg-verb-homographs",
+        "long-V+back-vowel-g-verb-exclusions",
         "stīgan",
-        {"stigað", "stigende"},
-        "Verb forms, not tokens of the long-vowel path noun stīg; excluded.",
+        {"astigan", "astigað", "stigað"},
+        "Infinitive and finite forms with g before a back-vowel ending; excluded from the palatal-glide panel.",
     ),
 )
 
@@ -141,6 +150,38 @@ FORM_METADATA = {
     ("long-V+palatal-glide", "stīg", "stige"): (
         "following vowel graph",
         "Alternative gloss beside gongas; case and number are not secure.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "astig"): (
+        "closed stressed root syllable in a prefixed form",
+        "Mt 27:40 imperative singular; Latin descende nunc de cruce. The word is prefixed and disyllabic; final g follows the independently long-ī root.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "astigæ"): (
+        "multisyllabic",
+        "Mt 27:42 subjunctive singular; Latin descendat nunc de cruce.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "astigen"): (
+        "multisyllabic",
+        "Past participle after wæs; the root vowel is independently long.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "astigende"): (
+        "multisyllabic",
+        "Present participle; five tokens in the bounded corpus.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "astigest"): (
+        "multisyllabic",
+        "Finite second-person form; the root vowel is independently long.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "niþer-stigendne"): (
+        "multisyllabic",
+        "Inflected present participle; Latin discendentem.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "niþer-stigendum"): (
+        "multisyllabic",
+        "Inflected present participle; Latin descendentibus.",
+    ),
+    ("long-V+palatal-glide", "stīgan", "stigende"): (
+        "multisyllabic",
+        "Present participle in the Mark 1:10 context.",
     ),
     ("short-HL", "gangan", "gangan"): (
         "multisyllabic",
@@ -498,6 +539,7 @@ def main():
                 )
                 if structure in {
                     "closed monosyllable",
+                    "closed stressed root syllable in a prefixed form",
                     "following vowel graph",
                     "multisyllabic",
                 }:

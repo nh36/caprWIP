@@ -1,5 +1,12 @@
 # Adversarial review of research cycle 1 (research cycle 2)
 
+> **Cycle 7 status:** This file preserves earlier adversarial conclusions;
+> its categorical statements about Model A and a shared long-vowel
+> prediction are not current. Eadwine's ⟨hieg⟩ readings are now
+> manuscript-verified but remain dialectally and textually unassigned.
+> Read `QUANTITY_EVIDENCE.md` and `RESEARCH_MEMO_CYCLE7.md` for the
+> current, non-adjudicative status.
+
 Method: each principal cycle-1 claim is attacked with the new evidence
 of this cycle (verified Lindisfarne/Rushworth tokens, the full
 reconstruction of Dahl's analysis, the comparative-controls study) and
@@ -45,24 +52,25 @@ contradicted; the donor's early availability remains unestablished.**
   practice, but it is small and selected; the manuscript acutes remain
   unverified directly. They are suggestive witness-specific evidence,
   not decisive evidence for earlier quantity. (ii)
-  *Reconstructive evidence is not zero evidence*: the long nucleus
-  follows from independently established sound laws on **all three**
-  live derivations (geminate resolution, levelling before umlaut,
-  Dahl's diphthong) — every viable route yields a long nucleus. What is
-  missing is evidence independent of *any* derivation, not evidence
-  independent of the *geminate* derivation specifically. The cycle-1
-  wording tied quantity to the geminate route alone; that was too
-  narrow.
+  *Reconstructive evidence is not zero evidence*, but the earlier claim
+  that every viable route yields a long nucleus is withdrawn. B2, A2,
+  and Dahl's diphthongal parse each make a long-vowel prediction under
+  their own assumptions; the regular direct outcome under A0/A1 remains
+  unresolved. Because the Eadwine readings are not assigned to a dialect
+  and the applicability of West Saxon ⟨ie⟩ developments is open, they do
+  not categorically exclude Model A.
 
 ## Claim C — "West Saxon *hīeġ* requires the geminate-shaped stem"
 
-**Assessment: Confirmed only in a narrower sense.**
+**Current status: conditional; the former categorical exclusion of Model
+A is superseded.**
 
-- What survives: WS ⟨ie/i/y⟩ requires an ēa-type diphthongal nucleus
-  feeding i-umlaut, and that nucleus is **unreachable from the
-  consonantal-w direct forms \*hæwi/\*hewi** by any independently
-  supported change (the A0/A1 negative findings stand; Hogg's hiatus
-  resolution yields *hē*; resyllabification yields non-WS shapes).
+- Conditional point: if a particular ⟨hieg⟩ witness is established as
+  West Saxon and its ⟨ie⟩ is shown to result from a specific historical
+  source, that source may constrain the input. The two Eadwine readings
+  are now manuscript-verified, but neither their dialect nor the
+  applicable source is established. The earlier conclusion that A0/A1
+  categorically fails against the attested record does not follow.
 - What falls: the equation of "diphthongal nucleus" with "historically
   geminated stem". Dahl's derivation (DAHL_REASSESSMENT.md) produces
   the same nucleus with gemination never applying, via the regular
@@ -70,28 +78,25 @@ contradicted; the donor's early availability remains unestablished.**
   own "reversible gemination" (p. 53) shows even the geminate route
   passes through \*auj — from which point all accounts are
   observationally identical in English.
-- Revised claim: *WS vocalism excludes an ungeminated consonantal-w
-  source for the direct cell; it does not discriminate geminated,
-  levelled, or diphthongal-inherited origins of the ēa-type stem.*
+- Revised claim: the relationship between ⟨hieg⟩ and West Saxon
+  vocalism, and the regular direct development under Model A, remain
+  questions for the next adjudication. This source-preparation cycle
+  does not choose among them.
 
 ## Claim D — "No regular phonological chain produces WS *hīeġ* from the inherited early-apocope direct form"
 
-**Assessment: Confirmed, with its scope made precise.**
+**Current status: historical claim, conditional and not adjudicated.**
 
-- As a claim about the early-apocope **consonantal-w** direct form
-  (\*hawi > \*hæwi > \*hewi), it stands: the reachable regular endpoints
-  remain *hē* (hiatus resolution, vocalism wrong for WS, final
-  consonant lost) and *hei/hej* (A0/resyllabification, vocalism wrong
-  for WS). Failure to derive the vocalism and failure to derive the
-  final consonant are distinct failures, and the early-apocope form
-  fails on both for WS.
-- The precision now required: the claim excludes *that starting point*,
-  not every non-geminate history. Dahl's starting point (\*hauja̯ with
-  a diphthong) is a different inherited representation, and from it a
-  regular chain to the WS **vocalism** does exist — though not to the
-  final -ġ, which even Dahl takes from the paradigm. No account on the
-  table derives the complete attested WS form without either gemination
-  or one analogical step.
+- The previous A0/A1 negative result assumed that the relevant
+  ⟨hieg⟩ was West Saxon and that the cited hiatus and resyllabification
+  analyses exhaust the possible developments. Neither assumption is
+  established by the current word attestations. Hogg and Campbell
+  document multiple sources of ⟨ie⟩ and distinct dialectal conditions;
+  whether any applies here requires a separate historical argument.
+- The claim that Model A fails for the actual ⟨hieg⟩ observations is
+  therefore not established. The regular outcome of the inherited direct
+  form, including its quantity and the relevance of hiatus resolution,
+  remains open.
 
 ## Claim E — "The competing reconstructions are evidentially symmetrical"
 

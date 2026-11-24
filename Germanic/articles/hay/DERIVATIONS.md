@@ -117,14 +117,17 @@ to /çewi/ or /çei/, and be chronologically possible):
   alternative outcome; the parallel is itself contested and cannot anchor
   an independent rule.
 
-### A1 conclusion
+### A1 conclusion — conditional, not a current adjudication
 
-**No independently supported chain takes the early-apocope direct form to
-the attested WS *hīeġ*.** The reachable regular endpoints are *hē* (A1-i)
-or *hei/hej* (A0/A1-ii), both of which still require the inflected stem to
-supply the written -ġ (and, for WS, the entire īe vocalism). A rule
-inventing /e/ → /iːe/ lengthening before /j/ would be hay-only and is
-rejected. This is a negative result, reported as such.
+Under the assumptions previously used, the modeled A0/A1 chains do not
+produce the normalized West Saxon *hīeġ*: their endpoints are *hē* or
+*hei/hej*, and the final -ġ remains unexplained. This does not now
+categorically exclude Model A from the attested record. The two
+manuscript ⟨hieg⟩ readings are in Eadwine, whose dialect and exemplar
+language are unassigned, and the applicability of the several documented
+West Saxon ⟨ie⟩ developments to this lexeme has not been established.
+The regular development and quantity of the inherited direct form, and
+whether hiatus resolution applies, remain for historical adjudication.
 
 ## A2 — Early apocope + paradigmatic levelling (Ringe–Taylor's actual account)
 
@@ -134,8 +137,9 @@ rejected. This is a negative result, reported as such.
 - Chronology: replacement must precede i-umlaut to feed WS īe; R&T's ">—"
   sits exactly there (pp. 173, 246).
 - Donor status: gen./dat./pl. *hīeġes/hīeġe/hīeġ* are regular **in the
-  model** and supported comparatively (OHG *houwi* with levelled geminate
-  beside *hewi*). **Cycle-3 revision: the dative cell is now attested** —
+  model**. OHG *hewi/houwi* is an attested doublet, but the identification
+  of *houwi* as a levelled geminate stem beside inherited *hewi* is
+  chronology-dependent. **Cycle-3 revision: the dative cell is now attested** —
   Paris Psalter *hege* ×3 (101.4, 101.9, 102.14; ids 33–35,
   manuscript-verified) shows stem + -e, exactly the oblique shape the
   levelled paradigm predicts. But the attestation is eleventh-century,
@@ -147,16 +151,17 @@ rejected. This is a negative result, reported as such.
   remains unattested at any date.
 - Typological support: Hogg 1979's hyll/hyse evidence shows such mixed
   paradigms existed and levelled in both directions; Adamczyk 2018's
-  *mete/mette* alternations likewise. **Cycle 4 adds the strongest
-  parallel, from this very word**: Middle Dutch **hoye** < \*hauj-
-  (oblique stem) beside **houwe** < \*hawi (old nominative stem)
-  (Boutkan 1995: 212–213, after van Loon 1986: 48 and Braune–Eggers), and
-  OHG *hewi* ~ *houwi* doublets — nominative and oblique stems of 'hay'
-  demonstrably yielded doublet reflexes and levelled in both directions
-  within West Germanic. Levelling is therefore possible, not obligatory;
-  but for WS the levelling is not merely assumed: **under early apocope
-  the WS īe-vocalism itself demonstrates that the protected stem stood in
-  the direct cell** (RESEARCH_MEMO_CYCLE4.md Prop. 3).
+  *mete/mette* alternations likewise. Middle Dutch **hoye/houwe** and
+  OHG *hewi/houwi* are attested doublets. Boutkan assigns the Middle
+  Dutch forms to oblique and old nominative stems (1995: 212–213, after
+  van Loon 1986: 48 and Braune–Eggers), but those stem identities and
+  directions of levelling are historical analyses, not entailed by the
+  forms. The doublets establish comparative variation; they do not
+  independently prove levelling in either direction. Levelling is
+  typologically possible, not obligatory. The former claim that WS
+  ⟨ie⟩ itself demonstrates pre-umlaut levelling is superseded; its
+  application depends on the still-unresolved dialect and source of the
+  Eadwine readings.
 - Predictions: after levelling, identical to B2 in every dialect and cell —
   **A2 and B2 are empirically indistinguishable for this word** except for
   the possibility of unlevelled relic spellings (heg/hei-?) which are
