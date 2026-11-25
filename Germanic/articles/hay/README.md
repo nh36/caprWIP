@@ -10,11 +10,13 @@ grounds for protected vocalism under early apocope.
 
 ## Entry points
 
-1. [`ARGUMENT_CYCLE12.md`](ARGUMENT_CYCLE12.md) gives the evidence,
-   component arguments, competing histories and adversarial review.
-   [`OUTLINE_CYCLE12.md`](OUTLINE_CYCLE12.md) maps them to the article.
-   [`RESEARCH_MEMO_CYCLE12.md`](RESEARCH_MEMO_CYCLE12.md) records the
-   frozen traces, original-source verification, and bounded spelling search.
+1. [`ARGUMENT_CYCLE13.md`](ARGUMENT_CYCLE13.md) gives the current argument,
+   sensitivity analysis and adversarial review.
+   [`OUTLINE_CYCLE13.md`](OUTLINE_CYCLE13.md) maps them to the article.
+   [`RESEARCH_MEMO_CYCLE13.md`](RESEARCH_MEMO_CYCLE13.md) records the five
+   comparative analyses and the original Ball and Stiles evidence.
+   The [previous memo](RESEARCH_MEMO_CYCLE12.md) records the frozen
+   traces and bounded spelling search.
 2. [`DRAFT.md`](DRAFT.md) is the current, self-contained article.
    The built PDF is committed at [`hay-article.pdf`](hay-article.pdf).
 3. [`MORPHOLOGICAL_CONCORDANCE.tsv`](MORPHOLOGICAL_CONCORDANCE.tsv) records
@@ -27,7 +29,7 @@ grounds for protected vocalism under early apocope.
 
 ## Current assessments versus historical conclusions
 
-Use the Cycle 12 memo and the **Current status after Cycle 12** section at
+Use the Cycle 13 memo and the **Current status after Cycle 13** section at
 the top of [`UNRESOLVED.md`](UNRESOLVED.md) for present assessments.
 Earlier cycle memos (including `RESEARCH_MEMO_CYCLE8.md`, now flagged as
 superseded) preserve the research history; they are not current verdicts.

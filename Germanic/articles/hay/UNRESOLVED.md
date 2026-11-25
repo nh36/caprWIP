@@ -1,6 +1,25 @@
 # Hay research unresolved evidence
 
-## Current status after Cycle 12
+## Current status after Cycle 13
+
+- The principal result does not depend on regular final gliding:
+  contraction followed by glide restoration can preserve the
+  Anglian nucleus. Neither final hiatus resolution nor the
+  historical source of Anglian /j/ has been established.
+- Ball and Stiles's ‘meal’ and ‘fat’ comparison motivates considering
+  retention or outward levelling of direct vocalism, but does not
+  establish either for ‘hay’. Its written inflected variants have
+  no diagnostic counterpart in the recorded datives of ‘hay’.
+- Kentish ⟨hei⟩ remains a conditional exact match in letters;
+  *dei* controls a vowel plus glide, not the notation of hiatus.
+  Farman's evidence for length is local; West Saxon high vowels
+  remain positive evidence for protected vocalism under early loss.
+- The resulting asymmetry weakens a specific objection to early
+  apocope without choosing the West Germanic chronology.
+
+See `ARGUMENT_CYCLE13.md` and `RESEARCH_MEMO_CYCLE13.md`.
+
+## Assessment after Cycle 12
 
 - The frozen direct histories end in \*hei (/he.i/) and \*hīeġ
   (long nucleus plus /j/); neither should be assigned to an attestation
