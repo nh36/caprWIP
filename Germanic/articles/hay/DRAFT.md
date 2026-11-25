@@ -263,32 +263,36 @@ explain a reflex of *hēah-* before *w*.[^char-minor]
 
 [^char-minor]: An enclosure term is semantically possible but likewise has no demonstrated local ⟨hei-⟩ reflex [@Wager2017, pp. 169–174].
 
-<!-- pending:P-char-document -->
+<!-- P-char-document -->
 
-Cooper treats the word as ‘highway’ but excludes the charter from
-his comparative survey [@Cooper2003, p. 61 nn. 151, 155]. The abrupt
-change from Latin to English, unstable date, and poorly placed
-*communis via* clause affect the document under either etymology.
-*Communis via* is not a gloss on *heiweg*. The apparent chronological
-isolation of a ninth-century ‘highway’ is partly a consequence of
-assigning and then excluding this example; it disappears on the
-hay-road reading.
+Cooper excludes S 1196 from his survey of highway terminology
+[@Cooper2003, p. 61 nn. 151, 155]. The uncertain date of
+the transaction, the abrupt transition from Latin to English,
+and the position of the *communis via* clause are problems
+of date and transmission, whichever etymology is adopted.
+The Latin phrase is not a gloss on *heiweg*; nor does it
+settle how the two mentions of a king’s road are related.
+A different problem arises only if *heiweg* means ‘highway’:
+it would be an isolated ninth-century instance of that term
+in the material under comparison. On the ‘hay-road’ reading
+there is no such early attestation to explain. That removes
+the chronological difficulty for ‘highway’ terminology, not
+the irregularities of the document, and is not an independent
+reason to prefer ‘hay-road’.
 
-<!-- pending:P-char-verdict -->
+<!-- P-char-verdict -->
 
-The local association with meadows and the independently established
-Kentish use of ⟨ei⟩ in *dei* together make ‘hay-road’ the preferable
-reading. The two arguments are complementary: a route beside
-meadows could have several names, and a spelling can fit more
-than one etymology. It is the conjunction of the setting and
-the local written form, rather than either alone, that favours
-‘hay’. On that reading, the edition records the exact sequence
-⟨hei⟩ in a probable ninth-century hay stem. The letters match
-the segments of \emph{*he.i}, but *dei* independently supports
-their use for a vowel plus glide, not for disyllabic /e.i/.
-The comparison therefore gives the early prediction a written
-counterpart without identifying the syllabification of the
-composition form.
+‘Hay-road’ is preferable because it accounts both for the
+setting and for the written form. The meadows and the S 445
+comparison give a reason for naming the road after hay; the
+Kentish spelling convention and the predicted sequence
+\emph{*he.i} make ⟨hei⟩ intelligible for that word.
+‘Highway’ can account for the road’s significance, but still
+lacks a local parallel for the required reflex of *hēah-*.
+The edition therefore gives good reason to recognize ⟨hei⟩ in
+a ninth-century form of ‘hay’. Establishing the more likely
+lexeme, however, does not identify which historical stem
+supplied the first element.
 
 <!-- pending:P-char-compound -->
 
