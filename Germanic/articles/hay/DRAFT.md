@@ -360,20 +360,52 @@ grammatical function of the noun can be established.
 
 ## 2.2 Simplex forms
 
-<!-- pending:P-simplex-anchor -->
+<!-- P-simplex-anchor -->
 
-Table 2 gives the principal witnesses; Appendix A compares the Psalter
-spellings by locus. Dates refer to the surviving English writing,
-not necessarily the date of the book, translation or exemplar.
-The ninth-century Mercian Vespasian gloss has eleven instances of
-*heg* in the Psalms and one in the canticles, all endingless.
-Four are direct objects, including *forð gelædes heg neatum* (103:14)
-and *et all heg eorðan heara* (104:35). In the other Psalms the noun
-occurs in comparisons, as in *spe spe heg eorðan* (71:16). The Old
-English Bede independently has accusative *heg* in *on sumera heg ne
-māweþ* [@Stevenson1843VP; @Kuhn1965VP; @Miller1890, I, p. 28].
+What form did ‘hay’ have when used as a singular subject or direct
+object in its own right? The earliest secure direct objects occur
+in the ninth-century Mercian gloss of the Vespasian Psalter. It has
+eleven instances of endingless *heg* in the Psalms and one in the
+canticles. Four Psalm occurrences are secure direct objects
+(103:14, 104:35, 105:20, 146:8). In *forð gelædes heg neatum*
+‘brings forth hay for cattle’ (103:14), for example, *heg* is
+the thing brought forth [@Stevenson1843VP; @Kuhn1965VP]. The
+Old English Bede gives independent accusative evidence: in
+*on sumera heg ne māweþ* ‘does not mow hay in summer’, *heg*
+is the object of ‘mow’. This is the reading of Miller’s composite
+edition, not a reading independently checked across the surviving
+tenth-century copies [@Miller1890, I, p. 28].
 
-<!-- pending:P-simplex-distribution -->
+The late tenth-century Gospel glosses add evidence from both
+functions. At Mt 6:30 Aldred’s *gers ɫ heg* and Farman’s
+*londes hóeg* belong to the object of ‘clothe’. At Jn 6:10
+Aldred’s *gærs ɫ heig micil* is the subject of the existential
+clause; Owun has *heg ɫ gers micel* in the corresponding
+gloss [@Skeat1887, p. 59; @Tamoto2013, p. 19; @Skeat1878, p. 55].
+These syntactic contexts identify the direct function, not the
+ancestry of the stem or the sounds represented by its letters.
+The dates are those of the surviving English writing: the Latin
+manuscripts may be older than their glosses, while a copy may
+postdate the English translation or gloss it transmits. The
+date of copying does not by itself establish the age of the
+exemplar.[^simplex-case]
+
+[^simplex-case]: Neither Aldred’s *ofer heg* nor Farman’s *on hóeg* at Mt 14:19 has distinctive case marking [@Skeat1887, p. 123; @Tamoto2013, p. 47]. A positional reading of *gesittan on hóeg* favours the dative; taking the hay as the goal of sitting down permits an accusative. Position does not require the dative after *ofer*: CCCC 140, Mk 6:39, has accusative agreement in *sæte ofer þæt grene hig* despite the seated posture [@Skeat1871, pp. 48–49]. In Vespasian Hymn 7:4, snow falls *ofer heg* in a comparison with rain falling *ofer græs*: motion favours the accusative, but the English does not determine it. Nor does *swa swa* assign case: in withering similes such as *spe spe heg eorðan* (Ps 71:16), an elliptical comparison with the subject is plausible, but there is no separate subject agreement with the noun [@Stevenson1843VP; @Kuhn1965VP]. The corresponding Latin cases do not resolve these English ambiguities.
+
+<!-- P-simplex-distribution -->
+
+The early Anglian witnesses give mid-vowel spellings: Vespasian
+*heg* and the Northumbrian *heg* and *heig* of Aldred and Owun.
+Farman’s *hóeg* belongs to his own Mercian Matthew gloss; its
+acute is evidence to be assessed for that witness, not a mark
+carried by the unaccented spellings. The Lindisfarne *hehg*
+and corrected *heg* at Mt 14:19 are known from the printed
+editions and apparatus, not from inspection of the manuscript
+alteration, and are readings of a single occurrence.[^simplex-editions]
+Owun’s *heg* is separately written, but his John gloss and
+Aldred’s transmit closely related material; copying directly
+from the surviving Lindisfarne manuscript is not established
+[@Kotake2016, pp. 377–396].
 
 | English witness and date | Spelling | Locus and source |
 |-------------------------------|--------------|---------------------------------------------|
@@ -393,41 +425,23 @@ māweþ* [@Stevenson1843VP; @Kuhn1965VP; @Miller1890, I, p. 28].
 
 : Principal simplex witnesses. The superscript ² denotes the second half of a century.
 
-Aldred’s *gers ɫ heg* (Mt 6:30) is part of the object of ‘clothe’;
-Farman’s *londes hóeg* has the same function in his separate Matthew
-gloss. In Mt 14:19 Kemble and Hardwick print Aldred’s *hehg*; Skeat
-prints *heg* and reports the alteration from *hehg* in his apparatus.
-These are edition and apparatus readings, not two tokens or direct
-inspection of the alteration. In Jn 6:10 *gærs ɫ heig micil* is the
-subject of the existential clause. Owun’s *heg ɫ gers micel* in the
-corresponding passage is a separate written occurrence in a closely
-related Northumbrian tradition; direct copying from the extant
-Lindisfarne manuscript is not established [@KembleHardwick1858,
-pp. 55, 117; @Skeat1887, pp. 59, 123; @Skeat1878, p. 55;
-@Kotake2016, pp. 377–396].
+The West Saxon evidence instead includes high-vowel spellings:
+*hig* in the West Saxon Gospels (Mk 6:39) and *hyg* in the
+Lambeth gloss (e.g. Ps 101:5) [@Skeat1871, pp. 48–49;
+@Lindeloef1909, p. 158]. These spellings pose a different
+problem of vowel quality, not a contrast in measured length.
+Table 2 gives the principal witnesses and Appendix A compares
+the Psalter glosses by locus. Later witnesses do not sort into
+two uniform groups: the metrical Paris Psalter has both mid-
+and high-vowel spellings, and manuscripts of the *Dialogues*
+vary in spelling and sometimes in the word used. Neither the
+provenance of a manuscript nor the origin of its scribe by itself
+assigns a dialect to the transmitted reading. Nor does recurrence
+in related copies or glosses count as independent evidence of the
+same development: the Junius Psalter gloss, for instance, is
+textually related to Vespasian’s.
 
-Neither *ofer heg* in Aldred nor *on hóeg* in Farman at Mt 14:19
-has distinctive case marking. A positional interpretation of
-*gesittan on hóeg* favours the dative; taking the hay as the goal
-of sitting down permits an accusative. Position does not require
-the dative after *ofer*: in CCCC 140, Mk 6:39 *sæte ofer þæt grene
-hig* has accusative agreement despite the seated posture. Vespasian
-Hymn 7:4 compares snow falling *ofer heg* with rain *ofer græs*.
-The motion construal favours the accusative, but the English comparison
-does not independently determine it. Nor does *swa swa* assign case:
-in the withering similes an elliptic comparison with the subject is
-plausible, but there is no separate subject agreement with the noun.
-The corresponding Latin case does not resolve these English ambiguities.
-
-The Lambeth Psalter prints *hyg* at both 101:5 and 101:12
-(ff. 124v–125r), including the former locus sometimes cited as
-*hig* [@Lindeloef1909, pp. 158–159]. In *Dialogues* the late West
-Saxon witness C has *heig* or *hig* where O can write *heg* and
-H can substitute *gærs*. The witnesses thus vary both in spelling
-and in lexical choice. The Cleopatra glossaries have two different
-entries, *Foenum, heg* and *Fenum, græs, oððe hig*; the latter
-is not the Julius glossary’s *Foenum, hig, oððe gærs*
-[@Hecht1900, pp. 36–37; @WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36].
+[^simplex-editions]: At Mt 14:19 Kemble and Hardwick print *ofer hehg ɫ gers*; Skeat prints *heg* and reports alteration from *hehg* in the apparatus [@KembleHardwick1858, pp. 55, 117; @Skeat1887, pp. 59, 123]. The printed pages were checked; usable manuscript images of the target Gospel loci were not examined. Lindelöf prints Lambeth *hyg* at both 101:5 and 101:12 (ff. 124v–125r), including the former locus sometimes cited as *hig* [@Lindeloef1909, pp. 158–159]. In the *Dialogues* the late West Saxon witness C has *heig* or *hig* where O can write *heg* and H can substitute *gærs* [@Hecht1900, pp. 36–37]. The Cleopatra entries *Foenum, heg* and *Fenum, græs, oððe hig* are distinct; the latter is not Julius’s *Foenum, hig, oððe gærs* [@WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36].
 
 <!-- pending:P-simplex-eadwine -->
 
