@@ -18,8 +18,9 @@ DRAFT = "DRAFT.md"
 IMPLEMENTED = {
     "R1": ("## 1.1 The chronological test", "## 1.2 The two regular derivations"),
     "R2": ("## 1.2 The two regular derivations", "# 2. The Old English attestations"),
+    "R3": ("## 2.1 *Cyniges heiweg*", "## 2.2 Simplex forms"),
 }
-ANCHOR = re.compile(r"^<!-- (P-[a-z-]+) -->$", re.MULTILINE)
+ANCHOR = re.compile(r"^<!-- (pending:)?(P-[a-z-]+) -->$", re.MULTILINE)
 
 
 def rows(text, pattern, width):
@@ -162,29 +163,59 @@ def section_bounds(text, start, end):
     return a.start(), b.start()
 
 
-def check_article(text, paragraphs, baseline=None):
+def without_scope(text, scope, paragraphs):
+    ranges = []
+    for block, boundaries in IMPLEMENTED.items():
+        start, end = section_bounds(text, *boundaries)
+        if block in scope:
+            ranges.append((start, end))
+            continue
+        begin = text.index("\n", start) + 1
+        anchors = list(ANCHOR.finditer(text, begin, end))
+        for i, anchor in enumerate(anchors):
+            key = anchor[2]
+            if key in scope:
+                if key not in paragraphs or paragraphs[key][0] != block:
+                    raise ValueError(f"{DRAFT}: {key} outside its planned block")
+                ranges.append((anchor.start(), anchors[i + 1].start()
+                               if i + 1 < len(anchors) else end))
+    for start, end in sorted(ranges, reverse=True):
+        text = text[:start] + text[end:]
+    return text
+
+
+def check_article(text, paragraphs, baseline=None, scope=(), complete=()):
     expected = []
+    pending = []
     for block, boundaries in IMPLEMENTED.items():
         start, end = section_bounds(text, *boundaries)
         planned = [key for key, cells in paragraphs.items() if cells[0] == block]
         found = ANCHOR.findall(text[start:end])
-        if found != planned:
+        if [key for _, key in found] != planned:
             raise ValueError(f"{DRAFT}: {block} anchors {found}; expected {planned}")
-        expected.extend(planned)
+        states = [key for status, key in found if status]
+        if states:
+            if block != "R3" or block in complete or states != planned[-len(states):]:
+                raise ValueError(f"{DRAFT}: unexpected pending units in {block}: {states}")
+            pending.extend(states)
+        expected.extend(found)
     if ANCHOR.findall(text) != expected:
         raise ValueError(f"{DRAFT}: anchor outside implemented scope")
     if baseline is not None:
-        bounds = ("# 1. Introduction", IMPLEMENTED["R2"][1])
-        a, b = section_bounds(text, *bounds)
-        c, d = section_bounds(baseline, *bounds)
-        if text[:a] != baseline[:c] or text[b:] != baseline[d:]:
-            raise ValueError(f"{DRAFT}: content changed outside R1–R2")
+        for key in scope:
+            if key not in IMPLEMENTED and key not in paragraphs:
+                raise ValueError(f"{DRAFT}: unknown scope {key}")
+            block = key if key in IMPLEMENTED else paragraphs[key][0]
+            if block not in IMPLEMENTED:
+                raise ValueError(f"{DRAFT}: no source boundaries for {key}")
+        if without_scope(text, scope, paragraphs) != without_scope(baseline, scope, paragraphs):
+            raise ValueError(f"{DRAFT}: content changed outside authorized scope")
         table = r"^\| Change and environment \|[^\n]+\n(?:^\|[^\n]+\n)+"
-        old = re.search(table, baseline[c:d], re.MULTILINE)
-        new = re.search(table, text[a:b], re.MULTILINE)
+        old = re.search(table, baseline, re.MULTILINE)
+        new = re.search(table, text, re.MULTILINE)
         if not old or not new or old[0] != new[0]:
             raise ValueError(f"{DRAFT}: frozen derivation table changed")
-    return len(expected)
+    return len(expected) - len(pending), pending
 
 
 def trace(key, claims, deps, blocks, paragraphs, apparatus, loci):
@@ -221,7 +252,11 @@ def trace(key, claims, deps, blocks, paragraphs, apparatus, loci):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--trace", metavar="ID", help="show immediate forward and reverse links")
-    parser.add_argument("--against", metavar="REV", help="verify R1–R2-only edits against REV")
+    parser.add_argument("--against", metavar="REV", help="verify protected source against REV")
+    parser.add_argument("--scope", action="append", default=[], metavar="ID",
+                        help="allow changes only to this block or unit (repeatable)")
+    parser.add_argument("--complete", action="append", default=[], choices=IMPLEMENTED,
+                        help="require an implemented block to have no pending units")
     args = parser.parse_args()
     try:
         model = load()
@@ -231,13 +266,16 @@ def main():
             baseline = subprocess.check_output(
                 ["git", "show", f"{args.against}:./{DRAFT}"], cwd=ROOT, encoding="utf-8"
             )
-        count = check_article((ROOT / DRAFT).read_text(encoding="utf-8"), paragraphs, baseline)
+        count, pending = check_article((ROOT / DRAFT).read_text(encoding="utf-8"),
+                                       paragraphs, baseline, args.scope, args.complete)
         if args.trace:
             trace(args.trace, *model)
         else:
             print(f"Valid: {len(claims)} historical IDs, {len(blocks)} rhetorical blocks, "
                   f"{len(paragraphs)} paragraphs, {len(apparatus)} apparatus items, "
                   f"{count} implemented anchors.")
+            if pending:
+                print(f"Pending: {', '.join(pending)}.")
             if baseline is not None:
                 print("Protected prose and the frozen derivation table are unchanged.")
     except (OSError, ValueError, subprocess.CalledProcessError) as error:

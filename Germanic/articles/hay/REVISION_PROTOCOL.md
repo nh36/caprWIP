@@ -19,12 +19,23 @@ live references together.
 | Stylistic defect | Change expression only. Preserve purpose, paragraph role, factual claims, warrant, citation, qualification, notation and argumentative order. Any evidence addition or deletion, or change in certainty, belongs in a different proposal. |
 | Publication fault | Correct notes, tables, references or typography, then rebuild and check affected material and layout. Do not re-adjudicate history to fix a publication error. |
 
+For each authorized editorial assignment, revise at most two substantive
+argumentative units per increment. Identify the units and their evidence
+and apparatus before writing. Read each revision in context, check the
+claims, citations and scope, and run structural and publication checks.
+Commit and push each completed increment before starting the next one.
+Record the parent, scope, resulting commit and PDF status. Keep mechanical
+relocations and corrections to completed units in separately scoped
+commits. Do not squash checkpoints or treat them as individual owner
+approval. Label a checkpoint without a matching PDF as source-only.
+
 Use `python3 Germanic/articles/hay/validate_exposition.py` for structural
-and implemented source-anchor checks. For the R1–R2 revision, add
-`--against 7c37478701b2b3e70f25d8a9a81316c370b3636e` to verify the exact
-unchanged text outside the authorized sections and frozen table cells.
-Use standalone `<!-- P-id -->` comments for new implemented units and
-extend the validator's section map when more blocks are authorized.
+and source-anchor checks. Add `--against <parent>` and a `--scope <ID>`
+for each authorized block or unit to verify protected source and frozen
+table cells. With no scope, the source must match exactly. Use standalone
+`<!-- P-id -->` comments for implemented units and `<!-- pending:P-id -->`
+for staged, unimplemented slots. Require `--complete R3` at R3 closeout;
+extend the section map when more blocks are authorized.
 `--trace C05` (or any proposition/paragraph/apparatus ID) lists
 forward and reverse relations. Required edges and alternative branches
 are distinct from supporting evidence: inspect the prose before
@@ -54,6 +65,7 @@ that repository, copy writings, or transform any published passage.
 | D-architecture | Approved in principle by owner in Cycle 15, with amendments | R0–R9 and paragraph plan; only R1–R2 authorized for implementation now. Include E32, preserve the primacy of the survival question, and give argumentative units nonprinting anchors. Later blocks require separate authorization. |
 | D-baseline | Accepted in Cycle 14 | Preserve `326fa7e6d6ceba85351249c22c2a464490e6b0e4` as editorial baseline. No historical adjudication, frozen model or scientific dependency change. |
 | D-introduction | Implemented against `7c37478701b2b3e70f25d8a9a81316c370b3636e` | R1: order → direct/protected trade-off → ‘hay’ predictions → E32 and the written record → survival and the fallback claim. R2: retain all frozen table cells; distinguish hiatus from dialectal endpoints and morphological replacement; move notation detail to N-trace-notation. Map E32 to future P-char-reading without changing its prose. Mark E33 and E34 jointly necessary for H2, not established or necessary for H1. Preserve all prose outside R1–R2 and defer Nathanification. |
+| D-charter | Authorized in Cycle 16 against `a81760edf7110b8ea6fde2e8568e6388f6fa49d3` | R1–R2 provisionally approved and protected. Move simplex behind charter without rewriting; consolidate the charter and composition passages, then implement the eight R3 units as four separately validated and pushed pairs. No new historical verdict. Each checkpoint records its parent and scope in its commit. |
 
 **Editorial review of D-introduction:** The direct geminate in ‘bed’
 now explains why analogy is at issue before any spellings of ‘hay’

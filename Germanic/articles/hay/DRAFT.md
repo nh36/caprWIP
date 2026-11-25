@@ -191,7 +191,155 @@ for what they establish about the vowel and the palatal.
 
 # 2. The Old English attestations
 
-## 2.1 Simplex forms
+## 2.1 *Cyniges heiweg*
+
+<!-- pending:P-char-reading -->
+
+In the Kentish sheet S 1196 (BL Cotton Augustus ii.16), Sweet
+prints *cyniges hei weg*, followed by *stret to scufelingforde*.
+The bounds mention the burg-dwellers’ meadows and later *an cyninges
+strete* [@Sweet1885, p. 450, Ct. 43].[^s1196] The division into
+*hei weg* is that of the edition; the sheet was not independently
+collated here.
+
+<!-- pending:P-char-positive -->
+
+Sweet lists the first member under ‘hay’. Bryan compares it with
+Germanic \emph{*hauja-} and distinguishes its reconstructed quantity from
+that of Kentish *dei* ‘day’.[^bryan] The latter comparison shows that
+⟨ei⟩ could write a vowel followed by a glide; the two letters do not
+encode Bryan’s quantity distinction. Dahl adopts ‘hay-road’ and
+includes the example alongside *Hegforde*, without a separate argument
+from the boundary clause [@Bryan1915, pp. 8, 23, 25;
+@Dahl1938, ‘hay’ discussion].[^dahl]
+
+Langlands’s comparison with S 445 adds a functional possibility:
+*higweges* occurs beside a meadow, and a route there is called
+Mower’s Lane on a much later map [@Langlands2019, pp. 45–46, 109, 126].
+The charter survives in a fifteenth-century copy, and neither
+it nor the map independently names the function of the S 1196
+route. The other potentially relevant *hig* or *heg* road names
+are later, survive in later copies, or have disputed interpretations.
+
+<!-- pending:P-char-rival -->
+
+In contrast, Bosworth–Toller
+files the compound under *hēah-weg*, with *hēah-strǣt* as a semantic
+parallel, and Clark Hall gives the tentative gloss ‘highway?’.
+Neither establishes a local correspondence between *hēah-* and
+⟨hei-⟩ [@BosworthToller1898, s.v. *hēah-weg*; @ClarkHall1960, p. 152].
+
+If the two mentions of
+the king’s road refer to the same route, *cyninges strete* supports
+the interpretation of a significant road without establishing that
+the first designation meant ‘high’.
+
+<!-- pending:P-char-phon -->
+
+An enclosure term is semantically possible but has no demonstrated
+local ⟨hei-⟩ reflex [@Wager2017, pp. 169–174]. A ‘high’ etymology
+requires evidence for the development of the fricative in *hēah*
+before *w*. The bounded charter comparison yielded no matched
+ninth-century Kentish example; that absence reduces the comparative
+support for ‘high’ but does not establish that the development was
+impossible.
+
+<!-- pending:P-char-document -->
+
+Cooper treats the word as ‘highway’ but excludes the charter from
+his comparative survey [@Cooper2003, p. 61 nn. 151, 155]. The abrupt
+change from Latin to English, unstable date, and poorly placed
+*communis via* clause affect the document under either etymology.
+*Communis via* is not a gloss on *heiweg*. The apparent chronological
+isolation of a ninth-century ‘highway’ is partly a consequence of
+assigning and then excluding this example; it disappears on the
+hay-road reading.
+
+<!-- pending:P-char-verdict -->
+
+The local association with meadows and the independently established
+Kentish use of ⟨ei⟩ in *dei* together make ‘hay-road’ the preferable
+reading. The two arguments are complementary: a route beside
+meadows could have several names, and a spelling can fit more
+than one etymology. It is the conjunction of the setting and
+the local written form, rather than either alone, that favours
+‘hay’. On that reading, the edition records the exact sequence
+⟨hei⟩ in a probable ninth-century hay stem. The letters match
+the segments of \emph{*he.i}, but *dei* independently supports
+their use for a vowel plus glide, not for disyllabic /e.i/.
+The comparison therefore gives the early prediction a written
+counterpart without identifying the syllabification of the
+composition form.
+
+<!-- pending:P-char-compound -->
+
+The protected-stem interpretation is also viable. A Kentish
+mid-vowel reflex of mutated \emph{*ēa} is independently supported by
+*ċēgan* ‘call’; a stem of that type with a final palatal would
+only need the spelling convention seen in *dei* to give ⟨hei⟩
+[@RingeTaylor2014, p. 246; @Bryan1915, pp. 23, 25].
+There is no independently long control in this local material
+that demonstrates ⟨ei⟩ for /eːj/, but there is no evidence that
+the spelling was restricted to a short vowel either. The early
+output thus has an exact written parallel without the spelling
+being its exclusive prediction. Whether an older first element
+could survive in composition after the simplex was remodelled
+is a morphological question, distinct from the correspondence
+itself (Section 2.1.1).
+
+### 2.1.1 Compound stems
+
+Glossarial *highus* and *heghus* render *faenile* and *fenile*
+‘hay store’ respectively [@WrightWuelcker1884, I, cols. 186.13,
+237.36]. Both are securely ‘hay’ compounds; neither has a visible
+connector. The written first members correspond to simplex *hig*
+and *heg*. Late Old English ja-stem compounds such as *bedtīd*,
+*hrycgmearh* and *cynlīc* also use a nominative-shaped first member
+[@Campbell1959, §§348–349 n. 3]. But *bedtīd* already contains the
+geminate stem represented by independent *bedd*. Such examples
+establish that a current direct-shaped stem can be used in composition;
+they do not establish that it was borrowed before morphological
+remodelling or that it preserves an ungeminated stage.
+
+Conversely, an inherited composition form need not have resembled the
+direct singular. Campbell lists connecting vowels in *endeleas*,
+*lǣcecræft* and *rīcedōm*, beside absence or late loss in other
+compounds [@Campbell1959, §359]. If a vowel once followed \emph{*j} within
+an inherited compound, it could protect the stem from the word-final
+development in \emph{*hawją}. Such a derivation requires independent
+evidence for the connector, the age of the formation and the history
+of its loss. No connector or otherwise diagnostic stem survives in
+*heiweg* or the hay-house forms. A lexicalized compound could
+retain an older direct-shaped first element after the free
+noun was remodelled, just as a new compound could be built
+on the generalized stem. The first scenario would make a
+Kentish reflex of \emph{*he.i} compatible with subsequent levelling
+in the simplex; the second could produce ⟨hei⟩ from a mid
+vowel plus glide. The written correspondence gives the first
+scenario a concrete historical form to explain. In the
+absence of a Kentish contrast between compound and free
+forms, it does not distinguish the scenarios.
+
+<!-- pending:P-char-close -->
+
+No additional early ⟨hei⟩ for ‘hay’ emerged from comparison of
+the *híg/hég* and road-name dictionary entries, the principal
+glossary loci, and the Kentish road comparanda
+[@BosworthToller1898, s.v. *hēah-weg*; @Toller1921, s.v. *híg*;
+@WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36, 547;
+@Cooper2003, p. 61]. Northern and other ⟨heig⟩ forms are
+potentially relevant to the same phonology, but are not exact
+written matches. The secure simplex is later. The thirteenth-century
+Worcester glossary F.174 has *Fenum, hei, uel græs*, where the older
+parallel in the Julius glossary has *hig*. Worcester also writes
+*wei* ‘way’ [@WrightWuelcker1884, I, cols. 325.21, 547]. Its
+spelling can therefore arise without preserving inherited hiatus:
+the later written match does not require continuity with the
+Kentish one. The later Middle English spelling variants are
+consistent with this interpretation but do not extend the
+Old English attestation [@MiddleEnglishDictionaryHei, s.v. *hei*].
+
+## 2.2 Simplex forms
 
 Table 2 gives the principal witnesses; Appendix A compares the Psalter
 spellings by locus. Dates refer to the surviving English writing,
@@ -272,102 +420,6 @@ which layer supplied Eadwine’s ⟨i⟩. The readings are neither evidence
 of a local twelfth-century Kentish pronunciation nor securely West
 Saxon. The usual citation form *hīeġ*, with its quantity and palatal
 marking, is a normalization.
-
-## 2.2 *Cyniges heiweg*
-
-In the Kentish sheet S 1196 (BL Cotton Augustus ii.16), Sweet
-prints *cyniges hei weg*, followed by *stret to scufelingforde*.
-The bounds mention the burg-dwellers’ meadows and later *an cyninges
-strete* [@Sweet1885, p. 450, Ct. 43].[^s1196] The division into
-*hei weg* is that of the edition; the sheet was not independently
-collated here.
-
-Sweet lists the first member under ‘hay’. Bryan compares it with
-Germanic \emph{*hauja-} and distinguishes its reconstructed quantity from
-that of Kentish *dei* ‘day’.[^bryan] The latter comparison shows that
-⟨ei⟩ could write a vowel followed by a glide; the two letters do not
-encode Bryan’s quantity distinction. Dahl adopts ‘hay-road’ and
-includes the example alongside *Hegforde*, without a separate argument
-from the boundary clause [@Bryan1915, pp. 8, 23, 25;
-@Dahl1938, ‘hay’ discussion].[^dahl] In contrast, Bosworth–Toller
-files the compound under *hēah-weg*, with *hēah-strǣt* as a semantic
-parallel, and Clark Hall gives the tentative gloss ‘highway?’.
-Neither establishes a local correspondence between *hēah-* and
-⟨hei-⟩ [@BosworthToller1898, s.v. *hēah-weg*; @ClarkHall1960, p. 152].
-
-Cooper treats the word as ‘highway’ but excludes the charter from
-his comparative survey [@Cooper2003, p. 61 nn. 151, 155]. The abrupt
-change from Latin to English, unstable date, and poorly placed
-*communis via* clause affect the document under either etymology.
-*Communis via* is not a gloss on *heiweg*. If the two mentions of
-the king’s road refer to the same route, *cyninges strete* supports
-the interpretation of a significant road without establishing that
-the first designation meant ‘high’. The apparent chronological
-isolation of a ninth-century ‘highway’ is partly a consequence of
-assigning and then excluding this example; it disappears on the
-hay-road reading.
-
-Langlands’s comparison with S 445 adds a functional possibility:
-*higweges* occurs beside a meadow, and a route there is called
-Mower’s Lane on a much later map [@Langlands2019, pp. 45–46, 109, 126].
-The charter survives in a fifteenth-century copy, and neither
-it nor the map independently names the function of the S 1196
-route. The other potentially relevant *hig* or *heg* road names
-are later, survive in later copies, or have disputed interpretations.
-An enclosure term is semantically possible but has no demonstrated
-local ⟨hei-⟩ reflex [@Wager2017, pp. 169–174]. A ‘high’ etymology
-requires evidence for the development of the fricative in *hēah*
-before *w*. The bounded charter comparison yielded no matched
-ninth-century Kentish example; that absence reduces the comparative
-support for ‘high’ but does not establish that the development was
-impossible.
-
-The local association with meadows and the independently established
-Kentish use of ⟨ei⟩ in *dei* together make ‘hay-road’ the preferable
-reading. The two arguments are complementary: a route beside
-meadows could have several names, and a spelling can fit more
-than one etymology. It is the conjunction of the setting and
-the local written form, rather than either alone, that favours
-‘hay’. On that reading, the edition records the exact sequence
-⟨hei⟩ in a probable ninth-century hay stem. The letters match
-the segments of \emph{*he.i}, but *dei* independently supports
-their use for a vowel plus glide, not for disyllabic /e.i/.
-The comparison therefore gives the early prediction a written
-counterpart without identifying the syllabification of the
-composition form.
-
-The protected-stem interpretation is also viable. A Kentish
-mid-vowel reflex of mutated \emph{*ēa} is independently supported by
-*ċēgan* ‘call’; a stem of that type with a final palatal would
-only need the spelling convention seen in *dei* to give ⟨hei⟩
-[@RingeTaylor2014, p. 246; @Bryan1915, pp. 23, 25].
-There is no independently long control in this local material
-that demonstrates ⟨ei⟩ for /eːj/, but there is no evidence that
-the spelling was restricted to a short vowel either. The early
-output thus has an exact written parallel without the spelling
-being its exclusive prediction. Whether an older first element
-could survive in composition after the simplex was remodelled
-is a morphological question, distinct from the correspondence
-itself (Section 4.3).
-
-## 2.3 Other exact spellings
-
-No additional early ⟨hei⟩ for ‘hay’ emerged from comparison of
-the *híg/hég* and road-name dictionary entries, the principal
-glossary loci, and the Kentish road comparanda
-[@BosworthToller1898, s.v. *hēah-weg*; @Toller1921, s.v. *híg*;
-@WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36, 547;
-@Cooper2003, p. 61]. Northern and other ⟨heig⟩ forms are
-potentially relevant to the same phonology, but are not exact
-written matches. The secure simplex is later. The thirteenth-century
-Worcester glossary F.174 has *Fenum, hei, uel græs*, where the older
-parallel in the Julius glossary has *hig*. Worcester also writes
-*wei* ‘way’ [@WrightWuelcker1884, I, cols. 325.21, 547]. Its
-spelling can therefore arise without preserving inherited hiatus:
-the later written match does not require continuity with the
-Kentish one. The later Middle English spelling variants are
-consistent with this interpretation but do not extend the
-Old English attestation [@MiddleEnglishDictionaryHei, s.v. *hei*].
 
 # 3. Historical phonology
 
@@ -727,40 +779,7 @@ vowels and its subsequent extension to the direct singular
 provides a precedent for separating the two, not a direct
 derivation of /j/ from short /e.i/ [@Wright1914, §§270, 357].
 
-## 4.3 Compound stems
-
-Glossarial *highus* and *heghus* render *faenile* and *fenile*
-‘hay store’ respectively [@WrightWuelcker1884, I, cols. 186.13,
-237.36]. Both are securely ‘hay’ compounds; neither has a visible
-connector. The written first members correspond to simplex *hig*
-and *heg*. Late Old English ja-stem compounds such as *bedtīd*,
-*hrycgmearh* and *cynlīc* also use a nominative-shaped first member
-[@Campbell1959, §§348–349 n. 3]. But *bedtīd* already contains the
-geminate stem represented by independent *bedd*. Such examples
-establish that a current direct-shaped stem can be used in composition;
-they do not establish that it was borrowed before morphological
-remodelling or that it preserves an ungeminated stage.
-
-Conversely, an inherited composition form need not have resembled the
-direct singular. Campbell lists connecting vowels in *endeleas*,
-*lǣcecræft* and *rīcedōm*, beside absence or late loss in other
-compounds [@Campbell1959, §359]. If a vowel once followed \emph{*j} within
-an inherited compound, it could protect the stem from the word-final
-development in \emph{*hawją}. Such a derivation requires independent
-evidence for the connector, the age of the formation and the history
-of its loss. No connector or otherwise diagnostic stem survives in
-*heiweg* or the hay-house forms. A lexicalized compound could
-retain an older direct-shaped first element after the free
-noun was remodelled, just as a new compound could be built
-on the generalized stem. The first scenario would make a
-Kentish reflex of \emph{*he.i} compatible with subsequent levelling
-in the simplex; the second could produce ⟨hei⟩ from a mid
-vowel plus glide. The written correspondence gives the first
-scenario a concrete historical form to explain. In the
-absence of a Kentish contrast between compound and free
-forms, it does not distinguish the scenarios.
-
-## 4.4 ‘Glee’ and the continental comparisons
+## 4.3 ‘Glee’ and the continental comparisons
 
 The light neuter ‘glee’ provides two different comparisons.
 Ringe and Taylor’s inherited direct \emph{*gliwi} loses \emph{*w} and
