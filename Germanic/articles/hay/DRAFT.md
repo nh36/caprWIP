@@ -443,22 +443,32 @@ textually related to Vespasian’s.
 
 [^simplex-editions]: At Mt 14:19 Kemble and Hardwick print *ofer hehg ɫ gers*; Skeat prints *heg* and reports alteration from *hehg* in the apparatus [@KembleHardwick1858, pp. 55, 117; @Skeat1887, pp. 59, 123]. The printed pages were checked; usable manuscript images of the target Gospel loci were not examined. Lindelöf prints Lambeth *hyg* at both 101:5 and 101:12 (ff. 124v–125r), including the former locus sometimes cited as *hig* [@Lindeloef1909, pp. 158–159]. In the *Dialogues* the late West Saxon witness C has *heig* or *hig* where O can write *heg* and H can substitute *gærs* [@Hecht1900, pp. 36–37]. The Cleopatra entries *Foenum, heg* and *Fenum, græs, oððe hig* are distinct; the latter is not Julius’s *Foenum, hig, oððe gærs* [@WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36].
 
-<!-- pending:P-simplex-eadwine -->
+<!-- P-simplex-eadwine -->
 
-The two ⟨hieg⟩ tokens in the Eadwine Psalter were checked in the
-Romanum column: [fol. 125r](https://mss-cat.trin.cam.ac.uk:8183/iiif/2/R.17.1%2F251_R.17.1_f125r.jp2/full/1200,/0/default.jpg),
-at *sicut fenum terrae*, and
-[fol. 258r](https://mss-cat.trin.cam.ac.uk:8183/iiif/2/R.17.1%2F517_R.17.1_f258r.jp2/full/2400,/0/default.jpg),
-at *qui producit in montibus foenam*. Neither token has a visible acute
-or correction. The second falls in the stint attributed to OE3;
-the first hand is not securely identified. Most of the English gloss
-was copied from older material and was selectively modernized at
-Canterbury in the 1150s [@Faulkner2017]. Other Psalters render the
-same Latin noun with *heg*, *heig*, and *hyg*; they do not establish
-which layer supplied Eadwine’s ⟨i⟩. The readings are neither evidence
-of a local twelfth-century Kentish pronunciation nor securely West
-Saxon. The usual citation form *hīeġ*, with its quantity and palatal
-marking, is a normalization.
+The conventional West Saxon citation form *hīeġ* is not a
+transcription of the observed high-vowel spellings ⟨hig⟩ and
+⟨hyg⟩. Its ⟨ie⟩, macron and dotted *ġ* should not be taken as
+evidence that an early West Saxon manuscript records that
+spelling, quantity and consonant value. The Eadwine Psalter
+does record ⟨hieg⟩ twice, at Pss 71:16 and 146:8 in the
+*Romanum* column. Both readings are visible in the manuscript
+and printed by Harsley [@Harsley1889, pp. 124, 241].[^simplex-eadwine]
+What is uncertain is not the reading but its place in the
+transmission. The gloss in this twelfth-century Canterbury
+manuscript was largely copied from older material and
+selectively modernized [@Faulkner2017]. Neither token can be
+assigned securely to an early West Saxon textual layer or
+taken as a record of local twelfth-century Kentish pronunciation.
+
+The early Anglian mid-vowel spellings and the West Saxon
+high-vowel spellings thus pose distinct historical problems.
+Neither the manuscript spellings nor their normalization
+settles how the inherited direct stem developed. Under early
+apocope the next question is what regular developments were
+available to the direct stem, particularly once loss of
+\emph{*w} brought its vowels into hiatus.
+
+[^simplex-eadwine]: Trinity College Cambridge MS R.17.1, [fol. 125r](https://mss-cat.trin.cam.ac.uk:8183/iiif/2/R.17.1%2F251_R.17.1_f125r.jp2/full/1200,/0/default.jpg), has ⟨hieg⟩ at *sicut fenum terrae*; [fol. 258r](https://mss-cat.trin.cam.ac.uk:8183/iiif/2/R.17.1%2F517_R.17.1_f258r.jp2/full/2400,/0/default.jpg) has ⟨hieg⟩ at *qui producit in montibus foenam*. Neither has a visible acute or correction. The second falls in the stint attributed to OE3; the first hand is not securely identified. The largely A-type gloss was copied at Canterbury in the 1150s; neither its textual affiliation nor the scribal attribution tells us whether these spellings were already in the exemplar [@Faulkner2017]. Other Psalters render the same Latin noun as *heg*, *heig* or *hyg* (Appendix A); they do not identify which layer supplied Eadwine’s ⟨i⟩.
 
 # 3. Historical phonology
 
