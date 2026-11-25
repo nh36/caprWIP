@@ -69,3 +69,65 @@ whose target environment remains uncertain and a plausible source of
 the glide; ‘glee’ does not independently prove its application.
 The defensible conclusion is nonnecessity of importing Anglian
 vocalism, not historical preference for a uniquely recovered form.
+
+## Evidence split for editorial traceability
+
+These are source pointers for already assessed material, not new findings.
+
+| ID | Proposition, basis and status | Assumption, counterevidence and consequence of rejection |
+|---|---|---|
+| E26 | The S 1196 bounds mention meadows and another king's road; a common route is possible. Langlands's S 445 example connects *higweges* with a meadow, and a much later map uses Mower's Lane. **Edition and reported comparative setting** (Sweet 1885: 450; Langlands 2019: 45–46, 109, 126). | S 445 survives in late copy; neither landscape nor road status uniquely identifies a lexeme. Losing the comparison weakens the functional case, not E06. |
+| E27 | ‘Highway’ has dictionary and contextual support; deriving ⟨hei-⟩ from *hēah-* before *w* lacks a matched contemporary Kentish comparator in the bounded review. **Competing lexical analysis and scoped negative** (Bosworth–Toller s.v. *hēah-weg*; Clark Hall 1960: 152; [charter comparison](COOPER_CHARTER_CORPUS.tsv)). | Missing comparator is not refutation. A secure matched reflex weakens the relative phonological advantage in E07; *communis via* is not a gloss. |
+| E28 | Cooper excludes S 1196 from his survey: transmission/date/Latin–English transition and the position of *communis via* matter under either etymology; the isolated early date of ‘highway’ depends on that lexical assignment. **Source-critical distinction** (Cooper 2003: 61 nn. 151, 155; Lowe 2001: 76–78, 85–86). | Sheet date, text-layer date and transaction date are not interchangeable. Rejecting ‘highway’ removes the lexical anomaly, not documentary concerns. |
+| E29 | Manuscript, edition/apparatus and indexed witnesses must be distinguished. See [simplex concordance](CONCORDANCE.tsv), [Lindisfarne dossier](LINDISFARNE_EVIDENCE.md) and [baseline draft](DRAFT.md) §2.1 / App. A. **Witness-specific records.** | Related glosses and corrections are not independent phonological witnesses; damage and editorial supply restrict the evidential set. A changed reading changes the relevant witness and its dependent dialect, quantity or case inference. |
+| E30 | Dahl's alternative makes the pre-*j* material diphthongal and still restores final *ġ* analogically (1938: 81–86 and ‘hay’ discussion). **Authorial reconstruction.** | The frozen comparison assumes E01; convergence on *auj* does not equate the histories. Rejecting Dahl does not decide the order in E02. |
+| E31 | Ringe & Taylor (2014: 257–261) and Campbell (§§237, 406) provide positive *w*-loss controls, not just ‘hay’: *sāwi*, *āwi*, *gliwi*, *niwi-*, *pylwī* and nonfinal examples. **Comparative conditioning evidence.** | Transfer removes ‘ewe’ from the conditioning; *cleweþa* is exceptional and lexical or derivational analogy is possible. None fixes word-final /e.i/ resolution; rejecting the loss itself would undermine E03. |
+
+## Dependency index
+
+**Required** entries are conjunctive; **Either** lists alternative branches
+when combined with the required column. **Other** entries are weighted
+evidence, qualifications, or rivals, not necessities. The historical prose
+above and in the base model specifies the warrants and status. E01–E31
+are source-bearing propositions, not all independent observations.
+For reverse exposition links run the validator with `--trace ID`.
+
+| ID | Required | Either | Other |
+|---|---|---|---|
+| E02 | E01 | — | — |
+| E03 | E01, E02, E31 | — | — |
+| E04 | E01, E02 | — | — |
+| E05 | E04 | — | — |
+| E07 | E06 | — | E08, E26, E27, E28 |
+| E14 | — | — | E03 |
+| E15 | — | — | E13, E24 |
+| E18 | E04, E17 | — | — |
+| E22 | E21 | — | E23 |
+| E25 | E03, E11, E12, E13 | — | E14 |
+| C01 | E01, E02, E03 | — | E30 |
+| C02 | E01, E02, E04 | — | E20, E30 |
+| C03 | E02, E04, E05 | — | E18 |
+| C04 | E06, E07 | — | E26, E27, E28 |
+| C05 | C01, C04 | — | E08, E09, E10, C02 |
+| C06 | C01, E11, E12, E13, E14 | — | E25 |
+| C07 | E13, E15, E16 | — | E08, E24, E29 |
+| C08 | C02, E17, E18 | — | E19, E21, E22, E23 |
+| H1 | C01, E13, E25 | — | C05, C07 |
+| H2 | C01, E14 | — | E18, E19, C07, C08 |
+| H3 | C03 | — | C07, C08 |
+| H4 | C02 | — | E20, C07 |
+| H5 | E16 | H1, H2, H3 | C07, C08 |
+| C10 | C01, C07 | H1, H2 | C05, C06, H3, H4, H5 |
+| C11 | H1 | — | C05, C07, H2, H3, H4 |
+| C09 | C10, E20 | — | C05, C08, C11 |
+
+**Additional premises.** H1 requires gliding before contraction and no
+incompatible quantity discriminator at the locus; special ⟨g⟩ for retained
+hiatus is an unsupported reserve, not a second live branch. H2 requires
+final contraction **and** an accessible source and actual secondary
+supply of /j/ (neither entailed by E18–19); H3 requires actual
+protected-to-direct replacement at the stated stage, not just its published
+proposal; H4 requires late loss and the relevant dialect reflex; H5 requires
+early loss and a protected West Saxon nucleus plus palatal in addition to
+one Anglian route. C11 needs discriminating evidence not yet available.
+C09 follows only while a positive alternative under C10 lasts.

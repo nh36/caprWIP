@@ -10,13 +10,10 @@ grounds for protected vocalism under early apocope.
 
 ## Entry points
 
-1. [`ARGUMENT_CYCLE13.md`](ARGUMENT_CYCLE13.md) gives the current argument,
-   sensitivity analysis and adversarial review.
-   [`OUTLINE_CYCLE13.md`](OUTLINE_CYCLE13.md) maps them to the article.
-   [`RESEARCH_MEMO_CYCLE13.md`](RESEARCH_MEMO_CYCLE13.md) records the five
-   comparative analyses and the original Ball and Stiles evidence.
-   The [previous memo](RESEARCH_MEMO_CYCLE12.md) records the frozen
-   traces and bounded spelling search.
+1. Start with the [pinned baseline](BASELINE.md) and [thesis](THESIS.md).
+   The [maintained historical model](ARGUMENT_CYCLE13.md) records dependencies,
+   sensitivity analysis and counterevidence. The baseline indexes the
+   original evidence, prior memos and frozen traces.
 2. [`DRAFT.md`](DRAFT.md) is the current, self-contained article.
    The built PDF is committed at [`hay-article.pdf`](hay-article.pdf).
 3. [`MORPHOLOGICAL_CONCORDANCE.tsv`](MORPHOLOGICAL_CONCORDANCE.tsv) records
@@ -26,6 +23,20 @@ grounds for protected vocalism under early apocope.
 4. [`SOURCE_PREPARATION_HANDOFF.md`](SOURCE_PREPARATION_HANDOFF.md) and
    [`RESEARCH_MEMO_CYCLE7.md`](RESEARCH_MEMO_CYCLE7.md) document the
    completed source-preparation phase.
+
+## Proposed editorial architecture (for review)
+
+The [rhetorical architecture](RHETORICAL_ARCHITECTURE.md),
+[paragraph plan](PARAGRAPH_PLAN.md) and
+[scholarly apparatus](SCHOLARLY_APPARATUS.md) are proposals, not changes
+to the published prose or PDF. Use the [revision protocol](REVISION_PROTOCOL.md)
+before any substantive edit; the [*heiweg* demonstration](HEIWEG_DEMONSTRATION.md)
+shows which passages would change after a new lexical finding and
+which would stay fixed.
+
+From the repository root, run `python3 Germanic/articles/hay/validate_exposition.py`.
+Add `--trace C05` to see its dependencies, planned paragraphs, and
+apparatus; any model, block, paragraph or apparatus ID works.
 
 ## Current assessments versus historical conclusions
 
