@@ -1,7 +1,7 @@
 # Paragraph plan
 
 Rows are the approved prose order, not baseline paragraph numbers.
-R1–R2 have nonprinting anchors in the draft; the rest remain unimplemented.
+R1–R3 have nonprinting anchors in the draft; the rest remain unimplemented.
 Each row states the reader's question and the paragraph's job, what to argue
 and why, and what it leaves for its successor. Preserve IDs when moving
 rows. The **Claims** column is the bidirectional map to the

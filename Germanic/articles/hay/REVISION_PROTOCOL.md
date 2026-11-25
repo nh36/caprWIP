@@ -75,3 +75,16 @@ letters motivate the survival question but neither prove it nor
 make the Anglian argument depend on it. The derivations end by naming
 what would have to be shown about the recorded vowel and palatal,
 not by treating a modeled stage as a written pronunciation.
+
+**R3 checkpoints:** `1bd34554` moved and renumbered the existing material;
+`edce076c` established the reading and positive case; `4328b85f` tested
+‘highway’ and footnoted the enclosure alternative; `34b4f1ae` separated
+documentary and lexical considerations; `458d0e5d` evaluated composition
+and exact spellings. All five were source-only. The editorial correction
+`49ab33a7` checks P-char-compound and P-char-close against `458d0e5d`
+and all of R3 against `1bd34554`. The publication commit carries the
+rebuilt and inspected PDF. The whole-section review
+confirms that the lexical preference does not rest on avoiding a dating
+anomaly, that the protected stem is a live alternative, and that the
+compound cannot identify the direct case. No historical proposition
+or source-verification status was changed.
