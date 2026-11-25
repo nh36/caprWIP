@@ -195,9 +195,10 @@ for what they establish about the vowel and the palatal.
 
 <!-- P-char-reading -->
 
-The sequence ⟨hei⟩ occurs in the bounds of S 1196, the
-Kentish charter not discussed in Ringe and Taylor’s treatments
-of ‘hay’ (Section 1.1). On the surviving mid-ninth-century
+The sequence ⟨hei⟩ occurs in *heiweg* in the bounds of the
+Kentish charter S 1196. Ringe and Taylor do not discuss the
+compound in their principal treatments of ‘hay’ (Section 1.1).
+On the surviving mid-ninth-century
 sheet (BL Cotton Augustus II 16), Sweet reads *cyniges hei
 weg*, followed by *stret to scufelingforde*; the bounds mention
 the burg-dwellers’ meadows and later *an cyninges strete*
@@ -248,18 +249,20 @@ expression named it for its status rather than its use.
 <!-- P-char-phon -->
 
 The semantic parallel leaves a difference in form unexplained.
-The expected *hēah-* has a back fricative before the *w* of
-*weg*. To derive ⟨hei-⟩ from it, one must account for the lack
-of that fricative in the spelling and for the appearance of
-⟨ei⟩, which in *dei* writes a mid vowel with a palatal reflex.
+For ‘hay’, the early-apocope derivation gives the sequence
+\emph{*he.i}, which could develop a palatal glide; a protected
+stem already supplies a source for a palatal (see below).
+Kentish *dei* illustrates how a vowel and glide could be
+written ⟨ei⟩. The ‘highway’ interpretation must additionally
+explain what became of the velar fricative of *hēah-* before
+the *w* of *weg* and how that development yielded a form
+written ⟨hei-⟩.
 Neither dictionary supplies such a local correspondence, and
 the charter comparison found no securely comparable
 ninth-century Kentish example. This does not make the required
-development impossible. It does give ‘hay’ the better
-phonological comparison: the spelling can be related either
-to the early sequence reached by the direct stem or to the
-local notation of a vowel and glide, without first having to
-explain a reflex of *hēah-* before *w*.[^char-minor]
+development impossible, but it does give ‘hay’ the better
+phonological comparison. The spelling alone does not determine
+the vowel’s quality or quantity.[^char-minor]
 
 [^char-minor]: An enclosure term is semantically possible but likewise has no demonstrated local ⟨hei-⟩ reflex [@Wager2017, pp. 169–174].
 
