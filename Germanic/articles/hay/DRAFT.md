@@ -294,73 +294,65 @@ a ninth-century form of ‘hay’. Establishing the more likely
 lexeme, however, does not identify which historical stem
 supplied the first element.
 
-<!-- pending:P-char-compound -->
+<!-- P-char-compound -->
 
-The protected-stem interpretation is also viable. A Kentish
-mid-vowel reflex of mutated \emph{*ēa} is independently supported by
-*ċēgan* ‘call’; a stem of that type with a final palatal would
-only need the spelling convention seen in *dei* to give ⟨hei⟩
-[@RingeTaylor2014, p. 246; @Bryan1915, pp. 23, 25].
-There is no independently long control in this local material
-that demonstrates ⟨ei⟩ for /eːj/, but there is no evidence that
-the spelling was restricted to a short vowel either. The early
-output thus has an exact written parallel without the spelling
-being its exclusive prediction. Whether an older first element
-could survive in composition after the simplex was remodelled
-is a morphological question, distinct from the correspondence
-itself (Section 2.1.1).
+The hay-house compounds show that a stem shaped like the
+direct singular could be used in composition. Glossarial
+*highus* and *heghus* render ‘hay store’; their first elements
+match simplex *hig* and *heg*, with no visible connector.
+Other ja-stems show the same pattern, but *bedtīd*, for
+example, already has the geminate of simplex *bedd*.[^compound-forms]
+Agreement between the compound and the direct form thus tells
+us which stem shape was available for composition, not whether
+that shape antedates levelling. An old compound could preserve
+an earlier direct-shaped stem after the simplex was remodelled;
+a later formation could use the stem then current.
 
-### 2.1.1 Compound stems
+Nor need an inherited compound have had a direct-shaped first
+member. Campbell’s examples of connecting vowels, including
+*rīcedōm*, show why the word-final development cannot simply be
+assumed in composition [@Campbell1959, §359]. If a vowel
+followed \emph{*j}, it could preserve the environment for
+gemination. That history would require evidence of the connector,
+the age of the compound and the subsequent loss of the vowel.
+Neither *heiweg* nor the hay-house forms preserves such a connector.
 
-Glossarial *highus* and *heghus* render *faenile* and *fenile*
-‘hay store’ respectively [@WrightWuelcker1884, I, cols. 186.13,
-237.36]. Both are securely ‘hay’ compounds; neither has a visible
-connector. The written first members correspond to simplex *hig*
-and *heg*. Late Old English ja-stem compounds such as *bedtīd*,
-*hrycgmearh* and *cynlīc* also use a nominative-shaped first member
-[@Campbell1959, §§348–349 n. 3]. But *bedtīd* already contains the
-geminate stem represented by independent *bedd*. Such examples
-establish that a current direct-shaped stem can be used in composition;
-they do not establish that it was borrowed before morphological
-remodelling or that it preserves an ungeminated stage.
+A protected stem could also give ⟨hei⟩. Kentish *ċēgan* ‘call’
+independently illustrates a mid-vowel reflex of mutated
+\emph{*ēa*}; for a stem of that type with a final palatal,
+*dei* supplies a plausible spelling convention
+[@RingeTaylor2014, p. 246; @Bryan1915, pp. 23, 25]. No
+independently long local control establishes ⟨ei⟩ for /eːj/,
+but neither is the spelling known to be restricted to a
+short vowel. A secure contrast between a Kentish compound
+and its contemporary simplex, or evidence for a connector,
+could distinguish histories that the letters alone leave open.
 
-Conversely, an inherited composition form need not have resembled the
-direct singular. Campbell lists connecting vowels in *endeleas*,
-*lǣcecræft* and *rīcedōm*, beside absence or late loss in other
-compounds [@Campbell1959, §359]. If a vowel once followed \emph{*j} within
-an inherited compound, it could protect the stem from the word-final
-development in \emph{*hawją}. Such a derivation requires independent
-evidence for the connector, the age of the formation and the history
-of its loss. No connector or otherwise diagnostic stem survives in
-*heiweg* or the hay-house forms. A lexicalized compound could
-retain an older direct-shaped first element after the free
-noun was remodelled, just as a new compound could be built
-on the generalized stem. The first scenario would make a
-Kentish reflex of \emph{*he.i} compatible with subsequent levelling
-in the simplex; the second could produce ⟨hei⟩ from a mid
-vowel plus glide. The written correspondence gives the first
-scenario a concrete historical form to explain. In the
-absence of a Kentish contrast between compound and free
-forms, it does not distinguish the scenarios.
+[^compound-forms]: *Highus* glosses *faenile*, *heghus* glosses *fenile* [@WrightWuelcker1884, I, cols. 186.13, 237.36]. For direct-shaped *hrycgmearh* and *cynlīc*, see Campbell [-@Campbell1959, §§348–349 n. 3]; for further connecting vowels (*endeleas*, *lǣcecræft*) and their absence or later loss in other compounds, see §359.
 
-<!-- pending:P-char-close -->
+<!-- P-char-close -->
 
-No additional early ⟨hei⟩ for ‘hay’ emerged from comparison of
-the *híg/hég* and road-name dictionary entries, the principal
-glossary loci, and the Kentish road comparanda
-[@BosworthToller1898, s.v. *hēah-weg*; @Toller1921, s.v. *híg*;
-@WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36, 547;
-@Cooper2003, p. 61]. Northern and other ⟨heig⟩ forms are
-potentially relevant to the same phonology, but are not exact
-written matches. The secure simplex is later. The thirteenth-century
-Worcester glossary F.174 has *Fenum, hei, uel græs*, where the older
-parallel in the Julius glossary has *hig*. Worcester also writes
-*wei* ‘way’ [@WrightWuelcker1884, I, cols. 325.21, 547]. Its
-spelling can therefore arise without preserving inherited hiatus:
-the later written match does not require continuity with the
-Kentish one. The later Middle English spelling variants are
-consistent with this interpretation but do not extend the
-Old English attestation [@MiddleEnglishDictionaryHei, s.v. *hei*].
+On the preferred reading of S 1196, the regular early-apocope
+sequence has an exact written counterpart in a probable
+ninth-century form of ‘hay’. In the sources examined, no
+other early example of exact ⟨hei⟩ was found: ⟨heig⟩
+is a different spelling.[^early-hei] The thirteenth-century
+Worcester glossary F.174 has *Fenum, hei, uel græs* beside
+*hig* in the older Julius parallel; Worcester also writes
+*wei* ‘way’ [@WrightWuelcker1884, I, cols. 325.21, 547].
+Worcester’s ⟨hei⟩ therefore need not preserve hiatus or
+continue the Kentish form. Neither it nor the later Middle
+English variants adds to the Old English attestation
+[@MiddleEnglishDictionaryHei, s.v. *hei*].
+
+The early correspondence calls for explanation, but it does
+not establish short quantity, retained hiatus or descent
+from the inherited direct singular. A compound can preserve
+a stem shape without revealing its grammatical source.
+Evidence for the survival of the direct singular must also
+come from simplex forms whose syntax identifies the case.
+
+[^early-hei]: The comparison covered the *híg/hég* and road-name entries, the principal glossary loci, and the Kentish road comparanda [@BosworthToller1898, s.v. *hēah-weg*; @Toller1921, s.v. *híg*; @WrightWuelcker1884, I, cols. 289.45, 325.21, 402.36, 547; @Cooper2003, p. 61].
 
 ## 2.2 Simplex forms
 
